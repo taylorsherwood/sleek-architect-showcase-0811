@@ -45,8 +45,8 @@ const Navigation = () => {
             href="https://echelonpropertygroup.outportal.ai"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-minimal border border-primary text-primary hover:bg-primary hover:text-primary-foreground px-5 py-2.5 transition-colors duration-300">
-            CLIENT PORTAL
+            className="text-minimal border border-primary text-primary hover:bg-primary hover:text-primary-foreground px-5 py-2.5 transition-colors duration-300">TRANSACTION PORTAL
+
           </a>
           <a
             href="https://taylorsherwood.realscout.com/"

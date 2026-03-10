@@ -31,11 +31,11 @@ const Footer = () => {
               <h4 className="text-minimal text-primary-foreground/50 mb-6">CONTACT</h4>
               <div className="space-y-3 text-primary-foreground/70">
                 <p>Austin, Texas</p>
-                <a href="mailto:info@echelonpropertygroup.com" className="block hover:text-primary-foreground transition-colors">
-                  info@echelonpropertygroup.com
+                <a href="mailto:info@echelonpropertygroup.com" className="block hover:text-primary-foreground transition-colors">taylor@echelonpropertygroup.com
+
                 </a>
-                <a href="tel:+15125551234" className="block hover:text-primary-foreground transition-colors">
-                  (512) 555-1234
+                <a href="tel:+15125551234" className="block hover:text-primary-foreground transition-colors">(512) 661-3843
+
                 </a>
               </div>
             </div>
@@ -56,8 +56,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>);
+
 };
 
 export default Footer;

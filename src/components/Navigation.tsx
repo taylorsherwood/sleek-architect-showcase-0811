@@ -42,11 +42,17 @@ const Navigation = () => {
 
         <div className="hidden lg:flex items-center space-x-4">
           <a
-
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-minimal text-primary-foreground bg-primary hover:bg-primary/90 px-5 py-2.5 transition-colors duration-300" href="https://taylorsherwood.realscout.com/">
-            
+            className="text-minimal border border-primary text-primary hover:bg-primary hover:text-primary-foreground px-5 py-2.5 transition-colors duration-300">
+            CLIENT PORTAL
+          </a>
+          <a
+            href="https://taylorsherwood.realscout.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-minimal text-primary-foreground bg-primary hover:bg-primary/90 px-5 py-2.5 transition-colors duration-300">
             SEARCH HOMES
           </a>
           <ThemeToggle />
@@ -80,11 +86,17 @@ const Navigation = () => {
               </Link>
           )}
             <a
-            href="https://homescout.com"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block text-minimal border border-primary text-primary hover:bg-primary hover:text-primary-foreground px-4 py-2 text-center transition-colors duration-300">
+              CLIENT PORTAL
+            </a>
+            <a
+            href="https://taylorsherwood.realscout.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="block text-minimal text-gold hover:text-gold-light transition-colors duration-300">
-            
               SEARCH HOMES
             </a>
             <div className="pt-4 border-t border-border">

@@ -98,9 +98,6 @@ const Navigation = () => {
             className="block text-minimal text-gold hover:text-gold-light transition-colors duration-300">
               SEARCH HOMES
             </a>
-            <div className="pt-4 border-t border-border">
-              <ThemeToggle />
-            </div>
           </div>
         </div>
       }

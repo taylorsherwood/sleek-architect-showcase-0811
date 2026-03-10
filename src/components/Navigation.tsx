@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import logo from "@/assets/logo-echelon.png";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,13 +19,8 @@ const Navigation = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/85 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-        <Link to="/" className="flex flex-col items-start">
-          <span className="text-xl font-display font-semibold tracking-wide text-foreground">
-            ECHELON
-          </span>
-          <span className="text-minimal text-muted-foreground text-[9px] tracking-[0.35em]">
-            PROPERTY GROUP
-          </span>
+        <Link to="/">
+          <img src={logo} alt="Echelon Property Group" className="h-10 md:h-12 w-auto" />
         </Link>
         
         <div className="hidden lg:flex items-center space-x-10">

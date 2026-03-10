@@ -38,8 +38,12 @@ const Footer = () => {
           </div>
 
           <div className="border-t border-primary-foreground/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-primary-foreground/40 text-sm">
-              © {new Date().getFullYear()} Echelon Property Group. All rights reserved.
+            <p className="text-primary-foreground/40 text-sm max-w-2xl leading-relaxed">
+              eXp Realty LLC DRE#508111
+              <br />
+              We are committed to providing an accessible website. If you have difficulty accessing content, have difficulty viewing a file on the website, or notice any accessibility problems, please contact us at 512.661.3843 to specify the nature of the accessibility issue and any assistive technology you use. We strive to provide the content you need in the format you require.
+              <br /><br />
+              Copyright © {new Date().getFullYear()} Echelon Property Group | eXp Realty LLC
             </p>
             <div className="flex gap-6">
               <a href="#" className="text-primary-foreground/40 hover:text-primary-foreground transition-colors text-sm">

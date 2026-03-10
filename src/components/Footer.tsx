@@ -24,7 +24,7 @@ const Footer = () => {
             <div>
               <h4 className="text-minimal text-primary-foreground/50 mb-6">CONTACT</h4>
               <div className="space-y-3 text-primary-foreground/70">
-                <p>Austin, Texas</p>
+                <p>2105 East MLK Blvd Ste 227<br />Austin, Texas</p>
                 <a href="mailto:info@echelonpropertygroup.com" className="block hover:text-primary-foreground transition-colors">taylor@echelonpropertygroup.com</a>
                 <a href="tel:+15125551234" className="block hover:text-primary-foreground transition-colors">(512) 661-3843</a>
               </div>

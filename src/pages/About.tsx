@@ -31,10 +31,10 @@ const About = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
             <img
-              src={aboutTeam}
+
               alt="Echelon Property Group team"
-              className="w-full h-[50vh] md:h-[60vh] object-cover"
-            />
+              className="w-full h-[50vh] md:h-[60vh] object-contain" src="/lovable-uploads/537facb0-1fbc-450c-8c4a-c1d06c4aa924.jpg" />
+            
           </div>
         </div>
       </section>
@@ -113,16 +113,16 @@ const About = () => {
           </p>
           <Link
             to="/contact"
-            className="inline-block text-minimal bg-primary text-primary-foreground hover:bg-primary/90 px-10 py-4 transition-colors duration-300"
-          >
+            className="inline-block text-minimal bg-primary text-primary-foreground hover:bg-primary/90 px-10 py-4 transition-colors duration-300">
+            
             GET IN TOUCH
           </Link>
         </div>
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>);
+
 };
 
 export default About;

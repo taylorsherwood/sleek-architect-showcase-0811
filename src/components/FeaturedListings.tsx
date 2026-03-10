@@ -12,7 +12,7 @@ const listings = [
     beds: 4,
     baths: 4,
     sqft: "4,147",
-    link: "#",
+    link: "https://www.villagovernorshill.com",
   },
   {
     image: listing2,
@@ -62,6 +62,8 @@ const FeaturedListings = () => {
               <a
                 key={index}
                 href={listing.link}
+                target={listing.link.startsWith("http") ? "_blank" : undefined}
+                rel={listing.link.startsWith("http") ? "noopener noreferrer" : undefined}
                 className="group block"
               >
                 <div className="relative overflow-hidden mb-6">

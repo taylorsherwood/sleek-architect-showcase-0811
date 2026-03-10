@@ -8,7 +8,6 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-4 gap-12 mb-12">
             <div className="md:col-span-2">
-              <img src={logoEchelon} alt="Echelon Property Group" className="h-24 mb-6" />
               <p className="text-primary-foreground/60 max-w-sm leading-relaxed">
                 Austin's premier luxury real estate brokerage specializing in high-end residential homes, 
                 estates, land, and unique properties.
@@ -30,12 +29,11 @@ const Footer = () => {
               <div className="space-y-3 text-primary-foreground/70">
                 <p>Austin, Texas</p>
                 <a href="mailto:info@echelonpropertygroup.com" className="block hover:text-primary-foreground transition-colors">taylor@echelonpropertygroup.com
-
                 </a>
                 <a href="tel:+15125551234" className="block hover:text-primary-foreground transition-colors">(512) 661-3843
-
                 </a>
               </div>
+              <img src={logoEchelon} alt="Echelon Property Group" className="h-20 mt-6" />
             </div>
           </div>
 

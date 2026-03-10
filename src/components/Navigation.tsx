@@ -42,7 +42,7 @@ const Navigation = () => {
 
         <div className="hidden lg:flex items-center space-x-4">
           <a
-            href="#"
+            href="https://echelonpropertygroup.outportal.ai"
             target="_blank"
             rel="noopener noreferrer"
             className="text-minimal border border-primary text-primary hover:bg-primary hover:text-primary-foreground px-5 py-2.5 transition-colors duration-300">

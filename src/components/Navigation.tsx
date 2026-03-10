@@ -55,7 +55,6 @@ const Navigation = () => {
             className="text-minimal text-primary-foreground bg-primary hover:bg-primary/90 px-5 py-2.5 transition-colors duration-300">
             SEARCH HOMES
           </a>
-          <ThemeToggle />
         </div>
 
         <Button

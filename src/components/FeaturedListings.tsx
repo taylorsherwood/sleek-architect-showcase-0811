@@ -12,7 +12,7 @@ const listings = [
     beds: 4,
     baths: 4,
     sqft: "4,147",
-    link: "#",
+    link: "https://www.villagovernorshill.com",
   },
   {
     image: listing2,

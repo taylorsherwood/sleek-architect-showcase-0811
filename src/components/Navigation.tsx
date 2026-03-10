@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
@@ -6,7 +6,15 @@ import logo from "@/assets/logo-echelon.png";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
+
+  useEffect(() => {
+    const handleScroll = () => setIsScrolled(window.scrollY > 50);
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const links = [
   { href: "/", label: "HOME" },
@@ -18,7 +26,7 @@ const Navigation = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 overflow-visible h-20 border-b border-border/50">
-      <div className="absolute inset-0 bg-background backdrop-blur-md"></div>
+      <div className={`absolute inset-0 backdrop-blur-md transition-colors duration-300 ${isScrolled ? 'bg-background/65' : 'bg-background'}`}></div>
       <div className="relative container mx-auto px-6 h-full flex items-center justify-between">
         <Link to="/">
           <img src={logo} alt="Echelon Property Group" className="h-40 md:h-48 w-auto border-0" />

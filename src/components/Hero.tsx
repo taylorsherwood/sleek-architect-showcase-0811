@@ -16,11 +16,11 @@ const Hero = () => {
             AUSTIN'S PREMIER LUXURY TEAM
           </p>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-light text-warm-cream text-architectural mb-8 reveal">
-            Extraordinary
+            Driven by Data,
             <br />
-            Properties,
+            Defined by
             <br />
-            <span className="italic">Elevated</span> Service
+            <span className="italic">Results</span>
           </h1>
           <p className="text-lg md:text-xl text-warm-cream/75 font-light max-w-xl mb-10 reveal-delayed">
             Specializing in luxury homes, estates, and land across Austin's most coveted neighborhoods

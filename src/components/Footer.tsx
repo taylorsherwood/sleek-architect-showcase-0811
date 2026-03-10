@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import logoEchelon from "@/assets/logo-echelon-new.png";
 
 const Footer = () => {
   return (
@@ -7,10 +8,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-4 gap-12 mb-12">
             <div className="md:col-span-2">
-              <h3 className="text-2xl font-display font-semibold mb-1">ECHELON</h3>
-              <p className="text-minimal text-primary-foreground/50 text-[9px] tracking-[0.35em] mb-6">
-                PROPERTY GROUP
-              </p>
+              <img src={logoEchelon} alt="Echelon Property Group" className="h-24 mb-6" />
               <p className="text-primary-foreground/60 max-w-sm leading-relaxed">
                 Austin's premier luxury real estate brokerage specializing in high-end residential homes, 
                 estates, land, and unique properties.

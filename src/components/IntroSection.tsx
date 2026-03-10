@@ -25,8 +25,8 @@ const IntroSection = () => {
               </div>
               <Link
                 to="/about"
-                className="inline-block mt-8 text-minimal text-foreground hover:text-muted-foreground transition-colors duration-300 relative group"
-              >
+                className="inline-block mt-8 text-minimal text-foreground hover:text-muted-foreground transition-colors duration-300 relative group">
+                
                 LEARN MORE ABOUT US
                 <span className="absolute bottom-0 left-0 w-full h-px bg-foreground group-hover:bg-muted-foreground transition-colors duration-300" />
               </Link>
@@ -34,16 +34,16 @@ const IntroSection = () => {
 
             <div className="grid grid-cols-2 gap-6">
               <div className="bg-secondary p-8 text-center">
-                <p className="text-4xl font-display font-light text-foreground mb-2">$500M+</p>
+                <p className="text-4xl font-display font-light text-foreground mb-2">$100M+</p>
                 <p className="text-minimal text-muted-foreground">IN SALES VOLUME</p>
               </div>
               <div className="bg-secondary p-8 text-center">
-                <p className="text-4xl font-display font-light text-foreground mb-2">15+</p>
+                <p className="text-4xl font-display font-light text-foreground mb-2">11+</p>
                 <p className="text-minimal text-muted-foreground">YEARS EXPERIENCE</p>
               </div>
               <div className="bg-secondary p-8 text-center">
-                <p className="text-4xl font-display font-light text-foreground mb-2">98%</p>
-                <p className="text-minimal text-muted-foreground">CLIENT SATISFACTION</p>
+                <p className="text-4xl font-display font-light text-foreground mb-2">200+</p>
+                <p className="text-minimal text-muted-foreground">CLIENTS HELPED</p>
               </div>
               <div className="bg-secondary p-8 text-center">
                 <p className="text-4xl font-display font-light text-foreground mb-2">Top 1%</p>
@@ -53,8 +53,8 @@ const IntroSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default IntroSection;

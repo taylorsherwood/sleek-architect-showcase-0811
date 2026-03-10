@@ -42,10 +42,10 @@ const Navigation = () => {
 
         <div className="hidden lg:flex items-center space-x-4">
           <a
-            href="https://homescout.com"
+
             target="_blank"
             rel="noopener noreferrer"
-            className="text-minimal text-primary-foreground bg-primary hover:bg-primary/90 px-5 py-2.5 transition-colors duration-300">
+            className="text-minimal text-primary-foreground bg-primary hover:bg-primary/90 px-5 py-2.5 transition-colors duration-300" href="https://taylorsherwood.realscout.com/">
             
             SEARCH HOMES
           </a>

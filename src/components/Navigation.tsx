@@ -20,7 +20,7 @@ const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/65 backdrop-blur-md border-b border-border/50">
       <div className="container mx-auto px-6 py-1 flex items-center justify-between">
         <Link to="/">
-          <img src={logo} alt="Echelon Property Group" className="h-72 md:h-88 w-auto border-0" />
+          <img src={logo} alt="Echelon Property Group" className="h-40 md:h-48 w-auto border-0" />
         </Link>
         
         <div className="hidden lg:flex items-center space-x-10">

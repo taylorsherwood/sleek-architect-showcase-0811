@@ -3,9 +3,9 @@ import logoEchelon from "@/assets/logo-echelon-new.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-foreground text-primary-foreground py-16">
+    <footer className="bg-foreground text-primary-foreground py-10">
       <div className="container mx-auto px-6">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <div className="flex justify-center mb-12">
             <img src={logoEchelon} alt="Echelon Property Group" className="h-28" />
           </div>

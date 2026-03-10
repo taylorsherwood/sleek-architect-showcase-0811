@@ -61,6 +61,7 @@ const Navigation = () => {
           {isMenuOpen ? '✕' : '☰'}
         </Button>
       </div>
+      </div>
 
       {isMenuOpen &&
       <div className="lg:hidden bg-background border-b border-border">

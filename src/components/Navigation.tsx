@@ -89,7 +89,7 @@ const Navigation = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="block text-minimal border border-primary text-primary hover:bg-primary hover:text-primary-foreground px-4 py-2 text-center transition-colors duration-300">
-              CLIENT PORTAL
+              TRANSACTION PORTAL
             </a>
             <a
             href="https://taylorsherwood.realscout.com/"

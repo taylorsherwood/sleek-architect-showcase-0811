@@ -5,11 +5,11 @@ const Footer = () => {
   return (
     <footer className="bg-foreground text-primary-foreground py-16">
       <div className="container mx-auto px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-4 gap-12 mb-12">
-            <div>
-              <img src={logoEchelon} alt="Echelon Property Group" className="h-28" />
-            </div>
+        <div className="max-w-5xl mx-auto">
+          <div className="flex justify-center mb-12">
+            <img src={logoEchelon} alt="Echelon Property Group" className="h-28" />
+          </div>
+          <div className="grid md:grid-cols-3 gap-12 mb-12">
             
             <div>
               <h4 className="text-minimal text-primary-foreground/50 mb-6">QUICK LINKS</h4>

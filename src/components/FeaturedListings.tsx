@@ -62,6 +62,8 @@ const FeaturedListings = () => {
               <a
                 key={index}
                 href={listing.link}
+                target={listing.link.startsWith("http") ? "_blank" : undefined}
+                rel={listing.link.startsWith("http") ? "noopener noreferrer" : undefined}
                 className="group block"
               >
                 <div className="relative overflow-hidden mb-6">

@@ -9,7 +9,7 @@ const contactSchema = z.object({
   email: z.string().trim().email("Please enter a valid email").max(255),
   phone: z.string().trim().max(20).optional(),
   interest: z.string().min(1, "Please select your interest"),
-  message: z.string().trim().min(1, "Message is required").max(2000, "Message must be under 2000 characters"),
+  message: z.string().trim().min(1, "Message is required").max(2000, "Message must be under 2000 characters")
 });
 
 const Contact = () => {
@@ -19,7 +19,7 @@ const Contact = () => {
     email: "",
     phone: "",
     interest: "",
-    message: "",
+    message: ""
   });
   const [errors, setErrors] = useState<Record<string, string>>({});
 
@@ -37,7 +37,7 @@ const Contact = () => {
     setErrors({});
     toast({
       title: "Message Sent",
-      description: "Thank you for reaching out. We'll be in touch shortly.",
+      description: "Thank you for reaching out. We'll be in touch shortly."
     });
     setForm({ name: "", email: "", phone: "", interest: "", message: "" });
   };
@@ -66,28 +66,28 @@ const Contact = () => {
                   <br />
                   Conversation
                 </h1>
-                <p className="text-muted-foreground leading-relaxed mb-12">
-                  Whether you're considering selling your luxury home or searching for your 
-                  next property in Austin, we'd love to hear from you.
+                <p className="text-muted-foreground leading-relaxed mb-12">Whether you're considering selling or searching for your next property in Austin, we'd love to hear from you.
+
+
                 </p>
 
                 <div className="space-y-8">
                   <div>
                     <h3 className="text-minimal text-muted-foreground mb-2">EMAIL</h3>
-                    <a href="mailto:info@echelonpropertygroup.com" className="text-lg hover:text-muted-foreground transition-colors duration-300">
-                      info@echelonpropertygroup.com
+                    <a href="mailto:info@echelonpropertygroup.com" className="text-lg hover:text-muted-foreground transition-colors duration-300">taylor@echelonpropertygroup.com
+
                     </a>
                   </div>
                   <div>
                     <h3 className="text-minimal text-muted-foreground mb-2">PHONE</h3>
-                    <a href="tel:+15125551234" className="text-lg hover:text-muted-foreground transition-colors duration-300">
-                      (512) 555-1234
+                    <a href="tel:+15125551234" className="text-lg hover:text-muted-foreground transition-colors duration-300">(512) 661-3843
+
                     </a>
                   </div>
                   <div>
                     <h3 className="text-minimal text-muted-foreground mb-2">OFFICE</h3>
-                    <address className="text-lg not-italic">
-                      Austin, Texas
+                    <address className="text-lg not-italic">2105 East MLK Boulevard Ste 227
+Austin, Texas 78702
                     </address>
                   </div>
                 </div>
@@ -102,8 +102,8 @@ const Contact = () => {
                     value={form.name}
                     onChange={handleChange}
                     className={inputClass}
-                    maxLength={100}
-                  />
+                    maxLength={100} />
+                  
                   {errors.name && <p className="text-destructive text-sm mt-1">{errors.name}</p>}
                 </div>
                 <div>
@@ -114,8 +114,8 @@ const Contact = () => {
                     value={form.email}
                     onChange={handleChange}
                     className={inputClass}
-                    maxLength={255}
-                  />
+                    maxLength={255} />
+                  
                   {errors.email && <p className="text-destructive text-sm mt-1">{errors.email}</p>}
                 </div>
                 <div>
@@ -126,16 +126,16 @@ const Contact = () => {
                     value={form.phone}
                     onChange={handleChange}
                     className={inputClass}
-                    maxLength={20}
-                  />
+                    maxLength={20} />
+                  
                 </div>
                 <div>
                   <select
                     name="interest"
                     value={form.interest}
                     onChange={handleChange}
-                    className={`${inputClass} bg-background`}
-                  >
+                    className={`${inputClass} bg-background`}>
+                    
                     <option value="">I'm interested in...</option>
                     <option value="selling">Selling My Home</option>
                     <option value="buying">Buying a Home</option>
@@ -153,14 +153,14 @@ const Contact = () => {
                     onChange={handleChange}
                     rows={4}
                     className={`${inputClass} resize-none`}
-                    maxLength={2000}
-                  />
+                    maxLength={2000} />
+                  
                   {errors.message && <p className="text-destructive text-sm mt-1">{errors.message}</p>}
                 </div>
                 <button
                   type="submit"
-                  className="text-minimal bg-primary text-primary-foreground hover:bg-primary/90 px-10 py-4 transition-colors duration-300 w-full md:w-auto"
-                >
+                  className="text-minimal bg-primary text-primary-foreground hover:bg-primary/90 px-10 py-4 transition-colors duration-300 w-full md:w-auto">
+                  
                   SEND MESSAGE
                 </button>
               </form>
@@ -170,8 +170,8 @@ const Contact = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>);
+
 };
 
 export default Contact;

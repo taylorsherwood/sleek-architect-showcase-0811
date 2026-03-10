@@ -1,70 +1,126 @@
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
+import aboutTeam from "@/assets/about-team.jpg";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
-      <section className="pt-32 pb-32 bg-background">
+
+      {/* Hero */}
+      <section className="pt-32 pb-20 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-20 items-center">
-              <div>
-                <h1 className="text-minimal text-muted-foreground mb-4">ABOUT</h1>
-                <h2 className="text-4xl md:text-6xl font-light text-architectural mb-12">
-                  Design Philosophy
-                </h2>
-                
-                <div className="space-y-8">
-                  <p className="text-lg text-muted-foreground leading-relaxed">
-                    We believe architecture should enhance human experience while respecting 
-                    the natural environment. Our practice focuses on creating spaces that 
-                    are both functional and poetic.
-                  </p>
-                  
-                  <p className="text-lg text-muted-foreground leading-relaxed">
-                    Founded in 2015, our studio has completed over 200 projects across 
-                    residential, commercial, and cultural sectors. Each project begins 
-                    with careful listening and ends with thoughtful execution.
-                  </p>
-                </div>
+            <p className="text-minimal text-gold mb-4">ABOUT US</p>
+            <h1 className="text-5xl md:text-7xl font-display font-light text-architectural mb-8">
+              Built on Trust,
+              <br />
+              Driven by <span className="italic">Excellence</span>
+            </h1>
+            <p className="text-xl text-muted-foreground max-w-3xl">
+              Echelon Property Group was founded with a singular vision: to redefine luxury real estate 
+              marketing and service in Austin, Texas.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Team Image */}
+      <section className="pb-20 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-7xl mx-auto">
+            <img
+              src={aboutTeam}
+              alt="Echelon Property Group team"
+              className="w-full h-[50vh] md:h-[60vh] object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Philosophy */}
+      <section className="py-24 bg-secondary">
+        <div className="container mx-auto px-6">
+          <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
+            <div>
+              <p className="text-minimal text-gold mb-4">OUR PHILOSOPHY</p>
+              <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-8">
+                Every Property Tells a Story
+              </h2>
+              <div className="space-y-6 text-muted-foreground leading-relaxed">
+                <p>
+                  We believe that selling a luxury home is about more than square footage and comparable 
+                  sales. It's about understanding the lifestyle a home offers, the memories it holds, and 
+                  the vision of its next chapter.
+                </p>
+                <p>
+                  Our approach combines strategic pricing, world-class photography and videography, 
+                  targeted digital marketing, and a network of qualified buyers to ensure every property 
+                  receives the exposure it deserves.
+                </p>
+                <p>
+                  With deep expertise across Barton Creek, Westlake Hills, Lake Austin, Rollingwood, 
+                  and the Texas Hill Country, we bring hyper-local market knowledge that big-box 
+                  brokerages simply can't match.
+                </p>
               </div>
-              
-              <div className="space-y-12">
-                <div>
-                  <h3 className="text-minimal text-muted-foreground mb-6">APPROACH</h3>
-                  <div className="space-y-6">
-                    <div className="border-l-2 border-architectural pl-6">
-                      <h4 className="text-lg font-medium mb-2">Research</h4>
-                      <p className="text-muted-foreground">Deep understanding of context, culture, and climate</p>
-                    </div>
-                    <div className="border-l-2 border-architectural pl-6">
-                      <h4 className="text-lg font-medium mb-2">Collaboration</h4>
-                      <p className="text-muted-foreground">Close partnership with clients, engineers, and craftspeople</p>
-                    </div>
-                    <div className="border-l-2 border-architectural pl-6">
-                      <h4 className="text-lg font-medium mb-2">Innovation</h4>
-                      <p className="text-muted-foreground">Sustainable materials and forward-thinking design solutions</p>
-                    </div>
-                  </div>
-                </div>
-                
-                <div className="pt-8 border-t border-border">
-                  <div className="grid grid-cols-2 gap-8">
-                    <div>
-                      <h3 className="text-minimal text-muted-foreground mb-2">FOUNDED</h3>
-                      <p className="text-xl">2015</p>
-                    </div>
-                    <div>
-                      <h3 className="text-minimal text-muted-foreground mb-2">PROJECTS</h3>
-                      <p className="text-xl">200+</p>
-                    </div>
-                  </div>
-                </div>
+            </div>
+
+            <div className="space-y-8">
+              <div className="border-l-2 border-gold pl-8">
+                <h3 className="text-xl font-display font-medium mb-3">Premium Marketing</h3>
+                <p className="text-muted-foreground">
+                  Professional photography, cinematic video, custom property websites, and targeted 
+                  social campaigns designed to reach qualified buyers worldwide.
+                </p>
+              </div>
+              <div className="border-l-2 border-gold pl-8">
+                <h3 className="text-xl font-display font-medium mb-3">Strategic Pricing</h3>
+                <p className="text-muted-foreground">
+                  Data-driven market analysis combined with decades of experience to position your 
+                  property for maximum return.
+                </p>
+              </div>
+              <div className="border-l-2 border-gold pl-8">
+                <h3 className="text-xl font-display font-medium mb-3">White-Glove Service</h3>
+                <p className="text-muted-foreground">
+                  From staging consultation to closing day, every detail is managed with precision 
+                  and personal attention.
+                </p>
+              </div>
+              <div className="border-l-2 border-gold pl-8">
+                <h3 className="text-xl font-display font-medium mb-3">Local Expertise</h3>
+                <p className="text-muted-foreground">
+                  Deep roots in Austin's most prestigious neighborhoods. We don't just sell homes 
+                  here—we live here.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      {/* CTA */}
+      <section className="py-24 bg-background text-center">
+        <div className="container mx-auto px-6">
+          <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-6">
+            Ready to Work Together?
+          </h2>
+          <p className="text-muted-foreground max-w-xl mx-auto mb-10">
+            Whether you're selling a luxury estate or searching for your dream home, 
+            we'd love to hear from you.
+          </p>
+          <Link
+            to="/contact"
+            className="inline-block text-minimal bg-primary text-primary-foreground hover:bg-primary/90 px-10 py-4 transition-colors duration-300"
+          >
+            GET IN TOUCH
+          </Link>
+        </div>
+      </section>
+
+      <Footer />
     </div>
   );
 };

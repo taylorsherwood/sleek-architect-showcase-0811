@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ThemeToggle } from "@/components/ThemeToggle";
+
 import logo from "@/assets/logo-echelon.png";
 
 const Navigation = () => {
@@ -55,7 +55,6 @@ const Navigation = () => {
             className="text-minimal text-primary-foreground bg-primary hover:bg-primary/90 px-5 py-2.5 transition-colors duration-300">
             SEARCH HOMES
           </a>
-          <ThemeToggle />
         </div>
 
         <Button
@@ -99,9 +98,6 @@ const Navigation = () => {
             className="block text-minimal text-gold hover:text-gold-light transition-colors duration-300">
               SEARCH HOMES
             </a>
-            <div className="pt-4 border-t border-border">
-              <ThemeToggle />
-            </div>
           </div>
         </div>
       }

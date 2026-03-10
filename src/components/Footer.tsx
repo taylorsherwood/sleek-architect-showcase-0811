@@ -33,9 +33,10 @@ const Footer = () => {
                 <a href="tel:+15125551234" className="block hover:text-primary-foreground transition-colors">(512) 661-3843
                 </a>
               </div>
-              <img src={logoEchelon} alt="Echelon Property Group" className="h-20 mt-6" />
             </div>
-          </div>
+            <div className="flex items-end justify-end">
+              <img src={logoEchelon} alt="Echelon Property Group" className="h-60" />
+            </div>
 
           <div className="border-t border-primary-foreground/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-primary-foreground/40 text-sm">

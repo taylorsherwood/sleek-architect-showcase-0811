@@ -126,16 +126,14 @@ const Blog = () => {
             <p className="text-xl text-muted-foreground mb-12">
               Subscribe to our newsletter for the latest insights on architecture and design
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
-              <input 
-                type="email" 
-                placeholder="Enter your email"
-                className="flex-1 px-6 py-4 bg-background border border-border text-foreground placeholder:text-muted-foreground"
-              />
-              <button className="px-8 py-4 bg-foreground text-background hover:bg-muted-foreground transition-colors duration-300">
-                SUBSCRIBE
-              </button>
-            </div>
+            <a
+              href="https://taylorsherwood.myflodesk.com/biolink"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-8 py-4 bg-foreground text-background hover:bg-muted-foreground transition-colors duration-300"
+            >
+              SUBSCRIBE
+            </a>
           </div>
         </div>
       </section>

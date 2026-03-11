@@ -12,7 +12,8 @@ const listings = [
   beds: 4,
   baths: 4,
   sqft: "4,147",
-  link: "https://www.villagovernorshill.com"
+  link: "https://www.villagovernorshill.com",
+  isRepresentative: false,
 },
 {
   image: listing2,
@@ -22,7 +23,8 @@ const listings = [
   beds: 6,
   baths: 7,
   sqft: "8,400",
-  link: "#"
+  link: "#",
+  isRepresentative: true,
 },
 {
   image: listing3,
@@ -32,7 +34,8 @@ const listings = [
   beds: 4,
   baths: 5,
   sqft: "5,800",
-  link: "#"
+  link: "#",
+  isRepresentative: true,
 }];
 
 
@@ -47,10 +50,13 @@ const FeaturedListings = () => {
               <h2 className="text-4xl md:text-5xl font-display font-light text-architectural">
                 Exceptional Properties
               </h2>
+              <p className="text-muted-foreground mt-4 max-w-xl">
+                Browse our active listings alongside representative examples of the luxury homes we help clients acquire across Austin's premier neighborhoods.
+              </p>
             </div>
             <Link
               to="/listings"
-              className="mt-6 md:mt-0 text-minimal text-muted-foreground hover:text-foreground transition-colors duration-300 relative group">
+              className="mt-6 md:mt-0 text-minimal text-muted-foreground hover:text-foreground transition-colors duration-300 relative group shrink-0">
               
               VIEW ALL LISTINGS
               <span className="absolute bottom-0 left-0 w-full h-px bg-foreground scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
@@ -58,40 +64,53 @@ const FeaturedListings = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {listings.map((listing, index) =>
-            <a
-              key={index}
-              href={listing.link}
-              target={listing.link.startsWith("http") ? "_blank" : undefined}
-              rel={listing.link.startsWith("http") ? "noopener noreferrer" : undefined}
-              className="group block">
-              
-                <div className="relative overflow-hidden mb-6">
-                  <img
-                  src={listing.image}
-                  alt={listing.address}
-                  className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
-                  loading="lazy" />
-                
-                  <div className="absolute top-4 left-4 bg-background/90 backdrop-blur-sm px-4 py-2">
-                    <span className="text-minimal text-foreground font-semibold">
-                      {listing.price}
-                    </span>
-                  </div>
-                </div>
-                <h3 className="text-lg font-display font-medium mb-1 group-hover:text-muted-foreground transition-colors duration-300">
-                  {listing.address}
-                </h3>
-                <p className="text-minimal text-muted-foreground mb-4">
-                  {listing.location}
-                </p>
-                <div className="flex gap-6 text-sm text-muted-foreground border-t border-border pt-4">
-                  <span>{listing.beds} Beds</span>
-                  <span>{listing.baths} Baths</span>
-                  <span>{listing.sqft} Sq Ft</span>
-                </div>
-              </a>
-            )}
+            {listings.map((listing, index) => {
+              const Wrapper = listing.link.startsWith("http") ? "a" : "div";
+              const wrapperProps = listing.link.startsWith("http")
+                ? { href: listing.link, target: "_blank" as const, rel: "noopener noreferrer" }
+                : {};
+
+              return (
+                <Wrapper
+                  key={index}
+                  {...wrapperProps}
+                  className="group block">
+                  
+                    <div className="relative overflow-hidden mb-6">
+                      <img
+                      src={listing.image}
+                      alt={listing.address}
+                      className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
+                      loading="lazy" />
+                    
+                      <div className="absolute top-4 left-4 bg-background/90 backdrop-blur-sm px-4 py-2">
+                        <span className="text-minimal text-foreground font-semibold">
+                          {listing.price}
+                        </span>
+                      </div>
+
+                      {listing.isRepresentative && (
+                        <div className="absolute top-4 right-4 bg-background/90 backdrop-blur-sm px-3 py-1.5">
+                          <span className="text-[10px] tracking-widest uppercase text-muted-foreground font-medium">
+                            Example of Homes We Source
+                          </span>
+                        </div>
+                      )}
+                    </div>
+                    <h3 className="text-lg font-display font-medium mb-1 group-hover:text-muted-foreground transition-colors duration-300">
+                      {listing.address}
+                    </h3>
+                    <p className="text-minimal text-muted-foreground mb-4">
+                      {listing.location}
+                    </p>
+                    <div className="flex gap-6 text-sm text-muted-foreground border-t border-border pt-4">
+                      <span>{listing.beds} Beds</span>
+                      <span>{listing.baths} Baths</span>
+                      <span>{listing.sqft} Sq Ft</span>
+                    </div>
+                  </Wrapper>
+              );
+            })}
           </div>
         </div>
       </div>

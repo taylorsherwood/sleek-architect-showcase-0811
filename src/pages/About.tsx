@@ -31,11 +31,11 @@ const About = () => {
       <section className="pb-20 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-            <div className="relative">
+            <div className="relative inline-block">
               <img
                 alt="Echelon Property Group team"
                 className="w-full h-[50vh] md:h-[60vh] object-contain" src="/lovable-uploads/9265260a-6432-4ccb-ad05-c43da28ecfc3.jpg" />
-              <img src={clhmsBadge} alt="CLHMS Guild Badge" className="w-16 h-16 mt-4 mx-auto md:mx-0 opacity-80" />
+              <img src={clhmsBadge} alt="CLHMS Guild Badge" className="absolute bottom-3 right-3 w-14 h-14 opacity-85" />
             </div>
             <div>
               <h3 className="text-3xl md:text-4xl font-display font-light text-architectural mb-2">Meet Taylor Sherwood</h3>

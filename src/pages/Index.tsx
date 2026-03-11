@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
+import CredibilityStrip from "@/components/CredibilityStrip";
 import FeaturedListings from "@/components/FeaturedListings";
 import IntroSection from "@/components/IntroSection";
 import Testimonials from "@/components/Testimonials";
@@ -17,6 +18,7 @@ const Index = () => {
       <SchemaMarkup schema={localBusinessSchema} />
       <Navigation />
       <Hero />
+      <CredibilityStrip />
       <CommunitiesPreview />
       <FeaturedListings />
       <IntroSection />

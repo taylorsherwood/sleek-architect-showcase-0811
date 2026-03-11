@@ -559,7 +559,7 @@ Austin's luxury market commands higher per-square-foot prices than Dallas, Houst
     date: "2025-01-15",
     readTime: "14 min read",
     category: "MARKET INSIGHTS",
-    image: "/src/assets/listing-2.jpg"
+    image: listing2
   },
   {
     id: "top-investment-neighborhoods-austin",

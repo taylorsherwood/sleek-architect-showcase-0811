@@ -15,7 +15,7 @@ const MeetTaylor = () => {
                 alt="Taylor Sherwood"
                 className="w-full h-[50vh] md:h-[60vh] object-contain"
                 src="/lovable-uploads/537facb0-1fbc-450c-8c4a-c1d06c4aa924.jpg" />
-              <img src={clhmsBadge} alt="CLHMS Guild Badge" className="absolute bottom-3 right-3 w-12 h-12 opacity-85" />
+              <img src={clhmsBadge} alt="CLHMS Guild Badge" className="absolute bottom-3 right-3 w-20 h-20 opacity-85" />
             </div>
             
             <div>

@@ -166,11 +166,11 @@ const BlogPost = () => {
             </div>
             
             {/* Related Posts */}
-            {relatedPosts.length > 0 && (
+            {filledRelatedPosts.length > 0 && (
               <div className="mt-20">
                 <h3 className="text-2xl font-light text-architectural mb-8">Related Articles</h3>
                 <div className="grid md:grid-cols-2 gap-8">
-                  {relatedPosts.map(relatedPost => (
+                  {filledRelatedPosts.map(relatedPost => (
                     <Link key={relatedPost.id} to={`/blog/${relatedPost.id}`} className="group">
                       <div className="w-full h-48 mb-4 overflow-hidden">
                         <img 
@@ -183,6 +183,9 @@ const BlogPost = () => {
                       <h4 className="text-lg font-light text-architectural group-hover:text-muted-foreground transition-colors duration-300 mb-2">
                         {relatedPost.title}
                       </h4>
+                      <p className="text-muted-foreground text-sm leading-relaxed line-clamp-2 mb-2">
+                        {relatedPost.excerpt}
+                      </p>
                       <p className="text-minimal text-muted-foreground">{relatedPost.date} • {relatedPost.readTime}</p>
                     </Link>
                   ))}

@@ -1,3 +1,10 @@
+import heroLuxury from "@/assets/hero-luxury-austin.jpg";
+import heroSkyline from "@/assets/hero-austin-skyline.jpg";
+import heroArch from "@/assets/hero-architecture.jpg";
+import communityLake from "@/assets/community-lake-austin.jpg";
+import listing2 from "@/assets/listing-2.jpg";
+import listing1 from "@/assets/listing-1.jpg";
+
 import { BlogPost } from "./blogPosts";
 
 export const seoBlogPosts: BlogPost[] = [
@@ -103,7 +110,7 @@ Yes. Austin's luxury market involves unique dynamics including off-market transa
     date: "2025-03-01",
     readTime: "12 min read",
     category: "LUXURY LIVING",
-    image: "/src/assets/hero-luxury-austin.jpg"
+    image: heroLuxury
   },
   {
     id: "moving-to-austin-texas-from-california",
@@ -260,7 +267,7 @@ Westlake Hills, Barton Creek, Tarrytown, and Lake Austin waterfront communities 
     date: "2025-02-20",
     readTime: "14 min read",
     category: "RELOCATION",
-    image: "/src/assets/hero-austin-skyline.jpg"
+    image: heroSkyline
   },
   {
     id: "austin-property-taxes-explained",
@@ -373,7 +380,7 @@ Yes. Successful protests can reduce assessed values by 5-15% or more, resulting 
     date: "2025-02-10",
     readTime: "13 min read",
     category: "MARKET INSIGHTS",
-    image: "/src/assets/hero-architecture.jpg"
+    image: heroArch
   },
   {
     id: "best-waterfront-homes-austin",
@@ -469,7 +476,7 @@ Many Lake Austin transactions occur off-market. Working with a specialized agent
     date: "2025-01-28",
     readTime: "12 min read",
     category: "LUXURY LIVING",
-    image: "/src/assets/community-lake-austin.jpg"
+    image: communityLake
   },
   {
     id: "austin-luxury-real-estate-market-forecast",
@@ -552,7 +559,7 @@ Austin's luxury market commands higher per-square-foot prices than Dallas, Houst
     date: "2025-01-15",
     readTime: "14 min read",
     category: "MARKET INSIGHTS",
-    image: "/src/assets/listing-2.jpg"
+    image: listing2
   },
   {
     id: "top-investment-neighborhoods-austin",
@@ -680,7 +687,7 @@ Off-market deals are accessed through established relationships with local speci
     date: "2025-01-05",
     readTime: "15 min read",
     category: "INVESTMENT",
-    image: "/src/assets/listing-1.jpg"
+    image: listing1
   },
   {
     id: "moving-to-austin-texas-complete-relocation-guide",
@@ -776,6 +783,6 @@ While the market fluctuates, Austin has experienced long-term appreciation drive
     date: "2025-03-10",
     readTime: "8 min read",
     category: "RELOCATION",
-    image: "/src/assets/hero-austin-skyline.jpg"
+    image: heroSkyline
   }
 ];

@@ -1,3 +1,7 @@
+import blogSustainable from "@/assets/blog-sustainable-architecture.jpg";
+import blogMinimalist from "@/assets/blog-minimalist-living.jpg";
+import blogUrban from "@/assets/blog-urban-planning.jpg";
+
 export interface BlogPost {
   id: string;
   title: string;
@@ -73,7 +77,7 @@ The future of architecture lies in our ability to create buildings that work in 
     date: "2024-03-15",
     readTime: "8 min read",
     category: "SUSTAINABILITY",
-    image: "/src/assets/blog-sustainable-architecture.jpg"
+    image: blogSustainable
   },
   {
     id: "minimalism-modern-living",
@@ -159,7 +163,7 @@ The challenge for architects and designers is to create minimalist spaces that f
     date: "2024-03-10",
     readTime: "6 min read",
     category: "DESIGN",
-    image: "/src/assets/blog-minimalist-living.jpg"
+    image: blogMinimalist
   },
   {
     id: "urban-planning-community-spaces",
@@ -320,6 +324,6 @@ The most successful community spaces are those that grow and evolve with their u
     date: "2024-03-05",
     readTime: "10 min read",
     category: "URBAN PLANNING",
-    image: "/src/assets/blog-urban-planning.jpg"
+    image: blogUrban
   }
 ];

@@ -203,6 +203,90 @@ const AustinCommercialRealEstate = () => {
               </div>
             </section>
 
+            {/* Multifamily Investment */}
+            <section>
+              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+                Austin Multifamily Investment Opportunities
+              </h2>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Austin's multifamily sector remains one of the most active commercial real estate asset classes in the region. The city's sustained population growth — driven by corporate relocations, tech-sector expansion, and in-migration from higher-cost states — creates persistent demand for rental housing across all price points. For investors seeking income-producing assets with strong appreciation potential, Austin multifamily properties offer a compelling risk-adjusted return profile.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Class A multifamily communities in high-growth suburban corridors such as Cedar Park, Round Rock, Pflugerville, and Kyle benefit from strong absorption rates and rising rents as new residents settle into the Austin metro. Value-add acquisitions in established neighborhoods closer to downtown — including areas near <Link to="/communities/travis-heights" className="text-foreground underline hover:text-muted-foreground">Travis Heights</Link>, East Riverside, and South Lamar — provide opportunities to renovate aging inventory, reposition properties, and capture significant rent premiums upon completion.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                Austin's young, highly educated workforce and the ongoing shift toward renter-by-choice demographics further support multifamily investment fundamentals. As detailed in our <Link to="/austin-luxury-market-report" className="text-foreground underline hover:text-muted-foreground">Austin Luxury Market Report</Link>, the intersection of limited affordable housing supply and growing demand creates favorable conditions for multifamily investors who can identify well-located assets and execute value-add business plans effectively.
+              </p>
+            </section>
+
+            {/* Development Land */}
+            <section>
+              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+                Austin Development Land Opportunities
+              </h2>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Land acquisition in the Austin metropolitan area represents one of the highest-potential commercial real estate strategies available today. As the city's population approaches — and is projected to exceed — three million residents in the broader MSA, demand for development-ready sites continues to outpace supply in many key corridors. Developers, builders, and land bankers who secure well-positioned parcels now stand to benefit from Austin's long-term growth trajectory.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                The most active development land markets in Austin span several distinct geographies. The Highway 290 West corridor toward <Link to="/communities/dripping-springs" className="text-foreground underline hover:text-muted-foreground">Dripping Springs</Link> continues to attract master-planned residential and mixed-use development. The I-35 corridor through Southeast Austin and San Marcos is emerging as a logistics and industrial hub. East Austin infill sites command premium pricing but offer density advantages and proximity to downtown employment centers. Northern suburbs including Leander, Liberty Hill, and Georgetown present large-tract opportunities for residential subdivision and commercial pad development.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                Echelon Property Group's land advisory practice helps investors navigate the complexities of Austin-area land acquisition — from zoning analysis and entitlement timelines to utility availability and environmental considerations. Our team sources both on-market and off-market land opportunities, providing clients with access to deals that often transact before reaching public listing platforms.
+              </p>
+            </section>
+
+            {/* Retail & Office Investment */}
+            <section>
+              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+                Retail and Office Investment Properties in Austin
+              </h2>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Austin's retail and office investment markets offer distinct opportunities shaped by the city's unique economic and demographic profile. The retail sector benefits from Austin's rapidly expanding consumer base, tourism economy, and the proliferation of experiential retail concepts that draw traffic even in an increasingly digital marketplace. Grocery-anchored centers, mixed-use retail with residential components, and boutique retail on high-profile corridors like South Congress and the Domain consistently attract investor interest.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                The office investment landscape in Austin has evolved significantly. While downtown Class A properties — particularly in buildings with modern amenities, sustainability certifications, and walkable locations — continue to command premium rents and attract institutional capital, suburban office assets in corridors like the Arboretum, Northwest Austin, and Southwest Austin offer higher yields with stable tenancy. The growing demand for creative and flex office space, driven by Austin's startup ecosystem and tech culture, has also created a niche asset class that appeals to value-oriented investors.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                Whether you are evaluating a single-tenant net-leased retail property, a multi-tenant suburban office building, or a repositioning opportunity in an emerging submarket, Echelon Property Group provides the market intelligence and transaction expertise to execute successfully. Our approach combines the rigor of institutional-grade analysis with the personalized service of a boutique advisory — the same principles that guide our <Link to="/austin-luxury-homes-for-sale" className="text-foreground underline hover:text-muted-foreground">luxury residential practice</Link>.
+              </p>
+            </section>
+
+            {/* Market Trends */}
+            <section>
+              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+                Austin Commercial Real Estate Market Trends
+              </h2>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Understanding current market trends is essential for making informed commercial real estate decisions in Austin. Several key dynamics are shaping the market heading into 2026 and beyond.
+              </p>
+              <div className="space-y-6">
+                <div className="border-l-2 border-gold pl-6">
+                  <h3 className="text-lg font-medium text-foreground mb-2">Flight to Quality in Office</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Tenants are increasingly consolidating into higher-quality buildings with modern amenities, energy efficiency, and collaborative workspace design. This flight to quality benefits Class A and trophy assets while creating value-add opportunities in well-located Class B buildings that can be repositioned to meet evolving tenant expectations.
+                  </p>
+                </div>
+                <div className="border-l-2 border-gold pl-6">
+                  <h3 className="text-lg font-medium text-foreground mb-2">Suburban Growth Acceleration</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Austin's suburban ring — from <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">Westlake Hills</Link> and <Link to="/communities/barton-creek" className="text-foreground underline hover:text-muted-foreground">Barton Creek</Link> to Cedar Park, Leander, and Georgetown — is experiencing rapid commercial development driven by residential rooftops and population density. Retail, medical, and professional office demand in these areas is creating new investment opportunities.
+                  </p>
+                </div>
+                <div className="border-l-2 border-gold pl-6">
+                  <h3 className="text-lg font-medium text-foreground mb-2">Industrial and Logistics Demand</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Austin's growing population and e-commerce penetration are driving demand for last-mile logistics, distribution, and light industrial space. The I-35 corridor and Southeast Austin are emerging as primary industrial nodes, with vacancy rates tightening and rental rates appreciating.
+                  </p>
+                </div>
+                <div className="border-l-2 border-gold pl-6">
+                  <h3 className="text-lg font-medium text-foreground mb-2">Capital Markets and Pricing</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    As interest rate conditions stabilize, transaction volume in Austin's commercial market is expected to increase. Well-capitalized investors are positioning to acquire assets at attractive basis points relative to peak pricing, creating a favorable environment for disciplined buyers. For detailed analysis, see our <Link to="/austin-luxury-market-report" className="text-foreground underline hover:text-muted-foreground">Austin Luxury Market Report</Link>.
+                  </p>
+                </div>
+              </div>
+            </section>
+
             {/* Why Echelon */}
             <section>
               <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">

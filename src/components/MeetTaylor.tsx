@@ -23,6 +23,7 @@ const MeetTaylor = () => {
               When he's not closing deals, Taylor stays deeply engaged in Austin's growth and development landscape — because in this city, tomorrow's best opportunities are being built today.
             </p>
           </div>
+          </div>
         </div>
       </div>
     </section>

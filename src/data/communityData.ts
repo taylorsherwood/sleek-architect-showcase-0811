@@ -56,7 +56,15 @@ Outdoor recreation is central to the Westlake Hills lifestyle. The Barton Creek 
 The ongoing expansion of Austin's technology sector, with major campuses from Apple, Google, Tesla, Oracle, and Meta, continues to drive high-income relocations to the area. Westlake Hills is a primary beneficiary of this trend, as executives and high-net-worth professionals seek the area's combination of luxury living, excellent schools, and natural beauty.
 
 For investors, Westlake Hills offers opportunities in luxury home renovations, new construction on remaining lots, and high-end rentals. The area's strict development standards ensure that investment in quality improvements is protected by the overall neighborhood character. Properties with significant lot acreage or unique features such as waterfront access, panoramic views, or guest houses command substantial premiums and tend to appreciate faster than the market average.`,
-    relatedCommunities: ["barton-creek", "lake-austin-waterfront", "rollingwood", "tarrytown"]
+    relatedCommunities: ["barton-creek", "lake-austin-waterfront", "rollingwood", "tarrytown"],
+    faqs: [
+      { question: "What school district serves Westlake Hills?", answer: "Westlake Hills is served by the Eanes Independent School District, consistently ranked among the top districts in Texas. Schools include Bridge Point Elementary, Hill Country Middle School, and Westlake High School, which earns National Blue Ribbon recognition." },
+      { question: "What is the average home price in Westlake Hills Austin?", answer: "Home prices in Westlake Hills range from $1.2 million to over $20 million. The median home price exceeds $1.5 million, with luxury estates regularly trading above $5 million. New construction often exceeds $500 per square foot." },
+      { question: "How far is Westlake Hills from downtown Austin?", answer: "Westlake Hills is approximately 10 to 15 minutes from downtown Austin via Loop 360 or MoPac Expressway, offering a retreat-like atmosphere with quick urban access." },
+      { question: "Is Westlake Hills a good investment?", answer: "Yes. Westlake Hills has historically outperformed the broader Austin market, with 7-10% average annual appreciation. Limited buildable lots, top-tier schools, and proximity to Austin's tech economy create a strong foundation for sustained value growth." },
+      { question: "Are there waterfront homes in Westlake Hills?", answer: "While Westlake Hills itself is a hilltop community, many homes are just minutes from Lake Austin waterfront access. Some properties on the western edge offer lake views, and nearby marinas provide boating access." },
+      { question: "What outdoor activities are near Westlake Hills?", answer: "Residents enjoy the Barton Creek Greenbelt, Wild Basin Wilderness Preserve, Lake Austin boating, and numerous hiking and biking trails. The area also offers country club golf, tennis, and swimming." }
+    ]
   },
   {
     slug: "barton-creek",

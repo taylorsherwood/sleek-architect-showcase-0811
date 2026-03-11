@@ -28,7 +28,7 @@ const Hero = () => {
             <span className="italic">Results</span>
           </h1>
           <p className="text-lg md:text-xl text-warm-cream/75 font-light max-w-xl mb-10 reveal-delayed" style={{ fontFamily: '"Roboto", sans-serif' }}>
-            Austin luxury homes, investment properties, and land opportunities — expertly guided by Echelon Property Group across Austin's most coveted neighborhoods.
+            Austin luxury homes, investment properties, land opportunities, and select commercial real estate — expertly guided by Echelon Property Group across Austin's most coveted neighborhoods.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 reveal-delayed-2">
             <Link

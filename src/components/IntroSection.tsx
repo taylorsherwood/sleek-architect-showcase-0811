@@ -2,14 +2,14 @@ import { Link } from "react-router-dom";
 
 const IntroSection = () => {
   return (
-    <section className="py-16 bg-background">
+    <section className="py-28 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
               <p className="text-minimal text-gold mb-4">THE ECHELON DIFFERENCE</p>
-              <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-8">
-                Unmatched Expertise in Austin Luxury Real Estate
+              <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-8">Unmatched Expertise in 
+Austin Real Estate
               </h2>
               <div className="space-y-6 text-muted-foreground leading-relaxed">
                 <p>At Echelon Property Group we believe real estate is more than transactions—it’s about creating opportunities and building lasting relationships. With expertise across residential, commercial, and investment properties, our team provides clients with clear guidance, innovative strategies, and personalized service at every step. Whether you’re buying your first home, scaling a portfolio, or positioning a property for market, we bring the local expertise and sharp negotiation skills you need to achieve your goals.

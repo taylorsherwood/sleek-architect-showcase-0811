@@ -13,7 +13,7 @@ const MeetTaylor = () => {
               src="/lovable-uploads/537facb0-1fbc-450c-8c4a-c1d06c4aa924.jpg"
             />
             <div>
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-base text-muted-foreground leading-relaxed max-w-md">
               Taylor Sherwood is an Austin based real estate advisor specializing in distinctive homes, luxury properties, and land opportunities. Known for his attention to detail and thoughtful approach to marketing, he helps clients navigate complex transactions with confidence while showcasing properties in their best possible light.
               {"\n\n"}
               With a strong understanding of the local market and a focus on quality properties, he works closely with buyers and sellers to ensure every transaction is handled with care, discretion, and strategic insight.

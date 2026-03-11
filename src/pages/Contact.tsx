@@ -23,7 +23,9 @@ const Contact = () => {
   });
   const [errors, setErrors] = useState<Record<string, string>>({});
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [submitting, setSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const result = contactSchema.safeParse(form);
     if (!result.success) {
@@ -35,11 +37,46 @@ const Contact = () => {
       return;
     }
     setErrors({});
-    toast({
-      title: "Message Sent",
-      description: "Thank you for reaching out. We'll be in touch shortly."
-    });
-    setForm({ name: "", email: "", phone: "", interest: "", message: "" });
+    setSubmitting(true);
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          access_key: "81cc426e-b1a8-4e5e-b2a0-0d25738dfe12",
+          subject: "New Contact Form Submission",
+          from_name: "Echelon Property Group Website",
+          to: "taylor@echelonpropertygroup.com,echelonpropertygroup@followupboss.me",
+          name: form.name,
+          email: form.email,
+          phone: form.phone || "Not provided",
+          "Interest": form.interest,
+          "Message": form.message,
+        }),
+      });
+      const data = await response.json();
+      if (data.success) {
+        toast({
+          title: "Message Sent",
+          description: "Thank you for reaching out. We'll be in touch shortly."
+        });
+        setForm({ name: "", email: "", phone: "", interest: "", message: "" });
+      } else {
+        toast({
+          title: "Submission Failed",
+          description: "Something went wrong. Please try again or contact us directly.",
+          variant: "destructive",
+        });
+      }
+    } catch {
+      toast({
+        title: "Submission Failed",
+        description: "Something went wrong. Please try again or contact us directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {

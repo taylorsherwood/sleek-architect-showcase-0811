@@ -305,8 +305,8 @@ const OffMarketHomes = () => {
                   <div>
                     <textarea name="message" placeholder="Additional details about what you're looking for (Optional)" value={form.message} onChange={handleChange} rows={3} className={`${inputClass} resize-none`} maxLength={2000} />
                   </div>
-                  <button type="submit" className="w-full md:w-auto text-minimal bg-primary text-primary-foreground hover:bg-primary/90 px-10 py-4 transition-colors duration-300">
-                    REQUEST OFF-MARKET ACCESS
+                  <button type="submit" disabled={submitting} className="w-full md:w-auto text-minimal bg-primary text-primary-foreground hover:bg-primary/90 px-10 py-4 transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed">
+                    {submitting ? "SENDING..." : "REQUEST OFF-MARKET ACCESS"}
                   </button>
                 </form>
               </div>

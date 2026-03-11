@@ -92,10 +92,10 @@ const FeaturedListings = () => {
                         </span>
                       </div>
 
-                      {listing.isRepresentative && (
+                      {listing.badgeLabel && (
                         <div className="absolute top-4 right-4 bg-background/90 backdrop-blur-sm px-3 py-1.5">
                           <span className="text-[10px] tracking-widest uppercase text-muted-foreground font-medium">
-                            Example of Homes We Source
+                            {listing.badgeLabel}
                           </span>
                         </div>
                       )}

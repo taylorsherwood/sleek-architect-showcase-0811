@@ -196,9 +196,10 @@ Austin, Texas 78702
                 </div>
                 <button
                   type="submit"
-                  className="text-minimal bg-primary text-primary-foreground hover:bg-primary/90 px-10 py-4 transition-colors duration-300 w-full md:w-auto">
+                  disabled={submitting}
+                  className="text-minimal bg-primary text-primary-foreground hover:bg-primary/90 px-10 py-4 transition-colors duration-300 w-full md:w-auto disabled:opacity-50 disabled:cursor-not-allowed">
                   
-                  SEND MESSAGE
+                  {submitting ? "SENDING..." : "SEND MESSAGE"}
                 </button>
               </form>
             </div>

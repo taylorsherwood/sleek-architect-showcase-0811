@@ -1,4 +1,5 @@
 import Navigation from "@/components/Navigation";
+import clhmsBadge from "@/assets/clhms-badge.png";
 import Footer from "@/components/Footer";
 import aboutTeam from "@/assets/about-team.jpg";
 import { Link } from "react-router-dom";

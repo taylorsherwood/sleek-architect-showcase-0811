@@ -326,7 +326,15 @@ Entertainment and cultural amenities are the hallmark of downtown living. From t
 Austin's continued growth as a major technology hub drives sustained demand for downtown housing. Major employers including Google, Meta, Apple, Amazon, and Oracle maintain significant Austin operations, generating a steady pipeline of high-income professionals seeking urban living. This employment base provides a strong foundation for both home values and rental demand.
 
 Pre-construction investment in new downtown projects can offer favorable pricing, but requires careful due diligence regarding developer reputation, project financing, and market timing. Resale units in established buildings offer more predictable returns and immediate income potential. For investors, the most attractive opportunities typically involve units with strong rental appeal—one and two-bedroom units with efficient layouts, desirable views, and access to premium building amenities.`,
-    relatedCommunities: ["travis-heights", "tarrytown", "westlake-hills", "lake-austin-waterfront"]
+    relatedCommunities: ["travis-heights", "tarrytown", "westlake-hills", "lake-austin-waterfront"],
+    faqs: [
+      { question: "What are the best condo buildings in downtown Austin?", answer: "Top luxury condo buildings include The Independent (Austin's tallest at 58 stories), The Austonian, Four Seasons Residences, Spring, W Hotel Residences, and 70 Rainey. Each offers distinct amenities, views, and lifestyle experiences." },
+      { question: "How much do downtown Austin condos cost?", answer: "Downtown Austin condos range from approximately $400,000 for one-bedroom units in older buildings to over $10 million for penthouses in premier towers. Price per square foot ranges from $400 to over $1,500 depending on building, floor, and views." },
+      { question: "Are downtown Austin condos a good investment?", answer: "Downtown condos can be strong investments when carefully selected. Well-located units in established buildings with strong HOA management generate 5-7% gross rental yields. Location, amenity quality, and building reputation are key differentiators." },
+      { question: "What is the walkability score of downtown Austin?", answer: "Downtown Austin has one of the highest walkability scores in Texas. Residents can walk to restaurants, entertainment venues, Lady Bird Lake trails, groceries, and many employers. The area also offers bike lanes and public transit access." },
+      { question: "Can you rent out a downtown Austin condo?", answer: "Most downtown condo buildings allow long-term rentals. Short-term rental regulations in Austin have evolved, so investors should review current city policies and individual building HOA rules before pursuing a vacation rental strategy." },
+      { question: "What amenities do downtown Austin condos offer?", answer: "Most luxury buildings feature rooftop pools, fitness centers, concierge services, private parking, pet facilities, co-working spaces, resident lounges, and controlled access security. Some buildings offer spa services and private dining rooms." }
+    ]
   },
   {
     slug: "dripping-springs",

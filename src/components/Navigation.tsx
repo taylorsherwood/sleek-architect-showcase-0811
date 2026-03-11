@@ -61,7 +61,7 @@ const Navigation = () => {
             href="https://taylorsherwood.realscout.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-minimal text-primary-foreground bg-primary hover:bg-primary/90 px-5 py-2.5 transition-colors duration-300">
+            className="text-minimal text-primary-foreground bg-[#0C0F24] hover:bg-[#0C0F24]/90 px-5 py-2.5 transition-colors duration-300">
             SEARCH HOMES
           </a>
         </div>

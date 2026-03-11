@@ -29,8 +29,23 @@ const faqs = [
     question: "How is commercial real estate different from residential real estate?",
     answer: "Commercial real estate involves properties used for business purposes — offices, retail spaces, warehouses, multifamily developments, and mixed-use projects. Unlike residential transactions, commercial deals are evaluated primarily on income potential, cap rates, lease structures, and return on investment. Lease terms are more complex, due diligence is more extensive, and transactions often involve sophisticated financial analysis. Working with a brokerage experienced in both residential and commercial sectors, like Echelon Property Group, ensures seamless advisory whether you're investing in an office building or purchasing your personal residence."
   },
+  {
+    question: "What are the best investment opportunities in Austin commercial real estate right now?",
+    answer: "Austin's strongest commercial investment opportunities currently include multifamily developments in high-growth suburban corridors, mixed-use projects in East Austin and along the I-35 corridor, value-add office acquisitions in emerging submarkets, and retail centers anchored by essential services in rapidly expanding neighborhoods like Cedar Park, Pflugerville, and Buda. Development land along Austin's growth corridors also presents significant upside for investors with a medium- to long-term horizon."
+  },
+  {
+    question: "What cap rates should I expect for commercial properties in Austin?",
+    answer: "Cap rates in Austin vary by asset class and location. Multifamily properties in core locations typically trade at 4.5–5.5% cap rates. Class A office buildings downtown range from 5.0–6.5%. Suburban retail centers generally trade at 5.5–7.0%. Industrial and logistics properties in high-demand corridors achieve 5.0–6.0%. Value-add opportunities may trade at higher cap rates with potential for significant NOI improvement. Echelon Property Group provides detailed cap rate analysis and investment underwriting for every acquisition we advise on."
+  },
+  {
+    question: "How do I evaluate a mixed-use development opportunity in Austin?",
+    answer: "Evaluating a mixed-use development in Austin requires analysis across multiple dimensions: zoning and entitlement feasibility, site accessibility and traffic counts, residential and commercial demand drivers in the submarket, construction cost estimates, projected lease-up timelines, and stabilized NOI projections. Austin's CodeNEXT and land development code revisions are also reshaping density allowances in key corridors. Echelon Property Group assists developers with site selection, feasibility analysis, and market intelligence to de-risk mixed-use investments."
+  },
+  {
+    question: "Does Echelon Property Group work with out-of-state commercial investors?",
+    answer: "Absolutely. A significant portion of our commercial investment clients are based outside Texas — attracted by Austin's growth fundamentals, favorable tax environment, and strong risk-adjusted returns. We provide comprehensive market orientation, submarket analysis, property tours (virtual and in-person), and end-to-end transaction management for out-of-state investors. Our team serves as your local eyes, ears, and strategic advisors throughout the investment lifecycle."
+  },
 ];
-
 const AustinCommercialRealEstate = () => {
   return (
     <div className="min-h-screen bg-background">

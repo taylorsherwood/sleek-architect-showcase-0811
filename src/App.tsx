@@ -15,6 +15,7 @@ import Contact from "./pages/Contact";
 import MovingToAustin from "./pages/MovingToAustin";
 import BestLuxuryNeighborhoods from "./pages/BestLuxuryNeighborhoods";
 import MarketReport from "./pages/MarketReport";
+import OffMarketHomes from "./pages/OffMarketHomes";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();

@@ -3,7 +3,7 @@ const MeetTaylor = () => {
     <section className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
-          <h3 className="text-3xl md:text-4xl font-display font-light text-architectural mb-8 md:text-left md:w-1/2 text-center">
+          <h3 className="text-3xl md:text-4xl font-display font-light text-architectural mb-8 md:w-1/2 text-center">
             Meet Taylor Sherwood
           </h3>
           <div className="grid md:grid-cols-2 gap-12 items-center">

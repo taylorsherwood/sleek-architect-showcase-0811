@@ -783,6 +783,6 @@ While the market fluctuates, Austin has experienced long-term appreciation drive
     date: "2025-03-10",
     readTime: "8 min read",
     category: "RELOCATION",
-    image: "/src/assets/hero-austin-skyline.jpg"
+    image: heroSkyline
   }
 ];

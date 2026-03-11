@@ -6,16 +6,16 @@ import listing3 from "@/assets/listing-3.jpg";
 
 const listings = [
   {
-    image: listing1,
-    address: "2847 Barton Creek Blvd",
+    image: "/lovable-uploads/0fc79a0b-1fde-439f-bb08-6062e50770b7.jpg",
+    address: "2300 Barton Creek Boulevard #15",
     location: "Barton Creek, Austin",
-    price: "$4,850,000",
-    beds: 5,
-    baths: 6,
-    sqft: "6,200",
-    acres: "1.2",
-    description: "Stunning contemporary estate on the Barton Creek golf course with panoramic views, chef's kitchen, and resort-style outdoor living.",
-    link: "#",
+    price: "$3,750,000",
+    beds: 4,
+    baths: 4,
+    sqft: "4,147",
+    acres: "",
+    description: "Elegant villa in the heart of Barton Creek with refined finishes, open floor plan, and access to world-class amenities.",
+    link: "https://www.villagovernorshill.com",
   },
   {
     image: listing2,

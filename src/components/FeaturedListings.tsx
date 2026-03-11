@@ -51,14 +51,14 @@ const FeaturedListings = () => {
                 Featured Austin Luxury Properties
               </h2>
               <p className="text-muted-foreground mt-4 max-w-xl">
-                Browse our active listings alongside representative examples of the luxury homes we help clients acquire across Austin's premier neighborhoods.
+                Explore the caliber of luxury properties available across Austin, including select private and off-market opportunities.
               </p>
             </div>
             <Link
-              to="/listings"
+              to="/austin-luxury-homes-for-sale"
               className="mt-6 md:mt-0 text-minimal text-muted-foreground hover:text-foreground transition-colors duration-300 relative group shrink-0">
               
-              VIEW ALL LISTINGS
+              EXPLORE AUSTIN LUXURY HOMES
               <span className="absolute bottom-0 left-0 w-full h-px bg-foreground scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
             </Link>
           </div>
@@ -111,6 +111,16 @@ const FeaturedListings = () => {
                   </Wrapper>
               );
             })}
+          </div>
+
+          <div className="mt-12 text-center">
+            <Link
+              to="/off-market-luxury-homes-austin"
+              className="inline-block text-sm text-muted-foreground hover:text-foreground transition-colors duration-300"
+            >
+              Looking for something not publicly listed?{" "}
+              <span className="underline">Ask about off-market opportunities</span> →
+            </Link>
           </div>
         </div>
       </div>

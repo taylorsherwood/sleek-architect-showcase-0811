@@ -112,6 +112,16 @@ const FeaturedListings = () => {
               );
             })}
           </div>
+
+          <div className="mt-12 text-center">
+            <Link
+              to="/off-market-luxury-homes-austin"
+              className="inline-block text-sm text-muted-foreground hover:text-foreground transition-colors duration-300"
+            >
+              Looking for something not publicly listed?{" "}
+              <span className="underline">Ask about off-market opportunities</span> →
+            </Link>
+          </div>
         </div>
       </div>
     </section>);

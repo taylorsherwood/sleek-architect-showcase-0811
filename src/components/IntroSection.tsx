@@ -12,15 +12,15 @@ const IntroSection = () => {
                 Unmatched Expertise in Austin Luxury Real Estate
               </h2>
               <div className="space-y-6 text-muted-foreground leading-relaxed">
-                <p>
-                  Echelon Property Group is a boutique brokerage built on the belief that selling a luxury 
-                  home demands more than a listing—it demands exceptional marketing, strategic positioning, 
-                  and white-glove service from start to close.
+                <p>At Echelon Property Group we believe real estate is more than transactions—it’s about creating opportunities and building lasting relationships. With expertise across residential, commercial, and investment properties, our team provides clients with clear guidance, innovative strategies, and personalized service at every step. Whether you’re buying your first home, scaling a portfolio, or positioning a property for market, we bring the local expertise and sharp negotiation skills you need to achieve your goals.
+
+
+
                 </p>
                 <p>
-                  With deep roots in Austin's most prestigious communities—Barton Creek, Westlake Hills, 
-                  Lake Austin, Rollingwood, and the Texas Hill Country—we bring unparalleled local knowledge 
-                  and a curated approach to every transaction.
+
+
+
                 </p>
               </div>
               <Link

@@ -1,3 +1,10 @@
+import heroLuxury from "@/assets/hero-luxury-austin.jpg";
+import heroSkyline from "@/assets/hero-austin-skyline.jpg";
+import heroArch from "@/assets/hero-architecture.jpg";
+import communityLake from "@/assets/community-lake-austin.jpg";
+import listing2 from "@/assets/listing-2.jpg";
+import listing1 from "@/assets/listing-1.jpg";
+
 import { BlogPost } from "./blogPosts";
 
 export const seoBlogPosts: BlogPost[] = [

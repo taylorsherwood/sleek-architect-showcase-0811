@@ -324,6 +324,6 @@ The most successful community spaces are those that grow and evolve with their u
     date: "2024-03-05",
     readTime: "10 min read",
     category: "URBAN PLANNING",
-    image: "/src/assets/blog-urban-planning.jpg"
+    image: blogUrban
   }
 ];

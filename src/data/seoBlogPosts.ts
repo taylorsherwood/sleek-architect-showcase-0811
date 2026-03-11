@@ -267,7 +267,7 @@ Westlake Hills, Barton Creek, Tarrytown, and Lake Austin waterfront communities 
     date: "2025-02-20",
     readTime: "14 min read",
     category: "RELOCATION",
-    image: "/src/assets/hero-austin-skyline.jpg"
+    image: heroSkyline
   },
   {
     id: "austin-property-taxes-explained",

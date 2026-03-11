@@ -9,7 +9,7 @@ const testimonials = [
   },
   {
     quote:
-      "Taylor was fantastic to work with! He really understood what I was looking for and showed me great options that fit my specific parameters. Then, when I was ready to make an offer, he helped things move really quickly to meet a tight closing date. I've already recommended Taylor to my friends!",
+      "Taylor was fantastic to work with! He really understood what I was looking for and showed me great options that fit my specific criteria. When I was ready to make an offer, he helped things move quickly to meet a tight closing date. I've already recommended Taylor to my friends!",
     name: "Meredith Taylor",
     detail: "BUYER CLIENT",
   },

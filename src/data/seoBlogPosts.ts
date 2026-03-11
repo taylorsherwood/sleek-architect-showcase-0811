@@ -380,7 +380,7 @@ Yes. Successful protests can reduce assessed values by 5-15% or more, resulting 
     date: "2025-02-10",
     readTime: "13 min read",
     category: "MARKET INSIGHTS",
-    image: "/src/assets/hero-architecture.jpg"
+    image: heroArch
   },
   {
     id: "best-waterfront-homes-austin",

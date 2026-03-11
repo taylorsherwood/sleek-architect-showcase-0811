@@ -18,6 +18,7 @@ import MarketReport from "./pages/MarketReport";
 import OffMarketHomes from "./pages/OffMarketHomes";
 import AustinLuxuryHomes from "./pages/AustinLuxuryHomes";
 import AustinCommercialRealEstate from "./pages/AustinCommercialRealEstate";
+import HomeValueAustin from "./pages/HomeValueAustin";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();

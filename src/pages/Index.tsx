@@ -6,6 +6,7 @@ import Testimonials from "@/components/Testimonials";
 import MeetTaylor from "@/components/MeetTaylor";
 import CommunitiesPreview from "@/components/CommunitiesPreview";
 import CTASection from "@/components/CTASection";
+import SellerCTA from "@/components/SellerCTA";
 import Footer from "@/components/Footer";
 import SchemaMarkup, { realEstateAgentSchema, localBusinessSchema } from "@/components/SchemaMarkup";
 
@@ -21,6 +22,7 @@ const Index = () => {
       <IntroSection />
       <MeetTaylor />
       <Testimonials />
+      <SellerCTA />
       <CTASection />
       
       {/* Newsletter Section */}

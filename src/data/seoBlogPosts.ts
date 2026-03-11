@@ -476,7 +476,7 @@ Many Lake Austin transactions occur off-market. Working with a specialized agent
     date: "2025-01-28",
     readTime: "12 min read",
     category: "LUXURY LIVING",
-    image: "/src/assets/community-lake-austin.jpg"
+    image: communityLake
   },
   {
     id: "austin-luxury-real-estate-market-forecast",

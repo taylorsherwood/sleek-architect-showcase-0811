@@ -17,6 +17,7 @@ import BestLuxuryNeighborhoods from "./pages/BestLuxuryNeighborhoods";
 import MarketReport from "./pages/MarketReport";
 import OffMarketHomes from "./pages/OffMarketHomes";
 import AustinLuxuryHomes from "./pages/AustinLuxuryHomes";
+import AustinCommercialRealEstate from "./pages/AustinCommercialRealEstate";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();

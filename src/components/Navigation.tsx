@@ -21,6 +21,7 @@ const Navigation = () => {
   { href: "/about", label: "ABOUT" },
   { href: "/listings", label: "LISTINGS" },
   { href: "/communities", label: "COMMUNITIES" },
+  { href: "/blog", label: "BLOG" },
   { href: "/contact", label: "CONTACT" }];
 
 

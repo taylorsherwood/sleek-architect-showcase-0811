@@ -1,3 +1,5 @@
+import clhmsBadge from "@/assets/clhms-badge.png";
+
 const MeetTaylor = () => {
   return (
     <section className="py-20 bg-background">
@@ -8,10 +10,13 @@ const MeetTaylor = () => {
           </h3>
           <p className="text-xs tracking-[0.1em] uppercase text-muted-foreground/60 mb-8 md:w-1/2 text-center">CLHMS</p>
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <img
-              alt="Taylor Sherwood"
-              className="w-full h-[50vh] md:h-[60vh] object-contain"
-              src="/lovable-uploads/537facb0-1fbc-450c-8c4a-c1d06c4aa924.jpg" />
+            <div className="relative">
+              <img
+                alt="Taylor Sherwood"
+                className="w-full h-[50vh] md:h-[60vh] object-contain"
+                src="/lovable-uploads/537facb0-1fbc-450c-8c4a-c1d06c4aa924.jpg" />
+              <img src={clhmsBadge} alt="CLHMS Guild Badge" className="w-14 h-14 mt-4 mx-auto md:mx-0 opacity-80" />
+            </div>
             
             <div>
             <p className="text-muted-foreground leading-relaxed max-w-md text-xl">

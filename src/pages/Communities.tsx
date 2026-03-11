@@ -9,6 +9,9 @@ const westlake = "/lovable-uploads/c250e465-9078-48da-b8c6-a690b5beb959.png";
 import lakeAustin from "@/assets/community-lake-austin.jpg";
 import rollingwood from "@/assets/community-rollingwood.jpg";
 import hillCountry from "@/assets/community-hill-country.jpg";
+import travisHeights from "@/assets/community-travis-heights.jpg";
+import tarrytown from "@/assets/community-tarrytown.jpg";
+import drippingSprings from "@/assets/community-dripping-springs.jpg";
 
 const imageMap: Record<string, string> = {
   "barton-creek": bartonCreek,
@@ -16,8 +19,10 @@ const imageMap: Record<string, string> = {
   "lake-austin-waterfront": lakeAustin,
   "rollingwood": rollingwood,
   "texas-hill-country-estates": hillCountry,
-  "travis-heights": "/lovable-uploads/537facb0-1fbc-450c-8c4a-c1d06c4aa924.jpg",
+  "travis-heights": travisHeights,
   "downtown-austin-condos": "/lovable-uploads/0fc79a0b-1fde-439f-bb08-6062e50770b7.jpg",
+  "tarrytown": tarrytown,
+  "dripping-springs": drippingSprings,
 };
 
 const Communities = () => {

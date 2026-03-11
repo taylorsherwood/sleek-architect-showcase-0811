@@ -281,7 +281,15 @@ South Congress Avenue, along the neighborhood's western edge, is one of Austin's
 The teardown-rebuild opportunity in Travis Heights is significant. Original homes on standard lots (5,000-8,000 square feet) can be acquired and replaced with contemporary designs that achieve substantial premiums over the original home value. Corner lots and properties with views are particularly attractive for this strategy.
 
 Rental investment in Travis Heights is supported by the neighborhood's appeal to short-term and mid-term renters. The proximity to downtown and South Congress makes Travis Heights properties attractive for vacation rentals (where permitted by city regulations) and corporate housing. Long-term rental demand is also strong, driven by the neighborhood's walkability and lifestyle amenities.`,
-    relatedCommunities: ["downtown-austin-condos", "tarrytown", "rollingwood", "westlake-hills"]
+    relatedCommunities: ["downtown-austin-condos", "tarrytown", "rollingwood", "westlake-hills"],
+    faqs: [
+      { question: "What is Travis Heights Austin known for?", answer: "Travis Heights is known for its eclectic architectural character, sweeping downtown skyline views, proximity to South Congress Avenue, creative community spirit, and historic charm. It's one of Austin's most iconic and sought-after neighborhoods." },
+      { question: "Can you walk to South Congress from Travis Heights?", answer: "Yes. Travis Heights borders South Congress Avenue, making many of Austin's best restaurants, boutiques, coffee shops, and live music venues within easy walking or biking distance." },
+      { question: "What are home prices in Travis Heights?", answer: "Travis Heights home prices range from $600,000 to over $4 million. Median prices exceed $1 million, with premium properties featuring downtown views or larger lots trading well above $2 million. New construction commands $500 to $700 per square foot." },
+      { question: "Is Travis Heights a historic neighborhood?", answer: "Yes. Travis Heights was established in the 1920s-1930s and features a diverse mix of Craftsman bungalows, Spanish Colonial Revival homes, and contemporary new construction. The neighborhood's architectural variety and mature tree canopy reflect its rich history." },
+      { question: "What parks are near Travis Heights?", answer: "Travis Heights is near Big Stacy Park (with a spring-fed pool), the Butler Hike-and-Bike Trail along Lady Bird Lake, Red Bud Isle, and Zilker Park. The Ann and Roy Butler Trail provides miles of running, walking, and cycling paths." },
+      { question: "Is Travis Heights good for investment?", answer: "Yes. Travis Heights offers strong investment potential driven by its proximity to downtown and South Congress, broad buyer appeal across demographics, and active teardown-rebuild market. Properties have shown 7-10% annual appreciation over the past decade." }
+    ]
   },
   {
     slug: "downtown-austin-condos",

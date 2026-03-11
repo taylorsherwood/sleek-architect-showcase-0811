@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -42,6 +43,10 @@ const Footer = () => {
                 <p>2105 East MLK Blvd Ste 227<br />Austin, Texas 78702</p>
                 <a href="mailto:taylor@echelonpropertygroup.com" className="block hover:text-primary-foreground transition-colors">taylor@echelonpropertygroup.com</a>
                 <a href="tel:+15126613843" className="block hover:text-primary-foreground transition-colors">(512) 661-3843</a>
+                <a href="https://instagram.com/TheInvestorBroker" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary-foreground transition-colors">
+                  <Instagram className="w-4 h-4" />
+                  @TheInvestorBroker
+                </a>
               </div>
             </div>
           </div>

@@ -1,3 +1,7 @@
+import blogSustainable from "@/assets/blog-sustainable-architecture.jpg";
+import blogMinimalist from "@/assets/blog-minimalist-living.jpg";
+import blogUrban from "@/assets/blog-urban-planning.jpg";
+
 export interface BlogPost {
   id: string;
   title: string;

@@ -3,21 +3,21 @@ import { Quote } from "lucide-react";
 const testimonials = [
   {
     quote:
-      "Taylor made selling our Barton Creek estate seamless. His market knowledge and marketing strategy brought us multiple offers above asking within the first week.",
+      "Taylor made selling our Barton Creek home seamless. His market knowledge and marketing strategy brought us multiple offers above asking within the first week.",
     name: "James & Sarah Mitchell",
     detail: "Barton Creek Seller",
   },
   {
     quote:
-      "We were blown away by the level of service and attention to detail. Echelon truly understands the luxury market in Austin.",
-    name: "David Chen",
-    detail: "Westlake Hills Buyer",
+      "Taylor was fantastic to work with! He really understood what I was looking for and showed me great options that fit my specific parameters. Then, when I was ready to make an offer, he helped things move really quickly to meet a tight closing date. I've already recommended Taylor to my friends!",
+    name: "Meredith Taylor",
+    detail: "BUYER CLIENT",
   },
   {
     quote:
       "From staging to close, every step was handled with professionalism and care. We couldn't have asked for a better experience.",
     name: "Katherine & Robert Ellis",
-    detail: "Lake Austin Seller",
+    detail: "SELLER CLIENT",
   },
 ];
 

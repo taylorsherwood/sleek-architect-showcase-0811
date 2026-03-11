@@ -32,7 +32,7 @@ const About = () => {
           <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
             <img
               alt="Echelon Property Group team"
-              className="w-full h-[50vh] md:h-[60vh] object-contain" src="/lovable-uploads/537facb0-1fbc-450c-8c4a-c1d06c4aa924.jpg" />
+              className="w-full h-[50vh] md:h-[60vh] object-contain" src="/lovable-uploads/9265260a-6432-4ccb-ad05-c43da28ecfc3.jpg" />
             <div>
               <h3 className="text-3xl md:text-4xl font-display font-light text-architectural mb-4">Meet Taylor Sherwood</h3>
               <p className="text-lg text-muted-foreground leading-relaxed">Taylor Sherwood is a top-performing Austin real estate advisor specializing in commercial, luxury, and land development opportunities. With a background in economics and a reputation for precision deal-making, Taylor helps investors, developers, and high-net-worth clients identify, structure, and execute winning real estate strategies across Central Texas.

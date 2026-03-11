@@ -26,7 +26,7 @@ const CommunitiesPreview = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-minimal text-gold mb-4 font-extrabold">LUXURY COMMUNITIES</p>
-            <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-6">Austin's Most Desirable Neighborhoods
+            <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-6">Explore Austin's Premier Luxury Neighborhoods
 
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">

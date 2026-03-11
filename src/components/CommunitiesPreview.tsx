@@ -3,12 +3,20 @@ import bartonCreek from "@/assets/community-barton-creek.jpg";
 import westlake from "@/assets/community-westlake.jpg";
 import lakeAustin from "@/assets/community-lake-austin.jpg";
 import hillCountry from "@/assets/community-hill-country.jpg";
+import rollingwood from "@/assets/community-rollingwood.jpg";
+import zilker from "@/assets/community-zilker.jpg";
+import travisHeights from "@/assets/community-travis-heights.jpg";
+import downtown from "@/assets/community-downtown.jpg";
 
 const communities = [
 { name: "Barton Creek", image: bartonCreek },
 { name: "Westlake Hills", image: westlake },
 { name: "Lake Austin", image: lakeAustin },
-{ name: "Hill Country", image: hillCountry }];
+{ name: "Hill Country", image: hillCountry },
+{ name: "Rollingwood", image: rollingwood },
+{ name: "Zilker", image: zilker },
+{ name: "Travis Heights", image: travisHeights },
+{ name: "Downtown", image: downtown }];
 
 
 const CommunitiesPreview = () => {

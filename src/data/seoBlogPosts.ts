@@ -110,7 +110,7 @@ Yes. Austin's luxury market involves unique dynamics including off-market transa
     date: "2025-03-01",
     readTime: "12 min read",
     category: "LUXURY LIVING",
-    image: "/src/assets/hero-luxury-austin.jpg"
+    image: heroLuxury
   },
   {
     id: "moving-to-austin-texas-from-california",

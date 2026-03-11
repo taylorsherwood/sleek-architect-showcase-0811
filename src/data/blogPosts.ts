@@ -77,7 +77,7 @@ The future of architecture lies in our ability to create buildings that work in 
     date: "2024-03-15",
     readTime: "8 min read",
     category: "SUSTAINABILITY",
-    image: "/src/assets/blog-sustainable-architecture.jpg"
+    image: blogSustainable
   },
   {
     id: "minimalism-modern-living",

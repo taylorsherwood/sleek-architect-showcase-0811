@@ -5,7 +5,7 @@ const testimonials = [
     quote:
       "Taylor made selling our Barton Creek home seamless. His market knowledge and marketing strategy brought us multiple offers above asking within the first week.",
     name: "James & Sarah Mitchell",
-    detail: "Barton Creek Seller",
+    detail: "SELLER CLIENT",
   },
   {
     quote:

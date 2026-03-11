@@ -12,3 +12,5 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+Sitemap: https://sleek-architect-showcase-0811.lovable.app/sitemap.xml

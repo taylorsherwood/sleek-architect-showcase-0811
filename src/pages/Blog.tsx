@@ -1,19 +1,28 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 import { blogPosts } from "@/data/blogPosts";
+import { seoBlogPosts } from "@/data/seoBlogPosts";
+
+const allPosts = [...seoBlogPosts, ...blogPosts];
 
 const Blog = () => {
   const [activeCategory, setActiveCategory] = useState("ALL");
   
-  const categories = ["ALL", "SUSTAINABILITY", "DESIGN", "URBAN PLANNING"];
+  const categories = ["ALL", "LUXURY LIVING", "RELOCATION", "MARKET INSIGHTS", "INVESTMENT", "SUSTAINABILITY", "DESIGN", "URBAN PLANNING"];
   
   const filteredPosts = activeCategory === "ALL" 
-    ? blogPosts 
-    : blogPosts.filter(post => post.category === activeCategory);
+    ? allPosts 
+    : allPosts.filter(post => post.category === activeCategory);
 
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Austin Real Estate Blog & Insights | Echelon Property Group"
+        description="Expert insights on Austin luxury real estate, market trends, neighborhood guides, and investment strategies from Echelon Property Group."
+      />
       <Navigation />
       
       {/* Hero Section */}
@@ -25,8 +34,8 @@ const Blog = () => {
                 INSIGHTS
               </h1>
               <p className="text-xl text-muted-foreground max-w-3xl">
-                Exploring the intersection of architecture, design, and human experience 
-                through thoughtful analysis and contemporary perspectives.
+                Expert analysis of Austin's luxury real estate market, neighborhood guides, 
+                investment strategies, and lifestyle insights from Echelon Property Group.
               </p>
             </div>
           </div>
@@ -37,7 +46,7 @@ const Blog = () => {
       <section className="pb-16">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
-            <div className="flex flex-wrap gap-8 justify-center md:justify-start">
+            <div className="flex flex-wrap gap-6 justify-center md:justify-start">
               {categories.map((category) => (
                 <button
                   key={category}
@@ -72,12 +81,11 @@ const Blog = () => {
                     <div className="relative overflow-hidden mb-6">
                       <img 
                         src={post.image} 
-                        alt={post.title}
+                        alt={`${post.title} - Austin luxury real estate insights`}
                         className="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105"
+                        loading="lazy"
                       />
                       <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                      
-                      {/* Category Badge */}
                       <div className="absolute top-4 left-4 bg-background/90 backdrop-blur-sm px-3 py-1">
                         <span className="text-xs text-foreground font-medium">
                           {post.category}
@@ -124,7 +132,7 @@ const Blog = () => {
               Stay Informed
             </h2>
             <p className="text-xl text-muted-foreground mb-12">
-              Subscribe to our newsletter for the latest insights on architecture and design
+              Subscribe to our newsletter for the latest insights on Austin luxury real estate
             </p>
             <a
               href="https://taylorsherwood.myflodesk.com/biolink"
@@ -137,6 +145,8 @@ const Blog = () => {
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 };

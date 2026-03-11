@@ -12,6 +12,9 @@ import CommunityPage from "./pages/CommunityPage";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import Contact from "./pages/Contact";
+import MovingToAustin from "./pages/MovingToAustin";
+import BestLuxuryNeighborhoods from "./pages/BestLuxuryNeighborhoods";
+import MarketReport from "./pages/MarketReport";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -32,6 +35,9 @@ const App = () => (
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:id" element={<BlogPost />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/moving-to-austin" element={<MovingToAustin />} />
+          <Route path="/best-luxury-neighborhoods-austin" element={<BestLuxuryNeighborhoods />} />
+          <Route path="/austin-luxury-market-report" element={<MarketReport />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

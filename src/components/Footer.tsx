@@ -27,6 +27,12 @@ const Footer = () => {
                 <Link to="/communities/rollingwood" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Rollingwood</Link>
                 <Link to="/communities/dripping-springs" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Dripping Springs</Link>
               </div>
+              <h4 className="text-minimal text-primary-foreground/50 mb-4 mt-6">GUIDES</h4>
+              <div className="space-y-2">
+                <Link to="/moving-to-austin" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Moving to Austin</Link>
+                <Link to="/best-luxury-neighborhoods-austin" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Best Neighborhoods</Link>
+                <Link to="/austin-luxury-market-report" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Market Report</Link>
+              </div>
             </div>
 
             <div className="md:text-right">

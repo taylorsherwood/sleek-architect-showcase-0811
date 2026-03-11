@@ -101,7 +101,15 @@ The Barton Creek Greenbelt provides over 12 miles of trails for hiking, biking, 
 The community is approaching build-out, meaning the supply of available homesites is shrinking. This scarcity factor is expected to increase the premium on existing homes and any remaining lots. Tear-down and rebuild opportunities on prime lots represent a compelling investment strategy, as buyers are willing to pay significant premiums for updated homes in this location.
 
 For investors considering Barton Creek, the combination of country club amenities, top schools, and proximity to Austin's growing economy makes this a blue-chip real estate investment. The community's established reputation and homeowner demographics provide stability, while Austin's continued growth as a technology and business hub ensures ongoing demand from high-net-worth buyers.`,
-    relatedCommunities: ["westlake-hills", "lake-austin-waterfront", "rollingwood", "texas-hill-country-estates"]
+    relatedCommunities: ["westlake-hills", "lake-austin-waterfront", "rollingwood", "texas-hill-country-estates"],
+    faqs: [
+      { question: "Is Barton Creek a gated community?", answer: "Yes. Barton Creek is a gated, master-planned community with 24/7 security staffing. The gated entrance provides privacy and exclusivity for residents while maintaining convenient access to Austin via Loop 360 and MoPac." },
+      { question: "How many golf courses are in Barton Creek?", answer: "Barton Creek features four championship golf courses designed by Tom Fazio, Ben Crenshaw, and Arnold Palmer, all accessible through the Barton Creek Country Club. Membership provides access to golf, tennis, swimming, dining, and spa facilities." },
+      { question: "What are home prices in Barton Creek Austin?", answer: "Homes in Barton Creek range from $1.5 million to over $15 million. The median home price exceeds $2 million, with estate properties on golf course lots or with greenbelt views commanding the highest premiums." },
+      { question: "What school district is Barton Creek in?", answer: "Barton Creek is served by the Eanes Independent School District, including Barton Creek Elementary, Hill Country Middle School, and Westlake High School—all consistently ranked among the top schools in Texas." },
+      { question: "Can you hike in Barton Creek?", answer: "Yes. The Barton Creek Greenbelt runs directly through the community, offering residents private trail access to over 12 miles of hiking and mountain biking paths, natural swimming holes like Sculpture Falls and Twin Falls, and rock climbing." },
+      { question: "Is Barton Creek still building new homes?", answer: "Barton Creek is approaching build-out, meaning remaining homesites are increasingly rare and valuable. Some teardown-and-rebuild opportunities exist on older lots, but the limited supply of new construction drives premium pricing." }
+    ]
   },
   {
     slug: "lake-austin-waterfront",

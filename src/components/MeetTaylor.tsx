@@ -1,6 +1,6 @@
 const MeetTaylor = () => {
   return (
-    <section className="py-20 bg-background">
+    <section className="py-16 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
           <h3 className="text-3xl md:text-4xl font-display font-light text-architectural mb-8 md:w-1/2 text-center">

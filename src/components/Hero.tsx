@@ -1,12 +1,17 @@
 import { Link } from "react-router-dom";
-import heroImage from "@/assets/hero-austin-skyline.jpg";
 
 const Hero = () => {
   return (
     <section className="relative h-screen flex items-end overflow-hidden">
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroImage})` }} />
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover"
+      >
+        <source src="/videos/hero-video.mp4" type="video/mp4" />
+      </video>
       
       <div className="absolute inset-0 bg-black/50" />
       

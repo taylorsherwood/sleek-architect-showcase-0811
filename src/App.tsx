@@ -17,6 +17,7 @@ import BestLuxuryNeighborhoods from "./pages/BestLuxuryNeighborhoods";
 import MarketReport from "./pages/MarketReport";
 import OffMarketHomes from "./pages/OffMarketHomes";
 import AustinLuxuryHomes from "./pages/AustinLuxuryHomes";
+import AustinCommercialRealEstate from "./pages/AustinCommercialRealEstate";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -42,6 +43,7 @@ const App = () => (
           <Route path="/austin-luxury-market-report" element={<MarketReport />} />
           <Route path="/off-market-luxury-homes-austin" element={<OffMarketHomes />} />
           <Route path="/austin-luxury-homes-for-sale" element={<AustinLuxuryHomes />} />
+          <Route path="/austin-commercial-real-estate" element={<AustinCommercialRealEstate />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

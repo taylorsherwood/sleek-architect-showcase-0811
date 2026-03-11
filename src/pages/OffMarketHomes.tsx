@@ -38,7 +38,9 @@ const OffMarketHomes = () => {
   });
   const [errors, setErrors] = useState<Record<string, string>>({});
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [submitting, setSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const result = leadSchema.safeParse(form);
     if (!result.success) {
@@ -50,11 +52,46 @@ const OffMarketHomes = () => {
       return;
     }
     setErrors({});
-    toast({
-      title: "Request Received",
-      description: "Thank you. We'll send you off-market listings that match your criteria shortly.",
-    });
-    setForm({ name: "", email: "", phone: "", priceRange: "", neighborhoods: "", message: "" });
+    setSubmitting(true);
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          access_key: "81cc426e-b1a8-4e5e-b2a0-0d25738dfe12",
+          subject: "New Off-Market Access Request",
+          from_name: "Echelon Property Group Website",
+          name: form.name,
+          email: form.email,
+          phone: form.phone || "Not provided",
+          "Preferred Price Range": form.priceRange,
+          "Preferred Neighborhoods": form.neighborhoods || "Not specified",
+          "Additional Notes": form.message || "None",
+        }),
+      });
+      const data = await response.json();
+      if (data.success) {
+        toast({
+          title: "Request Received",
+          description: "Thank you. We'll send you off-market listings that match your criteria shortly.",
+        });
+        setForm({ name: "", email: "", phone: "", priceRange: "", neighborhoods: "", message: "" });
+      } else {
+        toast({
+          title: "Submission Failed",
+          description: "Something went wrong. Please try again or contact us directly.",
+          variant: "destructive",
+        });
+      }
+    } catch {
+      toast({
+        title: "Submission Failed",
+        description: "Something went wrong. Please try again or contact us directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -268,8 +305,8 @@ const OffMarketHomes = () => {
                   <div>
                     <textarea name="message" placeholder="Additional details about what you're looking for (Optional)" value={form.message} onChange={handleChange} rows={3} className={`${inputClass} resize-none`} maxLength={2000} />
                   </div>
-                  <button type="submit" className="w-full md:w-auto text-minimal bg-primary text-primary-foreground hover:bg-primary/90 px-10 py-4 transition-colors duration-300">
-                    REQUEST OFF-MARKET ACCESS
+                  <button type="submit" disabled={submitting} className="w-full md:w-auto text-minimal bg-primary text-primary-foreground hover:bg-primary/90 px-10 py-4 transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed">
+                    {submitting ? "SENDING..." : "REQUEST OFF-MARKET ACCESS"}
                   </button>
                 </form>
               </div>

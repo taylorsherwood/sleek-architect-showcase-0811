@@ -14,28 +14,31 @@ const listings = [
   sqft: "4,147",
   link: "https://www.villagovernorshill.com",
   isRepresentative: false,
+  badgeLabel: "Private Listing",
 },
 {
   image: listing2,
   address: "1203 Westlake Ridge",
   location: "Westlake Hills, Austin",
-  price: "$7,250,000",
+  price: "$7M+ Luxury Home",
   beds: 6,
   baths: 7,
   sqft: "8,400",
   link: "#",
   isRepresentative: true,
+  badgeLabel: "Example of Homes We Source",
 },
 {
   image: listing3,
   address: "Ranch Estate on 42 Acres",
   location: "Texas Hill Country",
-  price: "$5,900,000",
+  price: "$5M+ Hill Country Estate",
   beds: 4,
   baths: 5,
   sqft: "5,800",
   link: "#",
   isRepresentative: true,
+  badgeLabel: "Example of Homes We Source",
 }];
 
 

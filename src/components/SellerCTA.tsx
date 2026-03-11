@@ -8,17 +8,17 @@ const SellerCTA = () => {
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
               <p className="text-minimal text-gold mb-4">FOR HOMEOWNERS</p>
-              <h2 className="text-3xl md:text-5xl font-display font-light text-architectural mb-6">
-                Curious What Your Austin Home Is Worth?
+              <h2 className="text-3xl md:text-5xl font-display font-light text-architectural mb-6">Curious What Your Austin Property Is Worth?
+
               </h2>
-              <p className="text-muted-foreground leading-relaxed mb-8">
-                Receive a confidential property valuation and expert market insights for your home 
-                from a local Austin real estate advisor specializing in luxury properties.
+              <p className="text-muted-foreground leading-relaxed mb-8">Receive a confidential property valuation and expert market insights for your property from a local Austin real estate advisor.
+
+
               </p>
               <Link
                 to="/home-value-austin"
-                className="inline-block text-minimal bg-primary text-primary-foreground hover:bg-primary/90 px-10 py-4 transition-colors duration-300"
-              >
+                className="inline-block text-minimal bg-primary text-primary-foreground hover:bg-primary/90 px-10 py-4 transition-colors duration-300">
+                
                 GET YOUR FREE HOME VALUATION
               </Link>
             </div>
@@ -65,8 +65,8 @@ const SellerCTA = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default SellerCTA;

@@ -146,7 +146,15 @@ Shopping and dining are easily accessible in the surrounding communities of West
 Historical appreciation data for Lake Austin waterfront homes shows consistent outperformance relative to the broader Austin luxury market. Properties purchased a decade ago have, in many cases, more than doubled in value. This appreciation trend is supported by the ongoing influx of high-net-worth individuals and corporate executives relocating to Austin from higher-cost markets.
 
 Investment strategies on Lake Austin include acquiring older waterfront homes for renovation or teardown-and-rebuild projects. Given the premium placed on modern amenities and design, updated properties can achieve significantly higher valuations. Additionally, the strong luxury rental market on Lake Austin provides an attractive income opportunity for investors, with weekly rates for premium waterfront homes ranging from $5,000 to $20,000 during peak season.`,
-    relatedCommunities: ["westlake-hills", "tarrytown", "barton-creek", "rollingwood"]
+    relatedCommunities: ["westlake-hills", "tarrytown", "barton-creek", "rollingwood"],
+    faqs: [
+      { question: "Does Lake Austin water level fluctuate?", answer: "No. Unlike Lake Travis, Lake Austin is a constant-level lake, making it ideal for private docks, boathouses, and year-round water activities. This consistent water level is a major advantage for waterfront homeowners." },
+      { question: "How much do waterfront homes on Lake Austin cost?", answer: "Lake Austin waterfront homes typically range from $2 million to over $25 million. Price per front foot of shoreline ranges from $10,000 to $30,000, with premium properties featuring deep water, sunset views, and gentle slopes commanding the highest prices." },
+      { question: "Can I build a dock on Lake Austin?", answer: "Dock construction and modifications require a permit from the Lower Colorado River Authority (LCRA). Existing dock permits are valuable assets that transfer with property purchases. New dock permits are available but subject to environmental review." },
+      { question: "How far is Lake Austin from downtown?", answer: "Most Lake Austin waterfront properties are located 10 to 20 minutes from downtown Austin, making it remarkably convenient for daily commuting while enjoying a resort-like waterfront lifestyle." },
+      { question: "Are Lake Austin homes a good investment?", answer: "Lake Austin waterfront is one of the strongest-performing real estate investments in Texas. The finite shoreline, constant water level, and Austin's growth create permanent scarcity. Historical appreciation has averaged 8-12% annually over the past decade." },
+      { question: "What water activities are available on Lake Austin?", answer: "Lake Austin offers boating, waterskiing, wakeboarding, paddleboarding, kayaking, fishing, and swimming. The calm, constant-level waters and designated activity zones accommodate all types of recreation." }
+    ]
   },
   {
     slug: "tarrytown",

@@ -10,7 +10,7 @@ const MeetTaylor = () => {
             Meet Taylor Sherwood
           </h3>
           <p className="text-xs tracking-[0.1em] uppercase text-muted-foreground/60 mb-8 md:w-1/2 text-center">
-            CERTIFIED LUXURY HOME MARKETING SPECIALIST (CLHMS)<br />
+            CERTIFIED LUXURY HOME MARKETING SPECIALIST (CLHMS) <br />
             AUSTIN LUXURY REAL ESTATE ADVISOR
           </p>
           <div className="grid md:grid-cols-2 gap-12 items-center">

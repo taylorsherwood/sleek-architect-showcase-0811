@@ -51,6 +51,38 @@ export const realEstateAgentSchema = {
   "sameAs": []
 };
 
+export const taylorSherwoodSchema = {
+  "@context": "https://schema.org",
+  "@type": "RealEstateAgent",
+  "name": "Taylor Sherwood",
+  "jobTitle": "Certified Luxury Home Marketing Specialist (CLHMS)",
+  "description": "Austin luxury real estate advisor specializing in distinctive homes, luxury properties, and land opportunities across Westlake Hills, Barton Creek, Tarrytown, and Lake Austin.",
+  "url": "https://sleek-architect-showcase-0811.lovable.app/about",
+  "telephone": "(512) 661-3843",
+  "email": "taylor@echelonpropertygroup.com",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Echelon Property Group",
+    "url": "https://sleek-architect-showcase-0811.lovable.app"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "2105 East MLK Blvd Ste 227",
+    "addressLocality": "Austin",
+    "addressRegion": "TX",
+    "postalCode": "78702",
+    "addressCountry": "US"
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Austin", "containedInPlace": { "@type": "State", "name": "Texas" } },
+    { "@type": "Place", "name": "Westlake Hills, Texas" },
+    { "@type": "Place", "name": "Barton Creek, Austin" },
+    { "@type": "Place", "name": "Tarrytown, Austin" },
+    { "@type": "Place", "name": "Lake Austin" }
+  ],
+  "knowsAbout": ["Luxury Real Estate", "Off-Market Homes", "Land Development", "Commercial Real Estate", "Investment Properties"]
+};
+
 export const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",

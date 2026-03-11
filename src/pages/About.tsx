@@ -49,7 +49,8 @@ const About = () => {
                 <div className="space-y-1">
                   <p className="text-sm text-muted-foreground/70">Certified Luxury Home Marketing Specialist (CLHMS)</p>
                   <p className="text-sm text-muted-foreground/70">Member, eXp Luxury Division</p>
-                  <p className="text-sm text-muted-foreground/70">Brokered by eXp Realty</p>
+                  <p className="text-sm text-muted-foreground/70">
+</p>
                 </div>
               </div>
             </div>
@@ -138,5 +139,4 @@ const About = () => {
 
       <Footer />
     </div>);};
-
 export default About;

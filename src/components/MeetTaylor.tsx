@@ -14,13 +14,9 @@ const MeetTaylor = () => {
             />
             <div>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Taylor Sherwood is a top-performing Austin real estate advisor specializing in commercial, luxury, and land development opportunities. With a background in economics and a reputation for precision deal-making, Taylor helps investors, developers, and high-net-worth clients identify, structure, and execute winning real estate strategies across Central Texas.
+              Taylor Sherwood is an Austin based real estate advisor specializing in distinctive homes, luxury properties, and land opportunities. Known for his attention to detail and thoughtful approach to marketing, he helps clients navigate complex transactions with confidence while showcasing properties in their best possible light.
               {"\n\n"}
-              Known for his sharp market insight and hands-on approach, Taylor advises on everything from off-market commercial acquisitions and land assemblages to luxury residential and development projects. His experience spans investment underwriting, land development strategy, value-add positioning, and high-end residential sales — giving clients a full-spectrum advantage.
-              {"\n\n"}
-              Taylor's clients value his ability to cut through noise, uncover hidden opportunities, and negotiate aggressively on their behalf. Whether it's sourcing development sites, positioning a luxury asset for maximum exposure, or structuring complex commercial transactions, Taylor brings clarity, confidence, and results.
-              {"\n\n"}
-              When he's not closing deals, Taylor stays deeply engaged in Austin's growth and development landscape — because in this city, tomorrow's best opportunities are being built today.
+              With a strong understanding of the local market and a focus on quality properties, he works closely with buyers and sellers to ensure every transaction is handled with care, discretion, and strategic insight.
             </p>
           </div>
           </div>

@@ -32,6 +32,7 @@ const Footer = () => {
                 <Link to="/moving-to-austin" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Moving to Austin</Link>
                 <Link to="/best-luxury-neighborhoods-austin" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Best Neighborhoods</Link>
                 <Link to="/austin-luxury-market-report" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Market Report</Link>
+                <Link to="/off-market-luxury-homes-austin" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Off-Market Homes</Link>
               </div>
             </div>
 

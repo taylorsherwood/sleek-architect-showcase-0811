@@ -15,6 +15,7 @@ import Contact from "./pages/Contact";
 import MovingToAustin from "./pages/MovingToAustin";
 import BestLuxuryNeighborhoods from "./pages/BestLuxuryNeighborhoods";
 import MarketReport from "./pages/MarketReport";
+import OffMarketHomes from "./pages/OffMarketHomes";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -38,6 +39,7 @@ const App = () => (
           <Route path="/moving-to-austin" element={<MovingToAustin />} />
           <Route path="/best-luxury-neighborhoods-austin" element={<BestLuxuryNeighborhoods />} />
           <Route path="/austin-luxury-market-report" element={<MarketReport />} />
+          <Route path="/off-market-luxury-homes-austin" element={<OffMarketHomes />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -65,7 +65,17 @@ const BlogPost = () => {
 
   const relatedPosts = allPosts
     .filter(p => p.id !== post.id && p.category === post.category)
-    .slice(0, 2);
+    .slice(0, 4);
+
+  // If not enough same-category posts, fill with recent posts from other categories
+  const filledRelatedPosts = relatedPosts.length >= 3
+    ? relatedPosts
+    : [
+        ...relatedPosts,
+        ...allPosts
+          .filter(p => p.id !== post.id && !relatedPosts.find(rp => rp.id === p.id))
+          .slice(0, 4 - relatedPosts.length)
+      ].slice(0, 4);
 
   return (
     <div className="min-h-screen bg-background">

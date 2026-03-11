@@ -23,12 +23,7 @@ const CommunityPage = () => {
 
   const related = communityPages.filter(c => community.relatedCommunities.includes(c.slug));
 
-  const faqs = [
-    { question: `What is the average home price in ${community.name}?`, answer: `Home prices in ${community.name} typically range from ${community.priceRange}. Prices vary based on lot size, condition, views, and proximity to key amenities.` },
-    { question: `What school district serves ${community.name}?`, answer: `${community.name} is served by top-rated school districts in the Austin area. Contact Echelon Property Group for specific school zoning information for individual properties.` },
-    { question: `Is ${community.name} a good investment?`, answer: `${community.name} has historically shown strong appreciation and remains one of the most desirable areas in Austin. Limited inventory and high demand support long-term property values.` },
-    { question: `How far is ${community.name} from downtown Austin?`, answer: `${community.name} offers convenient access to downtown Austin, typically within 15 to 30 minutes depending on the specific location and traffic conditions.` }
-  ];
+  const faqs = community.faqs;
 
   return (
     <div className="min-h-screen bg-background">

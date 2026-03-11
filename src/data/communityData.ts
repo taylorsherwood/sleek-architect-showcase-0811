@@ -1,3 +1,8 @@
+export interface CommunityFAQ {
+  question: string;
+  answer: string;
+}
+
 export interface CommunityData {
   slug: string;
   name: string;
@@ -12,6 +17,7 @@ export interface CommunityData {
   amenitiesAndSchools: string;
   investmentPotential: string;
   relatedCommunities: string[];
+  faqs: CommunityFAQ[];
 }
 
 export const communityPages: CommunityData[] = [

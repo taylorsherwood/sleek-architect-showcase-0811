@@ -3,7 +3,7 @@ import heroImage from "@/assets/hero-luxury-austin.jpg";
 
 const CTASection = () => {
   return (
-    <section className="relative py-32 overflow-hidden">
+    <section className="relative py-16 overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage})` }} />

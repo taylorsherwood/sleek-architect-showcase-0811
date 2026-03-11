@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const IntroSection = () => {
   return (
-    <section className="py-28 bg-background">
+    <section className="py-16 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-16 items-center">

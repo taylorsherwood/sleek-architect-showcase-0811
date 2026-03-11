@@ -21,7 +21,7 @@ const Index = () => {
       <CTASection />
       
       {/* Newsletter Section */}
-      <section className="py-32 bg-muted">
+      <section className="py-16 bg-muted">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-6xl font-light text-architectural mb-8">

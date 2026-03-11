@@ -48,7 +48,7 @@ const FeaturedListings = () => {
             <div>
               <p className="text-minimal text-gold mb-4 font-extrabold">FEATURED LISTINGS</p>
               <h2 className="text-4xl md:text-5xl font-display font-light text-architectural">
-                Exceptional Properties
+                Featured Austin Luxury Properties
               </h2>
               <p className="text-muted-foreground mt-4 max-w-xl">
                 Browse our active listings alongside representative examples of the luxury homes we help clients acquire across Austin's premier neighborhoods.

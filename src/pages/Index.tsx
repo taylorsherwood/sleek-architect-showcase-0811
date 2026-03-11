@@ -18,6 +18,7 @@ const Index = () => {
       <SchemaMarkup schema={localBusinessSchema} />
       <Navigation />
       <Hero />
+      <CredibilityStrip />
       <CommunitiesPreview />
       <FeaturedListings />
       <IntroSection />

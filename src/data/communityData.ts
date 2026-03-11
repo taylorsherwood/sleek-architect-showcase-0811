@@ -371,7 +371,15 @@ Outdoor recreation is a primary amenity. Pedernales Falls State Park, Hamilton P
 Land investment in Dripping Springs is particularly attractive. Raw acreage suitable for residential development or estate construction continues to appreciate as buildable land closer to Austin becomes increasingly scarce. Investors with a longer time horizon can acquire land parcels and benefit from the area's development momentum while retaining the option to build custom homes for sale or personal use.
 
 The short-term rental market in Dripping Springs is robust, fueled by the area's destination appeal. Properties near the 290 Wine Trail, with pools and Hill Country views, generate strong weekend and vacation rental income. Dripping Springs' proximity to Austin events like SXSW, ACL, and Formula 1 creates additional demand during peak periods. However, investors should monitor local regulations regarding short-term rentals, as the area's rapid growth has prompted ongoing discussions about rental policies.`,
-    relatedCommunities: ["texas-hill-country-estates", "barton-creek", "westlake-hills", "rollingwood"]
+    relatedCommunities: ["texas-hill-country-estates", "barton-creek", "westlake-hills", "rollingwood"],
+    faqs: [
+      { question: "How far is Dripping Springs from Austin?", answer: "Dripping Springs is approximately 25 miles (30-45 minutes) west of downtown Austin via Highway 290. Improved road infrastructure and hybrid work arrangements have made the commute increasingly manageable for professionals." },
+      { question: "What are home prices in Dripping Springs Texas?", answer: "Homes in Dripping Springs range from $500,000 to over $10 million. Custom estates on acreage regularly exceed $1.5 million, while master-planned community homes start in the $500,000 to $800,000 range." },
+      { question: "Is Dripping Springs a good school district?", answer: "Yes. Dripping Springs ISD has earned a strong reputation for academic excellence, consistently receiving high ratings from the Texas Education Agency. The district has invested significantly in new facilities and technology to accommodate growth." },
+      { question: "What wineries are near Dripping Springs?", answer: "Dripping Springs is the heart of the Texas Wine Trail along Highway 290, featuring over a dozen wineries, distilleries, and breweries. Popular destinations include Duchman Family Winery, Deep Eddy Vodka, and Treaty Oak Distilling." },
+      { question: "Why is Dripping Springs growing so fast?", answer: "Dripping Springs is growing due to Austin's westward expansion, improved infrastructure, Hill Country lifestyle appeal, remote work flexibility, expanding commercial amenities, and the area's natural beauty. It consistently ranks among Texas's fastest-growing communities." },
+      { question: "Can you buy land in Dripping Springs?", answer: "Yes. Raw acreage suitable for custom estate construction or future development is available, though prime parcels with views, water features, and road frontage are becoming increasingly scarce and valuable as the area develops." }
+    ]
   },
   {
     slug: "texas-hill-country-estates",

@@ -9,13 +9,14 @@ import CommunitiesPreview from "@/components/CommunitiesPreview";
 import CTASection from "@/components/CTASection";
 import SellerCTA from "@/components/SellerCTA";
 import Footer from "@/components/Footer";
-import SchemaMarkup, { realEstateAgentSchema, localBusinessSchema } from "@/components/SchemaMarkup";
+import SchemaMarkup, { realEstateAgentSchema, localBusinessSchema, taylorSherwoodSchema } from "@/components/SchemaMarkup";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
       <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={localBusinessSchema} />
+      <SchemaMarkup schema={taylorSherwoodSchema} />
       <Navigation />
       <Hero />
       <CredibilityStrip />

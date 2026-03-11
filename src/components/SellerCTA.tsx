@@ -17,9 +17,9 @@ const SellerCTA = () => {
               </p>
               <Link
                 to="/home-value-austin"
-                className="inline-block text-minimal bg-primary text-primary-foreground hover:bg-primary/90 px-10 py-4 transition-colors duration-300">
-                
-                GET YOUR FREE HOME VALUATION
+                className="inline-block text-minimal bg-primary text-primary-foreground hover:bg-primary/90 px-10 py-4 transition-colors duration-300">GET YOUR FREE VALUATION REPORT
+
+
               </Link>
             </div>
             <div>

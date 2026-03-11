@@ -163,7 +163,7 @@ The challenge for architects and designers is to create minimalist spaces that f
     date: "2024-03-10",
     readTime: "6 min read",
     category: "DESIGN",
-    image: "/src/assets/blog-minimalist-living.jpg"
+    image: blogMinimalist
   },
   {
     id: "urban-planning-community-spaces",

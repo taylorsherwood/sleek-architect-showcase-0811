@@ -48,7 +48,7 @@ const Footer = () => {
 
           <div className="border-t border-primary-foreground/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-2">
             <p className="text-primary-foreground/40 text-sm">
-              eXp Realty LLC DRE#508111
+              Brokered by eXp Realty | Austin Luxury Real Estate
             </p>
             <p className="text-primary-foreground/40 text-sm">
               Copyright © {new Date().getFullYear()} Echelon Property Group | eXp Realty LLC

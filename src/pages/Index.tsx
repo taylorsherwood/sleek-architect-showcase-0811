@@ -16,11 +16,11 @@ const Index = () => {
       <SchemaMarkup schema={localBusinessSchema} />
       <Navigation />
       <Hero />
+      <CommunitiesPreview />
       <FeaturedListings />
       <IntroSection />
       <MeetTaylor />
       <Testimonials />
-      <CommunitiesPreview />
       <CTASection />
       
       {/* Newsletter Section */}

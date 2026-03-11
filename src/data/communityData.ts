@@ -193,7 +193,15 @@ Essential services are conveniently located, with Randalls grocery, multiple pha
 The teardown-rebuild trend in Tarrytown presents specific investment opportunities. Acquiring original homes on large lots (7,000+ square feet) and either renovating or rebuilding can generate significant value. New construction in Tarrytown regularly achieves $600 to $800 per square foot, representing strong returns on well-executed projects.
 
 Tarrytown's investment appeal is further supported by Austin's growth trajectory. As the city's tech economy expands and more professionals seek walkable, centrally located neighborhoods, Tarrytown's limited inventory and established character become increasingly valuable. The neighborhood's proximity to downtown, the university, and major employment centers ensures broad and sustained buyer demand.`,
-    relatedCommunities: ["westlake-hills", "lake-austin-waterfront", "downtown-austin-condos", "rollingwood"]
+    relatedCommunities: ["westlake-hills", "lake-austin-waterfront", "downtown-austin-condos", "rollingwood"],
+    faqs: [
+      { question: "What makes Tarrytown Austin a desirable neighborhood?", answer: "Tarrytown offers a rare combination of central location (minutes from downtown), tree-canopied walkable streets, excellent schools (Casis Elementary), proximity to Lady Bird Lake and Deep Eddy Pool, and eclectic architectural character spanning 1930s bungalows to contemporary estates." },
+      { question: "What school zone is Tarrytown Austin in?", answer: "Tarrytown is served by Austin ISD, with homes primarily zoned to Casis Elementary School (one of the highest-performing in the district), O. Henry Middle School, and Austin High School. St. Andrew's Episcopal School, a top private school, is also located within the neighborhood." },
+      { question: "What are home prices in Tarrytown Austin?", answer: "Tarrytown home prices range from $800,000 to over $8 million. The median exceeds $1.5 million. Properties within the Casis Elementary zone command a 10-15% premium. New construction achieves $600 to $800 per square foot." },
+      { question: "Is Tarrytown good for families?", answer: "Yes. Tarrytown is one of Austin's most family-friendly luxury neighborhoods, with walkable streets, excellent schools, nearby parks (Deep Eddy Pool, Red Bud Isle, Walsh Boat Landing), and an active neighborhood association that hosts community events." },
+      { question: "Can you walk to restaurants from Tarrytown?", answer: "Yes. Tarrytown offers walkable access to local favorites along Exposition Boulevard including Tacodeli and Tarrytown Pharmacy. South Congress Avenue and downtown Austin's restaurant scene are just minutes away by car." },
+      { question: "Are there teardown opportunities in Tarrytown?", answer: "Yes. The teardown-rebuild market is active in Tarrytown, with original 1930s-1960s homes on desirable lots frequently purchased for renovation or new construction. Lot values alone can exceed $1 million in prime locations." }
+    ]
   },
   {
     slug: "rollingwood",

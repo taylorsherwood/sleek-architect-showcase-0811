@@ -236,7 +236,15 @@ Daily conveniences are readily accessible along nearby Bee Caves Road and South 
 The teardown-rebuild market in Rollingwood offers specific investment opportunities for developers and custom home builders. Acquiring an original home on a large lot and constructing a modern, high-specification residence can generate substantial returns. The spread between lot value and finished-home value in Rollingwood supports profitable development projects when executed with quality materials and design.
 
 For buy-and-hold investors, Rollingwood's combination of strong appreciation, low vacancy rates, and desirable rental demographics makes it an attractive market. The neighborhood draws high-quality tenants—often executives on temporary assignments or families exploring the community before purchasing—willing to pay premium rents for Eanes ISD enrollment and proximity to central Austin.`,
-    relatedCommunities: ["westlake-hills", "barton-creek", "tarrytown", "lake-austin-waterfront"]
+    relatedCommunities: ["westlake-hills", "barton-creek", "tarrytown", "lake-austin-waterfront"],
+    faqs: [
+      { question: "Is Rollingwood in Eanes ISD?", answer: "Yes. Rollingwood is served by the Eanes Independent School District, with children typically attending Eanes Elementary, Hill Country Middle School, and Westlake High School—all among the top-ranked schools in Texas." },
+      { question: "How big is Rollingwood Austin?", answer: "Rollingwood is a small incorporated city of less than one square mile with approximately 1,500 residents. Its compact size creates a walkable, close-knit community with a strong neighborhood identity." },
+      { question: "What are home prices in Rollingwood?", answer: "Homes in Rollingwood range from $1 million to over $5 million. Median home prices exceed $1.5 million, with new construction and renovated homes regularly trading above $2.5 million. The teardown-rebuild market is active." },
+      { question: "Is Rollingwood near Zilker Park?", answer: "Yes. Rollingwood is directly adjacent to Zilker Park, providing residents with walkable access to 350 acres of recreation including Barton Springs Pool, Zilker Botanical Garden, sports fields, and the Barton Creek Greenbelt." },
+      { question: "Why are people moving to Rollingwood?", answer: "Buyers are attracted to Rollingwood's combination of Eanes ISD schools, Zilker Park proximity, small-town community atmosphere, generous lot sizes, and quick access to both downtown Austin and the Hill Country. It's often called the 'best of both worlds.'" },
+      { question: "Can you build a new home in Rollingwood?", answer: "Yes. The teardown-rebuild market is robust in Rollingwood. Original 1950s-1960s homes on generous lots (many exceeding 10,000 sq ft) are frequently purchased for custom new construction, typically priced between $2 million and $5 million." }
+    ]
   },
   {
     slug: "travis-heights",

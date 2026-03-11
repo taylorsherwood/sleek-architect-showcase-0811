@@ -23,7 +23,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="py-28 bg-secondary">
+    <section className="pt-16 pb-28 bg-secondary">
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
           <p className="text-minimal text-gold mb-4 text-center">

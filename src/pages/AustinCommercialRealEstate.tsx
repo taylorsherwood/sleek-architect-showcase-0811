@@ -156,6 +156,53 @@ const AustinCommercialRealEstate = () => {
               </p>
             </section>
 
+            {/* Investment & Development Opportunities */}
+            <section>
+              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+                Austin Investment &amp; Development Opportunities
+              </h2>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Austin's sustained population growth, economic diversification, and infrastructure expansion have created a deep pipeline of commercial investment and development opportunities. From stabilized income-producing assets to ground-up development plays, the Austin MSA offers investors a rare combination of current yield and long-term appreciation potential.
+              </p>
+
+              <div className="space-y-8">
+                <div>
+                  <h3 className="text-xl font-display font-medium mb-3">Development Land</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    As Austin expands outward along its major growth corridors, development-ready land remains one of the most sought-after asset classes. Tracts along Highway 290 West toward <Link to="/communities/dripping-springs" className="text-foreground underline hover:text-muted-foreground">Dripping Springs</Link>, the Highway 71 corridor, and emerging eastern suburbs offer developers the scale and zoning flexibility needed for master-planned communities, commercial campuses, and mixed-use projects. Infill parcels in <Link to="/communities/downtown-austin-condos" className="text-foreground underline hover:text-muted-foreground">downtown Austin</Link> and East Austin command premium prices but benefit from density allowances and proximity to employment centers. Echelon Property Group maintains an active pipeline of both on-market and off-market land opportunities across all Austin submarkets.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-display font-medium mb-3">Mixed-Use Projects</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Mixed-use development is reshaping Austin's urban landscape. Projects combining ground-floor retail, upper-level office, and residential components are transforming corridors from South Congress and East Riverside to the Domain and Mueller. Austin's evolving land development code increasingly supports density and mixed-use zoning in transit-oriented locations, creating opportunities for developers who can navigate the entitlement process. Our team advises on site selection, feasibility analysis, and market positioning for mixed-use developments across the metro.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-display font-medium mb-3">Multifamily Investments</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Austin's multifamily market benefits from sustained population growth, a young and mobile workforce, and housing affordability pressures that support strong rental demand. Class A garden-style communities in suburban growth areas, value-add acquisitions in established neighborhoods like <Link to="/communities/travis-heights" className="text-foreground underline hover:text-muted-foreground">Travis Heights</Link> and <Link to="/communities/zilker" className="text-foreground underline hover:text-muted-foreground">Zilker</Link>, and luxury urban apartments downtown all present viable investment strategies. Echelon Property Group helps investors identify multifamily opportunities that align with their return targets, hold periods, and risk profiles.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-display font-medium mb-3">Retail Centers</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Austin's rapidly expanding suburban communities — including Cedar Park, Pflugerville, Leander, Buda, and Kyle — are driving demand for neighborhood and community retail centers. Grocery-anchored centers, essential services retail, and experiential dining and entertainment concepts perform particularly well in these high-growth submarkets. Additionally, boutique retail opportunities in established corridors like South Congress, South Lamar, and <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">Westlake</Link> attract premium tenants and command strong lease rates.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-display font-medium mb-3">Office Acquisitions</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    The Austin office market presents nuanced opportunities for investors willing to look beyond headline vacancy rates. Class A trophy assets downtown continue to attract top-tier tenants at premium rents. Suburban office campuses in Northwest Austin and the Arboretum corridor offer stable cash flow with upside through repositioning. Creative and flex office conversions in East Austin and South Austin cater to the city's growing startup and technology ecosystem. Our <Link to="/austin-luxury-market-report" className="text-foreground underline hover:text-muted-foreground">market intelligence</Link> helps investors underwrite office acquisitions with confidence.
+                  </p>
+                </div>
+              </div>
+            </section>
+
             {/* Why Echelon */}
             <section>
               <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">

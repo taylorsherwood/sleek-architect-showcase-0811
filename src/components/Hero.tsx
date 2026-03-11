@@ -22,8 +22,8 @@ const Hero = () => {
             <br />
             <span className="italic">Results</span>
           </h1>
-          <p className="text-lg md:text-xl text-warm-cream/75 font-light max-w-xl mb-10 reveal-delayed">
-            Specializing in luxury homes, estates, and land across Austin's most coveted neighborhoods
+          <p className="text-lg md:text-xl text-warm-cream/75 font-light max-w-xl mb-10 reveal-delayed">Specializing in luxury homes, investment sales, and land across Austin's most coveted neighborhoods
+
           </p>
           <div className="flex flex-col sm:flex-row gap-4 reveal-delayed-2">
             <Link

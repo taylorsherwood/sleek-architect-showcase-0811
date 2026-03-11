@@ -61,6 +61,7 @@ const OffMarketHomes = () => {
           access_key: "81cc426e-b1a8-4e5e-b2a0-0d25738dfe12",
           subject: "New Off-Market Access Request",
           from_name: "Echelon Property Group Website",
+          to: "taylor@echelonpropertygroup.com,echelonpropertygroup@followupboss.me",
           name: form.name,
           email: form.email,
           phone: form.phone || "Not provided",

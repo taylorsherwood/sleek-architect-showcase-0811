@@ -687,7 +687,7 @@ Off-market deals are accessed through established relationships with local speci
     date: "2025-01-05",
     readTime: "15 min read",
     category: "INVESTMENT",
-    image: "/src/assets/listing-1.jpg"
+    image: listing1
   },
   {
     id: "moving-to-austin-texas-complete-relocation-guide",

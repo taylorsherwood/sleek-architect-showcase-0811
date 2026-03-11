@@ -1,10 +1,16 @@
 import { useParams, Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
+import SchemaMarkup, { createArticleSchema, createFAQSchema } from "@/components/SchemaMarkup";
 import { blogPosts } from "@/data/blogPosts";
+import { seoBlogPosts } from "@/data/seoBlogPosts";
+
+const allPosts = [...seoBlogPosts, ...blogPosts];
 
 const BlogPost = () => {
   const { id } = useParams<{ id: string }>();
-  const post = blogPosts.find(p => p.id === id);
+  const post = allPosts.find(p => p.id === id);
 
   if (!post) {
     return (
@@ -29,15 +35,50 @@ const BlogPost = () => {
     );
   }
 
+  // Extract FAQs from content
+  const faqMatches = post.content.match(/### (.+?)\n(.+?)(?=\n###|\n##|$)/gs);
+  const faqs: { question: string; answer: string }[] = [];
+  if (faqMatches) {
+    const faqSection = post.content.includes("Frequently Asked Questions");
+    if (faqSection) {
+      const faqContent = post.content.split("Frequently Asked Questions")[1] || "";
+      const faqItems = faqContent.match(/### (.+?)\n([\s\S]+?)(?=\n###|$)/g);
+      if (faqItems) {
+        faqItems.forEach(item => {
+          const lines = item.trim().split('\n');
+          const question = lines[0].replace('### ', '');
+          const answer = lines.slice(1).join(' ').trim();
+          if (question && answer) {
+            faqs.push({ question, answer });
+          }
+        });
+      }
+    }
+  }
+
+  const schemas: Record<string, unknown>[] = [
+    createArticleSchema(post.title, post.excerpt, post.date, post.author, post.image)
+  ];
+  if (faqs.length > 0) {
+    schemas.push(createFAQSchema(faqs));
+  }
+
+  const relatedPosts = allPosts
+    .filter(p => p.id !== post.id && p.category === post.category)
+    .slice(0, 2);
+
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title={`${post.title} | Echelon Property Group`}
+        description={post.excerpt}
+      />
+      {schemas.map((s, i) => <SchemaMarkup key={i} schema={s} />)}
       <Navigation />
       
-      {/* Article Header */}
       <article className="pt-32 pb-32">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            {/* Back Link */}
             <Link 
               to="/blog" 
               className="inline-block text-minimal text-muted-foreground hover:text-foreground transition-colors duration-300 mb-12"
@@ -45,7 +86,6 @@ const BlogPost = () => {
               ← BACK TO BLOG
             </Link>
             
-            {/* Article Meta */}
             <div className="mb-8">
               <div className="flex items-center text-minimal text-muted-foreground space-x-4 mb-6">
                 <span className="bg-muted px-3 py-1 text-foreground">{post.category}</span>
@@ -65,16 +105,14 @@ const BlogPost = () => {
               </p>
             </div>
             
-            {/* Featured Image */}
             <div className="w-full h-96 mb-12 overflow-hidden">
               <img 
                 src={post.image} 
-                alt={post.title}
+                alt={`${post.title} - Austin luxury real estate`}
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
             </div>
             
-            {/* Article Content */}
             <div className="prose prose-lg max-w-none">
               <div 
                 className="text-muted-foreground leading-relaxed space-y-6"
@@ -88,9 +126,9 @@ const BlogPost = () => {
                         return `<h2 class="text-2xl md:text-3xl font-light text-architectural mb-6 mt-10">${line.substring(3)}</h2>`;
                       } else if (line.startsWith('### ')) {
                         return `<h3 class="text-xl md:text-2xl font-medium text-foreground mb-4 mt-8">${line.substring(4)}</h3>`;
-                      } else if (line.startsWith('- **') && line.endsWith('**')) {
-                        const content = line.substring(4, line.length - 2);
-                        return `<li class="ml-6 mb-2"><strong class="text-foreground">${content}</strong></li>`;
+                      } else if (line.startsWith('- **') && line.includes('**')) {
+                        const content = line.substring(2);
+                        return `<li class="ml-6 mb-2">${content.replace(/\*\*(.*?)\*\*/g, '<strong class="text-foreground">$1</strong>')}</li>`;
                       } else if (line.startsWith('- ')) {
                         return `<li class="ml-6 mb-2">${line.substring(2)}</li>`;
                       } else if (line.trim() === '') {
@@ -98,7 +136,7 @@ const BlogPost = () => {
                       } else if (line.startsWith('**') && line.endsWith('**')) {
                         return `<p class="mb-4"><strong class="text-foreground">${line.substring(2, line.length - 2)}</strong></p>`;
                       } else {
-                        return `<p class="mb-4">${line}</p>`;
+                        return `<p class="mb-4">${line.replace(/\*\*(.*?)\*\*/g, '<strong class="text-foreground">$1</strong>')}</p>`;
                       }
                     })
                     .join('')
@@ -112,25 +150,24 @@ const BlogPost = () => {
                 <div className="w-16 h-16 bg-muted rounded-full"></div>
                 <div>
                   <h3 className="text-lg font-medium text-foreground">{post.author}</h3>
-                  <p className="text-muted-foreground">Architect & Writer</p>
+                  <p className="text-muted-foreground">Echelon Property Group</p>
                 </div>
               </div>
             </div>
             
             {/* Related Posts */}
-            <div className="mt-20">
-              <h3 className="text-2xl font-light text-architectural mb-8">Related Articles</h3>
-              <div className="grid md:grid-cols-2 gap-8">
-                {blogPosts
-                  .filter(p => p.id !== post.id && p.category === post.category)
-                  .slice(0, 2)
-                  .map(relatedPost => (
+            {relatedPosts.length > 0 && (
+              <div className="mt-20">
+                <h3 className="text-2xl font-light text-architectural mb-8">Related Articles</h3>
+                <div className="grid md:grid-cols-2 gap-8">
+                  {relatedPosts.map(relatedPost => (
                     <Link key={relatedPost.id} to={`/blog/${relatedPost.id}`} className="group">
                       <div className="w-full h-48 mb-4 overflow-hidden">
                         <img 
                           src={relatedPost.image} 
-                          alt={relatedPost.title}
+                          alt={`${relatedPost.title} - Austin real estate insights`}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                          loading="lazy"
                         />
                       </div>
                       <h4 className="text-lg font-light text-architectural group-hover:text-muted-foreground transition-colors duration-300 mb-2">
@@ -138,13 +175,15 @@ const BlogPost = () => {
                       </h4>
                       <p className="text-minimal text-muted-foreground">{relatedPost.date} • {relatedPost.readTime}</p>
                     </Link>
-                  ))
-                }
+                  ))}
+                </div>
               </div>
-            </div>
+            )}
           </div>
         </div>
       </article>
+
+      <Footer />
     </div>
   );
 };

@@ -7,10 +7,13 @@ import MeetTaylor from "@/components/MeetTaylor";
 import CommunitiesPreview from "@/components/CommunitiesPreview";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
+import SchemaMarkup, { realEstateAgentSchema, localBusinessSchema } from "@/components/SchemaMarkup";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <SchemaMarkup schema={realEstateAgentSchema} />
+      <SchemaMarkup schema={localBusinessSchema} />
       <Navigation />
       <Hero />
       <FeaturedListings />
@@ -28,7 +31,7 @@ const Index = () => {
               Stay Informed
             </h2>
             <p className="text-xl text-muted-foreground mb-12">
-              Subscribe to our newsletter for the latest insights on architecture and design
+              Subscribe to our newsletter for the latest insights on Austin luxury real estate
             </p>
             <a
               href="https://taylorsherwood.myflodesk.com/biolink"

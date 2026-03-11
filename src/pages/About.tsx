@@ -34,9 +34,7 @@ const About = () => {
               alt="Echelon Property Group team"
               className="w-full h-[50vh] md:h-[60vh] object-contain" src="/lovable-uploads/537facb0-1fbc-450c-8c4a-c1d06c4aa924.jpg" />
             <div>
-              <h3 className="text-3xl md:text-4xl font-display font-light text-architectural mb-4"> 
-
-              </h3>
+              <h3 className="text-3xl md:text-4xl font-display font-light text-architectural mb-4">Meet Taylor Sherwood</h3>
               <p className="text-lg text-muted-foreground leading-relaxed">Taylor Sherwood is a top-performing Austin real estate advisor specializing in commercial, luxury, and land development opportunities. With a background in economics and a reputation for precision deal-making, Taylor helps investors, developers, and high-net-worth clients identify, structure, and execute winning real estate strategies across Central Texas.
 
 Known for his sharp market insight and hands-on approach, Taylor advises on everything from off-market commercial acquisitions and land assemblages to luxury residential and development projects. His experience spans investment underwriting, land development strategy, value-add positioning, and high-end residential sales — giving clients a full-spectrum advantage.

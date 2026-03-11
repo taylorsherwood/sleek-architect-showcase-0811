@@ -29,12 +29,18 @@ const About = () => {
       {/* Team Image */}
       <section className="pb-20 bg-background">
         <div className="container mx-auto px-6">
-          <div className="max-w-7xl mx-auto">
+          <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
             <img
-
               alt="Echelon Property Group team"
               className="w-full h-[50vh] md:h-[60vh] object-contain" src="/lovable-uploads/537facb0-1fbc-450c-8c4a-c1d06c4aa924.jpg" />
-            
+            <div>
+              <h3 className="text-3xl md:text-4xl font-display font-light text-architectural mb-4">
+                Meet the Team
+              </h3>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Our team brings decades of combined experience in Austin's luxury real estate market. We're passionate about delivering exceptional results for every client.
+              </p>
+            </div>
           </div>
         </div>
       </section>

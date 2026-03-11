@@ -39,7 +39,7 @@ const Index = () => {
               SUBSCRIBE
             </a>
             <div className="mt-8">
-              <img src="/lovable-uploads/c250e465-9078-48da-b8c6-a690b5beb959.png" alt="Echelon Property Group" className="h-12 mx-auto" />
+              <img src="/lovable-uploads/echelon-logo-gold.png" alt="Echelon Property Group" className="h-12 mx-auto" />
             </div>
           </div>
         </div>

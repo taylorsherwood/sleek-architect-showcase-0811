@@ -86,21 +86,19 @@ const FeaturedListings = () => {
                       className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
                       loading="lazy" />
                     
-                      <div className="absolute bottom-4 right-4 flex items-center gap-2">
-                        <div className="bg-background/90 backdrop-blur-sm px-4 py-2">
-                          <span className="text-minimal text-foreground font-semibold">
-                            {listing.price}
+                      <div className="absolute top-4 left-4 bg-background/90 backdrop-blur-sm px-4 py-2">
+                        <span className="text-minimal text-foreground font-semibold">
+                          {listing.price}
+                        </span>
+                      </div>
+
+                      {listing.badgeLabel && (
+                        <div className="absolute bottom-4 right-4 bg-background/90 backdrop-blur-sm px-3 py-1.5">
+                          <span className="text-[10px] tracking-widest uppercase text-muted-foreground font-medium">
+                            {listing.badgeLabel}
                           </span>
                         </div>
-
-                        {listing.badgeLabel && (
-                          <div className="bg-background/90 backdrop-blur-sm px-3 py-1.5">
-                            <span className="text-[10px] tracking-widest uppercase text-muted-foreground font-medium">
-                              {listing.badgeLabel}
-                            </span>
-                          </div>
-                        )}
-                      </div>
+                      )}
                     </div>
                     <h3 className="text-lg font-display font-medium mb-1 group-hover:text-muted-foreground transition-colors duration-300">
                       {listing.address}

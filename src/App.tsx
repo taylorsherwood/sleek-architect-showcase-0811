@@ -45,6 +45,7 @@ const App = () => (
           <Route path="/off-market-luxury-homes-austin" element={<OffMarketHomes />} />
           <Route path="/austin-luxury-homes-for-sale" element={<AustinLuxuryHomes />} />
           <Route path="/austin-commercial-real-estate" element={<AustinCommercialRealEstate />} />
+          <Route path="/home-value-austin" element={<HomeValueAustin />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

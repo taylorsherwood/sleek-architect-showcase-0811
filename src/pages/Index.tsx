@@ -19,6 +19,29 @@ const Index = () => {
       <Testimonials />
       <CommunitiesPreview />
       <CTASection />
+      
+      {/* Newsletter Section */}
+      <section className="py-32 bg-muted">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-4xl md:text-6xl font-light text-architectural mb-8">
+              Stay Informed
+            </h2>
+            <p className="text-xl text-muted-foreground mb-12">
+              Subscribe to our newsletter for the latest insights on architecture and design
+            </p>
+            <a
+              href="https://taylorsherwood.myflodesk.com/biolink"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-8 py-4 bg-foreground text-background hover:bg-muted-foreground transition-colors duration-300"
+            >
+              SUBSCRIBE
+            </a>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </div>
   );

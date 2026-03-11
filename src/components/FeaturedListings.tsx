@@ -4,75 +4,75 @@ import listing2 from "@/assets/listing-2.jpg";
 import listing3 from "@/assets/listing-3.jpg";
 
 const listings = [
-  {
-    image: "/lovable-uploads/0fc79a0b-1fde-439f-bb08-6062e50770b7.jpg",
-    address: "2300 Barton Creek Boulevard #15",
-    location: "Barton Creek, Austin",
-    price: "$3,750,000",
-    beds: 4,
-    baths: 4,
-    sqft: "4,147",
-    link: "https://www.villagovernorshill.com",
-  },
-  {
-    image: listing2,
-    address: "1203 Westlake Ridge",
-    location: "Westlake Hills, Austin",
-    price: "$7,250,000",
-    beds: 6,
-    baths: 7,
-    sqft: "8,400",
-    link: "#",
-  },
-  {
-    image: listing3,
-    address: "Ranch Estate on 42 Acres",
-    location: "Texas Hill Country",
-    price: "$5,900,000",
-    beds: 4,
-    baths: 5,
-    sqft: "5,800",
-    link: "#",
-  },
-];
+{
+  image: "/lovable-uploads/0fc79a0b-1fde-439f-bb08-6062e50770b7.jpg",
+  address: "2300 Barton Creek Boulevard #15",
+  location: "Barton Creek, Austin",
+  price: "$3,750,000",
+  beds: 4,
+  baths: 4,
+  sqft: "4,147",
+  link: "https://www.villagovernorshill.com"
+},
+{
+  image: listing2,
+  address: "1203 Westlake Ridge",
+  location: "Westlake Hills, Austin",
+  price: "$7,250,000",
+  beds: 6,
+  baths: 7,
+  sqft: "8,400",
+  link: "#"
+},
+{
+  image: listing3,
+  address: "Ranch Estate on 42 Acres",
+  location: "Texas Hill Country",
+  price: "$5,900,000",
+  beds: 4,
+  baths: 5,
+  sqft: "5,800",
+  link: "#"
+}];
+
 
 const FeaturedListings = () => {
   return (
-    <section className="py-16 bg-background">
+    <section className="py-28 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-16">
             <div>
-              <p className="text-minimal text-gold mb-4">FEATURED LISTINGS</p>
+              <p className="text-minimal text-gold mb-4 font-extrabold">FEATURED LISTINGS</p>
               <h2 className="text-4xl md:text-5xl font-display font-light text-architectural">
                 Exceptional Properties
               </h2>
             </div>
             <Link
               to="/listings"
-              className="mt-6 md:mt-0 text-minimal text-muted-foreground hover:text-foreground transition-colors duration-300 relative group"
-            >
+              className="mt-6 md:mt-0 text-minimal text-muted-foreground hover:text-foreground transition-colors duration-300 relative group">
+              
               VIEW ALL LISTINGS
               <span className="absolute bottom-0 left-0 w-full h-px bg-foreground scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
             </Link>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {listings.map((listing, index) => (
-              <a
-                key={index}
-                href={listing.link}
-                target={listing.link.startsWith("http") ? "_blank" : undefined}
-                rel={listing.link.startsWith("http") ? "noopener noreferrer" : undefined}
-                className="group block"
-              >
+            {listings.map((listing, index) =>
+            <a
+              key={index}
+              href={listing.link}
+              target={listing.link.startsWith("http") ? "_blank" : undefined}
+              rel={listing.link.startsWith("http") ? "noopener noreferrer" : undefined}
+              className="group block">
+              
                 <div className="relative overflow-hidden mb-6">
                   <img
-                    src={listing.image}
-                    alt={listing.address}
-                    className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
-                    loading="lazy"
-                  />
+                  src={listing.image}
+                  alt={listing.address}
+                  className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
+                  loading="lazy" />
+                
                   <div className="absolute top-4 left-4 bg-background/90 backdrop-blur-sm px-4 py-2">
                     <span className="text-minimal text-foreground font-semibold">
                       {listing.price}
@@ -91,12 +91,12 @@ const FeaturedListings = () => {
                   <span>{listing.sqft} Sq Ft</span>
                 </div>
               </a>
-            ))}
+            )}
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default FeaturedListings;

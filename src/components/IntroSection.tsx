@@ -7,7 +7,7 @@ const IntroSection = () => {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
-              <p className="text-minimal text-gold mb-4">THE ECHELON DIFFERENCE</p>
+              <p className="text-minimal text-gold mb-4 font-extrabold">THE ECHELON DIFFERENCE</p>
               <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-8">Unmatched Expertise in 
 Austin Real Estate
               </h2>

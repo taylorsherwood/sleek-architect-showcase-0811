@@ -5,11 +5,11 @@ import lakeAustin from "@/assets/community-lake-austin.jpg";
 import hillCountry from "@/assets/community-hill-country.jpg";
 
 const communities = [
-  { name: "Barton Creek", image: bartonCreek },
-  { name: "Westlake Hills", image: westlake },
-  { name: "Lake Austin", image: lakeAustin },
-  { name: "Hill Country", image: hillCountry },
-];
+{ name: "Barton Creek", image: bartonCreek },
+{ name: "Westlake Hills", image: westlake },
+{ name: "Lake Austin", image: lakeAustin },
+{ name: "Hill Country", image: hillCountry }];
+
 
 const CommunitiesPreview = () => {
   return (
@@ -18,8 +18,8 @@ const CommunitiesPreview = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-minimal text-gold mb-4">LUXURY COMMUNITIES</p>
-            <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-6">
-              Austin's Most Coveted Neighborhoods
+            <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-6">Austin's Most Desirable Neighborhoods
+
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               From waterfront estates on Lake Austin to sprawling Hill Country ranches, 
@@ -28,18 +28,18 @@ const CommunitiesPreview = () => {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {communities.map((community, index) => (
-              <Link
-                key={index}
-                to="/communities"
-                className="group relative overflow-hidden aspect-[3/4]"
-              >
+            {communities.map((community, index) =>
+            <Link
+              key={index}
+              to="/communities"
+              className="group relative overflow-hidden aspect-[3/4]">
+              
                 <img
-                  src={community.image}
-                  alt={community.name}
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  loading="lazy"
-                />
+                src={community.image}
+                alt={community.name}
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                loading="lazy" />
+              
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/20 to-transparent" />
                 <div className="absolute bottom-6 left-6 right-6">
                   <h3 className="text-warm-cream font-display text-xl md:text-2xl">
@@ -47,12 +47,12 @@ const CommunitiesPreview = () => {
                   </h3>
                 </div>
               </Link>
-            ))}
+            )}
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default CommunitiesPreview;

@@ -1,3 +1,8 @@
+export interface CommunityFAQ {
+  question: string;
+  answer: string;
+}
+
 export interface CommunityData {
   slug: string;
   name: string;
@@ -12,6 +17,7 @@ export interface CommunityData {
   amenitiesAndSchools: string;
   investmentPotential: string;
   relatedCommunities: string[];
+  faqs: CommunityFAQ[];
 }
 
 export const communityPages: CommunityData[] = [
@@ -50,7 +56,15 @@ Outdoor recreation is central to the Westlake Hills lifestyle. The Barton Creek 
 The ongoing expansion of Austin's technology sector, with major campuses from Apple, Google, Tesla, Oracle, and Meta, continues to drive high-income relocations to the area. Westlake Hills is a primary beneficiary of this trend, as executives and high-net-worth professionals seek the area's combination of luxury living, excellent schools, and natural beauty.
 
 For investors, Westlake Hills offers opportunities in luxury home renovations, new construction on remaining lots, and high-end rentals. The area's strict development standards ensure that investment in quality improvements is protected by the overall neighborhood character. Properties with significant lot acreage or unique features such as waterfront access, panoramic views, or guest houses command substantial premiums and tend to appreciate faster than the market average.`,
-    relatedCommunities: ["barton-creek", "lake-austin-waterfront", "rollingwood", "tarrytown"]
+    relatedCommunities: ["barton-creek", "lake-austin-waterfront", "rollingwood", "tarrytown"],
+    faqs: [
+      { question: "What school district serves Westlake Hills?", answer: "Westlake Hills is served by the Eanes Independent School District, consistently ranked among the top districts in Texas. Schools include Bridge Point Elementary, Hill Country Middle School, and Westlake High School, which earns National Blue Ribbon recognition." },
+      { question: "What is the average home price in Westlake Hills Austin?", answer: "Home prices in Westlake Hills range from $1.2 million to over $20 million. The median home price exceeds $1.5 million, with luxury estates regularly trading above $5 million. New construction often exceeds $500 per square foot." },
+      { question: "How far is Westlake Hills from downtown Austin?", answer: "Westlake Hills is approximately 10 to 15 minutes from downtown Austin via Loop 360 or MoPac Expressway, offering a retreat-like atmosphere with quick urban access." },
+      { question: "Is Westlake Hills a good investment?", answer: "Yes. Westlake Hills has historically outperformed the broader Austin market, with 7-10% average annual appreciation. Limited buildable lots, top-tier schools, and proximity to Austin's tech economy create a strong foundation for sustained value growth." },
+      { question: "Are there waterfront homes in Westlake Hills?", answer: "While Westlake Hills itself is a hilltop community, many homes are just minutes from Lake Austin waterfront access. Some properties on the western edge offer lake views, and nearby marinas provide boating access." },
+      { question: "What outdoor activities are near Westlake Hills?", answer: "Residents enjoy the Barton Creek Greenbelt, Wild Basin Wilderness Preserve, Lake Austin boating, and numerous hiking and biking trails. The area also offers country club golf, tennis, and swimming." }
+    ]
   },
   {
     slug: "barton-creek",
@@ -87,7 +101,15 @@ The Barton Creek Greenbelt provides over 12 miles of trails for hiking, biking, 
 The community is approaching build-out, meaning the supply of available homesites is shrinking. This scarcity factor is expected to increase the premium on existing homes and any remaining lots. Tear-down and rebuild opportunities on prime lots represent a compelling investment strategy, as buyers are willing to pay significant premiums for updated homes in this location.
 
 For investors considering Barton Creek, the combination of country club amenities, top schools, and proximity to Austin's growing economy makes this a blue-chip real estate investment. The community's established reputation and homeowner demographics provide stability, while Austin's continued growth as a technology and business hub ensures ongoing demand from high-net-worth buyers.`,
-    relatedCommunities: ["westlake-hills", "lake-austin-waterfront", "rollingwood", "texas-hill-country-estates"]
+    relatedCommunities: ["westlake-hills", "lake-austin-waterfront", "rollingwood", "texas-hill-country-estates"],
+    faqs: [
+      { question: "Is Barton Creek a gated community?", answer: "Yes. Barton Creek is a gated, master-planned community with 24/7 security staffing. The gated entrance provides privacy and exclusivity for residents while maintaining convenient access to Austin via Loop 360 and MoPac." },
+      { question: "How many golf courses are in Barton Creek?", answer: "Barton Creek features four championship golf courses designed by Tom Fazio, Ben Crenshaw, and Arnold Palmer, all accessible through the Barton Creek Country Club. Membership provides access to golf, tennis, swimming, dining, and spa facilities." },
+      { question: "What are home prices in Barton Creek Austin?", answer: "Homes in Barton Creek range from $1.5 million to over $15 million. The median home price exceeds $2 million, with estate properties on golf course lots or with greenbelt views commanding the highest premiums." },
+      { question: "What school district is Barton Creek in?", answer: "Barton Creek is served by the Eanes Independent School District, including Barton Creek Elementary, Hill Country Middle School, and Westlake High School—all consistently ranked among the top schools in Texas." },
+      { question: "Can you hike in Barton Creek?", answer: "Yes. The Barton Creek Greenbelt runs directly through the community, offering residents private trail access to over 12 miles of hiking and mountain biking paths, natural swimming holes like Sculpture Falls and Twin Falls, and rock climbing." },
+      { question: "Is Barton Creek still building new homes?", answer: "Barton Creek is approaching build-out, meaning remaining homesites are increasingly rare and valuable. Some teardown-and-rebuild opportunities exist on older lots, but the limited supply of new construction drives premium pricing." }
+    ]
   },
   {
     slug: "lake-austin-waterfront",
@@ -124,7 +146,15 @@ Shopping and dining are easily accessible in the surrounding communities of West
 Historical appreciation data for Lake Austin waterfront homes shows consistent outperformance relative to the broader Austin luxury market. Properties purchased a decade ago have, in many cases, more than doubled in value. This appreciation trend is supported by the ongoing influx of high-net-worth individuals and corporate executives relocating to Austin from higher-cost markets.
 
 Investment strategies on Lake Austin include acquiring older waterfront homes for renovation or teardown-and-rebuild projects. Given the premium placed on modern amenities and design, updated properties can achieve significantly higher valuations. Additionally, the strong luxury rental market on Lake Austin provides an attractive income opportunity for investors, with weekly rates for premium waterfront homes ranging from $5,000 to $20,000 during peak season.`,
-    relatedCommunities: ["westlake-hills", "tarrytown", "barton-creek", "rollingwood"]
+    relatedCommunities: ["westlake-hills", "tarrytown", "barton-creek", "rollingwood"],
+    faqs: [
+      { question: "Does Lake Austin water level fluctuate?", answer: "No. Unlike Lake Travis, Lake Austin is a constant-level lake, making it ideal for private docks, boathouses, and year-round water activities. This consistent water level is a major advantage for waterfront homeowners." },
+      { question: "How much do waterfront homes on Lake Austin cost?", answer: "Lake Austin waterfront homes typically range from $2 million to over $25 million. Price per front foot of shoreline ranges from $10,000 to $30,000, with premium properties featuring deep water, sunset views, and gentle slopes commanding the highest prices." },
+      { question: "Can I build a dock on Lake Austin?", answer: "Dock construction and modifications require a permit from the Lower Colorado River Authority (LCRA). Existing dock permits are valuable assets that transfer with property purchases. New dock permits are available but subject to environmental review." },
+      { question: "How far is Lake Austin from downtown?", answer: "Most Lake Austin waterfront properties are located 10 to 20 minutes from downtown Austin, making it remarkably convenient for daily commuting while enjoying a resort-like waterfront lifestyle." },
+      { question: "Are Lake Austin homes a good investment?", answer: "Lake Austin waterfront is one of the strongest-performing real estate investments in Texas. The finite shoreline, constant water level, and Austin's growth create permanent scarcity. Historical appreciation has averaged 8-12% annually over the past decade." },
+      { question: "What water activities are available on Lake Austin?", answer: "Lake Austin offers boating, waterskiing, wakeboarding, paddleboarding, kayaking, fishing, and swimming. The calm, constant-level waters and designated activity zones accommodate all types of recreation." }
+    ]
   },
   {
     slug: "tarrytown",
@@ -163,7 +193,15 @@ Essential services are conveniently located, with Randalls grocery, multiple pha
 The teardown-rebuild trend in Tarrytown presents specific investment opportunities. Acquiring original homes on large lots (7,000+ square feet) and either renovating or rebuilding can generate significant value. New construction in Tarrytown regularly achieves $600 to $800 per square foot, representing strong returns on well-executed projects.
 
 Tarrytown's investment appeal is further supported by Austin's growth trajectory. As the city's tech economy expands and more professionals seek walkable, centrally located neighborhoods, Tarrytown's limited inventory and established character become increasingly valuable. The neighborhood's proximity to downtown, the university, and major employment centers ensures broad and sustained buyer demand.`,
-    relatedCommunities: ["westlake-hills", "lake-austin-waterfront", "downtown-austin-condos", "rollingwood"]
+    relatedCommunities: ["westlake-hills", "lake-austin-waterfront", "downtown-austin-condos", "rollingwood"],
+    faqs: [
+      { question: "What makes Tarrytown Austin a desirable neighborhood?", answer: "Tarrytown offers a rare combination of central location (minutes from downtown), tree-canopied walkable streets, excellent schools (Casis Elementary), proximity to Lady Bird Lake and Deep Eddy Pool, and eclectic architectural character spanning 1930s bungalows to contemporary estates." },
+      { question: "What school zone is Tarrytown Austin in?", answer: "Tarrytown is served by Austin ISD, with homes primarily zoned to Casis Elementary School (one of the highest-performing in the district), O. Henry Middle School, and Austin High School. St. Andrew's Episcopal School, a top private school, is also located within the neighborhood." },
+      { question: "What are home prices in Tarrytown Austin?", answer: "Tarrytown home prices range from $800,000 to over $8 million. The median exceeds $1.5 million. Properties within the Casis Elementary zone command a 10-15% premium. New construction achieves $600 to $800 per square foot." },
+      { question: "Is Tarrytown good for families?", answer: "Yes. Tarrytown is one of Austin's most family-friendly luxury neighborhoods, with walkable streets, excellent schools, nearby parks (Deep Eddy Pool, Red Bud Isle, Walsh Boat Landing), and an active neighborhood association that hosts community events." },
+      { question: "Can you walk to restaurants from Tarrytown?", answer: "Yes. Tarrytown offers walkable access to local favorites along Exposition Boulevard including Tacodeli and Tarrytown Pharmacy. South Congress Avenue and downtown Austin's restaurant scene are just minutes away by car." },
+      { question: "Are there teardown opportunities in Tarrytown?", answer: "Yes. The teardown-rebuild market is active in Tarrytown, with original 1930s-1960s homes on desirable lots frequently purchased for renovation or new construction. Lot values alone can exceed $1 million in prime locations." }
+    ]
   },
   {
     slug: "rollingwood",
@@ -198,7 +236,15 @@ Daily conveniences are readily accessible along nearby Bee Caves Road and South 
 The teardown-rebuild market in Rollingwood offers specific investment opportunities for developers and custom home builders. Acquiring an original home on a large lot and constructing a modern, high-specification residence can generate substantial returns. The spread between lot value and finished-home value in Rollingwood supports profitable development projects when executed with quality materials and design.
 
 For buy-and-hold investors, Rollingwood's combination of strong appreciation, low vacancy rates, and desirable rental demographics makes it an attractive market. The neighborhood draws high-quality tenants—often executives on temporary assignments or families exploring the community before purchasing—willing to pay premium rents for Eanes ISD enrollment and proximity to central Austin.`,
-    relatedCommunities: ["westlake-hills", "barton-creek", "tarrytown", "lake-austin-waterfront"]
+    relatedCommunities: ["westlake-hills", "barton-creek", "tarrytown", "lake-austin-waterfront"],
+    faqs: [
+      { question: "Is Rollingwood in Eanes ISD?", answer: "Yes. Rollingwood is served by the Eanes Independent School District, with children typically attending Eanes Elementary, Hill Country Middle School, and Westlake High School—all among the top-ranked schools in Texas." },
+      { question: "How big is Rollingwood Austin?", answer: "Rollingwood is a small incorporated city of less than one square mile with approximately 1,500 residents. Its compact size creates a walkable, close-knit community with a strong neighborhood identity." },
+      { question: "What are home prices in Rollingwood?", answer: "Homes in Rollingwood range from $1 million to over $5 million. Median home prices exceed $1.5 million, with new construction and renovated homes regularly trading above $2.5 million. The teardown-rebuild market is active." },
+      { question: "Is Rollingwood near Zilker Park?", answer: "Yes. Rollingwood is directly adjacent to Zilker Park, providing residents with walkable access to 350 acres of recreation including Barton Springs Pool, Zilker Botanical Garden, sports fields, and the Barton Creek Greenbelt." },
+      { question: "Why are people moving to Rollingwood?", answer: "Buyers are attracted to Rollingwood's combination of Eanes ISD schools, Zilker Park proximity, small-town community atmosphere, generous lot sizes, and quick access to both downtown Austin and the Hill Country. It's often called the 'best of both worlds.'" },
+      { question: "Can you build a new home in Rollingwood?", answer: "Yes. The teardown-rebuild market is robust in Rollingwood. Original 1950s-1960s homes on generous lots (many exceeding 10,000 sq ft) are frequently purchased for custom new construction, typically priced between $2 million and $5 million." }
+    ]
   },
   {
     slug: "travis-heights",
@@ -235,7 +281,15 @@ South Congress Avenue, along the neighborhood's western edge, is one of Austin's
 The teardown-rebuild opportunity in Travis Heights is significant. Original homes on standard lots (5,000-8,000 square feet) can be acquired and replaced with contemporary designs that achieve substantial premiums over the original home value. Corner lots and properties with views are particularly attractive for this strategy.
 
 Rental investment in Travis Heights is supported by the neighborhood's appeal to short-term and mid-term renters. The proximity to downtown and South Congress makes Travis Heights properties attractive for vacation rentals (where permitted by city regulations) and corporate housing. Long-term rental demand is also strong, driven by the neighborhood's walkability and lifestyle amenities.`,
-    relatedCommunities: ["downtown-austin-condos", "tarrytown", "rollingwood", "westlake-hills"]
+    relatedCommunities: ["downtown-austin-condos", "tarrytown", "rollingwood", "westlake-hills"],
+    faqs: [
+      { question: "What is Travis Heights Austin known for?", answer: "Travis Heights is known for its eclectic architectural character, sweeping downtown skyline views, proximity to South Congress Avenue, creative community spirit, and historic charm. It's one of Austin's most iconic and sought-after neighborhoods." },
+      { question: "Can you walk to South Congress from Travis Heights?", answer: "Yes. Travis Heights borders South Congress Avenue, making many of Austin's best restaurants, boutiques, coffee shops, and live music venues within easy walking or biking distance." },
+      { question: "What are home prices in Travis Heights?", answer: "Travis Heights home prices range from $600,000 to over $4 million. Median prices exceed $1 million, with premium properties featuring downtown views or larger lots trading well above $2 million. New construction commands $500 to $700 per square foot." },
+      { question: "Is Travis Heights a historic neighborhood?", answer: "Yes. Travis Heights was established in the 1920s-1930s and features a diverse mix of Craftsman bungalows, Spanish Colonial Revival homes, and contemporary new construction. The neighborhood's architectural variety and mature tree canopy reflect its rich history." },
+      { question: "What parks are near Travis Heights?", answer: "Travis Heights is near Big Stacy Park (with a spring-fed pool), the Butler Hike-and-Bike Trail along Lady Bird Lake, Red Bud Isle, and Zilker Park. The Ann and Roy Butler Trail provides miles of running, walking, and cycling paths." },
+      { question: "Is Travis Heights good for investment?", answer: "Yes. Travis Heights offers strong investment potential driven by its proximity to downtown and South Congress, broad buyer appeal across demographics, and active teardown-rebuild market. Properties have shown 7-10% annual appreciation over the past decade." }
+    ]
   },
   {
     slug: "downtown-austin-condos",
@@ -272,7 +326,15 @@ Entertainment and cultural amenities are the hallmark of downtown living. From t
 Austin's continued growth as a major technology hub drives sustained demand for downtown housing. Major employers including Google, Meta, Apple, Amazon, and Oracle maintain significant Austin operations, generating a steady pipeline of high-income professionals seeking urban living. This employment base provides a strong foundation for both home values and rental demand.
 
 Pre-construction investment in new downtown projects can offer favorable pricing, but requires careful due diligence regarding developer reputation, project financing, and market timing. Resale units in established buildings offer more predictable returns and immediate income potential. For investors, the most attractive opportunities typically involve units with strong rental appeal—one and two-bedroom units with efficient layouts, desirable views, and access to premium building amenities.`,
-    relatedCommunities: ["travis-heights", "tarrytown", "westlake-hills", "lake-austin-waterfront"]
+    relatedCommunities: ["travis-heights", "tarrytown", "westlake-hills", "lake-austin-waterfront"],
+    faqs: [
+      { question: "What are the best condo buildings in downtown Austin?", answer: "Top luxury condo buildings include The Independent (Austin's tallest at 58 stories), The Austonian, Four Seasons Residences, Spring, W Hotel Residences, and 70 Rainey. Each offers distinct amenities, views, and lifestyle experiences." },
+      { question: "How much do downtown Austin condos cost?", answer: "Downtown Austin condos range from approximately $400,000 for one-bedroom units in older buildings to over $10 million for penthouses in premier towers. Price per square foot ranges from $400 to over $1,500 depending on building, floor, and views." },
+      { question: "Are downtown Austin condos a good investment?", answer: "Downtown condos can be strong investments when carefully selected. Well-located units in established buildings with strong HOA management generate 5-7% gross rental yields. Location, amenity quality, and building reputation are key differentiators." },
+      { question: "What is the walkability score of downtown Austin?", answer: "Downtown Austin has one of the highest walkability scores in Texas. Residents can walk to restaurants, entertainment venues, Lady Bird Lake trails, groceries, and many employers. The area also offers bike lanes and public transit access." },
+      { question: "Can you rent out a downtown Austin condo?", answer: "Most downtown condo buildings allow long-term rentals. Short-term rental regulations in Austin have evolved, so investors should review current city policies and individual building HOA rules before pursuing a vacation rental strategy." },
+      { question: "What amenities do downtown Austin condos offer?", answer: "Most luxury buildings feature rooftop pools, fitness centers, concierge services, private parking, pet facilities, co-working spaces, resident lounges, and controlled access security. Some buildings offer spa services and private dining rooms." }
+    ]
   },
   {
     slug: "dripping-springs",
@@ -309,7 +371,15 @@ Outdoor recreation is a primary amenity. Pedernales Falls State Park, Hamilton P
 Land investment in Dripping Springs is particularly attractive. Raw acreage suitable for residential development or estate construction continues to appreciate as buildable land closer to Austin becomes increasingly scarce. Investors with a longer time horizon can acquire land parcels and benefit from the area's development momentum while retaining the option to build custom homes for sale or personal use.
 
 The short-term rental market in Dripping Springs is robust, fueled by the area's destination appeal. Properties near the 290 Wine Trail, with pools and Hill Country views, generate strong weekend and vacation rental income. Dripping Springs' proximity to Austin events like SXSW, ACL, and Formula 1 creates additional demand during peak periods. However, investors should monitor local regulations regarding short-term rentals, as the area's rapid growth has prompted ongoing discussions about rental policies.`,
-    relatedCommunities: ["texas-hill-country-estates", "barton-creek", "westlake-hills", "rollingwood"]
+    relatedCommunities: ["texas-hill-country-estates", "barton-creek", "westlake-hills", "rollingwood"],
+    faqs: [
+      { question: "How far is Dripping Springs from Austin?", answer: "Dripping Springs is approximately 25 miles (30-45 minutes) west of downtown Austin via Highway 290. Improved road infrastructure and hybrid work arrangements have made the commute increasingly manageable for professionals." },
+      { question: "What are home prices in Dripping Springs Texas?", answer: "Homes in Dripping Springs range from $500,000 to over $10 million. Custom estates on acreage regularly exceed $1.5 million, while master-planned community homes start in the $500,000 to $800,000 range." },
+      { question: "Is Dripping Springs a good school district?", answer: "Yes. Dripping Springs ISD has earned a strong reputation for academic excellence, consistently receiving high ratings from the Texas Education Agency. The district has invested significantly in new facilities and technology to accommodate growth." },
+      { question: "What wineries are near Dripping Springs?", answer: "Dripping Springs is the heart of the Texas Wine Trail along Highway 290, featuring over a dozen wineries, distilleries, and breweries. Popular destinations include Duchman Family Winery, Deep Eddy Vodka, and Treaty Oak Distilling." },
+      { question: "Why is Dripping Springs growing so fast?", answer: "Dripping Springs is growing due to Austin's westward expansion, improved infrastructure, Hill Country lifestyle appeal, remote work flexibility, expanding commercial amenities, and the area's natural beauty. It consistently ranks among Texas's fastest-growing communities." },
+      { question: "Can you buy land in Dripping Springs?", answer: "Yes. Raw acreage suitable for custom estate construction or future development is available, though prime parcels with views, water features, and road frontage are becoming increasingly scarce and valuable as the area develops." }
+    ]
   },
   {
     slug: "texas-hill-country-estates",
@@ -348,6 +418,14 @@ Recreation amenities include numerous state parks, private hunting preserves, eq
 Land appreciation in the Hill Country has been exceptional, with prime acreage near Austin appreciating 10-15% annually over the past five years. Raw land suitable for estate development or conservation remains available, though the best parcels—those with water features, views, road frontage, and proximity to Austin—are becoming increasingly scarce and expensive.
 
 For investors, the Hill Country offers multiple strategies. Land banking (acquiring raw acreage for future appreciation or development) has been highly profitable. Building custom spec homes or estate properties for resale can generate strong returns when executed with quality design and construction. The agritourism and event venue markets (wineries, wedding venues, glamping retreats) have shown growing demand, providing income-generating investment opportunities. Conservation easements and agricultural exemptions can provide significant tax benefits for qualified properties, enhancing overall investment returns.`,
-    relatedCommunities: ["dripping-springs", "barton-creek", "lake-austin-waterfront", "westlake-hills"]
+    relatedCommunities: ["dripping-springs", "barton-creek", "lake-austin-waterfront", "westlake-hills"],
+    faqs: [
+      { question: "How much does a ranch cost in the Texas Hill Country?", answer: "Hill Country ranch properties range from $1 million for smaller boutique estates (10-50 acres) to over $30 million for large working ranches with thousands of acres. Price per acre ranges from $5,000 to $15,000+ for improved land near Austin." },
+      { question: "Can you run cattle on Hill Country land?", answer: "Yes. Many Hill Country properties support cattle, horses, and other livestock. Agricultural use qualifies for agricultural tax exemptions, significantly reducing property tax liability. Working ranches with existing infrastructure are available across the region." },
+      { question: "What is the best area of the Texas Hill Country?", answer: "The most popular areas include the Highway 290 corridor toward Fredericksburg (wine country), the Pedernales and Blanco River valleys, the Marble Falls and Highland Lakes area, and Wimberley. Each offers distinct landscapes and lifestyle experiences." },
+      { question: "Is Hill Country land a good investment?", answer: "Yes. Hill Country land has appreciated 10-15% annually over the past five years, driven by Austin's growth, remote work trends, and increasing demand for rural luxury properties. Land banking in the path of development has been consistently profitable." },
+      { question: "Are there tax benefits to owning Hill Country ranch property?", answer: "Yes. Agricultural exemptions can reduce property taxes by 90% or more on qualifying land. Conservation easements provide additional tax benefits. Texas has no state income tax, further enhancing the investment appeal of Hill Country property." },
+      { question: "What outdoor activities are available in the Hill Country?", answer: "The Hill Country offers hunting (white-tail deer, dove, quail), fishing on the Guadalupe and Pedernales Rivers, horseback riding, mountain biking, rock climbing at Enchanted Rock, swimming at natural springs, and wine tasting along the Texas Wine Trail." }
+    ]
   }
 ];

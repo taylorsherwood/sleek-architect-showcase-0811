@@ -193,35 +193,72 @@ const CommercialInvestment = () => {
               {[
                 {
                   type: "Multifamily",
-                  description: "Value-add apartment communities in high-growth Austin corridors with strong rent growth potential.",
+                  name: "24-Unit Value-Add Complex",
+                  location: "East Riverside, Austin",
+                  price: "$4,200,000",
+                  capRate: "5.8%",
+                  sqft: "18,400",
+                  highlights: "Strong rent growth corridor, proximity to Oracle HQ"
                 },
                 {
-                  type: "Retail & Restaurant",
-                  description: "NNN-leased retail and restaurant properties in established suburban centers across the Austin metro.",
+                  type: "Retail Center",
+                  name: "Anchored Neighborhood Center",
+                  location: "Cedar Park, TX",
+                  price: "$6,750,000",
+                  capRate: "6.2%",
+                  sqft: "32,000",
+                  highlights: "95% occupied, NNN leases, high-growth suburban submarket"
                 },
                 {
                   type: "Development Land",
-                  description: "Entitled and pre-development parcels positioned along Austin's expanding growth corridors.",
+                  name: "Mixed-Use Entitled Parcel",
+                  location: "I-35 Corridor, Austin",
+                  price: "$2,850,000",
+                  capRate: "—",
+                  sqft: "3.2 Acres",
+                  highlights: "Entitled for 120 residential units + 8,000 SF retail"
                 },
                 {
-                  type: "Office & Creative Space",
-                  description: "Repositioning and value-add opportunities in emerging East Austin and central submarkets.",
+                  type: "Office",
+                  name: "Class B+ Creative Office",
+                  location: "East Austin",
+                  price: "$3,400,000",
+                  capRate: "6.8%",
+                  sqft: "14,200",
+                  highlights: "Value-add opportunity, emerging tech corridor"
                 },
-              ].map((opportunity, index) => (
+              ].map((listing, index) => (
                 <div
                   key={index}
-                  className="border border-border p-8 hover:border-foreground transition-colors duration-300"
+                  className="border border-border p-8 hover:border-foreground transition-colors duration-300 group"
                 >
-                  <span className="text-minimal bg-muted px-3 py-1 text-foreground inline-block mb-6">
-                    {opportunity.type}
-                  </span>
-                  <p className="text-muted-foreground leading-relaxed mb-6">{opportunity.description}</p>
-                  <Link
-                    to="/contact"
-                    className="text-minimal text-foreground hover:text-muted-foreground transition-colors duration-300"
-                  >
-                    REQUEST INFORMATION →
-                  </Link>
+                  <div className="flex items-center justify-between mb-6">
+                    <span className="text-minimal bg-muted px-3 py-1 text-foreground">{listing.type}</span>
+                    <span className="text-2xl font-display font-light text-architectural">{listing.price}</span>
+                  </div>
+                  <h3 className="text-xl font-display font-light text-architectural mb-2">
+                    {listing.name}
+                  </h3>
+                  <p className="text-muted-foreground mb-6">{listing.location}</p>
+                  <div className="grid grid-cols-2 gap-4 mb-6">
+                    <div>
+                      <p className="text-minimal text-muted-foreground mb-1">CAP RATE</p>
+                      <p className="text-foreground font-medium">{listing.capRate}</p>
+                    </div>
+                    <div>
+                      <p className="text-minimal text-muted-foreground mb-1">SIZE</p>
+                      <p className="text-foreground font-medium">{listing.sqft}</p>
+                    </div>
+                  </div>
+                  <p className="text-sm text-muted-foreground italic">{listing.highlights}</p>
+                  <div className="mt-6 pt-6 border-t border-border">
+                    <Link
+                      to="/contact"
+                      className="text-minimal text-foreground hover:text-muted-foreground transition-colors duration-300"
+                    >
+                      REQUEST DETAILS →
+                    </Link>
+                  </div>
                 </div>
               ))}
             </div>

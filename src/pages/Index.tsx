@@ -23,6 +23,7 @@ const Index = () => {
       <Hero />
       <CredibilityStrip />
       <CommunitiesPreview />
+      <CommercialCTA />
       <FeaturedListings />
       <IntroSection />
       <MeetTaylor />

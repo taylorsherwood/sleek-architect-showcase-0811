@@ -9,11 +9,11 @@ const MeetTaylor = () => {
           <h3 className="text-3xl md:text-4xl font-display font-light text-architectural mb-1 md:w-1/2 text-center">
             Meet Taylor Sherwood
           </h3>
-          <p className="text-xs tracking-[0.1em] uppercase text-muted-foreground/60 mb-8 md:w-1/2 text-center">
+          <p className="text-xs tracking-[0.1em] uppercase text-muted-foreground/60 mb-3 md:w-1/2 text-center">
             CERTIFIED LUXURY HOME MARKETING SPECIALIST (CLHMS) <br />
             AUSTIN LUXURY REAL ESTATE ADVISOR
           </p>
-          <div className="grid md:grid-cols-2 gap-12 items-center mt-2">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative inline-block">
               <img
                 alt="Taylor Sherwood — Austin luxury real estate advisor and CLHMS specialist"

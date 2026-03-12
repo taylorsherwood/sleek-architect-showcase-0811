@@ -19,6 +19,7 @@ import OffMarketHomes from "./pages/OffMarketHomes";
 import AustinLuxuryHomes from "./pages/AustinLuxuryHomes";
 import AustinCommercialRealEstate from "./pages/AustinCommercialRealEstate";
 import HomeValueAustin from "./pages/HomeValueAustin";
+import CommercialInvestment from "./pages/CommercialInvestment";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();

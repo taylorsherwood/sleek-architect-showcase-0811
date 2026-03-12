@@ -217,7 +217,7 @@ Tarrytown's investment appeal is further supported by Austin's growth trajectory
     metaTitle: "Rollingwood Homes for Sale | Austin Luxury Real Estate",
     metaDescription: "Discover homes for sale in Rollingwood, Austin TX. Charming enclave near Zilker Park and Barton Springs with top Eanes ISD schools. Homes from $1M to $5M+.",
     priceRange: "$1M – $5M+",
-    image: "",
+    image: rollingwoodImg,
     overview: `Rollingwood is a small, incorporated city nestled between Zilker Park and Westlake Hills, making it one of the most conveniently located luxury communities in the Austin area. With just over 1,500 residents, Rollingwood offers the intimacy of a small town with immediate access to the best of Austin's urban amenities. The community's tree-lined streets, well-maintained homes, and strong sense of neighborhood identity have made it a perennial favorite among families and professionals.
 
 Originally developed in the 1950s and 1960s, Rollingwood's housing stock reflects a mix of well-maintained mid-century homes and contemporary new construction. In recent years, the neighborhood has experienced a significant wave of renovation and rebuilding, with buyers attracted by the combination of generous lot sizes, Eanes ISD schools, and proximity to Zilker Park, Barton Springs Pool, and the Barton Creek Greenbelt.

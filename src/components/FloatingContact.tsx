@@ -14,14 +14,14 @@ const FloatingContact = () => {
       <button
         onClick={() => setOpen(true)}
         className="fixed bottom-7 right-7 z-40 flex items-center gap-3 bg-background text-[hsl(var(--gold))] rounded-full pl-1.5 pr-7 py-1.5 shadow-[0_6px_24px_-2px_hsl(var(--foreground)/0.12)] hover:bg-[hsl(var(--gold))] hover:text-background transition-all duration-500 group cursor-pointer border border-[hsl(var(--gold)/0.3)] hover:border-[hsl(var(--gold))]"
-        aria-label="Connect with Taylor Sherwood"
-      >
+        aria-label="Connect with Taylor Sherwood">
+        
         <div className="w-12 h-12 rounded-full overflow-hidden ring-2 ring-[hsl(var(--gold))] group-hover:ring-background transition-all duration-500">
           <img
             src={HEADSHOT_LAUNCHER}
             alt="Taylor Sherwood"
-            className="w-full h-full object-cover object-[50%_30%] scale-[1.05]"
-          />
+            className="w-full h-full object-cover object-[50%_30%] scale-[1.05]" />
+          
         </div>
         <div className="flex flex-col items-start">
           <span className="text-[11.5px] font-extrabold tracking-[0.22em] uppercase text-[hsl(var(--gold))] group-hover:text-background transition-colors duration-500 leading-tight">
@@ -42,8 +42,8 @@ const FloatingContact = () => {
           <button
             onClick={() => setOpen(false)}
             className="absolute top-4 right-4 z-10 text-muted-foreground/40 hover:text-foreground transition-colors duration-300 cursor-pointer"
-            aria-label="Close"
-          >
+            aria-label="Close">
+            
             <X className="w-4 h-4" strokeWidth={1.25} />
           </button>
 
@@ -53,8 +53,8 @@ const FloatingContact = () => {
               <img
                 src={HEADSHOT}
                 alt="Taylor Sherwood"
-                className="w-full h-full object-cover object-[50%_20%] scale-[1.03]"
-              />
+                className="w-full h-full object-cover object-[50%_20%] scale-[1.03]" />
+              
             </div>
           </div>
 
@@ -66,25 +66,25 @@ const FloatingContact = () => {
             <h3 className="font-display text-2xl font-light text-foreground tracking-[0.01em] leading-tight">
               Taylor Sherwood
             </h3>
-            <p className="text-[9.5px] tracking-[0.25em] uppercase text-[hsl(var(--gold))] mt-2 mb-6 font-normal">
-              Austin Luxury Real Estate
+            <p className="text-[9.5px] tracking-[0.25em] uppercase text-[hsl(var(--gold))] mt-2 mb-6 font-normal">CONNECT WITH AN ADVISOR
+
             </p>
-            <p className="text-muted-foreground text-sm leading-[1.75] mb-9 max-w-[270px] mx-auto font-light">
-              Buying, selling, investing, or exploring off-market opportunities — I'd welcome the conversation.
+            <p className="text-muted-foreground text-sm leading-[1.75] mb-9 max-w-[270px] mx-auto font-light">Buying, selling, investing, or exploring off-market opportunities in Austin— I'd welcome the conversation.
+
             </p>
 
             <div className="flex flex-col gap-3">
               <a
                 href="tel:5126613843"
-                className="flex items-center justify-center gap-3 w-full py-3.5 bg-primary text-primary-foreground text-[10.5px] tracking-[0.2em] uppercase font-light hover:bg-primary/85 transition-all duration-300 rounded-[2px]"
-              >
+                className="flex items-center justify-center gap-3 w-full py-3.5 bg-primary text-primary-foreground text-[10.5px] tracking-[0.2em] uppercase font-light hover:bg-primary/85 transition-all duration-300 rounded-[2px]">
+                
                 <Phone className="w-3.5 h-3.5" strokeWidth={1.5} />
                 Call or Text
               </a>
               <a
                 href="mailto:taylor@echelonpropertygroup.com"
-                className="flex items-center justify-center gap-3 w-full py-3.5 border border-[hsl(var(--gold)/0.3)] text-foreground text-[10.5px] tracking-[0.2em] uppercase font-light hover:border-[hsl(var(--gold)/0.6)] hover:bg-[hsl(var(--gold)/0.04)] transition-all duration-300 rounded-[2px]"
-              >
+                className="flex items-center justify-center gap-3 w-full py-3.5 border border-[hsl(var(--gold)/0.3)] text-foreground text-[10.5px] tracking-[0.2em] uppercase font-light hover:border-[hsl(var(--gold)/0.6)] hover:bg-[hsl(var(--gold)/0.04)] transition-all duration-300 rounded-[2px]">
+                
                 <Mail className="w-3.5 h-3.5" strokeWidth={1.5} />
                 Send an Email
               </a>
@@ -92,8 +92,8 @@ const FloatingContact = () => {
           </div>
         </DialogContent>
       </Dialog>
-    </>
-  );
+    </>);
+
 };
 
 export default FloatingContact;

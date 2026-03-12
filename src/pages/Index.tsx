@@ -1,4 +1,5 @@
 import Navigation from "@/components/Navigation";
+import expEchelonLogo from "@/assets/exp-echelon-logo.png";
 import Hero from "@/components/Hero";
 import CredibilityStrip from "@/components/CredibilityStrip";
 import FeaturedListings from "@/components/FeaturedListings";
@@ -49,6 +50,9 @@ const Index = () => {
             >
               SUBSCRIBE
             </a>
+            <div className="mt-10">
+              <img src={expEchelonLogo} alt="eXp Realty | Echelon Property Group" className="mx-auto h-20 w-auto" />
+            </div>
           </div>
         </div>
       </section>

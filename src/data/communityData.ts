@@ -170,7 +170,7 @@ Investment strategies on Lake Austin include acquiring older waterfront homes fo
     metaTitle: "Tarrytown Homes for Sale | Austin Luxury Real Estate",
     metaDescription: "Find luxury homes for sale in Tarrytown, Austin TX. Tree-lined streets, walkable neighborhoods, and classic Austin charm from $800K to $8M+ near downtown.",
     priceRange: "$800K – $8M+",
-    image: "",
+    image: tarrytownImg,
     overview: `Tarrytown is one of Austin's most beloved and established neighborhoods, situated on the bluffs between downtown Austin and Lake Austin. Known for its tree-canopied streets, eclectic architectural mix, and walkable lifestyle, Tarrytown has been a preferred address for Austin's families and professionals since the 1930s. The neighborhood's enduring appeal lies in its perfect balance of urban convenience and residential tranquility.
 
 The architectural landscape of Tarrytown is remarkably diverse, ranging from charming 1930s bungalows and elegant mid-century ranches to contemporary new-construction estates. This mix of old and new creates a neighborhood character that feels authentic and lived-in rather than manufactured. Many original homes have been lovingly maintained or thoughtfully renovated, while new construction on larger lots has introduced modern luxury to the neighborhood's traditional streetscape.

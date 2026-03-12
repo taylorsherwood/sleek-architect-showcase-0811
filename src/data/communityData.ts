@@ -1,3 +1,5 @@
+import travisHeightsImg from "@/assets/community-travis-heights.jpg";
+
 export interface CommunityFAQ {
   question: string;
   answer: string;

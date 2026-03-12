@@ -34,22 +34,22 @@ const MeetTaylor = () => {
           </div>
 
           <div className="mt-8">
-            <p className="whitespace-pre-line text-muted-foreground leading-relaxed text-xl mb-8">
+            <p className="whitespace-pre-line text-muted-foreground leading-relaxed text-xl mb-8 text-center">
               {"      "}Taylor founded Echelon Property Group to bring a strategic, investment-focused approach to Austin real estate.{" "}
               {"\n    "}With experience across luxury residential, commercial assets, and investment properties, Taylor helps clients identify{" "}
               {"\n    "}opportunities others miss and execute transactions with precision.
             </p>
             <Link
               to="/contact"
-              className="text-minimal text-foreground hover:text-muted-foreground transition-colors duration-300 border-b border-foreground/30 hover:border-foreground pb-1"
-            >
+              className="text-minimal text-foreground hover:text-muted-foreground transition-colors duration-300 border-b border-foreground/30 hover:border-foreground pb-1 text-center px-[500px]">
+              
               {"     "}SCHEDULE A PRIVATE CONSULTATION →
             </Link>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default MeetTaylor;

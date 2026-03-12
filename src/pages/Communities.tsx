@@ -25,6 +25,7 @@ const imageMap: Record<string, string> = {
   "downtown-austin-condos": downtown,
   "tarrytown": tarrytown,
   "dripping-springs": drippingSprings,
+  "zilker-austin": zilker,
 };
 
 const Communities = () => {

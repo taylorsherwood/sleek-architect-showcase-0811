@@ -13,7 +13,7 @@ const MeetTaylor = () => {
             CERTIFIED LUXURY HOME MARKETING SPECIALIST (CLHMS) <br />
             AUSTIN LUXURY REAL ESTATE ADVISOR
           </p>
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-12 items-start">
             <div className="relative inline-block">
               <img
                 alt="Taylor Sherwood — Austin luxury real estate advisor and CLHMS specialist"

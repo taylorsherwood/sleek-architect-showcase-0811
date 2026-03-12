@@ -38,7 +38,7 @@ const Testimonials = () => {
             {testimonials.map((t, i) =>
             <div
               key={i}
-              className="bg-background p-10 flex flex-col justify-between">
+              className="relative bg-background p-10 flex flex-col justify-between">
               
                 <div>
                   <Quote className="w-8 h-8 text-gold mb-6 opacity-60" />
@@ -54,6 +54,11 @@ const Testimonials = () => {
                     {t.detail}
                   </p>
                 </div>
+                <img
+                  src={echelonIcon}
+                  alt=""
+                  className="absolute bottom-4 right-4 h-10 w-auto opacity-20"
+                />
               </div>
             )}
           </div>

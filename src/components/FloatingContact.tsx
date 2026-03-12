@@ -50,6 +50,7 @@ const FloatingContact = () => {
               className="w-full h-full object-cover object-[50%_20%] scale-[1.35]"
             />
           </div>
+          </div>
 
           {/* Content */}
           <div className="text-center px-8 pb-8 pt-2">

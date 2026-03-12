@@ -158,7 +158,7 @@ const BlogPost = () => {
             {/* Author Info */}
             <div className="mt-16 pt-8 border-t border-border">
               <div className="flex items-center space-x-4">
-                <img src={taylorHeadshot} alt={post.author} className="w-16 h-16 rounded-full object-cover" />
+                <img src={taylorHeadshot} alt={post.author} className="w-16 h-16 rounded-full object-cover object-[center_15%] scale-150" />
                 <div>
                   <h3 className="text-lg font-medium text-foreground">{post.author}</h3>
                   <p className="text-muted-foreground">Echelon Property Group</p>

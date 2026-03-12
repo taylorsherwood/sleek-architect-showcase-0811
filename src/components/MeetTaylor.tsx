@@ -30,16 +30,19 @@ const MeetTaylor = () => {
               <p className="text-muted-foreground leading-relaxed max-w-md text-xl mb-6">
                 With deep expertise across Austin's most sought-after neighborhoods — including Westlake Hills, Barton Creek, Tarrytown, and Lake Austin — Taylor works closely with buyers and sellers to ensure every transaction is handled with care, discretion, and strategic insight.
               </p>
-              <p className="text-muted-foreground leading-relaxed max-w-md text-xl mb-8">
-                Taylor founded Echelon Property Group to bring a strategic, investment-focused approach to Austin real estate. With experience across luxury residential, commercial assets, and investment properties, Taylor helps clients identify opportunities others miss and execute transactions with precision.
-              </p>
-              <Link
-                to="/contact"
-                className="text-minimal text-foreground hover:text-muted-foreground transition-colors duration-300 border-b border-foreground/30 hover:border-foreground pb-1"
-              >
-                SCHEDULE A PRIVATE CONSULTATION →
-              </Link>
             </div>
+          </div>
+
+          <div className="max-w-7xl mx-auto mt-8">
+            <p className="text-muted-foreground leading-relaxed text-xl mb-8">
+              Taylor founded Echelon Property Group to bring a strategic, investment-focused approach to Austin real estate. With experience across luxury residential, commercial assets, and investment properties, Taylor helps clients identify opportunities others miss and execute transactions with precision.
+            </p>
+            <Link
+              to="/contact"
+              className="text-minimal text-foreground hover:text-muted-foreground transition-colors duration-300 border-b border-foreground/30 hover:border-foreground pb-1"
+            >
+              SCHEDULE A PRIVATE CONSULTATION →
+            </Link>
           </div>
         </div>
       </div>

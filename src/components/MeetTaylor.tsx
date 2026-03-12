@@ -43,7 +43,7 @@ const MeetTaylor = () => {
               to="/contact"
               className="text-minimal text-foreground hover:text-muted-foreground transition-colors duration-300 text-center px-[500px]">
               
-              {"     "}SCHEDULE A PRIVATE CONSULTATION →
+              {"     "}SCHEDULE A PRIVATE CONSULTATION
             </Link>
           </div>
         </div>

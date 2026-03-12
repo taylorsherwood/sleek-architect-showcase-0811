@@ -5,6 +5,7 @@ import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createArticleSchema, createFAQSchema } from "@/components/SchemaMarkup";
 import { blogPosts } from "@/data/blogPosts";
 import { seoBlogPosts } from "@/data/seoBlogPosts";
+import taylorHeadshot from "@/assets/taylor-headshot.jpg";
 
 const allPosts = [...seoBlogPosts, ...blogPosts];
 
@@ -157,7 +158,7 @@ const BlogPost = () => {
             {/* Author Info */}
             <div className="mt-16 pt-8 border-t border-border">
               <div className="flex items-center space-x-4">
-                <div className="w-16 h-16 bg-muted rounded-full"></div>
+                <img src={taylorHeadshot} alt={post.author} className="w-16 h-16 rounded-full object-cover" />
                 <div>
                   <h3 className="text-lg font-medium text-foreground">{post.author}</h3>
                   <p className="text-muted-foreground">Echelon Property Group</p>

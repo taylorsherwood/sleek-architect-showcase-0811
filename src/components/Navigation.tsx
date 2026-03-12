@@ -236,7 +236,7 @@ const Navigation = () => {
                 rel="noopener noreferrer"
                 className="block text-minimal tracking-[0.2em] border border-border text-muted-foreground hover:text-foreground px-4 py-3 text-center transition-colors duration-300"
               >
-                TRANSACTION PORTAL
+                CLIENT PORTAL
               </a>
             </div>
           </div>

@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://sleek-architect-showcase-0811.lovable.app/sitemap.xml
+Sitemap: https://www.echelonpropertygroup.com/sitemap.xml

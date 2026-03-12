@@ -255,7 +255,7 @@ For buy-and-hold investors, Rollingwood's combination of strong appreciation, lo
     metaTitle: "Travis Heights Homes for Sale | Austin Luxury Real Estate",
     metaDescription: "Browse homes for sale in Travis Heights, Austin TX. Iconic South Austin neighborhood with walkability to SoCo, eclectic charm, and homes from $600K to $4M+.",
     priceRange: "$600K – $4M+",
-    image: "/lovable-uploads/537facb0-1fbc-450c-8c4a-c1d06c4aa924.jpg",
+    image: travisHeightsImg,
     overview: `Travis Heights is one of Austin's most iconic and sought-after neighborhoods, perched on the wooded bluffs south of Lady Bird Lake with sweeping views of the downtown skyline. Established in the 1920s and 1930s, this historic neighborhood is celebrated for its eclectic architectural character, mature tree canopy, hilly terrain, and vibrant community spirit. Travis Heights embodies the creative, independent energy that defines Austin's cultural identity.
 
 The neighborhood's housing stock is remarkably diverse, ranging from charming Craftsman bungalows and Spanish Colonial Revival homes to sleek contemporary new construction. This architectural variety, combined with winding streets and dramatic topography, gives Travis Heights a visual richness that sets it apart from more uniform planned communities. Many homes offer stunning views of the downtown skyline, particularly along the neighborhood's eastern bluffs.

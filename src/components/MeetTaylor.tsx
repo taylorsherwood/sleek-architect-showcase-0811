@@ -23,9 +23,9 @@ const MeetTaylor = () => {
             </div>
             
             <div>
-              <h4 className="text-minimal text-gold mb-4">AUSTIN LUXURY REAL ESTATE SPECIALIST</h4>
+              <h4 className="text-minimal text-gold mb-4">{"\n\n"}AUSTIN LUXURY REAL ESTATE SPECIALIST</h4>
               <p className="text-muted-foreground leading-relaxed max-w-md text-xl mb-6">
-                Taylor Sherwood is an Austin-based real estate advisor specializing in distinctive homes, luxury properties, and land opportunities. Known for his attention to detail and thoughtful approach to marketing, he helps clients navigate complex transactions with confidence while showcasing properties in their best possible light.
+                {"\n\n"}Taylor Sherwood is an Austin-based real estate advisor specializing in distinctive homes, luxury properties, and land opportunities. Known for his attention to detail and thoughtful approach to marketing, he helps clients navigate complex transactions with confidence while showcasing properties in their best possible light.
               </p>
               <p className="text-muted-foreground leading-relaxed max-w-md text-xl mb-6">
                 With deep expertise across Austin's most sought-after neighborhoods — including Westlake Hills, Barton Creek, Tarrytown, and Lake Austin — Taylor works closely with buyers and sellers to ensure every transaction is handled with care, discretion, and strategic insight.

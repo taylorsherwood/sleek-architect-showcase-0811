@@ -20,7 +20,7 @@ const FloatingContact = () => {
           <img
             src={HEADSHOT_LAUNCHER}
             alt="Taylor Sherwood"
-            className="w-full h-full object-cover object-[50%_18%] scale-[1.15]"
+            className="w-full h-full object-cover object-center scale-[1.15]"
           />
         </div>
         <div className="flex flex-col items-start">

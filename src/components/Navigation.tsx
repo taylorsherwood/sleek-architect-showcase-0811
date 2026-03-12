@@ -139,7 +139,7 @@ const Navigation = () => {
             href="https://echelonpropertygroup.outportal.ai"
             target="_blank"
             rel="noopener noreferrer"
-            className="whitespace-nowrap text-minimal tracking-[0.2em] border border-border text-muted-foreground hover:text-foreground hover:border-foreground px-5 py-2.5 min-h-[40px] inline-flex items-center transition-all duration-300"
+            className="whitespace-nowrap text-minimal tracking-[0.2em] border border-border text-muted-foreground hover:text-primary-foreground hover:bg-[#0C0F24] hover:border-[#0C0F24] px-5 py-2.5 min-h-[40px] inline-flex items-center transition-all duration-300"
           >
             TRANSACTION PORTAL
           </a>

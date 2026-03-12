@@ -25,7 +25,7 @@ Investment Properties
           <div className="mt-10 flex flex-wrap gap-4">
             <Link
               to="/listings/commercial-investment-austin"
-              className="inline-block text-minimal border border-warm-cream/50 text-warm-cream hover:bg-warm-cream/10 px-8 py-4 transition-colors duration-300">
+              className="inline-block text-minimal border border-warm-cream/50 text-warm-cream hover:bg-gold hover:border-gold hover:text-primary-foreground px-8 py-4 transition-colors duration-300">
               
               VIEW OPPORTUNITIES
             </Link>

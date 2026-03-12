@@ -348,8 +348,8 @@ Pre-construction investment in new downtown projects can offer favorable pricing
     slug: "dripping-springs",
     name: "Dripping Springs",
     heroTitle: "Homes for Sale in Dripping Springs Texas",
-    metaTitle: "Dripping Springs Homes for Sale | Austin Luxury Real Estate",
-    metaDescription: "Explore homes and estates for sale in Dripping Springs, TX. Hill Country charm, wineries, and ranch properties from $500K to $10M+ just west of Austin.",
+    metaTitle: "Dripping Springs Texas Homes for Sale | Dripping Springs Real Estate Guide",
+    metaDescription: "Explore homes and estates for sale in Dripping Springs TX. Hill Country charm, wineries, and ranch properties from $500K to $10M+ just west of Austin.",
     priceRange: "$500K – $10M+",
     image: drippingSpringsImg,
     overview: `Dripping Springs, known as the "Gateway to the Hill Country," is one of the fastest-growing luxury communities in the greater Austin area. Located approximately 25 miles west of downtown Austin along Highway 290, this charming Hill Country town has evolved from a quiet rural community into a sophisticated destination that blends small-town authenticity with modern luxury amenities. The result is a lifestyle that appeals to buyers seeking space, beauty, and a connection to the Texas landscape.

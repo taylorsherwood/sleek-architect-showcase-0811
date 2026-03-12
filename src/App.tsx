@@ -19,6 +19,7 @@ import OffMarketHomes from "./pages/OffMarketHomes";
 import AustinLuxuryHomes from "./pages/AustinLuxuryHomes";
 import AustinCommercialRealEstate from "./pages/AustinCommercialRealEstate";
 import HomeValueAustin from "./pages/HomeValueAustin";
+import CommercialInvestment from "./pages/CommercialInvestment";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -34,6 +35,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
           <Route path="/listings" element={<Listings />} />
+          <Route path="/listings/commercial-investment-austin" element={<CommercialInvestment />} />
           <Route path="/communities" element={<Communities />} />
           <Route path="/communities/:slug" element={<CommunityPage />} />
           <Route path="/blog" element={<Blog />} />

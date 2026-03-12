@@ -38,7 +38,7 @@ const listings = [
   sqft: "5,800",
   link: "#",
   isRepresentative: true,
-  badgeLabel: "Example of Homes We Source",
+  badgeLabel: "Private Market Opportunity",
 }];
 
 

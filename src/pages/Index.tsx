@@ -33,7 +33,7 @@ const Index = () => {
       <CTASection />
       
       {/* Newsletter Section */}
-      <section className="py-16 bg-muted">
+      <section className="pt-16 pb-6 bg-muted">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-6xl font-light text-architectural mb-8">
@@ -50,7 +50,7 @@ const Index = () => {
             >
               SUBSCRIBE
             </a>
-            <div className="mt-2 -mb-4">
+            <div className="mt-1">
               <img src={expEchelonLogo} alt="eXp Realty | Echelon Property Group" className="mx-auto h-60 w-auto" />
             </div>
           </div>

@@ -15,7 +15,7 @@ const FloatingContact = () => {
         className="fixed bottom-7 right-7 z-40 flex items-center gap-3 bg-background text-[hsl(var(--gold))] rounded-full pl-1.5 pr-7 py-1.5 shadow-[0_6px_24px_-2px_hsl(var(--foreground)/0.12)] hover:bg-[hsl(var(--gold))] hover:text-background transition-all duration-500 group cursor-pointer border border-[hsl(var(--gold)/0.3)] hover:border-[hsl(var(--gold))]"
         aria-label="Connect with Taylor Sherwood"
       >
-        <div className="w-12 h-12 rounded-full overflow-hidden ring-[1.5px] ring-[hsl(var(--gold)/0.45)] shadow-[0_0_0_2px_hsl(var(--primary))]">
+        <div className="w-12 h-12 rounded-full overflow-hidden">
           <img
             src={HEADSHOT}
             alt="Taylor Sherwood"

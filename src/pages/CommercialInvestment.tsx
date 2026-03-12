@@ -5,6 +5,7 @@ import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createFAQSchema } from "@/components/SchemaMarkup";
 import heroArchitecture from "@/assets/hero-architecture.jpg";
 import gillisStreet from "@/assets/commercial-gillis-street.jpg";
+import sanJoseAve from "@/assets/commercial-san-jose-ave.jpg";
 
 const faqs = [
   {

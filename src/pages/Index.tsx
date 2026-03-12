@@ -6,6 +6,7 @@ import IntroSection from "@/components/IntroSection";
 import Testimonials from "@/components/Testimonials";
 import MeetTaylor from "@/components/MeetTaylor";
 import CommunitiesPreview from "@/components/CommunitiesPreview";
+import CommercialCTA from "@/components/CommercialCTA";
 import CTASection from "@/components/CTASection";
 import SellerCTA from "@/components/SellerCTA";
 import Footer from "@/components/Footer";
@@ -22,6 +23,7 @@ const Index = () => {
       <Hero />
       <CredibilityStrip />
       <CommunitiesPreview />
+      <CommercialCTA />
       <FeaturedListings />
       <IntroSection />
       <MeetTaylor />

@@ -41,6 +41,7 @@ const Navigation = () => {
     },
     { href: "/buy", label: "BUY" },
     { href: "/sell", label: "SELL" },
+    { href: "/listings/commercial-investment-austin", label: "INVEST" },
     { href: "/communities", label: "COMMUNITIES" },
     { href: "/about", label: "ABOUT" },
   ];

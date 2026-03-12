@@ -159,7 +159,7 @@ const BlogPost = () => {
             <div className="mt-16 pt-8 border-t border-border">
               <div className="flex items-center space-x-4">
                 <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
-                  <img src={taylorHeadshot} alt={post.author} className="w-full h-full object-cover object-[center_10%] scale-[1.5]" />
+                  <img src={taylorHeadshot} alt={post.author} className="w-full h-full object-cover object-[50%_30%]" />
                 </div>
                 <div>
                   <h3 className="text-lg font-medium text-foreground">{post.author}</h3>

@@ -7,6 +7,8 @@ import { ScrollToTop } from "./components/ScrollToTop";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Listings from "./pages/Listings";
+import Buyers from "./pages/Buyers";
+import Sellers from "./pages/Sellers";
 import Communities from "./pages/Communities";
 import CommunityPage from "./pages/CommunityPage";
 import Blog from "./pages/Blog";
@@ -36,6 +38,8 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/listings" element={<Listings />} />
           <Route path="/listings/commercial-investment-austin" element={<CommercialInvestment />} />
+          <Route path="/buyers" element={<Buyers />} />
+          <Route path="/sellers" element={<Sellers />} />
           <Route path="/communities" element={<Communities />} />
           <Route path="/communities/:slug" element={<CommunityPage />} />
           <Route path="/blog" element={<Blog />} />

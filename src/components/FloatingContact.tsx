@@ -3,6 +3,7 @@ import { X, Phone, Mail } from "lucide-react";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 
 const HEADSHOT = "/lovable-uploads/taylor-headshot-widget.jpg";
+const HEADSHOT_LAUNCHER = "/lovable-uploads/taylor-headshot-widget-2.jpg";
 
 const FloatingContact = () => {
   const [open, setOpen] = useState(false);

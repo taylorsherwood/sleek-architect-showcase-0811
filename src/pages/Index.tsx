@@ -50,6 +50,9 @@ const Index = () => {
             >
               SUBSCRIBE
             </a>
+            <div className="mt-10">
+              <img src={expEchelonLogo} alt="eXp Realty | Echelon Property Group" className="mx-auto h-20 w-auto" />
+            </div>
           </div>
         </div>
       </section>

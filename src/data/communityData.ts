@@ -1,5 +1,10 @@
 import travisHeightsImg from "@/assets/community-travis-heights.jpg";
-
+import lakeAustinImg from "@/assets/community-lake-austin.jpg";
+import tarrytownImg from "@/assets/community-tarrytown.jpg";
+import rollingwoodImg from "@/assets/community-rollingwood.jpg";
+import downtownImg from "@/assets/community-downtown.jpg";
+import drippingSpringsImg from "@/assets/community-dripping-springs.jpg";
+import hillCountryImg from "@/assets/community-hill-country.jpg";
 export interface CommunityFAQ {
   question: string;
   answer: string;
@@ -120,7 +125,7 @@ For investors considering Barton Creek, the combination of country club amenitie
     metaTitle: "Lake Austin Waterfront Homes for Sale | Austin Luxury Real Estate",
     metaDescription: "Explore luxury waterfront homes on Lake Austin, TX. Private docks, stunning lake views, and resort-style living from $2M to $25M+. Your lakeside dream home awaits.",
     priceRange: "$2M – $25M+",
-    image: "",
+    image: lakeAustinImg,
     overview: `Lake Austin waterfront real estate represents the pinnacle of luxury living in Central Texas. Stretching approximately 21 miles along the Colorado River between Tom Miller Dam and Mansfield Dam, Lake Austin offers some of the most coveted waterfront addresses in the state. Unlike Lake Travis, which experiences significant water level fluctuations, Lake Austin maintains a constant level, making it ideal for private docks, boathouses, and year-round water activities.
 
 Waterfront homes on Lake Austin range from charming mid-century lakeside retreats to grand contemporary estates with expansive glass walls framing panoramic water views. Many properties feature private boat docks, infinity-edge pools that appear to merge with the lake, outdoor kitchens, and terraced gardens descending to the waterline. The most exclusive addresses include properties on the coveted south shore, where homes enjoy optimal sun exposure and stunning sunset views across the water.
@@ -165,7 +170,7 @@ Investment strategies on Lake Austin include acquiring older waterfront homes fo
     metaTitle: "Tarrytown Homes for Sale | Austin Luxury Real Estate",
     metaDescription: "Find luxury homes for sale in Tarrytown, Austin TX. Tree-lined streets, walkable neighborhoods, and classic Austin charm from $800K to $8M+ near downtown.",
     priceRange: "$800K – $8M+",
-    image: "",
+    image: tarrytownImg,
     overview: `Tarrytown is one of Austin's most beloved and established neighborhoods, situated on the bluffs between downtown Austin and Lake Austin. Known for its tree-canopied streets, eclectic architectural mix, and walkable lifestyle, Tarrytown has been a preferred address for Austin's families and professionals since the 1930s. The neighborhood's enduring appeal lies in its perfect balance of urban convenience and residential tranquility.
 
 The architectural landscape of Tarrytown is remarkably diverse, ranging from charming 1930s bungalows and elegant mid-century ranches to contemporary new-construction estates. This mix of old and new creates a neighborhood character that feels authentic and lived-in rather than manufactured. Many original homes have been lovingly maintained or thoughtfully renovated, while new construction on larger lots has introduced modern luxury to the neighborhood's traditional streetscape.
@@ -212,7 +217,7 @@ Tarrytown's investment appeal is further supported by Austin's growth trajectory
     metaTitle: "Rollingwood Homes for Sale | Austin Luxury Real Estate",
     metaDescription: "Discover homes for sale in Rollingwood, Austin TX. Charming enclave near Zilker Park and Barton Springs with top Eanes ISD schools. Homes from $1M to $5M+.",
     priceRange: "$1M – $5M+",
-    image: "",
+    image: rollingwoodImg,
     overview: `Rollingwood is a small, incorporated city nestled between Zilker Park and Westlake Hills, making it one of the most conveniently located luxury communities in the Austin area. With just over 1,500 residents, Rollingwood offers the intimacy of a small town with immediate access to the best of Austin's urban amenities. The community's tree-lined streets, well-maintained homes, and strong sense of neighborhood identity have made it a perennial favorite among families and professionals.
 
 Originally developed in the 1950s and 1960s, Rollingwood's housing stock reflects a mix of well-maintained mid-century homes and contemporary new construction. In recent years, the neighborhood has experienced a significant wave of renovation and rebuilding, with buyers attracted by the combination of generous lot sizes, Eanes ISD schools, and proximity to Zilker Park, Barton Springs Pool, and the Barton Creek Greenbelt.
@@ -300,7 +305,7 @@ Rental investment in Travis Heights is supported by the neighborhood's appeal to
     metaTitle: "Downtown Austin Condos for Sale | Austin Luxury Real Estate",
     metaDescription: "Explore luxury condos for sale in downtown Austin, TX. High-rise living with skyline views, walkable lifestyle, and world-class amenities from $400K to $10M+.",
     priceRange: "$400K – $10M+",
-    image: "/lovable-uploads/0fc79a0b-1fde-439f-bb08-6062e50770b7.jpg",
+    image: downtownImg,
     overview: `Downtown Austin's luxury condominium market represents the urban pinnacle of Central Texas living. Over the past two decades, Austin's skyline has been transformed by a wave of high-rise residential development that has created a vibrant, walkable urban core rivaling those of much larger cities. From the shores of Lady Bird Lake to the entertainment districts of Rainey Street and Second Street, downtown Austin offers a lifestyle of unparalleled convenience and sophistication.
 
 The downtown condo market spans a wide range of properties, from efficiently designed one-bedroom units in mid-rise buildings to expansive penthouses in landmark towers. Premier buildings include The Independent (Austin's tallest residential tower at 58 stories), the Four Seasons Residences, The Austonian, Spring, and the W Hotel Residences. Each building offers distinct amenities, architectural character, and lifestyle experiences.
@@ -345,7 +350,7 @@ Pre-construction investment in new downtown projects can offer favorable pricing
     metaTitle: "Dripping Springs Homes for Sale | Austin Luxury Real Estate",
     metaDescription: "Explore homes and estates for sale in Dripping Springs, TX. Hill Country charm, wineries, and ranch properties from $500K to $10M+ just west of Austin.",
     priceRange: "$500K – $10M+",
-    image: "",
+    image: drippingSpringsImg,
     overview: `Dripping Springs, known as the "Gateway to the Hill Country," is one of the fastest-growing luxury communities in the greater Austin area. Located approximately 25 miles west of downtown Austin along Highway 290, this charming Hill Country town has evolved from a quiet rural community into a sophisticated destination that blends small-town authenticity with modern luxury amenities. The result is a lifestyle that appeals to buyers seeking space, beauty, and a connection to the Texas landscape.
 
 The Dripping Springs real estate market encompasses a wide range of property types, from custom estates on multi-acre lots and working ranches to master-planned community homes and contemporary spec builds. The area's rolling terrain, ancient live oaks, natural springs, and dramatic limestone formations create a setting of extraordinary natural beauty that serves as the backdrop for some of the finest residential properties in Central Texas.
@@ -390,7 +395,7 @@ The short-term rental market in Dripping Springs is robust, fueled by the area's
     metaTitle: "Texas Hill Country Estates for Sale | Austin Luxury Real Estate",
     metaDescription: "Explore luxury ranch estates and homes for sale in the Texas Hill Country near Austin. Sprawling acreage, vineyard properties, and breathtaking views from $1M to $30M+.",
     priceRange: "$1M – $30M+",
-    image: "",
+    image: hillCountryImg,
     overview: `The Texas Hill Country west of Austin represents one of the most extraordinary luxury real estate markets in the American Southwest. Spanning a vast landscape of rolling limestone hills, spring-fed creeks, ancient live oaks, and wildflower meadows, the Hill Country offers a lifestyle of unmatched natural beauty, privacy, and authenticity. For buyers seeking expansive acreage, panoramic views, and a connection to the Texas landscape, Hill Country estates deliver an experience that no urban or suburban neighborhood can match.
 
 Hill Country estate properties encompass a remarkable range of offerings, from working cattle and horse ranches to contemporary architectural showcases, vineyard estates, and luxury hunting retreats. Property sizes range from 10 to 20 acres for boutique estates to thousands of acres for working ranches and conservation-minded buyers. The diversity of the landscape—from dramatic bluffs and river valleys to gently rolling pastures and dense cedar breaks—means that no two Hill Country properties are alike.

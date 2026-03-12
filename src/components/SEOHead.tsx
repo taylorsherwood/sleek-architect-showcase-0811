@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-const SITE_URL = "https://sleek-architect-showcase-0811.lovable.app";
+const SITE_URL = "https://www.echelonpropertygroup.com";
 
 interface SEOHeadProps {
   title: string;

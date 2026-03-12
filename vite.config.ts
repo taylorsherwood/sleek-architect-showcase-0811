@@ -4,7 +4,7 @@ import path from "path";
 import fs from "fs";
 import { componentTagger } from "lovable-tagger";
 
-const SITE_URL = "https://sleek-architect-showcase-0811.lovable.app";
+const SITE_URL = "https://www.echelonpropertygroup.com";
 
 function sitemapPlugin(): Plugin {
   function buildSitemap(): string {

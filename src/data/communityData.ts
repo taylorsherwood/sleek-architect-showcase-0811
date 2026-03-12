@@ -123,8 +123,8 @@ For investors considering Barton Creek, the combination of country club amenitie
     slug: "lake-austin-waterfront",
     name: "Lake Austin Waterfront",
     heroTitle: "Lake Austin Waterfront Homes for Sale",
-    metaTitle: "Lake Austin Waterfront Homes for Sale | Austin Luxury Real Estate",
-    metaDescription: "Explore luxury waterfront homes on Lake Austin, TX. Private docks, stunning lake views, and resort-style living from $2M to $25M+. Your lakeside dream home awaits.",
+    metaTitle: "Lake Austin Waterfront Homes for Sale | Lake Austin Real Estate Guide",
+    metaDescription: "Explore luxury waterfront homes on Lake Austin TX. Private docks, stunning lake views, and resort-style living from $2M to $25M+.",
     priceRange: "$2M – $25M+",
     image: lakeAustinImg,
     overview: `Lake Austin waterfront real estate represents the pinnacle of luxury living in Central Texas. Stretching approximately 21 miles along the Colorado River between Tom Miller Dam and Mansfield Dam, Lake Austin offers some of the most coveted waterfront addresses in the state. Unlike Lake Travis, which experiences significant water level fluctuations, Lake Austin maintains a constant level, making it ideal for private docks, boathouses, and year-round water activities.

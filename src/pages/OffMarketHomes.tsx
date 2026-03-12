@@ -135,6 +135,52 @@ const OffMarketHomes = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto space-y-16">
 
+            {/* Lead Capture Form */}
+            <section id="off-market-access" className="bg-muted -mx-6 px-6 py-16">
+              <div className="max-w-2xl mx-auto">
+                <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-4 text-center">
+                  Get Private Access to Off-Market Listings
+                </h2>
+                <p className="text-muted-foreground text-center mb-10">
+                  Complete the form below to receive exclusive off-market luxury listings 
+                  matched to your criteria. All inquiries are confidential.
+                </p>
+
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  <div>
+                    <input type="text" name="name" placeholder="Full Name" value={form.name} onChange={handleChange} className={inputClass} maxLength={100} />
+                    {errors.name && <p className="text-destructive text-sm mt-1">{errors.name}</p>}
+                  </div>
+                  <div>
+                    <input type="email" name="email" placeholder="Email Address" value={form.email} onChange={handleChange} className={inputClass} maxLength={255} />
+                    {errors.email && <p className="text-destructive text-sm mt-1">{errors.email}</p>}
+                  </div>
+                  <div>
+                    <input type="tel" name="phone" placeholder="Phone (Optional)" value={form.phone} onChange={handleChange} className={inputClass} maxLength={20} />
+                  </div>
+                  <div>
+                    <select name="priceRange" value={form.priceRange} onChange={handleChange} className={`${inputClass} bg-muted`}>
+                      <option value="">Preferred Price Range</option>
+                      <option value="1m-2m">$1M – $2M</option>
+                      <option value="2m-5m">$2M – $5M</option>
+                      <option value="5m-10m">$5M – $10M</option>
+                      <option value="10m-plus">$10M+</option>
+                    </select>
+                    {errors.priceRange && <p className="text-destructive text-sm mt-1">{errors.priceRange}</p>}
+                  </div>
+                  <div>
+                    <input type="text" name="neighborhoods" placeholder="Preferred Neighborhoods (e.g., Westlake Hills, Lake Austin)" value={form.neighborhoods} onChange={handleChange} className={inputClass} maxLength={500} />
+                  </div>
+                  <div>
+                    <textarea name="message" placeholder="Additional details about what you're looking for (Optional)" value={form.message} onChange={handleChange} rows={3} className={`${inputClass} resize-none`} maxLength={2000} />
+                  </div>
+                  <button type="submit" disabled={submitting} className="w-full md:w-auto text-minimal bg-primary text-primary-foreground hover:bg-primary/90 px-10 py-4 transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed">
+                    {submitting ? "SENDING..." : "REQUEST OFF-MARKET ACCESS"}
+                  </button>
+                </form>
+              </div>
+            </section>
+
             {/* What Are Off-Market Listings */}
             <section>
               <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">

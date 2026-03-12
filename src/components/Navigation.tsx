@@ -43,7 +43,6 @@ const Navigation = () => {
     { href: "/sell", label: "SELL" },
     { href: "/communities", label: "COMMUNITIES" },
     { href: "/about", label: "ABOUT" },
-    { href: "/contact", label: "CONTACT" },
   ];
 
   const isActive = (link: NavLink) =>

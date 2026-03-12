@@ -32,7 +32,7 @@ const About = () => {
       {/* Team Image */}
       <section className="pb-20 bg-background">
         <div className="container mx-auto px-6">
-          <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+          <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start">
             <div className="relative inline-block">
               <img
                 alt="Echelon Property Group team"

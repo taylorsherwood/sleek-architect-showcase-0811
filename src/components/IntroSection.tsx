@@ -44,7 +44,7 @@ const IntroSection = () => {
   const stat4 = useCountUp(1, 1200, "Top ", "%");
 
   return (
-    <section className="py-28 bg-background">
+    <section className="pt-28 pb-12 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-16 items-center">

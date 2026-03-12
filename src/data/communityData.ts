@@ -305,7 +305,7 @@ Rental investment in Travis Heights is supported by the neighborhood's appeal to
     metaTitle: "Downtown Austin Condos for Sale | Austin Luxury Real Estate",
     metaDescription: "Explore luxury condos for sale in downtown Austin, TX. High-rise living with skyline views, walkable lifestyle, and world-class amenities from $400K to $10M+.",
     priceRange: "$400K – $10M+",
-    image: "/lovable-uploads/0fc79a0b-1fde-439f-bb08-6062e50770b7.jpg",
+    image: downtownImg,
     overview: `Downtown Austin's luxury condominium market represents the urban pinnacle of Central Texas living. Over the past two decades, Austin's skyline has been transformed by a wave of high-rise residential development that has created a vibrant, walkable urban core rivaling those of much larger cities. From the shores of Lady Bird Lake to the entertainment districts of Rainey Street and Second Street, downtown Austin offers a lifestyle of unparalleled convenience and sophistication.
 
 The downtown condo market spans a wide range of properties, from efficiently designed one-bedroom units in mid-rise buildings to expansive penthouses in landmark towers. Premier buildings include The Independent (Austin's tallest residential tower at 58 stories), the Four Seasons Residences, The Austonian, Spring, and the W Hotel Residences. Each building offers distinct amenities, architectural character, and lifestyle experiences.

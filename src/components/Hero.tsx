@@ -13,17 +13,20 @@ const Hero = () => {
         alt="Austin skyline"
         className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${videoLoaded ? "opacity-0" : "opacity-100"}`}
       />
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="auto"
-        onCanPlayThrough={() => setVideoLoaded(true)}
-        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${videoLoaded ? "opacity-100" : "opacity-0"}`}
-      >
-        <source src="/videos/hero-video.mp4" type="video/mp4" />
-      </video>
+      {/* Background video — no controls, no interaction */}
+      <div className="absolute inset-0 pointer-events-none">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          onCanPlayThrough={() => setVideoLoaded(true)}
+          className={`w-full h-full object-cover transition-opacity duration-700 ${videoLoaded ? "opacity-100" : "opacity-0"}`}
+        >
+          <source src="/videos/hero-video.mp4" type="video/mp4" />
+        </video>
+      </div>
       
       <div className="absolute inset-0 bg-black/35" />
       

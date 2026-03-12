@@ -1,4 +1,5 @@
 import Navigation from "@/components/Navigation";
+import expEchelonLogo from "@/assets/exp-echelon-logo.png";
 import Hero from "@/components/Hero";
 import CredibilityStrip from "@/components/CredibilityStrip";
 import FeaturedListings from "@/components/FeaturedListings";

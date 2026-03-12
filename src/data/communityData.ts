@@ -393,8 +393,8 @@ The short-term rental market in Dripping Springs is robust, fueled by the area's
     slug: "texas-hill-country-estates",
     name: "Texas Hill Country Estates",
     heroTitle: "Texas Hill Country Estate Homes for Sale",
-    metaTitle: "Texas Hill Country Estates for Sale | Austin Luxury Real Estate",
-    metaDescription: "Explore luxury ranch estates and homes for sale in the Texas Hill Country near Austin. Sprawling acreage, vineyard properties, and breathtaking views from $1M to $30M+.",
+    metaTitle: "Texas Hill Country Estates for Sale | Hill Country Real Estate Guide",
+    metaDescription: "Explore luxury ranch estates and homes in the Texas Hill Country near Austin. Sprawling acreage, vineyard properties, and views from $1M to $30M+.",
     priceRange: "$1M – $30M+",
     image: hillCountryImg,
     overview: `The Texas Hill Country west of Austin represents one of the most extraordinary luxury real estate markets in the American Southwest. Spanning a vast landscape of rolling limestone hills, spring-fed creeks, ancient live oaks, and wildflower meadows, the Hill Country offers a lifestyle of unmatched natural beauty, privacy, and authenticity. For buyers seeking expansive acreage, panoramic views, and a connection to the Texas landscape, Hill Country estates deliver an experience that no urban or suburban neighborhood can match.

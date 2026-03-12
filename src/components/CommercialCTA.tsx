@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import heroArchitecture from "@/assets/hero-architecture.jpg";
+import commercialHero from "@/assets/commercial-hero-austin.jpg";
 
 const CommercialCTA = () => {
   return (

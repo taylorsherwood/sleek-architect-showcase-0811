@@ -5,6 +5,7 @@ import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createFAQSchema } from "@/components/SchemaMarkup";
 import heroArchitecture from "@/assets/hero-architecture.jpg";
 import gillisStreet from "@/assets/commercial-gillis-street.jpg";
+import sanJoseAve from "@/assets/commercial-san-jose-ave.jpg";
 
 const faqs = [
   {
@@ -119,6 +120,46 @@ const CommercialInvestment = () => {
                   </div>
                   <p className="text-muted-foreground leading-relaxed mb-6">
                     24-unit value-add multifamily opportunity in South Austin. Well-positioned for rent growth and operational improvements in a high-demand rental corridor.
+                  </p>
+                  <Link
+                    to="/contact"
+                    className="inline-block text-minimal bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4 transition-colors duration-300"
+                  >
+                    REQUEST INFORMATION
+                  </Link>
+                </div>
+              </div>
+              <div className="border border-border overflow-hidden hover:border-foreground transition-colors duration-300 group">
+                <div className="relative overflow-hidden">
+                  <img
+                    src={sanJoseAve}
+                    alt="10811 San Jose Ave, Del Valle TX — 3.06 acres redevelopment land"
+                    className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <span className="absolute top-4 left-4 text-minimal bg-gold text-foreground px-3 py-1 font-extrabold">
+                    DEVELOPMENT LAND
+                  </span>
+                </div>
+                <div className="p-8">
+                  <div className="flex items-center justify-between mb-4">
+                    <h3 className="text-xl font-display font-light text-architectural">
+                      10811 San Jose Ave
+                    </h3>
+                    <span className="text-2xl font-display font-light text-architectural">$1,600,000</span>
+                  </div>
+                  <p className="text-muted-foreground mb-4">Del Valle, TX</p>
+                  <div className="grid grid-cols-2 gap-4 mb-6">
+                    <div>
+                      <p className="text-minimal text-muted-foreground mb-1">ASSET TYPE</p>
+                      <p className="text-foreground font-medium">Redevelopment Land</p>
+                    </div>
+                    <div>
+                      <p className="text-minimal text-muted-foreground mb-1">LOT SIZE</p>
+                      <p className="text-foreground font-medium">3.06 Acres</p>
+                    </div>
+                  </div>
+                  <p className="text-muted-foreground leading-relaxed mb-6">
+                    3.06-acre redevelopment parcel with existing mobile homes and zero zoning restrictions. Ideal for ground-up multifamily, mixed-use, or commercial development in the high-growth Del Valle corridor.
                   </p>
                   <Link
                     to="/contact"

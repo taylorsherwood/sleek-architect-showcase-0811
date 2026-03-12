@@ -5,6 +5,7 @@ import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createArticleSchema, createFAQSchema } from "@/components/SchemaMarkup";
 import { blogPosts } from "@/data/blogPosts";
 import { seoBlogPosts } from "@/data/seoBlogPosts";
+import taylorHeadshot from "@/assets/taylor-headshot.jpg";
 
 const allPosts = [...seoBlogPosts, ...blogPosts];
 

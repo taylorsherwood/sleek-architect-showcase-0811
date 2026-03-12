@@ -9,6 +9,7 @@ import CommunitiesPreview from "@/components/CommunitiesPreview";
 import CTASection from "@/components/CTASection";
 import SellerCTA from "@/components/SellerCTA";
 import Footer from "@/components/Footer";
+import FloatingContact from "@/components/FloatingContact";
 import SchemaMarkup, { realEstateAgentSchema, localBusinessSchema, taylorSherwoodSchema } from "@/components/SchemaMarkup";
 
 const Index = () => {
@@ -51,6 +52,7 @@ const Index = () => {
       </section>
 
       <Footer />
+      <FloatingContact />
     </div>
   );
 };

@@ -121,7 +121,7 @@ const FeaturedListings = () => {
               to="/off-market-luxury-homes-austin"
               className="inline-block text-sm text-muted-foreground hover:text-foreground transition-colors duration-300"
             >
-              Looking for something not publicly listed?{" "}
+              Searching for private market opportunities in Austin? Contact us for discreet listings not publicly advertised.{" "}
               <span className="underline">Ask about off-market opportunities</span> →
             </Link>
           </div>

@@ -7,20 +7,33 @@ const FALLBACK_TIMEOUT = 3000;
 const Hero = () => {
   const [showFallback, setShowFallback] = useState(false);
   const [videoReady, setVideoReady] = useState(false);
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
+    const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+    if (motionQuery.matches) {
+      setPrefersReducedMotion(true);
+      setShowFallback(true);
+      return;
+    }
+
     const timer = setTimeout(() => {
       if (!videoReady) setShowFallback(true);
     }, FALLBACK_TIMEOUT);
 
     const video = videoRef.current;
     if (video) {
+      video.setAttribute('webkit-playsinline', '');
+      video.muted = true;
+
       const playPromise = video.play();
       if (playPromise !== undefined) {
         playPromise.catch(() => {
           setShowFallback(true);
         });
+      } else {
+        setShowFallback(true);
       }
     }
 
@@ -35,22 +48,23 @@ const Hero = () => {
   return (
     <section className="relative h-screen flex items-end overflow-hidden bg-black">
       {/* Background video — primary hero media */}
-      <div className="absolute inset-0 pointer-events-none">
-        <video
-          ref={videoRef}
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-          onCanPlayThrough={handleVideoReady}
-          onError={() => setShowFallback(true)}
-          className={`w-full h-full object-cover transition-opacity duration-500 ${videoReady ? "opacity-100" : "opacity-0"}`}
-        >
-          <source src="/videos/hero-video.mp4" type="video/mp4" />
-        </video>
-      </div>
-      {/* Fallback image — only shown if video fails or times out */}
+      {!prefersReducedMotion && (
+        <div className="absolute inset-0 pointer-events-none">
+          <video
+            ref={videoRef}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
+            onCanPlayThrough={handleVideoReady}
+            onError={() => setShowFallback(true)}
+            className={`w-full h-full object-cover transition-opacity duration-500 ${videoReady ? "opacity-100" : "opacity-0"}`}
+          >
+            <source src="/videos/hero-video.mp4" type="video/mp4" />
+          </video>
+        </div>
+      )}
       {showFallback && !videoReady && (
         <img
           src={heroFallback}

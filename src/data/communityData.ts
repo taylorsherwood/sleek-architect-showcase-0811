@@ -440,8 +440,8 @@ For investors, the Hill Country offers multiple strategies. Land banking (acquir
     slug: "zilker-austin",
     name: "Zilker",
     heroTitle: "Living Near Zilker Park in Austin",
-    metaTitle: "Zilker Austin Homes for Sale | Austin Luxury Real Estate",
-    metaDescription: "Explore homes for sale near Zilker Park in Austin, TX. Walk to Barton Springs, Lady Bird Lake trails, and downtown. Charming bungalows to modern estates from $800K to $5M+.",
+    metaTitle: "Zilker Austin Homes for Sale | Zilker Real Estate Guide",
+    metaDescription: "Explore homes for sale in Zilker Austin including modern homes, luxury properties, and investment opportunities near Barton Springs and downtown.",
     priceRange: "$800K – $5M+",
     image: zilkerImg,
     overview: `Zilker is one of Austin's most iconic and beloved neighborhoods, named after the legendary 351-acre Zilker Metropolitan Park that serves as its centerpiece. Located just south of Lady Bird Lake and minutes from downtown, Zilker offers an extraordinary combination of urban convenience, outdoor recreation, and neighborhood charm that few communities in Austin can match.

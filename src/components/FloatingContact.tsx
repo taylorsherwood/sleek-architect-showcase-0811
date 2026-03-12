@@ -2,7 +2,7 @@ import { useState } from "react";
 import { X, Phone, Mail } from "lucide-react";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 
-const HEADSHOT = "/lovable-uploads/537facb0-1fbc-450c-8c4a-c1d06c4aa924.jpg";
+const HEADSHOT = "/lovable-uploads/taylor-headshot-widget.jpg";
 
 const FloatingContact = () => {
   const [open, setOpen] = useState(false);

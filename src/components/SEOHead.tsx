@@ -1,4 +1,7 @@
 import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
+const SITE_URL = "https://sleek-architect-showcase-0811.lovable.app";
 
 interface SEOHeadProps {
   title: string;
@@ -7,6 +10,9 @@ interface SEOHeadProps {
 }
 
 const SEOHead = ({ title, description, canonical }: SEOHeadProps) => {
+  const { pathname } = useLocation();
+  const canonicalUrl = canonical || `${SITE_URL}${pathname === "/" ? "" : pathname}`;
+
   useEffect(() => {
     document.title = title;
 
@@ -24,24 +30,20 @@ const SEOHead = ({ title, description, canonical }: SEOHeadProps) => {
     setMeta("description", description);
     setMeta("og:title", title, true);
     setMeta("og:description", description, true);
+    setMeta("og:url", canonicalUrl, true);
     setMeta("twitter:title", title);
     setMeta("twitter:description", description);
 
-    if (canonical) {
-      let link = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
-      if (!link) {
-        link = document.createElement("link");
-        link.rel = "canonical";
-        document.head.appendChild(link);
-      }
-      link.href = canonical;
+    let link = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
+    if (!link) {
+      link = document.createElement("link");
+      link.rel = "canonical";
+      document.head.appendChild(link);
     }
+    link.href = canonicalUrl;
 
-    return () => {
-      const link = document.querySelector('link[rel="canonical"]');
-      if (link && canonical) link.remove();
-    };
-  }, [title, description, canonical]);
+    return () => {};
+  }, [title, description, canonicalUrl]);
 
   return null;
 };

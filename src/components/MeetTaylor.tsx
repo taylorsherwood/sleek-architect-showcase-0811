@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import clhmsBadge from "@/assets/clhms-badge.png";
+import echelonLogoGold from "@/assets/echelon-logo-gold.png";
 
 const MeetTaylor = () => {
   return (
@@ -45,6 +46,9 @@ const MeetTaylor = () => {
             >
               SCHEDULE A PRIVATE CONSULTATION
             </Link>
+            <div className="mt-8">
+              <img src={echelonLogoGold} alt="Echelon Property Group" className="mx-auto h-24 w-auto" />
+            </div>
           </div>
         </div>
       </div>

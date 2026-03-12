@@ -359,6 +359,21 @@ const Buy = () => {
         </div>
       </section>
 
+      {/* ── Mortgage Calculator ── */}
+      <section className="py-28 bg-secondary/50">
+        <div className="container mx-auto px-6">
+          <div className="max-w-3xl mx-auto">
+            <div className="mb-12 text-center">
+              <p className="text-minimal text-gold mb-4 font-extrabold">PLAN AHEAD</p>
+              <h2 className="text-4xl md:text-5xl font-display font-light text-architectural">
+                Estimate Your Monthly Payment
+              </h2>
+            </div>
+            <MortgageCalculator />
+          </div>
+        </div>
+      </section>
+
       {/* ── The Buying Process ── */}
       <section className="py-28 bg-secondary/50">
         <div className="container mx-auto px-6">
@@ -455,21 +470,6 @@ const Buy = () => {
                 <span className="underline">Ask about off-market homes</span> →
               </Link>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── Mortgage Calculator ── */}
-      <section className="py-28 bg-secondary/50">
-        <div className="container mx-auto px-6">
-          <div className="max-w-3xl mx-auto">
-            <div className="mb-12 text-center">
-              <p className="text-minimal text-gold mb-4 font-extrabold">PLAN AHEAD</p>
-              <h2 className="text-4xl md:text-5xl font-display font-light text-architectural">
-                Estimate Your Monthly Payment
-              </h2>
-            </div>
-            <MortgageCalculator />
           </div>
         </div>
       </section>

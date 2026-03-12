@@ -31,7 +31,6 @@ const Navigation = () => {
 
   const links: NavLink[] = [
     { href: "/", label: "HOME" },
-    { href: "/about", label: "ABOUT" },
     {
       href: "/listings",
       label: "LISTINGS",
@@ -43,7 +42,7 @@ const Navigation = () => {
     { href: "/buyers", label: "BUY" },
     { href: "/sellers", label: "SELL" },
     { href: "/communities", label: "COMMUNITIES" },
-    { href: "/blog", label: "BLOG" },
+    { href: "/about", label: "ABOUT" },
     { href: "/contact", label: "CONTACT" },
   ];
 
@@ -67,7 +66,8 @@ const Navigation = () => {
           />
         </Link>
 
-        <div className="hidden lg:flex items-center space-x-10">
+        {/* Desktop nav links */}
+        <div className="hidden lg:flex items-center space-x-12">
           {links.map((link) =>
             link.children ? (
               <div
@@ -79,26 +79,31 @@ const Navigation = () => {
               >
                 <Link
                   to={link.href}
-                  className={`text-minimal transition-colors duration-300 ${
+                  className={`relative text-minimal tracking-[0.25em] transition-colors duration-300 group ${
                     isActive(link)
                       ? "text-foreground"
                       : "text-muted-foreground hover:text-foreground"
                   }`}
                 >
                   {link.label}
-                  <span className="ml-1 text-[8px] align-middle">▼</span>
+                  <span className="ml-1.5 text-[7px] align-middle opacity-40">▼</span>
+                  <span
+                    className={`absolute -bottom-1 left-0 h-px bg-foreground transition-transform duration-500 origin-left ${
+                      isActive(link) ? "w-full scale-x-100" : "w-full scale-x-0 group-hover:scale-x-100"
+                    }`}
+                  />
                 </Link>
                 {openDropdown === link.href && (
-                  <div className="absolute top-full left-0 pt-2 min-w-[240px]">
-                    <div className="bg-background border border-border shadow-lg">
+                  <div className="absolute top-full left-0 pt-3 min-w-[260px]">
+                    <div className="bg-background border border-border shadow-elegant">
                       {link.children.map((child) => (
                         <Link
                           key={child.href}
                           to={child.href}
-                          className={`block px-5 py-3 text-minimal transition-colors duration-200 ${
+                          className={`block px-6 py-3.5 text-minimal tracking-[0.2em] transition-colors duration-200 ${
                             location.pathname === child.href
                               ? "text-foreground bg-muted"
-                              : "text-muted-foreground hover:text-foreground hover:bg-muted"
+                              : "text-muted-foreground hover:text-foreground hover:bg-muted/50"
                           }`}
                         >
                           {child.label}
@@ -112,24 +117,30 @@ const Navigation = () => {
               <Link
                 key={link.href}
                 to={link.href}
-                className={`text-minimal transition-colors duration-300 ${
+                className={`relative text-minimal tracking-[0.25em] transition-colors duration-300 group ${
                   location.pathname === link.href
                     ? "text-foreground"
                     : "text-muted-foreground hover:text-foreground"
                 }`}
               >
                 {link.label}
+                <span
+                  className={`absolute -bottom-1 left-0 h-px bg-foreground transition-transform duration-500 origin-left ${
+                    location.pathname === link.href ? "w-full scale-x-100" : "w-full scale-x-0 group-hover:scale-x-100"
+                  }`}
+                />
               </Link>
             )
           )}
         </div>
 
-        <div className="hidden lg:flex items-center space-x-4">
+        {/* Desktop action buttons */}
+        <div className="hidden lg:flex items-center space-x-3">
           <a
             href="https://echelonpropertygroup.outportal.ai"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-minimal border border-primary text-primary hover:bg-primary hover:text-primary-foreground px-5 py-2.5 transition-colors duration-300"
+            className="text-minimal tracking-[0.2em] border border-border text-muted-foreground hover:text-foreground hover:border-foreground px-5 py-2.5 transition-all duration-300"
           >
             TRANSACTION PORTAL
           </a>
@@ -137,12 +148,13 @@ const Navigation = () => {
             href="https://taylorsherwood.realscout.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-minimal text-primary-foreground bg-[#0C0F24] hover:bg-[#0C0F24]/90 px-5 py-2.5 transition-colors duration-300"
+            className="text-minimal tracking-[0.2em] text-primary-foreground bg-[#0C0F24] hover:bg-[#161a33] px-6 py-2.5 transition-colors duration-300"
           >
             SEARCH HOMES
           </a>
         </div>
 
+        {/* Mobile toggle */}
         <Button
           variant="ghost"
           size="sm"
@@ -153,35 +165,36 @@ const Navigation = () => {
         </Button>
       </div>
 
+      {/* Mobile menu */}
       {isMenuOpen && (
         <div className="lg:hidden bg-background border-b border-border">
-          <div className="container mx-auto px-6 py-6 space-y-4">
+          <div className="container mx-auto px-6 py-8 space-y-5">
             {links.map((link) =>
               link.children ? (
-                <div key={link.href} className="space-y-2">
+                <div key={link.href} className="space-y-3">
                   <button
                     onClick={() =>
                       setOpenDropdown(openDropdown === link.href ? null : link.href)
                     }
-                    className={`block text-minimal transition-colors duration-300 ${
+                    className={`block text-minimal tracking-[0.25em] transition-colors duration-300 ${
                       isActive(link)
                         ? "text-foreground"
                         : "text-muted-foreground hover:text-foreground"
                     }`}
                   >
                     {link.label}
-                    <span className="ml-1 text-[8px]">
+                    <span className="ml-1.5 text-[7px] opacity-40">
                       {openDropdown === link.href ? "▲" : "▼"}
                     </span>
                   </button>
                   {openDropdown === link.href && (
-                    <div className="pl-4 space-y-2 border-l border-border">
+                    <div className="pl-4 space-y-3 border-l border-border">
                       {link.children.map((child) => (
                         <Link
                           key={child.href}
                           to={child.href}
                           onClick={() => setIsMenuOpen(false)}
-                          className={`block text-minimal transition-colors duration-300 ${
+                          className={`block text-minimal tracking-[0.2em] transition-colors duration-300 ${
                             location.pathname === child.href
                               ? "text-foreground"
                               : "text-muted-foreground hover:text-foreground"
@@ -198,7 +211,7 @@ const Navigation = () => {
                   key={link.href}
                   to={link.href}
                   onClick={() => setIsMenuOpen(false)}
-                  className={`block text-minimal transition-colors duration-300 ${
+                  className={`block text-minimal tracking-[0.25em] transition-colors duration-300 ${
                     location.pathname === link.href
                       ? "text-foreground"
                       : "text-muted-foreground hover:text-foreground"
@@ -208,22 +221,24 @@ const Navigation = () => {
                 </Link>
               )
             )}
-            <a
-              href="https://echelonpropertygroup.outportal.ai"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block text-minimal border border-primary text-primary hover:bg-primary hover:text-primary-foreground px-4 py-2 text-center transition-colors duration-300"
-            >
-              TRANSACTION PORTAL
-            </a>
-            <a
-              href="https://taylorsherwood.realscout.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block text-minimal text-gold hover:text-gold-light transition-colors duration-300"
-            >
-              SEARCH HOMES
-            </a>
+            <div className="pt-4 space-y-3 border-t border-border">
+              <a
+                href="https://taylorsherwood.realscout.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-minimal tracking-[0.2em] text-primary-foreground bg-[#0C0F24] px-4 py-3 text-center transition-colors duration-300"
+              >
+                SEARCH HOMES
+              </a>
+              <a
+                href="https://echelonpropertygroup.outportal.ai"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-minimal tracking-[0.2em] border border-border text-muted-foreground hover:text-foreground px-4 py-3 text-center transition-colors duration-300"
+              >
+                TRANSACTION PORTAL
+              </a>
+            </div>
           </div>
         </div>
       )}

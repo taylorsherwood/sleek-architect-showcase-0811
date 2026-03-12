@@ -135,12 +135,12 @@ const Navigation = () => {
         </div>
 
         {/* Desktop action buttons */}
-        <div className="hidden lg:flex items-center space-x-3">
+        <div className="hidden lg:flex items-center space-x-3 shrink-0">
           <a
             href="https://echelonpropertygroup.outportal.ai"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-minimal tracking-[0.2em] border border-border text-muted-foreground hover:text-foreground hover:border-foreground px-5 py-2.5 transition-all duration-300"
+            className="whitespace-nowrap text-minimal tracking-[0.2em] border border-border text-muted-foreground hover:text-foreground hover:border-foreground px-5 py-2.5 min-h-[40px] inline-flex items-center transition-all duration-300"
           >
             TRANSACTION PORTAL
           </a>
@@ -148,7 +148,7 @@ const Navigation = () => {
             href="https://taylorsherwood.realscout.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-minimal tracking-[0.2em] text-primary-foreground bg-[#0C0F24] hover:bg-[#161a33] px-6 py-2.5 transition-colors duration-300"
+            className="whitespace-nowrap text-minimal tracking-[0.2em] text-primary-foreground bg-[#0C0F24] hover:bg-[#161a33] px-6 py-2.5 min-h-[40px] inline-flex items-center transition-colors duration-300"
           >
             SEARCH HOMES
           </a>

@@ -5,6 +5,7 @@ import rollingwoodImg from "@/assets/community-rollingwood.jpg";
 import downtownImg from "@/assets/community-downtown.jpg";
 import drippingSpringsImg from "@/assets/community-dripping-springs.jpg";
 import hillCountryImg from "@/assets/community-hill-country.jpg";
+import zilkerImg from "@/assets/community-zilker.jpg";
 export interface CommunityFAQ {
   question: string;
   answer: string;

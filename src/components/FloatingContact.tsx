@@ -27,7 +27,7 @@ const FloatingContact = () => {
             Connect
           </span>
           <span className="text-[8.5px] tracking-[0.15em] uppercase text-[hsl(var(--gold)/0.7)] group-hover:text-background/80 font-extrabold leading-tight mt-0.5">
-            Private Client
+            PRIVATE ADVISOR
           </span>
         </div>
       </button>

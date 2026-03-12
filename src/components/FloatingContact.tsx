@@ -3,6 +3,7 @@ import { X, Phone, Mail } from "lucide-react";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 
 const HEADSHOT = "/lovable-uploads/taylor-headshot-widget.jpg";
+const HEADSHOT_LAUNCHER = "/lovable-uploads/taylor-headshot-widget-2.jpg";
 
 const FloatingContact = () => {
   const [open, setOpen] = useState(false);
@@ -17,7 +18,7 @@ const FloatingContact = () => {
       >
         <div className="w-12 h-12 rounded-full overflow-hidden ring-2 ring-[hsl(var(--gold))] group-hover:ring-background transition-all duration-500">
           <img
-            src={HEADSHOT}
+            src={HEADSHOT_LAUNCHER}
             alt="Taylor Sherwood"
             className="w-full h-full object-cover object-[50%_45%] scale-[1.25]"
           />

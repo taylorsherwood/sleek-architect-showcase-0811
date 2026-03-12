@@ -43,10 +43,11 @@ const FloatingContact = () => {
 
           {/* Overlapping headshot */}
           <div className="absolute -top-12 left-1/2 -translate-x-1/2">
+          <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-background shadow-[0_8px_24px_-6px_hsl(var(--foreground)/0.2)] ring-2 ring-[hsl(var(--gold)/0.4)]">
             <img
               src={HEADSHOT}
               alt="Taylor Sherwood"
-              className="w-24 h-24 rounded-full object-cover border-4 border-background shadow-[0_8px_24px_-6px_hsl(var(--foreground)/0.2)] ring-2 ring-[hsl(var(--gold)/0.4)]"
+              className="w-full h-full object-cover object-[50%_20%] scale-[1.35]"
             />
           </div>
 

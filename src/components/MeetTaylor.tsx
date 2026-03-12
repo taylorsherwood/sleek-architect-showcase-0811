@@ -33,7 +33,7 @@ const MeetTaylor = () => {
             </div>
           </div>
 
-          <div className="mt-8">
+          <div className="mt-8 text-center">
             <p className="whitespace-pre-line text-muted-foreground leading-relaxed text-xl mb-8 text-center">
               {"      "}Taylor founded Echelon Property Group to bring a strategic, investment-focused approach to Austin real estate.{" "}
               {"\n    "}With experience across luxury residential, commercial assets, and investment properties, Taylor helps clients identify{" "}

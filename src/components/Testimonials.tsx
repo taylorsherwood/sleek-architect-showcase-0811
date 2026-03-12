@@ -1,4 +1,5 @@
 import { Quote } from "lucide-react";
+import echelonIcon from "@/assets/echelon-icon.png";
 
 const testimonials = [
 {

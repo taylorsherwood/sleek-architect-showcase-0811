@@ -7,20 +7,33 @@ const FALLBACK_TIMEOUT = 3000;
 const Hero = () => {
   const [showFallback, setShowFallback] = useState(false);
   const [videoReady, setVideoReady] = useState(false);
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
+    const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+    if (motionQuery.matches) {
+      setPrefersReducedMotion(true);
+      setShowFallback(true);
+      return;
+    }
+
     const timer = setTimeout(() => {
       if (!videoReady) setShowFallback(true);
     }, FALLBACK_TIMEOUT);
 
     const video = videoRef.current;
     if (video) {
+      video.setAttribute('webkit-playsinline', '');
+      video.muted = true;
+
       const playPromise = video.play();
       if (playPromise !== undefined) {
         playPromise.catch(() => {
           setShowFallback(true);
         });
+      } else {
+        setShowFallback(true);
       }
     }
 

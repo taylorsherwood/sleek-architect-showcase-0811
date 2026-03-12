@@ -13,8 +13,8 @@ import {
   Search,
   FileText,
   Shield,
-  Home,
-} from "lucide-react";
+  Home } from
+"lucide-react";
 
 import listing2 from "@/assets/listing-2.jpg";
 import listing3 from "@/assets/listing-3.jpg";
@@ -29,132 +29,132 @@ import downtownImg from "@/assets/community-downtown.jpg";
 /* ------------------------------------------------------------------ */
 
 const buyingSteps = [
-  {
-    icon: MessageSquare,
-    number: "01",
-    title: "Consultation & Strategy",
-    description:
-      "We start with a one-on-one consultation to understand your goals, timeline, budget, and lifestyle priorities. From there we build a tailored strategy — whether you're buying a luxury home in Austin, an investment property, or relocating from out of state.",
-  },
-  {
-    icon: Search,
-    number: "02",
-    title: "Property Search & Private Showings",
-    description:
-      "Leveraging MLS access, off-market networks, and our private database, we curate a shortlist of properties aligned with your criteria. You'll receive private showings — not generic listing alerts — in neighborhoods like Barton Creek, Westlake, and Lake Travis.",
-  },
-  {
-    icon: Shield,
-    number: "03",
-    title: "Offer & Negotiation",
-    description:
-      "When you find the right property, we craft a competitive offer backed by real-time market data and local pricing insight. Our negotiation experience ensures you secure the best possible terms, price, and contingencies.",
-  },
-  {
-    icon: FileText,
-    number: "04",
-    title: "Due Diligence & Inspections",
-    description:
-      "We coordinate inspections, appraisals, title review, and survey — managing every detail so nothing is missed. Our trusted network of inspectors and contractors provides thorough assessments to protect your investment.",
-  },
-  {
-    icon: Home,
-    number: "05",
-    title: "Closing & Ownership",
-    description:
-      "From final walk-through to settlement, we guide you through every step of closing. Once the keys are in your hands, we remain a resource for contractor referrals, property management, and future investment opportunities.",
-  },
-];
+{
+  icon: MessageSquare,
+  number: "01",
+  title: "Consultation & Strategy",
+  description:
+  "We start with a one-on-one consultation to understand your goals, timeline, budget, and lifestyle priorities. From there we build a tailored strategy — whether you're buying a luxury home in Austin, an investment property, or relocating from out of state."
+},
+{
+  icon: Search,
+  number: "02",
+  title: "Property Search & Private Showings",
+  description:
+  "Leveraging MLS access, off-market networks, and our private database, we curate a shortlist of properties aligned with your criteria. You'll receive private showings — not generic listing alerts — in neighborhoods like Barton Creek, Westlake, and Lake Travis."
+},
+{
+  icon: Shield,
+  number: "03",
+  title: "Offer & Negotiation",
+  description:
+  "When you find the right property, we craft a competitive offer backed by real-time market data and local pricing insight. Our negotiation experience ensures you secure the best possible terms, price, and contingencies."
+},
+{
+  icon: FileText,
+  number: "04",
+  title: "Due Diligence & Inspections",
+  description:
+  "We coordinate inspections, appraisals, title review, and survey — managing every detail so nothing is missed. Our trusted network of inspectors and contractors provides thorough assessments to protect your investment."
+},
+{
+  icon: Home,
+  number: "05",
+  title: "Closing & Ownership",
+  description:
+  "From final walk-through to settlement, we guide you through every step of closing. Once the keys are in your hands, we remain a resource for contractor referrals, property management, and future investment opportunities."
+}];
+
 
 const whyTaylor = [
-  {
-    title: "Local Market Expertise",
-    description:
-      "Taylor Sherwood has deep roots in Austin's luxury real estate market. As a Certified Luxury Home Marketing Specialist (CLHMS), he brings institutional-level knowledge of pricing trends, neighborhood dynamics, and off-market opportunities that most Austin luxury real estate agents simply don't have.",
-  },
-  {
-    title: "Negotiation Experience",
-    description:
-      "With a background in investment strategy and hundreds of transactions closed, Taylor delivers disciplined, data-driven negotiation that protects your interests and maximizes value — whether you're buying Austin luxury homes for sale or competing in Barton Creek's most sought-after enclaves.",
-  },
-  {
-    title: "Off-Market Access",
-    description:
-      "Many of Austin's finest properties never hit the public market. Through our private network, brokerage relationships, and eXp Luxury division, we surface exclusive off-market opportunities in Westlake, Barton Creek, Lake Austin, and beyond.",
-  },
-  {
-    title: "Concierge-Level Service",
-    description:
-      "From lender introductions and relocation support to contractor referrals and post-closing guidance, we deliver a white-glove experience that extends well beyond closing day.",
-  },
-];
+{
+  title: "Local Market Expertise",
+  description:
+  "Taylor Sherwood has deep roots in Austin's luxury real estate market. As a Certified Luxury Home Marketing Specialist (CLHMS), he brings institutional-level knowledge of pricing trends, neighborhood dynamics, and off-market opportunities that most Austin luxury real estate agents simply don't have."
+},
+{
+  title: "Negotiation Experience",
+  description:
+  "With a background in investment strategy and hundreds of transactions closed, Taylor delivers disciplined, data-driven negotiation that protects your interests and maximizes value — whether you're buying Austin luxury homes for sale or competing in Barton Creek's most sought-after enclaves."
+},
+{
+  title: "Off-Market Access",
+  description:
+  "Many of Austin's finest properties never hit the public market. Through our private network, brokerage relationships, and eXp Luxury division, we surface exclusive off-market opportunities in Westlake, Barton Creek, Lake Austin, and beyond."
+},
+{
+  title: "Concierge-Level Service",
+  description:
+  "From lender introductions and relocation support to contractor referrals and post-closing guidance, we deliver a white-glove experience that extends well beyond closing day."
+}];
+
 
 const featuredListings = [
-  {
-    image: "/lovable-uploads/0fc79a0b-1fde-439f-bb08-6062e50770b7.jpg",
-    address: "2300 Barton Creek Boulevard #15",
-    location: "Barton Creek, Austin",
-    price: "$3,750,000",
-    beds: 4,
-    baths: 4,
-    sqft: "4,147",
-    link: "https://www.villagovernorshill.com",
-    badge: "Private Listing",
-  },
-  {
-    image: listing2,
-    address: "1203 Westlake Ridge",
-    location: "Westlake Hills, Austin",
-    price: "$7M+ Luxury Home",
-    beds: 6,
-    baths: 7,
-    sqft: "8,400",
-    link: "",
-    badge: "Private Market Opportunity",
-  },
-  {
-    image: listing3,
-    address: "Ranch Estate on 42 Acres",
-    location: "Texas Hill Country",
-    price: "$5M+ Hill Country Estate",
-    beds: 4,
-    baths: 5,
-    sqft: "5,800",
-    link: "",
-    badge: "Private Market Opportunity",
-  },
-];
+{
+  image: "/lovable-uploads/0fc79a0b-1fde-439f-bb08-6062e50770b7.jpg",
+  address: "2300 Barton Creek Boulevard #15",
+  location: "Barton Creek, Austin",
+  price: "$3,750,000",
+  beds: 4,
+  baths: 4,
+  sqft: "4,147",
+  link: "https://www.villagovernorshill.com",
+  badge: "Private Listing"
+},
+{
+  image: listing2,
+  address: "1203 Westlake Ridge",
+  location: "Westlake Hills, Austin",
+  price: "$7M+ Luxury Home",
+  beds: 6,
+  baths: 7,
+  sqft: "8,400",
+  link: "",
+  badge: "Private Market Opportunity"
+},
+{
+  image: listing3,
+  address: "Ranch Estate on 42 Acres",
+  location: "Texas Hill Country",
+  price: "$5M+ Hill Country Estate",
+  beds: 4,
+  baths: 5,
+  sqft: "5,800",
+  link: "",
+  badge: "Private Market Opportunity"
+}];
+
 
 const neighborhoods = [
-  {
-    name: "Barton Creek",
-    slug: "barton-creek",
-    image: bartonCreekImg,
-    description:
-      "Gated luxury living with world-class golf, resort amenities, and homes ranging from $1M to $10M+. One of Austin's most prestigious addresses for families and executives.",
-  },
-  {
-    name: "Westlake Hills",
-    slug: "westlake-hills",
-    image: westlakeImg,
-    description:
-      "Renowned for Eanes ISD schools, Hill Country views, and refined estates. Westlake consistently ranks among the best luxury neighborhoods in Austin.",
-  },
-  {
-    name: "Lake Austin & Lake Travis",
-    slug: "lake-austin-waterfront",
-    image: lakeAustinImg,
-    description:
-      "Waterfront estates on Lake Austin and Lake Travis offer private docks, panoramic water views, and a resort lifestyle minutes from downtown.",
-  },
-  {
-    name: "Central Austin & Downtown",
-    slug: "downtown-austin",
-    image: downtownImg,
-    description:
-      "From luxury high-rises to historic bungalows, Central Austin delivers walkability, culture, and some of the city's most dynamic neighborhoods.",
-  },
-];
+{
+  name: "Barton Creek",
+  slug: "barton-creek",
+  image: bartonCreekImg,
+  description:
+  "Gated luxury living with world-class golf, resort amenities, and homes ranging from $1M to $10M+. One of Austin's most prestigious addresses for families and executives."
+},
+{
+  name: "Westlake Hills",
+  slug: "westlake-hills",
+  image: westlakeImg,
+  description:
+  "Renowned for Eanes ISD schools, Hill Country views, and refined estates. Westlake consistently ranks among the best luxury neighborhoods in Austin."
+},
+{
+  name: "Lake Austin & Lake Travis",
+  slug: "lake-austin-waterfront",
+  image: lakeAustinImg,
+  description:
+  "Waterfront estates on Lake Austin and Lake Travis offer private docks, panoramic water views, and a resort lifestyle minutes from downtown."
+},
+{
+  name: "Central Austin & Downtown",
+  slug: "downtown-austin",
+  image: downtownImg,
+  description:
+  "From luxury high-rises to historic bungalows, Central Austin delivers walkability, culture, and some of the city's most dynamic neighborhoods."
+}];
+
 
 /* ------------------------------------------------------------------ */
 /*  FORM SCHEMA                                                        */
@@ -164,7 +164,7 @@ const buyerSchema = z.object({
   name: z.string().trim().min(1, "Name is required").max(100),
   email: z.string().trim().email("Please enter a valid email").max(255),
   phone: z.string().trim().max(20).optional(),
-  message: z.string().trim().max(2000).optional(),
+  message: z.string().trim().max(2000).optional()
 });
 
 /* ------------------------------------------------------------------ */
@@ -181,13 +181,13 @@ const MortgageCalculator = () => {
   const monthlyRate = rate / 100 / 12;
   const numPayments = term * 12;
   const monthly =
-    monthlyRate > 0
-      ? (loanAmount * (monthlyRate * Math.pow(1 + monthlyRate, numPayments))) /
-        (Math.pow(1 + monthlyRate, numPayments) - 1)
-      : loanAmount / numPayments;
+  monthlyRate > 0 ?
+  loanAmount * (monthlyRate * Math.pow(1 + monthlyRate, numPayments)) / (
+  Math.pow(1 + monthlyRate, numPayments) - 1) :
+  loanAmount / numPayments;
 
   const inputClass =
-    "w-full bg-background border border-border px-4 py-3 text-foreground focus:outline-none focus:ring-1 focus:ring-foreground/20 transition-colors duration-200";
+  "w-full bg-background border border-border px-4 py-3 text-foreground focus:outline-none focus:ring-1 focus:ring-foreground/20 transition-colors duration-200";
 
   return (
     <div className="bg-card border border-border p-8 md:p-10">
@@ -226,8 +226,8 @@ const MortgageCalculator = () => {
           Estimate only. Does not include property taxes, insurance, or HOA fees. Contact us for a personalized analysis.
         </p>
       </div>
-    </div>
-  );
+    </div>);
+
 };
 
 /* ------------------------------------------------------------------ */
@@ -271,8 +271,8 @@ const Buy = () => {
           email: form.email,
           phone: form.phone || "Not provided",
           "Interest": "Buying a Home",
-          "Message": form.message || "Buyer consultation request from Buy page.",
-        }),
+          "Message": form.message || "Buyer consultation request from Buy page."
+        })
       });
       const data = await response.json();
       if (data.success) {
@@ -289,15 +289,15 @@ const Buy = () => {
   };
 
   const inputClass =
-    "w-full bg-transparent border-b border-border focus:border-foreground outline-none py-3 text-foreground placeholder:text-muted-foreground/50 transition-colors duration-300";
+  "w-full bg-transparent border-b border-border focus:border-foreground outline-none py-3 text-foreground placeholder:text-muted-foreground/50 transition-colors duration-300";
 
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Buying Real Estate in Austin & Barton Creek | Echelon Property Group"
         description="Expert buyer representation for Austin luxury homes for sale. Access off-market Barton Creek homes for sale, investment properties, and concierge-level service with Taylor Sherwood — a top Austin luxury real estate agent."
-        canonical="https://www.echelonpropertygroup.com/buy"
-      />
+        canonical="https://www.echelonpropertygroup.com/buy" />
+      
       <Navigation />
 
       {/* ── Hero ── */}
@@ -319,8 +319,8 @@ const Buy = () => {
             </p>
             <a
               href="#buyer-consultation"
-              className="inline-block text-minimal bg-primary-foreground text-[#0C0F24] px-8 py-3.5 hover:bg-primary-foreground/90 transition-colors duration-300 reveal-delayed-2"
-            >
+              className="inline-block text-minimal bg-primary-foreground text-[#0C0F24] px-8 py-3.5 hover:bg-primary-foreground/90 transition-colors duration-300 reveal-delayed-2">
+              
               SCHEDULE A BUYER CONSULTATION
             </a>
           </div>
@@ -341,8 +341,8 @@ const Buy = () => {
               </p>
             </div>
             <div className="grid md:grid-cols-2 gap-x-16 gap-y-12">
-              {whyTaylor.map((item, i) => (
-                <div key={i} className="group">
+              {whyTaylor.map((item, i) =>
+              <div key={i} className="group">
                   <div className="flex items-start gap-4 mb-3">
                     <CheckCircle className="w-5 h-5 text-gold mt-1 shrink-0" />
                     <h3 className="text-xl font-display font-medium group-hover:text-muted-foreground transition-colors duration-300">
@@ -353,7 +353,7 @@ const Buy = () => {
                     {item.description}
                   </p>
                 </div>
-              ))}
+              )}
             </div>
           </div>
         </div>
@@ -370,8 +370,8 @@ const Buy = () => {
               </h2>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-              {buyingSteps.map((step) => (
-                <div key={step.number} className="group">
+              {buyingSteps.map((step) =>
+              <div key={step.number} className="group">
                   <div className="flex items-start gap-4 mb-4">
                     <span className="text-minimal text-muted-foreground">{step.number}</span>
                     <step.icon className="w-5 h-5 text-gold mt-0.5 shrink-0" />
@@ -381,7 +381,7 @@ const Buy = () => {
                   </h3>
                   <p className="text-muted-foreground leading-relaxed text-sm">{step.description}</p>
                 </div>
-              ))}
+              )}
             </div>
           </div>
         </div>
@@ -403,8 +403,8 @@ const Buy = () => {
               </div>
               <Link
                 to="/listings"
-                className="mt-6 md:mt-0 text-minimal text-muted-foreground hover:text-foreground transition-colors duration-300 flex items-center gap-2 shrink-0"
-              >
+                className="mt-6 md:mt-0 text-minimal text-muted-foreground hover:text-foreground transition-colors duration-300 flex items-center gap-2 shrink-0">
+                
                 VIEW ALL LISTINGS <ArrowRight className="w-3 h-3" />
               </Link>
             </div>
@@ -412,9 +412,9 @@ const Buy = () => {
               {featuredListings.map((listing, i) => {
                 const isExternal = listing.link.startsWith("http");
                 const Wrapper = isExternal ? "a" : "div";
-                const wrapperProps = isExternal
-                  ? { href: listing.link, target: "_blank" as const, rel: "noopener noreferrer" }
-                  : {};
+                const wrapperProps = isExternal ?
+                { href: listing.link, target: "_blank" as const, rel: "noopener noreferrer" } :
+                {};
                 return (
                   <Wrapper key={i} {...wrapperProps} className="group block">
                     <div className="relative overflow-hidden mb-6">
@@ -422,16 +422,16 @@ const Buy = () => {
                         src={listing.image}
                         alt={listing.address}
                         className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
-                        loading="lazy"
-                      />
+                        loading="lazy" />
+                      
                       <div className="absolute top-4 left-4 bg-background/90 backdrop-blur-sm px-4 py-2">
                         <span className="text-minimal text-foreground font-semibold">{listing.price}</span>
                       </div>
-                      {listing.badge && (
-                        <div className="absolute bottom-4 right-4 bg-background/90 backdrop-blur-sm px-3 py-1.5">
+                      {listing.badge &&
+                      <div className="absolute bottom-4 right-4 bg-background/90 backdrop-blur-sm px-3 py-1.5">
                           <span className="text-[10px] tracking-widest uppercase text-muted-foreground font-medium">{listing.badge}</span>
                         </div>
-                      )}
+                      }
                     </div>
                     <h3 className="text-lg font-display font-medium mb-1 group-hover:text-muted-foreground transition-colors duration-300">
                       {listing.address}
@@ -442,15 +442,15 @@ const Buy = () => {
                       <span>{listing.baths} Baths</span>
                       <span>{listing.sqft} Sq Ft</span>
                     </div>
-                  </Wrapper>
-                );
+                  </Wrapper>);
+
               })}
             </div>
             <div className="mt-12 text-center">
               <Link
                 to="/off-market-luxury-homes-austin"
-                className="inline-block text-sm text-muted-foreground hover:text-foreground transition-colors duration-300"
-              >
+                className="inline-block text-sm text-muted-foreground hover:text-foreground transition-colors duration-300">
+                
                 Looking for private market opportunities?{" "}
                 <span className="underline">Ask about off-market homes</span> →
               </Link>
@@ -490,21 +490,21 @@ const Buy = () => {
               </div>
               <Link
                 to="/communities"
-                className="mt-6 md:mt-0 text-minimal text-muted-foreground hover:text-foreground transition-colors duration-300 flex items-center gap-2 shrink-0"
-              >
+                className="mt-6 md:mt-0 text-minimal text-muted-foreground hover:text-foreground transition-colors duration-300 flex items-center gap-2 shrink-0">
+                
                 EXPLORE ALL COMMUNITIES <ArrowRight className="w-3 h-3" />
               </Link>
             </div>
             <div className="grid md:grid-cols-2 gap-8">
-              {neighborhoods.map((n) => (
-                <Link key={n.slug} to={`/communities/${n.slug}`} className="group block">
+              {neighborhoods.map((n) =>
+              <Link key={n.slug} to={`/communities/${n.slug}`} className="group block">
                   <div className="relative overflow-hidden mb-5">
                     <img
-                      src={n.image}
-                      alt={`${n.name} homes for sale in Austin`}
-                      className="w-full aspect-[16/9] object-cover transition-transform duration-700 group-hover:scale-105"
-                      loading="lazy"
-                    />
+                    src={n.image}
+                    alt={`${n.name} homes for sale in Austin`}
+                    className="w-full aspect-[16/9] object-cover transition-transform duration-700 group-hover:scale-105"
+                    loading="lazy" />
+                  
                     <div className="absolute bottom-4 left-4 flex items-center gap-2 bg-background/90 backdrop-blur-sm px-4 py-2">
                       <MapPin className="w-3.5 h-3.5 text-gold" />
                       <span className="text-minimal text-foreground font-semibold">{n.name}</span>
@@ -514,7 +514,7 @@ const Buy = () => {
                     {n.description}
                   </p>
                 </Link>
-              ))}
+              )}
             </div>
           </div>
         </div>
@@ -529,8 +529,8 @@ const Buy = () => {
               <h2 className="text-4xl md:text-5xl font-display font-light text-primary-foreground leading-[1.15] mb-6">
                 Schedule a Buyer Consultation
               </h2>
-              <p className="text-primary-foreground/60 leading-relaxed mb-10 max-w-lg">
-                Whether you're searching for luxury homes in Barton Creek, relocating to Austin, or exploring investment opportunities, a consultation with Taylor is the best first step. We'll discuss your goals, timeline, and build a customized search strategy.
+              <p className="text-primary-foreground/60 leading-relaxed mb-10 max-w-lg">Whether you're searching for luxury homes, relocating to Austin, or exploring investment opportunities, a consultation with Taylor is the best first step. We'll discuss your goals, timeline, and build a customized search strategy.
+
               </p>
               <div className="space-y-6">
                 <div>
@@ -557,8 +557,8 @@ const Buy = () => {
                   value={form.name}
                   onChange={handleChange}
                   maxLength={100}
-                  className={`${inputClass} border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/30 focus:border-primary-foreground/50`}
-                />
+                  className={`${inputClass} border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/30 focus:border-primary-foreground/50`} />
+                
                 {errors.name && <p className="text-destructive text-sm mt-1">{errors.name}</p>}
               </div>
               <div>
@@ -569,8 +569,8 @@ const Buy = () => {
                   value={form.email}
                   onChange={handleChange}
                   maxLength={255}
-                  className={`${inputClass} border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/30 focus:border-primary-foreground/50`}
-                />
+                  className={`${inputClass} border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/30 focus:border-primary-foreground/50`} />
+                
                 {errors.email && <p className="text-destructive text-sm mt-1">{errors.email}</p>}
               </div>
               <div>
@@ -581,8 +581,8 @@ const Buy = () => {
                   value={form.phone}
                   onChange={handleChange}
                   maxLength={20}
-                  className={`${inputClass} border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/30 focus:border-primary-foreground/50`}
-                />
+                  className={`${inputClass} border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/30 focus:border-primary-foreground/50`} />
+                
               </div>
               <div>
                 <textarea
@@ -592,14 +592,14 @@ const Buy = () => {
                   onChange={handleChange}
                   rows={4}
                   maxLength={2000}
-                  className={`${inputClass} resize-none border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/30 focus:border-primary-foreground/50`}
-                />
+                  className={`${inputClass} resize-none border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/30 focus:border-primary-foreground/50`} />
+                
               </div>
               <button
                 type="submit"
                 disabled={submitting}
-                className="text-minimal bg-primary-foreground text-[#0C0F24] hover:bg-primary-foreground/90 px-10 py-4 transition-colors duration-300 w-full md:w-auto disabled:opacity-50 disabled:cursor-not-allowed"
-              >
+                className="text-minimal bg-primary-foreground text-[#0C0F24] hover:bg-primary-foreground/90 px-10 py-4 transition-colors duration-300 w-full md:w-auto disabled:opacity-50 disabled:cursor-not-allowed">
+                
                 {submitting ? "SENDING..." : "REQUEST CONSULTATION"}
               </button>
             </form>
@@ -608,8 +608,8 @@ const Buy = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>);
+
 };
 
 export default Buy;

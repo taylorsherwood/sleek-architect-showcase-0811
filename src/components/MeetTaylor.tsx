@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import clhmsBadge from "@/assets/clhms-badge.png";
+import echelonLogoGold from "@/assets/echelon-logo-gold.png";
 
 const MeetTaylor = () => {
   return (

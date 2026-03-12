@@ -142,7 +142,7 @@ const Navigation = () => {
             rel="noopener noreferrer"
             className="whitespace-nowrap text-minimal tracking-[0.2em] border border-border text-muted-foreground hover:text-primary-foreground hover:bg-[#0C0F24] hover:border-[#0C0F24] px-5 py-2.5 min-h-[40px] inline-flex items-center transition-all duration-300"
           >
-            TRANSACTION PORTAL
+            CLIENT PORTAL
           </a>
           <a
             href="https://taylorsherwood.realscout.com/"

@@ -4,7 +4,7 @@ import echelonLogoGold from "@/assets/echelon-logo-gold.png";
 
 const MeetTaylor = () => {
   return (
-    <section className="py-20 bg-background">
+    <section className="pt-20 pb-8 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
           <h3 className="text-3xl md:text-4xl font-display font-light text-architectural mb-1 md:w-1/2 text-center">
@@ -46,8 +46,8 @@ const MeetTaylor = () => {
             >
               SCHEDULE A PRIVATE CONSULTATION
             </Link>
-            <div className="mt-8">
-              <img src={echelonLogoGold} alt="Echelon Property Group" className="mx-auto h-24 w-auto" />
+            <div className="mt-6 mb-0">
+              <img src={echelonLogoGold} alt="Echelon Property Group" className="mx-auto h-32 w-auto" />
             </div>
           </div>
         </div>

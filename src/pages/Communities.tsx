@@ -13,6 +13,7 @@ import travisHeights from "@/assets/community-travis-heights.jpg";
 import tarrytown from "@/assets/community-tarrytown.jpg";
 import drippingSprings from "@/assets/community-dripping-springs.jpg";
 import downtown from "@/assets/community-downtown.jpg";
+import zilker from "@/assets/community-zilker.jpg";
 
 const imageMap: Record<string, string> = {
   "barton-creek": bartonCreek,
@@ -24,6 +25,7 @@ const imageMap: Record<string, string> = {
   "downtown-austin-condos": downtown,
   "tarrytown": tarrytown,
   "dripping-springs": drippingSprings,
+  "zilker-austin": zilker,
 };
 
 const Communities = () => {

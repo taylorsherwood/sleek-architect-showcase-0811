@@ -312,7 +312,7 @@ const Buy = () => {
             <h1 className="text-4xl md:text-6xl font-display font-light text-primary-foreground leading-[1.1] mb-6 reveal">
               Buying Real Estate in
               <br />
-              Austin &amp; Barton Creek
+              Austin
             </h1>
             <p className="text-primary-foreground/70 text-lg max-w-lg mb-8 reveal-delayed">
               Expert representation for luxury homes, investment properties, and off-market opportunities across Austin's most coveted neighborhoods.

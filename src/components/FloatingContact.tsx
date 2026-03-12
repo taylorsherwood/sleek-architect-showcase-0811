@@ -24,8 +24,8 @@ const FloatingContact = () => {
           
         </div>
         <div className="flex flex-col items-start">
-          <span className="text-[11.5px] font-extrabold tracking-[0.22em] uppercase text-[hsl(var(--gold))] group-hover:text-background transition-colors duration-500 leading-tight">
-            Connect
+          <span className="text-[11.5px] font-extrabold tracking-[0.22em] uppercase text-[hsl(var(--gold))] group-hover:text-background transition-colors duration-500 leading-tight">CONTACT ME
+
           </span>
           <span className="text-[8.5px] tracking-[0.15em] uppercase text-[hsl(var(--gold)/0.7)] group-hover:text-background/80 font-extrabold leading-tight mt-0.5">
             PRIVATE ADVISOR

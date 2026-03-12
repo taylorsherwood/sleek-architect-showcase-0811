@@ -15,11 +15,13 @@ const FloatingContact = () => {
         className="fixed bottom-6 right-6 z-40 flex items-center gap-3 bg-background border border-border rounded-full pl-1.5 pr-5 py-1.5 shadow-[0_8px_30px_-8px_hsl(var(--foreground)/0.15)] hover:shadow-[0_12px_40px_-8px_hsl(var(--foreground)/0.25)] transition-all duration-500 group cursor-pointer"
         aria-label="Connect with Taylor Sherwood"
       >
-        <img
-          src={HEADSHOT}
-          alt="Taylor Sherwood"
-          className="w-10 h-10 rounded-full object-cover border-2 border-[hsl(var(--gold))]"
-        />
+        <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-[hsl(var(--gold))]">
+          <img
+            src={HEADSHOT}
+            alt="Taylor Sherwood"
+            className="w-full h-full object-cover object-[50%_20%] scale-[1.35]"
+          />
+        </div>
         <span className="text-minimal text-foreground group-hover:text-[hsl(var(--gold))] transition-colors duration-300 tracking-[0.15em]">
           Connect With Me
         </span>

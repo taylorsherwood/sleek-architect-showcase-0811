@@ -57,7 +57,7 @@ const Testimonials = () => {
                 <img
                   src={echelonIcon}
                   alt=""
-                  className="absolute bottom-4 right-4 h-10 w-auto opacity-20"
+                  className="absolute bottom-4 right-4 h-10 w-auto"
                 />
               </div>
             )}

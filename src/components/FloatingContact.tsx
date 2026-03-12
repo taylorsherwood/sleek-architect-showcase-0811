@@ -19,7 +19,7 @@ const FloatingContact = () => {
           <img
             src={HEADSHOT}
             alt="Taylor Sherwood"
-            className="w-full h-full object-cover object-[50%_20%] scale-[1.35]"
+            className="w-full h-full object-cover object-[50%_35%] scale-[1.35]"
           />
         </div>
         <span className="text-minimal text-foreground group-hover:text-[hsl(var(--gold))] transition-colors duration-300 tracking-[0.15em]">
@@ -47,7 +47,7 @@ const FloatingContact = () => {
             <img
               src={HEADSHOT}
               alt="Taylor Sherwood"
-              className="w-full h-full object-cover object-[50%_20%] scale-[1.35]"
+              className="w-full h-full object-cover object-[50%_35%] scale-[1.35]"
             />
           </div>
           </div>

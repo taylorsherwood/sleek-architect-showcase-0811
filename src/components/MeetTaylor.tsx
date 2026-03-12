@@ -31,7 +31,7 @@ const MeetTaylor = () => {
                 With deep expertise across Austin's most sought-after neighborhoods — including Westlake Hills, Barton Creek, Tarrytown, and Lake Austin — Taylor works closely with buyers and sellers to ensure every transaction is handled with care, discretion, and strategic insight.
               </p>
               <p className="text-muted-foreground leading-relaxed max-w-md text-xl mb-8">
-                Taylor Sherwood founded Echelon Property Group to bring a strategic, investment-focused approach to Austin real estate. With experience across luxury residential, commercial assets, and investment properties, Taylor helps clients identify opportunities others miss and execute transactions with precision.
+                Taylor founded Echelon Property Group to bring a strategic, investment-focused approach to Austin real estate. With experience across luxury residential, commercial assets, and investment properties, Taylor helps clients identify opportunities others miss and execute transactions with precision.
               </p>
               <Link
                 to="/contact"

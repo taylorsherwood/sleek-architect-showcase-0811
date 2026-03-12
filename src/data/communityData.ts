@@ -1,5 +1,10 @@
 import travisHeightsImg from "@/assets/community-travis-heights.jpg";
-
+import lakeAustinImg from "@/assets/community-lake-austin.jpg";
+import tarrytownImg from "@/assets/community-tarrytown.jpg";
+import rollingwoodImg from "@/assets/community-rollingwood.jpg";
+import downtownImg from "@/assets/community-downtown.jpg";
+import drippingSpringsImg from "@/assets/community-dripping-springs.jpg";
+import hillCountryImg from "@/assets/community-hill-country.jpg";
 export interface CommunityFAQ {
   question: string;
   answer: string;

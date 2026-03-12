@@ -48,22 +48,23 @@ const Hero = () => {
   return (
     <section className="relative h-screen flex items-end overflow-hidden bg-black">
       {/* Background video — primary hero media */}
-      <div className="absolute inset-0 pointer-events-none">
-        <video
-          ref={videoRef}
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-          onCanPlayThrough={handleVideoReady}
-          onError={() => setShowFallback(true)}
-          className={`w-full h-full object-cover transition-opacity duration-500 ${videoReady ? "opacity-100" : "opacity-0"}`}
-        >
-          <source src="/videos/hero-video.mp4" type="video/mp4" />
-        </video>
-      </div>
-      {/* Fallback image — only shown if video fails or times out */}
+      {!prefersReducedMotion && (
+        <div className="absolute inset-0 pointer-events-none">
+          <video
+            ref={videoRef}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
+            onCanPlayThrough={handleVideoReady}
+            onError={() => setShowFallback(true)}
+            className={`w-full h-full object-cover transition-opacity duration-500 ${videoReady ? "opacity-100" : "opacity-0"}`}
+          >
+            <source src="/videos/hero-video.mp4" type="video/mp4" />
+          </video>
+        </div>
+      )}
       {showFallback && !videoReady && (
         <img
           src={heroFallback}

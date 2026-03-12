@@ -53,8 +53,8 @@ const FloatingContact = () => {
             <h3 className="font-display text-2xl text-architectural mb-2">
               Taylor Sherwood
             </h3>
-            <p className="text-muted-foreground text-sm leading-relaxed mb-8 max-w-[260px] mx-auto">
-              I love talking home goals! Feel free to connect with me below.
+            <p className="text-muted-foreground text-sm leading-relaxed mb-8 max-w-[280px] mx-auto">
+              Questions about buying, selling, investing, or off-market opportunities? Let's connect.
             </p>
 
             <div className="flex flex-col gap-3">

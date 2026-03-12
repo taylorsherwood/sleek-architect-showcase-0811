@@ -1,14 +1,26 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import heroFallback from "@/assets/hero-fallback.jpg";
 
 const Hero = () => {
+  const [videoLoaded, setVideoLoaded] = useState(false);
+
   return (
     <section className="relative h-screen flex items-end overflow-hidden">
+      {/* Fallback image shown while video loads */}
+      <img
+        src={heroFallback}
+        alt="Austin skyline"
+        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${videoLoaded ? "opacity-0" : "opacity-100"}`}
+      />
       <video
         autoPlay
         muted
         loop
         playsInline
-        className="absolute inset-0 w-full h-full object-cover"
+        preload="auto"
+        onCanPlayThrough={() => setVideoLoaded(true)}
+        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${videoLoaded ? "opacity-100" : "opacity-0"}`}
       >
         <source src="/videos/hero-video.mp4" type="video/mp4" />
       </video>

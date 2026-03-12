@@ -2,13 +2,13 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { ScrollToTop } from "./components/ScrollToTop";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Listings from "./pages/Listings";
-import Buyers from "./pages/Buyers";
-import Sellers from "./pages/Sellers";
+import Buy from "./pages/Buy";
+import Sell from "./pages/Sell";
 import Communities from "./pages/Communities";
 import CommunityPage from "./pages/CommunityPage";
 import Blog from "./pages/Blog";
@@ -38,8 +38,11 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/listings" element={<Listings />} />
           <Route path="/listings/commercial-investment-austin" element={<CommercialInvestment />} />
-          <Route path="/buyers" element={<Buyers />} />
-          <Route path="/sellers" element={<Sellers />} />
+          <Route path="/buy" element={<Buy />} />
+          <Route path="/sell" element={<Sell />} />
+          {/* Redirects from old routes */}
+          <Route path="/buyers" element={<Navigate to="/buy" replace />} />
+          <Route path="/sellers" element={<Navigate to="/sell" replace />} />
           <Route path="/communities" element={<Communities />} />
           <Route path="/communities/:slug" element={<CommunityPage />} />
           <Route path="/blog" element={<Blog />} />

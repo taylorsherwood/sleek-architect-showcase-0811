@@ -1,16 +1,16 @@
 import { Link } from "react-router-dom";
-import heroArchitecture from "@/assets/hero-architecture.jpg";
+import commercialHero from "@/assets/commercial-hero-austin.jpg";
 
 const CommercialCTA = () => {
   return (
     <section className="relative py-24">
       <div className="absolute inset-0">
         <img
-          src={heroArchitecture}
+          src={commercialHero}
           alt="Austin commercial real estate skyline"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-foreground/70" />
+        <div className="absolute inset-0 bg-black/40" />
       </div>
       <div className="relative container mx-auto px-6">
         <div className="max-w-4xl mx-auto py-16">

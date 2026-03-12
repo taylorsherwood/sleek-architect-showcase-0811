@@ -52,7 +52,7 @@ const FloatingContact = () => {
               <img
                 src={HEADSHOT}
                 alt="Taylor Sherwood"
-                className="w-full h-full object-cover object-[50%_22%] scale-[1.1]"
+                className="w-full h-full object-cover object-[50%_20%] scale-[1.03]"
               />
             </div>
           </div>

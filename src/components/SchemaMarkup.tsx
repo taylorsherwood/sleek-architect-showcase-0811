@@ -63,10 +63,10 @@ export const realEstateAgentSchema = {
 
 export const taylorSherwoodSchema = {
   "@context": "https://schema.org",
-  "@type": "RealEstateAgent",
+  "@type": "Person",
   "name": "Taylor Sherwood",
   "jobTitle": "Certified Luxury Home Marketing Specialist (CLHMS)",
-  "description": "Austin luxury real estate advisor specializing in distinctive homes, luxury properties, and land opportunities across Westlake Hills, Barton Creek, Tarrytown, and Lake Austin.",
+  "description": "Austin luxury real estate advisor specializing in luxury homes, land development, commercial real estate, and investment property across Westlake Hills, Barton Creek, Tarrytown, Lake Austin, and the Texas Hill Country.",
   "url": "https://www.echelonpropertygroup.com/about",
   "telephone": "(512) 661-3843",
   "email": "taylor@echelonpropertygroup.com",
@@ -88,9 +88,10 @@ export const taylorSherwoodSchema = {
     { "@type": "Place", "name": "Westlake Hills, Texas" },
     { "@type": "Place", "name": "Barton Creek, Austin" },
     { "@type": "Place", "name": "Tarrytown, Austin" },
-    { "@type": "Place", "name": "Lake Austin" }
+    { "@type": "Place", "name": "Lake Austin" },
+    { "@type": "Place", "name": "Texas Hill Country" }
   ],
-  "knowsAbout": ["Luxury Real Estate", "Off-Market Homes", "Land Development", "Commercial Real Estate", "Investment Properties"]
+  "knowsAbout": ["Luxury Real Estate", "Off-Market Homes", "Land Development", "Commercial Real Estate", "Investment Properties", "Austin Texas Real Estate"]
 };
 
 export const localBusinessSchema = {

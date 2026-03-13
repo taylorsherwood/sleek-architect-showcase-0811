@@ -32,6 +32,11 @@ function sitemapPlugin(): Plugin {
       "/austin-luxury-homes-for-sale",
       "/austin-commercial-real-estate",
       "/home-value-austin",
+      "/luxury-real-estate-austin",
+      "/buy-homes-austin",
+      "/sell-home-austin",
+      "/austin-real-estate-investment",
+      "/land-for-sale-austin",
     ];
 
     const communitySlugs = extractAll("communityData.ts", /slug:\s*"([^"]+)"/g);

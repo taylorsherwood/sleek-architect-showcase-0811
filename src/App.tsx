@@ -23,6 +23,11 @@ import AustinLuxuryHomes from "./pages/AustinLuxuryHomes";
 import AustinCommercialRealEstate from "./pages/AustinCommercialRealEstate";
 import HomeValueAustin from "./pages/HomeValueAustin";
 import CommercialInvestment from "./pages/CommercialInvestment";
+import LuxuryRealEstateAustin from "./pages/LuxuryRealEstateAustin";
+import BuyHomesAustin from "./pages/BuyHomesAustin";
+import SellHomeAustin from "./pages/SellHomeAustin";
+import AustinRealEstateInvestment from "./pages/AustinRealEstateInvestment";
+import LandForSaleAustin from "./pages/LandForSaleAustin";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -56,6 +61,11 @@ const App = () => (
           <Route path="/austin-luxury-homes-for-sale" element={<AustinLuxuryHomes />} />
           <Route path="/austin-commercial-real-estate" element={<AustinCommercialRealEstate />} />
           <Route path="/home-value-austin" element={<HomeValueAustin />} />
+          <Route path="/luxury-real-estate-austin" element={<LuxuryRealEstateAustin />} />
+          <Route path="/buy-homes-austin" element={<BuyHomesAustin />} />
+          <Route path="/sell-home-austin" element={<SellHomeAustin />} />
+          <Route path="/austin-real-estate-investment" element={<AustinRealEstateInvestment />} />
+          <Route path="/land-for-sale-austin" element={<LandForSaleAustin />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

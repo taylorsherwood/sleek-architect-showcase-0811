@@ -11,19 +11,26 @@ import CommercialCTA from "@/components/CommercialCTA";
 import RealScoutListings from "@/components/RealScoutListings";
 import CTASection from "@/components/CTASection";
 import SellerCTA from "@/components/SellerCTA";
+import ExpertiseSection from "@/components/ExpertiseSection";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 
 import SchemaMarkup, { realEstateAgentSchema, localBusinessSchema, taylorSherwoodSchema } from "@/components/SchemaMarkup";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="Austin Luxury Real Estate | Homes, Land & Investment Property | Echelon Property Group"
+        description="Luxury homes, land, and investment real estate in Austin Texas. Work with Taylor Sherwood of Echelon Property Group for exclusive listings, off-market opportunities, and expert Austin real estate guidance."
+      />
       <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={localBusinessSchema} />
       <SchemaMarkup schema={taylorSherwoodSchema} />
       <Navigation />
       <Hero />
       <CredibilityStrip />
+      <ExpertiseSection />
       <CommunitiesPreview />
       <CommercialCTA />
       <FeaturedListings />

@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import RealScoutListings from "@/components/RealScoutListings";
+import SEOHead from "@/components/SEOHead";
 import listing1 from "@/assets/listing-1.jpg";
 import listing2 from "@/assets/listing-2.jpg";
 import listing3 from "@/assets/listing-3.jpg";
@@ -47,6 +48,10 @@ const listings = [
 const Listings = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Austin Luxury Listings | Homes, Land & Investment Properties | Echelon Property Group"
+        description="View current luxury listings from Echelon Property Group. Austin homes for sale, investment properties, estate homes, and land opportunities across Austin's premier neighborhoods."
+      />
       <Navigation />
 
       <section className="pt-32 pb-16">

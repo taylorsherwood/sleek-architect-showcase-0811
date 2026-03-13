@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
 
@@ -90,6 +91,10 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Contact Echelon Property Group | Austin Real Estate Advisor"
+        description="Contact Taylor Sherwood and Echelon Property Group for luxury homes, land, commercial real estate, and investment property in Austin Texas. Schedule a consultation today."
+      />
       <Navigation />
 
       <section className="pt-32 pb-28">

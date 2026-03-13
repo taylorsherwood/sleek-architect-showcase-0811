@@ -53,7 +53,7 @@ const Navigation = () => {
     link.children?.some((c) => location.pathname === c.href);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 overflow-visible h-32 border-b border-border/50">
+    <nav className="fixed top-0 left-0 right-0 z-50 overflow-visible h-28 border-b border-border/50">
       <div
         className={`absolute inset-0 backdrop-blur-md transition-colors duration-300 ${
           isScrolled ? "bg-background/65" : "bg-background"

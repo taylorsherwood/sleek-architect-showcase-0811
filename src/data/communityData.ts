@@ -528,12 +528,13 @@ The ongoing expansion of Austin's technology sector and the influx of high-net-w
 For investors, the combination of prestige, privacy, and proximity to Austin's booming economy makes Spanish Oaks a blue-chip real estate holding with strong long-term upside.`,
     relatedCommunities: ["barton-creek", "westlake-hills", "lake-austin-waterfront", "texas-hill-country-estates"],
     faqs: [
-      { question: "Is Spanish Oaks a gated community?", answer: "Yes. Spanish Oaks is a private, guard-gated luxury community with 24-hour security, providing exceptional privacy and exclusivity for residents." },
-      { question: "What is the Spanish Oaks Golf Club?", answer: "The Spanish Oaks Golf Club is a nationally recognized private golf course at the heart of the community, offering a resort-style experience with championship-level play and exclusive member amenities." },
-      { question: "What are home prices in Spanish Oaks?", answer: "Homes in Spanish Oaks typically range from $3 million to over $15 million, depending on lot size, views, and architectural design. Most residences are custom-built luxury estates." },
-      { question: "What school district serves Spanish Oaks?", answer: "Spanish Oaks is served by the Lake Travis Independent School District, including Lake Pointe Elementary, Bee Cave Middle School, and Lake Travis High School — all top-performing campuses." },
-      { question: "How far is Spanish Oaks from downtown Austin?", answer: "Spanish Oaks is approximately 20 to 25 minutes from downtown Austin, offering a secluded Hill Country setting with convenient urban access." },
-      { question: "What amenities are available in Spanish Oaks?", answer: "Residents enjoy a private golf club, hiking and nature trails, a fish camp on Barton Creek, resort-style pool pavilion, community parks, and 24-hour gated security." }
+      { question: "What is Spanish Oaks in Austin?", answer: "Spanish Oaks is one of the most prestigious gated communities in the Austin area. Located just west of downtown Austin in the Texas Hill Country, the neighborhood is known for luxury estate homes, large private lots, and the exclusive Spanish Oaks Golf Club." },
+      { question: "Is Spanish Oaks a gated community?", answer: "Yes. Spanish Oaks is a fully gated community with 24-hour guard-gated security, offering privacy and controlled access for residents and guests." },
+      { question: "How much do homes cost in Spanish Oaks?", answer: "Homes in Spanish Oaks typically range from approximately $3 million to over $15 million, depending on lot size, views, and architectural design. Many homes are custom-built luxury estates." },
+      { question: "What amenities are in Spanish Oaks?", answer: "Amenities in Spanish Oaks include the Spanish Oaks Golf Club, a community pool pavilion, a private fish camp on Barton Creek, hiking and nature trails, and parks and playgrounds. The community is designed to provide a quiet Hill Country lifestyle while still being close to Austin." },
+      { question: "What school district serves Spanish Oaks?", answer: "Spanish Oaks is served by the Lake Travis Independent School District, one of the top-performing school districts in the Austin area. Nearby schools include Lake Pointe Elementary School, Bee Cave Middle School, and Lake Travis High School." },
+      { question: "How far is Spanish Oaks from downtown Austin?", answer: "Spanish Oaks is located approximately 20 minutes from downtown Austin, depending on traffic, offering residents convenient access to the city while maintaining a private Hill Country setting." },
+      { question: "Are there golf course homes in Spanish Oaks?", answer: "Yes. Many homes in Spanish Oaks are located along or near the Spanish Oaks Golf Club, offering scenic views of the golf course and surrounding Hill Country." }
     ]
   },
   {

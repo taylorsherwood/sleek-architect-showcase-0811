@@ -8,9 +8,12 @@ const CommercialCTA = () => {
         <img
           src={commercialHero}
           alt="Austin commercial real estate skyline"
-          className="w-full h-full object-cover animate-[commercial-zoom_14s_ease-in-out_infinite_alternate]" />
+          className="w-full h-full object-cover"
+          style={{ imageRendering: 'auto', willChange: 'auto' }}
+          loading="eager"
+          decoding="sync" />
         
-        <div className="absolute inset-0 bg-gradient-to-b from-black/35 via-black/40 to-black/55" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/25 to-black/45" />
       </div>
       <div className="relative container mx-auto px-6">
         <div className="max-w-4xl mx-auto py-16">

@@ -39,7 +39,7 @@ const CommunitiesPreview = () => {
             {communities.map((community, index) =>
             <Link
               key={index}
-              to="/communities"
+              to={`/communities/${community.slug}`}
               className="group relative overflow-hidden aspect-[3/4]">
               
                 <img

@@ -34,7 +34,7 @@ const Index = () => {
       <CommunitiesPreview />
       <CommercialCTA />
       <FeaturedListings />
-      <RealScoutListings />
+      
       <IntroSection />
       <MeetTaylor />
       <Testimonials />

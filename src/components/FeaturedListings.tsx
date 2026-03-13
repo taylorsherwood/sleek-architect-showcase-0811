@@ -178,9 +178,10 @@ const FeaturedListings = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
           <p className="text-minimal text-gold mb-4 font-extrabold">ECHELON LISTINGS</p>
-          <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-12">
+          <h2 className="text-4xl md:text-5xl font-display font-light text-architectural">
             Currently on the Market
           </h2>
+          <p className="text-minimal text-gold mt-2 mb-12 font-extrabold">COMMERCIAL AND RESIDENTIAL LISTINGS</p>
           <div ref={widgetRef} className="w-full" />
         </div>
       </div>

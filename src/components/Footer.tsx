@@ -55,7 +55,7 @@ const Footer = () => {
           </div>
 
           <div className="flex items-center mb-6">
-            <img src={footerLogos} alt="Equal Housing Opportunity | Realtor | MLS" className="h-10 w-auto" />
+            <img src={footerLogos} alt="Equal Housing Opportunity | Realtor | MLS" className="h-30 w-auto" />
           </div>
 
           <div className="border-t border-primary-foreground/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">

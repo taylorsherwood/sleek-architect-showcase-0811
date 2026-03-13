@@ -27,7 +27,7 @@ export const realEstateAgentSchema = {
   "@type": "RealEstateAgent",
   "name": "Echelon Property Group",
   "description": "Austin luxury real estate experts specializing in luxury homes, investment properties, and land opportunities throughout Austin and the Texas Hill Country.",
-  "url": "https://sleek-architect-showcase-0811.lovable.app",
+  "url": "https://www.echelonpropertygroup.com",
   "telephone": "(512) 661-3843",
   "email": "taylor@echelonpropertygroup.com",
   "address": {

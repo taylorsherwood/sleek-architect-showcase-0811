@@ -80,10 +80,10 @@ For investors, Westlake Hills offers opportunities in luxury home renovations, n
   },
   {
     slug: "barton-creek",
-    name: "Barton Creek",
-    heroTitle: "Homes for Sale in Barton Creek Austin",
-    metaTitle: "Barton Creek Austin Homes for Sale | Barton Creek Real Estate Guide",
-    metaDescription: "Discover luxury estates in Barton Creek Austin. World-class golf, gated country club living, and homes from $1.5M to $15M+ in this premier community.",
+    name: "Barton Creek, Lost Creek and Amarra",
+    heroTitle: "Homes for Sale in Barton Creek, Lost Creek and Amarra Austin",
+    metaTitle: "Barton Creek, Lost Creek and Amarra Austin Homes for Sale | Austin Real Estate Guide",
+    metaDescription: "Discover luxury estates in Barton Creek, Lost Creek and Amarra Austin. World-class golf, gated country club living, and homes from $1.5M to $15M+ in this premier community.",
     priceRange: "$1.5M – $15M+",
     image: bartonCreekImg,
     overview: `Barton Creek is Austin's premier master-planned luxury community, renowned for its world-class amenities, stunning natural beauty, and some of the finest estate homes in Central Texas. Spanning thousands of acres along the scenic Barton Creek corridor west of downtown Austin, this gated community offers a lifestyle that rivals the most exclusive neighborhoods in the country.

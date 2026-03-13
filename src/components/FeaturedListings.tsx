@@ -159,15 +159,18 @@ const FeaturedListings = () => {
               );
             })}
           </div>
+        </div>
+      </div>
+    </section>
 
-          {/* Active Listings RealScout Widget */}
-          <div className="mt-16">
-            <p className="text-minimal text-gold mb-4 font-extrabold">ECHELON LISTINGS</p>
-            <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-12">
-              Currently on the Market
-            </h2>
-            <div ref={widgetRef} className="w-full" />
-          </div>
+    <section className="py-16 bg-background">
+      <div className="container mx-auto px-6">
+        <div className="max-w-7xl mx-auto">
+          <p className="text-minimal text-gold mb-4 font-extrabold">ECHELON LISTINGS</p>
+          <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-12">
+            Currently on the Market
+          </h2>
+          <div ref={widgetRef} className="w-full" />
 
           <div className="mt-12 text-center">
             <Link
@@ -180,7 +183,8 @@ const FeaturedListings = () => {
           </div>
         </div>
       </div>
-    </section>);
+    </section>
+  );
 
 };
 

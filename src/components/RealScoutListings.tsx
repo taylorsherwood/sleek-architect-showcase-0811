@@ -28,7 +28,7 @@ const RealScoutListings = () => {
         <div className="max-w-7xl mx-auto">
           <p className="text-minimal text-gold mb-4 font-extrabold">ECHELON LISTINGS</p>
 <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-12">
-            Current Inventory and Recently Closed
+            Current Public Listings<br />and Recently Closed
           </h2>
           <div ref={containerRef} className="w-full" />
         </div>

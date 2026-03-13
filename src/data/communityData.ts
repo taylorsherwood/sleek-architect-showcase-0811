@@ -300,11 +300,11 @@ Rental investment in Travis Heights is supported by the neighborhood's appeal to
     ]
   },
   {
-    slug: "downtown-austin-condos",
-    name: "Downtown Austin Condos",
-    heroTitle: "Downtown Austin Condos for Sale",
-    metaTitle: "Downtown Austin Condos for Sale | Downtown Austin Real Estate Guide",
-    metaDescription: "Explore luxury condos for sale in downtown Austin TX. High-rise living with skyline views, walkable lifestyle, and amenities from $400K to $10M+.",
+    slug: "downtown",
+    name: "Downtown Austin",
+    heroTitle: "Downtown Austin Homes & Condos for Sale",
+    metaTitle: "Downtown Austin Homes for Sale | Downtown Austin Real Estate Guide",
+    metaDescription: "Explore luxury homes and condos for sale in downtown Austin TX. High-rise living, townhomes, skyline views, walkable lifestyle, and properties from $400K to $10M+.",
     priceRange: "$400K – $10M+",
     image: downtownImg,
     overview: `Downtown Austin's luxury condominium market represents the urban pinnacle of Central Texas living. Over the past two decades, Austin's skyline has been transformed by a wave of high-rise residential development that has created a vibrant, walkable urban core rivaling those of much larger cities. From the shores of Lady Bird Lake to the entertainment districts of Rainey Street and Second Street, downtown Austin offers a lifestyle of unparalleled convenience and sophistication.

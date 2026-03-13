@@ -26,9 +26,9 @@ const RealScoutListings = () => {
     <section className="pt-12 pb-14 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
-          <p className="text-minimal text-gold mb-4 font-extrabold">ECHELON LISTINGS</p>
-<h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-12">
-            Current Public Listings<br />and Recently Closed
+          <p className="text-minimal text-gold mb-4 font-extrabold">ECHELON INSIDER</p>
+          <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-12">
+            Recently Closed
           </h2>
           <div ref={containerRef} className="w-full" />
         </div>

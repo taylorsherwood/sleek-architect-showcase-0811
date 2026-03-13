@@ -16,15 +16,15 @@ const CommercialCTA = () => {
           decoding="sync"
           fetchPriority="high" />
         
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/40 to-black/55" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/50 to-black/30" />
       </div>
       <div className="relative container mx-auto px-6">
         <div className="max-w-4xl mx-auto py-16">
-          <p className="text-minimal text-gold mb-4 font-extrabold">COMMERCIAL & INVESTMENT</p>
-          <h2 className="text-5xl font-display font-light text-warm-cream mb-8 md:text-6xl">Austin Commercial Real Estate & 
+          <p className="text-minimal text-gold mb-4 font-extrabold" style={{ textShadow: '0 1px 6px rgba(0,0,0,0.4)' }}>COMMERCIAL & INVESTMENT</p>
+          <h2 className="text-5xl font-display font-light text-warm-cream mb-8 md:text-6xl" style={{ textShadow: '0 2px 20px rgba(0,0,0,0.5), 0 1px 4px rgba(0,0,0,0.4)' }}>Austin Commercial Real Estate & 
 Investment Properties
           </h2>
-          <p className="text-xl text-warm-cream/80 max-w-3xl">
+          <p className="text-xl text-warm-cream/85 max-w-3xl" style={{ textShadow: '0 1px 8px rgba(0,0,0,0.4)' }}>
             Multifamily, retail, office, land development, and income-producing investment
             opportunities across the Austin metro.
           </p>

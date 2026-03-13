@@ -14,7 +14,7 @@ import tarrytown from "@/assets/community-tarrytown.jpg";
 
 const communities = [
   { name: "Barton Creek", image: bartonCreek, slug: "barton-creek" },
-  { name: "Cat Mountain", image: catMountain, slug: "cat-mountain-northwest-hills" },
+  { name: "Cat Mountain", image: catMountain, slug: "cat-mountain-northwest-hills", objectPosition: "70% center" },
   { name: "Downtown", image: downtown, slug: "downtown-austin-condos" },
   { name: "Dripping Springs", image: drippingSprings, slug: "dripping-springs" },
   { name: "Hill Country", image: hillCountry, slug: "texas-hill-country-estates" },
@@ -55,7 +55,8 @@ const CommunitiesPreview = () => {
                 src={community.image}
                 alt={community.name}
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                loading="lazy" />
+                loading="lazy"
+                style={community.objectPosition ? { objectPosition: community.objectPosition } : undefined} />
               
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/20 to-transparent" />
                 <div className="absolute bottom-6 left-6 right-6">

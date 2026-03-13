@@ -13,7 +13,7 @@ import drippingSprings from "@/assets/community-dripping-springs.jpg";
 import tarrytown from "@/assets/community-tarrytown.jpg";
 
 const communities = [
-  { name: "Barton Creek and Lost Creek", image: bartonCreek, slug: "barton-creek" },
+  { name: "Barton Creek &\nLost Creek", image: bartonCreek, slug: "barton-creek" },
   { name: "Cat Mountain & Northwest Hills", image: catMountain, slug: "cat-mountain-northwest-hills", objectPosition: "20% center" },
   { name: "Downtown Austin", image: downtown, slug: "downtown-austin-condos", objectPosition: "40% center" },
   { name: "Dripping Springs", image: drippingSprings, slug: "dripping-springs" },

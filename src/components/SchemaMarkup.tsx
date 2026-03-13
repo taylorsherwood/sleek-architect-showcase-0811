@@ -26,10 +26,20 @@ export const realEstateAgentSchema = {
   "@context": "https://schema.org",
   "@type": "RealEstateAgent",
   "name": "Echelon Property Group",
-  "description": "Austin luxury real estate experts specializing in luxury homes, investment properties, and land opportunities throughout Austin and the Texas Hill Country.",
+  "founder": "Taylor Sherwood",
+  "description": "Austin luxury real estate experts specializing in luxury homes, land development, commercial real estate, and investment property throughout Austin and the Texas Hill Country.",
   "url": "https://www.echelonpropertygroup.com",
   "telephone": "(512) 661-3843",
   "email": "taylor@echelonpropertygroup.com",
+  "serviceType": [
+    "Luxury Real Estate",
+    "Land Brokerage",
+    "Commercial Real Estate",
+    "Investment Property",
+    "Off-Market Homes",
+    "Buyer Representation",
+    "Seller Representation"
+  ],
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "2105 East MLK Blvd Ste 227",
@@ -38,14 +48,14 @@ export const realEstateAgentSchema = {
     "postalCode": "78702",
     "addressCountry": "US"
   },
-  "areaServed": {
-    "@type": "City",
-    "name": "Austin",
-    "containedInPlace": {
-      "@type": "State",
-      "name": "Texas"
-    }
-  },
+  "areaServed": [
+    { "@type": "City", "name": "Austin", "containedInPlace": { "@type": "State", "name": "Texas" } },
+    { "@type": "Place", "name": "Westlake Hills, Texas" },
+    { "@type": "Place", "name": "Barton Creek, Austin" },
+    { "@type": "Place", "name": "Lake Austin" },
+    { "@type": "Place", "name": "Tarrytown, Austin" },
+    { "@type": "Place", "name": "Texas Hill Country" }
+  ],
   "priceRange": "$$$",
   "openingHours": "Mo-Fr 09:00-18:00",
   "sameAs": []

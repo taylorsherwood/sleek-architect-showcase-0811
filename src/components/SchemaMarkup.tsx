@@ -27,7 +27,7 @@ export const realEstateAgentSchema = {
   "@type": "RealEstateAgent",
   "name": "Echelon Property Group",
   "description": "Austin luxury real estate experts specializing in luxury homes, investment properties, and land opportunities throughout Austin and the Texas Hill Country.",
-  "url": "https://sleek-architect-showcase-0811.lovable.app",
+  "url": "https://www.echelonpropertygroup.com",
   "telephone": "(512) 661-3843",
   "email": "taylor@echelonpropertygroup.com",
   "address": {
@@ -57,13 +57,13 @@ export const taylorSherwoodSchema = {
   "name": "Taylor Sherwood",
   "jobTitle": "Certified Luxury Home Marketing Specialist (CLHMS)",
   "description": "Austin luxury real estate advisor specializing in distinctive homes, luxury properties, and land opportunities across Westlake Hills, Barton Creek, Tarrytown, and Lake Austin.",
-  "url": "https://sleek-architect-showcase-0811.lovable.app/about",
+  "url": "https://www.echelonpropertygroup.com/about",
   "telephone": "(512) 661-3843",
   "email": "taylor@echelonpropertygroup.com",
   "worksFor": {
     "@type": "Organization",
     "name": "Echelon Property Group",
-    "url": "https://sleek-architect-showcase-0811.lovable.app"
+    "url": "https://www.echelonpropertygroup.com"
   },
   "address": {
     "@type": "PostalAddress",
@@ -88,7 +88,7 @@ export const localBusinessSchema = {
   "@type": "LocalBusiness",
   "name": "Echelon Property Group",
   "description": "Luxury real estate brokerage in Austin, Texas specializing in luxury homes, investment properties, and land opportunities.",
-  "url": "https://sleek-architect-showcase-0811.lovable.app",
+  "url": "https://www.echelonpropertygroup.com",
   "telephone": "(512) 661-3843",
   "email": "taylor@echelonpropertygroup.com",
   "address": {

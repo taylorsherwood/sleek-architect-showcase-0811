@@ -55,7 +55,7 @@ const Index = () => {
               href="https://taylorsherwood.myflodesk.com/biolink"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block px-8 py-4 bg-[#0C0F24] text-background hover:bg-[#0C0F24]/90 transition-colors duration-300"
+              className="inline-block px-8 py-4 bg-[#0C0F24] text-background hover:bg-gold hover:text-primary-foreground transition-colors duration-300"
             >
               SUBSCRIBE
             </a>

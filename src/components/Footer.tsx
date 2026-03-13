@@ -53,9 +53,6 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="flex items-center mb-6">
-            <img src={footerLogos} alt="Equal Housing Opportunity | Realtor | MLS" className="h-80 w-auto" />
-          </div>
 
           <div className="border-t border-primary-foreground/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-primary-foreground/40 text-sm">

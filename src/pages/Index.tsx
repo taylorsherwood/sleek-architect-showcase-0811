@@ -33,7 +33,7 @@ const Index = () => {
       <ExpertiseSection />
       <CommunitiesPreview />
       <CommercialCTA />
-      <div className="py-8" />
+      <div className="py-8 bg-secondary" />
       <FeaturedListings />
       
       <IntroSection />

@@ -336,8 +336,8 @@ const Buy = () => {
               <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-6">
                 Why Work With Taylor Sherwood
               </h2>
-              <p className="text-muted-foreground leading-relaxed">
-                Choosing the right Austin luxury real estate agent is the single most important decision you'll make in your home search. Here's what sets Taylor apart.
+              <p className="text-muted-foreground leading-relaxed">Choosing the right Austin real estate advisor is the single most important decision you'll make in your home search. Here's what sets Taylor apart:
+
               </p>
             </div>
             <div className="grid md:grid-cols-2 gap-x-16 gap-y-12">

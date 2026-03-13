@@ -11,7 +11,9 @@ import CommercialCTA from "@/components/CommercialCTA";
 import RealScoutListings from "@/components/RealScoutListings";
 import CTASection from "@/components/CTASection";
 import SellerCTA from "@/components/SellerCTA";
+import ExpertiseSection from "@/components/ExpertiseSection";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 
 import SchemaMarkup, { realEstateAgentSchema, localBusinessSchema, taylorSherwoodSchema } from "@/components/SchemaMarkup";
 

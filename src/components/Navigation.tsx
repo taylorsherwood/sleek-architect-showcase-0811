@@ -150,7 +150,7 @@ const Navigation = () => {
             href="https://taylorsherwood.realscout.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="whitespace-nowrap text-minimal tracking-[0.2em] text-primary-foreground bg-[#0C0F24] hover:bg-[#161a33] px-6 py-2.5 min-h-[40px] inline-flex items-center transition-colors duration-300"
+            className="whitespace-nowrap text-minimal tracking-[0.2em] text-primary-foreground bg-[#0C0F24] hover:bg-gold hover:border-gold px-6 py-2.5 min-h-[40px] inline-flex items-center transition-colors duration-300"
           >
             SEARCH HOMES
           </a>

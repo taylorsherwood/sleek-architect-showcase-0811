@@ -14,7 +14,7 @@ import tarrytown from "@/assets/community-tarrytown.jpg";
 
 const communities = [
   { name: "Barton Creek", image: bartonCreek, slug: "barton-creek" },
-  { name: "Cat Mountain", image: catMountain, slug: "cat-mountain-northwest-hills" },
+  { name: "Cat Mountain", image: catMountain, slug: "cat-mountain-northwest-hills", objectPosition: "70% center" },
   { name: "Downtown", image: downtown, slug: "downtown-austin-condos" },
   { name: "Dripping Springs", image: drippingSprings, slug: "dripping-springs" },
   { name: "Hill Country", image: hillCountry, slug: "texas-hill-country-estates" },

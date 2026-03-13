@@ -13,7 +13,7 @@ const CommercialCTA = () => {
           loading="eager"
           decoding="sync" />
         
-        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/25 to-black/45" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/40 to-black/55" />
       </div>
       <div className="relative container mx-auto px-6">
         <div className="max-w-4xl mx-auto py-16">

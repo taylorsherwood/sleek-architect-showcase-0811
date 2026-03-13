@@ -9,15 +9,19 @@ import travisHeights from "@/assets/community-travis-heights.jpg";
 import downtown from "@/assets/community-downtown.jpg";
 import spanishOaks from "@/assets/community-spanish-oaks.jpg";
 import catMountain from "@/assets/community-cat-mountain.jpg";
+import drippingSprings from "@/assets/community-dripping-springs.jpg";
+import tarrytown from "@/assets/community-tarrytown.jpg";
 
 const communities = [
   { name: "Barton Creek", image: bartonCreek, slug: "barton-creek" },
   { name: "Cat Mountain", image: catMountain, slug: "cat-mountain-northwest-hills" },
   { name: "Downtown", image: downtown, slug: "downtown-austin-condos" },
+  { name: "Dripping Springs", image: drippingSprings, slug: "dripping-springs" },
   { name: "Hill Country", image: hillCountry, slug: "texas-hill-country-estates" },
   { name: "Lake Austin", image: lakeAustin, slug: "lake-austin-waterfront" },
   { name: "Rollingwood", image: rollingwood, slug: "rollingwood" },
   { name: "Spanish Oaks", image: spanishOaks, slug: "spanish-oaks" },
+  { name: "Tarrytown", image: tarrytown, slug: "tarrytown" },
   { name: "Travis Heights", image: travisHeights, slug: "travis-heights" },
   { name: "Westlake Hills", image: westlake, slug: "westlake-hills" },
   { name: "Zilker", image: zilker, slug: "zilker-austin" },

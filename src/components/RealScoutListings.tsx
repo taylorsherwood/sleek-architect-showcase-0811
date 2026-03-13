@@ -19,7 +19,7 @@ const RealScoutListings = ({
     const el = document.createElement("realscout-your-listings");
     el.setAttribute("agent-encoded-id", "QWdlbnQtMjg5NDU2");
     el.setAttribute("sort-order", "PRICE_HIGH");
-    el.setAttribute("listing-status", "Sold");
+    el.setAttribute("listing-status", listingStatus);
     el.setAttribute("property-types", "SFR,MF,TC,LAL,MOBILE,OTHER");
     el.setAttribute("include-co-listings", "");
     el.setAttribute("include-seller-listings", "");

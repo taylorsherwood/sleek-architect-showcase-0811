@@ -64,6 +64,7 @@ const FeaturedListings = () => {
   }, []);
 
   return (
+    <>
     <section className="pt-12 pb-8 bg-secondary">
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">

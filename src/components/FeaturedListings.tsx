@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import listing1 from "@/assets/listing-1.jpg";
-import listing2 from "@/assets/listing-2.jpg";
 import listing3 from "@/assets/listing-3.jpg";
+import echelonLogo from "@/assets/echelon-logo-gold-square.png";
 
 const listings = [
 {
@@ -13,20 +13,20 @@ const listings = [
   baths: 4,
   sqft: "4,147",
   link: "https://www.villagovernorshill.com",
-  isRepresentative: false,
   badgeLabel: "Private Listing",
+  isOffMarketCard: false,
 },
 {
-  image: listing2,
-  address: "1203 Westlake Ridge",
-  location: "Westlake Hills, Austin",
-  price: "$7M+ Luxury Home",
-  beds: 6,
-  baths: 7,
-  sqft: "8,400",
-  link: "#",
-  isRepresentative: true,
-  badgeLabel: "Private Market Opportunity",
+  image: "",
+  address: "Access Off-Market Opportunities",
+  location: "",
+  price: "",
+  beds: 0,
+  baths: 0,
+  sqft: "",
+  link: "/off-market-luxury-homes-austin",
+  badgeLabel: "",
+  isOffMarketCard: true,
 },
 {
   image: listing3,
@@ -37,8 +37,8 @@ const listings = [
   baths: 5,
   sqft: "5,800",
   link: "#",
-  isRepresentative: true,
   badgeLabel: "Private Market Opportunity",
+  isOffMarketCard: false,
 }];
 
 
@@ -68,6 +68,30 @@ const FeaturedListings = () => {
 
           <div className="grid md:grid-cols-3 gap-8">
             {listings.map((listing, index) => {
+              if (listing.isOffMarketCard) {
+                return (
+                  <Link
+                    key={index}
+                    to={listing.link}
+                    className="group block">
+                    <div className="relative overflow-hidden mb-6 aspect-[4/3] bg-primary flex items-center justify-center transition-colors duration-500 group-hover:bg-gold">
+                      <img
+                        src={echelonLogo}
+                        alt="Echelon Property Group"
+                        className="w-3/5 h-auto object-contain transition-all duration-500 group-hover:brightness-0 group-hover:invert"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h3 className="text-lg font-display font-medium mb-1 group-hover:text-muted-foreground transition-colors duration-300">
+                      {listing.address}
+                    </h3>
+                    <p className="text-minimal text-muted-foreground mb-4">
+                      Exclusive private listings →
+                    </p>
+                  </Link>
+                );
+              }
+
               const Wrapper = listing.link.startsWith("http") ? "a" : "div";
               const wrapperProps = listing.link.startsWith("http")
                 ? { href: listing.link, target: "_blank" as const, rel: "noopener noreferrer" }

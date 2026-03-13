@@ -56,9 +56,9 @@ const Footer = () => {
           </div>
 
           <div className="border-t border-primary-foreground/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="flex items-center gap-3">
-              <img src={realtorLogo} alt="Realtor" className="h-4 w-4 opacity-70" />
-              <img src={fairHousingLogo} alt="Equal Housing Opportunity" className="h-4 w-4 opacity-70" />
+            <div className="flex items-center gap-4">
+              <img src={realtorLogo} alt="Realtor" className="h-8 w-8" />
+              <img src={fairHousingLogo} alt="Equal Housing Opportunity" className="h-8 w-8" />
             </div>
             <p className="text-primary-foreground/40 text-sm">
               Copyright © {new Date().getFullYear()} Echelon Property Group | eXp Realty LLC

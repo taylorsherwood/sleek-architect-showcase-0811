@@ -1,5 +1,5 @@
+import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import listing1 from "@/assets/listing-1.jpg";
 import listing3 from "@/assets/listing-3.jpg";
 import echelonLogo from "@/assets/echelon-logo-gold-square.png";
 
@@ -43,6 +43,26 @@ const listings = [
 
 
 const FeaturedListings = () => {
+  const widgetRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!widgetRef.current) return;
+    const el = document.createElement("realscout-your-listings");
+    el.setAttribute("agent-encoded-id", "QWdlbnQtMjg5NDU2");
+    el.setAttribute("sort-order", "PRICE_HIGH");
+    el.setAttribute("listing-status", "For Sale,For Rent,In Contract");
+    el.setAttribute("property-types", "SFR,MF,TC,LAL,MOBILE,OTHER");
+    el.setAttribute("include-co-listings", "");
+    el.setAttribute("include-seller-listings", "");
+    widgetRef.current.appendChild(el);
+
+    return () => {
+      if (widgetRef.current && el.parentNode === widgetRef.current) {
+        widgetRef.current.removeChild(el);
+      }
+    };
+  }, []);
+
   return (
     <section className="pt-12 pb-8 bg-background">
       <div className="container mx-auto px-6">
@@ -138,6 +158,15 @@ const FeaturedListings = () => {
                   </Wrapper>
               );
             })}
+          </div>
+
+          {/* Active Listings RealScout Widget */}
+          <div className="mt-16">
+            <p className="text-minimal text-gold mb-4 font-extrabold">ACTIVE LISTINGS</p>
+            <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-12">
+              Currently on the Market
+            </h2>
+            <div ref={widgetRef} className="w-full" />
           </div>
 
           <div className="mt-12 text-center">

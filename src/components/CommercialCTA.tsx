@@ -1,17 +1,20 @@
 import { Link } from "react-router-dom";
-import commercialHero from "@/assets/commercial-hero-austin.jpg";
+
+const commercialHeroSrc = "/images/commercial-hero-austin.jpg";
 
 const CommercialCTA = () => {
   return (
     <section className="relative py-24 overflow-hidden">
       <div className="absolute inset-0">
         <img
-          src={commercialHero}
+          src={commercialHeroSrc}
+          srcSet={`${commercialHeroSrc} 1x, ${commercialHeroSrc} 2x`}
           alt="Austin commercial real estate skyline"
-          className="w-full h-full object-cover"
-          style={{ imageRendering: 'auto', willChange: 'auto' }}
+          className="w-full h-full object-cover object-center"
+          style={{ imageRendering: 'auto' }}
           loading="eager"
-          decoding="sync" />
+          decoding="sync"
+          fetchPriority="high" />
         
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/40 to-black/55" />
       </div>

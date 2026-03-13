@@ -162,7 +162,7 @@ const FeaturedListings = () => {
 
           {/* Active Listings RealScout Widget */}
           <div className="mt-16">
-            <p className="text-minimal text-gold mb-4 font-extrabold">ACTIVE LISTINGS</p>
+            <p className="text-minimal text-gold mb-4 font-extrabold">ECHELON LISTINGS</p>
             <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-12">
               Currently on the Market
             </h2>

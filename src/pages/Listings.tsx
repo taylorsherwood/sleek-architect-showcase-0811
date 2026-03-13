@@ -130,7 +130,7 @@ const Listings = () => {
       <RealScoutListings
         listingStatus="For Sale,For Rent,In Contract"
         heading="CURRENTLY ON THE MARKET"
-        subheading="Active Listings"
+        subheading="Commercial and Residential Listings"
       />
 
       <Footer />

@@ -48,37 +48,37 @@ const Hero = () => {
   return (
     <section className="relative h-screen flex items-end overflow-hidden bg-black">
       {/* Background video — primary hero media */}
-      {!prefersReducedMotion && (
-        <div className="absolute inset-0 pointer-events-none">
+      {!prefersReducedMotion &&
+      <div className="absolute inset-0 pointer-events-none">
           <video
-            ref={videoRef}
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="auto"
-            onCanPlayThrough={handleVideoReady}
-            onError={() => setShowFallback(true)}
-            className={`w-full h-full object-cover transition-opacity duration-500 ${videoReady ? "opacity-100" : "opacity-0"}`}
-          >
+          ref={videoRef}
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          onCanPlayThrough={handleVideoReady}
+          onError={() => setShowFallback(true)}
+          className={`w-full h-full object-cover transition-opacity duration-500 ${videoReady ? "opacity-100" : "opacity-0"}`}>
+          
             <source src="/videos/hero-video.mp4" type="video/mp4" />
           </video>
         </div>
-      )}
-      {showFallback && !videoReady && (
-        <img
-          src={heroFallback}
-          alt="Austin skyline"
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-      )}
+      }
+      {showFallback && !videoReady &&
+      <img
+        src={heroFallback}
+        alt="Austin skyline"
+        className="absolute inset-0 w-full h-full object-cover" />
+
+      }
       
       <div className="absolute inset-0 bg-black/35" />
       
       <div className="relative z-10 container mx-auto px-6 pb-24 md:pb-32">
         <div className="max-w-3xl">
-          <p className="text-minimal text-warm-cream/70 mb-6 reveal">
-            AUSTIN LUXURY REAL ESTATE EXPERTS
+          <p className="text-minimal text-warm-cream/70 mb-6 reveal">AUSTIN REAL ESTATE EXPERTS
+
           </p>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-light text-warm-cream text-architectural mb-8 reveal">
             Driven by Data,

@@ -8,15 +8,24 @@ const RETRY_DELAY = 800;
 const Hero = () => {
   const [showFallback, setShowFallback] = useState(false);
   const [videoReady, setVideoReady] = useState(false);
+  const [videoSrc, setVideoSrc] = useState<string | null>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
 
+  // Lazy-load: set video src after initial render
   useEffect(() => {
     const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
     if (motionQuery.matches) {
       setShowFallback(true);
       return;
     }
+    // Defer video source load to after first paint
+    requestAnimationFrame(() => {
+      setVideoSrc("/videos/hero-video.mp4");
+    });
+  }, []);
 
+  useEffect(() => {
+    if (!videoSrc) return;
     const video = videoRef.current;
     if (!video) {
       setShowFallback(true);
@@ -41,7 +50,6 @@ const Hero = () => {
           setVideoReady(true);
           setShowFallback(false);
         }).catch(() => {
-          // Retry once after a short delay
           setTimeout(() => {
             video.muted = true;
             video.defaultMuted = true;
@@ -78,7 +86,7 @@ const Hero = () => {
       video.removeEventListener('loadeddata', onReady);
     };
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [videoSrc]);
 
   return (
     <section className="relative h-screen flex items-end overflow-hidden bg-black">
@@ -94,11 +102,12 @@ const Hero = () => {
           muted
           loop
           playsInline
-          preload="auto"
+          preload="metadata"
+          poster="/images/hero-poster.jpg"
           className={`hero-bg-video transition-opacity duration-700 ${videoReady ? "opacity-100" : "opacity-0"}`}
           tabIndex={-1}
         >
-          <source src="/videos/hero-video.mp4" type="video/mp4" />
+          {videoSrc && <source src={videoSrc} type="video/mp4" />}
         </video>
       </div>
 

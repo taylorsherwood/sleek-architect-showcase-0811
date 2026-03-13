@@ -93,7 +93,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 reveal-delayed-2">
             <Link
               to="/contact"
-              className="inline-block text-minimal bg-warm-cream text-foreground hover:bg-[#0C0F24] hover:text-primary-foreground px-8 py-4 transition-colors duration-300 text-center">
+              className="inline-block text-minimal bg-warm-cream text-foreground hover:bg-gold hover:text-primary-foreground px-8 py-4 transition-colors duration-300 text-center">
               
               SCHEDULE A CONSULTATION
             </Link>

@@ -5,7 +5,7 @@ import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createFAQSchema } from "@/components/SchemaMarkup";
 import { communityPages } from "@/data/communityData";
 
-const SITE_URL = "https://sleek-architect-showcase-0811.lovable.app";
+const SITE_URL = "https://www.echelonpropertygroup.com";
 
 function createCommunitySchema(community: { name: string; slug: string; metaDescription: string }) {
   return [

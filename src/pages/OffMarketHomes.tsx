@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
+import austinLuxuryNetwork from "@/assets/austin-luxury-network.jpg";
+import clubhouseCommission from "@/assets/clubhouse-commission.png";
+import topAgentNetwork from "@/assets/top-agent-network.webp";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createFAQSchema } from "@/components/SchemaMarkup";

@@ -8,8 +8,8 @@ const PastTransactions = () => {
     <div className="min-h-screen">
       <SEOHead
         title="Past Transactions | Echelon Property Group | Austin Luxury Real Estate"
-        description="View recently closed luxury homes, land, and investment properties in Austin Texas by Echelon Property Group. See our track record of successful transactions."
-      />
+        description="View recently closed luxury homes, land, and investment properties in Austin Texas by Echelon Property Group. See our track record of successful transactions." />
+      
       <Navigation />
       <div className="pt-32 pb-8 bg-background">
         <div className="container mx-auto px-6">
@@ -18,16 +18,16 @@ const PastTransactions = () => {
             <h1 className="text-4xl md:text-6xl font-display font-light text-architectural mb-6">
               Past Transactions
             </h1>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              A selection of recently closed luxury residential, commercial, and investment properties across Austin and the Texas Hill Country.
+            <p className="text-muted-foreground max-w-2xl mx-auto">95% of our transactions are conducted off market and will not show on this site. 
+Privacy is of utmost importance to us.
             </p>
           </div>
         </div>
       </div>
       <RealScoutListings />
       <Footer />
-    </div>
-  );
+    </div>);
+
 };
 
 export default PastTransactions;

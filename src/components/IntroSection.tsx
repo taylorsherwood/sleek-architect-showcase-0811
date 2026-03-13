@@ -38,10 +38,10 @@ const useCountUp = (end: number, duration = 2000, prefix = "", suffix = "") => {
 };
 
 const IntroSection = () => {
-  const stat1 = useCountUp(100, 2000, "$", "M+");
-  const stat2 = useCountUp(11, 1500, "", "+");
-  const stat3 = useCountUp(200, 2000, "", "+");
-  const stat4 = useCountUp(1, 1200, "Top ", "%");
+  const stat1 = useCountUp(100, 3000, "$", "M+");
+  const stat2 = useCountUp(11, 2500, "", "+");
+  const stat3 = useCountUp(200, 3000, "", "+");
+  const stat4 = useCountUp(1, 2000, "Top ", "%");
 
   return (
     <section className="pt-28 pb-12 bg-background">

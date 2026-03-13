@@ -64,9 +64,13 @@ const Footer = () => {
                 Member of the eXp Luxury Division
               </p>
             </div>
-            <p className="text-primary-foreground/40 text-sm">
-              Copyright © {new Date().getFullYear()} Echelon Property Group | eXp Realty LLC
-            </p>
+            <div className="flex items-center gap-3">
+              <p className="text-primary-foreground/40 text-sm">
+                Copyright © {new Date().getFullYear()} Echelon Property Group | eXp Realty LLC
+              </p>
+              <img src={realtorLogo} alt="Realtor" className="h-4 w-4 opacity-70" />
+              <img src={fairHousingLogo} alt="Equal Housing Opportunity" className="h-4 w-4 opacity-70" />
+            </div>
           </div>
         </div>
       </div>

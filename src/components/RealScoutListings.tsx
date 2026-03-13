@@ -1,6 +1,16 @@
 import { useEffect, useRef } from "react";
 
-const RealScoutListings = () => {
+interface RealScoutListingsProps {
+  listingStatus?: string;
+  heading?: string;
+  subheading?: string;
+}
+
+const RealScoutListings = ({
+  listingStatus = "Sold",
+  heading = "ECHELON RESULTS",
+  subheading = "Recently Closed",
+}: RealScoutListingsProps) => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {

@@ -2,80 +2,121 @@ import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import heroFallback from "@/assets/hero-fallback.jpg";
 
-const FALLBACK_TIMEOUT = 3000;
+const FALLBACK_TIMEOUT = 4000;
+const RETRY_DELAY = 800;
 
 const Hero = () => {
   const [showFallback, setShowFallback] = useState(false);
   const [videoReady, setVideoReady] = useState(false);
-  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
     const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
     if (motionQuery.matches) {
-      setPrefersReducedMotion(true);
       setShowFallback(true);
       return;
     }
 
-    const timer = setTimeout(() => {
+    const video = videoRef.current;
+    if (!video) {
+      setShowFallback(true);
+      return;
+    }
+
+    // Safari requires muted to be set programmatically
+    video.muted = true;
+    video.defaultMuted = true;
+    video.setAttribute('muted', '');
+    video.setAttribute('playsinline', '');
+    video.setAttribute('webkit-playsinline', '');
+
+    const fallbackTimer = setTimeout(() => {
       if (!videoReady) setShowFallback(true);
     }, FALLBACK_TIMEOUT);
 
-    const video = videoRef.current;
-    if (video) {
-      video.setAttribute('webkit-playsinline', '');
-      video.muted = true;
-
-      const playPromise = video.play();
-      if (playPromise !== undefined) {
-        playPromise.catch(() => {
-          setShowFallback(true);
+    const attemptPlay = () => {
+      const p = video.play();
+      if (p !== undefined) {
+        p.then(() => {
+          setVideoReady(true);
+          setShowFallback(false);
+        }).catch(() => {
+          // Retry once after a short delay
+          setTimeout(() => {
+            video.muted = true;
+            video.defaultMuted = true;
+            const retry = video.play();
+            if (retry !== undefined) {
+              retry.then(() => {
+                setVideoReady(true);
+                setShowFallback(false);
+              }).catch(() => {
+                setShowFallback(true);
+              });
+            } else {
+              setShowFallback(true);
+            }
+          }, RETRY_DELAY);
         });
       } else {
         setShowFallback(true);
       }
+    };
+
+    const onReady = () => attemptPlay();
+
+    if (video.readyState >= 2) {
+      attemptPlay();
+    } else {
+      video.addEventListener('loadeddata', onReady);
     }
 
-    return () => clearTimeout(timer);
-  }, [videoReady]);
+    video.addEventListener('error', () => setShowFallback(true));
 
-  const handleVideoReady = () => {
-    setVideoReady(true);
-    setShowFallback(false);
-  };
+    return () => {
+      clearTimeout(fallbackTimer);
+      video.removeEventListener('loadeddata', onReady);
+    };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <section className="relative h-screen flex items-end overflow-hidden bg-black">
-      {/* Background video — primary hero media */}
-      {!prefersReducedMotion &&
-      <div className="absolute inset-0 pointer-events-none">
-          <video
+      {/* Decorative background video — not interactive */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 pointer-events-none select-none overflow-hidden"
+        style={{ zIndex: 0 }}
+      >
+        <video
           ref={videoRef}
           autoPlay
           muted
           loop
           playsInline
           preload="auto"
-          onCanPlayThrough={handleVideoReady}
-          onError={() => setShowFallback(true)}
-          className={`w-full h-full object-cover transition-opacity duration-500 ${videoReady ? "opacity-100" : "opacity-0"}`}>
-          
-            <source src="/videos/hero-video.mp4" type="video/mp4" />
-          </video>
-        </div>
-      }
-      {showFallback && !videoReady &&
-      <img
-        src={heroFallback}
-        alt="Austin skyline"
-        className="absolute inset-0 w-full h-full object-cover" />
+          className={`hero-bg-video transition-opacity duration-700 ${videoReady ? "opacity-100" : "opacity-0"}`}
+          tabIndex={-1}
+        >
+          <source src="/videos/hero-video.mp4" type="video/mp4" />
+        </video>
+      </div>
 
-      }
-      
-      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/15" />
-      
-      <div className="relative z-10 container mx-auto px-6 pb-24 md:pb-32">
+      {/* Fallback image */}
+      {showFallback && !videoReady && (
+        <img
+          src={heroFallback}
+          alt="Austin skyline"
+          className="absolute inset-0 w-full h-full object-cover"
+          style={{ zIndex: 0 }}
+        />
+      )}
+
+      {/* Gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/15" style={{ zIndex: 1 }} />
+
+      {/* Content */}
+      <div className="relative container mx-auto px-6 pb-24 md:pb-32" style={{ zIndex: 2 }}>
         <div className="max-w-3xl">
           <p className="text-minimal text-warm-cream/80 mb-6 reveal" style={{ textShadow: '0 1px 6px rgba(0,0,0,0.4)' }}>AUSTIN REAL ESTATE EXPERTS</p>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-light text-warm-cream text-architectural mb-8 reveal" style={{ textShadow: '0 2px 20px rgba(0,0,0,0.5), 0 1px 4px rgba(0,0,0,0.4)' }}>
@@ -91,21 +132,21 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 reveal-delayed-2">
             <Link
               to="/contact"
-              className="inline-block text-minimal bg-warm-cream text-foreground hover:bg-gold hover:text-primary-foreground px-8 py-4 transition-colors duration-300 text-center">
-              
+              className="inline-block text-minimal bg-warm-cream text-foreground hover:bg-gold hover:text-primary-foreground px-8 py-4 transition-colors duration-300 text-center"
+            >
               SCHEDULE A CONSULTATION
             </Link>
             <Link
               to="/listings"
-              className="inline-block text-minimal border border-warm-cream/50 text-warm-cream hover:bg-warm-cream/10 px-8 py-4 transition-colors duration-300 text-center">
-              
+              className="inline-block text-minimal border border-warm-cream/50 text-warm-cream hover:bg-warm-cream/10 px-8 py-4 transition-colors duration-300 text-center"
+            >
               VIEW LISTINGS
             </Link>
           </div>
         </div>
       </div>
-    </section>);
-
+    </section>
+  );
 };
 
 export default Hero;

@@ -438,7 +438,7 @@ For investors, the Hill Country offers multiple strategies. Land banking (acquir
   },
   {
     slug: "zilker-austin",
-    name: "Zilker",
+    name: "Zilker & Barton Hills",
     heroTitle: "Living Near Zilker Park in Austin",
     metaTitle: "Zilker Austin Homes for Sale | Zilker Real Estate Guide",
     metaDescription: "Explore homes for sale in Zilker Austin including modern homes, luxury properties, and investment opportunities near Barton Springs and downtown.",

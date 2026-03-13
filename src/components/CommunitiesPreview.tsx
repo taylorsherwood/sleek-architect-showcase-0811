@@ -4,7 +4,7 @@ import westlake from "@/assets/community-westlake.jpg";
 import lakeAustin from "@/assets/community-lake-austin.jpg";
 import hillCountry from "@/assets/community-hill-country.jpg";
 import rollingwood from "@/assets/community-rollingwood.jpg";
-import zilker from "@/assets/community-zilker.jpg";
+import zilker from "@/assets/community-zilker-barton-springs.jpg";
 import travisHeights from "@/assets/community-travis-heights.jpg";
 import downtown from "@/assets/community-downtown.jpg";
 

@@ -64,7 +64,7 @@ const Navigation = () => {
           <img
             src={logo}
             alt="Echelon Property Group"
-            className="h-64 md:h-72 w-auto border-0 object-contain"
+            className="h-28 md:h-32 w-auto border-0 object-contain"
           />
         </Link>
 

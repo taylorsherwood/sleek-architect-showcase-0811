@@ -16,7 +16,7 @@ const CommercialCTA = () => {
           decoding="sync"
           fetchPriority="high" />
         
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/50 to-black/30" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-black/40" />
       </div>
       <div className="relative container mx-auto px-6">
         <div className="max-w-4xl mx-auto py-16">

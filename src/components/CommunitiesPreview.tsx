@@ -55,7 +55,8 @@ const CommunitiesPreview = () => {
                 src={community.image}
                 alt={community.name}
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                loading="lazy" />
+                loading="lazy"
+                style={community.objectPosition ? { objectPosition: community.objectPosition } : undefined} />
               
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/20 to-transparent" />
                 <div className="absolute bottom-6 left-6 right-6">

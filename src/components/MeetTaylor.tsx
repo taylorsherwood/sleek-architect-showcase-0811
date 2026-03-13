@@ -24,7 +24,7 @@ const MeetTaylor = () => {
             </div>
             
             <div>
-              <h4 className="text-minimal text-gold mb-4">{"\n\n"}AUSTIN LUXURY REAL ESTATE SPECIALIST</h4>
+              <h4 className="text-minimal text-gold mb-4 font-extrabold">{"\n\n"}AUSTIN LUXURY REAL ESTATE SPECIALIST</h4>
               <p className="text-muted-foreground leading-relaxed max-w-md text-xl mb-6">
                 {"\n\n"}Taylor Sherwood is an Austin-based real estate advisor specializing in distinctive homes, luxury properties, and land opportunities. Known for his attention to detail and thoughtful approach to marketing, he helps clients navigate complex transactions with confidence while showcasing properties in their best possible light.
               </p>
@@ -42,8 +42,8 @@ const MeetTaylor = () => {
             </p>
             <Link
               to="/contact"
-              className="inline-block border border-primary text-primary px-8 py-3 text-minimal tracking-widest hover:bg-primary hover:text-primary-foreground transition-colors duration-300"
-            >
+              className="inline-block border border-primary text-primary px-8 py-3 text-minimal tracking-widest hover:bg-primary hover:text-primary-foreground transition-colors duration-300">
+              
               SCHEDULE A PRIVATE CONSULTATION
             </Link>
             <div className="mt-6 mb-0">

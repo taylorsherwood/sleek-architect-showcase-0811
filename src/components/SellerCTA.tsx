@@ -7,7 +7,7 @@ const SellerCTA = () => {
         <div className="max-w-4xl mx-auto">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
-              <p className="text-minimal text-gold mb-4">FOR HOMEOWNERS</p>
+              <p className="text-minimal text-gold mb-4 font-extrabold">FOR HOMEOWNERS</p>
               <h2 className="text-3xl md:text-5xl font-display font-light text-architectural mb-6">Curious What Your Austin Property Is Worth?
 
               </h2>
@@ -19,8 +19,8 @@ const SellerCTA = () => {
                 href="https://consumer.hifello.com/lp/6903b93b826830c15da4d0f9"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block text-minimal bg-primary text-primary-foreground hover:bg-gold hover:text-primary-foreground px-10 py-4 transition-colors duration-300"
-              >
+                className="inline-block text-minimal bg-primary text-primary-foreground hover:bg-primary/90 px-10 py-4 transition-colors duration-300">
+                
                 GET YOUR FREE VALUATION REPORT
               </a>
             </div>

@@ -185,7 +185,7 @@ const FeaturedListings = () => {
           <div className="mt-12 text-center">
             <Link
               to="/past-transactions"
-              className="inline-block px-8 py-4 border border-border text-minimal text-muted-foreground hover:text-foreground hover:border-foreground/30 transition-all duration-300"
+              className="inline-block px-8 py-4 border border-border text-minimal text-muted-foreground hover:text-primary-foreground hover:bg-gold hover:border-gold transition-all duration-300"
             >
               SEE PAST TRANSACTIONS →
             </Link>

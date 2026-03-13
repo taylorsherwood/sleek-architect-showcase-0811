@@ -68,7 +68,7 @@ const FeaturedListings = () => {
     <section className="pt-12 pb-8 bg-secondary">
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-16">
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-16 -mt-8">
             <div>
               <p className="text-minimal text-gold mb-4 font-extrabold">FEATURED LISTINGS</p>
               <h2 className="text-4xl md:text-5xl font-display font-light text-architectural">

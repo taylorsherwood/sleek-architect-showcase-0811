@@ -67,7 +67,7 @@ const IntroSection = () => {
             <div className="grid grid-cols-2 gap-6">
               <div ref={stat1.ref} className="bg-secondary p-8 text-center">
                 <p className="text-4xl font-display font-light text-foreground mb-2">{stat1.display}</p>
-                <p className="text-minimal text-muted-foreground">CAREER SALES VOLUME</p>
+                <p className="text-minimal text-muted-foreground">IN CAREER SALES VOLUME</p>
               </div>
               <div ref={stat2.ref} className="bg-secondary p-8 text-center">
                 <p className="text-4xl font-display font-light text-foreground mb-2">{stat2.display}</p>

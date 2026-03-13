@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { Instagram } from "lucide-react";
-import realtorLogo from "@/assets/realtor-logo.png";
-import fairHousingLogo from "@/assets/fair-housing-logo.png";
+import footerLogos from "@/assets/footer-logos.png";
 
 const Footer = () => {
   return (
@@ -55,9 +54,8 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="flex items-center gap-4 mb-6">
-            <img src={realtorLogo} alt="Realtor" className="h-12 w-12 brightness-200" />
-            <img src={fairHousingLogo} alt="Equal Housing Opportunity" className="h-12 w-12 brightness-200" />
+          <div className="flex items-center mb-6">
+            <img src={footerLogos} alt="Equal Housing Opportunity | Realtor | MLS" className="h-10 w-auto" />
           </div>
 
           <div className="border-t border-primary-foreground/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">

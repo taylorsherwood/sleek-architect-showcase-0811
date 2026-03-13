@@ -122,6 +122,8 @@ const Listings = () => {
         </div>
       </section>
 
+      <RealScoutListings />
+
       <Footer />
     </div>
   );

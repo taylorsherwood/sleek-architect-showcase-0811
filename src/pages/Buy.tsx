@@ -80,7 +80,7 @@ const whyTaylor = [
 {
   title: "Off-Market Access",
   description:
-  "Many of Austin's finest properties never hit the public market. Through our private network, brokerage relationships, and eXp Luxury division, we surface exclusive off-market opportunities in Westlake, Barton Creek, Lake Austin, and beyond."
+  "Many of Austin's finest properties never hit the public market. Through our private network, brokerage relationships, and eXp Luxury division, we surface exclusive off-market opportunities in Westlake, Rollingwood, Barton Creek, Lake Austin, and beyond."
 },
 {
   title: "Concierge-Level Service",

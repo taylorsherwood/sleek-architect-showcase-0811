@@ -492,5 +492,91 @@ For investors, Zilker offers opportunities in renovation projects, new construct
       { question: "Is Zilker a good neighborhood to invest in?", answer: "Yes. Zilker has demonstrated consistent appreciation of 8-12% annually over the past two decades. Its irreplaceable location near Zilker Park and downtown Austin, combined with limited inventory, supports strong long-term investment potential." },
       { question: "What events are held in Zilker Park?", answer: "Zilker Park hosts major events including the Austin City Limits Music Festival, Trail of Lights, Zilker Kite Festival, Blues on the Green, and free summer musicals at the Hillside Theater. The park is active year-round with community gatherings." }
     ]
+  },
+  {
+    slug: "spanish-oaks",
+    name: "Spanish Oaks",
+    heroTitle: "Homes for Sale in Spanish Oaks Austin",
+    metaTitle: "Spanish Oaks Austin Homes for Sale | Luxury Real Estate in Spanish Oaks",
+    metaDescription: "Explore homes for sale in Spanish Oaks, one of Austin's most exclusive gated communities featuring luxury estates, golf course homes, and Hill Country views.",
+    priceRange: "$3M – $15M+",
+    image: spanishOaksImg,
+    overview: `Spanish Oaks is widely considered one of the most prestigious luxury communities in the Austin area. Located just west of downtown Austin in the scenic Texas Hill Country, this private gated enclave offers exceptional custom estates, sweeping hill country views, and a level of privacy rarely found so close to the city.
+
+Developed around the acclaimed Spanish Oaks Golf Club, the community blends natural beauty with refined architecture. Many homes sit on large estate lots surrounded by oak trees, greenbelt land, and rolling hills.
+
+For buyers seeking privacy, security, and luxury living near Austin, Spanish Oaks consistently ranks among the region's most desirable neighborhoods.`,
+    lifestyle: `Residents of Spanish Oaks enjoy a peaceful, private environment while remaining just minutes from the energy of Austin. The community is known for its quiet streets, scenic landscapes, and carefully maintained surroundings.
+
+The centerpiece of the neighborhood is the private Spanish Oaks Golf Club, a nationally recognized course offering a resort-style experience for members.
+
+Additional amenities include miles of hiking and nature trails, a private fish camp on Barton Creek, 24-hour guard-gated security, a resort-style pool pavilion, and community parks and playgrounds.
+
+The neighborhood atmosphere feels secluded and tranquil while still providing convenient access to downtown Austin, Lake Travis, and the Hill Country.`,
+    marketInsights: `Homes in Spanish Oaks typically range from approximately $3 million to over $15 million depending on lot size, views, and architectural design.
+
+Properties often feature custom architecture, expansive hill country views, luxury outdoor living spaces, large estate lots, and modern and transitional luxury designs.
+
+Many residences are custom built by some of Austin's top luxury builders, making each home unique. The community's limited inventory and gated exclusivity create a consistently competitive market for buyers, with strong appreciation for homeowners.`,
+    amenitiesAndSchools: `Spanish Oaks residents enjoy convenient access to some of Austin's best destinations including Bee Cave Hill Country Galleria, Lake Travis boating and marinas, Barton Creek Resort and Spa, and downtown Austin dining and entertainment. Major employers, tech campuses, and Austin-Bergstrom International Airport are all within a comfortable driving distance.
+
+Spanish Oaks is served by the Lake Travis Independent School District, one of the top-performing school districts in the Austin area. Nearby schools include Lake Pointe Elementary School, Bee Cave Middle School, and Lake Travis High School. The district consistently earns top rankings for academic achievement, college readiness, and extracurricular programs.`,
+    investmentPotential: `Spanish Oaks represents one of the strongest luxury real estate investments in the greater Austin market. The community's gated exclusivity, world-class golf amenities, and limited inventory create a supply-constrained environment that supports long-term appreciation.
+
+The ongoing expansion of Austin's technology sector and the influx of high-net-worth professionals from coastal markets continue to drive demand for ultra-luxury properties in communities like Spanish Oaks. Properties with golf course frontage, exceptional views, or unique architectural features command substantial premiums and tend to appreciate faster than the broader market.
+
+For investors, the combination of prestige, privacy, and proximity to Austin's booming economy makes Spanish Oaks a blue-chip real estate holding with strong long-term upside.`,
+    relatedCommunities: ["barton-creek", "westlake-hills", "lake-austin-waterfront", "texas-hill-country-estates"],
+    faqs: [
+      { question: "Is Spanish Oaks a gated community?", answer: "Yes. Spanish Oaks is a private, guard-gated luxury community with 24-hour security, providing exceptional privacy and exclusivity for residents." },
+      { question: "What is the Spanish Oaks Golf Club?", answer: "The Spanish Oaks Golf Club is a nationally recognized private golf course at the heart of the community, offering a resort-style experience with championship-level play and exclusive member amenities." },
+      { question: "What are home prices in Spanish Oaks?", answer: "Homes in Spanish Oaks typically range from $3 million to over $15 million, depending on lot size, views, and architectural design. Most residences are custom-built luxury estates." },
+      { question: "What school district serves Spanish Oaks?", answer: "Spanish Oaks is served by the Lake Travis Independent School District, including Lake Pointe Elementary, Bee Cave Middle School, and Lake Travis High School — all top-performing campuses." },
+      { question: "How far is Spanish Oaks from downtown Austin?", answer: "Spanish Oaks is approximately 20 to 25 minutes from downtown Austin, offering a secluded Hill Country setting with convenient urban access." },
+      { question: "What amenities are available in Spanish Oaks?", answer: "Residents enjoy a private golf club, hiking and nature trails, a fish camp on Barton Creek, resort-style pool pavilion, community parks, and 24-hour gated security." }
+    ]
+  },
+  {
+    slug: "cat-mountain-northwest-hills",
+    name: "Cat Mountain & Northwest Hills",
+    heroTitle: "Homes for Sale in Cat Mountain & Northwest Hills Austin",
+    metaTitle: "Cat Mountain & Northwest Hills Homes for Sale | Austin Real Estate",
+    metaDescription: "Discover homes for sale in Cat Mountain and Northwest Hills, two of Austin's most scenic hillside neighborhoods offering canyon views and proximity to downtown.",
+    priceRange: "$900K – $4M+",
+    image: catMountainImg,
+    overview: `Cat Mountain and Northwest Hills are two of Austin's most established hillside neighborhoods, known for their sweeping canyon views, mature oak trees, and peaceful residential character.
+
+Located just minutes northwest of downtown Austin, the area offers a rare combination of natural beauty and central convenience. Homes are often perched on elevated lots that capture panoramic views of the surrounding hills and greenbelts.
+
+The neighborhood's quiet streets, strong community feel, and proximity to top amenities make it one of the most sought-after residential areas in Central Austin.`,
+    lifestyle: `Living in Northwest Hills offers a balance between nature and city convenience. Residents enjoy easy access to outdoor recreation, neighborhood parks, and scenic hiking trails while still being a short drive from Austin's urban core.
+
+The nearby Bright Leaf Preserve, Bull Creek Preserve, and Lake Austin provide excellent opportunities for hiking, biking, and outdoor exploration.
+
+Local favorites nearby include Russell's Bakery, Chez Zee American Bistro, Biderman's Deli, and Bull Creek District Park. The area also offers convenient access to downtown Austin, The Domain, and major tech employers.`,
+    marketInsights: `Homes in Cat Mountain and Northwest Hills typically range from approximately $900,000 to over $4 million depending on lot size, views, and recent renovations.
+
+The area features a wide range of architectural styles including mid-century modern homes, renovated hillside estates, contemporary luxury residences, and classic Texas ranch-style homes.
+
+Many properties include large lots, mature landscaping, and dramatic canyon or skyline views. The neighborhood's central location and strong school district create consistent demand from families and professionals.`,
+    amenitiesAndSchools: `Northwest Hills is served by highly regarded schools within the Austin Independent School District. Nearby schools include Doss Elementary School, Murchison Middle School, and Anderson High School. Anderson High School is consistently ranked among the top public high schools in Austin.
+
+The neighborhood offers convenient access to a variety of shopping, dining, and recreational amenities. The Arboretum and The Domain are nearby, providing upscale retail and dining options. Whole Foods, Central Market, and specialty grocers serve the community's needs.
+
+Outdoor recreation is central to the Northwest Hills lifestyle. Bull Creek District Park, Bright Leaf Preserve, and the extensive greenbelt system provide miles of trails for hiking, mountain biking, and nature observation. Lake Austin is accessible within a short drive.`,
+    investmentPotential: `Cat Mountain and Northwest Hills represent strong long-term real estate investments in Central Austin. The neighborhoods' combination of central location, excellent schools, and natural beauty creates sustained demand from families and professionals.
+
+The area has demonstrated consistent appreciation over the past decade, outperforming many other Central Austin neighborhoods. The diversity of housing stock — from mid-century homes ripe for renovation to luxury hillside estates — provides opportunities for buyers at multiple price points.
+
+Austin's continued growth as a technology hub directly benefits these neighborhoods, as their central location and proximity to major employers including Apple, Google, and Meta make them highly desirable for relocating professionals. Properties with exceptional views or large lots command premiums and tend to hold value well during market fluctuations.`,
+    relatedCommunities: ["westlake-hills", "tarrytown", "rollingwood", "zilker-austin"],
+    faqs: [
+      { question: "What is the average home price in Cat Mountain Austin?", answer: "Homes in Cat Mountain and Northwest Hills range from approximately $900,000 to over $4 million, depending on lot size, views, and renovations. Properties with canyon views or large lots command the highest premiums." },
+      { question: "What school district serves Northwest Hills?", answer: "Northwest Hills is served by Austin Independent School District. Nearby schools include Doss Elementary, Murchison Middle School, and Anderson High School — all highly regarded campuses." },
+      { question: "How far is Northwest Hills from downtown Austin?", answer: "Northwest Hills is approximately 10 to 15 minutes from downtown Austin via MoPac Expressway, offering central convenience with a residential, nature-surrounded atmosphere." },
+      { question: "What outdoor activities are near Cat Mountain?", answer: "Residents enjoy Bull Creek District Park, Bright Leaf Preserve, extensive greenbelt trails, and nearby Lake Austin access for hiking, biking, swimming, and boating." },
+      { question: "Is Northwest Hills a good neighborhood for families?", answer: "Yes. Northwest Hills is one of Austin's most popular family neighborhoods, with top-rated AISD schools, safe tree-lined streets, community parks, and convenient access to amenities." },
+      { question: "What architectural styles are found in Northwest Hills?", answer: "The area features a mix of mid-century modern homes, renovated hillside estates, contemporary luxury residences, and classic Texas ranch-style homes, reflecting its decades of residential development." }
+    ]
   }
 ];

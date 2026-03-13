@@ -55,21 +55,21 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="border-t border-primary-foreground/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-2">
-            <div>
+          <div className="border-t border-primary-foreground/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div className="flex items-center gap-3">
+              <img src={realtorLogo} alt="Realtor" className="h-4 w-4 opacity-70" />
+              <img src={fairHousingLogo} alt="Equal Housing Opportunity" className="h-4 w-4 opacity-70" />
+            </div>
+            <p className="text-primary-foreground/40 text-sm">
+              Copyright © {new Date().getFullYear()} Echelon Property Group | eXp Realty LLC
+            </p>
+            <div className="md:text-right">
               <p className="text-primary-foreground/40 text-sm">
                 Brokered by eXp Realty | Austin Luxury Real Estate
               </p>
               <p className="text-primary-foreground/30 text-xs mt-1">
                 Member of the eXp Luxury Division
               </p>
-            </div>
-            <div className="flex items-center gap-3">
-              <p className="text-primary-foreground/40 text-sm">
-                Copyright © {new Date().getFullYear()} Echelon Property Group | eXp Realty LLC
-              </p>
-              <img src={realtorLogo} alt="Realtor" className="h-4 w-4 opacity-70" />
-              <img src={fairHousingLogo} alt="Equal Housing Opportunity" className="h-4 w-4 opacity-70" />
             </div>
           </div>
         </div>

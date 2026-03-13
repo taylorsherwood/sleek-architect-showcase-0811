@@ -63,7 +63,7 @@ export const taylorSherwoodSchema = {
   "worksFor": {
     "@type": "Organization",
     "name": "Echelon Property Group",
-    "url": "https://sleek-architect-showcase-0811.lovable.app"
+    "url": "https://www.echelonpropertygroup.com"
   },
   "address": {
     "@type": "PostalAddress",

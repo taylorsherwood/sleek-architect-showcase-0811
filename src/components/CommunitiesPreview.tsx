@@ -60,7 +60,7 @@ const CommunitiesPreview = () => {
               
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/20 to-transparent" />
                 <div className="absolute bottom-6 left-6 right-6">
-                  <h3 className="text-warm-cream font-display text-xl md:text-2xl">
+                  <h3 className="text-warm-cream font-display text-xl md:text-2xl whitespace-pre-line">
                     {community.name}
                   </h3>
                 </div>

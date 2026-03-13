@@ -13,19 +13,19 @@ import drippingSprings from "@/assets/community-dripping-springs.jpg";
 import tarrytown from "@/assets/community-tarrytown.jpg";
 
 const communities = [
-  { name: "Barton Creek, \nLost Creek and Amarra", image: bartonCreek, slug: "barton-creek" },
-  { name: "Cat Mountain & Northwest Hills", image: catMountain, slug: "cat-mountain-northwest-hills", objectPosition: "20% center" },
-  { name: "Downtown Austin", image: downtown, slug: "downtown-austin-condos", objectPosition: "40% center" },
-  { name: "Dripping Springs", image: drippingSprings, slug: "dripping-springs" },
-  { name: "Hill Country", image: hillCountry, slug: "texas-hill-country-estates" },
-  { name: "Lake Austin", image: lakeAustin, slug: "lake-austin-waterfront" },
-  { name: "Rollingwood", image: rollingwood, slug: "rollingwood" },
-  { name: "Spanish Oaks", image: spanishOaks, slug: "spanish-oaks" },
-  { name: "Tarrytown", image: tarrytown, slug: "tarrytown" },
-  { name: "Travis Heights", image: travisHeights, slug: "travis-heights" },
-  { name: "Westlake Hills", image: westlake, slug: "westlake-hills" },
-  { name: "Zilker & Barton Hills", image: zilker, slug: "zilker-austin" },
-];
+{ name: "Barton Creek, \nLost Creek and Amarra", image: bartonCreek, slug: "barton-creek" },
+{ name: "Cat Mountain & Northwest Hills", image: catMountain, slug: "cat-mountain-northwest-hills", objectPosition: "20% center" },
+{ name: "Downtown Austin", image: downtown, slug: "downtown-austin-condos", objectPosition: "40% center" },
+{ name: "Dripping Springs", image: drippingSprings, slug: "dripping-springs" },
+{ name: "Hill Country", image: hillCountry, slug: "texas-hill-country-estates" },
+{ name: "Lake Austin", image: lakeAustin, slug: "lake-austin-waterfront" },
+{ name: "Rollingwood", image: rollingwood, slug: "rollingwood" },
+{ name: "Spanish Oaks", image: spanishOaks, slug: "spanish-oaks" },
+{ name: "Tarrytown", image: tarrytown, slug: "tarrytown" },
+{ name: "Travis Heights", image: travisHeights, slug: "travis-heights" },
+{ name: "Westlake Hills", image: westlake, slug: "westlake-hills" },
+{ name: "Zilker & Barton Hills", image: zilker, slug: "zilker-austin" }];
+
 
 
 const CommunitiesPreview = () => {
@@ -38,9 +38,9 @@ const CommunitiesPreview = () => {
             <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-6">Explore Austin's Premier Luxury Neighborhoods
 
             </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              From waterfront estates on Lake Austin to sprawling Hill Country ranches, 
-              we know every corner of Austin's luxury real estate market.
+            <p className="text-muted-foreground max-w-2xl mx-auto">From waterfront estates on Lake Austin to sprawling Hill Country ranches, we know every corner of Austin's real estate market.
+
+
             </p>
           </div>
 

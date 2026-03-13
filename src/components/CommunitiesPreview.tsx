@@ -13,7 +13,7 @@ import drippingSprings from "@/assets/community-dripping-springs.jpg";
 import tarrytown from "@/assets/community-tarrytown.jpg";
 
 const communities = [
-  { name: "Barton Creek and Lost Creek", image: bartonCreek, slug: "barton-creek" },
+  { name: "Barton Creek & \nLost Creek", image: bartonCreek, slug: "barton-creek" },
   { name: "Cat Mountain & Northwest Hills", image: catMountain, slug: "cat-mountain-northwest-hills", objectPosition: "20% center" },
   { name: "Downtown Austin", image: downtown, slug: "downtown-austin-condos", objectPosition: "40% center" },
   { name: "Dripping Springs", image: drippingSprings, slug: "dripping-springs" },
@@ -60,7 +60,7 @@ const CommunitiesPreview = () => {
               
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/20 to-transparent" />
                 <div className="absolute bottom-6 left-6 right-6">
-                  <h3 className="text-warm-cream font-display text-xl md:text-2xl">
+                  <h3 className="text-warm-cream font-display text-xl md:text-2xl whitespace-pre-line">
                     {community.name}
                   </h3>
                 </div>

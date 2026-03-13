@@ -570,14 +570,15 @@ Outdoor recreation is central to the Northwest Hills lifestyle. Bull Creek Distr
 The area has demonstrated consistent appreciation over the past decade, outperforming many other Central Austin neighborhoods. The diversity of housing stock — from mid-century homes ripe for renovation to luxury hillside estates — provides opportunities for buyers at multiple price points.
 
 Austin's continued growth as a technology hub directly benefits these neighborhoods, as their central location and proximity to major employers including Apple, Google, and Meta make them highly desirable for relocating professionals. Properties with exceptional views or large lots command premiums and tend to hold value well during market fluctuations.`,
-    relatedCommunities: ["westlake-hills", "tarrytown", "rollingwood", "zilker-austin"],
+    relatedCommunities: ["tarrytown", "westlake-hills", "rollingwood", "lake-austin-waterfront"],
     faqs: [
-      { question: "What is the average home price in Cat Mountain Austin?", answer: "Homes in Cat Mountain and Northwest Hills range from approximately $900,000 to over $4 million, depending on lot size, views, and renovations. Properties with canyon views or large lots command the highest premiums." },
-      { question: "What school district serves Northwest Hills?", answer: "Northwest Hills is served by Austin Independent School District. Nearby schools include Doss Elementary, Murchison Middle School, and Anderson High School — all highly regarded campuses." },
-      { question: "How far is Northwest Hills from downtown Austin?", answer: "Northwest Hills is approximately 10 to 15 minutes from downtown Austin via MoPac Expressway, offering central convenience with a residential, nature-surrounded atmosphere." },
-      { question: "What outdoor activities are near Cat Mountain?", answer: "Residents enjoy Bull Creek District Park, Bright Leaf Preserve, extensive greenbelt trails, and nearby Lake Austin access for hiking, biking, swimming, and boating." },
-      { question: "Is Northwest Hills a good neighborhood for families?", answer: "Yes. Northwest Hills is one of Austin's most popular family neighborhoods, with top-rated AISD schools, safe tree-lined streets, community parks, and convenient access to amenities." },
-      { question: "What architectural styles are found in Northwest Hills?", answer: "The area features a mix of mid-century modern homes, renovated hillside estates, contemporary luxury residences, and classic Texas ranch-style homes, reflecting its decades of residential development." }
+      { question: "Where are Cat Mountain and Northwest Hills located?", answer: "Cat Mountain and Northwest Hills are established hillside neighborhoods located in northwest Austin, just a short drive from downtown Austin and The Domain." },
+      { question: "What are Cat Mountain and Northwest Hills known for?", answer: "These neighborhoods are known for elevated homes with canyon views, quiet residential streets, mature oak trees and natural landscapes, and proximity to downtown Austin. Many homes sit on hillsides overlooking greenbelts and the surrounding Texas Hill Country." },
+      { question: "How much do homes cost in Northwest Hills?", answer: "Homes in Northwest Hills and Cat Mountain generally range from approximately $900,000 to over $4 million, depending on lot size, views, and renovations." },
+      { question: "Are Cat Mountain homes on hillsides?", answer: "Yes. Many homes in Cat Mountain are built on elevated lots, offering panoramic canyon views and dramatic hillside architecture." },
+      { question: "What schools serve Northwest Hills?", answer: "Northwest Hills is served by Austin Independent School District (AISD). Nearby schools include Doss Elementary School, Murchison Middle School, and Anderson High School." },
+      { question: "How far is Northwest Hills from downtown Austin?", answer: "Northwest Hills is typically 15–20 minutes from downtown Austin, depending on traffic." },
+      { question: "What outdoor recreation is nearby?", answer: "Residents enjoy quick access to several outdoor destinations including Bull Creek District Park, Bright Leaf Preserve, Lake Austin, and hiking and biking trails throughout the area." }
     ]
   }
 ];

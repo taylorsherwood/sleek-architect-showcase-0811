@@ -185,6 +185,7 @@ const FeaturedListings = () => {
         </div>
       </div>
     </section>
+    </>
   );
 
 };

@@ -18,8 +18,8 @@ const PastTransactions = () => {
             <h1 className="text-4xl md:text-6xl font-display font-light text-architectural mb-6">
               Past Transactions
             </h1>
-            <p className="text-muted-foreground max-w-2xl mx-auto">95% of our transactions are conducted off market and will not show on this site.  
-The privacy is of utmost importance to us.
+            <p className="text-muted-foreground max-w-2xl mx-auto">95% of our transactions are conducted off market and will not show on this site.   
+The privacy of our clients is of utmost importance to us.
             </p>
           </div>
         </div>

@@ -346,7 +346,13 @@ const Buy = () => {
                   <div className="flex items-start gap-4 mb-3">
                     <CheckCircle className="w-5 h-5 text-gold mt-1 shrink-0" />
                     <h3 className="text-xl font-display font-medium group-hover:text-muted-foreground transition-colors duration-300">
-                      {item.title}
+                      {item.title === "Off-Market Access" ? (
+                        <Link to="/off-market-luxury-homes-austin" className="hover:underline">
+                          {item.title}
+                        </Link>
+                      ) : (
+                        item.title
+                      )}
                     </h3>
                   </div>
                   <p className="text-muted-foreground leading-relaxed text-sm pl-9">

@@ -6,6 +6,8 @@ import downtownImg from "@/assets/community-downtown.jpg";
 import drippingSpringsImg from "@/assets/community-dripping-springs.jpg";
 import hillCountryImg from "@/assets/community-hill-country.jpg";
 import zilkerImg from "@/assets/community-zilker-barton-springs.jpg";
+import westlakeHillsImg from "@/assets/community-westlake-hills.jpg";
+import bartonCreekImg from "@/assets/community-barton-creek.jpg";
 export interface CommunityFAQ {
   question: string;
   answer: string;

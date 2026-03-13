@@ -77,9 +77,7 @@ const Hero = () => {
       
       <div className="relative z-10 container mx-auto px-6 pb-24 md:pb-32">
         <div className="max-w-3xl">
-          <p className="text-minimal text-warm-cream/70 mb-6 reveal">AUSTIN REAL ESTATE EXPERTS
-
-          </p>
+          <p className="text-minimal text-warm-cream/80 mb-6 reveal" style={{ textShadow: '0 1px 6px rgba(0,0,0,0.4)' }}>AUSTIN REAL ESTATE EXPERTS</p>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-light text-warm-cream text-architectural mb-8 reveal" style={{ textShadow: '0 2px 20px rgba(0,0,0,0.5), 0 1px 4px rgba(0,0,0,0.4)' }}>
             Driven by Data,
             <br />

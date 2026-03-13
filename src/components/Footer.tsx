@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { Instagram } from "lucide-react";
+import realtorLogo from "@/assets/realtor-logo.png";
+import fairHousingLogo from "@/assets/fair-housing-logo.png";
 
 const Footer = () => {
   return (

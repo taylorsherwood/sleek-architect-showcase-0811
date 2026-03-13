@@ -278,7 +278,7 @@ const HomeValueAustin = () => {
                     type="submit"
                     className="text-minimal bg-primary text-primary-foreground hover:bg-primary/90 px-10 py-4 transition-colors duration-300 w-full md:w-auto"
                   >
-                    GET YOUR FREE HOME VALUATION
+                    GET YOUR FREE PROPERTY VALUATION
                   </button>
                 </form>
               )}

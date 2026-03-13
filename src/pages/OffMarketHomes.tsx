@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
+import austinLuxuryNetwork from "@/assets/austin-luxury-network.jpg";
+import clubhouseCommission from "@/assets/clubhouse-commission.png";
+import topAgentNetwork from "@/assets/top-agent-network.webp";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createFAQSchema } from "@/components/SchemaMarkup";
@@ -179,6 +182,13 @@ const OffMarketHomes = () => {
                   </button>
                 </form>
               </div>
+            </section>
+
+            {/* Network Logos */}
+            <section className="flex flex-wrap items-center justify-center gap-10 md:gap-16 py-4">
+              <img src={austinLuxuryNetwork} alt="Austin Luxury Network" className="h-12 md:h-14 w-auto object-contain mix-blend-multiply" />
+              <img src={clubhouseCommission} alt="Clubhouse by Commission.co" className="h-12 md:h-14 w-auto object-contain mix-blend-multiply" />
+              <img src={topAgentNetwork} alt="Top Agent Network Verified Member" className="h-12 md:h-14 w-auto object-contain mix-blend-multiply" />
             </section>
 
             {/* What Are Off-Market Listings */}

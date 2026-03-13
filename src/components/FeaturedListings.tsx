@@ -174,7 +174,7 @@ const FeaturedListings = () => {
       </div>
     </section>
 
-    <section className="py-16 bg-background">
+    <section className="pt-16 pb-8 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
           <p className="text-minimal text-gold mb-4 font-extrabold">ECHELON LISTINGS</p>

@@ -6,6 +6,8 @@ import downtownImg from "@/assets/community-downtown.jpg";
 import drippingSpringsImg from "@/assets/community-dripping-springs.jpg";
 import hillCountryImg from "@/assets/community-hill-country.jpg";
 import zilkerImg from "@/assets/community-zilker-barton-springs.jpg";
+import westlakeHillsImg from "@/assets/community-westlake-hills.jpg";
+import bartonCreekImg from "@/assets/community-barton-creek.jpg";
 export interface CommunityFAQ {
   question: string;
   answer: string;
@@ -36,7 +38,7 @@ export const communityPages: CommunityData[] = [
     metaTitle: "Westlake Hills Austin Homes for Sale | Westlake Hills Real Estate Guide",
     metaDescription: "Explore luxury homes for sale in Westlake Hills Austin. Stunning Hill Country views, top Eanes ISD schools, and estates from $1.2M to $20M+.",
     priceRange: "$1.2M – $20M+",
-    image: "/lovable-uploads/c250e465-9078-48da-b8c6-a690b5beb959.png",
+    image: westlakeHillsImg,
     overview: `Westlake Hills is one of Austin's most sought-after luxury communities, situated on the scenic bluffs west of downtown overlooking the Hill Country and Lake Austin. This incorporated city within the greater Austin metro area has long been synonymous with prestige, privacy, and an unmatched quality of life. With rolling terrain, mature live oaks, and panoramic hilltop views, Westlake Hills offers a retreat-like atmosphere just minutes from the energy and culture of downtown Austin.
 
 The community is anchored by the highly acclaimed Eanes Independent School District, consistently ranked among the top districts in Texas. Families are drawn here for the combination of academic excellence, safe neighborhoods, and a strong sense of community. Homes in Westlake Hills range from elegant mid-century estates on generous lots to newly constructed modern masterpieces featuring walls of glass, infinity-edge pools, and seamless indoor-outdoor living spaces.
@@ -81,7 +83,7 @@ For investors, Westlake Hills offers opportunities in luxury home renovations, n
     metaTitle: "Barton Creek Austin Homes for Sale | Barton Creek Real Estate Guide",
     metaDescription: "Discover luxury estates in Barton Creek Austin. World-class golf, gated country club living, and homes from $1.5M to $15M+ in this premier community.",
     priceRange: "$1.5M – $15M+",
-    image: "/lovable-uploads/99d231ba-d5ab-43da-83fe-162a182a3914.jpg",
+    image: bartonCreekImg,
     overview: `Barton Creek is Austin's premier master-planned luxury community, renowned for its world-class amenities, stunning natural beauty, and some of the finest estate homes in Central Texas. Spanning thousands of acres along the scenic Barton Creek corridor west of downtown Austin, this gated community offers a lifestyle that rivals the most exclusive neighborhoods in the country.
 
 The community is anchored by the legendary Omni Barton Creek Resort & Spa, which features four championship golf courses designed by Tom Fazio, Ben Crenshaw, and Arnold Palmer. Residents of Barton Creek enjoy access to the Barton Creek Country Club, which provides golf, tennis, swimming, fitness facilities, and multiple dining venues in a setting of unparalleled natural beauty.

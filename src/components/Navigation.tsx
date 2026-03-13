@@ -78,9 +78,9 @@ const Navigation = () => {
                 onMouseEnter={() => setOpenDropdown(link.href)}
                 onMouseLeave={() => setOpenDropdown(null)}
               >
-                <Link
-                  to={link.href}
-                  className={`relative text-minimal tracking-[0.25em] transition-colors duration-300 group ${
+                <button
+                  onClick={() => setOpenDropdown(openDropdown === link.href ? null : link.href)}
+                  className={`relative text-minimal tracking-[0.25em] transition-colors duration-300 group cursor-pointer bg-transparent border-none ${
                     isActive(link)
                       ? "text-foreground"
                       : "text-muted-foreground hover:text-foreground"
@@ -93,7 +93,7 @@ const Navigation = () => {
                       isActive(link) ? "w-full scale-x-100" : "w-full scale-x-0 group-hover:scale-x-100"
                     }`}
                   />
-                </Link>
+                </button>
                 {openDropdown === link.href && (
                   <div className="absolute top-full left-0 pt-3 min-w-[260px]">
                     <div className="bg-background border border-border shadow-elegant">

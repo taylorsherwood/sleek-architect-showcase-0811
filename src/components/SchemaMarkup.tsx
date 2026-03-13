@@ -57,7 +57,7 @@ export const taylorSherwoodSchema = {
   "name": "Taylor Sherwood",
   "jobTitle": "Certified Luxury Home Marketing Specialist (CLHMS)",
   "description": "Austin luxury real estate advisor specializing in distinctive homes, luxury properties, and land opportunities across Westlake Hills, Barton Creek, Tarrytown, and Lake Austin.",
-  "url": "https://sleek-architect-showcase-0811.lovable.app/about",
+  "url": "https://www.echelonpropertygroup.com/about",
   "telephone": "(512) 661-3843",
   "email": "taylor@echelonpropertygroup.com",
   "worksFor": {

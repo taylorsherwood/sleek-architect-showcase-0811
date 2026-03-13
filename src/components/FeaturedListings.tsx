@@ -160,6 +160,16 @@ const FeaturedListings = () => {
               );
             })}
           </div>
+
+          <div className="mt-12 text-center">
+            <Link
+              to="/off-market-luxury-homes-austin"
+              className="inline-block text-sm text-muted-foreground hover:text-foreground transition-colors duration-300"
+            >
+              Searching for private market opportunities in Austin? Contact us for discreet listings not publicly advertised.{" "}
+              <span className="underline">Ask about off-market opportunities</span> →
+            </Link>
+          </div>
         </div>
       </div>
     </section>
@@ -172,16 +182,6 @@ const FeaturedListings = () => {
             Currently on the Market
           </h2>
           <div ref={widgetRef} className="w-full" />
-
-          <div className="mt-12 text-center">
-            <Link
-              to="/off-market-luxury-homes-austin"
-              className="inline-block text-sm text-muted-foreground hover:text-foreground transition-colors duration-300"
-            >
-              Searching for private market opportunities in Austin? Contact us for discreet listings not publicly advertised.{" "}
-              <span className="underline">Ask about off-market opportunities</span> →
-            </Link>
-          </div>
         </div>
       </div>
     </section>

@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import RealScoutListings from "@/components/RealScoutListings";
 import listing1 from "@/assets/listing-1.jpg";
 import listing2 from "@/assets/listing-2.jpg";
 import listing3 from "@/assets/listing-3.jpg";
@@ -120,6 +121,8 @@ const Listings = () => {
           </div>
         </div>
       </section>
+
+      <RealScoutListings />
 
       <Footer />
     </div>

@@ -161,7 +161,7 @@ const FeaturedListings = () => {
             })}
           </div>
 
-          <div className="mt-12 text-center">
+          <div className="mt-12 mb-8 text-center">
             <Link
               to="/off-market-luxury-homes-austin"
               className="inline-block text-sm text-muted-foreground hover:text-foreground transition-colors duration-300"

@@ -88,7 +88,7 @@ export const localBusinessSchema = {
   "@type": "LocalBusiness",
   "name": "Echelon Property Group",
   "description": "Luxury real estate brokerage in Austin, Texas specializing in luxury homes, investment properties, and land opportunities.",
-  "url": "https://sleek-architect-showcase-0811.lovable.app",
+  "url": "https://www.echelonpropertygroup.com",
   "telephone": "(512) 661-3843",
   "email": "taylor@echelonpropertygroup.com",
   "address": {

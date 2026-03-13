@@ -28,6 +28,7 @@ import BuyHomesAustin from "./pages/BuyHomesAustin";
 import SellHomeAustin from "./pages/SellHomeAustin";
 import AustinRealEstateInvestment from "./pages/AustinRealEstateInvestment";
 import LandForSaleAustin from "./pages/LandForSaleAustin";
+import PastTransactions from "./pages/PastTransactions";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();

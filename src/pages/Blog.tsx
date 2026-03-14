@@ -125,6 +125,55 @@ const Blog = () => {
         </div>
       </section>
 
+      {/* ── SEO Content: Blog Overview ── */}
+      <section className="py-28 bg-secondary/50">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-8">
+              Austin Luxury Real Estate Insights
+            </h2>
+            <div className="space-y-6 text-muted-foreground leading-relaxed">
+              <p>
+                Welcome to the Echelon Property Group blog — your trusted source for expert analysis of Austin's luxury real estate market. Whether you're a seasoned investor evaluating your next acquisition, a first-time luxury home buyer exploring Austin's premier neighborhoods, or a homeowner considering a strategic sale, our articles provide the data-driven insights and local expertise you need to make informed decisions.
+              </p>
+              <p>
+                Austin has emerged as one of the most dynamic luxury real estate markets in the United States. Fueled by a thriving technology economy anchored by Apple, Tesla, Google, Meta, and Oracle, the city attracts high-net-worth individuals and families from across the country. Texas's absence of state income tax amplifies purchasing power, and Austin's unique blend of natural beauty, cultural richness, and economic opportunity creates a market unlike any other.
+              </p>
+
+              <h3 className="text-2xl font-display font-light text-architectural pt-4">
+                What We Cover
+              </h3>
+              <p>
+                Our editorial team publishes in-depth articles across a range of topics relevant to Austin luxury real estate. Market reports analyze pricing trends, inventory levels, and demand drivers across neighborhoods like Westlake Hills, Barton Creek, Lake Austin, Tarrytown, and Rollingwood. Neighborhood guides explore the lifestyle, amenities, schools, and investment potential of Austin's most sought-after communities.
+              </p>
+              <p>
+                Investment-focused content examines commercial real estate opportunities, land acquisition strategies, 1031 exchange considerations, and portfolio diversification through Austin property. Our relocation guides help out-of-state buyers navigate Austin's neighborhoods, school districts, and lifestyle offerings with confidence.
+              </p>
+
+              <h3 className="text-2xl font-display font-light text-architectural pt-4">
+                Why Trust Echelon Property Group
+              </h3>
+              <p>
+                Every article is written or reviewed by Taylor Sherwood, a Certified Luxury Home Marketing Specialist and founder of Echelon Property Group. With deep experience across residential, commercial, land, and investment real estate in Austin, Taylor brings a practitioner's perspective that goes beyond surface-level commentary. Our insights are grounded in real transaction experience and hyperlocal market knowledge.
+              </p>
+              <p>
+                As an Austin luxury realtor and real estate agent specializing in the city's most prestigious addresses, Taylor works daily with buyers, sellers, and investors navigating complex transactions. That hands-on experience informs every piece of content we publish — ensuring our readers receive practical, actionable guidance rather than generic market summaries.
+              </p>
+
+              <h3 className="text-2xl font-display font-light text-architectural pt-4">
+                Neighborhoods We Serve
+              </h3>
+              <p>
+                Our coverage spans Austin's full luxury landscape: Westlake Hills, Barton Creek, Lake Austin waterfront, Tarrytown, Rollingwood, Travis Heights, Downtown Austin, Dripping Springs, Spanish Oaks, Cat Mountain, and the greater Texas Hill Country. Each community has its own market dynamics, and our articles provide the neighborhood-level detail that national publications simply cannot match.
+              </p>
+              <p>
+                Whether you're exploring luxury homes in Austin, evaluating commercial investment properties, or researching land for sale across Central Texas, our blog is designed to be the most comprehensive and authoritative resource available. Subscribe to stay informed on the latest developments in Austin luxury real estate.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Newsletter Section */}
       <section className="py-32 bg-muted">
         <div className="container mx-auto px-6">

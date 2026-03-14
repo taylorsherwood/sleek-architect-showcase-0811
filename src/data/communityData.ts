@@ -127,7 +127,7 @@ For investors considering Barton Creek, the combination of country club amenitie
     slug: "lake-austin-waterfront",
     name: "Lake Austin Waterfront",
     heroTitle: "Lake Austin Waterfront Homes for Sale",
-    metaTitle: "Lake Austin Waterfront Homes for Sale | Lake Austin Real Estate Guide",
+    metaTitle: "Lake Austin Homes for Sale | Echelon Property Group",
     metaDescription: "Explore luxury waterfront homes on Lake Austin TX. Private docks, stunning lake views, and resort-style living from $2M to $25M+.",
     priceRange: "$2M – $25M+",
     image: lakeAustinImg,

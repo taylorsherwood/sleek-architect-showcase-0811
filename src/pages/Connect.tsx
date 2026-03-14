@@ -43,7 +43,7 @@ const Connect = () => {
                 src={taylorHeadshot}
                 alt="Taylor Sherwood – Austin Luxury Real Estate Advisor"
                 className="absolute inset-0 w-full h-full object-cover"
-                style={{ objectPosition: "50% 15%" }}
+                style={{ objectPosition: "50% 12%" }}
                 fetchPriority="high"
               />
 
@@ -52,18 +52,18 @@ const Connect = () => {
                 className="absolute inset-0"
                 style={{
                   background:
-                    "linear-gradient(180deg, transparent 20%, hsl(233 50% 9% / 0.05) 35%, hsl(233 50% 9% / 0.3) 55%, hsl(233 50% 9% / 0.75) 72%, hsl(233 50% 9% / 0.95) 85%, hsl(233 50% 9%) 100%)",
+                    "linear-gradient(180deg, hsl(233 50% 9% / 0.15) 0%, transparent 15%, transparent 25%, hsl(233 50% 9% / 0.08) 40%, hsl(233 50% 9% / 0.35) 55%, hsl(233 50% 9% / 0.8) 72%, hsl(233 50% 9% / 0.97) 85%, hsl(233 50% 9%) 100%)",
                 }}
               />
 
-              {/* Text overlay */}
-              <div className="absolute bottom-0 left-0 right-0 p-7 pb-8 flex flex-col items-start">
-                {/* Logo */}
+              {/* Content overlay */}
+              <div className="absolute bottom-0 left-0 right-0 p-7 pb-8 flex flex-col items-center text-center">
+                {/* Logo – centered brand anchor */}
                 <img
                   src={echelonLogo}
                   alt="Echelon Property Group"
-                  className="mb-5 opacity-60"
-                  style={{ height: "55px" }}
+                  className="mb-5"
+                  style={{ height: "75px", opacity: 0.7 }}
                   loading="eager"
                 />
 
@@ -79,37 +79,49 @@ const Connect = () => {
                   Taylor Sherwood
                 </h1>
 
-                {/* Subtitle line 1 */}
+                {/* Gold accent divider */}
+                <div
+                  className="mt-4 mb-3"
+                  style={{
+                    width: "40px",
+                    height: "1px",
+                    background:
+                      "linear-gradient(90deg, transparent, hsl(42 37% 57% / 0.5), transparent)",
+                  }}
+                />
+
+                {/* Subtitle block */}
                 <p
-                  className="mt-3 font-sans"
+                  className="font-sans"
                   style={{
                     fontSize: "11.5px",
                     letterSpacing: "0.22em",
                     textTransform: "uppercase",
                     fontVariant: "all-small-caps",
                     fontWeight: 500,
+                    lineHeight: 1.4,
                     color: "hsl(42 37% 67%)",
                   }}
                 >
                   Austin Luxury Real Estate
                 </p>
-
-                {/* Subtitle line 2 */}
                 <p
-                  className="mt-1 font-sans"
+                  className="font-sans"
                   style={{
                     fontSize: "10px",
                     letterSpacing: "0.25em",
                     textTransform: "uppercase",
                     fontWeight: 400,
-                    color: "hsl(0 0% 100% / 0.4)",
+                    lineHeight: 1.4,
+                    marginTop: "2px",
+                    color: "hsl(0 0% 100% / 0.38)",
                   }}
                 >
                   Land&ensp;·&ensp;Investment Property
                 </p>
 
                 {/* Social icons */}
-                <div className="flex items-center gap-3.5 mt-6">
+                <div className="flex items-center gap-4 mt-7">
                   {socials.map((s) => (
                     <a
                       key={s.label}
@@ -119,37 +131,37 @@ const Connect = () => {
                       aria-label={s.label}
                       className="flex items-center justify-center transition-all duration-300"
                       style={{
-                        width: "42px",
-                        height: "42px",
+                        width: "46px",
+                        height: "46px",
                         borderRadius: "14px",
-                        background: "hsl(0 0% 100% / 0.07)",
+                        background: "hsl(0 0% 100% / 0.06)",
                         backdropFilter: "blur(16px)",
                         WebkitBackdropFilter: "blur(16px)",
-                        border: "1px solid hsl(0 0% 100% / 0.08)",
+                        border: "1px solid hsl(0 0% 100% / 0.07)",
                         boxShadow:
-                          "0 4px 16px hsl(0 0% 0% / 0.2), inset 0 1px 0 hsl(0 0% 100% / 0.05)",
-                        color: "hsl(0 0% 100% / 0.7)",
+                          "0 4px 16px hsl(0 0% 0% / 0.2), inset 0 1px 0 hsl(0 0% 100% / 0.04)",
+                        color: "hsl(0 0% 100% / 0.65)",
                       }}
                       onMouseEnter={(e) => {
                         const el = e.currentTarget;
-                        el.style.background = "hsl(42 37% 57% / 0.18)";
-                        el.style.borderColor = "hsl(42 37% 57% / 0.3)";
+                        el.style.background = "hsl(42 37% 57% / 0.15)";
+                        el.style.borderColor = "hsl(42 37% 57% / 0.28)";
                         el.style.color = "hsl(42 37% 67%)";
                         el.style.boxShadow =
-                          "0 6px 24px hsl(42 37% 57% / 0.12), inset 0 1px 0 hsl(42 37% 57% / 0.08)";
-                        el.style.transform = "translateY(-2px) scale(1.04)";
+                          "0 6px 24px hsl(42 37% 57% / 0.1), inset 0 1px 0 hsl(42 37% 57% / 0.06)";
+                        el.style.transform = "translateY(-2px) scale(1.05)";
                       }}
                       onMouseLeave={(e) => {
                         const el = e.currentTarget;
-                        el.style.background = "hsl(0 0% 100% / 0.07)";
-                        el.style.borderColor = "hsl(0 0% 100% / 0.08)";
-                        el.style.color = "hsl(0 0% 100% / 0.7)";
+                        el.style.background = "hsl(0 0% 100% / 0.06)";
+                        el.style.borderColor = "hsl(0 0% 100% / 0.07)";
+                        el.style.color = "hsl(0 0% 100% / 0.65)";
                         el.style.boxShadow =
-                          "0 4px 16px hsl(0 0% 0% / 0.2), inset 0 1px 0 hsl(0 0% 100% / 0.05)";
+                          "0 4px 16px hsl(0 0% 0% / 0.2), inset 0 1px 0 hsl(0 0% 100% / 0.04)";
                         el.style.transform = "translateY(0) scale(1)";
                       }}
                     >
-                      <s.icon className="w-[18px] h-[18px]" />
+                      <s.icon className="w-5 h-5" />
                     </a>
                   ))}
                 </div>
@@ -158,19 +170,19 @@ const Connect = () => {
           </div>
 
           {/* ── Gold Divider ── */}
-          <div className="flex justify-center my-6">
+          <div className="flex justify-center my-8">
             <div
               className="h-px"
               style={{
-                width: "60px",
+                width: "50px",
                 background:
-                  "linear-gradient(90deg, transparent, hsl(42 37% 57% / 0.4), transparent)",
+                  "linear-gradient(90deg, transparent, hsl(42 37% 57% / 0.35), transparent)",
               }}
             />
           </div>
 
           {/* ── Action Buttons ── */}
-          <nav className="flex flex-col gap-3.5" aria-label="Quick links">
+          <nav className="flex flex-col gap-4" aria-label="Quick links">
             {links.map((link) => (
               <a
                 key={link.label}
@@ -180,32 +192,32 @@ const Connect = () => {
                 className="group relative flex items-center justify-between w-full transition-all duration-500"
                 style={{
                   borderRadius: "18px",
-                  padding: "22px 26px",
+                  padding: "24px 28px",
                   background: link.featured
-                    ? "linear-gradient(145deg, hsl(233 45% 14%) 0%, hsl(233 50% 11%) 100%)"
-                    : "linear-gradient(145deg, hsl(233 45% 13%) 0%, hsl(233 50% 10%) 100%)",
+                    ? "linear-gradient(145deg, hsl(233 42% 15%) 0%, hsl(233 50% 11%) 100%)"
+                    : "linear-gradient(145deg, hsl(233 42% 14%) 0%, hsl(233 50% 10%) 100%)",
                   border: link.featured
-                    ? "1px solid hsl(42 37% 57% / 0.22)"
-                    : "1px solid hsl(0 0% 100% / 0.05)",
+                    ? "1px solid hsl(42 37% 57% / 0.2)"
+                    : "1px solid hsl(0 0% 100% / 0.045)",
                   boxShadow: link.featured
-                    ? "0 6px 28px hsl(0 0% 0% / 0.3), inset 0 1px 0 hsl(0 0% 100% / 0.04), inset 0 0 20px hsl(42 37% 57% / 0.03)"
-                    : "0 4px 20px hsl(0 0% 0% / 0.25), inset 0 1px 0 hsl(0 0% 100% / 0.03), inset 0 0 16px hsl(0 0% 100% / 0.01)",
+                    ? "0 6px 28px hsl(0 0% 0% / 0.3), inset 0 1px 0 hsl(0 0% 100% / 0.04), inset 0 0 24px hsl(42 37% 57% / 0.025)"
+                    : "0 4px 20px hsl(0 0% 0% / 0.25), inset 0 1px 0 hsl(0 0% 100% / 0.025), inset 0 0 20px hsl(0 0% 100% / 0.008)",
                 }}
                 onMouseEnter={(e) => {
                   const el = e.currentTarget;
-                  el.style.borderColor = "hsl(42 37% 57% / 0.3)";
+                  el.style.borderColor = "hsl(42 37% 57% / 0.28)";
                   el.style.boxShadow =
-                    "0 10px 36px hsl(42 37% 57% / 0.08), inset 0 1px 0 hsl(42 37% 57% / 0.06), inset 0 0 24px hsl(42 37% 57% / 0.03)";
+                    "0 10px 40px hsl(42 37% 57% / 0.07), inset 0 1px 0 hsl(42 37% 57% / 0.05), inset 0 0 28px hsl(42 37% 57% / 0.025)";
                   el.style.transform = "translateY(-2px)";
                 }}
                 onMouseLeave={(e) => {
                   const el = e.currentTarget;
                   el.style.borderColor = link.featured
-                    ? "hsl(42 37% 57% / 0.22)"
-                    : "hsl(0 0% 100% / 0.05)";
+                    ? "hsl(42 37% 57% / 0.2)"
+                    : "hsl(0 0% 100% / 0.045)";
                   el.style.boxShadow = link.featured
-                    ? "0 6px 28px hsl(0 0% 0% / 0.3), inset 0 1px 0 hsl(0 0% 100% / 0.04), inset 0 0 20px hsl(42 37% 57% / 0.03)"
-                    : "0 4px 20px hsl(0 0% 0% / 0.25), inset 0 1px 0 hsl(0 0% 100% / 0.03), inset 0 0 16px hsl(0 0% 100% / 0.01)";
+                    ? "0 6px 28px hsl(0 0% 0% / 0.3), inset 0 1px 0 hsl(0 0% 100% / 0.04), inset 0 0 24px hsl(42 37% 57% / 0.025)"
+                    : "0 4px 20px hsl(0 0% 0% / 0.25), inset 0 1px 0 hsl(0 0% 100% / 0.025), inset 0 0 20px hsl(0 0% 100% / 0.008)";
                   el.style.transform = "translateY(0)";
                 }}
               >
@@ -216,13 +228,13 @@ const Connect = () => {
                     letterSpacing: "0.1em",
                     textTransform: "uppercase",
                     fontWeight: 500,
-                    color: link.featured ? "hsl(42 37% 67%)" : "hsl(0 0% 100% / 0.8)",
+                    color: link.featured ? "hsl(42 37% 67%)" : "hsl(0 0% 100% / 0.78)",
                   }}
                 >
                   {link.label}
                 </span>
                 <ExternalLink
-                  className="w-4 h-4 opacity-15 group-hover:opacity-35 transition-opacity duration-400"
+                  className="w-4 h-4 opacity-15 group-hover:opacity-30 transition-opacity duration-400"
                   style={{ color: "hsl(0 0% 100%)" }}
                 />
               </a>
@@ -230,12 +242,12 @@ const Connect = () => {
           </nav>
 
           {/* ── Footer ── */}
-          <div className="flex flex-col items-center gap-3 mt-10 mb-4">
+          <div className="flex flex-col items-center gap-3 mt-12 mb-4">
             <div
               className="w-10 h-px"
               style={{
                 background:
-                  "linear-gradient(90deg, transparent, hsl(42 37% 57% / 0.2), transparent)",
+                  "linear-gradient(90deg, transparent, hsl(42 37% 57% / 0.18), transparent)",
               }}
             />
             <p
@@ -244,7 +256,7 @@ const Connect = () => {
                 fontSize: "8px",
                 letterSpacing: "0.35em",
                 textTransform: "uppercase",
-                color: "hsl(0 0% 100% / 0.12)",
+                color: "hsl(0 0% 100% / 0.1)",
               }}
             >
               Echelon Property Group

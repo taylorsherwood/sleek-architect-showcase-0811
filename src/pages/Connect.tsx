@@ -110,7 +110,7 @@ const Connect = () => {
                     color: "hsl(0 0% 100% / 0.55)",
                   }}
                 >
-                  Land&nbsp;·&nbsp;Investment Property
+                  Land&nbsp;·&nbsp;Investment Specialists
                 </p>
 
                 {/* Social icons */}

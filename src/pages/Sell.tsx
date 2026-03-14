@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
+import Testimonials from "@/components/Testimonials";
 import {
   CheckCircle,
   ArrowRight,

@@ -91,6 +91,9 @@ ${urls}
     },
     closeBundle() {
       const outDir = path.resolve(__dirname, "dist");
+      if (!fs.existsSync(outDir)) {
+        fs.mkdirSync(outDir, { recursive: true });
+      }
       fs.writeFileSync(path.join(outDir, "sitemap.xml"), buildSitemap());
     },
   };

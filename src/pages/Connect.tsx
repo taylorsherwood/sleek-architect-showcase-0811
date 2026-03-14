@@ -25,7 +25,7 @@ const Connect = () => {
         <div className="w-full max-w-[420px] mx-auto flex flex-col items-center">
 
           {/* ── Headshot ── */}
-          <div className="relative mt-2">
+          <div className="relative mt-10">
             {/* outer glow */}
             <div
               className="absolute -inset-3 rounded-full opacity-25 blur-2xl"

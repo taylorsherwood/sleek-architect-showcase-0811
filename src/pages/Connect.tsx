@@ -85,7 +85,7 @@ const Connect = () => {
                 <p
                   className="font-sans"
                   style={{
-                    fontSize: "11.5px",
+                    fontSize: "13px",
                     letterSpacing: "0.22em",
                     textTransform: "uppercase",
                     fontVariant: "all-small-caps",

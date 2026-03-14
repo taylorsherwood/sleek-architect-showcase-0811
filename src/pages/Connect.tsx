@@ -24,7 +24,7 @@ const Connect = () => {
         description="Connect with Austin luxury real estate advisor Taylor Sherwood. Browse listings, search homes, or request a private consultation."
       />
       <div
-        className="min-h-screen flex flex-col items-center px-4 py-6 sm:py-10"
+        className="min-h-screen flex flex-col items-center px-4 py-4"
         style={{ backgroundColor: "hsl(233, 50%, 9%)" }}
       >
         <div className="w-full max-w-[440px] mx-auto flex flex-col">

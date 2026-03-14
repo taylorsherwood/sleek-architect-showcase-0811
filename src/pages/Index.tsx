@@ -69,7 +69,6 @@ const Index = () => {
       <SchemaMarkup schema={taylorSherwoodSchema} />
       <Navigation />
       <Hero />
-      <HeroCTAStrip />
 
       <ScrollReveal>
         <CredibilityStrip />

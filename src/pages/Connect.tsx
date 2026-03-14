@@ -93,7 +93,7 @@ const Connect = () => {
                     fontVariant: "all-small-caps",
                     fontWeight: 600,
                     lineHeight: 1.4,
-                    color: "hsl(42 37% 72%)",
+                    color: "#baa26a",
                   }}
                 >
                   Austin Luxury Real Estate

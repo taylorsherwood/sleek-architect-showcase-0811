@@ -25,7 +25,7 @@ const Connect = () => {
         <div className="w-full max-w-[420px] mx-auto flex flex-col items-center">
 
           {/* ── Headshot ── */}
-          <div className="relative mt-2">
+          <div className="relative mt-10">
             {/* outer glow */}
             <div
               className="absolute -inset-3 rounded-full opacity-25 blur-2xl"
@@ -57,13 +57,13 @@ const Connect = () => {
           <img
             src={echelonLogo}
             alt="Echelon Property Group"
-            className="mt-9 opacity-50"
-            style={{ height: "100px" }}
+            className="mt-5 opacity-50"
+            style={{ height: "130px" }}
             loading="eager"
           />
 
           {/* ── Name & subtitle ── */}
-          <div className="text-center mt-7">
+          <div className="text-center mt-4">
             <h1
               className="font-display font-medium tracking-[-0.015em] leading-none"
               style={{ fontSize: "1.85rem", color: "hsl(0 0% 100%)" }}

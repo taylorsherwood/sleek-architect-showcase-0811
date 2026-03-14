@@ -277,7 +277,7 @@ const Connect = () => {
             </div>
           </div>
 
-          <nav className="flex flex-col gap-3 px-4" aria-label="Quick links">
+          <nav className="flex flex-col gap-3 px-8" aria-label="Quick links">
             {links.map((link, i) => (
               <ScrollReveal key={link.label} delay={i * 120}>
                 <a

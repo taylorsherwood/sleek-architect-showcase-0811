@@ -10,6 +10,7 @@ const CommercialCTA = () => {
           src={commercialHeroSrc}
           srcSet={`${commercialHeroSrc} 1x, ${commercialHeroSrc} 2x`}
           alt="Austin commercial real estate skyline"
+          title="Austin commercial real estate and investment properties"
           className="w-full h-full object-cover object-center"
           style={{ imageRendering: 'auto' }}
           loading="lazy"

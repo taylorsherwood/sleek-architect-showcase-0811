@@ -54,6 +54,7 @@ const FloatingContact = () => {
               <img
                 src={HEADSHOT}
                 alt="Taylor Sherwood"
+                title="Taylor Sherwood — Echelon Property Group"
                 className="w-full h-full object-cover object-[50%_20%] scale-[1.03]" />
               
             </div>

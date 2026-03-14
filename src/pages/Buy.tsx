@@ -509,6 +509,7 @@ const Buy = () => {
                     <img
                     src={n.image}
                     alt={`${n.name} homes for sale in Austin`}
+                    title={`${n.name} — luxury homes for sale in Austin TX`}
                     className="w-full aspect-[16/9] object-cover transition-transform duration-700 group-hover:scale-105"
                     loading="lazy" />
                   

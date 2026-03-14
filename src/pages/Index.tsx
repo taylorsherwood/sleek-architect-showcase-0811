@@ -61,7 +61,7 @@ const Index = () => {
               SUBSCRIBE
             </a>
             <div className="-mt-6 flex justify-center">
-              <img src={expEchelonLogo} alt="eXp Realty | Echelon Property Group" className="h-80 w-auto translate-x-3 -mb-12" loading="lazy" decoding="async" />
+              <img src={expEchelonLogo} alt="eXp Realty | Echelon Property Group" title="eXp Realty — Echelon Property Group brokerage" className="h-80 w-auto translate-x-3 -mb-12" loading="lazy" decoding="async" />
             </div>
           </div>
         </div>

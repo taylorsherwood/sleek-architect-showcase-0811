@@ -8,6 +8,7 @@ const CTASection = () => {
         <img
           src={heroImage}
           alt=""
+          title="Austin luxury home — schedule a consultation"
           className="w-full h-full object-cover object-center"
           loading="lazy"
           decoding="async"

@@ -186,9 +186,9 @@ const OffMarketHomes = () => {
 
             {/* Network Logos */}
             <section className="flex flex-wrap items-center justify-center gap-10 md:gap-16 py-4">
-              <img src={austinLuxuryNetwork} alt="Austin Luxury Network" className="h-16 w-auto object-contain mix-blend-multiply" loading="lazy" decoding="async" />
-              <img src={clubhouseCommission} alt="Clubhouse by Commission.co" className="h-16 w-auto object-contain mix-blend-multiply" loading="lazy" decoding="async" />
-              <img src={topAgentNetwork} alt="Top Agent Network Verified Member" className="h-16 w-auto object-contain mix-blend-multiply" loading="lazy" decoding="async" />
+              <img src={austinLuxuryNetwork} alt="Austin Luxury Network" title="Austin Luxury Network — off-market home access" className="h-16 w-auto object-contain mix-blend-multiply" loading="lazy" decoding="async" />
+              <img src={clubhouseCommission} alt="Clubhouse by Commission.co" title="Clubhouse by Commission — agent collaboration network" className="h-16 w-auto object-contain mix-blend-multiply" loading="lazy" decoding="async" />
+              <img src={topAgentNetwork} alt="Top Agent Network Verified Member" title="Top Agent Network — verified member for off-market listings" className="h-16 w-auto object-contain mix-blend-multiply" loading="lazy" decoding="async" />
             </section>
 
             {/* What Are Off-Market Listings */}

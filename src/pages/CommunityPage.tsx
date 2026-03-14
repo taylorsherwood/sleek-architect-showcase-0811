@@ -141,6 +141,7 @@ const CommunityPage = () => {
               <img
                 src={community.image}
                 alt={`Luxury homes in ${community.name} Austin Texas`}
+                title={`${community.name} real estate — luxury homes for sale in Austin`}
                 className="w-full aspect-[16/9] object-cover"
                 loading="eager"
                 decoding="async"

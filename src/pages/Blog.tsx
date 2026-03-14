@@ -82,6 +82,7 @@ const Blog = () => {
                       <img 
                         src={post.image} 
                         alt={`${post.title} - Austin luxury real estate insights`}
+                        title={post.title}
                         className="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105"
                         loading="lazy"
                       />

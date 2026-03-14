@@ -8,6 +8,8 @@ import { communityPages } from "@/data/communityData";
 import { blogPosts } from "@/data/blogPosts";
 import { seoBlogPosts } from "@/data/seoBlogPosts";
 
+const SITE_URL = "https://www.echelonpropertygroup.com";
+
 type HeadTag = {
   type: "meta" | "link";
   props: Record<string, string>;
@@ -97,15 +99,25 @@ const buildHead = (helmet?: HelmetServerState) => {
   };
 };
 
+const resolvePrerenderPath = (url: string) => {
+  try {
+    const parsedUrl = new URL(url, SITE_URL);
+    return `${parsedUrl.pathname}${parsedUrl.search}`;
+  } catch {
+    return url || "/";
+  }
+};
+
 export async function prerender(data: { url: string }) {
   const helmetContext: { helmet?: HelmetServerState } = {};
   const queryClient = new QueryClient();
+  const routePath = resolvePrerenderPath(data.url);
 
   const html = renderToString(
     <HelmetProvider context={helmetContext}>
       <QueryClientProvider client={queryClient}>
         <TooltipProvider>
-          <StaticRouter location={data.url}>
+          <StaticRouter location={routePath}>
             <AppRoutes />
           </StaticRouter>
         </TooltipProvider>
@@ -115,6 +127,7 @@ export async function prerender(data: { url: string }) {
 
   return {
     html,
+    data: { url: routePath },
     links: new Set(allPrerenderRoutes),
     head: buildHead(helmetContext.helmet),
   };

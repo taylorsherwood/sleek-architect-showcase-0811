@@ -42,6 +42,7 @@ const CommercialInvestment = () => {
           <img
             src={heroArchitecture}
             alt="Austin commercial real estate skyline"
+            title="Austin commercial real estate — Echelon Property Group"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-foreground/70" />

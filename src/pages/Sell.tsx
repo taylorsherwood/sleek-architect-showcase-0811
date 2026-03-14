@@ -105,39 +105,6 @@ const stats = [
 { value: "$100M+", label: "Career Sales Volume" }];
 
 
-const recentListings = [
-{
-  image: "/lovable-uploads/0fc79a0b-1fde-439f-bb08-6062e50770b7.jpg",
-  address: "2300 Barton Creek Boulevard #15",
-  location: "Barton Creek, Austin",
-  price: "$3,750,000",
-  beds: 4,
-  baths: 4,
-  sqft: "4,147",
-  badge: "Private Listing"
-},
-{
-  image: listing2,
-  address: "1203 Westlake Ridge",
-  location: "Westlake Hills, Austin",
-  price: "$7M+ Luxury Home",
-  beds: 6,
-  baths: 7,
-  sqft: "8,400",
-  badge: "Private Market Opportunity"
-},
-{
-  image: listing3,
-  address: "Ranch Estate on 42 Acres",
-  location: "Texas Hill Country",
-  price: "$5M+ Hill Country Estate",
-  beds: 4,
-  baths: 5,
-  sqft: "5,800",
-  badge: "Private Market Opportunity"
-}];
-
-
 /* ------------------------------------------------------------------ */
 /*  FORM SCHEMAS                                                       */
 /* ------------------------------------------------------------------ */

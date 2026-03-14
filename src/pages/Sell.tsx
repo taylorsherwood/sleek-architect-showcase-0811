@@ -251,7 +251,7 @@ const Sell = () => {
       {/* ── Hero ── */}
       <section className="relative h-[70vh] min-h-[540px] flex items-center">
         <div className="absolute inset-0">
-          <img src={heroImg} alt="Luxury property in Austin Texas" className="w-full h-full object-cover" />
+          <img src={heroImg} alt="Luxury property in Austin Texas" title="Sell your Austin luxury home — Echelon Property Group" className="w-full h-full object-cover" loading="eager" decoding="async" />
           <div className="absolute inset-0 bg-[#0C0F24]/60" />
         </div>
         <div className="relative container mx-auto px-6">

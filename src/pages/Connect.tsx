@@ -218,7 +218,7 @@ const Connect = () => {
           </ScrollReveal>
 
           {/* ── CTA Strip ── */}
-          <div className="px-4 mb-5">
+          <div className="px-8 mb-5">
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
               {[
                 { title: "Explore Austin Luxury Homes", href: "https://www.echelonpropertygroup.com/listings", icon: Home },

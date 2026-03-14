@@ -1,7 +1,7 @@
 import SEOHead from "@/components/SEOHead";
 import taylorHeadshot from "@/assets/taylor-headshot.jpg";
 import echelonLogo from "@/assets/echelon-logo-gold.png";
-import { ExternalLink, Instagram, Mail, Phone } from "lucide-react";
+import { Instagram, Mail, Phone } from "lucide-react";
 
 const links = [
   { label: "Search Austin Homes", href: "https://taylorsherwood.realscout.com/homesearch/map" },

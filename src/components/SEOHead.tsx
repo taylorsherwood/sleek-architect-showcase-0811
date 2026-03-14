@@ -14,6 +14,7 @@ const SEOHead = ({ title, description, canonical }: SEOHeadProps) => {
   const canonicalUrl = canonical || `${SITE_URL}${pathname === "/" ? "" : pathname}`;
 
   useEffect(() => {
+    // Title
     document.title = title;
 
     const setMeta = (name: string, content: string, isProperty = false) => {
@@ -27,13 +28,24 @@ const SEOHead = ({ title, description, canonical }: SEOHeadProps) => {
       el.setAttribute("content", content);
     };
 
+    // Standard meta
     setMeta("description", description);
+
+    // Open Graph
     setMeta("og:title", title, true);
     setMeta("og:description", description, true);
     setMeta("og:url", canonicalUrl, true);
+    setMeta("og:type", "website", true);
+    setMeta("og:site_name", "Echelon Property Group", true);
+    setMeta("og:image", `${SITE_URL}/og-image.png`, true);
+
+    // Twitter
+    setMeta("twitter:card", "summary_large_image");
     setMeta("twitter:title", title);
     setMeta("twitter:description", description);
+    setMeta("twitter:image", `${SITE_URL}/og-image.png`);
 
+    // Canonical
     let link = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
     if (!link) {
       link = document.createElement("link");

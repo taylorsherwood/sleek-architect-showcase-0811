@@ -416,6 +416,8 @@ const Sell = () => {
         </div>
       </section>
 
+      <Testimonials />
+
       {/* ── Recent / Featured Listings ── */}
       <section className="py-28 bg-secondary/50">
         <div className="container mx-auto px-6">

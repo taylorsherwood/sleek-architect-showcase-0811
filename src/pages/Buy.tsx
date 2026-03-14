@@ -442,6 +442,7 @@ const Buy = () => {
                       <img
                         src={listing.image}
                         alt={listing.address}
+                        title={`${listing.address} — ${listing.price}`}
                         className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
                         loading="lazy" />
                       

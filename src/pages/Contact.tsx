@@ -121,7 +121,7 @@ const Contact = () => {
                     </a>
                   </div>
                   <div>
-                    <h3 className="text-minimal text-muted-foreground mb-2">PHONE</h3>
+                    <h2 className="text-minimal text-muted-foreground mb-2">PHONE</h2>
                     <a href="tel:+15125551234" className="text-lg hover:text-muted-foreground transition-colors duration-300">(512) 661-3843
 
                     </a>

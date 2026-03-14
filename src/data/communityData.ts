@@ -307,7 +307,7 @@ Rental investment in Travis Heights is supported by the neighborhood's appeal to
     slug: "downtown",
     name: "Downtown Austin",
     heroTitle: "Downtown Austin Homes & Condos for Sale",
-    metaTitle: "Downtown Austin Homes for Sale | Downtown Austin Real Estate Guide",
+    metaTitle: "Downtown Austin Homes for Sale | Echelon Property Group",
     metaDescription: "Explore luxury homes and condos for sale in downtown Austin TX. High-rise living, townhomes, skyline views, walkable lifestyle, and properties from $400K to $10M+.",
     priceRange: "$400K – $10M+",
     image: downtownImg,

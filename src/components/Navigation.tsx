@@ -59,7 +59,7 @@ const Navigation = () => {
           isScrolled ? "bg-background/65" : "bg-background"
         }`}
       />
-      <div className="relative container mx-auto px-6 h-full flex items-center justify-between lg:pl-[25%]">
+      <div className="relative container mx-auto px-6 h-full flex items-center justify-between">
         <Link to="/">
           <img
             src={logo}

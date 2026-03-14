@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import SEOHead from "@/components/SEOHead";
 import taylorHeadshot from "@/assets/taylor-headshot.jpg";
 import echelonLogo from "@/assets/echelon-logo-gold.png";
-import { Instagram, Mail, Phone } from "lucide-react";
+import { Instagram, Mail, Phone, Home, Search, Mountain } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
 import { useHeroScroll } from "@/hooks/useHeroScroll";
 
@@ -217,7 +217,66 @@ const Connect = () => {
             </div>
           </ScrollReveal>
 
-          {/* ── Action Buttons ── */}
+          {/* ── CTA Strip ── */}
+          <div className="px-4 mb-5">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              {[
+                { title: "Explore Austin Luxury Homes", href: "/buy", icon: Home },
+                { title: "Search All Listings", href: "/search", icon: Search },
+                { title: "Land & Investment Property", href: "/land", icon: Mountain },
+              ].map((card, i) => (
+                <ScrollReveal key={card.href} delay={i * 120}>
+                  <a
+                    href={card.href}
+                    className="flex flex-col items-center justify-center text-center px-4 py-6 rounded-2xl cta-glow-pulse"
+                    style={{
+                      background: "hsl(233 42% 14% / 0.2)",
+                      backdropFilter: "blur(24px)",
+                      WebkitBackdropFilter: "blur(24px)",
+                      border: "1px solid hsl(42 37% 57% / 0.25)",
+                      boxShadow:
+                        "0 4px 20px hsl(0 0% 0% / 0.15), inset 0 1px 0 hsl(0 0% 100% / 0.04)",
+                      transition:
+                        "transform 250ms ease-in-out, box-shadow 250ms ease-in-out, border-color 250ms ease-in-out",
+                    }}
+                    onMouseEnter={(e) => {
+                      const el = e.currentTarget;
+                      el.style.transform = "translateY(-4px)";
+                      el.style.borderColor = "hsl(42 37% 57% / 0.5)";
+                      el.style.boxShadow =
+                        "0 12px 36px hsl(42 37% 57% / 0.12), 0 0 48px hsl(42 37% 57% / 0.06), inset 0 1px 0 hsl(0 0% 100% / 0.06)";
+                    }}
+                    onMouseLeave={(e) => {
+                      const el = e.currentTarget;
+                      el.style.transform = "translateY(0)";
+                      el.style.borderColor = "hsl(42 37% 57% / 0.25)";
+                      el.style.boxShadow =
+                        "0 4px 20px hsl(0 0% 0% / 0.15), inset 0 1px 0 hsl(0 0% 100% / 0.04)";
+                    }}
+                  >
+                    <card.icon
+                      className="w-5 h-5 mb-3"
+                      style={{ color: "hsl(42 37% 57% / 0.7)" }}
+                    />
+                    <span
+                      className="font-sans"
+                      style={{
+                        fontSize: "10px",
+                        letterSpacing: "0.12em",
+                        textTransform: "uppercase",
+                        fontWeight: 500,
+                        color: "hsl(0 0% 100% / 0.85)",
+                        lineHeight: 1.4,
+                      }}
+                    >
+                      {card.title}
+                    </span>
+                  </a>
+                </ScrollReveal>
+              ))}
+            </div>
+          </div>
+
           <nav className="flex flex-col gap-3 px-4" aria-label="Quick links">
             {links.map((link, i) => (
               <ScrollReveal key={link.label} delay={i * 120}>

@@ -58,6 +58,8 @@ const Testimonials = () => {
                   src={echelonIcon}
                   alt=""
                   className="absolute bottom-4 right-4 h-10 w-auto"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
             )}

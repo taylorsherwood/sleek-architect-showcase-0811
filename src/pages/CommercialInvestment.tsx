@@ -137,6 +137,8 @@ const CommercialInvestment = () => {
                     src={sanJoseAve}
                     alt="10811 San Jose Ave, Del Valle TX — 3.06 acres redevelopment land"
                     className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
+                    loading="lazy"
+                    decoding="async"
                   />
                   <span className="absolute top-4 left-4 text-minimal bg-gold text-foreground px-3 py-1 font-extrabold">
                     DEVELOPMENT LAND

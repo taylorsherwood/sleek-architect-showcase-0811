@@ -1,7 +1,10 @@
+import { useState, useEffect } from "react";
 import SEOHead from "@/components/SEOHead";
 import taylorHeadshot from "@/assets/taylor-headshot.jpg";
 import echelonLogo from "@/assets/echelon-logo-gold.png";
 import { Instagram, Mail, Phone } from "lucide-react";
+import ScrollReveal from "@/components/ScrollReveal";
+import { useHeroScroll } from "@/hooks/useHeroScroll";
 
 const links = [
   { label: "Become an Echelon Insider", href: "https://taylorsherwood.myflodesk.com/biolink" },
@@ -19,6 +22,23 @@ const socials = [
 ];
 
 const Connect = () => {
+  const scrollProgress = useHeroScroll();
+  const [heroHeight, setHeroHeight] = useState(0);
+
+  // Measure hero card height for scroll-based darkening
+  useEffect(() => {
+    const updateHeight = () => {
+      const heroEl = document.getElementById("connect-hero");
+      if (heroEl) setHeroHeight(heroEl.offsetHeight);
+    };
+    updateHeight();
+    window.addEventListener("resize", updateHeight);
+    return () => window.removeEventListener("resize", updateHeight);
+  }, []);
+
+  // Calculate a 0–1 progress for the hero card area only
+  const heroProgress = heroHeight > 0 ? Math.min(window.scrollY / (heroHeight * 0.6), 1) : 0;
+
   return (
     <>
       <SEOHead
@@ -33,6 +53,7 @@ const Connect = () => {
 
           {/* ── Hero Profile Card ── */}
           <div
+            id="connect-hero"
             className="relative overflow-hidden"
             style={{
               borderRadius: "0 0 24px 24px",
@@ -40,6 +61,16 @@ const Connect = () => {
                 "0 24px 64px hsl(0 0% 0% / 0.5), 0 8px 24px hsl(0 0% 0% / 0.3)",
             }}
           >
+            {/* Darken overlay on scroll */}
+            <div
+              className="absolute inset-0 bg-black pointer-events-none"
+              style={{
+                opacity: scrollProgress * 0.4,
+                zIndex: 2,
+                borderRadius: "0 0 24px 24px",
+              }}
+            />
+
             <div className="relative w-full" style={{ aspectRatio: "3 / 4.2" }}>
               <img
                 src={taylorHeadshot}
@@ -160,114 +191,134 @@ const Connect = () => {
                 </div>
               </div>
             </div>
+
+            {/* Scroll indicator */}
+            <div
+              className="absolute bottom-3 left-1/2 -translate-x-1/2 flex flex-col items-center"
+              style={{
+                zIndex: 3,
+                opacity: 1 - scrollProgress * 5,
+                pointerEvents: "none",
+              }}
+            >
+              <div className="scroll-indicator-line" />
+            </div>
           </div>
 
           {/* ── Logo between sections ── */}
-          <div className="flex justify-center my-4 px-4">
-            <img
-              src={echelonLogo}
-              alt="Echelon Property Group"
-              style={{ height: "140px" }}
-              loading="eager"
-            />
-          </div>
+          <ScrollReveal>
+            <div className="flex justify-center my-4 px-4">
+              <img
+                src={echelonLogo}
+                alt="Echelon Property Group"
+                style={{ height: "140px" }}
+                loading="eager"
+              />
+            </div>
+          </ScrollReveal>
 
           {/* ── Action Buttons ── */}
           <nav className="flex flex-col gap-3 px-4" aria-label="Quick links">
-            {links.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group relative flex items-center justify-between w-full transition-all duration-500 cta-glow-pulse"
-                style={{
-                  borderRadius: "18px",
-                  padding: "24px 28px",
-                  background: link.featured
-                    ? "hsl(233 42% 14% / 0.25)"
-                    : "hsl(233 42% 14% / 0.15)",
-                  backdropFilter: "blur(24px)",
-                  WebkitBackdropFilter: "blur(24px)",
-                  border: link.featured
-                    ? "1px solid hsl(42 37% 57% / 0.5)"
-                    : "1px solid hsl(0 0% 100% / 0.1)",
-                  boxShadow: link.featured
-                    ? "0 6px 28px hsl(0 0% 0% / 0.15), 0 0 40px hsl(42 37% 57% / 0.08), inset 0 1px 0 hsl(0 0% 100% / 0.08)"
-                    : "0 4px 20px hsl(0 0% 0% / 0.1), inset 0 1px 0 hsl(0 0% 100% / 0.07)",
-                }}
-                onMouseEnter={(e) => {
-                  const el = e.currentTarget;
-                  const textEl = el.querySelector("span");
-                  el.style.borderColor = "hsl(42 37% 57% / 0.7)";
-                  el.style.boxShadow = "0 8px 32px hsl(42 37% 57% / 0.2), 0 0 60px hsl(42 37% 57% / 0.12)";
-                  el.style.transform = "translateY(-2px)";
-                  if (textEl) textEl.style.color = "hsl(42 37% 85%)";
-                }}
-                onMouseLeave={(e) => {
-                  const el = e.currentTarget;
-                  const textEl = el.querySelector("span");
-                  el.style.borderColor = link.featured
-                    ? "hsl(42 37% 57% / 0.5)"
-                    : "hsl(0 0% 100% / 0.045)";
-                  el.style.boxShadow = link.featured
-                    ? "0 6px 28px hsl(0 0% 0% / 0.3), 0 0 40px hsl(42 37% 57% / 0.08), inset 0 1px 0 hsl(0 0% 100% / 0.04), inset 0 0 40px hsl(42 37% 57% / 0.06)"
-                    : "0 4px 20px hsl(0 0% 0% / 0.25), inset 0 1px 0 hsl(0 0% 100% / 0.025), inset 0 0 20px hsl(0 0% 100% / 0.008)";
-                  el.style.transform = "translateY(0)";
-                  if (textEl) textEl.style.color = link.featured ? "hsl(42 37% 67%)" : "hsl(0 0% 100% / 0.78)";
-                }}
-              >
-                <span
-                  className="font-sans w-full text-center"
+            {links.map((link, i) => (
+              <ScrollReveal key={link.label} delay={i * 120}>
+                <a
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group relative flex items-center justify-between w-full cta-glow-pulse"
                   style={{
-                    fontSize: "12px",
-                    letterSpacing: "0.1em",
-                    textTransform: "uppercase",
-                    fontWeight: 500,
-                    color: link.featured ? "hsl(42 37% 67%)" : "hsl(0 0% 100% / 0.78)",
+                    borderRadius: "18px",
+                    padding: "24px 28px",
+                    background: link.featured
+                      ? "hsl(233 42% 14% / 0.25)"
+                      : "hsl(233 42% 14% / 0.15)",
+                    backdropFilter: "blur(24px)",
+                    WebkitBackdropFilter: "blur(24px)",
+                    border: link.featured
+                      ? "1px solid hsl(42 37% 57% / 0.5)"
+                      : "1px solid hsl(0 0% 100% / 0.1)",
+                    boxShadow: link.featured
+                      ? "0 6px 28px hsl(0 0% 0% / 0.15), 0 0 40px hsl(42 37% 57% / 0.08), inset 0 1px 0 hsl(0 0% 100% / 0.08)"
+                      : "0 4px 20px hsl(0 0% 0% / 0.1), inset 0 1px 0 hsl(0 0% 100% / 0.07)",
+                    transition:
+                      "transform 250ms ease-in-out, box-shadow 250ms ease-in-out, border-color 250ms ease-in-out",
+                  }}
+                  onMouseEnter={(e) => {
+                    const el = e.currentTarget;
+                    const textEl = el.querySelector("span");
+                    el.style.borderColor = "hsl(42 37% 57% / 0.7)";
+                    el.style.boxShadow = "0 8px 32px hsl(42 37% 57% / 0.2), 0 0 60px hsl(42 37% 57% / 0.12)";
+                    el.style.transform = "translateY(-4px)";
+                    if (textEl) textEl.style.color = "hsl(42 37% 85%)";
+                  }}
+                  onMouseLeave={(e) => {
+                    const el = e.currentTarget;
+                    const textEl = el.querySelector("span");
+                    el.style.borderColor = link.featured
+                      ? "hsl(42 37% 57% / 0.5)"
+                      : "hsl(0 0% 100% / 0.045)";
+                    el.style.boxShadow = link.featured
+                      ? "0 6px 28px hsl(0 0% 0% / 0.3), 0 0 40px hsl(42 37% 57% / 0.08), inset 0 1px 0 hsl(0 0% 100% / 0.04), inset 0 0 40px hsl(42 37% 57% / 0.06)"
+                      : "0 4px 20px hsl(0 0% 0% / 0.25), inset 0 1px 0 hsl(0 0% 100% / 0.025), inset 0 0 20px hsl(0 0% 100% / 0.008)";
+                    el.style.transform = "translateY(0)";
+                    if (textEl) textEl.style.color = link.featured ? "hsl(42 37% 67%)" : "hsl(0 0% 100% / 0.78)";
                   }}
                 >
-                  {link.label}
-                </span>
-              </a>
+                  <span
+                    className="font-sans w-full text-center"
+                    style={{
+                      fontSize: "12px",
+                      letterSpacing: "0.1em",
+                      textTransform: "uppercase",
+                      fontWeight: 500,
+                      color: link.featured ? "hsl(42 37% 67%)" : "hsl(0 0% 100% / 0.78)",
+                      transition: "color 250ms ease-in-out",
+                    }}
+                  >
+                    {link.label}
+                  </span>
+                </a>
+              </ScrollReveal>
             ))}
           </nav>
 
           {/* ── Footer ── */}
-          <div className="flex flex-col items-center gap-2 mt-8 mb-4 px-4">
-            <div
-              className="w-10 h-px"
-              style={{
-                background:
-                  "linear-gradient(90deg, transparent, hsl(42 37% 57% / 0.18), transparent)",
-              }}
-            />
-            <a
-              href="https://www.echelonpropertygroup.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-sans transition-opacity duration-300 hover:opacity-80"
-              style={{
-                fontSize: "9px",
-                letterSpacing: "0.3em",
-                textTransform: "uppercase",
-                color: "#baa26a",
-              }}
-            >
-              Echelon Property Group
-            </a>
-            <p
-              className="font-sans"
-              style={{
-                fontSize: "8px",
-                letterSpacing: "0.25em",
-                textTransform: "uppercase",
-                color: "hsl(0 0% 100% / 0.5)",
-              }}
-            >
-              Brokered by eXp Realty
-            </p>
-          </div>
+          <ScrollReveal delay={200}>
+            <div className="flex flex-col items-center gap-2 mt-8 mb-4 px-4">
+              <div
+                className="w-10 h-px"
+                style={{
+                  background:
+                    "linear-gradient(90deg, transparent, hsl(42 37% 57% / 0.18), transparent)",
+                }}
+              />
+              <a
+                href="https://www.echelonpropertygroup.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-sans transition-opacity duration-300 hover:opacity-80"
+                style={{
+                  fontSize: "9px",
+                  letterSpacing: "0.3em",
+                  textTransform: "uppercase",
+                  color: "#baa26a",
+                }}
+              >
+                Echelon Property Group
+              </a>
+              <p
+                className="font-sans"
+                style={{
+                  fontSize: "8px",
+                  letterSpacing: "0.25em",
+                  textTransform: "uppercase",
+                  color: "hsl(0 0% 100% / 0.5)",
+                }}
+              >
+                Brokered by eXp Realty
+              </p>
+            </div>
+          </ScrollReveal>
         </div>
       </div>
     </>

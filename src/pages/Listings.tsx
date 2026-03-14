@@ -19,30 +19,6 @@ const listings = [
     description: "Elegant villa in the heart of Barton Creek with refined finishes, open floor plan, and access to world-class amenities.",
     link: "https://www.villagovernorshill.com",
   },
-  {
-    image: listing2,
-    address: "1203 Westlake Ridge",
-    location: "Westlake Hills, Austin",
-    price: "$7,250,000",
-    beds: 6,
-    baths: 7,
-    sqft: "8,400",
-    acres: "2.5",
-    description: "Architectural masterpiece perched on a Westlake hilltop offering unobstructed views of the Hill Country. Infinity pool and private wine cellar.",
-    link: "#",
-  },
-  {
-    image: listing3,
-    address: "Ranch Estate on 42 Acres",
-    location: "Texas Hill Country",
-    price: "$5,900,000",
-    beds: 4,
-    baths: 5,
-    sqft: "5,800",
-    acres: "42",
-    description: "Exceptional Hill Country ranch with a custom-built stone and timber home, horse facilities, spring-fed pond, and sweeping sunset views.",
-    link: "#",
-  },
 ];
 
 const Listings = () => {

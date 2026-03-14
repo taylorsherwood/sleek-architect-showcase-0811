@@ -132,11 +132,10 @@ const Hero = () => {
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-light text-warm-cream text-architectural mb-8 reveal" style={{ textShadow: '0 2px 20px rgba(0,0,0,0.5), 0 1px 4px rgba(0,0,0,0.4)' }}>
             Austin Luxury
             <br />
-            Real Estate &amp;
+            Real Estate
             <br />
-            <span className="italic">Exclusive Homes</span>
+            <span className="italic">| Echelon Property Group</span>
           </h1>
-          <span className="sr-only">Echelon Property Group</span>
           <p className="text-lg md:text-xl text-warm-cream/85 font-light max-w-xl mb-10 reveal-delayed" style={{ fontFamily: '"Roboto", sans-serif', textShadow: '0 1px 8px rgba(0,0,0,0.4)' }}>
             Austin luxury homes, investment properties, land opportunities, and select commercial real estate — expertly guided by Echelon Property Group across Austin's most coveted neighborhoods.
           </p>

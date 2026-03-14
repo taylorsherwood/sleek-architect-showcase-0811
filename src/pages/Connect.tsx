@@ -261,7 +261,7 @@ const Connect = () => {
                     <span
                       className="font-sans"
                       style={{
-                        fontSize: "10px",
+                        fontSize: "12px",
                         letterSpacing: "0.12em",
                         textTransform: "uppercase",
                         fontWeight: 500,
@@ -326,7 +326,7 @@ const Connect = () => {
                   <span
                     className="font-sans w-full text-center"
                     style={{
-                      fontSize: "12px",
+                      fontSize: "13px",
                       letterSpacing: "0.1em",
                       textTransform: "uppercase",
                       fontWeight: 500,

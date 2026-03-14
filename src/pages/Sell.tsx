@@ -376,8 +376,8 @@ const Sell = () => {
             </div>
             <div className="relative">
               <img
-                src="/lovable-uploads/537facb0-1fbc-450c-8c4a-c1d06c4aa924.jpg"
-                alt="Luxury Austin home exterior — marketing showcase"
+                src={taylorProfileSell}
+                alt="Taylor Sherwood — Austin luxury real estate advisor"
                 className="w-full aspect-[3/4] object-cover"
                 loading="lazy"
               />

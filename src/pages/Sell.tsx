@@ -377,10 +377,10 @@ const Sell = () => {
             </div>
             <div className="relative flex items-center justify-center">
               <img
-                src={taylorProfileSell}
-                alt="Taylor Sherwood — Austin luxury real estate advisor"
-                title="Taylor Sherwood — sell your Austin luxury home with Echelon Property Group"
-                className="w-4/5 aspect-[3/4] object-cover object-top"
+                src={echelonForSaleSign}
+                alt="Echelon Property Group for sale sign in front of Austin luxury home"
+                title="Echelon Property Group — luxury home marketing in Austin TX"
+                className="w-full aspect-[4/3] object-cover object-center"
                 loading="lazy"
               />
             </div>

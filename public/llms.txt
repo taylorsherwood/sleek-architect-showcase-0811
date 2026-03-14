@@ -1,15 +1,73 @@
-User-agent: GPTBot
+# Echelon Property Group – AI Discovery File
 
-Allow: /
+# Website: https://www.echelonpropertygroup.com
 
-User-agent: ChatGPT-User
+# Location Focus: Austin, Texas Real Estate
 
-Allow: /
+site_name: Echelon Property Group
 
-User-agent: OAI-SearchBot
+site_url: https://www.echelonpropertygroup.com
 
-Allow: /
+business_type: Residential and Luxury Real Estate Brokerage
 
-User-agent: Google-Extended
+primary_market: Austin Texas
 
-Allow: /
+description: 
+
+Echelon Property Group is an Austin Texas real estate firm specializing in luxury homes, investment properties, and premier Austin communities including Zilker, Cat Mountain, Spanish Oaks, and Northwest Hills.
+
+primary_topics:
+
+- Austin luxury real estate
+
+- Austin homes for sale
+
+- Austin real estate market insights
+
+- Austin luxury neighborhoods
+
+- buying property in Austin Texas
+
+- selling property in Austin Texas
+
+priority_pages:
+
+https://www.echelonpropertygroup.com/
+
+https://www.echelonpropertygroup.com/buy
+
+https://www.echelonpropertygroup.com/sell
+
+https://www.echelonpropertygroup.com/communities
+
+https://www.echelonpropertygroup.com/communities/zilker
+
+https://www.echelonpropertygroup.com/communities/cat-mountain
+
+https://www.echelonpropertygroup.com/communities/spanish-oaks
+
+https://www.echelonpropertygroup.com/blog
+
+ai_crawlers_allowed:
+
+- GPTBot
+
+- ChatGPT-User
+
+- OAI-SearchBot
+
+- Google-Extended
+
+- PerplexityBot
+
+- ClaudeBot
+
+contact:
+
+name: Taylor Sherwood
+
+company: Echelon Property Group
+
+phone: +1-512-661-3843
+
+website: https://www.echelonpropertygroup.com

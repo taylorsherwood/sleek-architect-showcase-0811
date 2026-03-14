@@ -85,12 +85,12 @@ const Connect = () => {
                 <p
                   className="font-sans"
                   style={{
-                    fontSize: "13px",
-                    letterSpacing: "0.22em",
+                    fontSize: "15px",
+                    letterSpacing: "0.2em",
                     textTransform: "uppercase",
                     fontVariant: "all-small-caps",
                     fontWeight: 500,
-                    lineHeight: 1.4,
+                    lineHeight: 1.3,
                     color: "hsl(42 37% 67%)",
                   }}
                 >
@@ -99,16 +99,16 @@ const Connect = () => {
                 <p
                   className="font-sans"
                   style={{
-                    fontSize: "11.5px",
-                    letterSpacing: "0.25em",
+                    fontSize: "12px",
+                    letterSpacing: "0.22em",
                     textTransform: "uppercase",
                     fontWeight: 400,
-                    lineHeight: 1.4,
-                    marginTop: "2px",
+                    lineHeight: 1.3,
+                    marginTop: "1px",
                     color: "hsl(0 0% 100% / 0.38)",
                   }}
                 >
-                  Land&ensp;·&ensp;Investment Property
+                  Land&nbsp;·&nbsp;Investment Property
                 </p>
 
                 {/* Social icons */}

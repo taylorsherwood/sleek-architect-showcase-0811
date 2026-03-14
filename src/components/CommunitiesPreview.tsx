@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import bartonCreek from "@/assets/community-barton-creek.jpg";
-import westlake from "@/assets/community-westlake.jpg";
+import westlake from "@/assets/community-westlake-hills.avif";
 import lakeAustin from "@/assets/community-lake-austin.jpg";
 import hillCountry from "@/assets/community-hill-country.jpg";
 import rollingwood from "@/assets/community-rollingwood.jpg";

@@ -20,7 +20,7 @@ import listing2 from "@/assets/listing-2.jpg";
 import listing3 from "@/assets/listing-3.jpg";
 import heroImg from "@/assets/hero-luxury-austin.jpg";
 import bartonCreekImg from "@/assets/community-barton-creek.jpg";
-import westlakeImg from "@/assets/community-westlake.jpg";
+import westlakeImg from "@/assets/community-westlake-hills.avif";
 import lakeAustinImg from "@/assets/community-lake-austin.jpg";
 import downtownImg from "@/assets/community-downtown.jpg";
 

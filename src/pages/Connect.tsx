@@ -86,7 +86,7 @@ const Connect = () => {
           </div>
 
           {/* ── Divider ── */}
-          <div className="w-16 mx-auto mt-11 mb-11">
+          <div className="w-16 mx-auto mt-8 mb-8">
             <div
               className="h-px"
               style={{

@@ -155,18 +155,6 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Scroll indicator */}
-      <div
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center"
-        style={{
-          zIndex: 4,
-          opacity: 1 - scrollProgress * 4,
-          transition: "none",
-          pointerEvents: "none",
-        }}
-      >
-        <div className="scroll-indicator-line" />
-      </div>
     </section>
   );
 };

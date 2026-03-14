@@ -21,7 +21,7 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <SEOHead
-        title="Austin Luxury Real Estate | Homes, Land & Investment Property | Echelon Property Group"
+        title="Austin Luxury Real Estate | Echelon Property Group"
         description="Luxury homes, land, and investment real estate in Austin Texas. Work with Taylor Sherwood of Echelon Property Group for exclusive listings, off-market opportunities, and expert Austin real estate guidance."
       />
       <SchemaMarkup schema={realEstateAgentSchema} />

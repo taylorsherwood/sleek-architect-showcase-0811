@@ -294,7 +294,7 @@ const Buy = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Buying Real Estate in Austin & Barton Creek | Echelon Property Group"
+        title="Buying Real Estate in Austin | Echelon Property Group"
         description="Expert buyer representation for Austin luxury homes for sale. Access off-market Barton Creek homes for sale, investment properties, and concierge-level service with Taylor Sherwood — a top Austin luxury real estate agent."
         canonical="https://www.echelonpropertygroup.com/buy" />
       

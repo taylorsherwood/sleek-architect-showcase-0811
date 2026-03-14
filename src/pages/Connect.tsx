@@ -228,7 +228,7 @@ const Connect = () => {
                 <ScrollReveal key={card.href} delay={i * 120}>
                   <a
                     href={card.href}
-                    className="flex flex-col items-center justify-center text-center px-4 py-6 rounded-2xl cta-glow-pulse"
+                    className="flex flex-col items-center justify-center text-center px-4 py-6 rounded-2xl"
                     style={{
                       background: "hsl(233 42% 14% / 0.2)",
                       backdropFilter: "blur(24px)",
@@ -284,7 +284,7 @@ const Connect = () => {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group relative flex items-center justify-between w-full cta-glow-pulse"
+                  className="group relative flex items-center justify-between w-full"
                   style={{
                     borderRadius: "18px",
                     padding: "24px 28px",

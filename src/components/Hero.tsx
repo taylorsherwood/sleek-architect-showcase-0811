@@ -134,7 +134,7 @@ const Hero = () => {
             <br />
             Real Estate &amp;
             <br />
-            <span className="italic">Investment Properties</span>
+            <span className="italic">Exclusive Homes</span>
           </h1>
           <span className="sr-only">Echelon Property Group</span>
           <p className="text-lg md:text-xl text-warm-cream/85 font-light max-w-xl mb-10 reveal-delayed" style={{ fontFamily: '"Roboto", sans-serif', textShadow: '0 1px 8px rgba(0,0,0,0.4)' }}>

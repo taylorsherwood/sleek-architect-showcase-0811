@@ -127,7 +127,7 @@ const CommunityPage = () => {
             </Link>
             <p className="text-minimal text-gold mb-4">{community.priceRange}</p>
             <h1 className="text-5xl md:text-7xl font-display font-light text-architectural mb-8">
-              {community.name} Real Estate &amp; Homes for Sale in Austin
+              {community.name} Homes for Sale in Austin, Texas
             </h1>
           </div>
         </div>

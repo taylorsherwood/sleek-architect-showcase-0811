@@ -227,7 +227,7 @@ const Connect = () => {
           </nav>
 
           {/* ── Footer ── */}
-          <div className="flex flex-col items-center gap-3 mt-12 mb-4">
+          <div className="flex flex-col items-center gap-2 mt-8 mb-2">
             <div
               className="w-10 h-px"
               style={{

@@ -266,7 +266,7 @@ const CommunityPage = () => {
               </p>
               <Link
                 to="/contact"
-                className="inline-block text-minimal bg-primary text-primary-foreground hover:bg-primary/90 px-10 py-4 transition-colors duration-300"
+                className="inline-block text-minimal bg-primary text-primary-foreground hover:bg-gold hover:text-white px-10 py-4 transition-colors duration-300"
               >
                 CONTACT US
               </Link>

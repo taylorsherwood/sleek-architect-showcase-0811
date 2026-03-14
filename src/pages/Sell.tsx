@@ -290,7 +290,7 @@ const Sell = () => {
           <div className="max-w-2xl">
             <p className="text-minimal text-primary-foreground/60 mb-4 reveal">SELLER SERVICES</p>
             <h1 className="text-4xl md:text-6xl font-display font-light text-primary-foreground leading-[1.1] mb-6 reveal">
-              Sell Your Home
+              Sell Your Property
               <br />
               in Austin
             </h1>

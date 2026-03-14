@@ -112,7 +112,7 @@ const Connect = () => {
                 </p>
 
                 {/* Social icons */}
-                <div className="flex items-center gap-4 mt-7">
+                <div className="flex items-center gap-3 mt-5">
                   {socials.map((s) => (
                     <a
                       key={s.label}

@@ -7,7 +7,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import { useHeroScroll } from "@/hooks/useHeroScroll";
 
 const links = [
-  { label: "Become an Echelon Insider", href: "https://taylorsherwood.myflodesk.com/biolink" },
+  { label: "Become an Echelon Insider", href: "https://taylorsherwood.myflodesk.com/biolink", buzz: true },
   
   
   { label: "Complimentary Property Valuation", href: "https://www.echelonpropertygroup.com/sell" },
@@ -284,7 +284,7 @@ const Connect = () => {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group relative flex items-center justify-between w-full"
+                  className={`group relative flex items-center justify-between w-full${'buzz' in link && link.buzz ? ' cta-buzz' : ''}`}
                   style={{
                     borderRadius: "18px",
                     padding: "24px 28px",

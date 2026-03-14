@@ -93,7 +93,7 @@ const Contact = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Contact Echelon Property Group | Austin Real Estate Advisor"
-        description="Contact Taylor Sherwood and Echelon Property Group for luxury homes, land, commercial real estate, and investment property in Austin Texas. Schedule a consultation today."
+        description="Contact Taylor Sherwood and Echelon Property Group for luxury homes, land, commercial, and investment real estate in Austin TX. Schedule a consultation today."
       />
       <Navigation />
 

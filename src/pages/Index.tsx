@@ -6,7 +6,6 @@ import ExpertiseSection from "@/components/ExpertiseSection";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { realEstateAgentSchema, localBusinessSchema, taylorSherwoodSchema, organizationSchema } from "@/components/SchemaMarkup";
 import ScrollReveal from "@/components/ScrollReveal";
-import HeroCTAStrip from "@/components/HeroCTAStrip";
 
 // Lazy-load below-fold sections to reduce initial JS bundle
 const CommunitiesPreview = lazy(() => import("@/components/CommunitiesPreview"));
@@ -70,7 +69,6 @@ const Index = () => {
       <SchemaMarkup schema={taylorSherwoodSchema} />
       <Navigation />
       <Hero />
-      <HeroCTAStrip />
 
       <ScrollReveal>
         <CredibilityStrip />

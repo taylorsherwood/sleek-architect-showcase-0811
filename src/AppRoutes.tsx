@@ -30,8 +30,16 @@ const SellHomeAustin = lazy(() => import("@/pages/SellHomeAustin"));
 const AustinRealEstateInvestment = lazy(() => import("@/pages/AustinRealEstateInvestment"));
 const LandForSaleAustin = lazy(() => import("@/pages/LandForSaleAustin"));
 const PastTransactions = lazy(() => import("@/pages/PastTransactions"));
-const Connect = lazy(() => import("@/pages/Connect"));
+const connectImport = () => import("@/pages/Connect");
+const Connect = lazy(connectImport);
 const NotFound = lazy(() => import("@/pages/NotFound"));
+
+// Prefetch /connect chunk after homepage loads
+if (typeof window !== "undefined") {
+  window.addEventListener("load", () => {
+    requestIdleCallback?.(() => connectImport()) ?? setTimeout(() => connectImport(), 2000);
+  });
+}
 
 const AppRoutes = () => {
   return (

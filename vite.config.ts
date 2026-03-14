@@ -3,6 +3,7 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import fs from "fs";
 import { componentTagger } from "lovable-tagger";
+import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
 
 const SITE_URL = "https://www.echelonpropertygroup.com";
 

@@ -74,6 +74,8 @@ const AppRoutes = () => {
           <Route path="/sell-home-austin" element={<SellHomeAustin />} />
           <Route path="/austin-real-estate-investment" element={<AustinRealEstateInvestment />} />
           <Route path="/land-for-sale-austin" element={<LandForSaleAustin />} />
+          <Route path="/search" element={<SearchPage />} />
+          <Route path="/land" element={<LandPage />} />
           <Route path="/past-transactions" element={<PastTransactions />} />
           <Route path="/connect" element={<Connect />} />
           <Route path="*" element={<NotFound />} />

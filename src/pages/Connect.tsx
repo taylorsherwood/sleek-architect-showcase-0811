@@ -160,15 +160,13 @@ const Connect = () => {
             </div>
           </div>
 
-          {/* ── Gold Divider ── */}
+          {/* ── Logo between sections ── */}
           <div className="flex justify-center my-8">
-            <div
-              className="h-px"
-              style={{
-                width: "50px",
-                background:
-                  "linear-gradient(90deg, transparent, hsl(42 37% 57% / 0.35), transparent)",
-              }}
+            <img
+              src={echelonLogo}
+              alt="Echelon Property Group"
+              style={{ height: "100px", opacity: 0.55 }}
+              loading="eager"
             />
           </div>
 

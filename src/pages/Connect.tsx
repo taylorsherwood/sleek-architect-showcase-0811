@@ -28,8 +28,8 @@ const Connect = () => {
           <div className="relative mt-10">
             {/* outer glow */}
             <div
-              className="absolute -inset-3 rounded-full opacity-25 blur-2xl"
-              style={{ background: "radial-gradient(circle, hsl(42 37% 57% / 0.35), transparent 70%)" }}
+              className="absolute -inset-4 rounded-full opacity-40 blur-2xl"
+              style={{ background: "radial-gradient(circle, hsl(42 37% 57% / 0.55), transparent 65%)" }}
             />
             {/* double ring */}
             <div className="relative w-[180px] h-[180px] sm:w-[200px] sm:h-[200px] rounded-full p-[3px]"

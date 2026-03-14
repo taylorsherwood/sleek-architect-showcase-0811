@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import heroFallback from "@/assets/hero-fallback.jpg";
+import { useHeroScroll } from "@/hooks/useHeroScroll";
 
 const FALLBACK_TIMEOUT = 4000;
 const RETRY_DELAY = 800;
@@ -10,6 +11,7 @@ const Hero = () => {
   const [videoReady, setVideoReady] = useState(false);
   const [videoSrc, setVideoSrc] = useState<string | null>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
+  const scrollProgress = useHeroScroll();
 
   // Lazy-load: set video src after initial render
   useEffect(() => {
@@ -18,7 +20,6 @@ const Hero = () => {
       setShowFallback(true);
       return;
     }
-    // Defer video source load to after first paint
     requestAnimationFrame(() => {
       setVideoSrc("/videos/hero-video.mp4");
     });
@@ -32,7 +33,6 @@ const Hero = () => {
       return;
     }
 
-    // Safari requires muted to be set programmatically
     video.muted = true;
     video.defaultMuted = true;
     video.setAttribute('muted', '');
@@ -90,7 +90,13 @@ const Hero = () => {
 
   return (
     <section className="relative h-screen flex items-center overflow-hidden bg-black">
-      {/* Decorative background video — not interactive */}
+      {/* Hero darken on scroll */}
+      <div
+        className="absolute inset-0 bg-black pointer-events-none"
+        style={{ opacity: scrollProgress * 0.5, zIndex: 3, transition: "none" }}
+      />
+
+      {/* Decorative background video */}
       <div
         aria-hidden="true"
         className="absolute inset-0 pointer-events-none select-none overflow-hidden"
@@ -152,6 +158,19 @@ const Hero = () => {
             </Link>
           </div>
         </div>
+      </div>
+
+      {/* Scroll indicator */}
+      <div
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center"
+        style={{
+          zIndex: 4,
+          opacity: 1 - scrollProgress * 4,
+          transition: "none",
+          pointerEvents: "none",
+        }}
+      >
+        <div className="scroll-indicator-line" />
       </div>
     </section>
   );

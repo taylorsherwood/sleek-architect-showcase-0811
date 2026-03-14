@@ -5,6 +5,7 @@ import CredibilityStrip from "@/components/CredibilityStrip";
 import ExpertiseSection from "@/components/ExpertiseSection";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { realEstateAgentSchema, localBusinessSchema, taylorSherwoodSchema, organizationSchema } from "@/components/SchemaMarkup";
+import ScrollReveal from "@/components/ScrollReveal";
 
 // Lazy-load below-fold sections to reduce initial JS bundle
 const CommunitiesPreview = lazy(() => import("@/components/CommunitiesPreview"));
@@ -68,20 +69,44 @@ const Index = () => {
       <SchemaMarkup schema={taylorSherwoodSchema} />
       <Navigation />
       <Hero />
-      <CredibilityStrip />
-      <ExpertiseSection />
+
+      <ScrollReveal>
+        <CredibilityStrip />
+      </ScrollReveal>
+
+      <ScrollReveal delay={100}>
+        <ExpertiseSection />
+      </ScrollReveal>
 
       <Suspense fallback={<BelowFold />}>
-        <CommunitiesPreview />
-        <CommercialCTA />
+        <ScrollReveal>
+          <CommunitiesPreview />
+        </ScrollReveal>
+        <ScrollReveal>
+          <CommercialCTA />
+        </ScrollReveal>
         <div className="py-8 bg-secondary" />
-        <FeaturedListings />
-        <IntroSection />
-        <MeetTaylor />
-        <Testimonials />
-        <SellerCTA />
-        <CTASection />
-        <NewsletterSection />
+        <ScrollReveal>
+          <FeaturedListings />
+        </ScrollReveal>
+        <ScrollReveal>
+          <IntroSection />
+        </ScrollReveal>
+        <ScrollReveal>
+          <MeetTaylor />
+        </ScrollReveal>
+        <ScrollReveal>
+          <Testimonials />
+        </ScrollReveal>
+        <ScrollReveal>
+          <SellerCTA />
+        </ScrollReveal>
+        <ScrollReveal>
+          <CTASection />
+        </ScrollReveal>
+        <ScrollReveal>
+          <NewsletterSection />
+        </ScrollReveal>
         <Footer />
       </Suspense>
     </div>

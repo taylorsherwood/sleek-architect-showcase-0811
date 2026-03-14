@@ -185,16 +185,16 @@ const Connect = () => {
                   borderRadius: "18px",
                   padding: "24px 28px",
                   background: link.featured
-                    ? "hsl(233 42% 14% / 0.5)"
-                    : "hsl(233 42% 14% / 0.35)",
-                  backdropFilter: "blur(20px)",
-                  WebkitBackdropFilter: "blur(20px)",
+                    ? "hsl(233 42% 14% / 0.25)"
+                    : "hsl(233 42% 14% / 0.15)",
+                  backdropFilter: "blur(24px)",
+                  WebkitBackdropFilter: "blur(24px)",
                   border: link.featured
                     ? "1px solid hsl(42 37% 57% / 0.5)"
-                    : "1px solid hsl(0 0% 100% / 0.08)",
+                    : "1px solid hsl(0 0% 100% / 0.1)",
                   boxShadow: link.featured
-                    ? "0 6px 28px hsl(0 0% 0% / 0.2), 0 0 40px hsl(42 37% 57% / 0.08), inset 0 1px 0 hsl(0 0% 100% / 0.06)"
-                    : "0 4px 20px hsl(0 0% 0% / 0.15), inset 0 1px 0 hsl(0 0% 100% / 0.05)",
+                    ? "0 6px 28px hsl(0 0% 0% / 0.15), 0 0 40px hsl(42 37% 57% / 0.08), inset 0 1px 0 hsl(0 0% 100% / 0.08)"
+                    : "0 4px 20px hsl(0 0% 0% / 0.1), inset 0 1px 0 hsl(0 0% 100% / 0.07)",
                 }}
                 onMouseEnter={(e) => {
                   const el = e.currentTarget;

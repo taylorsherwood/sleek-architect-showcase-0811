@@ -73,10 +73,10 @@ const Connect = () => {
             <p
               className="font-display leading-[1.7] mt-4"
               style={{
-                fontSize: "10.5px",
+                fontSize: "12px",
                 letterSpacing: "0.2em",
                 textTransform: "uppercase",
-                color: "hsl(0 0% 100% / 0.4)",
+                color: "hsl(0 0% 100% / 0.55)",
               }}
             >
               Austin Luxury Real Estate

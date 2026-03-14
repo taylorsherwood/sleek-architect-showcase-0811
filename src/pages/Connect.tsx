@@ -4,9 +4,9 @@ import echelonLogo from "@/assets/echelon-logo-gold.png";
 import { ExternalLink } from "lucide-react";
 
 const links = [
+  { label: "Complimentary Property Valuation", href: "https://www.echelonpropertygroup.com/sell" },
   { label: "Featured Austin Luxury Listing", href: "https://www.villagovernorshill.com" },
   { label: "Search Austin Homes", href: "https://taylorsherwood.realscout.com/homesearch/map" },
-  { label: "Complimentary Home Valuation", href: "https://www.echelonpropertygroup.com/sell" },
   { label: "Work With Taylor", href: "https://www.echelonpropertygroup.com/contact" },
   { label: "Instagram", href: "https://www.instagram.com/TheInvestorBroker" },
 ];
@@ -18,11 +18,11 @@ const Connect = () => {
         title="Taylor Sherwood | Austin Luxury Real Estate"
         description="Connect with Austin luxury real estate advisor Taylor Sherwood. Browse listings, search homes, or request a private consultation."
       />
-      <div className="min-h-screen flex flex-col items-center justify-start px-4 py-12 sm:py-16" style={{ backgroundColor: "hsl(233, 50%, 9%)" }}>
-        <div className="w-full max-w-md mx-auto flex flex-col items-center gap-8">
+      <div className="min-h-screen flex flex-col items-center justify-start px-5 py-14 sm:py-20" style={{ backgroundColor: "hsl(233, 50%, 9%)" }}>
+        <div className="w-full max-w-md mx-auto flex flex-col items-center">
           {/* Profile */}
-          <div className="flex flex-col items-center gap-4">
-            <div className="w-28 h-28 rounded-full overflow-hidden ring-2 ring-gold/40 shadow-[0_0_40px_rgba(186,162,106,0.15)]">
+          <div className="flex flex-col items-center">
+            <div className="w-32 h-32 rounded-full overflow-hidden ring-2 ring-gold/30 shadow-[0_0_50px_rgba(186,162,106,0.12)]">
               <img
                 src={taylorHeadshot}
                 alt="Taylor Sherwood - Austin Luxury Real Estate Advisor"
@@ -30,40 +30,50 @@ const Connect = () => {
                 fetchPriority="high"
               />
             </div>
+
             <img
               src={echelonLogo}
               alt="Echelon Property Group"
-              className="h-8 opacity-70"
+              className="mt-8 opacity-60"
+              style={{ height: "140px" }}
               loading="eager"
             />
-            <div className="text-center">
-              <h1 className="text-2xl font-display font-medium text-white tracking-tight">
+
+            <div className="text-center mt-8">
+              <h1 className="text-[1.65rem] font-display font-medium text-white tracking-[-0.01em] leading-tight">
                 Taylor Sherwood
               </h1>
-              <p className="text-sm tracking-[0.15em] uppercase text-white/50 mt-1.5 font-sans">
-                Austin Luxury Homes • Land • Investment Property
+              <p className="text-[11px] tracking-[0.18em] uppercase text-white/45 mt-3 font-display leading-relaxed">
+                Austin Luxury Real Estate
+                <br />
+                Land&ensp;•&ensp;Investment Property
               </p>
             </div>
           </div>
 
+          {/* Divider */}
+          <div className="w-12 mx-auto mt-10 mb-10">
+            <div className="h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent" />
+          </div>
+
           {/* Links */}
-          <nav className="w-full flex flex-col gap-3.5" aria-label="Quick links">
+          <nav className="w-full flex flex-col gap-4" aria-label="Quick links">
             {links.map((link) => (
               <a
                 key={link.label}
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative block w-full rounded-xl px-6 py-4 text-center text-sm font-medium tracking-[0.12em] uppercase transition-all duration-300 ease-smooth border border-white/10 text-white/90 hover:border-gold/40 hover:text-white hover:shadow-[0_8px_32px_rgba(186,162,106,0.12)] backdrop-blur-sm bg-white/[0.03] hover:bg-white/[0.06]"
+                className="group relative block w-full rounded-2xl px-7 py-5 text-center text-[11px] font-medium tracking-[0.14em] uppercase transition-all duration-500 ease-smooth border border-white/[0.08] text-white/85 hover:border-gold/30 hover:text-white hover:shadow-[0_12px_40px_rgba(186,162,106,0.1)] backdrop-blur-sm bg-white/[0.025] hover:bg-white/[0.05] shadow-[0_2px_16px_rgba(0,0,0,0.25)]"
               >
                 <span className="font-sans">{link.label}</span>
-                <ExternalLink className="absolute right-5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 opacity-0 group-hover:opacity-40 transition-opacity duration-300" />
+                <ExternalLink className="absolute right-5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 opacity-0 group-hover:opacity-30 transition-opacity duration-500" />
               </a>
             ))}
           </nav>
 
           {/* Footer */}
-          <p className="text-[10px] tracking-[0.25em] uppercase text-white/20 mt-4 font-sans">
+          <p className="text-[9px] tracking-[0.3em] uppercase text-white/15 mt-14 font-sans">
             Echelon Property Group
           </p>
         </div>

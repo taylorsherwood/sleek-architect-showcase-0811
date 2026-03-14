@@ -114,7 +114,7 @@ const CommunityPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title={`${community.name} Homes for Sale | Echelon Property Group Austin`}
+        title={community.metaTitle || `${community.name} Homes for Sale | Echelon Property Group`}
         description={`${community.name} homes for sale in Austin, Texas. Explore listings, pricing trends, and neighborhood insights with Echelon Property Group — your luxury real estate advisor.`}
       />
       <SchemaMarkup schema={createFAQSchema(faqs)} />

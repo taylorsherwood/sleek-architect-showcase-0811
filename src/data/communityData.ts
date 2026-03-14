@@ -219,7 +219,7 @@ Tarrytown's investment appeal is further supported by Austin's growth trajectory
     slug: "rollingwood",
     name: "Rollingwood",
     heroTitle: "Homes for Sale in Rollingwood Austin",
-    metaTitle: "Rollingwood Austin Homes for Sale | Rollingwood Real Estate Guide",
+    metaTitle: "Rollingwood Homes for Sale | Echelon Property Group",
     metaDescription: "Discover homes for sale in Rollingwood Austin. Charming enclave near Zilker Park with top Eanes ISD schools and homes from $1M to $5M+.",
     priceRange: "$1M – $5M+",
     image: rollingwoodImg,

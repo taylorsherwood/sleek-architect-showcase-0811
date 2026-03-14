@@ -347,7 +347,7 @@ const Sell = () => {
                 src={taylorProfileSell}
                 alt="Taylor Sherwood — Austin luxury real estate advisor"
                 title="Taylor Sherwood — Echelon Property Group listing specialist"
-                className="w-full object-contain"
+                className="w-auto max-w-full max-h-[70vh] object-contain mx-auto"
                 loading="lazy"
                 decoding="async" />
               

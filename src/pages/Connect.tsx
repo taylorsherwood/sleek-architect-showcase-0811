@@ -1,7 +1,7 @@
 import SEOHead from "@/components/SEOHead";
 import taylorHeadshot from "@/assets/taylor-headshot.jpg";
 import echelonLogo from "@/assets/echelon-logo-gold.png";
-import { ExternalLink, Instagram, Mail, Phone } from "lucide-react";
+import { Instagram, Mail, Phone } from "lucide-react";
 
 const links = [
   { label: "Search Austin Homes", href: "https://taylorsherwood.realscout.com/homesearch/map" },
@@ -13,7 +13,7 @@ const links = [
 const socials = [
   { icon: Instagram, href: "https://www.instagram.com/TheInvestorBroker", label: "Instagram" },
   { icon: Mail, href: "mailto:taylor@echelonpropertygroup.com", label: "Email" },
-  { icon: Phone, href: "tel:+15127869672", label: "Phone" },
+  { icon: Phone, href: "tel:+15126613843", label: "Phone" },
 ];
 
 const Connect = () => {
@@ -58,15 +58,6 @@ const Connect = () => {
 
               {/* Content overlay */}
               <div className="absolute bottom-0 left-0 right-0 p-7 pb-8 flex flex-col items-center text-center">
-                {/* Logo – centered brand anchor */}
-                <img
-                  src={echelonLogo}
-                  alt="Echelon Property Group"
-                  className="mb-5"
-                  style={{ height: "75px", opacity: 0.7 }}
-                  loading="eager"
-                />
-
                 {/* Name */}
                 <h1
                   className="font-display font-medium leading-none"
@@ -94,7 +85,7 @@ const Connect = () => {
                 <p
                   className="font-sans"
                   style={{
-                    fontSize: "11.5px",
+                    fontSize: "13px",
                     letterSpacing: "0.22em",
                     textTransform: "uppercase",
                     fontVariant: "all-small-caps",
@@ -108,7 +99,7 @@ const Connect = () => {
                 <p
                   className="font-sans"
                   style={{
-                    fontSize: "10px",
+                    fontSize: "11.5px",
                     letterSpacing: "0.25em",
                     textTransform: "uppercase",
                     fontWeight: 400,
@@ -169,15 +160,13 @@ const Connect = () => {
             </div>
           </div>
 
-          {/* ── Gold Divider ── */}
+          {/* ── Logo between sections ── */}
           <div className="flex justify-center my-8">
-            <div
-              className="h-px"
-              style={{
-                width: "50px",
-                background:
-                  "linear-gradient(90deg, transparent, hsl(42 37% 57% / 0.35), transparent)",
-              }}
+            <img
+              src={echelonLogo}
+              alt="Echelon Property Group"
+              style={{ height: "100px", opacity: 0.55 }}
+              loading="eager"
             />
           </div>
 
@@ -222,7 +211,7 @@ const Connect = () => {
                 }}
               >
                 <span
-                  className="font-sans"
+                  className="font-sans w-full text-center"
                   style={{
                     fontSize: "12px",
                     letterSpacing: "0.1em",
@@ -233,10 +222,6 @@ const Connect = () => {
                 >
                   {link.label}
                 </span>
-                <ExternalLink
-                  className="w-4 h-4 opacity-15 group-hover:opacity-30 transition-opacity duration-400"
-                  style={{ color: "hsl(0 0% 100%)" }}
-                />
               </a>
             ))}
           </nav>

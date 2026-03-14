@@ -82,7 +82,7 @@ For investors, Westlake Hills offers opportunities in luxury home renovations, n
     slug: "barton-creek",
     name: "Barton Creek, Lost Creek and Amarra",
     heroTitle: "Homes for Sale in Barton Creek, Lost Creek and Amarra Austin",
-    metaTitle: "Barton Creek, Lost Creek and Amarra Austin Homes for Sale | Austin Real Estate Guide",
+    metaTitle: "Barton Creek Homes for Sale | Echelon Property Group",
     metaDescription: "Discover luxury estates in Barton Creek, Lost Creek and Amarra Austin. World-class golf, gated country club living, and homes from $1.5M to $15M+ in this premier community.",
     priceRange: "$1.5M – $15M+",
     image: bartonCreekImg,

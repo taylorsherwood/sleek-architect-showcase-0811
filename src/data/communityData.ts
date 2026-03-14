@@ -541,7 +541,7 @@ For investors, the combination of prestige, privacy, and proximity to Austin's b
     slug: "cat-mountain-northwest-hills",
     name: "Cat Mountain & Northwest Hills",
     heroTitle: "Homes for Sale in Cat Mountain & Northwest Hills Austin",
-    metaTitle: "Cat Mountain & Northwest Hills Homes for Sale | Austin Real Estate",
+    metaTitle: "Cat Mountain & NW Hills Homes | Echelon Property Group",
     metaDescription: "Discover homes for sale in Cat Mountain and Northwest Hills, two of Austin's most scenic hillside neighborhoods offering canyon views and proximity to downtown.",
     priceRange: "$900K – $4M+",
     image: catMountainImg,

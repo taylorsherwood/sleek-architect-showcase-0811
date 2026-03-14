@@ -33,7 +33,7 @@ const Connect = () => {
             />
             {/* double ring */}
             <div className="relative w-[180px] h-[180px] sm:w-[200px] sm:h-[200px] rounded-full p-[3px]"
-              style={{ background: "linear-gradient(135deg, hsl(42 37% 57% / 0.45), hsl(42 37% 57% / 0.12))" }}
+              style={{ background: "linear-gradient(135deg, hsl(42 37% 57% / 0.65), hsl(42 37% 57% / 0.25))" }}
             >
               <div className="w-full h-full rounded-full p-[2px] bg-[hsl(233,50%,9%)]">
                 <div

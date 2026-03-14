@@ -172,7 +172,7 @@ Investment strategies on Lake Austin include acquiring older waterfront homes fo
     slug: "tarrytown",
     name: "Tarrytown",
     heroTitle: "Homes for Sale in Tarrytown Austin",
-    metaTitle: "Tarrytown Austin Homes for Sale | Tarrytown Real Estate Guide",
+    metaTitle: "Tarrytown Austin Homes for Sale | Echelon Property Group",
     metaDescription: "Find luxury homes for sale in Tarrytown Austin. Tree-lined streets, walkable to downtown, and classic Austin charm from $800K to $8M+.",
     priceRange: "$800K – $8M+",
     image: tarrytownImg,

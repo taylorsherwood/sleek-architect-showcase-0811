@@ -22,15 +22,38 @@ const SchemaMarkup = ({ schema }: SchemaMarkupProps) => {
 
 export default SchemaMarkup;
 
+export const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Echelon Property Group",
+  "url": "https://www.echelonpropertygroup.com",
+  "logo": "https://www.echelonpropertygroup.com/logo.png",
+  "telephone": "+1-512-661-3843",
+  "email": "taylor@echelonpropertygroup.com",
+  "founder": {
+    "@type": "Person",
+    "name": "Taylor Sherwood"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "2105 East MLK Blvd Ste 227",
+    "addressLocality": "Austin",
+    "addressRegion": "TX",
+    "postalCode": "78702",
+    "addressCountry": "US"
+  },
+  "sameAs": []
+};
+
 export const realEstateAgentSchema = {
   "@context": "https://schema.org",
   "@type": "RealEstateAgent",
-  "name": "Echelon Property Group",
-  "founder": "Taylor Sherwood",
-  "description": "Austin luxury real estate experts specializing in luxury homes, land development, commercial real estate, and investment property throughout Austin and the Texas Hill Country.",
+  "name": "Taylor Sherwood",
+  "description": "Austin luxury real estate advisor specializing in luxury homes, land development, commercial real estate, and investment property throughout Austin and the Texas Hill Country.",
   "url": "https://www.echelonpropertygroup.com",
-  "telephone": "(512) 661-3843",
+  "telephone": "+1-512-661-3843",
   "email": "taylor@echelonpropertygroup.com",
+  "image": "https://www.echelonpropertygroup.com/lovable-uploads/taylor-headshot-widget.jpg",
   "serviceType": [
     "Luxury Real Estate",
     "Land Brokerage",
@@ -68,8 +91,9 @@ export const taylorSherwoodSchema = {
   "jobTitle": "Certified Luxury Home Marketing Specialist (CLHMS)",
   "description": "Austin luxury real estate advisor specializing in luxury homes, land development, commercial real estate, and investment property across Westlake Hills, Barton Creek, Tarrytown, Lake Austin, and the Texas Hill Country.",
   "url": "https://www.echelonpropertygroup.com/about",
-  "telephone": "(512) 661-3843",
+  "telephone": "+1-512-661-3843",
   "email": "taylor@echelonpropertygroup.com",
+  "image": "https://www.echelonpropertygroup.com/lovable-uploads/taylor-headshot-widget.jpg",
   "worksFor": {
     "@type": "Organization",
     "name": "Echelon Property Group",
@@ -100,8 +124,10 @@ export const localBusinessSchema = {
   "name": "Echelon Property Group",
   "description": "Luxury real estate brokerage in Austin, Texas specializing in luxury homes, investment properties, and land opportunities.",
   "url": "https://www.echelonpropertygroup.com",
-  "telephone": "(512) 661-3843",
+  "telephone": "+1-512-661-3843",
   "email": "taylor@echelonpropertygroup.com",
+  "image": "https://www.echelonpropertygroup.com/og-image.png",
+  "logo": "https://www.echelonpropertygroup.com/logo.png",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "2105 East MLK Blvd Ste 227",
@@ -115,6 +141,7 @@ export const localBusinessSchema = {
     "latitude": 30.2672,
     "longitude": -97.7431
   },
+  "openingHours": "Mo-Fr 09:00-18:00",
   "priceRange": "$$$"
 };
 
@@ -125,13 +152,23 @@ export function createArticleSchema(title: string, description: string, datePubl
     "headline": title,
     "description": description,
     "datePublished": datePublished,
+    "dateModified": datePublished,
     "author": {
       "@type": "Person",
-      "name": author
+      "name": author,
+      "url": "https://www.echelonpropertygroup.com/about"
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Echelon Property Group"
+      "name": "Echelon Property Group",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.echelonpropertygroup.com/logo.png"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://www.echelonpropertygroup.com/blog"
     },
     ...(image ? { "image": image } : {})
   };

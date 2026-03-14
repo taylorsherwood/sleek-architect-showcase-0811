@@ -4,7 +4,7 @@ import Hero from "@/components/Hero";
 import CredibilityStrip from "@/components/CredibilityStrip";
 import ExpertiseSection from "@/components/ExpertiseSection";
 import SEOHead from "@/components/SEOHead";
-import SchemaMarkup, { realEstateAgentSchema, localBusinessSchema, taylorSherwoodSchema } from "@/components/SchemaMarkup";
+import SchemaMarkup, { realEstateAgentSchema, localBusinessSchema, taylorSherwoodSchema, organizationSchema } from "@/components/SchemaMarkup";
 
 // Lazy-load below-fold sections to reduce initial JS bundle
 const CommunitiesPreview = lazy(() => import("@/components/CommunitiesPreview"));
@@ -62,6 +62,7 @@ const Index = () => {
         title="Austin Luxury Real Estate | Echelon Property Group Austin"
         description="Luxury homes, land, and investment real estate in Austin TX. Work with Taylor Sherwood of Echelon Property Group for exclusive listings and expert guidance."
       />
+      <SchemaMarkup schema={organizationSchema} />
       <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={localBusinessSchema} />
       <SchemaMarkup schema={taylorSherwoodSchema} />

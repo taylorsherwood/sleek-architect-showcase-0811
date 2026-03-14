@@ -87,7 +87,7 @@ const Connect = () => {
                 <p
                   className="font-sans"
                   style={{
-                    fontSize: "14px",
+                    fontSize: "16px",
                     letterSpacing: "0.18em",
                     textTransform: "uppercase",
                     fontVariant: "all-small-caps",
@@ -101,13 +101,13 @@ const Connect = () => {
                 <p
                   className="font-sans"
                   style={{
-                    fontSize: "16px",
-                    letterSpacing: "0.18em",
+                    fontSize: "11px",
+                    letterSpacing: "0.2em",
                     textTransform: "uppercase",
-                    fontWeight: 500,
+                    fontWeight: 400,
                     lineHeight: 1.3,
-                    marginTop: "2px",
-                    color: "hsl(0 0% 100% / 0.6)",
+                    marginTop: "1px",
+                    color: "hsl(0 0% 100% / 0.55)",
                   }}
                 >
                   Land&nbsp;·&nbsp;Investment Property

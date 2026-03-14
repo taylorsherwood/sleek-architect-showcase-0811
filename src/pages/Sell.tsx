@@ -16,7 +16,7 @@ import {
   Sparkles,
 } from "lucide-react";
 
-import heroImg from "@/assets/hero-architecture.jpg";
+import heroImg from "@/assets/sell-hero-luxury-home.jpg";
 import listing2 from "@/assets/listing-2.jpg";
 import listing3 from "@/assets/listing-3.jpg";
 

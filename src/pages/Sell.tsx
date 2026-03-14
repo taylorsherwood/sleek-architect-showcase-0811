@@ -380,7 +380,7 @@ const Sell = () => {
               <img
                 src={taylorProfileSell}
                 alt="Taylor Sherwood — Austin luxury real estate advisor"
-                className="w-4/5 aspect-[3/4] object-cover object-top"
+                className="w-full object-contain"
                 loading="lazy" />
               
             </div>

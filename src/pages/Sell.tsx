@@ -299,7 +299,7 @@ const Sell = () => {
             </p>
             <a
               href="#home-valuation"
-              className="inline-block text-minimal bg-primary-foreground text-[#0C0F24] px-8 py-3.5 hover:bg-primary-foreground/90 transition-colors duration-300 reveal-delayed-2"
+              className="inline-block text-minimal bg-primary-foreground text-[#0C0F24] px-8 py-3.5 hover:bg-gold hover:text-primary-foreground transition-colors duration-300 reveal-delayed-2"
             >
               REQUEST A HOME VALUATION
             </a>

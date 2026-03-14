@@ -379,6 +379,7 @@ const Sell = () => {
               <img
                 src={taylorProfileSell}
                 alt="Taylor Sherwood — Austin luxury real estate advisor"
+                title="Taylor Sherwood — sell your Austin luxury home with Echelon Property Group"
                 className="w-4/5 aspect-[3/4] object-cover object-top"
                 loading="lazy"
               />
@@ -443,6 +444,7 @@ const Sell = () => {
                     <img
                       src={listing.image}
                       alt={listing.address}
+                      title={`${listing.address} — ${listing.price}`}
                       className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
                       loading="lazy"
                     />

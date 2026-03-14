@@ -20,6 +20,7 @@ const FloatingContact = () => {
           <img
             src={HEADSHOT_LAUNCHER}
             alt="Taylor Sherwood"
+            title="Contact Taylor Sherwood — Austin luxury real estate advisor"
             className="w-full h-full object-cover object-[50%_30%] scale-[1.05]" />
           
         </div>
@@ -53,6 +54,7 @@ const FloatingContact = () => {
               <img
                 src={HEADSHOT}
                 alt="Taylor Sherwood"
+                title="Taylor Sherwood — Echelon Property Group"
                 className="w-full h-full object-cover object-[50%_20%] scale-[1.03]" />
               
             </div>

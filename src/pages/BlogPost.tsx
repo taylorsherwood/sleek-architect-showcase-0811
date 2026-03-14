@@ -120,6 +120,7 @@ const BlogPost = () => {
               <img 
                 src={post.image} 
                 alt={`${post.title} - Austin luxury real estate`}
+                title={post.title}
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
             </div>
@@ -168,6 +169,7 @@ const BlogPost = () => {
                         <img 
                           src={relatedPost.image} 
                           alt={`${relatedPost.title} - Austin real estate insights`}
+                          title={relatedPost.title}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                           loading="lazy"
                         />

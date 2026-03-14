@@ -116,6 +116,7 @@ const Hero = () => {
         <img
           src={heroFallback}
           alt="Austin skyline"
+          title="Austin Texas skyline — Echelon Property Group"
           className="absolute inset-0 w-full h-full object-cover"
           style={{ zIndex: 0 }}
         />

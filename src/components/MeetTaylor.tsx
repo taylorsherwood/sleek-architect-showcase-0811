@@ -18,11 +18,12 @@ const MeetTaylor = () => {
             <div className="relative inline-block">
               <img
                 alt="Taylor Sherwood — Austin luxury real estate advisor and CLHMS specialist"
+                title="Taylor Sherwood — Certified Luxury Home Marketing Specialist"
                 className="w-full h-[50vh] md:h-[60vh] object-contain"
                 src="/lovable-uploads/537facb0-1fbc-450c-8c4a-c1d06c4aa924.jpg"
                 loading="lazy"
                 decoding="async" />
-              <img src={clhmsBadge} alt="CLHMS Guild Badge" className="absolute bottom-3 right-3 w-20 h-20 opacity-85" loading="lazy" decoding="async" />
+              <img src={clhmsBadge} alt="CLHMS Guild Badge" title="Certified Luxury Home Marketing Specialist badge" className="absolute bottom-3 right-3 w-20 h-20 opacity-85" loading="lazy" decoding="async" />
             </div>
             
             <div>
@@ -49,7 +50,7 @@ const MeetTaylor = () => {
               SCHEDULE A PRIVATE CONSULTATION
             </Link>
             <div className="mt-6 mb-0">
-              <img src={echelonLogoGold} alt="Echelon Property Group" className="mx-auto h-32 w-auto" loading="lazy" decoding="async" />
+              <img src={echelonLogoGold} alt="Echelon Property Group" title="Echelon Property Group logo" className="mx-auto h-32 w-auto" loading="lazy" decoding="async" />
             </div>
           </div>
         </div>

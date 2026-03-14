@@ -99,6 +99,7 @@ const FeaturedListings = () => {
                       <img
                         src={echelonLogo}
                         alt="Echelon Property Group"
+                        title="Echelon Property Group — View exclusive listings"
                         className="w-3/5 h-auto object-contain transition-all duration-500 group-hover:brightness-0 group-hover:invert"
                         loading="lazy"
                       />
@@ -128,6 +129,7 @@ const FeaturedListings = () => {
                       <img
                       src={listing.image}
                       alt={listing.address}
+                      title={`${listing.address} — ${listing.price}`}
                       className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
                       loading="lazy" />
                     

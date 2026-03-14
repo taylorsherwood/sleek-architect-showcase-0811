@@ -42,6 +42,7 @@ const CommercialInvestment = () => {
           <img
             src={heroArchitecture}
             alt="Austin commercial real estate skyline"
+            title="Austin commercial real estate — Echelon Property Group"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-foreground/70" />
@@ -94,6 +95,7 @@ const CommercialInvestment = () => {
                   <img
                     src={gillisStreet}
                     alt="4314 Gillis Street, Austin TX 78745 — 24-unit multifamily"
+                    title="4314 Gillis Street — 24-unit multifamily investment, Austin TX"
                     className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
                     loading="lazy"
                     decoding="async"
@@ -136,6 +138,7 @@ const CommercialInvestment = () => {
                   <img
                     src={sanJoseAve}
                     alt="10811 San Jose Ave, Del Valle TX — 3.06 acres redevelopment land"
+                    title="10811 San Jose Ave — development land opportunity, Del Valle TX"
                     className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
                     loading="lazy"
                     decoding="async"

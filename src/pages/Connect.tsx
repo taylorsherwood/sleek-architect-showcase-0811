@@ -180,7 +180,7 @@ const Connect = () => {
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative flex items-center justify-between w-full transition-all duration-500"
+                className="group relative flex items-center justify-between w-full transition-all duration-500 cta-glow-pulse"
                 style={{
                   borderRadius: "18px",
                   padding: "24px 28px",

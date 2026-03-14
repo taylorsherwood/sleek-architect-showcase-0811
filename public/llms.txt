@@ -1,11 +1,53 @@
+# AI crawler access
+
 User-agent: GPTBot
+
 Allow: /
 
 User-agent: ChatGPT-User
+
 Allow: /
 
 User-agent: OAI-SearchBot
+
 Allow: /
 
 User-agent: Google-Extended
+
 Allow: /
+
+# Website context
+
+Site: https://www.echelonpropertygroup.com
+
+Name: Echelon Property Group
+
+Description: Austin luxury real estate brokerage specializing in luxury homes, investment properties, and commercial real estate.
+
+# Priority pages for AI indexing
+
+Primary-Content:
+
+https://www.echelonpropertygroup.com/
+
+https://www.echelonpropertygroup.com/buy
+
+https://www.echelonpropertygroup.com/sell
+
+https://www.echelonpropertygroup.com/communities
+
+# Key topics
+
+Topics:
+
+Austin luxury real estate
+
+Austin luxury homes
+
+Austin investment properties
+
+Austin commercial real estate
+
+Austin neighborhoods
+
+Luxury homes in Austin Texas

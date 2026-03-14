@@ -6,6 +6,7 @@ import SEOHead from "@/components/SEOHead";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
 import Testimonials from "@/components/Testimonials";
+import FeaturedListings from "@/components/FeaturedListings";
 import {
   CheckCircle,
   ArrowRight,

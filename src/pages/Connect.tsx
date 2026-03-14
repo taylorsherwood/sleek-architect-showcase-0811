@@ -240,17 +240,20 @@ const Connect = () => {
                   "linear-gradient(90deg, transparent, hsl(42 37% 57% / 0.18), transparent)",
               }}
             />
-            <p
-              className="font-sans"
+            <a
+              href="https://www.echelonpropertygroup.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-sans transition-opacity duration-300 hover:opacity-80"
               style={{
                 fontSize: "9px",
                 letterSpacing: "0.3em",
                 textTransform: "uppercase",
-                color: "hsl(42 37% 57%)",
+                color: "#baa26a",
               }}
             >
               Echelon Property Group
-            </p>
+            </a>
             <p
               className="font-sans"
               style={{

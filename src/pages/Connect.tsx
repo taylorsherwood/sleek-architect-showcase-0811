@@ -87,7 +87,7 @@ const Connect = () => {
                 <p
                   className="font-sans"
                   style={{
-                    fontSize: "14px",
+                    fontSize: "16px",
                     letterSpacing: "0.18em",
                     textTransform: "uppercase",
                     fontVariant: "all-small-caps",
@@ -101,13 +101,13 @@ const Connect = () => {
                 <p
                   className="font-sans"
                   style={{
-                    fontSize: "16px",
-                    letterSpacing: "0.18em",
+                    fontSize: "11px",
+                    letterSpacing: "0.2em",
                     textTransform: "uppercase",
-                    fontWeight: 500,
+                    fontWeight: 400,
                     lineHeight: 1.3,
-                    marginTop: "2px",
-                    color: "hsl(0 0% 100% / 0.6)",
+                    marginTop: "1px",
+                    color: "hsl(0 0% 100% / 0.55)",
                   }}
                 >
                   Land&nbsp;·&nbsp;Investment Property
@@ -188,28 +188,28 @@ const Connect = () => {
                     ? "linear-gradient(145deg, hsl(233 42% 15%) 0%, hsl(233 50% 11%) 100%)"
                     : "linear-gradient(145deg, hsl(233 42% 14%) 0%, hsl(233 50% 10%) 100%)",
                   border: link.featured
-                    ? "1px solid hsl(42 37% 57% / 0.35)"
+                    ? "1px solid hsl(42 37% 57% / 0.5)"
                     : "1px solid hsl(0 0% 100% / 0.045)",
                   boxShadow: link.featured
-                    ? "0 6px 28px hsl(0 0% 0% / 0.3), inset 0 1px 0 hsl(0 0% 100% / 0.04), inset 0 0 32px hsl(42 37% 57% / 0.04)"
+                    ? "0 6px 28px hsl(0 0% 0% / 0.3), 0 0 40px hsl(42 37% 57% / 0.08), inset 0 1px 0 hsl(0 0% 100% / 0.04), inset 0 0 40px hsl(42 37% 57% / 0.06)"
                     : "0 4px 20px hsl(0 0% 0% / 0.25), inset 0 1px 0 hsl(0 0% 100% / 0.025), inset 0 0 20px hsl(0 0% 100% / 0.008)",
                 }}
                 onMouseEnter={(e) => {
                   const el = e.currentTarget;
                   const textEl = el.querySelector("span");
-                  el.style.borderColor = "hsl(42 37% 57% / 0.5)";
-                  el.style.boxShadow = "0 8px 32px hsl(42 37% 57% / 0.15)";
+                  el.style.borderColor = "hsl(42 37% 57% / 0.7)";
+                  el.style.boxShadow = "0 8px 32px hsl(42 37% 57% / 0.2), 0 0 60px hsl(42 37% 57% / 0.12)";
                   el.style.transform = "translateY(-2px)";
-                  if (textEl) textEl.style.color = "hsl(42 37% 75%)";
+                  if (textEl) textEl.style.color = "hsl(42 37% 85%)";
                 }}
                 onMouseLeave={(e) => {
                   const el = e.currentTarget;
                   const textEl = el.querySelector("span");
                   el.style.borderColor = link.featured
-                    ? "hsl(42 37% 57% / 0.35)"
+                    ? "hsl(42 37% 57% / 0.5)"
                     : "hsl(0 0% 100% / 0.045)";
                   el.style.boxShadow = link.featured
-                    ? "0 6px 28px hsl(0 0% 0% / 0.3), inset 0 1px 0 hsl(0 0% 100% / 0.04), inset 0 0 32px hsl(42 37% 57% / 0.04)"
+                    ? "0 6px 28px hsl(0 0% 0% / 0.3), 0 0 40px hsl(42 37% 57% / 0.08), inset 0 1px 0 hsl(0 0% 100% / 0.04), inset 0 0 40px hsl(42 37% 57% / 0.06)"
                     : "0 4px 20px hsl(0 0% 0% / 0.25), inset 0 1px 0 hsl(0 0% 100% / 0.025), inset 0 0 20px hsl(0 0% 100% / 0.008)";
                   el.style.transform = "translateY(0)";
                   if (textEl) textEl.style.color = link.featured ? "hsl(42 37% 67%)" : "hsl(0 0% 100% / 0.78)";

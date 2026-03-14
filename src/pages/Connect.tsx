@@ -192,28 +192,28 @@ const Connect = () => {
               </div>
             </div>
 
-            {/* Scroll indicator */}
-            <div
-              className="absolute bottom-3 left-1/2 -translate-x-1/2 flex flex-col items-center"
-              style={{
-                zIndex: 3,
-                opacity: 1 - scrollProgress * 5,
-                pointerEvents: "none",
-              }}
-            >
-              <div className="scroll-indicator-line" />
-            </div>
           </div>
 
           {/* ── Logo between sections ── */}
           <ScrollReveal>
-            <div className="flex justify-center my-4 px-4">
+            <div className="flex flex-col items-center my-4 px-4">
               <img
                 src={echelonLogo}
                 alt="Echelon Property Group"
                 style={{ height: "140px" }}
                 loading="eager"
               />
+              {/* Scroll indicator */}
+              <div
+                className="flex flex-col items-center -mt-2"
+                style={{
+                  opacity: 1 - scrollProgress * 5,
+                  pointerEvents: "none",
+                  transition: "opacity 150ms ease-out",
+                }}
+              >
+                <div className="scroll-indicator-line" />
+              </div>
             </div>
           </ScrollReveal>
 

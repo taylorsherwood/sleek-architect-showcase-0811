@@ -1,0 +1,121 @@
+import { renderToString } from "react-dom/server";
+import { StaticRouter } from "react-router-dom/server";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { HelmetProvider, type HelmetServerState } from "react-helmet-async";
+import { TooltipProvider } from "@/components/ui/tooltip";
+import AppRoutes from "@/AppRoutes";
+import { communityPages } from "@/data/communityData";
+import { blogPosts } from "@/data/blogPosts";
+import { seoBlogPosts } from "@/data/seoBlogPosts";
+
+type HeadTag = {
+  type: "meta" | "link";
+  props: Record<string, string>;
+};
+
+const staticRoutes = [
+  "/",
+  "/about",
+  "/buy",
+  "/sell",
+  "/listings",
+  "/listings/commercial-investment-austin",
+  "/communities",
+  "/blog",
+  "/contact",
+  "/moving-to-austin",
+  "/best-luxury-neighborhoods-austin",
+  "/austin-luxury-market-report",
+  "/off-market-luxury-homes-austin",
+  "/austin-luxury-homes-for-sale",
+  "/austin-commercial-real-estate",
+  "/home-value-austin",
+  "/luxury-real-estate-austin",
+  "/buy-homes-austin",
+  "/sell-home-austin",
+  "/austin-real-estate-investment",
+  "/land-for-sale-austin",
+  "/past-transactions",
+];
+
+const allPrerenderRoutes = Array.from(
+  new Set([
+    ...staticRoutes,
+    ...communityPages.map((community) => `/communities/${community.slug}`),
+    ...[...seoBlogPosts, ...blogPosts].map((post) => `/blog/${post.id}`),
+  ])
+);
+
+const parseAttributes = (attributes: string) => {
+  const props: Record<string, string> = {};
+  const attrRegex = /([\w:-]+)="([^"]*)"/g;
+  let match: RegExpExecArray | null;
+
+  while ((match = attrRegex.exec(attributes)) !== null) {
+    const key = match[1];
+    const value = match[2];
+    if (key !== "data-rh") props[key] = value;
+  }
+
+  return props;
+};
+
+const parseHeadTags = (markup: string, expectedTag: "meta" | "link") => {
+  const tags: HeadTag[] = [];
+  const tagRegex = new RegExp(`<${expectedTag}\\s+([^>]*?)\\/?>(?:<\\/${expectedTag}>)?`, "g");
+  let match: RegExpExecArray | null;
+
+  while ((match = tagRegex.exec(markup)) !== null) {
+    const props = parseAttributes(match[1]);
+    if (Object.keys(props).length > 0) {
+      tags.push({ type: expectedTag, props });
+    }
+  }
+
+  return tags;
+};
+
+const extractTitle = (titleMarkup: string) => {
+  const titleMatch = /<title[^>]*>([\s\S]*?)<\/title>/.exec(titleMarkup);
+  return titleMatch?.[1]?.trim() || "Echelon Property Group";
+};
+
+const buildHead = (helmet?: HelmetServerState) => {
+  if (!helmet) {
+    return {
+      title: "Echelon Property Group",
+      elements: new Set<HeadTag>(),
+    };
+  }
+
+  const metaTags = parseHeadTags(helmet.meta.toString(), "meta");
+  const linkTags = parseHeadTags(helmet.link.toString(), "link");
+
+  return {
+    title: extractTitle(helmet.title.toString()),
+    elements: new Set<HeadTag>([...metaTags, ...linkTags]),
+  };
+};
+
+export async function prerender(data: { url: string }) {
+  const helmetContext: { helmet?: HelmetServerState } = {};
+  const queryClient = new QueryClient();
+
+  const html = renderToString(
+    <HelmetProvider context={helmetContext}>
+      <QueryClientProvider client={queryClient}>
+        <TooltipProvider>
+          <StaticRouter location={data.url}>
+            <AppRoutes />
+          </StaticRouter>
+        </TooltipProvider>
+      </QueryClientProvider>
+    </HelmetProvider>
+  );
+
+  return {
+    html,
+    links: new Set(allPrerenderRoutes),
+    head: buildHead(helmetContext.helmet),
+  };
+}

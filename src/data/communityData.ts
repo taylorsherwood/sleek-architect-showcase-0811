@@ -444,7 +444,7 @@ For investors, the Hill Country offers multiple strategies. Land banking (acquir
     slug: "zilker-austin",
     name: "Zilker & Barton Hills",
     heroTitle: "Zilker & Barton Hills Real Estate & Homes for Sale in Austin",
-    metaTitle: "Zilker & Barton Hills Austin Homes for Sale | Zilker Real Estate Guide",
+    metaTitle: "Zilker & Barton Hills Homes | Echelon Property Group",
     metaDescription: "Explore homes for sale in Zilker & Barton Hills Austin including modern homes, luxury properties, and investment opportunities near Barton Springs and downtown.",
     priceRange: "$800K – $5M+",
     image: zilkerImg,

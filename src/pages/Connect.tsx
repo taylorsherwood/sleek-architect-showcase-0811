@@ -13,7 +13,7 @@ const links = [
 const socials = [
   { icon: Instagram, href: "https://www.instagram.com/TheInvestorBroker", label: "Instagram" },
   { icon: Mail, href: "mailto:taylor@echelonpropertygroup.com", label: "Email" },
-  { icon: Phone, href: "tel:+15127869672", label: "Phone" },
+  { icon: Phone, href: "tel:+15126613843", label: "Phone" },
 ];
 
 const Connect = () => {

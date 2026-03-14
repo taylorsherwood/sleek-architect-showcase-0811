@@ -1,48 +1,29 @@
+import { lazy, Suspense } from "react";
 import Navigation from "@/components/Navigation";
-import expEchelonLogo from "@/assets/exp-echelon-logo.png";
 import Hero from "@/components/Hero";
 import CredibilityStrip from "@/components/CredibilityStrip";
-import FeaturedListings from "@/components/FeaturedListings";
-import IntroSection from "@/components/IntroSection";
-import Testimonials from "@/components/Testimonials";
-import MeetTaylor from "@/components/MeetTaylor";
-import CommunitiesPreview from "@/components/CommunitiesPreview";
-import CommercialCTA from "@/components/CommercialCTA";
-import RealScoutListings from "@/components/RealScoutListings";
-import CTASection from "@/components/CTASection";
-import SellerCTA from "@/components/SellerCTA";
 import ExpertiseSection from "@/components/ExpertiseSection";
-import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
-
 import SchemaMarkup, { realEstateAgentSchema, localBusinessSchema, taylorSherwoodSchema } from "@/components/SchemaMarkup";
 
-const Index = () => {
-  return (
-    <div className="min-h-screen">
-      <SEOHead
-        title="Austin Luxury Real Estate | Echelon Property Group Austin"
-        description="Luxury homes, land, and investment real estate in Austin TX. Work with Taylor Sherwood of Echelon Property Group for exclusive listings and expert guidance."
-      />
-      <SchemaMarkup schema={realEstateAgentSchema} />
-      <SchemaMarkup schema={localBusinessSchema} />
-      <SchemaMarkup schema={taylorSherwoodSchema} />
-      <Navigation />
-      <Hero />
-      <CredibilityStrip />
-      <ExpertiseSection />
-      <CommunitiesPreview />
-      <CommercialCTA />
-      <div className="py-8 bg-secondary" />
-      <FeaturedListings />
-      
-      <IntroSection />
-      <MeetTaylor />
-      <Testimonials />
-      <SellerCTA />
-      <CTASection />
-      
-      {/* Newsletter Section */}
+// Lazy-load below-fold sections to reduce initial JS bundle
+const CommunitiesPreview = lazy(() => import("@/components/CommunitiesPreview"));
+const CommercialCTA = lazy(() => import("@/components/CommercialCTA"));
+const FeaturedListings = lazy(() => import("@/components/FeaturedListings"));
+const IntroSection = lazy(() => import("@/components/IntroSection"));
+const MeetTaylor = lazy(() => import("@/components/MeetTaylor"));
+const Testimonials = lazy(() => import("@/components/Testimonials"));
+const SellerCTA = lazy(() => import("@/components/SellerCTA"));
+const CTASection = lazy(() => import("@/components/CTASection"));
+const Footer = lazy(() => import("@/components/Footer"));
+
+const expEchelonLogoImport = () => import("@/assets/exp-echelon-logo.png");
+
+const NewsletterSection = lazy(async () => {
+  const mod = await expEchelonLogoImport();
+  const expEchelonLogo = mod.default;
+  return {
+    default: () => (
       <section className="pt-16 pb-0 bg-muted">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
@@ -66,9 +47,42 @@ const Index = () => {
           </div>
         </div>
       </section>
+    ),
+  };
+});
 
-      <Footer />
-      
+const BelowFold = () => (
+  <div className="min-h-[200px]" />
+);
+
+const Index = () => {
+  return (
+    <div className="min-h-screen">
+      <SEOHead
+        title="Austin Luxury Real Estate | Echelon Property Group Austin"
+        description="Luxury homes, land, and investment real estate in Austin TX. Work with Taylor Sherwood of Echelon Property Group for exclusive listings and expert guidance."
+      />
+      <SchemaMarkup schema={realEstateAgentSchema} />
+      <SchemaMarkup schema={localBusinessSchema} />
+      <SchemaMarkup schema={taylorSherwoodSchema} />
+      <Navigation />
+      <Hero />
+      <CredibilityStrip />
+      <ExpertiseSection />
+
+      <Suspense fallback={<BelowFold />}>
+        <CommunitiesPreview />
+        <CommercialCTA />
+        <div className="py-8 bg-secondary" />
+        <FeaturedListings />
+        <IntroSection />
+        <MeetTaylor />
+        <Testimonials />
+        <SellerCTA />
+        <CTASection />
+        <NewsletterSection />
+        <Footer />
+      </Suspense>
     </div>
   );
 };

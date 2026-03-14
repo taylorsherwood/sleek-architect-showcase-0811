@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import heroFallback from "@/assets/hero-fallback.jpg";
-import { useHeroScroll } from "@/hooks/useHeroScroll";
+
 
 const FALLBACK_TIMEOUT = 4000;
 const RETRY_DELAY = 800;

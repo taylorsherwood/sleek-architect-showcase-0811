@@ -352,7 +352,7 @@ Pre-construction investment in new downtown projects can offer favorable pricing
     slug: "dripping-springs",
     name: "Dripping Springs",
     heroTitle: "Homes for Sale in Dripping Springs Texas",
-    metaTitle: "Dripping Springs Texas Homes for Sale | Dripping Springs Real Estate Guide",
+    metaTitle: "Dripping Springs Homes for Sale | Echelon Property Group",
     metaDescription: "Explore homes and estates for sale in Dripping Springs TX. Hill Country charm, wineries, and ranch properties from $500K to $10M+ just west of Austin.",
     priceRange: "$500K – $10M+",
     image: drippingSpringsImg,

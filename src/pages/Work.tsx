@@ -71,6 +71,10 @@ const Work = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Our Work | Echelon Property Group Austin"
+        description="View featured projects and architectural work from Echelon Property Group. Residential, commercial, and hospitality design across Austin and beyond."
+      />
       <Navigation />
       
       {/* Hero Section */}

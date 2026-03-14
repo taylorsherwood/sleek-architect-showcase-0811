@@ -18,7 +18,7 @@ const AustinLuxuryHomes = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Austin Luxury Homes for Sale | Echelon Property Group"
+        title="Luxury Homes for Sale | Echelon Property Group Austin"
         description="Browse luxury homes for sale in Austin, TX. Estate properties, waterfront homes, and premium residences in Westlake Hills, Barton Creek, Lake Austin, Tarrytown, and more."
       />
       <SchemaMarkup schema={createFAQSchema(faqs)} />

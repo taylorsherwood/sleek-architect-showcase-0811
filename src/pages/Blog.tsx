@@ -20,7 +20,7 @@ const Blog = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Austin Luxury Real Estate Blog | Echelon Property Group"
+        title="Real Estate Blog | Echelon Property Group Austin"
         description="Expert insights on Austin luxury real estate, market trends, neighborhood guides, and investment strategies from Echelon Property Group."
       />
       <Navigation />

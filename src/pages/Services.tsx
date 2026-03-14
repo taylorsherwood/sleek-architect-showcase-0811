@@ -26,6 +26,10 @@ const Services = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="Our Services | Echelon Property Group Austin"
+        description="Echelon Property Group offers residential, commercial, renovation, and consultation services. Expert real estate advisory in Austin, Texas."
+      />
       <Navigation />
       <section className="pt-32 pb-32 bg-background">
         <div className="container mx-auto px-6">

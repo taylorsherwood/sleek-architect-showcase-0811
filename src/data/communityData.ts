@@ -397,7 +397,7 @@ The short-term rental market in Dripping Springs is robust, fueled by the area's
     slug: "texas-hill-country-estates",
     name: "Texas Hill Country Estates",
     heroTitle: "Texas Hill Country Estate Homes for Sale",
-    metaTitle: "Texas Hill Country Estates for Sale | Hill Country Real Estate Guide",
+    metaTitle: "Hill Country Estates for Sale | Echelon Property Group",
     metaDescription: "Explore luxury ranch estates and homes in the Texas Hill Country near Austin. Sprawling acreage, vineyard properties, and views from $1M to $30M+.",
     priceRange: "$1M – $30M+",
     image: hillCountryImg,

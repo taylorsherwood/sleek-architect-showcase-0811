@@ -161,11 +161,11 @@ const Connect = () => {
           </div>
 
           {/* ── Logo between sections ── */}
-          <div className="flex justify-center my-8">
+          <div className="flex justify-center my-4">
             <img
               src={echelonLogo}
               alt="Echelon Property Group"
-              style={{ height: "100px", opacity: 0.55 }}
+              style={{ height: "140px" }}
               loading="eager"
             />
           </div>

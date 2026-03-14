@@ -1,4 +1,5 @@
 import Navigation from "@/components/Navigation";
+import SEOHead from "@/components/SEOHead";
 
 const Services = () => {
   const services = [

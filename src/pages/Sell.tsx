@@ -101,7 +101,7 @@ const marketingFeatures = [
 const stats = [
   { value: "98%", label: "List-to-Sale Price Ratio" },
   { value: "21", label: "Avg. Days on Market" },
-  { value: "$200M+", label: "Career Sales Volume" },
+  { value: "$100M+", label: "Career Sales Volume" },
 ];
 
 const recentListings = [

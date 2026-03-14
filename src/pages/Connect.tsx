@@ -211,7 +211,7 @@ const Connect = () => {
                 }}
               >
                 <span
-                  className="font-sans"
+                  className="font-sans w-full text-center"
                   style={{
                     fontSize: "12px",
                     letterSpacing: "0.1em",
@@ -222,10 +222,6 @@ const Connect = () => {
                 >
                   {link.label}
                 </span>
-                <ExternalLink
-                  className="w-4 h-4 opacity-15 group-hover:opacity-30 transition-opacity duration-400"
-                  style={{ color: "hsl(0 0% 100%)" }}
-                />
               </a>
             ))}
           </nav>

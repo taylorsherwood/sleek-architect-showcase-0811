@@ -194,13 +194,19 @@ const Connect = () => {
                 }}
                 onMouseEnter={(e) => {
                   const el = e.currentTarget;
-                  el.style.borderColor = "hsl(42 37% 57% / 0.28)";
-                  el.style.boxShadow =
-                    "0 10px 40px hsl(42 37% 57% / 0.07), inset 0 1px 0 hsl(42 37% 57% / 0.05), inset 0 0 28px hsl(42 37% 57% / 0.025)";
+                  const textEl = el.querySelector("span");
+                  el.style.background = "#baa26a";
+                  el.style.borderColor = "#baa26a";
+                  el.style.boxShadow = "0 10px 40px rgba(186, 162, 106, 0.3)";
                   el.style.transform = "translateY(-2px)";
+                  if (textEl) textEl.style.color = "#ffffff";
                 }}
                 onMouseLeave={(e) => {
                   const el = e.currentTarget;
+                  const textEl = el.querySelector("span");
+                  el.style.background = link.featured
+                    ? "linear-gradient(145deg, hsl(233 42% 15%) 0%, hsl(233 50% 11%) 100%)"
+                    : "linear-gradient(145deg, hsl(233 42% 14%) 0%, hsl(233 50% 10%) 100%)";
                   el.style.borderColor = link.featured
                     ? "hsl(42 37% 57% / 0.2)"
                     : "hsl(0 0% 100% / 0.045)";
@@ -208,6 +214,7 @@ const Connect = () => {
                     ? "0 6px 28px hsl(0 0% 0% / 0.3), inset 0 1px 0 hsl(0 0% 100% / 0.04), inset 0 0 24px hsl(42 37% 57% / 0.025)"
                     : "0 4px 20px hsl(0 0% 0% / 0.25), inset 0 1px 0 hsl(0 0% 100% / 0.025), inset 0 0 20px hsl(0 0% 100% / 0.008)";
                   el.style.transform = "translateY(0)";
+                  if (textEl) textEl.style.color = link.featured ? "hsl(42 37% 67%)" : "hsl(0 0% 100% / 0.78)";
                 }}
               >
                 <span

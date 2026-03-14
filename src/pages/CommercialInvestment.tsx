@@ -39,12 +39,14 @@ const CommercialInvestment = () => {
       {/* Hero */}
       <section className="relative pt-32 pb-20">
         <div className="absolute inset-0">
-          <img
-            src={heroArchitecture}
-            alt="Austin commercial real estate skyline"
-            title="Austin commercial real estate — Echelon Property Group"
-            className="w-full h-full object-cover"
-          />
+                  <img
+                    src={heroArchitecture}
+                    alt="Austin commercial real estate skyline"
+                    title="Austin commercial real estate — Echelon Property Group"
+                    className="w-full h-full object-cover"
+                    loading="eager"
+                    decoding="async"
+                  />
           <div className="absolute inset-0 bg-foreground/70" />
         </div>
         <div className="relative container mx-auto px-6">

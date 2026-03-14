@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Navigation from "@/components/Navigation";
+import SEOHead from "@/components/SEOHead";
 import project1 from "@/assets/project-1.jpg";
 import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.jpg";
@@ -71,6 +72,10 @@ const Work = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Our Work | Echelon Property Group Austin"
+        description="View featured projects and architectural work from Echelon Property Group. Residential, commercial, and hospitality design across Austin and beyond."
+      />
       <Navigation />
       
       {/* Hero Section */}

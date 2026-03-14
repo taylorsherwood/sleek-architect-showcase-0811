@@ -81,7 +81,7 @@ const BlogPost = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title={`${post.title} | Echelon Property Group`}
+        title={`${post.title} | Echelon Property Group Austin`}
         description={post.excerpt}
       />
       {schemas.map((s, i) => <SchemaMarkup key={i} schema={s} />)}

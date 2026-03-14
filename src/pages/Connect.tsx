@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import SEOHead from "@/components/SEOHead";
 import taylorHeadshot from "@/assets/taylor-headshot.jpg";
 import echelonLogo from "@/assets/echelon-logo-gold.png";
-import { Instagram, Mail, Phone } from "lucide-react";
+import { Instagram, Mail, Phone, Home, Search, Mountain } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
 import { useHeroScroll } from "@/hooks/useHeroScroll";
 

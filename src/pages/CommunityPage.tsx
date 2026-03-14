@@ -60,6 +60,38 @@ function createCommunitySchema(community: { name: string; slug: string; metaDesc
   ];
 }
 
+/** Renders markdown-like content: ### for H3, - for bullets, paragraphs split by \n\n */
+const ContentBlock = ({ text }: { text: string }) => {
+  const blocks = text.split('\n\n');
+  return (
+    <div className="space-y-4">
+      {blocks.map((block, i) => {
+        const trimmed = block.trim();
+        if (trimmed.startsWith('### ')) {
+          return (
+            <h3 key={i} className="text-xl md:text-2xl font-display font-medium text-foreground mt-6 mb-2">
+              {trimmed.substring(4)}
+            </h3>
+          );
+        }
+        if (trimmed.startsWith('- ')) {
+          const items = trimmed.split('\n').filter(l => l.trim().startsWith('- '));
+          return (
+            <ul key={i} className="list-disc list-inside space-y-1.5 text-muted-foreground leading-relaxed ml-2">
+              {items.map((item, j) => (
+                <li key={j}>{item.trim().substring(2)}</li>
+              ))}
+            </ul>
+          );
+        }
+        return (
+          <p key={i} className="text-muted-foreground leading-relaxed">{trimmed}</p>
+        );
+      })}
+    </div>
+  );
+};
+
 const CommunityPage = () => {
   const { slug } = useParams<{ slug: string }>();
   const community = communityPages.find((c) => c.slug === slug);

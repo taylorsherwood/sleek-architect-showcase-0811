@@ -101,7 +101,7 @@ const marketingFeatures = [
 const stats = [
   { value: "98%", label: "List-to-Sale Price Ratio" },
   { value: "21", label: "Avg. Days on Market" },
-  { value: "$200M+", label: "Career Sales Volume" },
+  { value: "$100M+", label: "Career Sales Volume" },
 ];
 
 const recentListings = [
@@ -290,7 +290,7 @@ const Sell = () => {
           <div className="max-w-2xl">
             <p className="text-minimal text-primary-foreground/60 mb-4 reveal">SELLER SERVICES</p>
             <h1 className="text-4xl md:text-6xl font-display font-light text-primary-foreground leading-[1.1] mb-6 reveal">
-              Sell Your Home
+              Sell Your Property
               <br />
               in Austin
             </h1>
@@ -331,7 +331,7 @@ const Sell = () => {
                 Why List With Taylor Sherwood
               </h2>
               <p className="text-muted-foreground leading-relaxed">
-                Selling a luxury home in Austin requires more than a listing — it requires a strategy. Here's why top sellers trust Taylor as their Austin luxury listing agent.
+                Selling property in Austin requires more than a listing — it requires a strategy. Here's why top sellers trust Taylor as their Austin luxury listing agent.
               </p>
             </div>
             <div className="grid md:grid-cols-2 gap-x-16 gap-y-12">

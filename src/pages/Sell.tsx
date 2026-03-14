@@ -243,7 +243,7 @@ const Sell = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Sell Your Home in Austin | Echelon Property Group"
-        description="Sell your Austin home for top dollar. Strategic marketing, expert negotiation, and luxury property presentation from Taylor Sherwood — a leading Austin luxury listing agent. Barton Creek real estate, Austin home value insights, and more."
+        description="Sell your Austin home for top dollar. Strategic marketing, expert negotiation, and luxury presentation from Taylor Sherwood — Austin's trusted luxury listing agent."
         canonical="https://www.echelonpropertygroup.com/sell" />
       
       <Navigation />

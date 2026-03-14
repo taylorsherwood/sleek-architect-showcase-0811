@@ -11,7 +11,7 @@ const About = () => {
     <div className="min-h-screen">
       <SEOHead
         title="Taylor Sherwood, Austin Realtor | Echelon Property Group"
-        description="Meet Taylor Sherwood, Certified Luxury Home Marketing Specialist and founder of Echelon Property Group. Expert advisory for luxury homes, land, commercial real estate, and investment property in Austin Texas."
+        description="Meet Taylor Sherwood, CLHMS and founder of Echelon Property Group. Expert advisory for luxury homes, land, commercial, and investment property in Austin TX."
       />
       <SchemaMarkup schema={taylorSherwoodSchema} />
       <Navigation />

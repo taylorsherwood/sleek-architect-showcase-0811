@@ -19,7 +19,7 @@ const LuxuryRealEstateAustin = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Luxury Real Estate in Austin TX | Echelon Property Group"
-        description="Explore luxury real estate in Austin, Texas. Waterfront estates, hilltop mansions, gated communities, and Hill Country ranches. Expert guidance from Taylor Sherwood and Echelon Property Group."
+        description="Luxury real estate in Austin TX. Waterfront estates, hilltop mansions, gated communities, and Hill Country ranches. Expert guidance from Echelon Property Group."
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createFAQSchema(faqs)} />

@@ -115,7 +115,7 @@ const Contact = () => {
 
                 <div className="space-y-8">
                   <div>
-                    <h3 className="text-minimal text-muted-foreground mb-2">EMAIL</h3>
+                    <h2 className="text-minimal text-muted-foreground mb-2">EMAIL</h2>
                     <a href="mailto:info@echelonpropertygroup.com" className="text-lg hover:text-muted-foreground transition-colors duration-300">taylor@echelonpropertygroup.com
 
                     </a>

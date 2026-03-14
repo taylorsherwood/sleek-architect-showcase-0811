@@ -331,7 +331,7 @@ const Sell = () => {
                 Why List With Taylor Sherwood
               </h2>
               <p className="text-muted-foreground leading-relaxed">
-                Selling a luxury home in Austin requires more than a listing — it requires a strategy. Here's why top sellers trust Taylor as their Austin luxury listing agent.
+                Selling property in Austin requires more than a listing — it requires a strategy. Here's why top sellers trust Taylor as their Austin luxury listing agent.
               </p>
             </div>
             <div className="grid md:grid-cols-2 gap-x-16 gap-y-12">

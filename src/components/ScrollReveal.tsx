@@ -10,7 +10,7 @@ interface ScrollRevealProps {
   duration?: number;
   /** Stagger children by this ms each */
   stagger?: number;
-  as?: keyof JSX.IntrinsicElements;
+  as?: "div" | "section" | "article" | "aside" | "main" | "nav" | "header" | "footer";
 }
 
 const ScrollReveal = ({

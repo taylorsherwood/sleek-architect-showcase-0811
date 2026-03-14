@@ -476,10 +476,10 @@ const Sell = () => {
             <div>
               <p className="text-minimal text-gold mb-4 font-extrabold">HOME VALUATION</p>
               <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-6">
-                What Is Your Property Worth?
+                What Is Your Home Worth?
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Understanding your Austin property value is the first step toward a successful sale. Our complimentary valuation combines real-time market data, recent comparable sales, and neighborhood-level insights to provide an accurate picture of your property's worth.
+                Understanding your Austin home value is the first step toward a successful sale. Our complimentary valuation combines real-time market data, recent comparable sales, and neighborhood-level insights to provide an accurate picture of your property's worth.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-8">
                 Whether you own in Barton Creek, Westlake, Tarrytown, or anywhere across the Austin metro, request your personalized valuation today.
@@ -528,8 +528,8 @@ const Sell = () => {
               <h2 className="text-4xl md:text-5xl font-display font-light text-primary-foreground leading-[1.15] mb-6">
                 Schedule a Listing Consultation
               </h2>
-              <p className="text-primary-foreground/60 leading-relaxed mb-10 max-w-lg">
-                Considering selling your Austin home? Schedule a complimentary consultation to discuss pricing strategy, marketing, timeline, and how we can position your property for maximum exposure and value.
+              <p className="text-primary-foreground/60 leading-relaxed mb-10 max-w-lg">Considering selling your Austin property? Schedule a complimentary consultation to discuss pricing strategy, marketing, timeline, and how we can position your property for maximum exposure and value.
+
               </p>
               <div className="space-y-6">
                 <div>
@@ -562,7 +562,7 @@ const Sell = () => {
               <div>
                 <textarea name="message" placeholder="Tell us about your property and goals..." value={conForm.message} onChange={handleConChange} rows={4} maxLength={2000} className={`${inputDark} resize-none`} />
               </div>
-              <button type="submit" disabled={conSubmitting} className="text-minimal bg-primary-foreground text-[#0C0F24] hover:bg-gold hover:text-white px-10 py-4 transition-colors duration-300 w-full md:w-auto disabled:opacity-50 disabled:cursor-not-allowed">
+              <button type="submit" disabled={conSubmitting} className="text-minimal bg-primary-foreground text-[#0C0F24] hover:bg-primary-foreground/90 px-10 py-4 transition-colors duration-300 w-full md:w-auto disabled:opacity-50 disabled:cursor-not-allowed">
                 {conSubmitting ? "SENDING..." : "REQUEST CONSULTATION"}
               </button>
             </form>

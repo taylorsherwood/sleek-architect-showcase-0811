@@ -57,7 +57,7 @@ const Connect = () => {
               />
 
               {/* Content overlay */}
-              <div className="absolute bottom-0 left-0 right-0 p-7 pb-8 flex flex-col items-center text-center">
+              <div className="absolute bottom-0 left-0 right-0 p-5 pb-6 flex flex-col items-center text-center">
                 {/* Name */}
                 <h1
                   className="font-display font-medium leading-none"

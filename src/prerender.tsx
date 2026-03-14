@@ -8,6 +8,8 @@ import { communityPages } from "@/data/communityData";
 import { blogPosts } from "@/data/blogPosts";
 import { seoBlogPosts } from "@/data/seoBlogPosts";
 
+const SITE_URL = "https://www.echelonpropertygroup.com";
+
 type HeadTag = {
   type: "meta" | "link";
   props: Record<string, string>;

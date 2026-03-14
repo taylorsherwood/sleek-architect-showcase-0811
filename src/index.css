@@ -143,8 +143,6 @@
     }
   }
 
-  .scroll-indicator-line {
-
   /* Subtle buzz animation */
   @keyframes cta-buzz {
     0%, 2% { transform: translateX(0); }

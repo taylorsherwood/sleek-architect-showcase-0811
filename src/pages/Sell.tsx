@@ -243,7 +243,7 @@ const Sell = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Sell Your Home in Austin | Echelon Property Group"
-        description="Sell your Austin home for top dollar. Strategic marketing, expert negotiation, and luxury property presentation from Taylor Sherwood — a leading Austin luxury listing agent. Barton Creek real estate, Austin home value insights, and more."
+        description="Sell your Austin home for top dollar. Strategic marketing, expert negotiation, and luxury presentation from Taylor Sherwood — Austin's trusted luxury listing agent."
         canonical="https://www.echelonpropertygroup.com/sell" />
       
       <Navigation />
@@ -251,7 +251,7 @@ const Sell = () => {
       {/* ── Hero ── */}
       <section className="relative h-[70vh] min-h-[540px] flex items-center">
         <div className="absolute inset-0">
-          <img src={heroImg} alt="Luxury property in Austin Texas" className="w-full h-full object-cover" />
+          <img src={heroImg} alt="Luxury property in Austin Texas" title="Sell your Austin luxury home — Echelon Property Group" className="w-full h-full object-cover" loading="eager" decoding="async" />
           <div className="absolute inset-0 bg-[#0C0F24]/60" />
         </div>
         <div className="relative container mx-auto px-6">
@@ -346,8 +346,10 @@ const Sell = () => {
               <img
                 src={taylorProfileSell}
                 alt="Taylor Sherwood — Austin luxury real estate advisor"
+                title="Taylor Sherwood — Echelon Property Group listing specialist"
                 className="w-full object-contain"
-                loading="lazy" />
+                loading="lazy"
+                decoding="async" />
               
             </div>
           </div>

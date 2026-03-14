@@ -93,7 +93,7 @@ const Contact = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Contact Echelon Property Group | Austin Real Estate Advisor"
-        description="Contact Taylor Sherwood and Echelon Property Group for luxury homes, land, commercial real estate, and investment property in Austin Texas. Schedule a consultation today."
+        description="Contact Taylor Sherwood and Echelon Property Group for luxury homes, land, commercial, and investment real estate in Austin TX. Schedule a consultation today."
       />
       <Navigation />
 
@@ -115,19 +115,19 @@ const Contact = () => {
 
                 <div className="space-y-8">
                   <div>
-                    <h3 className="text-minimal text-muted-foreground mb-2">EMAIL</h3>
+                    <h2 className="text-minimal text-muted-foreground mb-2">EMAIL</h2>
                     <a href="mailto:info@echelonpropertygroup.com" className="text-lg hover:text-muted-foreground transition-colors duration-300">taylor@echelonpropertygroup.com
 
                     </a>
                   </div>
                   <div>
-                    <h3 className="text-minimal text-muted-foreground mb-2">PHONE</h3>
+                    <h2 className="text-minimal text-muted-foreground mb-2">PHONE</h2>
                     <a href="tel:+15125551234" className="text-lg hover:text-muted-foreground transition-colors duration-300">(512) 661-3843
 
                     </a>
                   </div>
                   <div>
-                    <h3 className="text-minimal text-muted-foreground mb-2">OFFICE</h3>
+                    <h2 className="text-minimal text-muted-foreground mb-2">OFFICE</h2>
                     <address className="text-lg not-italic">2105 East MLK Boulevard Ste 227
 Austin, Texas 78702
                     </address>

@@ -295,7 +295,7 @@ const Buy = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Buying Real Estate in Austin | Echelon Property Group"
-        description="Expert buyer representation for Austin luxury homes for sale. Access off-market Barton Creek homes for sale, investment properties, and concierge-level service with Taylor Sherwood — a top Austin luxury real estate agent."
+        description="Expert buyer representation for Austin luxury homes. Off-market access, concierge service, and strategic guidance from Taylor Sherwood — top Austin luxury real estate agent."
         canonical="https://www.echelonpropertygroup.com/buy" />
       
       <Navigation />
@@ -303,7 +303,7 @@ const Buy = () => {
       {/* ── Hero ── */}
       <section className="relative h-[70vh] min-h-[540px] flex items-center">
         <div className="absolute inset-0">
-          <img src={heroImg} alt="Luxury home in Austin Texas" className="w-full h-full object-cover" />
+          <img src={heroImg} alt="Luxury home in Austin Texas" title="Austin luxury real estate — buyer services" className="w-full h-full object-cover" loading="eager" decoding="async" />
           <div className="absolute inset-0 bg-[#0C0F24]/60" />
         </div>
         <div className="relative container mx-auto px-6">

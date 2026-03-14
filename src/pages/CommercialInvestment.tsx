@@ -31,7 +31,7 @@ const CommercialInvestment = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Commercial Investment Property | Echelon Property Group"
-        description="Explore Austin commercial real estate and investment properties. Multifamily, retail, office, land development, and income-producing opportunities across the Austin metro. Expert advisory from Echelon Property Group."
+        description="Austin commercial and investment real estate: multifamily, retail, office, land, and income-producing properties. Expert advisory from Echelon Property Group."
       />
       <SchemaMarkup schema={createFAQSchema(faqs)} />
       <Navigation />

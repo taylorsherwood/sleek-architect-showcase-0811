@@ -7,7 +7,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import { useHeroScroll } from "@/hooks/useHeroScroll";
 
 const links = [
-  { label: "Become an Echelon Insider", href: "https://taylorsherwood.myflodesk.com/biolink" },
+  { label: "Become an Echelon Insider", href: "https://taylorsherwood.myflodesk.com/biolink", buzz: true },
   
   
   { label: "Complimentary Property Valuation", href: "https://www.echelonpropertygroup.com/sell" },

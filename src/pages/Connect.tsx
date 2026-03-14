@@ -86,13 +86,13 @@ const Connect = () => {
                 <p
                   className="font-sans"
                   style={{
-                    fontSize: "12px",
-                    letterSpacing: "0.22em",
+                    fontSize: "14px",
+                    letterSpacing: "0.18em",
                     textTransform: "uppercase",
                     fontVariant: "all-small-caps",
-                    fontWeight: 500,
-                    lineHeight: 1.3,
-                    color: "hsl(42 37% 67%)",
+                    fontWeight: 600,
+                    lineHeight: 1.4,
+                    color: "hsl(42 37% 72%)",
                   }}
                 >
                   Austin Luxury Real Estate
@@ -100,13 +100,13 @@ const Connect = () => {
                 <p
                   className="font-sans"
                   style={{
-                    fontSize: "15px",
-                    letterSpacing: "0.2em",
+                    fontSize: "16px",
+                    letterSpacing: "0.18em",
                     textTransform: "uppercase",
-                    fontWeight: 400,
-                    lineHeight: 1.2,
-                    marginTop: "1px",
-                    color: "hsl(0 0% 100% / 0.38)",
+                    fontWeight: 500,
+                    lineHeight: 1.3,
+                    marginTop: "2px",
+                    color: "hsl(0 0% 100% / 0.6)",
                   }}
                 >
                   Land&nbsp;·&nbsp;Investment Property

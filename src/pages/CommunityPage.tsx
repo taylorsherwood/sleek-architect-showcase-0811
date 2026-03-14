@@ -60,6 +60,38 @@ function createCommunitySchema(community: { name: string; slug: string; metaDesc
   ];
 }
 
+/** Renders markdown-like content: ### for H3, - for bullets, paragraphs split by \n\n */
+const ContentBlock = ({ text }: { text: string }) => {
+  const blocks = text.split('\n\n');
+  return (
+    <div className="space-y-4">
+      {blocks.map((block, i) => {
+        const trimmed = block.trim();
+        if (trimmed.startsWith('### ')) {
+          return (
+            <h3 key={i} className="text-xl md:text-2xl font-display font-medium text-foreground mt-6 mb-2">
+              {trimmed.substring(4)}
+            </h3>
+          );
+        }
+        if (trimmed.startsWith('- ')) {
+          const items = trimmed.split('\n').filter(l => l.trim().startsWith('- '));
+          return (
+            <ul key={i} className="list-disc list-inside space-y-1.5 text-muted-foreground leading-relaxed ml-2">
+              {items.map((item, j) => (
+                <li key={j}>{item.trim().substring(2)}</li>
+              ))}
+            </ul>
+          );
+        }
+        return (
+          <p key={i} className="text-muted-foreground leading-relaxed">{trimmed}</p>
+        );
+      })}
+    </div>
+  );
+};
+
 const CommunityPage = () => {
   const { slug } = useParams<{ slug: string }>();
   const community = communityPages.find((c) => c.slug === slug);
@@ -128,9 +160,7 @@ const CommunityPage = () => {
               <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
                 {community.name} Neighborhood Overview
               </h2>
-              {community.overview.split('\n\n').map((p, i) => (
-                <p key={i} className="text-muted-foreground leading-relaxed mb-4">{p}</p>
-              ))}
+              <ContentBlock text={community.overview} />
             </section>
 
             {/* Lifestyle */}
@@ -138,9 +168,7 @@ const CommunityPage = () => {
               <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
                 Lifestyle in {community.name}
               </h2>
-              {community.lifestyle.split('\n\n').map((p, i) => (
-                <p key={i} className="text-muted-foreground leading-relaxed mb-4">{p}</p>
-              ))}
+              <ContentBlock text={community.lifestyle} />
             </section>
 
             {/* Market Insights */}
@@ -148,9 +176,7 @@ const CommunityPage = () => {
               <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
                 {community.name} Real Estate Market Insights
               </h2>
-              {community.marketInsights.split('\n\n').map((p, i) => (
-                <p key={i} className="text-muted-foreground leading-relaxed mb-4">{p}</p>
-              ))}
+              <ContentBlock text={community.marketInsights} />
             </section>
 
             {/* Amenities & Schools */}
@@ -158,9 +184,7 @@ const CommunityPage = () => {
               <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
                 Schools and Amenities Near {community.name}
               </h2>
-              {community.amenitiesAndSchools.split('\n\n').map((p, i) => (
-                <p key={i} className="text-muted-foreground leading-relaxed mb-4">{p}</p>
-              ))}
+              <ContentBlock text={community.amenitiesAndSchools} />
             </section>
 
             {/* Investment */}
@@ -168,9 +192,7 @@ const CommunityPage = () => {
               <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
                 Investment Potential in {community.name}
               </h2>
-              {community.investmentPotential.split('\n\n').map((p, i) => (
-                <p key={i} className="text-muted-foreground leading-relaxed mb-4">{p}</p>
-              ))}
+              <ContentBlock text={community.investmentPotential} />
             </section>
 
             {/* Internal Links */}

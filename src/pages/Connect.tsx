@@ -24,7 +24,7 @@ const Connect = () => {
         description="Connect with Austin luxury real estate advisor Taylor Sherwood. Browse listings, search homes, or request a private consultation."
       />
       <div
-        className="min-h-screen flex flex-col items-center px-4 py-6 sm:py-10"
+        className="min-h-screen flex flex-col items-center px-4 py-4"
         style={{ backgroundColor: "hsl(233, 50%, 9%)" }}
       >
         <div className="w-full max-w-[440px] mx-auto flex flex-col">
@@ -57,7 +57,7 @@ const Connect = () => {
               />
 
               {/* Content overlay */}
-              <div className="absolute bottom-0 left-0 right-0 p-7 pb-8 flex flex-col items-center text-center">
+              <div className="absolute bottom-0 left-0 right-0 p-5 pb-6 flex flex-col items-center text-center">
                 {/* Name */}
                 <h1
                   className="font-display font-medium leading-none"
@@ -112,7 +112,7 @@ const Connect = () => {
                 </p>
 
                 {/* Social icons */}
-                <div className="flex items-center gap-4 mt-7">
+                <div className="flex items-center gap-3 mt-5">
                   {socials.map((s) => (
                     <a
                       key={s.label}
@@ -161,17 +161,17 @@ const Connect = () => {
           </div>
 
           {/* ── Logo between sections ── */}
-          <div className="flex justify-center my-8">
+          <div className="flex justify-center my-4">
             <img
               src={echelonLogo}
               alt="Echelon Property Group"
-              style={{ height: "100px", opacity: 0.55 }}
+              style={{ height: "140px" }}
               loading="eager"
             />
           </div>
 
           {/* ── Action Buttons ── */}
-          <nav className="flex flex-col gap-4" aria-label="Quick links">
+          <nav className="flex flex-col gap-3" aria-label="Quick links">
             {links.map((link) => (
               <a
                 key={link.label}
@@ -227,7 +227,7 @@ const Connect = () => {
           </nav>
 
           {/* ── Footer ── */}
-          <div className="flex flex-col items-center gap-3 mt-12 mb-4">
+          <div className="flex flex-col items-center gap-2 mt-8 mb-2">
             <div
               className="w-10 h-px"
               style={{

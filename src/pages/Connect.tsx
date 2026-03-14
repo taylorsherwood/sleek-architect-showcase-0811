@@ -58,15 +58,6 @@ const Connect = () => {
 
               {/* Content overlay */}
               <div className="absolute bottom-0 left-0 right-0 p-7 pb-8 flex flex-col items-center text-center">
-                {/* Logo – centered brand anchor */}
-                <img
-                  src={echelonLogo}
-                  alt="Echelon Property Group"
-                  className="mb-5"
-                  style={{ height: "75px", opacity: 0.7 }}
-                  loading="eager"
-                />
-
                 {/* Name */}
                 <h1
                   className="font-display font-medium leading-none"

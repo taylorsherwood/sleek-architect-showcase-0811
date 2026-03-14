@@ -95,6 +95,7 @@ const CommercialInvestment = () => {
                   <img
                     src={gillisStreet}
                     alt="4314 Gillis Street, Austin TX 78745 — 24-unit multifamily"
+                    title="4314 Gillis Street — 24-unit multifamily investment, Austin TX"
                     className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
                     loading="lazy"
                     decoding="async"

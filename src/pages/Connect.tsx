@@ -163,7 +163,7 @@ const Connect = () => {
           </div>
 
           {/* ── Logo between sections ── */}
-          <div className="flex justify-center my-4">
+          <div className="flex justify-center my-4 px-4">
             <img
               src={echelonLogo}
               alt="Echelon Property Group"
@@ -173,7 +173,7 @@ const Connect = () => {
           </div>
 
           {/* ── Action Buttons ── */}
-          <nav className="flex flex-col gap-3" aria-label="Quick links">
+          <nav className="flex flex-col gap-3 px-4" aria-label="Quick links">
             {links.map((link) => (
               <a
                 key={link.label}

@@ -6,6 +6,7 @@ import SEOHead from "@/components/SEOHead";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
 import Testimonials from "@/components/Testimonials";
+import FeaturedListings from "@/components/FeaturedListings";
 import {
   CheckCircle,
   ArrowRight,
@@ -18,8 +19,6 @@ import {
 "lucide-react";
 
 import heroImg from "@/assets/sell-hero-luxury-home.jpg";
-import listing2 from "@/assets/listing-2.jpg";
-import listing3 from "@/assets/listing-3.jpg";
 import taylorProfileSell from "@/assets/echelon-for-sale-sign.png";
 
 /* ------------------------------------------------------------------ */
@@ -104,39 +103,6 @@ const stats = [
 { value: "98%", label: "List-to-Sale Price Ratio" },
 { value: "21", label: "Avg. Days on Market" },
 { value: "$100M+", label: "Career Sales Volume" }];
-
-
-const recentListings = [
-{
-  image: "/lovable-uploads/0fc79a0b-1fde-439f-bb08-6062e50770b7.jpg",
-  address: "2300 Barton Creek Boulevard #15",
-  location: "Barton Creek, Austin",
-  price: "$3,750,000",
-  beds: 4,
-  baths: 4,
-  sqft: "4,147",
-  badge: "Private Listing"
-},
-{
-  image: listing2,
-  address: "1203 Westlake Ridge",
-  location: "Westlake Hills, Austin",
-  price: "$7M+ Luxury Home",
-  beds: 6,
-  baths: 7,
-  sqft: "8,400",
-  badge: "Private Market Opportunity"
-},
-{
-  image: listing3,
-  address: "Ranch Estate on 42 Acres",
-  location: "Texas Hill Country",
-  price: "$5M+ Hill Country Estate",
-  beds: 4,
-  baths: 5,
-  sqft: "5,800",
-  badge: "Private Market Opportunity"
-}];
 
 
 /* ------------------------------------------------------------------ */
@@ -418,59 +384,7 @@ const Sell = () => {
 
       <Testimonials />
 
-      {/* ── Recent / Featured Listings ── */}
-      <section className="py-28 bg-secondary/50">
-        <div className="container mx-auto px-6">
-          <div className="max-w-7xl mx-auto">
-            <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-16">
-              <div>
-                <p className="text-minimal text-gold mb-4 font-extrabold">PROPERTIES REPRESENTED</p>
-                <h2 className="text-4xl md:text-5xl font-display font-light text-architectural">
-                  Featured Listings
-                </h2>
-                <p className="text-muted-foreground mt-4 max-w-xl">
-                  A sample of the luxury properties we've marketed and represented across Austin and the Hill Country.
-                </p>
-              </div>
-              <Link
-                to="/listings"
-                className="mt-6 md:mt-0 text-minimal text-muted-foreground hover:text-foreground transition-colors duration-300 flex items-center gap-2 shrink-0">
-                
-                VIEW ALL LISTINGS <ArrowRight className="w-3 h-3" />
-              </Link>
-            </div>
-            <div className="grid md:grid-cols-3 gap-8">
-              {recentListings.map((listing, i) =>
-              <div key={i} className="group">
-                  <div className="relative overflow-hidden mb-6">
-                    <img
-                    src={listing.image}
-                    alt={listing.address}
-                    className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
-                    loading="lazy" />
-                  
-                    <div className="absolute top-4 left-4 bg-background/90 backdrop-blur-sm px-4 py-2">
-                      <span className="text-minimal text-foreground font-semibold">{listing.price}</span>
-                    </div>
-                    {listing.badge &&
-                  <div className="absolute bottom-4 right-4 bg-background/90 backdrop-blur-sm px-3 py-1.5">
-                        <span className="text-[10px] tracking-widest uppercase text-muted-foreground font-medium">{listing.badge}</span>
-                      </div>
-                  }
-                  </div>
-                  <h3 className="text-lg font-display font-medium mb-1">{listing.address}</h3>
-                  <p className="text-minimal text-muted-foreground mb-4">{listing.location}</p>
-                  <div className="flex gap-6 text-sm text-muted-foreground border-t border-border pt-4">
-                    <span>{listing.beds} Beds</span>
-                    <span>{listing.baths} Baths</span>
-                    <span>{listing.sqft} Sq Ft</span>
-                  </div>
-                </div>
-              )}
-            </div>
-          </div>
-        </div>
-      </section>
+      <FeaturedListings />
 
       {/* ── Home Valuation ── */}
       <section id="home-valuation" className="py-28 bg-background">

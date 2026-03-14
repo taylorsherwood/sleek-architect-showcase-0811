@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import heroFallback from "@/assets/hero-fallback.jpg";
-import { useHeroScroll } from "@/hooks/useHeroScroll";
+
 
 const FALLBACK_TIMEOUT = 4000;
 const RETRY_DELAY = 800;
@@ -11,7 +11,7 @@ const Hero = () => {
   const [videoReady, setVideoReady] = useState(false);
   const [videoSrc, setVideoSrc] = useState<string | null>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
-  const scrollProgress = useHeroScroll();
+  
 
   // Lazy-load: set video src after initial render
   useEffect(() => {
@@ -90,11 +90,6 @@ const Hero = () => {
 
   return (
     <section className="relative h-screen flex items-center overflow-hidden bg-black">
-      {/* Hero darken on scroll */}
-      <div
-        className="absolute inset-0 bg-black pointer-events-none"
-        style={{ opacity: scrollProgress * 0.5, zIndex: 3, transition: "none" }}
-      />
 
       {/* Decorative background video */}
       <div
@@ -160,18 +155,6 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Scroll indicator */}
-      <div
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center"
-        style={{
-          zIndex: 4,
-          opacity: 1 - scrollProgress * 4,
-          transition: "none",
-          pointerEvents: "none",
-        }}
-      >
-        <div className="scroll-indicator-line" />
-      </div>
     </section>
   );
 };

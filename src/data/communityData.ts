@@ -37,7 +37,7 @@ export const communityPages: CommunityData[] = [
     slug: "westlake-hills",
     name: "Westlake Hills",
     heroTitle: "Homes for Sale in Westlake Hills Austin",
-    metaTitle: "Westlake Hills Austin Homes for Sale | Westlake Hills Real Estate Guide",
+    metaTitle: "Westlake Hills Homes for Sale | Echelon Property Group",
     metaDescription: "Explore luxury homes for sale in Westlake Hills Austin. Stunning Hill Country views, top Eanes ISD schools, and estates from $1.2M to $20M+.",
     priceRange: "$1.2M – $20M+",
     image: westlakeHillsImg,

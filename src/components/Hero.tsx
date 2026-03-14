@@ -90,11 +90,6 @@ const Hero = () => {
 
   return (
     <section className="relative h-screen flex items-center overflow-hidden bg-black">
-      {/* Hero darken on scroll */}
-      <div
-        className="absolute inset-0 bg-black pointer-events-none"
-        style={{ opacity: scrollProgress * 0.5, zIndex: 3, transition: "none" }}
-      />
 
       {/* Decorative background video */}
       <div

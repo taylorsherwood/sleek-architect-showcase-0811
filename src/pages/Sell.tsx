@@ -393,10 +393,9 @@ const Sell = () => {
             <div>
               <p className="text-minimal text-gold mb-4 font-extrabold">HOME VALUATION</p>
               <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-6">
-                What Is Your Home Worth?
+                What Is Your Property Worth?
               </h2>
-              <p className="text-muted-foreground leading-relaxed mb-6">Understanding your Austin property value is the first step toward a successful sale. Our complimentary valuation combines real-time market data, recent comparable sales, and neighborhood-level insights to provide an accurate picture of your property's worth.
-
+              <p className="text-muted-foreground leading-relaxed mb-6">Understanding your Austin propertvalue is the first step toward a successful sale. Our complimentary valuation combines real-time market data, recent comparable sales, and neighborhood-level insights to provide an accurate picture of your property's worth.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-8">
                 Whether you own in Barton Creek, Westlake, Tarrytown, or anywhere across the Austin metro, request your personalized valuation today.

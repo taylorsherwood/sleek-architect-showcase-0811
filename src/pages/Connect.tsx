@@ -8,7 +8,7 @@ import { useHeroScroll } from "@/hooks/useHeroScroll";
 
 const links = [
   { label: "Become an Echelon Insider", href: "https://taylorsherwood.myflodesk.com/biolink" },
-  { label: "Search Austin Homes", href: "https://taylorsherwood.realscout.com/homesearch/map" },
+  
   { label: "Featured Austin Luxury Listing", href: "https://www.villagovernorshill.com" },
   { label: "Complimentary Property Valuation", href: "https://www.echelonpropertygroup.com/sell" },
   { label: "Work With Taylor", href: "https://www.echelonpropertygroup.com/contact", featured: true },

@@ -42,19 +42,17 @@ const ScrollReveal = ({
     return () => observer.disconnect();
   }, []);
 
+  const style = {
+    opacity: visible ? 1 : 0,
+    transform: visible ? "translateY(0)" : `translateY(${distance}px)`,
+    transition: `opacity ${duration}ms cubic-bezier(0.25, 0.1, 0.25, 1) ${delay}ms, transform ${duration}ms cubic-bezier(0.25, 0.1, 0.25, 1) ${delay}ms`,
+    willChange: "opacity, transform" as const,
+  };
+
   return (
-    <Tag
-      ref={ref as any}
-      className={className}
-      style={{
-        opacity: visible ? 1 : 0,
-        transform: visible ? "translateY(0)" : `translateY(${distance}px)`,
-        transition: `opacity ${duration}ms cubic-bezier(0.25, 0.1, 0.25, 1) ${delay}ms, transform ${duration}ms cubic-bezier(0.25, 0.1, 0.25, 1) ${delay}ms`,
-        willChange: "opacity, transform",
-      }}
-    >
+    <div ref={ref} className={className} style={style} data-reveal-tag={Tag}>
       {children}
-    </Tag>
+    </div>
   );
 };
 

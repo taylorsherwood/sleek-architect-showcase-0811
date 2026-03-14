@@ -262,7 +262,7 @@ For buy-and-hold investors, Rollingwood's combination of strong appreciation, lo
     slug: "travis-heights",
     name: "Travis Heights",
     heroTitle: "Homes for Sale in Travis Heights Austin",
-    metaTitle: "Travis Heights Austin Homes for Sale | Travis Heights Real Estate Guide",
+    metaTitle: "Travis Heights Homes for Sale | Echelon Property Group",
     metaDescription: "Browse homes for sale in Travis Heights Austin. Iconic South Austin neighborhood with walkability to SoCo, eclectic charm, and homes from $600K to $4M+.",
     priceRange: "$600K – $4M+",
     image: travisHeightsImg,

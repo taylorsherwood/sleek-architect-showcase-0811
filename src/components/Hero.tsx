@@ -11,7 +11,7 @@ const Hero = () => {
   const [videoReady, setVideoReady] = useState(false);
   const [videoSrc, setVideoSrc] = useState<string | null>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
-  const scrollProgress = useHeroScroll();
+  
 
   // Lazy-load: set video src after initial render
   useEffect(() => {

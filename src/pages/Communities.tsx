@@ -4,7 +4,7 @@ import SEOHead from "@/components/SEOHead";
 import { Link } from "react-router-dom";
 import { communityPages } from "@/data/communityData";
 
-const bartonCreek = "/lovable-uploads/99d231ba-d5ab-43da-83fe-162a182a3914.jpg";
+import bartonCreek from "@/assets/community-barton-creek.jpg";
 const westlake = "/lovable-uploads/c250e465-9078-48da-b8c6-a690b5beb959.png";
 import lakeAustin from "@/assets/community-lake-austin.jpg";
 import rollingwood from "@/assets/community-rollingwood.jpg";

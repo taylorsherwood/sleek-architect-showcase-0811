@@ -19,7 +19,7 @@ import {
 import heroImg from "@/assets/sell-hero-luxury-home.jpg";
 import listing2 from "@/assets/listing-2.jpg";
 import listing3 from "@/assets/listing-3.jpg";
-import taylorProfileSell from "@/assets/taylor-profile-sell.png";
+import echelonForSaleSign from "@/assets/echelon-for-sale-sign.png";
 
 /* ------------------------------------------------------------------ */
 /*  DATA                                                               */

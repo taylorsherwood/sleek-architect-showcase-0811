@@ -29,6 +29,8 @@ const BuyHomesAustin = lazy(() => import("@/pages/BuyHomesAustin"));
 const SellHomeAustin = lazy(() => import("@/pages/SellHomeAustin"));
 const AustinRealEstateInvestment = lazy(() => import("@/pages/AustinRealEstateInvestment"));
 const LandForSaleAustin = lazy(() => import("@/pages/LandForSaleAustin"));
+const SearchPage = lazy(() => import("@/pages/Search"));
+const LandPage = lazy(() => import("@/pages/Land"));
 const PastTransactions = lazy(() => import("@/pages/PastTransactions"));
 const connectImport = () => import("@/pages/Connect");
 const Connect = lazy(connectImport);

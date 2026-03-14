@@ -375,11 +375,11 @@ const Sell = () => {
                 ))}
               </ul>
             </div>
-            <div className="relative">
+            <div className="relative flex items-center justify-center">
               <img
                 src={taylorProfileSell}
                 alt="Taylor Sherwood — Austin luxury real estate advisor"
-                className="w-full aspect-[3/4] object-cover"
+                className="w-4/5 aspect-[3/4] object-cover object-top"
                 loading="lazy"
               />
             </div>

@@ -8,6 +8,7 @@ const links = [
   { label: "Featured Austin Luxury Listing", href: "https://www.villagovernorshill.com" },
   { label: "Complimentary Property Valuation", href: "https://www.echelonpropertygroup.com/sell" },
   { label: "Work With Taylor", href: "https://www.echelonpropertygroup.com/contact", featured: true },
+  { label: "Information About Brokerage Services", href: "https://www.dropbox.com/scl/fi/ism1gkeqt0bol9srh3b0a/IABS-1-2.pdf?rlkey=l05zn9bqqmg8e1ru4qjzsnd1o&dl=0" },
 ];
 
 const socials = [

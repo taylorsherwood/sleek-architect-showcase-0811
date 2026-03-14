@@ -346,8 +346,10 @@ const Sell = () => {
               <img
                 src={taylorProfileSell}
                 alt="Taylor Sherwood — Austin luxury real estate advisor"
+                title="Taylor Sherwood — Echelon Property Group listing specialist"
                 className="w-full object-contain"
-                loading="lazy" />
+                loading="lazy"
+                decoding="async" />
               
             </div>
           </div>

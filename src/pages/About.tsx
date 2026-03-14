@@ -11,8 +11,8 @@ const About = () => {
     <div className="min-h-screen">
       <SEOHead
         title="About Taylor Sherwood | Echelon Property Group Austin"
-        description="Meet Taylor Sherwood, CLHMS and founder of Echelon Property Group. Expert advisory for luxury homes, land, commercial, and investment property in Austin TX."
-      />
+        description="Meet Taylor Sherwood, CLHMS and founder of Echelon Property Group. Expert advisory for luxury homes, land, commercial, and investment property in Austin TX." />
+      
       <SchemaMarkup schema={taylorSherwoodSchema} />
       <Navigation />
 
@@ -98,7 +98,7 @@ const About = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
             <div>
-              <p className="text-minimal text-gold mb-4">OUR PHILOSOPHY</p>
+              <p className="text-minimal text-gold mb-4 font-extrabold">OUR PHILOSOPHY</p>
               <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-8">
                 Every Property Tells a Story
               </h2>

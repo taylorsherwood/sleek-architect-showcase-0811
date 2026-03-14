@@ -1,7 +1,7 @@
 import { renderToString } from "react-dom/server";
 import { StaticRouter } from "react-router-dom/server";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { HelmetProvider, type FilledContext } from "react-helmet-async";
+import { HelmetProvider, type HelmetServerState } from "react-helmet-async";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import AppRoutes from "@/AppRoutes";
 import { communityPages } from "@/data/communityData";
@@ -80,7 +80,7 @@ const extractTitle = (titleMarkup: string) => {
   return titleMatch?.[1]?.trim() || "Echelon Property Group";
 };
 
-const buildHead = (helmet?: FilledContext["helmet"]) => {
+const buildHead = (helmet?: HelmetServerState) => {
   if (!helmet) {
     return {
       title: "Echelon Property Group",
@@ -98,7 +98,7 @@ const buildHead = (helmet?: FilledContext["helmet"]) => {
 };
 
 export async function prerender(data: { url: string }) {
-  const helmetContext: FilledContext = {};
+  const helmetContext: { helmet?: HelmetServerState } = {};
   const queryClient = new QueryClient();
 
   const html = renderToString(

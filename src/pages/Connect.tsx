@@ -26,7 +26,7 @@ const Connect = () => {
         description="Connect with Austin luxury real estate advisor Taylor Sherwood. Browse listings, search homes, or request a private consultation."
       />
       <div
-        className="min-h-screen flex flex-col items-center px-4 py-4"
+        className="min-h-screen flex flex-col items-center"
         style={{ backgroundColor: "hsl(233, 50%, 9%)" }}
       >
         <div className="w-full max-w-[440px] mx-auto flex flex-col">
@@ -35,9 +35,9 @@ const Connect = () => {
           <div
             className="relative overflow-hidden"
             style={{
-              borderRadius: "24px",
+              borderRadius: "0 0 24px 24px",
               boxShadow:
-                "0 24px 64px hsl(0 0% 0% / 0.5), 0 8px 24px hsl(0 0% 0% / 0.3), inset 0 1px 0 hsl(0 0% 100% / 0.04)",
+                "0 24px 64px hsl(0 0% 0% / 0.5), 0 8px 24px hsl(0 0% 0% / 0.3)",
             }}
           >
             <div className="relative w-full" style={{ aspectRatio: "3 / 4.2" }}>

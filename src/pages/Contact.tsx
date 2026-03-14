@@ -127,7 +127,7 @@ const Contact = () => {
                     </a>
                   </div>
                   <div>
-                    <h3 className="text-minimal text-muted-foreground mb-2">OFFICE</h3>
+                    <h2 className="text-minimal text-muted-foreground mb-2">OFFICE</h2>
                     <address className="text-lg not-italic">2105 East MLK Boulevard Ste 227
 Austin, Texas 78702
                     </address>

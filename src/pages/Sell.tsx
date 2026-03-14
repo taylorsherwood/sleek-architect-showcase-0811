@@ -384,7 +384,31 @@ const Sell = () => {
         </div>
       </section>
 
-      <Testimonials />
+      {/* ── Full-Spectrum Real Estate Advisory ── */}
+      <section className="py-24 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-8">
+              Full-Spectrum Real Estate Advisory
+            </h2>
+            <div className="space-y-6 text-muted-foreground leading-relaxed">
+              <p>
+                Echelon Property Group provides comprehensive real estate services across residential, commercial, land, and investment sectors. Unlike single-focus agents, our breadth of experience allows us to advise clients holistically — whether they're purchasing a primary residence, diversifying into commercial property, or assembling land for development.
+              </p>
+              <p>
+                Our residential practice covers luxury homes in Austin's most coveted neighborhoods including Westlake Hills, Barton Creek, Lake Austin, Tarrytown, Rollingwood, and Spanish Oaks. We represent both buyers and sellers, bringing strategic pricing, premium marketing, and disciplined negotiation to every transaction.
+              </p>
+              <p>
+                On the commercial and investment side, we advise on multifamily acquisitions, retail and office tenant representation, development land sourcing, and portfolio strategy. Our background in economics and investment analysis gives clients an institutional-grade perspective that most residential-only agents cannot provide.
+              </p>
+              <p>
+                Land brokerage is a core competency, encompassing residential lots, ranch properties, Hill Country acreage, and entitled development parcels throughout the Austin MSA. We guide clients through zoning analysis, highest-and-best-use evaluation, and acquisition negotiation for properties ranging from single homesites to large-scale development tracts.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       <FeaturedListings />
 

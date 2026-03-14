@@ -86,8 +86,8 @@ const Connect = () => {
                 <p
                   className="font-sans"
                   style={{
-                    fontSize: "15px",
-                    letterSpacing: "0.2em",
+                    fontSize: "12px",
+                    letterSpacing: "0.22em",
                     textTransform: "uppercase",
                     fontVariant: "all-small-caps",
                     fontWeight: 500,
@@ -100,11 +100,11 @@ const Connect = () => {
                 <p
                   className="font-sans"
                   style={{
-                    fontSize: "12px",
-                    letterSpacing: "0.22em",
+                    fontSize: "15px",
+                    letterSpacing: "0.2em",
                     textTransform: "uppercase",
                     fontWeight: 400,
-                    lineHeight: 1.3,
+                    lineHeight: 1.2,
                     marginTop: "1px",
                     color: "hsl(0 0% 100% / 0.38)",
                   }}

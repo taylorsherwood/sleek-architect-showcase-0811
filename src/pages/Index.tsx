@@ -70,43 +70,20 @@ const Index = () => {
       <Navigation />
       <Hero />
 
-      <ScrollReveal>
-        <CredibilityStrip />
-      </ScrollReveal>
-
-      <ScrollReveal delay={100}>
-        <ExpertiseSection />
-      </ScrollReveal>
+      <CredibilityStrip />
+      <ExpertiseSection />
 
       <Suspense fallback={<BelowFold />}>
-        <ScrollReveal>
-          <CommunitiesPreview />
-        </ScrollReveal>
-        <ScrollReveal>
-          <CommercialCTA />
-        </ScrollReveal>
+        <CommunitiesPreview />
+        <CommercialCTA />
         <div className="py-8 bg-secondary" />
-        <ScrollReveal>
-          <FeaturedListings />
-        </ScrollReveal>
-        <ScrollReveal>
-          <IntroSection />
-        </ScrollReveal>
-        <ScrollReveal>
-          <MeetTaylor />
-        </ScrollReveal>
-        <ScrollReveal>
-          <Testimonials />
-        </ScrollReveal>
-        <ScrollReveal>
-          <SellerCTA />
-        </ScrollReveal>
-        <ScrollReveal>
-          <CTASection />
-        </ScrollReveal>
-        <ScrollReveal>
-          <NewsletterSection />
-        </ScrollReveal>
+        <FeaturedListings />
+        <IntroSection />
+        <MeetTaylor />
+        <Testimonials />
+        <SellerCTA />
+        <CTASection />
+        <NewsletterSection />
         <Footer />
       </Suspense>
     </div>

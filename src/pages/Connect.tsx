@@ -63,7 +63,7 @@ const Connect = () => {
           />
 
           {/* ── Name & subtitle ── */}
-          <div className="text-center mt-7">
+          <div className="text-center mt-4">
             <h1
               className="font-display font-medium tracking-[-0.015em] leading-none"
               style={{ fontSize: "1.85rem", color: "hsl(0 0% 100%)" }}

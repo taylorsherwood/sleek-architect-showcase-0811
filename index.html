@@ -9,24 +9,31 @@
     <meta name="google-site-verification" content="dhXAgewx3oiXuLhNF6giXHxaz8pFcyt_MogbeQKtTfA" />
     <meta name="author" content="Echelon Property Group" />
 
-    <!-- Preload key fonts -->
+    <!-- DNS prefetch for third-party origins -->
+    <link rel="dns-prefetch" href="https://em.realscout.com" />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+
+    <!-- Preconnect key font origins -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Fonts: preload as stylesheet, swap on load to avoid render-blocking -->
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Raleway:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Raleway:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" media="print" onload="this.media='all'" />
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Raleway:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" /></noscript>
 
-    <!-- Preload hero assets -->
-    <link rel="preload" as="image" href="/images/hero-poster.jpg" />
+    <!-- Preload hero poster with high priority -->
+    <link rel="preload" as="image" href="/images/hero-poster.jpg" fetchpriority="high" />
 
-    <!-- Critical inline CSS for above-the-fold -->
+    <!-- Critical inline CSS for above-the-fold rendering -->
     <style>
       body{margin:0;font-family:'Raleway',sans-serif;background:#faf8f5;color:#191d2b;-webkit-font-smoothing:antialiased}
       .font-display{font-family:'Playfair Display',serif}
       #root{min-height:100vh}
     </style>
 
-    <!-- Non-critical third-party script deferred -->
+    <!-- RealScout widget — deferred (non-critical third-party) -->
     <script src="https://em.realscout.com/widgets/realscout-web-components.umd.js" defer></script>
     <style>
       realscout-your-listings {

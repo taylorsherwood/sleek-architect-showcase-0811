@@ -51,9 +51,9 @@ const CommunitiesPreview = () => {
               to={`/communities/${community.slug}`}
               className="group relative overflow-hidden aspect-[3/4]">
               
-                <img
+              <img
                 src={community.image}
-                alt={community.name}
+                alt={`Luxury homes for sale in ${community.name}, Austin Texas`}
                 title={`${community.name} luxury homes for sale in Austin TX`}
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 loading="lazy"

@@ -56,7 +56,8 @@ const Testimonials = () => {
                 </div>
                 <img
                   src={echelonIcon}
-                  alt=""
+                  alt="Echelon Property Group icon"
+                  title="Echelon Property Group — Austin luxury real estate"
                   className="absolute bottom-4 right-4 h-10 w-auto"
                   loading="lazy"
                   decoding="async"

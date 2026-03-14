@@ -171,7 +171,7 @@ const Connect = () => {
           </div>
 
           {/* ── Action Buttons ── */}
-          <nav className="flex flex-col gap-4" aria-label="Quick links">
+          <nav className="flex flex-col gap-3" aria-label="Quick links">
             {links.map((link) => (
               <a
                 key={link.label}

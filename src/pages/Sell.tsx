@@ -427,7 +427,7 @@ const Sell = () => {
               <div>
                 <textarea name="message" placeholder="Additional details (Optional)" value={valForm.message} onChange={handleValChange} rows={3} maxLength={2000} className={`${inputLight} resize-none`} />
               </div>
-              <button type="submit" disabled={valSubmitting} className="text-minimal bg-primary text-primary-foreground hover:bg-primary/90 px-10 py-4 transition-colors duration-300 w-full disabled:opacity-50 disabled:cursor-not-allowed">
+              <button type="submit" disabled={valSubmitting} className="text-minimal bg-primary text-primary-foreground hover:bg-gold hover:text-white px-10 py-4 transition-colors duration-300 w-full disabled:opacity-50 disabled:cursor-not-allowed">
                 {valSubmitting ? "SENDING..." : "REQUEST VALUATION"}
               </button>
             </form>

@@ -128,9 +128,7 @@ const CommunityPage = () => {
               <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
                 {community.name} Neighborhood Overview
               </h2>
-              {community.overview.split('\n\n').map((p, i) => (
-                <p key={i} className="text-muted-foreground leading-relaxed mb-4">{p}</p>
-              ))}
+              <ContentBlock text={community.overview} />
             </section>
 
             {/* Lifestyle */}
@@ -138,9 +136,7 @@ const CommunityPage = () => {
               <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
                 Lifestyle in {community.name}
               </h2>
-              {community.lifestyle.split('\n\n').map((p, i) => (
-                <p key={i} className="text-muted-foreground leading-relaxed mb-4">{p}</p>
-              ))}
+              <ContentBlock text={community.lifestyle} />
             </section>
 
             {/* Market Insights */}
@@ -148,9 +144,7 @@ const CommunityPage = () => {
               <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
                 {community.name} Real Estate Market Insights
               </h2>
-              {community.marketInsights.split('\n\n').map((p, i) => (
-                <p key={i} className="text-muted-foreground leading-relaxed mb-4">{p}</p>
-              ))}
+              <ContentBlock text={community.marketInsights} />
             </section>
 
             {/* Amenities & Schools */}
@@ -158,9 +152,7 @@ const CommunityPage = () => {
               <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
                 Schools and Amenities Near {community.name}
               </h2>
-              {community.amenitiesAndSchools.split('\n\n').map((p, i) => (
-                <p key={i} className="text-muted-foreground leading-relaxed mb-4">{p}</p>
-              ))}
+              <ContentBlock text={community.amenitiesAndSchools} />
             </section>
 
             {/* Investment */}
@@ -168,9 +160,7 @@ const CommunityPage = () => {
               <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
                 Investment Potential in {community.name}
               </h2>
-              {community.investmentPotential.split('\n\n').map((p, i) => (
-                <p key={i} className="text-muted-foreground leading-relaxed mb-4">{p}</p>
-              ))}
+              <ContentBlock text={community.investmentPotential} />
             </section>
 
             {/* Internal Links */}

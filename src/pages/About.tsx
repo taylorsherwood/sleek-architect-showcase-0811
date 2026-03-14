@@ -10,7 +10,7 @@ const About = () => {
   return (
     <div className="min-h-screen">
       <SEOHead
-        title="About Taylor Sherwood | Austin Luxury Real Estate Advisor | Echelon Property Group"
+        title="Taylor Sherwood, Austin Realtor | Echelon Property Group"
         description="Meet Taylor Sherwood, Certified Luxury Home Marketing Specialist and founder of Echelon Property Group. Expert advisory for luxury homes, land, commercial real estate, and investment property in Austin Texas."
       />
       <SchemaMarkup schema={taylorSherwoodSchema} />

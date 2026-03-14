@@ -110,7 +110,7 @@ const OffMarketHomes = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Austin Off-Market Luxury Homes | Private Listings | Echelon Property Group"
+        title="Off-Market Luxury Homes Austin | Echelon Property Group"
         description="Access exclusive off-market luxury homes in Austin, TX. Private listings in Westlake Hills, Barton Creek, Lake Austin, and Tarrytown. Get insider access to properties not on the MLS."
       />
       <SchemaMarkup schema={createFAQSchema(faqs)} />

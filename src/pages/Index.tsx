@@ -5,7 +5,7 @@ import CredibilityStrip from "@/components/CredibilityStrip";
 import ExpertiseSection from "@/components/ExpertiseSection";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { realEstateAgentSchema, localBusinessSchema, taylorSherwoodSchema, organizationSchema } from "@/components/SchemaMarkup";
-import ScrollReveal from "@/components/ScrollReveal";
+
 
 // Lazy-load below-fold sections to reduce initial JS bundle
 const CommunitiesPreview = lazy(() => import("@/components/CommunitiesPreview"));

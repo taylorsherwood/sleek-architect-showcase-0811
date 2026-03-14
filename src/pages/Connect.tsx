@@ -196,18 +196,14 @@ const Connect = () => {
                 onMouseEnter={(e) => {
                   const el = e.currentTarget;
                   const textEl = el.querySelector("span");
-                  el.style.background = "#baa26a";
-                  el.style.borderColor = "#baa26a";
-                  el.style.boxShadow = "0 10px 40px rgba(186, 162, 106, 0.3)";
+                  el.style.borderColor = "hsl(42 37% 57% / 0.4)";
+                  el.style.boxShadow = "0 8px 32px hsl(42 37% 57% / 0.1)";
                   el.style.transform = "translateY(-2px)";
-                  if (textEl) textEl.style.color = "#ffffff";
+                  if (textEl) textEl.style.color = "hsl(42 37% 67%)";
                 }}
                 onMouseLeave={(e) => {
                   const el = e.currentTarget;
                   const textEl = el.querySelector("span");
-                  el.style.background = link.featured
-                    ? "linear-gradient(145deg, hsl(233 42% 15%) 0%, hsl(233 50% 11%) 100%)"
-                    : "linear-gradient(145deg, hsl(233 42% 14%) 0%, hsl(233 50% 10%) 100%)";
                   el.style.borderColor = link.featured
                     ? "hsl(42 37% 57% / 0.2)"
                     : "hsl(0 0% 100% / 0.045)";

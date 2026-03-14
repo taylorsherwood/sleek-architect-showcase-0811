@@ -89,7 +89,7 @@ const Hero = () => {
   }, [videoSrc]);
 
   return (
-    <section className="relative h-screen flex items-end overflow-hidden bg-black mt-28">
+    <section className="relative h-screen flex items-center overflow-hidden bg-black">
       {/* Decorative background video — not interactive */}
       <div
         aria-hidden="true"

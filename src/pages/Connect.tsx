@@ -238,10 +238,10 @@ const Connect = () => {
             <p
               className="font-sans"
               style={{
-                fontSize: "8px",
-                letterSpacing: "0.35em",
+                fontSize: "9px",
+                letterSpacing: "0.3em",
                 textTransform: "uppercase",
-                color: "hsl(0 0% 100% / 0.1)",
+                color: "hsl(42 37% 57%)",
               }}
             >
               Echelon Property Group

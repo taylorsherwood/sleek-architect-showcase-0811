@@ -30,6 +30,7 @@ const SellHomeAustin = lazy(() => import("@/pages/SellHomeAustin"));
 const AustinRealEstateInvestment = lazy(() => import("@/pages/AustinRealEstateInvestment"));
 const LandForSaleAustin = lazy(() => import("@/pages/LandForSaleAustin"));
 const PastTransactions = lazy(() => import("@/pages/PastTransactions"));
+const Connect = lazy(() => import("@/pages/Connect"));
 const NotFound = lazy(() => import("@/pages/NotFound"));
 
 const AppRoutes = () => {

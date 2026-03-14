@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
+import Testimonials from "@/components/Testimonials";
 import {
   CheckCircle,
   ArrowRight,
@@ -414,6 +415,8 @@ const Sell = () => {
           </div>
         </div>
       </section>
+
+      <Testimonials />
 
       {/* ── Recent / Featured Listings ── */}
       <section className="py-28 bg-secondary/50">

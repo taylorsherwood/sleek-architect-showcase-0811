@@ -57,8 +57,8 @@ const Connect = () => {
           <img
             src={echelonLogo}
             alt="Echelon Property Group"
-            className="mt-9 opacity-50"
-            style={{ height: "100px" }}
+            className="mt-5 opacity-50"
+            style={{ height: "130px" }}
             loading="eager"
           />
 

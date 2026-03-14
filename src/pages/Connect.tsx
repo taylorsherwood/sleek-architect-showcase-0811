@@ -1,14 +1,18 @@
 import SEOHead from "@/components/SEOHead";
 import taylorHeadshot from "@/assets/taylor-headshot.jpg";
-import echelonLogo from "@/assets/echelon-logo-gold.png";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Instagram, Mail, Phone } from "lucide-react";
 
 const links = [
-  { label: "Complimentary Property Valuation", href: "https://www.echelonpropertygroup.com/sell", featured: false },
-  { label: "Featured Austin Luxury Listing", href: "https://www.villagovernorshill.com", featured: false },
-  { label: "Search Austin Homes", href: "https://taylorsherwood.realscout.com/homesearch/map", featured: false },
+  { label: "Search Austin Homes", href: "https://taylorsherwood.realscout.com/homesearch/map" },
+  { label: "Featured Austin Luxury Listing", href: "https://www.villagovernorshill.com" },
+  { label: "Complimentary Property Valuation", href: "https://www.echelonpropertygroup.com/sell" },
   { label: "Work With Taylor", href: "https://www.echelonpropertygroup.com/contact", featured: true },
-  { label: "Instagram", href: "https://www.instagram.com/TheInvestorBroker", featured: false },
+];
+
+const socials = [
+  { icon: Instagram, href: "https://www.instagram.com/TheInvestorBroker", label: "Instagram" },
+  { icon: Mail, href: "mailto:taylor@echelonpropertygroup.com", label: "Email" },
+  { icon: Phone, href: "tel:+15127869672", label: "Phone" },
 ];
 
 const Connect = () => {
@@ -19,135 +23,149 @@ const Connect = () => {
         description="Connect with Austin luxury real estate advisor Taylor Sherwood. Browse listings, search homes, or request a private consultation."
       />
       <div
-        className="min-h-screen flex flex-col items-center justify-start px-6 py-16 sm:py-20"
+        className="min-h-screen flex flex-col items-center px-4 py-6 sm:py-10"
         style={{ backgroundColor: "hsl(233, 50%, 9%)" }}
       >
-        <div className="w-full max-w-[420px] mx-auto flex flex-col items-center">
+        <div className="w-full max-w-[440px] mx-auto flex flex-col gap-5">
 
-          {/* ── Headshot ── */}
-          <div className="relative mt-10">
-            {/* outer glow */}
-            <div
-              className="absolute -inset-4 rounded-full opacity-40 blur-2xl"
-              style={{ background: "radial-gradient(circle, hsl(42 37% 57% / 0.55), transparent 65%)" }}
-            />
-            {/* double ring */}
-            <div className="relative w-[180px] h-[180px] sm:w-[200px] sm:h-[200px] rounded-full p-[3px]"
-              style={{ background: "linear-gradient(135deg, hsl(42 37% 57% / 0.65), hsl(42 37% 57% / 0.25))" }}
-            >
-              <div className="w-full h-full rounded-full p-[2px] bg-[hsl(233,50%,9%)]">
-                <div
-                  className="w-full h-full rounded-full p-[1px]"
-                  style={{ background: "linear-gradient(135deg, hsl(42 37% 57% / 0.25), transparent)" }}
+          {/* ── Hero Profile Card ── */}
+          <div
+            className="relative overflow-hidden"
+            style={{
+              borderRadius: "24px",
+              boxShadow:
+                "0 24px 64px hsl(0 0% 0% / 0.5), 0 8px 24px hsl(0 0% 0% / 0.3), inset 0 1px 0 hsl(0 0% 100% / 0.04)",
+            }}
+          >
+            {/* Portrait image */}
+            <div className="relative w-full" style={{ aspectRatio: "3 / 4" }}>
+              <img
+                src={taylorHeadshot}
+                alt="Taylor Sherwood – Austin Luxury Real Estate Advisor"
+                className="absolute inset-0 w-full h-full object-cover object-[50%_20%]"
+                fetchPriority="high"
+              />
+
+              {/* Gradient overlay */}
+              <div
+                className="absolute inset-0"
+                style={{
+                  background:
+                    "linear-gradient(180deg, transparent 30%, hsl(233 50% 9% / 0.15) 50%, hsl(233 50% 9% / 0.7) 75%, hsl(233 50% 9% / 0.95) 100%)",
+                }}
+              />
+
+              {/* Text overlay */}
+              <div className="absolute bottom-0 left-0 right-0 p-7 pb-8">
+                <h1
+                  className="font-display font-medium tracking-[-0.02em] leading-none"
+                  style={{ fontSize: "2rem", color: "hsl(0 0% 100%)" }}
                 >
-                  <div className="w-full h-full rounded-full overflow-hidden">
-                    <img
-                      src={taylorHeadshot}
-                      alt="Taylor Sherwood – Austin Luxury Real Estate Advisor"
-                      className="w-full h-full object-cover object-[50%_30%]"
-                      fetchPriority="high"
-                    />
-                  </div>
+                  Taylor Sherwood
+                </h1>
+                <p
+                  className="mt-2.5 font-sans font-light"
+                  style={{
+                    fontSize: "13px",
+                    letterSpacing: "0.12em",
+                    textTransform: "uppercase",
+                    color: "hsl(42 37% 67%)",
+                  }}
+                >
+                  Licensed Real Estate Advisor
+                </p>
+
+                {/* Social icons */}
+                <div className="flex items-center gap-4 mt-5">
+                  {socials.map((s) => (
+                    <a
+                      key={s.label}
+                      href={s.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={s.label}
+                      className="flex items-center justify-center transition-all duration-300"
+                      style={{
+                        width: "38px",
+                        height: "38px",
+                        borderRadius: "12px",
+                        background: "hsl(0 0% 100% / 0.08)",
+                        backdropFilter: "blur(8px)",
+                        WebkitBackdropFilter: "blur(8px)",
+                        border: "1px solid hsl(0 0% 100% / 0.08)",
+                        color: "hsl(0 0% 100% / 0.75)",
+                      }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.background = "hsl(42 37% 57% / 0.2)";
+                        e.currentTarget.style.borderColor = "hsl(42 37% 57% / 0.3)";
+                        e.currentTarget.style.color = "hsl(42 37% 67%)";
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.background = "hsl(0 0% 100% / 0.08)";
+                        e.currentTarget.style.borderColor = "hsl(0 0% 100% / 0.08)";
+                        e.currentTarget.style.color = "hsl(0 0% 100% / 0.75)";
+                      }}
+                    >
+                      <s.icon className="w-[17px] h-[17px]" />
+                    </a>
+                  ))}
                 </div>
               </div>
             </div>
           </div>
 
-          {/* ── Logo ── */}
-          <img
-            src={echelonLogo}
-            alt="Echelon Property Group"
-            className="mt-5 opacity-50"
-            style={{ height: "130px" }}
-            loading="eager"
-          />
-
-          {/* ── Name & subtitle ── */}
-          <div className="text-center mt-4">
-            <h1
-              className="font-display font-medium tracking-[-0.015em] leading-none"
-              style={{ fontSize: "1.85rem", color: "hsl(0 0% 100%)" }}
-            >
-              Taylor Sherwood
-            </h1>
-            <p
-              className="font-display leading-[1.7] mt-4"
-              style={{
-                fontSize: "12px",
-                letterSpacing: "0.2em",
-                textTransform: "uppercase",
-                color: "hsl(0 0% 100% / 0.55)",
-              }}
-            >
-              Austin Luxury Real Estate
-              <br />
-              Land&ensp;·&ensp;Investment Property
-            </p>
-          </div>
-
-          {/* ── Divider ── */}
-          <div className="w-16 mx-auto mt-8 mb-8">
-            <div
-              className="h-px"
-              style={{
-                background: "linear-gradient(90deg, transparent, hsl(42 37% 57% / 0.35), transparent)",
-              }}
-            />
-          </div>
-
-          {/* ── Links ── */}
-          <nav className="w-full flex flex-col gap-[14px]" aria-label="Quick links">
+          {/* ── Action Buttons ── */}
+          <nav className="flex flex-col gap-3" aria-label="Quick links">
             {links.map((link) => (
               <a
                 key={link.label}
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative block w-full text-center transition-all duration-500 ease-smooth"
+                className="group relative flex items-center justify-between w-full transition-all duration-500"
                 style={{
-                  borderRadius: "16px",
-                  padding: "18px 28px",
-                  fontSize: "10.5px",
-                  fontWeight: 500,
-                  letterSpacing: "0.15em",
-                  textTransform: "uppercase" as const,
-                  color: link.featured ? "hsl(42 37% 57%)" : "hsl(0 0% 100% / 0.8)",
-                  border: link.featured
-                    ? "1px solid hsl(42 37% 57% / 0.3)"
-                    : "1px solid hsl(0 0% 100% / 0.06)",
+                  borderRadius: "18px",
+                  padding: "20px 24px",
                   background: link.featured
-                    ? "linear-gradient(170deg, hsl(42 37% 57% / 0.08) 0%, hsl(233 50% 9% / 0.9) 100%)"
-                    : "linear-gradient(170deg, hsl(0 0% 100% / 0.04) 0%, hsl(0 0% 100% / 0.015) 100%)",
-                  boxShadow: link.featured
-                    ? "0 4px 24px hsl(42 37% 57% / 0.08), inset 0 1px 0 hsl(42 37% 57% / 0.06)"
-                    : "0 2px 16px hsl(0 0% 0% / 0.3), inset 0 1px 0 hsl(0 0% 100% / 0.03)",
+                    ? "linear-gradient(135deg, hsl(42 37% 57% / 0.12) 0%, hsl(42 37% 57% / 0.04) 100%)"
+                    : "linear-gradient(135deg, hsl(0 0% 100% / 0.05) 0%, hsl(0 0% 100% / 0.02) 100%)",
+                  border: link.featured
+                    ? "1px solid hsl(42 37% 57% / 0.25)"
+                    : "1px solid hsl(0 0% 100% / 0.06)",
+                  boxShadow:
+                    "0 4px 20px hsl(0 0% 0% / 0.25), inset 0 1px 0 hsl(0 0% 100% / 0.03)",
                   backdropFilter: "blur(12px)",
                   WebkitBackdropFilter: "blur(12px)",
                 }}
                 onMouseEnter={(e) => {
                   const el = e.currentTarget;
                   el.style.borderColor = "hsl(42 37% 57% / 0.35)";
-                  el.style.color = "hsl(0 0% 100%)";
-                  el.style.boxShadow = "0 8px 32px hsl(42 37% 57% / 0.12), inset 0 1px 0 hsl(42 37% 57% / 0.08)";
+                  el.style.boxShadow =
+                    "0 8px 32px hsl(42 37% 57% / 0.1), inset 0 1px 0 hsl(42 37% 57% / 0.06)";
                   el.style.transform = "translateY(-1px)";
                 }}
                 onMouseLeave={(e) => {
                   const el = e.currentTarget;
                   el.style.borderColor = link.featured
-                    ? "hsl(42 37% 57% / 0.3)"
+                    ? "hsl(42 37% 57% / 0.25)"
                     : "hsl(0 0% 100% / 0.06)";
-                  el.style.color = link.featured
-                    ? "hsl(42 37% 57%)"
-                    : "hsl(0 0% 100% / 0.8)";
-                  el.style.boxShadow = link.featured
-                    ? "0 4px 24px hsl(42 37% 57% / 0.08), inset 0 1px 0 hsl(42 37% 57% / 0.06)"
-                    : "0 2px 16px hsl(0 0% 0% / 0.3), inset 0 1px 0 hsl(0 0% 100% / 0.03)";
+                  el.style.boxShadow =
+                    "0 4px 20px hsl(0 0% 0% / 0.25), inset 0 1px 0 hsl(0 0% 100% / 0.03)";
                   el.style.transform = "translateY(0)";
                 }}
               >
-                <span className="font-sans relative z-10">{link.label}</span>
+                <span
+                  className="font-sans font-medium"
+                  style={{
+                    fontSize: "13px",
+                    letterSpacing: "0.06em",
+                    color: link.featured ? "hsl(42 37% 67%)" : "hsl(0 0% 100% / 0.85)",
+                  }}
+                >
+                  {link.label}
+                </span>
                 <ExternalLink
-                  className="absolute right-5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 opacity-0 group-hover:opacity-25 transition-opacity duration-500"
+                  className="w-4 h-4 opacity-20 group-hover:opacity-40 transition-opacity duration-400"
                   style={{ color: "hsl(0 0% 100%)" }}
                 />
               </a>
@@ -155,17 +173,26 @@ const Connect = () => {
           </nav>
 
           {/* ── Footer ── */}
-          <p
-            className="mt-16 font-sans"
-            style={{
-              fontSize: "8px",
-              letterSpacing: "0.35em",
-              textTransform: "uppercase",
-              color: "hsl(0 0% 100% / 0.12)",
-            }}
-          >
-            Echelon Property Group
-          </p>
+          <div className="flex flex-col items-center gap-3 mt-6 mb-4">
+            <div
+              className="w-12 h-px"
+              style={{
+                background:
+                  "linear-gradient(90deg, transparent, hsl(42 37% 57% / 0.25), transparent)",
+              }}
+            />
+            <p
+              className="font-sans"
+              style={{
+                fontSize: "9px",
+                letterSpacing: "0.3em",
+                textTransform: "uppercase",
+                color: "hsl(0 0% 100% / 0.15)",
+              }}
+            >
+              Echelon Property Group
+            </p>
+          </div>
         </div>
       </div>
     </>

@@ -254,6 +254,17 @@ const Connect = () => {
             >
               Echelon Property Group
             </p>
+            <p
+              className="font-sans"
+              style={{
+                fontSize: "8px",
+                letterSpacing: "0.25em",
+                textTransform: "uppercase",
+                color: "hsl(0 0% 100% / 0.5)",
+              }}
+            >
+              Brokered by eXp Realty
+            </p>
           </div>
         </div>
       </div>

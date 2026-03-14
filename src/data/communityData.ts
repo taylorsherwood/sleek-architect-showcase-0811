@@ -497,7 +497,7 @@ For investors, Zilker offers opportunities in renovation projects, new construct
     slug: "spanish-oaks",
     name: "Spanish Oaks",
     heroTitle: "Homes for Sale in Spanish Oaks Austin",
-    metaTitle: "Spanish Oaks Austin Homes for Sale | Luxury Real Estate in Spanish Oaks",
+    metaTitle: "Spanish Oaks Homes for Sale | Echelon Property Group",
     metaDescription: "Explore homes for sale in Spanish Oaks, one of Austin's most exclusive gated communities featuring luxury estates, golf course homes, and Hill Country views.",
     priceRange: "$3M – $15M+",
     image: spanishOaksImg,

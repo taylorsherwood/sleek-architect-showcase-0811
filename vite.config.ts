@@ -4,54 +4,60 @@ import path from "path";
 import fs from "fs";
 import { componentTagger } from "lovable-tagger";
 import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
+import { vitePrerenderPlugin } from "vite-prerender-plugin";
 
 const SITE_URL = "https://www.echelonpropertygroup.com";
+const DATA_DIR = path.resolve(__dirname, "src/data");
+
+const staticRoutes = [
+  "/",
+  "/about",
+  "/buy",
+  "/sell",
+  "/listings",
+  "/listings/commercial-investment-austin",
+  "/communities",
+  "/blog",
+  "/contact",
+  "/moving-to-austin",
+  "/best-luxury-neighborhoods-austin",
+  "/austin-luxury-market-report",
+  "/off-market-luxury-homes-austin",
+  "/austin-luxury-homes-for-sale",
+  "/austin-commercial-real-estate",
+  "/home-value-austin",
+  "/luxury-real-estate-austin",
+  "/buy-homes-austin",
+  "/sell-home-austin",
+  "/austin-real-estate-investment",
+  "/land-for-sale-austin",
+  "/past-transactions",
+];
+
+const extractAll = (file: string, pattern: RegExp): string[] => {
+  const content = fs.readFileSync(path.join(DATA_DIR, file), "utf-8");
+  return [...content.matchAll(pattern)].map((match) => match[1]);
+};
+
+const getAllIndexableRoutes = () => {
+  const communitySlugs = extractAll("communityData.ts", /slug:\s*"([^"]+)"/g);
+  const blogIds = [
+    ...extractAll("seoBlogPosts.ts", /id:\s*"([^"]+)"/g),
+    ...extractAll("blogPosts.ts", /id:\s*"([^"]+)"/g),
+  ];
+
+  return Array.from(
+    new Set([
+      ...staticRoutes,
+      ...communitySlugs.map((slug) => `/communities/${slug}`),
+      ...blogIds.map((id) => `/blog/${id}`),
+    ])
+  );
+};
 
 function sitemapPlugin(): Plugin {
   function buildSitemap(): string {
-    const dataDir = path.resolve(__dirname, "src/data");
-
-    const extractAll = (file: string, pattern: RegExp): string[] => {
-      const content = fs.readFileSync(path.join(dataDir, file), "utf-8");
-      return [...content.matchAll(pattern)].map((m) => m[1]);
-    };
-
-    const staticRoutes = [
-      "/",
-      "/about",
-      "/buy",
-      "/sell",
-      "/listings",
-      "/listings/commercial-investment-austin",
-      "/communities",
-      "/blog",
-      "/contact",
-      "/moving-to-austin",
-      "/best-luxury-neighborhoods-austin",
-      "/austin-luxury-market-report",
-      "/off-market-luxury-homes-austin",
-      "/austin-luxury-homes-for-sale",
-      "/austin-commercial-real-estate",
-      "/home-value-austin",
-      "/luxury-real-estate-austin",
-      "/buy-homes-austin",
-      "/sell-home-austin",
-      "/austin-real-estate-investment",
-      "/land-for-sale-austin",
-    ];
-
-    const communitySlugs = extractAll("communityData.ts", /slug:\s*"([^"]+)"/g);
-    const blogIds = [
-      ...extractAll("seoBlogPosts.ts", /id:\s*"([^"]+)"/g),
-      ...extractAll("blogPosts.ts", /id:\s*"([^"]+)"/g),
-    ];
-
-    const allRoutes = [
-      ...staticRoutes,
-      ...communitySlugs.map((s) => `/communities/${s}`),
-      ...blogIds.map((id) => `/blog/${id}`),
-    ];
-
+    const allRoutes = getAllIndexableRoutes();
     const today = new Date().toISOString().split("T")[0];
 
     const urls = allRoutes
@@ -90,7 +96,6 @@ ${urls}
   };
 }
 
-// https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
@@ -100,6 +105,11 @@ export default defineConfig(({ mode }) => ({
     react(),
     mode === "development" && componentTagger(),
     sitemapPlugin(),
+    vitePrerenderPlugin({
+      renderTarget: "#root",
+      prerenderScript: path.resolve(__dirname, "src/prerender.tsx"),
+      additionalPrerenderRoutes: getAllIndexableRoutes().filter((route) => route !== "/"),
+    }),
     ViteImageOptimizer({
       png: { quality: 80 },
       jpeg: { quality: 75 },

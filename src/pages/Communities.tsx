@@ -95,6 +95,52 @@ const Communities = () => {
         </div>
       </section>
 
+      {/* ── SEO Content: Communities Overview ── */}
+      <section className="py-28 bg-secondary/50">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-8">
+              Luxury Living in Austin's Best Neighborhoods
+            </h2>
+            <div className="space-y-6 text-muted-foreground leading-relaxed">
+              <p>
+                Austin, Texas is home to some of the most desirable luxury communities in the American Southwest. From the gated estates of Barton Creek and Spanish Oaks to the waterfront properties along Lake Austin and Lake Travis, the city offers a remarkable diversity of high-end living environments — each with its own distinct character, amenities, and lifestyle appeal.
+              </p>
+              <p>
+                What makes Austin's luxury neighborhoods exceptional is the rare combination of natural beauty, urban convenience, and economic opportunity. Residents enjoy access to world-class dining, live music, outdoor recreation, and a thriving technology economy — all within a state that levies no personal income tax.
+              </p>
+
+              <h3 className="text-2xl font-display font-light text-architectural pt-4">
+                Why Live in Austin's Luxury Communities
+              </h3>
+              <p>
+                Each of Austin's premier neighborhoods offers something unique. Westlake Hills is renowned for the top-rated Eanes Independent School District and sweeping Hill Country views. Barton Creek provides gated country club living with championship golf and resort-caliber amenities. Lake Austin waterfront estates offer private docks and serene water views just minutes from downtown. Tarrytown delivers old Austin charm with walkability and mature tree canopies, while Rollingwood offers a small-town feel with big-city proximity.
+              </p>
+              <p>
+                For those seeking more space, the Texas Hill Country and Dripping Springs provide sprawling ranch estates, vineyard properties, and acreage surrounded by rolling terrain and live oaks. Downtown Austin and Travis Heights cater to buyers who prefer urban energy, walkable streetscapes, and proximity to the city's cultural core.
+              </p>
+
+              <h3 className="text-2xl font-display font-light text-architectural pt-4">
+                Market Insights Across Austin Neighborhoods
+              </h3>
+              <p>
+                Austin's luxury real estate market varies significantly by neighborhood. Lake Austin waterfront commands the highest per-property prices, with estates regularly exceeding $10 million. Barton Creek and Westlake Hills feature the largest concentration of $3 million–plus homes. Downtown Austin penthouses and high-rises appeal to buyers seeking lock-and-leave convenience with skyline views, while emerging areas like Zilker and Barton Hills offer strong appreciation potential.
+              </p>
+              <p>
+                Inventory in Austin's most exclusive communities remains limited, and many of the finest properties trade off-market through private channels. Working with an agent who has deep neighborhood expertise and access to off-market inventory is essential for buyers targeting these communities.
+              </p>
+
+              <h3 className="text-2xl font-display font-light text-architectural pt-4">
+                Expert Guidance for Every Neighborhood
+              </h3>
+              <p>
+                At Echelon Property Group, we don't just sell homes in these communities — we know them intimately. Taylor Sherwood provides clients with hyperlocal market knowledge, including pricing trends, school zone boundaries, HOA details, flood zone considerations, and upcoming development that could impact property values. Whether you're relocating to Austin from out of state or moving between neighborhoods, our community-level expertise ensures you find the right fit for your lifestyle and investment goals.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </div>
   );

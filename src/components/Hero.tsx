@@ -195,11 +195,11 @@ const Hero = () => {
           </div>
 
           <p
-            className="text-warm-cream/60 max-w-lg mb-14 reveal-delayed leading-relaxed font-normal"
+            className="text-warm-cream/70 max-w-lg mb-14 reveal-delayed leading-relaxed font-normal"
             style={{
               fontFamily: '"Raleway", sans-serif',
               fontSize: "1.05rem",
-              textShadow: "0 1px 10px rgba(0,0,0,0.4)",
+              textShadow: "0 1px 4px rgba(0,0,0,0.30)",
             }}
           >
             Data-driven strategy and discreet representation across Austin's

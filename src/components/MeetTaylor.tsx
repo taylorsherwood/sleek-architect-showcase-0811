@@ -7,10 +7,10 @@ const MeetTaylor = () => {
     <section className="pt-8 pb-4 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
-          <h3 className="text-3xl md:text-4xl font-display font-light text-architectural mb-1 md:w-1/2 text-center">
+          <h3 className="text-3xl md:text-4xl font-display font-light text-architectural mb-3 md:w-1/2 text-center">
             Meet Taylor Sherwood
           </h3>
-          <p className="text-xs tracking-[0.1em] uppercase text-muted-foreground/60 mb-3 md:w-1/2 text-center">
+          <p className="text-xs tracking-[0.1em] uppercase text-muted-foreground/60 mb-6 md:w-1/2 text-center leading-relaxed">
             CERTIFIED LUXURY HOME MARKETING SPECIALIST (CLHMS) <br />
             AUSTIN LUXURY REAL ESTATE ADVISOR
           </p>

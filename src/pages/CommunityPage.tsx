@@ -14,8 +14,9 @@ function createCommunitySchema(community: { name: string; slug: string; metaDesc
       "@type": "RealEstateAgent",
       "name": "Echelon Property Group",
       "description": `Expert real estate services in ${community.name}, Austin, Texas. Luxury homes, investment properties, and personalized guidance.`,
-      "url": "https://echelonpropertygroup.com",
-      "telephone": "(512) 661-3843",
+      "url": `${SITE_URL}/communities/${community.slug}`,
+      "image": `${SITE_URL}/og-image.png`,
+      "telephone": "+1-512-661-3843",
       "email": "taylor@echelonpropertygroup.com",
       "employee": {
         "@type": "Person",
@@ -41,7 +42,8 @@ function createCommunitySchema(community: { name: string; slug: string; metaDesc
       "name": "Echelon Property Group",
       "description": `Luxury real estate brokerage serving ${community.name} and greater Austin, Texas.`,
       "url": `${SITE_URL}/communities/${community.slug}`,
-      "telephone": "(512) 661-3843",
+      "image": `${SITE_URL}/og-image.png`,
+      "telephone": "+1-512-661-3843",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "2105 East MLK Blvd Ste 227",

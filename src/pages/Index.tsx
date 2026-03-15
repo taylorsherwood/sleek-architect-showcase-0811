@@ -40,7 +40,7 @@ const NewsletterSection = lazy(async () => {
               rel="noopener noreferrer"
               className="inline-block px-12 py-5 text-lg bg-[#0C0F24] text-background hover:bg-gold hover:text-primary-foreground transition-colors duration-300"
             >
-              SUBSCRIBE
+              BECOME AN ECHELON INSIDER
             </a>
             <div className="-mt-6 flex justify-center">
               <img src={expEchelonLogo} alt="eXp Realty | Echelon Property Group" title="eXp Realty — Echelon Property Group brokerage" className="h-80 w-auto translate-x-3 -mb-12" loading="lazy" decoding="async" />

@@ -79,6 +79,7 @@ const AppRoutes = () => {
           <Route path="/land" element={<LandPage />} />
           <Route path="/past-transactions" element={<PastTransactions />} />
           <Route path="/connect" element={<Connect />} />
+          <Route path="/:slug" element={<SEOCommunityPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>

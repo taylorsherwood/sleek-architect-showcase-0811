@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
+import SchemaMarkup, { realEstateAgentSchema } from "@/components/SchemaMarkup";
 import RealScoutListings from "@/components/RealScoutListings";
 
 const PastTransactions = () => {

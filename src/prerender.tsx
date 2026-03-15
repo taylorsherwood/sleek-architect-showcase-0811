@@ -46,6 +46,7 @@ const allPrerenderRoutes = Array.from(
     ...staticRoutes,
     ...communityPages.map((community) => `/communities/${community.slug}`),
     ...[...seoBlogPosts, ...blogPosts].map((post) => `/blog/${post.id}`),
+    ...seoCommunityPages.map((c) => `/${c.slug}`),
   ])
 );
 

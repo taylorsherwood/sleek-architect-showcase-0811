@@ -66,7 +66,8 @@ function createPageSchema(name: string, slug: string) {
 }
 
 const SEOCommunityPage = () => {
-  const { slug } = useParams<{ slug: string }>();
+  const location = useLocation();
+  const slug = location.pathname.replace(/^\//, "");
   const community = seoCommunityPages.find((c) => c.slug === slug);
 
   if (!community) {

@@ -403,6 +403,7 @@ const HomeValueAustin = () => {
         </div>
       </div>
 
+      <AboutBlock />
       <Footer />
     </div>
   );

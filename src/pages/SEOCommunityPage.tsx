@@ -256,6 +256,7 @@ const SEOCommunityPage = () => {
         </div>
       </article>
 
+      <AboutBlock />
       <Suspense fallback={<div className="min-h-[100px]" />}>
         <Footer />
       </Suspense>

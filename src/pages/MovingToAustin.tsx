@@ -232,6 +232,7 @@ const MovingToAustin = () => {
         </div>
       </article>
 
+      <AboutBlock />
       <Footer />
     </div>
   );

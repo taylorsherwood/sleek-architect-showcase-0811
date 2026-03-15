@@ -148,6 +148,7 @@ const AustinRealEstateInvestment = () => {
         </div>
       </article>
 
+      <AboutBlock />
       <Footer />
     </div>
   );

@@ -220,6 +220,7 @@ const AustinLuxuryHomes = () => {
         </div>
       </article>
 
+      <AboutBlock />
       <Footer />
     </div>
   );

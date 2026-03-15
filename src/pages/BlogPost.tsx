@@ -191,6 +191,7 @@ const BlogPost = () => {
         </div>
       </article>
 
+      <AboutBlock />
       <Footer />
     </div>
   );

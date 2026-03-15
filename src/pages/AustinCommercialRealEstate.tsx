@@ -362,6 +362,7 @@ const AustinCommercialRealEstate = () => {
         </div>
       </article>
 
+      <AboutBlock />
       <Footer />
     </div>
   );

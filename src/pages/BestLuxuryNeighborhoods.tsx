@@ -184,6 +184,7 @@ const BestLuxuryNeighborhoods = () => {
         </div>
       </article>
 
+      <AboutBlock />
       <Footer />
     </div>
   );

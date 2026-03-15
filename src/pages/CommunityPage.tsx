@@ -312,6 +312,7 @@ const CommunityPage = () => {
         </div>
       </article>
 
+      <AboutBlock />
       <Footer />
     </div>
   );

@@ -227,6 +227,7 @@ const MarketReport = () => {
         </div>
       </article>
 
+      <AboutBlock />
       <Footer />
     </div>
   );

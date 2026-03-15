@@ -160,6 +160,7 @@ const SellHomeAustin = () => {
         </div>
       </article>
 
+      <AboutBlock />
       <Footer />
     </div>
   );

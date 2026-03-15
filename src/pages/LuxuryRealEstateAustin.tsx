@@ -210,6 +210,7 @@ const LuxuryRealEstateAustin = () => {
         </div>
       </article>
 
+      <AboutBlock />
       <Footer />
     </div>
   );

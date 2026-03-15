@@ -175,6 +175,7 @@ const LandForSaleAustin = () => {
         </div>
       </article>
 
+      <AboutBlock />
       <Footer />
     </div>
   );

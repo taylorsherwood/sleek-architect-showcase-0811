@@ -187,6 +187,7 @@ const BuyHomesAustin = () => {
         </div>
       </article>
 
+      <AboutBlock />
       <Footer />
     </div>
   );

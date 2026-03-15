@@ -377,6 +377,7 @@ const OffMarketHomes = () => {
         </div>
       </article>
 
+      <AboutBlock />
       <Footer />
     </div>
   );

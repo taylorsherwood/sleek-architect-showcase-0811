@@ -167,7 +167,7 @@ const Hero = () => {
               textShadow: "0px 3px 10px rgba(0,0,0,0.45), 0 1px 3px rgba(0,0,0,0.3)"
             }}>
             
-            Driven By Data,
+            <span className="whitespace-nowrap">Driven By Data,</span>
             <br />
             <span className="italic">Proven by Results</span>
           </h1>

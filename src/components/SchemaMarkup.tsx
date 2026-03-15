@@ -26,8 +26,10 @@ export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Echelon Property Group",
+  "description": "Luxury real estate brokerage in Austin, Texas specializing in luxury homes, land, commercial real estate, and investment property.",
   "url": "https://www.echelonpropertygroup.com",
-  "logo": "https://www.echelonpropertygroup.com/logo.png",
+  "logo": "https://www.echelonpropertygroup.com/lovable-uploads/echelon-logo-gold.png",
+  "image": "https://www.echelonpropertygroup.com/og-image.png",
   "telephone": "+1-512-661-3843",
   "email": "taylor@echelonpropertygroup.com",
   "founder": {

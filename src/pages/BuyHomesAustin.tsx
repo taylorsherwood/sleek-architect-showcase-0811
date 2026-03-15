@@ -17,7 +17,7 @@ const BuyHomesAustin = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Buy Homes in Austin TX | Echelon Property Group Austin"
+        title="Buy a Home in Austin Texas | Echelon Property Group"
         description="Buy a home in Austin, Texas with expert representation from Echelon Property Group. Luxury homes, investment properties, and off-market opportunities in Austin's best neighborhoods."
       />
       <SchemaMarkup schema={createFAQSchema(faqs)} />

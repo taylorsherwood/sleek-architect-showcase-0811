@@ -17,7 +17,7 @@ const AustinRealEstateInvestment = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Real Estate Investment | Echelon Property Group Austin"
+        title="Austin Real Estate Investment | Echelon Property Group"
         description="Austin real estate investment: residential, commercial, multifamily, and land advisory. Expert deal sourcing and underwriting from Echelon Property Group."
       />
       <SchemaMarkup schema={createFAQSchema(faqs)} />

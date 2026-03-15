@@ -12,7 +12,7 @@ const NotFound = () => {
   return (
     <div className="flex min-h-screen items-center justify-center bg-background">
       <SEOHead
-        title="Page Not Found | Echelon Property Group Austin"
+        title="Page Not Found | Echelon Property Group"
         description="The page you are looking for does not exist. Return to Echelon Property Group for Austin luxury real estate, homes, and investment properties."
       />
       <div className="text-center max-w-lg px-6">

@@ -122,15 +122,15 @@ const Hero = () => {
 
       }
 
-      {/* Cinematic vignette gradient — subtle, concentrated on left */}
+      {/* Cinematic vignette gradient — extended darkness behind text */}
       <div
         className="absolute inset-0"
         style={{
           zIndex: 1,
           background: `
-            linear-gradient(to right, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.25) 30%, rgba(0,0,0,0.0) 55%),
+            linear-gradient(to right, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.45) 20%, rgba(0,0,0,0.25) 50%, rgba(0,0,0,0) 65%),
             linear-gradient(to top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.1) 35%, transparent 65%),
-            radial-gradient(ellipse at 15% 70%, rgba(0,0,0,0.25) 0%, transparent 60%)
+            radial-gradient(ellipse at 15% 70%, rgba(0,0,0,0.3) 0%, transparent 60%)
           `
         }} />
       
@@ -141,7 +141,7 @@ const Hero = () => {
         style={{ zIndex: 2 }}>
         
         <div
-          className="max-w-2xl relative"
+          className="max-w-xl relative"
           style={{
             filter: "drop-shadow(0 0 80px rgba(0,0,0,0.4))"
           }}>
@@ -164,8 +164,7 @@ const Hero = () => {
             style={{
               fontSize: "clamp(2.6rem, 5.5vw, 5.5rem)",
               lineHeight: 1.15,
-              textShadow:
-              "0 2px 6px rgba(0,0,0,0.35), 0 1px 3px rgba(0,0,0,0.25)"
+              textShadow: "0px 3px 10px rgba(0,0,0,0.45), 0 1px 3px rgba(0,0,0,0.3)"
             }}>
             
             Driven By Data,
@@ -182,12 +181,12 @@ const Hero = () => {
             map((item, i) =>
             <span key={item} className="flex items-center gap-4">
                 <span
-                className="text-warm-cream/80 font-medium"
+                className="text-warm-cream/90 font-medium"
                 style={{
                   fontFamily: '"Raleway", sans-serif',
                   fontSize: "0.85rem",
                   letterSpacing: "0.08em",
-                  textShadow: "0 1px 4px rgba(0,0,0,0.3)"
+                  textShadow: "0px 2px 6px rgba(0,0,0,0.35)"
                 }}>
                 
                   {item}
@@ -204,7 +203,7 @@ const Hero = () => {
             style={{
               fontFamily: '"Raleway", sans-serif',
               fontSize: "1.05rem",
-              textShadow: "0 1px 4px rgba(0,0,0,0.30)"
+              textShadow: "0px 2px 6px rgba(0,0,0,0.35)"
             }}>
             
             Data-driven strategy and discreet representation across Austin's

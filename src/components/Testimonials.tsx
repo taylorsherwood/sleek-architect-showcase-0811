@@ -114,7 +114,7 @@ const Testimonials = () => {
                 <img
                   src={echelonSecondaryLogo}
                   alt=""
-                  className="absolute bottom-4 right-4 w-10 h-auto opacity-20 pointer-events-none"
+                  className="absolute bottom-4 right-4 w-10 h-auto pointer-events-none"
                   aria-hidden="true"
                 />
               </div>

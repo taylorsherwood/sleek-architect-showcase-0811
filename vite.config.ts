@@ -19,8 +19,13 @@ const staticRoutes = [
   "/communities",
   "/blog",
   "/contact",
+  "/search",
+  "/land",
+  "/connect",
+  "/past-transactions",
   "/moving-to-austin",
   "/best-luxury-neighborhoods-austin",
+  "/best-neighborhoods-in-austin-texas",
   "/austin-luxury-market-report",
   "/off-market-luxury-homes-austin",
   "/austin-luxury-homes-for-sale",
@@ -31,7 +36,6 @@ const staticRoutes = [
   "/sell-home-austin",
   "/austin-real-estate-investment",
   "/land-for-sale-austin",
-  "/past-transactions",
 ];
 
 const extractAll = (file: string, pattern: RegExp): string[] => {
@@ -41,6 +45,7 @@ const extractAll = (file: string, pattern: RegExp): string[] => {
 
 const getAllIndexableRoutes = () => {
   const communitySlugs = extractAll("communityData.ts", /slug:\s*"([^"]+)"/g);
+  const seoCommunityPaths = extractAll("seoCommunityData.ts", /slug:\s*"([^"]+)"/g);
   const blogIds = [
     ...extractAll("seoBlogPosts.ts", /id:\s*"([^"]+)"/g),
     ...extractAll("blogPosts.ts", /id:\s*"([^"]+)"/g),
@@ -50,6 +55,7 @@ const getAllIndexableRoutes = () => {
     new Set([
       ...staticRoutes,
       ...communitySlugs.map((slug) => `/communities/${slug}`),
+      ...seoCommunityPaths.map((slug) => `/${slug}`),
       ...blogIds.map((id) => `/blog/${id}`),
     ])
   );

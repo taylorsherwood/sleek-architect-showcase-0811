@@ -203,7 +203,7 @@ const FeaturedListings = () => {
         </div>
       </section>
 
-      <section className="pt-16 pb-8 bg-background">
+      <section className="pt-8 pb-8 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
             <p className="text-minimal text-gold mb-4 font-extrabold whitespace-pre-line">

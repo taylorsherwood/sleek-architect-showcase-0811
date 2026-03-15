@@ -80,8 +80,8 @@ const Index = () => {
         <div className="py-8 bg-secondary" />
         <FeaturedListings />
         <Testimonials />
-        <MeetTaylor />
         <SellerCTA />
+        <MeetTaylor />
         <CTASection />
         <NewsletterSection />
         <Footer />

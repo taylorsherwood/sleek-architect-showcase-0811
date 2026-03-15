@@ -63,7 +63,7 @@ const CommercialInvestment = () => {
             <div className="mt-10 flex flex-wrap gap-4">
               <Link
                 to="/contact"
-                className="inline-block text-minimal bg-gold text-foreground hover:bg-gold-light px-8 py-4 transition-colors duration-300"
+                className="inline-block text-minimal bg-gold text-white hover:bg-primary hover:text-primary-foreground px-8 py-4 transition-colors duration-300"
               >
                 DISCUSS AN ACQUISITION
               </Link>

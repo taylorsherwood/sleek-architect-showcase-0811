@@ -186,7 +186,7 @@ const Hero = () => {
                   fontFamily: '"Raleway", sans-serif',
                   fontSize: "0.85rem",
                   letterSpacing: "0.08em",
-                  textShadow: "0 1px 4px rgba(0,0,0,0.3)"
+                  textShadow: "0px 2px 6px rgba(0,0,0,0.35)"
                 }}>
                 
                   {item}

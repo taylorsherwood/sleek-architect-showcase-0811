@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
-import { Instagram } from "lucide-react";
-import linkedinIcon from "@/assets/linkedin-icon-white.png";
+import { Instagram, Linkedin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -51,7 +50,7 @@ const Footer = () => {
                   @TheInvestorBroker
                 </a>
                 <a href="https://www.linkedin.com/in/taylorsherwood/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 hover:text-primary-foreground transition-colors md:justify-end">
-                  <img src={linkedinIcon} alt="LinkedIn" className="w-4 h-4 object-contain" />
+                  <Linkedin className="w-4 h-4" />
                   Taylor Sherwood
                 </a>
               </div>

@@ -407,7 +407,7 @@ const CommercialInvestment = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-28 bg-muted">
+      <section className="py-16 bg-muted">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-minimal text-gold mb-4 font-extrabold">GET STARTED</p>

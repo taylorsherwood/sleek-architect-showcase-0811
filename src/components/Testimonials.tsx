@@ -56,7 +56,7 @@ const Testimonials = () => {
             </h2>
             <p className="text-muted-foreground text-base max-w-2xl mx-auto font-light leading-relaxed">
               Real experiences from clients represented across Austin's most
-              competitive luxury neighborhoods.
+              competitive neighborhoods.
             </p>
           </div>
 

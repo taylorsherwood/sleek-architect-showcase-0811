@@ -33,6 +33,7 @@ const SearchPage = lazy(() => import("@/pages/Search"));
 const LandPage = lazy(() => import("@/pages/Land"));
 const PastTransactions = lazy(() => import("@/pages/PastTransactions"));
 const SEOCommunityPage = lazy(() => import("@/pages/SEOCommunityPage"));
+const BestNeighborhoodsAustin = lazy(() => import("@/pages/BestNeighborhoodsAustin"));
 const connectImport = () => import("@/pages/Connect");
 const Connect = lazy(connectImport);
 const NotFound = lazy(() => import("@/pages/NotFound"));

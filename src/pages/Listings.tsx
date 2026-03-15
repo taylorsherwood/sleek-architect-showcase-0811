@@ -168,7 +168,7 @@ const Listings = () => {
 
       <RealScoutListings
         listingStatus="For Sale,For Rent,In Contract"
-        heading="CURRENTLY ON THE MARKET"
+        heading={"\n\n\n\nCURRENTLY ON THE MARKET"}
         subheading="Commercial and Residential Listings"
       />
 

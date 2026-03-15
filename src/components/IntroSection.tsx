@@ -73,7 +73,7 @@ const IntroSection = () => {
                 THE ECHELON DIFFERENCE
               </p>
               <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-8">
-                Unmatched Expertise in Austin Real Estate
+                Unmatched Expertise in Austin Real Estate by the Numbers
               </h2>
               <div className="space-y-6 text-muted-foreground leading-relaxed">
                 <p className="whitespace-pre-line">

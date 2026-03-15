@@ -129,7 +129,7 @@ export const localBusinessSchema = {
   "telephone": "+1-512-661-3843",
   "email": "taylor@echelonpropertygroup.com",
   "image": "https://www.echelonpropertygroup.com/og-image.png",
-  "logo": "https://www.echelonpropertygroup.com/logo.png",
+  "logo": "https://www.echelonpropertygroup.com/lovable-uploads/echelon-logo-gold.png",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "2105 East MLK Blvd Ste 227",

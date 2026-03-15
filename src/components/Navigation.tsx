@@ -30,6 +30,7 @@ const Navigation = () => {
   }, [location.pathname]);
 
   const links: NavLink[] = [
+    { href: "/", label: "HOME" },
     {
       href: "/listings",
       label: "LISTINGS",
@@ -66,7 +67,7 @@ const Navigation = () => {
             alt="Echelon Property Group"
             title="Echelon Property Group — Austin Luxury Real Estate"
             className="w-auto max-w-none border-0 shrink-0 object-contain"
-            style={{ height: '160%', maxHeight: '160%' }}
+            style={{ height: '130%', maxHeight: '130%' }}
           />
         </Link>
 

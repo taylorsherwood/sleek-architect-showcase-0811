@@ -71,9 +71,14 @@ const Footer = () => {
             <p className="text-primary-foreground/40 text-sm">
               Copyright © {new Date().getFullYear()} Echelon Property Group | eXp Realty LLC
             </p>
-            <p className="text-primary-foreground/30 text-xs">
+            <a
+              href="https://expluxury.com/?tl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary-foreground/30 text-xs hover:text-gold transition-colors duration-300"
+            >
               Member of the eXp Luxury Division
-            </p>
+            </a>
           </div>
         </div>
       </div>

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
-import SchemaMarkup, { realEstateAgentSchema } from "@/components/SchemaMarkup";
+import SchemaMarkup, { realEstateAgentSchema, createFAQSchema } from "@/components/SchemaMarkup";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
 import {
@@ -299,6 +299,13 @@ const Buy = () => {
         description="Expert buyer representation for Austin luxury homes. Off-market access, concierge service, and strategic guidance from Taylor Sherwood — top Austin luxury real estate agent."
         canonical="https://www.echelonpropertygroup.com/buy" />
       <SchemaMarkup schema={realEstateAgentSchema} />
+      <SchemaMarkup schema={createFAQSchema([
+        { question: "What is it like buying a home in Austin Texas?", answer: "Austin offers a dynamic real estate market with diverse neighborhoods ranging from waterfront estates on Lake Austin to walkable urban homes in Tarrytown. Buyers benefit from no state income tax, a thriving tech economy, and exceptional lifestyle amenities." },
+        { question: "What is the average home price in Austin?", answer: "Austin's median home price varies by neighborhood. Entry-level luxury begins around $1 million, with premium neighborhoods like Westlake Hills, Barton Creek, and Lake Austin ranging from $1.5M to $25M+." },
+        { question: "Are there luxury homes available in Austin?", answer: "Yes. Austin features some of Texas's finest luxury properties including Hill Country estates, waterfront mansions, contemporary masterpieces, and gated community homes across Westlake Hills, Barton Creek, Lake Austin, and Spanish Oaks." },
+        { question: "Is Austin a good place to invest in real estate?", answer: "Austin consistently ranks among the top U.S. metros for real estate investment, driven by tech-sector growth, population in-migration, no state income tax, and limited premium inventory in supply-constrained neighborhoods." },
+        { question: "How do I find off-market homes for sale in Austin?", answer: "Working with an experienced luxury agent is essential. Echelon Property Group maintains access to private and whisper listings across Austin's most prestigious neighborhoods through our brokerage network and direct relationships." },
+      ])} />
       <Navigation />
 
       {/* ── Hero ── */}
@@ -612,6 +619,48 @@ const Buy = () => {
                 {submitting ? "SENDING..." : "REQUEST CONSULTATION"}
               </button>
             </form>
+          </div>
+        </div>
+      </section>
+
+      {/* ── FAQ ── */}
+      <section className="py-28 bg-secondary/50">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-8">
+              Frequently Asked Questions About Buying in Austin
+            </h2>
+            <div className="space-y-6">
+              {[
+                { q: "What is it like buying a home in Austin Texas?", a: "Austin offers a dynamic real estate market with diverse neighborhoods ranging from waterfront estates on Lake Austin to walkable urban homes in Tarrytown. Buyers benefit from no state income tax, a thriving tech economy, and exceptional lifestyle amenities." },
+                { q: "What is the average home price in Austin?", a: "Austin's median home price varies by neighborhood. Entry-level luxury begins around $1 million, with premium neighborhoods like Westlake Hills, Barton Creek, and Lake Austin ranging from $1.5M to $25M+." },
+                { q: "Are there luxury homes available in Austin?", a: "Yes. Austin features some of Texas's finest luxury properties including Hill Country estates, waterfront mansions, contemporary masterpieces, and gated community homes across Westlake Hills, Barton Creek, Lake Austin, and Spanish Oaks." },
+                { q: "Is Austin a good place to invest in real estate?", a: "Austin consistently ranks among the top U.S. metros for real estate investment, driven by tech-sector growth, population in-migration, no state income tax, and limited premium inventory in supply-constrained neighborhoods." },
+                { q: "How do I find off-market homes for sale in Austin?", a: "Working with an experienced luxury agent is essential. Echelon Property Group maintains access to private and whisper listings across Austin's most prestigious neighborhoods through our brokerage network and direct relationships." },
+              ].map((faq, i) => (
+                <div key={i} className="border-b border-border pb-6">
+                  <h3 className="text-lg font-medium text-foreground mb-2">{faq.q}</h3>
+                  <p className="text-muted-foreground leading-relaxed">{faq.a}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Internal Links ── */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl font-display font-light text-architectural mb-6">
+              Explore More Austin Real Estate
+            </h2>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <Link to="/sell" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ SELLING YOUR AUSTIN HOME</Link>
+              <Link to="/best-neighborhoods-in-austin-texas" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ BEST NEIGHBORHOODS IN AUSTIN</Link>
+              <Link to="/luxury-real-estate-austin" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ AUSTIN LUXURY REAL ESTATE</Link>
+              <Link to="/communities" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ EXPLORE ALL COMMUNITIES</Link>
+            </div>
           </div>
         </div>
       </section>

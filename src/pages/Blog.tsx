@@ -4,6 +4,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import AboutBlock from "@/components/AboutBlock";
 import SEOHead from "@/components/SEOHead";
+import SchemaMarkup, { realEstateAgentSchema } from "@/components/SchemaMarkup";
 import { blogPosts } from "@/data/blogPosts";
 import { seoBlogPosts } from "@/data/seoBlogPosts";
 
@@ -24,6 +25,7 @@ const Blog = () => {
         title="Austin Luxury Real Estate Blog | Echelon Property Group"
         description="Expert insights on Austin luxury real estate, market trends, neighborhood guides, and investment strategies from Echelon Property Group."
       />
+      <SchemaMarkup schema={realEstateAgentSchema} />
       <Navigation />
       
       {/* Hero Section */}

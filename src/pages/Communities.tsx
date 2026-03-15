@@ -1,7 +1,14 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
-import SchemaMarkup, { realEstateAgentSchema } from "@/components/SchemaMarkup";
+import SchemaMarkup, { realEstateAgentSchema, createFAQSchema } from "@/components/SchemaMarkup";
+
+const communityFaqs = [
+  { question: "What are the best luxury neighborhoods in Austin Texas?", answer: "Austin's premier luxury neighborhoods include Westlake Hills, Barton Creek, Lake Austin, Tarrytown, Rollingwood, Spanish Oaks, and Dripping Springs. Each offers distinct lifestyle benefits, school districts, and price ranges." },
+  { question: "What is the average home price in Austin's luxury communities?", answer: "Prices vary by neighborhood. Westlake Hills ranges from $1.2M to $20M+, Barton Creek from $1.5M to $15M+, and Lake Austin waterfront from $2M to $25M+. Entry-level luxury starts around $800K in neighborhoods like Tarrytown." },
+  { question: "Which Austin neighborhood has the best schools?", answer: "Westlake Hills, Barton Creek, and Rollingwood are served by the Eanes Independent School District, consistently ranked among the top districts in Texas." },
+  { question: "Are there waterfront homes in Austin?", answer: "Yes. Lake Austin and Lake Travis offer waterfront estates with private docks, panoramic water views, and a resort-like lifestyle just minutes from downtown Austin." },
+];
 import { Link } from "react-router-dom";
 import { communityPages } from "@/data/communityData";
 
@@ -41,6 +48,7 @@ const Communities = () => {
         description="Explore Austin's finest luxury neighborhoods: Westlake Hills, Barton Creek, Lake Austin, Tarrytown, Rollingwood, and more. Expert guidance from Echelon Property Group."
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
+      <SchemaMarkup schema={createFAQSchema(communityFaqs)} />
       <Navigation />
 
       <section className="pt-32 pb-16">
@@ -139,6 +147,32 @@ const Communities = () => {
               <p>
                 At Echelon Property Group, we don't just sell homes in these communities — we know them intimately. Taylor Sherwood provides clients with hyperlocal market knowledge, including pricing trends, school zone boundaries, HOA details, flood zone considerations, and upcoming development that could impact property values. Whether you're relocating to Austin from out of state or moving between neighborhoods, our community-level expertise ensures you find the right fit for your lifestyle and investment goals.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── FAQ ── */}
+      <section className="py-28 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-8">
+              Frequently Asked Questions About Austin Communities
+            </h2>
+            <div className="space-y-6">
+              {communityFaqs.map((faq, i) => (
+                <div key={i} className="border-b border-border pb-6">
+                  <h3 className="text-lg font-medium text-foreground mb-2">{faq.question}</h3>
+                  <p className="text-muted-foreground leading-relaxed">{faq.answer}</p>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-10 grid sm:grid-cols-2 gap-4">
+              <Link to="/buy" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ BUYING A HOME IN AUSTIN</Link>
+              <Link to="/sell" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ SELLING YOUR AUSTIN HOME</Link>
+              <Link to="/best-neighborhoods-in-austin-texas" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ BEST NEIGHBORHOODS IN AUSTIN</Link>
+              <Link to="/luxury-real-estate-austin" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ AUSTIN LUXURY REAL ESTATE</Link>
             </div>
           </div>
         </div>

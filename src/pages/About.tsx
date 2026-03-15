@@ -3,7 +3,7 @@ import clhmsBadge from "@/assets/clhms-badge.png";
 import Footer from "@/components/Footer";
 import aboutTeam from "@/assets/about-team.jpg";
 import { Link } from "react-router-dom";
-import SchemaMarkup, { taylorSherwoodSchema } from "@/components/SchemaMarkup";
+import SchemaMarkup, { taylorSherwoodSchema, createFAQSchema } from "@/components/SchemaMarkup";
 import SEOHead from "@/components/SEOHead";
 
 const About = () => {
@@ -14,6 +14,12 @@ const About = () => {
         description="Meet Taylor Sherwood, CLHMS and founder of Echelon Property Group. Expert advisory for luxury homes, land, commercial, and investment property in Austin TX." />
       
       <SchemaMarkup schema={taylorSherwoodSchema} />
+      <SchemaMarkup schema={createFAQSchema([
+        { question: "Who is Taylor Sherwood?", answer: "Taylor Sherwood is a Certified Luxury Home Marketing Specialist and founder of Echelon Property Group, specializing in luxury residential, commercial, land, and investment real estate across Austin and the Texas Hill Country." },
+        { question: "What areas does Echelon Property Group serve?", answer: "Echelon Property Group serves Austin's premier neighborhoods including Westlake Hills, Barton Creek, Lake Austin, Tarrytown, Rollingwood, Spanish Oaks, Dripping Springs, and the greater Texas Hill Country." },
+        { question: "What services does Echelon Property Group offer?", answer: "We offer luxury buyer representation, strategic listing and seller advisory, off-market property sourcing, commercial tenant representation, investment property acquisitions, and land brokerage." },
+        { question: "Does Taylor Sherwood work with out-of-state clients?", answer: "Yes. A significant portion of our clients relocate to Austin from across the country. We provide virtual tours, comprehensive neighborhood analysis, and full-service transaction management for remote buyers and investors." },
+      ])} />
       <Navigation />
 
       {/* Hero */}
@@ -169,6 +175,23 @@ const About = () => {
             
             GET IN TOUCH
           </Link>
+        </div>
+      </section>
+
+      {/* ── Internal Links ── */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl font-display font-light text-architectural mb-6">
+              Explore Austin Real Estate
+            </h2>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <Link to="/buy" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ BUYER SERVICES</Link>
+              <Link to="/sell" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ SELLER SERVICES</Link>
+              <Link to="/best-neighborhoods-in-austin-texas" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ BEST NEIGHBORHOODS IN AUSTIN</Link>
+              <Link to="/communities" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ EXPLORE ALL COMMUNITIES</Link>
+            </div>
+          </div>
         </div>
       </section>
 

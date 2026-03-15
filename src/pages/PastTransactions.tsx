@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
-import SchemaMarkup, { realEstateAgentSchema } from "@/components/SchemaMarkup";
+import SchemaMarkup, { realEstateAgentSchema, createFAQSchema } from "@/components/SchemaMarkup";
 import RealScoutListings from "@/components/RealScoutListings";
 
 const PastTransactions = () => {
@@ -12,6 +12,11 @@ const PastTransactions = () => {
         title="Recent Sales & Transactions | Echelon Property Group"
         description="View recently closed luxury homes, land, and investment properties in Austin Texas by Echelon Property Group. See our track record of successful transactions." />
       <SchemaMarkup schema={realEstateAgentSchema} />
+      <SchemaMarkup schema={createFAQSchema([
+        { question: "Does Echelon Property Group share past transaction details?", answer: "Due to the private nature of our client relationships, approximately 95% of our transactions are conducted off market and are not publicly displayed. Client privacy and confidentiality are of utmost importance to Echelon Property Group." },
+        { question: "What types of properties has Echelon Property Group sold?", answer: "Our portfolio includes luxury residential homes, waterfront estates, commercial investment properties, development land, and ranch properties across Austin and the Texas Hill Country." },
+        { question: "How can I see Echelon Property Group's track record?", answer: "Contact us directly for a confidential overview of our transaction history and client references. We are happy to provide case studies and examples relevant to your specific real estate needs." },
+      ])} />
       <Navigation />
       <div className="pt-32 pb-8 bg-background">
         <div className="container mx-auto px-6">
@@ -80,6 +85,23 @@ const PastTransactions = () => {
               >
                 DISCUSS YOUR NEXT TRANSACTION
               </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Internal Links ── */}
+      <section className="py-16 bg-secondary/50">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl font-display font-light text-architectural mb-6">
+              Explore Austin Real Estate
+            </h2>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <Link to="/buy" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ BUYER SERVICES</Link>
+              <Link to="/sell" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ SELLER SERVICES</Link>
+              <Link to="/best-neighborhoods-in-austin-texas" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ BEST NEIGHBORHOODS IN AUSTIN</Link>
+              <Link to="/listings" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ CURRENT LISTINGS</Link>
             </div>
           </div>
         </div>

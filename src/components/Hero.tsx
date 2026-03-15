@@ -122,15 +122,15 @@ const Hero = () => {
         />
       )}
 
-      {/* Cinematic vignette gradient */}
+      {/* Cinematic vignette gradient — subtle, concentrated on left */}
       <div
         className="absolute inset-0"
         style={{
           zIndex: 1,
           background: `
-            linear-gradient(to right, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.35) 35%, rgba(0,0,0,0.12) 65%, rgba(0,0,0,0.08) 100%),
-            linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.15) 40%, transparent 70%),
-            radial-gradient(ellipse at 20% 80%, rgba(0,0,0,0.3) 0%, transparent 70%)
+            linear-gradient(to right, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.25) 30%, rgba(0,0,0,0.0) 55%),
+            linear-gradient(to top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.1) 35%, transparent 65%),
+            radial-gradient(ellipse at 15% 70%, rgba(0,0,0,0.25) 0%, transparent 60%)
           `,
         }}
       />

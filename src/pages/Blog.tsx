@@ -25,6 +25,7 @@ const Blog = () => {
         title="Austin Luxury Real Estate Blog | Echelon Property Group"
         description="Expert insights on Austin luxury real estate, market trends, neighborhood guides, and investment strategies from Echelon Property Group."
       />
+      <SchemaMarkup schema={realEstateAgentSchema} />
       <Navigation />
       
       {/* Hero Section */}

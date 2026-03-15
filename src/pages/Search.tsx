@@ -70,6 +70,47 @@ const SearchPage = () => {
         </div>
       </section>
 
+      {/* ── SEO Content ── */}
+      <section className="py-28 bg-secondary/50">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-8">
+              Search Austin Real Estate Listings
+            </h2>
+            <div className="space-y-6 text-muted-foreground leading-relaxed">
+              <p>
+                Austin's real estate market spans an extraordinary range of properties — from contemporary Hill Country estates and Lake Austin waterfront homes to downtown high-rise penthouses and sprawling ranch land. Whether you're searching for a luxury primary residence, an investment property, or land for development, our comprehensive search covers every available listing across greater Austin.
+              </p>
+              <p>
+                Echelon Property Group provides expert guidance for buyers navigating Austin's competitive market. Beyond public listings, we maintain access to off-market properties and private opportunities through our brokerage network. Work with Taylor Sherwood for personalized property recommendations tailored to your goals, timeline, and budget.
+              </p>
+            </div>
+
+            <h3 className="text-2xl font-display font-light text-architectural mt-10 mb-6">
+              Frequently Asked Questions
+            </h3>
+            <div className="space-y-6">
+              {searchFaqs.map((faq, i) => (
+                <div key={i} className="border-b border-border pb-6">
+                  <h4 className="text-lg font-medium text-foreground mb-2">{faq.question}</h4>
+                  <p className="text-muted-foreground leading-relaxed">{faq.answer}</p>
+                </div>
+              ))}
+            </div>
+
+            <h3 className="text-2xl font-display font-light text-architectural mt-10 mb-6">
+              Explore Austin Real Estate
+            </h3>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <Link to="/buy" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ BUYER SERVICES</Link>
+              <Link to="/sell" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ SELLER SERVICES</Link>
+              <Link to="/best-neighborhoods-in-austin-texas" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ BEST NEIGHBORHOODS IN AUSTIN</Link>
+              <Link to="/communities" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ ALL COMMUNITIES</Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Suspense fallback={<div className="min-h-[100px]" />}>
         <Footer />
       </Suspense>

@@ -519,6 +519,47 @@ const Sell = () => {
         </div>
       </section>
 
+      {/* ── FAQ ── */}
+      <section className="py-28 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-8">
+              Frequently Asked Questions About Selling in Austin
+            </h2>
+            <div className="space-y-6">
+              {[
+                { q: "How long does it take to sell a luxury home in Austin?", a: "Well-priced luxury homes in Austin typically sell within 30–90 days depending on neighborhood, price point, and condition. Homes in Westlake Hills, Barton Creek, and Tarrytown that are move-in ready and strategically priced often sell faster." },
+                { q: "What does it cost to sell a home in Austin Texas?", a: "Typical seller costs include agent commissions, title insurance, property taxes prorated to closing, and any repairs or staging. In Texas, sellers also provide a survey and pay for an owner's title policy." },
+                { q: "Should I sell my Austin home off-market?", a: "Off-market sales offer privacy and the ability to test pricing without public days-on-market accumulation. They're ideal for high-profile sellers or unique luxury properties. Echelon Property Group helps sellers evaluate which approach best serves their goals." },
+                { q: "How should I prepare my Austin home for sale?", a: "Key preparation steps include professional staging, decluttering, addressing deferred maintenance, fresh paint, and landscaping. For luxury homes, professional photography, cinematic video, drone footage, and a custom property website are essential." },
+              ].map((faq, i) => (
+                <div key={i} className="border-b border-border pb-6">
+                  <h3 className="text-lg font-medium text-foreground mb-2">{faq.q}</h3>
+                  <p className="text-muted-foreground leading-relaxed">{faq.a}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Internal Links ── */}
+      <section className="py-16 bg-secondary/50">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl font-display font-light text-architectural mb-6">
+              Explore More Austin Real Estate
+            </h2>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <Link to="/buy" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ BUYING A HOME IN AUSTIN</Link>
+              <Link to="/best-neighborhoods-in-austin-texas" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ BEST NEIGHBORHOODS IN AUSTIN</Link>
+              <Link to="/home-value-austin" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ FREE HOME VALUATION</Link>
+              <Link to="/communities" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ EXPLORE ALL COMMUNITIES</Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </div>);
 

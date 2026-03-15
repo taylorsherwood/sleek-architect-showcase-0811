@@ -90,8 +90,8 @@ const Testimonials = () => {
                 </p>
 
                 {/* Attribution */}
-                <div className="border-t border-border/60 pt-6">
-                  <p className="font-display text-xl text-foreground tracking-tight">
+                <div className="border-t border-border/60 pt-4">
+                  <p className="font-display text-lg text-foreground tracking-tight">
                     {t.name}
                   </p>
                   <p className="text-minimal text-gold mt-2">{t.type}</p>

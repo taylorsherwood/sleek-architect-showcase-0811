@@ -71,6 +71,7 @@ const Index = () => {
       <Hero />
 
       <CredibilityStrip />
+      <ExpertiseSection />
 
       <Suspense fallback={<BelowFold />}>
         <MeetTaylor />
@@ -80,7 +81,6 @@ const Index = () => {
         <CommercialCTA />
         <div className="py-8 bg-secondary" />
         <FeaturedListings />
-        <ExpertiseSection />
         <SellerCTA />
         <CTASection />
         <NewsletterSection />

@@ -308,7 +308,7 @@ const CommercialInvestment = () => {
                 </ul>
                 <Link
                   to="/contact"
-                  className="inline-block text-minimal bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4 transition-colors duration-300"
+                  className="inline-block text-minimal bg-primary text-primary-foreground hover:bg-gold hover:text-white px-8 py-4 transition-colors duration-300"
                 >
                   SHARE YOUR INVESTMENT CRITERIA
                 </Link>
@@ -421,7 +421,7 @@ const CommercialInvestment = () => {
             <div className="flex flex-wrap justify-center gap-4">
               <Link
                 to="/contact"
-                className="inline-block text-minimal bg-primary text-primary-foreground hover:bg-primary/90 px-10 py-4 transition-colors duration-300"
+                className="inline-block text-minimal bg-primary text-primary-foreground hover:bg-gold hover:text-white px-10 py-4 transition-colors duration-300"
               >
                 SHARE INVESTMENT CRITERIA
               </Link>

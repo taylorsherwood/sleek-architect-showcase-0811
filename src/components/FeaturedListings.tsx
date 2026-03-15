@@ -141,7 +141,7 @@ FEATURED LISTINGS</p>
                         loading="lazy" />
                       
                       {/* Gradient overlay */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/15 to-transparent transition-opacity duration-300 group-hover:from-black/75" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/5 to-transparent transition-all duration-500 ease-out group-hover:from-black/60 group-hover:via-black/10" />
 
                       {/* View Property CTA */}
                       <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">

@@ -170,11 +170,11 @@ FEATURED LISTINGS</p>
                     </div>
 
                     {/* Card details below image */}
-                    <div className="mt-6 px-1">
-                      <h3 className="text-lg font-display font-medium mb-3 group-hover:text-muted-foreground transition-colors duration-300">
+                    <div className="mt-7 px-1">
+                      <h3 className="text-lg font-display font-medium mb-3 leading-relaxed group-hover:text-muted-foreground transition-colors duration-300">
                         {listing.address}
                       </h3>
-                      <div className="flex gap-8 text-sm text-muted-foreground border-t border-border/50 pt-4 mt-3 pb-2">
+                      <div className="flex gap-10 text-sm text-muted-foreground pt-4 mt-4 pb-2 border-t border-border/30">
                         <span>{listing.beds} Beds</span>
                         <span>{listing.baths} Baths</span>
                         <span>{listing.sqft} Sq Ft</span>

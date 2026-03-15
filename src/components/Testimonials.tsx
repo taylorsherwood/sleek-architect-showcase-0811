@@ -1,4 +1,5 @@
 import { Quote } from "lucide-react";
+import echelonSecondaryLogo from "@/assets/echelon-secondary-logo.png";
 
 const testimonials = [
   {
@@ -29,6 +30,13 @@ const testimonials = [
     type: "Investor Client",
     context: "Investment Property, Austin",
   },
+  {
+    quote:
+      "Working with Taylor was an exceptional experience from start to finish. His attention to detail and genuine care for our needs made all the difference. We found our dream home faster than we ever expected.",
+    name: "Michael & Laura Bennett",
+    type: "Buyer Client",
+    context: "Purchased in Rollingwood",
+  },
 ];
 
 const Testimonials = () => {
@@ -57,7 +65,7 @@ const Testimonials = () => {
             {testimonials.map((t, i) => (
               <div
                 key={i}
-                className="group relative bg-background rounded-xl p-7 md:p-8 flex flex-col justify-between transition-all duration-500 hover:-translate-y-1"
+                className={`group relative bg-background rounded-xl p-7 md:p-8 flex flex-col justify-between transition-all duration-500 hover:-translate-y-1 overflow-hidden${i === testimonials.length - 1 ? " md:col-span-2 md:max-w-[calc(50%-1rem)] md:mx-auto" : ""}`}
                 style={{
                   boxShadow:
                     "0 4px 24px hsl(220 20% 10% / 0.06), 0 1px 4px hsl(220 20% 10% / 0.04)",
@@ -101,6 +109,14 @@ const Testimonials = () => {
                     </p>
                   )}
                 </div>
+
+                {/* Secondary logo watermark */}
+                <img
+                  src={echelonSecondaryLogo}
+                  alt=""
+                  className="absolute bottom-4 right-4 w-10 h-auto opacity-20 pointer-events-none"
+                  aria-hidden="true"
+                />
               </div>
             ))}
           </div>

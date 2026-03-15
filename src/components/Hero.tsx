@@ -203,7 +203,7 @@ const Hero = () => {
             style={{
               fontFamily: '"Raleway", sans-serif',
               fontSize: "1.05rem",
-              textShadow: "0 1px 4px rgba(0,0,0,0.30)"
+              textShadow: "0px 2px 6px rgba(0,0,0,0.35)"
             }}>
             
             Data-driven strategy and discreet representation across Austin's

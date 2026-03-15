@@ -126,7 +126,7 @@ const IntroSection = () => {
                   personalized service at every step. Whether you're buying your
                   first home, scaling a portfolio, or positioning a property for
                   market, we bring the local expertise and sharp negotiation
-                  skills you need to achieve your goals.{"\n\n\n"}Buy. Sell.
+                  skills you need to achieve your goals.{"\n\n"}Buy. Sell.
                   Invest.
                 </p>
               </div>

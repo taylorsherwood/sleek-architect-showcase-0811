@@ -2,6 +2,7 @@ import { lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";
+import SchemaMarkup, { createFAQSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
 import { MapPin } from "lucide-react";
 
 const Footer = lazy(() => import("@/components/Footer"));
@@ -95,6 +96,8 @@ const LandPage = () => {
         title="Austin Land & Investment Property | Echelon Property Group"
         description="Explore Austin land, ranch, development, and investment property opportunities with Echelon Property Group. Strategic real estate advisory across Austin and the Texas Hill Country."
       />
+      <SchemaMarkup schema={realEstateAgentSchema} />
+      <SchemaMarkup schema={createFAQSchema(faqs.map(f => ({ question: f.q, answer: f.a })))} />
       <Navigation />
 
       {/* ── Hero ── */}

@@ -26,8 +26,10 @@ export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Echelon Property Group",
+  "description": "Luxury real estate brokerage in Austin, Texas specializing in luxury homes, land, commercial real estate, and investment property.",
   "url": "https://www.echelonpropertygroup.com",
-  "logo": "https://www.echelonpropertygroup.com/logo.png",
+  "logo": "https://www.echelonpropertygroup.com/lovable-uploads/echelon-logo-gold.png",
+  "image": "https://www.echelonpropertygroup.com/og-image.png",
   "telephone": "+1-512-661-3843",
   "email": "taylor@echelonpropertygroup.com",
   "founder": {
@@ -127,7 +129,7 @@ export const localBusinessSchema = {
   "telephone": "+1-512-661-3843",
   "email": "taylor@echelonpropertygroup.com",
   "image": "https://www.echelonpropertygroup.com/og-image.png",
-  "logo": "https://www.echelonpropertygroup.com/logo.png",
+  "logo": "https://www.echelonpropertygroup.com/lovable-uploads/echelon-logo-gold.png",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "2105 East MLK Blvd Ste 227",
@@ -151,6 +153,9 @@ export function createArticleSchema(title: string, description: string, datePubl
     "@type": "Article",
     "headline": title,
     "description": description,
+    "name": title,
+    "url": "https://www.echelonpropertygroup.com/blog",
+    "image": image || "https://www.echelonpropertygroup.com/og-image.png",
     "datePublished": datePublished,
     "dateModified": datePublished,
     "author": {
@@ -163,14 +168,34 @@ export function createArticleSchema(title: string, description: string, datePubl
       "name": "Echelon Property Group",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://www.echelonpropertygroup.com/logo.png"
+        "url": "https://www.echelonpropertygroup.com/lovable-uploads/echelon-logo-gold.png"
       }
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://www.echelonpropertygroup.com/blog"
+    }
+  };
+}
+
+export function createProductSchema(listing: { name: string; description: string; image: string; price: string; url: string }) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": listing.name,
+    "description": listing.description,
+    "image": listing.image,
+    "url": listing.url,
+    "offers": {
+      "@type": "Offer",
+      "price": listing.price.replace(/[^0-9]/g, ''),
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock"
     },
-    ...(image ? { "image": image } : {})
+    "brand": {
+      "@type": "Organization",
+      "name": "Echelon Property Group"
+    }
   };
 }
 

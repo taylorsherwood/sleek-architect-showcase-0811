@@ -1,4 +1,4 @@
-import { useParams, Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";

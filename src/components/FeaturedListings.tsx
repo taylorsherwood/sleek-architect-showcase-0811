@@ -104,7 +104,7 @@ FEATURED LISTINGS</p>
                           className="w-1/2 h-auto object-contain transition-all duration-300 ease-out group-hover:brightness-0 group-hover:invert"
                           loading="lazy" />
                       </div>
-                      <div className="mt-7 px-1">
+                      <div className="mt-7 px-1 text-center">
                         <h3 className="text-lg font-display font-medium mb-2 leading-relaxed group-hover:text-muted-foreground transition-colors duration-300">
                           {listing.address}
                         </h3>

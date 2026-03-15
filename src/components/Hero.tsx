@@ -122,15 +122,15 @@ const Hero = () => {
         />
       )}
 
-      {/* Cinematic vignette gradient */}
+      {/* Cinematic vignette gradient — subtle, concentrated on left */}
       <div
         className="absolute inset-0"
         style={{
           zIndex: 1,
           background: `
-            linear-gradient(to right, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.35) 35%, rgba(0,0,0,0.12) 65%, rgba(0,0,0,0.08) 100%),
-            linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.15) 40%, transparent 70%),
-            radial-gradient(ellipse at 20% 80%, rgba(0,0,0,0.3) 0%, transparent 70%)
+            linear-gradient(to right, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.25) 30%, rgba(0,0,0,0.0) 55%),
+            linear-gradient(to top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.1) 35%, transparent 65%),
+            radial-gradient(ellipse at 15% 70%, rgba(0,0,0,0.25) 0%, transparent 60%)
           `,
         }}
       />
@@ -160,7 +160,7 @@ const Hero = () => {
               fontSize: "clamp(2.6rem, 5.5vw, 5.5rem)",
               lineHeight: 1.15,
               textShadow:
-                "0 2px 24px rgba(0,0,0,0.45), 0 1px 6px rgba(0,0,0,0.35)",
+                "0 2px 6px rgba(0,0,0,0.35), 0 1px 3px rgba(0,0,0,0.25)",
             }}
           >
             Driven By Data,
@@ -177,29 +177,29 @@ const Hero = () => {
             ].map((item, i) => (
               <span key={item} className="flex items-center gap-4">
                 <span
-                  className="text-warm-cream/65 font-normal"
+                  className="text-warm-cream/80 font-normal"
                   style={{
                     fontFamily: '"Raleway", sans-serif',
                     fontSize: "0.85rem",
                     letterSpacing: "0.08em",
-                    textShadow: "0 1px 6px rgba(0,0,0,0.3)",
+                    textShadow: "0 1px 4px rgba(0,0,0,0.3)",
                   }}
                 >
                   {item}
                 </span>
                 {i < 2 && (
-                  <span className="text-warm-cream/30 text-xs">•</span>
+                  <span className="text-warm-cream/40 text-xs">•</span>
                 )}
               </span>
             ))}
           </div>
 
           <p
-            className="text-warm-cream/60 max-w-lg mb-14 reveal-delayed leading-relaxed font-normal"
+            className="text-warm-cream/70 max-w-lg mb-14 reveal-delayed leading-relaxed font-normal"
             style={{
               fontFamily: '"Raleway", sans-serif',
               fontSize: "1.05rem",
-              textShadow: "0 1px 10px rgba(0,0,0,0.4)",
+              textShadow: "0 1px 4px rgba(0,0,0,0.30)",
             }}
           >
             Data-driven strategy and discreet representation across Austin's

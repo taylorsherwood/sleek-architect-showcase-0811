@@ -246,7 +246,7 @@ const Sell = () => {
         title="Sell Your Home in Austin TX | Echelon Property Group"
         description="Sell your Austin home for top dollar. Strategic marketing, expert negotiation, and luxury presentation from Taylor Sherwood — Austin's trusted luxury listing agent."
         canonical="https://www.echelonpropertygroup.com/sell" />
-      
+      <SchemaMarkup schema={realEstateAgentSchema} />
       <Navigation />
 
       {/* ── Hero ── */}

@@ -175,7 +175,7 @@ FEATURED LISTINGS</p>
                     </div>
 
                     {/* Specs row below image */}
-                    <div className="mt-5 px-1">
+                    <div className="mt-2 px-1">
                       <div className="flex gap-10 text-sm text-muted-foreground py-3">
                         <span>{listing.beds} Beds</span>
                         <span>{listing.baths} Baths</span>

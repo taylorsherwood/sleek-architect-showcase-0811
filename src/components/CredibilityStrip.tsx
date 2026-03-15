@@ -1,16 +1,27 @@
-import { Award } from "lucide-react";
+const items = [
+  "Member of the eXp Luxury Division",
+  "Global Network of Top-Producing Agents",
+  "Data-Driven Market Intelligence",
+];
 
 const CredibilityStrip = () => {
   return (
     <div className="bg-muted/50 border-y border-border/30 py-4">
       <div className="container mx-auto px-6">
-        <div className="flex items-center justify-center gap-3 text-muted-foreground">
-          <Award className="w-4 h-4 text-gold shrink-0" />
-          <p className="text-xs tracking-[0.15em] uppercase font-light">
-            Member of the eXp Luxury Division
-            <span className="mx-2 text-border">|</span>
-            Global Network of Top-Producing Agents
-          </p>
+        <div className="flex items-center justify-center gap-6 text-muted-foreground">
+          {items.map((item, i) => (
+            <span key={i} className="flex items-center gap-6">
+              <span
+                className="text-xs uppercase"
+                style={{ letterSpacing: "0.14em", fontWeight: 400 }}
+              >
+                {item}
+              </span>
+              {i < items.length - 1 && (
+                <span className="text-border/60 text-[0.5rem]">•</span>
+              )}
+            </span>
+          ))}
         </div>
       </div>
     </div>

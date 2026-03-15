@@ -1,6 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import AboutBlock from "@/components/AboutBlock";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createArticleSchema, createFAQSchema } from "@/components/SchemaMarkup";
 import { blogPosts } from "@/data/blogPosts";

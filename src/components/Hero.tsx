@@ -188,7 +188,7 @@ const Hero = () => {
                   {item}
                 </span>
                 {i < 2 && (
-                  <span className="text-warm-cream/30 text-xs">•</span>
+                  <span className="text-warm-cream/40 text-xs">•</span>
                 )}
               </span>
             ))}

@@ -46,6 +46,7 @@ const Navigation = () => {
     { href: "/listings/commercial-investment-austin", label: "INVEST" },
     { href: "/communities", label: "COMMUNITIES" },
     { href: "/about", label: "ABOUT" },
+    { href: "/blog", label: "BLOG" },
   ];
 
   const isActive = (link: NavLink) =>
@@ -70,7 +71,7 @@ const Navigation = () => {
         </Link>
 
         {/* Desktop nav links */}
-        <div className="hidden lg:flex items-center space-x-12 ml-12">
+        <div className="hidden lg:flex items-center space-x-8 xl:space-x-12 ml-12">
           {links.map((link) =>
             link.children ? (
               <div
@@ -138,7 +139,7 @@ const Navigation = () => {
         </div>
 
         {/* Desktop action buttons */}
-        <div className="hidden lg:flex items-center space-x-3 shrink-0 ml-14">
+        <div className="hidden lg:flex items-center space-x-3 shrink-0 ml-8 xl:ml-14">
           <a
             href="https://echelonpropertygroup.outportal.ai"
             target="_blank"

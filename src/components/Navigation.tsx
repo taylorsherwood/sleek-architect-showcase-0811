@@ -30,6 +30,7 @@ const Navigation = () => {
   }, [location.pathname]);
 
   const links: NavLink[] = [
+    { href: "/", label: "HOME" },
     {
       href: "/listings",
       label: "LISTINGS",

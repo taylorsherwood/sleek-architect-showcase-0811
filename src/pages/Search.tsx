@@ -23,6 +23,7 @@ const SearchPage = () => {
         description="Browse all Austin homes for sale. Search luxury homes, condos, and investment properties across Austin's most desirable neighborhoods."
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
+      <SchemaMarkup schema={createFAQSchema(searchFaqs)} />
       <Navigation />
 
       {/* Hero */}

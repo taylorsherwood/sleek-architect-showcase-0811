@@ -140,7 +140,12 @@ const Hero = () => {
         className="relative container mx-auto px-6 pt-20 md:pt-28 lg:pt-32"
         style={{ zIndex: 2 }}
       >
-        <div className="max-w-2xl">
+        <div
+          className="max-w-2xl relative"
+          style={{
+            filter: "drop-shadow(0 0 80px rgba(0,0,0,0.4))",
+          }}
+        >
           <p
             className="text-warm-cream/60 mb-6 reveal font-semibold"
             style={{

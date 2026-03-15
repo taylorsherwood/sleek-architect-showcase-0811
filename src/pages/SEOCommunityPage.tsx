@@ -4,6 +4,7 @@ import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createFAQSchema } from "@/components/SchemaMarkup";
 import { seoCommunityPages } from "@/data/seoCommunityData";
+import AboutBlock from "@/components/AboutBlock";
 
 const Footer = lazy(() => import("@/components/Footer"));
 const RealScoutListings = lazy(() => import("@/components/RealScoutListings"));

@@ -169,7 +169,7 @@ const Hero = () => {
             
             <span className="whitespace-nowrap">Driven By Data,</span>
             <br />
-            <span className="italic">Proven by Results</span>
+            <span className="italic whitespace-nowrap">Proven by Results</span>
           </h1>
 
           {/* Service pillars */}

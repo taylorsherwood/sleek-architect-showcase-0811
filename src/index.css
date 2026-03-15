@@ -123,6 +123,24 @@
     transform: translateZ(0);
   }
 
+  /* Hero CTA hover elevation */
+  .hero-cta-btn {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  .hero-cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  }
+
+  /* Scroll indicator animation */
+  .hero-scroll-indicator {
+    animation: hero-scroll-float 3s ease-in-out infinite;
+  }
+  @keyframes hero-scroll-float {
+    0%, 100% { transform: translateX(-50%) translateY(0); opacity: 0.7; }
+    50% { transform: translateX(-50%) translateY(6px); opacity: 0.4; }
+  }
+
   /* Luxury scroll indicator */
   @keyframes scroll-line {
     0% {

@@ -79,8 +79,8 @@ const Index = () => {
         <CommercialCTA />
         <div className="py-8 bg-secondary" />
         <FeaturedListings />
-        <MeetTaylor />
         <Testimonials />
+        <MeetTaylor />
         <SellerCTA />
         <CTASection />
         <NewsletterSection />

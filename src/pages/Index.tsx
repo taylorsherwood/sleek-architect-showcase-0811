@@ -74,13 +74,13 @@ const Index = () => {
       <ExpertiseSection />
 
       <Suspense fallback={<BelowFold />}>
-        <MeetTaylor />
-        <Testimonials />
         <IntroSection />
         <CommunitiesPreview />
         <CommercialCTA />
         <div className="py-8 bg-secondary" />
         <FeaturedListings />
+        <MeetTaylor />
+        <Testimonials />
         <SellerCTA />
         <CTASection />
         <NewsletterSection />

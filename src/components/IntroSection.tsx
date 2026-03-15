@@ -61,7 +61,7 @@ const IntroSection = () => {
   const stat1 = useCountUp(100, 3000, "$", "M+");
   const stat2 = useCountUp(11, 2500, "", "+");
   const stat3 = useCountUp(200, 3000, "", "+");
-  const stat4 = useCountUp(1, 2000, "Top ", "%");
+  const stat4 = useCountDown(10, 1, 2000);
 
   return (
     <section className="pt-14 pb-12 bg-background">

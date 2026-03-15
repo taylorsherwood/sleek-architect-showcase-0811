@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
+import SchemaMarkup, { realEstateAgentSchema } from "@/components/SchemaMarkup";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
 import {
@@ -297,7 +298,7 @@ const Buy = () => {
         title="Buy Real Estate in Austin | Echelon Property Group"
         description="Expert buyer representation for Austin luxury homes. Off-market access, concierge service, and strategic guidance from Taylor Sherwood — top Austin luxury real estate agent."
         canonical="https://www.echelonpropertygroup.com/buy" />
-      
+      <SchemaMarkup schema={realEstateAgentSchema} />
       <Navigation />
 
       {/* ── Hero ── */}

@@ -7,7 +7,7 @@ import topAgentNetwork from "@/assets/top-agent-network.webp";
 import Footer from "@/components/Footer";
 import AboutBlock from "@/components/AboutBlock";
 import SEOHead from "@/components/SEOHead";
-import SchemaMarkup, { createFAQSchema } from "@/components/SchemaMarkup";
+import SchemaMarkup, { createFAQSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
 
@@ -114,6 +114,7 @@ const OffMarketHomes = () => {
         title="Off-Market Luxury Homes Austin | Echelon Property Group"
         description="Access exclusive off-market luxury homes in Austin, TX. Private listings in Westlake Hills, Barton Creek, Lake Austin, and Tarrytown. Get insider access to properties not on the MLS."
       />
+      <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createFAQSchema(faqs)} />
       <Navigation />
 

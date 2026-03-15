@@ -3,7 +3,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import AboutBlock from "@/components/AboutBlock";
 import SEOHead from "@/components/SEOHead";
-import SchemaMarkup, { createFAQSchema } from "@/components/SchemaMarkup";
+import SchemaMarkup, { createFAQSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
 import AuthorBio from "@/components/AuthorBio";
 
 const faqs = [
@@ -21,6 +21,7 @@ const LandForSaleAustin = () => {
         title="Land for Sale in Austin TX | Echelon Property Group"
         description="Land for sale in Austin, Texas. Residential lots, development parcels, ranch land, and Hill Country acreage. Expert land advisory from Taylor Sherwood and Echelon Property Group."
       />
+      <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createFAQSchema(faqs)} />
       <Navigation />
 

@@ -3,7 +3,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import AboutBlock from "@/components/AboutBlock";
 import SEOHead from "@/components/SEOHead";
-import SchemaMarkup, { createFAQSchema } from "@/components/SchemaMarkup";
+import SchemaMarkup, { createFAQSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
 import AuthorBio from "@/components/AuthorBio";
 
 const faqs = [
@@ -18,9 +18,10 @@ const SellHomeAustin = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Sell Your Home in Austin TX | Echelon Property Group"
+        title="Sell a Home in Austin Texas | Echelon Property Group"
         description="Sell your Austin home for top dollar with Echelon Property Group. Strategic marketing, expert negotiation, and luxury presentation from Taylor Sherwood."
       />
+      <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createFAQSchema(faqs)} />
       <Navigation />
 

@@ -2,6 +2,7 @@ import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
+import SchemaMarkup, { realEstateAgentSchema } from "@/components/SchemaMarkup";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
 
@@ -95,6 +96,7 @@ const Contact = () => {
         title="Contact Austin Luxury Realtor | Echelon Property Group"
         description="Contact Taylor Sherwood and Echelon Property Group for luxury homes, land, commercial, and investment real estate in Austin TX. Schedule a consultation today."
       />
+      <SchemaMarkup schema={realEstateAgentSchema} />
       <Navigation />
 
       <section className="pt-32 pb-28">

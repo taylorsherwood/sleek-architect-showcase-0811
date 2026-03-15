@@ -3,7 +3,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import AboutBlock from "@/components/AboutBlock";
 import SEOHead from "@/components/SEOHead";
-import SchemaMarkup, { createFAQSchema } from "@/components/SchemaMarkup";
+import SchemaMarkup, { createFAQSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
 
 const faqs = [
   { question: "What is the most expensive neighborhood in Austin Texas?", answer: "Lake Austin waterfront is Austin's most expensive area, with estates regularly exceeding $10 million. Westlake Hills and Barton Creek also feature homes above $15 million. These neighborhoods offer limited inventory, premium amenities, and the strongest long-term appreciation in the Austin market." },
@@ -32,6 +32,7 @@ const BestLuxuryNeighborhoods = () => {
         title="Best Luxury Neighborhoods Austin | Echelon Property Group"
         description="Discover the best luxury neighborhoods in Austin, TX. Expert guide to Westlake Hills, Barton Creek, Lake Austin, Tarrytown, and more from Echelon Property Group."
       />
+      <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createFAQSchema(faqs)} />
       <Navigation />
 

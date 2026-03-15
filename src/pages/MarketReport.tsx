@@ -3,7 +3,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import AboutBlock from "@/components/AboutBlock";
 import SEOHead from "@/components/SEOHead";
-import SchemaMarkup, { createFAQSchema } from "@/components/SchemaMarkup";
+import SchemaMarkup, { createFAQSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
 
 const faqs = [
   { question: "Is Austin's luxury real estate market still growing?", answer: "Yes. Austin's luxury market continues to benefit from strong tech-sector employment, sustained in-migration from higher-cost states, limited premium inventory, and Texas's no-income-tax advantage. While the pace of appreciation has moderated from the 2021-2022 peak, the long-term trajectory remains positive, particularly in supply-constrained neighborhoods." },
@@ -21,6 +21,7 @@ const MarketReport = () => {
         title="Austin Luxury Market Report | Echelon Property Group"
         description="Expert analysis of Austin's luxury real estate market. Current trends, price data, neighborhood forecasts, and investment outlook from Echelon Property Group."
       />
+      <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createFAQSchema(faqs)} />
       <Navigation />
 

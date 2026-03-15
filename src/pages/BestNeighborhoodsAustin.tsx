@@ -2,7 +2,7 @@ import { lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";
-import SchemaMarkup, { createFAQSchema } from "@/components/SchemaMarkup";
+import SchemaMarkup, { createFAQSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
 import AuthorBio from "@/components/AuthorBio";
 import AboutBlock from "@/components/AboutBlock";
 
@@ -210,6 +210,7 @@ const BestNeighborhoodsAustin = () => {
         title="Best Neighborhoods in Austin Texas | Echelon Property Group"
         description="Discover the best neighborhoods in Austin TX for luxury living, waterfront estates, walkability, and investment. Expert 2026 guide from Echelon Property Group."
       />
+      <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createFAQSchema(faqs)} />
       <Navigation />
 

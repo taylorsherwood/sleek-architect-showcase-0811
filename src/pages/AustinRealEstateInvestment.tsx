@@ -3,7 +3,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import AboutBlock from "@/components/AboutBlock";
 import SEOHead from "@/components/SEOHead";
-import SchemaMarkup, { createFAQSchema } from "@/components/SchemaMarkup";
+import SchemaMarkup, { createFAQSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
 import AuthorBio from "@/components/AuthorBio";
 
 const faqs = [
@@ -21,6 +21,7 @@ const AustinRealEstateInvestment = () => {
         title="Austin Real Estate Investment | Echelon Property Group"
         description="Austin real estate investment: residential, commercial, multifamily, and land advisory. Expert deal sourcing and underwriting from Echelon Property Group."
       />
+      <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createFAQSchema(faqs)} />
       <Navigation />
 

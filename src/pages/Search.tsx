@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";
+import SchemaMarkup, { realEstateAgentSchema } from "@/components/SchemaMarkup";
 import ScrollReveal from "@/components/ScrollReveal";
 
 const Footer = lazy(() => import("@/components/Footer"));
@@ -13,6 +14,7 @@ const SearchPage = () => {
         title="Search Austin Homes for Sale | Echelon Property Group"
         description="Browse all Austin homes for sale. Search luxury homes, condos, and investment properties across Austin's most desirable neighborhoods."
       />
+      <SchemaMarkup schema={realEstateAgentSchema} />
       <Navigation />
 
       {/* Hero */}

@@ -129,7 +129,7 @@ const FeaturedListings = () => {
                   <Wrapper
                     key={index}
                     {...wrapperProps}
-                    className="group block"
+                    className="group block transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-15px_hsl(220_20%_10%/0.15)]"
                   >
                     {/* Image with overlay details */}
                     <div className="relative overflow-hidden rounded-lg">
@@ -137,15 +137,22 @@ const FeaturedListings = () => {
                         src={listing.image}
                         alt={listing.address}
                         title={`${listing.address} — ${listing.price}`}
-                        className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
+                        className="w-full aspect-[4/3] object-cover transition-transform duration-500 ease-out group-hover:scale-105"
                         loading="lazy"
                       />
                       {/* Gradient overlay */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-500" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/15 to-transparent transition-opacity duration-300 group-hover:from-black/75" />
+
+                      {/* View Property CTA */}
+                      <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <span className="text-minimal text-white border border-gold/60 px-6 py-2.5 backdrop-blur-sm bg-black/20 tracking-[0.15em]">
+                          View Property
+                        </span>
+                      </div>
 
                       {/* Price overlay */}
-                      <div className="absolute bottom-0 left-0 right-0 p-6">
-                        <p className="text-2xl font-display font-light text-white mb-1">
+                      <div className="absolute bottom-0 left-0 right-0 p-5">
+                        <p className="text-2xl font-display font-light text-white mb-0.5">
                           {listing.price}
                         </p>
                         <p className="text-white/70 text-sm">
@@ -164,11 +171,11 @@ const FeaturedListings = () => {
                     </div>
 
                     {/* Card details below image */}
-                    <div className="mt-5">
+                    <div className="mt-4">
                       <h3 className="text-lg font-display font-medium mb-1 group-hover:text-muted-foreground transition-colors duration-300">
                         {listing.address}
                       </h3>
-                      <div className="flex gap-6 text-sm text-muted-foreground border-t border-border pt-4 mt-3">
+                      <div className="flex gap-6 text-sm text-muted-foreground border-t border-border pt-3 mt-2">
                         <span>{listing.beds} Beds</span>
                         <span>{listing.baths} Baths</span>
                         <span>{listing.sqft} Sq Ft</span>

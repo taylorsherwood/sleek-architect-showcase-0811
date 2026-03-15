@@ -32,10 +32,10 @@ const testimonials = [
   },
   {
     quote:
-      "Working with Taylor was an exceptional experience from start to finish. His attention to detail and genuine care for our needs made all the difference. We found our dream home faster than we ever expected.",
-    name: "Michael & Laura Bennett",
-    type: "Buyer Client",
-    context: "Purchased in Rollingwood",
+      "Taylor was incredible to work with! He's knowledgable, responsive, and genuinely cares about getting the best results for his clients. The entire process was smooth and stress-free. You can tell he really loves what he does and we couldn't have asked for a better experience! Highly recommend him to anyone buying or selling in Austin.",
+    name: "Yaniv Dotan",
+    type: "BUYER & SELLER CLIENT",
+    context: "Purchased and sold in Barton Creek",
   },
 ];
 

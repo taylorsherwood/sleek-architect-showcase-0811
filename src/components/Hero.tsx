@@ -130,18 +130,18 @@ const Hero = () => {
 
       {/* Content */}
       <div
-        className="relative container mx-auto px-6 pt-16 md:pt-20"
+        className="relative container mx-auto px-6 pt-16 md:pt-24 lg:pt-28"
         style={{ zIndex: 2 }}>
         
-        <div className="max-w-3xl">
+        <div className="max-w-2xl lg:max-w-3xl">
           <p
-            className="text-minimal text-warm-cream/70 mb-3 reveal font-extrabold"
+            className="text-minimal text-warm-cream/70 mb-5 reveal font-extrabold"
             style={{ textShadow: "0 1px 6px rgba(0,0,0,0.4)" }}>
             
             STRATEGIC AUSTIN REAL ESTATE ADVISORY
           </p>
           <h1
-            className="text-5xl md:text-7xl lg:text-8xl font-display font-light text-warm-cream text-architectural mb-8 reveal"
+            className="text-5xl md:text-7xl lg:text-8xl font-display font-light text-warm-cream text-architectural mb-10 reveal"
             style={{
               textShadow:
               "0 2px 20px rgba(0,0,0,0.5), 0 1px 4px rgba(0,0,0,0.4)"
@@ -153,7 +153,7 @@ const Hero = () => {
           </h1>
 
           {/* Service pillars */}
-          <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mb-4 reveal-delayed">
+          <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mb-6 reveal-delayed">
             {["Luxury Homes", "Investment Property", "Development Land"].map(
               (item, i) =>
               <span key={item} className="flex items-center gap-3">
@@ -176,7 +176,7 @@ const Hero = () => {
           </div>
 
           <p
-            className="text-base text-warm-cream/70 max-w-xl mb-10 reveal-delayed leading-relaxed md:text-xl font-medium"
+            className="text-base text-warm-cream/70 max-w-xl mb-12 reveal-delayed leading-relaxed md:text-xl font-medium"
             style={{
               fontFamily: '"Raleway", sans-serif',
               textShadow: "0 1px 8px rgba(0,0,0,0.4)"
@@ -186,7 +186,7 @@ const Hero = () => {
             most sought-after neighborhoods.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 reveal-delayed-2">
+          <div className="flex flex-col sm:flex-row gap-5 reveal-delayed-2">
             <Link
               to="/contact"
               className="inline-block text-minimal bg-warm-cream text-foreground hover:bg-primary hover:text-primary-foreground px-8 py-4 transition-colors duration-300 text-center">

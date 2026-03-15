@@ -2,7 +2,7 @@ import { lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";
-import SchemaMarkup, { createFAQSchema } from "@/components/SchemaMarkup";
+import SchemaMarkup, { createFAQSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
 import AuthorBio from "@/components/AuthorBio";
 import AboutBlock from "@/components/AboutBlock";
 

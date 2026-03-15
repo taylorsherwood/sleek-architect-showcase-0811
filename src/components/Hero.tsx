@@ -176,7 +176,7 @@ const Hero = () => {
           </div>
 
           <p
-            className="text-base text-warm-cream/70 max-w-xl mb-10 reveal-delayed leading-relaxed font-semibold md:text-xl"
+            className="text-base text-warm-cream/70 max-w-xl mb-10 reveal-delayed leading-relaxed md:text-xl font-medium"
             style={{
               fontFamily: '"Raleway", sans-serif',
               textShadow: "0 1px 8px rgba(0,0,0,0.4)"

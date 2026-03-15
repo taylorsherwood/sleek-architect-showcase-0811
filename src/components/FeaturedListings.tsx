@@ -90,26 +90,25 @@ FEATURED LISTINGS</p>
               </Link>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-10 lg:gap-12">
               {listings.map((listing, index) => {
                 if (listing.isOffMarketCard) {
                   return (
                     <Link key={index} to={listing.link} className="group block">
-                      <div className="relative overflow-hidden rounded-lg aspect-[4/3] bg-primary flex items-center justify-center transition-colors duration-500 group-hover:bg-gold">
+                      <div className="relative overflow-hidden rounded-lg aspect-[4/3] bg-gradient-to-br from-primary via-primary to-primary/80 flex flex-col items-center justify-center transition-colors duration-500 group-hover:from-gold group-hover:via-gold group-hover:to-gold/80">
                         <img
                           src={echelonLogo}
                           alt="Echelon Property Group"
                           title="Echelon Property Group — View exclusive listings"
-                          className="w-3/5 h-auto object-contain transition-all duration-500 group-hover:brightness-0 group-hover:invert"
+                          className="w-1/2 h-auto object-contain transition-all duration-500 group-hover:brightness-0 group-hover:invert"
                           loading="lazy" />
-                        
                       </div>
-                      <div className="mt-5">
-                        <h3 className="text-lg font-display font-medium mb-1 group-hover:text-muted-foreground transition-colors duration-300">
+                      <div className="mt-7 px-1">
+                        <h3 className="text-lg font-display font-medium mb-2 leading-relaxed group-hover:text-muted-foreground transition-colors duration-300">
                           {listing.address}
                         </h3>
-                        <p className="text-minimal text-muted-foreground">
-                          Exclusive private listings →
+                        <p className="text-sm text-muted-foreground leading-relaxed">
+                          Exclusive private listings and investment opportunities not publicly advertised. →
                         </p>
                       </div>
                     </Link>);
@@ -171,11 +170,11 @@ FEATURED LISTINGS</p>
                     </div>
 
                     {/* Card details below image */}
-                    <div className="mt-6 px-1">
-                      <h3 className="text-lg font-display font-medium mb-3 group-hover:text-muted-foreground transition-colors duration-300">
+                    <div className="mt-7 px-1">
+                      <h3 className="text-lg font-display font-medium mb-3 leading-relaxed group-hover:text-muted-foreground transition-colors duration-300">
                         {listing.address}
                       </h3>
-                      <div className="flex gap-8 text-sm text-muted-foreground border-t border-border/50 pt-4 mt-3 pb-2">
+                      <div className="flex gap-10 text-sm text-muted-foreground pt-4 mt-4 pb-2 border-t border-border/30">
                         <span>{listing.beds} Beds</span>
                         <span>{listing.baths} Baths</span>
                         <span>{listing.sqft} Sq Ft</span>

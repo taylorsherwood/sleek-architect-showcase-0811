@@ -183,9 +183,15 @@ const IntroSection = () => {
                   {credentials.map((cred, i) =>
                   <div key={i} className="flex items-center gap-3">
                       <cred.icon className="w-4 h-4 text-gold shrink-0" />
-                      <p className="text-sm text-muted-foreground font-light">
-                        {cred.label}
-                      </p>
+                      {cred.href ? (
+                        <a href={cred.href} target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground font-light underline hover:text-foreground transition-colors">
+                          {cred.label}
+                        </a>
+                      ) : (
+                        <p className="text-sm text-muted-foreground font-light">
+                          {cred.label}
+                        </p>
+                      )}
                     </div>
                   )}
                 </div>

@@ -55,9 +55,19 @@ const Footer = () => {
 
 
           <div className="border-t border-primary-foreground/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-primary-foreground/40 text-sm">
-              Brokered by eXp Realty | Austin Luxury Real Estate
-            </p>
+            <div className="text-center md:text-left">
+              <p className="text-primary-foreground/40 text-sm">
+                Brokered by eXp Realty | Austin Luxury Real Estate
+              </p>
+              <a
+                href="https://www.dropbox.com/scl/fi/ism1gkeqt0bol9srh3b0a/IABS-1-2.pdf?rlkey=l05zn9bqqmg8e1ru4qjzsnd1o&dl=0"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary-foreground/40 text-xs hover:text-gold transition-colors duration-300 underline underline-offset-2"
+              >
+                Information About Brokerage Services
+              </a>
+            </div>
             <p className="text-primary-foreground/40 text-sm">
               Copyright © {new Date().getFullYear()} Echelon Property Group | eXp Realty LLC
             </p>

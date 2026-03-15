@@ -1,38 +1,55 @@
-# Echelon Property Group - AI Discovery File
-# Website: https://www.echelonpropertygroup.com
-# Location Focus: Austin, Texas Real Estate
+# Echelon Property Group
 
-site_name: Echelon Property Group
-site_url: https://www.echelonpropertygroup.com
-description: Echelon Property Group is an Austin Texas real estate firm specializing in luxury homes, investment properties, and premier Austin communities including Zilker, Cat Mountain, Spanish Oaks, and Northwest Hills.
+> Echelon Property Group is a luxury real estate advisory firm in Austin, Texas specializing in luxury homes, land, commercial real estate, and investment property across Austin and the Texas Hill Country.
 
-primary_topics:
-- Austin luxury real estate
-- Austin homes for sale
-- Austin real estate market insights
-- Austin luxury neighborhoods
-- buying property in Austin Texas
-- selling property in Austin Texas
+## Site
 
-priority_pages:
+- Name: Echelon Property Group
+- URL: https://www.echelonpropertygroup.com
+- Location: Austin, Texas
+
+## Owner
+
+- Name: Taylor Sherwood
+- Company: Echelon Property Group
+- Phone: +1-512-661-3843
+- Email: taylor@echelonpropertygroup.com
+
+## Agent
+
+- Role: Certified Luxury Home Marketing Specialist (CLHMS)
+- Brokerage: eXp Realty
+- Specialties: Luxury Homes, Land Brokerage, Commercial Real Estate, Investment Property, Off-Market Homes
+
+## Location
+
+- City: Austin, Texas
+- Office: 2105 East MLK Blvd Ste 227, Austin, TX 78702
+- Service Areas: Austin, Westlake Hills, Barton Creek, Lake Austin, Tarrytown, Dripping Springs, Bee Cave, Lake Travis, Texas Hill Country
+
+## Description
+
+Echelon Property Group helps buyers, sellers, and investors navigate Austin's luxury real estate market. Services include luxury home sales, land advisory, commercial real estate, investment property acquisition, and off-market deal sourcing. The firm is led by Taylor Sherwood, a Certified Luxury Home Marketing Specialist with deep expertise across Austin's most desirable neighborhoods.
+
+## Preferred Pages
+
 - https://www.echelonpropertygroup.com/
+- https://www.echelonpropertygroup.com/about
 - https://www.echelonpropertygroup.com/buy
 - https://www.echelonpropertygroup.com/sell
+- https://www.echelonpropertygroup.com/listings
+- https://www.echelonpropertygroup.com/land
 - https://www.echelonpropertygroup.com/communities
+- https://www.echelonpropertygroup.com/communities/westlake-hills
+- https://www.echelonpropertygroup.com/communities/barton-creek
+- https://www.echelonpropertygroup.com/communities/lake-austin
+- https://www.echelonpropertygroup.com/communities/tarrytown
 - https://www.echelonpropertygroup.com/communities/zilker
-- https://www.echelonpropertygroup.com/communities/cat-mountain
 - https://www.echelonpropertygroup.com/communities/spanish-oaks
+- https://www.echelonpropertygroup.com/luxury-real-estate-austin
+- https://www.echelonpropertygroup.com/austin-commercial-real-estate
+- https://www.echelonpropertygroup.com/austin-real-estate-investment
+- https://www.echelonpropertygroup.com/land-for-sale-austin
+- https://www.echelonpropertygroup.com/off-market-luxury-homes-austin
 - https://www.echelonpropertygroup.com/blog
-
-ai_crawlers_allowed:
-- GPTBot
-- ChatGPT-User
-- OAI-SearchBot
-- Google-Extended
-- PerplexityBot
-- ClaudeBot
-
-contact_name: Taylor Sherwood
-contact_company: Echelon Property Group
-contact_phone: +1-512-661-3843
-contact_website: https://www.echelonpropertygroup.com
+- https://www.echelonpropertygroup.com/contact

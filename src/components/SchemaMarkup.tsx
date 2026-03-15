@@ -162,6 +162,27 @@ export const localBusinessSchema = {
   "priceRange": "$$$"
 };
 
+export const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Echelon Property Group",
+  "url": "https://www.echelonpropertygroup.com",
+  "description": "Austin Texas luxury real estate brokerage specializing in luxury homes, residential real estate, land, and investment properties.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Echelon Property Group",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.echelonpropertygroup.com/lovable-uploads/echelon-logo-gold.png"
+    }
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.echelonpropertygroup.com/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+};
+
 export function createArticleSchema(title: string, description: string, datePublished: string, author: string, image?: string) {
   return {
     "@context": "https://schema.org",

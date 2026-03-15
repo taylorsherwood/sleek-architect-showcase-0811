@@ -57,7 +57,34 @@ const FeaturedListings = () => {
     el.setAttribute("include-seller-listings", "");
     widgetRef.current.appendChild(el);
 
+    // Hide any listings under $300k that slip through the widget filter
+    const hideLowPriceListings = () => {
+      const shadow = el.shadowRoot;
+      if (!shadow) return;
+      shadow.querySelectorAll('[class*="listing"], [class*="card"], [class*="property"], a').forEach((card) => {
+        const text = card.textContent || '';
+        const priceMatch = text.match(/\$[\d,]+/);
+        if (priceMatch) {
+          const price = parseInt(priceMatch[0].replace(/[$,]/g, ''), 10);
+          if (price > 0 && price < 300000) {
+            (card as HTMLElement).style.display = 'none';
+          }
+        }
+      });
+    };
+
+    const observer = new MutationObserver(hideLowPriceListings);
+    const checkShadow = setInterval(() => {
+      if (el.shadowRoot) {
+        clearInterval(checkShadow);
+        observer.observe(el.shadowRoot, { childList: true, subtree: true });
+        hideLowPriceListings();
+      }
+    }, 500);
+
     return () => {
+      clearInterval(checkShadow);
+      observer.disconnect();
       if (widgetRef.current && el.parentNode === widgetRef.current) {
         widgetRef.current.removeChild(el);
       }

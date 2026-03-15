@@ -54,7 +54,7 @@ const Footer = () => {
           </div>
 
 
-          <div className="border-t border-primary-foreground/10 pt-6 flex flex-col md:flex-row justify-between items-start gap-4">
+          <div className="border-t border-primary-foreground/10 pt-6 flex flex-col md:flex-row justify-between items-center md:items-start gap-4">
             <div className="text-center md:text-left">
               <p className="text-primary-foreground/40 text-sm">
                 Brokered by eXp Realty | Austin Luxury Real Estate

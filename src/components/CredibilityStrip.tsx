@@ -6,7 +6,7 @@ const items = [
 
 const CredibilityStrip = () => {
   return (
-    <div className="bg-muted/50 border-y border-border/30 py-4">
+    <div className="hidden md:block bg-muted/50 border-y border-border/30 py-4">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-center gap-6 text-muted-foreground">
           {items.map((item, i) => (

@@ -128,7 +128,7 @@ export const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Echelon Property Group",
-  "description": "Luxury real estate brokerage in Austin, Texas specializing in luxury homes, investment properties, and land opportunities.",
+  "description": "Echelon Property Group is an Austin Texas real estate brokerage specializing in luxury homes, residential real estate, and land development opportunities across Austin's most desirable neighborhoods.",
   "url": "https://www.echelonpropertygroup.com",
   "telephone": "+1-512-661-3843",
   "email": "taylor@echelonpropertygroup.com",
@@ -147,6 +147,17 @@ export const localBusinessSchema = {
     "latitude": 30.2672,
     "longitude": -97.7431
   },
+  "areaServed": [
+    { "@type": "City", "name": "Austin", "containedInPlace": { "@type": "State", "name": "Texas" } },
+    { "@type": "Place", "name": "Westlake Hills, Texas" },
+    { "@type": "Place", "name": "Tarrytown, Austin" },
+    { "@type": "Place", "name": "Spanish Oaks, Austin" },
+    { "@type": "Place", "name": "Barton Creek, Austin" },
+    { "@type": "Place", "name": "Northwest Hills, Austin" },
+    { "@type": "Place", "name": "Rollingwood, Texas" },
+    { "@type": "Place", "name": "Lake Austin" },
+    { "@type": "Place", "name": "Lake Travis" }
+  ],
   "openingHours": "Mo-Fr 09:00-18:00",
   "priceRange": "$$$"
 };

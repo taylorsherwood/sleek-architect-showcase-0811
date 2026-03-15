@@ -90,7 +90,7 @@ FEATURED LISTINGS</p>
               </Link>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-10 lg:gap-12">
               {listings.map((listing, index) => {
                 if (listing.isOffMarketCard) {
                   return (

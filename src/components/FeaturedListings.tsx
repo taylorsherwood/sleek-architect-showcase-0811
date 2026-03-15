@@ -145,7 +145,7 @@ const FeaturedListings = () => {
 
                       {/* View Property CTA */}
                       <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <span className="text-minimal text-white border border-gold/60 px-6 py-2.5 backdrop-blur-sm bg-black/20 tracking-[0.15em]">
+                        <span className="text-minimal text-white border border-gold/40 px-8 py-3 rounded-full backdrop-blur-md bg-white/10 tracking-[0.15em]">
                           View Property
                         </span>
                       </div>

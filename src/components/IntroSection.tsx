@@ -53,7 +53,7 @@ const credentials = [
   },
   {
     icon: Shield,
-    label: "Brokered by eXp Realty | Global Luxury Network",
+    label: "Brokered by eXp Realty",
   },
 ];
 

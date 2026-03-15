@@ -29,6 +29,18 @@ const Listings = () => {
         title="Luxury Listings Austin TX | Echelon Property Group Austin"
         description="View current luxury listings from Echelon Property Group. Austin homes for sale, investment properties, estate homes, and land opportunities across Austin's premier neighborhoods."
       />
+      {listings.map((listing, i) => (
+        <SchemaMarkup
+          key={i}
+          schema={createProductSchema({
+            name: listing.address,
+            description: listing.description,
+            image: listing.image.startsWith('http') ? listing.image : `https://www.echelonpropertygroup.com${listing.image}`,
+            price: listing.price,
+            url: listing.link,
+          })}
+        />
+      ))}
       <Navigation />
 
       <section className="pt-32 pb-16">

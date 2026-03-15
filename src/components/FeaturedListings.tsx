@@ -149,13 +149,13 @@ FEATURED LISTINGS</p>
                         </span>
                       </div>
 
-                      {/* Price overlay */}
-                      <div className="absolute bottom-0 left-0 right-0 p-5">
-                        <p className="text-2xl font-display font-light text-white mb-0.5">
+                      {/* Price & address on image */}
+                      <div className="absolute bottom-0 left-0 right-0 p-6" style={{ textShadow: '0 1px 3px rgba(0,0,0,0.4)' }}>
+                        <p className="text-2xl font-display font-light text-white mb-1 tracking-wide">
                           {listing.price}
                         </p>
-                        <p className="text-white/70 text-sm">
-                          {listing.location}
+                        <p className="text-white/75 text-sm font-light">
+                          {listing.address} · {listing.location}
                         </p>
                       </div>
 

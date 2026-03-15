@@ -39,6 +39,7 @@ const staticRoutes = [
   "/austin-real-estate-investment",
   "/land-for-sale-austin",
   "/past-transactions",
+  "/best-neighborhoods-in-austin-texas",
 ];
 
 const allPrerenderRoutes = Array.from(

@@ -80,6 +80,7 @@ const AppRoutes = () => {
           <Route path="/land" element={<LandPage />} />
           <Route path="/past-transactions" element={<PastTransactions />} />
           <Route path="/connect" element={<Connect />} />
+          <Route path="/best-neighborhoods-in-austin-texas" element={<BestNeighborhoodsAustin />} />
           <Route path="/westlake-hills-homes-for-sale" element={<SEOCommunityPage />} />
           <Route path="/tarrytown-homes-for-sale" element={<SEOCommunityPage />} />
           <Route path="/rollingwood-homes-for-sale" element={<SEOCommunityPage />} />

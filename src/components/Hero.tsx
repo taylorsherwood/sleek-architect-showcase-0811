@@ -181,7 +181,7 @@ const Hero = () => {
             map((item, i) =>
             <span key={item} className="flex items-center gap-4">
                 <span
-                className="text-warm-cream/80 font-medium"
+                className="text-warm-cream/90 font-medium"
                 style={{
                   fontFamily: '"Raleway", sans-serif',
                   fontSize: "0.85rem",

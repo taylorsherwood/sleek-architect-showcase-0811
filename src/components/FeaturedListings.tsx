@@ -139,8 +139,9 @@ FEATURED LISTINGS</p>
                         className="w-full aspect-[4/3] object-cover transition-transform duration-500 ease-out group-hover:scale-105"
                         loading="lazy" />
                       
-                      {/* Gradient overlay */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/5 to-transparent transition-all duration-500 ease-out group-hover:from-black/60 group-hover:via-black/10" />
+                      {/* Gradient overlay — concentrated at bottom for text readability */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/8 to-transparent transition-all duration-500 ease-out group-hover:from-black/65" />
+                      <div className="absolute bottom-0 left-0 right-0 h-2/5 bg-gradient-to-t from-black/40 to-transparent pointer-events-none" />
 
                       {/* View Property CTA */}
                       <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100">
@@ -150,11 +151,11 @@ FEATURED LISTINGS</p>
                       </div>
 
                       {/* Price & address on image */}
-                      <div className="absolute bottom-0 left-0 right-0 p-6" style={{ textShadow: '0 1px 3px rgba(0,0,0,0.4)' }}>
-                        <p className="text-2xl font-display font-light text-white mb-1 tracking-wide">
+                      <div className="absolute bottom-0 left-0 right-0 p-6" style={{ textShadow: '0 2px 6px rgba(0,0,0,0.5), 0 0 20px rgba(0,0,0,0.2)' }}>
+                        <p className="text-2xl font-display font-light text-white mb-2 tracking-wide">
                           {listing.price}
                         </p>
-                        <p className="text-white/75 text-sm font-light">
+                        <p className="text-white/90 text-sm font-light">
                           {listing.address} · {listing.location}
                         </p>
                       </div>

@@ -100,7 +100,7 @@ FEATURED LISTINGS</p>
                           src={echelonLogo}
                           alt="Echelon Property Group"
                           title="Echelon Property Group — View exclusive listings"
-                          className="w-1/2 h-auto object-contain transition-all duration-150 group-hover:brightness-0 group-hover:invert"
+                          className="w-1/2 h-auto object-contain group-hover:brightness-0 group-hover:invert"
                           loading="lazy" />
                       </div>
                       <div className="mt-7 px-1">
@@ -141,7 +141,7 @@ FEATURED LISTINGS</p>
                       
                       {/* Gradient overlay — concentrated at bottom-left for text readability */}
                       <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-transparent" />
-                      <div className="absolute bottom-0 left-0 right-1/3 h-1/2 bg-gradient-to-t from-black/50 via-black/20 to-transparent pointer-events-none rounded-bl-lg" />
+                      <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-tr from-black/50 via-black/20 to-transparent pointer-events-none" />
 
                       {/* View Property CTA */}
                       <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100">

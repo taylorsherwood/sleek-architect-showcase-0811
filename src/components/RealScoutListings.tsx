@@ -36,7 +36,7 @@ const RealScoutListings = ({
     <section className="pt-4 pb-14 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
-          <p className="text-minimal text-gold mb-4 font-extrabold">{heading}</p>
+          <p className="text-minimal text-gold mb-4 font-extrabold whitespace-pre-line">{heading}</p>
           <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-12">
             {subheading}
           </h2>

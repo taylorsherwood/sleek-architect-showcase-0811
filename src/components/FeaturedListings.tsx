@@ -66,7 +66,7 @@ const FeaturedListings = () => {
 
   return (
     <>
-      <section className="pt-24 pb-8 bg-background">
+      <section className="pt-24 pb-0 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
             <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-16 -mt-8">

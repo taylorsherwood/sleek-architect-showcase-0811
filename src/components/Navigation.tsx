@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
-import logo from "@/assets/echelon-secondary-logo.png";
+import logo from "@/assets/echelon-header-logo.png";
 
 interface NavLink {
   href: string;
@@ -60,12 +60,12 @@ const Navigation = () => {
         }`}
       />
       <div className="relative container mx-auto px-6 h-full flex items-center justify-between">
-        <Link to="/" className="flex items-center shrink-0">
+        <Link to="/" className="flex items-center shrink-0 overflow-visible">
           <img
             src={logo}
             alt="Echelon Property Group"
             title="Echelon Property Group — Austin Luxury Real Estate"
-            className="h-10 md:h-12 lg:h-20 w-auto max-w-none border-0 shrink-0"
+            className="h-32 md:h-40 lg:h-48 w-auto max-w-none border-0 shrink-0 -my-8"
           />
         </Link>
 

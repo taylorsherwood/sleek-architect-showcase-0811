@@ -36,7 +36,7 @@ const Communities = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Austin Luxury Communities | Echelon Property Group Austin"
+        title="Austin Luxury Communities | Echelon Property Group"
         description="Explore Austin's finest luxury neighborhoods: Westlake Hills, Barton Creek, Lake Austin, Tarrytown, Rollingwood, and more. Expert guidance from Echelon Property Group."
       />
       <Navigation />

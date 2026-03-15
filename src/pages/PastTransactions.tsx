@@ -8,7 +8,7 @@ const PastTransactions = () => {
   return (
     <div className="min-h-screen">
       <SEOHead
-        title="Past Transactions | Echelon Property Group Austin"
+        title="Recent Sales & Transactions | Echelon Property Group"
         description="View recently closed luxury homes, land, and investment properties in Austin Texas by Echelon Property Group. See our track record of successful transactions." />
       
       <Navigation />

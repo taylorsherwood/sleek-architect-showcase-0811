@@ -26,7 +26,7 @@ const Listings = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Luxury Listings Austin TX | Echelon Property Group Austin"
+        title="Luxury Listings in Austin TX | Echelon Property Group"
         description="View current luxury listings from Echelon Property Group. Austin homes for sale, investment properties, estate homes, and land opportunities across Austin's premier neighborhoods."
       />
       {listings.map((listing, i) => (

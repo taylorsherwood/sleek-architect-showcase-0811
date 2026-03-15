@@ -66,7 +66,7 @@ const Navigation = () => {
             src={logo}
             alt="Echelon Property Group"
             title="Echelon Property Group — Austin Luxury Real Estate"
-            className="h-7 md:h-8 lg:h-10 w-auto border-0"
+            className="h-7 md:h-8 lg:h-12 w-auto max-w-none border-0 shrink-0"
           />
         </Link>
 

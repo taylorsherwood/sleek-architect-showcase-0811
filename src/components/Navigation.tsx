@@ -60,7 +60,7 @@ const Navigation = () => {
         }`}
       />
       <div className="relative container mx-auto px-6 h-full flex items-center justify-between">
-        <Link to="/">
+        <Link to="/" className="flex items-center shrink-0">
           <img
             src={logo}
             alt="Echelon Property Group"

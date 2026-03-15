@@ -53,11 +53,11 @@ const Testimonials = () => {
           </div>
 
           {/* Testimonial Grid */}
-          <div className="grid md:grid-cols-2 gap-8 lg:gap-10">
+          <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
             {testimonials.map((t, i) => (
               <div
                 key={i}
-                className="group relative bg-background rounded-xl p-10 md:p-12 flex flex-col justify-between transition-all duration-500 hover:-translate-y-1"
+                className="group relative bg-background rounded-xl p-7 md:p-8 flex flex-col justify-between transition-all duration-500 hover:-translate-y-1"
                 style={{
                   boxShadow:
                     "0 4px 24px hsl(220 20% 10% / 0.06), 0 1px 4px hsl(220 20% 10% / 0.04)",

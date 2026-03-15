@@ -135,7 +135,7 @@ const Hero = () => {
         
         <div className="max-w-3xl">
           <p
-            className="text-minimal text-warm-cream/70 mb-3 reveal"
+            className="text-minimal text-warm-cream/70 mb-3 reveal font-extrabold"
             style={{ textShadow: "0 1px 6px rgba(0,0,0,0.4)" }}>
             
             STRATEGIC AUSTIN REAL ESTATE ADVISORY
@@ -158,7 +158,7 @@ const Hero = () => {
               (item, i) =>
               <span key={item} className="flex items-center gap-3">
                   <span
-                  className="text-sm md:text-base text-warm-cream/80 font-semibold"
+                  className="text-sm text-warm-cream/80 font-semibold md:text-lg"
                   style={{
                     fontFamily: '"Raleway", sans-serif',
                     textShadow: "0 1px 6px rgba(0,0,0,0.3)",
@@ -176,7 +176,7 @@ const Hero = () => {
           </div>
 
           <p
-            className="text-base md:text-lg text-warm-cream/70 max-w-xl mb-10 reveal-delayed leading-relaxed font-semibold"
+            className="text-base text-warm-cream/70 max-w-xl mb-10 reveal-delayed leading-relaxed font-semibold md:text-xl"
             style={{
               fontFamily: '"Raleway", sans-serif',
               textShadow: "0 1px 8px rgba(0,0,0,0.4)"

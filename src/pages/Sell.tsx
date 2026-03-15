@@ -394,12 +394,14 @@ const Sell = () => {
       {/* ── Full-Spectrum Real Estate Advisory ── */}
       <section className="pt-0 pb-28 bg-background">
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
-            <p className="text-minimal text-gold mb-4 font-extrabold">OUR EXPERTISE</p>
-            <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-6">
-              Full-Spectrum Real Estate Advisory
-            </h2>
-            <div className="space-y-6 text-muted-foreground leading-relaxed">
+          <div className="max-w-7xl mx-auto">
+            <div className="mb-16 max-w-2xl">
+              <p className="text-minimal text-gold mb-4 font-extrabold">OUR EXPERTISE</p>
+              <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-6">
+                Full-Spectrum Real Estate Advisory
+              </h2>
+            </div>
+            <div className="space-y-6 text-muted-foreground leading-relaxed max-w-4xl">
               <p>
                 Echelon Property Group provides comprehensive real estate services across residential, commercial, land, and investment sectors. Unlike single-focus agents, our breadth of experience allows us to advise clients holistically — whether they're purchasing a primary residence, diversifying into commercial property, or assembling land for development.
               </p>

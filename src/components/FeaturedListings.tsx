@@ -100,7 +100,7 @@ FEATURED LISTINGS</p>
                           src={echelonLogo}
                           alt="Echelon Property Group"
                           title="Echelon Property Group — View exclusive listings"
-                          className="w-1/2 h-auto object-contain transition-all duration-500 group-hover:brightness-0 group-hover:invert"
+                          className="w-1/2 h-auto object-contain transition-all duration-150 group-hover:brightness-0 group-hover:invert"
                           loading="lazy" />
                       </div>
                       <div className="mt-7 px-1">
@@ -139,9 +139,9 @@ FEATURED LISTINGS</p>
                         className="w-full aspect-[4/3] object-cover transition-transform duration-500 ease-out group-hover:scale-105"
                         loading="lazy" />
                       
-                      {/* Gradient overlay — concentrated at bottom for text readability */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/8 to-transparent transition-all duration-500 ease-out group-hover:from-black/65" />
-                      <div className="absolute bottom-0 left-0 right-0 h-2/5 bg-gradient-to-t from-black/40 to-transparent pointer-events-none" />
+                      {/* Gradient overlay — concentrated at bottom-left for text readability */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-transparent" />
+                      <div className="absolute bottom-0 left-0 right-1/3 h-1/2 bg-gradient-to-t from-black/50 via-black/20 to-transparent pointer-events-none rounded-bl-lg" />
 
                       {/* View Property CTA */}
                       <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100">
@@ -151,11 +151,11 @@ FEATURED LISTINGS</p>
                       </div>
 
                       {/* Price & address on image */}
-                      <div className="absolute bottom-0 left-0 right-0 p-6" style={{ textShadow: '0 2px 6px rgba(0,0,0,0.5), 0 0 20px rgba(0,0,0,0.2)' }}>
+                      <div className="absolute bottom-0 left-0 right-0 p-6" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.6), 0 0 24px rgba(0,0,0,0.25)' }}>
                         <p className="text-2xl font-display font-light text-white mb-2 tracking-wide">
                           {listing.price}
                         </p>
-                        <p className="text-white/90 text-sm font-light">
+                        <p className="text-white/95 text-sm font-normal">
                           {listing.address} · {listing.location}
                         </p>
                       </div>

@@ -155,7 +155,7 @@ FEATURED LISTINGS</p>
                         <p className="text-2xl font-display font-light text-white mb-2 tracking-wide">
                           {listing.price}
                         </p>
-                        <p className="text-white/95 text-sm font-normal">
+                        <p className="text-white/95 text-sm font-normal whitespace-nowrap">
                           {listing.address} · {listing.location}
                         </p>
                       </div>

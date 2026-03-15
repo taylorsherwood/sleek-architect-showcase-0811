@@ -111,7 +111,38 @@ const CommunityPage = () => {
   }
 
   const related = communityPages.filter((c) => community.relatedCommunities.includes(c.slug));
-  const faqs = community.faqs;
+  const existingFaqs = community.faqs;
+
+  // Standardized FAQs for every community page
+  const standardFaqs = [
+    {
+      question: `What is it like living in ${community.name} Austin?`,
+      answer: `${community.name} is one of Austin's most desirable neighborhoods, offering a blend of luxury living, natural beauty, and convenient access to dining, entertainment, and outdoor recreation. Residents enjoy a high quality of life with strong community character and proximity to central Austin.`,
+    },
+    {
+      question: `What are home prices in ${community.name}?`,
+      answer: `Home prices in ${community.name} vary based on size, lot, and location. Current pricing typically falls within the ${community.priceRange} range. Contact Echelon Property Group for a detailed market analysis and current listings.`,
+    },
+    {
+      question: `Are there luxury homes in ${community.name}?`,
+      answer: `Yes. ${community.name} features some of Austin's finest luxury properties, including custom-built estates, architecturally significant homes, and premium residences with high-end finishes and desirable lot positions.`,
+    },
+    {
+      question: `What schools serve ${community.name}?`,
+      answer: `${community.name} is served by highly regarded public and private schools in the Austin area. School zoning varies by address. Contact Echelon Property Group for specific school boundary information related to properties in ${community.name}.`,
+    },
+    {
+      question: `Is ${community.name} a good investment area?`,
+      answer: `${community.name} has demonstrated strong long-term appreciation driven by limited inventory, high demand, and Austin's continued economic growth. The neighborhood remains a top choice for buyers seeking both lifestyle quality and investment value.`,
+    },
+  ];
+
+  // Merge: existing FAQs first, then standardized ones (skip duplicates by question similarity)
+  const existingQuestionLower = new Set(existingFaqs.map(f => f.question.toLowerCase()));
+  const dedupedStandard = standardFaqs.filter(
+    f => !existingQuestionLower.has(f.question.toLowerCase())
+  );
+  const allFaqs = [...existingFaqs, ...dedupedStandard];
 
   return (
     <div className="min-h-screen bg-background">

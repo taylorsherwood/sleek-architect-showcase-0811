@@ -147,7 +147,7 @@ const Hero = () => {
           }}>
           
           <p
-            className="text-warm-cream/60 mb-6 reveal font-bold"
+            className="text-warm-cream/60 mb-6 reveal font-medium"
             style={{
               fontFamily: '"Raleway", sans-serif',
               fontSize: "0.7rem",

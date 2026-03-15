@@ -100,7 +100,7 @@ FEATURED LISTINGS</p>
                           src={echelonLogo}
                           alt="Echelon Property Group"
                           title="Echelon Property Group — View exclusive listings"
-                          className="w-1/2 h-auto object-contain transition-all duration-500 group-hover:brightness-0 group-hover:invert"
+                          className="w-1/2 h-auto object-contain transition-all duration-150 group-hover:brightness-0 group-hover:invert"
                           loading="lazy" />
                       </div>
                       <div className="mt-7 px-1">

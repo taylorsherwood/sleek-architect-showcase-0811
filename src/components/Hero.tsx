@@ -177,12 +177,12 @@ const Hero = () => {
             ].map((item, i) => (
               <span key={item} className="flex items-center gap-4">
                 <span
-                  className="text-warm-cream/65 font-normal"
+                  className="text-warm-cream/80 font-normal"
                   style={{
                     fontFamily: '"Raleway", sans-serif',
                     fontSize: "0.85rem",
                     letterSpacing: "0.08em",
-                    textShadow: "0 1px 6px rgba(0,0,0,0.3)",
+                    textShadow: "0 1px 4px rgba(0,0,0,0.3)",
                   }}
                 >
                   {item}

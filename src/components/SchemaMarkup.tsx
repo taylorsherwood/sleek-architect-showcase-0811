@@ -51,17 +51,15 @@ export const realEstateAgentSchema = {
   "@context": "https://schema.org",
   "@type": "RealEstateAgent",
   "name": "Taylor Sherwood",
-  "description": "Austin luxury real estate advisor specializing in luxury homes, land development, commercial real estate, and investment property throughout Austin and the Texas Hill Country.",
+  "description": "Echelon Property Group is an Austin Texas real estate brokerage specializing in luxury homes, residential real estate, and land development opportunities across Austin's most desirable neighborhoods.",
   "url": "https://www.echelonpropertygroup.com",
   "telephone": "+1-512-661-3843",
   "email": "taylor@echelonpropertygroup.com",
   "image": "https://www.echelonpropertygroup.com/lovable-uploads/taylor-headshot-widget.jpg",
   "serviceType": [
     "Luxury Real Estate",
-    "Land Brokerage",
-    "Commercial Real Estate",
-    "Investment Property",
-    "Off-Market Homes",
+    "Residential Real Estate",
+    "Land Development",
     "Buyer Representation",
     "Seller Representation"
   ],
@@ -76,10 +74,13 @@ export const realEstateAgentSchema = {
   "areaServed": [
     { "@type": "City", "name": "Austin", "containedInPlace": { "@type": "State", "name": "Texas" } },
     { "@type": "Place", "name": "Westlake Hills, Texas" },
-    { "@type": "Place", "name": "Barton Creek, Austin" },
-    { "@type": "Place", "name": "Lake Austin" },
     { "@type": "Place", "name": "Tarrytown, Austin" },
-    { "@type": "Place", "name": "Texas Hill Country" }
+    { "@type": "Place", "name": "Spanish Oaks, Austin" },
+    { "@type": "Place", "name": "Barton Creek, Austin" },
+    { "@type": "Place", "name": "Northwest Hills, Austin" },
+    { "@type": "Place", "name": "Rollingwood, Texas" },
+    { "@type": "Place", "name": "Lake Austin" },
+    { "@type": "Place", "name": "Lake Travis" }
   ],
   "priceRange": "$$$",
   "openingHours": "Mo-Fr 09:00-18:00",

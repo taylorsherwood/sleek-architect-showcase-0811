@@ -72,20 +72,20 @@ const Testimonials = () => {
                 }}
               >
                 {/* Quote icon */}
-                <div className="mb-8">
+                <div className="mb-5">
                   <div
-                    className="w-12 h-12 rounded-full flex items-center justify-center"
+                    className="w-10 h-10 rounded-full flex items-center justify-center"
                     style={{
                       background:
                         "linear-gradient(135deg, hsl(42 37% 57% / 0.12), hsl(42 37% 57% / 0.06))",
                     }}
                   >
-                    <Quote className="w-5 h-5 text-gold" />
+                    <Quote className="w-4 h-4 text-gold" />
                   </div>
                 </div>
 
                 {/* Quote text */}
-                <p className="text-foreground text-lg md:text-xl leading-[1.8] font-light italic mb-10 flex-1">
+                <p className="text-foreground text-base md:text-lg leading-[1.75] font-light italic mb-7 flex-1">
                   "{t.quote}"
                 </p>
 

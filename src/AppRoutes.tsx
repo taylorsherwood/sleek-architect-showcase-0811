@@ -32,6 +32,7 @@ const LandForSaleAustin = lazy(() => import("@/pages/LandForSaleAustin"));
 const SearchPage = lazy(() => import("@/pages/Search"));
 const LandPage = lazy(() => import("@/pages/Land"));
 const PastTransactions = lazy(() => import("@/pages/PastTransactions"));
+const SEOCommunityPage = lazy(() => import("@/pages/SEOCommunityPage"));
 const connectImport = () => import("@/pages/Connect");
 const Connect = lazy(connectImport);
 const NotFound = lazy(() => import("@/pages/NotFound"));

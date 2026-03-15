@@ -33,20 +33,20 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="py-28 bg-secondary">
+    <section className="py-16 bg-secondary">
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
-          <div className="text-center mb-20">
-            <p className="text-minimal text-gold mb-4 font-extrabold">
+          <div className="text-center mb-12">
+            <p className="text-minimal text-gold mb-3 font-extrabold">
               CLIENT EXPERIENCES
             </p>
-            <h2 className="text-4xl md:text-6xl font-display font-light text-architectural mb-6">
+            <h2 className="text-3xl md:text-5xl font-display font-light text-architectural mb-4">
               Trusted by Buyers, Sellers, and
               <br className="hidden md:block" />
               <span className="italic"> Investors</span> Across Austin
             </h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto font-light leading-relaxed">
+            <p className="text-muted-foreground text-base max-w-2xl mx-auto font-light leading-relaxed">
               Real experiences from clients represented across Austin's most
               competitive luxury neighborhoods.
             </p>

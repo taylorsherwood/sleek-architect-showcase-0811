@@ -149,13 +149,13 @@ FEATURED LISTINGS</p>
                         </span>
                       </div>
 
-                      {/* Price overlay */}
-                      <div className="absolute bottom-0 left-0 right-0 p-5">
-                        <p className="text-2xl font-display font-light text-white mb-0.5">
+                      {/* Price & address on image */}
+                      <div className="absolute bottom-0 left-0 right-0 p-6" style={{ textShadow: '0 1px 3px rgba(0,0,0,0.4)' }}>
+                        <p className="text-2xl font-display font-light text-white mb-1 tracking-wide">
                           {listing.price}
                         </p>
-                        <p className="text-white/70 text-sm">
-                          {listing.location}
+                        <p className="text-white/75 text-sm font-light">
+                          {listing.address} · {listing.location}
                         </p>
                       </div>
 
@@ -169,12 +169,9 @@ FEATURED LISTINGS</p>
                       }
                     </div>
 
-                    {/* Card details below image */}
-                    <div className="mt-7 px-1">
-                      <h3 className="text-lg font-display font-medium mb-3 leading-relaxed group-hover:text-muted-foreground transition-colors duration-300">
-                        {listing.address}
-                      </h3>
-                      <div className="flex gap-10 text-sm text-muted-foreground pt-4 mt-4 pb-2 border-t border-border/30">
+                    {/* Specs row below image */}
+                    <div className="mt-5 px-1">
+                      <div className="flex gap-10 text-sm text-muted-foreground py-3">
                         <span>{listing.beds} Beds</span>
                         <span>{listing.baths} Baths</span>
                         <span>{listing.sqft} Sq Ft</span>

@@ -33,31 +33,31 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="py-28 bg-secondary">
+    <section className="py-16 bg-secondary">
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
-          <div className="text-center mb-20">
-            <p className="text-minimal text-gold mb-4 font-extrabold">
+          <div className="text-center mb-12">
+            <p className="text-minimal text-gold mb-3 font-extrabold">
               CLIENT EXPERIENCES
             </p>
-            <h2 className="text-4xl md:text-6xl font-display font-light text-architectural mb-6">
+            <h2 className="text-3xl md:text-5xl font-display font-light text-architectural mb-4">
               Trusted by Buyers, Sellers, and
               <br className="hidden md:block" />
               <span className="italic"> Investors</span> Across Austin
             </h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto font-light leading-relaxed">
+            <p className="text-muted-foreground text-base max-w-2xl mx-auto font-light leading-relaxed">
               Real experiences from clients represented across Austin's most
               competitive luxury neighborhoods.
             </p>
           </div>
 
           {/* Testimonial Grid */}
-          <div className="grid md:grid-cols-2 gap-8 lg:gap-10">
+          <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
             {testimonials.map((t, i) => (
               <div
                 key={i}
-                className="group relative bg-background rounded-xl p-10 md:p-12 flex flex-col justify-between transition-all duration-500 hover:-translate-y-1"
+                className="group relative bg-background rounded-xl p-7 md:p-8 flex flex-col justify-between transition-all duration-500 hover:-translate-y-1"
                 style={{
                   boxShadow:
                     "0 4px 24px hsl(220 20% 10% / 0.06), 0 1px 4px hsl(220 20% 10% / 0.04)",
@@ -72,26 +72,26 @@ const Testimonials = () => {
                 }}
               >
                 {/* Quote icon */}
-                <div className="mb-8">
+                <div className="mb-5">
                   <div
-                    className="w-12 h-12 rounded-full flex items-center justify-center"
+                    className="w-10 h-10 rounded-full flex items-center justify-center"
                     style={{
                       background:
                         "linear-gradient(135deg, hsl(42 37% 57% / 0.12), hsl(42 37% 57% / 0.06))",
                     }}
                   >
-                    <Quote className="w-5 h-5 text-gold" />
+                    <Quote className="w-4 h-4 text-gold" />
                   </div>
                 </div>
 
                 {/* Quote text */}
-                <p className="text-foreground text-lg md:text-xl leading-[1.8] font-light italic mb-10 flex-1">
+                <p className="text-foreground text-base md:text-lg leading-[1.75] font-light italic mb-7 flex-1">
                   "{t.quote}"
                 </p>
 
                 {/* Attribution */}
-                <div className="border-t border-border/60 pt-6">
-                  <p className="font-display text-xl text-foreground tracking-tight">
+                <div className="border-t border-border/60 pt-4">
+                  <p className="font-display text-lg text-foreground tracking-tight">
                     {t.name}
                   </p>
                   <p className="text-minimal text-gold mt-2">{t.type}</p>

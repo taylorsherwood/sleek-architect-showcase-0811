@@ -95,12 +95,12 @@ FEATURED LISTINGS</p>
                 if (listing.isOffMarketCard) {
                   return (
                     <Link key={index} to={listing.link} className="group block">
-                      <div className="relative overflow-hidden rounded-lg aspect-[4/3] bg-gradient-to-br from-primary via-primary to-primary/80 flex flex-col items-center justify-center transition-colors duration-500 group-hover:from-gold group-hover:via-gold group-hover:to-gold/80">
+                      <div className="relative overflow-hidden rounded-lg aspect-[4/3] bg-gradient-to-br from-primary via-primary to-primary/80 flex flex-col items-center justify-center transition-all duration-300 ease-out group-hover:from-gold group-hover:via-gold group-hover:to-gold/80">
                         <img
                           src={echelonLogo}
                           alt="Echelon Property Group"
                           title="Echelon Property Group — View exclusive listings"
-                          className="w-1/2 h-auto object-contain group-hover:brightness-0 group-hover:invert"
+                          className="w-1/2 h-auto object-contain transition-all duration-300 ease-out group-hover:brightness-0 group-hover:invert"
                           loading="lazy" />
                       </div>
                       <div className="mt-7 px-1">
@@ -155,7 +155,7 @@ FEATURED LISTINGS</p>
                         <p className="text-2xl font-display font-light text-white mb-2 tracking-wide">
                           {listing.price}
                         </p>
-                        <p className="text-white/95 text-sm font-normal">
+                        <p className="text-white/95 text-sm font-normal whitespace-nowrap">
                           {listing.address} · {listing.location}
                         </p>
                       </div>

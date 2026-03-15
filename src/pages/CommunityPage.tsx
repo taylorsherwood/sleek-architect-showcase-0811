@@ -259,7 +259,7 @@ const CommunityPage = () => {
                 Frequently Asked Questions About {community.name}
               </h2>
               <div className="space-y-6">
-                {faqs.map((faq, i) => (
+                {allFaqs.map((faq, i) => (
                   <div key={i} className="border-b border-border pb-6">
                     <h3 className="text-lg font-medium text-foreground mb-2">{faq.question}</h3>
                     <p className="text-muted-foreground leading-relaxed">{faq.answer}</p>

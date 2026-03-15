@@ -67,6 +67,7 @@ const Index = () => {
       <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={localBusinessSchema} />
       <SchemaMarkup schema={taylorSherwoodSchema} />
+      <SchemaMarkup schema={websiteSchema} />
       <Navigation />
       <Hero />
 

@@ -191,7 +191,7 @@ FEATURED LISTINGS</p>
                 to="/off-market-luxury-homes-austin"
                 className="inline-block text-sm text-muted-foreground hover:text-foreground transition-colors duration-300">
                 
-                Searching for private market opportunities in Austin? Contact us
+                Searching for private market opportunities in Austin? Contact us to become an Echelon Insider
                 for discreet listings not publicly advertised.{" "}
                 <span className="underline">
                   Ask about off-market opportunities

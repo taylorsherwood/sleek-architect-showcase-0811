@@ -2,7 +2,6 @@ import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import heroFallback from "@/assets/hero-fallback.jpg";
 
-
 const FALLBACK_TIMEOUT = 4000;
 const RETRY_DELAY = 800;
 
@@ -11,11 +10,10 @@ const Hero = () => {
   const [videoReady, setVideoReady] = useState(false);
   const [videoSrc, setVideoSrc] = useState<string | null>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
-  
 
   // Lazy-load: set video src after initial render
   useEffect(() => {
-    const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
     if (motionQuery.matches) {
       setShowFallback(true);
       return;
@@ -35,9 +33,9 @@ const Hero = () => {
 
     video.muted = true;
     video.defaultMuted = true;
-    video.setAttribute('muted', '');
-    video.setAttribute('playsinline', '');
-    video.setAttribute('webkit-playsinline', '');
+    video.setAttribute("muted", "");
+    video.setAttribute("playsinline", "");
+    video.setAttribute("webkit-playsinline", "");
 
     const fallbackTimer = setTimeout(() => {
       if (!videoReady) setShowFallback(true);
@@ -55,12 +53,14 @@ const Hero = () => {
             video.defaultMuted = true;
             const retry = video.play();
             if (retry !== undefined) {
-              retry.then(() => {
-                setVideoReady(true);
-                setShowFallback(false);
-              }).catch(() => {
-                setShowFallback(true);
-              });
+              retry
+                .then(() => {
+                  setVideoReady(true);
+                  setShowFallback(false);
+                })
+                .catch(() => {
+                  setShowFallback(true);
+                });
             } else {
               setShowFallback(true);
             }
@@ -76,21 +76,20 @@ const Hero = () => {
     if (video.readyState >= 2) {
       attemptPlay();
     } else {
-      video.addEventListener('loadeddata', onReady);
+      video.addEventListener("loadeddata", onReady);
     }
 
-    video.addEventListener('error', () => setShowFallback(true));
+    video.addEventListener("error", () => setShowFallback(true));
 
     return () => {
       clearTimeout(fallbackTimer);
-      video.removeEventListener('loadeddata', onReady);
+      video.removeEventListener("loadeddata", onReady);
     };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [videoSrc]);
 
   return (
     <section className="relative h-screen flex items-center overflow-hidden bg-black">
-
       {/* Decorative background video */}
       <div
         aria-hidden="true"
@@ -124,20 +123,69 @@ const Hero = () => {
       )}
 
       {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/15" style={{ zIndex: 1 }} />
+      <div
+        className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/15"
+        style={{ zIndex: 1 }}
+      />
 
       {/* Content */}
-      <div className="relative container mx-auto px-6 pt-16 md:pt-20" style={{ zIndex: 2 }}>
+      <div
+        className="relative container mx-auto px-6 pt-16 md:pt-20"
+        style={{ zIndex: 2 }}
+      >
         <div className="max-w-3xl">
-          <p className="text-minimal text-warm-cream/80 mb-6 reveal" style={{ textShadow: '0 1px 6px rgba(0,0,0,0.4)' }}>AUSTIN REAL ESTATE EXPERTS</p>
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-light text-warm-cream text-architectural mb-8 reveal" style={{ textShadow: '0 2px 20px rgba(0,0,0,0.5), 0 1px 4px rgba(0,0,0,0.4)' }}>
+          <p
+            className="text-minimal text-warm-cream/70 mb-3 reveal"
+            style={{ textShadow: "0 1px 6px rgba(0,0,0,0.4)" }}
+          >
+            STRATEGIC AUSTIN REAL ESTATE ADVISORY
+          </p>
+          <h1
+            className="text-5xl md:text-7xl lg:text-8xl font-display font-light text-warm-cream text-architectural mb-8 reveal"
+            style={{
+              textShadow:
+                "0 2px 20px rgba(0,0,0,0.5), 0 1px 4px rgba(0,0,0,0.4)",
+            }}
+          >
             Driven By Data,
             <br />
             <span className="italic">Proven by Results</span>
           </h1>
-          <p className="text-lg md:text-xl text-warm-cream/85 font-light max-w-xl mb-10 reveal-delayed" style={{ fontFamily: '"Roboto", sans-serif', textShadow: '0 1px 8px rgba(0,0,0,0.4)' }}>
-            Austin luxury homes, investment properties, land opportunities, and select commercial real estate — expertly guided by Echelon Property Group across Austin's most coveted neighborhoods.
+
+          {/* Service pillars */}
+          <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mb-4 reveal-delayed">
+            {["Luxury Homes", "Investment Property", "Development Land"].map(
+              (item, i) => (
+                <span key={item} className="flex items-center gap-3">
+                  <span
+                    className="text-sm md:text-base text-warm-cream/80 font-light"
+                    style={{
+                      fontFamily: '"Raleway", sans-serif',
+                      textShadow: "0 1px 6px rgba(0,0,0,0.3)",
+                      letterSpacing: "0.05em",
+                    }}
+                  >
+                    {item}
+                  </span>
+                  {i < 2 && (
+                    <span className="text-gold/50 text-sm">•</span>
+                  )}
+                </span>
+              ),
+            )}
+          </div>
+
+          <p
+            className="text-base md:text-lg text-warm-cream/70 font-light max-w-xl mb-10 reveal-delayed leading-relaxed"
+            style={{
+              fontFamily: '"Raleway", sans-serif',
+              textShadow: "0 1px 8px rgba(0,0,0,0.4)",
+            }}
+          >
+            Data-driven strategy and discreet representation across Austin's
+            most sought-after neighborhoods.
           </p>
+
           <div className="flex flex-col sm:flex-row gap-4 reveal-delayed-2">
             <Link
               to="/contact"
@@ -154,7 +202,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-
     </section>
   );
 };

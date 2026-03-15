@@ -144,7 +144,7 @@ FEATURED LISTINGS</p>
                       <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/5 to-transparent transition-all duration-500 ease-out group-hover:from-black/60 group-hover:via-black/10" />
 
                       {/* View Property CTA */}
-                      <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200 ease-out">
                         <span className="text-minimal text-white border border-gold/40 px-8 py-3 rounded-full backdrop-blur-md bg-white/10 tracking-[0.15em]">
                           View Property
                         </span>

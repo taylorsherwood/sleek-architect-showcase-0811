@@ -22,6 +22,7 @@ const AustinLuxuryHomes = () => {
         title="Austin Luxury Homes for Sale | Echelon Property Group"
         description="Browse luxury homes for sale in Austin, TX. Estate properties, waterfront homes, and premium residences in Westlake Hills, Barton Creek, Lake Austin, Tarrytown, and more."
       />
+      <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createFAQSchema(faqs)} />
       <Navigation />
 

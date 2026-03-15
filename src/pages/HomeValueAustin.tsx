@@ -95,6 +95,7 @@ const HomeValueAustin = () => {
         title="Free Austin Home Valuation | Echelon Property Group"
         description="Request a free, confidential home valuation from Echelon Property Group. Find out what your Austin home is worth using local market data and luxury real estate expertise."
       />
+      <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createFAQSchema(faqs)} />
       <Navigation />
 

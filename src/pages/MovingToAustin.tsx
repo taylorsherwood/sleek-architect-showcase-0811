@@ -21,6 +21,7 @@ const MovingToAustin = () => {
         title="Moving to Austin Texas Guide | Echelon Property Group"
         description="Everything you need to know about moving to Austin, Texas. Cost of living, best neighborhoods, schools, lifestyle, and luxury real estate guide for relocating buyers."
       />
+      <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createFAQSchema(faqs)} />
       <Navigation />
 

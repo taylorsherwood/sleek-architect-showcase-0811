@@ -54,6 +54,7 @@ const AustinCommercialRealEstate = () => {
         title="Austin Commercial Real Estate | Echelon Property Group"
         description="Austin commercial real estate brokerage: tenant representation, investment acquisitions, development land, and office opportunities. Expert advisory from Echelon."
       />
+      <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createFAQSchema(faqs)} />
       <Navigation />
 

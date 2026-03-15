@@ -33,6 +33,7 @@ const CommercialInvestment = () => {
         title="Austin Commercial Investment | Echelon Property Group"
         description="Austin commercial and investment real estate: multifamily, retail, office, land, and income-producing properties. Expert advisory from Echelon Property Group."
       />
+      <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createFAQSchema(faqs)} />
       <Navigation />
 

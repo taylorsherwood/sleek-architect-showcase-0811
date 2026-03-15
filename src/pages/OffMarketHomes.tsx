@@ -114,6 +114,7 @@ const OffMarketHomes = () => {
         title="Off-Market Luxury Homes Austin | Echelon Property Group"
         description="Access exclusive off-market luxury homes in Austin, TX. Private listings in Westlake Hills, Barton Creek, Lake Austin, and Tarrytown. Get insider access to properties not on the MLS."
       />
+      <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createFAQSchema(faqs)} />
       <Navigation />
 

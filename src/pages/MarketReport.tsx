@@ -21,6 +21,7 @@ const MarketReport = () => {
         title="Austin Luxury Market Report | Echelon Property Group"
         description="Expert analysis of Austin's luxury real estate market. Current trends, price data, neighborhood forecasts, and investment outlook from Echelon Property Group."
       />
+      <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createFAQSchema(faqs)} />
       <Navigation />
 

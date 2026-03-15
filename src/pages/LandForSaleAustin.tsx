@@ -21,6 +21,7 @@ const LandForSaleAustin = () => {
         title="Land for Sale in Austin TX | Echelon Property Group"
         description="Land for sale in Austin, Texas. Residential lots, development parcels, ranch land, and Hill Country acreage. Expert land advisory from Taylor Sherwood and Echelon Property Group."
       />
+      <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createFAQSchema(faqs)} />
       <Navigation />
 

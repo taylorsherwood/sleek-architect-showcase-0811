@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Instagram } from "lucide-react";
+import linkedinIcon from "@/assets/linkedin-icon-white.png";
 
 const Footer = () => {
   return (
@@ -48,6 +49,10 @@ const Footer = () => {
                 <a href="https://www.instagram.com/theinvestorbroker" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 hover:text-primary-foreground transition-colors md:justify-end">
                   <Instagram className="w-4 h-4" />
                   @TheInvestorBroker
+                </a>
+                <a href="https://www.linkedin.com/in/taylorsherwood/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 hover:text-primary-foreground transition-colors md:justify-end">
+                  <img src={linkedinIcon} alt="LinkedIn" className="w-4 h-4" />
+                  Taylor Sherwood
                 </a>
               </div>
             </div>

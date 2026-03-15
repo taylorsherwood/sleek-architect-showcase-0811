@@ -129,7 +129,7 @@ FEATURED LISTINGS</p>
                   <Wrapper
                     key={index}
                     {...wrapperProps}
-                    className="group block transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-15px_hsl(220_20%_10%/0.15)]">
+                    className="group block">
                     
                     {/* Image with overlay details */}
                     <div className="relative overflow-hidden rounded-lg">

@@ -9,34 +9,37 @@ prefix = "",
 suffix = "") =>
 {
   const [count, setCount] = useState(0);
-  const [started, setStarted] = useState(false);
+  const [visible, setVisible] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting && !started) {
-          setStarted(true);
-        }
+        setVisible(entry.isIntersecting);
       },
       { threshold: 0.3 }
     );
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
-  }, [started]);
+  }, []);
 
   useEffect(() => {
-    if (!started) return;
+    if (!visible) {
+      setCount(0);
+      return;
+    }
     const startTime = performance.now();
+    let raf: number;
     const animate = (now: number) => {
       const elapsed = now - startTime;
       const progress = Math.min(elapsed / duration, 1);
       const eased = 1 - Math.pow(1 - progress, 3);
       setCount(Math.round(eased * end));
-      if (progress < 1) requestAnimationFrame(animate);
+      if (progress < 1) raf = requestAnimationFrame(animate);
     };
-    requestAnimationFrame(animate);
-  }, [started, end, duration]);
+    raf = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(raf);
+  }, [visible, end, duration]);
 
   const display = `${prefix}${count}${suffix}`;
   return { ref, display };

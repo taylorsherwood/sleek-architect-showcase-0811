@@ -141,7 +141,7 @@ const Hero = () => {
         style={{ zIndex: 2 }}>
         
         <div
-          className="max-w-2xl relative"
+          className="max-w-xl relative"
           style={{
             filter: "drop-shadow(0 0 80px rgba(0,0,0,0.4))"
           }}>

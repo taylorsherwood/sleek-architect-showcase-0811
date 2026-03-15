@@ -4,43 +4,43 @@ import listing3 from "@/assets/listing-3.jpg";
 import echelonLogo from "@/assets/echelon-logo-gold-square.png";
 
 const listings = [
-  {
-    image: "/lovable-uploads/0fc79a0b-1fde-439f-bb08-6062e50770b7.jpg",
-    address: "2300 Barton Creek Boulevard #15",
-    location: "Barton Creek, Austin",
-    price: "$3,750,000",
-    beds: 4,
-    baths: 4,
-    sqft: "4,147",
-    link: "https://www.villagovernorshill.com",
-    badgeLabel: "Private Listing",
-    isOffMarketCard: false,
-  },
-  {
-    image: "",
-    address: "Access Off-Market Opportunities",
-    location: "",
-    price: "",
-    beds: 0,
-    baths: 0,
-    sqft: "",
-    link: "/off-market-luxury-homes-austin",
-    badgeLabel: "",
-    isOffMarketCard: true,
-  },
-  {
-    image: listing3,
-    address: "Ranch Estate on 42 Acres",
-    location: "Texas Hill Country",
-    price: "$5M+ Hill Country Estate",
-    beds: 4,
-    baths: 5,
-    sqft: "5,800",
-    link: "#",
-    badgeLabel: "Private Market Opportunity",
-    isOffMarketCard: false,
-  },
-];
+{
+  image: "/lovable-uploads/0fc79a0b-1fde-439f-bb08-6062e50770b7.jpg",
+  address: "2300 Barton Creek Boulevard #15",
+  location: "Barton Creek, Austin",
+  price: "$3,750,000",
+  beds: 4,
+  baths: 4,
+  sqft: "4,147",
+  link: "https://www.villagovernorshill.com",
+  badgeLabel: "Private Listing",
+  isOffMarketCard: false
+},
+{
+  image: "",
+  address: "Access Off-Market Opportunities",
+  location: "",
+  price: "",
+  beds: 0,
+  baths: 0,
+  sqft: "",
+  link: "/off-market-luxury-homes-austin",
+  badgeLabel: "",
+  isOffMarketCard: true
+},
+{
+  image: listing3,
+  address: "Ranch Estate on 42 Acres",
+  location: "Texas Hill Country",
+  price: "$5M+ Hill Country Estate",
+  beds: 4,
+  baths: 5,
+  sqft: "5,800",
+  link: "#",
+  badgeLabel: "Private Market Opportunity",
+  isOffMarketCard: false
+}];
+
 
 const FeaturedListings = () => {
   const widgetRef = useRef<HTMLDivElement>(null);
@@ -71,8 +71,10 @@ const FeaturedListings = () => {
             <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-16 -mt-8">
               <div>
                 <p className="text-minimal text-gold mb-4 font-extrabold">
-                  FEATURED LISTINGS
-                </p>
+
+
+
+FEATURED LISTINGS</p>
                 <h2 className="text-4xl md:text-5xl font-display font-light text-architectural">
                   Featured Austin Luxury Properties
                 </h2>
@@ -81,10 +83,8 @@ const FeaturedListings = () => {
                   Austin, including select private and off-market opportunities.
                 </p>
               </div>
-              <Link
-                to="/austin-luxury-homes-for-sale"
-                className="mt-6 md:mt-0 text-minimal text-muted-foreground hover:text-foreground transition-colors duration-300 relative group shrink-0"
-              >
+              <Link to="/austin-luxury-homes-for-sale" className="mt-6 md:mt-0 text-minimal text-muted-foreground hover:text-foreground transition-colors duration-300 relative group shrink-0">
+                
                 EXPLORE AUSTIN LUXURY HOMES
                 <span className="absolute bottom-0 left-0 w-full h-px bg-foreground scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
               </Link>
@@ -101,8 +101,8 @@ const FeaturedListings = () => {
                           alt="Echelon Property Group"
                           title="Echelon Property Group — View exclusive listings"
                           className="w-3/5 h-auto object-contain transition-all duration-500 group-hover:brightness-0 group-hover:invert"
-                          loading="lazy"
-                        />
+                          loading="lazy" />
+                        
                       </div>
                       <div className="mt-5">
                         <h3 className="text-lg font-display font-medium mb-1 group-hover:text-muted-foreground transition-colors duration-300">
@@ -112,25 +112,25 @@ const FeaturedListings = () => {
                           Exclusive private listings →
                         </p>
                       </div>
-                    </Link>
-                  );
+                    </Link>);
+
                 }
 
                 const Wrapper = listing.link.startsWith("http") ? "a" : "div";
-                const wrapperProps = listing.link.startsWith("http")
-                  ? {
-                      href: listing.link,
-                      target: "_blank" as const,
-                      rel: "noopener noreferrer",
-                    }
-                  : {};
+                const wrapperProps = listing.link.startsWith("http") ?
+                {
+                  href: listing.link,
+                  target: "_blank" as const,
+                  rel: "noopener noreferrer"
+                } :
+                {};
 
                 return (
                   <Wrapper
                     key={index}
                     {...wrapperProps}
-                    className="group block transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-15px_hsl(220_20%_10%/0.15)]"
-                  >
+                    className="group block transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-15px_hsl(220_20%_10%/0.15)]">
+                    
                     {/* Image with overlay details */}
                     <div className="relative overflow-hidden rounded-lg">
                       <img
@@ -138,8 +138,8 @@ const FeaturedListings = () => {
                         alt={listing.address}
                         title={`${listing.address} — ${listing.price}`}
                         className="w-full aspect-[4/3] object-cover transition-transform duration-500 ease-out group-hover:scale-105"
-                        loading="lazy"
-                      />
+                        loading="lazy" />
+                      
                       {/* Gradient overlay */}
                       <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/15 to-transparent transition-opacity duration-300 group-hover:from-black/75" />
 
@@ -161,13 +161,13 @@ const FeaturedListings = () => {
                       </div>
 
                       {/* Badge */}
-                      {listing.badgeLabel && (
-                        <div className="absolute top-4 left-4 bg-background/90 backdrop-blur-sm px-3 py-1.5 rounded-sm">
+                      {listing.badgeLabel &&
+                      <div className="absolute top-4 left-4 bg-background/90 backdrop-blur-sm px-3 py-1.5 rounded-sm">
                           <span className="text-[10px] tracking-widest uppercase text-muted-foreground font-medium">
                             {listing.badgeLabel}
                           </span>
                         </div>
-                      )}
+                      }
                     </div>
 
                     {/* Card details below image */}
@@ -181,16 +181,16 @@ const FeaturedListings = () => {
                         <span>{listing.sqft} Sq Ft</span>
                       </div>
                     </div>
-                  </Wrapper>
-                );
+                  </Wrapper>);
+
               })}
             </div>
 
             <div className="mt-12 mb-8 text-center">
               <Link
                 to="/off-market-luxury-homes-austin"
-                className="inline-block text-sm text-muted-foreground hover:text-foreground transition-colors duration-300"
-              >
+                className="inline-block text-sm text-muted-foreground hover:text-foreground transition-colors duration-300">
+                
                 Searching for private market opportunities in Austin? Contact us
                 for discreet listings not publicly advertised.{" "}
                 <span className="underline">
@@ -216,16 +216,16 @@ const FeaturedListings = () => {
             <div className="mt-12 text-center">
               <Link
                 to="/past-transactions"
-                className="inline-block px-8 py-4 border border-border text-minimal text-muted-foreground hover:text-primary-foreground hover:bg-gold hover:border-gold transition-all duration-300"
-              >
+                className="inline-block px-8 py-4 border border-border text-minimal text-muted-foreground hover:text-primary-foreground hover:bg-gold hover:border-gold transition-all duration-300">
+                
                 SEE PAST TRANSACTIONS →
               </Link>
             </div>
           </div>
         </div>
       </section>
-    </>
-  );
+    </>);
+
 };
 
 export default FeaturedListings;

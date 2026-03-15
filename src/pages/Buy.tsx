@@ -299,6 +299,13 @@ const Buy = () => {
         description="Expert buyer representation for Austin luxury homes. Off-market access, concierge service, and strategic guidance from Taylor Sherwood — top Austin luxury real estate agent."
         canonical="https://www.echelonpropertygroup.com/buy" />
       <SchemaMarkup schema={realEstateAgentSchema} />
+      <SchemaMarkup schema={createFAQSchema([
+        { question: "What is it like buying a home in Austin Texas?", answer: "Austin offers a dynamic real estate market with diverse neighborhoods ranging from waterfront estates on Lake Austin to walkable urban homes in Tarrytown. Buyers benefit from no state income tax, a thriving tech economy, and exceptional lifestyle amenities." },
+        { question: "What is the average home price in Austin?", answer: "Austin's median home price varies by neighborhood. Entry-level luxury begins around $1 million, with premium neighborhoods like Westlake Hills, Barton Creek, and Lake Austin ranging from $1.5M to $25M+." },
+        { question: "Are there luxury homes available in Austin?", answer: "Yes. Austin features some of Texas's finest luxury properties including Hill Country estates, waterfront mansions, contemporary masterpieces, and gated community homes across Westlake Hills, Barton Creek, Lake Austin, and Spanish Oaks." },
+        { question: "Is Austin a good place to invest in real estate?", answer: "Austin consistently ranks among the top U.S. metros for real estate investment, driven by tech-sector growth, population in-migration, no state income tax, and limited premium inventory in supply-constrained neighborhoods." },
+        { question: "How do I find off-market homes for sale in Austin?", answer: "Working with an experienced luxury agent is essential. Echelon Property Group maintains access to private and whisper listings across Austin's most prestigious neighborhoods through our brokerage network and direct relationships." },
+      ])} />
       <Navigation />
 
       {/* ── Hero ── */}

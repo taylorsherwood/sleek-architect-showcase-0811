@@ -418,6 +418,7 @@ const Sell = () => {
       </section>
 
 
+      <Testimonials />
       <FeaturedListings />
 
       {/* ── Home Valuation ── */}

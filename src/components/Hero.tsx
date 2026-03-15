@@ -220,7 +220,7 @@ const Hero = () => {
                 fontSize: "0.65rem",
                 letterSpacing: "0.22em",
                 textTransform: "uppercase",
-                fontWeight: 600
+                fontWeight: 700
               }}>
               Explore Listings
             </Link>

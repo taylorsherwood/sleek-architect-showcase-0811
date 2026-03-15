@@ -213,7 +213,7 @@ const Hero = () => {
 
           <div className="flex flex-col sm:flex-row gap-5 reveal-delayed-2">
             <Link
-              to="/contact"
+              to="/listings"
               className="hero-cta-btn inline-block bg-warm-cream text-foreground px-9 py-4 text-center transition-all duration-200 ease-out hover:bg-gold hover:text-primary-foreground"
               style={{
                 fontFamily: '"Raleway", sans-serif',
@@ -222,11 +222,10 @@ const Hero = () => {
                 textTransform: "uppercase",
                 fontWeight: 600
               }}>
-              
-              Schedule a Consultation
+              Explore Listings
             </Link>
             <Link
-              to="/listings"
+              to="/contact"
               className="hero-cta-btn inline-block border border-warm-cream/40 text-warm-cream px-9 py-4 text-center transition-all duration-200 ease-out hover:bg-warm-cream/10 hover:border-warm-cream/60"
               style={{
                 fontFamily: '"Raleway", sans-serif',
@@ -235,8 +234,7 @@ const Hero = () => {
                 textTransform: "uppercase",
                 fontWeight: 500
               }}>
-              
-              View Listings
+              Schedule a Consultation
             </Link>
           </div>
         </div>

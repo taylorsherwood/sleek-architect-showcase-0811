@@ -389,7 +389,7 @@ const CommercialInvestment = () => {
             </div>
 
             {/* FAQ */}
-            <div className="mt-20">
+            <div className="mt-10">
               <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-8">
                 Frequently Asked Questions
               </h2>

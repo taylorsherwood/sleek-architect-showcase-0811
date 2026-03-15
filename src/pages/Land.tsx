@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createFAQSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
+import AboutBlock from "@/components/AboutBlock";
 import { MapPin } from "lucide-react";
 
 const Footer = lazy(() => import("@/components/Footer"));
@@ -353,6 +354,7 @@ const LandPage = () => {
         </div>
       </section>
 
+      <AboutBlock />
       <Suspense fallback={<div className="min-h-[100px]" />}>
         <Footer />
       </Suspense>

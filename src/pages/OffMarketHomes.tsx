@@ -5,6 +5,7 @@ import austinLuxuryNetwork from "@/assets/austin-luxury-network.jpg";
 import clubhouseCommission from "@/assets/clubhouse-commission.png";
 import topAgentNetwork from "@/assets/top-agent-network.webp";
 import Footer from "@/components/Footer";
+import AboutBlock from "@/components/AboutBlock";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createFAQSchema } from "@/components/SchemaMarkup";
 import { useToast } from "@/hooks/use-toast";
@@ -376,6 +377,7 @@ const OffMarketHomes = () => {
         </div>
       </article>
 
+      <AboutBlock />
       <Footer />
     </div>
   );

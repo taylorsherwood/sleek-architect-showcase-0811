@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import AboutBlock from "@/components/AboutBlock";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createFAQSchema } from "@/components/SchemaMarkup";
 
@@ -361,6 +362,7 @@ const AustinCommercialRealEstate = () => {
         </div>
       </article>
 
+      <AboutBlock />
       <Footer />
     </div>
   );

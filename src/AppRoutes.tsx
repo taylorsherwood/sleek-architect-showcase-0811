@@ -32,6 +32,7 @@ const LandForSaleAustin = lazy(() => import("@/pages/LandForSaleAustin"));
 const SearchPage = lazy(() => import("@/pages/Search"));
 const LandPage = lazy(() => import("@/pages/Land"));
 const PastTransactions = lazy(() => import("@/pages/PastTransactions"));
+const SEOCommunityPage = lazy(() => import("@/pages/SEOCommunityPage"));
 const connectImport = () => import("@/pages/Connect");
 const Connect = lazy(connectImport);
 const NotFound = lazy(() => import("@/pages/NotFound"));
@@ -78,6 +79,23 @@ const AppRoutes = () => {
           <Route path="/land" element={<LandPage />} />
           <Route path="/past-transactions" element={<PastTransactions />} />
           <Route path="/connect" element={<Connect />} />
+          <Route path="/westlake-hills-homes-for-sale" element={<SEOCommunityPage />} />
+          <Route path="/tarrytown-homes-for-sale" element={<SEOCommunityPage />} />
+          <Route path="/rollingwood-homes-for-sale" element={<SEOCommunityPage />} />
+          <Route path="/clarksville-homes-for-sale" element={<SEOCommunityPage />} />
+          <Route path="/barton-creek-homes-for-sale" element={<SEOCommunityPage />} />
+          <Route path="/lake-austin-waterfront-homes-for-sale" element={<SEOCommunityPage />} />
+          <Route path="/lake-travis-waterfront-homes-for-sale" element={<SEOCommunityPage />} />
+          <Route path="/mueller-homes-for-sale" element={<SEOCommunityPage />} />
+          <Route path="/zilker-homes-for-sale" element={<SEOCommunityPage />} />
+          <Route path="/hyde-park-homes-for-sale" element={<SEOCommunityPage />} />
+          <Route path="/pemberton-heights-homes-for-sale" element={<SEOCommunityPage />} />
+          <Route path="/dripping-springs-homes-for-sale" element={<SEOCommunityPage />} />
+          <Route path="/bee-cave-homes-for-sale" element={<SEOCommunityPage />} />
+          <Route path="/great-hills-homes-for-sale" element={<SEOCommunityPage />} />
+          <Route path="/balcones-park-homes-for-sale" element={<SEOCommunityPage />} />
+          <Route path="/rob-roy-homes-for-sale" element={<SEOCommunityPage />} />
+          <Route path="/steiner-ranch-homes-for-sale" element={<SEOCommunityPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>

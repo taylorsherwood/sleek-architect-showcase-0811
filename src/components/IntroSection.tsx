@@ -3,11 +3,11 @@ import { useEffect, useRef, useState } from "react";
 import { Award, Shield, Globe } from "lucide-react";
 
 const useCountUp = (
-  end: number,
-  duration = 2000,
-  prefix = "",
-  suffix = "",
-) => {
+end: number,
+duration = 2000,
+prefix = "",
+suffix = "") =>
+{
   const [count, setCount] = useState(0);
   const [started, setStarted] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
@@ -19,7 +19,7 @@ const useCountUp = (
           setStarted(true);
         }
       },
-      { threshold: 0.3 },
+      { threshold: 0.3 }
     );
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
@@ -43,19 +43,19 @@ const useCountUp = (
 };
 
 const credentials = [
-  {
-    icon: Award,
-    label: "Certified Luxury Home Marketing Specialist (CLHMS)",
-  },
-  {
-    icon: Globe,
-    label: "Member of the eXp Luxury Division",
-  },
-  {
-    icon: Shield,
-    label: "Brokered by eXp Realty",
-  },
-];
+{
+  icon: Award,
+  label: "Certified Luxury Home Marketing Specialist (CLHMS)"
+},
+{
+  icon: Globe,
+  label: "Member of the eXp Luxury Division"
+},
+{
+  icon: Shield,
+  label: "Brokered by eXp Realty"
+}];
+
 
 const IntroSection = () => {
   const stat1 = useCountUp(100, 3000, "$", "M+");
@@ -72,8 +72,8 @@ const IntroSection = () => {
               <p className="text-minimal text-gold mb-4 font-extrabold">
                 THE ECHELON DIFFERENCE
               </p>
-              <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-8">
-                Unmatched Expertise in Austin Real Estate by the Numbers
+              <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-8">Unmatched Expertise in Austin Real Estate: By the Numbers
+
               </h2>
               <div className="space-y-6 text-muted-foreground leading-relaxed">
                 <p className="whitespace-pre-line">
@@ -91,8 +91,8 @@ const IntroSection = () => {
               </div>
               <Link
                 to="/about"
-                className="inline-block mt-8 text-minimal text-foreground hover:text-muted-foreground transition-colors duration-300 relative group"
-              >
+                className="inline-block mt-8 text-minimal text-foreground hover:text-muted-foreground transition-colors duration-300 relative group">
+                
                 LEARN MORE ABOUT US
                 <span className="absolute bottom-0 left-0 w-full h-px bg-foreground group-hover:bg-muted-foreground transition-colors duration-300" />
               </Link>
@@ -138,22 +138,22 @@ const IntroSection = () => {
               {/* Credentials */}
               <div className="bg-secondary/60 border border-border/40 rounded-lg p-6">
                 <div className="space-y-4">
-                  {credentials.map((cred, i) => (
-                    <div key={i} className="flex items-center gap-3">
+                  {credentials.map((cred, i) =>
+                  <div key={i} className="flex items-center gap-3">
                       <cred.icon className="w-4 h-4 text-gold shrink-0" />
                       <p className="text-sm text-muted-foreground font-light">
                         {cred.label}
                       </p>
                     </div>
-                  ))}
+                  )}
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default IntroSection;

@@ -133,10 +133,10 @@ const IntroSection = () => {
               </div>
               <Link
                 to="/about"
-                className="inline-block mt-8 text-minimal text-foreground hover:text-muted-foreground transition-colors duration-300 relative group">
+                className="inline-block mt-8 text-minimal text-foreground hover:text-gold transition-colors duration-300 relative group">
                 
                 LEARN MORE ABOUT US
-                <span className="absolute bottom-0 left-0 w-0 h-px bg-foreground group-hover:w-full group-hover:bg-muted-foreground transition-all duration-300" />
+                <span className="absolute bottom-0 left-0 w-0 h-px bg-gold group-hover:w-full transition-all duration-300" />
               </Link>
             </div>
 

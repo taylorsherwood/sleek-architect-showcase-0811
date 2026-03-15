@@ -96,7 +96,7 @@ FEATURED LISTINGS</p>
                 if (listing.isOffMarketCard) {
                   return (
                     <Link key={index} to={listing.link} className="group block">
-                      <div className="relative overflow-hidden rounded-lg aspect-[4/3] bg-gradient-to-br from-primary via-primary to-primary/80 flex flex-col items-center justify-center transition-all duration-300 ease-out group-hover:from-gold group-hover:via-gold group-hover:to-gold/80">
+                      <div className="relative overflow-hidden rounded-lg aspect-[4/3] bg-gradient-to-br from-primary via-primary to-primary/80 flex flex-col items-center justify-center transition-all duration-700 ease-in-out group-hover:from-gold group-hover:via-gold group-hover:to-gold/80">
                         <img
                           src={echelonLogo}
                           alt="Echelon Property Group"

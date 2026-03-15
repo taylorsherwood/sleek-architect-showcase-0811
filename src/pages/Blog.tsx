@@ -4,6 +4,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import AboutBlock from "@/components/AboutBlock";
 import SEOHead from "@/components/SEOHead";
+import SchemaMarkup, { realEstateAgentSchema } from "@/components/SchemaMarkup";
 import { blogPosts } from "@/data/blogPosts";
 import { seoBlogPosts } from "@/data/seoBlogPosts";
 

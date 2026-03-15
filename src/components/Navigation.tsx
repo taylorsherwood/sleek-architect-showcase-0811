@@ -60,12 +60,13 @@ const Navigation = () => {
         }`}
       />
       <div className="relative container mx-auto px-6 h-full flex items-center justify-between">
-        <Link to="/" className="flex items-center shrink-0 overflow-visible">
+        <Link to="/" className="flex items-center shrink-0 overflow-visible" style={{ height: '100%' }}>
           <img
             src={logo}
             alt="Echelon Property Group"
             title="Echelon Property Group — Austin Luxury Real Estate"
-            className="h-32 md:h-40 lg:h-48 w-auto max-w-none border-0 shrink-0 -my-8"
+            className="w-auto max-w-none border-0 shrink-0 object-contain"
+            style={{ height: '160%', maxHeight: '160%' }}
           />
         </Link>
 

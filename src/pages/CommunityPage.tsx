@@ -1,6 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import AboutBlock from "@/components/AboutBlock";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createFAQSchema } from "@/components/SchemaMarkup";
 import { communityPages } from "@/data/communityData";

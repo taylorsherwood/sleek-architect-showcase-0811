@@ -54,7 +54,7 @@ const Footer = () => {
           </div>
 
 
-          <div className="border-t border-primary-foreground/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="border-t border-primary-foreground/10 pt-6 flex flex-col md:flex-row justify-between items-start gap-4">
             <div className="text-center md:text-left">
               <p className="text-primary-foreground/40 text-sm">
                 Brokered by eXp Realty | Austin Luxury Real Estate
@@ -68,17 +68,19 @@ const Footer = () => {
                 Information About Brokerage Services
               </a>
             </div>
-            <p className="text-primary-foreground/40 text-sm">
-              Copyright © {new Date().getFullYear()} Echelon Property Group | eXp Realty LLC
-            </p>
-            <a
-              href="https://expluxury.com/?tl=en"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary-foreground/30 text-xs hover:text-gold transition-colors duration-300"
-            >
-              Member of the eXp Luxury Division
-            </a>
+            <div className="text-center md:text-right">
+              <p className="text-primary-foreground/40 text-sm">
+                Copyright © {new Date().getFullYear()} Echelon Property Group | eXp Realty LLC
+              </p>
+              <a
+                href="https://expluxury.com/?tl=en"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary-foreground/40 text-xs hover:text-gold transition-colors duration-300"
+              >
+                Member of the eXp Luxury Division
+              </a>
+            </div>
           </div>
         </div>
       </div>

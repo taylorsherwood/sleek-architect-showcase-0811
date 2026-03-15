@@ -164,8 +164,7 @@ const Hero = () => {
             style={{
               fontSize: "clamp(2.6rem, 5.5vw, 5.5rem)",
               lineHeight: 1.15,
-              textShadow:
-              "0 2px 6px rgba(0,0,0,0.35), 0 1px 3px rgba(0,0,0,0.25)"
+              textShadow: "0px 3px 10px rgba(0,0,0,0.45), 0 1px 3px rgba(0,0,0,0.3)"
             }}>
             
             Driven By Data,

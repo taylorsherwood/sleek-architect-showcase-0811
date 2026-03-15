@@ -46,6 +46,7 @@ const Navigation = () => {
     { href: "/listings/commercial-investment-austin", label: "INVEST" },
     { href: "/communities", label: "COMMUNITIES" },
     { href: "/about", label: "ABOUT" },
+    { href: "/blog", label: "BLOG" },
   ];
 
   const isActive = (link: NavLink) =>

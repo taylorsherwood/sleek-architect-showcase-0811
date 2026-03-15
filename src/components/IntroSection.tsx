@@ -42,6 +42,41 @@ suffix = "") =>
   return { ref, display };
 };
 
+const useCountDown = (start: number, end: number, duration = 2000) => {
+  const [count, setCount] = useState(start);
+  const [started, setStarted] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !started) {
+          setStarted(true);
+        }
+      },
+      { threshold: 0.3 }
+    );
+    if (ref.current) observer.observe(ref.current);
+    return () => observer.disconnect();
+  }, [started]);
+
+  useEffect(() => {
+    if (!started) return;
+    const startTime = performance.now();
+    const animate = (now: number) => {
+      const elapsed = now - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      setCount(Math.round(start - eased * (start - end)));
+      if (progress < 1) requestAnimationFrame(animate);
+    };
+    requestAnimationFrame(animate);
+  }, [started, start, end, duration]);
+
+  const display = `Top ${count}%`;
+  return { ref, display };
+};
+
 const credentials = [
 {
   icon: Award,
@@ -61,7 +96,7 @@ const IntroSection = () => {
   const stat1 = useCountUp(100, 3000, "$", "M+");
   const stat2 = useCountUp(11, 2500, "", "+");
   const stat3 = useCountUp(200, 3000, "", "+");
-  const stat4 = useCountUp(1, 2000, "Top ", "%");
+  const stat4 = useCountDown(10, 1, 2000);
 
   return (
     <section className="pt-14 pb-12 bg-background">

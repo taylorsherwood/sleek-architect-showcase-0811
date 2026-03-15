@@ -86,8 +86,7 @@ const useCountDown = (start: number, end: number, duration = 2000) => {
 const credentials = [
 {
   icon: Award,
-  label: "Certified Luxury Home Marketing Specialist (CLHMS)",
-  href: "https://www.luxuryhomemarketing.com/real-estate-agents/earn_the_CLHMS_designation.html"
+  label: "Certified Luxury Home Marketing Specialist (CLHMS)"
 },
 {
   icon: Globe,

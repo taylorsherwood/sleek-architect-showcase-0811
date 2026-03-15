@@ -33,6 +33,7 @@ const SearchPage = lazy(() => import("@/pages/Search"));
 const LandPage = lazy(() => import("@/pages/Land"));
 const PastTransactions = lazy(() => import("@/pages/PastTransactions"));
 const SEOCommunityPage = lazy(() => import("@/pages/SEOCommunityPage"));
+const BestNeighborhoodsAustin = lazy(() => import("@/pages/BestNeighborhoodsAustin"));
 const connectImport = () => import("@/pages/Connect");
 const Connect = lazy(connectImport);
 const NotFound = lazy(() => import("@/pages/NotFound"));
@@ -79,6 +80,7 @@ const AppRoutes = () => {
           <Route path="/land" element={<LandPage />} />
           <Route path="/past-transactions" element={<PastTransactions />} />
           <Route path="/connect" element={<Connect />} />
+          <Route path="/best-neighborhoods-in-austin-texas" element={<BestNeighborhoodsAustin />} />
           <Route path="/westlake-hills-homes-for-sale" element={<SEOCommunityPage />} />
           <Route path="/tarrytown-homes-for-sale" element={<SEOCommunityPage />} />
           <Route path="/rollingwood-homes-for-sale" element={<SEOCommunityPage />} />

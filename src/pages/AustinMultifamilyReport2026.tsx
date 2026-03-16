@@ -207,11 +207,11 @@ const AustinMultifamilyReport2026 = () => {
       </section>
 
       {/* ════════ WHY THIS REPORT MATTERS ════════ */}
-      <section className="py-12 md:py-16">
+      <section className="py-10 md:py-12">
         <div className="container mx-auto px-6">
-          <div className="max-w-3xl mx-auto text-center">
-            <p className="text-minimal text-[hsl(var(--gold))] mb-3">MARKET CONTEXT</p>
-            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-5">
+          <div className="max-w-2xl mx-auto text-center">
+            <p className="text-minimal text-[hsl(var(--gold))] mb-2">MARKET CONTEXT</p>
+            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-4">
               Why Austin Investors Are Watching 2026 Closely
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">

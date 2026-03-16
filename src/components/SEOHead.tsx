@@ -9,6 +9,8 @@ interface SEOHeadProps {
   title: string;
   description?: string;
   canonical?: string;
+  ogTitle?: string;
+  ogDescription?: string;
 }
 
 const normalizePageTitle = (rawTitle: string) => {
@@ -22,28 +24,30 @@ const resolveCanonicalUrl = (pathname: string, canonical?: string) => {
   return `${SITE_URL}${canonical.startsWith("/") ? canonical : `/${canonical}`}`;
 };
 
-const SEOHead = ({ title, description, canonical }: SEOHeadProps) => {
+const SEOHead = ({ title, description, canonical, ogTitle, ogDescription }: SEOHeadProps) => {
   const { pathname } = useLocation();
   const pageTitle = normalizePageTitle(title);
   const seoTitle = `${pageTitle} | ${BRAND_NAME}`;
   const seoDescription = description || `Explore ${pageTitle} with ${BRAND_NAME}. View homes, market insights, and real estate opportunities in Austin Texas.`;
   const canonicalUrl = resolveCanonicalUrl(pathname, canonical);
+  const openGraphTitle = ogTitle || seoTitle;
+  const openGraphDescription = ogDescription || seoDescription;
 
   return (
     <Helmet prioritizeSeoTags>
       <title>{seoTitle}</title>
       <meta name="description" content={seoDescription} />
 
-      <meta property="og:title" content={seoTitle} />
-      <meta property="og:description" content={seoDescription} />
+      <meta property="og:title" content={openGraphTitle} />
+      <meta property="og:description" content={openGraphDescription} />
       <meta property="og:url" content={canonicalUrl} />
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content={BRAND_NAME} />
       <meta property="og:image" content={`${SITE_URL}/og-image.png`} />
 
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={seoTitle} />
-      <meta name="twitter:description" content={seoDescription} />
+      <meta name="twitter:title" content={openGraphTitle} />
+      <meta name="twitter:description" content={openGraphDescription} />
       <meta name="twitter:image" content={`${SITE_URL}/og-image.png`} />
 
       <link rel="canonical" href={canonicalUrl} />

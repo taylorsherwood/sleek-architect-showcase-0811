@@ -132,7 +132,7 @@ const BestLuxuryNeighborhoods = () => {
                 <div>
                   <h3 className="text-xl font-display font-medium mb-2">Investment Strength</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    All Austin luxury neighborhoods have demonstrated strong appreciation, with <Link to="/communities/lake-austin-waterfront" className="text-foreground underline hover:text-muted-foreground">Lake Austin waterfront</Link> and <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">Westlake Hills</Link> historically leading in long-term value growth due to permanent supply constraints.
+                    All Austin luxury neighborhoods have demonstrated strong appreciation, with <Link to="/communities/lake-austin" className="text-foreground underline hover:text-muted-foreground">Lake Austin waterfront</Link> and <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">Westlake Hills</Link> historically leading in long-term value growth due to permanent supply constraints.
                   </p>
                 </div>
               </div>

@@ -193,7 +193,7 @@ const MovingToAustin = () => {
                 </div>
                 <div className="border-l-2 border-border pl-6">
                   <h3 className="text-lg font-medium text-foreground mb-2">Prepare for Austin Summers</h3>
-                  <p className="text-muted-foreground">Austin summers are hot. Prioritize homes with pools, covered outdoor spaces, efficient HVAC systems, and proximity to water recreation like <Link to="/communities/lake-austin-waterfront" className="text-foreground underline hover:text-muted-foreground">Lake Austin</Link>.</p>
+                  <p className="text-muted-foreground">Austin summers are hot. Prioritize homes with pools, covered outdoor spaces, efficient HVAC systems, and proximity to water recreation like <Link to="/communities/lake-austin" className="text-foreground underline hover:text-muted-foreground">Lake Austin</Link>.</p>
                 </div>
               </div>
             </section>

@@ -53,14 +53,14 @@ const Hero = () => {
             video.defaultMuted = true;
             const retry = video.play();
             if (retry !== undefined) {
-              retry
-                .then(() => {
-                  setVideoReady(true);
-                  setShowFallback(false);
-                })
-                .catch(() => {
-                  setShowFallback(true);
-                });
+              retry.
+              then(() => {
+                setVideoReady(true);
+                setShowFallback(false);
+              }).
+              catch(() => {
+                setShowFallback(true);
+              });
             } else {
               setShowFallback(true);
             }
@@ -94,8 +94,8 @@ const Hero = () => {
       <div
         aria-hidden="true"
         className="absolute inset-0 pointer-events-none select-none overflow-hidden"
-        style={{ zIndex: 0 }}
-      >
+        style={{ zIndex: 0 }}>
+        
         <video
           ref={videoRef}
           autoPlay
@@ -105,24 +105,24 @@ const Hero = () => {
           preload="metadata"
           poster="/images/hero-poster.jpg"
           className={`hero-bg-video transition-opacity duration-700 ${
-            videoReady ? "opacity-100" : "opacity-0"
-          }`}
-          tabIndex={-1}
-        >
+          videoReady ? "opacity-100" : "opacity-0"}`
+          }
+          tabIndex={-1}>
+          
           {videoSrc && <source src={videoSrc} type="video/mp4" />}
         </video>
       </div>
 
       {/* Fallback image */}
-      {showFallback && !videoReady && (
-        <img
-          src={heroFallback}
-          alt="Austin skyline"
-          title="Austin Texas skyline — Echelon Property Group"
-          className="absolute inset-0 w-full h-full object-cover"
-          style={{ zIndex: 0 }}
-        />
-      )}
+      {showFallback && !videoReady &&
+      <img
+        src={heroFallback}
+        alt="Austin skyline"
+        title="Austin Texas skyline — Echelon Property Group"
+        className="absolute inset-0 w-full h-full object-cover"
+        style={{ zIndex: 0 }} />
+
+      }
 
       {/* Cinematic vignette gradient */}
       <div
@@ -133,22 +133,22 @@ const Hero = () => {
             linear-gradient(to right, rgba(0,0,0,0.58) 0%, rgba(0,0,0,0.42) 22%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0) 68%),
             linear-gradient(to top, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.08) 40%, transparent 70%),
             radial-gradient(ellipse at 15% 70%, rgba(0,0,0,0.25) 0%, transparent 55%)
-          `,
-        }}
-      />
+          `
+        }} />
+      
 
 
       {/* Content */}
       <div
         className="relative container mx-auto px-6 pt-24 md:pt-32 lg:pt-36"
-        style={{ zIndex: 2 }}
-      >
+        style={{ zIndex: 2 }}>
+        
         <div
           className="max-w-xl relative"
           style={{
-            filter: "drop-shadow(0 0 60px rgba(0,0,0,0.3))",
-          }}
-        >
+            filter: "drop-shadow(0 0 60px rgba(0,0,0,0.3))"
+          }}>
+          
           <p
             className="text-warm-cream/55 mb-6 reveal font-medium"
             style={{
@@ -156,9 +156,9 @@ const Hero = () => {
               fontSize: "0.65rem",
               letterSpacing: "0.38em",
               textTransform: "uppercase",
-              textShadow: "0 1px 6px rgba(0,0,0,0.4)",
-            }}
-          >
+              textShadow: "0 1px 6px rgba(0,0,0,0.4)"
+            }}>
+            
             STRATEGIC AUSTIN REAL ESTATE ADVISORY
           </p>
 
@@ -169,9 +169,9 @@ const Hero = () => {
               lineHeight: 1.08,
               letterSpacing: "-0.025em",
               textShadow:
-                "0px 2px 8px rgba(0,0,0,0.35), 0 1px 2px rgba(0,0,0,0.2)",
-            }}
-          >
+              "0px 2px 8px rgba(0,0,0,0.35), 0 1px 2px rgba(0,0,0,0.2)"
+            }}>
+            
             <span className="whitespace-nowrap">Driven By Data,</span>
             <br />
             <span className="italic whitespace-nowrap">Proven by Results</span>
@@ -180,37 +180,37 @@ const Hero = () => {
           {/* Service pillars */}
           <div className="flex flex-wrap items-center gap-x-5 gap-y-1 mb-5 reveal-delayed">
             {["Luxury Homes", "Private Investments", "Development Opportunities"].map(
-              (item, i) => (
-                <span key={item} className="flex items-center gap-5">
+              (item, i) =>
+              <span key={item} className="flex items-center gap-5">
                   <span
-                    className="text-warm-cream/85 font-light"
-                    style={{
-                      fontFamily: '"Raleway", sans-serif',
-                      fontSize: "0.8rem",
-                      letterSpacing: "0.12em",
-                      fontWeight: 400,
-                      textShadow: "0px 1px 6px rgba(0,0,0,0.35)",
-                    }}
-                  >
+                  className="text-warm-cream/85 font-medium"
+                  style={{
+                    fontFamily: '"Raleway", sans-serif',
+                    fontSize: "0.8rem",
+                    letterSpacing: "0.12em",
+                    fontWeight: 400,
+                    textShadow: "0px 1px 6px rgba(0,0,0,0.35)"
+                  }}>
+                  
                     {item}
                   </span>
-                  {i < 2 && (
-                    <span className="text-warm-cream/25 text-[6px]">•</span>
-                  )}
+                  {i < 2 &&
+                <span className="text-warm-cream/25 text-[6px]">•</span>
+                }
                 </span>
-              )
+
             )}
           </div>
 
           <p
-            className="text-warm-cream/60 max-w-lg mb-10 reveal-delayed leading-relaxed font-normal"
+            className="text-warm-cream/60 max-w-lg mb-10 reveal-delayed leading-relaxed font-medium"
             style={{
               fontFamily: '"Raleway", sans-serif',
               fontSize: "1rem",
               letterSpacing: "0.01em",
-              textShadow: "0px 1px 4px rgba(0,0,0,0.25)",
-            }}
-          >
+              textShadow: "0px 1px 4px rgba(0,0,0,0.25)"
+            }}>
+            
             Data-driven strategy and discreet representation across Austin's
             most sought-after neighborhoods.
           </p>
@@ -224,9 +224,9 @@ const Hero = () => {
                 fontSize: "0.6rem",
                 letterSpacing: "0.28em",
                 textTransform: "uppercase",
-                fontWeight: 700,
-              }}
-            >
+                fontWeight: 700
+              }}>
+              
               Explore Listings
             </Link>
             <Link
@@ -237,9 +237,9 @@ const Hero = () => {
                 fontSize: "0.6rem",
                 letterSpacing: "0.28em",
                 textTransform: "uppercase",
-                fontWeight: 400,
-              }}
-            >
+                fontWeight: 400
+              }}>
+              
               Schedule a Consultation
             </Link>
           </div>
@@ -250,23 +250,23 @@ const Hero = () => {
       {/* Scroll indicator */}
       <div
         className="absolute bottom-5 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4"
-        style={{ zIndex: 3 }}
-      >
+        style={{ zIndex: 3 }}>
+        
         <span
           className="text-warm-cream font-light"
           style={{
             fontFamily: '"Raleway", sans-serif',
             fontSize: "0.6rem",
             letterSpacing: "0.35em",
-            textTransform: "uppercase",
-          }}
-        >
+            textTransform: "uppercase"
+          }}>
+          
           Discover Austin
         </span>
         <div className="scroll-indicator-line" />
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default Hero;

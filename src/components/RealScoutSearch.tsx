@@ -1,99 +1,114 @@
-import { useEffect, useRef, useState, useCallback } from "react";
+import { useEffect, useRef, useState } from "react";
+
+const REALSCOUT_SCRIPT_SRC = "https://em.realscout.com/widgets/realscout-web-components.umd.js";
+const REALSCOUT_SCRIPT_ID = "realscout-web-components-script";
 
 const RealScoutSearch = () => {
   const containerRef = useRef<HTMLDivElement>(null);
-  const sectionRef = useRef<HTMLElement>(null);
-  const [fadeProgress, setFadeProgress] = useState(0);
+  const [isReady, setIsReady] = useState(false);
+  const [hasError, setHasError] = useState(false);
 
   useEffect(() => {
-    if (!containerRef.current) return;
+    let cancelled = false;
 
-    const el = document.createElement("realscout-advanced-search");
-    el.setAttribute("agent-encoded-id", "QWdlbnQtMjg5NDU2");
-    containerRef.current.appendChild(el);
+    const mountWidget = () => {
+      if (cancelled || !containerRef.current) return;
+
+      containerRef.current.innerHTML = "";
+
+      const widget = document.createElement("realscout-advanced-search");
+      widget.setAttribute("agent-encoded-id", "QWdlbnQtMjg5NDU2");
+
+      containerRef.current.appendChild(widget);
+      setIsReady(true);
+      setHasError(false);
+    };
+
+    const onScriptReady = () => {
+      if (window.customElements?.get("realscout-advanced-search")) {
+        mountWidget();
+        return;
+      }
+
+      window.setTimeout(() => {
+        if (window.customElements?.get("realscout-advanced-search")) {
+          mountWidget();
+        } else if (!cancelled) {
+          setHasError(true);
+        }
+      }, 250);
+    };
+
+    if (window.customElements?.get("realscout-advanced-search")) {
+      mountWidget();
+      return () => {
+        cancelled = true;
+      };
+    }
+
+    let script = document.getElementById(REALSCOUT_SCRIPT_ID) as HTMLScriptElement | null;
+
+    if (!script) {
+      script = document.createElement("script");
+      script.id = REALSCOUT_SCRIPT_ID;
+      script.src = REALSCOUT_SCRIPT_SRC;
+      script.async = true;
+      script.onload = onScriptReady;
+      script.onerror = () => {
+        if (!cancelled) setHasError(true);
+      };
+      document.head.appendChild(script);
+    } else if (window.customElements?.get("realscout-advanced-search")) {
+      mountWidget();
+    } else {
+      script.addEventListener("load", onScriptReady, { once: true });
+      script.addEventListener("error", () => {
+        if (!cancelled) setHasError(true);
+      }, { once: true });
+    }
 
     return () => {
-      if (containerRef.current && el.parentNode === containerRef.current) {
-        containerRef.current.removeChild(el);
+      cancelled = true;
+      if (containerRef.current) {
+        containerRef.current.innerHTML = "";
       }
     };
   }, []);
 
-  const handleScroll = useCallback(() => {
-    const section = sectionRef.current;
-    if (!section) return;
-
-    const rect = section.getBoundingClientRect();
-    const sectionHeight = rect.height;
-    const startFadeAt = window.innerHeight * 0.15;
-    const fadeDistance = sectionHeight * 0.45;
-    const progress = (startFadeAt - rect.top) / fadeDistance;
-
-    setFadeProgress(Math.max(0, Math.min(1, progress)));
-  }, []);
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    handleScroll();
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [handleScroll]);
-
   return (
-    <section ref={sectionRef} className="relative bg-primary -mt-px">
-      <div className="relative container mx-auto px-6 pt-10 pb-16 md:pt-14 md:pb-24">
-        {/* Typography block */}
-        <div className="max-w-2xl mx-auto text-center mb-12 md:mb-16">
-          <p
-            className="text-[10px] md:text-[11px] tracking-[0.4em] mb-7 font-normal"
-            style={{ color: "hsl(42 45% 65%)" }}
-          >
-            AUSTIN LUXURY REAL ESTATE
-          </p>
+    <section className="bg-primary py-12 md:py-16">
+      <div className="container mx-auto px-6">
+        <div className="mx-auto max-w-5xl">
+          <div className="mb-6 text-center">
+            <h2 className="font-display text-3xl font-light tracking-tight text-primary-foreground md:text-5xl">
+              Search Austin Properties
+            </h2>
+          </div>
 
-          <h2
-            className="font-display font-light leading-[1.06] mb-6"
-            style={{
-              fontSize: "clamp(1.6rem, 3.2vw, 3rem)",
-              color: "hsl(42 15% 90%)",
-              letterSpacing: "-0.015em",
-            }}
-          >
-            Find Exceptional Homes
-            <br />
-            <span className="italic" style={{ color: "hsl(42 45% 68%)" }}>
-              in Austin
-            </span>
-          </h2>
+          <div className="w-full">
+            <div
+              ref={containerRef}
+              className="w-full"
+              style={{ position: "relative", zIndex: 1, pointerEvents: "auto" }}
+            />
 
-          <p
-            className="text-[13px] md:text-sm font-light max-w-sm mx-auto leading-[1.8] tracking-[0.02em]"
-            style={{ color: "hsl(42 10% 75% / 0.55)" }}
-          >
-            Search luxury homes, land, and investment opportunities
-            with a smarter home search experience.
-          </p>
-        </div>
+            {!isReady && !hasError && (
+              <p className="mt-4 text-center text-sm text-primary-foreground/70">
+                Loading property search…
+              </p>
+            )}
 
-        {/* Widget container — no decorative layers, fully interactive */}
-        <div className="max-w-[50rem] mx-auto">
-          <div
-            ref={containerRef}
-            className="relative w-full rounded-2xl overflow-hidden"
-          />
+            {hasError && (
+              <p className="mt-4 text-center text-sm text-primary-foreground/70">
+                Property search is temporarily unavailable. Please refresh the page.
+              </p>
+            )}
+          </div>
         </div>
       </div>
-
-      {/* Scroll-driven bottom fade — pointer-events: none ensures no blocking */}
-      <div
-        className="absolute inset-x-0 bottom-0 pointer-events-none"
-        style={{
-          height: `${6 + fadeProgress * 94}%`,
-          opacity: 0.3 + fadeProgress * 0.7,
-          background: "linear-gradient(to bottom, transparent 0%, hsl(var(--background)) 100%)",
-        }}
-      />
     </section>
   );
 };
 
 export default RealScoutSearch;
+

@@ -185,27 +185,6 @@ FEATURED LISTINGS</p>
         </div>
       </section>
 
-      <section className="pt-0 pb-8 bg-background">
-        <div className="container mx-auto px-6">
-          <div className="max-w-7xl mx-auto">
-            <p className="text-minimal text-gold mb-4 font-extrabold">
-              CURRENTLY ON THE MARKET
-            </p>
-            <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-12">
-              Commercial and Residential Listings
-            </h2>
-            <div ref={widgetRef} className="w-full" />
-            <div className="mt-12 text-center">
-              <Link
-                to="/past-transactions"
-                className="inline-block px-8 py-4 border border-border text-minimal text-muted-foreground hover:text-primary-foreground hover:bg-gold hover:border-gold transition-all duration-300">
-                
-                SEE PAST TRANSACTIONS →
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
     </>);
 
 };

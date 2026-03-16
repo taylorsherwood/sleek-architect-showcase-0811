@@ -308,21 +308,30 @@ const AustinMultifamilyReport2026 = () => {
             </div>
 
             {submitted ? (
-              <div className="text-center py-8 space-y-5">
-                <CheckCircle2 className="h-12 w-12 text-[hsl(var(--gold))] mx-auto" strokeWidth={1.2} />
+              <div className="text-center py-10 space-y-6">
+                <CheckCircle2 className="h-10 w-10 text-[hsl(var(--gold))] mx-auto" strokeWidth={1.4} />
                 <h3 className="text-2xl font-display font-light text-architectural">
-                  Thank You
+                  Your Report Is Ready
                 </h3>
-                <p className="text-muted-foreground max-w-md mx-auto">
-                  The Austin Multifamily Market Outlook 2026 is on its way to your inbox.
-                  In the meantime, schedule a consultation to discuss your investment strategy.
+                <p className="text-muted-foreground max-w-md mx-auto leading-relaxed">
+                  Thank you, {formData.firstName}. Click below to download the full Austin Multifamily Market Outlook 2026.
                 </p>
-                <Button
-                  asChild
-                  className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-6 text-sm tracking-widest uppercase font-medium"
+                <a
+                  href="https://www.dropbox.com/scl/fi/qae7cq2m7a8kdhbjp81pa/2026-Multi-Family-Report.pdf?rlkey=w2cck92vjggphdtzbyct1w7xv&dl=0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-[hsl(var(--gold))] text-primary-foreground hover:bg-[hsl(var(--gold-light))] px-10 py-4 text-sm tracking-widest uppercase font-medium transition-all duration-200"
                 >
-                  <Link to="/connect">Schedule a Consultation</Link>
-                </Button>
+                  Download the Report
+                </a>
+                <div className="pt-2">
+                  <Link
+                    to="/connect"
+                    className="text-sm text-muted-foreground hover:text-foreground underline underline-offset-4 transition-colors duration-300"
+                  >
+                    Having trouble? Contact us
+                  </Link>
+                </div>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">

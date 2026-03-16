@@ -87,7 +87,7 @@ const LuxuryRealEstateAustin = () => {
                 </div>
                 <div className="border-l-2 border-gold pl-6">
                   <h3 className="text-xl font-display font-medium mb-2">
-                    <Link to="/communities/lake-austin-waterfront" className="hover:text-muted-foreground transition-colors">Lake Austin Waterfront</Link> — $2M to $25M+
+                    <Link to="/communities/lake-austin" className="hover:text-muted-foreground transition-colors">Lake Austin Waterfront</Link> — $2M to $25M+
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
                     The pinnacle of Austin luxury. Constant-level lake, private docks, and extreme scarcity create the strongest appreciation profile in the metro. Many transactions occur off-market.

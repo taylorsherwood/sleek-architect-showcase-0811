@@ -65,7 +65,7 @@ const Navigation = () => {
         }`}
       />
       <div className="relative container mx-auto px-6 h-full flex items-center justify-between">
-        <Link to="/" className="flex items-center shrink-0 overflow-visible" style={{ height: '100%' }}>
+        <Link to="/" onClick={() => { if (location.pathname === '/') window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="flex items-center shrink-0 overflow-visible" style={{ height: '100%' }}>
           <img
             src={logo}
             alt="Echelon Property Group"
@@ -126,6 +126,7 @@ const Navigation = () => {
               <Link
                 key={link.href}
                 to={link.href}
+                onClick={() => { if (link.href === '/' && location.pathname === '/') window.scrollTo({ top: 0, behavior: 'smooth' }); }}
                 className={`relative text-minimal tracking-[0.25em] transition-colors duration-500 group ${
                   location.pathname === link.href
                     ? "text-foreground"
@@ -219,7 +220,7 @@ const Navigation = () => {
                 <Link
                   key={link.href}
                   to={link.href}
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={() => { setIsMenuOpen(false); if (link.href === '/' && location.pathname === '/') window.scrollTo({ top: 0, behavior: 'smooth' }); }}
                   className={`block text-minimal tracking-[0.25em] transition-colors duration-300 ${
                     location.pathname === link.href
                       ? "text-foreground"

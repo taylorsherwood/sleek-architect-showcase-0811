@@ -39,8 +39,8 @@ const RealScoutSearch = () => {
   }, [handleScroll]);
 
   return (
-    <section ref={sectionRef} className="relative bg-primary overflow-hidden -mt-px">
-      <div className="relative container mx-auto px-6 pt-10 pb-16 md:pt-14 md:pb-24" style={{ zIndex: 3 }}>
+    <section ref={sectionRef} className="relative bg-primary -mt-px">
+      <div className="relative container mx-auto px-6 pt-10 pb-16 md:pt-14 md:pb-24">
         {/* Typography block */}
         <div className="max-w-2xl mx-auto text-center mb-12 md:mb-16">
           <p
@@ -74,34 +74,19 @@ const RealScoutSearch = () => {
           </p>
         </div>
 
-        {/* Widget container — glass frame is decorative, widget sits on top */}
-        <div className="max-w-[50rem] mx-auto relative">
-          {/* Decorative glass backing */}
-          <div
-            className="absolute inset-0 rounded-2xl pointer-events-none"
-            style={{
-              background: "rgba(255, 255, 255, 0.06)",
-              border: "1px solid rgba(255, 255, 255, 0.08)",
-              boxShadow: "0 20px 50px -15px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.05)",
-              backdropFilter: "blur(12px)",
-              WebkitBackdropFilter: "blur(12px)",
-            }}
-          />
-
-          {/* Interactive widget — above glass, fully clickable */}
+        {/* Widget container — no decorative layers, fully interactive */}
+        <div className="max-w-[50rem] mx-auto">
           <div
             ref={containerRef}
             className="relative w-full rounded-2xl overflow-hidden"
-            style={{ zIndex: 1, pointerEvents: "auto" }}
-          ></div>
+          />
         </div>
       </div>
 
-      {/* Scroll-driven bottom fade */}
+      {/* Scroll-driven bottom fade — pointer-events: none ensures no blocking */}
       <div
-        className="absolute inset-x-0 bottom-0 pointer-events-none transition-none"
+        className="absolute inset-x-0 bottom-0 pointer-events-none"
         style={{
-          zIndex: 2,
           height: `${6 + fadeProgress * 94}%`,
           opacity: 0.3 + fadeProgress * 0.7,
           background: "linear-gradient(to bottom, transparent 0%, hsl(var(--background)) 100%)",

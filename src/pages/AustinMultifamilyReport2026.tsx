@@ -414,20 +414,20 @@ const AustinMultifamilyReport2026 = () => {
       </section>
 
       {/* ════════ CONSULTATION CTA ════════ */}
-      <section className="py-14 md:py-16 bg-primary relative overflow-hidden">
+      <section className="py-10 md:py-12 bg-primary relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,hsl(var(--gold)/0.05)_0%,transparent_60%)]" />
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <p className="text-minimal text-[hsl(var(--gold))] mb-4">NEXT STEP</p>
-            <h2 className="text-3xl md:text-4xl font-display font-light text-primary-foreground leading-tight mb-4">
+            <p className="text-minimal text-[hsl(var(--gold))] mb-3">NEXT STEP</p>
+            <h2 className="text-3xl md:text-4xl font-display font-light text-primary-foreground leading-tight mb-3">
               Want a Tailored Multifamily Acquisition Strategy?
             </h2>
-            <p className="text-primary-foreground/60 text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
+            <p className="text-primary-foreground/60 text-lg leading-relaxed mb-6 max-w-2xl mx-auto">
               Schedule a private consultation for submarket guidance, acquisition criteria review, or investor matchmaking.
             </p>
             <Button
               asChild
-              className="bg-[hsl(var(--gold))] text-primary-foreground hover:bg-[hsl(var(--gold-light))] px-10 py-6 text-sm tracking-widest uppercase font-medium transition-all duration-200"
+              className="bg-[hsl(var(--gold))] text-primary-foreground hover:bg-[hsl(var(--gold-light))] px-10 py-6 text-sm tracking-widest uppercase font-medium transition-all duration-200 shadow-lg hover:shadow-xl"
             >
               <Link to="/connect">Schedule a Consultation</Link>
             </Button>

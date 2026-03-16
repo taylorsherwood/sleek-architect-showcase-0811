@@ -16,7 +16,7 @@ const FloatingContact = () => {
 
   // The floating widget only appears after the advisory bar has been dismissed
   const [advisoryDismissed, setAdvisoryDismissed] = useState(
-    () => sessionStorage.getItem(SESSION_KEY) === "1"
+    () => typeof window !== "undefined" && sessionStorage.getItem(SESSION_KEY) === "1"
   );
   // Homepage-specific: hide when Private Opportunities banner is visible
   const [bannerVisible, setBannerVisible] = useState(false);

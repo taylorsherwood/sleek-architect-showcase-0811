@@ -219,7 +219,7 @@ const AustinMultifamilyReport2026 = () => {
                 <Card key={item.title} className="border-border/50 bg-card shadow-none hover:shadow-[var(--shadow-elegant)] transition-shadow duration-500">
                   <CardContent className="p-5 md:p-6">
                     <item.icon className="h-5 w-5 text-[hsl(var(--gold))] mb-3" strokeWidth={1.4} />
-                    <h3 className="text-lg font-display font-medium text-foreground mb-3">{item.title}</h3>
+                    <h3 className="text-lg font-display font-medium text-foreground mb-2">{item.title}</h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
                   </CardContent>
                 </Card>

@@ -18,13 +18,12 @@ const RealScoutSearch = () => {
   }, []);
 
   return (
-    <section className="relative bg-primary overflow-hidden">
-      {/* Subtle top connection to hero */}
-      <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black/20 to-transparent pointer-events-none" />
+    <section className="relative bg-primary overflow-hidden -mt-px">
+      {/* No top gradient needed — hero bleeds directly into this bg */}
 
-      <div className="relative container mx-auto px-6 py-16 md:py-24">
+      <div className="relative container mx-auto px-6 pt-10 pb-16 md:pt-14 md:pb-24">
         {/* Typography block */}
-        <div className="max-w-2xl mx-auto text-center mb-14 md:mb-18">
+        <div className="max-w-2xl mx-auto text-center mb-12 md:mb-16">
           <p
             className="text-[10px] md:text-[11px] tracking-[0.4em] mb-7 font-normal"
             style={{ color: "hsl(42 30% 58%)" }}
@@ -42,10 +41,7 @@ const RealScoutSearch = () => {
           >
             Find Exceptional Homes
             <br />
-            <span
-              className="italic"
-              style={{ color: "hsl(42 30% 62%)" }}
-            >
+            <span className="italic" style={{ color: "hsl(42 30% 62%)" }}>
               in Austin
             </span>
           </h2>
@@ -64,18 +60,26 @@ const RealScoutSearch = () => {
           </p>
         </div>
 
-        {/* Widget container */}
+        {/* Widget container — floating above the dark bg */}
         <div className="max-w-[50rem] mx-auto">
           <div
             ref={containerRef}
             className="relative w-full rounded-xl overflow-hidden"
             style={{
               boxShadow:
-                "0 25px 60px -15px rgba(0,0,0,0.35), 0 0 0 1px rgba(255,255,255,0.03)",
+                "0 30px 70px -20px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.04)",
             }}
           />
         </div>
       </div>
+
+      {/* Bottom fade into next section */}
+      <div
+        className="absolute inset-x-0 bottom-0 h-24 pointer-events-none"
+        style={{
+          background: "linear-gradient(to bottom, transparent, hsl(var(--background)))",
+        }}
+      />
     </section>
   );
 };

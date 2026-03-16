@@ -156,7 +156,7 @@ const Hero = () => {
               fontSize: "0.65rem",
               letterSpacing: "0.38em",
               textTransform: "uppercase",
-              textShadow: "0 1px 6px rgba(0,0,0,0.4)"
+              textShadow: "0 0 20px rgba(12,15,36,0.7), 0 0 40px rgba(12,15,36,0.5), 0 1px 6px rgba(0,0,0,0.4)"
             }}>
             
             STRATEGIC AUSTIN REAL ESTATE ADVISORY

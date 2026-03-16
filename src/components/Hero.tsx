@@ -149,7 +149,7 @@ const Hero = () => {
           }}
         >
           <p
-            className="text-warm-cream/55 mb-8 reveal font-medium"
+            className="text-warm-cream/55 mb-6 reveal font-medium"
             style={{
               fontFamily: '"Raleway", sans-serif',
               fontSize: "0.65rem",
@@ -162,7 +162,7 @@ const Hero = () => {
           </p>
 
           <h1
-            className="font-display font-light text-warm-cream mb-12 reveal"
+            className="font-display font-light text-warm-cream mb-9 reveal"
             style={{
               fontSize: "clamp(2.8rem, 5.8vw, 5.8rem)",
               lineHeight: 1.08,
@@ -177,7 +177,7 @@ const Hero = () => {
           </h1>
 
           {/* Service pillars */}
-          <div className="flex flex-wrap items-center gap-x-5 gap-y-1 mb-8 reveal-delayed">
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-1 mb-5 reveal-delayed">
             {["Luxury Homes", "Private Investments", "Development Opportunities"].map(
               (item, i) => (
                 <span key={item} className="flex items-center gap-5">
@@ -202,7 +202,7 @@ const Hero = () => {
           </div>
 
           <p
-            className="text-warm-cream/60 max-w-lg mb-16 reveal-delayed leading-relaxed font-normal"
+            className="text-warm-cream/60 max-w-lg mb-10 reveal-delayed leading-relaxed font-normal"
             style={{
               fontFamily: '"Raleway", sans-serif',
               fontSize: "1rem",
@@ -214,14 +214,14 @@ const Hero = () => {
             most sought-after neighborhoods.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-5 reveal-delayed-2">
+          <div className="flex flex-col sm:flex-row gap-4 reveal-delayed-2">
             <Link
               to="/listings"
-              className="hero-cta-btn inline-block bg-warm-cream text-foreground px-14 py-5 text-center"
+              className="hero-cta-btn inline-block bg-warm-cream text-foreground px-12 py-[1.1rem] text-center"
               style={{
                 fontFamily: '"Raleway", sans-serif',
-                fontSize: "0.62rem",
-                letterSpacing: "0.25em",
+                fontSize: "0.6rem",
+                letterSpacing: "0.28em",
                 textTransform: "uppercase",
                 fontWeight: 700,
               }}
@@ -230,11 +230,11 @@ const Hero = () => {
             </Link>
             <Link
               to="/contact"
-              className="hero-cta-btn inline-block border border-warm-cream/25 text-warm-cream/80 px-10 py-5 text-center hover:bg-warm-cream/5 hover:border-warm-cream/40 hover:text-warm-cream"
+              className="hero-cta-btn inline-block border border-warm-cream/25 text-warm-cream/75 px-10 py-[1.1rem] text-center hover:bg-warm-cream/5 hover:border-warm-cream/40 hover:text-warm-cream"
               style={{
                 fontFamily: '"Raleway", sans-serif',
-                fontSize: "0.62rem",
-                letterSpacing: "0.25em",
+                fontSize: "0.6rem",
+                letterSpacing: "0.28em",
                 textTransform: "uppercase",
                 fontWeight: 400,
               }}

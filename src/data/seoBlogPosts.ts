@@ -771,7 +771,7 @@ Whether you're seeking a luxury estate, a waterfront home, or an investment prop
 
 ## Frequently Asked Questions
 
-### Is Austin still a good place to move in 2025?
+### Is Austin still a good place to move in 2026?
 Yes. Austin continues to experience strong economic growth and remains one of the most desirable relocation destinations in the United States.
 
 ### What salary do you need to live comfortably in Austin?

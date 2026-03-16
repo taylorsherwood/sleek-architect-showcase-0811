@@ -128,7 +128,10 @@ const AustinMultifamilyReport2026 = () => {
     try {
       const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json",
+        },
         body: JSON.stringify({
           access_key: "0e2b99d2-3569-4bca-b940-138b0dbfa8b5",
           subject: "2026 Multifamily Report Download Request",
@@ -140,18 +143,25 @@ const AustinMultifamilyReport2026 = () => {
           message: "Requested download of Austin Multifamily Market Outlook 2026 report.",
         }),
       });
-      const data = await res.json();
-      if (!data.success) throw new Error(data.message || "Submission failed");
+
+      if (!res.ok) {
+        console.error("Web3Forms HTTP error:", res.status, res.statusText);
+        // Still deliver the report even if notification fails
+      } else {
+        const data = await res.json();
+        if (!data.success) {
+          console.error("Web3Forms API error:", data);
+        }
+      }
+
+      // Always deliver the report after form completion
       setSubmitted(true);
-      // Auto-open report in new tab
       window.open(REPORT_URL, "_blank", "noopener,noreferrer");
     } catch (err) {
-      console.error("Form submission error:", err);
-      toast({
-        title: "Submission failed",
-        description: "We couldn't process your request. Please try again or contact us directly.",
-        variant: "destructive",
-      });
+      console.error("Form submission network error:", err);
+      // Still deliver the report — don't block user over notification failure
+      setSubmitted(true);
+      window.open(REPORT_URL, "_blank", "noopener,noreferrer");
     } finally {
       setIsSubmitting(false);
     }

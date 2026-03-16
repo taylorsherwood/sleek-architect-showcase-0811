@@ -71,6 +71,10 @@ const Index = () => {
       <Navigation />
       <Hero />
 
+      <Suspense fallback={<div className="min-h-[200px] bg-primary" />}>
+        <RealScoutSearch />
+      </Suspense>
+
       <CredibilityStrip />
       <ExpertiseSection />
 

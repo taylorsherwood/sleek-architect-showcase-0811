@@ -119,14 +119,14 @@ const AustinMultifamilyReport2026 = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 onClick={scrollToForm}
-                className="bg-[hsl(var(--gold))] text-primary hover:bg-[hsl(var(--gold-light))] px-8 py-6 text-sm tracking-widest uppercase font-medium"
+                className="bg-[hsl(var(--gold))] text-primary-foreground hover:bg-[hsl(var(--gold-light))] px-8 py-6 text-sm tracking-widest uppercase font-medium"
               >
                 Download the Report
               </Button>
               <Button
                 asChild
                 variant="outline"
-                className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 px-8 py-6 text-sm tracking-widest uppercase font-medium"
+                className="border-primary-foreground/40 bg-transparent text-primary-foreground hover:bg-primary-foreground hover:text-primary px-8 py-6 text-sm tracking-widest uppercase font-medium transition-all duration-300"
               >
                 <Link to="/connect">Schedule a Consultation</Link>
               </Button>

@@ -521,7 +521,7 @@ Forecast: **Growth acceleration.** Dripping Springs and the broader Hill Country
 
 ## Investment Outlook
 
-### Best Investment Strategies for 2025
+### Best Investment Strategies for 2026
 
 **Buy-and-hold in Westlake Hills and Lake Austin.** These markets offer the strongest long-term appreciation fundamentals due to supply constraints and enduring demand drivers.
 

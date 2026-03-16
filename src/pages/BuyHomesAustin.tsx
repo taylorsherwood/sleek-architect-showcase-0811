@@ -77,7 +77,7 @@ const BuyHomesAustin = () => {
                   <p className="text-muted-foreground text-sm">Best for golf, gated community, resort amenities. $1.5M–$15M+</p>
                 </div>
                 <div className="border-l-2 border-gold pl-6">
-                  <h3 className="text-lg font-medium mb-1"><Link to="/communities/lake-austin-waterfront" className="hover:text-muted-foreground transition-colors">Lake Austin</Link></h3>
+                  <h3 className="text-lg font-medium mb-1"><Link to="/communities/lake-austin" className="hover:text-muted-foreground transition-colors">Lake Austin</Link></h3>
                   <p className="text-muted-foreground text-sm">Best for waterfront lifestyle, private docks, highest appreciation. $2M–$25M+</p>
                 </div>
                 <div className="border-l-2 border-gold pl-6">

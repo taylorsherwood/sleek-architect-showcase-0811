@@ -78,9 +78,11 @@ const RealScoutSearch = () => {
         <div className="max-w-[50rem] mx-auto">
           <div
             ref={containerRef}
-            className="relative w-full rounded-xl overflow-hidden"
+            className="relative w-full rounded-2xl overflow-hidden backdrop-blur-md"
             style={{
-              boxShadow: "0 20px 50px -15px rgba(0,0,0,0.3)",
+              background: "rgba(255, 255, 255, 0.06)",
+              border: "1px solid rgba(255, 255, 255, 0.08)",
+              boxShadow: "0 20px 50px -15px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.05)",
             }}
           />
         </div>

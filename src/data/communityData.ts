@@ -323,7 +323,7 @@ Acquiring original homes on large lots (7,000+ sq ft) and building new can gener
 ### Growth Tailwinds
 
 As Austin's tech economy expands, demand for walkable, centrally located neighborhoods like Tarrytown continues to intensify. Proximity to downtown, the university, and major employment centers ensures broad buyer demand.`,
-    relatedCommunities: ["westlake-hills", "lake-austin-waterfront", "downtown-austin-condos", "rollingwood"],
+    relatedCommunities: ["westlake-hills", "lake-austin", "downtown-austin-condos", "rollingwood"],
     faqs: [
       { question: "What makes Tarrytown Austin a desirable neighborhood?", answer: "Tarrytown offers a rare combination of central location (minutes from downtown), tree-canopied walkable streets, excellent schools (Casis Elementary), proximity to Lady Bird Lake and Deep Eddy Pool, and eclectic architectural character spanning 1930s bungalows to contemporary estates." },
       { question: "What school zone is Tarrytown Austin in?", answer: "Tarrytown is served by Austin ISD, with homes primarily zoned to Casis Elementary School (one of the highest-performing in the district), O. Henry Middle School, and Austin High School. St. Andrew's Episcopal School, a top private school, is also located within the neighborhood." },

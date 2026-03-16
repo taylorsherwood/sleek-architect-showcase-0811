@@ -176,7 +176,7 @@ const AustinMultifamilyReport2026 = () => {
                 src={reportCover}
                 alt="Austin Multifamily Market Outlook 2026 report cover"
                 title="Austin Multifamily Market Outlook 2026 — Echelon Property Group"
-                className="w-80 lg:w-[26rem] drop-shadow-2xl -scale-x-100"
+                className="w-80 lg:w-[26rem] drop-shadow-2xl rotate-[8deg]"
                 loading="eager"
               />
             </div>

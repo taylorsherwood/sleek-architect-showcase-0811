@@ -248,7 +248,7 @@ const Hero = () => {
 
       {/* Bottom bleed — fades hero into search section bg */}
       <div
-        className="absolute inset-x-0 bottom-0 h-48 pointer-events-none"
+        className="absolute inset-x-0 bottom-0 h-28 pointer-events-none"
         style={{
           zIndex: 1,
           background: "linear-gradient(to bottom, transparent 0%, hsl(233 50% 9%) 100%)",

@@ -24,12 +24,14 @@ const resolveCanonicalUrl = (pathname: string, canonical?: string) => {
   return `${SITE_URL}${canonical.startsWith("/") ? canonical : `/${canonical}`}`;
 };
 
-const SEOHead = ({ title, description, canonical }: SEOHeadProps) => {
+const SEOHead = ({ title, description, canonical, ogTitle, ogDescription }: SEOHeadProps) => {
   const { pathname } = useLocation();
   const pageTitle = normalizePageTitle(title);
   const seoTitle = `${pageTitle} | ${BRAND_NAME}`;
   const seoDescription = description || `Explore ${pageTitle} with ${BRAND_NAME}. View homes, market insights, and real estate opportunities in Austin Texas.`;
   const canonicalUrl = resolveCanonicalUrl(pathname, canonical);
+  const openGraphTitle = ogTitle || seoTitle;
+  const openGraphDescription = ogDescription || seoDescription;
 
   return (
     <Helmet prioritizeSeoTags>

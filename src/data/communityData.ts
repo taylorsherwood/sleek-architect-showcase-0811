@@ -227,7 +227,7 @@ The community is approaching build-out. The shrinking supply of available homesi
 ### Stable Demand
 
 The combination of country club amenities, top schools, and proximity to Austin's tech economy ensures ongoing demand from high-net-worth buyers. Properties in Barton Creek have demonstrated consistent value growth, even during periods of broader market softening.`,
-    relatedCommunities: ["westlake-hills", "lake-austin-waterfront", "rollingwood", "texas-hill-country-estates"],
+    relatedCommunities: ["westlake-hills", "lake-austin", "rollingwood", "texas-hill-country-estates"],
     faqs: [
       { question: "Is Barton Creek a gated community?", answer: "Yes. Barton Creek is a gated, master-planned community with 24/7 security staffing. The gated entrance provides privacy and exclusivity for residents while maintaining convenient access to Austin via Loop 360 and MoPac." },
       { question: "How many golf courses are in Barton Creek?", answer: "Barton Creek features four championship golf courses designed by Tom Fazio, Ben Crenshaw, and Arnold Palmer, all accessible through the Barton Creek Country Club. Membership provides access to golf, tennis, swimming, dining, and spa facilities." },

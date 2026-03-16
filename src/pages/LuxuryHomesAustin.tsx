@@ -48,14 +48,18 @@ const LuxuryHomesAustin = () => {
         </div>
       </section>
 
-      {/* RealScout Shared Search Widget */}
+      {/* RealScout Shared Search */}
       <section className="pb-20">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
-            {createElement("realscout-advanced-search", {
-              "agent-encoded-id": "QWdlbnQtMjg5NDU2",
-              "shared-search-id": "U2hhcmVhYmxlU2VhcmNoTGluay0xMjgxOA==",
-            })}
+            <iframe
+              src="https://taylorsherwood.realscout.com/homesearch/shared-searches/U2hhcmVhYmxlU2VhcmNoTGluay0xMjgxOA=="
+              title="Austin luxury homes for sale — RealScout search"
+              className="w-full border-0 rounded-sm"
+              style={{ height: "800px" }}
+              loading="lazy"
+              allowFullScreen
+            />
           </div>
         </div>
       </section>

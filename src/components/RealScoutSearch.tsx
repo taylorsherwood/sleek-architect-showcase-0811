@@ -48,7 +48,7 @@ const RealScoutSearch = () => {
 
           <div
             className="w-10 h-px mx-auto mb-7"
-            style={{ background: "hsl(42 30% 55% / 0.2)" }}
+            style={{ background: "hsl(42 45% 65% / 0.25)" }}
           />
 
           <p

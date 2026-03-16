@@ -484,7 +484,7 @@ Many Lake Austin transactions occur off-market. Working with a specialized agent
     excerpt: "Expert analysis of the Austin luxury real estate market outlook. Trends, predictions, and investment insights for high-end properties in Austin, Texas.",
     content: `## Austin Luxury Market Overview
 
-The Austin luxury real estate market enters 2025 positioned at the intersection of several powerful forces. Austin's continued emergence as a top-tier technology hub, combined with Texas's tax-friendly environment and the city's unmatched lifestyle appeal, creates a foundation for sustained luxury market strength. Understanding the trends, data, and dynamics shaping the market is essential for buyers, sellers, and investors making strategic real estate decisions.
+The Austin luxury real estate market enters 2026 positioned at the intersection of several powerful forces. Austin's continued emergence as a top-tier technology hub, combined with Texas's tax-friendly environment and the city's unmatched lifestyle appeal, creates a foundation for sustained luxury market strength. Understanding the trends, data, and dynamics shaping the market is essential for buyers, sellers, and investors making strategic real estate decisions.
 
 ## Key Market Trends Shaping Austin Luxury Real Estate
 

@@ -111,8 +111,11 @@ const AustinMultifamilyReport2026 = () => {
   const scrollToForm = () =>
     document.getElementById("report-form")?.scrollIntoView({ behavior: "smooth" });
 
+  const REPORT_URL = "https://www.dropbox.com/scl/fi/qae7cq2m7a8kdhbjp81pa/2026-Multi-Family-Report.pdf?rlkey=w2cck92vjggphdtzbyct1w7xv&dl=0";
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (isSubmitting || submitted) return;
     if (!formData.firstName.trim() || !formData.lastName.trim() || !formData.email.trim()) {
       toast({
         title: "Required fields missing",
@@ -137,16 +140,16 @@ const AustinMultifamilyReport2026 = () => {
           message: "Requested download of Austin Multifamily Market Outlook 2026 report.",
         }),
       });
-      if (!res.ok) throw new Error("Submission failed");
+      const data = await res.json();
+      if (!data.success) throw new Error(data.message || "Submission failed");
       setSubmitted(true);
+      // Auto-open report in new tab
+      window.open(REPORT_URL, "_blank", "noopener,noreferrer");
+    } catch (err) {
+      console.error("Form submission error:", err);
       toast({
-        title: "You're all set",
-        description: "Your report is ready to download.",
-      });
-    } catch {
-      toast({
-        title: "Something went wrong",
-        description: "Please try again or contact us directly.",
+        title: "Submission failed",
+        description: "We couldn't process your request. Please try again or contact us directly.",
         variant: "destructive",
       });
     } finally {

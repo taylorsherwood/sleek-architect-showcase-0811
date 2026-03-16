@@ -294,10 +294,10 @@ const AustinMultifamilyReport2026 = () => {
       <div className="border-t border-border/40 max-w-4xl mx-auto" />
 
       {/* ════════ LEAD FORM ════════ */}
-      <section id="report-form" className="py-12 md:py-16">
+      <section id="report-form" className="py-10 md:py-12">
         <div className="container mx-auto px-6">
           <div className="max-w-xl mx-auto">
-            <div className="text-center mb-8">
+            <div className="text-center mb-6">
               <p className="text-minimal text-[hsl(var(--gold))] mb-3">ACCESS THE REPORT</p>
               <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-3">
                 Get the Full Report

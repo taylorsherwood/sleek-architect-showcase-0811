@@ -159,46 +159,46 @@ const AustinMultifamilyReport2026 = () => {
       <Navigation />
 
       {/* ════════ HERO ════════ */}
-      <section className="relative pt-28 pb-14 md:pt-32 md:pb-16 bg-primary overflow-hidden">
+      <section className="relative pt-28 pb-10 md:pt-30 md:pb-12 bg-primary overflow-hidden">
         {/* subtle architectural texture */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,hsl(var(--gold)/0.06)_0%,transparent_60%)]" />
         <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-4 md:gap-6">
+          <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-3 md:gap-2 lg:gap-4">
             {/* text */}
             <div className="flex-1 text-center md:text-left">
-              <p className="text-minimal text-[hsl(var(--gold))] mb-3">INVESTOR REPORT</p>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-light text-primary-foreground leading-[1.1] mb-4">
+              <p className="text-minimal text-[hsl(var(--gold))] mb-2">INVESTOR REPORT</p>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-light text-primary-foreground leading-[1.1] mb-3">
                 Austin Multifamily Market Outlook 2026
               </h1>
-              <p className="text-lg md:text-xl text-primary-foreground/65 leading-relaxed max-w-xl mb-3">
+              <p className="text-lg md:text-xl text-primary-foreground/65 leading-relaxed max-w-xl mb-2">
                 Institutional-style market analysis covering rents, supply, vacancy, and Austin submarkets positioned for recovery
               </p>
-              <p className="text-sm text-[hsl(var(--gold))] tracking-widest uppercase mb-6">
+              <p className="text-sm text-[hsl(var(--gold))] tracking-widest uppercase mb-5">
                 By Echelon Property Group
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+              <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
                 <Button
                   onClick={scrollToForm}
-                  className="bg-[hsl(var(--gold))] text-primary-foreground hover:bg-[hsl(var(--gold-light))] px-8 py-6 text-sm tracking-widest uppercase font-medium transition-all duration-200"
+                  className="bg-[hsl(var(--gold))] text-primary-foreground hover:bg-[hsl(var(--gold-light))] px-8 py-6 text-sm tracking-widest uppercase font-medium transition-all duration-200 shadow-lg hover:shadow-xl"
                 >
                   Download the Report
                 </Button>
                 <Button
                   asChild
                   variant="outline"
-                  className="border-primary-foreground/40 bg-transparent text-primary-foreground hover:bg-primary-foreground hover:text-primary px-8 py-6 text-sm tracking-widest uppercase font-medium transition-all duration-300"
+                  className="border-primary-foreground/30 bg-transparent text-primary-foreground hover:bg-primary-foreground hover:text-primary hover:border-primary-foreground px-8 py-6 text-sm tracking-widest uppercase font-medium transition-all duration-300 shadow-sm hover:shadow-md"
                 >
                   <Link to="/connect">Schedule a Consultation</Link>
                 </Button>
               </div>
             </div>
             {/* report mockup — desktop */}
-            <div className="hidden md:flex flex-shrink-0 justify-center -ml-4">
+            <div className="hidden md:flex flex-shrink-0 justify-center -ml-8 lg:-ml-10">
               <img
                 src={reportCover}
                 alt="Austin Multifamily Market Outlook 2026 report cover"
                 title="Austin Multifamily Market Outlook 2026 — Echelon Property Group"
-                className="w-80 lg:w-[26rem] drop-shadow-2xl rotate-[8deg]"
+                className="w-80 lg:w-[28rem] drop-shadow-2xl rotate-[8deg]"
                 loading="eager"
               />
             </div>

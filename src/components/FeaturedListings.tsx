@@ -88,7 +88,7 @@ const ListingCard = ({
           src={listing.image}
           alt={listing.address}
           title={`${listing.address} — ${listing.price}`}
-          className="w-full aspect-[4/3] object-cover"
+          className="w-full aspect-[4/3] object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
           loading="lazy"
         />
 

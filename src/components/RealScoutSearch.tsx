@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { createElement, useEffect, useState } from "react";
 
 const REALSCOUT_SCRIPT_ID = "realscout-web-components-script";
 
@@ -56,17 +56,21 @@ const RealScoutSearch = () => {
           </header>
 
           <div className="w-full" style={{ position: "relative", zIndex: 1, pointerEvents: "auto" }}>
-            {scriptReady ? (
-              <realscout-advanced-search agent-encoded-id="QWdlbnQtMjg5NDU2" />
-            ) : hasError ? (
-              <p className="text-center text-sm text-primary-foreground/70">
-                Property search is temporarily unavailable. Please refresh the page.
-              </p>
-            ) : (
-              <p className="text-center text-sm text-primary-foreground/70">
-                Loading property search…
-              </p>
-            )}
+            {scriptReady
+              ? createElement("realscout-advanced-search", {
+                  "agent-encoded-id": "QWdlbnQtMjg5NDU2",
+                })
+              : hasError
+                ? (
+                  <p className="text-center text-sm text-primary-foreground/70">
+                    Property search is temporarily unavailable. Please refresh the page.
+                  </p>
+                )
+                : (
+                  <p className="text-center text-sm text-primary-foreground/70">
+                    Loading property search…
+                  </p>
+                )}
           </div>
         </div>
       </div>

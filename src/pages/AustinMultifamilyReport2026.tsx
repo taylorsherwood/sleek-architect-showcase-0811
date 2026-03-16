@@ -205,20 +205,20 @@ const AustinMultifamilyReport2026 = () => {
       <div className="border-t border-border/40 max-w-4xl mx-auto" />
 
       {/* ════════ WHAT'S INSIDE ════════ */}
-      <section className="py-20 md:py-28">
+      <section className="py-12 md:py-16">
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-14">
-              <p className="text-minimal text-[hsl(var(--gold))] mb-4">REPORT OVERVIEW</p>
+            <div className="text-center mb-10">
+              <p className="text-minimal text-[hsl(var(--gold))] mb-3">REPORT OVERVIEW</p>
               <h2 className="text-3xl md:text-4xl font-display font-light text-architectural">
                 What's Inside
               </h2>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 lg:gap-6">
               {WHATS_INSIDE.map((item) => (
                 <Card key={item.title} className="border-border/50 bg-card shadow-none hover:shadow-[var(--shadow-elegant)] transition-shadow duration-500">
-                  <CardContent className="p-7 md:p-9">
-                    <item.icon className="h-6 w-6 text-[hsl(var(--gold))] mb-5" strokeWidth={1.4} />
+                  <CardContent className="p-5 md:p-6">
+                    <item.icon className="h-5 w-5 text-[hsl(var(--gold))] mb-3" strokeWidth={1.4} />
                     <h3 className="text-lg font-display font-medium text-foreground mb-3">{item.title}</h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
                   </CardContent>

@@ -229,7 +229,7 @@ const AustinMultifamilyReport2026 = () => {
                   variant="outline"
                   className="border-primary-foreground/30 bg-transparent text-primary-foreground hover:bg-primary-foreground hover:text-primary hover:border-primary-foreground px-8 py-6 text-sm tracking-widest uppercase font-medium transition-all duration-300 shadow-sm hover:shadow-md"
                 >
-                  <Link to="/connect">Schedule a Consultation</Link>
+                  <Link to="/contact">Schedule a Consultation</Link>
                 </Button>
               </div>
             </div>
@@ -367,7 +367,7 @@ const AustinMultifamilyReport2026 = () => {
                 </a>
                 <div className="pt-2">
                   <Link
-                    to="/connect"
+                    to="/contact"
                     className="text-sm text-muted-foreground hover:text-foreground underline underline-offset-4 transition-colors duration-300"
                   >
                     Having trouble? Contact us
@@ -470,7 +470,7 @@ const AustinMultifamilyReport2026 = () => {
               asChild
               className="bg-[hsl(var(--gold))] text-primary-foreground hover:bg-[hsl(var(--gold-light))] px-10 py-6 text-sm tracking-widest uppercase font-medium transition-all duration-200 shadow-lg hover:shadow-xl"
             >
-              <Link to="/connect">Schedule a Consultation</Link>
+              <Link to="/contact">Schedule a Consultation</Link>
             </Button>
           </div>
         </div>

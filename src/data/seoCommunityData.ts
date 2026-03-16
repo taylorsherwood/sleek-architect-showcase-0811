@@ -158,7 +158,7 @@ Families value the Eanes ISD school zone, while empty-nesters and retirees appre
   },
   {
     slug: "lake-austin-waterfront-homes-for-sale",
-    name: "Lake Austin Waterfront",
+    name: "Lake Austin",
     metaTitle: "Lake Austin Waterfront Homes | Echelon Property Group",
     metaDescription: "Explore waterfront homes for sale on Lake Austin TX. Private docks, stunning views, and resort-style living from $2M to $25M+.",
     priceRange: "$2M – $25M+",

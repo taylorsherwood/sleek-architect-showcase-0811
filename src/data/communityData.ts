@@ -1060,7 +1060,7 @@ The range from mid-century homes to luxury estates provides opportunities at mul
 ### Tech Economy Benefit
 
 Proximity to Apple, Google, Meta, and other major employers makes these neighborhoods highly desirable for relocating professionals. Properties with exceptional views or large lots hold value well during market fluctuations.`,
-    relatedCommunities: ["tarrytown", "westlake-hills", "rollingwood", "lake-austin-waterfront"],
+    relatedCommunities: ["tarrytown", "westlake-hills", "rollingwood", "lake-austin"],
     faqs: [
       { question: "Where are Cat Mountain and Northwest Hills located?", answer: "Cat Mountain and Northwest Hills are established hillside neighborhoods located in northwest Austin, just a short drive from downtown Austin and The Domain." },
       { question: "What are Cat Mountain and Northwest Hills known for?", answer: "These neighborhoods are known for elevated homes with canyon views, quiet residential streets, mature oak trees and natural landscapes, and proximity to downtown Austin. Many homes sit on hillsides overlooking greenbelts and the surrounding Texas Hill Country." },

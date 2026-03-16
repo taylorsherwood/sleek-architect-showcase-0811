@@ -6,8 +6,8 @@ import ExpertiseSection from "@/components/ExpertiseSection";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { realEstateAgentSchema, localBusinessSchema, taylorSherwoodSchema, organizationSchema, websiteSchema } from "@/components/SchemaMarkup";
 
-
 // Lazy-load below-fold sections to reduce initial JS bundle
+const RealScoutSearch = lazy(() => import("@/components/RealScoutSearch"));
 const CommunitiesPreview = lazy(() => import("@/components/CommunitiesPreview"));
 const CommercialCTA = lazy(() => import("@/components/CommercialCTA"));
 const FeaturedListings = lazy(() => import("@/components/FeaturedListings"));

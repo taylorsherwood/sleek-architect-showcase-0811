@@ -156,7 +156,7 @@ const FeaturedListings = () => {
     if (!widgetRef.current) return;
     const el = document.createElement("realscout-your-listings");
     el.setAttribute("agent-encoded-id", "QWdlbnQtMjg5NDU2");
-    el.setAttribute("sort-order", "PRICE_HIGH");
+    el.setAttribute("sort-order", "STATUS_AND_SIGNIFICANT_CHANGE");
     el.setAttribute("listing-status", "For Sale,For Rent,In Contract");
     el.setAttribute("property-types", "SFR,MF,TC,LAL,MOBILE,OTHER");
     el.setAttribute("price-min", "300000");

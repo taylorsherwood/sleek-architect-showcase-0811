@@ -105,6 +105,7 @@ const AppRoutes = () => {
         </Routes>
       </Suspense>
       <FloatingContact />
+      <AdvisoryBar />
     </>
   );
 };

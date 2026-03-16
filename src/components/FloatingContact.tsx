@@ -17,12 +17,18 @@ const FloatingContact = () => {
   // 2. The Private Opportunities banner must NOT be visible
   const [pastSearch, setPastSearch] = useState(false);
   const [bannerVisible, setBannerVisible] = useState(false);
+  const [advisoryDismissed, setAdvisoryDismissed] = useState(false);
   const delayTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
+    const onAdvisoryDismissed = () => setAdvisoryDismissed(true);
+    window.addEventListener("advisory-bar-dismissed", onAdvisoryDismissed);
+
     if (!isHomepage) {
       setVisible(true);
-      return;
+      return () => {
+        window.removeEventListener("advisory-bar-dismissed", onAdvisoryDismissed);
+      };
     }
 
     // Scroll check: past the search section
@@ -46,6 +52,7 @@ const FloatingContact = () => {
 
     return () => {
       window.removeEventListener("scroll", checkScroll);
+      window.removeEventListener("advisory-bar-dismissed", onAdvisoryDismissed);
       observer?.disconnect();
     };
   }, [isHomepage]);
@@ -54,7 +61,7 @@ const FloatingContact = () => {
   useEffect(() => {
     if (delayTimer.current) clearTimeout(delayTimer.current);
 
-    const shouldShow = isHomepage ? pastSearch && !bannerVisible : true;
+    const shouldShow = isHomepage ? advisoryDismissed || (pastSearch && !bannerVisible) : true;
 
     if (shouldShow) {
       delayTimer.current = setTimeout(() => setVisible(true), 1000);
@@ -65,7 +72,7 @@ const FloatingContact = () => {
     return () => {
       if (delayTimer.current) clearTimeout(delayTimer.current);
     };
-  }, [isHomepage, pastSearch, bannerVisible]);
+  }, [isHomepage, pastSearch, bannerVisible, advisoryDismissed]);
 
   return (
     <>

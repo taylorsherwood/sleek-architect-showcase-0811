@@ -241,7 +241,7 @@ const AustinMultifamilyReport2026 = () => {
             </div>
             <div className="space-y-4">
               {TAKEAWAYS.map((text, i) => (
-                <div key={i} className="flex items-start gap-4 p-6 bg-card border border-border/50 rounded-sm">
+                <div key={i} className="flex items-start gap-4 p-5 bg-card border border-border/50 rounded-sm">
                   <CheckCircle2 className="h-5 w-5 text-[hsl(var(--gold))] mt-0.5 flex-shrink-0" strokeWidth={1.6} />
                   <p className="text-foreground leading-relaxed">{text}</p>
                 </div>

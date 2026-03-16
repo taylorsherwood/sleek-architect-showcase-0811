@@ -326,13 +326,13 @@ const AustinMultifamilyReport2026 = () => {
                   Your Report Is Ready
                 </h3>
                 <p className="text-muted-foreground max-w-md mx-auto leading-relaxed">
-                  Thank you, {formData.firstName}. Click below to download the full Austin Multifamily Market Outlook 2026.
+                  Your report is ready. It should open automatically. If not, use the button below to access it.
                 </p>
                 <a
-                  href="https://www.dropbox.com/scl/fi/qae7cq2m7a8kdhbjp81pa/2026-Multi-Family-Report.pdf?rlkey=w2cck92vjggphdtzbyct1w7xv&dl=0"
+                  href={REPORT_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block bg-[hsl(var(--gold))] text-primary-foreground hover:bg-[hsl(var(--gold-light))] px-10 py-4 text-sm tracking-widest uppercase font-medium transition-all duration-200"
+                  className="inline-block bg-[hsl(var(--gold))] text-primary-foreground hover:bg-white hover:text-[#0C0F24] px-10 py-4 text-sm tracking-widest uppercase font-medium transition-all duration-200"
                 >
                   Download the Report
                 </a>

@@ -32,7 +32,7 @@ const NewsletterSection = lazy(async () => {
   const luxuryLogo = luxuryMod.default;
   return {
     default: () => (
-      <section className="pt-16 pb-4 bg-muted">
+      <section className="pt-16 pb-0 bg-muted">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-6xl font-light text-architectural mb-8">

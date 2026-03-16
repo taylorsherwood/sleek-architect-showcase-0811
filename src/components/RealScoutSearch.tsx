@@ -53,7 +53,7 @@ const RealScoutSearch = () => {
 
           <p
             className="text-[13px] md:text-sm font-light max-w-sm mx-auto leading-[1.8] tracking-[0.02em]"
-            style={{ color: "hsl(42 10% 60% / 0.5)" }}
+            style={{ color: "hsl(42 10% 75% / 0.6)" }}
           >
             Search luxury homes, land, and investment opportunities
             with a smarter home search experience.

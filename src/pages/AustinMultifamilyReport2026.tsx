@@ -19,6 +19,8 @@ import { TrendingUp, Building2, MapPin, BarChart3, CheckCircle2, ArrowDown } fro
 import { useToast } from "@/hooks/use-toast";
 import reportCover from "@/assets/multifamily-report-cover.png";
 
+const PrivateOpportunities = lazy(() => import("@/components/PrivateOpportunities"));
+
 /* ─── data ─── */
 const WHATS_INSIDE = [
   {

@@ -105,7 +105,7 @@ const MovingToAustin = () => {
 
                 <div className="border-l-2 border-gold pl-6">
                   <h3 className="text-xl font-display font-medium mb-2">
-                    <Link to="/communities/lake-austin-waterfront" className="hover:text-muted-foreground transition-colors">Lake Austin Waterfront</Link>
+                    <Link to="/communities/lake-austin" className="hover:text-muted-foreground transition-colors">Lake Austin</Link>
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
                     The pinnacle of Austin luxury. Constant-level lake, private docks, and breathtaking water views just minutes from downtown. Homes range from $2M to $25M+. Buyers from Malibu, Newport Beach, and Tiburon are drawn to the waterfront lifestyle that Lake Austin provides.
@@ -185,7 +185,7 @@ const MovingToAustin = () => {
                 </div>
                 <div className="border-l-2 border-border pl-6">
                   <h3 className="text-lg font-medium text-foreground mb-2">Visit Multiple Neighborhoods</h3>
-                  <p className="text-muted-foreground">Austin's neighborhoods have dramatically different characters. Spend time in <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">Westlake Hills</Link>, <Link to="/communities/tarrytown" className="text-foreground underline hover:text-muted-foreground">Tarrytown</Link>, <Link to="/communities/lake-austin-waterfront" className="text-foreground underline hover:text-muted-foreground">Lake Austin</Link>, and the <Link to="/communities/texas-hill-country-estates" className="text-foreground underline hover:text-muted-foreground">Hill Country</Link> before making a decision.</p>
+                  <p className="text-muted-foreground">Austin's neighborhoods have dramatically different characters. Spend time in <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">Westlake Hills</Link>, <Link to="/communities/tarrytown" className="text-foreground underline hover:text-muted-foreground">Tarrytown</Link>, <Link to="/communities/lake-austin" className="text-foreground underline hover:text-muted-foreground">Lake Austin</Link>, and the <Link to="/communities/texas-hill-country-estates" className="text-foreground underline hover:text-muted-foreground">Hill Country</Link> before making a decision.</p>
                 </div>
                 <div className="border-l-2 border-border pl-6">
                   <h3 className="text-lg font-medium text-foreground mb-2">Plan for Texas Property Taxes</h3>
@@ -193,7 +193,7 @@ const MovingToAustin = () => {
                 </div>
                 <div className="border-l-2 border-border pl-6">
                   <h3 className="text-lg font-medium text-foreground mb-2">Prepare for Austin Summers</h3>
-                  <p className="text-muted-foreground">Austin summers are hot. Prioritize homes with pools, covered outdoor spaces, efficient HVAC systems, and proximity to water recreation like <Link to="/communities/lake-austin-waterfront" className="text-foreground underline hover:text-muted-foreground">Lake Austin</Link>.</p>
+                  <p className="text-muted-foreground">Austin summers are hot. Prioritize homes with pools, covered outdoor spaces, efficient HVAC systems, and proximity to water recreation like <Link to="/communities/lake-austin" className="text-foreground underline hover:text-muted-foreground">Lake Austin</Link>.</p>
                 </div>
               </div>
             </section>

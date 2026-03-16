@@ -72,7 +72,7 @@ const MarketReport = () => {
 
               <h3 className="text-xl font-display font-medium mb-3">In-Migration from High-Cost Markets</h3>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                The migration of high-net-worth individuals and families from California, New York, and other high-cost, high-tax states continues to be a significant demand driver. These buyers arrive with substantial equity from property sales in their origin markets, giving them strong purchasing power in Austin. They are typically attracted to <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">Westlake Hills</Link>, <Link to="/communities/lake-austin-waterfront" className="text-foreground underline hover:text-muted-foreground">Lake Austin waterfront</Link>, and <Link to="/communities/barton-creek" className="text-foreground underline hover:text-muted-foreground">Barton Creek</Link> for their combination of luxury amenities, natural beauty, and school quality.
+                The migration of high-net-worth individuals and families from California, New York, and other high-cost, high-tax states continues to be a significant demand driver. These buyers arrive with substantial equity from property sales in their origin markets, giving them strong purchasing power in Austin. They are typically attracted to <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">Westlake Hills</Link>, <Link to="/communities/lake-austin" className="text-foreground underline hover:text-muted-foreground">Lake Austin waterfront</Link>, and <Link to="/communities/barton-creek" className="text-foreground underline hover:text-muted-foreground">Barton Creek</Link> for their combination of luxury amenities, natural beauty, and school quality.
               </p>
 
               <h3 className="text-xl font-display font-medium mb-3">Tax Advantages</h3>
@@ -114,7 +114,7 @@ const MarketReport = () => {
 
                 <div className="border-l-2 border-gold pl-6">
                   <h3 className="text-xl font-display font-medium mb-2">
-                    <Link to="/communities/lake-austin-waterfront" className="hover:text-muted-foreground transition-colors">Lake Austin Waterfront</Link>
+                    <Link to="/communities/lake-austin" className="hover:text-muted-foreground transition-colors">Lake Austin Waterfront</Link>
                   </h3>
                   <p className="text-minimal text-gold mb-2">Median: $5M+ | Appreciation: 8-12% annually</p>
                   <p className="text-muted-foreground leading-relaxed">
@@ -165,7 +165,7 @@ const MarketReport = () => {
               <h3 className="text-xl font-display font-medium mb-3">Strongest Investment Segments</h3>
               <div className="space-y-3 mb-6">
                 <p className="text-muted-foreground leading-relaxed">
-                  <strong className="text-foreground">Buy-and-hold in supply-constrained neighborhoods:</strong> <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">Westlake Hills</Link>, <Link to="/communities/lake-austin-waterfront" className="text-foreground underline hover:text-muted-foreground">Lake Austin</Link>, and <Link to="/communities/barton-creek" className="text-foreground underline hover:text-muted-foreground">Barton Creek</Link> offer the most reliable long-term appreciation due to permanently limited inventory and enduring demand drivers.
+                  <strong className="text-foreground">Buy-and-hold in supply-constrained neighborhoods:</strong> <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">Westlake Hills</Link>, <Link to="/communities/lake-austin" className="text-foreground underline hover:text-muted-foreground">Lake Austin</Link>, and <Link to="/communities/barton-creek" className="text-foreground underline hover:text-muted-foreground">Barton Creek</Link> offer the most reliable long-term appreciation due to permanently limited inventory and enduring demand drivers.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
                   <strong className="text-foreground">Value-add in established neighborhoods:</strong> <Link to="/communities/tarrytown" className="text-foreground underline hover:text-muted-foreground">Tarrytown</Link> and <Link to="/communities/rollingwood" className="text-foreground underline hover:text-muted-foreground">Rollingwood</Link> offer compelling renovation and teardown-rebuild opportunities where the spread between acquisition cost and improved value supports profitable projects.

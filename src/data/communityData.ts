@@ -127,7 +127,7 @@ Opportunities include:
 - Properties with waterfront access, panoramic views, or guest houses
 
 The area's strict development standards ensure that quality investments are protected by overall neighborhood character.`,
-    relatedCommunities: ["barton-creek", "lake-austin-waterfront", "rollingwood", "tarrytown"],
+    relatedCommunities: ["barton-creek", "lake-austin", "rollingwood", "tarrytown"],
     faqs: [
       { question: "What school district serves Westlake Hills?", answer: "Westlake Hills is served by the Eanes Independent School District, consistently ranked among the top districts in Texas. Schools include Bridge Point Elementary, Hill Country Middle School, and Westlake High School, which earns National Blue Ribbon recognition." },
       { question: "What is the average home price in Westlake Hills Austin?", answer: "Home prices in Westlake Hills range from $1.2 million to over $20 million. The median home price exceeds $1.5 million, with luxury estates regularly trading above $5 million. New construction often exceeds $500 per square foot." },
@@ -227,7 +227,7 @@ The community is approaching build-out. The shrinking supply of available homesi
 ### Stable Demand
 
 The combination of country club amenities, top schools, and proximity to Austin's tech economy ensures ongoing demand from high-net-worth buyers. Properties in Barton Creek have demonstrated consistent value growth, even during periods of broader market softening.`,
-    relatedCommunities: ["westlake-hills", "lake-austin-waterfront", "rollingwood", "texas-hill-country-estates"],
+    relatedCommunities: ["westlake-hills", "lake-austin", "rollingwood", "texas-hill-country-estates"],
     faqs: [
       { question: "Is Barton Creek a gated community?", answer: "Yes. Barton Creek is a gated, master-planned community with 24/7 security staffing. The gated entrance provides privacy and exclusivity for residents while maintaining convenient access to Austin via Loop 360 and MoPac." },
       { question: "How many golf courses are in Barton Creek?", answer: "Barton Creek features four championship golf courses designed by Tom Fazio, Ben Crenshaw, and Arnold Palmer, all accessible through the Barton Creek Country Club. Membership provides access to golf, tennis, swimming, dining, and spa facilities." },
@@ -235,100 +235,6 @@ The combination of country club amenities, top schools, and proximity to Austin'
       { question: "What school district is Barton Creek in?", answer: "Barton Creek is served by the Eanes Independent School District, including Barton Creek Elementary, Hill Country Middle School, and Westlake High School—all consistently ranked among the top schools in Texas." },
       { question: "Can you hike in Barton Creek?", answer: "Yes. The Barton Creek Greenbelt runs directly through the community, offering residents private trail access to over 12 miles of hiking and mountain biking paths, natural swimming holes like Sculpture Falls and Twin Falls, and rock climbing." },
       { question: "Is Barton Creek still building new homes?", answer: "Barton Creek is approaching build-out, meaning remaining homesites are increasingly rare and valuable. Some teardown-and-rebuild opportunities exist on older lots, but the limited supply of new construction drives premium pricing." }
-    ]
-  },
-  {
-    slug: "lake-austin-waterfront",
-    name: "Lake Austin Waterfront",
-    heroTitle: "Lake Austin Waterfront Homes for Sale",
-    metaTitle: "Lake Austin Homes for Sale | Echelon Property Group",
-    metaDescription: "Explore luxury waterfront homes on Lake Austin TX. Private docks, stunning lake views, and resort-style living from $2M to $25M+.",
-    priceRange: "$2M – $25M+",
-    image: lakeAustinImg,
-    overview: `Lake Austin waterfront real estate represents the pinnacle of luxury living in Central Texas. The lake stretches approximately 21 miles along the Colorado River between Tom Miller Dam and Mansfield Dam.
-
-### Constant Water Level
-
-Unlike Lake Travis, which experiences significant water level fluctuations, Lake Austin maintains a constant level. This makes it ideal for private docks, boathouses, and year-round water activities.
-
-### Property Types
-
-Waterfront homes range from mid-century lakeside retreats to grand contemporary estates. Many feature:
-- Private boat docks and boathouses
-- Infinity-edge pools merging with the lake
-- Outdoor kitchens and terraced gardens
-- Expansive glass walls framing water views
-
-### Scarcity & Exclusivity
-
-With limited shoreline and strict development regulations, waterfront properties rarely come to market. Off-market transactions are common in this segment.`,
-    lifestyle: `### Life on the Water
-
-Residents spend days boating, waterskiing, wakeboarding, paddleboarding, and fishing on calm, constant-level waters. Many homes feature private docks with boat lifts and covered entertaining areas.
-
-### Social Scene
-
-Neighbors often connect by boat, cruising to waterfront restaurants like Hula Hut, Abel's on the Lake, and Ski Shores Café. Weekend dock gatherings and the annual holiday boat parade are community traditions.
-
-### Proximity to Austin
-
-Most waterfront properties are located 10 to 20 minutes from downtown. Surrounding neighborhoods like Westlake Hills, Tarrytown, and Rob Roy provide additional community amenities and top-rated schools.`,
-    marketInsights: `### Pricing
-
-Median waterfront home prices exceed $4 million. Premium properties regularly trade between $8 million and $25 million or more.
-
-### Price Per Front Foot
-
-Shoreline pricing ranges from $10,000 to $30,000 per linear foot of water frontage. Properties with deep water, gentle slopes, and western exposure command the highest premiums.
-
-### Extremely Low Inventory
-
-Only a handful of true waterfront properties trade each year. Many transactions occur off-market through private networks, making a connected local specialist essential.
-
-### Appreciation
-
-Lake Austin waterfront has historically exceeded appreciation rates of non-waterfront luxury homes. The fixed shoreline supply and Austin's growth create a fundamental imbalance that supports continued price growth.`,
-    amenitiesAndSchools: `### School Districts
-
-Depending on location, properties are served by:
-- Eanes ISD (north shore — Westlake High School)
-- Austin ISD (south shore — Austin High School)
-- Lake Travis ISD
-
-### Private Schools
-
-Nearby options include St. Andrew's Episcopal School, St. Stephen's Episcopal School, and Regents School of Austin.
-
-### Marina & Recreation
-
-Several full-service marinas offer boat storage, maintenance, fuel, and rentals. The Austin Yacht Club and Lake Austin Spa Resort provide additional amenities.
-
-### Shopping & Dining
-
-High-end grocers, boutique retailers, and acclaimed restaurants are all within a short drive in Westlake Hills, Tarrytown, and downtown Austin.`,
-    investmentPotential: `### Proven Performance
-
-Properties purchased a decade ago have, in many cases, more than doubled in value. The finite shoreline ensures demand will continue to outpace supply.
-
-### Renovation Opportunities
-
-Acquiring older waterfront homes for renovation or teardown-and-rebuild projects can achieve significantly higher valuations with modern amenities and design.
-
-### Luxury Rental Market
-
-Weekly rates for premium waterfront homes range from $5,000 to $20,000 during peak season, providing attractive income opportunities for investors.
-
-### Long-Term Outlook
-
-The ongoing influx of high-net-worth individuals and corporate executives relocating to Austin supports sustained appreciation for Lake Austin waterfront property.`,
-    relatedCommunities: ["westlake-hills", "tarrytown", "barton-creek", "rollingwood"],
-    faqs: [
-      { question: "Does Lake Austin water level fluctuate?", answer: "No. Unlike Lake Travis, Lake Austin is a constant-level lake, making it ideal for private docks, boathouses, and year-round water activities. This consistent water level is a major advantage for waterfront homeowners." },
-      { question: "How much do waterfront homes on Lake Austin cost?", answer: "Lake Austin waterfront homes typically range from $2 million to over $25 million. Price per front foot of shoreline ranges from $10,000 to $30,000, with premium properties featuring deep water, sunset views, and gentle slopes commanding the highest prices." },
-      { question: "Can I build a dock on Lake Austin?", answer: "Dock construction and modifications require a permit from the Lower Colorado River Authority (LCRA). Existing dock permits are valuable assets that transfer with property purchases. New dock permits are available but subject to environmental review." },
-      { question: "How far is Lake Austin from downtown?", answer: "Most Lake Austin waterfront properties are located 10 to 20 minutes from downtown Austin, making it remarkably convenient for daily commuting while enjoying a resort-like waterfront lifestyle." },
-      { question: "Are Lake Austin homes a good investment?", answer: "Lake Austin waterfront is one of the strongest-performing real estate investments in Texas. The finite shoreline, constant water level, and Austin's growth create permanent scarcity. Historical appreciation has averaged 8-12% annually over the past decade." },
-      { question: "What water activities are available on Lake Austin?", answer: "Lake Austin offers boating, waterskiing, wakeboarding, paddleboarding, kayaking, fishing, and swimming. The calm, constant-level waters and designated activity zones accommodate all types of recreation." }
     ]
   },
   {
@@ -417,7 +323,7 @@ Acquiring original homes on large lots (7,000+ sq ft) and building new can gener
 ### Growth Tailwinds
 
 As Austin's tech economy expands, demand for walkable, centrally located neighborhoods like Tarrytown continues to intensify. Proximity to downtown, the university, and major employment centers ensures broad buyer demand.`,
-    relatedCommunities: ["westlake-hills", "lake-austin-waterfront", "downtown-austin-condos", "rollingwood"],
+    relatedCommunities: ["westlake-hills", "lake-austin", "downtown-austin-condos", "rollingwood"],
     faqs: [
       { question: "What makes Tarrytown Austin a desirable neighborhood?", answer: "Tarrytown offers a rare combination of central location (minutes from downtown), tree-canopied walkable streets, excellent schools (Casis Elementary), proximity to Lady Bird Lake and Deep Eddy Pool, and eclectic architectural character spanning 1930s bungalows to contemporary estates." },
       { question: "What school zone is Tarrytown Austin in?", answer: "Tarrytown is served by Austin ISD, with homes primarily zoned to Casis Elementary School (one of the highest-performing in the district), O. Henry Middle School, and Austin High School. St. Andrew's Episcopal School, a top private school, is also located within the neighborhood." },
@@ -498,7 +404,7 @@ The teardown-rebuild market offers strong returns. The spread between lot value 
 ### Rental Appeal
 
 High-quality tenants — often executives on temporary assignments or families exploring the area — pay premium rents for Eanes ISD enrollment and proximity to central Austin.`,
-    relatedCommunities: ["westlake-hills", "barton-creek", "tarrytown", "lake-austin-waterfront"],
+    relatedCommunities: ["westlake-hills", "barton-creek", "tarrytown", "lake-austin"],
     faqs: [
       { question: "Is Rollingwood in Eanes ISD?", answer: "Yes. Rollingwood is served by the Eanes Independent School District, with children typically attending Eanes Elementary, Hill Country Middle School, and Westlake High School—all among the top-ranked schools in Texas." },
       { question: "How big is Rollingwood Austin?", answer: "Rollingwood is a small incorporated city of less than one square mile with approximately 1,500 residents. Its compact size creates a walkable, close-knit community with a strong neighborhood identity." },
@@ -682,7 +588,7 @@ Google, Meta, Apple, Amazon, and Oracle maintain significant Austin operations, 
 ### Best Opportunities
 
 Units with efficient layouts, desirable views, and premium building amenities generate the strongest rental demand and long-term appreciation.`,
-    relatedCommunities: ["travis-heights", "tarrytown", "westlake-hills", "lake-austin-waterfront"],
+    relatedCommunities: ["travis-heights", "tarrytown", "westlake-hills", "lake-austin"],
     faqs: [
       { question: "What are the best condo buildings in downtown Austin?", answer: "Top luxury condo buildings include The Independent (Austin's tallest at 58 stories), The Austonian, Four Seasons Residences, Spring, W Hotel Residences, and 70 Rainey. Each offers distinct amenities, views, and lifestyle experiences." },
       { question: "How much do downtown Austin condos cost?", answer: "Downtown Austin condos range from approximately $400,000 for one-bedroom units in older buildings to over $10 million for penthouses in premier towers. Price per square foot ranges from $400 to over $1,500 depending on building, floor, and views." },
@@ -876,7 +782,7 @@ Prime acreage near Austin has appreciated 10-15% annually over the past five yea
 ### Tax Advantages
 
 Agricultural exemptions can reduce property taxes by 90% or more on qualifying land. Combined with no state income tax, the Hill Country offers compelling investment economics.`,
-    relatedCommunities: ["dripping-springs", "barton-creek", "lake-austin-waterfront", "westlake-hills"],
+    relatedCommunities: ["dripping-springs", "barton-creek", "lake-austin", "westlake-hills"],
     faqs: [
       { question: "How much does a ranch cost in the Texas Hill Country?", answer: "Hill Country ranch properties range from $1 million for smaller boutique estates (10-50 acres) to over $30 million for large working ranches with thousands of acres. Price per acre ranges from $5,000 to $15,000+ for improved land near Austin." },
       { question: "Can you run cattle on Hill Country land?", answer: "Yes. Many Hill Country properties support cattle, horses, and other livestock. Agricultural use qualifies for agricultural tax exemptions, significantly reducing property tax liability. Working ranches with existing infrastructure are available across the region." },
@@ -1066,7 +972,7 @@ The expansion of Austin's tech sector and influx of high-net-worth professionals
 ### Premium Features
 
 Properties with golf course frontage, exceptional views, or unique architecture command substantial premiums and tend to appreciate faster than the broader market.`,
-    relatedCommunities: ["barton-creek", "westlake-hills", "lake-austin-waterfront", "texas-hill-country-estates"],
+    relatedCommunities: ["barton-creek", "westlake-hills", "lake-austin", "texas-hill-country-estates"],
     faqs: [
       { question: "What is Spanish Oaks in Austin?", answer: "Spanish Oaks is one of the most prestigious gated communities in the Austin area. Located just west of downtown Austin in the Texas Hill Country, the neighborhood is known for luxury estate homes, large private lots, and the exclusive Spanish Oaks Golf Club." },
       { question: "Is Spanish Oaks a gated community?", answer: "Yes. Spanish Oaks is a fully gated community with 24-hour guard-gated security, offering privacy and controlled access for residents and guests." },
@@ -1154,7 +1060,7 @@ The range from mid-century homes to luxury estates provides opportunities at mul
 ### Tech Economy Benefit
 
 Proximity to Apple, Google, Meta, and other major employers makes these neighborhoods highly desirable for relocating professionals. Properties with exceptional views or large lots hold value well during market fluctuations.`,
-    relatedCommunities: ["tarrytown", "westlake-hills", "rollingwood", "lake-austin-waterfront"],
+    relatedCommunities: ["tarrytown", "westlake-hills", "rollingwood", "lake-austin"],
     faqs: [
       { question: "Where are Cat Mountain and Northwest Hills located?", answer: "Cat Mountain and Northwest Hills are established hillside neighborhoods located in northwest Austin, just a short drive from downtown Austin and The Domain." },
       { question: "What are Cat Mountain and Northwest Hills known for?", answer: "These neighborhoods are known for elevated homes with canyon views, quiet residential streets, mature oak trees and natural landscapes, and proximity to downtown Austin. Many homes sit on hillsides overlooking greenbelts and the surrounding Texas Hill Country." },

@@ -202,7 +202,7 @@ const OffMarketHomes = () => {
                 Off-market listings—also known as pocket listings, private exclusives, or whisper listings—are properties available for sale that are not publicly advertised on the MLS, Zillow, Realtor.com, or other consumer-facing real estate platforms. Instead, these homes are marketed quietly through agent-to-agent networks, private buyer lists, and direct outreach to qualified purchasers.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                In Austin's luxury real estate market, off-market transactions represent a significant and growing share of high-end sales. Industry estimates suggest that 15% to 30% of luxury transactions in Austin's top neighborhoods occur off-market, with the percentage even higher in the most exclusive segments such as <Link to="/communities/lake-austin-waterfront" className="text-foreground underline hover:text-muted-foreground">Lake Austin waterfront</Link> properties and ultra-luxury estates in <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">Westlake Hills</Link>.
+                In Austin's luxury real estate market, off-market transactions represent a significant and growing share of high-end sales. Industry estimates suggest that 15% to 30% of luxury transactions in Austin's top neighborhoods occur off-market, with the percentage even higher in the most exclusive segments such as <Link to="/communities/lake-austin" className="text-foreground underline hover:text-muted-foreground">Lake Austin waterfront</Link> properties and ultra-luxury estates in <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">Westlake Hills</Link>.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 The prevalence of off-market activity in Austin reflects the city's maturing luxury market, where high-net-worth sellers and buyers increasingly prioritize privacy, discretion, and strategic positioning over maximum public exposure. For buyers, this means that limiting your search to publicly listed properties means missing a substantial portion of available inventory.
@@ -260,7 +260,7 @@ const OffMarketHomes = () => {
                 <div className="border-l-2 border-border pl-6">
                   <h3 className="text-lg font-medium text-foreground mb-2">First Access to Inventory</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Many luxury properties are marketed off-market first, with the option to go public if a private sale doesn't materialize. Buyers with off-market access see these properties before the broader market, providing a critical timing advantage. On <Link to="/communities/lake-austin-waterfront" className="text-foreground underline hover:text-muted-foreground">Lake Austin</Link>, where waterfront homes rarely come to market, early access can mean the difference between acquiring a property and watching it sell to someone else.
+                    Many luxury properties are marketed off-market first, with the option to go public if a private sale doesn't materialize. Buyers with off-market access see these properties before the broader market, providing a critical timing advantage. On <Link to="/communities/lake-austin" className="text-foreground underline hover:text-muted-foreground">Lake Austin</Link>, where waterfront homes rarely come to market, early access can mean the difference between acquiring a property and watching it sell to someone else.
                   </p>
                 </div>
                 <div className="border-l-2 border-border pl-6">
@@ -288,7 +288,7 @@ const OffMarketHomes = () => {
               </p>
               <div className="grid sm:grid-cols-2 gap-6">
                 {[
-                  { name: "Lake Austin Waterfront", slug: "lake-austin-waterfront", note: "Highest off-market activity. Limited shoreline creates extreme scarcity." },
+                  { name: "Lake Austin", slug: "lake-austin", note: "Highest off-market activity. Limited shoreline creates extreme scarcity." },
                   { name: "Westlake Hills", slug: "westlake-hills", note: "High-profile residents value privacy. Many estates trade privately." },
                   { name: "Barton Creek", slug: "barton-creek", note: "Approaching build-out. Remaining opportunities often surface off-market." },
                   { name: "Tarrytown", slug: "tarrytown", note: "Active teardown-rebuild market with off-market lot acquisitions." },

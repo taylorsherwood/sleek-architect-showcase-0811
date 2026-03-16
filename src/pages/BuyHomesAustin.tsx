@@ -53,7 +53,7 @@ const BuyHomesAustin = () => {
                 Austin, Texas has consistently ranked among the best places to live in America — and for good reason. The city combines a booming technology economy with no state income tax, year-round outdoor recreation, a world-class cultural scene, and some of the most diverse luxury real estate options in the country.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                For homebuyers, Austin offers exceptional value compared to coastal markets. Luxury homes that would command $8–15 million in the Bay Area, Los Angeles, or New York can be purchased for $3–7 million in neighborhoods like <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">Westlake Hills</Link>, <Link to="/communities/barton-creek" className="text-foreground underline hover:text-muted-foreground">Barton Creek</Link>, and <Link to="/communities/lake-austin-waterfront" className="text-foreground underline hover:text-muted-foreground">Lake Austin</Link>. Combined with income tax savings, the financial case for buying in Austin is compelling.
+                For homebuyers, Austin offers exceptional value compared to coastal markets. Luxury homes that would command $8–15 million in the Bay Area, Los Angeles, or New York can be purchased for $3–7 million in neighborhoods like <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">Westlake Hills</Link>, <Link to="/communities/barton-creek" className="text-foreground underline hover:text-muted-foreground">Barton Creek</Link>, and <Link to="/communities/lake-austin" className="text-foreground underline hover:text-muted-foreground">Lake Austin</Link>. Combined with income tax savings, the financial case for buying in Austin is compelling.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 Whether you're relocating from out of state, upgrading within the Austin market, or purchasing an investment property, understanding the nuances of Austin's neighborhoods, school districts, and market dynamics is essential to making the right decision.
@@ -77,7 +77,7 @@ const BuyHomesAustin = () => {
                   <p className="text-muted-foreground text-sm">Best for golf, gated community, resort amenities. $1.5M–$15M+</p>
                 </div>
                 <div className="border-l-2 border-gold pl-6">
-                  <h3 className="text-lg font-medium mb-1"><Link to="/communities/lake-austin-waterfront" className="hover:text-muted-foreground transition-colors">Lake Austin</Link></h3>
+                  <h3 className="text-lg font-medium mb-1"><Link to="/communities/lake-austin" className="hover:text-muted-foreground transition-colors">Lake Austin</Link></h3>
                   <p className="text-muted-foreground text-sm">Best for waterfront lifestyle, private docks, highest appreciation. $2M–$25M+</p>
                 </div>
                 <div className="border-l-2 border-gold pl-6">

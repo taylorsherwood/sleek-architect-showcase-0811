@@ -68,7 +68,7 @@ const AustinRealEstateInvestment = () => {
                 <div>
                   <h3 className="text-xl font-display font-medium mb-3">Luxury Residential Buy-and-Hold</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Supply-constrained neighborhoods like <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">Westlake Hills</Link>, <Link to="/communities/lake-austin-waterfront" className="text-foreground underline hover:text-muted-foreground">Lake Austin</Link>, and <Link to="/communities/barton-creek" className="text-foreground underline hover:text-muted-foreground">Barton Creek</Link> offer the most reliable long-term appreciation. Limited buildable lots, top-tier schools, and sustained demand from tech-economy growth create a foundation for 7–12% average annual appreciation.
+                    Supply-constrained neighborhoods like <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">Westlake Hills</Link>, <Link to="/communities/lake-austin" className="text-foreground underline hover:text-muted-foreground">Lake Austin</Link>, and <Link to="/communities/barton-creek" className="text-foreground underline hover:text-muted-foreground">Barton Creek</Link> offer the most reliable long-term appreciation. Limited buildable lots, top-tier schools, and sustained demand from tech-economy growth create a foundation for 7–12% average annual appreciation.
                   </p>
                 </div>
                 <div>

@@ -87,7 +87,7 @@ const LuxuryRealEstateAustin = () => {
                 </div>
                 <div className="border-l-2 border-gold pl-6">
                   <h3 className="text-xl font-display font-medium mb-2">
-                    <Link to="/communities/lake-austin-waterfront" className="hover:text-muted-foreground transition-colors">Lake Austin Waterfront</Link> — $2M to $25M+
+                    <Link to="/communities/lake-austin" className="hover:text-muted-foreground transition-colors">Lake Austin Waterfront</Link> — $2M to $25M+
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
                     The pinnacle of Austin luxury. Constant-level lake, private docks, and extreme scarcity create the strongest appreciation profile in the metro. Many transactions occur off-market.
@@ -125,7 +125,7 @@ const LuxuryRealEstateAustin = () => {
                 What Areas of Austin Are Best for Investment Property?
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Austin's investment fundamentals remain strong across multiple strategies. Supply-constrained neighborhoods like <Link to="/communities/lake-austin-waterfront" className="text-foreground underline hover:text-muted-foreground">Lake Austin waterfront</Link> and <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">Westlake Hills</Link> offer the most reliable long-term appreciation due to permanently limited inventory.
+                Austin's investment fundamentals remain strong across multiple strategies. Supply-constrained neighborhoods like <Link to="/communities/lake-austin" className="text-foreground underline hover:text-muted-foreground">Lake Austin waterfront</Link> and <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">Westlake Hills</Link> offer the most reliable long-term appreciation due to permanently limited inventory.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 Value-add opportunities in established neighborhoods like <Link to="/communities/tarrytown" className="text-foreground underline hover:text-muted-foreground">Tarrytown</Link> and <Link to="/communities/rollingwood" className="text-foreground underline hover:text-muted-foreground">Rollingwood</Link> provide compelling renovation and teardown-rebuild economics. Growth-corridor land in <Link to="/communities/dripping-springs" className="text-foreground underline hover:text-muted-foreground">Dripping Springs</Link> continues to appreciate as Austin expands westward.

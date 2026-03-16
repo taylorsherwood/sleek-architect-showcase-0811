@@ -28,7 +28,7 @@ import catMountain from "@/assets/community-cat-mountain.jpg";
 const imageMap: Record<string, string> = {
   "barton-creek": bartonCreek,
   "westlake-hills": westlake,
-  "lake-austin-waterfront": lakeAustin,
+  "lake-austin": lakeAustin,
   "rollingwood": rollingwood,
   "texas-hill-country-estates": hillCountry,
   "travis-heights": travisHeights,

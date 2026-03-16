@@ -135,7 +135,7 @@ const HomeValueAustin = () => {
                 For luxury properties in communities like{" "}
                 <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">Westlake Hills</Link>,{" "}
                 <Link to="/communities/barton-creek" className="text-foreground underline hover:text-muted-foreground">Barton Creek</Link>,{" "}
-                <Link to="/communities/lake-austin-waterfront" className="text-foreground underline hover:text-muted-foreground">Lake Austin</Link>, and{" "}
+                <Link to="/communities/lake-austin" className="text-foreground underline hover:text-muted-foreground">Lake Austin</Link>, and{" "}
                 <Link to="/communities/tarrytown" className="text-foreground underline hover:text-muted-foreground">Tarrytown</Link>, 
                 where each property is unique and comparable sales are limited, this hands-on approach 
                 produces significantly more accurate valuations than mass-market estimation tools.

@@ -223,7 +223,7 @@ Buyers relocating from cities like San Francisco or Los Angeles often find that 
 
 Luxury properties in neighborhoods like <a href="/communities/westlake-hills" class="text-foreground underline hover:text-muted-foreground">Westlake Hills</a>, <a href="/communities/barton-creek" class="text-foreground underline hover:text-muted-foreground">Barton Creek</a>, and <a href="/communities/tarrytown" class="text-foreground underline hover:text-muted-foreground">Tarrytown</a> frequently offer larger homes, more land, and better views compared with similarly priced homes in California.
 
-Waterfront estates on <a href="/communities/lake-austin-waterfront" class="text-foreground underline hover:text-muted-foreground">Lake Austin</a>, for example, provide a lifestyle that combines luxury living with outdoor recreation such as boating, paddleboarding, and lakeside entertaining.
+Waterfront estates on <a href="/communities/lake-austin" class="text-foreground underline hover:text-muted-foreground">Lake Austin</a>, for example, provide a lifestyle that combines luxury living with outdoor recreation such as boating, paddleboarding, and lakeside entertaining.
 
 ## Best Austin Neighborhoods for Relocating Buyers
 

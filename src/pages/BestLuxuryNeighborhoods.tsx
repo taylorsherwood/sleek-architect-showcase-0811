@@ -16,7 +16,7 @@ const faqs = [
 const neighborhoods = [
   { name: "Westlake Hills", slug: "westlake-hills", price: "$1.2M – $20M+", highlight: "Top-rated Eanes ISD, panoramic Hill Country views, estate living minutes from downtown", best: "Families seeking top schools, tech executives, prestige buyers" },
   { name: "Barton Creek", slug: "barton-creek", price: "$1.5M – $15M+", highlight: "World-class golf, gated community, Barton Creek Greenbelt access", best: "Golf enthusiasts, families, buyers seeking resort-style amenities" },
-  { name: "Lake Austin Waterfront", slug: "lake-austin-waterfront", price: "$2M – $25M+", highlight: "Constant-level lake, private docks, extreme scarcity", best: "Waterfront lifestyle seekers, trophy property buyers, investors" },
+  { name: "Lake Austin", slug: "lake-austin", price: "$2M – $25M+", highlight: "Constant-level lake, private docks, extreme scarcity", best: "Waterfront lifestyle seekers, trophy property buyers, investors" },
   { name: "Tarrytown", slug: "tarrytown", price: "$800K – $8M+", highlight: "Walkable streets, eclectic architecture, central Austin location", best: "Urban lifestyle buyers, walkability prioritizers, young families" },
   { name: "Rollingwood", slug: "rollingwood", price: "$1M – $5M+", highlight: "Small-town charm, Zilker Park proximity, Eanes ISD schools", best: "Families, outdoor enthusiasts, value-conscious luxury buyers" },
   { name: "Travis Heights", slug: "travis-heights", price: "$600K – $4M+", highlight: "Downtown skyline views, South Congress walkability, creative energy", best: "Creative professionals, empty-nesters, lifestyle-driven buyers" },
@@ -114,7 +114,7 @@ const BestLuxuryNeighborhoods = () => {
                 <div>
                   <h3 className="text-xl font-display font-medium mb-2">Waterfront Living</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    <Link to="/communities/lake-austin-waterfront" className="text-foreground underline hover:text-muted-foreground">Lake Austin waterfront</Link> is the undisputed choice for lakeside luxury. Constant water levels, private docks, and proximity to downtown create a lifestyle that rivals the best waterfront communities in the country.
+                    <Link to="/communities/lake-austin" className="text-foreground underline hover:text-muted-foreground">Lake Austin waterfront</Link> is the undisputed choice for lakeside luxury. Constant water levels, private docks, and proximity to downtown create a lifestyle that rivals the best waterfront communities in the country.
                   </p>
                 </div>
                 <div>
@@ -132,7 +132,7 @@ const BestLuxuryNeighborhoods = () => {
                 <div>
                   <h3 className="text-xl font-display font-medium mb-2">Investment Strength</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    All Austin luxury neighborhoods have demonstrated strong appreciation, with <Link to="/communities/lake-austin-waterfront" className="text-foreground underline hover:text-muted-foreground">Lake Austin waterfront</Link> and <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">Westlake Hills</Link> historically leading in long-term value growth due to permanent supply constraints.
+                    All Austin luxury neighborhoods have demonstrated strong appreciation, with <Link to="/communities/lake-austin" className="text-foreground underline hover:text-muted-foreground">Lake Austin waterfront</Link> and <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">Westlake Hills</Link> historically leading in long-term value growth due to permanent supply constraints.
                   </p>
                 </div>
               </div>

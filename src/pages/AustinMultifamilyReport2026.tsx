@@ -403,7 +403,7 @@ const AustinMultifamilyReport2026 = () => {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-primary text-primary-foreground hover:bg-primary/90 py-6 text-sm tracking-widest uppercase font-medium"
+                  className="w-full bg-primary text-primary-foreground hover:bg-[hsl(var(--gold))] hover:text-white py-6 text-sm tracking-widest uppercase font-medium transition-all duration-200"
                 >
                   {isSubmitting ? "Sending…" : "GET THE REPORT"}
                 </Button>

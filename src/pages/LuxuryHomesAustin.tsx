@@ -50,12 +50,12 @@ const LuxuryHomesAustin = () => {
       {/* RealScout Shared Search */}
       <section className="pb-20">
         <div className="container mx-auto px-6">
-          <div className="max-w-7xl mx-auto">
+          <div className="max-w-7xl mx-auto overflow-hidden rounded-sm">
             <iframe
               src="https://taylorsherwood.realscout.com/homesearch/map?pmin=1500000&ptype=SFR&geo_type=city&geo_id=4805000&for_sale=1&for_rent=0"
               title="Austin luxury homes for sale — RealScout search"
-              className="w-full border-0 rounded-sm"
-              style={{ height: "800px" }}
+              className="border-0"
+              style={{ height: "800px", width: "calc(100% + 420px)", marginLeft: "-420px" }}
               loading="lazy"
               allowFullScreen
             />

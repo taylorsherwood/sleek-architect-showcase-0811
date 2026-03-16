@@ -143,7 +143,7 @@ const neighborhoods = [
 },
 {
   name: "Lake Austin & Lake Travis",
-  slug: "lake-austin-waterfront",
+  slug: "lake-austin",
   image: lakeAustinImg,
   description:
   "Waterfront estates on Lake Austin and Lake Travis offer private docks, panoramic water views, and a resort lifestyle minutes from downtown."

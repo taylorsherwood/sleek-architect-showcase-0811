@@ -25,7 +25,7 @@ const Footer = () => {
               <div className="space-y-2">
                 <Link to="/communities/westlake-hills" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Westlake Hills</Link>
                 <Link to="/communities/barton-creek" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Barton Creek</Link>
-                <Link to="/communities/lake-austin-waterfront" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Lake Austin</Link>
+                <Link to="/communities/lake-austin" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Lake Austin</Link>
                 <Link to="/communities/tarrytown" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Tarrytown</Link>
                 <Link to="/communities/rollingwood" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Rollingwood</Link>
                 <Link to="/communities/dripping-springs" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Dripping Springs</Link>

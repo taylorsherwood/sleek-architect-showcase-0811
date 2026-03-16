@@ -288,7 +288,7 @@ const OffMarketHomes = () => {
               </p>
               <div className="grid sm:grid-cols-2 gap-6">
                 {[
-                  { name: "Lake Austin Waterfront", slug: "lake-austin-waterfront", note: "Highest off-market activity. Limited shoreline creates extreme scarcity." },
+                  { name: "Lake Austin", slug: "lake-austin", note: "Highest off-market activity. Limited shoreline creates extreme scarcity." },
                   { name: "Westlake Hills", slug: "westlake-hills", note: "High-profile residents value privacy. Many estates trade privately." },
                   { name: "Barton Creek", slug: "barton-creek", note: "Approaching build-out. Remaining opportunities often surface off-market." },
                   { name: "Tarrytown", slug: "tarrytown", note: "Active teardown-rebuild market with off-market lot acquisitions." },

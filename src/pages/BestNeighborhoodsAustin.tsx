@@ -108,7 +108,7 @@ const waterfrontNeighborhoods = [
 {
   name: "Lake Austin",
   slug: "/lake-austin-waterfront-homes-for-sale",
-  existingSlug: "/communities/lake-austin-waterfront",
+  existingSlug: "/communities/lake-austin",
   description:
   "Lake Austin is a constant-level reservoir offering Austin's most exclusive waterfront living. Properties feature private docks, boathouses, and direct deep-water access with panoramic lake views.",
   prices: "$2M – $25M+",

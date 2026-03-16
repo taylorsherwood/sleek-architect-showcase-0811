@@ -447,18 +447,28 @@ const AustinMultifamilyReport2026 = () => {
 
       {/* ════════ STICKY CTA ════════ */}
       <div
-        className={`fixed bottom-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur-sm border-t border-primary-foreground/10 py-3 px-6 transition-all duration-300 ${
+        className={`fixed bottom-0 left-0 right-0 z-50 backdrop-blur-sm border-t py-3 px-6 transition-all duration-300 ${
+          stickyInverted
+            ? "bg-white/95 border-[#0C0F24]/10"
+            : "bg-primary/95 border-primary-foreground/10"
+        } ${
           showSticky ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"
         }`}
       >
         <div className="container mx-auto flex items-center justify-between gap-4 max-w-5xl">
-          <p className="text-primary-foreground text-sm font-medium hidden sm:block">
+          <p className={`text-sm font-medium hidden sm:block transition-colors duration-300 ${
+            stickyInverted ? "text-[#0C0F24]" : "text-primary-foreground"
+          }`}>
             Download 2026 Austin Multifamily Report
           </p>
           <Button
             onClick={scrollToForm}
             size="sm"
-            className="bg-[hsl(var(--gold))] text-primary-foreground hover:bg-[hsl(var(--gold-light))] text-xs tracking-widest uppercase font-medium px-6 py-2 ml-auto sm:ml-0 transition-all duration-200"
+            className={`text-xs tracking-widest uppercase font-medium px-6 py-2 ml-auto sm:ml-0 transition-all duration-300 ${
+              stickyInverted
+                ? "bg-[#0C0F24] text-white hover:bg-[#0C0F24]/90"
+                : "bg-[hsl(var(--gold))] text-primary-foreground hover:bg-[hsl(var(--gold-light))]"
+            }`}
           >
             <ArrowDown className="h-3.5 w-3.5 mr-1.5" />
             Get the Report

@@ -4,9 +4,9 @@ const RealScoutSearch = () => {
   return (
     <section className="bg-background pt-16 pb-20 md:pt-20 md:pb-28">
       <div className="container mx-auto px-6">
-        <div className="mx-auto max-w-4xl">
-          {/* Editorial heading */}
-          <header className="mb-10 md:mb-14 text-center">
+        {/* Heading — narrower than card for visual hierarchy */}
+        <div className="mx-auto max-w-3xl">
+          <header className="mb-12 md:mb-16 text-center">
             <p
               className="text-[10px] md:text-[11px] tracking-[0.4em] uppercase mb-5 font-medium text-foreground/40"
             >
@@ -22,10 +22,12 @@ const RealScoutSearch = () => {
               Search luxury homes, land, and investment opportunities across Austin's most coveted neighborhoods.
             </p>
           </header>
+        </div>
 
-          {/* Premium card container — no overlays, widget fully interactive */}
+        {/* Card — wider than heading for premium presence */}
+        <div className="mx-auto max-w-5xl">
           <div
-            className="bg-background rounded-lg border border-border/60 p-5 md:p-8"
+            className="bg-background rounded-lg border border-border/60 p-5 md:p-10"
             style={{
               boxShadow: "0 4px 24px -4px hsl(var(--foreground) / 0.06), 0 1px 3px hsl(var(--foreground) / 0.03)",
             }}

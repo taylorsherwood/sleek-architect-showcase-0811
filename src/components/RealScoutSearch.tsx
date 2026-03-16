@@ -7,7 +7,7 @@ const RealScoutSearch = () => {
     if (!containerRef.current) return;
 
     // Create the RealScout advanced search web component
-    const el = document.createElement("realscout-simple-search");
+    const el = document.createElement("realscout-advanced-search");
     el.setAttribute("agent-encoded-id", "QWdlbnQtMjg5NDU2");
     containerRef.current.appendChild(el);
 

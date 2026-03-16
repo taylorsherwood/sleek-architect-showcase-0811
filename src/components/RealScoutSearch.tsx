@@ -27,7 +27,7 @@ const RealScoutSearch = () => {
         {/* Card — wider than heading for premium presence */}
         <div className="mx-auto max-w-5xl">
           <div
-            className="bg-background rounded-lg border border-border/60 p-5 md:p-10"
+            className="bg-background rounded-lg border border-border/30 p-5 md:p-10"
             style={{
               boxShadow: "0 4px 24px -4px hsl(var(--foreground) / 0.06), 0 1px 3px hsl(var(--foreground) / 0.03)",
             }}

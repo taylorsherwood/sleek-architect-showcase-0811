@@ -229,7 +229,7 @@ const AustinMultifamilyReport2026 = () => {
                   variant="outline"
                   className="border-primary-foreground/30 bg-transparent text-primary-foreground hover:bg-primary-foreground hover:text-primary hover:border-primary-foreground px-8 py-6 text-sm tracking-widest uppercase font-medium transition-all duration-300 shadow-sm hover:shadow-md"
                 >
-                  <Link to="/connect">Schedule a Consultation</Link>
+                  <Link to="/contact">Schedule a Consultation</Link>
                 </Button>
               </div>
             </div>

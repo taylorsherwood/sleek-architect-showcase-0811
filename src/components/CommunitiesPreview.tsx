@@ -30,7 +30,7 @@ const communities = [
 
 const CommunitiesPreview = () => {
   return (
-    <section className="pt-28 pb-20 bg-secondary">
+    <section className="pt-28 pb-28 bg-secondary">
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">

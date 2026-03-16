@@ -10,19 +10,19 @@ import communityLakeAustin from "@/assets/community-lake-austin.jpg";
 import communityRollingwood from "@/assets/community-rollingwood.jpg";
 
 const neighborhoods = [
-  { name: "Westlake Hills", slug: "/communities/westlake-hills", image: communityWestlake, desc: "Hilltop estates with panoramic Hill Country views and Eanes ISD schools." },
-  { name: "Barton Creek", slug: "/communities/barton-creek", image: communityBartonCreek, desc: "Gated golf community with championship courses and estate-sized lots." },
-  { name: "Lake Austin", slug: "/communities/lake-austin", image: communityLakeAustin, desc: "Waterfront estates with private docks and resort-style living." },
-  { name: "Rollingwood", slug: "/communities/rollingwood", image: communityRollingwood, desc: "Intimate enclave between Zilker Park and Westlake Hills." },
-];
+{ name: "Westlake Hills", slug: "/communities/westlake-hills", image: communityWestlake, desc: "Hilltop estates with panoramic Hill Country views and Eanes ISD schools." },
+{ name: "Barton Creek", slug: "/communities/barton-creek", image: communityBartonCreek, desc: "Gated golf community with championship courses and estate-sized lots." },
+{ name: "Lake Austin", slug: "/communities/lake-austin", image: communityLakeAustin, desc: "Waterfront estates with private docks and resort-style living." },
+{ name: "Rollingwood", slug: "/communities/rollingwood", image: communityRollingwood, desc: "Intimate enclave between Zilker Park and Westlake Hills." }];
+
 
 const LuxuryHomesAustin = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Luxury Homes for Sale in Austin TX"
-        description="Explore luxury homes for sale in Austin, TX including Westlake, Barton Creek, Tarrytown, Rollingwood, and Lake Austin waterfront estates. Browse Austin luxury real estate listings above $1.5M."
-      />
+        description="Explore luxury homes for sale in Austin, TX including Westlake, Barton Creek, Tarrytown, Rollingwood, and Lake Austin waterfront estates. Browse Austin luxury real estate listings above $1.5M." />
+      
       <SchemaMarkup schema={realEstateAgentSchema} />
       <Navigation />
 
@@ -32,12 +32,12 @@ const LuxuryHomesAustin = () => {
           <div className="max-w-7xl mx-auto">
             <p
               className="text-gold mb-5 font-semibold"
-              style={{ fontSize: "0.6rem", letterSpacing: "0.35em", textTransform: "uppercase", fontFamily: '"Raleway", sans-serif' }}
-            >
+              style={{ fontSize: "0.6rem", letterSpacing: "0.35em", textTransform: "uppercase", fontFamily: '"Raleway", sans-serif' }}>
+              
               AUSTIN LUXURY REAL ESTATE
             </p>
-            <h1 className="text-5xl md:text-7xl font-display font-light text-architectural mb-8">
-              Luxury Homes for Sale in Austin, Texas
+            <h1 className="text-5xl md:text-7xl font-display font-light text-architectural mb-8">Luxury Homes for Sale in 
+Austin, Texas
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
               Browse Austin's premier luxury real estate including Westlake Hills, Barton Creek,
@@ -57,8 +57,8 @@ const LuxuryHomesAustin = () => {
               className="border-0"
               style={{ height: "800px", width: "calc(100% + 215px)", marginLeft: "-215px" }}
               loading="lazy"
-              allowFullScreen
-            />
+              allowFullScreen />
+            
           </div>
         </div>
       </section>
@@ -103,16 +103,16 @@ const LuxuryHomesAustin = () => {
                 Best Luxury Neighborhoods in Austin
               </h2>
               <div className="grid sm:grid-cols-2 gap-8">
-                {neighborhoods.map((n) => (
-                  <Link key={n.slug} to={n.slug} className="group block">
+                {neighborhoods.map((n) =>
+                <Link key={n.slug} to={n.slug} className="group block">
                     <div className="relative overflow-hidden rounded-sm aspect-[4/3]">
                       <img
-                        src={n.image}
-                        alt={`${n.name} homes for sale in Austin Texas`}
-                        title={`${n.name} — Austin luxury neighborhood`}
-                        className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
-                        loading="lazy"
-                      />
+                      src={n.image}
+                      alt={`${n.name} homes for sale in Austin Texas`}
+                      title={`${n.name} — Austin luxury neighborhood`}
+                      className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+                      loading="lazy" />
+                    
                       <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
                       <div className="absolute bottom-0 left-0 right-0 p-6">
                         <h3 className="text-xl font-display font-light text-white mb-1">{n.name}</h3>
@@ -120,7 +120,7 @@ const LuxuryHomesAustin = () => {
                       </div>
                     </div>
                   </Link>
-                ))}
+                )}
               </div>
             </section>
 
@@ -138,15 +138,15 @@ const LuxuryHomesAustin = () => {
                 <Link
                   to="/connect"
                   className="inline-block bg-primary text-primary-foreground hover:bg-primary/90 px-10 py-4 transition-colors duration-300"
-                  style={{ fontSize: "0.6rem", letterSpacing: "0.25em", textTransform: "uppercase", fontFamily: '"Raleway", sans-serif' }}
-                >
+                  style={{ fontSize: "0.6rem", letterSpacing: "0.25em", textTransform: "uppercase", fontFamily: '"Raleway", sans-serif' }}>
+                  
                   SCHEDULE A CONSULTATION
                 </Link>
                 <Link
                   to="/off-market-luxury-homes-austin"
                   className="inline-block border border-primary text-primary hover:bg-primary hover:text-primary-foreground px-10 py-4 transition-colors duration-300"
-                  style={{ fontSize: "0.6rem", letterSpacing: "0.25em", textTransform: "uppercase", fontFamily: '"Raleway", sans-serif' }}
-                >
+                  style={{ fontSize: "0.6rem", letterSpacing: "0.25em", textTransform: "uppercase", fontFamily: '"Raleway", sans-serif' }}>
+                  
                   VIEW OFF-MARKET HOMES
                 </Link>
               </div>
@@ -158,8 +158,8 @@ const LuxuryHomesAustin = () => {
       </article>
 
       <Footer />
-    </div>
-  );
+    </div>);
+
 };
 
 export default LuxuryHomesAustin;

@@ -36,6 +36,7 @@ const staticRoutes = [
   "/sell-home-austin",
   "/austin-real-estate-investment",
   "/land-for-sale-austin",
+  "/luxury-homes-austin",
 ];
 
 const extractAll = (file: string, pattern: RegExp): string[] => {

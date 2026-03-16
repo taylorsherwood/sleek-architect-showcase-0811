@@ -113,9 +113,7 @@ const IntroSection = () => {
               <p className="text-minimal text-gold mb-4 font-extrabold">
                 THE ECHELON DIFFERENCE
               </p>
-              <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-8">Unmatched Expertise in Austin Real Estate: By the Numbers
-
-              </h2>
+              <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-8">Unmatched Acumen in Austin Real Estate: By the Numbers</h2>
               <div className="space-y-6 text-muted-foreground leading-relaxed">
                 <p className="whitespace-pre-line">
                   At Echelon Property Group we believe real estate is more than

@@ -47,21 +47,109 @@ const LuxuryHomesAustin = () => {
         </div>
       </section>
 
-      {/* RealScout Shared Search — hidden on mobile */}
-      <section className="pb-20 hidden md:block">
+      {/* ── RealScout Premium Search — Desktop ── */}
+      <section className="pt-8 pb-28 hidden md:block">
         <div className="container mx-auto px-6">
-          <div className="max-w-7xl mx-auto overflow-hidden rounded-sm">
-            <iframe
-              src="https://taylorsherwood.realscout.com/homesearch/map?pmin=1500000&ptype=SFR&geo_type=city&geo_id=4805000&for_sale=1&for_rent=0"
-              title="Austin luxury homes for sale — RealScout search"
-              className="border-0"
-              style={{ height: "800px", width: "100%" }}
-              loading="lazy"
-              allowFullScreen />
-            
+          <div className="max-w-7xl mx-auto">
+
+            {/* Premium container */}
+            <div
+              className="rounded-[24px] border border-border/30 bg-[hsl(var(--card))] overflow-hidden"
+              style={{ boxShadow: "0 8px 40px -12px hsl(var(--foreground) / 0.06)" }}
+            >
+              {/* Branded header */}
+              <div className="px-8 pt-8 pb-6 md:px-10 md:pt-10 md:pb-7 flex flex-col md:flex-row md:items-end md:justify-between gap-4 border-b border-border/20">
+                <div>
+                  <p
+                    className="text-gold mb-3 font-semibold"
+                    style={{ fontSize: "0.55rem", letterSpacing: "0.35em", textTransform: "uppercase", fontFamily: '"Raleway", sans-serif' }}
+                  >
+                    AUSTIN LUXURY SEARCH
+                  </p>
+                  <h2 className="text-2xl md:text-3xl font-display font-light text-architectural mb-2">
+                    Search Austin Homes Above $1.5M
+                  </h2>
+                  <p className="text-muted-foreground text-[15px] font-light leading-relaxed max-w-xl">
+                    Explore luxury listings, waterfront properties, and exclusive opportunities across Austin's most desirable neighborhoods.
+                  </p>
+                </div>
+                <p
+                  className="text-muted-foreground/50 shrink-0 pb-0.5"
+                  style={{ fontSize: "0.55rem", letterSpacing: "0.2em", textTransform: "uppercase", fontFamily: '"Raleway", sans-serif' }}
+                >
+                  Updated in real time
+                </p>
+              </div>
+
+              {/* Iframe viewport */}
+              <div className="overflow-hidden">
+                <iframe
+                  src="https://taylorsherwood.realscout.com/homesearch/map?pmin=1500000&ptype=SFR&geo_type=city&geo_id=4805000&for_sale=1&for_rent=0"
+                  title="Austin luxury homes for sale — RealScout search"
+                  className="border-0 w-full"
+                  style={{ height: "750px" }}
+                  loading="lazy"
+                  allowFullScreen
+                />
+              </div>
+
+              {/* Branded lower panel */}
+              <div className="px-8 py-7 md:px-10 md:py-8 border-t border-border/20 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5 bg-muted/30">
+                <p className="text-muted-foreground text-[14px] font-light leading-relaxed max-w-lg">
+                  Looking for something more discreet? We also advise clients on private and off-market opportunities across Austin's luxury market.
+                </p>
+                <Link
+                  to="/off-market-luxury-homes-austin"
+                  className="inline-block shrink-0 border border-foreground/20 text-foreground hover:bg-foreground hover:text-background px-7 py-3 rounded-full transition-all duration-300"
+                  style={{ fontSize: "0.55rem", letterSpacing: "0.25em", textTransform: "uppercase", fontFamily: '"Raleway", sans-serif' }}
+                >
+                  Inquire About Off-Market Listings
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
+      {/* ── Mobile CTA Card (replaces widget) ── */}
+      <section className="pt-4 pb-20 md:hidden">
+        <div className="container mx-auto px-6">
+          <div
+            className="rounded-[20px] border border-border/30 bg-[hsl(var(--card))] p-8 text-center"
+            style={{ boxShadow: "0 6px 30px -10px hsl(var(--foreground) / 0.05)" }}
+          >
+            <p
+              className="text-gold mb-3 font-semibold"
+              style={{ fontSize: "0.55rem", letterSpacing: "0.35em", textTransform: "uppercase", fontFamily: '"Raleway", sans-serif' }}
+            >
+              AUSTIN LUXURY SEARCH
+            </p>
+            <h2 className="text-2xl font-display font-light text-architectural mb-3">
+              Find Luxury Homes Above $1.5M
+            </h2>
+            <p className="text-muted-foreground text-[15px] font-light leading-relaxed mb-8 max-w-sm mx-auto">
+              Browse waterfront estates, gated communities, and architectural properties across Austin's finest neighborhoods.
+            </p>
+            <div className="flex flex-col gap-3">
+              <Link
+                to="/search"
+                className="inline-block bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4 rounded-full transition-colors duration-300"
+                style={{ fontSize: "0.55rem", letterSpacing: "0.25em", textTransform: "uppercase", fontFamily: '"Raleway", sans-serif' }}
+              >
+                Search All Listings
+              </Link>
+              <Link
+                to="/connect"
+                className="inline-block border border-foreground/20 text-foreground hover:bg-foreground hover:text-background px-8 py-4 rounded-full transition-all duration-300"
+                style={{ fontSize: "0.55rem", letterSpacing: "0.25em", textTransform: "uppercase", fontFamily: '"Raleway", sans-serif' }}
+              >
+                Contact an Advisor
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       <article className="pb-24">
         <div className="container mx-auto px-6">

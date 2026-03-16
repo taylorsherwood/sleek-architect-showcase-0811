@@ -343,6 +343,11 @@ const Connect = () => {
             ))}
           </nav>
 
+          {/* ── Private Opportunities ── */}
+          <Suspense fallback={<div className="min-h-[200px]" />}>
+            <PrivateOpportunities variant="dark" />
+          </Suspense>
+
           {/* ── Footer ── */}
           <ScrollReveal delay={200}>
             <div className="flex flex-col items-center gap-2 mt-8 mb-4 px-4">

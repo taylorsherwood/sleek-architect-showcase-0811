@@ -456,6 +456,11 @@ const AustinMultifamilyReport2026 = () => {
         </div>
       </section>
 
+      {/* ════════ PRIVATE OPPORTUNITIES ════════ */}
+      <Suspense fallback={<div className="min-h-[200px]" />}>
+        <PrivateOpportunities />
+      </Suspense>
+
       {/* ════════ CONSULTATION CTA ════════ */}
       <section ref={navyCTARef} className="py-10 md:py-12 bg-[#0C0F24] relative overflow-hidden">
         

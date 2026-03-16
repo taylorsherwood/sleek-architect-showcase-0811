@@ -90,6 +90,10 @@ const Index = () => {
       <CredibilityStrip />
       <ExpertiseSection />
 
+      <Suspense fallback={<div className="min-h-[200px]" />}>
+        <PrivateOpportunities />
+      </Suspense>
+
       <Suspense fallback={<BelowFold />}>
         <IntroSection />
         <CommunitiesPreview />

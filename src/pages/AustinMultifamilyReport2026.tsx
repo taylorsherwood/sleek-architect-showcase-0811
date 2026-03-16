@@ -367,7 +367,7 @@ const AustinMultifamilyReport2026 = () => {
                 </a>
                 <div className="pt-2">
                   <Link
-                    to="/connect"
+                    to="/contact"
                     className="text-sm text-muted-foreground hover:text-foreground underline underline-offset-4 transition-colors duration-300"
                   >
                     Having trouble? Contact us

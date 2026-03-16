@@ -37,6 +37,7 @@ const AdvisoryBar = () => {
   const dismiss = useCallback(() => {
     setDismissed(true);
     sessionStorage.setItem(SESSION_KEY, "1");
+    window.dispatchEvent(new CustomEvent("advisory-bar-dismissed"));
   }, []);
 
   useEffect(() => {

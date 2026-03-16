@@ -286,7 +286,7 @@ const AustinMultifamilyReport2026 = () => {
             </div>
 
             {submitted ? (
-              <div className="text-center py-12 space-y-6">
+              <div className="text-center py-8 space-y-5">
                 <CheckCircle2 className="h-12 w-12 text-[hsl(var(--gold))] mx-auto" strokeWidth={1.2} />
                 <h3 className="text-2xl font-display font-light text-architectural">
                   Thank You

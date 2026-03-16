@@ -470,7 +470,7 @@ const AustinMultifamilyReport2026 = () => {
               asChild
               className="bg-[hsl(var(--gold))] text-primary-foreground hover:bg-[hsl(var(--gold-light))] px-10 py-6 text-sm tracking-widest uppercase font-medium transition-all duration-200 shadow-lg hover:shadow-xl"
             >
-              <Link to="/connect">Schedule a Consultation</Link>
+              <Link to="/contact">Schedule a Consultation</Link>
             </Button>
           </div>
         </div>

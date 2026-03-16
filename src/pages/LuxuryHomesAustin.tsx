@@ -125,24 +125,6 @@ const LuxuryHomesAustin = () => {
               </div>
             </section>
 
-            {/* Featured Listings */}
-            <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
-                Featured Austin Luxury Listings
-              </h2>
-              <p className="text-muted-foreground leading-relaxed mb-8">
-                Browse current luxury listings priced above $1.5 million across Austin's most desirable
-                neighborhoods. These homes represent the finest residential real estate in the Austin metro,
-                from waterfront estates and custom builds to modern masterpieces.
-              </p>
-              <div className="border border-border/30 rounded-lg p-5 md:p-10" style={{ boxShadow: "0 4px 24px -4px hsl(var(--foreground) / 0.06)" }}>
-                {createElement("realscout-advanced-search", {
-                  "agent-encoded-id": "QWdlbnQtMjg5NDU2",
-                  "shared-search-id": "U2hhcmVhYmxlU2VhcmNoTGluay0xMjgxOA==",
-                })}
-              </div>
-            </section>
-
             {/* Buyer CTA */}
             <section className="text-center py-16 bg-muted -mx-6 px-6 rounded-sm">
               <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-4">

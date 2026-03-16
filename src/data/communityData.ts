@@ -404,7 +404,7 @@ The teardown-rebuild market offers strong returns. The spread between lot value 
 ### Rental Appeal
 
 High-quality tenants — often executives on temporary assignments or families exploring the area — pay premium rents for Eanes ISD enrollment and proximity to central Austin.`,
-    relatedCommunities: ["westlake-hills", "barton-creek", "tarrytown", "lake-austin-waterfront"],
+    relatedCommunities: ["westlake-hills", "barton-creek", "tarrytown", "lake-austin"],
     faqs: [
       { question: "Is Rollingwood in Eanes ISD?", answer: "Yes. Rollingwood is served by the Eanes Independent School District, with children typically attending Eanes Elementary, Hill Country Middle School, and Westlake High School—all among the top-ranked schools in Texas." },
       { question: "How big is Rollingwood Austin?", answer: "Rollingwood is a small incorporated city of less than one square mile with approximately 1,500 residents. Its compact size creates a walkable, close-knit community with a strong neighborhood identity." },

@@ -38,6 +38,7 @@ const BestNeighborhoodsAustin = lazy(() => import("@/pages/BestNeighborhoodsAust
 const AustinMultifamilyReport2026 = lazy(() => import("@/pages/AustinMultifamilyReport2026"));
 const connectImport = () => import("@/pages/Connect");
 const Connect = lazy(connectImport);
+const PrivateOpportunitiesPage = lazy(() => import("@/pages/PrivateOpportunitiesPage"));
 const NotFound = lazy(() => import("@/pages/NotFound"));
 
 // Prefetch /connect chunk after homepage loads

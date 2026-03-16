@@ -256,8 +256,8 @@ const Hero = () => {
 
       {/* Scroll indicator */}
       <div
-        className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 hero-scroll-indicator"
-        style={{ zIndex: 2 }}
+        className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4"
+        style={{ zIndex: 3 }}
       >
         <span
           className="text-warm-cream/70 font-light"

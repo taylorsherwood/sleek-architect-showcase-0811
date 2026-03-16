@@ -171,12 +171,12 @@ const AustinMultifamilyReport2026 = () => {
               </div>
             </div>
             {/* report mockup — desktop */}
-            <div className="hidden md:flex flex-shrink-0 justify-center">
+            <div className="hidden md:flex flex-shrink-0 justify-center -ml-4">
               <img
                 src={reportCover}
                 alt="Austin Multifamily Market Outlook 2026 report cover"
                 title="Austin Multifamily Market Outlook 2026 — Echelon Property Group"
-                className="w-80 lg:w-[26rem] drop-shadow-2xl"
+                className="w-80 lg:w-[26rem] drop-shadow-2xl -scale-x-100"
                 loading="eager"
               />
             </div>

@@ -1,5 +1,7 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, lazy, Suspense } from "react";
 import SEOHead from "@/components/SEOHead";
+
+const PrivateOpportunities = lazy(() => import("@/components/PrivateOpportunities"));
 import taylorHeadshot from "@/assets/taylor-headshot.jpg";
 import echelonLogo from "@/assets/echelon-logo-gold.png";
 import { Instagram, Mail, Phone, Home, Search, Mountain } from "lucide-react";

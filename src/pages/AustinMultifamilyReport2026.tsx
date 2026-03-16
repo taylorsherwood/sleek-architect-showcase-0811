@@ -141,7 +141,7 @@ const AustinMultifamilyReport2026 = () => {
         {/* subtle architectural texture */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,hsl(var(--gold)/0.06)_0%,transparent_60%)]" />
         <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-6 md:gap-8">
+          <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-4 md:gap-6">
             {/* text */}
             <div className="flex-1 text-center md:text-left">
               <p className="text-minimal text-[hsl(var(--gold))] mb-3">INVESTOR REPORT</p>

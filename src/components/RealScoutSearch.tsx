@@ -1,7 +1,9 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState, useCallback } from "react";
 
 const RealScoutSearch = () => {
   const containerRef = useRef<HTMLDivElement>(null);
+  const sectionRef = useRef<HTMLElement>(null);
+  const [fadeProgress, setFadeProgress] = useState(0);
 
   useEffect(() => {
     if (!containerRef.current) return;
@@ -17,10 +19,32 @@ const RealScoutSearch = () => {
     };
   }, []);
 
-  return (
-    <section className="relative bg-primary overflow-hidden -mt-px">
-      {/* No top gradient needed — hero bleeds directly into this bg */}
+  const handleScroll = useCallback(() => {
+    const section = sectionRef.current;
+    if (!section) return;
 
+    const rect = section.getBoundingClientRect();
+    const sectionHeight = rect.height;
+    // Start fading when bottom 30% of section enters viewport bottom
+    const fadeZone = sectionHeight * 0.3;
+    const distFromBottom = rect.bottom - window.innerHeight;
+
+    if (distFromBottom > 0) {
+      setFadeProgress(0);
+    } else {
+      const progress = Math.min(1, Math.abs(distFromBottom) / fadeZone);
+      setFadeProgress(progress);
+    }
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [handleScroll]);
+
+  return (
+    <section ref={sectionRef} className="relative bg-primary overflow-hidden -mt-px">
       <div className="relative container mx-auto px-6 pt-10 pb-16 md:pt-14 md:pb-24">
         {/* Typography block */}
         <div className="max-w-2xl mx-auto text-center mb-12 md:mb-16">
@@ -60,7 +84,7 @@ const RealScoutSearch = () => {
           </p>
         </div>
 
-        {/* Widget container — floating above the dark bg */}
+        {/* Widget container */}
         <div className="max-w-[50rem] mx-auto">
           <div
             ref={containerRef}
@@ -73,11 +97,13 @@ const RealScoutSearch = () => {
         </div>
       </div>
 
-      {/* Bottom fade into next section */}
+      {/* Scroll-driven bottom fade */}
       <div
-        className="absolute inset-x-0 bottom-0 h-24 pointer-events-none"
+        className="absolute inset-x-0 bottom-0 pointer-events-none transition-none"
         style={{
-          background: "linear-gradient(to bottom, transparent, hsl(var(--background)))",
+          height: `${6 + fadeProgress * 18}rem`,
+          opacity: 0.3 + fadeProgress * 0.7,
+          background: `linear-gradient(to bottom, transparent, hsl(var(--background)))`,
         }}
       />
     </section>

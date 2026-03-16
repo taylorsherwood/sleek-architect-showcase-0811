@@ -55,7 +55,7 @@ const LuxuryHomesAustin = () => {
               src="https://taylorsherwood.realscout.com/homesearch/map?pmin=1500000&ptype=SFR&geo_type=city&geo_id=4805000&for_sale=1&for_rent=0"
               title="Austin luxury homes for sale — RealScout search"
               className="border-0"
-              style={{ height: "800px", width: "calc(100% + 200px)", marginLeft: "-200px" }}
+              style={{ height: "800px", width: "calc(100% + 230px)", marginLeft: "-230px" }}
               loading="lazy"
               allowFullScreen
             />

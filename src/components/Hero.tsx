@@ -256,25 +256,21 @@ const Hero = () => {
 
       {/* Scroll indicator */}
       <div
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 hero-scroll-indicator"
+        className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 hero-scroll-indicator"
         style={{ zIndex: 2 }}
       >
-        <ChevronDown
-          className="text-warm-cream/30"
-          size={18}
-          strokeWidth={1}
-        />
         <span
-          className="text-warm-cream/25 font-light"
+          className="text-warm-cream/70 font-light"
           style={{
             fontFamily: '"Raleway", sans-serif',
-            fontSize: "0.55rem",
-            letterSpacing: "0.3em",
+            fontSize: "0.6rem",
+            letterSpacing: "0.35em",
             textTransform: "uppercase",
           }}
         >
           Discover Austin
         </span>
+        <div className="scroll-indicator-line" />
       </div>
     </section>
   );

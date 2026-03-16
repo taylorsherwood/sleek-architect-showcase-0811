@@ -18,27 +18,6 @@ const neighborhoods = [
 ];
 
 const LuxuryHomesAustin = () => {
-  const widgetRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (!widgetRef.current) return;
-    const el = document.createElement("realscout-your-listings");
-    el.setAttribute("agent-encoded-id", "QWdlbnQtMjg5NDU2");
-    el.setAttribute("sort-order", "PRICE_HIGH");
-    el.setAttribute("listing-status", "For Sale");
-    el.setAttribute("property-types", "SFR,MF,TC,LAL,OTHER,MOBILE");
-    el.setAttribute("price-min", "1500000");
-    el.setAttribute("include-co-listings", "");
-    el.setAttribute("include-seller-listings", "");
-    widgetRef.current.appendChild(el);
-
-    return () => {
-      if (widgetRef.current && el.parentNode === widgetRef.current) {
-        widgetRef.current.removeChild(el);
-      }
-    };
-  }, []);
-
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
@@ -69,10 +48,15 @@ const LuxuryHomesAustin = () => {
         </div>
       </section>
 
-      {/* RealScout Hero Widget */}
+      {/* RealScout Shared Search Widget */}
       <section className="pb-20">
         <div className="container mx-auto px-6">
-          <div className="max-w-7xl mx-auto" ref={widgetRef} />
+          <div className="max-w-7xl mx-auto">
+            {createElement("realscout-advanced-search", {
+              "agent-encoded-id": "QWdlbnQtMjg5NDU2",
+              "shared-search-id": "U2hhcmVhYmxlU2VhcmNoTGluay0xMjgxOA==",
+            })}
+          </div>
         </div>
       </section>
 

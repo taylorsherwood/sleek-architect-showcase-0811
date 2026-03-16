@@ -16,7 +16,7 @@ const faqs = [
 const neighborhoods = [
   { name: "Westlake Hills", slug: "westlake-hills", price: "$1.2M – $20M+", highlight: "Top-rated Eanes ISD, panoramic Hill Country views, estate living minutes from downtown", best: "Families seeking top schools, tech executives, prestige buyers" },
   { name: "Barton Creek", slug: "barton-creek", price: "$1.5M – $15M+", highlight: "World-class golf, gated community, Barton Creek Greenbelt access", best: "Golf enthusiasts, families, buyers seeking resort-style amenities" },
-  { name: "Lake Austin Waterfront", slug: "lake-austin-waterfront", price: "$2M – $25M+", highlight: "Constant-level lake, private docks, extreme scarcity", best: "Waterfront lifestyle seekers, trophy property buyers, investors" },
+  { name: "Lake Austin", slug: "lake-austin", price: "$2M – $25M+", highlight: "Constant-level lake, private docks, extreme scarcity", best: "Waterfront lifestyle seekers, trophy property buyers, investors" },
   { name: "Tarrytown", slug: "tarrytown", price: "$800K – $8M+", highlight: "Walkable streets, eclectic architecture, central Austin location", best: "Urban lifestyle buyers, walkability prioritizers, young families" },
   { name: "Rollingwood", slug: "rollingwood", price: "$1M – $5M+", highlight: "Small-town charm, Zilker Park proximity, Eanes ISD schools", best: "Families, outdoor enthusiasts, value-conscious luxury buyers" },
   { name: "Travis Heights", slug: "travis-heights", price: "$600K – $4M+", highlight: "Downtown skyline views, South Congress walkability, creative energy", best: "Creative professionals, empty-nesters, lifestyle-driven buyers" },

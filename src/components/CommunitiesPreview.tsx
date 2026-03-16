@@ -18,7 +18,7 @@ const communities = [
 { name: "Downtown Austin", image: downtown, slug: "downtown-austin-condos", objectPosition: "40% center" },
 { name: "Dripping Springs", image: drippingSprings, slug: "dripping-springs" },
 { name: "Hill Country", image: hillCountry, slug: "texas-hill-country-estates" },
-{ name: "Lake Austin", image: lakeAustin, slug: "lake-austin-waterfront" },
+{ name: "Lake Austin", image: lakeAustin, slug: "lake-austin" },
 { name: "Rollingwood", image: rollingwood, slug: "rollingwood" },
 { name: "Spanish Oaks", image: spanishOaks, slug: "spanish-oaks" },
 { name: "Tarrytown", image: tarrytown, slug: "tarrytown" },

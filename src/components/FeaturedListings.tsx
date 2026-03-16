@@ -1,4 +1,3 @@
-import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import listing3 from "@/assets/listing-3.jpg";
 import echelonLogo from "@/assets/echelon-logo-gold-square.png";
@@ -43,53 +42,6 @@ const listings = [
 
 
 const FeaturedListings = () => {
-  const widgetRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (!widgetRef.current) return;
-    const el = document.createElement("realscout-your-listings");
-    el.setAttribute("agent-encoded-id", "QWdlbnQtMjg5NDU2");
-    el.setAttribute("sort-order", "PRICE_HIGH");
-    el.setAttribute("listing-status", "For Sale,For Rent,In Contract");
-    el.setAttribute("property-types", "SFR,MF,TC,LAL,MOBILE,OTHER");
-    el.setAttribute("price-min", "300000");
-    el.setAttribute("include-co-listings", "");
-    el.setAttribute("include-seller-listings", "");
-    widgetRef.current.appendChild(el);
-
-    // Hide any listings under $300k that slip through the widget filter
-    const hideLowPriceListings = () => {
-      const shadow = el.shadowRoot;
-      if (!shadow) return;
-      shadow.querySelectorAll('[class*="listing"], [class*="card"], [class*="property"], a').forEach((card) => {
-        const text = card.textContent || '';
-        const priceMatch = text.match(/\$[\d,]+/);
-        if (priceMatch) {
-          const price = parseInt(priceMatch[0].replace(/[$,]/g, ''), 10);
-          if (price > 0 && price < 300000) {
-            (card as HTMLElement).style.display = 'none';
-          }
-        }
-      });
-    };
-
-    const observer = new MutationObserver(hideLowPriceListings);
-    const checkShadow = setInterval(() => {
-      if (el.shadowRoot) {
-        clearInterval(checkShadow);
-        observer.observe(el.shadowRoot, { childList: true, subtree: true });
-        hideLowPriceListings();
-      }
-    }, 500);
-
-    return () => {
-      clearInterval(checkShadow);
-      observer.disconnect();
-      if (widgetRef.current && el.parentNode === widgetRef.current) {
-        widgetRef.current.removeChild(el);
-      }
-    };
-  }, []);
 
   return (
     <>
@@ -233,27 +185,6 @@ FEATURED LISTINGS</p>
         </div>
       </section>
 
-      <section className="pt-0 pb-8 bg-background">
-        <div className="container mx-auto px-6">
-          <div className="max-w-7xl mx-auto">
-            <p className="text-minimal text-gold mb-4 font-extrabold">
-              CURRENTLY ON THE MARKET
-            </p>
-            <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-12">
-              Commercial and Residential Listings
-            </h2>
-            <div ref={widgetRef} className="w-full" />
-            <div className="mt-12 text-center">
-              <Link
-                to="/past-transactions"
-                className="inline-block px-8 py-4 border border-border text-minimal text-muted-foreground hover:text-primary-foreground hover:bg-gold hover:border-gold transition-all duration-300">
-                
-                SEE PAST TRANSACTIONS →
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
     </>);
 
 };

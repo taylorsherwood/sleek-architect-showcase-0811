@@ -115,7 +115,7 @@ const IntroSection = () => {
               </p>
               <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-8 whitespace-pre-line">Performance That Speaks{"\n"}for Itself</h2>
               <div className="space-y-6 text-muted-foreground leading-relaxed">
-                <p className="whitespace-pre-line italic">
+                <p className="whitespace-pre-line">
                   At Echelon Property Group we believe real estate is more than
                   transactions—it's about creating opportunities and building
                   lasting relationships. With expertise across residential,

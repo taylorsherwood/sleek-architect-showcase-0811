@@ -82,6 +82,8 @@ const AustinMultifamilyReport2026 = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [showSticky, setShowSticky] = useState(false);
+  const [stickyInverted, setStickyInverted] = useState(false);
+  const navyCTARef = useRef<HTMLElement>(null);
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -91,7 +93,13 @@ const AustinMultifamilyReport2026 = () => {
   });
 
   useEffect(() => {
-    const onScroll = () => setShowSticky(window.scrollY > 600);
+    const onScroll = () => {
+      setShowSticky(window.scrollY > 600);
+      if (navyCTARef.current) {
+        const rect = navyCTARef.current.getBoundingClientRect();
+        setStickyInverted(rect.top < window.innerHeight && rect.bottom > 0);
+      }
+    };
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);

@@ -484,7 +484,7 @@ Many Lake Austin transactions occur off-market. Working with a specialized agent
     excerpt: "Expert analysis of the Austin luxury real estate market outlook. Trends, predictions, and investment insights for high-end properties in Austin, Texas.",
     content: `## Austin Luxury Market Overview
 
-The Austin luxury real estate market enters 2025 positioned at the intersection of several powerful forces. Austin's continued emergence as a top-tier technology hub, combined with Texas's tax-friendly environment and the city's unmatched lifestyle appeal, creates a foundation for sustained luxury market strength. Understanding the trends, data, and dynamics shaping the market is essential for buyers, sellers, and investors making strategic real estate decisions.
+The Austin luxury real estate market enters 2026 positioned at the intersection of several powerful forces. Austin's continued emergence as a top-tier technology hub, combined with Texas's tax-friendly environment and the city's unmatched lifestyle appeal, creates a foundation for sustained luxury market strength. Understanding the trends, data, and dynamics shaping the market is essential for buyers, sellers, and investors making strategic real estate decisions.
 
 ## Key Market Trends Shaping Austin Luxury Real Estate
 
@@ -521,7 +521,7 @@ Forecast: **Growth acceleration.** Dripping Springs and the broader Hill Country
 
 ## Investment Outlook
 
-### Best Investment Strategies for 2025
+### Best Investment Strategies for 2026
 
 **Buy-and-hold in Westlake Hills and Lake Austin.** These markets offer the strongest long-term appreciation fundamentals due to supply constraints and enduring demand drivers.
 
@@ -771,7 +771,7 @@ Whether you're seeking a luxury estate, a waterfront home, or an investment prop
 
 ## Frequently Asked Questions
 
-### Is Austin still a good place to move in 2025?
+### Is Austin still a good place to move in 2026?
 Yes. Austin continues to experience strong economic growth and remains one of the most desirable relocation destinations in the United States.
 
 ### What salary do you need to live comfortably in Austin?

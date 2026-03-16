@@ -47,7 +47,7 @@ const MarketReport = () => {
 
             <section>
               <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
-                Market Overview: Austin's Position in 2025
+                Market Overview: Austin's Position in 2026
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 Austin's luxury real estate market has matured into one of the most significant in the United States. The city's transformation from a mid-size state capital to a global technology hub has fundamentally reshaped its housing market, creating a luxury segment that now rivals established markets in terms of price points, buyer sophistication, and transaction complexity.

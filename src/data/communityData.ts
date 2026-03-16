@@ -127,7 +127,7 @@ Opportunities include:
 - Properties with waterfront access, panoramic views, or guest houses
 
 The area's strict development standards ensure that quality investments are protected by overall neighborhood character.`,
-    relatedCommunities: ["barton-creek", "lake-austin-waterfront", "rollingwood", "tarrytown"],
+    relatedCommunities: ["barton-creek", "lake-austin", "rollingwood", "tarrytown"],
     faqs: [
       { question: "What school district serves Westlake Hills?", answer: "Westlake Hills is served by the Eanes Independent School District, consistently ranked among the top districts in Texas. Schools include Bridge Point Elementary, Hill Country Middle School, and Westlake High School, which earns National Blue Ribbon recognition." },
       { question: "What is the average home price in Westlake Hills Austin?", answer: "Home prices in Westlake Hills range from $1.2 million to over $20 million. The median home price exceeds $1.5 million, with luxury estates regularly trading above $5 million. New construction often exceeds $500 per square foot." },

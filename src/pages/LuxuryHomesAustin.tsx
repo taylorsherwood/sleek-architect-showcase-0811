@@ -36,8 +36,8 @@ const LuxuryHomesAustin = () => {
               
               AUSTIN LUXURY REAL ESTATE
             </p>
-            <h1 className="text-5xl md:text-7xl font-display font-light text-architectural mb-8">Luxury Homes for Sale in 
-Austin, Texas
+            <h1 className="text-5xl md:text-7xl font-display font-light text-architectural mb-8">
+              Luxury Homes for Sale in<br />Austin, Texas
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
               Browse Austin's premier luxury real estate including Westlake Hills, Barton Creek,

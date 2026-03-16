@@ -55,15 +55,15 @@ const LuxuryHomesAustin = () => {
             {/* Premium container */}
             <div
               className="rounded-[24px] border border-border/30 bg-[hsl(var(--card))] overflow-hidden"
-              style={{ boxShadow: "0 8px 40px -12px hsl(var(--foreground) / 0.06)" }}
-            >
+              style={{ boxShadow: "0 8px 40px -12px hsl(var(--foreground) / 0.06)" }}>
+              
               {/* Branded header */}
               <div className="px-8 pt-8 pb-6 md:px-10 md:pt-10 md:pb-7 flex flex-col md:flex-row md:items-end md:justify-between gap-4 border-b border-border/20">
                 <div>
                   <p
                     className="text-gold mb-3 font-semibold"
-                    style={{ fontSize: "0.55rem", letterSpacing: "0.35em", textTransform: "uppercase", fontFamily: '"Raleway", sans-serif' }}
-                  >
+                    style={{ fontSize: "0.55rem", letterSpacing: "0.35em", textTransform: "uppercase", fontFamily: '"Raleway", sans-serif' }}>
+                    
                     AUSTIN LUXURY SEARCH
                   </p>
                   <h2 className="text-2xl md:text-3xl font-display font-light text-architectural mb-2">
@@ -75,8 +75,8 @@ const LuxuryHomesAustin = () => {
                 </div>
                 <p
                   className="text-muted-foreground/50 shrink-0 pb-0.5"
-                  style={{ fontSize: "0.55rem", letterSpacing: "0.2em", textTransform: "uppercase", fontFamily: '"Raleway", sans-serif' }}
-                >
+                  style={{ fontSize: "0.55rem", letterSpacing: "0.2em", textTransform: "uppercase", fontFamily: '"Raleway", sans-serif' }}>
+                  
                   Updated in real time
                 </p>
               </div>
@@ -89,20 +89,20 @@ const LuxuryHomesAustin = () => {
                   className="border-0 w-full"
                   style={{ height: "750px" }}
                   loading="lazy"
-                  allowFullScreen
-                />
+                  allowFullScreen />
+                
               </div>
 
               {/* Branded lower panel */}
               <div className="px-8 py-7 md:px-10 md:py-8 border-t border-border/20 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5 bg-muted/30">
-                <p className="text-muted-foreground text-[14px] font-light leading-relaxed max-w-lg">
-                  Looking for something more discreet? We also advise clients on private and off-market opportunities across Austin's luxury market.
+                <p className="text-muted-foreground text-[14px] font-light leading-relaxed max-w-lg">Looking for something more discreet? 
+We also advise clients on private and off-market opportunities across Austin's luxury market.
                 </p>
                 <Link
                   to="/off-market-luxury-homes-austin"
                   className="inline-block shrink-0 border border-foreground/20 text-foreground hover:bg-foreground hover:text-background px-7 py-3 rounded-full transition-all duration-300"
-                  style={{ fontSize: "0.55rem", letterSpacing: "0.25em", textTransform: "uppercase", fontFamily: '"Raleway", sans-serif' }}
-                >
+                  style={{ fontSize: "0.55rem", letterSpacing: "0.25em", textTransform: "uppercase", fontFamily: '"Raleway", sans-serif' }}>
+                  
                   Inquire About Off-Market Listings
                 </Link>
               </div>
@@ -116,12 +116,12 @@ const LuxuryHomesAustin = () => {
         <div className="container mx-auto px-6">
           <div
             className="rounded-[20px] border border-border/30 bg-[hsl(var(--card))] p-8 text-center"
-            style={{ boxShadow: "0 6px 30px -10px hsl(var(--foreground) / 0.05)" }}
-          >
+            style={{ boxShadow: "0 6px 30px -10px hsl(var(--foreground) / 0.05)" }}>
+            
             <p
               className="text-gold mb-3 font-semibold"
-              style={{ fontSize: "0.55rem", letterSpacing: "0.35em", textTransform: "uppercase", fontFamily: '"Raleway", sans-serif' }}
-            >
+              style={{ fontSize: "0.55rem", letterSpacing: "0.35em", textTransform: "uppercase", fontFamily: '"Raleway", sans-serif' }}>
+              
               AUSTIN LUXURY SEARCH
             </p>
             <h2 className="text-2xl font-display font-light text-architectural mb-3">
@@ -134,15 +134,15 @@ const LuxuryHomesAustin = () => {
               <Link
                 to="/search"
                 className="inline-block bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4 rounded-full transition-colors duration-300"
-                style={{ fontSize: "0.55rem", letterSpacing: "0.25em", textTransform: "uppercase", fontFamily: '"Raleway", sans-serif' }}
-              >
+                style={{ fontSize: "0.55rem", letterSpacing: "0.25em", textTransform: "uppercase", fontFamily: '"Raleway", sans-serif' }}>
+                
                 Search All Listings
               </Link>
               <Link
                 to="/connect"
                 className="inline-block border border-foreground/20 text-foreground hover:bg-foreground hover:text-background px-8 py-4 rounded-full transition-all duration-300"
-                style={{ fontSize: "0.55rem", letterSpacing: "0.25em", textTransform: "uppercase", fontFamily: '"Raleway", sans-serif' }}
-              >
+                style={{ fontSize: "0.55rem", letterSpacing: "0.25em", textTransform: "uppercase", fontFamily: '"Raleway", sans-serif' }}>
+                
                 Contact an Advisor
               </Link>
             </div>

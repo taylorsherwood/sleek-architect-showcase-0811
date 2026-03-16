@@ -23,7 +23,7 @@ const RealScoutSearch = () => {
       {/* Subtle top fade connecting to hero */}
       <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-black/40 to-transparent pointer-events-none" />
 
-      <div className="relative container mx-auto px-6 py-20 md:py-28">
+      <div className="relative container mx-auto px-6 py-12 md:py-16">
         <div className="max-w-3xl mx-auto text-center mb-14">
           <p
             className="text-minimal mb-5"

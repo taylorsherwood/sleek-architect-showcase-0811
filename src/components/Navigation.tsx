@@ -18,9 +18,13 @@ const Navigation = () => {
   const location = useLocation();
 
   useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 50);
+    const handleScroll = () => {
+      // Stay solid white until user scrolls past hero + search block
+      const threshold = window.innerHeight + 300;
+      setIsScrolled(window.scrollY > threshold);
+    };
     handleScroll();
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 

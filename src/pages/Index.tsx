@@ -18,14 +18,21 @@ const SellerCTA = lazy(() => import("@/components/SellerCTA"));
 const CTASection = lazy(() => import("@/components/CTASection"));
 const Footer = lazy(() => import("@/components/Footer"));
 
-const expEchelonLogoImport = () => import("@/assets/exp-echelon-logo.png");
+const logoImports = () =>
+  Promise.all([
+    import("@/assets/exp-commercial-logo.png"),
+    import("@/assets/exp-realty-logo.png"),
+    import("@/assets/exp-realty-luxury-logo.png"),
+  ]);
 
 const NewsletterSection = lazy(async () => {
-  const mod = await expEchelonLogoImport();
-  const expEchelonLogo = mod.default;
+  const [commercialMod, realtyMod, luxuryMod] = await logoImports();
+  const commercialLogo = commercialMod.default;
+  const realtyLogo = realtyMod.default;
+  const luxuryLogo = luxuryMod.default;
   return {
     default: () => (
-      <section className="pt-16 pb-0 bg-muted">
+      <section className="pt-16 pb-16 bg-muted">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-6xl font-light text-architectural mb-8">
@@ -42,8 +49,10 @@ const NewsletterSection = lazy(async () => {
             >
               BECOME AN ECHELON INSIDER
             </a>
-            <div className="-mt-6 flex justify-center">
-              <img src={expEchelonLogo} alt="eXp Realty | Echelon Property Group" title="eXp Realty — Echelon Property Group brokerage" className="h-80 w-auto translate-x-3 -mb-12" loading="lazy" decoding="async" />
+            <div className="mt-12 flex items-center justify-center gap-10 md:gap-14">
+              <img src={commercialLogo} alt="eXp Commercial" title="eXp Commercial — Echelon Property Group" className="h-14 md:h-16 w-auto object-contain" loading="lazy" decoding="async" />
+              <img src={luxuryLogo} alt="eXp Realty Luxury" title="eXp Realty Luxury — Echelon Property Group" className="h-14 md:h-16 w-auto object-contain" loading="lazy" decoding="async" />
+              <img src={realtyLogo} alt="eXp Realty" title="eXp Realty — Echelon Property Group brokerage" className="h-14 md:h-16 w-auto object-contain" loading="lazy" decoding="async" />
             </div>
           </div>
         </div>

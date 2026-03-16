@@ -26,7 +26,7 @@ const RealScoutSearch = () => {
         <div className="max-w-2xl mx-auto text-center mb-12 md:mb-16">
           <p
             className="text-[10px] md:text-[11px] tracking-[0.4em] mb-7 font-normal"
-            style={{ color: "hsl(42 30% 58%)" }}
+            style={{ color: "hsl(42 45% 65%)" }}
           >
             AUSTIN LUXURY REAL ESTATE
           </p>

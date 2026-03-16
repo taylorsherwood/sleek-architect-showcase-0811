@@ -251,7 +251,7 @@ const Hero = () => {
         className="absolute inset-x-0 bottom-0 h-28 pointer-events-none"
         style={{
           zIndex: 1,
-          background: "linear-gradient(to bottom, transparent 0%, hsl(233 50% 9%) 100%)",
+          background: "linear-gradient(to bottom, transparent 0%, hsl(var(--background)) 100%)",
         }}
       />
 

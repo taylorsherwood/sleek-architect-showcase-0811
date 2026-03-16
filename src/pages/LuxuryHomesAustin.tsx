@@ -47,8 +47,8 @@ const LuxuryHomesAustin = () => {
         </div>
       </section>
 
-      {/* RealScout Shared Search */}
-      <section className="pb-20">
+      {/* RealScout Shared Search — hidden on mobile */}
+      <section className="pb-20 hidden md:block">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto overflow-hidden rounded-sm">
             <iframe

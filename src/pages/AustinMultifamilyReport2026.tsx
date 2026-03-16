@@ -155,7 +155,7 @@ const AustinMultifamilyReport2026 = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background pb-14">
       <SEOHead
         title="Austin Multifamily Market Outlook 2026"
         description="Download the Austin Multifamily Market Outlook 2026 from Echelon Property Group. Review rent trends, vacancy, supply, and investor opportunities across Austin."

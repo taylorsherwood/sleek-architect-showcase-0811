@@ -51,11 +51,16 @@
       #root{min-height:100vh}
     </style>
 
-    <!-- RealScout widget — deferred (non-critical third-party) -->
-    <script src="https://em.realscout.com/widgets/realscout-web-components.umd.js" defer></script>
+    <!-- RealScout widget — global, non-deferred -->
+    <script src="https://em.realscout.com/widgets/realscout-web-components.umd.js" type="module"></script>
     <style>
-      realscout-your-listings,
-      realscout-simple-search {
+      realscout-advanced-search {
+        --rs-as-button-text-color: #ffffff;
+        --rs-as-background-color: #ffffff;
+        --rs-as-button-color: #0c0f24;
+        --rs-as-widget-width: 800px !important;
+      }
+      realscout-your-listings {
         --rs-listing-divider-color: #0c0f24;
         width: 100%;
         display: block;

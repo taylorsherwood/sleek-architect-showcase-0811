@@ -1164,5 +1164,89 @@ Proximity to Apple, Google, Meta, and other major employers makes these neighbor
       { question: "How far is Northwest Hills from downtown Austin?", answer: "Northwest Hills is typically 15–20 minutes from downtown Austin, depending on traffic." },
       { question: "What outdoor recreation is nearby?", answer: "Residents enjoy quick access to several outdoor destinations including Bull Creek District Park, Bright Leaf Preserve, Lake Austin, and hiking and biking trails throughout the area." }
     ]
+  },
+  {
+    slug: "lake-austin",
+    name: "Lake Austin",
+    heroTitle: "Lake Austin Real Estate",
+    metaTitle: "Lake Austin Homes for Sale | Waterfront Luxury in Austin TX",
+    metaDescription: "Discover Lake Austin waterfront homes, private dock estates, and exclusive off-market opportunities. Explore one of Austin's most coveted luxury enclaves.",
+    priceRange: "$1.5M – $15M+",
+    image: lakeAustinImg,
+    overview: `Lake Austin is widely considered the most prestigious waterfront stretch in Central Texas. Running along the Colorado River just west of downtown, it offers a rare combination of privacy, direct water access, and proximity to the city's core.
+
+Unlike many lake markets, Lake Austin maintains consistent water levels year-round, making it ideal for boating, wake surfing, and everyday waterfront living.
+
+Homes here range from classic estates tucked into mature tree canopies to newly constructed architectural properties designed for indoor-outdoor living. Large lots, private docks, and unobstructed water frontage are what define this market — and what continue to drive demand at the highest price points in Austin.
+
+### Location & Geography
+
+Lake Austin stretches from the Mansfield Dam down toward Lady Bird Lake, with the most sought-after sections concentrated near:
+
+- Westlake / Eanes ISD side
+- Tarrytown corridor
+- Mount Bonnell and Bright Leaf Preserve areas
+
+One of the defining advantages of Lake Austin is its accessibility. Many homes are located just 10–15 minutes from downtown Austin, making it possible to maintain a true waterfront lifestyle without sacrificing proximity to business, dining, and private schools.`,
+    lifestyle: `### Life on the Water
+
+Living on Lake Austin is centered around the water. Residents spend weekends boating, paddleboarding, or hosting directly on their docks. Popular waterfront restaurants like Hula Hut and Ski Shores are accessible by boat, reinforcing the lifestyle component that makes this area unique.
+
+### Proximity & Convenience
+
+Despite its privacy, Lake Austin is minutes from:
+
+- Downtown Austin
+- Westlake retail and dining
+- Top private and public schools
+- Major employment hubs
+
+It offers a rare combination — resort-style living without leaving the city.`,
+    marketInsights: `### Price Points & Market Dynamics
+
+Lake Austin operates in a different tier than most Austin submarkets.
+
+### Typical Ranges
+
+- Non-waterfront nearby: $1.5M – $3M
+- Entry waterfront: $2.5M – $5M
+- Prime waterfront estates: $5M – $15M+
+- Trophy properties: $15M+
+
+True waterfront inventory remains extremely limited, and a meaningful percentage of transactions occur off-market or through private networks.
+
+For buyers, access often comes down to relationships and timing rather than simply browsing public listings.`,
+    amenitiesAndSchools: `### School Districts
+
+Most Lake Austin properties feed into highly regarded districts depending on location:
+
+- Eanes ISD (Westlake High School)
+- Austin ISD (Tarrytown / Central Austin areas)
+
+Private school access is also a major draw, with several top campuses located within a short drive.
+
+### Recreation & Dining
+
+Residents enjoy direct lake access for boating, paddleboarding, and swimming. Waterfront dining options like Hula Hut, Abel's on the Lake, and Ski Shores are accessible by boat.`,
+    investmentPotential: `### Supply-Constrained Market
+
+Lake Austin remains one of the most supply-constrained and sought-after luxury markets in Texas. The fixed shoreline and Austin's continued growth create a fundamental imbalance supporting long-term appreciation.
+
+### Off-Market Activity
+
+A significant portion of Lake Austin properties trade quietly. Some of the most desirable homes never hit the public market. Through our network, we provide access to off-market listings, development opportunities, and upcoming inventory before it's widely available.
+
+### Redevelopment Opportunities
+
+Because of limited waterfront inventory, many buyers prioritize lot quality and location over structure — with tear-downs and redevelopment opportunities being common at the high end.`,
+    relatedCommunities: ["westlake-hills", "tarrytown", "downtown-austin", "rollingwood"],
+    faqs: [
+      { question: "What makes Lake Austin different from Lake Travis?", answer: "Lake Austin maintains a constant water level year-round, unlike Lake Travis which can fluctuate significantly. This makes Lake Austin ideal for private docks, boathouses, and consistent waterfront living. It's also significantly closer to downtown Austin." },
+      { question: "How much do Lake Austin waterfront homes cost?", answer: "Entry-level waterfront homes start around $2.5M–$5M. Prime waterfront estates range from $5M–$15M+, with trophy properties exceeding $15M. Non-waterfront homes nearby typically range from $1.5M–$3M." },
+      { question: "Are there off-market homes available on Lake Austin?", answer: "Yes. A meaningful percentage of Lake Austin transactions occur off-market or through private networks. Access often comes down to relationships and timing. Contact Echelon Property Group for private listing access." },
+      { question: "What school districts serve Lake Austin?", answer: "Most Lake Austin properties are served by Eanes ISD (including Westlake High School) or Austin ISD, depending on location. Several top private schools are also within a short drive." },
+      { question: "How far is Lake Austin from downtown Austin?", answer: "Most Lake Austin homes are located just 10–15 minutes from downtown Austin, making it one of the most accessible waterfront markets in Central Texas." },
+      { question: "What is the lifestyle like on Lake Austin?", answer: "Life on Lake Austin centers around the water — boating, paddleboarding, and dock entertaining are everyday activities. Popular waterfront restaurants are accessible by boat, and the area offers resort-style living within minutes of urban amenities." }
+    ]
   }
 ];

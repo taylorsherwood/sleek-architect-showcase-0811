@@ -283,7 +283,7 @@ const AustinMultifamilyReport2026 = () => {
       </section>
 
       {/* ════════ ABOUT ECHELON ════════ */}
-      <section className="py-10 md:py-12">
+      <section className="py-10 md:py-12 bg-secondary/40">
         <div className="container mx-auto px-6">
           <div className="max-w-2xl mx-auto text-center">
             <p className="text-minimal text-[hsl(var(--gold))] mb-2">ABOUT</p>

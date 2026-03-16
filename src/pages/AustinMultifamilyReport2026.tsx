@@ -111,7 +111,7 @@ const AustinMultifamilyReport2026 = () => {
   const scrollToForm = () =>
     document.getElementById("report-form")?.scrollIntoView({ behavior: "smooth" });
 
-  const REPORT_URL = "https://www.dropbox.com/scl/fi/qae7cq2m7a8kdhbjp81pa/2026-Multi-Family-Report.pdf?rlkey=w2cck92vjggphdtzbyct1w7xv&dl=0";
+  const REPORT_URL = "https://www.dropbox.com/scl/fi/qae7cq2m7a8kdhbjp81pa/2026-Multi-Family-Report.pdf?rlkey=w2cck92vjggphdtzbyct1w7xv&dl=1";
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

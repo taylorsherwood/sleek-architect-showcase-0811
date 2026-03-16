@@ -414,7 +414,7 @@ const AustinMultifamilyReport2026 = () => {
       </section>
 
       {/* ════════ CONSULTATION CTA ════════ */}
-      <section className="py-10 md:py-12 bg-primary relative overflow-hidden">
+      <section className="py-10 md:py-12 bg-[#0C0F24] relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,hsl(var(--gold)/0.05)_0%,transparent_60%)]" />
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-3xl mx-auto text-center">

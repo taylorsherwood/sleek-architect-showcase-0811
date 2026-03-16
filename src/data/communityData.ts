@@ -972,7 +972,7 @@ The expansion of Austin's tech sector and influx of high-net-worth professionals
 ### Premium Features
 
 Properties with golf course frontage, exceptional views, or unique architecture command substantial premiums and tend to appreciate faster than the broader market.`,
-    relatedCommunities: ["barton-creek", "westlake-hills", "lake-austin-waterfront", "texas-hill-country-estates"],
+    relatedCommunities: ["barton-creek", "westlake-hills", "lake-austin", "texas-hill-country-estates"],
     faqs: [
       { question: "What is Spanish Oaks in Austin?", answer: "Spanish Oaks is one of the most prestigious gated communities in the Austin area. Located just west of downtown Austin in the Texas Hill Country, the neighborhood is known for luxury estate homes, large private lots, and the exclusive Spanish Oaks Golf Club." },
       { question: "Is Spanish Oaks a gated community?", answer: "Yes. Spanish Oaks is a fully gated community with 24-hour guard-gated security, offering privacy and controlled access for residents and guests." },

@@ -215,8 +215,8 @@ const FeaturedListings = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
             <div className="mb-12">
-              <p className="text-minimal text-gold mb-4 font-extrabold">
-                ECHELON
+              <p className="text-minimal text-gold mb-4 font-extrabold">ON THE MARKET
+
               </p>
               <h2 className="text-4xl md:text-5xl font-display font-light text-architectural">
                 Commercial and Residential

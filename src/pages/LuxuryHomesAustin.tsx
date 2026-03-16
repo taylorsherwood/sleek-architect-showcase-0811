@@ -148,16 +148,10 @@ const LuxuryHomesAustin = () => {
                 from waterfront estates and custom builds to modern masterpieces.
               </p>
               <div className="border border-border/30 rounded-lg p-5 md:p-10" style={{ boxShadow: "0 4px 24px -4px hsl(var(--foreground) / 0.06)" }}>
-                {/* RealScout advanced search filtered to $1.5M+ */}
-                {(() => {
-                  const el = document.createElement("div");
-                  return (
-                    <realscout-advanced-search
-                      agent-encoded-id="QWdlbnQtMjg5NDU2"
-                      price-min="1500000"
-                    />
-                  );
-                })()}
+                {createElement("realscout-advanced-search", {
+                  "agent-encoded-id": "QWdlbnQtMjg5NDU2",
+                  "price-min": "1500000",
+                })}
               </div>
             </section>
 

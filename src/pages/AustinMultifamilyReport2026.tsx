@@ -181,7 +181,7 @@ const AustinMultifamilyReport2026 = () => {
                   onClick={scrollToForm}
                   className="bg-[hsl(var(--gold))] text-primary-foreground hover:bg-white hover:text-[#0C0F24] px-8 py-6 text-sm tracking-widest uppercase font-medium transition-all duration-200 shadow-lg hover:shadow-xl"
                 >
-                  Download the Report
+                  GET THE REPORT
                 </Button>
                 <Button
                   asChild
@@ -405,7 +405,7 @@ const AustinMultifamilyReport2026 = () => {
                   disabled={isSubmitting}
                   className="w-full bg-primary text-primary-foreground hover:bg-primary/90 py-6 text-sm tracking-widest uppercase font-medium"
                 >
-                  {isSubmitting ? "Sending…" : "Send Me the Report"}
+                  {isSubmitting ? "Sending…" : "GETTHEREPORT"}
                 </Button>
               </form>
             )}

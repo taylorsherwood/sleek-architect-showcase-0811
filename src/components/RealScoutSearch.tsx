@@ -95,9 +95,9 @@ const RealScoutSearch = () => {
         className="absolute inset-x-0 bottom-0 pointer-events-none transition-none"
         style={{
           zIndex: 2,
-          height: `${6 + fadeProgress * 18}rem`,
+          height: `${6 + fadeProgress * 94}%`,
           opacity: 0.3 + fadeProgress * 0.7,
-          background: "linear-gradient(to bottom, transparent, hsl(var(--background)))",
+          background: "linear-gradient(to bottom, transparent 0%, hsl(var(--background)) 100%)",
         }}
       />
     </section>

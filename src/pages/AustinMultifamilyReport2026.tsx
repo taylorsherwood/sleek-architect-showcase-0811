@@ -125,6 +125,29 @@ const AustinMultifamilyReport2026 = () => {
       return;
     }
     setIsSubmitting(true);
+
+    const timestamp = new Date().toLocaleString("en-US", {
+      timeZone: "America/Chicago",
+      dateStyle: "full",
+      timeStyle: "short",
+    });
+
+    const payload = {
+      access_key: "0e2b99d2-3569-4bca-b940-138b0dbfa8b5",
+      subject: "🏢 New Lead: Austin Multifamily Report 2026",
+      from_name: "Echelon Property Group Website",
+      // Web3Forms sends notification to the email linked to the access_key.
+      // Lead email goes in a custom field so it doesn't override the recipient.
+      "Lead Name": `${formData.firstName} ${formData.lastName}`,
+      "Lead Email": formData.email,
+      "Phone": formData.phone || "Not provided",
+      "Investment Focus": formData.investmentFocus || "Not specified",
+      "Submitted At": timestamp,
+      "Source": "Austin Multifamily Report 2026",
+    };
+
+    console.log("[Report Form] Payload sent:", payload);
+
     try {
       const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
@@ -132,36 +155,32 @@ const AustinMultifamilyReport2026 = () => {
           "Content-Type": "application/json",
           "Accept": "application/json",
         },
-        body: JSON.stringify({
-          access_key: "0e2b99d2-3569-4bca-b940-138b0dbfa8b5",
-          subject: "2026 Multifamily Report Download Request",
-          from_name: `${formData.firstName} ${formData.lastName}`,
-          name: `${formData.firstName} ${formData.lastName}`,
-          email: formData.email,
-          phone: formData.phone || "Not provided",
-          investment_focus: formData.investmentFocus || "Not specified",
-          message: "Requested download of Austin Multifamily Market Outlook 2026 report.",
-        }),
+        body: JSON.stringify(payload),
       });
 
-      if (!res.ok) {
-        console.error("Web3Forms HTTP error:", res.status, res.statusText);
-        // Still deliver the report even if notification fails
-      } else {
-        const data = await res.json();
-        if (!data.success) {
-          console.error("Web3Forms API error:", data);
-        }
-      }
+      const data = await res.json();
+      console.log("[Report Form] Provider response:", data);
 
-      // Always deliver the report after form completion
-      setSubmitted(true);
-      window.open(REPORT_URL, "_blank", "noopener,noreferrer");
+      if (data.success) {
+        console.log("[Report Form] ✅ Notification email triggered successfully");
+        setSubmitted(true);
+        console.log("[Report Form] Opening report PDF...");
+        window.open(REPORT_URL, "_blank", "noopener,noreferrer");
+      } else {
+        console.error("[Report Form] ❌ Web3Forms rejected submission:", data.message);
+        toast({
+          title: "Submission failed",
+          description: data.message || "The form handler rejected the submission. Please try again.",
+          variant: "destructive",
+        });
+      }
     } catch (err) {
-      console.error("Form submission network error:", err);
-      // Still deliver the report — don't block user over notification failure
-      setSubmitted(true);
-      window.open(REPORT_URL, "_blank", "noopener,noreferrer");
+      console.error("[Report Form] ❌ Network error:", err);
+      toast({
+        title: "Network error",
+        description: "Could not reach the form service. Please check your connection and try again.",
+        variant: "destructive",
+      });
     } finally {
       setIsSubmitting(false);
     }

@@ -180,7 +180,7 @@ const FeaturedListings = () => {
             <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-20 -mt-8">
               <div>
                 <p
-                  className="text-gold mb-5 font-semibold text-xs"
+                  className="text-gold mb-5 font-semibold text-sm"
                   style={{
                     fontSize: "0.6rem",
                     letterSpacing: "0.35em",
@@ -249,7 +249,7 @@ const FeaturedListings = () => {
           <div className="max-w-7xl mx-auto">
             <div className="mb-14">
               <p
-                className="text-gold mb-5 font-semibold text-xs"
+                className="text-gold mb-5 font-semibold text-sm"
                 style={{
                   fontSize: "0.6rem",
                   letterSpacing: "0.35em",

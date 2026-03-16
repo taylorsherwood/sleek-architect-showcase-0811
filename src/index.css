@@ -125,11 +125,12 @@
 
   /* Hero CTA hover elevation */
   .hero-cta-btn {
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    box-shadow: none;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
   .hero-cta-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    transform: translateY(-1px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
   }
 
   /* Scroll indicator animation */

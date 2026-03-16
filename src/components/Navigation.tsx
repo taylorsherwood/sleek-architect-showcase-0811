@@ -54,10 +54,10 @@ const Navigation = () => {
     link.children?.some((c) => location.pathname === c.href);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 overflow-visible h-20 md:h-24 lg:h-28 border-b border-border/50">
+    <nav className="fixed top-0 left-0 right-0 z-50 overflow-visible h-20 md:h-[6.5rem] lg:h-[7.5rem] border-b border-border/30">
       <div
-        className={`absolute inset-0 backdrop-blur-md transition-colors duration-300 ${
-          isScrolled ? "bg-background/65" : "bg-background"
+        className={`absolute inset-0 backdrop-blur-md transition-all duration-500 ${
+          isScrolled ? "bg-background/70" : "bg-background"
         }`}
       />
       <div className="relative container mx-auto px-6 h-full flex items-center justify-between">
@@ -84,31 +84,31 @@ const Navigation = () => {
               >
                 <button
                   onClick={() => setOpenDropdown(openDropdown === link.href ? null : link.href)}
-                  className={`relative text-minimal tracking-[0.25em] transition-colors duration-300 group cursor-pointer bg-transparent border-none ${
+                  className={`relative text-minimal tracking-[0.25em] transition-colors duration-500 group cursor-pointer bg-transparent border-none ${
                     isActive(link)
                       ? "text-foreground"
                       : "text-muted-foreground hover:text-foreground"
                   }`}
                 >
                   {link.label}
-                  <span className="ml-1.5 text-[7px] align-middle opacity-40">▼</span>
+                  <span className="ml-1.5 text-[7px] align-middle opacity-30">▼</span>
                   <span
-                    className={`absolute -bottom-1 left-0 h-px bg-foreground transition-transform duration-500 origin-left ${
+                    className={`absolute -bottom-1 left-0 h-px bg-gold transition-transform duration-500 origin-left ${
                       isActive(link) ? "w-full scale-x-100" : "w-full scale-x-0 group-hover:scale-x-100"
                     }`}
                   />
                 </button>
                 {openDropdown === link.href && (
-                  <div className="absolute top-full left-0 pt-3 min-w-[260px]">
-                    <div className="bg-background border border-border shadow-elegant">
+                  <div className="absolute top-full left-0 pt-4 min-w-[260px]">
+                    <div className="bg-background border border-border/50 shadow-elegant">
                       {link.children.map((child) => (
                         <Link
                           key={child.href}
                           to={child.href}
-                          className={`block px-6 py-3.5 text-minimal tracking-[0.2em] transition-colors duration-200 ${
+                          className={`block px-7 py-4 text-minimal tracking-[0.2em] transition-colors duration-300 ${
                             location.pathname === child.href
-                              ? "text-foreground bg-muted"
-                              : "text-muted-foreground hover:text-foreground hover:bg-muted/50"
+                              ? "text-foreground bg-muted/50"
+                              : "text-muted-foreground hover:text-foreground hover:bg-muted/30"
                           }`}
                         >
                           {child.label}
@@ -122,7 +122,7 @@ const Navigation = () => {
               <Link
                 key={link.href}
                 to={link.href}
-                className={`relative text-minimal tracking-[0.25em] transition-colors duration-300 group ${
+                className={`relative text-minimal tracking-[0.25em] transition-colors duration-500 group ${
                   location.pathname === link.href
                     ? "text-foreground"
                     : "text-muted-foreground hover:text-foreground"
@@ -130,7 +130,7 @@ const Navigation = () => {
               >
                 {link.label}
                 <span
-                  className={`absolute -bottom-1 left-0 h-px bg-foreground transition-transform duration-500 origin-left ${
+                  className={`absolute -bottom-1 left-0 h-px bg-gold transition-transform duration-500 origin-left ${
                     location.pathname === link.href ? "w-full scale-x-100" : "w-full scale-x-0 group-hover:scale-x-100"
                   }`}
                 />
@@ -140,12 +140,12 @@ const Navigation = () => {
         </div>
 
         {/* Desktop action buttons */}
-        <div className="hidden lg:flex items-center space-x-3 shrink-0 ml-8 xl:ml-14">
+        <div className="hidden lg:flex items-center space-x-4 shrink-0 ml-8 xl:ml-14">
           <a
             href="https://echelonpropertygroup.outportal.ai"
             target="_blank"
             rel="noopener noreferrer"
-            className="whitespace-nowrap text-minimal tracking-[0.2em] border border-border text-muted-foreground hover:text-primary-foreground hover:bg-[#0C0F24] hover:border-[#0C0F24] px-5 py-2.5 min-h-[40px] inline-flex items-center transition-all duration-300"
+            className="whitespace-nowrap text-minimal tracking-[0.2em] border border-border/60 text-muted-foreground hover:text-foreground hover:border-foreground/30 px-6 py-3 min-h-[42px] inline-flex items-center transition-all duration-400"
           >
             CLIENT PORTAL
           </a>
@@ -153,7 +153,7 @@ const Navigation = () => {
             href="https://taylorsherwood.realscout.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="whitespace-nowrap text-minimal tracking-[0.2em] text-primary-foreground bg-[#0C0F24] hover:bg-gold hover:border-gold px-6 py-2.5 min-h-[40px] inline-flex items-center transition-colors duration-300"
+            className="whitespace-nowrap text-minimal tracking-[0.2em] text-primary-foreground bg-primary hover:bg-gold hover:text-primary-foreground px-7 py-3 min-h-[42px] inline-flex items-center transition-all duration-400"
           >
             SEARCH HOMES
           </a>
@@ -172,11 +172,11 @@ const Navigation = () => {
 
       {/* Mobile menu */}
       {isMenuOpen && (
-        <div className="lg:hidden bg-background border-b border-border">
-          <div className="container mx-auto px-6 py-8 space-y-5">
+        <div className="lg:hidden bg-background border-b border-border/30">
+          <div className="container mx-auto px-6 py-10 space-y-6">
             {links.map((link) =>
               link.children ? (
-                <div key={link.href} className="space-y-3">
+                <div key={link.href} className="space-y-4">
                   <button
                     onClick={() =>
                       setOpenDropdown(openDropdown === link.href ? null : link.href)
@@ -188,12 +188,12 @@ const Navigation = () => {
                     }`}
                   >
                     {link.label}
-                    <span className="ml-1.5 text-[7px] opacity-40">
+                    <span className="ml-1.5 text-[7px] opacity-30">
                       {openDropdown === link.href ? "▲" : "▼"}
                     </span>
                   </button>
                   {openDropdown === link.href && (
-                    <div className="pl-4 space-y-3 border-l border-border">
+                    <div className="pl-5 space-y-4 border-l border-border/40">
                       {link.children.map((child) => (
                         <Link
                           key={child.href}
@@ -226,12 +226,12 @@ const Navigation = () => {
                 </Link>
               )
             )}
-            <div className="pt-4 space-y-3 border-t border-border">
+            <div className="pt-6 space-y-4 border-t border-border/30">
               <a
                 href="https://taylorsherwood.realscout.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block text-minimal tracking-[0.2em] text-primary-foreground bg-[#0C0F24] px-4 py-3 text-center transition-colors duration-300"
+                className="block text-minimal tracking-[0.2em] text-primary-foreground bg-primary px-4 py-3.5 text-center transition-colors duration-300"
               >
                 SEARCH HOMES
               </a>
@@ -239,7 +239,7 @@ const Navigation = () => {
                 href="https://echelonpropertygroup.outportal.ai"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block text-minimal tracking-[0.2em] border border-border text-muted-foreground hover:text-foreground px-4 py-3 text-center transition-colors duration-300"
+                className="block text-minimal tracking-[0.2em] border border-border/50 text-muted-foreground hover:text-foreground px-4 py-3.5 text-center transition-colors duration-300"
               >
                 CLIENT PORTAL
               </a>

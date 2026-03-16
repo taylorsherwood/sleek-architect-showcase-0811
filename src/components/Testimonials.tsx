@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import { Quote } from "lucide-react";
 import echelonSecondaryLogo from "@/assets/echelon-secondary-logo.png";
 

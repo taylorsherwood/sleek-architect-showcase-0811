@@ -53,14 +53,14 @@ const Hero = () => {
             video.defaultMuted = true;
             const retry = video.play();
             if (retry !== undefined) {
-              retry.
-              then(() => {
-                setVideoReady(true);
-                setShowFallback(false);
-              }).
-              catch(() => {
-                setShowFallback(true);
-              });
+              retry
+                .then(() => {
+                  setVideoReady(true);
+                  setShowFallback(false);
+                })
+                .catch(() => {
+                  setShowFallback(true);
+                });
             } else {
               setShowFallback(true);
             }
@@ -94,8 +94,8 @@ const Hero = () => {
       <div
         aria-hidden="true"
         className="absolute inset-0 pointer-events-none select-none overflow-hidden"
-        style={{ zIndex: 0 }}>
-        
+        style={{ zIndex: 0 }}
+      >
         <video
           ref={videoRef}
           autoPlay
@@ -104,109 +104,112 @@ const Hero = () => {
           playsInline
           preload="metadata"
           poster="/images/hero-poster.jpg"
-          className={`hero-bg-video transition-opacity duration-700 ${videoReady ? "opacity-100" : "opacity-0"}`}
-          tabIndex={-1}>
-          
+          className={`hero-bg-video transition-opacity duration-700 ${
+            videoReady ? "opacity-100" : "opacity-0"
+          }`}
+          tabIndex={-1}
+        >
           {videoSrc && <source src={videoSrc} type="video/mp4" />}
         </video>
       </div>
 
       {/* Fallback image */}
-      {showFallback && !videoReady &&
-      <img
-        src={heroFallback}
-        alt="Austin skyline"
-        title="Austin Texas skyline — Echelon Property Group"
-        className="absolute inset-0 w-full h-full object-cover"
-        style={{ zIndex: 0 }} />
+      {showFallback && !videoReady && (
+        <img
+          src={heroFallback}
+          alt="Austin skyline"
+          title="Austin Texas skyline — Echelon Property Group"
+          className="absolute inset-0 w-full h-full object-cover"
+          style={{ zIndex: 0 }}
+        />
+      )}
 
-      }
-
-      {/* Cinematic vignette gradient — extended darkness behind text */}
+      {/* Cinematic vignette gradient */}
       <div
         className="absolute inset-0"
         style={{
           zIndex: 1,
           background: `
-            linear-gradient(to right, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.45) 20%, rgba(0,0,0,0.25) 50%, rgba(0,0,0,0) 65%),
-            linear-gradient(to top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.1) 35%, transparent 65%),
-            radial-gradient(ellipse at 15% 70%, rgba(0,0,0,0.3) 0%, transparent 60%)
-          `
-        }} />
-      
+            linear-gradient(to right, rgba(0,0,0,0.58) 0%, rgba(0,0,0,0.42) 22%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0) 68%),
+            linear-gradient(to top, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.08) 40%, transparent 70%),
+            radial-gradient(ellipse at 15% 70%, rgba(0,0,0,0.25) 0%, transparent 55%)
+          `,
+        }}
+      />
 
       {/* Content */}
       <div
-        className="relative container mx-auto px-6 pt-20 md:pt-28 lg:pt-32"
-        style={{ zIndex: 2 }}>
-        
+        className="relative container mx-auto px-6 pt-24 md:pt-32 lg:pt-36"
+        style={{ zIndex: 2 }}
+      >
         <div
           className="max-w-xl relative"
           style={{
-            filter: "drop-shadow(0 0 80px rgba(0,0,0,0.4))"
-          }}>
-          
+            filter: "drop-shadow(0 0 60px rgba(0,0,0,0.3))",
+          }}
+        >
           <p
-            className="text-warm-cream/60 mb-6 reveal font-medium"
+            className="text-warm-cream/55 mb-8 reveal font-medium"
             style={{
               fontFamily: '"Raleway", sans-serif',
-              fontSize: "0.7rem",
-              letterSpacing: "0.3em",
+              fontSize: "0.65rem",
+              letterSpacing: "0.38em",
               textTransform: "uppercase",
-              textShadow: "0 1px 8px rgba(0,0,0,0.5)"
-            }}>
-            
+              textShadow: "0 1px 6px rgba(0,0,0,0.4)",
+            }}
+          >
             STRATEGIC AUSTIN REAL ESTATE ADVISORY
           </p>
 
           <h1
-            className="font-display font-light text-warm-cream text-architectural mb-10 reveal"
+            className="font-display font-light text-warm-cream mb-12 reveal"
             style={{
-              fontSize: "clamp(2.6rem, 5.5vw, 5.5rem)",
-              lineHeight: 1.15,
-              textShadow: "0px 3px 10px rgba(0,0,0,0.45), 0 1px 3px rgba(0,0,0,0.3)"
-            }}>
-            
+              fontSize: "clamp(2.8rem, 5.8vw, 5.8rem)",
+              lineHeight: 1.08,
+              letterSpacing: "-0.025em",
+              textShadow:
+                "0px 2px 8px rgba(0,0,0,0.35), 0 1px 2px rgba(0,0,0,0.2)",
+            }}
+          >
             <span className="whitespace-nowrap">Driven By Data,</span>
             <br />
             <span className="italic whitespace-nowrap">Proven by Results</span>
           </h1>
 
           {/* Service pillars */}
-          <div className="flex flex-wrap items-center gap-x-4 gap-y-1 mb-7 reveal-delayed">
-            {[
-            "Luxury Homes",
-            "Private Investments",
-            "Development Opportunities"].
-            map((item, i) =>
-            <span key={item} className="flex items-center gap-4">
-                <span
-                className="text-warm-cream font-medium"
-                style={{
-                  fontFamily: '"Raleway", sans-serif',
-                  fontSize: "0.85rem",
-                  letterSpacing: "0.08em",
-                  fontWeight: 500,
-                  textShadow: "0px 2px 8px rgba(0,0,0,0.45)"
-                }}>
-                
-                  {item}
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-1 mb-8 reveal-delayed">
+            {["Luxury Homes", "Private Investments", "Development Opportunities"].map(
+              (item, i) => (
+                <span key={item} className="flex items-center gap-5">
+                  <span
+                    className="text-warm-cream/85 font-light"
+                    style={{
+                      fontFamily: '"Raleway", sans-serif',
+                      fontSize: "0.8rem",
+                      letterSpacing: "0.12em",
+                      fontWeight: 400,
+                      textShadow: "0px 1px 6px rgba(0,0,0,0.35)",
+                    }}
+                  >
+                    {item}
+                  </span>
+                  {i < 2 && (
+                    <span className="text-warm-cream/25 text-[6px]">•</span>
+                  )}
                 </span>
-                {i < 2 &&
-              <span className="text-warm-cream/40 text-xs">•</span>
-              }
-              </span>
+              )
             )}
           </div>
 
           <p
-            className="text-warm-cream/70 max-w-lg mb-14 reveal-delayed leading-relaxed font-semibold"
+            className="text-warm-cream/60 max-w-lg mb-16 reveal-delayed leading-relaxed font-normal"
             style={{
               fontFamily: '"Raleway", sans-serif',
-              fontSize: "1.05rem",
-              textShadow: "0px 2px 6px rgba(0,0,0,0.35)"
-            }}>
-            
+              fontSize: "1rem",
+              letterSpacing: "0.01em",
+              textShadow: "0px 1px 4px rgba(0,0,0,0.25)",
+            }}
+          >
             Data-driven strategy and discreet representation across Austin's
             most sought-after neighborhoods.
           </p>
@@ -214,26 +217,28 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-5 reveal-delayed-2">
             <Link
               to="/listings"
-              className="hero-cta-btn inline-block bg-warm-cream text-foreground px-12 py-5 text-center transition-all duration-200 ease-out hover:bg-gold hover:text-primary-foreground"
+              className="hero-cta-btn inline-block bg-warm-cream text-foreground px-14 py-5 text-center"
               style={{
                 fontFamily: '"Raleway", sans-serif',
-                fontSize: "0.65rem",
-                letterSpacing: "0.22em",
+                fontSize: "0.62rem",
+                letterSpacing: "0.25em",
                 textTransform: "uppercase",
-                fontWeight: 700
-              }}>
+                fontWeight: 700,
+              }}
+            >
               Explore Listings
             </Link>
             <Link
               to="/contact"
-              className="hero-cta-btn inline-block border border-warm-cream/40 text-warm-cream px-9 py-4 text-center transition-all duration-200 ease-out hover:bg-warm-cream/10 hover:border-warm-cream/60"
+              className="hero-cta-btn inline-block border border-warm-cream/25 text-warm-cream/80 px-10 py-5 text-center hover:bg-warm-cream/5 hover:border-warm-cream/40 hover:text-warm-cream"
               style={{
                 fontFamily: '"Raleway", sans-serif',
-                fontSize: "0.65rem",
-                letterSpacing: "0.22em",
+                fontSize: "0.62rem",
+                letterSpacing: "0.25em",
                 textTransform: "uppercase",
-                fontWeight: 500
-              }}>
+                fontWeight: 400,
+              }}
+            >
               Schedule a Consultation
             </Link>
           </div>
@@ -242,28 +247,28 @@ const Hero = () => {
 
       {/* Scroll indicator */}
       <div
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 hero-scroll-indicator"
-        style={{ zIndex: 2 }}>
-        
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 hero-scroll-indicator"
+        style={{ zIndex: 2 }}
+      >
         <ChevronDown
-          className="text-warm-cream/40"
-          size={20}
-          strokeWidth={1.5} />
-        
+          className="text-warm-cream/30"
+          size={18}
+          strokeWidth={1}
+        />
         <span
-          className="text-warm-cream/35 font-medium"
+          className="text-warm-cream/25 font-light"
           style={{
             fontFamily: '"Raleway", sans-serif',
-            fontSize: "0.6rem",
-            letterSpacing: "0.25em",
-            textTransform: "uppercase"
-          }}>
-          
+            fontSize: "0.55rem",
+            letterSpacing: "0.3em",
+            textTransform: "uppercase",
+          }}
+        >
           Discover Austin
         </span>
       </div>
-    </section>);
-
+    </section>
+  );
 };
 
 export default Hero;

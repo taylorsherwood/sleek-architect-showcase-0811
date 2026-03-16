@@ -137,21 +137,21 @@ const AustinMultifamilyReport2026 = () => {
       <Navigation />
 
       {/* ════════ HERO ════════ */}
-      <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 bg-primary overflow-hidden">
+      <section className="relative pt-28 pb-14 md:pt-32 md:pb-16 bg-primary overflow-hidden">
         {/* subtle architectural texture */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,hsl(var(--gold)/0.06)_0%,transparent_60%)]" />
         <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-10">
+          <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-6 md:gap-8">
             {/* text */}
             <div className="flex-1 text-center md:text-left">
-              <p className="text-minimal text-[hsl(var(--gold))] mb-5">INVESTOR REPORT</p>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-light text-primary-foreground leading-[1.1] mb-6">
+              <p className="text-minimal text-[hsl(var(--gold))] mb-3">INVESTOR REPORT</p>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-light text-primary-foreground leading-[1.1] mb-4">
                 Austin Multifamily Market Outlook 2026
               </h1>
-              <p className="text-lg md:text-xl text-primary-foreground/65 leading-relaxed max-w-xl mb-4">
+              <p className="text-lg md:text-xl text-primary-foreground/65 leading-relaxed max-w-xl mb-3">
                 Institutional-style market analysis covering rents, supply, vacancy, and Austin submarkets positioned for recovery
               </p>
-              <p className="text-sm text-[hsl(var(--gold))] tracking-widest uppercase mb-10">
+              <p className="text-sm text-[hsl(var(--gold))] tracking-widest uppercase mb-6">
                 By Echelon Property Group
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">

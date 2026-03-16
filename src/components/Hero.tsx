@@ -260,7 +260,7 @@ const Hero = () => {
         style={{ zIndex: 3 }}
       >
         <span
-          className="text-warm-cream/70 font-light"
+          className="text-warm-cream font-light"
           style={{
             fontFamily: '"Raleway", sans-serif',
             fontSize: "0.6rem",

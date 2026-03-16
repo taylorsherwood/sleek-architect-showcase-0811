@@ -126,6 +126,7 @@ const Navigation = () => {
               <Link
                 key={link.href}
                 to={link.href}
+                onClick={() => { if (link.href === '/' && location.pathname === '/') window.scrollTo({ top: 0, behavior: 'smooth' }); }}
                 className={`relative text-minimal tracking-[0.25em] transition-colors duration-500 group ${
                   location.pathname === link.href
                     ? "text-foreground"

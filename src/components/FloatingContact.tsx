@@ -52,7 +52,8 @@ const FloatingContact = () => {
 
     return () => {
       window.removeEventListener("advisory-bar-dismissed", onDismissed);
-      observer?.disconnect();
+      bannerObserver?.disconnect();
+      heroObserver?.disconnect();
     };
   }, [isHomepage]);
 

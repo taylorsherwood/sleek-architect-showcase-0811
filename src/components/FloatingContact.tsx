@@ -6,62 +6,50 @@ import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 const HEADSHOT = "/lovable-uploads/taylor-headshot-widget.jpg";
 const HEADSHOT_LAUNCHER = "/lovable-uploads/taylor-headshot-widget-2.jpg";
 
+const SESSION_KEY = "echelon_advisory_bar_dismissed";
+
 const FloatingContact = () => {
   const [open, setOpen] = useState(false);
   const [visible, setVisible] = useState(false);
   const location = useLocation();
   const isHomepage = location.pathname === "/";
 
-  // Track two conditions on the homepage:
-  // 1. User must have scrolled past the search section
-  // 2. The Private Opportunities banner must NOT be visible
-  const [pastSearch, setPastSearch] = useState(false);
+  // The floating widget only appears after the advisory bar has been dismissed
+  const [advisoryDismissed, setAdvisoryDismissed] = useState(
+    () => sessionStorage.getItem(SESSION_KEY) === "1"
+  );
+  // Homepage-specific: hide when Private Opportunities banner is visible
   const [bannerVisible, setBannerVisible] = useState(false);
-  const [advisoryDismissed, setAdvisoryDismissed] = useState(false);
   const delayTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
-    const onAdvisoryDismissed = () => setAdvisoryDismissed(true);
-    window.addEventListener("advisory-bar-dismissed", onAdvisoryDismissed);
+    const onDismissed = () => setAdvisoryDismissed(true);
+    window.addEventListener("advisory-bar-dismissed", onDismissed);
 
-    if (!isHomepage) {
-      setVisible(true);
-      return () => {
-        window.removeEventListener("advisory-bar-dismissed", onAdvisoryDismissed);
-      };
-    }
-
-    // Scroll check: past the search section
-    const checkScroll = () => {
-      const el = document.getElementById("realscout-search");
-      if (el) setPastSearch(el.getBoundingClientRect().bottom < 0);
-    };
-    window.addEventListener("scroll", checkScroll, { passive: true });
-    checkScroll();
-
-    // IntersectionObserver: Private Opportunities banner
-    const banner = document.getElementById("private-opportunities-banner");
+    // Homepage: track Private Opportunities banner visibility
     let observer: IntersectionObserver | null = null;
-    if (banner) {
-      observer = new IntersectionObserver(
-        ([entry]) => setBannerVisible(entry.isIntersecting),
-        { threshold: 0 }
-      );
-      observer.observe(banner);
+    if (isHomepage) {
+      const banner = document.getElementById("private-opportunities-banner");
+      if (banner) {
+        observer = new IntersectionObserver(
+          ([entry]) => setBannerVisible(entry.isIntersecting),
+          { threshold: 0 }
+        );
+        observer.observe(banner);
+      }
     }
 
     return () => {
-      window.removeEventListener("scroll", checkScroll);
-      window.removeEventListener("advisory-bar-dismissed", onAdvisoryDismissed);
+      window.removeEventListener("advisory-bar-dismissed", onDismissed);
       observer?.disconnect();
     };
   }, [isHomepage]);
 
-  // Derive visibility with a 1s delay when showing
+  // Derive visibility: advisory must be dismissed, and on homepage the banner must not be visible
   useEffect(() => {
     if (delayTimer.current) clearTimeout(delayTimer.current);
 
-    const shouldShow = isHomepage ? advisoryDismissed || (pastSearch && !bannerVisible) : true;
+    const shouldShow = advisoryDismissed && (!isHomepage || !bannerVisible);
 
     if (shouldShow) {
       delayTimer.current = setTimeout(() => setVisible(true), 1000);
@@ -72,7 +60,7 @@ const FloatingContact = () => {
     return () => {
       if (delayTimer.current) clearTimeout(delayTimer.current);
     };
-  }, [isHomepage, pastSearch, bannerVisible, advisoryDismissed]);
+  }, [advisoryDismissed, isHomepage, bannerVisible]);
 
   return (
     <>

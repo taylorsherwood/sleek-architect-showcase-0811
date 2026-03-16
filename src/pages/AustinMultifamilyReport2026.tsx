@@ -97,7 +97,8 @@ const AustinMultifamilyReport2026 = () => {
       setShowSticky(window.scrollY > 600);
       if (navyCTARef.current) {
         const rect = navyCTARef.current.getBoundingClientRect();
-        setStickyInverted(rect.top < window.innerHeight && rect.bottom > 0);
+        // Invert when the navy section's top edge reaches the sticky bar (~56px from bottom)
+        setStickyInverted(rect.top <= window.innerHeight - 56);
       }
     };
     window.addEventListener("scroll", onScroll, { passive: true });

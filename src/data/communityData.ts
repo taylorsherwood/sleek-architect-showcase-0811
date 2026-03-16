@@ -782,7 +782,7 @@ Prime acreage near Austin has appreciated 10-15% annually over the past five yea
 ### Tax Advantages
 
 Agricultural exemptions can reduce property taxes by 90% or more on qualifying land. Combined with no state income tax, the Hill Country offers compelling investment economics.`,
-    relatedCommunities: ["dripping-springs", "barton-creek", "lake-austin-waterfront", "westlake-hills"],
+    relatedCommunities: ["dripping-springs", "barton-creek", "lake-austin", "westlake-hills"],
     faqs: [
       { question: "How much does a ranch cost in the Texas Hill Country?", answer: "Hill Country ranch properties range from $1 million for smaller boutique estates (10-50 acres) to over $30 million for large working ranches with thousands of acres. Price per acre ranges from $5,000 to $15,000+ for improved land near Austin." },
       { question: "Can you run cattle on Hill Country land?", answer: "Yes. Many Hill Country properties support cattle, horses, and other livestock. Agricultural use qualifies for agricultural tax exemptions, significantly reducing property tax liability. Working ranches with existing infrastructure are available across the region." },

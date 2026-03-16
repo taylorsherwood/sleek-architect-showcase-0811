@@ -41,7 +41,7 @@ const RealScoutSearch = () => {
           >
             Find Exceptional Homes
             <br />
-            <span className="italic" style={{ color: "hsl(42 30% 62%)" }}>
+            <span className="italic" style={{ color: "hsl(42 45% 68%)" }}>
               in Austin
             </span>
           </h2>

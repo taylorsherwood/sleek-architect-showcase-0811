@@ -50,9 +50,9 @@ const NewsletterSection = lazy(async () => {
               BECOME AN ECHELON INSIDER
             </a>
             <div className="mt-12 flex items-center justify-center gap-10 md:gap-14">
-              <img src={commercialLogo} alt="eXp Commercial" title="eXp Commercial — Echelon Property Group" className="h-[8.75rem] md:h-40 w-auto object-contain" loading="lazy" decoding="async" />
-              <img src={luxuryLogo} alt="eXp Realty Luxury" title="eXp Realty Luxury — Echelon Property Group" className="h-[8.75rem] md:h-40 w-auto object-contain" loading="lazy" decoding="async" />
-              <img src={realtyLogo} alt="eXp Realty" title="eXp Realty — Echelon Property Group brokerage" className="h-[8.75rem] md:h-40 w-auto object-contain" loading="lazy" decoding="async" />
+              <img src={commercialLogo} alt="eXp Commercial" title="eXp Commercial — Echelon Property Group" className="h-[13rem] md:h-60 w-auto object-contain" loading="lazy" decoding="async" />
+              <img src={luxuryLogo} alt="eXp Realty Luxury" title="eXp Realty Luxury — Echelon Property Group" className="h-[13rem] md:h-60 w-auto object-contain" loading="lazy" decoding="async" />
+              <img src={realtyLogo} alt="eXp Realty" title="eXp Realty — Echelon Property Group brokerage" className="h-[13rem] md:h-60 w-auto object-contain" loading="lazy" decoding="async" />
             </div>
           </div>
         </div>

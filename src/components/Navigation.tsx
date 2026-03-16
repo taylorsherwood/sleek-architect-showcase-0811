@@ -65,7 +65,7 @@ const Navigation = () => {
         }`}
       />
       <div className="relative container mx-auto px-6 h-full flex items-center justify-between">
-        <Link to="/" className="flex items-center shrink-0 overflow-visible" style={{ height: '100%' }}>
+        <Link to="/" onClick={() => { if (location.pathname === '/') window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="flex items-center shrink-0 overflow-visible" style={{ height: '100%' }}>
           <img
             src={logo}
             alt="Echelon Property Group"

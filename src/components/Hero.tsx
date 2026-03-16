@@ -245,6 +245,15 @@ const Hero = () => {
         </div>
       </div>
 
+      {/* Bottom bleed — fades hero into search section bg */}
+      <div
+        className="absolute inset-x-0 bottom-0 h-48 pointer-events-none"
+        style={{
+          zIndex: 1,
+          background: "linear-gradient(to bottom, transparent 0%, hsl(233 50% 9%) 100%)",
+        }}
+      />
+
       {/* Scroll indicator */}
       <div
         className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 hero-scroll-indicator"

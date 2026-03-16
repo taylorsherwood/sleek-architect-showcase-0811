@@ -114,7 +114,7 @@ const MarketReport = () => {
 
                 <div className="border-l-2 border-gold pl-6">
                   <h3 className="text-xl font-display font-medium mb-2">
-                    <Link to="/communities/lake-austin-waterfront" className="hover:text-muted-foreground transition-colors">Lake Austin Waterfront</Link>
+                    <Link to="/communities/lake-austin" className="hover:text-muted-foreground transition-colors">Lake Austin Waterfront</Link>
                   </h3>
                   <p className="text-minimal text-gold mb-2">Median: $5M+ | Appreciation: 8-12% annually</p>
                   <p className="text-muted-foreground leading-relaxed">

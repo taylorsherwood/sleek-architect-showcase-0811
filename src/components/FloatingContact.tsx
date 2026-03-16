@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import { X, Phone, Mail } from "lucide-react";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
@@ -12,26 +12,60 @@ const FloatingContact = () => {
   const location = useLocation();
   const isHomepage = location.pathname === "/";
 
+  // Track two conditions on the homepage:
+  // 1. User must have scrolled past the search section
+  // 2. The Private Opportunities banner must NOT be visible
+  const [pastSearch, setPastSearch] = useState(false);
+  const [bannerVisible, setBannerVisible] = useState(false);
+  const delayTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
   useEffect(() => {
     if (!isHomepage) {
-      // Show immediately on non-homepage routes
       setVisible(true);
       return;
     }
 
-    // On homepage, show only after scrolling past the search section
-    const check = () => {
+    // Scroll check: past the search section
+    const checkScroll = () => {
       const el = document.getElementById("realscout-search");
-      if (el) {
-        const rect = el.getBoundingClientRect();
-        setVisible(rect.bottom < 0);
-      }
+      if (el) setPastSearch(el.getBoundingClientRect().bottom < 0);
     };
+    window.addEventListener("scroll", checkScroll, { passive: true });
+    checkScroll();
 
-    window.addEventListener("scroll", check, { passive: true });
-    check();
-    return () => window.removeEventListener("scroll", check);
+    // IntersectionObserver: Private Opportunities banner
+    const banner = document.getElementById("private-opportunities-banner");
+    let observer: IntersectionObserver | null = null;
+    if (banner) {
+      observer = new IntersectionObserver(
+        ([entry]) => setBannerVisible(entry.isIntersecting),
+        { threshold: 0 }
+      );
+      observer.observe(banner);
+    }
+
+    return () => {
+      window.removeEventListener("scroll", checkScroll);
+      observer?.disconnect();
+    };
   }, [isHomepage]);
+
+  // Derive visibility with a 1s delay when showing
+  useEffect(() => {
+    if (delayTimer.current) clearTimeout(delayTimer.current);
+
+    const shouldShow = isHomepage ? pastSearch && !bannerVisible : true;
+
+    if (shouldShow) {
+      delayTimer.current = setTimeout(() => setVisible(true), 1000);
+    } else {
+      setVisible(false);
+    }
+
+    return () => {
+      if (delayTimer.current) clearTimeout(delayTimer.current);
+    };
+  }, [isHomepage, pastSearch, bannerVisible]);
 
   return (
     <>

@@ -17,6 +17,7 @@ const FloatingContact = () => {
   // 2. The Private Opportunities banner must NOT be visible
   const [pastSearch, setPastSearch] = useState(false);
   const [bannerVisible, setBannerVisible] = useState(false);
+  const [advisoryDismissed, setAdvisoryDismissed] = useState(false);
   const delayTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {

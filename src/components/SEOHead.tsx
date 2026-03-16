@@ -38,8 +38,8 @@ const SEOHead = ({ title, description, canonical, ogTitle, ogDescription }: SEOH
       <title>{seoTitle}</title>
       <meta name="description" content={seoDescription} />
 
-      <meta property="og:title" content={seoTitle} />
-      <meta property="og:description" content={seoDescription} />
+      <meta property="og:title" content={openGraphTitle} />
+      <meta property="og:description" content={openGraphDescription} />
       <meta property="og:url" content={canonicalUrl} />
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content={BRAND_NAME} />

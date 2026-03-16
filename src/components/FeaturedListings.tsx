@@ -52,7 +52,7 @@ const FeaturedListings = () => {
     el.setAttribute("sort-order", "PRICE_HIGH");
     el.setAttribute("listing-status", "For Sale,For Rent,In Contract");
     el.setAttribute("property-types", "SFR,MF,TC,LAL,MOBILE,OTHER");
-    el.setAttribute("price-min", "300000");
+    el.setAttribute("price-min", "600000");
     el.setAttribute("include-co-listings", "");
     el.setAttribute("include-seller-listings", "");
     widgetRef.current.appendChild(el);

@@ -92,8 +92,12 @@ const Testimonials = () => {
             {testimonials.map((t, i) => (
               <div
                 key={i}
-                className={`group relative bg-background rounded-xl p-7 md:p-8 flex flex-col justify-between transition-all duration-500 hover:-translate-y-1 overflow-hidden${i === testimonials.length - 1 ? " md:col-span-2 md:max-w-[calc(50%-1rem)] md:mx-auto" : ""}`}
+                ref={(el) => { cardsRef.current[i] = el; }}
+                className={`group relative bg-background rounded-xl p-7 md:p-8 flex flex-col justify-between hover:-translate-y-1 overflow-hidden${i === testimonials.length - 1 ? " md:col-span-2 md:max-w-[calc(50%-1rem)] md:mx-auto" : ""}`}
                 style={{
+                  opacity: 0,
+                  transform: "translateY(40px)",
+                  transition: `opacity 500ms ease ${i * 120}ms, transform 500ms ease ${i * 120}ms, box-shadow 500ms ease`,
                   boxShadow:
                     "0 4px 24px hsl(220 20% 10% / 0.06), 0 1px 4px hsl(220 20% 10% / 0.04)",
                 }}

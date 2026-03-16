@@ -1,4 +1,3 @@
-import { createElement } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -48,14 +47,18 @@ const LuxuryHomesAustin = () => {
         </div>
       </section>
 
-      {/* RealScout Shared Search Widget */}
+      {/* RealScout Shared Search */}
       <section className="pb-20">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
-            {createElement("realscout-advanced-search", {
-              "agent-encoded-id": "QWdlbnQtMjg5NDU2",
-              "shared-search-id": "U2hhcmVhYmxlU2VhcmNoTGluay0xMjgxOA==",
-            })}
+            <iframe
+              src="https://taylorsherwood.realscout.com/homesearch/shared-searches/U2hhcmVhYmxlU2VhcmNoTGluay0xMjgxOA=="
+              title="Austin luxury homes for sale — RealScout search"
+              className="w-full border-0 rounded-sm"
+              style={{ height: "800px" }}
+              loading="lazy"
+              allowFullScreen
+            />
           </div>
         </div>
       </section>
@@ -118,24 +121,6 @@ const LuxuryHomesAustin = () => {
                     </div>
                   </Link>
                 ))}
-              </div>
-            </section>
-
-            {/* Featured Listings */}
-            <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
-                Featured Austin Luxury Listings
-              </h2>
-              <p className="text-muted-foreground leading-relaxed mb-8">
-                Browse current luxury listings priced above $1.5 million across Austin's most desirable
-                neighborhoods. These homes represent the finest residential real estate in the Austin metro,
-                from waterfront estates and custom builds to modern masterpieces.
-              </p>
-              <div className="border border-border/30 rounded-lg p-5 md:p-10" style={{ boxShadow: "0 4px 24px -4px hsl(var(--foreground) / 0.06)" }}>
-                {createElement("realscout-advanced-search", {
-                  "agent-encoded-id": "QWdlbnQtMjg5NDU2",
-                  "shared-search-id": "U2hhcmVhYmxlU2VhcmNoTGluay0xMjgxOA==",
-                })}
               </div>
             </section>
 

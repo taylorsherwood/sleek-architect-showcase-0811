@@ -21,9 +21,14 @@ const FloatingContact = () => {
   const delayTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
+    const onAdvisoryDismissed = () => setAdvisoryDismissed(true);
+    window.addEventListener("advisory-bar-dismissed", onAdvisoryDismissed);
+
     if (!isHomepage) {
       setVisible(true);
-      return;
+      return () => {
+        window.removeEventListener("advisory-bar-dismissed", onAdvisoryDismissed);
+      };
     }
 
     // Scroll check: past the search section
@@ -47,6 +52,7 @@ const FloatingContact = () => {
 
     return () => {
       window.removeEventListener("scroll", checkScroll);
+      window.removeEventListener("advisory-bar-dismissed", onAdvisoryDismissed);
       observer?.disconnect();
     };
   }, [isHomepage]);

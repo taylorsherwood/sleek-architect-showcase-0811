@@ -231,7 +231,7 @@ const Hero = () => {
             </Link>
             <Link
               to="/contact"
-              className="hero-cta-btn inline-block border border-warm-cream/25 text-warm-cream/75 px-10 py-[1.1rem] text-center hover:bg-warm-cream/5 hover:border-warm-cream/40 hover:text-warm-cream"
+              className="hero-cta-btn inline-block border border-warm-cream/25 text-warm-cream/75 px-10 py-[1.1rem] text-center hover:bg-white hover:text-[#0C0F24] hover:border-white transition-all duration-300"
               style={{
                 fontFamily: '"Raleway", sans-serif',
                 fontSize: "0.6rem",

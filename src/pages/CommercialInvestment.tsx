@@ -67,12 +67,12 @@ const CommercialInvestment = () => {
               >
                 DISCUSS AN ACQUISITION
               </Link>
-              <a
-                href="#featured-listings"
+              <Link
+                to="/austin-multifamily-report-2026"
                 className="inline-block text-minimal border border-warm-cream/50 text-warm-cream hover:bg-warm-cream/10 px-8 py-4 transition-colors duration-300"
               >
-                VIEW OPPORTUNITIES
-              </a>
+                2026 MULTI FAMILY REPORT
+              </Link>
             </div>
           </div>
         </div>

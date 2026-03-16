@@ -48,8 +48,8 @@ const WHATS_INSIDE = [
 ];
 
 const TAKEAWAYS = [
-  "2026 is likely a stabilization year, not a peak growth year",
   "Supply pressure is easing as new deliveries slow",
+  "2026 is likely a stabilization year, not a peak growth year",
   "Select Austin submarkets may recover ahead of the broader market",
 ];
 

@@ -220,7 +220,7 @@ const Navigation = () => {
                 <Link
                   key={link.href}
                   to={link.href}
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={() => { setIsMenuOpen(false); if (link.href === '/' && location.pathname === '/') window.scrollTo({ top: 0, behavior: 'smooth' }); }}
                   className={`block text-minimal tracking-[0.25em] transition-colors duration-300 ${
                     location.pathname === link.href
                       ? "text-foreground"

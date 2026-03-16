@@ -20,28 +20,40 @@ const FloatingContact = () => {
   );
   // Homepage-specific: hide when Private Opportunities banner is visible
   const [bannerVisible, setBannerVisible] = useState(false);
+  const [heroVisible, setHeroVisible] = useState(true);
   const delayTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     const onDismissed = () => setAdvisoryDismissed(true);
     window.addEventListener("advisory-bar-dismissed", onDismissed);
 
-    // Homepage: track Private Opportunities banner visibility
-    let observer: IntersectionObserver | null = null;
+    let bannerObserver: IntersectionObserver | null = null;
+    let heroObserver: IntersectionObserver | null = null;
+
     if (isHomepage) {
       const banner = document.getElementById("private-opportunities-banner");
       if (banner) {
-        observer = new IntersectionObserver(
+        bannerObserver = new IntersectionObserver(
           ([entry]) => setBannerVisible(entry.isIntersecting),
           { threshold: 0 }
         );
-        observer.observe(banner);
+        bannerObserver.observe(banner);
+      }
+
+      const hero = document.getElementById("hero-section");
+      if (hero) {
+        heroObserver = new IntersectionObserver(
+          ([entry]) => setHeroVisible(entry.isIntersecting),
+          { threshold: 0 }
+        );
+        heroObserver.observe(hero);
       }
     }
 
     return () => {
       window.removeEventListener("advisory-bar-dismissed", onDismissed);
-      observer?.disconnect();
+      bannerObserver?.disconnect();
+      heroObserver?.disconnect();
     };
   }, [isHomepage]);
 
@@ -49,7 +61,7 @@ const FloatingContact = () => {
   useEffect(() => {
     if (delayTimer.current) clearTimeout(delayTimer.current);
 
-    const shouldShow = advisoryDismissed && (!isHomepage || !bannerVisible);
+    const shouldShow = advisoryDismissed && (!isHomepage || (!bannerVisible && !heroVisible));
 
     if (shouldShow) {
       delayTimer.current = setTimeout(() => setVisible(true), 1000);
@@ -60,7 +72,7 @@ const FloatingContact = () => {
     return () => {
       if (delayTimer.current) clearTimeout(delayTimer.current);
     };
-  }, [advisoryDismissed, isHomepage, bannerVisible]);
+  }, [advisoryDismissed, isHomepage, bannerVisible, heroVisible]);
 
   return (
     <>

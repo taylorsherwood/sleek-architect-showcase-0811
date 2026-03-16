@@ -141,7 +141,7 @@ const AustinMultifamilyReport2026 = () => {
         {/* subtle architectural texture */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,hsl(var(--gold)/0.06)_0%,transparent_60%)]" />
         <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-6 md:gap-8">
+          <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-4 md:gap-6">
             {/* text */}
             <div className="flex-1 text-center md:text-left">
               <p className="text-minimal text-[hsl(var(--gold))] mb-3">INVESTOR REPORT</p>
@@ -171,12 +171,12 @@ const AustinMultifamilyReport2026 = () => {
               </div>
             </div>
             {/* report mockup — desktop */}
-            <div className="hidden md:flex flex-shrink-0 justify-center">
+            <div className="hidden md:flex flex-shrink-0 justify-center -ml-4">
               <img
                 src={reportCover}
                 alt="Austin Multifamily Market Outlook 2026 report cover"
                 title="Austin Multifamily Market Outlook 2026 — Echelon Property Group"
-                className="w-80 lg:w-[26rem] drop-shadow-2xl"
+                className="w-80 lg:w-[26rem] drop-shadow-2xl -scale-x-100"
                 loading="eager"
               />
             </div>

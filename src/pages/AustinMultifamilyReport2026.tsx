@@ -102,7 +102,7 @@ const AustinMultifamilyReport2026 = () => {
   const scrollToForm = () =>
     document.getElementById("report-form")?.scrollIntoView({ behavior: "smooth" });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.firstName.trim() || !formData.lastName.trim() || !formData.email.trim()) {
       toast({
@@ -113,14 +113,36 @@ const AustinMultifamilyReport2026 = () => {
       return;
     }
     setIsSubmitting(true);
-    setTimeout(() => {
-      setIsSubmitting(false);
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          access_key: "0e2b99d2-3569-4bca-b940-138b0dbfa8b5",
+          subject: "2026 Multifamily Report Download Request",
+          from_name: `${formData.firstName} ${formData.lastName}`,
+          name: `${formData.firstName} ${formData.lastName}`,
+          email: formData.email,
+          phone: formData.phone || "Not provided",
+          investment_focus: formData.investmentFocus || "Not specified",
+          message: "Requested download of Austin Multifamily Market Outlook 2026 report.",
+        }),
+      });
+      if (!res.ok) throw new Error("Submission failed");
       setSubmitted(true);
       toast({
-        title: "Report on the way",
-        description: "Check your inbox — the 2026 Austin Multifamily Outlook is being delivered now.",
+        title: "You're all set",
+        description: "Your report is ready to download.",
       });
-    }, 1200);
+    } catch {
+      toast({
+        title: "Something went wrong",
+        description: "Please try again or contact us directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (

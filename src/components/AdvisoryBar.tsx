@@ -145,7 +145,7 @@ const AdvisoryBar = () => {
                 onClick={() => setModalOpen(true)}
                 className="px-5 py-2 text-sm font-medium text-primary-foreground border border-primary-foreground rounded transition-all duration-200 hover:bg-primary-foreground hover:text-primary hover:font-bold">
                 
-                BECOMEANINSIDER
+                BECOME AN INSIDER
               </button>
               <button
                 onClick={dismiss}
@@ -211,7 +211,7 @@ const AdvisoryBar = () => {
               disabled={submitting}
               className="w-full px-5 py-3 text-sm font-medium text-primary-foreground border border-primary-foreground rounded transition-all duration-200 hover:bg-primary-foreground hover:text-primary hover:font-bold disabled:opacity-50">
               
-                {submitting ? "Submitting…" : "BECOMEANINSIDER"}
+                {submitting ? "Submitting…" : "BECOME AN INSIDER"}
               </button>
             </form>
           }

@@ -1,4 +1,3 @@
-import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import listing3 from "@/assets/listing-3.jpg";
 import echelonLogo from "@/assets/echelon-logo-gold-square.png";

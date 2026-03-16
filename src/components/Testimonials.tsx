@@ -41,6 +41,32 @@ const testimonials = [
 ];
 
 const Testimonials = () => {
+  const cardsRef = useRef<(HTMLDivElement | null)[]>([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const el = entry.target as HTMLElement;
+          if (entry.isIntersecting) {
+            el.style.opacity = "1";
+            el.style.transform = "translateY(0)";
+          } else {
+            el.style.opacity = "0";
+            el.style.transform = "translateY(40px)";
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    cardsRef.current.forEach((el) => {
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section className="pt-12 pb-16 bg-secondary">
       <div className="container mx-auto px-6">

@@ -40,7 +40,7 @@ const RealScoutSearch = () => {
 
   return (
     <section ref={sectionRef} className="relative bg-primary overflow-hidden -mt-px">
-      <div className="relative container mx-auto px-6 pt-10 pb-16 md:pt-14 md:pb-24">
+      <div className="relative container mx-auto px-6 pt-10 pb-16 md:pt-14 md:pb-24" style={{ zIndex: 3 }}>
         {/* Typography block */}
         <div className="max-w-2xl mx-auto text-center mb-12 md:mb-16">
           <p
@@ -74,17 +74,26 @@ const RealScoutSearch = () => {
           </p>
         </div>
 
-        {/* Widget container */}
-        <div className="max-w-[50rem] mx-auto">
+        {/* Widget container — glass frame is decorative, widget sits on top */}
+        <div className="max-w-[50rem] mx-auto relative">
+          {/* Decorative glass backing */}
           <div
-            ref={containerRef}
-            className="relative w-full rounded-2xl overflow-hidden backdrop-blur-md"
+            className="absolute inset-0 rounded-2xl pointer-events-none"
             style={{
               background: "rgba(255, 255, 255, 0.06)",
               border: "1px solid rgba(255, 255, 255, 0.08)",
               boxShadow: "0 20px 50px -15px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.05)",
+              backdropFilter: "blur(12px)",
+              WebkitBackdropFilter: "blur(12px)",
             }}
           />
+
+          {/* Interactive widget — above glass, fully clickable */}
+          <div
+            ref={containerRef}
+            className="relative w-full rounded-2xl overflow-hidden"
+            style={{ zIndex: 1, pointerEvents: "auto" }}
+          ></div>
         </div>
       </div>
 

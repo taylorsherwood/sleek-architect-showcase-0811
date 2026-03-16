@@ -25,15 +25,11 @@ const RealScoutSearch = () => {
 
     const rect = section.getBoundingClientRect();
     const sectionHeight = rect.height;
-    const fadeZone = sectionHeight * 0.3;
-    const distFromBottom = rect.bottom - window.innerHeight;
+    const startFadeAt = window.innerHeight * 0.15;
+    const fadeDistance = sectionHeight * 0.45;
+    const progress = (startFadeAt - rect.top) / fadeDistance;
 
-    if (distFromBottom > 0) {
-      setFadeProgress(0);
-    } else {
-      const progress = Math.min(1, Math.abs(distFromBottom) / fadeZone);
-      setFadeProgress(progress);
-    }
+    setFadeProgress(Math.max(0, Math.min(1, progress)));
   }, []);
 
   useEffect(() => {

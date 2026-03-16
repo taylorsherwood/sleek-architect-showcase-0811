@@ -72,7 +72,7 @@ const FloatingContact = () => {
     return () => {
       if (delayTimer.current) clearTimeout(delayTimer.current);
     };
-  }, [advisoryDismissed, isHomepage, bannerVisible]);
+  }, [advisoryDismissed, isHomepage, bannerVisible, heroVisible]);
 
   return (
     <>

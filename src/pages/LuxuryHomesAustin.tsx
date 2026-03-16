@@ -150,7 +150,7 @@ const LuxuryHomesAustin = () => {
               <div className="border border-border/30 rounded-lg p-5 md:p-10" style={{ boxShadow: "0 4px 24px -4px hsl(var(--foreground) / 0.06)" }}>
                 {createElement("realscout-advanced-search", {
                   "agent-encoded-id": "QWdlbnQtMjg5NDU2",
-                  "price-min": "1500000",
+                  "shared-search-id": "U2hhcmVhYmxlU2VhcmNoTGluay0xMjgxOA==",
                 })}
               </div>
             </section>

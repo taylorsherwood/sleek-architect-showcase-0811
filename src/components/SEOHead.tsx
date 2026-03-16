@@ -9,6 +9,8 @@ interface SEOHeadProps {
   title: string;
   description?: string;
   canonical?: string;
+  ogTitle?: string;
+  ogDescription?: string;
 }
 
 const normalizePageTitle = (rawTitle: string) => {

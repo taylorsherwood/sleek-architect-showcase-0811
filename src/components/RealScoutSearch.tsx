@@ -2,7 +2,7 @@ import { createElement } from "react";
 
 const RealScoutSearch = () => {
   return (
-    <section className="bg-background pt-16 pb-20 md:pt-20 md:pb-28">
+    <section className="bg-background pt-16 pb-12 md:pt-20 md:pb-16">
       <div className="container mx-auto px-6">
         {/* Heading — narrower than card for visual hierarchy */}
         <div className="mx-auto max-w-3xl">

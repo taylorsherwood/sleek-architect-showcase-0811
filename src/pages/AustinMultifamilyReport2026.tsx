@@ -230,16 +230,16 @@ const AustinMultifamilyReport2026 = () => {
       </section>
 
       {/* ════════ KEY TAKEAWAYS ════════ */}
-      <section className="py-20 md:py-28 bg-secondary/40">
+      <section className="py-12 md:py-16 bg-secondary/40">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto">
-            <div className="text-center mb-14">
-              <p className="text-minimal text-[hsl(var(--gold))] mb-4">KEY TAKEAWAYS</p>
+            <div className="text-center mb-10">
+              <p className="text-minimal text-[hsl(var(--gold))] mb-3">KEY TAKEAWAYS</p>
               <h2 className="text-3xl md:text-4xl font-display font-light text-architectural">
                 What the Data Tells Us
               </h2>
             </div>
-            <div className="space-y-6">
+            <div className="space-y-4">
               {TAKEAWAYS.map((text, i) => (
                 <div key={i} className="flex items-start gap-4 p-6 bg-card border border-border/50 rounded-sm">
                   <CheckCircle2 className="h-5 w-5 text-[hsl(var(--gold))] mt-0.5 flex-shrink-0" strokeWidth={1.6} />

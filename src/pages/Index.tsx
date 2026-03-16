@@ -8,6 +8,7 @@ import SchemaMarkup, { realEstateAgentSchema, localBusinessSchema, taylorSherwoo
 
 // Lazy-load below-fold sections to reduce initial JS bundle
 const RealScoutSearch = lazy(() => import("@/components/RealScoutSearch"));
+const PrivateOpportunities = lazy(() => import("@/components/PrivateOpportunities"));
 const CommunitiesPreview = lazy(() => import("@/components/CommunitiesPreview"));
 const CommercialCTA = lazy(() => import("@/components/CommercialCTA"));
 const FeaturedListings = lazy(() => import("@/components/FeaturedListings"));
@@ -88,6 +89,10 @@ const Index = () => {
 
       <CredibilityStrip />
       <ExpertiseSection />
+
+      <Suspense fallback={<div className="min-h-[200px]" />}>
+        <PrivateOpportunities />
+      </Suspense>
 
       <Suspense fallback={<BelowFold />}>
         <IntroSection />

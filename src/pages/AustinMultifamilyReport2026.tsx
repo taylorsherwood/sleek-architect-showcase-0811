@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import Navigation from "@/components/Navigation";
@@ -18,6 +18,8 @@ import {
 import { TrendingUp, Building2, MapPin, BarChart3, CheckCircle2, ArrowDown } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import reportCover from "@/assets/multifamily-report-cover.png";
+
+const PrivateOpportunities = lazy(() => import("@/components/PrivateOpportunities"));
 
 /* ─── data ─── */
 const WHATS_INSIDE = [
@@ -453,6 +455,11 @@ const AustinMultifamilyReport2026 = () => {
           </div>
         </div>
       </section>
+
+      {/* ════════ PRIVATE OPPORTUNITIES ════════ */}
+      <Suspense fallback={<div className="min-h-[200px]" />}>
+        <PrivateOpportunities />
+      </Suspense>
 
       {/* ════════ CONSULTATION CTA ════════ */}
       <section ref={navyCTARef} className="py-10 md:py-12 bg-[#0C0F24] relative overflow-hidden">

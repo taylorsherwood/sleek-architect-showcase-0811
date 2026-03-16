@@ -97,7 +97,7 @@ const ListingCard = ({
 
         <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
           <span
-            className="text-white border border-white/20 px-8 py-3 backdrop-blur-sm bg-white/5"
+            className="text-white border border-white/40 px-10 py-3.5 backdrop-blur-md bg-black/30 font-medium"
             style={{
               fontSize: "0.6rem",
               letterSpacing: "0.2em",

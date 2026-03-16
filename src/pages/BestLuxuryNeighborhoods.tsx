@@ -114,7 +114,7 @@ const BestLuxuryNeighborhoods = () => {
                 <div>
                   <h3 className="text-xl font-display font-medium mb-2">Waterfront Living</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    <Link to="/communities/lake-austin-waterfront" className="text-foreground underline hover:text-muted-foreground">Lake Austin waterfront</Link> is the undisputed choice for lakeside luxury. Constant water levels, private docks, and proximity to downtown create a lifestyle that rivals the best waterfront communities in the country.
+                    <Link to="/communities/lake-austin" className="text-foreground underline hover:text-muted-foreground">Lake Austin waterfront</Link> is the undisputed choice for lakeside luxury. Constant water levels, private docks, and proximity to downtown create a lifestyle that rivals the best waterfront communities in the country.
                   </p>
                 </div>
                 <div>

@@ -260,7 +260,7 @@ const OffMarketHomes = () => {
                 <div className="border-l-2 border-border pl-6">
                   <h3 className="text-lg font-medium text-foreground mb-2">First Access to Inventory</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Many luxury properties are marketed off-market first, with the option to go public if a private sale doesn't materialize. Buyers with off-market access see these properties before the broader market, providing a critical timing advantage. On <Link to="/communities/lake-austin-waterfront" className="text-foreground underline hover:text-muted-foreground">Lake Austin</Link>, where waterfront homes rarely come to market, early access can mean the difference between acquiring a property and watching it sell to someone else.
+                    Many luxury properties are marketed off-market first, with the option to go public if a private sale doesn't materialize. Buyers with off-market access see these properties before the broader market, providing a critical timing advantage. On <Link to="/communities/lake-austin" className="text-foreground underline hover:text-muted-foreground">Lake Austin</Link>, where waterfront homes rarely come to market, early access can mean the difference between acquiring a property and watching it sell to someone else.
                   </p>
                 </div>
                 <div className="border-l-2 border-border pl-6">

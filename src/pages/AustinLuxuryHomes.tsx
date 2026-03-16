@@ -73,7 +73,7 @@ const AustinLuxuryHomes = () => {
                 <div>
                   <h3 className="text-xl font-display font-medium mb-3">Waterfront Estates</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    <Link to="/communities/lake-austin-waterfront" className="text-foreground underline hover:text-muted-foreground">Lake Austin waterfront</Link> homes represent the pinnacle of Austin luxury real estate. These properties feature private docks, infinity-edge pools, panoramic water views, and resort-style outdoor living. Lake Austin's constant water level — unlike the fluctuating Lake Travis — makes it ideal for year-round boating and waterfront enjoyment. Prices range from $2 million to over $25 million, with extreme scarcity ensuring strong long-term appreciation.
+                    <Link to="/communities/lake-austin" className="text-foreground underline hover:text-muted-foreground">Lake Austin waterfront</Link> homes represent the pinnacle of Austin luxury real estate. These properties feature private docks, infinity-edge pools, panoramic water views, and resort-style outdoor living. Lake Austin's constant water level — unlike the fluctuating Lake Travis — makes it ideal for year-round boating and waterfront enjoyment. Prices range from $2 million to over $25 million, with extreme scarcity ensuring strong long-term appreciation.
                   </p>
                 </div>
 

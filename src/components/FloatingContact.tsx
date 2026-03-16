@@ -27,16 +27,26 @@ const FloatingContact = () => {
     const onDismissed = () => setAdvisoryDismissed(true);
     window.addEventListener("advisory-bar-dismissed", onDismissed);
 
-    // Homepage: track Private Opportunities banner visibility
-    let observer: IntersectionObserver | null = null;
+    let bannerObserver: IntersectionObserver | null = null;
+    let heroObserver: IntersectionObserver | null = null;
+
     if (isHomepage) {
       const banner = document.getElementById("private-opportunities-banner");
       if (banner) {
-        observer = new IntersectionObserver(
+        bannerObserver = new IntersectionObserver(
           ([entry]) => setBannerVisible(entry.isIntersecting),
           { threshold: 0 }
         );
-        observer.observe(banner);
+        bannerObserver.observe(banner);
+      }
+
+      const hero = document.getElementById("hero-section");
+      if (hero) {
+        heroObserver = new IntersectionObserver(
+          ([entry]) => setHeroVisible(entry.isIntersecting),
+          { threshold: 0 }
+        );
+        heroObserver.observe(hero);
       }
     }
 

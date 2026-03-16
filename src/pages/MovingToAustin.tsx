@@ -105,7 +105,7 @@ const MovingToAustin = () => {
 
                 <div className="border-l-2 border-gold pl-6">
                   <h3 className="text-xl font-display font-medium mb-2">
-                    <Link to="/communities/lake-austin-waterfront" className="hover:text-muted-foreground transition-colors">Lake Austin Waterfront</Link>
+                    <Link to="/communities/lake-austin" className="hover:text-muted-foreground transition-colors">Lake Austin</Link>
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
                     The pinnacle of Austin luxury. Constant-level lake, private docks, and breathtaking water views just minutes from downtown. Homes range from $2M to $25M+. Buyers from Malibu, Newport Beach, and Tiburon are drawn to the waterfront lifestyle that Lake Austin provides.

@@ -588,7 +588,7 @@ Google, Meta, Apple, Amazon, and Oracle maintain significant Austin operations, 
 ### Best Opportunities
 
 Units with efficient layouts, desirable views, and premium building amenities generate the strongest rental demand and long-term appreciation.`,
-    relatedCommunities: ["travis-heights", "tarrytown", "westlake-hills", "lake-austin-waterfront"],
+    relatedCommunities: ["travis-heights", "tarrytown", "westlake-hills", "lake-austin"],
     faqs: [
       { question: "What are the best condo buildings in downtown Austin?", answer: "Top luxury condo buildings include The Independent (Austin's tallest at 58 stories), The Austonian, Four Seasons Residences, Spring, W Hotel Residences, and 70 Rainey. Each offers distinct amenities, views, and lifestyle experiences." },
       { question: "How much do downtown Austin condos cost?", answer: "Downtown Austin condos range from approximately $400,000 for one-bedroom units in older buildings to over $10 million for penthouses in premier towers. Price per square foot ranges from $400 to over $1,500 depending on building, floor, and views." },

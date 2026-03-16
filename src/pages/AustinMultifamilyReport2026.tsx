@@ -422,7 +422,7 @@ const AustinMultifamilyReport2026 = () => {
       </section>
 
       {/* ════════ CONSULTATION CTA ════════ */}
-      <section className="py-10 md:py-12 bg-[#0C0F24] relative overflow-hidden">
+      <section ref={navyCTARef} className="py-10 md:py-12 bg-[#0C0F24] relative overflow-hidden">
         
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-3xl mx-auto text-center">

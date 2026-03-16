@@ -159,46 +159,46 @@ const AustinMultifamilyReport2026 = () => {
       <Navigation />
 
       {/* ════════ HERO ════════ */}
-      <section className="relative pt-28 pb-14 md:pt-32 md:pb-16 bg-primary overflow-hidden">
+      <section className="relative pt-28 pb-10 md:pt-30 md:pb-12 bg-primary overflow-hidden">
         {/* subtle architectural texture */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,hsl(var(--gold)/0.06)_0%,transparent_60%)]" />
         <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-4 md:gap-6">
+          <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-3 md:gap-2 lg:gap-4">
             {/* text */}
             <div className="flex-1 text-center md:text-left">
-              <p className="text-minimal text-[hsl(var(--gold))] mb-3">INVESTOR REPORT</p>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-light text-primary-foreground leading-[1.1] mb-4">
+              <p className="text-minimal text-[hsl(var(--gold))] mb-2">INVESTOR REPORT</p>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-light text-primary-foreground leading-[1.1] mb-3">
                 Austin Multifamily Market Outlook 2026
               </h1>
-              <p className="text-lg md:text-xl text-primary-foreground/65 leading-relaxed max-w-xl mb-3">
+              <p className="text-lg md:text-xl text-primary-foreground/65 leading-relaxed max-w-xl mb-2">
                 Institutional-style market analysis covering rents, supply, vacancy, and Austin submarkets positioned for recovery
               </p>
-              <p className="text-sm text-[hsl(var(--gold))] tracking-widest uppercase mb-6">
+              <p className="text-sm text-[hsl(var(--gold))] tracking-widest uppercase mb-5">
                 By Echelon Property Group
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+              <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
                 <Button
                   onClick={scrollToForm}
-                  className="bg-[hsl(var(--gold))] text-primary-foreground hover:bg-[hsl(var(--gold-light))] px-8 py-6 text-sm tracking-widest uppercase font-medium transition-all duration-200"
+                  className="bg-[hsl(var(--gold))] text-primary-foreground hover:bg-[hsl(var(--gold-light))] px-8 py-6 text-sm tracking-widest uppercase font-medium transition-all duration-200 shadow-lg hover:shadow-xl"
                 >
                   Download the Report
                 </Button>
                 <Button
                   asChild
                   variant="outline"
-                  className="border-primary-foreground/40 bg-transparent text-primary-foreground hover:bg-primary-foreground hover:text-primary px-8 py-6 text-sm tracking-widest uppercase font-medium transition-all duration-300"
+                  className="border-primary-foreground/30 bg-transparent text-primary-foreground hover:bg-primary-foreground hover:text-primary hover:border-primary-foreground px-8 py-6 text-sm tracking-widest uppercase font-medium transition-all duration-300 shadow-sm hover:shadow-md"
                 >
                   <Link to="/connect">Schedule a Consultation</Link>
                 </Button>
               </div>
             </div>
             {/* report mockup — desktop */}
-            <div className="hidden md:flex flex-shrink-0 justify-center -ml-4">
+            <div className="hidden md:flex flex-shrink-0 justify-center -ml-8 lg:-ml-10">
               <img
                 src={reportCover}
                 alt="Austin Multifamily Market Outlook 2026 report cover"
                 title="Austin Multifamily Market Outlook 2026 — Echelon Property Group"
-                className="w-80 lg:w-[26rem] drop-shadow-2xl rotate-[8deg]"
+                className="w-80 lg:w-[28rem] drop-shadow-2xl rotate-[8deg]"
                 loading="eager"
               />
             </div>
@@ -207,11 +207,11 @@ const AustinMultifamilyReport2026 = () => {
       </section>
 
       {/* ════════ WHY THIS REPORT MATTERS ════════ */}
-      <section className="py-12 md:py-16">
+      <section className="py-10 md:py-12">
         <div className="container mx-auto px-6">
-          <div className="max-w-3xl mx-auto text-center">
-            <p className="text-minimal text-[hsl(var(--gold))] mb-3">MARKET CONTEXT</p>
-            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-5">
+          <div className="max-w-2xl mx-auto text-center">
+            <p className="text-minimal text-[hsl(var(--gold))] mb-2">MARKET CONTEXT</p>
+            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-4">
               Why Austin Investors Are Watching 2026 Closely
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
@@ -227,21 +227,21 @@ const AustinMultifamilyReport2026 = () => {
       <div className="border-t border-border/40 max-w-4xl mx-auto" />
 
       {/* ════════ WHAT'S INSIDE ════════ */}
-      <section className="py-12 md:py-16">
+      <section className="py-10 md:py-12">
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-10">
-              <p className="text-minimal text-[hsl(var(--gold))] mb-3">REPORT OVERVIEW</p>
+            <div className="text-center mb-8">
+              <p className="text-minimal text-[hsl(var(--gold))] mb-2">REPORT OVERVIEW</p>
               <h2 className="text-3xl md:text-4xl font-display font-light text-architectural">
                 What's Inside
               </h2>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 lg:gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-5">
               {WHATS_INSIDE.map((item) => (
                 <Card key={item.title} className="border-border/50 bg-card shadow-none hover:shadow-[var(--shadow-elegant)] transition-shadow duration-500">
-                  <CardContent className="p-5 md:p-6">
-                    <item.icon className="h-5 w-5 text-[hsl(var(--gold))] mb-3" strokeWidth={1.4} />
-                    <h3 className="text-lg font-display font-medium text-foreground mb-2">{item.title}</h3>
+                  <CardContent className="p-4 md:p-5">
+                    <item.icon className="h-5 w-5 text-[hsl(var(--gold))] mb-2" strokeWidth={1.4} />
+                    <h3 className="text-lg font-display font-medium text-foreground mb-1.5">{item.title}</h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
                   </CardContent>
                 </Card>
@@ -252,18 +252,18 @@ const AustinMultifamilyReport2026 = () => {
       </section>
 
       {/* ════════ KEY TAKEAWAYS ════════ */}
-      <section className="py-12 md:py-16 bg-secondary/40">
+      <section className="py-10 md:py-12 bg-secondary/40">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto">
-            <div className="text-center mb-10">
-              <p className="text-minimal text-[hsl(var(--gold))] mb-3">KEY TAKEAWAYS</p>
+            <div className="text-center mb-8">
+              <p className="text-minimal text-[hsl(var(--gold))] mb-2">KEY TAKEAWAYS</p>
               <h2 className="text-3xl md:text-4xl font-display font-light text-architectural">
                 What the Data Tells Us
               </h2>
             </div>
-            <div className="space-y-4">
+            <div className="space-y-3">
               {TAKEAWAYS.map((text, i) => (
-                <div key={i} className="flex items-start gap-4 p-5 bg-card border border-border/50 rounded-sm">
+                <div key={i} className="flex items-start gap-3 p-4 bg-card border border-border/50 rounded-sm">
                   <CheckCircle2 className="h-5 w-5 text-[hsl(var(--gold))] mt-0.5 flex-shrink-0" strokeWidth={1.6} />
                   <p className="text-foreground leading-relaxed">{text}</p>
                 </div>
@@ -274,11 +274,11 @@ const AustinMultifamilyReport2026 = () => {
       </section>
 
       {/* ════════ ABOUT ECHELON ════════ */}
-      <section className="py-12 md:py-16">
+      <section className="py-10 md:py-12">
         <div className="container mx-auto px-6">
-          <div className="max-w-3xl mx-auto text-center">
-            <p className="text-minimal text-[hsl(var(--gold))] mb-3">ABOUT</p>
-            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-5">
+          <div className="max-w-2xl mx-auto text-center">
+            <p className="text-minimal text-[hsl(var(--gold))] mb-2">ABOUT</p>
+            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-4">
               Echelon Property Group
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
@@ -294,10 +294,10 @@ const AustinMultifamilyReport2026 = () => {
       <div className="border-t border-border/40 max-w-4xl mx-auto" />
 
       {/* ════════ LEAD FORM ════════ */}
-      <section id="report-form" className="py-12 md:py-16">
+      <section id="report-form" className="py-10 md:py-12">
         <div className="container mx-auto px-6">
           <div className="max-w-xl mx-auto">
-            <div className="text-center mb-8">
+            <div className="text-center mb-6">
               <p className="text-minimal text-[hsl(var(--gold))] mb-3">ACCESS THE REPORT</p>
               <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-3">
                 Get the Full Report
@@ -414,20 +414,20 @@ const AustinMultifamilyReport2026 = () => {
       </section>
 
       {/* ════════ CONSULTATION CTA ════════ */}
-      <section className="py-14 md:py-16 bg-primary relative overflow-hidden">
+      <section className="py-10 md:py-12 bg-primary relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,hsl(var(--gold)/0.05)_0%,transparent_60%)]" />
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <p className="text-minimal text-[hsl(var(--gold))] mb-4">NEXT STEP</p>
-            <h2 className="text-3xl md:text-4xl font-display font-light text-primary-foreground leading-tight mb-4">
+            <p className="text-minimal text-[hsl(var(--gold))] mb-3">NEXT STEP</p>
+            <h2 className="text-3xl md:text-4xl font-display font-light text-primary-foreground leading-tight mb-3">
               Want a Tailored Multifamily Acquisition Strategy?
             </h2>
-            <p className="text-primary-foreground/60 text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
+            <p className="text-primary-foreground/60 text-lg leading-relaxed mb-6 max-w-2xl mx-auto">
               Schedule a private consultation for submarket guidance, acquisition criteria review, or investor matchmaking.
             </p>
             <Button
               asChild
-              className="bg-[hsl(var(--gold))] text-primary-foreground hover:bg-[hsl(var(--gold-light))] px-10 py-6 text-sm tracking-widest uppercase font-medium transition-all duration-200"
+              className="bg-[hsl(var(--gold))] text-primary-foreground hover:bg-[hsl(var(--gold-light))] px-10 py-6 text-sm tracking-widest uppercase font-medium transition-all duration-200 shadow-lg hover:shadow-xl"
             >
               <Link to="/connect">Schedule a Consultation</Link>
             </Button>

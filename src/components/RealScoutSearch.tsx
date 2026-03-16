@@ -26,7 +26,7 @@ const RealScoutSearch = () => {
         <div className="max-w-2xl mx-auto text-center mb-12 md:mb-16">
           <p
             className="text-[10px] md:text-[11px] tracking-[0.4em] mb-7 font-normal"
-            style={{ color: "hsl(42 30% 58%)" }}
+            style={{ color: "hsl(42 45% 65%)" }}
           >
             AUSTIN LUXURY REAL ESTATE
           </p>
@@ -41,19 +41,19 @@ const RealScoutSearch = () => {
           >
             Find Exceptional Homes
             <br />
-            <span className="italic" style={{ color: "hsl(42 30% 62%)" }}>
+            <span className="italic" style={{ color: "hsl(42 45% 68%)" }}>
               in Austin
             </span>
           </h2>
 
           <div
             className="w-10 h-px mx-auto mb-7"
-            style={{ background: "hsl(42 30% 55% / 0.2)" }}
+            style={{ background: "hsl(42 45% 65% / 0.25)" }}
           />
 
           <p
             className="text-[13px] md:text-sm font-light max-w-sm mx-auto leading-[1.8] tracking-[0.02em]"
-            style={{ color: "hsl(42 10% 60% / 0.5)" }}
+            style={{ color: "hsl(42 10% 75% / 0.6)" }}
           >
             Search luxury homes, land, and investment opportunities
             with a smarter home search experience.

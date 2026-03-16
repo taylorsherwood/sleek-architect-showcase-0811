@@ -17,6 +17,7 @@ const MeetTaylor = lazy(() => import("@/components/MeetTaylor"));
 const Testimonials = lazy(() => import("@/components/Testimonials"));
 const SellerCTA = lazy(() => import("@/components/SellerCTA"));
 const CTASection = lazy(() => import("@/components/CTASection"));
+const LuxurySearchLinks = lazy(() => import("@/components/LuxurySearchLinks"));
 const Footer = lazy(() => import("@/components/Footer"));
 
 const logoImports = () =>

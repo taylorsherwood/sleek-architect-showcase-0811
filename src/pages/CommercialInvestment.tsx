@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createFAQSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
 import heroArchitecture from "@/assets/hero-architecture.jpg";
+import expCommercialLogo from "@/assets/exp-commercial-logo-horizontal-white.webp";
 import gillisStreet from "@/assets/commercial-gillis-street.jpg";
 import sanJoseAve from "@/assets/commercial-san-jose-ave.jpg";
 
@@ -52,6 +53,12 @@ const CommercialInvestment = () => {
         </div>
         <div className="relative container mx-auto px-6">
           <div className="max-w-4xl mx-auto py-16">
+            <img
+              src={expCommercialLogo}
+              alt="eXp Commercial"
+              className="h-10 md:h-12 w-auto mb-8 object-contain"
+              loading="eager"
+            />
             <p className="text-minimal text-gold mb-4 font-extrabold">COMMERCIAL & INVESTMENT</p>
             <h1 className="text-5xl md:text-7xl font-display font-light text-warm-cream mb-8">
               Austin Commercial & Investment Real Estate

@@ -150,7 +150,7 @@ const ListingCardOverlay = ({
 
 const FeaturedLuxuryListings = () => {
   return (
-    <section className="pb-24">
+    <section className="pb-10">
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
           {/* Subtle transition line */}

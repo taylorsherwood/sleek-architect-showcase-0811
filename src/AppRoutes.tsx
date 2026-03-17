@@ -89,6 +89,7 @@ const AppRoutes = () => {
           <Route path="/austin-multifamily-report-2026" element={<AustinMultifamilyReport2026 />} />
           <Route path="/private-opportunities" element={<PrivateOpportunitiesPage />} />
           <Route path="/luxury-homes-austin" element={<LuxuryHomesAustin />} />
+          <Route path="/why-billionaires-are-moving-to-austin" element={<BillionaireMigration />} />
           <Route path="/westlake-hills-homes-for-sale" element={<SEOCommunityPage />} />
           <Route path="/tarrytown-homes-for-sale" element={<SEOCommunityPage />} />
           <Route path="/rollingwood-homes-for-sale" element={<SEOCommunityPage />} />

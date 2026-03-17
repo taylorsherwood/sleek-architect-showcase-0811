@@ -259,9 +259,9 @@ const Connect = () => {
                   rel="noopener noreferrer"
                   className="flex items-center justify-center w-full h-12 rounded-full transition-all duration-200 hover:-translate-y-0.5"
                   style={{
-                    background: "hsl(0 0% 100% / 0.55)",
-                    border: "1px solid hsl(42 37% 57% / 0.2)",
-                    boxShadow: "0 2px 8px hsl(0 0% 0% / 0.03)",
+                    background: (link as any).transparent ? "transparent" : "hsl(0 0% 100% / 0.55)",
+                    border: (link as any).transparent ? "1px solid hsl(233 50% 9% / 0.06)" : "1px solid hsl(42 37% 57% / 0.2)",
+                    boxShadow: (link as any).transparent ? "none" : "0 2px 8px hsl(0 0% 0% / 0.03)",
                   }}
                   onMouseEnter={(e) => {
                     const el = e.currentTarget;

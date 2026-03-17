@@ -233,7 +233,8 @@ const FeaturedListings = () => {
                 Did you know that 95%+ of our listings aren't on market? If you
                 are searching for private market opportunities in Austin,
                 contact us to become an Echelon Insider for discreet listings
-                not publicly advertised.{" "}
+                not publicly advertised.
+                <br />
                 <span className="underline underline-offset-4 decoration-border">
                   Ask about off-market opportunities
                 </span>{" "}

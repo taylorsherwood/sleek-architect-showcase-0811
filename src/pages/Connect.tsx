@@ -318,7 +318,6 @@ const Connect = () => {
                     color: "hsl(42 37% 65%)",
                     fontWeight: 800,
                   }}
-                  }}
                 >
                   Schedule a Consultation
                 </span>

@@ -12,7 +12,6 @@ const links = [
   { label: "Complimentary Property Valuation", href: "https://www.echelonpropertygroup.com/sell" },
   { label: "Blogs and Press Releases", href: "https://www.echelonpropertygroup.com/blog" },
   { label: "Work With Taylor", href: "https://www.echelonpropertygroup.com/contact", gold: true },
-  { label: "Information About Brokerage Services", href: "https://www.dropbox.com/scl/fi/ism1gkeqt0bol9srh3b0a/IABS-1-2.pdf?rlkey=l05zn9bqqmg8e1ru4qjzsnd1o&dl=0", transparent: true },
 ];
 
 const socials = [
@@ -328,7 +327,33 @@ const Connect = () => {
             </div>
           </ScrollReveal>
 
-          {/* ── Footer ── */}
+          {/* ── IABS Link ── */}
+          <ScrollReveal delay={150}>
+            <div className="px-8 mt-2 mb-2">
+              <a
+                href="https://www.dropbox.com/scl/fi/ism1gkeqt0bol9srh3b0a/IABS-1-2.pdf?rlkey=l05zn9bqqmg8e1ru4qjzsnd1o&dl=0"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center w-full h-[52px] rounded-full transition-all duration-200 hover:-translate-y-0.5"
+                style={{
+                  background: "transparent",
+                  border: "1px solid hsl(233 50% 9% / 0.06)",
+                }}
+              >
+                <span
+                  className="font-sans font-medium uppercase text-center"
+                  style={{
+                    fontSize: "11px",
+                    letterSpacing: "0.12em",
+                    color: "hsl(233 50% 9% / 0.65)",
+                  }}
+                >
+                  Information About Brokerage Services
+                </span>
+              </a>
+            </div>
+          </ScrollReveal>
+
           <ScrollReveal delay={200}>
             <div className="flex flex-col items-center gap-2 mt-8 mb-4 px-4">
               <div

@@ -6,6 +6,7 @@ import communityRollingwood from "@/assets/community-rollingwood.jpg";
 import communityTravisHeights from "@/assets/community-travis-heights.jpg";
 import communitySpanishOaks from "@/assets/community-spanish-oaks.jpg";
 import listingTarrytown from "@/assets/listing-tarrytown-2621-exposition.jpg";
+import listingEastAustin from "@/assets/listing-east-austin-1007-e-8th.jpg";
 
 interface Listing {
   id: string;

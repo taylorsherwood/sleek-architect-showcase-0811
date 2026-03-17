@@ -6,7 +6,7 @@ const expertiseBlocks = [
   icon: Home,
   title: "Luxury Homes",
   description: "Austin's finest residential properties — from lakefront estates and hilltop mansions to gated golf communities. Expert guidance for buyers and sellers in Westlake Hills, Barton Creek, Lake Austin, Tarrytown, and beyond.",
-  link: "/austin-luxury-homes-for-sale",
+  link: "/luxury-homes-austin",
   linkText: "EXPLORE LUXURY HOMES"
 },
 {

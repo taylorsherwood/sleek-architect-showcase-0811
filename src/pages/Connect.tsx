@@ -203,7 +203,7 @@ const Connect = () => {
 
           {/* ── CTA Strip ── */}
           <div className="px-8 mb-3">
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <div className="flex flex-col gap-2.5">
               {[
                 { title: "Explore Austin Luxury Homes", href: "https://www.echelonpropertygroup.com/listings", icon: Home },
                 { title: "Search All Listings", href: "https://taylorsherwood.realscout.com/", icon: Search },
@@ -212,45 +212,34 @@ const Connect = () => {
                 <ScrollReveal key={card.href} delay={i * 120}>
                   <a
                     href={card.href}
-                    className="flex flex-col items-center justify-center text-center px-4 py-6 rounded-2xl"
+                    className="flex items-center gap-3.5 w-full h-12 px-6 rounded-full transition-all duration-200 hover:-translate-y-0.5"
                     style={{
-                      background: "hsl(0 0% 100% / 0.6)",
-                      backdropFilter: "blur(24px)",
-                      WebkitBackdropFilter: "blur(24px)",
-                      border: "1px solid hsl(42 37% 57% / 0.3)",
-                      boxShadow:
-                        "0 4px 20px hsl(0 0% 0% / 0.04), inset 0 1px 0 hsl(0 0% 100% / 0.6)",
-                      transition:
-                        "transform 250ms ease-in-out, box-shadow 250ms ease-in-out, border-color 250ms ease-in-out",
+                      background: "hsl(0 0% 100% / 0.55)",
+                      border: "1px solid hsl(42 37% 57% / 0.2)",
+                      boxShadow: "0 2px 8px hsl(0 0% 0% / 0.03)",
                     }}
                     onMouseEnter={(e) => {
                       const el = e.currentTarget;
-                      el.style.transform = "translateY(-4px)";
-                      el.style.borderColor = "hsl(42 37% 57% / 0.5)";
-                      el.style.boxShadow =
-                        "0 12px 36px hsl(0 0% 0% / 0.06), inset 0 1px 0 hsl(0 0% 100% / 0.7)";
+                      el.style.borderColor = "hsl(42 37% 57% / 0.45)";
+                      el.style.boxShadow = "0 4px 16px hsl(0 0% 0% / 0.05)";
                     }}
                     onMouseLeave={(e) => {
                       const el = e.currentTarget;
-                      el.style.transform = "translateY(0)";
-                      el.style.borderColor = "hsl(42 37% 57% / 0.3)";
-                      el.style.boxShadow =
-                        "0 4px 20px hsl(0 0% 0% / 0.04), inset 0 1px 0 hsl(0 0% 100% / 0.6)";
+                      el.style.borderColor = "hsl(42 37% 57% / 0.2)";
+                      el.style.boxShadow = "0 2px 8px hsl(0 0% 0% / 0.03)";
                     }}
                   >
                     <card.icon
-                      className="w-5 h-5 mb-3"
+                      className="w-4 h-4 flex-shrink-0"
+                      strokeWidth={1.5}
                       style={{ color: "hsl(42 37% 50%)" }}
                     />
                     <span
-                      className="font-sans"
+                      className="font-sans font-medium uppercase"
                       style={{
-                        fontSize: "12px",
+                        fontSize: "10.5px",
                         letterSpacing: "0.12em",
-                        textTransform: "uppercase",
-                        fontWeight: 500,
-                        color: "hsl(233 50% 9% / 0.75)",
-                        lineHeight: 1.4,
+                        color: "hsl(233 50% 9% / 0.65)",
                       }}
                     >
                       {card.title}

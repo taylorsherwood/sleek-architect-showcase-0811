@@ -9,6 +9,7 @@ import listingTarrytown from "@/assets/listing-tarrytown-2621-exposition.jpg";
 import listingEastAustin from "@/assets/listing-east-austin-1007-e-8th.jpg";
 import listingBartonCreek from "@/assets/listing-barton-creek-4416-amarra.jpg";
 import listingWestlake from "@/assets/listing-westlake-2210-westlake-dr.jpg";
+import listingLakeAustin from "@/assets/listing-lake-austin-2503-westlake-dr.jpg";
 
 interface Listing {
   id: string;
@@ -70,9 +71,9 @@ const listings: Listing[] = [
   },
   {
     id: "5",
-    image: communityLakeAustin,
-    price: "$6,900,000",
-    address: "Lake Austin Waterfront",
+    image: listingLakeAustin,
+    price: "$9,990,000",
+    address: "2503 Westlake Dr 201, Austin, TX 78746",
     neighborhood: "Lake Austin",
     beds: 5,
     baths: 6,

@@ -100,9 +100,9 @@ const Index = () => {
         <CommunitiesPreview />
         <CommercialCTA />
         <div className="py-2 bg-background" />
-        <FeaturedListings />
-        <Testimonials />
         <SellerCTA />
+        <Testimonials />
+        <FeaturedListings />
         
         <MeetTaylor />
         <CTASection />

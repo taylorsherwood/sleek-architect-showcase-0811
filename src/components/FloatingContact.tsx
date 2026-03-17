@@ -13,6 +13,7 @@ const FloatingContact = () => {
   const [visible, setVisible] = useState(false);
   const location = useLocation();
   const isHomepage = location.pathname === "/";
+  const isConnectPage = location.pathname === "/connect";
 
   // The floating widget only appears after the advisory bar has been dismissed
   const [advisoryDismissed, setAdvisoryDismissed] = useState(
@@ -61,7 +62,7 @@ const FloatingContact = () => {
   useEffect(() => {
     if (delayTimer.current) clearTimeout(delayTimer.current);
 
-    const shouldShow = advisoryDismissed && (!isHomepage || !heroVisible);
+    const shouldShow = advisoryDismissed && !isConnectPage && (!isHomepage || !heroVisible);
 
     if (shouldShow) {
       delayTimer.current = setTimeout(() => setVisible(true), 1000);

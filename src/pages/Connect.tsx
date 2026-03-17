@@ -12,7 +12,6 @@ const links = [
   { label: "Complimentary Property Valuation", href: "https://www.echelonpropertygroup.com/sell" },
   { label: "Blogs and Press Releases", href: "https://www.echelonpropertygroup.com/blog" },
   { label: "Work With Taylor", href: "https://www.echelonpropertygroup.com/contact", gold: true },
-  { label: "Information About Brokerage Services", href: "https://www.dropbox.com/scl/fi/ism1gkeqt0bol9srh3b0a/IABS-1-2.pdf?rlkey=l05zn9bqqmg8e1ru4qjzsnd1o&dl=0", transparent: true },
 ];
 
 const socials = [

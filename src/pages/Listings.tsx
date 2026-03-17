@@ -17,7 +17,7 @@ const listings = [
     beds: 4,
     baths: 4,
     sqft: "4,147",
-    acres: "",
+    acres: "0.55",
     description: "Elegant villa in the heart of Barton Creek with refined finishes, open floor plan, and access to world-class amenities.",
     link: "https://www.villagovernorshill.com",
   },

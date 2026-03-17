@@ -138,20 +138,7 @@ const ListingCard = ({ listing, featured = false }: { listing: Listing; featured
         <p className="text-[13px] text-muted-foreground font-light leading-relaxed mb-2">
           {listing.address}
         </p>
-        <div className="flex items-center gap-3">
-          <p
-            className="text-muted-foreground/60"
-            style={{
-              fontSize: "0.55rem",
-              letterSpacing: "0.2em",
-              textTransform: "uppercase",
-              fontFamily: '"Raleway", sans-serif',
-            }}
-          >
-            {listing.beds} BD &nbsp;·&nbsp; {listing.baths} BA
-          </p>
-          <span className="text-muted-foreground/30">|</span>
-          <p
+        <p
             className="text-gold/70"
             style={{
               fontSize: "0.55rem",
@@ -162,7 +149,6 @@ const ListingCard = ({ listing, featured = false }: { listing: Listing; featured
           >
             {listing.neighborhood}
           </p>
-        </div>
       </div>
     </>
   );

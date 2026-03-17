@@ -53,12 +53,6 @@ const CommercialInvestment = () => {
         </div>
         <div className="relative container mx-auto px-6">
           <div className="max-w-4xl mx-auto py-16">
-            <img
-              src={expCommercialLogo}
-              alt="eXp Commercial"
-              className="h-10 md:h-12 w-auto mb-8 object-contain"
-              loading="eager"
-            />
             <p className="text-minimal text-gold mb-4 font-extrabold">COMMERCIAL & INVESTMENT</p>
             <h1 className="text-5xl md:text-7xl font-display font-light text-warm-cream mb-8">
               Austin Commercial & Investment Real Estate
@@ -81,6 +75,12 @@ const CommercialInvestment = () => {
                 2026 MULTI FAMILY REPORT
               </Link>
             </div>
+            <img
+              src={expCommercialLogo}
+              alt="eXp Commercial"
+              className="h-10 md:h-12 w-auto mt-10 object-contain"
+              loading="eager"
+            />
           </div>
         </div>
       </section>

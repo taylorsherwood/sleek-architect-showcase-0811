@@ -142,7 +142,7 @@ const Connect = () => {
                 </p>
 
                 {/* Social icons */}
-                <div className="flex items-center gap-3 mt-5">
+                <div className="flex items-center gap-2.5 mt-5">
                   {socials.map((s) => (
                     <a
                       key={s.label}
@@ -150,39 +150,26 @@ const Connect = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={s.label}
-                      className="flex items-center justify-center transition-all duration-300"
+                      className="flex items-center justify-center w-11 h-11 rounded-full transition-all duration-200 hover:-translate-y-0.5"
                       style={{
-                        width: "46px",
-                        height: "46px",
-                        borderRadius: "14px",
-                        background: "hsl(233 50% 9% / 0.06)",
-                        backdropFilter: "blur(16px)",
-                        WebkitBackdropFilter: "blur(16px)",
-                        border: "1px solid hsl(233 50% 9% / 0.1)",
-                        boxShadow:
-                          "0 4px 16px hsl(0 0% 0% / 0.06), inset 0 1px 0 hsl(0 0% 100% / 0.3)",
-                        color: "hsl(233 50% 9% / 0.55)",
+                        background: "hsl(233 50% 9% / 0.05)",
+                        border: "1px solid hsl(233 50% 9% / 0.08)",
+                        color: "hsl(233 50% 9% / 0.45)",
                       }}
                       onMouseEnter={(e) => {
                         const el = e.currentTarget;
-                        el.style.background = "hsl(42 37% 57% / 0.12)";
-                        el.style.borderColor = "hsl(42 37% 57% / 0.3)";
+                        el.style.background = "hsl(42 37% 57% / 0.1)";
+                        el.style.borderColor = "hsl(42 37% 57% / 0.25)";
                         el.style.color = "hsl(42 37% 45%)";
-                        el.style.boxShadow =
-                          "0 6px 24px hsl(42 37% 57% / 0.12), inset 0 1px 0 hsl(0 0% 100% / 0.3)";
-                        el.style.transform = "translateY(-2px) scale(1.05)";
                       }}
                       onMouseLeave={(e) => {
                         const el = e.currentTarget;
-                        el.style.background = "hsl(233 50% 9% / 0.06)";
-                        el.style.borderColor = "hsl(233 50% 9% / 0.1)";
-                        el.style.color = "hsl(233 50% 9% / 0.55)";
-                        el.style.boxShadow =
-                          "0 4px 16px hsl(0 0% 0% / 0.06), inset 0 1px 0 hsl(0 0% 100% / 0.3)";
-                        el.style.transform = "translateY(0) scale(1)";
+                        el.style.background = "hsl(233 50% 9% / 0.05)";
+                        el.style.borderColor = "hsl(233 50% 9% / 0.08)";
+                        el.style.color = "hsl(233 50% 9% / 0.45)";
                       }}
                     >
-                      <s.icon className="w-5 h-5" />
+                      <s.icon className="w-[18px] h-[18px]" strokeWidth={1.5} />
                     </a>
                   ))}
                 </div>

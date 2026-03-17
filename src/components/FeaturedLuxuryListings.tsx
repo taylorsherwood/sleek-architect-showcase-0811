@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import listingTarrytown from "@/assets/listing-tarrytown-2621-exposition.jpg";
+import listingTarrytown from "@/assets/listing-tarrytown-2203-greenlee.jpg";
 import listingEastAustin from "@/assets/listing-east-austin-1007-e-8th.jpg";
 import listingBartonCreek from "@/assets/listing-barton-creek-4416-amarra.jpg";
 import listingWestlake from "@/assets/listing-westlake-2210-westlake-dr.jpg";
@@ -45,10 +45,10 @@ const listings: Listing[] = [
   {
     id: "4",
     image: listingTarrytown,
-    price: "$2,500,000",
-    address: "2621 Exposition Blvd, Austin, TX 78703",
+    price: "$4,600,000",
+    address: "2203 Greenlee Dr, Austin, TX 78703",
     neighborhood: "Tarrytown",
-    link: "https://taylorsherwood.realscout.com/agent/ls/169041083",
+    link: "https://taylorsherwood.realscout.com/agent/ls/167683003",
   },
   {
     id: "5",

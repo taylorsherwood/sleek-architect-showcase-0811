@@ -164,7 +164,53 @@ const FeaturedListings = () => {
     el.setAttribute("include-seller-listings", "");
     widgetRef.current.appendChild(el);
 
+    // Hard frontend safeguard: hide any listing cards under $300k
+    // RealScout renders async; observe DOM mutations to catch all cards
+    const MIN_PRICE = 300000;
+
+    const hideLowPriceCards = (root: Element) => {
+      const cards = root.querySelectorAll("[class*='listing'], [class*='card'], [class*='property'], a[href]");
+      cards.forEach((card) => {
+        const text = card.textContent || "";
+        // Match price patterns like $250,000 or $125K
+        const priceMatches = text.match(/\$[\d,]+(?:\.\d+)?/g);
+        if (priceMatches) {
+          for (const raw of priceMatches) {
+            const numeric = parseFloat(raw.replace(/[$,]/g, ""));
+            if (numeric > 0 && numeric < MIN_PRICE) {
+              (card as HTMLElement).style.display = "none";
+              break;
+            }
+          }
+        }
+      });
+    };
+
+    const observer = new MutationObserver(() => {
+      // Check both light DOM and shadow DOM
+      hideLowPriceCards(el);
+      if (el.shadowRoot) {
+        hideLowPriceCards(el.shadowRoot as unknown as Element);
+      }
+    });
+
+    observer.observe(el, { childList: true, subtree: true });
+
+    // Also observe shadow root when it becomes available
+    const shadowObserver = new MutationObserver(() => {
+      if (el.shadowRoot) {
+        hideLowPriceCards(el.shadowRoot as unknown as Element);
+        const innerObserver = new MutationObserver(() => {
+          hideLowPriceCards(el.shadowRoot as unknown as Element);
+        });
+        innerObserver.observe(el.shadowRoot, { childList: true, subtree: true });
+      }
+    });
+    shadowObserver.observe(el, { childList: true });
+
     return () => {
+      observer.disconnect();
+      shadowObserver.disconnect();
       if (widgetRef.current && el.parentNode === widgetRef.current) {
         widgetRef.current.removeChild(el);
       }

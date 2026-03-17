@@ -311,11 +311,13 @@ const Connect = () => {
                 }}
               >
                 <span
-                  className="font-sans font-medium uppercase"
+                  className="font-sans uppercase"
                   style={{
                     fontSize: "11px",
                     letterSpacing: "0.18em",
                     color: "hsl(42 37% 65%)",
+                    fontWeight: 800,
+                  }}
                   }}
                 >
                   Schedule a Consultation

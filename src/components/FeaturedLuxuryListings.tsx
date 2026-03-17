@@ -23,9 +23,9 @@ interface Listing {
 const listings: Listing[] = [
   {
     id: "1",
-    image: communityTarrytown,
-    price: "$2,650,000",
-    address: "Tarrytown Classic",
+    image: listingTarrytown,
+    price: "$2,500,000",
+    address: "2621 Exposition Blvd, Austin, TX 78703",
     neighborhood: "Tarrytown",
     beds: 3,
     baths: 3,

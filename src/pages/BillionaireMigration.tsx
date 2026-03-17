@@ -51,20 +51,31 @@ const BillionaireMigration = () => {
       <Navigation />
 
       {/* Hero */}
-      <section className="pt-48 pb-10">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
-            <p className="text-gold/50 mb-5 font-bold" style={labelStyle}>
+      <section className="relative w-full h-[55vh] md:h-[70vh] overflow-hidden">
+        <img
+          src={lakeAustinHero}
+          alt="Aerial view of Lake Austin waterfront estates and Hill Country"
+          className="absolute inset-0 w-full h-full object-cover object-center"
+        />
+        <div
+          className="absolute inset-0"
+          style={{
+            background: "linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.55) 100%)",
+          }}
+        />
+        <div className="relative h-full container mx-auto px-6 flex items-end pb-14 md:pb-20">
+          <div className="max-w-[700px]">
+            <p className="text-white/50 mb-5 font-bold" style={labelStyle}>
               AUSTIN LUXURY REAL ESTATE
             </p>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-light text-architectural mb-8 leading-[1.05]">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-light text-white mb-6 leading-[1.05]">
               Why Billionaires Are Moving to Austin
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground/80 leading-relaxed max-w-2xl font-light">
+            <p className="text-lg md:text-xl text-white/80 leading-relaxed max-w-[620px] font-light mb-10">
               From Silicon Valley founders to global investors, Austin has become a primary
               destination for capital, talent, and long-term real estate investment.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 mt-10">
+            <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 to="/luxury-homes-austin"
                 className="inline-block bg-primary text-primary-foreground hover:bg-gold hover:text-white px-10 py-4 transition-colors duration-300"
@@ -74,7 +85,7 @@ const BillionaireMigration = () => {
               </Link>
               <Link
                 to="/off-market-luxury-homes-austin"
-                className="inline-block border border-foreground/20 text-foreground hover:bg-[#0C0F24] hover:text-white hover:border-[#0C0F24] px-10 py-4 transition-colors duration-300"
+                className="inline-block border border-white/40 text-white hover:bg-white/10 hover:border-white/60 px-10 py-4 transition-colors duration-300"
                 style={labelStyle}
               >
                 ACCESS PRIVATE LISTINGS

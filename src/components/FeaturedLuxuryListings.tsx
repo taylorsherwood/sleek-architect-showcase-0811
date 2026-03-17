@@ -207,7 +207,7 @@ const FeaturedLuxuryListings = () => {
             </p>
             <Link
               to="/off-market-luxury-homes-austin"
-              className="inline-block shrink-0 border border-foreground/15 text-foreground/70 hover:text-foreground hover:border-foreground/40 px-7 py-3 rounded-full transition-all duration-300"
+              className="inline-block shrink-0 border border-foreground/15 text-foreground/70 hover:bg-[#0C0F24] hover:text-white hover:border-[#0C0F24] px-7 py-3 rounded-full transition-all duration-300"
               style={{
                 fontSize: "0.5rem",
                 letterSpacing: "0.25em",

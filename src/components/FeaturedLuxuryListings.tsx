@@ -95,9 +95,9 @@ const listings: Listing[] = [
   },
   {
     id: "7",
-    image: communitySpanishOaks,
-    price: "$2,850,000",
-    address: "Recently Sold",
+    image: listingSold,
+    price: "$3,250,000",
+    address: "3629 Peregrine Falcon Dr, Austin, TX 78746",
     neighborhood: "Westlake",
     beds: 4,
     baths: 4,

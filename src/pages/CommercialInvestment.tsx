@@ -39,7 +39,7 @@ const CommercialInvestment = () => {
       <Navigation />
 
       {/* Hero */}
-      <section className="relative pt-32 pb-20">
+      <section className="relative pt-32 pb-12">
         <div className="absolute inset-0">
                   <img
                     src={heroArchitecture}

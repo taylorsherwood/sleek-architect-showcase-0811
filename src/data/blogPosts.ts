@@ -12,6 +12,7 @@ export interface BlogPost {
   readTime: string;
   category: string;
   image: string;
+  href?: string;
 }
 
 export const blogPosts: BlogPost[] = [

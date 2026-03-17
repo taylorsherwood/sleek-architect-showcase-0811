@@ -80,7 +80,7 @@ const Blog = () => {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16">
               {filteredPosts.map((post) => (
                 <article key={post.id} className="group">
-                  <Link to={`/blog/${post.id}`} className="block">
+                  <Link to={post.href || `/blog/${post.id}`} className="block">
                     <div className="relative overflow-hidden mb-6">
                       <img 
                         src={post.image} 

@@ -784,5 +784,17 @@ While the market fluctuates, Austin has experienced long-term appreciation drive
     readTime: "8 min read",
     category: "RELOCATION",
     image: heroSkyline
+  },
+  {
+    id: "why-billionaires-are-moving-to-austin",
+    title: "Why Billionaires Are Moving to Austin",
+    excerpt: "From Elon Musk to Travis Kalanick, discover why the world's wealthiest individuals are relocating to Austin — and what it means for the luxury real estate market.",
+    content: "",
+    author: "Taylor Sherwood",
+    date: "2025-03-15",
+    readTime: "12 min read",
+    category: "RELOCATION",
+    image: communityLake,
+    href: "/why-billionaires-are-moving-to-austin"
   }
 ];

@@ -47,9 +47,9 @@ const listings: Listing[] = [
   },
   {
     id: "3",
-    image: communityBartonCreek,
-    price: "$3,150,000",
-    address: "Barton Creek Estate",
+    image: listingBartonCreek,
+    price: "$8,750,000",
+    address: "4416 Amarra Dr, Austin, TX 78735",
     neighborhood: "Barton Creek",
     beds: 4,
     baths: 5,

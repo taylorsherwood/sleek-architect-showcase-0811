@@ -71,9 +71,9 @@ const listings: Listing[] = [
   },
   {
     id: "5",
-    image: communityLakeAustin,
-    price: "$6,900,000",
-    address: "Lake Austin Waterfront",
+    image: listingLakeAustin,
+    price: "$9,990,000",
+    address: "2503 Westlake Dr 201, Austin, TX 78746",
     neighborhood: "Lake Austin",
     beds: 5,
     baths: 6,

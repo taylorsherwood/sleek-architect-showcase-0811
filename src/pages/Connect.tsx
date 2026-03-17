@@ -204,7 +204,7 @@ const Connect = () => {
           <div className="px-8 mb-3">
             <div className="flex flex-col gap-2.5">
               {[
-                { title: "Explore Austin Luxury Homes", href: "https://www.echelonpropertygroup.com/listings", icon: Home },
+                { title: "EXPLORE AUSTIN OPPORTUNITIES", href: "https://www.echelonpropertygroup.com/listings", icon: Home },
                 { title: "Search All Listings", href: "https://taylorsherwood.realscout.com/", icon: Search },
                 { title: "Land & Investment Property", href: "/land", icon: Mountain },
               ].map((card, i) => (

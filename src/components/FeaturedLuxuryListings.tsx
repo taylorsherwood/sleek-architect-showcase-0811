@@ -157,7 +157,7 @@ const FeaturedLuxuryListings = () => {
           <p
             className="text-muted-foreground/40 mb-10 font-semibold"
             style={{
-              fontSize: "0.5rem",
+              fontSize: "0.65rem",
               letterSpacing: "0.35em",
               textTransform: "uppercase",
               fontFamily: '"Raleway", sans-serif',

@@ -41,8 +41,7 @@ const LuxuryHomesAustin = () => {
               Luxury Homes for Sale in<br />Austin, Texas
             </h1>
             <p className="text-lg text-muted-foreground/80 leading-relaxed max-w-2xl font-light">
-              Browse Austin's premier luxury real estate including Westlake Hills, Barton Creek,
-              Tarrytown, Rollingwood, and Lake Austin waterfront properties.
+              Not all opportunities are created equal. Each month, we curate a small selection of homes, development sites, and investment properties based on pricing, location, and long-term upside. This is not a feed — it's a filter.
             </p>
           </div>
         </div>

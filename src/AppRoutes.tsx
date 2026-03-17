@@ -40,6 +40,7 @@ const connectImport = () => import("@/pages/Connect");
 const Connect = lazy(connectImport);
 const PrivateOpportunitiesPage = lazy(() => import("@/pages/PrivateOpportunitiesPage"));
 const LuxuryHomesAustin = lazy(() => import("@/pages/LuxuryHomesAustin"));
+const BillionaireMigration = lazy(() => import("@/pages/BillionaireMigration"));
 const NotFound = lazy(() => import("@/pages/NotFound"));
 
 // Prefetch /connect chunk after homepage loads
@@ -88,6 +89,7 @@ const AppRoutes = () => {
           <Route path="/austin-multifamily-report-2026" element={<AustinMultifamilyReport2026 />} />
           <Route path="/private-opportunities" element={<PrivateOpportunitiesPage />} />
           <Route path="/luxury-homes-austin" element={<LuxuryHomesAustin />} />
+          <Route path="/why-billionaires-are-moving-to-austin" element={<BillionaireMigration />} />
           <Route path="/westlake-hills-homes-for-sale" element={<SEOCommunityPage />} />
           <Route path="/tarrytown-homes-for-sale" element={<SEOCommunityPage />} />
           <Route path="/rollingwood-homes-for-sale" element={<SEOCommunityPage />} />

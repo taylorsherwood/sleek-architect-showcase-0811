@@ -339,6 +339,44 @@ const Connect = () => {
           </nav>
 
 
+          {/* ── CTA ── */}
+          <ScrollReveal delay={100}>
+            <div className="px-8 mt-6 mb-2">
+              <a
+                href="https://www.echelonpropertygroup.com/contact"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full text-center rounded-2xl py-7 px-6 transition-all duration-300"
+                style={{
+                  background: "hsl(233 50% 9%)",
+                  color: "hsl(42 37% 65%)",
+                  boxShadow: "0 8px 32px hsl(0 0% 0% / 0.12), inset 0 1px 0 hsl(0 0% 100% / 0.04)",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = "translateY(-3px)";
+                  e.currentTarget.style.boxShadow = "0 14px 40px hsl(0 0% 0% / 0.18), inset 0 1px 0 hsl(0 0% 100% / 0.06)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = "translateY(0)";
+                  e.currentTarget.style.boxShadow = "0 8px 32px hsl(0 0% 0% / 0.12), inset 0 1px 0 hsl(0 0% 100% / 0.04)";
+                }}
+              >
+                <p
+                  className="font-display font-light leading-snug mb-2"
+                  style={{ fontSize: "1.35rem", letterSpacing: "-0.01em", color: "hsl(40 30% 92%)" }}
+                >
+                  Schedule a Consultation
+                </p>
+                <p
+                  className="font-sans"
+                  style={{ fontSize: "10px", letterSpacing: "0.2em", textTransform: "uppercase", fontWeight: 500, color: "hsl(42 37% 57% / 0.7)" }}
+                >
+                  Private &amp; Confidential
+                </p>
+              </a>
+            </div>
+          </ScrollReveal>
+
           {/* ── Footer ── */}
           <ScrollReveal delay={200}>
             <div className="flex flex-col items-center gap-2 mt-8 mb-4 px-4">

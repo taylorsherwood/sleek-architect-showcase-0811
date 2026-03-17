@@ -59,9 +59,9 @@ const listings: Listing[] = [
   },
   {
     id: "4",
-    image: communityWestlake,
-    price: "$2,695,000",
-    address: "Westlake Home",
+    image: listingWestlake,
+    price: "$1,599,000",
+    address: "2210 Westlake Dr A, Austin, TX 78746",
     neighborhood: "Westlake",
     beds: 4,
     baths: 4,

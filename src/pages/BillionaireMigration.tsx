@@ -42,7 +42,7 @@ const labelStyle = {
 
 const BillionaireMigration = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-warm-cream">
       <SEOHead
         title="Why Billionaires Are Moving to Austin | Austin Luxury Real Estate Trends"
         description="Why founders and billionaires are relocating to Austin and how it's impacting Lake Austin, Westlake, and luxury real estate."

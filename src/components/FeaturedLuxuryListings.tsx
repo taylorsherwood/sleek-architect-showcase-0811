@@ -10,6 +10,7 @@ import listingEastAustin from "@/assets/listing-east-austin-1007-e-8th.jpg";
 import listingBartonCreek from "@/assets/listing-barton-creek-4416-amarra.jpg";
 import listingWestlake from "@/assets/listing-westlake-2210-westlake-dr.jpg";
 import listingLakeAustin from "@/assets/listing-lake-austin-2503-westlake-dr.jpg";
+import listingLostCreek from "@/assets/listing-lost-creek-2319-cypress-point.jpg";
 
 interface Listing {
   id: string;

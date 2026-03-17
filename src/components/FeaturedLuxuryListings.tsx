@@ -163,7 +163,7 @@ const FeaturedLuxuryListings = () => {
               fontFamily: '"Raleway", sans-serif',
             }}
           >
-            Curated this week
+            UPDATED: MARCH 2026
           </p>
 
           {/* PRIMARY ROW: Hero (70%) + 2 stacked (30%) */}

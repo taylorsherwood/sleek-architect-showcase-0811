@@ -250,61 +250,48 @@ const Connect = () => {
             </div>
           </div>
 
-          <nav className="flex flex-col gap-3 px-8" aria-label="Quick links">
+          <nav className="flex flex-col gap-2.5 px-8" aria-label="Quick links">
             {links.map((link, i) => (
-              <ScrollReveal key={link.label} delay={i * 120}>
+              <ScrollReveal key={link.label} delay={i * 100}>
                 <a
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`group relative flex items-center justify-between w-full${'buzz' in link && (link as any).buzz ? ' cta-buzz' : ''}`}
+                  className="group flex items-center justify-center w-full h-12 rounded-full transition-all duration-200 hover:-translate-y-0.5"
                   style={{
-                    borderRadius: "18px",
-                    padding: "24px 28px",
                     background: link.featured
-                      ? "hsl(0 0% 100% / 0.7)"
-                      : "hsl(0 0% 100% / 0.45)",
-                    backdropFilter: "blur(24px)",
-                    WebkitBackdropFilter: "blur(24px)",
+                      ? "hsl(0 0% 100% / 0.65)"
+                      : "transparent",
                     border: link.featured
-                      ? "1px solid hsl(42 37% 57% / 0.45)"
+                      ? "1px solid hsl(42 37% 57% / 0.35)"
                       : "1px solid hsl(233 50% 9% / 0.06)",
                     boxShadow: link.featured
-                      ? "0 6px 28px hsl(0 0% 0% / 0.04), inset 0 1px 0 hsl(0 0% 100% / 0.6)"
-                      : "0 4px 20px hsl(0 0% 0% / 0.03), inset 0 1px 0 hsl(0 0% 100% / 0.5)",
-                    transition:
-                      "transform 250ms ease-in-out, box-shadow 250ms ease-in-out, border-color 250ms ease-in-out",
+                      ? "0 2px 10px hsl(0 0% 0% / 0.03)"
+                      : "none",
                   }}
                   onMouseEnter={(e) => {
                     const el = e.currentTarget;
-                    const textEl = el.querySelector("span");
-                    el.style.borderColor = "hsl(42 37% 57% / 0.6)";
-                    el.style.boxShadow = "0 8px 32px hsl(0 0% 0% / 0.06)";
-                    el.style.transform = "translateY(-4px)";
-                    if (textEl) textEl.style.color = "hsl(42 37% 40%)";
+                    el.style.borderColor = "hsl(42 37% 57% / 0.5)";
+                    el.style.boxShadow = "0 4px 16px hsl(0 0% 0% / 0.05)";
+                    if (!link.featured) el.style.background = "hsl(0 0% 100% / 0.3)";
                   }}
                   onMouseLeave={(e) => {
                     const el = e.currentTarget;
-                    const textEl = el.querySelector("span");
                     el.style.borderColor = link.featured
-                      ? "hsl(42 37% 57% / 0.45)"
+                      ? "hsl(42 37% 57% / 0.35)"
                       : "hsl(233 50% 9% / 0.06)";
                     el.style.boxShadow = link.featured
-                      ? "0 6px 28px hsl(0 0% 0% / 0.04), inset 0 1px 0 hsl(0 0% 100% / 0.6)"
-                      : "0 4px 20px hsl(0 0% 0% / 0.03), inset 0 1px 0 hsl(0 0% 100% / 0.5)";
-                    el.style.transform = "translateY(0)";
-                    if (textEl) textEl.style.color = link.featured ? "hsl(42 37% 45%)" : "hsl(233 50% 9% / 0.6)";
+                      ? "0 2px 10px hsl(0 0% 0% / 0.03)"
+                      : "none";
+                    if (!link.featured) el.style.background = "transparent";
                   }}
                 >
                   <span
-                    className="font-sans w-full text-center"
+                    className="font-sans font-medium uppercase text-center transition-colors duration-200"
                     style={{
-                      fontSize: "13px",
-                      letterSpacing: "0.1em",
-                      textTransform: "uppercase",
-                      fontWeight: 500,
-                      color: link.featured ? "hsl(42 37% 45%)" : "hsl(233 50% 9% / 0.6)",
-                      transition: "color 250ms ease-in-out",
+                      fontSize: link.featured ? "11px" : "10.5px",
+                      letterSpacing: "0.13em",
+                      color: link.featured ? "hsl(42 37% 45%)" : "hsl(233 50% 9% / 0.45)",
                     }}
                   >
                     {link.label}

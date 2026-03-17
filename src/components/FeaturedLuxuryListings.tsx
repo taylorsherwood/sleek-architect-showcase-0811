@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 import communityBartonCreek from "@/assets/community-barton-creek.jpg";
 import communityWestlake from "@/assets/community-westlake-hills.avif";
 import communityLakeAustin from "@/assets/community-lake-austin.jpg";
-import communityTarrytown from "@/assets/community-tarrytown.jpg";
 import communityRollingwood from "@/assets/community-rollingwood.jpg";
 import communityTravisHeights from "@/assets/community-travis-heights.jpg";
 import communitySpanishOaks from "@/assets/community-spanish-oaks.jpg";
+import listingTarrytown from "@/assets/listing-tarrytown-2621-exposition.jpg";
 
 interface Listing {
   id: string;

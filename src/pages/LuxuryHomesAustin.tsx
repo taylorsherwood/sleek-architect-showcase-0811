@@ -50,6 +50,7 @@ const LuxuryHomesAustin = () => {
 
       <FeaturedLuxuryListings />
 
+      <RealScoutSearch />
 
 
       <article className="pb-24">

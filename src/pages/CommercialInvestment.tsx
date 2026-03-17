@@ -75,7 +75,7 @@ const CommercialInvestment = () => {
                 2026 MULTI FAMILY REPORT
               </Link>
             </div>
-            <div className="mt-8 inline-flex flex-col items-start">
+            <div className="mt-12 inline-flex flex-col items-start">
               <span className="text-[11px] uppercase tracking-[0.2em] text-white/60 mb-2.5 font-normal">Brokered with</span>
               <div className="inline-flex items-center px-6 py-3 rounded-xl bg-white/[0.06] backdrop-blur-sm border border-white/[0.08] shadow-[0_4px_20px_rgba(0,0,0,0.25)]">
                 <img

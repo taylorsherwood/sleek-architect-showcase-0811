@@ -103,7 +103,7 @@ const Index = () => {
         <FeaturedListings />
         <Testimonials />
         <SellerCTA />
-        <LuxurySearchLinks />
+        
         <MeetTaylor />
         <CTASection />
         <NewsletterSection />

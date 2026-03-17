@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup from "@/components/SchemaMarkup";
 import AuthorBio from "@/components/AuthorBio";
+import lakeAustinHero from "@/assets/lake-austin-aerial.jpg";
 
 const articleSchema = {
   "@context": "https://schema.org",

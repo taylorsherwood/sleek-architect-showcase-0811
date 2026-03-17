@@ -11,6 +11,7 @@ import listingBartonCreek from "@/assets/listing-barton-creek-4416-amarra.jpg";
 import listingWestlake from "@/assets/listing-westlake-2210-westlake-dr.jpg";
 import listingLakeAustin from "@/assets/listing-lake-austin-2503-westlake-dr.jpg";
 import listingLostCreek from "@/assets/listing-lost-creek-2319-cypress-point.jpg";
+import listingSold from "@/assets/listing-westlake-3629-peregrine.jpg";
 
 interface Listing {
   id: string;
@@ -94,9 +95,9 @@ const listings: Listing[] = [
   },
   {
     id: "7",
-    image: communitySpanishOaks,
-    price: "$2,850,000",
-    address: "Recently Sold",
+    image: listingSold,
+    price: "$3,250,000",
+    address: "3629 Peregrine Falcon Dr, Austin, TX 78746",
     neighborhood: "Westlake",
     beds: 4,
     baths: 4,

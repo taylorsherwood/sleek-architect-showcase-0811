@@ -193,7 +193,7 @@ const Connect = () => {
 
           {/* ── Logo between sections ── */}
           <ScrollReveal>
-            <div className="flex flex-col items-center my-4 px-4">
+            <div className="flex flex-col items-center my-1 px-4">
               <img
                 src={echelonLogo}
                 alt="Echelon Property Group"

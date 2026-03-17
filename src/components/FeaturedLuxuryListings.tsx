@@ -7,6 +7,7 @@ import communityTravisHeights from "@/assets/community-travis-heights.jpg";
 import communitySpanishOaks from "@/assets/community-spanish-oaks.jpg";
 import listingTarrytown from "@/assets/listing-tarrytown-2621-exposition.jpg";
 import listingEastAustin from "@/assets/listing-east-austin-1007-e-8th.jpg";
+import listingBartonCreek from "@/assets/listing-barton-creek-4416-amarra.jpg";
 
 interface Listing {
   id: string;
@@ -46,9 +47,9 @@ const listings: Listing[] = [
   },
   {
     id: "3",
-    image: communityBartonCreek,
-    price: "$3,150,000",
-    address: "Barton Creek Estate",
+    image: listingBartonCreek,
+    price: "$8,750,000",
+    address: "4416 Amarra Dr, Austin, TX 78735",
     neighborhood: "Barton Creek",
     beds: 4,
     baths: 5,

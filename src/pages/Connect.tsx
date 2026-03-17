@@ -215,8 +215,71 @@ const Connect = () => {
           </ScrollReveal>
 
 
+          <nav className="flex flex-col gap-3 px-8" aria-label="Quick links">
+            {links.map((link, i) => (
+              <ScrollReveal key={link.label} delay={i * 120}>
+                <a
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`group relative flex items-center justify-between w-full${'buzz' in link && (link as any).buzz ? ' cta-buzz' : ''}`}
+                  style={{
+                    borderRadius: "18px",
+                    padding: "24px 28px",
+                    background: link.featured
+                      ? "hsl(0 0% 100% / 0.7)"
+                      : "hsl(0 0% 100% / 0.45)",
+                    backdropFilter: "blur(24px)",
+                    WebkitBackdropFilter: "blur(24px)",
+                    border: link.featured
+                      ? "1px solid hsl(42 37% 57% / 0.45)"
+                      : "1px solid hsl(233 50% 9% / 0.06)",
+                    boxShadow: link.featured
+                      ? "0 6px 28px hsl(0 0% 0% / 0.04), inset 0 1px 0 hsl(0 0% 100% / 0.6)"
+                      : "0 4px 20px hsl(0 0% 0% / 0.03), inset 0 1px 0 hsl(0 0% 100% / 0.5)",
+                    transition:
+                      "transform 250ms ease-in-out, box-shadow 250ms ease-in-out, border-color 250ms ease-in-out",
+                  }}
+                  onMouseEnter={(e) => {
+                    const el = e.currentTarget;
+                    const textEl = el.querySelector("span");
+                    el.style.borderColor = "hsl(42 37% 57% / 0.6)";
+                    el.style.boxShadow = "0 8px 32px hsl(0 0% 0% / 0.06)";
+                    el.style.transform = "translateY(-4px)";
+                    if (textEl) textEl.style.color = "hsl(42 37% 40%)";
+                  }}
+                  onMouseLeave={(e) => {
+                    const el = e.currentTarget;
+                    const textEl = el.querySelector("span");
+                    el.style.borderColor = link.featured
+                      ? "hsl(42 37% 57% / 0.45)"
+                      : "hsl(233 50% 9% / 0.06)";
+                    el.style.boxShadow = link.featured
+                      ? "0 6px 28px hsl(0 0% 0% / 0.04), inset 0 1px 0 hsl(0 0% 100% / 0.6)"
+                      : "0 4px 20px hsl(0 0% 0% / 0.03), inset 0 1px 0 hsl(0 0% 100% / 0.5)";
+                    el.style.transform = "translateY(0)";
+                    if (textEl) textEl.style.color = link.featured ? "hsl(42 37% 45%)" : "hsl(233 50% 9% / 0.6)";
+                  }}
+                >
+                  <span
+                    className="font-sans w-full text-center"
+                    style={{
+                      fontSize: "13px",
+                      letterSpacing: "0.1em",
+                      textTransform: "uppercase",
+                      fontWeight: 500,
+                      color: link.featured ? "hsl(42 37% 45%)" : "hsl(233 50% 9% / 0.6)",
+                      transition: "color 250ms ease-in-out",
+                    }}
+                  >
+                    {link.label}
+                  </span>
+                </a>
+              </ScrollReveal>
+            ))}
+          </nav>
 
-          {/* ── Footer ── */}
+
           <ScrollReveal delay={200}>
             <div className="flex flex-col items-center gap-2 mt-8 mb-4 px-4">
               <div

@@ -193,7 +193,7 @@ const Connect = () => {
 
           {/* ── Logo between sections ── */}
           <ScrollReveal>
-            <div className="flex flex-col items-center my-4 px-4">
+            <div className="flex flex-col items-center my-1 px-4">
               <img
                 src={echelonLogo}
                 alt="Echelon Property Group"
@@ -215,7 +215,7 @@ const Connect = () => {
           </ScrollReveal>
 
           {/* ── CTA Strip ── */}
-          <div className="px-8 mb-5">
+          <div className="px-8 mb-3">
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
               {[
                 { title: "Explore Austin Luxury Homes", href: "https://www.echelonpropertygroup.com/listings", icon: Home },

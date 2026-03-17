@@ -35,9 +35,9 @@ const listings: Listing[] = [
   },
   {
     id: "2",
-    image: communityTravisHeights,
+    image: listingEastAustin,
     price: "$2,395,000",
-    address: "East Austin Modern",
+    address: "1007 E 8th St, Austin, TX 78702",
     neighborhood: "East Austin",
     beds: 5,
     baths: 5,

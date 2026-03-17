@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import RealScoutListings from "@/components/RealScoutListings";
+import RealScoutSearch from "@/components/RealScoutSearch";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createProductSchema } from "@/components/SchemaMarkup";
 import listing1 from "@/assets/listing-1.jpg";
@@ -117,6 +118,15 @@ const Listings = () => {
         </div>
       </section>
 
+      <RealScoutListings
+        listingStatus="For Sale,For Rent,In Contract"
+        heading={"\n\n\n\nCURRENTLY ON THE MARKET"}
+        subheading="Commercial and Residential Listings"
+      />
+
+      {/* Find Your Next Chapter search block */}
+      <RealScoutSearch />
+
       {/* ── SEO Content: Austin Listings Overview ── */}
       <section className="py-28 bg-secondary/50">
         <div className="container mx-auto px-6">
@@ -165,12 +175,6 @@ const Listings = () => {
           </div>
         </div>
       </section>
-
-      <RealScoutListings
-        listingStatus="For Sale,For Rent,In Contract"
-        heading={"\n\n\n\nCURRENTLY ON THE MARKET"}
-        subheading="Commercial and Residential Listings"
-      />
 
       <Footer />
     </div>

@@ -96,7 +96,7 @@ const BillionaireMigration = () => {
       </section>
 
       {/* Article */}
-      <article className="pb-24">
+      <article className="pt-14 md:pt-16 pb-24">
         <div className="container mx-auto px-6">
           <div className="max-w-[700px] mx-auto" style={{ lineHeight: "1.65" }}>
             <div className="space-y-10">

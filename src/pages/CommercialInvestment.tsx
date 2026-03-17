@@ -75,12 +75,17 @@ const CommercialInvestment = () => {
                 2026 MULTI FAMILY REPORT
               </Link>
             </div>
-            <img
-              src={expCommercialLogo}
-              alt="eXp Commercial"
-              className="h-10 md:h-12 w-auto mt-10 object-contain"
-              loading="eager"
-            />
+            <div className="mt-8 inline-flex flex-col items-start">
+              <span className="text-[10px] uppercase tracking-[0.2em] text-white/50 mb-2 font-light">Brokered with</span>
+              <div className="inline-flex items-center px-5 py-2.5 rounded-xl bg-white/[0.06] backdrop-blur-sm border border-white/[0.08] shadow-[0_4px_20px_rgba(0,0,0,0.25)]">
+                <img
+                  src={expCommercialLogo}
+                  alt="eXp Commercial"
+                  className="h-8 md:h-10 w-auto object-contain"
+                  loading="eager"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>

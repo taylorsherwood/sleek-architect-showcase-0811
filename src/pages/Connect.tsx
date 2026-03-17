@@ -180,7 +180,7 @@ const Connect = () => {
 
           {/* ── Logo between sections ── */}
           <ScrollReveal>
-            <div className="flex flex-col items-center my-1 px-4">
+            <div className="flex flex-col items-center -mb-2 px-4">
               <img
                 src={echelonLogo}
                 alt="Echelon Property Group"
@@ -212,7 +212,7 @@ const Connect = () => {
                 <ScrollReveal key={card.href} delay={i * 120}>
                   <a
                     href={card.href}
-                    className="flex items-center gap-3.5 w-full h-12 px-6 rounded-full transition-all duration-200 hover:-translate-y-0.5"
+                    className="flex items-center gap-3.5 w-full h-[52px] px-6 rounded-full transition-all duration-200 hover:-translate-y-0.5"
                     style={{
                       background: "hsl(0 0% 100% / 0.55)",
                       border: "1px solid hsl(42 37% 57% / 0.2)",
@@ -237,7 +237,7 @@ const Connect = () => {
                     <span
                       className="font-sans font-medium uppercase"
                       style={{
-                        fontSize: "10.5px",
+                        fontSize: "11px",
                         letterSpacing: "0.12em",
                         color: "hsl(233 50% 9% / 0.65)",
                       }}
@@ -250,6 +250,9 @@ const Connect = () => {
             </div>
           </div>
 
+          {/* Spacer between Land & Investment and Property Valuation */}
+          <div className="h-4" />
+
           <nav className="flex flex-col gap-2.5 px-8" aria-label="Quick links">
             {links.map((link, i) => (
               <ScrollReveal key={link.label} delay={i * 100}>
@@ -257,7 +260,7 @@ const Connect = () => {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center w-full h-12 rounded-full transition-all duration-200 hover:-translate-y-0.5"
+                  className="flex items-center justify-center w-full h-[52px] rounded-full transition-all duration-200 hover:-translate-y-0.5"
                   style={{
                     background: (link as any).transparent ? "transparent" : "hsl(0 0% 100% / 0.55)",
                     border: (link as any).transparent ? "1px solid hsl(233 50% 9% / 0.06)" : "1px solid hsl(42 37% 57% / 0.2)",
@@ -277,7 +280,7 @@ const Connect = () => {
                   <span
                     className="font-sans font-medium uppercase text-center transition-colors duration-200"
                     style={{
-                      fontSize: "10.5px",
+                      fontSize: "11px",
                       letterSpacing: "0.12em",
                       color: "hsl(233 50% 9% / 0.65)",
                     }}

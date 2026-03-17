@@ -142,7 +142,7 @@ const Connect = () => {
                 </p>
 
                 {/* Social icons */}
-                <div className="flex items-center gap-3 mt-5">
+                <div className="flex items-center gap-2.5 mt-5">
                   {socials.map((s) => (
                     <a
                       key={s.label}
@@ -150,39 +150,26 @@ const Connect = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={s.label}
-                      className="flex items-center justify-center transition-all duration-300"
+                      className="flex items-center justify-center w-11 h-11 rounded-full transition-all duration-200 hover:-translate-y-0.5"
                       style={{
-                        width: "46px",
-                        height: "46px",
-                        borderRadius: "14px",
-                        background: "hsl(233 50% 9% / 0.06)",
-                        backdropFilter: "blur(16px)",
-                        WebkitBackdropFilter: "blur(16px)",
-                        border: "1px solid hsl(233 50% 9% / 0.1)",
-                        boxShadow:
-                          "0 4px 16px hsl(0 0% 0% / 0.06), inset 0 1px 0 hsl(0 0% 100% / 0.3)",
-                        color: "hsl(233 50% 9% / 0.55)",
+                        background: "hsl(233 50% 9% / 0.05)",
+                        border: "1px solid hsl(233 50% 9% / 0.08)",
+                        color: "hsl(233 50% 9% / 0.45)",
                       }}
                       onMouseEnter={(e) => {
                         const el = e.currentTarget;
-                        el.style.background = "hsl(42 37% 57% / 0.12)";
-                        el.style.borderColor = "hsl(42 37% 57% / 0.3)";
+                        el.style.background = "hsl(42 37% 57% / 0.1)";
+                        el.style.borderColor = "hsl(42 37% 57% / 0.25)";
                         el.style.color = "hsl(42 37% 45%)";
-                        el.style.boxShadow =
-                          "0 6px 24px hsl(42 37% 57% / 0.12), inset 0 1px 0 hsl(0 0% 100% / 0.3)";
-                        el.style.transform = "translateY(-2px) scale(1.05)";
                       }}
                       onMouseLeave={(e) => {
                         const el = e.currentTarget;
-                        el.style.background = "hsl(233 50% 9% / 0.06)";
-                        el.style.borderColor = "hsl(233 50% 9% / 0.1)";
-                        el.style.color = "hsl(233 50% 9% / 0.55)";
-                        el.style.boxShadow =
-                          "0 4px 16px hsl(0 0% 0% / 0.06), inset 0 1px 0 hsl(0 0% 100% / 0.3)";
-                        el.style.transform = "translateY(0) scale(1)";
+                        el.style.background = "hsl(233 50% 9% / 0.05)";
+                        el.style.borderColor = "hsl(233 50% 9% / 0.08)";
+                        el.style.color = "hsl(233 50% 9% / 0.45)";
                       }}
                     >
-                      <s.icon className="w-5 h-5" />
+                      <s.icon className="w-[18px] h-[18px]" strokeWidth={1.5} />
                     </a>
                   ))}
                 </div>
@@ -216,7 +203,7 @@ const Connect = () => {
 
           {/* ── CTA Strip ── */}
           <div className="px-8 mb-3">
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <div className="flex flex-col gap-2.5">
               {[
                 { title: "Explore Austin Luxury Homes", href: "https://www.echelonpropertygroup.com/listings", icon: Home },
                 { title: "Search All Listings", href: "https://taylorsherwood.realscout.com/", icon: Search },
@@ -225,45 +212,34 @@ const Connect = () => {
                 <ScrollReveal key={card.href} delay={i * 120}>
                   <a
                     href={card.href}
-                    className="flex flex-col items-center justify-center text-center px-4 py-6 rounded-2xl"
+                    className="flex items-center gap-3.5 w-full h-12 px-6 rounded-full transition-all duration-200 hover:-translate-y-0.5"
                     style={{
-                      background: "hsl(0 0% 100% / 0.6)",
-                      backdropFilter: "blur(24px)",
-                      WebkitBackdropFilter: "blur(24px)",
-                      border: "1px solid hsl(42 37% 57% / 0.3)",
-                      boxShadow:
-                        "0 4px 20px hsl(0 0% 0% / 0.04), inset 0 1px 0 hsl(0 0% 100% / 0.6)",
-                      transition:
-                        "transform 250ms ease-in-out, box-shadow 250ms ease-in-out, border-color 250ms ease-in-out",
+                      background: "hsl(0 0% 100% / 0.55)",
+                      border: "1px solid hsl(42 37% 57% / 0.2)",
+                      boxShadow: "0 2px 8px hsl(0 0% 0% / 0.03)",
                     }}
                     onMouseEnter={(e) => {
                       const el = e.currentTarget;
-                      el.style.transform = "translateY(-4px)";
-                      el.style.borderColor = "hsl(42 37% 57% / 0.5)";
-                      el.style.boxShadow =
-                        "0 12px 36px hsl(0 0% 0% / 0.06), inset 0 1px 0 hsl(0 0% 100% / 0.7)";
+                      el.style.borderColor = "hsl(42 37% 57% / 0.45)";
+                      el.style.boxShadow = "0 4px 16px hsl(0 0% 0% / 0.05)";
                     }}
                     onMouseLeave={(e) => {
                       const el = e.currentTarget;
-                      el.style.transform = "translateY(0)";
-                      el.style.borderColor = "hsl(42 37% 57% / 0.3)";
-                      el.style.boxShadow =
-                        "0 4px 20px hsl(0 0% 0% / 0.04), inset 0 1px 0 hsl(0 0% 100% / 0.6)";
+                      el.style.borderColor = "hsl(42 37% 57% / 0.2)";
+                      el.style.boxShadow = "0 2px 8px hsl(0 0% 0% / 0.03)";
                     }}
                   >
                     <card.icon
-                      className="w-5 h-5 mb-3"
+                      className="w-4 h-4 flex-shrink-0"
+                      strokeWidth={1.5}
                       style={{ color: "hsl(42 37% 50%)" }}
                     />
                     <span
-                      className="font-sans"
+                      className="font-sans font-medium uppercase"
                       style={{
-                        fontSize: "12px",
+                        fontSize: "10.5px",
                         letterSpacing: "0.12em",
-                        textTransform: "uppercase",
-                        fontWeight: 500,
-                        color: "hsl(233 50% 9% / 0.75)",
-                        lineHeight: 1.4,
+                        color: "hsl(233 50% 9% / 0.65)",
                       }}
                     >
                       {card.title}
@@ -274,61 +250,48 @@ const Connect = () => {
             </div>
           </div>
 
-          <nav className="flex flex-col gap-3 px-8" aria-label="Quick links">
+          <nav className="flex flex-col gap-2.5 px-8" aria-label="Quick links">
             {links.map((link, i) => (
-              <ScrollReveal key={link.label} delay={i * 120}>
+              <ScrollReveal key={link.label} delay={i * 100}>
                 <a
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`group relative flex items-center justify-between w-full${'buzz' in link && (link as any).buzz ? ' cta-buzz' : ''}`}
+                  className="group flex items-center justify-center w-full h-12 rounded-full transition-all duration-200 hover:-translate-y-0.5"
                   style={{
-                    borderRadius: "18px",
-                    padding: "24px 28px",
                     background: link.featured
-                      ? "hsl(0 0% 100% / 0.7)"
-                      : "hsl(0 0% 100% / 0.45)",
-                    backdropFilter: "blur(24px)",
-                    WebkitBackdropFilter: "blur(24px)",
+                      ? "hsl(0 0% 100% / 0.65)"
+                      : "transparent",
                     border: link.featured
-                      ? "1px solid hsl(42 37% 57% / 0.45)"
+                      ? "1px solid hsl(42 37% 57% / 0.35)"
                       : "1px solid hsl(233 50% 9% / 0.06)",
                     boxShadow: link.featured
-                      ? "0 6px 28px hsl(0 0% 0% / 0.04), inset 0 1px 0 hsl(0 0% 100% / 0.6)"
-                      : "0 4px 20px hsl(0 0% 0% / 0.03), inset 0 1px 0 hsl(0 0% 100% / 0.5)",
-                    transition:
-                      "transform 250ms ease-in-out, box-shadow 250ms ease-in-out, border-color 250ms ease-in-out",
+                      ? "0 2px 10px hsl(0 0% 0% / 0.03)"
+                      : "none",
                   }}
                   onMouseEnter={(e) => {
                     const el = e.currentTarget;
-                    const textEl = el.querySelector("span");
-                    el.style.borderColor = "hsl(42 37% 57% / 0.6)";
-                    el.style.boxShadow = "0 8px 32px hsl(0 0% 0% / 0.06)";
-                    el.style.transform = "translateY(-4px)";
-                    if (textEl) textEl.style.color = "hsl(42 37% 40%)";
+                    el.style.borderColor = "hsl(42 37% 57% / 0.5)";
+                    el.style.boxShadow = "0 4px 16px hsl(0 0% 0% / 0.05)";
+                    if (!link.featured) el.style.background = "hsl(0 0% 100% / 0.3)";
                   }}
                   onMouseLeave={(e) => {
                     const el = e.currentTarget;
-                    const textEl = el.querySelector("span");
                     el.style.borderColor = link.featured
-                      ? "hsl(42 37% 57% / 0.45)"
+                      ? "hsl(42 37% 57% / 0.35)"
                       : "hsl(233 50% 9% / 0.06)";
                     el.style.boxShadow = link.featured
-                      ? "0 6px 28px hsl(0 0% 0% / 0.04), inset 0 1px 0 hsl(0 0% 100% / 0.6)"
-                      : "0 4px 20px hsl(0 0% 0% / 0.03), inset 0 1px 0 hsl(0 0% 100% / 0.5)";
-                    el.style.transform = "translateY(0)";
-                    if (textEl) textEl.style.color = link.featured ? "hsl(42 37% 45%)" : "hsl(233 50% 9% / 0.6)";
+                      ? "0 2px 10px hsl(0 0% 0% / 0.03)"
+                      : "none";
+                    if (!link.featured) el.style.background = "transparent";
                   }}
                 >
                   <span
-                    className="font-sans w-full text-center"
+                    className="font-sans font-medium uppercase text-center transition-colors duration-200"
                     style={{
-                      fontSize: "13px",
-                      letterSpacing: "0.1em",
-                      textTransform: "uppercase",
-                      fontWeight: 500,
-                      color: link.featured ? "hsl(42 37% 45%)" : "hsl(233 50% 9% / 0.6)",
-                      transition: "color 250ms ease-in-out",
+                      fontSize: link.featured ? "11px" : "10.5px",
+                      letterSpacing: "0.13em",
+                      color: link.featured ? "hsl(42 37% 45%)" : "hsl(233 50% 9% / 0.45)",
                     }}
                   >
                     {link.label}
@@ -341,38 +304,34 @@ const Connect = () => {
 
           {/* ── CTA ── */}
           <ScrollReveal delay={100}>
-            <div className="px-8 mt-6 mb-2">
+            <div className="px-8 mt-4 mb-2">
               <a
                 href="https://www.echelonpropertygroup.com/contact"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full text-center rounded-2xl py-7 px-6 transition-all duration-300"
+                className="flex items-center justify-center w-full h-14 rounded-full transition-all duration-200 hover:-translate-y-0.5"
                 style={{
                   background: "hsl(233 50% 9%)",
-                  color: "hsl(42 37% 65%)",
-                  boxShadow: "0 8px 32px hsl(0 0% 0% / 0.12), inset 0 1px 0 hsl(0 0% 100% / 0.04)",
+                  border: "1px solid hsl(233 50% 12%)",
+                  boxShadow: "0 4px 20px hsl(0 0% 0% / 0.1)",
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = "translateY(-3px)";
-                  e.currentTarget.style.boxShadow = "0 14px 40px hsl(0 0% 0% / 0.18), inset 0 1px 0 hsl(0 0% 100% / 0.06)";
+                  e.currentTarget.style.boxShadow = "0 8px 28px hsl(0 0% 0% / 0.16)";
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = "translateY(0)";
-                  e.currentTarget.style.boxShadow = "0 8px 32px hsl(0 0% 0% / 0.12), inset 0 1px 0 hsl(0 0% 100% / 0.04)";
+                  e.currentTarget.style.boxShadow = "0 4px 20px hsl(0 0% 0% / 0.1)";
                 }}
               >
-                <p
-                  className="font-display font-light leading-snug mb-2"
-                  style={{ fontSize: "1.35rem", letterSpacing: "-0.01em", color: "hsl(40 30% 92%)" }}
+                <span
+                  className="font-sans font-medium uppercase"
+                  style={{
+                    fontSize: "11px",
+                    letterSpacing: "0.18em",
+                    color: "hsl(42 37% 65%)",
+                  }}
                 >
                   Schedule a Consultation
-                </p>
-                <p
-                  className="font-sans"
-                  style={{ fontSize: "10px", letterSpacing: "0.2em", textTransform: "uppercase", fontWeight: 500, color: "hsl(42 37% 57% / 0.7)" }}
-                >
-                  Private &amp; Confidential
-                </p>
+                </span>
               </a>
             </div>
           </ScrollReveal>

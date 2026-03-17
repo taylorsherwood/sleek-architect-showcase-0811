@@ -204,8 +204,8 @@ const Connect = () => {
           <div className="px-8 mb-3">
             <div className="flex flex-col gap-2.5">
               {[
-                { title: "EXPLORE AUSTIN OPPORTUNITIES", href: "https://www.echelonpropertygroup.com/listings", icon: Home },
-                { title: "Search All Listings", href: "https://taylorsherwood.realscout.com/", icon: Search },
+                { title: "EXPLORE ECHELON LISTINGS", href: "https://www.echelonpropertygroup.com/listings", icon: Home },
+                { title: "SEARCH ALL AUSTIN OPPORTUNITIES", href: "https://taylorsherwood.realscout.com/", icon: Search },
                 { title: "Land & Investment Property", href: "/land", icon: Mountain },
               ].map((card, i) => (
                 <ScrollReveal key={card.href} delay={i * 120}>

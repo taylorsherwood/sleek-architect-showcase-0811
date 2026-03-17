@@ -212,7 +212,7 @@ const Connect = () => {
                 <ScrollReveal key={card.href} delay={i * 120}>
                   <a
                     href={card.href}
-                    className="flex items-center gap-3.5 w-full h-12 px-6 rounded-full transition-all duration-200 hover:-translate-y-0.5"
+                    className="flex items-center gap-3.5 w-full h-[52px] px-6 rounded-full transition-all duration-200 hover:-translate-y-0.5"
                     style={{
                       background: "hsl(0 0% 100% / 0.55)",
                       border: "1px solid hsl(42 37% 57% / 0.2)",

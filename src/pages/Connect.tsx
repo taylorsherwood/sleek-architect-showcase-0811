@@ -280,7 +280,7 @@ const Connect = () => {
                   <span
                     className="font-sans font-medium uppercase text-center transition-colors duration-200"
                     style={{
-                      fontSize: "10.5px",
+                      fontSize: "11px",
                       letterSpacing: "0.12em",
                       color: "hsl(233 50% 9% / 0.65)",
                     }}

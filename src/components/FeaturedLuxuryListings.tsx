@@ -10,6 +10,7 @@ import listingEastAustin from "@/assets/listing-east-austin-1007-e-8th.jpg";
 import listingBartonCreek from "@/assets/listing-barton-creek-4416-amarra.jpg";
 import listingWestlake from "@/assets/listing-westlake-2210-westlake-dr.jpg";
 import listingLakeAustin from "@/assets/listing-lake-austin-2503-westlake-dr.jpg";
+import listingLostCreek from "@/assets/listing-lost-creek-2319-cypress-point.jpg";
 
 interface Listing {
   id: string;
@@ -82,10 +83,10 @@ const listings: Listing[] = [
   },
   {
     id: "6",
-    image: communityRollingwood,
-    price: "$3,185,000",
-    address: "New Construction Modern",
-    neighborhood: "Northwest Hills",
+    image: listingLostCreek,
+    price: "$4,295,000",
+    address: "2319 Cypress Point E, Austin, TX 78746",
+    neighborhood: "Lost Creek",
     beds: 4,
     baths: 5,
     sqft: "—",

@@ -75,6 +75,8 @@ const FloatingContact = () => {
     };
   }, [advisoryDismissed, isHomepage, bannerVisible, heroVisible]);
 
+  if (isHiddenRoute) return null;
+
   return (
     <>
       {/* Launcher — dark concierge bar */}

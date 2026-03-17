@@ -338,10 +338,6 @@ const Connect = () => {
             ))}
           </nav>
 
-          {/* ── Private Opportunities ── */}
-          <Suspense fallback={<div className="min-h-[200px]" />}>
-            <PrivateOpportunities variant="light" />
-          </Suspense>
 
           {/* ── Footer ── */}
           <ScrollReveal delay={200}>

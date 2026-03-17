@@ -260,7 +260,7 @@ const Connect = () => {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center w-full h-12 rounded-full transition-all duration-200 hover:-translate-y-0.5"
+                  className="flex items-center justify-center w-full h-[52px] rounded-full transition-all duration-200 hover:-translate-y-0.5"
                   style={{
                     background: (link as any).transparent ? "transparent" : "hsl(0 0% 100% / 0.55)",
                     border: (link as any).transparent ? "1px solid hsl(233 50% 9% / 0.06)" : "1px solid hsl(42 37% 57% / 0.2)",

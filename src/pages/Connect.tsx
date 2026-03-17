@@ -25,7 +25,6 @@ const Connect = () => {
   const scrollProgress = useHeroScroll();
   const [heroHeight, setHeroHeight] = useState(0);
 
-  // Measure hero card height for scroll-based darkening
   useEffect(() => {
     const updateHeight = () => {
       const heroEl = document.getElementById("connect-hero");
@@ -36,7 +35,6 @@ const Connect = () => {
     return () => window.removeEventListener("resize", updateHeight);
   }, []);
 
-  // Calculate a 0–1 progress for the hero card area only
   const heroProgress = heroHeight > 0 ? Math.min(window.scrollY / (heroHeight * 0.6), 1) : 0;
 
   return (
@@ -46,8 +44,7 @@ const Connect = () => {
         description="Connect with Austin luxury real estate advisor Taylor Sherwood. Browse listings, search homes, or request a private consultation."
       />
       <div
-        className="min-h-screen flex flex-col items-center"
-        style={{ backgroundColor: "hsl(233, 50%, 9%)" }}
+        className="min-h-screen flex flex-col items-center bg-warm-cream"
       >
         <div className="w-full max-w-[440px] mx-auto flex flex-col">
 
@@ -58,7 +55,7 @@ const Connect = () => {
             style={{
               borderRadius: "0 0 24px 24px",
               boxShadow:
-                "0 24px 64px hsl(0 0% 0% / 0.5), 0 8px 24px hsl(0 0% 0% / 0.3)",
+                "0 24px 64px hsl(0 0% 0% / 0.12), 0 8px 24px hsl(0 0% 0% / 0.08)",
             }}
           >
             {/* Darken overlay on scroll */}
@@ -80,12 +77,12 @@ const Connect = () => {
                 fetchPriority="high"
               />
 
-              {/* Deep cinematic gradient overlay */}
+              {/* Cinematic gradient overlay — fades to warm cream */}
               <div
                 className="absolute inset-0"
                 style={{
                   background:
-                    "linear-gradient(180deg, hsl(233 50% 9% / 0.15) 0%, transparent 15%, transparent 25%, hsl(233 50% 9% / 0.08) 40%, hsl(233 50% 9% / 0.35) 55%, hsl(233 50% 9% / 0.8) 72%, hsl(233 50% 9% / 0.97) 85%, hsl(233 50% 9%) 100%)",
+                    "linear-gradient(180deg, hsl(40 30% 96% / 0.05) 0%, transparent 15%, transparent 25%, hsl(40 30% 96% / 0.08) 40%, hsl(40 30% 96% / 0.35) 55%, hsl(40 30% 96% / 0.8) 72%, hsl(40 30% 96% / 0.97) 85%, hsl(40 30% 96%) 100%)",
                 }}
               />
 
@@ -97,7 +94,7 @@ const Connect = () => {
                   style={{
                     fontSize: "2.1rem",
                     letterSpacing: "-0.02em",
-                    color: "hsl(0 0% 100%)",
+                    color: "hsl(233 50% 9%)",
                   }}
                 >
                   Taylor Sherwood
@@ -110,7 +107,7 @@ const Connect = () => {
                     width: "40px",
                     height: "1px",
                     background:
-                      "linear-gradient(90deg, transparent, hsl(42 37% 57% / 0.5), transparent)",
+                      "linear-gradient(90deg, transparent, hsl(42 37% 57% / 0.6), transparent)",
                   }}
                 />
 
@@ -138,7 +135,7 @@ const Connect = () => {
                     fontWeight: 400,
                     lineHeight: 1.3,
                     marginTop: "1px",
-                    color: "hsl(0 0% 100% / 0.55)",
+                    color: "hsl(233 50% 9% / 0.45)",
                   }}
                 >
                   Land&nbsp;·&nbsp;Investment Specialists
@@ -158,30 +155,30 @@ const Connect = () => {
                         width: "46px",
                         height: "46px",
                         borderRadius: "14px",
-                        background: "hsl(0 0% 100% / 0.06)",
+                        background: "hsl(233 50% 9% / 0.06)",
                         backdropFilter: "blur(16px)",
                         WebkitBackdropFilter: "blur(16px)",
-                        border: "1px solid hsl(0 0% 100% / 0.07)",
+                        border: "1px solid hsl(233 50% 9% / 0.1)",
                         boxShadow:
-                          "0 4px 16px hsl(0 0% 0% / 0.2), inset 0 1px 0 hsl(0 0% 100% / 0.04)",
-                        color: "hsl(0 0% 100% / 0.65)",
+                          "0 4px 16px hsl(0 0% 0% / 0.06), inset 0 1px 0 hsl(0 0% 100% / 0.3)",
+                        color: "hsl(233 50% 9% / 0.55)",
                       }}
                       onMouseEnter={(e) => {
                         const el = e.currentTarget;
-                        el.style.background = "hsl(42 37% 57% / 0.15)";
-                        el.style.borderColor = "hsl(42 37% 57% / 0.28)";
-                        el.style.color = "hsl(42 37% 67%)";
+                        el.style.background = "hsl(42 37% 57% / 0.12)";
+                        el.style.borderColor = "hsl(42 37% 57% / 0.3)";
+                        el.style.color = "hsl(42 37% 45%)";
                         el.style.boxShadow =
-                          "0 6px 24px hsl(42 37% 57% / 0.1), inset 0 1px 0 hsl(42 37% 57% / 0.06)";
+                          "0 6px 24px hsl(42 37% 57% / 0.12), inset 0 1px 0 hsl(0 0% 100% / 0.3)";
                         el.style.transform = "translateY(-2px) scale(1.05)";
                       }}
                       onMouseLeave={(e) => {
                         const el = e.currentTarget;
-                        el.style.background = "hsl(0 0% 100% / 0.06)";
-                        el.style.borderColor = "hsl(0 0% 100% / 0.07)";
-                        el.style.color = "hsl(0 0% 100% / 0.65)";
+                        el.style.background = "hsl(233 50% 9% / 0.06)";
+                        el.style.borderColor = "hsl(233 50% 9% / 0.1)";
+                        el.style.color = "hsl(233 50% 9% / 0.55)";
                         el.style.boxShadow =
-                          "0 4px 16px hsl(0 0% 0% / 0.2), inset 0 1px 0 hsl(0 0% 100% / 0.04)";
+                          "0 4px 16px hsl(0 0% 0% / 0.06), inset 0 1px 0 hsl(0 0% 100% / 0.3)";
                         el.style.transform = "translateY(0) scale(1)";
                       }}
                     >
@@ -230,12 +227,12 @@ const Connect = () => {
                     href={card.href}
                     className="flex flex-col items-center justify-center text-center px-4 py-6 rounded-2xl"
                     style={{
-                      background: "hsl(233 42% 14% / 0.2)",
+                      background: "hsl(0 0% 100% / 0.6)",
                       backdropFilter: "blur(24px)",
                       WebkitBackdropFilter: "blur(24px)",
-                      border: "1px solid hsl(42 37% 57% / 0.4)",
+                      border: "1px solid hsl(42 37% 57% / 0.3)",
                       boxShadow:
-                        "0 4px 20px hsl(42 37% 57% / 0.1), 0 0 30px hsl(42 37% 57% / 0.06), inset 0 1px 0 hsl(0 0% 100% / 0.05)",
+                        "0 4px 20px hsl(0 0% 0% / 0.04), inset 0 1px 0 hsl(0 0% 100% / 0.6)",
                       transition:
                         "transform 250ms ease-in-out, box-shadow 250ms ease-in-out, border-color 250ms ease-in-out",
                     }}
@@ -244,19 +241,19 @@ const Connect = () => {
                       el.style.transform = "translateY(-4px)";
                       el.style.borderColor = "hsl(42 37% 57% / 0.5)";
                       el.style.boxShadow =
-                        "0 12px 36px hsl(42 37% 57% / 0.12), 0 0 48px hsl(42 37% 57% / 0.06), inset 0 1px 0 hsl(0 0% 100% / 0.06)";
+                        "0 12px 36px hsl(0 0% 0% / 0.06), inset 0 1px 0 hsl(0 0% 100% / 0.7)";
                     }}
                     onMouseLeave={(e) => {
                       const el = e.currentTarget;
                       el.style.transform = "translateY(0)";
-                      el.style.borderColor = "hsl(42 37% 57% / 0.25)";
+                      el.style.borderColor = "hsl(42 37% 57% / 0.3)";
                       el.style.boxShadow =
-                        "0 4px 20px hsl(0 0% 0% / 0.15), inset 0 1px 0 hsl(0 0% 100% / 0.04)";
+                        "0 4px 20px hsl(0 0% 0% / 0.04), inset 0 1px 0 hsl(0 0% 100% / 0.6)";
                     }}
                   >
                     <card.icon
                       className="w-5 h-5 mb-3"
-                      style={{ color: "hsl(42 37% 57% / 0.7)" }}
+                      style={{ color: "hsl(42 37% 50%)" }}
                     />
                     <span
                       className="font-sans"
@@ -265,7 +262,7 @@ const Connect = () => {
                         letterSpacing: "0.12em",
                         textTransform: "uppercase",
                         fontWeight: 500,
-                        color: "hsl(0 0% 100% / 0.85)",
+                        color: "hsl(233 50% 9% / 0.75)",
                         lineHeight: 1.4,
                       }}
                     >
@@ -284,43 +281,43 @@ const Connect = () => {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`group relative flex items-center justify-between w-full${'buzz' in link && link.buzz ? ' cta-buzz' : ''}`}
+                  className={`group relative flex items-center justify-between w-full${'buzz' in link && (link as any).buzz ? ' cta-buzz' : ''}`}
                   style={{
                     borderRadius: "18px",
                     padding: "24px 28px",
                     background: link.featured
-                      ? "hsl(233 42% 14% / 0.25)"
-                      : "hsl(233 42% 14% / 0.15)",
+                      ? "hsl(0 0% 100% / 0.7)"
+                      : "hsl(0 0% 100% / 0.45)",
                     backdropFilter: "blur(24px)",
                     WebkitBackdropFilter: "blur(24px)",
                     border: link.featured
-                      ? "1px solid hsl(42 37% 57% / 0.5)"
-                      : "1px solid hsl(0 0% 100% / 0.1)",
+                      ? "1px solid hsl(42 37% 57% / 0.45)"
+                      : "1px solid hsl(233 50% 9% / 0.06)",
                     boxShadow: link.featured
-                      ? "0 6px 28px hsl(0 0% 0% / 0.15), 0 0 40px hsl(42 37% 57% / 0.08), inset 0 1px 0 hsl(0 0% 100% / 0.08)"
-                      : "0 4px 20px hsl(0 0% 0% / 0.1), inset 0 1px 0 hsl(0 0% 100% / 0.07)",
+                      ? "0 6px 28px hsl(0 0% 0% / 0.04), inset 0 1px 0 hsl(0 0% 100% / 0.6)"
+                      : "0 4px 20px hsl(0 0% 0% / 0.03), inset 0 1px 0 hsl(0 0% 100% / 0.5)",
                     transition:
                       "transform 250ms ease-in-out, box-shadow 250ms ease-in-out, border-color 250ms ease-in-out",
                   }}
                   onMouseEnter={(e) => {
                     const el = e.currentTarget;
                     const textEl = el.querySelector("span");
-                    el.style.borderColor = "hsl(42 37% 57% / 0.7)";
-                    el.style.boxShadow = "0 8px 32px hsl(42 37% 57% / 0.2), 0 0 60px hsl(42 37% 57% / 0.12)";
+                    el.style.borderColor = "hsl(42 37% 57% / 0.6)";
+                    el.style.boxShadow = "0 8px 32px hsl(0 0% 0% / 0.06)";
                     el.style.transform = "translateY(-4px)";
-                    if (textEl) textEl.style.color = "hsl(42 37% 85%)";
+                    if (textEl) textEl.style.color = "hsl(42 37% 40%)";
                   }}
                   onMouseLeave={(e) => {
                     const el = e.currentTarget;
                     const textEl = el.querySelector("span");
                     el.style.borderColor = link.featured
-                      ? "hsl(42 37% 57% / 0.5)"
-                      : "hsl(0 0% 100% / 0.045)";
+                      ? "hsl(42 37% 57% / 0.45)"
+                      : "hsl(233 50% 9% / 0.06)";
                     el.style.boxShadow = link.featured
-                      ? "0 6px 28px hsl(0 0% 0% / 0.3), 0 0 40px hsl(42 37% 57% / 0.08), inset 0 1px 0 hsl(0 0% 100% / 0.04), inset 0 0 40px hsl(42 37% 57% / 0.06)"
-                      : "0 4px 20px hsl(0 0% 0% / 0.25), inset 0 1px 0 hsl(0 0% 100% / 0.025), inset 0 0 20px hsl(0 0% 100% / 0.008)";
+                      ? "0 6px 28px hsl(0 0% 0% / 0.04), inset 0 1px 0 hsl(0 0% 100% / 0.6)"
+                      : "0 4px 20px hsl(0 0% 0% / 0.03), inset 0 1px 0 hsl(0 0% 100% / 0.5)";
                     el.style.transform = "translateY(0)";
-                    if (textEl) textEl.style.color = link.featured ? "hsl(42 37% 67%)" : "hsl(0 0% 100% / 0.78)";
+                    if (textEl) textEl.style.color = link.featured ? "hsl(42 37% 45%)" : "hsl(233 50% 9% / 0.6)";
                   }}
                 >
                   <span
@@ -330,7 +327,7 @@ const Connect = () => {
                       letterSpacing: "0.1em",
                       textTransform: "uppercase",
                       fontWeight: 500,
-                      color: link.featured ? "hsl(42 37% 67%)" : "hsl(0 0% 100% / 0.78)",
+                      color: link.featured ? "hsl(42 37% 45%)" : "hsl(233 50% 9% / 0.6)",
                       transition: "color 250ms ease-in-out",
                     }}
                   >
@@ -343,7 +340,7 @@ const Connect = () => {
 
           {/* ── Private Opportunities ── */}
           <Suspense fallback={<div className="min-h-[200px]" />}>
-            <PrivateOpportunities variant="dark" />
+            <PrivateOpportunities variant="light" />
           </Suspense>
 
           {/* ── Footer ── */}
@@ -353,7 +350,7 @@ const Connect = () => {
                 className="w-10 h-px"
                 style={{
                   background:
-                    "linear-gradient(90deg, transparent, hsl(42 37% 57% / 0.18), transparent)",
+                    "linear-gradient(90deg, transparent, hsl(42 37% 57% / 0.3), transparent)",
                 }}
               />
               <a
@@ -376,7 +373,7 @@ const Connect = () => {
                   fontSize: "8px",
                   letterSpacing: "0.25em",
                   textTransform: "uppercase",
-                  color: "hsl(0 0% 100% / 0.5)",
+                  color: "hsl(233 50% 9% / 0.4)",
                 }}
               >
                 Brokered by eXp Realty

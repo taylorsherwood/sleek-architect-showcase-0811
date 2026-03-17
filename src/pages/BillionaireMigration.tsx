@@ -71,7 +71,7 @@ const BillionaireMigration = () => {
             <h1 className="text-3xl md:text-6xl lg:text-7xl font-display font-light text-white mb-4 md:mb-6 leading-[1.08]">
               Why Billionaires Are Moving to Austin
             </h1>
-            <p className="text-lg md:text-xl text-white/80 leading-relaxed max-w-[620px] font-light mb-10">
+            <p className="text-base md:text-xl text-white/80 leading-relaxed max-w-[620px] font-light mb-6 md:mb-10">
               From Silicon Valley founders to global investors, Austin has become a primary
               destination for capital, talent, and long-term real estate investment.
             </p>

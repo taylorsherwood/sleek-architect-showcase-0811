@@ -23,145 +23,163 @@ interface Listing {
 const listings: Listing[] = [
   {
     id: "1",
-    image: communityLakeAustin,
-    price: "$8,750,000",
-    address: "Lake Austin Waterfront Estate",
-    neighborhood: "Lake Austin",
-    beds: 6,
-    baths: 7,
-    sqft: "8,240",
-    link: "/communities/lake-austin",
+    image: communityTarrytown,
+    price: "$2,650,000",
+    address: "Tarrytown Classic",
+    neighborhood: "Tarrytown",
+    beds: 3,
+    baths: 3,
+    sqft: "—",
+    link: "https://taylorsherwood.realscout.com/agent/ls/169041083",
   },
   {
     id: "2",
-    image: communityWestlake,
-    price: "$4,295,000",
-    address: "Hilltop Modern with Panoramic Views",
-    neighborhood: "Westlake Hills",
+    image: communityTravisHeights,
+    price: "$2,395,000",
+    address: "East Austin Modern",
+    neighborhood: "East Austin",
     beds: 5,
-    baths: 6,
-    sqft: "6,120",
-    link: "/communities/westlake-hills",
+    baths: 5,
+    sqft: "—",
+    link: "https://taylorsherwood.realscout.com/agent/ls/169820156",
   },
   {
     id: "3",
-    image: communityTarrytown,
+    image: communityBartonCreek,
     price: "$3,150,000",
-    address: "Architecturally Distinct on Pecos",
-    neighborhood: "Tarrytown",
+    address: "Barton Creek Estate",
+    neighborhood: "Barton Creek",
     beds: 4,
-    baths: 4,
-    sqft: "4,380",
-    link: "/communities/tarrytown",
+    baths: 5,
+    sqft: "—",
+    link: "https://taylorsherwood.realscout.com/agent/ls/163332268",
   },
   {
     id: "4",
-    image: communityBartonCreek,
-    price: "$5,900,000",
-    address: "Golf Estate on Fazio Canyons",
-    neighborhood: "Barton Creek",
-    beds: 5,
-    baths: 6,
-    sqft: "7,650",
-    sold: true,
-    link: "/communities/barton-creek",
+    image: communityWestlake,
+    price: "$2,695,000",
+    address: "Westlake Home",
+    neighborhood: "Westlake",
+    beds: 4,
+    baths: 4,
+    sqft: "—",
+    link: "https://taylorsherwood.realscout.com/agent/ls/154226813",
   },
   {
     id: "5",
-    image: communityRollingwood,
-    price: "$2,495,000",
-    address: "New Construction near Zilker",
-    neighborhood: "Rollingwood",
-    beds: 4,
-    baths: 5,
-    sqft: "4,100",
-    link: "/communities/rollingwood",
+    image: communityLakeAustin,
+    price: "$6,900,000",
+    address: "Lake Austin Waterfront",
+    neighborhood: "Lake Austin",
+    beds: 5,
+    baths: 6,
+    sqft: "—",
+    link: "https://taylorsherwood.realscout.com/agent/ls/161251939",
   },
   {
     id: "6",
-    image: communitySpanishOaks,
-    price: "$6,200,000",
-    address: "Hill Country Estate on 3+ Acres",
-    neighborhood: "Spanish Oaks",
-    beds: 5,
-    baths: 7,
-    sqft: "8,900",
-    link: "/communities/spanish-oaks",
+    image: communityRollingwood,
+    price: "$3,185,000",
+    address: "New Construction Modern",
+    neighborhood: "Northwest Hills",
+    beds: 4,
+    baths: 5,
+    sqft: "—",
+    link: "https://taylorsherwood.realscout.com/agent/ls/169226605",
   },
   {
     id: "7",
-    image: communityTravisHeights,
-    price: "$1,895,000",
-    address: "Skyline Views on Live Oak",
-    neighborhood: "Travis Heights",
-    beds: 3,
-    baths: 3,
-    sqft: "2,850",
-    link: "/communities/travis-heights",
+    image: communitySpanishOaks,
+    price: "$2,850,000",
+    address: "Recently Sold",
+    neighborhood: "Westlake",
+    beds: 4,
+    baths: 4,
+    sqft: "—",
+    sold: true,
+    link: "https://taylorsherwood.realscout.com/agent/ls/160106167",
   },
 ];
 
-const ListingCard = ({ listing, featured = false }: { listing: Listing; featured?: boolean }) => (
-  <Link to={listing.link} className="group block relative">
-    <div className={`relative overflow-hidden ${featured ? "aspect-[4/3]" : "aspect-[4/3]"}`}>
-      <img
-        src={listing.image}
-        alt={`${listing.address} — ${listing.neighborhood}, Austin TX`}
-        className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
-        loading="lazy"
-      />
-      {listing.sold && (
-        <div className="absolute top-5 left-5">
-          <span
-            className="bg-foreground/80 text-background backdrop-blur-sm px-4 py-1.5 font-semibold"
+const ListingCard = ({ listing, featured = false }: { listing: Listing; featured?: boolean }) => {
+  const isExternal = listing.link.startsWith("http");
+
+  const content = (
+    <>
+      <div className={`relative overflow-hidden ${featured ? "aspect-[4/3]" : "aspect-[4/3]"}`}>
+        <img
+          src={listing.image}
+          alt={`${listing.address} — ${listing.neighborhood}, Austin TX`}
+          className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+          loading="lazy"
+        />
+        {listing.sold && (
+          <div className="absolute top-5 left-5">
+            <span
+              className="bg-foreground/80 text-background backdrop-blur-sm px-4 py-1.5 font-semibold"
+              style={{
+                fontSize: "0.5rem",
+                letterSpacing: "0.25em",
+                textTransform: "uppercase",
+                fontFamily: '"Raleway", sans-serif',
+              }}
+            >
+              SOLD
+            </span>
+          </div>
+        )}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+      </div>
+      <div className="pt-5 pb-2">
+        <p className="text-xl md:text-2xl font-display font-light text-foreground mb-1.5">
+          {listing.price}
+        </p>
+        <p className="text-[13px] text-muted-foreground font-light leading-relaxed mb-2">
+          {listing.address}
+        </p>
+        <div className="flex items-center gap-3">
+          <p
+            className="text-muted-foreground/60"
             style={{
-              fontSize: "0.5rem",
-              letterSpacing: "0.25em",
+              fontSize: "0.55rem",
+              letterSpacing: "0.2em",
               textTransform: "uppercase",
               fontFamily: '"Raleway", sans-serif',
             }}
           >
-            SOLD
-          </span>
+            {listing.beds} BD &nbsp;·&nbsp; {listing.baths} BA
+          </p>
+          <span className="text-muted-foreground/30">|</span>
+          <p
+            className="text-gold/70"
+            style={{
+              fontSize: "0.55rem",
+              letterSpacing: "0.2em",
+              textTransform: "uppercase",
+              fontFamily: '"Raleway", sans-serif',
+            }}
+          >
+            {listing.neighborhood}
+          </p>
         </div>
-      )}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-    </div>
-    <div className="pt-5 pb-2">
-      <p className="text-xl md:text-2xl font-display font-light text-foreground mb-1.5">
-        {listing.price}
-      </p>
-      <p className="text-[13px] text-muted-foreground font-light leading-relaxed mb-2">
-        {listing.address}
-      </p>
-      <div className="flex items-center gap-3">
-        <p
-          className="text-muted-foreground/60"
-          style={{
-            fontSize: "0.55rem",
-            letterSpacing: "0.2em",
-            textTransform: "uppercase",
-            fontFamily: '"Raleway", sans-serif',
-          }}
-        >
-          {listing.beds} BD &nbsp;·&nbsp; {listing.baths} BA &nbsp;·&nbsp; {listing.sqft} SF
-        </p>
-        <span className="text-muted-foreground/30">|</span>
-        <p
-          className="text-gold/70"
-          style={{
-            fontSize: "0.55rem",
-            letterSpacing: "0.2em",
-            textTransform: "uppercase",
-            fontFamily: '"Raleway", sans-serif',
-          }}
-        >
-          {listing.neighborhood}
-        </p>
       </div>
-    </div>
-  </Link>
-);
+    </>
+  );
+
+  if (isExternal) {
+    return (
+      <a href={listing.link} target="_blank" rel="noopener noreferrer" className="group block relative">
+        {content}
+      </a>
+    );
+  }
+
+  return (
+    <Link to={listing.link} className="group block relative">
+      {content}
+    </Link>
+  );
+};
 
 const FeaturedLuxuryListings = () => {
   return (

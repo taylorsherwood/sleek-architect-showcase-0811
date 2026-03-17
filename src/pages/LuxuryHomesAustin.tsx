@@ -125,7 +125,7 @@ const LuxuryHomesAustin = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
                   to="/connect"
-                  className="inline-block bg-primary text-primary-foreground hover:bg-primary/90 px-10 py-4 transition-colors duration-300"
+                  className="inline-block bg-primary text-primary-foreground hover:bg-gold hover:text-white px-10 py-4 transition-colors duration-300"
                   style={{ fontSize: "0.6rem", letterSpacing: "0.25em", textTransform: "uppercase", fontFamily: '"Raleway", sans-serif' }}>
                   
                   SCHEDULE A CONSULTATION

@@ -35,7 +35,7 @@ const LuxuryHomesAustin = () => {
             <p
               className="text-gold/50 mb-5 font-bold"
               style={{ fontSize: "0.55rem", letterSpacing: "0.35em", textTransform: "uppercase", fontFamily: '"Raleway", sans-serif' }}>
-              AUSTIN LUXURY REAL ESTATE
+              CURATED AUSTIN OPPORTUNITIES
             </p>
             <h1 className="text-5xl md:text-7xl font-display font-light text-architectural mb-6">
               Luxury Homes for Sale in<br />Austin, Texas

@@ -250,6 +250,9 @@ const Connect = () => {
             </div>
           </div>
 
+          {/* Spacer between Land & Investment and Property Valuation */}
+          <div className="h-4" />
+
           <nav className="flex flex-col gap-2.5 px-8" aria-label="Quick links">
             {links.map((link, i) => (
               <ScrollReveal key={link.label} delay={i * 100}>

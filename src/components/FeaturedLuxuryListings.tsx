@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 import communityBartonCreek from "@/assets/community-barton-creek.jpg";
 import communityWestlake from "@/assets/community-westlake-hills.avif";
 import communityLakeAustin from "@/assets/community-lake-austin.jpg";
-import communityTarrytown from "@/assets/community-tarrytown.jpg";
 import communityRollingwood from "@/assets/community-rollingwood.jpg";
 import communityTravisHeights from "@/assets/community-travis-heights.jpg";
 import communitySpanishOaks from "@/assets/community-spanish-oaks.jpg";
+import listingTarrytown from "@/assets/listing-tarrytown-2621-exposition.jpg";
 
 interface Listing {
   id: string;
@@ -23,9 +23,9 @@ interface Listing {
 const listings: Listing[] = [
   {
     id: "1",
-    image: communityTarrytown,
-    price: "$2,650,000",
-    address: "Tarrytown Classic",
+    image: listingTarrytown,
+    price: "$2,500,000",
+    address: "2621 Exposition Blvd, Austin, TX 78703",
     neighborhood: "Tarrytown",
     beds: 3,
     baths: 3,

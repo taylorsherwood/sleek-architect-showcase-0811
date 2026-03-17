@@ -5,6 +5,7 @@ import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { realEstateAgentSchema } from "@/components/SchemaMarkup";
 import AuthorBio from "@/components/AuthorBio";
 import FeaturedLuxuryListings from "@/components/FeaturedLuxuryListings";
+import RealScoutSearch from "@/components/RealScoutSearch";
 import communityBartonCreek from "@/assets/community-barton-creek.jpg";
 import communityWestlake from "@/assets/community-westlake-hills.avif";
 import communityLakeAustin from "@/assets/community-lake-austin.jpg";

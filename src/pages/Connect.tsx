@@ -257,41 +257,29 @@ const Connect = () => {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group flex items-center justify-center w-full h-12 rounded-full transition-all duration-200 hover:-translate-y-0.5"
+                  className="flex items-center justify-center w-full h-12 rounded-full transition-all duration-200 hover:-translate-y-0.5"
                   style={{
-                    background: link.featured
-                      ? "hsl(0 0% 100% / 0.65)"
-                      : "transparent",
-                    border: link.featured
-                      ? "1px solid hsl(42 37% 57% / 0.35)"
-                      : "1px solid hsl(233 50% 9% / 0.06)",
-                    boxShadow: link.featured
-                      ? "0 2px 10px hsl(0 0% 0% / 0.03)"
-                      : "none",
+                    background: "hsl(0 0% 100% / 0.55)",
+                    border: "1px solid hsl(42 37% 57% / 0.2)",
+                    boxShadow: "0 2px 8px hsl(0 0% 0% / 0.03)",
                   }}
                   onMouseEnter={(e) => {
                     const el = e.currentTarget;
-                    el.style.borderColor = "hsl(42 37% 57% / 0.5)";
+                    el.style.borderColor = "hsl(42 37% 57% / 0.45)";
                     el.style.boxShadow = "0 4px 16px hsl(0 0% 0% / 0.05)";
-                    if (!link.featured) el.style.background = "hsl(0 0% 100% / 0.3)";
                   }}
                   onMouseLeave={(e) => {
                     const el = e.currentTarget;
-                    el.style.borderColor = link.featured
-                      ? "hsl(42 37% 57% / 0.35)"
-                      : "hsl(233 50% 9% / 0.06)";
-                    el.style.boxShadow = link.featured
-                      ? "0 2px 10px hsl(0 0% 0% / 0.03)"
-                      : "none";
-                    if (!link.featured) el.style.background = "transparent";
+                    el.style.borderColor = "hsl(42 37% 57% / 0.2)";
+                    el.style.boxShadow = "0 2px 8px hsl(0 0% 0% / 0.03)";
                   }}
                 >
                   <span
                     className="font-sans font-medium uppercase text-center transition-colors duration-200"
                     style={{
-                      fontSize: link.featured ? "11px" : "10.5px",
-                      letterSpacing: "0.13em",
-                      color: link.featured ? "hsl(42 37% 45%)" : "hsl(233 50% 9% / 0.45)",
+                      fontSize: "10.5px",
+                      letterSpacing: "0.12em",
+                      color: "hsl(233 50% 9% / 0.65)",
                     }}
                   >
                     {link.label}

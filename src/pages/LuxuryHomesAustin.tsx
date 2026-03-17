@@ -35,10 +35,10 @@ const LuxuryHomesAustin = () => {
             <p
               className="text-gold/50 mb-5 font-bold"
               style={{ fontSize: "0.55rem", letterSpacing: "0.35em", textTransform: "uppercase", fontFamily: '"Raleway", sans-serif' }}>
-              CURATED AUSTIN OPPORTUNITIES
+              PRIVATE + CURATED OPPORTUNITIES
             </p>
             <h1 className="text-5xl md:text-7xl font-display font-light text-architectural mb-6">
-              Luxury Homes for Sale in<br />Austin, Texas
+              Curated Austin Opportunities
             </h1>
             <p className="text-lg text-muted-foreground/80 leading-relaxed max-w-2xl font-light">
               Not all opportunities are created equal. Each month, we curate a small selection of homes, development sites, and investment properties based on pricing, location, and long-term upside. This is not a feed — it's a filter.

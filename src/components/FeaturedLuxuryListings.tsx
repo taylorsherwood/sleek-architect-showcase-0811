@@ -3,7 +3,7 @@ import listingTarrytown from "@/assets/listing-tarrytown-2203-greenlee.jpg";
 import listingEastAustin from "@/assets/listing-east-austin-1007-e-8th.jpg";
 import listingBartonCreek from "@/assets/listing-barton-creek-4416-amarra.jpg";
 import listingWestlake from "@/assets/listing-westlake-2210-westlake-dr.jpg";
-import listingLakeAustin from "@/assets/listing-lake-austin-2503-westlake-dr.jpg";
+import listingLakeAustin from "@/assets/listing-lake-austin-2503-westlake-301.jpg";
 import listingLostCreek from "@/assets/listing-lost-creek-2319-cypress-point.jpg";
 import listingSold from "@/assets/listing-westlake-3629-peregrine.jpg";
 
@@ -22,9 +22,9 @@ const listings: Listing[] = [
     id: "1",
     image: listingLakeAustin,
     price: "$9,990,000",
-    address: "2503 Westlake Dr 201, Austin, TX 78746",
+    address: "2503 Westlake Dr 301, Austin, TX 78746",
     neighborhood: "Lake Austin",
-    link: "https://taylorsherwood.realscout.com/agent/ls/161251939",
+    link: "https://taylorsherwood.realscout.com/agent/ls/168562024",
   },
   {
     id: "2",

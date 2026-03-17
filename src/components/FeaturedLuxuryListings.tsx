@@ -201,7 +201,7 @@ const FeaturedLuxuryListings = () => {
 
           {/* Off-market CTA — subtle, editorial */}
           <div className="mt-16 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
-            <p className="text-muted-foreground/60 text-[13px] font-light leading-relaxed max-w-lg">
+            <p className="text-muted-foreground/60 text-[13px] font-light leading-relaxed max-w-2xl">
               Looking for something more discreet? We also advise clients on private and off-market
               opportunities across Austin's luxury market.
             </p>

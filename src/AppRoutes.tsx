@@ -40,6 +40,7 @@ const connectImport = () => import("@/pages/Connect");
 const Connect = lazy(connectImport);
 const PrivateOpportunitiesPage = lazy(() => import("@/pages/PrivateOpportunitiesPage"));
 const LuxuryHomesAustin = lazy(() => import("@/pages/LuxuryHomesAustin"));
+const BillionaireMigration = lazy(() => import("@/pages/BillionaireMigration"));
 const NotFound = lazy(() => import("@/pages/NotFound"));
 
 // Prefetch /connect chunk after homepage loads

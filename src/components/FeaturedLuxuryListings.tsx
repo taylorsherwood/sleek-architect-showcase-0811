@@ -101,67 +101,85 @@ const listings: Listing[] = [
   },
 ];
 
-const ListingCard = ({ listing, featured = false }: { listing: Listing; featured?: boolean }) => (
-  <Link to={listing.link} className="group block relative">
-    <div className={`relative overflow-hidden ${featured ? "aspect-[4/3]" : "aspect-[4/3]"}`}>
-      <img
-        src={listing.image}
-        alt={`${listing.address} — ${listing.neighborhood}, Austin TX`}
-        className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
-        loading="lazy"
-      />
-      {listing.sold && (
-        <div className="absolute top-5 left-5">
-          <span
-            className="bg-foreground/80 text-background backdrop-blur-sm px-4 py-1.5 font-semibold"
+const ListingCard = ({ listing, featured = false }: { listing: Listing; featured?: boolean }) => {
+  const isExternal = listing.link.startsWith("http");
+
+  const content = (
+    <>
+      <div className={`relative overflow-hidden ${featured ? "aspect-[4/3]" : "aspect-[4/3]"}`}>
+        <img
+          src={listing.image}
+          alt={`${listing.address} — ${listing.neighborhood}, Austin TX`}
+          className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+          loading="lazy"
+        />
+        {listing.sold && (
+          <div className="absolute top-5 left-5">
+            <span
+              className="bg-foreground/80 text-background backdrop-blur-sm px-4 py-1.5 font-semibold"
+              style={{
+                fontSize: "0.5rem",
+                letterSpacing: "0.25em",
+                textTransform: "uppercase",
+                fontFamily: '"Raleway", sans-serif',
+              }}
+            >
+              SOLD
+            </span>
+          </div>
+        )}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+      </div>
+      <div className="pt-5 pb-2">
+        <p className="text-xl md:text-2xl font-display font-light text-foreground mb-1.5">
+          {listing.price}
+        </p>
+        <p className="text-[13px] text-muted-foreground font-light leading-relaxed mb-2">
+          {listing.address}
+        </p>
+        <div className="flex items-center gap-3">
+          <p
+            className="text-muted-foreground/60"
             style={{
-              fontSize: "0.5rem",
-              letterSpacing: "0.25em",
+              fontSize: "0.55rem",
+              letterSpacing: "0.2em",
               textTransform: "uppercase",
               fontFamily: '"Raleway", sans-serif',
             }}
           >
-            SOLD
-          </span>
+            {listing.beds} BD &nbsp;·&nbsp; {listing.baths} BA
+          </p>
+          <span className="text-muted-foreground/30">|</span>
+          <p
+            className="text-gold/70"
+            style={{
+              fontSize: "0.55rem",
+              letterSpacing: "0.2em",
+              textTransform: "uppercase",
+              fontFamily: '"Raleway", sans-serif',
+            }}
+          >
+            {listing.neighborhood}
+          </p>
         </div>
-      )}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-    </div>
-    <div className="pt-5 pb-2">
-      <p className="text-xl md:text-2xl font-display font-light text-foreground mb-1.5">
-        {listing.price}
-      </p>
-      <p className="text-[13px] text-muted-foreground font-light leading-relaxed mb-2">
-        {listing.address}
-      </p>
-      <div className="flex items-center gap-3">
-        <p
-          className="text-muted-foreground/60"
-          style={{
-            fontSize: "0.55rem",
-            letterSpacing: "0.2em",
-            textTransform: "uppercase",
-            fontFamily: '"Raleway", sans-serif',
-          }}
-        >
-          {listing.beds} BD &nbsp;·&nbsp; {listing.baths} BA &nbsp;·&nbsp; {listing.sqft} SF
-        </p>
-        <span className="text-muted-foreground/30">|</span>
-        <p
-          className="text-gold/70"
-          style={{
-            fontSize: "0.55rem",
-            letterSpacing: "0.2em",
-            textTransform: "uppercase",
-            fontFamily: '"Raleway", sans-serif',
-          }}
-        >
-          {listing.neighborhood}
-        </p>
       </div>
-    </div>
-  </Link>
-);
+    </>
+  );
+
+  if (isExternal) {
+    return (
+      <a href={listing.link} target="_blank" rel="noopener noreferrer" className="group block relative">
+        {content}
+      </a>
+    );
+  }
+
+  return (
+    <Link to={listing.link} className="group block relative">
+      {content}
+    </Link>
+  );
+};
 
 const FeaturedLuxuryListings = () => {
   return (

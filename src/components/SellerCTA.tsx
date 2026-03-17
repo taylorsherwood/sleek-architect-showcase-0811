@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const SellerCTA = () => {
   return (
-    <section className="py-24 bg-background">
+    <section className="pt-24 pb-12 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           <div className="grid md:grid-cols-2 gap-16 items-center">

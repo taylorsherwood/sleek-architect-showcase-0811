@@ -28,19 +28,18 @@ const LuxuryHomesAustin = () => {
       <Navigation />
 
       {/* Hero */}
-      <section className="pt-48 pb-16">
+      <section className="pt-48 pb-6">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
             <p
-              className="text-gold mb-5 font-semibold"
-              style={{ fontSize: "0.6rem", letterSpacing: "0.35em", textTransform: "uppercase", fontFamily: '"Raleway", sans-serif' }}>
-              
+              className="text-gold/50 mb-5 font-semibold"
+              style={{ fontSize: "0.55rem", letterSpacing: "0.35em", textTransform: "uppercase", fontFamily: '"Raleway", sans-serif' }}>
               AUSTIN LUXURY REAL ESTATE
             </p>
-            <h1 className="text-5xl md:text-7xl font-display font-light text-architectural mb-8">
+            <h1 className="text-5xl md:text-7xl font-display font-light text-architectural mb-6">
               Luxury Homes for Sale in<br />Austin, Texas
             </h1>
-            <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
+            <p className="text-lg text-muted-foreground/80 leading-relaxed max-w-2xl font-light">
               Browse Austin's premier luxury real estate including Westlake Hills, Barton Creek,
               Tarrytown, Rollingwood, and Lake Austin waterfront properties.
             </p>

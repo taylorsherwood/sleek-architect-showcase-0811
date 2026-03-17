@@ -1,10 +1,4 @@
 import { Link } from "react-router-dom";
-import communityBartonCreek from "@/assets/community-barton-creek.jpg";
-import communityWestlake from "@/assets/community-westlake-hills.avif";
-import communityLakeAustin from "@/assets/community-lake-austin.jpg";
-import communityRollingwood from "@/assets/community-rollingwood.jpg";
-import communityTravisHeights from "@/assets/community-travis-heights.jpg";
-import communitySpanishOaks from "@/assets/community-spanish-oaks.jpg";
 import listingTarrytown from "@/assets/listing-tarrytown-2621-exposition.jpg";
 import listingEastAustin from "@/assets/listing-east-austin-1007-e-8th.jpg";
 import listingBartonCreek from "@/assets/listing-barton-creek-4416-amarra.jpg";
@@ -19,9 +13,6 @@ interface Listing {
   price: string;
   address: string;
   neighborhood: string;
-  beds: number;
-  baths: number;
-  sqft: string;
   sold?: boolean;
   link: string;
 }
@@ -29,69 +20,51 @@ interface Listing {
 const listings: Listing[] = [
   {
     id: "1",
-    image: listingTarrytown,
-    price: "$2,500,000",
-    address: "2621 Exposition Blvd, Austin, TX 78703",
-    neighborhood: "Tarrytown",
-    beds: 3,
-    baths: 3,
-    sqft: "—",
-    link: "https://taylorsherwood.realscout.com/agent/ls/169041083",
-  },
-  {
-    id: "2",
-    image: listingEastAustin,
-    price: "$2,395,000",
-    address: "1007 E 8th St, Austin, TX 78702",
-    neighborhood: "East Austin",
-    beds: 5,
-    baths: 5,
-    sqft: "—",
-    link: "https://taylorsherwood.realscout.com/agent/ls/169820156",
-  },
-  {
-    id: "3",
     image: listingBartonCreek,
     price: "$8,750,000",
     address: "4416 Amarra Dr, Austin, TX 78735",
     neighborhood: "Barton Creek",
-    beds: 4,
-    baths: 5,
-    sqft: "—",
     link: "https://taylorsherwood.realscout.com/agent/ls/163332268",
   },
   {
-    id: "4",
-    image: listingWestlake,
-    price: "$1,599,000",
-    address: "2210 Westlake Dr A, Austin, TX 78746",
-    neighborhood: "Westlake",
-    beds: 4,
-    baths: 4,
-    sqft: "—",
-    link: "https://taylorsherwood.realscout.com/agent/ls/154226813",
-  },
-  {
-    id: "5",
+    id: "2",
     image: listingLakeAustin,
     price: "$9,990,000",
     address: "2503 Westlake Dr 201, Austin, TX 78746",
     neighborhood: "Lake Austin",
-    beds: 5,
-    baths: 6,
-    sqft: "—",
     link: "https://taylorsherwood.realscout.com/agent/ls/161251939",
   },
   {
-    id: "6",
+    id: "3",
     image: listingLostCreek,
     price: "$4,295,000",
     address: "2319 Cypress Point E, Austin, TX 78746",
     neighborhood: "Lost Creek",
-    beds: 4,
-    baths: 5,
-    sqft: "—",
     link: "https://taylorsherwood.realscout.com/agent/ls/169226605",
+  },
+  {
+    id: "4",
+    image: listingTarrytown,
+    price: "$2,500,000",
+    address: "2621 Exposition Blvd, Austin, TX 78703",
+    neighborhood: "Tarrytown",
+    link: "https://taylorsherwood.realscout.com/agent/ls/169041083",
+  },
+  {
+    id: "5",
+    image: listingEastAustin,
+    price: "$2,395,000",
+    address: "1007 E 8th St, Austin, TX 78702",
+    neighborhood: "East Austin",
+    link: "https://taylorsherwood.realscout.com/agent/ls/169820156",
+  },
+  {
+    id: "6",
+    image: listingWestlake,
+    price: "$1,599,000",
+    address: "2210 Westlake Dr A, Austin, TX 78746",
+    neighborhood: "Westlake",
+    link: "https://taylorsherwood.realscout.com/agent/ls/154226813",
   },
   {
     id: "7",
@@ -99,136 +72,144 @@ const listings: Listing[] = [
     price: "$3,250,000",
     address: "3629 Peregrine Falcon Dr, Austin, TX 78746",
     neighborhood: "Westlake",
-    beds: 4,
-    baths: 4,
-    sqft: "—",
     sold: true,
     link: "https://taylorsherwood.realscout.com/agent/ls/160106167",
   },
 ];
 
-const ListingCard = ({ listing, featured = false }: { listing: Listing; featured?: boolean }) => {
+const labelStyle = {
+  fontSize: "0.5rem" as const,
+  letterSpacing: "0.2em",
+  textTransform: "uppercase" as const,
+  fontFamily: '"Raleway", sans-serif',
+};
+
+const ListingCardOverlay = ({
+  listing,
+  aspect = "aspect-[4/3]",
+  className = "",
+}: {
+  listing: Listing;
+  aspect?: string;
+  className?: string;
+}) => {
   const isExternal = listing.link.startsWith("http");
 
-  const content = (
-    <>
-      <div className={`relative overflow-hidden ${featured ? "aspect-[4/3]" : "aspect-[4/3]"}`}>
-        <img
-          src={listing.image}
-          alt={`${listing.address} — ${listing.neighborhood}, Austin TX`}
-          className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
-          loading="lazy"
-        />
-        {listing.sold && (
-          <div className="absolute top-5 left-5">
-            <span
-              className="bg-foreground/80 text-background backdrop-blur-sm px-4 py-1.5 font-semibold"
-              style={{
-                fontSize: "0.5rem",
-                letterSpacing: "0.25em",
-                textTransform: "uppercase",
-                fontFamily: '"Raleway", sans-serif',
-              }}
-            >
-              SOLD
-            </span>
-          </div>
-        )}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-      </div>
-      <div className="pt-5 pb-2">
-        <p className="text-xl md:text-2xl font-display font-light text-foreground mb-1.5">
+  const inner = (
+    <div className={`relative overflow-hidden rounded-md ${aspect} ${className}`}>
+      <img
+        src={listing.image}
+        alt={`${listing.address} — ${listing.neighborhood}, Austin TX`}
+        className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+        loading="lazy"
+      />
+      {/* Persistent gradient */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
+
+      {/* Sold badge */}
+      {listing.sold && (
+        <div className="absolute top-4 left-4">
+          <span
+            className="bg-background/90 text-foreground backdrop-blur-sm px-3 py-1 font-semibold"
+            style={{ ...labelStyle, fontSize: "0.45rem" }}
+          >
+            SOLD
+          </span>
+        </div>
+      )}
+
+      {/* Bottom overlay text */}
+      <div className="absolute bottom-0 left-0 right-0 p-5 md:p-6">
+        <p className="text-white font-display font-light text-lg md:text-2xl mb-1">
           {listing.price}
         </p>
-        <p className="text-[13px] text-muted-foreground font-light leading-relaxed mb-2">
-          {listing.address}
-        </p>
         <p
-            className="text-gold/70"
-            style={{
-              fontSize: "0.55rem",
-              letterSpacing: "0.2em",
-              textTransform: "uppercase",
-              fontFamily: '"Raleway", sans-serif',
-            }}
-          >
-            {listing.neighborhood}
-          </p>
+          className="text-white/60"
+          style={labelStyle}
+        >
+          {listing.neighborhood}
+        </p>
       </div>
-    </>
+    </div>
   );
 
   if (isExternal) {
     return (
-      <a href={listing.link} target="_blank" rel="noopener noreferrer" className="group block relative">
-        {content}
+      <a href={listing.link} target="_blank" rel="noopener noreferrer" className="group block">
+        {inner}
       </a>
     );
   }
 
   return (
-    <Link to={listing.link} className="group block relative">
-      {content}
+    <Link to={listing.link} className="group block">
+      {inner}
     </Link>
   );
 };
 
 const FeaturedLuxuryListings = () => {
   return (
-    <section className="pt-8 pb-28">
+    <section className="pb-24">
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
-          {/* Section header */}
-          <div className="mb-14">
-            <p
-              className="text-gold mb-4 font-semibold"
-              style={{
-                fontSize: "0.55rem",
-                letterSpacing: "0.35em",
-                textTransform: "uppercase",
-                fontFamily: '"Raleway", sans-serif',
-              }}
-            >
-              CURATED THIS WEEK
-            </p>
-            <h2 className="text-3xl md:text-5xl font-display font-light text-architectural mb-4">
-              Featured Austin Luxury Homes
-            </h2>
-            <p className="text-muted-foreground text-[15px] font-light leading-relaxed max-w-xl">
-              Selected weekly based on architecture, location, and overall quality across Austin's
-              premier neighborhoods.
-            </p>
+          {/* Subtle transition line */}
+          <p
+            className="text-muted-foreground/40 mb-10 font-semibold"
+            style={{
+              fontSize: "0.5rem",
+              letterSpacing: "0.35em",
+              textTransform: "uppercase",
+              fontFamily: '"Raleway", sans-serif',
+            }}
+          >
+            Curated this week
+          </p>
+
+          {/* PRIMARY ROW: Hero (70%) + 2 stacked (30%) */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 mb-4">
+            {/* Hero listing */}
+            <div className="lg:col-span-8">
+              <ListingCardOverlay
+                listing={listings[0]}
+                aspect="aspect-[4/3] lg:aspect-[16/10]"
+              />
+            </div>
+
+            {/* Two stacked */}
+            <div className="lg:col-span-4 grid grid-cols-2 lg:grid-cols-1 gap-4">
+              <ListingCardOverlay
+                listing={listings[1]}
+                aspect="aspect-[4/3] lg:aspect-auto lg:h-full"
+                className="lg:flex-1"
+              />
+              <ListingCardOverlay
+                listing={listings[2]}
+                aspect="aspect-[4/3] lg:aspect-auto lg:h-full"
+                className="lg:flex-1"
+              />
+            </div>
           </div>
 
-          {/* Grid: 2 large + 1 medium top row, then 2+2 bottom */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-14 mb-14">
-            {/* First two large */}
-            <ListingCard listing={listings[0]} featured />
-            <ListingCard listing={listings[1]} featured />
+          {/* SECOND ROW: 4 listings */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
+            <ListingCardOverlay listing={listings[3]} aspect="aspect-[3/4] sm:aspect-[4/3]" />
+            <ListingCardOverlay listing={listings[4]} aspect="aspect-[3/4] sm:aspect-[4/3]" />
+            <ListingCardOverlay listing={listings[5]} aspect="aspect-[3/4] sm:aspect-[4/3]" />
+            <ListingCardOverlay listing={listings[6]} aspect="aspect-[3/4] sm:aspect-[4/3]" />
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-14 mb-14">
-            <ListingCard listing={listings[2]} />
-            <ListingCard listing={listings[3]} />
-            <ListingCard listing={listings[4]} />
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-14">
-            <ListingCard listing={listings[5]} />
-            <ListingCard listing={listings[6]} />
-          </div>
-
-          {/* Off-market CTA */}
-          <div className="mt-20 pt-10 border-t border-border/30 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
-            <p className="text-muted-foreground text-[14px] font-light leading-relaxed max-w-lg">
+          {/* Off-market CTA — subtle, editorial */}
+          <div className="mt-16 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+            <p className="text-muted-foreground/60 text-[13px] font-light leading-relaxed max-w-lg">
               Looking for something more discreet? We also advise clients on private and off-market
               opportunities across Austin's luxury market.
             </p>
             <Link
               to="/off-market-luxury-homes-austin"
-              className="inline-block shrink-0 border border-foreground/20 text-foreground hover:bg-foreground hover:text-background px-7 py-3 rounded-full transition-all duration-300"
+              className="inline-block shrink-0 border border-foreground/15 text-foreground/70 hover:text-foreground hover:border-foreground/40 px-7 py-3 rounded-full transition-all duration-300"
               style={{
-                fontSize: "0.55rem",
+                fontSize: "0.5rem",
                 letterSpacing: "0.25em",
                 textTransform: "uppercase",
                 fontFamily: '"Raleway", sans-serif',

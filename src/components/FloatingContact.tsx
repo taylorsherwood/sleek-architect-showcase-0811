@@ -13,6 +13,7 @@ const FloatingContact = () => {
   const [visible, setVisible] = useState(false);
   const location = useLocation();
   const isHomepage = location.pathname === "/";
+  const isHiddenRoute = location.pathname === "/why-billionaires-are-moving-to-austin" || location.pathname === "/connect";
 
   // The floating widget only appears after the advisory bar has been dismissed
   const [advisoryDismissed, setAdvisoryDismissed] = useState(

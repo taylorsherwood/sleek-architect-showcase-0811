@@ -19,7 +19,7 @@ const formSchema = z.object({
   email: z.string().trim().email("Please enter a valid email").max(255)
 });
 
-const HIDDEN_ROUTES = ["/contact", "/austin-multifamily-report-2026"];
+const HIDDEN_ROUTES = ["/contact", "/connect", "/austin-multifamily-report-2026"];
 
 const AdvisoryBar = () => {
   const [visible, setVisible] = useState(false);

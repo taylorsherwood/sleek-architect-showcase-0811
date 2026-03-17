@@ -11,7 +11,7 @@ import { useHeroScroll } from "@/hooks/useHeroScroll";
 const links = [
   { label: "Complimentary Property Valuation", href: "https://www.echelonpropertygroup.com/sell" },
   { label: "Blogs and Press Releases", href: "https://www.echelonpropertygroup.com/blog" },
-  { label: "Work With Taylor", href: "https://www.echelonpropertygroup.com/contact" },
+  { label: "Work With Taylor", href: "https://www.echelonpropertygroup.com/contact", gold: true },
   { label: "Information About Brokerage Services", href: "https://www.dropbox.com/scl/fi/ism1gkeqt0bol9srh3b0a/IABS-1-2.pdf?rlkey=l05zn9bqqmg8e1ru4qjzsnd1o&dl=0", transparent: true },
 ];
 
@@ -263,7 +263,7 @@ const Connect = () => {
                   className="flex items-center justify-center w-full h-[52px] rounded-full transition-all duration-200 hover:-translate-y-0.5"
                   style={{
                     background: (link as any).transparent ? "transparent" : "hsl(0 0% 100% / 0.55)",
-                    border: (link as any).transparent ? "1px solid hsl(233 50% 9% / 0.06)" : "1px solid hsl(42 37% 57% / 0.2)",
+                    border: (link as any).transparent ? "1px solid hsl(233 50% 9% / 0.06)" : (link as any).gold ? "1.5px solid hsl(42 37% 57% / 0.6)" : "1px solid hsl(42 37% 57% / 0.2)",
                     boxShadow: (link as any).transparent ? "none" : "0 2px 8px hsl(0 0% 0% / 0.03)",
                   }}
                   onMouseEnter={(e) => {
@@ -282,7 +282,7 @@ const Connect = () => {
                     style={{
                       fontSize: "11px",
                       letterSpacing: "0.12em",
-                      color: "hsl(233 50% 9% / 0.65)",
+                      color: (link as any).gold ? "#baa26a" : "hsl(233 50% 9% / 0.65)",
                     }}
                   >
                     {link.label}

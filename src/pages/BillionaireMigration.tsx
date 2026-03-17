@@ -51,7 +51,7 @@ const BillionaireMigration = () => {
       <Navigation />
 
       {/* Hero */}
-      <section className="relative w-full h-[55vh] md:h-[70vh] overflow-hidden">
+      <section className="relative w-full h-[70vh] md:h-[70vh] overflow-hidden">
         <img
           src={lakeAustinHero}
           alt="Aerial view of Lake Austin waterfront estates and Hill Country"
@@ -63,15 +63,15 @@ const BillionaireMigration = () => {
             background: "linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.55) 100%)",
           }}
         />
-        <div className="relative h-full container mx-auto px-6 flex items-end pb-14 md:pb-20">
+        <div className="relative h-full container mx-auto px-6 flex items-end pb-10 md:pb-20 pt-28">
           <div className="max-w-[700px]">
-            <p className="text-white/50 mb-5 font-bold" style={labelStyle}>
+            <p className="text-white/50 mb-3 md:mb-5 font-bold" style={labelStyle}>
               AUSTIN LUXURY REAL ESTATE
             </p>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-light text-white mb-6 leading-[1.05]">
+            <h1 className="text-3xl md:text-6xl lg:text-7xl font-display font-light text-white mb-4 md:mb-6 leading-[1.08]">
               Why Billionaires Are Moving to Austin
             </h1>
-            <p className="text-lg md:text-xl text-white/80 leading-relaxed max-w-[620px] font-light mb-10">
+            <p className="text-base md:text-xl text-white/80 leading-relaxed max-w-[620px] font-light mb-6 md:mb-10">
               From Silicon Valley founders to global investors, Austin has become a primary
               destination for capital, talent, and long-term real estate investment.
             </p>

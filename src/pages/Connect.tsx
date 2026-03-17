@@ -11,8 +11,8 @@ import { useHeroScroll } from "@/hooks/useHeroScroll";
 const links = [
   { label: "Complimentary Property Valuation", href: "https://www.echelonpropertygroup.com/sell" },
   { label: "Blog", href: "https://www.echelonpropertygroup.com/blog" },
-  { label: "Work With Taylor", href: "https://www.echelonpropertygroup.com/contact", featured: true },
-  { label: "Information About Brokerage Services", href: "https://www.dropbox.com/scl/fi/ism1gkeqt0bol9srh3b0a/IABS-1-2.pdf?rlkey=l05zn9bqqmg8e1ru4qjzsnd1o&dl=0" },
+  { label: "Work With Taylor", href: "https://www.echelonpropertygroup.com/contact" },
+  { label: "Information About Brokerage Services", href: "https://www.dropbox.com/scl/fi/ism1gkeqt0bol9srh3b0a/IABS-1-2.pdf?rlkey=l05zn9bqqmg8e1ru4qjzsnd1o&dl=0", transparent: true },
 ];
 
 const socials = [
@@ -259,9 +259,9 @@ const Connect = () => {
                   rel="noopener noreferrer"
                   className="flex items-center justify-center w-full h-12 rounded-full transition-all duration-200 hover:-translate-y-0.5"
                   style={{
-                    background: "hsl(0 0% 100% / 0.55)",
-                    border: "1px solid hsl(42 37% 57% / 0.2)",
-                    boxShadow: "0 2px 8px hsl(0 0% 0% / 0.03)",
+                    background: (link as any).transparent ? "transparent" : "hsl(0 0% 100% / 0.55)",
+                    border: (link as any).transparent ? "1px solid hsl(233 50% 9% / 0.06)" : "1px solid hsl(42 37% 57% / 0.2)",
+                    boxShadow: (link as any).transparent ? "none" : "0 2px 8px hsl(0 0% 0% / 0.03)",
                   }}
                   onMouseEnter={(e) => {
                     const el = e.currentTarget;
@@ -311,11 +311,12 @@ const Connect = () => {
                 }}
               >
                 <span
-                  className="font-sans font-medium uppercase"
+                  className="font-sans uppercase"
                   style={{
                     fontSize: "11px",
                     letterSpacing: "0.18em",
                     color: "hsl(42 37% 65%)",
+                    fontWeight: 800,
                   }}
                 >
                   Schedule a Consultation

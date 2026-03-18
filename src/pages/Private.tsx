@@ -93,17 +93,17 @@ const Private = () => {
           <div className="absolute inset-0 bg-foreground/60" />
         </div>
         <div className="relative z-10 max-w-3xl mx-auto px-6 text-center pt-[calc(7.5rem+3vh)] md:pt-[calc(7.5rem+4vh)] pb-12 md:pb-16">
-          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-light text-primary-foreground leading-[1.18] mb-4 tracking-tight">
+          <h1 className="font-display text-[2.1rem] md:text-[3.4rem] lg:text-[4.1rem] font-light text-primary-foreground leading-[1.18] mb-4 tracking-tight">
             Private Home Sale Advisory for Austin Homeowners
           </h1>
           <p className="text-primary-foreground/90 text-lg md:text-xl font-sans font-light leading-relaxed max-w-2xl mx-auto mb-3">
             Confidential pricing guidance, curated buyer outreach, and discreet sale strategy for luxury, investment, and high-value properties.
           </p>
-          <div className="w-12 h-px bg-primary-foreground/20 mx-auto mb-3" />
-          <p className="text-primary-foreground/65 text-xs font-sans font-medium tracking-[0.3em] uppercase mb-6">
+          <div className="w-12 h-px bg-primary-foreground/25 mx-auto mb-3" />
+          <p className="text-primary-foreground/70 text-xs font-sans font-medium tracking-[0.3em] uppercase mb-6">
             Advising clients across Austin's luxury, investment, and development markets
           </p>
-          <div className="flex flex-col sm:flex-row gap-3 justify-center mb-5">
+          <div className="flex flex-col sm:flex-row gap-2.5 justify-center mb-5">
             <button
               onClick={scrollToForm}
               className="bg-gold hover:bg-[hsl(42,37%,50%)] text-primary-foreground px-12 py-4 text-sm tracking-[0.15em] uppercase font-sans font-medium transition-colors duration-300"
@@ -112,12 +112,12 @@ const Private = () => {
             </button>
             <Link
               to="/connect"
-              className="border border-primary-foreground/30 text-primary-foreground/80 hover:bg-primary-foreground/10 hover:border-primary-foreground/50 px-10 py-4 text-sm tracking-[0.15em] uppercase font-sans font-light transition-all duration-300 text-center"
+              className="border border-primary-foreground/40 text-primary-foreground/90 hover:bg-primary-foreground/10 hover:border-primary-foreground/60 px-10 py-4 text-sm tracking-[0.15em] uppercase font-sans font-light transition-all duration-300 text-center"
             >
               Schedule a Consultation
             </Link>
           </div>
-          <p className="text-primary-foreground/55 text-xs font-sans font-light tracking-[0.12em]">
+          <p className="text-primary-foreground/60 text-xs font-sans font-light tracking-[0.12em]">
             Trusted by Austin homeowners, investors, and developers seeking discretion.
           </p>
         </div>

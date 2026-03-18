@@ -42,7 +42,7 @@ const Navigation = () => {
         { href: "/listings", label: "RESIDENTIAL LISTINGS" },
         { href: "/luxury-homes-austin", label: "LUXURY HOMES" },
         { href: "/listings/commercial-investment-austin", label: "COMMERCIAL & INVESTMENT" },
-        { href: "/off-market-luxury-homes-austin", label: "EXCLUSIVE PRIVATE LISTINGS" },
+        { href: "/off-market-luxury-homes-austin", label: "PRIVATE LISTINGS" },
         { href: "/past-transactions", label: "PAST TRANSACTIONS" },
       ],
     },

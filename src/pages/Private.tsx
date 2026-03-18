@@ -179,32 +179,28 @@ const Private = () => {
 
       {/* WHAT YOU GET */}
       <section className="py-14 md:py-22 bg-background border-t border-border/40">
-        <div className="max-w-4xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-16 items-start">
-            <div>
-              <p className="text-gold text-xs tracking-[0.25em] uppercase font-sans font-semibold mb-6">
-                What You Receive
-              </p>
-              <h2 className="font-display text-3xl md:text-4xl font-light text-foreground leading-[1.18]">
-                What This Advisory Includes
-              </h2>
-            </div>
-            <ul className="space-y-10">
-              {[
-                "Confidential valuation and pricing strategy",
-                "Access to qualified off-market and institutional buyers",
-                "Strategic positioning to maximize leverage and discretion",
-                "Direct advisory throughout the entire decision process",
-              ].map((item) => (
-                <li key={item} className="flex items-start gap-4">
-                  <span className="w-1.5 h-1.5 rounded-full bg-gold mt-2.5 shrink-0" />
-                  <span className="text-foreground text-base font-sans font-light leading-relaxed tracking-wide">
-                    {item}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </div>
+        <div className="max-w-[680px] mx-auto px-6">
+          <p className="text-gold text-xs tracking-[0.2em] uppercase font-sans font-semibold mb-3">
+            What You Receive
+          </p>
+          <h2 className="font-display text-3xl md:text-4xl font-light text-foreground leading-[1.18] mb-6">
+            What This Advisory Includes
+          </h2>
+          <ul className="space-y-5">
+            {[
+              "Confidential valuation and pricing strategy",
+              "Access to qualified off-market and institutional buyers",
+              "Strategic positioning to maximize leverage and discretion",
+              "Direct advisory throughout the entire decision process",
+            ].map((item) => (
+              <li key={item} className="flex items-start gap-2.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-gold mt-2.5 shrink-0" />
+                <span className="text-foreground text-base font-sans font-light leading-[1.8] tracking-wide">
+                  {item}
+                </span>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 

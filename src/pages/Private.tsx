@@ -126,16 +126,14 @@ const Private = () => {
       {/* WHO THIS IS FOR */}
       <FadeIn>
         <section className="py-14 md:py-20 bg-background">
-          <div className="max-w-2xl mx-auto px-6">
-            <div className="text-center mb-10">
-              <p className="text-gold text-xs tracking-[0.25em] uppercase font-sans font-semibold mb-5">
-                Private Advisory Fit
-              </p>
-              <h2 className="font-display text-3xl md:text-4xl font-light text-foreground leading-[1.18]">
-                Who This Advisory Is For
-              </h2>
-            </div>
-            <ul className="space-y-7 max-w-lg mx-auto">
+          <div className="max-w-[680px] mx-auto px-6">
+            <p className="text-gold text-xs tracking-[0.2em] uppercase font-sans font-semibold mb-3">
+              Private Advisory Fit
+            </p>
+            <h2 className="font-display text-3xl md:text-4xl font-light text-foreground leading-[1.18] mb-5">
+              Who This Advisory Is For
+            </h2>
+            <ul className="space-y-3 mt-5">
               {[
                 "Luxury homeowners seeking discretion and privacy",
                 "Properties that may benefit from off-market positioning",
@@ -143,15 +141,15 @@ const Private = () => {
                 "Sellers who want to test pricing without going public",
                 "Development, land, or investment-oriented assets",
               ].map((item) => (
-                <li key={item} className="flex items-start gap-4">
-                  <span className="w-1 h-1 rounded-full bg-gold mt-3 shrink-0" />
+                <li key={item} className="flex items-start gap-2.5">
+                  <span className="w-1 h-1 rounded-full bg-gold mt-2.5 shrink-0" />
                   <span className="text-foreground text-base font-sans font-light leading-[1.8] tracking-wide">
                     {item}
                   </span>
                 </li>
               ))}
             </ul>
-            <p className="text-muted-foreground text-sm font-sans font-light tracking-wide text-center mt-10 max-w-md mx-auto leading-relaxed">
+            <p className="text-muted-foreground text-sm font-sans font-light tracking-wide mt-8 leading-relaxed">
               Not every property is a fit for a private sale strategy. We'll help you determine the right approach.
             </p>
           </div>
@@ -160,11 +158,11 @@ const Private = () => {
 
       {/* POSITIONING */}
       <section className="py-14 md:py-22 bg-warm-cream">
-        <div className="max-w-lg mx-auto px-6 text-center">
-          <p className="text-gold text-xs tracking-[0.25em] uppercase font-sans font-semibold mb-6">
+        <div className="max-w-[680px] mx-auto px-6">
+          <p className="text-gold text-xs tracking-[0.2em] uppercase font-sans font-semibold mb-3">
             Private Advisory
           </p>
-          <h2 className="font-display text-3xl md:text-5xl font-light text-foreground leading-[1.18] mb-10">
+          <h2 className="font-display text-3xl md:text-5xl font-light text-foreground leading-[1.18] mb-8">
             Not Every Property Should Be Sold Publicly
           </h2>
           <p className="text-muted-foreground text-lg leading-[1.9] mb-6">
@@ -181,32 +179,28 @@ const Private = () => {
 
       {/* WHAT YOU GET */}
       <section className="py-14 md:py-22 bg-background border-t border-border/40">
-        <div className="max-w-4xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-16 items-start">
-            <div>
-              <p className="text-gold text-xs tracking-[0.25em] uppercase font-sans font-semibold mb-6">
-                What You Receive
-              </p>
-              <h2 className="font-display text-3xl md:text-4xl font-light text-foreground leading-[1.18]">
-                What This Advisory Includes
-              </h2>
-            </div>
-            <ul className="space-y-10">
-              {[
-                "Confidential valuation and pricing strategy",
-                "Access to qualified off-market and institutional buyers",
-                "Strategic positioning to maximize leverage and discretion",
-                "Direct advisory throughout the entire decision process",
-              ].map((item) => (
-                <li key={item} className="flex items-start gap-4">
-                  <span className="w-1.5 h-1.5 rounded-full bg-gold mt-2.5 shrink-0" />
-                  <span className="text-foreground text-base font-sans font-light leading-relaxed tracking-wide">
-                    {item}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </div>
+        <div className="max-w-[680px] mx-auto px-6">
+          <p className="text-gold text-xs tracking-[0.2em] uppercase font-sans font-semibold mb-3">
+            What You Receive
+          </p>
+          <h2 className="font-display text-3xl md:text-4xl font-light text-foreground leading-[1.18] mb-6">
+            What This Advisory Includes
+          </h2>
+          <ul className="space-y-5">
+            {[
+              "Confidential valuation and pricing strategy",
+              "Access to qualified off-market and institutional buyers",
+              "Strategic positioning to maximize leverage and discretion",
+              "Direct advisory throughout the entire decision process",
+            ].map((item) => (
+              <li key={item} className="flex items-start gap-2.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-gold mt-2.5 shrink-0" />
+                <span className="text-foreground text-base font-sans font-light leading-[1.8] tracking-wide">
+                  {item}
+                </span>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 

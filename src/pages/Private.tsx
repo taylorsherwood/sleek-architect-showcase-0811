@@ -92,7 +92,7 @@ const Private = () => {
           />
           <div className="absolute inset-0 bg-foreground/60" />
         </div>
-        <div className="relative z-10 max-w-3xl mx-auto px-6 text-center pt-[calc(7.5rem+5vh)] md:pt-[calc(7.5rem+6vh)] pb-12 md:pb-16">
+        <div className="relative z-10 max-w-3xl mx-auto px-6 text-center pt-[calc(7.5rem+3vh)] md:pt-[calc(7.5rem+4vh)] pb-12 md:pb-16">
           <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-light text-primary-foreground leading-[1.18] mb-4 tracking-tight">
             Private Home Sale Advisory for Austin Homeowners
           </h1>
@@ -117,7 +117,7 @@ const Private = () => {
               Schedule a Consultation
             </Link>
           </div>
-          <p className="text-primary-foreground/40 text-xs font-sans font-light tracking-[0.12em]">
+          <p className="text-primary-foreground/55 text-xs font-sans font-light tracking-[0.12em]">
             Trusted by Austin homeowners, investors, and developers seeking discretion.
           </p>
         </div>

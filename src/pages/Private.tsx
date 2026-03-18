@@ -103,7 +103,7 @@ const Private = () => {
           <p className="text-primary-foreground/70 text-xs font-sans font-medium tracking-[0.3em] uppercase mb-6">
             Advising clients across Austin's luxury, investment, and development markets
           </p>
-          <div className="flex flex-col sm:flex-row gap-2.5 justify-center mb-5">
+          <div className="flex flex-col sm:flex-row gap-2.5 justify-center mb-7">
             <button
               onClick={scrollToForm}
               className="bg-gold hover:bg-[hsl(42,37%,50%)] text-primary-foreground px-12 py-4 text-sm tracking-[0.15em] uppercase font-sans font-medium transition-colors duration-300"
@@ -112,12 +112,12 @@ const Private = () => {
             </button>
             <Link
               to="/connect"
-              className="border border-primary-foreground/40 text-primary-foreground/90 hover:bg-primary-foreground/10 hover:border-primary-foreground/60 px-10 py-4 text-sm tracking-[0.15em] uppercase font-sans font-light transition-all duration-300 text-center"
+              className="border border-primary-foreground/50 text-primary-foreground/90 hover:bg-primary-foreground/15 hover:border-primary-foreground/70 px-10 py-4 text-sm tracking-[0.15em] uppercase font-sans font-light transition-all duration-300 text-center"
             >
               Schedule a Consultation
             </Link>
           </div>
-          <p className="text-primary-foreground/60 text-xs font-sans font-light tracking-[0.12em]">
+          <p className="text-primary-foreground/65 text-xs font-sans font-light tracking-[0.12em]" style={{ textShadow: '0 1px 4px rgba(0,0,0,0.3)' }}>
             Trusted by Austin homeowners, investors, and developers seeking discretion.
           </p>
         </div>

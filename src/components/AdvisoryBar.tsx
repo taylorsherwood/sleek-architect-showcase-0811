@@ -126,7 +126,7 @@ const AdvisoryBar = () => {
         }}>
         
         {/* Gold divider */}
-        <div className="h-[2px] bg-[hsl(var(--gold))]" />
+        <div className="h-[1.5px] bg-[hsl(var(--gold)/0.7)]" />
 
         <div className="bg-primary/90 backdrop-blur-sm h-14 flex items-center">
           <div className="container mx-auto px-4 md:px-6 flex items-center justify-between gap-4">

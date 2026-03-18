@@ -117,7 +117,7 @@ const Private = () => {
               Schedule a Consultation
             </Link>
           </div>
-          <p className="text-primary-foreground/40 text-xs font-sans font-light tracking-[0.12em]">
+          <p className="text-primary-foreground/55 text-xs font-sans font-light tracking-[0.12em]">
             Trusted by Austin homeowners, investors, and developers seeking discretion.
           </p>
         </div>

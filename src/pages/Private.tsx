@@ -43,12 +43,12 @@ const Private = () => {
     <>
       <SEOHead
         title="Private Home Sale Advisory"
-        description="Confidential pricing guidance, buyer matching, and discreet sale strategies for Austin homeowners. Explore off-market opportunities with Echelon Property Group."
+        description="Confidential pricing guidance, curated buyer outreach, and discreet sale strategy for luxury, investment, and high-value Austin properties."
       />
       <Navigation />
 
       {/* HERO */}
-      <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[75vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img
             src={heroImage}
@@ -59,22 +59,25 @@ const Private = () => {
           <div className="absolute inset-0 bg-foreground/60" />
         </div>
         <div className="relative z-10 max-w-3xl mx-auto px-6 text-center">
-          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-light text-primary-foreground leading-[1.1] mb-6 tracking-tight">
-            Explore Off-Market Opportunities for Your Home
+          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-light text-primary-foreground leading-[1.15] mb-5 tracking-tight">
+            Private Home Sale Advisory for Austin Homeowners
           </h1>
-          <p className="text-primary-foreground/80 text-lg md:text-xl font-sans font-light leading-relaxed max-w-2xl mx-auto mb-10">
-            Confidential pricing guidance, buyer matching, and discreet sale strategies for Austin homeowners.
+          <p className="text-primary-foreground/80 text-lg md:text-xl font-sans font-light leading-relaxed max-w-2xl mx-auto mb-4">
+            Confidential pricing guidance, curated buyer outreach, and discreet sale strategy for luxury, investment, and high-value properties.
+          </p>
+          <p className="text-primary-foreground/50 text-sm font-sans font-light tracking-wide mb-9">
+            Advising clients across Austin's luxury, investment, and development markets.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
               onClick={scrollToForm}
-              className="bg-gold hover:bg-gold-light text-primary-foreground px-10 py-4 text-sm tracking-[0.15em] uppercase font-sans font-medium transition-colors duration-300"
+              className="bg-gold hover:bg-gold-light text-primary-foreground px-12 py-4 text-sm tracking-[0.15em] uppercase font-sans font-medium transition-colors duration-300"
             >
               Request Private Valuation
             </button>
             <Link
               to="/connect"
-              className="border border-primary-foreground/40 text-primary-foreground hover:bg-primary-foreground/10 px-10 py-4 text-sm tracking-[0.15em] uppercase font-sans font-medium transition-colors duration-300 text-center"
+              className="border border-primary-foreground/30 text-primary-foreground/80 hover:bg-primary-foreground/10 px-10 py-4 text-sm tracking-[0.15em] uppercase font-sans font-light transition-colors duration-300 text-center"
             >
               Schedule a Consultation
             </Link>
@@ -83,25 +86,28 @@ const Private = () => {
       </section>
 
       {/* POSITIONING */}
-      <section className="py-24 md:py-32 bg-warm-cream">
-        <div className="max-w-3xl mx-auto px-6 text-center">
+      <section className="py-20 md:py-28 bg-warm-cream">
+        <div className="max-w-2xl mx-auto px-6 text-center">
           <p className="text-gold text-xs tracking-[0.25em] uppercase font-sans font-semibold mb-6">
             Private Advisory
           </p>
           <h2 className="font-display text-3xl md:text-5xl font-light text-foreground leading-[1.15] mb-8">
-            Not Every Home Should Be Sold Publicly
+            Not Every Property Should Be Sold Publicly
           </h2>
-          <p className="text-muted-foreground text-lg leading-relaxed mb-6 max-w-2xl mx-auto">
-            Many high-value homes are sold quietly through private networks, institutional buyers, and curated relationships.
+          <p className="text-muted-foreground text-lg leading-relaxed mb-5">
+            Many high-value properties trade quietly through private networks, institutional relationships, and curated buyer pools.
           </p>
-          <p className="text-muted-foreground text-lg leading-relaxed max-w-2xl mx-auto">
-            We help homeowners explore these opportunities while maintaining full control over pricing, timing, and exposure.
+          <p className="text-muted-foreground text-lg leading-relaxed mb-5">
+            For certain homes, a public listing can limit flexibility, reduce leverage, or attract the wrong exposure.
+          </p>
+          <p className="text-muted-foreground text-lg leading-relaxed">
+            We help you evaluate both paths—so you can make a strategic decision, not just a conventional one.
           </p>
         </div>
       </section>
 
       {/* WHAT YOU GET */}
-      <section className="py-24 md:py-32 bg-background">
+      <section className="py-20 md:py-28 bg-background">
         <div className="max-w-4xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-16 items-start">
             <div>
@@ -109,19 +115,19 @@ const Private = () => {
                 What You Receive
               </p>
               <h2 className="font-display text-3xl md:text-4xl font-light text-foreground leading-[1.15]">
-                A Discreet, Strategic Approach
+                What This Advisory Includes
               </h2>
             </div>
-            <ul className="space-y-8">
+            <ul className="space-y-10">
               {[
-                "Confidential home valuation",
-                "Access to qualified off-market buyers",
-                "Strategic pricing and positioning",
-                "Discreet advisory process",
+                "Confidential valuation and pricing strategy",
+                "Access to qualified off-market and institutional buyers",
+                "Strategic positioning to maximize leverage and discretion",
+                "Direct advisory throughout the entire decision process",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-4">
                   <span className="w-1.5 h-1.5 rounded-full bg-gold mt-2.5 shrink-0" />
-                  <span className="text-foreground text-lg font-sans font-light leading-relaxed">
+                  <span className="text-foreground text-lg font-sans font-light leading-relaxed tracking-wide">
                     {item}
                   </span>
                 </li>
@@ -132,22 +138,25 @@ const Private = () => {
       </section>
 
       {/* FORM */}
-      <section id="private-form" className="py-24 md:py-32 bg-warm-cream">
+      <section id="private-form" className="py-20 md:py-28 bg-warm-cream">
         <div className="max-w-xl mx-auto px-6">
           <div className="text-center mb-12">
             <p className="text-gold text-xs tracking-[0.25em] uppercase font-sans font-semibold mb-6">
               Get Started
             </p>
-            <h2 className="font-display text-3xl md:text-4xl font-light text-foreground leading-[1.15]">
-              Request a Private Valuation
+            <h2 className="font-display text-3xl md:text-4xl font-light text-foreground leading-[1.15] mb-4">
+              Request a Confidential Property Assessment
             </h2>
+            <p className="text-muted-foreground text-sm tracking-wide">
+              No obligation. Fully confidential. Direct advisory from Taylor Sherwood.
+            </p>
           </div>
 
           {submitted ? (
             <div className="text-center py-16">
               <h3 className="font-display text-2xl text-foreground mb-4">Thank You</h3>
               <p className="text-muted-foreground">
-                We'll be in touch within 24 hours with your confidential valuation.
+                We'll be in touch within 24 hours with your confidential assessment.
               </p>
             </div>
           ) : (
@@ -199,10 +208,10 @@ const Private = () => {
                 disabled={loading}
                 className="w-full bg-primary text-primary-foreground hover:bg-gold hover:text-primary-foreground py-4 text-sm tracking-[0.15em] uppercase font-sans font-medium transition-colors duration-300 disabled:opacity-50 mt-4"
               >
-                {loading ? "Submitting…" : "Request Private Valuation"}
+                {loading ? "Submitting…" : "Submit Confidential Request"}
               </button>
-              <p className="text-center text-muted-foreground text-xs tracking-wide mt-4">
-                Discreet. No obligation.
+              <p className="text-center text-muted-foreground text-xs tracking-wide mt-3">
+                Your information is never shared. This is a private advisory conversation.
               </p>
             </form>
           )}
@@ -210,8 +219,8 @@ const Private = () => {
       </section>
 
       {/* TRUST */}
-      <section className="py-20 md:py-24 bg-background">
-        <div className="max-w-3xl mx-auto px-6 text-center">
+      <section className="py-16 md:py-20 bg-background">
+        <div className="max-w-2xl mx-auto px-6 text-center">
           <p className="text-muted-foreground text-lg font-sans font-light leading-relaxed italic">
             Echelon Property Group advises clients across Austin in luxury, investment, and development real estate.
           </p>
@@ -219,11 +228,14 @@ const Private = () => {
       </section>
 
       {/* FOOTER CTA */}
-      <section className="py-24 md:py-32 bg-primary">
-        <div className="max-w-3xl mx-auto px-6 text-center">
-          <h2 className="font-display text-3xl md:text-5xl font-light text-primary-foreground leading-[1.15] mb-10">
-            Explore Your Options Privately
+      <section className="py-20 md:py-28 bg-primary">
+        <div className="max-w-2xl mx-auto px-6 text-center">
+          <h2 className="font-display text-3xl md:text-5xl font-light text-primary-foreground leading-[1.15] mb-5">
+            Start With a Private Conversation
           </h2>
+          <p className="text-primary-foreground/50 text-lg font-sans font-light leading-relaxed mb-10 max-w-xl mx-auto">
+            We'll help you determine whether a private sale, public listing, or hybrid strategy is best for your property.
+          </p>
           <button
             onClick={scrollToForm}
             className="bg-gold hover:bg-gold-light text-primary-foreground px-12 py-4 text-sm tracking-[0.15em] uppercase font-sans font-medium transition-colors duration-300"

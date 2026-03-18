@@ -158,11 +158,11 @@ const Private = () => {
 
       {/* POSITIONING */}
       <section className="py-14 md:py-22 bg-warm-cream">
-        <div className="max-w-lg mx-auto px-6 text-center">
-          <p className="text-gold text-xs tracking-[0.25em] uppercase font-sans font-semibold mb-6">
+        <div className="max-w-[680px] mx-auto px-6">
+          <p className="text-gold text-xs tracking-[0.2em] uppercase font-sans font-semibold mb-3">
             Private Advisory
           </p>
-          <h2 className="font-display text-3xl md:text-5xl font-light text-foreground leading-[1.18] mb-10">
+          <h2 className="font-display text-3xl md:text-5xl font-light text-foreground leading-[1.18] mb-8">
             Not Every Property Should Be Sold Publicly
           </h2>
           <p className="text-muted-foreground text-lg leading-[1.9] mb-6">

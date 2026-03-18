@@ -82,7 +82,7 @@ const Private = () => {
       <Navigation />
 
       {/* HERO */}
-      <section className="relative min-h-[64vh] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img
             src={heroImage}
@@ -92,18 +92,18 @@ const Private = () => {
           />
           <div className="absolute inset-0 bg-foreground/60" />
         </div>
-        <div className="relative z-10 max-w-3xl mx-auto px-6 text-center py-14">
-          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-light text-primary-foreground leading-[1.18] mb-5 tracking-tight">
+        <div className="relative z-10 max-w-3xl mx-auto px-6 text-center pt-[calc(7.5rem+5vh)] md:pt-[calc(7.5rem+6vh)] pb-12 md:pb-16">
+          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-light text-primary-foreground leading-[1.18] mb-4 tracking-tight">
             Private Home Sale Advisory for Austin Homeowners
           </h1>
-          <p className="text-primary-foreground/90 text-lg md:text-xl font-sans font-light leading-relaxed max-w-2xl mx-auto mb-5">
+          <p className="text-primary-foreground/90 text-lg md:text-xl font-sans font-light leading-relaxed max-w-2xl mx-auto mb-3">
             Confidential pricing guidance, curated buyer outreach, and discreet sale strategy for luxury, investment, and high-value properties.
           </p>
-          <div className="w-12 h-px bg-primary-foreground/20 mx-auto mb-4" />
-          <p className="text-primary-foreground/65 text-xs font-sans font-medium tracking-[0.3em] uppercase mb-8">
+          <div className="w-12 h-px bg-primary-foreground/20 mx-auto mb-3" />
+          <p className="text-primary-foreground/65 text-xs font-sans font-medium tracking-[0.3em] uppercase mb-6">
             Advising clients across Austin's luxury, investment, and development markets
           </p>
-          <div className="flex flex-col sm:flex-row gap-3 justify-center mb-6">
+          <div className="flex flex-col sm:flex-row gap-3 justify-center mb-5">
             <button
               onClick={scrollToForm}
               className="bg-gold hover:bg-[hsl(42,37%,50%)] text-primary-foreground px-12 py-4 text-sm tracking-[0.15em] uppercase font-sans font-medium transition-colors duration-300"

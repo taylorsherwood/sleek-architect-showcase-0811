@@ -268,6 +268,20 @@ const Private = () => {
                     />
                   </div>
                   <div>
+                    <label htmlFor="email" className="block text-xs tracking-[0.15em] uppercase text-muted-foreground font-sans mb-2">
+                      Email
+                    </label>
+                    <input
+                      id="email"
+                      type="email"
+                      required
+                      maxLength={255}
+                      value={formData.email}
+                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                      className="w-full bg-transparent border-b border-border focus:border-gold outline-none py-3 text-foreground font-sans transition-colors rounded-sm"
+                    />
+                  </div>
+                  <div>
                     <label htmlFor="phone" className="block text-xs tracking-[0.15em] uppercase text-muted-foreground font-sans mb-2">
                       Phone
                     </label>

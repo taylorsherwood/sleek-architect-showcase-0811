@@ -1,15 +1,17 @@
 /// <reference types="vite/client" />
 
+export {};
+
 declare global {
   interface Window {
-    gtag: (...args: unknown[]) => void;
+    gtag?: (...args: unknown[]) => void;
   }
-}
 
-declare namespace JSX {
-  interface IntrinsicElements {
-    "realscout-advanced-search": React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement> & {
-      "agent-encoded-id": string;
-    };
+  namespace JSX {
+    interface IntrinsicElements {
+      "realscout-advanced-search": React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement> & {
+        "agent-encoded-id": string;
+      };
+    }
   }
 }

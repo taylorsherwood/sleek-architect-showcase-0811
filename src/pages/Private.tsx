@@ -40,7 +40,7 @@ const FadeIn = ({ children, className = "" }: { children: React.ReactNode; class
 };
 
 const Private = () => {
-  const [formData, setFormData] = useState({ name: "", phone: "", address: "" });
+  const [formData, setFormData] = useState({ name: "", email: "", phone: "", address: "" });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 

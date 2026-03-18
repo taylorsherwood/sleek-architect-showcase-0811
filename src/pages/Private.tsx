@@ -44,6 +44,15 @@ const Private = () => {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
+  useEffect(() => {
+    const gtag = (window as unknown as Record<string, unknown>).gtag as ((...args: unknown[]) => void) | undefined;
+    if (typeof gtag === "function") {
+      gtag("event", "conversion", {
+        send_to: "AW-17598090760/ads_conversion_Contact_1",
+      });
+    }
+  }, []);
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.name.trim() || !formData.phone.trim() || !formData.address.trim()) return;

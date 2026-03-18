@@ -70,6 +70,9 @@ const Private = () => {
             event_label: "Private Seller Lead",
             value: 1,
           });
+          gtag("event", "conversion", {
+            send_to: "AW-17598090760",
+          });
         }
       }
     } catch {

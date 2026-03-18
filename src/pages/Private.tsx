@@ -40,7 +40,7 @@ const FadeIn = ({ children, className = "" }: { children: React.ReactNode; class
 };
 
 const Private = () => {
-  const [formData, setFormData] = useState({ name: "", phone: "", address: "" });
+  const [formData, setFormData] = useState({ name: "", email: "", phone: "", address: "" });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
@@ -55,7 +55,7 @@ const Private = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!formData.name.trim() || !formData.phone.trim() || !formData.address.trim()) return;
+    if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim() || !formData.address.trim()) return;
     setLoading(true);
     try {
       const res = await fetch("https://api.web3forms.com/submit", {
@@ -66,6 +66,7 @@ const Private = () => {
           subject: "Private Valuation Request",
           from_name: formData.name,
           name: formData.name,
+          email: formData.email,
           phone: formData.phone,
           address: formData.address,
         }),
@@ -263,6 +264,20 @@ const Private = () => {
                       maxLength={100}
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                      className="w-full bg-transparent border-b border-border focus:border-gold outline-none py-3 text-foreground font-sans transition-colors rounded-sm"
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="email" className="block text-xs tracking-[0.15em] uppercase text-muted-foreground font-sans mb-2">
+                      Email
+                    </label>
+                    <input
+                      id="email"
+                      type="email"
+                      required
+                      maxLength={255}
+                      value={formData.email}
+                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       className="w-full bg-transparent border-b border-border focus:border-gold outline-none py-3 text-foreground font-sans transition-colors rounded-sm"
                     />
                   </div>

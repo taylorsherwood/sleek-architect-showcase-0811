@@ -66,6 +66,7 @@ const Private = () => {
           subject: "Private Valuation Request",
           from_name: formData.name,
           name: formData.name,
+          email: formData.email,
           phone: formData.phone,
           address: formData.address,
         }),

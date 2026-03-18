@@ -55,7 +55,7 @@ const Private = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!formData.name.trim() || !formData.phone.trim() || !formData.address.trim()) return;
+    if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim() || !formData.address.trim()) return;
     setLoading(true);
     try {
       const res = await fetch("https://api.web3forms.com/submit", {

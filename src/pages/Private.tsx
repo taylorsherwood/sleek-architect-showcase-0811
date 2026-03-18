@@ -61,7 +61,17 @@ const Private = () => {
           address: formData.address,
         }),
       });
-      if (res.ok) setSubmitted(true);
+      if (res.ok) {
+        setSubmitted(true);
+        const gtag = (window as unknown as Record<string, unknown>).gtag as ((...args: unknown[]) => void) | undefined;
+        if (typeof gtag === "function") {
+          gtag("event", "conversion", {
+            event_category: "Lead",
+            event_label: "Private Seller Lead",
+            value: 1,
+          });
+        }
+      }
     } catch {
       // silent
     } finally {

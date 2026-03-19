@@ -65,6 +65,7 @@ const Private = () => {
       });
       if (res.ok) {
         setSubmitted(true);
+        console.log("conversion fired");
         const gtag = (window as unknown as Record<string, unknown>).gtag as ((...args: unknown[]) => void) | undefined;
         if (typeof gtag === "function") {
           gtag("event", "conversion", {
@@ -73,6 +74,7 @@ const Private = () => {
             currency: "USD",
           });
         }
+        alert("conversion fired");
       }
     } catch {
       // silent

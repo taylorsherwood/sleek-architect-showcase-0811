@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import RealScoutListings from "@/components/RealScoutListings";
 import RealScoutSearch from "@/components/RealScoutSearch";
 import SEOHead from "@/components/SEOHead";
-import SchemaMarkup, { createProductSchema } from "@/components/SchemaMarkup";
+import SchemaMarkup, { createRealEstateListingSchema } from "@/components/SchemaMarkup";
 import listing1 from "@/assets/listing-1.jpg";
 import listing2 from "@/assets/listing-2.jpg";
 import listing3 from "@/assets/listing-3.jpg";

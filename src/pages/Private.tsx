@@ -108,6 +108,16 @@ const Private = () => {
         title="Private Home Sale Advisory"
         description="Confidential pricing guidance, curated buyer outreach, and discreet sale strategy for luxury, investment, and high-value Austin properties."
       />
+      <SchemaMarkup schema={createBreadcrumbSchema([
+        { name: "Home", url: "https://www.echelonpropertygroup.com/" },
+        { name: "Private Home Sale Advisory", url: "https://www.echelonpropertygroup.com/private" }
+      ])} />
+      <SchemaMarkup schema={createFAQSchema([
+        { question: "What is a private home sale?", answer: "A private home sale allows luxury homeowners to market their property discreetly through curated buyer networks without a public listing, preserving privacy and negotiating leverage." },
+        { question: "Is my property a good fit for an off-market sale?", answer: "Properties best suited for private sales include luxury homes, unique or hard-to-comp properties, development sites, and investment assets where discretion or strategic pricing flexibility is important." },
+        { question: "How does the private valuation process work?", answer: "You submit your property details through our secure form. Taylor Sherwood provides a confidential valuation based on comparable sales, market conditions, and property-specific factors — typically within 24 hours." },
+        { question: "Will my property still get full exposure?", answer: "Yes. Private sales leverage curated buyer pools, institutional relationships, and targeted outreach to qualified buyers — often achieving results comparable to or better than public listings for the right properties." }
+      ])} />
       <Navigation />
 
       {/* HERO */}

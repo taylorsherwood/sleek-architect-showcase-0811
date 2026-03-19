@@ -33,7 +33,7 @@ const Listings = () => {
       {listings.map((listing, i) => (
         <SchemaMarkup
           key={i}
-          schema={createProductSchema({
+          schema={createRealEstateListingSchema({
             name: listing.address,
             description: listing.description,
             image: listing.image.startsWith('http') ? listing.image : `https://www.echelonpropertygroup.com${listing.image}`,

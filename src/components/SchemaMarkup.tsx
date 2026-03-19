@@ -214,10 +214,10 @@ export function createArticleSchema(title: string, description: string, datePubl
   };
 }
 
-export function createProductSchema(listing: { name: string; description: string; image: string; price: string; url: string }) {
+export function createRealEstateListingSchema(listing: { name: string; description: string; image: string; price: string; url: string }) {
   return {
     "@context": "https://schema.org",
-    "@type": "Product",
+    "@type": "RealEstateListing",
     "name": listing.name,
     "description": listing.description,
     "image": listing.image,
@@ -226,11 +226,16 @@ export function createProductSchema(listing: { name: string; description: string
       "@type": "Offer",
       "price": listing.price.replace(/[^0-9]/g, ''),
       "priceCurrency": "USD",
-      "availability": "https://schema.org/InStock"
+      "availability": "https://schema.org/InStock",
+      "businessFunction": "http://purl.org/goodrelations/v1#Sell"
     },
-    "brand": {
-      "@type": "Organization",
-      "name": "Echelon Property Group"
+    "broker": {
+      "@type": "RealEstateAgent",
+      "name": "Taylor Sherwood",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Echelon Property Group"
+      }
     }
   };
 }

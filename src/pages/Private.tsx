@@ -44,6 +44,29 @@ const Private = () => {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
+  const fireGoogleConversion = () => {
+    const runConversion = () => {
+      console.log("conversion fired");
+      const gtagFn = (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag;
+
+      if (typeof gtagFn === "function") {
+        gtagFn("event", "conversion", {
+          send_to: "AW-17598090760/BHb7CPuQr4scEIictsdB",
+          value: 1.0,
+          currency: "USD",
+        });
+      } else {
+        console.error("gtag not loaded");
+      }
+    };
+
+    if (document.readyState === "complete") {
+      runConversion()
+      return;
+    }
+
+    window.addEventListener("load", runConversion, { once: true });
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -65,17 +88,7 @@ const Private = () => {
       });
       if (res.ok) {
         setSubmitted(true);
-        console.log("conversion fired");
-        const gtagFn = (window as unknown as Record<string, (...args: unknown[]) => void>).gtag;
-        if (typeof gtagFn === "function") {
-          gtagFn("event", "conversion", {
-            send_to: "AW-17598090760/Bhb7CPuQr4scElitsdB",
-            value: 1.0,
-            currency: "USD",
-          });
-        } else {
-          console.error("gtag not loaded");
-        }
+        fireGoogleConversion();
       }
     } catch {
       // silent

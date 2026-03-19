@@ -66,13 +66,15 @@ const Private = () => {
       if (res.ok) {
         setSubmitted(true);
         console.log("conversion fired");
-        const gtag = (window as unknown as Record<string, unknown>).gtag as ((...args: unknown[]) => void) | undefined;
-        if (typeof gtag === "function") {
-          gtag("event", "conversion", {
+        const gtagFn = (window as unknown as Record<string, (...args: unknown[]) => void>).gtag;
+        if (typeof gtagFn === "function") {
+          gtagFn("event", "conversion", {
             send_to: "AW-17598090760/Bhb7CPuQr4scElitsdB",
             value: 1.0,
             currency: "USD",
           });
+        } else {
+          console.error("gtag not loaded");
         }
       }
     } catch {

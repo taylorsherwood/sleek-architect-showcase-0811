@@ -254,3 +254,47 @@ export function createFAQSchema(faqs: { question: string; answer: string }[]) {
     }))
   };
 }
+
+export function createBreadcrumbSchema(items: { name: string; url: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": items.map((item, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "name": item.name,
+      "item": item.url
+    }))
+  };
+}
+
+export function createBlogPostingSchema(post: { title: string; description: string; datePublished: string; author: string; image?: string; url: string }) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": post.title,
+    "description": post.description,
+    "name": post.title,
+    "url": post.url,
+    "image": post.image || "https://www.echelonpropertygroup.com/og-image.png",
+    "datePublished": post.datePublished,
+    "dateModified": post.datePublished,
+    "author": {
+      "@type": "Person",
+      "name": post.author,
+      "url": "https://www.echelonpropertygroup.com/about"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Echelon Property Group",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.echelonpropertygroup.com/lovable-uploads/echelon-logo-gold.png"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": post.url
+    }
+  };
+}

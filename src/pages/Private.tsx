@@ -44,16 +44,6 @@ const Private = () => {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
-    const gtag = (window as unknown as Record<string, unknown>).gtag as ((...args: unknown[]) => void) | undefined;
-    if (typeof gtag === "function") {
-      gtag("event", "conversion", {
-        send_to: "AW-17598090760/Bhb7CPuQr4scEIictsdB",
-        value: 1.0,
-        currency: "USD",
-      });
-    }
-  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

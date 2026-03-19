@@ -74,7 +74,6 @@ const Private = () => {
             currency: "USD",
           });
         }
-        alert("conversion fired");
       }
     } catch {
       // silent

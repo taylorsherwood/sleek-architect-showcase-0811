@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
-import SchemaMarkup from "@/components/SchemaMarkup";
+import SchemaMarkup, { createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import { MapPin, Building2, TrendingUp } from "lucide-react";
 
 const opportunities = [

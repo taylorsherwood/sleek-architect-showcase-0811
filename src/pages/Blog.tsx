@@ -26,6 +26,10 @@ const Blog = () => {
         description="Expert insights on Austin luxury real estate, market trends, neighborhood guides, and investment strategies from Echelon Property Group."
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
+      <SchemaMarkup schema={createBreadcrumbSchema([
+        { name: "Home", url: "https://www.echelonpropertygroup.com/" },
+        { name: "Blog", url: "https://www.echelonpropertygroup.com/blog" }
+      ])} />
       <Navigation />
       
       {/* Hero Section */}

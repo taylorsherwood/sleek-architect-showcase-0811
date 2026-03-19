@@ -48,6 +48,10 @@ const Communities = () => {
         description="Explore Austin's finest luxury neighborhoods: Westlake Hills, Barton Creek, Lake Austin, Tarrytown, Rollingwood, and more. Expert guidance from Echelon Property Group."
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
+      <SchemaMarkup schema={createBreadcrumbSchema([
+        { name: "Home", url: "https://www.echelonpropertygroup.com/" },
+        { name: "Communities", url: "https://www.echelonpropertygroup.com/communities" }
+      ])} />
       <SchemaMarkup schema={createFAQSchema(communityFaqs)} />
       <Navigation />
 

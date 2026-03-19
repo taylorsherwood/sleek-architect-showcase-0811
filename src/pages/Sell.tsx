@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
-import SchemaMarkup, { realEstateAgentSchema, createFAQSchema } from "@/components/SchemaMarkup";
+import SchemaMarkup, { realEstateAgentSchema, createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
 import Testimonials from "@/components/Testimonials";
@@ -247,6 +247,10 @@ const Sell = () => {
         description="Sell your Austin home for top dollar. Strategic marketing, expert negotiation, and luxury presentation from Taylor Sherwood — Austin's trusted luxury listing agent."
         canonical="https://www.echelonpropertygroup.com/sell" />
       <SchemaMarkup schema={realEstateAgentSchema} />
+      <SchemaMarkup schema={createBreadcrumbSchema([
+        { name: "Home", url: "https://www.echelonpropertygroup.com/" },
+        { name: "Sell Your Home", url: "https://www.echelonpropertygroup.com/sell" }
+      ])} />
       <SchemaMarkup schema={createFAQSchema([
         { question: "How long does it take to sell a luxury home in Austin?", answer: "Well-priced luxury homes in Austin typically sell within 30–90 days depending on neighborhood, price point, and condition. Homes in Westlake Hills, Barton Creek, and Tarrytown that are move-in ready and strategically priced often sell faster." },
         { question: "What does it cost to sell a home in Austin Texas?", answer: "Typical seller costs include agent commissions, title insurance, property taxes prorated to closing, and any repairs or staging. In Texas, sellers also provide a survey and pay for an owner's title policy." },

@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import RealScoutListings from "@/components/RealScoutListings";
 import RealScoutSearch from "@/components/RealScoutSearch";
 import SEOHead from "@/components/SEOHead";
-import SchemaMarkup, { createRealEstateListingSchema } from "@/components/SchemaMarkup";
+import SchemaMarkup, { createRealEstateListingSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import listing1 from "@/assets/listing-1.jpg";
 import listing2 from "@/assets/listing-2.jpg";
 import listing3 from "@/assets/listing-3.jpg";
@@ -30,6 +30,10 @@ const Listings = () => {
         title="Luxury Listings in Austin TX | Echelon Property Group"
         description="View current luxury listings from Echelon Property Group. Austin homes for sale, investment properties, estate homes, and land opportunities across Austin's premier neighborhoods."
       />
+      <SchemaMarkup schema={createBreadcrumbSchema([
+        { name: "Home", url: "https://www.echelonpropertygroup.com/" },
+        { name: "Listings", url: "https://www.echelonpropertygroup.com/listings" }
+      ])} />
       {listings.map((listing, i) => (
         <SchemaMarkup
           key={i}

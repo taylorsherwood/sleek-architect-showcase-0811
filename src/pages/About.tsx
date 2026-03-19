@@ -3,7 +3,7 @@ import clhmsBadge from "@/assets/clhms-badge.png";
 import Footer from "@/components/Footer";
 import aboutTeam from "@/assets/about-team.jpg";
 import { Link } from "react-router-dom";
-import SchemaMarkup, { taylorSherwoodSchema, createFAQSchema } from "@/components/SchemaMarkup";
+import SchemaMarkup, { taylorSherwoodSchema, createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import SEOHead from "@/components/SEOHead";
 
 const About = () => {
@@ -14,6 +14,10 @@ const About = () => {
         description="Meet Taylor Sherwood, CLHMS and founder of Echelon Property Group. Expert advisory for luxury homes, land, commercial, and investment property in Austin TX." />
       
       <SchemaMarkup schema={taylorSherwoodSchema} />
+      <SchemaMarkup schema={createBreadcrumbSchema([
+        { name: "Home", url: "https://www.echelonpropertygroup.com/" },
+        { name: "About", url: "https://www.echelonpropertygroup.com/about" }
+      ])} />
       <SchemaMarkup schema={createFAQSchema([
         { question: "Who is Taylor Sherwood?", answer: "Taylor Sherwood is a Certified Luxury Home Marketing Specialist and founder of Echelon Property Group, specializing in luxury residential, commercial, land, and investment real estate across Austin and the Texas Hill Country." },
         { question: "What areas does Echelon Property Group serve?", answer: "Echelon Property Group serves Austin's premier neighborhoods including Westlake Hills, Barton Creek, Lake Austin, Tarrytown, Rollingwood, Spanish Oaks, Dripping Springs, and the greater Texas Hill Country." },

@@ -1,7 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
-import SchemaMarkup, { realEstateAgentSchema, createFAQSchema } from "@/components/SchemaMarkup";
+import SchemaMarkup, { realEstateAgentSchema, createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 
 const communityFaqs = [
   { question: "What are the best luxury neighborhoods in Austin Texas?", answer: "Austin's premier luxury neighborhoods include Westlake Hills, Barton Creek, Lake Austin, Tarrytown, Rollingwood, Spanish Oaks, and Dripping Springs. Each offers distinct lifestyle benefits, school districts, and price ranges." },
@@ -48,6 +48,10 @@ const Communities = () => {
         description="Explore Austin's finest luxury neighborhoods: Westlake Hills, Barton Creek, Lake Austin, Tarrytown, Rollingwood, and more. Expert guidance from Echelon Property Group."
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
+      <SchemaMarkup schema={createBreadcrumbSchema([
+        { name: "Home", url: "https://www.echelonpropertygroup.com/" },
+        { name: "Communities", url: "https://www.echelonpropertygroup.com/communities" }
+      ])} />
       <SchemaMarkup schema={createFAQSchema(communityFaqs)} />
       <Navigation />
 

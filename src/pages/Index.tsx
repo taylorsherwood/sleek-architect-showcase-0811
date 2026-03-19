@@ -4,7 +4,7 @@ import Hero from "@/components/Hero";
 import CredibilityStrip from "@/components/CredibilityStrip";
 import ExpertiseSection from "@/components/ExpertiseSection";
 import SEOHead from "@/components/SEOHead";
-import SchemaMarkup, { realEstateAgentSchema, localBusinessSchema, taylorSherwoodSchema, organizationSchema, websiteSchema } from "@/components/SchemaMarkup";
+import SchemaMarkup, { realEstateAgentSchema, localBusinessSchema, taylorSherwoodSchema, organizationSchema, websiteSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 
 // Lazy-load below-fold sections to reduce initial JS bundle
 const RealScoutSearch = lazy(() => import("@/components/RealScoutSearch"));
@@ -81,6 +81,9 @@ const Index = () => {
       <SchemaMarkup schema={localBusinessSchema} />
       <SchemaMarkup schema={taylorSherwoodSchema} />
       <SchemaMarkup schema={websiteSchema} />
+      <SchemaMarkup schema={createBreadcrumbSchema([
+        { name: "Home", url: "https://www.echelonpropertygroup.com/" }
+      ])} />
       <Navigation />
       <Hero />
 

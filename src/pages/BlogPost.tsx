@@ -3,7 +3,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import AboutBlock from "@/components/AboutBlock";
 import SEOHead from "@/components/SEOHead";
-import SchemaMarkup, { createArticleSchema, createFAQSchema } from "@/components/SchemaMarkup";
+import SchemaMarkup, { createArticleSchema, createFAQSchema, createBreadcrumbSchema, createBlogPostingSchema } from "@/components/SchemaMarkup";
 import { blogPosts } from "@/data/blogPosts";
 import { seoBlogPosts } from "@/data/seoBlogPosts";
 import AuthorBio from "@/components/AuthorBio";
@@ -58,8 +58,15 @@ const BlogPost = () => {
     }
   }
 
+  const postUrl = `https://www.echelonpropertygroup.com/blog/${post.id}`;
   const schemas: Record<string, unknown>[] = [
-    createArticleSchema(post.title, post.excerpt, post.date, post.author, post.image)
+    createArticleSchema(post.title, post.excerpt, post.date, post.author, post.image),
+    createBlogPostingSchema({ title: post.title, description: post.excerpt, datePublished: post.date, author: post.author, image: post.image, url: postUrl }),
+    createBreadcrumbSchema([
+      { name: "Home", url: "https://www.echelonpropertygroup.com/" },
+      { name: "Blog", url: "https://www.echelonpropertygroup.com/blog" },
+      { name: post.title, url: postUrl }
+    ])
   ];
   if (faqs.length > 0) {
     schemas.push(createFAQSchema(faqs));

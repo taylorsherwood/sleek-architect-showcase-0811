@@ -68,12 +68,9 @@ const Private = () => {
         const gtag = (window as unknown as Record<string, unknown>).gtag as ((...args: unknown[]) => void) | undefined;
         if (typeof gtag === "function") {
           gtag("event", "conversion", {
-            event_category: "Lead",
-            event_label: "Private Seller Lead",
-            value: 1,
-          });
-          gtag("event", "conversion", {
-            send_to: "AW-17598090760",
+            send_to: "AW-17598090760/Bhb7CPuQr4scElitsdB",
+            value: 1.0,
+            currency: "USD",
           });
         }
       }

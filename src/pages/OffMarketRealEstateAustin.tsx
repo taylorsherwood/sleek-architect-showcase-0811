@@ -201,16 +201,16 @@ const OffMarketRealEstateAustin = () => {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start max-w-6xl mx-auto">
             {/* Left — Copy */}
             <div className="lg:pt-8">
-              <p className="text-gold/80 mb-4 font-bold" style={labelStyle}>
+              <p className="text-gold mb-4 font-bold" style={labelStyle}>
                 PRIVATE REAL ESTATE ACCESS
               </p>
               <h1 className="font-display text-[2rem] md:text-[2.8rem] lg:text-[3.4rem] font-light text-white leading-[1.1] mb-6 tracking-tight">
                 Access Off-Market Real Estate Deals in Austin
               </h1>
-              <p className="text-white/60 text-lg font-light leading-relaxed mb-8 max-w-lg">
+              <p className="text-white/75 text-lg md:text-xl font-light leading-relaxed mb-8 max-w-lg">
                 Private listings, investment opportunities, and development deals not available on the MLS.
               </p>
-              <ul className="space-y-3 mb-10">
+              <ul className="space-y-3.5 mb-10">
                 {[
                   "Luxury homes and private listings",
                   "Investment and value-add opportunities",
@@ -219,7 +219,7 @@ const OffMarketRealEstateAustin = () => {
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-gold mt-2 shrink-0" />
-                    <span className="text-white/55 text-sm font-light">{item}</span>
+                    <span className="text-white/65 text-[0.925rem] font-light leading-relaxed">{item}</span>
                   </li>
                 ))}
               </ul>

@@ -364,7 +364,7 @@ const OffMarketRealEstateAustin = () => {
           </p>
           <button
             onClick={scrollToForm}
-            className="bg-gold hover:bg-[hsl(42,37%,50%)] text-white px-12 py-4 transition-colors duration-300 active:scale-[0.98]"
+            className="bg-gold hover:bg-white text-white hover:text-gold hover:font-bold px-12 py-4 transition-all duration-300 ease-out active:scale-[0.98] hover:shadow-[0_4px_20px_rgba(255,255,255,0.12)]"
             style={labelStyle}
           >
             GET ACCESS TO PRIVATE DEALS

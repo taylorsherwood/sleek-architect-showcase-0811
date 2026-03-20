@@ -4,6 +4,7 @@ import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import Footer from "@/components/Footer";
 import heroImage from "@/assets/hero-luxury-austin.jpg";
+import echelonLogo from "@/assets/echelon-logo-gold.png";
 
 const SITE = "https://www.echelonpropertygroup.com";
 

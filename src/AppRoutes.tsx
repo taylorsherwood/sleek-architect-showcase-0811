@@ -43,6 +43,7 @@ const LuxuryHomesAustin = lazy(() => import("@/pages/LuxuryHomesAustin"));
 const BillionaireMigration = lazy(() => import("@/pages/BillionaireMigration"));
 const OffMarketDealsAustin = lazy(() => import("@/pages/OffMarketDealsAustin"));
 const OffMarketRealEstateAustin = lazy(() => import("@/pages/OffMarketRealEstateAustin"));
+const AustinLandDevelopmentOpportunities = lazy(() => import("@/pages/AustinLandDevelopmentOpportunities"));
 const Private = lazy(() => import("@/pages/Private"));
 const NotFound = lazy(() => import("@/pages/NotFound"));
 
@@ -96,6 +97,7 @@ const AppRoutes = () => {
           <Route path="/blog/how-to-find-off-market-real-estate-deals-austin-2026" element={<OffMarketDealsAustin />} />
           <Route path="/private" element={<Private />} />
           <Route path="/off-market-real-estate-austin" element={<OffMarketRealEstateAustin />} />
+          <Route path="/austin-land-development-opportunities" element={<AustinLandDevelopmentOpportunities />} />
           <Route path="/westlake-hills-homes-for-sale" element={<SEOCommunityPage />} />
           <Route path="/tarrytown-homes-for-sale" element={<SEOCommunityPage />} />
           <Route path="/rollingwood-homes-for-sale" element={<SEOCommunityPage />} />

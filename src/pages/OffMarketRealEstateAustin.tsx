@@ -86,7 +86,7 @@ const OffMarketRealEstateAustin = () => {
 
   const formContent = submitted ? (
     <div className="text-center py-12 flex flex-col items-center">
-      <img src={echelonLogo} alt="Echelon Property Group" className="h-14 mb-6" />
+      <img src={echelonLogo} alt="Echelon Property Group" className="h-[10.5rem] mb-8" />
       <h3 className="font-display text-2xl text-white mb-4">You're In</h3>
       <p className="text-white/60">We'll reach out within 24 hours with curated opportunities.</p>
     </div>

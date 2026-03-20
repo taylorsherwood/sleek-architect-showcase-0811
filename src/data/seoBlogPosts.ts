@@ -797,4 +797,16 @@ While the market fluctuates, Austin has experienced long-term appreciation drive
     image: communityLake,
     href: "/why-billionaires-are-moving-to-austin"
   }
+  {
+    id: "how-to-find-off-market-real-estate-deals-austin-2026",
+    title: "How to Find Off-Market Real Estate Deals in Austin (2026 Investor Playbook)",
+    excerpt: "Learn how investors, developers, and luxury buyers find off-market real estate deals in Austin. Explore proven strategies, private deal sourcing, and Austin investment opportunities.",
+    content: "",
+    author: "Taylor Sherwood",
+    date: "2026-03-20",
+    readTime: "14 min read",
+    category: "INVESTMENT",
+    image: heroSkyline,
+    href: "/blog/how-to-find-off-market-real-estate-deals-austin-2026"
+  }
 ];

@@ -41,6 +41,7 @@ const Connect = lazy(connectImport);
 const PrivateOpportunitiesPage = lazy(() => import("@/pages/PrivateOpportunitiesPage"));
 const LuxuryHomesAustin = lazy(() => import("@/pages/LuxuryHomesAustin"));
 const BillionaireMigration = lazy(() => import("@/pages/BillionaireMigration"));
+const OffMarketDealsAustin = lazy(() => import("@/pages/OffMarketDealsAustin"));
 const Private = lazy(() => import("@/pages/Private"));
 const NotFound = lazy(() => import("@/pages/NotFound"));
 

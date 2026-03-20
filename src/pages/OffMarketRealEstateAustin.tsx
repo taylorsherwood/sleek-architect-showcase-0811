@@ -147,7 +147,7 @@ const OffMarketRealEstateAustin = () => {
       <button
         type="submit"
         disabled={loading}
-        className="w-full bg-gold hover:bg-[hsl(42,37%,50%)] text-white py-4 tracking-[0.15em] uppercase font-sans font-medium transition-colors duration-300 disabled:opacity-50 active:scale-[0.98] mt-1"
+        className="w-full bg-gold hover:bg-white text-white hover:text-gold hover:font-bold py-4 tracking-[0.15em] uppercase font-sans font-medium transition-all duration-300 ease-out disabled:opacity-50 active:scale-[0.98] mt-1"
         style={{ fontSize: "0.7rem", letterSpacing: "0.2em" }}
       >
         {loading ? "Submitting…" : "Get Access to Private Deals"}

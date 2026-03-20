@@ -796,7 +796,7 @@ While the market fluctuates, Austin has experienced long-term appreciation drive
     category: "RELOCATION",
     image: communityLake,
     href: "/why-billionaires-are-moving-to-austin"
-  }
+  },
   {
     id: "how-to-find-off-market-real-estate-deals-austin-2026",
     title: "How to Find Off-Market Real Estate Deals in Austin (2026 Investor Playbook)",

@@ -4,6 +4,7 @@ import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import Footer from "@/components/Footer";
 import heroImage from "@/assets/hero-luxury-austin.jpg";
+import echelonLogo from "@/assets/echelon-logo-gold.png";
 
 const SITE = "https://www.echelonpropertygroup.com";
 
@@ -84,7 +85,8 @@ const OffMarketRealEstateAustin = () => {
     "w-full bg-transparent border-b border-white/20 focus:border-gold outline-none py-3 text-white font-sans transition-colors appearance-none cursor-pointer [&>option]:bg-[hsl(220,15%,12%)] [&>option]:text-white";
 
   const formContent = submitted ? (
-    <div className="text-center py-12">
+    <div className="text-center py-12 flex flex-col items-center">
+      <img src={echelonLogo} alt="Echelon Property Group" className="h-14 mb-6" />
       <h3 className="font-display text-2xl text-white mb-4">You're In</h3>
       <p className="text-white/60">We'll reach out within 24 hours with curated opportunities.</p>
     </div>
@@ -145,7 +147,7 @@ const OffMarketRealEstateAustin = () => {
       <button
         type="submit"
         disabled={loading}
-        className="w-full bg-gold hover:bg-[hsl(42,37%,50%)] text-white py-4 tracking-[0.15em] uppercase font-sans font-medium transition-colors duration-300 disabled:opacity-50 active:scale-[0.98] mt-1"
+        className="w-full bg-gold hover:bg-white text-white hover:text-gold hover:font-bold py-4 tracking-[0.15em] uppercase font-sans font-medium transition-all duration-300 ease-out disabled:opacity-50 active:scale-[0.98] mt-1"
         style={{ fontSize: "0.7rem", letterSpacing: "0.2em" }}
       >
         {loading ? "Submitting…" : "Get Access to Private Deals"}
@@ -234,12 +236,16 @@ const OffMarketRealEstateAustin = () => {
 
             {/* Right — Form */}
             <div id="lead-form" className="border border-white/10 p-6 md:p-10 bg-white/[0.02]">
-              <p className="text-gold mb-3 font-bold" style={labelStyle}>
-                REQUEST ACCESS
-              </p>
-              <h2 className="font-display text-xl md:text-2xl font-light text-white mb-6">
-                Tell Us What You're Looking For
-              </h2>
+              {!submitted && (
+                <>
+                  <p className="text-gold mb-3 font-bold" style={labelStyle}>
+                    REQUEST ACCESS
+                  </p>
+                  <h2 className="font-display text-xl md:text-2xl font-light text-white mb-6">
+                    Tell Us What You're Looking For
+                  </h2>
+                </>
+              )}
               {formContent}
             </div>
           </div>

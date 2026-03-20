@@ -375,7 +375,7 @@ const OffMarketRealEstateAustin = () => {
       {/* ── Footer (minimal) ────────────────────────── */}
       <footer className="py-8 bg-[hsl(220,15%,5%)] border-t border-white/5">
         <div className="container mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-white/25 text-xs tracking-wide">© {new Date().getFullYear()} Echelon Property Group · Austin, Texas</p>
+          <p className="text-white/25 text-xs tracking-wide">© {new Date().getFullYear()} Echelon Property Group · Austin, Texas · Brokered by eXp Realty</p>
           <div className="flex gap-5">
             <Link to="/" className="text-white/25 hover:text-white/50 transition-colors text-xs tracking-[0.1em] uppercase">Home</Link>
             <Link to="/private" className="text-white/25 hover:text-white/50 transition-colors text-xs tracking-[0.1em] uppercase">Private</Link>

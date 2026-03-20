@@ -240,7 +240,7 @@ const OffMarketRealEstateAustin = () => {
               <h2 className="font-display text-xl md:text-2xl font-light text-white mb-6">
                 Tell Us What You're Looking For
               </h2>
-              <FormBlock />
+              {formContent}
             </div>
           </div>
         </div>

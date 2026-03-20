@@ -85,7 +85,8 @@ const OffMarketRealEstateAustin = () => {
     "w-full bg-transparent border-b border-white/20 focus:border-gold outline-none py-3 text-white font-sans transition-colors appearance-none cursor-pointer [&>option]:bg-[hsl(220,15%,12%)] [&>option]:text-white";
 
   const formContent = submitted ? (
-    <div className="text-center py-12">
+    <div className="text-center py-12 flex flex-col items-center">
+      <img src={echelonLogo} alt="Echelon Property Group" className="h-14 mb-6" />
       <h3 className="font-display text-2xl text-white mb-4">You're In</h3>
       <p className="text-white/60">We'll reach out within 24 hours with curated opportunities.</p>
     </div>

@@ -83,80 +83,78 @@ const OffMarketRealEstateAustin = () => {
   const selectClass =
     "w-full bg-transparent border-b border-white/20 focus:border-gold outline-none py-3 text-white font-sans transition-colors appearance-none cursor-pointer [&>option]:bg-[hsl(220,15%,12%)] [&>option]:text-white";
 
-  const FormBlock = () =>
-    submitted ? (
-      <div className="text-center py-12">
-        <h3 className="font-display text-2xl text-white mb-4">You're In</h3>
-        <p className="text-white/60">We'll reach out within 24 hours with curated opportunities.</p>
+  const formContent = submitted ? (
+    <div className="text-center py-12">
+      <h3 className="font-display text-2xl text-white mb-4">You're In</h3>
+      <p className="text-white/60">We'll reach out within 24 hours with curated opportunities.</p>
+    </div>
+  ) : (
+    <form onSubmit={handleSubmit} className="space-y-5">
+      <div>
+        <label htmlFor="name" className="block text-white/40 mb-1.5" style={labelStyle}>Name</label>
+        <input id="name" type="text" required maxLength={100} value={form.name} onChange={(e) => setForm(prev => ({ ...prev, name: e.target.value }))} className={inputClass} />
       </div>
-    ) : (
-      <form onSubmit={handleSubmit} className="space-y-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div>
-          <label htmlFor="name" className="block text-white/40 mb-1.5" style={labelStyle}>Name</label>
-          <input id="name" type="text" required maxLength={100} value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} className={inputClass} />
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-          <div>
-            <label htmlFor="email" className="block text-white/40 mb-1.5" style={labelStyle}>Email</label>
-            <input id="email" type="email" required maxLength={255} value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} className={inputClass} />
-          </div>
-          <div>
-            <label htmlFor="phone" className="block text-white/40 mb-1.5" style={labelStyle}>Phone</label>
-            <input id="phone" type="tel" required maxLength={20} value={form.phone} onChange={(e) => setForm({ ...form, phone: e.target.value })} className={inputClass} />
-          </div>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-          <div>
-            <label htmlFor="interest" className="block text-white/40 mb-1.5" style={labelStyle}>Looking For</label>
-            <select id="interest" value={form.interest} onChange={(e) => setForm({ ...form, interest: e.target.value })} className={selectClass}>
-              <option value="">Select</option>
-              <option value="Luxury">Luxury</option>
-              <option value="Investment">Investment</option>
-              <option value="Land">Land</option>
-              <option value="Mixed">Mixed / Open</option>
-            </select>
-          </div>
-          <div>
-            <label htmlFor="budget" className="block text-white/40 mb-1.5" style={labelStyle}>Budget Range</label>
-            <select id="budget" value={form.budget} onChange={(e) => setForm({ ...form, budget: e.target.value })} className={selectClass}>
-              <option value="">Select</option>
-              <option value="Under $500K">Under $500K</option>
-              <option value="$500K–$1M">$500K – $1M</option>
-              <option value="$1M–$3M">$1M – $3M</option>
-              <option value="$3M–$5M">$3M – $5M</option>
-              <option value="$5M+">$5M+</option>
-            </select>
-          </div>
+          <label htmlFor="email" className="block text-white/40 mb-1.5" style={labelStyle}>Email</label>
+          <input id="email" type="email" required maxLength={255} value={form.email} onChange={(e) => setForm(prev => ({ ...prev, email: e.target.value }))} className={inputClass} />
         </div>
         <div>
-          <label htmlFor="timeline" className="block text-white/40 mb-1.5" style={labelStyle}>Timeline</label>
-          <select id="timeline" value={form.timeline} onChange={(e) => setForm({ ...form, timeline: e.target.value })} className={selectClass}>
+          <label htmlFor="phone" className="block text-white/40 mb-1.5" style={labelStyle}>Phone</label>
+          <input id="phone" type="tel" required maxLength={20} value={form.phone} onChange={(e) => setForm(prev => ({ ...prev, phone: e.target.value }))} className={inputClass} />
+        </div>
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+        <div>
+          <label htmlFor="interest" className="block text-white/40 mb-1.5" style={labelStyle}>Looking For</label>
+          <select id="interest" value={form.interest} onChange={(e) => setForm(prev => ({ ...prev, interest: e.target.value }))} className={selectClass}>
             <option value="">Select</option>
-            <option value="Immediately">Immediately</option>
-            <option value="1–3 months">1–3 months</option>
-            <option value="3–6 months">3–6 months</option>
-            <option value="6+ months">6+ months</option>
-            <option value="Exploring">Just exploring</option>
+            <option value="Luxury">Luxury</option>
+            <option value="Investment">Investment</option>
+            <option value="Land">Land</option>
+            <option value="Mixed">Mixed / Open</option>
           </select>
         </div>
         <div>
-          <label htmlFor="notes" className="block text-white/40 mb-1.5" style={labelStyle}>Additional Notes <span className="normal-case tracking-normal text-white/25">(optional)</span></label>
-          <textarea id="notes" maxLength={1000} rows={2} value={form.notes} onChange={(e) => setForm({ ...form, notes: e.target.value })} className={`${inputClass} resize-none`} />
+          <label htmlFor="budget" className="block text-white/40 mb-1.5" style={labelStyle}>Budget Range</label>
+          <select id="budget" value={form.budget} onChange={(e) => setForm(prev => ({ ...prev, budget: e.target.value }))} className={selectClass}>
+            <option value="">Select</option>
+            <option value="Under $500K">Under $500K</option>
+            <option value="$500K–$1M">$500K – $1M</option>
+            <option value="$1M–$3M">$1M – $3M</option>
+            <option value="$3M–$5M">$3M – $5M</option>
+            <option value="$5M+">$5M+</option>
+          </select>
         </div>
-        <button
-          type="submit"
-          disabled={loading}
-          className="w-full bg-gold hover:bg-[hsl(42,37%,50%)] text-white py-4 tracking-[0.15em] uppercase font-sans font-medium transition-colors duration-300 disabled:opacity-50 active:scale-[0.98] mt-1"
-          style={{ fontSize: "0.7rem", letterSpacing: "0.2em" }}
-        >
-          {loading ? "Submitting…" : "Get Access to Private Deals"}
-        </button>
-        <p className="text-center text-white/30 text-xs tracking-wide">
-          Your information is never shared. Private advisory only.
-        </p>
-      </form>
-    );
-
+      </div>
+      <div>
+        <label htmlFor="timeline" className="block text-white/40 mb-1.5" style={labelStyle}>Timeline</label>
+        <select id="timeline" value={form.timeline} onChange={(e) => setForm(prev => ({ ...prev, timeline: e.target.value }))} className={selectClass}>
+          <option value="">Select</option>
+          <option value="Immediately">Immediately</option>
+          <option value="1–3 months">1–3 months</option>
+          <option value="3–6 months">3–6 months</option>
+          <option value="6+ months">6+ months</option>
+          <option value="Exploring">Just exploring</option>
+        </select>
+      </div>
+      <div>
+        <label htmlFor="notes" className="block text-white/40 mb-1.5" style={labelStyle}>Additional Notes <span className="normal-case tracking-normal text-white/25">(optional)</span></label>
+        <textarea id="notes" maxLength={1000} rows={2} value={form.notes} onChange={(e) => setForm(prev => ({ ...prev, notes: e.target.value }))} className={`${inputClass} resize-none`} />
+      </div>
+      <button
+        type="submit"
+        disabled={loading}
+        className="w-full bg-gold hover:bg-[hsl(42,37%,50%)] text-white py-4 tracking-[0.15em] uppercase font-sans font-medium transition-colors duration-300 disabled:opacity-50 active:scale-[0.98] mt-1"
+        style={{ fontSize: "0.7rem", letterSpacing: "0.2em" }}
+      >
+        {loading ? "Submitting…" : "Get Access to Private Deals"}
+      </button>
+      <p className="text-center text-white/30 text-xs tracking-wide">
+        Your information is never shared. Private advisory only.
+      </p>
+    </form>
+  );
   return (
     <div className="min-h-screen bg-[hsl(220,15%,8%)]">
       <SEOHead
@@ -203,16 +201,16 @@ const OffMarketRealEstateAustin = () => {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start max-w-6xl mx-auto">
             {/* Left — Copy */}
             <div className="lg:pt-8">
-              <p className="text-gold/80 mb-4 font-bold" style={labelStyle}>
+              <p className="text-gold mb-4 font-bold" style={labelStyle}>
                 PRIVATE REAL ESTATE ACCESS
               </p>
               <h1 className="font-display text-[2rem] md:text-[2.8rem] lg:text-[3.4rem] font-light text-white leading-[1.1] mb-6 tracking-tight">
                 Access Off-Market Real Estate Deals in Austin
               </h1>
-              <p className="text-white/60 text-lg font-light leading-relaxed mb-8 max-w-lg">
+              <p className="text-white/75 text-lg md:text-xl font-light leading-relaxed mb-8 max-w-lg">
                 Private listings, investment opportunities, and development deals not available on the MLS.
               </p>
-              <ul className="space-y-3 mb-10">
+              <ul className="space-y-3.5 mb-10">
                 {[
                   "Luxury homes and private listings",
                   "Investment and value-add opportunities",
@@ -221,7 +219,7 @@ const OffMarketRealEstateAustin = () => {
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-gold mt-2 shrink-0" />
-                    <span className="text-white/55 text-sm font-light">{item}</span>
+                    <span className="text-white/65 text-[0.925rem] font-light leading-relaxed">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -242,7 +240,7 @@ const OffMarketRealEstateAustin = () => {
               <h2 className="font-display text-xl md:text-2xl font-light text-white mb-6">
                 Tell Us What You're Looking For
               </h2>
-              <FormBlock />
+              {formContent}
             </div>
           </div>
         </div>

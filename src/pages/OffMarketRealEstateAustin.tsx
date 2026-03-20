@@ -236,12 +236,16 @@ const OffMarketRealEstateAustin = () => {
 
             {/* Right — Form */}
             <div id="lead-form" className="border border-white/10 p-6 md:p-10 bg-white/[0.02]">
-              <p className="text-gold mb-3 font-bold" style={labelStyle}>
-                REQUEST ACCESS
-              </p>
-              <h2 className="font-display text-xl md:text-2xl font-light text-white mb-6">
-                Tell Us What You're Looking For
-              </h2>
+              {!submitted && (
+                <>
+                  <p className="text-gold mb-3 font-bold" style={labelStyle}>
+                    REQUEST ACCESS
+                  </p>
+                  <h2 className="font-display text-xl md:text-2xl font-light text-white mb-6">
+                    Tell Us What You're Looking For
+                  </h2>
+                </>
+              )}
               {formContent}
             </div>
           </div>

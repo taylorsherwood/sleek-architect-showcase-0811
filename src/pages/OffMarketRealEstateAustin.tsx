@@ -234,7 +234,7 @@ const OffMarketRealEstateAustin = () => {
 
             {/* Right — Form */}
             <div id="lead-form" className="border border-white/10 p-6 md:p-10 bg-white/[0.02]">
-              <p className="text-gold/80 mb-3 font-bold" style={labelStyle}>
+              <p className="text-gold mb-3 font-bold" style={labelStyle}>
                 REQUEST ACCESS
               </p>
               <h2 className="font-display text-xl md:text-2xl font-light text-white mb-6">
@@ -249,7 +249,7 @@ const OffMarketRealEstateAustin = () => {
       {/* ── HOW IT WORKS ────────────────────────────── */}
       <section className="py-16 md:py-24 bg-[hsl(220,15%,6%)] border-t border-white/5">
         <div className="container mx-auto px-6 max-w-4xl">
-          <p className="text-gold/80 text-center mb-4 font-bold" style={labelStyle}>
+          <p className="text-gold text-center mb-4 font-bold" style={labelStyle}>
             HOW IT WORKS
           </p>
           <h2 className="font-display text-2xl md:text-3xl font-light text-white text-center mb-14">
@@ -262,7 +262,7 @@ const OffMarketRealEstateAustin = () => {
               { step: "03", title: "Early Access", body: "You see opportunities before they hit the public market — with context and advisory support." },
             ].map((item) => (
               <div key={item.step} className="text-center md:text-left">
-                <span className="text-gold/50 font-display text-4xl font-light">{item.step}</span>
+                <span className="text-gold/70 font-display text-4xl font-light">{item.step}</span>
                 <h3 className="text-white font-medium text-base mt-3 mb-2">{item.title}</h3>
                 <p className="text-white/45 text-sm leading-relaxed">{item.body}</p>
               </div>
@@ -274,7 +274,7 @@ const OffMarketRealEstateAustin = () => {
       {/* ── WHY OFF-MARKET ──────────────────────────── */}
       <section className="py-16 md:py-24 bg-[hsl(220,15%,8%)] border-t border-white/5">
         <div className="container mx-auto px-6 max-w-4xl">
-          <p className="text-gold/80 text-center mb-4 font-bold" style={labelStyle}>
+          <p className="text-gold text-center mb-4 font-bold" style={labelStyle}>
             THE ADVANTAGE
           </p>
           <h2 className="font-display text-2xl md:text-3xl font-light text-white text-center mb-12">
@@ -299,7 +299,7 @@ const OffMarketRealEstateAustin = () => {
       {/* ── WHAT YOU CAN ACCESS ─────────────────────── */}
       <section className="py-16 md:py-24 bg-[hsl(220,15%,6%)] border-t border-white/5">
         <div className="container mx-auto px-6 max-w-4xl">
-          <p className="text-gold/80 text-center mb-4 font-bold" style={labelStyle}>
+          <p className="text-gold text-center mb-4 font-bold" style={labelStyle}>
             DEAL TYPES
           </p>
           <h2 className="font-display text-2xl md:text-3xl font-light text-white text-center mb-12">
@@ -315,7 +315,7 @@ const OffMarketRealEstateAustin = () => {
               <div key={item.title} className="p-6 md:p-8">
                 <h3 className="text-white font-medium text-base mb-2">{item.title}</h3>
                 <p className="text-white/45 text-sm leading-relaxed mb-3">{item.desc}</p>
-                <Link to={item.link} className="text-gold/70 hover:text-gold transition-colors text-xs tracking-[0.12em] uppercase">
+                <Link to={item.link} className="text-gold hover:text-gold transition-colors text-xs tracking-[0.12em] uppercase">
                   {item.linkText} →
                 </Link>
               </div>
@@ -327,7 +327,7 @@ const OffMarketRealEstateAustin = () => {
       {/* ── AUTHORITY ───────────────────────────────── */}
       <section className="py-16 md:py-24 bg-[hsl(220,15%,8%)] border-t border-white/5">
         <div className="container mx-auto px-6 max-w-3xl text-center">
-          <p className="text-gold/80 mb-4 font-bold" style={labelStyle}>
+          <p className="text-gold mb-4 font-bold" style={labelStyle}>
             WHY ECHELON
           </p>
           <h2 className="font-display text-2xl md:text-3xl font-light text-white mb-10">

@@ -183,7 +183,8 @@ const Connect = () => {
               <img
                 src={combinedLogo}
                 alt="eXp Realty | Echelon Property Group"
-                style={{ height: "300px", marginBottom: "-40px" }}
+                className="w-full"
+                style={{ height: "300px", marginBottom: "-40px", objectFit: "contain" }}
                 loading="eager"
               />
               {/* Scroll indicator */}

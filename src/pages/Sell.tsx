@@ -459,7 +459,8 @@ const Sell = () => {
                 {valErrors.email && <p className="text-destructive text-sm mt-1">{valErrors.email}</p>}
               </div>
               <div>
-                <input type="tel" name="phone" placeholder="Phone (Optional)" value={valForm.phone} onChange={handleValChange} maxLength={20} className={inputLight} />
+                <input type="tel" name="phone" placeholder="Phone Number" value={valForm.phone} onChange={handleValChange} maxLength={20} className={inputLight} />
+                {valErrors.phone && <p className="text-destructive text-sm mt-1">{valErrors.phone}</p>}
               </div>
               <div>
                 <input type="text" name="address" placeholder="Property Address" value={valForm.address} onChange={handleValChange} maxLength={300} className={inputLight} />

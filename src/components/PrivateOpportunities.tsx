@@ -33,7 +33,7 @@ interface PrivateOpportunitiesProps {
 const PrivateOpportunities = ({ variant = "light" }: PrivateOpportunitiesProps) => {
   const { toast } = useToast();
   const navigate = useNavigate();
-  const [form, setForm] = useState({ name: "", email: "", investmentRange: "" });
+  const [form, setForm] = useState({ name: "", email: "", phone: "", investmentRange: "" });
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [submitting, setSubmitting] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);

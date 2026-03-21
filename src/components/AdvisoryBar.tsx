@@ -31,6 +31,7 @@ const AdvisoryBar = () => {
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState(false);
   const { toast } = useToast();
   const location = useLocation();
 

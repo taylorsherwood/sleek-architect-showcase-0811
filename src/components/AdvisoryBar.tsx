@@ -212,7 +212,7 @@ const AdvisoryBar = () => {
               </div>
             </div>
 
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form onSubmit={handleSubmit} className="space-y-6">
               <p className="text-primary-foreground/80 text-sm font-medium">
                 Where should we send your listings?
               </p>

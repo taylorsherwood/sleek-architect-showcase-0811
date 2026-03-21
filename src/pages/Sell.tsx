@@ -8,6 +8,7 @@ import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
 import Testimonials from "@/components/Testimonials";
 import FeaturedListings from "@/components/FeaturedListings";
+import { formatPhoneNumber, buildWeb3Payload } from "@/lib/formUtils";
 import {
   CheckCircle,
   ArrowRight,

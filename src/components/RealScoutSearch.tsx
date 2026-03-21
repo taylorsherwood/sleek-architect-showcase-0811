@@ -35,6 +35,11 @@ const RealScoutSearch = () => {
             {createElement("realscout-advanced-search", {
               "agent-encoded-id": "QWdlbnQtMjg5NDU2",
             })}
+            <noscript>
+              <p className="text-center text-muted-foreground py-4">
+                <a href="https://taylorsherwood.realscout.com/" className="underline">Search Austin homes on our listings portal →</a>
+              </p>
+            </noscript>
           </div>
         </div>
       </div>
@@ -43,4 +48,3 @@ const RealScoutSearch = () => {
 };
 
 export default RealScoutSearch;
-

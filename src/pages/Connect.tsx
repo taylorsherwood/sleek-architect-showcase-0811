@@ -181,9 +181,9 @@ const Connect = () => {
           <ScrollReveal>
             <div className="flex flex-col items-center -mb-2 px-4">
               <img
-                src={echelonLogo}
-                alt="Echelon Property Group"
-                style={{ height: "140px" }}
+                src={combinedLogo}
+                alt="eXp Realty | Echelon Property Group"
+                style={{ height: "100px" }}
                 loading="eager"
               />
               {/* Scroll indicator */}

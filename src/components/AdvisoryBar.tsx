@@ -53,17 +53,19 @@ const AdvisoryBar = () => {
       const triggerPoint = hero ? hero.offsetTop + hero.offsetHeight : window.innerHeight;
       const pastHero = window.scrollY >= triggerPoint;
 
-      // On homepage: show only when scrolled past hero, hide when back at hero
-      if (isHomePage) {
+      if (location.pathname === "/") {
+        // Homepage: dynamically show/hide based on hero position
         setVisible(pastHero);
       } else {
-        // On other pages, show once past equivalent scroll depth
         if (pastHero) setVisible(true);
       }
     };
 
     const onMouseLeave = (e: MouseEvent) => {
-      if (e.clientY <= 0) setVisible(true);
+      // Only trigger exit-intent on non-homepage, or if already past hero
+      if (e.clientY <= 0 && location.pathname !== "/") {
+        setVisible(true);
+      }
     };
 
     window.addEventListener("scroll", onScroll, { passive: true });
@@ -72,7 +74,7 @@ const AdvisoryBar = () => {
       window.removeEventListener("scroll", onScroll);
       document.removeEventListener("mouseleave", onMouseLeave);
     };
-  }, []);
+  }, [location.pathname]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

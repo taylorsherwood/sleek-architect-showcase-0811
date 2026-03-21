@@ -214,7 +214,7 @@ const AdvisoryBar = () => {
 
             <form onSubmit={handleSubmit} className="space-y-6">
               <p className="text-primary-foreground/80 text-sm font-medium">
-                Where should we send your listings?
+                Where should we send your curated listings?
               </p>
               <div>
                 <input

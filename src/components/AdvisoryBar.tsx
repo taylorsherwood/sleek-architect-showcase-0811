@@ -197,7 +197,7 @@ const AdvisoryBar = () => {
                 </p>
 
                 {/* Body */}
-                <p className="text-primary-foreground/55 text-[13px] leading-[1.7] max-w-[280px] mx-auto mb-7">
+                <p className="text-white/[0.85] text-sm font-normal leading-[1.8] max-w-[280px] mx-auto mb-7">
                   Thanks — I've got your request.<br />
                   I'll personally send you opportunities aligned with what you're looking for.
                 </p>

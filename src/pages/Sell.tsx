@@ -515,7 +515,8 @@ const Sell = () => {
                 {conErrors.email && <p className="text-destructive text-sm mt-1">{conErrors.email}</p>}
               </div>
               <div>
-                <input type="tel" name="phone" placeholder="Phone (Optional)" value={conForm.phone} onChange={handleConChange} maxLength={20} className={inputDark} />
+                <input type="tel" name="phone" placeholder="Phone Number" value={conForm.phone} onChange={handleConChange} maxLength={20} className={inputDark} />
+                {conErrors.phone && <p className="text-destructive text-sm mt-1">{conErrors.phone}</p>}
               </div>
               <div>
                 <textarea name="message" placeholder="Tell us about your property and goals..." value={conForm.message} onChange={handleConChange} rows={4} maxLength={2000} className={`${inputDark} resize-none`} />

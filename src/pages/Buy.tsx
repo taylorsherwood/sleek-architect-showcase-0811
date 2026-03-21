@@ -597,12 +597,12 @@ const Buy = () => {
                 <input
                   type="tel"
                   name="phone"
-                  placeholder="Phone (Optional)"
+                  placeholder="Phone Number"
                   value={form.phone}
                   onChange={handleChange}
                   maxLength={20}
                   className={`${inputClass} border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/30 focus:border-primary-foreground/50`} />
-                
+                {errors.phone && <p className="text-destructive text-sm mt-1">{errors.phone}</p>}
               </div>
               <div>
                 <textarea

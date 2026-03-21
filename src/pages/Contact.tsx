@@ -9,7 +9,7 @@ import { z } from "zod";
 const contactSchema = z.object({
   name: z.string().trim().min(1, "Name is required").max(100, "Name must be under 100 characters"),
   email: z.string().trim().email("Please enter a valid email").max(255),
-  phone: z.string().trim().max(20).optional(),
+  phone: z.string().trim().min(1, "Phone is required").max(20),
   interest: z.string().min(1, "Please select your interest"),
   message: z.string().trim().min(1, "Message is required").max(2000, "Message must be under 2000 characters")
 });

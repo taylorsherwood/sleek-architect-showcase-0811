@@ -189,7 +189,7 @@ const Connect = () => {
               />
               {/* Scroll indicator */}
               <div
-                className="flex flex-col items-center -mt-12"
+                className="flex flex-col items-center -mt-16"
                 style={{
                   opacity: 1 - scrollProgress * 5,
                   pointerEvents: "none",
@@ -202,7 +202,7 @@ const Connect = () => {
           </ScrollReveal>
 
           {/* ── CTA Strip ── */}
-          <div className="px-8 mb-3">
+          <div className="px-8 mb-3 mt-4">
             <div className="flex flex-col gap-2.5">
               {[
                 { title: "EXPLORE ECHELON LISTINGS", href: "https://www.echelonpropertygroup.com/listings", icon: Home },

@@ -164,7 +164,8 @@ const OffMarketHomes = () => {
                     {errors.email && <p className="text-destructive text-sm mt-1">{errors.email}</p>}
                   </div>
                   <div>
-                    <input type="tel" name="phone" placeholder="Phone (Optional)" value={form.phone} onChange={handleChange} className={inputClass} maxLength={20} />
+                    <input type="tel" name="phone" placeholder="Phone Number" value={form.phone} onChange={handleChange} className={inputClass} maxLength={20} />
+                    {errors.phone && <p className="text-destructive text-sm mt-1">{errors.phone}</p>}
                   </div>
                   <div>
                     <select name="priceRange" value={form.priceRange} onChange={handleChange} className={`${inputClass} bg-muted`}>

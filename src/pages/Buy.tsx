@@ -264,17 +264,18 @@ const Buy = () => {
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          access_key: "81cc426e-b1a8-4e5e-b2a0-0d25738dfe12",
+        body: JSON.stringify(buildWeb3Payload({
+          accessKey: "81cc426e-b1a8-4e5e-b2a0-0d25738dfe12",
           subject: "Buyer Consultation Request",
-          from_name: "Echelon Property Group Website",
-          to: "taylor@echelonpropertygroup.com,echelonpropertygroup@followupboss.me",
           name: form.name,
           email: form.email,
-          phone: form.phone || "Not provided",
-          "Interest": "Buying a Home",
-          "Message": form.message || "Buyer consultation request from Buy page."
-        })
+          phone: form.phone,
+          source: "Buy Page",
+          extra: {
+            interest: "Buying a Home",
+            message: form.message || "Buyer consultation request from Buy page.",
+          },
+        }))
       });
       const data = await response.json();
       if (data.success) {

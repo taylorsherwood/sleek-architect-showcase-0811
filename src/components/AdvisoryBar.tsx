@@ -3,6 +3,7 @@ import { X, Check } from "lucide-react";
 import { z } from "zod";
 import { useToast } from "@/hooks/use-toast";
 import { formatPhoneNumber, buildWeb3Payload } from "@/lib/formUtils";
+import echelonLogo from "@/assets/echelon-logo-gold.png";
 import { useLocation } from "react-router-dom";
 import {
   Dialog,

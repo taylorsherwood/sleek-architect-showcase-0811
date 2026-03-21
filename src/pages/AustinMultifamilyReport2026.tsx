@@ -17,6 +17,7 @@ import {
 } from "@/components/ui/select";
 import { TrendingUp, Building2, MapPin, BarChart3, CheckCircle2, ArrowDown } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { formatPhoneNumber } from "@/lib/formUtils";
 import reportCover from "@/assets/multifamily-report-cover.png";
 
 const PrivateOpportunities = lazy(() => import("@/components/PrivateOpportunities"));

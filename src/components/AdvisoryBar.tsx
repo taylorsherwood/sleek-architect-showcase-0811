@@ -185,7 +185,6 @@ const AdvisoryBar = () => {
               See off-market homes and investment opportunities before they hit Zillow
             </DialogDescription>
             <p className="text-[hsl(var(--gold))] text-xs tracking-widest uppercase font-medium mt-1">
-              New opportunities added weekly
             </p>
           </DialogHeader>
 

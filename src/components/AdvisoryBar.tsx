@@ -208,7 +208,7 @@ const AdvisoryBar = () => {
                 </p>
 
                 {/* Micro-trust */}
-                <p className="text-primary-foreground/30 text-[10px] tracking-wide mb-12">
+                <p className="text-white/[0.38] text-[10px] tracking-[0.15em] mb-12">
                   Expect a quick follow-up.
                 </p>
 

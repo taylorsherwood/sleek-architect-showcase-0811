@@ -62,18 +62,19 @@ const OffMarketHomes = () => {
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          access_key: "81cc426e-b1a8-4e5e-b2a0-0d25738dfe12",
+        body: JSON.stringify(buildWeb3Payload({
+          accessKey: "81cc426e-b1a8-4e5e-b2a0-0d25738dfe12",
           subject: "New Off-Market Access Request",
-          from_name: "Echelon Property Group Website",
-          to: "taylor@echelonpropertygroup.com,echelonpropertygroup@followupboss.me",
           name: form.name,
           email: form.email,
-          phone: form.phone || "Not provided",
-          "Preferred Price Range": form.priceRange,
-          "Preferred Neighborhoods": form.neighborhoods || "Not specified",
-          "Additional Notes": form.message || "None",
-        }),
+          phone: form.phone,
+          source: "Off-Market Homes Page",
+          extra: {
+            "Preferred Price Range": form.priceRange,
+            "Preferred Neighborhoods": form.neighborhoods || "Not specified",
+            "Additional Notes": form.message || "None",
+          },
+        })),
       });
       const data = await response.json();
       if (data.success) {

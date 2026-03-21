@@ -3,7 +3,7 @@ import SEOHead from "@/components/SEOHead";
 
 const PrivateOpportunities = lazy(() => import("@/components/PrivateOpportunities"));
 import taylorHeadshot from "@/assets/taylor-headshot.jpg";
-import echelonLogo from "@/assets/echelon-logo-gold.png";
+import combinedLogo from "@/assets/exp-echelon-combined-logo.png";
 import { Instagram, Mail, Phone, Home, Search, Mountain } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
 import { useHeroScroll } from "@/hooks/useHeroScroll";
@@ -181,9 +181,9 @@ const Connect = () => {
           <ScrollReveal>
             <div className="flex flex-col items-center -mb-2 px-4">
               <img
-                src={echelonLogo}
-                alt="Echelon Property Group"
-                style={{ height: "140px" }}
+                src={combinedLogo}
+                alt="eXp Realty | Echelon Property Group"
+                style={{ height: "100px" }}
                 loading="eager"
               />
               {/* Scroll indicator */}

@@ -98,6 +98,7 @@ const AdvisoryBar = () => {
           email: form.email,
           phone: form.phone,
           source: "Homepage Advisory Bar",
+          extra: form.lookingFor.trim() ? { looking_for: form.lookingFor.trim() } : {},
         }))
       });
       const data = await response.json();

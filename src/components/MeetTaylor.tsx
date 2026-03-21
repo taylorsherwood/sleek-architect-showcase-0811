@@ -21,7 +21,7 @@ const MeetTaylor = () => {
                 src="/lovable-uploads/537facb0-1fbc-450c-8c4a-c1d06c4aa924.jpg"
                 loading="lazy"
                 decoding="async" />
-              <img src="/assets/clhms-badge.png" alt="CLHMS Guild Badge" title="Certified Luxury Home Marketing Specialist badge" className="absolute bottom-3 right-3 w-20 h-20 opacity-85" loading="lazy" decoding="async" />
+              <img src="/static-assets/clhms-badge.png" alt="CLHMS Guild Badge" title="Certified Luxury Home Marketing Specialist badge" className="absolute bottom-3 right-3 w-20 h-20 opacity-85" loading="lazy" decoding="async" />
             </div>
             
             <div>
@@ -48,7 +48,7 @@ const MeetTaylor = () => {
               SCHEDULE A PRIVATE CONSULTATION
             </Link>
             <div className="mt-6 mb-0">
-              <img src="/assets/echelon-logo-gold.png" alt="Echelon Property Group" title="Echelon Property Group logo" className="mx-auto h-44 w-auto" loading="lazy" decoding="async" />
+              <img src="/static-assets/echelon-logo-gold.png" alt="Echelon Property Group" title="Echelon Property Group logo" className="mx-auto h-44 w-auto" loading="lazy" decoding="async" />
             </div>
           </div>
         </div>

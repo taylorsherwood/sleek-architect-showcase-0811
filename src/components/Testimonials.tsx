@@ -142,7 +142,7 @@ const Testimonials = () => {
 
                 {/* Secondary logo watermark — static path, lazy loaded */}
                 <img
-                  src="/assets/echelon-secondary-logo.png"
+                  src="/static-assets/echelon-secondary-logo.png"
                   alt=""
                   className="absolute bottom-4 right-4 w-10 h-auto pointer-events-none"
                   aria-hidden="true"

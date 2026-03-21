@@ -27,7 +27,7 @@ const listings = [
   isOffMarketCard: true
 },
 {
-  image: "/assets/listing-3.jpg",
+  image: "/static-assets/listing-3.jpg",
   address: "Ranch Estate on 42 Acres",
   location: "Texas Hill Country",
   price: "$5M+ Hill Country Estate",
@@ -48,7 +48,7 @@ const ListingCard = ({
       <Link to={listing.link} className="group block">
         <div className="relative overflow-hidden rounded-sm aspect-[4/3] bg-gradient-to-br from-primary via-primary to-primary/80 flex flex-col items-center justify-center transition-all duration-700 ease-in-out group-hover:from-gold group-hover:via-gold group-hover:to-gold/80">
           <img
-            src="/assets/echelon-logo-gold-square.png"
+            src="/static-assets/echelon-logo-gold-square.png"
             alt="Echelon Property Group"
             title="Echelon Property Group — View exclusive listings"
             className="w-1/2 h-auto object-contain transition-all duration-500 ease-out group-hover:brightness-0 group-hover:invert"

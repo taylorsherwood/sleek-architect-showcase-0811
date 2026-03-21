@@ -41,9 +41,9 @@ const NewsletterSection = lazy(async () => {
               BECOME AN ECHELON INSIDER
             </a>
             <div className="mt-6 flex items-center justify-center gap-10 md:gap-14">
-              <img src="/assets/exp-commercial-logo.png" alt="eXp Commercial" title="eXp Commercial — Echelon Property Group" className="h-[13rem] md:h-60 w-auto object-contain" loading="lazy" decoding="async" />
-              <img src="/assets/exp-realty-luxury-logo.png" alt="eXp Realty Luxury" title="eXp Realty Luxury — Echelon Property Group" className="h-[13rem] md:h-60 w-auto object-contain" loading="lazy" decoding="async" />
-              <img src="/assets/exp-realty-logo.png" alt="eXp Realty" title="eXp Realty — Echelon Property Group brokerage" className="h-[13rem] md:h-60 w-auto object-contain" loading="lazy" decoding="async" />
+              <img src="/static-assets/exp-commercial-logo.png" alt="eXp Commercial" title="eXp Commercial — Echelon Property Group" className="h-[13rem] md:h-60 w-auto object-contain" loading="lazy" decoding="async" />
+              <img src="/static-assets/exp-realty-luxury-logo.png" alt="eXp Realty Luxury" title="eXp Realty Luxury — Echelon Property Group" className="h-[13rem] md:h-60 w-auto object-contain" loading="lazy" decoding="async" />
+              <img src="/static-assets/exp-realty-logo.png" alt="eXp Realty" title="eXp Realty — Echelon Property Group brokerage" className="h-[13rem] md:h-60 w-auto object-contain" loading="lazy" decoding="async" />
             </div>
           </div>
         </div>

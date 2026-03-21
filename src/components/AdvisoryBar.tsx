@@ -176,8 +176,8 @@ const AdvisoryBar = () => {
 
       {/* Form modal */}
       <Dialog open={modalOpen} onOpenChange={setModalOpen}>
-        <DialogContent className="sm:max-w-md bg-primary border-[hsl(var(--gold)/0.3)]">
-          <DialogHeader>
+        <DialogContent className="sm:max-w-md bg-primary border-[hsl(var(--gold)/0.3)] gap-6">
+          <DialogHeader className="space-y-3">
             <DialogTitle className="text-primary-foreground text-xl">
               Get Access to Private Listings in Austin
             </DialogTitle>
@@ -200,7 +200,7 @@ const AdvisoryBar = () => {
 
           <>
             {/* Value bullets */}
-            <div className="flex flex-col gap-1.5 mt-1 mb-3">
+            <div className="flex flex-col gap-2.5 mt-2 mb-4">
               <div className="flex items-center gap-2 text-primary-foreground/80 text-sm">
                 <span className="text-[hsl(var(--gold))]">✔</span> Off-market homes
               </div>
@@ -212,7 +212,7 @@ const AdvisoryBar = () => {
               </div>
             </div>
 
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form onSubmit={handleSubmit} className="space-y-6">
               <p className="text-primary-foreground/80 text-sm font-medium">
                 Where should we send your listings?
               </p>

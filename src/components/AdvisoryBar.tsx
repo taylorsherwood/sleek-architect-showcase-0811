@@ -34,7 +34,7 @@ const AdvisoryBar = () => {
   const { toast } = useToast();
   const location = useLocation();
 
-  const isHiddenRoute = HIDDEN_ROUTES.includes(location.pathname);
+  const isHomePage = location.pathname === "/";
 
   const dismiss = useCallback(() => {
     setDismissed(true);

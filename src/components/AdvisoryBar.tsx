@@ -107,7 +107,6 @@ const AdvisoryBar = () => {
       const data = await response.json();
       if (data.success) {
         setSubmitted(true);
-        dismiss();
       } else {
         setSubmitError(true);
       }

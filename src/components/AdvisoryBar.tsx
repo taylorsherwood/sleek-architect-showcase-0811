@@ -179,11 +179,14 @@ const AdvisoryBar = () => {
         <DialogContent className="sm:max-w-md bg-primary border-[hsl(var(--gold)/0.3)]">
           <DialogHeader>
             <DialogTitle className="text-primary-foreground text-xl">
-              Get Access to Private Listings
+              Get Access to Private Listings in Austin
             </DialogTitle>
             <DialogDescription className="text-primary-foreground/70">
               See off-market homes and investment opportunities before they hit Zillow
             </DialogDescription>
+            <p className="text-[hsl(var(--gold))] text-xs tracking-widest uppercase font-medium mt-1">
+              New opportunities added weekly
+            </p>
           </DialogHeader>
 
           {submitted ?

@@ -264,7 +264,7 @@ const AdvisoryBar = () => {
                 type="submit"
                 disabled={submitting}
                 className="w-full px-5 py-3 text-sm font-medium text-primary-foreground border border-primary-foreground rounded transition-all duration-200 hover:bg-primary-foreground hover:text-primary hover:font-bold disabled:opacity-50">
-                  {submitting ? "Submitting…" : "Send Me Listings"}
+                  {submitting ? "Submitting…" : "GET ACCESS"}
                 </button>
               </div>
               <p className="text-primary-foreground/40 text-xs text-center">

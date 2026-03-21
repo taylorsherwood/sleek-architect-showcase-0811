@@ -212,7 +212,7 @@ const PrivateOpportunities = ({ variant = "light" }: PrivateOpportunitiesProps) 
                     type="tel"
                     placeholder="Phone Number"
                     value={form.phone}
-                    onChange={(e) => setForm({ ...form, phone: e.target.value })}
+                    onChange={(e) => setForm({ ...form, phone: formatPhoneNumber(e.target.value) })}
                     maxLength={20}
                     className={`w-full px-4 py-3 rounded text-sm transition-colors focus:outline-none ${
                       isDark

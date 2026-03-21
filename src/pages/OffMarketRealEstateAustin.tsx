@@ -106,7 +106,7 @@ const OffMarketRealEstateAustin = () => {
         </div>
         <div>
           <label htmlFor="phone" className="block text-white/40 mb-1.5" style={labelStyle}>Phone</label>
-          <input id="phone" type="tel" required maxLength={20} value={form.phone} onChange={(e) => setForm(prev => ({ ...prev, phone: e.target.value }))} className={inputClass} />
+          <input id="phone" type="tel" required maxLength={20} value={form.phone} onChange={(e) => setForm(prev => ({ ...prev, phone: formatPhoneNumber(e.target.value) }))} className={inputClass} />
         </div>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">

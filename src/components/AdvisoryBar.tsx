@@ -169,10 +169,10 @@ const AdvisoryBar = () => {
         <DialogContent className="sm:max-w-md bg-primary border-[hsl(var(--gold)/0.3)]">
           <DialogHeader>
             <DialogTitle className="text-primary-foreground text-xl">
-              Request Private Access
+              Get Access to Private Listings
             </DialogTitle>
             <DialogDescription className="text-primary-foreground/70">
-              Get exclusive access to off-market listings and investment opportunities in Austin.
+              See off-market homes and investment opportunities before they hit the market
             </DialogDescription>
           </DialogHeader>
 
@@ -186,15 +186,28 @@ const AdvisoryBar = () => {
               </p>
             </div> :
 
-          <form onSubmit={handleSubmit} className="space-y-4 mt-2">
+          <>
+            {/* Value bullets */}
+            <div className="flex flex-col gap-1.5 mt-1 mb-1">
+              <div className="flex items-center gap-2 text-primary-foreground/80 text-sm">
+                <span className="text-[hsl(var(--gold))]">✔</span> Off-market homes
+              </div>
+              <div className="flex items-center gap-2 text-primary-foreground/80 text-sm">
+                <span className="text-[hsl(var(--gold))]">✔</span> Development + investment deals
+              </div>
+              <div className="flex items-center gap-2 text-primary-foreground/80 text-sm">
+                <span className="text-[hsl(var(--gold))]">✔</span> Sent directly to you
+              </div>
+            </div>
+
+            <form onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <input
                 type="text"
-                placeholder="Full Name"
+                placeholder="First Name"
                 value={form.name}
                 onChange={(e) => setForm({ ...form, name: e.target.value })}
                 className="w-full px-4 py-3 bg-primary-foreground/10 border border-primary-foreground/20 rounded text-primary-foreground placeholder:text-primary-foreground/40 text-sm focus:outline-none focus:border-[hsl(var(--gold))] transition-colors" />
-              
                 {errors.name &&
               <p className="text-destructive text-xs mt-1">{errors.name}</p>
               }
@@ -206,7 +219,6 @@ const AdvisoryBar = () => {
                 value={form.email}
                 onChange={(e) => setForm({ ...form, email: e.target.value })}
                 className="w-full px-4 py-3 bg-primary-foreground/10 border border-primary-foreground/20 rounded text-primary-foreground placeholder:text-primary-foreground/40 text-sm focus:outline-none focus:border-[hsl(var(--gold))] transition-colors" />
-              
                 {errors.email &&
               <p className="text-destructive text-xs mt-1">{errors.email}</p>
               }
@@ -219,7 +231,6 @@ const AdvisoryBar = () => {
                 onChange={(e) => setForm({ ...form, phone: formatPhoneNumber(e.target.value) })}
                 maxLength={20}
                 className="w-full px-4 py-3 bg-primary-foreground/10 border border-primary-foreground/20 rounded text-primary-foreground placeholder:text-primary-foreground/40 text-sm focus:outline-none focus:border-[hsl(var(--gold))] transition-colors" />
-              
                 {errors.phone &&
               <p className="text-destructive text-xs mt-1">{errors.phone}</p>
               }
@@ -228,10 +239,13 @@ const AdvisoryBar = () => {
               type="submit"
               disabled={submitting}
               className="w-full px-5 py-3 text-sm font-medium text-primary-foreground border border-primary-foreground rounded transition-all duration-200 hover:bg-primary-foreground hover:text-primary hover:font-bold disabled:opacity-50">
-              
-                {submitting ? "Submitting…" : "BECOME AN INSIDER"}
+                {submitting ? "Submitting…" : "Send Me Listings"}
               </button>
+              <p className="text-primary-foreground/40 text-xs text-center">
+                No spam. Just relevant opportunities.
+              </p>
             </form>
+          </>
           }
         </DialogContent>
       </Dialog>

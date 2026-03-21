@@ -49,8 +49,10 @@ const AdvisoryBar = () => {
     }
 
     const onScroll = () => {
-      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-      if (docHeight > 0 && window.scrollY / docHeight >= SCROLL_THRESHOLD) {
+      // Trigger after scrolling past the hero section
+      const hero = document.getElementById("hero") || document.querySelector("section");
+      const triggerPoint = hero ? hero.offsetTop + hero.offsetHeight : window.innerHeight;
+      if (window.scrollY >= triggerPoint) {
         setVisible(true);
       }
     };

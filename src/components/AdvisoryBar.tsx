@@ -34,7 +34,7 @@ const AdvisoryBar = () => {
   const { toast } = useToast();
   const location = useLocation();
 
-  const isHiddenRoute = HIDDEN_ROUTES.includes(location.pathname);
+  const isHomePage = location.pathname === "/";
 
   const dismiss = useCallback(() => {
     setDismissed(true);
@@ -49,11 +49,16 @@ const AdvisoryBar = () => {
     }
 
     const onScroll = () => {
-      // Trigger after scrolling past the hero section
       const hero = document.getElementById("hero") || document.querySelector("section");
       const triggerPoint = hero ? hero.offsetTop + hero.offsetHeight : window.innerHeight;
-      if (window.scrollY >= triggerPoint) {
-        setVisible(true);
+      const pastHero = window.scrollY >= triggerPoint;
+
+      // On homepage: show only when scrolled past hero, hide when back at hero
+      if (isHomePage) {
+        setVisible(pastHero);
+      } else {
+        // On other pages, show once past equivalent scroll depth
+        if (pastHero) setVisible(true);
       }
     };
 
@@ -117,6 +122,7 @@ const AdvisoryBar = () => {
     }
   };
 
+  const isHiddenRoute = HIDDEN_ROUTES.includes(location.pathname);
   if (isHiddenRoute || dismissed || !visible) return null;
 
   return (

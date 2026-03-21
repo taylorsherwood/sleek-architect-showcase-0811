@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback } from "react";
 import { X } from "lucide-react";
 import { z } from "zod";
 import { useToast } from "@/hooks/use-toast";
+import { formatPhoneNumber, buildWeb3Payload } from "@/lib/formUtils";
 import { useLocation } from "react-router-dom";
 import {
   Dialog,

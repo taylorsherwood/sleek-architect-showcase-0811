@@ -182,7 +182,7 @@ const AdvisoryBar = () => {
               Get Access to Private Listings in Austin
             </DialogTitle>
             <DialogDescription className="text-primary-foreground/70">
-              See off-market homes and investment opportunities before they hit Zillow
+              See off-market homes and investment opportunities handpicked for you before they hit Zillow
             </DialogDescription>
             <p className="text-[hsl(var(--gold))] text-xs tracking-widest uppercase font-medium mt-1">
             </p>
@@ -214,7 +214,7 @@ const AdvisoryBar = () => {
 
             <form onSubmit={handleSubmit} className="space-y-6">
               <p className="text-primary-foreground/80 text-sm font-medium">
-                Where should we send your listings?
+                Where should we send your curated listings?
               </p>
               <div>
                 <input

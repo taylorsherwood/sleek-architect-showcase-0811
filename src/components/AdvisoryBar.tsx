@@ -171,6 +171,51 @@ const AdvisoryBar = () => {
       {/* Form modal */}
       <Dialog open={modalOpen} onOpenChange={setModalOpen}>
         <DialogContent className="sm:max-w-md bg-primary border-[hsl(var(--gold)/0.3)] gap-6">
+          {submitted ? (
+            <>
+              <DialogHeader className="sr-only">
+                <DialogTitle>Submission Confirmed</DialogTitle>
+                <DialogDescription>Your request has been received.</DialogDescription>
+              </DialogHeader>
+              <div className="py-10 text-center space-y-8">
+                {/* Hero logo */}
+                <div className="relative mx-auto w-fit">
+                  <div className="absolute inset-0 blur-2xl opacity-20 bg-[hsl(var(--gold))] rounded-full scale-150" />
+                  <img src={echelonLogo} alt="Echelon Property Group" className="relative h-48 w-auto mx-auto drop-shadow-[0_0_30px_hsl(var(--gold)/0.15)]" />
+                </div>
+
+                {/* Gold divider */}
+                <div className="flex items-center justify-center gap-4">
+                  <div className="h-px w-12 bg-gradient-to-r from-transparent to-[hsl(var(--gold)/0.5)]" />
+                  <div className="w-1.5 h-1.5 rounded-full bg-[hsl(var(--gold)/0.6)]" />
+                  <div className="h-px w-12 bg-gradient-to-l from-transparent to-[hsl(var(--gold)/0.5)]" />
+                </div>
+
+                {/* Confirmation copy */}
+                <div className="space-y-4">
+                  <p className="text-primary-foreground font-display text-3xl tracking-tight">
+                    You're In
+                  </p>
+                  <p className="text-primary-foreground/65 text-sm leading-relaxed max-w-[280px] mx-auto">
+                    Thanks — I've got your request and will follow up with curated opportunities based on what you're looking for.
+                  </p>
+                  <p className="text-[hsl(var(--gold)/0.7)] text-xs tracking-[0.15em] uppercase font-medium pt-1">
+                    Keep an eye on your inbox and text messages
+                  </p>
+                </div>
+
+                {/* CTA */}
+                <div className="pt-3">
+                  <button
+                    onClick={() => { setModalOpen(false); dismiss(); }}
+                    className="px-10 py-3 text-xs tracking-[0.2em] uppercase font-medium text-primary-foreground/80 border border-primary-foreground/20 rounded transition-all duration-300 hover:bg-[hsl(var(--gold))] hover:border-[hsl(var(--gold))] hover:text-white hover:font-bold hero-cta-btn">
+                    CLOSE
+                  </button>
+                </div>
+              </div>
+            </>
+          ) : (
+          <>
           <DialogHeader className="space-y-3">
             <DialogTitle className="text-primary-foreground text-xl">
               Get Access to Private Listings in Austin
@@ -182,29 +227,7 @@ const AdvisoryBar = () => {
             </p>
           </DialogHeader>
 
-          {submitted ? (
-            <div className="py-8 text-center space-y-5">
-              <img src={echelonLogo} alt="Echelon Property Group" className="h-24 w-auto mx-auto" />
-              <div className="space-y-3">
-                <p className="text-primary-foreground font-display text-2xl">
-                  You're In
-                </p>
-                <p className="text-primary-foreground/70 text-sm leading-relaxed max-w-xs mx-auto">
-                  Thanks — I've got your request and will follow up with curated opportunities based on what you're looking for.
-                </p>
-                <p className="text-primary-foreground/50 text-xs">
-                  Keep an eye on your inbox and text messages.
-                </p>
-              </div>
-              <div className="pt-2">
-                <button
-                  onClick={() => { setModalOpen(false); dismiss(); }}
-                  className="px-8 py-2.5 text-sm font-medium text-primary-foreground border border-primary-foreground/30 rounded transition-all duration-200 hover:bg-[hsl(var(--gold))] hover:border-[hsl(var(--gold))] hover:text-white hover:font-bold hero-cta-btn">
-                  CLOSE
-                </button>
-              </div>
-            </div>
-          ) : submitError ? (
+          {submitError ? (
             <div className="py-8 text-center space-y-5">
               <div className="space-y-3">
                 <p className="text-primary-foreground font-display text-2xl">
@@ -296,6 +319,8 @@ const AdvisoryBar = () => {
                 No spam. Just relevant opportunities.
               </p>
             </form>
+          </>
+          )}
           </>
           )}
         </DialogContent>

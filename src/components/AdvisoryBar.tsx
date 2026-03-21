@@ -254,7 +254,7 @@ const AdvisoryBar = () => {
               <div>
                 <input
                 type="text"
-                placeholder="Budget, location, property type… (optional)"
+                placeholder="Budget, areas, property type (optional)"
                 value={form.lookingFor}
                 onChange={(e) => setForm({ ...form, lookingFor: e.target.value })}
                 maxLength={200}

@@ -192,7 +192,7 @@ const AdvisoryBar = () => {
                 </div>
 
                 {/* Headline — primary focal point */}
-                <p className="text-primary-foreground font-display text-[2rem] tracking-[-0.02em] leading-none mb-6">
+                <p className="text-white font-display text-[2rem] tracking-[-0.02em] leading-none mb-6 drop-shadow-[0_0_12px_rgba(255,255,255,0.06)]">
                   You're In
                 </p>
 

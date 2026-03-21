@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
-import { X } from "lucide-react";
+import { X, Check } from "lucide-react";
 import { z } from "zod";
 import { useToast } from "@/hooks/use-toast";
 import { formatPhoneNumber, buildWeb3Payload } from "@/lib/formUtils";
@@ -31,6 +31,7 @@ const AdvisoryBar = () => {
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState(false);
   const { toast } = useToast();
   const location = useLocation();
 
@@ -87,6 +88,7 @@ const AdvisoryBar = () => {
     }
     setErrors({});
     setSubmitting(true);
+    setSubmitError(false);
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
@@ -106,18 +108,10 @@ const AdvisoryBar = () => {
         setSubmitted(true);
         dismiss();
       } else {
-        toast({
-          title: "Submission Failed",
-          description: "Something went wrong. Please try again.",
-          variant: "destructive"
-        });
+        setSubmitError(true);
       }
     } catch {
-      toast({
-        title: "Submission Failed",
-        description: "Something went wrong. Please try again.",
-        variant: "destructive"
-      });
+      setSubmitError(true);
     } finally {
       setSubmitting(false);
     }
@@ -188,16 +182,49 @@ const AdvisoryBar = () => {
             </p>
           </DialogHeader>
 
-          {submitted ?
-          <div className="py-6 text-center">
-              <p className="text-primary-foreground font-semibold text-lg mb-2">
-                You're on the list.
-              </p>
-              <p className="text-primary-foreground/70 text-sm">
-                We'll be in touch with exclusive opportunities soon.
-              </p>
-            </div> :
-
+          {submitted ? (
+            <div className="py-8 text-center space-y-5">
+              <div className="mx-auto w-12 h-12 rounded-full border border-[hsl(var(--gold)/0.5)] flex items-center justify-center">
+                <Check className="w-6 h-6 text-[hsl(var(--gold))]" />
+              </div>
+              <div className="space-y-3">
+                <p className="text-primary-foreground font-display text-2xl">
+                  You're In
+                </p>
+                <p className="text-primary-foreground/70 text-sm leading-relaxed max-w-xs mx-auto">
+                  Thanks — I've got your request and will follow up with curated opportunities based on what you're looking for.
+                </p>
+                <p className="text-primary-foreground/50 text-xs">
+                  Keep an eye on your inbox and text messages.
+                </p>
+              </div>
+              <div className="pt-2">
+                <button
+                  onClick={() => setModalOpen(false)}
+                  className="px-8 py-2.5 text-sm font-medium text-primary-foreground border border-primary-foreground/30 rounded transition-all duration-200 hover:bg-[hsl(var(--gold))] hover:border-[hsl(var(--gold))] hover:text-white hover:font-bold hero-cta-btn">
+                  CLOSE
+                </button>
+              </div>
+            </div>
+          ) : submitError ? (
+            <div className="py-8 text-center space-y-5">
+              <div className="space-y-3">
+                <p className="text-primary-foreground font-display text-2xl">
+                  Something Went Wrong
+                </p>
+                <p className="text-primary-foreground/70 text-sm leading-relaxed max-w-xs mx-auto">
+                  Please try again in a moment.
+                </p>
+              </div>
+              <div className="pt-2">
+                <button
+                  onClick={() => setSubmitError(false)}
+                  className="px-8 py-2.5 text-sm font-medium text-primary-foreground border border-primary-foreground/30 rounded transition-all duration-200 hover:bg-[hsl(var(--gold))] hover:border-[hsl(var(--gold))] hover:text-white hover:font-bold hero-cta-btn">
+                  TRY AGAIN
+                </button>
+              </div>
+            </div>
+          ) : (
           <>
             {/* Value bullets */}
             <div className="flex flex-col gap-2.5 mt-2 mb-4">
@@ -272,7 +299,7 @@ const AdvisoryBar = () => {
               </p>
             </form>
           </>
-          }
+          )}
         </DialogContent>
       </Dialog>
 

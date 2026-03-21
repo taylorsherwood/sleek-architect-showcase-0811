@@ -203,7 +203,7 @@ const AdvisoryBar = () => {
                 </p>
 
                 {/* Subtext */}
-                <p className="text-[hsl(var(--gold)/0.5)] text-[11px] tracking-[0.2em] font-light mb-3">
+                <p className="text-[hsl(var(--gold)/0.7)] text-[11px] tracking-[0.22em] font-light mb-3">
                   Discreet. Curated. No spam.
                 </p>
 

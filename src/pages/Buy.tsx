@@ -164,7 +164,7 @@ const neighborhoods = [
 const buyerSchema = z.object({
   name: z.string().trim().min(1, "Name is required").max(100),
   email: z.string().trim().email("Please enter a valid email").max(255),
-  phone: z.string().trim().max(20).optional(),
+  phone: z.string().trim().min(1, "Phone is required").max(20),
   message: z.string().trim().max(2000).optional()
 });
 
@@ -597,12 +597,12 @@ const Buy = () => {
                 <input
                   type="tel"
                   name="phone"
-                  placeholder="Phone (Optional)"
+                  placeholder="Phone Number"
                   value={form.phone}
                   onChange={handleChange}
                   maxLength={20}
                   className={`${inputClass} border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/30 focus:border-primary-foreground/50`} />
-                
+                {errors.phone && <p className="text-destructive text-sm mt-1">{errors.phone}</p>}
               </div>
               <div>
                 <textarea

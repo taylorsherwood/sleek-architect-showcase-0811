@@ -16,7 +16,8 @@ const SCROLL_THRESHOLD = 0.4;
 
 const formSchema = z.object({
   name: z.string().trim().min(1, "Name is required").max(100),
-  email: z.string().trim().email("Please enter a valid email").max(255)
+  email: z.string().trim().email("Please enter a valid email").max(255),
+  phone: z.string().trim().min(1, "Phone is required").max(20),
 });
 
 const HIDDEN_ROUTES = ["/contact", "/connect", "/austin-multifamily-report-2026"];
@@ -25,7 +26,7 @@ const AdvisoryBar = () => {
   const [visible, setVisible] = useState(false);
   const [dismissed, setDismissed] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
-  const [form, setForm] = useState({ name: "", email: "" });
+  const [form, setForm] = useState({ name: "", email: "", phone: "" });
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
@@ -82,13 +83,14 @@ const AdvisoryBar = () => {
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
+         body: JSON.stringify({
           access_key: "5728f4e2-7269-4f9f-8a06-62557292e699",
           subject: "New Private List Request — Advisory Bar",
           from_name: "Echelon Property Group Website",
           to: "taylor@echelonpropertygroup.com,echelonpropertygroup@followupboss.me",
           name: form.name,
           email: form.email,
+          phone: form.phone,
           source: "Homepage Advisory Bar"
         })
       });
@@ -205,6 +207,19 @@ const AdvisoryBar = () => {
               
                 {errors.email &&
               <p className="text-destructive text-xs mt-1">{errors.email}</p>
+              }
+              </div>
+              <div>
+                <input
+                type="tel"
+                placeholder="Phone Number"
+                value={form.phone}
+                onChange={(e) => setForm({ ...form, phone: e.target.value })}
+                maxLength={20}
+                className="w-full px-4 py-3 bg-primary-foreground/10 border border-primary-foreground/20 rounded text-primary-foreground placeholder:text-primary-foreground/40 text-sm focus:outline-none focus:border-[hsl(var(--gold))] transition-colors" />
+              
+                {errors.phone &&
+              <p className="text-destructive text-xs mt-1">{errors.phone}</p>
               }
               </div>
               <button

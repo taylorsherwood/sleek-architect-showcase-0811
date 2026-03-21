@@ -113,7 +113,7 @@ const stats = [
 const valuationSchema = z.object({
   name: z.string().trim().min(1, "Name is required").max(100),
   email: z.string().trim().email("Please enter a valid email").max(255),
-  phone: z.string().trim().max(20).optional(),
+  phone: z.string().trim().min(1, "Phone is required").max(20),
   address: z.string().trim().min(1, "Property address is required").max(300),
   message: z.string().trim().max(2000).optional()
 });
@@ -121,7 +121,7 @@ const valuationSchema = z.object({
 const consultSchema = z.object({
   name: z.string().trim().min(1, "Name is required").max(100),
   email: z.string().trim().email("Please enter a valid email").max(255),
-  phone: z.string().trim().max(20).optional(),
+  phone: z.string().trim().min(1, "Phone is required").max(20),
   message: z.string().trim().max(2000).optional()
 });
 
@@ -459,7 +459,8 @@ const Sell = () => {
                 {valErrors.email && <p className="text-destructive text-sm mt-1">{valErrors.email}</p>}
               </div>
               <div>
-                <input type="tel" name="phone" placeholder="Phone (Optional)" value={valForm.phone} onChange={handleValChange} maxLength={20} className={inputLight} />
+                <input type="tel" name="phone" placeholder="Phone Number" value={valForm.phone} onChange={handleValChange} maxLength={20} className={inputLight} />
+                {valErrors.phone && <p className="text-destructive text-sm mt-1">{valErrors.phone}</p>}
               </div>
               <div>
                 <input type="text" name="address" placeholder="Property Address" value={valForm.address} onChange={handleValChange} maxLength={300} className={inputLight} />
@@ -514,7 +515,8 @@ const Sell = () => {
                 {conErrors.email && <p className="text-destructive text-sm mt-1">{conErrors.email}</p>}
               </div>
               <div>
-                <input type="tel" name="phone" placeholder="Phone (Optional)" value={conForm.phone} onChange={handleConChange} maxLength={20} className={inputDark} />
+                <input type="tel" name="phone" placeholder="Phone Number" value={conForm.phone} onChange={handleConChange} maxLength={20} className={inputDark} />
+                {conErrors.phone && <p className="text-destructive text-sm mt-1">{conErrors.phone}</p>}
               </div>
               <div>
                 <textarea name="message" placeholder="Tell us about your property and goals..." value={conForm.message} onChange={handleConChange} rows={4} maxLength={2000} className={`${inputDark} resize-none`} />

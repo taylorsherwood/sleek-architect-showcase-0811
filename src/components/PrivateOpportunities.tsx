@@ -14,6 +14,7 @@ import {
 const formSchema = z.object({
   name: z.string().trim().min(1, "Name is required").max(100),
   email: z.string().trim().email("Please enter a valid email").max(255),
+  phone: z.string().trim().min(1, "Phone is required").max(20),
   investmentRange: z.string().optional(),
 });
 
@@ -32,7 +33,7 @@ interface PrivateOpportunitiesProps {
 const PrivateOpportunities = ({ variant = "light" }: PrivateOpportunitiesProps) => {
   const { toast } = useToast();
   const navigate = useNavigate();
-  const [form, setForm] = useState({ name: "", email: "", investmentRange: "" });
+  const [form, setForm] = useState({ name: "", email: "", phone: "", investmentRange: "" });
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [submitting, setSubmitting] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
@@ -78,6 +79,7 @@ const PrivateOpportunities = ({ variant = "light" }: PrivateOpportunitiesProps) 
           to: "taylor@echelonpropertygroup.com,echelonpropertygroup@followupboss.me",
           name: form.name,
           email: form.email,
+          phone: form.phone,
           "Investment Range": form.investmentRange || "Not specified",
           source: "Private Opportunities Section",
         }),
@@ -202,6 +204,23 @@ const PrivateOpportunities = ({ variant = "light" }: PrivateOpportunitiesProps) 
                   />
                   {errors.email && (
                     <p className="text-destructive text-xs mt-1">{errors.email}</p>
+                  )}
+                </div>
+                <div>
+                  <input
+                    type="tel"
+                    placeholder="Phone Number"
+                    value={form.phone}
+                    onChange={(e) => setForm({ ...form, phone: e.target.value })}
+                    maxLength={20}
+                    className={`w-full px-4 py-3 rounded text-sm transition-colors focus:outline-none ${
+                      isDark
+                        ? "bg-white/10 border border-white/15 text-white placeholder:text-white/40 focus:border-[hsl(42,37%,57%)]"
+                        : "bg-muted border border-border text-foreground placeholder:text-muted-foreground focus:border-[hsl(var(--gold))]"
+                    }`}
+                  />
+                  {errors.phone && (
+                    <p className="text-destructive text-xs mt-1">{errors.phone}</p>
                   )}
                 </div>
                 <div>

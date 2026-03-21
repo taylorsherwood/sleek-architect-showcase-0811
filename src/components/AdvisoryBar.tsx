@@ -170,7 +170,7 @@ const AdvisoryBar = () => {
 
       {/* Form modal */}
       <Dialog open={modalOpen} onOpenChange={setModalOpen}>
-        <DialogContent className="sm:max-w-md bg-[hsl(var(--primary)/0.97)] border-[hsl(var(--gold)/0.2)] gap-6 shadow-[0_0_80px_rgba(0,0,0,0.6),0_0_20px_hsl(var(--gold)/0.06)]">
+        <DialogContent className="sm:max-w-md bg-primary border-[hsl(var(--gold)/0.2)] gap-6 shadow-[0_0_80px_rgba(0,0,0,0.6),0_0_20px_hsl(var(--gold)/0.06)]">
           {submitted ? (
             <>
               <DialogHeader className="sr-only">

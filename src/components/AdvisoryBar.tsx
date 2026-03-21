@@ -49,8 +49,10 @@ const AdvisoryBar = () => {
     }
 
     const onScroll = () => {
-      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-      if (docHeight > 0 && window.scrollY / docHeight >= SCROLL_THRESHOLD) {
+      // Trigger after scrolling past the hero section
+      const hero = document.getElementById("hero") || document.querySelector("section");
+      const triggerPoint = hero ? hero.offsetTop + hero.offsetHeight : window.innerHeight;
+      if (window.scrollY >= triggerPoint) {
         setVisible(true);
       }
     };
@@ -121,9 +123,9 @@ const AdvisoryBar = () => {
     <>
       {/* Advisory bar */}
       <div
-        className="fixed bottom-0 left-0 right-0 z-50 animate-slide-up"
+        className="fixed bottom-0 left-0 right-0 z-50"
         style={{
-          animation: "slideUp 300ms ease forwards"
+          animation: "slideUp 500ms cubic-bezier(0.16, 1, 0.3, 1) forwards"
         }}>
         
         {/* Gold divider */}
@@ -146,7 +148,7 @@ const AdvisoryBar = () => {
               <div className="flex flex-col items-center">
                 <button
                   onClick={() => setModalOpen(true)}
-                  className="px-5 py-2 text-sm font-medium text-primary-foreground border border-primary-foreground rounded transition-all duration-200 hover:bg-primary-foreground hover:text-primary hover:font-bold">
+                  className="px-5 py-2 text-sm font-medium text-primary-foreground border border-primary-foreground rounded transition-all duration-200 hover:bg-[hsl(var(--gold))] hover:border-[hsl(var(--gold))] hover:text-white hover:font-bold">
                   GET ACCESS
                 </button>
                 <span className="text-primary-foreground/60 text-[11px] tracking-wide mt-1 hidden sm:block">
@@ -252,8 +254,8 @@ const AdvisoryBar = () => {
 
       <style>{`
         @keyframes slideUp {
-          from { transform: translateY(100%); }
-          to { transform: translateY(0); }
+          from { transform: translateY(100%); opacity: 0; }
+          to { transform: translateY(0); opacity: 1; }
         }
       `}</style>
     </>);

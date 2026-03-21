@@ -149,8 +149,8 @@ const AdvisoryBar = () => {
                   className="px-5 py-2 text-sm font-medium text-primary-foreground border border-primary-foreground rounded transition-all duration-200 hover:bg-primary-foreground hover:text-primary hover:font-bold">
                   GET ACCESS
                 </button>
-                <span className="text-primary-foreground/40 text-[10px] mt-0.5 hidden sm:block">
-                  Takes 10 seconds — no spam
+                <span className="text-primary-foreground/60 text-[11px] tracking-wide mt-1 hidden sm:block">
+                  Takes 10 seconds · No spam
                 </span>
               </div>
               <button

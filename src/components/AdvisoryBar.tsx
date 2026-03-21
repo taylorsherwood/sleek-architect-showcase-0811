@@ -177,41 +177,42 @@ const AdvisoryBar = () => {
                 <DialogTitle>Submission Confirmed</DialogTitle>
                 <DialogDescription>Your request has been received.</DialogDescription>
               </DialogHeader>
-              <div className="py-10 text-center space-y-8">
-                {/* Hero logo */}
-                <div className="relative mx-auto w-fit">
-                  <div className="absolute inset-0 blur-2xl opacity-20 bg-[hsl(var(--gold))] rounded-full scale-150" />
-                  <img src={echelonLogo} alt="Echelon Property Group" className="relative h-48 w-auto mx-auto drop-shadow-[0_0_30px_hsl(var(--gold)/0.15)]" />
+              <div className="py-8 text-center animate-in fade-in duration-500">
+                {/* Logo — supporting element, not focal */}
+                <div className="relative mx-auto w-fit mb-8">
+                  <div className="absolute inset-0 blur-2xl opacity-15 bg-[hsl(var(--gold))] rounded-full scale-150" />
+                  <img src={echelonLogo} alt="Echelon Property Group" className="relative h-32 w-auto mx-auto drop-shadow-[0_0_24px_hsl(var(--gold)/0.12)]" />
                 </div>
 
                 {/* Gold divider */}
-                <div className="flex items-center justify-center gap-4">
-                  <div className="h-px w-12 bg-gradient-to-r from-transparent to-[hsl(var(--gold)/0.5)]" />
-                  <div className="w-1.5 h-1.5 rounded-full bg-[hsl(var(--gold)/0.6)]" />
-                  <div className="h-px w-12 bg-gradient-to-l from-transparent to-[hsl(var(--gold)/0.5)]" />
+                <div className="flex items-center justify-center gap-4 mb-8">
+                  <div className="h-px w-10 bg-gradient-to-r from-transparent to-[hsl(var(--gold)/0.45)]" />
+                  <div className="w-1 h-1 rounded-full bg-[hsl(var(--gold)/0.5)]" />
+                  <div className="h-px w-10 bg-gradient-to-l from-transparent to-[hsl(var(--gold)/0.45)]" />
                 </div>
 
-                {/* Confirmation copy */}
-                <div className="space-y-4">
-                  <p className="text-primary-foreground font-display text-3xl tracking-tight">
-                    You're In
-                  </p>
-                  <p className="text-primary-foreground/65 text-sm leading-relaxed max-w-[280px] mx-auto">
-                    Thanks — I've got your request and will follow up with curated opportunities based on what you're looking for.
-                  </p>
-                  <p className="text-[hsl(var(--gold)/0.7)] text-xs tracking-[0.15em] uppercase font-medium pt-1">
-                    Keep an eye on your inbox and text messages
-                  </p>
-                </div>
+                {/* Headline — primary focal point */}
+                <p className="text-primary-foreground font-display text-3xl tracking-tight mb-5">
+                  You're In
+                </p>
+
+                {/* Body */}
+                <p className="text-primary-foreground/60 text-sm leading-relaxed max-w-[300px] mx-auto mb-6">
+                  Thanks — I've got your request.<br />
+                  I'll follow up with curated opportunities based on what you're looking for.
+                </p>
+
+                {/* Subtext */}
+                <p className="text-[hsl(var(--gold)/0.6)] text-xs tracking-[0.15em] uppercase font-medium mb-10">
+                  No spam. Just relevant opportunities.
+                </p>
 
                 {/* CTA */}
-                <div className="pt-3">
-                  <button
-                    onClick={() => { setModalOpen(false); dismiss(); }}
-                    className="px-10 py-3 text-xs tracking-[0.2em] uppercase font-medium text-primary-foreground/80 border border-primary-foreground/20 rounded transition-all duration-300 hover:bg-[hsl(var(--gold))] hover:border-[hsl(var(--gold))] hover:text-white hover:font-bold hero-cta-btn">
-                    CLOSE
-                  </button>
-                </div>
+                <button
+                  onClick={() => { setModalOpen(false); dismiss(); }}
+                  className="px-10 py-3 text-xs tracking-[0.2em] uppercase font-medium text-primary-foreground/80 border border-primary-foreground/20 rounded transition-all duration-300 hover:bg-[hsl(var(--gold))] hover:border-[hsl(var(--gold))] hover:text-white hover:font-bold hero-cta-btn">
+                  CONTINUE
+                </button>
               </div>
             </>
           ) : (

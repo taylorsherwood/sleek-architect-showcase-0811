@@ -64,7 +64,7 @@ const HomeValueAustin = () => {
     }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const result = formSchema.safeParse(formData);
     if (!result.success) {
@@ -77,11 +77,46 @@ const HomeValueAustin = () => {
       return;
     }
     setErrors({});
-    setSubmitted(true);
-    toast({
-      title: "Valuation Request Received",
-      description: "We'll be in touch within 24–48 hours with your confidential home valuation.",
-    });
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(buildWeb3Payload({
+          accessKey: "81cc426e-b1a8-4e5e-b2a0-0d25738dfe12",
+          subject: "Home Valuation Request — Home Value Page",
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          source: "Home Value Austin Page",
+          extra: {
+            "Property Address": formData.address,
+            "Property Type": formData.propertyType,
+            "Price Range": formData.priceRange,
+            notes: formData.notes || "",
+          },
+        })),
+      });
+      const data = await response.json();
+      if (data.success) {
+        setSubmitted(true);
+        toast({
+          title: "Valuation Request Received",
+          description: "We'll be in touch within 24–48 hours with your confidential home valuation.",
+        });
+      } else {
+        toast({
+          title: "Submission Failed",
+          description: "Something went wrong. Please try again.",
+          variant: "destructive",
+        });
+      }
+    } catch {
+      toast({
+        title: "Submission Failed",
+        description: "Something went wrong. Please try again.",
+        variant: "destructive",
+      });
+    }
   };
 
   const inputClass =

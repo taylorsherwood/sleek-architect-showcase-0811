@@ -170,7 +170,7 @@ const AdvisoryBar = () => {
 
       {/* Form modal */}
       <Dialog open={modalOpen} onOpenChange={setModalOpen}>
-        <DialogContent className="sm:max-w-md bg-primary border-[hsl(var(--gold)/0.2)] gap-6 shadow-[0_0_60px_rgba(0,0,0,0.5),0_0_20px_hsl(var(--gold)/0.05)]">
+        <DialogContent className="sm:max-w-md bg-[hsl(var(--primary)/0.97)] border-[hsl(var(--gold)/0.2)] gap-6 shadow-[0_0_80px_rgba(0,0,0,0.6),0_0_20px_hsl(var(--gold)/0.06)]">
           {submitted ? (
             <>
               <DialogHeader className="sr-only">
@@ -192,30 +192,30 @@ const AdvisoryBar = () => {
                 </div>
 
                 {/* Headline — primary focal point */}
-                <p className="text-primary-foreground font-display text-[2rem] tracking-[-0.02em] leading-none mb-6">
+                <p className="text-white font-display text-[2rem] tracking-[-0.02em] leading-none mb-6 drop-shadow-[0_0_12px_rgba(255,255,255,0.06)]">
                   You're In
                 </p>
 
                 {/* Body */}
-                <p className="text-primary-foreground/55 text-[13px] leading-[1.7] max-w-[280px] mx-auto mb-7">
+                <p className="text-white/[0.85] text-sm font-normal leading-[1.8] max-w-[280px] mx-auto mb-7">
                   Thanks — I've got your request.<br />
                   I'll personally send you opportunities aligned with what you're looking for.
                 </p>
 
                 {/* Subtext */}
-                <p className="text-[hsl(var(--gold)/0.5)] text-[11px] tracking-[0.2em] font-light mb-3">
+                <p className="text-[hsl(var(--gold)/0.7)] text-[11px] tracking-[0.22em] font-light mb-3">
                   Discreet. Curated. No spam.
                 </p>
 
                 {/* Micro-trust */}
-                <p className="text-primary-foreground/30 text-[10px] tracking-wide mb-12">
+                <p className="text-white/[0.38] text-[10px] tracking-[0.15em] mb-12">
                   Expect a quick follow-up.
                 </p>
 
                 {/* CTA */}
                 <button
                   onClick={() => { setModalOpen(false); dismiss(); }}
-                  className="inline-flex items-center gap-2 px-12 py-3.5 text-[11px] tracking-[0.2em] uppercase font-medium text-primary-foreground/75 border border-primary-foreground/25 rounded transition-all duration-300 hover:bg-[hsl(var(--gold))] hover:border-[hsl(var(--gold))] hover:text-white hover:font-bold hover:shadow-[0_0_20px_hsl(var(--gold)/0.2)] hero-cta-btn">
+                  className="inline-flex items-center gap-2 px-12 py-3.5 text-[11px] tracking-[0.2em] uppercase font-medium text-white/90 border border-white/30 rounded transition-all duration-300 hover:bg-[hsl(var(--gold))] hover:border-[hsl(var(--gold))] hover:text-white hover:font-bold hover:shadow-[0_0_24px_hsl(var(--gold)/0.25)] hero-cta-btn">
                   Continue <span className="text-[10px]">→</span>
                 </button>
               </div>

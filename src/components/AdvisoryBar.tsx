@@ -200,7 +200,7 @@ const AdvisoryBar = () => {
 
           <>
             {/* Value bullets */}
-            <div className="flex flex-col gap-1.5 mt-1 mb-3">
+            <div className="flex flex-col gap-2.5 mt-2 mb-4">
               <div className="flex items-center gap-2 text-primary-foreground/80 text-sm">
                 <span className="text-[hsl(var(--gold))]">✔</span> Off-market homes
               </div>

@@ -9,38 +9,10 @@
     <meta name="google-site-verification" content="dhXAgewx3oiXuLhNF6giXHxaz8pFcyt_MogbeQKtTfA" />
     <meta name="author" content="Echelon Property Group" />
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y84Q0NX0NE"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-Y84Q0NX0NE');
-      gtag('config', 'AW-17598090760');
-    </script>
-
-    <!-- Microsoft Clarity -->
-    <script type="text/javascript">
-      (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-      })(window, document, "clarity", "script", "vwdl4xpdfi");
-    </script>
-
-
-    <link rel="dns-prefetch" href="https://em.realscout.com" />
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
-
-    <!-- Preconnect key font origins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <!-- Fonts: preload as stylesheet, swap on load to avoid render-blocking -->
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Raleway:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Raleway:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" media="print" onload="this.media='all'" />
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Raleway:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" /></noscript>
+    <!-- Self-hosted fonts (no external requests to fonts.googleapis.com / fonts.gstatic.com) -->
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/raleway-faccb37f.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/playfair-48d1e9cd.woff2" crossorigin />
+    <link rel="stylesheet" href="/fonts/fonts.css" />
 
     <!-- Preload hero poster with high priority -->
     <link rel="preload" as="image" href="/images/hero-poster.jpg" fetchpriority="high" />
@@ -52,7 +24,7 @@
       #root{min-height:100vh}
     </style>
 
-    <script src="https://em.realscout.com/widgets/realscout-web-components.umd.js" type="module"></script>
+    <!-- RealScout widget styles (no script loaded until idle) -->
     <style>
       realscout-advanced-search {
         --rs-as-button-text-color: #ffffff;
@@ -83,5 +55,47 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Defer analytics & third-party scripts until after page is interactive -->
+    <script>
+      // Load third-party scripts after the page is fully interactive
+      function loadDeferredScripts() {
+        // Google Analytics
+        var ga = document.createElement('script');
+        ga.async = true;
+        ga.src = 'https://www.googletagmanager.com/gtag/js?id=G-Y84Q0NX0NE';
+        document.head.appendChild(ga);
+        ga.onload = function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          window.gtag = gtag;
+          gtag('js', new Date());
+          gtag('config', 'G-Y84Q0NX0NE');
+          gtag('config', 'AW-17598090760');
+        };
+
+        // Microsoft Clarity
+        (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "vwdl4xpdfi");
+
+        // RealScout widget script
+        var rs = document.createElement('script');
+        rs.type = 'module';
+        rs.src = 'https://em.realscout.com/widgets/realscout-web-components.umd.js';
+        document.head.appendChild(rs);
+      }
+
+      // Use requestIdleCallback if available, otherwise setTimeout
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(loadDeferredScripts, { timeout: 3500 });
+      } else {
+        window.addEventListener('load', function() {
+          setTimeout(loadDeferredScripts, 1500);
+        });
+      }
+    </script>
   </body>
 </html>

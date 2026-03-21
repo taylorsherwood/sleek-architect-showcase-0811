@@ -107,7 +107,6 @@ const AdvisoryBar = () => {
       const data = await response.json();
       if (data.success) {
         setSubmitted(true);
-        dismiss();
       } else {
         setSubmitError(true);
       }
@@ -199,7 +198,7 @@ const AdvisoryBar = () => {
               </div>
               <div className="pt-2">
                 <button
-                  onClick={() => setModalOpen(false)}
+                  onClick={() => { setModalOpen(false); dismiss(); }}
                   className="px-8 py-2.5 text-sm font-medium text-primary-foreground border border-primary-foreground/30 rounded transition-all duration-200 hover:bg-[hsl(var(--gold))] hover:border-[hsl(var(--gold))] hover:text-white hover:font-bold hero-cta-btn">
                   CLOSE
                 </button>

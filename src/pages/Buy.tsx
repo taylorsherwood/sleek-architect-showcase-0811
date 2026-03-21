@@ -6,6 +6,7 @@ import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { realEstateAgentSchema, createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
+import { formatPhoneNumber, buildWeb3Payload } from "@/lib/formUtils";
 import {
   CheckCircle,
   ArrowRight,

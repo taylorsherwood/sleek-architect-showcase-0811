@@ -144,13 +144,15 @@ const Sell = () => {
   const [conSubmitting, setConSubmitting] = useState(false);
 
   const handleValChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setValForm({ ...valForm, [e.target.name]: e.target.value });
-    if (valErrors[e.target.name]) setValErrors({ ...valErrors, [e.target.name]: "" });
+    const { name, value } = e.target;
+    setValForm({ ...valForm, [name]: name === "phone" ? formatPhoneNumber(value) : value });
+    if (valErrors[name]) setValErrors({ ...valErrors, [name]: "" });
   };
 
   const handleConChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setConForm({ ...conForm, [e.target.name]: e.target.value });
-    if (conErrors[e.target.name]) setConErrors({ ...conErrors, [e.target.name]: "" });
+    const { name, value } = e.target;
+    setConForm({ ...conForm, [name]: name === "phone" ? formatPhoneNumber(value) : value });
+    if (conErrors[name]) setConErrors({ ...conErrors, [name]: "" });
   };
 
   const submitForm = async (

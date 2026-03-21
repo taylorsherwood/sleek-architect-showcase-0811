@@ -3,6 +3,7 @@ import { X, Check } from "lucide-react";
 import { z } from "zod";
 import { useToast } from "@/hooks/use-toast";
 import { formatPhoneNumber, buildWeb3Payload } from "@/lib/formUtils";
+import echelonLogo from "@/assets/echelon-logo-gold.png";
 import { useLocation } from "react-router-dom";
 import {
   Dialog,
@@ -184,9 +185,7 @@ const AdvisoryBar = () => {
 
           {submitted ? (
             <div className="py-8 text-center space-y-5">
-              <div className="mx-auto w-12 h-12 rounded-full border border-[hsl(var(--gold)/0.5)] flex items-center justify-center">
-                <Check className="w-6 h-6 text-[hsl(var(--gold))]" />
-              </div>
+              <img src={echelonLogo} alt="Echelon Property Group" className="h-24 w-auto mx-auto" />
               <div className="space-y-3">
                 <p className="text-primary-foreground font-display text-2xl">
                   You're In

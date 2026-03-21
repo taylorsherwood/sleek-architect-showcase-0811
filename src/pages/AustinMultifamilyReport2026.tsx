@@ -108,7 +108,7 @@ const AustinMultifamilyReport2026 = () => {
   }, []);
 
   const handleChange = (field: string, value: string) =>
-    setFormData((prev) => ({ ...prev, [field]: value }));
+    setFormData((prev) => ({ ...prev, [field]: field === "phone" ? formatPhoneNumber(value) : value }));
 
   const scrollToForm = () =>
     document.getElementById("report-form")?.scrollIntoView({ behavior: "smooth" });

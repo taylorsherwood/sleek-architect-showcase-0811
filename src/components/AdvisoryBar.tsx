@@ -122,6 +122,7 @@ const AdvisoryBar = () => {
     }
   };
 
+  const isHiddenRoute = HIDDEN_ROUTES.includes(location.pathname);
   if (isHiddenRoute || dismissed || !visible) return null;
 
   return (

@@ -170,48 +170,53 @@ const AdvisoryBar = () => {
 
       {/* Form modal */}
       <Dialog open={modalOpen} onOpenChange={setModalOpen}>
-        <DialogContent className="sm:max-w-md bg-primary border-[hsl(var(--gold)/0.3)] gap-6">
+        <DialogContent className="sm:max-w-md bg-primary border-[hsl(var(--gold)/0.2)] gap-6 shadow-[0_0_60px_rgba(0,0,0,0.5),0_0_20px_hsl(var(--gold)/0.05)]">
           {submitted ? (
             <>
               <DialogHeader className="sr-only">
                 <DialogTitle>Submission Confirmed</DialogTitle>
                 <DialogDescription>Your request has been received.</DialogDescription>
               </DialogHeader>
-              <div className="py-8 text-center animate-in fade-in duration-500">
-                {/* Logo — supporting element, not focal */}
-                <div className="relative mx-auto w-fit mb-8">
-                  <div className="absolute inset-0 blur-2xl opacity-15 bg-[hsl(var(--gold))] rounded-full scale-150" />
-                  <img src={echelonLogo} alt="Echelon Property Group" className="relative h-32 w-auto mx-auto drop-shadow-[0_0_24px_hsl(var(--gold)/0.12)]" />
+              <div className="py-10 text-center animate-in fade-in duration-300">
+                {/* Logo — refined supporting element */}
+                <div className="relative mx-auto w-fit mb-10">
+                  <div className="absolute inset-0 blur-3xl opacity-10 bg-[hsl(var(--gold))] rounded-full scale-150" />
+                  <img src={echelonLogo} alt="Echelon Property Group" className="relative h-[6.5rem] w-auto mx-auto drop-shadow-[0_0_20px_hsl(var(--gold)/0.1)]" />
                 </div>
 
                 {/* Gold divider */}
-                <div className="flex items-center justify-center gap-4 mb-8">
-                  <div className="h-px w-10 bg-gradient-to-r from-transparent to-[hsl(var(--gold)/0.45)]" />
-                  <div className="w-1 h-1 rounded-full bg-[hsl(var(--gold)/0.5)]" />
-                  <div className="h-px w-10 bg-gradient-to-l from-transparent to-[hsl(var(--gold)/0.45)]" />
+                <div className="flex items-center justify-center gap-4 mb-10">
+                  <div className="h-px w-8 bg-gradient-to-r from-transparent to-[hsl(var(--gold)/0.4)]" />
+                  <div className="w-1 h-1 rounded-full bg-[hsl(var(--gold)/0.4)]" />
+                  <div className="h-px w-8 bg-gradient-to-l from-transparent to-[hsl(var(--gold)/0.4)]" />
                 </div>
 
                 {/* Headline — primary focal point */}
-                <p className="text-primary-foreground font-display text-3xl tracking-tight mb-5">
+                <p className="text-primary-foreground font-display text-[2rem] tracking-[-0.02em] leading-none mb-6">
                   You're In
                 </p>
 
                 {/* Body */}
-                <p className="text-primary-foreground/60 text-sm leading-relaxed max-w-[300px] mx-auto mb-6">
+                <p className="text-primary-foreground/55 text-[13px] leading-[1.7] max-w-[280px] mx-auto mb-7">
                   Thanks — I've got your request.<br />
-                  I'll follow up with curated opportunities based on what you're looking for.
+                  I'll personally send you opportunities aligned with what you're looking for.
                 </p>
 
                 {/* Subtext */}
-                <p className="text-[hsl(var(--gold)/0.6)] text-xs tracking-[0.15em] uppercase font-medium mb-10">
-                  No spam. Just relevant opportunities.
+                <p className="text-[hsl(var(--gold)/0.5)] text-[11px] tracking-[0.2em] font-light mb-3">
+                  Discreet. Curated. No spam.
+                </p>
+
+                {/* Micro-trust */}
+                <p className="text-primary-foreground/30 text-[10px] tracking-wide mb-12">
+                  Expect a quick follow-up.
                 </p>
 
                 {/* CTA */}
                 <button
                   onClick={() => { setModalOpen(false); dismiss(); }}
-                  className="px-10 py-3 text-xs tracking-[0.2em] uppercase font-medium text-primary-foreground/80 border border-primary-foreground/20 rounded transition-all duration-300 hover:bg-[hsl(var(--gold))] hover:border-[hsl(var(--gold))] hover:text-white hover:font-bold hero-cta-btn">
-                  CONTINUE
+                  className="inline-flex items-center gap-2 px-12 py-3.5 text-[11px] tracking-[0.2em] uppercase font-medium text-primary-foreground/75 border border-primary-foreground/25 rounded transition-all duration-300 hover:bg-[hsl(var(--gold))] hover:border-[hsl(var(--gold))] hover:text-white hover:font-bold hover:shadow-[0_0_20px_hsl(var(--gold)/0.2)] hero-cta-btn">
+                  Continue <span className="text-[10px]">→</span>
                 </button>
               </div>
             </>

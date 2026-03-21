@@ -1,12 +1,11 @@
 import { Link } from "react-router-dom";
-import heroImage from "@/assets/hero-luxury-austin.jpg";
 
 const CTASection = () => {
   return (
     <section className="relative py-32 overflow-hidden">
       <div className="absolute inset-0">
         <img
-          src={heroImage}
+          src="/static-assets/hero-luxury-austin.jpg"
           alt="Luxury home exterior in Austin Texas Hill Country"
           title="Austin luxury home — schedule a consultation"
           className="w-full h-full object-cover object-center"
@@ -34,7 +33,6 @@ const CTASection = () => {
         </Link>
       </div>
     </section>);
-
 };
 
 export default CTASection;

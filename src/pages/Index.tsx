@@ -20,18 +20,7 @@ const CTASection = lazy(() => import("@/components/CTASection"));
 const LuxurySearchLinks = lazy(() => import("@/components/LuxurySearchLinks"));
 const Footer = lazy(() => import("@/components/Footer"));
 
-const logoImports = () =>
-  Promise.all([
-    import("@/assets/exp-commercial-logo.png"),
-    import("@/assets/exp-realty-logo.png"),
-    import("@/assets/exp-realty-luxury-logo.png"),
-  ]);
-
 const NewsletterSection = lazy(async () => {
-  const [commercialMod, realtyMod, luxuryMod] = await logoImports();
-  const commercialLogo = commercialMod.default;
-  const realtyLogo = realtyMod.default;
-  const luxuryLogo = luxuryMod.default;
   return {
     default: () => (
       <section className="pt-16 pb-0 bg-muted">
@@ -52,9 +41,9 @@ const NewsletterSection = lazy(async () => {
               BECOME AN ECHELON INSIDER
             </a>
             <div className="mt-6 flex items-center justify-center gap-10 md:gap-14">
-              <img src={commercialLogo} alt="eXp Commercial" title="eXp Commercial — Echelon Property Group" className="h-[13rem] md:h-60 w-auto object-contain" loading="lazy" decoding="async" />
-              <img src={luxuryLogo} alt="eXp Realty Luxury" title="eXp Realty Luxury — Echelon Property Group" className="h-[13rem] md:h-60 w-auto object-contain" loading="lazy" decoding="async" />
-              <img src={realtyLogo} alt="eXp Realty" title="eXp Realty — Echelon Property Group brokerage" className="h-[13rem] md:h-60 w-auto object-contain" loading="lazy" decoding="async" />
+              <img src="/static-assets/exp-commercial-logo.png" alt="eXp Commercial" title="eXp Commercial — Echelon Property Group" className="h-[13rem] md:h-60 w-auto object-contain" loading="lazy" decoding="async" />
+              <img src="/static-assets/exp-realty-luxury-logo.png" alt="eXp Realty Luxury" title="eXp Realty Luxury — Echelon Property Group" className="h-[13rem] md:h-60 w-auto object-contain" loading="lazy" decoding="async" />
+              <img src="/static-assets/exp-realty-logo.png" alt="eXp Realty" title="eXp Realty — Echelon Property Group brokerage" className="h-[13rem] md:h-60 w-auto object-contain" loading="lazy" decoding="async" />
             </div>
           </div>
         </div>
@@ -65,6 +54,43 @@ const NewsletterSection = lazy(async () => {
 
 const BelowFold = () => (
   <div className="min-h-[200px]" />
+);
+
+/** Noscript fallback for below-fold content so crawlers always see key text */
+const NoscriptFallback = () => (
+  <noscript>
+    <section className="py-16 bg-background">
+      <div className="container mx-auto px-6 max-w-4xl">
+        <h2 className="text-3xl font-light mb-6">Austin Luxury Real Estate Services</h2>
+        <p className="mb-4">Echelon Property Group provides full-service luxury real estate advisory across Austin, Texas. We specialize in luxury homes, land development, commercial real estate, and investment properties.</p>
+        <h3 className="text-2xl font-light mb-4">Our Expertise</h3>
+        <ul className="list-disc pl-6 mb-6 space-y-2">
+          <li>Luxury residential sales in Westlake Hills, Barton Creek, Lake Austin, Tarrytown, and Rollingwood</li>
+          <li>Off-market and private listing opportunities</li>
+          <li>Commercial real estate and multifamily investment</li>
+          <li>Land acquisition and development advisory</li>
+        </ul>
+        <h3 className="text-2xl font-light mb-4">Austin Luxury Communities</h3>
+        <ul className="list-disc pl-6 mb-6 space-y-1">
+          <li><a href="/communities/barton-creek">Barton Creek</a></li>
+          <li><a href="/communities/westlake-hills">Westlake Hills</a></li>
+          <li><a href="/communities/lake-austin">Lake Austin</a></li>
+          <li><a href="/communities/tarrytown">Tarrytown</a></li>
+          <li><a href="/communities/rollingwood">Rollingwood</a></li>
+          <li><a href="/communities/dripping-springs">Dripping Springs</a></li>
+          <li><a href="/communities/spanish-oaks">Spanish Oaks</a></li>
+        </ul>
+        <h3 className="text-2xl font-light mb-4">About Taylor Sherwood</h3>
+        <p className="mb-4">Taylor Sherwood is a Certified Luxury Home Marketing Specialist (CLHMS) and Austin-based real estate advisor. He founded Echelon Property Group to bring a strategic, investment-focused approach to Austin real estate.</p>
+        <p className="mb-4">With over $100M in career sales volume and deep expertise across Austin's most sought-after neighborhoods, Taylor helps clients buy, sell, and invest with confidence.</p>
+        <h3 className="text-2xl font-light mb-4">Contact</h3>
+        <p>2105 East MLK Blvd Ste 227, Austin, Texas 78702</p>
+        <p>Email: <a href="mailto:taylor@echelonpropertygroup.com">taylor@echelonpropertygroup.com</a></p>
+        <p>Phone: <a href="tel:+15126613843">(512) 661-3843</a></p>
+        <p className="mt-4"><a href="/contact">Schedule a Consultation →</a></p>
+      </div>
+    </section>
+  </noscript>
 );
 
 const Index = () => {
@@ -97,6 +123,8 @@ const Index = () => {
       <Suspense fallback={<div className="min-h-[200px]" />}>
         <PrivateOpportunities />
       </Suspense>
+
+      <NoscriptFallback />
 
       <Suspense fallback={<BelowFold />}>
         <IntroSection />

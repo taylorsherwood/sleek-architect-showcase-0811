@@ -1,7 +1,5 @@
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import listing3 from "@/assets/listing-3.jpg";
-import echelonLogo from "@/assets/echelon-logo-gold-square.png";
 
 const listings = [
 {
@@ -29,7 +27,7 @@ const listings = [
   isOffMarketCard: true
 },
 {
-  image: listing3,
+  image: "/static-assets/listing-3.jpg",
   address: "Ranch Estate on 42 Acres",
   location: "Texas Hill Country",
   price: "$5M+ Hill Country Estate",
@@ -44,20 +42,18 @@ const listings = [
 
 const ListingCard = ({
   listing
-
-
 }: {listing: (typeof listings)[number];}) => {
   if (listing.isOffMarketCard) {
     return (
       <Link to={listing.link} className="group block">
         <div className="relative overflow-hidden rounded-sm aspect-[4/3] bg-gradient-to-br from-primary via-primary to-primary/80 flex flex-col items-center justify-center transition-all duration-700 ease-in-out group-hover:from-gold group-hover:via-gold group-hover:to-gold/80">
           <img
-            src={echelonLogo}
+            src="/static-assets/echelon-logo-gold-square.png"
             alt="Echelon Property Group"
             title="Echelon Property Group — View exclusive listings"
             className="w-1/2 h-auto object-contain transition-all duration-500 ease-out group-hover:brightness-0 group-hover:invert"
-            loading="lazy" />
-          
+            loading="lazy"
+            decoding="async" />
         </div>
         <div className="mt-8 px-1 text-center">
           <h3 className="text-lg font-display font-medium mb-2 leading-relaxed group-hover:text-muted-foreground transition-colors duration-500">
@@ -69,7 +65,6 @@ const ListingCard = ({
           </p>
         </div>
       </Link>);
-
   }
 
   const Wrapper = listing.link.startsWith("http") ? "a" : "div";
@@ -89,8 +84,8 @@ const ListingCard = ({
           alt={listing.address}
           title={`${listing.address} — ${listing.price}`}
           className="w-full aspect-[4/3] object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
-          loading="lazy" />
-        
+          loading="lazy"
+          decoding="async" />
 
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
         <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-tr from-black/40 via-black/15 to-transparent pointer-events-none" />
@@ -104,7 +99,6 @@ const ListingCard = ({
               textTransform: "uppercase",
               fontFamily: '"Raleway", sans-serif'
             }}>
-            
             View Property
           </span>
         </div>
@@ -115,7 +109,6 @@ const ListingCard = ({
             textShadow:
             "0 1px 6px rgba(0,0,0,0.5), 0 0 20px rgba(0,0,0,0.2)"
           }}>
-          
           <p className="text-[1.35rem] font-display font-light text-white mb-2 tracking-wide">
             {listing.price}
           </p>
@@ -146,7 +139,6 @@ const ListingCard = ({
         </div>
       </div>
     </Wrapper>);
-
 };
 
 const FeaturedListings = () => {
@@ -164,15 +156,12 @@ const FeaturedListings = () => {
     el.setAttribute("include-seller-listings", "");
     widgetRef.current.appendChild(el);
 
-    // Hard frontend safeguard: hide any listing cards under $300k
-    // RealScout renders async; observe DOM mutations to catch all cards
     const MIN_PRICE = 300000;
 
     const hideLowPriceCards = (root: Element) => {
       const cards = root.querySelectorAll("[class*='listing'], [class*='card'], [class*='property'], a[href]");
       cards.forEach((card) => {
         const text = card.textContent || "";
-        // Match price patterns like $250,000 or $125K
         const priceMatches = text.match(/\$[\d,]+(?:\.\d+)?/g);
         if (priceMatches) {
           for (const raw of priceMatches) {
@@ -187,7 +176,6 @@ const FeaturedListings = () => {
     };
 
     const observer = new MutationObserver(() => {
-      // Check both light DOM and shadow DOM
       hideLowPriceCards(el);
       if (el.shadowRoot) {
         hideLowPriceCards(el.shadowRoot as unknown as Element);
@@ -196,7 +184,6 @@ const FeaturedListings = () => {
 
     observer.observe(el, { childList: true, subtree: true });
 
-    // Also observe shadow root when it becomes available
     const shadowObserver = new MutationObserver(() => {
       if (el.shadowRoot) {
         hideLowPriceCards(el.shadowRoot as unknown as Element);
@@ -233,7 +220,6 @@ const FeaturedListings = () => {
                     textTransform: "uppercase",
                     fontFamily: '"Raleway", sans-serif'
                   }}>
-                  
                   FEATURED LISTINGS
                 </p>
                 <h2
@@ -242,7 +228,6 @@ const FeaturedListings = () => {
                     fontSize: "clamp(1.8rem, 3vw, 3rem)",
                     letterSpacing: "-0.01em"
                   }}>
-                  
                   Featured Austin Luxury Properties
                 </h2>
                 <p className="text-muted-foreground/70 mt-5 max-w-xl text-[15px] font-light leading-relaxed">
@@ -259,7 +244,6 @@ const FeaturedListings = () => {
                   textTransform: "uppercase",
                   fontFamily: '"Raleway", sans-serif'
                 }}>
-                
                 EXPLORE AUSTIN LUXURY HOMES
                 <span className="absolute bottom-0 left-0 w-full h-px bg-gold scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
               </Link>
@@ -275,7 +259,6 @@ const FeaturedListings = () => {
               <Link
                 to="/off-market-luxury-homes-austin"
                 className="inline-block text-[13px] text-muted-foreground/60 hover:text-foreground transition-colors duration-500 font-light">
-                
                 Did you know that 95%+ of our listings aren't on market? If you
                 are searching for private market opportunities in Austin,
                 contact us to become an Echelon Insider for discreet listings
@@ -304,8 +287,6 @@ const FeaturedListings = () => {
                   textTransform: "uppercase",
                   fontFamily: '"Raleway", sans-serif'
                 }}>ON THE MARKET
-
-
               </p>
               <h2
                 className="font-display font-light text-architectural"
@@ -313,7 +294,6 @@ const FeaturedListings = () => {
                   fontSize: "clamp(1.8rem, 3vw, 3rem)",
                   letterSpacing: "-0.01em"
                 }}>
-                
                 Commercial and Residential
               </h2>
               <p className="text-muted-foreground/70 mt-5 max-w-xl text-[15px] font-light leading-relaxed">
@@ -322,6 +302,12 @@ const FeaturedListings = () => {
               </p>
             </div>
             <div ref={widgetRef} className="w-full" />
+            <noscript>
+              <p className="text-center text-muted-foreground py-8">
+                Please enable JavaScript to view our interactive listing search, or visit{" "}
+                <a href="https://taylorsherwood.realscout.com/" className="underline">our listings portal</a> directly.
+              </p>
+            </noscript>
             <div className="mt-16 text-center">
               <Link
                 to="/past-transactions"
@@ -332,7 +318,6 @@ const FeaturedListings = () => {
                   textTransform: "uppercase",
                   fontFamily: '"Raleway", sans-serif'
                 }}>
-                
                 SEE PAST TRANSACTIONS →
               </Link>
             </div>
@@ -340,7 +325,6 @@ const FeaturedListings = () => {
         </div>
       </section>
     </>);
-
 };
 
 export default FeaturedListings;

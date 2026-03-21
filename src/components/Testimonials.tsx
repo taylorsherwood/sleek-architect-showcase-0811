@@ -1,6 +1,5 @@
 import { useEffect, useRef } from "react";
 import { Quote } from "lucide-react";
-import echelonSecondaryLogo from "@/assets/echelon-secondary-logo.png";
 
 const testimonials = [
   {
@@ -141,12 +140,14 @@ const Testimonials = () => {
                   )}
                 </div>
 
-                {/* Secondary logo watermark */}
+                {/* Secondary logo watermark — static path, lazy loaded */}
                 <img
-                  src={echelonSecondaryLogo}
+                  src="/static-assets/echelon-secondary-logo.png"
                   alt=""
                   className="absolute bottom-4 right-4 w-10 h-auto pointer-events-none"
                   aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
             ))}

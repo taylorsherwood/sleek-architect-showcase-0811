@@ -1,7 +1,5 @@
 import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { ChevronDown } from "lucide-react";
-import heroFallback from "@/assets/hero-fallback.jpg";
 
 const FALLBACK_TIMEOUT = 4000;
 const RETRY_DELAY = 800;
@@ -113,15 +111,14 @@ const Hero = () => {
         </video>
       </div>
 
-      {/* Fallback image */}
+      {/* Fallback image — uses hero poster (already preloaded), no extra import */}
       {showFallback && !videoReady &&
       <img
-        src={heroFallback}
+        src="/images/hero-poster.jpg"
         alt="Austin skyline"
         title="Austin Texas skyline — Echelon Property Group"
         className="absolute inset-0 w-full h-full object-cover"
         style={{ zIndex: 0 }} />
-
       }
 
       {/* Cinematic vignette gradient */}
@@ -136,7 +133,6 @@ const Hero = () => {
           `
         }} />
       
-
 
       {/* Content */}
       <div

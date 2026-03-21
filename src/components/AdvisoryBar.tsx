@@ -129,7 +129,7 @@ const AdvisoryBar = () => {
         {/* Gold divider */}
         <div className="h-[1.5px] bg-[hsl(var(--gold)/0.7)]" />
 
-        <div className="bg-primary/90 backdrop-blur-sm h-14 flex items-center">
+        <div className="bg-primary/90 backdrop-blur-sm h-[4.5rem] flex items-center">
           <div className="container mx-auto px-4 md:px-6 flex items-center justify-between gap-4">
             {/* Text */}
             <div className="flex-1 min-w-0">
@@ -149,8 +149,8 @@ const AdvisoryBar = () => {
                   className="px-5 py-2 text-sm font-medium text-primary-foreground border border-primary-foreground rounded transition-all duration-200 hover:bg-primary-foreground hover:text-primary hover:font-bold">
                   GET ACCESS
                 </button>
-                <span className="text-primary-foreground/40 text-[10px] mt-0.5 hidden sm:block">
-                  Takes 10 seconds — no spam
+                <span className="text-primary-foreground/60 text-[11px] tracking-wide mt-1 hidden sm:block">
+                  Takes 10 seconds · No spam
                 </span>
               </div>
               <button

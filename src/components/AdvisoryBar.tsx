@@ -88,6 +88,7 @@ const AdvisoryBar = () => {
     }
     setErrors({});
     setSubmitting(true);
+    setSubmitError(false);
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
@@ -107,18 +108,10 @@ const AdvisoryBar = () => {
         setSubmitted(true);
         dismiss();
       } else {
-        toast({
-          title: "Submission Failed",
-          description: "Something went wrong. Please try again.",
-          variant: "destructive"
-        });
+        setSubmitError(true);
       }
     } catch {
-      toast({
-        title: "Submission Failed",
-        description: "Something went wrong. Please try again.",
-        variant: "destructive"
-      });
+      setSubmitError(true);
     } finally {
       setSubmitting(false);
     }

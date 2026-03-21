@@ -321,6 +321,8 @@ const AdvisoryBar = () => {
             </form>
           </>
           )}
+          </>
+          )}
         </DialogContent>
       </Dialog>
 

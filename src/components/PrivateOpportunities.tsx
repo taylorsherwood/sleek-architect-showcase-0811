@@ -79,6 +79,7 @@ const PrivateOpportunities = ({ variant = "light" }: PrivateOpportunitiesProps) 
           to: "taylor@echelonpropertygroup.com,echelonpropertygroup@followupboss.me",
           name: form.name,
           email: form.email,
+          phone: form.phone,
           "Investment Range": form.investmentRange || "Not specified",
           source: "Private Opportunities Section",
         }),

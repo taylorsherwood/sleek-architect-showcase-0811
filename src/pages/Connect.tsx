@@ -189,7 +189,7 @@ const Connect = () => {
               />
               {/* Scroll indicator */}
               <div
-                className="flex flex-col items-center -mt-12"
+                className="flex flex-col items-center -mt-16"
                 style={{
                   opacity: 1 - scrollProgress * 5,
                   pointerEvents: "none",

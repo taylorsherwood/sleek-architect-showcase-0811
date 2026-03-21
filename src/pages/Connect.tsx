@@ -184,7 +184,7 @@ const Connect = () => {
                 src={combinedLogo}
                 alt="eXp Realty | Echelon Property Group"
                 className="w-full"
-                style={{ height: "300px", marginBottom: "-40px", objectFit: "contain", objectPosition: "53.5% center" }}
+                style={{ height: "300px", marginBottom: "-40px", objectFit: "contain", objectPosition: "53% center" }}
                 loading="eager"
               />
               {/* Scroll indicator */}

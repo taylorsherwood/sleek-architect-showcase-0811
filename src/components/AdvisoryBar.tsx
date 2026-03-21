@@ -27,7 +27,7 @@ const AdvisoryBar = () => {
   const [visible, setVisible] = useState(false);
   const [dismissed, setDismissed] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
-  const [form, setForm] = useState({ name: "", email: "", phone: "" });
+  const [form, setForm] = useState({ name: "", email: "", phone: "", lookingFor: "" });
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
@@ -98,6 +98,7 @@ const AdvisoryBar = () => {
           email: form.email,
           phone: form.phone,
           source: "Homepage Advisory Bar",
+          extra: form.lookingFor.trim() ? { looking_for: form.lookingFor.trim() } : {},
         }))
       });
       const data = await response.json();
@@ -181,7 +182,7 @@ const AdvisoryBar = () => {
               Get Access to Private Listings
             </DialogTitle>
             <DialogDescription className="text-primary-foreground/70">
-              See off-market homes and investment opportunities before they hit the market
+              See off-market homes and investment opportunities before they hit Zillow
             </DialogDescription>
           </DialogHeader>
 
@@ -197,7 +198,7 @@ const AdvisoryBar = () => {
 
           <>
             {/* Value bullets */}
-            <div className="flex flex-col gap-1.5 mt-1 mb-1">
+            <div className="flex flex-col gap-1.5 mt-1 mb-3">
               <div className="flex items-center gap-2 text-primary-foreground/80 text-sm">
                 <span className="text-[hsl(var(--gold))]">✔</span> Off-market homes
               </div>
@@ -210,6 +211,9 @@ const AdvisoryBar = () => {
             </div>
 
             <form onSubmit={handleSubmit} className="space-y-4">
+              <p className="text-primary-foreground/80 text-sm font-medium">
+                Where should we send your listings?
+              </p>
               <div>
                 <input
                 type="text"
@@ -244,12 +248,23 @@ const AdvisoryBar = () => {
               <p className="text-destructive text-xs mt-1">{errors.phone}</p>
               }
               </div>
-              <button
-              type="submit"
-              disabled={submitting}
-              className="w-full px-5 py-3 text-sm font-medium text-primary-foreground border border-primary-foreground rounded transition-all duration-200 hover:bg-primary-foreground hover:text-primary hover:font-bold disabled:opacity-50">
-                {submitting ? "Submitting…" : "Send Me Listings"}
-              </button>
+              <div>
+                <input
+                type="text"
+                placeholder="Budget, location, property type… (optional)"
+                value={form.lookingFor}
+                onChange={(e) => setForm({ ...form, lookingFor: e.target.value })}
+                maxLength={200}
+                className="w-full px-4 py-3 bg-primary-foreground/10 border border-primary-foreground/20 rounded text-primary-foreground placeholder:text-primary-foreground/40 text-sm focus:outline-none focus:border-[hsl(var(--gold))] transition-colors" />
+              </div>
+              <div className="pt-2">
+                <button
+                type="submit"
+                disabled={submitting}
+                className="w-full px-5 py-3 text-sm font-medium text-primary-foreground border border-primary-foreground rounded transition-all duration-200 hover:bg-primary-foreground hover:text-primary hover:font-bold disabled:opacity-50">
+                  {submitting ? "Submitting…" : "Send Me Listings"}
+                </button>
+              </div>
               <p className="text-primary-foreground/40 text-xs text-center">
                 No spam. Just relevant opportunities.
               </p>

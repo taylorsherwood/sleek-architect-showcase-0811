@@ -123,21 +123,22 @@ const AdvisoryBar = () => {
   };
 
   const isHiddenRoute = HIDDEN_ROUTES.includes(location.pathname);
-  if (isHiddenRoute || dismissed || !visible) return null;
+  if (isHiddenRoute || dismissed) return null;
 
   return (
     <>
       {/* Advisory bar */}
       <div
-        className="fixed bottom-0 left-0 right-0 z-50"
+        className="fixed bottom-0 left-0 right-0 z-50 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]"
         style={{
-          animation: "slideUp 500ms cubic-bezier(0.16, 1, 0.3, 1) forwards"
+          transform: visible ? "translateY(0)" : "translateY(100%)",
+          opacity: visible ? 1 : 0,
         }}>
         
         {/* Gold divider */}
         <div className="h-[1.5px] bg-[hsl(var(--gold)/0.7)]" />
 
-        <div className="bg-primary backdrop-blur-none h-[4.5rem] flex items-center">
+        <div className="bg-primary h-20 flex items-center">
           <div className="container mx-auto px-4 md:px-6 flex items-center justify-between gap-4">
             {/* Text */}
             <div className="flex-1 min-w-0">
@@ -258,12 +259,6 @@ const AdvisoryBar = () => {
         </DialogContent>
       </Dialog>
 
-      <style>{`
-        @keyframes slideUp {
-          from { transform: translateY(100%); opacity: 0; }
-          to { transform: translateY(0); opacity: 1; }
-        }
-      `}</style>
     </>);
 
 };

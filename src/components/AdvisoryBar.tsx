@@ -49,11 +49,16 @@ const AdvisoryBar = () => {
     }
 
     const onScroll = () => {
-      // Trigger after scrolling past the hero section
       const hero = document.getElementById("hero") || document.querySelector("section");
       const triggerPoint = hero ? hero.offsetTop + hero.offsetHeight : window.innerHeight;
-      if (window.scrollY >= triggerPoint) {
-        setVisible(true);
+      const pastHero = window.scrollY >= triggerPoint;
+
+      // On homepage: show only when scrolled past hero, hide when back at hero
+      if (isHomePage) {
+        setVisible(pastHero);
+      } else {
+        // On other pages, show once past equivalent scroll depth
+        if (pastHero) setVisible(true);
       }
     };
 

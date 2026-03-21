@@ -176,8 +176,8 @@ const AdvisoryBar = () => {
 
       {/* Form modal */}
       <Dialog open={modalOpen} onOpenChange={setModalOpen}>
-        <DialogContent className="sm:max-w-md bg-primary border-[hsl(var(--gold)/0.3)]">
-          <DialogHeader>
+        <DialogContent className="sm:max-w-md bg-primary border-[hsl(var(--gold)/0.3)] gap-6">
+          <DialogHeader className="space-y-3">
             <DialogTitle className="text-primary-foreground text-xl">
               Get Access to Private Listings in Austin
             </DialogTitle>

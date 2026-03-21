@@ -113,7 +113,7 @@ const stats = [
 const valuationSchema = z.object({
   name: z.string().trim().min(1, "Name is required").max(100),
   email: z.string().trim().email("Please enter a valid email").max(255),
-  phone: z.string().trim().max(20).optional(),
+  phone: z.string().trim().min(1, "Phone is required").max(20),
   address: z.string().trim().min(1, "Property address is required").max(300),
   message: z.string().trim().max(2000).optional()
 });
@@ -121,7 +121,7 @@ const valuationSchema = z.object({
 const consultSchema = z.object({
   name: z.string().trim().min(1, "Name is required").max(100),
   email: z.string().trim().email("Please enter a valid email").max(255),
-  phone: z.string().trim().max(20).optional(),
+  phone: z.string().trim().min(1, "Phone is required").max(20),
   message: z.string().trim().max(2000).optional()
 });
 

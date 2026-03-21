@@ -209,6 +209,19 @@ const AdvisoryBar = () => {
               <p className="text-destructive text-xs mt-1">{errors.email}</p>
               }
               </div>
+              <div>
+                <input
+                type="tel"
+                placeholder="Phone Number"
+                value={form.phone}
+                onChange={(e) => setForm({ ...form, phone: e.target.value })}
+                maxLength={20}
+                className="w-full px-4 py-3 bg-primary-foreground/10 border border-primary-foreground/20 rounded text-primary-foreground placeholder:text-primary-foreground/40 text-sm focus:outline-none focus:border-[hsl(var(--gold))] transition-colors" />
+              
+                {errors.phone &&
+              <p className="text-destructive text-xs mt-1">{errors.phone}</p>
+              }
+              </div>
               <button
               type="submit"
               disabled={submitting}

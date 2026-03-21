@@ -207,6 +207,23 @@ const PrivateOpportunities = ({ variant = "light" }: PrivateOpportunitiesProps) 
                   )}
                 </div>
                 <div>
+                  <input
+                    type="tel"
+                    placeholder="Phone Number"
+                    value={form.phone}
+                    onChange={(e) => setForm({ ...form, phone: e.target.value })}
+                    maxLength={20}
+                    className={`w-full px-4 py-3 rounded text-sm transition-colors focus:outline-none ${
+                      isDark
+                        ? "bg-white/10 border border-white/15 text-white placeholder:text-white/40 focus:border-[hsl(42,37%,57%)]"
+                        : "bg-muted border border-border text-foreground placeholder:text-muted-foreground focus:border-[hsl(var(--gold))]"
+                    }`}
+                  />
+                  {errors.phone && (
+                    <p className="text-destructive text-xs mt-1">{errors.phone}</p>
+                  )}
+                </div>
+                <div>
                   <Select
                     value={form.investmentRange}
                     onValueChange={(v) => setForm({ ...form, investmentRange: v })}

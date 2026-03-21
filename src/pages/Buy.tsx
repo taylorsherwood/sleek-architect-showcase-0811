@@ -243,8 +243,9 @@ const Buy = () => {
   const [submitting, setSubmitting] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-    if (errors[e.target.name]) setErrors({ ...errors, [e.target.name]: "" });
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: name === "phone" ? formatPhoneNumber(value) : value });
+    if (errors[name]) setErrors({ ...errors, [name]: "" });
   };
 
   const handleSubmit = async (e: React.FormEvent) => {

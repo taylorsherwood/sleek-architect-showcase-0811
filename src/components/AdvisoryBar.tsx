@@ -123,9 +123,9 @@ const AdvisoryBar = () => {
     <>
       {/* Advisory bar */}
       <div
-        className="fixed bottom-0 left-0 right-0 z-50 animate-slide-up"
+        className="fixed bottom-0 left-0 right-0 z-50"
         style={{
-          animation: "slideUp 300ms ease forwards"
+          animation: "slideUp 500ms cubic-bezier(0.16, 1, 0.3, 1) forwards"
         }}>
         
         {/* Gold divider */}

@@ -10,11 +10,12 @@ import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createFAQSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
+import { formatPhoneNumber, buildWeb3Payload } from "@/lib/formUtils";
 
 const leadSchema = z.object({
   name: z.string().trim().min(1, "Name is required").max(100),
   email: z.string().trim().email("Please enter a valid email").max(255),
-  phone: z.string().trim().max(20).optional(),
+  phone: z.string().trim().min(1, "Phone is required").max(20),
   priceRange: z.string().min(1, "Please select a price range"),
   neighborhoods: z.string().trim().max(500).optional(),
   message: z.string().trim().max(2000).optional(),
@@ -61,18 +62,19 @@ const OffMarketHomes = () => {
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          access_key: "81cc426e-b1a8-4e5e-b2a0-0d25738dfe12",
+        body: JSON.stringify(buildWeb3Payload({
+          accessKey: "81cc426e-b1a8-4e5e-b2a0-0d25738dfe12",
           subject: "New Off-Market Access Request",
-          from_name: "Echelon Property Group Website",
-          to: "taylor@echelonpropertygroup.com,echelonpropertygroup@followupboss.me",
           name: form.name,
           email: form.email,
-          phone: form.phone || "Not provided",
-          "Preferred Price Range": form.priceRange,
-          "Preferred Neighborhoods": form.neighborhoods || "Not specified",
-          "Additional Notes": form.message || "None",
-        }),
+          phone: form.phone,
+          source: "Off-Market Homes Page",
+          extra: {
+            "Preferred Price Range": form.priceRange,
+            "Preferred Neighborhoods": form.neighborhoods || "Not specified",
+            "Additional Notes": form.message || "None",
+          },
+        })),
       });
       const data = await response.json();
       if (data.success) {
@@ -100,9 +102,10 @@ const OffMarketHomes = () => {
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-    if (errors[e.target.name]) {
-      setErrors({ ...errors, [e.target.name]: "" });
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: name === "phone" ? formatPhoneNumber(value) : value });
+    if (errors[name]) {
+      setErrors({ ...errors, [name]: "" });
     }
   };
 
@@ -161,7 +164,8 @@ const OffMarketHomes = () => {
                     {errors.email && <p className="text-destructive text-sm mt-1">{errors.email}</p>}
                   </div>
                   <div>
-                    <input type="tel" name="phone" placeholder="Phone (Optional)" value={form.phone} onChange={handleChange} className={inputClass} maxLength={20} />
+                    <input type="tel" name="phone" placeholder="Phone Number" value={form.phone} onChange={handleChange} className={inputClass} maxLength={20} />
+                    {errors.phone && <p className="text-destructive text-sm mt-1">{errors.phone}</p>}
                   </div>
                   <div>
                     <select name="priceRange" value={form.priceRange} onChange={handleChange} className={`${inputClass} bg-muted`}>

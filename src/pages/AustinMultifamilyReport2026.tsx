@@ -17,6 +17,7 @@ import {
 } from "@/components/ui/select";
 import { TrendingUp, Building2, MapPin, BarChart3, CheckCircle2, ArrowDown } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { formatPhoneNumber } from "@/lib/formUtils";
 import reportCover from "@/assets/multifamily-report-cover.png";
 
 const PrivateOpportunities = lazy(() => import("@/components/PrivateOpportunities"));
@@ -108,7 +109,7 @@ const AustinMultifamilyReport2026 = () => {
   }, []);
 
   const handleChange = (field: string, value: string) =>
-    setFormData((prev) => ({ ...prev, [field]: value }));
+    setFormData((prev) => ({ ...prev, [field]: field === "phone" ? formatPhoneNumber(value) : value }));
 
   const scrollToForm = () =>
     document.getElementById("report-form")?.scrollIntoView({ behavior: "smooth" });
@@ -138,14 +139,14 @@ const AustinMultifamilyReport2026 = () => {
       access_key: "72f90ed2-5e5c-4944-bea8-839773d8e2d2",
       subject: "🏢 New Lead: Austin Multifamily Report 2026",
       from_name: "Echelon Property Group Website",
-      // Web3Forms sends notification to the email linked to the access_key.
-      // Lead email goes in a custom field so it doesn't override the recipient.
-      "Lead Name": `${formData.firstName} ${formData.lastName}`,
-      "Lead Email": formData.email,
-      "Phone": formData.phone || "Not provided",
+      replyto: formData.email,
+      name: `${formData.firstName} ${formData.lastName}`,
+      email: formData.email,
+      phone: formData.phone || "Not provided",
       "Investment Focus": formData.investmentFocus || "Not specified",
-      "Submitted At": timestamp,
-      "Source": "Austin Multifamily Report 2026",
+      submitted_at: timestamp,
+      source: "Austin Multifamily Report 2026",
+      page_url: window.location.href,
     };
 
     console.log("[Report Form] Payload sent:", payload);

@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Home, Landmark, Building2, TrendingUp } from "lucide-react";
 import { z } from "zod";
 import { useToast } from "@/hooks/use-toast";
+import { formatPhoneNumber, buildWeb3Payload } from "@/lib/formUtils";
 import {
   Select,
   SelectContent,
@@ -72,17 +73,17 @@ const PrivateOpportunities = ({ variant = "light" }: PrivateOpportunitiesProps) 
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          access_key: "5728f4e2-7269-4f9f-8a06-62557292e699",
+        body: JSON.stringify(buildWeb3Payload({
+          accessKey: "5728f4e2-7269-4f9f-8a06-62557292e699",
           subject: "🔒 New Private Opportunities Request",
-          from_name: "Echelon Property Group Website",
-          to: "taylor@echelonpropertygroup.com,echelonpropertygroup@followupboss.me",
           name: form.name,
           email: form.email,
           phone: form.phone,
-          "Investment Range": form.investmentRange || "Not specified",
           source: "Private Opportunities Section",
-        }),
+          extra: {
+            "Investment Range": form.investmentRange || "Not specified",
+          },
+        })),
       });
       const data = await response.json();
       if (data.success) {
@@ -211,7 +212,7 @@ const PrivateOpportunities = ({ variant = "light" }: PrivateOpportunitiesProps) 
                     type="tel"
                     placeholder="Phone Number"
                     value={form.phone}
-                    onChange={(e) => setForm({ ...form, phone: e.target.value })}
+                    onChange={(e) => setForm({ ...form, phone: formatPhoneNumber(e.target.value) })}
                     maxLength={20}
                     className={`w-full px-4 py-3 rounded text-sm transition-colors focus:outline-none ${
                       isDark

@@ -6,6 +6,7 @@ import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { realEstateAgentSchema, createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
+import { formatPhoneNumber, buildWeb3Payload } from "@/lib/formUtils";
 import {
   CheckCircle,
   ArrowRight,
@@ -242,8 +243,9 @@ const Buy = () => {
   const [submitting, setSubmitting] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-    if (errors[e.target.name]) setErrors({ ...errors, [e.target.name]: "" });
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: name === "phone" ? formatPhoneNumber(value) : value });
+    if (errors[name]) setErrors({ ...errors, [name]: "" });
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -263,17 +265,18 @@ const Buy = () => {
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          access_key: "81cc426e-b1a8-4e5e-b2a0-0d25738dfe12",
+        body: JSON.stringify(buildWeb3Payload({
+          accessKey: "81cc426e-b1a8-4e5e-b2a0-0d25738dfe12",
           subject: "Buyer Consultation Request",
-          from_name: "Echelon Property Group Website",
-          to: "taylor@echelonpropertygroup.com,echelonpropertygroup@followupboss.me",
           name: form.name,
           email: form.email,
-          phone: form.phone || "Not provided",
-          "Interest": "Buying a Home",
-          "Message": form.message || "Buyer consultation request from Buy page."
-        })
+          phone: form.phone,
+          source: "Buy Page",
+          extra: {
+            interest: "Buying a Home",
+            message: form.message || "Buyer consultation request from Buy page.",
+          },
+        }))
       });
       const data = await response.json();
       if (data.success) {

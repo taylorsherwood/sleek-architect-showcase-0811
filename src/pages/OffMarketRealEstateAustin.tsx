@@ -5,6 +5,7 @@ import SchemaMarkup, { createBreadcrumbSchema } from "@/components/SchemaMarkup"
 import Footer from "@/components/Footer";
 import heroImage from "@/assets/hero-luxury-austin.jpg";
 import echelonLogo from "@/assets/echelon-logo-gold.png";
+import { formatPhoneNumber, buildWeb3Payload } from "@/lib/formUtils";
 
 const SITE = "https://www.echelonpropertygroup.com";
 
@@ -51,18 +52,20 @@ const OffMarketRealEstateAustin = () => {
       const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          access_key: "b2b7bb4b-7b0b-410e-b91c-5ff681e22c05",
+        body: JSON.stringify(buildWeb3Payload({
+          accessKey: "b2b7bb4b-7b0b-410e-b91c-5ff681e22c05",
           subject: `Off-Market Lead — ${form.interest || "General"} — ${form.budget || "No budget"}`,
-          from_name: form.name,
           name: form.name,
           email: form.email,
           phone: form.phone,
-          interest: form.interest,
-          budget: form.budget,
-          timeline: form.timeline,
-          notes: form.notes,
-        }),
+          source: "Off-Market Landing Page",
+          extra: {
+            interest: form.interest,
+            budget: form.budget,
+            timeline: form.timeline,
+            notes: form.notes,
+          },
+        })),
       });
       if (res.ok) {
         setSubmitted(true);
@@ -103,7 +106,7 @@ const OffMarketRealEstateAustin = () => {
         </div>
         <div>
           <label htmlFor="phone" className="block text-white/40 mb-1.5" style={labelStyle}>Phone</label>
-          <input id="phone" type="tel" required maxLength={20} value={form.phone} onChange={(e) => setForm(prev => ({ ...prev, phone: e.target.value }))} className={inputClass} />
+          <input id="phone" type="tel" required maxLength={20} value={form.phone} onChange={(e) => setForm(prev => ({ ...prev, phone: formatPhoneNumber(e.target.value) }))} className={inputClass} />
         </div>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">

@@ -5,6 +5,7 @@ import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { realEstateAgentSchema, createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
+import { formatPhoneNumber, buildWeb3Payload } from "@/lib/formUtils";
 
 const contactSchema = z.object({
   name: z.string().trim().min(1, "Name is required").max(100, "Name must be under 100 characters"),
@@ -44,17 +45,18 @@ const Contact = () => {
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          access_key: "81cc426e-b1a8-4e5e-b2a0-0d25738dfe12",
+        body: JSON.stringify(buildWeb3Payload({
+          accessKey: "81cc426e-b1a8-4e5e-b2a0-0d25738dfe12",
           subject: "New Contact Form Submission",
-          from_name: "Echelon Property Group Website",
-          to: "taylor@echelonpropertygroup.com,echelonpropertygroup@followupboss.me",
           name: form.name,
           email: form.email,
-          phone: form.phone || "Not provided",
-          "Interest": form.interest,
-          "Message": form.message,
-        }),
+          phone: form.phone,
+          source: "Contact Page",
+          extra: {
+            interest: form.interest,
+            message: form.message,
+          },
+        })),
       });
       const data = await response.json();
       if (data.success) {
@@ -82,9 +84,10 @@ const Contact = () => {
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-    if (errors[e.target.name]) {
-      setErrors({ ...errors, [e.target.name]: "" });
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: name === "phone" ? formatPhoneNumber(value) : value });
+    if (errors[name]) {
+      setErrors({ ...errors, [name]: "" });
     }
   };
 

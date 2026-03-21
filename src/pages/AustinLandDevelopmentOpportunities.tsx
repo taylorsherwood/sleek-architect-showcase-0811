@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import heroImage from "@/assets/community-hill-country.jpg";
+import { formatPhoneNumber, buildWeb3Payload } from "@/lib/formUtils";
 
 const SITE = "https://www.echelonpropertygroup.com";
 
@@ -50,19 +51,21 @@ const AustinLandDevelopmentOpportunities = () => {
       const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          access_key: "c6f787d5-449a-4d4e-bb5a-501122ab7878",
+        body: JSON.stringify(buildWeb3Payload({
+          accessKey: "c6f787d5-449a-4d4e-bb5a-501122ab7878",
           subject: `Land/Dev Lead — ${form.use || "General"} — ${form.budget || "No budget"}`,
-          from_name: form.name,
           name: form.name,
           email: form.email,
           phone: form.phone,
-          intended_use: form.use,
-          acreage_range: form.acreage,
-          budget: form.budget,
-          timeline: form.timeline,
-          notes: form.notes,
-        }),
+          source: "Land Development Landing Page",
+          extra: {
+            intended_use: form.use,
+            acreage_range: form.acreage,
+            budget: form.budget,
+            timeline: form.timeline,
+            notes: form.notes,
+          },
+        })),
       });
       if (res.ok) {
         setSubmitted(true);
@@ -103,7 +106,7 @@ const AustinLandDevelopmentOpportunities = () => {
           </div>
           <div>
             <label htmlFor="phone" className="block text-white/40 mb-1.5" style={labelStyle}>Phone</label>
-            <input id="phone" type="tel" required maxLength={20} value={form.phone} onChange={(e) => setForm({ ...form, phone: e.target.value })} className={inputClass} />
+            <input id="phone" type="tel" required maxLength={20} value={form.phone} onChange={(e) => setForm({ ...form, phone: formatPhoneNumber(e.target.value) })} className={inputClass} />
           </div>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">

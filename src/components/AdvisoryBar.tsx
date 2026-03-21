@@ -84,16 +84,14 @@ const AdvisoryBar = () => {
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-         body: JSON.stringify({
-          access_key: "5728f4e2-7269-4f9f-8a06-62557292e699",
+        body: JSON.stringify(buildWeb3Payload({
+          accessKey: "5728f4e2-7269-4f9f-8a06-62557292e699",
           subject: "New Private List Request — Advisory Bar",
-          from_name: "Echelon Property Group Website",
-          to: "taylor@echelonpropertygroup.com,echelonpropertygroup@followupboss.me",
           name: form.name,
           email: form.email,
           phone: form.phone,
-          source: "Homepage Advisory Bar"
-        })
+          source: "Homepage Advisory Bar",
+        }))
       });
       const data = await response.json();
       if (data.success) {

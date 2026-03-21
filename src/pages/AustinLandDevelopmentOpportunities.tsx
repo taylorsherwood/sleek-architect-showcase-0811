@@ -51,19 +51,21 @@ const AustinLandDevelopmentOpportunities = () => {
       const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          access_key: "c6f787d5-449a-4d4e-bb5a-501122ab7878",
+        body: JSON.stringify(buildWeb3Payload({
+          accessKey: "c6f787d5-449a-4d4e-bb5a-501122ab7878",
           subject: `Land/Dev Lead — ${form.use || "General"} — ${form.budget || "No budget"}`,
-          from_name: form.name,
           name: form.name,
           email: form.email,
           phone: form.phone,
-          intended_use: form.use,
-          acreage_range: form.acreage,
-          budget: form.budget,
-          timeline: form.timeline,
-          notes: form.notes,
-        }),
+          source: "Land Development Landing Page",
+          extra: {
+            intended_use: form.use,
+            acreage_range: form.acreage,
+            budget: form.budget,
+            timeline: form.timeline,
+            notes: form.notes,
+          },
+        })),
       });
       if (res.ok) {
         setSubmitted(true);

@@ -126,16 +126,18 @@ const Private = () => {
       const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          access_key: "c6f787d5-449a-4d4e-bb5a-501122ab7878",
+        body: JSON.stringify(buildWeb3Payload({
+          accessKey: "c6f787d5-449a-4d4e-bb5a-501122ab7878",
           subject: `Private Opportunities Request — ${formData.interest || "General"}`,
-          from_name: formData.name,
           name: formData.name,
           email: formData.email,
           phone: formData.phone,
-          interest: formData.interest,
-          message: formData.message,
-        }),
+          source: "Private Listings Page",
+          extra: {
+            interest: formData.interest,
+            message: formData.message,
+          },
+        })),
       });
       if (res.ok) {
         setSubmitted(true);

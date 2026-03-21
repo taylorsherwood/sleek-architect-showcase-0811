@@ -52,18 +52,20 @@ const OffMarketRealEstateAustin = () => {
       const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          access_key: "b2b7bb4b-7b0b-410e-b91c-5ff681e22c05",
+        body: JSON.stringify(buildWeb3Payload({
+          accessKey: "b2b7bb4b-7b0b-410e-b91c-5ff681e22c05",
           subject: `Off-Market Lead — ${form.interest || "General"} — ${form.budget || "No budget"}`,
-          from_name: form.name,
           name: form.name,
           email: form.email,
           phone: form.phone,
-          interest: form.interest,
-          budget: form.budget,
-          timeline: form.timeline,
-          notes: form.notes,
-        }),
+          source: "Off-Market Landing Page",
+          extra: {
+            interest: form.interest,
+            budget: form.budget,
+            timeline: form.timeline,
+            notes: form.notes,
+          },
+        })),
       });
       if (res.ok) {
         setSubmitted(true);

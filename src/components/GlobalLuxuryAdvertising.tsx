@@ -6,6 +6,7 @@ import heroImg from "@/assets/global-luxury-hero.jpg";
 import digitalImg from "@/assets/marketing-digital.jpg";
 import printImg from "@/assets/marketing-print.png";
 import localImg from "@/assets/marketing-local.jpg";
+import collageImg from "@/assets/marketing-collage.png";
 
 /* ------------------------------------------------------------------ */
 /*  Scroll-triggered reveal hook                                       */
@@ -206,27 +207,18 @@ const GlobalLuxuryAdvertising = () => {
               </ul>
             </div>
 
-            {/* Right – staggered visual cards */}
-            <div className="grid grid-cols-2 gap-4 lg:gap-5">
-              {[digitalImg, printImg, localImg, heroImg].map((img, i) => (
-                <div
-                  key={i}
-                  className={`overflow-hidden rounded group cursor-default ${
-                    i === 0 ? "col-span-2 aspect-[16/9]" :
-                    i === 3 ? "col-span-2 aspect-[16/7]" :
-                    "aspect-[4/3]"
-                  }`}
-                  style={revealScaleStyle(platforms1.visible, 300 + i * 150)}
-                >
-                  <img
-                    src={img}
-                    alt="Luxury marketing creative"
-                    className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03] group-hover:brightness-105"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </div>
-              ))}
+            {/* Right – collage image */}
+            <div
+              className="overflow-hidden rounded group cursor-default"
+              style={revealScaleStyle(platforms1.visible, 300)}
+            >
+              <img
+                src={collageImg}
+                alt="Luxury marketing collage featuring Robb Report, Wall Street Journal, Mansion Global, UPMKT, and eXp Luxury"
+                className="w-full h-auto object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02] group-hover:brightness-105"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
           </div>
         </div>

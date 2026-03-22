@@ -400,10 +400,11 @@ More Than Just a Sign
       {/* ── Global Luxury Advertising ── */}
       <GlobalLuxuryAdvertising />
 
-      {/* ── Spacer ── */}
-      <div className="bg-background py-8" />
 
       <Testimonials />
+
+      {/* ── Spacer ── */}
+      <div className="bg-background py-8" />
 
       {/* ── Full-Spectrum Real Estate Advisory ── */}
       <section className="pt-0 pb-28 bg-background">

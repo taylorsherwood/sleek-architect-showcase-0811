@@ -130,19 +130,26 @@ function useCountUp(target: number, duration = 1800, from = 0, countDown = false
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
+    const initial = countDown ? from : 0;
     const obs = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting && !started.current) {
-          started.current = true;
-          animate();
-          obs.disconnect();
+        if (entry.isIntersecting) {
+          if (!started.current) {
+            started.current = true;
+            animate();
+          }
+        } else {
+          if (started.current) {
+            started.current = false;
+            setValue(initial);
+          }
         }
       },
       { threshold: 0.3 }
     );
     obs.observe(el);
     return () => obs.disconnect();
-  }, [animate]);
+  }, [animate, from, countDown]);
 
   return { value, ref };
 }

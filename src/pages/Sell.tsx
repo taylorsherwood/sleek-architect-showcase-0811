@@ -389,7 +389,7 @@ const Sell = () => {
       <CinematicVideoSection />
 
       {/* ── Marketing Strategy ── */}
-      <section className="py-28 bg-secondary/50">
+      <section className="pt-16 pb-28 bg-secondary/50">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
             <div>

@@ -116,10 +116,10 @@ const CinematicVideoSection = () => {
               <div className="hidden lg:block mt-8 lg:ml-[3.5%]" style={reveal(visible, 520)}>
                 <Link
                   to="/contact"
-                  className="group flex items-center justify-between gap-2 text-[11px] font-medium text-muted-foreground/70 hover:text-gold transition-all duration-500 ease-out w-[60%] hover:w-full"
+                  className="group inline-flex items-center gap-2 text-[11px] font-medium text-muted-foreground/70 hover:text-gold transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] hover:translate-x-[12vw]"
                   style={{ letterSpacing: "0.18em" }}
                 >
-                  <span className="whitespace-nowrap">SEE HOW YOUR HOME WOULD BE POSITIONED</span>
+                  SEE HOW YOUR HOME WOULD BE POSITIONED
                   <ArrowRight className="w-3.5 h-3.5 flex-shrink-0 transition-transform duration-500 group-hover:translate-x-1" />
                 </Link>
               </div>

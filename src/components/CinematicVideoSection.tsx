@@ -104,7 +104,7 @@ const CinematicVideoSection = () => {
 
               {/* Subheadline */}
               <p
-                className="text-muted-foreground/80 text-[13px] leading-[2] max-w-[20rem] mb-8 lg:mb-0"
+                className="text-muted-foreground/80 text-[15px] leading-[2] max-w-[22rem] mb-8 lg:mb-0"
                 style={reveal(visible, 420)}
               >
                 Cinematic presentation is part of how we position exceptional

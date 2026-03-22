@@ -261,12 +261,15 @@ const GlobalLuxuryAdvertising = () => {
           <span
             className="absolute font-display font-light uppercase whitespace-nowrap"
             style={{
-              fontSize: "clamp(3rem, 5.5vw, 5rem)",
+              fontSize: "clamp(2.5rem, 4.5vw, 4.2rem)",
               letterSpacing: "0.14em",
-              color: "hsl(35 18% 55% / 0.08)",
-              right: "-2%",
-              top: "50%",
+              right: "5%",
+              top: "54%",
               transform: "translateY(-50%)",
+              background: "linear-gradient(90deg, hsl(35 18% 55% / 0.04) 0%, hsl(35 18% 55% / 0.11) 60%, hsl(35 18% 55% / 0.11) 100%)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              backgroundClip: "text",
             }}>
             Wall Street Journal
           </span>

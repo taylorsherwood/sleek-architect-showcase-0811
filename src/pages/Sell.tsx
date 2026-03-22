@@ -109,7 +109,7 @@ const stats = [
   { target: 100, prefix: "$", suffix: "M+", label: "Career Sales Volume", countDown: false },
 ];
 
-function useCountUp(target: number, duration = 1800, from = 0, countDown = false) {
+function useCountUp(target: number, duration = 2600, from = 0, countDown = false) {
   const [value, setValue] = useState(from);
   const ref = useRef<HTMLDivElement>(null);
   const started = useRef(false);

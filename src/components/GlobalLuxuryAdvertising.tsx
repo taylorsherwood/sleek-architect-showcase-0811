@@ -7,6 +7,7 @@ import digitalImg from "@/assets/marketing-digital.png";
 import printImg from "@/assets/marketing-print.png";
 import localImg from "@/assets/marketing-local.png";
 import collageImg from "@/assets/marketing-collage-spaced.png";
+import expLuxuryLogo from "@/assets/exp-luxury-logo-white.png";
 
 /* ------------------------------------------------------------------ */
 /*  Scroll-triggered reveal hook                                       */

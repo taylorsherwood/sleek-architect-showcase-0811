@@ -109,7 +109,7 @@ const CommercialInvestment = () => {
               <h2 className="font-display text-2xl md:text-3xl font-light text-white text-center mb-4">
                 Current Commercial Listings
               </h2>
-              <p className="text-white/50 text-sm text-center max-w-2xl mx-auto">
+              <p className="text-white/70 text-sm text-center max-w-2xl mx-auto">
                 Available commercial, land, and investment opportunities represented by Echelon Property Group.
               </p>
             </div>
@@ -137,18 +137,18 @@ const CommercialInvestment = () => {
                     </h3>
                     <span className="text-2xl font-display font-light text-white">$2,500,000</span>
                   </div>
-                  <p className="text-white/40 mb-4">Austin, TX 78745</p>
+                  <p className="text-white/60 mb-4">Austin, TX 78745</p>
                   <div className="grid grid-cols-2 gap-4 mb-6">
                     <div>
-                      <p className="text-white/30 mb-1" style={labelStyle}>ASSET TYPE</p>
+                      <p className="text-white/70 mb-1" style={labelStyle}>ASSET TYPE</p>
                       <p className="text-white font-medium text-sm">Value-Add Multifamily</p>
                     </div>
                     <div>
-                      <p className="text-white/30 mb-1" style={labelStyle}>UNITS</p>
+                      <p className="text-white/70 mb-1" style={labelStyle}>UNITS</p>
                       <p className="text-white font-medium text-sm">24</p>
                     </div>
                   </div>
-                  <p className="text-white/45 text-sm leading-relaxed mb-6">
+                  <p className="text-white/65 text-sm leading-relaxed mb-6">
                     24-unit value-add multifamily opportunity in South Austin. Well-positioned for rent growth and operational improvements in a high-demand rental corridor.
                   </p>
                   <Link
@@ -183,18 +183,18 @@ const CommercialInvestment = () => {
                     </h3>
                     <span className="text-2xl font-display font-light text-white">$1,600,000</span>
                   </div>
-                  <p className="text-white/40 mb-4">Del Valle, TX</p>
+                  <p className="text-white/60 mb-4">Del Valle, TX</p>
                   <div className="grid grid-cols-2 gap-4 mb-6">
                     <div>
-                      <p className="text-white/30 mb-1" style={labelStyle}>ASSET TYPE</p>
+                      <p className="text-white/70 mb-1" style={labelStyle}>ASSET TYPE</p>
                       <p className="text-white font-medium text-sm">Redevelopment Land</p>
                     </div>
                     <div>
-                      <p className="text-white/30 mb-1" style={labelStyle}>UNITS</p>
+                      <p className="text-white/70 mb-1" style={labelStyle}>UNITS</p>
                       <p className="text-white font-medium text-sm">3.06 Acres</p>
                     </div>
                   </div>
-                  <p className="text-white/45 text-sm leading-relaxed mb-6">
+                  <p className="text-white/65 text-sm leading-relaxed mb-6">
                     3.06-acre redevelopment parcel with existing mobile homes and zero zoning restrictions. Ideal for ground-up multifamily, mixed-use, or commercial development in the high-growth Del Valle corridor.
                   </p>
                   <Link
@@ -220,7 +220,7 @@ const CommercialInvestment = () => {
               <h2 className="font-display text-2xl md:text-3xl font-light text-white text-center mb-4">
                 Private Market Opportunities
               </h2>
-              <p className="text-white/50 text-sm text-center max-w-2xl mx-auto">
+              <p className="text-white/70 text-sm text-center max-w-2xl mx-auto">
                 Select off-market and discreetly marketed opportunities may be available upon request.
                 These properties are not publicly advertised and are shared exclusively with qualified buyers.
               </p>
@@ -276,18 +276,18 @@ const CommercialInvestment = () => {
                   <h3 className="text-xl font-display font-light text-white mb-2">
                     {listing.name}
                   </h3>
-                  <p className="text-white/40 mb-6">{listing.location}</p>
+                  <p className="text-white/60 mb-6">{listing.location}</p>
                   <div className="grid grid-cols-2 gap-4 mb-6">
                     <div>
-                      <p className="text-white/30 mb-1" style={labelStyle}>CAP RATE</p>
+                      <p className="text-white/70 mb-1" style={labelStyle}>CAP RATE</p>
                       <p className="text-white font-medium text-sm">{listing.capRate}</p>
                     </div>
                     <div>
-                      <p className="text-white/30 mb-1" style={labelStyle}>SIZE</p>
+                      <p className="text-white/70 mb-1" style={labelStyle}>SIZE</p>
                       <p className="text-white font-medium text-sm">{listing.sqft}</p>
                     </div>
                   </div>
-                  <p className="text-sm text-white/35 italic">{listing.highlights}</p>
+                  <p className="text-sm text-white/55 italic">{listing.highlights}</p>
                   <div className="mt-6 pt-6 border-t border-white/8">
                     <Link
                       to="/contact"
@@ -313,7 +313,7 @@ const CommercialInvestment = () => {
                 <h2 className="font-display text-2xl md:text-3xl font-light text-white mb-6">
                   Find Your Next Austin Investment Property
                 </h2>
-                <p className="text-white/50 text-sm md:text-[0.925rem] leading-relaxed mb-6">
+                <p className="text-white/70 text-sm md:text-[0.925rem] leading-relaxed mb-6">
                   Whether you're targeting multifamily acquisitions, NNN retail, value-add office,
                   or development land, our team provides institutional-grade deal sourcing and
                   underwriting for individual and portfolio-level investors.
@@ -349,7 +349,7 @@ const CommercialInvestment = () => {
                   { label: "Investor Clients Served", value: "50+" }
                 ].map((stat, i) => (
                   <div key={i} className="border-b border-white/8 pb-6">
-                    <p className="text-white/30 mb-2" style={labelStyle}>{stat.label}</p>
+                    <p className="text-white/70 mb-2" style={labelStyle}>{stat.label}</p>
                     <p className="text-3xl md:text-4xl font-display font-light text-white">{stat.value}</p>
                   </div>
                 ))}
@@ -373,14 +373,14 @@ const CommercialInvestment = () => {
                 <h3 className="text-xl font-display font-light text-white mb-4">
                   Why Austin for Commercial Investment
                 </h3>
-                <p className="text-white/45 text-sm leading-relaxed mb-4">
+                <p className="text-white/65 text-sm leading-relaxed mb-4">
                   Austin has emerged as one of America's premier commercial real estate markets, driven by
                   explosive population growth, major corporate relocations from Apple, Tesla, Google, Meta,
                   and Oracle, and a business-friendly tax environment with no state income tax. The metro
                   area has added over 300,000 residents in the past five years, creating sustained demand
                   across every commercial asset class.
                 </p>
-                <p className="text-white/45 text-sm leading-relaxed">
+                <p className="text-white/65 text-sm leading-relaxed">
                   For investors, Austin offers compelling risk-adjusted returns relative to coastal gateway
                   markets. Cap rates remain attractive, rent growth continues to outpace national averages
                   in key submarkets, and the metro's diversifying economy reduces concentration risk that
@@ -392,7 +392,7 @@ const CommercialInvestment = () => {
                 <h3 className="text-xl font-display font-light text-white mb-4">
                   Austin Multifamily Investment Landscape
                 </h3>
-                <p className="text-white/45 text-sm leading-relaxed">
+                <p className="text-white/65 text-sm leading-relaxed">
                   Multifamily remains Austin's most active commercial investment sector. Strong job growth,
                   elevated mortgage rates sustaining rental demand, and Austin's quality-of-life appeal
                   create a favorable environment for apartment investors. Suburban corridors including
@@ -405,7 +405,7 @@ const CommercialInvestment = () => {
                 <h3 className="text-xl font-display font-light text-white mb-4">
                   Emerging Opportunity Zones
                 </h3>
-                <p className="text-white/45 text-sm leading-relaxed">
+                <p className="text-white/65 text-sm leading-relaxed">
                   East Austin continues its transformation as the city's most dynamic development corridor.
                   The I-35 expansion project is reshaping adjacent land values and accessibility. Southeast
                   Austin, anchored by Tesla's Gigafactory and Samsung's semiconductor campus, represents one
@@ -426,7 +426,7 @@ const CommercialInvestment = () => {
                 {faqs.map((faq, i) => (
                   <div key={i} className="border-b border-white/8 pb-6">
                     <h3 className="text-white font-medium text-base mb-2">{faq.question}</h3>
-                    <p className="text-white/45 text-sm leading-relaxed">{faq.answer}</p>
+                    <p className="text-white/65 text-sm leading-relaxed">{faq.answer}</p>
                   </div>
                 ))}
               </div>
@@ -442,7 +442,7 @@ const CommercialInvestment = () => {
           <h2 className="font-display text-2xl md:text-3xl font-light text-white mb-4">
             Looking for a Commercial Acquisition?
           </h2>
-          <p className="text-white/50 text-sm leading-relaxed mb-8">
+          <p className="text-white/70 text-sm leading-relaxed mb-8">
             Share your criteria for multifamily, retail, office, land, or value-add investments
             in Austin and surrounding markets.
           </p>
@@ -470,9 +470,9 @@ const CommercialInvestment = () => {
         <div className="container mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-white/25 text-xs tracking-wide">© {new Date().getFullYear()} Echelon Property Group · Austin, Texas · Brokered by eXp Realty</p>
           <div className="flex gap-5">
-            <Link to="/" className="text-white/25 hover:text-white/50 transition-colors text-xs tracking-[0.1em] uppercase">Home</Link>
-            <Link to="/private" className="text-white/25 hover:text-white/50 transition-colors text-xs tracking-[0.1em] uppercase">Private</Link>
-            <Link to="/contact" className="text-white/25 hover:text-white/50 transition-colors text-xs tracking-[0.1em] uppercase">Contact</Link>
+            <Link to="/" className="text-white/25 hover:text-white/70 transition-colors text-xs tracking-[0.1em] uppercase">Home</Link>
+            <Link to="/private" className="text-white/25 hover:text-white/70 transition-colors text-xs tracking-[0.1em] uppercase">Private</Link>
+            <Link to="/contact" className="text-white/25 hover:text-white/70 transition-colors text-xs tracking-[0.1em] uppercase">Contact</Link>
           </div>
         </div>
       </footer>

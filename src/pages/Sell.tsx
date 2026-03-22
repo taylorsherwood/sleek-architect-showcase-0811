@@ -352,7 +352,6 @@ const Sell = () => {
               <AnimatedStat key={s.label} {...s} />
             ))}
           </div>
-          </div>
         </div>
       </section>
 

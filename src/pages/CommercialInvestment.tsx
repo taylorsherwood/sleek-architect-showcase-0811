@@ -115,7 +115,7 @@ const CommercialInvestment = () => {
 
             <div className="grid md:grid-cols-2 gap-8">
               {/* Gillis Street */}
-              <div className="border border-border overflow-hidden group bg-card">
+              <div className="border-2 border-border overflow-hidden group bg-card hover:border-gold transition-colors duration-500">
                 <div className="relative overflow-hidden">
                   <img
                     src={gillisStreet}
@@ -161,7 +161,7 @@ const CommercialInvestment = () => {
               </div>
 
               {/* San Jose Ave */}
-              <div className="border border-border overflow-hidden group bg-card">
+              <div className="border-2 border-border overflow-hidden group bg-card hover:border-gold transition-colors duration-500">
                 <div className="relative overflow-hidden">
                   <img
                     src={sanJoseAve}

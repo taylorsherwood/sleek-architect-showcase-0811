@@ -90,20 +90,21 @@ const CinematicVideoSection = () => {
                 }}
               />
 
-              {/* Headline line 1 */}
-              <h2
-                className="font-display font-medium text-architectural leading-[0.95]"
-                style={{ ...reveal(visible, 160), fontSize: "clamp(2rem, 3.5vw, 2.75rem)", letterSpacing: "-0.02em" }}
-              >
-                Luxury Marketing
-              </h2>
-              {/* Headline line 2 */}
-              <p
-                className="font-display font-extralight italic text-foreground/55 leading-[0.95] mt-1.5 mb-10"
-                style={{ ...reveal(visible, 240), fontSize: "clamp(2rem, 3.5vw, 2.75rem)", letterSpacing: "-0.01em" }}
-              >
-                That Moves Buyers
-              </p>
+              {/* Headline — micro-staggered further right */}
+              <div className="lg:ml-[3%]">
+                <h2
+                  className="font-display font-medium text-architectural leading-[0.95]"
+                  style={{ ...reveal(visible, 160), fontSize: "clamp(2rem, 3.5vw, 2.75rem)", letterSpacing: "-0.02em" }}
+                >
+                  Luxury Marketing
+                </h2>
+                <p
+                  className="font-display font-extralight italic text-foreground/55 leading-[0.95] mt-1.5 mb-10"
+                  style={{ ...reveal(visible, 240), fontSize: "clamp(2rem, 3.5vw, 2.75rem)", letterSpacing: "-0.01em" }}
+                >
+                  That Moves Buyers
+                </p>
+              </div>
 
               {/* Power line */}
               <p

@@ -162,13 +162,14 @@ const CinematicVideoSection = () => {
       {/* ── CTA — left-aligned below video ── */}
       <div className="container mx-auto px-6 md:px-8 mt-10 md:mt-12">
         <div className="max-w-7xl mx-auto">
-          <div className="ml-0 md:ml-4" style={reveal(visible, 600)}>
+          <div className="ml-0 md:ml-4" style={reveal(visible, 650)}>
             <Link
               to="/contact"
-              className="group inline-flex items-center gap-2.5 text-minimal text-muted-foreground hover:text-gold transition-colors duration-300"
+              className="group inline-flex items-center gap-2 text-[10px] font-medium text-muted-foreground/70 hover:text-gold transition-colors duration-500 px-0.5"
+              style={{ letterSpacing: "0.18em" }}
             >
               SEE HOW YOUR HOME WOULD BE POSITIONED
-              <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+              <ArrowRight className="w-3.5 h-3.5 transition-transform duration-500 group-hover:translate-x-1" />
             </Link>
           </div>
         </div>

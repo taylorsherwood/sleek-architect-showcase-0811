@@ -127,15 +127,15 @@ const CinematicVideoSection = () => {
         className="relative mx-4 md:mx-8 lg:mx-12 overflow-hidden"
         style={reveal(visible, 450)}
       >
-        {/* Top fade */}
+        {/* Top fade — very subtle vignette */}
         <div
-          className="absolute top-0 inset-x-0 h-16 md:h-24 z-10 pointer-events-none"
-          style={{ background: "linear-gradient(to bottom, hsl(var(--background)), transparent)" }}
+          className="absolute top-0 inset-x-0 h-24 md:h-36 z-10 pointer-events-none"
+          style={{ background: "linear-gradient(to bottom, hsl(var(--background) / 0.12), transparent)" }}
         />
-        {/* Bottom fade */}
+        {/* Bottom fade — slightly stronger for natural falloff */}
         <div
-          className="absolute bottom-0 inset-x-0 h-16 md:h-24 z-10 pointer-events-none"
-          style={{ background: "linear-gradient(to top, hsl(var(--background)), transparent)" }}
+          className="absolute bottom-0 inset-x-0 h-28 md:h-40 z-10 pointer-events-none"
+          style={{ background: "linear-gradient(to top, hsl(var(--background) / 0.25), transparent)" }}
         />
 
         <div

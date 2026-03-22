@@ -5,7 +5,7 @@ import { Globe, Monitor, BookOpen, MapPin, CheckCircle, ArrowRight } from "lucid
 import heroImg from "@/assets/global-luxury-hero.jpg";
 import digitalImg from "@/assets/marketing-digital.png";
 import printImg from "@/assets/marketing-print.png";
-import localImg from "@/assets/marketing-local.jpg";
+import localImg from "@/assets/marketing-local.png";
 import collageImg from "@/assets/marketing-collage-spaced.png";
 
 /* ------------------------------------------------------------------ */

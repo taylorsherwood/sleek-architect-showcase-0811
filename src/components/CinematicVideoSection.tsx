@@ -138,9 +138,14 @@ const CinematicVideoSection = () => {
 
             {/* Right — Video */}
             <div
-              className="relative overflow-hidden"
+              className="relative overflow-hidden mt-10 lg:mt-0"
               style={{ ...reveal(visible, 350), borderRadius: 3 }}
             >
+              {/* Left-edge fade for text overlap readability */}
+              <div
+                className="absolute left-0 inset-y-0 w-24 lg:w-32 z-10 pointer-events-none hidden lg:block"
+                style={{ background: "linear-gradient(to right, hsl(var(--background) / 0.35), transparent)" }}
+              />
               {/* Top fade */}
               <div
                 className="absolute top-0 inset-x-0 h-20 md:h-28 z-10 pointer-events-none"

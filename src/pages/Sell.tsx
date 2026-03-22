@@ -266,27 +266,25 @@ const Sell = () => {
       <Navigation />
 
       {/* ── Hero ── */}
-      <section className="relative h-[70vh] min-h-[540px] flex items-center">
+      <section className="relative h-[70vh] min-h-[540px] flex items-center justify-center">
         <div className="absolute inset-0">
           <img src={heroImg} alt="Luxury property in Austin Texas" title="Sell your Austin luxury home — Echelon Property Group" className="w-full h-full object-cover" loading="eager" decoding="async" />
           <div className="absolute inset-0 bg-[#0C0F24]/60" />
         </div>
-        <div className="relative container mx-auto px-6">
-          <div className="max-w-2xl">
+        <div className="relative container mx-auto px-6 text-center">
+          <div className="max-w-2xl mx-auto">
             <p className="text-minimal text-primary-foreground/60 mb-4 reveal">SELLER SERVICES</p>
             <h1 className="text-4xl md:text-6xl font-display font-light text-primary-foreground leading-[1.1] mb-6 reveal">
               Sell Your Property
               <br />
               in Austin
             </h1>
-            <p className="text-primary-foreground/70 text-lg max-w-lg mb-8 reveal-delayed">
+            <p className="text-primary-foreground/70 text-lg max-w-lg mx-auto mb-8 reveal-delayed">
               Strategic marketing and expert representation designed to maximize your property's value in Austin's competitive luxury market.
             </p>
             <a
               href="#home-valuation"
               className="inline-block text-minimal bg-primary-foreground text-[#0C0F24] px-8 py-3.5 hover:bg-gold hover:text-primary-foreground transition-colors duration-300 reveal-delayed-2">REQUEST A PROPERTY VALUATION
-
-
             </a>
           </div>
         </div>

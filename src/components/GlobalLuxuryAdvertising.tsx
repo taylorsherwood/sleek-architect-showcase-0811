@@ -256,7 +256,7 @@ const GlobalLuxuryAdvertising = () => {
             <div style={revealStyle(platforms1.visible, 0)}>
               <p className="text-minimal text-gold mb-4 font-extrabold">GLOBAL REACH</p>
               <h2 className="text-3xl md:text-5xl font-display font-light text-architectural mb-6">
-                Featured Across Recognized Luxury Media
+                Featured Across <br /> Recognized Luxury Media
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-10 max-w-lg">
                 Your property is positioned across an elite network of luxury, financial, and global real estate platforms — designed to reach affluent buyers wherever they are.

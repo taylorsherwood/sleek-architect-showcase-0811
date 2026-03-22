@@ -214,7 +214,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 reveal-delayed-2">
             <Link
               to="/listings"
-              className="hero-cta-btn inline-block bg-warm-cream text-foreground px-12 py-[1.1rem] text-center hover:bg-gold hover:text-white"
+              className="hero-cta-btn inline-block bg-warm-cream text-foreground px-12 py-[1.1rem] text-center hover:bg-primary hover:text-primary-foreground"
               style={{
                 fontFamily: '"Raleway", sans-serif',
                 fontSize: "0.6rem",

@@ -152,7 +152,7 @@ const GlobalLuxuryAdvertising = () => {
           <img
             src={expLuxuryLogo}
             alt="eXp Luxury"
-            className="absolute bottom-6 right-6 h-8 md:h-10 w-auto opacity-80"
+            className="absolute bottom-6 right-6 h-12 md:h-16 w-auto"
             loading="lazy"
             decoding="async"
           />

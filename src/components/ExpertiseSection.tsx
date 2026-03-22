@@ -53,7 +53,7 @@ const ExpertiseSection = () => {
             <Link
               key={block.title}
               to={block.link}
-              className="group border border-border p-8 hover:border-foreground/30 transition-colors duration-300">
+              className="group border-2 border-border p-8 hover:border-gold transition-colors duration-500">
               
                 <block.icon className="w-8 h-8 text-gold mb-4" />
                 <h3 className="text-2xl font-display font-light text-architectural mb-3 group-hover:text-muted-foreground transition-colors duration-300">

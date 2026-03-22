@@ -397,6 +397,9 @@ More Than Just a Sign
         </div>
       </section>
 
+      {/* ── Global Luxury Advertising ── */}
+      <GlobalLuxuryAdvertising />
+
       {/* ── Full-Spectrum Real Estate Advisory ── */}
       <section className="pt-0 pb-28 bg-background">
         <div className="container mx-auto px-6">

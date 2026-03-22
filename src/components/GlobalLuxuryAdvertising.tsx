@@ -251,28 +251,29 @@ const GlobalLuxuryAdvertising = () => {
       {/* ═══════════════════════════════════════════════════════════════ */}
       <section className="py-20 md:py-24 bg-background" ref={platforms1.ref}>
         <div className="container mx-auto px-6">
-          <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 lg:gap-24 items-start">
+          <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
             {/* Left – text */}
-            <div style={revealStyle(platforms1.visible, 0)}>
+            <div className="max-w-[560px]" style={revealStyle(platforms1.visible, 0)}>
               <p className="text-minimal text-gold mb-4 font-extrabold">GLOBAL REACH</p>
-              <h2 className="text-3xl md:text-5xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-5xl font-display font-light text-architectural mb-8">
                 Featured Across <br /> Recognized Luxury Media
               </h2>
-              <p className="text-muted-foreground leading-relaxed mb-10 max-w-lg">
-                Your property is positioned across an elite network of luxury, financial, and global real estate platforms — designed to reach affluent buyers wherever they are.
+              <p
+                className="text-muted-foreground/85 mb-14 max-w-[540px]"
+                style={{ lineHeight: 1.7, ...revealStyle(platforms1.visible, 200) }}>
+                Your property is positioned within a curated network of the world's most influential luxury, financial, and real estate platforms—strategically selected to reach qualified, high-intent buyers globally.
               </p>
 
-              <ul className="space-y-3">
-                {platforms.map((p, i) =>
-                  <li
-                    key={p}
-                    className="flex items-center gap-3 text-foreground text-sm"
-                    style={revealStyle(platforms1.visible, 200 + i * 60)}>
-                    <span className="w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0" />
-                    {p}
-                  </li>
-                )}
-              </ul>
+              <div style={revealStyle(platforms1.visible, 400)}>
+                <p className="text-foreground/75 text-sm tracking-[0.12em] font-medium leading-[2]">
+                  Robb Report · Mansion Global · Wall Street Journal · Barron's
+                  <br />
+                  JamesEdition · MarketWatch · Unique Homes · LuxuryEstate
+                </p>
+                <p className="text-foreground/75 text-sm tracking-[0.12em] font-medium mt-3">
+                  80 International Distribution Channels
+                </p>
+              </div>
             </div>
 
             {/* Right – collage image with smooth parallax drift */}

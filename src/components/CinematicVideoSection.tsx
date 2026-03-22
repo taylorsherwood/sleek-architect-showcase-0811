@@ -116,7 +116,7 @@ const CinematicVideoSection = () => {
               <div className="hidden lg:block mt-8 lg:ml-[3.5%]" style={reveal(visible, 520)}>
                 <Link
                   to="/contact"
-                  className="group inline-flex items-center gap-2 text-[10px] font-medium text-muted-foreground/70 hover:text-gold transition-all duration-200 ease-out hover:translate-x-[3px]"
+                  className="group inline-flex items-center gap-2 text-[11px] font-medium text-muted-foreground/70 hover:text-gold transition-all duration-200 ease-out hover:translate-x-[3px]"
                   style={{ letterSpacing: "0.18em" }}
                 >
                   SEE HOW YOUR HOME WOULD BE POSITIONED

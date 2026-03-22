@@ -401,7 +401,7 @@ More Than Just a Sign
       <GlobalLuxuryAdvertising />
 
       {/* ── Spacer ── */}
-      <div className="bg-secondary py-8" />
+      <div className="bg-background py-8" />
 
       {/* ── Full-Spectrum Real Estate Advisory ── */}
       <section className="pt-0 pb-28 bg-background">

@@ -7,6 +7,7 @@ import digitalImg from "@/assets/marketing-digital.png";
 import printImg from "@/assets/marketing-print.png";
 import localImg from "@/assets/marketing-local.png";
 import collageImg from "@/assets/marketing-collage-spaced.png";
+import expLuxuryLogo from "@/assets/exp-luxury-logo-white.png";
 
 /* ------------------------------------------------------------------ */
 /*  Scroll-triggered reveal hook                                       */
@@ -148,6 +149,13 @@ const GlobalLuxuryAdvertising = () => {
             decoding="async"
           />
           <div className="absolute inset-0 bg-[#0C0F24]/55" />
+          <img
+            src={expLuxuryLogo}
+            alt="eXp Luxury"
+            className="absolute bottom-6 right-6 h-8 md:h-10 w-auto opacity-80"
+            loading="lazy"
+            decoding="async"
+          />
         </div>
 
         {/* Content */}

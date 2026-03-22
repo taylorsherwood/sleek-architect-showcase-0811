@@ -96,27 +96,38 @@ const authorityStats = [
 ];
 
 /* ------------------------------------------------------------------ */
-/*  Parallax collage hook                                              */
+/*  Smooth parallax drift (RAF-based, no re-renders)                   */
 /* ------------------------------------------------------------------ */
-function useParallaxDrift() {
-  const ref = useRef<HTMLDivElement>(null);
-  const [offset, setOffset] = useState(0);
+function useParallaxDrift(factor = 0.06) {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const rafId = useRef(0);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const el = ref.current;
-      if (!el) return;
+    const el = containerRef.current;
+    if (!el) return;
+
+    const update = () => {
       const rect = el.getBoundingClientRect();
       const center = rect.top + rect.height / 2;
       const viewCenter = window.innerHeight / 2;
-      const drift = (viewCenter - center) * 0.06;
-      setOffset(drift);
+      const drift = (viewCenter - center) * factor;
+      el.style.transform = `translateY(${drift}px)`;
     };
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
-  return { ref, offset };
+    const onScroll = () => {
+      cancelAnimationFrame(rafId.current);
+      rafId.current = requestAnimationFrame(update);
+    };
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    update();
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      cancelAnimationFrame(rafId.current);
+    };
+  }, [factor]);
+
+  return containerRef;
 }
 
 /* ------------------------------------------------------------------ */
@@ -146,7 +157,7 @@ const GlobalLuxuryAdvertising = () => {
   const why = useScrollReveal(0.15);
   const stats = useScrollReveal(0.2);
   const cta = useScrollReveal(0.15);
-  const collageParallax = useParallaxDrift();
+  const collageParallaxRef = useParallaxDrift(0.06);
 
   return (
     <div className="overflow-hidden">
@@ -264,22 +275,21 @@ const GlobalLuxuryAdvertising = () => {
               </ul>
             </div>
 
-            {/* Right – collage image with parallax drift */}
+            {/* Right – collage image with smooth parallax drift */}
             <div
-              ref={collageParallax.ref}
               className="overflow-hidden rounded group cursor-default"
-              style={{
-                ...revealScaleStyle(platforms1.visible, 300),
-                transform: platforms1.visible
-                  ? `translateY(${collageParallax.offset}px) scale(1)`
-                  : "translateY(16px) scale(0.97)",
-              }}>
-              <img
-                src={collageImg}
-                alt="Luxury marketing collage featuring Robb Report, Wall Street Journal, Mansion Global, UPMKT, and eXp Luxury"
-                className="w-full h-auto object-cover transition-all duration-700 ease-out group-hover:scale-[1.03] group-hover:brightness-110"
-                loading="lazy"
-                decoding="async" />
+              style={revealScaleStyle(platforms1.visible, 300)}>
+              <div
+                ref={collageParallaxRef}
+                className="will-change-transform"
+                style={{ transition: "transform 0.1s linear" }}>
+                <img
+                  src={collageImg}
+                  alt="Luxury marketing collage featuring Robb Report, Wall Street Journal, Mansion Global, UPMKT, and eXp Luxury"
+                  className="w-full h-auto object-cover transition-all duration-700 ease-out group-hover:scale-[1.03] group-hover:brightness-110"
+                  loading="lazy"
+                  decoding="async" />
+              </div>
             </div>
           </div>
         </div>

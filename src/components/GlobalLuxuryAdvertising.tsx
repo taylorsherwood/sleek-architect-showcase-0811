@@ -151,7 +151,7 @@ const GlobalLuxuryAdvertising = () => {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 container mx-auto px-6 py-28 md:py-36">
+        <div className="relative z-10 container mx-auto px-6 py-20 md:py-24">
           <div className="max-w-2xl">
             <p
               className="text-minimal text-gold mb-5 font-extrabold"

@@ -21,7 +21,7 @@ function useScrollReveal(threshold = 0.15) {
     const el = ref.current;
     if (!el) return;
     const obs = new IntersectionObserver(
-      ([entry]) => { if (entry.isIntersecting) { setVisible(true); obs.disconnect(); } },
+      ([entry]) => {if (entry.isIntersecting) {setVisible(true);obs.disconnect();}},
       { threshold }
     );
     obs.observe(el);
@@ -33,21 +33,21 @@ function useScrollReveal(threshold = 0.15) {
 
 /* helper: stagger class */
 const stagger = (visible: boolean, delay: number) =>
-  `transition-all duration-[1000ms] cubic-bezier(0.16,1,0.3,1) ${
-    visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-  }` + (delay ? ` delay-[${delay}ms]` : "");
+`transition-all duration-[1000ms] cubic-bezier(0.16,1,0.3,1) ${
+visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}` + (
+delay ? ` delay-[${delay}ms]` : "");
 
 /* Since Tailwind can't JIT arbitrary delay classes reliably, use inline styles */
 const revealStyle = (visible: boolean, delay = 0): React.CSSProperties => ({
   opacity: visible ? 1 : 0,
   transform: visible ? "translateY(0)" : "translateY(24px)",
-  transition: `opacity 1s cubic-bezier(0.16,1,0.3,1) ${delay}ms, transform 1s cubic-bezier(0.16,1,0.3,1) ${delay}ms`,
+  transition: `opacity 1s cubic-bezier(0.16,1,0.3,1) ${delay}ms, transform 1s cubic-bezier(0.16,1,0.3,1) ${delay}ms`
 });
 
 const revealScaleStyle = (visible: boolean, delay = 0): React.CSSProperties => ({
   opacity: visible ? 1 : 0,
   transform: visible ? "translateY(0) scale(1)" : "translateY(16px) scale(0.97)",
-  transition: `opacity 0.9s cubic-bezier(0.16,1,0.3,1) ${delay}ms, transform 0.9s cubic-bezier(0.16,1,0.3,1) ${delay}ms`,
+  transition: `opacity 0.9s cubic-bezier(0.16,1,0.3,1) ${delay}ms, transform 0.9s cubic-bezier(0.16,1,0.3,1) ${delay}ms`
 });
 
 /* ------------------------------------------------------------------ */
@@ -55,51 +55,51 @@ const revealScaleStyle = (visible: boolean, delay = 0): React.CSSProperties => (
 /* ------------------------------------------------------------------ */
 
 const platforms = [
-  "Robb Report",
-  "Mansion Global",
-  "Wall Street Journal",
-  "Barron's",
-  "JamesEdition",
-  "MarketWatch",
-  "Unique Homes",
-  "LuxuryEstate",
-  "UPMKT",
-  "80+ International Sites",
-];
+"Robb Report",
+"Mansion Global",
+"Wall Street Journal",
+"Barron's",
+"JamesEdition",
+"MarketWatch",
+"Unique Homes",
+"LuxuryEstate",
+"UPMKT",
+"80+ International Sites"];
+
 
 const marketingCards = [
-  {
-    title: "Digital Experience",
-    description: "Immersive digital presentation designed to capture attention and engage qualified buyers.",
-    image: digitalImg,
-    icon: Monitor,
-  },
-  {
-    title: "Print & Editorial",
-    description: "High-design collateral and editorial-quality marketing materials that elevate the property's perception.",
-    image: printImg,
-    icon: BookOpen,
-  },
-  {
-    title: "Local Presence",
-    description: "Strategic on-the-ground marketing that creates visibility, credibility, and momentum where it matters.",
-    image: localImg,
-    icon: MapPin,
-  },
-];
+{
+  title: "Digital Experience",
+  description: "Immersive digital presentation designed to capture attention and engage qualified buyers.",
+  image: digitalImg,
+  icon: Monitor
+},
+{
+  title: "Print & Editorial",
+  description: "High-design collateral and editorial-quality marketing materials that elevate the property's perception.",
+  image: printImg,
+  icon: BookOpen
+},
+{
+  title: "Local Presence",
+  description: "Strategic on-the-ground marketing that creates visibility, credibility, and momentum where it matters.",
+  image: localImg,
+  icon: MapPin
+}];
+
 
 const benefits = [
-  "Attracts more qualified and affluent buyers",
-  "Increases perceived value and competitive interest",
-  "Supports stronger offers and reduced time on market",
-];
+"Attracts more qualified and affluent buyers",
+"Increases perceived value and competitive interest",
+"Supports stronger offers and reduced time on market"];
+
 
 const authorityStats = [
-  { label: "75+ Countries Reached", icon: Globe },
-  { label: "Millions of Monthly Luxury Buyers" },
-  { label: "Global Distribution Network" },
-  { label: "Affluent Buyer Targeting" },
-];
+{ label: "75+ Countries Reached", icon: Globe },
+{ label: "Millions of Monthly Luxury Buyers" },
+{ label: "Global Distribution Network" },
+{ label: "Affluent Buyer Targeting" }];
+
 
 /* ------------------------------------------------------------------ */
 /*  Component                                                          */
@@ -135,9 +135,9 @@ const GlobalLuxuryAdvertising = () => {
       {/*  1 · HERO STRIP                                                */}
       {/* ═══════════════════════════════════════════════════════════════ */}
       <section
-        ref={(node: HTMLDivElement | null) => { heroRef.current = node; (hero.ref as React.MutableRefObject<HTMLDivElement | null>).current = node; }}
-        className="relative min-h-[50vh] md:min-h-[55vh] flex items-center overflow-hidden"
-      >
+        ref={(node: HTMLDivElement | null) => {heroRef.current = node;(hero.ref as React.MutableRefObject<HTMLDivElement | null>).current = node;}}
+        className="relative min-h-[50vh] md:min-h-[55vh] flex items-center overflow-hidden">
+        
         {/* BG image with slow zoom */}
         <div className="absolute inset-0">
           <img
@@ -146,16 +146,16 @@ const GlobalLuxuryAdvertising = () => {
             className="w-full h-full object-cover will-change-transform"
             style={{ transform: `scale(${heroZoom})`, transition: "transform 0.1s linear" }}
             loading="lazy"
-            decoding="async"
-          />
+            decoding="async" />
+          
           <div className="absolute inset-0 bg-[#0C0F24]/55" />
           <img
             src={expLuxuryLogo}
             alt="eXp Luxury"
             className="absolute bottom-6 right-6 h-12 md:h-16 w-auto"
             loading="lazy"
-            decoding="async"
-          />
+            decoding="async" />
+          
         </div>
 
         {/* Content */}
@@ -163,22 +163,22 @@ const GlobalLuxuryAdvertising = () => {
           <div className="max-w-2xl">
             <p
               className="text-minimal text-gold mb-5 font-extrabold"
-              style={revealStyle(hero.visible, 0)}
-            >
+              style={revealStyle(hero.visible, 0)}>
+              
               GLOBAL LUXURY ADVERTISING
             </p>
             <h2
               className="text-4xl md:text-6xl lg:text-7xl font-display font-light text-primary-foreground leading-[1.08] mb-6"
-              style={revealStyle(hero.visible, 200)}
-            >
+              style={revealStyle(hero.visible, 200)}>
+              
               Your Property,
               <br />
               <span className="italic">Everywhere</span> It Matters
             </h2>
             <p
               className="text-primary-foreground/70 text-lg md:text-xl max-w-xl leading-relaxed"
-              style={revealStyle(hero.visible, 420)}
-            >
+              style={revealStyle(hero.visible, 420)}>
+              
               Strategically positioned across the world's most influential luxury media, digital, and print platforms.
             </p>
           </div>
@@ -197,36 +197,36 @@ const GlobalLuxuryAdvertising = () => {
               <h2 className="text-3xl md:text-5xl font-display font-light text-architectural mb-6">
                 Featured Across Recognized Luxury Media
               </h2>
-              <p className="text-muted-foreground leading-relaxed mb-10 max-w-lg">
-                Your home is positioned across an elite network of luxury, financial, and international real estate platforms designed to maximize visibility among affluent buyers.
+              <p className="text-muted-foreground leading-relaxed mb-10 max-w-lg">Your property is positioned across an elite network of luxury, financial, and international real estate platforms designed to maximize visibility among affluent buyers.
+
               </p>
 
               <ul className="space-y-3">
-                {platforms.map((p, i) => (
-                  <li
-                    key={p}
-                    className="flex items-center gap-3 text-foreground text-sm"
-                    style={revealStyle(platforms1.visible, 200 + i * 60)}
-                  >
+                {platforms.map((p, i) =>
+                <li
+                  key={p}
+                  className="flex items-center gap-3 text-foreground text-sm"
+                  style={revealStyle(platforms1.visible, 200 + i * 60)}>
+                  
                     <span className="w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0" />
                     {p}
                   </li>
-                ))}
+                )}
               </ul>
             </div>
 
             {/* Right – collage image */}
             <div
               className="overflow-hidden rounded group cursor-default"
-              style={revealScaleStyle(platforms1.visible, 300)}
-            >
+              style={revealScaleStyle(platforms1.visible, 300)}>
+              
               <img
                 src={collageImg}
                 alt="Luxury marketing collage featuring Robb Report, Wall Street Journal, Mansion Global, UPMKT, and eXp Luxury"
                 className="w-full h-auto object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02] group-hover:brightness-105"
                 loading="lazy"
-                decoding="async"
-              />
+                decoding="async" />
+              
             </div>
           </div>
         </div>
@@ -246,20 +246,20 @@ const GlobalLuxuryAdvertising = () => {
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">
-              {marketingCards.map((card, i) => (
-                <div
-                  key={card.title}
-                  className="group bg-card rounded-lg overflow-hidden shadow-elegant hover:shadow-architectural transition-all duration-500 hover:-translate-y-1"
-                  style={revealScaleStyle(cards.visible, 200 + i * 180)}
-                >
+              {marketingCards.map((card, i) =>
+              <div
+                key={card.title}
+                className="group bg-card rounded-lg overflow-hidden shadow-elegant hover:shadow-architectural transition-all duration-500 hover:-translate-y-1"
+                style={revealScaleStyle(cards.visible, 200 + i * 180)}>
+                
                   <div className="aspect-[4/3] overflow-hidden">
                     <img
-                      src={card.image}
-                      alt={card.title}
-                      className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
-                      loading="lazy"
-                      decoding="async"
-                    />
+                    src={card.image}
+                    alt={card.title}
+                    className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+                    loading="lazy"
+                    decoding="async" />
+                  
                   </div>
                   <div className="p-7">
                     <div className="flex items-center gap-2.5 mb-3">
@@ -269,7 +269,7 @@ const GlobalLuxuryAdvertising = () => {
                     <p className="text-muted-foreground text-sm leading-relaxed">{card.description}</p>
                   </div>
                 </div>
-              ))}
+              )}
             </div>
           </div>
         </div>
@@ -286,28 +286,28 @@ const GlobalLuxuryAdvertising = () => {
             </p>
             <h2
               className="text-3xl md:text-5xl font-display font-light text-architectural mb-6"
-              style={revealStyle(why.visible, 150)}
-            >
+              style={revealStyle(why.visible, 150)}>
+              
               Luxury Exposure That Helps Drive Better Results
             </h2>
             <p
               className="text-muted-foreground leading-relaxed mb-12 max-w-2xl mx-auto"
-              style={revealStyle(why.visible, 300)}
-            >
+              style={revealStyle(why.visible, 300)}>
+              
               Effective marketing is not just about visibility — it's about reaching the right buyers, elevating perceived value, and creating the conditions for stronger offers.
             </p>
 
             <div className="space-y-5 max-w-lg mx-auto text-left">
-              {benefits.map((b, i) => (
-                <div
-                  key={i}
-                  className="flex items-start gap-3"
-                  style={revealStyle(why.visible, 450 + i * 120)}
-                >
+              {benefits.map((b, i) =>
+              <div
+                key={i}
+                className="flex items-start gap-3"
+                style={revealStyle(why.visible, 450 + i * 120)}>
+                
                   <CheckCircle className="w-5 h-5 text-gold mt-0.5 shrink-0" />
                   <span className="text-foreground leading-relaxed">{b}</span>
                 </div>
-              ))}
+              )}
             </div>
           </div>
         </div>
@@ -319,20 +319,20 @@ const GlobalLuxuryAdvertising = () => {
       <section className="py-12 bg-muted/50 border-y border-border/40" ref={stats.ref}>
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4">
-            {authorityStats.map((s, i) => (
-              <div
-                key={i}
-                className="text-center md:border-r last:border-0 border-border/40"
-                style={revealStyle(stats.visible, i * 120)}
-              >
+            {authorityStats.map((s, i) =>
+            <div
+              key={i}
+              className="text-center md:border-r last:border-0 border-border/40"
+              style={revealStyle(stats.visible, i * 120)}>
+              
                 <p
-                  className="text-[11px] uppercase font-medium text-muted-foreground"
-                  style={{ letterSpacing: "0.16em" }}
-                >
+                className="text-[11px] uppercase font-medium text-muted-foreground"
+                style={{ letterSpacing: "0.16em" }}>
+                
                   {s.label}
                 </p>
               </div>
-            ))}
+            )}
           </div>
         </div>
       </section>
@@ -348,29 +348,29 @@ const GlobalLuxuryAdvertising = () => {
             </p>
             <h2
               className="text-3xl md:text-5xl font-display font-light text-architectural mb-6"
-              style={revealStyle(cta.visible, 150)}
-            >
+              style={revealStyle(cta.visible, 150)}>
+              
               See Your Property Marketing Plan
             </h2>
             <p
               className="text-muted-foreground leading-relaxed mb-10 max-w-lg mx-auto"
-              style={revealStyle(cta.visible, 300)}
-            >
+              style={revealStyle(cta.visible, 300)}>
+              
               Discover how your home would be positioned, presented, and promoted to attract the right buyers.
             </p>
             <div style={revealStyle(cta.visible, 450)}>
               <Link
                 to="/contact"
-                className="inline-block text-minimal bg-primary text-primary-foreground hover:bg-gold hover:text-white px-12 py-4 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-architectural"
-              >
+                className="inline-block text-minimal bg-primary text-primary-foreground hover:bg-gold hover:text-white px-12 py-4 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-architectural">
+                
                 GET MY PROPERTY MARKETING PLAN
               </Link>
             </div>
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>);
+
 };
 
 export default GlobalLuxuryAdvertising;

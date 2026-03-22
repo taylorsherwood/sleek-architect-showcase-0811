@@ -104,7 +104,7 @@ const CinematicVideoSection = () => {
 
               {/* Subheadline */}
               <p
-                className="text-muted-foreground/80 text-[13px] leading-[2] max-w-[20rem] mb-8 lg:mb-0"
+                className="text-muted-foreground/80 text-[15px] leading-[2] max-w-[22rem] mb-8 lg:mb-0"
                 style={reveal(visible, 420)}
               >
                 Cinematic presentation is part of how we position exceptional
@@ -116,7 +116,7 @@ const CinematicVideoSection = () => {
               <div className="hidden lg:block mt-8 lg:ml-[3.5%]" style={reveal(visible, 520)}>
                 <Link
                   to="/contact"
-                  className="group inline-flex items-center gap-2 text-[10px] font-medium text-muted-foreground/70 hover:text-gold transition-all duration-200 ease-out hover:translate-x-[3px]"
+                  className="group inline-flex items-center gap-2 text-[11px] font-medium text-muted-foreground/70 hover:text-gold transition-all duration-200 ease-out hover:translate-x-[3px]"
                   style={{ letterSpacing: "0.18em" }}
                 >
                   SEE HOW YOUR HOME WOULD BE POSITIONED
@@ -166,7 +166,7 @@ const CinematicVideoSection = () => {
           <div className="lg:hidden mt-8" style={reveal(visible, 520)}>
             <Link
               to="/contact"
-              className="group inline-flex items-center gap-2 text-[10px] font-medium text-muted-foreground/70 hover:text-gold transition-all duration-200 ease-out hover:translate-x-[3px]"
+              className="group inline-flex items-center gap-2 text-[11px] font-medium text-muted-foreground/70 hover:text-gold transition-all duration-200 ease-out hover:translate-x-[3px]"
               style={{ letterSpacing: "0.18em" }}
             >
               SEE HOW YOUR HOME WOULD BE POSITIONED

@@ -147,6 +147,19 @@ function useCountUp(target: number, duration = 1800, from = 0, countDown = false
   return { value, ref };
 }
 
+function AnimatedStat({ target, suffix = "", prefix = "", label, countDown = false, from = 0 }: {
+  target: number; suffix?: string; prefix?: string; label: string; countDown?: boolean; from?: number;
+}) {
+  const { value, ref } = useCountUp(target, 1800, from, countDown);
+  return (
+    <div ref={ref}>
+      <p className="text-3xl md:text-4xl font-display font-light text-primary-foreground mb-1">
+        {prefix}{value}{suffix}
+      </p>
+      <p className="text-minimal text-primary-foreground/50">{label}</p>
+    </div>
+  );
+}
 
 /* ------------------------------------------------------------------ */
 /*  FORM SCHEMAS                                                       */

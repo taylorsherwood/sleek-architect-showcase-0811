@@ -11,7 +11,6 @@ import FeaturedListings from "@/components/FeaturedListings";
 import GlobalLuxuryAdvertising from "@/components/GlobalLuxuryAdvertising";
 import CinematicVideoSection from "@/components/CinematicVideoSection";
 import { formatPhoneNumber, buildWeb3Payload } from "@/lib/formUtils";
-import { formatPhoneNumber, buildWeb3Payload } from "@/lib/formUtils";
 import {
   CheckCircle,
   ArrowRight,

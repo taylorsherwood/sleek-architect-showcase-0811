@@ -8,6 +8,7 @@ import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
 import Testimonials from "@/components/Testimonials";
 import FeaturedListings from "@/components/FeaturedListings";
+import GlobalLuxuryAdvertising from "@/components/GlobalLuxuryAdvertising";
 import { formatPhoneNumber, buildWeb3Payload } from "@/lib/formUtils";
 import {
   CheckCircle,
@@ -395,6 +396,9 @@ More Than Just a Sign
           </div>
         </div>
       </section>
+
+      {/* ── Global Luxury Advertising ── */}
+      <GlobalLuxuryAdvertising />
 
       {/* ── Full-Spectrum Real Estate Advisory ── */}
       <section className="pt-0 pb-28 bg-background">

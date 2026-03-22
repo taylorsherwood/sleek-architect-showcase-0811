@@ -149,6 +149,13 @@ const GlobalLuxuryAdvertising = () => {
             decoding="async"
           />
           <div className="absolute inset-0 bg-[#0C0F24]/55" />
+          <img
+            src={expLuxuryLogo}
+            alt="eXp Luxury"
+            className="absolute bottom-6 right-6 h-8 md:h-10 w-auto opacity-80"
+            loading="lazy"
+            decoding="async"
+          />
         </div>
 
         {/* Content */}

@@ -340,8 +340,9 @@ const Sell = () => {
           <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <p className="text-minimal text-gold mb-4 font-extrabold">MARKETING STRATEGY</p>
-              <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-6">Your Home Deserves
+              <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-6">Your Home Deserves 
 More Than Just a Sign
+
                 <br />
                 More Than a Sign
               </h2>
@@ -349,8 +350,7 @@ More Than Just a Sign
                 Every Echelon listing receives a bespoke marketing campaign engineered to attract qualified, motivated buyers — locally and globally. Here's what's included when you sell your home in Austin with us.
               </p>
               <ul className="space-y-3">
-                {marketingFeatures.map((item) =>
-                <li key={item} className="flex items-start gap-3">
+                {marketingFeatures.map((item) => <li key={item} className="flex items-start gap-3">
                     <Sparkles className="w-4 h-4 text-gold mt-1 shrink-0" />
                     <span className="text-foreground text-sm">{item}</span>
                   </li>

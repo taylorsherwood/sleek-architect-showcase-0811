@@ -152,7 +152,7 @@ const CommercialInvestment = () => {
                   </p>
                   <Link
                     to="/contact"
-                    className="inline-block bg-primary text-primary-foreground hover:bg-gold px-8 py-4 transition-all duration-300 ease-out active:scale-[0.98]"
+                    className="inline-block bg-white text-primary border border-border hover:bg-gold hover:text-white hover:border-gold px-8 py-4 transition-all duration-300 ease-out active:scale-[0.98]"
                     style={labelStyle}
                   >
                     REQUEST INFORMATION
@@ -198,7 +198,7 @@ const CommercialInvestment = () => {
                   </p>
                   <Link
                     to="/contact"
-                    className="inline-block bg-primary text-primary-foreground hover:bg-gold px-8 py-4 transition-all duration-300 ease-out active:scale-[0.98]"
+                    className="inline-block bg-white text-primary border border-border hover:bg-gold hover:text-white hover:border-gold px-8 py-4 transition-all duration-300 ease-out active:scale-[0.98]"
                     style={labelStyle}
                   >
                     REQUEST INFORMATION

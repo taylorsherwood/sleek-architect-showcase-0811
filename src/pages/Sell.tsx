@@ -335,12 +335,10 @@ const Sell = () => {
       <section className="bg-[#0C0F24] py-14">
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto grid grid-cols-3 gap-6 text-center">
-            {stats.map((s) =>
-            <div key={s.label}>
-                <p className="text-3xl md:text-4xl font-display font-light text-primary-foreground mb-1">{s.value}</p>
-                <p className="text-minimal text-primary-foreground/50">{s.label}</p>
-              </div>
-            )}
+            {stats.map((s) => (
+              <AnimatedStat key={s.label} {...s} />
+            ))}
+          </div>
           </div>
         </div>
       </section>

@@ -66,8 +66,8 @@ const CinematicVideoSection = () => {
     <section ref={ref} className="relative pt-0 pb-28 md:pb-36">
       <div className="container mx-auto px-6 md:px-8">
         <div className="max-w-7xl mx-auto">
-          {/* ── Two-column editorial layout ── */}
-          <div className="grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-10 lg:gap-14 items-center">
+          {/* ── Overlapping editorial layout ── */}
+          <div className="relative grid grid-cols-1 lg:grid-cols-[2fr_3fr] items-center">
 
             {/* Left — Text */}
             <div className="max-w-md lg:max-w-none lg:pl-4 xl:pl-8">

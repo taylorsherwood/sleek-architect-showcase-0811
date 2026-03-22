@@ -67,33 +67,52 @@ const CinematicVideoSection = () => {
       {/* ── Editorial text — left-aligned, constrained ── */}
       <div className="container mx-auto px-6 md:px-8 mb-12 md:mb-14">
         <div className="max-w-7xl mx-auto">
-          <div className="max-w-md ml-0 md:ml-4">
+          <div className="max-w-sm ml-0 md:ml-4">
+            {/* Eyebrow */}
             <p
-              className="text-minimal text-gold mb-3 font-extrabold"
-              style={reveal(visible, 0)}
+              className="text-[10px] text-gold/75 mb-6 font-extrabold"
+              style={{ ...reveal(visible, 0), letterSpacing: "0.22em" }}
             >
               PROPERTY FILM
             </p>
+
+            {/* Divider */}
             <div
               style={{
-                ...reveal(visible, 100),
-                width: 36,
+                ...reveal(visible, 80),
+                width: 32,
                 height: 1,
-                background: "linear-gradient(90deg, hsl(var(--gold) / 0.45), transparent)",
-                marginBottom: 20,
+                background: "linear-gradient(90deg, hsl(var(--gold) / 0.35), transparent)",
+                marginBottom: 28,
               }}
             />
+
+            {/* Headline */}
             <h2
-              className="text-3xl md:text-4xl font-display font-light text-architectural leading-[1.15] mb-4"
-              style={reveal(visible, 200)}
+              className="font-display font-light text-architectural leading-[1.05] mb-2"
+              style={{ ...reveal(visible, 180), fontSize: "clamp(1.65rem, 3vw, 2.25rem)", letterSpacing: "0.01em" }}
             >
               Luxury Marketing
-              <br />
-              <span className="italic text-foreground/80">That Moves</span> Buyers
             </h2>
+            <h2
+              className="font-display font-light italic text-foreground/70 leading-[1.05] mb-7"
+              style={{ ...reveal(visible, 260), fontSize: "clamp(1.65rem, 3vw, 2.25rem)" }}
+            >
+              That Moves Buyers
+            </h2>
+
+            {/* Power line */}
             <p
-              className="text-muted-foreground text-sm leading-[1.85] max-w-sm"
-              style={reveal(visible, 350)}
+              className="text-xs font-medium text-foreground/80 mb-7"
+              style={{ ...reveal(visible, 340), letterSpacing: "0.08em" }}
+            >
+              Most agents list. We position.
+            </p>
+
+            {/* Subheadline */}
+            <p
+              className="text-muted-foreground/85 text-[13px] leading-[1.95] max-w-xs"
+              style={reveal(visible, 420)}
             >
               Cinematic presentation is part of how we position exceptional
               homes to stand apart, attract attention, and drive stronger
@@ -143,13 +162,14 @@ const CinematicVideoSection = () => {
       {/* ── CTA — left-aligned below video ── */}
       <div className="container mx-auto px-6 md:px-8 mt-10 md:mt-12">
         <div className="max-w-7xl mx-auto">
-          <div className="ml-0 md:ml-4" style={reveal(visible, 600)}>
+          <div className="ml-0 md:ml-4" style={reveal(visible, 650)}>
             <Link
               to="/contact"
-              className="group inline-flex items-center gap-2.5 text-minimal text-muted-foreground hover:text-gold transition-colors duration-300"
+              className="group inline-flex items-center gap-2 text-[10px] font-medium text-muted-foreground/70 hover:text-gold transition-colors duration-500 px-0.5"
+              style={{ letterSpacing: "0.18em" }}
             >
               SEE HOW YOUR HOME WOULD BE POSITIONED
-              <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+              <ArrowRight className="w-3.5 h-3.5 transition-transform duration-500 group-hover:translate-x-1" />
             </Link>
           </div>
         </div>

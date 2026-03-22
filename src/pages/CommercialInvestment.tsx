@@ -162,7 +162,7 @@ const CommercialInvestment = () => {
               </div>
 
               {/* San Jose Ave */}
-              <div className="border border-white/10 overflow-hidden group bg-[#0C0F24]">
+              <div className="border border-white/10 overflow-hidden group">
                 <div className="relative overflow-hidden">
                   <img
                     src={sanJoseAve}

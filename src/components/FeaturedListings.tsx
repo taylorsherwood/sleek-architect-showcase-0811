@@ -156,8 +156,6 @@ const FeaturedListings = () => {
     widgetRef.current.appendChild(el);
 
     return () => {
-      observer.disconnect();
-      shadowObserver.disconnect();
       if (widgetRef.current && el.parentNode === widgetRef.current) {
         widgetRef.current.removeChild(el);
       }

@@ -180,7 +180,7 @@ const GlobalLuxuryAdvertising = () => {
       {/* ═══════════════════════════════════════════════════════════════ */}
       {/*  2 · PLATFORM EXPOSURE                                         */}
       {/* ═══════════════════════════════════════════════════════════════ */}
-      <section className="py-28 md:py-36 bg-background" ref={platforms1.ref}>
+      <section className="py-20 md:py-24 bg-background" ref={platforms1.ref}>
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 lg:gap-24 items-start">
             {/* Left – text */}

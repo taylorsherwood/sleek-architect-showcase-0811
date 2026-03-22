@@ -157,7 +157,7 @@ const GlobalLuxuryAdvertising = () => {
   const why = useScrollReveal(0.15);
   const stats = useScrollReveal(0.2);
   const cta = useScrollReveal(0.15);
-  const collageParallax = useParallaxDrift();
+  const collageParallaxRef = useParallaxDrift(0.06);
 
   return (
     <div className="overflow-hidden">

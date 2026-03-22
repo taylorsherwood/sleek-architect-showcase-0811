@@ -308,7 +308,7 @@ const GlobalLuxuryAdvertising = () => {
       {/* ═══════════════════════════════════════════════════════════════ */}
       {/*  5 · AUTHORITY STAT STRIP                                      */}
       {/* ═══════════════════════════════════════════════════════════════ */}
-      <section className="py-16 bg-muted/50 border-y border-border/40" ref={stats.ref}>
+      <section className="py-12 bg-muted/50 border-y border-border/40" ref={stats.ref}>
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4">
             {authorityStats.map((s, i) => (

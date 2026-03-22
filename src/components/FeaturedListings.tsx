@@ -149,55 +149,13 @@ const FeaturedListings = () => {
     const el = document.createElement("realscout-your-listings");
     el.setAttribute("agent-encoded-id", "QWdlbnQtMjg5NDU2");
     el.setAttribute("sort-order", "PRICE_HIGH");
-    el.setAttribute("listing-status", "For Sale,For Rent,In Contract");
+    el.setAttribute("listing-status", "For Sale,For Rent,In Contract,Sold");
     el.setAttribute("property-types", "SFR,MF,TC,LAL,OTHER,MOBILE");
-    el.setAttribute("price-min", "300000");
     el.setAttribute("include-co-listings", "");
     el.setAttribute("include-seller-listings", "");
     widgetRef.current.appendChild(el);
 
-    const MIN_PRICE = 300000;
-
-    const hideLowPriceCards = (root: Element) => {
-      const cards = root.querySelectorAll("[class*='listing'], [class*='card'], [class*='property'], a[href]");
-      cards.forEach((card) => {
-        const text = card.textContent || "";
-        const priceMatches = text.match(/\$[\d,]+(?:\.\d+)?/g);
-        if (priceMatches) {
-          for (const raw of priceMatches) {
-            const numeric = parseFloat(raw.replace(/[$,]/g, ""));
-            if (numeric > 0 && numeric < MIN_PRICE) {
-              (card as HTMLElement).style.display = "none";
-              break;
-            }
-          }
-        }
-      });
-    };
-
-    const observer = new MutationObserver(() => {
-      hideLowPriceCards(el);
-      if (el.shadowRoot) {
-        hideLowPriceCards(el.shadowRoot as unknown as Element);
-      }
-    });
-
-    observer.observe(el, { childList: true, subtree: true });
-
-    const shadowObserver = new MutationObserver(() => {
-      if (el.shadowRoot) {
-        hideLowPriceCards(el.shadowRoot as unknown as Element);
-        const innerObserver = new MutationObserver(() => {
-          hideLowPriceCards(el.shadowRoot as unknown as Element);
-        });
-        innerObserver.observe(el.shadowRoot, { childList: true, subtree: true });
-      }
-    });
-    shadowObserver.observe(el, { childList: true });
-
     return () => {
-      observer.disconnect();
-      shadowObserver.disconnect();
       if (widgetRef.current && el.parentNode === widgetRef.current) {
         widgetRef.current.removeChild(el);
       }

@@ -1,12 +1,18 @@
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createFAQSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
 import heroArchitecture from "@/assets/hero-architecture.jpg";
 import expCommercialLogo from "@/assets/exp-commercial-logo-horizontal-white.webp";
 import gillisStreet from "@/assets/commercial-gillis-street.jpg";
 import sanJoseAve from "@/assets/commercial-san-jose-ave.jpg";
+
+const labelStyle = {
+  fontSize: "0.6rem" as const,
+  letterSpacing: "0.3em",
+  textTransform: "uppercase" as const,
+  fontFamily: '"Raleway", sans-serif',
+};
 
 const faqs = [
   {
@@ -38,17 +44,17 @@ const CommercialInvestment = () => {
       <SchemaMarkup schema={createFAQSchema(faqs)} />
       <Navigation />
 
-      {/* Hero */}
+      {/* Hero — UNTOUCHED */}
       <section className="relative pt-32 pb-12">
         <div className="absolute inset-0">
-                  <img
-                    src={heroArchitecture}
-                    alt="Austin commercial real estate skyline"
-                    title="Austin commercial real estate — Echelon Property Group"
-                    className="w-full h-full object-cover"
-                    loading="eager"
-                    decoding="async"
-                  />
+          <img
+            src={heroArchitecture}
+            alt="Austin commercial real estate skyline"
+            title="Austin commercial real estate — Echelon Property Group"
+            className="w-full h-full object-cover"
+            loading="eager"
+            decoding="async"
+          />
           <div className="absolute inset-0 bg-foreground/70" />
         </div>
         <div className="relative container mx-auto px-6">
@@ -90,22 +96,27 @@ const CommercialInvestment = () => {
         </div>
       </section>
 
-      {/* Current Commercial Listings */}
-      <section id="featured-listings" className="py-28">
+      {/* ══════════════════════════════════════════════
+          DARK BODY — matches /off-market-real-estate-austin
+          ══════════════════════════════════════════════ */}
+
+      {/* ── Current Commercial Listings ──────────────── */}
+      <section className="py-16 md:py-24 bg-[hsl(220,15%,8%)] border-t border-white/5">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
             <div className="mb-16">
-              <p className="text-minimal text-gold mb-4 font-extrabold">CURRENT INVENTORY</p>
-              <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-6">
+              <p className="text-gold text-center mb-4 font-bold" style={labelStyle}>CURRENT INVENTORY</p>
+              <h2 className="font-display text-2xl md:text-3xl font-light text-white text-center mb-4">
                 Current Commercial Listings
               </h2>
-              <p className="text-muted-foreground max-w-2xl">
+              <p className="text-white/50 text-sm text-center max-w-2xl mx-auto">
                 Available commercial, land, and investment opportunities represented by Echelon Property Group.
               </p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="border border-border overflow-hidden hover:border-foreground transition-colors duration-300 group">
+              {/* Gillis Street */}
+              <div className="border border-white/8 overflow-hidden group">
                 <div className="relative overflow-hidden">
                   <img
                     src={gillisStreet}
@@ -115,40 +126,43 @@ const CommercialInvestment = () => {
                     loading="lazy"
                     decoding="async"
                   />
-                  <span className="absolute top-4 left-4 text-minimal bg-gold text-foreground px-3 py-1 font-extrabold">
+                  <span className="absolute top-4 left-4 text-minimal bg-gold text-white px-3 py-1 font-extrabold">
                     MULTIFAMILY
                   </span>
                 </div>
                 <div className="p-8">
                   <div className="flex items-center justify-between mb-4">
-                    <h3 className="text-xl font-display font-light text-architectural">
+                    <h3 className="text-xl font-display font-light text-white">
                       4314 Gillis Street
                     </h3>
-                    <span className="text-2xl font-display font-light text-architectural">$2,500,000</span>
+                    <span className="text-2xl font-display font-light text-white">$2,500,000</span>
                   </div>
-                  <p className="text-muted-foreground mb-4">Austin, TX 78745</p>
+                  <p className="text-white/40 mb-4">Austin, TX 78745</p>
                   <div className="grid grid-cols-2 gap-4 mb-6">
                     <div>
-                      <p className="text-minimal text-muted-foreground mb-1">ASSET TYPE</p>
-                      <p className="text-foreground font-medium">Value-Add Multifamily</p>
+                      <p className="text-white/30 mb-1" style={labelStyle}>ASSET TYPE</p>
+                      <p className="text-white font-medium text-sm">Value-Add Multifamily</p>
                     </div>
                     <div>
-                      <p className="text-minimal text-muted-foreground mb-1">UNITS</p>
-                      <p className="text-foreground font-medium">24</p>
+                      <p className="text-white/30 mb-1" style={labelStyle}>UNITS</p>
+                      <p className="text-white font-medium text-sm">24</p>
                     </div>
                   </div>
-                  <p className="text-muted-foreground leading-relaxed mb-6">
+                  <p className="text-white/45 text-sm leading-relaxed mb-6">
                     24-unit value-add multifamily opportunity in South Austin. Well-positioned for rent growth and operational improvements in a high-demand rental corridor.
                   </p>
                   <Link
                     to="/contact"
-                    className="inline-block text-minimal bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4 transition-colors duration-300"
+                    className="inline-block bg-gold hover:bg-white text-white hover:text-gold hover:font-bold px-8 py-4 transition-all duration-300 ease-out active:scale-[0.98]"
+                    style={labelStyle}
                   >
                     REQUEST INFORMATION
                   </Link>
                 </div>
               </div>
-              <div className="border border-border overflow-hidden hover:border-foreground transition-colors duration-300 group">
+
+              {/* San Jose Ave */}
+              <div className="border border-white/8 overflow-hidden group">
                 <div className="relative overflow-hidden">
                   <img
                     src={sanJoseAve}
@@ -158,34 +172,35 @@ const CommercialInvestment = () => {
                     loading="lazy"
                     decoding="async"
                   />
-                  <span className="absolute top-4 left-4 text-minimal bg-gold text-foreground px-3 py-1 font-extrabold">
+                  <span className="absolute top-4 left-4 text-minimal bg-gold text-white px-3 py-1 font-extrabold">
                     DEVELOPMENT LAND
                   </span>
                 </div>
                 <div className="p-8">
                   <div className="flex items-center justify-between mb-4">
-                    <h3 className="text-xl font-display font-light text-architectural">
+                    <h3 className="text-xl font-display font-light text-white">
                       10811 San Jose Ave
                     </h3>
-                    <span className="text-2xl font-display font-light text-architectural">$1,600,000</span>
+                    <span className="text-2xl font-display font-light text-white">$1,600,000</span>
                   </div>
-                  <p className="text-muted-foreground mb-4">Del Valle, TX</p>
+                  <p className="text-white/40 mb-4">Del Valle, TX</p>
                   <div className="grid grid-cols-2 gap-4 mb-6">
                     <div>
-                      <p className="text-minimal text-muted-foreground mb-1">ASSET TYPE</p>
-                      <p className="text-foreground font-medium">Redevelopment Land</p>
+                      <p className="text-white/30 mb-1" style={labelStyle}>ASSET TYPE</p>
+                      <p className="text-white font-medium text-sm">Redevelopment Land</p>
                     </div>
                     <div>
-                      <p className="text-minimal text-muted-foreground mb-1">LOT SIZE</p>
-                      <p className="text-foreground font-medium">3.06 Acres</p>
+                      <p className="text-white/30 mb-1" style={labelStyle}>UNITS</p>
+                      <p className="text-white font-medium text-sm">3.06 Acres</p>
                     </div>
                   </div>
-                  <p className="text-muted-foreground leading-relaxed mb-6">
+                  <p className="text-white/45 text-sm leading-relaxed mb-6">
                     3.06-acre redevelopment parcel with existing mobile homes and zero zoning restrictions. Ideal for ground-up multifamily, mixed-use, or commercial development in the high-growth Del Valle corridor.
                   </p>
                   <Link
                     to="/contact"
-                    className="inline-block text-minimal bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4 transition-colors duration-300"
+                    className="inline-block bg-gold hover:bg-white text-white hover:text-gold hover:font-bold px-8 py-4 transition-all duration-300 ease-out active:scale-[0.98]"
+                    style={labelStyle}
                   >
                     REQUEST INFORMATION
                   </Link>
@@ -196,16 +211,16 @@ const CommercialInvestment = () => {
         </div>
       </section>
 
-      {/* Private Market Opportunities */}
-      <section className="py-16 bg-secondary">
+      {/* ── Private Market Opportunities ──────────────── */}
+      <section className="py-16 md:py-24 bg-[hsl(220,15%,6%)] border-t border-white/5">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
             <div className="mb-16">
-              <p className="text-minimal text-gold mb-4 font-extrabold">PRIVATE MARKET</p>
-              <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-6">
+              <p className="text-gold text-center mb-4 font-bold" style={labelStyle}>PRIVATE MARKET</p>
+              <h2 className="font-display text-2xl md:text-3xl font-light text-white text-center mb-4">
                 Private Market Opportunities
               </h2>
-              <p className="text-muted-foreground max-w-2xl">
+              <p className="text-white/50 text-sm text-center max-w-2xl mx-auto">
                 Select off-market and discreetly marketed opportunities may be available upon request.
                 These properties are not publicly advertised and are shared exclusively with qualified buyers.
               </p>
@@ -252,31 +267,31 @@ const CommercialInvestment = () => {
               ].map((listing, index) => (
                 <div
                   key={index}
-                  className="border border-border p-8 hover:border-foreground transition-colors duration-300 group"
+                  className="border border-white/8 p-8 hover:border-white/20 transition-colors duration-300"
                 >
                   <div className="flex items-center justify-between mb-6">
-                    <span className="text-minimal bg-muted px-3 py-1 text-foreground">{listing.type}</span>
-                    <span className="text-2xl font-display font-light text-architectural">{listing.price}</span>
+                    <span className="bg-white/[0.06] px-3 py-1 text-white/60" style={labelStyle}>{listing.type}</span>
+                    <span className="text-2xl font-display font-light text-white">{listing.price}</span>
                   </div>
-                  <h3 className="text-xl font-display font-light text-architectural mb-2">
+                  <h3 className="text-xl font-display font-light text-white mb-2">
                     {listing.name}
                   </h3>
-                  <p className="text-muted-foreground mb-6">{listing.location}</p>
+                  <p className="text-white/40 mb-6">{listing.location}</p>
                   <div className="grid grid-cols-2 gap-4 mb-6">
                     <div>
-                      <p className="text-minimal text-muted-foreground mb-1">CAP RATE</p>
-                      <p className="text-foreground font-medium">{listing.capRate}</p>
+                      <p className="text-white/30 mb-1" style={labelStyle}>CAP RATE</p>
+                      <p className="text-white font-medium text-sm">{listing.capRate}</p>
                     </div>
                     <div>
-                      <p className="text-minimal text-muted-foreground mb-1">SIZE</p>
-                      <p className="text-foreground font-medium">{listing.sqft}</p>
+                      <p className="text-white/30 mb-1" style={labelStyle}>SIZE</p>
+                      <p className="text-white font-medium text-sm">{listing.sqft}</p>
                     </div>
                   </div>
-                  <p className="text-sm text-muted-foreground italic">{listing.highlights}</p>
-                  <div className="mt-6 pt-6 border-t border-border">
+                  <p className="text-sm text-white/35 italic">{listing.highlights}</p>
+                  <div className="mt-6 pt-6 border-t border-white/8">
                     <Link
                       to="/contact"
-                      className="text-minimal text-foreground hover:text-muted-foreground transition-colors duration-300"
+                      className="text-gold hover:text-gold/80 transition-colors text-xs tracking-[0.15em] uppercase"
                     >
                       REQUEST DETAILS →
                     </Link>
@@ -288,22 +303,22 @@ const CommercialInvestment = () => {
         </div>
       </section>
 
-      {/* Investment Search */}
-      <section className="py-28">
+      {/* ── Investment Search ─────────────────────────── */}
+      <section className="py-16 md:py-24 bg-[hsl(220,15%,8%)] border-t border-white/5">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
             <div className="grid md:grid-cols-2 gap-16 items-center">
               <div>
-                <p className="text-minimal text-gold mb-4 font-extrabold">INVESTMENT SEARCH</p>
-                <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-6">
+                <p className="text-gold mb-4 font-bold" style={labelStyle}>INVESTMENT SEARCH</p>
+                <h2 className="font-display text-2xl md:text-3xl font-light text-white mb-6">
                   Find Your Next Austin Investment Property
                 </h2>
-                <p className="text-muted-foreground mb-6 leading-relaxed">
+                <p className="text-white/50 text-sm md:text-[0.925rem] leading-relaxed mb-6">
                   Whether you're targeting multifamily acquisitions, NNN retail, value-add office,
                   or development land, our team provides institutional-grade deal sourcing and
                   underwriting for individual and portfolio-level investors.
                 </p>
-                <ul className="space-y-4 mb-8">
+                <ul className="space-y-3.5 mb-8">
                   {[
                     "Multifamily & apartment complexes",
                     "Retail & restaurant NNN investments",
@@ -312,15 +327,16 @@ const CommercialInvestment = () => {
                     "Development land & entitled parcels",
                     "Mixed-use & build-to-rent projects"
                   ].map((item, i) => (
-                    <li key={i} className="flex items-center text-foreground">
-                      <span className="w-1.5 h-1.5 bg-gold rounded-full mr-4 flex-shrink-0" />
-                      {item}
+                    <li key={i} className="flex items-start gap-3">
+                      <span className="w-1.5 h-1.5 rounded-full bg-gold mt-2 shrink-0" />
+                      <span className="text-white/65 text-[0.925rem] font-light leading-relaxed">{item}</span>
                     </li>
                   ))}
                 </ul>
                 <Link
                   to="/contact"
-                  className="inline-block text-minimal bg-primary text-primary-foreground hover:bg-gold hover:text-white px-8 py-4 transition-colors duration-300"
+                  className="inline-block bg-gold hover:bg-white text-white hover:text-gold hover:font-bold px-8 py-4 transition-all duration-300 ease-out active:scale-[0.98]"
+                  style={labelStyle}
                 >
                   SHARE YOUR INVESTMENT CRITERIA
                 </Link>
@@ -332,9 +348,9 @@ const CommercialInvestment = () => {
                   { label: "Active Austin Submarkets", value: "12+" },
                   { label: "Investor Clients Served", value: "50+" }
                 ].map((stat, i) => (
-                  <div key={i} className="border-b border-border pb-6">
-                    <p className="text-minimal text-muted-foreground mb-2">{stat.label}</p>
-                    <p className="text-3xl md:text-4xl font-display font-light text-architectural">{stat.value}</p>
+                  <div key={i} className="border-b border-white/8 pb-6">
+                    <p className="text-white/30 mb-2" style={labelStyle}>{stat.label}</p>
+                    <p className="text-3xl md:text-4xl font-display font-light text-white">{stat.value}</p>
                   </div>
                 ))}
               </div>
@@ -343,28 +359,28 @@ const CommercialInvestment = () => {
         </div>
       </section>
 
-      {/* Austin Investment Market Overview */}
-      <section className="py-28 bg-secondary">
+      {/* ── Market Overview + FAQ ─────────────────────── */}
+      <section className="py-16 md:py-24 bg-[hsl(220,15%,6%)] border-t border-white/5">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <p className="text-minimal text-gold mb-4 font-extrabold">MARKET OVERVIEW</p>
-            <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-12">
+            <p className="text-gold text-center mb-4 font-bold" style={labelStyle}>MARKET OVERVIEW</p>
+            <h2 className="font-display text-2xl md:text-3xl font-light text-white text-center mb-14">
               Austin Investment Market Insights
             </h2>
 
             <div className="space-y-12">
               <div>
-                <h3 className="text-2xl font-display font-light text-architectural mb-4">
+                <h3 className="text-xl font-display font-light text-white mb-4">
                   Why Austin for Commercial Investment
                 </h3>
-                <p className="text-muted-foreground leading-relaxed mb-4">
+                <p className="text-white/45 text-sm leading-relaxed mb-4">
                   Austin has emerged as one of America's premier commercial real estate markets, driven by
                   explosive population growth, major corporate relocations from Apple, Tesla, Google, Meta,
                   and Oracle, and a business-friendly tax environment with no state income tax. The metro
                   area has added over 300,000 residents in the past five years, creating sustained demand
                   across every commercial asset class.
                 </p>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-white/45 text-sm leading-relaxed">
                   For investors, Austin offers compelling risk-adjusted returns relative to coastal gateway
                   markets. Cap rates remain attractive, rent growth continues to outpace national averages
                   in key submarkets, and the metro's diversifying economy reduces concentration risk that
@@ -373,10 +389,10 @@ const CommercialInvestment = () => {
               </div>
 
               <div>
-                <h3 className="text-2xl font-display font-light text-architectural mb-4">
+                <h3 className="text-xl font-display font-light text-white mb-4">
                   Austin Multifamily Investment Landscape
                 </h3>
-                <p className="text-muted-foreground leading-relaxed mb-4">
+                <p className="text-white/45 text-sm leading-relaxed">
                   Multifamily remains Austin's most active commercial investment sector. Strong job growth,
                   elevated mortgage rates sustaining rental demand, and Austin's quality-of-life appeal
                   create a favorable environment for apartment investors. Suburban corridors including
@@ -386,10 +402,10 @@ const CommercialInvestment = () => {
               </div>
 
               <div>
-                <h3 className="text-2xl font-display font-light text-architectural mb-4">
+                <h3 className="text-xl font-display font-light text-white mb-4">
                   Emerging Opportunity Zones
                 </h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-white/45 text-sm leading-relaxed">
                   East Austin continues its transformation as the city's most dynamic development corridor.
                   The I-35 expansion project is reshaping adjacent land values and accessibility. Southeast
                   Austin, anchored by Tesla's Gigafactory and Samsung's semiconductor campus, represents one
@@ -401,15 +417,16 @@ const CommercialInvestment = () => {
             </div>
 
             {/* FAQ */}
-            <div className="mt-10">
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-8">
+            <div className="mt-16">
+              <p className="text-gold text-center mb-4 font-bold" style={labelStyle}>FAQ</p>
+              <h2 className="font-display text-2xl md:text-3xl font-light text-white text-center mb-14">
                 Frequently Asked Questions
               </h2>
               <div className="space-y-6">
                 {faqs.map((faq, i) => (
-                  <div key={i} className="border-b border-border pb-6">
-                    <h3 className="text-lg font-medium text-foreground mb-2">{faq.question}</h3>
-                    <p className="text-muted-foreground leading-relaxed">{faq.answer}</p>
+                  <div key={i} className="border-b border-white/8 pb-6">
+                    <h3 className="text-white font-medium text-base mb-2">{faq.question}</h3>
+                    <p className="text-white/45 text-sm leading-relaxed">{faq.answer}</p>
                   </div>
                 ))}
               </div>
@@ -418,37 +435,47 @@ const CommercialInvestment = () => {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-16 bg-muted">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <p className="text-minimal text-gold mb-4 font-extrabold">GET STARTED</p>
-            <h2 className="text-4xl md:text-6xl font-display font-light text-architectural mb-6">
-              Looking for a Commercial Acquisition?
-            </h2>
-            <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
-              Share your criteria for multifamily, retail, office, land, or value-add investments
-              in Austin and surrounding markets.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <Link
-                to="/contact"
-                className="inline-block text-minimal bg-primary text-primary-foreground hover:bg-gold hover:text-white px-10 py-4 transition-colors duration-300"
-              >
-                SHARE INVESTMENT CRITERIA
-              </Link>
-              <Link
-                to="/contact"
-                className="inline-block text-minimal border border-foreground text-foreground hover:bg-foreground hover:text-background px-10 py-4 transition-colors duration-300"
-              >
-                CONTACT TAYLOR SHERWOOD
-              </Link>
-            </div>
+      {/* ── FINAL CTA ────────────────────────────────── */}
+      <section className="py-16 md:py-24 bg-[hsl(220,15%,8%)] border-t border-white/5">
+        <div className="container mx-auto px-6 max-w-lg text-center">
+          <p className="text-gold mb-4 font-bold" style={labelStyle}>GET STARTED</p>
+          <h2 className="font-display text-2xl md:text-3xl font-light text-white mb-4">
+            Looking for a Commercial Acquisition?
+          </h2>
+          <p className="text-white/50 text-sm leading-relaxed mb-8">
+            Share your criteria for multifamily, retail, office, land, or value-add investments
+            in Austin and surrounding markets.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link
+              to="/contact"
+              className="inline-block bg-gold hover:bg-white text-white hover:text-gold hover:font-bold px-10 py-4 transition-all duration-300 ease-out active:scale-[0.98]"
+              style={labelStyle}
+            >
+              SHARE INVESTMENT CRITERIA
+            </Link>
+            <Link
+              to="/contact"
+              className="inline-block border border-white/20 text-white/60 hover:bg-white hover:text-gold hover:font-bold hover:border-white px-10 py-4 transition-all duration-300 ease-out"
+              style={labelStyle}
+            >
+              CONTACT TAYLOR SHERWOOD
+            </Link>
           </div>
         </div>
       </section>
 
-      <Footer />
+      {/* ── Footer (minimal, dark) ────────────────────── */}
+      <footer className="py-8 bg-[hsl(220,15%,5%)] border-t border-white/5">
+        <div className="container mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="text-white/25 text-xs tracking-wide">© {new Date().getFullYear()} Echelon Property Group · Austin, Texas · Brokered by eXp Realty</p>
+          <div className="flex gap-5">
+            <Link to="/" className="text-white/25 hover:text-white/50 transition-colors text-xs tracking-[0.1em] uppercase">Home</Link>
+            <Link to="/private" className="text-white/25 hover:text-white/50 transition-colors text-xs tracking-[0.1em] uppercase">Private</Link>
+            <Link to="/contact" className="text-white/25 hover:text-white/50 transition-colors text-xs tracking-[0.1em] uppercase">Contact</Link>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };

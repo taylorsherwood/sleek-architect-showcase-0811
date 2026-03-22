@@ -149,6 +149,15 @@ const GlobalLuxuryAdvertising = () => {
             decoding="async"
           />
           <div className="absolute inset-0 bg-[#0C0F24]/55" />
+          {/* eXp icon watermark */}
+          <img
+            src={expIcon}
+            alt=""
+            aria-hidden="true"
+            className="absolute right-8 md:right-16 top-1/2 -translate-y-1/2 w-32 md:w-48 lg:w-64 opacity-50 pointer-events-none select-none"
+            loading="lazy"
+            decoding="async"
+          />
         </div>
 
         {/* Content */}

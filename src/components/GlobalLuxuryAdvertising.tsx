@@ -273,6 +273,40 @@ const GlobalLuxuryAdvertising = () => {
             }}>
             Wall Street Journal
           </span>
+          {/* Supporting logos – loose editorial stack */}
+          <span
+            className="absolute font-medium uppercase whitespace-nowrap hidden lg:block"
+            style={{
+              fontSize: "0.85rem",
+              letterSpacing: "0.16em",
+              color: "hsl(35 18% 55% / 0.07)",
+              right: "8%",
+              top: "32%",
+            }}>
+            Mansion Global
+          </span>
+          <span
+            className="absolute font-medium uppercase whitespace-nowrap hidden lg:block"
+            style={{
+              fontSize: "0.72rem",
+              letterSpacing: "0.16em",
+              color: "hsl(35 18% 55% / 0.06)",
+              right: "14%",
+              top: "72%",
+            }}>
+            Robb Report
+          </span>
+          <span
+            className="absolute font-medium uppercase whitespace-nowrap hidden lg:block"
+            style={{
+              fontSize: "0.65rem",
+              letterSpacing: "0.16em",
+              color: "hsl(35 18% 55% / 0.055)",
+              right: "4%",
+              top: "80%",
+            }}>
+            JamesEdition
+          </span>
         </div>
 
         <div className="container mx-auto px-6 relative z-10">

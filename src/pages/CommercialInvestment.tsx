@@ -101,7 +101,7 @@ const CommercialInvestment = () => {
           ══════════════════════════════════════════════ */}
 
       {/* ── Current Commercial Listings ──────────────── */}
-      <section className="py-16 md:py-24 bg-[hsl(220,15%,12%)] border-t border-white/5">
+      <section className="py-16 md:py-24 bg-[#31303F] border-t border-white/5">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
             <div className="mb-16">

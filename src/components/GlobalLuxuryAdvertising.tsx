@@ -296,7 +296,7 @@ const GlobalLuxuryAdvertising = () => {
                   JamesEdition · MarketWatch · Unique Homes · LuxuryEstate
                 </p>
                 <p className="text-foreground/75 text-sm tracking-[0.12em] font-medium mt-3">
-                  80 International Distribution Channels
+                  80+ International Distribution Channels
                 </p>
               </div>
             </div>

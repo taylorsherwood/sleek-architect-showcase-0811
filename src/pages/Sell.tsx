@@ -266,7 +266,7 @@ const Sell = () => {
       <Navigation />
 
       {/* ── Hero ── */}
-      <section className="relative h-[70vh] min-h-[540px] flex items-center justify-center">
+      <section className="relative h-[70vh] min-h-[540px] flex items-end justify-center pb-16">
         <div className="absolute inset-0">
           <img src={heroImg} alt="Luxury property in Austin Texas" title="Sell your Austin luxury home — Echelon Property Group" className="w-full h-full object-cover" loading="eager" decoding="async" />
           <div className="absolute inset-0 bg-[#0C0F24]/60" />

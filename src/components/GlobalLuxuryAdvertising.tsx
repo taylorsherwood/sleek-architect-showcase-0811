@@ -258,55 +258,42 @@ const GlobalLuxuryAdvertising = () => {
             opacity: platforms1.visible ? 1 : 0,
             transition: "opacity 1.8s cubic-bezier(0.16,1,0.3,1) 200ms",
           }}>
+          {/* WSJ anchor */}
           <span
             className="absolute font-display font-light uppercase whitespace-nowrap"
             style={{
               fontSize: "clamp(2.5rem, 4.5vw, 4.2rem)",
               letterSpacing: "0.14em",
               right: "5%",
-              top: "54%",
+              top: "38%",
               transform: "translateY(-50%)",
-              background: "linear-gradient(90deg, hsl(35 18% 55% / 0.04) 0%, hsl(35 18% 55% / 0.11) 60%, hsl(35 18% 55% / 0.11) 100%)",
+              background: "linear-gradient(90deg, hsl(35 18% 55% / 0.04) 0%, hsl(35 18% 55% / 0.09) 50%, hsl(35 18% 55% / 0.09) 100%)",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
               backgroundClip: "text",
             }}>
             Wall Street Journal
           </span>
-          {/* Supporting logos – loose editorial stack */}
-          <span
-            className="absolute font-medium uppercase whitespace-nowrap hidden lg:block"
+          {/* Supporting logos – clean vertical stack */}
+          <div
+            className="absolute hidden lg:flex flex-col items-end gap-[28px]"
             style={{
-              fontSize: "0.85rem",
-              letterSpacing: "0.16em",
-              color: "hsl(35 18% 55% / 0.07)",
-              right: "8%",
-              top: "32%",
+              right: "6%",
+              top: "56%",
             }}>
-            Mansion Global
-          </span>
-          <span
-            className="absolute font-medium uppercase whitespace-nowrap hidden lg:block"
-            style={{
-              fontSize: "0.72rem",
-              letterSpacing: "0.16em",
-              color: "hsl(35 18% 55% / 0.06)",
-              right: "14%",
-              top: "72%",
-            }}>
-            Robb Report
-          </span>
-          <span
-            className="absolute font-medium uppercase whitespace-nowrap hidden lg:block"
-            style={{
-              fontSize: "0.65rem",
-              letterSpacing: "0.16em",
-              color: "hsl(35 18% 55% / 0.055)",
-              right: "4%",
-              top: "80%",
-            }}>
-            JamesEdition
-          </span>
+            <span className="font-medium uppercase whitespace-nowrap text-[0.8rem] tracking-[0.16em]"
+              style={{ color: "hsl(35 18% 55% / 0.15)" }}>
+              Mansion Global
+            </span>
+            <span className="font-medium uppercase whitespace-nowrap text-[0.75rem] tracking-[0.16em]"
+              style={{ color: "hsl(35 18% 55% / 0.13)" }}>
+              Robb Report
+            </span>
+            <span className="font-medium uppercase whitespace-nowrap text-[0.7rem] tracking-[0.16em]"
+              style={{ color: "hsl(35 18% 55% / 0.12)" }}>
+              JamesEdition
+            </span>
+          </div>
         </div>
 
         <div className="container mx-auto px-6 relative z-10">

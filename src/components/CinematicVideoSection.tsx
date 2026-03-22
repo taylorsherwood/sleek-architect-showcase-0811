@@ -70,7 +70,7 @@ const CinematicVideoSection = () => {
           <div className="relative grid grid-cols-1 lg:grid-cols-[2fr_3fr] items-center">
 
             {/* Left — Text */}
-            <div className="relative z-10 max-w-md lg:max-w-none lg:pl-4 xl:pl-8 lg:pr-0 lg:mr-[-8%]">
+            <div className="relative z-10 max-w-md lg:max-w-none lg:pl-4 xl:pl-8 lg:pr-0 lg:mr-[-12%]" style={{ filter: "drop-shadow(0 0 24px hsl(var(--background) / 0.6))" }}>
               {/* Eyebrow */}
               <p
                 className="text-[9px] text-gold/60 mb-8 font-semibold"

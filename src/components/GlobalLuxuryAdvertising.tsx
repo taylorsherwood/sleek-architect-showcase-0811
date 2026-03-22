@@ -227,7 +227,7 @@ const GlobalLuxuryAdvertising = () => {
       {/* ═══════════════════════════════════════════════════════════════ */}
       {/*  3 · MARKETING EXECUTION – 3 CARDS                             */}
       {/* ═══════════════════════════════════════════════════════════════ */}
-      <section className="py-28 md:py-36 bg-secondary/40" ref={cards.ref}>
+      <section className="py-20 md:py-24 bg-secondary/40" ref={cards.ref}>
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16" style={revealStyle(cards.visible, 0)}>

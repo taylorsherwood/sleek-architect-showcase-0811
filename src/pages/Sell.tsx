@@ -203,8 +203,8 @@ const Sell = () => {
         extra: {
           "Property Address": valForm.address,
           interest: "Home Valuation",
-          message: valForm.message || "Home valuation request from Sell page.",
-        },
+          message: valForm.message || "Home valuation request from Sell page."
+        }
       }),
       setValSubmitting,
       () => setValForm({ name: "", email: "", phone: "", address: "", message: "" }),
@@ -232,8 +232,8 @@ const Sell = () => {
         source: "Sell Page — Consultation Form",
         extra: {
           interest: "Selling My Home",
-          message: conForm.message || "Listing consultation request from Sell page.",
-        },
+          message: conForm.message || "Listing consultation request from Sell page."
+        }
       }),
       setConSubmitting,
       () => setConForm({ name: "", email: "", phone: "", message: "" }),
@@ -254,15 +254,15 @@ const Sell = () => {
         canonical="https://www.echelonpropertygroup.com/sell" />
       <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createBreadcrumbSchema([
-        { name: "Home", url: "https://www.echelonpropertygroup.com/" },
-        { name: "Sell Your Home", url: "https://www.echelonpropertygroup.com/sell" }
-      ])} />
+      { name: "Home", url: "https://www.echelonpropertygroup.com/" },
+      { name: "Sell Your Home", url: "https://www.echelonpropertygroup.com/sell" }]
+      )} />
       <SchemaMarkup schema={createFAQSchema([
-        { question: "How long does it take to sell a luxury home in Austin?", answer: "Well-priced luxury homes in Austin typically sell within 30–90 days depending on neighborhood, price point, and condition. Homes in Westlake Hills, Barton Creek, and Tarrytown that are move-in ready and strategically priced often sell faster." },
-        { question: "What does it cost to sell a home in Austin Texas?", answer: "Typical seller costs include agent commissions, title insurance, property taxes prorated to closing, and any repairs or staging. In Texas, sellers also provide a survey and pay for an owner's title policy." },
-        { question: "Should I sell my Austin home off-market?", answer: "Off-market sales offer privacy and the ability to test pricing without public days-on-market accumulation. They're ideal for high-profile sellers or unique luxury properties. Echelon Property Group helps sellers evaluate which approach best serves their goals." },
-        { question: "How should I prepare my Austin home for sale?", answer: "Key preparation steps include professional staging, decluttering, addressing deferred maintenance, fresh paint, and landscaping. For luxury homes, professional photography, cinematic video, drone footage, and a custom property website are essential." },
-      ])} />
+      { question: "How long does it take to sell a luxury home in Austin?", answer: "Well-priced luxury homes in Austin typically sell within 30–90 days depending on neighborhood, price point, and condition. Homes in Westlake Hills, Barton Creek, and Tarrytown that are move-in ready and strategically priced often sell faster." },
+      { question: "What does it cost to sell a home in Austin Texas?", answer: "Typical seller costs include agent commissions, title insurance, property taxes prorated to closing, and any repairs or staging. In Texas, sellers also provide a survey and pay for an owner's title policy." },
+      { question: "Should I sell my Austin home off-market?", answer: "Off-market sales offer privacy and the ability to test pricing without public days-on-market accumulation. They're ideal for high-profile sellers or unique luxury properties. Echelon Property Group helps sellers evaluate which approach best serves their goals." },
+      { question: "How should I prepare my Austin home for sale?", answer: "Key preparation steps include professional staging, decluttering, addressing deferred maintenance, fresh paint, and landscaping. For luxury homes, professional photography, cinematic video, drone footage, and a custom property website are essential." }]
+      )} />
       <Navigation />
 
       {/* ── Hero ── */}
@@ -340,8 +340,8 @@ const Sell = () => {
           <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <p className="text-minimal text-gold mb-4 font-extrabold">MARKETING STRATEGY</p>
-              <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-6">
-                Your Home Deserves
+              <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-6">Your Home Deserves
+More Than Just a Sign
                 <br />
                 More Than a Sign
               </h2>
@@ -542,16 +542,16 @@ const Sell = () => {
             </h2>
             <div className="space-y-6">
               {[
-                { q: "How long does it take to sell a luxury home in Austin?", a: "Well-priced luxury homes in Austin typically sell within 30–90 days depending on neighborhood, price point, and condition. Homes in Westlake Hills, Barton Creek, and Tarrytown that are move-in ready and strategically priced often sell faster." },
-                { q: "What does it cost to sell a home in Austin Texas?", a: "Typical seller costs include agent commissions, title insurance, property taxes prorated to closing, and any repairs or staging. In Texas, sellers also provide a survey and pay for an owner's title policy." },
-                { q: "Should I sell my Austin home off-market?", a: "Off-market sales offer privacy and the ability to test pricing without public days-on-market accumulation. They're ideal for high-profile sellers or unique luxury properties. Echelon Property Group helps sellers evaluate which approach best serves their goals." },
-                { q: "How should I prepare my Austin home for sale?", a: "Key preparation steps include professional staging, decluttering, addressing deferred maintenance, fresh paint, and landscaping. For luxury homes, professional photography, cinematic video, drone footage, and a custom property website are essential." },
-              ].map((faq, i) => (
-                <div key={i} className="border-b border-border pb-6">
+              { q: "How long does it take to sell a luxury home in Austin?", a: "Well-priced luxury homes in Austin typically sell within 30–90 days depending on neighborhood, price point, and condition. Homes in Westlake Hills, Barton Creek, and Tarrytown that are move-in ready and strategically priced often sell faster." },
+              { q: "What does it cost to sell a home in Austin Texas?", a: "Typical seller costs include agent commissions, title insurance, property taxes prorated to closing, and any repairs or staging. In Texas, sellers also provide a survey and pay for an owner's title policy." },
+              { q: "Should I sell my Austin home off-market?", a: "Off-market sales offer privacy and the ability to test pricing without public days-on-market accumulation. They're ideal for high-profile sellers or unique luxury properties. Echelon Property Group helps sellers evaluate which approach best serves their goals." },
+              { q: "How should I prepare my Austin home for sale?", a: "Key preparation steps include professional staging, decluttering, addressing deferred maintenance, fresh paint, and landscaping. For luxury homes, professional photography, cinematic video, drone footage, and a custom property website are essential." }].
+              map((faq, i) =>
+              <div key={i} className="border-b border-border pb-6">
                   <h3 className="text-lg font-medium text-foreground mb-2">{faq.q}</h3>
                   <p className="text-muted-foreground leading-relaxed">{faq.a}</p>
                 </div>
-              ))}
+              )}
             </div>
           </div>
         </div>

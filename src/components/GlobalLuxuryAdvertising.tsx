@@ -332,7 +332,7 @@ const GlobalLuxuryAdvertising = () => {
       {/* ═══════════════════════════════════════════════════════════════ */}
       {/*  6 · CTA                                                       */}
       {/* ═══════════════════════════════════════════════════════════════ */}
-      <section className="py-28 md:py-32 bg-background" ref={cta.ref}>
+      <section className="py-20 md:py-24 bg-background" ref={cta.ref}>
         <div className="container mx-auto px-6">
           <div className="max-w-2xl mx-auto text-center">
             <p className="text-minimal text-gold mb-4 font-extrabold" style={revealStyle(cta.visible, 0)}>

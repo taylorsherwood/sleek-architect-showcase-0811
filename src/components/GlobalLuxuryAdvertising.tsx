@@ -250,6 +250,28 @@ const GlobalLuxuryAdvertising = () => {
       {/*  2 · PLATFORM EXPOSURE                                         */}
       {/* ═══════════════════════════════════════════════════════════════ */}
       <section className="py-20 md:py-24 bg-background relative overflow-hidden" ref={platforms1.ref}>
+        {/* ── Oversized WSJ anchor mark ── */}
+        <div
+          className="absolute inset-0 pointer-events-none select-none overflow-hidden"
+          aria-hidden="true"
+          style={{
+            opacity: platforms1.visible ? 1 : 0,
+            transition: "opacity 1.8s cubic-bezier(0.16,1,0.3,1) 200ms",
+          }}>
+          <span
+            className="absolute font-display font-light uppercase whitespace-nowrap"
+            style={{
+              fontSize: "clamp(2.8rem, 5vw, 4.5rem)",
+              letterSpacing: "0.14em",
+              color: "hsl(35 18% 52% / 0.10)",
+              right: "4%",
+              top: "18%",
+              transform: "translateX(8%) rotate(-2deg)",
+            }}>
+            Wall Street Journal
+          </span>
+        </div>
+
         {/* ── Background logo grid (full-bleed, behind everything) ── */}
         <div
           className="absolute inset-0 pointer-events-none select-none"
@@ -265,7 +287,6 @@ const GlobalLuxuryAdvertising = () => {
             {([
               { name: "Robb Report", featured: true },
               { name: "Mansion Global", featured: true },
-              { name: "Wall Street Journal", featured: true },
               { name: "Barron's", featured: false },
               { name: "JamesEdition", featured: false },
               { name: "MarketWatch", featured: false },
@@ -276,7 +297,7 @@ const GlobalLuxuryAdvertising = () => {
                 key={logo.name}
                 className="text-sm md:text-base font-medium tracking-[0.18em] uppercase whitespace-nowrap"
                 style={{
-                  color: `hsl(35 20% 55% / ${logo.featured ? 0.16 : 0.11})`,
+                  color: `hsl(35 20% 55% / ${logo.featured ? 0.14 : 0.10})`,
                   transform: `translateY(${i % 2 === 0 ? -4 : 6}px)`,
                 }}>
                 {logo.name}

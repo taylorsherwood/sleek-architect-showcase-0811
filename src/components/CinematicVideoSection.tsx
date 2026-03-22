@@ -64,109 +64,120 @@ const CinematicVideoSection = () => {
 
   return (
     <section ref={ref} className="relative pt-0 pb-28 md:pb-36">
-      {/* ── Editorial text — left-aligned, constrained ── */}
-      <div className="container mx-auto px-6 md:px-8 mb-12 md:mb-14">
+      <div className="container mx-auto px-6 md:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="max-w-md ml-0 md:ml-4">
-            {/* Eyebrow */}
-            <p
-              className="text-[9px] text-gold/60 mb-8 font-semibold"
-              style={{ ...reveal(visible, 0), letterSpacing: "0.3em" }}
-            >
-              PROPERTY FILM
-            </p>
+          {/* ── Two-column editorial layout ── */}
+          <div className="grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-10 lg:gap-14 items-center">
 
-            {/* Divider */}
+            {/* Left — Text */}
+            <div className="max-w-md lg:max-w-none lg:pl-4 xl:pl-8">
+              {/* Eyebrow */}
+              <p
+                className="text-[9px] text-gold/60 mb-8 font-semibold"
+                style={{ ...reveal(visible, 0), letterSpacing: "0.3em" }}
+              >
+                PROPERTY FILM
+              </p>
+
+              {/* Divider */}
+              <div
+                style={{
+                  ...reveal(visible, 80),
+                  width: 28,
+                  height: 1,
+                  background: "linear-gradient(90deg, hsl(var(--gold) / 0.3), transparent)",
+                  marginBottom: 32,
+                }}
+              />
+
+              {/* Headline line 1 */}
+              <h2
+                className="font-display font-medium text-architectural leading-[0.95]"
+                style={{ ...reveal(visible, 160), fontSize: "clamp(2rem, 3.5vw, 2.75rem)", letterSpacing: "-0.02em" }}
+              >
+                Luxury Marketing
+              </h2>
+              {/* Headline line 2 */}
+              <p
+                className="font-display font-extralight italic text-foreground/55 leading-[0.95] mt-1.5 mb-10"
+                style={{ ...reveal(visible, 240), fontSize: "clamp(2rem, 3.5vw, 2.75rem)", letterSpacing: "-0.01em" }}
+              >
+                That Moves Buyers
+              </p>
+
+              {/* Power line */}
+              <p
+                className="text-sm font-medium text-foreground/85 mb-5"
+                style={{ ...reveal(visible, 340), letterSpacing: "0.12em" }}
+              >
+                Most agents list. We position.
+              </p>
+
+              {/* Subheadline */}
+              <p
+                className="text-muted-foreground/80 text-[13px] leading-[2] max-w-[20rem] mb-8 lg:mb-0"
+                style={reveal(visible, 420)}
+              >
+                Cinematic presentation is part of how we position exceptional
+                homes to stand apart, attract attention, and drive stronger
+                perceived value.
+              </p>
+
+              {/* CTA — desktop only (below text) */}
+              <div className="hidden lg:block mt-8" style={reveal(visible, 520)}>
+                <Link
+                  to="/contact"
+                  className="group inline-flex items-center gap-2 text-[10px] font-medium text-muted-foreground/70 hover:text-gold transition-colors duration-500"
+                  style={{ letterSpacing: "0.18em" }}
+                >
+                  SEE HOW YOUR HOME WOULD BE POSITIONED
+                  <ArrowRight className="w-3.5 h-3.5 transition-transform duration-500 group-hover:translate-x-1" />
+                </Link>
+              </div>
+            </div>
+
+            {/* Right — Video */}
             <div
-              style={{
-                ...reveal(visible, 80),
-                width: 28,
-                height: 1,
-                background: "linear-gradient(90deg, hsl(var(--gold) / 0.3), transparent)",
-                marginBottom: 32,
-              }}
-            />
+              className="relative overflow-hidden"
+              style={{ ...reveal(visible, 350), borderRadius: 3 }}
+            >
+              {/* Top fade */}
+              <div
+                className="absolute top-0 inset-x-0 h-20 md:h-28 z-10 pointer-events-none"
+                style={{ background: "linear-gradient(to bottom, hsl(var(--background) / 0.12), transparent)" }}
+              />
+              {/* Bottom fade */}
+              <div
+                className="absolute bottom-0 inset-x-0 h-24 md:h-32 z-10 pointer-events-none"
+                style={{ background: "linear-gradient(to top, hsl(var(--background) / 0.25), transparent)" }}
+              />
 
-            {/* Headline line 1 — medium weight */}
-            <h2
-              className="font-display font-medium text-architectural leading-[0.95]"
-              style={{ ...reveal(visible, 160), fontSize: "clamp(2rem, 3.5vw, 2.75rem)", letterSpacing: "-0.02em" }}
-            >
-              Luxury Marketing
-            </h2>
-            {/* Headline line 2 — lighter + italic */}
-            <p
-              className="font-display font-extralight italic text-foreground/55 leading-[0.95] mt-1.5 mb-10"
-              style={{ ...reveal(visible, 240), fontSize: "clamp(2rem, 3.5vw, 2.75rem)", letterSpacing: "-0.01em" }}
-            >
-              That Moves Buyers
-            </p>
-
-            {/* Power line */}
-            <p
-              className="text-sm font-medium text-foreground/85 mb-5"
-              style={{ ...reveal(visible, 340), letterSpacing: "0.12em" }}
-            >
-              Most agents list. We position.
-            </p>
-
-            {/* Subheadline */}
-            <p
-              className="text-muted-foreground/80 text-[13px] leading-[2] max-w-[18rem]"
-              style={reveal(visible, 420)}
-            >
-              Cinematic presentation is part of how we position exceptional
-              homes to stand apart, attract attention, and drive stronger
-              perceived value.
-            </p>
+              <div
+                ref={videoContainerRef}
+                className="will-change-transform origin-center"
+              >
+                <div className="relative w-full" style={{ aspectRatio: "4 / 3" }}>
+                  <video
+                    ref={videoRef}
+                    className="absolute inset-0 w-full h-full object-cover"
+                    src={VIDEO_URL}
+                    poster={POSTER_URL}
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    preload="metadata"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
 
-      {/* ── Video — near full-bleed with soft edge fades ── */}
-      <div
-        className="relative mx-4 md:mx-8 lg:mx-12 overflow-hidden"
-        style={reveal(visible, 450)}
-      >
-        {/* Top fade — very subtle vignette */}
-        <div
-          className="absolute top-0 inset-x-0 h-24 md:h-36 z-10 pointer-events-none"
-          style={{ background: "linear-gradient(to bottom, hsl(var(--background) / 0.12), transparent)" }}
-        />
-        {/* Bottom fade — slightly stronger for natural falloff */}
-        <div
-          className="absolute bottom-0 inset-x-0 h-28 md:h-40 z-10 pointer-events-none"
-          style={{ background: "linear-gradient(to top, hsl(var(--background) / 0.25), transparent)" }}
-        />
-
-        <div
-          ref={videoContainerRef}
-          className="will-change-transform origin-center"
-          style={{ borderRadius: 3 }}
-        >
-          <div className="relative w-full" style={{ aspectRatio: "2.2 / 1" }}>
-            <video
-              ref={videoRef}
-              className="absolute inset-0 w-full h-full object-cover"
-              src={VIDEO_URL}
-              poster={POSTER_URL}
-              autoPlay
-              muted
-              loop
-              playsInline
-              preload="metadata"
-            />
-          </div>
-        </div>
-      </div>
-
-      {/* ── CTA — left-aligned below video ── */}
-      <div className="container mx-auto px-6 md:px-8 mt-10 md:mt-12">
-        <div className="max-w-7xl mx-auto">
-          <div className="ml-0 md:ml-4" style={reveal(visible, 650)}>
+          {/* CTA — mobile only */}
+          <div className="lg:hidden mt-8" style={reveal(visible, 520)}>
             <Link
               to="/contact"
-              className="group inline-flex items-center gap-2 text-[10px] font-medium text-muted-foreground/70 hover:text-gold transition-colors duration-500 px-0.5"
+              className="group inline-flex items-center gap-2 text-[10px] font-medium text-muted-foreground/70 hover:text-gold transition-colors duration-500"
               style={{ letterSpacing: "0.18em" }}
             >
               SEE HOW YOUR HOME WOULD BE POSITIONED

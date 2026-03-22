@@ -261,49 +261,15 @@ const GlobalLuxuryAdvertising = () => {
           <span
             className="absolute font-display font-light uppercase whitespace-nowrap"
             style={{
-              fontSize: "clamp(2.8rem, 5vw, 4.5rem)",
+              fontSize: "clamp(3rem, 5.5vw, 5rem)",
               letterSpacing: "0.14em",
-              color: "hsl(35 18% 52% / 0.10)",
-              right: "4%",
-              top: "18%",
-              transform: "translateX(8%) rotate(-2deg)",
+              color: "hsl(35 18% 55% / 0.08)",
+              right: "-2%",
+              top: "50%",
+              transform: "translateY(-50%)",
             }}>
             Wall Street Journal
           </span>
-        </div>
-
-        {/* ── Background logo grid (full-bleed, behind everything) ── */}
-        <div
-          className="absolute inset-0 pointer-events-none select-none"
-          aria-hidden="true"
-          style={{
-            opacity: platforms1.visible ? 1 : 0,
-            transition: "opacity 1.6s cubic-bezier(0.16,1,0.3,1) 300ms",
-            maskImage: "radial-gradient(ellipse 90% 85% at 65% 50%, black 40%, transparent 85%)",
-            WebkitMaskImage: "radial-gradient(ellipse 90% 85% at 65% 50%, black 40%, transparent 85%)",
-          }}>
-          <div className="absolute inset-0 grid grid-cols-2 md:grid-cols-3 gap-y-16 gap-x-12 items-center justify-items-center px-[10%] py-[8%]"
-            style={{ filter: "blur(0.5px)" }}>
-            {([
-              { name: "Robb Report", featured: true },
-              { name: "Mansion Global", featured: true },
-              { name: "Barron's", featured: false },
-              { name: "JamesEdition", featured: false },
-              { name: "MarketWatch", featured: false },
-              { name: "Unique Homes", featured: false },
-              { name: "LuxuryEstate", featured: false },
-            ] as const).map((logo, i) => (
-              <span
-                key={logo.name}
-                className="text-sm md:text-base font-medium tracking-[0.18em] uppercase whitespace-nowrap"
-                style={{
-                  color: `hsl(35 20% 55% / ${logo.featured ? 0.14 : 0.10})`,
-                  transform: `translateY(${i % 2 === 0 ? -4 : 6}px)`,
-                }}>
-                {logo.name}
-              </span>
-            ))}
-          </div>
         </div>
 
         <div className="container mx-auto px-6 relative z-10">

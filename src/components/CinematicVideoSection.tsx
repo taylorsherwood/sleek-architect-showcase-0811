@@ -70,7 +70,7 @@ const CinematicVideoSection = () => {
           <div className="relative grid grid-cols-1 lg:grid-cols-[2fr_3fr] items-center">
 
             {/* Left — Text */}
-            <div className="relative z-10 max-w-md lg:max-w-none lg:pl-4 xl:pl-8 lg:pr-0 lg:mr-[-8%]">
+            <div className="relative z-10 max-w-md lg:max-w-none lg:pl-4 xl:pl-8 lg:pr-0 lg:mr-[-12%]" style={{ filter: "drop-shadow(0 0 24px hsl(var(--background) / 0.6))" }}>
               {/* Eyebrow */}
               <p
                 className="text-[9px] text-gold/60 mb-8 font-semibold"
@@ -141,11 +141,6 @@ const CinematicVideoSection = () => {
               className="relative overflow-hidden mt-10 lg:mt-0"
               style={{ ...reveal(visible, 350), borderRadius: 3 }}
             >
-              {/* Left-edge fade for text overlap readability */}
-              <div
-                className="absolute left-0 inset-y-0 w-24 lg:w-32 z-10 pointer-events-none hidden lg:block"
-                style={{ background: "linear-gradient(to right, hsl(var(--background) / 0.35), transparent)" }}
-              />
               {/* Top fade */}
               <div
                 className="absolute top-0 inset-x-0 h-20 md:h-28 z-10 pointer-events-none"

@@ -123,7 +123,7 @@ const CinematicVideoSection = () => {
               </p>
 
               {/* CTA — desktop only (below text) */}
-              <div className="hidden lg:block mt-8" style={reveal(visible, 520)}>
+              <div className="hidden lg:block mt-8 lg:ml-[3.5%]" style={reveal(visible, 520)}>
                 <Link
                   to="/contact"
                   className="group inline-flex items-center gap-2 text-[10px] font-medium text-muted-foreground/70 hover:text-gold transition-colors duration-500"

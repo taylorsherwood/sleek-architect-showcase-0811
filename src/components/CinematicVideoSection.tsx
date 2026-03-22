@@ -79,16 +79,6 @@ const CinematicVideoSection = () => {
                 PROPERTY FILM
               </p>
 
-              {/* Divider */}
-              <div
-                style={{
-                  ...reveal(visible, 80),
-                  width: 28,
-                  height: 1,
-                  background: "linear-gradient(90deg, hsl(var(--gold) / 0.3), transparent)",
-                  marginBottom: 32,
-                }}
-              />
 
               {/* Headline — progressive cascade stagger */}
               <h2

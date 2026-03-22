@@ -275,22 +275,21 @@ const GlobalLuxuryAdvertising = () => {
               </ul>
             </div>
 
-            {/* Right – collage image with parallax drift */}
+            {/* Right – collage image with smooth parallax drift */}
             <div
-              ref={collageParallax.ref}
               className="overflow-hidden rounded group cursor-default"
-              style={{
-                ...revealScaleStyle(platforms1.visible, 300),
-                transform: platforms1.visible
-                  ? `translateY(${collageParallax.offset}px) scale(1)`
-                  : "translateY(16px) scale(0.97)",
-              }}>
-              <img
-                src={collageImg}
-                alt="Luxury marketing collage featuring Robb Report, Wall Street Journal, Mansion Global, UPMKT, and eXp Luxury"
-                className="w-full h-auto object-cover transition-all duration-700 ease-out group-hover:scale-[1.03] group-hover:brightness-110"
-                loading="lazy"
-                decoding="async" />
+              style={revealScaleStyle(platforms1.visible, 300)}>
+              <div
+                ref={collageParallaxRef}
+                className="will-change-transform"
+                style={{ transition: "transform 0.1s linear" }}>
+                <img
+                  src={collageImg}
+                  alt="Luxury marketing collage featuring Robb Report, Wall Street Journal, Mansion Global, UPMKT, and eXp Luxury"
+                  className="w-full h-auto object-cover transition-all duration-700 ease-out group-hover:scale-[1.03] group-hover:brightness-110"
+                  loading="lazy"
+                  decoding="async" />
+              </div>
             </div>
           </div>
         </div>

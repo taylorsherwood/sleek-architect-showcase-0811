@@ -258,42 +258,21 @@ const GlobalLuxuryAdvertising = () => {
             opacity: platforms1.visible ? 1 : 0,
             transition: "opacity 1.8s cubic-bezier(0.16,1,0.3,1) 200ms",
           }}>
-          {/* WSJ anchor */}
           <span
             className="absolute font-display font-light uppercase whitespace-nowrap"
             style={{
               fontSize: "clamp(2.5rem, 4.5vw, 4.2rem)",
               letterSpacing: "0.14em",
               right: "5%",
-              top: "38%",
+              top: "54%",
               transform: "translateY(-50%)",
-              background: "linear-gradient(90deg, hsl(35 18% 55% / 0.04) 0%, hsl(35 18% 55% / 0.09) 50%, hsl(35 18% 55% / 0.09) 100%)",
+              background: "linear-gradient(90deg, hsl(35 18% 55% / 0.04) 0%, hsl(35 18% 55% / 0.11) 60%, hsl(35 18% 55% / 0.11) 100%)",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
               backgroundClip: "text",
             }}>
             Wall Street Journal
           </span>
-          {/* Supporting logos – clean vertical stack */}
-          <div
-            className="absolute hidden lg:flex flex-col items-end gap-[28px]"
-            style={{
-              right: "6%",
-              top: "56%",
-            }}>
-            <span className="font-medium uppercase whitespace-nowrap text-[0.8rem] tracking-[0.16em]"
-              style={{ color: "hsl(35 18% 55% / 0.15)" }}>
-              Mansion Global
-            </span>
-            <span className="font-medium uppercase whitespace-nowrap text-[0.75rem] tracking-[0.16em]"
-              style={{ color: "hsl(35 18% 55% / 0.13)" }}>
-              Robb Report
-            </span>
-            <span className="font-medium uppercase whitespace-nowrap text-[0.7rem] tracking-[0.16em]"
-              style={{ color: "hsl(35 18% 55% / 0.12)" }}>
-              JamesEdition
-            </span>
-          </div>
         </div>
 
         <div className="container mx-auto px-6 relative z-10">
@@ -317,7 +296,7 @@ const GlobalLuxuryAdvertising = () => {
                   JamesEdition · MarketWatch · Unique Homes · LuxuryEstate
                 </p>
                 <p className="text-foreground/75 text-sm tracking-[0.12em] font-medium mt-3">
-                  80+ International Distribution Channels
+                  80 International Distribution Channels
                 </p>
               </div>
             </div>

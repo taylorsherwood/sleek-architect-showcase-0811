@@ -96,27 +96,38 @@ const authorityStats = [
 ];
 
 /* ------------------------------------------------------------------ */
-/*  Parallax collage hook                                              */
+/*  Smooth parallax drift (RAF-based, no re-renders)                   */
 /* ------------------------------------------------------------------ */
-function useParallaxDrift() {
-  const ref = useRef<HTMLDivElement>(null);
-  const [offset, setOffset] = useState(0);
+function useParallaxDrift(factor = 0.06) {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const rafId = useRef(0);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const el = ref.current;
-      if (!el) return;
+    const el = containerRef.current;
+    if (!el) return;
+
+    const update = () => {
       const rect = el.getBoundingClientRect();
       const center = rect.top + rect.height / 2;
       const viewCenter = window.innerHeight / 2;
-      const drift = (viewCenter - center) * 0.06;
-      setOffset(drift);
+      const drift = (viewCenter - center) * factor;
+      el.style.transform = `translateY(${drift}px)`;
     };
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
-  return { ref, offset };
+    const onScroll = () => {
+      cancelAnimationFrame(rafId.current);
+      rafId.current = requestAnimationFrame(update);
+    };
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    update();
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      cancelAnimationFrame(rafId.current);
+    };
+  }, [factor]);
+
+  return containerRef;
 }
 
 /* ------------------------------------------------------------------ */

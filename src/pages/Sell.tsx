@@ -104,9 +104,48 @@ const marketingFeatures = [
 
 
 const stats = [
-{ value: "98%", label: "List-to-Sale Price Ratio" },
-{ value: "21", label: "Avg. Days on Market" },
-{ value: "$100M+", label: "Career Sales Volume" }];
+  { target: 98, suffix: "%", label: "List-to-Sale Price Ratio", countDown: false },
+  { target: 21, suffix: "", label: "Avg. Days on Market", countDown: true, from: 60 },
+  { target: 100, prefix: "$", suffix: "M+", label: "Career Sales Volume", countDown: false },
+];
+
+function useCountUp(target: number, duration = 1800, from = 0, countDown = false) {
+  const [value, setValue] = useState(from);
+  const ref = useRef<HTMLDivElement>(null);
+  const started = useRef(false);
+
+  const animate = useCallback(() => {
+    const start = performance.now();
+    const initial = countDown ? from : 0;
+    const step = (now: number) => {
+      const progress = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3); // ease-out cubic
+      const current = Math.round(initial + (target - initial) * eased);
+      setValue(current);
+      if (progress < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  }, [target, duration, from, countDown]);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const obs = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !started.current) {
+          started.current = true;
+          animate();
+          obs.disconnect();
+        }
+      },
+      { threshold: 0.3 }
+    );
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, [animate]);
+
+  return { value, ref };
+}
 
 
 /* ------------------------------------------------------------------ */

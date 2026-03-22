@@ -6,7 +6,7 @@ import heroImg from "@/assets/global-luxury-hero.jpg";
 import digitalImg from "@/assets/marketing-digital.png";
 import printImg from "@/assets/marketing-print.png";
 import localImg from "@/assets/marketing-local.jpg";
-import collageImg from "@/assets/marketing-collage.png";
+import collageImg from "@/assets/marketing-collage-spaced.png";
 
 /* ------------------------------------------------------------------ */
 /*  Scroll-triggered reveal hook                                       */

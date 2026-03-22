@@ -178,9 +178,15 @@ const GlobalLuxuryAdvertising = () => {
           />
         </div>
 
+        {/* Subtle left-side text integration gradient */}
+        <div
+          className="absolute inset-y-0 left-0 w-1/2 z-[1] pointer-events-none"
+          style={{ background: "linear-gradient(90deg, rgba(12,15,36,0.25) 0%, transparent 80%)" }}
+        />
+
         {/* Content */}
-        <div className="relative z-10 container mx-auto px-6 py-20 md:py-24">
-          <div className="max-w-2xl">
+        <div className="relative z-10 container mx-auto px-6 md:px-8 py-20 md:py-24">
+          <div className="max-w-2xl ml-2 md:ml-4">
             {/* Eyebrow */}
             <p
               className="text-minimal text-gold mb-3 font-extrabold"
@@ -188,9 +194,9 @@ const GlobalLuxuryAdvertising = () => {
               GLOBAL LUXURY ADVERTISING
             </p>
 
-            {/* Seller hook */}
+            {/* Seller hook — more space above */}
             <p
-              className="text-primary-foreground/80 text-sm md:text-base font-light mb-4"
+              className="text-primary-foreground/75 text-sm md:text-base font-light mt-5 mb-4"
               style={{
                 ...revealStyle(hero.visible, 150),
                 letterSpacing: "0.12em",
@@ -199,14 +205,14 @@ const GlobalLuxuryAdvertising = () => {
               Positioned to Achieve Maximum Value
             </p>
 
-            {/* Divider */}
+            {/* Divider — shorter, subtler */}
             <div
               className="mb-5"
               style={{
                 ...revealStyle(hero.visible, 300),
-                width: 60,
+                width: 48,
                 height: 1,
-                background: "linear-gradient(90deg, transparent, hsl(43 30% 56% / 0.7), transparent)",
+                background: "linear-gradient(90deg, transparent, hsl(43 30% 56% / 0.5), transparent)",
               }}
             />
 
@@ -216,13 +222,13 @@ const GlobalLuxuryAdvertising = () => {
               style={revealStyle(hero.visible, 420)}>
               Your Property,
               <br />
-              <span className="italic">Everywhere</span> It Matters
+              <span className="italic text-primary-foreground/90">Everywhere It</span> Matters
             </h2>
 
             {/* Subheadline */}
             <p
-              className="text-primary-foreground/65 text-lg md:text-xl max-w-sm leading-relaxed"
-              style={revealStyle(hero.visible, 620)}>
+              className="text-primary-foreground/60 text-lg md:text-xl leading-[1.7]"
+              style={{ ...revealStyle(hero.visible, 620), maxWidth: "20rem" }}>
               Strategically positioned across the world's most influential luxury media, digital, and print platforms.
             </p>
           </div>

@@ -348,7 +348,7 @@ const Buy = () => {
           <div className="max-w-7xl mx-auto">
             <div className="mb-16 max-w-2xl">
               <p className="text-minimal text-gold mb-4 font-extrabold">YOUR ADVANTAGE</p>
-              <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-6">
+              <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-6 whitespace-nowrap">
                 Why Work With Taylor Sherwood
               </h2>
               <p className="text-muted-foreground leading-relaxed">Choosing the right Austin real estate advisor is the single most important decision you'll make in your home search. Here's what sets Taylor apart:

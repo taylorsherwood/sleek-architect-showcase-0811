@@ -73,7 +73,7 @@ const CinematicVideoSection = () => {
             <div className="relative z-10 max-w-md lg:max-w-none lg:pl-4 xl:pl-8 lg:pr-0 lg:mr-[-12%]" style={{ filter: "drop-shadow(0 0 24px hsl(var(--background) / 0.6))" }}>
               {/* Eyebrow */}
               <p
-                className="text-[9px] text-gold/60 mb-8 font-semibold"
+                className="text-[10px] text-gold/80 mb-8 font-bold"
                 style={{ ...reveal(visible, 0), letterSpacing: "0.3em" }}
               >
                 PROPERTY FILM

@@ -73,7 +73,7 @@ const CinematicVideoSection = () => {
             <div className="relative z-10 max-w-md lg:max-w-none lg:pl-4 xl:pl-8 lg:pr-0 lg:mr-[-12%]" style={{ filter: "drop-shadow(0 0 24px hsl(var(--background) / 0.6))" }}>
               {/* Eyebrow */}
               <p
-                className="text-[9px] text-gold/60 mb-8 font-semibold"
+                className="text-[10px] text-gold/80 mb-8 font-bold"
                 style={{ ...reveal(visible, 0), letterSpacing: "0.3em" }}
               >
                 PROPERTY FILM
@@ -126,7 +126,7 @@ const CinematicVideoSection = () => {
               <div className="hidden lg:block mt-8 lg:ml-[3.5%]" style={reveal(visible, 520)}>
                 <Link
                   to="/contact"
-                  className="group inline-flex items-center gap-2 text-[10px] font-medium text-muted-foreground/70 hover:text-gold transition-colors duration-500"
+                  className="group inline-flex items-center gap-2 text-[10px] font-medium text-muted-foreground/70 hover:text-gold transition-all duration-200 ease-out hover:translate-x-[3px]"
                   style={{ letterSpacing: "0.18em" }}
                 >
                   SEE HOW YOUR HOME WOULD BE POSITIONED
@@ -176,7 +176,7 @@ const CinematicVideoSection = () => {
           <div className="lg:hidden mt-8" style={reveal(visible, 520)}>
             <Link
               to="/contact"
-              className="group inline-flex items-center gap-2 text-[10px] font-medium text-muted-foreground/70 hover:text-gold transition-colors duration-500"
+              className="group inline-flex items-center gap-2 text-[10px] font-medium text-muted-foreground/70 hover:text-gold transition-all duration-200 ease-out hover:translate-x-[3px]"
               style={{ letterSpacing: "0.18em" }}
             >
               SEE HOW YOUR HOME WOULD BE POSITIONED

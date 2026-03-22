@@ -17,16 +17,23 @@ const Navigation = () => {
   const dropdownRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
 
+  // Pages where the nav should never fade on scroll
+  const noFadePages = ["/listings/commercial-investment-austin"];
+  const shouldNeverFade = noFadePages.includes(location.pathname);
+
   useEffect(() => {
+    if (shouldNeverFade) {
+      setIsScrolled(false);
+      return;
+    }
     const handleScroll = () => {
-      // Stay solid white until user scrolls past hero + search block
       const threshold = window.innerHeight + 300;
       setIsScrolled(window.scrollY > threshold);
     };
     handleScroll();
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [shouldNeverFade]);
 
   useEffect(() => {
     setOpenDropdown(null);

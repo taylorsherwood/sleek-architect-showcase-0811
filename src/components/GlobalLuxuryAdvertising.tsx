@@ -249,8 +249,37 @@ const GlobalLuxuryAdvertising = () => {
       {/* ═══════════════════════════════════════════════════════════════ */}
       {/*  2 · PLATFORM EXPOSURE                                         */}
       {/* ═══════════════════════════════════════════════════════════════ */}
-      <section className="py-20 md:py-24 bg-background" ref={platforms1.ref}>
-        <div className="container mx-auto px-6">
+      <section className="py-20 md:py-24 bg-background relative overflow-hidden" ref={platforms1.ref}>
+        {/* ── Background logo grid (full-bleed, behind everything) ── */}
+        <div
+          className="absolute inset-0 pointer-events-none select-none"
+          aria-hidden="true"
+          style={{
+            opacity: platforms1.visible ? 1 : 0,
+            transition: "opacity 1.6s cubic-bezier(0.16,1,0.3,1) 300ms",
+            maskImage: "radial-gradient(ellipse 80% 70% at 70% 50%, black 30%, transparent 80%)",
+            WebkitMaskImage: "radial-gradient(ellipse 80% 70% at 70% 50%, black 30%, transparent 80%)",
+          }}>
+          <div className="absolute inset-0 grid grid-cols-2 md:grid-cols-3 gap-y-14 gap-x-10 items-center justify-items-center px-[15%] py-[8%]"
+            style={{ filter: "blur(1.5px)" }}>
+            {[
+              "Robb Report", "Mansion Global", "Wall Street Journal",
+              "Barron's", "JamesEdition", "MarketWatch",
+              "Unique Homes", "LuxuryEstate"
+            ].map((name, i) => (
+              <span
+                key={name}
+                className="text-foreground/[0.06] text-sm md:text-base font-medium tracking-[0.18em] uppercase whitespace-nowrap"
+                style={{
+                  transform: `translateY(${i % 2 === 0 ? -4 : 6}px)`,
+                }}>
+                {name}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
             {/* Left – text */}
             <div className="max-w-[560px]" style={revealStyle(platforms1.visible, 0)}>

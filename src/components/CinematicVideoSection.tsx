@@ -63,7 +63,7 @@ const CinematicVideoSection = () => {
   }, []);
 
   return (
-    <section ref={ref} className="relative py-28 md:py-36">
+    <section ref={ref} className="relative pt-0 pb-28 md:pb-36">
       {/* ── Editorial text — left-aligned, constrained ── */}
       <div className="container mx-auto px-6 md:px-8 mb-12 md:mb-14">
         <div className="max-w-7xl mx-auto">

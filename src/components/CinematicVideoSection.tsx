@@ -66,11 +66,11 @@ const CinematicVideoSection = () => {
     <section ref={ref} className="relative pt-0 pb-28 md:pb-36">
       <div className="container mx-auto px-6 md:px-8">
         <div className="max-w-7xl mx-auto">
-          {/* ── Two-column editorial layout ── */}
-          <div className="grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-10 lg:gap-14 items-center">
+          {/* ── Overlapping editorial layout ── */}
+          <div className="relative grid grid-cols-1 lg:grid-cols-[2fr_3fr] items-center">
 
             {/* Left — Text */}
-            <div className="max-w-md lg:max-w-none lg:pl-4 xl:pl-8">
+            <div className="relative z-10 max-w-md lg:max-w-none lg:pl-4 xl:pl-8 lg:pr-0 lg:mr-[-8%]">
               {/* Eyebrow */}
               <p
                 className="text-[9px] text-gold/60 mb-8 font-semibold"
@@ -138,9 +138,14 @@ const CinematicVideoSection = () => {
 
             {/* Right — Video */}
             <div
-              className="relative overflow-hidden"
+              className="relative overflow-hidden mt-10 lg:mt-0"
               style={{ ...reveal(visible, 350), borderRadius: 3 }}
             >
+              {/* Left-edge fade for text overlap readability */}
+              <div
+                className="absolute left-0 inset-y-0 w-24 lg:w-32 z-10 pointer-events-none hidden lg:block"
+                style={{ background: "linear-gradient(to right, hsl(var(--background) / 0.35), transparent)" }}
+              />
               {/* Top fade */}
               <div
                 className="absolute top-0 inset-x-0 h-20 md:h-28 z-10 pointer-events-none"

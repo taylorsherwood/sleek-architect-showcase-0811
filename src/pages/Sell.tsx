@@ -403,6 +403,8 @@ More Than Just a Sign
       {/* ── Spacer ── */}
       <div className="bg-background py-8" />
 
+      <Testimonials />
+
       {/* ── Full-Spectrum Real Estate Advisory ── */}
       <section className="pt-0 pb-28 bg-background">
         <div className="container mx-auto px-6">
@@ -431,8 +433,6 @@ More Than Just a Sign
         </div>
       </section>
 
-
-      <Testimonials />
       <FeaturedListings />
 
       {/* ── Home Valuation ── */}

@@ -266,7 +266,7 @@ const CommercialInvestment = () => {
               ].map((listing, index) => (
                 <div
                   key={index}
-                  className="border border-border bg-card p-8 hover:border-foreground/20 transition-colors duration-300"
+                  className="border-2 border-border bg-card p-8 hover:border-gold transition-colors duration-500"
                 >
                   <div className="flex items-center justify-between mb-6">
                     <span className="bg-muted px-3 py-1 text-muted-foreground" style={labelStyle}>{listing.type}</span>

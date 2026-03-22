@@ -171,26 +171,58 @@ const GlobalLuxuryAdvertising = () => {
           <div className="absolute inset-0 bg-[#0C0F24]/55" />
           {/* Bottom gradient for text contrast */}
           <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[#0C0F24]/70 to-transparent" />
+          {/* Bottom-right vignette to balance removed logo */}
+          <div
+            className="absolute bottom-0 right-0 w-2/3 h-2/3 pointer-events-none"
+            style={{ background: "radial-gradient(ellipse at 100% 100%, rgba(12,15,36,0.35) 0%, transparent 70%)" }}
+          />
         </div>
 
         {/* Content */}
         <div className="relative z-10 container mx-auto px-6 py-20 md:py-24">
           <div className="max-w-2xl">
+            {/* Eyebrow */}
             <p
-              className="text-minimal text-gold mb-5 font-extrabold"
+              className="text-minimal text-gold mb-3 font-extrabold"
               style={revealStyle(hero.visible, 0)}>
               GLOBAL LUXURY ADVERTISING
             </p>
+
+            {/* Seller hook */}
+            <p
+              className="text-primary-foreground/80 text-sm md:text-base font-light mb-4"
+              style={{
+                ...revealStyle(hero.visible, 150),
+                letterSpacing: "0.12em",
+                textTransform: "uppercase" as const,
+              }}>
+              Positioned to Achieve Maximum Value
+            </p>
+
+            {/* Divider */}
+            <div
+              className="mb-5"
+              style={{
+                ...revealStyle(hero.visible, 300),
+                width: 60,
+                height: 1,
+                background: "linear-gradient(90deg, transparent, hsl(43 30% 56% / 0.7), transparent)",
+              }}
+            />
+
+            {/* Headline */}
             <h2
               className="text-5xl md:text-7xl lg:text-[5.2rem] font-display font-light text-primary-foreground leading-[1.05] mb-6"
-              style={revealStyle(hero.visible, 200)}>
+              style={revealStyle(hero.visible, 420)}>
               Your Property,
               <br />
               <span className="italic">Everywhere</span> It Matters
             </h2>
+
+            {/* Subheadline */}
             <p
-              className="text-primary-foreground/70 text-lg md:text-xl max-w-md leading-relaxed"
-              style={revealStyle(hero.visible, 420)}>
+              className="text-primary-foreground/65 text-lg md:text-xl max-w-sm leading-relaxed"
+              style={revealStyle(hero.visible, 620)}>
               Strategically positioned across the world's most influential luxury media, digital, and print platforms.
             </p>
           </div>

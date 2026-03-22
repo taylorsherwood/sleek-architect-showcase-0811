@@ -257,23 +257,29 @@ const GlobalLuxuryAdvertising = () => {
           style={{
             opacity: platforms1.visible ? 1 : 0,
             transition: "opacity 1.6s cubic-bezier(0.16,1,0.3,1) 300ms",
-            maskImage: "radial-gradient(ellipse 80% 70% at 70% 50%, black 30%, transparent 80%)",
-            WebkitMaskImage: "radial-gradient(ellipse 80% 70% at 70% 50%, black 30%, transparent 80%)",
+            maskImage: "radial-gradient(ellipse 90% 85% at 65% 50%, black 40%, transparent 85%)",
+            WebkitMaskImage: "radial-gradient(ellipse 90% 85% at 65% 50%, black 40%, transparent 85%)",
           }}>
-          <div className="absolute inset-0 grid grid-cols-2 md:grid-cols-3 gap-y-14 gap-x-10 items-center justify-items-center px-[15%] py-[8%]"
-            style={{ filter: "blur(1.5px)" }}>
-            {[
-              "Robb Report", "Mansion Global", "Wall Street Journal",
-              "Barron's", "JamesEdition", "MarketWatch",
-              "Unique Homes", "LuxuryEstate"
-            ].map((name, i) => (
+          <div className="absolute inset-0 grid grid-cols-2 md:grid-cols-3 gap-y-16 gap-x-12 items-center justify-items-center px-[10%] py-[8%]"
+            style={{ filter: "blur(0.5px)" }}>
+            {([
+              { name: "Robb Report", featured: true },
+              { name: "Mansion Global", featured: true },
+              { name: "Wall Street Journal", featured: true },
+              { name: "Barron's", featured: false },
+              { name: "JamesEdition", featured: false },
+              { name: "MarketWatch", featured: false },
+              { name: "Unique Homes", featured: false },
+              { name: "LuxuryEstate", featured: false },
+            ] as const).map((logo, i) => (
               <span
-                key={name}
-                className="text-foreground/[0.06] text-sm md:text-base font-medium tracking-[0.18em] uppercase whitespace-nowrap"
+                key={logo.name}
+                className="text-sm md:text-base font-medium tracking-[0.18em] uppercase whitespace-nowrap"
                 style={{
+                  color: `hsl(35 20% 55% / ${logo.featured ? 0.16 : 0.11})`,
                   transform: `translateY(${i % 2 === 0 ? -4 : 6}px)`,
                 }}>
-                {name}
+                {logo.name}
               </span>
             ))}
           </div>

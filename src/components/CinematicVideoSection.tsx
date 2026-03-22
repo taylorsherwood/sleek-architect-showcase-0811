@@ -67,11 +67,11 @@ const CinematicVideoSection = () => {
       {/* ── Editorial text — left-aligned, constrained ── */}
       <div className="container mx-auto px-6 md:px-8 mb-12 md:mb-14">
         <div className="max-w-7xl mx-auto">
-          <div className="max-w-sm ml-0 md:ml-4">
+          <div className="max-w-md ml-0 md:ml-4">
             {/* Eyebrow */}
             <p
-              className="text-[10px] text-gold/75 mb-6 font-extrabold"
-              style={{ ...reveal(visible, 0), letterSpacing: "0.22em" }}
+              className="text-[9px] text-gold/60 mb-8 font-semibold"
+              style={{ ...reveal(visible, 0), letterSpacing: "0.3em" }}
             >
               PROPERTY FILM
             </p>
@@ -80,38 +80,39 @@ const CinematicVideoSection = () => {
             <div
               style={{
                 ...reveal(visible, 80),
-                width: 32,
+                width: 28,
                 height: 1,
-                background: "linear-gradient(90deg, hsl(var(--gold) / 0.35), transparent)",
-                marginBottom: 28,
+                background: "linear-gradient(90deg, hsl(var(--gold) / 0.3), transparent)",
+                marginBottom: 32,
               }}
             />
 
-            {/* Headline */}
+            {/* Headline line 1 — medium weight */}
             <h2
-              className="font-display font-light text-architectural leading-[1.05] mb-2"
-              style={{ ...reveal(visible, 180), fontSize: "clamp(1.65rem, 3vw, 2.25rem)", letterSpacing: "0.01em" }}
+              className="font-display font-medium text-architectural leading-[0.95]"
+              style={{ ...reveal(visible, 160), fontSize: "clamp(2rem, 3.5vw, 2.75rem)", letterSpacing: "-0.02em" }}
             >
               Luxury Marketing
             </h2>
-            <h2
-              className="font-display font-light italic text-foreground/70 leading-[1.05] mb-7"
-              style={{ ...reveal(visible, 260), fontSize: "clamp(1.65rem, 3vw, 2.25rem)" }}
+            {/* Headline line 2 — lighter + italic */}
+            <p
+              className="font-display font-extralight italic text-foreground/55 leading-[0.95] mt-1.5 mb-10"
+              style={{ ...reveal(visible, 240), fontSize: "clamp(2rem, 3.5vw, 2.75rem)", letterSpacing: "-0.01em" }}
             >
               That Moves Buyers
-            </h2>
+            </p>
 
             {/* Power line */}
             <p
-              className="text-xs font-medium text-foreground/80 mb-7"
-              style={{ ...reveal(visible, 340), letterSpacing: "0.08em" }}
+              className="text-sm font-medium text-foreground/85 mb-5"
+              style={{ ...reveal(visible, 340), letterSpacing: "0.12em" }}
             >
               Most agents list. We position.
             </p>
 
             {/* Subheadline */}
             <p
-              className="text-muted-foreground/85 text-[13px] leading-[1.95] max-w-xs"
+              className="text-muted-foreground/80 text-[13px] leading-[2] max-w-[18rem]"
               style={reveal(visible, 420)}
             >
               Cinematic presentation is part of how we position exceptional

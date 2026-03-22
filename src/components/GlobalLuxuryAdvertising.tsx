@@ -169,17 +169,8 @@ const GlobalLuxuryAdvertising = () => {
 
           {/* Dark overlay */}
           <div className="absolute inset-0 bg-[#0C0F24]/55" />
-          {/* eXp Luxury logo — luxury watermark beneath gradient */}
-          <img
-            src={expLuxuryLogo}
-            alt="eXp Luxury"
-            className="absolute bottom-7 right-7 md:bottom-9 md:right-9 h-8 md:h-11 w-auto"
-            style={{ opacity: 0.58, filter: "blur(0.3px) drop-shadow(0 0 18px rgba(255,255,255,0.10))" }}
-            loading="lazy"
-            decoding="async" />
-
-          {/* Bottom gradient — sits above the logo so it washes over it */}
-          <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[#0C0F24]/70 to-transparent pointer-events-none" />
+          {/* Bottom gradient for text contrast */}
+          <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[#0C0F24]/70 to-transparent" />
         </div>
 
         {/* Content */}

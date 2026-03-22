@@ -351,6 +351,13 @@ const Sell = () => {
         </div>
       </section>
 
+      {/* ── Gold divider ── */}
+      <div className="bg-[#0C0F24]">
+        <div className="container mx-auto px-6">
+          <div className="max-w-5xl mx-auto h-px bg-gradient-to-r from-transparent via-gold to-transparent" />
+        </div>
+      </div>
+
       {/* ── Stats ── */}
       <section className="bg-[#0C0F24] py-14">
         <div className="container mx-auto px-6">

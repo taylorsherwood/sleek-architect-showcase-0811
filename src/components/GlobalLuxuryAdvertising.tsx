@@ -135,7 +135,7 @@ const GlobalLuxuryAdvertising = () => {
       {/* ═══════════════════════════════════════════════════════════════ */}
       <section
         ref={(node: HTMLDivElement | null) => { heroRef.current = node; (hero.ref as React.MutableRefObject<HTMLDivElement | null>).current = node; }}
-        className="relative min-h-[60vh] md:min-h-[65vh] flex items-center overflow-hidden"
+        className="relative min-h-[50vh] md:min-h-[55vh] flex items-center overflow-hidden"
       >
         {/* BG image with slow zoom */}
         <div className="absolute inset-0">

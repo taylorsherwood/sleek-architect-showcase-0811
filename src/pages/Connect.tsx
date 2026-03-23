@@ -263,7 +263,7 @@ const Connect = () => {
                   className="flex items-center justify-center w-full h-[52px] rounded-full transition-all duration-200 hover:-translate-y-0.5"
                   style={{
                     background: (link as any).transparent ? "transparent" : "hsl(0 0% 100% / 0.55)",
-                    border: (link as any).transparent ? "1px solid hsl(233 50% 9% / 0.06)" : (link as any).gold ? "1.5px solid hsl(42 37% 57% / 0.6)" : "1px solid hsl(42 37% 57% / 0.2)",
+                    border: (link as any).transparent ? "1px solid hsl(233 50% 9% / 0.06)" : (link as any).gold ? "1.5px solid hsl(42 37% 57% / 0.6)" : "1.5px solid hsl(42 37% 57% / 0.5)",
                     boxShadow: (link as any).transparent ? "none" : "0 2px 8px hsl(0 0% 0% / 0.03)",
                   }}
                   onMouseEnter={(e) => {

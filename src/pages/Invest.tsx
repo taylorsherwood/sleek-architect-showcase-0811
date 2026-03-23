@@ -325,31 +325,24 @@ const Invest = () => {
         </div>
       </section>
 
-      {/* ──────────────────────── CREDIBILITY INTRO ──────────────────────── */}
+      {/* ──────────────────────── WHO WE WORK WITH ──────────────────────── */}
       <section className="py-24 md:py-32 bg-background">
         <div className="max-w-6xl mx-auto px-6">
           <ScrollReveal>
-            <p className="text-minimal text-muted-foreground mb-4">Strategic Approach</p>
-            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6 max-w-3xl">
-              Investment Representation Built Around Opportunity, Not Emotion
+            <p className="text-minimal text-muted-foreground mb-4">Client Focus</p>
+            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-16 max-w-2xl">
+              Who We Work With
             </h2>
-            <p className="text-muted-foreground max-w-3xl leading-relaxed mb-16">
-              This is not a generic home search experience. We help investors identify the right
-              opportunities, understand neighborhood-specific demand, assess improvement potential,
-              and make smarter acquisition decisions with resale or hold strategy in mind. Every
-              recommendation is grounded in data, local insight, and a clear understanding of
-              where value is created.
-            </p>
           </ScrollReveal>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {credibilityCards.map((card, i) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {whoWeWorkWith.map((card, i) => (
               <ScrollReveal key={card.title} delay={i * 100}>
-                <div className="border border-border bg-card p-8 h-full hover:border-gold/40 transition-colors duration-500">
-                  <CheckCircle className="w-5 h-5 text-gold mb-4" />
-                  <h3 className="text-lg font-display font-light text-foreground mb-2">
+                <div className="bg-card border border-border p-10 h-full hover:border-gold/40 transition-colors duration-500">
+                  <card.icon className="w-6 h-6 text-gold mb-5" />
+                  <h3 className="text-xl font-display font-light text-foreground mb-3">
                     {card.title}
                   </h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <p className="text-muted-foreground text-sm leading-relaxed">
                     {card.description}
                   </p>
                 </div>
@@ -397,24 +390,31 @@ const Invest = () => {
         </div>
       </section>
 
-      {/* ──────────────────────── WHO WE WORK WITH ──────────────────────── */}
+      {/* ──────────────────────── CREDIBILITY INTRO ──────────────────────── */}
       <section className="py-24 md:py-32 bg-background">
         <div className="max-w-6xl mx-auto px-6">
           <ScrollReveal>
-            <p className="text-minimal text-muted-foreground mb-4">Client Focus</p>
-            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-16 max-w-2xl">
-              Who We Work With
+            <p className="text-minimal text-muted-foreground mb-4">Strategic Approach</p>
+            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6 max-w-3xl">
+              Investment Representation Built Around Opportunity, Not Emotion
             </h2>
+            <p className="text-muted-foreground max-w-3xl leading-relaxed mb-16">
+              This is not a generic home search experience. We help investors identify the right
+              opportunities, understand neighborhood-specific demand, assess improvement potential,
+              and make smarter acquisition decisions with resale or hold strategy in mind. Every
+              recommendation is grounded in data, local insight, and a clear understanding of
+              where value is created.
+            </p>
           </ScrollReveal>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {whoWeWorkWith.map((card, i) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {credibilityCards.map((card, i) => (
               <ScrollReveal key={card.title} delay={i * 100}>
-                <div className="bg-card border border-border p-10 h-full hover:border-gold/40 transition-colors duration-500">
-                  <card.icon className="w-6 h-6 text-gold mb-5" />
-                  <h3 className="text-xl font-display font-light text-foreground mb-3">
+                <div className="border border-border bg-card p-8 h-full hover:border-gold/40 transition-colors duration-500">
+                  <CheckCircle className="w-5 h-5 text-gold mb-4" />
+                  <h3 className="text-lg font-display font-light text-foreground mb-2">
                     {card.title}
                   </h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
+                  <p className="text-sm text-muted-foreground leading-relaxed">
                     {card.description}
                   </p>
                 </div>

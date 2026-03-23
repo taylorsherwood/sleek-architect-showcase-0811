@@ -412,19 +412,14 @@ const Sell = () => {
 
       {/* ── Marketing Strategy (Editorial) ── */}
       <section className="relative py-24 md:py-36 bg-warm-cream overflow-hidden">
-        {/* Oversized geometric watermark */}
+        {/* Minimal geometric accent — atmosphere only */}
         <div
-          className="pointer-events-none absolute -right-24 top-1/2 -translate-y-1/2 w-[600px] h-[600px] lg:w-[800px] lg:h-[800px]"
+          className="pointer-events-none absolute -right-32 top-[40%] -translate-y-1/2 w-[500px] h-[500px] lg:w-[650px] lg:h-[650px]"
           aria-hidden="true"
         >
-          <svg viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full opacity-[0.08]">
-            <rect x="100" y="100" width="600" height="600" stroke="hsl(42 37% 57%)" strokeWidth="2" />
-            <rect x="200" y="200" width="400" height="400" stroke="hsl(42 37% 57%)" strokeWidth="1.5" />
-            <rect x="300" y="300" width="200" height="200" stroke="hsl(42 37% 57%)" strokeWidth="1" />
-            <line x1="100" y1="100" x2="700" y2="700" stroke="hsl(42 37% 57%)" strokeWidth="1" />
-            <line x1="700" y1="100" x2="100" y2="700" stroke="hsl(42 37% 57%)" strokeWidth="1" />
-            <circle cx="400" cy="400" r="280" stroke="hsl(42 37% 57%)" strokeWidth="1" />
-            <circle cx="400" cy="400" r="150" stroke="hsl(42 37% 57%)" strokeWidth="0.75" />
+          <svg viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full opacity-[0.04]">
+            <rect x="150" y="150" width="500" height="500" stroke="hsl(42 37% 57%)" strokeWidth="1" />
+            <circle cx="400" cy="400" r="220" stroke="hsl(42 37% 57%)" strokeWidth="0.75" />
           </svg>
         </div>
 
@@ -471,23 +466,18 @@ const Sell = () => {
               </ul>
             </div>
 
-            {/* Right column — Image */}
-            <div className="relative lg:mt-16">
+            {/* Right column — Image (editorial placement) */}
+            <div className="relative lg:mt-24">
               <ScrollReveal delay={200}>
-                <div className="relative lg:-mr-12 xl:-mr-20">
-                  {/* Soft shadow layer */}
-                  <div
-                    className="absolute inset-0 rounded-[6px]"
-                    style={{
-                      boxShadow: "0 30px 80px -20px hsl(220 20% 10% / 0.12), 0 8px 24px -8px hsl(220 20% 10% / 0.06)",
-                    }}
-                    aria-hidden="true"
-                  />
+                <div className="relative">
                   <img
                     src={taylorProfileSell}
                     alt="Taylor Sherwood — Austin luxury real estate advisor"
                     title="Taylor Sherwood — Echelon Property Group listing specialist"
-                    className="relative w-full max-h-[78vh] object-contain rounded-[6px]"
+                    className="relative w-full max-h-[82vh] object-contain"
+                    style={{
+                      filter: "drop-shadow(0 20px 50px hsl(220 20% 10% / 0.10)) drop-shadow(0 6px 16px hsl(220 20% 10% / 0.05))",
+                    }}
                     loading="lazy"
                     decoding="async"
                   />

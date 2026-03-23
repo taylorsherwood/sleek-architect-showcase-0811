@@ -8,6 +8,7 @@ import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
 import { formatPhoneNumber, buildWeb3Payload } from "@/lib/formUtils";
 import ScrollReveal from "@/components/ScrollReveal";
+import BeforeAfterSlider from "@/components/BeforeAfterSlider";
 import {
   Accordion,
   AccordionContent,

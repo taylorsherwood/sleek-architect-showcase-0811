@@ -115,8 +115,8 @@ const BeforeAfterSlider = ({
         style={{ left: `${position}%`, transform: "translateX(-50%)" }}
       >
         <div
-          className="w-px h-full"
-          style={{ backgroundColor: "hsl(42 37% 54% / 0.5)" }}
+          className="h-full"
+          style={{ width: "0.5px", backgroundColor: "hsl(42 37% 62% / 0.3)" }}
         />
       </div>
 
@@ -131,25 +131,25 @@ const BeforeAfterSlider = ({
         <div
           className="flex items-center justify-center rounded-full"
           style={{
-            width: 28,
-            height: 28,
-            backgroundColor: "rgba(255,255,255,0.88)",
-            border: "1px solid hsl(42 37% 54% / 0.6)",
-            boxShadow: "0 1px 6px rgba(0,0,0,0.1)",
+            width: 22,
+            height: 22,
+            backgroundColor: "rgba(255,255,255,0.82)",
+            border: "0.5px solid hsl(42 37% 62% / 0.4)",
+            boxShadow: "0 1px 4px rgba(0,0,0,0.06)",
           }}
         >
-          <svg width="10" height="10" viewBox="0 0 14 14" fill="none">
+          <svg width="8" height="8" viewBox="0 0 14 14" fill="none">
             <path
-              d="M4.5 2L1 7L4.5 12"
-              stroke="hsl(42 37% 54%)"
-              strokeWidth="1.2"
+              d="M4.5 3L2 7L4.5 11"
+              stroke="hsl(42 37% 58% / 0.7)"
+              strokeWidth="1"
               strokeLinecap="round"
               strokeLinejoin="round"
             />
             <path
-              d="M9.5 2L13 7L9.5 12"
-              stroke="hsl(42 37% 54%)"
-              strokeWidth="1.2"
+              d="M9.5 3L12 7L9.5 11"
+              stroke="hsl(42 37% 58% / 0.7)"
+              strokeWidth="1"
               strokeLinecap="round"
               strokeLinejoin="round"
             />
@@ -161,15 +161,15 @@ const BeforeAfterSlider = ({
       <span
         className="absolute font-sans pointer-events-none"
         style={{
-          bottom: 12,
-          left: 12,
-          background: "hsl(40 20% 92% / 0.85)",
-          color: "hsl(0 0% 30%)",
-          borderRadius: 2,
-          padding: "4px 9px",
-          fontSize: "0.6rem",
+          bottom: 10,
+          left: 10,
+          background: "hsl(40 18% 93% / 0.72)",
+          color: "hsl(0 0% 42%)",
+          borderRadius: 1,
+          padding: "3px 8px",
+          fontSize: "0.52rem",
           fontWeight: 400,
-          letterSpacing: "0.14em",
+          letterSpacing: "0.18em",
           textTransform: "uppercase" as const,
           lineHeight: 1,
         }}
@@ -179,15 +179,15 @@ const BeforeAfterSlider = ({
       <span
         className="absolute font-sans pointer-events-none"
         style={{
-          bottom: 12,
-          right: 12,
-          background: "hsl(40 20% 92% / 0.85)",
-          color: "hsl(0 0% 30%)",
-          borderRadius: 2,
-          padding: "4px 9px",
-          fontSize: "0.6rem",
+          bottom: 10,
+          right: 10,
+          background: "hsl(40 18% 93% / 0.72)",
+          color: "hsl(0 0% 42%)",
+          borderRadius: 1,
+          padding: "3px 8px",
+          fontSize: "0.52rem",
           fontWeight: 400,
-          letterSpacing: "0.14em",
+          letterSpacing: "0.18em",
           textTransform: "uppercase" as const,
           lineHeight: 1,
         }}

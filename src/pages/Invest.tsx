@@ -357,82 +357,74 @@ const Invest = () => {
       </section>
 
       {/* ──────────────────────── BEFORE / AFTER ──────────────────────── */}
-      <section className="pt-16 md:pt-20 pb-24 md:pb-32 bg-secondary/30">
+      <section className="pt-16 md:pt-20 pb-20 md:pb-28 bg-secondary/30">
         <div className="max-w-4xl mx-auto px-6">
           <ScrollReveal>
-            <p className="text-minimal text-gold mb-4 font-extrabold tracking-[0.25em]">TRANSFORMATION</p>
-            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-5 max-w-3xl">
+            <p className="text-minimal text-gold mb-4 tracking-[0.25em]">Portfolio</p>
+            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-4 max-w-3xl">
               Real Transformations. Measurable Upside.
             </h2>
-            <p className="text-muted-foreground max-w-3xl leading-relaxed mb-3">
+            <p className="text-muted-foreground max-w-3xl leading-relaxed mb-2">
               A look at the level of renovation and repositioning we execute across Austin — designed to drive demand, elevate perception, and maximize resale value.
             </p>
-            <p className="text-sm text-muted-foreground/70 italic mb-14 max-w-2xl">
+            <p className="text-[0.8rem] text-muted-foreground/60 italic mb-10 max-w-2xl">
               See how the right improvements translate directly into perceived value.
             </p>
           </ScrollReveal>
 
-          {/* Slider 1 */}
-          <ScrollReveal>
-            <BeforeAfterSlider
-              beforeImage={kitchenBefore}
-              afterImage={kitchenAfter}
-              beforeLabel="Before"
-              afterLabel="After"
-            />
-            <div className="mt-4">
-              <h3 className="text-lg font-display font-light text-foreground mb-1">Kitchen Renovation — South Austin</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">Full cosmetic overhaul with layout refinement and finish upgrades aligned with current buyer expectations.</p>
-            </div>
-          </ScrollReveal>
+          <div className="space-y-10 md:space-y-12">
+            {/* Slider 1 */}
+            <ScrollReveal>
+              <BeforeAfterSlider
+                beforeImage={kitchenBefore}
+                afterImage={kitchenAfter}
+              />
+              <div className="mt-5">
+                <h3 className="text-base font-display font-normal text-foreground tracking-wide">Kitchen Renovation — South Austin</h3>
+                <div className="w-8 h-px bg-gold/30 mt-2 mb-2" />
+                <p className="text-[0.82rem] text-muted-foreground/75 leading-relaxed">Full cosmetic overhaul with layout refinement and finish upgrades aligned with current buyer expectations.</p>
+              </div>
+            </ScrollReveal>
 
-          <div className="mt-10 md:mt-12" />
+            {/* Slider 2 */}
+            <ScrollReveal>
+              <BeforeAfterSlider
+                beforeImage={livingBefore}
+                afterImage={livingAfter}
+              />
+              <div className="mt-5">
+                <h3 className="text-base font-display font-normal text-foreground tracking-wide">Living Space Transformation — Central Austin</h3>
+                <div className="w-8 h-px bg-gold/30 mt-2 mb-2" />
+                <p className="text-[0.82rem] text-muted-foreground/75 leading-relaxed">Repositioned through lighting, layout clarity, and material updates to create a more open and marketable environment.</p>
+              </div>
+            </ScrollReveal>
 
-          {/* Slider 2 */}
-          <ScrollReveal>
-            <BeforeAfterSlider
-              beforeImage={livingBefore}
-              afterImage={livingAfter}
-              beforeLabel="Before"
-              afterLabel="After"
-            />
-            <div className="mt-4">
-              <h3 className="text-lg font-display font-light text-foreground mb-1">Living Space Transformation — Central Austin</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">Repositioned through lighting, layout clarity, and material updates to create a more open and marketable environment.</p>
-            </div>
-          </ScrollReveal>
+            {/* Slider 3 */}
+            <ScrollReveal>
+              <BeforeAfterSlider
+                beforeImage={kitchen03Before}
+                afterImage={kitchen03After}
+              />
+              <div className="mt-5">
+                <h3 className="text-base font-display font-normal text-foreground tracking-wide">Kitchen Upgrade — West Lake</h3>
+                <div className="w-8 h-px bg-gold/30 mt-2 mb-2" />
+                <p className="text-[0.82rem] text-muted-foreground/75 leading-relaxed">Refined surfaces, modernized finishes, and improved flow to elevate overall presentation and perceived value.</p>
+              </div>
+            </ScrollReveal>
 
-          <div className="mt-10 md:mt-12" />
-
-          {/* Slider 3 */}
-          <ScrollReveal>
-            <BeforeAfterSlider
-              beforeImage={kitchen03Before}
-              afterImage={kitchen03After}
-              beforeLabel="Before"
-              afterLabel="After"
-            />
-            <div className="mt-4">
-              <h3 className="text-lg font-display font-light text-foreground mb-1">Kitchen Upgrade — West Lake</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">Refined surfaces, modernized finishes, and improved flow to elevate overall presentation and perceived value.</p>
-            </div>
-          </ScrollReveal>
-
-          <div className="mt-10 md:mt-12" />
-
-          {/* Slider 4 */}
-          <ScrollReveal>
-            <BeforeAfterSlider
-              beforeImage={bath04Before}
-              afterImage={bath04After}
-              beforeLabel="Before"
-              afterLabel="After"
-            />
-            <div className="mt-4">
-              <h3 className="text-lg font-display font-light text-foreground mb-1">Bathroom Transformation — South Austin</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">Clean-lined materials, upgraded fixtures, and improved lighting to align with today's buyer standards.</p>
-            </div>
-          </ScrollReveal>
+            {/* Slider 4 */}
+            <ScrollReveal>
+              <BeforeAfterSlider
+                beforeImage={bath04Before}
+                afterImage={bath04After}
+              />
+              <div className="mt-5">
+                <h3 className="text-base font-display font-normal text-foreground tracking-wide">Bathroom Transformation — South Austin</h3>
+                <div className="w-8 h-px bg-gold/30 mt-2 mb-2" />
+                <p className="text-[0.82rem] text-muted-foreground/75 leading-relaxed">Clean-lined materials, upgraded fixtures, and improved lighting to align with today's buyer standards.</p>
+              </div>
+            </ScrollReveal>
+          </div>
         </div>
       </section>
 

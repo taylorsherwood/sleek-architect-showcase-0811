@@ -13,6 +13,8 @@ import kitchenBefore from "@/assets/kitchen-before.jpg";
 import kitchenAfter from "@/assets/kitchen-after.jpeg";
 import livingBefore from "@/assets/living-before.jpg";
 import livingAfter from "@/assets/living-after.jpeg";
+import kitchen03Before from "@/assets/kitchen-03-before.jpeg";
+import kitchen03After from "@/assets/kitchen-03-after.jpg";
 import {
   Accordion,
   AccordionContent,
@@ -383,6 +385,15 @@ const Invest = () => {
             <BeforeAfterSlider
               beforeImage={livingBefore}
               afterImage={livingAfter}
+              beforeLabel="Before"
+              afterLabel="After"
+            />
+          </ScrollReveal>
+          <div className="mt-12 md:mt-16" />
+          <ScrollReveal>
+            <BeforeAfterSlider
+              beforeImage={kitchen03Before}
+              afterImage={kitchen03After}
               beforeLabel="Before"
               afterLabel="After"
             />

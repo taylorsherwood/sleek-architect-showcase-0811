@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -179,6 +179,15 @@ const investorSchema = z.object({
 
 const Invest = () => {
   const { toast } = useToast();
+
+  useEffect(() => {
+    if (!document.querySelector('script[src*="commonninja"]')) {
+      const s = document.createElement("script");
+      s.src = "https://cdn.commoninja.com/sdk/latest/commonninja.js";
+      s.defer = true;
+      document.body.appendChild(s);
+    }
+  }, []);
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -425,12 +434,8 @@ const Invest = () => {
             </p>
           </ScrollReveal>
           <ScrollReveal>
-            <div className="bg-card border border-border rounded-sm p-8 md:p-12 text-center">
-              <p className="text-muted-foreground text-sm">
-                Before &amp; After transformation gallery coming soon. This space is reserved for a
-                curated showcase of investor-grade renovations — demonstrating how targeted
-                improvements translate to measurable value.
-              </p>
+            <div className="rounded-sm overflow-hidden">
+              <div className="commonninja_component pid-cefdaedb-713d-4cc6-a1dc-17aa26b077dd"></div>
             </div>
           </ScrollReveal>
         </div>

@@ -15,6 +15,8 @@ import livingBefore from "@/assets/living-before.jpg";
 import livingAfter from "@/assets/living-after.jpeg";
 import kitchen03Before from "@/assets/kitchen-03-before.jpeg";
 import kitchen03After from "@/assets/kitchen-03-after.jpg";
+import bath04Before from "@/assets/bath-04-before.jpg";
+import bath04After from "@/assets/bath-04-after.jpeg";
 import {
   Accordion,
   AccordionContent,

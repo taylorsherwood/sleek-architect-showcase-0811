@@ -76,7 +76,7 @@ const CinematicVideoSection = () => {
                 className="text-minimal text-gold mb-4 font-extrabold whitespace-pre-line"
                 style={reveal(visible, 0)}
               >
-                PROPERTY FILM{"\n\n\n\n"}
+                IMAGE IN MOTION{"\n\n"}
               </p>
 
 

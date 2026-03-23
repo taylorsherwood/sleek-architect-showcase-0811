@@ -25,6 +25,7 @@ import {
 
 import heroImg from "@/assets/sell-hero-luxury-home.jpg";
 import taylorProfileSell from "@/assets/echelon-for-sale-sign.png";
+import echelonWatermark from "@/assets/echelon-watermark.png";
 
 /* ------------------------------------------------------------------ */
 /*  DATA                                                               */

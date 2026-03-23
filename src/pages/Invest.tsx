@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -8,6 +8,7 @@ import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
 import { formatPhoneNumber, buildWeb3Payload } from "@/lib/formUtils";
 import ScrollReveal from "@/components/ScrollReveal";
+import BeforeAfterSlider from "@/components/BeforeAfterSlider";
 import {
   Accordion,
   AccordionContent,
@@ -180,14 +181,7 @@ const investorSchema = z.object({
 const Invest = () => {
   const { toast } = useToast();
 
-  useEffect(() => {
-    if (!document.querySelector('script[src*="commonninja"]')) {
-      const s = document.createElement("script");
-      s.src = "https://cdn.commoninja.com/sdk/latest/commonninja.js";
-      s.defer = true;
-      document.body.appendChild(s);
-    }
-  }, []);
+
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -434,9 +428,15 @@ const Invest = () => {
             </p>
           </ScrollReveal>
           <ScrollReveal>
-            <div className="rounded-sm overflow-hidden">
-              <div className="commonninja_component pid-cefdaedb-713d-4cc6-a1dc-17aa26b077dd"></div>
-            </div>
+            <BeforeAfterSlider
+              beforeImage="https://res.cloudinary.com/demo/image/upload/v1/samples/house.jpg"
+              afterImage="https://res.cloudinary.com/demo/image/upload/v1/samples/house.jpg"
+              beforeLabel="Before"
+              afterLabel="After"
+            />
+            <p className="text-center text-xs text-muted-foreground/60 mt-4 italic">
+              Replace with your actual before &amp; after images
+            </p>
           </ScrollReveal>
         </div>
       </section>

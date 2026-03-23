@@ -444,6 +444,7 @@ const Invest = () => {
               afterImage={livingAfter}
               beforeLabel="Before"
               afterLabel="After"
+            />
           </ScrollReveal>
         </div>
       </section>

@@ -119,7 +119,7 @@ const CinematicVideoSection = () => {
                   className="group inline-flex items-center gap-2 text-[11px] font-medium text-muted-foreground/70 hover:text-gold transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] hover:translate-x-[3vw]"
                   style={{ letterSpacing: "0.18em" }}
                 >
-                  SEE HOW YOUR HOME WOULD BE POSITIONED
+                  SEE HOW YOUR PROPERTY WOULD BE POSITIONED
                   <ArrowRight className="w-3.5 h-3.5 flex-shrink-0 transition-transform duration-500 group-hover:translate-x-1" />
                 </Link>
               </div>
@@ -169,7 +169,7 @@ const CinematicVideoSection = () => {
               className="group flex items-center gap-2 text-[11px] font-medium text-muted-foreground/70 hover:text-gold transition-all duration-500 ease-out"
               style={{ letterSpacing: "0.18em" }}
             >
-              <span className="whitespace-nowrap">SEE HOW YOUR HOME WOULD BE POSITIONED</span>
+              <span className="whitespace-nowrap">SEE HOW YOUR PROPERTY WOULD BE POSITIONED</span>
               <span className="block h-px bg-current transition-all duration-500 ease-out w-0 group-hover:flex-1" />
               <ArrowRight className="w-3.5 h-3.5 flex-shrink-0 transition-transform duration-500 group-hover:translate-x-1" />
             </Link>

@@ -215,17 +215,17 @@ const Connect = () => {
                     className="flex items-center gap-3.5 w-full h-[52px] px-6 rounded-full transition-all duration-200 hover:-translate-y-0.5"
                     style={{
                       background: "hsl(0 0% 100% / 0.55)",
-                      border: "1px solid hsl(42 37% 57% / 0.2)",
+                      border: "1.5px solid hsl(42 37% 57% / 0.5)",
                       boxShadow: "0 2px 8px hsl(0 0% 0% / 0.03)",
                     }}
                     onMouseEnter={(e) => {
                       const el = e.currentTarget;
-                      el.style.borderColor = "hsl(42 37% 57% / 0.45)";
+                      el.style.borderColor = "hsl(42 37% 57% / 0.75)";
                       el.style.boxShadow = "0 4px 16px hsl(0 0% 0% / 0.05)";
                     }}
                     onMouseLeave={(e) => {
                       const el = e.currentTarget;
-                      el.style.borderColor = "hsl(42 37% 57% / 0.2)";
+                      el.style.borderColor = "hsl(42 37% 57% / 0.5)";
                       el.style.boxShadow = "0 2px 8px hsl(0 0% 0% / 0.03)";
                     }}
                   >
@@ -263,17 +263,17 @@ const Connect = () => {
                   className="flex items-center justify-center w-full h-[52px] rounded-full transition-all duration-200 hover:-translate-y-0.5"
                   style={{
                     background: (link as any).transparent ? "transparent" : "hsl(0 0% 100% / 0.55)",
-                    border: (link as any).transparent ? "1px solid hsl(233 50% 9% / 0.06)" : (link as any).gold ? "1.5px solid hsl(42 37% 57% / 0.6)" : "1px solid hsl(42 37% 57% / 0.2)",
+                    border: (link as any).transparent ? "1px solid hsl(233 50% 9% / 0.06)" : (link as any).gold ? "1.5px solid hsl(42 37% 57% / 0.6)" : "1.5px solid hsl(42 37% 57% / 0.5)",
                     boxShadow: (link as any).transparent ? "none" : "0 2px 8px hsl(0 0% 0% / 0.03)",
                   }}
                   onMouseEnter={(e) => {
                     const el = e.currentTarget;
-                    el.style.borderColor = "hsl(42 37% 57% / 0.45)";
+                    el.style.borderColor = "hsl(42 37% 57% / 0.75)";
                     el.style.boxShadow = "0 4px 16px hsl(0 0% 0% / 0.05)";
                   }}
                   onMouseLeave={(e) => {
                     const el = e.currentTarget;
-                    el.style.borderColor = "hsl(42 37% 57% / 0.2)";
+                    el.style.borderColor = "hsl(42 37% 57% / 0.5)";
                     el.style.boxShadow = "0 2px 8px hsl(0 0% 0% / 0.03)";
                   }}
                 >

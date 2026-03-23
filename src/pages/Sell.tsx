@@ -412,7 +412,7 @@ const Sell = () => {
       </div>
 
       {/* ── Marketing Strategy (Editorial) ── */}
-      <section className="relative py-20 md:py-28 pb-8 md:pb-12 bg-warm-cream overflow-visible">
+      <section className="relative py-20 md:py-28 pb-14 md:pb-18 bg-warm-cream overflow-visible">
         {/* Single watermark — bottom-right ambient depth */}
         <div
           className="pointer-events-none absolute right-[-5%] bottom-[-18%] w-[60vw] max-w-[800px] aspect-square opacity-[0.03]"

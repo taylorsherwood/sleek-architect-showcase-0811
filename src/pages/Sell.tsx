@@ -422,9 +422,9 @@ const Sell = () => {
         </div>
 
         <div className="container mx-auto px-6">
-          <div className="max-w-7xl mx-auto grid lg:grid-cols-[5fr_4fr] gap-16 lg:gap-24 items-start">
+          <div className="max-w-7xl mx-auto grid lg:grid-cols-[4fr_5fr] gap-12 lg:gap-16 items-start">
             {/* Left column — Copy */}
-            <div className="max-w-[660px]">
+            <div className="max-w-[620px]">
               <ScrollReveal>
                 <p
                   className="text-gold mb-6 font-extrabold"
@@ -464,22 +464,20 @@ const Sell = () => {
               </ul>
             </div>
 
-            {/* Right column — Image (editorial placement) */}
-            <div className="relative lg:mt-24">
+            {/* Right column — Image (editorial, dominant) */}
+            <div className="relative lg:mt-12 lg:-mr-6 xl:-mr-12">
               <ScrollReveal delay={200}>
-                <div className="relative">
-                  <img
-                    src={taylorProfileSell}
-                    alt="Taylor Sherwood — Austin luxury real estate advisor"
-                    title="Taylor Sherwood — Echelon Property Group listing specialist"
-                    className="relative w-full max-h-[82vh] object-contain"
-                    style={{
-                      filter: "drop-shadow(0 20px 50px hsl(220 20% 10% / 0.10)) drop-shadow(0 6px 16px hsl(220 20% 10% / 0.05))",
-                    }}
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </div>
+                <img
+                  src={taylorProfileSell}
+                  alt="Taylor Sherwood — Austin luxury real estate advisor"
+                  title="Taylor Sherwood — Echelon Property Group listing specialist"
+                  className="w-full object-contain"
+                  style={{
+                    filter: "drop-shadow(0 24px 60px hsl(220 20% 10% / 0.12)) drop-shadow(0 8px 20px hsl(220 20% 10% / 0.06))",
+                  }}
+                  loading="lazy"
+                  decoding="async"
+                />
               </ScrollReveal>
             </div>
           </div>

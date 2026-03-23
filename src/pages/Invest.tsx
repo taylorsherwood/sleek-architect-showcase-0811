@@ -438,6 +438,12 @@ const Invest = () => {
               beforeLabel="Before"
               afterLabel="After"
             />
+            <div className="mt-8" />
+            <BeforeAfterSlider
+              beforeImage={livingBefore}
+              afterImage={livingAfter}
+              beforeLabel="Before"
+              afterLabel="After"
           </ScrollReveal>
         </div>
       </section>

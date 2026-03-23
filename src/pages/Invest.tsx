@@ -360,20 +360,19 @@ const Invest = () => {
       <section className="pt-16 md:pt-20 pb-24 md:pb-32 bg-secondary/30">
         <div className="max-w-4xl mx-auto px-6">
           <ScrollReveal>
-            <p className="text-minimal text-muted-foreground mb-4">Transformation</p>
-            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6 max-w-3xl">
-              See the Power of Strategic Improvement
+            <p className="text-minimal text-gold mb-4 font-extrabold tracking-[0.25em]">TRANSFORMATION</p>
+            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-5 max-w-3xl">
+              Real Transformations. Measurable Upside.
             </h2>
-            <p className="text-muted-foreground max-w-3xl leading-relaxed mb-4">
-              The right updates can dramatically change buyer perception, marketability, and resale
-              positioning. This section visually reinforces the kind of upside investors look for
-              when evaluating a property.
+            <p className="text-muted-foreground max-w-3xl leading-relaxed mb-3">
+              A look at the level of renovation and repositioning we execute across Austin — designed to drive demand, elevate perception, and maximize resale value.
             </p>
-            <p className="text-sm text-muted-foreground/80 italic mb-12 max-w-2xl">
-              From dated interiors to market-ready presentation, strategic updates can unlock a
-              completely different buyer response.
+            <p className="text-sm text-muted-foreground/70 italic mb-14 max-w-2xl">
+              See how the right improvements translate directly into perceived value.
             </p>
           </ScrollReveal>
+
+          {/* Slider 1 */}
           <ScrollReveal>
             <BeforeAfterSlider
               beforeImage={kitchenBefore}
@@ -381,8 +380,15 @@ const Invest = () => {
               beforeLabel="Before"
               afterLabel="After"
             />
+            <div className="mt-4">
+              <h3 className="text-lg font-display font-light text-foreground mb-1">Kitchen Renovation — South Austin</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">Full cosmetic overhaul with layout refinement and finish upgrades aligned with current buyer expectations.</p>
+            </div>
           </ScrollReveal>
-          <div className="mt-12 md:mt-16" />
+
+          <div className="mt-10 md:mt-12" />
+
+          {/* Slider 2 */}
           <ScrollReveal>
             <BeforeAfterSlider
               beforeImage={livingBefore}
@@ -390,8 +396,15 @@ const Invest = () => {
               beforeLabel="Before"
               afterLabel="After"
             />
+            <div className="mt-4">
+              <h3 className="text-lg font-display font-light text-foreground mb-1">Living Space Transformation — Central Austin</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">Repositioned through lighting, layout clarity, and material updates to create a more open and marketable environment.</p>
+            </div>
           </ScrollReveal>
-          <div className="mt-12 md:mt-16" />
+
+          <div className="mt-10 md:mt-12" />
+
+          {/* Slider 3 */}
           <ScrollReveal>
             <BeforeAfterSlider
               beforeImage={kitchen03Before}
@@ -399,8 +412,15 @@ const Invest = () => {
               beforeLabel="Before"
               afterLabel="After"
             />
+            <div className="mt-4">
+              <h3 className="text-lg font-display font-light text-foreground mb-1">Kitchen Upgrade — West Lake</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">Refined surfaces, modernized finishes, and improved flow to elevate overall presentation and perceived value.</p>
+            </div>
           </ScrollReveal>
-          <div className="mt-12 md:mt-16" />
+
+          <div className="mt-10 md:mt-12" />
+
+          {/* Slider 4 */}
           <ScrollReveal>
             <BeforeAfterSlider
               beforeImage={bath04Before}
@@ -408,6 +428,10 @@ const Invest = () => {
               beforeLabel="Before"
               afterLabel="After"
             />
+            <div className="mt-4">
+              <h3 className="text-lg font-display font-light text-foreground mb-1">Bathroom Transformation — South Austin</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">Clean-lined materials, upgraded fixtures, and improved lighting to align with today's buyer standards.</p>
+            </div>
           </ScrollReveal>
         </div>
       </section>

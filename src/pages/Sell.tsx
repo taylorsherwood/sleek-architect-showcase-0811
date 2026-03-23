@@ -402,35 +402,94 @@ const Sell = () => {
       {/* ── Cinematic Video ── */}
       <CinematicVideoSection />
 
-      {/* ── Marketing Strategy ── */}
-      <section className="pt-16 pb-14 bg-secondary/50">
+      {/* ── Thin gold divider above Marketing Strategy ── */}
+      <div className="bg-warm-cream">
         <div className="container mx-auto px-6">
-          <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <p className="text-minimal text-gold mb-4 font-extrabold">MARKETING STRATEGY</p>
-              <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-6">Your Property Deserves 
-More Than Just a Sign
-              </h2>
-              <p className="text-muted-foreground leading-relaxed mb-8">
-                Every Echelon listing receives a bespoke marketing campaign engineered to attract qualified, motivated buyers — locally and globally. Here's what's included when you sell your home in Austin with us.
-              </p>
-              <ul className="space-y-3">
-                {marketingFeatures.map((item) => <li key={item} className="flex items-start gap-3">
-                    <Sparkles className="w-4 h-4 text-gold mt-1 shrink-0" />
-                    <span className="text-foreground text-sm">{item}</span>
-                  </li>
-                )}
+          <div className="max-w-5xl mx-auto h-px bg-gradient-to-r from-transparent via-gold/40 to-transparent" />
+        </div>
+      </div>
+
+      {/* ── Marketing Strategy (Editorial) ── */}
+      <section className="relative py-24 md:py-36 bg-warm-cream overflow-hidden">
+        {/* Oversized geometric watermark */}
+        <div
+          className="pointer-events-none absolute -right-24 top-1/2 -translate-y-1/2 w-[600px] h-[600px] lg:w-[800px] lg:h-[800px]"
+          aria-hidden="true"
+        >
+          <svg viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full opacity-[0.035]">
+            <rect x="100" y="100" width="600" height="600" stroke="hsl(42 37% 57%)" strokeWidth="1.5" />
+            <rect x="200" y="200" width="400" height="400" stroke="hsl(42 37% 57%)" strokeWidth="1" />
+            <line x1="100" y1="100" x2="700" y2="700" stroke="hsl(42 37% 57%)" strokeWidth="0.75" />
+            <line x1="700" y1="100" x2="100" y2="700" stroke="hsl(42 37% 57%)" strokeWidth="0.75" />
+            <circle cx="400" cy="400" r="250" stroke="hsl(42 37% 57%)" strokeWidth="0.75" />
+          </svg>
+        </div>
+
+        <div className="container mx-auto px-6">
+          <div className="max-w-7xl mx-auto grid lg:grid-cols-[5fr_4fr] gap-16 lg:gap-24 items-start">
+            {/* Left column — Copy */}
+            <div className="max-w-[660px]">
+              <ScrollReveal>
+                <p
+                  className="text-gold mb-6 font-extrabold"
+                  style={{ fontSize: "0.6rem", letterSpacing: "0.35em", textTransform: "uppercase", fontFamily: '"Raleway", sans-serif' }}
+                >
+                  MARKETING STRATEGY
+                </p>
+              </ScrollReveal>
+
+              <ScrollReveal delay={80}>
+                <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-light text-architectural mb-8 leading-[1.08]">
+                  Your Property Deserves<br className="hidden md:block" /> More Than Just a Sign
+                </h2>
+              </ScrollReveal>
+
+              <ScrollReveal delay={160}>
+                <p className="text-muted-foreground/80 leading-relaxed mb-14 max-w-[580px] text-[15px]">
+                  Every Echelon listing receives a bespoke marketing campaign engineered to attract qualified, motivated buyers — locally and globally. Here's what's included when you sell your home in Austin with us.
+                </p>
+              </ScrollReveal>
+
+              {/* Refined feature list */}
+              <ul className="space-y-5">
+                {marketingFeatures.map((item, i) => (
+                  <ScrollReveal key={item} delay={220 + i * 70}>
+                    <li className="flex items-start gap-4 group">
+                      <span
+                        className="mt-[7px] w-2 h-2 rounded-full bg-gold/60 group-hover:bg-gold shrink-0 transition-colors duration-300"
+                        aria-hidden="true"
+                      />
+                      <span className="text-foreground/85 text-[14.5px] leading-relaxed tracking-wide">
+                        {item}
+                      </span>
+                    </li>
+                  </ScrollReveal>
+                ))}
               </ul>
             </div>
-            <div className="relative flex items-center justify-center">
-              <img
-                src={taylorProfileSell}
-                alt="Taylor Sherwood — Austin luxury real estate advisor"
-                title="Taylor Sherwood — Echelon Property Group listing specialist"
-                className="w-auto max-w-full max-h-[70vh] object-contain mx-auto"
-                loading="lazy"
-                decoding="async" />
-              
+
+            {/* Right column — Image */}
+            <div className="relative lg:mt-16">
+              <ScrollReveal delay={200}>
+                <div className="relative lg:-mr-12 xl:-mr-20">
+                  {/* Soft shadow layer */}
+                  <div
+                    className="absolute inset-0 rounded-[6px]"
+                    style={{
+                      boxShadow: "0 30px 80px -20px hsl(220 20% 10% / 0.12), 0 8px 24px -8px hsl(220 20% 10% / 0.06)",
+                    }}
+                    aria-hidden="true"
+                  />
+                  <img
+                    src={taylorProfileSell}
+                    alt="Taylor Sherwood — Austin luxury real estate advisor"
+                    title="Taylor Sherwood — Echelon Property Group listing specialist"
+                    className="relative w-full max-h-[78vh] object-contain rounded-[6px]"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+              </ScrollReveal>
             </div>
           </div>
         </div>

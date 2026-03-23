@@ -400,6 +400,15 @@ const Invest = () => {
               afterLabel="After"
             />
           </ScrollReveal>
+          <div className="mt-12 md:mt-16" />
+          <ScrollReveal>
+            <BeforeAfterSlider
+              beforeImage={bath04Before}
+              afterImage={bath04After}
+              beforeLabel="Before"
+              afterLabel="After"
+            />
+          </ScrollReveal>
         </div>
       </section>
 

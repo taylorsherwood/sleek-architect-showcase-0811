@@ -11,6 +11,8 @@ import ScrollReveal from "@/components/ScrollReveal";
 import BeforeAfterSlider from "@/components/BeforeAfterSlider";
 import kitchenBefore from "@/assets/kitchen-before.jpg";
 import kitchenAfter from "@/assets/kitchen-after.jpeg";
+import livingBefore from "@/assets/living-before.jpg";
+import livingAfter from "@/assets/living-after.jpeg";
 import {
   Accordion,
   AccordionContent,

@@ -326,7 +326,7 @@ const Invest = () => {
       </section>
 
       {/* ──────────────────────── WHO WE WORK WITH ──────────────────────── */}
-      <section className="py-24 md:py-32 bg-background">
+      <section className="pt-16 md:pt-20 pb-24 md:pb-32 bg-background">
         <div className="max-w-6xl mx-auto px-6">
           <ScrollReveal>
             <p className="text-minimal text-muted-foreground mb-4">Client Focus</p>
@@ -353,7 +353,7 @@ const Invest = () => {
       </section>
 
       {/* ──────────────────────── BEFORE / AFTER ──────────────────────── */}
-      <section className="py-24 md:py-32 bg-secondary/30">
+      <section className="pt-16 md:pt-20 pb-24 md:pb-32 bg-secondary/30">
         <div className="max-w-4xl mx-auto px-6">
           <ScrollReveal>
             <p className="text-minimal text-muted-foreground mb-4">Transformation</p>
@@ -391,7 +391,7 @@ const Invest = () => {
       </section>
 
       {/* ──────────────────────── CREDIBILITY INTRO ──────────────────────── */}
-      <section className="py-24 md:py-32 bg-background">
+      <section className="pt-16 md:pt-20 pb-24 md:pb-32 bg-background">
         <div className="max-w-6xl mx-auto px-6">
           <ScrollReveal>
             <p className="text-minimal text-muted-foreground mb-4">Strategic Approach</p>

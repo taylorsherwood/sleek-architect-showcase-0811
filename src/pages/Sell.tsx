@@ -413,15 +413,12 @@ const Sell = () => {
 
       {/* ── Marketing Strategy (Editorial) ── */}
       <section className="relative py-24 md:py-36 bg-warm-cream overflow-hidden">
-        {/* Minimal geometric accent — atmosphere only */}
+        {/* Brand watermark */}
         <div
-          className="pointer-events-none absolute -right-32 top-[40%] -translate-y-1/2 w-[500px] h-[500px] lg:w-[650px] lg:h-[650px]"
+          className="pointer-events-none absolute -right-16 top-[42%] -translate-y-1/2 w-[400px] h-[400px] lg:w-[550px] lg:h-[550px] opacity-[0.045]"
           aria-hidden="true"
         >
-          <svg viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full opacity-[0.04]">
-            <rect x="150" y="150" width="500" height="500" stroke="hsl(42 37% 57%)" strokeWidth="1" />
-            <circle cx="400" cy="400" r="220" stroke="hsl(42 37% 57%)" strokeWidth="0.75" />
-          </svg>
+          <img src={echelonWatermark} alt="" className="w-full h-full object-contain" />
         </div>
 
         <div className="container mx-auto px-6">

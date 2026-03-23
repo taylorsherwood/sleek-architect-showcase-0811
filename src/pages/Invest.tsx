@@ -1,0 +1,710 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
+import SchemaMarkup, { realEstateAgentSchema, createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
+import { useToast } from "@/hooks/use-toast";
+import { z } from "zod";
+import { formatPhoneNumber, buildWeb3Payload } from "@/lib/formUtils";
+import ScrollReveal from "@/components/ScrollReveal";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import {
+  ArrowRight,
+  Search,
+  MapPin,
+  Ruler,
+  PaintBucket,
+  Building2,
+  Target,
+  Hammer,
+  TrendingUp,
+  Users,
+  Globe,
+  CheckCircle,
+} from "lucide-react";
+
+import heroImg from "@/assets/invest-hero.jpg";
+
+/* ------------------------------------------------------------------ */
+/*  DATA                                                               */
+/* ------------------------------------------------------------------ */
+
+const whoWeWorkWith = [
+  {
+    icon: Hammer,
+    title: "Fix-and-Flip Investors",
+    description:
+      "Find homes with genuine margin potential — undervalued properties in appreciating corridors where the right scope of work translates directly into strong resale positioning.",
+  },
+  {
+    icon: Building2,
+    title: "Builders & Redevelopment Buyers",
+    description:
+      "Identify teardown candidates, underutilized lots, and highest-and-best-use opportunities where land value and zoning support new construction or significant expansion.",
+  },
+  {
+    icon: TrendingUp,
+    title: "Buy-and-Hold Investors",
+    description:
+      "Build a location-driven portfolio anchored in tenant demand, long-term appreciation, and neighborhoods with structural tailwinds — not speculative hope.",
+  },
+  {
+    icon: Globe,
+    title: "Out-of-State Investors",
+    description:
+      "Gain a trusted local advisor for sourcing, evaluation, and execution — someone who walks properties, understands block-by-block dynamics, and protects your capital from a distance.",
+  },
+];
+
+const howWeHelp = [
+  {
+    icon: Search,
+    title: "Identify Opportunities",
+    description: "Surface off-market and on-market properties aligned with your investment thesis and return expectations.",
+  },
+  {
+    icon: MapPin,
+    title: "Evaluate Resale Potential",
+    description: "Analyze neighborhood comps, buyer demand, and absorption rates to underwrite realistic exit values.",
+  },
+  {
+    icon: PaintBucket,
+    title: "Spot Cosmetic vs. Structural Upside",
+    description: "Distinguish between properties that need paint and those that need foundation work — before you commit capital.",
+  },
+  {
+    icon: Ruler,
+    title: "Analyze Renovation Positioning",
+    description: "Assess which improvements move the needle on value and which lead to over-improvement in a given submarket.",
+  },
+  {
+    icon: Building2,
+    title: "Assess Redevelopment Potential",
+    description: "Evaluate lot dimensions, zoning, setbacks, and entitlement pathways for teardown-rebuild or expansion projects.",
+  },
+  {
+    icon: Target,
+    title: "Build Around End Value",
+    description: "Structure every acquisition decision around a clear exit — whether that's resale in 90 days or a 10-year hold.",
+  },
+];
+
+const processSteps = [
+  {
+    number: "01",
+    title: "Define Criteria",
+    description: "Investment type, target neighborhoods, price point, and strategy.",
+  },
+  {
+    number: "02",
+    title: "Source Opportunities",
+    description: "Find properties that align with value-add or redevelopment goals.",
+  },
+  {
+    number: "03",
+    title: "Evaluate Upside",
+    description: "Assess location, condition, finish strategy, and resale potential.",
+  },
+  {
+    number: "04",
+    title: "Execute with Clarity",
+    description: "Move forward with a smarter acquisition and a clearer exit path.",
+  },
+];
+
+const faqItems = [
+  {
+    question: "What Austin neighborhoods are best for flipping?",
+    answer:
+      "It depends on your budget, risk tolerance, and target buyer profile. Areas like East Austin, South Austin, and pockets of North Central Austin often present strong flip opportunities — but success is highly block-by-block. We help investors identify corridors where renovation dollars return the most value based on current demand and comparable resale data.",
+  },
+  {
+    question: "Do you help investors find off-market properties?",
+    answer:
+      "Yes. A significant portion of our investor work involves off-market sourcing — properties that aren't publicly listed but may be available through our brokerage network, pre-market relationships, and direct outreach. This gives our clients access to opportunities before they hit the open market.",
+  },
+  {
+    question: "Can you help evaluate renovation potential before I buy?",
+    answer:
+      "Absolutely. We assess properties through an investor lens — evaluating cosmetic vs. structural needs, estimating improvement costs relative to comparable resale values, and identifying which updates move the needle. We also connect clients with trusted contractors for more detailed scope-of-work estimates.",
+  },
+  {
+    question: "Do you work with builders and redevelopment buyers?",
+    answer:
+      "Yes. We regularly work with builders seeking teardown candidates, infill lots, and properties where highest-and-best-use analysis supports new construction. We evaluate lot value, zoning compatibility, setback requirements, and neighborhood price ceilings to help builders make informed acquisition decisions.",
+  },
+  {
+    question: "Can out-of-state investors work with you?",
+    answer:
+      "Definitely. We serve as local boots-on-the-ground for out-of-state investors — walking properties, evaluating neighborhoods, coordinating inspections, and managing the acquisition process remotely. Our goal is to give distant investors the same level of confidence and insight they'd have if they were here in person.",
+  },
+  {
+    question: "Do you help with both acquisition and resale positioning?",
+    answer:
+      "Yes. We approach every investment with the exit in mind. Whether you're buying to flip, hold, or redevelop, we help position the acquisition around a realistic end value — and when it's time to sell, our full marketing and listing platform is designed to maximize your return.",
+  },
+];
+
+const credibilityCards = [
+  { title: "Value-Add Opportunities", description: "Identify properties where strategic improvements unlock outsized returns." },
+  { title: "Redevelopment Insight", description: "Evaluate teardown, expansion, and highest-and-best-use potential." },
+  { title: "Resale Positioning", description: "Align every improvement decision with end-buyer expectations and market comps." },
+  { title: "Local Market Guidance", description: "Navigate Austin's block-by-block dynamics with an advisor who lives the data." },
+];
+
+/* ------------------------------------------------------------------ */
+/*  FORM SCHEMA                                                        */
+/* ------------------------------------------------------------------ */
+
+const investorSchema = z.object({
+  name: z.string().trim().min(1, "Name is required").max(100),
+  email: z.string().trim().email("Please enter a valid email").max(255),
+  phone: z.string().trim().min(1, "Phone is required").max(20),
+  investmentType: z.string().trim().optional(),
+  targetAreas: z.string().trim().max(500).optional(),
+  budget: z.string().trim().optional(),
+  timeline: z.string().trim().optional(),
+  notes: z.string().trim().max(2000).optional(),
+});
+
+/* ------------------------------------------------------------------ */
+/*  PAGE COMPONENT                                                     */
+/* ------------------------------------------------------------------ */
+
+const Invest = () => {
+  const { toast } = useToast();
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    investmentType: "",
+    targetAreas: "",
+    budget: "",
+    timeline: "",
+    notes: "",
+  });
+  const [errors, setErrors] = useState<Record<string, string>>({});
+  const [submitting, setSubmitting] = useState(false);
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: name === "phone" ? formatPhoneNumber(value) : value });
+    if (errors[name]) setErrors({ ...errors, [name]: "" });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    const result = investorSchema.safeParse(form);
+    if (!result.success) {
+      const fieldErrors: Record<string, string> = {};
+      result.error.errors.forEach((err) => {
+        if (err.path[0]) fieldErrors[err.path[0] as string] = err.message;
+      });
+      setErrors(fieldErrors);
+      return;
+    }
+
+    setSubmitting(true);
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(
+          buildWeb3Payload({
+            accessKey: "81cc426e-b1a8-4e5e-b2a0-0d25738dfe12",
+            subject: `Investor Lead — ${form.investmentType || "General"} — ${form.budget || "No budget"}`,
+            name: form.name,
+            email: form.email,
+            phone: form.phone,
+            source: "Invest Page",
+            extra: {
+              investment_type: form.investmentType || "Not specified",
+              target_areas: form.targetAreas || "Not specified",
+              budget_range: form.budget || "Not specified",
+              timeline: form.timeline || "Not specified",
+              notes: form.notes || "None",
+            },
+          })
+        ),
+      });
+      const data = await response.json();
+      if (data.success) {
+        toast({
+          title: "Request Received",
+          description: "We'll be in touch shortly to discuss your investment goals.",
+        });
+        setForm({ name: "", email: "", phone: "", investmentType: "", targetAreas: "", budget: "", timeline: "", notes: "" });
+        setErrors({});
+      } else {
+        toast({ title: "Submission Failed", description: "Please try again or call us directly.", variant: "destructive" });
+      }
+    } catch {
+      toast({ title: "Submission Failed", description: "Please try again or call us directly.", variant: "destructive" });
+    } finally {
+      setSubmitting(false);
+    }
+  };
+
+  const inputClass =
+    "w-full bg-background border border-border px-4 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-foreground/20 transition-colors duration-200 text-sm";
+  const selectClass =
+    "w-full bg-background border border-border px-4 py-3 text-foreground focus:outline-none focus:ring-1 focus:ring-foreground/20 transition-colors duration-200 text-sm appearance-none";
+
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: "Home", url: "https://www.echelonpropertygroup.com" },
+    { name: "Invest", url: "https://www.echelonpropertygroup.com/invest" },
+  ]);
+
+  const faqSchema = createFAQSchema(
+    faqItems.map((item) => ({ question: item.question, answer: item.answer }))
+  );
+
+  return (
+    <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Austin Investment Properties"
+        description="Explore Austin investment properties, fix-and-flip opportunities, redevelopment sites, and value-add real estate strategies with Echelon Property Group."
+        canonical="/invest"
+      />
+      <SchemaMarkup schema={realEstateAgentSchema} />
+      <SchemaMarkup schema={breadcrumbSchema} />
+      <SchemaMarkup schema={faqSchema} />
+      <Navigation />
+
+      {/* ──────────────────────── HERO ──────────────────────── */}
+      <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
+        <img
+          src={heroImg}
+          alt="Austin investment property development site — Echelon Property Group"
+          className="absolute inset-0 w-full h-full object-cover"
+          loading="eager"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-foreground/70 via-foreground/50 to-foreground/70" />
+        <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
+          <p className="text-minimal text-primary-foreground/60 mb-6 reveal">
+            Austin Real Estate Investment Advisory
+          </p>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-light text-primary-foreground leading-[1.1] mb-8 reveal">
+            Austin Investment Properties for Flippers, Builders & Value-Add Buyers
+          </h1>
+          <p className="text-lg md:text-xl text-primary-foreground/80 max-w-3xl mx-auto mb-10 leading-relaxed reveal-delayed font-light">
+            Source smarter opportunities, evaluate upside with more precision, and move faster in
+            Austin with an advisor who understands renovation potential, redevelopment value, and
+            resale positioning.
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 reveal-delayed-2">
+            <a
+              href="#lead-form"
+              className="hero-cta-btn px-8 py-4 bg-primary-foreground text-foreground font-medium text-sm tracking-wide hover:bg-primary-foreground/90 transition-colors duration-300 inline-flex items-center gap-2"
+            >
+              Discuss Your Investment Goals
+              <ArrowRight className="w-4 h-4" />
+            </a>
+            <Link
+              to="/listings"
+              className="hero-cta-btn px-8 py-4 border border-primary-foreground/30 text-primary-foreground font-medium text-sm tracking-wide hover:bg-primary-foreground/10 transition-colors duration-300"
+            >
+              View Opportunities
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ──────────────────────── CREDIBILITY INTRO ──────────────────────── */}
+      <section className="py-24 md:py-32 bg-background">
+        <div className="max-w-6xl mx-auto px-6">
+          <ScrollReveal>
+            <p className="text-minimal text-muted-foreground mb-4">Strategic Approach</p>
+            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6 max-w-3xl">
+              Investment Representation Built Around Opportunity, Not Emotion
+            </h2>
+            <p className="text-muted-foreground max-w-3xl leading-relaxed mb-16">
+              This is not a generic home search experience. We help investors identify the right
+              opportunities, understand neighborhood-specific demand, assess improvement potential,
+              and make smarter acquisition decisions with resale or hold strategy in mind. Every
+              recommendation is grounded in data, local insight, and a clear understanding of
+              where value is created.
+            </p>
+          </ScrollReveal>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {credibilityCards.map((card, i) => (
+              <ScrollReveal key={card.title} delay={i * 100}>
+                <div className="border border-border bg-card p-8 h-full hover:border-gold/40 transition-colors duration-500">
+                  <CheckCircle className="w-5 h-5 text-gold mb-4" />
+                  <h3 className="text-lg font-display font-light text-foreground mb-2">
+                    {card.title}
+                  </h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    {card.description}
+                  </p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ──────────────────────── WHO WE WORK WITH ──────────────────────── */}
+      <section className="py-24 md:py-32 bg-secondary/30">
+        <div className="max-w-6xl mx-auto px-6">
+          <ScrollReveal>
+            <p className="text-minimal text-muted-foreground mb-4">Client Focus</p>
+            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-16 max-w-2xl">
+              Who We Work With
+            </h2>
+          </ScrollReveal>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {whoWeWorkWith.map((card, i) => (
+              <ScrollReveal key={card.title} delay={i * 100}>
+                <div className="bg-card border border-border p-10 h-full hover:border-gold/40 transition-colors duration-500">
+                  <card.icon className="w-6 h-6 text-gold mb-5" />
+                  <h3 className="text-xl font-display font-light text-foreground mb-3">
+                    {card.title}
+                  </h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    {card.description}
+                  </p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ──────────────────────── HOW WE HELP ──────────────────────── */}
+      <section className="py-24 md:py-32 bg-background">
+        <div className="max-w-6xl mx-auto px-6">
+          <ScrollReveal>
+            <p className="text-minimal text-muted-foreground mb-4">Value Proposition</p>
+            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-16 max-w-3xl">
+              How We Help Investors Move Smarter
+            </h2>
+          </ScrollReveal>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {howWeHelp.map((card, i) => (
+              <ScrollReveal key={card.title} delay={i * 80}>
+                <div className="border border-border bg-card p-8 h-full hover:border-gold/40 transition-colors duration-500">
+                  <card.icon className="w-5 h-5 text-gold mb-4" />
+                  <h3 className="text-lg font-display font-light text-foreground mb-2">
+                    {card.title}
+                  </h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    {card.description}
+                  </p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ──────────────────────── BEFORE / AFTER ──────────────────────── */}
+      <section className="py-24 md:py-32 bg-secondary/30">
+        <div className="max-w-4xl mx-auto px-6">
+          <ScrollReveal>
+            <p className="text-minimal text-muted-foreground mb-4">Transformation</p>
+            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6 max-w-3xl">
+              See the Power of Strategic Improvement
+            </h2>
+            <p className="text-muted-foreground max-w-3xl leading-relaxed mb-4">
+              The right updates can dramatically change buyer perception, marketability, and resale
+              positioning. This section visually reinforces the kind of upside investors look for
+              when evaluating a property.
+            </p>
+            <p className="text-sm text-muted-foreground/80 italic mb-12 max-w-2xl">
+              From dated interiors to market-ready presentation, strategic updates can unlock a
+              completely different buyer response.
+            </p>
+          </ScrollReveal>
+          <ScrollReveal>
+            <div className="bg-card border border-border rounded-sm p-8 md:p-12 text-center">
+              <p className="text-muted-foreground text-sm">
+                Before &amp; After transformation gallery coming soon. This space is reserved for a
+                curated showcase of investor-grade renovations — demonstrating how targeted
+                improvements translate to measurable value.
+              </p>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* ──────────────────────── PROCESS ──────────────────────── */}
+      <section className="py-24 md:py-32 bg-background">
+        <div className="max-w-6xl mx-auto px-6">
+          <ScrollReveal>
+            <p className="text-minimal text-muted-foreground mb-4">Methodology</p>
+            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-16 max-w-2xl">
+              Our Investor Process
+            </h2>
+          </ScrollReveal>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {processSteps.map((step, i) => (
+              <ScrollReveal key={step.number} delay={i * 100}>
+                <div className="relative">
+                  <span className="text-5xl font-display font-light text-gold/20 mb-4 block">
+                    {step.number}
+                  </span>
+                  <h3 className="text-lg font-display font-light text-foreground mb-2">
+                    {step.title}
+                  </h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    {step.description}
+                  </p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ──────────────────────── MARKET INSIGHT ──────────────────────── */}
+      <section className="py-24 md:py-32 bg-secondary/30">
+        <div className="max-w-4xl mx-auto px-6">
+          <ScrollReveal>
+            <p className="text-minimal text-muted-foreground mb-4">Market Intelligence</p>
+            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-8 max-w-3xl">
+              Why Local Market Insight Matters
+            </h2>
+          </ScrollReveal>
+          <ScrollReveal delay={100}>
+            <div className="space-y-6 text-muted-foreground leading-relaxed">
+              <p>
+                Austin is a highly localized market. Two properties on the same street can carry
+                dramatically different value profiles depending on lot size, orientation, flood
+                plain status, school zone, and proximity to commercial corridors. Investing here
+                without granular, block-by-block knowledge is a risk most investors can't afford.
+              </p>
+              <p>
+                Not every renovation dollar returns equally. A $150,000 kitchen remodel in a
+                neighborhood with a $600,000 price ceiling is a fundamentally different proposition
+                than the same scope in a market that absorbs $1.2 million resales. Understanding
+                where improvement capital generates real returns — and where it leads to
+                over-improvement — is the difference between a profitable flip and a lesson learned.
+              </p>
+              <p>
+                Finish level should always match end-buyer expectations. In some Austin submarkets,
+                buyers expect designer fixtures and custom millwork. In others, clean, functional
+                updates outperform premium finishes. We help investors calibrate their renovation
+                strategy to the specific demand profile of each neighborhood — ensuring every dollar
+                spent is a dollar that comes back at resale.
+              </p>
+              <p>
+                Local demand and micro-location are the variables that matter most when underwriting
+                upside. Days on market, absorption rate, buyer demographics, and competing
+                inventory all shape the exit. We bring that data to every conversation so our
+                investors can make decisions with confidence, not conjecture.
+              </p>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* ──────────────────────── LEAD FORM ──────────────────────── */}
+      <section id="lead-form" className="py-24 md:py-32 bg-primary">
+        <div className="max-w-4xl mx-auto px-6">
+          <ScrollReveal>
+            <p className="text-minimal text-primary-foreground/50 mb-4">Get Started</p>
+            <h2 className="text-3xl md:text-4xl font-display font-light text-primary-foreground mb-4">
+              Tell Us What You're Looking For
+            </h2>
+            <p className="text-primary-foreground/60 mb-12 max-w-2xl">
+              Share your investment criteria and we'll follow up with relevant opportunities,
+              market insight, and a strategy conversation.
+            </p>
+          </ScrollReveal>
+          <ScrollReveal delay={100}>
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {/* Name */}
+                <div>
+                  <label className="block text-primary-foreground/70 text-sm mb-2">Full Name *</label>
+                  <input
+                    type="text"
+                    name="name"
+                    value={form.name}
+                    onChange={handleChange}
+                    placeholder="Your name"
+                    className={`${inputClass} bg-primary-foreground/5 border-primary-foreground/15 text-primary-foreground placeholder:text-primary-foreground/30 focus:ring-primary-foreground/30`}
+                    required
+                  />
+                  {errors.name && <p className="text-red-300 text-xs mt-1">{errors.name}</p>}
+                </div>
+                {/* Email */}
+                <div>
+                  <label className="block text-primary-foreground/70 text-sm mb-2">Email *</label>
+                  <input
+                    type="email"
+                    name="email"
+                    value={form.email}
+                    onChange={handleChange}
+                    placeholder="you@email.com"
+                    className={`${inputClass} bg-primary-foreground/5 border-primary-foreground/15 text-primary-foreground placeholder:text-primary-foreground/30 focus:ring-primary-foreground/30`}
+                    required
+                  />
+                  {errors.email && <p className="text-red-300 text-xs mt-1">{errors.email}</p>}
+                </div>
+                {/* Phone */}
+                <div>
+                  <label className="block text-primary-foreground/70 text-sm mb-2">Phone *</label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    value={form.phone}
+                    onChange={handleChange}
+                    placeholder="(512) 555-1234"
+                    className={`${inputClass} bg-primary-foreground/5 border-primary-foreground/15 text-primary-foreground placeholder:text-primary-foreground/30 focus:ring-primary-foreground/30`}
+                    required
+                  />
+                  {errors.phone && <p className="text-red-300 text-xs mt-1">{errors.phone}</p>}
+                </div>
+                {/* Investment Type */}
+                <div>
+                  <label className="block text-primary-foreground/70 text-sm mb-2">Investment Type</label>
+                  <select
+                    name="investmentType"
+                    value={form.investmentType}
+                    onChange={handleChange}
+                    className={`${selectClass} bg-primary-foreground/5 border-primary-foreground/15 text-primary-foreground focus:ring-primary-foreground/30`}
+                  >
+                    <option value="">Select type</option>
+                    <option value="Fix and Flip">Fix and Flip</option>
+                    <option value="Buy and Hold">Buy and Hold</option>
+                    <option value="Tear-Down / Rebuild">Tear-Down / Rebuild</option>
+                    <option value="Value-Add Opportunity">Value-Add Opportunity</option>
+                    <option value="Off-Market Search">Off-Market Search</option>
+                  </select>
+                </div>
+                {/* Target Areas */}
+                <div>
+                  <label className="block text-primary-foreground/70 text-sm mb-2">Target Areas</label>
+                  <input
+                    type="text"
+                    name="targetAreas"
+                    value={form.targetAreas}
+                    onChange={handleChange}
+                    placeholder="e.g. East Austin, Westlake, South Lamar"
+                    className={`${inputClass} bg-primary-foreground/5 border-primary-foreground/15 text-primary-foreground placeholder:text-primary-foreground/30 focus:ring-primary-foreground/30`}
+                  />
+                </div>
+                {/* Budget Range */}
+                <div>
+                  <label className="block text-primary-foreground/70 text-sm mb-2">Budget Range</label>
+                  <select
+                    name="budget"
+                    value={form.budget}
+                    onChange={handleChange}
+                    className={`${selectClass} bg-primary-foreground/5 border-primary-foreground/15 text-primary-foreground focus:ring-primary-foreground/30`}
+                  >
+                    <option value="">Select range</option>
+                    <option value="Under $500K">Under $500K</option>
+                    <option value="$500K – $1M">$500K – $1M</option>
+                    <option value="$1M – $2M">$1M – $2M</option>
+                    <option value="$2M – $5M">$2M – $5M</option>
+                    <option value="$5M+">$5M+</option>
+                  </select>
+                </div>
+              </div>
+              {/* Timeline */}
+              <div>
+                <label className="block text-primary-foreground/70 text-sm mb-2">Timeline</label>
+                <select
+                  name="timeline"
+                  value={form.timeline}
+                  onChange={handleChange}
+                  className={`${selectClass} bg-primary-foreground/5 border-primary-foreground/15 text-primary-foreground focus:ring-primary-foreground/30`}
+                >
+                  <option value="">Select timeline</option>
+                  <option value="Immediately">Immediately</option>
+                  <option value="1-3 Months">1-3 Months</option>
+                  <option value="3-6 Months">3-6 Months</option>
+                  <option value="6-12 Months">6-12 Months</option>
+                  <option value="Just Exploring">Just Exploring</option>
+                </select>
+              </div>
+              {/* Notes */}
+              <div>
+                <label className="block text-primary-foreground/70 text-sm mb-2">Additional Notes</label>
+                <textarea
+                  name="notes"
+                  value={form.notes}
+                  onChange={handleChange}
+                  rows={4}
+                  placeholder="Tell us about your investment goals, experience level, or specific criteria..."
+                  className={`${inputClass} bg-primary-foreground/5 border-primary-foreground/15 text-primary-foreground placeholder:text-primary-foreground/30 focus:ring-primary-foreground/30 resize-none`}
+                />
+              </div>
+              <button
+                type="submit"
+                disabled={submitting}
+                className="w-full sm:w-auto px-10 py-4 bg-primary-foreground text-foreground font-medium text-sm tracking-wide hover:bg-primary-foreground/90 transition-colors duration-300 disabled:opacity-50 inline-flex items-center justify-center gap-2"
+              >
+                {submitting ? "Submitting..." : "Submit Your Criteria"}
+                {!submitting && <ArrowRight className="w-4 h-4" />}
+              </button>
+            </form>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* ──────────────────────── FAQ ──────────────────────── */}
+      <section className="py-24 md:py-32 bg-background">
+        <div className="max-w-3xl mx-auto px-6">
+          <ScrollReveal>
+            <p className="text-minimal text-muted-foreground mb-4">Frequently Asked Questions</p>
+            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-12">
+              Investor FAQ
+            </h2>
+          </ScrollReveal>
+          <ScrollReveal delay={100}>
+            <Accordion type="single" collapsible className="w-full">
+              {faqItems.map((item, i) => (
+                <AccordionItem key={i} value={`faq-${i}`} className="border-border">
+                  <AccordionTrigger className="text-left text-foreground font-light hover:no-underline py-6">
+                    {item.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground leading-relaxed pb-6">
+                    {item.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* ──────────────────────── FINAL CTA ──────────────────────── */}
+      <section className="py-24 md:py-32 bg-secondary/30">
+        <div className="max-w-3xl mx-auto px-6 text-center">
+          <ScrollReveal>
+            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              Looking for Your Next Investment Opportunity in Austin?
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed">
+              Whether you're flipping, building, holding, or sourcing value-add opportunities, we
+              can help you approach the Austin market with more clarity and better positioning.
+            </p>
+            <a
+              href="#lead-form"
+              className="inline-flex items-center gap-2 px-10 py-4 bg-primary text-primary-foreground font-medium text-sm tracking-wide hover:bg-primary/90 transition-colors duration-300"
+            >
+              Start the Conversation
+              <ArrowRight className="w-4 h-4" />
+            </a>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      <Footer />
+    </div>
+  );
+};
+
+export default Invest;

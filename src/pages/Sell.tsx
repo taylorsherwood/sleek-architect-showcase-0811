@@ -415,7 +415,7 @@ const Sell = () => {
       <section className="relative py-20 md:py-28 pb-16 md:pb-20 bg-warm-cream overflow-hidden">
         {/* Brand watermark — section-level ambient depth */}
         <div
-          className="pointer-events-none absolute right-[5%] bottom-[5%] w-[70vw] max-w-[900px] aspect-square opacity-[0.035]"
+          className="pointer-events-none absolute right-[5%] bottom-[-25%] w-[70vw] max-w-[900px] aspect-square opacity-[0.035]"
           aria-hidden="true"
         >
           <img src={echelonWatermark} alt="" className="w-full h-full object-contain" />

@@ -438,7 +438,9 @@ const Invest = () => {
               beforeLabel="Before"
               afterLabel="After"
             />
-            <div className="mt-8" />
+          </ScrollReveal>
+          <div className="mt-12 md:mt-16" />
+          <ScrollReveal>
             <BeforeAfterSlider
               beforeImage={livingBefore}
               afterImage={livingAfter}

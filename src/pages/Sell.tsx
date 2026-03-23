@@ -417,12 +417,14 @@ const Sell = () => {
           className="pointer-events-none absolute -right-24 top-1/2 -translate-y-1/2 w-[600px] h-[600px] lg:w-[800px] lg:h-[800px]"
           aria-hidden="true"
         >
-          <svg viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full opacity-[0.035]">
-            <rect x="100" y="100" width="600" height="600" stroke="hsl(42 37% 57%)" strokeWidth="1.5" />
-            <rect x="200" y="200" width="400" height="400" stroke="hsl(42 37% 57%)" strokeWidth="1" />
-            <line x1="100" y1="100" x2="700" y2="700" stroke="hsl(42 37% 57%)" strokeWidth="0.75" />
-            <line x1="700" y1="100" x2="100" y2="700" stroke="hsl(42 37% 57%)" strokeWidth="0.75" />
-            <circle cx="400" cy="400" r="250" stroke="hsl(42 37% 57%)" strokeWidth="0.75" />
+          <svg viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full opacity-[0.08]">
+            <rect x="100" y="100" width="600" height="600" stroke="hsl(42 37% 57%)" strokeWidth="2" />
+            <rect x="200" y="200" width="400" height="400" stroke="hsl(42 37% 57%)" strokeWidth="1.5" />
+            <rect x="300" y="300" width="200" height="200" stroke="hsl(42 37% 57%)" strokeWidth="1" />
+            <line x1="100" y1="100" x2="700" y2="700" stroke="hsl(42 37% 57%)" strokeWidth="1" />
+            <line x1="700" y1="100" x2="100" y2="700" stroke="hsl(42 37% 57%)" strokeWidth="1" />
+            <circle cx="400" cy="400" r="280" stroke="hsl(42 37% 57%)" strokeWidth="1" />
+            <circle cx="400" cy="400" r="150" stroke="hsl(42 37% 57%)" strokeWidth="0.75" />
           </svg>
         </div>
 

@@ -179,6 +179,15 @@ const investorSchema = z.object({
 
 const Invest = () => {
   const { toast } = useToast();
+
+  useEffect(() => {
+    if (!document.querySelector('script[src*="commonninja"]')) {
+      const s = document.createElement("script");
+      s.src = "https://cdn.commoninja.com/sdk/latest/commonninja.js";
+      s.defer = true;
+      document.body.appendChild(s);
+    }
+  }, []);
   const [form, setForm] = useState({
     name: "",
     email: "",

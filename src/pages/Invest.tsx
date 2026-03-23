@@ -9,6 +9,8 @@ import { z } from "zod";
 import { formatPhoneNumber, buildWeb3Payload } from "@/lib/formUtils";
 import ScrollReveal from "@/components/ScrollReveal";
 import BeforeAfterSlider from "@/components/BeforeAfterSlider";
+import kitchenBefore from "@/assets/kitchen-before.jpg";
+import kitchenAfter from "@/assets/kitchen-after.jpeg";
 import {
   Accordion,
   AccordionContent,
@@ -429,14 +431,11 @@ const Invest = () => {
           </ScrollReveal>
           <ScrollReveal>
             <BeforeAfterSlider
-              beforeImage="https://res.cloudinary.com/demo/image/upload/v1/samples/house.jpg"
-              afterImage="https://res.cloudinary.com/demo/image/upload/v1/samples/house.jpg"
+              beforeImage={kitchenBefore}
+              afterImage={kitchenAfter}
               beforeLabel="Before"
               afterLabel="After"
             />
-            <p className="text-center text-xs text-muted-foreground/60 mt-4 italic">
-              Replace with your actual before &amp; after images
-            </p>
           </ScrollReveal>
         </div>
       </section>

@@ -425,12 +425,8 @@ const Invest = () => {
             </p>
           </ScrollReveal>
           <ScrollReveal>
-            <div className="bg-card border border-border rounded-sm p-8 md:p-12 text-center">
-              <p className="text-muted-foreground text-sm">
-                Before &amp; After transformation gallery coming soon. This space is reserved for a
-                curated showcase of investor-grade renovations — demonstrating how targeted
-                improvements translate to measurable value.
-              </p>
+            <div className="rounded-sm overflow-hidden">
+              <div className="commonninja_component pid-cefdaedb-713d-4cc6-a1dc-17aa26b077dd"></div>
             </div>
           </ScrollReveal>
         </div>

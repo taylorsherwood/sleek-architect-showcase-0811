@@ -468,7 +468,7 @@ const Sell = () => {
             <div className="relative lg:mt-8 lg:-mr-6 xl:-mr-12 lg:-mb-8">
               {/* Watermark behind image — top-left */}
               <div
-                className="pointer-events-none absolute -left-[15%] -top-[20%] w-[60%] aspect-square opacity-[0.04] z-0"
+                className="pointer-events-none absolute -left-[15%] -top-[45%] w-[60%] aspect-square opacity-[0.04] z-0"
                 aria-hidden="true"
               >
                 <img src={echelonWatermark} alt="" className="w-full h-full object-contain" />

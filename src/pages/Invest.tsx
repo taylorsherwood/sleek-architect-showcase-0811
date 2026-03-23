@@ -428,9 +428,15 @@ const Invest = () => {
             </p>
           </ScrollReveal>
           <ScrollReveal>
-            <div className="rounded-sm overflow-hidden">
-              <div className="commonninja_component pid-cefdaedb-713d-4cc6-a1dc-17aa26b077dd"></div>
-            </div>
+            <BeforeAfterSlider
+              beforeImage="https://res.cloudinary.com/demo/image/upload/v1/samples/house.jpg"
+              afterImage="https://res.cloudinary.com/demo/image/upload/v1/samples/house.jpg"
+              beforeLabel="Before"
+              afterLabel="After"
+            />
+            <p className="text-center text-xs text-muted-foreground/60 mt-4 italic">
+              Replace with your actual before &amp; after images
+            </p>
           </ScrollReveal>
         </div>
       </section>

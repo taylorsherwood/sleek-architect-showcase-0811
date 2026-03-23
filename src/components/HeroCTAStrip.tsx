@@ -49,7 +49,7 @@ const HeroCTAStrip = () => {
                 onMouseEnter={(e) => {
                   const el = e.currentTarget;
                   el.style.transform = "translateY(-4px)";
-                  el.style.borderColor = "hsl(42 37% 57% / 0.75)";
+                  el.style.borderColor = "hsl(42 37% 57%)";
                   el.style.boxShadow =
                     "0 12px 36px hsl(42 37% 57% / 0.12), 0 0 48px hsl(42 37% 57% / 0.06), inset 0 1px 0 hsl(0 0% 100% / 0.06)";
                 }}

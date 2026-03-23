@@ -412,10 +412,10 @@ const Sell = () => {
       </div>
 
       {/* ── Marketing Strategy (Editorial) ── */}
-      <section className="relative py-24 md:py-36 bg-warm-cream overflow-hidden">
-        {/* Brand watermark */}
+      <section className="relative py-20 md:py-28 pb-16 md:pb-20 bg-warm-cream overflow-hidden">
+        {/* Brand watermark — section-level ambient depth */}
         <div
-          className="pointer-events-none absolute -right-16 top-[42%] -translate-y-1/2 w-[400px] h-[400px] lg:w-[550px] lg:h-[550px] opacity-[0.045]"
+          className="pointer-events-none absolute right-[5%] top-1/2 -translate-y-1/2 w-[70vw] max-w-[900px] aspect-square opacity-[0.035]"
           aria-hidden="true"
         >
           <img src={echelonWatermark} alt="" className="w-full h-full object-contain" />
@@ -465,13 +465,13 @@ const Sell = () => {
             </div>
 
             {/* Right column — Image (editorial, dominant) */}
-            <div className="relative lg:mt-12 lg:-mr-6 xl:-mr-12">
+            <div className="relative lg:mt-8 lg:-mr-6 xl:-mr-12 lg:-mb-8">
               <ScrollReveal delay={200}>
                 <img
                   src={taylorProfileSell}
                   alt="Taylor Sherwood — Austin luxury real estate advisor"
                   title="Taylor Sherwood — Echelon Property Group listing specialist"
-                  className="w-full object-contain"
+                  className="w-full lg:scale-[1.08] origin-top object-contain"
                   style={{
                     filter: "drop-shadow(0 24px 60px hsl(220 20% 10% / 0.12)) drop-shadow(0 8px 20px hsl(220 20% 10% / 0.06))",
                   }}

@@ -412,17 +412,17 @@ const Sell = () => {
       </div>
 
       {/* ── Marketing Strategy (Editorial) ── */}
-      <section className="relative py-20 md:py-28 pb-10 md:pb-14 bg-warm-cream overflow-visible">
+      <section className="relative py-20 md:py-28 pb-8 md:pb-12 bg-warm-cream overflow-visible">
         {/* Single watermark — bottom-right ambient depth */}
         <div
-          className="pointer-events-none absolute right-[-8%] bottom-[-15%] w-[70vw] max-w-[900px] aspect-square opacity-[0.035]"
+          className="pointer-events-none absolute right-[-5%] bottom-[-18%] w-[60vw] max-w-[800px] aspect-square opacity-[0.03]"
           aria-hidden="true"
         >
           <img src={echelonWatermark} alt="" className="w-full h-full object-contain" />
         </div>
 
         <div className="container mx-auto px-6">
-          <div className="max-w-7xl mx-auto grid lg:grid-cols-[4fr_5fr] gap-12 lg:gap-16 items-start">
+          <div className="max-w-7xl mx-auto grid lg:grid-cols-[4fr_5fr] gap-10 lg:gap-12 items-start">
             {/* Left column — Copy */}
             <div className="max-w-[620px]">
               <ScrollReveal>
@@ -465,19 +465,29 @@ const Sell = () => {
             </div>
 
             {/* Right column — Image (editorial, dominant, overlaps into next section) */}
-            <div className="relative lg:mt-8 lg:-mr-6 xl:-mr-12 lg:-mb-[4%]">
+            <div className="relative lg:mt-8 lg:-mr-6 xl:-mr-12 lg:-mb-[5%]">
               <ScrollReveal delay={200}>
-                <img
-                  src={taylorProfileSell}
-                  alt="Taylor Sherwood — Austin luxury real estate advisor"
-                  title="Taylor Sherwood — Echelon Property Group listing specialist"
-                  className="relative z-10 w-full lg:scale-[1.08] origin-top object-contain"
-                  style={{
-                    filter: "drop-shadow(0 24px 60px hsl(220 20% 10% / 0.12)) drop-shadow(0 8px 20px hsl(220 20% 10% / 0.06))",
-                  }}
-                  loading="lazy"
-                  decoding="async"
-                />
+                <div className="relative">
+                  <img
+                    src={taylorProfileSell}
+                    alt="Taylor Sherwood — Austin luxury real estate advisor"
+                    title="Taylor Sherwood — Echelon Property Group listing specialist"
+                    className="relative z-10 w-full lg:scale-[1.10] origin-top object-contain"
+                    style={{
+                      filter: "drop-shadow(0 24px 60px hsl(220 20% 10% / 0.12)) drop-shadow(0 8px 20px hsl(220 20% 10% / 0.06))",
+                    }}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  {/* Subtle bottom fade to soften transition */}
+                  <div
+                    className="absolute bottom-0 left-0 right-0 h-24 z-20 pointer-events-none"
+                    style={{
+                      background: "linear-gradient(to bottom, transparent, hsl(var(--background) / 0.03))",
+                    }}
+                    aria-hidden="true"
+                  />
+                </div>
               </ScrollReveal>
             </div>
           </div>
@@ -485,7 +495,7 @@ const Sell = () => {
       </section>
 
       {/* ── Selling Process ── */}
-      <section className="pt-36 pb-28 bg-background">
+      <section className="pt-40 pb-28 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
             <div className="mb-16">

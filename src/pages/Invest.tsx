@@ -359,60 +359,6 @@ const Invest = () => {
         </div>
       </section>
 
-      {/* ──────────────────────── WHO WE WORK WITH ──────────────────────── */}
-      <section className="py-24 md:py-32 bg-secondary/30">
-        <div className="max-w-6xl mx-auto px-6">
-          <ScrollReveal>
-            <p className="text-minimal text-muted-foreground mb-4">Client Focus</p>
-            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-16 max-w-2xl">
-              Who We Work With
-            </h2>
-          </ScrollReveal>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {whoWeWorkWith.map((card, i) => (
-              <ScrollReveal key={card.title} delay={i * 100}>
-                <div className="bg-card border border-border p-10 h-full hover:border-gold/40 transition-colors duration-500">
-                  <card.icon className="w-6 h-6 text-gold mb-5" />
-                  <h3 className="text-xl font-display font-light text-foreground mb-3">
-                    {card.title}
-                  </h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    {card.description}
-                  </p>
-                </div>
-              </ScrollReveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ──────────────────────── HOW WE HELP ──────────────────────── */}
-      <section className="py-24 md:py-32 bg-background">
-        <div className="max-w-6xl mx-auto px-6">
-          <ScrollReveal>
-            <p className="text-minimal text-muted-foreground mb-4">Value Proposition</p>
-            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-16 max-w-3xl">
-              How We Help Investors Move Smarter
-            </h2>
-          </ScrollReveal>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {howWeHelp.map((card, i) => (
-              <ScrollReveal key={card.title} delay={i * 80}>
-                <div className="border border-border bg-card p-8 h-full hover:border-gold/40 transition-colors duration-500">
-                  <card.icon className="w-5 h-5 text-gold mb-4" />
-                  <h3 className="text-lg font-display font-light text-foreground mb-2">
-                    {card.title}
-                  </h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    {card.description}
-                  </p>
-                </div>
-              </ScrollReveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ──────────────────────── BEFORE / AFTER ──────────────────────── */}
       <section className="py-24 md:py-32 bg-secondary/30">
         <div className="max-w-4xl mx-auto px-6">
@@ -448,6 +394,60 @@ const Invest = () => {
               afterLabel="After"
             />
           </ScrollReveal>
+        </div>
+      </section>
+
+      {/* ──────────────────────── WHO WE WORK WITH ──────────────────────── */}
+      <section className="py-24 md:py-32 bg-background">
+        <div className="max-w-6xl mx-auto px-6">
+          <ScrollReveal>
+            <p className="text-minimal text-muted-foreground mb-4">Client Focus</p>
+            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-16 max-w-2xl">
+              Who We Work With
+            </h2>
+          </ScrollReveal>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {whoWeWorkWith.map((card, i) => (
+              <ScrollReveal key={card.title} delay={i * 100}>
+                <div className="bg-card border border-border p-10 h-full hover:border-gold/40 transition-colors duration-500">
+                  <card.icon className="w-6 h-6 text-gold mb-5" />
+                  <h3 className="text-xl font-display font-light text-foreground mb-3">
+                    {card.title}
+                  </h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    {card.description}
+                  </p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ──────────────────────── HOW WE HELP ──────────────────────── */}
+      <section className="py-24 md:py-32 bg-secondary/30">
+        <div className="max-w-6xl mx-auto px-6">
+          <ScrollReveal>
+            <p className="text-minimal text-muted-foreground mb-4">Value Proposition</p>
+            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-16 max-w-3xl">
+              How We Help Investors Move Smarter
+            </h2>
+          </ScrollReveal>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {howWeHelp.map((card, i) => (
+              <ScrollReveal key={card.title} delay={i * 80}>
+                <div className="border border-border bg-card p-8 h-full hover:border-gold/40 transition-colors duration-500">
+                  <card.icon className="w-5 h-5 text-gold mb-4" />
+                  <h3 className="text-lg font-display font-light text-foreground mb-2">
+                    {card.title}
+                  </h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    {card.description}
+                  </p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
         </div>
       </section>
 

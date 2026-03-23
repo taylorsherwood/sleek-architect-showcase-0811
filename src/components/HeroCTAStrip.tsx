@@ -40,7 +40,7 @@ const HeroCTAStrip = () => {
                   background: "hsl(233 42% 14% / 0.3)",
                   backdropFilter: "blur(24px)",
                   WebkitBackdropFilter: "blur(24px)",
-                  border: "1px solid hsl(42 37% 57% / 0.2)",
+                  border: "1.5px solid hsl(42 37% 57% / 0.5)",
                   boxShadow:
                     "0 4px 20px hsl(0 0% 0% / 0.15), inset 0 1px 0 hsl(0 0% 100% / 0.04)",
                   transition:

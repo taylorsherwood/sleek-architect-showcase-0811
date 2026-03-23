@@ -365,10 +365,10 @@ const Invest = () => {
               Real Transformations. Measurable Upside.
             </h2>
             <p className="text-muted-foreground max-w-3xl leading-relaxed mb-2">
-              A look at the level of renovation and repositioning we execute across Austin — designed to drive demand, elevate perception, and maximize resale value.
+              Selected transformations illustrating positioning, finish strategy, and value creation.
             </p>
             <p className="text-[0.8rem] text-muted-foreground/60 italic mb-10 max-w-2xl">
-              See how the right improvements translate directly into perceived value.
+              See how the right improvements translate directly into perceived value and profitable exits.
             </p>
           </ScrollReveal>
 

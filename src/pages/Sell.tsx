@@ -412,10 +412,10 @@ const Sell = () => {
       </div>
 
       {/* ── Marketing Strategy (Editorial) ── */}
-      <section className="relative py-20 md:py-28 pb-10 md:pb-14 bg-warm-cream overflow-hidden">
-        {/* Brand watermark — section-level ambient depth */}
+      <section className="relative py-20 md:py-28 pb-10 md:pb-14 bg-warm-cream overflow-visible">
+        {/* Single watermark — bottom-right ambient depth */}
         <div
-          className="pointer-events-none absolute right-[-10%] bottom-[-12%] w-[70vw] max-w-[900px] aspect-square opacity-[0.035]"
+          className="pointer-events-none absolute right-[-8%] bottom-[-15%] w-[70vw] max-w-[900px] aspect-square opacity-[0.035]"
           aria-hidden="true"
         >
           <img src={echelonWatermark} alt="" className="w-full h-full object-contain" />
@@ -464,21 +464,14 @@ const Sell = () => {
               </ul>
             </div>
 
-            {/* Right column — Image (editorial, dominant) */}
-            <div className="relative lg:mt-8 lg:-mr-6 xl:-mr-12 lg:-mb-8">
-              {/* Watermark behind image — top-left */}
-              <div
-                className="pointer-events-none absolute -left-[55%] -top-[65%] w-[70vw] max-w-[900px] aspect-square opacity-[0.04] z-0"
-                aria-hidden="true"
-              >
-                <img src={echelonWatermark} alt="" className="w-full h-full object-contain" />
-              </div>
+            {/* Right column — Image (editorial, dominant, overlaps into next section) */}
+            <div className="relative lg:mt-8 lg:-mr-6 xl:-mr-12 lg:-mb-[4%]">
               <ScrollReveal delay={200}>
                 <img
                   src={taylorProfileSell}
                   alt="Taylor Sherwood — Austin luxury real estate advisor"
                   title="Taylor Sherwood — Echelon Property Group listing specialist"
-                  className="w-full lg:scale-[1.08] origin-top object-contain"
+                  className="relative z-10 w-full lg:scale-[1.08] origin-top object-contain"
                   style={{
                     filter: "drop-shadow(0 24px 60px hsl(220 20% 10% / 0.12)) drop-shadow(0 8px 20px hsl(220 20% 10% / 0.06))",
                   }}
@@ -492,7 +485,7 @@ const Sell = () => {
       </section>
 
       {/* ── Selling Process ── */}
-      <section className="py-28 bg-background">
+      <section className="pt-36 pb-28 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
             <div className="mb-16">

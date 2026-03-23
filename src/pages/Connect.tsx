@@ -220,7 +220,7 @@ const Connect = () => {
                     }}
                     onMouseEnter={(e) => {
                       const el = e.currentTarget;
-                      el.style.borderColor = "hsl(42 37% 57% / 0.45)";
+                      el.style.borderColor = "hsl(42 37% 57% / 0.75)";
                       el.style.boxShadow = "0 4px 16px hsl(0 0% 0% / 0.05)";
                     }}
                     onMouseLeave={(e) => {

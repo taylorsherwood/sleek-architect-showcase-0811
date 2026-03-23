@@ -273,7 +273,7 @@ const Connect = () => {
                   }}
                   onMouseLeave={(e) => {
                     const el = e.currentTarget;
-                    el.style.borderColor = "hsl(42 37% 57% / 0.2)";
+                    el.style.borderColor = "hsl(42 37% 57% / 0.5)";
                     el.style.boxShadow = "0 2px 8px hsl(0 0% 0% / 0.03)";
                   }}
                 >

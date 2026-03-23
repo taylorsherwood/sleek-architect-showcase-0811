@@ -353,7 +353,7 @@ const Invest = () => {
       </section>
 
       {/* ──────────────────────── BEFORE / AFTER ──────────────────────── */}
-      <section className="py-24 md:py-32 bg-secondary/30">
+      <section className="pt-16 md:pt-20 pb-24 md:pb-32 bg-secondary/30">
         <div className="max-w-4xl mx-auto px-6">
           <ScrollReveal>
             <p className="text-minimal text-muted-foreground mb-4">Transformation</p>

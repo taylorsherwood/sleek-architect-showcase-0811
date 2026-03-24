@@ -491,65 +491,68 @@ const Invest = () => {
         </div>
       </section>
 
-      {/* ──────────────────────── PROPERTY ACQUISITION CTA ──────────────────────── */}
-      <section className="py-12 md:py-16 bg-warm-cream">
-        <div className="max-w-3xl mx-auto px-6 text-center">
+      {/* ──────────────────────── PRIVATE NETWORK GATEWAY ──────────────────────── */}
+      <section className="py-14 md:py-20 bg-warm-cream">
+        <div className="max-w-2xl mx-auto px-6 text-center">
           <ScrollReveal>
-            <p className="text-minimal text-gold mb-4 tracking-[0.25em]">Private Network</p>
-            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-5">
+            <p className="text-minimal text-gold mb-5 tracking-[0.3em]">Private Network</p>
+            <h2 className="text-4xl md:text-[2.75rem] font-display font-light text-architectural mb-6 leading-[1.15]">
               Have a Property That Needs Work?
             </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-3">
-              We connect select properties with a vetted network of investors actively seeking
+            <p className="text-muted-foreground max-w-xl mx-auto leading-relaxed mb-4 text-[0.95rem]">
+              We selectively connect properties with a vetted network of investors seeking
               renovation and value-add opportunities across Austin.
             </p>
-            <p className="text-sm text-muted-foreground/60 italic mb-12">
+            <p className="text-sm text-muted-foreground/50 italic mb-10">
               Discreet, straightforward, and no obligation.
             </p>
           </ScrollReveal>
 
           <ScrollReveal delay={100}>
-            <form onSubmit={handlePropSubmit} className="max-w-xl mx-auto space-y-4 text-left">
-              <div>
-                <input
-                  type="text"
-                  name="propName"
-                  placeholder="Full Name"
-                  value={propForm.propName}
-                  onChange={handlePropChange}
-                  className={inputClass}
-                />
-                {propErrors.propName && <p className="text-xs text-destructive mt-1">{propErrors.propName}</p>}
+            <form onSubmit={handlePropSubmit} className="max-w-md mx-auto text-left">
+              <div className="space-y-2.5">
+                <div>
+                  <input
+                    type="text"
+                    name="propName"
+                    placeholder="Full Name"
+                    value={propForm.propName}
+                    onChange={handlePropChange}
+                    className="w-full bg-transparent border-b border-border/60 px-1 py-3 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-gold/50 transition-colors duration-300 text-sm"
+                  />
+                  {propErrors.propName && <p className="text-xs text-destructive mt-1">{propErrors.propName}</p>}
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    name="propContact"
+                    placeholder="Phone or Email"
+                    value={propForm.propContact}
+                    onChange={handlePropChange}
+                    className="w-full bg-transparent border-b border-border/60 px-1 py-3 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-gold/50 transition-colors duration-300 text-sm"
+                  />
+                  {propErrors.propContact && <p className="text-xs text-destructive mt-1">{propErrors.propContact}</p>}
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    name="propAddress"
+                    placeholder="Property Address"
+                    value={propForm.propAddress}
+                    onChange={handlePropChange}
+                    className="w-full bg-transparent border-b border-border/60 px-1 py-3 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-gold/50 transition-colors duration-300 text-sm"
+                  />
+                  {propErrors.propAddress && <p className="text-xs text-destructive mt-1">{propErrors.propAddress}</p>}
+                </div>
               </div>
-              <div>
-                <input
-                  type="text"
-                  name="propContact"
-                  placeholder="Phone or Email"
-                  value={propForm.propContact}
-                  onChange={handlePropChange}
-                  className={inputClass}
-                />
-                {propErrors.propContact && <p className="text-xs text-destructive mt-1">{propErrors.propContact}</p>}
-              </div>
-              <div>
-                <input
-                  type="text"
-                  name="propAddress"
-                  placeholder="Property Address"
-                  value={propForm.propAddress}
-                  onChange={handlePropChange}
-                  className={inputClass}
-                />
-                {propErrors.propAddress && <p className="text-xs text-destructive mt-1">{propErrors.propAddress}</p>}
-              </div>
-              <div className="flex flex-col sm:flex-row gap-3 pt-4 justify-center">
+
+              <div className="pt-8">
                 <button
                   type="submit"
                   disabled={propSubmitting}
-                  className="hero-cta-btn px-10 py-4 bg-primary text-primary-foreground text-xs tracking-[0.25em] uppercase font-semibold hover:bg-gold hover:text-white transition-colors duration-300 disabled:opacity-50"
+                  className="w-full py-3.5 bg-primary text-primary-foreground text-xs tracking-[0.25em] uppercase font-medium hover:bg-gold hover:text-white hover:-translate-y-px hover:shadow-md transition-all duration-300 disabled:opacity-50"
                 >
-                  {propSubmitting ? "Submitting…" : "Request a Cash Offer"}
+                  {propSubmitting ? "Submitting…" : "Submit to Private Network"}
                 </button>
               </div>
             </form>

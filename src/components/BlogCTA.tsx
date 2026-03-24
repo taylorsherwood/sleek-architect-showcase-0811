@@ -1,0 +1,33 @@
+import { Link } from "react-router-dom";
+
+const BlogCTA = () => {
+  return (
+    <section className="py-14 md:py-18 bg-secondary/30">
+      <div className="max-w-3xl mx-auto px-6 text-center">
+        <p className="text-minimal text-gold mb-4 tracking-[0.25em]">Opportunities</p>
+        <h2 className="text-2xl md:text-3xl font-display font-light text-architectural mb-4">
+          Looking for Your Next Move?
+        </h2>
+        <p className="text-muted-foreground leading-relaxed mb-10 max-w-xl mx-auto">
+          Whether you're exploring off-market opportunities or evaluating investment properties across Austin, we can help you move with confidence.
+        </p>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <Link
+            to="/off-market-real-estate-austin"
+            className="px-8 py-3 border border-primary text-primary text-xs tracking-[0.2em] uppercase hover:bg-gold hover:text-white hover:border-gold transition-colors duration-300"
+          >
+            Explore Off-Market Homes
+          </Link>
+          <Link
+            to="/invest"
+            className="px-8 py-3 border border-primary text-primary text-xs tracking-[0.2em] uppercase hover:bg-gold hover:text-white hover:border-gold transition-colors duration-300"
+          >
+            Investment Properties
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default BlogCTA;

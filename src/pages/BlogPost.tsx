@@ -7,6 +7,8 @@ import SchemaMarkup, { createArticleSchema, createFAQSchema, createBreadcrumbSch
 import { blogPosts } from "@/data/blogPosts";
 import { seoBlogPosts } from "@/data/seoBlogPosts";
 import AuthorBio from "@/components/AuthorBio";
+import BlogCTA from "@/components/BlogCTA";
+import RelatedInsights from "@/components/RelatedInsights";
 
 const allPosts = [...seoBlogPosts, ...blogPosts];
 
@@ -106,13 +108,13 @@ const BlogPost = () => {
             </Link>
             
             <div className="mb-8">
-              <div className="flex items-center text-minimal text-muted-foreground space-x-4 mb-6">
+              <div className="flex flex-wrap items-center text-minimal text-muted-foreground gap-x-4 gap-y-1 mb-6">
                 <span className="bg-muted px-3 py-1 text-foreground">{post.category}</span>
-                <span>{post.date}</span>
+                <span>Published {post.date}</span>
                 <span>•</span>
                 <span>{post.readTime}</span>
                 <span>•</span>
-                <span>{post.author}</span>
+                <span>By {post.author}</span>
               </div>
               
               <h1 className="text-4xl md:text-6xl font-light text-architectural mb-6">
@@ -198,6 +200,8 @@ const BlogPost = () => {
         </div>
       </article>
 
+      <BlogCTA />
+      <RelatedInsights maxLinks={5} />
       <AboutBlock />
       <Footer />
     </div>

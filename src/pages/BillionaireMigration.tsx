@@ -6,6 +6,7 @@ import SEOHead from "@/components/SEOHead";
 import SchemaMarkup from "@/components/SchemaMarkup";
 import AuthorBio from "@/components/AuthorBio";
 import lakeAustinHero from "@/assets/lake-austin-aerial.jpg";
+import RelatedInsights from "@/components/RelatedInsights";
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -396,6 +397,7 @@ const BillionaireMigration = () => {
         </div>
       </article>
 
+      <RelatedInsights />
       <Footer />
     </div>
   );

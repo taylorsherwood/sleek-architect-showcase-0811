@@ -5,6 +5,7 @@ import AboutBlock from "@/components/AboutBlock";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createFAQSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
 import AuthorBio from "@/components/AuthorBio";
+import RelatedInsights from "@/components/RelatedInsights";
 
 const faqs = [
   { question: "What is the best time to buy a home in Austin?", answer: "Austin's market is active year-round, but spring and fall typically offer the most balanced conditions. Winter months can present opportunities with less competition, while summer is the most competitive season. For luxury buyers, the best time is when the right property becomes available — especially off-market opportunities that don't follow seasonal patterns." },
@@ -189,6 +190,7 @@ const BuyHomesAustin = () => {
       </article>
 
       <AboutBlock />
+      <RelatedInsights />
       <Footer />
     </div>
   );

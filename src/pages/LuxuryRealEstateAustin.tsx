@@ -5,6 +5,7 @@ import AboutBlock from "@/components/AboutBlock";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { realEstateAgentSchema, createFAQSchema } from "@/components/SchemaMarkup";
 import AuthorBio from "@/components/AuthorBio";
+import RelatedInsights from "@/components/RelatedInsights";
 
 const faqs = [
   { question: "What defines luxury real estate in Austin?", answer: "Luxury real estate in Austin generally begins at $1 million for single-family homes. The core luxury market spans $1.5M to $5M, while ultra-luxury encompasses properties above $5M. Lake Austin waterfront, Westlake Hills, and Barton Creek represent the highest tier, with properties exceeding $15–25M." },
@@ -211,6 +212,7 @@ const LuxuryRealEstateAustin = () => {
       </article>
 
       <AboutBlock />
+      <RelatedInsights />
       <Footer />
     </div>
   );

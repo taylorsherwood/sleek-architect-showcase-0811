@@ -18,6 +18,7 @@ const Testimonials = lazy(() => import("@/components/Testimonials"));
 const SellerCTA = lazy(() => import("@/components/SellerCTA"));
 const CTASection = lazy(() => import("@/components/CTASection"));
 const LuxurySearchLinks = lazy(() => import("@/components/LuxurySearchLinks"));
+const MarketInsights = lazy(() => import("@/components/MarketInsights"));
 const Footer = lazy(() => import("@/components/Footer"));
 
 const NewsletterSection = lazy(async () => {
@@ -140,6 +141,7 @@ const Index = () => {
         <MeetTaylor />
         <div className="py-8 bg-background" />
         <CTASection />
+        <MarketInsights />
         <NewsletterSection />
         <Footer />
       </Suspense>

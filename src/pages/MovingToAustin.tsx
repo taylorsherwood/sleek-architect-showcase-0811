@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import AboutBlock from "@/components/AboutBlock";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createFAQSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
+import RelatedInsights from "@/components/RelatedInsights";
 
 const faqs = [
   { question: "What is the cost of living in Austin compared to other major cities?", answer: "Austin's cost of living is significantly lower than San Francisco, New York, and Los Angeles. Luxury homes that cost $5-10M in coastal markets can be found for $2-5M in Austin's top neighborhoods like Westlake Hills, Barton Creek, and Lake Austin. Combined with no state income tax, Austin offers exceptional value for high-income households." },
@@ -234,6 +235,7 @@ const MovingToAustin = () => {
       </article>
 
       <AboutBlock />
+      <RelatedInsights />
       <Footer />
     </div>
   );

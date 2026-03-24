@@ -5,6 +5,7 @@ import AboutBlock from "@/components/AboutBlock";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createFAQSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
 import AuthorBio from "@/components/AuthorBio";
+import RelatedInsights from "@/components/RelatedInsights";
 
 const faqs = [
   { question: "How do I know what my Austin home is worth?", answer: "A professional comparative market analysis (CMA) is the most accurate way to determine your home's value. Echelon Property Group provides complimentary, confidential valuations that combine MLS data, off-market comps, and neighborhood-specific expertise. Request your free valuation at our home value page." },
@@ -162,6 +163,7 @@ const SellHomeAustin = () => {
       </article>
 
       <AboutBlock />
+      <RelatedInsights />
       <Footer />
     </div>
   );

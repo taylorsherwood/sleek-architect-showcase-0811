@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import heroImage from "@/assets/hero-luxury-austin.jpg";
 import echelonLogo from "@/assets/echelon-logo-gold.png";
 import { formatPhoneNumber, buildWeb3Payload } from "@/lib/formUtils";
+import RelatedInsights from "@/components/RelatedInsights";
 
 const SITE = "https://www.echelonpropertygroup.com";
 

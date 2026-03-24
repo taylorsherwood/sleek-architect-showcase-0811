@@ -432,7 +432,7 @@ const Invest = () => {
       <section className="pt-16 md:pt-20 pb-24 md:pb-32 bg-background">
         <div className="max-w-6xl mx-auto px-6">
           <ScrollReveal>
-            <p className="text-minimal text-muted-foreground mb-4">Strategic Approach</p>
+            <p className="text-minimal text-gold mb-4">Strategic Approach</p>
             <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6 max-w-3xl">
               Investment Representation Built Around Opportunity, Not Emotion
             </h2>

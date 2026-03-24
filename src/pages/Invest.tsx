@@ -522,7 +522,7 @@ const Invest = () => {
       <section className="py-24 md:py-32 bg-secondary/30">
         <div className="max-w-4xl mx-auto px-6">
           <ScrollReveal>
-            <p className="text-minimal text-muted-foreground mb-4">Market Intelligence</p>
+            <p className="text-minimal text-gold mb-4">Market Intelligence</p>
             <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-8 max-w-3xl">
               Why Local Market Insight Matters
             </h2>

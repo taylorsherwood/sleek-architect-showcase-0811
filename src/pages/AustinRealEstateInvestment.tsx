@@ -5,6 +5,7 @@ import AboutBlock from "@/components/AboutBlock";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createFAQSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
 import AuthorBio from "@/components/AuthorBio";
+import RelatedInsights from "@/components/RelatedInsights";
 
 const faqs = [
   { question: "Is Austin a good city for real estate investment?", answer: "Yes. Austin consistently ranks among the top U.S. metros for real estate investment due to robust population growth, tech-sector expansion, no state income tax, and strong rent growth. Both residential and commercial assets have demonstrated compelling risk-adjusted returns relative to coastal gateway markets." },
@@ -150,6 +151,7 @@ const AustinRealEstateInvestment = () => {
       </article>
 
       <AboutBlock />
+      <RelatedInsights />
       <Footer />
     </div>
   );

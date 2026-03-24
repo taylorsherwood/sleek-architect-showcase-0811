@@ -5,6 +5,7 @@ import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createBlogPostingSchema, createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import AuthorBio from "@/components/AuthorBio";
 import heroSkyline from "@/assets/hero-austin-skyline.jpg";
+import RelatedInsights from "@/components/RelatedInsights";
 
 const SITE = "https://www.echelonpropertygroup.com";
 const PAGE_URL = `${SITE}/blog/how-to-find-off-market-real-estate-deals-austin-2026`;
@@ -427,6 +428,7 @@ const OffMarketDealsAustin = () => {
         </div>
       </article>
 
+      <RelatedInsights />
       <Footer />
     </div>
   );

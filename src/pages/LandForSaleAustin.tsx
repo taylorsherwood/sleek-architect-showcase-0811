@@ -5,6 +5,7 @@ import AboutBlock from "@/components/AboutBlock";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createFAQSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
 import AuthorBio from "@/components/AuthorBio";
+import RelatedInsights from "@/components/RelatedInsights";
 
 const faqs = [
   { question: "Where is the best land to buy in Austin?", answer: "The strongest land opportunities depend on your intended use. For residential development, Westlake Hills and Barton Creek offer premium lot values. For larger-scale development, the I-35 corridor, Highway 290 West, and Dripping Springs corridor present significant growth potential. For ranch and estate properties, the Texas Hill Country west of Austin offers stunning acreage with long-term appreciation potential." },
@@ -177,6 +178,7 @@ const LandForSaleAustin = () => {
       </article>
 
       <AboutBlock />
+      <RelatedInsights />
       <Footer />
     </div>
   );

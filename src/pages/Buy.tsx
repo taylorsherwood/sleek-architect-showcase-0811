@@ -316,12 +316,12 @@ const Buy = () => {
       <Navigation />
 
       {/* ── Hero ── */}
-      <section className="relative h-[70vh] min-h-[540px] flex items-center">
+      <section className="relative h-screen flex items-center overflow-hidden bg-primary">
         <div className="absolute inset-0">
           <img src={heroImg} alt="Luxury home in Austin Texas" title="Austin luxury real estate — buyer services" className="w-full h-full object-cover" loading="eager" decoding="async" />
           <div className="absolute inset-0 bg-[#0C0F24]/60" />
         </div>
-        <div className="relative container mx-auto px-6">
+        <div className="relative container mx-auto px-6 pt-24 md:pt-32 lg:pt-36">
           <div className="max-w-xl">
             <p className="text-minimal text-primary-foreground/60 mb-4 reveal">BUYER SERVICES</p>
             <h1 className="text-4xl md:text-6xl font-display font-light text-primary-foreground leading-[1.1] mb-6 reveal">

@@ -46,7 +46,7 @@ const AsSeenIn = () => {
                 loading="lazy"
                 decoding="async"
                 className={`${logo.className} w-auto object-contain transition-opacity duration-400`}
-                style={{ opacity: logo.opacity }}
+                style={{ opacity: logo.opacity, marginLeft: logo.ml ? `${logo.ml}px` : undefined }}
                 onMouseEnter={(e) => {
                   (e.currentTarget as HTMLImageElement).style.opacity = "0.9";
                 }}

@@ -210,7 +210,64 @@ const Invest = () => {
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [submitting, setSubmitting] = useState(false);
 
-  const handleChange = (
+  // Property acquisition form state
+  const [propForm, setPropForm] = useState({ propName: "", propContact: "", propAddress: "" });
+  const [propErrors, setPropErrors] = useState<Record<string, string>>({});
+  const [propSubmitting, setPropSubmitting] = useState(false);
+
+  const handlePropChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    setPropForm({ ...propForm, [name]: value });
+    if (propErrors[name]) setPropErrors({ ...propErrors, [name]: "" });
+  };
+
+  const handlePropSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    const result = propertySchema.safeParse(propForm);
+    if (!result.success) {
+      const fieldErrors: Record<string, string> = {};
+      result.error.errors.forEach((err) => {
+        if (err.path[0]) fieldErrors[err.path[0] as string] = err.message;
+      });
+      setPropErrors(fieldErrors);
+      return;
+    }
+    setPropSubmitting(true);
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(
+          buildWeb3Payload({
+            accessKey: "81cc426e-b1a8-4e5e-b2a0-0d25738dfe12",
+            subject: `Property Submission — ${propForm.propAddress}`,
+            name: propForm.propName,
+            email: propForm.propContact,
+            phone: "",
+            source: "Invest Page — Property CTA",
+            extra: {
+              property_address: propForm.propAddress,
+              contact_info: propForm.propContact,
+            },
+          })
+        ),
+      });
+      const data = await response.json();
+      if (data.success) {
+        toast({ title: "Property Submitted", description: "We'll review your property and be in touch shortly." });
+        setPropForm({ propName: "", propContact: "", propAddress: "" });
+        setPropErrors({});
+      } else {
+        toast({ title: "Submission Failed", description: "Please try again or call us directly.", variant: "destructive" });
+      }
+    } catch {
+      toast({ title: "Submission Failed", description: "Please try again or call us directly.", variant: "destructive" });
+    } finally {
+      setPropSubmitting(false);
+    }
+  };
+
+
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
   ) => {
     const { name, value } = e.target;

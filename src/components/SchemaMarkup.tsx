@@ -1,22 +1,40 @@
-import { useEffect } from "react";
+import { useEffect, useId } from "react";
 
 interface SchemaMarkupProps {
   schema: Record<string, unknown> | Record<string, unknown>[] | null;
 }
 
 const SchemaMarkup = ({ schema }: SchemaMarkupProps) => {
+  const id = useId();
+
   useEffect(() => {
     if (!schema) return;
+
+    const schemaType = (schema as Record<string, unknown>)["@type"] as string | undefined;
+
+    // Before adding a FAQPage schema, remove any existing FAQPage scripts
+    // (prevents duplicates from Strict Mode, re-renders, or route transitions)
+    if (schemaType === "FAQPage") {
+      const existing = document.querySelectorAll('script[data-schema-type="FAQPage"]');
+      existing.forEach((el) => {
+        if (el.getAttribute("data-schema-id") !== id) {
+          el.remove();
+        }
+      });
+    }
+
     const script = document.createElement("script");
     script.type = "application/ld+json";
     script.text = JSON.stringify(schema);
     script.setAttribute("data-schema", "true");
+    script.setAttribute("data-schema-id", id);
+    if (schemaType) script.setAttribute("data-schema-type", schemaType);
     document.head.appendChild(script);
 
     return () => {
       script.remove();
     };
-  }, [schema]);
+  }, [schema, id]);
 
   return null;
 };

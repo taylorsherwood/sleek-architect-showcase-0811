@@ -711,7 +711,7 @@ const Invest = () => {
       <section className="py-24 md:py-32 bg-background">
         <div className="max-w-3xl mx-auto px-6">
           <ScrollReveal>
-            <p className="text-minimal text-muted-foreground mb-4">Frequently Asked Questions</p>
+            <p className="text-minimal text-gold mb-4">Frequently Asked Questions</p>
             <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-12">
               Investor FAQ
             </h2>

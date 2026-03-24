@@ -226,13 +226,12 @@ const Sell = () => {
   {
     setSubmitting(true);
     try {
-      const response = await fetch("https://api.web3forms.com/submit", {
+      const response = await fetch("https://hooks.zapier.com/hooks/catch/26916347/upj5fa0/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload)
+        body: JSON.stringify(payload),
       });
-      const data = await response.json();
-      if (data.success) {
+      if (response.ok) {
         toast({ title: "Request Sent", description: successMsg });
         resetForm();
       } else {

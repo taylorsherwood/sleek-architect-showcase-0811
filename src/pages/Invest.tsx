@@ -502,7 +502,7 @@ const Invest = () => {
             {processSteps.map((step, i) => (
               <ScrollReveal key={step.number} delay={i * 100}>
                 <div className="relative">
-                  <span className="text-5xl font-display font-light text-gold/20 mb-4 block">
+                  <span className="text-5xl font-display font-light text-gold/40 mb-4 block">
                     {step.number}
                   </span>
                   <h3 className="text-lg font-display font-light text-foreground mb-2">

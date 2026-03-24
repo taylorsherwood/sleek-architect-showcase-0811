@@ -15,36 +15,46 @@ const logos = [
 
 const AsSeenIn = () => {
   return (
-    <section className="py-16 md:py-24">
-      <div className="container mx-auto px-6">
+    <section className="pt-10 pb-14 md:pt-14 md:pb-20">
+      <div className="container mx-auto px-6 max-w-5xl">
         <ScrollReveal>
-          <p
-            className="text-center text-muted-foreground mb-10 md:mb-14"
+          {/* Thin divider line */}
+          <div
+            className="mx-auto mb-8 md:mb-10"
             style={{
-              fontSize: "0.65rem",
-              letterSpacing: "0.22em",
-              textTransform: "uppercase",
+              width: "48px",
+              height: "1px",
+              background: "hsl(var(--gold) / 0.35)",
+            }}
+          />
+          <p
+            className="text-center mb-6 md:mb-8"
+            style={{
+              fontSize: "0.6rem",
+              letterSpacing: "0.25em",
+              textTransform: "uppercase" as const,
               fontWeight: 500,
+              color: "hsl(var(--muted-foreground))",
             }}
           >
             As Seen In
           </p>
         </ScrollReveal>
-        <div className="flex items-center justify-center gap-8 md:gap-12 lg:gap-16 flex-wrap max-w-5xl mx-auto">
+        <div className="flex items-center justify-center gap-6 md:gap-10 lg:gap-14 flex-wrap">
           {logos.map((logo, i) => (
-            <ScrollReveal key={logo.alt} delay={80 + i * 60}>
+            <ScrollReveal key={logo.alt} delay={60 + i * 50}>
               <img
                 src={logo.src}
                 alt={logo.alt}
                 loading="lazy"
                 decoding="async"
-                className="h-16 md:h-24 w-auto object-contain transition-opacity duration-400"
-                style={{ opacity: 0.55 }}
+                className="h-20 md:h-[7.5rem] w-auto object-contain transition-opacity duration-400"
+                style={{ opacity: 0.6 }}
                 onMouseEnter={(e) => {
                   (e.currentTarget as HTMLImageElement).style.opacity = "0.85";
                 }}
                 onMouseLeave={(e) => {
-                  (e.currentTarget as HTMLImageElement).style.opacity = "0.55";
+                  (e.currentTarget as HTMLImageElement).style.opacity = "0.6";
                 }}
               />
             </ScrollReveal>

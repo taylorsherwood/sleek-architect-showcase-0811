@@ -26,10 +26,10 @@ const NewsletterSection = lazy(async () => {
       <section className="pt-16 pb-0 bg-muted">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-6xl font-light text-architectural mb-8">
+            <h2 className="text-3xl md:text-6xl font-light text-architectural mb-6 md:mb-8">
               Stay Informed
             </h2>
-            <p className="text-xl text-muted-foreground mb-12">
+            <p className="text-base md:text-xl text-muted-foreground mb-8 md:mb-12">
               Subscribe to our newsletter for the latest insights on Austin luxury real estate
             </p>
             <a
@@ -40,10 +40,10 @@ const NewsletterSection = lazy(async () => {
             >
               BECOME AN ECHELON INSIDER
             </a>
-            <div className="mt-6 flex items-center justify-center gap-10 md:gap-14">
-              <img src="/static-assets/exp-commercial-logo.png" alt="eXp Commercial" title="eXp Commercial — Echelon Property Group" className="h-[13rem] md:h-60 w-auto object-contain" loading="lazy" decoding="async" />
-              <img src="/static-assets/exp-realty-luxury-logo.png" alt="eXp Realty Luxury" title="eXp Realty Luxury — Echelon Property Group" className="h-[13rem] md:h-60 w-auto object-contain" loading="lazy" decoding="async" />
-              <img src="/static-assets/exp-realty-logo.png" alt="eXp Realty" title="eXp Realty — Echelon Property Group brokerage" className="h-[13rem] md:h-60 w-auto object-contain" loading="lazy" decoding="async" />
+            <div className="mt-6 flex items-center justify-center gap-4 md:gap-14 flex-wrap">
+              <img src="/static-assets/exp-commercial-logo.png" alt="eXp Commercial" title="eXp Commercial — Echelon Property Group" className="h-24 md:h-60 w-auto object-contain" loading="lazy" decoding="async" />
+              <img src="/static-assets/exp-realty-luxury-logo.png" alt="eXp Realty Luxury" title="eXp Realty Luxury — Echelon Property Group" className="h-24 md:h-60 w-auto object-contain" loading="lazy" decoding="async" />
+              <img src="/static-assets/exp-realty-logo.png" alt="eXp Realty" title="eXp Realty — Echelon Property Group brokerage" className="h-24 md:h-60 w-auto object-contain" loading="lazy" decoding="async" />
             </div>
           </div>
         </div>

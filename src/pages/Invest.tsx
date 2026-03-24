@@ -237,25 +237,20 @@ const Invest = () => {
     }
     setPropSubmitting(true);
     try {
-      const response = await fetch("https://api.web3forms.com/submit", {
+      const response = await fetch("https://hooks.zapier.com/hooks/catch/26916347/upj5fa0/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(
-          buildWeb3Payload({
-            accessKey: "81cc426e-b1a8-4e5e-b2a0-0d25738dfe12",
-            subject: `Property Submission — ${propForm.propAddress}`,
-            name: propForm.propName,
-            email: propForm.propEmail,
-            phone: propForm.propPhone,
-            source: "Invest Page — Property CTA",
-            extra: {
-              property_address: propForm.propAddress,
-            },
-          })
-        ),
+        body: JSON.stringify({
+          name: propForm.propName,
+          email: propForm.propEmail,
+          phone: propForm.propPhone || "Not provided",
+          property_address: propForm.propAddress,
+          source: "Invest Page — Property CTA",
+          page_url: typeof window !== "undefined" ? window.location.href : "",
+          submitted_at: getTimestamp(),
+        }),
       });
-      const data = await response.json();
-      if (data.success) {
+      if (response.ok) {
         toast({ title: "Property Submitted", description: "We'll review your property and be in touch shortly." });
         setPropForm({ propName: "", propPhone: "", propEmail: "", propAddress: "" });
         setPropErrors({});

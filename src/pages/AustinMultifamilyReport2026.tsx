@@ -136,14 +136,10 @@ const AustinMultifamilyReport2026 = () => {
     });
 
     const payload = {
-      access_key: "72f90ed2-5e5c-4944-bea8-839773d8e2d2",
-      subject: "🏢 New Lead: Austin Multifamily Report 2026",
-      from_name: "Echelon Property Group Website",
-      replyto: formData.email,
       name: `${formData.firstName} ${formData.lastName}`,
       email: formData.email,
       phone: formData.phone || "Not provided",
-      "Investment Focus": formData.investmentFocus || "Not specified",
+      investment_focus: formData.investmentFocus || "Not specified",
       submitted_at: timestamp,
       source: "Austin Multifamily Report 2026",
       page_url: window.location.href,
@@ -152,28 +148,26 @@ const AustinMultifamilyReport2026 = () => {
     console.log("[Report Form] Payload sent:", payload);
 
     try {
-      const res = await fetch("https://api.web3forms.com/submit", {
+      const res = await fetch("https://hooks.zapier.com/hooks/catch/26916347/upj5fa0/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "Accept": "application/json",
         },
         body: JSON.stringify(payload),
       });
 
-      const data = await res.json();
-      console.log("[Report Form] Provider response:", data);
+      console.log("[Report Form] Response status:", res.status);
 
-      if (data.success) {
-        console.log("[Report Form] ✅ Notification email triggered successfully");
+      if (res.ok) {
+        console.log("[Report Form] ✅ Webhook triggered successfully");
         setSubmitted(true);
         console.log("[Report Form] Opening report PDF...");
         window.open(REPORT_URL, "_blank", "noopener,noreferrer");
       } else {
-        console.error("[Report Form] ❌ Web3Forms rejected submission:", data.message);
+        console.error("[Report Form] ❌ Webhook request failed:", res.status);
         toast({
           title: "Submission failed",
-          description: data.message || "The form handler rejected the submission. Please try again.",
+          description: "The form submission failed. Please try again.",
           variant: "destructive",
         });
       }

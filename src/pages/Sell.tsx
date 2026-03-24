@@ -283,18 +283,16 @@ const Sell = () => {
     }
     setConErrors({});
     await submitForm(
-      buildWeb3Payload({
-        accessKey: "81cc426e-b1a8-4e5e-b2a0-0d25738dfe12",
-        subject: "Listing Consultation Request",
+      {
         name: conForm.name,
         email: conForm.email,
-        phone: conForm.phone,
+        phone: conForm.phone || "Not provided",
+        message: conForm.message || "Listing consultation request from Sell page.",
+        interest: "Selling My Home",
         source: "Sell Page — Consultation Form",
-        extra: {
-          interest: "Selling My Home",
-          message: conForm.message || "Listing consultation request from Sell page."
-        }
-      }),
+        page_url: typeof window !== "undefined" ? window.location.href : "",
+        submitted_at: getTimestamp(),
+      },
       setConSubmitting,
       () => setConForm({ name: "", email: "", phone: "", message: "" }),
       "Thank you — we'll be in touch shortly to schedule your listing consultation."

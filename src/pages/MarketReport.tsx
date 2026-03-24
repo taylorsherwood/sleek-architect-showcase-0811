@@ -173,6 +173,9 @@ const MarketReport = () => {
                 <p className="text-muted-foreground leading-relaxed">
                   <strong className="text-foreground">Growth-corridor land:</strong> <Link to="/communities/dripping-springs" className="text-foreground underline hover:text-muted-foreground">Dripping Springs</Link> and <Link to="/communities/texas-hill-country-estates" className="text-foreground underline hover:text-muted-foreground">Hill Country</Link> acreage in the path of Austin's westward expansion continues to appreciate as the area develops.
                 </p>
+                <p className="text-muted-foreground leading-relaxed mt-3">
+                  For properties that may benefit from repositioning or redevelopment, <Link to="/invest" className="text-foreground underline hover:text-muted-foreground">see how we approach value-add opportunities in Austin</Link>.
+                </p>
               </div>
 
               <h3 className="text-xl font-display font-medium mb-3">Risks to Monitor</h3>

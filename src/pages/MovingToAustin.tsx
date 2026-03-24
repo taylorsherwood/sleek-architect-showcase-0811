@@ -170,8 +170,11 @@ const MovingToAustin = () => {
               <p className="text-muted-foreground leading-relaxed mb-4">
                 Austin's economy is anchored by one of the strongest technology sectors in the world. Major employers including Apple (which built a $1 billion campus in North Austin), Google, Tesla (Gigafactory and headquarters), Meta, Oracle (relocated headquarters), Amazon, Samsung, and Dell Technologies provide a deep and diverse employment base that generates sustained demand for luxury housing.
               </p>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed mb-4">
                 Beyond big tech, Austin's startup ecosystem is thriving, supported by the University of Texas at Austin, a strong venture capital community, and a culture that celebrates entrepreneurship. Healthcare, government, and creative industries add further economic diversification. For relocating professionals, this economic breadth means career opportunities extend far beyond a single company or sector.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                For properties that may benefit from repositioning or redevelopment, <Link to="/invest" className="text-foreground underline hover:text-muted-foreground">see how we approach value-add opportunities in Austin</Link>.
               </p>
             </section>
 

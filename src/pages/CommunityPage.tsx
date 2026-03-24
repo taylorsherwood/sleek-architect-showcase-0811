@@ -231,6 +231,9 @@ const CommunityPage = () => {
                 Investment Potential in {community.name}
               </h2>
               <ContentBlock text={community.investmentPotential} />
+              <p className="text-muted-foreground leading-relaxed mt-4">
+                Some homes in {community.name} present strong renovation or value-add opportunities — <Link to="/invest" className="text-foreground underline hover:text-muted-foreground">explore our investor-focused approach</Link>.
+              </p>
             </section>
 
             {/* Internal Links */}

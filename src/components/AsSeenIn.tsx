@@ -6,11 +6,11 @@ import mediaHaven from "@/assets/media-haven.png";
 import mediaMansionGlobal from "@/assets/media-mansion-global.png";
 
 const logos = [
-  { src: mediaWsj, alt: "The Wall Street Journal", height: "h-24 md:h-[9rem]", opacity: 0.66, offset: 0 },
-  { src: mediaMansionGlobal, alt: "Mansion Global", height: "h-20 md:h-[7rem]", opacity: 0.55, offset: 3 },
-  { src: mediaTribeza, alt: "Tribeza", height: "h-18 md:h-[6.5rem]", opacity: 0.58, offset: 0 },
-  { src: mediaHaven, alt: "Haven Magazine", height: "h-20 md:h-[7rem]", opacity: 0.55, offset: 4 },
-  { src: mediaAbj, alt: "Austin Business Journal", height: "h-20 md:h-[7rem]", opacity: 0.55, offset: -2 },
+  { src: mediaWsj, alt: "The Wall Street Journal", className: "h-10 md:h-14", opacity: 0.72 },
+  { src: mediaMansionGlobal, alt: "Mansion Global", className: "h-8 md:h-12", opacity: 0.68 },
+  { src: mediaTribeza, alt: "Tribeza", className: "h-8 md:h-12", opacity: 0.68 },
+  { src: mediaHaven, alt: "Haven Magazine", className: "h-9 md:h-13", opacity: 0.68 },
+  { src: mediaAbj, alt: "Austin Business Journal", className: "h-8 md:h-12", opacity: 0.68 },
 ];
 
 const AsSeenIn = () => {
@@ -18,7 +18,6 @@ const AsSeenIn = () => {
     <section className="pt-6 pb-10 md:pt-9 md:pb-14" style={{ background: "#F8F6F2" }}>
       <div className="container mx-auto px-6 max-w-4xl">
         <ScrollReveal>
-          {/* Anchor divider */}
           <div
             className="mx-auto mb-4 md:mb-5"
             style={{
@@ -40,28 +39,23 @@ const AsSeenIn = () => {
             As Seen In
           </p>
         </ScrollReveal>
-        <div className="flex items-end justify-center gap-4 md:gap-6 flex-wrap">
+        <div className="flex items-center justify-center gap-6 md:gap-10 flex-wrap">
           {logos.map((logo, i) => (
             <ScrollReveal key={logo.alt} delay={50 + i * 45}>
-              <div
-                className="h-16 md:h-28 flex items-end"
-                style={{ transform: logo.offset ? `translateY(${logo.offset}px)` : undefined }}
-              >
-                <img
-                  src={logo.src}
-                  alt={logo.alt}
-                  loading="lazy"
-                  decoding="async"
-                  className={`${logo.height} w-auto object-contain transition-opacity duration-400`}
-                  style={{ opacity: logo.opacity }}
-                  onMouseEnter={(e) => {
-                    (e.currentTarget as HTMLImageElement).style.opacity = "0.88";
-                  }}
-                  onMouseLeave={(e) => {
-                    (e.currentTarget as HTMLImageElement).style.opacity = String(logo.opacity);
-                  }}
-                />
-              </div>
+              <img
+                src={logo.src}
+                alt={logo.alt}
+                loading="lazy"
+                decoding="async"
+                className={`${logo.className} w-auto object-contain transition-opacity duration-400`}
+                style={{ opacity: logo.opacity }}
+                onMouseEnter={(e) => {
+                  (e.currentTarget as HTMLImageElement).style.opacity = "0.9";
+                }}
+                onMouseLeave={(e) => {
+                  (e.currentTarget as HTMLImageElement).style.opacity = String(logo.opacity);
+                }}
+              />
             </ScrollReveal>
           ))}
         </div>

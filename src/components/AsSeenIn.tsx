@@ -15,7 +15,7 @@ const logos = [
 
 const AsSeenIn = () => {
   return (
-    <section className="pt-8 pb-12 md:pt-11 md:pb-16">
+    <section className="pt-8 pb-12 md:pt-11 md:pb-16" style={{ background: "#F8F6F2" }}>
       <div className="container mx-auto px-6 max-w-4xl">
         <ScrollReveal>
           {/* Anchor divider */}
@@ -40,8 +40,7 @@ const AsSeenIn = () => {
             As Seen In
           </p>
         </ScrollReveal>
-        {/* Outer edges get more room via px, middle logos tighter via gap */}
-        <div className="flex items-center justify-center gap-5 md:gap-8 lg:gap-10 flex-wrap px-2 md:px-6">
+        <div className="flex items-center justify-center gap-5 md:gap-8 flex-wrap">
           {logos.map((logo, i) => (
             <ScrollReveal key={logo.alt} delay={50 + i * 45}>
               <img

@@ -62,7 +62,7 @@ const MarketInsights = () => {
               <ScrollReveal key={article.to} delay={i * 80}>
                 <Link to={article.to} className="group block h-full">
                   <div className="border border-border/40 p-6 h-full flex flex-col hover:border-gold/50 transition-colors duration-500">
-                    <p className="text-[0.65rem] tracking-[0.2em] uppercase text-gold/70 mb-3">
+                    <p className="text-[0.65rem] tracking-[0.2em] uppercase text-gold font-semibold drop-shadow-[0_0_4px_hsl(42_37%_57%/0.3)] mb-3">
                       {article.category}
                     </p>
                     <h3 className="text-lg font-display font-light text-foreground mb-3 group-hover:text-gold transition-colors duration-300 leading-snug">

@@ -52,7 +52,7 @@ const LuxuryHomesAustin = () => {
       <FeaturedLuxuryListings />
 
       <Suspense fallback={<div className="min-h-[300px]" />}>
-        <FeaturedListings />
+        <FeaturedListings hideRealScout />
       </Suspense>
 
       <RealScoutSearch />

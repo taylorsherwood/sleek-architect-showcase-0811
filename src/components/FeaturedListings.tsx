@@ -236,56 +236,57 @@ const FeaturedListings = ({ hideRealScout = false }: FeaturedListingsProps) => {
         </div>
       </section>
 
-      {/* ── RealScout Active Listings ── */}
-      <section className="pt-10 pb-14 bg-background">
-        <div className="container mx-auto px-6">
-          <div className="max-w-7xl mx-auto">
-            <div className="mb-14">
-              <p
-                className="text-gold mb-5 font-semibold text-sm"
-                style={{
-                  fontSize: "0.6rem",
-                  letterSpacing: "0.35em",
-                  textTransform: "uppercase",
-                  fontFamily: '"Raleway", sans-serif'
-                }}>ON THE MARKET
-              </p>
-              <h2
-                className="font-display font-light text-architectural"
-                style={{
-                  fontSize: "clamp(1.8rem, 3vw, 3rem)",
-                  letterSpacing: "-0.01em"
-                }}>
-                Commercial and Residential
-              </h2>
-              <p className="text-muted-foreground/70 mt-5 max-w-xl text-[15px] font-light leading-relaxed">
-                Browse current listings across Austin's most desirable
-                neighborhoods — residential, commercial, and land.
-              </p>
-            </div>
-            <div ref={widgetRef} className="w-full" />
-            <noscript>
-              <p className="text-center text-muted-foreground py-8">
-                Please enable JavaScript to view our interactive listing search, or visit{" "}
-                <a href="https://taylorsherwood.realscout.com/" className="underline">our listings portal</a> directly.
-              </p>
-            </noscript>
-            <div className="mt-16 text-center">
-              <Link
-                to="/past-transactions"
-                className="inline-block px-10 py-4 border-2 border-foreground/30 text-muted-foreground/70 hover:text-primary-foreground hover:bg-gold hover:border-gold transition-all duration-500"
-                style={{
-                  fontSize: "0.6rem",
-                  letterSpacing: "0.25em",
-                  textTransform: "uppercase",
-                  fontFamily: '"Raleway", sans-serif'
-                }}>
-                SEE PAST TRANSACTIONS →
-              </Link>
+      {!hideRealScout && (
+        <section className="pt-10 pb-14 bg-background">
+          <div className="container mx-auto px-6">
+            <div className="max-w-7xl mx-auto">
+              <div className="mb-14">
+                <p
+                  className="text-gold mb-5 font-semibold text-sm"
+                  style={{
+                    fontSize: "0.6rem",
+                    letterSpacing: "0.35em",
+                    textTransform: "uppercase",
+                    fontFamily: '"Raleway", sans-serif'
+                  }}>ON THE MARKET
+                </p>
+                <h2
+                  className="font-display font-light text-architectural"
+                  style={{
+                    fontSize: "clamp(1.8rem, 3vw, 3rem)",
+                    letterSpacing: "-0.01em"
+                  }}>
+                  Commercial and Residential
+                </h2>
+                <p className="text-muted-foreground/70 mt-5 max-w-xl text-[15px] font-light leading-relaxed">
+                  Browse current listings across Austin's most desirable
+                  neighborhoods — residential, commercial, and land.
+                </p>
+              </div>
+              <div ref={widgetRef} className="w-full" />
+              <noscript>
+                <p className="text-center text-muted-foreground py-8">
+                  Please enable JavaScript to view our interactive listing search, or visit{" "}
+                  <a href="https://taylorsherwood.realscout.com/" className="underline">our listings portal</a> directly.
+                </p>
+              </noscript>
+              <div className="mt-16 text-center">
+                <Link
+                  to="/past-transactions"
+                  className="inline-block px-10 py-4 border-2 border-foreground/30 text-muted-foreground/70 hover:text-primary-foreground hover:bg-gold hover:border-gold transition-all duration-500"
+                  style={{
+                    fontSize: "0.6rem",
+                    letterSpacing: "0.25em",
+                    textTransform: "uppercase",
+                    fontFamily: '"Raleway", sans-serif'
+                  }}>
+                  SEE PAST TRANSACTIONS →
+                </Link>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
     </>);
 };
 

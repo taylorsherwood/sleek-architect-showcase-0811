@@ -391,7 +391,7 @@ const Invest = () => {
             {/* Right — Lead Capture Form */}
             <div className="w-full max-w-[500px] mx-auto lg:mx-0 lg:ml-auto">
               <div className="bg-foreground/30 backdrop-blur-lg border border-primary-foreground/8 rounded-lg p-8 md:p-10">
-                <form onSubmit={handleSubmit} className="space-y-5" id="lead-form">
+                <form onSubmit={handleSubmit} className="space-y-4" id="lead-form">
                   <div>
                     <input
                       type="text"

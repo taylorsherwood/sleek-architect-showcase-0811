@@ -1,7 +1,6 @@
 import { lazy, Suspense } from "react";
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
-import CredibilityStrip from "@/components/CredibilityStrip";
 import AsSeenIn from "@/components/AsSeenIn";
 import ExpertiseSection from "@/components/ExpertiseSection";
 import SEOHead from "@/components/SEOHead";
@@ -120,7 +119,6 @@ const Index = () => {
       </Suspense>
 
       <AsSeenIn />
-      <CredibilityStrip />
       <ExpertiseSection />
 
       <Suspense fallback={<div className="min-h-[200px]" />}>

@@ -11,7 +11,7 @@ import FeaturedListings from "@/components/FeaturedListings";
 import GlobalLuxuryAdvertising from "@/components/GlobalLuxuryAdvertising";
 import CinematicVideoSection from "@/components/CinematicVideoSection";
 import ScrollReveal from "@/components/ScrollReveal";
-import { formatPhoneNumber, buildWeb3Payload } from "@/lib/formUtils";
+import { formatPhoneNumber, getTimestamp } from "@/lib/formUtils";
 import {
   CheckCircle,
   ArrowRight,
@@ -226,13 +226,12 @@ const Sell = () => {
   {
     setSubmitting(true);
     try {
-      const response = await fetch("https://api.web3forms.com/submit", {
+      const response = await fetch("https://hooks.zapier.com/hooks/catch/26916347/upj5fa0/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload)
+        body: JSON.stringify(payload),
       });
-      const data = await response.json();
-      if (data.success) {
+      if (response.ok) {
         toast({ title: "Request Sent", description: successMsg });
         resetForm();
       } else {
@@ -256,19 +255,17 @@ const Sell = () => {
     }
     setValErrors({});
     await submitForm(
-      buildWeb3Payload({
-        accessKey: "81cc426e-b1a8-4e5e-b2a0-0d25738dfe12",
-        subject: "Home Valuation Request",
+      {
         name: valForm.name,
         email: valForm.email,
-        phone: valForm.phone,
+        phone: valForm.phone || "Not provided",
+        property_address: valForm.address,
+        message: valForm.message || "Home valuation request from Sell page.",
+        interest: "Home Valuation",
         source: "Sell Page — Valuation Form",
-        extra: {
-          "Property Address": valForm.address,
-          interest: "Home Valuation",
-          message: valForm.message || "Home valuation request from Sell page."
-        }
-      }),
+        page_url: typeof window !== "undefined" ? window.location.href : "",
+        submitted_at: getTimestamp(),
+      },
       setValSubmitting,
       () => setValForm({ name: "", email: "", phone: "", address: "", message: "" }),
       "Thank you — we'll prepare your complimentary home valuation and be in touch shortly."
@@ -286,18 +283,16 @@ const Sell = () => {
     }
     setConErrors({});
     await submitForm(
-      buildWeb3Payload({
-        accessKey: "81cc426e-b1a8-4e5e-b2a0-0d25738dfe12",
-        subject: "Listing Consultation Request",
+      {
         name: conForm.name,
         email: conForm.email,
-        phone: conForm.phone,
+        phone: conForm.phone || "Not provided",
+        message: conForm.message || "Listing consultation request from Sell page.",
+        interest: "Selling My Home",
         source: "Sell Page — Consultation Form",
-        extra: {
-          interest: "Selling My Home",
-          message: conForm.message || "Listing consultation request from Sell page."
-        }
-      }),
+        page_url: typeof window !== "undefined" ? window.location.href : "",
+        submitted_at: getTimestamp(),
+      },
       setConSubmitting,
       () => setConForm({ name: "", email: "", phone: "", message: "" }),
       "Thank you — we'll be in touch shortly to schedule your listing consultation."

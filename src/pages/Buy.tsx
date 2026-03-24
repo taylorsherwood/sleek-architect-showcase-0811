@@ -6,7 +6,7 @@ import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { realEstateAgentSchema, createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
-import { formatPhoneNumber, buildWeb3Payload } from "@/lib/formUtils";
+import { formatPhoneNumber, getTimestamp } from "@/lib/formUtils";
 import {
   CheckCircle,
   ArrowRight,
@@ -262,24 +262,21 @@ const Buy = () => {
     setErrors({});
     setSubmitting(true);
     try {
-      const response = await fetch("https://api.web3forms.com/submit", {
+      const response = await fetch("https://hooks.zapier.com/hooks/catch/26916347/upj5fa0/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(buildWeb3Payload({
-          accessKey: "81cc426e-b1a8-4e5e-b2a0-0d25738dfe12",
-          subject: "Buyer Consultation Request",
+        body: JSON.stringify({
           name: form.name,
           email: form.email,
-          phone: form.phone,
+          phone: form.phone || "Not provided",
+          message: form.message || "Buyer consultation request from Buy page.",
+          interest: "Buying a Home",
           source: "Buy Page",
-          extra: {
-            interest: "Buying a Home",
-            message: form.message || "Buyer consultation request from Buy page.",
-          },
-        }))
+          page_url: typeof window !== "undefined" ? window.location.href : "",
+          submitted_at: getTimestamp(),
+        }),
       });
-      const data = await response.json();
-      if (data.success) {
+      if (response.ok) {
         toast({ title: "Request Sent", description: "Thank you — we'll be in touch shortly to schedule your consultation." });
         setForm({ name: "", email: "", phone: "", message: "" });
       } else {

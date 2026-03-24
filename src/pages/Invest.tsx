@@ -6,7 +6,7 @@ import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { realEstateAgentSchema, createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
-import { formatPhoneNumber, buildWeb3Payload } from "@/lib/formUtils";
+import { formatPhoneNumber, getTimestamp } from "@/lib/formUtils";
 import ScrollReveal from "@/components/ScrollReveal";
 import BeforeAfterSlider from "@/components/BeforeAfterSlider";
 import kitchenBefore from "@/assets/kitchen-before.jpg";
@@ -237,25 +237,20 @@ const Invest = () => {
     }
     setPropSubmitting(true);
     try {
-      const response = await fetch("https://api.web3forms.com/submit", {
+      const response = await fetch("https://hooks.zapier.com/hooks/catch/26916347/upj5fa0/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(
-          buildWeb3Payload({
-            accessKey: "81cc426e-b1a8-4e5e-b2a0-0d25738dfe12",
-            subject: `Property Submission — ${propForm.propAddress}`,
-            name: propForm.propName,
-            email: propForm.propEmail,
-            phone: propForm.propPhone,
-            source: "Invest Page — Property CTA",
-            extra: {
-              property_address: propForm.propAddress,
-            },
-          })
-        ),
+        body: JSON.stringify({
+          name: propForm.propName,
+          email: propForm.propEmail,
+          phone: propForm.propPhone || "Not provided",
+          property_address: propForm.propAddress,
+          source: "Invest Page — Property CTA",
+          page_url: typeof window !== "undefined" ? window.location.href : "",
+          submitted_at: getTimestamp(),
+        }),
       });
-      const data = await response.json();
-      if (data.success) {
+      if (response.ok) {
         toast({ title: "Property Submitted", description: "We'll review your property and be in touch shortly." });
         setPropForm({ propName: "", propPhone: "", propEmail: "", propAddress: "" });
         setPropErrors({});
@@ -291,30 +286,25 @@ const Invest = () => {
 
     setSubmitting(true);
     try {
-      const response = await fetch("https://api.web3forms.com/submit", {
+      const response = await fetch("https://hooks.zapier.com/hooks/catch/26916347/upj5fa0/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(
-          buildWeb3Payload({
-            accessKey: "81cc426e-b1a8-4e5e-b2a0-0d25738dfe12",
-            subject: `Private Access Lead — ${form.interest || "General"}`,
-            name: form.name,
-            email: form.email,
-            phone: form.phone,
-            source: "Private Access — Invest Page",
-            extra: {
-              interest: form.interest || "Not specified",
-              investment_type: form.investmentType || "Not specified",
-              target_areas: form.targetAreas || "Not specified",
-              budget_range: form.budget || "Not specified",
-              timeline: form.timeline || "Not specified",
-              notes: form.notes || "None",
-            },
-          })
-        ),
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          phone: form.phone || "Not provided",
+          interest: form.interest || "Not specified",
+          investment_type: form.investmentType || "Not specified",
+          target_areas: form.targetAreas || "Not specified",
+          budget_range: form.budget || "Not specified",
+          timeline: form.timeline || "Not specified",
+          notes: form.notes || "None",
+          source: "Private Access — Invest Page",
+          page_url: typeof window !== "undefined" ? window.location.href : "",
+          submitted_at: getTimestamp(),
+        }),
       });
-      const data = await response.json();
-      if (data.success) {
+      if (response.ok) {
         toast({
           title: "Request Received",
           description: "We'll be in touch shortly to discuss your investment goals.",

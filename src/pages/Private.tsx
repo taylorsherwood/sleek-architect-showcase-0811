@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { formatPhoneNumber, buildWeb3Payload } from "@/lib/formUtils";
+import { formatPhoneNumber, getTimestamp } from "@/lib/formUtils";
 import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createBreadcrumbSchema } from "@/components/SchemaMarkup";
@@ -123,21 +123,19 @@ const Private = () => {
     if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim()) return;
     setLoading(true);
     try {
-      const res = await fetch("https://api.web3forms.com/submit", {
+      const res = await fetch("https://hooks.zapier.com/hooks/catch/26916347/upj5fa0/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(buildWeb3Payload({
-          accessKey: "c6f787d5-449a-4d4e-bb5a-501122ab7878",
-          subject: `Private Opportunities Request — ${formData.interest || "General"}`,
+        body: JSON.stringify({
           name: formData.name,
           email: formData.email,
-          phone: formData.phone,
+          phone: formData.phone || "Not provided",
+          interest: formData.interest || "General",
+          message: formData.message,
           source: "Private Listings Page",
-          extra: {
-            interest: formData.interest,
-            message: formData.message,
-          },
-        })),
+          page_url: typeof window !== "undefined" ? window.location.href : "",
+          submitted_at: getTimestamp(),
+        }),
       });
       if (res.ok) {
         setSubmitted(true);

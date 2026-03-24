@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import heroImage from "@/assets/community-hill-country.jpg";
-import { formatPhoneNumber, buildWeb3Payload } from "@/lib/formUtils";
+import { formatPhoneNumber, getTimestamp } from "@/lib/formUtils";
 import RelatedInsights from "@/components/RelatedInsights";
 
 const SITE = "https://www.echelonpropertygroup.com";
@@ -49,24 +49,22 @@ const AustinLandDevelopmentOpportunities = () => {
     if (!form.name.trim() || !form.email.trim() || !form.phone.trim()) return;
     setLoading(true);
     try {
-      const res = await fetch("https://api.web3forms.com/submit", {
+      const res = await fetch("https://hooks.zapier.com/hooks/catch/26916347/upj5fa0/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(buildWeb3Payload({
-          accessKey: "c6f787d5-449a-4d4e-bb5a-501122ab7878",
-          subject: `Land/Dev Lead — ${form.use || "General"} — ${form.budget || "No budget"}`,
+        body: JSON.stringify({
           name: form.name,
           email: form.email,
-          phone: form.phone,
+          phone: form.phone || "Not provided",
+          intended_use: form.use || "General",
+          acreage_range: form.acreage,
+          budget: form.budget,
+          timeline: form.timeline,
+          notes: form.notes,
           source: "Land Development Landing Page",
-          extra: {
-            intended_use: form.use,
-            acreage_range: form.acreage,
-            budget: form.budget,
-            timeline: form.timeline,
-            notes: form.notes,
-          },
-        })),
+          page_url: typeof window !== "undefined" ? window.location.href : "",
+          submitted_at: getTimestamp(),
+        }),
       });
       if (res.ok) {
         setSubmitted(true);

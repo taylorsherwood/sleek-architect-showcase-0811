@@ -119,7 +119,6 @@ const Index = () => {
       </Suspense>
 
       <AsSeenIn />
-      <CredibilityStrip />
       <ExpertiseSection />
 
       <Suspense fallback={<div className="min-h-[200px]" />}>

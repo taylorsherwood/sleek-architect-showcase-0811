@@ -255,19 +255,17 @@ const Sell = () => {
     }
     setValErrors({});
     await submitForm(
-      buildWeb3Payload({
-        accessKey: "81cc426e-b1a8-4e5e-b2a0-0d25738dfe12",
-        subject: "Home Valuation Request",
+      {
         name: valForm.name,
         email: valForm.email,
-        phone: valForm.phone,
+        phone: valForm.phone || "Not provided",
+        property_address: valForm.address,
+        message: valForm.message || "Home valuation request from Sell page.",
+        interest: "Home Valuation",
         source: "Sell Page — Valuation Form",
-        extra: {
-          "Property Address": valForm.address,
-          interest: "Home Valuation",
-          message: valForm.message || "Home valuation request from Sell page."
-        }
-      }),
+        page_url: typeof window !== "undefined" ? window.location.href : "",
+        submitted_at: getTimestamp(),
+      },
       setValSubmitting,
       () => setValForm({ name: "", email: "", phone: "", address: "", message: "" }),
       "Thank you — we'll prepare your complimentary home valuation and be in touch shortly."

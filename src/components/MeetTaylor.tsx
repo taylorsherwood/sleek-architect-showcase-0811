@@ -51,7 +51,7 @@ const MeetTaylor = () => {
             </p>
             <Link
               to="/contact"
-              className="inline-block border border-primary text-primary px-8 py-3 text-minimal tracking-widest hover:bg-primary hover:text-primary-foreground transition-colors duration-300">
+              className="inline-block border border-primary text-primary px-8 py-3 text-minimal tracking-widest hover:bg-gold hover:text-white hover:border-gold transition-colors duration-300">
               
               SCHEDULE A PRIVATE CONSULTATION
             </Link>

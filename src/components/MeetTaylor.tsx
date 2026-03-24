@@ -9,7 +9,7 @@ const MeetTaylor = () => {
         className="pointer-events-none absolute right-[-5%] bottom-[-8%] hidden md:block w-[60vw] max-w-[1050px] aspect-square"
         aria-hidden="true"
         style={{
-          filter: 'blur(3px)',
+          filter: 'none',
           maskImage: 'radial-gradient(ellipse 70% 70% at 80% 80%, black 10%, transparent 70%)',
           WebkitMaskImage: 'radial-gradient(ellipse 70% 70% at 80% 80%, black 10%, transparent 70%)',
         }}

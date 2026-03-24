@@ -58,7 +58,7 @@ const Communities = () => {
       <section className="pt-32 pb-16">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
-            <p className="text-minimal text-gold mb-4">LUXURY COMMUNITIES</p>
+            <p className="text-minimal text-gold mb-4 font-extrabold">LUXURY COMMUNITIES</p>
             <h1 className="text-5xl md:text-7xl font-display font-light text-architectural mb-8">
               Austin's Finest Neighborhoods
             </h1>

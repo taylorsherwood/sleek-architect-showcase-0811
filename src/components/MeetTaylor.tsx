@@ -6,7 +6,7 @@ const MeetTaylor = () => {
     <section className="relative pt-8 pb-4 bg-background overflow-hidden">
       {/* Watermark — centered in the gap between text blocks */}
       <div
-        className="pointer-events-none absolute right-[-5%] bottom-[-8%] hidden md:block w-[60vw] max-w-[1050px] aspect-square"
+        className="pointer-events-none absolute right-[-10%] bottom-[-8%] hidden md:block w-[60vw] max-w-[1050px] aspect-square"
         aria-hidden="true"
         style={{
           filter: 'blur(3px)',
@@ -15,7 +15,7 @@ const MeetTaylor = () => {
         <img
           src={echelonWatermark}
           alt=""
-          className="w-full h-full object-contain opacity-[0.09]"
+          className="w-full h-full object-contain opacity-[0.07]"
           style={{
             filter: 'sepia(60%) saturate(40%) hue-rotate(5deg) brightness(1.1)',
           }}

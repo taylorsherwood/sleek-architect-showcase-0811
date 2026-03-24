@@ -39,6 +39,7 @@ import {
 } from "lucide-react";
 
 import heroImg from "@/assets/invest-hero.jpg";
+import echelonWatermark from "@/assets/echelon-watermark.png";
 
 /* ------------------------------------------------------------------ */
 /*  DATA                                                               */
@@ -519,7 +520,14 @@ const Invest = () => {
       </section>
 
       {/* ──────────────────────── MARKET INSIGHT ──────────────────────── */}
-      <section className="py-24 md:py-32 bg-secondary/30">
+      <section className="relative py-24 md:py-32 bg-secondary/30 overflow-hidden">
+        {/* Watermark */}
+        <div
+          className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[60vw] max-w-[800px] aspect-square opacity-[0.03]"
+          aria-hidden="true"
+        >
+          <img src={echelonWatermark} alt="" className="w-full h-full object-contain" />
+        </div>
         <div className="max-w-4xl mx-auto px-6">
           <ScrollReveal>
             <p className="text-minimal text-gold mb-4">Market Intelligence</p>

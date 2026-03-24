@@ -218,7 +218,7 @@ const Invest = () => {
 
   const handlePropChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
-    setPropForm({ ...propForm, [name]: value });
+    setPropForm({ ...propForm, [name]: name === "propPhone" ? formatPhoneNumber(value) : value });
     if (propErrors[name]) setPropErrors({ ...propErrors, [name]: "" });
   };
 

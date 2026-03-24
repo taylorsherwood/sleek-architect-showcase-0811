@@ -47,7 +47,7 @@ const MarketInsights = () => {
         <div className="max-w-6xl mx-auto">
           <ScrollReveal>
             <div className="text-center mb-14">
-              <p className="text-minimal text-gold mb-4 tracking-[0.25em]">Market Insights</p>
+              <p className="text-minimal text-gold mb-4 tracking-[0.25em] font-semibold drop-shadow-[0_0_6px_hsl(42_37%_57%/0.4)]">Market Insights</p>
               <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-4">
                 Strategic Perspective on Austin Real Estate
               </h2>

@@ -203,6 +203,7 @@ const Invest = () => {
     name: "",
     email: "",
     phone: "",
+    interest: "",
     investmentType: "",
     targetAreas: "",
     budget: "",

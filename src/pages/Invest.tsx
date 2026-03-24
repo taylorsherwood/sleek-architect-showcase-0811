@@ -577,7 +577,9 @@ const Invest = () => {
               opportunities, understand neighborhood-specific demand, assess improvement potential,
               and make smarter acquisition decisions with resale or hold strategy in mind. Every
               recommendation is grounded in data, local insight, and a clear understanding of
-              where value is created.
+              where value is created. Source smarter opportunities, evaluate upside with more
+              precision, and move faster in Austin with an advisor who understands renovation
+              potential, redevelopment value, and resale positioning.
             </p>
           </ScrollReveal>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

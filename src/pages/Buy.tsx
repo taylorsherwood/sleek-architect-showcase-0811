@@ -322,7 +322,7 @@ const Buy = () => {
           <div className="absolute inset-0 bg-[#0C0F24]/60" />
         </div>
         <div className="relative container mx-auto px-6">
-          <div className="max-w-2xl">
+          <div className="max-w-xl">
             <p className="text-minimal text-primary-foreground/60 mb-4 reveal">BUYER SERVICES</p>
             <h1 className="text-4xl md:text-6xl font-display font-light text-primary-foreground leading-[1.1] mb-6 reveal">
               Buying Real Estate in

@@ -175,7 +175,7 @@ const Hero = () => {
 
           {/* Service pillars */}
           <div className="flex flex-wrap items-center gap-x-5 gap-y-1 mb-5 reveal-delayed">
-            {["Luxury Homes", "Private Investments", "Development Opportunities"].map(
+            {["Residential", "Investment", "Development"].map(
               (item, i) =>
               <span key={item} className="flex items-center gap-5">
                   <span

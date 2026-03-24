@@ -2,14 +2,12 @@ import ScrollReveal from "@/components/ScrollReveal";
 import mediaWsj from "@/assets/media-wsj.png";
 import mediaTribeza from "@/assets/media-tribeza.png";
 import mediaAbj from "@/assets/media-abj.png";
-import mediaHaven from "@/assets/media-haven.png";
 import mediaMansionGlobal from "@/assets/media-mansion-global.png";
 
 const logos = [
   { src: mediaWsj, alt: "The Wall Street Journal", className: "h-12 md:h-16", opacity: 0.72 },
   { src: mediaMansionGlobal, alt: "Mansion Global", className: "h-9 md:h-14", opacity: 0.68 },
   { src: mediaTribeza, alt: "Tribeza", className: "h-9 md:h-14", opacity: 0.68 },
-  { src: mediaHaven, alt: "Haven Magazine", className: "h-10 md:h-[3.75rem]", opacity: 0.68 },
   { src: mediaAbj, alt: "Austin Business Journal", className: "h-9 md:h-14", opacity: 0.68 },
 ];
 

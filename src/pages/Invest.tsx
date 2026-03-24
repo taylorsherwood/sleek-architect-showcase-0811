@@ -255,7 +255,7 @@ const Invest = () => {
       const data = await response.json();
       if (data.success) {
         toast({ title: "Property Submitted", description: "We'll review your property and be in touch shortly." });
-        setPropForm({ propName: "", propContact: "", propAddress: "" });
+        setPropForm({ propName: "", propPhone: "", propEmail: "", propAddress: "" });
         setPropErrors({});
       } else {
         toast({ title: "Submission Failed", description: "Please try again or call us directly.", variant: "destructive" });

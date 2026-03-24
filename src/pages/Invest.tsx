@@ -185,7 +185,8 @@ const investorSchema = z.object({
 
 const propertySchema = z.object({
   propName: z.string().trim().min(1, "Name is required").max(100),
-  propContact: z.string().trim().min(1, "Phone or email is required").max(255),
+  propPhone: z.string().trim().min(1, "Phone is required").max(20),
+  propEmail: z.string().trim().email("Please enter a valid email").max(255),
   propAddress: z.string().trim().min(1, "Property address is required").max(500),
 });
 

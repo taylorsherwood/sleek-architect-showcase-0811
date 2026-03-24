@@ -56,8 +56,6 @@ const BlogPost = () => {
       });
     }
   }
-    }
-  }
 
   const postUrl = `https://www.echelonpropertygroup.com/blog/${post.id}`;
   const schemas: Record<string, unknown>[] = [

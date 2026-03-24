@@ -7,9 +7,26 @@ interface SchemaMarkupProps {
 const SchemaMarkup = ({ schema }: SchemaMarkupProps) => {
   useEffect(() => {
     if (!schema) return;
+
+    const schemaJson = JSON.stringify(schema);
+    const schemaType = (schema as Record<string, unknown>)["@type"] as string | undefined;
+
+    // Prevent duplicate FAQPage schemas on the same page
+    if (schemaType === "FAQPage") {
+      const existing = document.querySelectorAll('script[data-schema="true"]');
+      existing.forEach((el) => {
+        try {
+          const parsed = JSON.parse(el.textContent || "");
+          if (parsed["@type"] === "FAQPage") {
+            el.remove();
+          }
+        } catch { /* ignore */ }
+      });
+    }
+
     const script = document.createElement("script");
     script.type = "application/ld+json";
-    script.text = JSON.stringify(schema);
+    script.text = schemaJson;
     script.setAttribute("data-schema", "true");
     document.head.appendChild(script);
 

@@ -297,12 +297,13 @@ const Invest = () => {
         body: JSON.stringify(
           buildWeb3Payload({
             accessKey: "81cc426e-b1a8-4e5e-b2a0-0d25738dfe12",
-            subject: `Investor Lead — ${form.investmentType || "General"} — ${form.budget || "No budget"}`,
+            subject: `Private Access Lead — ${form.interest || "General"}`,
             name: form.name,
             email: form.email,
             phone: form.phone,
-            source: "Invest Page",
+            source: "Private Access — Invest Page",
             extra: {
+              interest: form.interest || "Not specified",
               investment_type: form.investmentType || "Not specified",
               target_areas: form.targetAreas || "Not specified",
               budget_range: form.budget || "Not specified",

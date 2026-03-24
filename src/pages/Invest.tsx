@@ -518,6 +518,42 @@ const Invest = () => {
         </div>
       </section>
 
+      <section className="pt-16 md:pt-20 pb-24 md:pb-32 bg-background">
+        <div className="max-w-6xl mx-auto px-6">
+          <ScrollReveal>
+            <p className="text-minimal text-gold mb-4">Strategic Approach</p>
+            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6 max-w-3xl">
+              Investment Representation Built Around Opportunity, Not Emotion
+            </h2>
+            <p className="text-foreground max-w-3xl leading-relaxed mb-6">
+              This is not a generic home search experience. We help investors identify the right
+              opportunities, understand neighborhood-specific demand, assess improvement potential,
+              and make smarter acquisition decisions with resale or hold strategy in mind. Every
+              recommendation is grounded in data, local insight, and a clear understanding of
+              where value is created.
+            </p>
+            <p className="text-foreground max-w-3xl leading-relaxed mb-16">
+              Source smarter opportunities, evaluate upside with more precision, and move faster in Austin with an advisor who understands renovation potential, redevelopment value, and resale positioning.
+            </p>
+          </ScrollReveal>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {credibilityCards.map((card, i) => (
+              <ScrollReveal key={card.title} delay={i * 100}>
+                <div className="group border-2 border-border p-8 h-full hover:border-gold transition-colors duration-500">
+                  <CheckCircle className="w-8 h-8 text-gold mb-4" />
+                  <h3 className="text-2xl font-display font-light text-architectural mb-3 group-hover:text-muted-foreground transition-colors duration-300">
+                    {card.title}
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    {card.description}
+                  </p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ──────────────────────── PRIVATE NETWORK GATEWAY ──────────────────────── */}
       <section className="py-14 md:py-20 bg-warm-cream">
         <div className="max-w-2xl mx-auto px-6 text-center">
@@ -526,6 +562,40 @@ const Invest = () => {
             <h2 className="text-4xl md:text-[2.75rem] font-display font-light text-architectural mb-6 leading-[1.15]">
               Have a Property That Needs Work?
             </h2>
+            <p className="text-muted-foreground max-w-xl mx-auto leading-relaxed mb-4 text-[0.95rem]">
+              We selectively connect properties with a vetted network of investors seeking
+              renovation and value-add opportunities across Austin.
+            </p>
+            <p className="text-sm text-muted-foreground/50 italic mb-10">
+              Discreet, straightforward, and no obligation.
+            </p>
+          </ScrollReveal>
+
+          <ScrollReveal delay={100}>
+            <form onSubmit={handlePropSubmit} className="max-w-md mx-auto text-left">
+              <div className="space-y-2.5">
+                <div>
+                  <input type="text" name="propName" placeholder="Full Name" value={propForm.propName} onChange={handlePropChange} className="w-full bg-transparent border-b border-border/60 px-1 py-3 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-gold/50 transition-colors duration-300 text-sm" />
+                  {propErrors.propName && <p className="text-xs text-destructive mt-1">{propErrors.propName}</p>}
+                </div>
+                <div>
+                  <input type="text" name="propContact" placeholder="Phone or Email" value={propForm.propContact} onChange={handlePropChange} className="w-full bg-transparent border-b border-border/60 px-1 py-3 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-gold/50 transition-colors duration-300 text-sm" />
+                  {propErrors.propContact && <p className="text-xs text-destructive mt-1">{propErrors.propContact}</p>}
+                </div>
+                <div>
+                  <input type="text" name="propAddress" placeholder="Property Address" value={propForm.propAddress} onChange={handlePropChange} className="w-full bg-transparent border-b border-border/60 px-1 py-3 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-gold/50 transition-colors duration-300 text-sm" />
+                  {propErrors.propAddress && <p className="text-xs text-destructive mt-1">{propErrors.propAddress}</p>}
+                </div>
+              </div>
+              <div className="pt-8">
+                <button type="submit" disabled={propSubmitting} className="w-full py-3.5 bg-primary text-primary-foreground text-xs tracking-[0.25em] uppercase font-medium hover:bg-gold hover:text-white hover:-translate-y-px hover:shadow-md transition-all duration-300 disabled:opacity-50">
+                  {propSubmitting ? "Submitting…" : "REQUEST CASH OFFER"}
+                </button>
+              </div>
+            </form>
+          </ScrollReveal>
+        </div>
+      </section>
             <p className="text-muted-foreground max-w-xl mx-auto leading-relaxed mb-4 text-[0.95rem]">
               We selectively connect properties with a vetted network of investors seeking
               renovation and value-add opportunities across Austin.

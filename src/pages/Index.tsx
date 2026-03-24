@@ -119,6 +119,7 @@ const Index = () => {
         <RealScoutSearch />
       </Suspense>
 
+      <AsSeenIn />
       <CredibilityStrip />
       <ExpertiseSection />
 

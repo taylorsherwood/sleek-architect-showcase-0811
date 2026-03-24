@@ -30,7 +30,7 @@ const AsSeenIn = () => {
             As Seen In
           </p>
         </ScrollReveal>
-        <div className="flex items-center justify-center gap-10 md:gap-16 lg:gap-20 flex-wrap max-w-5xl mx-auto">
+        <div className="flex items-center justify-center gap-8 md:gap-12 lg:gap-16 flex-wrap max-w-5xl mx-auto">
           {logos.map((logo, i) => (
             <ScrollReveal key={logo.alt} delay={80 + i * 60}>
               <img
@@ -38,13 +38,13 @@ const AsSeenIn = () => {
                 alt={logo.alt}
                 loading="lazy"
                 decoding="async"
-                className="h-8 md:h-10 w-auto object-contain transition-opacity duration-400"
-                style={{ opacity: 0.45 }}
+                className="h-16 md:h-24 w-auto object-contain transition-opacity duration-400"
+                style={{ opacity: 0.55 }}
                 onMouseEnter={(e) => {
-                  (e.currentTarget as HTMLImageElement).style.opacity = "0.8";
+                  (e.currentTarget as HTMLImageElement).style.opacity = "0.85";
                 }}
                 onMouseLeave={(e) => {
-                  (e.currentTarget as HTMLImageElement).style.opacity = "0.45";
+                  (e.currentTarget as HTMLImageElement).style.opacity = "0.55";
                 }}
               />
             </ScrollReveal>

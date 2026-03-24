@@ -185,7 +185,8 @@ const investorSchema = z.object({
 
 const propertySchema = z.object({
   propName: z.string().trim().min(1, "Name is required").max(100),
-  propContact: z.string().trim().min(1, "Phone or email is required").max(255),
+  propPhone: z.string().trim().min(1, "Phone is required").max(20),
+  propEmail: z.string().trim().email("Please enter a valid email").max(255),
   propAddress: z.string().trim().min(1, "Property address is required").max(500),
 });
 
@@ -211,13 +212,13 @@ const Invest = () => {
   const [submitting, setSubmitting] = useState(false);
 
   // Property acquisition form state
-  const [propForm, setPropForm] = useState({ propName: "", propContact: "", propAddress: "" });
+  const [propForm, setPropForm] = useState({ propName: "", propPhone: "", propEmail: "", propAddress: "" });
   const [propErrors, setPropErrors] = useState<Record<string, string>>({});
   const [propSubmitting, setPropSubmitting] = useState(false);
 
   const handlePropChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
-    setPropForm({ ...propForm, [name]: value });
+    setPropForm({ ...propForm, [name]: name === "propPhone" ? formatPhoneNumber(value) : value });
     if (propErrors[name]) setPropErrors({ ...propErrors, [name]: "" });
   };
 
@@ -242,12 +243,11 @@ const Invest = () => {
             accessKey: "81cc426e-b1a8-4e5e-b2a0-0d25738dfe12",
             subject: `Property Submission — ${propForm.propAddress}`,
             name: propForm.propName,
-            email: propForm.propContact,
-            phone: "",
+            email: propForm.propEmail,
+            phone: propForm.propPhone,
             source: "Invest Page — Property CTA",
             extra: {
               property_address: propForm.propAddress,
-              contact_info: propForm.propContact,
             },
           })
         ),
@@ -255,7 +255,7 @@ const Invest = () => {
       const data = await response.json();
       if (data.success) {
         toast({ title: "Property Submitted", description: "We'll review your property and be in touch shortly." });
-        setPropForm({ propName: "", propContact: "", propAddress: "" });
+        setPropForm({ propName: "", propPhone: "", propEmail: "", propAddress: "" });
         setPropErrors({});
       } else {
         toast({ title: "Submission Failed", description: "Please try again or call us directly.", variant: "destructive" });
@@ -575,15 +575,19 @@ const Invest = () => {
             <form onSubmit={handlePropSubmit} className="max-w-md mx-auto text-left">
               <div className="space-y-2.5">
                 <div>
-                  <input type="text" name="propName" placeholder="Full Name" value={propForm.propName} onChange={handlePropChange} className="w-full bg-transparent border-b border-border/60 px-1 py-3 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-gold/50 transition-colors duration-300 text-sm" />
+                  <input type="text" name="propName" placeholder="Full Name *" value={propForm.propName} onChange={handlePropChange} className="w-full bg-transparent border-b border-border/60 px-1 py-3 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-gold/50 transition-colors duration-300 text-sm" required />
                   {propErrors.propName && <p className="text-xs text-destructive mt-1">{propErrors.propName}</p>}
                 </div>
                 <div>
-                  <input type="text" name="propContact" placeholder="Phone or Email" value={propForm.propContact} onChange={handlePropChange} className="w-full bg-transparent border-b border-border/60 px-1 py-3 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-gold/50 transition-colors duration-300 text-sm" />
-                  {propErrors.propContact && <p className="text-xs text-destructive mt-1">{propErrors.propContact}</p>}
+                  <input type="tel" name="propPhone" placeholder="Phone *" value={propForm.propPhone} onChange={handlePropChange} className="w-full bg-transparent border-b border-border/60 px-1 py-3 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-gold/50 transition-colors duration-300 text-sm" required />
+                  {propErrors.propPhone && <p className="text-xs text-destructive mt-1">{propErrors.propPhone}</p>}
                 </div>
                 <div>
-                  <input type="text" name="propAddress" placeholder="Property Address" value={propForm.propAddress} onChange={handlePropChange} className="w-full bg-transparent border-b border-border/60 px-1 py-3 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-gold/50 transition-colors duration-300 text-sm" />
+                  <input type="email" name="propEmail" placeholder="Email *" value={propForm.propEmail} onChange={handlePropChange} className="w-full bg-transparent border-b border-border/60 px-1 py-3 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-gold/50 transition-colors duration-300 text-sm" required />
+                  {propErrors.propEmail && <p className="text-xs text-destructive mt-1">{propErrors.propEmail}</p>}
+                </div>
+                <div>
+                  <input type="text" name="propAddress" placeholder="Property Address *" value={propForm.propAddress} onChange={handlePropChange} className="w-full bg-transparent border-b border-border/60 px-1 py-3 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-gold/50 transition-colors duration-300 text-sm" required />
                   {propErrors.propAddress && <p className="text-xs text-destructive mt-1">{propErrors.propAddress}</p>}
                 </div>
               </div>

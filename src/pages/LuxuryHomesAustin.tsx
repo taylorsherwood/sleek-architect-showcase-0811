@@ -35,7 +35,7 @@ const LuxuryHomesAustin = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
             <p
-              className="text-gold/50 mb-5 font-bold text-xs"
+              className="text-gold mb-5 font-bold text-xs"
               style={{ fontSize: "0.55rem", letterSpacing: "0.35em", textTransform: "uppercase", fontFamily: '"Raleway", sans-serif' }}>
               PRIVATE + CURATED OPPORTUNITIES
             </p>

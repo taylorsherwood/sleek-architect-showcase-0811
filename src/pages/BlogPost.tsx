@@ -7,6 +7,8 @@ import SchemaMarkup, { createArticleSchema, createFAQSchema, createBreadcrumbSch
 import { blogPosts } from "@/data/blogPosts";
 import { seoBlogPosts } from "@/data/seoBlogPosts";
 import AuthorBio from "@/components/AuthorBio";
+import BlogCTA from "@/components/BlogCTA";
+import RelatedInsights from "@/components/RelatedInsights";
 
 const allPosts = [...seoBlogPosts, ...blogPosts];
 

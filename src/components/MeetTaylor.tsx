@@ -28,7 +28,7 @@ const MeetTaylor = () => {
             <div className="relative">
               {/* Watermark */}
               <div
-                className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[60vw] max-w-[600px] aspect-square opacity-[0.06]"
+                className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[90vw] max-w-[900px] aspect-square opacity-[0.06]"
                 aria-hidden="true"
               >
                 <img src={echelonWatermark} alt="" className="w-full h-full object-contain" />

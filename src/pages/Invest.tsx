@@ -333,7 +333,7 @@ const Invest = () => {
       <section className="pt-16 md:pt-20 pb-24 md:pb-32 bg-background">
         <div className="max-w-6xl mx-auto px-6">
           <ScrollReveal>
-            <p className="text-minimal text-muted-foreground mb-4">Client Focus</p>
+            <p className="text-minimal text-gold mb-4">Client Focus</p>
             <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-16 max-w-2xl">
               Who We Work With
             </h2>
@@ -432,7 +432,7 @@ const Invest = () => {
       <section className="pt-16 md:pt-20 pb-24 md:pb-32 bg-background">
         <div className="max-w-6xl mx-auto px-6">
           <ScrollReveal>
-            <p className="text-minimal text-muted-foreground mb-4">Strategic Approach</p>
+            <p className="text-minimal text-gold mb-4">Strategic Approach</p>
             <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6 max-w-3xl">
               Investment Representation Built Around Opportunity, Not Emotion
             </h2>
@@ -466,7 +466,7 @@ const Invest = () => {
       <section className="py-24 md:py-32 bg-secondary/30">
         <div className="max-w-6xl mx-auto px-6">
           <ScrollReveal>
-            <p className="text-minimal text-muted-foreground mb-4">Value Proposition</p>
+            <p className="text-minimal text-gold mb-4">Value Proposition</p>
             <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-16 max-w-3xl">
               How We Help Investors Move Smarter
             </h2>
@@ -493,7 +493,7 @@ const Invest = () => {
       <section className="py-24 md:py-32 bg-background">
         <div className="max-w-6xl mx-auto px-6">
           <ScrollReveal>
-            <p className="text-minimal text-muted-foreground mb-4">Methodology</p>
+            <p className="text-minimal text-gold mb-4">Methodology</p>
             <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-16 max-w-2xl">
               Our Investor Process
             </h2>
@@ -502,7 +502,7 @@ const Invest = () => {
             {processSteps.map((step, i) => (
               <ScrollReveal key={step.number} delay={i * 100}>
                 <div className="relative">
-                  <span className="text-5xl font-display font-light text-gold/20 mb-4 block">
+                  <span className="text-5xl font-display font-light text-gold/40 mb-4 block">
                     {step.number}
                   </span>
                   <h3 className="text-lg font-display font-light text-foreground mb-2">
@@ -522,7 +522,7 @@ const Invest = () => {
       <section className="py-24 md:py-32 bg-secondary/30">
         <div className="max-w-4xl mx-auto px-6">
           <ScrollReveal>
-            <p className="text-minimal text-muted-foreground mb-4">Market Intelligence</p>
+            <p className="text-minimal text-gold mb-4">Market Intelligence</p>
             <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-8 max-w-3xl">
               Why Local Market Insight Matters
             </h2>
@@ -564,7 +564,7 @@ const Invest = () => {
       <section id="lead-form" className="py-24 md:py-32 bg-primary">
         <div className="max-w-4xl mx-auto px-6">
           <ScrollReveal>
-            <p className="text-minimal text-primary-foreground/50 mb-4">Get Started</p>
+            <p className="text-minimal text-gold-light mb-4">Get Started</p>
             <h2 className="text-3xl md:text-4xl font-display font-light text-primary-foreground mb-4">
               Tell Us What You're Looking For
             </h2>
@@ -711,7 +711,7 @@ const Invest = () => {
       <section className="py-24 md:py-32 bg-background">
         <div className="max-w-3xl mx-auto px-6">
           <ScrollReveal>
-            <p className="text-minimal text-muted-foreground mb-4">Frequently Asked Questions</p>
+            <p className="text-minimal text-gold mb-4">Frequently Asked Questions</p>
             <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-12">
               Investor FAQ
             </h2>

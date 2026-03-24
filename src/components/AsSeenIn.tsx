@@ -37,7 +37,7 @@ const AsSeenIn = () => {
             As Seen In
           </p>
         </ScrollReveal>
-        <div className="flex items-center justify-center gap-5 md:gap-7 flex-wrap">
+        <div className="flex items-center justify-center gap-3 md:gap-5 flex-nowrap">
           {logos.map((logo, i) => (
             <ScrollReveal key={logo.alt} delay={50 + i * 45}>
               <img

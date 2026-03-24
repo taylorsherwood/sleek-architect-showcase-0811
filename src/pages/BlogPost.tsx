@@ -200,6 +200,8 @@ const BlogPost = () => {
         </div>
       </article>
 
+      <BlogCTA />
+      <RelatedInsights maxLinks={5} />
       <AboutBlock />
       <Footer />
     </div>

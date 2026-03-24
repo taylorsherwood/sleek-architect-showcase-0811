@@ -221,7 +221,7 @@ const Hero = () => {
                 letterSpacing: "0.28em",
                 textTransform: "uppercase",
                 fontWeight: 700
-              }}>
+              }} href="/invest">
               
               EXPLORE OPPORTUNITIES
             </Link>

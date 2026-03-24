@@ -131,8 +131,8 @@ const Index = () => {
         <IntroSection />
         <CommunitiesPreview />
         <CommercialCTA />
-        <div className="py-2 bg-background" />
-        <FeaturedListings />
+
+
         <SellerCTA />
         <div className="py-6 bg-background" />
         <Testimonials />

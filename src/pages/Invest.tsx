@@ -407,7 +407,7 @@ const Invest = () => {
                 afterImage={kitchen03After}
               />
               <div className="mt-5">
-                <h3 className="text-base font-display font-normal text-foreground tracking-wide">Kitchen Upgrade — West Lake</h3>
+                <h3 className="text-base font-display font-normal text-foreground tracking-wide">Kitchen Upgrade — Westlake Hills</h3>
                 <div className="w-8 h-px bg-gold/30 mt-2 mb-2" />
                 <p className="text-[0.82rem] text-muted-foreground/75 leading-relaxed">Refined surfaces, modernized finishes, and improved flow to elevate overall presentation and perceived value.</p>
               </div>

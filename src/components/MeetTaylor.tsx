@@ -9,7 +9,7 @@ const MeetTaylor = () => {
         className="pointer-events-none absolute right-[-5%] bottom-[-8%] hidden md:block w-[60vw] max-w-[1050px] aspect-square"
         aria-hidden="true"
         style={{
-          filter: 'none',
+          filter: 'blur(3px)',
         }}
       >
         <img

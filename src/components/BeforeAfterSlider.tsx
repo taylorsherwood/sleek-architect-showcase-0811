@@ -10,8 +10,8 @@ interface BeforeAfterSliderProps {
 const BeforeAfterSlider = ({
   beforeImage,
   afterImage,
-  beforeLabel = "Before",
-  afterLabel = "After",
+  beforeLabel = "Original",
+  afterLabel = "Reimagined",
 }: BeforeAfterSliderProps) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [position, setPosition] = useState(50);
@@ -159,37 +159,39 @@ const BeforeAfterSlider = ({
 
       {/* Labels */}
       <span
-        className="absolute font-sans pointer-events-none"
+        className="absolute pointer-events-none"
         style={{
-          bottom: 10,
-          left: 10,
-          background: "hsl(40 18% 93% / 0.72)",
-          color: "hsl(0 0% 42%)",
-          borderRadius: 1,
-          padding: "3px 8px",
-          fontSize: "0.52rem",
+          bottom: 12,
+          left: 12,
+          background: "hsl(40 20% 94% / 0.65)",
+          color: "hsl(0 0% 30%)",
+          borderRadius: 999,
+          padding: "4px 12px",
+          fontSize: "0.48rem",
           fontWeight: 400,
-          letterSpacing: "0.18em",
+          letterSpacing: "0.22em",
           textTransform: "uppercase" as const,
           lineHeight: 1,
+          fontFamily: '"Raleway", sans-serif',
         }}
       >
         {beforeLabel}
       </span>
       <span
-        className="absolute font-sans pointer-events-none"
+        className="absolute pointer-events-none"
         style={{
-          bottom: 10,
-          right: 10,
-          background: "hsl(40 18% 93% / 0.72)",
-          color: "hsl(0 0% 42%)",
-          borderRadius: 1,
-          padding: "3px 8px",
-          fontSize: "0.52rem",
+          bottom: 12,
+          right: 12,
+          background: "hsl(40 20% 94% / 0.65)",
+          color: "hsl(0 0% 30%)",
+          borderRadius: 999,
+          padding: "4px 12px",
+          fontSize: "0.48rem",
           fontWeight: 400,
-          letterSpacing: "0.18em",
+          letterSpacing: "0.22em",
           textTransform: "uppercase" as const,
           lineHeight: 1,
+          fontFamily: '"Raleway", sans-serif',
         }}
       >
         {afterLabel}

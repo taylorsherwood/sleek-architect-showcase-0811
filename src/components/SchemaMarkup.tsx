@@ -1,11 +1,12 @@
 import { useEffect } from "react";
 
 interface SchemaMarkupProps {
-  schema: Record<string, unknown> | Record<string, unknown>[];
+  schema: Record<string, unknown> | Record<string, unknown>[] | null;
 }
 
 const SchemaMarkup = ({ schema }: SchemaMarkupProps) => {
   useEffect(() => {
+    if (!schema) return;
     const script = document.createElement("script");
     script.type = "application/ld+json";
     script.text = JSON.stringify(schema);
@@ -241,15 +242,27 @@ export function createRealEstateListingSchema(listing: { name: string; descripti
 }
 
 export function createFAQSchema(faqs: { question: string; answer: string }[]) {
+  // Filter out invalid FAQ items: empty, too short, or duplicate
+  const seen = new Set<string>();
+  const validFaqs = faqs.filter(faq => {
+    const q = (faq.question || "").trim();
+    const a = (faq.answer || "").trim();
+    if (!q || !a || a.length < 20 || seen.has(q.toLowerCase())) return false;
+    seen.add(q.toLowerCase());
+    return true;
+  });
+
+  if (validFaqs.length === 0) return null;
+
   return {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": faqs.map(faq => ({
+    "mainEntity": validFaqs.map(faq => ({
       "@type": "Question",
-      "name": faq.question,
+      "name": faq.question.trim(),
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": faq.answer
+        "text": faq.answer.trim()
       }
     }))
   };

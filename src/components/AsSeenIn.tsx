@@ -5,10 +5,10 @@ import mediaAbj from "@/assets/media-abj.png";
 import mediaMansionGlobal from "@/assets/media-mansion-global.png";
 
 const logos = [
-  { src: mediaWsj, alt: "The Wall Street Journal", className: "h-32 md:h-40", opacity: 0.74 },
-  { src: mediaMansionGlobal, alt: "Mansion Global", className: "h-24 md:h-32", opacity: 0.74 },
-  { src: mediaTribeza, alt: "Tribeza", className: "h-22 md:h-28", opacity: 0.74 },
-  { src: mediaAbj, alt: "Austin Business Journal", className: "h-24 md:h-32", opacity: 0.7 },
+  { src: mediaWsj, alt: "The Wall Street Journal", className: "h-32 md:h-40", opacity: 0.74, ml: 0 },
+  { src: mediaMansionGlobal, alt: "Mansion Global", className: "h-24 md:h-32", opacity: 0.74, ml: 0 },
+  { src: mediaTribeza, alt: "Tribeza", className: "h-22 md:h-28", opacity: 0.74, ml: -6 },
+  { src: mediaAbj, alt: "Austin Business Journal", className: "h-24 md:h-32", opacity: 0.7, ml: -6 },
 ];
 
 const AsSeenIn = () => {
@@ -46,7 +46,7 @@ const AsSeenIn = () => {
                 loading="lazy"
                 decoding="async"
                 className={`${logo.className} w-auto object-contain transition-opacity duration-400`}
-                style={{ opacity: logo.opacity }}
+                style={{ opacity: logo.opacity, marginLeft: logo.ml ? `${logo.ml}px` : undefined }}
                 onMouseEnter={(e) => {
                   (e.currentTarget as HTMLImageElement).style.opacity = "0.9";
                 }}

@@ -212,7 +212,7 @@ const Invest = () => {
   const [submitting, setSubmitting] = useState(false);
 
   // Property acquisition form state
-  const [propForm, setPropForm] = useState({ propName: "", propContact: "", propAddress: "" });
+  const [propForm, setPropForm] = useState({ propName: "", propPhone: "", propEmail: "", propAddress: "" });
   const [propErrors, setPropErrors] = useState<Record<string, string>>({});
   const [propSubmitting, setPropSubmitting] = useState(false);
 

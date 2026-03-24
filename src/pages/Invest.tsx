@@ -551,12 +551,6 @@ const Invest = () => {
                 >
                   {propSubmitting ? "Submitting…" : "Request a Cash Offer"}
                 </button>
-                <Link
-                  to="/contact"
-                  className="hero-cta-btn px-8 py-4 border border-border text-foreground text-xs tracking-[0.25em] uppercase font-medium hover:bg-gold hover:text-white hover:border-gold transition-colors duration-300 text-center"
-                >
-                  Submit Property Details
-                </Link>
               </div>
             </form>
           </ScrollReveal>

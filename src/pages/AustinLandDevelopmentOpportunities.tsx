@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import heroImage from "@/assets/community-hill-country.jpg";
-import { formatPhoneNumber, buildWeb3Payload } from "@/lib/formUtils";
+import { formatPhoneNumber, getTimestamp } from "@/lib/formUtils";
 import RelatedInsights from "@/components/RelatedInsights";
 
 const SITE = "https://www.echelonpropertygroup.com";

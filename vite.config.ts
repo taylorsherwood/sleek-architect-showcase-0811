@@ -38,6 +38,12 @@ const staticRoutes = [
   "/land-for-sale-austin",
   "/luxury-homes-austin",
   "/invest",
+  "/private",
+  "/private-opportunities",
+  "/austin-multifamily-report-2026",
+  "/why-billionaires-are-moving-to-austin",
+  "/off-market-real-estate-austin",
+  "/austin-land-development-opportunities",
 ];
 
 const extractAll = (file: string, pattern: RegExp): string[] => {

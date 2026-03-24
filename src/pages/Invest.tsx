@@ -391,7 +391,7 @@ const Invest = () => {
             {/* Right — Lead Capture Form */}
             <div className="w-full max-w-[500px] mx-auto lg:mx-0 lg:ml-auto">
               <div className="bg-foreground/30 backdrop-blur-lg border border-primary-foreground/8 rounded-lg p-8 md:p-10">
-                <form onSubmit={handleSubmit} className="space-y-5" id="lead-form">
+                <form onSubmit={handleSubmit} className="space-y-4" id="lead-form">
                   <div>
                     <input
                       type="text"
@@ -449,12 +449,12 @@ const Invest = () => {
                   <button
                     type="submit"
                     disabled={submitting}
-                    className="w-full px-5 py-4 text-sm font-semibold rounded transition-all duration-200 disabled:opacity-50 bg-gold text-primary-foreground hover:bg-primary-foreground hover:text-gold"
+                    className="w-full px-5 py-3.5 text-sm font-semibold rounded transition-all duration-200 disabled:opacity-50 bg-gold text-primary-foreground hover:bg-primary-foreground hover:text-gold"
                     style={{ letterSpacing: "0.2em", textTransform: "uppercase" }}
                   >
                     {submitting ? "Submitting…" : "Request Private Access"}
                   </button>
-                  <p className="text-xs text-center text-primary-foreground/30 pt-1">
+                  <p className="text-[11px] text-center text-primary-foreground/20 pt-0.5">
                     Discreet updates from Echelon Property Group. No spam.
                   </p>
                 </form>

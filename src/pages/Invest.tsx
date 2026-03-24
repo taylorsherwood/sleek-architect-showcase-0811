@@ -552,7 +552,7 @@ const Invest = () => {
                   disabled={propSubmitting}
                   className="w-full py-3.5 bg-primary text-primary-foreground text-xs tracking-[0.25em] uppercase font-medium hover:bg-gold hover:text-white hover:-translate-y-px hover:shadow-md transition-all duration-300 disabled:opacity-50"
                 >
-                  {propSubmitting ? "Submitting…" : "REQUEST CASH OFFER"}
+{propSubmitting ? "Submitting…" : "REQUEST CASH OFFER"}
                 </button>
               </div>
             </form>

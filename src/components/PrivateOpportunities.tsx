@@ -70,15 +70,14 @@ const PrivateOpportunities = ({ variant = "light" }: PrivateOpportunitiesProps) 
     setErrors({});
     setSubmitting(true);
     try {
-      await fetch("https://hooks.zapier.com/hooks/catch/26916347/upj5fa0/", {
+      const response = await fetch("https://hooks.zapier.com/hooks/catch/26916347/upj5fa0/", {
         method: "POST",
-        mode: "no-cors",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           name: form.name,
           email: form.email,
           phone: form.phone || "Not provided",
-          investment_range: form.investmentRange || "Not specified",
+          investmentRange: form.investmentRange || "Not specified",
           source: "Private Opportunities Section",
           page_url: typeof window !== "undefined" ? window.location.href : "",
           submitted_at: new Date().toLocaleString("en-US", {
@@ -88,7 +87,7 @@ const PrivateOpportunities = ({ variant = "light" }: PrivateOpportunitiesProps) 
           }),
         }),
       });
-      // no-cors means opaque response; treat as success
+      if (!response.ok) throw new Error("Webhook request failed");
       navigate("/private-opportunities");
     } catch {
       toast({

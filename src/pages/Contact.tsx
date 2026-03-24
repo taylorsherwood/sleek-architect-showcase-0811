@@ -42,24 +42,21 @@ const Contact = () => {
     setErrors({});
     setSubmitting(true);
     try {
-      const response = await fetch("https://api.web3forms.com/submit", {
+      const response = await fetch("https://hooks.zapier.com/hooks/catch/26916347/upj5fa0/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(buildWeb3Payload({
-          accessKey: "81cc426e-b1a8-4e5e-b2a0-0d25738dfe12",
-          subject: "New Contact Form Submission",
+        body: JSON.stringify({
           name: form.name,
           email: form.email,
-          phone: form.phone,
+          phone: form.phone || "Not provided",
+          interest: form.interest,
+          message: form.message,
           source: "Contact Page",
-          extra: {
-            interest: form.interest,
-            message: form.message,
-          },
-        })),
+          page_url: typeof window !== "undefined" ? window.location.href : "",
+          submitted_at: getTimestamp(),
+        }),
       });
-      const data = await response.json();
-      if (data.success) {
+      if (response.ok) {
         toast({
           title: "Message Sent",
           description: "Thank you for reaching out. We'll be in touch shortly."

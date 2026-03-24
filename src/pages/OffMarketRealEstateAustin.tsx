@@ -50,23 +50,21 @@ const OffMarketRealEstateAustin = () => {
     if (!form.name.trim() || !form.email.trim() || !form.phone.trim()) return;
     setLoading(true);
     try {
-      const res = await fetch("https://api.web3forms.com/submit", {
+      const res = await fetch("https://hooks.zapier.com/hooks/catch/26916347/upj5fa0/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(buildWeb3Payload({
-          accessKey: "b2b7bb4b-7b0b-410e-b91c-5ff681e22c05",
-          subject: `Off-Market Lead — ${form.interest || "General"} — ${form.budget || "No budget"}`,
+        body: JSON.stringify({
           name: form.name,
           email: form.email,
-          phone: form.phone,
+          phone: form.phone || "Not provided",
+          interest: form.interest || "General",
+          budget: form.budget,
+          timeline: form.timeline,
+          notes: form.notes,
           source: "Off-Market Landing Page",
-          extra: {
-            interest: form.interest,
-            budget: form.budget,
-            timeline: form.timeline,
-            notes: form.notes,
-          },
-        })),
+          page_url: typeof window !== "undefined" ? window.location.href : "",
+          submitted_at: getTimestamp(),
+        }),
       });
       if (res.ok) {
         setSubmitted(true);

@@ -78,26 +78,23 @@ const HomeValueAustin = () => {
     }
     setErrors({});
     try {
-      const response = await fetch("https://api.web3forms.com/submit", {
+      const response = await fetch("https://hooks.zapier.com/hooks/catch/26916347/upj5fa0/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(buildWeb3Payload({
-          accessKey: "81cc426e-b1a8-4e5e-b2a0-0d25738dfe12",
-          subject: "Home Valuation Request — Home Value Page",
+        body: JSON.stringify({
           name: formData.name,
           email: formData.email,
-          phone: formData.phone,
+          phone: formData.phone || "Not provided",
+          property_address: formData.address,
+          property_type: formData.propertyType,
+          price_range: formData.priceRange,
+          notes: formData.notes || "",
           source: "Home Value Austin Page",
-          extra: {
-            "Property Address": formData.address,
-            "Property Type": formData.propertyType,
-            "Price Range": formData.priceRange,
-            notes: formData.notes || "",
-          },
-        })),
+          page_url: typeof window !== "undefined" ? window.location.href : "",
+          submitted_at: getTimestamp(),
+        }),
       });
-      const data = await response.json();
-      if (data.success) {
+      if (response.ok) {
         setSubmitted(true);
         toast({
           title: "Valuation Request Received",

@@ -368,7 +368,7 @@ const Invest = () => {
             Austin Real Estate Investment Advisory
           </p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-light text-primary-foreground leading-[1.1] mb-8 reveal">
-            Austin Investment Properties for Flippers, Builders & Value-Add Buyers
+            Austin Investment Properties for Value-Add Buyers
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/80 max-w-3xl mx-auto mb-10 leading-relaxed reveal-delayed font-light">
             Source smarter opportunities, evaluate upside with more precision, and move faster in

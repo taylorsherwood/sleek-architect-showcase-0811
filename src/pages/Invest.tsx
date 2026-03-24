@@ -292,7 +292,7 @@ const Invest = () => {
       <Navigation />
 
       {/* ──────────────────────── HERO ──────────────────────── */}
-      <section className="relative min-h-[75vh] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[75vh] flex items-center justify-center overflow-hidden pt-28 pb-12">
         <img
           src={heroImg}
           alt="Austin investment property development site — Echelon Property Group"

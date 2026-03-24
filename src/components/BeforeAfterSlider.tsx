@@ -10,8 +10,8 @@ interface BeforeAfterSliderProps {
 const BeforeAfterSlider = ({
   beforeImage,
   afterImage,
-  beforeLabel = "Before",
-  afterLabel = "After",
+  beforeLabel = "Original",
+  afterLabel = "Reimagined",
 }: BeforeAfterSliderProps) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [position, setPosition] = useState(50);

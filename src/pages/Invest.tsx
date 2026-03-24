@@ -523,7 +523,7 @@ const Invest = () => {
       <section className="relative py-24 md:py-32 bg-secondary/30 overflow-hidden">
         {/* Watermark */}
         <div
-          className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[60vw] max-w-[800px] aspect-square opacity-[0.03]"
+          className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] max-w-[1000px] aspect-square opacity-[0.06]"
           aria-hidden="true"
         >
           <img src={echelonWatermark} alt="" className="w-full h-full object-contain" />

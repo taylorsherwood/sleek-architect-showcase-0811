@@ -5,15 +5,15 @@ import mediaAbj from "@/assets/media-abj.png";
 import mediaMansionGlobal from "@/assets/media-mansion-global.png";
 
 const logos = [
-  { src: mediaWsj, alt: "The Wall Street Journal", className: "h-28 md:h-36", opacity: 0.72 },
+  { src: mediaWsj, alt: "The Wall Street Journal", className: "h-32 md:h-40", opacity: 0.74 },
   { src: mediaMansionGlobal, alt: "Mansion Global", className: "h-24 md:h-32", opacity: 0.68 },
-  { src: mediaTribeza, alt: "Tribeza", className: "h-24 md:h-32", opacity: 0.68 },
-  { src: mediaAbj, alt: "Austin Business Journal", className: "h-24 md:h-32", opacity: 0.68 },
+  { src: mediaTribeza, alt: "Tribeza", className: "h-22 md:h-28", opacity: 0.66 },
+  { src: mediaAbj, alt: "Austin Business Journal", className: "h-24 md:h-32", opacity: 0.7 },
 ];
 
 const AsSeenIn = () => {
   return (
-    <section className="pt-6 pb-8 md:pt-9 md:pb-10" style={{ background: "#F8F6F2" }}>
+    <section className="pt-5 pb-6 md:pt-7 md:pb-8" style={{ background: "#F8F6F2" }}>
       <div className="container mx-auto px-6 max-w-4xl">
         <ScrollReveal>
           <div

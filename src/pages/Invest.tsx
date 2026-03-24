@@ -243,12 +243,11 @@ const Invest = () => {
             accessKey: "81cc426e-b1a8-4e5e-b2a0-0d25738dfe12",
             subject: `Property Submission — ${propForm.propAddress}`,
             name: propForm.propName,
-            email: propForm.propContact,
-            phone: "",
+            email: propForm.propEmail,
+            phone: propForm.propPhone,
             source: "Invest Page — Property CTA",
             extra: {
               property_address: propForm.propAddress,
-              contact_info: propForm.propContact,
             },
           })
         ),

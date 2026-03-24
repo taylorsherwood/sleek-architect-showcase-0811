@@ -52,11 +52,7 @@ const LuxuryHomesAustin = () => {
       <FeaturedLuxuryListings />
 
       <Suspense fallback={<div className="min-h-[300px]" />}>
-        <RealScoutListings
-          listingStatus="For Sale,For Rent,In Contract"
-          heading={"\n\n\n\nCURRENTLY ON THE MARKET"}
-          subheading="Current Echelon Properties"
-        />
+        <FeaturedListings />
       </Suspense>
 
       <RealScoutSearch />

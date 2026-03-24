@@ -436,9 +436,9 @@ const Invest = () => {
                       className="w-full bg-foreground/40 border border-primary-foreground/10 px-5 py-3.5 text-primary-foreground focus:outline-none focus:border-primary-foreground/25 transition-colors duration-200 text-sm rounded appearance-none cursor-pointer"
                       style={!form.interest ? { color: "rgba(255,255,255,0.4)" } : undefined}
                     >
-                      <option value="" disabled style={{ background: "hsl(var(--primary))", color: "hsl(var(--primary-foreground))" }}>I'm interested as…</option>
-                      <option value="investor" style={{ background: "hsl(var(--primary))", color: "hsl(var(--primary-foreground))" }}>Investor</option>
-                      <option value="buyer" style={{ background: "hsl(var(--primary))", color: "hsl(var(--primary-foreground))" }}>Buyer</option>
+                      <option value="" disabled style={{ background: "hsl(var(--primary))", color: "hsl(var(--primary-foreground))" }}>What are you looking for?</option>
+                      <option value="buying" style={{ background: "hsl(var(--primary))", color: "hsl(var(--primary-foreground))" }}>Buying a Property</option>
+                      <option value="investment" style={{ background: "hsl(var(--primary))", color: "hsl(var(--primary-foreground))" }}>Investment & Off-Market Deals</option>
                       <option value="both" style={{ background: "hsl(var(--primary))", color: "hsl(var(--primary-foreground))" }}>Both</option>
                     </select>
                     <div className="pointer-events-none absolute inset-y-0 right-4 flex items-center">

@@ -223,7 +223,7 @@ const Hero = () => {
                 fontWeight: 700
               }}>
               
-              Explore Listings
+              EXPLORE OPPORTUNITIES
             </Link>
             <Link
               to="/contact"
@@ -236,7 +236,7 @@ const Hero = () => {
                 fontWeight: 400
               }}>
               
-              Schedule a Consultation
+              PRIVATE ACCESS
             </Link>
           </div>
         </div>

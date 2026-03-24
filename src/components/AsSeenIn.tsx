@@ -6,16 +6,16 @@ import mediaHaven from "@/assets/media-haven.png";
 import mediaMansionGlobal from "@/assets/media-mansion-global.png";
 
 const logos = [
-  { src: mediaWsj, alt: "The Wall Street Journal", className: "h-24 md:h-[8.5rem]", opacity: 0.62 },
+  { src: mediaWsj, alt: "The Wall Street Journal", className: "h-24 md:h-[9rem]", opacity: 0.66 },
   { src: mediaMansionGlobal, alt: "Mansion Global", className: "h-20 md:h-[7rem]", opacity: 0.55 },
-  { src: mediaTribeza, alt: "Tribeza", className: "h-20 md:h-[7rem]", opacity: 0.65 },
+  { src: mediaTribeza, alt: "Tribeza", className: "h-18 md:h-[6.5rem]", opacity: 0.58 },
   { src: mediaHaven, alt: "Haven Magazine", className: "h-20 md:h-[7rem]", opacity: 0.55 },
   { src: mediaAbj, alt: "Austin Business Journal", className: "h-20 md:h-[7rem]", opacity: 0.55 },
 ];
 
 const AsSeenIn = () => {
   return (
-    <section className="pt-8 pb-12 md:pt-11 md:pb-16" style={{ background: "#F8F6F2" }}>
+    <section className="pt-6 pb-10 md:pt-9 md:pb-14" style={{ background: "#F8F6F2" }}>
       <div className="container mx-auto px-6 max-w-4xl">
         <ScrollReveal>
           {/* Anchor divider */}

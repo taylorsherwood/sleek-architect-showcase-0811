@@ -159,7 +159,7 @@ const Navigation = () => {
             href="https://echelonpropertygroup.outportal.ai"
             target="_blank"
             rel="noopener noreferrer"
-            className="whitespace-nowrap text-[0.6rem] tracking-[0.18em] uppercase font-medium border border-border/60 text-muted-foreground hover:bg-primary hover:text-white px-4 py-2 min-h-[36px] inline-flex items-center transition-all duration-400"
+            className="whitespace-nowrap text-[0.65rem] tracking-[0.18em] uppercase font-medium border border-border/60 text-muted-foreground hover:bg-primary hover:text-white px-5 py-2.5 min-h-[38px] inline-flex items-center transition-all duration-400"
           >
             CLIENT PORTAL
           </a>
@@ -167,7 +167,7 @@ const Navigation = () => {
             href="https://taylorsherwood.realscout.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="whitespace-nowrap text-[0.6rem] tracking-[0.18em] uppercase font-medium text-primary-foreground bg-primary hover:bg-gold hover:text-primary-foreground px-5 py-2 min-h-[36px] inline-flex items-center transition-all duration-400"
+            className="whitespace-nowrap text-[0.65rem] tracking-[0.18em] uppercase font-medium text-primary-foreground bg-primary hover:bg-gold hover:text-primary-foreground px-6 py-2.5 min-h-[38px] inline-flex items-center transition-all duration-400"
           >
             SEARCH HOMES
           </a>

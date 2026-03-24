@@ -54,9 +54,8 @@ const MeetTaylor = () => {
               
               SCHEDULE A PRIVATE CONSULTATION
             </Link>
-            <div className="mt-6 mb-0">
-              <img src="/static-assets/echelon-logo-gold.png" alt="Echelon Property Group" title="Echelon Property Group logo" className="mx-auto h-44 w-auto" loading="lazy" decoding="async" />
-            </div>
+
+
           </div>
         </div>
       </div>

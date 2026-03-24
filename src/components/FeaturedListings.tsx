@@ -1,6 +1,10 @@
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
+interface FeaturedListingsProps {
+  hideRealScout?: boolean;
+}
+
 const listings = [
 {
   image: "/lovable-uploads/0fc79a0b-1fde-439f-bb08-6062e50770b7.jpg",

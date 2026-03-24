@@ -572,7 +572,7 @@ const Invest = () => {
             <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6 max-w-3xl">
               Investment Representation Built Around Opportunity, Not Emotion
             </h2>
-            <p className="text-muted-foreground max-w-3xl leading-relaxed mb-16">
+            <p className="text-foreground max-w-3xl leading-relaxed mb-16">
               This is not a generic home search experience. We help investors identify the right
               opportunities, understand neighborhood-specific demand, assess improvement potential,
               and make smarter acquisition decisions with resale or hold strategy in mind. Every

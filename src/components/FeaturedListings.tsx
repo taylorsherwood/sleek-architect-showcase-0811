@@ -145,11 +145,11 @@ const ListingCard = ({
     </Wrapper>);
 };
 
-const FeaturedListings = () => {
+const FeaturedListings = ({ hideRealScout = false }: FeaturedListingsProps) => {
   const widgetRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (!widgetRef.current) return;
+    if (hideRealScout || !widgetRef.current) return;
     const el = document.createElement("realscout-your-listings");
     el.setAttribute("agent-encoded-id", "QWdlbnQtMjg5NDU2");
     el.setAttribute("sort-order", "PRICE_HIGH");
@@ -164,7 +164,7 @@ const FeaturedListings = () => {
         widgetRef.current.removeChild(el);
       }
     };
-  }, []);
+  }, [hideRealScout]);
 
   return (
     <>

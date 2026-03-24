@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Home, Landmark, Building2, TrendingUp } from "lucide-react";
 import { z } from "zod";
 import { useToast } from "@/hooks/use-toast";
-import { formatPhoneNumber, buildWeb3Payload } from "@/lib/formUtils";
+import { formatPhoneNumber } from "@/lib/formUtils";
 import {
   Select,
   SelectContent,
@@ -70,31 +70,26 @@ const PrivateOpportunities = ({ variant = "light" }: PrivateOpportunitiesProps) 
     setErrors({});
     setSubmitting(true);
     try {
-      const response = await fetch("https://api.web3forms.com/submit", {
+      await fetch("https://hooks.zapier.com/hooks/catch/26916347/upj5fa0/", {
         method: "POST",
+        mode: "no-cors",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(buildWeb3Payload({
-          accessKey: "5728f4e2-7269-4f9f-8a06-62557292e699",
-          subject: "🔒 New Private Opportunities Request",
+        body: JSON.stringify({
           name: form.name,
           email: form.email,
-          phone: form.phone,
+          phone: form.phone || "Not provided",
+          investment_range: form.investmentRange || "Not specified",
           source: "Private Opportunities Section",
-          extra: {
-            "Investment Range": form.investmentRange || "Not specified",
-          },
-        })),
+          page_url: typeof window !== "undefined" ? window.location.href : "",
+          submitted_at: new Date().toLocaleString("en-US", {
+            timeZone: "America/Chicago",
+            dateStyle: "full",
+            timeStyle: "short",
+          }),
+        }),
       });
-      const data = await response.json();
-      if (data.success) {
-        navigate("/private-opportunities");
-      } else {
-        toast({
-          title: "Submission Failed",
-          description: "Something went wrong. Please try again.",
-          variant: "destructive",
-        });
-      }
+      // no-cors means opaque response; treat as success
+      navigate("/private-opportunities");
     } catch {
       toast({
         title: "Submission Failed",

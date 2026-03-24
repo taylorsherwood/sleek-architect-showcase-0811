@@ -31,7 +31,7 @@ const MeetTaylor = () => {
                 className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[60vw] max-w-[600px] aspect-square opacity-[0.06]"
                 aria-hidden="true"
               >
-                <img src="/assets/echelon-watermark.png" alt="" className="w-full h-full object-contain" />
+                <img src={echelonWatermark} alt="" className="w-full h-full object-contain" />
               </div>
               <h4 className="text-minimal text-gold mb-4 font-extrabold">{"\n\n"}AUSTIN LUXURY REAL ESTATE SPECIALIST</h4>
               <p className="text-muted-foreground leading-relaxed max-w-md text-xl mb-6">

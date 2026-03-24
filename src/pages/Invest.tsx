@@ -39,6 +39,7 @@ import {
 } from "lucide-react";
 
 import heroImg from "@/assets/invest-hero.jpg";
+import echelonWatermark from "@/assets/echelon-watermark.png";
 
 /* ------------------------------------------------------------------ */
 /*  DATA                                                               */

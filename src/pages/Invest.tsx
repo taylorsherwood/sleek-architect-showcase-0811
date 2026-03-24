@@ -598,12 +598,6 @@ const Invest = () => {
       </section>
 
 
-                </div>
-                <div>
-                  <input
-                    type="text"
-                    name="propContact"
-                    placeholder="Phone or Email"
                     value={propForm.propContact}
                     onChange={handlePropChange}
                     className="w-full bg-transparent border-b border-border/60 px-1 py-3 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-gold/50 transition-colors duration-300 text-sm"

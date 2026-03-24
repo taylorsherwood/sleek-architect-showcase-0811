@@ -30,7 +30,7 @@ const About = () => {
       <section className="pt-32 pb-20 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
-            <p className="text-minimal text-gold mb-4">ABOUT US</p>
+            <p className="text-minimal text-gold mb-4 font-extrabold">ABOUT US</p>
             <h1 className="text-5xl md:text-7xl font-display font-light text-architectural mb-8">
               Built on Trust,
               <br />

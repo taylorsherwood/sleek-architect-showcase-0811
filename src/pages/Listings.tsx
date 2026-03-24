@@ -166,7 +166,7 @@ const Listings = () => {
       />
 
       {/* Commercial & Investment Listings */}
-      <section className="py-16 md:py-24 bg-background border-t border-border">
+      <section className="py-10 md:py-14 bg-background border-t border-border">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
             <div className="mb-16">

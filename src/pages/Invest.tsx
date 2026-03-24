@@ -474,7 +474,7 @@ const Invest = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {howWeHelp.map((card, i) => (
               <ScrollReveal key={card.title} delay={i * 80}>
-                <div className="border border-border bg-card p-8 h-full hover:border-gold/40 transition-colors duration-500">
+                <div className="group border-2 border-border bg-card p-8 h-full hover:border-gold transition-colors duration-500">
                   <card.icon className="w-5 h-5 text-gold mb-4" />
                   <h3 className="text-lg font-display font-light text-foreground mb-2">
                     {card.title}

@@ -393,7 +393,7 @@ const Invest = () => {
       </section>
 
       {/* ──────────────────────── WHO WE WORK WITH ──────────────────────── */}
-      <section className="pt-16 md:pt-20 pb-24 md:pb-32 bg-background">
+      <section className="pt-16 md:pt-20 pb-16 md:pb-20 bg-background">
         <div className="max-w-6xl mx-auto px-6">
           <ScrollReveal>
             <p className="text-minimal text-gold mb-4">Client Focus</p>
@@ -420,7 +420,7 @@ const Invest = () => {
       </section>
 
       {/* ──────────────────────── BEFORE / AFTER ──────────────────────── */}
-      <section className="pt-16 md:pt-20 pb-20 md:pb-28 bg-secondary/30">
+      <section className="pt-10 md:pt-14 pb-20 md:pb-28 bg-secondary/30">
         <div className="max-w-4xl mx-auto px-6">
           <ScrollReveal>
             <p className="text-minimal text-gold mb-4 tracking-[0.25em]">Portfolio</p>

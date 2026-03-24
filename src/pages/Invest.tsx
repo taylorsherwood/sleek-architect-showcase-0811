@@ -565,14 +565,15 @@ const Invest = () => {
             <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6 max-w-3xl">
               Investment Representation Built Around Opportunity, Not Emotion
             </h2>
-            <p className="text-foreground max-w-3xl leading-relaxed mb-16">
+            <p className="text-foreground max-w-3xl leading-relaxed mb-6">
               This is not a generic home search experience. We help investors identify the right
               opportunities, understand neighborhood-specific demand, assess improvement potential,
               and make smarter acquisition decisions with resale or hold strategy in mind. Every
               recommendation is grounded in data, local insight, and a clear understanding of
-              where value is created. Source smarter opportunities, evaluate upside with more
-              precision, and move faster in Austin with an advisor who understands renovation
-              potential, redevelopment value, and resale positioning.
+              where value is created.
+            </p>
+            <p className="text-foreground max-w-3xl leading-relaxed mb-16">
+              Source smarter opportunities, evaluate upside with more precision, and move faster in Austin with an advisor who understands renovation potential, redevelopment value, and resale positioning.
             </p>
           </ScrollReveal>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

@@ -20,7 +20,7 @@ const AsSeenIn = () => {
         <ScrollReveal>
           {/* Anchor divider */}
           <div
-            className="mx-auto mb-5 md:mb-6"
+            className="mx-auto mb-4 md:mb-5"
             style={{
               width: "56px",
               height: "1px",
@@ -28,7 +28,7 @@ const AsSeenIn = () => {
             }}
           />
           <p
-            className="text-center mb-5 md:mb-6"
+            className="text-center mb-4 md:mb-5"
             style={{
               fontSize: "0.6rem",
               letterSpacing: "0.25em",

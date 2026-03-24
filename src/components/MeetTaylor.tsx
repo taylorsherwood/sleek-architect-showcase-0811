@@ -6,10 +6,22 @@ const MeetTaylor = () => {
     <section className="relative pt-8 pb-4 bg-background overflow-hidden">
       {/* Watermark — centered in the gap between text blocks */}
       <div
-        className="pointer-events-none absolute left-[60%] top-[53%] -translate-x-1/2 -translate-y-1/2 hidden md:block w-[50vw] max-w-[900px] aspect-square opacity-[0.06]"
+        className="pointer-events-none absolute right-[-5%] bottom-[-8%] hidden md:block w-[60vw] max-w-[1050px] aspect-square"
         aria-hidden="true"
+        style={{
+          filter: 'blur(3px)',
+          maskImage: 'radial-gradient(ellipse 70% 70% at 80% 80%, black 10%, transparent 70%)',
+          WebkitMaskImage: 'radial-gradient(ellipse 70% 70% at 80% 80%, black 10%, transparent 70%)',
+        }}
       >
-        <img src={echelonWatermark} alt="" className="w-full h-full object-contain" />
+        <img
+          src={echelonWatermark}
+          alt=""
+          className="w-full h-full object-contain opacity-[0.07]"
+          style={{
+            filter: 'sepia(60%) saturate(40%) hue-rotate(5deg) brightness(1.1)',
+          }}
+        />
       </div>
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">

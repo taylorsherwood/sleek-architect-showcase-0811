@@ -100,6 +100,8 @@ const Listings = () => {
         </div>
       </section>
 
+      <div className="py-8 bg-background" />
+
       <section className="pb-28">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto space-y-20">

@@ -371,9 +371,8 @@ const Invest = () => {
             Austin Investment Properties for Value-Add Buyers
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/80 max-w-3xl mx-auto mb-10 leading-relaxed reveal-delayed font-light">
-            Source smarter opportunities, evaluate upside with more precision, and move faster in
-            Austin with an advisor who understands renovation potential, redevelopment value, and
-            resale positioning.
+            Source smarter opportunities and execute with precision across Austin's
+            <br /> value-add market.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 reveal-delayed-2">
             <a

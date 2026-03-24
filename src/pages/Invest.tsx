@@ -301,7 +301,7 @@ const Invest = () => {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-foreground/70 via-foreground/50 to-foreground/70" />
         <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
-          <p className="text-minimal text-gold mb-6 reveal" style={{ textShadow: '0 0 12px rgba(0,0,0,0.5), 0 0 24px rgba(0,0,0,0.3)' }}>
+          <p className="text-minimal text-gold mb-6 reveal font-semibold" style={{ textShadow: '0 0 8px rgba(0,0,0,0.6), 0 0 20px rgba(0,0,0,0.4), 0 1px 3px rgba(0,0,0,0.5)', letterSpacing: '0.35em' }}>
             Austin Real Estate Investment Advisory
           </p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-light text-primary-foreground leading-[1.1] mb-8 reveal">

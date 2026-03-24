@@ -426,9 +426,8 @@ const Sell = () => {
             {/* Left column — Copy */}
             <div className="max-w-[620px]">
               <ScrollReveal>
-                <p
-                  className="text-gold mb-6 font-extrabold"
-                  style={{ fontSize: "0.6rem", letterSpacing: "0.35em", textTransform: "uppercase", fontFamily: '"Raleway", sans-serif' }}
+              <p
+                  className="text-minimal text-gold mb-6 font-extrabold"
                 >
                   MARKETING STRATEGY
                 </p>

@@ -430,11 +430,11 @@ const Invest = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {processSteps.map((step, i) => (
               <ScrollReveal key={step.number} delay={i * 100}>
-                <div className="relative">
-                  <span className="text-5xl font-display font-light text-gold/40 mb-4 block">
+                <div className="relative group">
+                  <span className="text-5xl font-display font-light text-gold/40 mb-4 block transition-colors duration-500 group-hover:text-gold">
                     {step.number}
                   </span>
-                  <h3 className="text-lg font-display font-light text-foreground mb-2">
+                  <h3 className="text-lg font-display font-light text-foreground mb-2 transition-colors duration-300 group-hover:text-muted-foreground">
                     {step.title}
                   </h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">

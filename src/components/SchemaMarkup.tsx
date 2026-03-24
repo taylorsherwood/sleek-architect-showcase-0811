@@ -1,10 +1,11 @@
 import { useEffect } from "react";
 
 interface SchemaMarkupProps {
-  schema: Record<string, unknown> | Record<string, unknown>[];
+  schema: Record<string, unknown> | Record<string, unknown>[] | null;
 }
 
 const SchemaMarkup = ({ schema }: SchemaMarkupProps) => {
+  if (!schema) return null;
   useEffect(() => {
     const script = document.createElement("script");
     script.type = "application/ld+json";

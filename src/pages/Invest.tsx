@@ -267,7 +267,7 @@ const Invest = () => {
     }
   };
 
-
+  const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
   ) => {
     const { name, value } = e.target;

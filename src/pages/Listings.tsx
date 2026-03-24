@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import RealScoutListings from "@/components/RealScoutListings";
@@ -7,6 +8,8 @@ import SchemaMarkup, { createRealEstateListingSchema, createBreadcrumbSchema } f
 import listing1 from "@/assets/listing-1.jpg";
 import listing2 from "@/assets/listing-2.jpg";
 import listing3 from "@/assets/listing-3.jpg";
+import gillisStreet from "@/assets/commercial-gillis-street.jpg";
+import sanJoseAve from "@/assets/commercial-san-jose-ave.jpg";
 
 const listings = [
   {
@@ -20,6 +23,40 @@ const listings = [
     acres: "0.55",
     description: "Elegant villa in the heart of Barton Creek with refined finishes, open floor plan, and access to world-class amenities.",
     link: "https://www.villagovernorshill.com",
+  },
+];
+
+const commercialLabelStyle = {
+  fontSize: "0.6rem" as const,
+  letterSpacing: "0.3em",
+  textTransform: "uppercase" as const,
+  fontFamily: '"Raleway", sans-serif',
+};
+
+const commercialListings = [
+  {
+    image: gillisStreet,
+    alt: "4314 Gillis Street, Austin TX 78745 — 24-unit multifamily",
+    title: "4314 Gillis Street — 24-unit multifamily investment, Austin TX",
+    badge: "MULTIFAMILY",
+    name: "4314 Gillis Street",
+    location: "Austin, TX 78745",
+    price: "$2,500,000",
+    assetType: "Value-Add Multifamily",
+    units: "24",
+    description: "24-unit value-add multifamily opportunity in South Austin. Well-positioned for rent growth and operational improvements in a high-demand rental corridor.",
+  },
+  {
+    image: sanJoseAve,
+    alt: "10811 San Jose Ave, Del Valle TX — 3.06 acres redevelopment land",
+    title: "10811 San Jose Ave — development land opportunity, Del Valle TX",
+    badge: "DEVELOPMENT LAND",
+    name: "10811 San Jose Ave",
+    location: "Del Valle, TX",
+    price: "$1,600,000",
+    assetType: "Redevelopment Land",
+    units: "3.06 Acres",
+    description: "3.06-acre redevelopment parcel with existing mobile homes and zero zoning restrictions. Ideal for ground-up multifamily, mixed-use, or commercial development in the high-growth Del Valle corridor.",
   },
 ];
 
@@ -128,11 +165,77 @@ const Listings = () => {
         subheading="Current Echelon Properties"
       />
 
+      {/* Commercial & Investment Listings */}
+      <section className="py-16 md:py-24 bg-background border-t border-border">
+        <div className="container mx-auto px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="mb-16">
+              <p className="text-gold text-center mb-4 font-bold" style={commercialLabelStyle}>COMMERCIAL & INVESTMENT</p>
+              <h2 className="font-display text-2xl md:text-3xl font-light text-foreground text-center mb-4">
+                Current Commercial Listings
+              </h2>
+              <p className="text-muted-foreground text-sm text-center max-w-2xl mx-auto">
+                Available commercial, land, and investment opportunities represented by Echelon Property Group.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              {commercialListings.map((listing, index) => (
+                <div
+                  key={index}
+                  className="border-2 border-border overflow-hidden group bg-card hover:border-gold transition-colors duration-500"
+                >
+                  <div className="relative overflow-hidden">
+                    <img
+                      src={listing.image}
+                      alt={listing.alt}
+                      title={listing.title}
+                      className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span className="absolute top-4 left-4 text-minimal bg-gold text-white px-3 py-1 font-extrabold">
+                      {listing.badge}
+                    </span>
+                  </div>
+                  <div className="p-8">
+                    <div className="flex items-center justify-between mb-4">
+                      <h3 className="text-xl font-display font-light text-foreground">
+                        {listing.name}
+                      </h3>
+                      <span className="text-2xl font-display font-light text-foreground">{listing.price}</span>
+                    </div>
+                    <p className="text-muted-foreground mb-4">{listing.location}</p>
+                    <div className="grid grid-cols-2 gap-4 mb-6">
+                      <div>
+                        <p className="text-muted-foreground mb-1" style={commercialLabelStyle}>ASSET TYPE</p>
+                        <p className="text-foreground font-medium text-sm">{listing.assetType}</p>
+                      </div>
+                      <div>
+                        <p className="text-muted-foreground mb-1" style={commercialLabelStyle}>UNITS</p>
+                        <p className="text-foreground font-medium text-sm">{listing.units}</p>
+                      </div>
+                    </div>
+                    <p className="text-muted-foreground text-sm leading-relaxed mb-6">
+                      {listing.description}
+                    </p>
+                    <Link
+                      to="/contact"
+                      className="inline-block bg-white text-primary border border-border hover:bg-gold hover:text-white hover:border-gold px-8 py-4 transition-all duration-300 ease-out active:scale-[0.98]"
+                      style={commercialLabelStyle}
+                    >
+                      REQUEST INFORMATION
+                    </Link>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Find Your Next Chapter search block */}
       <RealScoutSearch />
-
-
-
 
       <Footer />
     </div>

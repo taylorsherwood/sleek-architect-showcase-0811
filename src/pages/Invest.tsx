@@ -389,8 +389,8 @@ const Invest = () => {
             </div>
 
             {/* Right — Lead Capture Form */}
-            <div className="bg-background/5 backdrop-blur-md border border-primary-foreground/15 rounded-lg p-6 md:p-8">
-              <form onSubmit={handleSubmit} className="space-y-4" id="lead-form">
+            <div className="bg-foreground/40 backdrop-blur-xl border border-primary-foreground/10 rounded-lg p-7 md:p-9 shadow-2xl">
+              <form onSubmit={handleSubmit} className="space-y-5" id="lead-form">
                 <div>
                   <input
                     type="text"
@@ -399,7 +399,7 @@ const Invest = () => {
                     value={form.name}
                     onChange={handleChange}
                     maxLength={100}
-                    className="w-full bg-primary-foreground/10 border border-primary-foreground/20 px-4 py-3 text-primary-foreground placeholder:text-primary-foreground/40 focus:outline-none focus:border-[hsl(42,37%,57%)] transition-colors duration-200 text-sm rounded"
+                    className="w-full bg-primary-foreground/8 border border-primary-foreground/15 px-5 py-3.5 text-primary-foreground placeholder:text-primary-foreground/45 focus:outline-none focus:border-gold/60 transition-colors duration-200 text-sm rounded"
                   />
                   {errors.name && <p className="text-destructive text-xs mt-1">{errors.name}</p>}
                 </div>
@@ -411,7 +411,7 @@ const Invest = () => {
                     value={form.email}
                     onChange={handleChange}
                     maxLength={255}
-                    className="w-full bg-primary-foreground/10 border border-primary-foreground/20 px-4 py-3 text-primary-foreground placeholder:text-primary-foreground/40 focus:outline-none focus:border-[hsl(42,37%,57%)] transition-colors duration-200 text-sm rounded"
+                    className="w-full bg-primary-foreground/8 border border-primary-foreground/15 px-5 py-3.5 text-primary-foreground placeholder:text-primary-foreground/45 focus:outline-none focus:border-gold/60 transition-colors duration-200 text-sm rounded"
                   />
                   {errors.email && <p className="text-destructive text-xs mt-1">{errors.email}</p>}
                 </div>
@@ -423,33 +423,37 @@ const Invest = () => {
                     value={form.phone}
                     onChange={handleChange}
                     maxLength={20}
-                    className="w-full bg-primary-foreground/10 border border-primary-foreground/20 px-4 py-3 text-primary-foreground placeholder:text-primary-foreground/40 focus:outline-none focus:border-[hsl(42,37%,57%)] transition-colors duration-200 text-sm rounded"
+                    className="w-full bg-primary-foreground/8 border border-primary-foreground/15 px-5 py-3.5 text-primary-foreground placeholder:text-primary-foreground/45 focus:outline-none focus:border-gold/60 transition-colors duration-200 text-sm rounded"
                   />
                   {errors.phone && <p className="text-destructive text-xs mt-1">{errors.phone}</p>}
                 </div>
-                <div>
+                <div className="relative">
                   <select
                     name="interest"
                     value={form.interest}
                     onChange={handleChange}
-                    className="w-full bg-primary-foreground/10 border border-primary-foreground/20 px-4 py-3 text-primary-foreground focus:outline-none focus:border-[hsl(42,37%,57%)] transition-colors duration-200 text-sm rounded appearance-none"
-                    style={!form.interest ? { color: "rgba(255,255,255,0.4)" } : undefined}
+                    className="w-full bg-primary-foreground/8 border border-primary-foreground/15 px-5 py-3.5 text-primary-foreground focus:outline-none focus:border-gold/60 transition-colors duration-200 text-sm rounded appearance-none cursor-pointer"
+                    style={!form.interest ? { color: "rgba(255,255,255,0.45)" } : undefined}
                   >
-                    <option value="" disabled>I'm interested as…</option>
-                    <option value="investor">Investor</option>
-                    <option value="buyer">Buyer</option>
-                    <option value="both">Both</option>
+                    <option value="" disabled className="bg-primary text-primary-foreground">I'm interested as…</option>
+                    <option value="investor" className="bg-primary text-primary-foreground py-2">Investor</option>
+                    <option value="buyer" className="bg-primary text-primary-foreground py-2">Buyer</option>
+                    <option value="both" className="bg-primary text-primary-foreground py-2">Both</option>
                   </select>
+                  <div className="pointer-events-none absolute inset-y-0 right-4 flex items-center">
+                    <svg className="h-4 w-4 text-primary-foreground/40" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+                  </div>
                   {errors.interest && <p className="text-destructive text-xs mt-1">{errors.interest}</p>}
                 </div>
                 <button
                   type="submit"
                   disabled={submitting}
-                  className="w-full px-5 py-3.5 text-sm font-medium tracking-widest uppercase rounded transition-all duration-200 disabled:opacity-50 bg-primary-foreground text-primary hover:bg-[hsl(42,37%,57%)] hover:text-primary-foreground border border-primary-foreground/30"
+                  className="w-full px-5 py-4 text-sm font-semibold rounded transition-all duration-200 disabled:opacity-50 bg-primary-foreground text-primary hover:bg-gold hover:text-primary-foreground border border-primary-foreground/30"
+                  style={{ letterSpacing: "0.22em", textTransform: "uppercase" }}
                 >
                   {submitting ? "Submitting…" : "Request Private Access"}
                 </button>
-                <p className="text-xs text-center text-primary-foreground/40">
+                <p className="text-xs text-center text-primary-foreground/35 pt-1">
                   Discreet updates from Echelon Property Group. No spam.
                 </p>
               </form>

@@ -318,7 +318,7 @@ const Invest = () => {
           title: "Request Received",
           description: "We'll be in touch shortly to discuss your investment goals.",
         });
-        setForm({ name: "", email: "", phone: "", investmentType: "", targetAreas: "", budget: "", timeline: "", notes: "" });
+        setForm({ name: "", email: "", phone: "", interest: "", investmentType: "", targetAreas: "", budget: "", timeline: "", notes: "" });
         setErrors({});
       } else {
         toast({ title: "Submission Failed", description: "Please try again or call us directly.", variant: "destructive" });

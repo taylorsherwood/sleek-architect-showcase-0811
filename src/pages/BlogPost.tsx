@@ -39,24 +39,23 @@ const BlogPost = () => {
     );
   }
 
-  // Extract FAQs from content
-  const faqMatches = post.content.match(/### (.+?)\n(.+?)(?=\n###|\n##|$)/gs);
+  // Extract FAQs from content — only from "Frequently Asked Questions" section
   const faqs: { question: string; answer: string }[] = [];
-  if (faqMatches) {
-    const faqSection = post.content.includes("Frequently Asked Questions");
-    if (faqSection) {
-      const faqContent = post.content.split("Frequently Asked Questions")[1] || "";
-      const faqItems = faqContent.match(/### (.+?)\n([\s\S]+?)(?=\n###|$)/g);
-      if (faqItems) {
-        faqItems.forEach(item => {
-          const lines = item.trim().split('\n');
-          const question = lines[0].replace('### ', '');
-          const answer = lines.slice(1).join(' ').trim();
-          if (question && answer) {
-            faqs.push({ question, answer });
-          }
-        });
-      }
+  if (post.content.includes("Frequently Asked Questions")) {
+    const faqContent = post.content.split("Frequently Asked Questions")[1] || "";
+    const faqItems = faqContent.match(/### (.+?)\n([\s\S]+?)(?=\n###|$)/g);
+    if (faqItems) {
+      faqItems.forEach(item => {
+        const lines = item.trim().split('\n');
+        const question = lines[0].replace('### ', '').trim();
+        const answer = lines.slice(1).join(' ').replace(/\s+/g, ' ').trim();
+        // Only include if answer is substantive (20+ chars)
+        if (question && answer && answer.length >= 20) {
+          faqs.push({ question, answer });
+        }
+      });
+    }
+  }
     }
   }
 

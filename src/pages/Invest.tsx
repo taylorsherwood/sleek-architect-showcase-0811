@@ -466,7 +466,7 @@ const Invest = () => {
       <section className="py-24 md:py-32 bg-secondary/30">
         <div className="max-w-6xl mx-auto px-6">
           <ScrollReveal>
-            <p className="text-minimal text-muted-foreground mb-4">Value Proposition</p>
+            <p className="text-minimal text-gold mb-4">Value Proposition</p>
             <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-16 max-w-3xl">
               How We Help Investors Move Smarter
             </h2>

@@ -366,8 +366,8 @@ const Invest = () => {
           loading="eager"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-foreground/80 via-foreground/65 to-foreground/80" />
-        <div className="relative z-10 max-w-5xl mx-auto px-6 w-full">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="relative z-10 max-w-6xl mx-auto px-6 w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             {/* Left — Copy */}
             <div className="text-center lg:text-left">
               <p
@@ -389,74 +389,76 @@ const Invest = () => {
             </div>
 
             {/* Right — Lead Capture Form */}
-            <div className="bg-foreground/30 backdrop-blur-lg border border-primary-foreground/8 rounded-lg p-7 md:p-9">
-              <form onSubmit={handleSubmit} className="space-y-4" id="lead-form">
-                <div>
-                  <input
-                    type="text"
-                    name="name"
-                    placeholder="Full Name"
-                    value={form.name}
-                    onChange={handleChange}
-                    maxLength={100}
-                    className="w-full bg-foreground/40 border border-primary-foreground/10 px-5 py-3.5 text-primary-foreground placeholder:text-primary-foreground/40 focus:outline-none focus:border-primary-foreground/25 transition-colors duration-200 text-sm rounded"
-                  />
-                  {errors.name && <p className="text-destructive text-xs mt-1">{errors.name}</p>}
-                </div>
-                <div>
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Email Address"
-                    value={form.email}
-                    onChange={handleChange}
-                    maxLength={255}
-                    className="w-full bg-foreground/40 border border-primary-foreground/10 px-5 py-3.5 text-primary-foreground placeholder:text-primary-foreground/40 focus:outline-none focus:border-primary-foreground/25 transition-colors duration-200 text-sm rounded"
-                  />
-                  {errors.email && <p className="text-destructive text-xs mt-1">{errors.email}</p>}
-                </div>
-                <div>
-                  <input
-                    type="tel"
-                    name="phone"
-                    placeholder="Phone Number"
-                    value={form.phone}
-                    onChange={handleChange}
-                    maxLength={20}
-                    className="w-full bg-foreground/40 border border-primary-foreground/10 px-5 py-3.5 text-primary-foreground placeholder:text-primary-foreground/40 focus:outline-none focus:border-primary-foreground/25 transition-colors duration-200 text-sm rounded"
-                  />
-                  {errors.phone && <p className="text-destructive text-xs mt-1">{errors.phone}</p>}
-                </div>
-                <div className="relative">
-                  <select
-                    name="interest"
-                    value={form.interest}
-                    onChange={handleChange}
-                    className="w-full bg-foreground/40 border border-primary-foreground/10 px-5 py-3.5 text-primary-foreground focus:outline-none focus:border-primary-foreground/25 transition-colors duration-200 text-sm rounded appearance-none cursor-pointer"
-                    style={!form.interest ? { color: "rgba(255,255,255,0.4)" } : undefined}
-                  >
-                    <option value="" disabled style={{ background: "hsl(var(--primary))", color: "hsl(var(--primary-foreground))" }}>I'm interested as…</option>
-                    <option value="investor" style={{ background: "hsl(var(--primary))", color: "hsl(var(--primary-foreground))" }}>Investor</option>
-                    <option value="buyer" style={{ background: "hsl(var(--primary))", color: "hsl(var(--primary-foreground))" }}>Buyer</option>
-                    <option value="both" style={{ background: "hsl(var(--primary))", color: "hsl(var(--primary-foreground))" }}>Both</option>
-                  </select>
-                  <div className="pointer-events-none absolute inset-y-0 right-4 flex items-center">
-                    <svg className="h-4 w-4 text-primary-foreground/35" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+            <div className="w-full max-w-[500px] mx-auto lg:mx-0 lg:ml-auto">
+              <div className="bg-foreground/30 backdrop-blur-lg border border-primary-foreground/8 rounded-lg p-8 md:p-10">
+                <form onSubmit={handleSubmit} className="space-y-5" id="lead-form">
+                  <div>
+                    <input
+                      type="text"
+                      name="name"
+                      placeholder="Full Name"
+                      value={form.name}
+                      onChange={handleChange}
+                      maxLength={100}
+                      className="w-full bg-foreground/40 border border-primary-foreground/10 px-5 py-3.5 text-primary-foreground placeholder:text-primary-foreground/40 focus:outline-none focus:border-primary-foreground/25 transition-colors duration-200 text-sm rounded"
+                    />
+                    {errors.name && <p className="text-destructive text-xs mt-1">{errors.name}</p>}
                   </div>
-                  {errors.interest && <p className="text-destructive text-xs mt-1">{errors.interest}</p>}
-                </div>
-                <button
-                  type="submit"
-                  disabled={submitting}
-                  className="w-full px-5 py-4 text-sm font-semibold rounded transition-all duration-200 disabled:opacity-50 bg-gold text-primary hover:bg-gold/85"
-                  style={{ letterSpacing: "0.2em", textTransform: "uppercase" }}
-                >
-                  {submitting ? "Submitting…" : "Request Private Access"}
-                </button>
-                <p className="text-xs text-center text-primary-foreground/30 pt-1">
-                  Discreet updates from Echelon Property Group. No spam.
-                </p>
-              </form>
+                  <div>
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Email Address"
+                      value={form.email}
+                      onChange={handleChange}
+                      maxLength={255}
+                      className="w-full bg-foreground/40 border border-primary-foreground/10 px-5 py-3.5 text-primary-foreground placeholder:text-primary-foreground/40 focus:outline-none focus:border-primary-foreground/25 transition-colors duration-200 text-sm rounded"
+                    />
+                    {errors.email && <p className="text-destructive text-xs mt-1">{errors.email}</p>}
+                  </div>
+                  <div>
+                    <input
+                      type="tel"
+                      name="phone"
+                      placeholder="Phone Number"
+                      value={form.phone}
+                      onChange={handleChange}
+                      maxLength={20}
+                      className="w-full bg-foreground/40 border border-primary-foreground/10 px-5 py-3.5 text-primary-foreground placeholder:text-primary-foreground/40 focus:outline-none focus:border-primary-foreground/25 transition-colors duration-200 text-sm rounded"
+                    />
+                    {errors.phone && <p className="text-destructive text-xs mt-1">{errors.phone}</p>}
+                  </div>
+                  <div className="relative">
+                    <select
+                      name="interest"
+                      value={form.interest}
+                      onChange={handleChange}
+                      className="w-full bg-foreground/40 border border-primary-foreground/10 px-5 py-3.5 text-primary-foreground focus:outline-none focus:border-primary-foreground/25 transition-colors duration-200 text-sm rounded appearance-none cursor-pointer"
+                      style={!form.interest ? { color: "rgba(255,255,255,0.4)" } : undefined}
+                    >
+                      <option value="" disabled style={{ background: "hsl(var(--primary))", color: "hsl(var(--primary-foreground))" }}>I'm interested as…</option>
+                      <option value="investor" style={{ background: "hsl(var(--primary))", color: "hsl(var(--primary-foreground))" }}>Investor</option>
+                      <option value="buyer" style={{ background: "hsl(var(--primary))", color: "hsl(var(--primary-foreground))" }}>Buyer</option>
+                      <option value="both" style={{ background: "hsl(var(--primary))", color: "hsl(var(--primary-foreground))" }}>Both</option>
+                    </select>
+                    <div className="pointer-events-none absolute inset-y-0 right-4 flex items-center">
+                      <svg className="h-4 w-4 text-primary-foreground/35" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+                    </div>
+                    {errors.interest && <p className="text-destructive text-xs mt-1">{errors.interest}</p>}
+                  </div>
+                  <button
+                    type="submit"
+                    disabled={submitting}
+                    className="w-full px-5 py-4 text-sm font-semibold rounded transition-all duration-200 disabled:opacity-50 bg-gold text-primary hover:bg-gold/85"
+                    style={{ letterSpacing: "0.2em", textTransform: "uppercase" }}
+                  >
+                    {submitting ? "Submitting…" : "Request Private Access"}
+                  </button>
+                  <p className="text-xs text-center text-primary-foreground/30 pt-1">
+                    Discreet updates from Echelon Property Group. No spam.
+                  </p>
+                </form>
+              </div>
             </div>
           </div>
         </div>

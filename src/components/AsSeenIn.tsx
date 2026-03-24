@@ -13,7 +13,7 @@ const logos = [
 
 const AsSeenIn = () => {
   return (
-    <section className="pt-6 pb-10 md:pt-9 md:pb-14" style={{ background: "#F8F6F2" }}>
+    <section className="pt-6 pb-8 md:pt-9 md:pb-10" style={{ background: "#F8F6F2" }}>
       <div className="container mx-auto px-6 max-w-4xl">
         <ScrollReveal>
           <div

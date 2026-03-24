@@ -492,7 +492,7 @@ const Invest = () => {
       </section>
 
       {/* ──────────────────────── PROPERTY ACQUISITION CTA ──────────────────────── */}
-      <section className="py-24 md:py-32 bg-warm-cream">
+      <section className="py-12 md:py-16 bg-warm-cream">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <ScrollReveal>
             <p className="text-minimal text-gold mb-4 tracking-[0.25em]">Private Network</p>

@@ -564,7 +564,7 @@ const Invest = () => {
       <section id="lead-form" className="py-24 md:py-32 bg-primary">
         <div className="max-w-4xl mx-auto px-6">
           <ScrollReveal>
-            <p className="text-minimal text-primary-foreground/50 mb-4">Get Started</p>
+            <p className="text-minimal text-gold-light mb-4">Get Started</p>
             <h2 className="text-3xl md:text-4xl font-display font-light text-primary-foreground mb-4">
               Tell Us What You're Looking For
             </h2>

@@ -141,6 +141,7 @@ const Index = () => {
         <MeetTaylor />
         <div className="py-8 bg-background" />
         <CTASection />
+        <MarketInsights />
         <NewsletterSection />
         <Footer />
       </Suspense>

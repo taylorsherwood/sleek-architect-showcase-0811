@@ -26,13 +26,6 @@ const MeetTaylor = () => {
             </div>
             
             <div className="relative overflow-hidden">
-              {/* Watermark — hidden on mobile to prevent layout issues */}
-              <div
-                className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden md:block w-[40vw] max-w-[900px] aspect-square opacity-[0.06]"
-                aria-hidden="true"
-              >
-                <img src={echelonWatermark} alt="" className="w-full h-full object-contain" />
-              </div>
               <h4 className="text-minimal text-gold mb-4 font-extrabold">AUSTIN LUXURY REAL ESTATE SPECIALIST</h4>
               <p className="text-muted-foreground leading-relaxed max-w-md text-base md:text-xl mb-6">
                 Taylor Sherwood is an Austin-based real estate advisor specializing in distinctive homes, luxury properties, and land opportunities. Known for his attention to detail and thoughtful approach to marketing, he helps clients navigate complex transactions with confidence while showcasing properties in their best possible light.

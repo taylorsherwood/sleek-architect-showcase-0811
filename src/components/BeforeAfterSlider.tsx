@@ -163,7 +163,7 @@ const BeforeAfterSlider = ({
         style={{
           bottom: 12,
           left: 12,
-          background: "hsl(40 20% 94% / 0.65)",
+          background: "hsl(40 20% 93% / 0.88)",
           color: "hsl(0 0% 30%)",
           borderRadius: 999,
           padding: "4px 12px",
@@ -182,7 +182,7 @@ const BeforeAfterSlider = ({
         style={{
           bottom: 12,
           right: 12,
-          background: "hsl(40 20% 94% / 0.65)",
+          background: "hsl(40 20% 93% / 0.88)",
           color: "hsl(0 0% 30%)",
           borderRadius: 999,
           padding: "4px 12px",

@@ -6,7 +6,7 @@ const MeetTaylor = () => {
     <section className="relative pt-8 pb-4 bg-background overflow-hidden">
       {/* Watermark — centered in the gap between text blocks */}
       <div
-        className="pointer-events-none absolute left-1/2 top-[65%] -translate-x-1/2 -translate-y-1/2 hidden md:block w-[50vw] max-w-[900px] aspect-square opacity-[0.06]"
+        className="pointer-events-none absolute left-[65%] top-[65%] -translate-x-1/2 -translate-y-1/2 hidden md:block w-[50vw] max-w-[900px] aspect-square opacity-[0.06]"
         aria-hidden="true"
       >
         <img src={echelonWatermark} alt="" className="w-full h-full object-contain" />

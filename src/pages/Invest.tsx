@@ -183,6 +183,12 @@ const investorSchema = z.object({
   notes: z.string().trim().max(2000).optional(),
 });
 
+const propertySchema = z.object({
+  propName: z.string().trim().min(1, "Name is required").max(100),
+  propContact: z.string().trim().min(1, "Phone or email is required").max(255),
+  propAddress: z.string().trim().min(1, "Property address is required").max(500),
+});
+
 /* ------------------------------------------------------------------ */
 /*  PAGE COMPONENT                                                     */
 /* ------------------------------------------------------------------ */
@@ -203,6 +209,63 @@ const Invest = () => {
   });
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [submitting, setSubmitting] = useState(false);
+
+  // Property acquisition form state
+  const [propForm, setPropForm] = useState({ propName: "", propContact: "", propAddress: "" });
+  const [propErrors, setPropErrors] = useState<Record<string, string>>({});
+  const [propSubmitting, setPropSubmitting] = useState(false);
+
+  const handlePropChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    setPropForm({ ...propForm, [name]: value });
+    if (propErrors[name]) setPropErrors({ ...propErrors, [name]: "" });
+  };
+
+  const handlePropSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    const result = propertySchema.safeParse(propForm);
+    if (!result.success) {
+      const fieldErrors: Record<string, string> = {};
+      result.error.errors.forEach((err) => {
+        if (err.path[0]) fieldErrors[err.path[0] as string] = err.message;
+      });
+      setPropErrors(fieldErrors);
+      return;
+    }
+    setPropSubmitting(true);
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(
+          buildWeb3Payload({
+            accessKey: "81cc426e-b1a8-4e5e-b2a0-0d25738dfe12",
+            subject: `Property Submission — ${propForm.propAddress}`,
+            name: propForm.propName,
+            email: propForm.propContact,
+            phone: "",
+            source: "Invest Page — Property CTA",
+            extra: {
+              property_address: propForm.propAddress,
+              contact_info: propForm.propContact,
+            },
+          })
+        ),
+      });
+      const data = await response.json();
+      if (data.success) {
+        toast({ title: "Property Submitted", description: "We'll review your property and be in touch shortly." });
+        setPropForm({ propName: "", propContact: "", propAddress: "" });
+        setPropErrors({});
+      } else {
+        toast({ title: "Submission Failed", description: "Please try again or call us directly.", variant: "destructive" });
+      }
+    } catch {
+      toast({ title: "Submission Failed", description: "Please try again or call us directly.", variant: "destructive" });
+    } finally {
+      setPropSubmitting(false);
+    }
+  };
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -429,7 +492,79 @@ const Invest = () => {
         </div>
       </section>
 
-      {/* ──────────────────────── CREDIBILITY INTRO ──────────────────────── */}
+      {/* ──────────────────────── PROPERTY ACQUISITION CTA ──────────────────────── */}
+      <section className="py-24 md:py-32 bg-warm-cream">
+        <div className="max-w-3xl mx-auto px-6 text-center">
+          <ScrollReveal>
+            <p className="text-minimal text-gold mb-4 tracking-[0.25em]">Private Network</p>
+            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-5">
+              Have a Property That Needs Work?
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-3">
+              We connect select properties with a vetted network of investors actively seeking
+              renovation and value-add opportunities across Austin.
+            </p>
+            <p className="text-sm text-muted-foreground/60 italic mb-12">
+              Discreet, straightforward, and no obligation.
+            </p>
+          </ScrollReveal>
+
+          <ScrollReveal delay={100}>
+            <form onSubmit={handlePropSubmit} className="max-w-xl mx-auto space-y-4 text-left">
+              <div>
+                <input
+                  type="text"
+                  name="propName"
+                  placeholder="Full Name"
+                  value={propForm.propName}
+                  onChange={handlePropChange}
+                  className={inputClass}
+                />
+                {propErrors.propName && <p className="text-xs text-destructive mt-1">{propErrors.propName}</p>}
+              </div>
+              <div>
+                <input
+                  type="text"
+                  name="propContact"
+                  placeholder="Phone or Email"
+                  value={propForm.propContact}
+                  onChange={handlePropChange}
+                  className={inputClass}
+                />
+                {propErrors.propContact && <p className="text-xs text-destructive mt-1">{propErrors.propContact}</p>}
+              </div>
+              <div>
+                <input
+                  type="text"
+                  name="propAddress"
+                  placeholder="Property Address"
+                  value={propForm.propAddress}
+                  onChange={handlePropChange}
+                  className={inputClass}
+                />
+                {propErrors.propAddress && <p className="text-xs text-destructive mt-1">{propErrors.propAddress}</p>}
+              </div>
+              <div className="flex flex-col sm:flex-row gap-3 pt-4 justify-center">
+                <button
+                  type="submit"
+                  disabled={propSubmitting}
+                  className="hero-cta-btn px-10 py-4 bg-primary text-primary-foreground text-xs tracking-[0.25em] uppercase font-semibold hover:bg-gold hover:text-white transition-colors duration-300 disabled:opacity-50"
+                >
+                  {propSubmitting ? "Submitting…" : "Request a Cash Offer"}
+                </button>
+                <Link
+                  to="/contact"
+                  className="hero-cta-btn px-8 py-4 border border-border text-foreground text-xs tracking-[0.25em] uppercase font-medium hover:bg-gold hover:text-white hover:border-gold transition-colors duration-300 text-center"
+                >
+                  Submit Property Details
+                </Link>
+              </div>
+            </form>
+          </ScrollReveal>
+        </div>
+      </section>
+
+
       <section className="pt-16 md:pt-20 pb-24 md:pb-32 bg-background">
         <div className="max-w-6xl mx-auto px-6">
           <ScrollReveal>

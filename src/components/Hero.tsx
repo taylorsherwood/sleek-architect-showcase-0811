@@ -226,7 +226,7 @@ const Hero = () => {
               EXPLORE OPPORTUNITIES
             </Link>
             <Link
-              to="/contact"
+              to="/invest"
               className="hero-cta-btn inline-block border border-warm-cream/25 text-warm-cream/75 px-10 py-[1.1rem] text-center hover:bg-gold hover:text-white hover:border-gold hover:font-bold transition-all duration-300"
               style={{
                 fontFamily: '"Raleway", sans-serif',

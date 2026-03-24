@@ -85,6 +85,8 @@ const Listings = () => {
       ))}
       <Navigation />
 
+      <div className="py-8 bg-background" />
+
       <section className="pt-32 pb-16">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
@@ -99,8 +101,6 @@ const Listings = () => {
           </div>
         </div>
       </section>
-
-      <div className="py-8 bg-background" />
 
       <section className="pb-28">
         <div className="container mx-auto px-6">

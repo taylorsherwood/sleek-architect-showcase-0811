@@ -10,8 +10,6 @@ const MeetTaylor = () => {
         aria-hidden="true"
         style={{
           filter: 'none',
-          maskImage: 'radial-gradient(ellipse 70% 70% at 80% 80%, black 10%, transparent 70%)',
-          WebkitMaskImage: 'radial-gradient(ellipse 70% 70% at 80% 80%, black 10%, transparent 70%)',
         }}
       >
         <img

@@ -46,7 +46,7 @@ const Navigation = () => {
       href: "/listings",
       label: "LISTINGS",
       children: [
-        { href: "/listings", label: "RESIDENTIAL LISTINGS" },
+        { href: "/listings", label: "ECHELON LISTINGS" },
         { href: "/luxury-homes-austin", label: "LUXURY HOMES" },
         { href: "/listings/commercial-investment-austin", label: "COMMERCIAL & INVESTMENT" },
         { href: "/off-market-luxury-homes-austin", label: "PRIVATE LISTINGS" },

@@ -655,34 +655,8 @@ const Invest = () => {
         </div>
       </section>
 
-      {/* ──────────────────────── PROCESS ──────────────────────── */}
-      <section className="py-24 md:py-32 bg-background">
-        <div className="max-w-6xl mx-auto px-6">
-          <ScrollReveal>
-            <p className="text-minimal text-gold mb-4">Methodology</p>
-            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-16 max-w-2xl">
-              Our Investor Process
-            </h2>
-          </ScrollReveal>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {processSteps.map((step, i) => (
-              <ScrollReveal key={step.number} delay={i * 100}>
-                <div className="relative">
-                  <span className="text-5xl font-display font-light text-gold/40 mb-4 block">
-                    {step.number}
-                  </span>
-                  <h3 className="text-lg font-display font-light text-foreground mb-2">
-                    {step.title}
-                  </h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    {step.description}
-                  </p>
-                </div>
-              </ScrollReveal>
-            ))}
-          </div>
-        </div>
-      </section>
+
+
 
       {/* ──────────────────────── MARKET INSIGHT ──────────────────────── */}
       <section className="relative py-24 md:py-32 bg-secondary/30 overflow-hidden">

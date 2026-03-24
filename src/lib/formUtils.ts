@@ -1,6 +1,6 @@
 /**
  * Shared form utilities for lead capture forms.
- * Phone formatting, Web3Forms payload building, timestamp generation.
+ * Phone formatting and timestamp generation.
  */
 
 /**
@@ -31,40 +31,4 @@ export function getTimestamp(): string {
     dateStyle: "full",
     timeStyle: "short",
   });
-}
-
-/**
- * Builds standardized Web3Forms payload with consistent field naming.
- * Always includes: replyto (for reply-to header), source, page_url, submitted_at.
- */
-export function buildWeb3Payload({
-  accessKey,
-  subject,
-  name,
-  email,
-  phone,
-  source,
-  extra = {},
-}: {
-  accessKey: string;
-  subject: string;
-  name: string;
-  email: string;
-  phone: string;
-  source: string;
-  extra?: Record<string, string>;
-}): Record<string, string> {
-  return {
-    access_key: accessKey,
-    subject,
-    from_name: "Echelon Property Group Website",
-    replyto: email,
-    name,
-    email,
-    phone: phone || "Not provided",
-    source,
-    page_url: typeof window !== "undefined" ? window.location.href : "",
-    submitted_at: getTimestamp(),
-    ...extra,
-  };
 }

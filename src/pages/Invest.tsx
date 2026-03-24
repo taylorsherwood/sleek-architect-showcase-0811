@@ -6,7 +6,7 @@ import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { realEstateAgentSchema, createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
-import { formatPhoneNumber, buildWeb3Payload } from "@/lib/formUtils";
+import { formatPhoneNumber, getTimestamp } from "@/lib/formUtils";
 import ScrollReveal from "@/components/ScrollReveal";
 import BeforeAfterSlider from "@/components/BeforeAfterSlider";
 import kitchenBefore from "@/assets/kitchen-before.jpg";

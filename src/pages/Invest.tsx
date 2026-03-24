@@ -560,6 +560,8 @@ const Invest = () => {
         </div>
       </section>
 
+      {/* ──────────────────────── SPACER ──────────────────────── */}
+      <div className="bg-background py-8" />
 
       <section className="pt-16 md:pt-20 pb-24 md:pb-32 bg-background">
         <div className="max-w-6xl mx-auto px-6">

@@ -5,8 +5,8 @@ interface SchemaMarkupProps {
 }
 
 const SchemaMarkup = ({ schema }: SchemaMarkupProps) => {
-  if (!schema) return null;
   useEffect(() => {
+    if (!schema) return;
     const script = document.createElement("script");
     script.type = "application/ld+json";
     script.text = JSON.stringify(schema);

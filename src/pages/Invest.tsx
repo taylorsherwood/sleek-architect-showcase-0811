@@ -377,7 +377,7 @@ const Invest = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 reveal-delayed-2">
             <a
               href="#lead-form"
-              className="hero-cta-btn px-8 py-4 border border-primary-foreground/30 text-primary-foreground font-medium text-sm tracking-wide hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors duration-300 inline-flex items-center gap-2"
+              className="hero-cta-btn px-8 py-4 bg-primary-foreground text-primary border border-primary-foreground font-medium text-sm tracking-wide hover:bg-transparent hover:text-primary-foreground hover:border-primary-foreground/30 transition-colors duration-300 inline-flex items-center gap-2"
             >
               Discuss Your Investment Goals
               <ArrowRight className="w-4 h-4" />

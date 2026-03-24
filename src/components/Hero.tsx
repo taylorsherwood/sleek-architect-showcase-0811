@@ -234,7 +234,7 @@ const Hero = () => {
                 letterSpacing: "0.28em",
                 textTransform: "uppercase",
                 fontWeight: 400
-              }}>
+              }} href="/off-market-real-estate-austin">
               
               PRIVATE ACCESS
             </Link>

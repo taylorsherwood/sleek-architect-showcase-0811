@@ -154,7 +154,7 @@ const Navigation = () => {
         </div>
 
         {/* Desktop action buttons */}
-        <div className="hidden lg:flex items-center space-x-4 shrink-0 ml-8 xl:ml-14">
+        <div className="hidden lg:flex items-center space-x-4 shrink-0 ml-4 xl:ml-8">
           <a
             href="https://echelonpropertygroup.outportal.ai"
             target="_blank"

@@ -356,40 +356,103 @@ const Invest = () => {
       <SchemaMarkup schema={faqSchema} />
       <Navigation />
 
-      {/* ──────────────────────── HERO ──────────────────────── */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden pt-36 pb-12">
+      {/* ──────────────────────── PRIVATE ACCESS HERO ──────────────────────── */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 pb-16">
         <img
           src={heroImg}
-          alt="Austin investment property development site — Echelon Property Group"
+          alt="Austin investment property — Echelon Property Group"
           className="absolute inset-0 w-full h-full object-cover"
           loading="eager"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-foreground/70 via-foreground/50 to-foreground/70" />
-        <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
-          <p className="text-minimal text-gold mb-6 reveal font-semibold" style={{ textShadow: '0 0 8px rgba(0,0,0,0.6), 0 0 20px rgba(0,0,0,0.4), 0 1px 3px rgba(0,0,0,0.5)', letterSpacing: '0.35em' }}>
-            Austin Real Estate Investment Advisory
-          </p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-light text-primary-foreground leading-[1.1] mb-8 reveal">
-            Austin Investment Properties for Value-Add Buyers
-          </h1>
-          <p className="text-lg md:text-xl text-primary-foreground/80 max-w-3xl mx-auto mb-10 leading-relaxed reveal-delayed font-light">
-            Source smarter opportunities and execute with precision across Austin's
-            <br /> value-add market.
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 reveal-delayed-2">
-            <a
-              href="#lead-form"
-              className="hero-cta-btn px-8 py-4 bg-primary-foreground text-primary border border-primary-foreground font-medium text-sm tracking-wide hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors duration-300 inline-flex items-center gap-2"
-            >
-              Discuss Your Investment Goals
-              <ArrowRight className="w-4 h-4" />
-            </a>
-            <Link
-              to="/listings"
-              className="hero-cta-btn px-8 py-4 border border-primary-foreground/30 text-primary-foreground font-medium text-sm tracking-wide hover:bg-gold hover:text-primary-foreground hover:border-gold transition-colors duration-300"
-            >
-              View Opportunities
-            </Link>
+        <div className="absolute inset-0 bg-gradient-to-b from-foreground/80 via-foreground/65 to-foreground/80" />
+        <div className="relative z-10 max-w-5xl mx-auto px-6 w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            {/* Left — Copy */}
+            <div className="text-center lg:text-left">
+              <p
+                className="text-minimal font-semibold mb-4"
+                style={{
+                  color: "hsl(42, 37%, 57%)",
+                  textShadow: "0 0 8px rgba(0,0,0,0.6)",
+                  letterSpacing: "0.35em",
+                }}
+              >
+                PRIVATE ACCESS
+              </p>
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-display font-light text-primary-foreground leading-[1.15] mb-6">
+                Access Investment &amp; Off-Market Opportunities
+              </h1>
+              <p className="text-lg text-primary-foreground/70 leading-relaxed font-light max-w-lg mx-auto lg:mx-0">
+                Select deals, private listings, and value-add opportunities across Austin.
+              </p>
+            </div>
+
+            {/* Right — Lead Capture Form */}
+            <div className="bg-background/5 backdrop-blur-md border border-primary-foreground/15 rounded-lg p-6 md:p-8">
+              <form onSubmit={handleSubmit} className="space-y-4" id="lead-form">
+                <div>
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Full Name"
+                    value={form.name}
+                    onChange={handleChange}
+                    maxLength={100}
+                    className="w-full bg-primary-foreground/10 border border-primary-foreground/20 px-4 py-3 text-primary-foreground placeholder:text-primary-foreground/40 focus:outline-none focus:border-[hsl(42,37%,57%)] transition-colors duration-200 text-sm rounded"
+                  />
+                  {errors.name && <p className="text-destructive text-xs mt-1">{errors.name}</p>}
+                </div>
+                <div>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email Address"
+                    value={form.email}
+                    onChange={handleChange}
+                    maxLength={255}
+                    className="w-full bg-primary-foreground/10 border border-primary-foreground/20 px-4 py-3 text-primary-foreground placeholder:text-primary-foreground/40 focus:outline-none focus:border-[hsl(42,37%,57%)] transition-colors duration-200 text-sm rounded"
+                  />
+                  {errors.email && <p className="text-destructive text-xs mt-1">{errors.email}</p>}
+                </div>
+                <div>
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="Phone Number"
+                    value={form.phone}
+                    onChange={handleChange}
+                    maxLength={20}
+                    className="w-full bg-primary-foreground/10 border border-primary-foreground/20 px-4 py-3 text-primary-foreground placeholder:text-primary-foreground/40 focus:outline-none focus:border-[hsl(42,37%,57%)] transition-colors duration-200 text-sm rounded"
+                  />
+                  {errors.phone && <p className="text-destructive text-xs mt-1">{errors.phone}</p>}
+                </div>
+                <div>
+                  <select
+                    name="interest"
+                    value={form.interest}
+                    onChange={handleChange}
+                    className="w-full bg-primary-foreground/10 border border-primary-foreground/20 px-4 py-3 text-primary-foreground focus:outline-none focus:border-[hsl(42,37%,57%)] transition-colors duration-200 text-sm rounded appearance-none"
+                    style={!form.interest ? { color: "rgba(255,255,255,0.4)" } : undefined}
+                  >
+                    <option value="" disabled>I'm interested as…</option>
+                    <option value="investor">Investor</option>
+                    <option value="buyer">Buyer</option>
+                    <option value="both">Both</option>
+                  </select>
+                  {errors.interest && <p className="text-destructive text-xs mt-1">{errors.interest}</p>}
+                </div>
+                <button
+                  type="submit"
+                  disabled={submitting}
+                  className="w-full px-5 py-3.5 text-sm font-medium tracking-widest uppercase rounded transition-all duration-200 disabled:opacity-50 bg-primary-foreground text-primary hover:bg-[hsl(42,37%,57%)] hover:text-primary-foreground border border-primary-foreground/30"
+                >
+                  {submitting ? "Submitting…" : "Request Private Access"}
+                </button>
+                <p className="text-xs text-center text-primary-foreground/40">
+                  Discreet updates from Echelon Property Group. No spam.
+                </p>
+              </form>
+            </div>
           </div>
         </div>
       </section>

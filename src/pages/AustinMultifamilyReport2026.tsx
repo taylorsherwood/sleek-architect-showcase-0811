@@ -151,9 +151,9 @@ const AustinMultifamilyReport2026 = () => {
       const res = await fetch("https://hooks.zapier.com/hooks/catch/26916347/upj5fa0/", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json",
+          "Content-Type": "application/x-www-form-urlencoded",
         },
-        body: JSON.stringify(payload),
+        body: new URLSearchParams(payload),
       });
 
       console.log("[Report Form] Response status:", res.status);

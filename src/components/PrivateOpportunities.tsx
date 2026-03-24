@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Home, Landmark, Building2, TrendingUp } from "lucide-react";
 import { z } from "zod";
 import { useToast } from "@/hooks/use-toast";
-import { formatPhoneNumber, buildWeb3Payload } from "@/lib/formUtils";
+import { formatPhoneNumber } from "@/lib/formUtils";
 import {
   Select,
   SelectContent,

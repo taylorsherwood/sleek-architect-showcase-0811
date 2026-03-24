@@ -4,6 +4,9 @@ interface SchemaMarkupProps {
   schema: Record<string, unknown> | Record<string, unknown>[] | null;
 }
 
+// Track which schema types have been rendered to prevent duplicates during SSR
+const ssrRenderedTypes = new Set<string>();
+
 const SchemaMarkup = ({ schema }: SchemaMarkupProps) => {
   useEffect(() => {
     if (!schema) return;

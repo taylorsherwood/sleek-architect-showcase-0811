@@ -596,22 +596,8 @@ const Invest = () => {
           </ScrollReveal>
         </div>
       </section>
-            <p className="text-muted-foreground max-w-xl mx-auto leading-relaxed mb-4 text-[0.95rem]">
-              We selectively connect properties with a vetted network of investors seeking
-              renovation and value-add opportunities across Austin.
-            </p>
-            <p className="text-sm text-muted-foreground/50 italic mb-10">
-              Discreet, straightforward, and no obligation.
-            </p>
-          </ScrollReveal>
 
-          <ScrollReveal delay={100}>
-            <form onSubmit={handlePropSubmit} className="max-w-md mx-auto text-left">
-              <div className="space-y-2.5">
-                <div>
-                  <input
-                    type="text"
-                    name="propName"
+
                     placeholder="Full Name"
                     value={propForm.propName}
                     onChange={handlePropChange}

@@ -228,8 +228,8 @@ const Sell = () => {
     try {
       const response = await fetch("https://hooks.zapier.com/hooks/catch/26916347/upj5fa0/", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(payload),
       });
       if (response.ok) {
         toast({ title: "Request Sent", description: successMsg });

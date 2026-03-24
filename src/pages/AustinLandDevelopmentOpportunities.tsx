@@ -51,8 +51,8 @@ const AustinLandDevelopmentOpportunities = () => {
     try {
       const res = await fetch("https://hooks.zapier.com/hooks/catch/26916347/upj5fa0/", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams({
           name: form.name,
           email: form.email,
           phone: form.phone || "Not provided",

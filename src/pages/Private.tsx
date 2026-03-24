@@ -125,8 +125,8 @@ const Private = () => {
     try {
       const res = await fetch("https://hooks.zapier.com/hooks/catch/26916347/upj5fa0/", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams({
           name: formData.name,
           email: formData.email,
           phone: formData.phone || "Not provided",

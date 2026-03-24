@@ -138,6 +138,7 @@ const Index = () => {
         
         <div className="py-8 bg-background" />
         <MeetTaylor />
+        <div className="py-8 bg-background" />
         <CTASection />
         <NewsletterSection />
         <Footer />

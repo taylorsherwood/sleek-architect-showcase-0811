@@ -167,7 +167,7 @@ const Navigation = () => {
             href="https://taylorsherwood.realscout.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="whitespace-nowrap text-minimal tracking-[0.2em] text-primary-foreground bg-primary hover:bg-gold hover:text-primary-foreground px-7 py-3 min-h-[42px] inline-flex items-center transition-all duration-400"
+            className="whitespace-nowrap text-[0.6rem] tracking-[0.18em] uppercase font-medium text-primary-foreground bg-primary hover:bg-gold hover:text-primary-foreground px-5 py-2 min-h-[36px] inline-flex items-center transition-all duration-400"
           >
             SEARCH HOMES
           </a>

@@ -189,10 +189,6 @@ const consultSchema = z.object({
 const Sell = () => {
   const { toast } = useToast();
 
-  /* Valuation form */
-  const [valForm, setValForm] = useState({ name: "", email: "", phone: "", address: "", message: "" });
-  const [valErrors, setValErrors] = useState<Record<string, string>>({});
-  const [valSubmitting, setValSubmitting] = useState(false);
 
   /* Consult form */
   const [conForm, setConForm] = useState({ name: "", email: "", phone: "", message: "" });

@@ -481,10 +481,10 @@ const Sell = () => {
       {/* ── Full-Spectrum Real Estate Advisory ── */}
       <section className="pt-0 pb-14 bg-background">
         <div className="container mx-auto px-6">
-          <div className="max-w-7xl mx-auto">
-            <div className="mb-16 max-w-2xl">
+          <div className="max-w-4xl mx-auto">
+            <div className="mb-12">
               <p className="text-minimal text-gold mb-4 font-extrabold">OUR EXPERTISE</p>
-              <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
                 Full-Spectrum Real Estate Advisory
               </h2>
             </div>

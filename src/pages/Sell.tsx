@@ -279,13 +279,13 @@ const Sell = () => {
       <Navigation />
 
       {/* ── Hero ── */}
-      <section className="relative h-[70vh] min-h-[540px] flex items-end justify-center pb-16">
+      <section className="relative h-screen flex flex-col justify-end overflow-hidden bg-primary">
         <div className="absolute inset-0">
           <img src={heroImg} alt="Luxury property in Austin Texas" title="Sell your Austin luxury home — Echelon Property Group" className="w-full h-full object-cover" loading="eager" decoding="async" />
           <div className="absolute inset-0 bg-[#0C0F24]/60" />
         </div>
-        <div className="relative container mx-auto px-6">
-          <div className="max-w-2xl">
+        <div className="relative container mx-auto px-6 pb-16">
+          <div className="max-w-xl mb-14">
             <p className="text-minimal text-primary-foreground/60 mb-4 reveal">SELLER SERVICES</p>
             <h1 className="text-4xl md:text-6xl font-display font-light text-primary-foreground leading-[1.1] mb-6 reveal">
               Sell Your Property
@@ -300,19 +300,11 @@ const Sell = () => {
               className="inline-block text-minimal bg-primary-foreground text-[#0C0F24] px-8 py-3.5 hover:bg-gold hover:text-primary-foreground transition-colors duration-300 reveal-delayed-2">REQUEST A PROPERTY VALUATION
             </a>
           </div>
-        </div>
-      </section>
 
-      {/* ── Gold divider ── */}
-      <div className="bg-[#0C0F24]">
-        <div className="container mx-auto px-6">
-          <div className="max-w-5xl mx-auto h-px bg-gradient-to-r from-transparent via-gold to-transparent" />
-        </div>
-      </div>
+          {/* ── Gold divider ── */}
+          <div className="max-w-5xl mx-auto h-px bg-gradient-to-r from-transparent via-gold to-transparent mb-10" />
 
-      {/* ── Stats ── */}
-      <section className="bg-[#0C0F24] py-14">
-        <div className="container mx-auto px-6">
+          {/* ── Stats ── */}
           <div className="max-w-5xl mx-auto grid grid-cols-3 gap-6 text-center">
             {stats.map((s) => (
               <AnimatedStat key={s.label} {...s} />

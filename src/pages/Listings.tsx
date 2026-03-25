@@ -170,6 +170,10 @@ const Listings = () => {
         subheading={"\n"}
       />
 
+      <Suspense fallback={<div className="min-h-[200px]" />}>
+        <Testimonials />
+      </Suspense>
+
       {/* Commercial & Investment Listings */}
       <section className="py-10 md:py-14 bg-background border-t border-border">
         <div className="container mx-auto px-6">

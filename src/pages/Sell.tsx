@@ -373,7 +373,7 @@ const Sell = () => {
             <div className="mb-16 max-w-2xl">
               <p className="text-minimal text-gold mb-4 font-extrabold">YOUR ADVANTAGE</p>
               <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-6">
-                Why List With Taylor Sherwood
+                Why List With Echelon
               </h2>
               <p className="text-muted-foreground leading-relaxed">
                 Selling property in Austin requires more than a listing — it requires a strategy. Here's why top sellers trust Taylor as their Austin luxury listing agent.

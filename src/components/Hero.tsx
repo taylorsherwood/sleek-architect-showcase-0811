@@ -191,7 +191,7 @@ const Hero = () => {
                     {item}
                   </span>
                   {i < 2 &&
-                <span className="text-[9px]" style={{ color: "hsl(var(--gold))", textShadow: "0 0 6px hsl(var(--gold) / 0.6)" }}>●</span>
+                <span className="text-[9px] text-white" style={{ textShadow: "0 0 6px rgba(255,255,255,0.5)" }}>●</span>
                 }
                 </span>
 

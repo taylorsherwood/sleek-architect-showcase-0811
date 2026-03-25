@@ -6,7 +6,6 @@ import RealScoutListings from "@/components/RealScoutListings";
 import RealScoutSearch from "@/components/RealScoutSearch";
 
 const Testimonials = lazy(() => import("@/components/Testimonials"));
-import RealScoutSearch from "@/components/RealScoutSearch";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createRealEstateListingSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import listing1 from "@/assets/listing-1.jpg";

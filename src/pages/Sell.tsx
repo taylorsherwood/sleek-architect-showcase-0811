@@ -482,7 +482,7 @@ const Sell = () => {
       <div className="bg-background py-8" />
 
       {/* ── Full-Spectrum Real Estate Advisory ── */}
-      <section className="pt-0 pb-28 bg-background">
+      <section className="pt-0 pb-14 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
             <div className="mb-16 max-w-2xl">

@@ -197,51 +197,73 @@ const GlobalLuxuryAdvertising = () => {
 
         {/* Content */}
         <div className="relative z-10 container mx-auto px-6 md:px-8 py-20 md:py-24">
-          <div className="max-w-2xl ml-2 md:ml-4">
-            {/* Eyebrow */}
-            <p
-              className="text-minimal text-gold mb-3 font-extrabold"
-              style={revealStyle(hero.visible, 0)}>
-              GLOBAL LUXURY ADVERTISING
-            </p>
+          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-12">
+            <div className="max-w-2xl ml-2 md:ml-4">
+              {/* Eyebrow */}
+              <p
+                className="text-minimal text-gold mb-3 font-extrabold"
+                style={revealStyle(hero.visible, 0)}>
+                GLOBAL LUXURY ADVERTISING
+              </p>
 
-            {/* Seller hook — more space above */}
-            <p
-              className="text-primary-foreground/75 text-sm md:text-base font-light mt-5 mb-4"
-              style={{
-                ...revealStyle(hero.visible, 150),
-                letterSpacing: "0.12em",
-                textTransform: "uppercase" as const,
-              }}>
-              Positioned to Achieve Maximum Value
-            </p>
+              {/* Seller hook — more space above */}
+              <p
+                className="text-primary-foreground/75 text-sm md:text-base font-light mt-5 mb-4"
+                style={{
+                  ...revealStyle(hero.visible, 150),
+                  letterSpacing: "0.12em",
+                  textTransform: "uppercase" as const,
+                }}>
+                Positioned to Achieve Maximum Value
+              </p>
 
-            {/* Divider — shorter, subtler */}
+              {/* Divider — shorter, subtler */}
+              <div
+                className="mb-5"
+                style={{
+                  ...revealStyle(hero.visible, 300),
+                  width: 48,
+                  height: 1,
+                  background: "linear-gradient(90deg, transparent, hsl(43 30% 56% / 0.5), transparent)",
+                }}
+              />
+
+              {/* Headline */}
+              <h2
+                className="text-5xl md:text-7xl lg:text-[5.2rem] font-display font-light text-primary-foreground leading-[1.05] mb-6"
+                style={revealStyle(hero.visible, 420)}>
+                Your Property,
+                <br />
+                <span className="italic text-primary-foreground/90">Everywhere It</span> Matters
+              </h2>
+
+              {/* Subheadline */}
+              <p
+                className="text-primary-foreground/60 text-lg md:text-xl leading-[1.7]"
+                style={{ ...revealStyle(hero.visible, 620), maxWidth: "20rem" }}>
+                Strategically positioned across the world's most influential luxury media, digital, and print platforms.
+              </p>
+            </div>
+
+            {/* CTA Box */}
             <div
-              className="mb-5"
-              style={{
-                ...revealStyle(hero.visible, 300),
-                width: 48,
-                height: 1,
-                background: "linear-gradient(90deg, transparent, hsl(43 30% 56% / 0.5), transparent)",
-              }}
-            />
-
-            {/* Headline */}
-            <h2
-              className="text-5xl md:text-7xl lg:text-[5.2rem] font-display font-light text-primary-foreground leading-[1.05] mb-6"
-              style={revealStyle(hero.visible, 420)}>
-              Your Property,
-              <br />
-              <span className="italic text-primary-foreground/90">Everywhere It</span> Matters
-            </h2>
-
-            {/* Subheadline */}
-            <p
-              className="text-primary-foreground/60 text-lg md:text-xl leading-[1.7]"
-              style={{ ...revealStyle(hero.visible, 620), maxWidth: "20rem" }}>
-              Strategically positioned across the world's most influential luxury media, digital, and print platforms.
-            </p>
+              className="lg:mr-8 xl:mr-16 shrink-0"
+              style={revealStyle(hero.visible, 700)}>
+              <div className="bg-background/10 backdrop-blur-md border border-primary-foreground/15 p-8 md:p-10 max-w-sm">
+                <p className="text-minimal text-gold mb-3 font-extrabold">HOME VALUATION</p>
+                <h3 className="text-2xl md:text-3xl font-display font-light text-primary-foreground mb-4 leading-tight">
+                  What Is Your Property Worth?
+                </h3>
+                <p className="text-primary-foreground/60 text-sm leading-relaxed mb-8">
+                  Request a complimentary, confidential valuation combining real-time market data and neighborhood-level expertise.
+                </p>
+                <Link
+                  to="/home-value-austin"
+                  className="inline-block text-minimal bg-gold hover:bg-gold/90 text-white px-8 py-3.5 transition-colors duration-300 w-full text-center">
+                  GET YOUR HOME VALUE
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>

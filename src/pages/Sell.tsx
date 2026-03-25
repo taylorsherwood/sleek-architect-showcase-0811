@@ -515,55 +515,6 @@ const Sell = () => {
 
       <FeaturedListings hideRealScout />
 
-      {/* ── Home Valuation ── */}
-      <section id="home-valuation" className="py-28 bg-background">
-        <div className="container mx-auto px-6">
-          <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-start">
-            <div>
-              <p className="text-minimal text-gold mb-4 font-extrabold">HOME VALUATION</p>
-              <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-6">
-                What Is Your Property Worth?
-              </h2>
-              <p className="text-muted-foreground leading-relaxed mb-6">Understanding your Austin property value is the first step toward a successful sale. Our complimentary valuation combines real-time market data, recent comparable sales, and neighborhood-level insights to provide an accurate picture of your property's worth.
-              </p>
-              <p className="text-muted-foreground leading-relaxed mb-8">
-                Whether you own in Barton Creek, Westlake, Tarrytown, or anywhere across the Austin metro, request your personalized valuation today.
-              </p>
-              <Link
-                to="/home-value-austin"
-                className="text-minimal text-muted-foreground hover:text-foreground transition-colors duration-300 flex items-center gap-2">
-                
-                LEARN MORE ABOUT AUSTIN HOME VALUES <ArrowRight className="w-3 h-3" />
-              </Link>
-            </div>
-            <form onSubmit={handleValSubmit} className="space-y-6 bg-card border border-border p-8 md:p-10">
-              <h3 className="text-xl font-display font-light text-architectural mb-2">Request Your Free Valuation</h3>
-              <div>
-                <input type="text" name="name" placeholder="Full Name" value={valForm.name} onChange={handleValChange} maxLength={100} className={inputLight} />
-                {valErrors.name && <p className="text-destructive text-sm mt-1">{valErrors.name}</p>}
-              </div>
-              <div>
-                <input type="email" name="email" placeholder="Email Address" value={valForm.email} onChange={handleValChange} maxLength={255} className={inputLight} />
-                {valErrors.email && <p className="text-destructive text-sm mt-1">{valErrors.email}</p>}
-              </div>
-              <div>
-                <input type="tel" name="phone" placeholder="Phone Number" value={valForm.phone} onChange={handleValChange} maxLength={20} className={inputLight} />
-                {valErrors.phone && <p className="text-destructive text-sm mt-1">{valErrors.phone}</p>}
-              </div>
-              <div>
-                <input type="text" name="address" placeholder="Property Address" value={valForm.address} onChange={handleValChange} maxLength={300} className={inputLight} />
-                {valErrors.address && <p className="text-destructive text-sm mt-1">{valErrors.address}</p>}
-              </div>
-              <div>
-                <textarea name="message" placeholder="Additional details (Optional)" value={valForm.message} onChange={handleValChange} rows={3} maxLength={2000} className={`${inputLight} resize-none`} />
-              </div>
-              <button type="submit" disabled={valSubmitting} className="text-minimal bg-primary text-primary-foreground hover:bg-gold hover:text-white px-10 py-4 transition-colors duration-300 w-full disabled:opacity-50 disabled:cursor-not-allowed">
-                {valSubmitting ? "SENDING..." : "REQUEST VALUATION"}
-              </button>
-            </form>
-          </div>
-        </div>
-      </section>
 
       {/* ── CTA / Listing Consultation ── */}
       <section id="listing-consultation" className="py-28 bg-[#0C0F24]">

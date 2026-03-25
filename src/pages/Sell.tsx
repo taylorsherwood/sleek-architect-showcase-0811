@@ -348,6 +348,9 @@ const Sell = () => {
         <CinematicVideoSection />
       </div>
 
+      {/* ── White spacer ── */}
+      <div className="bg-background py-8" />
+
       {/* ── Thin gold divider above Marketing Strategy ── */}
       <div className="bg-warm-cream">
         <div className="container mx-auto px-6">

@@ -436,7 +436,7 @@ const Sell = () => {
 
               <ScrollReveal delay={160}>
                 <p className="text-muted-foreground/80 leading-relaxed mb-14 max-w-[580px] text-[15px]">
-                  Every Echelon listing receives a bespoke marketing campaign engineered to attract qualified, motivated buyers — locally and globally. Here's what's included when you sell your home in Austin with us.
+                  Every Echelon listing receives a bespoke marketing campaign engineered to attract qualified, motivated buyers — locally and globally. Here's what's included when you sell your home in Austin with us. For homes over $2m we offer the following marketing package:
                 </p>
               </ScrollReveal>
 

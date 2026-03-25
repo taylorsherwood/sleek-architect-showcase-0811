@@ -1,11 +1,8 @@
-import { lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import RealScoutListings from "@/components/RealScoutListings";
 import RealScoutSearch from "@/components/RealScoutSearch";
-
-const Testimonials = lazy(() => import("@/components/Testimonials"));
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createRealEstateListingSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import listing1 from "@/assets/listing-1.jpg";

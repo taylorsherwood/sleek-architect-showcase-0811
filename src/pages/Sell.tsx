@@ -608,7 +608,7 @@ const Sell = () => {
       </section>
 
       {/* ── Thin gold divider ── */}
-      <div className="h-[2px] bg-gradient-to-r from-transparent via-gold to-transparent" />
+      <div className="h-[2px] bg-gold" />
 
       <Footer />
     </div>);

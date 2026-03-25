@@ -250,7 +250,7 @@ const GlobalLuxuryAdvertising = () => {
               className="lg:mr-8 xl:mr-16 shrink-0"
               style={revealStyle(hero.visible, 700)}>
               <div className="bg-background/10 backdrop-blur-md border border-primary-foreground/15 p-8 md:p-10 max-w-sm">
-                <p className="text-minimal text-gold mb-3 font-extrabold">HOME VALUATION</p>
+                <p className="text-minimal text-gold mb-3 font-extrabold">VALUATION REPORT</p>
                 <h3 className="text-2xl md:text-3xl font-display font-light text-primary-foreground mb-4 leading-tight">
                   What Is Your Property Worth?
                 </h3>
@@ -260,7 +260,7 @@ const GlobalLuxuryAdvertising = () => {
                 <Link
                   to="/home-value-austin"
                   className="inline-block text-minimal bg-gold hover:bg-gold/90 text-white px-8 py-3.5 transition-colors duration-300 w-full text-center">
-                  GET YOUR HOME VALUE
+                  GET YOUR VALUE ESTIMATE
                 </Link>
               </div>
             </div>

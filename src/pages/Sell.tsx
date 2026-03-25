@@ -344,7 +344,9 @@ const Sell = () => {
       </section>
 
       {/* ── Cinematic Video ── */}
-      <CinematicVideoSection />
+      <div className="pt-16 md:pt-24">
+        <CinematicVideoSection />
+      </div>
 
       {/* ── Thin gold divider above Marketing Strategy ── */}
       <div className="bg-warm-cream">

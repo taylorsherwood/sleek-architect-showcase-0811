@@ -228,8 +228,6 @@ const Sell = () => {
     }
   };
 
-      {/* ── White spacer ── */}
-      <div className="bg-background py-8" />
 
   const handleConSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

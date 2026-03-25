@@ -195,11 +195,6 @@ const Sell = () => {
   const [conErrors, setConErrors] = useState<Record<string, string>>({});
   const [conSubmitting, setConSubmitting] = useState(false);
 
-  const handleValChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setValForm({ ...valForm, [name]: name === "phone" ? formatPhoneNumber(value) : value });
-    if (valErrors[name]) setValErrors({ ...valErrors, [name]: "" });
-  };
 
   const handleConChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;

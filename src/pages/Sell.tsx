@@ -14,7 +14,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import { formatPhoneNumber, getTimestamp } from "@/lib/formUtils";
 import {
   CheckCircle,
-  ArrowRight,
+  
   Camera,
   BarChart3,
   Globe,

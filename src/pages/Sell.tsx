@@ -228,33 +228,6 @@ const Sell = () => {
     }
   };
 
-  const handleValSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    const result = valuationSchema.safeParse(valForm);
-    if (!result.success) {
-      const fieldErrors: Record<string, string> = {};
-      result.error.errors.forEach((err) => {if (err.path[0]) fieldErrors[String(err.path[0])] = err.message;});
-      setValErrors(fieldErrors);
-      return;
-    }
-    setValErrors({});
-    await submitForm(
-      {
-        name: valForm.name,
-        email: valForm.email,
-        phone: valForm.phone || "Not provided",
-        property_address: valForm.address,
-        message: valForm.message || "Home valuation request from Sell page.",
-        interest: "Home Valuation",
-        source: "Sell Page — Valuation Form",
-        page_url: typeof window !== "undefined" ? window.location.href : "",
-        submitted_at: getTimestamp(),
-      },
-      setValSubmitting,
-      () => setValForm({ name: "", email: "", phone: "", address: "", message: "" }),
-      "Thank you — we'll prepare your complimentary home valuation and be in touch shortly."
-    );
-  };
 
   const handleConSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

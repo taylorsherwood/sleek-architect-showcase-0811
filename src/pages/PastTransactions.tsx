@@ -38,6 +38,10 @@ const PastTransactions = () => {
       </div>
       <RealScoutListings />
 
+      <Suspense fallback={<div className="min-h-[200px]" />}>
+        <Testimonials />
+      </Suspense>
+
       {/* ── SEO Content: Transaction History & Expertise ── */}
       <section className="py-28 bg-secondary/50">
         <div className="container mx-auto px-6">

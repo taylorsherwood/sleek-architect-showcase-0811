@@ -556,7 +556,7 @@ const Sell = () => {
         </div>
       </section>
 
-      <FeaturedListings />
+      <FeaturedListings hideRealScout />
 
       {/* ── Home Valuation ── */}
       <section id="home-valuation" className="py-28 bg-background">

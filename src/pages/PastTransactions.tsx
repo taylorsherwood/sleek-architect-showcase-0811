@@ -1,9 +1,12 @@
+import { lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { realEstateAgentSchema, createFAQSchema } from "@/components/SchemaMarkup";
 import RealScoutListings from "@/components/RealScoutListings";
+
+const Testimonials = lazy(() => import("@/components/Testimonials"));
 
 const PastTransactions = () => {
   return (
@@ -34,6 +37,10 @@ const PastTransactions = () => {
         </div>
       </div>
       <RealScoutListings />
+
+      <Suspense fallback={<div className="min-h-[200px]" />}>
+        <Testimonials />
+      </Suspense>
 
       {/* ── SEO Content: Transaction History & Expertise ── */}
       <section className="py-28 bg-secondary/50">

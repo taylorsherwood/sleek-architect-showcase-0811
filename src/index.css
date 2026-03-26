@@ -305,7 +305,7 @@
 }
 a:hover > .community-tile-img,
 a:hover .community-tile-img {
-  transform: scale(1.01);
+  transform: scale(1.04);
 }
 
 /* ── Metallic gold text — derived from Echelon logo tone ── */

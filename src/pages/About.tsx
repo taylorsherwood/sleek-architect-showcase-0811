@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import SchemaMarkup, { taylorSherwoodSchema, createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import SEOHead from "@/components/SEOHead";
 import InstagramGallery from "@/components/InstagramGallery";
+import Testimonials from "@/components/Testimonials";
 
 const About = () => {
   return (
@@ -170,6 +171,7 @@ const About = () => {
       <div className="py-6 bg-background" />
       <InstagramGallery />
       <div className="py-6 bg-background" />
+      <Testimonials />
 
       {/* CTA */}
       <section className="py-24 bg-secondary text-center">

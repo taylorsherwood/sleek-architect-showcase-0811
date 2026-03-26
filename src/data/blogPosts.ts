@@ -333,6 +333,8 @@ The most successful community spaces are those that grow and evolve with their u
     title: "Luxury Lock-and-Leave in Governor's Hill",
     excerpt: "Living at 2300 Barton Creek Blvd #15, Austin, TX 78735",
     content: `
+
+
 ## The Offering
 
 Relocation buyers and second-home owners searching for a true lock-and-leave residence in Austin will immediately recognize the appeal of 2300 Barton Creek Blvd #15. Located within the gated Governors Hill enclave of Barton Creek, this 4-bedroom, 4-bath, 4,147-square-foot residence offers a rare blend of privacy, security, and refined Hill Country living. Completely reimagined with a designer’s eye, the home delivers a turnkey experience for those who want to enjoy Austin without the demands of ongoing maintenance.

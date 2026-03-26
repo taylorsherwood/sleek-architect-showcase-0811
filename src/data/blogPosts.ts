@@ -1,6 +1,7 @@
 import blogSustainable from "@/assets/blog-sustainable-architecture.jpg";
 import blogMinimalist from "@/assets/blog-minimalist-living.jpg";
 import blogUrban from "@/assets/blog-urban-planning.jpg";
+import blog2300BartonCreek from "@/assets/2300-barton-creek-blvd.jpg";
 
 export interface BlogPost {
   id: string;

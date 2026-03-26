@@ -67,7 +67,7 @@ const CommunitiesPreview = () => {
             </Link>
 
             {/* Secondary — stacked, 5 of 12 cols */}
-            <div className="md:col-span-5 grid grid-cols-2 md:grid-cols-1 gap-4">
+            <div className="md:col-span-5 grid grid-cols-2 md:grid-cols-1 gap-2.5">
               {secondary.map((c) => (
                 <Link
                   key={c.slug}

@@ -99,7 +99,7 @@ const CommunitiesPreview = () => {
           <div className="text-center mt-12">
             <Link
               to="/communities"
-              className="inline-block px-10 py-2.5 text-[0.6rem] tracking-[0.22em] uppercase text-foreground/50 hover:text-foreground/80 transition-all duration-500"
+              className="inline-block px-10 py-2.5 text-[0.6rem] tracking-[0.22em] uppercase text-gold hover:text-gold-light transition-all duration-500 hover:drop-shadow-[0_0_8px_hsl(42_37%_57%/0.4)]"
             >
               Explore All Communities
             </Link>

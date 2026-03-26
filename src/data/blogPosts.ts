@@ -382,7 +382,7 @@ Offered at $3,495,000, 2300 Barton Creek Blvd #15 represents a compelling opport
 For buyers relocating to Austin or seeking a refined second home, this property offers a rare combination of security, convenience, and elevated design—all within minutes of the city’s core.
 
     `,
-    author: "Taylor Sanchez",
+    author: "Taylor Sherwood",
     date: "2026-03-26",
     readTime: "5 min read",
     category: "FEATURED LISTING",

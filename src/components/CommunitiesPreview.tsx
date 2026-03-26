@@ -55,12 +55,12 @@ const CommunitiesPreview = () => {
                 loading="lazy"
                 decoding="async"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-foreground/55 via-foreground/8 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-foreground/75 via-foreground/25 via-[40%] to-transparent" />
               <div className="absolute bottom-7 left-7 right-7">
-                <h3 className="text-warm-cream font-display text-2xl md:text-3xl mb-1">
+                <h3 className="text-warm-cream font-display text-2xl md:text-3xl mb-1 drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)]">
                   {hero.name}
                 </h3>
-                <p className="text-warm-cream/55 text-[0.6rem] tracking-[0.15em] uppercase">
+                <p className="text-warm-cream/70 text-[0.6rem] tracking-[0.15em] uppercase drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
                   {hero.descriptor}
                 </p>
               </div>
@@ -81,12 +81,12 @@ const CommunitiesPreview = () => {
                     loading="lazy"
                     decoding="async"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-foreground/55 via-foreground/8 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-foreground/75 via-foreground/25 via-[40%] to-transparent" />
                   <div className="absolute bottom-5 left-5 right-5">
-                    <h3 className="text-warm-cream font-display text-lg md:text-xl mb-0.5">
+                    <h3 className="text-warm-cream font-display text-lg md:text-xl mb-0.5 drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)]">
                       {c.name}
                     </h3>
-                    <p className="text-warm-cream/50 text-[0.55rem] tracking-[0.15em] uppercase">
+                    <p className="text-warm-cream/65 text-[0.55rem] tracking-[0.15em] uppercase drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
                       {c.descriptor}
                     </p>
                   </div>
@@ -99,7 +99,7 @@ const CommunitiesPreview = () => {
           <div className="text-center mt-12">
             <Link
               to="/communities"
-              className="inline-block px-10 py-2.5 text-[0.6rem] tracking-[0.22em] uppercase text-foreground/50 hover:text-foreground/80 transition-all duration-500"
+              className="inline-block px-10 py-2.5 text-[0.6rem] tracking-[0.22em] uppercase text-gold hover:text-gold-light transition-all duration-500 hover:drop-shadow-[0_0_8px_hsl(42_37%_57%/0.4)]"
             >
               Explore All Communities
             </Link>

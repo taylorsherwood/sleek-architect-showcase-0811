@@ -110,7 +110,7 @@ const LandPage = () => {
       >
         <div className="container mx-auto px-6">
           <div className="max-w-3xl">
-            <p className="text-minimal mb-6" style={{ color: "hsl(42 37% 67%)" }}>
+            <p className="text-minimal mb-6" style={{ color: "hsl(var(--gold-light))" }}>
               AUSTIN LAND &amp; INVESTMENT
             </p>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-light text-architectural mb-6 text-warm-cream">
@@ -255,7 +255,7 @@ const LandPage = () => {
                 >
                   <span
                     className="w-1.5 h-1.5 rounded-full flex-shrink-0"
-                    style={{ backgroundColor: "hsl(42 37% 57%)" }}
+                    style={{ backgroundColor: "hsl(var(--gold))" }}
                   />
                   {factor}
                 </li>

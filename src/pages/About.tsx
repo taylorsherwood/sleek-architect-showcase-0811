@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import SchemaMarkup, { taylorSherwoodSchema, createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import SEOHead from "@/components/SEOHead";
 import InstagramGallery from "@/components/InstagramGallery";
+import Testimonials from "@/components/Testimonials";
 
 const About = () => {
   return (

@@ -198,3 +198,10 @@
     animation: gold-glow-pulse 8s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
   }
 }
+
+/* ── EmbedSocial feed overrides — keep it on-brand ── */
+.instagram-feed-wrapper .feed-powered-by-es,
+.instagram-feed-wrapper .es-widget-branding {
+  display: none !important;
+}
+

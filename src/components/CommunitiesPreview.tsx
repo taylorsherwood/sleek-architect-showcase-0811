@@ -57,10 +57,10 @@ const CommunitiesPreview = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/75 via-foreground/25 via-[40%] to-transparent" />
               <div className="absolute bottom-7 left-7 right-7">
-                <h3 className="text-warm-cream font-display text-2xl md:text-3xl mb-1 font-light tracking-[0.02em] drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)]">
+                <h3 className="text-warm-cream font-display text-2xl md:text-3xl mb-1.5 font-medium tracking-[0.03em] leading-[1.1] drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)]">
                   {hero.name}
                 </h3>
-                <p className="text-warm-cream/70 text-[0.6rem] tracking-[0.15em] uppercase drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
+                <p className="text-warm-cream/70 text-[0.6rem] font-normal tracking-[0.07em] uppercase drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
                   {hero.descriptor}
                 </p>
               </div>
@@ -83,10 +83,10 @@ const CommunitiesPreview = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-foreground/75 via-foreground/25 via-[40%] to-transparent" />
                   <div className="absolute bottom-5 left-5 right-5">
-                    <h3 className="text-warm-cream font-display text-lg md:text-xl mb-0.5 font-light tracking-[0.02em] drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)]">
+                    <h3 className="text-warm-cream font-display text-lg md:text-xl mb-1 font-medium tracking-[0.03em] leading-[1.1] drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)]">
                       {c.name}
                     </h3>
-                    <p className="text-warm-cream/65 text-[0.55rem] tracking-[0.15em] uppercase drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
+                    <p className="text-warm-cream/65 text-[0.55rem] font-normal tracking-[0.07em] uppercase drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
                       {c.descriptor}
                     </p>
                   </div>

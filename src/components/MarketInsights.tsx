@@ -42,7 +42,7 @@ const featuredArticles = [
 
 const MarketInsights = () => {
   return (
-    <section className="py-16 md:py-24 bg-muted">
+    <section className="py-12 md:py-16 bg-muted">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <ScrollReveal>

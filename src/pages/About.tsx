@@ -171,6 +171,7 @@ const About = () => {
       <div className="py-6 bg-background" />
       <InstagramGallery />
       <div className="py-6 bg-background" />
+      <Testimonials />
 
       {/* CTA */}
       <section className="py-24 bg-secondary text-center">

@@ -81,12 +81,12 @@ const CommunitiesPreview = () => {
                     loading="lazy"
                     decoding="async"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-foreground/55 via-foreground/8 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-foreground/75 via-foreground/25 via-[40%] to-transparent" />
                   <div className="absolute bottom-5 left-5 right-5">
-                    <h3 className="text-warm-cream font-display text-lg md:text-xl mb-0.5">
+                    <h3 className="text-warm-cream font-display text-lg md:text-xl mb-0.5 drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)]">
                       {c.name}
                     </h3>
-                    <p className="text-warm-cream/50 text-[0.55rem] tracking-[0.15em] uppercase">
+                    <p className="text-warm-cream/65 text-[0.55rem] tracking-[0.15em] uppercase drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
                       {c.descriptor}
                     </p>
                   </div>

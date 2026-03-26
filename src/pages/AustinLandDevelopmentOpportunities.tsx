@@ -162,7 +162,7 @@ const AustinLandDevelopmentOpportunities = () => {
         <button
           type="submit"
           disabled={loading}
-          className="w-full bg-gold hover:bg-[hsl(42,37%,50%)] text-white py-4 tracking-[0.15em] uppercase font-sans font-medium transition-colors duration-300 disabled:opacity-50 active:scale-[0.98] mt-1"
+          className="w-full bg-gold hover:bg-[hsl(var(--gold-deep))] text-white py-4 tracking-[0.15em] uppercase font-sans font-medium transition-colors duration-300 disabled:opacity-50 active:scale-[0.98] mt-1"
           style={{ fontSize: "0.7rem", letterSpacing: "0.2em" }}
         >
           {loading ? "Submitting…" : "Submit Acquisition Criteria"}
@@ -243,7 +243,7 @@ const AustinLandDevelopmentOpportunities = () => {
               </ul>
               <button
                 onClick={scrollToForm}
-                className="lg:hidden bg-gold hover:bg-[hsl(42,37%,50%)] text-white px-10 py-4 transition-colors duration-300 active:scale-[0.98]"
+                className="lg:hidden bg-gold hover:bg-[hsl(var(--gold-deep))] text-white px-10 py-4 transition-colors duration-300 active:scale-[0.98]"
                 style={labelStyle}
               >
                 SUBMIT ACQUISITION CRITERIA
@@ -349,7 +349,7 @@ const AustinLandDevelopmentOpportunities = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/land-for-sale-austin"
-              className="inline-block bg-gold hover:bg-[hsl(42,37%,50%)] text-white px-10 py-4 transition-colors duration-300 active:scale-[0.98]"
+              className="inline-block bg-gold hover:bg-[hsl(var(--gold-deep))] text-white px-10 py-4 transition-colors duration-300 active:scale-[0.98]"
               style={labelStyle}
             >
               VIEW LAND LISTINGS
@@ -381,7 +381,7 @@ const AustinLandDevelopmentOpportunities = () => {
           </p>
           <button
             onClick={scrollToForm}
-            className="bg-gold hover:bg-[hsl(42,37%,50%)] text-white px-12 py-4 transition-colors duration-300 active:scale-[0.98]"
+            className="bg-gold hover:bg-[hsl(var(--gold-deep))] text-white px-12 py-4 transition-colors duration-300 active:scale-[0.98]"
             style={labelStyle}
           >
             SUBMIT ACQUISITION CRITERIA

@@ -159,7 +159,7 @@ const Connect = () => {
                         const el = e.currentTarget;
                         el.style.background = "hsl(42 37% 57% / 0.1)";
                         el.style.borderColor = "hsl(42 37% 57% / 0.25)";
-                        el.style.color = "hsl(42 37% 45%)";
+                        el.style.color = "hsl(var(--gold-deep))";
                       }}
                       onMouseLeave={(e) => {
                         const el = e.currentTarget;
@@ -232,7 +232,7 @@ const Connect = () => {
                     <card.icon
                       className="w-4 h-4 flex-shrink-0"
                       strokeWidth={1.5}
-                      style={{ color: "hsl(42 37% 50%)" }}
+                      style={{ color: "hsl(var(--gold-deep))" }}
                     />
                     <span
                       className="font-sans font-medium uppercase"
@@ -318,7 +318,7 @@ const Connect = () => {
                   style={{
                     fontSize: "11px",
                     letterSpacing: "0.18em",
-                    color: "hsl(42 37% 65%)",
+                    color: "hsl(var(--gold-light))",
                     fontWeight: 800,
                   }}
                 >

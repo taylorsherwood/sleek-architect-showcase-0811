@@ -140,6 +140,7 @@ const Index = () => {
         
         <div className="py-8 bg-background" />
         <MeetTaylor />
+        <InstagramGallery />
         <div className="py-8 bg-background" />
         <MarketInsights />
         <NewsletterSection />

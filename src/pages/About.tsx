@@ -80,6 +80,20 @@ const About = () => {
         </div>
       </section>
 
+      {/* Primary CTA — below Meet Taylor */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-7xl mx-auto text-center">
+            <Link
+              to="/contact"
+              className="gold-metallic-text gold-underline-hover inline-block px-10 py-2.5 text-[0.65rem] tracking-[0.22em] uppercase"
+            >
+              Schedule a Private Consultation
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Services Overview */}
       <section className="py-24 bg-background">
         <div className="container mx-auto px-6">
@@ -171,6 +185,21 @@ const About = () => {
       <div className="py-6 bg-background" />
       <InstagramGallery />
       <div className="py-6 bg-background" />
+
+      {/* Secondary CTA — below Instagram */}
+      <section className="py-12 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-5xl mx-auto text-center">
+            <Link
+              to="/communities"
+              className="gold-metallic-text gold-underline-hover inline-block px-10 py-2.5 text-[0.6rem] tracking-[0.22em] uppercase"
+            >
+              Browse Austin Communities
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <Testimonials />
 
       {/* CTA */}

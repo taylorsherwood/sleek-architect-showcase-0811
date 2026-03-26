@@ -35,7 +35,7 @@ const InstagramGallery = () => {
               @TheInvestorBroker
             </p>
             <h2 className="text-4xl font-display font-light text-foreground mb-3">
-              Follow Echelon on Instagram
+              Follow Us on Instagram
             </h2>
             <p className="text-sm text-muted-foreground/70 max-w-lg mx-auto leading-relaxed">
               Market moments, new listings, Austin lifestyle, and behind-the-scenes perspective from Echelon Property Group.

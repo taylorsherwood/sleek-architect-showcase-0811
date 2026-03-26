@@ -186,19 +186,6 @@ const About = () => {
       <InstagramGallery />
       <div className="py-6 bg-background" />
 
-      {/* Secondary CTA — below Instagram */}
-      <section className="py-12 bg-background">
-        <div className="container mx-auto px-6">
-          <div className="max-w-5xl mx-auto text-center">
-            <Link
-              to="/communities"
-              className="gold-metallic-text gold-underline-hover inline-block px-10 py-2.5 text-[0.6rem] tracking-[0.22em] uppercase"
-            >
-              Browse Austin Communities
-            </Link>
-          </div>
-        </div>
-      </section>
 
       <Testimonials />
 

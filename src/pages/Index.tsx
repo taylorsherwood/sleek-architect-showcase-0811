@@ -14,6 +14,7 @@ const CommercialCTA = lazy(() => import("@/components/CommercialCTA"));
 const FeaturedListings = lazy(() => import("@/components/FeaturedListings"));
 const IntroSection = lazy(() => import("@/components/IntroSection"));
 const MeetTaylor = lazy(() => import("@/components/MeetTaylor"));
+const InstagramGallery = lazy(() => import("@/components/InstagramGallery"));
 const Testimonials = lazy(() => import("@/components/Testimonials"));
 const SellerCTA = lazy(() => import("@/components/SellerCTA"));
 const CTASection = lazy(() => import("@/components/CTASection"));

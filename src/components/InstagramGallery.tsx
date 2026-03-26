@@ -1,58 +1,33 @@
+import { useEffect, useRef } from "react";
 import { Instagram } from "lucide-react";
 
 /**
  * ─── INSTAGRAM CONFIGURATION ───────────────────────────────────────────
  *
- * PROFILE URL — Update the href below to your Instagram profile:
+ * PROFILE URL — Update this to your Instagram profile:
  */
 const INSTAGRAM_PROFILE_URL = "https://www.instagram.com/theinvestorbroker";
 
 /**
- * POST DATA — Replace placeholder images and links below.
- * Each entry needs:
- *   - image: URL or import path for the thumbnail
- *   - postUrl: direct link to the Instagram post
- *   - alt: brief description for accessibility
- *
- * For a future live feed integration, replace the `posts` array
- * with data fetched from the Instagram Basic Display API or a
- * third-party service, keeping the same shape.
- * ────────────────────────────────────────────────────────────────────────
+ * EMBEDSOCIAL — The data-ref below powers the live feed.
+ * To change the feed, update the data-ref value from your
+ * EmbedSocial dashboard → Widgets → embed code.
  */
-const posts = [
-  {
-    image: "/placeholder.svg",
-    postUrl: `${INSTAGRAM_PROFILE_URL}`,
-    alt: "Austin luxury listing exterior",
-  },
-  {
-    image: "/placeholder.svg",
-    postUrl: `${INSTAGRAM_PROFILE_URL}`,
-    alt: "Hill Country sunset view",
-  },
-  {
-    image: "/placeholder.svg",
-    postUrl: `${INSTAGRAM_PROFILE_URL}`,
-    alt: "Interior design detail",
-  },
-  {
-    image: "/placeholder.svg",
-    postUrl: `${INSTAGRAM_PROFILE_URL}`,
-    alt: "Barton Creek lifestyle",
-  },
-  {
-    image: "/placeholder.svg",
-    postUrl: `${INSTAGRAM_PROFILE_URL}`,
-    alt: "New listing announcement",
-  },
-  {
-    image: "/placeholder.svg",
-    postUrl: `${INSTAGRAM_PROFILE_URL}`,
-    alt: "Austin skyline at dusk",
-  },
-];
+const EMBEDSOCIAL_REF = "6fd82b336784d0fdcec3ce38de6cf04c6cec4621";
 
 const InstagramGallery = () => {
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    // Load EmbedSocial script once
+    if (!document.getElementById("EmbedSocialHashtagScript")) {
+      const script = document.createElement("script");
+      script.id = "EmbedSocialHashtagScript";
+      script.src = "https://embedsocial.com/cdn/ht.js";
+      document.head.appendChild(script);
+    }
+  }, []);
+
   return (
     <section className="pt-4 pb-12 md:pt-8 md:pb-20 bg-background">
       <div className="container mx-auto px-6">
@@ -70,35 +45,19 @@ const InstagramGallery = () => {
             </p>
           </div>
 
-          {/* Grid — 6 tiles: 3 cols desktop, 2 cols tablet & mobile */}
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-[2px] md:gap-[3px]">
-            {posts.map((post, i) => (
-              <a
-                key={i}
-                href={post.postUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group relative block aspect-square overflow-hidden bg-muted/40"
-              >
-                <img
-                  src={post.image}
-                  alt={post.alt}
-                  loading="lazy"
-                  decoding="async"
-                  className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
-                />
-
-                {/* Hover overlay — subtle darken with centered icon */}
-                <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/30 transition-all duration-500 flex items-center justify-center">
-                  <Instagram className="w-5 h-5 text-primary-foreground opacity-0 group-hover:opacity-80 transition-opacity duration-500" />
-                </div>
-              </a>
-            ))}
+          {/* Live EmbedSocial Feed */}
+          <div
+            ref={containerRef}
+            className="instagram-feed-wrapper"
+          >
+            <div
+              className="embedsocial-hashtag"
+              data-ref={EMBEDSOCIAL_REF}
+            />
           </div>
 
           {/* CTA */}
           <div className="text-center mt-8 md:mt-10">
-            {/* ── Update href to your Instagram profile URL ── */}
             <a
               href={INSTAGRAM_PROFILE_URL}
               target="_blank"

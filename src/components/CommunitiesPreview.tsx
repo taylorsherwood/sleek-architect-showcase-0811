@@ -42,7 +42,7 @@ const CommunitiesPreview = () => {
           </div>
 
           {/* Single-row editorial layout */}
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-2.5">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-[6px]">
             {/* Hero — ~58% width (7 of 12 cols) */}
             <Link
               to={`/communities/${hero.slug}`}

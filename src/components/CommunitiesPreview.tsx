@@ -60,7 +60,7 @@ const CommunitiesPreview = () => {
                 <h3 className="text-warm-cream font-display text-2xl md:text-3xl mb-1.5 font-medium tracking-[0.03em] leading-[1.1] drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)]">
                   {hero.name}
                 </h3>
-                <p className="text-warm-cream/70 text-[0.6rem] tracking-[0.15em] uppercase drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
+                <p className="text-warm-cream/70 text-[0.6rem] font-normal tracking-[0.07em] uppercase drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
                   {hero.descriptor}
                 </p>
               </div>

@@ -40,8 +40,10 @@
 
     --radius: 0.25rem;
 
-    --gold: 42 37% 57%;
-    --gold-light: 38 50% 75%;
+    --gold: 41 36% 57%;
+    --gold-deep: 40 32% 44%;
+    --gold-light: 39 40% 68%;
+    --gold-highlight: 38 45% 76%;
     --warm-cream: 40 30% 96%;
 
     --sidebar-background: 0 0% 98%;
@@ -147,17 +149,17 @@
     0% {
       transform: translateY(0);
       opacity: 1;
-      box-shadow: 0 0 12px hsl(42 45% 60% / 0.5);
+      box-shadow: 0 0 10px hsl(var(--gold-light) / 0.4);
     }
     50% {
       transform: translateY(16px);
       opacity: 0.3;
-      box-shadow: 0 0 4px hsl(42 45% 60% / 0.1);
+      box-shadow: 0 0 4px hsl(var(--gold-light) / 0.1);
     }
     100% {
       transform: translateY(0);
       opacity: 1;
-      box-shadow: 0 0 12px hsl(42 45% 60% / 0.5);
+      box-shadow: 0 0 10px hsl(var(--gold-light) / 0.4);
     }
   }
 
@@ -178,10 +180,10 @@
   .scroll-indicator-line {
     width: 2px;
     height: 52px;
-    background: linear-gradient(180deg, hsl(42 45% 68% / 1), hsl(42 37% 57% / 0.15));
+    background: linear-gradient(180deg, hsl(var(--gold-light) / 1), hsl(var(--gold) / 0.15));
     border-radius: 1px;
     animation: scroll-line 2.2s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
-    box-shadow: 0 0 14px hsl(42 45% 60% / 0.45);
+    box-shadow: 0 0 10px hsl(var(--gold-light) / 0.35);
   }
 
   /* Subtle gold glow pulse for CTA cards */
@@ -190,7 +192,7 @@
       box-shadow: 0 4px 20px hsl(0 0% 0% / 0.1), inset 0 1px 0 hsl(0 0% 100% / 0.07);
     }
     92% {
-      box-shadow: 0 4px 28px hsl(42 37% 57% / 0.15), 0 0 40px hsl(42 37% 57% / 0.06), inset 0 1px 0 hsl(0 0% 100% / 0.07);
+      box-shadow: 0 4px 28px hsl(var(--gold) / 0.12), 0 0 30px hsl(var(--gold) / 0.04), inset 0 1px 0 hsl(0 0% 100% / 0.07);
     }
   }
 
@@ -306,15 +308,15 @@ a:hover .community-tile-img {
   transform: scale(1.01);
 }
 
-/* ── Metallic gold text effect ── */
+/* ── Metallic gold text — derived from Echelon logo tone ── */
 .gold-metallic-text {
   background: linear-gradient(
     105deg,
-    hsl(42 30% 48%) 0%,
-    hsl(40 42% 62%) 25%,
-    hsl(38 50% 72%) 50%,
-    hsl(40 42% 62%) 75%,
-    hsl(42 30% 48%) 100%
+    hsl(var(--gold-deep)) 0%,
+    hsl(var(--gold)) 30%,
+    hsl(var(--gold-highlight)) 50%,
+    hsl(var(--gold)) 70%,
+    hsl(var(--gold-deep)) 100%
   );
   background-size: 200% 100%;
   background-position: 100% 0;
@@ -325,4 +327,23 @@ a:hover .community-tile-img {
 }
 .gold-metallic-text:hover {
   background-position: 0 0;
+}
+
+/* ── Reusable gold hover underline ── */
+.gold-underline-hover {
+  position: relative;
+}
+.gold-underline-hover::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 0;
+  height: 1px;
+  background: linear-gradient(90deg, hsl(var(--gold-deep)), hsl(var(--gold-light)), hsl(var(--gold-deep)));
+  transition: width 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.gold-underline-hover:hover::after {
+  width: 100%;
 }

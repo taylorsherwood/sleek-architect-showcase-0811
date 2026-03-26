@@ -29,7 +29,7 @@ const CommunitiesPreview = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
-          <div className="text-center mb-8">
+          <div className="text-center mb-5">
             <p className="text-minimal text-gold mb-4 font-extrabold">
               SELECT COMMUNITIES
             </p>
@@ -42,7 +42,7 @@ const CommunitiesPreview = () => {
           </div>
 
           {/* Single-row editorial layout */}
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-2.5">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-[6px]">
             {/* Hero — ~58% width (7 of 12 cols) */}
             <Link
               to={`/communities/${hero.slug}`}
@@ -67,7 +67,7 @@ const CommunitiesPreview = () => {
             </Link>
 
             {/* Secondary — stacked, 5 of 12 cols */}
-            <div className="md:col-span-5 grid grid-cols-2 md:grid-cols-1 gap-2.5">
+            <div className="md:col-span-5 grid grid-cols-2 md:grid-cols-1 gap-[6px]">
               {secondary.map((c) => (
                 <Link
                   key={c.slug}

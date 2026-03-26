@@ -212,8 +212,7 @@ const About = () => {
             Whether you're selling a luxury estate or searching for your dream home, 
             we'd love to hear from you.
           </p>
-          <Link to="/contact" className="inline-block text-minimal bg-primary text-primary-foreground hover:bg-gold hover:text-white px-10 py-4 transition-colors duration-300">
-            
+          <Link to="/contact" className="inline-block text-minimal border border-foreground/30 bg-transparent text-foreground hover:bg-gold hover:border-gold hover:text-white px-10 py-4 transition-all duration-500 backdrop-blur-sm">
             GET IN TOUCH
           </Link>
         </div>

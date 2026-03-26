@@ -1,6 +1,7 @@
 import blogSustainable from "@/assets/blog-sustainable-architecture.jpg";
 import blogMinimalist from "@/assets/blog-minimalist-living.jpg";
 import blogUrban from "@/assets/blog-urban-planning.jpg";
+import blog2300BartonCreek from "@/assets/2300-barton-creek-blvd.jpg";
 
 export interface BlogPost {
   id: string;
@@ -373,6 +374,6 @@ This property is best experienced in person. Contact our team to arrange a priva
     date: "2026-03-26",
     readTime: "5 min read",
     category: "FEATURED LISTING",
-    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80"
+    image: blog2300BartonCreek
   }
 ];

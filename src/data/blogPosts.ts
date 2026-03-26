@@ -374,6 +374,6 @@ This property is best experienced in person. Contact our team to arrange a priva
     date: "2026-03-26",
     readTime: "5 min read",
     category: "FEATURED LISTING",
-    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80"
+    image: blog2300BartonCreek
   }
 ];

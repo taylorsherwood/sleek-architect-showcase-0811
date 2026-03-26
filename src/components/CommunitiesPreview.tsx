@@ -51,7 +51,7 @@ const CommunitiesPreview = () => {
               <img
                 src={hero.image}
                 alt={`Luxury homes in ${hero.name}, Austin Texas`}
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1s] ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:scale-[1.03]"
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-[850ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.02]"
                 loading="lazy"
                 decoding="async"
               />

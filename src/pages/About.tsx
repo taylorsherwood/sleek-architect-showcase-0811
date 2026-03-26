@@ -166,6 +166,11 @@ const About = () => {
         </div>
       </section>
 
+      {/* Instagram Feed */}
+      <div className="py-6 bg-background" />
+      <InstagramGallery />
+      <div className="py-6 bg-background" />
+
       {/* CTA */}
       <section className="py-24 bg-secondary text-center">
         <div className="container mx-auto px-6">

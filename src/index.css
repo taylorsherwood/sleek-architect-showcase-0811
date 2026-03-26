@@ -180,10 +180,10 @@
   .scroll-indicator-line {
     width: 2px;
     height: 52px;
-    background: linear-gradient(180deg, hsl(42 45% 68% / 1), hsl(42 37% 57% / 0.15));
+    background: linear-gradient(180deg, hsl(var(--gold-light) / 1), hsl(var(--gold) / 0.15));
     border-radius: 1px;
     animation: scroll-line 2.2s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
-    box-shadow: 0 0 14px hsl(42 45% 60% / 0.45);
+    box-shadow: 0 0 10px hsl(var(--gold-light) / 0.35);
   }
 
   /* Subtle gold glow pulse for CTA cards */

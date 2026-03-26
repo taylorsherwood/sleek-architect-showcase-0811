@@ -80,6 +80,20 @@ const About = () => {
         </div>
       </section>
 
+      {/* Primary CTA — below Meet Taylor */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-7xl mx-auto text-center">
+            <Link
+              to="/contact"
+              className="gold-metallic-text gold-underline-hover inline-block px-10 py-2.5 text-[0.65rem] tracking-[0.22em] uppercase"
+            >
+              Schedule a Private Consultation
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Services Overview */}
       <section className="py-24 bg-background">
         <div className="container mx-auto px-6">

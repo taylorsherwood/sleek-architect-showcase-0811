@@ -278,7 +278,7 @@ const LandPage = () => {
                 <div key={step.step} className="flex gap-6">
                   <span
                     className="text-3xl font-display font-light flex-shrink-0"
-                    style={{ color: "hsl(42 37% 57% / 0.4)" }}
+                    style={{ color: "hsl(var(--gold) / 0.4)" }}
                   >
                     {step.step}
                   </span>

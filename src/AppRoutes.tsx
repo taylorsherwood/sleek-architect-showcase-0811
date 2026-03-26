@@ -73,7 +73,6 @@ const AppRoutes = () => {
           <Route path="/communities/:slug" element={<CommunityPage />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:id" element={<BlogPost />} />
-          <Route path="/blog/2300-barton-creek-blvd" element={<BlogPost />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/moving-to-austin" element={<MovingToAustin />} />
           <Route path="/best-luxury-neighborhoods-austin" element={<BestLuxuryNeighborhoods />} />

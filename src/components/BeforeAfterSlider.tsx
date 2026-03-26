@@ -116,7 +116,7 @@ const BeforeAfterSlider = ({
       >
         <div
           className="h-full"
-          style={{ width: "0.5px", backgroundColor: "hsl(42 37% 62% / 0.3)" }}
+          style={{ width: "0.5px", backgroundColor: "hsl(var(--gold-light) / 0.3)" }}
         />
       </div>
 
@@ -134,21 +134,21 @@ const BeforeAfterSlider = ({
             width: 22,
             height: 22,
             backgroundColor: "rgba(255,255,255,0.82)",
-            border: "0.5px solid hsl(42 37% 62% / 0.4)",
+            border: "0.5px solid hsl(var(--gold-light) / 0.4)",
             boxShadow: "0 1px 4px rgba(0,0,0,0.06)",
           }}
         >
           <svg width="8" height="8" viewBox="0 0 14 14" fill="none">
             <path
               d="M4.5 3L2 7L4.5 11"
-              stroke="hsl(42 37% 58% / 0.7)"
+              stroke="hsl(var(--gold) / 0.7)"
               strokeWidth="1"
               strokeLinecap="round"
               strokeLinejoin="round"
             />
             <path
               d="M9.5 3L12 7L9.5 11"
-              stroke="hsl(42 37% 58% / 0.7)"
+              stroke="hsl(var(--gold) / 0.7)"
               strokeWidth="1"
               strokeLinecap="round"
               strokeLinejoin="round"

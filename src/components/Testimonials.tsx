@@ -115,7 +115,7 @@ const Testimonials = () => {
                     className="w-10 h-10 rounded-full flex items-center justify-center"
                     style={{
                       background:
-                        "linear-gradient(135deg, hsl(42 37% 57% / 0.12), hsl(42 37% 57% / 0.06))",
+                        "linear-gradient(135deg, hsl(var(--gold) / 0.12), hsl(var(--gold) / 0.06))",
                     }}
                   >
                     <Quote className="w-4 h-4 text-gold" />

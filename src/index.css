@@ -40,8 +40,10 @@
 
     --radius: 0.25rem;
 
-    --gold: 42 37% 57%;
-    --gold-light: 38 50% 75%;
+    --gold: 41 36% 57%;
+    --gold-deep: 40 32% 44%;
+    --gold-light: 39 40% 68%;
+    --gold-highlight: 38 45% 76%;
     --warm-cream: 40 30% 96%;
 
     --sidebar-background: 0 0% 98%;

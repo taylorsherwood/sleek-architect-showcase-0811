@@ -26,11 +26,11 @@ const InstagramGallery = () => {
   }, []);
 
   return (
-    <section className="hidden md:block pt-8 pb-10 bg-background">
+    <section className="hidden md:block pt-16 pb-10 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto">
           {/* Heading */}
-          <div className="text-center mb-12">
+          <div className="text-center mb-14">
             <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground/50 mb-3">
               @TheInvestorBroker
             </p>
@@ -51,14 +51,14 @@ const InstagramGallery = () => {
           </div>
 
           {/* CTA */}
-          <div className="text-center mt-10">
+          <div className="text-center mt-12">
             <a
               href={INSTAGRAM_PROFILE_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block px-8 py-2.5 text-[0.65rem] tracking-[0.18em] uppercase border border-foreground/15 text-foreground/70 hover:border-foreground/40 hover:text-foreground transition-all duration-300"
+              className="inline-block px-10 py-2.5 text-[0.6rem] tracking-[0.22em] uppercase text-foreground/50 hover:text-foreground/80 transition-all duration-500"
             >
-              Follow on Instagram
+              View More on Instagram
             </a>
           </div>
         </div>

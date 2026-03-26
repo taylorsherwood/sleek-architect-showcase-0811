@@ -26,7 +26,7 @@ const InstagramGallery = () => {
   }, []);
 
   return (
-    <section className="hidden md:block pt-8 pb-20 bg-background">
+    <section className="hidden md:block pt-8 pb-10 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto">
           {/* Heading */}

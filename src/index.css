@@ -149,17 +149,17 @@
     0% {
       transform: translateY(0);
       opacity: 1;
-      box-shadow: 0 0 12px hsl(42 45% 60% / 0.5);
+      box-shadow: 0 0 10px hsl(var(--gold-light) / 0.4);
     }
     50% {
       transform: translateY(16px);
       opacity: 0.3;
-      box-shadow: 0 0 4px hsl(42 45% 60% / 0.1);
+      box-shadow: 0 0 4px hsl(var(--gold-light) / 0.1);
     }
     100% {
       transform: translateY(0);
       opacity: 1;
-      box-shadow: 0 0 12px hsl(42 45% 60% / 0.5);
+      box-shadow: 0 0 10px hsl(var(--gold-light) / 0.4);
     }
   }
 

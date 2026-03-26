@@ -232,3 +232,10 @@
   border-radius: 0 !important;
 }
 
+/* Hide counts, counters, and indicators */
+.instagram-feed-wrapper [class*="count"],
+.instagram-feed-wrapper [class*="counter"],
+.instagram-feed-wrapper [class*="indicator"] {
+  display: none !important;
+}
+

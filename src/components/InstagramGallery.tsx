@@ -56,7 +56,7 @@ const InstagramGallery = () => {
               href={INSTAGRAM_PROFILE_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block px-10 py-2.5 text-[0.6rem] tracking-[0.22em] uppercase text-foreground/50 hover:text-foreground/80 transition-all duration-500"
+              className="gold-metallic-text gold-underline-hover inline-block px-10 py-2.5 text-[0.6rem] tracking-[0.22em] uppercase"
             >
               View More on Instagram
             </a>

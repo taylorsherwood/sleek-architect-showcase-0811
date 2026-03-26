@@ -326,5 +326,53 @@ The most successful community spaces are those that grow and evolve with their u
     readTime: "10 min read",
     category: "URBAN PLANNING",
     image: blogUrban
+  },
+  {
+    id: "2300-barton-creek-blvd",
+    title: "2300 Barton Creek Blvd — A Landmark Estate in the Heart of Barton Creek",
+    excerpt: "Discover this exceptional estate at 2300 Barton Creek Blvd, offering unparalleled luxury, privacy, and resort-style living in one of Austin's most coveted addresses.",
+    content: `
+## A Premier Address in Barton Creek
+
+Nestled within the prestigious gates of Barton Creek, 2300 Barton Creek Blvd stands as a testament to refined Hill Country living. This landmark estate commands sweeping views of the surrounding landscape, offering a rare combination of architectural distinction, generous acreage, and proximity to Austin's most exclusive amenities.
+
+## The Residence
+
+The main residence showcases timeless architecture with soaring ceilings, walls of glass, and seamless indoor-outdoor flow. Every detail has been thoughtfully curated — from the grand foyer entry to the chef's kitchen, formal living and dining rooms, and a primary suite that rivals the finest boutique hotels.
+
+Key features include:
+
+- **Grand Living Spaces** — Open-concept design with natural stone, hardwood floors, and floor-to-ceiling windows
+- **Chef's Kitchen** — Professional-grade appliances, oversized island, and butler's pantry
+- **Primary Suite** — Spa-inspired bath, dual closets, and private terrace with panoramic views
+- **Guest Quarters** — Separate guest suite with private entrance for ultimate privacy
+- **Home Office** — Dedicated workspace with built-in cabinetry and natural light
+
+## The Grounds
+
+The estate's outdoor spaces are nothing short of extraordinary. Mature oaks frame the property while manicured grounds lead to resort-caliber amenities designed for both intimate gatherings and grand-scale entertaining.
+
+- **Infinity Pool & Spa** — Vanishing-edge pool overlooking the Hill Country
+- **Outdoor Kitchen & Pavilion** — Full outdoor entertaining area with covered dining
+- **Sport Court** — Regulation-size court for tennis or basketball
+- **Manicured Gardens** — Professionally landscaped with native Texas plantings
+
+## The Barton Creek Lifestyle
+
+Barton Creek is one of Austin's most sought-after communities, offering world-class golf, a private country club, top-rated schools, and direct access to the Barton Creek Greenbelt. Residents enjoy a lifestyle defined by privacy, nature, and convenience — just minutes from downtown Austin.
+
+## Investment Perspective
+
+Properties of this caliber in Barton Creek rarely come to market. With limited inventory and sustained demand for luxury estates in Austin's premier gated communities, 2300 Barton Creek Blvd represents both an exceptional lifestyle and a compelling long-term investment.
+
+## Schedule a Private Showing
+
+This property is best experienced in person. Contact our team to arrange a private tour and discover why 2300 Barton Creek Blvd is one of the most distinguished estates in Austin.
+    `,
+    author: "Taylor Sanchez",
+    date: "2026-03-26",
+    readTime: "5 min read",
+    category: "FEATURED LISTING",
+    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80"
   }
 ];

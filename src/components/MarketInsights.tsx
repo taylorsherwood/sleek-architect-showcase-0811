@@ -47,7 +47,7 @@ const MarketInsights = () => {
         <div className="max-w-6xl mx-auto">
           <ScrollReveal>
             <div className="text-center mb-14">
-              <p className="text-minimal text-gold mb-4 tracking-[0.25em] font-semibold drop-shadow-[0_0_6px_hsl(42_37%_57%/0.4)]">Market Insights</p>
+              <p className="text-minimal text-gold mb-4 tracking-[0.25em] font-semibold">Market Insights</p>
               <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-4">
                 Strategic Perspective on Austin Real Estate
               </h2>
@@ -62,7 +62,7 @@ const MarketInsights = () => {
               <ScrollReveal key={article.to} delay={i * 80}>
                 <Link to={article.to} className="group block h-full">
                   <div className="border border-border/40 p-6 h-full flex flex-col hover:border-gold/50 transition-colors duration-500">
-                    <p className="text-[0.65rem] tracking-[0.2em] uppercase text-gold font-semibold drop-shadow-[0_0_4px_hsl(42_37%_57%/0.3)] mb-3">
+                    <p className="text-[0.65rem] tracking-[0.2em] uppercase text-gold font-semibold mb-3">
                       {article.category}
                     </p>
                     <h3 className="text-lg font-display font-light text-foreground mb-3 group-hover:text-gold transition-colors duration-300 leading-snug">

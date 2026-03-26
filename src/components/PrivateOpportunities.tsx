@@ -118,7 +118,7 @@ const PrivateOpportunities = ({ variant = "light" }: PrivateOpportunitiesProps) 
             <div>
               <p
                 className="text-minimal tracking-widest mb-3"
-                style={{ color: "hsl(42, 37%, 57%)" }}
+                style={{ color: "hsl(var(--gold))" }}
               >
                 PRIVATE ACCESS
               </p>
@@ -144,7 +144,7 @@ const PrivateOpportunities = ({ variant = "light" }: PrivateOpportunitiesProps) 
                     <item.icon
                       className="w-5 h-5 flex-shrink-0"
                       strokeWidth={1.4}
-                      style={{ color: "hsl(42, 37%, 57%)" }}
+                      style={{ color: "hsl(var(--gold))" }}
                     />
                     <span
                       className={`text-base ${
@@ -176,7 +176,7 @@ const PrivateOpportunities = ({ variant = "light" }: PrivateOpportunitiesProps) 
                     maxLength={100}
                     className={`w-full px-4 py-3 rounded text-sm transition-colors focus:outline-none ${
                       isDark
-                        ? "bg-white/10 border border-white/15 text-white placeholder:text-white/40 focus:border-[hsl(42,37%,57%)]"
+                        ? "bg-white/10 border border-white/15 text-white placeholder:text-white/40 focus:border-[hsl(var(--gold))]"
                         : "bg-muted border border-border text-foreground placeholder:text-muted-foreground focus:border-[hsl(var(--gold))]"
                     }`}
                   />
@@ -193,7 +193,7 @@ const PrivateOpportunities = ({ variant = "light" }: PrivateOpportunitiesProps) 
                     maxLength={255}
                     className={`w-full px-4 py-3 rounded text-sm transition-colors focus:outline-none ${
                       isDark
-                        ? "bg-white/10 border border-white/15 text-white placeholder:text-white/40 focus:border-[hsl(42,37%,57%)]"
+                        ? "bg-white/10 border border-white/15 text-white placeholder:text-white/40 focus:border-[hsl(var(--gold))]"
                         : "bg-muted border border-border text-foreground placeholder:text-muted-foreground focus:border-[hsl(var(--gold))]"
                     }`}
                   />
@@ -210,7 +210,7 @@ const PrivateOpportunities = ({ variant = "light" }: PrivateOpportunitiesProps) 
                     maxLength={20}
                     className={`w-full px-4 py-3 rounded text-sm transition-colors focus:outline-none ${
                       isDark
-                        ? "bg-white/10 border border-white/15 text-white placeholder:text-white/40 focus:border-[hsl(42,37%,57%)]"
+                        ? "bg-white/10 border border-white/15 text-white placeholder:text-white/40 focus:border-[hsl(var(--gold))]"
                         : "bg-muted border border-border text-foreground placeholder:text-muted-foreground focus:border-[hsl(var(--gold))]"
                     }`}
                   />

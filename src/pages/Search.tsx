@@ -38,7 +38,7 @@ const SearchPage = () => {
           <ScrollReveal>
             <p
               className="text-minimal mb-6"
-              style={{ color: "hsl(42 37% 67%)" }}
+              style={{ color: "hsl(var(--gold-light))" }}
             >
               AUSTIN REAL ESTATE
             </p>

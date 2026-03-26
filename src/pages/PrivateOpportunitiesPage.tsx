@@ -101,7 +101,7 @@ const PrivateOpportunitiesPage = () => {
                   <opp.icon
                     className="w-6 h-6 mb-4"
                     strokeWidth={1.4}
-                    style={{ color: "hsl(42, 37%, 57%)" }}
+                    style={{ color: "hsl(var(--gold))" }}
                   />
                   <h3 className="text-lg font-display font-medium text-foreground mb-4">
                     {opp.title}

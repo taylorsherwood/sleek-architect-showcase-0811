@@ -363,7 +363,7 @@ const Invest = () => {
               <p
                 className="text-minimal font-semibold mb-4"
                 style={{
-                  color: "hsl(42, 37%, 57%)",
+                  color: "hsl(var(--gold))",
                   textShadow: "0 0 8px rgba(0,0,0,0.6)",
                   letterSpacing: "0.35em",
                 }}

@@ -40,7 +40,7 @@ const HeroCTAStrip = () => {
                   background: "hsl(233 42% 14% / 0.3)",
                   backdropFilter: "blur(24px)",
                   WebkitBackdropFilter: "blur(24px)",
-                  border: "1.5px solid hsl(42 37% 57%)",
+                  border: "1.5px solid hsl(var(--gold))",
                   boxShadow:
                     "0 4px 20px hsl(0 0% 0% / 0.15), inset 0 1px 0 hsl(0 0% 100% / 0.04)",
                   transition:
@@ -49,21 +49,21 @@ const HeroCTAStrip = () => {
                 onMouseEnter={(e) => {
                   const el = e.currentTarget;
                   el.style.transform = "translateY(-4px)";
-                  el.style.borderColor = "hsl(42 37% 57%)";
+                  el.style.borderColor = "hsl(var(--gold))";
                   el.style.boxShadow =
-                    "0 12px 36px hsl(42 37% 57% / 0.12), 0 0 48px hsl(42 37% 57% / 0.06), inset 0 1px 0 hsl(0 0% 100% / 0.06)";
+                    "0 12px 36px hsl(var(--gold) / 0.12), 0 0 48px hsl(var(--gold) / 0.06), inset 0 1px 0 hsl(0 0% 100% / 0.06)";
                 }}
                 onMouseLeave={(e) => {
                   const el = e.currentTarget;
                   el.style.transform = "translateY(0)";
-                  el.style.borderColor = "hsl(42 37% 57%)";
+                  el.style.borderColor = "hsl(var(--gold))";
                   el.style.boxShadow =
                     "0 4px 20px hsl(0 0% 0% / 0.15), inset 0 1px 0 hsl(0 0% 100% / 0.04)";
                 }}
               >
                 <card.icon
                   className="w-6 h-6 mb-4 transition-colors duration-250"
-                  style={{ color: "hsl(42 37% 57% / 0.7)" }}
+                  style={{ color: "hsl(var(--gold) / 0.7)" }}
                 />
                 <span
                   className="font-sans text-xs tracking-[0.14em] uppercase font-medium transition-colors duration-250"

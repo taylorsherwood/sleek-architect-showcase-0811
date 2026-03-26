@@ -29,7 +29,7 @@ const CommunitiesPreview = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <p className="text-minimal text-gold mb-4 font-extrabold">
               SELECT COMMUNITIES
             </p>

@@ -246,12 +246,20 @@
   overflow: hidden !important;
 }
 
-/* Increase horizontal spacing between cards */
+/* Increase horizontal spacing between cards — generous editorial gaps */
 .instagram-feed-wrapper [class*="grid"],
 .instagram-feed-wrapper [class*="row"],
 .instagram-feed-wrapper [class*="list"],
 .instagram-feed-wrapper [class*="container"] {
-  gap: 20px !important;
+  gap: 24px !important;
+}
+
+/* Make first post larger for visual hierarchy */
+.instagram-feed-wrapper [class*="post"]:first-child,
+.instagram-feed-wrapper [class*="item"]:first-child,
+.instagram-feed-wrapper [class*="card"]:first-child {
+  grid-column: span 2 !important;
+  grid-row: span 2 !important;
 }
 
 /* Editorial 4:5 aspect ratio for images */
@@ -264,14 +272,15 @@
   object-fit: cover !important;
   object-position: center !important;
   width: 100% !important;
-  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.4s ease !important;
+  height: 100% !important;
+  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.5s ease !important;
 }
 
 /* Subtle hover zoom — restrained and elegant */
 .instagram-feed-wrapper .es-post:hover img,
 .instagram-feed-wrapper [class*="post"]:hover img,
 .instagram-feed-wrapper [class*="item"]:hover img {
-  transform: scale(1.03) !important;
+  transform: scale(1.02) !important;
 }
 
 /* Hide any text overlays that sit on top of images */

@@ -99,10 +99,9 @@ const CommunitiesPreview = () => {
           <div className="text-center mt-12">
             <Link
               to="/communities"
-              className="gold-metallic-text group/cta relative inline-block px-10 py-2.5 text-[0.6rem] tracking-[0.22em] uppercase transition-all duration-500"
+              className="gold-metallic-text gold-underline-hover inline-block px-10 py-2.5 text-[0.6rem] tracking-[0.22em] uppercase"
             >
               Explore All Communities
-              <span className="absolute left-1/2 -translate-x-1/2 bottom-0 h-px w-0 bg-gradient-to-r from-[hsl(42,30%,45%)] via-[hsl(40,45%,65%)] to-[hsl(42,30%,45%)] group-hover/cta:w-full transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)]" />
             </Link>
           </div>
         </div>

@@ -39,6 +39,11 @@ const About = () => {
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl">Echelon Property Group was founded with a singular vision: to redefine luxury real estate marketing and investment sales in Austin, Texas.
 
+      {/* Instagram Feed */}
+      <div className="py-6 bg-background" />
+      <InstagramGallery />
+      <div className="py-6 bg-background" />
+
 
             </p>
           </div>

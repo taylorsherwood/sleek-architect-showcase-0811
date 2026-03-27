@@ -204,7 +204,6 @@ const CommercialInvestment = () => {
                     REQUEST INFORMATION
                   </Link>
                 </div>
-                </div>
               </div>
 
               {/* 717 S. 11th St */}

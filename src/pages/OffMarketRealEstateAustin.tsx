@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
-import SchemaMarkup, { createBreadcrumbSchema } from "@/components/SchemaMarkup";
+import SchemaMarkup, { createBreadcrumbSchema, createFAQSchema } from "@/components/SchemaMarkup";
 import heroImage from "@/assets/hero-luxury-austin.jpg";
 import echelonLogo from "@/assets/echelon-logo-gold.png";
 import { formatPhoneNumber, getTimestamp } from "@/lib/formUtils";

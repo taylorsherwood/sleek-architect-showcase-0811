@@ -163,7 +163,7 @@ const CommercialInvestment = () => {
                   <Link
                     to="/contact"
                     className="inline-block bg-transparent text-foreground/80 border border-border/40 hover:border-gold hover:text-gold px-6 py-2 transition-all duration-500 ease-out"
-                    style={labelStyle}
+                    style={ctaStyle}
                   >
                     REQUEST INFORMATION
                   </Link>
@@ -209,7 +209,7 @@ const CommercialInvestment = () => {
                   <Link
                     to="/contact"
                     className="inline-block bg-transparent text-foreground/80 border border-border/40 hover:border-gold hover:text-gold px-6 py-2 transition-all duration-500 ease-out"
-                    style={labelStyle}
+                    style={ctaStyle}
                   >
                     REQUEST INFORMATION
                   </Link>
@@ -255,7 +255,7 @@ const CommercialInvestment = () => {
                   <Link
                     to="/contact"
                     className="inline-block bg-transparent text-foreground/80 border border-border/40 hover:border-gold hover:text-gold px-6 py-2 transition-all duration-500 ease-out"
-                    style={labelStyle}
+                    style={ctaStyle}
                   >
                     REQUEST INFORMATION
                   </Link>
@@ -301,7 +301,7 @@ const CommercialInvestment = () => {
                   <Link
                     to="/contact"
                     className="inline-block bg-transparent text-foreground/80 border border-border/40 hover:border-gold hover:text-gold px-6 py-2 transition-all duration-500 ease-out"
-                    style={labelStyle}
+                    style={ctaStyle}
                   >
                     REQUEST INFORMATION
                   </Link>
@@ -347,7 +347,7 @@ const CommercialInvestment = () => {
                   <Link
                     to="/contact"
                     className="inline-block bg-transparent text-foreground/80 border border-border/40 hover:border-gold hover:text-gold px-6 py-2 transition-all duration-500 ease-out"
-                    style={labelStyle}
+                    style={ctaStyle}
                   >
                     REQUEST INFORMATION
                   </Link>

@@ -38,6 +38,8 @@ const Footer = () => {
                 <Link to="/best-luxury-neighborhoods-austin" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Best Neighborhoods</Link>
                 <Link to="/austin-luxury-market-report" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Market Report</Link>
                 <Link to="/off-market-real-estate-austin" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Off-Market Homes</Link>
+                <Link to="/austin-multifamily-report-2026" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Multifamily Report</Link>
+                <Link to="/austin-land-development-opportunities" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Land Development</Link>
               </div>
             </div>
 

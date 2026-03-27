@@ -46,12 +46,12 @@ const Footer = () => {
                 <p>2105 East MLK Blvd Ste 227<br />Austin, Texas 78702</p>
                 <a href="mailto:taylor@echelonpropertygroup.com" className="block hover:text-primary-foreground transition-colors">taylor@echelonpropertygroup.com</a>
                 <a href="tel:+15126613843" className="block hover:text-primary-foreground transition-colors">(512) 661-3843</a>
-                <a href="https://www.instagram.com/theinvestorbroker" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 hover:text-primary-foreground transition-colors md:justify-end">
+                <a href="https://www.instagram.com/theinvestorbroker" target="_blank" rel="noopener noreferrer nofollow" className="inline-flex items-center gap-2 hover:text-primary-foreground transition-colors md:justify-end">
                   <Instagram className="w-4 h-4" />
                   @TheInvestorBroker
                 </a>
                 <div>
-                  <a href="https://www.linkedin.com/in/taylorsherwood/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 hover:text-primary-foreground transition-colors md:justify-end">
+                  <a href="https://www.linkedin.com/in/taylorsherwood/" target="_blank" rel="noopener noreferrer nofollow" className="inline-flex items-center gap-2 hover:text-primary-foreground transition-colors md:justify-end">
                     <Linkedin className="w-4 h-4" fill="currentColor" />
                     Taylor Sherwood
                   </a>
@@ -69,7 +69,7 @@ const Footer = () => {
               <a
                 href="https://www.dropbox.com/scl/fi/ism1gkeqt0bol9srh3b0a/IABS-1-2.pdf?rlkey=l05zn9bqqmg8e1ru4qjzsnd1o&dl=0"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer nofollow"
                 className="text-primary-foreground/40 text-xs hover:text-gold transition-colors duration-300 underline underline-offset-2"
               >
                 Information About Brokerage Services
@@ -82,7 +82,7 @@ const Footer = () => {
               <a
                 href="https://expluxury.com/?tl=en"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer nofollow"
                 className="text-primary-foreground/40 text-xs hover:text-gold transition-colors duration-300"
               >
                 Member of the eXp Luxury Division

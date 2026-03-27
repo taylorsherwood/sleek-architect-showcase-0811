@@ -86,7 +86,7 @@ const CommercialInvestment = () => {
             </div>
             <div className="mt-12 inline-flex flex-col items-start">
               <span className="text-[11px] uppercase tracking-[0.2em] text-white/60 mb-2.5 font-normal">Brokered with</span>
-              <a href="https://www.expcommercial.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-6 py-3 rounded-xl bg-white/[0.06] backdrop-blur-sm border border-white/[0.08] shadow-[0_4px_20px_rgba(0,0,0,0.25)] hover:bg-white/[0.1] transition-colors duration-300">
+              <a href="https://www.expcommercial.com" target="_blank" rel="noopener noreferrer nofollow" className="inline-flex items-center px-6 py-3 rounded-xl bg-white/[0.06] backdrop-blur-sm border border-white/[0.08] shadow-[0_4px_20px_rgba(0,0,0,0.25)] hover:bg-white/[0.1] transition-colors duration-300">
                 <img
                   src={expCommercialLogo}
                   alt="eXp Commercial"

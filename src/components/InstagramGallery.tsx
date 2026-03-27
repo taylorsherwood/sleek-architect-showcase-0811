@@ -76,7 +76,7 @@ const InstagramGallery = () => {
             <a
               href={INSTAGRAM_PROFILE_URL}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer nofollow"
               className="gold-metallic-text gold-underline-hover inline-block px-10 py-2.5 text-[0.6rem] tracking-[0.22em] uppercase"
             >
               View More on Instagram

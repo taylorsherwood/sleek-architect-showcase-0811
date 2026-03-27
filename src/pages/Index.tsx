@@ -31,7 +31,7 @@ const NewsletterSection = lazy(async () => {
             <a
               href="https://taylorsherwood.myflodesk.com/biolink"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer nofollow"
               className="inline-block px-8 py-3 text-sm bg-[#0C0F24] text-background hover:bg-gold hover:text-primary-foreground transition-colors duration-300"
             >
               BECOME AN ECHELON INSIDER

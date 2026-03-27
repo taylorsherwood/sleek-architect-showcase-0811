@@ -210,7 +210,7 @@ const AustinLuxuryHomes = () => {
                 <a
                   href="https://taylorsherwood.realscout.com/"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer nofollow"
                   className="inline-block text-minimal border border-primary text-primary hover:bg-primary hover:text-primary-foreground px-10 py-4 transition-colors duration-300"
                 >
                   SEARCH HOMES

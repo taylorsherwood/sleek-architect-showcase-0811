@@ -147,7 +147,7 @@ const Connect = () => {
                       key={s.label}
                       href={s.href}
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="noopener noreferrer nofollow"
                       aria-label={s.label}
                       className="flex items-center justify-center w-11 h-11 rounded-full transition-all duration-200 hover:-translate-y-0.5"
                       style={{
@@ -259,7 +259,7 @@ const Connect = () => {
                 <a
                   href={link.href}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer nofollow"
                   className="flex items-center justify-center w-full h-[52px] rounded-full transition-all duration-200 hover:-translate-y-0.5"
                   style={{
                     background: (link as any).transparent ? "transparent" : "hsl(0 0% 100% / 0.55)",
@@ -299,7 +299,7 @@ const Connect = () => {
               <a
                 href="https://www.echelonpropertygroup.com/contact"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer nofollow"
                 className="flex items-center justify-center w-full h-14 rounded-full transition-all duration-200 hover:-translate-y-0.5"
                 style={{
                   background: "hsl(233 50% 9%)",
@@ -334,7 +334,7 @@ const Connect = () => {
               <a
                 href="https://www.dropbox.com/scl/fi/ism1gkeqt0bol9srh3b0a/IABS-1-2.pdf?rlkey=l05zn9bqqmg8e1ru4qjzsnd1o&dl=0"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer nofollow"
                 className="flex items-center justify-center w-full h-[52px] rounded-full transition-all duration-200 hover:-translate-y-0.5"
                 style={{
                   background: "transparent",
@@ -367,7 +367,7 @@ const Connect = () => {
               <a
                 href="https://www.echelonpropertygroup.com"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer nofollow"
                 className="font-sans transition-opacity duration-300 hover:opacity-80"
                 style={{
                   fontSize: "9px",

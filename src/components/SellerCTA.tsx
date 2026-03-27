@@ -18,7 +18,7 @@ const SellerCTA = () => {
               <a
                 href="https://consumer.hifello.com/lp/6903b93b826830c15da4d0f9"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer nofollow"
                 className="inline-block text-minimal bg-primary text-primary-foreground hover:bg-gold hover:text-white px-10 py-4 transition-colors duration-300">
                 
                 GET YOUR FREE VALUATION REPORT

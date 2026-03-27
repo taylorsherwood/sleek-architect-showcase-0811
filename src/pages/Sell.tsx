@@ -513,7 +513,7 @@ const Sell = () => {
         </div>
       </section>
 
-      <FeaturedListings hideRealScout />
+      <Suspense fallback={<div className="min-h-[200px]" />}><FeaturedListings hideRealScout /></Suspense>
 
       {/* ── FAQ ── */}
       <section className="py-28 bg-background">

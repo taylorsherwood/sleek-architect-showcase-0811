@@ -235,7 +235,7 @@ const CommercialInvestment = () => {
                       <p className="text-foreground font-medium text-sm">Recently Renovated</p>
                     </div>
                   </div>
-                  <p className="text-muted-foreground text-sm leading-relaxed mb-6">
+                  <p className="text-muted-foreground text-sm leading-relaxed mb-6 flex-grow">
                     Recently renovated 6-unit multifamily property in Temple, TX. Contact for pricing and additional details.
                   </p>
                   <Link

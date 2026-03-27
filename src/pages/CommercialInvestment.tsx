@@ -7,6 +7,7 @@ import heroArchitecture from "@/assets/hero-architecture.jpg";
 import expCommercialLogo from "@/assets/exp-commercial-logo-horizontal-white.webp";
 import gillisStreet from "@/assets/commercial-gillis-street.jpg";
 import sanJoseAve from "@/assets/commercial-san-jose-ave.jpg";
+import bremserAve from "@/assets/commercial-bremser-ave.jpg";
 
 const Footer = lazy(() => import("@/components/Footer"));
 
@@ -291,9 +292,14 @@ const CommercialInvestment = () => {
               {/* 709/711/713 Bremser Ave */}
               <div className="border-2 border-border overflow-hidden group bg-card hover:border-gold transition-colors duration-500">
                 <div className="relative overflow-hidden">
-                  <div className="w-full aspect-[4/3] bg-muted flex items-center justify-center">
-                    <span className="text-muted-foreground/40 text-sm tracking-widest uppercase">Photo Coming Soon</span>
-                  </div>
+                  <img
+                    src={bremserAve}
+                    alt="709/711/713 Bremser Ave, Killeen TX — 3 individual rental homes"
+                    title="709/711/713 Bremser Ave — rental homes, Killeen TX"
+                    className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
+                    loading="lazy"
+                    decoding="async"
+                  />
                   <span className="absolute top-4 left-4 text-minimal bg-gold text-white px-3 py-1 font-extrabold">
                     RENTAL HOMES
                   </span>

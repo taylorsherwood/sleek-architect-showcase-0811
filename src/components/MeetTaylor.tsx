@@ -56,7 +56,7 @@ const MeetTaylor = () => {
                 href="https://www.instagram.com/theinvestorbroker"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                className="inline-flex items-center gap-2 text-gold hover:opacity-80 transition-opacity duration-300"
+                className="gold-metallic-text gold-underline-hover inline-flex items-center gap-2 transition-opacity duration-300"
                 aria-label="Follow Taylor Sherwood on Instagram"
               >
                 <Instagram className="w-5 h-5" />

@@ -140,7 +140,7 @@ const CommercialInvestment = () => {
                     MULTIFAMILY
                   </span>
                 </div>
-                <div className="p-5 flex flex-col flex-grow">
+                <div className="p-6 flex flex-col flex-grow">
                   <div className="flex items-center justify-between mb-2">
                     <h3 className="text-lg font-display font-light text-foreground">
                       4314 Gillis Street
@@ -163,7 +163,7 @@ const CommercialInvestment = () => {
                   </p>
                   <Link
                     to="/contact"
-                    className="inline-block text-foreground/70 border-b border-border/30 hover:border-gold hover:text-gold pb-1 transition-all duration-500 ease-out"
+                    className="inline-block border border-border/50 rounded-sm px-5 py-2 text-foreground/70 hover:border-gold hover:text-gold transition-all duration-400 ease-out"
                     style={ctaStyle}
                   >
                     REQUEST INFORMATION
@@ -186,7 +186,7 @@ const CommercialInvestment = () => {
                     DEVELOPMENT LAND
                   </span>
                 </div>
-                <div className="p-5 flex flex-col flex-grow">
+                <div className="p-6 flex flex-col flex-grow">
                   <div className="flex items-center justify-between mb-2">
                     <h3 className="text-lg font-display font-light text-foreground">
                       10811 San Jose Ave
@@ -209,7 +209,7 @@ const CommercialInvestment = () => {
                   </p>
                   <Link
                     to="/contact"
-                    className="inline-block text-foreground/70 border-b border-border/30 hover:border-gold hover:text-gold pb-1 transition-all duration-500 ease-out"
+                    className="inline-block border border-border/50 rounded-sm px-5 py-2 text-foreground/70 hover:border-gold hover:text-gold transition-all duration-400 ease-out"
                     style={ctaStyle}
                   >
                     REQUEST INFORMATION
@@ -232,7 +232,7 @@ const CommercialInvestment = () => {
                     MULTIFAMILY
                   </span>
                 </div>
-                <div className="p-5 flex flex-col flex-grow">
+                <div className="p-6 flex flex-col flex-grow">
                   <div className="flex items-center justify-between mb-2">
                     <h3 className="text-lg font-display font-light text-foreground">
                       717 S. 11th St.
@@ -255,7 +255,7 @@ const CommercialInvestment = () => {
                   </p>
                   <Link
                     to="/contact"
-                    className="inline-block text-foreground/70 border-b border-border/30 hover:border-gold hover:text-gold pb-1 transition-all duration-500 ease-out"
+                    className="inline-block border border-border/50 rounded-sm px-5 py-2 text-foreground/70 hover:border-gold hover:text-gold transition-all duration-400 ease-out"
                     style={ctaStyle}
                   >
                     REQUEST INFORMATION
@@ -278,7 +278,7 @@ const CommercialInvestment = () => {
                     RENTAL PORTFOLIO
                   </span>
                 </div>
-                <div className="p-5 flex flex-col flex-grow">
+                <div className="p-6 flex flex-col flex-grow">
                   <div className="flex items-center justify-between mb-2">
                     <h3 className="text-lg font-display font-light text-foreground">
                       Small Killeen Rental Portfolio
@@ -301,7 +301,7 @@ const CommercialInvestment = () => {
                   </p>
                   <Link
                     to="/contact"
-                    className="inline-block text-foreground/70 border-b border-border/30 hover:border-gold hover:text-gold pb-1 transition-all duration-500 ease-out"
+                    className="inline-block border border-border/50 rounded-sm px-5 py-2 text-foreground/70 hover:border-gold hover:text-gold transition-all duration-400 ease-out"
                     style={ctaStyle}
                   >
                     REQUEST INFORMATION
@@ -324,7 +324,7 @@ const CommercialInvestment = () => {
                     RENTAL PORTFOLIO
                   </span>
                 </div>
-                <div className="p-5 flex flex-col flex-grow">
+                <div className="p-6 flex flex-col flex-grow">
                   <div className="flex items-center justify-between mb-2">
                     <h3 className="text-lg font-display font-light text-foreground">
                       709/711/713 Bremser Ave
@@ -347,7 +347,7 @@ const CommercialInvestment = () => {
                   </p>
                   <Link
                     to="/contact"
-                    className="inline-block text-foreground/70 border-b border-border/30 hover:border-gold hover:text-gold pb-1 transition-all duration-500 ease-out"
+                    className="inline-block border border-border/50 rounded-sm px-5 py-2 text-foreground/70 hover:border-gold hover:text-gold transition-all duration-400 ease-out"
                     style={ctaStyle}
                   >
                     REQUEST INFORMATION

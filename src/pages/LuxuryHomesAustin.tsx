@@ -146,12 +146,11 @@ const LuxuryHomesAustin = () => {
                 </Link>
               </div>
             </section>
-
-            <AboutBlock />
           </div>
         </div>
       </article>
 
+      <AboutBlock />
       <Footer />
     </div>);
 

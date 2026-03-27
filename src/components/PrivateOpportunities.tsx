@@ -188,7 +188,7 @@ const PrivateOpportunities = ({ variant = "light" }: PrivateOpportunitiesProps) 
                     className={`w-full px-4 py-3 rounded text-sm transition-colors focus:outline-none ${
                       isDark
                         ? "bg-white/10 border border-white/15 text-white placeholder:text-white/40 focus:border-[hsl(var(--gold))]"
-                        : "bg-muted border border-border text-foreground placeholder:text-muted-foreground focus:border-[hsl(var(--gold))]"
+                        : "bg-background border border-border text-foreground placeholder:text-muted-foreground focus:border-[hsl(var(--gold))]"
                     }`}
                   />
                   {errors.name && (

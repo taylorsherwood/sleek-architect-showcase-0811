@@ -238,7 +238,7 @@ const PrivateOpportunities = ({ variant = "light" }: PrivateOpportunitiesProps) 
                       className={`w-full py-3 text-sm ${
                         isDark
                           ? "bg-white/10 border-white/15 text-white"
-                          : "bg-muted border-border text-foreground"
+                          : "bg-background border-border text-foreground"
                       }`}
                     >
                       <SelectValue placeholder="Investment Range" />

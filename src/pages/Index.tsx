@@ -19,7 +19,7 @@ const Footer = lazy(() => import("@/components/Footer"));
 const NewsletterSection = lazy(async () => {
   return {
     default: () => (
-      <section className="py-24 md:py-32 bg-background">
+      <section className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h3 className="text-3xl md:text-6xl font-light text-architectural mb-6 md:mb-8">

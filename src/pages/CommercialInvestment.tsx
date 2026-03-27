@@ -8,6 +8,7 @@ import expCommercialLogo from "@/assets/exp-commercial-logo-horizontal-white.web
 import gillisStreet from "@/assets/commercial-gillis-street.jpg";
 import sanJoseAve from "@/assets/commercial-san-jose-ave.jpg";
 import bremserAve from "@/assets/commercial-bremser-ave.jpg";
+import killeenPortfolio from "@/assets/commercial-killeen-portfolio.jpg";
 
 const Footer = lazy(() => import("@/components/Footer"));
 

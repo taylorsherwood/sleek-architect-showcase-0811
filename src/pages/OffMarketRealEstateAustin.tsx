@@ -389,8 +389,8 @@ const OffMarketRealEstateAustin = () => {
                 ],
               },
             ].map((item) => (
-              <div key={item.title} className="border-2 border-white/10 p-6 md:p-8 hover:border-[hsl(var(--gold))] transition-colors duration-500">
-                <h3 className="text-white font-medium text-base mb-2">{item.title}</h3>
+              <div key={item.title} className="group border-2 border-white/10 p-6 md:p-8 hover:border-[hsl(var(--gold))] transition-colors duration-500">
+                <h3 className="text-white group-hover:text-[hsl(var(--gold))] font-medium text-base mb-2 transition-colors duration-500">{item.title}</h3>
                 <p className="text-white/45 text-sm leading-relaxed mb-4">{item.desc}</p>
                 <div className="flex flex-wrap gap-x-4 gap-y-1">
                   {item.links.map((link) => (

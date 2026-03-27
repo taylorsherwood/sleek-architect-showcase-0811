@@ -102,7 +102,7 @@ const Testimonials = () => {
                 }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.boxShadow =
-                    "0 16px 48px hsl(220 20% 10% / 0.1), 0 4px 12px hsl(220 20% 10% / 0.06)";
+                    "0 16px 48px hsl(220 20% 10% / 0.1), 0 6px 16px hsl(220 20% 10% / 0.07)";
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.boxShadow =

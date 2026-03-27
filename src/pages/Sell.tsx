@@ -471,10 +471,13 @@ const Sell = () => {
       </section>
 
       {/* ── Global Luxury Advertising ── */}
-      <GlobalLuxuryAdvertising />
+      <Suspense fallback={<div className="min-h-[200px]" />}>
+        <GlobalLuxuryAdvertising />
+      </Suspense>
 
-
-      <Testimonials />
+      <Suspense fallback={<div className="min-h-[200px]" />}>
+        <Testimonials />
+      </Suspense>
 
       {/* ── Spacer ── */}
       <div className="bg-background py-8" />

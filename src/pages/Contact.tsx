@@ -187,7 +187,7 @@ Austin, Texas 78702
                     name="interest"
                     value={form.interest}
                     onChange={handleChange}
-                    className={`${inputClass} bg-background`}>
+                    className={`${inputClass} bg-card`}>
                     
                     <option value="">I'm interested in...</option>
                     <option value="selling">Selling My Home</option>

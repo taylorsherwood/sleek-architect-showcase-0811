@@ -41,201 +41,207 @@ const SchemaMarkup = ({ schema }: SchemaMarkupProps) => {
 
 export default SchemaMarkup;
 
+const SITE = "https://www.echelonpropertygroup.com";
+const LOGO = `${SITE}/lovable-uploads/echelon-logo-gold.png`;
+const OG = `${SITE}/og-image.png`;
+const HEADSHOT = `${SITE}/lovable-uploads/taylor-headshot-widget.jpg`;
+
+const address = {
+  "@type": "PostalAddress" as const,
+  "streetAddress": "2105 East MLK Blvd Ste 227",
+  "addressLocality": "Austin",
+  "addressRegion": "TX",
+  "postalCode": "78702",
+  "addressCountry": "US",
+};
+
+const areasServed = [
+  { "@type": "City" as const, "name": "Austin", "containedInPlace": { "@type": "State" as const, "name": "Texas" } },
+  { "@type": "Place" as const, "name": "Westlake Hills, Texas" },
+  { "@type": "Place" as const, "name": "Tarrytown, Austin" },
+  { "@type": "Place" as const, "name": "Spanish Oaks, Austin" },
+  { "@type": "Place" as const, "name": "Barton Creek, Austin" },
+  { "@type": "Place" as const, "name": "Northwest Hills, Austin" },
+  { "@type": "Place" as const, "name": "Rollingwood, Texas" },
+  { "@type": "Place" as const, "name": "Lake Austin" },
+  { "@type": "Place" as const, "name": "Lake Travis" },
+];
+
+const openingHoursSpec = {
+  "@type": "OpeningHoursSpecification" as const,
+  "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+  "opens": "09:00",
+  "closes": "18:00",
+};
+
+const sameAs = [
+  "https://www.instagram.com/theinvestorbroker",
+  "https://www.linkedin.com/in/taylorsherwood/",
+];
+
 export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
+  "@id": `${SITE}/#organization`,
   "name": "Echelon Property Group",
   "description": "Luxury real estate brokerage in Austin, Texas specializing in luxury homes, land, commercial real estate, and investment property.",
-  "url": "https://www.echelonpropertygroup.com",
-  "logo": "https://www.echelonpropertygroup.com/lovable-uploads/echelon-logo-gold.png",
-  "image": "https://www.echelonpropertygroup.com/og-image.png",
+  "url": SITE,
+  "logo": {
+    "@type": "ImageObject",
+    "@id": `${SITE}/#logo`,
+    "url": LOGO,
+    "width": 600,
+    "height": 600,
+  },
+  "image": OG,
   "telephone": "+1-512-661-3843",
   "email": "taylor@echelonpropertygroup.com",
   "founder": {
     "@type": "Person",
-    "name": "Taylor Sherwood"
+    "@id": `${SITE}/#taylor`,
+    "name": "Taylor Sherwood",
   },
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "2105 East MLK Blvd Ste 227",
-    "addressLocality": "Austin",
-    "addressRegion": "TX",
-    "postalCode": "78702",
-    "addressCountry": "US"
-  },
-  "sameAs": [
-    "https://www.instagram.com/theinvestorbroker",
-    "https://www.linkedin.com/in/taylorsherwood/"
-  ]
+  "address": { ...address },
+  "sameAs": sameAs,
 };
 
 export const realEstateAgentSchema = {
   "@context": "https://schema.org",
   "@type": "RealEstateAgent",
-  "name": "Taylor Sherwood",
-  "description": "Echelon Property Group is an Austin Texas real estate brokerage specializing in luxury homes, residential real estate, and land development opportunities across Austin's most desirable neighborhoods.",
-  "url": "https://www.echelonpropertygroup.com",
+  "@id": `${SITE}/#agent`,
+  "name": "Echelon Property Group",
+  "description": "Austin Texas real estate brokerage specializing in luxury homes, residential real estate, and land development opportunities across Austin's most desirable neighborhoods.",
+  "url": SITE,
   "telephone": "+1-512-661-3843",
   "email": "taylor@echelonpropertygroup.com",
-  "image": "https://www.echelonpropertygroup.com/lovable-uploads/taylor-headshot-widget.jpg",
-  "serviceType": [
-    "Luxury Real Estate",
-    "Residential Real Estate",
-    "Land Development",
-    "Buyer Representation",
-    "Seller Representation"
-  ],
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "2105 East MLK Blvd Ste 227",
-    "addressLocality": "Austin",
-    "addressRegion": "TX",
-    "postalCode": "78702",
-    "addressCountry": "US"
+  "image": OG,
+  "logo": {
+    "@type": "ImageObject",
+    "@id": `${SITE}/#logo`,
+    "url": LOGO,
   },
-  "areaServed": [
-    { "@type": "City", "name": "Austin", "containedInPlace": { "@type": "State", "name": "Texas" } },
-    { "@type": "Place", "name": "Westlake Hills, Texas" },
-    { "@type": "Place", "name": "Tarrytown, Austin" },
-    { "@type": "Place", "name": "Spanish Oaks, Austin" },
-    { "@type": "Place", "name": "Barton Creek, Austin" },
-    { "@type": "Place", "name": "Northwest Hills, Austin" },
-    { "@type": "Place", "name": "Rollingwood, Texas" },
-    { "@type": "Place", "name": "Lake Austin" },
-    { "@type": "Place", "name": "Lake Travis" }
-  ],
+  "address": { ...address },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 30.2672,
+    "longitude": -97.7431,
+  },
+  "areaServed": areasServed,
+  "openingHoursSpecification": openingHoursSpec,
   "priceRange": "$$$",
-  "openingHours": "Mo-Fr 09:00-18:00",
-  "sameAs": [
-    "https://www.instagram.com/theinvestorbroker",
-    "https://www.linkedin.com/in/taylorsherwood/"
-  ]
+  "sameAs": sameAs,
+  "employee": {
+    "@type": "Person",
+    "@id": `${SITE}/#taylor`,
+    "name": "Taylor Sherwood",
+    "image": HEADSHOT,
+  },
 };
 
 export const taylorSherwoodSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
+  "@id": `${SITE}/#taylor`,
   "name": "Taylor Sherwood",
   "jobTitle": "Real Estate Agent",
   "description": "Austin real estate professional specializing in luxury homes, residential real estate, and land development opportunities across Austin's most desirable neighborhoods.",
-  "url": "https://www.echelonpropertygroup.com/about",
+  "url": `${SITE}/about`,
   "telephone": "+1-512-661-3843",
   "email": "taylor@echelonpropertygroup.com",
-  "image": "https://www.echelonpropertygroup.com/lovable-uploads/taylor-headshot-widget.jpg",
+  "image": HEADSHOT,
   "worksFor": {
     "@type": "Organization",
+    "@id": `${SITE}/#organization`,
     "name": "Echelon Property Group",
-    "url": "https://www.echelonpropertygroup.com"
+    "url": SITE,
   },
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "2105 East MLK Blvd Ste 227",
-    "addressLocality": "Austin",
-    "addressRegion": "TX",
-    "postalCode": "78702",
-    "addressCountry": "US"
-  },
-  "areaServed": [
-    { "@type": "City", "name": "Austin", "containedInPlace": { "@type": "State", "name": "Texas" } },
-    { "@type": "Place", "name": "Westlake Hills, Texas" },
-    { "@type": "Place", "name": "Tarrytown, Austin" },
-    { "@type": "Place", "name": "Spanish Oaks, Austin" },
-    { "@type": "Place", "name": "Barton Creek, Austin" },
-    { "@type": "Place", "name": "Northwest Hills, Austin" },
-    { "@type": "Place", "name": "Rollingwood, Texas" },
-    { "@type": "Place", "name": "Lake Austin" },
-    { "@type": "Place", "name": "Lake Travis" }
+  "address": { ...address },
+  "knowsAbout": [
+    "Luxury Real Estate",
+    "Residential Real Estate",
+    "Land Development",
+    "Austin Texas Real Estate",
   ],
-  "knowsAbout": ["Luxury Real Estate", "Residential Real Estate", "Land Development", "Austin Texas Real Estate"]
+  "sameAs": sameAs,
 };
 
 export const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
+  "@id": `${SITE}/#localbusiness`,
   "name": "Echelon Property Group",
-  "description": "Echelon Property Group is an Austin Texas real estate brokerage specializing in luxury homes, residential real estate, and land development opportunities across Austin's most desirable neighborhoods.",
-  "url": "https://www.echelonpropertygroup.com",
+  "description": "Austin Texas real estate brokerage specializing in luxury homes, residential real estate, and land development opportunities across Austin's most desirable neighborhoods.",
+  "url": SITE,
   "telephone": "+1-512-661-3843",
   "email": "taylor@echelonpropertygroup.com",
-  "image": "https://www.echelonpropertygroup.com/og-image.png",
-  "logo": "https://www.echelonpropertygroup.com/lovable-uploads/echelon-logo-gold.png",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "2105 East MLK Blvd Ste 227",
-    "addressLocality": "Austin",
-    "addressRegion": "TX",
-    "postalCode": "78702",
-    "addressCountry": "US"
+  "image": OG,
+  "logo": {
+    "@type": "ImageObject",
+    "@id": `${SITE}/#logo`,
+    "url": LOGO,
   },
+  "address": { ...address },
   "geo": {
     "@type": "GeoCoordinates",
     "latitude": 30.2672,
-    "longitude": -97.7431
+    "longitude": -97.7431,
   },
-  "areaServed": [
-    { "@type": "City", "name": "Austin", "containedInPlace": { "@type": "State", "name": "Texas" } },
-    { "@type": "Place", "name": "Westlake Hills, Texas" },
-    { "@type": "Place", "name": "Tarrytown, Austin" },
-    { "@type": "Place", "name": "Spanish Oaks, Austin" },
-    { "@type": "Place", "name": "Barton Creek, Austin" },
-    { "@type": "Place", "name": "Northwest Hills, Austin" },
-    { "@type": "Place", "name": "Rollingwood, Texas" },
-    { "@type": "Place", "name": "Lake Austin" },
-    { "@type": "Place", "name": "Lake Travis" }
-  ],
-  "openingHours": "Mo-Fr 09:00-18:00",
-  "priceRange": "$$$"
+  "areaServed": areasServed,
+  "openingHoursSpecification": openingHoursSpec,
+  "priceRange": "$$$",
+  "sameAs": sameAs,
 };
 
 export const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
+  "@id": `${SITE}/#website`,
   "name": "Echelon Property Group",
-  "url": "https://www.echelonpropertygroup.com",
+  "url": SITE,
   "description": "Austin Texas luxury real estate brokerage specializing in luxury homes, residential real estate, land, and investment properties.",
   "publisher": {
     "@type": "Organization",
+    "@id": `${SITE}/#organization`,
     "name": "Echelon Property Group",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.echelonpropertygroup.com/lovable-uploads/echelon-logo-gold.png"
-    }
+      "@id": `${SITE}/#logo`,
+      "url": LOGO,
+    },
   },
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://www.echelonpropertygroup.com/search?q={search_term_string}",
-    "query-input": "required name=search_term_string"
-  }
 };
 
-export function createArticleSchema(title: string, description: string, datePublished: string, author: string, image?: string) {
+export function createArticleSchema(title: string, description: string, datePublished: string, author: string, image?: string, url?: string) {
   return {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": title,
     "description": description,
     "name": title,
-    "url": `https://www.echelonpropertygroup.com/blog`,
-    "image": image || "https://www.echelonpropertygroup.com/og-image.png",
+    "url": url || `${SITE}/blog`,
+    "image": image || OG,
     "datePublished": datePublished,
     "dateModified": datePublished,
     "author": {
       "@type": "Person",
+      "@id": `${SITE}/#taylor`,
       "name": author,
-      "url": "https://www.echelonpropertygroup.com/about"
+      "url": `${SITE}/about`,
     },
     "publisher": {
       "@type": "Organization",
+      "@id": `${SITE}/#organization`,
       "name": "Echelon Property Group",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://www.echelonpropertygroup.com/lovable-uploads/echelon-logo-gold.png"
-      }
+        "@id": `${SITE}/#logo`,
+        "url": LOGO,
+      },
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://www.echelonpropertygroup.com/blog"
-    }
+      "@id": url || `${SITE}/blog`,
+    },
   };
 }
 
@@ -252,21 +258,16 @@ export function createRealEstateListingSchema(listing: { name: string; descripti
       "price": listing.price.replace(/[^0-9]/g, ''),
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock",
-      "businessFunction": "http://purl.org/goodrelations/v1#Sell"
     },
     "broker": {
       "@type": "RealEstateAgent",
-      "name": "Taylor Sherwood",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "Echelon Property Group"
-      }
-    }
+      "@id": `${SITE}/#agent`,
+      "name": "Echelon Property Group",
+    },
   };
 }
 
 export function createFAQSchema(faqs: { question: string; answer: string }[]) {
-  // Filter out invalid FAQ items: empty, too short, or duplicate
   const seen = new Set<string>();
   const validFaqs = faqs.filter(faq => {
     const q = (faq.question || "").trim();
@@ -286,9 +287,9 @@ export function createFAQSchema(faqs: { question: string; answer: string }[]) {
       "name": faq.question.trim(),
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": faq.answer.trim()
-      }
-    }))
+        "text": faq.answer.trim(),
+      },
+    })),
   };
 }
 
@@ -300,8 +301,8 @@ export function createBreadcrumbSchema(items: { name: string; url: string }[]) {
       "@type": "ListItem",
       "position": index + 1,
       "name": item.name,
-      "item": item.url
-    }))
+      "item": item.url,
+    })),
   };
 }
 
@@ -313,25 +314,28 @@ export function createBlogPostingSchema(post: { title: string; description: stri
     "description": post.description,
     "name": post.title,
     "url": post.url,
-    "image": post.image || "https://www.echelonpropertygroup.com/og-image.png",
+    "image": post.image || OG,
     "datePublished": post.datePublished,
     "dateModified": post.datePublished,
     "author": {
       "@type": "Person",
+      "@id": `${SITE}/#taylor`,
       "name": post.author,
-      "url": "https://www.echelonpropertygroup.com/about"
+      "url": `${SITE}/about`,
     },
     "publisher": {
       "@type": "Organization",
+      "@id": `${SITE}/#organization`,
       "name": "Echelon Property Group",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://www.echelonpropertygroup.com/lovable-uploads/echelon-logo-gold.png"
-      }
+        "@id": `${SITE}/#logo`,
+        "url": LOGO,
+      },
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": post.url
-    }
+      "@id": post.url,
+    },
   };
 }

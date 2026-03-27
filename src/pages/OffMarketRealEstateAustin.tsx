@@ -296,7 +296,7 @@ const OffMarketRealEstateAustin = () => {
               { step: "03", title: "Early & Exclusive Access", body: "You see opportunities before they hit the public market — with expert advisory and deal structuring support." },
             ].map((item) => (
               <div key={item.step} className="text-center md:text-left">
-                <span className="text-[hsl(var(--gold))]/70 font-display text-4xl font-light">{item.step}</span>
+                <span className="text-[hsl(var(--gold))] font-display text-4xl font-light">{item.step}</span>
                 <h3 className="text-white font-medium text-base mt-3 mb-2">{item.title}</h3>
                 <p className="text-white/45 text-sm leading-relaxed">{item.body}</p>
               </div>
@@ -305,7 +305,7 @@ const OffMarketRealEstateAustin = () => {
           <div className="text-center mt-14">
             <button
               onClick={scrollToForm}
-              className="border border-[hsl(var(--gold))]/40 text-[hsl(var(--gold))] hover:bg-[hsl(var(--gold))] hover:text-white px-10 py-4 transition-all duration-300 active:scale-[0.98] tracking-[0.2em] uppercase font-sans font-medium"
+              className="border-2 border-[hsl(var(--gold))]/40 text-[hsl(var(--gold))] hover:bg-[hsl(var(--gold))] hover:text-white hover:border-[hsl(var(--gold))] px-10 py-4 transition-all duration-300 active:scale-[0.98] tracking-[0.2em] uppercase font-sans font-medium"
               style={{ fontSize: "0.65rem" }}
             >
               REQUEST PRIVATE ACCESS
@@ -332,7 +332,7 @@ const OffMarketRealEstateAustin = () => {
               { title: "Hidden Inventory", body: "Access properties that never appear on Zillow, Realtor.com, or the Austin MLS — homes that trade exclusively through private channels." },
               { title: "Relationship-Driven Access", body: "The best off-market homes in Austin move through trusted agent networks and direct seller relationships — not search algorithms." },
             ].map((item) => (
-              <div key={item.title} className="border border-white/8 p-6 md:p-8 hover:border-[hsl(var(--gold))]/20 transition-colors duration-500">
+              <div key={item.title} className="border-2 border-white/10 p-6 md:p-8 hover:border-[hsl(var(--gold))] transition-colors duration-500">
                 <h3 className="text-white font-medium text-base mb-2">{item.title}</h3>
                 <p className="text-white/45 text-sm leading-relaxed">{item.body}</p>
               </div>
@@ -389,12 +389,12 @@ const OffMarketRealEstateAustin = () => {
                 ],
               },
             ].map((item) => (
-              <div key={item.title} className="border border-white/8 p-6 md:p-8 hover:border-[hsl(var(--gold))]/20 transition-colors duration-500">
+              <div key={item.title} className="border-2 border-white/10 p-6 md:p-8 hover:border-[hsl(var(--gold))] transition-colors duration-500">
                 <h3 className="text-white font-medium text-base mb-2">{item.title}</h3>
                 <p className="text-white/45 text-sm leading-relaxed mb-4">{item.desc}</p>
                 <div className="flex flex-wrap gap-x-4 gap-y-1">
                   {item.links.map((link) => (
-                    <Link key={link.to} to={link.to} className="text-[hsl(var(--gold))]/70 hover:text-[hsl(var(--gold))] transition-colors text-xs tracking-[0.1em] uppercase">
+                    <Link key={link.to} to={link.to} className="text-[hsl(var(--gold))] hover:text-white transition-colors text-xs tracking-[0.1em] uppercase">
                       {link.text} →
                     </Link>
                   ))}

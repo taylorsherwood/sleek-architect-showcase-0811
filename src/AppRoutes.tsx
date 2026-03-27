@@ -48,10 +48,11 @@ const Invest = lazy(() => import("@/pages/Invest"));
 const Private = lazy(() => import("@/pages/Private"));
 const NotFound = lazy(() => import("@/pages/NotFound"));
 
-// Prefetch /connect chunk after homepage loads
+// Prefetch /connect chunk well after homepage is interactive
 if (typeof window !== "undefined") {
   window.addEventListener("load", () => {
-    requestIdleCallback?.(() => connectImport()) ?? setTimeout(() => connectImport(), 2000);
+    const prefetch = () => setTimeout(() => connectImport(), 4000);
+    requestIdleCallback?.(prefetch, { timeout: 8000 }) ?? prefetch();
   });
 }
 

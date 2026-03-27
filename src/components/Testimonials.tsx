@@ -67,7 +67,7 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <section className="py-32 md:py-40 bg-secondary">
+    <section className="pt-20 md:pt-24 pb-32 md:pb-40 bg-secondary">
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
           {/* Header */}

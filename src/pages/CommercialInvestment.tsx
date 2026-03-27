@@ -163,7 +163,7 @@ const CommercialInvestment = () => {
                   </p>
                   <Link
                     to="/contact"
-                    className="inline-block border border-border/50 rounded-sm px-5 py-2 text-foreground/70 hover:border-gold hover:text-gold transition-all duration-400 ease-out"
+                    className="border border-border/50 rounded-sm px-6 py-2 text-foreground/70 hover:bg-gold hover:text-white hover:border-gold transition-all duration-300 ease-out self-center"
                     style={ctaStyle}
                   >
                     REQUEST INFORMATION
@@ -209,7 +209,7 @@ const CommercialInvestment = () => {
                   </p>
                   <Link
                     to="/contact"
-                    className="inline-block border border-border/50 rounded-sm px-5 py-2 text-foreground/70 hover:border-gold hover:text-gold transition-all duration-400 ease-out"
+                    className="border border-border/50 rounded-sm px-6 py-2 text-foreground/70 hover:bg-gold hover:text-white hover:border-gold transition-all duration-300 ease-out self-center"
                     style={ctaStyle}
                   >
                     REQUEST INFORMATION
@@ -255,7 +255,7 @@ const CommercialInvestment = () => {
                   </p>
                   <Link
                     to="/contact"
-                    className="inline-block border border-border/50 rounded-sm px-5 py-2 text-foreground/70 hover:border-gold hover:text-gold transition-all duration-400 ease-out"
+                    className="border border-border/50 rounded-sm px-6 py-2 text-foreground/70 hover:bg-gold hover:text-white hover:border-gold transition-all duration-300 ease-out self-center"
                     style={ctaStyle}
                   >
                     REQUEST INFORMATION
@@ -301,7 +301,7 @@ const CommercialInvestment = () => {
                   </p>
                   <Link
                     to="/contact"
-                    className="inline-block border border-border/50 rounded-sm px-5 py-2 text-foreground/70 hover:border-gold hover:text-gold transition-all duration-400 ease-out"
+                    className="border border-border/50 rounded-sm px-6 py-2 text-foreground/70 hover:bg-gold hover:text-white hover:border-gold transition-all duration-300 ease-out self-center"
                     style={ctaStyle}
                   >
                     REQUEST INFORMATION
@@ -347,7 +347,7 @@ const CommercialInvestment = () => {
                   </p>
                   <Link
                     to="/contact"
-                    className="inline-block border border-border/50 rounded-sm px-5 py-2 text-foreground/70 hover:border-gold hover:text-gold transition-all duration-400 ease-out"
+                    className="border border-border/50 rounded-sm px-6 py-2 text-foreground/70 hover:bg-gold hover:text-white hover:border-gold transition-all duration-300 ease-out self-center"
                     style={ctaStyle}
                   >
                     REQUEST INFORMATION

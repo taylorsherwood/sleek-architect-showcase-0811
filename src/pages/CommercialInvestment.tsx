@@ -204,6 +204,7 @@ const CommercialInvestment = () => {
                     REQUEST INFORMATION
                   </Link>
                 </div>
+              </div>
 
               {/* 717 S. 11th St */}
               <div className="border-2 border-border overflow-hidden group bg-card hover:border-gold transition-colors duration-500">
@@ -329,7 +330,6 @@ const CommercialInvestment = () => {
               </div>
 
             </div>
-          </div>
           </div>
         </div>
       </section>

@@ -120,8 +120,8 @@ const Navigation = () => {
                           to={child.href}
                           className={`block px-7 py-4 text-minimal tracking-[0.2em] transition-colors duration-300 ${
                             location.pathname === child.href
-                              ? "text-foreground bg-muted/50"
-                              : "text-muted-foreground hover:text-foreground hover:bg-muted/30"
+                              ? "text-foreground bg-secondary"
+                              : "text-muted-foreground hover:text-foreground hover:bg-secondary"
                           }`}
                         >
                           {child.label}

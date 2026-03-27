@@ -939,6 +939,25 @@ const Invest = () => {
         </div>
       </section>
 
+      {/* ── Internal Links ── */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl font-display font-light text-architectural mb-6">
+              Explore Austin Real Estate
+            </h2>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <Link to="/austin-land-development-opportunities" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ LAND DEVELOPMENT OPPORTUNITIES</Link>
+              <Link to="/austin-multifamily-report-2026" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ MULTIFAMILY MARKET REPORT</Link>
+              <Link to="/off-market-real-estate-austin" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ OFF-MARKET OPPORTUNITIES</Link>
+              <Link to="/land" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ LAND & INVESTMENT</Link>
+              <Link to="/past-transactions" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ PAST TRANSACTIONS</Link>
+              <Link to="/about" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ ABOUT TAYLOR SHERWOOD</Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </div>
   );

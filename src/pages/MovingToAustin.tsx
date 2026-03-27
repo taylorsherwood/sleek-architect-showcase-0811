@@ -20,7 +20,7 @@ const MovingToAustin = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Moving to Austin Texas Guide | Echelon Property Group"
-        description="Everything you need to know about moving to Austin, Texas. Cost of living, best neighborhoods, schools, lifestyle, and luxury real estate guide for relocating buyers."
+        description="Everything you need to know about moving to Austin TX. Cost of living, best neighborhoods, schools, and luxury real estate for relocating buyers."
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createFAQSchema(faqs)} />

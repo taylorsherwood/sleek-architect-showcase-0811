@@ -14,6 +14,8 @@ const Footer = () => {
                 <Link to="/listings" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Listings</Link>
                 <Link to="/buy" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Buy</Link>
                 <Link to="/sell" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Sell</Link>
+                <Link to="/invest" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Invest</Link>
+                <Link to="/land" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Land & Investment</Link>
                 <Link to="/communities" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Communities</Link>
                 <Link to="/blog" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Blog</Link>
                 <Link to="/contact" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Contact</Link>

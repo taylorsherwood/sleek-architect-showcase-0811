@@ -666,7 +666,7 @@ const Invest = () => {
 
 
       {/* ──────────────────────── HOW WE HELP ──────────────────────── */}
-      <section className="py-24 md:py-32 bg-secondary/30">
+      <section className="py-24 md:py-32 bg-secondary">
         <div className="max-w-6xl mx-auto px-6">
           <ScrollReveal>
             <p className="text-minimal text-gold mb-4">Value Proposition</p>
@@ -696,7 +696,7 @@ const Invest = () => {
 
 
       {/* ──────────────────────── MARKET INSIGHT ──────────────────────── */}
-      <section className="relative py-24 md:py-32 bg-secondary/30 overflow-hidden">
+      <section className="relative py-24 md:py-32 bg-secondary overflow-hidden">
         {/* Watermark */}
         <div
           className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] max-w-[1000px] aspect-square opacity-[0.06]"
@@ -918,7 +918,7 @@ const Invest = () => {
       </section>
 
       {/* ──────────────────────── FINAL CTA ──────────────────────── */}
-      <section className="py-24 md:py-32 bg-secondary/30">
+      <section className="py-24 md:py-32 bg-secondary">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <ScrollReveal>
             <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">

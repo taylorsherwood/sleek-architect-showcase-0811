@@ -241,7 +241,7 @@ const Listings = () => {
       </section>
 
       {/* Find Your Next Chapter search block */}
-      <RealScoutSearch />
+      <Suspense fallback={<div className="min-h-[200px]" />}><RealScoutSearch /></Suspense>
 
       {/* ── Internal Links ── */}
       <section className="py-16 bg-background">

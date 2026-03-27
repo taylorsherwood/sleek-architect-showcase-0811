@@ -45,6 +45,7 @@ const AsSeenIn = () => {
                 alt={logo.alt}
                 loading="lazy"
                 decoding="async"
+                sizes="(max-width: 768px) 96px, 160px"
                 className={`${logo.className} w-auto object-contain transition-opacity duration-400`}
                 style={{ opacity: logo.opacity }}
                 onMouseEnter={(e) => {

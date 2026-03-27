@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Instagram } from "lucide-react";
 import echelonWatermark from "@/assets/echelon-watermark.png";
 
 const MeetTaylor = () => {

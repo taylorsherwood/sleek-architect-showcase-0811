@@ -21,8 +21,8 @@ const labelStyle = {
 };
 
 const ctaStyle = {
-  fontSize: "0.6rem" as const,
-  letterSpacing: "0.15em",
+  fontSize: "0.55rem" as const,
+  letterSpacing: "0.12em",
   textTransform: "uppercase" as const,
   fontFamily: '"Raleway", sans-serif',
 };

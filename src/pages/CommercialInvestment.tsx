@@ -331,7 +331,6 @@ const CommercialInvestment = () => {
 
             </div>
           </div>
-          </div>
         </div>
       </section>
 

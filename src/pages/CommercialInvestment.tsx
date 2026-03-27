@@ -20,6 +20,13 @@ const labelStyle = {
   fontFamily: '"Raleway", sans-serif',
 };
 
+const ctaStyle = {
+  fontSize: "0.6rem" as const,
+  letterSpacing: "0.15em",
+  textTransform: "uppercase" as const,
+  fontFamily: '"Raleway", sans-serif',
+};
+
 const faqs = [
   {
     question: "What types of commercial investment properties are available in Austin?",

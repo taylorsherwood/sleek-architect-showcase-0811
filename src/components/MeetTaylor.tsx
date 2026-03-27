@@ -59,7 +59,7 @@ const MeetTaylor = () => {
                 className="gold-metallic-text gold-underline-hover inline-flex items-center gap-2 transition-opacity duration-300"
                 aria-label="Follow Taylor Sherwood on Instagram"
               >
-                <Instagram className="w-5 h-5" />
+                <Instagram className="w-5 h-5 text-gold" />
                 <span className="text-xs tracking-[0.15em] uppercase">@TheInvestorBroker</span>
               </a>
             </div>

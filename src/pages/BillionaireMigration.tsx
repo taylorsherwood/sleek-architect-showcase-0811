@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import { createElement } from "react";
+import { createElement, lazy, Suspense } from "react";
 import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
+const Footer = lazy(() => import("@/components/Footer"));
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup from "@/components/SchemaMarkup";
 import AuthorBio from "@/components/AuthorBio";
@@ -57,7 +57,8 @@ const BillionaireMigration = () => {
           src={lakeAustinHero}
           alt="Aerial view of Lake Austin waterfront estates and Hill Country"
           className="absolute inset-0 w-full h-full object-cover object-center"
-        />
+                    loading="lazy" decoding="async"
+                    />
         <div
           className="absolute inset-0"
           style={{
@@ -413,7 +414,7 @@ const BillionaireMigration = () => {
       </article>
 
       <RelatedInsights />
-      <Footer />
+      <Suspense fallback={<div className="min-h-[100px]" />}><Footer /></Suspense>
     </div>
   );
 };

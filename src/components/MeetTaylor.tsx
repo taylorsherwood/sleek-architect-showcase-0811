@@ -20,7 +20,8 @@ const MeetTaylor = () => {
           style={{
             filter: 'sepia(60%) saturate(40%) hue-rotate(5deg) brightness(1.1)',
           }}
-        />
+                    loading="lazy" decoding="async"
+                    />
       </div>
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">

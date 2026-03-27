@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { useState, lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
+const Footer = lazy(() => import("@/components/Footer"));
 import AboutBlock from "@/components/AboutBlock";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { realEstateAgentSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
@@ -91,7 +91,7 @@ const Blog = () => {
                         alt={`${post.title} - Austin luxury real estate insights`}
                         title={post.title}
                         className="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105"
-                        loading="lazy"
+                        loading="lazy" decoding="async"
                       />
                       <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                       <div className="absolute top-4 left-4 bg-background/90 backdrop-blur-sm px-3 py-1">
@@ -204,7 +204,7 @@ const Blog = () => {
       </section>
 
       <AboutBlock />
-      <Footer />
+      <Suspense fallback={<div className="min-h-[100px]" />}><Footer /></Suspense>
     </div>
   );
 };

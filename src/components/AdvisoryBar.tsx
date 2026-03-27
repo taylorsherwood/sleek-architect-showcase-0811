@@ -180,7 +180,9 @@ const AdvisoryBar = () => {
                 {/* Logo — refined supporting element */}
                 <div className="relative mx-auto w-fit mb-10">
                   <div className="absolute inset-0 blur-3xl opacity-10 bg-[hsl(var(--gold))] rounded-full scale-150" />
-                  <img src={echelonLogo} alt="Echelon Property Group" className="relative h-[8rem] w-auto mx-auto drop-shadow-[0_0_20px_hsl(var(--gold)/0.1)]" />
+                  <img src={echelonLogo} alt="Echelon Property Group" className="relative h-[8rem] w-auto mx-auto drop-shadow-[0_0_20px_hsl(var(--gold)/0.1)]"
+                    loading="lazy" decoding="async"
+                    />
                 </div>
 
                 {/* Gold divider */}

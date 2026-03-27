@@ -1,14 +1,15 @@
-import { useState } from "react";
+import { useState, lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { realEstateAgentSchema, createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
 import { formatPhoneNumber, getTimestamp } from "@/lib/formUtils";
-import ScrollReveal from "@/components/ScrollReveal";
-import BeforeAfterSlider from "@/components/BeforeAfterSlider";
+
+const ScrollReveal = lazy(() => import("@/components/ScrollReveal"));
+const BeforeAfterSlider = lazy(() => import("@/components/BeforeAfterSlider"));
+const Footer = lazy(() => import("@/components/Footer"));
 import kitchenBefore from "@/assets/kitchen-before.jpg";
 import kitchenAfter from "@/assets/kitchen-after.jpeg";
 import livingBefore from "@/assets/living-before.jpg";
@@ -702,7 +703,9 @@ const Invest = () => {
           className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] max-w-[1000px] aspect-square opacity-[0.06]"
           aria-hidden="true"
         >
-          <img src={echelonWatermark} alt="" className="w-full h-full object-contain" />
+          <img src={echelonWatermark} alt="" className="w-full h-full object-contain"
+                    loading="lazy" decoding="async"
+                    />
         </div>
         <div className="max-w-4xl mx-auto px-6">
           <ScrollReveal>
@@ -960,7 +963,7 @@ const Invest = () => {
         </div>
       </section>
 
-      <Footer />
+      <Suspense fallback={<div className="min-h-[100px]" />}><Footer /></Suspense>
     </div>
   );
 };

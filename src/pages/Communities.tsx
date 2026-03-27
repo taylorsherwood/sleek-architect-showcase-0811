@@ -1,5 +1,6 @@
+import { lazy, Suspense } from "react";
 import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
+const Footer = lazy(() => import("@/components/Footer"));
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { realEstateAgentSchema, createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 
@@ -89,7 +90,7 @@ const Communities = () => {
                           alt={`Luxury homes for sale in ${community.name}, Austin Texas`}
                           title={`${community.name} homes for sale — Austin luxury real estate`}
                           className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
-                          loading="lazy"
+                          loading="lazy" decoding="async"
                         />
                       ) : (
                         <div className="w-full aspect-[4/3] bg-muted flex items-center justify-center">
@@ -184,7 +185,7 @@ const Communities = () => {
         </div>
       </section>
 
-      <Footer />
+      <Suspense fallback={<div className="min-h-[100px]" />}><Footer /></Suspense>
     </div>
   );
 };

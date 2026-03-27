@@ -1,10 +1,12 @@
+import { lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
-import RealScoutListings from "@/components/RealScoutListings";
-import RealScoutSearch from "@/components/RealScoutSearch";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createRealEstateListingSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
+
+const RealScoutListings = lazy(() => import("@/components/RealScoutListings"));
+const RealScoutSearch = lazy(() => import("@/components/RealScoutSearch"));
+const Footer = lazy(() => import("@/components/Footer"));
 import listing1 from "@/assets/listing-1.jpg";
 import listing2 from "@/assets/listing-2.jpg";
 import listing3 from "@/assets/listing-3.jpg";
@@ -117,7 +119,7 @@ const Listings = () => {
                     alt={listing.address}
                     title={`${listing.address} — ${listing.price}`}
                     className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
-                    loading="lazy"
+                    loading="lazy" decoding="async"
                   />
                   <div className="absolute top-4 left-4 bg-background/90 backdrop-blur-sm px-5 py-2.5">
                     <span className="text-minimal text-foreground font-semibold">
@@ -161,11 +163,13 @@ const Listings = () => {
         </div>
       </section>
 
-      <RealScoutListings
-        listingStatus="For Sale,For Rent,In Contract"
-        heading={"\n\n\n\nCURRENTLY ON THE MARKET"}
-        subheading={"\n"}
-      />
+      <Suspense fallback={<div className="min-h-[300px]" />}>
+        <RealScoutListings
+          listingStatus="For Sale,For Rent,In Contract"
+          heading={"\n\n\n\nCURRENTLY ON THE MARKET"}
+          subheading={"\n"}
+        />
+      </Suspense>
 
       {/* Commercial & Investment Listings */}
       <section className="py-10 md:py-14 bg-background border-t border-border">
@@ -237,7 +241,7 @@ const Listings = () => {
       </section>
 
       {/* Find Your Next Chapter search block */}
-      <RealScoutSearch />
+      <Suspense fallback={<div className="min-h-[200px]" />}><RealScoutSearch /></Suspense>
 
       {/* ── Internal Links ── */}
       <section className="py-16 bg-background">
@@ -264,7 +268,7 @@ const Listings = () => {
         </div>
       </section>
 
-      <Footer />
+      <Suspense fallback={<div className="min-h-[100px]" />}><Footer /></Suspense>
     </div>
   );
 };

@@ -1,12 +1,14 @@
+import { lazy, Suspense } from "react";
 import Navigation from "@/components/Navigation";
 import clhmsBadge from "@/assets/clhms-badge.png";
-import Footer from "@/components/Footer";
 import aboutTeam from "@/assets/about-team.jpg";
 import { Link } from "react-router-dom";
 import SchemaMarkup, { taylorSherwoodSchema, createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import SEOHead from "@/components/SEOHead";
-import InstagramGallery from "@/components/InstagramGallery";
-import Testimonials from "@/components/Testimonials";
+
+const InstagramGallery = lazy(() => import("@/components/InstagramGallery"));
+const Testimonials = lazy(() => import("@/components/Testimonials"));
+const Footer = lazy(() => import("@/components/Footer"));
 
 const About = () => {
   return (
@@ -178,11 +180,10 @@ const About = () => {
 
       {/* Instagram Feed */}
       <div className="py-6 bg-background" />
-      <InstagramGallery />
+      <Suspense fallback={<div className="min-h-[200px]" />}><InstagramGallery /></Suspense>
       <div className="py-6 bg-background" />
 
-
-      <Testimonials />
+      <Suspense fallback={<div className="min-h-[200px]" />}><Testimonials /></Suspense>
 
       {/* CTA */}
       <section className="py-24 bg-secondary text-center">
@@ -221,6 +222,6 @@ const About = () => {
         </div>
       </section>
 
-      <Footer />
+      <Suspense fallback={<div className="min-h-[100px]" />}><Footer /></Suspense>
     </div>);};
 export default About;

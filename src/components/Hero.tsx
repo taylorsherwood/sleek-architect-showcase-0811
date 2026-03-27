@@ -118,7 +118,9 @@ const Hero = () => {
         alt="Austin Texas skyline at sunset with downtown high-rises and Hill Country backdrop"
         title="Austin Texas skyline — Echelon Property Group luxury real estate"
         className="absolute inset-0 w-full h-full object-cover"
-        style={{ zIndex: 0 }} />
+        style={{ zIndex: 0 }}
+                    loading="lazy" decoding="async"
+                    />
       }
 
       {/* Cinematic vignette gradient */}

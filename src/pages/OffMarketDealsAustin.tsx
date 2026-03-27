@@ -1,6 +1,7 @@
+import { lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
+const Footer = lazy(() => import("@/components/Footer"));
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createBlogPostingSchema, createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import AuthorBio from "@/components/AuthorBio";
@@ -91,7 +92,8 @@ const OffMarketDealsAustin = () => {
           alt="Austin Texas skyline — off-market real estate investment opportunities"
           title="Off-market real estate deals in Austin Texas"
           className="absolute inset-0 w-full h-full object-cover object-center"
-        />
+                    loading="lazy" decoding="async"
+                    />
         <div
           className="absolute inset-0"
           style={{ background: "linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.55) 100%)" }}
@@ -429,7 +431,7 @@ const OffMarketDealsAustin = () => {
       </article>
 
       <RelatedInsights />
-      <Footer />
+      <Suspense fallback={<div className="min-h-[100px]" />}><Footer /></Suspense>
     </div>
   );
 };

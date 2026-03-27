@@ -1,17 +1,18 @@
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useState, useEffect, useRef, useCallback, lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { realEstateAgentSchema, createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
-import Testimonials from "@/components/Testimonials";
-import FeaturedListings from "@/components/FeaturedListings";
-import GlobalLuxuryAdvertising from "@/components/GlobalLuxuryAdvertising";
-import CinematicVideoSection from "@/components/CinematicVideoSection";
 import ScrollReveal from "@/components/ScrollReveal";
 import { formatPhoneNumber, getTimestamp } from "@/lib/formUtils";
+
+const Testimonials = lazy(() => import("@/components/Testimonials"));
+const FeaturedListings = lazy(() => import("@/components/FeaturedListings"));
+const GlobalLuxuryAdvertising = lazy(() => import("@/components/GlobalLuxuryAdvertising"));
+const CinematicVideoSection = lazy(() => import("@/components/CinematicVideoSection"));
+const Footer = lazy(() => import("@/components/Footer"));
 import {
   CheckCircle,
   
@@ -345,7 +346,7 @@ const Sell = () => {
 
       {/* ── Cinematic Video ── */}
       <div className="pt-16 md:pt-24">
-        <CinematicVideoSection />
+        <Suspense fallback={<div className="min-h-[300px]" />}><CinematicVideoSection /></Suspense>
       </div>
 
       {/* ── White spacer ── */}
@@ -365,7 +366,9 @@ const Sell = () => {
           className="pointer-events-none absolute right-[-5%] bottom-[-18%] w-[60vw] max-w-[800px] aspect-square opacity-[0.03]"
           aria-hidden="true"
         >
-          <img src={echelonWatermark} alt="" className="w-full h-full object-contain" />
+          <img src={echelonWatermark} alt="" className="w-full h-full object-contain"
+                    loading="lazy" decoding="async"
+                    />
         </div>
 
         <div className="container mx-auto px-6">
@@ -470,10 +473,13 @@ const Sell = () => {
       </section>
 
       {/* ── Global Luxury Advertising ── */}
-      <GlobalLuxuryAdvertising />
+      <Suspense fallback={<div className="min-h-[200px]" />}>
+        <GlobalLuxuryAdvertising />
+      </Suspense>
 
-
-      <Testimonials />
+      <Suspense fallback={<div className="min-h-[200px]" />}>
+        <Testimonials />
+      </Suspense>
 
       {/* ── Spacer ── */}
       <div className="bg-background py-8" />
@@ -509,7 +515,7 @@ const Sell = () => {
         </div>
       </section>
 
-      <FeaturedListings hideRealScout />
+      <Suspense fallback={<div className="min-h-[200px]" />}><FeaturedListings hideRealScout /></Suspense>
 
       {/* ── FAQ ── */}
       <section className="py-28 bg-background">
@@ -613,7 +619,7 @@ const Sell = () => {
       {/* ── Thin gold divider ── */}
       <div className="h-[2px] bg-gold" />
 
-      <Footer />
+      <Suspense fallback={<div className="min-h-[100px]" />}><Footer /></Suspense>
     </div>);
 
 };

@@ -90,7 +90,9 @@ const FloatingContact = () => {
             src={HEADSHOT_LAUNCHER}
             alt="Taylor Sherwood, Austin luxury real estate advisor"
             title="Contact Taylor Sherwood — Austin luxury real estate advisor"
-            className="w-full h-full object-cover object-[50%_30%] scale-[1.05]" />
+            className="w-full h-full object-cover object-[50%_30%] scale-[1.05]"
+                    loading="lazy" decoding="async"
+                    />
         </div>
         <div className="flex flex-col items-start">
           <span className="text-[11.5px] font-extrabold tracking-[0.22em] uppercase text-[hsl(var(--gold))] group-hover:text-background transition-colors duration-500 leading-tight">CONTACT ME</span>
@@ -120,7 +122,9 @@ const FloatingContact = () => {
                 src={HEADSHOT}
                 alt="Taylor Sherwood, founder of Echelon Property Group"
                 title="Taylor Sherwood — Echelon Property Group"
-                className="w-full h-full object-cover object-[50%_20%] scale-[1.03]" />
+                className="w-full h-full object-cover object-[50%_20%] scale-[1.03]"
+                    loading="lazy" decoding="async"
+                    />
             </div>
           </div>
 

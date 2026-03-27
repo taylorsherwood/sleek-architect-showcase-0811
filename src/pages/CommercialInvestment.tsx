@@ -7,6 +7,7 @@ import heroArchitecture from "@/assets/hero-architecture.jpg";
 import expCommercialLogo from "@/assets/exp-commercial-logo-horizontal-white.webp";
 import gillisStreet from "@/assets/commercial-gillis-street.jpg";
 import sanJoseAve from "@/assets/commercial-san-jose-ave.jpg";
+import bremserAve from "@/assets/commercial-bremser-ave.jpg";
 
 const Footer = lazy(() => import("@/components/Footer"));
 

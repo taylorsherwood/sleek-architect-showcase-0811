@@ -17,32 +17,37 @@ img {
 
 @layer base {
   :root {
-    --background: 40 20% 97%;
+    /* ── Strict 3-tier background system ──
+       Primary:   #F7F5F2  → soft ivory (site default)
+       Secondary: #EDE8E1  → warm contrast sections
+       Card:      #FCFBF9  → forms, cards, inputs
+    */
+    --background: 36 24% 96%;
     --foreground: 220 20% 10%;
     
-    --card: 40 18% 99%;
+    --card: 40 33% 98%;
     --card-foreground: 220 20% 10%;
     
-    --popover: 40 18% 99%;
+    --popover: 40 33% 98%;
     --popover-foreground: 220 20% 10%;
     
     --primary: 233 50% 9%;
-    --primary-foreground: 40 20% 97%;
+    --primary-foreground: 36 24% 96%;
     
-    --secondary: 40 20% 93%;
+    --secondary: 35 25% 91%;
     --secondary-foreground: 220 20% 10%;
     
-    --muted: 40 20% 93%;
+    --muted: 35 25% 91%;
     --muted-foreground: 220 10% 45%;
     
-    --accent: 40 20% 93%;
+    --accent: 35 25% 91%;
     --accent-foreground: 220 20% 10%;
     
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
     
-    --border: 38 18% 88%;
-    --input: 40 18% 99%;
+    --border: 35 20% 86%;
+    --input: 40 33% 98%;
     --ring: 220 20% 10%;
 
     --radius: 0.25rem;
@@ -51,15 +56,15 @@ img {
     --gold-deep: 40 32% 44%;
     --gold-light: 39 40% 68%;
     --gold-highlight: 38 45% 76%;
-    --warm-cream: 40 20% 97%;
+    --warm-cream: 36 24% 96%;
 
-    --sidebar-background: 40 20% 97%;
+    --sidebar-background: 36 24% 96%;
     --sidebar-foreground: 220 20% 10%;
     --sidebar-primary: 220 20% 10%;
-    --sidebar-primary-foreground: 40 20% 97%;
-    --sidebar-accent: 40 20% 93%;
+    --sidebar-primary-foreground: 36 24% 96%;
+    --sidebar-accent: 35 25% 91%;
     --sidebar-accent-foreground: 220 20% 10%;
-    --sidebar-border: 38 18% 88%;
+    --sidebar-border: 35 20% 86%;
     --sidebar-ring: 220 20% 10%;
     
     --gradient-hero: linear-gradient(135deg, hsl(220 20% 10% / 0.7), hsl(220 20% 10% / 0.3));

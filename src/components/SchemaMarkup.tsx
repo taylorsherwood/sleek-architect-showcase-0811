@@ -63,7 +63,10 @@ export const organizationSchema = {
     "postalCode": "78702",
     "addressCountry": "US"
   },
-  "sameAs": []
+  "sameAs": [
+    "https://www.instagram.com/theinvestorbroker",
+    "https://www.linkedin.com/in/taylorsherwood/"
+  ]
 };
 
 export const realEstateAgentSchema = {

@@ -20,7 +20,7 @@ const SearchPage = () => {
     <div className="min-h-screen">
       <SEOHead
         title="Search Austin Homes for Sale | Echelon Property Group"
-        description="Browse all Austin homes for sale. Search luxury homes, condos, and investment properties across Austin's most desirable neighborhoods."
+        description="Search Austin homes for sale. Browse luxury homes, condos, land, and investment properties across Austin's most desirable neighborhoods with Echelon Property Group."
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createFAQSchema(searchFaqs)} />

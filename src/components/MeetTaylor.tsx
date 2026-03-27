@@ -37,6 +37,7 @@ const MeetTaylor = () => {
                 title="Taylor Sherwood — Certified Luxury Home Marketing Specialist"
                 className="w-full h-[40vh] md:h-[60vh] object-contain"
                 src="/lovable-uploads/537facb0-1fbc-450c-8c4a-c1d06c4aa924.jpg"
+                sizes="(max-width: 768px) 100vw, 50vw"
                 loading="lazy"
                 decoding="async" />
               <img src="/static-assets/clhms-badge.png" alt="CLHMS Guild Badge" title="Certified Luxury Home Marketing Specialist badge" className="absolute bottom-3 right-3 w-16 h-16 md:w-20 md:h-20 opacity-85" loading="lazy" decoding="async" />

@@ -79,6 +79,7 @@ const CommunitiesPreview = () => {
                     src={c.image}
                     alt={`Luxury homes in ${c.name}, Austin Texas`}
                     className="community-tile-img absolute inset-0 w-full h-full object-cover"
+                    sizes="(max-width: 768px) 50vw, 42vw"
                     loading="lazy"
                     decoding="async"
                   />

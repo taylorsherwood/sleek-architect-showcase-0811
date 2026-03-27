@@ -113,7 +113,7 @@ const CommercialInvestment = () => {
       {/* ── Current Commercial Listings ── */}
       <section className="py-16 md:py-24 bg-background border-t border-border">
         <div className="container mx-auto px-6">
-          <div className="max-w-5xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <div className="mb-16">
               <p className="text-gold text-center mb-4 font-bold" style={labelStyle}>CURRENT INVENTORY</p>
               <h2 className="font-display text-2xl md:text-3xl font-light text-foreground text-center mb-4">

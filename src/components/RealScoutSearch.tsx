@@ -24,23 +24,16 @@ const RealScoutSearch = () => {
           </header>
         </div>
 
-        {/* Card — wider than heading for premium presence */}
+        {/* Search widget — integrated into page, no floating card */}
         <div className="mx-auto max-w-5xl">
-          <div
-            className="bg-card rounded-lg border border-border/30 p-5 md:p-10"
-            style={{
-              boxShadow: "0 4px 24px -4px hsl(var(--foreground) / 0.06), 0 1px 3px hsl(var(--foreground) / 0.03)",
-            }}
-          >
-            {createElement("realscout-advanced-search", {
-              "agent-encoded-id": "QWdlbnQtMjg5NDU2",
-            })}
-            <noscript>
-              <p className="text-center text-muted-foreground py-4">
-                <a href="https://taylorsherwood.realscout.com/" className="underline">Search Austin homes on our listings portal →</a>
-              </p>
-            </noscript>
-          </div>
+          {createElement("realscout-advanced-search", {
+            "agent-encoded-id": "QWdlbnQtMjg5NDU2",
+          })}
+          <noscript>
+            <p className="text-center text-muted-foreground py-4">
+              <a href="https://taylorsherwood.realscout.com/" className="underline">Search Austin homes on our listings portal →</a>
+            </p>
+          </noscript>
         </div>
       </div>
     </section>

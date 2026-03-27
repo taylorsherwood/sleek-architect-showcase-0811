@@ -322,9 +322,9 @@ const Invest = () => {
   };
 
   const inputClass =
-    "w-full bg-background border border-border px-4 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-foreground/20 transition-colors duration-200 text-sm";
+    "w-full bg-card border border-border px-4 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-foreground/20 transition-colors duration-200 text-sm";
   const selectClass =
-    "w-full bg-background border border-border px-4 py-3 text-foreground focus:outline-none focus:ring-1 focus:ring-foreground/20 transition-colors duration-200 text-sm appearance-none";
+    "w-full bg-card border border-border px-4 py-3 text-foreground focus:outline-none focus:ring-1 focus:ring-foreground/20 transition-colors duration-200 text-sm appearance-none";
 
   const breadcrumbSchema = createBreadcrumbSchema([
     { name: "Home", url: "https://www.echelonpropertygroup.com" },

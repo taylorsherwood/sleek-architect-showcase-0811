@@ -212,9 +212,14 @@ const CommercialInvestment = () => {
               {/* 717 S. 11th St */}
               <div className="border-2 border-border overflow-hidden group bg-card hover:border-gold transition-colors duration-500 flex flex-col">
                 <div className="relative overflow-hidden">
-                  <div className="w-full aspect-[4/3] bg-muted flex items-center justify-center">
-                    <span className="text-muted-foreground/40 text-sm tracking-widest uppercase">Photo Coming Soon</span>
-                  </div>
+                  <img
+                    src={s11thStreet}
+                    alt="717 S. 11th St, Temple TX — 6-unit multifamily"
+                    title="717 S. 11th St — multifamily investment, Temple TX"
+                    className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
+                    loading="lazy"
+                    decoding="async"
+                  />
                   <span className="absolute top-4 left-4 text-minimal bg-gold text-white px-3 py-1 font-extrabold">
                     MULTIFAMILY
                   </span>

@@ -156,6 +156,17 @@ const PrivateOpportunities = ({ variant = "light" }: PrivateOpportunitiesProps) 
                   </div>
                 ))}
               </div>
+
+              <Link
+                to="/off-market-real-estate-austin"
+                className={`inline-block mt-8 text-xs tracking-[0.15em] uppercase transition-colors duration-300 ${
+                  isDark
+                    ? "text-white/40 hover:text-[hsl(var(--gold))]"
+                    : "text-muted-foreground hover:text-[hsl(var(--gold))]"
+                }`}
+              >
+                Learn more about private access →
+              </Link>
             </div>
 
             {/* Right — Form Card */}

@@ -17,14 +17,14 @@ const labelStyle = {
   fontSize: "0.6rem" as const,
   letterSpacing: "0.3em",
   textTransform: "uppercase" as const,
-  fontFamily: '"Raleway", sans-serif',
+  fontFamily: '"Roboto", sans-serif',
 };
 
 const ctaStyle = {
   fontSize: "0.6rem" as const,
   letterSpacing: "0.08em",
   textTransform: "uppercase" as const,
-  fontFamily: '"Raleway", sans-serif',
+  fontFamily: '"Roboto", sans-serif',
   fontWeight: 500 as const,
 };
 
@@ -139,24 +139,24 @@ const CommercialInvestment = () => {
                   <span className="absolute top-4 left-4 text-minimal bg-gold text-white px-3 py-1 font-extrabold">
                     MULTIFAMILY
                   </span>
-                  <span className="absolute bottom-3 right-3 text-white font-display text-sm font-light bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-sm">$2,500,000</span>
+                  <span className="absolute bottom-3 right-3 text-white text-sm font-light font-[Roboto] bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-sm">$2,500,000</span>
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
-                  <h3 className="text-lg font-display font-light text-foreground mb-1">
+                  <h3 className="text-lg font-light text-foreground mb-1 font-[Roboto]">
                     4314 Gillis Street
                   </h3>
-                  <p className="text-muted-foreground mb-2">Austin, TX 78745</p>
+                  <p className="text-muted-foreground mb-2 font-[Roboto]">Austin, TX 78745</p>
                   <div className="grid grid-cols-2 gap-3 mb-4">
                     <div>
                       <p className="text-muted-foreground mb-1" style={labelStyle}>ASSET TYPE</p>
-                      <p className="text-foreground font-medium text-sm">Value-Add Multifamily</p>
+                      <p className="text-foreground font-medium text-sm font-[Roboto]">Value-Add Multifamily</p>
                     </div>
                     <div>
                       <p className="text-muted-foreground mb-1" style={labelStyle}>UNITS</p>
-                      <p className="text-foreground font-medium text-sm">24</p>
+                      <p className="text-foreground font-medium text-sm font-[Roboto]">24</p>
                     </div>
                   </div>
-                  <p className="text-muted-foreground text-sm leading-relaxed mb-4 flex-grow">
+                  <p className="text-muted-foreground text-sm leading-relaxed font-[Roboto] mb-4 flex-grow">
                     24-unit value-add multifamily opportunity in South Austin. Well-positioned for rent growth and operational improvements in a high-demand rental corridor.
                   </p>
                   <Link
@@ -183,24 +183,24 @@ const CommercialInvestment = () => {
                   <span className="absolute top-4 left-4 text-minimal bg-gold text-white px-3 py-1 font-extrabold">
                     DEVELOPMENT LAND
                   </span>
-                  <span className="absolute bottom-3 right-3 text-white font-display text-sm font-light bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-sm">$1,600,000</span>
+                  <span className="absolute bottom-3 right-3 text-white text-sm font-light font-[Roboto] bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-sm">$1,600,000</span>
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
-                  <h3 className="text-lg font-display font-light text-foreground mb-1">
+                  <h3 className="text-lg font-light text-foreground mb-1 font-[Roboto]">
                     10811 San Jose Ave
                   </h3>
-                  <p className="text-muted-foreground mb-2">Del Valle, TX</p>
+                  <p className="text-muted-foreground mb-2 font-[Roboto]">Del Valle, TX</p>
                   <div className="grid grid-cols-2 gap-3 mb-4">
                     <div>
                       <p className="text-muted-foreground mb-1" style={labelStyle}>ASSET TYPE</p>
-                      <p className="text-foreground font-medium text-sm">Redevelopment Land</p>
+                      <p className="text-foreground font-medium text-sm font-[Roboto]">Redevelopment Land</p>
                     </div>
                     <div>
                       <p className="text-muted-foreground mb-1" style={labelStyle}>UNITS</p>
-                      <p className="text-foreground font-medium text-sm">3.06 Acres</p>
+                      <p className="text-foreground font-medium text-sm font-[Roboto]">3.06 Acres</p>
                     </div>
                   </div>
-                  <p className="text-muted-foreground text-sm leading-relaxed mb-4 flex-grow">
+                  <p className="text-muted-foreground text-sm leading-relaxed font-[Roboto] mb-4 flex-grow">
                     3.06-acre redevelopment parcel with existing mobile homes and zero zoning restrictions. Ideal for ground-up multifamily, mixed-use, or commercial development in the high-growth Del Valle corridor.
                   </p>
                   <Link
@@ -227,24 +227,24 @@ const CommercialInvestment = () => {
                   <span className="absolute top-4 left-4 text-minimal bg-gold text-white px-3 py-1 font-extrabold">
                     MULTIFAMILY
                   </span>
-                  <span className="absolute bottom-3 right-3 text-white font-display text-sm font-light bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-sm">Price Upon Request</span>
+                  <span className="absolute bottom-3 right-3 text-white text-sm font-light font-[Roboto] bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-sm">Price Upon Request</span>
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
-                  <h3 className="text-lg font-display font-light text-foreground mb-1">
+                  <h3 className="text-lg font-light text-foreground mb-1 font-[Roboto]">
                     717 S. 11th St.
                   </h3>
-                  <p className="text-muted-foreground mb-2">Temple, TX</p>
+                  <p className="text-muted-foreground mb-2 font-[Roboto]">Temple, TX</p>
                   <div className="grid grid-cols-2 gap-3 mb-4">
                     <div>
                       <p className="text-muted-foreground mb-1" style={labelStyle}>ASSET TYPE</p>
-                      <p className="text-foreground font-medium text-sm">6-Unit Multifamily</p>
+                      <p className="text-foreground font-medium text-sm font-[Roboto]">6-Unit Multifamily</p>
                     </div>
                     <div>
                       <p className="text-muted-foreground mb-1" style={labelStyle}>CONDITION</p>
-                      <p className="text-foreground font-medium text-sm">Recently Renovated</p>
+                      <p className="text-foreground font-medium text-sm font-[Roboto]">Recently Renovated</p>
                     </div>
                   </div>
-                  <p className="text-muted-foreground text-sm leading-relaxed mb-4 flex-grow">
+                  <p className="text-muted-foreground text-sm leading-relaxed font-[Roboto] mb-4 flex-grow">
                     Recently renovated 6-unit multifamily property in Temple, TX. Contact for pricing and additional details.
                   </p>
                   <Link
@@ -271,24 +271,24 @@ const CommercialInvestment = () => {
                   <span className="absolute top-4 left-4 text-minimal bg-gold text-white px-3 py-1 font-extrabold">
                     RENTAL PORTFOLIO
                   </span>
-                  <span className="absolute bottom-3 right-3 text-white font-display text-sm font-light bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-sm">$550,000</span>
+                  <span className="absolute bottom-3 right-3 text-white text-sm font-light font-[Roboto] bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-sm">$550,000</span>
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
-                  <h3 className="text-lg font-display font-light text-foreground mb-1">
+                  <h3 className="text-lg font-light text-foreground mb-1 font-[Roboto]">
                     Small Killeen Rental Portfolio
                   </h3>
-                  <p className="text-muted-foreground mb-2">Killeen, TX</p>
+                  <p className="text-muted-foreground mb-2 font-[Roboto]">Killeen, TX</p>
                   <div className="grid grid-cols-2 gap-3 mb-4">
                     <div>
                       <p className="text-muted-foreground mb-1" style={labelStyle}>UNITS</p>
-                      <p className="text-foreground font-medium text-sm">9 Rentable Units</p>
+                      <p className="text-foreground font-medium text-sm font-[Roboto]">9 Rentable Units</p>
                     </div>
                     <div>
                       <p className="text-muted-foreground mb-1" style={labelStyle}>OCCUPANCY</p>
-                      <p className="text-foreground font-medium text-sm">100% Occupied</p>
+                      <p className="text-foreground font-medium text-sm font-[Roboto]">100% Occupied</p>
                     </div>
                   </div>
-                  <p className="text-muted-foreground text-sm leading-relaxed mb-4 flex-grow">
+                  <p className="text-muted-foreground text-sm leading-relaxed font-[Roboto] mb-4 flex-grow">
                     9-unit rental portfolio in Killeen, TX. Fully occupied with a 14% cap rate.
                   </p>
                   <Link
@@ -315,24 +315,24 @@ const CommercialInvestment = () => {
                   <span className="absolute top-4 left-4 text-minimal bg-gold text-white px-3 py-1 font-extrabold">
                     RENTAL PORTFOLIO
                   </span>
-                  <span className="absolute bottom-3 right-3 text-white font-display text-sm font-light bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-sm">$240,000</span>
+                  <span className="absolute bottom-3 right-3 text-white text-sm font-light font-[Roboto] bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-sm">$240,000</span>
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
-                  <h3 className="text-lg font-display font-light text-foreground mb-1">
+                  <h3 className="text-lg font-light text-foreground mb-1 font-[Roboto]">
                     709/711/713 Bremser Ave
                   </h3>
-                  <p className="text-muted-foreground mb-2">Killeen, TX</p>
+                  <p className="text-muted-foreground mb-2 font-[Roboto]">Killeen, TX</p>
                   <div className="grid grid-cols-2 gap-3 mb-4">
                     <div>
                       <p className="text-muted-foreground mb-1" style={labelStyle}>ASSET TYPE</p>
-                      <p className="text-foreground font-medium text-sm">3 Individual Homes</p>
+                      <p className="text-foreground font-medium text-sm font-[Roboto]">3 Individual Homes</p>
                     </div>
                     <div>
                       <p className="text-muted-foreground mb-1" style={labelStyle}>INCOME</p>
-                      <p className="text-foreground font-medium text-sm">Rental Income</p>
+                      <p className="text-foreground font-medium text-sm font-[Roboto]">Rental Income</p>
                     </div>
                   </div>
-                  <p className="text-muted-foreground text-sm leading-relaxed mb-4 flex-grow">
+                  <p className="text-muted-foreground text-sm leading-relaxed font-[Roboto] mb-4 flex-grow">
                     Three individual rental homes on Bremser Ave in Killeen, TX. Opportunity to acquire a small residential rental portfolio.
                   </p>
                   <Link
@@ -410,7 +410,7 @@ const CommercialInvestment = () => {
                 >
                   <div className="flex items-center justify-between mb-6">
                     <span className="bg-muted px-3 py-1 text-muted-foreground" style={labelStyle}>{listing.type}</span>
-                    <span className="text-lg font-display font-light text-foreground">{listing.price}</span>
+                    <span className="text-lg font-light text-foreground font-[Roboto]">{listing.price}</span>
                   </div>
                   <h3 className="text-xl font-display font-light text-foreground mb-2">
                     {listing.name}
@@ -419,11 +419,11 @@ const CommercialInvestment = () => {
                   <div className="grid grid-cols-2 gap-3 mb-4">
                     <div>
                       <p className="text-muted-foreground mb-1" style={labelStyle}>CAP RATE</p>
-                      <p className="text-foreground font-medium text-sm">{listing.capRate}</p>
+                      <p className="text-foreground font-medium text-sm font-[Roboto]">{listing.capRate}</p>
                     </div>
                     <div>
                       <p className="text-muted-foreground mb-1" style={labelStyle}>SIZE</p>
-                      <p className="text-foreground font-medium text-sm">{listing.sqft}</p>
+                      <p className="text-foreground font-medium text-sm font-[Roboto]">{listing.sqft}</p>
                     </div>
                   </div>
                   <p className="text-sm text-muted-foreground italic">{listing.highlights}</p>
@@ -489,7 +489,7 @@ const CommercialInvestment = () => {
                 ].map((stat, i) => (
                   <div key={i} className="border-b border-border pb-6">
                     <p className="text-muted-foreground mb-2" style={labelStyle}>{stat.label}</p>
-                    <p className="text-3xl md:text-4xl font-display font-light text-foreground">{stat.value}</p>
+                    <p className="text-3xl md:text-4xl font-light text-foreground font-[Roboto]">{stat.value}</p>
                   </div>
                 ))}
               </div>
@@ -512,14 +512,14 @@ const CommercialInvestment = () => {
                 <h3 className="text-xl font-display font-light text-foreground mb-4">
                   Why Austin for Commercial Investment
                 </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                <p className="text-muted-foreground text-sm leading-relaxed font-[Roboto] mb-4">
                   Austin has emerged as one of America's premier commercial real estate markets, driven by
                   explosive population growth, major corporate relocations from Apple, Tesla, Google, Meta,
                   and Oracle, and a business-friendly tax environment with no state income tax. The metro
                   area has added over 300,000 residents in the past five years, creating sustained demand
                   across every commercial asset class.
                 </p>
-                <p className="text-muted-foreground text-sm leading-relaxed">
+                <p className="text-muted-foreground text-sm leading-relaxed font-[Roboto]">
                   For investors, Austin offers compelling risk-adjusted returns relative to coastal gateway
                   markets. Cap rates remain attractive, rent growth continues to outpace national averages
                   in key submarkets, and the metro's diversifying economy reduces concentration risk that
@@ -531,7 +531,7 @@ const CommercialInvestment = () => {
                 <h3 className="text-xl font-display font-light text-foreground mb-4">
                   Austin Multifamily Investment Landscape
                 </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
+                <p className="text-muted-foreground text-sm leading-relaxed font-[Roboto]">
                   Multifamily remains Austin's most active commercial investment sector. Strong job growth,
                   elevated mortgage rates sustaining rental demand, and Austin's quality-of-life appeal
                   create a favorable environment for apartment investors. Suburban corridors including
@@ -544,7 +544,7 @@ const CommercialInvestment = () => {
                 <h3 className="text-xl font-display font-light text-foreground mb-4">
                   Emerging Opportunity Zones
                 </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
+                <p className="text-muted-foreground text-sm leading-relaxed font-[Roboto]">
                   East Austin continues its transformation as the city's most dynamic development corridor.
                   The I-35 expansion project is reshaping adjacent land values and accessibility. Southeast
                   Austin, anchored by Tesla's Gigafactory and Samsung's semiconductor campus, represents one
@@ -565,7 +565,7 @@ const CommercialInvestment = () => {
                 {faqs.map((faq, i) => (
                   <div key={i} className="border-b border-border pb-6">
                     <h3 className="text-foreground font-medium text-base mb-2">{faq.question}</h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">{faq.answer}</p>
+                    <p className="text-muted-foreground text-sm leading-relaxed font-[Roboto]">{faq.answer}</p>
                   </div>
                 ))}
               </div>
@@ -581,7 +581,7 @@ const CommercialInvestment = () => {
           <h2 className="font-display text-2xl md:text-3xl font-light text-foreground mb-4">
             Looking for a Commercial Acquisition?
           </h2>
-          <p className="text-muted-foreground text-sm leading-relaxed mb-8">
+          <p className="text-muted-foreground text-sm leading-relaxed font-[Roboto] mb-8">
             Share your criteria for multifamily, retail, office, land, or value-add investments
             in Austin and surrounding markets.
           </p>

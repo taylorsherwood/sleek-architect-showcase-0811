@@ -163,11 +163,13 @@ const Listings = () => {
         </div>
       </section>
 
-      <RealScoutListings
-        listingStatus="For Sale,For Rent,In Contract"
-        heading={"\n\n\n\nCURRENTLY ON THE MARKET"}
-        subheading={"\n"}
-      />
+      <Suspense fallback={<div className="min-h-[300px]" />}>
+        <RealScoutListings
+          listingStatus="For Sale,For Rent,In Contract"
+          heading={"\n\n\n\nCURRENTLY ON THE MARKET"}
+          subheading={"\n"}
+        />
+      </Suspense>
 
       {/* Commercial & Investment Listings */}
       <section className="py-10 md:py-14 bg-background border-t border-border">

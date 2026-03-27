@@ -171,7 +171,7 @@ const CommercialInvestment = () => {
               </div>
 
               {/* San Jose Ave */}
-              <div className="border-2 border-border overflow-hidden group bg-card hover:border-gold transition-colors duration-500 flex flex-col">
+              <div className="border border-border/60 overflow-hidden group bg-card hover:border-gold transition-colors duration-500 flex flex-col">
                 <div className="relative overflow-hidden">
                   <img
                     src={sanJoseAve}
@@ -217,7 +217,7 @@ const CommercialInvestment = () => {
               </div>
 
               {/* 717 S. 11th St */}
-              <div className="border-2 border-border overflow-hidden group bg-card hover:border-gold transition-colors duration-500 flex flex-col">
+              <div className="border border-border/60 overflow-hidden group bg-card hover:border-gold transition-colors duration-500 flex flex-col">
                 <div className="relative overflow-hidden">
                   <img
                     src={s11thStreet}
@@ -263,7 +263,7 @@ const CommercialInvestment = () => {
               </div>
 
               {/* Small Killeen Rental Portfolio */}
-              <div className="border-2 border-border overflow-hidden group bg-card hover:border-gold transition-colors duration-500 flex flex-col">
+              <div className="border border-border/60 overflow-hidden group bg-card hover:border-gold transition-colors duration-500 flex flex-col">
                 <div className="relative overflow-hidden">
                   <img
                     src={killeenPortfolio}
@@ -309,7 +309,7 @@ const CommercialInvestment = () => {
               </div>
 
               {/* 709/711/713 Bremser Ave */}
-              <div className="border-2 border-border overflow-hidden group bg-card hover:border-gold transition-colors duration-500 flex flex-col">
+              <div className="border border-border/60 overflow-hidden group bg-card hover:border-gold transition-colors duration-500 flex flex-col">
                 <div className="relative overflow-hidden">
                   <img
                     src={bremserAve}

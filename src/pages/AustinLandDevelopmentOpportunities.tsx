@@ -185,7 +185,7 @@ const AustinLandDevelopmentOpportunities = () => {
       <SchemaMarkup
         schema={createBreadcrumbSchema([
           { name: "Home", url: SITE },
-          { name: "Private Opportunities", url: `${SITE}/private` },
+          { name: "Investment", url: `${SITE}/invest` },
           { name: "Land & Development", url: `${SITE}/austin-land-development-opportunities` },
         ])}
       />

@@ -215,7 +215,7 @@ export function createArticleSchema(title: string, description: string, datePubl
     "headline": title,
     "description": description,
     "name": title,
-    "url": "https://www.echelonpropertygroup.com/blog",
+    "url": `https://www.echelonpropertygroup.com/blog`,
     "image": image || "https://www.echelonpropertygroup.com/og-image.png",
     "datePublished": datePublished,
     "dateModified": datePublished,

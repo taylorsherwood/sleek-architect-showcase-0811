@@ -21,10 +21,11 @@ const labelStyle = {
 };
 
 const ctaStyle = {
-  fontSize: "0.55rem" as const,
-  letterSpacing: "0.12em",
+  fontSize: "0.6rem" as const,
+  letterSpacing: "0.08em",
   textTransform: "uppercase" as const,
   fontFamily: '"Raleway", sans-serif',
+  fontWeight: 500 as const,
 };
 
 const faqs = [

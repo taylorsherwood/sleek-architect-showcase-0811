@@ -108,6 +108,8 @@ const SearchPage = () => {
               <Link to="/invest" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ INVESTMENT ADVISORY</Link>
               <Link to="/communities" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ ALL COMMUNITIES</Link>
               <Link to="/listings" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ CURRENT LISTINGS</Link>
+              <Link to="/past-transactions" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ PAST TRANSACTIONS</Link>
+              <Link to="/austin-luxury-homes-for-sale" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ AUSTIN LUXURY HOMES</Link>
             </div>
           </div>
         </div>

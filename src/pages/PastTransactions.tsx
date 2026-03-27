@@ -111,6 +111,8 @@ const PastTransactions = () => {
               <Link to="/invest" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ INVESTMENT ADVISORY</Link>
               <Link to="/communities" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ AUSTIN COMMUNITIES</Link>
               <Link to="/listings" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ CURRENT LISTINGS</Link>
+              <Link to="/home-value-austin" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ FREE HOME VALUATION</Link>
+              <Link to="/austin-luxury-homes-for-sale" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ AUSTIN LUXURY HOMES</Link>
             </div>
           </div>
         </div>

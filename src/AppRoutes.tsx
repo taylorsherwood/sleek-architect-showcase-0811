@@ -20,7 +20,7 @@ const Contact = lazy(() => import("@/pages/Contact"));
 const MovingToAustin = lazy(() => import("@/pages/MovingToAustin"));
 const BestLuxuryNeighborhoods = lazy(() => import("@/pages/BestLuxuryNeighborhoods"));
 const MarketReport = lazy(() => import("@/pages/MarketReport"));
-const OffMarketHomes = lazy(() => import("@/pages/OffMarketHomes"));
+
 const AustinLuxuryHomes = lazy(() => import("@/pages/AustinLuxuryHomes"));
 const AustinCommercialRealEstate = lazy(() => import("@/pages/AustinCommercialRealEstate"));
 const HomeValueAustin = lazy(() => import("@/pages/HomeValueAustin"));

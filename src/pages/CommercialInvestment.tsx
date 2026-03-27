@@ -204,8 +204,132 @@ const CommercialInvestment = () => {
                     REQUEST INFORMATION
                   </Link>
                 </div>
+
+              {/* 717 S. 11th St */}
+              <div className="border-2 border-border overflow-hidden group bg-card hover:border-gold transition-colors duration-500">
+                <div className="relative overflow-hidden">
+                  <div className="w-full aspect-[4/3] bg-muted flex items-center justify-center">
+                    <span className="text-muted-foreground/40 text-sm tracking-widest uppercase">Photo Coming Soon</span>
+                  </div>
+                  <span className="absolute top-4 left-4 text-minimal bg-gold text-white px-3 py-1 font-extrabold">
+                    MULTIFAMILY
+                  </span>
+                </div>
+                <div className="p-8">
+                  <div className="flex items-center justify-between mb-4">
+                    <h3 className="text-xl font-display font-light text-foreground">
+                      717 S. 11th St.
+                    </h3>
+                    <span className="text-2xl font-display font-light text-foreground">Price Upon Request</span>
+                  </div>
+                  <p className="text-muted-foreground mb-4">Temple, TX</p>
+                  <div className="grid grid-cols-2 gap-4 mb-6">
+                    <div>
+                      <p className="text-muted-foreground mb-1" style={labelStyle}>ASSET TYPE</p>
+                      <p className="text-foreground font-medium text-sm">6-Unit Multifamily</p>
+                    </div>
+                    <div>
+                      <p className="text-muted-foreground mb-1" style={labelStyle}>CONDITION</p>
+                      <p className="text-foreground font-medium text-sm">Recently Renovated</p>
+                    </div>
+                  </div>
+                  <p className="text-muted-foreground text-sm leading-relaxed mb-6">
+                    Recently renovated 6-unit multifamily property in Temple, TX. Contact for pricing and additional details.
+                  </p>
+                  <Link
+                    to="/contact"
+                    className="inline-block bg-white text-primary border border-border hover:bg-gold hover:text-white hover:border-gold px-8 py-4 transition-all duration-300 ease-out active:scale-[0.98]"
+                    style={labelStyle}
+                  >
+                    REQUEST INFORMATION
+                  </Link>
+                </div>
               </div>
+
+              {/* Small Killeen Rental Portfolio */}
+              <div className="border-2 border-border overflow-hidden group bg-card hover:border-gold transition-colors duration-500">
+                <div className="relative overflow-hidden">
+                  <div className="w-full aspect-[4/3] bg-muted flex items-center justify-center">
+                    <span className="text-muted-foreground/40 text-sm tracking-widest uppercase">Photo Coming Soon</span>
+                  </div>
+                  <span className="absolute top-4 left-4 text-minimal bg-gold text-white px-3 py-1 font-extrabold">
+                    RENTAL PORTFOLIO
+                  </span>
+                </div>
+                <div className="p-8">
+                  <div className="flex items-center justify-between mb-4">
+                    <h3 className="text-xl font-display font-light text-foreground">
+                      Small Killeen Rental Portfolio
+                    </h3>
+                    <span className="text-2xl font-display font-light text-foreground">$550,000</span>
+                  </div>
+                  <p className="text-muted-foreground mb-4">Killeen, TX</p>
+                  <div className="grid grid-cols-2 gap-4 mb-6">
+                    <div>
+                      <p className="text-muted-foreground mb-1" style={labelStyle}>UNITS</p>
+                      <p className="text-foreground font-medium text-sm">9 Rentable Units</p>
+                    </div>
+                    <div>
+                      <p className="text-muted-foreground mb-1" style={labelStyle}>OCCUPANCY</p>
+                      <p className="text-foreground font-medium text-sm">100% Occupied</p>
+                    </div>
+                  </div>
+                  <p className="text-muted-foreground text-sm leading-relaxed mb-6">
+                    9-unit rental portfolio in Killeen, TX. Fully occupied with a 14% cap rate.
+                  </p>
+                  <Link
+                    to="/contact"
+                    className="inline-block bg-white text-primary border border-border hover:bg-gold hover:text-white hover:border-gold px-8 py-4 transition-all duration-300 ease-out active:scale-[0.98]"
+                    style={labelStyle}
+                  >
+                    REQUEST INFORMATION
+                  </Link>
+                </div>
+              </div>
+
+              {/* 709/711/713 Bremser Ave */}
+              <div className="border-2 border-border overflow-hidden group bg-card hover:border-gold transition-colors duration-500">
+                <div className="relative overflow-hidden">
+                  <div className="w-full aspect-[4/3] bg-muted flex items-center justify-center">
+                    <span className="text-muted-foreground/40 text-sm tracking-widest uppercase">Photo Coming Soon</span>
+                  </div>
+                  <span className="absolute top-4 left-4 text-minimal bg-gold text-white px-3 py-1 font-extrabold">
+                    RENTAL HOMES
+                  </span>
+                </div>
+                <div className="p-8">
+                  <div className="flex items-center justify-between mb-4">
+                    <h3 className="text-xl font-display font-light text-foreground">
+                      709/711/713 Bremser Ave
+                    </h3>
+                    <span className="text-2xl font-display font-light text-foreground">$240,000</span>
+                  </div>
+                  <p className="text-muted-foreground mb-4">Killeen, TX</p>
+                  <div className="grid grid-cols-2 gap-4 mb-6">
+                    <div>
+                      <p className="text-muted-foreground mb-1" style={labelStyle}>ASSET TYPE</p>
+                      <p className="text-foreground font-medium text-sm">3 Individual Homes</p>
+                    </div>
+                    <div>
+                      <p className="text-muted-foreground mb-1" style={labelStyle}>INCOME</p>
+                      <p className="text-foreground font-medium text-sm">Rental Income</p>
+                    </div>
+                  </div>
+                  <p className="text-muted-foreground text-sm leading-relaxed mb-6">
+                    Three individual rental homes on Bremser Ave in Killeen, TX. Opportunity to acquire a small residential rental portfolio.
+                  </p>
+                  <Link
+                    to="/contact"
+                    className="inline-block bg-white text-primary border border-border hover:bg-gold hover:text-white hover:border-gold px-8 py-4 transition-all duration-300 ease-out active:scale-[0.98]"
+                    style={labelStyle}
+                  >
+                    REQUEST INFORMATION
+                  </Link>
+                </div>
+              </div>
+
             </div>
+          </div>
           </div>
         </div>
       </section>

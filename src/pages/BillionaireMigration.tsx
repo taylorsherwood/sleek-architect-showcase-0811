@@ -393,6 +393,21 @@ const BillionaireMigration = () => {
             </section>
 
             <AuthorBio />
+
+            {/* ── Internal Links ── */}
+            <section className="mt-16 pt-12 border-t border-border">
+              <h2 className="text-2xl font-display font-light text-architectural mb-6">
+                Explore Austin Real Estate
+              </h2>
+              <div className="grid sm:grid-cols-2 gap-4">
+                <Link to="/moving-to-austin" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ MOVING TO AUSTIN GUIDE</Link>
+                <Link to="/best-luxury-neighborhoods-austin" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ BEST LUXURY NEIGHBORHOODS</Link>
+                <Link to="/austin-luxury-market-report" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ AUSTIN MARKET REPORT</Link>
+                <Link to="/communities/lake-austin" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ LAKE AUSTIN HOMES</Link>
+                <Link to="/communities/westlake-hills" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ WESTLAKE HILLS HOMES</Link>
+                <Link to="/off-market-real-estate-austin" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ OFF-MARKET REAL ESTATE</Link>
+              </div>
+            </section>
           </div>
         </div>
       </article>

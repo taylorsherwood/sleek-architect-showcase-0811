@@ -164,7 +164,7 @@ const IntroSection = () => {
                     CLIENTS HELPED
                   </p>
                 </div>
-                <div ref={stat4.ref} className="bg-secondary p-8 text-center rounded-lg">
+                <div ref={stat4.ref} className="p-8 text-center rounded-lg border border-border/40" style={{ backgroundColor: "hsl(38 20% 93%)", boxShadow: "0 2px 12px hsl(40 10% 50% / 0.06)" }}>
                   <p className="text-4xl font-display font-light text-foreground mb-2">
                     {stat4.display}
                   </p>

@@ -83,7 +83,7 @@ const NoscriptFallback = () => (
         <p className="mb-4">With over $100M in career sales volume and deep expertise across Austin's most sought-after neighborhoods, Taylor helps clients buy, sell, and invest with confidence.</p>
         <h3 className="text-2xl font-light mb-4">Contact</h3>
         <p>2105 East MLK Blvd Ste 227, Austin, Texas 78702</p>
-        <p>Email: <a href="mailto:taylor@echelonpropertygroup.com">taylor@echelonpropertygroup.com</a></p>
+        <p>Email: <a href="mailto:taylor@echelonpropertygroup.com">Send an Email</a></p>
         <p>Phone: <a href="tel:+15126613843">(512) 661-3843</a></p>
         <p className="mt-4"><a href="/contact">Schedule a Consultation →</a></p>
       </div>

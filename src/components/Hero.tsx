@@ -100,7 +100,7 @@ const Hero = () => {
           muted
           loop
           playsInline
-          preload="metadata"
+          preload="none"
           poster="/images/hero-poster.jpg"
           className={`hero-bg-video transition-opacity duration-700 ${
           videoReady ? "opacity-100" : "opacity-0"}`

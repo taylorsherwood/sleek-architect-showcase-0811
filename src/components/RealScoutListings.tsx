@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 interface RealScoutListingsProps {
   listingStatus?: string;
@@ -12,9 +12,29 @@ const RealScoutListings = ({
   subheading = "Recently Closed",
 }: RealScoutListingsProps) => {
   const containerRef = useRef<HTMLDivElement>(null);
+  const sectionRef = useRef<HTMLElement>(null);
+  const [visible, setVisible] = useState(false);
+
+  // Only load the widget when the section scrolls into view
+  useEffect(() => {
+    const el = sectionRef.current;
+    if (!el || visible) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "300px" }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [visible]);
 
   useEffect(() => {
-    if (!containerRef.current) return;
+    if (!visible || !containerRef.current) return;
     // Create the web component client-side only
     const el = document.createElement("realscout-your-listings");
     el.setAttribute("agent-encoded-id", "QWdlbnQtMjg5NDU2");
@@ -30,17 +50,23 @@ const RealScoutListings = ({
         containerRef.current.removeChild(el);
       }
     };
-  }, []);
+  }, [visible, listingStatus]);
 
   return (
-    <section className="pt-4 pb-14 bg-background">
+    <section ref={sectionRef} className="pt-4 pb-14 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
           <p className="text-minimal text-gold mb-4 font-extrabold whitespace-pre-line">{heading}</p>
           <h2 className="font-display font-light text-architectural mb-8 text-5xl">
             {subheading}
           </h2>
-          <div ref={containerRef} className="w-full" />
+          {visible ? (
+            <div ref={containerRef} className="w-full" />
+          ) : (
+            <div className="w-full min-h-[200px] flex items-center justify-center">
+              <div className="w-6 h-6 border-2 border-gold/30 border-t-gold rounded-full animate-spin" />
+            </div>
+          )}
         </div>
       </div>
     </section>

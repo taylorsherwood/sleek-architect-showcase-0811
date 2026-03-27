@@ -208,7 +208,7 @@ const CommercialInvestment = () => {
               </div>
 
               {/* 717 S. 11th St */}
-              <div className="border-2 border-border overflow-hidden group bg-card hover:border-gold transition-colors duration-500">
+              <div className="border-2 border-border overflow-hidden group bg-card hover:border-gold transition-colors duration-500 flex flex-col">
                 <div className="relative overflow-hidden">
                   <div className="w-full aspect-[4/3] bg-muted flex items-center justify-center">
                     <span className="text-muted-foreground/40 text-sm tracking-widest uppercase">Photo Coming Soon</span>

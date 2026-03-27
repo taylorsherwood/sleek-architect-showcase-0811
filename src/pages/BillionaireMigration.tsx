@@ -46,7 +46,7 @@ const BillionaireMigration = () => {
     <div className="min-h-screen bg-warm-cream">
       <SEOHead
         title="Why Billionaires Move to Austin | Echelon Property Group"
-        description="Why founders and billionaires are relocating to Austin TX and how it's reshaping Lake Austin, Westlake, and the luxury real estate market."
+        description="Why founders and billionaires are relocating to Austin TX. How wealth migration is reshaping Lake Austin, Westlake, and the luxury real estate market."
       />
       <SchemaMarkup schema={articleSchema} />
       <Navigation />

@@ -16,7 +16,7 @@ const featured = [
   {
     name: "Westlake Hills",
     descriptor: "Scenic bluffs, top-rated schools",
-    image: "/static-assets/community-westlake-hills.avif",
+    image: "/static-assets/community-westlake-hills.jpg",
     slug: "westlake-hills",
   },
 ];

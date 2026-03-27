@@ -108,7 +108,7 @@ const PrivateOpportunities = ({ variant = "light" }: PrivateOpportunitiesProps) 
       ref={sectionRef}
       className={`py-24 md:py-32 transition-all duration-700 ${
         visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-      } ${isDark ? "" : "bg-muted"}`}
+      } ${isDark ? "" : "bg-background"}`}
       style={isDark ? { backgroundColor: "hsl(233, 42%, 12%)" } : undefined}
     >
       <div className="container mx-auto px-6">
@@ -174,7 +174,7 @@ const PrivateOpportunities = ({ variant = "light" }: PrivateOpportunitiesProps) 
               className={`rounded-lg p-6 md:p-8 ${
                 isDark
                   ? "bg-white/5 border border-white/10"
-                  : "bg-background border border-border shadow-[var(--shadow-elegant)]"
+                  : "bg-card border border-border/50 shadow-[0_4px_24px_-4px_hsl(220_20%_10%/0.06)]"
               }`}
             >
               <form onSubmit={handleSubmit} className="space-y-4">
@@ -188,7 +188,7 @@ const PrivateOpportunities = ({ variant = "light" }: PrivateOpportunitiesProps) 
                     className={`w-full px-4 py-3 rounded text-sm transition-colors focus:outline-none ${
                       isDark
                         ? "bg-white/10 border border-white/15 text-white placeholder:text-white/40 focus:border-[hsl(var(--gold))]"
-                        : "bg-muted border border-border text-foreground placeholder:text-muted-foreground focus:border-[hsl(var(--gold))]"
+                        : "bg-background border border-border text-foreground placeholder:text-muted-foreground focus:border-[hsl(var(--gold))]"
                     }`}
                   />
                   {errors.name && (
@@ -205,7 +205,7 @@ const PrivateOpportunities = ({ variant = "light" }: PrivateOpportunitiesProps) 
                     className={`w-full px-4 py-3 rounded text-sm transition-colors focus:outline-none ${
                       isDark
                         ? "bg-white/10 border border-white/15 text-white placeholder:text-white/40 focus:border-[hsl(var(--gold))]"
-                        : "bg-muted border border-border text-foreground placeholder:text-muted-foreground focus:border-[hsl(var(--gold))]"
+                        : "bg-background border border-border text-foreground placeholder:text-muted-foreground focus:border-[hsl(var(--gold))]"
                     }`}
                   />
                   {errors.email && (
@@ -222,7 +222,7 @@ const PrivateOpportunities = ({ variant = "light" }: PrivateOpportunitiesProps) 
                     className={`w-full px-4 py-3 rounded text-sm transition-colors focus:outline-none ${
                       isDark
                         ? "bg-white/10 border border-white/15 text-white placeholder:text-white/40 focus:border-[hsl(var(--gold))]"
-                        : "bg-muted border border-border text-foreground placeholder:text-muted-foreground focus:border-[hsl(var(--gold))]"
+                        : "bg-background border border-border text-foreground placeholder:text-muted-foreground focus:border-[hsl(var(--gold))]"
                     }`}
                   />
                   {errors.phone && (
@@ -238,7 +238,7 @@ const PrivateOpportunities = ({ variant = "light" }: PrivateOpportunitiesProps) 
                       className={`w-full py-3 text-sm ${
                         isDark
                           ? "bg-white/10 border-white/15 text-white"
-                          : "bg-muted border-border text-foreground"
+                          : "bg-background border-border text-foreground"
                       }`}
                     >
                       <SelectValue placeholder="Investment Range" />

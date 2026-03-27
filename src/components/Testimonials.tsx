@@ -106,7 +106,7 @@ const Testimonials = () => {
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.boxShadow =
-                    "0 4px 24px hsl(220 20% 10% / 0.06), 0 1px 4px hsl(220 20% 10% / 0.04)";
+                    "0 2px 16px hsl(220 20% 10% / 0.04), 0 8px 32px hsl(220 20% 10% / 0.06)";
                 }}
               >
                 {/* Quote icon */}

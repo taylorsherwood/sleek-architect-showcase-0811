@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
@@ -275,6 +276,25 @@ Austin, Texas 78702
                   <p>No. Our initial consultations are always complimentary and come with no obligation. We believe the best client relationships start with honest conversation about your goals and how we can help.</p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Internal Links ── */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl font-display font-light text-architectural mb-6">
+              Explore Austin Real Estate
+            </h2>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <Link to="/buy" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ BUYER SERVICES</Link>
+              <Link to="/sell" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ SELLER SERVICES</Link>
+              <Link to="/off-market-real-estate-austin" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ OFF-MARKET OPPORTUNITIES</Link>
+              <Link to="/invest" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ INVESTMENT ADVISORY</Link>
+              <Link to="/communities" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ AUSTIN COMMUNITIES</Link>
+              <Link to="/listings" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ CURRENT LISTINGS</Link>
             </div>
           </div>
         </div>

@@ -239,6 +239,25 @@ const Listings = () => {
       {/* Find Your Next Chapter search block */}
       <RealScoutSearch />
 
+      {/* ── Internal Links ── */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl font-display font-light text-architectural mb-6">
+              Explore More
+            </h2>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <Link to="/buy" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ BUYER SERVICES</Link>
+              <Link to="/sell" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ SELLER SERVICES</Link>
+              <Link to="/off-market-real-estate-austin" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ OFF-MARKET OPPORTUNITIES</Link>
+              <Link to="/invest" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ INVESTMENT ADVISORY</Link>
+              <Link to="/communities" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ AUSTIN COMMUNITIES</Link>
+              <Link to="/land" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ LAND & INVESTMENT PROPERTY</Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </div>
   );

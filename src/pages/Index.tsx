@@ -7,25 +7,18 @@ import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { realEstateAgentSchema, localBusinessSchema, taylorSherwoodSchema, organizationSchema, websiteSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 
 // Lazy-load below-fold sections to reduce initial JS bundle
-const RealScoutSearch = lazy(() => import("@/components/RealScoutSearch"));
 const PrivateOpportunities = lazy(() => import("@/components/PrivateOpportunities"));
 const CommunitiesPreview = lazy(() => import("@/components/CommunitiesPreview"));
-const CommercialCTA = lazy(() => import("@/components/CommercialCTA"));
-const FeaturedListings = lazy(() => import("@/components/FeaturedListings"));
 const IntroSection = lazy(() => import("@/components/IntroSection"));
 const MeetTaylor = lazy(() => import("@/components/MeetTaylor"));
-const InstagramGallery = lazy(() => import("@/components/InstagramGallery"));
 const Testimonials = lazy(() => import("@/components/Testimonials"));
-const SellerCTA = lazy(() => import("@/components/SellerCTA"));
-const CTASection = lazy(() => import("@/components/CTASection"));
-const LuxurySearchLinks = lazy(() => import("@/components/LuxurySearchLinks"));
 const MarketInsights = lazy(() => import("@/components/MarketInsights"));
 const Footer = lazy(() => import("@/components/Footer"));
 
 const NewsletterSection = lazy(async () => {
   return {
     default: () => (
-      <section className="pt-16 pb-0 bg-background">
+      <section className="py-24 md:py-32 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h3 className="text-3xl md:text-6xl font-light text-architectural mb-6 md:mb-8">
@@ -115,34 +108,17 @@ const Index = () => {
       <Navigation />
       <Hero />
 
-      <Suspense fallback={<div className="min-h-[200px] bg-primary" />}>
-        <RealScoutSearch />
-      </Suspense>
-
       <AsSeenIn />
       <ExpertiseSection />
-
-      <Suspense fallback={<div className="min-h-[200px]" />}>
-        <PrivateOpportunities />
-      </Suspense>
 
       <NoscriptFallback />
 
       <Suspense fallback={<BelowFold />}>
         <IntroSection />
         <CommunitiesPreview />
-        <CommercialCTA />
-
-
-        <SellerCTA />
-        <div className="py-6 bg-background" />
+        <PrivateOpportunities />
         <Testimonials />
-        
-        <div className="py-8 bg-background" />
         <MeetTaylor />
-        <div className="py-6 bg-background" />
-        <InstagramGallery />
-        <div className="py-6 bg-background" />
         <MarketInsights />
         <NewsletterSection />
         <Footer />

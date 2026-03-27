@@ -185,6 +185,25 @@ const BestLuxuryNeighborhoods = () => {
         </div>
       </article>
 
+      {/* ── Internal Links ── */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl font-display font-light text-architectural mb-6">
+              Explore Austin Real Estate
+            </h2>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <Link to="/westlake-hills-homes-for-sale" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ WESTLAKE HILLS HOMES FOR SALE</Link>
+              <Link to="/barton-creek-homes-for-sale" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ BARTON CREEK HOMES FOR SALE</Link>
+              <Link to="/lake-austin-waterfront-homes-for-sale" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ LAKE AUSTIN WATERFRONT HOMES</Link>
+              <Link to="/off-market-real-estate-austin" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ OFF-MARKET REAL ESTATE</Link>
+              <Link to="/moving-to-austin" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ MOVING TO AUSTIN GUIDE</Link>
+              <Link to="/invest" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ INVESTMENT ADVISORY</Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <AboutBlock />
       <Footer />
     </div>

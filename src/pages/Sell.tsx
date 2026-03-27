@@ -546,6 +546,8 @@ const Sell = () => {
               <Link to="/buy" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ BUYING A HOME IN AUSTIN</Link>
               <Link to="/best-neighborhoods-in-austin-texas" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ BEST NEIGHBORHOODS IN AUSTIN</Link>
               <Link to="/home-value-austin" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ FREE HOME VALUATION</Link>
+              <Link to="/past-transactions" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ PAST TRANSACTIONS</Link>
+              <Link to="/about" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ ABOUT TAYLOR SHERWOOD</Link>
               <Link to="/communities" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ EXPLORE ALL COMMUNITIES</Link>
             </div>
           </div>

@@ -217,7 +217,7 @@ const CommercialInvestment = () => {
                     MULTIFAMILY
                   </span>
                 </div>
-                <div className="p-8">
+                <div className="p-8 flex flex-col flex-grow">
                   <div className="flex items-center justify-between mb-4">
                     <h3 className="text-xl font-display font-light text-foreground">
                       717 S. 11th St.

@@ -67,7 +67,7 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <section className="py-24 md:py-32 bg-secondary">
+    <section className="py-32 md:py-40 bg-secondary">
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
@@ -92,21 +92,21 @@ const Testimonials = () => {
               <div
                 key={i}
                 ref={(el) => { cardsRef.current[i] = el; }}
-                className={`group relative bg-background rounded-xl p-7 md:p-8 flex flex-col justify-between hover:-translate-y-1 overflow-hidden${i === testimonials.length - 1 ? " md:col-span-2 md:max-w-[calc(50%-1rem)] md:mx-auto" : ""}`}
+                className={`group relative bg-card rounded-xl p-7 md:p-8 flex flex-col justify-between hover:-translate-y-1 overflow-hidden border border-border/40${i === testimonials.length - 1 ? " md:col-span-2 md:max-w-[calc(50%-1rem)] md:mx-auto" : ""}`}
                 style={{
                   opacity: 0,
                   transform: "translateY(40px)",
                   transition: `opacity 500ms ease ${i * 120}ms, transform 500ms ease ${i * 120}ms, box-shadow 500ms ease`,
                   boxShadow:
-                    "0 4px 24px hsl(220 20% 10% / 0.06), 0 1px 4px hsl(220 20% 10% / 0.04)",
+                    "0 2px 16px hsl(220 20% 10% / 0.04), 0 8px 32px hsl(220 20% 10% / 0.06)",
                 }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.boxShadow =
-                    "0 16px 48px hsl(220 20% 10% / 0.1), 0 4px 12px hsl(220 20% 10% / 0.06)";
+                    "0 16px 48px hsl(220 20% 10% / 0.1), 0 6px 16px hsl(220 20% 10% / 0.07)";
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.boxShadow =
-                    "0 4px 24px hsl(220 20% 10% / 0.06), 0 1px 4px hsl(220 20% 10% / 0.04)";
+                    "0 2px 16px hsl(220 20% 10% / 0.04), 0 8px 32px hsl(220 20% 10% / 0.06)";
                 }}
               >
                 {/* Quote icon */}

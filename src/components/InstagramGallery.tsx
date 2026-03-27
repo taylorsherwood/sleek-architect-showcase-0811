@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 /**
  * ─── INSTAGRAM CONFIGURATION ───────────────────────────────────────────
@@ -16,17 +16,35 @@ const INSTAGRAM_PROFILE_URL = "https://www.instagram.com/theinvestorbroker";
 const EMBEDSOCIAL_REF = "6fd82b336784d0fdcec3ce38de6cf04c6cec4621";
 
 const InstagramGallery = () => {
+  const sectionRef = useRef<HTMLElement>(null);
+
   useEffect(() => {
-    if (!document.getElementById("EmbedSocialHashtagScript")) {
-      const script = document.createElement("script");
-      script.id = "EmbedSocialHashtagScript";
-      script.src = "https://embedsocial.com/cdn/ht.js";
-      document.head.appendChild(script);
-    }
+    const el = sectionRef.current;
+    if (!el) return;
+
+    let loaded = false;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !loaded) {
+          loaded = true;
+          observer.disconnect();
+          if (!document.getElementById("EmbedSocialHashtagScript")) {
+            const script = document.createElement("script");
+            script.id = "EmbedSocialHashtagScript";
+            script.async = true;
+            script.src = "https://embedsocial.com/cdn/ht.js";
+            document.head.appendChild(script);
+          }
+        }
+      },
+      { rootMargin: "200px" }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
   }, []);
 
   return (
-    <section className="hidden md:block pt-16 pb-10 bg-background">
+    <section ref={sectionRef} className="hidden md:block pt-16 pb-10 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto">
           {/* Heading */}

@@ -20,6 +20,13 @@ const labelStyle = {
   fontFamily: '"Raleway", sans-serif',
 };
 
+const ctaStyle = {
+  fontSize: "0.6rem" as const,
+  letterSpacing: "0.15em",
+  textTransform: "uppercase" as const,
+  fontFamily: '"Raleway", sans-serif',
+};
+
 const faqs = [
   {
     question: "What types of commercial investment properties are available in Austin?",
@@ -155,8 +162,8 @@ const CommercialInvestment = () => {
                   </p>
                   <Link
                     to="/contact"
-                    className="inline-block bg-white text-primary border border-border hover:bg-gold hover:text-white hover:border-gold px-6 py-3 transition-all duration-300 ease-out active:scale-[0.98]"
-                    style={labelStyle}
+                    className="inline-block bg-transparent text-foreground/80 border border-border/40 hover:border-gold hover:text-gold px-6 py-2 transition-all duration-500 ease-out"
+                    style={ctaStyle}
                   >
                     REQUEST INFORMATION
                   </Link>
@@ -201,8 +208,8 @@ const CommercialInvestment = () => {
                   </p>
                   <Link
                     to="/contact"
-                    className="inline-block bg-white text-primary border border-border hover:bg-gold hover:text-white hover:border-gold px-6 py-3 transition-all duration-300 ease-out active:scale-[0.98]"
-                    style={labelStyle}
+                    className="inline-block bg-transparent text-foreground/80 border border-border/40 hover:border-gold hover:text-gold px-6 py-2 transition-all duration-500 ease-out"
+                    style={ctaStyle}
                   >
                     REQUEST INFORMATION
                   </Link>
@@ -247,8 +254,8 @@ const CommercialInvestment = () => {
                   </p>
                   <Link
                     to="/contact"
-                    className="inline-block bg-white text-primary border border-border hover:bg-gold hover:text-white hover:border-gold px-6 py-3 transition-all duration-300 ease-out active:scale-[0.98]"
-                    style={labelStyle}
+                    className="inline-block bg-transparent text-foreground/80 border border-border/40 hover:border-gold hover:text-gold px-6 py-2 transition-all duration-500 ease-out"
+                    style={ctaStyle}
                   >
                     REQUEST INFORMATION
                   </Link>
@@ -293,8 +300,8 @@ const CommercialInvestment = () => {
                   </p>
                   <Link
                     to="/contact"
-                    className="inline-block bg-white text-primary border border-border hover:bg-gold hover:text-white hover:border-gold px-6 py-3 transition-all duration-300 ease-out active:scale-[0.98]"
-                    style={labelStyle}
+                    className="inline-block bg-transparent text-foreground/80 border border-border/40 hover:border-gold hover:text-gold px-6 py-2 transition-all duration-500 ease-out"
+                    style={ctaStyle}
                   >
                     REQUEST INFORMATION
                   </Link>
@@ -339,8 +346,8 @@ const CommercialInvestment = () => {
                   </p>
                   <Link
                     to="/contact"
-                    className="inline-block bg-white text-primary border border-border hover:bg-gold hover:text-white hover:border-gold px-6 py-3 transition-all duration-300 ease-out active:scale-[0.98]"
-                    style={labelStyle}
+                    className="inline-block bg-transparent text-foreground/80 border border-border/40 hover:border-gold hover:text-gold px-6 py-2 transition-all duration-500 ease-out"
+                    style={ctaStyle}
                   >
                     REQUEST INFORMATION
                   </Link>

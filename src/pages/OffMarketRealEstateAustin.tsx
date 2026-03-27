@@ -182,6 +182,7 @@ const OffMarketRealEstateAustin = () => {
           { name: "Off-Market Homes Austin", url: `${SITE}/off-market-real-estate-austin` },
         ])}
       />
+      <SchemaMarkup schema={createFAQSchema(faqs)} />
 
       {/* ── Minimal header ──────────────────────────── */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-[hsl(220,15%,8%)]/90 backdrop-blur-sm border-b border-white/5">

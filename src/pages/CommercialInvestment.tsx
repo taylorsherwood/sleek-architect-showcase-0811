@@ -114,7 +114,7 @@ const CommercialInvestment = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
             <div className="mb-16">
-              <p className="text-gold text-center mb-4 font-bold" style={labelStyle}>CURRENT INVENTORY</p>
+              <p className="text-gold text-center mb-4 font-bold" style={ctaStyle}>CURRENT INVENTORY</p>
               <h2 className="font-display text-2xl md:text-3xl font-light text-foreground text-center mb-4">
                 Current Commercial Listings
               </h2>
@@ -149,11 +149,11 @@ const CommercialInvestment = () => {
                   <p className="text-muted-foreground mb-2">Austin, TX 78745</p>
                   <div className="grid grid-cols-2 gap-3 mb-4">
                     <div>
-                      <p className="text-muted-foreground mb-1" style={labelStyle}>ASSET TYPE</p>
+                      <p className="text-muted-foreground mb-1" style={ctaStyle}>ASSET TYPE</p>
                       <p className="text-foreground font-medium text-sm">Value-Add Multifamily</p>
                     </div>
                     <div>
-                      <p className="text-muted-foreground mb-1" style={labelStyle}>UNITS</p>
+                      <p className="text-muted-foreground mb-1" style={ctaStyle}>UNITS</p>
                       <p className="text-foreground font-medium text-sm">24</p>
                     </div>
                   </div>
@@ -162,8 +162,8 @@ const CommercialInvestment = () => {
                   </p>
                   <Link
                     to="/contact"
-                    className="inline-block bg-white text-primary border border-border hover:bg-gold hover:text-white hover:border-gold px-6 py-3 transition-all duration-300 ease-out active:scale-[0.98]"
-                    style={labelStyle}
+                    className="inline-block bg-transparent text-foreground/80 border border-border/40 hover:border-gold hover:text-gold px-6 py-2 transition-all duration-500 ease-out"
+                    style={ctaStyle}
                   >
                     REQUEST INFORMATION
                   </Link>
@@ -195,11 +195,11 @@ const CommercialInvestment = () => {
                   <p className="text-muted-foreground mb-2">Del Valle, TX</p>
                   <div className="grid grid-cols-2 gap-3 mb-4">
                     <div>
-                      <p className="text-muted-foreground mb-1" style={labelStyle}>ASSET TYPE</p>
+                      <p className="text-muted-foreground mb-1" style={ctaStyle}>ASSET TYPE</p>
                       <p className="text-foreground font-medium text-sm">Redevelopment Land</p>
                     </div>
                     <div>
-                      <p className="text-muted-foreground mb-1" style={labelStyle}>UNITS</p>
+                      <p className="text-muted-foreground mb-1" style={ctaStyle}>UNITS</p>
                       <p className="text-foreground font-medium text-sm">3.06 Acres</p>
                     </div>
                   </div>
@@ -208,8 +208,8 @@ const CommercialInvestment = () => {
                   </p>
                   <Link
                     to="/contact"
-                    className="inline-block bg-white text-primary border border-border hover:bg-gold hover:text-white hover:border-gold px-6 py-3 transition-all duration-300 ease-out active:scale-[0.98]"
-                    style={labelStyle}
+                    className="inline-block bg-transparent text-foreground/80 border border-border/40 hover:border-gold hover:text-gold px-6 py-2 transition-all duration-500 ease-out"
+                    style={ctaStyle}
                   >
                     REQUEST INFORMATION
                   </Link>
@@ -241,11 +241,11 @@ const CommercialInvestment = () => {
                   <p className="text-muted-foreground mb-2">Temple, TX</p>
                   <div className="grid grid-cols-2 gap-3 mb-4">
                     <div>
-                      <p className="text-muted-foreground mb-1" style={labelStyle}>ASSET TYPE</p>
+                      <p className="text-muted-foreground mb-1" style={ctaStyle}>ASSET TYPE</p>
                       <p className="text-foreground font-medium text-sm">6-Unit Multifamily</p>
                     </div>
                     <div>
-                      <p className="text-muted-foreground mb-1" style={labelStyle}>CONDITION</p>
+                      <p className="text-muted-foreground mb-1" style={ctaStyle}>CONDITION</p>
                       <p className="text-foreground font-medium text-sm">Recently Renovated</p>
                     </div>
                   </div>
@@ -254,8 +254,8 @@ const CommercialInvestment = () => {
                   </p>
                   <Link
                     to="/contact"
-                    className="inline-block bg-white text-primary border border-border hover:bg-gold hover:text-white hover:border-gold px-6 py-3 transition-all duration-300 ease-out active:scale-[0.98]"
-                    style={labelStyle}
+                    className="inline-block bg-transparent text-foreground/80 border border-border/40 hover:border-gold hover:text-gold px-6 py-2 transition-all duration-500 ease-out"
+                    style={ctaStyle}
                   >
                     REQUEST INFORMATION
                   </Link>
@@ -287,11 +287,11 @@ const CommercialInvestment = () => {
                   <p className="text-muted-foreground mb-2">Killeen, TX</p>
                   <div className="grid grid-cols-2 gap-3 mb-4">
                     <div>
-                      <p className="text-muted-foreground mb-1" style={labelStyle}>UNITS</p>
+                      <p className="text-muted-foreground mb-1" style={ctaStyle}>UNITS</p>
                       <p className="text-foreground font-medium text-sm">9 Rentable Units</p>
                     </div>
                     <div>
-                      <p className="text-muted-foreground mb-1" style={labelStyle}>OCCUPANCY</p>
+                      <p className="text-muted-foreground mb-1" style={ctaStyle}>OCCUPANCY</p>
                       <p className="text-foreground font-medium text-sm">100% Occupied</p>
                     </div>
                   </div>
@@ -300,8 +300,8 @@ const CommercialInvestment = () => {
                   </p>
                   <Link
                     to="/contact"
-                    className="inline-block bg-white text-primary border border-border hover:bg-gold hover:text-white hover:border-gold px-6 py-3 transition-all duration-300 ease-out active:scale-[0.98]"
-                    style={labelStyle}
+                    className="inline-block bg-transparent text-foreground/80 border border-border/40 hover:border-gold hover:text-gold px-6 py-2 transition-all duration-500 ease-out"
+                    style={ctaStyle}
                   >
                     REQUEST INFORMATION
                   </Link>
@@ -333,11 +333,11 @@ const CommercialInvestment = () => {
                   <p className="text-muted-foreground mb-2">Killeen, TX</p>
                   <div className="grid grid-cols-2 gap-3 mb-4">
                     <div>
-                      <p className="text-muted-foreground mb-1" style={labelStyle}>ASSET TYPE</p>
+                      <p className="text-muted-foreground mb-1" style={ctaStyle}>ASSET TYPE</p>
                       <p className="text-foreground font-medium text-sm">3 Individual Homes</p>
                     </div>
                     <div>
-                      <p className="text-muted-foreground mb-1" style={labelStyle}>INCOME</p>
+                      <p className="text-muted-foreground mb-1" style={ctaStyle}>INCOME</p>
                       <p className="text-foreground font-medium text-sm">Rental Income</p>
                     </div>
                   </div>
@@ -346,8 +346,8 @@ const CommercialInvestment = () => {
                   </p>
                   <Link
                     to="/contact"
-                    className="inline-block bg-white text-primary border border-border hover:bg-gold hover:text-white hover:border-gold px-6 py-3 transition-all duration-300 ease-out active:scale-[0.98]"
-                    style={labelStyle}
+                    className="inline-block bg-transparent text-foreground/80 border border-border/40 hover:border-gold hover:text-gold px-6 py-2 transition-all duration-500 ease-out"
+                    style={ctaStyle}
                   >
                     REQUEST INFORMATION
                   </Link>
@@ -364,7 +364,7 @@ const CommercialInvestment = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
             <div className="mb-16">
-              <p className="text-gold text-center mb-4 font-bold" style={labelStyle}>PRIVATE MARKET</p>
+              <p className="text-gold text-center mb-4 font-bold" style={ctaStyle}>PRIVATE MARKET</p>
               <h2 className="font-display text-2xl md:text-3xl font-light text-foreground text-center mb-4">
                 Private Market Opportunities
               </h2>
@@ -418,7 +418,7 @@ const CommercialInvestment = () => {
                   className="border-2 border-border bg-card p-8 hover:border-gold transition-colors duration-500"
                 >
                   <div className="flex items-center justify-between mb-6">
-                    <span className="bg-muted px-3 py-1 text-muted-foreground" style={labelStyle}>{listing.type}</span>
+                    <span className="bg-muted px-3 py-1 text-muted-foreground" style={ctaStyle}>{listing.type}</span>
                     <span className="text-2xl font-display font-light text-foreground">{listing.price}</span>
                   </div>
                   <h3 className="text-xl font-display font-light text-foreground mb-2">
@@ -427,11 +427,11 @@ const CommercialInvestment = () => {
                   <p className="text-muted-foreground mb-6">{listing.location}</p>
                   <div className="grid grid-cols-2 gap-3 mb-4">
                     <div>
-                      <p className="text-muted-foreground mb-1" style={labelStyle}>CAP RATE</p>
+                      <p className="text-muted-foreground mb-1" style={ctaStyle}>CAP RATE</p>
                       <p className="text-foreground font-medium text-sm">{listing.capRate}</p>
                     </div>
                     <div>
-                      <p className="text-muted-foreground mb-1" style={labelStyle}>SIZE</p>
+                      <p className="text-muted-foreground mb-1" style={ctaStyle}>SIZE</p>
                       <p className="text-foreground font-medium text-sm">{listing.sqft}</p>
                     </div>
                   </div>
@@ -457,7 +457,7 @@ const CommercialInvestment = () => {
           <div className="max-w-7xl mx-auto">
             <div className="grid md:grid-cols-2 gap-16 items-center">
               <div>
-                <p className="text-gold mb-4 font-bold" style={labelStyle}>INVESTMENT SEARCH</p>
+                <p className="text-gold mb-4 font-bold" style={ctaStyle}>INVESTMENT SEARCH</p>
                 <h2 className="font-display text-2xl md:text-3xl font-light text-foreground mb-6">
                   Find Your Next Austin Investment Property
                 </h2>
@@ -484,7 +484,7 @@ const CommercialInvestment = () => {
                 <Link
                   to="/contact"
                   className="inline-block bg-primary text-primary-foreground hover:bg-gold px-8 py-4 transition-all duration-300 ease-out active:scale-[0.98]"
-                  style={labelStyle}
+                  style={ctaStyle}
                 >
                   SHARE YOUR INVESTMENT CRITERIA
                 </Link>
@@ -497,7 +497,7 @@ const CommercialInvestment = () => {
                   { label: "Investor Clients Served", value: "50+" }
                 ].map((stat, i) => (
                   <div key={i} className="border-b border-border pb-6">
-                    <p className="text-muted-foreground mb-2" style={labelStyle}>{stat.label}</p>
+                    <p className="text-muted-foreground mb-2" style={ctaStyle}>{stat.label}</p>
                     <p className="text-3xl md:text-4xl font-display font-light text-foreground">{stat.value}</p>
                   </div>
                 ))}
@@ -511,7 +511,7 @@ const CommercialInvestment = () => {
       <section className="py-16 md:py-24 bg-background border-t border-border">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <p className="text-gold text-center mb-4 font-bold" style={labelStyle}>MARKET OVERVIEW</p>
+            <p className="text-gold text-center mb-4 font-bold" style={ctaStyle}>MARKET OVERVIEW</p>
             <h2 className="font-display text-2xl md:text-3xl font-light text-foreground text-center mb-14">
               Austin Investment Market Insights
             </h2>
@@ -566,7 +566,7 @@ const CommercialInvestment = () => {
 
             {/* FAQ */}
             <div className="mt-16">
-              <p className="text-gold text-center mb-4 font-bold" style={labelStyle}>FAQ</p>
+              <p className="text-gold text-center mb-4 font-bold" style={ctaStyle}>FAQ</p>
               <h2 className="font-display text-2xl md:text-3xl font-light text-foreground text-center mb-14">
                 Frequently Asked Questions
               </h2>
@@ -586,7 +586,7 @@ const CommercialInvestment = () => {
       {/* ── FINAL CTA ── */}
       <section className="py-16 md:py-24 bg-muted border-t border-border">
         <div className="container mx-auto px-6 max-w-lg text-center">
-          <p className="text-gold mb-4 font-bold" style={labelStyle}>GET STARTED</p>
+          <p className="text-gold mb-4 font-bold" style={ctaStyle}>GET STARTED</p>
           <h2 className="font-display text-2xl md:text-3xl font-light text-foreground mb-4">
             Looking for a Commercial Acquisition?
           </h2>
@@ -598,14 +598,14 @@ const CommercialInvestment = () => {
             <Link
               to="/contact"
               className="inline-block bg-primary text-primary-foreground hover:bg-gold px-10 py-4 transition-all duration-300 ease-out active:scale-[0.98]"
-              style={labelStyle}
+              style={ctaStyle}
             >
               SHARE INVESTMENT CRITERIA
             </Link>
             <Link
               to="/contact"
               className="inline-block border border-border text-muted-foreground hover:bg-primary hover:text-primary-foreground hover:border-primary px-10 py-4 transition-all duration-300 ease-out"
-              style={labelStyle}
+              style={ctaStyle}
             >
               CONTACT TAYLOR SHERWOOD
             </Link>

@@ -239,12 +239,12 @@ const MarketReport = () => {
               Explore Austin Real Estate
             </h2>
             <div className="grid sm:grid-cols-2 gap-4">
-              <Link to="/austin-multifamily-report-2026" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ AUSTIN MULTIFAMILY REPORT 2026</Link>
-              <Link to="/austin-land-development-opportunities" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ LAND DEVELOPMENT OPPORTUNITIES</Link>
-              <Link to="/best-luxury-neighborhoods-austin" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ BEST LUXURY NEIGHBORHOODS</Link>
-              <Link to="/off-market-real-estate-austin" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ OFF-MARKET REAL ESTATE</Link>
-              <Link to="/invest" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ INVESTMENT ADVISORY</Link>
-              <Link to="/why-billionaires-are-moving-to-austin" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ BILLIONAIRE MIGRATION TO AUSTIN</Link>
+              <Link to="/austin-multifamily-report-2026" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ AUSTIN MULTIFAMILY REPORT 2026</Link>
+              <Link to="/austin-land-development-opportunities" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ LAND DEVELOPMENT OPPORTUNITIES</Link>
+              <Link to="/best-luxury-neighborhoods-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ BEST LUXURY NEIGHBORHOODS</Link>
+              <Link to="/off-market-real-estate-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ OFF-MARKET REAL ESTATE</Link>
+              <Link to="/invest" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ INVESTMENT ADVISORY</Link>
+              <Link to="/why-billionaires-are-moving-to-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ BILLIONAIRE MIGRATION TO AUSTIN</Link>
             </div>
           </div>
         </div>

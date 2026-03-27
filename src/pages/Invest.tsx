@@ -947,14 +947,14 @@ const Invest = () => {
               Explore Austin Real Estate
             </h2>
             <div className="grid sm:grid-cols-2 gap-4">
-              <Link to="/austin-land-development-opportunities" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ LAND DEVELOPMENT OPPORTUNITIES</Link>
-              <Link to="/austin-multifamily-report-2026" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ MULTIFAMILY MARKET REPORT</Link>
-              <Link to="/off-market-real-estate-austin" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ OFF-MARKET OPPORTUNITIES</Link>
-              <Link to="/land" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ LAND & INVESTMENT</Link>
-              <Link to="/past-transactions" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ PAST TRANSACTIONS</Link>
-              <Link to="/about" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ ABOUT TAYLOR SHERWOOD</Link>
-              <Link to="/austin-commercial-real-estate" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ COMMERCIAL REAL ESTATE</Link>
-              <Link to="/search" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ SEARCH ALL LISTINGS</Link>
+              <Link to="/austin-land-development-opportunities" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ LAND DEVELOPMENT OPPORTUNITIES</Link>
+              <Link to="/austin-multifamily-report-2026" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ MULTIFAMILY MARKET REPORT</Link>
+              <Link to="/off-market-real-estate-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ OFF-MARKET OPPORTUNITIES</Link>
+              <Link to="/land" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ LAND & INVESTMENT</Link>
+              <Link to="/past-transactions" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ PAST TRANSACTIONS</Link>
+              <Link to="/about" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ ABOUT TAYLOR SHERWOOD</Link>
+              <Link to="/austin-commercial-real-estate" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ COMMERCIAL REAL ESTATE</Link>
+              <Link to="/search" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ SEARCH ALL LISTINGS</Link>
             </div>
           </div>
         </div>

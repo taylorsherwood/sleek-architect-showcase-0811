@@ -110,12 +110,12 @@ const AustinRealEstateInvestment = () => {
                 Explore Austin Real Estate
               </h2>
               <div className="grid sm:grid-cols-2 gap-4">
-                <Link to="/luxury-real-estate-austin" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ LUXURY REAL ESTATE</Link>
-                <Link to="/austin-commercial-real-estate" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ COMMERCIAL REAL ESTATE</Link>
-                <Link to="/land-for-sale-austin" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ LAND FOR SALE</Link>
-                <Link to="/listings/commercial-investment-austin" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ CURRENT LISTINGS</Link>
-                <Link to="/off-market-real-estate-austin" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ OFF-MARKET HOMES</Link>
-                <Link to="/communities" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ ALL COMMUNITIES</Link>
+                <Link to="/luxury-real-estate-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ LUXURY REAL ESTATE</Link>
+                <Link to="/austin-commercial-real-estate" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ COMMERCIAL REAL ESTATE</Link>
+                <Link to="/land-for-sale-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ LAND FOR SALE</Link>
+                <Link to="/listings/commercial-investment-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ CURRENT LISTINGS</Link>
+                <Link to="/off-market-real-estate-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ OFF-MARKET HOMES</Link>
+                <Link to="/communities" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ ALL COMMUNITIES</Link>
               </div>
             </section>
 

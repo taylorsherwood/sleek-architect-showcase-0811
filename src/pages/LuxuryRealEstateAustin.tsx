@@ -169,12 +169,12 @@ const LuxuryRealEstateAustin = () => {
                 Explore Austin Real Estate
               </h2>
               <div className="grid sm:grid-cols-2 gap-4">
-                <Link to="/buy-homes-austin" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ BUY A HOME IN AUSTIN</Link>
-                <Link to="/sell-home-austin" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ SELL YOUR AUSTIN HOME</Link>
-                <Link to="/austin-real-estate-investment" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ INVESTMENT PROPERTY</Link>
-                <Link to="/land-for-sale-austin" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ LAND FOR SALE</Link>
-                <Link to="/communities" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ ALL COMMUNITIES</Link>
-                <Link to="/off-market-real-estate-austin" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ OFF-MARKET HOMES</Link>
+                <Link to="/buy-homes-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ BUY A HOME IN AUSTIN</Link>
+                <Link to="/sell-home-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ SELL YOUR AUSTIN HOME</Link>
+                <Link to="/austin-real-estate-investment" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ INVESTMENT PROPERTY</Link>
+                <Link to="/land-for-sale-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ LAND FOR SALE</Link>
+                <Link to="/communities" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ ALL COMMUNITIES</Link>
+                <Link to="/off-market-real-estate-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ OFF-MARKET HOMES</Link>
               </div>
             </section>
 

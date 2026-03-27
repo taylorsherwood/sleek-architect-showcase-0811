@@ -105,14 +105,14 @@ const PastTransactions = () => {
               Explore Austin Real Estate
             </h2>
             <div className="grid sm:grid-cols-2 gap-4">
-              <Link to="/buy" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ BUYER SERVICES</Link>
-              <Link to="/sell" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ SELLER SERVICES</Link>
-              <Link to="/off-market-real-estate-austin" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ OFF-MARKET OPPORTUNITIES</Link>
-              <Link to="/invest" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ INVESTMENT ADVISORY</Link>
-              <Link to="/communities" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ AUSTIN COMMUNITIES</Link>
-              <Link to="/listings" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ CURRENT LISTINGS</Link>
-              <Link to="/home-value-austin" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ FREE HOME VALUATION</Link>
-              <Link to="/austin-luxury-homes-for-sale" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ AUSTIN LUXURY HOMES</Link>
+              <Link to="/buy" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ BUYER SERVICES</Link>
+              <Link to="/sell" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ SELLER SERVICES</Link>
+              <Link to="/off-market-real-estate-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ OFF-MARKET OPPORTUNITIES</Link>
+              <Link to="/invest" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ INVESTMENT ADVISORY</Link>
+              <Link to="/communities" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ AUSTIN COMMUNITIES</Link>
+              <Link to="/listings" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ CURRENT LISTINGS</Link>
+              <Link to="/home-value-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ FREE HOME VALUATION</Link>
+              <Link to="/austin-luxury-homes-for-sale" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ AUSTIN LUXURY HOMES</Link>
             </div>
           </div>
         </div>

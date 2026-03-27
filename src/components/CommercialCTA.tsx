@@ -8,10 +8,10 @@ const CommercialCTA = () => {
       <div className="absolute inset-0">
         <img
           src={commercialHeroSrc}
-          srcSet={`${commercialHeroSrc} 1x, ${commercialHeroSrc} 2x`}
           alt="Austin commercial real estate skyline"
           title="Austin commercial real estate and investment properties"
           className="w-full h-full object-cover object-center"
+          sizes="100vw"
           style={{ imageRendering: 'auto' }}
           loading="lazy"
           decoding="async" />

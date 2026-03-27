@@ -131,7 +131,9 @@ export default defineConfig(({ mode }) => ({
       png: { quality: 80 },
       jpeg: { quality: 75 },
       jpg: { quality: 75 },
-      webp: { quality: 75 },
+      webp: { quality: 80 },
+      avif: false,
+      svg: { multipass: true },
     }),
   ].filter(Boolean),
   resolve: {

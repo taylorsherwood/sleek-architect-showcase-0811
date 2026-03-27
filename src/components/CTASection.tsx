@@ -9,6 +9,7 @@ const CTASection = () => {
           alt="Luxury home exterior in Austin Texas Hill Country"
           title="Austin luxury home — schedule a consultation"
           className="w-full h-full object-cover object-center"
+          sizes="100vw"
           loading="lazy"
           decoding="async"
         />

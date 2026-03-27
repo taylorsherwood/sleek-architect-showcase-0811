@@ -141,10 +141,10 @@ const CommercialInvestment = () => {
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
                   <div className="flex items-center justify-between mb-2">
-                    <h3 className="text-xl font-display font-light text-foreground">
+                    <h3 className="text-lg font-display font-light text-foreground">
                       4314 Gillis Street
                     </h3>
-                    <span className="text-2xl font-display font-light text-foreground">$2,500,000</span>
+                    <span className="text-lg font-display font-light text-foreground">$2,500,000</span>
                   </div>
                   <p className="text-muted-foreground mb-2">Austin, TX 78745</p>
                   <div className="grid grid-cols-2 gap-3 mb-4">
@@ -187,10 +187,10 @@ const CommercialInvestment = () => {
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
                   <div className="flex items-center justify-between mb-2">
-                    <h3 className="text-xl font-display font-light text-foreground">
+                    <h3 className="text-lg font-display font-light text-foreground">
                       10811 San Jose Ave
                     </h3>
-                    <span className="text-2xl font-display font-light text-foreground">$1,600,000</span>
+                    <span className="text-lg font-display font-light text-foreground">$1,600,000</span>
                   </div>
                   <p className="text-muted-foreground mb-2">Del Valle, TX</p>
                   <div className="grid grid-cols-2 gap-3 mb-4">
@@ -233,10 +233,10 @@ const CommercialInvestment = () => {
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
                   <div className="flex items-center justify-between mb-2">
-                    <h3 className="text-xl font-display font-light text-foreground">
+                    <h3 className="text-lg font-display font-light text-foreground">
                       717 S. 11th St.
                     </h3>
-                    <span className="text-2xl font-display font-light text-foreground">Price Upon Request</span>
+                    <span className="text-lg font-display font-light text-foreground">Price Upon Request</span>
                   </div>
                   <p className="text-muted-foreground mb-2">Temple, TX</p>
                   <div className="grid grid-cols-2 gap-3 mb-4">
@@ -279,10 +279,10 @@ const CommercialInvestment = () => {
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
                   <div className="flex items-center justify-between mb-2">
-                    <h3 className="text-xl font-display font-light text-foreground">
+                    <h3 className="text-lg font-display font-light text-foreground">
                       Small Killeen Rental Portfolio
                     </h3>
-                    <span className="text-2xl font-display font-light text-foreground">$550,000</span>
+                    <span className="text-lg font-display font-light text-foreground">$550,000</span>
                   </div>
                   <p className="text-muted-foreground mb-2">Killeen, TX</p>
                   <div className="grid grid-cols-2 gap-3 mb-4">
@@ -325,10 +325,10 @@ const CommercialInvestment = () => {
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
                   <div className="flex items-center justify-between mb-2">
-                    <h3 className="text-xl font-display font-light text-foreground">
+                    <h3 className="text-lg font-display font-light text-foreground">
                       709/711/713 Bremser Ave
                     </h3>
-                    <span className="text-2xl font-display font-light text-foreground">$240,000</span>
+                    <span className="text-lg font-display font-light text-foreground">$240,000</span>
                   </div>
                   <p className="text-muted-foreground mb-2">Killeen, TX</p>
                   <div className="grid grid-cols-2 gap-3 mb-4">
@@ -419,7 +419,7 @@ const CommercialInvestment = () => {
                 >
                   <div className="flex items-center justify-between mb-6">
                     <span className="bg-muted px-3 py-1 text-muted-foreground" style={labelStyle}>{listing.type}</span>
-                    <span className="text-2xl font-display font-light text-foreground">{listing.price}</span>
+                    <span className="text-lg font-display font-light text-foreground">{listing.price}</span>
                   </div>
                   <h3 className="text-xl font-display font-light text-foreground mb-2">
                     {listing.name}

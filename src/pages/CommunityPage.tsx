@@ -242,19 +242,25 @@ const CommunityPage = () => {
                 Explore Austin Real Estate
               </h2>
               <div className="grid sm:grid-cols-2 gap-4">
-                <Link to="/buy" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">
-                  → BUYING A HOME IN AUSTIN
+                <Link to="/buy-homes-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">
+                  → BUY A HOME IN AUSTIN
                 </Link>
-                <Link to="/sell" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">
-                  → SELLING YOUR AUSTIN HOME
+                <Link to="/sell-home-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">
+                  → SELL YOUR AUSTIN HOME
                 </Link>
-                <Link to="/off-market-real-estate-austin" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">
+                <Link to="/off-market-real-estate-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">
                   → OFF-MARKET & PRIVATE LISTINGS
                 </Link>
-                <Link to="/communities" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">
+                <Link to="/best-neighborhoods-in-austin-texas" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">
+                  → BEST NEIGHBORHOODS IN AUSTIN
+                </Link>
+                <Link to="/communities" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">
                   → ALL AUSTIN COMMUNITIES
                 </Link>
-                <Link to="/contact" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">
+                <Link to="/blog" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">
+                  → BLOG & MARKET INSIGHTS
+                </Link>
+                <Link to="/contact" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">
                   → CONTACT ECHELON PROPERTY GROUP
                 </Link>
               </div>

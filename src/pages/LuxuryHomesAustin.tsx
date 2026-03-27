@@ -147,7 +147,7 @@ const LuxuryHomesAustin = () => {
               </div>
             </section>
 
-            <AuthorBio />
+            <AboutBlock />
           </div>
         </div>
       </article>

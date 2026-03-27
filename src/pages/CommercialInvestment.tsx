@@ -116,7 +116,7 @@ const CommercialInvestment = () => {
 
             <div className="grid md:grid-cols-2 gap-8">
               {/* Gillis Street */}
-              <div className="border-2 border-border overflow-hidden group bg-card hover:border-gold transition-colors duration-500">
+              <div className="border-2 border-border overflow-hidden group bg-card hover:border-gold transition-colors duration-500 flex flex-col">
                 <div className="relative overflow-hidden">
                   <img
                     src={gillisStreet}

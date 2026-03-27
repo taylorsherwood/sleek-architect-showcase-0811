@@ -125,6 +125,7 @@ const Index = () => {
         <PrivateOpportunities />
         <Testimonials />
         <MeetTaylor />
+        <InstagramGallery />
         
         <MarketInsights />
         <NewsletterSection />

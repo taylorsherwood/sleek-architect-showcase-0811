@@ -106,7 +106,10 @@ export const realEstateAgentSchema = {
   ],
   "priceRange": "$$$",
   "openingHours": "Mo-Fr 09:00-18:00",
-  "sameAs": []
+  "sameAs": [
+    "https://www.instagram.com/theinvestorbroker",
+    "https://www.linkedin.com/in/taylorsherwood/"
+  ]
 };
 
 export const taylorSherwoodSchema = {

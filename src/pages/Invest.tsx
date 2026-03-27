@@ -509,7 +509,7 @@ const Invest = () => {
         </div>
       </section>
 
-      <section className="pt-10 md:pt-14 pb-12 md:pb-16 bg-secondary/30">
+      <section className="pt-10 md:pt-14 pb-12 md:pb-16 bg-secondary">
         <div className="max-w-4xl mx-auto px-6">
           <ScrollReveal>
             <p className="text-minimal text-gold mb-4 tracking-[0.25em]">Portfolio</p>

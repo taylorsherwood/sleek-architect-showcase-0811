@@ -301,7 +301,7 @@ const CommercialInvestment = () => {
                     decoding="async"
                   />
                   <span className="absolute top-4 left-4 text-minimal bg-gold text-white px-3 py-1 font-extrabold">
-                    RENTAL HOMES
+                    RENTAL PORTFOLIO
                   </span>
                 </div>
                 <div className="p-8">

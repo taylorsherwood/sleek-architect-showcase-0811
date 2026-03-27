@@ -162,7 +162,7 @@ const CommercialInvestment = () => {
                   </p>
                   <Link
                     to="/contact"
-                    className="inline-block bg-transparent text-foreground/80 border border-border/40 hover:border-gold hover:text-gold px-6 py-2 transition-all duration-500 ease-out"
+                    className="inline-block text-foreground/70 border-b border-border/30 hover:border-gold hover:text-gold pb-1 transition-all duration-500 ease-out"
                     style={ctaStyle}
                   >
                     REQUEST INFORMATION
@@ -208,7 +208,7 @@ const CommercialInvestment = () => {
                   </p>
                   <Link
                     to="/contact"
-                    className="inline-block bg-transparent text-foreground/80 border border-border/40 hover:border-gold hover:text-gold px-6 py-2 transition-all duration-500 ease-out"
+                    className="inline-block text-foreground/70 border-b border-border/30 hover:border-gold hover:text-gold pb-1 transition-all duration-500 ease-out"
                     style={ctaStyle}
                   >
                     REQUEST INFORMATION
@@ -254,7 +254,7 @@ const CommercialInvestment = () => {
                   </p>
                   <Link
                     to="/contact"
-                    className="inline-block bg-transparent text-foreground/80 border border-border/40 hover:border-gold hover:text-gold px-6 py-2 transition-all duration-500 ease-out"
+                    className="inline-block text-foreground/70 border-b border-border/30 hover:border-gold hover:text-gold pb-1 transition-all duration-500 ease-out"
                     style={ctaStyle}
                   >
                     REQUEST INFORMATION
@@ -300,7 +300,7 @@ const CommercialInvestment = () => {
                   </p>
                   <Link
                     to="/contact"
-                    className="inline-block bg-transparent text-foreground/80 border border-border/40 hover:border-gold hover:text-gold px-6 py-2 transition-all duration-500 ease-out"
+                    className="inline-block text-foreground/70 border-b border-border/30 hover:border-gold hover:text-gold pb-1 transition-all duration-500 ease-out"
                     style={ctaStyle}
                   >
                     REQUEST INFORMATION
@@ -346,7 +346,7 @@ const CommercialInvestment = () => {
                   </p>
                   <Link
                     to="/contact"
-                    className="inline-block bg-transparent text-foreground/80 border border-border/40 hover:border-gold hover:text-gold px-6 py-2 transition-all duration-500 ease-out"
+                    className="inline-block text-foreground/70 border-b border-border/30 hover:border-gold hover:text-gold pb-1 transition-all duration-500 ease-out"
                     style={ctaStyle}
                   >
                     REQUEST INFORMATION

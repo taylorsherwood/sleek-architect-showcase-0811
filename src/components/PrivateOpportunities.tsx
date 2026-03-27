@@ -106,7 +106,7 @@ const PrivateOpportunities = ({ variant = "light" }: PrivateOpportunitiesProps) 
     <section
       id="private-opportunities-banner"
       ref={sectionRef}
-      className={`py-16 md:py-20 transition-all duration-700 ${
+      className={`py-24 md:py-32 transition-all duration-700 ${
         visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
       } ${isDark ? "" : "bg-muted"}`}
       style={isDark ? { backgroundColor: "hsl(233, 42%, 12%)" } : undefined}

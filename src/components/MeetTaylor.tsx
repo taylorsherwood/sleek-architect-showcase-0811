@@ -3,7 +3,7 @@ import echelonWatermark from "@/assets/echelon-watermark.png";
 
 const MeetTaylor = () => {
   return (
-    <section className="relative pt-8 pb-4 bg-background overflow-hidden">
+    <section className="relative py-24 md:py-32 bg-background overflow-hidden">
       {/* Watermark — centered in the gap between text blocks */}
       <div
         className="pointer-events-none absolute right-[0%] bottom-[-8%] hidden md:block w-[60vw] max-w-[1050px] aspect-square"

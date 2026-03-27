@@ -108,7 +108,7 @@ const PrivateOpportunities = ({ variant = "light" }: PrivateOpportunitiesProps) 
       ref={sectionRef}
       className={`py-24 md:py-32 transition-all duration-700 ${
         visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-      } ${isDark ? "" : "bg-muted"}`}
+      } ${isDark ? "" : "bg-background"}`}
       style={isDark ? { backgroundColor: "hsl(233, 42%, 12%)" } : undefined}
     >
       <div className="container mx-auto px-6">

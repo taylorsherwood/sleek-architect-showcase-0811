@@ -271,14 +271,12 @@ const CommercialInvestment = () => {
                   <span className="absolute top-4 left-4 text-minimal bg-gold text-white px-3 py-1 font-extrabold">
                     RENTAL PORTFOLIO
                   </span>
+                  <span className="absolute bottom-3 right-3 text-white font-display text-sm font-light drop-shadow-lg">$550,000</span>
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
-                  <div className="flex items-center justify-between mb-2">
-                    <h3 className="text-lg font-display font-light text-foreground">
-                      Small Killeen Rental Portfolio
-                    </h3>
-                    <span className="text-lg font-display font-light text-foreground">$550,000</span>
-                  </div>
+                  <h3 className="text-lg font-display font-light text-foreground mb-1">
+                    Small Killeen Rental Portfolio
+                  </h3>
                   <p className="text-muted-foreground mb-2">Killeen, TX</p>
                   <div className="grid grid-cols-2 gap-3 mb-4">
                     <div>

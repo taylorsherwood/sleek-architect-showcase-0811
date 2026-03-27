@@ -122,7 +122,7 @@ const AustinCommercialRealEstate = () => {
                 Echelon Property Group assists private investors, family offices, and institutional buyers in identifying, evaluating, and acquiring income-producing commercial properties throughout the Austin metropolitan area. Our investment advisory services encompass market analysis, financial underwriting, due diligence coordination, and transaction management. We evaluate properties on the basis of current income, value-add potential, cap rate trends, tenant quality, and long-term market positioning.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Our network extends beyond publicly marketed properties. Through established relationships with property owners, developers, and fellow brokers, we source <Link to="/off-market-luxury-homes-austin" className="text-foreground underline hover:text-muted-foreground">off-market opportunities</Link> that may never appear on commercial listing platforms — giving our clients a competitive advantage in a market where the best deals often transact privately.
+                Our network extends beyond publicly marketed properties. Through established relationships with property owners, developers, and fellow brokers, we source <Link to="/off-market-real-estate-austin" className="text-foreground underline hover:text-muted-foreground">off-market opportunities</Link> that may never appear on commercial listing platforms — giving our clients a competitive advantage in a market where the best deals often transact privately.
               </p>
             </section>
 

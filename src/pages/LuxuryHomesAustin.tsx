@@ -138,7 +138,7 @@ const LuxuryHomesAustin = () => {
                   SCHEDULE A CONSULTATION
                 </Link>
                 <Link
-                  to="/off-market-luxury-homes-austin"
+                  to="/off-market-real-estate-austin"
                   className="inline-block border border-primary text-primary hover:bg-primary hover:text-primary-foreground px-10 py-4 transition-colors duration-300"
                   style={{ fontSize: "0.6rem", letterSpacing: "0.25em", textTransform: "uppercase", fontFamily: '"Raleway", sans-serif' }}>
                   

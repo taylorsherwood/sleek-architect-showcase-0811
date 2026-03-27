@@ -105,7 +105,7 @@ const SellHomeAustin = () => {
                 Should I Sell My Home Off-Market?
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                <Link to="/off-market-luxury-homes-austin" className="text-foreground underline hover:text-muted-foreground">Off-market sales</Link> are increasingly common in Austin's luxury segment. They offer privacy, discretion, and the ability to test pricing without public exposure. For high-profile sellers, properties with sensitive security concerns, or homeowners who simply prefer a quiet sale, off-market can be the ideal approach.
+                <Link to="/off-market-real-estate-austin" className="text-foreground underline hover:text-muted-foreground">Off-market sales</Link> are increasingly common in Austin's luxury segment. They offer privacy, discretion, and the ability to test pricing without public exposure. For high-profile sellers, properties with sensitive security concerns, or homeowners who simply prefer a quiet sale, off-market can be the ideal approach.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 Echelon Property Group maintains an extensive network of qualified luxury buyers and fellow agents who actively seek off-market opportunities. We help sellers evaluate whether an off-market, public, or hybrid strategy best serves their goals.

@@ -85,7 +85,7 @@ const BillionaireMigration = () => {
                 VIEW LUXURY HOMES
               </Link>
               <Link
-                to="/off-market-luxury-homes-austin"
+                to="/off-market-real-estate-austin"
                 className="inline-block border border-white/40 text-white hover:bg-white/10 hover:border-white/60 px-10 py-4 transition-colors duration-300"
                 style={labelStyle}
               >
@@ -376,7 +376,7 @@ const BillionaireMigration = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
-                  to="/off-market-luxury-homes-austin"
+                  to="/off-market-real-estate-austin"
                   className="inline-block bg-primary text-primary-foreground hover:bg-gold hover:text-white px-10 py-4 transition-colors duration-300"
                   style={labelStyle}
                 >

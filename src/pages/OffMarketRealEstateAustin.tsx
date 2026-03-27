@@ -395,7 +395,7 @@ const OffMarketRealEstateAustin = () => {
                 title: "Pre-Market Listings",
                 desc: "Properties preparing for market that you can access and negotiate on before public exposure drives up competition.",
                 links: [
-                  { to: "/off-market-luxury-homes-austin", text: "Off-market luxury homes" },
+                  { to: "/off-market-real-estate-austin", text: "Off-market luxury homes" },
                   { to: "/luxury-homes-austin", text: "Luxury homes Austin" },
                 ],
               },
@@ -452,7 +452,7 @@ const OffMarketRealEstateAustin = () => {
       </section>
 
       {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-          FAQ — Merged from /off-market-luxury-homes-austin
+          FAQ — Merged from /off-market-real-estate-austin
       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
       <section className="py-16 md:py-24 bg-[hsl(220,15%,8%)] border-t border-white/5">
         <div className="container mx-auto px-6 max-w-4xl">

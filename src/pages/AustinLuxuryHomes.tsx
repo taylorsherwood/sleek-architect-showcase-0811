@@ -155,7 +155,7 @@ const AustinLuxuryHomes = () => {
                 <div className="border-l-2 border-gold pl-6">
                   <h3 className="text-lg font-medium text-foreground mb-2">Off-Market Access</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Many of Austin's finest luxury properties never appear on public listing platforms. Our established network provides clients with access to <Link to="/off-market-luxury-homes-austin" className="text-foreground underline hover:text-muted-foreground">off-market and private exclusive listings</Link> across all of Austin's premier neighborhoods.
+                    Many of Austin's finest luxury properties never appear on public listing platforms. Our established network provides clients with access to <Link to="/off-market-real-estate-austin" className="text-foreground underline hover:text-muted-foreground">off-market and private exclusive listings</Link> across all of Austin's premier neighborhoods.
                   </p>
                 </div>
                 <div className="border-l-2 border-gold pl-6">

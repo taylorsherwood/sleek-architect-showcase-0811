@@ -26,7 +26,7 @@ const listings = [
   beds: 0,
   baths: 0,
   sqft: "",
-  link: "/off-market-luxury-homes-austin",
+  link: "/off-market-real-estate-austin",
   badgeLabel: "",
   isOffMarketCard: true
 },
@@ -219,7 +219,7 @@ const FeaturedListings = ({ hideRealScout = false }: FeaturedListingsProps) => {
 
             <div className="mt-16 mb-10 text-center">
               <Link
-                to="/off-market-luxury-homes-austin"
+                to="/off-market-real-estate-austin"
                 className="inline-block text-[13px] text-muted-foreground/60 hover:text-foreground transition-colors duration-500 font-light">
                 Did you know that 95%+ of our listings aren't on market? If you
                 are searching for private market opportunities in Austin,

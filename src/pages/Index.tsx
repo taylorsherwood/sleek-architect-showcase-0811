@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
+import RealScoutSearch from "@/components/RealScoutSearch";
 import AsSeenIn from "@/components/AsSeenIn";
 import ExpertiseSection from "@/components/ExpertiseSection";
 import SEOHead from "@/components/SEOHead";

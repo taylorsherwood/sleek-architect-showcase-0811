@@ -52,14 +52,14 @@ const About = () => {
           <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start">
             <div className="relative inline-block">
               <img
-                alt="Echelon Property Group team"
+                alt="Taylor Sherwood, founder of Echelon Property Group and Austin luxury real estate advisor"
                 title="Taylor Sherwood — Echelon Property Group founder and Austin real estate advisor"
                 className="w-full h-[50vh] md:h-[60vh] object-contain"
                 src="/lovable-uploads/9265260a-6432-4ccb-ad05-c43da28ecfc3.jpg"
                 loading="eager"
                 decoding="async"
                 fetchPriority="high" />
-              <img src={clhmsBadge} alt="CLHMS Guild Badge" title="Certified Luxury Home Marketing Specialist designation" className="absolute bottom-3 right-3 w-20 h-20 opacity-85" loading="lazy" decoding="async" />
+              <img src={clhmsBadge} alt="Certified Luxury Home Marketing Specialist guild member badge" title="Certified Luxury Home Marketing Specialist designation" className="absolute bottom-3 right-3 w-20 h-20 opacity-85" loading="lazy" decoding="async" />
             </div>
             <div>
               <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-2">Meet Taylor Sherwood</h2>

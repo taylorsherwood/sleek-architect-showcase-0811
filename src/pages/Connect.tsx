@@ -182,7 +182,7 @@ const Connect = () => {
             <div className="flex flex-col items-center px-4 -mt-16">
               <img
                 src={combinedLogo}
-                alt="eXp Realty | Echelon Property Group"
+                alt="eXp Realty and Echelon Property Group combined brokerage logo"
                 className="w-full"
                 style={{ height: "300px", marginBottom: "-40px", objectFit: "contain", objectPosition: "53.25% center" }}
                 loading="eager"

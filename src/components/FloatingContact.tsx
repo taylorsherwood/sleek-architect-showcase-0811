@@ -88,7 +88,7 @@ const FloatingContact = () => {
         <div className="w-12 h-12 rounded-full overflow-hidden ring-2 ring-[hsl(var(--gold))] group-hover:ring-background transition-all duration-500">
           <img
             src={HEADSHOT_LAUNCHER}
-            alt="Taylor Sherwood"
+            alt="Taylor Sherwood, Austin luxury real estate advisor"
             title="Contact Taylor Sherwood — Austin luxury real estate advisor"
             className="w-full h-full object-cover object-[50%_30%] scale-[1.05]" />
         </div>
@@ -118,7 +118,7 @@ const FloatingContact = () => {
             <div className="w-[120px] h-[120px] rounded-full overflow-hidden shadow-[0_8px_30px_-6px_hsl(var(--primary)/0.3)] ring-1 ring-[hsl(var(--gold)/0.3)] border-[3.5px] border-background">
               <img
                 src={HEADSHOT}
-                alt="Taylor Sherwood"
+                alt="Taylor Sherwood, founder of Echelon Property Group"
                 title="Taylor Sherwood — Echelon Property Group"
                 className="w-full h-full object-cover object-[50%_20%] scale-[1.03]" />
             </div>

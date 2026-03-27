@@ -40,7 +40,7 @@ const MeetTaylor = () => {
                 sizes="(max-width: 768px) 100vw, 50vw"
                 loading="lazy"
                 decoding="async" />
-              <img src="/static-assets/clhms-badge.png" alt="CLHMS Guild Badge" title="Certified Luxury Home Marketing Specialist badge" className="absolute bottom-3 right-3 w-16 h-16 md:w-20 md:h-20 opacity-85" loading="lazy" decoding="async" />
+              <img src="/static-assets/clhms-badge.png" alt="Certified Luxury Home Marketing Specialist guild member badge" title="Certified Luxury Home Marketing Specialist badge" className="absolute bottom-3 right-3 w-16 h-16 md:w-20 md:h-20 opacity-85" loading="lazy" decoding="async" />
             </div>
             
             <div className="relative overflow-hidden">

@@ -169,7 +169,7 @@ const Private = () => {
         <div className="absolute inset-0">
           <img
             src={heroImage}
-            alt="Luxury Austin real estate — off-market opportunities"
+            alt="Luxury Austin estate representing exclusive off-market real estate opportunities"
             title="Off-market real estate deals in Austin Texas"
             className="w-full h-full object-cover scale-105"
             loading="eager"

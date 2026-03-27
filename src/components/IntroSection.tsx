@@ -140,7 +140,7 @@ const IntroSection = () => {
             <div className="space-y-6">
               {/* Stats grid */}
               <div className="grid grid-cols-2 gap-6">
-                <div ref={stat1.ref} className="bg-secondary p-8 text-center rounded-lg">
+                <div ref={stat1.ref} className="p-8 text-center rounded-lg border border-border/40" style={{ backgroundColor: "hsl(38 20% 93%)", boxShadow: "0 2px 12px hsl(40 10% 50% / 0.06)" }}>
                   <p className="text-4xl font-display font-light text-foreground mb-2">
                     {stat1.display}
                   </p>

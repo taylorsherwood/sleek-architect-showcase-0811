@@ -1,17 +1,18 @@
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useState, useEffect, useRef, useCallback, lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { realEstateAgentSchema, createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
-import Testimonials from "@/components/Testimonials";
-import FeaturedListings from "@/components/FeaturedListings";
-import GlobalLuxuryAdvertising from "@/components/GlobalLuxuryAdvertising";
-import CinematicVideoSection from "@/components/CinematicVideoSection";
 import ScrollReveal from "@/components/ScrollReveal";
 import { formatPhoneNumber, getTimestamp } from "@/lib/formUtils";
+
+const Testimonials = lazy(() => import("@/components/Testimonials"));
+const FeaturedListings = lazy(() => import("@/components/FeaturedListings"));
+const GlobalLuxuryAdvertising = lazy(() => import("@/components/GlobalLuxuryAdvertising"));
+const CinematicVideoSection = lazy(() => import("@/components/CinematicVideoSection"));
+const Footer = lazy(() => import("@/components/Footer"));
 import {
   CheckCircle,
   

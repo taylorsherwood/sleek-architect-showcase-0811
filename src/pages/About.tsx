@@ -1,12 +1,14 @@
+import { lazy, Suspense } from "react";
 import Navigation from "@/components/Navigation";
 import clhmsBadge from "@/assets/clhms-badge.png";
-import Footer from "@/components/Footer";
 import aboutTeam from "@/assets/about-team.jpg";
 import { Link } from "react-router-dom";
 import SchemaMarkup, { taylorSherwoodSchema, createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import SEOHead from "@/components/SEOHead";
-import InstagramGallery from "@/components/InstagramGallery";
-import Testimonials from "@/components/Testimonials";
+
+const InstagramGallery = lazy(() => import("@/components/InstagramGallery"));
+const Testimonials = lazy(() => import("@/components/Testimonials"));
+const Footer = lazy(() => import("@/components/Footer"));
 
 const About = () => {
   return (

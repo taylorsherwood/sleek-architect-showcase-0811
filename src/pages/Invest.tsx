@@ -1,14 +1,15 @@
-import { useState } from "react";
+import { useState, lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { realEstateAgentSchema, createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
 import { formatPhoneNumber, getTimestamp } from "@/lib/formUtils";
-import ScrollReveal from "@/components/ScrollReveal";
-import BeforeAfterSlider from "@/components/BeforeAfterSlider";
+
+const ScrollReveal = lazy(() => import("@/components/ScrollReveal"));
+const BeforeAfterSlider = lazy(() => import("@/components/BeforeAfterSlider"));
+const Footer = lazy(() => import("@/components/Footer"));
 import kitchenBefore from "@/assets/kitchen-before.jpg";
 import kitchenAfter from "@/assets/kitchen-after.jpeg";
 import livingBefore from "@/assets/living-before.jpg";

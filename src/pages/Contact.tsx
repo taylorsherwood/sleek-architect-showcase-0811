@@ -128,9 +128,7 @@ const Contact = () => {
                 <div className="space-y-8">
                   <div>
                     <h2 className="text-minimal text-muted-foreground mb-2">EMAIL</h2>
-                    <a href="mailto:info@echelonpropertygroup.com" className="text-lg hover:text-muted-foreground transition-colors duration-300">taylor@echelonpropertygroup.com
-
-                    </a>
+                    <a href="mailto:taylor@echelonpropertygroup.com" className="text-lg hover:text-muted-foreground transition-colors duration-300">Send an Email</a>
                   </div>
                   <div>
                     <h2 className="text-minimal text-muted-foreground mb-2">PHONE</h2>
@@ -262,7 +260,7 @@ Austin, Texas 78702
               <div className="space-y-4">
                 <div>
                   <h4 className="font-medium text-foreground mb-1">How do I schedule a consultation?</h4>
-                  <p>Use the contact form above, call us at (512) 661-3843, or email taylor@echelonpropertygroup.com. We typically respond within a few hours during business days and are happy to arrange in-person, phone, or video consultations based on your preference.</p>
+                  <p>Use the contact form above, call us at (512) 661-3843, or <a href="mailto:taylor@echelonpropertygroup.com" className="underline hover:text-foreground transition-colors">send us an email</a>. We typically respond within a few hours during business days and are happy to arrange in-person, phone, or video consultations based on your preference.</p>
                 </div>
                 <div>
                   <h4 className="font-medium text-foreground mb-1">Do you work with out-of-state buyers?</h4>

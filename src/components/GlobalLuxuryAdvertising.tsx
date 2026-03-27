@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import { Globe, Monitor, BookOpen, MapPin, CheckCircle } from "lucide-react";
 
 import heroImg from "@/assets/global-luxury-hero.jpg";
-import digitalImg from "@/assets/marketing-digital.png";
-import printImg from "@/assets/marketing-print.png";
+import digitalImg from "@/assets/marketing-digital.jpg";
+import printImg from "@/assets/marketing-print.jpg";
 import localImg from "@/assets/marketing-local.png";
 import collageImg from "@/assets/marketing-collage-spaced.png";
 import expLuxuryLogo from "@/assets/exp-luxury-logo-white.png";

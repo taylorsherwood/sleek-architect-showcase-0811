@@ -180,11 +180,10 @@ const About = () => {
 
       {/* Instagram Feed */}
       <div className="py-6 bg-background" />
-      <InstagramGallery />
+      <Suspense fallback={<div className="min-h-[200px]" />}><InstagramGallery /></Suspense>
       <div className="py-6 bg-background" />
 
-
-      <Testimonials />
+      <Suspense fallback={<div className="min-h-[200px]" />}><Testimonials /></Suspense>
 
       {/* CTA */}
       <section className="py-24 bg-secondary text-center">

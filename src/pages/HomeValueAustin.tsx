@@ -433,6 +433,21 @@ const HomeValueAustin = () => {
               </div>
             </section>
 
+            {/* Internal Links */}
+            <section>
+              <h2 className="text-2xl font-display font-light text-architectural mb-6">
+                Explore Austin Real Estate
+              </h2>
+              <div className="grid sm:grid-cols-2 gap-4">
+                <Link to="/sell" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ SELLER SERVICES</Link>
+                <Link to="/off-market-real-estate-austin" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ OFF-MARKET OPPORTUNITIES</Link>
+                <Link to="/austin-luxury-homes-for-sale" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ AUSTIN LUXURY HOMES</Link>
+                <Link to="/past-transactions" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ PAST TRANSACTIONS</Link>
+                <Link to="/communities" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ AUSTIN COMMUNITIES</Link>
+                <Link to="/austin-luxury-market-report" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ MARKET REPORT</Link>
+              </div>
+            </section>
+
           </div>
         </div>
       </div>

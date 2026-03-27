@@ -253,6 +253,8 @@ const Listings = () => {
               <Link to="/invest" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ INVESTMENT ADVISORY</Link>
               <Link to="/communities" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ AUSTIN COMMUNITIES</Link>
               <Link to="/land" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ LAND & INVESTMENT PROPERTY</Link>
+              <Link to="/search" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ SEARCH ALL AUSTIN HOMES</Link>
+              <Link to="/home-value-austin" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ FREE HOME VALUATION</Link>
             </div>
           </div>
         </div>

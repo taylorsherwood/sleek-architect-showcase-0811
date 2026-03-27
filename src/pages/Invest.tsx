@@ -953,6 +953,8 @@ const Invest = () => {
               <Link to="/land" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ LAND & INVESTMENT</Link>
               <Link to="/past-transactions" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ PAST TRANSACTIONS</Link>
               <Link to="/about" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ ABOUT TAYLOR SHERWOOD</Link>
+              <Link to="/austin-commercial-real-estate" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ COMMERCIAL REAL ESTATE</Link>
+              <Link to="/search" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ SEARCH ALL LISTINGS</Link>
             </div>
           </div>
         </div>

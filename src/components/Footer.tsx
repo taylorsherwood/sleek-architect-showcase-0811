@@ -12,13 +12,16 @@ const Footer = () => {
               <div className="space-y-2">
                 <Link to="/about" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">About</Link>
                 <Link to="/listings" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Listings</Link>
+                <Link to="/search" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Search Homes</Link>
                 <Link to="/buy" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Buy</Link>
                 <Link to="/sell" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Sell</Link>
                 <Link to="/invest" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Invest</Link>
                 <Link to="/land" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Land & Investment</Link>
                 <Link to="/communities" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Communities</Link>
+                <Link to="/past-transactions" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Past Transactions</Link>
                 <Link to="/blog" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Blog</Link>
                 <Link to="/contact" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Contact</Link>
+                <Link to="/connect" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Connect</Link>
               </div>
             </div>
 
@@ -40,6 +43,8 @@ const Footer = () => {
                 <Link to="/off-market-real-estate-austin" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Off-Market Homes</Link>
                 <Link to="/austin-multifamily-report-2026" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Multifamily Report</Link>
                 <Link to="/austin-land-development-opportunities" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Land Development</Link>
+                <Link to="/home-value-austin" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Free Home Valuation</Link>
+                <Link to="/austin-luxury-homes-for-sale" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Austin Luxury Homes</Link>
               </div>
             </div>
 

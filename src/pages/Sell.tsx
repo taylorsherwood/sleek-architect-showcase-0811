@@ -617,7 +617,7 @@ const Sell = () => {
       {/* ── Thin gold divider ── */}
       <div className="h-[2px] bg-gold" />
 
-      <Footer />
+      <Suspense fallback={<div className="min-h-[100px]" />}><Footer /></Suspense>
     </div>);
 
 };

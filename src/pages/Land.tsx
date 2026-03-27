@@ -368,6 +368,9 @@ const LandPage = () => {
               <Link to="/austin-multifamily-report-2026" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ MULTIFAMILY MARKET REPORT</Link>
               <Link to="/listings" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ CURRENT LISTINGS</Link>
               <Link to="/communities" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ AUSTIN COMMUNITIES</Link>
+              <Link to="/listings/commercial-investment-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ COMMERCIAL & INVESTMENT</Link>
+              <Link to="/private-opportunities" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ PRIVATE OPPORTUNITIES</Link>
+              <Link to="/blog" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ BLOG & MARKET INSIGHTS</Link>
             </div>
           </div>
         </div>

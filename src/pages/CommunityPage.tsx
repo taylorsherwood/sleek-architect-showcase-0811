@@ -232,7 +232,7 @@ const CommunityPage = () => {
               </h2>
               <ContentBlock text={community.investmentPotential} />
               <p className="text-muted-foreground leading-relaxed mt-4">
-                Some homes in {community.name} present strong renovation or value-add opportunities — <Link to="/invest" className="text-foreground underline hover:text-muted-foreground">explore our investor-focused approach</Link>.
+                Some homes in {community.name} present strong renovation or value-add opportunities — <Link to="/invest" className="text-foreground underline hover:text-gold transition-colors">explore our investor-focused approach</Link>.
               </p>
             </section>
 
@@ -242,19 +242,25 @@ const CommunityPage = () => {
                 Explore Austin Real Estate
               </h2>
               <div className="grid sm:grid-cols-2 gap-4">
-                <Link to="/buy" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">
-                  → BUYING A HOME IN AUSTIN
+                <Link to="/buy-homes-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">
+                  → BUY A HOME IN AUSTIN
                 </Link>
-                <Link to="/sell" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">
-                  → SELLING YOUR AUSTIN HOME
+                <Link to="/sell-home-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">
+                  → SELL YOUR AUSTIN HOME
                 </Link>
-                <Link to="/off-market-real-estate-austin" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">
+                <Link to="/off-market-real-estate-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">
                   → OFF-MARKET & PRIVATE LISTINGS
                 </Link>
-                <Link to="/communities" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">
+                <Link to="/best-neighborhoods-in-austin-texas" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">
+                  → BEST NEIGHBORHOODS IN AUSTIN
+                </Link>
+                <Link to="/communities" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">
                   → ALL AUSTIN COMMUNITIES
                 </Link>
-                <Link to="/contact" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">
+                <Link to="/blog" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">
+                  → BLOG & MARKET INSIGHTS
+                </Link>
+                <Link to="/contact" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">
                   → CONTACT ECHELON PROPERTY GROUP
                 </Link>
               </div>
@@ -289,7 +295,7 @@ const CommunityPage = () => {
                       className="group border-2 border-border p-6 rounded-lg hover:border-gold transition-colors duration-500"
                     >
                       <p className="text-minimal text-gold mb-2">{rc.priceRange}</p>
-                      <h3 className="text-xl font-display font-light text-architectural group-hover:text-muted-foreground transition-colors mb-2">
+                      <h3 className="text-xl font-display font-light text-architectural group-hover:text-gold transition-colors mb-2">
                         {rc.name}
                       </h3>
                       <p className="text-minimal text-muted-foreground group-hover:text-gold transition-colors duration-500">VIEW COMMUNITY →</p>

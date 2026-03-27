@@ -69,25 +69,25 @@ const AustinRealEstateInvestment = () => {
                 <div>
                   <h3 className="text-xl font-display font-medium mb-3">Luxury Residential Buy-and-Hold</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Supply-constrained neighborhoods like <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">Westlake Hills</Link>, <Link to="/communities/lake-austin" className="text-foreground underline hover:text-muted-foreground">Lake Austin</Link>, and <Link to="/communities/barton-creek" className="text-foreground underline hover:text-muted-foreground">Barton Creek</Link> offer the most reliable long-term appreciation. Limited buildable lots, top-tier schools, and sustained demand from tech-economy growth create a foundation for 7–12% average annual appreciation.
+                    Supply-constrained neighborhoods like <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-gold transition-colors">Westlake Hills</Link>, <Link to="/communities/lake-austin" className="text-foreground underline hover:text-gold transition-colors">Lake Austin</Link>, and <Link to="/communities/barton-creek" className="text-foreground underline hover:text-gold transition-colors">Barton Creek</Link> offer the most reliable long-term appreciation. Limited buildable lots, top-tier schools, and sustained demand from tech-economy growth create a foundation for 7–12% average annual appreciation.
                   </p>
                 </div>
                 <div>
                   <h3 className="text-xl font-display font-medium mb-3">Value-Add Residential</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Established neighborhoods like <Link to="/communities/tarrytown" className="text-foreground underline hover:text-muted-foreground">Tarrytown</Link> and <Link to="/communities/rollingwood" className="text-foreground underline hover:text-muted-foreground">Rollingwood</Link> offer compelling renovation and teardown-rebuild opportunities. The spread between acquisition cost and improved value supports profitable projects, particularly on larger lots or properties with significant improvement potential.
+                    Established neighborhoods like <Link to="/communities/tarrytown" className="text-foreground underline hover:text-gold transition-colors">Tarrytown</Link> and <Link to="/communities/rollingwood" className="text-foreground underline hover:text-gold transition-colors">Rollingwood</Link> offer compelling renovation and teardown-rebuild opportunities. The spread between acquisition cost and improved value supports profitable projects, particularly on larger lots or properties with significant improvement potential.
                   </p>
                 </div>
                 <div>
                   <h3 className="text-xl font-display font-medium mb-3">Commercial & Multifamily</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Austin's <Link to="/austin-commercial-real-estate" className="text-foreground underline hover:text-muted-foreground">commercial real estate market</Link> offers opportunities across multifamily, office, retail, and industrial asset classes. Strong population growth and tech-sector expansion drive sustained demand, while cap rates remain attractive relative to coastal markets.
+                    Austin's <Link to="/austin-commercial-real-estate" className="text-foreground underline hover:text-gold transition-colors">commercial real estate market</Link> offers opportunities across multifamily, office, retail, and industrial asset classes. Strong population growth and tech-sector expansion drive sustained demand, while cap rates remain attractive relative to coastal markets.
                   </p>
                 </div>
                 <div>
                   <h3 className="text-xl font-display font-medium mb-3">Development Land</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    <Link to="/land-for-sale-austin" className="text-foreground underline hover:text-muted-foreground">Land along Austin's growth corridors</Link> — including I-35, Highway 290 West, and the <Link to="/communities/dripping-springs" className="text-foreground underline hover:text-muted-foreground">Dripping Springs</Link> corridor — presents significant appreciation potential for investors with medium- to long-term horizons.
+                    <Link to="/land-for-sale-austin" className="text-foreground underline hover:text-gold transition-colors">Land along Austin's growth corridors</Link> — including I-35, Highway 290 West, and the <Link to="/communities/dripping-springs" className="text-foreground underline hover:text-gold transition-colors">Dripping Springs</Link> corridor — presents significant appreciation potential for investors with medium- to long-term horizons.
                   </p>
                 </div>
               </div>

@@ -121,9 +121,9 @@ const IntroSection = () => {
                   lasting relationships. With expertise across residential,
                   commercial, and investment properties, our team provides
                   clients with clear guidance, innovative strategies, and
-                  personalized service at every step. Whether you're buying your
-                  first home, scaling a portfolio, or positioning a property for
-                  market, we bring the local expertise and sharp negotiation
+                  personalized service at every step. Whether you're <Link to="/buy-homes-austin" className="text-foreground underline hover:text-gold transition-colors">buying your
+                  first home</Link>, scaling a portfolio, or <Link to="/sell-home-austin" className="text-foreground underline hover:text-gold transition-colors">positioning a property for
+                  market</Link>, we bring the local expertise and sharp negotiation
                   skills you need to achieve your goals.{"\n\n"}<em>Buy. Sell.
                   Invest.</em>
                 </p>

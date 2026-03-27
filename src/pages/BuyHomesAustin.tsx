@@ -54,7 +54,7 @@ const BuyHomesAustin = () => {
                 Austin, Texas has consistently ranked among the best places to live in America — and for good reason. The city combines a booming technology economy with no state income tax, year-round outdoor recreation, a world-class cultural scene, and some of the most diverse luxury real estate options in the country.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                For homebuyers, Austin offers exceptional value compared to coastal markets. Luxury homes that would command $8–15 million in the Bay Area, Los Angeles, or New York can be purchased for $3–7 million in neighborhoods like <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">Westlake Hills</Link>, <Link to="/communities/barton-creek" className="text-foreground underline hover:text-muted-foreground">Barton Creek</Link>, and <Link to="/communities/lake-austin" className="text-foreground underline hover:text-muted-foreground">Lake Austin</Link>. Combined with income tax savings, the financial case for buying in Austin is compelling.
+                For homebuyers, Austin offers exceptional value compared to coastal markets. Luxury homes that would command $8–15 million in the Bay Area, Los Angeles, or New York can be purchased for $3–7 million in neighborhoods like <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-gold transition-colors">Westlake Hills</Link>, <Link to="/communities/barton-creek" className="text-foreground underline hover:text-gold transition-colors">Barton Creek</Link>, and <Link to="/communities/lake-austin" className="text-foreground underline hover:text-gold transition-colors">Lake Austin</Link>. Combined with income tax savings, the financial case for buying in Austin is compelling.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 Whether you're relocating from out of state, upgrading within the Austin market, or purchasing an investment property, understanding the nuances of Austin's neighborhoods, school districts, and market dynamics is essential to making the right decision.
@@ -70,27 +70,27 @@ const BuyHomesAustin = () => {
               </p>
               <div className="space-y-4">
                 <div className="border-l-2 border-gold pl-6">
-                  <h3 className="text-lg font-medium mb-1"><Link to="/communities/westlake-hills" className="hover:text-muted-foreground transition-colors">Westlake Hills</Link></h3>
+                  <h3 className="text-lg font-medium mb-1"><Link to="/communities/westlake-hills" className="hover:text-gold transition-colors">Westlake Hills</Link></h3>
                   <p className="text-muted-foreground text-sm">Best for families, top schools (Eanes ISD), hilltop estates. $1.2M–$20M+</p>
                 </div>
                 <div className="border-l-2 border-gold pl-6">
-                  <h3 className="text-lg font-medium mb-1"><Link to="/communities/barton-creek" className="hover:text-muted-foreground transition-colors">Barton Creek</Link></h3>
+                  <h3 className="text-lg font-medium mb-1"><Link to="/communities/barton-creek" className="hover:text-gold transition-colors">Barton Creek</Link></h3>
                   <p className="text-muted-foreground text-sm">Best for golf, gated community, resort amenities. $1.5M–$15M+</p>
                 </div>
                 <div className="border-l-2 border-gold pl-6">
-                  <h3 className="text-lg font-medium mb-1"><Link to="/communities/lake-austin" className="hover:text-muted-foreground transition-colors">Lake Austin</Link></h3>
+                  <h3 className="text-lg font-medium mb-1"><Link to="/communities/lake-austin" className="hover:text-gold transition-colors">Lake Austin</Link></h3>
                   <p className="text-muted-foreground text-sm">Best for waterfront lifestyle, private docks, highest appreciation. $2M–$25M+</p>
                 </div>
                 <div className="border-l-2 border-gold pl-6">
-                  <h3 className="text-lg font-medium mb-1"><Link to="/communities/tarrytown" className="hover:text-muted-foreground transition-colors">Tarrytown</Link></h3>
+                  <h3 className="text-lg font-medium mb-1"><Link to="/communities/tarrytown" className="hover:text-gold transition-colors">Tarrytown</Link></h3>
                   <p className="text-muted-foreground text-sm">Best for walkability, central location, urban lifestyle. $800K–$8M+</p>
                 </div>
                 <div className="border-l-2 border-gold pl-6">
-                  <h3 className="text-lg font-medium mb-1"><Link to="/communities/spanish-oaks" className="hover:text-muted-foreground transition-colors">Spanish Oaks</Link></h3>
+                  <h3 className="text-lg font-medium mb-1"><Link to="/communities/spanish-oaks" className="hover:text-gold transition-colors">Spanish Oaks</Link></h3>
                   <p className="text-muted-foreground text-sm">Best for private golf, large estates, Hill Country setting. $1.5M–$10M+</p>
                 </div>
                 <div className="border-l-2 border-gold pl-6">
-                  <h3 className="text-lg font-medium mb-1"><Link to="/communities/dripping-springs" className="hover:text-muted-foreground transition-colors">Dripping Springs</Link></h3>
+                  <h3 className="text-lg font-medium mb-1"><Link to="/communities/dripping-springs" className="hover:text-gold transition-colors">Dripping Springs</Link></h3>
                   <p className="text-muted-foreground text-sm">Best for acreage, wine country, Hill Country lifestyle. $500K–$10M+</p>
                 </div>
               </div>
@@ -110,7 +110,7 @@ const BuyHomesAustin = () => {
                 </div>
                 <div className="border-l-2 border-border pl-6">
                   <h3 className="text-lg font-medium text-foreground mb-1">2. Property Search & Showings</h3>
-                  <p className="text-muted-foreground text-sm">We curate properties from MLS and our <Link to="/off-market-real-estate-austin" className="text-foreground underline hover:text-muted-foreground">off-market network</Link>, scheduling private showings.</p>
+                  <p className="text-muted-foreground text-sm">We curate properties from MLS and our <Link to="/off-market-real-estate-austin" className="text-foreground underline hover:text-gold transition-colors">off-market network</Link>, scheduling private showings.</p>
                 </div>
                 <div className="border-l-2 border-border pl-6">
                   <h3 className="text-lg font-medium text-foreground mb-1">3. Offer & Negotiation</h3>
@@ -138,7 +138,7 @@ const BuyHomesAustin = () => {
                 Property taxes in Texas are higher than many states (approximately 1.8–2.2% of assessed value in the Austin area), but are offset by the absence of state income tax. File a homestead exemption immediately after purchasing your primary residence to cap annual assessment increases at 10%.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Many of Austin's finest properties — particularly in the <Link to="/luxury-real-estate-austin" className="text-foreground underline hover:text-muted-foreground">luxury segment</Link> — trade off-market. Working with an agent who has deep network connections provides access to inventory that most buyers never see.
+                Many of Austin's finest properties — particularly in the <Link to="/luxury-real-estate-austin" className="text-foreground underline hover:text-gold transition-colors">luxury segment</Link> — trade off-market. Working with an agent who has deep network connections provides access to inventory that most buyers never see.
               </p>
             </section>
 

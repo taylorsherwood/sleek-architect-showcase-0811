@@ -118,7 +118,7 @@ const FloatingContact = () => {
             <div className="w-[120px] h-[120px] rounded-full overflow-hidden shadow-[0_8px_30px_-6px_hsl(var(--primary)/0.3)] ring-1 ring-[hsl(var(--gold)/0.3)] border-[3.5px] border-background">
               <img
                 src={HEADSHOT}
-                alt="Taylor Sherwood"
+                alt="Taylor Sherwood, founder of Echelon Property Group"
                 title="Taylor Sherwood — Echelon Property Group"
                 className="w-full h-full object-cover object-[50%_20%] scale-[1.03]" />
             </div>

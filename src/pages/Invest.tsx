@@ -351,7 +351,7 @@ const Invest = () => {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 pb-16">
         <img
           src={heroImg}
-          alt="Austin investment property — Echelon Property Group"
+          alt="Austin real estate investment property with Hill Country views"
           className="absolute inset-0 w-full h-full object-cover"
           loading="eager"
         />

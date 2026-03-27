@@ -28,7 +28,7 @@ const NewsletterSection = lazy(async () => {
       <section className="pt-16 pb-0 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-6xl font-light text-architectural mb-6 md:mb-8">
+            <h3 className="text-3xl md:text-6xl font-light text-architectural mb-6 md:mb-8">
               Stay Informed
             </h2>
             <p className="text-base md:text-xl text-muted-foreground mb-8 md:mb-12">

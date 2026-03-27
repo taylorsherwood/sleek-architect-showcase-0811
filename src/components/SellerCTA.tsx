@@ -8,9 +8,9 @@ const SellerCTA = () => {
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
               <p className="text-minimal text-gold mb-4 font-extrabold">FOR HOMEOWNERS</p>
-              <h2 className="text-3xl md:text-5xl font-display font-light text-architectural mb-6">Curious What Your Austin Property Is Worth?
+              <h3 className="text-3xl md:text-5xl font-display font-light text-architectural mb-6">Curious What Your Austin Property Is Worth?
 
-              </h2>
+              </h3>
               <p className="text-muted-foreground leading-relaxed mb-8">Receive a confidential property valuation and expert market insights for your property from a local Austin real estate advisor.
 
 

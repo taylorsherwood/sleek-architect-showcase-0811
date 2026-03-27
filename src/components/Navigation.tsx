@@ -159,7 +159,7 @@ const Navigation = () => {
           <a
             href="https://echelonpropertygroup.outportal.ai"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener noreferrer nofollow"
             className="whitespace-nowrap text-[0.65rem] tracking-[0.18em] uppercase font-medium border border-border/60 text-muted-foreground hover:bg-primary hover:text-white px-5 py-2.5 min-h-[38px] inline-flex items-center transition-all duration-400"
           >
             CLIENT PORTAL
@@ -167,7 +167,7 @@ const Navigation = () => {
           <a
             href="https://taylorsherwood.realscout.com/"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener noreferrer nofollow"
             className="whitespace-nowrap text-[0.65rem] tracking-[0.18em] uppercase font-medium text-primary-foreground bg-primary hover:bg-gold hover:text-primary-foreground px-6 py-2.5 min-h-[38px] inline-flex items-center transition-all duration-400"
           >
             SEARCH HOMES
@@ -245,7 +245,7 @@ const Navigation = () => {
               <a
                 href="https://taylorsherwood.realscout.com/"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer nofollow"
                 className="block text-minimal tracking-[0.2em] text-primary-foreground bg-primary px-4 py-3.5 text-center transition-colors duration-300"
               >
                 SEARCH HOMES
@@ -253,7 +253,7 @@ const Navigation = () => {
               <a
                 href="https://echelonpropertygroup.outportal.ai"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer nofollow"
                 className="block text-minimal tracking-[0.2em] border border-border/50 text-muted-foreground hover:bg-primary hover:text-white px-4 py-3.5 text-center transition-colors duration-300"
               >
                 CLIENT PORTAL

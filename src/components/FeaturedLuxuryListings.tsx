@@ -135,7 +135,7 @@ const ListingCardOverlay = ({
 
   if (isExternal) {
     return (
-      <a href={listing.link} target="_blank" rel="noopener noreferrer" className="group block">
+      <a href={listing.link} target="_blank" rel="noopener noreferrer nofollow" className="group block">
         {inner}
       </a>
     );

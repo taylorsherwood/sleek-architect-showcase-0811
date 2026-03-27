@@ -357,7 +357,7 @@ const AustinMultifamilyReport2026 = () => {
                 <a
                   href={REPORT_URL}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer nofollow"
                   className="inline-block bg-[hsl(var(--gold))] text-primary-foreground hover:bg-white hover:text-[#0C0F24] px-10 py-4 text-sm tracking-widest uppercase font-medium transition-all duration-200"
                 >
                   Download the Report

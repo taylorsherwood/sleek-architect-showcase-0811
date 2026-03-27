@@ -194,7 +194,7 @@ const Blog = () => {
             <a
               href="https://taylorsherwood.myflodesk.com/biolink"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer nofollow"
               className="inline-block px-8 py-4 bg-[#0C0F24] text-background hover:bg-[#0C0F24]/90 transition-colors duration-300"
             >
               SUBSCRIBE

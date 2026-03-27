@@ -31,7 +31,7 @@ const NewsletterSection = lazy(async () => {
             <a
               href="https://taylorsherwood.myflodesk.com/biolink"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer nofollow"
               className="inline-block px-8 py-3 text-sm bg-[#0C0F24] text-background hover:bg-gold hover:text-primary-foreground transition-colors duration-300"
             >
               BECOME AN ECHELON INSIDER
@@ -76,6 +76,8 @@ const NoscriptFallback = () => (
           <li><a href="/communities/dripping-springs">Dripping Springs</a></li>
           <li><a href="/communities/spanish-oaks">Spanish Oaks</a></li>
         </ul>
+        <h3 className="text-2xl font-light mb-4">Off-Market & Private Listings</h3>
+        <p className="mb-4">Many of Austin's most desirable homes never hit the public market. Echelon Property Group provides qualified buyers with <a href="/off-market-real-estate-austin">private access to off-market homes</a>, investment properties, and land opportunities across Austin's most exclusive neighborhoods.</p>
         <h3 className="text-2xl font-light mb-4">About Taylor Sherwood</h3>
         <p className="mb-4">Taylor Sherwood is a Certified Luxury Home Marketing Specialist (CLHMS) and Austin-based real estate advisor. He founded Echelon Property Group to bring a strategic, investment-focused approach to Austin real estate.</p>
         <p className="mb-4">With over $100M in career sales volume and deep expertise across Austin's most sought-after neighborhoods, Taylor helps clients buy, sell, and invest with confidence.</p>

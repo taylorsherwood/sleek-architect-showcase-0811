@@ -139,7 +139,7 @@ const CommercialInvestment = () => {
                     MULTIFAMILY
                   </span>
                 </div>
-                <div className="p-6 flex flex-col flex-grow">
+                <div className="p-5 flex flex-col flex-grow">
                   <div className="flex items-center justify-between mb-2">
                     <h3 className="text-lg font-display font-light text-foreground">
                       4314 Gillis Street
@@ -185,7 +185,7 @@ const CommercialInvestment = () => {
                     DEVELOPMENT LAND
                   </span>
                 </div>
-                <div className="p-6 flex flex-col flex-grow">
+                <div className="p-5 flex flex-col flex-grow">
                   <div className="flex items-center justify-between mb-2">
                     <h3 className="text-lg font-display font-light text-foreground">
                       10811 San Jose Ave
@@ -231,7 +231,7 @@ const CommercialInvestment = () => {
                     MULTIFAMILY
                   </span>
                 </div>
-                <div className="p-6 flex flex-col flex-grow">
+                <div className="p-5 flex flex-col flex-grow">
                   <div className="flex items-center justify-between mb-2">
                     <h3 className="text-lg font-display font-light text-foreground">
                       717 S. 11th St.
@@ -277,7 +277,7 @@ const CommercialInvestment = () => {
                     RENTAL PORTFOLIO
                   </span>
                 </div>
-                <div className="p-6 flex flex-col flex-grow">
+                <div className="p-5 flex flex-col flex-grow">
                   <div className="flex items-center justify-between mb-2">
                     <h3 className="text-lg font-display font-light text-foreground">
                       Small Killeen Rental Portfolio
@@ -323,7 +323,7 @@ const CommercialInvestment = () => {
                     RENTAL PORTFOLIO
                   </span>
                 </div>
-                <div className="p-6 flex flex-col flex-grow">
+                <div className="p-5 flex flex-col flex-grow">
                   <div className="flex items-center justify-between mb-2">
                     <h3 className="text-lg font-display font-light text-foreground">
                       709/711/713 Bremser Ave

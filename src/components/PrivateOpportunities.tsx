@@ -174,7 +174,7 @@ const PrivateOpportunities = ({ variant = "light" }: PrivateOpportunitiesProps) 
               className={`rounded-lg p-6 md:p-8 ${
                 isDark
                   ? "bg-white/5 border border-white/10"
-                  : "bg-background border border-border shadow-[var(--shadow-elegant)]"
+                  : "bg-card border border-border/50 shadow-[0_4px_24px_-4px_hsl(220_20%_10%/0.06)]"
               }`}
             >
               <form onSubmit={handleSubmit} className="space-y-4">

@@ -296,7 +296,7 @@ const OffMarketRealEstateAustin = () => {
               { step: "03", title: "Early & Exclusive Access", body: "You see opportunities before they hit the public market — with expert advisory and deal structuring support." },
             ].map((item) => (
               <div key={item.step} className="text-center md:text-left">
-                <span className="text-[hsl(var(--gold))]/70 font-display text-4xl font-light">{item.step}</span>
+                <span className="text-[hsl(var(--gold))] font-display text-4xl font-light">{item.step}</span>
                 <h3 className="text-white font-medium text-base mt-3 mb-2">{item.title}</h3>
                 <p className="text-white/45 text-sm leading-relaxed">{item.body}</p>
               </div>

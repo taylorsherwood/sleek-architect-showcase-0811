@@ -92,12 +92,11 @@ const Testimonials = () => {
               <div
                 key={i}
                 ref={(el) => { cardsRef.current[i] = el; }}
-                className={`group relative rounded-xl p-7 md:p-8 flex flex-col justify-between hover:-translate-y-1 overflow-hidden border border-border/30${i === testimonials.length - 1 ? " md:col-span-2 md:max-w-[calc(50%-1rem)] md:mx-auto" : ""}`}
+                className={`group relative bg-card rounded-xl p-7 md:p-8 flex flex-col justify-between hover:-translate-y-1 overflow-hidden border border-border/30${i === testimonials.length - 1 ? " md:col-span-2 md:max-w-[calc(50%-1rem)] md:mx-auto" : ""}`}
                 style={{
                   opacity: 0,
                   transform: "translateY(40px)",
                   transition: `opacity 500ms ease ${i * 120}ms, transform 500ms ease ${i * 120}ms, box-shadow 500ms ease`,
-                  backgroundColor: "hsl(40 20% 98.5%)",
                   boxShadow:
                     "0 2px 20px hsl(40 10% 50% / 0.06), 0 6px 28px hsl(40 10% 50% / 0.04)",
                 }}

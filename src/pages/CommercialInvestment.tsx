@@ -126,7 +126,7 @@ const CommercialInvestment = () => {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {/* Gillis Street */}
-              <div className="border border-border/60 overflow-hidden group bg-card hover:border-gold transition-colors duration-500 flex flex-col">
+              <div className="border border-border/60 overflow-hidden group bg-card hover:border-gold hover:border-2 transition-colors duration-500 flex flex-col">
                 <div className="relative overflow-hidden">
                   <img
                     src={gillisStreet}
@@ -170,7 +170,7 @@ const CommercialInvestment = () => {
               </div>
 
               {/* San Jose Ave */}
-              <div className="border border-border/60 overflow-hidden group bg-card hover:border-gold transition-colors duration-500 flex flex-col">
+              <div className="border border-border/60 overflow-hidden group bg-card hover:border-gold hover:border-2 transition-colors duration-500 flex flex-col">
                 <div className="relative overflow-hidden">
                   <img
                     src={sanJoseAve}
@@ -214,7 +214,7 @@ const CommercialInvestment = () => {
               </div>
 
               {/* 717 S. 11th St */}
-              <div className="border border-border/60 overflow-hidden group bg-card hover:border-gold transition-colors duration-500 flex flex-col">
+              <div className="border border-border/60 overflow-hidden group bg-card hover:border-gold hover:border-2 transition-colors duration-500 flex flex-col">
                 <div className="relative overflow-hidden">
                   <img
                     src={s11thStreet}
@@ -258,7 +258,7 @@ const CommercialInvestment = () => {
               </div>
 
               {/* Small Killeen Rental Portfolio */}
-              <div className="border border-border/60 overflow-hidden group bg-card hover:border-gold transition-colors duration-500 flex flex-col">
+              <div className="border border-border/60 overflow-hidden group bg-card hover:border-gold hover:border-2 transition-colors duration-500 flex flex-col">
                 <div className="relative overflow-hidden">
                   <img
                     src={killeenPortfolio}
@@ -302,7 +302,7 @@ const CommercialInvestment = () => {
               </div>
 
               {/* 709/711/713 Bremser Ave */}
-              <div className="border border-border/60 overflow-hidden group bg-card hover:border-gold transition-colors duration-500 flex flex-col">
+              <div className="border border-border/60 overflow-hidden group bg-card hover:border-gold hover:border-2 transition-colors duration-500 flex flex-col">
                 <div className="relative overflow-hidden">
                   <img
                     src={bremserAve}

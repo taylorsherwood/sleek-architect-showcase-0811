@@ -185,14 +185,14 @@ const OffMarketRealEstateAustin = () => {
       <SchemaMarkup schema={createFAQSchema(faqs)} />
 
       {/* ── Minimal header ──────────────────────────── */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-[hsl(220,15%,8%)]/90 backdrop-blur-sm border-b border-white/5">
-        <div className="container mx-auto px-6 h-14 flex items-center justify-between">
-          <Link to="/" className="text-white/70 hover:text-gold transition-colors text-sm tracking-[0.2em] uppercase font-sans">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-[hsl(220,15%,8%)]/60 backdrop-blur-[6px] border-b border-white/[0.03]">
+        <div className="container mx-auto px-6 h-11 flex items-center justify-between">
+          <Link to="/" className="text-white/[0.85] hover:text-gold transition-colors tracking-[0.18em] uppercase font-sans" style={{ fontSize: "0.7rem" }}>
             Echelon Property Group
           </Link>
           <button
             onClick={scrollToForm}
-            className="text-[hsl(var(--gold))] hover:text-white transition-colors text-xs tracking-[0.15em] uppercase font-sans"
+            className="text-[hsl(var(--gold))]/80 hover:text-white transition-colors tracking-[0.12em] uppercase font-sans" style={{ fontSize: "0.65rem" }}
           >
             Request Access
           </button>

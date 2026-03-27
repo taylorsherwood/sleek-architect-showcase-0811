@@ -38,13 +38,16 @@ const Footer = () => {
               <h4 className="text-minimal text-primary-foreground/50 mb-4 mt-6">GUIDES</h4>
               <div className="space-y-2">
                 <Link to="/moving-to-austin" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Moving to Austin</Link>
-                <Link to="/best-luxury-neighborhoods-austin" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Best Neighborhoods</Link>
+                <Link to="/best-neighborhoods-in-austin-texas" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Best Neighborhoods</Link>
+                <Link to="/best-luxury-neighborhoods-austin" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Luxury Neighborhoods</Link>
                 <Link to="/austin-luxury-market-report" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Market Report</Link>
                 <Link to="/off-market-real-estate-austin" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Off-Market Homes</Link>
                 <Link to="/austin-multifamily-report-2026" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Multifamily Report</Link>
                 <Link to="/austin-land-development-opportunities" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Land Development</Link>
                 <Link to="/home-value-austin" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Free Home Valuation</Link>
                 <Link to="/austin-luxury-homes-for-sale" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Austin Luxury Homes</Link>
+                <Link to="/private-opportunities" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Private Opportunities</Link>
+                <Link to="/why-billionaires-are-moving-to-austin" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Billionaire Migration</Link>
               </div>
             </div>
 

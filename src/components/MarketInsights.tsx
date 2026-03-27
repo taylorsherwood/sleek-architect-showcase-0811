@@ -21,10 +21,10 @@ const featuredArticles = [
     category: "Relocation",
   },
   {
-    to: "/blog/top-investment-neighborhoods-austin",
-    title: "Top Investment Neighborhoods in Austin",
-    excerpt: "Where value-add buyers and long-term investors are finding the strongest returns.",
-    category: "Investment",
+    to: "/best-neighborhoods-in-austin-texas",
+    title: "Best Neighborhoods in Austin Texas",
+    excerpt: "A comprehensive guide to Austin's top neighborhoods for families, professionals, and investors in 2026.",
+    category: "Neighborhoods",
   },
   {
     to: "/off-market-real-estate-austin",

@@ -187,7 +187,7 @@ const OffMarketRealEstateAustin = () => {
       {/* ── Minimal header ──────────────────────────── */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-[hsl(220,15%,8%)]/90 backdrop-blur-sm border-b border-white/5">
         <div className="container mx-auto px-6 h-14 flex items-center justify-between">
-          <Link to="/" className="text-white/70 hover:text-white transition-colors text-sm tracking-[0.2em] uppercase font-sans">
+          <Link to="/" className="text-white/70 hover:text-gold transition-colors text-sm tracking-[0.2em] uppercase font-sans">
             Echelon Property Group
           </Link>
           <button

@@ -394,7 +394,7 @@ const OffMarketRealEstateAustin = () => {
                 <p className="text-white/45 text-sm leading-relaxed mb-4">{item.desc}</p>
                 <div className="flex flex-wrap gap-x-4 gap-y-1">
                   {item.links.map((link) => (
-                    <Link key={link.to} to={link.to} className="text-[hsl(var(--gold))]/70 hover:text-[hsl(var(--gold))] transition-colors text-xs tracking-[0.1em] uppercase">
+                    <Link key={link.to} to={link.to} className="text-[hsl(var(--gold))] hover:text-white transition-colors text-xs tracking-[0.1em] uppercase">
                       {link.text} →
                     </Link>
                   ))}

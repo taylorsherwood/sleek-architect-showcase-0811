@@ -21,8 +21,8 @@ const labelStyle = {
 };
 
 const ctaStyle = {
-  fontSize: "0.6rem" as const,
-  letterSpacing: "0.15em",
+  fontSize: "0.55rem" as const,
+  letterSpacing: "0.12em",
   textTransform: "uppercase" as const,
   fontFamily: '"Raleway", sans-serif',
 };
@@ -112,7 +112,7 @@ const CommercialInvestment = () => {
       {/* ── Current Commercial Listings ── */}
       <section className="py-16 md:py-24 bg-background border-t border-border">
         <div className="container mx-auto px-6">
-          <div className="max-w-7xl mx-auto">
+          <div className="max-w-5xl mx-auto">
             <div className="mb-16">
               <p className="text-gold text-center mb-4 font-bold" style={labelStyle}>CURRENT INVENTORY</p>
               <h2 className="font-display text-2xl md:text-3xl font-light text-foreground text-center mb-4">
@@ -123,9 +123,9 @@ const CommercialInvestment = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
               {/* Gillis Street */}
-              <div className="border-2 border-border overflow-hidden group bg-card hover:border-gold transition-colors duration-500 flex flex-col">
+              <div className="border border-border/60 overflow-hidden group bg-card hover:border-gold transition-colors duration-500 flex flex-col">
                 <div className="relative overflow-hidden">
                   <img
                     src={gillisStreet}
@@ -139,12 +139,12 @@ const CommercialInvestment = () => {
                     MULTIFAMILY
                   </span>
                 </div>
-                <div className="p-6 flex flex-col flex-grow">
+                <div className="p-5 flex flex-col flex-grow">
                   <div className="flex items-center justify-between mb-2">
-                    <h3 className="text-xl font-display font-light text-foreground">
+                    <h3 className="text-lg font-display font-light text-foreground">
                       4314 Gillis Street
                     </h3>
-                    <span className="text-2xl font-display font-light text-foreground">$2,500,000</span>
+                    <span className="text-lg font-display font-light text-foreground">$2,500,000</span>
                   </div>
                   <p className="text-muted-foreground mb-2">Austin, TX 78745</p>
                   <div className="grid grid-cols-2 gap-3 mb-4">
@@ -162,7 +162,7 @@ const CommercialInvestment = () => {
                   </p>
                   <Link
                     to="/contact"
-                    className="inline-block bg-transparent text-foreground/80 border border-border/40 hover:border-gold hover:text-gold px-6 py-2 transition-all duration-500 ease-out"
+                    className="inline-block text-foreground/70 border-b border-border/30 hover:border-gold hover:text-gold pb-1 transition-all duration-500 ease-out"
                     style={ctaStyle}
                   >
                     REQUEST INFORMATION
@@ -171,7 +171,7 @@ const CommercialInvestment = () => {
               </div>
 
               {/* San Jose Ave */}
-              <div className="border-2 border-border overflow-hidden group bg-card hover:border-gold transition-colors duration-500 flex flex-col">
+              <div className="border border-border/60 overflow-hidden group bg-card hover:border-gold transition-colors duration-500 flex flex-col">
                 <div className="relative overflow-hidden">
                   <img
                     src={sanJoseAve}
@@ -185,12 +185,12 @@ const CommercialInvestment = () => {
                     DEVELOPMENT LAND
                   </span>
                 </div>
-                <div className="p-6 flex flex-col flex-grow">
+                <div className="p-5 flex flex-col flex-grow">
                   <div className="flex items-center justify-between mb-2">
-                    <h3 className="text-xl font-display font-light text-foreground">
+                    <h3 className="text-lg font-display font-light text-foreground">
                       10811 San Jose Ave
                     </h3>
-                    <span className="text-2xl font-display font-light text-foreground">$1,600,000</span>
+                    <span className="text-lg font-display font-light text-foreground">$1,600,000</span>
                   </div>
                   <p className="text-muted-foreground mb-2">Del Valle, TX</p>
                   <div className="grid grid-cols-2 gap-3 mb-4">
@@ -208,7 +208,7 @@ const CommercialInvestment = () => {
                   </p>
                   <Link
                     to="/contact"
-                    className="inline-block bg-transparent text-foreground/80 border border-border/40 hover:border-gold hover:text-gold px-6 py-2 transition-all duration-500 ease-out"
+                    className="inline-block text-foreground/70 border-b border-border/30 hover:border-gold hover:text-gold pb-1 transition-all duration-500 ease-out"
                     style={ctaStyle}
                   >
                     REQUEST INFORMATION
@@ -217,7 +217,7 @@ const CommercialInvestment = () => {
               </div>
 
               {/* 717 S. 11th St */}
-              <div className="border-2 border-border overflow-hidden group bg-card hover:border-gold transition-colors duration-500 flex flex-col">
+              <div className="border border-border/60 overflow-hidden group bg-card hover:border-gold transition-colors duration-500 flex flex-col">
                 <div className="relative overflow-hidden">
                   <img
                     src={s11thStreet}
@@ -231,12 +231,12 @@ const CommercialInvestment = () => {
                     MULTIFAMILY
                   </span>
                 </div>
-                <div className="p-6 flex flex-col flex-grow">
+                <div className="p-5 flex flex-col flex-grow">
                   <div className="flex items-center justify-between mb-2">
-                    <h3 className="text-xl font-display font-light text-foreground">
+                    <h3 className="text-lg font-display font-light text-foreground">
                       717 S. 11th St.
                     </h3>
-                    <span className="text-2xl font-display font-light text-foreground">Price Upon Request</span>
+                    <span className="text-lg font-display font-light text-foreground">Price Upon Request</span>
                   </div>
                   <p className="text-muted-foreground mb-2">Temple, TX</p>
                   <div className="grid grid-cols-2 gap-3 mb-4">
@@ -254,7 +254,7 @@ const CommercialInvestment = () => {
                   </p>
                   <Link
                     to="/contact"
-                    className="inline-block bg-transparent text-foreground/80 border border-border/40 hover:border-gold hover:text-gold px-6 py-2 transition-all duration-500 ease-out"
+                    className="inline-block text-foreground/70 border-b border-border/30 hover:border-gold hover:text-gold pb-1 transition-all duration-500 ease-out"
                     style={ctaStyle}
                   >
                     REQUEST INFORMATION
@@ -263,7 +263,7 @@ const CommercialInvestment = () => {
               </div>
 
               {/* Small Killeen Rental Portfolio */}
-              <div className="border-2 border-border overflow-hidden group bg-card hover:border-gold transition-colors duration-500 flex flex-col">
+              <div className="border border-border/60 overflow-hidden group bg-card hover:border-gold transition-colors duration-500 flex flex-col">
                 <div className="relative overflow-hidden">
                   <img
                     src={killeenPortfolio}
@@ -277,12 +277,12 @@ const CommercialInvestment = () => {
                     RENTAL PORTFOLIO
                   </span>
                 </div>
-                <div className="p-6 flex flex-col flex-grow">
+                <div className="p-5 flex flex-col flex-grow">
                   <div className="flex items-center justify-between mb-2">
-                    <h3 className="text-xl font-display font-light text-foreground">
+                    <h3 className="text-lg font-display font-light text-foreground">
                       Small Killeen Rental Portfolio
                     </h3>
-                    <span className="text-2xl font-display font-light text-foreground">$550,000</span>
+                    <span className="text-lg font-display font-light text-foreground">$550,000</span>
                   </div>
                   <p className="text-muted-foreground mb-2">Killeen, TX</p>
                   <div className="grid grid-cols-2 gap-3 mb-4">
@@ -300,7 +300,7 @@ const CommercialInvestment = () => {
                   </p>
                   <Link
                     to="/contact"
-                    className="inline-block bg-transparent text-foreground/80 border border-border/40 hover:border-gold hover:text-gold px-6 py-2 transition-all duration-500 ease-out"
+                    className="inline-block text-foreground/70 border-b border-border/30 hover:border-gold hover:text-gold pb-1 transition-all duration-500 ease-out"
                     style={ctaStyle}
                   >
                     REQUEST INFORMATION
@@ -309,7 +309,7 @@ const CommercialInvestment = () => {
               </div>
 
               {/* 709/711/713 Bremser Ave */}
-              <div className="border-2 border-border overflow-hidden group bg-card hover:border-gold transition-colors duration-500 flex flex-col">
+              <div className="border border-border/60 overflow-hidden group bg-card hover:border-gold transition-colors duration-500 flex flex-col">
                 <div className="relative overflow-hidden">
                   <img
                     src={bremserAve}
@@ -323,12 +323,12 @@ const CommercialInvestment = () => {
                     RENTAL PORTFOLIO
                   </span>
                 </div>
-                <div className="p-6 flex flex-col flex-grow">
+                <div className="p-5 flex flex-col flex-grow">
                   <div className="flex items-center justify-between mb-2">
-                    <h3 className="text-xl font-display font-light text-foreground">
+                    <h3 className="text-lg font-display font-light text-foreground">
                       709/711/713 Bremser Ave
                     </h3>
-                    <span className="text-2xl font-display font-light text-foreground">$240,000</span>
+                    <span className="text-lg font-display font-light text-foreground">$240,000</span>
                   </div>
                   <p className="text-muted-foreground mb-2">Killeen, TX</p>
                   <div className="grid grid-cols-2 gap-3 mb-4">
@@ -346,7 +346,7 @@ const CommercialInvestment = () => {
                   </p>
                   <Link
                     to="/contact"
-                    className="inline-block bg-transparent text-foreground/80 border border-border/40 hover:border-gold hover:text-gold px-6 py-2 transition-all duration-500 ease-out"
+                    className="inline-block text-foreground/70 border-b border-border/30 hover:border-gold hover:text-gold pb-1 transition-all duration-500 ease-out"
                     style={ctaStyle}
                   >
                     REQUEST INFORMATION
@@ -419,7 +419,7 @@ const CommercialInvestment = () => {
                 >
                   <div className="flex items-center justify-between mb-6">
                     <span className="bg-muted px-3 py-1 text-muted-foreground" style={labelStyle}>{listing.type}</span>
-                    <span className="text-2xl font-display font-light text-foreground">{listing.price}</span>
+                    <span className="text-lg font-display font-light text-foreground">{listing.price}</span>
                   </div>
                   <h3 className="text-xl font-display font-light text-foreground mb-2">
                     {listing.name}

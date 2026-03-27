@@ -359,7 +359,7 @@ const Buy = () => {
                     <CheckCircle className="w-5 h-5 text-gold mt-1 shrink-0" />
                     <h3 className="text-xl font-display font-medium group-hover:text-muted-foreground transition-colors duration-300">
                       {item.title === "Off-Market Access" ? (
-                        <Link to="/off-market-luxury-homes-austin" className="hover:underline">
+                        <Link to="/off-market-real-estate-austin" className="hover:underline">
                           {item.title}
                         </Link>
                       ) : (
@@ -482,7 +482,7 @@ const Buy = () => {
             </div>
             <div className="mt-12 text-center">
               <Link
-                to="/off-market-luxury-homes-austin"
+                to="/off-market-real-estate-austin"
                 className="inline-block text-sm text-muted-foreground hover:text-foreground transition-colors duration-300">
                 
                 Looking for private market opportunities?{" "}

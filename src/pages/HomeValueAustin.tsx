@@ -373,7 +373,7 @@ const HomeValueAustin = () => {
                 <Link to="/austin-luxury-homes-for-sale" className="text-foreground underline hover:text-muted-foreground">Austin luxury real estate</Link>. 
                 Our team provides sellers with data-driven pricing, professional staging and photography, 
                 targeted buyer outreach, and access to{" "}
-                <Link to="/off-market-luxury-homes-austin" className="text-foreground underline hover:text-muted-foreground">off-market and private sale channels</Link>{" "}
+                <Link to="/off-market-real-estate-austin" className="text-foreground underline hover:text-muted-foreground">off-market and private sale channels</Link>{" "}
                 that protect your privacy while maximizing exposure to the right audience.
               </p>
               <div className="space-y-4">

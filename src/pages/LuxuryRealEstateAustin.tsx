@@ -156,7 +156,7 @@ const LuxuryRealEstateAustin = () => {
                 Why Work with Echelon Property Group
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Navigating Austin's luxury market requires more than access to listings. It demands hyper-local expertise, established relationships, strategic negotiation skills, and access to <Link to="/off-market-luxury-homes-austin" className="text-foreground underline hover:text-muted-foreground">off-market inventory</Link> that never appears on public platforms.
+                Navigating Austin's luxury market requires more than access to listings. It demands hyper-local expertise, established relationships, strategic negotiation skills, and access to <Link to="/off-market-real-estate-austin" className="text-foreground underline hover:text-muted-foreground">off-market inventory</Link> that never appears on public platforms.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 Taylor Sherwood and Echelon Property Group specialize exclusively in Austin's luxury, land, commercial, and investment real estate segments. Whether you're <Link to="/buy-homes-austin" className="text-foreground underline hover:text-muted-foreground">buying a home</Link>, <Link to="/sell-home-austin" className="text-foreground underline hover:text-muted-foreground">selling a property</Link>, or evaluating <Link to="/austin-real-estate-investment" className="text-foreground underline hover:text-muted-foreground">investment opportunities</Link>, we provide the market intelligence and experienced representation that results demand.
@@ -174,7 +174,7 @@ const LuxuryRealEstateAustin = () => {
                 <Link to="/austin-real-estate-investment" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ INVESTMENT PROPERTY</Link>
                 <Link to="/land-for-sale-austin" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ LAND FOR SALE</Link>
                 <Link to="/communities" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ ALL COMMUNITIES</Link>
-                <Link to="/off-market-luxury-homes-austin" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ OFF-MARKET HOMES</Link>
+                <Link to="/off-market-real-estate-austin" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">→ OFF-MARKET HOMES</Link>
               </div>
             </section>
 

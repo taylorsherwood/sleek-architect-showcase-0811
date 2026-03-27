@@ -27,7 +27,7 @@ const staticRoutes = [
   "/best-luxury-neighborhoods-austin",
   "/best-neighborhoods-in-austin-texas",
   "/austin-luxury-market-report",
-  "/off-market-luxury-homes-austin",
+  "/off-market-luxury-homes-austin", // redirects to /off-market-real-estate-austin
   "/austin-luxury-homes-for-sale",
   "/austin-commercial-real-estate",
   "/home-value-austin",

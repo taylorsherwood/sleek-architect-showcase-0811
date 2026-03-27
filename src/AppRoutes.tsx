@@ -20,7 +20,7 @@ const Contact = lazy(() => import("@/pages/Contact"));
 const MovingToAustin = lazy(() => import("@/pages/MovingToAustin"));
 const BestLuxuryNeighborhoods = lazy(() => import("@/pages/BestLuxuryNeighborhoods"));
 const MarketReport = lazy(() => import("@/pages/MarketReport"));
-const OffMarketHomes = lazy(() => import("@/pages/OffMarketHomes"));
+
 const AustinLuxuryHomes = lazy(() => import("@/pages/AustinLuxuryHomes"));
 const AustinCommercialRealEstate = lazy(() => import("@/pages/AustinCommercialRealEstate"));
 const HomeValueAustin = lazy(() => import("@/pages/HomeValueAustin"));
@@ -77,7 +77,7 @@ const AppRoutes = () => {
           <Route path="/moving-to-austin" element={<MovingToAustin />} />
           <Route path="/best-luxury-neighborhoods-austin" element={<BestLuxuryNeighborhoods />} />
           <Route path="/austin-luxury-market-report" element={<MarketReport />} />
-          <Route path="/off-market-luxury-homes-austin" element={<OffMarketHomes />} />
+          <Route path="/off-market-luxury-homes-austin" element={<Navigate to="/off-market-real-estate-austin" replace />} />
           <Route path="/austin-luxury-homes-for-sale" element={<AustinLuxuryHomes />} />
           <Route path="/austin-commercial-real-estate" element={<AustinCommercialRealEstate />} />
           <Route path="/home-value-austin" element={<HomeValueAustin />} />

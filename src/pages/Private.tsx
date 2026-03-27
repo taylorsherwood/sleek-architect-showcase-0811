@@ -67,7 +67,7 @@ const segments = [
     description:
       "Private listings, exclusive inventory, and discreet acquisition opportunities across Austin's top luxury neighborhoods.",
     cta: "Explore Luxury Opportunities",
-    to: "/off-market-luxury-homes-austin",
+    to: "/off-market-real-estate-austin",
     image: communityLakeAustin,
     alt: "Lake Austin luxury waterfront homes — off-market real estate",
   },

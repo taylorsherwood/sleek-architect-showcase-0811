@@ -29,7 +29,7 @@ const staticRoutes = [
   "/moving-to-austin",
   "/best-luxury-neighborhoods-austin",
   "/austin-luxury-market-report",
-  "/off-market-luxury-homes-austin",
+  "/off-market-real-estate-austin",
   "/austin-luxury-homes-for-sale",
   "/austin-commercial-real-estate",
   "/home-value-austin",

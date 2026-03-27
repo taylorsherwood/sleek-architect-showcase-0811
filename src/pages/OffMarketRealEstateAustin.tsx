@@ -1,12 +1,22 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
-import SchemaMarkup, { createBreadcrumbSchema } from "@/components/SchemaMarkup";
+import SchemaMarkup, { createBreadcrumbSchema, createFAQSchema } from "@/components/SchemaMarkup";
 import heroImage from "@/assets/hero-luxury-austin.jpg";
 import echelonLogo from "@/assets/echelon-logo-gold.png";
 import { formatPhoneNumber, getTimestamp } from "@/lib/formUtils";
 
 const SITE = "https://www.echelonpropertygroup.com";
+
+const faqs = [
+  { question: "What is an off-market home in Austin?", answer: "An off-market home is a property that is available for sale but not listed on the MLS or public real estate websites. These properties are marketed privately through agent networks, direct outreach, and exclusive buyer lists. In Austin's luxury market, off-market transactions are common, particularly for high-value estates in neighborhoods like Westlake Hills, Barton Creek, and Lake Austin." },
+  { question: "Why do sellers choose to sell off-market in Austin?", answer: "Sellers choose off-market transactions for privacy, discretion, and control. High-profile homeowners may prefer to avoid public attention. Others want to test pricing without accumulating days on market. Off-market sales also avoid the disruption of public open houses and extensive photography of private spaces." },
+  { question: "How do I find off-market luxury homes in Austin?", answer: "Access to off-market listings requires working with an agent who maintains deep relationships within Austin's luxury real estate community. Echelon Property Group specializes in off-market transactions and maintains a network of property owners, developers, and fellow agents who share exclusive opportunities before they reach the public market." },
+  { question: "Are off-market homes more expensive than listed homes?", answer: "Not necessarily. Off-market homes can sometimes be acquired at favorable prices because there is less competition from other buyers. Without public marketing generating multiple offers, negotiations may be more straightforward. However, pricing depends on the specific property, seller motivation, and market conditions." },
+  { question: "What neighborhoods have the most off-market activity in Austin?", answer: "The highest concentration of off-market transactions occurs in Austin's most exclusive neighborhoods: Lake Austin waterfront, Westlake Hills, Barton Creek, Tarrytown, and Rollingwood. These communities have high-net-worth homeowners who value privacy, and the limited inventory creates an environment where many transactions occur through private channels." },
+  { question: "Can I sell my Austin luxury home off-market?", answer: "Yes. Echelon Property Group offers a discreet, off-market selling program for luxury homeowners who prefer privacy. We market your property exclusively to qualified buyers through our private network, ensuring confidentiality while achieving optimal pricing. Contact us for a confidential consultation about selling your home off-market." },
+  { question: "What price range qualifies for off-market listings in Austin?", answer: "While off-market transactions occur at all price points, they are most common in Austin's luxury segment—generally properties priced above $2 million. The highest concentration of off-market activity is in the $3 million to $25 million range, where privacy concerns make private transactions the preferred approach." },
+];
 
 const labelStyle = {
   fontSize: "0.6rem" as const,
@@ -172,6 +182,7 @@ const OffMarketRealEstateAustin = () => {
           { name: "Off-Market Homes Austin", url: `${SITE}/off-market-real-estate-austin` },
         ])}
       />
+      <SchemaMarkup schema={createFAQSchema(faqs)} />
 
       {/* ── Minimal header ──────────────────────────── */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-[hsl(220,15%,8%)]/90 backdrop-blur-sm border-b border-white/5">
@@ -384,7 +395,7 @@ const OffMarketRealEstateAustin = () => {
                 title: "Pre-Market Listings",
                 desc: "Properties preparing for market that you can access and negotiate on before public exposure drives up competition.",
                 links: [
-                  { to: "/off-market-luxury-homes-austin", text: "Off-market luxury homes" },
+                  { to: "/off-market-real-estate-austin", text: "Off-market luxury homes" },
                   { to: "/luxury-homes-austin", text: "Luxury homes Austin" },
                 ],
               },
@@ -436,6 +447,28 @@ const OffMarketRealEstateAustin = () => {
             <Link to="/communities" className="text-white/30 hover:text-white/60 transition-colors text-xs tracking-[0.1em] uppercase underline underline-offset-4">Austin communities</Link>
             <Link to="/listings" className="text-white/30 hover:text-white/60 transition-colors text-xs tracking-[0.1em] uppercase underline underline-offset-4">Active listings</Link>
             <Link to="/buy" className="text-white/30 hover:text-white/60 transition-colors text-xs tracking-[0.1em] uppercase underline underline-offset-4">Buyer services</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+          FAQ — Merged from /off-market-real-estate-austin
+      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
+      <section className="py-16 md:py-24 bg-[hsl(220,15%,8%)] border-t border-white/5">
+        <div className="container mx-auto px-6 max-w-4xl">
+          <p className="text-[hsl(var(--gold))] text-center mb-4 font-bold" style={labelStyle}>
+            FREQUENTLY ASKED QUESTIONS
+          </p>
+          <h2 className="font-display text-2xl md:text-3xl font-light text-white text-center mb-12">
+            Off-Market Real Estate in Austin
+          </h2>
+          <div className="space-y-8">
+            {faqs.map((faq, i) => (
+              <div key={i} className="border-b border-white/10 pb-6">
+                <h3 className="text-white font-medium text-base mb-2">{faq.question}</h3>
+                <p className="text-white/45 text-sm leading-relaxed">{faq.answer}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

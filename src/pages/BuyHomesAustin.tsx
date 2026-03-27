@@ -110,7 +110,7 @@ const BuyHomesAustin = () => {
                 </div>
                 <div className="border-l-2 border-border pl-6">
                   <h3 className="text-lg font-medium text-foreground mb-1">2. Property Search & Showings</h3>
-                  <p className="text-muted-foreground text-sm">We curate properties from MLS and our <Link to="/off-market-luxury-homes-austin" className="text-foreground underline hover:text-muted-foreground">off-market network</Link>, scheduling private showings.</p>
+                  <p className="text-muted-foreground text-sm">We curate properties from MLS and our <Link to="/off-market-real-estate-austin" className="text-foreground underline hover:text-muted-foreground">off-market network</Link>, scheduling private showings.</p>
                 </div>
                 <div className="border-l-2 border-border pl-6">
                   <h3 className="text-lg font-medium text-foreground mb-1">3. Offer & Negotiation</h3>

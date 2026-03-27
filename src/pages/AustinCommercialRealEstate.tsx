@@ -52,7 +52,7 @@ const AustinCommercialRealEstate = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Austin Commercial Real Estate | Echelon Property Group"
-        description="Austin commercial real estate brokerage: tenant representation, investment acquisitions, development land, and office opportunities. Expert advisory from Echelon."
+        description="Austin commercial real estate brokerage: tenant representation, investment acquisitions, development land, and office opportunities from Echelon."
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createFAQSchema(faqs)} />

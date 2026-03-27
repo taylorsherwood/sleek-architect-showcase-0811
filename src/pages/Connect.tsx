@@ -40,7 +40,7 @@ const Connect = () => {
     <>
       <SEOHead
         title="Connect With Taylor Sherwood | Echelon Property Group"
-        description="Connect with Austin luxury real estate advisor Taylor Sherwood. Browse listings, search homes, or request a private consultation."
+        description="Connect with Austin luxury real estate advisor Taylor Sherwood. Browse listings, search homes, or schedule a private consultation with Echelon Property Group."
       />
       <div
         className="min-h-screen flex flex-col items-center bg-warm-cream"

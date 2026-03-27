@@ -176,16 +176,16 @@ const AustinLandDevelopmentOpportunities = () => {
   return (
     <div className="min-h-screen bg-[hsl(220,14%,8%)]">
       <SEOHead
-        title="Austin Land & Development Opportunities"
-        description="Access land, redevelopment sites, and development opportunities across Austin and Central Texas. Off-market and on-market land for developers and investors."
+        title="Austin Land Development | Echelon Property Group"
+        description="Land, redevelopment sites, and development opportunities across Austin and Central Texas. Off-market and on-market deals for developers and investors."
         canonical="/austin-land-development-opportunities"
-        ogTitle="Austin Land & Development Opportunities | Echelon Property Group"
-        ogDescription="Land, redevelopment sites, and development deals across Austin and Central Texas for serious investors and developers."
+        ogTitle="Austin Land Development | Echelon Property Group"
+        ogDescription="Land and development deals across Austin and Central Texas for serious investors and developers."
       />
       <SchemaMarkup
         schema={createBreadcrumbSchema([
           { name: "Home", url: SITE },
-          { name: "Private Opportunities", url: `${SITE}/private` },
+          { name: "Investment", url: `${SITE}/invest` },
           { name: "Land & Development", url: `${SITE}/austin-land-development-opportunities` },
         ])}
       />

@@ -65,7 +65,7 @@ const Listings = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Luxury Listings in Austin TX | Echelon Property Group"
-        description="View current luxury listings from Echelon Property Group. Austin homes for sale, investment properties, estate homes, and land opportunities across Austin's premier neighborhoods."
+        description="Current luxury listings in Austin TX. Homes for sale, investment properties, estate homes, and land opportunities across Austin's premier neighborhoods."
       />
       <SchemaMarkup schema={createBreadcrumbSchema([
         { name: "Home", url: "https://www.echelonpropertygroup.com/" },

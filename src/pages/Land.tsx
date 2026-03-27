@@ -95,7 +95,7 @@ const LandPage = () => {
     <div className="min-h-screen">
       <SEOHead
         title="Austin Land & Investment Property | Echelon Property Group"
-        description="Explore Austin land, ranch, development, and investment property opportunities with Echelon Property Group. Strategic real estate advisory across Austin and the Texas Hill Country."
+        description="Austin land, ranch, development, and investment property opportunities. Strategic real estate advisory across Austin and the Texas Hill Country."
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createFAQSchema(faqs.map(f => ({ question: f.q, answer: f.a })))} />

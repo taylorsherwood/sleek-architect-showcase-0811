@@ -20,7 +20,7 @@ const LandForSaleAustin = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Land for Sale in Austin TX | Echelon Property Group"
-        description="Land for sale in Austin, Texas. Residential lots, development parcels, ranch land, and Hill Country acreage. Expert land advisory from Taylor Sherwood and Echelon Property Group."
+        description="Land for sale in Austin TX. Residential lots, development parcels, ranch land, and Hill Country acreage. Expert advisory from Echelon Property Group."
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createFAQSchema(faqs)} />

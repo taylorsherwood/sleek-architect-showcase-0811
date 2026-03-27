@@ -26,8 +26,13 @@ const staticRoutes = [
   "/communities",
   "/blog",
   "/contact",
+  "/search",
+  "/connect",
+  "/land",
+  "/invest",
   "/moving-to-austin",
   "/best-luxury-neighborhoods-austin",
+  "/best-neighborhoods-in-austin-texas",
   "/austin-luxury-market-report",
   "/off-market-real-estate-austin",
   "/austin-luxury-homes-for-sale",
@@ -39,7 +44,11 @@ const staticRoutes = [
   "/austin-real-estate-investment",
   "/land-for-sale-austin",
   "/past-transactions",
-  "/best-neighborhoods-in-austin-texas",
+  "/austin-multifamily-report-2026",
+  "/why-billionaires-are-moving-to-austin",
+  "/austin-land-development-opportunities",
+  "/private-opportunities",
+  "/blog/how-to-find-off-market-real-estate-deals-austin-2026",
 ];
 
 const allPrerenderRoutes = Array.from(

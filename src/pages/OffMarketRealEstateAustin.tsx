@@ -170,11 +170,11 @@ const OffMarketRealEstateAustin = () => {
   return (
     <div className="min-h-screen bg-[hsl(220,15%,8%)]">
       <SEOHead
-        title="Off-Market Homes Austin | Private Listings Not on Zillow or MLS"
-        description="Access Austin's most exclusive off-market homes and private listings. Luxury properties, investment deals, and land opportunities that never hit the public market. Request private access today."
+        title="Off-Market Homes in Austin TX | Echelon Property Group"
+        description="Access Austin's most exclusive off-market homes and private listings. Luxury properties, investment deals, and land not on the public market."
         canonical="/off-market-real-estate-austin"
         ogTitle="Off-Market Homes in Austin | Echelon Property Group"
-        ogDescription="Many of Austin's most desirable homes never hit the public market. Get private access to off-market luxury homes, investment properties, and land."
+        ogDescription="Many of Austin's most desirable homes never hit the public market. Get private access to off-market luxury homes and investment properties."
       />
       <SchemaMarkup
         schema={createBreadcrumbSchema([

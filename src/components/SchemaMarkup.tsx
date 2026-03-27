@@ -63,7 +63,10 @@ export const organizationSchema = {
     "postalCode": "78702",
     "addressCountry": "US"
   },
-  "sameAs": []
+  "sameAs": [
+    "https://www.instagram.com/theinvestorbroker",
+    "https://www.linkedin.com/in/taylorsherwood/"
+  ]
 };
 
 export const realEstateAgentSchema = {
@@ -103,7 +106,10 @@ export const realEstateAgentSchema = {
   ],
   "priceRange": "$$$",
   "openingHours": "Mo-Fr 09:00-18:00",
-  "sameAs": []
+  "sameAs": [
+    "https://www.instagram.com/theinvestorbroker",
+    "https://www.linkedin.com/in/taylorsherwood/"
+  ]
 };
 
 export const taylorSherwoodSchema = {
@@ -209,7 +215,7 @@ export function createArticleSchema(title: string, description: string, datePubl
     "headline": title,
     "description": description,
     "name": title,
-    "url": "https://www.echelonpropertygroup.com/blog",
+    "url": `https://www.echelonpropertygroup.com/blog`,
     "image": image || "https://www.echelonpropertygroup.com/og-image.png",
     "datePublished": datePublished,
     "dateModified": datePublished,

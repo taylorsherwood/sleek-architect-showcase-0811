@@ -172,7 +172,7 @@ const BlogPost = () => {
                 <div className="grid md:grid-cols-2 gap-8">
                   {filledRelatedPosts.map(relatedPost => (
                     <Link key={relatedPost.id} to={`/blog/${relatedPost.id}`} className="group">
-                      <div className="w-full h-48 mb-4 overflow-hidden">
+                      <div className="w-full aspect-[4/3] mb-4 overflow-hidden">
                         <img 
                           src={relatedPost.image} 
                           alt={`${relatedPost.title} - Austin real estate insights`}

@@ -290,6 +290,73 @@ const AustinCommercialRealEstate = () => {
               </div>
             </section>
 
+            {/* Current Inventory */}
+            <section>
+              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-4">
+                Current Investment Inventory
+              </h2>
+              <p className="text-muted-foreground leading-relaxed mb-10">
+                Select commercial and multifamily opportunities currently available through Echelon Property Group.
+              </p>
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                {/* 717 S. 11th St */}
+                <div className="group border-2 border-border hover:border-gold shadow-[var(--shadow-elegant)] hover:shadow-[var(--shadow-architectural)] hover:-translate-y-1 transition-all duration-500">
+                  <div className="aspect-[4/3] bg-muted flex items-center justify-center">
+                    <span className="text-muted-foreground/40 text-sm tracking-widest uppercase">Photo Coming Soon</span>
+                  </div>
+                  <div className="p-6">
+                    <p className="text-[9px] tracking-[0.2em] uppercase text-gold font-semibold mb-2">Multifamily</p>
+                    <h3 className="text-lg font-display font-medium text-foreground mb-1">717 S. 11th St.</h3>
+                    <p className="text-muted-foreground text-sm mb-3">Temple, TX</p>
+                    <p className="text-foreground font-display text-xl font-light mb-4">Price Upon Request</p>
+                    <div className="flex gap-4 text-[13px] text-muted-foreground/70 font-light">
+                      <span>6 Units</span>
+                      <span className="text-border text-[5px] self-center">•</span>
+                      <span>Recently Renovated</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Small Killeen Rental Portfolio */}
+                <div className="group border-2 border-border hover:border-gold shadow-[var(--shadow-elegant)] hover:shadow-[var(--shadow-architectural)] hover:-translate-y-1 transition-all duration-500">
+                  <div className="aspect-[4/3] bg-muted flex items-center justify-center">
+                    <span className="text-muted-foreground/40 text-sm tracking-widest uppercase">Photo Coming Soon</span>
+                  </div>
+                  <div className="p-6">
+                    <p className="text-[9px] tracking-[0.2em] uppercase text-gold font-semibold mb-2">Rental Portfolio</p>
+                    <h3 className="text-lg font-display font-medium text-foreground mb-1">Small Killeen Rental Portfolio</h3>
+                    <p className="text-muted-foreground text-sm mb-3">Killeen, TX</p>
+                    <p className="text-foreground font-display text-xl font-light mb-4">$550,000</p>
+                    <div className="flex gap-4 text-[13px] text-muted-foreground/70 font-light">
+                      <span>9 Rentable Units</span>
+                      <span className="text-border text-[5px] self-center">•</span>
+                      <span>100% Occupied</span>
+                      <span className="text-border text-[5px] self-center">•</span>
+                      <span>14% Cap Rate</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* 709/711/713 Bremser Ave */}
+                <div className="group border-2 border-border hover:border-gold shadow-[var(--shadow-elegant)] hover:shadow-[var(--shadow-architectural)] hover:-translate-y-1 transition-all duration-500">
+                  <div className="aspect-[4/3] bg-muted flex items-center justify-center">
+                    <span className="text-muted-foreground/40 text-sm tracking-widest uppercase">Photo Coming Soon</span>
+                  </div>
+                  <div className="p-6">
+                    <p className="text-[9px] tracking-[0.2em] uppercase text-gold font-semibold mb-2">Rental Homes</p>
+                    <h3 className="text-lg font-display font-medium text-foreground mb-1">709/711/713 Bremser Ave</h3>
+                    <p className="text-muted-foreground text-sm mb-3">Killeen, TX</p>
+                    <p className="text-foreground font-display text-xl font-light mb-4">$240,000</p>
+                    <div className="flex gap-4 text-[13px] text-muted-foreground/70 font-light">
+                      <span>3 Individual Homes</span>
+                      <span className="text-border text-[5px] self-center">•</span>
+                      <span>Rental Income</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
             {/* Why Echelon */}
             <section>
               <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">

@@ -134,13 +134,13 @@ const AustinLuxuryHomes = () => {
                   <Link
                     key={c.slug}
                     to={`/communities/${c.slug}`}
-                    className="group border border-border p-6 hover:border-foreground/30 transition-colors duration-300"
+                    className="group border-2 border-border p-6 rounded-lg hover:border-gold transition-colors duration-500"
                   >
                     <p className="text-minimal text-gold mb-1">{c.priceRange}</p>
                     <h3 className="text-lg font-display font-light text-architectural group-hover:text-muted-foreground transition-colors mb-1">
                       {c.name}
                     </h3>
-                    <p className="text-minimal text-muted-foreground">VIEW COMMUNITY →</p>
+                    <p className="text-minimal text-muted-foreground group-hover:text-gold transition-colors duration-500">VIEW COMMUNITY →</p>
                   </Link>
                 ))}
               </div>

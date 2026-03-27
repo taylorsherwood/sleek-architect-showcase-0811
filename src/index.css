@@ -53,14 +53,14 @@ img {
     --gold-highlight: 38 45% 76%;
     --warm-cream: 40 20% 97%;
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 40 20% 97%;
+    --sidebar-foreground: 220 20% 10%;
+    --sidebar-primary: 220 20% 10%;
+    --sidebar-primary-foreground: 40 20% 97%;
+    --sidebar-accent: 40 20% 93%;
+    --sidebar-accent-foreground: 220 20% 10%;
+    --sidebar-border: 38 18% 88%;
+    --sidebar-ring: 220 20% 10%;
     
     --gradient-hero: linear-gradient(135deg, hsl(220 20% 10% / 0.7), hsl(220 20% 10% / 0.3));
     --gradient-overlay: linear-gradient(180deg, hsl(220 20% 10% / 0.6), hsl(220 20% 10% / 0.2));

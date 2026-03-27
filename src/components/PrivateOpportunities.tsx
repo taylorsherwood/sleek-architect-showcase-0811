@@ -255,10 +255,10 @@ const PrivateOpportunities = ({ variant = "light" }: PrivateOpportunitiesProps) 
                 <button
                   type="submit"
                   disabled={submitting}
-                  className={`w-full px-5 py-3 text-sm font-medium tracking-widest uppercase rounded transition-all duration-200 disabled:opacity-50 ${
+                  className={`w-full px-5 py-3 text-sm font-medium tracking-widest uppercase rounded transition-all duration-200 disabled:opacity-50 border ${
                     isDark
-                      ? "bg-primary text-primary-foreground border border-primary-foreground/30 hover:bg-primary-foreground hover:text-primary hover:font-bold"
-                      : "bg-primary text-primary-foreground hover:bg-[hsl(var(--gold))] hover:text-white"
+                      ? "bg-transparent text-primary-foreground border-primary-foreground/30 hover:bg-[hsl(var(--gold))] hover:text-white hover:border-[hsl(var(--gold))] hover:font-bold"
+                      : "bg-transparent text-foreground border-foreground/20 hover:bg-[hsl(var(--gold))] hover:text-white hover:border-[hsl(var(--gold))]"
                   }`}
                 >
                   {submitting ? "Submitting…" : "Request Private Access"}

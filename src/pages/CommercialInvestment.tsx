@@ -116,7 +116,7 @@ const CommercialInvestment = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-6">
               {/* Gillis Street */}
               <div className="border-2 border-border overflow-hidden group bg-card hover:border-gold transition-colors duration-500 flex flex-col">
                 <div className="relative overflow-hidden">
@@ -124,7 +124,7 @@ const CommercialInvestment = () => {
                     src={gillisStreet}
                     alt="4314 Gillis Street, Austin TX 78745 — 24-unit multifamily"
                     title="4314 Gillis Street — 24-unit multifamily investment, Austin TX"
-                    className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
+                    className="w-full aspect-[3/2] object-cover transition-transform duration-700 group-hover:scale-105"
                     loading="lazy"
                     decoding="async"
                   />
@@ -132,15 +132,15 @@ const CommercialInvestment = () => {
                     MULTIFAMILY
                   </span>
                 </div>
-                <div className="p-8 flex flex-col flex-grow">
-                  <div className="flex items-center justify-between mb-4">
+                <div className="p-6 flex flex-col flex-grow">
+                  <div className="flex items-center justify-between mb-2">
                     <h3 className="text-xl font-display font-light text-foreground">
                       4314 Gillis Street
                     </h3>
                     <span className="text-2xl font-display font-light text-foreground">$2,500,000</span>
                   </div>
-                  <p className="text-muted-foreground mb-4">Austin, TX 78745</p>
-                  <div className="grid grid-cols-2 gap-4 mb-6">
+                  <p className="text-muted-foreground mb-2">Austin, TX 78745</p>
+                  <div className="grid grid-cols-2 gap-3 mb-4">
                     <div>
                       <p className="text-muted-foreground mb-1" style={labelStyle}>ASSET TYPE</p>
                       <p className="text-foreground font-medium text-sm">Value-Add Multifamily</p>
@@ -150,12 +150,12 @@ const CommercialInvestment = () => {
                       <p className="text-foreground font-medium text-sm">24</p>
                     </div>
                   </div>
-                  <p className="text-muted-foreground text-sm leading-relaxed mb-6 flex-grow">
+                  <p className="text-muted-foreground text-sm leading-relaxed mb-4 flex-grow">
                     24-unit value-add multifamily opportunity in South Austin. Well-positioned for rent growth and operational improvements in a high-demand rental corridor.
                   </p>
                   <Link
                     to="/contact"
-                    className="inline-block bg-white text-primary border border-border hover:bg-gold hover:text-white hover:border-gold px-8 py-4 transition-all duration-300 ease-out active:scale-[0.98]"
+                    className="inline-block bg-white text-primary border border-border hover:bg-gold hover:text-white hover:border-gold px-6 py-3 transition-all duration-300 ease-out active:scale-[0.98]"
                     style={labelStyle}
                   >
                     REQUEST INFORMATION
@@ -170,7 +170,7 @@ const CommercialInvestment = () => {
                     src={sanJoseAve}
                     alt="10811 San Jose Ave, Del Valle TX — 3.06 acres redevelopment land"
                     title="10811 San Jose Ave — development land opportunity, Del Valle TX"
-                    className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
+                    className="w-full aspect-[3/2] object-cover transition-transform duration-700 group-hover:scale-105"
                     loading="lazy"
                     decoding="async"
                   />
@@ -178,15 +178,15 @@ const CommercialInvestment = () => {
                     DEVELOPMENT LAND
                   </span>
                 </div>
-                <div className="p-8 flex flex-col flex-grow">
-                  <div className="flex items-center justify-between mb-4">
+                <div className="p-6 flex flex-col flex-grow">
+                  <div className="flex items-center justify-between mb-2">
                     <h3 className="text-xl font-display font-light text-foreground">
                       10811 San Jose Ave
                     </h3>
                     <span className="text-2xl font-display font-light text-foreground">$1,600,000</span>
                   </div>
-                  <p className="text-muted-foreground mb-4">Del Valle, TX</p>
-                  <div className="grid grid-cols-2 gap-4 mb-6">
+                  <p className="text-muted-foreground mb-2">Del Valle, TX</p>
+                  <div className="grid grid-cols-2 gap-3 mb-4">
                     <div>
                       <p className="text-muted-foreground mb-1" style={labelStyle}>ASSET TYPE</p>
                       <p className="text-foreground font-medium text-sm">Redevelopment Land</p>
@@ -196,12 +196,12 @@ const CommercialInvestment = () => {
                       <p className="text-foreground font-medium text-sm">3.06 Acres</p>
                     </div>
                   </div>
-                  <p className="text-muted-foreground text-sm leading-relaxed mb-6 flex-grow">
+                  <p className="text-muted-foreground text-sm leading-relaxed mb-4 flex-grow">
                     3.06-acre redevelopment parcel with existing mobile homes and zero zoning restrictions. Ideal for ground-up multifamily, mixed-use, or commercial development in the high-growth Del Valle corridor.
                   </p>
                   <Link
                     to="/contact"
-                    className="inline-block bg-white text-primary border border-border hover:bg-gold hover:text-white hover:border-gold px-8 py-4 transition-all duration-300 ease-out active:scale-[0.98]"
+                    className="inline-block bg-white text-primary border border-border hover:bg-gold hover:text-white hover:border-gold px-6 py-3 transition-all duration-300 ease-out active:scale-[0.98]"
                     style={labelStyle}
                   >
                     REQUEST INFORMATION
@@ -216,7 +216,7 @@ const CommercialInvestment = () => {
                     src={s11thStreet}
                     alt="717 S. 11th St, Temple TX — 6-unit multifamily"
                     title="717 S. 11th St — multifamily investment, Temple TX"
-                    className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
+                    className="w-full aspect-[3/2] object-cover transition-transform duration-700 group-hover:scale-105"
                     loading="lazy"
                     decoding="async"
                   />
@@ -224,15 +224,15 @@ const CommercialInvestment = () => {
                     MULTIFAMILY
                   </span>
                 </div>
-                <div className="p-8 flex flex-col flex-grow">
-                  <div className="flex items-center justify-between mb-4">
+                <div className="p-6 flex flex-col flex-grow">
+                  <div className="flex items-center justify-between mb-2">
                     <h3 className="text-xl font-display font-light text-foreground">
                       717 S. 11th St.
                     </h3>
                     <span className="text-2xl font-display font-light text-foreground">Price Upon Request</span>
                   </div>
-                  <p className="text-muted-foreground mb-4">Temple, TX</p>
-                  <div className="grid grid-cols-2 gap-4 mb-6">
+                  <p className="text-muted-foreground mb-2">Temple, TX</p>
+                  <div className="grid grid-cols-2 gap-3 mb-4">
                     <div>
                       <p className="text-muted-foreground mb-1" style={labelStyle}>ASSET TYPE</p>
                       <p className="text-foreground font-medium text-sm">6-Unit Multifamily</p>
@@ -242,12 +242,12 @@ const CommercialInvestment = () => {
                       <p className="text-foreground font-medium text-sm">Recently Renovated</p>
                     </div>
                   </div>
-                  <p className="text-muted-foreground text-sm leading-relaxed mb-6 flex-grow">
+                  <p className="text-muted-foreground text-sm leading-relaxed mb-4 flex-grow">
                     Recently renovated 6-unit multifamily property in Temple, TX. Contact for pricing and additional details.
                   </p>
                   <Link
                     to="/contact"
-                    className="inline-block bg-white text-primary border border-border hover:bg-gold hover:text-white hover:border-gold px-8 py-4 transition-all duration-300 ease-out active:scale-[0.98]"
+                    className="inline-block bg-white text-primary border border-border hover:bg-gold hover:text-white hover:border-gold px-6 py-3 transition-all duration-300 ease-out active:scale-[0.98]"
                     style={labelStyle}
                   >
                     REQUEST INFORMATION
@@ -262,7 +262,7 @@ const CommercialInvestment = () => {
                     src={killeenPortfolio}
                     alt="Small Killeen Rental Portfolio — 9 rentable units, 100% occupied"
                     title="Small Killeen Rental Portfolio — rental investment, Killeen TX"
-                    className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
+                    className="w-full aspect-[3/2] object-cover transition-transform duration-700 group-hover:scale-105"
                     loading="lazy"
                     decoding="async"
                   />
@@ -270,15 +270,15 @@ const CommercialInvestment = () => {
                     RENTAL PORTFOLIO
                   </span>
                 </div>
-                <div className="p-8 flex flex-col flex-grow">
-                  <div className="flex items-center justify-between mb-4">
+                <div className="p-6 flex flex-col flex-grow">
+                  <div className="flex items-center justify-between mb-2">
                     <h3 className="text-xl font-display font-light text-foreground">
                       Small Killeen Rental Portfolio
                     </h3>
                     <span className="text-2xl font-display font-light text-foreground">$550,000</span>
                   </div>
-                  <p className="text-muted-foreground mb-4">Killeen, TX</p>
-                  <div className="grid grid-cols-2 gap-4 mb-6">
+                  <p className="text-muted-foreground mb-2">Killeen, TX</p>
+                  <div className="grid grid-cols-2 gap-3 mb-4">
                     <div>
                       <p className="text-muted-foreground mb-1" style={labelStyle}>UNITS</p>
                       <p className="text-foreground font-medium text-sm">9 Rentable Units</p>
@@ -288,12 +288,12 @@ const CommercialInvestment = () => {
                       <p className="text-foreground font-medium text-sm">100% Occupied</p>
                     </div>
                   </div>
-                  <p className="text-muted-foreground text-sm leading-relaxed mb-6 flex-grow">
+                  <p className="text-muted-foreground text-sm leading-relaxed mb-4 flex-grow">
                     9-unit rental portfolio in Killeen, TX. Fully occupied with a 14% cap rate.
                   </p>
                   <Link
                     to="/contact"
-                    className="inline-block bg-white text-primary border border-border hover:bg-gold hover:text-white hover:border-gold px-8 py-4 transition-all duration-300 ease-out active:scale-[0.98]"
+                    className="inline-block bg-white text-primary border border-border hover:bg-gold hover:text-white hover:border-gold px-6 py-3 transition-all duration-300 ease-out active:scale-[0.98]"
                     style={labelStyle}
                   >
                     REQUEST INFORMATION
@@ -308,7 +308,7 @@ const CommercialInvestment = () => {
                     src={bremserAve}
                     alt="709/711/713 Bremser Ave, Killeen TX — 3 individual rental homes"
                     title="709/711/713 Bremser Ave — rental homes, Killeen TX"
-                    className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
+                    className="w-full aspect-[3/2] object-cover transition-transform duration-700 group-hover:scale-105"
                     loading="lazy"
                     decoding="async"
                   />
@@ -316,15 +316,15 @@ const CommercialInvestment = () => {
                     RENTAL PORTFOLIO
                   </span>
                 </div>
-                <div className="p-8 flex flex-col flex-grow">
-                  <div className="flex items-center justify-between mb-4">
+                <div className="p-6 flex flex-col flex-grow">
+                  <div className="flex items-center justify-between mb-2">
                     <h3 className="text-xl font-display font-light text-foreground">
                       709/711/713 Bremser Ave
                     </h3>
                     <span className="text-2xl font-display font-light text-foreground">$240,000</span>
                   </div>
-                  <p className="text-muted-foreground mb-4">Killeen, TX</p>
-                  <div className="grid grid-cols-2 gap-4 mb-6">
+                  <p className="text-muted-foreground mb-2">Killeen, TX</p>
+                  <div className="grid grid-cols-2 gap-3 mb-4">
                     <div>
                       <p className="text-muted-foreground mb-1" style={labelStyle}>ASSET TYPE</p>
                       <p className="text-foreground font-medium text-sm">3 Individual Homes</p>
@@ -334,12 +334,12 @@ const CommercialInvestment = () => {
                       <p className="text-foreground font-medium text-sm">Rental Income</p>
                     </div>
                   </div>
-                  <p className="text-muted-foreground text-sm leading-relaxed mb-6 flex-grow">
+                  <p className="text-muted-foreground text-sm leading-relaxed mb-4 flex-grow">
                     Three individual rental homes on Bremser Ave in Killeen, TX. Opportunity to acquire a small residential rental portfolio.
                   </p>
                   <Link
                     to="/contact"
-                    className="inline-block bg-white text-primary border border-border hover:bg-gold hover:text-white hover:border-gold px-8 py-4 transition-all duration-300 ease-out active:scale-[0.98]"
+                    className="inline-block bg-white text-primary border border-border hover:bg-gold hover:text-white hover:border-gold px-6 py-3 transition-all duration-300 ease-out active:scale-[0.98]"
                     style={labelStyle}
                   >
                     REQUEST INFORMATION
@@ -367,7 +367,7 @@ const CommercialInvestment = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-6">
               {[
                 {
                   type: "Multifamily",
@@ -418,7 +418,7 @@ const CommercialInvestment = () => {
                     {listing.name}
                   </h3>
                   <p className="text-muted-foreground mb-6">{listing.location}</p>
-                  <div className="grid grid-cols-2 gap-4 mb-6">
+                  <div className="grid grid-cols-2 gap-3 mb-4">
                     <div>
                       <p className="text-muted-foreground mb-1" style={labelStyle}>CAP RATE</p>
                       <p className="text-foreground font-medium text-sm">{listing.capRate}</p>

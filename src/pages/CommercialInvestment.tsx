@@ -322,7 +322,7 @@ const CommercialInvestment = () => {
                       <p className="text-foreground font-medium text-sm">Rental Income</p>
                     </div>
                   </div>
-                  <p className="text-muted-foreground text-sm leading-relaxed mb-6">
+                  <p className="text-muted-foreground text-sm leading-relaxed mb-6 flex-grow">
                     Three individual rental homes on Bremser Ave in Killeen, TX. Opportunity to acquire a small residential rental portfolio.
                   </p>
                   <Link

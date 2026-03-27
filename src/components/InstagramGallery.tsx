@@ -1,47 +1,44 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 /**
  * ─── INSTAGRAM CONFIGURATION ───────────────────────────────────────────
- *
- * PROFILE URL — Update this to your Instagram profile:
  */
 const INSTAGRAM_PROFILE_URL = "https://www.instagram.com/theinvestorbroker";
-
-/**
- * EMBEDSOCIAL — The data-ref below powers the live feed.
- * To change the feed or number of posts, update settings in your
- * EmbedSocial dashboard → Widgets → Layout/Design.
- * Set "Number of posts" to 4 in the dashboard for best results.
- */
 const EMBEDSOCIAL_REF = "6fd82b336784d0fdcec3ce38de6cf04c6cec4621";
 
 const InstagramGallery = () => {
   const sectionRef = useRef<HTMLElement>(null);
+  const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
-    const el = sectionRef.current;
-    if (!el) return;
+    if (!loaded) return;
+    // Inject the script only once the user has triggered loading
+    if (!document.getElementById("EmbedSocialHashtagScript")) {
+      const script = document.createElement("script");
+      script.id = "EmbedSocialHashtagScript";
+      script.async = true;
+      script.src = "https://embedsocial.com/cdn/ht.js";
+      document.head.appendChild(script);
+    }
+  }, [loaded]);
 
-    let loaded = false;
+  // Lazy-trigger: load when section scrolls into view
+  useEffect(() => {
+    const el = sectionRef.current;
+    if (!el || loaded) return;
+
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting && !loaded) {
-          loaded = true;
+        if (entry.isIntersecting) {
+          setLoaded(true);
           observer.disconnect();
-          if (!document.getElementById("EmbedSocialHashtagScript")) {
-            const script = document.createElement("script");
-            script.id = "EmbedSocialHashtagScript";
-            script.async = true;
-            script.src = "https://embedsocial.com/cdn/ht.js";
-            document.head.appendChild(script);
-          }
         }
       },
-      { rootMargin: "400px" }
+      { rootMargin: "200px" }
     );
     observer.observe(el);
     return () => observer.disconnect();
-  }, []);
+  }, [loaded]);
 
   return (
     <section ref={sectionRef} className="hidden md:block pt-10 pb-10 bg-background">
@@ -60,12 +57,18 @@ const InstagramGallery = () => {
             </p>
           </div>
 
-          {/* Live EmbedSocial Feed */}
+          {/* Feed area */}
           <div className="instagram-feed-wrapper">
-            <div
-              className="embedsocial-hashtag"
-              data-ref={EMBEDSOCIAL_REF}
-            />
+            {loaded ? (
+              <div
+                className="embedsocial-hashtag"
+                data-ref={EMBEDSOCIAL_REF}
+              />
+            ) : (
+              <div className="flex items-center justify-center py-16">
+                <div className="w-6 h-6 border-2 border-gold/30 border-t-gold rounded-full animate-spin" />
+              </div>
+            )}
           </div>
 
           {/* CTA */}

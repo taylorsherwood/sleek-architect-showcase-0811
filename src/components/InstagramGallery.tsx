@@ -52,9 +52,9 @@ const InstagramGallery = () => {
             <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground/50 mb-3">
               @TheInvestorBroker
             </p>
-            <h2 className="text-4xl font-display font-light text-foreground mb-3">
+            <h3 className="text-4xl font-display font-light text-foreground mb-3">
               Follow Us on Instagram
-            </h2>
+            </h3>
             <p className="text-sm text-muted-foreground/70 max-w-lg mx-auto leading-relaxed">
               Market moments, new listings, Austin lifestyle, and behind-the-scenes perspective from Echelon Property Group.
             </p>

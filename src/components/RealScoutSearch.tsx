@@ -12,12 +12,12 @@ const RealScoutSearch = () => {
             >
               Explore the Market
             </p>
-            <h2
+            <h3
               className="font-display text-3xl md:text-[2.8rem] font-light leading-[1.1] tracking-[-0.01em] text-foreground"
             >
               Find Your Next
               <span className="italic text-[hsl(var(--gold))]"> Chapter</span>
-            </h2>
+            </h3>
             <p className="mt-4 text-sm md:text-[15px] text-muted-foreground font-light leading-relaxed max-w-md mx-auto">
               Search luxury homes, land, and investment opportunities across Austin's most coveted neighborhoods.
             </p>

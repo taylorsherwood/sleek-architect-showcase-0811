@@ -276,7 +276,7 @@ const CommercialInvestment = () => {
                       <p className="text-foreground font-medium text-sm">100% Occupied</p>
                     </div>
                   </div>
-                  <p className="text-muted-foreground text-sm leading-relaxed mb-6">
+                  <p className="text-muted-foreground text-sm leading-relaxed mb-6 flex-grow">
                     9-unit rental portfolio in Killeen, TX. Fully occupied with a 14% cap rate.
                   </p>
                   <Link

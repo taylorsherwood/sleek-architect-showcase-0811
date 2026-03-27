@@ -49,7 +49,7 @@ const InstagramGallery = () => {
         <div className="max-w-5xl mx-auto">
           {/* Heading */}
           <div className="text-center mb-8">
-            <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground/50 mb-3">
+            <p className="text-xs tracking-[0.2em] uppercase text-gold mb-3">
               @TheInvestorBroker
             </p>
             <h3 className="text-4xl font-display font-light text-foreground mb-3">

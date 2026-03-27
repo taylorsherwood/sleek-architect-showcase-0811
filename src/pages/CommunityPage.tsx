@@ -232,7 +232,7 @@ const CommunityPage = () => {
               </h2>
               <ContentBlock text={community.investmentPotential} />
               <p className="text-muted-foreground leading-relaxed mt-4">
-                Some homes in {community.name} present strong renovation or value-add opportunities — <Link to="/invest" className="text-foreground underline hover:text-muted-foreground">explore our investor-focused approach</Link>.
+                Some homes in {community.name} present strong renovation or value-add opportunities — <Link to="/invest" className="text-foreground underline hover:text-gold transition-colors">explore our investor-focused approach</Link>.
               </p>
             </section>
 
@@ -295,7 +295,7 @@ const CommunityPage = () => {
                       className="group border-2 border-border p-6 rounded-lg hover:border-gold transition-colors duration-500"
                     >
                       <p className="text-minimal text-gold mb-2">{rc.priceRange}</p>
-                      <h3 className="text-xl font-display font-light text-architectural group-hover:text-muted-foreground transition-colors mb-2">
+                      <h3 className="text-xl font-display font-light text-architectural group-hover:text-gold transition-colors mb-2">
                         {rc.name}
                       </h3>
                       <p className="text-minimal text-muted-foreground group-hover:text-gold transition-colors duration-500">VIEW COMMUNITY →</p>

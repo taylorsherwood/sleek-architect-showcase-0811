@@ -189,7 +189,7 @@ const MortgageCalculator = () => {
   loanAmount / numPayments;
 
   const inputClass =
-  "w-full bg-background border border-border px-4 py-3 text-foreground focus:outline-none focus:ring-1 focus:ring-foreground/20 transition-colors duration-200";
+  "w-full bg-card border border-border px-4 py-3 text-foreground focus:outline-none focus:ring-1 focus:ring-foreground/20 transition-colors duration-200";
 
   return (
     <div className="bg-card border border-border p-8 md:p-10">

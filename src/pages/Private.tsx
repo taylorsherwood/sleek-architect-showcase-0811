@@ -1,10 +1,10 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, lazy, Suspense } from "react";
 import { formatPhoneNumber, getTimestamp } from "@/lib/formUtils";
 import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
+const Footer = lazy(() => import("@/components/Footer"));
 import heroImage from "@/assets/hero-luxury-austin.jpg";
 import communityLakeAustin from "@/assets/community-lake-austin.jpg";
 import commercialHero from "@/assets/commercial-hero-austin.jpg";
@@ -387,7 +387,7 @@ const Private = () => {
         </section>
       </FadeIn>
 
-      <Footer />
+      <Suspense fallback={<div className="min-h-[100px]" />}><Footer /></Suspense>
     </>
   );
 };

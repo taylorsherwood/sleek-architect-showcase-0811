@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
+const Footer = lazy(() => import("@/components/Footer"));
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import { MapPin, Building2, TrendingUp } from "lucide-react";
@@ -176,7 +176,7 @@ const PrivateOpportunitiesPage = () => {
         </div>
       </section>
 
-      <Footer />
+      <Suspense fallback={<div className="min-h-[100px]" />}><Footer /></Suspense>
     </div>
   );
 };

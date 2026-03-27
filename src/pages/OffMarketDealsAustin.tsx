@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
+const Footer = lazy(() => import("@/components/Footer"));
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createBlogPostingSchema, createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import AuthorBio from "@/components/AuthorBio";
@@ -429,7 +429,7 @@ const OffMarketDealsAustin = () => {
       </article>
 
       <RelatedInsights />
-      <Footer />
+      <Suspense fallback={<div className="min-h-[100px]" />}><Footer /></Suspense>
     </div>
   );
 };

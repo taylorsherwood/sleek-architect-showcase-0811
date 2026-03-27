@@ -59,7 +59,7 @@ const TAKEAWAYS = [
 const reportSchema = {
   "@context": "https://schema.org",
   "@type": "CreativeWork",
-  name: "Austin Multifamily Market Outlook 2026",
+  name: "Austin Multifamily Report 2026 | Echelon Property Group",
   description:
     "Institutional-style market analysis covering rents, supply, vacancy, and Austin submarkets positioned for recovery.",
   author: {

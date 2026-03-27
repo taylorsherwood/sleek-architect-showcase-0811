@@ -13,7 +13,7 @@ const CommunitiesPreview = lazy(() => import("@/components/CommunitiesPreview"))
 const IntroSection = lazy(() => import("@/components/IntroSection"));
 const MeetTaylor = lazy(() => import("@/components/MeetTaylor"));
 
-const InstagramGallery = lazy(() => import("@/components/InstagramGallery"));
+
 const Testimonials = lazy(() => import("@/components/Testimonials"));
 const MarketInsights = lazy(() => import("@/components/MarketInsights"));
 const Footer = lazy(() => import("@/components/Footer"));
@@ -125,7 +125,7 @@ const Index = () => {
         <PrivateOpportunities />
         <Testimonials />
         <MeetTaylor />
-        <InstagramGallery />
+        
         
         <MarketInsights />
         <NewsletterSection />

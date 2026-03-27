@@ -305,7 +305,7 @@ const OffMarketRealEstateAustin = () => {
           <div className="text-center mt-14">
             <button
               onClick={scrollToForm}
-              className="border border-[hsl(var(--gold))]/40 text-[hsl(var(--gold))] hover:bg-[hsl(var(--gold))] hover:text-white px-10 py-4 transition-all duration-300 active:scale-[0.98] tracking-[0.2em] uppercase font-sans font-medium"
+              className="border-2 border-[hsl(var(--gold))]/40 text-[hsl(var(--gold))] hover:bg-[hsl(var(--gold))] hover:text-white hover:border-[hsl(var(--gold))] px-10 py-4 transition-all duration-300 active:scale-[0.98] tracking-[0.2em] uppercase font-sans font-medium"
               style={{ fontSize: "0.65rem" }}
             >
               REQUEST PRIVATE ACCESS

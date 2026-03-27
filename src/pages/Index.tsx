@@ -95,7 +95,7 @@ const NoscriptFallback = () => (
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-card">
       <SEOHead
         title="Austin Luxury Real Estate | Echelon Property Group"
         description="Austin luxury real estate experts. Buy, sell, or invest in luxury homes, land, and investment property with Taylor Sherwood of Echelon Property Group."

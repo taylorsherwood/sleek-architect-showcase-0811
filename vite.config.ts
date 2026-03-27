@@ -36,9 +36,9 @@ const staticRoutes = [
   "/sell-home-austin",
   "/austin-real-estate-investment",
   "/land-for-sale-austin",
-  "/luxury-homes-austin",
+  "/luxury-homes-austin", // redirects to /austin-luxury-homes-for-sale
   "/invest",
-  "/private",
+  "/private", // redirects to /off-market-real-estate-austin
   "/private-opportunities",
   "/austin-multifamily-report-2026",
   "/why-billionaires-are-moving-to-austin",

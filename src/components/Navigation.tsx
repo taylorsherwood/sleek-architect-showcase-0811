@@ -47,7 +47,7 @@ const Navigation = () => {
       label: "LISTINGS",
       children: [
         { href: "/listings", label: "ECHELON LISTINGS" },
-        { href: "/luxury-homes-austin", label: "AUSTIN LUXURY HOMES" },
+        { href: "/austin-luxury-homes-for-sale", label: "AUSTIN LUXURY HOMES" },
         { href: "/listings/commercial-investment-austin", label: "COMMERCIAL & INVESTMENT" },
         { href: "/off-market-real-estate-austin", label: "PRIVATE LISTINGS" },
         { href: "/past-transactions", label: "PAST TRANSACTIONS" },

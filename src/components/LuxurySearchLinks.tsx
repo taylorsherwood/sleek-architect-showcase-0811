@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 const luxuryLinks = [
-  { label: "Luxury Homes in Austin", to: "/luxury-homes-austin" },
+  { label: "Luxury Homes in Austin", to: "/austin-luxury-homes-for-sale" },
   { label: "Austin Luxury Homes for Sale", to: "/austin-luxury-homes-for-sale" },
   { label: "Off-Market Luxury Homes", to: "/off-market-real-estate-austin" },
   { label: "Luxury Real Estate Austin", to: "/luxury-real-estate-austin" },

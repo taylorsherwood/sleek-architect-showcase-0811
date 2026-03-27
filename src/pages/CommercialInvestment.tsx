@@ -304,7 +304,7 @@ const CommercialInvestment = () => {
                     RENTAL PORTFOLIO
                   </span>
                 </div>
-                <div className="p-8">
+                <div className="p-8 flex flex-col flex-grow">
                   <div className="flex items-center justify-between mb-4">
                     <h3 className="text-xl font-display font-light text-foreground">
                       709/711/713 Bremser Ave

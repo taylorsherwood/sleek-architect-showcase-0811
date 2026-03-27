@@ -45,7 +45,6 @@ const OffMarketDealsAustin = lazy(() => import("@/pages/OffMarketDealsAustin"));
 const OffMarketRealEstateAustin = lazy(() => import("@/pages/OffMarketRealEstateAustin"));
 const AustinLandDevelopmentOpportunities = lazy(() => import("@/pages/AustinLandDevelopmentOpportunities"));
 const Invest = lazy(() => import("@/pages/Invest"));
-const Private = lazy(() => import("@/pages/Private"));
 const NotFound = lazy(() => import("@/pages/NotFound"));
 
 // Prefetch /connect chunk well after homepage is interactive
@@ -94,11 +93,11 @@ const AppRoutes = () => {
           <Route path="/best-neighborhoods-in-austin-texas" element={<BestNeighborhoodsAustin />} />
           <Route path="/austin-multifamily-report-2026" element={<AustinMultifamilyReport2026 />} />
           <Route path="/private-opportunities" element={<PrivateOpportunitiesPage />} />
-          <Route path="/luxury-homes-austin" element={<LuxuryHomesAustin />} />
+          <Route path="/luxury-homes-austin" element={<Navigate to="/austin-luxury-homes-for-sale" replace />} />
           <Route path="/why-billionaires-are-moving-to-austin" element={<BillionaireMigration />} />
           <Route path="/blog/how-to-find-off-market-real-estate-deals-austin-2026" element={<OffMarketDealsAustin />} />
           <Route path="/invest" element={<Invest />} />
-          <Route path="/private" element={<Private />} />
+          <Route path="/private" element={<Navigate to="/off-market-real-estate-austin" replace />} />
           <Route path="/off-market-real-estate-austin" element={<OffMarketRealEstateAustin />} />
           <Route path="/austin-land-development-opportunities" element={<AustinLandDevelopmentOpportunities />} />
           <Route path="/westlake-hills-homes-for-sale" element={<SEOCommunityPage />} />

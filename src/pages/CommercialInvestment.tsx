@@ -183,14 +183,12 @@ const CommercialInvestment = () => {
                   <span className="absolute top-4 left-4 text-minimal bg-gold text-white px-3 py-1 font-extrabold">
                     DEVELOPMENT LAND
                   </span>
+                  <span className="absolute bottom-3 right-3 text-white font-display text-sm font-light drop-shadow-lg">$1,600,000</span>
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
-                  <div className="flex items-center justify-between mb-2">
-                    <h3 className="text-lg font-display font-light text-foreground">
-                      10811 San Jose Ave
-                    </h3>
-                    <span className="text-lg font-display font-light text-foreground">$1,600,000</span>
-                  </div>
+                  <h3 className="text-lg font-display font-light text-foreground mb-1">
+                    10811 San Jose Ave
+                  </h3>
                   <p className="text-muted-foreground mb-2">Del Valle, TX</p>
                   <div className="grid grid-cols-2 gap-3 mb-4">
                     <div>

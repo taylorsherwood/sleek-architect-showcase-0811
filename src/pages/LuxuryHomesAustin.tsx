@@ -4,7 +4,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { realEstateAgentSchema } from "@/components/SchemaMarkup";
-import AuthorBio from "@/components/AuthorBio";
+import AboutBlock from "@/components/AboutBlock";
 import FeaturedLuxuryListings from "@/components/FeaturedLuxuryListings";
 import RealScoutSearch from "@/components/RealScoutSearch";
 const FeaturedListings = lazy(() => import("@/components/FeaturedListings"));
@@ -146,12 +146,11 @@ const LuxuryHomesAustin = () => {
                 </Link>
               </div>
             </section>
-
-            <AuthorBio />
           </div>
         </div>
       </article>
 
+      <AboutBlock />
       <Footer />
     </div>);
 

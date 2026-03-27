@@ -139,7 +139,7 @@ const CommercialInvestment = () => {
                   <span className="absolute top-4 left-4 text-minimal bg-gold text-white px-3 py-1 font-extrabold">
                     MULTIFAMILY
                   </span>
-                  <span className="absolute bottom-3 right-3 text-white font-display text-sm font-light drop-shadow-lg">$2,500,000</span>
+                  <span className="absolute bottom-3 right-3 text-white font-display text-sm font-light bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-sm">$2,500,000</span>
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
                   <h3 className="text-lg font-display font-light text-foreground mb-1">
@@ -183,7 +183,7 @@ const CommercialInvestment = () => {
                   <span className="absolute top-4 left-4 text-minimal bg-gold text-white px-3 py-1 font-extrabold">
                     DEVELOPMENT LAND
                   </span>
-                  <span className="absolute bottom-3 right-3 text-white font-display text-sm font-light drop-shadow-lg">$1,600,000</span>
+                  <span className="absolute bottom-3 right-3 text-white font-display text-sm font-light bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-sm">$1,600,000</span>
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
                   <h3 className="text-lg font-display font-light text-foreground mb-1">
@@ -227,7 +227,7 @@ const CommercialInvestment = () => {
                   <span className="absolute top-4 left-4 text-minimal bg-gold text-white px-3 py-1 font-extrabold">
                     MULTIFAMILY
                   </span>
-                  <span className="absolute bottom-3 right-3 text-white font-display text-sm font-light drop-shadow-lg">Price Upon Request</span>
+                  <span className="absolute bottom-3 right-3 text-white font-display text-sm font-light bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-sm">Price Upon Request</span>
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
                   <h3 className="text-lg font-display font-light text-foreground mb-1">
@@ -271,7 +271,7 @@ const CommercialInvestment = () => {
                   <span className="absolute top-4 left-4 text-minimal bg-gold text-white px-3 py-1 font-extrabold">
                     RENTAL PORTFOLIO
                   </span>
-                  <span className="absolute bottom-3 right-3 text-white font-display text-sm font-light drop-shadow-lg">$550,000</span>
+                  <span className="absolute bottom-3 right-3 text-white font-display text-sm font-light bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-sm">$550,000</span>
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
                   <h3 className="text-lg font-display font-light text-foreground mb-1">
@@ -315,7 +315,7 @@ const CommercialInvestment = () => {
                   <span className="absolute top-4 left-4 text-minimal bg-gold text-white px-3 py-1 font-extrabold">
                     RENTAL PORTFOLIO
                   </span>
-                  <span className="absolute bottom-3 right-3 text-white font-display text-sm font-light drop-shadow-lg">$240,000</span>
+                  <span className="absolute bottom-3 right-3 text-white font-display text-sm font-light bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-sm">$240,000</span>
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
                   <h3 className="text-lg font-display font-light text-foreground mb-1">

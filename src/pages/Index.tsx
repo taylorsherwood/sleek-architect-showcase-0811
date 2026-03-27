@@ -111,6 +111,7 @@ const Index = () => {
       ])} />
       <Navigation />
       <Hero />
+      <RealScoutSearch />
 
       <AsSeenIn />
       <ExpertiseSection />

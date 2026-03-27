@@ -147,7 +147,21 @@ img {
     box-shadow: 0 8px 25px rgba(0,0,0,0.15);
   }
 
-  /* Scroll indicator animation */
+  /* RealScout widget button overrides */
+  realscout-advanced-search {
+    --rs-primary-color: hsl(var(--gold)) !important;
+    --rs-button-color: hsl(var(--gold)) !important;
+    --rs-button-bg: transparent !important;
+    --rs-accent-color: hsl(var(--gold)) !important;
+    --primary-color: hsl(var(--gold)) !important;
+    --button-color: hsl(var(--gold)) !important;
+  }
+  realscout-advanced-search::part(search-button),
+  realscout-advanced-search::part(button) {
+    background-color: hsl(var(--gold)) !important;
+    border-color: hsl(var(--gold)) !important;
+  }
+
   .hero-scroll-indicator {
     animation: hero-scroll-float 3s ease-in-out infinite;
   }

@@ -1,8 +1,8 @@
 import { lazy, Suspense } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 import { ScrollToTop } from "@/components/ScrollToTop";
-import FloatingContact from "@/components/FloatingContact";
-import AdvisoryBar from "@/components/AdvisoryBar";
+const FloatingContact = lazy(() => import("@/components/FloatingContact"));
+const AdvisoryBar = lazy(() => import("@/components/AdvisoryBar"));
 
 // Eagerly load the homepage for instant first paint
 import Index from "@/pages/Index";
@@ -48,10 +48,11 @@ const Invest = lazy(() => import("@/pages/Invest"));
 const Private = lazy(() => import("@/pages/Private"));
 const NotFound = lazy(() => import("@/pages/NotFound"));
 
-// Prefetch /connect chunk after homepage loads
+// Prefetch /connect chunk well after homepage is interactive
 if (typeof window !== "undefined") {
   window.addEventListener("load", () => {
-    requestIdleCallback?.(() => connectImport()) ?? setTimeout(() => connectImport(), 2000);
+    const prefetch = () => setTimeout(() => connectImport(), 4000);
+    requestIdleCallback?.(prefetch, { timeout: 8000 }) ?? prefetch();
   });
 }
 
@@ -120,8 +121,10 @@ const AppRoutes = () => {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>
-      <FloatingContact />
-      <AdvisoryBar />
+      <Suspense fallback={null}>
+        <FloatingContact />
+        <AdvisoryBar />
+      </Suspense>
     </>
   );
 };

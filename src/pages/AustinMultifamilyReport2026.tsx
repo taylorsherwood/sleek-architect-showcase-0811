@@ -301,7 +301,7 @@ const AustinMultifamilyReport2026 = () => {
             </div>
             <div className="space-y-3">
               {TAKEAWAYS.map((text, i) => (
-                <div key={i} className="flex items-center justify-center gap-3 p-4 bg-secondary/60 border border-border/60 rounded-sm">
+                <div key={i} className="flex items-center justify-center gap-3 p-4 bg-secondary border border-border/60 rounded-sm">
                   <CheckCircle2 className="h-5 w-5 text-[hsl(var(--gold))] flex-shrink-0" strokeWidth={1.6} />
                   <p className="text-foreground leading-relaxed">{text}</p>
                 </div>
@@ -312,7 +312,7 @@ const AustinMultifamilyReport2026 = () => {
       </section>
 
       {/* ════════ ABOUT ECHELON ════════ */}
-      <section className="py-10 md:py-12 bg-secondary/40">
+      <section className="py-10 md:py-12 bg-secondary">
         <div className="container mx-auto px-6">
           <div className="max-w-2xl mx-auto text-center">
             <p className="text-minimal text-[hsl(var(--gold))] mb-2">ABOUT</p>

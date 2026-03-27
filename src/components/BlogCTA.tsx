@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const BlogCTA = () => {
   return (
-    <section className="py-14 md:py-18 bg-secondary/30">
+    <section className="py-14 md:py-18 bg-secondary">
       <div className="max-w-3xl mx-auto px-6 text-center">
         <p className="text-minimal text-gold mb-4 tracking-[0.25em]">Opportunities</p>
         <h2 className="text-2xl md:text-3xl font-display font-light text-architectural mb-4">

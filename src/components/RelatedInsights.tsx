@@ -65,7 +65,7 @@ const RelatedInsights = ({ maxLinks = 5 }: Props) => {
   if (scored.length === 0) return null;
 
   return (
-    <section className="py-16 md:py-20 bg-muted/40">
+    <section className="py-16 md:py-20 bg-secondary">
       <div className="max-w-4xl mx-auto px-6">
         <p className="text-minimal text-gold mb-4 tracking-[0.2em]">Further Reading</p>
         <h2 className="text-2xl md:text-3xl font-display font-light text-architectural mb-10">

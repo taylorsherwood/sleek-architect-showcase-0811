@@ -71,7 +71,7 @@ const SearchPage = () => {
       </section>
 
       {/* ── SEO Content ── */}
-      <section className="py-28 bg-secondary/50">
+      <section className="py-28 bg-secondary">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-8">

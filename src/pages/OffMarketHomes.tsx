@@ -299,7 +299,7 @@ const OffMarketHomes = () => {
                   <Link
                     key={n.slug}
                     to={`/communities/${n.slug}`}
-                    className="group border border-border p-6 hover:border-foreground/30 transition-colors duration-300"
+                    className="group border-2 border-border p-6 hover:border-gold transition-colors duration-500"
                   >
                     <h3 className="text-lg font-display font-light text-architectural group-hover:text-muted-foreground transition-colors mb-2">
                       {n.name}

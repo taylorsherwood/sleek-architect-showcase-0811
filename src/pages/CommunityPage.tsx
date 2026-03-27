@@ -248,6 +248,9 @@ const CommunityPage = () => {
                 <Link to="/sell" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">
                   → SELLING YOUR AUSTIN HOME
                 </Link>
+                <Link to="/off-market-real-estate-austin" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">
+                  → OFF-MARKET & PRIVATE LISTINGS
+                </Link>
                 <Link to="/communities" className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal">
                   → ALL AUSTIN COMMUNITIES
                 </Link>

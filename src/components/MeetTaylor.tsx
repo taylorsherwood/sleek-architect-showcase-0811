@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Instagram } from "lucide-react";
 import echelonWatermark from "@/assets/echelon-watermark.png";
 
 const MeetTaylor = () => {
@@ -51,6 +52,16 @@ const MeetTaylor = () => {
               <p className="text-muted-foreground leading-relaxed max-w-md text-base md:text-xl mb-6">
                 With deep expertise across Austin's most sought-after neighborhoods — including Westlake Hills, Barton Creek, Tarrytown, and Lake Austin — Taylor works closely with buyers and sellers to ensure every transaction is handled with care, discretion, and strategic insight.
               </p>
+              <a
+                href="https://www.instagram.com/theinvestorbroker"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                className="inline-flex items-center gap-2 text-gold hover:opacity-80 transition-opacity duration-300"
+                aria-label="Follow Taylor Sherwood on Instagram"
+              >
+                <Instagram className="w-5 h-5" />
+                <span className="text-xs tracking-[0.15em] uppercase">@TheInvestorBroker</span>
+              </a>
             </div>
           </div>
 

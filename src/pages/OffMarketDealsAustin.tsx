@@ -73,11 +73,11 @@ const OffMarketDealsAustin = () => {
   return (
     <div className="min-h-screen bg-warm-cream">
       <SEOHead
-        title="How to Find Off-Market Real Estate Deals in Austin"
-        description="Learn how investors, developers, and luxury buyers find off-market real estate deals in Austin. Explore proven strategies, private deal sourcing, and Austin investment opportunities."
+        title="Off-Market Deals in Austin | Echelon Property Group"
+        description="How investors, developers, and luxury buyers find off-market real estate deals in Austin. Proven strategies and private deal sourcing for 2026."
         canonical="/blog/how-to-find-off-market-real-estate-deals-austin-2026"
-        ogTitle="How to Find Off-Market Real Estate Deals in Austin | 2026 Austin Investor Guide"
-        ogDescription="Learn how investors, developers, and luxury buyers find off-market real estate deals in Austin. Explore proven strategies, private deal sourcing, and Austin investment opportunities."
+        ogTitle="Off-Market Deals in Austin | 2026 Investor Guide"
+        ogDescription="How investors and luxury buyers find off-market real estate deals in Austin. Proven strategies and private deal sourcing."
       />
       <SchemaMarkup schema={blogPostingSchema} />
       <SchemaMarkup schema={faqSchema} />

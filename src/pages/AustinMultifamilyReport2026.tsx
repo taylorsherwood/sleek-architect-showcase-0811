@@ -186,9 +186,9 @@ const AustinMultifamilyReport2026 = () => {
   return (
     <div className="min-h-screen bg-background pb-14">
       <SEOHead
-        title="Austin Multifamily Market Outlook 2026"
-        description="Download the Austin Multifamily Market Outlook 2026 from Echelon Property Group. Review rent trends, vacancy, supply, and investor opportunities across Austin."
-        ogTitle="Austin Multifamily Market Outlook 2026"
+        title="Austin Multifamily Report 2026 | Echelon Property Group"
+        description="Download the Austin Multifamily Market Outlook 2026. Review rent trends, vacancy rates, supply pipeline, and investor opportunities across Austin."
+        ogTitle="Austin Multifamily Report 2026 | Echelon Property Group"
         ogDescription="Institutional-style Austin multifamily market analysis from Echelon Property Group."
       />
       <Helmet>

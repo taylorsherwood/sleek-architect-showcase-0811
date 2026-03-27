@@ -105,7 +105,7 @@ const IntroSection = () => {
   const stat4 = useCountDown(20, 1, 2000);
 
   return (
-    <section className="py-16 md:py-20 bg-[#FCFBF9]">
+    <section className="py-16 md:py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-16 items-center">

@@ -12,7 +12,7 @@ const RealScoutSearch = () => {
             >
               Explore the Market
             </p>
-            <h2
+            <h3
               className="font-display text-3xl md:text-[2.8rem] font-light leading-[1.1] tracking-[-0.01em] text-foreground"
             >
               Find Your Next

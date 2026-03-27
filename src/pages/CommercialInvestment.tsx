@@ -148,7 +148,7 @@ const CommercialInvestment = () => {
                       <p className="text-foreground font-medium text-sm">24</p>
                     </div>
                   </div>
-                  <p className="text-muted-foreground text-sm leading-relaxed mb-6">
+                  <p className="text-muted-foreground text-sm leading-relaxed mb-6 flex-grow">
                     24-unit value-add multifamily opportunity in South Austin. Well-positioned for rent growth and operational improvements in a high-demand rental corridor.
                   </p>
                   <Link

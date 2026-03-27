@@ -8,6 +8,7 @@ import expCommercialLogo from "@/assets/exp-commercial-logo-horizontal-white.web
 import gillisStreet from "@/assets/commercial-gillis-street.jpg";
 import sanJoseAve from "@/assets/commercial-san-jose-ave.jpg";
 import bremserAve from "@/assets/commercial-bremser-ave.jpg";
+import killeenPortfolio from "@/assets/commercial-killeen-portfolio.jpg";
 
 const Footer = lazy(() => import("@/components/Footer"));
 
@@ -251,9 +252,14 @@ const CommercialInvestment = () => {
               {/* Small Killeen Rental Portfolio */}
               <div className="border-2 border-border overflow-hidden group bg-card hover:border-gold transition-colors duration-500 flex flex-col">
                 <div className="relative overflow-hidden">
-                  <div className="w-full aspect-[4/3] bg-muted flex items-center justify-center">
-                    <span className="text-muted-foreground/40 text-sm tracking-widest uppercase">Photo Coming Soon</span>
-                  </div>
+                  <img
+                    src={killeenPortfolio}
+                    alt="Small Killeen Rental Portfolio — 9 rentable units, 100% occupied"
+                    title="Small Killeen Rental Portfolio — rental investment, Killeen TX"
+                    className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
+                    loading="lazy"
+                    decoding="async"
+                  />
                   <span className="absolute top-4 left-4 text-minimal bg-gold text-white px-3 py-1 font-extrabold">
                     RENTAL PORTFOLIO
                   </span>

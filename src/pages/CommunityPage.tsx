@@ -286,13 +286,13 @@ const CommunityPage = () => {
                     <Link
                       key={rc.slug}
                       to={`/communities/${rc.slug}`}
-                      className="group border border-border p-6 hover:border-foreground transition-colors duration-300"
+                      className="group border-2 border-border p-6 rounded-lg hover:border-gold transition-colors duration-500"
                     >
                       <p className="text-minimal text-gold mb-2">{rc.priceRange}</p>
                       <h3 className="text-xl font-display font-light text-architectural group-hover:text-muted-foreground transition-colors mb-2">
                         {rc.name}
                       </h3>
-                      <p className="text-minimal text-muted-foreground">VIEW COMMUNITY →</p>
+                      <p className="text-minimal text-muted-foreground group-hover:text-gold transition-colors duration-500">VIEW COMMUNITY →</p>
                     </Link>
                   ))}
                 </div>

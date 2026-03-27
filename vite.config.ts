@@ -18,6 +18,7 @@ const staticRoutes = [
   "/listings/commercial-investment-austin",
   "/communities",
   "/blog",
+  "/blog/how-to-find-off-market-real-estate-deals-austin-2026",
   "/contact",
   "/search",
   "/land",
@@ -27,7 +28,6 @@ const staticRoutes = [
   "/best-luxury-neighborhoods-austin",
   "/best-neighborhoods-in-austin-texas",
   "/austin-luxury-market-report",
-  "/off-market-luxury-homes-austin", // redirects to /off-market-real-estate-austin
   "/austin-luxury-homes-for-sale",
   "/austin-commercial-real-estate",
   "/home-value-austin",
@@ -36,9 +36,7 @@ const staticRoutes = [
   "/sell-home-austin",
   "/austin-real-estate-investment",
   "/land-for-sale-austin",
-  "/luxury-homes-austin", // redirects to /austin-luxury-homes-for-sale
   "/invest",
-  "/private", // redirects to /off-market-real-estate-austin
   "/private-opportunities",
   "/austin-multifamily-report-2026",
   "/why-billionaires-are-moving-to-austin",

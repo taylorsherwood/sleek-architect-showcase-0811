@@ -96,7 +96,9 @@ const OffMarketRealEstateAustin = () => {
 
   const formContent = submitted ? (
     <div className="text-center py-12 pt-20 flex flex-col items-center">
-      <img src={echelonLogo} alt="Echelon Property Group logo — Austin luxury real estate" className="h-[10.5rem] mb-4" />
+      <img src={echelonLogo} alt="Echelon Property Group logo — Austin luxury real estate" className="h-[10.5rem] mb-4"
+                    loading="lazy" decoding="async"
+                    />
       <h3 className="font-display text-2xl text-white mb-2">You're In</h3>
       <p className="text-white/60">We'll reach out within 24 hours with curated off-market opportunities.</p>
     </div>

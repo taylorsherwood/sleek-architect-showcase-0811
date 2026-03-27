@@ -129,7 +129,8 @@ const BlogPost = () => {
                 alt={`${post.title} - Austin luxury real estate`}
                 title={post.title}
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-              />
+                    loading="lazy" decoding="async"
+                    />
             </div>
             
             <div className="prose prose-lg max-w-none">
@@ -178,7 +179,7 @@ const BlogPost = () => {
                           alt={`${relatedPost.title} - Austin real estate insights`}
                           title={relatedPost.title}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                          loading="lazy"
+                          loading="lazy" decoding="async"
                         />
                       </div>
                       <h4 className="text-lg font-light text-architectural group-hover:text-muted-foreground transition-colors duration-300 mb-2">

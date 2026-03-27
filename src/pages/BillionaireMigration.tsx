@@ -57,7 +57,8 @@ const BillionaireMigration = () => {
           src={lakeAustinHero}
           alt="Aerial view of Lake Austin waterfront estates and Hill Country"
           className="absolute inset-0 w-full h-full object-cover object-center"
-        />
+                    loading="lazy" decoding="async"
+                    />
         <div
           className="absolute inset-0"
           style={{

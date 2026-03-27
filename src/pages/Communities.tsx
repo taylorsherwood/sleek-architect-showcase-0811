@@ -89,7 +89,7 @@ const Communities = () => {
                           alt={`Luxury homes for sale in ${community.name}, Austin Texas`}
                           title={`${community.name} homes for sale — Austin luxury real estate`}
                           className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
-                          loading="lazy"
+                          loading="lazy" decoding="async"
                         />
                       ) : (
                         <div className="w-full aspect-[4/3] bg-muted flex items-center justify-center">

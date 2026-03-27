@@ -88,7 +88,8 @@ const BeforeAfterSlider = ({
         className="block w-full h-auto"
         draggable={false}
         style={{ opacity: isLoaded ? 1 : 0, transition: "opacity 0.4s" }}
-      />
+                    loading="lazy" decoding="async"
+                    />
 
       {/* Before image (clipped) */}
       <div
@@ -106,7 +107,8 @@ const BeforeAfterSlider = ({
             maxWidth: "none",
           }}
           draggable={false}
-        />
+                    loading="lazy" decoding="async"
+                    />
       </div>
 
       {/* Divider line */}

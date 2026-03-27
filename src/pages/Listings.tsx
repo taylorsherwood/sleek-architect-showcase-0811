@@ -119,7 +119,7 @@ const Listings = () => {
                     alt={listing.address}
                     title={`${listing.address} — ${listing.price}`}
                     className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
-                    loading="lazy"
+                    loading="lazy" decoding="async"
                   />
                   <div className="absolute top-4 left-4 bg-background/90 backdrop-blur-sm px-5 py-2.5">
                     <span className="text-minimal text-foreground font-semibold">

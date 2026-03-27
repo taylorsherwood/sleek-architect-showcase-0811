@@ -366,7 +366,9 @@ const Sell = () => {
           className="pointer-events-none absolute right-[-5%] bottom-[-18%] w-[60vw] max-w-[800px] aspect-square opacity-[0.03]"
           aria-hidden="true"
         >
-          <img src={echelonWatermark} alt="" className="w-full h-full object-contain" />
+          <img src={echelonWatermark} alt="" className="w-full h-full object-contain"
+                    loading="lazy" decoding="async"
+                    />
         </div>
 
         <div className="container mx-auto px-6">

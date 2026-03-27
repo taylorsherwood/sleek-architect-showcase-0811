@@ -91,7 +91,8 @@ const OffMarketDealsAustin = () => {
           alt="Austin Texas skyline — off-market real estate investment opportunities"
           title="Off-market real estate deals in Austin Texas"
           className="absolute inset-0 w-full h-full object-cover object-center"
-        />
+                    loading="lazy" decoding="async"
+                    />
         <div
           className="absolute inset-0"
           style={{ background: "linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.55) 100%)" }}

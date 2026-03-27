@@ -207,7 +207,7 @@ const Private = () => {
                       src={seg.image}
                       alt={seg.alt}
                       className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700"
-                      loading="lazy"
+                      loading="lazy" decoding="async"
                     />
                   </div>
                   <div className="p-6 md:p-8">

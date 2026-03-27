@@ -456,7 +456,7 @@ const Buy = () => {
                         alt={listing.address}
                         title={`${listing.address} — ${listing.price}`}
                         className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
-                        loading="lazy" />
+                        loading="lazy" decoding="async" />
                       
                       <div className="absolute top-4 left-4 bg-background/90 backdrop-blur-sm px-4 py-2">
                         <span className="text-minimal text-foreground font-semibold">{listing.price}</span>
@@ -523,7 +523,7 @@ const Buy = () => {
                     alt={`${n.name} homes for sale in Austin`}
                     title={`${n.name} — luxury homes for sale in Austin TX`}
                     className="w-full aspect-[16/9] object-cover transition-transform duration-700 group-hover:scale-105"
-                    loading="lazy" />
+                    loading="lazy" decoding="async" />
                   
                     <div className="absolute bottom-4 left-4 flex items-center gap-2 bg-background/90 backdrop-blur-sm px-4 py-2">
                       <MapPin className="w-3.5 h-3.5 text-gold" />

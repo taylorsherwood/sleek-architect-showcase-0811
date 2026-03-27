@@ -121,8 +121,10 @@ const AppRoutes = () => {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>
-      <FloatingContact />
-      <AdvisoryBar />
+      <Suspense fallback={null}>
+        <FloatingContact />
+        <AdvisoryBar />
+      </Suspense>
     </>
   );
 };

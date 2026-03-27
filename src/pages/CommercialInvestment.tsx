@@ -359,7 +359,7 @@ const CommercialInvestment = () => {
       </section>
 
       {/* ── Market Overview + FAQ ── */}
-      <section className="py-16 md:py-24 bg-muted border-t border-border">
+      <section className="py-16 md:py-24 bg-background border-t border-border">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <p className="text-gold text-center mb-4 font-bold" style={labelStyle}>MARKET OVERVIEW</p>

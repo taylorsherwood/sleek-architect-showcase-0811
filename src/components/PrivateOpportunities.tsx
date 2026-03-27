@@ -188,7 +188,7 @@ const PrivateOpportunities = ({ variant = "light" }: PrivateOpportunitiesProps) 
                     className={`w-full px-4 py-3 rounded text-sm transition-colors focus:outline-none ${
                       isDark
                         ? "bg-white/10 border border-white/15 text-white placeholder:text-white/40 focus:border-[hsl(var(--gold))]"
-                        : "bg-background border border-border text-foreground placeholder:text-muted-foreground focus:border-[hsl(var(--gold))]"
+                        : "bg-card border border-border text-foreground placeholder:text-muted-foreground focus:border-[hsl(var(--gold))]"
                     }`}
                   />
                   {errors.name && (
@@ -205,7 +205,7 @@ const PrivateOpportunities = ({ variant = "light" }: PrivateOpportunitiesProps) 
                     className={`w-full px-4 py-3 rounded text-sm transition-colors focus:outline-none ${
                       isDark
                         ? "bg-white/10 border border-white/15 text-white placeholder:text-white/40 focus:border-[hsl(var(--gold))]"
-                        : "bg-background border border-border text-foreground placeholder:text-muted-foreground focus:border-[hsl(var(--gold))]"
+                        : "bg-card border border-border text-foreground placeholder:text-muted-foreground focus:border-[hsl(var(--gold))]"
                     }`}
                   />
                   {errors.email && (
@@ -222,7 +222,7 @@ const PrivateOpportunities = ({ variant = "light" }: PrivateOpportunitiesProps) 
                     className={`w-full px-4 py-3 rounded text-sm transition-colors focus:outline-none ${
                       isDark
                         ? "bg-white/10 border border-white/15 text-white placeholder:text-white/40 focus:border-[hsl(var(--gold))]"
-                        : "bg-background border border-border text-foreground placeholder:text-muted-foreground focus:border-[hsl(var(--gold))]"
+                        : "bg-card border border-border text-foreground placeholder:text-muted-foreground focus:border-[hsl(var(--gold))]"
                     }`}
                   />
                   {errors.phone && (
@@ -238,7 +238,7 @@ const PrivateOpportunities = ({ variant = "light" }: PrivateOpportunitiesProps) 
                       className={`w-full py-3 text-sm ${
                         isDark
                           ? "bg-white/10 border-white/15 text-white"
-                          : "bg-background border-border text-foreground"
+                          : "bg-card border-border text-foreground"
                       }`}
                     >
                       <SelectValue placeholder="Investment Range" />

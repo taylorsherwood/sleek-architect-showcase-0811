@@ -19,7 +19,7 @@ const Footer = lazy(() => import("@/components/Footer"));
 const NewsletterSection = lazy(async () => {
   return {
     default: () => (
-      <section className="py-16 md:py-20 bg-background">
+      <section className="pt-16 md:pt-20 pb-8 md:pb-10 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h3 className="text-3xl md:text-6xl font-light text-architectural mb-6 md:mb-8">
@@ -37,9 +37,9 @@ const NewsletterSection = lazy(async () => {
               BECOME AN ECHELON INSIDER
             </a>
             <div className="mt-6 flex items-center justify-center gap-4 md:gap-14 flex-wrap">
-              <img src="/static-assets/exp-commercial-logo.png" alt="eXp Commercial brokerage logo" title="eXp Commercial — Echelon Property Group" className="h-20 md:h-36 w-auto object-contain" loading="lazy" decoding="async" />
-              <img src="/static-assets/exp-realty-luxury-logo.png" alt="eXp Realty Luxury division logo" title="eXp Realty Luxury — Echelon Property Group" className="h-20 md:h-28 w-auto object-contain" loading="lazy" decoding="async" />
-              <img src="/static-assets/exp-realty-logo.png" alt="eXp Realty brokerage logo" title="eXp Realty — Echelon Property Group brokerage" className="h-20 md:h-36 w-auto object-contain" loading="lazy" decoding="async" />
+              <img src="/static-assets/exp-commercial-logo.png" alt="eXp Commercial brokerage logo" title="eXp Commercial — Echelon Property Group" className="h-24 md:h-60 w-auto object-contain" loading="lazy" decoding="async" />
+              <img src="/static-assets/exp-realty-luxury-logo.png" alt="eXp Realty Luxury division logo" title="eXp Realty Luxury — Echelon Property Group" className="h-24 md:h-44 w-auto object-contain" loading="lazy" decoding="async" />
+              <img src="/static-assets/exp-realty-logo.png" alt="eXp Realty brokerage logo" title="eXp Realty — Echelon Property Group brokerage" className="h-24 md:h-60 w-auto object-contain" loading="lazy" decoding="async" />
             </div>
           </div>
         </div>

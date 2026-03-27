@@ -452,6 +452,28 @@ const OffMarketRealEstateAustin = () => {
       </section>
 
       {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+          FAQ — Merged from /off-market-luxury-homes-austin
+      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
+      <section className="py-16 md:py-24 bg-[hsl(220,15%,8%)] border-t border-white/5">
+        <div className="container mx-auto px-6 max-w-4xl">
+          <p className="text-[hsl(var(--gold))] text-center mb-4 font-bold" style={labelStyle}>
+            FREQUENTLY ASKED QUESTIONS
+          </p>
+          <h2 className="font-display text-2xl md:text-3xl font-light text-white text-center mb-12">
+            Off-Market Real Estate in Austin
+          </h2>
+          <div className="space-y-8">
+            {faqs.map((faq, i) => (
+              <div key={i} className="border-b border-white/10 pb-6">
+                <h3 className="text-white font-medium text-base mb-2">{faq.question}</h3>
+                <p className="text-white/45 text-sm leading-relaxed">{faq.answer}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
           FINAL CTA
       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
       <section className="py-20 md:py-28 bg-[hsl(220,15%,8%)] border-t border-white/5">

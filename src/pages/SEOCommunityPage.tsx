@@ -209,6 +209,12 @@ const SEOCommunityPage = () => {
                   → AUSTIN LUXURY REAL ESTATE
                 </Link>
                 <Link
+                  to="/off-market-real-estate-austin"
+                  className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal"
+                >
+                  → OFF-MARKET & PRIVATE LISTINGS
+                </Link>
+                <Link
                   to="/communities"
                   className="text-foreground hover:text-muted-foreground transition-colors duration-300 text-minimal"
                 >

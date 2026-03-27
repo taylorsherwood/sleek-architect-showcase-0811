@@ -346,7 +346,7 @@ const Sell = () => {
 
       {/* ── Cinematic Video ── */}
       <div className="pt-16 md:pt-24">
-        <CinematicVideoSection />
+        <Suspense fallback={<div className="min-h-[300px]" />}><CinematicVideoSection /></Suspense>
       </div>
 
       {/* ── White spacer ── */}

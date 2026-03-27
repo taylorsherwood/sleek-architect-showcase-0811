@@ -78,7 +78,7 @@ const BillionaireMigration = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
-                to="/luxury-homes-austin"
+                to="/austin-luxury-homes-for-sale"
                 className="inline-block bg-primary text-primary-foreground hover:bg-gold hover:text-white px-10 py-4 transition-colors duration-300"
                 style={labelStyle}
               >

@@ -56,7 +56,7 @@ const NotFound = () => {
             Return Home
           </Link>
           <Link
-            to="/luxury-homes-austin"
+            to="/austin-luxury-homes-for-sale"
             className="inline-block border-2 border-primary-foreground/20 text-primary-foreground/70 px-10 py-4 hover:border-gold hover:text-gold transition-colors duration-500 tracking-[0.2em] uppercase font-medium"
             style={{ fontSize: "0.65rem", fontFamily: '"Raleway", sans-serif' }}
           >

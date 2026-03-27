@@ -235,7 +235,7 @@ const OffMarketDealsAustin = () => {
               </ul>
               <p className="text-foreground/60">
                 This is especially true for buyers pursuing{" "}
-                <Link to="/luxury-homes-austin" className="text-foreground/80 underline hover:text-foreground/50">luxury homes in Austin</Link>,
+                <Link to="/austin-luxury-homes-for-sale" className="text-foreground/80 underline hover:text-foreground/50">luxury homes in Austin</Link>,
                 development parcels,{" "}
                 <Link to="/austin-real-estate-investment" className="text-foreground/80 underline hover:text-foreground/50">investment property</Link>,
                 or strategic land plays in high-growth corridors.
@@ -371,7 +371,7 @@ const OffMarketDealsAustin = () => {
               </p>
               <p className="text-foreground/60">Whether a client is searching for:</p>
               <ul className="space-y-2 text-foreground/60 pl-5">
-                <li className="flex items-start gap-3"><span className="text-gold mt-1.5 text-xs">■</span><Link to="/luxury-homes-austin" className="text-foreground/80 underline hover:text-foreground/50">Austin luxury homes</Link></li>
+                <li className="flex items-start gap-3"><span className="text-gold mt-1.5 text-xs">■</span><Link to="/austin-luxury-homes-for-sale" className="text-foreground/80 underline hover:text-foreground/50">Austin luxury homes</Link></li>
                 <li className="flex items-start gap-3"><span className="text-gold mt-1.5 text-xs">■</span><Link to="/private-opportunities" className="text-foreground/80 underline hover:text-foreground/50">Private investment opportunities</Link></li>
                 <li className="flex items-start gap-3"><span className="text-gold mt-1.5 text-xs">■</span>Redevelopment plays</li>
                 <li className="flex items-start gap-3"><span className="text-gold mt-1.5 text-xs">■</span><Link to="/land" className="text-foreground/80 underline hover:text-foreground/50">Land for future development</Link></li>

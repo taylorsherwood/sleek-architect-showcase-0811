@@ -31,7 +31,7 @@ const SellHomeAustin = () => {
       <section className="pt-32 pb-16">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <p className="text-minimal text-gold mb-4">SELLER SERVICES</p>
+             <p className="text-minimal text-gold mb-4">\n\n\n\n\n\nSELLER SERVICES</p>
             <h1 className="text-5xl md:text-7xl font-display font-light text-architectural mb-8">
               Sell Your Home in Austin Texas
             </h1>

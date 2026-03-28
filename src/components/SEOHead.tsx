@@ -11,6 +11,7 @@ interface SEOHeadProps {
   canonical?: string;
   ogTitle?: string;
   ogDescription?: string;
+  ogType?: "website" | "article";
 }
 
 const normalizePageTitle = (rawTitle: string) => {

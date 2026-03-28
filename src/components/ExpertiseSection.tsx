@@ -34,35 +34,33 @@ const expertiseBlocks = [
 
 const ExpertiseSection = () => {
   return (
-    <section className="py-16 md:py-20 bg-background">
+    <section className="py-20 md:py-28 bg-background">
       <div className="container mx-auto px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-14 md:mb-20">
             <p className="text-minimal text-gold mb-4 font-extrabold">OUR EXPERTISE</p>
-            <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-6">
+            <h2 className="text-3xl md:text-[2.75rem] font-display font-light text-architectural mb-6 leading-tight">
               Austin Real Estate Expertise
             </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">From luxury homes and land development to commercial acquisitions and investment strategy  Echelon Property Group delivers full-spectrum real estate advisory across Austin and the Texas Hill Country.
-
-
+            <p className="text-muted-foreground max-w-2xl mx-auto text-[0.95rem] leading-relaxed">From luxury homes and land development to commercial acquisitions and investment strategy — Echelon Property Group delivers full-spectrum real estate advisory across Austin and the Texas Hill Country.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {expertiseBlocks.map((block) =>
             <Link
               key={block.title}
               to={block.link}
-              className="group border-2 border-border p-8 hover:border-gold shadow-[var(--shadow-elegant)] hover:shadow-[var(--shadow-architectural)] hover:-translate-y-1 transition-all duration-500">
+              className="group flex flex-col border-2 border-border px-6 py-8 md:px-7 md:py-9 hover:border-gold shadow-[var(--shadow-elegant)] hover:shadow-[var(--shadow-architectural)] hover:-translate-y-1 transition-all duration-500">
               
-                <block.icon className="w-8 h-8 text-gold mb-4" />
-                <h3 className="text-2xl font-display font-light text-architectural mb-3 group-hover:text-muted-foreground transition-colors duration-300">
+                <block.icon className="w-7 h-7 text-gold mb-5" />
+                <h3 className="text-xl font-display font-light text-architectural mb-2.5 group-hover:text-muted-foreground transition-colors duration-300">
                   {block.title}
                 </h3>
-                <p className="text-muted-foreground leading-relaxed mb-6">
+                <p className="text-muted-foreground text-[0.875rem] leading-relaxed mb-6 flex-1">
                   {block.description}
                 </p>
-                <span className="text-minimal text-foreground group-hover:text-gold transition-colors duration-300">
+                <span className="text-minimal text-foreground group-hover:text-gold transition-colors duration-300 mt-auto">
                   {block.linkText} →
                 </span>
               </Link>

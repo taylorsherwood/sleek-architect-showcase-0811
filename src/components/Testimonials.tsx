@@ -69,7 +69,7 @@ const Testimonials = () => {
   return (
     <section className="pt-16 md:pt-20 pb-20 md:pb-24 bg-secondary">
       <div className="container mx-auto px-6">
-        <div className="<div className="max-w-[60rem] mx-auto"> mx-auto">
+        <div className="max-w-[60rem] mx-auto">
           {/* Header */}
           <div className="text-center mb-10">
             <p className="text-minimal text-gold mb-3 font-extrabold">

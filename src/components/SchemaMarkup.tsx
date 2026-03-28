@@ -330,7 +330,7 @@ export function createBlogPostingSchema(post: { title: string; description: stri
     "url": post.url,
     "image": post.image || OG,
     "datePublished": post.datePublished,
-    "dateModified": post.datePublished,
+    "dateModified": "2026-03-27",
     "author": {
       "@type": "Person",
       "@id": `${SITE}/#taylor`,

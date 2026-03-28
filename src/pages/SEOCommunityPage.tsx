@@ -2,7 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";
-import SchemaMarkup, { createFAQSchema } from "@/components/SchemaMarkup";
+import SchemaMarkup, { createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import { seoCommunityPages } from "@/data/seoCommunityData";
 import AboutBlock from "@/components/AboutBlock";
 

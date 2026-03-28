@@ -101,7 +101,7 @@ const Testimonials = () => {
                     "0 2px 16px hsl(40 10% 50% / 0.05), 0 4px 20px hsl(40 10% 50% / 0.03)",
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = "translateY(-3px) scale(1.015)";
+                  e.currentTarget.style.transform = "translateY(-4px) scale(1.04)";
                   e.currentTarget.style.boxShadow =
                     "0 8px 32px hsl(40 10% 50% / 0.09), 0 3px 12px hsl(40 10% 50% / 0.05)";
                 }}

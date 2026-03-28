@@ -69,84 +69,84 @@ const Testimonials = () => {
   return (
     <section className="pt-16 md:pt-20 pb-20 md:pb-24 bg-secondary">
       <div className="container mx-auto px-6">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           {/* Header */}
-          <div className="text-center mb-12">
+          <div className="text-center mb-10">
             <p className="text-minimal text-gold mb-3 font-extrabold">
               CLIENT EXPERIENCES
             </p>
-            <h2 className="text-3xl md:text-5xl font-display font-light text-architectural mb-4">
+            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-3">
               Trusted by Buyers, Sellers, and
               <br className="hidden md:block" />
               <span className="italic"> Investors</span> Across Austin
             </h2>
-            <p className="text-muted-foreground text-base max-w-2xl mx-auto font-light leading-relaxed">
+            <p className="text-muted-foreground text-sm max-w-xl mx-auto font-light leading-relaxed">
               Real experiences from clients represented across Austin's most
               competitive neighborhoods.
             </p>
           </div>
 
           {/* Testimonial Grid */}
-          <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
+          <div className="grid md:grid-cols-2 gap-5 lg:gap-6">
             {testimonials.map((t, i) => (
               <div
                 key={i}
                 ref={(el) => { cardsRef.current[i] = el; }}
-                className={`group relative bg-card rounded-xl p-7 md:p-8 flex flex-col justify-between overflow-hidden border border-border/30${i === testimonials.length - 1 ? " md:col-span-2 md:max-w-[calc(50%-1rem)] md:mx-auto" : ""}`}
+                className={`group relative bg-card rounded-lg p-5 md:p-6 flex flex-col justify-between overflow-hidden border border-border/30${i === testimonials.length - 1 ? " md:col-span-2 md:max-w-[calc(50%-0.75rem)] md:mx-auto" : ""}`}
                 style={{
                   opacity: 0,
                   transform: "translateY(40px)",
                   transition: `opacity 500ms ease ${i * 120}ms, transform 500ms ease ${i * 120}ms, box-shadow 500ms ease`,
                   boxShadow:
-                    "0 2px 20px hsl(40 10% 50% / 0.06), 0 6px 28px hsl(40 10% 50% / 0.04)",
+                    "0 2px 16px hsl(40 10% 50% / 0.05), 0 4px 20px hsl(40 10% 50% / 0.03)",
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = "translateY(-4px) scale(1.03)";
+                  e.currentTarget.style.transform = "translateY(-3px) scale(1.015)";
                   e.currentTarget.style.boxShadow =
-                    "0 12px 40px hsl(40 10% 50% / 0.1), 0 4px 16px hsl(40 10% 50% / 0.06)";
+                    "0 8px 32px hsl(40 10% 50% / 0.09), 0 3px 12px hsl(40 10% 50% / 0.05)";
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.transform = "translateY(0) scale(1)";
                   e.currentTarget.style.boxShadow =
-                    "0 2px 20px hsl(40 10% 50% / 0.06), 0 6px 28px hsl(40 10% 50% / 0.04)";
+                    "0 2px 16px hsl(40 10% 50% / 0.05), 0 4px 20px hsl(40 10% 50% / 0.03)";
                 }}
               >
                 {/* Quote icon */}
-                <div className="mb-5">
+                <div className="mb-3.5">
                   <div
-                    className="w-10 h-10 rounded-full flex items-center justify-center"
+                    className="w-8 h-8 rounded-full flex items-center justify-center"
                     style={{
                       background:
                         "linear-gradient(135deg, hsl(var(--gold) / 0.12), hsl(var(--gold) / 0.06))",
                     }}
                   >
-                    <Quote className="w-4 h-4 text-gold" />
+                    <Quote className="w-3.5 h-3.5 text-gold" />
                   </div>
                 </div>
 
                 {/* Quote text */}
-                <p className="text-foreground text-base md:text-lg leading-[1.75] font-light italic mb-7 flex-1">
+                <p className="text-foreground text-sm md:text-[0.935rem] leading-[1.7] font-light italic mb-5 flex-1">
                   "{t.quote}"
                 </p>
 
                 {/* Attribution */}
-                <div className="border-t border-border/60 pt-4">
-                  <p className="font-display text-lg text-foreground tracking-tight">
+                <div className="border-t border-border/60 pt-3">
+                  <p className="font-display text-base text-foreground tracking-tight">
                     {t.name}
                   </p>
-                  <p className="text-minimal text-gold mt-2">{t.type}</p>
+                  <p className="text-minimal text-gold mt-1.5">{t.type}</p>
                   {t.context && (
-                    <p className="text-sm text-muted-foreground mt-1.5 font-light">
+                    <p className="text-xs text-muted-foreground mt-1 font-light">
                       {t.context}
                     </p>
                   )}
                 </div>
 
-                {/* Secondary logo watermark — static path, lazy loaded */}
+                {/* Secondary logo watermark */}
                 <img
                   src="/static-assets/echelon-secondary-logo.png"
                   alt=""
-                  className="absolute bottom-4 right-4 w-10 h-auto pointer-events-none"
+                  className="absolute bottom-3 right-3 w-8 h-auto pointer-events-none"
                   aria-hidden="true"
                   loading="lazy"
                   decoding="async"

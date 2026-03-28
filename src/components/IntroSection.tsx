@@ -24,10 +24,7 @@ suffix = "") =>
   }, []);
 
   useEffect(() => {
-    if (!visible) {
-      setCount(0);
-      return;
-    }
+    if (!visible) return;
     const startTime = performance.now();
     let raf: number;
     const animate = (now: number) => {

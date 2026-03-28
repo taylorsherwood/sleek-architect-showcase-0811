@@ -98,6 +98,11 @@ const SEOCommunityPage = () => {
       />
       <SchemaMarkup schema={createFAQSchema(community.faqs)} />
       <SchemaMarkup schema={createPageSchema(community.name, community.slug)} />
+      <SchemaMarkup schema={createBreadcrumbSchema([
+        { name: "Home", url: `${SITE_URL}/` },
+        { name: "Communities", url: `${SITE_URL}/communities` },
+        { name: `${community.name} Homes for Sale`, url: `${SITE_URL}/${community.slug}` },
+      ])} />
       <Navigation />
 
       {/* Hero */}

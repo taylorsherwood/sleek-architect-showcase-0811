@@ -59,9 +59,13 @@ const BlogPost = () => {
   }
 
   const postUrl = `https://www.echelonpropertygroup.com/blog/${post.id}`;
+
+  // Skip BlogPosting schema for off-topic posts
+  const skipBlogPosting = ["sustainable-architecture-future", "minimalism-modern-living", "urban-planning-community-spaces"].includes(post.id);
+
   const schemas: Record<string, unknown>[] = [
     createArticleSchema(post.title, post.excerpt, post.date, post.author, post.image),
-    createBlogPostingSchema({ title: post.title, description: post.excerpt, datePublished: post.date, author: post.author, image: post.image, url: postUrl }),
+    ...(skipBlogPosting ? [] : [createBlogPostingSchema({ title: post.title, description: post.excerpt, datePublished: post.date, author: post.author, image: post.image, url: postUrl })]),
     createBreadcrumbSchema([
       { name: "Home", url: "https://www.echelonpropertygroup.com/" },
       { name: "Blog", url: "https://www.echelonpropertygroup.com/blog" },

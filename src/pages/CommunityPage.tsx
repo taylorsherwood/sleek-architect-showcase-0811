@@ -154,6 +154,11 @@ const CommunityPage = () => {
       />
       <SchemaMarkup schema={createFAQSchema(allFaqs)} />
       <SchemaMarkup schema={createCommunitySchema(community)} />
+      <SchemaMarkup schema={createBreadcrumbSchema([
+        { name: "Home", url: `${SITE_URL}/` },
+        { name: "Communities", url: `${SITE_URL}/communities` },
+        { name: community.name, url: `${SITE_URL}/communities/${community.slug}` },
+      ])} />
       <Navigation />
 
       {/* Hero */}

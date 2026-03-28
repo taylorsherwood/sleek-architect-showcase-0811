@@ -50,6 +50,18 @@ const BillionaireMigration = () => {
         canonical="/blog/why-billionaires-are-moving-to-austin"
       />
       <SchemaMarkup schema={articleSchema} />
+      <SchemaMarkup schema={createBreadcrumbSchema([
+        { name: "Home", url: "https://www.echelonpropertygroup.com/" },
+        { name: "Blog", url: "https://www.echelonpropertygroup.com/blog" },
+        { name: "Why Billionaires Are Moving to Austin", url: "https://www.echelonpropertygroup.com/blog/why-billionaires-are-moving-to-austin" },
+      ])} />
+      <SchemaMarkup schema={createBlogPostingSchema({
+        title: "Why Billionaires Are Moving to Austin",
+        description: "Why founders and billionaires are relocating to Austin TX. How wealth migration is reshaping Lake Austin, Westlake, and the luxury real estate market.",
+        datePublished: "2026-02-15",
+        author: "Taylor Sherwood",
+        url: "https://www.echelonpropertygroup.com/blog/why-billionaires-are-moving-to-austin",
+      })} />
       <Navigation />
 
       {/* Hero */}

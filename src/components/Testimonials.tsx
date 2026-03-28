@@ -92,7 +92,7 @@ const Testimonials = () => {
               <div
                 key={i}
                 ref={(el) => { cardsRef.current[i] = el; }}
-                className={`group relative bg-card rounded-lg px-5 pt-4 pb-5 md:px-5 md:pt-4 md:pb-5 flex flex-col justify-between overflow-hidden border border-border/30${i === testimonials.length - 1 ? " md:col-span-2 md:max-w-[calc(50%-0.625rem)] md:mx-auto" : ""}`}
+                className={`group relative bg-card rounded-lg px-6 pt-5 pb-6 md:px-7 md:pt-6 md:pb-7 flex flex-col justify-between overflow-hidden border border-border/30${i === testimonials.length - 1 ? " md:col-span-2 md:max-w-[calc(50%-0.75rem)] md:mx-auto" : ""}`}
                 style={{
                   opacity: 0,
                   transform: "translateY(40px)",

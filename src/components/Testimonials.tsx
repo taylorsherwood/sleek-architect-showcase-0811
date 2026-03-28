@@ -69,7 +69,7 @@ const Testimonials = () => {
   return (
     <section className="pt-16 md:pt-20 pb-20 md:pb-24 bg-secondary">
       <div className="container mx-auto px-6">
-        <div className="max-w-[56rem] mx-auto">
+        <div className="max-w-[60rem] mx-auto">
           {/* Header */}
           <div className="text-center mb-10">
             <p className="text-minimal text-gold mb-3 font-extrabold">
@@ -87,12 +87,12 @@ const Testimonials = () => {
           </div>
 
           {/* Testimonial Grid */}
-          <div className="grid md:grid-cols-2 gap-4 lg:gap-5">
+          <div className="grid md:grid-cols-2 gap-5 lg:gap-6">
             {testimonials.map((t, i) => (
               <div
                 key={i}
                 ref={(el) => { cardsRef.current[i] = el; }}
-                className={`group relative bg-card rounded-lg px-5 pt-4 pb-5 md:px-5 md:pt-4 md:pb-5 flex flex-col justify-between overflow-hidden border border-border/30${i === testimonials.length - 1 ? " md:col-span-2 md:max-w-[calc(50%-0.625rem)] md:mx-auto" : ""}`}
+                className={`group relative bg-card rounded-lg px-6 pt-5 pb-6 md:px-7 md:pt-6 md:pb-7 flex flex-col justify-between overflow-hidden border border-border/30${i === testimonials.length - 1 ? " md:col-span-2 md:max-w-[calc(50%-0.75rem)] md:mx-auto" : ""}`}
                 style={{
                   opacity: 0,
                   transform: "translateY(40px)",
@@ -112,7 +112,7 @@ const Testimonials = () => {
                 }}
               >
                 {/* Quote icon */}
-                <div className="mb-2.5">
+                <div className="mb-3.5">
                   <div
                     className="w-7 h-7 rounded-full flex items-center justify-center"
                     style={{
@@ -125,12 +125,12 @@ const Testimonials = () => {
                 </div>
 
                 {/* Quote text */}
-                <p className="text-foreground/[0.83] text-[0.9rem] md:text-[0.95rem] leading-[1.6] font-light italic mb-3.5 flex-1">
+                <p className="text-foreground/[0.83] text-[0.9rem] md:text-[0.95rem] leading-[1.75] font-light italic mb-5 flex-1">
                   "{t.quote}"
                 </p>
 
                 {/* Divider */}
-                <div className="h-px mb-2.5" style={{ background: "linear-gradient(to right, transparent, hsl(38 20% 72% / 0.45), transparent)" }} />
+                <div className="h-px mb-3.5" style={{ background: "linear-gradient(to right, transparent, hsl(38 20% 72% / 0.45), transparent)" }} />
 
                 {/* Attribution */}
                 <div>

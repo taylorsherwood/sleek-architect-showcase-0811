@@ -180,9 +180,9 @@ const Listings = () => {
       </Suspense>
 
       {/* Commercial & Investment Listings */}
-      <section className="py-10 md:py-14 bg-background border-t border-border">
+      <section className="py-16 md:py-24 bg-background border-t border-border">
         <div className="container mx-auto px-6">
-          <div className="max-w-7xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <div className="mb-16">
               <p className="text-gold text-center mb-4 font-bold" style={commercialLabelStyle}>COMMERCIAL & INVESTMENT</p>
               <h2 className="font-display text-2xl md:text-3xl font-light text-foreground text-center mb-4">
@@ -193,50 +193,48 @@ const Listings = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-6">
               {commercialListings.map((listing, index) => (
                 <div
                   key={index}
-                  className="border-2 border-border overflow-hidden group bg-card hover:border-gold transition-colors duration-500"
+                  className="border border-border/60 overflow-hidden group bg-card hover:border-gold hover:shadow-[0_0_0_1px_hsl(var(--gold))] transition-colors duration-500 flex flex-col"
                 >
                   <div className="relative overflow-hidden">
                     <img
                       src={listing.image}
                       alt={listing.alt}
                       title={listing.title}
-                      className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
+                      className="w-full aspect-[3/2] object-cover transition-transform duration-700 group-hover:scale-105"
                       loading="lazy"
                       decoding="async"
                     />
                     <span className="absolute top-4 left-4 text-minimal bg-gold text-white px-3 py-1 font-extrabold">
                       {listing.badge}
                     </span>
+                    <span className="absolute bottom-3 right-3 text-white text-sm font-light font-[Roboto] bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-sm">{listing.price}</span>
                   </div>
-                  <div className="p-8">
-                    <div className="flex items-center justify-between mb-4">
-                      <h3 className="text-xl font-display font-light text-foreground">
-                        {listing.name}
-                      </h3>
-                      <span className="text-2xl font-display font-light text-foreground">{listing.price}</span>
-                    </div>
-                    <p className="text-muted-foreground mb-4">{listing.location}</p>
-                    <div className="grid grid-cols-2 gap-4 mb-6">
+                  <div className="p-6 flex flex-col flex-grow">
+                    <h3 className="text-lg font-light text-foreground mb-1 font-[Roboto]">
+                      {listing.name}
+                    </h3>
+                    <p className="text-muted-foreground mb-2 font-[Roboto]">{listing.location}</p>
+                    <div className="grid grid-cols-2 gap-3 mb-4">
                       <div>
                         <p className="text-muted-foreground mb-1" style={commercialLabelStyle}>ASSET TYPE</p>
-                        <p className="text-foreground font-medium text-sm">{listing.assetType}</p>
+                        <p className="text-foreground font-medium text-sm font-[Roboto]">{listing.assetType}</p>
                       </div>
                       <div>
                         <p className="text-muted-foreground mb-1" style={commercialLabelStyle}>UNITS</p>
-                        <p className="text-foreground font-medium text-sm">{listing.units}</p>
+                        <p className="text-foreground font-medium text-sm font-[Roboto]">{listing.units}</p>
                       </div>
                     </div>
-                    <p className="text-muted-foreground text-sm leading-relaxed mb-6">
+                    <p className="text-muted-foreground text-sm leading-relaxed font-[Roboto] mb-4 flex-grow">
                       {listing.description}
                     </p>
                     <Link
                       to="/contact"
-                      className="inline-block bg-white text-primary border border-border hover:bg-gold hover:text-white hover:border-gold px-8 py-4 transition-all duration-300 ease-out active:scale-[0.98]"
-                      style={commercialLabelStyle}
+                      className="border border-border/50 rounded-sm px-6 py-2 text-foreground/70 hover:bg-gold hover:text-white hover:border-gold transition-all duration-300 ease-out self-center"
+                      style={commercialCtaStyle}
                     >
                       REQUEST INFORMATION
                     </Link>

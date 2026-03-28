@@ -36,7 +36,7 @@ const ExpertiseSection = () => {
   return (
     <section className="py-20 md:py-28 bg-background">
       <div className="container mx-auto px-6">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-[58rem] mx-auto">
           <div className="text-center mb-14 md:mb-20">
             <p className="text-minimal text-gold mb-4 font-extrabold">OUR EXPERTISE</p>
             <h2 className="text-3xl md:text-[2.75rem] font-display font-light text-architectural mb-6 leading-tight">
@@ -46,7 +46,7 @@ const ExpertiseSection = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {expertiseBlocks.map((block) =>
             <Link
               key={block.title}

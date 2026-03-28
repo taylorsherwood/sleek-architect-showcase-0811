@@ -59,10 +59,7 @@ const useCountDown = (start: number, end: number, duration = 2000) => {
   }, []);
 
   useEffect(() => {
-    if (!visible) {
-      setCount(start);
-      return;
-    }
+    if (!visible) return;
     const startTime = performance.now();
     let raf: number;
     const animate = (now: number) => {

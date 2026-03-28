@@ -69,7 +69,7 @@ const Testimonials = () => {
   return (
     <section className="pt-16 md:pt-20 pb-20 md:pb-24 bg-secondary">
       <div className="container mx-auto px-6">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-[56rem] mx-auto">
           {/* Header */}
           <div className="text-center mb-10">
             <p className="text-minimal text-gold mb-3 font-extrabold">
@@ -87,12 +87,12 @@ const Testimonials = () => {
           </div>
 
           {/* Testimonial Grid */}
-          <div className="grid md:grid-cols-2 gap-5 lg:gap-6">
+          <div className="grid md:grid-cols-2 gap-4 lg:gap-5">
             {testimonials.map((t, i) => (
               <div
                 key={i}
                 ref={(el) => { cardsRef.current[i] = el; }}
-                className={`group relative bg-card rounded-lg p-5 md:p-6 flex flex-col justify-between overflow-hidden border border-border/30${i === testimonials.length - 1 ? " md:col-span-2 md:max-w-[calc(50%-0.75rem)] md:mx-auto" : ""}`}
+                className={`group relative bg-card rounded-lg px-5 pt-4 pb-5 md:px-5 md:pt-4 md:pb-5 flex flex-col justify-between overflow-hidden border border-border/30${i === testimonials.length - 1 ? " md:col-span-2 md:max-w-[calc(50%-0.625rem)] md:mx-auto" : ""}`}
                 style={{
                   opacity: 0,
                   transform: "translateY(40px)",
@@ -112,31 +112,31 @@ const Testimonials = () => {
                 }}
               >
                 {/* Quote icon */}
-                <div className="mb-3.5">
+                <div className="mb-2.5">
                   <div
-                    className="w-8 h-8 rounded-full flex items-center justify-center"
+                    className="w-7 h-7 rounded-full flex items-center justify-center"
                     style={{
                       background:
                         "linear-gradient(135deg, hsl(var(--gold) / 0.12), hsl(var(--gold) / 0.06))",
                     }}
                   >
-                    <Quote className="w-3.5 h-3.5 text-gold" />
+                    <Quote className="w-3 h-3 text-gold" />
                   </div>
                 </div>
 
                 {/* Quote text */}
-                <p className="text-foreground text-sm md:text-[0.935rem] leading-[1.7] font-light italic mb-5 flex-1">
+                <p className="text-foreground text-[0.84rem] md:text-[0.9rem] leading-[1.6] font-light italic mb-3.5 flex-1">
                   "{t.quote}"
                 </p>
 
                 {/* Attribution */}
-                <div className="border-t border-border/60 pt-3">
-                  <p className="font-display text-base text-foreground tracking-tight">
+                <div className="border-t border-border/60 pt-2.5">
+                  <p className="font-display text-[0.925rem] text-foreground tracking-tight">
                     {t.name}
                   </p>
-                  <p className="text-minimal text-gold mt-1.5">{t.type}</p>
+                  <p className="text-minimal text-gold mt-1">{t.type}</p>
                   {t.context && (
-                    <p className="text-xs text-muted-foreground mt-1 font-light">
+                    <p className="text-xs text-muted-foreground mt-0.5 font-light">
                       {t.context}
                     </p>
                   )}

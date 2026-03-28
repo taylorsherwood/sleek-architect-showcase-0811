@@ -113,7 +113,7 @@ const stats = [
 ];
 
 function useCountUp(target: number, duration = 2600, from = 0, countDown = false) {
-  const [value, setValue] = useState(from);
+  const [value, setValue] = useState(target);
   const ref = useRef<HTMLDivElement>(null);
   const started = useRef(false);
 

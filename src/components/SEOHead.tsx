@@ -25,7 +25,7 @@ const resolveCanonicalUrl = (pathname: string, canonical?: string) => {
   return `${SITE_URL}${canonical.startsWith("/") ? canonical : `/${canonical}`}`;
 };
 
-const SEOHead = ({ title, description, canonical, ogTitle, ogDescription }: SEOHeadProps) => {
+const SEOHead = ({ title, description, canonical, ogTitle, ogDescription, ogType = "website" }: SEOHeadProps) => {
   const { pathname } = useLocation();
   const pageTitle = normalizePageTitle(title);
   const seoTitle = `${pageTitle} | ${BRAND_NAME}`;
@@ -42,7 +42,7 @@ const SEOHead = ({ title, description, canonical, ogTitle, ogDescription }: SEOH
       <meta property="og:title" content={openGraphTitle} />
       <meta property="og:description" content={openGraphDescription} />
       <meta property="og:url" content={canonicalUrl} />
-      <meta property="og:type" content="website" />
+      <meta property="og:type" content={ogType} />
       <meta property="og:site_name" content={BRAND_NAME} />
       <meta property="og:image" content={`${SITE_URL}/og-image.png`} />
 

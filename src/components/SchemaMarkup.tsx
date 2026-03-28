@@ -65,6 +65,7 @@ const areasServed = [
   { "@type": "Place" as const, "name": "Rollingwood, Texas" },
   { "@type": "Place" as const, "name": "Lake Austin" },
   { "@type": "Place" as const, "name": "Lake Travis" },
+  { "@type": "Place" as const, "name": "Dripping Springs, Texas" },
 ];
 
 const openingHoursSpec = {

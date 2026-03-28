@@ -202,7 +202,7 @@ export const localBusinessSchema = {
   },
   "areaServed": areasServed,
   "openingHoursSpecification": openingHoursSpec,
-  "priceRange": "$$$",
+  "priceRange": "$$$$",
   "sameAs": sameAs,
 };
 

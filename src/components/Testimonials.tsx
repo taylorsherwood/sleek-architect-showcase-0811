@@ -125,7 +125,7 @@ const Testimonials = () => {
                 </div>
 
                 {/* Quote text */}
-                <p className="text-foreground/[0.83] text-[0.9rem] md:text-[0.95rem] leading-[1.6] font-light italic mb-3.5 flex-1">
+                <p className="text-foreground/[0.83] text-[0.9rem] md:text-[0.95rem] leading-[1.75] font-light italic mb-5 flex-1">
                   "{t.quote}"
                 </p>
 

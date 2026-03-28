@@ -92,7 +92,7 @@ const Testimonials = () => {
               <div
                 key={i}
                 ref={(el) => { cardsRef.current[i] = el; }}
-                className={`group relative bg-card rounded-xl p-7 md:p-8 flex flex-col justify-between hover:-translate-y-1 hover:scale-[1.03] overflow-hidden border border-border/30${i === testimonials.length - 1 ? " md:col-span-2 md:max-w-[calc(50%-1rem)] md:mx-auto" : ""}`}
+                className={`group relative bg-card rounded-xl p-7 md:p-8 flex flex-col justify-between overflow-hidden border border-border/30${i === testimonials.length - 1 ? " md:col-span-2 md:max-w-[calc(50%-1rem)] md:mx-auto" : ""}`}
                 style={{
                   opacity: 0,
                   transform: "translateY(40px)",
@@ -101,10 +101,12 @@ const Testimonials = () => {
                     "0 2px 20px hsl(40 10% 50% / 0.06), 0 6px 28px hsl(40 10% 50% / 0.04)",
                 }}
                 onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = "translateY(-4px) scale(1.03)";
                   e.currentTarget.style.boxShadow =
                     "0 12px 40px hsl(40 10% 50% / 0.1), 0 4px 16px hsl(40 10% 50% / 0.06)";
                 }}
                 onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = "translateY(0) scale(1)";
                   e.currentTarget.style.boxShadow =
                     "0 2px 20px hsl(40 10% 50% / 0.06), 0 6px 28px hsl(40 10% 50% / 0.04)";
                 }}

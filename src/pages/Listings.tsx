@@ -102,7 +102,7 @@ const commercialListings = [
     badge: "RENTAL HOMES",
     name: "709/711/713 Bremser Ave",
     location: "Killeen, TX",
-    price: "$350,000",
+    price: "$240,000",
     assetType: "Single-Family Rentals",
     units: "3 Homes",
     description: "Three individual rental homes on Bremser Ave in Killeen. Each unit separately metered. Ideal for a buy-and-hold investor seeking affordable entry into the Central Texas rental market.",

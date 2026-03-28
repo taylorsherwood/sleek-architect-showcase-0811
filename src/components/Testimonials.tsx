@@ -96,14 +96,14 @@ const Testimonials = () => {
                 style={{
                   opacity: 0,
                   transform: "translateY(40px)",
-                  transition: `opacity 500ms ease ${i * 120}ms, transform 500ms ease ${i * 120}ms, box-shadow 500ms ease`,
+                  transition: `opacity 500ms ease ${i * 120}ms, transform 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94) ${i * 120}ms, box-shadow 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94)`,
                   boxShadow:
                     "0 2px 16px hsl(40 10% 50% / 0.05), 0 4px 20px hsl(40 10% 50% / 0.03)",
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = "translateY(-4px) scale(1.04)";
+                  e.currentTarget.style.transform = "translateY(-6px) scale(1.06)";
                   e.currentTarget.style.boxShadow =
-                    "0 8px 32px hsl(40 10% 50% / 0.09), 0 3px 12px hsl(40 10% 50% / 0.05)";
+                    "0 12px 40px hsl(40 10% 50% / 0.12), 0 4px 16px hsl(40 10% 50% / 0.06)";
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.transform = "translateY(0) scale(1)";

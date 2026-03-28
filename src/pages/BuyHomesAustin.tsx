@@ -22,6 +22,7 @@ const BuyHomesAustin = () => {
       <SEOHead
         title="Buy a Home in Austin Texas | Echelon Property Group"
         description="Buy a home in Austin TX with expert representation. Luxury homes, investment properties, and off-market opportunities in Austin's best neighborhoods."
+        canonical="/buy"
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createFAQSchema(faqs)} />

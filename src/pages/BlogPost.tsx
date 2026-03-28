@@ -93,7 +93,7 @@ const BlogPost = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title={`${post.title} | Echelon Property Group`.slice(0, 60)}
+        title={post.title}
         description={post.excerpt}
         ogType="article"
       />

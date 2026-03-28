@@ -12,6 +12,9 @@ import listing2 from "@/assets/listing-2.jpg";
 import listing3 from "@/assets/listing-3.jpg";
 import gillisStreet from "@/assets/commercial-gillis-street.jpg";
 import sanJoseAve from "@/assets/commercial-san-jose-ave.jpg";
+import bremserAve from "@/assets/commercial-bremser-ave.jpg";
+import killeenPortfolio from "@/assets/commercial-killeen-portfolio.jpg";
+import s11thStreet from "@/assets/commercial-s-11th-street.webp";
 
 const listings = [
   {
@@ -67,6 +70,42 @@ const commercialListings = [
     assetType: "Redevelopment Land",
     units: "3.06 Acres",
     description: "3.06-acre redevelopment parcel with existing mobile homes and zero zoning restrictions. Ideal for ground-up multifamily, mixed-use, or commercial development in the high-growth Del Valle corridor.",
+  },
+  {
+    image: s11thStreet,
+    alt: "717 S. 11th St, Temple TX — 6-unit multifamily",
+    title: "717 S. 11th St — multifamily investment, Temple TX",
+    badge: "MULTIFAMILY",
+    name: "717 S. 11th St.",
+    location: "Temple, TX",
+    price: "Price Upon Request",
+    assetType: "6-Unit Multifamily",
+    units: "Recently Renovated",
+    description: "Recently renovated 6-unit multifamily property in Temple, TX. Contact for pricing and additional details.",
+  },
+  {
+    image: killeenPortfolio,
+    alt: "Small Killeen Rental Portfolio — 9 rentable units, 100% occupied",
+    title: "Small Killeen Rental Portfolio — rental investment, Killeen TX",
+    badge: "RENTAL PORTFOLIO",
+    name: "Small Killeen Rental Portfolio",
+    location: "Killeen, TX",
+    price: "$550,000",
+    assetType: "Rental Portfolio",
+    units: "9 Rentable Units",
+    description: "9-unit rental portfolio in Killeen, TX. Fully occupied with a 14% cap rate.",
+  },
+  {
+    image: bremserAve,
+    alt: "709/711/713 Bremser Ave, Killeen TX — 3 individual rental homes",
+    title: "709/711/713 Bremser Ave — rental homes, Killeen TX",
+    badge: "RENTAL HOMES",
+    name: "709/711/713 Bremser Ave",
+    location: "Killeen, TX",
+    price: "$350,000",
+    assetType: "Single-Family Rentals",
+    units: "3 Homes",
+    description: "Three individual rental homes on Bremser Ave in Killeen. Each unit separately metered. Ideal for a buy-and-hold investor seeking affordable entry into the Central Texas rental market.",
   },
 ];
 
@@ -193,7 +232,7 @@ const Listings = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {commercialListings.map((listing, index) => (
                 <div
                   key={index}

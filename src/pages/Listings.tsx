@@ -32,7 +32,15 @@ const commercialLabelStyle = {
   fontSize: "0.6rem" as const,
   letterSpacing: "0.3em",
   textTransform: "uppercase" as const,
-  fontFamily: '"Raleway", sans-serif',
+  fontFamily: '"Roboto", sans-serif',
+};
+
+const commercialCtaStyle = {
+  fontSize: "0.6rem" as const,
+  letterSpacing: "0.08em",
+  textTransform: "uppercase" as const,
+  fontFamily: '"Roboto", sans-serif',
+  fontWeight: 500 as const,
 };
 
 const commercialListings = [

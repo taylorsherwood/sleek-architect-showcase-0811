@@ -125,18 +125,21 @@ const Testimonials = () => {
                 </div>
 
                 {/* Quote text */}
-                <p className="text-foreground text-[0.84rem] md:text-[0.9rem] leading-[1.6] font-light italic mb-3.5 flex-1">
+                <p className="text-foreground/75 text-[0.84rem] md:text-[0.9rem] leading-[1.6] font-light italic mb-3.5 flex-1">
                   "{t.quote}"
                 </p>
 
+                {/* Divider */}
+                <div className="h-px mb-2.5" style={{ background: "linear-gradient(to right, transparent, hsl(38 20% 72% / 0.45), transparent)" }} />
+
                 {/* Attribution */}
-                <div className="border-t border-border/60 pt-2.5">
+                <div>
                   <p className="font-display text-[0.925rem] text-foreground tracking-tight">
                     {t.name}
                   </p>
-                  <p className="text-minimal text-gold mt-1">{t.type}</p>
+                  <p className="text-minimal text-gold/80 mt-1">{t.type}</p>
                   {t.context && (
-                    <p className="text-xs text-muted-foreground mt-0.5 font-light">
+                    <p className="text-xs text-muted-foreground/70 mt-0.5 font-light">
                       {t.context}
                     </p>
                   )}

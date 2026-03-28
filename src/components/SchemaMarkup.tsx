@@ -129,8 +129,13 @@ export const realEstateAgentSchema = {
   },
   "areaServed": areasServed,
   "openingHoursSpecification": openingHoursSpec,
-  "priceRange": "$$$",
+  "priceRange": "$$$$",
   "sameAs": sameAs,
+  "hasCredential": {
+    "@type": "EducationalOccupationalCredential",
+    "credentialCategory": "Professional Certification",
+    "name": "Certified Luxury Home Marketing Specialist (CLHMS)",
+  },
   "employee": {
     "@type": "Person",
     "@id": `${SITE}/#taylor`,

@@ -4,7 +4,7 @@ import Navigation from "@/components/Navigation";
 const Footer = lazy(() => import("@/components/Footer"));
 import AboutBlock from "@/components/AboutBlock";
 import SEOHead from "@/components/SEOHead";
-import SchemaMarkup, { createFAQSchema } from "@/components/SchemaMarkup";
+import SchemaMarkup, { createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import { communityPages } from "@/data/communityData";
 
 const SITE_URL = "https://www.echelonpropertygroup.com";
@@ -154,6 +154,11 @@ const CommunityPage = () => {
       />
       <SchemaMarkup schema={createFAQSchema(allFaqs)} />
       <SchemaMarkup schema={createCommunitySchema(community)} />
+      <SchemaMarkup schema={createBreadcrumbSchema([
+        { name: "Home", url: `${SITE_URL}/` },
+        { name: "Communities", url: `${SITE_URL}/communities` },
+        { name: community.name, url: `${SITE_URL}/communities/${community.slug}` },
+      ])} />
       <Navigation />
 
       {/* Hero */}

@@ -3,7 +3,7 @@ import { createElement, lazy, Suspense } from "react";
 import Navigation from "@/components/Navigation";
 const Footer = lazy(() => import("@/components/Footer"));
 import SEOHead from "@/components/SEOHead";
-import SchemaMarkup from "@/components/SchemaMarkup";
+import SchemaMarkup, { createBreadcrumbSchema, createBlogPostingSchema } from "@/components/SchemaMarkup";
 import AuthorBio from "@/components/AuthorBio";
 import lakeAustinHero from "@/assets/lake-austin-aerial.jpg";
 import RelatedInsights from "@/components/RelatedInsights";
@@ -47,8 +47,21 @@ const BillionaireMigration = () => {
       <SEOHead
         title="Why Billionaires Move to Austin | Echelon Property Group"
         description="Why founders and billionaires are relocating to Austin TX. How wealth migration is reshaping Lake Austin, Westlake, and the luxury real estate market."
+        canonical="/blog/why-billionaires-are-moving-to-austin"
       />
       <SchemaMarkup schema={articleSchema} />
+      <SchemaMarkup schema={createBreadcrumbSchema([
+        { name: "Home", url: "https://www.echelonpropertygroup.com/" },
+        { name: "Blog", url: "https://www.echelonpropertygroup.com/blog" },
+        { name: "Why Billionaires Are Moving to Austin", url: "https://www.echelonpropertygroup.com/blog/why-billionaires-are-moving-to-austin" },
+      ])} />
+      <SchemaMarkup schema={createBlogPostingSchema({
+        title: "Why Billionaires Are Moving to Austin",
+        description: "Why founders and billionaires are relocating to Austin TX. How wealth migration is reshaping Lake Austin, Westlake, and the luxury real estate market.",
+        datePublished: "2026-02-15",
+        author: "Taylor Sherwood",
+        url: "https://www.echelonpropertygroup.com/blog/why-billionaires-are-moving-to-austin",
+      })} />
       <Navigation />
 
       {/* Hero */}

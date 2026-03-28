@@ -2,7 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";
-import SchemaMarkup, { createFAQSchema } from "@/components/SchemaMarkup";
+import SchemaMarkup, { createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import { seoCommunityPages } from "@/data/seoCommunityData";
 import AboutBlock from "@/components/AboutBlock";
 
@@ -98,6 +98,11 @@ const SEOCommunityPage = () => {
       />
       <SchemaMarkup schema={createFAQSchema(community.faqs)} />
       <SchemaMarkup schema={createPageSchema(community.name, community.slug)} />
+      <SchemaMarkup schema={createBreadcrumbSchema([
+        { name: "Home", url: `${SITE_URL}/` },
+        { name: "Communities", url: `${SITE_URL}/communities` },
+        { name: `${community.name} Homes for Sale`, url: `${SITE_URL}/${community.slug}` },
+      ])} />
       <Navigation />
 
       {/* Hero */}

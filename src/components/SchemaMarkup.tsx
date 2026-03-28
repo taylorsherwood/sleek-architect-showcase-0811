@@ -65,6 +65,7 @@ const areasServed = [
   { "@type": "Place" as const, "name": "Rollingwood, Texas" },
   { "@type": "Place" as const, "name": "Lake Austin" },
   { "@type": "Place" as const, "name": "Lake Travis" },
+  { "@type": "Place" as const, "name": "Dripping Springs, Texas" },
 ];
 
 const openingHoursSpec = {
@@ -128,8 +129,13 @@ export const realEstateAgentSchema = {
   },
   "areaServed": areasServed,
   "openingHoursSpecification": openingHoursSpec,
-  "priceRange": "$$$",
+  "priceRange": "$$$$",
   "sameAs": sameAs,
+  "hasCredential": {
+    "@type": "EducationalOccupationalCredential",
+    "credentialCategory": "Professional Certification",
+    "name": "Certified Luxury Home Marketing Specialist (CLHMS)",
+  },
   "employee": {
     "@type": "Person",
     "@id": `${SITE}/#taylor`,
@@ -143,7 +149,7 @@ export const taylorSherwoodSchema = {
   "@type": "Person",
   "@id": `${SITE}/#taylor`,
   "name": "Taylor Sherwood",
-  "jobTitle": "Real Estate Agent",
+  "jobTitle": "Luxury Real Estate Advisor & Broker",
   "description": "Austin real estate professional specializing in luxury homes, residential real estate, and land development opportunities across Austin's most desirable neighborhoods.",
   "url": `${SITE}/about`,
   "telephone": "+1-512-661-3843",
@@ -156,11 +162,19 @@ export const taylorSherwoodSchema = {
     "url": SITE,
   },
   "address": { ...address },
+  "hasCredential": {
+    "@type": "EducationalOccupationalCredential",
+    "credentialCategory": "Professional Certification",
+    "name": "Certified Luxury Home Marketing Specialist (CLHMS)",
+  },
   "knowsAbout": [
     "Luxury Real Estate",
     "Residential Real Estate",
     "Land Development",
     "Austin Texas Real Estate",
+    "Commercial Real Estate",
+    "Investment Property",
+    "Off-Market Real Estate",
   ],
   "sameAs": sameAs,
 };
@@ -188,7 +202,7 @@ export const localBusinessSchema = {
   },
   "areaServed": areasServed,
   "openingHoursSpecification": openingHoursSpec,
-  "priceRange": "$$$",
+  "priceRange": "$$$$",
   "sameAs": sameAs,
 };
 
@@ -316,7 +330,7 @@ export function createBlogPostingSchema(post: { title: string; description: stri
     "url": post.url,
     "image": post.image || OG,
     "datePublished": post.datePublished,
-    "dateModified": post.datePublished,
+    "dateModified": "2026-03-27",
     "author": {
       "@type": "Person",
       "@id": `${SITE}/#taylor`,

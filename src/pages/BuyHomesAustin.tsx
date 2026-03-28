@@ -28,6 +28,7 @@ const BuyHomesAustin = () => {
       <SchemaMarkup schema={createFAQSchema(faqs)} />
       <Navigation />
 
+      <div className="h-24" />
       <section className="pt-32 pb-16">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">

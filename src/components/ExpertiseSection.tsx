@@ -47,24 +47,33 @@ const ExpertiseSection = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {expertiseBlocks.map((block) =>
-            <Link
-              key={block.title}
-              to={block.link}
-              className="group flex flex-col border-2 border-border px-6 py-8 md:px-7 md:py-9 hover:border-gold shadow-[var(--shadow-elegant)] hover:shadow-[var(--shadow-architectural)] hover:-translate-y-1 transition-all duration-500">
-              
-                <block.icon className="w-7 h-7 text-gold mb-5" />
-                <h3 className="text-xl font-display font-light text-architectural mb-2.5 group-hover:text-muted-foreground transition-colors duration-300">
-                  {block.title}
-                </h3>
-                <p className="text-muted-foreground text-[0.875rem] leading-relaxed mb-6 flex-1">
-                  {block.description}
-                </p>
-                <span className="text-minimal text-foreground group-hover:text-gold transition-colors duration-300 mt-auto">
-                  {block.linkText} →
-                </span>
-              </Link>
-            )}
+            {expertiseBlocks.map((block, index) => {
+              const isFeatured = index === 0;
+              return (
+                <Link
+                  key={block.title}
+                  to={block.link}
+                  className={`group flex flex-col border-2 hover:border-gold shadow-[var(--shadow-elegant)] hover:shadow-[var(--shadow-architectural)] hover:-translate-y-1 transition-all duration-500 ${
+                    isFeatured
+                      ? "border-border/80 px-6 py-10 md:px-8 md:py-11 bg-[hsl(38_20%_96%/0.35)] dark:bg-[hsl(38_15%_15%/0.2)]"
+                      : "border-border px-6 py-8 md:px-7 md:py-9"
+                  }`}>
+                  
+                    <block.icon className={`text-gold mb-5 ${isFeatured ? "w-8 h-8" : "w-7 h-7"}`} />
+                    <h3 className={`font-display font-light text-architectural mb-2.5 group-hover:text-muted-foreground transition-colors duration-300 ${
+                      isFeatured ? "text-[1.35rem]" : "text-xl"
+                    }`}>
+                      {block.title}
+                    </h3>
+                    <p className="text-muted-foreground text-[0.875rem] leading-relaxed mb-6 flex-1">
+                      {block.description}
+                    </p>
+                    <span className="text-minimal text-foreground group-hover:text-gold transition-colors duration-300 mt-auto">
+                      {block.linkText} →
+                    </span>
+                  </Link>
+              );
+            })}
           </div>
         </div>
       </div>

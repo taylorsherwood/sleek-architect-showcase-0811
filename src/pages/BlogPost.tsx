@@ -95,6 +95,7 @@ const BlogPost = () => {
       <SEOHead
         title={`${post.title} | Echelon Property Group`.slice(0, 60)}
         description={post.excerpt}
+        ogType="article"
       />
       {schemas.map((s, i) => <SchemaMarkup key={i} schema={s} />)}
       <Navigation />

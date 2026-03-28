@@ -8,7 +8,7 @@ duration = 2000,
 prefix = "",
 suffix = "") =>
 {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(end);
   const [visible, setVisible] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -46,7 +46,7 @@ suffix = "") =>
 };
 
 const useCountDown = (start: number, end: number, duration = 2000) => {
-  const [count, setCount] = useState(start);
+  const [count, setCount] = useState(end);
   const [visible, setVisible] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 

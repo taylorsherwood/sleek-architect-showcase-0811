@@ -48,6 +48,7 @@ const BillionaireMigration = () => {
         title="Why Billionaires Move to Austin | Echelon Property Group"
         description="Why founders and billionaires are relocating to Austin TX. How wealth migration is reshaping Lake Austin, Westlake, and the luxury real estate market."
         canonical="/blog/why-billionaires-are-moving-to-austin"
+        ogType="article"
       />
       <SchemaMarkup schema={articleSchema} />
       <SchemaMarkup schema={createBreadcrumbSchema([

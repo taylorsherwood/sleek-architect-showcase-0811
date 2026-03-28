@@ -78,6 +78,7 @@ const OffMarketDealsAustin = () => {
         description="How investors, developers, and luxury buyers find off-market real estate deals in Austin. Proven strategies and private deal sourcing for 2026."
         canonical="/blog/how-to-find-off-market-real-estate-deals-austin-2026"
         ogTitle="Off-Market Deals in Austin | 2026 Investor Guide"
+        ogType="article"
         ogDescription="How investors and luxury buyers find off-market real estate deals in Austin. Proven strategies and private deal sourcing."
       />
       <SchemaMarkup schema={blogPostingSchema} />

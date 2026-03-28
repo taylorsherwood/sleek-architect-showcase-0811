@@ -3,7 +3,7 @@ import { createElement, lazy, Suspense } from "react";
 import Navigation from "@/components/Navigation";
 const Footer = lazy(() => import("@/components/Footer"));
 import SEOHead from "@/components/SEOHead";
-import SchemaMarkup from "@/components/SchemaMarkup";
+import SchemaMarkup, { createBreadcrumbSchema, createBlogPostingSchema } from "@/components/SchemaMarkup";
 import AuthorBio from "@/components/AuthorBio";
 import lakeAustinHero from "@/assets/lake-austin-aerial.jpg";
 import RelatedInsights from "@/components/RelatedInsights";

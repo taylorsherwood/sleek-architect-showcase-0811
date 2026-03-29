@@ -161,7 +161,7 @@ const About = () => {
                 </p>
               </div>
               <div className="border-l-2 border-gold pl-8">
-                <h3 className="text-xl font-display font-medium mb-3">White-Glove Service</h3>
+                <h3 className="text-xl font-display font-medium mb-3"><Link to="/austin-luxury-homes-for-sale" className="hover:text-[hsl(var(--gold))] transition-colors duration-500">White-Glove Service</Link></h3>
                 <p className="text-muted-foreground">
                   From staging consultation to closing day, every detail is managed with precision 
                   and personal attention.

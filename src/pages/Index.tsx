@@ -554,30 +554,30 @@ const insights = [
 ];
 
 const InsightsSection = () => (
-  <section className="py-20 md:py-28 bg-secondary">
+  <section className="py-24 md:py-32 bg-secondary">
     <div className="container mx-auto px-6">
       <div className="max-w-[1320px] mx-auto">
         <ScrollReveal>
-          <div className="text-center mb-14">
-            <p className="text-minimal text-gold mb-5 font-extrabold">MARKET INTELLIGENCE</p>
-            <h2 className="font-display text-3xl md:text-[2.8rem] font-light text-architectural leading-[1.12]">
+          <div className="text-center mb-16">
+            <p className="text-minimal text-gold mb-5 font-extrabold tracking-[0.22em]">MARKET INTELLIGENCE</p>
+            <h2 className="font-display text-3xl md:text-[2.5rem] font-light text-foreground/90 leading-[1.1] tracking-[-0.01em]">
               Insights & <span className="italic">Market Intelligence</span>
             </h2>
           </div>
         </ScrollReveal>
 
-        <ScrollReveal delay={100}>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <ScrollReveal delay={120} stagger={70}>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
             {insights.map((article) => (
-              <Link key={article.to} to={article.to} className="group block bg-card border border-border/30 rounded-sm overflow-hidden
-                transition-all duration-500 hover:-translate-y-1 hover:shadow-elegant">
+              <Link key={article.to} to={article.to} className="group block bg-card border border-border/20 rounded-[2px] overflow-hidden
+                transition-all duration-[500ms] hover:-translate-y-[2px] hover:shadow-[0_8px_24px_-8px_hsl(var(--foreground)/0.06)]">
                 <div className="p-6 flex flex-col h-full">
-                  <p className="text-gold text-[0.55rem] tracking-[0.2em] uppercase font-bold mb-3">{article.category}</p>
-                  <h3 className="font-display text-base font-medium text-foreground mb-3 leading-snug group-hover:text-gold transition-colors duration-300">
+                  <p className="text-gold/80 text-[0.5rem] tracking-[0.22em] uppercase font-semibold mb-3">{article.category}</p>
+                  <h3 className="font-display text-[15px] font-medium text-foreground/80 mb-3 leading-[1.35] group-hover:text-gold transition-colors duration-[400ms] tracking-[0.01em]">
                     {article.title}
                   </h3>
-                  <p className="text-muted-foreground/60 text-[13px] font-light leading-relaxed flex-1">{article.excerpt}</p>
-                  <span className="mt-4 text-gold/70 text-[0.55rem] tracking-[0.2em] uppercase font-semibold group-hover:text-gold transition-colors duration-300">
+                  <p className="text-muted-foreground/50 text-[13px] font-light leading-[1.75] flex-1">{article.excerpt}</p>
+                  <span className="mt-5 text-gold/50 text-[0.5rem] tracking-[0.22em] uppercase font-semibold group-hover:text-gold transition-colors duration-[400ms]">
                     READ MORE →
                   </span>
                 </div>
@@ -586,13 +586,15 @@ const InsightsSection = () => (
           </div>
         </ScrollReveal>
 
-        <div className="text-center mt-14">
-          <Link to="/blog"
-            className="inline-block border border-foreground/20 text-foreground px-10 py-[0.9rem] hover:bg-gold hover:text-white hover:border-gold transition-all duration-300"
-            style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.6rem", letterSpacing: "0.25em", textTransform: "uppercase", fontWeight: 600 }}>
-            EXPLORE ALL INSIGHTS
-          </Link>
-        </div>
+        <ScrollReveal delay={200}>
+          <div className="text-center mt-16">
+            <Link to="/blog"
+              className="inline-block border border-foreground/15 text-foreground px-10 py-[0.9rem] hover:bg-gold hover:text-white hover:border-gold transition-all duration-[400ms]"
+              style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.58rem", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 600 }}>
+              EXPLORE ALL INSIGHTS
+            </Link>
+          </div>
+        </ScrollReveal>
       </div>
     </div>
   </section>

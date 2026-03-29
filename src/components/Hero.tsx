@@ -166,8 +166,11 @@ const Hero = () => {
           }}>
           
           <p
-            className="text-warm-cream/55 mb-6 reveal font-bold"
+            className="text-warm-cream/55 mb-6 font-bold transition-all duration-1000 will-change-[opacity,transform]"
             style={{
+              opacity: heroVisible ? 1 : 0,
+              transform: heroVisible ? "translateY(0)" : "translateY(10px)",
+              transitionTimingFunction: "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
               fontFamily: '"Raleway", sans-serif',
               fontSize: "0.65rem",
               letterSpacing: "0.38em",

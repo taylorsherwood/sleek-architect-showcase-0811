@@ -311,12 +311,14 @@ const AdvisorSection = () => (
                 href="https://www.instagram.com/theinvestorbroker/"
                 target="_blank"
                 rel="nofollow noopener noreferrer"
-                className="inline-flex items-center gap-2.5 text-gold hover:text-gold/80 transition-colors duration-300 mt-10 group/ig"
+                className="inline-flex items-center gap-2.5 text-gold mt-10"
                 style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.62rem", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 600 }}
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-                @THEINVESTORBROKER
-                <span className="block h-px w-0 group-hover/ig:w-full bg-gold/50 transition-all duration-500" />
+                <span className="relative">
+                  @THEINVESTORBROKER
+                  <span className="absolute left-0 -bottom-0.5 w-full h-px bg-gold scale-x-0 hover:scale-x-100 transition-transform duration-500 origin-center" />
+                </span>
               </a>
             </ScrollReveal>
           </div>

@@ -226,54 +226,67 @@ const TrustStrip = () => (
 );
 
 /* ─────────────────────────────────────────────
-   SECTION 3 — POSITIONING
+   SECTION 3 — ADVISOR POSITIONING
    ───────────────────────────────────────────── */
 
-const Positioning = () => (
-  <section className="py-20 md:py-28 bg-background">
+const AdvisorSection = () => (
+  <section className="py-24 md:py-32 bg-background">
     <div className="container mx-auto px-6">
       <div className="max-w-[1320px] mx-auto">
         <ScrollReveal>
-          <div className="grid md:grid-cols-2 gap-16 lg:gap-24 items-center">
-            {/* Text */}
-            <div>
-              <p className="text-minimal text-gold mb-5 font-extrabold">WHY ECHELON</p>
-              <h2 className="font-display text-3xl md:text-[2.8rem] font-light text-architectural mb-6 leading-[1.12]">
+          <div className="grid md:grid-cols-2 gap-14 lg:gap-20 items-center">
+            {/* Headshot */}
+            <div className="relative group">
+              <div className="overflow-hidden rounded-[4px]" style={{ boxShadow: "0 20px 50px -16px hsl(var(--foreground) / 0.1)" }}>
+                <img
+                  src="/static-assets/taylor-headshot.jpg"
+                  alt="Taylor Sherwood — Austin luxury real estate advisor and founder of Echelon Property Group"
+                  title="Taylor Sherwood, Echelon Property Group"
+                  className="w-full aspect-[3/4] object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.01]"
+                  loading="lazy" decoding="async"
+                />
+              </div>
+            </div>
+
+            {/* Copy */}
+            <div className="max-w-[480px]">
+              <p className="text-minimal text-gold mb-6 font-extrabold">
+                STRATEGIC REAL ESTATE ADVISOR
+              </p>
+
+              <h2 className="font-display text-3xl md:text-[2.6rem] font-light text-architectural mb-8 leading-[1.12]">
                 Luxury Real Estate,
                 <br />
                 <span className="italic">Without the Noise</span>
               </h2>
-              <p className="text-muted-foreground text-[15px] leading-relaxed mb-8 max-w-lg font-light">
-                Most agents list homes. We provide strategic advisory — curating opportunities,
-                negotiating with precision, and delivering a level of discretion that luxury
-                transactions demand.
-              </p>
-              <ul className="space-y-4 mb-10">
-                {[
-                  "Access to private and pre-market inventory",
-                  "Strategic negotiation and positioning",
-                  "Tailored, discreet client experience",
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-3">
-                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-gold shrink-0" />
-                    <span className="text-foreground/80 text-[15px] font-light">{item}</span>
-                  </li>
-                ))}
-              </ul>
-              <Link to="/contact"
-                className="inline-block border border-foreground/20 text-foreground px-10 py-[0.9rem] hover:bg-gold hover:text-white hover:border-gold transition-all duration-300"
-                style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.6rem", letterSpacing: "0.25em", textTransform: "uppercase", fontWeight: 600 }}>
-                START A CONVERSATION
-              </Link>
-            </div>
 
-            {/* Image */}
-            <div className="relative overflow-hidden aspect-[4/5]">
-              <img src="/static-assets/community-lake-austin.jpg"
-                alt="Luxury lakefront property on Lake Austin"
-                className="w-full h-full object-cover"
-                loading="lazy" decoding="async" />
-              <div className="absolute inset-0 bg-gradient-to-t from-foreground/10 via-transparent to-transparent" />
+              <div className="space-y-5 mb-10">
+                <p className="text-foreground/75 text-[15px] leading-[1.8] font-light">
+                  You don't need more listings — you need access, strategy, and execution.
+                </p>
+                <p className="text-foreground/75 text-[15px] leading-[1.8] font-light">
+                  I work with a select group of clients to acquire and sell high-value
+                  properties across Austin, including private and off-market opportunities
+                  not publicly available.
+                </p>
+                <p className="text-foreground/75 text-[15px] leading-[1.8] font-light">
+                  Every decision is guided by market intelligence, negotiation leverage,
+                  and a clear understanding of long-term value.
+                </p>
+              </div>
+
+              <div className="flex flex-col sm:flex-row items-start gap-5">
+                <Link to="/contact"
+                  className="inline-block border border-foreground/20 text-foreground px-10 py-[0.9rem] hover:bg-gold hover:text-white hover:border-gold transition-all duration-300"
+                  style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.58rem", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 600 }}>
+                  WORK WITH ME
+                </Link>
+                <Link to="/past-transactions"
+                  className="inline-flex items-center text-muted-foreground/50 hover:text-gold transition-colors duration-400 pt-3 sm:pt-0 sm:self-center"
+                  style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.58rem", letterSpacing: "0.2em", textTransform: "uppercase", fontWeight: 500 }}>
+                  VIEW PAST TRANSACTIONS →
+                </Link>
+              </div>
             </div>
           </div>
         </ScrollReveal>

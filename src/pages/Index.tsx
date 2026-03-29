@@ -317,8 +317,8 @@ const AdvisorSection = () => (
    SECTION 3B — STATS STRIP
    ───────────────────────────────────────────── */
 
-const useCountUp = (target: number, duration = 2600) => {
-  const [count, setCount] = useState(0);
+const useCountUp = (target: number, duration = 2600, from = 0) => {
+  const [count, setCount] = useState(from);
   const ref = useRef<HTMLDivElement>(null);
   const animId = useRef(0);
 
@@ -328,26 +328,26 @@ const useCountUp = (target: number, duration = 2600) => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setCount(0);
-          const start = performance.now();
+          setCount(from);
+          const startTime = performance.now();
           const id = ++animId.current;
           const step = (now: number) => {
             if (id !== animId.current) return;
-            const progress = Math.min((now - start) / duration, 1);
+            const progress = Math.min((now - startTime) / duration, 1);
             const eased = 1 - Math.pow(1 - progress, 3);
-            setCount(Math.round(eased * target));
+            setCount(Math.round(from + eased * (target - from)));
             if (progress < 1) requestAnimationFrame(step);
           };
           requestAnimationFrame(step);
         } else {
-          setCount(0);
+          setCount(from);
         }
       },
       { threshold: 0.3 }
     );
     observer.observe(el);
     return () => observer.disconnect();
-  }, [target, duration]);
+  }, [target, duration, from]);
 
   return { count, ref };
 };

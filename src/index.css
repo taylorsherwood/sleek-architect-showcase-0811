@@ -17,55 +17,57 @@ img {
 
 @layer base {
   :root {
-    /* ── Strict 3-tier background system ──
-       Primary:   #F7F5F2  → soft ivory (site default)
-       Secondary: #EDE8E1  → warm contrast sections
-       Card:      #FCFBF9  → forms, cards, inputs
+    /* ── Strict luxury palette ──
+       Primary bg:  #F8F7F5  → warm ivory (site default)
+       Card:        #FFFFFF  → pure white (cards, forms only)
+       Dark:        #0C0F24  → deep navy (hero, dark sections)
+       Text:        #1A1C20  → soft charcoal
+       Gold:        #C6A85B  → accent gold
     */
-    --background: 36 24% 96%;
-    --foreground: 220 20% 10%;
+    --background: 40 14% 97%;       /* #F8F7F5 */
+    --foreground: 220 8% 11%;       /* #1A1C20 */
     
-    --card: 40 33% 98%;
-    --card-foreground: 220 20% 10%;
+    --card: 0 0% 100%;              /* #FFFFFF */
+    --card-foreground: 220 8% 11%;
     
-    --popover: 40 33% 98%;
-    --popover-foreground: 220 20% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 8% 11%;
     
-    --primary: 233 50% 9%;
-    --primary-foreground: 36 24% 96%;
+    --primary: 233 50% 9%;          /* #0C0F24 */
+    --primary-foreground: 40 14% 97%;
     
-    --secondary: 35 25% 91%;
-    --secondary-foreground: 220 20% 10%;
+    --secondary: 40 14% 97%;        /* same as background — use card for contrast */
+    --secondary-foreground: 220 8% 11%;
     
-    --muted: 35 25% 91%;
-    --muted-foreground: 220 10% 45%;
+    --muted: 40 10% 93%;
+    --muted-foreground: 220 6% 40%;
     
-    --accent: 35 25% 91%;
-    --accent-foreground: 220 20% 10%;
+    --accent: 40 10% 93%;
+    --accent-foreground: 220 8% 11%;
     
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
     
-    --border: 35 20% 86%;
-    --input: 40 33% 98%;
-    --ring: 220 20% 10%;
+    --border: 40 8% 88%;
+    --input: 0 0% 100%;
+    --ring: 220 8% 11%;
 
     --radius: 0.25rem;
 
-    --gold: 41 36% 57%;
-    --gold-deep: 40 32% 44%;
-    --gold-light: 39 40% 68%;
-    --gold-highlight: 38 45% 76%;
-    --warm-cream: 36 24% 96%;
+    --gold: 41 43% 56%;             /* #C6A85B */
+    --gold-deep: 40 38% 42%;
+    --gold-light: 39 45% 65%;
+    --gold-highlight: 38 50% 74%;
+    --warm-cream: 40 14% 97%;       /* #F8F7F5 */
 
-    --sidebar-background: 36 24% 96%;
-    --sidebar-foreground: 220 20% 10%;
-    --sidebar-primary: 220 20% 10%;
-    --sidebar-primary-foreground: 36 24% 96%;
-    --sidebar-accent: 35 25% 91%;
-    --sidebar-accent-foreground: 220 20% 10%;
-    --sidebar-border: 35 20% 86%;
-    --sidebar-ring: 220 20% 10%;
+    --sidebar-background: 40 14% 97%;
+    --sidebar-foreground: 220 8% 11%;
+    --sidebar-primary: 220 8% 11%;
+    --sidebar-primary-foreground: 40 14% 97%;
+    --sidebar-accent: 40 10% 93%;
+    --sidebar-accent-foreground: 220 8% 11%;
+    --sidebar-border: 40 8% 88%;
+    --sidebar-ring: 220 8% 11%;
     
     --gradient-hero: linear-gradient(135deg, hsl(220 20% 10% / 0.7), hsl(220 20% 10% / 0.3));
     --gradient-overlay: linear-gradient(180deg, hsl(220 20% 10% / 0.6), hsl(220 20% 10% / 0.2));

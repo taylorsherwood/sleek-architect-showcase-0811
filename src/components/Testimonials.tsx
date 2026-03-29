@@ -67,7 +67,7 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <section className="pt-16 md:pt-20 pb-20 md:pb-24 bg-secondary">
+    <section className="pt-16 md:pt-20 pb-20 md:pb-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-[60rem] mx-auto">
           {/* Header */}
@@ -97,19 +97,19 @@ const Testimonials = () => {
                   opacity: 0,
                   transform: "translateY(40px)",
                   transition: `opacity 500ms ease ${i * 120}ms, transform 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94) ${i * 120}ms, box-shadow 500ms ease`,
-                  background: "hsl(40 33% 98%)",
-                  border: "1px solid hsl(35 20% 86% / 0.4)",
-                  boxShadow: "0 2px 12px hsl(40 10% 50% / 0.04)",
+                  background: "#FFFFFF",
+                  border: "1px solid rgba(0,0,0,0.06)",
+                  boxShadow: "0 10px 30px rgba(0,0,0,0.05)",
                 }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.transform = "translateY(-2px)";
                   e.currentTarget.style.boxShadow =
-                    "0 6px 24px hsl(40 10% 50% / 0.08)";
+                    "0 12px 36px rgba(0,0,0,0.07)";
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.transform = "translateY(0)";
                   e.currentTarget.style.boxShadow =
-                    "0 2px 12px hsl(40 10% 50% / 0.04)";
+                    "0 10px 30px rgba(0,0,0,0.05)";
                 }}
               >
                 {/* Quote icon */}
@@ -131,7 +131,7 @@ const Testimonials = () => {
                 </p>
 
                 {/* Divider */}
-                <div className="h-px mb-4" style={{ background: "linear-gradient(to right, transparent, hsl(35 20% 72% / 0.35), transparent)" }} />
+                <div className="h-px mb-4" style={{ background: "linear-gradient(to right, transparent, rgba(0,0,0,0.08), transparent)" }} />
 
                 {/* Attribution */}
                 <div>

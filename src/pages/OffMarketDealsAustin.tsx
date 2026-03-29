@@ -20,8 +20,12 @@ const labelStyle = {
 
 const faqs = [
   {
-    question: "Are off-market deals cheaper in Austin?",
-    answer: "Not always. Some are priced attractively, but many off-market opportunities are valuable because of reduced competition, better terms, or strategic upside rather than a simple discount."
+    question: "Are off-market deals in Austin always discounted?",
+    answer: "Not always. Some off-market properties are priced attractively, but many are valuable because of reduced competition, better terms, or strategic upside — not simply a lower price. The real advantage is often access and positioning rather than a discount."
+  },
+  {
+    question: "What kind of buyers are best suited for off-market opportunities?",
+    answer: "Luxury buyers seeking privacy, investors with clear acquisition criteria, developers sourcing land, and relocating executives who want curated options are all well-suited for off-market access in Austin."
   },
   {
     question: "How do I find off-market homes in Austin?",

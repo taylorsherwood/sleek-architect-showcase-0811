@@ -640,7 +640,7 @@ const insights = [
 ];
 
 const InsightsSection = () => (
-  <section className="py-24 md:py-32 bg-secondary">
+  <section className="py-16 md:py-20 pb-10 md:pb-14 bg-secondary">
     <div className="container mx-auto px-6">
       <div className="max-w-[1320px] mx-auto">
         <ScrollReveal>

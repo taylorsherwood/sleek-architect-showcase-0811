@@ -222,7 +222,7 @@ const OffMarketDealsAustin = () => {
 
             {/* Why Off-Market Deals Matter */}
             <section id="why-off-market-matters" className="space-y-[18px] mb-14">
-              <h2 className="text-2xl md:text-3xl font-display font-light text-foreground mb-4">Why Off-Market Deals Matter in Austin</h2>
+              <h2 className="text-2xl md:text-3xl font-display font-light text-foreground mb-4">Why Off-Market Deals Matter for Austin Investors</h2>
               <p className="text-foreground/60">
                 Austin's market has matured, but opportunity has not disappeared. It has simply become more selective.
               </p>

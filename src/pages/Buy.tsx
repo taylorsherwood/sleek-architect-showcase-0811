@@ -555,13 +555,13 @@ const Buy = () => {
               <div className="space-y-6">
                 <div>
                   <h4 className="text-minimal text-muted-foreground mb-1">EMAIL</h4>
-                  <a href="mailto:taylor@echelonpropertygroup.com" className="text-foreground/80 hover:text-foreground transition-colors">
+                  <a href="mailto:taylor@echelonpropertygroup.com" className="text-foreground/80 hover:text-gold transition-colors duration-300">
                     Send an Email
                   </a>
                 </div>
                 <div>
                   <h4 className="text-minimal text-muted-foreground mb-1">PHONE</h4>
-                  <a href="tel:+15126613843" className="text-foreground/80 hover:text-foreground transition-colors">
+                  <a href="tel:+15126613843" className="text-foreground/80 hover:text-gold transition-colors duration-300">
                     (512) 661-3843
                   </a>
                 </div>

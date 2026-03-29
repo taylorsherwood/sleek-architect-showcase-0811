@@ -271,7 +271,7 @@ const AustinMultifamilyReport2026 = () => {
             <div className="text-center mb-8">
               <p className="text-minimal text-[hsl(var(--gold))] mb-2">REPORT OVERVIEW</p>
               <h2 className="text-3xl md:text-4xl font-display font-light text-architectural">
-                What's Inside
+                What's Inside the Austin Multifamily Report
               </h2>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-5">

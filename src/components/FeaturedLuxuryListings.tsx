@@ -106,6 +106,13 @@ const ListingCardOverlay = ({
       {/* Persistent gradient */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
 
+      {/* Frosted "View Property" button on hover */}
+      <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+        <span className="bg-white/20 backdrop-blur-md text-white border border-white/30 px-6 py-2.5 rounded-lg font-medium" style={{ fontSize: "0.65rem", letterSpacing: "0.15em", textTransform: "uppercase" as const }}>
+          View Property
+        </span>
+      </div>
+
       {/* Sold badge */}
       {listing.sold && (
         <div className="absolute top-4 left-4">

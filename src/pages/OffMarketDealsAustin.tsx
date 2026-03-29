@@ -108,7 +108,7 @@ const OffMarketDealsAustin = () => {
               How to Find Off-Market Real Estate Deals in Austin
             </h1>
             <p className="text-base md:text-lg text-white/80 leading-relaxed max-w-[620px] font-light mb-6 md:mb-10">
-              The 2026 investor playbook for accessing private deals, luxury inventory, and development opportunities before the broader market.
+              The 2026 investor playbook for sourcing off-market real estate deals in Austin — including private listings, pre-market inventory, and development opportunities before the broader market.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link

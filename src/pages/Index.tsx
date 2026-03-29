@@ -386,8 +386,8 @@ const FeaturedProperties = () => (
                     )}
 
                     {/* Hover overlay */}
-                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-[500ms]">
-                      <span className="text-white border border-white/30 px-10 py-3.5 backdrop-blur-md bg-black/25 font-normal"
+                    <div className="absolute inset-0 flex items-center justify-center bg-black/0 group-hover:bg-black/30 transition-all duration-[500ms]">
+                      <span className="text-white border border-white/30 px-10 py-3.5 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-[500ms] font-normal"
                         style={{ fontSize: "0.58rem", letterSpacing: "0.22em", textTransform: "uppercase", fontFamily: '"Raleway", sans-serif' }}>
                         View Property
                       </span>

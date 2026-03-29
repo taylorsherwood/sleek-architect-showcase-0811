@@ -131,7 +131,7 @@ const Testimonials = () => {
                 </p>
 
                 {/* Divider */}
-                <div className="h-px mb-4" style={{ background: "linear-gradient(to right, transparent, hsl(35 20% 72% / 0.35), transparent)" }} />
+                <div className="h-px mb-4" style={{ background: "linear-gradient(to right, transparent, rgba(0,0,0,0.08), transparent)" }} />
 
                 {/* Attribution */}
                 <div>

@@ -211,23 +211,26 @@ const SearchSection = () => {
    ───────────────────────────────────────────── */
 
 const TrustStrip = () => (
-  <section className="hidden md:block bg-background border-b border-border/20">
+  <section className="hidden md:block bg-background">
     <div className="container mx-auto px-6">
-      <div className="max-w-[1320px] mx-auto flex items-center justify-center gap-14 py-5">
-        {[
-          { icon: "/static-assets/exp-realty-luxury-logo.png", text: "eXp Luxury Division" },
-          { icon: null, text: "Certified Luxury Home Marketing Specialist" },
-          { icon: null, text: "$100M+ Career Sales Volume" },
-        ].map((item, i) => (
-          <div key={i} className="flex items-center gap-3">
-            {item.icon && <img src={item.icon} alt={item.text} className="h-5 w-auto object-contain opacity-50" loading="lazy" />}
-            <span className="text-muted-foreground/50 font-normal" style={{
-              fontFamily: '"Raleway", sans-serif', fontSize: "0.6rem", letterSpacing: "0.18em", textTransform: "uppercase"
-            }}>
-              {item.text}
-            </span>
-          </div>
-        ))}
+      <div className="max-w-[1320px] mx-auto">
+        <div className="border-t border-border/15" />
+        <div className="flex items-center justify-center gap-16 py-5">
+          {[
+            { icon: "/static-assets/exp-realty-luxury-logo.png", text: "eXp Luxury Division" },
+            { icon: null, text: "Certified Luxury Home Marketing Specialist" },
+            { icon: null, text: "$100M+ Career Sales Volume" },
+          ].map((item, i) => (
+            <div key={i} className="flex items-center gap-3">
+              {item.icon && <img src={item.icon} alt={item.text} className="h-5 w-auto object-contain opacity-60" loading="lazy" />}
+              <span className="text-muted-foreground/65 font-medium" style={{
+                fontFamily: '"Raleway", sans-serif', fontSize: "0.6rem", letterSpacing: "0.18em", textTransform: "uppercase"
+              }}>
+                {item.text}
+              </span>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   </section>
@@ -851,8 +854,8 @@ const Index = () => (
 
     <Navigation />
     <Hero />
-    <SearchSection />
     <TrustStrip />
+    <SearchSection />
     <AdvisorSection />
     <StatsStrip />
     <FeaturedProperties />

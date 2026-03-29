@@ -98,10 +98,10 @@ const Navigation = () => {
               >
                 <button
                   onClick={() => setOpenDropdown(openDropdown === link.href ? null : link.href)}
-                  className={`relative text-minimal tracking-[0.25em] transition-colors duration-500 group cursor-pointer bg-transparent border-none ${
+                  className={`relative text-minimal tracking-[0.25em] font-normal transition-colors duration-500 group cursor-pointer bg-transparent border-none ${
                     isActive(link)
                       ? "text-foreground"
-                      : "text-muted-foreground hover:text-foreground"
+                      : "text-muted-foreground/70 hover:text-foreground"
                   }`}
                 >
                   {link.label}

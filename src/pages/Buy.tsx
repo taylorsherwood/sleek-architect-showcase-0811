@@ -545,7 +545,7 @@ const Buy = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-start">
             <div>
-              <p className="text-minimal text-primary-foreground/50 mb-4">READY TO BEGIN?</p>
+              <p className="text-minimal text-gold mb-4 font-extrabold">READY TO BEGIN?</p>
               <h2 className="text-4xl md:text-5xl font-display font-light text-primary-foreground leading-[1.15] mb-6">
                 Schedule a Buyer Consultation
               </h2>

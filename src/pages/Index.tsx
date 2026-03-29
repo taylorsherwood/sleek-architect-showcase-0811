@@ -742,7 +742,7 @@ const Index = () => (
     <Navigation />
     <Hero />
     <TrustStrip />
-    <Positioning />
+    <AdvisorSection />
     <FeaturedProperties />
 
     <NoscriptFallback />

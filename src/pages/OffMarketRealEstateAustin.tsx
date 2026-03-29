@@ -445,10 +445,10 @@ const OffMarketRealEstateAustin = () => {
             ))}
           </div>
           <div className="mt-10 flex flex-wrap justify-center gap-x-5 gap-y-2">
-            <Link to="/about" className="text-white/30 hover:text-white/60 transition-colors text-xs tracking-[0.1em] uppercase underline underline-offset-4">About us</Link>
-            <Link to="/communities" className="text-white/30 hover:text-white/60 transition-colors text-xs tracking-[0.1em] uppercase underline underline-offset-4">Austin communities</Link>
-            <Link to="/listings" className="text-white/30 hover:text-white/60 transition-colors text-xs tracking-[0.1em] uppercase underline underline-offset-4">Active listings</Link>
-            <Link to="/buy" className="text-white/30 hover:text-white/60 transition-colors text-xs tracking-[0.1em] uppercase underline underline-offset-4">Buyer services</Link>
+            <Link to="/about" className="text-white/30 hover:text-[hsl(var(--gold))] transition-colors duration-500 text-xs tracking-[0.1em] uppercase underline underline-offset-4">About us</Link>
+            <Link to="/communities" className="text-white/30 hover:text-[hsl(var(--gold))] transition-colors duration-500 text-xs tracking-[0.1em] uppercase underline underline-offset-4">Austin communities</Link>
+            <Link to="/listings" className="text-white/30 hover:text-[hsl(var(--gold))] transition-colors duration-500 text-xs tracking-[0.1em] uppercase underline underline-offset-4">Active listings</Link>
+            <Link to="/buy" className="text-white/30 hover:text-[hsl(var(--gold))] transition-colors duration-500 text-xs tracking-[0.1em] uppercase underline underline-offset-4">Buyer services</Link>
           </div>
         </div>
       </section>

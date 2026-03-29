@@ -320,7 +320,7 @@ const AdvisorSection = () => (
    SECTION 3B — STATS STRIP
    ───────────────────────────────────────────── */
 
-const useCountUp = (target: number, duration = 1800) => {
+const useCountUp = (target: number, duration = 2600) => {
   const [count, setCount] = useState(0);
   const ref = useRef<HTMLDivElement>(null);
   const animId = useRef(0);

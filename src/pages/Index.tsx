@@ -234,7 +234,7 @@ const TrustStrip = () => (
    ───────────────────────────────────────────── */
 
 const AdvisorSection = () => (
-  <section className="py-24 md:py-32 bg-background">
+  <section className="pt-24 md:pt-32 pb-0 bg-background">
     <div className="container mx-auto px-6">
       <div className="max-w-[1320px] mx-auto">
         <div className="grid md:grid-cols-2 gap-14 lg:gap-20 items-center">

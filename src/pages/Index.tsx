@@ -175,7 +175,6 @@ const SearchSection = () => {
   const [price, setPrice] = useState("");
   const [beds, setBeds] = useState("");
   const [searching, setSearching] = useState(false);
-  const navigate = (window as any).__reactRouterNavigate;
 
   const handleSearch = () => {
     setSearching(true);
@@ -186,7 +185,7 @@ const SearchSection = () => {
     const query = params.toString();
     setTimeout(() => {
       window.location.href = `/search${query ? `?${query}` : ""}`;
-    }, 300);
+    }, 250);
   };
 
   const selectClass = "w-full bg-white border border-border/50 rounded-sm px-4 py-3.5 text-sm text-foreground/75 font-light appearance-none cursor-pointer hover:border-gold/40 transition-colors duration-300 focus:outline-none focus:border-gold/60";

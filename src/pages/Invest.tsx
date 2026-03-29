@@ -487,7 +487,7 @@ const Invest = () => {
           <ScrollReveal>
             <p className="text-minimal text-gold mb-4">Methodology</p>
             <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-16 max-w-2xl">
-              Our Investor Process
+              Our Austin Investor Process
             </h2>
           </ScrollReveal>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">

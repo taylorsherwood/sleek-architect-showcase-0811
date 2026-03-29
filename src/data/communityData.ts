@@ -1075,7 +1075,7 @@ Proximity to Apple, Google, Meta, and other major employers makes these neighbor
     slug: "lake-austin",
     name: "Lake Austin",
     heroTitle: "Lake Austin Real Estate",
-    metaTitle: "Lake Austin Homes for Sale | Waterfront Luxury in Austin TX",
+    metaTitle: "Lake Austin Waterfront Homes for Sale",
     metaDescription: "Discover Lake Austin waterfront homes, private dock estates, and exclusive off-market opportunities. Explore one of Austin's most coveted luxury enclaves.",
     priceRange: "$1.5M – $15M+",
     image: lakeAustinImg,

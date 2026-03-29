@@ -714,7 +714,7 @@ const LeadCapture = () => {
   };
 
   return (
-    <section className="py-14 md:py-20" style={{ background: "#F8F7F5" }}>
+    <section className="py-10 md:py-14" style={{ background: "#F8F7F5" }}>
       <div className="container mx-auto px-6">
         <div className="max-w-[460px] mx-auto text-center">
           <ScrollReveal>

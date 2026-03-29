@@ -612,7 +612,7 @@ const Buy = () => {
                   onChange={handleChange}
                   rows={4}
                   maxLength={2000}
-                  className={`${inputClass} resize-none border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/30 focus:border-primary-foreground/50`} />
+                  className={`${inputClass} resize-none border-border text-foreground placeholder:text-muted-foreground/50 focus:border-foreground/50`} />
                 
               </div>
               <button

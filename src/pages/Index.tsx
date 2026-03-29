@@ -782,7 +782,7 @@ const FinalCTA = () => (
           </h2>
         </ScrollReveal>
         <ScrollReveal delay={150}>
-          <p className="text-primary-foreground/40 text-[15px] font-light leading-[1.8] mb-12 max-w-[400px] mx-auto">
+          <p className="text-primary-foreground/70 text-[15px] font-normal leading-[1.8] mb-12 max-w-[400px] mx-auto">
             Luxury real estate, redefined through strategy, access, and execution.
           </p>
           <div className="flex flex-col sm:flex-row gap-5 justify-center">

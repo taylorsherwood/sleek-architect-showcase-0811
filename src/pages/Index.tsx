@@ -18,31 +18,38 @@ const Testimonials = lazy(() => import("@/components/Testimonials"));
 const MarketInsights = lazy(() => import("@/components/MarketInsights"));
 const Footer = lazy(() => import("@/components/Footer"));
 
+const ScrollReveal = lazy(() => import("@/components/ScrollReveal"));
+
 const NewsletterSection = lazy(async () => {
+  const { default: ScrollRevealComp } = await import("@/components/ScrollReveal");
   return {
     default: () => (
       <section className="pt-16 md:pt-20 pb-8 md:pb-10 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <h3 className="text-3xl md:text-6xl font-light text-architectural mb-6 md:mb-8">
-              Stay Informed
-            </h3>
-            <p className="text-base md:text-xl text-muted-foreground mb-8 md:mb-12">
-              Subscribe to our newsletter for the latest insights on Austin luxury real estate
-            </p>
-            <a
-              href="https://taylorsherwood.myflodesk.com/biolink"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              className="inline-block px-8 py-3 text-sm border border-foreground/20 text-foreground hover:bg-gold hover:text-white hover:border-gold transition-colors duration-300"
-            >
-              BECOME AN ECHELON INSIDER
-            </a>
-            <div className="mt-6 flex items-center justify-center gap-4 md:gap-14 flex-wrap">
-              <img src="/static-assets/exp-commercial-logo.png" alt="eXp Commercial brokerage logo" title="eXp Commercial — Echelon Property Group" className="h-24 md:h-60 w-auto object-contain" loading="lazy" decoding="async" />
-              <img src="/static-assets/exp-realty-luxury-logo.png" alt="eXp Realty Luxury division logo" title="eXp Realty Luxury — Echelon Property Group" className="h-24 md:h-44 w-auto object-contain" loading="lazy" decoding="async" />
-              <img src="/static-assets/exp-realty-logo.png" alt="eXp Realty brokerage logo" title="eXp Realty — Echelon Property Group brokerage" className="h-24 md:h-60 w-auto object-contain" loading="lazy" decoding="async" />
-            </div>
+            <ScrollRevealComp>
+              <h3 className="text-3xl md:text-6xl font-light text-architectural mb-6 md:mb-8">
+                Stay Informed
+              </h3>
+              <p className="text-base md:text-xl text-muted-foreground mb-8 md:mb-12">
+                Subscribe to our newsletter for the latest insights on Austin luxury real estate
+              </p>
+              <a
+                href="https://taylorsherwood.myflodesk.com/biolink"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                className="inline-block px-8 py-3 text-sm border border-foreground/20 text-foreground hover:bg-gold hover:text-white hover:border-gold transition-colors duration-300"
+              >
+                BECOME AN ECHELON INSIDER
+              </a>
+            </ScrollRevealComp>
+            <ScrollRevealComp delay={150}>
+              <div className="mt-6 flex items-center justify-center gap-4 md:gap-14 flex-wrap">
+                <img src="/static-assets/exp-commercial-logo.png" alt="eXp Commercial brokerage logo" title="eXp Commercial — Echelon Property Group" className="h-24 md:h-60 w-auto object-contain" loading="lazy" decoding="async" />
+                <img src="/static-assets/exp-realty-luxury-logo.png" alt="eXp Realty Luxury division logo" title="eXp Realty Luxury — Echelon Property Group" className="h-24 md:h-44 w-auto object-contain" loading="lazy" decoding="async" />
+                <img src="/static-assets/exp-realty-logo.png" alt="eXp Realty brokerage logo" title="eXp Realty — Echelon Property Group brokerage" className="h-24 md:h-60 w-auto object-contain" loading="lazy" decoding="async" />
+              </div>
+            </ScrollRevealComp>
           </div>
         </div>
       </section>

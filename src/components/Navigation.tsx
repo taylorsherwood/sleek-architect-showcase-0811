@@ -67,7 +67,7 @@ const Navigation = () => {
     link.children?.some((c) => location.pathname === c.href);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 overflow-visible h-20 md:h-[6.5rem] lg:h-[7.5rem] border-b border-border/30">
+    <nav className="fixed top-0 left-0 right-0 z-50 overflow-visible h-20 md:h-24 lg:h-[6.5rem] border-b border-border/20">
       <div
         className={`absolute inset-0 backdrop-blur-md transition-all duration-500 ${
           isScrolled ? "bg-background/70" : "bg-background"
@@ -80,13 +80,13 @@ const Navigation = () => {
             alt="Echelon Property Group"
             title="Echelon Property Group — Austin Luxury Real Estate"
             className="w-auto max-w-none border-0 shrink-0 object-contain"
-            style={{ height: '115%', maxHeight: '115%' }}
-                    loading="lazy" decoding="async"
-                    />
+            style={{ height: '125%', maxHeight: '125%' }}
+            loading="lazy" decoding="async"
+          />
         </Link>
 
         {/* Desktop nav links */}
-        <div className="hidden lg:flex items-center space-x-6 xl:space-x-10 ml-8 xl:ml-12">
+        <div className="hidden lg:flex items-center space-x-7 xl:space-x-11 ml-8 xl:ml-12">
           {links.map((link) =>
             link.children ? (
               <div
@@ -98,10 +98,10 @@ const Navigation = () => {
               >
                 <button
                   onClick={() => setOpenDropdown(openDropdown === link.href ? null : link.href)}
-                  className={`relative text-minimal tracking-[0.25em] transition-colors duration-500 group cursor-pointer bg-transparent border-none ${
+                  className={`relative text-minimal tracking-[0.25em] font-normal transition-colors duration-500 group cursor-pointer bg-transparent border-none ${
                     isActive(link)
                       ? "text-foreground"
-                      : "text-muted-foreground hover:text-foreground"
+                      : "text-muted-foreground/70 hover:text-foreground"
                   }`}
                 >
                   {link.label}
@@ -137,10 +137,10 @@ const Navigation = () => {
                 key={link.href}
                 to={link.href}
                 onClick={() => { if (link.href === '/' && location.pathname === '/') window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-                className={`relative text-minimal tracking-[0.25em] transition-colors duration-500 group ${
+                className={`relative text-minimal tracking-[0.25em] font-normal transition-colors duration-500 group ${
                   location.pathname === link.href
                     ? "text-foreground"
-                    : "text-muted-foreground hover:text-foreground"
+                    : "text-muted-foreground/70 hover:text-foreground"
                 }`}
               >
                 {link.label}

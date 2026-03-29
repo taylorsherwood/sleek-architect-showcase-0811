@@ -50,7 +50,7 @@ const RealScoutSearch = () => {
   }, []);
 
   return (
-    <ScrollReveal>
+    <ScrollReveal delay={300} distance={24} duration={1100}>
       <section id="realscout-search" className="bg-background pt-16 pb-12 md:pt-20 md:pb-16">
         <div className="container mx-auto px-6">
           <div className="mx-auto max-w-3xl">

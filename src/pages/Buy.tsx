@@ -560,8 +560,8 @@ const Buy = () => {
                   </a>
                 </div>
                 <div>
-                  <h4 className="text-minimal text-primary-foreground/40 mb-1">PHONE</h4>
-                  <a href="tel:+15126613843" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                  <h4 className="text-minimal text-muted-foreground mb-1">PHONE</h4>
+                  <a href="tel:+15126613843" className="text-foreground/80 hover:text-foreground transition-colors">
                     (512) 661-3843
                   </a>
                 </div>

@@ -1,4 +1,4 @@
-import { lazy, Suspense, useState, useRef, useEffect, createElement } from "react";
+import { lazy, Suspense, useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";
@@ -30,7 +30,6 @@ const Hero = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [heroVisible, setHeroVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
-  const searchRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const el = sectionRef.current;
@@ -93,54 +92,6 @@ const Hero = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [videoSrc]);
 
-  // Inject RealScout gold styling
-  useEffect(() => {
-    const el = searchRef.current;
-    if (!el) return;
-    const GOLD = "hsl(41, 36%, 57%)";
-    const injectStyles = () => {
-      const widget = el.querySelector("realscout-advanced-search");
-      if (!widget?.shadowRoot || widget.shadowRoot.querySelector("#rs-hero")) return;
-      const s = document.createElement("style");
-      s.id = "rs-hero";
-      s.textContent = `
-        :host { --rs-bg: transparent !important; }
-        *, *::before, *::after { border-color: rgba(255,255,255,0.12) !important; }
-        form, [class*="form"], [class*="container"], [class*="wrapper"], [class*="search"] {
-          background: transparent !important;
-          color: rgba(255,255,255,0.92) !important;
-        }
-        input, select, [class*="input"], [class*="select"], [class*="dropdown"], [class*="field"] {
-          background: rgba(255,255,255,0.04) !important;
-          color: #fff !important;
-          border: 1px solid rgba(255,255,255,0.12) !important;
-          border-radius: 3px !important;
-        }
-        input::placeholder, [class*="placeholder"] {
-          color: rgba(255,255,255,0.5) !important;
-        }
-        label, [class*="label"] {
-          color: rgba(255,255,255,0.7) !important;
-        }
-        button[type="submit"],[class*="search"] button,[class*="Submit"],input[type="submit"] {
-          background: transparent !important;
-          border: 1px solid ${GOLD} !important;
-          color: ${GOLD} !important;
-          transition: all 0.35s ease !important;
-        }
-        button[type="submit"]:hover,[class*="search"] button:hover,[class*="Submit"]:hover,input[type="submit"]:hover {
-          background: ${GOLD} !important;
-          color: #fff !important;
-        }
-      `;
-      widget.shadowRoot.appendChild(s);
-    };
-    injectStyles();
-    const obs = new MutationObserver(() => injectStyles());
-    obs.observe(el, { childList: true, subtree: true });
-    const timers = [500, 1500, 3000].map((ms) => setTimeout(injectStyles, ms));
-    return () => { obs.disconnect(); timers.forEach(clearTimeout); };
-  }, []);
 
   const anim = (delay: string) => ({
     opacity: heroVisible ? 1 : 0,
@@ -198,7 +149,7 @@ const Hero = () => {
 
           <div className="flex flex-col sm:flex-row gap-5" style={anim("0.4s")}>
             <Link to="/austin-luxury-homes-for-sale"
-              className="hero-cta-btn inline-block bg-primary text-primary-foreground px-12 py-[1.1rem] text-center hover:bg-gold hover:text-white border border-white/10 shadow-[0_8px_24px_rgba(0,0,0,0.35)]"
+              className="hero-cta-btn inline-block bg-warm-cream text-foreground px-12 py-[1.1rem] text-center hover:bg-gold hover:text-white border border-white/10 shadow-[0_8px_24px_rgba(0,0,0,0.35)]"
               style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.58rem", letterSpacing: "0.3em", textTransform: "uppercase", fontWeight: 600 }}>
               EXPLORE LUXURY HOMES
             </Link>
@@ -209,16 +160,74 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-
-        {/* Integrated search */}
-        <div ref={searchRef} className="mt-20 max-w-3xl rounded-sm p-6 md:p-8" style={{ ...anim("0.55s"), minHeight: 80, background: "rgba(10, 14, 25, 0.55)", backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)", border: "1px solid rgba(255,255,255,0.08)", boxShadow: "0 8px 32px rgba(0,0,0,0.12)" }}>
-          {createElement("realscout-advanced-search", { "agent-encoded-id": "QWdlbnQtMjg5NDU2" })}
-        </div>
       </div>
 
     </section>
   );
 };
+
+/* ─────────────────────────────────────────────
+   SECTION 1B — SEARCH
+   ───────────────────────────────────────────── */
+
+const SearchSection = () => (
+  <section className="bg-secondary border-b border-border/20">
+    <div className="container mx-auto px-6 py-10 md:py-14">
+      <div className="max-w-5xl mx-auto">
+        <div className="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-10">
+          <div className="shrink-0">
+            <p className="text-muted-foreground/50 font-medium" style={{
+              fontFamily: '"Raleway", sans-serif', fontSize: "0.6rem", letterSpacing: "0.3em", textTransform: "uppercase"
+            }}>
+              Search Properties
+            </p>
+          </div>
+          <div className="flex-1 w-full grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div className="relative">
+              <label className="block text-muted-foreground/40 mb-1.5" style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.55rem", letterSpacing: "0.2em", textTransform: "uppercase" }}>Location</label>
+              <select className="w-full bg-card border border-border/40 rounded-sm px-4 py-3 text-sm text-foreground/80 font-light appearance-none cursor-pointer hover:border-gold/40 transition-colors duration-300 focus:outline-none focus:border-gold/60" style={{ fontFamily: '"Raleway", sans-serif' }}>
+                <option value="">All Neighborhoods</option>
+                <option>Westlake Hills</option>
+                <option>Barton Creek</option>
+                <option>Lake Austin</option>
+                <option>Tarrytown</option>
+                <option>Rollingwood</option>
+                <option>Spanish Oaks</option>
+                <option>Downtown Austin</option>
+              </select>
+            </div>
+            <div>
+              <label className="block text-muted-foreground/40 mb-1.5" style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.55rem", letterSpacing: "0.2em", textTransform: "uppercase" }}>Price Range</label>
+              <select className="w-full bg-card border border-border/40 rounded-sm px-4 py-3 text-sm text-foreground/80 font-light appearance-none cursor-pointer hover:border-gold/40 transition-colors duration-300 focus:outline-none focus:border-gold/60" style={{ fontFamily: '"Raleway", sans-serif' }}>
+                <option value="">Any Price</option>
+                <option>$500K – $1M</option>
+                <option>$1M – $2M</option>
+                <option>$2M – $5M</option>
+                <option>$5M – $10M</option>
+                <option>$10M+</option>
+              </select>
+            </div>
+            <div>
+              <label className="block text-muted-foreground/40 mb-1.5" style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.55rem", letterSpacing: "0.2em", textTransform: "uppercase" }}>Bedrooms</label>
+              <select className="w-full bg-card border border-border/40 rounded-sm px-4 py-3 text-sm text-foreground/80 font-light appearance-none cursor-pointer hover:border-gold/40 transition-colors duration-300 focus:outline-none focus:border-gold/60" style={{ fontFamily: '"Raleway", sans-serif' }}>
+                <option value="">Any</option>
+                <option>2+</option>
+                <option>3+</option>
+                <option>4+</option>
+                <option>5+</option>
+              </select>
+            </div>
+          </div>
+          <Link to="/search"
+            className="shrink-0 inline-block border border-foreground/20 text-foreground/70 px-8 py-3 text-center hover:bg-gold hover:text-white hover:border-gold transition-all duration-[400ms]"
+            style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.58rem", letterSpacing: "0.25em", textTransform: "uppercase", fontWeight: 500 }}>
+            SEARCH
+          </Link>
+        </div>
+      </div>
+    </div>
+  </section>
+);
 
 /* ─────────────────────────────────────────────
    SECTION 2 — MICRO-TRUST STRIP
@@ -790,6 +799,7 @@ const Index = () => (
 
     <Navigation />
     <Hero />
+    <SearchSection />
     <TrustStrip />
     <AdvisorSection />
     <FeaturedProperties />

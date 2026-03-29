@@ -850,6 +850,7 @@ const Index = () => (
     <SearchSection />
     <TrustStrip />
     <AdvisorSection />
+    <StatsStrip />
     <FeaturedProperties />
 
     <NoscriptFallback />

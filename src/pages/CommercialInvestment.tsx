@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";
-import SchemaMarkup, { createFAQSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
+import SchemaMarkup, { createFAQSchema, createBreadcrumbSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
 import heroArchitecture from "@/assets/hero-architecture.jpg";
 import expCommercialLogo from "@/assets/exp-commercial-logo-horizontal-white.webp";
 import gillisStreet from "@/assets/commercial-gillis-street.jpg";
@@ -56,6 +56,11 @@ const CommercialInvestment = () => {
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createFAQSchema(faqs)} />
+      <SchemaMarkup schema={createBreadcrumbSchema([
+        { name: "Home", url: "https://www.echelonpropertygroup.com/" },
+        { name: "Listings", url: "https://www.echelonpropertygroup.com/listings" },
+        { name: "Commercial Investment", url: "https://www.echelonpropertygroup.com/listings/commercial-investment-austin" }
+      ])} />
       <Navigation />
 
       {/* Hero */}

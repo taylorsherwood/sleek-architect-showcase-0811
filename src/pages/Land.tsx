@@ -2,7 +2,7 @@ import { lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";
-import SchemaMarkup, { createFAQSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
+import SchemaMarkup, { createFAQSchema, createBreadcrumbSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
 import AboutBlock from "@/components/AboutBlock";
 import { MapPin } from "lucide-react";
 
@@ -99,6 +99,10 @@ const LandPage = () => {
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createFAQSchema(faqs.map(f => ({ question: f.q, answer: f.a })))} />
+      <SchemaMarkup schema={createBreadcrumbSchema([
+        { name: "Home", url: "https://www.echelonpropertygroup.com/" },
+        { name: "Land", url: "https://www.echelonpropertygroup.com/land" }
+      ])} />
       <Navigation />
 
       {/* ── Hero ── */}

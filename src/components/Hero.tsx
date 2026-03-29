@@ -230,8 +230,12 @@ const Hero = () => {
           </div>
 
           <p
-            className="text-warm-cream/60 max-w-lg mb-10 reveal-delayed leading-relaxed font-medium"
+            className="text-warm-cream/60 max-w-lg mb-10 leading-relaxed font-medium transition-all duration-1000 will-change-[opacity,transform]"
             style={{
+              opacity: heroVisible ? 1 : 0,
+              transform: heroVisible ? "translateY(0)" : "translateY(10px)",
+              transitionTimingFunction: "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+              transitionDelay: "0.35s",
               fontFamily: '"Raleway", sans-serif',
               fontSize: "1rem",
               letterSpacing: "0.01em",

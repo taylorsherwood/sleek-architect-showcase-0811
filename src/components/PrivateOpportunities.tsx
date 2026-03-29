@@ -106,10 +106,13 @@ const PrivateOpportunities = ({ variant = "light" }: PrivateOpportunitiesProps) 
     <section
       id="private-opportunities-banner"
       ref={sectionRef}
-      className={`py-16 md:py-20 transition-all duration-700 ${
-        visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+      className={`py-16 md:py-20 transition-all duration-[900ms] ${
+        visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-[18px]"
       } ${isDark ? "" : "bg-background"}`}
-      style={isDark ? { backgroundColor: "hsl(233, 42%, 12%)" } : undefined}
+      style={{
+        transitionTimingFunction: "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+        ...(isDark ? { backgroundColor: "hsl(233, 42%, 12%)" } : {}),
+      }}
     >
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto">

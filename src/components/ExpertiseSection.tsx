@@ -38,14 +38,16 @@ const ExpertiseSection = () => {
     <section className="pt-12 pb-20 md:pt-16 md:pb-28 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-[58rem] mx-auto">
-          <div className="text-center mb-14 md:mb-20">
-            <p className="text-minimal text-gold mb-4 font-extrabold">OUR EXPERTISE</p>
-            <h2 className="text-3xl md:text-[2.75rem] font-display font-light text-architectural mb-6 leading-tight">
-              Austin Real Estate Expertise
-            </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto text-[0.95rem] leading-relaxed">From luxury homes and land development to commercial acquisitions and investment strategy — Echelon Property Group delivers full-spectrum real estate advisory across Austin and the Texas Hill Country.
-            </p>
-          </div>
+          <ScrollReveal>
+            <div className="text-center mb-14 md:mb-20">
+              <p className="text-minimal text-gold mb-4 font-extrabold">OUR EXPERTISE</p>
+              <h2 className="text-3xl md:text-[2.75rem] font-display font-light text-architectural mb-6 leading-tight">
+                Austin Real Estate Expertise
+              </h2>
+              <p className="text-muted-foreground max-w-2xl mx-auto text-[0.95rem] leading-relaxed">From luxury homes and land development to commercial acquisitions and investment strategy — Echelon Property Group delivers full-spectrum real estate advisory across Austin and the Texas Hill Country.
+              </p>
+            </div>
+          </ScrollReveal>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {expertiseBlocks.map((block, index) => {

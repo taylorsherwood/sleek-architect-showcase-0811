@@ -50,12 +50,12 @@ const ListingCard = ({
   if (listing.isOffMarketCard) {
     return (
       <Link to={listing.link} className="group block">
-        <div className="relative overflow-hidden rounded-sm aspect-[4/3] bg-gradient-to-br from-primary via-primary to-primary/80 flex flex-col items-center justify-center transition-all duration-700 ease-in-out group-hover:from-gold group-hover:via-gold group-hover:to-gold/80">
+        <div className="relative overflow-hidden rounded-sm aspect-[4/3] bg-gradient-to-br from-primary via-primary to-primary/80 flex flex-col items-center justify-center">
           <img
             src="/static-assets/echelon-logo-gold-square.png"
             alt="Echelon Property Group"
             title="Echelon Property Group — View exclusive listings"
-            className="w-1/2 h-auto object-contain transition-all duration-500 ease-out group-hover:brightness-0 group-hover:invert"
+            className="w-1/2 h-auto object-contain transition-transform duration-700 ease-out group-hover:scale-[1.04]"
             loading="lazy"
             decoding="async" />
         </div>

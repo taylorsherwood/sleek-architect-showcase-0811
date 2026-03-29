@@ -168,7 +168,7 @@ const About = () => {
                 </p>
               </div>
               <div className="border-l-2 border-gold pl-8">
-                <h3 className="text-xl font-display font-medium mb-3">Local Expertise</h3>
+                <h3 className="text-xl font-display font-medium mb-3"><Link to="/communities" className="hover:text-[hsl(var(--gold))] transition-colors duration-500">Local Expertise</Link></h3>
                 <p className="text-muted-foreground">
                   Deep roots in Austin's most prestigious neighborhoods. We don't just sell homes 
                   here—we live here.

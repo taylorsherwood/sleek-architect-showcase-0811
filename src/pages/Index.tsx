@@ -674,26 +674,30 @@ const LeadCapture = () => {
    ───────────────────────────────────────────── */
 
 const FinalCTA = () => (
-  <section className="py-20 md:py-28 bg-primary">
+  <section className="py-24 md:py-32 bg-primary">
     <div className="container mx-auto px-6">
-      <div className="max-w-[800px] mx-auto text-center">
+      <div className="max-w-[700px] mx-auto text-center">
         <ScrollReveal>
-          <p className="text-minimal text-gold mb-5 font-extrabold">GET STARTED</p>
-          <h2 className="font-display text-3xl md:text-[2.8rem] font-light text-primary-foreground mb-5 leading-[1.12]">
+          <p className="text-minimal text-gold mb-5 font-extrabold tracking-[0.22em]">GET STARTED</p>
+        </ScrollReveal>
+        <ScrollReveal delay={80}>
+          <h2 className="font-display text-3xl md:text-[2.5rem] font-light text-primary-foreground/90 mb-5 leading-[1.1] tracking-[-0.01em]">
             Work With <span className="italic">Echelon Property Group</span>
           </h2>
-          <p className="text-primary-foreground/50 text-[15px] font-light leading-relaxed mb-10 max-w-md mx-auto">
+        </ScrollReveal>
+        <ScrollReveal delay={150}>
+          <p className="text-primary-foreground/40 text-[15px] font-light leading-[1.8] mb-12 max-w-[400px] mx-auto">
             Luxury real estate, redefined through strategy, access, and execution.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-5 justify-center">
             <Link to="/buy"
-              className="inline-block bg-warm-cream text-foreground px-12 py-[1rem] text-center hover:bg-gold hover:text-white transition-all duration-300"
-              style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.6rem", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 700 }}>
+              className="inline-block bg-warm-cream text-foreground px-12 py-[1rem] text-center hover:bg-gold hover:text-white transition-all duration-[400ms]"
+              style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.58rem", letterSpacing: "0.3em", textTransform: "uppercase", fontWeight: 600 }}>
               BUY A HOME
             </Link>
             <Link to="/sell"
-              className="inline-block border border-primary-foreground/20 text-primary-foreground/70 px-12 py-[1rem] text-center hover:bg-gold hover:text-white hover:border-gold transition-all duration-300"
-              style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.6rem", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 400 }}>
+              className="inline-block border border-primary-foreground/15 text-primary-foreground/60 px-12 py-[1rem] text-center hover:bg-gold hover:text-white hover:border-gold transition-all duration-[400ms]"
+              style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.58rem", letterSpacing: "0.3em", textTransform: "uppercase", fontWeight: 400 }}>
               SELL YOUR HOME
             </Link>
           </div>

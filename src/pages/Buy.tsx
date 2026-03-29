@@ -541,27 +541,27 @@ const Buy = () => {
       </section>
 
       {/* ── CTA / Contact Form ── */}
-      <section id="buyer-consultation" className="py-28 bg-[#0C0F24]">
+      <section id="buyer-consultation" className="py-28 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-start">
             <div>
-              <p className="text-minimal text-primary-foreground/50 mb-4">READY TO BEGIN?</p>
-              <h2 className="text-4xl md:text-5xl font-display font-light text-primary-foreground leading-[1.15] mb-6">
+              <p className="text-minimal text-gold mb-4 font-extrabold">READY TO BEGIN?</p>
+              <h2 className="text-4xl md:text-5xl font-display font-light text-architectural leading-[1.15] mb-6">
                 Schedule a Buyer Consultation
               </h2>
-              <p className="text-primary-foreground/60 leading-relaxed mb-10 max-w-lg">Whether you're searching for luxury homes, relocating to Austin, or exploring investment opportunities, a consultation with Taylor is the best first step. We'll discuss your goals, timeline, and build a customized search strategy.
+              <p className="text-muted-foreground leading-relaxed mb-10 max-w-lg">Whether you're searching for luxury homes, relocating to Austin, or exploring investment opportunities, a consultation with Taylor is the best first step. We'll discuss your goals, timeline, and build a customized search strategy.
 
               </p>
               <div className="space-y-6">
                 <div>
-                  <h4 className="text-minimal text-primary-foreground/40 mb-1">EMAIL</h4>
-                  <a href="mailto:taylor@echelonpropertygroup.com" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                  <h4 className="text-minimal text-muted-foreground mb-1">EMAIL</h4>
+                  <a href="mailto:taylor@echelonpropertygroup.com" className="text-foreground/80 hover:text-foreground transition-colors">
                     Send an Email
                   </a>
                 </div>
                 <div>
-                  <h4 className="text-minimal text-primary-foreground/40 mb-1">PHONE</h4>
-                  <a href="tel:+15126613843" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                  <h4 className="text-minimal text-muted-foreground mb-1">PHONE</h4>
+                  <a href="tel:+15126613843" className="text-foreground/80 hover:text-foreground transition-colors">
                     (512) 661-3843
                   </a>
                 </div>
@@ -577,7 +577,7 @@ const Buy = () => {
                   value={form.name}
                   onChange={handleChange}
                   maxLength={100}
-                  className={`${inputClass} border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/30 focus:border-primary-foreground/50`} />
+                  className={`${inputClass} border-border text-foreground placeholder:text-muted-foreground/50 focus:border-foreground/50`} />
                 
                 {errors.name && <p className="text-destructive text-sm mt-1">{errors.name}</p>}
               </div>
@@ -589,7 +589,7 @@ const Buy = () => {
                   value={form.email}
                   onChange={handleChange}
                   maxLength={255}
-                  className={`${inputClass} border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/30 focus:border-primary-foreground/50`} />
+                  className={`${inputClass} border-border text-foreground placeholder:text-muted-foreground/50 focus:border-foreground/50`} />
                 
                 {errors.email && <p className="text-destructive text-sm mt-1">{errors.email}</p>}
               </div>
@@ -601,7 +601,7 @@ const Buy = () => {
                   value={form.phone}
                   onChange={handleChange}
                   maxLength={20}
-                  className={`${inputClass} border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/30 focus:border-primary-foreground/50`} />
+                  className={`${inputClass} border-border text-foreground placeholder:text-muted-foreground/50 focus:border-foreground/50`} />
                 {errors.phone && <p className="text-destructive text-sm mt-1">{errors.phone}</p>}
               </div>
               <div>
@@ -612,13 +612,13 @@ const Buy = () => {
                   onChange={handleChange}
                   rows={4}
                   maxLength={2000}
-                  className={`${inputClass} resize-none border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/30 focus:border-primary-foreground/50`} />
+                  className={`${inputClass} resize-none border-border text-foreground placeholder:text-muted-foreground/50 focus:border-foreground/50`} />
                 
               </div>
               <button
                 type="submit"
                 disabled={submitting}
-                className="text-minimal bg-primary-foreground text-[#0C0F24] hover:bg-primary-foreground/90 px-10 py-4 transition-colors duration-300 w-full md:w-auto disabled:opacity-50 disabled:cursor-not-allowed">
+                className="text-minimal bg-primary text-primary-foreground hover:bg-gold hover:text-white px-10 py-4 transition-colors duration-300 w-full md:w-auto disabled:opacity-50 disabled:cursor-not-allowed">
                 
                 {submitting ? "SENDING..." : "REQUEST CONSULTATION"}
               </button>

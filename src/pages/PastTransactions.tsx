@@ -21,6 +21,7 @@ const PastTransactions = () => {
         { question: "How can I see Echelon Property Group's track record?", answer: "Contact us directly for a confidential overview of our transaction history and client references. We are happy to provide case studies and examples relevant to your specific real estate needs." },
       ])} />
       <Navigation />
+      <div className="h-12 md:h-20" />
       <div className="pt-32 pb-8 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto text-center">

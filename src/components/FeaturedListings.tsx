@@ -58,6 +58,13 @@ const ListingCard = ({
             className="w-1/2 h-auto object-contain transition-transform duration-700 ease-out group-hover:scale-[1.04]"
             loading="lazy"
             decoding="async" />
+          <div className="absolute inset-0 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
+            <span
+              className="bg-white/20 backdrop-blur-md text-white border border-white/30 px-6 py-2.5 rounded-lg font-medium"
+              style={{ fontSize: "0.65rem", letterSpacing: "0.15em", textTransform: "uppercase" as const }}>
+              View Property
+            </span>
+          </div>
         </div>
         <div className="mt-8 px-1 text-center">
           <h3 className="text-lg font-display font-medium mb-2 leading-relaxed group-hover:text-muted-foreground transition-colors duration-500">

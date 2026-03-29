@@ -719,7 +719,7 @@ const Invest = () => {
               <p>
                 Austin is a highly localized market. Two properties on the same street can carry
                 dramatically different value profiles depending on lot size, orientation, flood
-                plain status, school zone, and proximity to commercial corridors. Investing here
+                plain status, school zone, and proximity to commercial corridors. Whether you're targeting <Link to="/land-for-sale-austin" className="text-foreground underline hover:text-muted-foreground">land for development</Link> or a residential flip, investing here
                 without granular, block-by-block knowledge is a risk most investors can't afford.
               </p>
               <p>

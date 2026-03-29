@@ -146,13 +146,14 @@ const PrivateOpportunities = ({ variant = "light" }: PrivateOpportunitiesProps) 
                       strokeWidth={1.4}
                       style={{ color: "hsl(var(--gold))" }}
                     />
-                    <span
-                      className={`text-base ${
+                    <Link
+                      to={item.to}
+                      className={`text-base transition-colors duration-500 hover:text-[hsl(var(--gold))] ${
                         isDark ? "text-white/80" : "text-foreground"
                       }`}
                     >
                       {item.label}
-                    </span>
+                    </Link>
                   </div>
                 ))}
               </div>

@@ -55,6 +55,7 @@ const Communities = () => {
       ])} />
       <SchemaMarkup schema={createFAQSchema(communityFaqs)} />
       <Navigation />
+      <div className="h-12 md:h-20" />
 
       <section className="pt-32 pb-16">
         <div className="container mx-auto px-6">

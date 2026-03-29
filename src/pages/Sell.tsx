@@ -289,9 +289,9 @@ const Sell = () => {
           <div className="max-w-xl mb-14">
             <p className="text-minimal text-primary-foreground/60 mb-4 reveal">SELLER SERVICES</p>
             <h1 className="text-4xl md:text-6xl font-display font-light text-primary-foreground leading-[1.1] mb-6 reveal">
-              Sell Your Property
+              Sell Your Home
               <br />
-              in Austin
+              in Austin, TX
             </h1>
             <p className="text-primary-foreground/70 text-lg max-w-lg mb-8 reveal-delayed">
               Strategic marketing and expert representation designed to maximize your property's value in Austin's competitive luxury market.
@@ -491,21 +491,21 @@ const Sell = () => {
             <div className="mb-12">
               <p className="text-minimal text-gold mb-4 font-extrabold whitespace-pre-line">{"\n\n\n\n"}OUR EXPERTISE</p>
               <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
-                Full-Spectrum Real Estate Advisory
+                Full-Spectrum Austin Real Estate Advisory
               </h2>
             </div>
             <div className="space-y-6 text-muted-foreground leading-relaxed max-w-4xl">
               <p>
-                Echelon Property Group provides comprehensive real estate services across residential, commercial, land, and investment sectors. Unlike single-focus agents, our breadth of experience allows us to advise clients holistically — whether they're purchasing a primary residence, diversifying into commercial property, or assembling land for development.
+                Echelon Property Group provides comprehensive real estate services across residential, commercial, land, and investment sectors. Unlike single-focus agents, our breadth of experience allows us to advise clients holistically — whether they're purchasing a primary residence, diversifying into <Link to="/austin-commercial-real-estate" className="text-foreground underline hover:text-muted-foreground">commercial property</Link>, or assembling land for development.
               </p>
               <p>
-                Our residential practice covers luxury homes in Austin's most coveted neighborhoods including Westlake Hills, Barton Creek, Lake Austin, Tarrytown, Rollingwood, and Spanish Oaks. We represent both buyers and sellers, bringing strategic pricing, premium marketing, and disciplined negotiation to every transaction.
+                Our residential practice covers <Link to="/austin-luxury-homes-for-sale" className="text-foreground underline hover:text-muted-foreground">luxury homes in Austin</Link>'s most coveted neighborhoods including <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">Westlake Hills</Link>, <Link to="/communities/barton-creek" className="text-foreground underline hover:text-muted-foreground">Barton Creek</Link>, <Link to="/communities/lake-austin" className="text-foreground underline hover:text-muted-foreground">Lake Austin</Link>, <Link to="/communities/tarrytown" className="text-foreground underline hover:text-muted-foreground">Tarrytown</Link>, <Link to="/communities/rollingwood" className="text-foreground underline hover:text-muted-foreground">Rollingwood</Link>, and <Link to="/communities/spanish-oaks" className="text-foreground underline hover:text-muted-foreground">Spanish Oaks</Link>. We represent both buyers and sellers, bringing strategic pricing, premium marketing, and disciplined negotiation to every transaction.
               </p>
               <p>
-                On the commercial and investment side, we advise on multifamily acquisitions, retail and office tenant representation, development land sourcing, and portfolio strategy. Our background in economics and investment analysis gives clients an institutional-grade perspective that most residential-only agents cannot provide.
+                On the commercial and investment side, we advise on <Link to="/austin-multifamily-report-2026" className="text-foreground underline hover:text-muted-foreground">multifamily acquisitions</Link>, retail and office tenant representation, development land sourcing, and portfolio strategy. Our background in economics and investment analysis gives clients an institutional-grade perspective that most residential-only agents cannot provide.
               </p>
               <p>
-                Land brokerage is a core competency, encompassing residential lots, ranch properties, Hill Country acreage, and entitled development parcels throughout the Austin MSA. We guide clients through zoning analysis, highest-and-best-use evaluation, and acquisition negotiation for properties ranging from single homesites to large-scale development tracts.
+                <Link to="/land-for-sale-austin" className="text-foreground underline hover:text-muted-foreground">Land brokerage</Link> is a core competency, encompassing residential lots, ranch properties, Hill Country acreage, and entitled development parcels throughout the Austin MSA. We guide clients through zoning analysis, highest-and-best-use evaluation, and acquisition negotiation for properties ranging from single homesites to large-scale development tracts.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 If your property may be better suited for a renovation buyer or investor sale, <Link to="/invest" className="text-foreground underline hover:text-muted-foreground">explore our investor advisory approach</Link>.

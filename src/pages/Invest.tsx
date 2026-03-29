@@ -339,8 +339,8 @@ const Invest = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Austin Investment Real Estate | Echelon Property Group"
-        description="Access off-market homes, investment properties, and development opportunities across Austin. Private deal sourcing from Echelon Property Group."
+        title="Austin Investment Real Estate & Off-Market Deals | Echelon Property Group"
+        description="Find off-market investment properties, fix-and-flip opportunities, and development deals across Austin. Data-driven sourcing and advisory from Echelon Property Group."
         canonical="/invest"
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
@@ -460,7 +460,7 @@ const Invest = () => {
           <ScrollReveal>
             <p className="text-minimal text-gold mb-4">Client Focus</p>
             <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-16 max-w-2xl">
-              Who We Work With
+              Austin Investment Clients We Serve
             </h2>
           </ScrollReveal>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -487,7 +487,7 @@ const Invest = () => {
           <ScrollReveal>
             <p className="text-minimal text-gold mb-4">Methodology</p>
             <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-16 max-w-2xl">
-              Our Investor Process
+              Our Austin Investor Process
             </h2>
           </ScrollReveal>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -593,10 +593,10 @@ const Invest = () => {
               opportunities, understand neighborhood-specific demand, assess improvement potential,
               and make smarter acquisition decisions with resale or hold strategy in mind. Every
               recommendation is grounded in data, local insight, and a clear understanding of
-              where value is created.
+              where value is created — from <Link to="/off-market-real-estate-austin" className="text-foreground underline hover:text-muted-foreground">off-market deals</Link> to on-market value plays.
             </p>
             <p className="text-foreground max-w-3xl leading-relaxed mb-16">
-              Source smarter opportunities, evaluate upside with more precision, and move faster in Austin with an advisor who understands renovation potential, redevelopment value, and resale positioning.
+              Source smarter opportunities, evaluate upside with more precision, and move faster in Austin with an advisor who understands renovation potential, redevelopment value, and resale positioning. Explore our <Link to="/austin-multifamily-report-2026" className="text-foreground underline hover:text-muted-foreground">Austin multifamily market outlook</Link> for current data.
             </p>
           </ScrollReveal>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -672,7 +672,7 @@ const Invest = () => {
           <ScrollReveal>
             <p className="text-minimal text-gold mb-4">Value Proposition</p>
             <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-16 max-w-3xl">
-              How We Help Investors Move Smarter
+              How We Help Austin Investors Move Smarter
             </h2>
           </ScrollReveal>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -719,7 +719,7 @@ const Invest = () => {
               <p>
                 Austin is a highly localized market. Two properties on the same street can carry
                 dramatically different value profiles depending on lot size, orientation, flood
-                plain status, school zone, and proximity to commercial corridors. Investing here
+                plain status, school zone, and proximity to commercial corridors. Whether you're targeting <Link to="/land-for-sale-austin" className="text-foreground underline hover:text-muted-foreground">land for development</Link> or a residential flip, investing here
                 without granular, block-by-block knowledge is a risk most investors can't afford.
               </p>
               <p>
@@ -900,7 +900,7 @@ const Invest = () => {
           <ScrollReveal>
             <p className="text-minimal text-gold mb-4">Frequently Asked Questions</p>
             <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-12">
-              Investor FAQ
+              Austin Investment Real Estate FAQ
             </h2>
           </ScrollReveal>
           <ScrollReveal delay={100}>

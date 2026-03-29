@@ -295,8 +295,8 @@ const Buy = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Buy Real Estate in Austin | Echelon Property Group"
-        description="Expert buyer representation for Austin luxury homes. Off-market access, concierge service, and strategic guidance from Taylor Sherwood."
+        title="Buy a Home in Austin TX | Echelon Property Group"
+        description="Expert buyer representation for Austin luxury homes, condos, and investment properties. Off-market access, private showings, and strategic guidance from Taylor Sherwood."
         canonical="https://www.echelonpropertygroup.com/buy" />
       <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createBreadcrumbSchema([

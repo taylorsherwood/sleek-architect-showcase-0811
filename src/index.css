@@ -344,11 +344,11 @@ img {
 /* ── Community tile hover — image only, ultra-restrained ── */
 .community-tile-img {
   transform: scale(1);
-  transition: transform 1200ms cubic-bezier(0.25, 1, 0.5, 1);
+  transition: transform 800ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 a:hover > .community-tile-img,
 a:hover .community-tile-img {
-  transform: scale(1.04);
+  transform: scale(1.025);
 }
 
 /* ── Metallic gold text — derived from Echelon logo tone ── */

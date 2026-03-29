@@ -9,7 +9,7 @@ const Hero = () => {
   const [videoReady, setVideoReady] = useState(false);
   const [videoSrc, setVideoSrc] = useState<string | null>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
-  const [heroVisible, setHeroVisible] = useState(true);
+  const [heroVisible, setHeroVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
 
   // Re-trigger text animation when hero scrolls back into view

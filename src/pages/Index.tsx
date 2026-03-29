@@ -149,7 +149,7 @@ const Hero = () => {
 
           <div className="flex flex-col sm:flex-row gap-5" style={anim("0.4s")}>
             <Link to="/austin-luxury-homes-for-sale"
-              className="hero-cta-btn inline-block bg-primary text-primary-foreground px-12 py-[1.1rem] text-center hover:bg-gold hover:text-white border border-white/10 shadow-[0_8px_24px_rgba(0,0,0,0.35)]"
+              className="hero-cta-btn inline-block bg-warm-cream text-foreground px-12 py-[1.1rem] text-center hover:bg-gold hover:text-white border border-white/10 shadow-[0_8px_24px_rgba(0,0,0,0.35)]"
               style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.58rem", letterSpacing: "0.3em", textTransform: "uppercase", fontWeight: 600 }}>
               EXPLORE LUXURY HOMES
             </Link>
@@ -159,11 +159,6 @@ const Hero = () => {
               REQUEST OFF-MARKET ACCESS
             </Link>
           </div>
-        </div>
-
-        {/* Integrated search */}
-        <div ref={searchRef} className="mt-20 max-w-3xl rounded-sm p-6 md:p-8" style={{ ...anim("0.55s"), minHeight: 80, background: "rgba(10, 14, 25, 0.55)", backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)", border: "1px solid rgba(255,255,255,0.08)", boxShadow: "0 8px 32px rgba(0,0,0,0.12)" }}>
-          {createElement("realscout-advanced-search", { "agent-encoded-id": "QWdlbnQtMjg5NDU2" })}
         </div>
       </div>
 

@@ -164,16 +164,16 @@ const OffMarketDealsAustin = () => {
             {/* Intro */}
             <div className="space-y-[18px] mb-14">
               <p className="text-foreground/85 text-lg md:text-xl font-light">
-                Austin remains one of the most competitive real estate markets in the country for investors, developers, and luxury buyers. As inventory tightens and prime opportunities become more relationship-driven, many of the best deals never appear on the MLS at all.
+                Off-market real estate deals in Austin remain one of the most powerful tools for investors, developers, and luxury buyers looking to gain a strategic edge. As inventory tightens and prime opportunities become more relationship-driven, many of the best deals never appear on the MLS at all.
               </p>
               <p className="text-foreground/60">
-                They trade quietly.
+                They trade quietly — through broker networks, private investor circles, and direct-to-owner relationships.
               </p>
               <p className="text-foreground/60">
-                For serious buyers, that means one thing: if you only search public listings, you are often seeing deals too late.
+                For serious buyers, that means one thing: if you only search public listings, you are often seeing deals too late. Whether you are pursuing <Link to="/austin-luxury-homes-for-sale" className="text-foreground/80 underline hover:text-foreground/50">luxury homes in Austin</Link>, development land, or <Link to="/austin-real-estate-investment" className="text-foreground/80 underline hover:text-foreground/50">investment property</Link>, a private deal pipeline is essential.
               </p>
               <p className="text-foreground/60">
-                This guide explains how off-market real estate works in Austin, why it matters, and how investors can position themselves to access better opportunities before the broader market sees them.
+                This 2026 playbook explains how off-market real estate works in Austin, why it matters, and how investors can position themselves to access better opportunities before the broader market sees them. These insights reflect the current Austin market as of early 2026 and are updated periodically.
               </p>
             </div>
 

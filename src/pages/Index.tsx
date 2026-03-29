@@ -733,16 +733,25 @@ const LeadCapture = () => {
                 <p className="text-muted-foreground/50 text-sm mt-3 font-light">We'll be in touch shortly with exclusive opportunities.</p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
-                <input type="text" placeholder="Your Name" value={name} onChange={(e) => setName(e.target.value)}
-                  className="flex-1 bg-card border border-border/30 px-5 py-3.5 text-sm text-foreground/80 placeholder:text-muted-foreground/35 focus:outline-none focus:border-gold/40 transition-colors duration-[400ms]" />
-                <input type="email" placeholder="Email Address" required value={email} onChange={(e) => setEmail(e.target.value)}
-                  className="flex-1 bg-card border border-border/30 px-5 py-3.5 text-sm text-foreground/80 placeholder:text-muted-foreground/35 focus:outline-none focus:border-gold/40 transition-colors duration-[400ms]" />
-                <button type="submit" disabled={loading}
-                  className="border border-foreground/15 text-foreground px-8 py-3.5 hover:bg-gold hover:text-white hover:border-gold transition-all duration-[400ms] disabled:opacity-50"
-                  style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.58rem", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 600 }}>
-                  {loading ? "SENDING..." : "REQUEST ACCESS"}
-                </button>
+              <form onSubmit={handleSubmit} className="max-w-lg mx-auto">
+                <div className="flex flex-col sm:flex-row items-stretch rounded-lg overflow-hidden" style={{ border: "1px solid rgba(0,0,0,0.08)", boxShadow: "0 2px 16px rgba(0,0,0,0.04)" }}>
+                  <input type="text" placeholder="Your Name" value={name} onChange={(e) => setName(e.target.value)}
+                    className="flex-1 bg-background px-5 py-[14px] text-[13px] text-foreground/80 placeholder:text-foreground/35 focus:outline-none transition-colors duration-300 border-b sm:border-b-0 sm:border-r border-[rgba(0,0,0,0.08)] focus:bg-white"
+                    style={{ fontFamily: '"Raleway", sans-serif' }} />
+                  <input type="email" placeholder="Email Address" required value={email} onChange={(e) => setEmail(e.target.value)}
+                    className="flex-1 bg-background px-5 py-[14px] text-[13px] text-foreground/80 placeholder:text-foreground/35 focus:outline-none transition-colors duration-300 border-b sm:border-b-0 sm:border-r border-[rgba(0,0,0,0.08)] focus:bg-white"
+                    style={{ fontFamily: '"Raleway", sans-serif' }} />
+                  <button type="submit" disabled={loading}
+                    className="shrink-0 px-7 py-[14px] text-white disabled:opacity-50 transition-all duration-[250ms] ease-out hover:-translate-y-[1px] active:translate-y-0"
+                    style={{
+                      fontFamily: '"Raleway", sans-serif', fontSize: "13px", letterSpacing: "0.08em", fontWeight: 500,
+                      background: loading ? "#0C0F24" : "#0C0F24",
+                    }}
+                    onMouseEnter={(e) => { if (!loading) { e.currentTarget.style.background = "#C6A85B"; e.currentTarget.style.color = "#0C0F24"; }}}
+                    onMouseLeave={(e) => { e.currentTarget.style.background = "#0C0F24"; e.currentTarget.style.color = "#FFFFFF"; }}>
+                    {loading ? "Sending..." : "Unlock Private Access"}
+                  </button>
+                </div>
               </form>
             )}
           </ScrollReveal>

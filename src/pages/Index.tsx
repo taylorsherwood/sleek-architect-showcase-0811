@@ -365,7 +365,7 @@ const StatsStrip = () => (
       <div className="max-w-[1100px] mx-auto pt-12 pb-14 md:pt-14 md:pb-16 border-t border-border/15">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {stats.map((stat, i) => {
-            const { count, ref } = useCountUp(stat.value);
+            const { count, ref } = useCountUp(stat.value, 2600, (stat as any).from || 0);
             return (
               <div key={i} ref={ref} className="text-center relative">
                 <p className="font-display text-[2rem] md:text-[2.75rem] font-light text-foreground tracking-[-0.02em]">

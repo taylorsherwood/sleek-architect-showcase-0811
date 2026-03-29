@@ -148,7 +148,7 @@ const PrivateOpportunities = ({ variant = "light" }: PrivateOpportunitiesProps) 
                     />
                     <Link
                       to={item.to}
-                      className={`text-base transition-colors duration-500 hover:text-[hsl(var(--gold))] ${
+                      className={`text-base transition-colors duration-500 hover:text-[hsl(var(--gold))] relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-px after:bg-[hsl(var(--gold))] after:transition-all after:duration-500 hover:after:w-full ${
                         isDark ? "text-white/80" : "text-foreground"
                       }`}
                     >

@@ -186,19 +186,20 @@ const SearchSection = () => {
   }, []);
 
   return (
-    <section className="bg-background">
-      <div className="container mx-auto px-6 py-14 md:py-20">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-8 md:mb-10">
-            <p className="text-gold/70 font-medium mb-2" style={{
-              fontFamily: '"Raleway", sans-serif', fontSize: "0.6rem", letterSpacing: "0.3em", textTransform: "uppercase"
-            }}>
-              Search Properties
-            </p>
-            <p className="text-muted-foreground/50 font-light" style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.8rem" }}>
-              Explore available homes across Austin
-            </p>
-          </div>
+    <section className="bg-secondary/50">
+      <div className="container mx-auto px-6 py-12 md:py-16">
+        <div className="max-w-3xl mx-auto text-center">
+          <p className="text-gold/70 font-semibold mb-3" style={{
+            fontFamily: '"Raleway", sans-serif', fontSize: "0.55rem", letterSpacing: "0.3em", textTransform: "uppercase"
+          }}>
+            Explore the Market
+          </p>
+          <h2 className="font-display text-2xl md:text-[2rem] font-normal text-foreground leading-[1.1] tracking-[-0.01em] mb-3">
+            Find Your Next <span className="italic text-gold">Chapter</span>
+          </h2>
+          <p className="text-muted-foreground/55 text-[13.5px] font-light leading-relaxed mb-8 max-w-md mx-auto">
+            Search luxury homes, land, and investment opportunities across Austin's most coveted neighborhoods.
+          </p>
           <div ref={containerRef} className="flex justify-center relative" style={{ minHeight: 60, zIndex: 10 }} />
         </div>
       </div>

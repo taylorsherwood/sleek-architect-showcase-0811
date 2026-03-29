@@ -731,12 +731,12 @@ const FinalCTA = () => (
             <Link to="/buy"
               className="inline-block bg-warm-cream text-foreground px-12 py-[1rem] text-center hover:bg-gold hover:text-white transition-all duration-[400ms]"
               style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.58rem", letterSpacing: "0.3em", textTransform: "uppercase", fontWeight: 600 }}>
-              BUY A HOME
+              BUY PROPERTY
             </Link>
             <Link to="/sell"
               className="inline-block border border-primary-foreground/15 text-primary-foreground/60 px-12 py-[1rem] text-center hover:bg-gold hover:text-white hover:border-gold transition-all duration-[400ms]"
               style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.58rem", letterSpacing: "0.3em", textTransform: "uppercase", fontWeight: 400 }}>
-              SELL YOUR HOME
+              SELL PROPERTY
             </Link>
           </div>
         </ScrollReveal>

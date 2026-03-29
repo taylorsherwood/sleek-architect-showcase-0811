@@ -150,14 +150,14 @@ const Hero = () => {
 
           <div className="flex flex-col sm:flex-row gap-5" style={anim("0.4s")}>
             <Link to="/austin-luxury-homes-for-sale"
-              className="hero-cta-btn inline-block bg-warm-cream text-foreground px-12 py-[1.1rem] text-center hover:bg-gold hover:text-white border border-white/10 shadow-[0_8px_24px_rgba(0,0,0,0.35)]"
+              className="inline-block bg-warm-cream text-foreground px-12 py-[1.05rem] text-center hover:bg-gold hover:text-white border border-white/10 shadow-[0_8px_24px_rgba(0,0,0,0.35)] transition-all duration-300"
               style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.58rem", letterSpacing: "0.3em", textTransform: "uppercase", fontWeight: 600 }}>
               EXPLORE LUXURY HOMES
             </Link>
             <Link to="/off-market-real-estate-austin"
-              className="hero-cta-btn inline-block bg-transparent border border-warm-cream/20 text-warm-cream/70 px-12 py-[1.1rem] text-center hover:bg-gold hover:text-white hover:border-gold transition-all duration-300"
+              className="inline-block bg-transparent border border-warm-cream/20 text-warm-cream/70 px-12 py-[1.05rem] text-center hover:bg-gold hover:text-white hover:border-gold transition-all duration-300"
               style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.58rem", letterSpacing: "0.3em", textTransform: "uppercase", fontWeight: 400 }}>
-              REQUEST OFF-MARKET ACCESS
+              REQUEST PRIVATE ACCESS
             </Link>
           </div>
         </div>

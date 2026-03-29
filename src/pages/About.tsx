@@ -29,6 +29,7 @@ const About = () => {
         { question: "Does Taylor Sherwood work with out-of-state clients?", answer: "Yes. A significant portion of our clients relocate to Austin from across the country. We provide virtual tours, comprehensive neighborhood analysis, and full-service transaction management for remote buyers and investors." },
       ])} />
       <Navigation />
+      <div className="h-12 md:h-20" aria-hidden="true" />
 
       {/* Hero */}
       <section className="pt-32 pb-20 bg-background">

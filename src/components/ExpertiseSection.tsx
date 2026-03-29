@@ -34,7 +34,7 @@ const expertiseBlocks = [
 
 const ExpertiseSection = () => {
   return (
-    <section className="py-20 md:py-28 bg-background">
+    <section className="pt-12 pb-20 md:pt-16 md:pb-28 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-[58rem] mx-auto">
           <div className="text-center mb-14 md:mb-20">

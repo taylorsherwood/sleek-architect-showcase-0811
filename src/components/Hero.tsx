@@ -105,7 +105,7 @@ const Hero = () => {
   }, [videoSrc]);
 
   return (
-    <section id="hero-section" className="relative h-screen flex items-center overflow-hidden bg-primary">
+    <section ref={sectionRef} id="hero-section" className="relative h-screen flex items-center overflow-hidden bg-primary">
       {/* Decorative background video */}
       <div
         aria-hidden="true"

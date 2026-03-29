@@ -70,7 +70,7 @@ const RealScoutSearch = () => {
             </header>
           </div>
 
-          <div ref={containerRef} className="mx-auto max-w-5xl">
+          <div ref={containerRef} className="mx-auto max-w-5xl" style={{ minHeight: 120 }}>
             {createElement("realscout-advanced-search", {
               "agent-encoded-id": "QWdlbnQtMjg5NDU2",
             })}

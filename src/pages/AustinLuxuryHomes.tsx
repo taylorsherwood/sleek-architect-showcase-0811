@@ -28,6 +28,7 @@ const AustinLuxuryHomes = () => {
       <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createFAQSchema(faqs)} />
       <Navigation />
+      <div className="h-12 md:h-20" />
 
       {/* Hero */}
       <section className="pt-32 pb-16">

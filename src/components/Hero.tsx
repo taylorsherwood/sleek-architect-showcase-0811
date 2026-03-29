@@ -105,6 +105,7 @@ const Hero = () => {
           className={`hero-bg-video transition-opacity duration-700 ${
           videoReady ? "opacity-100" : "opacity-0"}`
           }
+          style={{ filter: "brightness(0.8) contrast(1.1)" }}
           tabIndex={-1}>
           
           {videoSrc && <source src={videoSrc} type="video/mp4" />}
@@ -123,15 +124,14 @@ const Hero = () => {
                     />
       }
 
-      {/* Cinematic vignette gradient */}
+      {/* Layered cinematic gradient overlays */}
       <div
         className="absolute inset-0"
         style={{
           zIndex: 1,
           background: `
-            linear-gradient(to right, rgba(0,0,0,0.58) 0%, rgba(0,0,0,0.42) 22%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0) 68%),
-            linear-gradient(to top, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.08) 40%, transparent 70%),
-            radial-gradient(ellipse at 15% 70%, rgba(0,0,0,0.25) 0%, transparent 55%)
+            linear-gradient(to right, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.5) 30%, rgba(0,0,0,0.25) 60%, rgba(0,0,0,0.05) 100%),
+            linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.05) 40%, rgba(0,0,0,0.35) 100%)
           `
         }} />
       
@@ -142,7 +142,7 @@ const Hero = () => {
         style={{ zIndex: 2 }}>
         
         <div
-          className="max-w-xl relative"
+          className="max-w-[640px] relative"
           style={{
             filter: "drop-shadow(0 0 60px rgba(0,0,0,0.3))"
           }}>
@@ -161,18 +161,16 @@ const Hero = () => {
           </p>
 
           <h1
-            className="font-display font-light text-warm-cream mb-9 reveal"
+            className="font-display font-medium text-warm-cream mb-9 reveal"
             style={{
-              fontSize: "clamp(2.8rem, 5.8vw, 5.8rem)",
-              lineHeight: 1.08,
+              lineHeight: 1.12,
               letterSpacing: "-0.025em",
-              textShadow:
-              "0px 2px 8px rgba(0,0,0,0.35), 0 1px 2px rgba(0,0,0,0.2)"
+              textShadow: "0 2px 12px rgba(0,0,0,0.55), 0 1px 2px rgba(0,0,0,0.2)"
             }}>
             
-            <span className="whitespace-nowrap">Driven By Data,</span>
+            <span className="whitespace-nowrap" style={{ fontSize: "clamp(2.5rem, 5.2vw, 5.2rem)" }}>Driven By Data,</span>
             <br />
-            <span className="italic whitespace-nowrap">Proven by Results</span>
+            <span className="italic whitespace-nowrap" style={{ fontSize: "clamp(3.1rem, 6.4vw, 6.4rem)" }}>Proven by Results</span>
           </h1>
 
           {/* Service pillars */}
@@ -206,7 +204,7 @@ const Hero = () => {
               fontFamily: '"Raleway", sans-serif',
               fontSize: "1rem",
               letterSpacing: "0.01em",
-              textShadow: "0px 1px 4px rgba(0,0,0,0.25)"
+              textShadow: "0 2px 12px rgba(0,0,0,0.55)"
             }}>
             
             Data-driven strategy and discreet representation across Austin's
@@ -216,7 +214,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 reveal-delayed-2">
             <Link
               to="/invest"
-              className="hero-cta-btn inline-block bg-warm-cream text-foreground px-12 py-[1.1rem] text-center hover:bg-primary hover:text-primary-foreground"
+              className="hero-cta-btn inline-block bg-warm-cream text-foreground px-12 py-[1.1rem] text-center hover:bg-primary hover:text-primary-foreground shadow-[0_8px_24px_rgba(0,0,0,0.35)]"
               style={{
                 fontFamily: '"Raleway", sans-serif',
                 fontSize: "0.6rem",

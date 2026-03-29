@@ -1,5 +1,4 @@
 import { createElement, useEffect, useRef } from "react";
-import ScrollReveal from "@/components/ScrollReveal";
 
 const GOLD_HSL = "hsl(41, 36%, 57%)";
 

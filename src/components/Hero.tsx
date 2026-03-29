@@ -9,6 +9,22 @@ const Hero = () => {
   const [videoReady, setVideoReady] = useState(false);
   const [videoSrc, setVideoSrc] = useState<string | null>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
+  const [heroVisible, setHeroVisible] = useState(true);
+  const sectionRef = useRef<HTMLElement>(null);
+
+  // Re-trigger text animation when hero scrolls back into view
+  useEffect(() => {
+    const el = sectionRef.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setHeroVisible(entry.isIntersecting);
+      },
+      { threshold: 0.4 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
 
   useEffect(() => {
     const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -89,7 +105,7 @@ const Hero = () => {
   }, [videoSrc]);
 
   return (
-    <section id="hero-section" className="relative h-screen flex items-center overflow-hidden bg-primary">
+    <section ref={sectionRef} id="hero-section" className="relative h-screen flex items-center overflow-hidden bg-primary">
       {/* Decorative background video */}
       <div
         aria-hidden="true"
@@ -150,8 +166,11 @@ const Hero = () => {
           }}>
           
           <p
-            className="text-warm-cream/55 mb-6 reveal font-bold"
+            className="text-warm-cream/55 mb-6 font-bold transition-all duration-1000 will-change-[opacity,transform]"
             style={{
+              opacity: heroVisible ? 1 : 0,
+              transform: heroVisible ? "translateY(0)" : "translateY(10px)",
+              transitionTimingFunction: "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
               fontFamily: '"Raleway", sans-serif',
               fontSize: "0.65rem",
               letterSpacing: "0.38em",
@@ -163,8 +182,12 @@ const Hero = () => {
           </p>
 
           <h1
-            className="font-display font-medium text-warm-cream mb-9 reveal"
+            className="font-display font-medium text-warm-cream mb-9 transition-all duration-1000 will-change-[opacity,transform]"
             style={{
+              opacity: heroVisible ? 1 : 0,
+              transform: heroVisible ? "translateY(0)" : "translateY(10px)",
+              transitionTimingFunction: "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+              transitionDelay: "0.15s",
               lineHeight: 1.12,
               letterSpacing: "-0.025em",
               textShadow: "0 2px 9px rgba(0,0,0,0.55), 0 1px 2px rgba(0,0,0,0.2)"
@@ -176,7 +199,13 @@ const Hero = () => {
           </h1>
 
           {/* Service pillars */}
-          <div className="flex flex-wrap items-center gap-x-5 gap-y-1 mb-5 reveal-delayed">
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-1 mb-5 transition-all duration-1000 will-change-[opacity,transform]"
+            style={{
+              opacity: heroVisible ? 1 : 0,
+              transform: heroVisible ? "translateY(0)" : "translateY(10px)",
+              transitionTimingFunction: "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+              transitionDelay: "0.3s",
+            }}>
             {["Residential", "Investment", "Development"].map(
               (item, i) =>
               <span key={item} className="flex items-center gap-5">
@@ -201,8 +230,12 @@ const Hero = () => {
           </div>
 
           <p
-            className="text-warm-cream/60 max-w-lg mb-10 reveal-delayed leading-relaxed font-medium"
+            className="text-warm-cream/60 max-w-lg mb-10 leading-relaxed font-medium transition-all duration-1000 will-change-[opacity,transform]"
             style={{
+              opacity: heroVisible ? 1 : 0,
+              transform: heroVisible ? "translateY(0)" : "translateY(10px)",
+              transitionTimingFunction: "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+              transitionDelay: "0.35s",
               fontFamily: '"Raleway", sans-serif',
               fontSize: "1rem",
               letterSpacing: "0.01em",
@@ -213,7 +246,13 @@ const Hero = () => {
             most sought-after neighborhoods.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 reveal-delayed-2">
+          <div className="flex flex-col sm:flex-row gap-4 transition-all duration-1000 will-change-[opacity,transform]"
+            style={{
+              opacity: heroVisible ? 1 : 0,
+              transform: heroVisible ? "translateY(0)" : "translateY(10px)",
+              transitionTimingFunction: "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+              transitionDelay: "0.45s",
+            }}>
             <Link
               to="/invest"
               className="hero-cta-btn inline-block bg-warm-cream text-foreground px-12 py-[1.1rem] text-center hover:bg-primary hover:text-primary-foreground shadow-[0_8px_24px_rgba(0,0,0,0.35)] border border-white/15"

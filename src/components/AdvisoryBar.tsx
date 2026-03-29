@@ -37,6 +37,7 @@ const AdvisoryBar = () => {
   const location = useLocation();
 
   const isHomePage = location.pathname === "/";
+  const isOffMarket = location.pathname === "/off-market-real-estate-austin";
 
   const dismiss = useCallback(() => {
     setDismissed(true);

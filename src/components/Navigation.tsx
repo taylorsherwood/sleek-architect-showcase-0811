@@ -69,9 +69,7 @@ const Navigation = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 overflow-visible h-20 md:h-24 lg:h-[6.5rem] border-b border-border/20">
       <div
-        className={`absolute inset-0 backdrop-blur-md transition-all duration-500 ${
-          isScrolled ? "bg-background/70" : "bg-background"
-        }`}
+        className={`absolute inset-0 backdrop-blur-md transition-all duration-500 bg-background`}
       />
       <div className="relative container mx-auto px-6 h-full flex items-center justify-between">
         <Link to="/" onClick={() => { if (location.pathname === '/') window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="flex items-center shrink-0 overflow-visible" style={{ height: '100%' }}>

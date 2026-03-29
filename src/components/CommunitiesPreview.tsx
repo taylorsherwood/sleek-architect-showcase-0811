@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import ScrollReveal from "@/components/ScrollReveal";
 
 const featured = [
   {
@@ -28,20 +29,22 @@ const CommunitiesPreview = () => {
     <section className="py-16 md:py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
-          {/* Header */}
-          <div className="text-center mb-5">
-            <p className="text-minimal text-gold mb-4 font-extrabold">
-              SELECT COMMUNITIES
-            </p>
-            <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-5">
-              Austin's Most Sought-After Addresses
-            </h2>
-            <p className="text-muted-foreground max-w-xl mx-auto text-sm">
-              A curated introduction to the neighborhoods that define luxury living in Austin.
-            </p>
-          </div>
+          <ScrollReveal>
+            <div className="text-center mb-5">
+              <p className="text-minimal text-gold mb-4 font-extrabold">
+                SELECT COMMUNITIES
+              </p>
+              <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-5">
+                Austin's Most Sought-After Addresses
+              </h2>
+              <p className="text-muted-foreground max-w-xl mx-auto text-sm">
+                A curated introduction to the neighborhoods that define luxury living in Austin.
+              </p>
+            </div>
+          </ScrollReveal>
 
           {/* Single-row editorial layout */}
+          <ScrollReveal delay={100}>
           <div className="grid grid-cols-1 md:grid-cols-12 gap-[6px]">
             {/* Hero — ~58% width (7 of 12 cols) */}
             <Link
@@ -96,6 +99,7 @@ const CommunitiesPreview = () => {
               ))}
             </div>
           </div>
+          </ScrollReveal>
 
           {/* View all */}
           <div className="text-center mt-12">

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Instagram } from "lucide-react";
 import echelonWatermark from "@/assets/echelon-watermark.png";
+import ScrollReveal from "@/components/ScrollReveal";
 
 const MeetTaylor = () => {
   return (
@@ -25,13 +26,16 @@ const MeetTaylor = () => {
       </div>
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
-          <h3 className="text-2xl md:text-4xl font-display font-light text-architectural mb-3 text-center md:w-1/2">
-            Meet Taylor Sherwood
-          </h3>
-          <p className="text-[0.65rem] md:text-xs tracking-[0.1em] uppercase text-muted-foreground/60 mb-6 text-center md:w-1/2 leading-relaxed">
-            CERTIFIED LUXURY HOME MARKETING SPECIALIST (CLHMS) <br />
-            AUSTIN LUXURY REAL ESTATE ADVISOR
-          </p>
+          <ScrollReveal>
+            <h3 className="text-2xl md:text-4xl font-display font-light text-architectural mb-3 text-center md:w-1/2">
+              Meet Taylor Sherwood
+            </h3>
+            <p className="text-[0.65rem] md:text-xs tracking-[0.1em] uppercase text-muted-foreground/60 mb-6 text-center md:w-1/2 leading-relaxed">
+              CERTIFIED LUXURY HOME MARKETING SPECIALIST (CLHMS) <br />
+              AUSTIN LUXURY REAL ESTATE ADVISOR
+            </p>
+          </ScrollReveal>
+          <ScrollReveal delay={100}>
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start">
             <div className="relative inline-block">
               <img
@@ -65,6 +69,7 @@ const MeetTaylor = () => {
               </a>
             </div>
           </div>
+          </ScrollReveal>
 
           <div className="mt-8 text-center">
             <p className="text-muted-foreground leading-relaxed text-base md:text-xl mb-8 text-center max-w-3xl mx-auto">

@@ -289,9 +289,9 @@ const Sell = () => {
           <div className="max-w-xl mb-14">
             <p className="text-minimal text-primary-foreground/60 mb-4 reveal">SELLER SERVICES</p>
             <h1 className="text-4xl md:text-6xl font-display font-light text-primary-foreground leading-[1.1] mb-6 reveal">
-              Sell Your Property
+              Sell Your Home
               <br />
-              in Austin
+              in Austin, TX
             </h1>
             <p className="text-primary-foreground/70 text-lg max-w-lg mb-8 reveal-delayed">
               Strategic marketing and expert representation designed to maximize your property's value in Austin's competitive luxury market.

@@ -45,8 +45,8 @@ const Communities = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Austin Luxury Communities | Echelon Property Group"
-        description="Explore Austin's finest luxury neighborhoods including Westlake Hills, Barton Creek, Lake Austin, Tarrytown, Rollingwood, and Dripping Springs."
+        title="Austin Luxury Neighborhoods & Communities | Echelon Property Group"
+        description="Explore homes for sale in Austin's most exclusive neighborhoods — Westlake Hills, Barton Creek, Lake Austin, Tarrytown, Rollingwood, Spanish Oaks, and Dripping Springs."
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createBreadcrumbSchema([

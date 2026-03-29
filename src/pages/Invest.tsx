@@ -339,8 +339,8 @@ const Invest = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Austin Investment Real Estate | Echelon Property Group"
-        description="Access off-market homes, investment properties, and development opportunities across Austin. Private deal sourcing from Echelon Property Group."
+        title="Austin Investment Real Estate & Off-Market Deals | Echelon Property Group"
+        description="Find off-market investment properties, fix-and-flip opportunities, and development deals across Austin. Data-driven sourcing and advisory from Echelon Property Group."
         canonical="/invest"
       />
       <SchemaMarkup schema={realEstateAgentSchema} />

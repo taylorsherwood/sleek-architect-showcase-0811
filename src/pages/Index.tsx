@@ -488,7 +488,7 @@ const TestimonialsSection = () => (
     <div className="container mx-auto px-6">
       <div className="max-w-[1320px] mx-auto">
         <ScrollReveal>
-          <div className="text-center mb-16">
+          <div className="text-center mb-14">
             <p className="text-minimal text-gold mb-5 font-extrabold tracking-[0.22em]">CLIENT EXPERIENCES</p>
             <h2 className="font-display text-3xl md:text-[2.5rem] font-light text-primary-foreground/90 leading-[1.1] tracking-[-0.01em]">
               Trusted by Buyers, Sellers, and <span className="italic">Investors</span>
@@ -496,22 +496,23 @@ const TestimonialsSection = () => (
           </div>
         </ScrollReveal>
 
-        <ScrollReveal delay={120} stagger={80}>
+        <div className="grid md:grid-cols-2 gap-5">
           {testimonials.map((t, i) => (
-            <div key={i} className="bg-primary-foreground/[0.03] border border-primary-foreground/[0.06] rounded-[2px] px-8 py-8 flex flex-col justify-between
-              transition-all duration-[500ms] hover:-translate-y-[2px] hover:bg-primary-foreground/[0.05] hover:shadow-[0_8px_24px_-8px_rgba(0,0,0,0.15)]
-              mb-6 last:mb-0 md:inline-block md:w-[calc(50%-1rem)] md:align-top md:mx-2 md:mb-4">
-              <p className="text-primary-foreground/60 text-[15px] leading-[1.85] font-light italic mb-6">
-                "{t.quote}"
-              </p>
-              <div className="h-px mb-5" style={{ background: "linear-gradient(to right, transparent, hsl(38 20% 72% / 0.15), transparent)" }} />
-              <div>
-                <p className="font-display text-[0.95rem] text-primary-foreground/80 tracking-[0.01em]">{t.name}</p>
-                <p className="text-gold/60 text-[0.6rem] mt-1.5 font-light tracking-[0.12em] uppercase">{t.context}</p>
+            <ScrollReveal key={i} delay={100 + i * 60}>
+              <div className="bg-primary-foreground/[0.035] border border-primary-foreground/[0.07] rounded-[3px] px-7 py-7 flex flex-col justify-between h-full
+                transition-all duration-[500ms] hover:-translate-y-[2px] hover:bg-primary-foreground/[0.055] hover:border-primary-foreground/[0.1]">
+                <p className="text-primary-foreground/60 text-[15px] leading-[1.8] font-light italic mb-5">
+                  "{t.quote}"
+                </p>
+                <div>
+                  <div className="h-px mb-4" style={{ background: "linear-gradient(to right, transparent, hsl(38 20% 72% / 0.18), transparent)" }} />
+                  <p className="font-display text-[0.95rem] text-primary-foreground/80 tracking-[0.01em]">{t.name}</p>
+                  <p className="text-gold/55 text-[0.58rem] mt-1 font-light tracking-[0.14em] uppercase">{t.context}</p>
+                </div>
               </div>
-            </div>
+            </ScrollReveal>
           ))}
-        </ScrollReveal>
+        </div>
       </div>
     </div>
   </section>

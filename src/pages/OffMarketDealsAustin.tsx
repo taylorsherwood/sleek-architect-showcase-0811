@@ -352,7 +352,7 @@ const OffMarketDealsAustin = () => {
 
             {/* Who Benefits Most */}
             <section id="who-benefits-most" className="space-y-[18px] mb-14">
-              <h2 className="text-2xl md:text-3xl font-display font-light text-foreground mb-4">What Types of Buyers Benefit Most From Off-Market Access?</h2>
+              <h2 className="text-2xl md:text-3xl font-display font-light text-foreground mb-4">What Types of Austin Buyers Benefit Most From Off-Market Access?</h2>
               <p className="text-foreground/60">Off-market opportunities can be especially valuable for:</p>
               <ul className="space-y-2 text-foreground/60 pl-5">
                 <li className="flex items-start gap-3"><span className="text-gold mt-1.5 text-xs">■</span>Luxury buyers seeking privacy or rare inventory</li>

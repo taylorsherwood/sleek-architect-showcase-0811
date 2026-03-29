@@ -41,15 +41,15 @@ const Navigation = () => {
   }, [location.pathname]);
 
   const links: NavLink[] = [
-    {
+      {
       href: "/search",
-      label: "SEARCH HOMES",
+      label: "SEARCH PROPERTIES",
       children: [
         { href: "/search", label: "SEARCH ALL HOMES" },
         { href: "/austin-luxury-homes-for-sale", label: "AUSTIN LUXURY HOMES" },
         { href: "/past-transactions", label: "PAST TRANSACTIONS" },
       ],
-    },
+    }
     { href: "/buy", label: "BUY" },
     { href: "/sell", label: "SELL" },
     { href: "/communities", label: "COMMUNITIES" },

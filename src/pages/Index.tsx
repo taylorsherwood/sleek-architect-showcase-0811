@@ -425,7 +425,7 @@ const FeaturedProperties = () => (
               Exceptional <span className="italic">Properties</span>
             </h2>
             <p className="text-muted-foreground/60 text-[15px] max-w-lg font-light leading-[1.8]">
-              A curated selection of luxury homes, including private and off-market opportunities.
+              A curated selection of on-market and private opportunities.
             </p>
           </div>
         </ScrollReveal>

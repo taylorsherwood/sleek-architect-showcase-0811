@@ -167,35 +167,27 @@ const Hero = () => {
 };
 
 /* ─────────────────────────────────────────────
-   SECTION 1B — SEARCH
+   SECTION 1B — SEARCH (RealScout Simple Search)
    ───────────────────────────────────────────── */
 
 const SearchSection = () => {
-  const [location, setLocation] = useState("");
-  const [price, setPrice] = useState("");
-  const [beds, setBeds] = useState("");
-  const [searching, setSearching] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
 
-  const handleSearch = () => {
-    setSearching(true);
-    const params = new URLSearchParams();
-    if (location) params.set("location", location);
-    if (price) params.set("price", price);
-    if (beds) params.set("beds", beds);
-    const query = params.toString();
-    setTimeout(() => {
-      window.location.href = `/search${query ? `?${query}` : ""}`;
-    }, 250);
-  };
-
-  const selectClass = "w-full bg-white border border-border/50 rounded-sm px-4 py-3.5 text-sm text-foreground/75 font-light appearance-none cursor-pointer hover:border-gold/40 transition-colors duration-300 focus:outline-none focus:border-gold/60";
-  const labelStyle = { fontFamily: '"Raleway", sans-serif' as const, fontSize: "0.55rem", letterSpacing: "0.2em", textTransform: "uppercase" as const };
+  useEffect(() => {
+    const el = containerRef.current;
+    if (!el) return;
+    const widget = document.createElement("realscout-simple-search");
+    widget.setAttribute("agent-encoded-id", "QWdlbnQtMjg5NDU2");
+    el.appendChild(widget);
+    return () => {
+      if (el.contains(widget)) el.removeChild(widget);
+    };
+  }, []);
 
   return (
     <section className="bg-background">
       <div className="container mx-auto px-6 py-14 md:py-20">
         <div className="max-w-5xl mx-auto">
-          {/* Header */}
           <div className="text-center mb-8 md:mb-10">
             <p className="text-gold/70 font-medium mb-2" style={{
               fontFamily: '"Raleway", sans-serif', fontSize: "0.6rem", letterSpacing: "0.3em", textTransform: "uppercase"
@@ -206,58 +198,7 @@ const SearchSection = () => {
               Explore available homes across Austin
             </p>
           </div>
-
-          {/* Search container */}
-          <div className="bg-white rounded-sm px-6 py-7 md:px-10 md:py-9" style={{
-            border: "1px solid rgba(0,0,0,0.06)",
-            boxShadow: "0 2px 20px rgba(0,0,0,0.04)"
-          }}>
-            <div className="flex flex-col md:flex-row items-end gap-5 md:gap-6">
-              <div className="flex-1 w-full grid grid-cols-1 sm:grid-cols-3 gap-5">
-                <div>
-                  <label className="block text-foreground/40 mb-2" style={labelStyle}>Location</label>
-                  <select value={location} onChange={(e) => setLocation(e.target.value)} className={selectClass} style={{ fontFamily: '"Raleway", sans-serif' }}>
-                    <option value="">All Neighborhoods</option>
-                    <option value="westlake-hills">Westlake Hills</option>
-                    <option value="barton-creek">Barton Creek</option>
-                    <option value="lake-austin">Lake Austin</option>
-                    <option value="tarrytown">Tarrytown</option>
-                    <option value="rollingwood">Rollingwood</option>
-                    <option value="spanish-oaks">Spanish Oaks</option>
-                    <option value="downtown-austin">Downtown Austin</option>
-                  </select>
-                </div>
-                <div>
-                  <label className="block text-foreground/40 mb-2" style={labelStyle}>Price Range</label>
-                  <select value={price} onChange={(e) => setPrice(e.target.value)} className={selectClass} style={{ fontFamily: '"Raleway", sans-serif' }}>
-                    <option value="">Any Price</option>
-                    <option value="500k-1m">$500K – $1M</option>
-                    <option value="1m-2m">$1M – $2M</option>
-                    <option value="2m-5m">$2M – $5M</option>
-                    <option value="5m-10m">$5M – $10M</option>
-                    <option value="10m+">$10M+</option>
-                  </select>
-                </div>
-                <div>
-                  <label className="block text-foreground/40 mb-2" style={labelStyle}>Bedrooms</label>
-                  <select value={beds} onChange={(e) => setBeds(e.target.value)} className={selectClass} style={{ fontFamily: '"Raleway", sans-serif' }}>
-                    <option value="">Any</option>
-                    <option value="2">2+</option>
-                    <option value="3">3+</option>
-                    <option value="4">4+</option>
-                    <option value="5">5+</option>
-                  </select>
-                </div>
-              </div>
-              <button
-                onClick={handleSearch}
-                disabled={searching}
-                className="shrink-0 w-full md:w-auto bg-primary text-primary-foreground px-12 py-3.5 text-center hover:bg-gold transition-all duration-300 disabled:opacity-60"
-                style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.58rem", letterSpacing: "0.25em", textTransform: "uppercase", fontWeight: 600 }}>
-                {searching ? "SEARCHING…" : "EXPLORE HOMES"}
-              </button>
-            </div>
-          </div>
+          <div ref={containerRef} className="flex justify-center" style={{ minHeight: 60 }} />
         </div>
       </div>
     </section>

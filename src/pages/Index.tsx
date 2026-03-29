@@ -828,7 +828,7 @@ const NoscriptFallback = () => (
     <section className="py-16 bg-background">
       <div className="container mx-auto px-6 max-w-4xl">
         <h2 className="text-3xl font-light mb-6">Austin Luxury Real Estate Services</h2>
-        <p className="mb-4">Echelon Property Group provides full-service luxury real estate advisory across Austin, Texas.</p>
+        <p className="mb-4">Echelon Property Group provides strategic luxury real estate advisory across Austin, Texas.</p>
         <ul className="list-disc pl-6 mb-6 space-y-2">
           <li>Luxury residential sales in Westlake Hills, Barton Creek, Lake Austin, Tarrytown, and Rollingwood</li>
           <li>Off-market and private listing opportunities</li>

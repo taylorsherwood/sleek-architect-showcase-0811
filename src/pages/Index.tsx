@@ -448,34 +448,33 @@ const testimonials = [
 ];
 
 const TestimonialsSection = () => (
-  <section className="py-20 md:py-28 bg-primary">
+  <section className="py-24 md:py-32 bg-primary">
     <div className="container mx-auto px-6">
       <div className="max-w-[1320px] mx-auto">
         <ScrollReveal>
-          <div className="text-center mb-14">
-            <p className="text-minimal text-gold mb-4 font-extrabold">CLIENT EXPERIENCES</p>
-            <h2 className="font-display text-3xl md:text-[2.8rem] font-light text-primary-foreground leading-[1.12]">
+          <div className="text-center mb-16">
+            <p className="text-minimal text-gold mb-5 font-extrabold tracking-[0.22em]">CLIENT EXPERIENCES</p>
+            <h2 className="font-display text-3xl md:text-[2.5rem] font-light text-primary-foreground/90 leading-[1.1] tracking-[-0.01em]">
               Trusted by Buyers, Sellers, and <span className="italic">Investors</span>
             </h2>
           </div>
         </ScrollReveal>
 
-        <ScrollReveal delay={100}>
-          <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
-            {testimonials.map((t, i) => (
-              <div key={i} className="bg-primary-foreground/[0.04] border border-primary-foreground/[0.08] rounded-sm px-7 py-7 flex flex-col justify-between
-                transition-all duration-500 hover:-translate-y-1 hover:bg-primary-foreground/[0.07]">
-                <p className="text-primary-foreground/70 text-[15px] leading-[1.8] font-light italic mb-6 flex-1">
-                  "{t.quote}"
-                </p>
-                <div className="h-px mb-4" style={{ background: "linear-gradient(to right, transparent, hsl(38 20% 72% / 0.2), transparent)" }} />
-                <div>
-                  <p className="font-display text-[0.95rem] text-primary-foreground/90 tracking-tight">{t.name}</p>
-                  <p className="text-gold/70 text-xs mt-1 font-light">{t.context}</p>
-                </div>
+        <ScrollReveal delay={120} stagger={80}>
+          {testimonials.map((t, i) => (
+            <div key={i} className="bg-primary-foreground/[0.03] border border-primary-foreground/[0.06] rounded-[2px] px-8 py-8 flex flex-col justify-between
+              transition-all duration-[500ms] hover:-translate-y-[2px] hover:bg-primary-foreground/[0.05] hover:shadow-[0_8px_24px_-8px_rgba(0,0,0,0.15)]
+              mb-6 last:mb-0 md:inline-block md:w-[calc(50%-1rem)] md:align-top md:mx-2 md:mb-4">
+              <p className="text-primary-foreground/60 text-[15px] leading-[1.85] font-light italic mb-6">
+                "{t.quote}"
+              </p>
+              <div className="h-px mb-5" style={{ background: "linear-gradient(to right, transparent, hsl(38 20% 72% / 0.15), transparent)" }} />
+              <div>
+                <p className="font-display text-[0.95rem] text-primary-foreground/80 tracking-[0.01em]">{t.name}</p>
+                <p className="text-gold/60 text-[0.6rem] mt-1.5 font-light tracking-[0.12em] uppercase">{t.context}</p>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </ScrollReveal>
       </div>
     </div>

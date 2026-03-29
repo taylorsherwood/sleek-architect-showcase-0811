@@ -35,6 +35,7 @@ const MeetTaylor = () => {
               AUSTIN LUXURY REAL ESTATE ADVISOR
             </p>
           </ScrollReveal>
+          <ScrollReveal delay={100}>
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start">
             <div className="relative inline-block">
               <img

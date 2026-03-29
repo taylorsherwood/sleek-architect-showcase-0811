@@ -651,8 +651,8 @@ const insights = [
   { to: "/moving-to-austin-texas", title: "Moving to Austin, Texas", excerpt: "Everything you need to know about relocating to Austin — neighborhoods, lifestyle, and what to expect.", category: "Relocation" },
   { to: "/best-luxury-neighborhoods-austin-texas", title: "Best Luxury Neighborhoods in Austin", excerpt: "A comprehensive guide to Austin's most prestigious communities and what makes each one unique.", category: "Neighborhoods" },
   { to: "/austin-luxury-market-report", title: "Austin Luxury Real Estate Market Report", excerpt: "Quarterly insights on pricing, inventory, and luxury segment performance across Austin.", category: "Market Report" },
-  { to: "/austin-commercial-real-estate", title: "Austin Commercial Real Estate Opportunities", excerpt: "Explore investment opportunities across Austin including retail, office, and development land with strong long-term upside.", category: "Commercial" },
   { to: "/buy", title: "Buying Luxury Real Estate in Austin", excerpt: "A strategic guide to navigating Austin's competitive luxury market, from off-market access to winning high-value deals.", category: "Buying Guide" },
+  { to: "/austin-commercial-real-estate", title: "Austin Commercial Real Estate Opportunities", excerpt: "Explore investment opportunities across Austin including retail, office, and development land with strong long-term upside.", category: "Commercial" },
   { to: "/invest", title: "Austin Real Estate Investment Strategy", excerpt: "Identify high-growth opportunities, off-market deals, and strategic acquisitions across Austin's evolving real estate landscape.", category: "Investing" },
 ];
 

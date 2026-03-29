@@ -107,7 +107,7 @@ const Hero = () => {
           className={`hero-bg-video transition-opacity duration-700 ${
           videoReady ? "opacity-100" : "opacity-0"}`
           }
-          style={{ filter: "brightness(0.8) contrast(1.1)" }}
+          style={{ filter: "brightness(0.85) contrast(1.1)" }}
           tabIndex={-1}>
           
           {videoSrc && <source src={videoSrc} type="video/mp4" />}
@@ -133,7 +133,7 @@ const Hero = () => {
           zIndex: 1,
           background: `
             linear-gradient(to right, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.5) 30%, rgba(0,0,0,0.25) 60%, rgba(0,0,0,0.05) 100%),
-            linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.05) 40%, rgba(0,0,0,0.35) 100%)
+            linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.05) 40%, rgba(0,0,0,0.25) 100%)
           `
         }} />
       
@@ -167,7 +167,7 @@ const Hero = () => {
             style={{
               lineHeight: 1.12,
               letterSpacing: "-0.025em",
-              textShadow: "0 2px 12px rgba(0,0,0,0.55), 0 1px 2px rgba(0,0,0,0.2)"
+              textShadow: "0 2px 9px rgba(0,0,0,0.55), 0 1px 2px rgba(0,0,0,0.2)"
             }}>
             
             <span className="whitespace-nowrap" style={{ fontSize: "clamp(2.5rem, 5.2vw, 5.2rem)" }}>Driven By Data,</span>
@@ -206,7 +206,7 @@ const Hero = () => {
               fontFamily: '"Raleway", sans-serif',
               fontSize: "1rem",
               letterSpacing: "0.01em",
-              textShadow: "0 2px 12px rgba(0,0,0,0.55)"
+              textShadow: "0 2px 9px rgba(0,0,0,0.55)"
             }}>
             
             Data-driven strategy and discreet representation across Austin's
@@ -216,7 +216,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 reveal-delayed-2">
             <Link
               to="/invest"
-              className="hero-cta-btn inline-block bg-warm-cream text-foreground px-12 py-[1.1rem] text-center hover:bg-primary hover:text-primary-foreground shadow-[0_8px_24px_rgba(0,0,0,0.35)]"
+              className="hero-cta-btn inline-block bg-warm-cream text-foreground px-12 py-[1.1rem] text-center hover:bg-primary hover:text-primary-foreground shadow-[0_8px_24px_rgba(0,0,0,0.35)] border border-white/15"
               style={{
                 fontFamily: '"Raleway", sans-serif',
                 fontSize: "0.6rem",

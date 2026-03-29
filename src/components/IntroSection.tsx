@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 import { Award, Shield, Globe } from "lucide-react";
+import ScrollReveal from "@/components/ScrollReveal";
 
 const useCountUp = (
 end: number,

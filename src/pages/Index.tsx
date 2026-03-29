@@ -272,7 +272,7 @@ const AdvisorSection = () => (
             </ScrollReveal>
 
             <ScrollReveal delay={120}>
-              <p className="text-foreground/90 text-lg md:text-[1.2rem] font-medium leading-[1.45] mb-10">
+              <p className="text-foreground text-lg md:text-[1.3rem] font-medium leading-[1.4] mb-12 tracking-[-0.01em]">
                 We don't sell homes. We deliver access, strategy, and discretion.
               </p>
             </ScrollReveal>

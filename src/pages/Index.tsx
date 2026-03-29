@@ -259,12 +259,13 @@ const AdvisorSection = () => (
           {/* Headshot */}
           <ScrollReveal>
             <div className="relative group">
-              <div className="overflow-hidden rounded-[3px]" style={{ boxShadow: "0 16px 40px -12px hsl(var(--foreground) / 0.08)" }}>
+              <div className="overflow-hidden rounded-[3px]" style={{ boxShadow: "0 16px 40px -12px hsl(var(--foreground) / 0.1)" }}>
                 <img
                   src={taylorBoatImg}
                   alt="Taylor Sherwood — Austin luxury real estate advisor and founder of Echelon Property Group"
                   title="Taylor Sherwood, Echelon Property Group"
-                  className="w-full aspect-[3/4] object-cover object-top transition-transform duration-[600ms] ease-out group-hover:scale-[1.015]"
+                  className="w-full aspect-[3/4] object-cover object-top transition-transform duration-[600ms] ease-out group-hover:scale-[1.01]"
+                  style={{ filter: "brightness(0.93)" }}
                   loading="lazy" decoding="async"
                 />
               </div>
@@ -272,7 +273,7 @@ const AdvisorSection = () => (
           </ScrollReveal>
 
           {/* Copy */}
-          <div className="max-w-[460px]">
+          <div className="max-w-[480px]">
             <ScrollReveal>
               <p className="text-minimal text-gold mb-6 font-extrabold tracking-[0.22em]">
                 STRATEGIC REAL ESTATE ADVISOR
@@ -280,7 +281,7 @@ const AdvisorSection = () => (
             </ScrollReveal>
 
             <ScrollReveal delay={80}>
-              <h2 className="font-display text-3xl md:text-[2.5rem] font-light text-foreground/90 mb-8 leading-[1.1] tracking-[-0.01em]">
+              <h2 className="font-display text-[1.85rem] md:text-[2.6rem] font-normal text-foreground leading-[1.06] tracking-[-0.015em] mb-6">
                 Luxury Real Estate,
                 <br />
                 <span className="italic">Without the Noise</span>
@@ -288,22 +289,22 @@ const AdvisorSection = () => (
             </ScrollReveal>
 
             <ScrollReveal delay={120}>
-              <p className="text-foreground/85 text-lg md:text-xl font-medium leading-[1.4] mb-8 mt-8">
+              <p className="text-foreground/90 text-lg md:text-[1.2rem] font-medium leading-[1.45] mb-10">
                 We don't sell homes. We deliver access, strategy, and discretion.
               </p>
             </ScrollReveal>
 
             <ScrollReveal delay={180}>
-              <div className="space-y-5 mb-10">
-                <p className="text-foreground/65 text-[15px] leading-[1.85] font-light">
+              <div className="space-y-4 mb-10">
+                <p className="text-foreground/70 text-[15px] leading-[1.8] font-light">
                   You don't need more listings — you need a smarter approach.
                 </p>
-                <p className="text-foreground/65 text-[15px] leading-[1.85] font-light">
+                <p className="text-foreground/70 text-[15px] leading-[1.8] font-light">
                   I work with a select group of clients to acquire and position high-value
                   properties across Austin — including private and off-market opportunities
                   not publicly available.
                 </p>
-                <p className="text-foreground/65 text-[15px] leading-[1.85] font-light">
+                <p className="text-foreground/70 text-[15px] leading-[1.8] font-light">
                   Every decision is guided by market intelligence, negotiation leverage,
                   and a clear understanding of long-term value.
                 </p>
@@ -311,12 +312,12 @@ const AdvisorSection = () => (
 
               <div className="flex flex-col sm:flex-row items-start gap-5">
                 <Link to="/contact"
-                  className="inline-block border border-foreground/15 text-foreground px-10 py-[0.9rem] hover:bg-gold hover:text-white hover:border-gold transition-all duration-[400ms]"
+                  className="inline-block border border-foreground/30 text-foreground px-10 py-[0.9rem] hover:bg-gold hover:text-white hover:border-gold transition-all duration-[400ms]"
                   style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.58rem", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 600 }}>
                   WORK WITH ME
                 </Link>
                 <Link to="/past-transactions"
-                  className="inline-flex items-center text-muted-foreground/40 hover:text-gold transition-colors duration-[400ms] pt-3 sm:pt-0 sm:self-center"
+                  className="inline-flex items-center text-muted-foreground/55 hover:text-gold transition-colors duration-[400ms] pt-3 sm:pt-0 sm:self-center"
                   style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.58rem", letterSpacing: "0.2em", textTransform: "uppercase", fontWeight: 500 }}>
                   VIEW PAST TRANSACTIONS →
                 </Link>

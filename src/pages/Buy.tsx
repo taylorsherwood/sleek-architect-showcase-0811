@@ -568,7 +568,7 @@ const Buy = () => {
               </div>
             </div>
 
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-5 bg-card border border-border p-8">
               <div>
                 <input
                   type="text"
@@ -577,7 +577,7 @@ const Buy = () => {
                   value={form.name}
                   onChange={handleChange}
                   maxLength={100}
-                  className={`${inputClass} border-border text-foreground placeholder:text-muted-foreground/50 focus:border-foreground/50`} />
+                  className="w-full bg-background border border-border px-4 py-3 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:ring-1 focus:ring-foreground/20 transition-colors duration-200" />
                 
                 {errors.name && <p className="text-destructive text-sm mt-1">{errors.name}</p>}
               </div>
@@ -589,7 +589,7 @@ const Buy = () => {
                   value={form.email}
                   onChange={handleChange}
                   maxLength={255}
-                  className={`${inputClass} border-border text-foreground placeholder:text-muted-foreground/50 focus:border-foreground/50`} />
+                  className="w-full bg-background border border-border px-4 py-3 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:ring-1 focus:ring-foreground/20 transition-colors duration-200" />
                 
                 {errors.email && <p className="text-destructive text-sm mt-1">{errors.email}</p>}
               </div>
@@ -601,7 +601,7 @@ const Buy = () => {
                   value={form.phone}
                   onChange={handleChange}
                   maxLength={20}
-                  className={`${inputClass} border-border text-foreground placeholder:text-muted-foreground/50 focus:border-foreground/50`} />
+                  className="w-full bg-background border border-border px-4 py-3 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:ring-1 focus:ring-foreground/20 transition-colors duration-200" />
                 {errors.phone && <p className="text-destructive text-sm mt-1">{errors.phone}</p>}
               </div>
               <div>
@@ -612,13 +612,13 @@ const Buy = () => {
                   onChange={handleChange}
                   rows={4}
                   maxLength={2000}
-                  className={`${inputClass} resize-none border-border text-foreground placeholder:text-muted-foreground/50 focus:border-foreground/50`} />
+                  className="w-full bg-background border border-border px-4 py-3 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:ring-1 focus:ring-foreground/20 transition-colors duration-200 resize-none" />
                 
               </div>
               <button
                 type="submit"
                 disabled={submitting}
-                className="text-minimal bg-primary text-primary-foreground hover:bg-gold hover:text-white px-10 py-4 transition-colors duration-300 w-full md:w-auto disabled:opacity-50 disabled:cursor-not-allowed">
+                className="text-minimal border border-foreground text-foreground bg-transparent hover:bg-gold hover:border-gold hover:text-white hover:font-bold px-10 py-4 transition-all duration-300 w-full md:w-auto disabled:opacity-50 disabled:cursor-not-allowed">
                 
                 {submitting ? "SENDING..." : "REQUEST CONSULTATION"}
               </button>

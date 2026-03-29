@@ -900,7 +900,7 @@ const Invest = () => {
           <ScrollReveal>
             <p className="text-minimal text-gold mb-4">Frequently Asked Questions</p>
             <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-12">
-              Investor FAQ
+              Austin Investment Real Estate FAQ
             </h2>
           </ScrollReveal>
           <ScrollReveal delay={100}>

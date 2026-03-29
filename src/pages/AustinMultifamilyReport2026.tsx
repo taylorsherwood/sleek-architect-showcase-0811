@@ -296,7 +296,7 @@ const AustinMultifamilyReport2026 = () => {
             <div className="text-center mb-8">
               <p className="text-minimal text-[hsl(var(--gold))] mb-2">KEY TAKEAWAYS</p>
               <h2 className="text-3xl md:text-4xl font-display font-light text-architectural">
-                What the Data Tells Us
+                Key Takeaways for Austin Multifamily Investors
               </h2>
             </div>
             <div className="space-y-3">

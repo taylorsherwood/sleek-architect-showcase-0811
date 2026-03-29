@@ -30,9 +30,9 @@ const BestLuxuryNeighborhoods = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Best Luxury Neighborhoods Austin | Echelon Property Group"
+        title="Best Luxury Neighborhoods in Austin TX"
         description="Best luxury neighborhoods in Austin TX. Expert guide to Westlake Hills, Barton Creek, Lake Austin, Tarrytown, and more from Echelon Property Group."
-        canonical="/communities"
+        canonical="/best-luxury-neighborhoods-in-austin"
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createFAQSchema(faqs)} />

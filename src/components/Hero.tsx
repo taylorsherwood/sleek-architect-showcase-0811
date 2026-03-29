@@ -161,18 +161,16 @@ const Hero = () => {
           </p>
 
           <h1
-            className="font-display font-light text-warm-cream mb-9 reveal"
+            className="font-display font-medium text-warm-cream mb-9 reveal"
             style={{
-              fontSize: "clamp(2.8rem, 5.8vw, 5.8rem)",
-              lineHeight: 1.08,
+              lineHeight: 1.12,
               letterSpacing: "-0.025em",
-              textShadow:
-              "0px 2px 8px rgba(0,0,0,0.35), 0 1px 2px rgba(0,0,0,0.2)"
+              textShadow: "0 2px 12px rgba(0,0,0,0.55), 0 1px 2px rgba(0,0,0,0.2)"
             }}>
             
-            <span className="whitespace-nowrap">Driven By Data,</span>
+            <span className="whitespace-nowrap" style={{ fontSize: "clamp(2.5rem, 5.2vw, 5.2rem)" }}>Driven By Data,</span>
             <br />
-            <span className="italic whitespace-nowrap">Proven by Results</span>
+            <span className="italic whitespace-nowrap" style={{ fontSize: "clamp(3.1rem, 6.4vw, 6.4rem)" }}>Proven by Results</span>
           </h1>
 
           {/* Service pillars */}

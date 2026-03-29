@@ -593,10 +593,10 @@ const Invest = () => {
               opportunities, understand neighborhood-specific demand, assess improvement potential,
               and make smarter acquisition decisions with resale or hold strategy in mind. Every
               recommendation is grounded in data, local insight, and a clear understanding of
-              where value is created.
+              where value is created — from <Link to="/off-market-real-estate-austin" className="text-foreground underline hover:text-muted-foreground">off-market deals</Link> to on-market value plays.
             </p>
             <p className="text-foreground max-w-3xl leading-relaxed mb-16">
-              Source smarter opportunities, evaluate upside with more precision, and move faster in Austin with an advisor who understands renovation potential, redevelopment value, and resale positioning.
+              Source smarter opportunities, evaluate upside with more precision, and move faster in Austin with an advisor who understands renovation potential, redevelopment value, and resale positioning. Explore our <Link to="/austin-multifamily-report-2026" className="text-foreground underline hover:text-muted-foreground">Austin multifamily market outlook</Link> for current data.
             </p>
           </ScrollReveal>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

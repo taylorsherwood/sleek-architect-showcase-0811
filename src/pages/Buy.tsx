@@ -546,7 +546,7 @@ const Buy = () => {
           <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-start">
             <div>
               <p className="text-minimal text-gold mb-4 font-extrabold">READY TO BEGIN?</p>
-              <h2 className="text-4xl md:text-5xl font-display font-light text-primary-foreground leading-[1.15] mb-6">
+              <h2 className="text-4xl md:text-5xl font-display font-light text-architectural leading-[1.15] mb-6">
                 Schedule a Buyer Consultation
               </h2>
               <p className="text-primary-foreground/60 leading-relaxed mb-10 max-w-lg">Whether you're searching for luxury homes, relocating to Austin, or exploring investment opportunities, a consultation with Taylor is the best first step. We'll discuss your goals, timeline, and build a customized search strategy.

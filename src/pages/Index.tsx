@@ -114,9 +114,8 @@ const Hero = () => {
 
   const anim = (delay: string) => ({
     opacity: heroVisible ? 1 : 0,
-    transform: heroVisible ? "translateY(0)" : "translateY(14px)",
-    transition: `opacity 1.2s cubic-bezier(0.25,0.46,0.45,0.94) ${delay}, transform 1.2s cubic-bezier(0.25,0.46,0.45,0.94) ${delay}`,
-    willChange: "opacity, transform" as const,
+    transform: heroVisible ? "translateY(0)" : "translateY(10px)",
+    transition: `opacity 0.9s cubic-bezier(0.16,1,0.3,1) ${delay}, transform 0.9s cubic-bezier(0.16,1,0.3,1) ${delay}`,
   });
 
   return (

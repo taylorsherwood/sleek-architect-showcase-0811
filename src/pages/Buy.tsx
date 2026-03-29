@@ -589,7 +589,7 @@ const Buy = () => {
                   value={form.email}
                   onChange={handleChange}
                   maxLength={255}
-                  className={`${inputClass} border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/30 focus:border-primary-foreground/50`} />
+                  className={`${inputClass} border-border text-foreground placeholder:text-muted-foreground/50 focus:border-foreground/50`} />
                 
                 {errors.email && <p className="text-destructive text-sm mt-1">{errors.email}</p>}
               </div>

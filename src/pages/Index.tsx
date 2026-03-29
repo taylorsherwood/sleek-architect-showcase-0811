@@ -640,7 +640,7 @@ const insights = [
 ];
 
 const InsightsSection = () => (
-  <section className="py-24 md:py-32 bg-secondary">
+  <section className="py-16 md:py-20 pb-10 md:pb-14 bg-secondary">
     <div className="container mx-auto px-6">
       <div className="max-w-[1320px] mx-auto">
         <ScrollReveal>
@@ -714,7 +714,7 @@ const LeadCapture = () => {
   };
 
   return (
-    <section className="py-14 md:py-20" style={{ background: "#F8F7F5" }}>
+    <section className="py-10 md:py-14" style={{ background: "#F8F7F5" }}>
       <div className="container mx-auto px-6">
         <div className="max-w-[460px] mx-auto text-center">
           <ScrollReveal>

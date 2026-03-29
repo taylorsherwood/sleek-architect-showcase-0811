@@ -97,10 +97,10 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-card">
       <SEOHead
-        title="Austin Luxury Real Estate | Echelon Property Group"
-        description="Austin luxury real estate experts. Buy, sell, or invest in luxury homes, land, and investment property with Taylor Sherwood of Echelon Property Group."
-        ogTitle="Austin Luxury Real Estate | Echelon Property Group"
-        ogDescription="Austin real estate experts helping clients buy, sell, and invest in luxury homes and investment property."
+        title="Austin Luxury Real Estate & Investment Advisory | Echelon Property Group"
+        description="Data-driven Austin luxury real estate advisory. Off-market access, investment strategy, and high-touch service for luxury homes, land, and commercial property."
+        ogTitle="Austin Luxury Real Estate & Investment Advisory | Echelon Property Group"
+        ogDescription="Strategic real estate advisory across Austin's most exclusive markets. Off-market deals, investment property, land development, and luxury homes."
       />
       <SchemaMarkup schema={organizationSchema} />
       <SchemaMarkup schema={realEstateAgentSchema} />

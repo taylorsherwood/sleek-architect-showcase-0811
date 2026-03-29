@@ -5,28 +5,28 @@ const expertiseBlocks = [
 {
   icon: Home,
   title: "Luxury Homes",
-  description: "Austin's finest residential properties — from lakefront estates and hilltop mansions to gated golf communities. Expert guidance for buyers and sellers in Westlake Hills, Barton Creek, Lake Austin, Tarrytown, and beyond.",
+  description: "Austin's finest luxury residential properties — from lakefront estates and hilltop mansions to gated golf communities. Expert guidance for luxury buyers and sellers across Westlake Hills, Barton Creek, Lake Austin, Tarrytown, and Austin's most exclusive neighborhoods.",
   link: "/austin-luxury-homes-for-sale",
   linkText: "EXPLORE LUXURY HOMES"
 },
 {
   icon: MapPin,
   title: "Land Development",
-  description: "Raw land, entitled parcels, and development opportunities across Austin's high-growth corridors. Site selection, zoning analysis, and acquisition advisory for builders, developers, and investors.",
+  description: "Austin land for sale — raw acreage, entitled parcels, and development-ready sites across high-growth corridors. Strategic site selection, zoning analysis, and acquisition advisory for Austin builders, developers, and land investors.",
   link: "/land-for-sale-austin",
   linkText: "VIEW LAND OPPORTUNITIES"
 },
 {
   icon: Building2,
   title: "Commercial Real Estate",
-  description: "Multifamily, retail, office, industrial, and mixed-use properties throughout the Austin metro. Tenant representation, investment acquisitions, and development land advisory.",
+  description: "Austin commercial real estate — multifamily, retail, office, industrial, and mixed-use properties throughout the metro. Tenant representation, investment acquisitions, and commercial development advisory for institutional and private investors.",
   link: "/austin-commercial-real-estate",
   linkText: "EXPLORE COMMERCIAL"
 },
 {
   icon: TrendingUp,
   title: "Investment Property",
-  description: "Income-producing assets and value-add opportunities across Austin's strongest submarkets. Institutional-grade underwriting and deal sourcing for private and portfolio investors.",
+  description: "Austin investment property — income-producing assets and value-add opportunities across the strongest submarkets. Institutional-grade underwriting, off-market deal sourcing, and strategic advisory for private and portfolio investors.",
   link: "/austin-real-estate-investment",
   linkText: "VIEW INVESTMENTS"
 }];

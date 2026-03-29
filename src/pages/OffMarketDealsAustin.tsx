@@ -20,8 +20,12 @@ const labelStyle = {
 
 const faqs = [
   {
-    question: "Are off-market deals cheaper in Austin?",
-    answer: "Not always. Some are priced attractively, but many off-market opportunities are valuable because of reduced competition, better terms, or strategic upside rather than a simple discount."
+    question: "Are off-market deals in Austin always discounted?",
+    answer: "Not always. Some off-market properties are priced attractively, but many are valuable because of reduced competition, better terms, or strategic upside — not simply a lower price. The real advantage is often access and positioning rather than a discount."
+  },
+  {
+    question: "What kind of buyers are best suited for off-market opportunities?",
+    answer: "Luxury buyers seeking privacy, investors with clear acquisition criteria, developers sourcing land, and relocating executives who want curated options are all well-suited for off-market access in Austin."
   },
   {
     question: "How do I find off-market homes in Austin?",
@@ -60,13 +64,13 @@ const breadcrumbSchema = createBreadcrumbSchema([
 
 const tocItems = [
   { id: "key-takeaways", label: "Key Takeaways" },
-  { id: "what-is-off-market", label: "What Is an Off-Market Deal?" },
+  { id: "what-is-off-market", label: "What Are Off-Market Deals?" },
   { id: "why-off-market-matters", label: "Why Off-Market Deals Matter" },
   { id: "why-best-deals-stay-private", label: "Why the Best Deals Stay Private" },
-  { id: "how-investors-find-deals", label: "How Investors Find Deals" },
-  { id: "where-buyers-go-wrong", label: "Where Buyers Go Wrong" },
+  { id: "how-investors-find-deals", label: "How Austin Investors Find Deals" },
+  { id: "where-buyers-go-wrong", label: "Common Mistakes" },
   { id: "who-benefits-most", label: "Who Benefits Most" },
-  { id: "how-echelon-helps", label: "How Echelon Helps" },
+  { id: "how-echelon-helps", label: "Working With an Austin Advisor" },
   { id: "faq", label: "FAQ" },
 ];
 
@@ -74,12 +78,12 @@ const OffMarketDealsAustin = () => {
   return (
     <div className="min-h-screen bg-warm-cream">
       <SEOHead
-        title="Off-Market Deals in Austin | Echelon Property Group"
-        description="How investors, developers, and luxury buyers find off-market real estate deals in Austin. Proven strategies and private deal sourcing for 2026."
+        title="How to Find Off-Market Real Estate Deals in Austin (2026 Guide) | Echelon Property Group"
+        description="How investors, developers, and luxury buyers find off-market real estate deals in Austin. Private listings, pre-market inventory, and data-driven sourcing strategies for 2026."
         canonical="/blog/how-to-find-off-market-real-estate-deals-austin-2026"
-        ogTitle="Off-Market Deals in Austin | 2026 Investor Guide"
+        ogTitle="How to Find Off-Market Real Estate Deals in Austin (2026 Guide)"
         ogType="article"
-        ogDescription="How investors and luxury buyers find off-market real estate deals in Austin. Proven strategies and private deal sourcing."
+        ogDescription="The 2026 investor playbook for accessing off-market real estate in Austin — private listings, pre-market deals, and strategic sourcing for luxury buyers and investors."
       />
       <SchemaMarkup schema={blogPostingSchema} />
       <SchemaMarkup schema={faqSchema} />
@@ -108,7 +112,7 @@ const OffMarketDealsAustin = () => {
               How to Find Off-Market Real Estate Deals in Austin
             </h1>
             <p className="text-base md:text-lg text-white/80 leading-relaxed max-w-[620px] font-light mb-6 md:mb-10">
-              The 2026 investor playbook for accessing private deals, luxury inventory, and development opportunities before the broader market.
+              The 2026 investor playbook for sourcing off-market real estate deals in Austin — including private listings, pre-market inventory, and development opportunities before the broader market.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
@@ -164,16 +168,16 @@ const OffMarketDealsAustin = () => {
             {/* Intro */}
             <div className="space-y-[18px] mb-14">
               <p className="text-foreground/85 text-lg md:text-xl font-light">
-                Austin remains one of the most competitive real estate markets in the country for investors, developers, and luxury buyers. As inventory tightens and prime opportunities become more relationship-driven, many of the best deals never appear on the MLS at all.
+                Off-market real estate deals in Austin remain one of the most powerful tools for investors, developers, and luxury buyers looking to gain a strategic edge. As inventory tightens and prime opportunities become more relationship-driven, many of the best deals never appear on the MLS at all.
               </p>
               <p className="text-foreground/60">
-                They trade quietly.
+                They trade quietly — through broker networks, private investor circles, and direct-to-owner relationships.
               </p>
               <p className="text-foreground/60">
-                For serious buyers, that means one thing: if you only search public listings, you are often seeing deals too late.
+                For serious buyers, that means one thing: if you only search public listings, you are often seeing deals too late. Whether you are pursuing <Link to="/austin-luxury-homes-for-sale" className="text-foreground/80 underline hover:text-foreground/50">luxury homes in Austin</Link>, development land, or <Link to="/austin-real-estate-investment" className="text-foreground/80 underline hover:text-foreground/50">investment property</Link>, a private deal pipeline is essential.
               </p>
               <p className="text-foreground/60">
-                This guide explains how off-market real estate works in Austin, why it matters, and how investors can position themselves to access better opportunities before the broader market sees them.
+                This 2026 playbook explains how off-market real estate works in Austin, why it matters, and how investors can position themselves to access better opportunities before the broader market sees them. These insights reflect the current Austin market as of early 2026 and are updated periodically.
               </p>
             </div>
 
@@ -202,7 +206,7 @@ const OffMarketDealsAustin = () => {
 
             {/* What Is an Off-Market Deal */}
             <section id="what-is-off-market" className="space-y-[18px] mb-14">
-              <h2 className="text-2xl md:text-3xl font-display font-light text-foreground mb-4">What Is an Off-Market Real Estate Deal?</h2>
+              <h2 className="text-2xl md:text-3xl font-display font-light text-foreground mb-4">What Are Off-Market Real Estate Deals in Austin?</h2>
               <p className="text-foreground/60">
                 Off-market real estate refers to properties that are available for sale but are not publicly listed on the MLS or major consumer portals. These are sometimes called private listings, pocket listings, or whisper listings.
               </p>
@@ -222,7 +226,7 @@ const OffMarketDealsAustin = () => {
 
             {/* Why Off-Market Deals Matter */}
             <section id="why-off-market-matters" className="space-y-[18px] mb-14">
-              <h2 className="text-2xl md:text-3xl font-display font-light text-foreground mb-4">Why Off-Market Deals Matter in Austin</h2>
+              <h2 className="text-2xl md:text-3xl font-display font-light text-foreground mb-4">Why Off-Market Deals Matter for Austin Investors</h2>
               <p className="text-foreground/60">
                 Austin's market has matured, but opportunity has not disappeared. It has simply become more selective.
               </p>
@@ -271,7 +275,7 @@ const OffMarketDealsAustin = () => {
 
             {/* How Investors Find Deals */}
             <section id="how-investors-find-deals" className="space-y-[18px] mb-14">
-              <h2 className="text-2xl md:text-3xl font-display font-light text-foreground mb-6">How Investors Find Off-Market Real Estate Deals in Austin</h2>
+              <h2 className="text-2xl md:text-3xl font-display font-light text-foreground mb-6">How Austin Investors Find Off-Market Properties</h2>
 
               {/* Strategy 1 */}
               <h2 className="text-xl md:text-2xl font-display font-light text-foreground mt-8 mb-3">1. Work With a Broker Who Sources Beyond the MLS</h2>
@@ -336,7 +340,7 @@ const OffMarketDealsAustin = () => {
 
             {/* Where Buyers Go Wrong */}
             <section id="where-buyers-go-wrong" className="space-y-[18px] mb-14">
-              <h2 className="text-2xl md:text-3xl font-display font-light text-foreground mb-4">Where Buyers Go Wrong</h2>
+              <h2 className="text-2xl md:text-3xl font-display font-light text-foreground mb-4">Common Mistakes When Sourcing Off-Market Deals</h2>
               <p className="text-foreground/60">Many buyers make the same mistakes:</p>
               <ul className="space-y-2 text-foreground/60 pl-5">
                 <li className="flex items-start gap-3"><span className="text-gold mt-1.5 text-xs">■</span>They wait for alerts instead of creating opportunities</li>
@@ -352,7 +356,7 @@ const OffMarketDealsAustin = () => {
 
             {/* Who Benefits Most */}
             <section id="who-benefits-most" className="space-y-[18px] mb-14">
-              <h2 className="text-2xl md:text-3xl font-display font-light text-foreground mb-4">What Types of Buyers Benefit Most From Off-Market Access?</h2>
+              <h2 className="text-2xl md:text-3xl font-display font-light text-foreground mb-4">What Types of Austin Buyers Benefit Most From Off-Market Access?</h2>
               <p className="text-foreground/60">Off-market opportunities can be especially valuable for:</p>
               <ul className="space-y-2 text-foreground/60 pl-5">
                 <li className="flex items-start gap-3"><span className="text-gold mt-1.5 text-xs">■</span>Luxury buyers seeking privacy or rare inventory</li>
@@ -368,7 +372,7 @@ const OffMarketDealsAustin = () => {
 
             {/* How Echelon Helps */}
             <section id="how-echelon-helps" className="space-y-[18px] mb-14">
-              <h2 className="text-2xl md:text-3xl font-display font-light text-foreground mb-4">How Echelon Property Group Helps Buyers Access Better Opportunities</h2>
+              <h2 className="text-2xl md:text-3xl font-display font-light text-foreground mb-4">Working With an Austin Advisor to Access Private Deals</h2>
               <p className="text-foreground/60">
                 At Echelon Property Group, the focus is not just on what is publicly listed. It is on helping clients identify and access opportunities that align with their goals across luxury, land, development, and investment categories.
               </p>

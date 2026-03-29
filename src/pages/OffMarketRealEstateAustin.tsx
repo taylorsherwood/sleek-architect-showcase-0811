@@ -308,9 +308,9 @@ const OffMarketRealEstateAustin = () => {
               { step: "02", title: "We Source Opportunities", body: "We tap our private network of sellers, developers, and investors to match you with off-market properties that fit." },
               { step: "03", title: "Early & Exclusive Access", body: "You see opportunities before they hit the public market — with expert advisory and deal structuring support." },
             ].map((item) => (
-              <div key={item.step} className="text-center md:text-left">
-                <span className="text-[hsl(var(--gold))] font-display text-4xl font-light">{item.step}</span>
-                <h3 className="text-white font-medium text-base mt-3 mb-2">{item.title}</h3>
+              <div key={item.step} className="group text-center md:text-left">
+                <span className="text-[hsl(var(--gold))] font-display text-4xl font-light inline-block transition-transform duration-500 ease-out group-hover:scale-125">{item.step}</span>
+                <h3 className="text-white font-medium text-base mt-3 mb-2 transition-colors duration-500 group-hover:text-[hsl(var(--gold))]">{item.title}</h3>
                 <p className="text-white/45 text-sm leading-relaxed">{item.body}</p>
               </div>
             ))}

@@ -41,25 +41,20 @@ const Navigation = () => {
   }, [location.pathname]);
 
   const links: NavLink[] = [
-    { href: "/", label: "HOME" },
     {
-      href: "/listings",
-      label: "LISTINGS",
+      href: "/search",
+      label: "SEARCH HOMES",
       children: [
-        { href: "/listings", label: "ECHELON LISTINGS" },
+        { href: "/search", label: "SEARCH ALL HOMES" },
         { href: "/austin-luxury-homes-for-sale", label: "AUSTIN LUXURY HOMES" },
-        { href: "/listings/commercial-investment-austin", label: "COMMERCIAL & INVESTMENT" },
-        { href: "/off-market-real-estate-austin", label: "PRIVATE LISTINGS" },
         { href: "/past-transactions", label: "PAST TRANSACTIONS" },
       ],
     },
     { href: "/buy", label: "BUY" },
     { href: "/sell", label: "SELL" },
-    { href: "/invest", label: "INVEST" },
-    { href: "/listings/commercial-investment-austin", label: "COMMERCIAL" },
     { href: "/communities", label: "COMMUNITIES" },
-    { href: "/about", label: "ABOUT" },
-    { href: "/blog", label: "BLOG" },
+    { href: "/blog", label: "INSIGHTS" },
+    { href: "/invest", label: "PRIVATE ACCESS" },
   ];
 
   const isActive = (link: NavLink) =>

@@ -262,7 +262,7 @@ const AustinLuxuryRealEstateMarketReport = () => {
         </div>
       </section>
 
-      <RelatedInsights currentPath="/austin-luxury-real-estate-market-report" />
+      <RelatedInsights />
       <AboutBlock />
       <Suspense fallback={<div className="min-h-[100px]" />}><Footer /></Suspense>
     </div>

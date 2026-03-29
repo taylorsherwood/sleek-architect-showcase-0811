@@ -20,10 +20,10 @@ const formSchema = z.object({
 });
 
 const BULLETS = [
-  { icon: Home, label: "Off-Market Homes" },
-  { icon: Landmark, label: "Development Sites" },
-  { icon: Building2, label: "Multifamily Investment Opportunities" },
-  { icon: TrendingUp, label: "Value-Add Properties" },
+  { icon: Home, label: "Off-Market Homes", to: "/off-market-real-estate-austin" },
+  { icon: Landmark, label: "Development Sites", to: "/land-for-sale-austin" },
+  { icon: Building2, label: "Multifamily Investment Opportunities", to: "/listings/commercial-investment-austin" },
+  { icon: TrendingUp, label: "Value-Add Properties", to: "/invest" },
 ];
 
 interface PrivateOpportunitiesProps {
@@ -146,13 +146,14 @@ const PrivateOpportunities = ({ variant = "light" }: PrivateOpportunitiesProps) 
                       strokeWidth={1.4}
                       style={{ color: "hsl(var(--gold))" }}
                     />
-                    <span
-                      className={`text-base ${
+                    <Link
+                      to={item.to}
+                      className={`text-base transition-colors duration-500 hover:text-[hsl(var(--gold))] ${
                         isDark ? "text-white/80" : "text-foreground"
                       }`}
                     >
                       {item.label}
-                    </span>
+                    </Link>
                   </div>
                 ))}
               </div>

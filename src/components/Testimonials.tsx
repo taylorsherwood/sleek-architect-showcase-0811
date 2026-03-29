@@ -97,9 +97,9 @@ const Testimonials = () => {
                   opacity: 0,
                   transform: "translateY(40px)",
                   transition: `opacity 500ms ease ${i * 120}ms, transform 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94) ${i * 120}ms, box-shadow 500ms ease`,
-                  background: "hsl(40 33% 98%)",
-                  border: "1px solid hsl(35 20% 86% / 0.4)",
-                  boxShadow: "0 2px 12px hsl(40 10% 50% / 0.04)",
+                  background: "#FFFFFF",
+                  border: "1px solid rgba(0,0,0,0.06)",
+                  boxShadow: "0 10px 30px rgba(0,0,0,0.05)",
                 }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.transform = "translateY(-2px)";

@@ -103,7 +103,36 @@ const Hero = () => {
       if (!widget?.shadowRoot || widget.shadowRoot.querySelector("#rs-hero")) return;
       const s = document.createElement("style");
       s.id = "rs-hero";
-      s.textContent = `button[type="submit"],[class*="search"] button,[class*="Submit"],input[type="submit"]{background-color:${GOLD}!important;border-color:${GOLD}!important;}`;
+      s.textContent = `
+        :host { --rs-bg: transparent !important; }
+        *, *::before, *::after { border-color: rgba(255,255,255,0.12) !important; }
+        form, [class*="form"], [class*="container"], [class*="wrapper"], [class*="search"] {
+          background: transparent !important;
+          color: rgba(255,255,255,0.92) !important;
+        }
+        input, select, [class*="input"], [class*="select"], [class*="dropdown"], [class*="field"] {
+          background: rgba(255,255,255,0.04) !important;
+          color: #fff !important;
+          border: 1px solid rgba(255,255,255,0.12) !important;
+          border-radius: 3px !important;
+        }
+        input::placeholder, [class*="placeholder"] {
+          color: rgba(255,255,255,0.5) !important;
+        }
+        label, [class*="label"] {
+          color: rgba(255,255,255,0.7) !important;
+        }
+        button[type="submit"],[class*="search"] button,[class*="Submit"],input[type="submit"] {
+          background: transparent !important;
+          border: 1px solid ${GOLD} !important;
+          color: ${GOLD} !important;
+          transition: all 0.35s ease !important;
+        }
+        button[type="submit"]:hover,[class*="search"] button:hover,[class*="Submit"]:hover,input[type="submit"]:hover {
+          background: ${GOLD} !important;
+          color: #fff !important;
+        }
+      `;
       widget.shadowRoot.appendChild(s);
     };
     injectStyles();
@@ -182,7 +211,7 @@ const Hero = () => {
         </div>
 
         {/* Integrated search */}
-        <div ref={searchRef} className="mt-20 max-w-3xl bg-white/[0.06] backdrop-blur-sm border border-white/[0.08] rounded-sm p-5 md:p-6" style={{ ...anim("0.55s"), minHeight: 80 }}>
+        <div ref={searchRef} className="mt-20 max-w-3xl rounded-sm p-6 md:p-8" style={{ ...anim("0.55s"), minHeight: 80, background: "rgba(10, 14, 25, 0.55)", backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)", border: "1px solid rgba(255,255,255,0.08)", boxShadow: "0 8px 32px rgba(0,0,0,0.12)" }}>
           {createElement("realscout-advanced-search", { "agent-encoded-id": "QWdlbnQtMjg5NDU2" })}
         </div>
       </div>

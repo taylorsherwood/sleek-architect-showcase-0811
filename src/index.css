@@ -164,7 +164,7 @@ img {
     box-shadow: 0 6px 20px rgba(0,0,0,0.12);
   }
 
-  /* RealScout widget button overrides */
+  /* RealScout widget button overrides — dark glass theme */
   realscout-advanced-search {
     --rs-primary-color: hsl(var(--gold)) !important;
     --rs-button-color: hsl(var(--gold)) !important;
@@ -172,11 +172,19 @@ img {
     --rs-accent-color: hsl(var(--gold)) !important;
     --primary-color: hsl(var(--gold)) !important;
     --button-color: hsl(var(--gold)) !important;
+    background: transparent !important;
   }
   realscout-advanced-search::part(search-button),
   realscout-advanced-search::part(button) {
+    background-color: transparent !important;
+    border: 1px solid hsl(var(--gold)) !important;
+    color: hsl(var(--gold)) !important;
+    transition: all 0.35s ease !important;
+  }
+  realscout-advanced-search::part(search-button):hover,
+  realscout-advanced-search::part(button):hover {
     background-color: hsl(var(--gold)) !important;
-    border-color: hsl(var(--gold)) !important;
+    color: #fff !important;
   }
 
   .hero-scroll-indicator {

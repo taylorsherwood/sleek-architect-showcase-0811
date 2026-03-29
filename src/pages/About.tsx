@@ -147,7 +147,7 @@ const About = () => {
 
             <div className="space-y-8">
               <div className="border-l-2 border-gold pl-8">
-                <h3 className="text-xl font-display font-medium mb-3">Premium Marketing</h3>
+                <h3 className="text-xl font-display font-medium mb-3"><Link to="/sell" className="hover:text-[hsl(var(--gold))] transition-colors duration-500">Premium Marketing</Link></h3>
                 <p className="text-muted-foreground">
                   Professional photography, cinematic video, custom property websites, and targeted 
                   social campaigns designed to reach qualified buyers worldwide.

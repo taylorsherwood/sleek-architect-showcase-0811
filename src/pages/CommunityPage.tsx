@@ -96,8 +96,16 @@ const ContentBlock = ({ text }: { text: string }) => {
   );
 };
 
+const slugAliases: Record<string, string> = {
+  "zilker": "zilker-austin",
+  "cat-mountain": "cat-mountain-northwest-hills",
+  "northwest-hills": "cat-mountain-northwest-hills",
+  "downtown-austin-condos": "downtown",
+};
+
 const CommunityPage = () => {
-  const { slug } = useParams<{ slug: string }>();
+  const { slug: rawSlug } = useParams<{ slug: string }>();
+  const slug = rawSlug ? (slugAliases[rawSlug] || rawSlug) : rawSlug;
   const community = communityPages.find((c) => c.slug === slug);
 
   if (!community) {

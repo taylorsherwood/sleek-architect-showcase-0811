@@ -167,7 +167,7 @@ const Hero = () => {
             style={{
               lineHeight: 1.12,
               letterSpacing: "-0.025em",
-              textShadow: "0 2px 12px rgba(0,0,0,0.55), 0 1px 2px rgba(0,0,0,0.2)"
+              textShadow: "0 2px 9px rgba(0,0,0,0.55), 0 1px 2px rgba(0,0,0,0.2)"
             }}>
             
             <span className="whitespace-nowrap" style={{ fontSize: "clamp(2.5rem, 5.2vw, 5.2rem)" }}>Driven By Data,</span>

@@ -159,6 +159,7 @@ const CommunityPage = () => {
       <SEOHead
         title={community.metaTitle || `${community.name} Homes for Sale | Echelon Property Group`}
         description={`${community.name} homes for sale in Austin, Texas. Explore listings, pricing trends, and neighborhood insights with Echelon Property Group — your luxury real estate advisor.`}
+        canonical={`/communities/${community.slug}`}
       />
       <SchemaMarkup schema={createFAQSchema(allFaqs)} />
       <SchemaMarkup schema={createCommunitySchema(community)} />

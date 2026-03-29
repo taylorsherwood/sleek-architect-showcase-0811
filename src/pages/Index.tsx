@@ -13,6 +13,7 @@ import SchemaMarkup, {
 import ScrollReveal from "@/components/ScrollReveal";
 import { formatPhoneNumber, getPhoneDigits, getTimestamp } from "@/lib/formUtils";
 import taylorBoatImg from "@/assets/taylor-headshot.png";
+import ExpertiseSection from "@/components/ExpertiseSection";
 
 const Footer = lazy(() => import("@/components/Footer"));
 

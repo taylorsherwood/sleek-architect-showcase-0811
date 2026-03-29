@@ -768,7 +768,7 @@ const LeadCapture = () => {
                     fontFamily: '"Raleway", sans-serif', fontSize: "12px", letterSpacing: "0.12em", fontWeight: 500,
                     background: "#0C0F24", borderRadius: "4px",
                   }}
-                  onMouseEnter={(e) => { if (!loading) { e.currentTarget.style.background = "#C6A85B"; e.currentTarget.style.color = "#0C0F24"; }}}
+                  onMouseEnter={(e) => { if (!loading) { e.currentTarget.style.background = "#C6A85B"; e.currentTarget.style.color = "#FFFFFF"; }}}
                   onMouseLeave={(e) => { e.currentTarget.style.background = "#0C0F24"; e.currentTarget.style.color = "#FFFFFF"; }}>
                   {loading ? "Sending..." : "Unlock Private Access"}
                 </button>

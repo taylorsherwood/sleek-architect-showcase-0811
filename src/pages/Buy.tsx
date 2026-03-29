@@ -601,7 +601,7 @@ const Buy = () => {
                   value={form.phone}
                   onChange={handleChange}
                   maxLength={20}
-                  className={`${inputClass} border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/30 focus:border-primary-foreground/50`} />
+                  className={`${inputClass} border-border text-foreground placeholder:text-muted-foreground/50 focus:border-foreground/50`} />
                 {errors.phone && <p className="text-destructive text-sm mt-1">{errors.phone}</p>}
               </div>
               <div>

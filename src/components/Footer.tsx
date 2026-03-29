@@ -39,7 +39,7 @@ const Footer = () => {
               <div className="space-y-2">
                 <Link to="/moving-to-austin" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Moving to Austin</Link>
                 <Link to="/best-neighborhoods-in-austin-texas" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Best Neighborhoods</Link>
-                <Link to="/best-luxury-neighborhoods-austin" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Luxury Neighborhoods</Link>
+                <Link to="/best-luxury-neighborhoods-in-austin" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Luxury Neighborhoods</Link>
                 <Link to="/austin-luxury-market-report" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Market Report</Link>
                 <Link to="/off-market-real-estate-austin" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Off-Market Homes</Link>
                 <Link to="/austin-multifamily-report-2026" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">Multifamily Report</Link>

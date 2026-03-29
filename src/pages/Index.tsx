@@ -739,7 +739,7 @@ const LeadCapture = () => {
           </ScrollReveal>
           <ScrollReveal delay={80}>
             <h2 className="font-display text-2xl md:text-[1.85rem] font-light mb-3 leading-[1.15] tracking-[-0.01em]" style={{ color: "#1A1C20" }}>
-              Get Access to <span className="italic">Off-Market</span> Opportunities
+              Private Opportunities, <span className="italic">Before They're Public</span>
             </h2>
           </ScrollReveal>
           <ScrollReveal delay={150}>

@@ -1,145 +1,750 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useState, useRef, useEffect, createElement } from "react";
+import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
-import Hero from "@/components/Hero";
-import RealScoutSearch from "@/components/RealScoutSearch";
-import AsSeenIn from "@/components/AsSeenIn";
-import ExpertiseSection from "@/components/ExpertiseSection";
 import SEOHead from "@/components/SEOHead";
-import SchemaMarkup, { realEstateAgentSchema, localBusinessSchema, taylorSherwoodSchema, organizationSchema, websiteSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
+import SchemaMarkup, {
+  realEstateAgentSchema,
+  localBusinessSchema,
+  taylorSherwoodSchema,
+  organizationSchema,
+  websiteSchema,
+  createBreadcrumbSchema,
+} from "@/components/SchemaMarkup";
+import ScrollReveal from "@/components/ScrollReveal";
+import { formatPhoneNumber, getPhoneDigits, getTimestamp } from "@/lib/formUtils";
 
-// Lazy-load below-fold sections to reduce initial JS bundle
-const PrivateOpportunities = lazy(() => import("@/components/PrivateOpportunities"));
-const CommunitiesPreview = lazy(() => import("@/components/CommunitiesPreview"));
-const IntroSection = lazy(() => import("@/components/IntroSection"));
-const MeetTaylor = lazy(() => import("@/components/MeetTaylor"));
-
-
-const Testimonials = lazy(() => import("@/components/Testimonials"));
-const MarketInsights = lazy(() => import("@/components/MarketInsights"));
 const Footer = lazy(() => import("@/components/Footer"));
 
-const ScrollReveal = lazy(() => import("@/components/ScrollReveal"));
+/* ─────────────────────────────────────────────
+   SECTION 1 — HERO
+   ───────────────────────────────────────────── */
 
-const NewsletterSection = lazy(async () => {
-  const { default: ScrollRevealComp } = await import("@/components/ScrollReveal");
-  return {
-    default: () => (
-      <section className="pt-16 md:pt-20 pb-8 md:pb-10 bg-background">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <ScrollRevealComp>
-              <h3 className="text-3xl md:text-6xl font-light text-architectural mb-6 md:mb-8">
-                Stay Informed
-              </h3>
-              <p className="text-base md:text-xl text-muted-foreground mb-8 md:mb-12">
-                Subscribe to our newsletter for the latest insights on Austin luxury real estate
-              </p>
-              <a
-                href="https://taylorsherwood.myflodesk.com/biolink"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                className="inline-block px-8 py-3 text-sm border border-foreground/20 text-foreground hover:bg-gold hover:text-white hover:border-gold transition-colors duration-300"
-              >
-                BECOME AN ECHELON INSIDER
-              </a>
-            </ScrollRevealComp>
-            <ScrollRevealComp delay={150}>
-              <div className="mt-6 flex items-center justify-center gap-4 md:gap-14 flex-wrap">
-                <img src="/static-assets/exp-commercial-logo.png" alt="eXp Commercial brokerage logo" title="eXp Commercial — Echelon Property Group" className="h-24 md:h-60 w-auto object-contain" loading="lazy" decoding="async" />
-                <img src="/static-assets/exp-realty-luxury-logo.png" alt="eXp Realty Luxury division logo" title="eXp Realty Luxury — Echelon Property Group" className="h-24 md:h-44 w-auto object-contain" loading="lazy" decoding="async" />
-                <img src="/static-assets/exp-realty-logo.png" alt="eXp Realty brokerage logo" title="eXp Realty — Echelon Property Group brokerage" className="h-24 md:h-60 w-auto object-contain" loading="lazy" decoding="async" />
-              </div>
-            </ScrollRevealComp>
+const FALLBACK_TIMEOUT = 4000;
+const RETRY_DELAY = 800;
+
+const Hero = () => {
+  const [showFallback, setShowFallback] = useState(false);
+  const [videoReady, setVideoReady] = useState(false);
+  const [videoSrc, setVideoSrc] = useState<string | null>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [heroVisible, setHeroVisible] = useState(false);
+  const sectionRef = useRef<HTMLElement>(null);
+  const searchRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const el = sectionRef.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => setHeroVisible(entry.isIntersecting),
+      { threshold: 0.4 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      setShowFallback(true);
+      return;
+    }
+    requestAnimationFrame(() => setVideoSrc("/videos/hero-video.mp4"));
+  }, []);
+
+  useEffect(() => {
+    if (!videoSrc) return;
+    const video = videoRef.current;
+    if (!video) { setShowFallback(true); return; }
+
+    video.muted = true;
+    video.defaultMuted = true;
+    video.setAttribute("muted", "");
+    video.setAttribute("playsinline", "");
+    video.setAttribute("webkit-playsinline", "");
+
+    const fallbackTimer = setTimeout(() => {
+      if (!videoReady) setShowFallback(true);
+    }, FALLBACK_TIMEOUT);
+
+    const attemptPlay = () => {
+      const p = video.play();
+      if (p !== undefined) {
+        p.then(() => { video.playbackRate = 0.85; setVideoReady(true); setShowFallback(false); })
+          .catch(() => {
+            setTimeout(() => {
+              video.muted = true;
+              video.defaultMuted = true;
+              const retry = video.play();
+              if (retry !== undefined) {
+                retry.then(() => { video.playbackRate = 0.85; setVideoReady(true); setShowFallback(false); })
+                  .catch(() => setShowFallback(true));
+              } else setShowFallback(true);
+            }, RETRY_DELAY);
+          });
+      } else setShowFallback(true);
+    };
+
+    const onReady = () => attemptPlay();
+    if (video.readyState >= 2) attemptPlay();
+    else video.addEventListener("loadeddata", onReady);
+    video.addEventListener("error", () => setShowFallback(true));
+
+    return () => { clearTimeout(fallbackTimer); video.removeEventListener("loadeddata", onReady); };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [videoSrc]);
+
+  // Inject RealScout gold styling
+  useEffect(() => {
+    const el = searchRef.current;
+    if (!el) return;
+    const GOLD = "hsl(41, 36%, 57%)";
+    const injectStyles = () => {
+      const widget = el.querySelector("realscout-advanced-search");
+      if (!widget?.shadowRoot || widget.shadowRoot.querySelector("#rs-hero")) return;
+      const s = document.createElement("style");
+      s.id = "rs-hero";
+      s.textContent = `button[type="submit"],[class*="search"] button,[class*="Submit"],input[type="submit"]{background-color:${GOLD}!important;border-color:${GOLD}!important;}`;
+      widget.shadowRoot.appendChild(s);
+    };
+    injectStyles();
+    const obs = new MutationObserver(() => injectStyles());
+    obs.observe(el, { childList: true, subtree: true });
+    const timers = [500, 1500, 3000].map((ms) => setTimeout(injectStyles, ms));
+    return () => { obs.disconnect(); timers.forEach(clearTimeout); };
+  }, []);
+
+  const anim = (delay: string) => ({
+    opacity: heroVisible ? 1 : 0,
+    transform: heroVisible ? "translateY(0)" : "translateY(14px)",
+    transition: `opacity 1.2s cubic-bezier(0.25,0.46,0.45,0.94) ${delay}, transform 1.2s cubic-bezier(0.25,0.46,0.45,0.94) ${delay}`,
+    willChange: "opacity, transform" as const,
+  });
+
+  return (
+    <section ref={sectionRef} className="relative min-h-screen flex flex-col justify-center overflow-hidden bg-primary">
+      {/* Video */}
+      <div aria-hidden="true" className="absolute inset-0 pointer-events-none select-none" style={{ zIndex: 0 }}>
+        <video ref={videoRef} autoPlay muted loop playsInline preload="none" poster="/images/hero-poster.jpg"
+          className={`hero-bg-video transition-opacity duration-700 ${videoReady ? "opacity-100" : "opacity-0"}`}
+          style={{ filter: "brightness(0.82) contrast(1.08)" }} tabIndex={-1}>
+          {videoSrc && <source src={videoSrc} type="video/mp4" />}
+        </video>
+      </div>
+
+      {showFallback && !videoReady && (
+        <img src="/images/hero-poster.jpg" alt="Austin Texas skyline" className="absolute inset-0 w-full h-full object-cover" style={{ zIndex: 0 }} loading="eager" />
+      )}
+
+      {/* Gradient overlays */}
+      <div className="absolute inset-0" style={{
+        zIndex: 1,
+        background: `linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.5) 35%, rgba(0,0,0,0.2) 65%, rgba(0,0,0,0.05) 100%),
+                      linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.05) 40%, rgba(0,0,0,0.35) 100%)`
+      }} />
+
+      {/* Content */}
+      <div className="relative z-10 container mx-auto px-6 pt-32 md:pt-40 lg:pt-44 pb-12">
+        <div className="max-w-[620px]" style={{ filter: "drop-shadow(0 0 80px rgba(0,0,0,0.5))" }}>
+          <p className="text-warm-cream/50 mb-5 font-bold" style={{
+            ...anim("0s"),
+            fontFamily: '"Raleway", sans-serif', fontSize: "0.6rem", letterSpacing: "0.35em", textTransform: "uppercase",
+            textShadow: "0 0 20px rgba(12,15,36,0.7)"
+          }}>
+            STRATEGIC AUSTIN REAL ESTATE ADVISORY
+          </p>
+
+          <h1 className="font-display font-medium text-warm-cream mb-8" style={{
+            ...anim("0.15s"), lineHeight: 1.1, letterSpacing: "-0.025em",
+            textShadow: "0 2px 9px rgba(0,0,0,0.55)"
+          }}>
+            <span style={{ fontSize: "clamp(2.2rem, 4.8vw, 4.6rem)" }}>Access Austin's Most</span>
+            <br />
+            <span className="italic" style={{ fontSize: "clamp(2.6rem, 5.6vw, 5.4rem)" }}>Exclusive Homes</span>
+          </h1>
+
+          <p className="text-warm-cream/60 max-w-lg mb-10 leading-relaxed font-medium" style={{
+            ...anim("0.3s"), fontFamily: '"Raleway", sans-serif', fontSize: "1rem",
+            textShadow: "0 2px 9px rgba(0,0,0,0.55)"
+          }}>
+            Private listings, off-market opportunities, and elevated real estate representation.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4" style={anim("0.4s")}>
+            <Link to="/austin-luxury-homes-for-sale"
+              className="hero-cta-btn inline-block bg-warm-cream text-foreground px-12 py-[1.1rem] text-center hover:bg-gold hover:text-white border border-white/15 shadow-[0_8px_24px_rgba(0,0,0,0.35)]"
+              style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.6rem", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 700 }}>
+              EXPLORE LUXURY HOMES
+            </Link>
+            <Link to="/off-market-real-estate-austin"
+              className="hero-cta-btn inline-block bg-transparent border border-warm-cream/25 text-warm-cream/75 px-10 py-[1.1rem] text-center hover:bg-gold hover:text-white hover:border-gold transition-all duration-300"
+              style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.6rem", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 400 }}>
+              REQUEST OFF-MARKET ACCESS
+            </Link>
           </div>
         </div>
-      </section>
-    ),
-  };
-});
 
-const BelowFold = () => (
-  <div className="min-h-[200px]" />
+        {/* Integrated search */}
+        <div ref={searchRef} className="mt-14 max-w-3xl" style={{ ...anim("0.55s"), minHeight: 80 }}>
+          {createElement("realscout-advanced-search", { "agent-encoded-id": "QWdlbnQtMjg5NDU2" })}
+        </div>
+      </div>
+
+      {/* Scroll indicator */}
+      <div className="absolute bottom-5 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 z-10">
+        <span className="text-warm-cream font-light" style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.6rem", letterSpacing: "0.35em", textTransform: "uppercase" }}>
+          Discover Austin
+        </span>
+        <div className="scroll-indicator-line" />
+      </div>
+    </section>
+  );
+};
+
+/* ─────────────────────────────────────────────
+   SECTION 2 — MICRO-TRUST STRIP
+   ───────────────────────────────────────────── */
+
+const TrustStrip = () => (
+  <section className="hidden md:block bg-background border-b border-border/40">
+    <div className="container mx-auto px-6">
+      <div className="max-w-[1320px] mx-auto flex items-center justify-center gap-12 py-5">
+        {[
+          { icon: "/static-assets/exp-realty-luxury-logo.png", text: "eXp Luxury Division" },
+          { icon: null, text: "Certified Luxury Home Marketing Specialist" },
+          { icon: null, text: "$100M+ Career Sales Volume" },
+        ].map((item, i) => (
+          <div key={i} className="flex items-center gap-3">
+            {item.icon && <img src={item.icon} alt={item.text} className="h-6 w-auto object-contain opacity-60" loading="lazy" />}
+            <span className="text-muted-foreground/60 font-medium" style={{
+              fontFamily: '"Raleway", sans-serif', fontSize: "0.65rem", letterSpacing: "0.16em", textTransform: "uppercase"
+            }}>
+              {item.text}
+            </span>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
 );
 
-/** Noscript fallback for below-fold content so crawlers always see key text */
+/* ─────────────────────────────────────────────
+   SECTION 3 — POSITIONING
+   ───────────────────────────────────────────── */
+
+const Positioning = () => (
+  <section className="py-20 md:py-28 bg-background">
+    <div className="container mx-auto px-6">
+      <div className="max-w-[1320px] mx-auto">
+        <ScrollReveal>
+          <div className="grid md:grid-cols-2 gap-16 lg:gap-24 items-center">
+            {/* Text */}
+            <div>
+              <p className="text-minimal text-gold mb-5 font-extrabold">WHY ECHELON</p>
+              <h2 className="font-display text-3xl md:text-[2.8rem] font-light text-architectural mb-6 leading-[1.12]">
+                Luxury Real Estate,
+                <br />
+                <span className="italic">Without the Noise</span>
+              </h2>
+              <p className="text-muted-foreground text-[15px] leading-relaxed mb-8 max-w-lg font-light">
+                Most agents list homes. We provide strategic advisory — curating opportunities,
+                negotiating with precision, and delivering a level of discretion that luxury
+                transactions demand.
+              </p>
+              <ul className="space-y-4 mb-10">
+                {[
+                  "Access to private and pre-market inventory",
+                  "Strategic negotiation and positioning",
+                  "Tailored, discreet client experience",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-gold shrink-0" />
+                    <span className="text-foreground/80 text-[15px] font-light">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <Link to="/contact"
+                className="inline-block border border-foreground/20 text-foreground px-10 py-[0.9rem] hover:bg-gold hover:text-white hover:border-gold transition-all duration-300"
+                style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.6rem", letterSpacing: "0.25em", textTransform: "uppercase", fontWeight: 600 }}>
+                START A CONVERSATION
+              </Link>
+            </div>
+
+            {/* Image */}
+            <div className="relative overflow-hidden aspect-[4/5]">
+              <img src="/static-assets/community-lake-austin.jpg"
+                alt="Luxury lakefront property on Lake Austin"
+                className="w-full h-full object-cover"
+                loading="lazy" decoding="async" />
+              <div className="absolute inset-0 bg-gradient-to-t from-foreground/10 via-transparent to-transparent" />
+            </div>
+          </div>
+        </ScrollReveal>
+      </div>
+    </div>
+  </section>
+);
+
+/* ─────────────────────────────────────────────
+   SECTION 4 — FEATURED PROPERTIES
+   ───────────────────────────────────────────── */
+
+const properties = [
+  {
+    image: "/lovable-uploads/0fc79a0b-1fde-439f-bb08-6062e50770b7.jpg",
+    address: "2300 Barton Creek Boulevard #15",
+    location: "Barton Creek, Austin",
+    price: "$3,495,000",
+    beds: 4, baths: 4, sqft: "4,147",
+    link: "https://www.villagovernorshill.com",
+    badge: "Private Listing",
+  },
+  {
+    image: "/static-assets/listing-3.jpg",
+    address: "Ranch Estate on 42 Acres",
+    location: "Texas Hill Country",
+    price: "$5M+",
+    beds: 4, baths: 5, sqft: "5,800",
+    link: "#",
+    badge: "Private Market Opportunity",
+  },
+];
+
+const FeaturedProperties = () => (
+  <section className="py-20 md:py-28 bg-secondary">
+    <div className="container mx-auto px-6">
+      <div className="max-w-[1320px] mx-auto">
+        <ScrollReveal>
+          <div className="mb-16">
+            <p className="text-minimal text-gold mb-5 font-extrabold">FEATURED LISTINGS</p>
+            <h2 className="font-display text-3xl md:text-[2.8rem] font-light text-architectural mb-4 leading-[1.12]">
+              Exceptional <span className="italic">Properties</span>
+            </h2>
+            <p className="text-muted-foreground text-[15px] max-w-xl font-light leading-relaxed">
+              A curated selection of luxury homes, including private and off-market opportunities.
+            </p>
+          </div>
+        </ScrollReveal>
+
+        <ScrollReveal delay={100}>
+          <div className="grid md:grid-cols-2 gap-8 lg:gap-10">
+            {properties.map((p, i) => {
+              const isExternal = p.link.startsWith("http");
+              const Wrapper = isExternal ? "a" : "div";
+              const wrapperProps = isExternal ? { href: p.link, target: "_blank" as const, rel: "noopener noreferrer" } : {};
+              return (
+                <Wrapper key={i} {...wrapperProps} className="group block cursor-pointer">
+                  <div className="relative overflow-hidden aspect-[4/3]">
+                    <img src={p.image} alt={p.address}
+                      className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+                      loading="lazy" decoding="async" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+
+                    {/* Price */}
+                    <div className="absolute bottom-5 right-5">
+                      <span className="text-white font-display text-xl font-light tracking-wide"
+                        style={{ textShadow: "0 1px 6px rgba(0,0,0,0.5)" }}>
+                        {p.price}
+                      </span>
+                    </div>
+
+                    {/* Badge */}
+                    {p.badge && (
+                      <div className="absolute top-5 left-5 bg-background/85 backdrop-blur-sm px-3.5 py-1.5">
+                        <span className="text-[9px] tracking-[0.2em] uppercase text-muted-foreground font-normal">{p.badge}</span>
+                      </div>
+                    )}
+
+                    {/* Hover overlay */}
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                      <span className="text-white border border-white/40 px-10 py-3.5 backdrop-blur-md bg-black/30 font-medium"
+                        style={{ fontSize: "0.6rem", letterSpacing: "0.2em", textTransform: "uppercase", fontFamily: '"Raleway", sans-serif' }}>
+                        View Property
+                      </span>
+                    </div>
+                  </div>
+
+                  <div className="mt-4 px-1">
+                    <h3 className="text-base font-display font-medium text-foreground mb-1">{p.address}</h3>
+                    <p className="text-muted-foreground/60 text-[13px] font-light">{p.location}</p>
+                    <div className="flex gap-4 text-[13px] text-muted-foreground/50 mt-2 font-light">
+                      <span>{p.beds} Beds</span>
+                      <span className="text-border text-[5px] leading-[2]">●</span>
+                      <span>{p.baths} Baths</span>
+                      <span className="text-border text-[5px] leading-[2]">●</span>
+                      <span>{p.sqft} Sq Ft</span>
+                    </div>
+                  </div>
+                </Wrapper>
+              );
+            })}
+
+            {/* Off-market card */}
+            <Link to="/off-market-real-estate-austin" className="group block md:col-span-2 md:max-w-[calc(50%-1.25rem)]">
+              <div className="relative overflow-hidden aspect-[4/3] bg-gradient-to-br from-primary via-primary to-primary/80 flex items-center justify-center transition-all duration-700 group-hover:from-gold group-hover:via-gold group-hover:to-gold/80">
+                <img src="/static-assets/echelon-logo-gold-square.png" alt="Echelon Property Group"
+                  className="w-1/2 h-auto object-contain transition-all duration-500 group-hover:brightness-0 group-hover:invert"
+                  loading="lazy" decoding="async" />
+              </div>
+              <div className="mt-4 px-1 text-center">
+                <h3 className="text-base font-display font-medium mb-1.5 group-hover:text-muted-foreground transition-colors duration-500">
+                  Access Off-Market Opportunities
+                </h3>
+                <p className="text-[13px] text-muted-foreground/60 font-light leading-relaxed">
+                  Exclusive private listings not publicly advertised. →
+                </p>
+              </div>
+            </Link>
+          </div>
+        </ScrollReveal>
+
+        <div className="text-center mt-14">
+          <Link to="/austin-luxury-homes-for-sale"
+            className="inline-block border border-foreground/20 text-foreground px-10 py-[0.9rem] hover:bg-gold hover:text-white hover:border-gold transition-all duration-300"
+            style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.6rem", letterSpacing: "0.25em", textTransform: "uppercase", fontWeight: 600 }}>
+            EXPLORE ALL LISTINGS
+          </Link>
+        </div>
+      </div>
+    </div>
+  </section>
+);
+
+/* ─────────────────────────────────────────────
+   SECTION 5 — TESTIMONIALS (DARK)
+   ───────────────────────────────────────────── */
+
+const testimonials = [
+  {
+    quote: "Taylor made selling our Barton Creek home seamless. His market knowledge and marketing strategy brought us multiple offers above asking within the first week.",
+    name: "James & Sarah Mitchell",
+    context: "Sold in Barton Creek",
+  },
+  {
+    quote: "Taylor was fantastic to work with! He really understood what I was looking for and showed me great options that fit my specific criteria. When I was ready to make an offer, he helped things move quickly to meet a tight closing date.",
+    name: "Meredith Taylor",
+    context: "Purchased in Austin",
+  },
+  {
+    quote: "Taylor's deep understanding of Austin's investment landscape helped us identify a property that exceeded our return expectations. His analysis was institutional-grade and his negotiation saved us significantly on the acquisition.",
+    name: "David Chen",
+    context: "Investment Property, Austin",
+  },
+  {
+    quote: "Taylor was incredible to work with! He's knowledgeable, responsive, and genuinely cares about getting the best results for his clients. Highly recommend him to anyone buying or selling in Austin.",
+    name: "Yaniv Dotan",
+    context: "Purchased and sold in Barton Creek",
+  },
+];
+
+const TestimonialsSection = () => (
+  <section className="py-20 md:py-28 bg-primary">
+    <div className="container mx-auto px-6">
+      <div className="max-w-[1320px] mx-auto">
+        <ScrollReveal>
+          <div className="text-center mb-14">
+            <p className="text-minimal text-gold mb-4 font-extrabold">CLIENT EXPERIENCES</p>
+            <h2 className="font-display text-3xl md:text-[2.8rem] font-light text-primary-foreground leading-[1.12]">
+              Trusted by Buyers, Sellers, and <span className="italic">Investors</span>
+            </h2>
+          </div>
+        </ScrollReveal>
+
+        <ScrollReveal delay={100}>
+          <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
+            {testimonials.map((t, i) => (
+              <div key={i} className="bg-primary-foreground/[0.04] border border-primary-foreground/[0.08] rounded-sm px-7 py-7 flex flex-col justify-between
+                transition-all duration-500 hover:-translate-y-1 hover:bg-primary-foreground/[0.07]">
+                <p className="text-primary-foreground/70 text-[15px] leading-[1.8] font-light italic mb-6 flex-1">
+                  "{t.quote}"
+                </p>
+                <div className="h-px mb-4" style={{ background: "linear-gradient(to right, transparent, hsl(38 20% 72% / 0.2), transparent)" }} />
+                <div>
+                  <p className="font-display text-[0.95rem] text-primary-foreground/90 tracking-tight">{t.name}</p>
+                  <p className="text-gold/70 text-xs mt-1 font-light">{t.context}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </ScrollReveal>
+      </div>
+    </div>
+  </section>
+);
+
+/* ─────────────────────────────────────────────
+   SECTION 6 — COMMUNITIES
+   ───────────────────────────────────────────── */
+
+const communities = [
+  { name: "Barton Creek", descriptor: "Golf, privacy, Hill Country estates", image: "/static-assets/community-barton-creek.jpg", slug: "barton-creek" },
+  { name: "Lake Austin", descriptor: "Waterfront living at its finest", image: "/static-assets/community-lake-austin.jpg", slug: "lake-austin" },
+  { name: "Westlake Hills", descriptor: "Scenic bluffs, top-rated schools", image: "/static-assets/community-westlake-hills.jpg", slug: "westlake-hills" },
+  { name: "Tarrytown", descriptor: "Old Austin charm, central location", image: "/static-assets/community-tarrytown.jpg", slug: "tarrytown" },
+  { name: "Rollingwood", descriptor: "Intimate enclave near Zilker", image: "/static-assets/community-rollingwood.jpg", slug: "rollingwood" },
+  { name: "Spanish Oaks", descriptor: "Gated Hill Country luxury", image: "/static-assets/community-spanish-oaks.jpg", slug: "spanish-oaks" },
+];
+
+const CommunitiesSection = () => (
+  <section className="py-20 md:py-28 bg-background">
+    <div className="container mx-auto px-6">
+      <div className="max-w-[1320px] mx-auto">
+        <ScrollReveal>
+          <div className="text-center mb-14">
+            <p className="text-minimal text-gold mb-5 font-extrabold">SELECT COMMUNITIES</p>
+            <h2 className="font-display text-3xl md:text-[2.8rem] font-light text-architectural leading-[1.12]">
+              Explore Austin's Most <span className="italic">Sought-After</span> Communities
+            </h2>
+          </div>
+        </ScrollReveal>
+
+        <ScrollReveal delay={100}>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 lg:gap-4">
+            {communities.map((c) => (
+              <Link key={c.slug} to={`/communities/${c.slug}`} className="group relative overflow-hidden aspect-[3/4]">
+                <img src={c.image} alt={`Luxury homes in ${c.name}, Austin`}
+                  className="community-tile-img absolute inset-0 w-full h-full object-cover"
+                  loading="lazy" decoding="async" />
+                <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/20 via-[45%] to-transparent" />
+                <div className="absolute bottom-5 left-5 right-5">
+                  <h3 className="text-warm-cream font-display text-lg md:text-xl font-medium tracking-[0.03em] leading-[1.1] drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)] mb-1">
+                    {c.name}
+                  </h3>
+                  <p className="text-warm-cream/60 text-[0.55rem] font-normal tracking-[0.07em] uppercase drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
+                    {c.descriptor}
+                  </p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </ScrollReveal>
+
+        <div className="text-center mt-14">
+          <Link to="/communities"
+            className="inline-block border border-foreground/20 text-foreground px-10 py-[0.9rem] hover:bg-gold hover:text-white hover:border-gold transition-all duration-300"
+            style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.6rem", letterSpacing: "0.25em", textTransform: "uppercase", fontWeight: 600 }}>
+            VIEW ALL COMMUNITIES
+          </Link>
+        </div>
+      </div>
+    </div>
+  </section>
+);
+
+/* ─────────────────────────────────────────────
+   SECTION 7 — INSIGHTS & AUTHORITY
+   ───────────────────────────────────────────── */
+
+const insights = [
+  { to: "/moving-to-austin-texas", title: "Moving to Austin, Texas", excerpt: "Everything you need to know about relocating to Austin — neighborhoods, lifestyle, and what to expect.", category: "Relocation" },
+  { to: "/best-luxury-neighborhoods-austin-texas", title: "Best Luxury Neighborhoods in Austin", excerpt: "A comprehensive guide to Austin's most prestigious communities and what makes each one unique.", category: "Neighborhoods" },
+  { to: "/austin-luxury-market-report", title: "Austin Luxury Real Estate Market Report", excerpt: "Quarterly insights on pricing, inventory, and luxury segment performance across Austin.", category: "Market Report" },
+  { to: "/best-neighborhoods-in-austin-texas", title: "Best Neighborhoods in Austin", excerpt: "A guide to Austin's top neighborhoods for families, professionals, and investors.", category: "Neighborhoods" },
+];
+
+const InsightsSection = () => (
+  <section className="py-20 md:py-28 bg-secondary">
+    <div className="container mx-auto px-6">
+      <div className="max-w-[1320px] mx-auto">
+        <ScrollReveal>
+          <div className="text-center mb-14">
+            <p className="text-minimal text-gold mb-5 font-extrabold">MARKET INTELLIGENCE</p>
+            <h2 className="font-display text-3xl md:text-[2.8rem] font-light text-architectural leading-[1.12]">
+              Insights & <span className="italic">Market Intelligence</span>
+            </h2>
+          </div>
+        </ScrollReveal>
+
+        <ScrollReveal delay={100}>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {insights.map((article) => (
+              <Link key={article.to} to={article.to} className="group block bg-card border border-border/30 rounded-sm overflow-hidden
+                transition-all duration-500 hover:-translate-y-1 hover:shadow-elegant">
+                <div className="p-6 flex flex-col h-full">
+                  <p className="text-gold text-[0.55rem] tracking-[0.2em] uppercase font-bold mb-3">{article.category}</p>
+                  <h3 className="font-display text-base font-medium text-foreground mb-3 leading-snug group-hover:text-gold transition-colors duration-300">
+                    {article.title}
+                  </h3>
+                  <p className="text-muted-foreground/60 text-[13px] font-light leading-relaxed flex-1">{article.excerpt}</p>
+                  <span className="mt-4 text-gold/70 text-[0.55rem] tracking-[0.2em] uppercase font-semibold group-hover:text-gold transition-colors duration-300">
+                    READ MORE →
+                  </span>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </ScrollReveal>
+
+        <div className="text-center mt-14">
+          <Link to="/blog"
+            className="inline-block border border-foreground/20 text-foreground px-10 py-[0.9rem] hover:bg-gold hover:text-white hover:border-gold transition-all duration-300"
+            style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.6rem", letterSpacing: "0.25em", textTransform: "uppercase", fontWeight: 600 }}>
+            EXPLORE ALL INSIGHTS
+          </Link>
+        </div>
+      </div>
+    </div>
+  </section>
+);
+
+/* ─────────────────────────────────────────────
+   SECTION 8 — LEAD CAPTURE
+   ───────────────────────────────────────────── */
+
+const ZAPIER_WEBHOOK = "https://hooks.zapier.com/hooks/catch/26916347/upj5fa0/";
+
+const LeadCapture = () => {
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email) return;
+    setLoading(true);
+    try {
+      const body = new URLSearchParams({
+        name, email, lead_source: "Homepage Off-Market CTA",
+        page_url: window.location.href, submitted_at: getTimestamp(),
+      });
+      await fetch(ZAPIER_WEBHOOK, { method: "POST", body });
+      setSubmitted(true);
+    } catch { /* silent */ }
+    setLoading(false);
+  };
+
+  return (
+    <section className="py-20 md:py-28 bg-background">
+      <div className="container mx-auto px-6">
+        <div className="max-w-[640px] mx-auto text-center">
+          <ScrollReveal>
+            <p className="text-minimal text-gold mb-5 font-extrabold">EXCLUSIVE ACCESS</p>
+            <h2 className="font-display text-3xl md:text-[2.8rem] font-light text-architectural mb-5 leading-[1.12]">
+              Get Access to <span className="italic">Off-Market</span> Opportunities
+            </h2>
+            <p className="text-muted-foreground text-[15px] font-light leading-relaxed mb-10 max-w-md mx-auto">
+              Be the first to see private listings and exclusive opportunities before they hit the market.
+            </p>
+
+            {submitted ? (
+              <div className="py-8">
+                <p className="text-gold font-display text-xl">Thank you for requesting access.</p>
+                <p className="text-muted-foreground text-sm mt-2 font-light">We'll be in touch shortly with exclusive opportunities.</p>
+              </div>
+            ) : (
+              <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
+                <input type="text" placeholder="Your Name" value={name} onChange={(e) => setName(e.target.value)}
+                  className="flex-1 bg-card border border-border/50 px-5 py-3.5 text-sm text-foreground placeholder:text-muted-foreground/40 focus:outline-none focus:border-gold/50 transition-colors" />
+                <input type="email" placeholder="Email Address" required value={email} onChange={(e) => setEmail(e.target.value)}
+                  className="flex-1 bg-card border border-border/50 px-5 py-3.5 text-sm text-foreground placeholder:text-muted-foreground/40 focus:outline-none focus:border-gold/50 transition-colors" />
+                <button type="submit" disabled={loading}
+                  className="border border-foreground/20 text-foreground px-8 py-3.5 hover:bg-gold hover:text-white hover:border-gold transition-all duration-300 disabled:opacity-50"
+                  style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.6rem", letterSpacing: "0.25em", textTransform: "uppercase", fontWeight: 600 }}>
+                  {loading ? "SENDING..." : "REQUEST ACCESS"}
+                </button>
+              </form>
+            )}
+          </ScrollReveal>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+/* ─────────────────────────────────────────────
+   SECTION 9 — FINAL CTA
+   ───────────────────────────────────────────── */
+
+const FinalCTA = () => (
+  <section className="py-20 md:py-28 bg-primary">
+    <div className="container mx-auto px-6">
+      <div className="max-w-[800px] mx-auto text-center">
+        <ScrollReveal>
+          <p className="text-minimal text-gold mb-5 font-extrabold">GET STARTED</p>
+          <h2 className="font-display text-3xl md:text-[2.8rem] font-light text-primary-foreground mb-5 leading-[1.12]">
+            Work With <span className="italic">Echelon Property Group</span>
+          </h2>
+          <p className="text-primary-foreground/50 text-[15px] font-light leading-relaxed mb-10 max-w-md mx-auto">
+            Luxury real estate, redefined through strategy, access, and execution.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link to="/buy"
+              className="inline-block bg-warm-cream text-foreground px-12 py-[1rem] text-center hover:bg-gold hover:text-white transition-all duration-300"
+              style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.6rem", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 700 }}>
+              BUY A HOME
+            </Link>
+            <Link to="/sell"
+              className="inline-block border border-primary-foreground/20 text-primary-foreground/70 px-12 py-[1rem] text-center hover:bg-gold hover:text-white hover:border-gold transition-all duration-300"
+              style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.6rem", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 400 }}>
+              SELL YOUR HOME
+            </Link>
+          </div>
+        </ScrollReveal>
+      </div>
+    </div>
+  </section>
+);
+
+/* ─────────────────────────────────────────────
+   NOSCRIPT FALLBACK (for crawlers)
+   ───────────────────────────────────────────── */
+
 const NoscriptFallback = () => (
   <noscript>
     <section className="py-16 bg-background">
       <div className="container mx-auto px-6 max-w-4xl">
         <h2 className="text-3xl font-light mb-6">Austin Luxury Real Estate Services</h2>
-        <p className="mb-4">Echelon Property Group provides full-service luxury real estate advisory across Austin, Texas. We specialize in luxury homes, land development, commercial real estate, and investment properties.</p>
-        <h3 className="text-2xl font-light mb-4">Our Expertise</h3>
+        <p className="mb-4">Echelon Property Group provides full-service luxury real estate advisory across Austin, Texas.</p>
         <ul className="list-disc pl-6 mb-6 space-y-2">
           <li>Luxury residential sales in Westlake Hills, Barton Creek, Lake Austin, Tarrytown, and Rollingwood</li>
           <li>Off-market and private listing opportunities</li>
           <li>Commercial real estate and multifamily investment</li>
           <li>Land acquisition and development advisory</li>
         </ul>
-        <h3 className="text-2xl font-light mb-4">Austin Luxury Communities</h3>
-        <ul className="list-disc pl-6 mb-6 space-y-1">
-          <li><a href="/communities/barton-creek">Barton Creek</a></li>
-          <li><a href="/communities/westlake-hills">Westlake Hills</a></li>
-          <li><a href="/communities/lake-austin">Lake Austin</a></li>
-          <li><a href="/communities/tarrytown">Tarrytown</a></li>
-          <li><a href="/communities/rollingwood">Rollingwood</a></li>
-          <li><a href="/communities/dripping-springs">Dripping Springs</a></li>
-          <li><a href="/communities/spanish-oaks">Spanish Oaks</a></li>
-        </ul>
-        <h3 className="text-2xl font-light mb-4">Off-Market & Private Listings</h3>
-        <p className="mb-4">Many of Austin's most desirable homes never hit the public market. Echelon Property Group provides qualified buyers with <a href="/off-market-real-estate-austin">private access to off-market homes</a>, investment properties, and land opportunities across Austin's most exclusive neighborhoods.</p>
-        <h3 className="text-2xl font-light mb-4">About Taylor Sherwood</h3>
-        <p className="mb-4">Taylor Sherwood is a Certified Luxury Home Marketing Specialist (CLHMS) and Austin-based real estate advisor. He founded Echelon Property Group to bring a strategic, investment-focused approach to Austin real estate.</p>
-        <p className="mb-4">With over $100M in career sales volume and deep expertise across Austin's most sought-after neighborhoods, Taylor helps clients buy, sell, and invest with confidence.</p>
-        <h3 className="text-2xl font-light mb-4">Contact</h3>
         <p>2105 East MLK Blvd Ste 227, Austin, Texas 78702</p>
         <p>Email: <a href="mailto:taylor@echelonpropertygroup.com">Send an Email</a></p>
         <p>Phone: <a href="tel:+15126613843">(512) 661-3843</a></p>
-        <p className="mt-4"><a href="/contact">Schedule a Consultation →</a></p>
       </div>
     </section>
   </noscript>
 );
 
-const Index = () => {
-  return (
-    <div className="min-h-screen bg-card">
-      <SEOHead
-        title="Austin Luxury Real Estate and Investment Advisory"
-        description="Data-driven Austin luxury real estate advisory. Off-market access, investment strategy, and high-touch service for luxury homes, land, and commercial property."
-        ogTitle="Austin Luxury Real Estate and Investment Advisory | Echelon Property Group"
-        ogDescription="Strategic real estate advisory across Austin's most exclusive markets. Off-market deals, investment property, land development, and luxury homes."
-      />
-      <SchemaMarkup schema={organizationSchema} />
-      <SchemaMarkup schema={realEstateAgentSchema} />
-      <SchemaMarkup schema={localBusinessSchema} />
-      <SchemaMarkup schema={taylorSherwoodSchema} />
-      <SchemaMarkup schema={websiteSchema} />
-      <SchemaMarkup schema={createBreadcrumbSchema([
-        { name: "Home", url: "https://www.echelonpropertygroup.com/" }
-      ])} />
-      <Navigation />
-      <Hero />
-      <RealScoutSearch />
+/* ─────────────────────────────────────────────
+   PAGE COMPOSITION
+   ───────────────────────────────────────────── */
 
-      <AsSeenIn />
-      <ExpertiseSection />
+const Index = () => (
+  <div className="min-h-screen bg-background">
+    <SEOHead
+      title="Austin Luxury Real Estate and Investment Advisory"
+      description="Data-driven Austin luxury real estate advisory. Off-market access, investment strategy, and high-touch service for luxury homes, land, and commercial property."
+      ogTitle="Austin Luxury Real Estate and Investment Advisory | Echelon Property Group"
+      ogDescription="Strategic real estate advisory across Austin's most exclusive markets. Off-market deals, investment property, land development, and luxury homes."
+    />
+    <SchemaMarkup schema={organizationSchema} />
+    <SchemaMarkup schema={realEstateAgentSchema} />
+    <SchemaMarkup schema={localBusinessSchema} />
+    <SchemaMarkup schema={taylorSherwoodSchema} />
+    <SchemaMarkup schema={websiteSchema} />
+    <SchemaMarkup schema={createBreadcrumbSchema([{ name: "Home", url: "https://www.echelonpropertygroup.com/" }])} />
 
-      <NoscriptFallback />
+    <Navigation />
+    <Hero />
+    <TrustStrip />
+    <Positioning />
+    <FeaturedProperties />
 
-      <Suspense fallback={<BelowFold />}>
-        <IntroSection />
-        <CommunitiesPreview />
-        <PrivateOpportunities />
-        <Testimonials />
-        <MeetTaylor />
-        
-        
-        <MarketInsights />
-        <NewsletterSection />
-        <Footer />
-      </Suspense>
-    </div>
-  );
-};
+    <NoscriptFallback />
+
+    <TestimonialsSection />
+    <CommunitiesSection />
+    <InsightsSection />
+    <LeadCapture />
+    <FinalCTA />
+
+    <Suspense fallback={<div className="min-h-[100px]" />}>
+      <Footer />
+    </Suspense>
+  </div>
+);
 
 export default Index;

@@ -134,6 +134,7 @@ const IntroSection = () => {
               </div>
             </ScrollReveal>
 
+            <ScrollReveal delay={150}>
             <div className="space-y-6">
               {/* Stats grid */}
               <div className="grid grid-cols-2 gap-6">

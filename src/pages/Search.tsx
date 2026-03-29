@@ -1,4 +1,5 @@
 import { lazy, Suspense, useMemo } from "react";
+import AboutBlock from "@/components/AboutBlock";
 import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { realEstateAgentSchema, createFAQSchema } from "@/components/SchemaMarkup";
@@ -173,6 +174,8 @@ const SearchPage = () => {
           </div>
         </div>
       </section>
+
+      <AboutBlock />
 
       <Suspense fallback={<div className="min-h-[100px]" />}>
         <Footer />

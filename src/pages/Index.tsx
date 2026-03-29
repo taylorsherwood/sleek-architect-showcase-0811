@@ -12,6 +12,7 @@ import SchemaMarkup, {
 } from "@/components/SchemaMarkup";
 import ScrollReveal from "@/components/ScrollReveal";
 import { formatPhoneNumber, getPhoneDigits, getTimestamp } from "@/lib/formUtils";
+import taylorBoatImg from "@/assets/taylor-boat.png";
 
 const Footer = lazy(() => import("@/components/Footer"));
 
@@ -231,7 +232,7 @@ const AdvisorSection = () => (
             <div className="relative group">
               <div className="overflow-hidden rounded-[3px]" style={{ boxShadow: "0 16px 40px -12px hsl(var(--foreground) / 0.08)" }}>
                 <img
-                  src="/static-assets/taylor-headshot.jpg"
+                  src={taylorBoatImg}
                   alt="Taylor Sherwood — Austin luxury real estate advisor and founder of Echelon Property Group"
                   title="Taylor Sherwood, Echelon Property Group"
                   className="w-full aspect-[3/4] object-cover object-top transition-transform duration-[600ms] ease-out group-hover:scale-[1.015]"

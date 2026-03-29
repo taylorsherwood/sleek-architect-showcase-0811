@@ -38,6 +38,8 @@ const BestLuxuryNeighborhoods = () => {
       <SchemaMarkup schema={createFAQSchema(faqs)} />
       <Navigation />
 
+      <div className="h-12 md:h-20" aria-hidden="true" />
+
       <section className="pt-32 pb-16">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
@@ -53,8 +55,6 @@ const BestLuxuryNeighborhoods = () => {
           </div>
         </div>
       </section>
-
-      <div className="h-12 md:h-20" aria-hidden="true" />
 
       <article className="pb-24">
         <div className="container mx-auto px-6">

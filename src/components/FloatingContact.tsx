@@ -80,23 +80,23 @@ const FloatingContact = () => {
       {/* Launcher — dark concierge bar */}
       <button
         onClick={() => setOpen(true)}
-        className={`hidden md:flex fixed bottom-8 right-7 z-[60] items-center gap-3 bg-background text-[hsl(var(--gold))] rounded-full pl-1.5 pr-7 py-1.5 shadow-[0_6px_24px_-2px_hsl(var(--foreground)/0.12)] hover:bg-[hsl(var(--gold))] hover:text-background transition-all duration-500 ease-out group cursor-pointer border border-[hsl(var(--gold)/0.3)] hover:border-[hsl(var(--gold))] ${
+        className={`hidden md:flex fixed bottom-8 right-7 z-[60] items-center gap-2.5 bg-background/95 backdrop-blur-sm text-[hsl(var(--gold))] rounded-full pl-1 pr-6 py-1 shadow-[0_4px_20px_-4px_hsl(var(--foreground)/0.1),0_1px_3px_hsl(var(--foreground)/0.06)] hover:bg-[hsl(var(--gold))] hover:text-background transition-all duration-500 ease-out group cursor-pointer border border-[hsl(var(--gold)/0.2)] hover:border-[hsl(var(--gold))] ${
           visible ? "translate-x-0 opacity-100" : "translate-x-[calc(100%+2rem)] opacity-0 pointer-events-none"
         }`}
         aria-label="Connect with Taylor Sherwood">
         
-        <div className="w-12 h-12 rounded-full overflow-hidden ring-2 ring-[hsl(var(--gold))] group-hover:ring-background transition-all duration-500">
+        <div className="w-10 h-10 rounded-full overflow-hidden ring-[1.5px] ring-[hsl(var(--gold)/0.5)] group-hover:ring-background/80 transition-all duration-500">
           <img
             src={HEADSHOT_LAUNCHER}
             alt="Taylor Sherwood, Austin luxury real estate advisor"
             title="Contact Taylor Sherwood — Austin luxury real estate advisor"
             className="w-full h-full object-cover object-[50%_30%] scale-[1.05]"
-                    loading="lazy" decoding="async"
-                    />
+            loading="lazy" decoding="async"
+          />
         </div>
         <div className="flex flex-col items-start">
-          <span className="text-[11.5px] font-extrabold tracking-[0.22em] uppercase text-[hsl(var(--gold))] group-hover:text-background transition-colors duration-500 leading-tight">CONTACT ME</span>
-          <span className="text-[8.5px] tracking-[0.15em] uppercase text-[hsl(var(--gold)/0.7)] group-hover:text-background/80 font-extrabold leading-tight mt-0.5">
+          <span className="text-[10px] font-semibold tracking-[0.2em] uppercase text-[hsl(var(--gold))] group-hover:text-background transition-colors duration-500 leading-tight" style={{ fontFamily: '"Raleway", sans-serif' }}>CONTACT</span>
+          <span className="text-[7.5px] tracking-[0.14em] uppercase text-[hsl(var(--gold)/0.6)] group-hover:text-background/70 font-medium leading-tight mt-0.5" style={{ fontFamily: '"Raleway", sans-serif' }}>
             PRIVATE ADVISOR
           </span>
         </div>

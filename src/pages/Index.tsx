@@ -142,55 +142,54 @@ const Hero = () => {
       }} />
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-6 pt-32 md:pt-40 lg:pt-44 pb-12">
-        <div className="max-w-[620px]" style={{ filter: "drop-shadow(0 0 80px rgba(0,0,0,0.5))" }}>
-          <p className="text-warm-cream/50 mb-5 font-bold" style={{
+      <div className="relative z-10 container mx-auto px-6 pt-36 md:pt-44 lg:pt-48 pb-16">
+        <div className="max-w-[580px]" style={{ filter: "drop-shadow(0 0 80px rgba(0,0,0,0.5))" }}>
+          <p className="text-warm-cream/45 mb-7 font-semibold" style={{
             ...anim("0s"),
-            fontFamily: '"Raleway", sans-serif', fontSize: "0.6rem", letterSpacing: "0.35em", textTransform: "uppercase",
+            fontFamily: '"Raleway", sans-serif', fontSize: "0.58rem", letterSpacing: "0.38em", textTransform: "uppercase",
             textShadow: "0 0 20px rgba(12,15,36,0.7)"
           }}>
             STRATEGIC AUSTIN REAL ESTATE ADVISORY
           </p>
 
-          <h1 className="font-display font-medium text-warm-cream mb-8" style={{
-            ...anim("0.15s"), lineHeight: 1.1, letterSpacing: "-0.025em",
-            textShadow: "0 2px 9px rgba(0,0,0,0.55)"
+          <h1 className="font-display font-medium text-warm-cream mb-10" style={{
+            ...anim("0.15s"), lineHeight: 1.08, letterSpacing: "-0.02em",
+            textShadow: "0 2px 12px rgba(0,0,0,0.5)"
           }}>
-            <span style={{ fontSize: "clamp(2.2rem, 4.8vw, 4.6rem)" }}>Access Austin's Most</span>
-            <br />
-            <span className="italic" style={{ fontSize: "clamp(2.6rem, 5.6vw, 5.4rem)" }}>Exclusive Homes</span>
+            <span className="block" style={{ fontSize: "clamp(2.4rem, 5vw, 4.8rem)" }}>Access Austin's</span>
+            <span className="block italic" style={{ fontSize: "clamp(2.8rem, 5.8vw, 5.6rem)", marginTop: "-0.05em" }}>Most Exclusive Homes</span>
           </h1>
 
-          <p className="text-warm-cream/60 max-w-lg mb-10 leading-relaxed font-medium" style={{
-            ...anim("0.3s"), fontFamily: '"Raleway", sans-serif', fontSize: "1rem",
-            textShadow: "0 2px 9px rgba(0,0,0,0.55)"
+          <p className="text-warm-cream/55 max-w-[440px] mb-12 leading-[1.7] font-normal" style={{
+            ...anim("0.3s"), fontFamily: '"Raleway", sans-serif', fontSize: "0.95rem",
+            textShadow: "0 2px 9px rgba(0,0,0,0.5)"
           }}>
             Private listings, off-market opportunities, and elevated real estate representation.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4" style={anim("0.4s")}>
+          <div className="flex flex-col sm:flex-row gap-5" style={anim("0.4s")}>
             <Link to="/austin-luxury-homes-for-sale"
-              className="hero-cta-btn inline-block bg-warm-cream text-foreground px-12 py-[1.1rem] text-center hover:bg-gold hover:text-white border border-white/15 shadow-[0_8px_24px_rgba(0,0,0,0.35)]"
-              style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.6rem", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 700 }}>
+              className="hero-cta-btn inline-block bg-primary text-primary-foreground px-12 py-[1.1rem] text-center hover:bg-gold hover:text-white border border-white/10 shadow-[0_8px_24px_rgba(0,0,0,0.35)]"
+              style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.58rem", letterSpacing: "0.3em", textTransform: "uppercase", fontWeight: 600 }}>
               EXPLORE LUXURY HOMES
             </Link>
             <Link to="/off-market-real-estate-austin"
-              className="hero-cta-btn inline-block bg-transparent border border-warm-cream/25 text-warm-cream/75 px-10 py-[1.1rem] text-center hover:bg-gold hover:text-white hover:border-gold transition-all duration-300"
-              style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.6rem", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 400 }}>
+              className="hero-cta-btn inline-block bg-transparent border border-warm-cream/20 text-warm-cream/70 px-12 py-[1.1rem] text-center hover:bg-gold hover:text-white hover:border-gold transition-all duration-300"
+              style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.58rem", letterSpacing: "0.3em", textTransform: "uppercase", fontWeight: 400 }}>
               REQUEST OFF-MARKET ACCESS
             </Link>
           </div>
         </div>
 
         {/* Integrated search */}
-        <div ref={searchRef} className="mt-14 max-w-3xl" style={{ ...anim("0.55s"), minHeight: 80 }}>
+        <div ref={searchRef} className="mt-20 max-w-3xl bg-white/[0.06] backdrop-blur-sm border border-white/[0.08] rounded-sm p-5 md:p-6" style={{ ...anim("0.55s"), minHeight: 80 }}>
           {createElement("realscout-advanced-search", { "agent-encoded-id": "QWdlbnQtMjg5NDU2" })}
         </div>
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-5 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 z-10">
-        <span className="text-warm-cream font-light" style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.6rem", letterSpacing: "0.35em", textTransform: "uppercase" }}>
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 z-10">
+        <span className="text-warm-cream/60 font-light" style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.55rem", letterSpacing: "0.35em", textTransform: "uppercase" }}>
           Discover Austin
         </span>
         <div className="scroll-indicator-line" />

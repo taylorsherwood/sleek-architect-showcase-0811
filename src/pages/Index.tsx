@@ -366,7 +366,7 @@ const FeaturedProperties = () => (
                 <Wrapper key={i} {...wrapperProps} className="group block cursor-pointer">
                   <div className="relative overflow-hidden aspect-[4/3] transition-shadow duration-[500ms] group-hover:shadow-[0_12px_30px_-8px_hsl(var(--foreground)/0.1)]">
                     <img src={p.image} alt={p.address}
-                      className="w-full h-full object-cover transition-transform duration-[600ms] ease-out group-hover:scale-[1.02]"
+                      className="w-full h-full object-cover transition-transform duration-[700ms] ease-out group-hover:scale-[1.06]"
                       loading="lazy" decoding="async" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent" />
 
@@ -384,14 +384,6 @@ const FeaturedProperties = () => (
                         <span className="text-[8px] tracking-[0.22em] uppercase text-muted-foreground/70 font-normal">{p.badge}</span>
                       </div>
                     )}
-
-                    {/* Hover overlay */}
-                    <div className="absolute inset-0 flex items-center justify-center bg-black/0 group-hover:bg-black/30 transition-all duration-[500ms]">
-                      <span className="text-white border border-white/30 px-10 py-3.5 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-[500ms] font-normal"
-                        style={{ fontSize: "0.58rem", letterSpacing: "0.22em", textTransform: "uppercase", fontFamily: '"Raleway", sans-serif' }}>
-                        View Property
-                      </span>
-                    </div>
                   </div>
 
                   <div className="mt-5 px-1">

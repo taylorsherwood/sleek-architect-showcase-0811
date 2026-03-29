@@ -246,7 +246,13 @@ const Hero = () => {
             most sought-after neighborhoods.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 reveal-delayed-2">
+          <div className="flex flex-col sm:flex-row gap-4 transition-all duration-1000 will-change-[opacity,transform]"
+            style={{
+              opacity: heroVisible ? 1 : 0,
+              transform: heroVisible ? "translateY(0)" : "translateY(10px)",
+              transitionTimingFunction: "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+              transitionDelay: "0.45s",
+            }}>
             <Link
               to="/invest"
               className="hero-cta-btn inline-block bg-warm-cream text-foreground px-12 py-[1.1rem] text-center hover:bg-primary hover:text-primary-foreground shadow-[0_8px_24px_rgba(0,0,0,0.35)] border border-white/15"

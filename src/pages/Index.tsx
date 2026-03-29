@@ -356,7 +356,7 @@ const stats = [
   { value: 100, suffix: "M+", prefix: "$", label: "Career Sales Volume" },
   { value: 200, suffix: "+", prefix: "", label: "Transactions Closed" },
   { value: 15, suffix: "+", prefix: "", label: "Years of Experience" },
-  { value: 50, suffix: "M+", prefix: "$", label: "Off-Market Access" },
+  { value: 250, suffix: "M+", prefix: "$", label: "Off-Market Access" },
 ];
 
 const StatsStrip = () => (

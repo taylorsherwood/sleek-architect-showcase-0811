@@ -109,7 +109,7 @@ const Testimonials = () => {
                 onMouseLeave={(e) => {
                   e.currentTarget.style.transform = "translateY(0)";
                   e.currentTarget.style.boxShadow =
-                    "0 2px 12px hsl(40 10% 50% / 0.04)";
+                    "0 10px 30px rgba(0,0,0,0.05)";
                 }}
               >
                 {/* Quote icon */}

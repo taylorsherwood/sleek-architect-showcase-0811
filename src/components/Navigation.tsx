@@ -86,7 +86,7 @@ const Navigation = () => {
         </Link>
 
         {/* Desktop nav links */}
-        <div className="hidden lg:flex items-center space-x-6 xl:space-x-10 ml-8 xl:ml-12">
+        <div className="hidden lg:flex items-center space-x-7 xl:space-x-11 ml-8 xl:ml-12">
           {links.map((link) =>
             link.children ? (
               <div

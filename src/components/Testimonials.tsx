@@ -92,27 +92,28 @@ const Testimonials = () => {
               <div
                 key={i}
                 ref={(el) => { cardsRef.current[i] = el; }}
-                className={`group relative bg-card rounded-lg px-6 pt-5 pb-6 md:px-7 md:pt-6 md:pb-7 flex flex-col justify-between overflow-hidden border border-border/30${i === testimonials.length - 1 ? " md:col-span-2 md:max-w-[calc(50%-0.75rem)] md:mx-auto" : ""}`}
+                className={`group relative rounded-lg px-6 pt-5 pb-6 md:px-8 md:pt-7 md:pb-8 flex flex-col justify-between overflow-hidden${i === testimonials.length - 1 ? " md:col-span-2 md:max-w-[calc(50%-0.75rem)] md:mx-auto" : ""}`}
                 style={{
                   opacity: 0,
                   transform: "translateY(40px)",
-                  transition: `opacity 500ms ease ${i * 120}ms, transform 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94) ${i * 120}ms, box-shadow 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94)`,
-                  boxShadow:
-                    "0 2px 16px hsl(40 10% 50% / 0.05), 0 4px 20px hsl(40 10% 50% / 0.03)",
+                  transition: `opacity 500ms ease ${i * 120}ms, transform 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94) ${i * 120}ms, box-shadow 500ms ease`,
+                  background: "hsl(40 33% 98%)",
+                  border: "1px solid hsl(35 20% 86% / 0.4)",
+                  boxShadow: "0 2px 12px hsl(40 10% 50% / 0.04)",
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = "translateY(-6px) scale(1.06)";
+                  e.currentTarget.style.transform = "translateY(-2px)";
                   e.currentTarget.style.boxShadow =
-                    "0 12px 40px hsl(40 10% 50% / 0.12), 0 4px 16px hsl(40 10% 50% / 0.06)";
+                    "0 6px 24px hsl(40 10% 50% / 0.08)";
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = "translateY(0) scale(1)";
+                  e.currentTarget.style.transform = "translateY(0)";
                   e.currentTarget.style.boxShadow =
-                    "0 2px 16px hsl(40 10% 50% / 0.05), 0 4px 20px hsl(40 10% 50% / 0.03)";
+                    "0 2px 12px hsl(40 10% 50% / 0.04)";
                 }}
               >
                 {/* Quote icon */}
-                <div className="mb-3.5">
+                <div className="mb-4">
                   <div
                     className="w-7 h-7 rounded-full flex items-center justify-center"
                     style={{
@@ -125,12 +126,12 @@ const Testimonials = () => {
                 </div>
 
                 {/* Quote text */}
-                <p className="text-foreground/[0.83] text-[0.9rem] md:text-[0.95rem] leading-[1.75] font-light italic mb-5 flex-1">
+                <p className="text-foreground/[0.88] text-[0.9rem] md:text-[0.95rem] leading-[1.8] font-light italic mb-6 flex-1">
                   "{t.quote}"
                 </p>
 
                 {/* Divider */}
-                <div className="h-px mb-3.5" style={{ background: "linear-gradient(to right, transparent, hsl(38 20% 72% / 0.45), transparent)" }} />
+                <div className="h-px mb-4" style={{ background: "linear-gradient(to right, transparent, hsl(35 20% 72% / 0.35), transparent)" }} />
 
                 {/* Attribution */}
                 <div>
@@ -139,7 +140,7 @@ const Testimonials = () => {
                   </p>
                   <p className="text-minimal text-gold/80 mt-1">{t.type}</p>
                   {t.context && (
-                    <p className="text-xs text-muted-foreground/70 mt-0.5 font-light">
+                    <p className="text-xs text-muted-foreground/80 mt-0.5 font-light">
                       {t.context}
                     </p>
                   )}

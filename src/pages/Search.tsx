@@ -175,6 +175,8 @@ const SearchPage = () => {
         </div>
       </section>
 
+      <AboutBlock />
+
       <Suspense fallback={<div className="min-h-[100px]" />}>
         <Footer />
       </Suspense>

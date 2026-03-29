@@ -147,28 +147,28 @@ const About = () => {
 
             <div className="space-y-8">
               <div className="border-l-2 border-gold pl-8">
-                <h3 className="text-xl font-display font-medium mb-3">Premium Marketing</h3>
+                <h3 className="text-xl font-display font-medium mb-3"><Link to="/sell" className="hover:text-[hsl(var(--gold))] transition-colors duration-500">Premium Marketing</Link></h3>
                 <p className="text-muted-foreground">
                   Professional photography, cinematic video, custom property websites, and targeted 
                   social campaigns designed to reach qualified buyers worldwide.
                 </p>
               </div>
               <div className="border-l-2 border-gold pl-8">
-                <h3 className="text-xl font-display font-medium mb-3">Strategic Pricing</h3>
+                <h3 className="text-xl font-display font-medium mb-3"><Link to="/off-market-real-estate-austin" className="hover:text-[hsl(var(--gold))] transition-colors duration-500">Strategic Pricing</Link></h3>
                 <p className="text-muted-foreground">
                   Data-driven market analysis combined with decades of experience to position your 
                   property for maximum return.
                 </p>
               </div>
               <div className="border-l-2 border-gold pl-8">
-                <h3 className="text-xl font-display font-medium mb-3">White-Glove Service</h3>
+                <h3 className="text-xl font-display font-medium mb-3"><Link to="/austin-luxury-homes-for-sale" className="hover:text-[hsl(var(--gold))] transition-colors duration-500">White-Glove Service</Link></h3>
                 <p className="text-muted-foreground">
                   From staging consultation to closing day, every detail is managed with precision 
                   and personal attention.
                 </p>
               </div>
               <div className="border-l-2 border-gold pl-8">
-                <h3 className="text-xl font-display font-medium mb-3">Local Expertise</h3>
+                <h3 className="text-xl font-display font-medium mb-3"><Link to="/communities" className="hover:text-[hsl(var(--gold))] transition-colors duration-500">Local Expertise</Link></h3>
                 <p className="text-muted-foreground">
                   Deep roots in Austin's most prestigious neighborhoods. We don't just sell homes 
                   here—we live here.

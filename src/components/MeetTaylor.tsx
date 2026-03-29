@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Instagram } from "lucide-react";
 import echelonWatermark from "@/assets/echelon-watermark.png";
+import ScrollReveal from "@/components/ScrollReveal";
 
 const MeetTaylor = () => {
   return (

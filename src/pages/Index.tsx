@@ -736,6 +736,7 @@ const Index = () => (
 
     <Navigation />
     <Hero />
+    <SearchSection />
     <TrustStrip />
     <AdvisorSection />
     <FeaturedProperties />

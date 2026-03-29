@@ -444,8 +444,8 @@ const FeaturedProperties = () => (
                       loading="lazy" decoding="async" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent" />
 
-                    {/* View Property text on hover */}
-                    <div className="absolute inset-0 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
+                    {/* Hover overlay + View Property text */}
+                    <div className="absolute inset-0 z-10 bg-black/0 group-hover:bg-black/25 transition-all duration-500 flex items-center justify-center opacity-0 group-hover:opacity-100 pointer-events-none">
                       <span className="text-white font-medium"
                         style={{ fontSize: "0.65rem", letterSpacing: "0.15em", textTransform: "uppercase", textShadow: "0 1px 6px rgba(0,0,0,0.4)" }}>
                         View Property

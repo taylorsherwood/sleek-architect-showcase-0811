@@ -81,9 +81,8 @@ const RealScoutSearch = () => {
               </p>
             </noscript>
           </div>
-        </div>
-      </section>
-    </ScrollReveal>
+      </div>
+    </section>
   );
 };
 

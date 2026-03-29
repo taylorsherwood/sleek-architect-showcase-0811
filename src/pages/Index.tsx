@@ -287,14 +287,20 @@ const AdvisorSection = () => (
               </h2>
             </ScrollReveal>
 
-            <ScrollReveal delay={150}>
+            <ScrollReveal delay={120}>
+              <p className="text-foreground/85 text-lg md:text-xl font-medium leading-[1.4] mb-8 mt-8">
+                We don't sell homes. We deliver access, strategy, and discretion.
+              </p>
+            </ScrollReveal>
+
+            <ScrollReveal delay={180}>
               <div className="space-y-5 mb-10">
                 <p className="text-foreground/65 text-[15px] leading-[1.85] font-light">
-                  You don't need more listings — you need access, strategy, and execution.
+                  You don't need more listings — you need a smarter approach.
                 </p>
                 <p className="text-foreground/65 text-[15px] leading-[1.85] font-light">
-                  I work with a select group of clients to acquire and sell high-value
-                  properties across Austin, including private and off-market opportunities
+                  I work with a select group of clients to acquire and position high-value
+                  properties across Austin — including private and off-market opportunities
                   not publicly available.
                 </p>
                 <p className="text-foreground/65 text-[15px] leading-[1.85] font-light">

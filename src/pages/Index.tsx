@@ -100,7 +100,7 @@ const Hero = () => {
   });
 
   return (
-    <section ref={sectionRef} className="relative min-h-screen flex flex-col justify-center overflow-hidden bg-primary">
+    <section ref={sectionRef} id="hero-section" className="relative min-h-screen flex flex-col justify-center overflow-hidden bg-primary">
       {/* Video */}
       <div aria-hidden="true" className="absolute inset-0 pointer-events-none select-none" style={{ zIndex: 0 }}>
         <video ref={videoRef} autoPlay muted loop playsInline preload="none" poster="/images/hero-poster.jpg"

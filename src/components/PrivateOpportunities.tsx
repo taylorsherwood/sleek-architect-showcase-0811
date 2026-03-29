@@ -159,7 +159,7 @@ const PrivateOpportunities = ({ variant = "light" }: PrivateOpportunitiesProps) 
 
               <Link
                 to="/off-market-real-estate-austin"
-                className={`inline-block mt-8 text-xs tracking-[0.15em] uppercase transition-colors duration-300 ${
+                className={`inline-block mt-8 text-xs tracking-[0.15em] uppercase transition-colors duration-300 relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-px after:bg-[hsl(var(--gold))] after:transition-all after:duration-500 hover:after:w-full ${
                   isDark
                     ? "text-white/40 hover:text-[hsl(var(--gold))]"
                     : "text-muted-foreground hover:text-[hsl(var(--gold))]"

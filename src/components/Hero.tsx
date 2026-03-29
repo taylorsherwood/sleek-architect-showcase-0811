@@ -43,6 +43,7 @@ const Hero = () => {
       const p = video.play();
       if (p !== undefined) {
         p.then(() => {
+          video.playbackRate = 0.85;
           setVideoReady(true);
           setShowFallback(false);
         }).catch(() => {
@@ -53,6 +54,7 @@ const Hero = () => {
             if (retry !== undefined) {
               retry.
               then(() => {
+                video.playbackRate = 0.85;
                 setVideoReady(true);
                 setShowFallback(false);
               }).

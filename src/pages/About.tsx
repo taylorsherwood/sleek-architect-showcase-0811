@@ -154,7 +154,7 @@ const About = () => {
                 </p>
               </div>
               <div className="border-l-2 border-gold pl-8">
-                <h3 className="text-xl font-display font-medium mb-3">Strategic Pricing</h3>
+                <h3 className="text-xl font-display font-medium mb-3"><Link to="/off-market-real-estate-austin" className="hover:text-[hsl(var(--gold))] transition-colors duration-500">Strategic Pricing</Link></h3>
                 <p className="text-muted-foreground">
                   Data-driven market analysis combined with decades of experience to position your 
                   property for maximum return.

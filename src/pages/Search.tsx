@@ -1,9 +1,27 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useMemo } from "react";
 import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { realEstateAgentSchema, createFAQSchema } from "@/components/SchemaMarkup";
 import ScrollReveal from "@/components/ScrollReveal";
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
+
+const LOCATION_LABELS: Record<string, string> = {
+  "westlake-hills": "Westlake Hills",
+  "barton-creek": "Barton Creek",
+  "lake-austin": "Lake Austin",
+  "tarrytown": "Tarrytown",
+  "rollingwood": "Rollingwood",
+  "spanish-oaks": "Spanish Oaks",
+  "downtown-austin": "Downtown Austin",
+};
+
+const PRICE_LABELS: Record<string, string> = {
+  "500k-1m": "$500K – $1M",
+  "1m-2m": "$1M – $2M",
+  "2m-5m": "$2M – $5M",
+  "5m-10m": "$5M – $10M",
+  "10m+": "$10M+",
+};
 
 const searchFaqs = [
   { question: "How do I search for homes in Austin Texas?", answer: "Use our integrated listing search above to browse all available homes in Austin. Filter by price, neighborhood, property type, and features. For off-market opportunities not shown on the MLS, contact Echelon Property Group directly." },
@@ -13,9 +31,23 @@ const searchFaqs = [
 ];
 
 const Footer = lazy(() => import("@/components/Footer"));
+const RealScoutSearch = lazy(() => import("@/components/RealScoutSearch"));
 const RealScoutListings = lazy(() => import("@/components/RealScoutListings"));
 
 const SearchPage = () => {
+  const [searchParams] = useSearchParams();
+  const location = searchParams.get("location") || "";
+  const price = searchParams.get("price") || "";
+  const beds = searchParams.get("beds") || "";
+
+  const filterSummary = useMemo(() => {
+    const parts: string[] = [];
+    if (location && LOCATION_LABELS[location]) parts.push(LOCATION_LABELS[location]);
+    if (price && PRICE_LABELS[price]) parts.push(PRICE_LABELS[price]);
+    if (beds) parts.push(`${beds}+ Beds`);
+    return parts.length > 0 ? parts.join(" · ") : null;
+  }, [location, price, beds]);
+
   return (
     <div className="min-h-screen">
       <SEOHead
@@ -49,6 +81,29 @@ const SearchPage = () => {
               Explore every available home across Austin — from luxury estates
               to condos, new construction, and investment opportunities.
             </p>
+            {filterSummary && (
+              <div className="mt-6 inline-flex items-center gap-2 px-5 py-2 rounded-full border border-warm-cream/20 text-warm-cream/80 text-sm font-light">
+                <span>Filtering:</span>
+                <span className="text-gold font-medium">{filterSummary}</span>
+              </div>
+            )}
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* RealScout Search Widget */}
+      <section className="py-10 md:py-14 bg-background">
+        <div className="container mx-auto px-6">
+          <ScrollReveal>
+            <Suspense
+              fallback={
+                <div className="min-h-[120px] flex items-center justify-center text-muted-foreground">
+                  Loading search…
+                </div>
+              }
+            >
+              <RealScoutSearch />
+            </Suspense>
           </ScrollReveal>
         </div>
       </section>
@@ -64,7 +119,11 @@ const SearchPage = () => {
                 </div>
               }
             >
-              <RealScoutListings />
+              <RealScoutListings
+                listingStatus="Active,Pending"
+                heading="AVAILABLE HOMES"
+                subheading="Current Listings"
+              />
             </Suspense>
           </ScrollReveal>
         </div>

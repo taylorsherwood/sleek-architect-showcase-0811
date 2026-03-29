@@ -175,7 +175,6 @@ const SearchSection = () => {
   const [price, setPrice] = useState("");
   const [beds, setBeds] = useState("");
   const [searching, setSearching] = useState(false);
-  const navigate = (window as any).__reactRouterNavigate;
 
   const handleSearch = () => {
     setSearching(true);
@@ -186,7 +185,7 @@ const SearchSection = () => {
     const query = params.toString();
     setTimeout(() => {
       window.location.href = `/search${query ? `?${query}` : ""}`;
-    }, 300);
+    }, 250);
   };
 
   const selectClass = "w-full bg-white border border-border/50 rounded-sm px-4 py-3.5 text-sm text-foreground/75 font-light appearance-none cursor-pointer hover:border-gold/40 transition-colors duration-300 focus:outline-none focus:border-gold/60";
@@ -255,7 +254,7 @@ const SearchSection = () => {
                 disabled={searching}
                 className="shrink-0 w-full md:w-auto bg-primary text-primary-foreground px-12 py-3.5 text-center hover:bg-gold transition-all duration-300 disabled:opacity-60"
                 style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.58rem", letterSpacing: "0.25em", textTransform: "uppercase", fontWeight: 600 }}>
-                {searching ? "SEARCHING…" : "SEARCH"}
+                {searching ? "SEARCHING…" : "EXPLORE HOMES"}
               </button>
             </div>
           </div>

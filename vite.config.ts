@@ -24,7 +24,7 @@ const staticRoutes = [
   "/land",
   "/connect",
   "/past-transactions",
-  "/moving-to-austin",
+  "/moving-to-austin-texas",
   "/best-luxury-neighborhoods-austin",
   "/best-neighborhoods-in-austin-texas",
   "/austin-luxury-market-report",

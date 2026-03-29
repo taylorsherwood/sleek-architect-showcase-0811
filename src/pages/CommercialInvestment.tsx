@@ -56,6 +56,11 @@ const CommercialInvestment = () => {
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createFAQSchema(faqs)} />
+      <SchemaMarkup schema={createBreadcrumbSchema([
+        { name: "Home", url: "https://www.echelonpropertygroup.com/" },
+        { name: "Listings", url: "https://www.echelonpropertygroup.com/listings" },
+        { name: "Commercial Investment", url: "https://www.echelonpropertygroup.com/listings/commercial-investment-austin" }
+      ])} />
       <Navigation />
 
       {/* Hero */}

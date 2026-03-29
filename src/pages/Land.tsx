@@ -99,6 +99,10 @@ const LandPage = () => {
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createFAQSchema(faqs.map(f => ({ question: f.q, answer: f.a })))} />
+      <SchemaMarkup schema={createBreadcrumbSchema([
+        { name: "Home", url: "https://www.echelonpropertygroup.com/" },
+        { name: "Land", url: "https://www.echelonpropertygroup.com/land" }
+      ])} />
       <Navigation />
 
       {/* ── Hero ── */}

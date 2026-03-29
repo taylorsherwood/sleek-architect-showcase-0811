@@ -1,5 +1,4 @@
 import { createElement, useEffect, useRef } from "react";
-import ScrollReveal from "@/components/ScrollReveal";
 
 const GOLD_HSL = "hsl(41, 36%, 57%)";
 
@@ -50,9 +49,8 @@ const RealScoutSearch = () => {
   }, []);
 
   return (
-    <ScrollReveal delay={300} distance={24} duration={1100}>
-      <section id="realscout-search" className="bg-background pt-16 pb-12 md:pt-20 md:pb-16">
-        <div className="container mx-auto px-6">
+    <section id="realscout-search" className="bg-background pt-16 pb-12 md:pt-20 md:pb-16">
+      <div className="container mx-auto px-6">
           <div className="mx-auto max-w-3xl">
             <header className="mb-12 md:mb-16 text-center">
               <p
@@ -82,9 +80,8 @@ const RealScoutSearch = () => {
               </p>
             </noscript>
           </div>
-        </div>
-      </section>
-    </ScrollReveal>
+      </div>
+    </section>
   );
 };
 

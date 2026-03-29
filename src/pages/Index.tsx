@@ -234,7 +234,7 @@ const TrustStrip = () => (
    ───────────────────────────────────────────── */
 
 const AdvisorSection = () => (
-  <section className="py-24 md:py-32 bg-background">
+  <section className="pt-24 md:pt-32 pb-0 bg-background">
     <div className="container mx-auto px-6">
       <div className="max-w-[1320px] mx-auto">
         <div className="grid md:grid-cols-2 gap-14 lg:gap-20 items-center">
@@ -359,24 +359,26 @@ const stats = [
 ];
 
 const StatsStrip = () => (
-  <section className="bg-background border-y border-border/15">
+  <section className="bg-background">
     <div className="container mx-auto px-6">
-      <div className="max-w-[1320px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 py-12 md:py-14">
-        {stats.map((stat, i) => {
-          const { count, ref } = useCountUp(stat.value);
-          return (
-            <div key={i} ref={ref} className="text-center">
-              <p className="font-display text-3xl md:text-[2.5rem] font-light text-foreground tracking-[-0.02em]">
-                {stat.prefix}{count}{stat.suffix}
-              </p>
-              <p className="text-muted-foreground/50 mt-2 font-normal" style={{
-                fontFamily: '"Raleway", sans-serif', fontSize: "0.6rem", letterSpacing: "0.2em", textTransform: "uppercase"
-              }}>
-                {stat.label}
-              </p>
-            </div>
-          );
-        })}
+      <div className="max-w-[1320px] mx-auto pt-16 pb-20 md:pt-20 md:pb-24 border-t border-border/15">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          {stats.map((stat, i) => {
+            const { count, ref } = useCountUp(stat.value);
+            return (
+              <div key={i} ref={ref} className="text-center">
+                <p className="font-display text-3xl md:text-[2.5rem] font-light text-foreground tracking-[-0.02em]">
+                  {stat.prefix}{count}{stat.suffix}
+                </p>
+                <p className="text-muted-foreground/60 mt-2 font-normal" style={{
+                  fontFamily: '"Raleway", sans-serif', fontSize: "0.6rem", letterSpacing: "0.2em", textTransform: "uppercase"
+                }}>
+                  {stat.label}
+                </p>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   </section>

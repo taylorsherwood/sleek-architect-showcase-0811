@@ -628,32 +628,36 @@ const LeadCapture = () => {
   };
 
   return (
-    <section className="py-20 md:py-28 bg-background">
+    <section className="py-24 md:py-32 bg-background">
       <div className="container mx-auto px-6">
-        <div className="max-w-[640px] mx-auto text-center">
+        <div className="max-w-[580px] mx-auto text-center">
           <ScrollReveal>
-            <p className="text-minimal text-gold mb-5 font-extrabold">EXCLUSIVE ACCESS</p>
-            <h2 className="font-display text-3xl md:text-[2.8rem] font-light text-architectural mb-5 leading-[1.12]">
+            <p className="text-minimal text-gold mb-5 font-extrabold tracking-[0.22em]">EXCLUSIVE ACCESS</p>
+          </ScrollReveal>
+          <ScrollReveal delay={80}>
+            <h2 className="font-display text-3xl md:text-[2.5rem] font-light text-foreground/90 mb-5 leading-[1.1] tracking-[-0.01em]">
               Get Access to <span className="italic">Off-Market</span> Opportunities
             </h2>
-            <p className="text-muted-foreground text-[15px] font-light leading-relaxed mb-10 max-w-md mx-auto">
+          </ScrollReveal>
+          <ScrollReveal delay={150}>
+            <p className="text-muted-foreground/55 text-[15px] font-light leading-[1.8] mb-12 max-w-[420px] mx-auto">
               Be the first to see private listings and exclusive opportunities before they hit the market.
             </p>
 
             {submitted ? (
               <div className="py-8">
-                <p className="text-gold font-display text-xl">Thank you for requesting access.</p>
-                <p className="text-muted-foreground text-sm mt-2 font-light">We'll be in touch shortly with exclusive opportunities.</p>
+                <p className="text-gold font-display text-xl font-light">Thank you for requesting access.</p>
+                <p className="text-muted-foreground/50 text-sm mt-3 font-light">We'll be in touch shortly with exclusive opportunities.</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
                 <input type="text" placeholder="Your Name" value={name} onChange={(e) => setName(e.target.value)}
-                  className="flex-1 bg-card border border-border/50 px-5 py-3.5 text-sm text-foreground placeholder:text-muted-foreground/40 focus:outline-none focus:border-gold/50 transition-colors" />
+                  className="flex-1 bg-card border border-border/30 px-5 py-3.5 text-sm text-foreground/80 placeholder:text-muted-foreground/35 focus:outline-none focus:border-gold/40 transition-colors duration-[400ms]" />
                 <input type="email" placeholder="Email Address" required value={email} onChange={(e) => setEmail(e.target.value)}
-                  className="flex-1 bg-card border border-border/50 px-5 py-3.5 text-sm text-foreground placeholder:text-muted-foreground/40 focus:outline-none focus:border-gold/50 transition-colors" />
+                  className="flex-1 bg-card border border-border/30 px-5 py-3.5 text-sm text-foreground/80 placeholder:text-muted-foreground/35 focus:outline-none focus:border-gold/40 transition-colors duration-[400ms]" />
                 <button type="submit" disabled={loading}
-                  className="border border-foreground/20 text-foreground px-8 py-3.5 hover:bg-gold hover:text-white hover:border-gold transition-all duration-300 disabled:opacity-50"
-                  style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.6rem", letterSpacing: "0.25em", textTransform: "uppercase", fontWeight: 600 }}>
+                  className="border border-foreground/15 text-foreground px-8 py-3.5 hover:bg-gold hover:text-white hover:border-gold transition-all duration-[400ms] disabled:opacity-50"
+                  style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.58rem", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 600 }}>
                   {loading ? "SENDING..." : "REQUEST ACCESS"}
                 </button>
               </form>

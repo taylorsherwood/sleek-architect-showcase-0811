@@ -178,7 +178,7 @@ const AustinLuxuryHomes = () => {
                 <div className="border-l-2 border-gold pl-6">
                   <h3 className="text-lg font-medium text-foreground mb-2">Relocation Expertise</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    For buyers <Link to="/moving-to-austin" className="text-foreground underline hover:text-muted-foreground">moving to Austin</Link> from out of state, we provide comprehensive relocation guidance including neighborhood comparisons, school information, tax planning considerations, and lifestyle orientation.
+                    For buyers <Link to="/moving-to-austin-texas" className="text-foreground underline hover:text-muted-foreground">moving to Austin</Link> from out of state, we provide comprehensive relocation guidance including neighborhood comparisons, school information, tax planning considerations, and lifestyle orientation.
                   </p>
                 </div>
               </div>

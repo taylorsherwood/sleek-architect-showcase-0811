@@ -173,7 +173,6 @@ const IntroSection = () => {
               </div>
 
             </div>
-            </div>
             </ScrollReveal>
         </div>
       </div>

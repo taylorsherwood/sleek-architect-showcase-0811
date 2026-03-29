@@ -668,17 +668,17 @@ const InsightsSection = () => (
         </ScrollReveal>
 
         <ScrollReveal delay={120} stagger={70}>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {insights.map((article) => (
-              <Link key={article.to} to={article.to} className="group block bg-card border border-border/20 rounded-[2px] overflow-hidden
-                transition-all duration-[500ms] hover:-translate-y-[2px] hover:shadow-[0_8px_24px_-8px_hsl(var(--foreground)/0.06)]">
-                <div className="p-6 flex flex-col h-full">
-                  <p className="text-gold/80 text-[0.5rem] tracking-[0.22em] uppercase font-semibold mb-3">{article.category}</p>
-                  <h3 className="font-display text-[15px] font-medium text-foreground/80 mb-3 leading-[1.35] group-hover:text-gold transition-colors duration-[400ms] tracking-[0.01em]">
+              <Link key={article.to} to={article.to} className="group block bg-card border border-border/30 rounded-[3px] overflow-hidden
+                shadow-[0_4px_20px_rgba(0,0,0,0.04)] transition-all duration-[500ms] hover:-translate-y-[3px] hover:shadow-[0_12px_32px_rgba(0,0,0,0.07)]">
+                <div className="p-7 flex flex-col h-full">
+                  <p className="text-gold text-[0.52rem] tracking-[0.22em] uppercase font-semibold mb-2.5">{article.category}</p>
+                  <h3 className="font-display text-[17px] font-medium text-foreground/90 mb-3 leading-[1.35] group-hover:text-gold transition-colors duration-[400ms] tracking-[0.01em]">
                     {article.title}
                   </h3>
-                  <p className="text-muted-foreground/50 text-[13px] font-light leading-[1.75] flex-1">{article.excerpt}</p>
-                  <span className="mt-5 text-gold/50 text-[0.5rem] tracking-[0.22em] uppercase font-semibold group-hover:text-gold transition-colors duration-[400ms]">
+                  <p className="text-muted-foreground/70 text-[13.5px] font-light leading-[1.85] flex-1">{article.excerpt}</p>
+                  <span className="mt-5 text-gold/60 text-[0.52rem] tracking-[0.22em] uppercase font-semibold group-hover:text-gold transition-colors duration-[400ms]">
                     READ MORE →
                   </span>
                 </div>

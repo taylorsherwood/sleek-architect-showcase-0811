@@ -64,13 +64,13 @@ const breadcrumbSchema = createBreadcrumbSchema([
 
 const tocItems = [
   { id: "key-takeaways", label: "Key Takeaways" },
-  { id: "what-is-off-market", label: "What Is an Off-Market Deal?" },
+  { id: "what-is-off-market", label: "What Are Off-Market Deals?" },
   { id: "why-off-market-matters", label: "Why Off-Market Deals Matter" },
   { id: "why-best-deals-stay-private", label: "Why the Best Deals Stay Private" },
-  { id: "how-investors-find-deals", label: "How Investors Find Deals" },
-  { id: "where-buyers-go-wrong", label: "Where Buyers Go Wrong" },
+  { id: "how-investors-find-deals", label: "How Austin Investors Find Deals" },
+  { id: "where-buyers-go-wrong", label: "Common Mistakes" },
   { id: "who-benefits-most", label: "Who Benefits Most" },
-  { id: "how-echelon-helps", label: "How Echelon Helps" },
+  { id: "how-echelon-helps", label: "Working With an Austin Advisor" },
   { id: "faq", label: "FAQ" },
 ];
 

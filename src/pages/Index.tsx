@@ -284,8 +284,8 @@ const AdvisorSection = () => (
                 </p>
                 <p className="text-foreground/70 text-[15px] leading-[1.8] font-light">
                   I work with a select group of clients to acquire and position high-value
-                  properties across Austin — including private and off-market opportunities
-                  not publicly available.
+                  properties across Austin — including private opportunities
+                  not available through traditional channels.
                 </p>
                 <p className="text-foreground/70 text-[15px] leading-[1.8] font-light">
                   Every decision is guided by market intelligence, negotiation leverage,

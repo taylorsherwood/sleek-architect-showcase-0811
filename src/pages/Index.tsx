@@ -192,13 +192,13 @@ const SearchSection = () => {
           <p className="text-gold/70 font-semibold mb-3" style={{
             fontFamily: '"Raleway", sans-serif', fontSize: "0.55rem", letterSpacing: "0.3em", textTransform: "uppercase"
           }}>
-            Explore the Market
+            EXPLORE THE MARKET
           </p>
           <h2 className="font-display text-2xl md:text-[2rem] font-normal text-foreground leading-[1.1] tracking-[-0.01em] mb-3">
             Find Your Next <span className="italic text-gold">Chapter</span>
           </h2>
           <p className="text-muted-foreground/55 text-[13.5px] font-light leading-relaxed mb-8 max-w-md mx-auto">
-            Search luxury homes, land, and investment opportunities across Austin's most coveted neighborhoods.
+            
           </p>
           <div ref={containerRef} className="flex justify-center relative" style={{ minHeight: 60, zIndex: 10 }} />
         </div>

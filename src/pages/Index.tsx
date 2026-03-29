@@ -317,8 +317,8 @@ const AdvisorSection = () => (
    SECTION 3B — STATS STRIP
    ───────────────────────────────────────────── */
 
-const useCountUp = (target: number, duration = 2600) => {
-  const [count, setCount] = useState(0);
+const useCountUp = (target: number, duration = 2600, from = 0) => {
+  const [count, setCount] = useState(from);
   const ref = useRef<HTMLDivElement>(null);
   const animId = useRef(0);
 
@@ -328,26 +328,26 @@ const useCountUp = (target: number, duration = 2600) => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setCount(0);
-          const start = performance.now();
+          setCount(from);
+          const startTime = performance.now();
           const id = ++animId.current;
           const step = (now: number) => {
             if (id !== animId.current) return;
-            const progress = Math.min((now - start) / duration, 1);
+            const progress = Math.min((now - startTime) / duration, 1);
             const eased = 1 - Math.pow(1 - progress, 3);
-            setCount(Math.round(eased * target));
+            setCount(Math.round(from + eased * (target - from)));
             if (progress < 1) requestAnimationFrame(step);
           };
           requestAnimationFrame(step);
         } else {
-          setCount(0);
+          setCount(from);
         }
       },
       { threshold: 0.3 }
     );
     observer.observe(el);
     return () => observer.disconnect();
-  }, [target, duration]);
+  }, [target, duration, from]);
 
   return { count, ref };
 };
@@ -356,7 +356,7 @@ const stats = [
   { value: 100, suffix: "M+", prefix: "$", label: "Career Sales Volume" },
   { value: 200, suffix: "+", prefix: "", label: "Transactions Closed" },
   { value: 12, suffix: "+", prefix: "", label: "Years of Experience" },
-  { value: 250, suffix: "M+", prefix: "$", label: "Off-Market Access" },
+  { value: 250, suffix: "M+", prefix: "$", label: "Off-Market Access", from: 100 },
 ];
 
 const StatsStrip = () => (
@@ -365,7 +365,7 @@ const StatsStrip = () => (
       <div className="max-w-[1100px] mx-auto pt-12 pb-14 md:pt-14 md:pb-16 border-t border-border/15">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {stats.map((stat, i) => {
-            const { count, ref } = useCountUp(stat.value);
+            const { count, ref } = useCountUp(stat.value, 2600, (stat as any).from || 0);
             return (
               <div key={i} ref={ref} className="text-center relative">
                 <p className="font-display text-[2rem] md:text-[2.75rem] font-light text-foreground tracking-[-0.02em]">

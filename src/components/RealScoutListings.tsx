@@ -38,11 +38,10 @@ const RealScoutListings = ({
     // Create the web component client-side only
     const el = document.createElement("realscout-your-listings");
     el.setAttribute("agent-encoded-id", "QWdlbnQtMjg5NDU2");
-    el.setAttribute("sort-order", "PRICE_HIGH");
+    el.setAttribute("sort-order", "STATUS_AND_SIGNIFICANT_CHANGE");
     el.setAttribute("listing-status", listingStatus);
     el.setAttribute("property-types", "SFR,MF,TC,LAL,MOBILE,OTHER");
-    el.setAttribute("include-co-listings", "true");
-    el.setAttribute("include-seller-listings", "true");
+    el.setAttribute("include-co-listings", "");
     el.style.setProperty("--rs-listing-divider-color", "#0c0f24");
     el.style.width = "100%";
     containerRef.current!.replaceChildren(el);

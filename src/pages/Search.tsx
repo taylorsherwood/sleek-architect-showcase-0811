@@ -121,7 +121,7 @@ const SearchPage = () => {
               }
             >
               <RealScoutListings
-                listingStatus="FOR_SALE"
+                listingStatus="For Sale,In Contract"
                 heading="AVAILABLE HOMES"
                 subheading="Current Listings"
               />

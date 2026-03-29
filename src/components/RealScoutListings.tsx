@@ -43,6 +43,8 @@ const RealScoutListings = ({
     el.setAttribute("property-types", "SFR,MF,TC,LAL,MOBILE,OTHER");
     el.setAttribute("include-co-listings", "");
     el.setAttribute("include-seller-listings", "");
+    el.style.setProperty("--rs-listing-divider-color", "#0c0f24");
+    el.style.width = "100%";
     containerRef.current.appendChild(el);
 
     return () => {

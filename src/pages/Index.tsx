@@ -92,54 +92,6 @@ const Hero = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [videoSrc]);
 
-  // Inject RealScout gold styling
-  useEffect(() => {
-    const el = searchRef.current;
-    if (!el) return;
-    const GOLD = "hsl(41, 36%, 57%)";
-    const injectStyles = () => {
-      const widget = el.querySelector("realscout-advanced-search");
-      if (!widget?.shadowRoot || widget.shadowRoot.querySelector("#rs-hero")) return;
-      const s = document.createElement("style");
-      s.id = "rs-hero";
-      s.textContent = `
-        :host { --rs-bg: transparent !important; }
-        *, *::before, *::after { border-color: rgba(255,255,255,0.12) !important; }
-        form, [class*="form"], [class*="container"], [class*="wrapper"], [class*="search"] {
-          background: transparent !important;
-          color: rgba(255,255,255,0.92) !important;
-        }
-        input, select, [class*="input"], [class*="select"], [class*="dropdown"], [class*="field"] {
-          background: rgba(255,255,255,0.04) !important;
-          color: #fff !important;
-          border: 1px solid rgba(255,255,255,0.12) !important;
-          border-radius: 3px !important;
-        }
-        input::placeholder, [class*="placeholder"] {
-          color: rgba(255,255,255,0.5) !important;
-        }
-        label, [class*="label"] {
-          color: rgba(255,255,255,0.7) !important;
-        }
-        button[type="submit"],[class*="search"] button,[class*="Submit"],input[type="submit"] {
-          background: transparent !important;
-          border: 1px solid ${GOLD} !important;
-          color: ${GOLD} !important;
-          transition: all 0.35s ease !important;
-        }
-        button[type="submit"]:hover,[class*="search"] button:hover,[class*="Submit"]:hover,input[type="submit"]:hover {
-          background: ${GOLD} !important;
-          color: #fff !important;
-        }
-      `;
-      widget.shadowRoot.appendChild(s);
-    };
-    injectStyles();
-    const obs = new MutationObserver(() => injectStyles());
-    obs.observe(el, { childList: true, subtree: true });
-    const timers = [500, 1500, 3000].map((ms) => setTimeout(injectStyles, ms));
-    return () => { obs.disconnect(); timers.forEach(clearTimeout); };
-  }, []);
 
   const anim = (delay: string) => ({
     opacity: heroVisible ? 1 : 0,

@@ -20,10 +20,10 @@ const formSchema = z.object({
 });
 
 const BULLETS = [
-  { icon: Home, label: "Off-Market Homes" },
-  { icon: Landmark, label: "Development Sites" },
-  { icon: Building2, label: "Multifamily Investment Opportunities" },
-  { icon: TrendingUp, label: "Value-Add Properties" },
+  { icon: Home, label: "Off-Market Homes", to: "/off-market-real-estate-austin" },
+  { icon: Landmark, label: "Development Sites", to: "/land-for-sale-austin" },
+  { icon: Building2, label: "Multifamily Investment Opportunities", to: "/listings/commercial-investment-austin" },
+  { icon: TrendingUp, label: "Value-Add Properties", to: "/invest" },
 ];
 
 interface PrivateOpportunitiesProps {

@@ -198,7 +198,7 @@ const SearchSection = () => {
               Explore available homes across Austin
             </p>
           </div>
-          <div ref={containerRef} className="flex justify-center" style={{ minHeight: 60 }} />
+          <div ref={containerRef} className="flex justify-center relative" style={{ minHeight: 60, zIndex: 10 }} />
         </div>
       </div>
     </section>

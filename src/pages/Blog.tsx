@@ -31,6 +31,7 @@ const Blog = () => {
         { name: "Blog", url: "https://www.echelonpropertygroup.com/blog" }
       ])} />
       <Navigation />
+      <div className="h-12 md:h-20" />
       
       {/* Hero Section */}
       <section className="pt-32 pb-20">

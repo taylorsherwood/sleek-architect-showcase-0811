@@ -44,6 +44,7 @@ const BillionaireMigration = lazy(() => import("@/pages/BillionaireMigration"));
 const OffMarketDealsAustin = lazy(() => import("@/pages/OffMarketDealsAustin"));
 const OffMarketRealEstateAustin = lazy(() => import("@/pages/OffMarketRealEstateAustin"));
 const AustinLandDevelopmentOpportunities = lazy(() => import("@/pages/AustinLandDevelopmentOpportunities"));
+const AustinLuxuryRealEstateMarketReport = lazy(() => import("@/pages/AustinLuxuryRealEstateMarketReport"));
 const Invest = lazy(() => import("@/pages/Invest"));
 const NotFound = lazy(() => import("@/pages/NotFound"));
 

@@ -96,8 +96,16 @@ const ContentBlock = ({ text }: { text: string }) => {
   );
 };
 
+const slugAliases: Record<string, string> = {
+  "zilker": "zilker-austin",
+  "cat-mountain": "cat-mountain-northwest-hills",
+  "northwest-hills": "cat-mountain-northwest-hills",
+  "downtown-austin-condos": "downtown",
+};
+
 const CommunityPage = () => {
-  const { slug } = useParams<{ slug: string }>();
+  const { slug: rawSlug } = useParams<{ slug: string }>();
+  const slug = rawSlug ? (slugAliases[rawSlug] || rawSlug) : rawSlug;
   const community = communityPages.find((c) => c.slug === slug);
 
   if (!community) {
@@ -151,6 +159,7 @@ const CommunityPage = () => {
       <SEOHead
         title={community.metaTitle || `${community.name} Homes for Sale | Echelon Property Group`}
         description={`${community.name} homes for sale in Austin, Texas. Explore listings, pricing trends, and neighborhood insights with Echelon Property Group — your luxury real estate advisor.`}
+        canonical={`/communities/${community.slug}`}
       />
       <SchemaMarkup schema={createFAQSchema(allFaqs)} />
       <SchemaMarkup schema={createCommunitySchema(community)} />

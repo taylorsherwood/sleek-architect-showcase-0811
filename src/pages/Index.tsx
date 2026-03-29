@@ -187,13 +187,6 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 z-10">
-        <span className="text-warm-cream/60 font-light" style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.55rem", letterSpacing: "0.35em", textTransform: "uppercase" }}>
-          Discover Austin
-        </span>
-        <div className="scroll-indicator-line" />
-      </div>
     </section>
   );
 };

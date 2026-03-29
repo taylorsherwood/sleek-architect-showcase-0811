@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Home, MapPin, Building2, TrendingUp } from "lucide-react";
+import ScrollReveal from "@/components/ScrollReveal";
 
 const expertiseBlocks = [
 {

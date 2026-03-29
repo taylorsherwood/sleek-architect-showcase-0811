@@ -460,7 +460,7 @@ const Invest = () => {
           <ScrollReveal>
             <p className="text-minimal text-gold mb-4">Client Focus</p>
             <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-16 max-w-2xl">
-              Who We Work With
+              Austin Investment Clients We Serve
             </h2>
           </ScrollReveal>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

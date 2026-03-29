@@ -228,18 +228,10 @@ const Navigation = () => {
             )}
             <div className="pt-6 space-y-4 border-t border-border/30">
               <a
-                href="https://taylorsherwood.realscout.com/"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                className="block text-minimal tracking-[0.2em] text-primary-foreground bg-primary px-4 py-3.5 text-center transition-colors duration-300"
-              >
-                SEARCH HOMES
-              </a>
-              <a
                 href="https://echelonpropertygroup.outportal.ai"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                className="block text-minimal tracking-[0.2em] border border-border/50 text-muted-foreground hover:bg-primary hover:text-white px-4 py-3.5 text-center transition-colors duration-300"
+                className="block text-minimal tracking-[0.2em] text-muted-foreground/50 px-4 py-3.5 text-center transition-colors duration-300"
               >
                 CLIENT PORTAL
               </a>

@@ -254,7 +254,7 @@ const SearchSection = () => {
                 disabled={searching}
                 className="shrink-0 w-full md:w-auto bg-primary text-primary-foreground px-12 py-3.5 text-center hover:bg-gold transition-all duration-300 disabled:opacity-60"
                 style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.58rem", letterSpacing: "0.25em", textTransform: "uppercase", fontWeight: 600 }}>
-                {searching ? "SEARCHING…" : "SEARCH"}
+                {searching ? "SEARCHING…" : "EXPLORE HOMES"}
               </button>
             </div>
           </div>

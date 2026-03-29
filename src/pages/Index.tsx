@@ -211,7 +211,7 @@ const Hero = () => {
         </div>
 
         {/* Integrated search */}
-        <div ref={searchRef} className="mt-20 max-w-3xl bg-white/[0.06] backdrop-blur-sm border border-white/[0.08] rounded-sm p-5 md:p-6" style={{ ...anim("0.55s"), minHeight: 80 }}>
+        <div ref={searchRef} className="mt-20 max-w-3xl rounded-sm p-6 md:p-8" style={{ ...anim("0.55s"), minHeight: 80, background: "rgba(10, 14, 25, 0.55)", backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)", border: "1px solid rgba(255,255,255,0.08)", boxShadow: "0 8px 32px rgba(0,0,0,0.12)" }}>
           {createElement("realscout-advanced-search", { "agent-encoded-id": "QWdlbnQtMjg5NDU2" })}
         </div>
       </div>

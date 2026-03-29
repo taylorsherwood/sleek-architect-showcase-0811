@@ -201,7 +201,7 @@ const BestLuxuryNeighborhoods = () => {
               <Link to="/barton-creek-homes-for-sale" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ BARTON CREEK HOMES FOR SALE</Link>
               <Link to="/lake-austin-waterfront-homes-for-sale" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ LAKE AUSTIN WATERFRONT HOMES</Link>
               <Link to="/off-market-real-estate-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ OFF-MARKET REAL ESTATE</Link>
-              <Link to="/moving-to-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ MOVING TO AUSTIN GUIDE</Link>
+              <Link to="/moving-to-austin-texas" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ MOVING TO AUSTIN GUIDE</Link>
               <Link to="/invest" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ INVESTMENT ADVISORY</Link>
             </div>
           </div>

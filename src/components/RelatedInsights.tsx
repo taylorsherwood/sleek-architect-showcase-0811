@@ -9,7 +9,7 @@ interface InsightLink {
 const allInsightLinks: InsightLink[] = [
   { to: "/luxury-real-estate-austin", label: "Austin luxury real estate market trends", topics: ["luxury", "market", "homes"] },
   { to: "/off-market-real-estate-austin", label: "Off-market homes and private listings in Austin", topics: ["off-market", "investment", "private"] },
-  { to: "/moving-to-austin", label: "Moving to Austin Texas — relocation guide", topics: ["relocation", "moving", "guide"] },
+  { to: "/moving-to-austin-texas", label: "Moving to Austin Texas — relocation guide", topics: ["relocation", "moving", "guide"] },
   { to: "/invest", label: "Austin investment properties and value-add strategies", topics: ["investment", "investor", "flip"] },
   { to: "/private-opportunities", label: "Private real estate opportunities in Austin", topics: ["off-market", "private", "investor", "luxury"] },
   { to: "/sell-home-austin", label: "Sell your Austin home — comprehensive seller guide", topics: ["sell", "marketing", "luxury", "homes"] },

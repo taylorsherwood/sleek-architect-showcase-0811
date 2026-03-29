@@ -74,7 +74,8 @@ const AppRoutes = () => {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:id" element={<BlogPost />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/moving-to-austin" element={<MovingToAustin />} />
+          <Route path="/moving-to-austin-texas" element={<MovingToAustin />} />
+          <Route path="/moving-to-austin" element={<Navigate to="/moving-to-austin-texas" replace />} />
           <Route path="/best-luxury-neighborhoods-in-austin" element={<BestLuxuryNeighborhoods />} />
           <Route path="/best-luxury-neighborhoods-austin" element={<Navigate to="/best-luxury-neighborhoods-in-austin" replace />} />
           <Route path="/austin-luxury-market-report" element={<MarketReport />} />

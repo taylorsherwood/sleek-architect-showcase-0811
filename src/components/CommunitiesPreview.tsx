@@ -44,6 +44,7 @@ const CommunitiesPreview = () => {
           </ScrollReveal>
 
           {/* Single-row editorial layout */}
+          <ScrollReveal delay={100}>
           <div className="grid grid-cols-1 md:grid-cols-12 gap-[6px]">
             {/* Hero — ~58% width (7 of 12 cols) */}
             <Link

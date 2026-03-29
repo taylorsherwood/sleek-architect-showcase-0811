@@ -271,7 +271,7 @@ const OffMarketDealsAustin = () => {
 
             {/* How Investors Find Deals */}
             <section id="how-investors-find-deals" className="space-y-[18px] mb-14">
-              <h2 className="text-2xl md:text-3xl font-display font-light text-foreground mb-6">How Investors Find Off-Market Real Estate Deals in Austin</h2>
+              <h2 className="text-2xl md:text-3xl font-display font-light text-foreground mb-6">How Austin Investors Find Off-Market Properties</h2>
 
               {/* Strategy 1 */}
               <h2 className="text-xl md:text-2xl font-display font-light text-foreground mt-8 mb-3">1. Work With a Broker Who Sources Beyond the MLS</h2>

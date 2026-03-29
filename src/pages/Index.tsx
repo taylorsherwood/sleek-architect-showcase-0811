@@ -855,6 +855,7 @@ const Index = () => (
 
     <NoscriptFallback />
 
+    <ExpertiseSection />
     <TestimonialsSection />
     <CommunitiesSection />
     <InsightsSection />

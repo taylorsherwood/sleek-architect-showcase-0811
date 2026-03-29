@@ -530,13 +530,13 @@ const testimonials = [
 ];
 
 const TestimonialsSection = () => (
-  <section className="py-24 md:py-32 bg-primary">
+  <section className="py-24 md:py-32" style={{ background: "#F8F7F5" }}>
     <div className="container mx-auto px-6">
       <div className="max-w-[1320px] mx-auto">
         <ScrollReveal>
           <div className="text-center mb-14">
-            <p className="text-minimal text-gold mb-5 font-extrabold tracking-[0.22em]">CLIENT EXPERIENCES</p>
-            <h2 className="font-display text-3xl md:text-[2.5rem] font-light text-primary-foreground/90 leading-[1.1] tracking-[-0.01em]">
+            <p className="text-minimal font-extrabold tracking-[0.22em] mb-5" style={{ color: "#C6A85B" }}>CLIENT EXPERIENCES</p>
+            <h2 className="font-display text-3xl md:text-[2.5rem] font-light leading-[1.1] tracking-[-0.01em]" style={{ color: "#1A1C20" }}>
               Trusted by Buyers, Sellers, and <span className="italic">Investors</span>
             </h2>
           </div>
@@ -545,15 +545,19 @@ const TestimonialsSection = () => (
         <div className="grid md:grid-cols-2 gap-5">
           {testimonials.map((t, i) => (
             <ScrollReveal key={i} delay={100 + i * 60}>
-              <div className="bg-primary-foreground/[0.035] border border-primary-foreground/[0.07] rounded-[3px] px-7 py-7 flex flex-col justify-between h-full
-                transition-all duration-[500ms] hover:-translate-y-[2px] hover:bg-primary-foreground/[0.055] hover:border-primary-foreground/[0.1]">
-                <p className="text-primary-foreground/60 text-[15px] leading-[1.8] font-light italic mb-5">
+              <div className="rounded-[3px] px-7 py-7 flex flex-col justify-between h-full transition-all duration-[500ms] hover:-translate-y-[2px]"
+                style={{
+                  background: "#FFFFFF",
+                  border: "1px solid rgba(0,0,0,0.06)",
+                  boxShadow: "0 10px 30px rgba(0,0,0,0.05)",
+                }}>
+                <p className="text-[15px] leading-[1.8] font-light italic mb-5" style={{ color: "#1A1C20" }}>
                   "{t.quote}"
                 </p>
                 <div>
-                  <div className="h-px mb-4" style={{ background: "linear-gradient(to right, transparent, hsl(38 20% 72% / 0.18), transparent)" }} />
-                  <p className="font-display text-[0.95rem] text-primary-foreground/80 tracking-[0.01em]">{t.name}</p>
-                  <p className="text-gold/55 text-[0.58rem] mt-1 font-light tracking-[0.14em] uppercase">{t.context}</p>
+                  <div className="h-px mb-4" style={{ background: "linear-gradient(to right, transparent, rgba(0,0,0,0.08), transparent)" }} />
+                  <p className="font-display text-[0.95rem] tracking-[0.01em]" style={{ color: "#1A1C20" }}>{t.name}</p>
+                  <p className="text-[0.58rem] mt-1 font-light tracking-[0.14em] uppercase" style={{ color: "rgba(198,168,91,0.7)" }}>{t.context}</p>
                 </div>
               </div>
             </ScrollReveal>

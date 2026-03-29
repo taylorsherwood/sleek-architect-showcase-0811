@@ -23,7 +23,7 @@ import tarrytown from "@/assets/community-tarrytown.jpg";
 import drippingSprings from "@/assets/community-dripping-springs.jpg";
 import downtown from "@/assets/community-downtown.jpg";
 import zilker from "@/assets/community-zilker-barton-springs.jpg";
-import spanishOaks from "@/assets/community-spanish-oaks.jpg";
+import spanishOaks from "@/assets/community-spanish-oaks.png";
 import catMountain from "@/assets/community-cat-mountain.jpg";
 
 const imageMap: Record<string, string> = {

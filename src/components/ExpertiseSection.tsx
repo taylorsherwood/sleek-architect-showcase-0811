@@ -44,8 +44,7 @@ const ExpertiseSection = () => {
               <h2 className="text-3xl md:text-[2.75rem] font-display font-light text-architectural mb-6 leading-tight">
                 Austin Real Estate Expertise
               </h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto text-[0.95rem] leading-relaxed">From luxury homes and land development to commercial acquisitions and investment strategy — Echelon Property Group delivers full-spectrum real estate advisory across Austin and the Texas Hill Country.
-              </p>
+              <p className="text-muted-foreground max-w-2xl mx-auto text-[0.95rem] leading-relaxed">From luxury homes and land development to commercial acquisitions and investment strategy — Echelon Property Group delivers full-spectrum real estate advisory across Austin and the Texas Hill Country.\n\n\nDriven </p>
             </div>
           </ScrollReveal>
 

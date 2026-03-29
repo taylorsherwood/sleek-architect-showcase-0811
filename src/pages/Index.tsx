@@ -438,14 +438,22 @@ const FeaturedProperties = () => (
               const wrapperProps = isExternal ? { href: p.link, target: "_blank" as const, rel: "noopener noreferrer" } : {};
               return (
                 <Wrapper key={i} {...wrapperProps} className="group block cursor-pointer">
-                  <div className="relative overflow-hidden aspect-[4/3] transition-shadow duration-[500ms] group-hover:shadow-[0_12px_30px_-8px_hsl(var(--foreground)/0.1)]">
+                  <div className="relative overflow-hidden aspect-[4/3]">
                     <img src={p.image} alt={p.address}
                       className="w-full h-full object-cover transition-transform duration-[700ms] ease-out group-hover:scale-[1.06]"
                       loading="lazy" decoding="async" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent" />
 
+                    {/* Frosted View Property button on hover */}
+                    <div className="absolute inset-0 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
+                      <span className="bg-white/20 backdrop-blur-md text-white border border-white/30 px-6 py-2.5 rounded-lg font-medium"
+                        style={{ fontSize: "0.65rem", letterSpacing: "0.15em", textTransform: "uppercase" }}>
+                        View Property
+                      </span>
+                    </div>
+
                     {/* Price */}
-                    <div className="absolute bottom-5 right-6">
+                    <div className="absolute bottom-5 right-6 z-20">
                       <span className="text-white font-display text-lg font-light tracking-[0.02em]"
                         style={{ textShadow: "0 1px 8px rgba(0,0,0,0.4)" }}>
                         {p.price}
@@ -454,7 +462,7 @@ const FeaturedProperties = () => (
 
                     {/* Badge */}
                     {p.badge && (
-                      <div className="absolute top-5 left-5 bg-background/80 backdrop-blur-sm px-3.5 py-1.5">
+                      <div className="absolute top-5 left-5 z-20 bg-background/80 backdrop-blur-sm px-3.5 py-1.5">
                         <span className="text-[8px] tracking-[0.22em] uppercase text-muted-foreground/70 font-normal">{p.badge}</span>
                       </div>
                     )}
@@ -477,13 +485,20 @@ const FeaturedProperties = () => (
 
             {/* Off-market card */}
             <Link to="/off-market-real-estate-austin" className="group block md:col-span-2 md:max-w-[calc(50%-1.25rem)]">
-              <div className="relative overflow-hidden aspect-[4/3] bg-gradient-to-br from-primary via-primary to-primary/80 flex items-center justify-center transition-all duration-[600ms] group-hover:from-gold group-hover:via-gold group-hover:to-gold/80">
+              <div className="relative overflow-hidden aspect-[4/3] bg-gradient-to-br from-primary via-primary to-primary/80 flex items-center justify-center">
                 <img src="/static-assets/echelon-logo-gold-square.png" alt="Echelon Property Group"
-                  className="w-1/2 h-auto object-contain transition-all duration-[500ms] group-hover:brightness-0 group-hover:invert"
+                  className="w-1/2 h-auto object-contain transition-transform duration-[700ms] ease-out group-hover:scale-[1.06]"
                   loading="lazy" decoding="async" />
+                {/* Frosted View Property button on hover */}
+                <div className="absolute inset-0 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
+                  <span className="bg-white/20 backdrop-blur-md text-white border border-white/30 px-6 py-2.5 rounded-lg font-medium"
+                    style={{ fontSize: "0.65rem", letterSpacing: "0.15em", textTransform: "uppercase" }}>
+                    View Property
+                  </span>
+                </div>
               </div>
               <div className="mt-5 px-1 text-center">
-                <h3 className="text-[15px] font-display font-medium mb-1.5 text-foreground/85 group-hover:text-muted-foreground transition-colors duration-[400ms]">
+                <h3 className="text-[15px] font-display font-medium mb-1.5 text-foreground/85">
                   Access Off-Market Opportunities
                 </h3>
                 <p className="text-[13px] text-muted-foreground/50 font-light leading-relaxed">

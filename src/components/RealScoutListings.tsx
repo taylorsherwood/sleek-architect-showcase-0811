@@ -41,11 +41,11 @@ const RealScoutListings = ({
     el.setAttribute("sort-order", "PRICE_HIGH");
     el.setAttribute("listing-status", listingStatus);
     el.setAttribute("property-types", "SFR,MF,TC,LAL,MOBILE,OTHER");
-    el.setAttribute("include-co-listings", "");
-    el.setAttribute("include-seller-listings", "");
+    el.setAttribute("include-co-listings", "true");
+    el.setAttribute("include-seller-listings", "true");
     el.style.setProperty("--rs-listing-divider-color", "#0c0f24");
     el.style.width = "100%";
-    containerRef.current.appendChild(el);
+    containerRef.current!.replaceChildren(el);
 
     return () => {
       if (containerRef.current && el.parentNode === containerRef.current) {

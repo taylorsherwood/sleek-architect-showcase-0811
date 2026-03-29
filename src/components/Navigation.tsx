@@ -148,22 +148,14 @@ const Navigation = () => {
         </div>
 
         {/* Desktop action buttons */}
-        <div className="hidden lg:flex items-center space-x-4 shrink-0 ml-4 xl:ml-8">
+        <div className="hidden lg:flex items-center shrink-0 ml-4 xl:ml-8">
           <a
             href="https://echelonpropertygroup.outportal.ai"
             target="_blank"
             rel="noopener noreferrer nofollow"
-            className="whitespace-nowrap text-[0.65rem] tracking-[0.18em] uppercase font-medium border border-border/60 text-muted-foreground hover:bg-primary hover:text-white px-5 py-2.5 min-h-[38px] inline-flex items-center transition-all duration-400"
+            className="whitespace-nowrap text-[0.6rem] tracking-[0.18em] uppercase font-normal text-muted-foreground/50 hover:text-foreground transition-colors duration-400"
           >
             CLIENT PORTAL
-          </a>
-          <a
-            href="https://taylorsherwood.realscout.com/"
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-            className="whitespace-nowrap text-[0.65rem] tracking-[0.18em] uppercase font-medium text-primary-foreground bg-primary hover:bg-gold hover:text-primary-foreground px-6 py-2.5 min-h-[38px] inline-flex items-center transition-all duration-400"
-          >
-            SEARCH HOMES
           </a>
         </div>
 

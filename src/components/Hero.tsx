@@ -182,8 +182,12 @@ const Hero = () => {
           </p>
 
           <h1
-            className="font-display font-medium text-warm-cream mb-9 reveal"
+            className="font-display font-medium text-warm-cream mb-9 transition-all duration-1000 will-change-[opacity,transform]"
             style={{
+              opacity: heroVisible ? 1 : 0,
+              transform: heroVisible ? "translateY(0)" : "translateY(10px)",
+              transitionTimingFunction: "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+              transitionDelay: "0.15s",
               lineHeight: 1.12,
               letterSpacing: "-0.025em",
               textShadow: "0 2px 9px rgba(0,0,0,0.55), 0 1px 2px rgba(0,0,0,0.2)"

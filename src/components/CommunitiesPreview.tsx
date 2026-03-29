@@ -99,6 +99,7 @@ const CommunitiesPreview = () => {
               ))}
             </div>
           </div>
+          </ScrollReveal>
 
           {/* View all */}
           <div className="text-center mt-12">

@@ -69,6 +69,7 @@ const MeetTaylor = () => {
               </a>
             </div>
           </div>
+          </ScrollReveal>
 
           <div className="mt-8 text-center">
             <p className="text-muted-foreground leading-relaxed text-base md:text-xl mb-8 text-center max-w-3xl mx-auto">

@@ -495,31 +495,31 @@ const communities = [
 ];
 
 const CommunitiesSection = () => (
-  <section className="py-20 md:py-28 bg-background">
+  <section className="py-24 md:py-32 bg-background">
     <div className="container mx-auto px-6">
       <div className="max-w-[1320px] mx-auto">
         <ScrollReveal>
-          <div className="text-center mb-14">
-            <p className="text-minimal text-gold mb-5 font-extrabold">SELECT COMMUNITIES</p>
-            <h2 className="font-display text-3xl md:text-[2.8rem] font-light text-architectural leading-[1.12]">
+          <div className="text-center mb-16">
+            <p className="text-minimal text-gold mb-5 font-extrabold tracking-[0.22em]">SELECT COMMUNITIES</p>
+            <h2 className="font-display text-3xl md:text-[2.5rem] font-light text-foreground/90 leading-[1.1] tracking-[-0.01em]">
               Explore Austin's Most <span className="italic">Sought-After</span> Communities
             </h2>
           </div>
         </ScrollReveal>
 
-        <ScrollReveal delay={100}>
+        <ScrollReveal delay={120} stagger={60}>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 lg:gap-4">
             {communities.map((c) => (
-              <Link key={c.slug} to={`/communities/${c.slug}`} className="group relative overflow-hidden aspect-[3/4]">
+              <Link key={c.slug} to={`/communities/${c.slug}`} className="group relative overflow-hidden aspect-[3/4] transition-shadow duration-[500ms] hover:shadow-[0_12px_30px_-8px_hsl(var(--foreground)/0.1)]">
                 <img src={c.image} alt={`Luxury homes in ${c.name}, Austin`}
                   className="community-tile-img absolute inset-0 w-full h-full object-cover"
                   loading="lazy" decoding="async" />
-                <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/20 via-[45%] to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-foreground/65 via-foreground/15 via-[45%] to-transparent" />
                 <div className="absolute bottom-5 left-5 right-5">
-                  <h3 className="text-warm-cream font-display text-lg md:text-xl font-medium tracking-[0.03em] leading-[1.1] drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)] mb-1">
+                  <h3 className="text-warm-cream font-display text-lg md:text-xl font-medium tracking-[0.03em] leading-[1.1] drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)] mb-1.5">
                     {c.name}
                   </h3>
-                  <p className="text-warm-cream/60 text-[0.55rem] font-normal tracking-[0.07em] uppercase drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
+                  <p className="text-warm-cream/50 text-[0.5rem] font-normal tracking-[0.08em] uppercase drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
                     {c.descriptor}
                   </p>
                 </div>
@@ -528,13 +528,15 @@ const CommunitiesSection = () => (
           </div>
         </ScrollReveal>
 
-        <div className="text-center mt-14">
-          <Link to="/communities"
-            className="inline-block border border-foreground/20 text-foreground px-10 py-[0.9rem] hover:bg-gold hover:text-white hover:border-gold transition-all duration-300"
-            style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.6rem", letterSpacing: "0.25em", textTransform: "uppercase", fontWeight: 600 }}>
-            VIEW ALL COMMUNITIES
-          </Link>
-        </div>
+        <ScrollReveal delay={200}>
+          <div className="text-center mt-16">
+            <Link to="/communities"
+              className="inline-block border border-foreground/15 text-foreground px-10 py-[0.9rem] hover:bg-gold hover:text-white hover:border-gold transition-all duration-[400ms]"
+              style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.58rem", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 600 }}>
+              VIEW ALL COMMUNITIES
+            </Link>
+          </div>
+        </ScrollReveal>
       </div>
     </div>
   </section>

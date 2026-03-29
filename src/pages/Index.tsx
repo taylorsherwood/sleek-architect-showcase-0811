@@ -319,22 +319,22 @@ const properties = [
 ];
 
 const FeaturedProperties = () => (
-  <section className="py-20 md:py-28 bg-secondary">
+  <section className="py-24 md:py-32 bg-secondary">
     <div className="container mx-auto px-6">
       <div className="max-w-[1320px] mx-auto">
         <ScrollReveal>
           <div className="mb-16">
-            <p className="text-minimal text-gold mb-5 font-extrabold">FEATURED LISTINGS</p>
-            <h2 className="font-display text-3xl md:text-[2.8rem] font-light text-architectural mb-4 leading-[1.12]">
+            <p className="text-minimal text-gold mb-5 font-extrabold tracking-[0.22em]">FEATURED LISTINGS</p>
+            <h2 className="font-display text-3xl md:text-[2.5rem] font-light text-foreground/90 mb-5 leading-[1.1] tracking-[-0.01em]">
               Exceptional <span className="italic">Properties</span>
             </h2>
-            <p className="text-muted-foreground text-[15px] max-w-xl font-light leading-relaxed">
+            <p className="text-muted-foreground/60 text-[15px] max-w-lg font-light leading-[1.8]">
               A curated selection of luxury homes, including private and off-market opportunities.
             </p>
           </div>
         </ScrollReveal>
 
-        <ScrollReveal delay={100}>
+        <ScrollReveal delay={120}>
           <div className="grid md:grid-cols-2 gap-8 lg:gap-10">
             {properties.map((p, i) => {
               const isExternal = p.link.startsWith("http");
@@ -342,44 +342,44 @@ const FeaturedProperties = () => (
               const wrapperProps = isExternal ? { href: p.link, target: "_blank" as const, rel: "noopener noreferrer" } : {};
               return (
                 <Wrapper key={i} {...wrapperProps} className="group block cursor-pointer">
-                  <div className="relative overflow-hidden aspect-[4/3]">
+                  <div className="relative overflow-hidden aspect-[4/3] transition-shadow duration-[500ms] group-hover:shadow-[0_12px_30px_-8px_hsl(var(--foreground)/0.1)]">
                     <img src={p.image} alt={p.address}
-                      className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+                      className="w-full h-full object-cover transition-transform duration-[600ms] ease-out group-hover:scale-[1.02]"
                       loading="lazy" decoding="async" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent" />
 
                     {/* Price */}
-                    <div className="absolute bottom-5 right-5">
-                      <span className="text-white font-display text-xl font-light tracking-wide"
-                        style={{ textShadow: "0 1px 6px rgba(0,0,0,0.5)" }}>
+                    <div className="absolute bottom-5 right-6">
+                      <span className="text-white font-display text-lg font-light tracking-[0.02em]"
+                        style={{ textShadow: "0 1px 8px rgba(0,0,0,0.4)" }}>
                         {p.price}
                       </span>
                     </div>
 
                     {/* Badge */}
                     {p.badge && (
-                      <div className="absolute top-5 left-5 bg-background/85 backdrop-blur-sm px-3.5 py-1.5">
-                        <span className="text-[9px] tracking-[0.2em] uppercase text-muted-foreground font-normal">{p.badge}</span>
+                      <div className="absolute top-5 left-5 bg-background/80 backdrop-blur-sm px-3.5 py-1.5">
+                        <span className="text-[8px] tracking-[0.22em] uppercase text-muted-foreground/70 font-normal">{p.badge}</span>
                       </div>
                     )}
 
                     {/* Hover overlay */}
-                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                      <span className="text-white border border-white/40 px-10 py-3.5 backdrop-blur-md bg-black/30 font-medium"
-                        style={{ fontSize: "0.6rem", letterSpacing: "0.2em", textTransform: "uppercase", fontFamily: '"Raleway", sans-serif' }}>
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-[500ms]">
+                      <span className="text-white border border-white/30 px-10 py-3.5 backdrop-blur-md bg-black/25 font-normal"
+                        style={{ fontSize: "0.58rem", letterSpacing: "0.22em", textTransform: "uppercase", fontFamily: '"Raleway", sans-serif' }}>
                         View Property
                       </span>
                     </div>
                   </div>
 
-                  <div className="mt-4 px-1">
-                    <h3 className="text-base font-display font-medium text-foreground mb-1">{p.address}</h3>
-                    <p className="text-muted-foreground/60 text-[13px] font-light">{p.location}</p>
-                    <div className="flex gap-4 text-[13px] text-muted-foreground/50 mt-2 font-light">
+                  <div className="mt-5 px-1">
+                    <h3 className="text-[15px] font-display font-medium text-foreground/85 mb-1 tracking-[0.01em]">{p.address}</h3>
+                    <p className="text-muted-foreground/50 text-[13px] font-light">{p.location}</p>
+                    <div className="flex gap-4 text-[12px] text-muted-foreground/40 mt-2.5 font-light tracking-[0.02em]">
                       <span>{p.beds} Beds</span>
-                      <span className="text-border text-[5px] leading-[2]">●</span>
+                      <span className="text-border/60 text-[4px] leading-[2.5]">●</span>
                       <span>{p.baths} Baths</span>
-                      <span className="text-border text-[5px] leading-[2]">●</span>
+                      <span className="text-border/60 text-[4px] leading-[2.5]">●</span>
                       <span>{p.sqft} Sq Ft</span>
                     </div>
                   </div>
@@ -389,16 +389,16 @@ const FeaturedProperties = () => (
 
             {/* Off-market card */}
             <Link to="/off-market-real-estate-austin" className="group block md:col-span-2 md:max-w-[calc(50%-1.25rem)]">
-              <div className="relative overflow-hidden aspect-[4/3] bg-gradient-to-br from-primary via-primary to-primary/80 flex items-center justify-center transition-all duration-700 group-hover:from-gold group-hover:via-gold group-hover:to-gold/80">
+              <div className="relative overflow-hidden aspect-[4/3] bg-gradient-to-br from-primary via-primary to-primary/80 flex items-center justify-center transition-all duration-[600ms] group-hover:from-gold group-hover:via-gold group-hover:to-gold/80">
                 <img src="/static-assets/echelon-logo-gold-square.png" alt="Echelon Property Group"
-                  className="w-1/2 h-auto object-contain transition-all duration-500 group-hover:brightness-0 group-hover:invert"
+                  className="w-1/2 h-auto object-contain transition-all duration-[500ms] group-hover:brightness-0 group-hover:invert"
                   loading="lazy" decoding="async" />
               </div>
-              <div className="mt-4 px-1 text-center">
-                <h3 className="text-base font-display font-medium mb-1.5 group-hover:text-muted-foreground transition-colors duration-500">
+              <div className="mt-5 px-1 text-center">
+                <h3 className="text-[15px] font-display font-medium mb-1.5 text-foreground/85 group-hover:text-muted-foreground transition-colors duration-[400ms]">
                   Access Off-Market Opportunities
                 </h3>
-                <p className="text-[13px] text-muted-foreground/60 font-light leading-relaxed">
+                <p className="text-[13px] text-muted-foreground/50 font-light leading-relaxed">
                   Exclusive private listings not publicly advertised. →
                 </p>
               </div>
@@ -406,13 +406,15 @@ const FeaturedProperties = () => (
           </div>
         </ScrollReveal>
 
-        <div className="text-center mt-14">
-          <Link to="/austin-luxury-homes-for-sale"
-            className="inline-block border border-foreground/20 text-foreground px-10 py-[0.9rem] hover:bg-gold hover:text-white hover:border-gold transition-all duration-300"
-            style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.6rem", letterSpacing: "0.25em", textTransform: "uppercase", fontWeight: 600 }}>
-            EXPLORE ALL LISTINGS
-          </Link>
-        </div>
+        <ScrollReveal delay={200}>
+          <div className="text-center mt-16">
+            <Link to="/austin-luxury-homes-for-sale"
+              className="inline-block border border-foreground/15 text-foreground px-10 py-[0.9rem] hover:bg-gold hover:text-white hover:border-gold transition-all duration-[400ms]"
+              style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.58rem", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 600 }}>
+              EXPLORE ALL LISTINGS
+            </Link>
+          </div>
+        </ScrollReveal>
       </div>
     </div>
   </section>

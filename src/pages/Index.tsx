@@ -316,6 +316,73 @@ const AdvisorSection = () => (
 );
 
 /* ─────────────────────────────────────────────
+   SECTION 3B — STATS STRIP
+   ───────────────────────────────────────────── */
+
+const useCountUp = (target: number, duration = 1800) => {
+  const [count, setCount] = useState(0);
+  const ref = useRef<HTMLDivElement>(null);
+  const triggered = useRef(false);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !triggered.current) {
+          triggered.current = true;
+          const start = performance.now();
+          const step = (now: number) => {
+            const progress = Math.min((now - start) / duration, 1);
+            const eased = 1 - Math.pow(1 - progress, 3);
+            setCount(Math.round(eased * target));
+            if (progress < 1) requestAnimationFrame(step);
+          };
+          requestAnimationFrame(step);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.3 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [target, duration]);
+
+  return { count, ref };
+};
+
+const stats = [
+  { value: 100, suffix: "M+", prefix: "$", label: "Career Sales Volume" },
+  { value: 200, suffix: "+", prefix: "", label: "Transactions Closed" },
+  { value: 15, suffix: "+", prefix: "", label: "Years of Experience" },
+  { value: 50, suffix: "M+", prefix: "$", label: "Off-Market Access" },
+];
+
+const StatsStrip = () => (
+  <section className="bg-background border-y border-border/15">
+    <div className="container mx-auto px-6">
+      <div className="max-w-[1320px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 py-12 md:py-14">
+        {stats.map((stat, i) => {
+          const { count, ref } = useCountUp(stat.value);
+          return (
+            <div key={i} ref={ref} className="text-center">
+              <p className="font-display text-3xl md:text-[2.5rem] font-light text-foreground tracking-[-0.02em]">
+                {stat.prefix}{count}{stat.suffix}
+              </p>
+              <p className="text-muted-foreground/50 mt-2 font-normal" style={{
+                fontFamily: '"Raleway", sans-serif', fontSize: "0.6rem", letterSpacing: "0.2em", textTransform: "uppercase"
+              }}>
+                {stat.label}
+              </p>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  </section>
+);
+
+/* ─────────────────────────────────────────────
    SECTION 4 — FEATURED PROPERTIES
    ───────────────────────────────────────────── */
 
@@ -783,6 +850,7 @@ const Index = () => (
     <SearchSection />
     <TrustStrip />
     <AdvisorSection />
+    <StatsStrip />
     <FeaturedProperties />
 
     <NoscriptFallback />

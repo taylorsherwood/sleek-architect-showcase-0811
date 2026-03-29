@@ -854,8 +854,8 @@ const Index = () => (
 
     <Navigation />
     <Hero />
-    <SearchSection />
     <TrustStrip />
+    <SearchSection />
     <AdvisorSection />
     <StatsStrip />
     <FeaturedProperties />

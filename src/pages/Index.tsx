@@ -114,9 +114,8 @@ const Hero = () => {
 
   const anim = (delay: string) => ({
     opacity: heroVisible ? 1 : 0,
-    transform: heroVisible ? "translateY(0)" : "translateY(14px)",
-    transition: `opacity 1.2s cubic-bezier(0.25,0.46,0.45,0.94) ${delay}, transform 1.2s cubic-bezier(0.25,0.46,0.45,0.94) ${delay}`,
-    willChange: "opacity, transform" as const,
+    transform: heroVisible ? "translateY(0)" : "translateY(10px)",
+    transition: `opacity 0.9s cubic-bezier(0.16,1,0.3,1) ${delay}, transform 0.9s cubic-bezier(0.16,1,0.3,1) ${delay}`,
   });
 
   return (
@@ -196,18 +195,18 @@ const Hero = () => {
    ───────────────────────────────────────────── */
 
 const TrustStrip = () => (
-  <section className="hidden md:block bg-background border-b border-border/40">
+  <section className="hidden md:block bg-background border-b border-border/20">
     <div className="container mx-auto px-6">
-      <div className="max-w-[1320px] mx-auto flex items-center justify-center gap-12 py-5">
+      <div className="max-w-[1320px] mx-auto flex items-center justify-center gap-14 py-5">
         {[
           { icon: "/static-assets/exp-realty-luxury-logo.png", text: "eXp Luxury Division" },
           { icon: null, text: "Certified Luxury Home Marketing Specialist" },
           { icon: null, text: "$100M+ Career Sales Volume" },
         ].map((item, i) => (
           <div key={i} className="flex items-center gap-3">
-            {item.icon && <img src={item.icon} alt={item.text} className="h-6 w-auto object-contain opacity-60" loading="lazy" />}
-            <span className="text-muted-foreground/60 font-medium" style={{
-              fontFamily: '"Raleway", sans-serif', fontSize: "0.65rem", letterSpacing: "0.16em", textTransform: "uppercase"
+            {item.icon && <img src={item.icon} alt={item.text} className="h-5 w-auto object-contain opacity-50" loading="lazy" />}
+            <span className="text-muted-foreground/50 font-normal" style={{
+              fontFamily: '"Raleway", sans-serif', fontSize: "0.6rem", letterSpacing: "0.18em", textTransform: "uppercase"
             }}>
               {item.text}
             </span>
@@ -226,43 +225,49 @@ const AdvisorSection = () => (
   <section className="py-24 md:py-32 bg-background">
     <div className="container mx-auto px-6">
       <div className="max-w-[1320px] mx-auto">
-        <ScrollReveal>
-          <div className="grid md:grid-cols-2 gap-14 lg:gap-20 items-center">
-            {/* Headshot */}
+        <div className="grid md:grid-cols-2 gap-14 lg:gap-20 items-center">
+          {/* Headshot */}
+          <ScrollReveal>
             <div className="relative group">
-              <div className="overflow-hidden rounded-[4px]" style={{ boxShadow: "0 20px 50px -16px hsl(var(--foreground) / 0.1)" }}>
+              <div className="overflow-hidden rounded-[3px]" style={{ boxShadow: "0 16px 40px -12px hsl(var(--foreground) / 0.08)" }}>
                 <img
                   src="/static-assets/taylor-headshot.jpg"
                   alt="Taylor Sherwood — Austin luxury real estate advisor and founder of Echelon Property Group"
                   title="Taylor Sherwood, Echelon Property Group"
-                  className="w-full aspect-[3/4] object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.01]"
+                  className="w-full aspect-[3/4] object-cover object-top transition-transform duration-[600ms] ease-out group-hover:scale-[1.015]"
                   loading="lazy" decoding="async"
                 />
               </div>
             </div>
+          </ScrollReveal>
 
-            {/* Copy */}
-            <div className="max-w-[480px]">
-              <p className="text-minimal text-gold mb-6 font-extrabold">
+          {/* Copy */}
+          <div className="max-w-[460px]">
+            <ScrollReveal>
+              <p className="text-minimal text-gold mb-6 font-extrabold tracking-[0.22em]">
                 STRATEGIC REAL ESTATE ADVISOR
               </p>
+            </ScrollReveal>
 
-              <h2 className="font-display text-3xl md:text-[2.6rem] font-light text-architectural mb-8 leading-[1.12]">
+            <ScrollReveal delay={80}>
+              <h2 className="font-display text-3xl md:text-[2.5rem] font-light text-foreground/90 mb-8 leading-[1.1] tracking-[-0.01em]">
                 Luxury Real Estate,
                 <br />
                 <span className="italic">Without the Noise</span>
               </h2>
+            </ScrollReveal>
 
+            <ScrollReveal delay={150}>
               <div className="space-y-5 mb-10">
-                <p className="text-foreground/75 text-[15px] leading-[1.8] font-light">
+                <p className="text-foreground/65 text-[15px] leading-[1.85] font-light">
                   You don't need more listings — you need access, strategy, and execution.
                 </p>
-                <p className="text-foreground/75 text-[15px] leading-[1.8] font-light">
+                <p className="text-foreground/65 text-[15px] leading-[1.85] font-light">
                   I work with a select group of clients to acquire and sell high-value
                   properties across Austin, including private and off-market opportunities
                   not publicly available.
                 </p>
-                <p className="text-foreground/75 text-[15px] leading-[1.8] font-light">
+                <p className="text-foreground/65 text-[15px] leading-[1.85] font-light">
                   Every decision is guided by market intelligence, negotiation leverage,
                   and a clear understanding of long-term value.
                 </p>
@@ -270,19 +275,19 @@ const AdvisorSection = () => (
 
               <div className="flex flex-col sm:flex-row items-start gap-5">
                 <Link to="/contact"
-                  className="inline-block border border-foreground/20 text-foreground px-10 py-[0.9rem] hover:bg-gold hover:text-white hover:border-gold transition-all duration-300"
+                  className="inline-block border border-foreground/15 text-foreground px-10 py-[0.9rem] hover:bg-gold hover:text-white hover:border-gold transition-all duration-[400ms]"
                   style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.58rem", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 600 }}>
                   WORK WITH ME
                 </Link>
                 <Link to="/past-transactions"
-                  className="inline-flex items-center text-muted-foreground/50 hover:text-gold transition-colors duration-400 pt-3 sm:pt-0 sm:self-center"
+                  className="inline-flex items-center text-muted-foreground/40 hover:text-gold transition-colors duration-[400ms] pt-3 sm:pt-0 sm:self-center"
                   style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.58rem", letterSpacing: "0.2em", textTransform: "uppercase", fontWeight: 500 }}>
                   VIEW PAST TRANSACTIONS →
                 </Link>
               </div>
-            </div>
+            </ScrollReveal>
           </div>
-        </ScrollReveal>
+        </div>
       </div>
     </div>
   </section>
@@ -314,22 +319,22 @@ const properties = [
 ];
 
 const FeaturedProperties = () => (
-  <section className="py-20 md:py-28 bg-secondary">
+  <section className="py-24 md:py-32 bg-secondary">
     <div className="container mx-auto px-6">
       <div className="max-w-[1320px] mx-auto">
         <ScrollReveal>
           <div className="mb-16">
-            <p className="text-minimal text-gold mb-5 font-extrabold">FEATURED LISTINGS</p>
-            <h2 className="font-display text-3xl md:text-[2.8rem] font-light text-architectural mb-4 leading-[1.12]">
+            <p className="text-minimal text-gold mb-5 font-extrabold tracking-[0.22em]">FEATURED LISTINGS</p>
+            <h2 className="font-display text-3xl md:text-[2.5rem] font-light text-foreground/90 mb-5 leading-[1.1] tracking-[-0.01em]">
               Exceptional <span className="italic">Properties</span>
             </h2>
-            <p className="text-muted-foreground text-[15px] max-w-xl font-light leading-relaxed">
+            <p className="text-muted-foreground/60 text-[15px] max-w-lg font-light leading-[1.8]">
               A curated selection of luxury homes, including private and off-market opportunities.
             </p>
           </div>
         </ScrollReveal>
 
-        <ScrollReveal delay={100}>
+        <ScrollReveal delay={120}>
           <div className="grid md:grid-cols-2 gap-8 lg:gap-10">
             {properties.map((p, i) => {
               const isExternal = p.link.startsWith("http");
@@ -337,44 +342,44 @@ const FeaturedProperties = () => (
               const wrapperProps = isExternal ? { href: p.link, target: "_blank" as const, rel: "noopener noreferrer" } : {};
               return (
                 <Wrapper key={i} {...wrapperProps} className="group block cursor-pointer">
-                  <div className="relative overflow-hidden aspect-[4/3]">
+                  <div className="relative overflow-hidden aspect-[4/3] transition-shadow duration-[500ms] group-hover:shadow-[0_12px_30px_-8px_hsl(var(--foreground)/0.1)]">
                     <img src={p.image} alt={p.address}
-                      className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+                      className="w-full h-full object-cover transition-transform duration-[600ms] ease-out group-hover:scale-[1.02]"
                       loading="lazy" decoding="async" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent" />
 
                     {/* Price */}
-                    <div className="absolute bottom-5 right-5">
-                      <span className="text-white font-display text-xl font-light tracking-wide"
-                        style={{ textShadow: "0 1px 6px rgba(0,0,0,0.5)" }}>
+                    <div className="absolute bottom-5 right-6">
+                      <span className="text-white font-display text-lg font-light tracking-[0.02em]"
+                        style={{ textShadow: "0 1px 8px rgba(0,0,0,0.4)" }}>
                         {p.price}
                       </span>
                     </div>
 
                     {/* Badge */}
                     {p.badge && (
-                      <div className="absolute top-5 left-5 bg-background/85 backdrop-blur-sm px-3.5 py-1.5">
-                        <span className="text-[9px] tracking-[0.2em] uppercase text-muted-foreground font-normal">{p.badge}</span>
+                      <div className="absolute top-5 left-5 bg-background/80 backdrop-blur-sm px-3.5 py-1.5">
+                        <span className="text-[8px] tracking-[0.22em] uppercase text-muted-foreground/70 font-normal">{p.badge}</span>
                       </div>
                     )}
 
                     {/* Hover overlay */}
-                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                      <span className="text-white border border-white/40 px-10 py-3.5 backdrop-blur-md bg-black/30 font-medium"
-                        style={{ fontSize: "0.6rem", letterSpacing: "0.2em", textTransform: "uppercase", fontFamily: '"Raleway", sans-serif' }}>
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-[500ms]">
+                      <span className="text-white border border-white/30 px-10 py-3.5 backdrop-blur-md bg-black/25 font-normal"
+                        style={{ fontSize: "0.58rem", letterSpacing: "0.22em", textTransform: "uppercase", fontFamily: '"Raleway", sans-serif' }}>
                         View Property
                       </span>
                     </div>
                   </div>
 
-                  <div className="mt-4 px-1">
-                    <h3 className="text-base font-display font-medium text-foreground mb-1">{p.address}</h3>
-                    <p className="text-muted-foreground/60 text-[13px] font-light">{p.location}</p>
-                    <div className="flex gap-4 text-[13px] text-muted-foreground/50 mt-2 font-light">
+                  <div className="mt-5 px-1">
+                    <h3 className="text-[15px] font-display font-medium text-foreground/85 mb-1 tracking-[0.01em]">{p.address}</h3>
+                    <p className="text-muted-foreground/50 text-[13px] font-light">{p.location}</p>
+                    <div className="flex gap-4 text-[12px] text-muted-foreground/40 mt-2.5 font-light tracking-[0.02em]">
                       <span>{p.beds} Beds</span>
-                      <span className="text-border text-[5px] leading-[2]">●</span>
+                      <span className="text-border/60 text-[4px] leading-[2.5]">●</span>
                       <span>{p.baths} Baths</span>
-                      <span className="text-border text-[5px] leading-[2]">●</span>
+                      <span className="text-border/60 text-[4px] leading-[2.5]">●</span>
                       <span>{p.sqft} Sq Ft</span>
                     </div>
                   </div>
@@ -384,16 +389,16 @@ const FeaturedProperties = () => (
 
             {/* Off-market card */}
             <Link to="/off-market-real-estate-austin" className="group block md:col-span-2 md:max-w-[calc(50%-1.25rem)]">
-              <div className="relative overflow-hidden aspect-[4/3] bg-gradient-to-br from-primary via-primary to-primary/80 flex items-center justify-center transition-all duration-700 group-hover:from-gold group-hover:via-gold group-hover:to-gold/80">
+              <div className="relative overflow-hidden aspect-[4/3] bg-gradient-to-br from-primary via-primary to-primary/80 flex items-center justify-center transition-all duration-[600ms] group-hover:from-gold group-hover:via-gold group-hover:to-gold/80">
                 <img src="/static-assets/echelon-logo-gold-square.png" alt="Echelon Property Group"
-                  className="w-1/2 h-auto object-contain transition-all duration-500 group-hover:brightness-0 group-hover:invert"
+                  className="w-1/2 h-auto object-contain transition-all duration-[500ms] group-hover:brightness-0 group-hover:invert"
                   loading="lazy" decoding="async" />
               </div>
-              <div className="mt-4 px-1 text-center">
-                <h3 className="text-base font-display font-medium mb-1.5 group-hover:text-muted-foreground transition-colors duration-500">
+              <div className="mt-5 px-1 text-center">
+                <h3 className="text-[15px] font-display font-medium mb-1.5 text-foreground/85 group-hover:text-muted-foreground transition-colors duration-[400ms]">
                   Access Off-Market Opportunities
                 </h3>
-                <p className="text-[13px] text-muted-foreground/60 font-light leading-relaxed">
+                <p className="text-[13px] text-muted-foreground/50 font-light leading-relaxed">
                   Exclusive private listings not publicly advertised. →
                 </p>
               </div>
@@ -401,13 +406,15 @@ const FeaturedProperties = () => (
           </div>
         </ScrollReveal>
 
-        <div className="text-center mt-14">
-          <Link to="/austin-luxury-homes-for-sale"
-            className="inline-block border border-foreground/20 text-foreground px-10 py-[0.9rem] hover:bg-gold hover:text-white hover:border-gold transition-all duration-300"
-            style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.6rem", letterSpacing: "0.25em", textTransform: "uppercase", fontWeight: 600 }}>
-            EXPLORE ALL LISTINGS
-          </Link>
-        </div>
+        <ScrollReveal delay={200}>
+          <div className="text-center mt-16">
+            <Link to="/austin-luxury-homes-for-sale"
+              className="inline-block border border-foreground/15 text-foreground px-10 py-[0.9rem] hover:bg-gold hover:text-white hover:border-gold transition-all duration-[400ms]"
+              style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.58rem", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 600 }}>
+              EXPLORE ALL LISTINGS
+            </Link>
+          </div>
+        </ScrollReveal>
       </div>
     </div>
   </section>
@@ -441,34 +448,33 @@ const testimonials = [
 ];
 
 const TestimonialsSection = () => (
-  <section className="py-20 md:py-28 bg-primary">
+  <section className="py-24 md:py-32 bg-primary">
     <div className="container mx-auto px-6">
       <div className="max-w-[1320px] mx-auto">
         <ScrollReveal>
-          <div className="text-center mb-14">
-            <p className="text-minimal text-gold mb-4 font-extrabold">CLIENT EXPERIENCES</p>
-            <h2 className="font-display text-3xl md:text-[2.8rem] font-light text-primary-foreground leading-[1.12]">
+          <div className="text-center mb-16">
+            <p className="text-minimal text-gold mb-5 font-extrabold tracking-[0.22em]">CLIENT EXPERIENCES</p>
+            <h2 className="font-display text-3xl md:text-[2.5rem] font-light text-primary-foreground/90 leading-[1.1] tracking-[-0.01em]">
               Trusted by Buyers, Sellers, and <span className="italic">Investors</span>
             </h2>
           </div>
         </ScrollReveal>
 
-        <ScrollReveal delay={100}>
-          <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
-            {testimonials.map((t, i) => (
-              <div key={i} className="bg-primary-foreground/[0.04] border border-primary-foreground/[0.08] rounded-sm px-7 py-7 flex flex-col justify-between
-                transition-all duration-500 hover:-translate-y-1 hover:bg-primary-foreground/[0.07]">
-                <p className="text-primary-foreground/70 text-[15px] leading-[1.8] font-light italic mb-6 flex-1">
-                  "{t.quote}"
-                </p>
-                <div className="h-px mb-4" style={{ background: "linear-gradient(to right, transparent, hsl(38 20% 72% / 0.2), transparent)" }} />
-                <div>
-                  <p className="font-display text-[0.95rem] text-primary-foreground/90 tracking-tight">{t.name}</p>
-                  <p className="text-gold/70 text-xs mt-1 font-light">{t.context}</p>
-                </div>
+        <ScrollReveal delay={120} stagger={80}>
+          {testimonials.map((t, i) => (
+            <div key={i} className="bg-primary-foreground/[0.03] border border-primary-foreground/[0.06] rounded-[2px] px-8 py-8 flex flex-col justify-between
+              transition-all duration-[500ms] hover:-translate-y-[2px] hover:bg-primary-foreground/[0.05] hover:shadow-[0_8px_24px_-8px_rgba(0,0,0,0.15)]
+              mb-6 last:mb-0 md:inline-block md:w-[calc(50%-1rem)] md:align-top md:mx-2 md:mb-4">
+              <p className="text-primary-foreground/60 text-[15px] leading-[1.85] font-light italic mb-6">
+                "{t.quote}"
+              </p>
+              <div className="h-px mb-5" style={{ background: "linear-gradient(to right, transparent, hsl(38 20% 72% / 0.15), transparent)" }} />
+              <div>
+                <p className="font-display text-[0.95rem] text-primary-foreground/80 tracking-[0.01em]">{t.name}</p>
+                <p className="text-gold/60 text-[0.6rem] mt-1.5 font-light tracking-[0.12em] uppercase">{t.context}</p>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </ScrollReveal>
       </div>
     </div>
@@ -489,31 +495,31 @@ const communities = [
 ];
 
 const CommunitiesSection = () => (
-  <section className="py-20 md:py-28 bg-background">
+  <section className="py-24 md:py-32 bg-background">
     <div className="container mx-auto px-6">
       <div className="max-w-[1320px] mx-auto">
         <ScrollReveal>
-          <div className="text-center mb-14">
-            <p className="text-minimal text-gold mb-5 font-extrabold">SELECT COMMUNITIES</p>
-            <h2 className="font-display text-3xl md:text-[2.8rem] font-light text-architectural leading-[1.12]">
+          <div className="text-center mb-16">
+            <p className="text-minimal text-gold mb-5 font-extrabold tracking-[0.22em]">SELECT COMMUNITIES</p>
+            <h2 className="font-display text-3xl md:text-[2.5rem] font-light text-foreground/90 leading-[1.1] tracking-[-0.01em]">
               Explore Austin's Most <span className="italic">Sought-After</span> Communities
             </h2>
           </div>
         </ScrollReveal>
 
-        <ScrollReveal delay={100}>
+        <ScrollReveal delay={120} stagger={60}>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 lg:gap-4">
             {communities.map((c) => (
-              <Link key={c.slug} to={`/communities/${c.slug}`} className="group relative overflow-hidden aspect-[3/4]">
+              <Link key={c.slug} to={`/communities/${c.slug}`} className="group relative overflow-hidden aspect-[3/4] transition-shadow duration-[500ms] hover:shadow-[0_12px_30px_-8px_hsl(var(--foreground)/0.1)]">
                 <img src={c.image} alt={`Luxury homes in ${c.name}, Austin`}
                   className="community-tile-img absolute inset-0 w-full h-full object-cover"
                   loading="lazy" decoding="async" />
-                <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/20 via-[45%] to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-foreground/65 via-foreground/15 via-[45%] to-transparent" />
                 <div className="absolute bottom-5 left-5 right-5">
-                  <h3 className="text-warm-cream font-display text-lg md:text-xl font-medium tracking-[0.03em] leading-[1.1] drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)] mb-1">
+                  <h3 className="text-warm-cream font-display text-lg md:text-xl font-medium tracking-[0.03em] leading-[1.1] drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)] mb-1.5">
                     {c.name}
                   </h3>
-                  <p className="text-warm-cream/60 text-[0.55rem] font-normal tracking-[0.07em] uppercase drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
+                  <p className="text-warm-cream/50 text-[0.5rem] font-normal tracking-[0.08em] uppercase drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
                     {c.descriptor}
                   </p>
                 </div>
@@ -522,13 +528,15 @@ const CommunitiesSection = () => (
           </div>
         </ScrollReveal>
 
-        <div className="text-center mt-14">
-          <Link to="/communities"
-            className="inline-block border border-foreground/20 text-foreground px-10 py-[0.9rem] hover:bg-gold hover:text-white hover:border-gold transition-all duration-300"
-            style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.6rem", letterSpacing: "0.25em", textTransform: "uppercase", fontWeight: 600 }}>
-            VIEW ALL COMMUNITIES
-          </Link>
-        </div>
+        <ScrollReveal delay={200}>
+          <div className="text-center mt-16">
+            <Link to="/communities"
+              className="inline-block border border-foreground/15 text-foreground px-10 py-[0.9rem] hover:bg-gold hover:text-white hover:border-gold transition-all duration-[400ms]"
+              style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.58rem", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 600 }}>
+              VIEW ALL COMMUNITIES
+            </Link>
+          </div>
+        </ScrollReveal>
       </div>
     </div>
   </section>
@@ -546,30 +554,30 @@ const insights = [
 ];
 
 const InsightsSection = () => (
-  <section className="py-20 md:py-28 bg-secondary">
+  <section className="py-24 md:py-32 bg-secondary">
     <div className="container mx-auto px-6">
       <div className="max-w-[1320px] mx-auto">
         <ScrollReveal>
-          <div className="text-center mb-14">
-            <p className="text-minimal text-gold mb-5 font-extrabold">MARKET INTELLIGENCE</p>
-            <h2 className="font-display text-3xl md:text-[2.8rem] font-light text-architectural leading-[1.12]">
+          <div className="text-center mb-16">
+            <p className="text-minimal text-gold mb-5 font-extrabold tracking-[0.22em]">MARKET INTELLIGENCE</p>
+            <h2 className="font-display text-3xl md:text-[2.5rem] font-light text-foreground/90 leading-[1.1] tracking-[-0.01em]">
               Insights & <span className="italic">Market Intelligence</span>
             </h2>
           </div>
         </ScrollReveal>
 
-        <ScrollReveal delay={100}>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <ScrollReveal delay={120} stagger={70}>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
             {insights.map((article) => (
-              <Link key={article.to} to={article.to} className="group block bg-card border border-border/30 rounded-sm overflow-hidden
-                transition-all duration-500 hover:-translate-y-1 hover:shadow-elegant">
+              <Link key={article.to} to={article.to} className="group block bg-card border border-border/20 rounded-[2px] overflow-hidden
+                transition-all duration-[500ms] hover:-translate-y-[2px] hover:shadow-[0_8px_24px_-8px_hsl(var(--foreground)/0.06)]">
                 <div className="p-6 flex flex-col h-full">
-                  <p className="text-gold text-[0.55rem] tracking-[0.2em] uppercase font-bold mb-3">{article.category}</p>
-                  <h3 className="font-display text-base font-medium text-foreground mb-3 leading-snug group-hover:text-gold transition-colors duration-300">
+                  <p className="text-gold/80 text-[0.5rem] tracking-[0.22em] uppercase font-semibold mb-3">{article.category}</p>
+                  <h3 className="font-display text-[15px] font-medium text-foreground/80 mb-3 leading-[1.35] group-hover:text-gold transition-colors duration-[400ms] tracking-[0.01em]">
                     {article.title}
                   </h3>
-                  <p className="text-muted-foreground/60 text-[13px] font-light leading-relaxed flex-1">{article.excerpt}</p>
-                  <span className="mt-4 text-gold/70 text-[0.55rem] tracking-[0.2em] uppercase font-semibold group-hover:text-gold transition-colors duration-300">
+                  <p className="text-muted-foreground/50 text-[13px] font-light leading-[1.75] flex-1">{article.excerpt}</p>
+                  <span className="mt-5 text-gold/50 text-[0.5rem] tracking-[0.22em] uppercase font-semibold group-hover:text-gold transition-colors duration-[400ms]">
                     READ MORE →
                   </span>
                 </div>
@@ -578,13 +586,15 @@ const InsightsSection = () => (
           </div>
         </ScrollReveal>
 
-        <div className="text-center mt-14">
-          <Link to="/blog"
-            className="inline-block border border-foreground/20 text-foreground px-10 py-[0.9rem] hover:bg-gold hover:text-white hover:border-gold transition-all duration-300"
-            style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.6rem", letterSpacing: "0.25em", textTransform: "uppercase", fontWeight: 600 }}>
-            EXPLORE ALL INSIGHTS
-          </Link>
-        </div>
+        <ScrollReveal delay={200}>
+          <div className="text-center mt-16">
+            <Link to="/blog"
+              className="inline-block border border-foreground/15 text-foreground px-10 py-[0.9rem] hover:bg-gold hover:text-white hover:border-gold transition-all duration-[400ms]"
+              style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.58rem", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 600 }}>
+              EXPLORE ALL INSIGHTS
+            </Link>
+          </div>
+        </ScrollReveal>
       </div>
     </div>
   </section>
@@ -618,32 +628,36 @@ const LeadCapture = () => {
   };
 
   return (
-    <section className="py-20 md:py-28 bg-background">
+    <section className="py-24 md:py-32 bg-background">
       <div className="container mx-auto px-6">
-        <div className="max-w-[640px] mx-auto text-center">
+        <div className="max-w-[580px] mx-auto text-center">
           <ScrollReveal>
-            <p className="text-minimal text-gold mb-5 font-extrabold">EXCLUSIVE ACCESS</p>
-            <h2 className="font-display text-3xl md:text-[2.8rem] font-light text-architectural mb-5 leading-[1.12]">
+            <p className="text-minimal text-gold mb-5 font-extrabold tracking-[0.22em]">EXCLUSIVE ACCESS</p>
+          </ScrollReveal>
+          <ScrollReveal delay={80}>
+            <h2 className="font-display text-3xl md:text-[2.5rem] font-light text-foreground/90 mb-5 leading-[1.1] tracking-[-0.01em]">
               Get Access to <span className="italic">Off-Market</span> Opportunities
             </h2>
-            <p className="text-muted-foreground text-[15px] font-light leading-relaxed mb-10 max-w-md mx-auto">
+          </ScrollReveal>
+          <ScrollReveal delay={150}>
+            <p className="text-muted-foreground/55 text-[15px] font-light leading-[1.8] mb-12 max-w-[420px] mx-auto">
               Be the first to see private listings and exclusive opportunities before they hit the market.
             </p>
 
             {submitted ? (
               <div className="py-8">
-                <p className="text-gold font-display text-xl">Thank you for requesting access.</p>
-                <p className="text-muted-foreground text-sm mt-2 font-light">We'll be in touch shortly with exclusive opportunities.</p>
+                <p className="text-gold font-display text-xl font-light">Thank you for requesting access.</p>
+                <p className="text-muted-foreground/50 text-sm mt-3 font-light">We'll be in touch shortly with exclusive opportunities.</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
                 <input type="text" placeholder="Your Name" value={name} onChange={(e) => setName(e.target.value)}
-                  className="flex-1 bg-card border border-border/50 px-5 py-3.5 text-sm text-foreground placeholder:text-muted-foreground/40 focus:outline-none focus:border-gold/50 transition-colors" />
+                  className="flex-1 bg-card border border-border/30 px-5 py-3.5 text-sm text-foreground/80 placeholder:text-muted-foreground/35 focus:outline-none focus:border-gold/40 transition-colors duration-[400ms]" />
                 <input type="email" placeholder="Email Address" required value={email} onChange={(e) => setEmail(e.target.value)}
-                  className="flex-1 bg-card border border-border/50 px-5 py-3.5 text-sm text-foreground placeholder:text-muted-foreground/40 focus:outline-none focus:border-gold/50 transition-colors" />
+                  className="flex-1 bg-card border border-border/30 px-5 py-3.5 text-sm text-foreground/80 placeholder:text-muted-foreground/35 focus:outline-none focus:border-gold/40 transition-colors duration-[400ms]" />
                 <button type="submit" disabled={loading}
-                  className="border border-foreground/20 text-foreground px-8 py-3.5 hover:bg-gold hover:text-white hover:border-gold transition-all duration-300 disabled:opacity-50"
-                  style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.6rem", letterSpacing: "0.25em", textTransform: "uppercase", fontWeight: 600 }}>
+                  className="border border-foreground/15 text-foreground px-8 py-3.5 hover:bg-gold hover:text-white hover:border-gold transition-all duration-[400ms] disabled:opacity-50"
+                  style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.58rem", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 600 }}>
                   {loading ? "SENDING..." : "REQUEST ACCESS"}
                 </button>
               </form>
@@ -660,26 +674,30 @@ const LeadCapture = () => {
    ───────────────────────────────────────────── */
 
 const FinalCTA = () => (
-  <section className="py-20 md:py-28 bg-primary">
+  <section className="py-24 md:py-32 bg-primary">
     <div className="container mx-auto px-6">
-      <div className="max-w-[800px] mx-auto text-center">
+      <div className="max-w-[700px] mx-auto text-center">
         <ScrollReveal>
-          <p className="text-minimal text-gold mb-5 font-extrabold">GET STARTED</p>
-          <h2 className="font-display text-3xl md:text-[2.8rem] font-light text-primary-foreground mb-5 leading-[1.12]">
+          <p className="text-minimal text-gold mb-5 font-extrabold tracking-[0.22em]">GET STARTED</p>
+        </ScrollReveal>
+        <ScrollReveal delay={80}>
+          <h2 className="font-display text-3xl md:text-[2.5rem] font-light text-primary-foreground/90 mb-5 leading-[1.1] tracking-[-0.01em]">
             Work With <span className="italic">Echelon Property Group</span>
           </h2>
-          <p className="text-primary-foreground/50 text-[15px] font-light leading-relaxed mb-10 max-w-md mx-auto">
+        </ScrollReveal>
+        <ScrollReveal delay={150}>
+          <p className="text-primary-foreground/40 text-[15px] font-light leading-[1.8] mb-12 max-w-[400px] mx-auto">
             Luxury real estate, redefined through strategy, access, and execution.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-5 justify-center">
             <Link to="/buy"
-              className="inline-block bg-warm-cream text-foreground px-12 py-[1rem] text-center hover:bg-gold hover:text-white transition-all duration-300"
-              style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.6rem", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 700 }}>
+              className="inline-block bg-warm-cream text-foreground px-12 py-[1rem] text-center hover:bg-gold hover:text-white transition-all duration-[400ms]"
+              style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.58rem", letterSpacing: "0.3em", textTransform: "uppercase", fontWeight: 600 }}>
               BUY A HOME
             </Link>
             <Link to="/sell"
-              className="inline-block border border-primary-foreground/20 text-primary-foreground/70 px-12 py-[1rem] text-center hover:bg-gold hover:text-white hover:border-gold transition-all duration-300"
-              style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.6rem", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 400 }}>
+              className="inline-block border border-primary-foreground/15 text-primary-foreground/60 px-12 py-[1rem] text-center hover:bg-gold hover:text-white hover:border-gold transition-all duration-[400ms]"
+              style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.58rem", letterSpacing: "0.3em", textTransform: "uppercase", fontWeight: 400 }}>
               SELL YOUR HOME
             </Link>
           </div>

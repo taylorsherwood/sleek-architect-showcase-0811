@@ -393,7 +393,7 @@ const Buy = () => {
       </section>
 
       {/* ── The Buying Process ── */}
-      <section className="pt-8 pb-28 bg-background">
+      <section className="pt-20 pb-28 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
             <div className="mb-16">

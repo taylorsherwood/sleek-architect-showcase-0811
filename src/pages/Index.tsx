@@ -358,7 +358,7 @@ const useCountUp = (target: number, duration = 2600) => {
 const stats = [
   { value: 100, suffix: "M+", prefix: "$", label: "Career Sales Volume" },
   { value: 200, suffix: "+", prefix: "", label: "Transactions Closed" },
-  { value: 15, suffix: "+", prefix: "", label: "Years of Experience" },
+  { value: 12, suffix: "+", prefix: "", label: "Years of Experience" },
   { value: 250, suffix: "M+", prefix: "$", label: "Off-Market Access" },
 ];
 

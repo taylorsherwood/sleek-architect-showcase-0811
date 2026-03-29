@@ -368,7 +368,7 @@ const OffMarketDealsAustin = () => {
 
             {/* How Echelon Helps */}
             <section id="how-echelon-helps" className="space-y-[18px] mb-14">
-              <h2 className="text-2xl md:text-3xl font-display font-light text-foreground mb-4">How Echelon Property Group Helps Buyers Access Better Opportunities</h2>
+              <h2 className="text-2xl md:text-3xl font-display font-light text-foreground mb-4">Working With an Austin Advisor to Access Private Deals</h2>
               <p className="text-foreground/60">
                 At Echelon Property Group, the focus is not just on what is publicly listed. It is on helping clients identify and access opportunities that align with their goals across luxury, land, development, and investment categories.
               </p>

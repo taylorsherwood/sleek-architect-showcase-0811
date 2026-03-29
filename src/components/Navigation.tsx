@@ -41,25 +41,20 @@ const Navigation = () => {
   }, [location.pathname]);
 
   const links: NavLink[] = [
-    { href: "/", label: "HOME" },
     {
-      href: "/listings",
-      label: "LISTINGS",
+      href: "/search",
+      label: "SEARCH HOMES",
       children: [
-        { href: "/listings", label: "ECHELON LISTINGS" },
+        { href: "/search", label: "SEARCH ALL HOMES" },
         { href: "/austin-luxury-homes-for-sale", label: "AUSTIN LUXURY HOMES" },
-        { href: "/listings/commercial-investment-austin", label: "COMMERCIAL & INVESTMENT" },
-        { href: "/off-market-real-estate-austin", label: "PRIVATE LISTINGS" },
         { href: "/past-transactions", label: "PAST TRANSACTIONS" },
       ],
     },
     { href: "/buy", label: "BUY" },
     { href: "/sell", label: "SELL" },
-    { href: "/invest", label: "INVEST" },
-    { href: "/listings/commercial-investment-austin", label: "COMMERCIAL" },
     { href: "/communities", label: "COMMUNITIES" },
-    { href: "/about", label: "ABOUT" },
-    { href: "/blog", label: "BLOG" },
+    { href: "/blog", label: "INSIGHTS" },
+    { href: "/invest", label: "PRIVATE ACCESS" },
   ];
 
   const isActive = (link: NavLink) =>
@@ -153,22 +148,14 @@ const Navigation = () => {
         </div>
 
         {/* Desktop action buttons */}
-        <div className="hidden lg:flex items-center space-x-4 shrink-0 ml-4 xl:ml-8">
+        <div className="hidden lg:flex items-center shrink-0 ml-4 xl:ml-8">
           <a
             href="https://echelonpropertygroup.outportal.ai"
             target="_blank"
             rel="noopener noreferrer nofollow"
-            className="whitespace-nowrap text-[0.65rem] tracking-[0.18em] uppercase font-medium border border-border/60 text-muted-foreground hover:bg-primary hover:text-white px-5 py-2.5 min-h-[38px] inline-flex items-center transition-all duration-400"
+            className="whitespace-nowrap text-[0.6rem] tracking-[0.18em] uppercase font-normal text-muted-foreground/50 hover:text-foreground transition-colors duration-400"
           >
             CLIENT PORTAL
-          </a>
-          <a
-            href="https://taylorsherwood.realscout.com/"
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-            className="whitespace-nowrap text-[0.65rem] tracking-[0.18em] uppercase font-medium text-primary-foreground bg-primary hover:bg-gold hover:text-primary-foreground px-6 py-2.5 min-h-[38px] inline-flex items-center transition-all duration-400"
-          >
-            SEARCH HOMES
           </a>
         </div>
 
@@ -241,18 +228,10 @@ const Navigation = () => {
             )}
             <div className="pt-6 space-y-4 border-t border-border/30">
               <a
-                href="https://taylorsherwood.realscout.com/"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                className="block text-minimal tracking-[0.2em] text-primary-foreground bg-primary px-4 py-3.5 text-center transition-colors duration-300"
-              >
-                SEARCH HOMES
-              </a>
-              <a
                 href="https://echelonpropertygroup.outportal.ai"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                className="block text-minimal tracking-[0.2em] border border-border/50 text-muted-foreground hover:bg-primary hover:text-white px-4 py-3.5 text-center transition-colors duration-300"
+                className="block text-minimal tracking-[0.2em] text-muted-foreground/50 px-4 py-3.5 text-center transition-colors duration-300"
               >
                 CLIENT PORTAL
               </a>

@@ -150,14 +150,14 @@ const Hero = () => {
 
           <div className="flex flex-col sm:flex-row gap-5" style={anim("0.4s")}>
             <Link to="/austin-luxury-homes-for-sale"
-              className="hero-cta-btn inline-block bg-warm-cream text-foreground px-12 py-[1.1rem] text-center hover:bg-gold hover:text-white border border-white/10 shadow-[0_8px_24px_rgba(0,0,0,0.35)]"
+              className="inline-block bg-warm-cream text-foreground px-12 py-[1.05rem] text-center hover:bg-gold hover:text-white border border-white/10 shadow-[0_8px_24px_rgba(0,0,0,0.35)] transition-all duration-300"
               style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.58rem", letterSpacing: "0.3em", textTransform: "uppercase", fontWeight: 600 }}>
               EXPLORE LUXURY HOMES
             </Link>
             <Link to="/off-market-real-estate-austin"
-              className="hero-cta-btn inline-block bg-transparent border border-warm-cream/20 text-warm-cream/70 px-12 py-[1.1rem] text-center hover:bg-gold hover:text-white hover:border-gold transition-all duration-300"
+              className="inline-block bg-transparent border border-warm-cream/20 text-warm-cream/70 px-12 py-[1.05rem] text-center hover:bg-gold hover:text-white hover:border-gold transition-all duration-300"
               style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.58rem", letterSpacing: "0.3em", textTransform: "uppercase", fontWeight: 400 }}>
-              REQUEST OFF-MARKET ACCESS
+              REQUEST PRIVATE ACCESS
             </Link>
           </div>
         </div>
@@ -272,7 +272,7 @@ const AdvisorSection = () => (
             </ScrollReveal>
 
             <ScrollReveal delay={120}>
-              <p className="text-foreground/90 text-lg md:text-[1.2rem] font-medium leading-[1.45] mb-10">
+              <p className="text-foreground text-lg md:text-[1.3rem] font-medium leading-[1.4] mb-12 tracking-[-0.01em]">
                 We don't sell homes. We deliver access, strategy, and discretion.
               </p>
             </ScrollReveal>
@@ -284,8 +284,8 @@ const AdvisorSection = () => (
                 </p>
                 <p className="text-foreground/70 text-[15px] leading-[1.8] font-light">
                   I work with a select group of clients to acquire and position high-value
-                  properties across Austin — including private and off-market opportunities
-                  not publicly available.
+                  properties across Austin — including private opportunities
+                  not available through traditional channels.
                 </p>
                 <p className="text-foreground/70 text-[15px] leading-[1.8] font-light">
                   Every decision is guided by market intelligence, negotiation leverage,
@@ -425,7 +425,7 @@ const FeaturedProperties = () => (
               Exceptional <span className="italic">Properties</span>
             </h2>
             <p className="text-muted-foreground/60 text-[15px] max-w-lg font-light leading-[1.8]">
-              A curated selection of luxury homes, including private and off-market opportunities.
+              A curated selection of on-market and private opportunities.
             </p>
           </div>
         </ScrollReveal>
@@ -657,7 +657,7 @@ const insights = [
 ];
 
 const InsightsSection = () => (
-  <section className="py-16 md:py-20 pb-10 md:pb-14 bg-secondary">
+  <section className="py-20 md:py-24 bg-secondary">
     <div className="container mx-auto px-6">
       <div className="max-w-[1320px] mx-auto">
         <ScrollReveal>
@@ -731,7 +731,7 @@ const LeadCapture = () => {
   };
 
   return (
-    <section className="py-10 md:py-14" style={{ background: "#F8F7F5" }}>
+    <section className="py-16 md:py-20" style={{ background: "#F8F7F5" }}>
       <div className="container mx-auto px-6">
         <div className="max-w-[460px] mx-auto text-center">
           <ScrollReveal>
@@ -739,7 +739,7 @@ const LeadCapture = () => {
           </ScrollReveal>
           <ScrollReveal delay={80}>
             <h2 className="font-display text-2xl md:text-[1.85rem] font-light mb-3 leading-[1.15] tracking-[-0.01em]" style={{ color: "#1A1C20" }}>
-              Get Access to <span className="italic">Off-Market</span> Opportunities
+              Private Opportunities, <span className="italic">Before They're Public</span>
             </h2>
           </ScrollReveal>
           <ScrollReveal delay={150}>
@@ -828,7 +828,7 @@ const NoscriptFallback = () => (
     <section className="py-16 bg-background">
       <div className="container mx-auto px-6 max-w-4xl">
         <h2 className="text-3xl font-light mb-6">Austin Luxury Real Estate Services</h2>
-        <p className="mb-4">Echelon Property Group provides full-service luxury real estate advisory across Austin, Texas.</p>
+        <p className="mb-4">Echelon Property Group provides strategic luxury real estate advisory across Austin, Texas.</p>
         <ul className="list-disc pl-6 mb-6 space-y-2">
           <li>Luxury residential sales in Westlake Hills, Barton Creek, Lake Austin, Tarrytown, and Rollingwood</li>
           <li>Off-market and private listing opportunities</li>

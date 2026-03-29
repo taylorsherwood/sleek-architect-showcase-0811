@@ -104,33 +104,35 @@ const IntroSection = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div>
-              <p className="text-minimal text-gold mb-4 font-extrabold">
-                THE ECHELON DIFFERENCE
-              </p>
-              <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-8 whitespace-pre-line">Performance That Speaks{"\n"}for Itself</h2>
-              <div className="space-y-6 text-muted-foreground leading-relaxed">
-                <p className="whitespace-pre-line">
-                  At Echelon Property Group we believe real estate is more than
-                  transactions—it's about creating opportunities and building
-                  lasting relationships. With expertise across residential,
-                  commercial, and investment properties, our team provides
-                  clients with clear guidance, innovative strategies, and
-                  personalized service at every step. Whether you're <Link to="/buy-homes-austin" className="text-foreground underline hover:text-gold transition-colors">buying your
-                  first home</Link>, scaling a portfolio, or <Link to="/sell-home-austin" className="text-foreground underline hover:text-gold transition-colors">positioning a property for
-                  market</Link>, we bring the local expertise and sharp negotiation
-                  skills you need to achieve your goals.{"\n\n"}<em>Buy. Sell.
-                  Invest.</em>
+            <ScrollReveal>
+              <div>
+                <p className="text-minimal text-gold mb-4 font-extrabold">
+                  THE ECHELON DIFFERENCE
                 </p>
+                <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-8 whitespace-pre-line">Performance That Speaks{"\n"}for Itself</h2>
+                <div className="space-y-6 text-muted-foreground leading-relaxed">
+                  <p className="whitespace-pre-line">
+                    At Echelon Property Group we believe real estate is more than
+                    transactions—it's about creating opportunities and building
+                    lasting relationships. With expertise across residential,
+                    commercial, and investment properties, our team provides
+                    clients with clear guidance, innovative strategies, and
+                    personalized service at every step. Whether you're <Link to="/buy-homes-austin" className="text-foreground underline hover:text-gold transition-colors">buying your
+                    first home</Link>, scaling a portfolio, or <Link to="/sell-home-austin" className="text-foreground underline hover:text-gold transition-colors">positioning a property for
+                    market</Link>, we bring the local expertise and sharp negotiation
+                    skills you need to achieve your goals.{"\n\n"}<em>Buy. Sell.
+                    Invest.</em>
+                  </p>
+                </div>
+                <Link
+                  to="/about"
+                  className="inline-block mt-8 text-minimal text-foreground hover:text-gold transition-colors duration-300 relative group">
+                  
+                  LEARN MORE ABOUT US
+                  <span className="absolute bottom-0 left-0 w-0 h-px bg-gold group-hover:w-full transition-all duration-300" />
+                </Link>
               </div>
-              <Link
-                to="/about"
-                className="inline-block mt-8 text-minimal text-foreground hover:text-gold transition-colors duration-300 relative group">
-                
-                LEARN MORE ABOUT US
-                <span className="absolute bottom-0 left-0 w-0 h-px bg-gold group-hover:w-full transition-all duration-300" />
-              </Link>
-            </div>
+            </ScrollReveal>
 
             <div className="space-y-6">
               {/* Stats grid */}

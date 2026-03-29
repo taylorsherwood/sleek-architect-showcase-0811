@@ -202,7 +202,7 @@ const OffMarketDealsAustin = () => {
 
             {/* What Is an Off-Market Deal */}
             <section id="what-is-off-market" className="space-y-[18px] mb-14">
-              <h2 className="text-2xl md:text-3xl font-display font-light text-foreground mb-4">What Is an Off-Market Real Estate Deal?</h2>
+              <h2 className="text-2xl md:text-3xl font-display font-light text-foreground mb-4">What Are Off-Market Real Estate Deals in Austin?</h2>
               <p className="text-foreground/60">
                 Off-market real estate refers to properties that are available for sale but are not publicly listed on the MLS or major consumer portals. These are sometimes called private listings, pocket listings, or whisper listings.
               </p>

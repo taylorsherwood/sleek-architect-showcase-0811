@@ -56,8 +56,6 @@ const BestLuxuryNeighborhoods = () => {
         </div>
       </section>
 
-      <div className="h-12 md:h-20" aria-hidden="true" />
-
       <article className="pb-24">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto space-y-12">

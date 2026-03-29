@@ -1,4 +1,5 @@
 import { lazy, Suspense, useMemo } from "react";
+import AboutBlock from "@/components/AboutBlock";
 import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { realEstateAgentSchema, createFAQSchema } from "@/components/SchemaMarkup";

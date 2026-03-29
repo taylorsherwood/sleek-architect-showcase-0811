@@ -715,47 +715,47 @@ const LeadCapture = () => {
   };
 
   return (
-    <section className="py-24 md:py-32 bg-background">
+    <section className="py-14 md:py-20" style={{ background: "#F8F7F5" }}>
       <div className="container mx-auto px-6">
-        <div className="max-w-[580px] mx-auto text-center">
+        <div className="max-w-[460px] mx-auto text-center">
           <ScrollReveal>
-            <p className="text-minimal text-gold mb-5 font-extrabold tracking-[0.22em]">EXCLUSIVE ACCESS</p>
+            <p className="text-minimal text-gold mb-3 font-extrabold tracking-[0.22em]" style={{ fontSize: "0.6rem" }}>EXCLUSIVE ACCESS</p>
           </ScrollReveal>
           <ScrollReveal delay={80}>
-            <h2 className="font-display text-3xl md:text-[2.5rem] font-light text-foreground/90 mb-5 leading-[1.1] tracking-[-0.01em]">
+            <h2 className="font-display text-2xl md:text-[1.85rem] font-light mb-3 leading-[1.15] tracking-[-0.01em]" style={{ color: "#1A1C20" }}>
               Get Access to <span className="italic">Off-Market</span> Opportunities
             </h2>
           </ScrollReveal>
           <ScrollReveal delay={150}>
-            <p className="text-muted-foreground/55 text-[15px] font-light leading-[1.8] mb-12 max-w-[420px] mx-auto">
+            <p className="text-[14px] font-light leading-[1.7] mb-7 max-w-[380px] mx-auto" style={{ color: "rgba(26,28,32,0.65)" }}>
               Be the first to see private listings and exclusive opportunities before they hit the market.
             </p>
 
             {submitted ? (
-              <div className="py-8">
-                <p className="text-gold font-display text-xl font-light">Thank you for requesting access.</p>
-                <p className="text-muted-foreground/50 text-sm mt-3 font-light">We'll be in touch shortly with exclusive opportunities.</p>
+              <div className="py-6">
+                <p className="font-display text-lg font-light" style={{ color: "#C6A85B" }}>Thank you for requesting access.</p>
+                <p className="text-sm mt-2 font-light" style={{ color: "rgba(26,28,32,0.55)" }}>We'll be in touch shortly with exclusive opportunities.</p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="max-w-lg mx-auto">
-                <div className="flex flex-col sm:flex-row items-stretch rounded-lg overflow-hidden" style={{ border: "1px solid rgba(0,0,0,0.08)", boxShadow: "0 2px 16px rgba(0,0,0,0.04)" }}>
+              <form onSubmit={handleSubmit} className="max-w-[420px] mx-auto">
+                <div className="flex flex-col gap-2.5 mb-3">
                   <input type="text" placeholder="Your Name" value={name} onChange={(e) => setName(e.target.value)}
-                    className="flex-1 bg-background px-5 py-[14px] text-[13px] text-foreground/80 placeholder:text-foreground/35 focus:outline-none transition-colors duration-300 border-b sm:border-b-0 sm:border-r border-[rgba(0,0,0,0.08)] focus:bg-white"
-                    style={{ fontFamily: '"Raleway", sans-serif' }} />
+                    className="w-full px-4 py-3 text-[13px] focus:outline-none transition-all duration-300"
+                    style={{ fontFamily: '"Raleway", sans-serif', background: "#FFFFFF", border: "1px solid rgba(0,0,0,0.1)", borderRadius: "4px", color: "#1A1C20", }} />
                   <input type="email" placeholder="Email Address" required value={email} onChange={(e) => setEmail(e.target.value)}
-                    className="flex-1 bg-background px-5 py-[14px] text-[13px] text-foreground/80 placeholder:text-foreground/35 focus:outline-none transition-colors duration-300 border-b sm:border-b-0 sm:border-r border-[rgba(0,0,0,0.08)] focus:bg-white"
-                    style={{ fontFamily: '"Raleway", sans-serif' }} />
-                  <button type="submit" disabled={loading}
-                    className="shrink-0 px-7 py-[14px] text-white disabled:opacity-50 transition-all duration-[250ms] ease-out hover:-translate-y-[1px] active:translate-y-0"
-                    style={{
-                      fontFamily: '"Raleway", sans-serif', fontSize: "13px", letterSpacing: "0.08em", fontWeight: 500,
-                      background: loading ? "#0C0F24" : "#0C0F24",
-                    }}
-                    onMouseEnter={(e) => { if (!loading) { e.currentTarget.style.background = "#C6A85B"; e.currentTarget.style.color = "#0C0F24"; }}}
-                    onMouseLeave={(e) => { e.currentTarget.style.background = "#0C0F24"; e.currentTarget.style.color = "#FFFFFF"; }}>
-                    {loading ? "Sending..." : "Unlock Private Access"}
-                  </button>
+                    className="w-full px-4 py-3 text-[13px] focus:outline-none transition-all duration-300"
+                    style={{ fontFamily: '"Raleway", sans-serif', background: "#FFFFFF", border: "1px solid rgba(0,0,0,0.1)", borderRadius: "4px", color: "#1A1C20", }} />
                 </div>
+                <button type="submit" disabled={loading}
+                  className="w-full py-3 text-white disabled:opacity-50 transition-all duration-[250ms] ease-out hover:-translate-y-[1px] active:translate-y-0"
+                  style={{
+                    fontFamily: '"Raleway", sans-serif', fontSize: "12px", letterSpacing: "0.12em", fontWeight: 500,
+                    background: "#0C0F24", borderRadius: "4px",
+                  }}
+                  onMouseEnter={(e) => { if (!loading) { e.currentTarget.style.background = "#C6A85B"; e.currentTarget.style.color = "#0C0F24"; }}}
+                  onMouseLeave={(e) => { e.currentTarget.style.background = "#0C0F24"; e.currentTarget.style.color = "#FFFFFF"; }}>
+                  {loading ? "Sending..." : "Unlock Private Access"}
+                </button>
               </form>
             )}
           </ScrollReveal>

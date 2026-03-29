@@ -541,7 +541,7 @@ const Buy = () => {
       </section>
 
       {/* ── CTA / Contact Form ── */}
-      <section id="buyer-consultation" className="py-28 bg-[#0C0F24]">
+      <section id="buyer-consultation" className="py-28 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-start">
             <div>

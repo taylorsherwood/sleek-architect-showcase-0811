@@ -50,8 +50,7 @@ const RealScoutSearch = () => {
 
   return (
     <section id="realscout-search" className="bg-background pt-16 pb-12 md:pt-20 md:pb-16">
-      <section id="realscout-search" className="bg-background pt-16 pb-12 md:pt-20 md:pb-16">
-        <div className="container mx-auto px-6">
+      <div className="container mx-auto px-6">
           <div className="mx-auto max-w-3xl">
             <header className="mb-12 md:mb-16 text-center">
               <p

@@ -42,6 +42,7 @@ const staticRoutes = [
   "/why-billionaires-are-moving-to-austin",
   "/off-market-real-estate-austin",
   "/austin-land-development-opportunities",
+  "/austin-luxury-real-estate-market-report",
 ];
 
 const extractAll = (file: string, pattern: RegExp): string[] => {

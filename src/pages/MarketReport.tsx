@@ -240,6 +240,7 @@ const MarketReport = () => {
               Explore Austin Real Estate
             </h2>
             <div className="grid sm:grid-cols-2 gap-4">
+              <Link to="/austin-luxury-real-estate-market-report" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ FULL LUXURY MARKET REPORT</Link>
               <Link to="/austin-multifamily-report-2026" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ AUSTIN MULTIFAMILY REPORT 2026</Link>
               <Link to="/austin-land-development-opportunities" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ LAND DEVELOPMENT OPPORTUNITIES</Link>
               <Link to="/best-luxury-neighborhoods-in-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ BEST LUXURY NEIGHBORHOODS</Link>

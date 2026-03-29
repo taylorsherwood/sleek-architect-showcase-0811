@@ -485,13 +485,20 @@ const FeaturedProperties = () => (
 
             {/* Off-market card */}
             <Link to="/off-market-real-estate-austin" className="group block md:col-span-2 md:max-w-[calc(50%-1.25rem)]">
-              <div className="relative overflow-hidden aspect-[4/3] bg-gradient-to-br from-primary via-primary to-primary/80 flex items-center justify-center transition-all duration-[600ms] group-hover:from-gold group-hover:via-gold group-hover:to-gold/80">
+              <div className="relative overflow-hidden aspect-[4/3] bg-gradient-to-br from-primary via-primary to-primary/80 flex items-center justify-center">
                 <img src="/static-assets/echelon-logo-gold-square.png" alt="Echelon Property Group"
-                  className="w-1/2 h-auto object-contain transition-all duration-[500ms] group-hover:brightness-0 group-hover:invert"
+                  className="w-1/2 h-auto object-contain transition-transform duration-[700ms] ease-out group-hover:scale-[1.06]"
                   loading="lazy" decoding="async" />
+                {/* Frosted View Property button on hover */}
+                <div className="absolute inset-0 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
+                  <span className="bg-white/20 backdrop-blur-md text-white border border-white/30 px-6 py-2.5 rounded-lg font-medium"
+                    style={{ fontSize: "0.65rem", letterSpacing: "0.15em", textTransform: "uppercase" }}>
+                    View Property
+                  </span>
+                </div>
               </div>
               <div className="mt-5 px-1 text-center">
-                <h3 className="text-[15px] font-display font-medium mb-1.5 text-foreground/85 group-hover:text-muted-foreground transition-colors duration-[400ms]">
+                <h3 className="text-[15px] font-display font-medium mb-1.5 text-foreground/85">
                   Access Off-Market Opportunities
                 </h3>
                 <p className="text-[13px] text-muted-foreground/50 font-light leading-relaxed">

@@ -299,9 +299,10 @@ const AdvisorSection = () => (
                   WORK WITH ME
                 </Link>
                 <Link to="/past-transactions"
-                  className="inline-flex items-center text-muted-foreground/55 hover:text-gold transition-colors duration-[400ms] pt-3 sm:pt-0 sm:self-center"
+                  className="relative inline-flex items-center text-muted-foreground/55 hover:text-gold transition-colors duration-[400ms] pt-3 sm:pt-0 sm:self-center group/link"
                   style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.58rem", letterSpacing: "0.2em", textTransform: "uppercase", fontWeight: 500 }}>
                   VIEW PAST TRANSACTIONS →
+                  <span className="absolute bottom-0 left-0 w-full h-px bg-gold scale-x-0 group-hover/link:scale-x-100 transition-transform duration-500 origin-left" />
                 </Link>
               </div>
             </ScrollReveal>

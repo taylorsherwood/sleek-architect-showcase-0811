@@ -188,13 +188,13 @@ const OffMarketRealEstateAustin = () => {
 
       {/* ── Minimal header ──────────────────────────── */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-[hsl(220,15%,8%)]/60 backdrop-blur-[6px] border-b border-white/[0.03]">
-        <div className="container mx-auto px-6 h-11 flex items-center justify-between">
-          <Link to="/" className="text-white/[0.85] hover:text-gold transition-colors tracking-[0.18em] uppercase font-sans" style={{ fontSize: "0.7rem" }}>
+        <div className="container mx-auto px-6 h-14 flex items-center justify-between">
+          <Link to="/" className="text-white/[0.85] hover:text-gold transition-colors tracking-[0.18em] uppercase font-sans" style={{ fontSize: "0.8rem" }}>
             Echelon Property Group
           </Link>
           <button
             onClick={scrollToForm}
-            className="text-[hsl(var(--gold))]/80 hover:text-white transition-colors tracking-[0.12em] uppercase font-sans" style={{ fontSize: "0.65rem" }}
+            className="text-[hsl(var(--gold))]/80 hover:text-white transition-colors tracking-[0.12em] uppercase font-sans" style={{ fontSize: "0.75rem" }}
           >
             Request Access
           </button>

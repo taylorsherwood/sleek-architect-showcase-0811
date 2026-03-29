@@ -336,7 +336,7 @@ const OffMarketDealsAustin = () => {
 
             {/* Where Buyers Go Wrong */}
             <section id="where-buyers-go-wrong" className="space-y-[18px] mb-14">
-              <h2 className="text-2xl md:text-3xl font-display font-light text-foreground mb-4">Where Buyers Go Wrong</h2>
+              <h2 className="text-2xl md:text-3xl font-display font-light text-foreground mb-4">Common Mistakes When Sourcing Off-Market Deals</h2>
               <p className="text-foreground/60">Many buyers make the same mistakes:</p>
               <ul className="space-y-2 text-foreground/60 pl-5">
                 <li className="flex items-start gap-3"><span className="text-gold mt-1.5 text-xs">■</span>They wait for alerts instead of creating opportunities</li>

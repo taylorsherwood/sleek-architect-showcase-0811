@@ -43,7 +43,7 @@ const Navigation = () => {
   const links: NavLink[] = [
     {
       href: "/search",
-      label: "SEARCH HOMES",
+      label: "SEARCH PROPERTIES",
       children: [
         { href: "/search", label: "SEARCH ALL HOMES" },
         { href: "/austin-luxury-homes-for-sale", label: "AUSTIN LUXURY HOMES" },

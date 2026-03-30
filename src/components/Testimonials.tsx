@@ -147,15 +147,18 @@ const Testimonials = () => {
                   )}
                 </div>
 
-                {/* Secondary logo watermark */}
-                <img
-                  src="/static-assets/echelon-secondary-logo.png"
-                  alt=""
-                  className="absolute bottom-3 right-3 w-8 h-auto pointer-events-none"
-                  aria-hidden="true"
-                  loading="lazy"
-                  decoding="async"
-                />
+              </div>
+            ))}
+          </div>
+
+          {/* Section watermark - bottom right of testimonial section */}
+          <img
+            src={echelonWatermark}
+            alt=""
+            aria-hidden="true"
+            draggable={false}
+            className="pointer-events-none select-none absolute bottom-6 right-6 w-40 md:w-56 h-auto opacity-20"
+          />
               </div>
             ))}
           </div>

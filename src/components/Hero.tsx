@@ -155,12 +155,13 @@ const Hero = () => {
 
       {/* Content */}
       <div
-        className="relative container mx-auto px-6 pt-24 md:pt-32 lg:pt-36"
-        style={{ zIndex: 2 }}>
+        className="relative container mx-auto pt-24 md:pt-32 lg:pt-36"
+        style={{ zIndex: 2, paddingLeft: "clamp(32px, 6vw, 96px)", paddingRight: "24px" }}>
         
         <div
-          className="max-w-[640px] relative"
+          className="relative"
           style={{
+            maxWidth: "620px",
             filter: "drop-shadow(0 0 80px rgba(0,0,0,0.5)) drop-shadow(0 0 120px rgba(0,0,0,0.3))"
           }}>
           

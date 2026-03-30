@@ -309,6 +309,7 @@ const Buy = () => {
         { question: "Are there luxury homes available in Austin?", answer: "Yes. Austin features some of Texas's finest luxury properties including Hill Country estates, waterfront mansions, contemporary masterpieces, and gated community homes across Westlake Hills, Barton Creek, Lake Austin, and Spanish Oaks." },
         { question: "Is Austin a good place to invest in real estate?", answer: "Austin consistently ranks among the top U.S. metros for real estate investment, driven by tech-sector growth, population in-migration, no state income tax, and limited premium inventory in supply-constrained neighborhoods." },
         { question: "How do I find off-market homes for sale in Austin?", answer: "Working with an experienced luxury agent is essential. Echelon Property Group maintains access to private and whisper listings across Austin's most prestigious neighborhoods through our brokerage network and direct relationships." },
+        { question: "What are the best neighborhoods to buy a luxury home in Austin?", answer: "Westlake Hills, Barton Creek, and Lake Austin are Austin's top luxury neighborhoods. Westlake offers top-rated Eanes ISD schools, Barton Creek provides gated country club living, and Lake Austin delivers waterfront estates with private docks." },
       ])} />
       <Navigation />
 
@@ -335,6 +336,24 @@ const Buy = () => {
               
               SCHEDULE A BUYER CONSULTATION
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* ── What You Need to Know ── */}
+      <section className="py-20 bg-secondary">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-8">
+              What You Need to Know About Buying in Austin
+            </h2>
+            <ul className="space-y-4 text-muted-foreground leading-relaxed">
+              <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Austin's luxury market starts at approximately $1 million, with premium neighborhoods like Westlake Hills, Barton Creek, and Lake Austin ranging from $1.5M to $25M+.</span></li>
+              <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Texas has no state income tax, which represents significant annual savings for buyers relocating from California, New York, or Illinois.</span></li>
+              <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Many of Austin's finest homes trade off-market through private broker networks. Working with an agent who has access to these channels is essential.</span></li>
+              <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Eanes ISD — serving Westlake Hills, Barton Creek, and Rollingwood — is consistently ranked among the top school districts in Texas.</span></li>
+              <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Austin's tech economy (Apple, Tesla, Google, Meta, Oracle) drives sustained luxury housing demand and long-term appreciation.</span></li>
+            </ul>
           </div>
         </div>
       </section>
@@ -627,6 +646,29 @@ const Buy = () => {
         </div>
       </section>
 
+      {/* ── Expert Insight ── */}
+      <section className="py-20 bg-secondary">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto">
+            <p className="text-minimal text-gold mb-4 font-extrabold">EXPERT INSIGHT</p>
+            <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
+              Is Now a Good Time to Buy in Austin?
+            </h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>
+                Based on current Austin market data, buyers in supply-constrained neighborhoods like Westlake Hills, Barton Creek, and Lake Austin are seeing a stabilized pricing environment after the post-2022 correction. Interest rate adjustments have improved purchasing power compared to 2023–2024, and inventory in premium locations remains limited.
+              </p>
+              <p>
+                For buyers with a 5+ year horizon, the strongest opportunity exists in acquiring quality properties in premium locations before the next appreciation cycle. Austin's tech-driven economy, no state income tax, and sustained in-migration from coastal states provide a durable demand foundation that supports long-term value.
+              </p>
+              <p>
+                From recent transactions in the area, we're seeing particularly strong buyer activity in the $2M–$5M range across Westlake Hills and Barton Creek. Off-market sourcing has become increasingly important — many of the best properties never reach the public MLS.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── FAQ ── */}
       <section className="py-28 bg-background">
         <div className="container mx-auto px-6">
@@ -641,6 +683,7 @@ const Buy = () => {
                 { q: "Are there luxury homes available in Austin?", a: "Yes. Austin features some of Texas's finest luxury properties including Hill Country estates, waterfront mansions, contemporary masterpieces, and gated community homes across Westlake Hills, Barton Creek, Lake Austin, and Spanish Oaks." },
                 { q: "Is Austin a good place to invest in real estate?", a: "Austin consistently ranks among the top U.S. metros for real estate investment, driven by tech-sector growth, population in-migration, no state income tax, and limited premium inventory in supply-constrained neighborhoods." },
                 { q: "How do I find off-market homes for sale in Austin?", a: "Working with an experienced luxury agent is essential. Echelon Property Group maintains access to private and whisper listings across Austin's most prestigious neighborhoods through our brokerage network and direct relationships." },
+                { q: "What are the best neighborhoods to buy a luxury home in Austin?", a: "Westlake Hills, Barton Creek, and Lake Austin are Austin's top luxury neighborhoods. Westlake offers top-rated Eanes ISD schools, Barton Creek provides gated country club living, and Lake Austin delivers waterfront estates with private docks." },
               ].map((faq, i) => (
                 <div key={i} className="border-b border-border pb-6">
                   <h3 className="text-lg font-medium text-foreground mb-2">{faq.q}</h3>

@@ -12,7 +12,7 @@ import SchemaMarkup, {
 } from "@/components/SchemaMarkup";
 import ScrollReveal from "@/components/ScrollReveal";
 import { formatPhoneNumber, getPhoneDigits, getTimestamp } from "@/lib/formUtils";
-import taylorBoatImg from "@/assets/taylor-headshot.png";
+import taylorBoatImg from "@/assets/taylor-headshot.jpeg";
 import ScrollingCredibilityStrip from "@/components/ScrollingCredibilityStrip";
 import ExpertiseSection from "@/components/ExpertiseSection";
 

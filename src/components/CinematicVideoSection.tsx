@@ -152,11 +152,12 @@ const CinematicVideoSection = () => {
 
               {/* Power line */}
               <p
-                className="text-sm font-medium text-white/85 mb-5"
+                className="text-sm font-medium mb-5"
                 style={{
                   ...reveal(visible, 300),
+                  color: "rgba(245, 245, 245, 0.85)",
                   letterSpacing: "0.12em",
-                  textShadow: "0 1px 12px rgba(0,0,0,0.1)",
+                  textShadow: "0 1px 2px rgba(0,0,0,0.25)",
                 }}
               >
                 Most agents list. We position.

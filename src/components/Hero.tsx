@@ -181,19 +181,20 @@ const Hero = () => {
           </p>
 
           <h1
-            className="font-display font-medium text-warm-cream mb-9 will-change-[opacity,transform]"
+            className="font-display text-warm-cream will-change-[opacity,transform]"
             style={{
               opacity: heroVisible ? 1 : 0,
               transform: heroVisible ? "translateY(0)" : "translateY(10px)",
               transition: "opacity 1.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s, transform 1.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s",
-              lineHeight: 1.12,
-              letterSpacing: "-0.025em",
+              fontSize: "clamp(48px, 6vw, 82px)",
+              lineHeight: 1.08,
+              letterSpacing: "0.02em",
+              fontWeight: 500,
+              marginBottom: "20px",
               textShadow: "0 2px 9px rgba(0,0,0,0.55), 0 1px 2px rgba(0,0,0,0.2)"
             }}>
-            
-            <span style={{ fontSize: "clamp(2.5rem, 5.2vw, 5.2rem)" }}>Driven By Data,</span>
-            <br />
-            <span className="italic" style={{ fontSize: "clamp(3.1rem, 6.4vw, 6.4rem)" }}>Proven by Results</span>
+            Access Austin's Most<br />
+            Exclusive Homes
           </h1>
 
           {/* Service pillars */}

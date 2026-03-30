@@ -301,7 +301,7 @@ const GlobalLuxuryAdvertising = () => {
           <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
             {/* Left – text */}
             <div className="max-w-[480px]" style={revealStyle(platforms1.visible, 0)}>
-              <p className="text-minimal text-gold/60 mb-4" style={{ letterSpacing: "0.14em" }}>LUXURY SYNDICATION</p>
+              <p className="text-minimal text-gold/80 mb-4" style={{ letterSpacing: "0.14em" }}>LUXURY SYNDICATION</p>
               <h2 className="text-3xl md:text-5xl font-display font-normal text-architectural mb-5">
                 Featured Across <br /> Recognized Luxury Media
               </h2>
@@ -313,7 +313,7 @@ const GlobalLuxuryAdvertising = () => {
 
               {/* Publication proof block */}
               <div style={revealStyle(platforms1.visible, 400)}>
-                <p className="text-minimal text-gold/50 mb-3" style={{ fontSize: "9px", letterSpacing: "0.15em" }}>
+                <p className="text-minimal text-gold/75 mb-3" style={{ fontSize: "9px", letterSpacing: "0.15em" }}>
                   SELECT MEDIA DISTRIBUTION
                 </p>
                 <div

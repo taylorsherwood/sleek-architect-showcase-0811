@@ -825,11 +825,12 @@ const insights = [
 ];
 
 const InsightsSection = () => (
-  <section className="py-20 md:py-24 bg-background">
+  <section className="bg-secondary" style={{ padding: "clamp(80px, 12vw, 160px) 0" }}>
     <div className="container mx-auto px-6">
       <div className="max-w-[1320px] mx-auto">
         <ScrollReveal>
           <div className="text-center mb-16">
+            <div className="w-10 h-px mx-auto mb-5" style={{ background: "hsl(38 39% 61%)" }} />
             <p className="text-minimal text-gold mb-5">MARKET INTELLIGENCE</p>
             <h2 className="font-display text-3xl md:text-[2.75rem] font-normal text-foreground/90 leading-[1.1] tracking-[-0.01em]">
               Insights & <span className="italic">Market Intelligence</span>

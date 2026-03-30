@@ -5,10 +5,10 @@ import mediaAbj from "@/assets/media-abj.png";
 import mediaMansionGlobal from "@/assets/media-mansion-global.png";
 
 const logos = [
-  { src: mediaWsj, alt: "The Wall Street Journal", className: "h-16 md:h-28", opacity: 0.75 },
-  { src: mediaMansionGlobal, alt: "Mansion Global", className: "h-16 md:h-28", opacity: 0.75 },
-  { src: mediaTribeza, alt: "Tribeza", className: "h-16 md:h-28", opacity: 0.75 },
-  { src: mediaAbj, alt: "Austin Business Journal", className: "h-16 md:h-28", opacity: 0.75 },
+  { src: mediaWsj, alt: "The Wall Street Journal", className: "h-16 md:h-28", opacity: 1 },
+  { src: mediaMansionGlobal, alt: "Mansion Global", className: "h-16 md:h-28", opacity: 1 },
+  { src: mediaTribeza, alt: "Tribeza", className: "h-16 md:h-28", opacity: 1 },
+  { src: mediaAbj, alt: "Austin Business Journal", className: "h-16 md:h-28", opacity: 1 },
 ];
 
 const AsSeenIn = () => {

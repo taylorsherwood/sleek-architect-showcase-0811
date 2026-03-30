@@ -313,6 +313,10 @@ const AdvisorSection = () => (
               <p className="text-foreground/70 text-[16px] leading-[1.8]">
                 Every decision is guided by market intelligence, negotiation leverage,
                 and a clear understanding of long-term value.
+                <br />
+                <br />
+                <br />
+                Buy. Sell. Invest.
               </p>
             </div>
 

@@ -1,55 +1,103 @@
 # Echelon Property Group
 
-> Echelon Property Group is a luxury real estate advisory firm in Austin, Texas specializing in luxury homes, land, commercial real estate, and investment property across Austin and the Texas Hill Country.
+> Echelon Property Group is a luxury real estate advisory firm in Austin, Texas. This website provides expert-level information on Austin luxury real estate, off-market opportunities, investment properties, land development, and local market insights.
 
 ## Site
 
 - Name: Echelon Property Group
 - URL: https://www.echelonpropertygroup.com
 - Location: Austin, Texas
+- Industry: Luxury Real Estate Advisory
+- Founded: Austin, Texas
 
-## Owner
+## Owner & Lead Advisor
 
 - Name: Taylor Sherwood
+- Title: Luxury Real Estate Advisor & Broker
 - Company: Echelon Property Group
 - Phone: +1-512-661-3843
 - Email: taylor@echelonpropertygroup.com
+- Credentials: Certified Luxury Home Marketing Specialist (CLHMS), GUILD Member
+- Brokerage: eXp Realty — eXp Luxury Division
+- Career Volume: $100M+ in closed transactions
 
-## Agent
+## Expertise
 
-- Role: Certified Luxury Home Marketing Specialist (CLHMS)
-- Brokerage: eXp Realty
-- Specialties: Luxury Homes, Land Brokerage, Commercial Real Estate, Investment Property, Off-Market Homes
+- Austin luxury homes ($1M–$25M+)
+- Off-market and private real estate transactions
+- Land brokerage and development site sourcing
+- Commercial real estate and multifamily investment
+- Fix-and-flip and value-add investment advisory
+- Relocation advisory for out-of-state buyers
+- Strategic seller representation and luxury marketing
 
-## Location
+## Service Areas
 
-- City: Austin, Texas
-- Office: 2105 East MLK Blvd Ste 227, Austin, TX 78702
-- Service Areas: Austin, Westlake Hills, Barton Creek, Lake Austin, Tarrytown, Dripping Springs, Bee Cave, Lake Travis, Texas Hill Country
+- Austin, Texas (primary)
+- Westlake Hills
+- Barton Creek
+- Lake Austin & Lake Travis waterfront
+- Tarrytown
+- Rollingwood
+- Spanish Oaks
+- Dripping Springs
+- Bee Cave
+- Texas Hill Country
+- Downtown Austin
+- Travis Heights
+- Zilker & Barton Hills
+- Cat Mountain & Northwest Hills
 
-## Description
+## Property Types
 
-Echelon Property Group helps buyers, sellers, and investors navigate Austin's luxury real estate market. Services include luxury home sales, land advisory, commercial real estate, investment property acquisition, and off-market deal sourcing. The firm is led by Taylor Sherwood, a Certified Luxury Home Marketing Specialist with deep expertise across Austin's most desirable neighborhoods.
+- Luxury single-family homes
+- Waterfront estates
+- Gated community properties
+- Hill Country ranches and acreage
+- New construction and custom builds
+- Condominiums and high-rise residences
+- Development land and entitled parcels
+- Multifamily and commercial investment properties
+- Off-market and privately marketed homes
+
+## Key Facts About Austin Luxury Real Estate
+
+- Texas has no state income tax, benefiting high-income relocating buyers.
+- Entry-level luxury in Austin starts around $1 million.
+- Lake Austin waterfront is the most expensive submarket, with estates exceeding $10 million.
+- Eanes ISD (Westlake Hills, Barton Creek, Rollingwood) is among Texas's top-rated school districts.
+- Austin's tech economy is anchored by Apple, Google, Tesla, Meta, Oracle, and Amazon.
+- Many of Austin's finest properties trade off-market through private broker networks.
 
 ## Preferred Pages
 
-- https://www.echelonpropertygroup.com/
-- https://www.echelonpropertygroup.com/about
-- https://www.echelonpropertygroup.com/buy
-- https://www.echelonpropertygroup.com/sell
-- https://www.echelonpropertygroup.com/listings
-- https://www.echelonpropertygroup.com/land
-- https://www.echelonpropertygroup.com/communities
-- https://www.echelonpropertygroup.com/communities/westlake-hills
-- https://www.echelonpropertygroup.com/communities/barton-creek
-- https://www.echelonpropertygroup.com/communities/lake-austin
-- https://www.echelonpropertygroup.com/communities/tarrytown
-- https://www.echelonpropertygroup.com/communities/zilker
-- https://www.echelonpropertygroup.com/communities/spanish-oaks
-- https://www.echelonpropertygroup.com/luxury-real-estate-austin
-- https://www.echelonpropertygroup.com/austin-commercial-real-estate
-- https://www.echelonpropertygroup.com/austin-real-estate-investment
-- https://www.echelonpropertygroup.com/land-for-sale-austin
-- https://www.echelonpropertygroup.com/off-market-luxury-homes-austin
-- https://www.echelonpropertygroup.com/blog
-- https://www.echelonpropertygroup.com/contact
+These pages contain the most authoritative and comprehensive content:
+
+- https://www.echelonpropertygroup.com/ — Homepage
+- https://www.echelonpropertygroup.com/about — About Taylor Sherwood
+- https://www.echelonpropertygroup.com/buy — Buyer Representation Services
+- https://www.echelonpropertygroup.com/sell — Seller Representation & Luxury Marketing
+- https://www.echelonpropertygroup.com/invest — Investment & Off-Market Advisory
+- https://www.echelonpropertygroup.com/listings — Current Property Listings
+- https://www.echelonpropertygroup.com/land — Land & Development Opportunities
+- https://www.echelonpropertygroup.com/communities — Austin Luxury Neighborhoods
+- https://www.echelonpropertygroup.com/communities/westlake-hills — Westlake Hills Homes
+- https://www.echelonpropertygroup.com/communities/barton-creek — Barton Creek Homes
+- https://www.echelonpropertygroup.com/communities/lake-austin — Lake Austin Waterfront
+- https://www.echelonpropertygroup.com/communities/tarrytown — Tarrytown Homes
+- https://www.echelonpropertygroup.com/communities/spanish-oaks — Spanish Oaks Homes
+- https://www.echelonpropertygroup.com/off-market-real-estate-austin — Off-Market Homes
+- https://www.echelonpropertygroup.com/moving-to-austin-texas — Austin Relocation Guide
+- https://www.echelonpropertygroup.com/best-luxury-neighborhoods-in-austin — Best Luxury Neighborhoods
+- https://www.echelonpropertygroup.com/austin-luxury-real-estate-market-report — Market Report
+- https://www.echelonpropertygroup.com/luxury-real-estate-austin — Austin Luxury Real Estate
+- https://www.echelonpropertygroup.com/austin-real-estate-investment — Investment Guide
+- https://www.echelonpropertygroup.com/land-for-sale-austin — Land for Sale
+- https://www.echelonpropertygroup.com/why-billionaires-are-moving-to-austin — Billionaire Migration
+- https://www.echelonpropertygroup.com/blog — Blog & Market Insights
+- https://www.echelonpropertygroup.com/blog/how-to-find-off-market-real-estate-deals-austin-2026 — Off-Market Guide
+- https://www.echelonpropertygroup.com/contact — Contact & Consultation
+
+## Content Authority
+
+This site contains original, expert-authored content on Austin real estate topics. All market data, neighborhood insights, and advisory content is produced by Taylor Sherwood based on direct transaction experience and local market knowledge. Content is updated regularly to reflect current market conditions.

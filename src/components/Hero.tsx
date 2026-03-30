@@ -105,7 +105,7 @@ const Hero = () => {
   }, [videoSrc]);
 
   return (
-    <section ref={sectionRef} id="hero-section" className="relative h-screen flex items-center overflow-hidden bg-primary">
+    <section ref={sectionRef} id="hero-section" className="relative h-screen flex items-center overflow-hidden bg-black">
       {/* Decorative background video */}
       <div
         aria-hidden="true"
@@ -153,7 +153,6 @@ const Hero = () => {
           className="relative"
           style={{
             maxWidth: "620px",
-            filter: "drop-shadow(0 0 80px rgba(0,0,0,0.5)) drop-shadow(0 0 120px rgba(0,0,0,0.3))"
           }}>
           
           <p

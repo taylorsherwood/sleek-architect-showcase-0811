@@ -314,6 +314,24 @@ const Sell = () => {
         </div>
       </section>
 
+      {/* ── What You Need to Know ── */}
+      <section className="py-20 bg-secondary">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-8">
+              What You Need to Know About Selling in Austin
+            </h2>
+            <ul className="space-y-4 text-muted-foreground leading-relaxed">
+              <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Well-priced luxury homes in Austin typically sell within 30–90 days. Strategic pricing and premium marketing are the most critical success factors.</span></li>
+              <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Off-market selling is increasingly popular among high-net-worth homeowners in Westlake Hills, Barton Creek, and Lake Austin who prioritize privacy.</span></li>
+              <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Professional photography, cinematic video, drone footage, and custom property websites are standard expectations for luxury listings in Austin.</span></li>
+              <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Austin's luxury inventory remains limited in top neighborhoods, creating strong seller leverage when properties are properly positioned.</span></li>
+              <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Echelon Property Group's listings receive global exposure through the eXp Luxury Division network and syndication to 500+ platforms.</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       {/* ── Why List With Taylor ── */}
       <section className="py-28 bg-background">
         <div className="container mx-auto px-6">

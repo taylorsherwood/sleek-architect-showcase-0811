@@ -339,6 +339,24 @@ const Buy = () => {
         </div>
       </section>
 
+      {/* ── What You Need to Know ── */}
+      <section className="py-20 bg-secondary">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-8">
+              What You Need to Know About Buying in Austin
+            </h2>
+            <ul className="space-y-4 text-muted-foreground leading-relaxed">
+              <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Austin's luxury market starts at approximately $1 million, with premium neighborhoods like Westlake Hills, Barton Creek, and Lake Austin ranging from $1.5M to $25M+.</span></li>
+              <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Texas has no state income tax, which represents significant annual savings for buyers relocating from California, New York, or Illinois.</span></li>
+              <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Many of Austin's finest homes trade off-market through private broker networks. Working with an agent who has access to these channels is essential.</span></li>
+              <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Eanes ISD — serving Westlake Hills, Barton Creek, and Rollingwood — is consistently ranked among the top school districts in Texas.</span></li>
+              <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Austin's tech economy (Apple, Tesla, Google, Meta, Oracle) drives sustained luxury housing demand and long-term appreciation.</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       {/* ── Why Work With Taylor ── */}
       <section className="py-28 bg-background">
         <div className="container mx-auto px-6">

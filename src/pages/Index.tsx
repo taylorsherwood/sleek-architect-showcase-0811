@@ -264,7 +264,7 @@ const TrustStrip = () => (
 const AdvisorSection = () => (
   <section className="bg-background">
     <div className="max-w-[1400px] mx-auto">
-       <div className="grid md:grid-cols-[minmax(480px,520px)_1fr] items-stretch" style={{ gap: "48px" }}>
+       <div className="grid md:grid-cols-[minmax(480px,520px)_1fr] items-stretch" style={{ gap: 0 }}>
          {/* Left — full-bleed image */}
          <div className="relative overflow-hidden w-full h-full">
           <img

@@ -150,13 +150,13 @@ const Navigation = () => {
                             ...navLinkStyle,
                             fontSize: "10px",
                             color: location.pathname === child.href
-                              ? (isScrolled ? "#fff" : "hsl(var(--foreground))")
-                              : (isScrolled ? "rgba(255,255,255,0.5)" : "hsl(var(--muted-foreground))"),
+                              ? (effectiveScrolled ? "#fff" : "hsl(var(--foreground))")
+                              : (effectiveScrolled ? "rgba(255,255,255,0.5)" : "hsl(var(--muted-foreground))"),
                           }}
-                          onMouseEnter={(e) => { e.currentTarget.style.color = isScrolled ? "#fff" : "hsl(var(--foreground))"; }}
+                          onMouseEnter={(e) => { e.currentTarget.style.color = effectiveScrolled ? "#fff" : "hsl(var(--foreground))"; }}
                           onMouseLeave={(e) => {
                             if (location.pathname !== child.href) {
-                              e.currentTarget.style.color = isScrolled ? "rgba(255,255,255,0.5)" : "hsl(var(--muted-foreground))";
+                              e.currentTarget.style.color = effectiveScrolled ? "rgba(255,255,255,0.5)" : "hsl(var(--muted-foreground))";
                             }
                           }}
                         >

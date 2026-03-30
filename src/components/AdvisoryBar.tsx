@@ -133,7 +133,7 @@ const AdvisoryBar = () => {
         {/* Gold divider */}
         <div className="h-[1.5px] bg-[hsl(var(--gold)/0.7)]" />
 
-        <div className={`${isOffMarket ? "bg-[hsl(220,15%,8%)]" : "bg-primary"} h-20 flex items-center`}>
+        <div className={`${isOffMarket ? "bg-[hsl(220,15%,8%)]" : "bg-primary"} h-20 flex items-center`} style={{ fontFamily: "'Jost', sans-serif" }}>
           <div className="container mx-auto px-4 md:px-6 flex items-center justify-between gap-4">
             {/* Text */}
             <div className="flex-1 min-w-0">
@@ -170,7 +170,7 @@ const AdvisoryBar = () => {
 
       {/* Form modal */}
       <Dialog open={modalOpen} onOpenChange={setModalOpen}>
-        <DialogContent className="sm:max-w-md bg-primary border-[hsl(var(--gold)/0.2)] gap-6 shadow-[0_0_80px_rgba(0,0,0,0.6),0_0_20px_hsl(var(--gold)/0.06)]">
+        <DialogContent className="sm:max-w-md bg-primary border-[hsl(var(--gold)/0.2)] gap-6 shadow-[0_0_80px_rgba(0,0,0,0.6),0_0_20px_hsl(var(--gold)/0.06)]" style={{ fontFamily: "'Jost', sans-serif" }}>
           {submitted ? (
             <>
               <DialogHeader className="sr-only">

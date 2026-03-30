@@ -534,17 +534,6 @@ const FeaturedProperties = () => (
                       <div className="w-full h-full" style={{ transform: "scale(1.04)" }} />
                     </div>
 
-                    {/* Badge */}
-                    {p.badge && (
-                      <div className="absolute top-5 left-5 z-20">
-                        <span style={{
-                          fontFamily: '"Jost", sans-serif', fontSize: "9px", letterSpacing: "0.18em",
-                          textTransform: "uppercase", color: "hsl(38 39% 61%)",
-                        }}>
-                          {p.badge}
-                        </span>
-                      </div>
-                    )}
 
                     {/* Bottom overlay */}
                     <div className="absolute bottom-0 left-0 right-0 px-6 pb-6 pt-8"

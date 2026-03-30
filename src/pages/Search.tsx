@@ -175,7 +175,7 @@ const SearchPage = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="mb-16">
-              <p className="text-gold text-center mb-4 font-bold" style={{ fontSize: "0.6rem", letterSpacing: "0.3em", textTransform: "uppercase", fontFamily: '"Roboto", sans-serif' }}>CURRENT INVENTORY</p>
+              <p className="text-gold text-center mb-4 font-bold" style={{ fontSize: "0.6rem", letterSpacing: "0.3em", textTransform: "uppercase", fontFamily: '"Jost", sans-serif' }}>CURRENT INVENTORY</p>
               <h2 className="font-display text-2xl md:text-3xl font-light text-foreground text-center mb-4">
                 Current Commercial Listings
               </h2>
@@ -190,23 +190,23 @@ const SearchPage = () => {
                 <div className="relative overflow-hidden">
                   <img src={gillisStreet} alt="4314 Gillis Street, Austin TX 78745 — 24-unit multifamily" className="w-full aspect-[3/2] object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" />
                   <span className="absolute top-4 left-4 text-minimal bg-gold text-white px-3 py-1 font-extrabold">MULTIFAMILY</span>
-                  <span className="absolute bottom-3 right-3 text-white text-sm font-light font-[Roboto] bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-sm">$2,500,000</span>
+                  <span className="absolute bottom-3 right-3 text-white text-sm font-light  bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-sm">$2,500,000</span>
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
-                  <h3 className="text-lg font-light text-foreground mb-1 font-[Roboto]">4314 Gillis Street</h3>
-                  <p className="text-muted-foreground mb-2 font-[Roboto]">Austin, TX 78745</p>
+                  <h3 className="text-lg font-light text-foreground mb-1 ">4314 Gillis Street</h3>
+                  <p className="text-muted-foreground mb-2 ">Austin, TX 78745</p>
                   <div className="grid grid-cols-2 gap-3 mb-4">
                     <div>
-                      <p className="text-muted-foreground mb-1" style={{ fontSize: "0.6rem", letterSpacing: "0.3em", textTransform: "uppercase", fontFamily: '"Roboto", sans-serif' }}>ASSET TYPE</p>
-                      <p className="text-foreground font-medium text-sm font-[Roboto]">Value-Add Multifamily</p>
+                      <p className="text-muted-foreground mb-1" style={{ fontSize: "0.6rem", letterSpacing: "0.3em", textTransform: "uppercase", fontFamily: '"Jost", sans-serif' }}>ASSET TYPE</p>
+                      <p className="text-foreground font-medium text-sm ">Value-Add Multifamily</p>
                     </div>
                     <div>
-                      <p className="text-muted-foreground mb-1" style={{ fontSize: "0.6rem", letterSpacing: "0.3em", textTransform: "uppercase", fontFamily: '"Roboto", sans-serif' }}>UNITS</p>
-                      <p className="text-foreground font-medium text-sm font-[Roboto]">24</p>
+                      <p className="text-muted-foreground mb-1" style={{ fontSize: "0.6rem", letterSpacing: "0.3em", textTransform: "uppercase", fontFamily: '"Jost", sans-serif' }}>UNITS</p>
+                      <p className="text-foreground font-medium text-sm ">24</p>
                     </div>
                   </div>
-                  <p className="text-muted-foreground text-sm leading-relaxed font-[Roboto] mb-4 flex-grow">24-unit value-add multifamily opportunity in South Austin. Well-positioned for rent growth and operational improvements in a high-demand rental corridor.</p>
-                  <Link to="/contact" className="border border-border/50 rounded-sm px-6 py-2 text-foreground/70 hover:bg-gold hover:text-white hover:border-gold transition-all duration-300 ease-out self-center" style={{ fontSize: "0.6rem", letterSpacing: "0.08em", textTransform: "uppercase", fontFamily: '"Roboto", sans-serif', fontWeight: 500 }}>REQUEST INFORMATION</Link>
+                  <p className="text-muted-foreground text-sm leading-relaxed  mb-4 flex-grow">24-unit value-add multifamily opportunity in South Austin. Well-positioned for rent growth and operational improvements in a high-demand rental corridor.</p>
+                  <Link to="/contact" className="border border-border/50 rounded-sm px-6 py-2 text-foreground/70 hover:bg-gold hover:text-white hover:border-gold transition-all duration-300 ease-out self-center" style={{ fontSize: "0.6rem", letterSpacing: "0.08em", textTransform: "uppercase", fontFamily: '"Jost", sans-serif', fontWeight: 500 }}>REQUEST INFORMATION</Link>
                 </div>
               </div>
 
@@ -215,23 +215,23 @@ const SearchPage = () => {
                 <div className="relative overflow-hidden">
                   <img src={sanJoseAve} alt="10811 San Jose Ave, Del Valle TX — 3.06 acres redevelopment land" className="w-full aspect-[3/2] object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" />
                   <span className="absolute top-4 left-4 text-minimal bg-gold text-white px-3 py-1 font-extrabold">DEVELOPMENT LAND</span>
-                  <span className="absolute bottom-3 right-3 text-white text-sm font-light font-[Roboto] bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-sm">$1,600,000</span>
+                  <span className="absolute bottom-3 right-3 text-white text-sm font-light  bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-sm">$1,600,000</span>
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
-                  <h3 className="text-lg font-light text-foreground mb-1 font-[Roboto]">10811 San Jose Ave</h3>
-                  <p className="text-muted-foreground mb-2 font-[Roboto]">Del Valle, TX</p>
+                  <h3 className="text-lg font-light text-foreground mb-1 ">10811 San Jose Ave</h3>
+                  <p className="text-muted-foreground mb-2 ">Del Valle, TX</p>
                   <div className="grid grid-cols-2 gap-3 mb-4">
                     <div>
-                      <p className="text-muted-foreground mb-1" style={{ fontSize: "0.6rem", letterSpacing: "0.3em", textTransform: "uppercase", fontFamily: '"Roboto", sans-serif' }}>ASSET TYPE</p>
-                      <p className="text-foreground font-medium text-sm font-[Roboto]">Redevelopment Land</p>
+                      <p className="text-muted-foreground mb-1" style={{ fontSize: "0.6rem", letterSpacing: "0.3em", textTransform: "uppercase", fontFamily: '"Jost", sans-serif' }}>ASSET TYPE</p>
+                      <p className="text-foreground font-medium text-sm ">Redevelopment Land</p>
                     </div>
                     <div>
-                      <p className="text-muted-foreground mb-1" style={{ fontSize: "0.6rem", letterSpacing: "0.3em", textTransform: "uppercase", fontFamily: '"Roboto", sans-serif' }}>UNITS</p>
-                      <p className="text-foreground font-medium text-sm font-[Roboto]">3.06 Acres</p>
+                      <p className="text-muted-foreground mb-1" style={{ fontSize: "0.6rem", letterSpacing: "0.3em", textTransform: "uppercase", fontFamily: '"Jost", sans-serif' }}>UNITS</p>
+                      <p className="text-foreground font-medium text-sm ">3.06 Acres</p>
                     </div>
                   </div>
-                  <p className="text-muted-foreground text-sm leading-relaxed font-[Roboto] mb-4 flex-grow">3.06-acre redevelopment parcel with existing mobile homes and zero zoning restrictions. Ideal for ground-up multifamily, mixed-use, or commercial development in the high-growth Del Valle corridor.</p>
-                  <Link to="/contact" className="border border-border/50 rounded-sm px-6 py-2 text-foreground/70 hover:bg-gold hover:text-white hover:border-gold transition-all duration-300 ease-out self-center" style={{ fontSize: "0.6rem", letterSpacing: "0.08em", textTransform: "uppercase", fontFamily: '"Roboto", sans-serif', fontWeight: 500 }}>REQUEST INFORMATION</Link>
+                  <p className="text-muted-foreground text-sm leading-relaxed  mb-4 flex-grow">3.06-acre redevelopment parcel with existing mobile homes and zero zoning restrictions. Ideal for ground-up multifamily, mixed-use, or commercial development in the high-growth Del Valle corridor.</p>
+                  <Link to="/contact" className="border border-border/50 rounded-sm px-6 py-2 text-foreground/70 hover:bg-gold hover:text-white hover:border-gold transition-all duration-300 ease-out self-center" style={{ fontSize: "0.6rem", letterSpacing: "0.08em", textTransform: "uppercase", fontFamily: '"Jost", sans-serif', fontWeight: 500 }}>REQUEST INFORMATION</Link>
                 </div>
               </div>
 
@@ -240,23 +240,23 @@ const SearchPage = () => {
                 <div className="relative overflow-hidden">
                   <img src={s11thStreet} alt="717 S. 11th St, Temple TX — 6-unit multifamily" className="w-full aspect-[3/2] object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" />
                   <span className="absolute top-4 left-4 text-minimal bg-gold text-white px-3 py-1 font-extrabold">MULTIFAMILY</span>
-                  <span className="absolute bottom-3 right-3 text-white text-sm font-light font-[Roboto] bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-sm">Price Upon Request</span>
+                  <span className="absolute bottom-3 right-3 text-white text-sm font-light  bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-sm">Price Upon Request</span>
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
-                  <h3 className="text-lg font-light text-foreground mb-1 font-[Roboto]">717 S. 11th St.</h3>
-                  <p className="text-muted-foreground mb-2 font-[Roboto]">Temple, TX</p>
+                  <h3 className="text-lg font-light text-foreground mb-1 ">717 S. 11th St.</h3>
+                  <p className="text-muted-foreground mb-2 ">Temple, TX</p>
                   <div className="grid grid-cols-2 gap-3 mb-4">
                     <div>
-                      <p className="text-muted-foreground mb-1" style={{ fontSize: "0.6rem", letterSpacing: "0.3em", textTransform: "uppercase", fontFamily: '"Roboto", sans-serif' }}>ASSET TYPE</p>
-                      <p className="text-foreground font-medium text-sm font-[Roboto]">6-Unit Multifamily</p>
+                      <p className="text-muted-foreground mb-1" style={{ fontSize: "0.6rem", letterSpacing: "0.3em", textTransform: "uppercase", fontFamily: '"Jost", sans-serif' }}>ASSET TYPE</p>
+                      <p className="text-foreground font-medium text-sm ">6-Unit Multifamily</p>
                     </div>
                     <div>
-                      <p className="text-muted-foreground mb-1" style={{ fontSize: "0.6rem", letterSpacing: "0.3em", textTransform: "uppercase", fontFamily: '"Roboto", sans-serif' }}>CONDITION</p>
-                      <p className="text-foreground font-medium text-sm font-[Roboto]">Recently Renovated</p>
+                      <p className="text-muted-foreground mb-1" style={{ fontSize: "0.6rem", letterSpacing: "0.3em", textTransform: "uppercase", fontFamily: '"Jost", sans-serif' }}>CONDITION</p>
+                      <p className="text-foreground font-medium text-sm ">Recently Renovated</p>
                     </div>
                   </div>
-                  <p className="text-muted-foreground text-sm leading-relaxed font-[Roboto] mb-4 flex-grow">Recently renovated 6-unit multifamily property in Temple, TX. Contact for pricing and additional details.</p>
-                  <Link to="/contact" className="border border-border/50 rounded-sm px-6 py-2 text-foreground/70 hover:bg-gold hover:text-white hover:border-gold transition-all duration-300 ease-out self-center" style={{ fontSize: "0.6rem", letterSpacing: "0.08em", textTransform: "uppercase", fontFamily: '"Roboto", sans-serif', fontWeight: 500 }}>REQUEST INFORMATION</Link>
+                  <p className="text-muted-foreground text-sm leading-relaxed  mb-4 flex-grow">Recently renovated 6-unit multifamily property in Temple, TX. Contact for pricing and additional details.</p>
+                  <Link to="/contact" className="border border-border/50 rounded-sm px-6 py-2 text-foreground/70 hover:bg-gold hover:text-white hover:border-gold transition-all duration-300 ease-out self-center" style={{ fontSize: "0.6rem", letterSpacing: "0.08em", textTransform: "uppercase", fontFamily: '"Jost", sans-serif', fontWeight: 500 }}>REQUEST INFORMATION</Link>
                 </div>
               </div>
 
@@ -265,23 +265,23 @@ const SearchPage = () => {
                 <div className="relative overflow-hidden">
                   <img src={killeenPortfolio} alt="Small Killeen Rental Portfolio — 9 rentable units, 100% occupied" className="w-full aspect-[3/2] object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" />
                   <span className="absolute top-4 left-4 text-minimal bg-gold text-white px-3 py-1 font-extrabold">RENTAL PORTFOLIO</span>
-                  <span className="absolute bottom-3 right-3 text-white text-sm font-light font-[Roboto] bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-sm">$550,000</span>
+                  <span className="absolute bottom-3 right-3 text-white text-sm font-light  bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-sm">$550,000</span>
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
-                  <h3 className="text-lg font-light text-foreground mb-1 font-[Roboto]">Small Killeen Rental Portfolio</h3>
-                  <p className="text-muted-foreground mb-2 font-[Roboto]">Killeen, TX</p>
+                  <h3 className="text-lg font-light text-foreground mb-1 ">Small Killeen Rental Portfolio</h3>
+                  <p className="text-muted-foreground mb-2 ">Killeen, TX</p>
                   <div className="grid grid-cols-2 gap-3 mb-4">
                     <div>
-                      <p className="text-muted-foreground mb-1" style={{ fontSize: "0.6rem", letterSpacing: "0.3em", textTransform: "uppercase", fontFamily: '"Roboto", sans-serif' }}>UNITS</p>
-                      <p className="text-foreground font-medium text-sm font-[Roboto]">9 Rentable Units</p>
+                      <p className="text-muted-foreground mb-1" style={{ fontSize: "0.6rem", letterSpacing: "0.3em", textTransform: "uppercase", fontFamily: '"Jost", sans-serif' }}>UNITS</p>
+                      <p className="text-foreground font-medium text-sm ">9 Rentable Units</p>
                     </div>
                     <div>
-                      <p className="text-muted-foreground mb-1" style={{ fontSize: "0.6rem", letterSpacing: "0.3em", textTransform: "uppercase", fontFamily: '"Roboto", sans-serif' }}>OCCUPANCY</p>
-                      <p className="text-foreground font-medium text-sm font-[Roboto]">100% Occupied</p>
+                      <p className="text-muted-foreground mb-1" style={{ fontSize: "0.6rem", letterSpacing: "0.3em", textTransform: "uppercase", fontFamily: '"Jost", sans-serif' }}>OCCUPANCY</p>
+                      <p className="text-foreground font-medium text-sm ">100% Occupied</p>
                     </div>
                   </div>
-                  <p className="text-muted-foreground text-sm leading-relaxed font-[Roboto] mb-4 flex-grow">9-unit rental portfolio in Killeen, TX. Fully occupied with a 14% cap rate.</p>
-                  <Link to="/contact" className="border border-border/50 rounded-sm px-6 py-2 text-foreground/70 hover:bg-gold hover:text-white hover:border-gold transition-all duration-300 ease-out self-center" style={{ fontSize: "0.6rem", letterSpacing: "0.08em", textTransform: "uppercase", fontFamily: '"Roboto", sans-serif', fontWeight: 500 }}>REQUEST INFORMATION</Link>
+                  <p className="text-muted-foreground text-sm leading-relaxed  mb-4 flex-grow">9-unit rental portfolio in Killeen, TX. Fully occupied with a 14% cap rate.</p>
+                  <Link to="/contact" className="border border-border/50 rounded-sm px-6 py-2 text-foreground/70 hover:bg-gold hover:text-white hover:border-gold transition-all duration-300 ease-out self-center" style={{ fontSize: "0.6rem", letterSpacing: "0.08em", textTransform: "uppercase", fontFamily: '"Jost", sans-serif', fontWeight: 500 }}>REQUEST INFORMATION</Link>
                 </div>
               </div>
 
@@ -290,23 +290,23 @@ const SearchPage = () => {
                 <div className="relative overflow-hidden">
                   <img src={bremserAve} alt="709/711/713 Bremser Ave, Killeen TX — 3 individual rental homes" className="w-full aspect-[3/2] object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" />
                   <span className="absolute top-4 left-4 text-minimal bg-gold text-white px-3 py-1 font-extrabold">RENTAL PORTFOLIO</span>
-                  <span className="absolute bottom-3 right-3 text-white text-sm font-light font-[Roboto] bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-sm">$240,000</span>
+                  <span className="absolute bottom-3 right-3 text-white text-sm font-light  bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-sm">$240,000</span>
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
-                  <h3 className="text-lg font-light text-foreground mb-1 font-[Roboto]">709/711/713 Bremser Ave</h3>
-                  <p className="text-muted-foreground mb-2 font-[Roboto]">Killeen, TX</p>
+                  <h3 className="text-lg font-light text-foreground mb-1 ">709/711/713 Bremser Ave</h3>
+                  <p className="text-muted-foreground mb-2 ">Killeen, TX</p>
                   <div className="grid grid-cols-2 gap-3 mb-4">
                     <div>
-                      <p className="text-muted-foreground mb-1" style={{ fontSize: "0.6rem", letterSpacing: "0.3em", textTransform: "uppercase", fontFamily: '"Roboto", sans-serif' }}>ASSET TYPE</p>
-                      <p className="text-foreground font-medium text-sm font-[Roboto]">3 Individual Homes</p>
+                      <p className="text-muted-foreground mb-1" style={{ fontSize: "0.6rem", letterSpacing: "0.3em", textTransform: "uppercase", fontFamily: '"Jost", sans-serif' }}>ASSET TYPE</p>
+                      <p className="text-foreground font-medium text-sm ">3 Individual Homes</p>
                     </div>
                     <div>
-                      <p className="text-muted-foreground mb-1" style={{ fontSize: "0.6rem", letterSpacing: "0.3em", textTransform: "uppercase", fontFamily: '"Roboto", sans-serif' }}>INCOME</p>
-                      <p className="text-foreground font-medium text-sm font-[Roboto]">Rental Income</p>
+                      <p className="text-muted-foreground mb-1" style={{ fontSize: "0.6rem", letterSpacing: "0.3em", textTransform: "uppercase", fontFamily: '"Jost", sans-serif' }}>INCOME</p>
+                      <p className="text-foreground font-medium text-sm ">Rental Income</p>
                     </div>
                   </div>
-                  <p className="text-muted-foreground text-sm leading-relaxed font-[Roboto] mb-4 flex-grow">Three individual rental homes on Bremser Ave in Killeen, TX. Opportunity to acquire a small residential rental portfolio.</p>
-                  <Link to="/contact" className="border border-border/50 rounded-sm px-6 py-2 text-foreground/70 hover:bg-gold hover:text-white hover:border-gold transition-all duration-300 ease-out self-center" style={{ fontSize: "0.6rem", letterSpacing: "0.08em", textTransform: "uppercase", fontFamily: '"Roboto", sans-serif', fontWeight: 500 }}>REQUEST INFORMATION</Link>
+                  <p className="text-muted-foreground text-sm leading-relaxed  mb-4 flex-grow">Three individual rental homes on Bremser Ave in Killeen, TX. Opportunity to acquire a small residential rental portfolio.</p>
+                  <Link to="/contact" className="border border-border/50 rounded-sm px-6 py-2 text-foreground/70 hover:bg-gold hover:text-white hover:border-gold transition-all duration-300 ease-out self-center" style={{ fontSize: "0.6rem", letterSpacing: "0.08em", textTransform: "uppercase", fontFamily: '"Jost", sans-serif', fontWeight: 500 }}>REQUEST INFORMATION</Link>
                 </div>
               </div>
             </div>

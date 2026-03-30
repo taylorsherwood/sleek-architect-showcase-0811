@@ -15,7 +15,7 @@ const LuxurySearchLinks = () => {
         <div className="max-w-4xl mx-auto text-center">
           <p
             className="text-gold mb-5 font-semibold"
-            style={{ fontSize: "0.6rem", letterSpacing: "0.35em", textTransform: "uppercase", fontFamily: '"Raleway", sans-serif' }}
+            style={{ fontSize: "0.6rem", letterSpacing: "0.35em", textTransform: "uppercase", fontFamily: '"Jost", sans-serif' }}
           >
             EXPLORE AUSTIN
           </p>

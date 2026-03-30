@@ -36,7 +36,11 @@ const Footer = () => {
                   loading="lazy" decoding="async"
                 />
               </Link>
-              <p className="text-center sm:text-left" style={{ ...footerLinkStyle, lineHeight: 1.7, marginBottom: "16px" }}>
+            </div>
+
+            {/* Tagline + Instagram column (centered) */}
+            <div className="flex flex-col items-center justify-center text-center">
+              <p style={{ ...footerLinkStyle, lineHeight: 1.7, marginBottom: "16px" }}>
                 Strategic Austin Real Estate Advisory
               </p>
               <a

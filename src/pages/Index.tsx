@@ -101,7 +101,7 @@ const Hero = () => {
   });
 
   return (
-    <section ref={sectionRef} id="hero-section" className="relative min-h-screen flex flex-col justify-center overflow-hidden bg-primary">
+    <section ref={sectionRef} id="hero-section" className="relative min-h-screen flex flex-col justify-end overflow-hidden bg-primary">
       {/* Video */}
       <div aria-hidden="true" className="absolute inset-0 pointer-events-none select-none" style={{ zIndex: 0 }}>
         <video ref={videoRef} autoPlay muted loop playsInline preload="none" poster="/images/hero-poster.jpg"
@@ -115,54 +115,96 @@ const Hero = () => {
         <img src="/images/hero-poster.jpg" alt="Austin Texas skyline" className="absolute inset-0 w-full h-full object-cover" style={{ zIndex: 0 }} loading="eager" />
       )}
 
-      {/* Gradient overlays */}
+      {/* Layered gradient overlay per spec */}
       <div className="absolute inset-0" style={{
         zIndex: 1,
-        background: `linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.5) 35%, rgba(0,0,0,0.2) 65%, rgba(0,0,0,0.05) 100%),
-                      linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.05) 40%, rgba(0,0,0,0.35) 100%)`
+        background: `linear-gradient(to bottom, rgba(13,13,13,0.35) 0%, rgba(13,13,13,0.20) 40%, rgba(13,13,13,0.65) 100%),
+                      linear-gradient(to right, rgba(13,13,13,0.55) 0%, rgba(13,13,13,0.25) 50%, rgba(13,13,13,0.05) 100%)`
       }} />
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-6 pt-36 md:pt-44 lg:pt-48 pb-16">
-        <div className="max-w-[580px]" style={{ filter: "drop-shadow(0 0 80px rgba(0,0,0,0.5))" }}>
-          <p className="text-warm-cream/45 mb-7 font-semibold" style={{
-            ...anim("0s"),
-            fontFamily: '"Raleway", sans-serif', fontSize: "0.58rem", letterSpacing: "0.38em", textTransform: "uppercase",
-            textShadow: "0 0 20px rgba(12,15,36,0.7)"
-          }}>
-            STRATEGIC AUSTIN REAL ESTATE ADVISORY
-          </p>
+      <div className="relative z-10 container mx-auto px-6 pb-32 md:pb-36 pt-36 md:pt-44 lg:pt-48">
+        <div className="max-w-[620px]" style={{ filter: "drop-shadow(0 0 80px rgba(0,0,0,0.5))" }}>
+          {/* Gold line + kicker */}
+          <div style={anim("0s")} className="mb-5">
+            <div className="w-10 h-px bg-gold mb-5" />
+            <p style={{
+              fontFamily: '"Jost", sans-serif', fontSize: "10px", letterSpacing: "0.25em", textTransform: "uppercase",
+              color: "hsl(38 39% 61%)",
+            }}>
+              STRATEGIC AUSTIN REAL ESTATE ADVISORY
+            </p>
+          </div>
 
-          <h1 className="font-display font-medium text-warm-cream mb-10" style={{
-            ...anim("0.15s"), lineHeight: 1.08, letterSpacing: "-0.02em",
+          <h1 className="font-display text-warm-cream mb-8" style={{
+            ...anim("0.15s"), fontWeight: 300, lineHeight: 1.05, letterSpacing: "0.01em",
+            fontSize: "clamp(48px, 7vw, 96px)",
             textShadow: "0 2px 12px rgba(0,0,0,0.5)"
           }}>
-            <span className="block" style={{ fontSize: "clamp(2.4rem, 5vw, 4.8rem)" }}>Access Austin's</span>
-            <span className="block italic" style={{ fontSize: "clamp(2.8rem, 5.8vw, 5.6rem)", marginTop: "-0.05em" }}>Most Exclusive Homes</span>
+            <span className="block">Access Austin's</span>
+            <span className="block italic">Most Exclusive Homes</span>
           </h1>
 
-          <p className="text-warm-cream/55 max-w-[440px] mb-12 leading-[1.7] font-normal" style={{
-            ...anim("0.3s"), fontFamily: '"Raleway", sans-serif', fontSize: "0.95rem",
+          <p className="max-w-[480px] mb-12 leading-[1.7]" style={{
+            ...anim("0.3s"),
+            fontFamily: '"Jost", sans-serif', fontWeight: 300, fontSize: "15px",
+            letterSpacing: "0.05em", color: "rgba(245,243,239,0.75)",
             textShadow: "0 2px 9px rgba(0,0,0,0.5)"
           }}>
             Private listings, off-market opportunities, and elevated real estate representation.
           </p>
 
+          {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-5" style={anim("0.4s")}>
             <Link to="/austin-luxury-homes-for-sale"
-              className="inline-block bg-warm-cream text-foreground px-12 py-[1.05rem] text-center hover:bg-gold hover:text-white border border-white/10 shadow-[0_8px_24px_rgba(0,0,0,0.35)] transition-all duration-300"
-              style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.58rem", letterSpacing: "0.3em", textTransform: "uppercase", fontWeight: 600 }}>
+              className="inline-block text-center px-8 py-[14px] border transition-all duration-300 hover:bg-gold hover:text-foreground"
+              style={{
+                fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 400,
+                borderColor: "hsl(38 39% 61%)", color: "hsl(38 39% 61%)", background: "transparent",
+              }}
+              onMouseEnter={(e) => { e.currentTarget.style.background = "hsl(38 39% 61%)"; e.currentTarget.style.color = "#0D0D0D"; }}
+              onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = "hsl(38 39% 61%)"; }}>
               EXPLORE LUXURY HOMES
             </Link>
             <Link to="/off-market-real-estate-austin"
-              className="inline-block bg-transparent border border-warm-cream/20 text-warm-cream/70 px-12 py-[1.05rem] text-center hover:bg-gold hover:text-white hover:border-gold transition-all duration-300"
-              style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.58rem", letterSpacing: "0.3em", textTransform: "uppercase", fontWeight: 400 }}>
+              className="inline-block text-center px-8 py-[14px] border transition-all duration-300"
+              style={{
+                fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 400,
+                borderColor: "rgba(255,255,255,0.3)", color: "hsl(var(--warm-cream))", background: "transparent",
+              }}
+              onMouseEnter={(e) => { e.currentTarget.style.background = "hsl(38 39% 61%)"; e.currentTarget.style.color = "#0D0D0D"; e.currentTarget.style.borderColor = "hsl(38 39% 61%)"; }}
+              onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = "hsl(var(--warm-cream))"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.3)"; }}>
               REQUEST PRIVATE ACCESS
             </Link>
+          </div>
+
+          {/* Credential strip at bottom of hero */}
+          <div className="mt-16 flex items-center gap-0 flex-wrap" style={anim("0.55s")}>
+            {["eXp Luxury Division", "CLHMS Certified", "$100M+ Career Volume"].map((text, i) => (
+              <span key={i} className="flex items-center">
+                <span style={{
+                  fontFamily: '"Jost", sans-serif', fontSize: "10px", letterSpacing: "0.15em",
+                  textTransform: "uppercase", color: "rgba(245,243,239,0.6)",
+                }}>
+                  {text}
+                </span>
+                {i < 2 && <span className="mx-3" style={{ color: "hsl(38 39% 61%)", fontSize: "10px" }}>|</span>}
+              </span>
+            ))}
           </div>
         </div>
       </div>
 
+      {/* Scroll indicator */}
+      <div className="absolute bottom-5 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4" style={{ zIndex: 3 }}>
+        <span style={{
+          fontFamily: '"Jost", sans-serif', fontSize: "10px", letterSpacing: "0.35em",
+          textTransform: "uppercase", color: "hsl(var(--warm-cream))",
+        }}>
+          Discover Austin
+        </span>
+        <div className="scroll-indicator-line" />
+      </div>
     </section>
   );
 };
@@ -189,9 +231,7 @@ const SearchSection = () => {
     <section className="bg-secondary/50">
       <div className="container mx-auto px-6 py-12 md:py-16">
         <div className="max-w-3xl mx-auto text-center">
-          <p className="text-gold/70 font-semibold mb-3" style={{
-            fontFamily: '"Raleway", sans-serif', fontSize: "0.55rem", letterSpacing: "0.3em", textTransform: "uppercase"
-          }}>
+          <p className="text-minimal text-gold mb-3">
             EXPLORE THE MARKET
           </p>
           <h2 className="font-display text-2xl md:text-[2rem] font-normal text-foreground leading-[1.1] tracking-[-0.01em] mb-3">
@@ -218,8 +258,8 @@ const TrustStrip = () => (
         <div className="border-t border-border/15" />
         <div className="flex items-center justify-center gap-16 py-5">
         {["eXp Luxury Division", "Certified Luxury Home Marketing Specialist", "$100M+ Career Sales Volume"].map((text, i) => (
-            <span key={i} className="text-muted-foreground/65 font-medium" style={{
-              fontFamily: '"Raleway", sans-serif', fontSize: "0.6rem", letterSpacing: "0.18em", textTransform: "uppercase"
+            <span key={i} className="text-muted-foreground/65" style={{
+              fontFamily: '"Jost", sans-serif', fontWeight: 400, fontSize: "10px", letterSpacing: "0.18em", textTransform: "uppercase"
             }}>
               {text}
             </span>
@@ -231,97 +271,114 @@ const TrustStrip = () => (
 );
 
 /* ─────────────────────────────────────────────
-   SECTION 3 — ADVISOR POSITIONING
+   SECTION 3 — ADVISOR POSITIONING (Editorial 50/50 split)
    ───────────────────────────────────────────── */
 
 const AdvisorSection = () => (
-  <section className="pt-24 md:pt-32 pb-0 bg-background">
-    <div className="container mx-auto px-6">
-      <div className="max-w-[1320px] mx-auto">
-        <div className="grid md:grid-cols-2 gap-14 lg:gap-20 items-center">
-          {/* Headshot */}
+  <section className="bg-background">
+    <div className="max-w-[1400px] mx-auto">
+      <div className="grid md:grid-cols-2 min-h-[600px]">
+        {/* Left — full-bleed image */}
+        <div className="relative overflow-hidden">
+          <img
+            src={taylorBoatImg}
+            alt="Taylor Sherwood — Austin luxury real estate advisor and founder of Echelon Property Group"
+            title="Taylor Sherwood, Echelon Property Group"
+            className="w-full h-full object-cover object-top"
+            style={{ minHeight: "500px" }}
+            loading="lazy" decoding="async"
+          />
+          {/* Bottom gradient fade */}
+          <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-black/30 to-transparent" />
+        </div>
+
+        {/* Right — content */}
+        <div className="flex flex-col justify-center bg-secondary" style={{ padding: "clamp(48px, 8vw, 96px)" }}>
           <ScrollReveal>
-            <div className="relative group">
-              <div className="overflow-hidden rounded-[3px]" style={{ boxShadow: "0 16px 40px -12px hsl(var(--foreground) / 0.1)" }}>
-                <img
-                  src={taylorBoatImg}
-                  alt="Taylor Sherwood — Austin luxury real estate advisor and founder of Echelon Property Group"
-                  title="Taylor Sherwood, Echelon Property Group"
-                  className="w-full aspect-[3/4] object-cover object-top transition-transform duration-[600ms] ease-out group-hover:scale-[1.01]"
-                  style={{ filter: "brightness(0.93)" }}
-                  loading="lazy" decoding="async"
-                />
-              </div>
-            </div>
+            <p className="text-minimal text-gold mb-6">
+              STRATEGIC REAL ESTATE ADVISOR
+            </p>
           </ScrollReveal>
 
-          {/* Copy */}
-          <div className="max-w-[480px]">
-            <ScrollReveal>
-              <p className="text-minimal text-gold mb-6 font-extrabold tracking-[0.22em]">
-                STRATEGIC REAL ESTATE ADVISOR
+          <ScrollReveal delay={80}>
+            <h2 className="font-display text-[1.85rem] md:text-[2.6rem] font-normal text-foreground leading-[1.06] tracking-[-0.015em] mb-6">
+              Luxury Real Estate,
+              <br />
+              <span className="italic">Without the Noise</span>
+            </h2>
+          </ScrollReveal>
+
+          <ScrollReveal delay={120}>
+            <p className="text-foreground text-lg md:text-[1.3rem] font-medium leading-[1.4] mb-10 tracking-[-0.01em]" style={{ fontFamily: '"Jost", sans-serif', fontWeight: 400 }}>
+              We don't sell homes. We deliver access, strategy, and discretion.
+            </p>
+          </ScrollReveal>
+
+          <ScrollReveal delay={180}>
+            <div className="space-y-4 mb-8" style={{ fontFamily: '"Jost", sans-serif', fontWeight: 300 }}>
+              <p className="text-foreground/70 text-[16px] leading-[1.8]">
+                You don't need more listings — you need a smarter approach.
               </p>
-            </ScrollReveal>
-
-            <ScrollReveal delay={80}>
-              <h2 className="font-display text-[1.85rem] md:text-[2.6rem] font-normal text-foreground leading-[1.06] tracking-[-0.015em] mb-6">
-                Luxury Real Estate,
-                <br />
-                <span className="italic">Without the Noise</span>
-              </h2>
-            </ScrollReveal>
-
-            <ScrollReveal delay={120}>
-              <p className="text-foreground text-lg md:text-[1.3rem] font-medium leading-[1.4] mb-12 tracking-[-0.01em]">
-                We don't sell homes. We deliver access, strategy, and discretion.
+              <p className="text-foreground/70 text-[16px] leading-[1.8]">
+                I work with a select group of clients to acquire and position high-value
+                properties across Austin — including private opportunities
+                not available through traditional channels.
               </p>
-            </ScrollReveal>
+              <p className="text-foreground/70 text-[16px] leading-[1.8]">
+                Every decision is guided by market intelligence, negotiation leverage,
+                and a clear understanding of long-term value.
+              </p>
+            </div>
 
-            <ScrollReveal delay={180}>
-              <div className="space-y-4 mb-10">
-                <p className="text-foreground/70 text-[15px] leading-[1.8] font-light">
-                  You don't need more listings — you need a smarter approach.
-                </p>
-                <p className="text-foreground/70 text-[15px] leading-[1.8] font-light">
-                  I work with a select group of clients to acquire and position high-value
-                  properties across Austin — including private opportunities
-                  not available through traditional channels.
-                </p>
-                <p className="text-foreground/70 text-[15px] leading-[1.8] font-light">
-                  Every decision is guided by market intelligence, negotiation leverage,
-                  and a clear understanding of long-term value.
-                </p>
-              </div>
-
-              <div className="flex flex-col sm:flex-row items-start gap-5">
-                <Link to="/contact"
-                  className="inline-block border border-foreground/30 text-foreground px-10 py-[0.9rem] hover:bg-gold hover:text-white hover:border-gold transition-all duration-[400ms]"
-                  style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.58rem", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 600 }}>
-                  WORK WITH ME
-                </Link>
-                <Link to="/past-transactions"
-                  className="relative inline-flex items-center text-muted-foreground/55 hover:text-gold transition-colors duration-[400ms] pt-3 sm:pt-0 sm:self-center group/link"
-                  style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.58rem", letterSpacing: "0.2em", textTransform: "uppercase", fontWeight: 500 }}>
-                  VIEW PAST TRANSACTIONS →
-                  <span className="absolute bottom-0 left-0 w-full h-px bg-gold scale-x-0 group-hover/link:scale-x-100 transition-transform duration-500 origin-left" />
-                </Link>
-              </div>
-
-              <a
-                href="https://www.instagram.com/theinvestorbroker/"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                className="inline-flex items-center gap-2.5 text-gold mt-10 group/ig"
-                style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.62rem", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 600 }}
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-                <span className="relative">
-                  @THEINVESTORBROKER
-                  <span className="absolute left-0 -bottom-0.5 w-full h-px bg-gold scale-x-0 group-hover/ig:scale-x-100 transition-transform duration-500 origin-center" />
+            {/* Credential badges */}
+            <div className="flex flex-wrap gap-2.5 mb-10">
+              {["eXp Luxury Division", "CLHMS Certified", "$100M+ Career Volume", "Austin Native"].map((badge) => (
+                <span key={badge} className="border px-3 py-1" style={{
+                  borderColor: "hsl(38 39% 61%)",
+                  color: "hsl(var(--gold-dark))",
+                  fontFamily: '"Jost", sans-serif',
+                  fontSize: "10px",
+                  letterSpacing: "0.12em",
+                  textTransform: "uppercase",
+                }}>
+                  {badge}
                 </span>
-              </a>
-            </ScrollReveal>
-          </div>
+              ))}
+            </div>
+
+            <div className="flex flex-col sm:flex-row items-start gap-5">
+              <Link to="/contact"
+                className="inline-block border text-foreground px-10 py-[0.9rem] transition-all duration-[400ms]"
+                style={{
+                  fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 400,
+                  borderColor: "hsl(38 39% 61%)", color: "hsl(var(--foreground))",
+                }}
+                onMouseEnter={(e) => { e.currentTarget.style.background = "hsl(38 39% 61%)"; e.currentTarget.style.color = "#fff"; }}
+                onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = ""; }}>
+                WORK WITH ME
+              </Link>
+              <Link to="/past-transactions"
+                className="relative inline-flex items-center text-muted-foreground/55 hover:text-gold transition-colors duration-[400ms] pt-3 sm:pt-0 sm:self-center group/link"
+                style={{ fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.12em", textTransform: "uppercase", fontWeight: 400 }}>
+                VIEW PAST TRANSACTIONS →
+                <span className="absolute bottom-0 left-0 w-full h-px bg-gold scale-x-0 group-hover/link:scale-x-100 transition-transform duration-500 origin-left" />
+              </Link>
+            </div>
+
+            <a
+              href="https://www.instagram.com/theinvestorbroker/"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              className="inline-flex items-center gap-2.5 text-gold mt-10 group/ig"
+              style={{ fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.12em", textTransform: "uppercase", fontWeight: 400 }}
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              <span className="relative">
+                @THEINVESTORBROKER
+                <span className="absolute left-0 -bottom-0.5 w-full h-px bg-gold scale-x-0 group-hover/ig:scale-x-100 transition-transform duration-500 origin-center" />
+              </span>
+            </a>
+          </ScrollReveal>
         </div>
       </div>
     </div>
@@ -329,7 +386,7 @@ const AdvisorSection = () => (
 );
 
 /* ─────────────────────────────────────────────
-   SECTION 3B — STATS STRIP
+   SECTION 3B — STATS STRIP (Dark background)
    ───────────────────────────────────────────── */
 
 const useCountUp = (target: number, duration = 2600, from = 0) => {
@@ -375,25 +432,35 @@ const stats = [
 ];
 
 const StatsStrip = () => (
-  <section className="bg-background">
+  <section style={{ background: "#141414" }}>
     <div className="container mx-auto px-6">
-      <div className="max-w-[1100px] mx-auto pt-12 pb-14 md:pt-14 md:pb-16 border-t border-border/15">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div className="max-w-[1100px] mx-auto py-16 md:py-20">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat, i) => {
             const { count, ref } = useCountUp(stat.value, 2600, (stat as any).from || 0);
             return (
-              <div key={i} ref={ref} className="text-center relative">
-                <p className="font-display text-[2rem] md:text-[2.75rem] font-light text-foreground tracking-[-0.02em]">
-                  {stat.prefix}{count}{stat.suffix}
+              <div key={i} ref={ref} className="text-center">
+                {/* Gold accent line */}
+                <div className="w-10 h-px mx-auto mb-5" style={{ background: "hsl(38 39% 61%)" }} />
+                <p style={{
+                  fontFamily: '"Cormorant Garamond", serif', fontWeight: 300,
+                  fontSize: "clamp(48px, 6vw, 80px)", lineHeight: 1, color: "#FAFAF8",
+                }}>
+                  {stat.prefix}{count}
+                  <span style={{
+                    fontFamily: '"Cormorant Garamond", serif', fontWeight: 300,
+                    fontSize: "0.6em", color: "hsl(38 39% 61%)", verticalAlign: "super",
+                  }}>
+                    {stat.suffix}
+                  </span>
                 </p>
-                <p className="text-muted-foreground/75 mt-1.5 font-medium" style={{
-                  fontFamily: '"Raleway", sans-serif', fontSize: "0.58rem", letterSpacing: "0.24em", textTransform: "uppercase"
+                <p style={{
+                  fontFamily: '"Jost", sans-serif', fontWeight: 300,
+                  fontSize: "10px", letterSpacing: "0.2em", textTransform: "uppercase",
+                  color: "#9A9690", marginTop: "8px",
                 }}>
                   {stat.label}
                 </p>
-                {i < stats.length - 1 && (
-                  <div className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 h-10 w-px bg-border/20" />
-                )}
               </div>
             );
           })}
@@ -404,7 +471,7 @@ const StatsStrip = () => (
 );
 
 /* ─────────────────────────────────────────────
-   SECTION 4 — FEATURED PROPERTIES
+   SECTION 4 — FEATURED PROPERTIES (Portrait cards, 3-col)
    ───────────────────────────────────────────── */
 
 const properties = [
@@ -433,64 +500,66 @@ const FeaturedProperties = () => (
     <div className="container mx-auto px-6">
       <div className="max-w-[1320px] mx-auto">
         <ScrollReveal>
-          <div className="mb-16">
-            <p className="text-minimal text-gold mb-5 font-extrabold tracking-[0.22em]">FEATURED LISTINGS</p>
-            <h2 className="font-display text-3xl md:text-[2.5rem] font-light text-foreground/90 mb-5 leading-[1.1] tracking-[-0.01em]">
+          <div className="text-center mb-16">
+            <p className="text-minimal text-gold mb-5">FEATURED LISTINGS</p>
+            <h2 className="font-display text-3xl md:text-[2.75rem] font-normal text-foreground/90 mb-4 leading-[1.1] tracking-[-0.01em]">
               Exceptional <span className="italic">Properties</span>
             </h2>
-            <p className="text-muted-foreground/60 text-[15px] max-w-lg font-light leading-[1.8]">
-              A curated selection of on-market and private opportunities.
-            </p>
+            {/* Gold rule */}
+            <div className="w-[60px] h-px mx-auto" style={{ background: "hsl(38 39% 61%)" }} />
           </div>
         </ScrollReveal>
 
         <ScrollReveal delay={120}>
-          <div className="grid md:grid-cols-2 gap-8 lg:gap-10">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {properties.map((p, i) => {
               const isExternal = p.link.startsWith("http");
               const Wrapper = isExternal ? "a" : "div";
               const wrapperProps = isExternal ? { href: p.link, target: "_blank" as const, rel: "noopener noreferrer" } : {};
               return (
                 <Wrapper key={i} {...wrapperProps} className="group block cursor-pointer">
-                  <div className="relative overflow-hidden aspect-[4/3]">
+                  <div className="relative overflow-hidden" style={{ aspectRatio: "3/4", background: "#1A1A1A" }}>
                     <img src={p.image} alt={p.address}
-                      className="w-full h-full object-cover transition-transform duration-[700ms] ease-out group-hover:scale-[1.06]"
+                      className="w-full h-full object-cover transition-transform duration-[800ms]"
+                      style={{ transitionTimingFunction: "cubic-bezier(0.25, 0.46, 0.45, 0.94)" }}
                       loading="lazy" decoding="async" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent" />
-
-                    {/* Hover overlay + View Property text */}
-                    <div className="absolute inset-0 z-10 bg-black/0 group-hover:bg-black/25 transition-all duration-500 flex items-center justify-center opacity-0 group-hover:opacity-100 pointer-events-none">
-                      <span className="text-white font-medium"
-                        style={{ fontSize: "0.65rem", letterSpacing: "0.15em", textTransform: "uppercase", textShadow: "0 1px 6px rgba(0,0,0,0.4)" }}>
-                        View Property
-                      </span>
-                    </div>
-
-                    {/* Price */}
-                    <div className="absolute bottom-5 right-6 z-20">
-                      <span className="text-white font-display text-lg font-light tracking-[0.02em]"
-                        style={{ textShadow: "0 1px 8px rgba(0,0,0,0.4)" }}>
-                        {p.price}
-                      </span>
+                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                      <div className="w-full h-full" style={{ transform: "scale(1.04)" }} />
                     </div>
 
                     {/* Badge */}
                     {p.badge && (
-                      <div className="absolute top-5 left-5 z-20 bg-background/80 backdrop-blur-sm px-3.5 py-1.5">
-                        <span className="text-[8px] tracking-[0.22em] uppercase text-muted-foreground/70 font-normal">{p.badge}</span>
+                      <div className="absolute top-5 left-5 z-20">
+                        <span style={{
+                          fontFamily: '"Jost", sans-serif', fontSize: "9px", letterSpacing: "0.18em",
+                          textTransform: "uppercase", color: "hsl(38 39% 61%)",
+                        }}>
+                          {p.badge}
+                        </span>
                       </div>
                     )}
-                  </div>
 
-                  <div className="mt-5 px-1">
-                    <h3 className="text-[15px] font-display font-medium text-foreground/85 mb-1 tracking-[0.01em]">{p.address}</h3>
-                    <p className="text-muted-foreground/50 text-[13px] font-light">{p.location}</p>
-                    <div className="flex gap-4 text-[12px] text-muted-foreground/40 mt-2.5 font-light tracking-[0.02em]">
-                      <span>{p.beds} Beds</span>
-                      <span className="text-border/60 text-[4px] leading-[2.5]">●</span>
-                      <span>{p.baths} Baths</span>
-                      <span className="text-border/60 text-[4px] leading-[2.5]">●</span>
-                      <span>{p.sqft} Sq Ft</span>
+                    {/* Bottom overlay */}
+                    <div className="absolute bottom-0 left-0 right-0 px-6 pb-6 pt-8"
+                      style={{ background: "linear-gradient(to top, rgba(13,13,13,0.92) 0%, transparent 100%)" }}>
+                      <p style={{
+                        fontFamily: '"Cormorant Garamond", serif', fontWeight: 400,
+                        fontSize: "22px", color: "#FAFAF8", marginBottom: "4px",
+                      }}>
+                        {p.price}
+                      </p>
+                      <p style={{
+                        fontFamily: '"Jost", sans-serif', fontWeight: 300,
+                        fontSize: "13px", color: "rgba(245,243,239,0.8)",
+                      }}>
+                        {p.address}
+                      </p>
+                      <p style={{
+                        fontFamily: '"Jost", sans-serif', fontSize: "11px",
+                        color: "#9A9690", marginTop: "6px", letterSpacing: "0.05em",
+                      }}>
+                        {p.beds} Beds · {p.baths} Baths · {p.sqft} Sq Ft
+                      </p>
                     </div>
                   </div>
                 </Wrapper>
@@ -498,19 +567,27 @@ const FeaturedProperties = () => (
             })}
 
             {/* Off-market card */}
-            <Link to="/off-market-real-estate-austin" className="group block md:col-span-2 md:max-w-[calc(50%-1.25rem)]">
-              <div className="relative overflow-hidden aspect-[4/3] bg-gradient-to-br from-primary via-primary to-primary/80 flex items-center justify-center">
+            <Link to="/off-market-real-estate-austin" className="group block">
+              <div className="relative overflow-hidden flex items-center justify-center" style={{ aspectRatio: "3/4", background: "#0D0D0D" }}>
                 <img src="/static-assets/echelon-logo-gold-square.png" alt="Echelon Property Group"
                   className="w-1/2 h-auto object-contain transition-transform duration-[700ms] ease-out group-hover:scale-[1.06]"
                   loading="lazy" decoding="async" />
-              </div>
-              <div className="mt-5 px-1 text-center">
-                <h3 className="text-[15px] font-display font-medium mb-1.5 text-foreground/85">
-                  Access Off-Market Opportunities
-                </h3>
-                <p className="text-[13px] text-muted-foreground/50 font-light leading-relaxed">
-                  Exclusive private listings not publicly advertised. →
-                </p>
+                {/* Bottom overlay */}
+                <div className="absolute bottom-0 left-0 right-0 px-6 pb-6 pt-8 text-center"
+                  style={{ background: "linear-gradient(to top, rgba(13,13,13,0.92) 0%, transparent 100%)" }}>
+                  <p style={{
+                    fontFamily: '"Cormorant Garamond", serif', fontWeight: 400,
+                    fontSize: "20px", color: "#FAFAF8", marginBottom: "4px",
+                  }}>
+                    Off-Market Opportunities
+                  </p>
+                  <p style={{
+                    fontFamily: '"Jost", sans-serif', fontWeight: 300,
+                    fontSize: "13px", color: "rgba(245,243,239,0.6)",
+                  }}>
+                    Exclusive private listings →
+                  </p>
+                </div>
               </div>
             </Link>
           </div>
@@ -519,8 +596,13 @@ const FeaturedProperties = () => (
         <ScrollReveal delay={200}>
           <div className="text-center mt-16">
             <Link to="/austin-luxury-homes-for-sale"
-              className="inline-block border border-foreground/15 text-foreground px-10 py-[0.9rem] hover:bg-gold hover:text-white hover:border-gold transition-all duration-[400ms]"
-              style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.58rem", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 600 }}>
+              className="inline-block border text-foreground px-10 py-[0.9rem] transition-all duration-[400ms]"
+              style={{
+                fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 400,
+                borderColor: "hsl(38 39% 61%)", color: "hsl(var(--foreground))",
+              }}
+              onMouseEnter={(e) => { e.currentTarget.style.background = "hsl(38 39% 61%)"; e.currentTarget.style.color = "#fff"; }}
+              onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = ""; }}>
               EXPLORE ALL LISTINGS
             </Link>
           </div>
@@ -531,7 +613,7 @@ const FeaturedProperties = () => (
 );
 
 /* ─────────────────────────────────────────────
-   SECTION 5 — TESTIMONIALS (DARK)
+   SECTION 5 — TESTIMONIALS
    ───────────────────────────────────────────── */
 
 const testimonials = [
@@ -558,13 +640,13 @@ const testimonials = [
 ];
 
 const TestimonialsSection = () => (
-  <section className="py-24 md:py-32" style={{ background: "#F8F7F5" }}>
+  <section className="py-24 md:py-32 bg-background">
     <div className="container mx-auto px-6">
       <div className="max-w-[1320px] mx-auto">
         <ScrollReveal>
           <div className="text-center mb-14">
-            <p className="text-minimal font-extrabold tracking-[0.22em] mb-5" style={{ color: "#C6A85B" }}>CLIENT EXPERIENCES</p>
-            <h2 className="font-display text-3xl md:text-[2.5rem] font-light leading-[1.1] tracking-[-0.01em]" style={{ color: "#1A1C20" }}>
+            <p className="text-minimal text-gold mb-5">CLIENT EXPERIENCES</p>
+            <h2 className="font-display text-3xl md:text-[2.75rem] font-normal leading-[1.1] tracking-[-0.01em] text-foreground">
               Trusted by Buyers, Sellers, and <span className="italic">Investors</span>
             </h2>
           </div>
@@ -573,19 +655,19 @@ const TestimonialsSection = () => (
         <div className="grid md:grid-cols-2 gap-5">
           {testimonials.map((t, i) => (
             <ScrollReveal key={i} delay={100 + i * 60}>
-              <div className="rounded-[3px] px-7 py-7 flex flex-col justify-between h-full transition-all duration-[500ms] hover:-translate-y-[2px]"
+              <div className="px-7 py-7 flex flex-col justify-between h-full transition-all duration-[500ms] hover:-translate-y-[2px]"
                 style={{
                   background: "#FFFFFF",
                   border: "1px solid rgba(0,0,0,0.06)",
                   boxShadow: "0 10px 30px rgba(0,0,0,0.05)",
                 }}>
-                <p className="text-[15px] leading-[1.8] font-light italic mb-5" style={{ color: "#1A1C20" }}>
+                <p className="text-[15px] leading-[1.8] italic mb-5" style={{ fontFamily: '"Jost", sans-serif', fontWeight: 300, color: "#0D0D0D" }}>
                   "{t.quote}"
                 </p>
                 <div>
                   <div className="h-px mb-4" style={{ background: "linear-gradient(to right, transparent, rgba(0,0,0,0.08), transparent)" }} />
-                  <p className="font-display text-[0.95rem] tracking-[0.01em]" style={{ color: "#1A1C20" }}>{t.name}</p>
-                  <p className="text-[0.58rem] mt-1 font-light tracking-[0.14em] uppercase" style={{ color: "rgba(198,168,91,0.7)" }}>{t.context}</p>
+                  <p className="font-display text-[0.95rem] tracking-[0.01em]" style={{ color: "#0D0D0D" }}>{t.name}</p>
+                  <p className="mt-1" style={{ fontFamily: '"Jost", sans-serif', fontSize: "10px", letterSpacing: "0.15em", textTransform: "uppercase", color: "hsl(38 39% 61% / 0.7)" }}>{t.context}</p>
                 </div>
               </div>
             </ScrollReveal>
@@ -610,13 +692,13 @@ const communities = [
 ];
 
 const CommunitiesSection = () => (
-  <section className="py-24 md:py-32 bg-background">
+  <section className="py-24 md:py-32 bg-secondary">
     <div className="container mx-auto px-6">
       <div className="max-w-[1320px] mx-auto">
         <ScrollReveal>
           <div className="text-center mb-16">
-            <p className="text-minimal text-gold mb-5 font-extrabold tracking-[0.22em]">SELECT COMMUNITIES</p>
-            <h2 className="font-display text-3xl md:text-[2.5rem] font-light text-foreground/90 leading-[1.1] tracking-[-0.01em]">
+            <p className="text-minimal text-gold mb-5">SELECT COMMUNITIES</p>
+            <h2 className="font-display text-3xl md:text-[2.75rem] font-normal text-foreground/90 leading-[1.1] tracking-[-0.01em]">
               Explore Austin's Most <span className="italic">Sought-After</span> Communities
             </h2>
           </div>
@@ -634,7 +716,11 @@ const CommunitiesSection = () => (
                   <h3 className="text-warm-cream font-display text-lg md:text-xl font-medium tracking-[0.03em] leading-[1.1] drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)] mb-1.5">
                     {c.name}
                   </h3>
-                  <p className="text-warm-cream/50 text-[0.5rem] font-normal tracking-[0.08em] uppercase drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
+                  <p style={{
+                    fontFamily: '"Jost", sans-serif', fontSize: "10px", fontWeight: 300,
+                    letterSpacing: "0.08em", textTransform: "uppercase",
+                    color: "rgba(250,250,248,0.5)",
+                  }}>
                     {c.descriptor}
                   </p>
                 </div>
@@ -646,8 +732,13 @@ const CommunitiesSection = () => (
         <ScrollReveal delay={200}>
           <div className="text-center mt-16">
             <Link to="/communities"
-              className="inline-block border border-foreground/15 text-foreground px-10 py-[0.9rem] hover:bg-gold hover:text-white hover:border-gold transition-all duration-[400ms]"
-              style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.58rem", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 600 }}>
+              className="inline-block border text-foreground px-10 py-[0.9rem] transition-all duration-[400ms]"
+              style={{
+                fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 400,
+                borderColor: "hsl(38 39% 61%)",
+              }}
+              onMouseEnter={(e) => { e.currentTarget.style.background = "hsl(38 39% 61%)"; e.currentTarget.style.color = "#fff"; }}
+              onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = ""; }}>
               VIEW ALL COMMUNITIES
             </Link>
           </div>
@@ -671,13 +762,13 @@ const insights = [
 ];
 
 const InsightsSection = () => (
-  <section className="py-20 md:py-24 bg-secondary">
+  <section className="py-20 md:py-24 bg-background">
     <div className="container mx-auto px-6">
       <div className="max-w-[1320px] mx-auto">
         <ScrollReveal>
           <div className="text-center mb-16">
-            <p className="text-minimal text-gold mb-5 font-extrabold tracking-[0.22em]">MARKET INTELLIGENCE</p>
-            <h2 className="font-display text-3xl md:text-[2.5rem] font-light text-foreground/90 leading-[1.1] tracking-[-0.01em]">
+            <p className="text-minimal text-gold mb-5">MARKET INTELLIGENCE</p>
+            <h2 className="font-display text-3xl md:text-[2.75rem] font-normal text-foreground/90 leading-[1.1] tracking-[-0.01em]">
               Insights & <span className="italic">Market Intelligence</span>
             </h2>
           </div>
@@ -686,15 +777,15 @@ const InsightsSection = () => (
         <ScrollReveal delay={120} stagger={70}>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {insights.map((article) => (
-              <Link key={article.to} to={article.to} className="group block bg-card border border-border/30 rounded-[3px] overflow-hidden
+              <Link key={article.to} to={article.to} className="group block bg-card border border-border/30 overflow-hidden
                 shadow-[0_4px_20px_rgba(0,0,0,0.04)] transition-all duration-[500ms] hover:-translate-y-[3px] hover:shadow-[0_12px_32px_rgba(0,0,0,0.07)]">
                 <div className="p-7 flex flex-col h-full">
-                  <p className="text-gold text-[0.52rem] tracking-[0.22em] uppercase font-semibold mb-2.5">{article.category}</p>
+                  <p className="text-gold mb-2.5" style={{ fontFamily: '"Jost", sans-serif', fontSize: "10px", letterSpacing: "0.2em", textTransform: "uppercase", fontWeight: 400 }}>{article.category}</p>
                   <h3 className="font-display text-[17px] font-medium text-foreground/90 mb-3 leading-[1.35] group-hover:text-gold transition-colors duration-[400ms] tracking-[0.01em]">
                     {article.title}
                   </h3>
-                  <p className="text-muted-foreground/70 text-[13.5px] font-light leading-[1.85] flex-1">{article.excerpt}</p>
-                  <span className="mt-5 text-gold/60 text-[0.52rem] tracking-[0.22em] uppercase font-semibold group-hover:text-gold transition-colors duration-[400ms]">
+                  <p className="text-muted-foreground/70 text-[13.5px] leading-[1.85] flex-1" style={{ fontFamily: '"Jost", sans-serif', fontWeight: 300 }}>{article.excerpt}</p>
+                  <span className="mt-5 text-gold/60 group-hover:text-gold transition-colors duration-[400ms]" style={{ fontFamily: '"Jost", sans-serif', fontSize: "10px", letterSpacing: "0.2em", textTransform: "uppercase", fontWeight: 400 }}>
                     READ MORE →
                   </span>
                 </div>
@@ -706,8 +797,13 @@ const InsightsSection = () => (
         <ScrollReveal delay={200}>
           <div className="text-center mt-16">
             <Link to="/blog"
-              className="inline-block border border-foreground/15 text-foreground px-10 py-[0.9rem] hover:bg-gold hover:text-white hover:border-gold transition-all duration-[400ms]"
-              style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.58rem", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 600 }}>
+              className="inline-block border text-foreground px-10 py-[0.9rem] transition-all duration-[400ms]"
+              style={{
+                fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 400,
+                borderColor: "hsl(38 39% 61%)",
+              }}
+              onMouseEnter={(e) => { e.currentTarget.style.background = "hsl(38 39% 61%)"; e.currentTarget.style.color = "#fff"; }}
+              onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = ""; }}>
               EXPLORE ALL INSIGHTS
             </Link>
           </div>
@@ -745,45 +841,45 @@ const LeadCapture = () => {
   };
 
   return (
-    <section className="py-16 md:py-20" style={{ background: "#F8F7F5" }}>
+    <section className="py-16 md:py-20 bg-secondary">
       <div className="container mx-auto px-6">
         <div className="max-w-[460px] mx-auto text-center">
           <ScrollReveal>
-            <p className="text-minimal text-gold mb-3 font-extrabold tracking-[0.22em]" style={{ fontSize: "0.6rem" }}>EXCLUSIVE ACCESS</p>
+            <p className="text-minimal text-gold mb-3">EXCLUSIVE ACCESS</p>
           </ScrollReveal>
           <ScrollReveal delay={80}>
-            <h2 className="font-display text-2xl md:text-[1.85rem] font-light mb-3 leading-[1.15] tracking-[-0.01em]" style={{ color: "#1A1C20" }}>
+            <h2 className="font-display text-2xl md:text-[1.85rem] font-normal mb-3 leading-[1.15] tracking-[-0.01em] text-foreground">
               Private Opportunities, <span className="italic">Before They're Public</span>
             </h2>
           </ScrollReveal>
           <ScrollReveal delay={150}>
-            <p className="text-[14px] font-light leading-[1.7] mb-7 max-w-[380px] mx-auto" style={{ color: "rgba(26,28,32,0.65)" }}>
+            <p className="text-[14px] leading-[1.7] mb-7 max-w-[380px] mx-auto text-muted-foreground" style={{ fontFamily: '"Jost", sans-serif', fontWeight: 300 }}>
               Be the first to see private listings and exclusive opportunities before they hit the market.
             </p>
 
             {submitted ? (
               <div className="py-6">
-                <p className="font-display text-lg font-light" style={{ color: "#C6A85B" }}>Thank you for requesting access.</p>
-                <p className="text-sm mt-2 font-light" style={{ color: "rgba(26,28,32,0.55)" }}>We'll be in touch shortly with exclusive opportunities.</p>
+                <p className="font-display text-lg text-gold">Thank you for requesting access.</p>
+                <p className="text-sm mt-2 text-muted-foreground" style={{ fontFamily: '"Jost", sans-serif', fontWeight: 300 }}>We'll be in touch shortly with exclusive opportunities.</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="max-w-[420px] mx-auto">
                 <div className="flex flex-col gap-2.5 mb-3">
                   <input type="text" placeholder="Your Name" value={name} onChange={(e) => setName(e.target.value)}
                     className="w-full px-4 py-3 text-[13px] focus:outline-none transition-all duration-300"
-                    style={{ fontFamily: '"Raleway", sans-serif', background: "#FFFFFF", border: "1px solid rgba(0,0,0,0.1)", borderRadius: "4px", color: "#1A1C20", }} />
+                    style={{ fontFamily: '"Jost", sans-serif', fontWeight: 300, background: "#FFFFFF", border: "1px solid rgba(0,0,0,0.1)", borderRadius: "0", color: "#0D0D0D" }} />
                   <input type="email" placeholder="Email Address" required value={email} onChange={(e) => setEmail(e.target.value)}
                     className="w-full px-4 py-3 text-[13px] focus:outline-none transition-all duration-300"
-                    style={{ fontFamily: '"Raleway", sans-serif', background: "#FFFFFF", border: "1px solid rgba(0,0,0,0.1)", borderRadius: "4px", color: "#1A1C20", }} />
+                    style={{ fontFamily: '"Jost", sans-serif', fontWeight: 300, background: "#FFFFFF", border: "1px solid rgba(0,0,0,0.1)", borderRadius: "0", color: "#0D0D0D" }} />
                 </div>
                 <button type="submit" disabled={loading}
                   className="w-full py-3 text-white disabled:opacity-50 transition-all duration-[250ms] ease-out hover:-translate-y-[1px] active:translate-y-0"
                   style={{
-                    fontFamily: '"Raleway", sans-serif', fontSize: "12px", letterSpacing: "0.12em", fontWeight: 500,
-                    background: "#0C0F24", borderRadius: "4px",
+                    fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.15em", fontWeight: 400, textTransform: "uppercase",
+                    background: "#0D0D0D", borderRadius: "0",
                   }}
-                  onMouseEnter={(e) => { if (!loading) { e.currentTarget.style.background = "#C6A85B"; e.currentTarget.style.color = "#FFFFFF"; }}}
-                  onMouseLeave={(e) => { e.currentTarget.style.background = "#0C0F24"; e.currentTarget.style.color = "#FFFFFF"; }}>
+                  onMouseEnter={(e) => { if (!loading) { e.currentTarget.style.background = "hsl(38 39% 61%)"; }}}
+                  onMouseLeave={(e) => { e.currentTarget.style.background = "#0D0D0D"; }}>
                   {loading ? "Sending..." : "Unlock Private Access"}
                 </button>
               </form>
@@ -800,30 +896,40 @@ const LeadCapture = () => {
    ───────────────────────────────────────────── */
 
 const FinalCTA = () => (
-  <section className="py-24 md:py-32 bg-primary">
+  <section className="py-24 md:py-32" style={{ background: "#0D0D0D" }}>
     <div className="container mx-auto px-6">
       <div className="max-w-[700px] mx-auto text-center">
         <ScrollReveal>
-          <p className="text-minimal text-gold mb-5 font-extrabold tracking-[0.22em]">GET STARTED</p>
+          <p className="text-minimal text-gold mb-5">GET STARTED</p>
         </ScrollReveal>
         <ScrollReveal delay={80}>
-          <h2 className="font-display text-3xl md:text-[2.5rem] font-light text-primary-foreground/90 mb-5 leading-[1.1] tracking-[-0.01em]">
+          <h2 className="font-display text-3xl md:text-[2.75rem] font-normal mb-5 leading-[1.1] tracking-[-0.01em]" style={{ color: "#FAFAF8" }}>
             Work With <span className="italic">Echelon Property Group</span>
           </h2>
         </ScrollReveal>
         <ScrollReveal delay={150}>
-          <p className="text-primary-foreground/70 text-[15px] font-normal leading-[1.8] mb-12 max-w-[400px] mx-auto">
+          <p className="text-[15px] mb-12 max-w-[400px] mx-auto" style={{ fontFamily: '"Jost", sans-serif', fontWeight: 300, color: "rgba(250,250,248,0.7)", lineHeight: 1.8 }}>
             Luxury real estate, redefined through strategy, access, and execution.
           </p>
           <div className="flex flex-col sm:flex-row gap-5 justify-center">
             <Link to="/buy"
-              className="inline-block bg-warm-cream text-foreground px-12 py-[1rem] text-center hover:bg-gold hover:text-white transition-all duration-[400ms]"
-              style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.58rem", letterSpacing: "0.3em", textTransform: "uppercase", fontWeight: 600 }}>
+              className="inline-block text-center px-12 py-[14px] border transition-all duration-[400ms]"
+              style={{
+                fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 400,
+                borderColor: "hsl(38 39% 61%)", color: "hsl(38 39% 61%)", background: "transparent",
+              }}
+              onMouseEnter={(e) => { e.currentTarget.style.background = "hsl(38 39% 61%)"; e.currentTarget.style.color = "#0D0D0D"; }}
+              onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = "hsl(38 39% 61%)"; }}>
               BUY PROPERTY
             </Link>
             <Link to="/sell"
-              className="inline-block border border-primary-foreground/15 text-primary-foreground/60 px-12 py-[1rem] text-center hover:bg-gold hover:text-white hover:border-gold transition-all duration-[400ms]"
-              style={{ fontFamily: '"Raleway", sans-serif', fontSize: "0.58rem", letterSpacing: "0.3em", textTransform: "uppercase", fontWeight: 400 }}>
+              className="inline-block text-center px-12 py-[14px] border transition-all duration-[400ms]"
+              style={{
+                fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 400,
+                borderColor: "rgba(255,255,255,0.3)", color: "#FAFAF8", background: "transparent",
+              }}
+              onMouseEnter={(e) => { e.currentTarget.style.background = "hsl(38 39% 61%)"; e.currentTarget.style.color = "#0D0D0D"; e.currentTarget.style.borderColor = "hsl(38 39% 61%)"; }}
+              onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = "#FAFAF8"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.3)"; }}>
               SELL PROPERTY
             </Link>
           </div>

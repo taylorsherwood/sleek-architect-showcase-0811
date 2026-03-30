@@ -114,7 +114,7 @@ const CinematicVideoSection = () => {
                   textShadow: "0 1px 2px rgba(0,0,0,0.25)",
                 }}
               >
-                That Moves Buyers
+                That <em className="italic">Moves</em> Buyers
               </p>
 
               {/* Power line */}

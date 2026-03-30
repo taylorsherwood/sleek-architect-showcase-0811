@@ -75,7 +75,7 @@ const FloatingContact = () => {
   useEffect(() => {
     if (delayTimer.current) clearTimeout(delayTimer.current);
 
-    const shouldShow = advisoryDismissed && !isConnectPage && (!isHomepage || !heroVisible);
+    const shouldShow = advisoryDismissed && !isConnectPage && !footerVisible && (!isHomepage || !heroVisible);
 
     if (shouldShow) {
       delayTimer.current = setTimeout(() => setVisible(true), 1000);
@@ -86,7 +86,7 @@ const FloatingContact = () => {
     return () => {
       if (delayTimer.current) clearTimeout(delayTimer.current);
     };
-  }, [advisoryDismissed, isHomepage, bannerVisible, heroVisible]);
+  }, [advisoryDismissed, isHomepage, bannerVisible, heroVisible, footerVisible]);
 
   return (
     <>

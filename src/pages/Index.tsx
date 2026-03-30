@@ -1052,13 +1052,25 @@ const Index = () => (
     <SearchSection />
     <AdvisorSection />
     <StatsStrip />
+
+    {/* Parallax break — aerial Austin / Hill Country */}
+    <div className="parallax-break" style={{ backgroundImage: "url('/placeholder.svg')" }} aria-hidden="true" />
+
     <FeaturedProperties />
 
     <NoscriptFallback />
 
     <ExpertiseSection />
+
+    {/* Parallax break — lakefront / pool terrace */}
+    <div className="parallax-break" style={{ backgroundImage: "url('/placeholder.svg')" }} aria-hidden="true" />
+
     <TestimonialsSection />
     <CommunitiesSection />
+
+    {/* Parallax break — luxury interior */}
+    <div className="parallax-break" style={{ backgroundImage: "url('/placeholder.svg')" }} aria-hidden="true" />
+
     <InsightsSection />
     <LeadCapture />
     <FinalCTA />

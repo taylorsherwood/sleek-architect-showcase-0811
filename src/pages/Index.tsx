@@ -443,12 +443,12 @@ const StatsStrip = () => (
                 {/* Gold accent line */}
                 <div className="w-10 h-px mx-auto mb-5" style={{ background: "hsl(38 39% 61%)" }} />
                 <p style={{
-                  fontFamily: '"Cormorant Garamond", serif', fontWeight: 300,
+                  fontFamily: '"Cinzel", serif', fontWeight: 400,
                   fontSize: "clamp(48px, 6vw, 80px)", lineHeight: 1, color: "#FAFAF8",
                 }}>
                   {stat.prefix}{count}
                   <span style={{
-                    fontFamily: '"Cormorant Garamond", serif', fontWeight: 300,
+                    fontFamily: '"Cinzel", serif', fontWeight: 400,
                     fontSize: "0.6em", color: "hsl(38 39% 61%)", verticalAlign: "super",
                   }}>
                     {stat.suffix}

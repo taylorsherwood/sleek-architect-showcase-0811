@@ -386,11 +386,18 @@ realscout-simple-search {
   /* ── Parallax break panels ── */
   .parallax-break {
     height: 500px;
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    overflow: hidden;
+  }
+  /* Use background-attachment: fixed only on non-touch devices.
+     iOS/iPadOS Safari doesn't support it properly — causes blur + heavy crop. */
+  @supports not (-webkit-touch-callout: none) {
+    .parallax-break {
+      background-attachment: fixed;
+    }
   }
   .parallax-break::after {
     content: '';

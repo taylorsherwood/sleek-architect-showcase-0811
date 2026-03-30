@@ -133,6 +133,8 @@ const Footer = () => {
                 style={{ fontFamily: '"Jost", sans-serif', fontSize: "11px", color: "hsl(38 39% 61% / 0.65)" }}
               >
                 Information About Brokerage Services
+                Brokered by eXp Realty
+
               </a>
             </div>
             <p className="text-center" style={{ fontFamily: '"Jost", sans-serif', fontSize: "11px", color: "hsl(38 39% 61% / 0.65)" }}>

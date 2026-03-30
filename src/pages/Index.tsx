@@ -544,7 +544,7 @@ const FeaturedProperties = () => (
                     <div className="absolute bottom-0 left-0 right-0 px-6 pb-6 pt-8"
                       style={{ background: "linear-gradient(to top, rgba(13,13,13,0.92) 0%, transparent 100%)" }}>
                       <p style={{
-                        fontFamily: '"Cormorant Garamond", serif', fontWeight: 400,
+                        fontFamily: '"Cinzel", serif', fontWeight: 400,
                         fontSize: "22px", color: "#FAFAF8", marginBottom: "4px",
                       }}>
                         {p.price}

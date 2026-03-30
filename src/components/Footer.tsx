@@ -40,9 +40,7 @@ const Footer = () => {
 
             {/* Tagline column (centered) */}
             <div className="flex flex-col items-center justify-center text-center">
-              <p style={{ ...footerLinkStyle, lineHeight: 1.7 }}>
-                Strategic Austin Real Estate Advisory
-              </p>
+              <p style={{ ...footerLinkStyle, lineHeight: 1.7 }}>{"\n"}</p>
             </div>
 
             {/* Navigation column */}

@@ -84,38 +84,28 @@ const CinematicVideoSection = () => {
           />
         </div>
 
-        {/* Warm charcoal gradient overlay — subtle, bottom-heavy */}
+        {/* Subtle bottom gradient — warm charcoal */}
         <div
           className="absolute inset-0 z-[1] pointer-events-none"
           style={{
-            background: "linear-gradient(to top, rgba(10, 10, 8, 0.16) 0%, rgba(10, 10, 8, 0.06) 40%, transparent 100%)",
+            background: "linear-gradient(to top, rgba(10, 10, 8, 0.12) 0%, rgba(10, 10, 8, 0.04) 40%, transparent 100%)",
           }}
         />
-        {/* Left side content protection — very subtle */}
+        {/* Left-side localized text protection gradient */}
         <div
           className="absolute inset-0 z-[1] pointer-events-none"
           style={{
-            background: "linear-gradient(to right, rgba(10, 10, 8, 0.22) 0%, rgba(10, 10, 8, 0.08) 35%, transparent 60%)",
+            background: "linear-gradient(to right, rgba(10, 12, 18, 0.52) 0%, rgba(10, 12, 18, 0.30) 25%, rgba(10, 12, 18, 0.12) 42%, transparent 58%)",
           }}
         />
 
         {/* Content — left-aligned, vertically centered (slightly above) */}
         <div
           className="absolute inset-0 z-10 flex items-center"
-          style={{ paddingTop: "0", marginTop: "-3vh" }}
+          style={{ marginTop: "-3vh" }}
         >
           <div className="w-full px-8 sm:px-12 md:px-16 lg:px-20 xl:px-28">
-            <div
-              className="max-w-[560px]"
-              style={{
-                background: "rgba(12, 15, 24, 0.38)",
-                backdropFilter: "blur(8px)",
-                WebkitBackdropFilter: "blur(8px)",
-                borderRadius: "10px",
-                border: "1px solid rgba(255, 255, 255, 0.07)",
-                padding: "clamp(24px, 4vw, 40px)",
-              }}
-            >
+            <div className="max-w-[560px]">
               {/* Eyebrow */}
               <p
                 className="text-minimal text-gold/90 mb-6 font-extrabold"

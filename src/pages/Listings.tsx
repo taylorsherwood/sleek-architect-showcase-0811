@@ -293,7 +293,7 @@ const Listings = () => {
       <section className="py-16 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-display font-normal text-architectural mb-6">
+            <h2 className="text-4xl font-display font-normal text-architectural mb-6">
               Explore More
             </h2>
             <div className="grid sm:grid-cols-2 gap-4">

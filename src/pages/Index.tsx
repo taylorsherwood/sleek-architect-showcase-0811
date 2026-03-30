@@ -266,16 +266,17 @@ const AdvisorSection = () => (
     <div className="max-w-[1400px] mx-auto">
       <div className="grid md:grid-cols-2 min-h-[600px]">
         {/* Left — full-bleed image */}
-        <div className="relative overflow-hidden flex items-center justify-center bg-muted/30">
-          <div className="w-full max-w-[420px] mx-auto" style={{ aspectRatio: "4 / 5" }}>
-            <img
-              src={taylorBoatImg}
-              alt="Taylor Sherwood — Austin luxury real estate advisor and founder of Echelon Property Group"
-              title="Taylor Sherwood, Echelon Property Group"
-              className="w-full h-full object-cover object-[center_top]"
-              loading="lazy" decoding="async"
-            />
-          </div>
+        <div className="relative overflow-hidden">
+          <img
+            src={taylorBoatImg}
+            alt="Taylor Sherwood — Austin luxury real estate advisor and founder of Echelon Property Group"
+            title="Taylor Sherwood, Echelon Property Group"
+            className="w-full h-full object-cover object-[center_20%]"
+            style={{ minHeight: "500px" }}
+            loading="lazy" decoding="async"
+          />
+          {/* Bottom gradient fade */}
+          <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-black/30 to-transparent" />
         </div>
 
         {/* Right — content */}

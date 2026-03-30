@@ -640,23 +640,19 @@ const TestimonialsSection = () => {
     <section className="bg-secondary" style={{ padding: "clamp(80px, 12vw, 160px) 0" }}>
       <div className="container mx-auto px-6">
         <div className="max-w-[800px] mx-auto text-center relative">
-          {/* Decorative gold em dash */}
-          <div className="mx-auto mb-8" aria-hidden="true" style={{
-            width: "48px", height: "1.5px",
-            background: "linear-gradient(90deg, transparent, hsl(38 39% 61%), transparent)",
-          }} />
-
           <ScrollReveal>
             <p className="text-minimal text-gold mb-8">CLIENT EXPERIENCES</p>
           </ScrollReveal>
 
-          {/* Quote */}
+          {/* Quote with em dash delimiters */}
           <p key={active} className="mb-6" style={{
             fontFamily: '"Cinzel", serif', fontWeight: 400,
             fontSize: "clamp(18px, 2.5vw, 30px)", lineHeight: 1.5, color: "hsl(var(--foreground))",
             animation: "fadeUp 0.6s ease both",
           }}>
+            <span style={{ color: "hsl(38 39% 61%)", marginRight: "0.4em" }}>—</span>
             {t.quote}
+            <span style={{ color: "hsl(38 39% 61%)", marginLeft: "0.4em" }}>—</span>
           </p>
 
           {/* Attribution */}

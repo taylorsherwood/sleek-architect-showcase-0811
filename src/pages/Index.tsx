@@ -656,7 +656,7 @@ const TestimonialsSection = () => {
             fontSize: "clamp(22px, 3vw, 36px)", lineHeight: 1.5, color: "hsl(var(--foreground))",
             animation: "fadeUp 0.6s ease both",
           }}>
-            "{t.quote}"
+            {t.quote}
           </p>
 
           {/* Attribution */}

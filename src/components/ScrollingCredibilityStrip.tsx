@@ -8,14 +8,14 @@ import mediaAustinHome from "@/assets/media-austin-home.png";
 import mediaAustinLuxuryHome from "@/assets/media-austin-luxury-home.png";
 
 const logos = [
-  { src: mediaWsj, alt: "The Wall Street Journal", h: "h-10 md:h-14" },
-  { src: mediaMansionGlobal, alt: "Mansion Global", h: "h-8 md:h-11" },
-  { src: mediaRobbReport, alt: "Robb Report", h: "h-7 md:h-10" },
-  { src: mediaTribeza, alt: "Tribeza", h: "h-7 md:h-9" },
-  { src: mediaAbj, alt: "Austin Business Journal", h: "h-8 md:h-11" },
-  { src: mediaHaven, alt: "Haven", h: "h-8 md:h-10" },
-  { src: mediaAustinHome, alt: "Austin Home", h: "h-7 md:h-10" },
-  { src: mediaAustinLuxuryHome, alt: "Austin Luxury Home Magazine", h: "h-6 md:h-8" },
+  { src: mediaWsj, alt: "The Wall Street Journal", h: "h-28 md:h-40" },
+  { src: mediaMansionGlobal, alt: "Mansion Global", h: "h-24 md:h-32" },
+  { src: mediaRobbReport, alt: "Robb Report", h: "h-20 md:h-28" },
+  { src: mediaTribeza, alt: "Tribeza", h: "h-20 md:h-26" },
+  { src: mediaAbj, alt: "Austin Business Journal", h: "h-24 md:h-32" },
+  { src: mediaHaven, alt: "Haven", h: "h-24 md:h-28" },
+  { src: mediaAustinHome, alt: "Austin Home", h: "h-20 md:h-28" },
+  { src: mediaAustinLuxuryHome, alt: "Austin Luxury Home Magazine", h: "h-16 md:h-24" },
 ];
 
 const ScrollingCredibilityStrip = () => {

@@ -100,7 +100,7 @@ const ListingCardOverlay = ({
       <img
         src={listing.image}
         alt={`${listing.address} — ${listing.neighborhood}, Austin TX`}
-        className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+        className="w-full h-full object-cover transition-transform duration-700 ease-out hover:scale-[1.06] group-hover:scale-[1.06]"
         loading="lazy" decoding="async"
       />
       {/* Persistent gradient */}

@@ -105,7 +105,17 @@ const CinematicVideoSection = () => {
           style={{ paddingTop: "0", marginTop: "-3vh" }}
         >
           <div className="w-full px-8 sm:px-12 md:px-16 lg:px-20 xl:px-28">
-            <div className="max-w-[560px]">
+            <div
+              className="max-w-[560px]"
+              style={{
+                background: "rgba(12, 15, 24, 0.38)",
+                backdropFilter: "blur(8px)",
+                WebkitBackdropFilter: "blur(8px)",
+                borderRadius: "10px",
+                border: "1px solid rgba(255, 255, 255, 0.07)",
+                padding: "clamp(24px, 4vw, 40px)",
+              }}
+            >
               {/* Eyebrow */}
               <p
                 className="text-minimal text-gold/90 mb-6 font-extrabold"

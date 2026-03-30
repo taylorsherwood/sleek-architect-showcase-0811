@@ -926,10 +926,10 @@ const LeadCapture = () => {
                   className="w-full py-3 text-white disabled:opacity-50 transition-all duration-[250ms] ease-out hover:-translate-y-[1px] active:translate-y-0"
                   style={{
                     fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.15em", fontWeight: 400, textTransform: "uppercase",
-                    background: "#0D0D0D", borderRadius: "0",
+                    background: "#0C0F24", borderRadius: "0",
                   }}
                   onMouseEnter={(e) => { if (!loading) { e.currentTarget.style.background = "hsl(38 39% 61%)"; }}}
-                  onMouseLeave={(e) => { e.currentTarget.style.background = "#0D0D0D"; }}>
+                  onMouseLeave={(e) => { e.currentTarget.style.background = "#0C0F24"; }}>
                   {loading ? "Sending..." : "Unlock Private Access"}
                 </button>
               </form>

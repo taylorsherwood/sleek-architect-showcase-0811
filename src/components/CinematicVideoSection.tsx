@@ -88,8 +88,8 @@ const CinematicVideoSection = () => {
                 Luxury Marketing
               </h2>
               <p
-                className="font-display font-normal text-foreground/55 leading-[0.95] mt-1.5 mb-10 lg:ml-[6%] whitespace-nowrap"
-                style={{ ...reveal(visible, 240), fontSize: "clamp(1.6rem, 3vw, 2.75rem)", letterSpacing: "0.03em" }}
+                className="font-display font-normal text-foreground/55 leading-[0.95] mt-1.5 mb-10 lg:ml-[3%] whitespace-nowrap"
+                style={{ ...reveal(visible, 240), fontSize: "clamp(1.5rem, 2.8vw, 2.5rem)", letterSpacing: "0.03em" }}
               >
                 That Moves Buyers
               </p>

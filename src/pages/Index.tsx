@@ -613,7 +613,7 @@ const FeaturedProperties = () => (
 );
 
 /* ─────────────────────────────────────────────
-   SECTION 5 — TESTIMONIALS
+   SECTION 5 — TESTIMONIALS (Single editorial display with dots)
    ───────────────────────────────────────────── */
 
 const testimonials = [
@@ -639,44 +639,77 @@ const testimonials = [
   },
 ];
 
-const TestimonialsSection = () => (
-  <section className="py-24 md:py-32 bg-background">
-    <div className="container mx-auto px-6">
-      <div className="max-w-[1320px] mx-auto">
-        <ScrollReveal>
-          <div className="text-center mb-14">
-            <p className="text-minimal text-gold mb-5">CLIENT EXPERIENCES</p>
-            <h2 className="font-display text-3xl md:text-[2.75rem] font-normal leading-[1.1] tracking-[-0.01em] text-foreground">
-              Trusted by Buyers, Sellers, and <span className="italic">Investors</span>
-            </h2>
-          </div>
-        </ScrollReveal>
+const TestimonialsSection = () => {
+  const [active, setActive] = useState(0);
 
-        <div className="grid md:grid-cols-2 gap-5">
-          {testimonials.map((t, i) => (
-            <ScrollReveal key={i} delay={100 + i * 60}>
-              <div className="px-7 py-7 flex flex-col justify-between h-full transition-all duration-[500ms] hover:-translate-y-[2px]"
+  useEffect(() => {
+    const timer = setInterval(() => setActive((p) => (p + 1) % testimonials.length), 7000);
+    return () => clearInterval(timer);
+  }, []);
+
+  const t = testimonials[active];
+
+  return (
+    <section className="bg-secondary" style={{ padding: "clamp(80px, 12vw, 160px) 0" }}>
+      <div className="container mx-auto px-6">
+        <div className="max-w-[800px] mx-auto text-center relative">
+          {/* Decorative open-quote */}
+          <span className="absolute -top-6 left-1/2 -translate-x-1/2 select-none pointer-events-none" aria-hidden="true" style={{
+            fontFamily: '"Cormorant Garamond", serif', fontSize: "120px", lineHeight: 0,
+            color: "hsl(38 39% 61%)", opacity: 0.15,
+          }}>
+            "
+          </span>
+
+          <ScrollReveal>
+            <p className="text-minimal text-gold mb-8">CLIENT EXPERIENCES</p>
+          </ScrollReveal>
+
+          {/* Quote */}
+          <p key={active} className="italic mb-6" style={{
+            fontFamily: '"Cormorant Garamond", serif', fontWeight: 300,
+            fontSize: "clamp(22px, 3vw, 36px)", lineHeight: 1.5, color: "hsl(var(--foreground))",
+            animation: "fadeUp 0.6s ease both",
+          }}>
+            "{t.quote}"
+          </p>
+
+          {/* Attribution */}
+          <p key={`name-${active}`} style={{
+            fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em",
+            textTransform: "uppercase", color: "hsl(38 39% 61%)", marginTop: "24px",
+            animation: "fadeUp 0.6s ease 0.15s both",
+          }}>
+            {t.name}
+          </p>
+          <p key={`ctx-${active}`} style={{
+            fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.12em",
+            textTransform: "uppercase", color: "hsl(var(--muted-foreground))", marginTop: "6px",
+            animation: "fadeUp 0.6s ease 0.25s both",
+          }}>
+            {t.context}
+          </p>
+
+          {/* Navigation dots */}
+          <div className="flex items-center justify-center gap-3 mt-10">
+            {testimonials.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => setActive(i)}
+                className="w-2.5 h-2.5 rounded-full transition-all duration-300 cursor-pointer"
                 style={{
-                  background: "#FFFFFF",
-                  border: "1px solid rgba(0,0,0,0.06)",
-                  boxShadow: "0 10px 30px rgba(0,0,0,0.05)",
-                }}>
-                <p className="text-[15px] leading-[1.8] italic mb-5" style={{ fontFamily: '"Jost", sans-serif', fontWeight: 300, color: "#0D0D0D" }}>
-                  "{t.quote}"
-                </p>
-                <div>
-                  <div className="h-px mb-4" style={{ background: "linear-gradient(to right, transparent, rgba(0,0,0,0.08), transparent)" }} />
-                  <p className="font-display text-[0.95rem] tracking-[0.01em]" style={{ color: "#0D0D0D" }}>{t.name}</p>
-                  <p className="mt-1" style={{ fontFamily: '"Jost", sans-serif', fontSize: "10px", letterSpacing: "0.15em", textTransform: "uppercase", color: "hsl(38 39% 61% / 0.7)" }}>{t.context}</p>
-                </div>
-              </div>
-            </ScrollReveal>
-          ))}
+                  background: i === active ? "hsl(38 39% 61%)" : "hsl(var(--gray-light))",
+                  transform: i === active ? "scale(1.2)" : "scale(1)",
+                }}
+                aria-label={`View testimonial ${i + 1}`}
+              />
+            ))}
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
 
 /* ─────────────────────────────────────────────
    SECTION 6 — COMMUNITIES

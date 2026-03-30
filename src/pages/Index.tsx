@@ -454,10 +454,10 @@ const StatsStrip = () => (
                     {stat.label}
                   </p>
                   <div
-                    className="absolute bottom-0 left-0 h-px transition-all duration-[1200ms] ease-out"
+                    className="absolute bottom-0 left-0 h-px transition-all duration-[3400ms] ease-out"
                     style={{
                       background: "hsl(38 39% 61%)",
-                      width: count > 0 ? "100%" : "0%",
+                      width: inView ? "100%" : "0%",
                     }}
                   />
                 </div>

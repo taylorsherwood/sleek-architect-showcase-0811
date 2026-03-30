@@ -147,7 +147,7 @@ const Hero = () => {
         className="absolute inset-0"
         style={{
           zIndex: 1,
-          background: `linear-gradient(to bottom, rgba(0,0,0,0.10) 0%, rgba(0,0,0,0.04) 38%, rgba(0,0,0,0.18) 68%, rgba(18,14,8,0.28) 86%, rgba(24,18,10,0.38) 100%)`
+          background: `linear-gradient(to bottom, rgba(0,0,0,0.09) 0%, rgba(0,0,0,0.035) 38%, rgba(0,0,0,0.16) 68%, rgba(18,14,8,0.22) 86%, rgba(24,18,10,0.30) 100%)`
         }} />
       
 

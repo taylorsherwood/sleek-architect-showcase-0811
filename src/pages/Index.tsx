@@ -118,8 +118,8 @@ const Hero = () => {
       {/* Layered gradient overlay per spec */}
       <div className="absolute inset-0" style={{
         zIndex: 1,
-        background: `linear-gradient(to bottom, rgba(13,13,13,0.35) 0%, rgba(13,13,13,0.20) 40%, rgba(13,13,13,0.65) 100%),
-                      linear-gradient(to right, rgba(13,13,13,0.55) 0%, rgba(13,13,13,0.25) 50%, rgba(13,13,13,0.05) 100%)`
+        background: `linear-gradient(to bottom, rgba(8,11,26,0.35) 0%, rgba(8,11,26,0.20) 40%, rgba(8,11,26,0.65) 100%),
+                      linear-gradient(to right, rgba(8,11,26,0.55) 0%, rgba(8,11,26,0.25) 50%, rgba(8,11,26,0.05) 100%)`
       }} />
 
       {/* Content */}

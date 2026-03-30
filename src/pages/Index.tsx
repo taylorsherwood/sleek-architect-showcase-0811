@@ -162,7 +162,7 @@ const Hero = () => {
                 fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 400,
                 borderColor: "hsl(38 39% 61%)", color: "hsl(38 39% 61%)", background: "transparent",
               }}
-              onMouseEnter={(e) => { e.currentTarget.style.background = "hsl(38 39% 61%)"; e.currentTarget.style.color = "#0D0D0D"; }}
+              onMouseEnter={(e) => { e.currentTarget.style.background = "hsl(38 39% 61%)"; e.currentTarget.style.color = "#0C0F24"; }}
               onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = "hsl(38 39% 61%)"; }}>
               EXPLORE LUXURY HOMES
             </Link>
@@ -172,7 +172,7 @@ const Hero = () => {
                 fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 400,
                 borderColor: "rgba(255,255,255,0.3)", color: "hsl(var(--warm-cream))", background: "transparent",
               }}
-              onMouseEnter={(e) => { e.currentTarget.style.background = "hsl(38 39% 61%)"; e.currentTarget.style.color = "#0D0D0D"; e.currentTarget.style.borderColor = "hsl(38 39% 61%)"; }}
+              onMouseEnter={(e) => { e.currentTarget.style.background = "hsl(38 39% 61%)"; e.currentTarget.style.color = "#0C0F24"; e.currentTarget.style.borderColor = "hsl(38 39% 61%)"; }}
               onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = "hsl(var(--warm-cream))"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.3)"; }}>
               REQUEST PRIVATE ACCESS
             </Link>
@@ -917,10 +917,10 @@ const LeadCapture = () => {
                 <div className="flex flex-col gap-2.5 mb-3">
                   <input type="text" placeholder="Your Name" value={name} onChange={(e) => setName(e.target.value)}
                     className="w-full px-4 py-3 text-[13px] focus:outline-none transition-all duration-300"
-                    style={{ fontFamily: '"Jost", sans-serif', fontWeight: 300, background: "#FFFFFF", border: "1px solid rgba(0,0,0,0.1)", borderRadius: "0", color: "#0D0D0D" }} />
+                    style={{ fontFamily: '"Jost", sans-serif', fontWeight: 300, background: "#FFFFFF", border: "1px solid rgba(0,0,0,0.1)", borderRadius: "0", color: "#0C0F24" }} />
                   <input type="email" placeholder="Email Address" required value={email} onChange={(e) => setEmail(e.target.value)}
                     className="w-full px-4 py-3 text-[13px] focus:outline-none transition-all duration-300"
-                    style={{ fontFamily: '"Jost", sans-serif', fontWeight: 300, background: "#FFFFFF", border: "1px solid rgba(0,0,0,0.1)", borderRadius: "0", color: "#0D0D0D" }} />
+                    style={{ fontFamily: '"Jost", sans-serif', fontWeight: 300, background: "#FFFFFF", border: "1px solid rgba(0,0,0,0.1)", borderRadius: "0", color: "#0C0F24" }} />
                 </div>
                 <button type="submit" disabled={loading}
                   className="w-full py-3 text-white disabled:opacity-50 transition-all duration-[250ms] ease-out hover:-translate-y-[1px] active:translate-y-0"
@@ -968,7 +968,7 @@ const FinalCTA = () => (
                 fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 400,
                 borderColor: "hsl(38 39% 61%)", color: "hsl(38 39% 61%)", background: "transparent",
               }}
-              onMouseEnter={(e) => { e.currentTarget.style.background = "hsl(38 39% 61%)"; e.currentTarget.style.color = "#0D0D0D"; }}
+              onMouseEnter={(e) => { e.currentTarget.style.background = "hsl(38 39% 61%)"; e.currentTarget.style.color = "#0C0F24"; }}
               onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = "hsl(38 39% 61%)"; }}>
               BUY PROPERTY
             </Link>
@@ -978,7 +978,7 @@ const FinalCTA = () => (
                 fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 400,
                 borderColor: "rgba(255,255,255,0.3)", color: "#FAFAF8", background: "transparent",
               }}
-              onMouseEnter={(e) => { e.currentTarget.style.background = "hsl(38 39% 61%)"; e.currentTarget.style.color = "#0D0D0D"; e.currentTarget.style.borderColor = "hsl(38 39% 61%)"; }}
+              onMouseEnter={(e) => { e.currentTarget.style.background = "hsl(38 39% 61%)"; e.currentTarget.style.color = "#0C0F24"; e.currentTarget.style.borderColor = "hsl(38 39% 61%)"; }}
               onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = "#FAFAF8"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.3)"; }}>
               SELL PROPERTY
             </Link>

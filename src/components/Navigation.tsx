@@ -13,6 +13,7 @@ interface NavLink {
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [inDarkZone, setInDarkZone] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
@@ -32,6 +33,24 @@ const Navigation = () => {
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, [shouldNeverFade]);
+
+  // Detect when nav overlaps dark-zone sections (Final CTA / Footer)
+  useEffect(() => {
+    const targets = document.querySelectorAll("[data-nav-dark-zone]");
+    if (!targets.length) return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const anyVisible = entries.some((e) => e.isIntersecting);
+        setInDarkZone(anyVisible);
+      },
+      { rootMargin: "-10% 0px -85% 0px", threshold: 0 }
+    );
+    targets.forEach((t) => observer.observe(t));
+    return () => observer.disconnect();
+  }, [location.pathname]);
+
+  // When in a dark zone, override to light (non-scrolled) appearance
+  const effectiveScrolled = isScrolled && !inDarkZone;
 
   useEffect(() => {
     setOpenDropdown(null);

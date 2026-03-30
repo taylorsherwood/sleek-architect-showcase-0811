@@ -430,7 +430,7 @@ const StatsStrip = () => (
       <div className="max-w-[1100px] mx-auto py-16 md:py-20">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat, i) => {
-            const { count, ref } = useCountUp(stat.value, 2600, (stat as any).from || 0);
+            const { count, ref, inView } = useCountUp(stat.value, 3400, (stat as any).from || 0);
             return (
               <div key={i} ref={ref} className="text-center group/stat">
                 <p style={{

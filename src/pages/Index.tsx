@@ -527,8 +527,8 @@ const FeaturedProperties = () => (
                 <Wrapper key={i} {...wrapperProps} className="group block cursor-pointer">
                   <div className="relative overflow-hidden" style={{ aspectRatio: "3/4", background: "#12162E" }}>
                     <img src={p.image} alt={p.address}
-                      className="w-full h-full object-cover transition-transform duration-[800ms] group-hover:scale-[1.06]"
-                      style={{ transitionTimingFunction: "cubic-bezier(0.25, 0.46, 0.45, 0.94)" }}
+                      className="w-full h-full object-cover transition-transform duration-[1200ms] group-hover:scale-[1.04]"
+                      style={{ transitionTimingFunction: "cubic-bezier(0.16, 0.6, 0.36, 1)" }}
                       loading="lazy" decoding="async" />
 
 

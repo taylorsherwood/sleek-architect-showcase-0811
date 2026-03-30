@@ -562,7 +562,7 @@ const FeaturedProperties = () => (
             <Link to="/off-market-real-estate-austin" className="group block">
               <div className="relative overflow-hidden flex items-center justify-center" style={{ aspectRatio: "3/4", background: "#0C0F24" }}>
                 <img src="/static-assets/echelon-logo-gold-square.png" alt="Echelon Property Group"
-                  className="w-1/2 h-auto object-contain transition-transform duration-[700ms] ease-out group-hover:scale-[1.06]"
+                  className="w-1/2 h-auto object-contain group-hover:scale-[1.03] will-change-transform [transition:transform_1.8s_cubic-bezier(0.19,1,0.22,1)]"
                   loading="lazy" decoding="async" />
                 {/* Bottom overlay */}
                 <div className="absolute bottom-0 left-0 right-0 px-6 pb-6 pt-8 text-center"

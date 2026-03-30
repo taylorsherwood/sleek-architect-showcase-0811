@@ -9,6 +9,8 @@ const communityFaqs = [
   { question: "What is the average home price in Austin's luxury communities?", answer: "Prices vary by neighborhood. Westlake Hills ranges from $1.2M to $20M+, Barton Creek from $1.5M to $15M+, and Lake Austin waterfront from $2M to $25M+. Entry-level luxury starts around $800K in neighborhoods like Tarrytown." },
   { question: "Which Austin neighborhood has the best schools?", answer: "Westlake Hills, Barton Creek, and Rollingwood are served by the Eanes Independent School District, consistently ranked among the top districts in Texas." },
   { question: "Are there waterfront homes in Austin?", answer: "Yes. Lake Austin and Lake Travis offer waterfront estates with private docks, panoramic water views, and a resort-like lifestyle just minutes from downtown Austin." },
+  { question: "Barton Creek vs Westlake Hills — which is better?", answer: "Both are premier Austin neighborhoods. Barton Creek offers gated country club living with championship golf and resort amenities, ideal for families and golf enthusiasts. Westlake Hills provides sweeping Hill Country views, a wider price range, and more diverse architectural styles. Both share access to the top-rated Eanes ISD school district." },
+  { question: "What is the most expensive neighborhood in Austin?", answer: "Lake Austin waterfront is Austin's most expensive submarket, with estates regularly exceeding $10 million. Westlake Hills and Barton Creek also feature ultra-luxury homes above $15 million. These neighborhoods offer limited inventory and the strongest long-term appreciation in the Austin market." },
 ];
 import { Link } from "react-router-dom";
 import { communityPages } from "@/data/communityData";

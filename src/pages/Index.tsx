@@ -654,7 +654,7 @@ const TestimonialsSection = () => {
   return (
     <section className="bg-secondary" style={{ padding: "clamp(80px, 12vw, 160px) 0" }}>
       <div className="container mx-auto px-6">
-        <div className="max-w-[800px] mx-auto text-center relative">
+        <div className="max-w-[800px] mx-auto text-center relative" style={{ minHeight: "320px" }}>
           <ScrollReveal>
             <p className="text-minimal text-gold mb-8">CLIENT EXPERIENCES</p>
           </ScrollReveal>

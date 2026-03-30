@@ -92,7 +92,7 @@ const Navigation = () => {
               >
                 <button
                   onClick={() => setOpenDropdown(openDropdown === link.href ? null : link.href)}
-                  className={`relative text-minimal tracking-[0.25em] font-normal transition-colors duration-500 group cursor-pointer bg-transparent border-none ${
+                  className={`relative text-nav-cta transition-colors duration-500 group cursor-pointer bg-transparent border-none ${
                     isActive(link)
                       ? "text-foreground"
                       : "text-muted-foreground/70 hover:text-foreground"
@@ -131,7 +131,7 @@ const Navigation = () => {
                 key={link.href}
                 to={link.href}
                 onClick={() => { if (link.href === '/' && location.pathname === '/') window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-                className={`relative text-minimal tracking-[0.25em] font-normal transition-colors duration-500 group ${
+                className={`relative text-nav-cta transition-colors duration-500 group ${
                   location.pathname === link.href
                     ? "text-foreground"
                     : "text-muted-foreground/70 hover:text-foreground"
@@ -154,7 +154,7 @@ const Navigation = () => {
             href="https://echelonpropertygroup.outportal.ai"
             target="_blank"
             rel="noopener noreferrer nofollow"
-            className="whitespace-nowrap text-[0.6rem] tracking-[0.18em] uppercase font-normal text-muted-foreground/50 hover:text-gold transition-colors duration-300 gold-underline-hover"
+            className="whitespace-nowrap text-nav-cta text-muted-foreground/50 hover:text-gold transition-colors duration-300 gold-underline-hover"
           >
             CLIENT PORTAL
           </a>

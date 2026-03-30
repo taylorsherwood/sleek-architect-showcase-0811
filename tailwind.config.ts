@@ -14,8 +14,9 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ['"Playfair Display"', 'serif'],
-        sans: ['"Raleway"', 'sans-serif'],
+        display: ['"Cormorant Garamond"', 'serif'],
+        sans: ['"Jost"', 'sans-serif'],
+        body: ['"Jost"', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -28,8 +29,11 @@ export default {
           deep: "hsl(var(--gold-deep))",
           light: "hsl(var(--gold-light))",
           highlight: "hsl(var(--gold-highlight))",
+          dark: "hsl(var(--gold-dark))",
         },
         "warm-cream": "hsl(var(--warm-cream))",
+        "black-soft": "hsl(var(--black-soft))",
+        "black-card": "hsl(var(--black-card))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",

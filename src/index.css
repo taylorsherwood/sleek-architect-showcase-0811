@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -30,109 +32,138 @@ iframe {
   overflow: hidden;
 }
 
-/* Fonts self-hosted in /public/fonts/ — no external Google Fonts requests */
-
 :root {
   color-scheme: light only;
 }
 
 @layer base {
   :root {
-    /* ── Strict luxury palette ──
-       Primary bg:  #F8F7F5  → warm ivory (site default)
-       Card:        #FFFFFF  → pure white (cards, forms only)
-       Dark:        #0C0F24  → deep navy (hero, dark sections)
-       Text:        #1A1C20  → soft charcoal
-       Gold:        #C6A85B  → accent gold
-    */
-    --background: 40 14% 97%;       /* #F8F7F5 */
-    --foreground: 220 8% 11%;       /* #1A1C20 */
-    
-    --card: 0 0% 100%;              /* #FFFFFF */
-    --card-foreground: 220 8% 11%;
-    
+    /* ── Refined luxury palette ── */
+    --gold: 38 39% 61%;              /* #C9A96E */
+    --gold-light: 36 52% 80%;        /* #E8D5B0 */
+    --gold-dark: 40 75% 31%;         /* #8B6914 */
+    --gold-deep: 40 38% 42%;
+    --gold-highlight: 38 50% 74%;
+
+    --background: 45 10% 97%;        /* #FAFAF8 */
+    --foreground: 0 0% 5%;           /* #0D0D0D */
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 5%;
+
     --popover: 0 0% 100%;
-    --popover-foreground: 220 8% 11%;
-    
-    --primary: 233 50% 9%;          /* #0C0F24 */
-    --primary-foreground: 40 14% 97%;
-    
-    --secondary: 40 14% 97%;        /* same as background — use card for contrast */
-    --secondary-foreground: 220 8% 11%;
-    
-    --muted: 40 10% 93%;
-    --muted-foreground: 220 6% 40%;
-    
-    --accent: 40 10% 93%;
-    --accent-foreground: 220 8% 11%;
-    
+    --popover-foreground: 0 0% 5%;
+
+    --primary: 0 0% 5%;              /* #0D0D0D */
+    --primary-foreground: 40 17% 95%; /* #F5F3EF */
+
+    --secondary: 37 15% 95%;         /* #F5F3EF */
+    --secondary-foreground: 0 0% 5%;
+
+    --muted: 37 10% 91%;
+    --muted-foreground: 25 4% 42%;   /* #6B6864 */
+
+    --accent: 37 10% 91%;
+    --accent-foreground: 0 0% 5%;
+
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
-    
-    --border: 40 8% 88%;
+
+    --border: 37 8% 88%;
     --input: 0 0% 100%;
-    --ring: 220 8% 11%;
+    --ring: 0 0% 5%;
 
     --radius: 0.25rem;
 
-    --gold: 41 43% 56%;             /* #C6A85B */
-    --gold-deep: 40 38% 42%;
-    --gold-light: 39 45% 65%;
-    --gold-highlight: 38 50% 74%;
-    --warm-cream: 40 14% 97%;       /* #F8F7F5 */
+    --warm-cream: 40 17% 95%;        /* #F5F3EF */
 
-    --sidebar-background: 40 14% 97%;
-    --sidebar-foreground: 220 8% 11%;
-    --sidebar-primary: 220 8% 11%;
-    --sidebar-primary-foreground: 40 14% 97%;
-    --sidebar-accent: 40 10% 93%;
-    --sidebar-accent-foreground: 220 8% 11%;
-    --sidebar-border: 40 8% 88%;
-    --sidebar-ring: 220 8% 11%;
-    
-    --gradient-hero: linear-gradient(135deg, hsl(220 20% 10% / 0.7), hsl(220 20% 10% / 0.3));
-    --gradient-overlay: linear-gradient(180deg, hsl(220 20% 10% / 0.6), hsl(220 20% 10% / 0.2));
-    
-    --shadow-architectural: 0 25px 60px -15px hsl(220 20% 10% / 0.12);
-    --shadow-elegant: 0 8px 30px -12px hsl(220 20% 10% / 0.08);
-    
+    --black-soft: 0 0% 8%;           /* #141414 */
+    --black-card: 0 0% 10%;          /* #1A1A1A */
+    --white-warm: 37 15% 95%;        /* #F5F3EF */
+    --gray-light: 36 8% 90%;         /* #E8E6E1 */
+    --gray-mid: 30 3% 59%;           /* #9A9690 */
+    --gray-dark: 30 3% 28%;          /* #4A4844 */
+    --text-secondary: 25 4% 42%;     /* #6B6864 */
+
+    --sidebar-background: 40 17% 95%;
+    --sidebar-foreground: 0 0% 5%;
+    --sidebar-primary: 0 0% 5%;
+    --sidebar-primary-foreground: 40 17% 95%;
+    --sidebar-accent: 37 10% 91%;
+    --sidebar-accent-foreground: 0 0% 5%;
+    --sidebar-border: 37 8% 88%;
+    --sidebar-ring: 0 0% 5%;
+
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 5% / 0.7), hsl(0 0% 5% / 0.3));
+    --gradient-overlay: linear-gradient(180deg, hsl(0 0% 5% / 0.6), hsl(0 0% 5% / 0.2));
+
+    --shadow-architectural: 0 25px 60px -15px hsl(0 0% 5% / 0.12);
+    --shadow-elegant: 0 8px 30px -12px hsl(0 0% 5% / 0.08);
+
     --transition-smooth: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     --transition-fast: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
+
   * {
     @apply border-border;
   }
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
   }
-  
+
+  /* Display / serif headings */
   .font-display {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
+  }
+
+  h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+  }
+
+  h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
   }
 
   .text-architectural {
     @apply tracking-[-0.02em] leading-[1.1];
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
   }
-  
+
+  /* Kicker / eyebrow labels */
   .text-minimal {
-    @apply tracking-[0.2em] uppercase text-xs font-medium;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
   }
-  
+
+  /* Nav items and CTA text */
+  .text-nav-cta {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+
   .hero-overlay {
     background: var(--gradient-overlay);
   }
-  
+
   .reveal {
     opacity: 0;
     transform: translateY(10px);
     animation: reveal 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
     will-change: opacity, transform;
   }
-  
+
   .reveal-delayed {
     opacity: 0;
     transform: translateY(10px);
@@ -146,7 +177,7 @@ iframe {
     animation: reveal 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.4s forwards;
     will-change: opacity, transform;
   }
-  
+
   @keyframes reveal {
     to {
       opacity: 1;

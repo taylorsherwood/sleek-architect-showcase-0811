@@ -68,7 +68,7 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <section className="pt-16 md:pt-20 pb-20 md:pb-24 bg-background">
+    <section className="relative pt-16 md:pt-20 pb-20 md:pb-24 bg-background overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="max-w-[60rem] mx-auto">
           {/* Header */}
@@ -113,15 +113,6 @@ const Testimonials = () => {
                     "0 10px 30px rgba(0,0,0,0.05)";
                 }}
               >
-                {/* Watermark logo behind text */}
-                <img
-                  src={echelonWatermark}
-                  alt=""
-                  className="absolute bottom-4 right-4 md:bottom-6 md:right-6 w-28 md:w-36 h-auto pointer-events-none select-none opacity-20 z-0"
-                  aria-hidden="true"
-                  draggable={false}
-                />
-
                 {/* Quote icon */}
                 <div className="mb-4 relative z-10">
                   <div
@@ -156,20 +147,20 @@ const Testimonials = () => {
                   )}
                 </div>
 
-                {/* Secondary logo watermark */}
-                <img
-                  src="/static-assets/echelon-secondary-logo.png"
-                  alt=""
-                  className="absolute bottom-3 right-3 w-8 h-auto pointer-events-none"
-                  aria-hidden="true"
-                  loading="lazy"
-                  decoding="async"
-                />
               </div>
             ))}
           </div>
         </div>
       </div>
+
+      {/* Section watermark - bottom right of testimonial section */}
+      <img
+        src={echelonWatermark}
+        alt=""
+        aria-hidden="true"
+        draggable={false}
+        className="pointer-events-none select-none absolute bottom-6 right-6 w-40 md:w-56 h-auto opacity-20"
+      />
     </section>
   );
 };

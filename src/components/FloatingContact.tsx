@@ -52,10 +52,22 @@ const FloatingContact = () => {
       }
     }
 
+    // Hide when footer is visible
+    const footer = document.querySelector("footer");
+    let footerObserver: IntersectionObserver | null = null;
+    if (footer) {
+      footerObserver = new IntersectionObserver(
+        ([entry]) => setFooterVisible(entry.isIntersecting),
+        { threshold: 0 }
+      );
+      footerObserver.observe(footer);
+    }
+
     return () => {
       window.removeEventListener("advisory-bar-dismissed", onDismissed);
       bannerObserver?.disconnect();
       heroObserver?.disconnect();
+      footerObserver?.disconnect();
     };
   }, [isHomepage]);
 

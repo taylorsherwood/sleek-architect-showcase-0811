@@ -242,6 +242,19 @@ iframe {
     object-position: center 10%;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
+    /* Warmth correction — neutralise cool/blue cast from source footage */
+    filter: saturate(1.03) contrast(1.02) brightness(1.01) hue-rotate(-6deg) !important;
+  }
+
+  /* Hero tint protection — no colored overlays allowed */
+  #hero-section,
+  #hero-section *,
+  #hero-section video,
+  #hero-section::before,
+  #hero-section::after {
+    mix-blend-mode: normal !important;
+    backdrop-filter: none !important;
+    background-blend-mode: normal !important;
   }
 
   /* Scrolling credibility strip */

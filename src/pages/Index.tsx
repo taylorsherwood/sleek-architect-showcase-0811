@@ -496,11 +496,12 @@ const properties = [
 ];
 
 const FeaturedProperties = () => (
-  <section className="py-24 md:py-32 bg-secondary">
+  <section className="bg-secondary" style={{ padding: "clamp(80px, 12vw, 160px) 0" }}>
     <div className="container mx-auto px-6">
       <div className="max-w-[1320px] mx-auto">
         <ScrollReveal>
           <div className="text-center mb-16">
+            <div className="w-10 h-px mx-auto mb-5" style={{ background: "hsl(38 39% 61%)" }} />
             <p className="text-minimal text-gold mb-5">FEATURED LISTINGS</p>
             <h2 className="font-display text-3xl md:text-[2.75rem] font-normal text-foreground/90 mb-4 leading-[1.1] tracking-[-0.01em]">
               Exceptional <span className="italic">Properties</span>
@@ -613,7 +614,7 @@ const FeaturedProperties = () => (
 );
 
 /* ─────────────────────────────────────────────
-   SECTION 5 — TESTIMONIALS
+   SECTION 5 — TESTIMONIALS (Single editorial display with dots)
    ───────────────────────────────────────────── */
 
 const testimonials = [
@@ -639,64 +640,98 @@ const testimonials = [
   },
 ];
 
-const TestimonialsSection = () => (
-  <section className="py-24 md:py-32 bg-background">
-    <div className="container mx-auto px-6">
-      <div className="max-w-[1320px] mx-auto">
-        <ScrollReveal>
-          <div className="text-center mb-14">
-            <p className="text-minimal text-gold mb-5">CLIENT EXPERIENCES</p>
-            <h2 className="font-display text-3xl md:text-[2.75rem] font-normal leading-[1.1] tracking-[-0.01em] text-foreground">
-              Trusted by Buyers, Sellers, and <span className="italic">Investors</span>
-            </h2>
-          </div>
-        </ScrollReveal>
+const TestimonialsSection = () => {
+  const [active, setActive] = useState(0);
 
-        <div className="grid md:grid-cols-2 gap-5">
-          {testimonials.map((t, i) => (
-            <ScrollReveal key={i} delay={100 + i * 60}>
-              <div className="px-7 py-7 flex flex-col justify-between h-full transition-all duration-[500ms] hover:-translate-y-[2px]"
+  useEffect(() => {
+    const timer = setInterval(() => setActive((p) => (p + 1) % testimonials.length), 7000);
+    return () => clearInterval(timer);
+  }, []);
+
+  const t = testimonials[active];
+
+  return (
+    <section className="bg-secondary" style={{ padding: "clamp(80px, 12vw, 160px) 0" }}>
+      <div className="container mx-auto px-6">
+        <div className="max-w-[800px] mx-auto text-center relative">
+          {/* Decorative open-quote */}
+          <span className="absolute -top-6 left-1/2 -translate-x-1/2 select-none pointer-events-none" aria-hidden="true" style={{
+            fontFamily: '"Cormorant Garamond", serif', fontSize: "120px", lineHeight: 0,
+            color: "hsl(38 39% 61%)", opacity: 0.15,
+          }}>
+            "
+          </span>
+
+          <ScrollReveal>
+            <p className="text-minimal text-gold mb-8">CLIENT EXPERIENCES</p>
+          </ScrollReveal>
+
+          {/* Quote */}
+          <p key={active} className="italic mb-6" style={{
+            fontFamily: '"Cormorant Garamond", serif', fontWeight: 300,
+            fontSize: "clamp(22px, 3vw, 36px)", lineHeight: 1.5, color: "hsl(var(--foreground))",
+            animation: "fadeUp 0.6s ease both",
+          }}>
+            "{t.quote}"
+          </p>
+
+          {/* Attribution */}
+          <p key={`name-${active}`} style={{
+            fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em",
+            textTransform: "uppercase", color: "hsl(38 39% 61%)", marginTop: "24px",
+            animation: "fadeUp 0.6s ease 0.15s both",
+          }}>
+            {t.name}
+          </p>
+          <p key={`ctx-${active}`} style={{
+            fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.12em",
+            textTransform: "uppercase", color: "hsl(var(--muted-foreground))", marginTop: "6px",
+            animation: "fadeUp 0.6s ease 0.25s both",
+          }}>
+            {t.context}
+          </p>
+
+          {/* Navigation dots */}
+          <div className="flex items-center justify-center gap-3 mt-10">
+            {testimonials.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => setActive(i)}
+                className="w-2.5 h-2.5 rounded-full transition-all duration-300 cursor-pointer"
                 style={{
-                  background: "#FFFFFF",
-                  border: "1px solid rgba(0,0,0,0.06)",
-                  boxShadow: "0 10px 30px rgba(0,0,0,0.05)",
-                }}>
-                <p className="text-[15px] leading-[1.8] italic mb-5" style={{ fontFamily: '"Jost", sans-serif', fontWeight: 300, color: "#0D0D0D" }}>
-                  "{t.quote}"
-                </p>
-                <div>
-                  <div className="h-px mb-4" style={{ background: "linear-gradient(to right, transparent, rgba(0,0,0,0.08), transparent)" }} />
-                  <p className="font-display text-[0.95rem] tracking-[0.01em]" style={{ color: "#0D0D0D" }}>{t.name}</p>
-                  <p className="mt-1" style={{ fontFamily: '"Jost", sans-serif', fontSize: "10px", letterSpacing: "0.15em", textTransform: "uppercase", color: "hsl(38 39% 61% / 0.7)" }}>{t.context}</p>
-                </div>
-              </div>
-            </ScrollReveal>
-          ))}
+                  background: i === active ? "hsl(38 39% 61%)" : "hsl(var(--gray-light))",
+                  transform: i === active ? "scale(1.2)" : "scale(1)",
+                }}
+                aria-label={`View testimonial ${i + 1}`}
+              />
+            ))}
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
 
 /* ─────────────────────────────────────────────
    SECTION 6 — COMMUNITIES
    ───────────────────────────────────────────── */
 
 const communities = [
-  { name: "Barton Creek", descriptor: "Golf, privacy, Hill Country estates", image: "/static-assets/community-barton-creek.jpg", slug: "barton-creek" },
-  { name: "Lake Austin", descriptor: "Waterfront living at its finest", image: "/static-assets/community-lake-austin.jpg", slug: "lake-austin" },
-  { name: "Westlake Hills", descriptor: "Scenic bluffs, top-rated schools", image: "/static-assets/community-westlake-hills.jpg", slug: "westlake-hills" },
-  { name: "Tarrytown", descriptor: "Old Austin charm, central location", image: "/static-assets/community-tarrytown.jpg", slug: "tarrytown" },
-  { name: "Rollingwood", descriptor: "Intimate enclave near Zilker", image: "/static-assets/community-rollingwood.jpg", slug: "rollingwood" },
-  { name: "Spanish Oaks", descriptor: "Gated Hill Country luxury", image: "/static-assets/community-spanish-oaks.jpg", slug: "spanish-oaks" },
+  { name: "Barton Creek", descriptor: "Golf, privacy, Hill Country estates", image: "/static-assets/community-barton-creek.jpg", slug: "barton-creek", priceFrom: "From $2M+" },
+  { name: "Lake Austin", descriptor: "Waterfront living at its finest", image: "/static-assets/community-lake-austin.jpg", slug: "lake-austin", priceFrom: "From $3.5M+" },
+  { name: "Westlake Hills", descriptor: "Scenic bluffs, top-rated schools", image: "/static-assets/community-westlake-hills.jpg", slug: "westlake-hills", priceFrom: "From $1.8M+" },
+  { name: "Tarrytown", descriptor: "Old Austin charm, central location", image: "/static-assets/community-tarrytown.jpg", slug: "tarrytown", priceFrom: "From $1.5M+" },
+  { name: "Rollingwood", descriptor: "Intimate enclave near Zilker", image: "/static-assets/community-rollingwood.jpg", slug: "rollingwood", priceFrom: "From $1.2M+" },
+  { name: "Spanish Oaks", descriptor: "Gated Hill Country luxury", image: "/static-assets/community-spanish-oaks.jpg", slug: "spanish-oaks", priceFrom: "From $2.5M+" },
 ];
 
 const CommunitiesSection = () => (
-  <section className="py-24 md:py-32 bg-secondary">
+  <section className="bg-background" style={{ padding: "clamp(80px, 12vw, 160px) 0" }}>
     <div className="container mx-auto px-6">
       <div className="max-w-[1320px] mx-auto">
         <ScrollReveal>
           <div className="text-center mb-16">
+            <div className="w-10 h-px mx-auto mb-5" style={{ background: "hsl(38 39% 61%)" }} />
             <p className="text-minimal text-gold mb-5">SELECT COMMUNITIES</p>
             <h2 className="font-display text-3xl md:text-[2.75rem] font-normal text-foreground/90 leading-[1.1] tracking-[-0.01em]">
               Explore Austin's Most <span className="italic">Sought-After</span> Communities
@@ -707,13 +742,41 @@ const CommunitiesSection = () => (
         <ScrollReveal delay={120} stagger={60}>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 lg:gap-4">
             {communities.map((c) => (
-              <Link key={c.slug} to={`/communities/${c.slug}`} className="group relative overflow-hidden aspect-[3/4] transition-shadow duration-[500ms] hover:shadow-[0_12px_30px_-8px_hsl(var(--foreground)/0.1)]">
+              <Link key={c.slug} to={`/communities/${c.slug}`} className="group relative overflow-hidden aspect-[4/3] transition-shadow duration-[500ms] hover:shadow-[0_12px_30px_-8px_hsl(var(--foreground)/0.1)]">
                 <img src={c.image} alt={`Luxury homes in ${c.name}, Austin`}
-                  className="community-tile-img absolute inset-0 w-full h-full object-cover"
+                  className="community-tile-img absolute inset-0 w-full h-full object-cover transition-transform duration-[800ms]"
+                  style={{ transitionTimingFunction: "cubic-bezier(0.25, 0.46, 0.45, 0.94)" }}
                   loading="lazy" decoding="async" />
-                <div className="absolute inset-0 bg-gradient-to-t from-foreground/65 via-foreground/15 via-[45%] to-transparent" />
-                <div className="absolute bottom-5 left-5 right-5">
-                  <h3 className="text-warm-cream font-display text-lg md:text-xl font-medium tracking-[0.03em] leading-[1.1] drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)] mb-1.5">
+
+                {/* Default gradient */}
+                <div className="absolute inset-0 bg-gradient-to-t from-foreground/65 via-foreground/15 via-[45%] to-transparent transition-opacity duration-500 group-hover:opacity-0" />
+
+                {/* Hover dark overlay with Explore prompt */}
+                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                  <span style={{
+                    fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em",
+                    textTransform: "uppercase", color: "hsl(38 39% 61%)", fontWeight: 400,
+                  }}>
+                    Explore →
+                  </span>
+                </div>
+
+                {/* Price badge */}
+                <div className="absolute top-4 right-4 z-10" style={{
+                  background: "rgba(13,13,13,0.8)", border: "1px solid hsl(38 39% 61%)",
+                  padding: "4px 10px",
+                }}>
+                  <span style={{
+                    fontFamily: '"Jost", sans-serif', fontSize: "10px", letterSpacing: "0.12em",
+                    color: "hsl(38 39% 61%)",
+                  }}>
+                    {c.priceFrom}
+                  </span>
+                </div>
+
+                {/* Bottom text */}
+                <div className="absolute bottom-5 left-5 right-5 z-10 group-hover:opacity-0 transition-opacity duration-500">
+                  <h3 className="font-display text-lg md:text-xl font-medium tracking-[0.03em] leading-[1.1] drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)] mb-1.5" style={{ color: "#FAFAF8" }}>
                     {c.name}
                   </h3>
                   <p style={{
@@ -762,11 +825,12 @@ const insights = [
 ];
 
 const InsightsSection = () => (
-  <section className="py-20 md:py-24 bg-background">
+  <section className="bg-secondary" style={{ padding: "clamp(80px, 12vw, 160px) 0" }}>
     <div className="container mx-auto px-6">
       <div className="max-w-[1320px] mx-auto">
         <ScrollReveal>
           <div className="text-center mb-16">
+            <div className="w-10 h-px mx-auto mb-5" style={{ background: "hsl(38 39% 61%)" }} />
             <p className="text-minimal text-gold mb-5">MARKET INTELLIGENCE</p>
             <h2 className="font-display text-3xl md:text-[2.75rem] font-normal text-foreground/90 leading-[1.1] tracking-[-0.01em]">
               Insights & <span className="italic">Market Intelligence</span>
@@ -841,7 +905,7 @@ const LeadCapture = () => {
   };
 
   return (
-    <section className="py-16 md:py-20 bg-secondary">
+    <section className="bg-background" style={{ padding: "clamp(80px, 12vw, 120px) 0" }}>
       <div className="container mx-auto px-6">
         <div className="max-w-[460px] mx-auto text-center">
           <ScrollReveal>

@@ -17,7 +17,6 @@ const Navigation = () => {
   const dropdownRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
 
-  // Pages where the nav should never fade on scroll
   const noFadePages = ["/listings/commercial-investment-austin"];
   const shouldNeverFade = noFadePages.includes(location.pathname);
 
@@ -27,8 +26,7 @@ const Navigation = () => {
       return;
     }
     const handleScroll = () => {
-      const threshold = window.innerHeight + 300;
-      setIsScrolled(window.scrollY > threshold);
+      setIsScrolled(window.scrollY > window.innerHeight * 0.8);
     };
     handleScroll();
     window.addEventListener("scroll", handleScroll, { passive: true });
@@ -62,10 +60,23 @@ const Navigation = () => {
     location.pathname === link.href ||
     link.children?.some((c) => location.pathname === c.href);
 
+  const navLinkStyle: React.CSSProperties = {
+    fontFamily: '"Jost", sans-serif',
+    fontSize: "11px",
+    letterSpacing: "0.16em",
+    textTransform: "uppercase",
+    fontWeight: 400,
+  };
+
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 overflow-visible h-20 md:h-24 lg:h-[6.5rem] border-b border-border/20">
+    <nav className="fixed top-0 left-0 right-0 z-50 overflow-visible h-20 md:h-24 lg:h-[6.5rem]" style={{ borderBottom: "1px solid rgba(255,255,255,0.08)" }}>
       <div
-        className={`absolute inset-0 backdrop-blur-md transition-all duration-500 ${isScrolled ? 'bg-background/70' : 'bg-background'}`}
+        className="absolute inset-0 transition-all duration-500"
+        style={{
+          background: isScrolled ? "rgba(13,13,13,0.95)" : "hsl(var(--background))",
+          backdropFilter: isScrolled ? "blur(8px)" : "none",
+          WebkitBackdropFilter: isScrolled ? "blur(8px)" : "none",
+        }}
       />
       <div className="relative container mx-auto px-6 h-full flex items-center justify-between">
         <Link to="/" onClick={() => { if (location.pathname === '/') window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="flex items-center shrink-0 overflow-visible" style={{ height: '100%' }}>
@@ -92,32 +103,43 @@ const Navigation = () => {
               >
                 <button
                   onClick={() => setOpenDropdown(openDropdown === link.href ? null : link.href)}
-                  className={`relative text-nav-cta transition-colors duration-500 group cursor-pointer bg-transparent border-none ${
+                  className={`relative transition-colors duration-300 group cursor-pointer bg-transparent border-none ${
                     isActive(link)
-                      ? "text-foreground"
-                      : "text-muted-foreground/70 hover:text-foreground"
+                      ? (isScrolled ? "text-white" : "text-foreground")
+                      : (isScrolled ? "text-white/60 hover:text-white" : "text-muted-foreground/70 hover:text-foreground")
                   }`}
+                  style={navLinkStyle}
                 >
                   {link.label}
                   <span className="ml-1.5 text-[7px] align-middle opacity-30">▼</span>
                   <span
-                    className={`absolute -bottom-1 left-0 h-px bg-gold transition-transform duration-500 origin-left ${
+                    className={`absolute -bottom-1 left-0 h-px transition-all duration-300 origin-left ${
                       isActive(link) ? "w-full scale-x-100" : "w-full scale-x-0 group-hover:scale-x-100"
                     }`}
+                    style={{ background: "hsl(38 39% 61%)" }}
                   />
                 </button>
                 {openDropdown === link.href && (
                   <div className="absolute top-full left-0 pt-4 min-w-[260px]">
-                    <div className="bg-background border border-border/50 shadow-elegant">
+                    <div style={{ background: isScrolled ? "rgba(13,13,13,0.95)" : "hsl(var(--background))", border: "1px solid rgba(255,255,255,0.08)" }} className="shadow-elegant">
                       {link.children.map((child) => (
                         <Link
                           key={child.href}
                           to={child.href}
-                          className={`block px-7 py-4 text-minimal tracking-[0.2em] transition-colors duration-300 ${
-                            location.pathname === child.href
-                              ? "text-foreground bg-secondary"
-                              : "text-muted-foreground hover:text-foreground hover:bg-secondary"
-                          }`}
+                          className="block px-7 py-4 transition-colors duration-300"
+                          style={{
+                            ...navLinkStyle,
+                            fontSize: "10px",
+                            color: location.pathname === child.href
+                              ? (isScrolled ? "#fff" : "hsl(var(--foreground))")
+                              : (isScrolled ? "rgba(255,255,255,0.5)" : "hsl(var(--muted-foreground))"),
+                          }}
+                          onMouseEnter={(e) => { e.currentTarget.style.color = isScrolled ? "#fff" : "hsl(var(--foreground))"; }}
+                          onMouseLeave={(e) => {
+                            if (location.pathname !== child.href) {
+                              e.currentTarget.style.color = isScrolled ? "rgba(255,255,255,0.5)" : "hsl(var(--muted-foreground))";
+                            }
+                          }}
                         >
                           {child.label}
                         </Link>
@@ -131,30 +153,41 @@ const Navigation = () => {
                 key={link.href}
                 to={link.href}
                 onClick={() => { if (link.href === '/' && location.pathname === '/') window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-                className={`relative text-nav-cta transition-colors duration-500 group ${
+                className={`relative transition-colors duration-300 group ${
                   location.pathname === link.href
-                    ? "text-foreground"
-                    : "text-muted-foreground/70 hover:text-foreground"
+                    ? (isScrolled ? "text-white" : "text-foreground")
+                    : (isScrolled ? "text-white/60 hover:text-white" : "text-muted-foreground/70 hover:text-foreground")
                 }`}
+                style={navLinkStyle}
               >
                 {link.label}
                 <span
-                  className={`absolute -bottom-1 left-0 h-px bg-gold transition-transform duration-500 origin-left ${
+                  className={`absolute -bottom-1 left-0 h-px transition-all duration-300 origin-left ${
                     location.pathname === link.href ? "w-full scale-x-100" : "w-full scale-x-0 group-hover:scale-x-100"
                   }`}
+                  style={{ background: "hsl(38 39% 61%)" }}
                 />
               </Link>
             )
           )}
         </div>
 
-        {/* Desktop action buttons */}
+        {/* Desktop Client Portal — ghost gold button */}
         <div className="hidden lg:flex items-center shrink-0 ml-4 xl:ml-8">
           <a
             href="https://echelonpropertygroup.outportal.ai"
             target="_blank"
             rel="noopener noreferrer nofollow"
-            className="whitespace-nowrap text-nav-cta text-muted-foreground/50 hover:text-gold transition-colors duration-300 gold-underline-hover"
+            className="whitespace-nowrap transition-all duration-300 px-5 py-2"
+            style={{
+              ...navLinkStyle,
+              fontSize: "10px",
+              border: "1px solid hsl(38 39% 61%)",
+              color: "hsl(38 39% 61%)",
+              background: "transparent",
+            }}
+            onMouseEnter={(e) => { e.currentTarget.style.background = "hsl(38 39% 61%)"; e.currentTarget.style.color = "#0D0D0D"; }}
+            onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = "hsl(38 39% 61%)"; }}
           >
             CLIENT PORTAL
           </a>
@@ -164,29 +197,24 @@ const Navigation = () => {
         <Button
           variant="ghost"
           size="sm"
-          className="lg:hidden"
+          className={`lg:hidden ${isScrolled ? "text-white" : ""}`}
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? "✕" : "☰"}
         </Button>
       </div>
 
-      {/* Mobile menu */}
+      {/* Mobile menu — full-screen dark overlay */}
       {isMenuOpen && (
-        <div className="lg:hidden bg-background border-b border-border/30">
-          <div className="container mx-auto px-6 py-10 space-y-6">
+        <div className="lg:hidden fixed inset-0 top-20 md:top-24 z-40" style={{ background: "#0D0D0D" }}>
+          <div className="container mx-auto px-6 py-12 space-y-7">
             {links.map((link) =>
               link.children ? (
-                <div key={link.href} className="space-y-4">
+                <div key={link.href} className="space-y-5">
                   <button
-                    onClick={() =>
-                      setOpenDropdown(openDropdown === link.href ? null : link.href)
-                    }
-                    className={`block text-minimal tracking-[0.25em] transition-colors duration-300 ${
-                      isActive(link)
-                        ? "text-foreground"
-                        : "text-muted-foreground hover:text-foreground"
-                    }`}
+                    onClick={() => setOpenDropdown(openDropdown === link.href ? null : link.href)}
+                    className="block transition-colors duration-300 text-white/80 hover:text-gold"
+                    style={navLinkStyle}
                   >
                     {link.label}
                     <span className="ml-1.5 text-[7px] opacity-30">
@@ -194,17 +222,14 @@ const Navigation = () => {
                     </span>
                   </button>
                   {openDropdown === link.href && (
-                    <div className="pl-5 space-y-4 border-l border-border/40">
+                    <div className="pl-5 space-y-5" style={{ borderLeft: "1px solid hsl(38 39% 61% / 0.3)" }}>
                       {link.children.map((child) => (
                         <Link
                           key={child.href}
                           to={child.href}
                           onClick={() => setIsMenuOpen(false)}
-                          className={`block text-minimal tracking-[0.2em] transition-colors duration-300 ${
-                            location.pathname === child.href
-                              ? "text-foreground"
-                              : "text-muted-foreground hover:text-foreground"
-                          }`}
+                          className="block text-white/50 hover:text-gold transition-colors duration-300"
+                          style={{ ...navLinkStyle, fontSize: "10px" }}
                         >
                           {child.label}
                         </Link>
@@ -216,23 +241,26 @@ const Navigation = () => {
                 <Link
                   key={link.href}
                   to={link.href}
-                  onClick={() => { setIsMenuOpen(false); if (link.href === '/' && location.pathname === '/') window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-                  className={`block text-minimal tracking-[0.25em] transition-colors duration-300 ${
-                    location.pathname === link.href
-                      ? "text-foreground"
-                      : "text-muted-foreground hover:text-foreground"
-                  }`}
+                  onClick={() => { setIsMenuOpen(false); }}
+                  className="block text-white/80 hover:text-gold transition-colors duration-300"
+                  style={navLinkStyle}
                 >
                   {link.label}
                 </Link>
               )
             )}
-            <div className="pt-6 space-y-4 border-t border-border/30">
+            <div className="pt-8" style={{ borderTop: "1px solid hsl(38 39% 61% / 0.2)" }}>
               <a
                 href="https://echelonpropertygroup.outportal.ai"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                className="block text-minimal tracking-[0.2em] text-muted-foreground/50 px-4 py-3.5 text-center transition-colors duration-300"
+                className="inline-block px-6 py-3 transition-all duration-300"
+                style={{
+                  ...navLinkStyle,
+                  fontSize: "10px",
+                  border: "1px solid hsl(38 39% 61%)",
+                  color: "hsl(38 39% 61%)",
+                }}
               >
                 CLIENT PORTAL
               </a>

@@ -74,6 +74,7 @@ const Navigation = () => {
     { href: "/communities", label: "COMMUNITIES" },
     { href: "/blog", label: "INSIGHTS" },
     { href: "/invest", label: "PRIVATE ACCESS" },
+    { href: "/about", label: "ABOUT" },
   ];
 
   const isActive = (link: NavLink) =>

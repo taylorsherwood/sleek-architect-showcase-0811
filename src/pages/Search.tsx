@@ -5,6 +5,11 @@ import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { realEstateAgentSchema, createFAQSchema } from "@/components/SchemaMarkup";
 import ScrollReveal from "@/components/ScrollReveal";
 import { Link, useSearchParams } from "react-router-dom";
+import gillisStreet from "@/assets/commercial-gillis-street.jpg";
+import sanJoseAve from "@/assets/commercial-san-jose-ave.jpg";
+import bremserAve from "@/assets/commercial-bremser-ave.jpg";
+import killeenPortfolio from "@/assets/commercial-killeen-portfolio.jpg";
+import s11thStreet from "@/assets/commercial-s-11th-street.webp";
 
 const LOCATION_LABELS: Record<string, string> = {
   "westlake-hills": "Westlake Hills",

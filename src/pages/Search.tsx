@@ -136,7 +136,7 @@ const SearchPage = () => {
       </section>
 
       {/* ── Current Commercial Listings ── */}
-      <section className="py-16 md:py-24 bg-background border-t border-border">
+      <section className="py-6 md:py-10 bg-background border-t border-border">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="mb-16">

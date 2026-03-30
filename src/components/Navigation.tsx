@@ -20,7 +20,6 @@ const Navigation = () => {
 
   const noFadePages = ["/listings/commercial-investment-austin"];
   const shouldNeverFade = noFadePages.includes(location.pathname);
-  const forceDarkNav = ["/search"].includes(location.pathname);
 
   useEffect(() => {
     if (shouldNeverFade) {

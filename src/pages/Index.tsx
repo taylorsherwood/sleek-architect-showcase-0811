@@ -381,6 +381,7 @@ const AdvisorSection = () => (
 
 const useCountUp = (target: number, duration = 2600, from = 0) => {
   const [count, setCount] = useState(from);
+  const [inView, setInView] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   const animId = useRef(0);
 
@@ -390,6 +391,7 @@ const useCountUp = (target: number, duration = 2600, from = 0) => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
+          setInView(true);
           setCount(from);
           const startTime = performance.now();
           const id = ++animId.current;
@@ -403,6 +405,7 @@ const useCountUp = (target: number, duration = 2600, from = 0) => {
           requestAnimationFrame(step);
         } else {
           setCount(from);
+          setInView(false);
         }
       },
       { threshold: 0.3 }
@@ -411,7 +414,7 @@ const useCountUp = (target: number, duration = 2600, from = 0) => {
     return () => observer.disconnect();
   }, [target, duration, from]);
 
-  return { count, ref };
+  return { count, ref, inView };
 };
 
 const stats = [
@@ -427,7 +430,7 @@ const StatsStrip = () => (
       <div className="max-w-[1100px] mx-auto py-16 md:py-20">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat, i) => {
-            const { count, ref } = useCountUp(stat.value, 2600, (stat as any).from || 0);
+            const { count, ref, inView } = useCountUp(stat.value, 3400, (stat as any).from || 0);
             return (
               <div key={i} ref={ref} className="text-center group/stat">
                 <p style={{
@@ -451,10 +454,10 @@ const StatsStrip = () => (
                     {stat.label}
                   </p>
                   <div
-                    className="absolute bottom-0 left-0 h-px transition-all duration-[1200ms] ease-out"
+                    className="absolute bottom-0 left-0 h-px transition-all duration-[3400ms] ease-out"
                     style={{
                       background: "hsl(38 39% 61%)",
-                      width: count > 0 ? "100%" : "0%",
+                      width: inView ? "100%" : "0%",
                     }}
                   />
                 </div>

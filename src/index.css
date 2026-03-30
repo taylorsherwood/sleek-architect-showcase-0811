@@ -242,8 +242,19 @@ iframe {
     object-position: center 10%;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
-    /* Warmth correction — neutralise cool/blue cast from source footage */
-    filter: saturate(1.03) contrast(1.02) brightness(1.01) hue-rotate(-6deg) !important;
+    /* Bright, warm correction — airy luxury editorial look */
+    filter: saturate(1.04) contrast(1.01) brightness(1.08) hue-rotate(-4deg) !important;
+  }
+
+  /* Hero overlay — minimal neutral gradient for text readability only */
+  .hero-overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(0,0,0,0.03) 0%,
+      rgba(0,0,0,0.01) 38%,
+      rgba(0,0,0,0.10) 72%,
+      rgba(0,0,0,0.18) 100%
+    ) !important;
   }
 
   /* Hero tint protection — no colored overlays allowed */

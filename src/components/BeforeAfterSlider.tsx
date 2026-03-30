@@ -103,7 +103,7 @@ const BeforeAfterSlider = ({
           style={{
             width: containerRef.current
               ? `${containerRef.current.offsetWidth}px`
-              : "100vw",
+              : "100%",
             maxWidth: "none",
           }}
           draggable={false}

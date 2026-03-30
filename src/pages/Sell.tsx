@@ -535,8 +535,31 @@ const Sell = () => {
 
       <Suspense fallback={<div className="min-h-[200px]" />}><FeaturedListings hideRealScout /></Suspense>
 
+      {/* ── Expert Insight ── */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto">
+            <p className="text-minimal text-gold mb-4 font-extrabold">EXPERT INSIGHT</p>
+            <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
+              Austin Seller Market Conditions in 2026
+            </h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>
+                Based on current Austin market data, sellers in premium neighborhoods are benefiting from limited inventory and sustained buyer demand. Homes in Westlake Hills, Barton Creek, and Lake Austin that are properly staged and strategically priced continue to achieve strong results.
+              </p>
+              <p>
+                From recent transactions in the area, we're seeing the strongest outcomes for sellers who invest in professional marketing — including cinematic video, HDR photography, and custom property websites. The difference between a standard listing and a premium-marketed listing is measurable in both days on market and final sale price.
+              </p>
+              <p>
+                Off-market selling has become an increasingly viable strategy for high-net-worth homeowners who value discretion. Echelon Property Group helps sellers evaluate whether a public or private approach best serves their goals, based on the property's profile and the current competitive landscape.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── FAQ ── */}
-      <section className="py-28 bg-background">
+      <section className="py-28 bg-secondary">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-8">
@@ -547,7 +570,10 @@ const Sell = () => {
               { q: "How long does it take to sell a luxury home in Austin?", a: "Well-priced luxury homes in Austin typically sell within 30–90 days depending on neighborhood, price point, and condition. Homes in Westlake Hills, Barton Creek, and Tarrytown that are move-in ready and strategically priced often sell faster." },
               { q: "What does it cost to sell a home in Austin Texas?", a: "Typical seller costs include agent commissions, title insurance, property taxes prorated to closing, and any repairs or staging. In Texas, sellers also provide a survey and pay for an owner's title policy." },
               { q: "Should I sell my Austin home off-market?", a: "Off-market sales offer privacy and the ability to test pricing without public days-on-market accumulation. They're ideal for high-profile sellers or unique luxury properties. Echelon Property Group helps sellers evaluate which approach best serves their goals." },
-              { q: "How should I prepare my Austin home for sale?", a: "Key preparation steps include professional staging, decluttering, addressing deferred maintenance, fresh paint, and landscaping. For luxury homes, professional photography, cinematic video, drone footage, and a custom property website are essential." }].
+              { q: "How should I prepare my Austin home for sale?", a: "Key preparation steps include professional staging, decluttering, addressing deferred maintenance, fresh paint, and landscaping. For luxury homes, professional photography, cinematic video, drone footage, and a custom property website are essential." },
+              { q: "What marketing does Echelon Property Group provide for listings?", a: "Every listing receives professional HDR photography, cinematic video, drone footage, 3-D virtual tours, a custom property website, targeted digital advertising, and syndication to 500+ listing platforms. Luxury listings also receive private broker previews and global network exposure through eXp Luxury Division." },
+              { q: "Is now a good time to sell a luxury home in Austin?", a: "Austin's luxury inventory remains limited in top neighborhoods, creating favorable conditions for well-positioned sellers. Based on current market data, properly priced homes in Westlake Hills, Barton Creek, and Lake Austin are achieving strong results with motivated buyers." },
+              ].
               map((faq, i) =>
               <div key={i} className="border-b border-border pb-6">
                   <h3 className="text-lg font-medium text-foreground mb-2">{faq.q}</h3>

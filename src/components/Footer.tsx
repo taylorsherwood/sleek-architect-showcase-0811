@@ -38,21 +38,11 @@ const Footer = () => {
               </Link>
             </div>
 
-            {/* Tagline + Instagram column (centered) */}
+            {/* Tagline column (centered) */}
             <div className="flex flex-col items-center justify-center text-center">
-              <p style={{ ...footerLinkStyle, lineHeight: 1.7, marginBottom: "16px" }}>
+              <p style={{ ...footerLinkStyle, lineHeight: 1.7 }}>
                 Strategic Austin Real Estate Advisory
               </p>
-              <a
-                href="https://www.instagram.com/theinvestorbroker"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                className="inline-flex items-center gap-2 transition-colors duration-300 hover:opacity-80"
-                style={{ fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.12em", color: "hsl(38 39% 61%)", textTransform: "uppercase", fontWeight: 400 }}
-              >
-                <Instagram className="w-4 h-4" />
-                @theinvestorbroker
-              </a>
             </div>
 
             {/* Navigation column */}

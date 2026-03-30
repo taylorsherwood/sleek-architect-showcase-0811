@@ -70,6 +70,7 @@ const Navigation = () => {
     },
     { href: "/buy", label: "BUY" },
     { href: "/sell", label: "SELL" },
+    { href: "/invest", label: "INVEST" },
     { href: "/communities", label: "COMMUNITIES" },
     { href: "/blog", label: "INSIGHTS" },
     { href: "/invest", label: "PRIVATE ACCESS" },

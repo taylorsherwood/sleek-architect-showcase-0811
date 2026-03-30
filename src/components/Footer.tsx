@@ -23,7 +23,7 @@ const Footer = () => {
   return (
     <footer data-nav-dark-zone style={{ background: "#0C0F24", fontFamily: '"Jost", sans-serif', fontWeight: 300 }}>
       <div className="container mx-auto px-6">
-        <div className="max-w-[1320px] mx-auto" style={{ padding: "clamp(40px, 5vw, 60px) 0 24px" }}>
+        <div className="max-w-[1320px] mx-auto" style={{ padding: "24px 0 16px" }}>
           {/* 4-column grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-6 mb-8 text-center sm:text-left lg:justify-items-center">
             {/* Brand column */}

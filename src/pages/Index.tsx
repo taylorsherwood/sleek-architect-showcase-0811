@@ -302,25 +302,15 @@ const AdvisorSection = () => (
           <ScrollReveal delay={180}>
             <div className="space-y-4 mb-8" style={{ fontFamily: '"Jost", sans-serif', fontWeight: 300 }}>
               <p className="text-foreground/70 text-[16px] leading-[1.8]">
-                In Austin's upper tier, the best opportunities are rarely public. They are negotiated, sourced, and secured through relationships, timing, and leverage — not search portals.
+                In Austin's upper tier, the best opportunities are rarely public. They are negotiated, sourced, and secured through relationships, timing, and leverage — not search portals. I operate in that space.
               </p>
               <p className="text-foreground/70 text-[16px] leading-[1.8]">
-                I operate in that space.
+                I work with a select group of buyers, sellers, and investors to navigate high-value real estate with precision — including private and off-market opportunities, strategic acquisitions, and positioning properties to command maximum value.
               </p>
               <p className="text-foreground/70 text-[16px] leading-[1.8]">
-                I work with a select group of buyers, sellers, and investors to navigate high-value real estate with precision. That includes private and off-market opportunities, strategic acquisitions, and positioning properties to command maximum value.
+                Every move is intentional. The difference isn't subtle — it's measurable in outcomes. You don't need more listings, you need a smarter approach.
               </p>
-              <p className="text-foreground/70 text-[16px] leading-[1.8]">
-                This is not a volume business. It's a strategy business.
-              </p>
-              <p className="text-foreground/70 text-[16px] leading-[1.8]">
-                Every move is intentional, from how a property is sourced, to how it's negotiated, to how it's presented to the market. The difference isn't subtle. It's measurable in outcomes.
-              </p>
-              <p className="text-foreground/70 text-[16px] leading-[1.8]">
-                If you're looking for access, clarity, and execution at a higher level, you're in the right place. 
-                You don't need more listings, you need a smarter approach.
-              </p>
-              <p className="text-foreground/70 text-[16px] leading-[1.8] font-medium mt-4">
+              <p className="text-foreground/70 text-[16px] leading-[1.8] font-medium mt-2">
                 Buy. Sell. Invest.
               </p>
             </div>

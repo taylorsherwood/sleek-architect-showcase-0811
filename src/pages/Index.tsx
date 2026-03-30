@@ -826,7 +826,7 @@ const insights = [
 ];
 
 const InsightsSection = () => (
-  <section className="bg-secondary" style={{ padding: "clamp(80px, 12vw, 160px) 0" }}>
+  <section id="insights-section" className="bg-secondary" style={{ padding: "clamp(80px, 12vw, 160px) 0" }}>
     <div className="container mx-auto px-6">
       <div className="max-w-[1320px] mx-auto">
         <ScrollReveal>
@@ -961,7 +961,7 @@ const LeadCapture = () => {
    ───────────────────────────────────────────── */
 
 const FinalCTA = () => (
-  <section data-nav-dark-zone className="py-24 md:py-32 bg-background">
+  <section id="final-cta-section" data-nav-dark-zone className="py-24 md:py-32 bg-background">
     <div className="container mx-auto px-6">
       <div className="max-w-[700px] mx-auto text-center">
         <ScrollReveal>

@@ -289,33 +289,37 @@ const AdvisorSection = () => (
 
           <ScrollReveal delay={80}>
             <h2 className="font-display text-[1.85rem] md:text-[2.6rem] font-normal text-foreground leading-[1.06] tracking-[0.03em] mb-6">
-              Luxury Real Estate,
-              <br />
-              Without the Noise
+              Access. Strategy. Control.
             </h2>
           </ScrollReveal>
 
           <ScrollReveal delay={120}>
             <p className="text-foreground text-lg md:text-[1.3rem] font-medium leading-[1.4] mb-10 tracking-[-0.01em]" style={{ fontFamily: '"Jost", sans-serif', fontWeight: 400 }}>
-              We don't sell homes. We deliver access, strategy, and discretion.
+              Most people search for homes. My clients acquire them.
             </p>
           </ScrollReveal>
 
           <ScrollReveal delay={180}>
             <div className="space-y-4 mb-8" style={{ fontFamily: '"Jost", sans-serif', fontWeight: 300 }}>
               <p className="text-foreground/70 text-[16px] leading-[1.8]">
-                You don't need more listings — you need a smarter approach.
+                In Austin's upper tier, the best opportunities are rarely public. They are negotiated, sourced, and secured through relationships, timing, and leverage — not search portals.
               </p>
               <p className="text-foreground/70 text-[16px] leading-[1.8]">
-                I work with a select group of clients to acquire and position high-value
-                properties across Austin — including private opportunities
-                not available through traditional channels.
+                I operate in that space.
               </p>
               <p className="text-foreground/70 text-[16px] leading-[1.8]">
-                Every decision is guided by market intelligence, negotiation leverage,
-                and a clear understanding of long-term value.
-                <br />
-                <br />
+                I work with a select group of buyers, sellers, and investors to navigate high-value real estate with precision. That includes private and off-market opportunities, strategic acquisitions, and positioning properties to command maximum value.
+              </p>
+              <p className="text-foreground/70 text-[16px] leading-[1.8]">
+                This is not a volume business. It's a strategy business.
+              </p>
+              <p className="text-foreground/70 text-[16px] leading-[1.8]">
+                Every move is intentional — from how a property is sourced, to how it's negotiated, to how it's presented to the market. The difference isn't subtle. It's measurable in outcomes.
+              </p>
+              <p className="text-foreground/70 text-[16px] leading-[1.8]">
+                If you're looking for access, clarity, and execution at a higher level, you're in the right place. You don't need more listings — you need a smarter approach.
+              </p>
+              <p className="text-foreground/70 text-[16px] leading-[1.8]">
                 <br />
                 Buy. Sell. Invest.
               </p>

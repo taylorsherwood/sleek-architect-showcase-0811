@@ -264,15 +264,15 @@ const TrustStrip = () => (
 const AdvisorSection = () => (
   <section className="bg-background">
     <div className="max-w-[1400px] mx-auto">
-      <div className="grid md:grid-cols-[1fr_1fr] md:min-h-[660px]" style={{ gap: "0" }}>
+      <div className="grid md:grid-cols-[1fr_1fr]" style={{ gap: "80px" }}>
         {/* Left — full-bleed image */}
-        <div className="relative overflow-hidden min-h-[520px] md:min-h-[640px] lg:min-h-[680px] md:max-w-[460px] pt-3 md:pt-4">
+        <div className="relative overflow-hidden w-full max-w-[520px]" style={{ aspectRatio: "3 / 4" }}>
           <img
             src={taylorBoatImg}
             alt="Taylor Sherwood — Austin luxury real estate advisor and founder of Echelon Property Group"
             title="Taylor Sherwood, Echelon Property Group"
             className="w-full h-full object-cover"
-            style={{ objectPosition: "center 28%" }}
+            style={{ objectPosition: "center center" }}
             loading="lazy" decoding="async"
           />
           {/* Bottom gradient fade */}

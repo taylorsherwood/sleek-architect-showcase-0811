@@ -168,7 +168,7 @@ const AdvisoryBar = () => {
         }}>
         
         {/* Gold divider */}
-        <div className="h-[1.5px] bg-[hsl(var(--gold)/0.7)]" />
+        <div className="h-[2.5px]" style={{ background: "linear-gradient(90deg, transparent, hsl(var(--gold)), hsl(var(--gold)), transparent)" }} />
 
         <div className={`${isOffMarket ? "bg-[hsl(220,15%,8%)]" : "bg-primary"} h-20 flex items-center`} style={{ fontFamily: "'Jost', sans-serif" }}>
           <div className="container mx-auto px-4 md:px-6 flex items-center justify-between gap-4">

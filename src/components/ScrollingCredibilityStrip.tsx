@@ -9,13 +9,13 @@ import mediaAustinLuxuryHome from "@/assets/media-austin-luxury-home.png";
 
 const logos = [
   { src: mediaWsj, alt: "The Wall Street Journal", h: "h-28 md:h-40" },
-  { src: mediaMansionGlobal, alt: "Mansion Global", h: "h-24 md:h-32" },
-  { src: mediaRobbReport, alt: "Robb Report", h: "h-20 md:h-28" },
-  { src: mediaTribeza, alt: "Tribeza", h: "h-20 md:h-26" },
-  { src: mediaAbj, alt: "Austin Business Journal", h: "h-24 md:h-32" },
-  { src: mediaHaven, alt: "Haven", h: "h-24 md:h-28" },
-  { src: mediaAustinHome, alt: "Austin Home", h: "h-20 md:h-28" },
-  { src: mediaAustinLuxuryHome, alt: "Austin Luxury Home Magazine", h: "h-16 md:h-24" },
+  { src: mediaMansionGlobal, alt: "Mansion Global", h: "h-28 md:h-40" },
+  { src: mediaRobbReport, alt: "Robb Report", h: "h-28 md:h-40" },
+  { src: mediaTribeza, alt: "Tribeza", h: "h-28 md:h-40" },
+  { src: mediaAbj, alt: "Austin Business Journal", h: "h-28 md:h-40" },
+  { src: mediaHaven, alt: "Haven", h: "h-28 md:h-40" },
+  { src: mediaAustinHome, alt: "Austin Home", h: "h-28 md:h-40" },
+  { src: mediaAustinLuxuryHome, alt: "Austin Luxury Home Magazine", h: "h-28 md:h-40" },
 ];
 
 const ScrollingCredibilityStrip = () => {
@@ -54,7 +54,7 @@ const ScrollingCredibilityStrip = () => {
               loading="lazy"
               decoding="async"
               className={`${logo.h} w-auto object-contain shrink-0`}
-              style={{ opacity: 0.45, filter: "grayscale(100%)" }}
+              style={{ opacity: 1, filter: "grayscale(100%)" }}
             />
           ))}
         </div>

@@ -13,6 +13,7 @@ import SchemaMarkup, {
 import ScrollReveal from "@/components/ScrollReveal";
 import { formatPhoneNumber, getPhoneDigits, getTimestamp } from "@/lib/formUtils";
 import taylorBoatImg from "@/assets/taylor-headshot.jpeg";
+import taylorSignature from "@/assets/taylor-signature.png";
 import ScrollingCredibilityStrip from "@/components/ScrollingCredibilityStrip";
 import ExpertiseSection from "@/components/ExpertiseSection";
 
@@ -322,6 +323,7 @@ const AdvisorSection = () => (
               <p className="text-foreground/70 text-[16px] leading-[1.8] font-medium mt-4">
                 Buy. Sell. Invest.
               </p>
+              <img src={taylorSignature} alt="Taylor Sherwood signature" className="h-10 mt-3 opacity-80" />
             </div>
 
             {/* Credential badges */}

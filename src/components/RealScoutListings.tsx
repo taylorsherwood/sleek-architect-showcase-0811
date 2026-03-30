@@ -54,7 +54,7 @@ const RealScoutListings = ({
   }, [visible, listingStatus]);
 
   return (
-    <section ref={sectionRef} className="pt-4 pb-14 bg-background">
+    <section ref={sectionRef} className="pt-4 pb-4 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
           <p className="text-minimal text-gold mb-4 font-extrabold whitespace-pre-line">{heading}</p>

@@ -515,7 +515,9 @@ const Invest = () => {
           <ScrollReveal>
             <p className="text-minimal text-gold mb-4 tracking-[0.25em]">Portfolio</p>
             <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-4 max-w-3xl">
-              Real Transformations. Measurable Upside.
+              Real Transformations.
+              <br />
+              Measurable Upside.
             </h2>
             <p className="text-muted-foreground max-w-3xl leading-relaxed mb-2">
               Selected transformations illustrating positioning, finish strategy, and value creation.

@@ -92,7 +92,7 @@ const Navigation = () => {
       <div
         className="absolute inset-0 transition-all duration-500"
         style={{
-          background: effectiveScrolled ? "rgba(13,13,13,0.95)" : "hsl(var(--background))",
+          background: effectiveScrolled ? "rgba(8,11,26,0.95)" : "hsl(var(--background))",
           backdropFilter: effectiveScrolled ? "blur(8px)" : "none",
           WebkitBackdropFilter: effectiveScrolled ? "blur(8px)" : "none",
         }}
@@ -140,7 +140,7 @@ const Navigation = () => {
                 </button>
                 {openDropdown === link.href && (
                   <div className="absolute top-full left-0 pt-4 min-w-[260px]">
-                    <div style={{ background: effectiveScrolled ? "rgba(13,13,13,0.95)" : "hsl(var(--background))", border: "1px solid rgba(255,255,255,0.08)" }} className="shadow-elegant">
+                    <div style={{ background: effectiveScrolled ? "rgba(8,11,26,0.95)" : "hsl(var(--background))", border: "1px solid rgba(255,255,255,0.08)" }} className="shadow-elegant">
                       {link.children.map((child) => (
                         <Link
                           key={child.href}
@@ -205,7 +205,7 @@ const Navigation = () => {
               color: "hsl(38 39% 61%)",
               background: "transparent",
             }}
-            onMouseEnter={(e) => { e.currentTarget.style.background = "hsl(38 39% 61%)"; e.currentTarget.style.color = "#0D0D0D"; }}
+            onMouseEnter={(e) => { e.currentTarget.style.background = "hsl(38 39% 61%)"; e.currentTarget.style.color = "#0C0F24"; }}
             onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = "hsl(38 39% 61%)"; }}
           >
             CLIENT PORTAL
@@ -225,7 +225,7 @@ const Navigation = () => {
 
       {/* Mobile menu — full-screen dark overlay */}
       {isMenuOpen && (
-        <div className="lg:hidden fixed inset-0 top-20 md:top-24 z-40" style={{ background: "#0D0D0D" }}>
+        <div className="lg:hidden fixed inset-0 top-20 md:top-24 z-40" style={{ background: "#0C0F24" }}>
           <div className="container mx-auto px-6 py-12 space-y-7">
             {links.map((link) =>
               link.children ? (

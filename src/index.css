@@ -46,39 +46,39 @@ iframe {
     --gold-highlight: 38 50% 74%;
 
     --background: 45 10% 97%;        /* #FAFAF8 */
-    --foreground: 0 0% 5%;           /* #0D0D0D */
+    --foreground: 233 47% 9%;           /* #0C0F24 */
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 5%;
+    --card-foreground: 233 47% 9%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 5%;
+    --popover-foreground: 233 47% 9%;
 
-    --primary: 0 0% 5%;              /* #0D0D0D */
+    --primary: 233 47% 9%;              /* #0C0F24 */
     --primary-foreground: 40 17% 95%; /* #F5F3EF */
 
     --secondary: 37 15% 95%;         /* #F5F3EF */
-    --secondary-foreground: 0 0% 5%;
+    --secondary-foreground: 233 47% 9%;
 
     --muted: 37 10% 91%;
     --muted-foreground: 25 4% 42%;   /* #6B6864 */
 
     --accent: 37 10% 91%;
-    --accent-foreground: 0 0% 5%;
+    --accent-foreground: 233 47% 9%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 37 8% 88%;
     --input: 0 0% 100%;
-    --ring: 0 0% 5%;
+    --ring: 233 47% 9%;
 
     --radius: 0.25rem;
 
     --warm-cream: 40 17% 95%;        /* #F5F3EF */
 
-    --black-soft: 0 0% 8%;           /* #141414 */
-    --black-card: 0 0% 10%;          /* #1A1A1A */
+    --black-soft: 233 52% 7%;           /* #080B1A */
+    --black-card: 233 45% 13%;          /* #12162E */
     --white-warm: 37 15% 95%;        /* #F5F3EF */
     --gray-light: 36 8% 90%;         /* #E8E6E1 */
     --gray-mid: 30 3% 59%;           /* #9A9690 */
@@ -86,19 +86,19 @@ iframe {
     --text-secondary: 25 4% 42%;     /* #6B6864 */
 
     --sidebar-background: 40 17% 95%;
-    --sidebar-foreground: 0 0% 5%;
-    --sidebar-primary: 0 0% 5%;
+    --sidebar-foreground: 233 47% 9%;
+    --sidebar-primary: 233 47% 9%;
     --sidebar-primary-foreground: 40 17% 95%;
     --sidebar-accent: 37 10% 91%;
-    --sidebar-accent-foreground: 0 0% 5%;
+    --sidebar-accent-foreground: 233 47% 9%;
     --sidebar-border: 37 8% 88%;
-    --sidebar-ring: 0 0% 5%;
+    --sidebar-ring: 233 47% 9%;
 
-    --gradient-hero: linear-gradient(135deg, hsl(0 0% 5% / 0.7), hsl(0 0% 5% / 0.3));
-    --gradient-overlay: linear-gradient(180deg, hsl(0 0% 5% / 0.6), hsl(0 0% 5% / 0.2));
+    --gradient-hero: linear-gradient(135deg, hsl(233 47% 9% / 0.7), hsl(233 47% 9% / 0.3));
+    --gradient-overlay: linear-gradient(180deg, hsl(233 47% 9% / 0.6), hsl(233 47% 9% / 0.2));
 
-    --shadow-architectural: 0 25px 60px -15px hsl(0 0% 5% / 0.12);
-    --shadow-elegant: 0 8px 30px -12px hsl(0 0% 5% / 0.08);
+    --shadow-architectural: 0 25px 60px -15px hsl(233 47% 9% / 0.12);
+    --shadow-elegant: 0 8px 30px -12px hsl(233 47% 9% / 0.08);
 
     --transition-smooth: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     --transition-fast: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -338,7 +338,7 @@ iframe {
     content: '';
     position: absolute;
     inset: 0;
-    background: rgba(13, 13, 13, 0.35);
+    background: rgba(8, 11, 26, 0.35);
   }
   @media (max-width: 768px) {
     .parallax-break {

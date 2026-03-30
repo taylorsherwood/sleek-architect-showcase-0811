@@ -118,8 +118,8 @@ const Hero = () => {
       {/* Layered gradient overlay per spec */}
       <div className="absolute inset-0" style={{
         zIndex: 1,
-        background: `linear-gradient(to bottom, rgba(13,13,13,0.35) 0%, rgba(13,13,13,0.20) 40%, rgba(13,13,13,0.65) 100%),
-                      linear-gradient(to right, rgba(13,13,13,0.55) 0%, rgba(13,13,13,0.25) 50%, rgba(13,13,13,0.05) 100%)`
+        background: `linear-gradient(to bottom, rgba(8,11,26,0.35) 0%, rgba(8,11,26,0.20) 40%, rgba(8,11,26,0.65) 100%),
+                      linear-gradient(to right, rgba(8,11,26,0.55) 0%, rgba(8,11,26,0.25) 50%, rgba(8,11,26,0.05) 100%)`
       }} />
 
       {/* Content */}
@@ -162,7 +162,7 @@ const Hero = () => {
                 fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 400,
                 borderColor: "hsl(38 39% 61%)", color: "hsl(38 39% 61%)", background: "transparent",
               }}
-              onMouseEnter={(e) => { e.currentTarget.style.background = "hsl(38 39% 61%)"; e.currentTarget.style.color = "#0D0D0D"; }}
+              onMouseEnter={(e) => { e.currentTarget.style.background = "hsl(38 39% 61%)"; e.currentTarget.style.color = "#0C0F24"; }}
               onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = "hsl(38 39% 61%)"; }}>
               EXPLORE LUXURY HOMES
             </Link>
@@ -172,7 +172,7 @@ const Hero = () => {
                 fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 400,
                 borderColor: "rgba(255,255,255,0.3)", color: "hsl(var(--warm-cream))", background: "transparent",
               }}
-              onMouseEnter={(e) => { e.currentTarget.style.background = "hsl(38 39% 61%)"; e.currentTarget.style.color = "#0D0D0D"; e.currentTarget.style.borderColor = "hsl(38 39% 61%)"; }}
+              onMouseEnter={(e) => { e.currentTarget.style.background = "hsl(38 39% 61%)"; e.currentTarget.style.color = "#0C0F24"; e.currentTarget.style.borderColor = "hsl(38 39% 61%)"; }}
               onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = "hsl(var(--warm-cream))"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.3)"; }}>
               REQUEST PRIVATE ACCESS
             </Link>
@@ -418,7 +418,7 @@ const stats = [
 ];
 
 const StatsStrip = () => (
-  <section style={{ background: "#141414" }}>
+  <section style={{ background: "#080B1A" }}>
     <div className="container mx-auto px-6">
       <div className="max-w-[1100px] mx-auto py-16 md:py-20">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -505,7 +505,7 @@ const FeaturedProperties = () => (
               const wrapperProps = isExternal ? { href: p.link, target: "_blank" as const, rel: "noopener noreferrer" } : {};
               return (
                 <Wrapper key={i} {...wrapperProps} className="group block cursor-pointer">
-                  <div className="relative overflow-hidden" style={{ aspectRatio: "3/4", background: "#1A1A1A" }}>
+                  <div className="relative overflow-hidden" style={{ aspectRatio: "3/4", background: "#12162E" }}>
                     <img src={p.image} alt={p.address}
                       className="w-full h-full object-cover transition-transform duration-[800ms]"
                       style={{ transitionTimingFunction: "cubic-bezier(0.25, 0.46, 0.45, 0.94)" }}
@@ -528,7 +528,7 @@ const FeaturedProperties = () => (
 
                     {/* Bottom overlay */}
                     <div className="absolute bottom-0 left-0 right-0 px-6 pb-6 pt-8"
-                      style={{ background: "linear-gradient(to top, rgba(13,13,13,0.92) 0%, transparent 100%)" }}>
+                      style={{ background: "linear-gradient(to top, rgba(12,15,36,0.92) 0%, transparent 100%)" }}>
                       <p style={{
                         fontFamily: '"Cinzel", serif', fontWeight: 400,
                         fontSize: "22px", color: "#FAFAF8", marginBottom: "4px",
@@ -555,13 +555,13 @@ const FeaturedProperties = () => (
 
             {/* Off-market card */}
             <Link to="/off-market-real-estate-austin" className="group block">
-              <div className="relative overflow-hidden flex items-center justify-center" style={{ aspectRatio: "3/4", background: "#0D0D0D" }}>
+              <div className="relative overflow-hidden flex items-center justify-center" style={{ aspectRatio: "3/4", background: "#0C0F24" }}>
                 <img src="/static-assets/echelon-logo-gold-square.png" alt="Echelon Property Group"
                   className="w-1/2 h-auto object-contain transition-transform duration-[700ms] ease-out group-hover:scale-[1.06]"
                   loading="lazy" decoding="async" />
                 {/* Bottom overlay */}
                 <div className="absolute bottom-0 left-0 right-0 px-6 pb-6 pt-8 text-center"
-                  style={{ background: "linear-gradient(to top, rgba(13,13,13,0.92) 0%, transparent 100%)" }}>
+                  style={{ background: "linear-gradient(to top, rgba(12,15,36,0.92) 0%, transparent 100%)" }}>
                   <p style={{
                     fontFamily: '"Cinzel", serif', fontWeight: 400,
                     fontSize: "20px", color: "#FAFAF8", marginBottom: "4px",
@@ -749,7 +749,7 @@ const CommunitiesSection = () => (
 
                 {/* Price badge */}
                 <div className="absolute top-4 right-4 z-10" style={{
-                  background: "rgba(13,13,13,0.8)", border: "1px solid hsl(38 39% 61%)",
+                  background: "rgba(12,15,36,0.8)", border: "1px solid hsl(38 39% 61%)",
                   padding: "4px 10px",
                 }}>
                   <span style={{
@@ -917,19 +917,19 @@ const LeadCapture = () => {
                 <div className="flex flex-col gap-2.5 mb-3">
                   <input type="text" placeholder="Your Name" value={name} onChange={(e) => setName(e.target.value)}
                     className="w-full px-4 py-3 text-[13px] focus:outline-none transition-all duration-300"
-                    style={{ fontFamily: '"Jost", sans-serif', fontWeight: 300, background: "#FFFFFF", border: "1px solid rgba(0,0,0,0.1)", borderRadius: "0", color: "#0D0D0D" }} />
+                    style={{ fontFamily: '"Jost", sans-serif', fontWeight: 300, background: "#FFFFFF", border: "1px solid rgba(0,0,0,0.1)", borderRadius: "0", color: "#0C0F24" }} />
                   <input type="email" placeholder="Email Address" required value={email} onChange={(e) => setEmail(e.target.value)}
                     className="w-full px-4 py-3 text-[13px] focus:outline-none transition-all duration-300"
-                    style={{ fontFamily: '"Jost", sans-serif', fontWeight: 300, background: "#FFFFFF", border: "1px solid rgba(0,0,0,0.1)", borderRadius: "0", color: "#0D0D0D" }} />
+                    style={{ fontFamily: '"Jost", sans-serif', fontWeight: 300, background: "#FFFFFF", border: "1px solid rgba(0,0,0,0.1)", borderRadius: "0", color: "#0C0F24" }} />
                 </div>
                 <button type="submit" disabled={loading}
                   className="w-full py-3 text-white disabled:opacity-50 transition-all duration-[250ms] ease-out hover:-translate-y-[1px] active:translate-y-0"
                   style={{
                     fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.15em", fontWeight: 400, textTransform: "uppercase",
-                    background: "#0D0D0D", borderRadius: "0",
+                    background: "#0C0F24", borderRadius: "0",
                   }}
                   onMouseEnter={(e) => { if (!loading) { e.currentTarget.style.background = "hsl(38 39% 61%)"; }}}
-                  onMouseLeave={(e) => { e.currentTarget.style.background = "#0D0D0D"; }}>
+                  onMouseLeave={(e) => { e.currentTarget.style.background = "#0C0F24"; }}>
                   {loading ? "Sending..." : "Unlock Private Access"}
                 </button>
               </form>
@@ -946,7 +946,7 @@ const LeadCapture = () => {
    ───────────────────────────────────────────── */
 
 const FinalCTA = () => (
-  <section data-nav-dark-zone className="py-24 md:py-32" style={{ background: "#0D0D0D" }}>
+  <section data-nav-dark-zone className="py-24 md:py-32" style={{ background: "#0C0F24" }}>
     <div className="container mx-auto px-6">
       <div className="max-w-[700px] mx-auto text-center">
         <ScrollReveal>
@@ -968,7 +968,7 @@ const FinalCTA = () => (
                 fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 400,
                 borderColor: "hsl(38 39% 61%)", color: "hsl(38 39% 61%)", background: "transparent",
               }}
-              onMouseEnter={(e) => { e.currentTarget.style.background = "hsl(38 39% 61%)"; e.currentTarget.style.color = "#0D0D0D"; }}
+              onMouseEnter={(e) => { e.currentTarget.style.background = "hsl(38 39% 61%)"; e.currentTarget.style.color = "#0C0F24"; }}
               onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = "hsl(38 39% 61%)"; }}>
               BUY PROPERTY
             </Link>
@@ -978,7 +978,7 @@ const FinalCTA = () => (
                 fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 400,
                 borderColor: "rgba(255,255,255,0.3)", color: "#FAFAF8", background: "transparent",
               }}
-              onMouseEnter={(e) => { e.currentTarget.style.background = "hsl(38 39% 61%)"; e.currentTarget.style.color = "#0D0D0D"; e.currentTarget.style.borderColor = "hsl(38 39% 61%)"; }}
+              onMouseEnter={(e) => { e.currentTarget.style.background = "hsl(38 39% 61%)"; e.currentTarget.style.color = "#0C0F24"; e.currentTarget.style.borderColor = "hsl(38 39% 61%)"; }}
               onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = "#FAFAF8"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.3)"; }}>
               SELL PROPERTY
             </Link>

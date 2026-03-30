@@ -21,7 +21,7 @@ const footerHeadingStyle: React.CSSProperties = {
 
 const Footer = () => {
   return (
-    <footer data-nav-dark-zone style={{ background: "#0D0D0D", fontFamily: '"Jost", sans-serif', fontWeight: 300 }}>
+    <footer data-nav-dark-zone style={{ background: "#0C0F24", fontFamily: '"Jost", sans-serif', fontWeight: 300 }}>
       <div className="container mx-auto px-6">
         <div className="max-w-[1320px] mx-auto" style={{ padding: "clamp(60px, 8vw, 100px) 0 40px" }}>
           {/* 4-column grid */}

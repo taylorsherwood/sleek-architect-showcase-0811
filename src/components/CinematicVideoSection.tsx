@@ -182,8 +182,8 @@ const CinematicVideoSection = () => {
               <div style={reveal(visible, 480)}>
                 <Link
                   to="/contact"
-                  className="group inline-flex items-center gap-2 text-[11px] font-medium text-white/60 hover:text-gold transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] hover:translate-x-1"
-                  style={{ letterSpacing: "0.18em" }}
+                  className="group inline-flex items-center gap-2 text-[11px] font-medium hover:text-gold transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] hover:translate-x-1"
+                  style={{ letterSpacing: "0.18em", color: "rgba(245, 245, 245, 0.55)" }}
                 >
                   SEE HOW YOUR PROPERTY WOULD BE POSITIONED
                   <ArrowRight className="w-3.5 h-3.5 flex-shrink-0 transition-transform duration-500 group-hover:translate-x-1" />

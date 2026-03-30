@@ -113,18 +113,20 @@ const Testimonials = () => {
                     "0 10px 30px rgba(0,0,0,0.05)";
                 }}
               >
-                {/* Quotation mark */}
+                {/* Opening quotation mark */}
                 <div className="relative z-10">
-                  <span className="text-4xl md:text-5xl leading-none font-serif text-foreground/20 select-none" style={{ fontFamily: 'Georgia, serif' }}>"</span>
+                  <span className="text-4xl md:text-5xl leading-none font-serif text-gold/40 select-none" style={{ fontFamily: 'Georgia, serif' }}>"</span>
                 </div>
 
                 {/* Quote text */}
-                <p className="text-foreground/[0.88] text-[0.9rem] md:text-[0.95rem] leading-[1.8] font-light italic mb-6 flex-1 relative z-10">
-                  "{t.quote}"
+                <p className="text-foreground/[0.88] text-[0.9rem] md:text-[0.95rem] leading-[1.8] font-light italic mb-4 flex-1 relative z-10">
+                  {t.quote}
                 </p>
 
-                {/* Divider */}
-                <div className="h-px mb-4" style={{ background: "linear-gradient(to right, transparent, rgba(0,0,0,0.08), transparent)" }} />
+                {/* Closing quotation mark */}
+                <div className="relative z-10 text-right -mt-2 mb-4">
+                  <span className="text-4xl md:text-5xl leading-none font-serif text-gold/40 select-none" style={{ fontFamily: 'Georgia, serif' }}>"</span>
+                </div>
 
                 {/* Attribution */}
                 <div>

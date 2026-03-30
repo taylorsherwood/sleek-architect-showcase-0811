@@ -43,7 +43,7 @@ const Navigation = () => {
         const anyVisible = entries.some((e) => e.isIntersecting);
         setInDarkZone(anyVisible);
       },
-      { rootMargin: "-10% 0px -85% 0px", threshold: 0 }
+      { rootMargin: "0px 0px -70% 0px", threshold: 0 }
     );
     targets.forEach((t) => observer.observe(t));
     return () => observer.disconnect();

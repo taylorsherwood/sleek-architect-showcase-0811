@@ -1060,7 +1060,8 @@ const Index = () => (
     <TrustStrip />
     <div className="py-4 md:py-6 bg-background" />
     <SearchSection />
-    <div className="py-8 md:py-12 bg-background" />
+    <ScrollingCredibilityStrip />
+    <div className="py-4 md:py-6 bg-background" />
     <AdvisorSection />
     <StatsStrip />
 

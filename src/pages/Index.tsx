@@ -529,7 +529,7 @@ const FeaturedProperties = () => (
                       className="community-tile-img w-full h-full object-cover"
                       loading="lazy" decoding="async" />
                     {/* Dark hover overlay with EXPLORE */}
-                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 pointer-events-none flex items-center justify-center [transition:opacity_0.6s_cubic-bezier(0.16,1,0.3,1)]" style={{ background: "linear-gradient(to top, rgba(12,15,36,0.75) 0%, rgba(12,15,36,0.25) 40%, transparent 100%)" }}>
+                    <div className="absolute inset-0 bg-foreground/40 opacity-0 group-hover:opacity-100 pointer-events-none flex items-center justify-center [transition:opacity_0.6s_cubic-bezier(0.16,1,0.3,1)]">
                       <span className="text-gold tracking-[0.2em] uppercase font-normal" style={{ fontFamily: '"Jost", sans-serif', fontSize: "0.75rem" }}>
                         EXPLORE &rarr;
                       </span>

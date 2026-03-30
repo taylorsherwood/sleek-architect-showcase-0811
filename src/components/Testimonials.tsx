@@ -113,15 +113,6 @@ const Testimonials = () => {
                     "0 10px 30px rgba(0,0,0,0.05)";
                 }}
               >
-                {/* Watermark logo behind text */}
-                <img
-                  src={echelonWatermark}
-                  alt=""
-                  className="absolute bottom-4 right-4 md:bottom-6 md:right-6 w-28 md:w-36 h-auto pointer-events-none select-none opacity-20 z-0"
-                  aria-hidden="true"
-                  draggable={false}
-                />
-
                 {/* Quote icon */}
                 <div className="mb-4 relative z-10">
                   <div

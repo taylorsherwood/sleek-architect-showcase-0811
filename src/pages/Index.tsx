@@ -131,6 +131,7 @@ const Hero = () => {
             <p style={{
               fontFamily: '"Jost", sans-serif', fontSize: "10px", letterSpacing: "0.25em", textTransform: "uppercase",
               color: "hsl(38 39% 61%)",
+              textShadow: "0 0 12px rgba(198,168,91,0.5), 0 0 24px rgba(198,168,91,0.25)"
             }}>
               STRATEGIC AUSTIN REAL ESTATE ADVISORY
             </p>
@@ -139,7 +140,7 @@ const Hero = () => {
           <h1 className="font-display text-warm-cream mb-8" style={{
             ...anim("0.15s"), fontWeight: 400, lineHeight: 1.1, letterSpacing: "0.04em",
             fontSize: "clamp(36px, 5vw, 64px)",
-            textShadow: "0 2px 12px rgba(0,0,0,0.5)"
+            textShadow: "0 2px 16px rgba(0,0,0,0.6), 0 0 40px rgba(245,243,239,0.12), 0 0 80px rgba(245,243,239,0.06)"
           }}>
             Access Austin's Most Exclusive Homes
           </h1>
@@ -147,8 +148,8 @@ const Hero = () => {
           <p className="max-w-[480px] mb-12 leading-[1.7]" style={{
             ...anim("0.3s"),
             fontFamily: '"Jost", sans-serif', fontWeight: 300, fontSize: "15px",
-            letterSpacing: "0.05em", color: "rgba(245,243,239,0.75)",
-            textShadow: "0 2px 9px rgba(0,0,0,0.5)"
+            letterSpacing: "0.05em", color: "rgba(245,243,239,0.85)",
+            textShadow: "0 2px 12px rgba(0,0,0,0.6), 0 0 30px rgba(245,243,239,0.08)"
           }}>
             Private listings, off-market opportunities, and elevated real estate representation.
           </p>

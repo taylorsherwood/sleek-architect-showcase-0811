@@ -40,12 +40,12 @@ const ExpertiseSection = () => {
         <div className="max-w-[58rem] mx-auto">
           <ScrollReveal>
             <div className="text-center mb-14 md:mb-20">
-              <p className="text-minimal text-gold mb-4 font-extrabold">OUR EXPERTISE</p>
-              <h2 className="text-3xl md:text-[2.75rem] font-display font-light text-architectural mb-6 leading-tight">
+              <p className="text-minimal text-gold mb-4">OUR EXPERTISE</p>
+              <h2 className="text-3xl md:text-[2.75rem] font-display font-normal text-architectural mb-6 leading-tight">
                 Austin Real Estate Expertise
               </h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto text-[0.95rem] leading-relaxed">From luxury homes and land development to commercial acquisitions and investment strategy — Echelon Property Group delivers full-spectrum real estate advisory across Austin and the Texas Hill Country.</p>
-              <p className="text-muted-foreground max-w-2xl mx-auto text-[0.95rem] leading-relaxed italic mt-4">Driven by Data, Proven by Results</p>
+              <p className="text-muted-foreground max-w-2xl mx-auto text-[0.95rem] leading-relaxed" style={{ fontFamily: '"Jost", sans-serif', fontWeight: 300 }}>From luxury homes and land development to commercial acquisitions and investment strategy — Echelon Property Group delivers full-spectrum real estate advisory across Austin and the Texas Hill Country.</p>
+              <p className="text-muted-foreground max-w-2xl mx-auto text-[0.95rem] leading-relaxed italic mt-4" style={{ fontFamily: '"Cormorant Garamond", serif' }}>Driven by Data, Proven by Results</p>
             </div>
           </ScrollReveal>
 

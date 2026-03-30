@@ -32,7 +32,7 @@ const Footer = () => {
                 <img
                   src="/static-assets/echelon-footer-logo.png"
                   alt="Echelon Property Group"
-                  className="h-20 w-auto"
+                  className="h-60 w-auto"
                   loading="lazy" decoding="async"
                 />
               </Link>

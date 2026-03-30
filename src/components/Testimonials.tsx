@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import { Quote } from "lucide-react";
+import echelonWatermark from "@/assets/echelon-watermark.png";
 
 const testimonials = [
   {

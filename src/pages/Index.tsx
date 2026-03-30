@@ -137,12 +137,12 @@ const Hero = () => {
           </div>
 
           <h1 className="font-display text-warm-cream mb-8" style={{
-            ...anim("0.15s"), fontWeight: 300, lineHeight: 1.05, letterSpacing: "0.01em",
+            ...anim("0.15s"), fontWeight: 400, lineHeight: 1.1, letterSpacing: "0.04em",
             fontSize: "clamp(48px, 7vw, 96px)",
             textShadow: "0 2px 12px rgba(0,0,0,0.5)"
           }}>
             <span className="block">Access Austin's</span>
-            <span className="block italic">Most Exclusive Homes</span>
+            <span className="block">Most Exclusive Homes</span>
           </h1>
 
           <p className="max-w-[480px] mb-12 leading-[1.7]" style={{

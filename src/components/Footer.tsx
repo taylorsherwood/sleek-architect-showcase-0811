@@ -25,7 +25,7 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-[1320px] mx-auto" style={{ padding: "clamp(60px, 8vw, 100px) 0 40px" }}>
           {/* 4-column grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8 mb-16 text-center sm:text-left">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8 mb-16 text-center sm:text-left">
             {/* Brand column */}
             <div className="flex flex-col items-center sm:items-start">
               <Link to="/" className="inline-block mb-5">

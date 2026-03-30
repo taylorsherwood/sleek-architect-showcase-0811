@@ -1063,7 +1063,7 @@ const Index = () => (
     <ExpertiseSection />
 
     {/* Parallax break — lakefront / pool terrace */}
-    <div className="parallax-break" style={{ backgroundImage: "url('/placeholder.svg')" }} aria-hidden="true" />
+    <div className="parallax-break" style={{ backgroundImage: "url('/images/parallax-lakefront.jpg')" }} aria-hidden="true" />
 
     <TestimonialsSection />
     <CommunitiesSection />

@@ -454,10 +454,11 @@ const StatsStrip = () => (
                     {stat.label}
                   </p>
                   <div
-                    className="absolute bottom-0 left-0 h-px transition-all duration-[3400ms] ease-out"
+                    className="absolute bottom-0 left-0 h-px"
                     style={{
                       background: "hsl(38 39% 61%)",
                       width: inView ? "100%" : "0%",
+                      transition: "width 5s cubic-bezier(0.22, 1, 0.36, 1)",
                     }}
                   />
                 </div>

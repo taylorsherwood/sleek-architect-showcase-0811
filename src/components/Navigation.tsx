@@ -125,7 +125,7 @@ const Navigation = () => {
                   className={`relative transition-colors duration-300 group cursor-pointer bg-transparent border-none ${
                     isActive(link)
                       ? (effectiveScrolled ? "text-white" : "text-foreground")
-                      : (effectiveScrolled ? "text-white/60 hover:text-white" : "text-muted-foreground/70 hover:text-foreground")
+                      : (effectiveScrolled ? "text-white/80 hover:text-white" : "text-foreground/75 hover:text-foreground")
                   }`}
                   style={navLinkStyle}
                 >
@@ -151,12 +151,12 @@ const Navigation = () => {
                             fontSize: "10px",
                             color: location.pathname === child.href
                               ? (effectiveScrolled ? "#fff" : "hsl(var(--foreground))")
-                              : (effectiveScrolled ? "rgba(255,255,255,0.5)" : "hsl(var(--muted-foreground))"),
+                              : (effectiveScrolled ? "rgba(255,255,255,0.7)" : "hsl(var(--foreground) / 0.7)"),
                           }}
                           onMouseEnter={(e) => { e.currentTarget.style.color = effectiveScrolled ? "#fff" : "hsl(var(--foreground))"; }}
                           onMouseLeave={(e) => {
                             if (location.pathname !== child.href) {
-                              e.currentTarget.style.color = effectiveScrolled ? "rgba(255,255,255,0.5)" : "hsl(var(--muted-foreground))";
+                              e.currentTarget.style.color = effectiveScrolled ? "rgba(255,255,255,0.7)" : "hsl(var(--foreground) / 0.7)";
                             }
                           }}
                         >
@@ -175,7 +175,7 @@ const Navigation = () => {
                 className={`relative transition-colors duration-300 group ${
                   location.pathname === link.href
                     ? (effectiveScrolled ? "text-white" : "text-foreground")
-                    : (effectiveScrolled ? "text-white/60 hover:text-white" : "text-muted-foreground/70 hover:text-foreground")
+                    : (effectiveScrolled ? "text-white/80 hover:text-white" : "text-foreground/75 hover:text-foreground")
                 }`}
                 style={navLinkStyle}
               >

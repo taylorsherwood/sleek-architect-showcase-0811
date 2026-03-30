@@ -505,7 +505,7 @@ const FeaturedProperties = () => (
               const wrapperProps = isExternal ? { href: p.link, target: "_blank" as const, rel: "noopener noreferrer" } : {};
               return (
                 <Wrapper key={i} {...wrapperProps} className="group block cursor-pointer">
-                  <div className="relative overflow-hidden" style={{ aspectRatio: "3/4", background: "#1A1A1A" }}>
+                  <div className="relative overflow-hidden" style={{ aspectRatio: "3/4", background: "#12162E" }}>
                     <img src={p.image} alt={p.address}
                       className="w-full h-full object-cover transition-transform duration-[800ms]"
                       style={{ transitionTimingFunction: "cubic-bezier(0.25, 0.46, 0.45, 0.94)" }}

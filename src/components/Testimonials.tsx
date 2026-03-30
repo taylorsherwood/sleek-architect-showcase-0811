@@ -153,14 +153,6 @@ const Testimonials = () => {
         </div>
       </div>
 
-      {/* Section watermark - bottom right of testimonial section */}
-      <img
-        src={echelonWatermark}
-        alt=""
-        aria-hidden="true"
-        draggable={false}
-        className="pointer-events-none select-none absolute bottom-6 right-6 w-40 md:w-56 h-auto opacity-20"
-      />
     </section>
   );
 };

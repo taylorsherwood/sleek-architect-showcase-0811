@@ -244,6 +244,18 @@ iframe {
     transform: translateZ(0);
   }
 
+  /* Scrolling credibility strip */
+  @keyframes scrollStrip {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .scrolling-strip-track {
+    animation: scrollStrip 40s linear infinite;
+  }
+  .scrolling-strip-track:hover {
+    animation-play-state: paused;
+  }
+
   /* Hero CTA mobile */
   @media (max-width: 640px) {
     .hero-ctas {

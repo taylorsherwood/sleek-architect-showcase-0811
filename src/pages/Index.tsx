@@ -13,6 +13,7 @@ import SchemaMarkup, {
 import ScrollReveal from "@/components/ScrollReveal";
 import { formatPhoneNumber, getPhoneDigits, getTimestamp } from "@/lib/formUtils";
 import taylorBoatImg from "@/assets/taylor-headshot.png";
+import ScrollingCredibilityStrip from "@/components/ScrollingCredibilityStrip";
 import ExpertiseSection from "@/components/ExpertiseSection";
 
 const Footer = lazy(() => import("@/components/Footer"));
@@ -1060,7 +1061,8 @@ const Index = () => (
     <TrustStrip />
     <div className="py-4 md:py-6 bg-background" />
     <SearchSection />
-    <div className="py-8 md:py-12 bg-background" />
+    <ScrollingCredibilityStrip />
+    <div className="py-4 md:py-6 bg-background" />
     <AdvisorSection />
     <StatsStrip />
 

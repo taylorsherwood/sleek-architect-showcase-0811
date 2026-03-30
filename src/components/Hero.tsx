@@ -231,7 +231,7 @@ const Hero = () => {
           </div>
 
           <p
-            className="max-w-[520px] transition-all duration-1000 will-change-[opacity,transform]"
+            className="max-w-[500px] transition-all duration-1000 will-change-[opacity,transform]"
             style={{
               opacity: heroVisible ? 1 : 0,
               transform: heroVisible ? "translateY(0)" : "translateY(10px)",
@@ -239,11 +239,12 @@ const Hero = () => {
               transitionDelay: "0.35s",
               fontFamily: "'Jost', sans-serif",
               fontWeight: 400,
-              fontSize: "17px",
-              color: "rgba(245, 243, 239, 0.82)",
+              fontSize: "16px",
+              color: "rgba(245, 243, 239, 0.78)",
               letterSpacing: "0.03em",
               lineHeight: 1.75,
-              marginBottom: "40px",
+              marginTop: "20px",
+              marginBottom: "0",
               textShadow: "0 2px 9px rgba(0,0,0,0.55)"
             }}>
             Data-driven strategy and discreet representation across Austin's

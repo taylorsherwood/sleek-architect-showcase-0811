@@ -30,9 +30,9 @@ const Footer = () => {
             <div className="flex flex-col items-center sm:items-start">
               <Link to="/" className="inline-block mb-5">
                 <img
-                  src="/static-assets/echelon-logo-gold-square.png"
+                  src="/static-assets/echelon-footer-logo.png"
                   alt="Echelon Property Group"
-                  className="h-36 w-auto"
+                  className="h-20 w-auto"
                   loading="lazy" decoding="async"
                 />
               </Link>

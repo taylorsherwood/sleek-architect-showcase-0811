@@ -323,7 +323,7 @@ const AdvisorSection = () => (
               <p className="text-foreground/70 text-[16px] leading-[1.8] font-medium mt-4">
                 Buy. Sell. Invest.
               </p>
-              <img src={taylorSignature} alt="Taylor Sherwood signature" className="h-[120px] mt-3 opacity-80" />
+              <img src={taylorSignature} alt="Taylor Sherwood signature" className="h-[120px] mt-1 mb-6 opacity-80" />
             </div>
 
             {/* Credential badges */}

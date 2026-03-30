@@ -1057,8 +1057,8 @@ const Index = () => (
     {/* Parallax break — luxury interior */}
     <div className="parallax-break" style={{ backgroundImage: "url('/images/parallax-interior.jpg')" }} aria-hidden="true" />
 
-    <InsightsSection />
     <LeadCapture />
+    <InsightsSection />
     <FinalCTA />
 
     <Suspense fallback={<div className="min-h-[100px]" />}>

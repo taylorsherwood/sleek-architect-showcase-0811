@@ -41,7 +41,7 @@ const billionaireFaqs = [
   { question: "Are luxury homes in Austin a good investment in 2026?", answer: "Austin's luxury market continues to benefit from corporate relocations, population growth, and limited high-end inventory. Combined with no state income tax and strong long-term appreciation in neighborhoods like Barton Creek and Lake Austin, luxury real estate in Austin remains a compelling investment." },
 ];
 
-
+const labelStyle = {
   fontSize: "0.6rem" as const,
   letterSpacing: "0.3em",
   textTransform: "uppercase" as const,

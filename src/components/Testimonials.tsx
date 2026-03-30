@@ -113,8 +113,17 @@ const Testimonials = () => {
                     "0 10px 30px rgba(0,0,0,0.05)";
                 }}
               >
+                {/* Watermark logo behind text */}
+                <img
+                  src={echelonWatermark}
+                  alt=""
+                  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-28 md:w-36 h-auto pointer-events-none select-none opacity-[0.06]"
+                  aria-hidden="true"
+                  draggable={false}
+                />
+
                 {/* Quote icon */}
-                <div className="mb-4">
+                <div className="mb-4 relative z-10">
                   <div
                     className="w-7 h-7 rounded-full flex items-center justify-center"
                     style={{
@@ -127,7 +136,7 @@ const Testimonials = () => {
                 </div>
 
                 {/* Quote text */}
-                <p className="text-foreground/[0.88] text-[0.9rem] md:text-[0.95rem] leading-[1.8] font-light italic mb-6 flex-1">
+                <p className="text-foreground/[0.88] text-[0.9rem] md:text-[0.95rem] leading-[1.8] font-light italic mb-6 flex-1 relative z-10">
                   "{t.quote}"
                 </p>
 

@@ -174,8 +174,8 @@ const Navigation = () => {
                 onClick={() => { if (link.href === '/' && location.pathname === '/') window.scrollTo({ top: 0, behavior: 'smooth' }); }}
                 className={`relative transition-colors duration-300 group ${
                   location.pathname === link.href
-                    ? (isScrolled ? "text-white" : "text-foreground")
-                    : (isScrolled ? "text-white/60 hover:text-white" : "text-muted-foreground/70 hover:text-foreground")
+                    ? (effectiveScrolled ? "text-white" : "text-foreground")
+                    : (effectiveScrolled ? "text-white/60 hover:text-white" : "text-muted-foreground/70 hover:text-foreground")
                 }`}
                 style={navLinkStyle}
               >

@@ -33,7 +33,6 @@ const reveal = (visible: boolean, delay = 0): React.CSSProperties => ({
 const CinematicVideoSection = () => {
   const { ref, visible } = useScrollReveal(0.08);
   const videoRef = useRef<HTMLVideoElement>(null);
-  const videoContainerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (visible && videoRef.current) {
@@ -41,35 +40,13 @@ const CinematicVideoSection = () => {
     }
   }, [visible]);
 
-  /* Subtle slow zoom on video — cinematic drift */
-  useEffect(() => {
-    const el = videoContainerRef.current;
-    if (!el) return;
-    let raf = 0;
-    const onScroll = () => {
-      cancelAnimationFrame(raf);
-      raf = requestAnimationFrame(() => {
-        const rect = el.getBoundingClientRect();
-        const progress = Math.max(0, Math.min(1,
-          1 - rect.bottom / (window.innerHeight + rect.height)
-        ));
-        const scale = 1 + progress * 0.04;
-        el.style.transform = `scale(${scale})`;
-      });
-    };
-    window.addEventListener("scroll", onScroll, { passive: true });
-    onScroll();
-    return () => { window.removeEventListener("scroll", onScroll); cancelAnimationFrame(raf); };
-  }, []);
-
   return (
     <section ref={ref} className="relative" style={{ margin: 0, padding: 0 }}>
       {/* Full-bleed cinematic video background */}
       <div className="relative w-full overflow-hidden" style={{ height: "clamp(560px, 95vh, 95vh)" }}>
         {/* Video layer */}
         <div
-          ref={videoContainerRef}
-          className="absolute inset-0 will-change-transform origin-center"
+          className="absolute inset-0"
         >
           <video
             ref={videoRef}

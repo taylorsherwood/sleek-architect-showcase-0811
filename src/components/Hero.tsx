@@ -148,8 +148,7 @@ const Hero = () => {
         style={{
           zIndex: 1,
           background: `
-            linear-gradient(to right, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.5) 30%, rgba(0,0,0,0.25) 60%, rgba(0,0,0,0.05) 100%),
-            linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.05) 40%, rgba(0,0,0,0.25) 100%)
+            linear-gradient(to bottom, rgba(8,11,26,0.30) 0%, rgba(8,11,26,0.15) 40%, rgba(8,11,26,0.60) 100%)
           `
         }} />
       
@@ -182,19 +181,20 @@ const Hero = () => {
           </p>
 
           <h1
-            className="font-display font-medium text-warm-cream mb-9 will-change-[opacity,transform]"
+            className="font-display text-warm-cream will-change-[opacity,transform]"
             style={{
               opacity: heroVisible ? 1 : 0,
               transform: heroVisible ? "translateY(0)" : "translateY(10px)",
               transition: "opacity 1.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s, transform 1.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s",
-              lineHeight: 1.12,
-              letterSpacing: "-0.025em",
+              fontSize: "clamp(48px, 6vw, 82px)",
+              lineHeight: 1.08,
+              letterSpacing: "0.02em",
+              fontWeight: 500,
+              marginBottom: "20px",
               textShadow: "0 2px 9px rgba(0,0,0,0.55), 0 1px 2px rgba(0,0,0,0.2)"
             }}>
-            
-            <span style={{ fontSize: "clamp(2.5rem, 5.2vw, 5.2rem)" }}>Driven By Data,</span>
-            <br />
-            <span className="italic" style={{ fontSize: "clamp(3.1rem, 6.4vw, 6.4rem)" }}>Proven by Results</span>
+            Access Austin's Most<br />
+            Exclusive Homes
           </h1>
 
           {/* Service pillars */}
@@ -229,23 +229,26 @@ const Hero = () => {
           </div>
 
           <p
-            className="text-warm-cream/60 max-w-lg mb-10 leading-relaxed font-medium transition-all duration-1000 will-change-[opacity,transform]"
+            className="max-w-[520px] transition-all duration-1000 will-change-[opacity,transform]"
             style={{
               opacity: heroVisible ? 1 : 0,
               transform: heroVisible ? "translateY(0)" : "translateY(10px)",
               transitionTimingFunction: "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
               transitionDelay: "0.35s",
-              fontFamily: '"Raleway", sans-serif',
-              fontSize: "1rem",
-              letterSpacing: "0.01em",
+              fontFamily: "'Jost', sans-serif",
+              fontWeight: 400,
+              fontSize: "17px",
+              color: "rgba(245, 243, 239, 0.82)",
+              letterSpacing: "0.03em",
+              lineHeight: 1.75,
+              marginBottom: "40px",
               textShadow: "0 2px 9px rgba(0,0,0,0.55)"
             }}>
-            
             Data-driven strategy and discreet representation across Austin's
             most sought-after neighborhoods.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 transition-all duration-1000 will-change-[opacity,transform]"
+          <div className="hero-ctas flex flex-col sm:flex-row gap-4 transition-all duration-1000 will-change-[opacity,transform]"
             style={{
               opacity: heroVisible ? 1 : 0,
               transform: heroVisible ? "translateY(0)" : "translateY(10px)",
@@ -254,28 +257,56 @@ const Hero = () => {
             }}>
             <Link
               to="/invest"
-              className="hero-cta-btn inline-block bg-warm-cream text-foreground px-12 py-[1.1rem] text-center hover:bg-primary hover:text-primary-foreground shadow-[0_8px_24px_rgba(0,0,0,0.35)] border border-white/15"
+              className="inline-block text-center whitespace-nowrap transition-all duration-300"
               style={{
-                fontFamily: '"Raleway", sans-serif',
-                fontSize: "0.6rem",
-                letterSpacing: "0.28em",
+                fontFamily: "'Jost', sans-serif",
+                fontSize: "11px",
+                letterSpacing: "0.18em",
                 textTransform: "uppercase",
-                fontWeight: 700
+                fontWeight: 400,
+                padding: "14px 32px",
+                minWidth: "220px",
+                maxWidth: "280px",
+                width: "auto",
+                border: "1px solid hsl(var(--gold))",
+                color: "hsl(var(--gold))",
+                background: "transparent",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background = "hsl(var(--gold))";
+                e.currentTarget.style.color = "hsl(var(--black))";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background = "transparent";
+                e.currentTarget.style.color = "hsl(var(--gold))";
               }}>
-              
               EXPLORE OPPORTUNITIES
             </Link>
             <Link
               to="/off-market-real-estate-austin"
-              className="hero-cta-btn inline-block bg-transparent border border-warm-cream/25 text-warm-cream/75 px-10 py-[1.1rem] text-center hover:bg-gold hover:text-white hover:border-gold hover:font-bold transition-all duration-300"
+              className="inline-block text-center whitespace-nowrap transition-all duration-300"
               style={{
-                fontFamily: '"Raleway", sans-serif',
-                fontSize: "0.6rem",
-                letterSpacing: "0.28em",
+                fontFamily: "'Jost', sans-serif",
+                fontSize: "11px",
+                letterSpacing: "0.18em",
                 textTransform: "uppercase",
-                fontWeight: 400
+                fontWeight: 400,
+                padding: "14px 32px",
+                minWidth: "220px",
+                maxWidth: "280px",
+                width: "auto",
+                border: "1px solid rgba(245, 243, 239, 0.4)",
+                color: "rgba(245, 243, 239, 0.85)",
+                background: "transparent",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.borderColor = "rgba(245, 243, 239, 0.8)";
+                e.currentTarget.style.color = "#fff";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.borderColor = "rgba(245, 243, 239, 0.4)";
+                e.currentTarget.style.color = "rgba(245, 243, 239, 0.85)";
               }}>
-              
               PRIVATE ACCESS
             </Link>
           </div>

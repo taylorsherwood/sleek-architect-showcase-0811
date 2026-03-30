@@ -769,7 +769,7 @@ const CommunitiesSection = () => (
                   <p style={{
                     fontFamily: '"Jost", sans-serif', fontSize: "10px", fontWeight: 300,
                     letterSpacing: "0.08em", textTransform: "uppercase",
-                    color: "rgba(250,250,248,0.5)",
+                    color: "rgba(250,250,248,0.72)",
                   }}>
                     {c.descriptor}
                   </p>

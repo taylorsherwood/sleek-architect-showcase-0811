@@ -116,23 +116,32 @@ iframe {
 
   /* Display / serif headings */
   .font-display {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Cinzel', serif;
   }
 
   h1 {
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 300;
-    letter-spacing: 0.02em;
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    line-height: 1.1;
   }
 
   h2 {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Cinzel', serif;
     font-weight: 400;
+    letter-spacing: 0.03em;
+  }
+
+  h3 {
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
+    letter-spacing: 0.03em;
   }
 
   .text-architectural {
-    @apply tracking-[-0.02em] leading-[1.1];
-    font-family: 'Cormorant Garamond', serif;
+    @apply leading-[1.1];
+    font-family: 'Cinzel', serif;
+    letter-spacing: 0.03em;
   }
 
   /* Kicker / eyebrow labels */

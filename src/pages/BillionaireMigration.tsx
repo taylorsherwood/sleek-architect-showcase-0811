@@ -3,7 +3,7 @@ import { createElement, lazy, Suspense } from "react";
 import Navigation from "@/components/Navigation";
 const Footer = lazy(() => import("@/components/Footer"));
 import SEOHead from "@/components/SEOHead";
-import SchemaMarkup, { createBreadcrumbSchema, createBlogPostingSchema } from "@/components/SchemaMarkup";
+import SchemaMarkup, { createBreadcrumbSchema, createBlogPostingSchema, createFAQSchema } from "@/components/SchemaMarkup";
 import AuthorBio from "@/components/AuthorBio";
 import lakeAustinHero from "@/assets/lake-austin-aerial.jpg";
 import RelatedInsights from "@/components/RelatedInsights";
@@ -34,6 +34,13 @@ const articleSchema = {
   },
 };
 
+const billionaireFaqs = [
+  { question: "Why are billionaires moving to Austin Texas?", answer: "Billionaires and high-net-worth founders are relocating to Austin for Texas's zero state income tax, a pro-business regulatory environment, proximity to a booming tech economy, and access to luxury waterfront living on Lake Austin and in Westlake Hills — all within minutes of a major metro." },
+  { question: "How does billionaire migration affect Austin real estate prices?", answer: "When ultra-high-net-worth individuals relocate, they drive demand for premium inventory in supply-constrained neighborhoods like Lake Austin, Westlake Hills, and Tarrytown. This increases competition, accelerates price appreciation, and pushes more luxury transactions off-market." },
+  { question: "Which Austin neighborhoods attract the most billionaires?", answer: "Lake Austin waterfront, Westlake Hills, and Tarrytown are the primary destinations for billionaire buyers. These areas offer large estates, privacy, water access, and proximity to downtown Austin — a combination rarely found in other major U.S. metros." },
+  { question: "Are luxury homes in Austin a good investment in 2026?", answer: "Austin's luxury market continues to benefit from corporate relocations, population growth, and limited high-end inventory. Combined with no state income tax and strong long-term appreciation in neighborhoods like Barton Creek and Lake Austin, luxury real estate in Austin remains a compelling investment." },
+];
+
 const labelStyle = {
   fontSize: "0.6rem" as const,
   letterSpacing: "0.3em",
@@ -51,6 +58,7 @@ const BillionaireMigration = () => {
         ogType="article"
       />
       <SchemaMarkup schema={articleSchema} />
+      <SchemaMarkup schema={createFAQSchema(billionaireFaqs)} />
       <SchemaMarkup schema={createBreadcrumbSchema([
         { name: "Home", url: "https://www.echelonpropertygroup.com/" },
         { name: "Blog", url: "https://www.echelonpropertygroup.com/blog" },

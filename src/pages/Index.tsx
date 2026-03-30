@@ -430,6 +430,43 @@ const stats = [
   { value: 250, suffix: "M+", prefix: "$", label: "Off-Market Access", from: 150 },
 ];
 
+const StatItem = ({ stat }: { stat: typeof stats[number] }) => {
+  const { count, ref, inView } = useCountUp(stat.value, 3500, stat.from);
+  return (
+    <div ref={ref} className="text-center group/stat">
+      <p style={{
+        fontFamily: '"Cinzel", serif', fontWeight: 400,
+        fontSize: "clamp(48px, 6vw, 80px)", lineHeight: 1, color: "#FAFAF8",
+      }}>
+        {stat.prefix}{count}
+        <span style={{
+          fontFamily: '"Cinzel", serif', fontWeight: 400,
+          fontSize: "0.6em", color: "hsl(38 39% 61%)", verticalAlign: "super",
+        }}>
+          {stat.suffix}
+        </span>
+      </p>
+      <div className="relative inline-block mt-2 pb-3">
+        <p style={{
+          fontFamily: '"Jost", sans-serif', fontWeight: 300,
+          fontSize: "10px", letterSpacing: "0.2em", textTransform: "uppercase",
+          color: "#9A9690",
+        }}>
+          {stat.label}
+        </p>
+        <div
+          className="absolute bottom-0 left-0 h-px"
+          style={{
+            background: "hsl(38 39% 61%)",
+            width: inView ? "100%" : "0%",
+            transition: "width 5s cubic-bezier(0.22, 1, 0.36, 1)",
+          }}
+        />
+      </div>
+    </div>
+  );
+};
+
 const StatsStrip = () => (
   <section style={{ background: "#080B1A" }}>
     <div className="container mx-auto px-6">
@@ -438,40 +475,6 @@ const StatsStrip = () => (
           {stats.map((stat, i) => (
             <StatItem key={i} stat={stat} />
           ))}
-            return (
-              <div key={i} ref={ref} className="text-center group/stat">
-                <p style={{
-                  fontFamily: '"Cinzel", serif', fontWeight: 400,
-                  fontSize: "clamp(48px, 6vw, 80px)", lineHeight: 1, color: "#FAFAF8",
-                }}>
-                  {stat.prefix}{count}
-                  <span style={{
-                    fontFamily: '"Cinzel", serif', fontWeight: 400,
-                    fontSize: "0.6em", color: "hsl(38 39% 61%)", verticalAlign: "super",
-                  }}>
-                    {stat.suffix}
-                  </span>
-                </p>
-                <div className="relative inline-block mt-2 pb-3">
-                  <p style={{
-                    fontFamily: '"Jost", sans-serif', fontWeight: 300,
-                    fontSize: "10px", letterSpacing: "0.2em", textTransform: "uppercase",
-                    color: "#9A9690",
-                  }}>
-                    {stat.label}
-                  </p>
-                  <div
-                    className="absolute bottom-0 left-0 h-px"
-                    style={{
-                      background: "hsl(38 39% 61%)",
-                      width: inView ? "100%" : "0%",
-                      transition: "width 5s cubic-bezier(0.22, 1, 0.36, 1)",
-                    }}
-                  />
-                </div>
-              </div>
-            );
-          })}
         </div>
       </div>
     </div>

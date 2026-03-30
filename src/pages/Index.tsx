@@ -946,7 +946,7 @@ const LeadCapture = () => {
    ───────────────────────────────────────────── */
 
 const FinalCTA = () => (
-  <section className="py-24 md:py-32" style={{ background: "#0D0D0D" }}>
+  <section data-nav-dark-zone className="py-24 md:py-32" style={{ background: "#0D0D0D" }}>
     <div className="container mx-auto px-6">
       <div className="max-w-[700px] mx-auto text-center">
         <ScrollReveal>

@@ -13,6 +13,7 @@ interface NavLink {
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [inDarkZone, setInDarkZone] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
@@ -32,6 +33,24 @@ const Navigation = () => {
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, [shouldNeverFade]);
+
+  // Detect when nav overlaps dark-zone sections (Final CTA / Footer)
+  useEffect(() => {
+    const targets = document.querySelectorAll("[data-nav-dark-zone]");
+    if (!targets.length) return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const anyVisible = entries.some((e) => e.isIntersecting);
+        setInDarkZone(anyVisible);
+      },
+      { rootMargin: "-10% 0px -85% 0px", threshold: 0 }
+    );
+    targets.forEach((t) => observer.observe(t));
+    return () => observer.disconnect();
+  }, [location.pathname]);
+
+  // When in a dark zone, override to light (non-scrolled) appearance
+  const effectiveScrolled = isScrolled && !inDarkZone;
 
   useEffect(() => {
     setOpenDropdown(null);
@@ -73,9 +92,9 @@ const Navigation = () => {
       <div
         className="absolute inset-0 transition-all duration-500"
         style={{
-          background: isScrolled ? "rgba(13,13,13,0.95)" : "hsl(var(--background))",
-          backdropFilter: isScrolled ? "blur(8px)" : "none",
-          WebkitBackdropFilter: isScrolled ? "blur(8px)" : "none",
+          background: effectiveScrolled ? "rgba(13,13,13,0.95)" : "hsl(var(--background))",
+          backdropFilter: effectiveScrolled ? "blur(8px)" : "none",
+          WebkitBackdropFilter: effectiveScrolled ? "blur(8px)" : "none",
         }}
       />
       <div className="relative container mx-auto px-6 h-full flex items-center justify-between">
@@ -105,8 +124,8 @@ const Navigation = () => {
                   onClick={() => setOpenDropdown(openDropdown === link.href ? null : link.href)}
                   className={`relative transition-colors duration-300 group cursor-pointer bg-transparent border-none ${
                     isActive(link)
-                      ? (isScrolled ? "text-white" : "text-foreground")
-                      : (isScrolled ? "text-white/60 hover:text-white" : "text-muted-foreground/70 hover:text-foreground")
+                      ? (effectiveScrolled ? "text-white" : "text-foreground")
+                      : (effectiveScrolled ? "text-white/60 hover:text-white" : "text-muted-foreground/70 hover:text-foreground")
                   }`}
                   style={navLinkStyle}
                 >
@@ -121,7 +140,7 @@ const Navigation = () => {
                 </button>
                 {openDropdown === link.href && (
                   <div className="absolute top-full left-0 pt-4 min-w-[260px]">
-                    <div style={{ background: isScrolled ? "rgba(13,13,13,0.95)" : "hsl(var(--background))", border: "1px solid rgba(255,255,255,0.08)" }} className="shadow-elegant">
+                    <div style={{ background: effectiveScrolled ? "rgba(13,13,13,0.95)" : "hsl(var(--background))", border: "1px solid rgba(255,255,255,0.08)" }} className="shadow-elegant">
                       {link.children.map((child) => (
                         <Link
                           key={child.href}
@@ -131,13 +150,13 @@ const Navigation = () => {
                             ...navLinkStyle,
                             fontSize: "10px",
                             color: location.pathname === child.href
-                              ? (isScrolled ? "#fff" : "hsl(var(--foreground))")
-                              : (isScrolled ? "rgba(255,255,255,0.5)" : "hsl(var(--muted-foreground))"),
+                              ? (effectiveScrolled ? "#fff" : "hsl(var(--foreground))")
+                              : (effectiveScrolled ? "rgba(255,255,255,0.5)" : "hsl(var(--muted-foreground))"),
                           }}
-                          onMouseEnter={(e) => { e.currentTarget.style.color = isScrolled ? "#fff" : "hsl(var(--foreground))"; }}
+                          onMouseEnter={(e) => { e.currentTarget.style.color = effectiveScrolled ? "#fff" : "hsl(var(--foreground))"; }}
                           onMouseLeave={(e) => {
                             if (location.pathname !== child.href) {
-                              e.currentTarget.style.color = isScrolled ? "rgba(255,255,255,0.5)" : "hsl(var(--muted-foreground))";
+                              e.currentTarget.style.color = effectiveScrolled ? "rgba(255,255,255,0.5)" : "hsl(var(--muted-foreground))";
                             }
                           }}
                         >
@@ -155,8 +174,8 @@ const Navigation = () => {
                 onClick={() => { if (link.href === '/' && location.pathname === '/') window.scrollTo({ top: 0, behavior: 'smooth' }); }}
                 className={`relative transition-colors duration-300 group ${
                   location.pathname === link.href
-                    ? (isScrolled ? "text-white" : "text-foreground")
-                    : (isScrolled ? "text-white/60 hover:text-white" : "text-muted-foreground/70 hover:text-foreground")
+                    ? (effectiveScrolled ? "text-white" : "text-foreground")
+                    : (effectiveScrolled ? "text-white/60 hover:text-white" : "text-muted-foreground/70 hover:text-foreground")
                 }`}
                 style={navLinkStyle}
               >

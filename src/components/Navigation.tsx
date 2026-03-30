@@ -225,7 +225,7 @@ const Navigation = () => {
 
       {/* Mobile menu — full-screen dark overlay */}
       {isMenuOpen && (
-        <div className="lg:hidden fixed inset-0 top-20 md:top-24 z-40" style={{ background: "#0D0D0D" }}>
+        <div className="lg:hidden fixed inset-0 top-20 md:top-24 z-40" style={{ background: "#0C0F24" }}>
           <div className="container mx-auto px-6 py-12 space-y-7">
             {links.map((link) =>
               link.children ? (

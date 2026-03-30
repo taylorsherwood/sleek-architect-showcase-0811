@@ -338,7 +338,7 @@ iframe {
     content: '';
     position: absolute;
     inset: 0;
-    background: rgba(13, 13, 13, 0.35);
+    background: rgba(8, 11, 26, 0.35);
   }
   @media (max-width: 768px) {
     .parallax-break {

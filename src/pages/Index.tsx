@@ -653,7 +653,7 @@ const TestimonialsSection = () => {
           {/* Quote */}
           <p key={active} className="mb-6" style={{
             fontFamily: '"Cinzel", serif', fontWeight: 400,
-            fontSize: "clamp(22px, 3vw, 36px)", lineHeight: 1.5, color: "hsl(var(--foreground))",
+            fontSize: "clamp(18px, 2.5vw, 30px)", lineHeight: 1.5, color: "hsl(var(--foreground))",
             animation: "fadeUp 0.6s ease both",
           }}>
             {t.quote}
@@ -661,14 +661,14 @@ const TestimonialsSection = () => {
 
           {/* Attribution */}
           <p key={`name-${active}`} style={{
-            fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em",
+            fontFamily: '"Jost", sans-serif', fontSize: "13px", letterSpacing: "0.18em",
             textTransform: "uppercase", color: "hsl(38 39% 61%)", marginTop: "24px",
             animation: "fadeUp 0.6s ease 0.15s both",
           }}>
             {t.name}
           </p>
           <p key={`ctx-${active}`} style={{
-            fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.12em",
+            fontFamily: '"Jost", sans-serif', fontSize: "12px", letterSpacing: "0.12em",
             textTransform: "uppercase", color: "hsl(var(--muted-foreground))", marginTop: "6px",
             animation: "fadeUp 0.6s ease 0.25s both",
           }}>

@@ -104,7 +104,7 @@ const ListingCardOverlay = ({
         loading="lazy" decoding="async"
       />
       {/* Persistent gradient */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent pointer-events-none" />
 
       {/* Frosted "View Property" button on hover */}
       <div className="absolute inset-0 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">

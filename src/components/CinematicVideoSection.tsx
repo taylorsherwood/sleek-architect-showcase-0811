@@ -105,7 +105,17 @@ const CinematicVideoSection = () => {
           style={{ paddingTop: "0", marginTop: "-3vh" }}
         >
           <div className="w-full px-8 sm:px-12 md:px-16 lg:px-20 xl:px-28">
-            <div className="max-w-[560px]">
+            <div
+              className="max-w-[560px]"
+              style={{
+                background: "rgba(12, 15, 24, 0.38)",
+                backdropFilter: "blur(8px)",
+                WebkitBackdropFilter: "blur(8px)",
+                borderRadius: "10px",
+                border: "1px solid rgba(255, 255, 255, 0.07)",
+                padding: "clamp(24px, 4vw, 40px)",
+              }}
+            >
               {/* Eyebrow */}
               <p
                 className="text-minimal text-gold/90 mb-6 font-extrabold"
@@ -116,23 +126,25 @@ const CinematicVideoSection = () => {
 
               {/* Headline */}
               <h2
-                className="font-display font-medium text-white leading-[0.95] mb-2"
+                className="font-display font-medium leading-[0.95] mb-2"
                 style={{
                   ...reveal(visible, 120),
+                  color: "#F5F5F5",
                   fontSize: "clamp(2rem, 3.5vw, 2.75rem)",
                   letterSpacing: "-0.02em",
-                  textShadow: "0 2px 20px rgba(0,0,0,0.15)",
+                  textShadow: "0 1px 2px rgba(0,0,0,0.25)",
                 }}
               >
                 Luxury Marketing
               </h2>
               <p
-                className="font-display font-normal text-white/70 leading-[0.95] mb-8"
+                className="font-display font-normal leading-[0.95] mb-8"
                 style={{
                   ...reveal(visible, 200),
+                  color: "rgba(245, 245, 245, 0.7)",
                   fontSize: "clamp(1.5rem, 2.8vw, 2.5rem)",
                   letterSpacing: "0.03em",
-                  textShadow: "0 2px 20px rgba(0,0,0,0.1)",
+                  textShadow: "0 1px 2px rgba(0,0,0,0.25)",
                 }}
               >
                 That Moves Buyers
@@ -140,11 +152,12 @@ const CinematicVideoSection = () => {
 
               {/* Power line */}
               <p
-                className="text-sm font-medium text-white/85 mb-5"
+                className="text-sm font-medium mb-5"
                 style={{
                   ...reveal(visible, 300),
+                  color: "rgba(245, 245, 245, 0.85)",
                   letterSpacing: "0.12em",
-                  textShadow: "0 1px 12px rgba(0,0,0,0.1)",
+                  textShadow: "0 1px 2px rgba(0,0,0,0.25)",
                 }}
               >
                 Most agents list. We position.
@@ -152,11 +165,12 @@ const CinematicVideoSection = () => {
 
               {/* Subheadline */}
               <p
-                className="text-white/60 text-[15px] leading-[1.9] max-w-[26rem] mb-10"
+                className="text-[15px] leading-[1.9] max-w-[26rem] mb-10"
                 style={{
                   ...reveal(visible, 380),
+                  color: "rgba(245, 245, 245, 0.55)",
                   letterSpacing: "0.02em",
-                  textShadow: "0 1px 8px rgba(0,0,0,0.08)",
+                  textShadow: "0 1px 2px rgba(0,0,0,0.2)",
                 }}
               >
                 Cinematic presentation is part of how we position exceptional
@@ -168,8 +182,8 @@ const CinematicVideoSection = () => {
               <div style={reveal(visible, 480)}>
                 <Link
                   to="/contact"
-                  className="group inline-flex items-center gap-2 text-[11px] font-medium text-white/60 hover:text-gold transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] hover:translate-x-1"
-                  style={{ letterSpacing: "0.18em" }}
+                  className="group inline-flex items-center gap-2 text-[11px] font-medium hover:text-gold transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] hover:translate-x-1"
+                  style={{ letterSpacing: "0.18em", color: "rgba(245, 245, 245, 0.55)" }}
                 >
                   SEE HOW YOUR PROPERTY WOULD BE POSITIONED
                   <ArrowRight className="w-3.5 h-3.5 flex-shrink-0 transition-transform duration-500 group-hover:translate-x-1" />

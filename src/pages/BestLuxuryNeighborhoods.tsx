@@ -35,6 +35,10 @@ const BestLuxuryNeighborhoods = () => {
         canonical="/best-luxury-neighborhoods-in-austin"
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
+      <SchemaMarkup schema={createBreadcrumbSchema([
+        { name: "Home", url: "https://www.echelonpropertygroup.com/" },
+        { name: "Best Luxury Neighborhoods in Austin", url: "https://www.echelonpropertygroup.com/best-luxury-neighborhoods-in-austin" },
+      ])} />
       <SchemaMarkup schema={createFAQSchema(faqs)} />
       <Navigation />
 

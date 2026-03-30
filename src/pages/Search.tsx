@@ -61,6 +61,10 @@ const SearchPage = () => {
         description="Search all Austin homes for sale. Browse luxury homes, condos, land, and investment properties across Austin's most desirable neighborhoods."
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
+      <SchemaMarkup schema={createBreadcrumbSchema([
+        { name: "Home", url: "https://www.echelonpropertygroup.com/" },
+        { name: "Search Homes", url: "https://www.echelonpropertygroup.com/search" },
+      ])} />
       <SchemaMarkup schema={createFAQSchema(searchFaqs)} />
       <Navigation />
 

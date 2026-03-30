@@ -25,6 +25,10 @@ const MovingToAustin = () => {
         canonical="/moving-to-austin-texas"
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
+      <SchemaMarkup schema={createBreadcrumbSchema([
+        { name: "Home", url: "https://www.echelonpropertygroup.com/" },
+        { name: "Moving to Austin Texas", url: "https://www.echelonpropertygroup.com/moving-to-austin-texas" },
+      ])} />
       <SchemaMarkup schema={createFAQSchema(faqs)} />
       <Navigation />
 

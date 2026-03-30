@@ -116,6 +116,7 @@ const Listings = () => {
         title="Luxury Listings in Austin TX | Echelon Property Group"
         description="Current luxury listings in Austin TX. Homes for sale, investment properties, estate homes, and land opportunities across Austin's premier neighborhoods."
       />
+      <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createBreadcrumbSchema([
         { name: "Home", url: "https://www.echelonpropertygroup.com/" },
         { name: "Listings", url: "https://www.echelonpropertygroup.com/listings" }

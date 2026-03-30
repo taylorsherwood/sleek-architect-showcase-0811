@@ -639,6 +639,11 @@ const testimonials = [
     name: "Yaniv Dotan",
     context: "Purchased and sold in Barton Creek",
   },
+  {
+    quote: "Taylor's attention to detail and marketing approach are truly exceptional. From staging to photography to negotiation, every step reflected true professionalism and commitment. Highly recommend! Will absolutely use him for future endeavors no question about it.",
+    name: "Cynthia Hampton",
+    context: "Bought and sold in Austin",
+  },
 ];
 
 const TestimonialsSection = () => {

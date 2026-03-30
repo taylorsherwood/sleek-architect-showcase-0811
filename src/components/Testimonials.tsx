@@ -117,7 +117,7 @@ const Testimonials = () => {
                 <img
                   src={echelonWatermark}
                   alt=""
-                  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 md:w-40 h-auto pointer-events-none select-none opacity-[0.12]"
+                  className="absolute bottom-4 right-4 md:bottom-6 md:right-6 w-28 md:w-36 h-auto pointer-events-none select-none opacity-20 z-0"
                   aria-hidden="true"
                   draggable={false}
                 />

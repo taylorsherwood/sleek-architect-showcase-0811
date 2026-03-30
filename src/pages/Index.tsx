@@ -264,7 +264,7 @@ const TrustStrip = () => (
 const AdvisorSection = () => (
   <section className="bg-background">
     <div className="max-w-[1400px] mx-auto">
-      <div className="grid md:grid-cols-[minmax(460px,520px)_1fr] items-center" style={{ gap: "48px" }}>
+      <div className="grid md:grid-cols-[1fr_1fr]" style={{ gap: "80px" }}>
         {/* Left — full-bleed image */}
         <div className="relative overflow-hidden w-full max-w-[520px]" style={{ aspectRatio: "3 / 4" }}>
           <img
@@ -280,7 +280,7 @@ const AdvisorSection = () => (
         </div>
 
         {/* Right — content */}
-        <div className="flex flex-col justify-center bg-secondary" style={{ padding: "clamp(40px, 6vw, 72px)" }}>
+        <div className="flex flex-col justify-center bg-secondary" style={{ padding: "clamp(48px, 8vw, 96px)" }}>
           <ScrollReveal>
             <p className="text-minimal text-gold mb-6">
               STRATEGIC REAL ESTATE ADVISOR

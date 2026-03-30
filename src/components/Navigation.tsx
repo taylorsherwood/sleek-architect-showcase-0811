@@ -92,9 +92,9 @@ const Navigation = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 overflow-visible h-20 md:h-24 lg:h-[6.5rem]" style={{ borderBottom: "1px solid rgba(255,255,255,0.08)" }}>
       <div
-        className="absolute inset-0"
+        className="absolute inset-0 transition-all duration-500"
         style={{
-          background: "hsl(var(--background))",
+          background: effectiveScrolled ? "#080B1A" : "hsl(var(--background))",
         }}
       />
       <div className="relative container mx-auto px-6 h-full flex items-center justify-between">

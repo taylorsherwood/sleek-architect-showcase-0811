@@ -905,7 +905,7 @@ const LeadCapture = () => {
   };
 
   return (
-    <section className="py-16 md:py-20 bg-secondary">
+    <section className="bg-background" style={{ padding: "clamp(80px, 12vw, 120px) 0" }}>
       <div className="container mx-auto px-6">
         <div className="max-w-[460px] mx-auto text-center">
           <ScrollReveal>

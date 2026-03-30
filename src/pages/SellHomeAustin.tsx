@@ -26,6 +26,10 @@ const SellHomeAustin = () => {
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createFAQSchema(faqs)} />
+      <SchemaMarkup schema={createBreadcrumbSchema([
+        { name: "Home", url: "https://www.echelonpropertygroup.com/" },
+        { name: "Sell Your Home in Austin", url: "https://www.echelonpropertygroup.com/sell-home-austin" },
+      ])} />
       <Navigation />
 
       <div className="h-24" />

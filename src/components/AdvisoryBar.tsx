@@ -75,7 +75,7 @@ const AdvisoryBar = () => {
       window.removeEventListener("scroll", onScroll);
       document.removeEventListener("mouseleave", onMouseLeave);
     };
-  }, []);
+  }, [isHomePage]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

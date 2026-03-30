@@ -248,7 +248,7 @@ const Hero = () => {
             most sought-after neighborhoods.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 transition-all duration-1000 will-change-[opacity,transform]"
+          <div className="hero-ctas flex flex-col sm:flex-row gap-4 transition-all duration-1000 will-change-[opacity,transform]"
             style={{
               opacity: heroVisible ? 1 : 0,
               transform: heroVisible ? "translateY(0)" : "translateY(10px)",
@@ -257,28 +257,56 @@ const Hero = () => {
             }}>
             <Link
               to="/invest"
-              className="hero-cta-btn inline-block bg-warm-cream text-foreground px-12 py-[1.1rem] text-center hover:bg-primary hover:text-primary-foreground shadow-[0_8px_24px_rgba(0,0,0,0.35)] border border-white/15"
+              className="inline-block text-center whitespace-nowrap transition-all duration-300"
               style={{
-                fontFamily: '"Raleway", sans-serif',
-                fontSize: "0.6rem",
-                letterSpacing: "0.28em",
+                fontFamily: "'Jost', sans-serif",
+                fontSize: "11px",
+                letterSpacing: "0.18em",
                 textTransform: "uppercase",
-                fontWeight: 700
+                fontWeight: 400,
+                padding: "14px 32px",
+                minWidth: "220px",
+                maxWidth: "280px",
+                width: "auto",
+                border: "1px solid hsl(var(--gold))",
+                color: "hsl(var(--gold))",
+                background: "transparent",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background = "hsl(var(--gold))";
+                e.currentTarget.style.color = "hsl(var(--black))";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background = "transparent";
+                e.currentTarget.style.color = "hsl(var(--gold))";
               }}>
-              
               EXPLORE OPPORTUNITIES
             </Link>
             <Link
               to="/off-market-real-estate-austin"
-              className="hero-cta-btn inline-block bg-transparent border border-warm-cream/25 text-warm-cream/75 px-10 py-[1.1rem] text-center hover:bg-gold hover:text-white hover:border-gold hover:font-bold transition-all duration-300"
+              className="inline-block text-center whitespace-nowrap transition-all duration-300"
               style={{
-                fontFamily: '"Raleway", sans-serif',
-                fontSize: "0.6rem",
-                letterSpacing: "0.28em",
+                fontFamily: "'Jost', sans-serif",
+                fontSize: "11px",
+                letterSpacing: "0.18em",
                 textTransform: "uppercase",
-                fontWeight: 400
+                fontWeight: 400,
+                padding: "14px 32px",
+                minWidth: "220px",
+                maxWidth: "280px",
+                width: "auto",
+                border: "1px solid rgba(245, 243, 239, 0.4)",
+                color: "rgba(245, 243, 239, 0.85)",
+                background: "transparent",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.borderColor = "rgba(245, 243, 239, 0.8)";
+                e.currentTarget.style.color = "#fff";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.borderColor = "rgba(245, 243, 239, 0.4)";
+                e.currentTarget.style.color = "rgba(245, 243, 239, 0.85)";
               }}>
-              
               PRIVATE ACCESS
             </Link>
           </div>

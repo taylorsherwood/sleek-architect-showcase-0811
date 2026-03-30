@@ -1054,7 +1054,7 @@ const Index = () => (
     <StatsStrip />
 
     {/* Parallax break — aerial Austin / Hill Country */}
-    <div className="parallax-break" style={{ backgroundImage: "url('/placeholder.svg')" }} aria-hidden="true" />
+    <div className="parallax-break" style={{ backgroundImage: "url('/images/parallax-skyline.jpg')" }} aria-hidden="true" />
 
     <FeaturedProperties />
 

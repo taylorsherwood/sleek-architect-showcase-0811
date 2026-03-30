@@ -527,14 +527,8 @@ const FeaturedProperties = () => (
                 <Wrapper key={i} {...wrapperProps} className="group block cursor-pointer">
                   <div className="relative overflow-hidden" style={{ aspectRatio: "3/4", background: "#12162E" }}>
                     <img src={p.image} alt={p.address}
-                      className="w-full h-full object-cover group-hover:scale-[1.03] will-change-transform [transition:transform_1.8s_cubic-bezier(0.19,1,0.22,1)]"
+                      className="community-tile-img w-full h-full object-cover"
                       loading="lazy" decoding="async" />
-                    {/* Frosted "View Property" on hover */}
-                    <div className="absolute inset-0 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100 pointer-events-none [transition:opacity_0.6s_cubic-bezier(0.19,1,0.22,1)]">
-                      <span className="bg-white/20 backdrop-blur-md text-white border border-white/30 px-6 py-2.5 rounded-lg font-medium" style={{ fontSize: "0.65rem", letterSpacing: "0.15em", textTransform: "uppercase", fontFamily: '"Jost", sans-serif' }}>
-                        View Property
-                      </span>
-                    </div>
 
                     {/* Bottom overlay */}
                     <div className="absolute bottom-0 left-0 right-0 px-6 pb-6 pt-8"

@@ -94,7 +94,6 @@ const Hero = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [videoSrc]);
 
-
   const anim = (delay: string) => ({
     opacity: heroVisible ? 1 : 0,
     transform: heroVisible ? "translateY(0)" : "translateY(10px)",
@@ -529,8 +528,13 @@ const FeaturedProperties = () => (
                     <img src={p.image} alt={p.address}
                       className="community-tile-img w-full h-full object-cover"
                       loading="lazy" decoding="async" />
+                    {/* Dark hover overlay with EXPLORE */}
+                    <div className="absolute inset-0 bg-foreground/40 opacity-0 group-hover:opacity-100 pointer-events-none flex items-center justify-center [transition:opacity_0.6s_cubic-bezier(0.16,1,0.3,1)]">
+                      <span className="text-gold tracking-[0.2em] uppercase font-normal" style={{ fontFamily: '"Jost", sans-serif', fontSize: "0.75rem" }}>
+                        EXPLORE &rarr;
+                      </span>
+                    </div>
 
-                    {/* Bottom overlay */}
                     <div className="absolute bottom-0 left-0 right-0 px-6 pb-6 pt-8"
                       style={{ background: "linear-gradient(to top, rgba(12,15,36,0.92) 0%, transparent 100%)" }}>
                       <p style={{

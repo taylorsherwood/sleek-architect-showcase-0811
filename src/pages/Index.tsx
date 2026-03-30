@@ -131,6 +131,7 @@ const Hero = () => {
             <p style={{
               fontFamily: '"Jost", sans-serif', fontSize: "10px", letterSpacing: "0.25em", textTransform: "uppercase",
               color: "hsl(38 39% 61%)",
+              textShadow: "0 0 12px rgba(198,168,91,0.5), 0 0 24px rgba(198,168,91,0.25)"
             }}>
               STRATEGIC AUSTIN REAL ESTATE ADVISORY
             </p>

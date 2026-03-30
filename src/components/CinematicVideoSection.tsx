@@ -95,7 +95,7 @@ const CinematicVideoSection = () => {
         <div
           className="absolute inset-0 z-[1] pointer-events-none"
           style={{
-            background: "linear-gradient(to right, rgba(10, 12, 18, 0.52) 0%, rgba(10, 12, 18, 0.30) 25%, rgba(10, 12, 18, 0.12) 42%, transparent 58%)",
+            background: "linear-gradient(to right, rgba(10, 12, 18, 0.68) 0%, rgba(10, 12, 18, 0.45) 22%, rgba(10, 12, 18, 0.18) 40%, transparent 55%)",
           }}
         />
 

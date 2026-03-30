@@ -244,8 +244,12 @@ realscout-simple-search {
     height: 100%;
     object-fit: cover;
     object-position: center 10%;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    will-change: transform, opacity;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    image-rendering: optimizeQuality;
     /* Bright, warm correction — airy luxury editorial look */
     filter: saturate(1.04) contrast(1.01) brightness(1.08) hue-rotate(-4deg) !important;
   }

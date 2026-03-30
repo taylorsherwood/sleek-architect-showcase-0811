@@ -58,6 +58,7 @@ const BillionaireMigration = () => {
         ogType="article"
       />
       <SchemaMarkup schema={articleSchema} />
+      <SchemaMarkup schema={createFAQSchema(billionaireFaqs)} />
       <SchemaMarkup schema={createBreadcrumbSchema([
         { name: "Home", url: "https://www.echelonpropertygroup.com/" },
         { name: "Blog", url: "https://www.echelonpropertygroup.com/blog" },

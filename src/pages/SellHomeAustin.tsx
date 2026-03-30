@@ -4,7 +4,7 @@ import Navigation from "@/components/Navigation";
 const Footer = lazy(() => import("@/components/Footer"));
 import AboutBlock from "@/components/AboutBlock";
 import SEOHead from "@/components/SEOHead";
-import SchemaMarkup, { createFAQSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
+import SchemaMarkup, { createFAQSchema, realEstateAgentSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import AuthorBio from "@/components/AuthorBio";
 import RelatedInsights from "@/components/RelatedInsights";
 

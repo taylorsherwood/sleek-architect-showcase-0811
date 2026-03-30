@@ -113,20 +113,10 @@ const Testimonials = () => {
                     "0 10px 30px rgba(0,0,0,0.05)";
                 }}
               >
-                {/* Opening quotation mark */}
-                <div className="relative z-10">
-                  <span className="text-4xl md:text-5xl leading-none font-serif text-gold/40 select-none" style={{ fontFamily: 'Georgia, serif' }}>"</span>
-                </div>
-
-                {/* Quote text */}
+                {/* Quote text with quotation marks */}
                 <p className="text-foreground/[0.88] text-[0.9rem] md:text-[0.95rem] leading-[1.8] font-light italic mb-4 flex-1 relative z-10">
-                  {t.quote}
+                  &ldquo;{t.quote}&rdquo;
                 </p>
-
-                {/* Closing quotation mark */}
-                <div className="relative z-10 text-right -mt-2 mb-4">
-                  <span className="text-4xl md:text-5xl leading-none font-serif text-gold/40 select-none" style={{ fontFamily: 'Georgia, serif' }}>"</span>
-                </div>
 
                 {/* Attribution */}
                 <div>

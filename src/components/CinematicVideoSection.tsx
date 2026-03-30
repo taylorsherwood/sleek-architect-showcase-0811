@@ -165,11 +165,12 @@ const CinematicVideoSection = () => {
 
               {/* Subheadline */}
               <p
-                className="text-white/60 text-[15px] leading-[1.9] max-w-[26rem] mb-10"
+                className="text-[15px] leading-[1.9] max-w-[26rem] mb-10"
                 style={{
                   ...reveal(visible, 380),
+                  color: "rgba(245, 245, 245, 0.55)",
                   letterSpacing: "0.02em",
-                  textShadow: "0 1px 8px rgba(0,0,0,0.08)",
+                  textShadow: "0 1px 2px rgba(0,0,0,0.2)",
                 }}
               >
                 Cinematic presentation is part of how we position exceptional

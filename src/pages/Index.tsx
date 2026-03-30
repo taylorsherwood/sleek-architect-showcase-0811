@@ -381,6 +381,7 @@ const AdvisorSection = () => (
 
 const useCountUp = (target: number, duration = 2600, from = 0) => {
   const [count, setCount] = useState(from);
+  const [inView, setInView] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   const animId = useRef(0);
 
@@ -390,6 +391,7 @@ const useCountUp = (target: number, duration = 2600, from = 0) => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
+          setInView(true);
           setCount(from);
           const startTime = performance.now();
           const id = ++animId.current;
@@ -403,6 +405,7 @@ const useCountUp = (target: number, duration = 2600, from = 0) => {
           requestAnimationFrame(step);
         } else {
           setCount(from);
+          setInView(false);
         }
       },
       { threshold: 0.3 }
@@ -411,7 +414,7 @@ const useCountUp = (target: number, duration = 2600, from = 0) => {
     return () => observer.disconnect();
   }, [target, duration, from]);
 
-  return { count, ref };
+  return { count, ref, inView };
 };
 
 const stats = [

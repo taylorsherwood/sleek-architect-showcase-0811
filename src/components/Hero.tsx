@@ -123,7 +123,7 @@ const Hero = () => {
           className={`hero-bg-video transition-opacity duration-700 ${
           videoReady ? "opacity-100" : "opacity-0"}`
           }
-          style={{ filter: "brightness(0.85) contrast(1.1)" }}
+          style={{ filter: "saturate(1.05) contrast(1.02) brightness(1.02)" }}
           tabIndex={-1}>
           
           {videoSrc && <source src={videoSrc} type="video/mp4" />}

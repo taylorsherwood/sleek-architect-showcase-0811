@@ -660,15 +660,17 @@ const TestimonialsSection = () => {
           </ScrollReveal>
 
           {/* Quote with em dash delimiters */}
-          <p key={active} className="mb-6" style={{
-            fontFamily: '"Cinzel", serif', fontWeight: 400,
-            fontSize: "clamp(18px, 2.5vw, 30px)", lineHeight: 1.5, color: "hsl(var(--foreground))",
-            animation: "fadeUp 0.6s ease both",
-          }}>
-            <span style={{ color: "hsl(38 39% 61%)", marginRight: "0.15em" }}>&ldquo;</span>
-            {t.quote}
-            <span style={{ color: "hsl(38 39% 61%)", marginLeft: "0.15em" }}>&rdquo;</span>
-          </p>
+          <div style={{ minHeight: "160px", display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <p key={active} className="mb-6" style={{
+              fontFamily: '"Cinzel", serif', fontWeight: 400,
+              fontSize: "clamp(16px, 2vw, 24px)", lineHeight: 1.55, color: "hsl(var(--foreground))",
+              animation: "fadeUp 0.6s ease both",
+            }}>
+              <span style={{ color: "hsl(38 39% 61%)", marginRight: "0.15em" }}>&ldquo;</span>
+              {t.quote}
+              <span style={{ color: "hsl(38 39% 61%)", marginLeft: "0.15em" }}>&rdquo;</span>
+            </p>
+          </div>
 
           {/* Attribution */}
           <p key={`name-${active}`} style={{

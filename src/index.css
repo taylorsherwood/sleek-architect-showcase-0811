@@ -250,7 +250,7 @@ iframe {
     100% { transform: translateX(-50%); }
   }
   .scrolling-strip-track {
-    animation: scrollStrip 40s linear infinite;
+    animation: scrollStrip 80s linear infinite;
   }
   .scrolling-strip-track:hover {
     animation-play-state: paused;

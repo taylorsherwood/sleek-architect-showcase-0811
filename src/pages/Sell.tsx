@@ -300,7 +300,20 @@ const Sell = () => {
             </p>
             <a
               href="#home-valuation"
-              className="inline-block text-minimal bg-primary-foreground text-[#0C0F24] px-8 py-3.5 hover:bg-gold hover:text-primary-foreground transition-colors duration-300 reveal-delayed-2">REQUEST A PROPERTY VALUATION
+              className="inline-block text-minimal px-8 py-3.5 transition-all duration-300 reveal-delayed-2"
+              style={{
+                border: "1px solid hsl(var(--gold))",
+                color: "hsl(var(--gold))",
+                background: "transparent",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background = "hsl(var(--gold))";
+                e.currentTarget.style.color = "#fff";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background = "transparent";
+                e.currentTarget.style.color = "hsl(var(--gold))";
+              }}>REQUEST A PROPERTY VALUATION
             </a>
           </div>
 

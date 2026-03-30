@@ -2,7 +2,7 @@ import { lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";
-import SchemaMarkup, { createRealEstateListingSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
+import SchemaMarkup, { createRealEstateListingSchema, createBreadcrumbSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
 
 const RealScoutListings = lazy(() => import("@/components/RealScoutListings"));
 const RealScoutSearch = lazy(() => import("@/components/RealScoutSearch"));
@@ -116,6 +116,7 @@ const Listings = () => {
         title="Luxury Listings in Austin TX | Echelon Property Group"
         description="Current luxury listings in Austin TX. Homes for sale, investment properties, estate homes, and land opportunities across Austin's premier neighborhoods."
       />
+      <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createBreadcrumbSchema([
         { name: "Home", url: "https://www.echelonpropertygroup.com/" },
         { name: "Listings", url: "https://www.echelonpropertygroup.com/listings" }

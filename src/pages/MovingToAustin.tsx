@@ -4,7 +4,7 @@ import Navigation from "@/components/Navigation";
 const Footer = lazy(() => import("@/components/Footer"));
 import AboutBlock from "@/components/AboutBlock";
 import SEOHead from "@/components/SEOHead";
-import SchemaMarkup, { createFAQSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
+import SchemaMarkup, { createFAQSchema, createBreadcrumbSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
 import RelatedInsights from "@/components/RelatedInsights";
 
 const faqs = [
@@ -25,6 +25,10 @@ const MovingToAustin = () => {
         canonical="/moving-to-austin-texas"
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
+      <SchemaMarkup schema={createBreadcrumbSchema([
+        { name: "Home", url: "https://www.echelonpropertygroup.com/" },
+        { name: "Moving to Austin Texas", url: "https://www.echelonpropertygroup.com/moving-to-austin-texas" },
+      ])} />
       <SchemaMarkup schema={createFAQSchema(faqs)} />
       <Navigation />
 

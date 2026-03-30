@@ -2,7 +2,7 @@ import { lazy, Suspense, useMemo } from "react";
 import AboutBlock from "@/components/AboutBlock";
 import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";
-import SchemaMarkup, { realEstateAgentSchema, createFAQSchema } from "@/components/SchemaMarkup";
+import SchemaMarkup, { realEstateAgentSchema, createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import ScrollReveal from "@/components/ScrollReveal";
 import { Link, useSearchParams } from "react-router-dom";
 import gillisStreet from "@/assets/commercial-gillis-street.jpg";
@@ -61,6 +61,10 @@ const SearchPage = () => {
         description="Search all Austin homes for sale. Browse luxury homes, condos, land, and investment properties across Austin's most desirable neighborhoods."
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
+      <SchemaMarkup schema={createBreadcrumbSchema([
+        { name: "Home", url: "https://www.echelonpropertygroup.com/" },
+        { name: "Search Homes", url: "https://www.echelonpropertygroup.com/search" },
+      ])} />
       <SchemaMarkup schema={createFAQSchema(searchFaqs)} />
       <Navigation />
 

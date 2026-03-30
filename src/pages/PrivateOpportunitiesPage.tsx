@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 const Footer = lazy(() => import("@/components/Footer"));
 import SEOHead from "@/components/SEOHead";
-import SchemaMarkup, { createBreadcrumbSchema } from "@/components/SchemaMarkup";
+import SchemaMarkup, { createBreadcrumbSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
 import { MapPin, Building2, TrendingUp } from "lucide-react";
 
 const opportunities = [
@@ -55,6 +55,7 @@ const PrivateOpportunitiesPage = () => {
         description="Access select off-market homes, development sites, and investment opportunities across Austin through Echelon Property Group's private network."
       />
       <SchemaMarkup schema={privateOpportunitiesSchema} />
+      <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createBreadcrumbSchema([
         { name: "Home", url: "https://www.echelonpropertygroup.com/" },
         { name: "Private Opportunities", url: "https://www.echelonpropertygroup.com/private-opportunities" }

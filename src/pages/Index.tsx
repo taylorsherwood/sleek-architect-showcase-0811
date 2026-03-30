@@ -177,20 +177,6 @@ const Hero = () => {
             </Link>
           </div>
 
-          {/* Credential strip at bottom of hero */}
-          <div className="mt-16 flex items-center gap-0 flex-wrap" style={anim("0.55s")}>
-            {["eXp Luxury Division", "CLHMS Certified", "$100M+ Career Volume"].map((text, i) => (
-              <span key={i} className="flex items-center">
-                <span style={{
-                  fontFamily: '"Jost", sans-serif', fontSize: "10px", letterSpacing: "0.15em",
-                  textTransform: "uppercase", color: "rgba(245,243,239,0.6)",
-                }}>
-                  {text}
-                </span>
-                {i < 2 && <span className="mx-3" style={{ color: "hsl(38 39% 61%)", fontSize: "10px" }}>|</span>}
-              </span>
-            ))}
-          </div>
         </div>
       </div>
 

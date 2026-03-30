@@ -138,10 +138,7 @@ const Footer = () => {
               </a>
             </div>
             <p className="text-center" style={{ fontFamily: '"Jost", sans-serif', fontSize: "11px", color: "hsl(38 39% 61% / 0.65)" }}>
-              <a href="https://expluxury.com/?tl=en" target="_blank" rel="noopener noreferrer nofollow" className="hover:text-gold transition-colors duration-300">
-                eXp Luxury Division
-              </a>
-              {" · "}Licensed in Texas{" · "}© {new Date().getFullYear()} Echelon Property Group
+              © {new Date().getFullYear()} Echelon Property Group
             </p>
           </div>
         </div>

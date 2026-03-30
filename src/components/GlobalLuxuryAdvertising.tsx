@@ -313,7 +313,7 @@ const GlobalLuxuryAdvertising = () => {
 
               {/* Publication proof block */}
               <div style={revealStyle(platforms1.visible, 400)}>
-                <p className="text-minimal text-gold/50 mb-3" style={{ fontSize: "9px", letterSpacing: "0.15em" }}>
+                <p className="text-minimal text-gold/75 mb-3" style={{ fontSize: "9px", letterSpacing: "0.15em" }}>
                   SELECT MEDIA DISTRIBUTION
                 </p>
                 <div

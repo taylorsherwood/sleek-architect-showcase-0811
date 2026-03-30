@@ -654,7 +654,6 @@ const TestimonialsSection = () => {
             {t.quote}
             <span style={{ color: "hsl(38 39% 61%)", marginLeft: "0.4em" }}>—</span>
           </p>
-          </p>
 
           {/* Attribution */}
           <p key={`name-${active}`} style={{

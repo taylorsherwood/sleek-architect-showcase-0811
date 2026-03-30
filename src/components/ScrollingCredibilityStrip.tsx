@@ -54,7 +54,7 @@ const ScrollingCredibilityStrip = () => {
               loading="lazy"
               decoding="async"
               className={`${logo.h} w-auto object-contain shrink-0`}
-              style={{ opacity: 0.85, filter: "brightness(0) invert(1) sepia(1) saturate(0.6) hue-rotate(3deg) brightness(0.85)" }}
+              style={{ opacity: 1, filter: "brightness(0) invert(1) sepia(1) saturate(0.6) hue-rotate(3deg) brightness(1)" }}
             />
           ))}
         </div>

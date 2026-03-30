@@ -832,8 +832,8 @@ const InsightsSection = () => (
           <div className="text-center mb-16">
             <div className="w-10 h-px mx-auto mb-5" style={{ background: "hsl(38 39% 61%)" }} />
             <p className="text-minimal text-gold mb-5">MARKET INTELLIGENCE</p>
-            <h2 className="font-display text-3xl md:text-[2.75rem] font-normal text-foreground/90 leading-[1.1] tracking-[-0.01em]">
-              Insights & <span className="italic">Market Intelligence</span>
+            <h2 className="font-display text-3xl md:text-[2.75rem] font-normal text-foreground/90 leading-[1.1] tracking-[0.03em]">
+              Insights & Market Intelligence
             </h2>
           </div>
         </ScrollReveal>

@@ -271,7 +271,7 @@ const AdvisorSection = () => (
             src={taylorBoatImg}
             alt="Taylor Sherwood — Austin luxury real estate advisor and founder of Echelon Property Group"
             title="Taylor Sherwood, Echelon Property Group"
-            className="w-full h-full object-cover object-[center_30%]"
+className="w-full h-full object-contain object-center"
             style={{ minHeight: "480px" }}
             loading="lazy" decoding="async"
           />

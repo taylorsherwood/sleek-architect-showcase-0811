@@ -113,17 +113,9 @@ const Testimonials = () => {
                     "0 10px 30px rgba(0,0,0,0.05)";
                 }}
               >
-                {/* Quote icon */}
-                <div className="mb-4 relative z-10">
-                  <div
-                    className="w-7 h-7 rounded-full flex items-center justify-center"
-                    style={{
-                      background:
-                        "linear-gradient(135deg, hsl(var(--gold) / 0.12), hsl(var(--gold) / 0.06))",
-                    }}
-                  >
-                    <Quote className="w-3 h-3 text-gold" />
-                  </div>
+                {/* Quotation mark */}
+                <div className="relative z-10">
+                  <span className="text-4xl md:text-5xl leading-none font-serif text-foreground/20 select-none" style={{ fontFamily: 'Georgia, serif' }}>"</span>
                 </div>
 
                 {/* Quote text */}

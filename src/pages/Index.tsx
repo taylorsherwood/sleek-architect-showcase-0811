@@ -322,7 +322,7 @@ const AdvisorSection = () => (
 
 You don't need more listings, you need a smarter approach.
               </p>
-              <p className="text-foreground/70 text-[16px] leading-[1.8]">
+              <p className="text-foreground/70 text-[16px] leading-[1.8] font-medium">
                 <br />
                 Buy. Sell. Invest.
               </p>

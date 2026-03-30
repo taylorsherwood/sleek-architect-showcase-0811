@@ -749,7 +749,7 @@ const CommunitiesSection = () => (
 
                 {/* Price badge */}
                 <div className="absolute top-4 right-4 z-10" style={{
-                  background: "rgba(13,13,13,0.8)", border: "1px solid hsl(38 39% 61%)",
+                  background: "rgba(12,15,36,0.8)", border: "1px solid hsl(38 39% 61%)",
                   padding: "4px 10px",
                 }}>
                   <span style={{

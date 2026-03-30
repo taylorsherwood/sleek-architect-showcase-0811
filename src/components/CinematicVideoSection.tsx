@@ -46,8 +46,7 @@ const CinematicVideoSection = () => {
       <div className="relative w-full overflow-hidden" style={{ height: "clamp(560px, 95vh, 95vh)" }}>
         {/* Video layer */}
         <div
-          ref={videoContainerRef}
-          className="absolute inset-0 will-change-transform origin-center"
+          className="absolute inset-0"
         >
           <video
             ref={videoRef}

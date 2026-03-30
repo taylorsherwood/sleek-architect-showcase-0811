@@ -94,7 +94,7 @@ const Navigation = () => {
       <div
         className="absolute inset-0 transition-all duration-500"
         style={{
-          background: effectiveScrolled ? "rgba(8,11,26,0.95)" : "hsl(var(--background))",
+          background: (effectiveScrolled || forceDarkNav) ? "rgba(8,11,26,0.95)" : "hsl(var(--background))",
           backdropFilter: effectiveScrolled ? "blur(8px)" : "none",
           WebkitBackdropFilter: effectiveScrolled ? "blur(8px)" : "none",
         }}

@@ -188,7 +188,7 @@ const AdvisoryBar = () => {
                 <button
                   onClick={() => setModalOpen(true)}
                   className="px-5 py-2 text-sm font-medium border rounded transition-all duration-200 hover:bg-[hsl(var(--gold))] hover:text-white hover:font-bold hero-cta-btn"
-                  style={{ fontFamily: '"Cinzel", serif', borderColor: 'hsl(var(--gold))', color: 'hsl(var(--gold))' }}>
+                  style={{ fontFamily: '"Cinzel", serif', borderColor: 'hsl(var(--gold))', color: '#fff' }}>
                   GET ACCESS
                 </button>
                 <span className="text-primary-foreground/60 text-[11px] tracking-wide mt-1 hidden sm:block">

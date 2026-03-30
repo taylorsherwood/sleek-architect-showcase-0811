@@ -27,16 +27,16 @@ const Footer = () => {
           {/* 4-column grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8 mb-16 text-center sm:text-left">
             {/* Brand column */}
-            <div>
+            <div className="flex flex-col items-center sm:items-start">
               <Link to="/" className="inline-block mb-5">
                 <img
                   src="/static-assets/echelon-logo-gold-square.png"
                   alt="Echelon Property Group"
-                  className="h-12 w-auto mx-auto sm:mx-0"
+                  className="h-36 w-auto"
                   loading="lazy" decoding="async"
                 />
               </Link>
-              <p style={{ ...footerLinkStyle, lineHeight: 1.7, marginBottom: "16px" }}>
+              <p className="text-center sm:text-left" style={{ ...footerLinkStyle, lineHeight: 1.7, marginBottom: "16px" }}>
                 Strategic Austin Real Estate Advisory
               </p>
               <a

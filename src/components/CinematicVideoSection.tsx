@@ -135,9 +135,9 @@ const CinematicVideoSection = () => {
                 className="text-[15px] leading-[1.9] max-w-[26rem] mb-10"
                 style={{
                   ...reveal(visible, 380),
-                  color: "rgba(245, 245, 245, 0.55)",
+                  color: "rgba(245, 245, 245, 0.75)",
                   letterSpacing: "0.02em",
-                  textShadow: "0 1px 2px rgba(0,0,0,0.2)",
+                  textShadow: "0 1px 3px rgba(0,0,0,0.5), 0 0 12px rgba(0,0,0,0.3)",
                 }}
               >
                 Cinematic presentation is part of how we position exceptional

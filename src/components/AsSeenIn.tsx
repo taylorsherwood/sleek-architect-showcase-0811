@@ -5,10 +5,10 @@ import mediaAbj from "@/assets/media-abj.png";
 import mediaMansionGlobal from "@/assets/media-mansion-global.png";
 
 const logos = [
-  { src: mediaWsj, alt: "The Wall Street Journal", className: "h-36 md:h-44", opacity: 0.78 },
-  { src: mediaMansionGlobal, alt: "Mansion Global", className: "h-24 md:h-32", opacity: 0.72 },
-  { src: mediaTribeza, alt: "Tribeza", className: "h-20 md:h-24", opacity: 0.7 },
-  { src: mediaAbj, alt: "Austin Business Journal", className: "h-24 md:h-32", opacity: 0.72 },
+  { src: mediaWsj, alt: "The Wall Street Journal", className: "h-20 md:h-44", opacity: 0.78 },
+  { src: mediaMansionGlobal, alt: "Mansion Global", className: "h-14 md:h-32", opacity: 0.72 },
+  { src: mediaTribeza, alt: "Tribeza", className: "h-12 md:h-24", opacity: 0.7 },
+  { src: mediaAbj, alt: "Austin Business Journal", className: "h-14 md:h-32", opacity: 0.72 },
 ];
 
 const AsSeenIn = () => {
@@ -37,7 +37,7 @@ const AsSeenIn = () => {
             As Seen In
           </p>
         </ScrollReveal>
-        <div className="flex items-center justify-center gap-6 md:gap-10 flex-nowrap">
+        <div className="flex items-center justify-center gap-4 md:gap-10 flex-wrap md:flex-nowrap">
           {logos.map((logo, i) => (
             <ScrollReveal key={logo.alt} delay={50 + i * 45}>
               <img

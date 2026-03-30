@@ -51,14 +51,51 @@ const AdvisoryBar = () => {
       return;
     }
 
+    let lastScrollY = window.scrollY;
+
     const onScroll = () => {
       const hero = document.getElementById("hero") || document.querySelector("section");
       const triggerPoint = hero ? hero.offsetTop + hero.offsetHeight : window.innerHeight;
       const pastHero = window.scrollY >= triggerPoint;
+      const scrollingUp = window.scrollY < lastScrollY;
+      lastScrollY = window.scrollY;
 
-      // On homepage: show only when scrolled past hero, hide when back at hero
       if (isHomePage) {
-        setVisible(pastHero);
+        const finalCta = document.getElementById("final-cta-section");
+        const insightsSection = document.getElementById("insights-section");
+
+        if (finalCta) {
+          const finalCtaTop = finalCta.getBoundingClientRect().top;
+          // Hide when FinalCTA enters viewport
+          if (finalCtaTop <= window.innerHeight) {
+            setVisible(false);
+            lastScrollY = window.scrollY;
+            return;
+          }
+        }
+
+        if (insightsSection && scrollingUp) {
+          const insightsBottom = insightsSection.getBoundingClientRect().bottom;
+          // Re-show when scrolling up and insights section is visible
+          if (insightsBottom >= 0 && pastHero) {
+            setVisible(true);
+            lastScrollY = window.scrollY;
+            return;
+          }
+        }
+
+        // Default: show when past hero, hide when at hero
+        if (pastHero && !finalCta) {
+          setVisible(true);
+        } else if (pastHero) {
+          // Only set visible if we haven't been hidden by finalCta logic
+          const finalCtaTop = finalCta!.getBoundingClientRect().top;
+          if (finalCtaTop > window.innerHeight) {
+            setVisible(pastHero);
+          }
+        } else {
+          setVisible(false);
+        }
       } else {
         // On other pages, show once past equivalent scroll depth
         if (pastHero) setVisible(true);

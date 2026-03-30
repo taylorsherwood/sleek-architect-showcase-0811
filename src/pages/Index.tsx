@@ -640,14 +640,11 @@ const TestimonialsSection = () => {
     <section className="bg-secondary" style={{ padding: "clamp(80px, 12vw, 160px) 0" }}>
       <div className="container mx-auto px-6">
         <div className="max-w-[800px] mx-auto text-center relative">
-          {/* Decorative open-quote — hollow outline */}
-          <span className="absolute -top-6 left-1/2 -translate-x-1/2 select-none pointer-events-none" aria-hidden="true" style={{
-            fontFamily: '"Cinzel", serif', fontSize: "120px", lineHeight: 0,
-            color: "transparent",
-            WebkitTextStroke: "1.5px hsl(38 39% 61% / 0.35)",
-          }}>
-            &ldquo;
-          </span>
+          {/* Decorative gold em dash */}
+          <div className="mx-auto mb-8" aria-hidden="true" style={{
+            width: "48px", height: "1.5px",
+            background: "linear-gradient(90deg, transparent, hsl(38 39% 61%), transparent)",
+          }} />
 
           <ScrollReveal>
             <p className="text-minimal text-gold mb-8">CLIENT EXPERIENCES</p>

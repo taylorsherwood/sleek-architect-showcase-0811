@@ -429,9 +429,7 @@ const StatsStrip = () => (
           {stats.map((stat, i) => {
             const { count, ref } = useCountUp(stat.value, 2600, (stat as any).from || 0);
             return (
-              <div key={i} ref={ref} className="text-center">
-                {/* Gold accent line */}
-                <div className="mx-auto mb-5" style={{ width: "60px", height: "1px", background: "hsl(38 39% 61%)" }} />
+              <div key={i} ref={ref} className="text-center group/stat">
                 <p style={{
                   fontFamily: '"Cinzel", serif', fontWeight: 400,
                   fontSize: "clamp(48px, 6vw, 80px)", lineHeight: 1, color: "#FAFAF8",
@@ -444,13 +442,22 @@ const StatsStrip = () => (
                     {stat.suffix}
                   </span>
                 </p>
-                <p style={{
-                  fontFamily: '"Jost", sans-serif', fontWeight: 300,
-                  fontSize: "10px", letterSpacing: "0.2em", textTransform: "uppercase",
-                  color: "#9A9690", marginTop: "8px",
-                }}>
-                  {stat.label}
-                </p>
+                <div className="relative inline-block mt-2">
+                  <p style={{
+                    fontFamily: '"Jost", sans-serif', fontWeight: 300,
+                    fontSize: "10px", letterSpacing: "0.2em", textTransform: "uppercase",
+                    color: "#9A9690",
+                  }}>
+                    {stat.label}
+                  </p>
+                  <div
+                    className="absolute bottom-0 left-0 h-px transition-all duration-[1200ms] ease-out"
+                    style={{
+                      background: "hsl(38 39% 61%)",
+                      width: count > 0 ? "100%" : "0%",
+                    }}
+                  />
+                </div>
               </div>
             );
           })}

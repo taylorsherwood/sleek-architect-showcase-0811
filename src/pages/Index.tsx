@@ -661,7 +661,7 @@ const TestimonialsSection = () => {
 
           {/* Attribution */}
           <p key={`name-${active}`} style={{
-            fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em",
+            fontFamily: '"Jost", sans-serif', fontSize: "13px", letterSpacing: "0.18em",
             textTransform: "uppercase", color: "hsl(38 39% 61%)", marginTop: "24px",
             animation: "fadeUp 0.6s ease 0.15s both",
           }}>

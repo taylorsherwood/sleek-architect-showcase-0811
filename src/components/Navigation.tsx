@@ -156,7 +156,7 @@ const Navigation = () => {
                           onMouseEnter={(e) => { e.currentTarget.style.color = effectiveScrolled ? "#fff" : "hsl(var(--foreground))"; }}
                           onMouseLeave={(e) => {
                             if (location.pathname !== child.href) {
-                              e.currentTarget.style.color = effectiveScrolled ? "rgba(255,255,255,0.5)" : "hsl(var(--muted-foreground))";
+                              e.currentTarget.style.color = effectiveScrolled ? "rgba(255,255,255,0.7)" : "hsl(var(--foreground) / 0.7)";
                             }
                           }}
                         >

@@ -229,18 +229,21 @@ const Hero = () => {
           </div>
 
           <p
-            className="text-warm-cream/60 max-w-lg mb-10 leading-relaxed font-medium transition-all duration-1000 will-change-[opacity,transform]"
+            className="max-w-[520px] transition-all duration-1000 will-change-[opacity,transform]"
             style={{
               opacity: heroVisible ? 1 : 0,
               transform: heroVisible ? "translateY(0)" : "translateY(10px)",
               transitionTimingFunction: "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
               transitionDelay: "0.35s",
-              fontFamily: '"Raleway", sans-serif',
-              fontSize: "1rem",
-              letterSpacing: "0.01em",
+              fontFamily: "'Jost', sans-serif",
+              fontWeight: 400,
+              fontSize: "17px",
+              color: "rgba(245, 243, 239, 0.82)",
+              letterSpacing: "0.03em",
+              lineHeight: 1.75,
+              marginBottom: "40px",
               textShadow: "0 2px 9px rgba(0,0,0,0.55)"
             }}>
-            
             Data-driven strategy and discreet representation across Austin's
             most sought-after neighborhoods.
           </p>

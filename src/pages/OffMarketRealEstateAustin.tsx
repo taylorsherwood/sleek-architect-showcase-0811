@@ -185,6 +185,7 @@ const OffMarketRealEstateAustin = () => {
         ])}
       />
       <SchemaMarkup schema={createFAQSchema(faqs)} />
+      <SchemaMarkup schema={realEstateAgentSchema} />
 
       {/* ── Minimal header ──────────────────────────── */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-[hsl(220,15%,8%)]/60 backdrop-blur-[6px] border-b border-white/[0.03]">

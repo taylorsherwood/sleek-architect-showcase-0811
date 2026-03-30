@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 const Footer = lazy(() => import("@/components/Footer"));
 import SEOHead from "@/components/SEOHead";
-import SchemaMarkup, { createBreadcrumbSchema } from "@/components/SchemaMarkup";
+import SchemaMarkup, { createBreadcrumbSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
 import { MapPin, Building2, TrendingUp } from "lucide-react";
 
 const opportunities = [

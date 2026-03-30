@@ -251,26 +251,27 @@ const Hero = () => {
             most sought-after neighborhoods.
           </p>
 
-          <div className="hero-ctas flex flex-col sm:flex-row gap-4 transition-all duration-1000 will-change-[opacity,transform]"
+          <div className="hero-ctas flex flex-row gap-4 items-center transition-all duration-1000 will-change-[opacity,transform]"
             style={{
               opacity: heroVisible ? 1 : 0,
               transform: heroVisible ? "translateY(0)" : "translateY(10px)",
               transitionTimingFunction: "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
               transitionDelay: "0.45s",
+              marginTop: "36px",
             }}>
             <Link
               to="/invest"
-              className="inline-block text-center whitespace-nowrap transition-all duration-300"
+              className="inline-flex items-center justify-center whitespace-nowrap transition-all duration-300"
               style={{
                 fontFamily: "'Jost', sans-serif",
                 fontSize: "11px",
                 letterSpacing: "0.18em",
                 textTransform: "uppercase",
                 fontWeight: 400,
-                padding: "14px 32px",
-                minWidth: "220px",
-                maxWidth: "280px",
-                width: "auto",
+                padding: "13px 28px",
+                minWidth: "200px",
+                maxWidth: "260px",
+                width: "fit-content",
                 border: "1px solid hsl(var(--gold))",
                 color: "hsl(var(--gold))",
                 background: "transparent",
@@ -287,28 +288,28 @@ const Hero = () => {
             </Link>
             <Link
               to="/off-market-real-estate-austin"
-              className="inline-block text-center whitespace-nowrap transition-all duration-300"
+              className="inline-flex items-center justify-center whitespace-nowrap transition-all duration-300"
               style={{
                 fontFamily: "'Jost', sans-serif",
                 fontSize: "11px",
                 letterSpacing: "0.18em",
                 textTransform: "uppercase",
                 fontWeight: 400,
-                padding: "14px 32px",
-                minWidth: "220px",
-                maxWidth: "280px",
-                width: "auto",
-                border: "1px solid rgba(245, 243, 239, 0.4)",
-                color: "rgba(245, 243, 239, 0.85)",
+                padding: "13px 28px",
+                minWidth: "200px",
+                maxWidth: "260px",
+                width: "fit-content",
+                border: "1px solid rgba(245, 243, 239, 0.35)",
+                color: "rgba(245, 243, 239, 0.82)",
                 background: "transparent",
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = "rgba(245, 243, 239, 0.8)";
+                e.currentTarget.style.borderColor = "rgba(245, 243, 239, 0.75)";
                 e.currentTarget.style.color = "#fff";
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.borderColor = "rgba(245, 243, 239, 0.4)";
-                e.currentTarget.style.color = "rgba(245, 243, 239, 0.85)";
+                e.currentTarget.style.borderColor = "rgba(245, 243, 239, 0.35)";
+                e.currentTarget.style.color = "rgba(245, 243, 239, 0.82)";
               }}>
               PRIVATE ACCESS
             </Link>

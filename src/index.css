@@ -111,7 +111,16 @@ iframe {
   body {
     @apply bg-background text-foreground antialiased;
     font-family: 'Jost', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  p, li, .body-text {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.85;
+    letter-spacing: 0.02em;
   }
 
   /* Display / serif headings */

@@ -148,19 +148,20 @@ const Hero = () => {
         style={{
           zIndex: 1,
           background: `
-            linear-gradient(to bottom, rgba(8,11,26,0.30) 0%, rgba(8,11,26,0.15) 40%, rgba(8,11,26,0.60) 100%)
+            linear-gradient(to bottom, rgba(20,12,5,0.28) 0%, rgba(8,11,26,0.12) 45%, rgba(8,11,26,0.68) 100%)
           `
         }} />
       
 
       {/* Content */}
       <div
-        className="relative container mx-auto px-6 pt-24 md:pt-32 lg:pt-36"
-        style={{ zIndex: 2 }}>
+        className="relative container mx-auto pt-24 md:pt-32 lg:pt-36"
+        style={{ zIndex: 2, paddingLeft: "clamp(32px, 6vw, 96px)", paddingRight: "24px" }}>
         
         <div
-          className="max-w-[640px] relative"
+          className="relative"
           style={{
+            maxWidth: "620px",
             filter: "drop-shadow(0 0 80px rgba(0,0,0,0.5)) drop-shadow(0 0 120px rgba(0,0,0,0.3))"
           }}>
           
@@ -177,7 +178,7 @@ const Hero = () => {
               textShadow: "0 0 20px rgba(12,15,36,0.7), 0 0 40px rgba(12,15,36,0.5), 0 1px 6px rgba(0,0,0,0.4)"
             }}>
             
-            STRATEGIC AUSTIN REAL ESTATE ADVISORY
+            AUSTIN REAL ESTATE ADVISORY
           </p>
 
           <h1
@@ -186,10 +187,11 @@ const Hero = () => {
               opacity: heroVisible ? 1 : 0,
               transform: heroVisible ? "translateY(0)" : "translateY(10px)",
               transition: "opacity 1.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s, transform 1.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s",
-              fontSize: "clamp(48px, 6vw, 82px)",
+              fontSize: "clamp(38px, 4.5vw, 68px)",
               lineHeight: 1.08,
               letterSpacing: "0.02em",
               fontWeight: 500,
+              maxWidth: "620px",
               marginBottom: "20px",
               textShadow: "0 2px 9px rgba(0,0,0,0.55), 0 1px 2px rgba(0,0,0,0.2)"
             }}>
@@ -229,7 +231,7 @@ const Hero = () => {
           </div>
 
           <p
-            className="max-w-[520px] transition-all duration-1000 will-change-[opacity,transform]"
+            className="max-w-[500px] transition-all duration-1000 will-change-[opacity,transform]"
             style={{
               opacity: heroVisible ? 1 : 0,
               transform: heroVisible ? "translateY(0)" : "translateY(10px)",
@@ -237,37 +239,39 @@ const Hero = () => {
               transitionDelay: "0.35s",
               fontFamily: "'Jost', sans-serif",
               fontWeight: 400,
-              fontSize: "17px",
-              color: "rgba(245, 243, 239, 0.82)",
+              fontSize: "16px",
+              color: "rgba(245, 243, 239, 0.78)",
               letterSpacing: "0.03em",
               lineHeight: 1.75,
-              marginBottom: "40px",
+              marginTop: "20px",
+              marginBottom: "0",
               textShadow: "0 2px 9px rgba(0,0,0,0.55)"
             }}>
             Data-driven strategy and discreet representation across Austin's
             most sought-after neighborhoods.
           </p>
 
-          <div className="hero-ctas flex flex-col sm:flex-row gap-4 transition-all duration-1000 will-change-[opacity,transform]"
+          <div className="hero-ctas flex flex-row gap-4 items-center transition-all duration-1000 will-change-[opacity,transform]"
             style={{
               opacity: heroVisible ? 1 : 0,
               transform: heroVisible ? "translateY(0)" : "translateY(10px)",
               transitionTimingFunction: "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
               transitionDelay: "0.45s",
+              marginTop: "36px",
             }}>
             <Link
               to="/invest"
-              className="inline-block text-center whitespace-nowrap transition-all duration-300"
+              className="inline-flex items-center justify-center whitespace-nowrap transition-all duration-300"
               style={{
                 fontFamily: "'Jost', sans-serif",
                 fontSize: "11px",
                 letterSpacing: "0.18em",
                 textTransform: "uppercase",
                 fontWeight: 400,
-                padding: "14px 32px",
-                minWidth: "220px",
-                maxWidth: "280px",
-                width: "auto",
+                padding: "13px 28px",
+                minWidth: "200px",
+                maxWidth: "260px",
+                width: "fit-content",
                 border: "1px solid hsl(var(--gold))",
                 color: "hsl(var(--gold))",
                 background: "transparent",
@@ -284,28 +288,28 @@ const Hero = () => {
             </Link>
             <Link
               to="/off-market-real-estate-austin"
-              className="inline-block text-center whitespace-nowrap transition-all duration-300"
+              className="inline-flex items-center justify-center whitespace-nowrap transition-all duration-300"
               style={{
                 fontFamily: "'Jost', sans-serif",
                 fontSize: "11px",
                 letterSpacing: "0.18em",
                 textTransform: "uppercase",
                 fontWeight: 400,
-                padding: "14px 32px",
-                minWidth: "220px",
-                maxWidth: "280px",
-                width: "auto",
-                border: "1px solid rgba(245, 243, 239, 0.4)",
-                color: "rgba(245, 243, 239, 0.85)",
+                padding: "13px 28px",
+                minWidth: "200px",
+                maxWidth: "260px",
+                width: "fit-content",
+                border: "1px solid rgba(245, 243, 239, 0.35)",
+                color: "rgba(245, 243, 239, 0.82)",
                 background: "transparent",
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = "rgba(245, 243, 239, 0.8)";
+                e.currentTarget.style.borderColor = "rgba(245, 243, 239, 0.75)";
                 e.currentTarget.style.color = "#fff";
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.borderColor = "rgba(245, 243, 239, 0.4)";
-                e.currentTarget.style.color = "rgba(245, 243, 239, 0.85)";
+                e.currentTarget.style.borderColor = "rgba(245, 243, 239, 0.35)";
+                e.currentTarget.style.color = "rgba(245, 243, 239, 0.82)";
               }}>
               PRIVATE ACCESS
             </Link>

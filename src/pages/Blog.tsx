@@ -137,7 +137,7 @@ const Blog = () => {
       <section className="py-28 bg-secondary">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-8">
+            <h2 className="text-4xl md:text-5xl font-display font-normal text-architectural mb-8">
               Austin Luxury Real Estate Insights
             </h2>
             <div className="space-y-6 text-muted-foreground leading-relaxed">
@@ -148,7 +148,7 @@ const Blog = () => {
                 Austin has emerged as one of the most dynamic luxury real estate markets in the United States. Fueled by a thriving technology economy anchored by Apple, Tesla, Google, Meta, and Oracle, the city attracts high-net-worth individuals and families from across the country. Texas's absence of state income tax amplifies purchasing power, and Austin's unique blend of natural beauty, cultural richness, and economic opportunity creates a market unlike any other.
               </p>
 
-              <h3 className="text-2xl font-display font-light text-architectural pt-4">
+              <h3 className="text-2xl font-display font-normal text-architectural pt-4">
                 What We Cover
               </h3>
               <p>
@@ -158,7 +158,7 @@ const Blog = () => {
                 Investment-focused content examines commercial real estate opportunities, land acquisition strategies, 1031 exchange considerations, and portfolio diversification through Austin property. Our relocation guides help out-of-state buyers navigate Austin's neighborhoods, school districts, and lifestyle offerings with confidence.
               </p>
 
-              <h3 className="text-2xl font-display font-light text-architectural pt-4">
+              <h3 className="text-2xl font-display font-normal text-architectural pt-4">
                 Why Trust Echelon Property Group
               </h3>
               <p>
@@ -168,7 +168,7 @@ const Blog = () => {
                 As an Austin luxury realtor and real estate agent specializing in the city's most prestigious addresses, Taylor works daily with buyers, sellers, and investors navigating complex transactions. That hands-on experience informs every piece of content we publish — ensuring our readers receive practical, actionable guidance rather than generic market summaries.
               </p>
 
-              <h3 className="text-2xl font-display font-light text-architectural pt-4">
+              <h3 className="text-2xl font-display font-normal text-architectural pt-4">
                 Neighborhoods We Serve
               </h3>
               <p>

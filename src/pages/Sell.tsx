@@ -163,7 +163,7 @@ function AnimatedStat({ target, suffix = "", prefix = "", label, countDown = fal
   const { value, ref } = useCountUp(target, 1800, from, countDown);
   return (
     <div ref={ref}>
-      <p className="text-3xl md:text-4xl font-display font-light text-primary-foreground mb-1">
+      <p className="text-3xl md:text-4xl font-display font-normal text-primary-foreground mb-1">
         {prefix}{value}{suffix}
       </p>
       <p className="text-minimal text-primary-foreground/50">{label}</p>
@@ -288,7 +288,7 @@ const Sell = () => {
         <div className="relative container mx-auto px-6 pb-16">
           <div className="max-w-xl mb-14">
             <p className="text-minimal text-primary-foreground/60 mb-4 reveal">SELLER SERVICES</p>
-            <h1 className="text-4xl md:text-6xl font-display font-light text-primary-foreground leading-[1.1] mb-6 reveal">
+            <h1 className="text-4xl md:text-6xl font-display font-normal text-primary-foreground leading-[1.1] mb-6 reveal">
               Sell Your Home
               <br />
               in Austin, TX
@@ -320,7 +320,7 @@ const Sell = () => {
           <div className="max-w-7xl mx-auto">
             <div className="mb-16 max-w-2xl">
               <p className="text-minimal text-gold mb-4 font-extrabold">YOUR ADVANTAGE</p>
-              <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-6">
+              <h2 className="text-4xl md:text-5xl font-display font-normal text-architectural mb-6">
                 Why List With Echelon
               </h2>
               <p className="text-muted-foreground leading-relaxed">
@@ -384,7 +384,7 @@ const Sell = () => {
               </ScrollReveal>
 
               <ScrollReveal delay={80}>
-                <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-light text-architectural mb-8 leading-[1.08]">
+                <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-normal text-architectural mb-8 leading-[1.08]">
                   Your Property Deserves More<br className="hidden md:block" /> Than Just a Sign
                 </h2>
               </ScrollReveal>
@@ -450,7 +450,7 @@ const Sell = () => {
           <div className="max-w-7xl mx-auto">
             <div className="mb-16">
               <p className="text-minimal text-gold mb-4 font-extrabold">THE PROCESS</p>
-              <h2 className="text-4xl md:text-5xl font-display font-light text-architectural">
+              <h2 className="text-4xl md:text-5xl font-display font-normal text-architectural">
                 The Selling Process, Step by Step
               </h2>
             </div>
@@ -490,7 +490,7 @@ const Sell = () => {
           <div className="max-w-4xl mx-auto">
             <div className="mb-12">
               <p className="text-minimal text-gold mb-4 font-extrabold whitespace-pre-line">{"\n\n\n\n"}OUR EXPERTISE</p>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Full-Spectrum Austin Real Estate Advisory
               </h2>
             </div>
@@ -521,7 +521,7 @@ const Sell = () => {
       <section className="py-28 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-8">
+            <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-8">
               Frequently Asked Questions About Selling in Austin
             </h2>
             <div className="space-y-6">
@@ -545,7 +545,7 @@ const Sell = () => {
       <section className="py-16 bg-secondary">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-display font-light text-architectural mb-6">
+            <h2 className="text-2xl font-display font-normal text-architectural mb-6">
               Explore More Austin Real Estate
             </h2>
             <div className="grid sm:grid-cols-2 gap-4">
@@ -570,7 +570,7 @@ const Sell = () => {
           <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-start">
             <div>
               <p className="text-minimal text-primary-foreground/50 mb-4">READY TO SELL?</p>
-              <h2 className="text-4xl md:text-5xl font-display font-light text-primary-foreground leading-[1.15] mb-6">
+              <h2 className="text-4xl md:text-5xl font-display font-normal text-primary-foreground leading-[1.15] mb-6">
                 Schedule a Listing Consultation
               </h2>
               <p className="text-primary-foreground/60 leading-relaxed mb-10 max-w-lg">Considering selling your Austin property? Schedule a complimentary consultation to discuss pricing strategy, marketing, timeline, and how we can position your property for maximum exposure and value.

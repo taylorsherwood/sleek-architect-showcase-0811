@@ -282,7 +282,7 @@ const OffMarketRealEstateAustin = () => {
             className="mx-auto mb-8"
             style={{ width: "48px", height: "1px", background: "hsl(var(--gold) / 0.4)" }}
           />
-          <blockquote className="font-display text-xl md:text-2xl lg:text-3xl font-light text-white/90 leading-relaxed italic mb-8">
+          <blockquote className="font-display text-xl md:text-2xl lg:text-3xl font-normal text-white/90 leading-relaxed mb-8">
             "Many of Austin's most desirable homes never hit the public market. They move through private channels, trusted relationships, and curated networks."
           </blockquote>
           <p className="text-white/40 text-sm tracking-[0.15em] uppercase">

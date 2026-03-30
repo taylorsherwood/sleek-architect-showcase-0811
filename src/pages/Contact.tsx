@@ -116,7 +116,7 @@ const Contact = () => {
             <div className="grid md:grid-cols-2 gap-20">
               <div>
                 <p className="text-minimal text-gold mb-4">CONTACT US</p>
-                <h1 className="text-5xl md:text-6xl font-display font-light text-architectural mb-8">
+                <h1 className="text-5xl md:text-6xl font-display font-normal text-architectural mb-8">
                   Let's Start a
                   <br />
                   Conversation
@@ -227,7 +227,7 @@ Austin, Texas 78702
       <section className="py-28 bg-secondary">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-8">
+            <h2 className="text-4xl md:text-5xl font-display font-normal text-architectural mb-8">
               Work With Austin's Trusted Real Estate Advisor
             </h2>
             <div className="space-y-6 text-muted-foreground leading-relaxed">
@@ -235,7 +235,7 @@ Austin, Texas 78702
                 Whether you're buying your first luxury home in Austin, selling a family estate, exploring commercial investment opportunities, or relocating from out of state, Echelon Property Group provides the expert guidance and personalized service that complex real estate decisions demand. Founded by Taylor Sherwood, a Certified Luxury Home Marketing Specialist, our firm specializes in luxury residential, commercial, land, and investment real estate across Austin and the Texas Hill Country.
               </p>
 
-              <h3 className="text-2xl font-display font-light text-architectural pt-4">
+              <h3 className="text-2xl font-display font-normal text-architectural pt-4">
                 Our Services
               </h3>
               <p>
@@ -245,7 +245,7 @@ Austin, Texas 78702
                 For sellers, we deliver premium marketing campaigns featuring professional photography, cinematic video, drone footage, custom property websites, and targeted digital advertising. Our strategic pricing methodology and negotiation expertise consistently achieve above-market results for luxury listings across Barton Creek, Westlake Hills, Lake Austin, and beyond.
               </p>
 
-              <h3 className="text-2xl font-display font-light text-architectural pt-4">
+              <h3 className="text-2xl font-display font-normal text-architectural pt-4">
                 Why Clients Choose Echelon Property Group
               </h3>
               <p>
@@ -255,7 +255,7 @@ Austin, Texas 78702
                 As a member of the eXp Luxury Division, we also connect clients to a global network of agents and affluent buyers, expanding the reach of every listing and every search beyond Austin's borders. Whether your next real estate move involves a $1.5 million Tarrytown bungalow or a $15 million Lake Austin estate, we bring the same level of strategic thinking and personal commitment.
               </p>
 
-              <h3 className="text-2xl font-display font-light text-architectural pt-4">
+              <h3 className="text-2xl font-display font-normal text-architectural pt-4">
                 Frequently Asked Questions
               </h3>
               <div className="space-y-4">
@@ -285,7 +285,7 @@ Austin, Texas 78702
       <section className="py-16 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-display font-light text-architectural mb-6">
+            <h2 className="text-2xl font-display font-normal text-architectural mb-6">
               Explore Austin Real Estate
             </h2>
             <div className="grid sm:grid-cols-2 gap-4">

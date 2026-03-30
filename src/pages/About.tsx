@@ -36,7 +36,7 @@ const About = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
             <p className="text-minimal text-gold mb-4 font-extrabold">ABOUT US</p>
-            <h1 className="text-5xl md:text-7xl font-display font-light text-architectural mb-8">
+            <h1 className="text-5xl md:text-7xl font-display font-normal text-architectural mb-8">
               Built on Trust,
               <br />
               Driven by <span className="italic">Excellence</span>
@@ -65,7 +65,7 @@ const About = () => {
               <img src={clhmsBadge} alt="Certified Luxury Home Marketing Specialist guild member badge" title="Certified Luxury Home Marketing Specialist designation" className="absolute bottom-3 right-3 w-20 h-20 opacity-85" loading="lazy" decoding="async" />
             </div>
             <div>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-2">Meet Taylor Sherwood</h2>
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-2">Meet Taylor Sherwood</h2>
               <p className="text-xs tracking-[0.1em] uppercase text-muted-foreground/60 mb-4">CLHMS</p>
               <p className="text-lg text-muted-foreground leading-relaxed whitespace-pre-line">{"Taylor Sherwood is a top-performing Austin real estate advisor specializing in commercial, luxury, and land development opportunities. With a background in economics and a reputation for precision deal-making, Taylor helps investors, developers, and high-net-worth clients identify, structure, and execute winning real estate strategies across Central Texas.\n\nKnown for his sharp market insight and hands-on approach, Taylor advises on everything from off-market commercial acquisitions and land assemblages to luxury residential and development projects. His experience spans investment underwriting, land development strategy, value-add positioning, and high-end residential sales — giving clients a full-spectrum advantage.\n\nTaylor's clients value his ability to cut through noise, uncover hidden opportunities, and negotiate aggressively on their behalf. Whether it's sourcing development sites, positioning a luxury asset for maximum exposure, or structuring complex commercial transactions, Taylor brings clarity, confidence, and results.\n\nWhen he's not closing deals, Taylor stays deeply engaged in Austin's growth and development landscape — because in this city, tomorrow's best opportunities are being built today."}</p>
 
@@ -96,7 +96,7 @@ const About = () => {
       <section className="py-16 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-8">
+            <h2 className="text-4xl md:text-5xl font-display font-normal text-architectural mb-8">
               Full-Spectrum Real Estate Advisory
             </h2>
             <div className="space-y-6 text-muted-foreground leading-relaxed">
@@ -123,7 +123,7 @@ const About = () => {
           <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
             <div>
               <p className="text-minimal text-gold mb-4 font-extrabold">OUR PHILOSOPHY</p>
-              <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-8">
+              <h2 className="text-4xl md:text-5xl font-display font-normal text-architectural mb-8">
                 Every Property Tells a Story
               </h2>
               <div className="space-y-6 text-muted-foreground leading-relaxed">
@@ -189,7 +189,7 @@ const About = () => {
       {/* CTA */}
       <section className="py-24 bg-secondary text-center">
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-6">
+          <h2 className="text-4xl md:text-5xl font-display font-normal text-architectural mb-6">
             Ready to Work Together?
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto mb-10">
@@ -206,7 +206,7 @@ const About = () => {
       <section className="py-16 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-display font-light text-architectural mb-6">
+            <h2 className="text-2xl font-display font-normal text-architectural mb-6">
               Explore Austin Real Estate
             </h2>
             <div className="grid sm:grid-cols-2 gap-4">

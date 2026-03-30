@@ -19,7 +19,7 @@ const LuxurySearchLinks = () => {
           >
             EXPLORE AUSTIN
           </p>
-          <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-10">
+          <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-10">
             Luxury Property Searches
           </h2>
           <div className="flex flex-wrap justify-center gap-4">

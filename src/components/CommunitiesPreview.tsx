@@ -34,7 +34,7 @@ const CommunitiesPreview = () => {
               <p className="text-minimal text-gold mb-4 font-extrabold">
                 SELECT COMMUNITIES
               </p>
-              <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-5">
+              <h2 className="text-4xl md:text-5xl font-display font-normal text-architectural mb-5">
                 Austin's Most Sought-After Addresses
               </h2>
               <p className="text-muted-foreground max-w-xl mx-auto text-sm">

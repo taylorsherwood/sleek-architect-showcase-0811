@@ -58,7 +58,7 @@ const RealScoutListings = ({
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
           <p className="text-minimal text-gold mb-4 font-extrabold whitespace-pre-line">{heading}</p>
-          <h2 className="font-display font-light text-architectural mb-8 text-5xl">
+          <h2 className="font-display font-normal text-architectural mb-8 text-5xl">
             ON THE MARKET
           </h2>
           {visible ? (

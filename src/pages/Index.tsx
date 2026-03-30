@@ -137,12 +137,12 @@ const Hero = () => {
           </div>
 
           <h1 className="font-display text-warm-cream mb-8" style={{
-            ...anim("0.15s"), fontWeight: 300, lineHeight: 1.05, letterSpacing: "0.01em",
+            ...anim("0.15s"), fontWeight: 400, lineHeight: 1.1, letterSpacing: "0.04em",
             fontSize: "clamp(48px, 7vw, 96px)",
             textShadow: "0 2px 12px rgba(0,0,0,0.5)"
           }}>
             <span className="block">Access Austin's</span>
-            <span className="block italic">Most Exclusive Homes</span>
+            <span className="block">Most Exclusive Homes</span>
           </h1>
 
           <p className="max-w-[480px] mb-12 leading-[1.7]" style={{
@@ -234,8 +234,8 @@ const SearchSection = () => {
           <p className="text-minimal text-gold mb-3">
             EXPLORE THE MARKET
           </p>
-          <h2 className="font-display text-2xl md:text-[2rem] font-normal text-foreground leading-[1.1] tracking-[-0.01em] mb-3">
-            Find Your Next <span className="italic text-gold">Chapter</span>
+          <h2 className="font-display text-2xl md:text-[2rem] font-normal text-foreground leading-[1.1] tracking-[0.03em] mb-3">
+            Find Your Next <span className="text-gold">Chapter</span>
           </h2>
           <p className="text-muted-foreground/55 text-[13.5px] font-light leading-relaxed mb-8 max-w-md mx-auto">
             
@@ -301,10 +301,10 @@ const AdvisorSection = () => (
           </ScrollReveal>
 
           <ScrollReveal delay={80}>
-            <h2 className="font-display text-[1.85rem] md:text-[2.6rem] font-normal text-foreground leading-[1.06] tracking-[-0.015em] mb-6">
+            <h2 className="font-display text-[1.85rem] md:text-[2.6rem] font-normal text-foreground leading-[1.06] tracking-[0.03em] mb-6">
               Luxury Real Estate,
               <br />
-              <span className="italic">Without the Noise</span>
+              Without the Noise
             </h2>
           </ScrollReveal>
 
@@ -443,12 +443,12 @@ const StatsStrip = () => (
                 {/* Gold accent line */}
                 <div className="w-10 h-px mx-auto mb-5" style={{ background: "hsl(38 39% 61%)" }} />
                 <p style={{
-                  fontFamily: '"Cormorant Garamond", serif', fontWeight: 300,
+                  fontFamily: '"Cinzel", serif', fontWeight: 400,
                   fontSize: "clamp(48px, 6vw, 80px)", lineHeight: 1, color: "#FAFAF8",
                 }}>
                   {stat.prefix}{count}
                   <span style={{
-                    fontFamily: '"Cormorant Garamond", serif', fontWeight: 300,
+                    fontFamily: '"Cinzel", serif', fontWeight: 400,
                     fontSize: "0.6em", color: "hsl(38 39% 61%)", verticalAlign: "super",
                   }}>
                     {stat.suffix}
@@ -503,8 +503,8 @@ const FeaturedProperties = () => (
           <div className="text-center mb-16">
             <div className="w-10 h-px mx-auto mb-5" style={{ background: "hsl(38 39% 61%)" }} />
             <p className="text-minimal text-gold mb-5">FEATURED LISTINGS</p>
-            <h2 className="font-display text-3xl md:text-[2.75rem] font-normal text-foreground/90 mb-4 leading-[1.1] tracking-[-0.01em]">
-              Exceptional <span className="italic">Properties</span>
+            <h2 className="font-display text-3xl md:text-[2.75rem] font-normal text-foreground/90 mb-4 leading-[1.1] tracking-[0.03em]">
+              Exceptional Properties
             </h2>
             {/* Gold rule */}
             <div className="w-[60px] h-px mx-auto" style={{ background: "hsl(38 39% 61%)" }} />
@@ -544,7 +544,7 @@ const FeaturedProperties = () => (
                     <div className="absolute bottom-0 left-0 right-0 px-6 pb-6 pt-8"
                       style={{ background: "linear-gradient(to top, rgba(13,13,13,0.92) 0%, transparent 100%)" }}>
                       <p style={{
-                        fontFamily: '"Cormorant Garamond", serif', fontWeight: 400,
+                        fontFamily: '"Cinzel", serif', fontWeight: 400,
                         fontSize: "22px", color: "#FAFAF8", marginBottom: "4px",
                       }}>
                         {p.price}
@@ -577,7 +577,7 @@ const FeaturedProperties = () => (
                 <div className="absolute bottom-0 left-0 right-0 px-6 pb-6 pt-8 text-center"
                   style={{ background: "linear-gradient(to top, rgba(13,13,13,0.92) 0%, transparent 100%)" }}>
                   <p style={{
-                    fontFamily: '"Cormorant Garamond", serif', fontWeight: 400,
+                    fontFamily: '"Cinzel", serif', fontWeight: 400,
                     fontSize: "20px", color: "#FAFAF8", marginBottom: "4px",
                   }}>
                     Off-Market Opportunities
@@ -656,7 +656,7 @@ const TestimonialsSection = () => {
         <div className="max-w-[800px] mx-auto text-center relative">
           {/* Decorative open-quote */}
           <span className="absolute -top-6 left-1/2 -translate-x-1/2 select-none pointer-events-none" aria-hidden="true" style={{
-            fontFamily: '"Cormorant Garamond", serif', fontSize: "120px", lineHeight: 0,
+            fontFamily: '"Cinzel", serif', fontSize: "120px", lineHeight: 0,
             color: "hsl(38 39% 61%)", opacity: 0.15,
           }}>
             "
@@ -667,8 +667,8 @@ const TestimonialsSection = () => {
           </ScrollReveal>
 
           {/* Quote */}
-          <p key={active} className="italic mb-6" style={{
-            fontFamily: '"Cormorant Garamond", serif', fontWeight: 300,
+          <p key={active} className="mb-6" style={{
+            fontFamily: '"Cinzel", serif', fontWeight: 400,
             fontSize: "clamp(22px, 3vw, 36px)", lineHeight: 1.5, color: "hsl(var(--foreground))",
             animation: "fadeUp 0.6s ease both",
           }}>
@@ -733,8 +733,8 @@ const CommunitiesSection = () => (
           <div className="text-center mb-16">
             <div className="w-10 h-px mx-auto mb-5" style={{ background: "hsl(38 39% 61%)" }} />
             <p className="text-minimal text-gold mb-5">SELECT COMMUNITIES</p>
-            <h2 className="font-display text-3xl md:text-[2.75rem] font-normal text-foreground/90 leading-[1.1] tracking-[-0.01em]">
-              Explore Austin's Most <span className="italic">Sought-After</span> Communities
+            <h2 className="font-display text-3xl md:text-[2.75rem] font-normal text-foreground/90 leading-[1.1] tracking-[0.03em]">
+              Explore Austin's Most Sought-After Communities
             </h2>
           </div>
         </ScrollReveal>
@@ -832,8 +832,8 @@ const InsightsSection = () => (
           <div className="text-center mb-16">
             <div className="w-10 h-px mx-auto mb-5" style={{ background: "hsl(38 39% 61%)" }} />
             <p className="text-minimal text-gold mb-5">MARKET INTELLIGENCE</p>
-            <h2 className="font-display text-3xl md:text-[2.75rem] font-normal text-foreground/90 leading-[1.1] tracking-[-0.01em]">
-              Insights & <span className="italic">Market Intelligence</span>
+            <h2 className="font-display text-3xl md:text-[2.75rem] font-normal text-foreground/90 leading-[1.1] tracking-[0.03em]">
+              Insights & Market Intelligence
             </h2>
           </div>
         </ScrollReveal>
@@ -912,8 +912,8 @@ const LeadCapture = () => {
             <p className="text-minimal text-gold mb-3">EXCLUSIVE ACCESS</p>
           </ScrollReveal>
           <ScrollReveal delay={80}>
-            <h2 className="font-display text-2xl md:text-[1.85rem] font-normal mb-3 leading-[1.15] tracking-[-0.01em] text-foreground">
-              Private Opportunities, <span className="italic">Before They're Public</span>
+            <h2 className="font-display text-2xl md:text-[1.85rem] font-normal mb-3 leading-[1.15] tracking-[0.03em] text-foreground">
+              Private Opportunities, Before They're Public
             </h2>
           </ScrollReveal>
           <ScrollReveal delay={150}>
@@ -967,8 +967,8 @@ const FinalCTA = () => (
           <p className="text-minimal text-gold mb-5">GET STARTED</p>
         </ScrollReveal>
         <ScrollReveal delay={80}>
-          <h2 className="font-display text-3xl md:text-[2.75rem] font-normal mb-5 leading-[1.1] tracking-[-0.01em]" style={{ color: "#FAFAF8" }}>
-            Work With <span className="italic">Echelon Property Group</span>
+          <h2 className="font-display text-3xl md:text-[2.75rem] font-normal mb-5 leading-[1.1] tracking-[0.03em]" style={{ color: "#FAFAF8" }}>
+            Work With Echelon Property Group
           </h2>
         </ScrollReveal>
         <ScrollReveal delay={150}>

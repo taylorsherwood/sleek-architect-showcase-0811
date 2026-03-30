@@ -32,7 +32,7 @@ const LuxuryRealEstateAustin = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <p className="text-minimal text-gold mb-4">AUSTIN LUXURY REAL ESTATE</p>
-            <h1 className="text-5xl md:text-7xl font-display font-light text-architectural mb-8">
+            <h1 className="text-5xl md:text-7xl font-display font-normal text-architectural mb-8">
               Luxury Real Estate in Austin Texas
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
@@ -49,7 +49,7 @@ const LuxuryRealEstateAustin = () => {
           <div className="max-w-4xl mx-auto space-y-16">
 
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Why Austin Is a Premier Luxury Real Estate Market
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
@@ -64,7 +64,7 @@ const LuxuryRealEstateAustin = () => {
             </section>
 
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Where Are the Best Luxury Homes in Austin?
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
@@ -123,7 +123,7 @@ const LuxuryRealEstateAustin = () => {
             </section>
 
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 What Areas of Austin Are Best for Investment Property?
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
@@ -138,7 +138,7 @@ const LuxuryRealEstateAustin = () => {
             </section>
 
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 What Neighborhoods in Austin Have Skyline Views?
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
@@ -153,7 +153,7 @@ const LuxuryRealEstateAustin = () => {
             </section>
 
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Why Work with Echelon Property Group
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
@@ -166,7 +166,7 @@ const LuxuryRealEstateAustin = () => {
 
             {/* Internal Links */}
             <section className="border border-border p-8">
-              <h2 className="text-2xl font-display font-light text-architectural mb-6">
+              <h2 className="text-2xl font-display font-normal text-architectural mb-6">
                 Explore Austin Real Estate
               </h2>
               <div className="grid sm:grid-cols-2 gap-4">
@@ -181,7 +181,7 @@ const LuxuryRealEstateAustin = () => {
 
             {/* FAQ */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-8">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-8">
                 Frequently Asked Questions About Austin Luxury Real Estate
               </h2>
               <div className="space-y-6">
@@ -198,7 +198,7 @@ const LuxuryRealEstateAustin = () => {
 
             {/* CTA */}
             <section className="text-center py-16 bg-muted -mx-6 px-6">
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-4">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-4">
                 Start Your Austin Luxury Home Search
               </h2>
               <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">

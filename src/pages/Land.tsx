@@ -117,7 +117,7 @@ const LandPage = () => {
             <p className="text-minimal mb-6" style={{ color: "hsl(var(--gold-light))" }}>
               AUSTIN LAND &amp; INVESTMENT
             </p>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-light text-architectural mb-6 text-warm-cream">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-normal text-architectural mb-6 text-warm-cream">
               Austin Land &amp; Investment{" "}
               <span className="italic">Property</span>
             </h1>
@@ -149,7 +149,7 @@ const LandPage = () => {
       <section className="py-20 md:py-28 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-5xl font-display font-light text-architectural mb-10">
+            <h2 className="text-3xl md:text-5xl font-display font-normal text-architectural mb-10">
               A Strategic Approach to Land &amp; Investment{" "}
               <span className="italic">Real Estate</span>
             </h2>
@@ -170,7 +170,7 @@ const LandPage = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto">
             <p className="text-minimal text-gold mb-4 font-extrabold">PROPERTY TYPES</p>
-            <h2 className="text-3xl md:text-5xl font-display font-light text-architectural mb-14">
+            <h2 className="text-3xl md:text-5xl font-display font-normal text-architectural mb-14">
               Property Types We Help Clients{" "}
               <span className="italic">Acquire</span>
             </h2>
@@ -197,7 +197,7 @@ const LandPage = () => {
       <section className="py-20 md:py-28 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-5xl font-display font-light text-architectural mb-10">
+            <h2 className="text-3xl md:text-5xl font-display font-normal text-architectural mb-10">
               Why Investors Target Austin{" "}
               <span className="italic">Real Estate</span>
             </h2>
@@ -218,7 +218,7 @@ const LandPage = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto">
             <p className="text-minimal text-gold mb-4 font-extrabold">SUBMARKETS</p>
-            <h2 className="text-3xl md:text-5xl font-display font-light text-architectural mb-6">
+            <h2 className="text-3xl md:text-5xl font-display font-normal text-architectural mb-6">
               Key Austin Investment{" "}
               <span className="italic">Submarkets</span>
             </h2>
@@ -244,7 +244,7 @@ const LandPage = () => {
       <section className="py-20 md:py-28 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-5xl font-display font-light text-architectural mb-6">
+            <h2 className="text-3xl md:text-5xl font-display font-normal text-architectural mb-6">
               What We Evaluate{" "}
               <span className="italic">Before You Buy</span>
             </h2>
@@ -274,14 +274,14 @@ const LandPage = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto">
             <p className="text-minimal text-gold mb-4 font-extrabold">OUR PROCESS</p>
-            <h2 className="text-3xl md:text-5xl font-display font-light text-architectural mb-14">
+            <h2 className="text-3xl md:text-5xl font-display font-normal text-architectural mb-14">
               Our <span className="italic">Process</span>
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {processSteps.map((step) => (
                 <div key={step.step} className="flex gap-6">
                   <span
-                    className="text-3xl font-display font-light flex-shrink-0"
+                    className="text-3xl font-display font-normal flex-shrink-0"
                     style={{ color: "hsl(var(--gold) / 0.4)" }}
                   >
                     {step.step}
@@ -306,7 +306,7 @@ const LandPage = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto">
             <p className="text-minimal text-gold mb-4 font-extrabold">FAQ</p>
-            <h2 className="text-3xl md:text-5xl font-display font-light text-architectural mb-14">
+            <h2 className="text-3xl md:text-5xl font-display font-normal text-architectural mb-14">
               Austin Land &amp; Investment{" "}
               <span className="italic">FAQ</span>
             </h2>
@@ -334,7 +334,7 @@ const LandPage = () => {
         }}
       >
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-5xl font-display font-light text-warm-cream text-architectural mb-6">
+          <h2 className="text-3xl md:text-5xl font-display font-normal text-warm-cream text-architectural mb-6">
             Looking for Austin Land or{" "}
             <span className="italic">Investment Property?</span>
           </h2>
@@ -362,7 +362,7 @@ const LandPage = () => {
       <section className="py-16 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-display font-light text-architectural mb-6">
+            <h2 className="text-2xl font-display font-normal text-architectural mb-6">
               Explore Austin Real Estate
             </h2>
             <div className="grid sm:grid-cols-2 gap-4">

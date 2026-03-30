@@ -178,7 +178,7 @@ const CommunityPage = () => {
               ← ALL COMMUNITIES
             </Link>
             <p className="text-minimal text-gold mb-4">{community.priceRange}</p>
-            <h1 className="text-5xl md:text-7xl font-display font-light text-architectural mb-8">
+            <h1 className="text-5xl md:text-7xl font-display font-normal text-architectural mb-8">
               {community.heroTitle || `${community.name} Homes for Sale in Austin Texas`}
             </h1>
           </div>
@@ -210,7 +210,7 @@ const CommunityPage = () => {
           <div className="max-w-4xl mx-auto space-y-16">
             {/* Overview */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 {community.name} Neighborhood Overview
               </h2>
               <ContentBlock text={community.overview} />
@@ -218,7 +218,7 @@ const CommunityPage = () => {
 
             {/* Lifestyle */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Lifestyle in {community.name}
               </h2>
               <ContentBlock text={community.lifestyle} />
@@ -226,7 +226,7 @@ const CommunityPage = () => {
 
             {/* Market Insights */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 {community.name} Real Estate Market Insights
               </h2>
               <ContentBlock text={community.marketInsights} />
@@ -234,7 +234,7 @@ const CommunityPage = () => {
 
             {/* Amenities & Schools */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Schools and Amenities Near {community.name}
               </h2>
               <ContentBlock text={community.amenitiesAndSchools} />
@@ -242,7 +242,7 @@ const CommunityPage = () => {
 
             {/* Investment */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Investment Potential in {community.name}
               </h2>
               <ContentBlock text={community.investmentPotential} />
@@ -253,7 +253,7 @@ const CommunityPage = () => {
 
             {/* Internal Links */}
             <section className="border border-border p-8">
-              <h2 className="text-2xl font-display font-light text-architectural mb-6">
+              <h2 className="text-2xl font-display font-normal text-architectural mb-6">
                 Explore Austin Real Estate
               </h2>
               <div className="grid sm:grid-cols-2 gap-4">
@@ -283,7 +283,7 @@ const CommunityPage = () => {
 
             {/* FAQ */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-8">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-8">
                 Frequently Asked Questions About {community.name}
               </h2>
               <div className="space-y-6">
@@ -299,7 +299,7 @@ const CommunityPage = () => {
             {/* Related Communities */}
             {related.length > 0 && (
               <section>
-                <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-8">
+                <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-8">
                   Explore Nearby Austin Communities
                 </h2>
                 <div className="grid sm:grid-cols-2 gap-6">
@@ -310,7 +310,7 @@ const CommunityPage = () => {
                       className="group border-2 border-border p-6 rounded-lg hover:border-gold transition-colors duration-500"
                     >
                       <p className="text-minimal text-gold mb-2">{rc.priceRange}</p>
-                      <h3 className="text-xl font-display font-light text-architectural group-hover:text-gold transition-colors mb-2">
+                      <h3 className="text-xl font-display font-normal text-architectural group-hover:text-gold transition-colors mb-2">
                         {rc.name}
                       </h3>
                       <p className="text-minimal text-muted-foreground group-hover:text-gold transition-colors duration-500">VIEW COMMUNITY →</p>
@@ -322,7 +322,7 @@ const CommunityPage = () => {
 
             {/* CTA */}
             <section className="text-center py-12 bg-muted -mx-6 px-6">
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-4">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-4">
                 Interested in {community.name}?
               </h2>
               <p className="text-muted-foreground mb-8">

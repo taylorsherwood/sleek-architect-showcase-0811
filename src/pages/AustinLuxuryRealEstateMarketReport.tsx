@@ -38,7 +38,7 @@ const AustinLuxuryRealEstateMarketReport = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <p className="text-minimal text-gold mb-4">MARKET REPORT — 2026</p>
-            <h1 className="text-5xl md:text-7xl font-display font-light text-architectural mb-8">
+            <h1 className="text-5xl md:text-7xl font-display font-normal text-architectural mb-8">
               Austin Luxury Real Estate Market Report
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
@@ -59,7 +59,7 @@ const AustinLuxuryRealEstateMarketReport = () => {
 
             {/* Market Overview */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Austin Luxury Market Overview
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
@@ -75,7 +75,7 @@ const AustinLuxuryRealEstateMarketReport = () => {
 
             {/* Pricing Trends */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Pricing Trends and Market Data
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
@@ -110,7 +110,7 @@ const AustinLuxuryRealEstateMarketReport = () => {
 
             {/* Inventory and Demand */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Inventory and Demand Dynamics
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
@@ -126,7 +126,7 @@ const AustinLuxuryRealEstateMarketReport = () => {
 
             {/* Top Neighborhoods */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Top Luxury Neighborhoods in Austin
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-8">
@@ -188,7 +188,7 @@ const AustinLuxuryRealEstateMarketReport = () => {
 
             {/* Opportunities */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Opportunities for Buyers and Sellers
               </h2>
 
@@ -210,7 +210,7 @@ const AustinLuxuryRealEstateMarketReport = () => {
 
             {/* FAQ */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-8">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-8">
                 Frequently Asked Questions
               </h2>
               <div className="space-y-6">
@@ -225,7 +225,7 @@ const AustinLuxuryRealEstateMarketReport = () => {
 
             {/* CTA */}
             <section className="text-center py-16 bg-muted -mx-6 px-6">
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-4">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-4">
                 Get a Personalized Market Briefing
               </h2>
               <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
@@ -247,7 +247,7 @@ const AustinLuxuryRealEstateMarketReport = () => {
       <section className="py-16 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-display font-light text-architectural mb-6">
+            <h2 className="text-2xl font-display font-normal text-architectural mb-6">
               Explore More Austin Real Estate
             </h2>
             <div className="grid sm:grid-cols-2 gap-4">

@@ -109,7 +109,7 @@ const IntroSection = () => {
                 <p className="text-minimal text-gold mb-4 font-extrabold">
                   THE ECHELON DIFFERENCE
                 </p>
-                <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-8 whitespace-pre-line">Performance That Speaks{"\n"}for Itself</h2>
+                <h2 className="text-4xl md:text-5xl font-display font-normal text-architectural mb-8 whitespace-pre-line">Performance That Speaks{"\n"}for Itself</h2>
                 <div className="space-y-6 text-muted-foreground leading-relaxed">
                   <p className="whitespace-pre-line">
                     At Echelon Property Group we believe real estate is more than
@@ -139,7 +139,7 @@ const IntroSection = () => {
               {/* Stats grid */}
               <div className="grid grid-cols-2 gap-6">
                 <div ref={stat1.ref} className="bg-secondary p-8 text-center rounded-lg border border-border/40" style={{ boxShadow: "0 2px 12px hsl(40 10% 50% / 0.06)" }}>
-                  <p className="text-4xl font-display font-light text-foreground mb-2">
+                  <p className="text-4xl font-display font-normal text-foreground mb-2">
                     {stat1.display}
                   </p>
                   <p className="text-minimal text-muted-foreground">
@@ -147,7 +147,7 @@ const IntroSection = () => {
                   </p>
                 </div>
                 <div ref={stat2.ref} className="bg-secondary p-8 text-center rounded-lg border border-border/40" style={{ boxShadow: "0 2px 12px hsl(40 10% 50% / 0.06)" }}>
-                  <p className="text-4xl font-display font-light text-foreground mb-2">
+                  <p className="text-4xl font-display font-normal text-foreground mb-2">
                     {stat2.display}
                   </p>
                   <p className="text-minimal text-muted-foreground">
@@ -155,7 +155,7 @@ const IntroSection = () => {
                   </p>
                 </div>
                 <div ref={stat3.ref} className="bg-secondary p-8 text-center rounded-lg border border-border/40" style={{ boxShadow: "0 2px 12px hsl(40 10% 50% / 0.06)" }}>
-                  <p className="text-4xl font-display font-light text-foreground mb-2">
+                  <p className="text-4xl font-display font-normal text-foreground mb-2">
                     {stat3.display}
                   </p>
                   <p className="text-minimal text-muted-foreground">
@@ -163,7 +163,7 @@ const IntroSection = () => {
                   </p>
                 </div>
                 <div ref={stat4.ref} className="bg-secondary p-8 text-center rounded-lg border border-border/40" style={{ boxShadow: "0 2px 12px hsl(40 10% 50% / 0.06)" }}>
-                  <p className="text-4xl font-display font-light text-foreground mb-2">
+                  <p className="text-4xl font-display font-normal text-foreground mb-2">
                     {stat4.display}
                   </p>
                   <p className="text-minimal text-muted-foreground">

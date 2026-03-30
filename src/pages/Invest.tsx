@@ -371,7 +371,7 @@ const Invest = () => {
               >
                 PRIVATE ACCESS
               </p>
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-display font-light text-primary-foreground leading-[1.15] mb-6">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-display font-normal text-primary-foreground leading-[1.15] mb-6">
                 Access Investment &amp; Off-Market Opportunities
               </h1>
               <p className="text-lg text-primary-foreground/70 leading-relaxed font-light max-w-lg mx-auto lg:mx-0">
@@ -459,7 +459,7 @@ const Invest = () => {
         <div className="max-w-6xl mx-auto px-6">
           <ScrollReveal>
             <p className="text-minimal text-gold mb-4">Client Focus</p>
-            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-16 max-w-2xl">
+            <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-16 max-w-2xl">
               Austin Investment Clients We Serve
             </h2>
           </ScrollReveal>
@@ -468,7 +468,7 @@ const Invest = () => {
               <ScrollReveal key={card.title} delay={i * 100}>
                 <div className="group border-2 border-border p-10 h-full hover:border-gold transition-colors duration-500">
                   <card.icon className="w-8 h-8 text-gold mb-4" />
-                  <h3 className="text-2xl font-display font-light text-architectural mb-3 group-hover:text-muted-foreground transition-colors duration-300">
+                  <h3 className="text-2xl font-display font-normal text-architectural mb-3 group-hover:text-muted-foreground transition-colors duration-300">
                     {card.title}
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
@@ -486,7 +486,7 @@ const Invest = () => {
         <div className="max-w-6xl mx-auto px-6">
           <ScrollReveal>
             <p className="text-minimal text-gold mb-4">Methodology</p>
-            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-16 max-w-2xl">
+            <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-16 max-w-2xl">
               Our Austin Investor Process
             </h2>
           </ScrollReveal>
@@ -494,10 +494,10 @@ const Invest = () => {
             {processSteps.map((step, i) => (
               <ScrollReveal key={step.number} delay={i * 100}>
                 <div className="relative group">
-                  <span className="text-5xl font-display font-light text-gold/40 mb-4 block transition-colors duration-500 group-hover:text-gold">
+                  <span className="text-5xl font-display font-normal text-gold/40 mb-4 block transition-colors duration-500 group-hover:text-gold">
                     {step.number}
                   </span>
-                  <h3 className="text-lg font-display font-light text-foreground mb-2 transition-colors duration-300 group-hover:text-muted-foreground">
+                  <h3 className="text-lg font-display font-normal text-foreground mb-2 transition-colors duration-300 group-hover:text-muted-foreground">
                     {step.title}
                   </h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">
@@ -514,7 +514,7 @@ const Invest = () => {
         <div className="max-w-4xl mx-auto px-6">
           <ScrollReveal>
             <p className="text-minimal text-gold mb-4 tracking-[0.25em]">Portfolio</p>
-            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-4 max-w-3xl">
+            <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-4 max-w-3xl">
               Real Transformations. Measurable Upside.
             </h2>
             <p className="text-muted-foreground max-w-3xl leading-relaxed mb-2">
@@ -585,7 +585,7 @@ const Invest = () => {
         <div className="max-w-6xl mx-auto px-6">
           <ScrollReveal>
             <p className="text-minimal text-gold mb-4">Strategic Approach</p>
-            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6 max-w-3xl">
+            <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6 max-w-3xl">
               Investment Representation Built Around Opportunity, Not Emotion
             </h2>
             <p className="text-foreground max-w-3xl leading-relaxed mb-6">
@@ -604,7 +604,7 @@ const Invest = () => {
               <ScrollReveal key={card.title} delay={i * 100}>
                 <div className="group border-2 border-border p-8 h-full hover:border-gold transition-colors duration-500">
                   <CheckCircle className="w-8 h-8 text-gold mb-4" />
-                  <h3 className="text-2xl font-display font-light text-architectural mb-3 group-hover:text-muted-foreground transition-colors duration-300">
+                  <h3 className="text-2xl font-display font-normal text-architectural mb-3 group-hover:text-muted-foreground transition-colors duration-300">
                     {card.title}
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
@@ -622,7 +622,7 @@ const Invest = () => {
         <div className="max-w-2xl mx-auto px-6 text-center">
           <ScrollReveal>
             <p className="text-minimal text-gold mb-5 tracking-[0.3em]">Private Network</p>
-            <h2 className="text-4xl md:text-[2.75rem] font-display font-light text-architectural mb-6 leading-[1.15]">
+            <h2 className="text-4xl md:text-[2.75rem] font-display font-normal text-architectural mb-6 leading-[1.15]">
               Have a Property That Needs Work?
             </h2>
             <p className="text-muted-foreground max-w-xl mx-auto leading-relaxed mb-4 text-[0.95rem]">
@@ -671,7 +671,7 @@ const Invest = () => {
         <div className="max-w-6xl mx-auto px-6">
           <ScrollReveal>
             <p className="text-minimal text-gold mb-4">Value Proposition</p>
-            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-16 max-w-3xl">
+            <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-16 max-w-3xl">
               How We Help Austin Investors Move Smarter
             </h2>
           </ScrollReveal>
@@ -680,7 +680,7 @@ const Invest = () => {
               <ScrollReveal key={card.title} delay={i * 80}>
                 <div className="group border-2 border-border bg-card p-8 h-full hover:border-gold transition-colors duration-500">
                   <card.icon className="w-5 h-5 text-gold mb-4" />
-                  <h3 className="text-lg font-display font-light text-foreground mb-2">
+                  <h3 className="text-lg font-display font-normal text-foreground mb-2">
                     {card.title}
                   </h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">
@@ -710,7 +710,7 @@ const Invest = () => {
         <div className="max-w-4xl mx-auto px-6">
           <ScrollReveal>
             <p className="text-minimal text-gold mb-4">Market Intelligence</p>
-            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-8 max-w-3xl">
+            <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-8 max-w-3xl">
               Why Local Market Insight Matters
             </h2>
           </ScrollReveal>
@@ -752,7 +752,7 @@ const Invest = () => {
         <div className="max-w-4xl mx-auto px-6">
           <ScrollReveal>
             <p className="text-minimal text-gold mb-4" style={{ color: '#d4a94b' }}>Get Started</p>
-            <h2 className="text-3xl md:text-4xl font-display font-light text-primary-foreground mb-4">
+            <h2 className="text-3xl md:text-4xl font-display font-normal text-primary-foreground mb-4">
               Tell Us What You're Looking For
             </h2>
             <p className="text-primary-foreground/60 mb-12 max-w-2xl">
@@ -899,7 +899,7 @@ const Invest = () => {
         <div className="max-w-3xl mx-auto px-6">
           <ScrollReveal>
             <p className="text-minimal text-gold mb-4">Frequently Asked Questions</p>
-            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-12">
+            <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-12">
               Austin Investment Real Estate FAQ
             </h2>
           </ScrollReveal>
@@ -924,7 +924,7 @@ const Invest = () => {
       <section className="py-24 md:py-32 bg-secondary">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <ScrollReveal>
-            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+            <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
               Looking for Your Next Investment Opportunity in Austin?
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed">
@@ -946,7 +946,7 @@ const Invest = () => {
       <section className="py-16 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-display font-light text-architectural mb-6">
+            <h2 className="text-2xl font-display font-normal text-architectural mb-6">
               Explore Austin Real Estate
             </h2>
             <div className="grid sm:grid-cols-2 gap-4">

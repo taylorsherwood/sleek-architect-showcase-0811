@@ -79,7 +79,7 @@ const CommercialInvestment = () => {
         <div className="relative container mx-auto px-6">
           <div className="max-w-xl py-16">
             <p className="text-minimal text-gold mb-4 font-extrabold">COMMERCIAL & INVESTMENT</p>
-            <h1 className="text-5xl md:text-7xl font-display font-light text-warm-cream mb-8">
+            <h1 className="text-5xl md:text-7xl font-display font-normal text-warm-cream mb-8">
               Austin Commercial & Investment Real Estate
             </h1>
             <p className="text-xl text-warm-cream/80 max-w-3xl">
@@ -417,7 +417,7 @@ const CommercialInvestment = () => {
                     <span className="bg-muted px-3 py-1 text-muted-foreground" style={labelStyle}>{listing.type}</span>
                     <span className="text-lg font-light text-foreground font-[Roboto]">{listing.price}</span>
                   </div>
-                  <h3 className="text-xl font-display font-light text-foreground mb-2">
+                  <h3 className="text-xl font-display font-normal text-foreground mb-2">
                     {listing.name}
                   </h3>
                   <p className="text-muted-foreground mb-6">{listing.location}</p>
@@ -514,7 +514,7 @@ const CommercialInvestment = () => {
 
             <div className="space-y-12">
               <div>
-                <h3 className="text-xl font-display font-light text-foreground mb-4">
+                <h3 className="text-xl font-display font-normal text-foreground mb-4">
                   Why Austin for Commercial Investment
                 </h3>
                 <p className="text-muted-foreground text-sm leading-relaxed font-[Roboto] mb-4">
@@ -533,7 +533,7 @@ const CommercialInvestment = () => {
               </div>
 
               <div>
-                <h3 className="text-xl font-display font-light text-foreground mb-4">
+                <h3 className="text-xl font-display font-normal text-foreground mb-4">
                   Austin Multifamily Investment Landscape
                 </h3>
                 <p className="text-muted-foreground text-sm leading-relaxed font-[Roboto]">
@@ -546,7 +546,7 @@ const CommercialInvestment = () => {
               </div>
 
               <div>
-                <h3 className="text-xl font-display font-light text-foreground mb-4">
+                <h3 className="text-xl font-display font-normal text-foreground mb-4">
                   Emerging Opportunity Zones
                 </h3>
                 <p className="text-muted-foreground text-sm leading-relaxed font-[Roboto]">

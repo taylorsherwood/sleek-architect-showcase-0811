@@ -48,7 +48,7 @@ const MarketInsights = () => {
           <ScrollReveal>
             <div className="text-center mb-14">
               <p className="text-minimal text-gold mb-4 tracking-[0.25em] font-semibold">Market Insights</p>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-4">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-4">
                 Strategic Perspective on Austin Real Estate
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
@@ -65,7 +65,7 @@ const MarketInsights = () => {
                     <p className="text-[0.65rem] tracking-[0.2em] uppercase text-gold font-semibold mb-3">
                       {article.category}
                     </p>
-                    <h3 className="text-lg font-display font-light text-foreground mb-3 group-hover:text-gold transition-colors duration-300 leading-snug">
+                    <h3 className="text-lg font-display font-normal text-foreground mb-3 group-hover:text-gold transition-colors duration-300 leading-snug">
                       {article.title}
                     </h3>
                     <p className="text-sm text-muted-foreground leading-relaxed flex-1">

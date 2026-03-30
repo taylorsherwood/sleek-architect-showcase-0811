@@ -127,7 +127,7 @@ const ListingCardOverlay = ({
 
       {/* Bottom overlay text */}
       <div className="absolute bottom-0 left-0 right-0 p-5 md:p-6">
-        <p className="text-white font-display font-light text-lg md:text-2xl mb-1">
+        <p className="text-white font-display font-normal text-lg md:text-2xl mb-1">
           {listing.price}
         </p>
         <p

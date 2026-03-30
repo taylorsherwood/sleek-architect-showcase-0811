@@ -33,7 +33,7 @@ const BuyHomesAustin = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
               <p className="text-minimal text-gold mb-4">{"\n\n\n\n\n\nBUYER SERVICES"}</p>
-            <h1 className="text-5xl md:text-7xl font-display font-light text-architectural mb-8">
+            <h1 className="text-5xl md:text-7xl font-display font-normal text-architectural mb-8">
               Buy a Home in Austin Texas
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
@@ -50,7 +50,7 @@ const BuyHomesAustin = () => {
           <div className="max-w-4xl mx-auto space-y-16">
 
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Why Buy a Home in Austin?
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
@@ -65,7 +65,7 @@ const BuyHomesAustin = () => {
             </section>
 
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Where Are the Best Neighborhoods to Buy in Austin?
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
@@ -100,7 +100,7 @@ const BuyHomesAustin = () => {
             </section>
 
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 How Does Buying a Home in Austin Work?
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
@@ -131,7 +131,7 @@ const BuyHomesAustin = () => {
             </section>
 
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 What Should First-Time Austin Buyers Know?
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
@@ -147,7 +147,7 @@ const BuyHomesAustin = () => {
 
             {/* Internal Links */}
             <section className="border border-border p-8">
-              <h2 className="text-2xl font-display font-light text-architectural mb-6">
+              <h2 className="text-2xl font-display font-normal text-architectural mb-6">
                 Explore Austin Real Estate
               </h2>
               <div className="grid sm:grid-cols-2 gap-4">
@@ -162,7 +162,7 @@ const BuyHomesAustin = () => {
 
             {/* FAQ */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-8">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-8">
                 Frequently Asked Questions About Buying in Austin
               </h2>
               <div className="space-y-6">
@@ -178,7 +178,7 @@ const BuyHomesAustin = () => {
             <AuthorBio />
 
             <section className="text-center py-16 bg-muted -mx-6 px-6">
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-4">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-4">
                 Ready to Buy a Home in Austin?
               </h2>
               <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">

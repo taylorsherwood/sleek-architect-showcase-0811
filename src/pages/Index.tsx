@@ -668,7 +668,7 @@ const TestimonialsSection = () => {
             {t.name}
           </p>
           <p key={`ctx-${active}`} style={{
-            fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.12em",
+            fontFamily: '"Jost", sans-serif', fontSize: "12px", letterSpacing: "0.12em",
             textTransform: "uppercase", color: "hsl(var(--muted-foreground))", marginTop: "6px",
             animation: "fadeUp 0.6s ease 0.25s both",
           }}>

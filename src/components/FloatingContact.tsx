@@ -22,6 +22,7 @@ const FloatingContact = () => {
   // Homepage-specific: hide when Private Opportunities banner is visible
   const [bannerVisible, setBannerVisible] = useState(false);
   const [heroVisible, setHeroVisible] = useState(true);
+  const [footerVisible, setFooterVisible] = useState(false);
   const delayTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
@@ -51,10 +52,22 @@ const FloatingContact = () => {
       }
     }
 
+    // Hide when footer is visible
+    const footer = document.querySelector("footer");
+    let footerObserver: IntersectionObserver | null = null;
+    if (footer) {
+      footerObserver = new IntersectionObserver(
+        ([entry]) => setFooterVisible(entry.isIntersecting),
+        { threshold: 0 }
+      );
+      footerObserver.observe(footer);
+    }
+
     return () => {
       window.removeEventListener("advisory-bar-dismissed", onDismissed);
       bannerObserver?.disconnect();
       heroObserver?.disconnect();
+      footerObserver?.disconnect();
     };
   }, [isHomepage]);
 
@@ -62,7 +75,7 @@ const FloatingContact = () => {
   useEffect(() => {
     if (delayTimer.current) clearTimeout(delayTimer.current);
 
-    const shouldShow = advisoryDismissed && !isConnectPage && (!isHomepage || !heroVisible);
+    const shouldShow = advisoryDismissed && !isConnectPage && !footerVisible && (!isHomepage || !heroVisible);
 
     if (shouldShow) {
       delayTimer.current = setTimeout(() => setVisible(true), 1000);
@@ -73,7 +86,7 @@ const FloatingContact = () => {
     return () => {
       if (delayTimer.current) clearTimeout(delayTimer.current);
     };
-  }, [advisoryDismissed, isHomepage, bannerVisible, heroVisible]);
+  }, [advisoryDismissed, isHomepage, bannerVisible, heroVisible, footerVisible]);
 
   return (
     <>

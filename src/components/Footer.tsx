@@ -27,7 +27,7 @@ const Footer = () => {
           {/* 4-column grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-6 mb-4 text-center sm:text-left lg:justify-items-center">
             {/* Brand column */}
-            <div className="flex flex-col items-center sm:items-start -mt-8">
+            <div className="flex flex-col items-center sm:items-start -mt-16">
               <Link to="/" className="inline-block mb-0">
                 <img
                   src="/static-assets/echelon-footer-logo.png"

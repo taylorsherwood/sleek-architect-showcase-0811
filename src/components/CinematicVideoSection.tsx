@@ -65,7 +65,7 @@ const CinematicVideoSection = () => {
   return (
     <section ref={ref} className="relative" style={{ margin: 0, padding: 0 }}>
       {/* Full-bleed cinematic video background */}
-      <div className="relative w-full overflow-hidden" style={{ height: "clamp(560px, 85vh, 95vh)" }}>
+      <div className="relative w-full overflow-hidden" style={{ height: "clamp(560px, 95vh, 95vh)" }}>
         {/* Video layer */}
         <div
           ref={videoContainerRef}

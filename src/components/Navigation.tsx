@@ -140,7 +140,7 @@ const Navigation = () => {
                 </button>
                 {openDropdown === link.href && (
                   <div className="absolute top-full left-0 pt-4 min-w-[260px]">
-                    <div style={{ background: effectiveScrolled ? "rgba(13,13,13,0.95)" : "hsl(var(--background))", border: "1px solid rgba(255,255,255,0.08)" }} className="shadow-elegant">
+                    <div style={{ background: effectiveScrolled ? "rgba(8,11,26,0.95)" : "hsl(var(--background))", border: "1px solid rgba(255,255,255,0.08)" }} className="shadow-elegant">
                       {link.children.map((child) => (
                         <Link
                           key={child.href}

@@ -187,10 +187,11 @@ const Hero = () => {
               opacity: heroVisible ? 1 : 0,
               transform: heroVisible ? "translateY(0)" : "translateY(10px)",
               transition: "opacity 1.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s, transform 1.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s",
-              fontSize: "clamp(48px, 6vw, 82px)",
+              fontSize: "clamp(38px, 4.5vw, 68px)",
               lineHeight: 1.08,
               letterSpacing: "0.02em",
               fontWeight: 500,
+              maxWidth: "620px",
               marginBottom: "20px",
               textShadow: "0 2px 9px rgba(0,0,0,0.55), 0 1px 2px rgba(0,0,0,0.2)"
             }}>

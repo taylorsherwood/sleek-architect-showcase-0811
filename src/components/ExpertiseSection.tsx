@@ -45,6 +45,7 @@ const ExpertiseSection = () => {
                 Austin Real Estate Expertise
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto text-[0.95rem] leading-relaxed">From luxury homes and land development to commercial acquisitions and investment strategy — Echelon Property Group delivers full-spectrum real estate advisory across Austin and the Texas Hill Country.</p>
+              <p className="text-muted-foreground max-w-2xl mx-auto text-[0.95rem] leading-relaxed italic mt-4">Driven by Data, Proven by Results</p>
             </div>
           </ScrollReveal>
 

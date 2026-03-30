@@ -55,6 +55,7 @@ const PrivateOpportunitiesPage = () => {
         description="Access select off-market homes, development sites, and investment opportunities across Austin through Echelon Property Group's private network."
       />
       <SchemaMarkup schema={privateOpportunitiesSchema} />
+      <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createBreadcrumbSchema([
         { name: "Home", url: "https://www.echelonpropertygroup.com/" },
         { name: "Private Opportunities", url: "https://www.echelonpropertygroup.com/private-opportunities" }

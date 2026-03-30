@@ -656,7 +656,7 @@ const TestimonialsSection = () => {
         <div className="max-w-[800px] mx-auto text-center relative">
           {/* Decorative open-quote */}
           <span className="absolute -top-6 left-1/2 -translate-x-1/2 select-none pointer-events-none" aria-hidden="true" style={{
-            fontFamily: '"Cormorant Garamond", serif', fontSize: "120px", lineHeight: 0,
+            fontFamily: '"Cinzel", serif', fontSize: "120px", lineHeight: 0,
             color: "hsl(38 39% 61%)", opacity: 0.15,
           }}>
             "

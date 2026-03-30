@@ -153,7 +153,6 @@ const Hero = () => {
           className="relative"
           style={{
             maxWidth: "620px",
-            filter: "drop-shadow(0 0 80px rgba(0,0,0,0.5)) drop-shadow(0 0 120px rgba(0,0,0,0.3))"
           }}>
           
           <p

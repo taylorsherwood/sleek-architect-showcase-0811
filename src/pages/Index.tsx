@@ -418,7 +418,7 @@ const stats = [
 ];
 
 const StatsStrip = () => (
-  <section style={{ background: "#141414" }}>
+  <section style={{ background: "#080B1A" }}>
     <div className="container mx-auto px-6">
       <div className="max-w-[1100px] mx-auto py-16 md:py-20">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">

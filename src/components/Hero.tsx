@@ -123,7 +123,7 @@ const Hero = () => {
           className={`hero-bg-video transition-opacity duration-700 ${
           videoReady ? "opacity-100" : "opacity-0"}`
           }
-          style={{ filter: "saturate(1.06) contrast(1.02) brightness(1.06)" }}
+          style={{}}
           tabIndex={-1}>
           
           {videoSrc && <source src={videoSrc} type="video/mp4" />}
@@ -142,13 +142,6 @@ const Hero = () => {
                     />
       }
 
-      {/* Layered cinematic gradient overlays */}
-      <div
-        className="absolute inset-0"
-        style={{
-          zIndex: 1,
-          background: `linear-gradient(to bottom, rgba(0,0,0,0.06) 0%, rgba(0,0,0,0.025) 38%, rgba(0,0,0,0.12) 68%, rgba(18,14,8,0.14) 86%, rgba(24,18,10,0.20) 100%)`
-        }} />
       
 
       {/* Content */}

@@ -912,8 +912,8 @@ const LeadCapture = () => {
             <p className="text-minimal text-gold mb-3">EXCLUSIVE ACCESS</p>
           </ScrollReveal>
           <ScrollReveal delay={80}>
-            <h2 className="font-display text-2xl md:text-[1.85rem] font-normal mb-3 leading-[1.15] tracking-[-0.01em] text-foreground">
-              Private Opportunities, <span className="italic">Before They're Public</span>
+            <h2 className="font-display text-2xl md:text-[1.85rem] font-normal mb-3 leading-[1.15] tracking-[0.03em] text-foreground">
+              Private Opportunities, Before They're Public
             </h2>
           </ScrollReveal>
           <ScrollReveal delay={150}>

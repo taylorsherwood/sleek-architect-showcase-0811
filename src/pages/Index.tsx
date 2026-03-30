@@ -653,7 +653,7 @@ const TestimonialsSection = () => {
           {/* Quote */}
           <p key={active} className="mb-6" style={{
             fontFamily: '"Cinzel", serif', fontWeight: 400,
-            fontSize: "clamp(22px, 3vw, 36px)", lineHeight: 1.5, color: "hsl(var(--foreground))",
+            fontSize: "clamp(18px, 2.5vw, 30px)", lineHeight: 1.5, color: "hsl(var(--foreground))",
             animation: "fadeUp 0.6s ease both",
           }}>
             {t.quote}

@@ -130,7 +130,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer nofollow"
                 className="hover:text-gold transition-colors duration-300 underline underline-offset-2"
-                style={{ fontFamily: '"Jost", sans-serif', fontSize: "11px", color: "#4A4844" }}
+                style={{ fontFamily: '"Jost", sans-serif', fontSize: "11px", color: "hsl(38 39% 61%)" }}
               >
                 Information About Brokerage Services
               </a>

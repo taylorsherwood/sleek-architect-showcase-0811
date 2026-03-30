@@ -644,7 +644,7 @@ const TestimonialsSection = () => {
   const [active, setActive] = useState(0);
 
   useEffect(() => {
-    const timer = setInterval(() => setActive((p) => (p + 1) % testimonials.length), 7000);
+    const timer = setInterval(() => setActive((p) => (p + 1) % testimonials.length), 5500);
     return () => clearInterval(timer);
   }, []);
 

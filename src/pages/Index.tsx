@@ -442,7 +442,7 @@ const StatsStrip = () => (
                     {stat.suffix}
                   </span>
                 </p>
-                <div className="relative inline-block mt-2">
+                <div className="relative inline-block mt-2 pb-3">
                   <p style={{
                     fontFamily: '"Jost", sans-serif', fontWeight: 300,
                     fontSize: "10px", letterSpacing: "0.2em", textTransform: "uppercase",

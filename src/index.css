@@ -179,7 +179,7 @@ iframe {
   }
 
   .hero-overlay {
-    background: var(--gradient-overlay);
+    background: none;
   }
 
   /* Hero staggered fade-in classes */

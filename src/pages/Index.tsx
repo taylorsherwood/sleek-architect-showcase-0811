@@ -667,8 +667,8 @@ const TestimonialsSection = () => {
           </ScrollReveal>
 
           {/* Quote */}
-          <p key={active} className="italic mb-6" style={{
-            fontFamily: '"Cormorant Garamond", serif', fontWeight: 300,
+          <p key={active} className="mb-6" style={{
+            fontFamily: '"Cinzel", serif', fontWeight: 400,
             fontSize: "clamp(22px, 3vw, 36px)", lineHeight: 1.5, color: "hsl(var(--foreground))",
             animation: "fadeUp 0.6s ease both",
           }}>

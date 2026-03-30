@@ -148,8 +148,8 @@ const Hero = () => {
           <p className="max-w-[480px] mb-12 leading-[1.7]" style={{
             ...anim("0.3s"),
             fontFamily: '"Jost", sans-serif', fontWeight: 300, fontSize: "15px",
-            letterSpacing: "0.05em", color: "rgba(245,243,239,0.75)",
-            textShadow: "0 2px 9px rgba(0,0,0,0.5)"
+            letterSpacing: "0.05em", color: "rgba(245,243,239,0.85)",
+            textShadow: "0 2px 12px rgba(0,0,0,0.6), 0 0 30px rgba(245,243,239,0.08)"
           }}>
             Private listings, off-market opportunities, and elevated real estate representation.
           </p>

@@ -654,9 +654,9 @@ const TestimonialsSection = () => {
             fontSize: "clamp(18px, 2.5vw, 30px)", lineHeight: 1.5, color: "hsl(var(--foreground))",
             animation: "fadeUp 0.6s ease both",
           }}>
-            <span style={{ color: "hsl(38 39% 61%)", marginRight: "0.4em" }}>—</span>
+            <span style={{ color: "hsl(38 39% 61%)", marginRight: "0.15em" }}>&ldquo;</span>
             {t.quote}
-            <span style={{ color: "hsl(38 39% 61%)", marginLeft: "0.4em" }}>—</span>
+            <span style={{ color: "hsl(38 39% 61%)", marginLeft: "0.15em" }}>&rdquo;</span>
           </p>
 
           {/* Attribution */}

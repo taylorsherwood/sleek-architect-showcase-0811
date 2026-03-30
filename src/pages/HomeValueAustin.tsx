@@ -137,7 +137,7 @@ const HomeValueAustin = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <p className="text-minimal text-gold mb-4">FREE HOME VALUATION</p>
-            <h1 className="text-5xl md:text-7xl font-display font-light text-architectural mb-8">
+            <h1 className="text-5xl md:text-7xl font-display font-normal text-architectural mb-8">
               Free Austin Home Valuation
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
@@ -155,7 +155,7 @@ const HomeValueAustin = () => {
 
             {/* How We Determine Value */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 How We Determine Your Home's Value
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
@@ -177,13 +177,13 @@ const HomeValueAustin = () => {
 
             {/* Valuation Form */}
             <section id="valuation-form">
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-8">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-8">
                 Request Your Free Valuation
               </h2>
 
               {submitted ? (
                 <div className="border border-border p-12 text-center">
-                  <h3 className="text-2xl font-display font-light text-architectural mb-4">
+                  <h3 className="text-2xl font-display font-normal text-architectural mb-4">
                     Thank You for Your Request
                   </h3>
                   <p className="text-muted-foreground leading-relaxed mb-6">
@@ -321,7 +321,7 @@ const HomeValueAustin = () => {
 
             {/* Recent Sales */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-8">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-8">
                 Recent Austin Luxury Sales
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-8">
@@ -332,25 +332,25 @@ const HomeValueAustin = () => {
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="border border-border p-6">
                   <p className="text-minimal text-gold mb-2">WESTLAKE HILLS</p>
-                  <h3 className="text-lg font-display font-light text-architectural mb-1">Hilltop Estate</h3>
+                  <h3 className="text-lg font-display font-normal text-architectural mb-1">Hilltop Estate</h3>
                   <p className="text-2xl font-light text-foreground mb-2">$4,250,000</p>
                   <p className="text-sm text-muted-foreground">5 BD · 5 BA · 6,200 SF · Hill Country Views</p>
                 </div>
                 <div className="border border-border p-6">
                   <p className="text-minimal text-gold mb-2">LAKE AUSTIN</p>
-                  <h3 className="text-lg font-display font-light text-architectural mb-1">Waterfront Estate</h3>
+                  <h3 className="text-lg font-display font-normal text-architectural mb-1">Waterfront Estate</h3>
                   <p className="text-2xl font-light text-foreground mb-2">$8,750,000</p>
                   <p className="text-sm text-muted-foreground">6 BD · 7 BA · 8,400 SF · Private Dock</p>
                 </div>
                 <div className="border border-border p-6">
                   <p className="text-minimal text-gold mb-2">BARTON CREEK</p>
-                  <h3 className="text-lg font-display font-light text-architectural mb-1">Golf Course Estate</h3>
+                  <h3 className="text-lg font-display font-normal text-architectural mb-1">Golf Course Estate</h3>
                   <p className="text-2xl font-light text-foreground mb-2">$3,100,000</p>
                   <p className="text-sm text-muted-foreground">4 BD · 4 BA · 5,100 SF · Fazio Course Views</p>
                 </div>
                 <div className="border border-border p-6">
                   <p className="text-minimal text-gold mb-2">TARRYTOWN</p>
-                  <h3 className="text-lg font-display font-light text-architectural mb-1">New Construction</h3>
+                  <h3 className="text-lg font-display font-normal text-architectural mb-1">New Construction</h3>
                   <p className="text-2xl font-light text-foreground mb-2">$2,850,000</p>
                   <p className="text-sm text-muted-foreground">4 BD · 3.5 BA · 4,200 SF · Walk to Lake Austin</p>
                 </div>
@@ -359,7 +359,7 @@ const HomeValueAustin = () => {
 
             {/* Why Work With Us */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Why Work With a Local Austin Luxury Real Estate Advisor
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
@@ -403,7 +403,7 @@ const HomeValueAustin = () => {
 
             {/* Final CTA */}
             <section className="text-center py-16 bg-muted -mx-6 px-6">
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-4">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-4">
                 Ready to Find Out What Your Home Is Worth?
               </h2>
               <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
@@ -420,7 +420,7 @@ const HomeValueAustin = () => {
 
             {/* FAQ */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-8">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-8">
                 Frequently Asked Questions
               </h2>
               <div className="space-y-6">
@@ -435,7 +435,7 @@ const HomeValueAustin = () => {
 
             {/* Internal Links */}
             <section>
-              <h2 className="text-2xl font-display font-light text-architectural mb-6">
+              <h2 className="text-2xl font-display font-normal text-architectural mb-6">
                 Explore Austin Real Estate
               </h2>
               <div className="grid sm:grid-cols-2 gap-4">

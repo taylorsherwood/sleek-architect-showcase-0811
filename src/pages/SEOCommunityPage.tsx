@@ -116,7 +116,7 @@ const SEOCommunityPage = () => {
               ← ALL COMMUNITIES
             </Link>
             <p className="text-minimal text-gold mb-4">{community.priceRange}</p>
-            <h1 className="text-5xl md:text-7xl font-display font-light text-architectural mb-8">
+            <h1 className="text-5xl md:text-7xl font-display font-normal text-architectural mb-8">
               {community.name} Homes for Sale in Austin Texas
             </h1>
           </div>
@@ -129,7 +129,7 @@ const SEOCommunityPage = () => {
           <div className="max-w-4xl mx-auto space-y-16">
             {/* Overview */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Overview of {community.name}
               </h2>
               <div className="space-y-4">
@@ -143,7 +143,7 @@ const SEOCommunityPage = () => {
 
             {/* Market */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Real Estate Market in {community.name}
               </h2>
               <div className="space-y-4">
@@ -157,7 +157,7 @@ const SEOCommunityPage = () => {
 
             {/* Why Buyers Love */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Why Buyers Love {community.name}
               </h2>
               <div className="space-y-4">
@@ -171,7 +171,7 @@ const SEOCommunityPage = () => {
 
             {/* Homes for Sale — RealScout Widget */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Homes for Sale in {community.name}
               </h2>
               <Suspense
@@ -191,7 +191,7 @@ const SEOCommunityPage = () => {
 
             {/* Internal Links */}
             <section className="border border-border p-8">
-              <h2 className="text-2xl font-display font-light text-architectural mb-6">
+              <h2 className="text-2xl font-display font-normal text-architectural mb-6">
                 Explore Austin Real Estate
               </h2>
               <div className="grid sm:grid-cols-2 gap-4">
@@ -230,7 +230,7 @@ const SEOCommunityPage = () => {
 
             {/* FAQ */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-8">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-8">
                 Frequently Asked Questions About {community.name}
               </h2>
               <div className="space-y-6">
@@ -249,7 +249,7 @@ const SEOCommunityPage = () => {
 
             {/* CTA */}
             <section className="text-center py-12 bg-muted -mx-6 px-6">
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-4">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-4">
                 Interested in {community.name}?
               </h2>
               <p className="text-muted-foreground mb-8">

@@ -140,7 +140,7 @@ const Listings = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
             <p className="text-minimal text-gold mb-4 font-extrabold">{"\n\n\n\n"}FEATURED LISTINGS</p>
-            <h1 className="text-5xl md:text-7xl font-display font-light text-architectural mb-8">
+            <h1 className="text-5xl md:text-7xl font-display font-normal text-architectural mb-8">
               Current Properties
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl">
@@ -176,7 +176,7 @@ const Listings = () => {
                 </div>
                 <div>
                   <p className="text-minimal text-gold mb-3">{listing.location}</p>
-                  <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-4 group-hover:text-muted-foreground transition-colors duration-300">
+                  <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-4 group-hover:text-muted-foreground transition-colors duration-300">
                     {listing.address}
                   </h2>
                   <p className="text-muted-foreground leading-relaxed mb-8">
@@ -292,7 +292,7 @@ const Listings = () => {
       <section className="py-16 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-display font-light text-architectural mb-6">
+            <h2 className="text-2xl font-display font-normal text-architectural mb-6">
               Explore More
             </h2>
             <div className="grid sm:grid-cols-2 gap-4">

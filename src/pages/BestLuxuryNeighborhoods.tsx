@@ -44,7 +44,7 @@ const BestLuxuryNeighborhoods = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <p className="text-minimal text-gold mb-4">NEIGHBORHOOD GUIDE</p>
-            <h1 className="text-5xl md:text-7xl font-display font-light text-architectural mb-8">
+            <h1 className="text-5xl md:text-7xl font-display font-normal text-architectural mb-8">
               Best Luxury Neighborhoods in Austin Texas
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
@@ -61,7 +61,7 @@ const BestLuxuryNeighborhoods = () => {
           <div className="max-w-4xl mx-auto space-y-12">
 
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Why Austin's Luxury Market Stands Out
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
@@ -77,7 +77,7 @@ const BestLuxuryNeighborhoods = () => {
 
             {/* Neighborhood Cards */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-8">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-8">
                 Austin's Premier Luxury Neighborhoods
               </h2>
               <div className="space-y-10">
@@ -85,7 +85,7 @@ const BestLuxuryNeighborhoods = () => {
                   <div key={i} className="border border-border p-8 hover:border-foreground/30 transition-colors duration-300">
                     <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
                       <div>
-                        <Link to={`/communities/${n.slug}`} className="text-2xl font-display font-light text-architectural hover:text-muted-foreground transition-colors">
+                        <Link to={`/communities/${n.slug}`} className="text-2xl font-display font-normal text-architectural hover:text-muted-foreground transition-colors">
                           {n.name}
                         </Link>
                         <p className="text-minimal text-gold mt-1">{n.price}</p>
@@ -102,7 +102,7 @@ const BestLuxuryNeighborhoods = () => {
             </section>
 
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 How to Choose the Right Austin Luxury Neighborhood
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
@@ -143,7 +143,7 @@ const BestLuxuryNeighborhoods = () => {
             </section>
 
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Austin Luxury Market Trends
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
@@ -156,7 +156,7 @@ const BestLuxuryNeighborhoods = () => {
 
             {/* FAQ */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-8">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-8">
                 Frequently Asked Questions
               </h2>
               <div className="space-y-6">
@@ -171,7 +171,7 @@ const BestLuxuryNeighborhoods = () => {
 
             {/* CTA */}
             <section className="text-center py-16 bg-muted -mx-6 px-6">
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-4">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-4">
                 Find Your Perfect Austin Neighborhood
               </h2>
               <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
@@ -193,7 +193,7 @@ const BestLuxuryNeighborhoods = () => {
       <section className="py-16 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-display font-light text-architectural mb-6">
+            <h2 className="text-2xl font-display font-normal text-architectural mb-6">
               Explore Austin Real Estate
             </h2>
             <div className="grid sm:grid-cols-2 gap-4">

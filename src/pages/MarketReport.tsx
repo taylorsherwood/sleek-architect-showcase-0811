@@ -30,7 +30,7 @@ const MarketReport = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <p className="text-minimal text-gold mb-4">MARKET INTELLIGENCE</p>
-            <h1 className="text-5xl md:text-7xl font-display font-light text-architectural mb-8">
+            <h1 className="text-5xl md:text-7xl font-display font-normal text-architectural mb-8">
               Austin Luxury Real Estate Market Report
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
@@ -47,7 +47,7 @@ const MarketReport = () => {
           <div className="max-w-4xl mx-auto space-y-12">
 
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Market Overview: Austin's Position in 2026
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
@@ -62,7 +62,7 @@ const MarketReport = () => {
             </section>
 
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Key Market Drivers
               </h2>
               
@@ -88,7 +88,7 @@ const MarketReport = () => {
             </section>
 
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Neighborhood Market Performance
               </h2>
 
@@ -156,7 +156,7 @@ const MarketReport = () => {
             </section>
 
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Investment Outlook and Opportunities
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
@@ -186,7 +186,7 @@ const MarketReport = () => {
             </section>
 
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Market Forecast Summary
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
@@ -199,7 +199,7 @@ const MarketReport = () => {
 
             {/* FAQ */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-8">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-8">
                 Frequently Asked Questions
               </h2>
               <div className="space-y-6">
@@ -214,7 +214,7 @@ const MarketReport = () => {
 
             {/* CTA */}
             <section className="text-center py-16 bg-muted -mx-6 px-6">
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-4">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-4">
                 Get Personalized Market Analysis
               </h2>
               <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
@@ -236,7 +236,7 @@ const MarketReport = () => {
       <section className="py-16 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-display font-light text-architectural mb-6">
+            <h2 className="text-2xl font-display font-normal text-architectural mb-6">
               Explore Austin Real Estate
             </h2>
             <div className="grid sm:grid-cols-2 gap-4">

@@ -39,7 +39,7 @@ const LuxuryHomesAustin = () => {
               style={{ fontSize: "0.55rem", letterSpacing: "0.35em", textTransform: "uppercase", fontFamily: '"Raleway", sans-serif' }}>
               PRIVATE + CURATED OPPORTUNITIES
             </p>
-            <h1 className="text-5xl md:text-7xl font-display font-light text-architectural mb-6">
+            <h1 className="text-5xl md:text-7xl font-display font-normal text-architectural mb-6">
               Curated Austin Opportunities
             </h1>
             <p className="text-lg text-muted-foreground/80 leading-relaxed max-w-2xl font-light">
@@ -64,7 +64,7 @@ const LuxuryHomesAustin = () => {
 
             {/* Intro / Market Overview */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Austin Luxury Real Estate Market
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
@@ -94,7 +94,7 @@ const LuxuryHomesAustin = () => {
 
             {/* Luxury Neighborhoods */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-10">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-10">
                 Best Luxury Neighborhoods in Austin
               </h2>
               <div className="grid sm:grid-cols-2 gap-8">
@@ -110,7 +110,7 @@ const LuxuryHomesAustin = () => {
                     
                       <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
                       <div className="absolute bottom-0 left-0 right-0 p-6">
-                        <h3 className="text-xl font-display font-light text-white mb-1">{n.name}</h3>
+                        <h3 className="text-xl font-display font-normal text-white mb-1">{n.name}</h3>
                         <p className="text-white/70 text-sm font-light">{n.desc}</p>
                       </div>
                     </div>
@@ -121,7 +121,7 @@ const LuxuryHomesAustin = () => {
 
             {/* Buyer CTA */}
             <section className="text-center py-16 bg-muted -mx-6 px-6 rounded-sm">
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-4">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-4">
                 Work With an Austin Luxury Realtor
               </h2>
               <p className="text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">

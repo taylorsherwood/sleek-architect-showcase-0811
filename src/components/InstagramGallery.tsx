@@ -49,7 +49,7 @@ const InstagramGallery = () => {
             <p className="text-xs tracking-[0.2em] uppercase text-gold mb-3">
               @TheInvestorBroker
             </p>
-            <h3 className="text-4xl font-display font-light text-foreground mb-3">
+            <h3 className="text-4xl font-display font-normal text-foreground mb-3">
               Follow Us on Instagram
             </h3>
             <p className="text-sm text-muted-foreground/70 max-w-lg mx-auto leading-relaxed">

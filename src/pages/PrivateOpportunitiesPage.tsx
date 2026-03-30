@@ -69,7 +69,7 @@ const PrivateOpportunitiesPage = () => {
             <p className="text-minimal text-[hsl(var(--gold))] mb-3 tracking-widest">
               PRIVATE ACCESS
             </p>
-            <h1 className="text-4xl md:text-5xl font-display font-light text-primary-foreground leading-tight mb-5">
+            <h1 className="text-4xl md:text-5xl font-display font-normal text-primary-foreground leading-tight mb-5">
               Private Austin Opportunities
             </h1>
             <p className="text-lg text-primary-foreground/60 leading-relaxed max-w-xl mx-auto">
@@ -88,7 +88,7 @@ const PrivateOpportunitiesPage = () => {
               <p className="text-minimal text-[hsl(var(--gold))] mb-2 tracking-widest">
                 SELECT OPPORTUNITIES
               </p>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-foreground">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-foreground">
                 Current Private Listings
               </h2>
             </div>
@@ -141,7 +141,7 @@ const PrivateOpportunitiesPage = () => {
             <p className="text-minimal text-[hsl(var(--gold))] mb-3 tracking-widest">
               NEXT STEP
             </p>
-            <h2 className="text-3xl md:text-4xl font-display font-light text-primary-foreground leading-tight mb-4">
+            <h2 className="text-3xl md:text-4xl font-display font-normal text-primary-foreground leading-tight mb-4">
               Ready to Explore Further?
             </h2>
             <p className="text-primary-foreground/60 text-lg leading-relaxed mb-6">
@@ -162,7 +162,7 @@ const PrivateOpportunitiesPage = () => {
       <section className="py-16 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-display font-light text-architectural mb-6">
+            <h2 className="text-2xl font-display font-normal text-architectural mb-6">
               Explore Austin Real Estate
             </h2>
             <div className="grid sm:grid-cols-2 gap-4">

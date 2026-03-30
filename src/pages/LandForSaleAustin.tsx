@@ -32,7 +32,7 @@ const LandForSaleAustin = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <p className="text-minimal text-gold mb-4">LAND ADVISORY</p>
-            <h1 className="text-5xl md:text-7xl font-display font-light text-architectural mb-8">
+            <h1 className="text-5xl md:text-7xl font-display font-normal text-architectural mb-8">
               Land for Sale in Austin Texas
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
@@ -49,7 +49,7 @@ const LandForSaleAustin = () => {
           <div className="max-w-4xl mx-auto space-y-16">
 
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Why Buy Land in Austin?
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
@@ -64,7 +64,7 @@ const LandForSaleAustin = () => {
             </section>
 
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Types of Land Available in Austin
               </h2>
               <div className="space-y-8">
@@ -96,7 +96,7 @@ const LandForSaleAustin = () => {
             </section>
 
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Where Is the Best Land to Buy Near Austin?
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
@@ -111,7 +111,7 @@ const LandForSaleAustin = () => {
             </section>
 
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 What Should I Consider Before Buying Land in Austin?
               </h2>
               <div className="space-y-4">
@@ -135,7 +135,7 @@ const LandForSaleAustin = () => {
             </section>
 
             <section className="border border-border p-8">
-              <h2 className="text-2xl font-display font-light text-architectural mb-6">
+              <h2 className="text-2xl font-display font-normal text-architectural mb-6">
                 Explore Austin Real Estate
               </h2>
               <div className="grid sm:grid-cols-2 gap-4">
@@ -149,7 +149,7 @@ const LandForSaleAustin = () => {
             </section>
 
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-8">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-8">
                 Frequently Asked Questions About Austin Land
               </h2>
               <div className="space-y-6">
@@ -165,7 +165,7 @@ const LandForSaleAustin = () => {
             <AuthorBio />
 
             <section className="text-center py-16 bg-muted -mx-6 px-6">
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-4">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-4">
                 Explore Land Opportunities in Austin
               </h2>
               <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">

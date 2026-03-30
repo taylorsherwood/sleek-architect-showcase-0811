@@ -84,7 +84,7 @@ const BillionaireMigration = () => {
             <p className="text-white/50 mb-3 md:mb-5 font-bold" style={labelStyle}>
               AUSTIN LUXURY REAL ESTATE
             </p>
-            <h1 className="text-3xl md:text-6xl lg:text-7xl font-display font-light text-white mb-4 md:mb-6 leading-[1.08]">
+            <h1 className="text-3xl md:text-6xl lg:text-7xl font-display font-normal text-white mb-4 md:mb-6 leading-[1.08]">
               Why Billionaires Are Moving to Austin
             </h1>
             <p className="text-base md:text-xl text-white/80 leading-relaxed max-w-[620px] font-light mb-6 md:mb-10">
@@ -147,7 +147,7 @@ const BillionaireMigration = () => {
 
               {/* Section 2 — The Billionaire Migration */}
               <section>
-                <h2 className="text-2xl md:text-3xl font-display font-light text-architectural mt-10 mb-4">
+                <h2 className="text-2xl md:text-3xl font-display font-normal text-architectural mt-10 mb-4">
                   The Billionaire Migration Is Real
                 </h2>
                 <p className="text-foreground/60 mb-5">
@@ -213,7 +213,7 @@ const BillionaireMigration = () => {
 
               {/* Section 3 — Why They're Leaving California */}
               <section>
-                <h2 className="text-2xl md:text-3xl font-display font-light text-architectural mt-10 mb-4">
+                <h2 className="text-2xl md:text-3xl font-display font-normal text-architectural mt-10 mb-4">
                   Why They're Leaving California
                 </h2>
                 <p className="text-foreground/60 mb-5">
@@ -242,7 +242,7 @@ const BillionaireMigration = () => {
 
               {/* Section 4 — Regulation and Speed */}
               <section>
-                <h2 className="text-2xl md:text-3xl font-display font-light text-architectural mt-10 mb-4">
+                <h2 className="text-2xl md:text-3xl font-display font-normal text-architectural mt-10 mb-4">
                   Regulation and Speed
                 </h2>
                 <p className="text-foreground/60 mb-[18px]">
@@ -255,7 +255,7 @@ const BillionaireMigration = () => {
 
               {/* Section 5 — Lifestyle Without Compromise */}
               <section>
-                <h2 className="text-2xl md:text-3xl font-display font-light text-architectural mt-10 mb-4">
+                <h2 className="text-2xl md:text-3xl font-display font-normal text-architectural mt-10 mb-4">
                   Lifestyle Without Compromise
                 </h2>
                 <p className="text-foreground/60 mb-[18px]">
@@ -271,7 +271,7 @@ const BillionaireMigration = () => {
 
               {/* Section 6 — Network Effects */}
               <section>
-                <h2 className="text-2xl md:text-3xl font-display font-light text-architectural mt-10 mb-4">
+                <h2 className="text-2xl md:text-3xl font-display font-normal text-architectural mt-10 mb-4">
                   Network Effects
                 </h2>
                 <p className="text-foreground/60 mb-[18px]">
@@ -288,7 +288,7 @@ const BillionaireMigration = () => {
 
               {/* Section 7 — Impact on Real Estate */}
               <section>
-                <h2 className="text-2xl md:text-3xl font-display font-light text-architectural mt-10 mb-4">
+                <h2 className="text-2xl md:text-3xl font-display font-normal text-architectural mt-10 mb-4">
                   Impact on Real Estate
                 </h2>
                 <p className="text-foreground/60 mb-5">
@@ -336,7 +336,7 @@ const BillionaireMigration = () => {
 
               {/* Section 8 — The Bottom Line */}
               <section>
-                <h2 className="text-2xl md:text-3xl font-display font-light text-architectural mt-10 mb-4">
+                <h2 className="text-2xl md:text-3xl font-display font-normal text-architectural mt-10 mb-4">
                   The Bottom Line
                 </h2>
                 <p className="text-foreground/60 mb-[18px]">
@@ -351,7 +351,7 @@ const BillionaireMigration = () => {
 
             {/* Featured Homes — RealScout Widget (wider) */}
             <div className="mt-20">
-              <h2 className="text-2xl md:text-3xl font-display font-light text-architectural mb-3">
+              <h2 className="text-2xl md:text-3xl font-display font-normal text-architectural mb-3">
                 Featured Austin Luxury Homes
               </h2>
               <p className="text-foreground/50 text-[15px] font-light mb-8">
@@ -382,7 +382,7 @@ const BillionaireMigration = () => {
           <div className="max-w-[700px] mx-auto">
             {/* CTA Section */}
             <section className="text-center py-20 mt-20 bg-muted -mx-6 px-6 rounded-sm">
-              <h2 className="text-2xl md:text-3xl font-display font-light text-architectural mb-4">
+              <h2 className="text-2xl md:text-3xl font-display font-normal text-architectural mb-4">
                 Access Private Austin Opportunities
               </h2>
               <p className="text-foreground/55 mb-10 max-w-2xl mx-auto">
@@ -411,7 +411,7 @@ const BillionaireMigration = () => {
 
             {/* ── Internal Links ── */}
             <section className="mt-16 pt-12 border-t border-border">
-              <h2 className="text-2xl font-display font-light text-architectural mb-6">
+              <h2 className="text-2xl font-display font-normal text-architectural mb-6">
                 Explore Austin Real Estate
               </h2>
               <div className="grid sm:grid-cols-2 gap-4">

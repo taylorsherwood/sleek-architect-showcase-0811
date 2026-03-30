@@ -126,7 +126,7 @@ const PrivateOpportunities = ({ variant = "light" }: PrivateOpportunitiesProps) 
                 PRIVATE ACCESS
               </p>
               <h2
-                className={`text-3xl md:text-4xl font-display font-light leading-tight mb-4 ${
+                className={`text-3xl md:text-4xl font-display font-normal leading-tight mb-4 ${
                   isDark ? "text-white" : "text-foreground"
                 }`}
               >

@@ -63,7 +63,7 @@ const ExpertiseSection = () => {
                     }`}>
                     
                       <block.icon className={`text-gold mb-5 ${isFeatured ? "w-8 h-8" : "w-7 h-7"}`} />
-                      <h3 className={`font-display font-light text-architectural mb-2.5 group-hover:text-muted-foreground transition-colors duration-300 ${
+                      <h3 className={`font-display font-normal text-architectural mb-2.5 group-hover:text-muted-foreground transition-colors duration-300 ${
                         isFeatured ? "text-[1.35rem]" : "text-xl"
                       }`}>
                         {block.title}

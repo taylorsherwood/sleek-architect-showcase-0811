@@ -230,7 +230,7 @@ const GlobalLuxuryAdvertising = () => {
 
               {/* Headline */}
               <h2
-                className="text-5xl md:text-7xl lg:text-[5.2rem] font-display font-light text-primary-foreground leading-[1.05] mb-6"
+                className="text-5xl md:text-7xl lg:text-[5.2rem] font-display font-normal text-primary-foreground leading-[1.05] mb-6"
                 style={revealStyle(hero.visible, 420)}>
                 Your Property,
                 <br />
@@ -251,7 +251,7 @@ const GlobalLuxuryAdvertising = () => {
               style={revealStyle(hero.visible, 700)}>
               <div className="bg-background/10 backdrop-blur-md border border-primary-foreground/15 p-8 md:p-10 max-w-sm">
                 <p className="text-minimal text-gold mb-3 font-extrabold">VALUATION REPORT</p>
-                <h3 className="text-2xl md:text-3xl font-display font-light text-primary-foreground mb-4 leading-tight">
+                <h3 className="text-2xl md:text-3xl font-display font-normal text-primary-foreground mb-4 leading-tight">
                   What Is Your Property Worth?
                 </h3>
                 <p className="text-primary-foreground/60 text-sm leading-relaxed mb-8">
@@ -281,7 +281,7 @@ const GlobalLuxuryAdvertising = () => {
             transition: "opacity 1.8s cubic-bezier(0.16,1,0.3,1) 200ms",
           }}>
           <span
-            className="absolute font-display font-light uppercase whitespace-nowrap"
+            className="absolute font-display font-normal uppercase whitespace-nowrap"
             style={{
               fontSize: "clamp(2.5rem, 4.5vw, 4.2rem)",
               letterSpacing: "0.14em",
@@ -302,7 +302,7 @@ const GlobalLuxuryAdvertising = () => {
             {/* Left – text */}
             <div className="max-w-[560px]" style={revealStyle(platforms1.visible, 0)}>
               <p className="text-minimal text-gold mb-4 font-extrabold">GLOBAL REACH</p>
-              <h2 className="text-3xl md:text-5xl font-display font-light text-architectural mb-8">
+              <h2 className="text-3xl md:text-5xl font-display font-normal text-architectural mb-8">
                 Featured Across <br /> Recognized Luxury Media
               </h2>
               <p
@@ -351,7 +351,7 @@ const GlobalLuxuryAdvertising = () => {
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16" style={revealStyle(cards.visible, 0)}>
               <p className="text-minimal text-gold mb-4 font-extrabold">MARKETING EXECUTION</p>
-              <h2 className="text-3xl md:text-5xl font-display font-light text-architectural">
+              <h2 className="text-3xl md:text-5xl font-display font-normal text-architectural">
                 Three Pillars of Premium Presentation
               </h2>
             </div>
@@ -394,7 +394,7 @@ const GlobalLuxuryAdvertising = () => {
               WHY THIS MATTERS
             </p>
             <h2
-              className="text-3xl md:text-5xl font-display font-light text-architectural mb-6"
+              className="text-3xl md:text-5xl font-display font-normal text-architectural mb-6"
               style={revealStyle(why.visible, 150)}>
               Luxury Exposure That Drives Better Results
             </h2>
@@ -451,7 +451,7 @@ const GlobalLuxuryAdvertising = () => {
               CUSTOM STRATEGY
             </p>
             <h2
-              className="text-3xl md:text-5xl font-display font-light text-architectural mb-6"
+              className="text-3xl md:text-5xl font-display font-normal text-architectural mb-6"
               style={revealStyle(cta.visible, 150)}>
               See Your Property Marketing Plan
             </h2>

@@ -35,7 +35,7 @@ const AustinLuxuryHomes = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <p className="text-minimal text-gold mb-4">AUSTIN LUXURY REAL ESTATE</p>
-            <h1 className="text-5xl md:text-7xl font-display font-light text-architectural mb-8">
+            <h1 className="text-5xl md:text-7xl font-display font-normal text-architectural mb-8">
               Austin Luxury Homes for Sale
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
@@ -55,7 +55,7 @@ const AustinLuxuryHomes = () => {
 
             {/* Market Overview */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Austin's Luxury Real Estate Market
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
@@ -71,7 +71,7 @@ const AustinLuxuryHomes = () => {
 
             {/* Property Types */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Types of Luxury Properties in Austin
               </h2>
 
@@ -129,7 +129,7 @@ const AustinLuxuryHomes = () => {
 
             {/* All Community Links */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-8">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-8">
                 Explore Austin's Luxury Communities
               </h2>
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -140,7 +140,7 @@ const AustinLuxuryHomes = () => {
                     className="group border-2 border-border p-6 rounded-lg hover:border-gold transition-colors duration-500"
                   >
                     <p className="text-minimal text-gold mb-1">{c.priceRange}</p>
-                    <h3 className="text-lg font-display font-light text-architectural group-hover:text-muted-foreground transition-colors mb-1">
+                    <h3 className="text-lg font-display font-normal text-architectural group-hover:text-muted-foreground transition-colors mb-1">
                       {c.name}
                     </h3>
                     <p className="text-minimal text-muted-foreground group-hover:text-gold transition-colors duration-500">VIEW COMMUNITY →</p>
@@ -151,7 +151,7 @@ const AustinLuxuryHomes = () => {
 
             {/* Why Echelon */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Why Work with Echelon Property Group
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
@@ -187,7 +187,7 @@ const AustinLuxuryHomes = () => {
 
             {/* FAQ */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-8">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-8">
                 Frequently Asked Questions About Austin Luxury Real Estate
               </h2>
               <div className="space-y-6">
@@ -202,7 +202,7 @@ const AustinLuxuryHomes = () => {
 
             {/* CTA */}
             <section className="text-center py-16 bg-muted -mx-6 px-6">
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-4">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-4">
                 Start Your Austin Luxury Home Search
               </h2>
               <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">

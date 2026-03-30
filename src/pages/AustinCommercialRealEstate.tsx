@@ -64,7 +64,7 @@ const AustinCommercialRealEstate = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <p className="text-minimal text-gold mb-4">AUSTIN COMMERCIAL REAL ESTATE</p>
-            <h1 className="text-5xl md:text-7xl font-display font-light text-architectural mb-8">
+            <h1 className="text-5xl md:text-7xl font-display font-normal text-architectural mb-8">
               Austin Commercial Real Estate
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
@@ -81,7 +81,7 @@ const AustinCommercialRealEstate = () => {
 
             {/* Market Overview */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Why Austin Is a Top Commercial Real Estate Market
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
@@ -97,7 +97,7 @@ const AustinCommercialRealEstate = () => {
 
             {/* Tenant Representation */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Tenant Representation
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
@@ -113,7 +113,7 @@ const AustinCommercialRealEstate = () => {
 
             {/* Investment Acquisitions */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Investment Property Acquisitions
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
@@ -129,7 +129,7 @@ const AustinCommercialRealEstate = () => {
 
             {/* Development Land */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Development Land and Site Selection
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
@@ -145,7 +145,7 @@ const AustinCommercialRealEstate = () => {
 
             {/* Retail & Office */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Retail and Office Opportunities
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
@@ -161,7 +161,7 @@ const AustinCommercialRealEstate = () => {
 
             {/* Investment & Development Opportunities */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Austin Investment &amp; Development Opportunities
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
@@ -208,7 +208,7 @@ const AustinCommercialRealEstate = () => {
 
             {/* Multifamily Investment */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Austin Multifamily Investment Opportunities
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
@@ -224,7 +224,7 @@ const AustinCommercialRealEstate = () => {
 
             {/* Development Land */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Austin Development Land Opportunities
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
@@ -240,7 +240,7 @@ const AustinCommercialRealEstate = () => {
 
             {/* Retail & Office Investment */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Retail and Office Investment Properties in Austin
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
@@ -256,7 +256,7 @@ const AustinCommercialRealEstate = () => {
 
             {/* Market Trends */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Austin Commercial Real Estate Market Trends
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
@@ -293,7 +293,7 @@ const AustinCommercialRealEstate = () => {
 
             {/* Why Echelon */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Why Choose Echelon Property Group for Commercial Real Estate
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
@@ -329,7 +329,7 @@ const AustinCommercialRealEstate = () => {
 
             {/* FAQ */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-8">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-8">
                 Frequently Asked Questions About Austin Commercial Real Estate
               </h2>
               <div className="space-y-6">
@@ -344,7 +344,7 @@ const AustinCommercialRealEstate = () => {
 
             {/* CTA */}
             <section className="text-center py-16 bg-muted -mx-6 px-6">
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-4">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-4">
                 Explore Austin Commercial Real Estate Opportunities
               </h2>
               <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
@@ -363,7 +363,7 @@ const AustinCommercialRealEstate = () => {
 
             {/* Internal Links */}
             <section>
-              <h2 className="text-2xl font-display font-light text-architectural mb-6">
+              <h2 className="text-2xl font-display font-normal text-architectural mb-6">
                 Explore More
               </h2>
               <div className="grid sm:grid-cols-2 gap-4">

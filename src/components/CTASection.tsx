@@ -18,7 +18,7 @@ const CTASection = () => {
       <div className="absolute inset-0 bg-foreground/60" />
       <div className="relative z-10 container mx-auto px-6 text-center">
         <p className="text-minimal text-gold mb-6 font-extrabold">READY TO SELL?</p>
-        <h2 className="text-4xl md:text-6xl font-display font-light text-warm-cream text-architectural mb-6">Your Property Deserves
+        <h2 className="text-4xl md:text-6xl font-display font-normal text-warm-cream text-architectural mb-6">Your Property Deserves
           <br />
           <span className="italic">Exceptional</span> Marketing
         </h2>

@@ -19,7 +19,7 @@ const NotFound = () => {
       {/* Large decorative 404 */}
       <span
         aria-hidden="true"
-        className="absolute select-none pointer-events-none font-display font-light text-[28vw] leading-none text-primary-foreground/[0.03] tracking-tight"
+        className="absolute select-none pointer-events-none font-display font-normal text-[28vw] leading-none text-primary-foreground/[0.03] tracking-tight"
       >
         404
       </span>

@@ -221,7 +221,7 @@ const BestNeighborhoodsAustin = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <p className="text-minimal text-gold mb-4">2026 NEIGHBORHOOD GUIDE</p>
-            <h1 className="text-5xl md:text-7xl font-display font-light text-architectural mb-8">
+            <h1 className="text-5xl md:text-7xl font-display font-normal text-architectural mb-8">
               Best Neighborhoods in Austin Texas
             </h1>
           </div>
@@ -251,7 +251,7 @@ const BestNeighborhoodsAustin = () => {
 
             {/* Best Luxury Neighborhoods */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-8">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-8">
                 Best Luxury Neighborhoods in Austin
               </h2>
               <div className="space-y-12">
@@ -295,7 +295,7 @@ const BestNeighborhoodsAustin = () => {
 
             {/* Best Waterfront Neighborhoods */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-8">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-8">
                 Best Waterfront Neighborhoods in Austin
               </h2>
               <div className="space-y-12">
@@ -335,7 +335,7 @@ const BestNeighborhoodsAustin = () => {
 
             {/* Best Walkable Neighborhoods */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-8">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-8">
                 Best Walkable Neighborhoods in Austin
               </h2>
               <div className="space-y-12">
@@ -375,7 +375,7 @@ const BestNeighborhoodsAustin = () => {
 
             {/* Best Investment Areas */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-8">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-8">
                 Best Investment Areas in Austin
               </h2>
               <div className="space-y-12">
@@ -405,7 +405,7 @@ const BestNeighborhoodsAustin = () => {
 
             {/* Market Overview */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Austin Real Estate Market Overview
               </h2>
               <div className="space-y-4">
@@ -426,7 +426,7 @@ const BestNeighborhoodsAustin = () => {
 
             {/* FAQ */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-8">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-8">
                 Frequently Asked Questions
               </h2>
               <div className="space-y-6">
@@ -445,7 +445,7 @@ const BestNeighborhoodsAustin = () => {
 
             {/* Internal Links */}
             <section className="border border-border p-8">
-              <h2 className="text-2xl font-display font-light text-architectural mb-6">
+              <h2 className="text-2xl font-display font-normal text-architectural mb-6">
                 Explore Austin Real Estate
               </h2>
               <div className="grid sm:grid-cols-2 gap-4">
@@ -490,7 +490,7 @@ const BestNeighborhoodsAustin = () => {
 
             {/* About Echelon */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
 
               </h2>
               <div className="space-y-4">
@@ -507,7 +507,7 @@ const BestNeighborhoodsAustin = () => {
 
             {/* CTA */}
             <section className="text-center py-12 bg-muted -mx-6 px-6">
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-4">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-4">
                 Ready to Explore Austin?
               </h2>
               <p className="text-muted-foreground mb-8">

@@ -35,7 +35,7 @@ const MovingToAustin = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <p className="text-minimal text-gold mb-4">RELOCATION GUIDE</p>
-            <h1 className="text-5xl md:text-7xl font-display font-light text-architectural mb-8">
+            <h1 className="text-5xl md:text-7xl font-display font-normal text-architectural mb-8">
               Moving to Austin Texas
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
@@ -52,7 +52,7 @@ const MovingToAustin = () => {
           <div className="max-w-4xl mx-auto space-y-12">
 
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Why Austin Is Attracting America's Top Talent
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
@@ -67,7 +67,7 @@ const MovingToAustin = () => {
             </section>
 
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Cost of Living and Tax Advantages
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
@@ -82,7 +82,7 @@ const MovingToAustin = () => {
             </section>
 
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Best Austin Neighborhoods for Relocating Buyers
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
@@ -138,7 +138,7 @@ const MovingToAustin = () => {
             </section>
 
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Schools and Education in Austin
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
@@ -153,7 +153,7 @@ const MovingToAustin = () => {
             </section>
 
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Austin's Lifestyle and Culture
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
@@ -168,7 +168,7 @@ const MovingToAustin = () => {
             </section>
 
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Austin's Technology Economy and Job Market
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
@@ -183,7 +183,7 @@ const MovingToAustin = () => {
             </section>
 
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Tips for a Successful Austin Relocation
               </h2>
               <div className="space-y-4">
@@ -208,7 +208,7 @@ const MovingToAustin = () => {
 
             {/* FAQ */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-8">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-8">
                 Frequently Asked Questions About Moving to Austin
               </h2>
               <div className="space-y-6">
@@ -223,7 +223,7 @@ const MovingToAustin = () => {
 
             {/* CTA */}
             <section className="text-center py-16 bg-muted -mx-6 px-6">
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-4">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-4">
                 Planning Your Move to Austin?
               </h2>
               <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
@@ -245,7 +245,7 @@ const MovingToAustin = () => {
       <section className="py-16 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-display font-light text-architectural mb-6">
+            <h2 className="text-2xl font-display font-normal text-architectural mb-6">
               Explore Austin Real Estate
             </h2>
             <div className="grid sm:grid-cols-2 gap-4">

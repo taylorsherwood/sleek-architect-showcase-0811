@@ -108,7 +108,7 @@ const OffMarketDealsAustin = () => {
             <p className="text-white/50 mb-3 md:mb-5 font-bold" style={labelStyle}>
               AUSTIN INVESTMENT REAL ESTATE
             </p>
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-display font-light text-white mb-4 md:mb-6 leading-[1.08]">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-display font-normal text-white mb-4 md:mb-6 leading-[1.08]">
               How to Find Off-Market Real Estate Deals in Austin
             </h1>
             <p className="text-base md:text-lg text-white/80 leading-relaxed max-w-[620px] font-light mb-6 md:mb-10">
@@ -183,7 +183,7 @@ const OffMarketDealsAustin = () => {
 
             {/* Key Takeaways */}
             <section id="key-takeaways" className="mb-14 border-l-2 border-gold pl-6 md:pl-8">
-              <h2 className="text-2xl md:text-3xl font-display font-light text-foreground mb-6">Key Takeaways</h2>
+              <h2 className="text-2xl md:text-3xl font-display font-normal text-foreground mb-6">Key Takeaways</h2>
               <ul className="space-y-3 text-foreground/60">
                 <li className="flex items-start gap-3">
                   <span className="text-gold mt-1.5 text-xs">■</span>
@@ -206,7 +206,7 @@ const OffMarketDealsAustin = () => {
 
             {/* What Is an Off-Market Deal */}
             <section id="what-is-off-market" className="space-y-[18px] mb-14">
-              <h2 className="text-2xl md:text-3xl font-display font-light text-foreground mb-4">What Are Off-Market Real Estate Deals in Austin?</h2>
+              <h2 className="text-2xl md:text-3xl font-display font-normal text-foreground mb-4">What Are Off-Market Real Estate Deals in Austin?</h2>
               <p className="text-foreground/60">
                 Off-market real estate refers to properties that are available for sale but are not publicly listed on the MLS or major consumer portals. These are sometimes called private listings, pocket listings, or whisper listings.
               </p>
@@ -226,7 +226,7 @@ const OffMarketDealsAustin = () => {
 
             {/* Why Off-Market Deals Matter */}
             <section id="why-off-market-matters" className="space-y-[18px] mb-14">
-              <h2 className="text-2xl md:text-3xl font-display font-light text-foreground mb-4">Why Off-Market Deals Matter for Austin Investors</h2>
+              <h2 className="text-2xl md:text-3xl font-display font-normal text-foreground mb-4">Why Off-Market Deals Matter for Austin Investors</h2>
               <p className="text-foreground/60">
                 Austin's market has matured, but opportunity has not disappeared. It has simply become more selective.
               </p>
@@ -251,7 +251,7 @@ const OffMarketDealsAustin = () => {
 
             {/* Why Best Deals Stay Private */}
             <section id="why-best-deals-stay-private" className="space-y-[18px] mb-14">
-              <h2 className="text-2xl md:text-3xl font-display font-light text-foreground mb-4">Why Many of the Best Deals Never Hit the MLS</h2>
+              <h2 className="text-2xl md:text-3xl font-display font-normal text-foreground mb-4">Why Many of the Best Deals Never Hit the MLS</h2>
               <p className="text-foreground/60">
                 There are a few reasons the strongest opportunities often stay private:
               </p>
@@ -275,10 +275,10 @@ const OffMarketDealsAustin = () => {
 
             {/* How Investors Find Deals */}
             <section id="how-investors-find-deals" className="space-y-[18px] mb-14">
-              <h2 className="text-2xl md:text-3xl font-display font-light text-foreground mb-6">How Austin Investors Find Off-Market Properties</h2>
+              <h2 className="text-2xl md:text-3xl font-display font-normal text-foreground mb-6">How Austin Investors Find Off-Market Properties</h2>
 
               {/* Strategy 1 */}
-              <h2 className="text-xl md:text-2xl font-display font-light text-foreground mt-8 mb-3">1. Work With a Broker Who Sources Beyond the MLS</h2>
+              <h2 className="text-xl md:text-2xl font-display font-normal text-foreground mt-8 mb-3">1. Work With a Broker Who Sources Beyond the MLS</h2>
               <p className="text-foreground/60">
                 The most effective path is working with an advisor who is active in the local ecosystem and understands more than just listed inventory.
               </p>
@@ -295,7 +295,7 @@ const OffMarketDealsAustin = () => {
               </p>
 
               {/* Strategy 2 */}
-              <h2 className="text-xl md:text-2xl font-display font-light text-foreground mt-10 mb-3">2. Focus on High-Opportunity Submarkets</h2>
+              <h2 className="text-xl md:text-2xl font-display font-normal text-foreground mt-10 mb-3">2. Focus on High-Opportunity Submarkets</h2>
               <p className="text-foreground/60">
                 Off-market sourcing is far more effective when paired with a targeted location strategy. In Austin, buyers often focus on:
               </p>
@@ -309,7 +309,7 @@ const OffMarketDealsAustin = () => {
               </p>
 
               {/* Strategy 3 */}
-              <h2 className="text-xl md:text-2xl font-display font-light text-foreground mt-10 mb-3">3. Use Direct-to-Owner Outreach</h2>
+              <h2 className="text-xl md:text-2xl font-display font-normal text-foreground mt-10 mb-3">3. Use Direct-to-Owner Outreach</h2>
               <p className="text-foreground/60">
                 Some of the best off-market deals are created, not found. That can include targeted mail campaigns, curated owner outreach, data-backed property identification, and relationship-based introductions.
               </p>
@@ -318,7 +318,7 @@ const OffMarketDealsAustin = () => {
               </p>
 
               {/* Strategy 4 */}
-              <h2 className="text-xl md:text-2xl font-display font-light text-foreground mt-10 mb-3">4. Build Access to Private Deal Networks</h2>
+              <h2 className="text-xl md:text-2xl font-display font-normal text-foreground mt-10 mb-3">4. Build Access to Private Deal Networks</h2>
               <p className="text-foreground/60">
                 Private deal flow often moves through quiet channels: broker networks, investor circles, attorney and CPA referrals, builder relationships, and repeat sellers. This is why buyers who rely only on search sites miss so much of the real action. In Austin, access frequently follows trust.
               </p>
@@ -329,7 +329,7 @@ const OffMarketDealsAustin = () => {
               </p>
 
               {/* Strategy 5 */}
-              <h2 className="text-xl md:text-2xl font-display font-light text-foreground mt-10 mb-3">5. Understand the Story Behind the Property</h2>
+              <h2 className="text-xl md:text-2xl font-display font-normal text-foreground mt-10 mb-3">5. Understand the Story Behind the Property</h2>
               <p className="text-foreground/60">
                 The best off-market opportunities are not always obvious from surface-level numbers. A property may be attractive because of assemblage potential, zoning or entitlement upside, redevelopment angle, long-term location shifts, seller financing flexibility, or quiet distress.
               </p>
@@ -340,7 +340,7 @@ const OffMarketDealsAustin = () => {
 
             {/* Where Buyers Go Wrong */}
             <section id="where-buyers-go-wrong" className="space-y-[18px] mb-14">
-              <h2 className="text-2xl md:text-3xl font-display font-light text-foreground mb-4">Common Mistakes When Sourcing Off-Market Deals</h2>
+              <h2 className="text-2xl md:text-3xl font-display font-normal text-foreground mb-4">Common Mistakes When Sourcing Off-Market Deals</h2>
               <p className="text-foreground/60">Many buyers make the same mistakes:</p>
               <ul className="space-y-2 text-foreground/60 pl-5">
                 <li className="flex items-start gap-3"><span className="text-gold mt-1.5 text-xs">■</span>They wait for alerts instead of creating opportunities</li>
@@ -356,7 +356,7 @@ const OffMarketDealsAustin = () => {
 
             {/* Who Benefits Most */}
             <section id="who-benefits-most" className="space-y-[18px] mb-14">
-              <h2 className="text-2xl md:text-3xl font-display font-light text-foreground mb-4">What Types of Austin Buyers Benefit Most From Off-Market Access?</h2>
+              <h2 className="text-2xl md:text-3xl font-display font-normal text-foreground mb-4">What Types of Austin Buyers Benefit Most From Off-Market Access?</h2>
               <p className="text-foreground/60">Off-market opportunities can be especially valuable for:</p>
               <ul className="space-y-2 text-foreground/60 pl-5">
                 <li className="flex items-start gap-3"><span className="text-gold mt-1.5 text-xs">■</span>Luxury buyers seeking privacy or rare inventory</li>
@@ -372,7 +372,7 @@ const OffMarketDealsAustin = () => {
 
             {/* How Echelon Helps */}
             <section id="how-echelon-helps" className="space-y-[18px] mb-14">
-              <h2 className="text-2xl md:text-3xl font-display font-light text-foreground mb-4">Working With an Austin Advisor to Access Private Deals</h2>
+              <h2 className="text-2xl md:text-3xl font-display font-normal text-foreground mb-4">Working With an Austin Advisor to Access Private Deals</h2>
               <p className="text-foreground/60">
                 At Echelon Property Group, the focus is not just on what is publicly listed. It is on helping clients identify and access opportunities that align with their goals across luxury, land, development, and investment categories.
               </p>
@@ -393,7 +393,7 @@ const OffMarketDealsAustin = () => {
 
             {/* CTA */}
             <section className="mb-14 border border-border/60 p-8 md:p-10 text-center">
-              <h2 className="text-2xl md:text-3xl font-display font-light text-foreground mb-4">Explore Austin Investment Opportunities</h2>
+              <h2 className="text-2xl md:text-3xl font-display font-normal text-foreground mb-4">Explore Austin Investment Opportunities</h2>
               <p className="text-foreground/60 max-w-[540px] mx-auto mb-8">
                 Looking for Austin investment opportunities, luxury homes, or off-market real estate? Connect with Echelon Property Group to explore strategic opportunities across Austin's luxury, land, and investment markets.
               </p>
@@ -417,7 +417,7 @@ const OffMarketDealsAustin = () => {
 
             {/* FAQ */}
             <section id="faq" className="mb-14">
-              <h2 className="text-2xl md:text-3xl font-display font-light text-foreground mb-8">Frequently Asked Questions</h2>
+              <h2 className="text-2xl md:text-3xl font-display font-normal text-foreground mb-8">Frequently Asked Questions</h2>
               <div className="space-y-8">
                 {faqs.map((faq, i) => (
                   <div key={i}>

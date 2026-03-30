@@ -61,7 +61,7 @@ const Communities = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
             <p className="text-minimal text-gold mb-4 font-extrabold">LUXURY COMMUNITIES</p>
-            <h1 className="text-5xl md:text-7xl font-display font-light text-architectural mb-8">
+            <h1 className="text-5xl md:text-7xl font-display font-normal text-architectural mb-8">
               Austin's Finest Neighborhoods
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl">
@@ -100,7 +100,7 @@ const Communities = () => {
                       )}
                     </div>
                     <p className="text-minimal text-gold mb-2">{community.priceRange}</p>
-                    <h2 className="text-2xl font-display font-light text-architectural group-hover:text-muted-foreground transition-colors duration-300 mb-2">
+                    <h2 className="text-2xl font-display font-normal text-architectural group-hover:text-muted-foreground transition-colors duration-300 mb-2">
                       {community.name}
                     </h2>
                     <p className="text-minimal text-muted-foreground">EXPLORE COMMUNITY →</p>
@@ -116,7 +116,7 @@ const Communities = () => {
       <section className="py-28 bg-secondary">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-8">
+            <h2 className="text-4xl md:text-5xl font-display font-normal text-architectural mb-8">
               Luxury Living in Austin's Best Neighborhoods
             </h2>
             <div className="space-y-6 text-muted-foreground leading-relaxed">
@@ -127,7 +127,7 @@ const Communities = () => {
                 What makes Austin's luxury neighborhoods exceptional is the rare combination of natural beauty, urban convenience, and economic opportunity. Residents enjoy access to world-class dining, live music, outdoor recreation, and a thriving technology economy — all within a state that levies no personal income tax.
               </p>
 
-              <h3 className="text-2xl font-display font-light text-architectural pt-4">
+              <h3 className="text-2xl font-display font-normal text-architectural pt-4">
                 Why Live in Austin's Luxury Communities
               </h3>
               <p>
@@ -137,7 +137,7 @@ const Communities = () => {
                 For those seeking more space, the Texas Hill Country and Dripping Springs provide sprawling ranch estates, vineyard properties, and acreage surrounded by rolling terrain and live oaks. Downtown Austin and Travis Heights cater to buyers who prefer urban energy, walkable streetscapes, and proximity to the city's cultural core.
               </p>
 
-              <h3 className="text-2xl font-display font-light text-architectural pt-4">
+              <h3 className="text-2xl font-display font-normal text-architectural pt-4">
                 Market Insights Across Austin Neighborhoods
               </h3>
               <p>
@@ -147,7 +147,7 @@ const Communities = () => {
                 Inventory in Austin's most exclusive communities remains limited, and many of the finest properties trade off-market through private channels. Working with an agent who has deep neighborhood expertise and access to off-market inventory is essential for buyers targeting these communities.
               </p>
 
-              <h3 className="text-2xl font-display font-light text-architectural pt-4">
+              <h3 className="text-2xl font-display font-normal text-architectural pt-4">
                 Expert Guidance for Every Neighborhood
               </h3>
               <p>
@@ -162,7 +162,7 @@ const Communities = () => {
       <section className="py-28 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-8">
+            <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-8">
               Frequently Asked Questions About Austin Communities
             </h2>
             <div className="space-y-6">

@@ -26,7 +26,7 @@ const PastTransactions = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto text-center">
             <p className="text-minimal text-gold mb-4 font-extrabold">OUR TRACK RECORD</p>
-            <h1 className="text-4xl md:text-6xl font-display font-light text-architectural mb-6">
+            <h1 className="text-4xl md:text-6xl font-display font-normal text-architectural mb-6">
               Past Transactions
             </h1>
             <p className="text-muted-foreground max-w-2xl mx-auto">
@@ -47,7 +47,7 @@ const PastTransactions = () => {
       <section className="py-28 bg-secondary">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-display font-light text-architectural mb-8">
+            <h2 className="text-4xl md:text-5xl font-display font-normal text-architectural mb-8">
               A Track Record Built on Results
             </h2>
             <div className="space-y-6 text-muted-foreground leading-relaxed">
@@ -58,7 +58,7 @@ const PastTransactions = () => {
                 What sets our transaction record apart is the volume of off-market and privately negotiated deals. Approximately 95% of our transactions are conducted through private channels, reflecting our clients' preference for discretion and our ability to source and close opportunities that never appear on public listing platforms.
               </p>
 
-              <h3 className="text-2xl font-display font-light text-architectural pt-4">
+              <h3 className="text-2xl font-display font-normal text-architectural pt-4">
                 Property Types We've Transacted
               </h3>
               <p>
@@ -68,14 +68,14 @@ const PastTransactions = () => {
                 This breadth of experience gives our clients a significant advantage. Whether you're evaluating a luxury home purchase, considering a 1031 exchange into commercial property, or assembling land for development, we bring relevant transaction experience and market knowledge to every engagement.
               </p>
 
-              <h3 className="text-2xl font-display font-light text-architectural pt-4">
+              <h3 className="text-2xl font-display font-normal text-architectural pt-4">
                 Neighborhoods Where We've Closed Deals
               </h3>
               <p>
                 Our transaction history includes properties across Austin's most prestigious addresses: Barton Creek, Westlake Hills, Lake Austin, Tarrytown, Rollingwood, Spanish Oaks, Dripping Springs, Travis Heights, Downtown Austin, Cat Mountain, Northwest Hills, and the greater Texas Hill Country. This deep neighborhood-level experience means we bring hyperlocal pricing insight, buyer demand data, and negotiation context that generalist agents simply cannot match.
               </p>
 
-              <h3 className="text-2xl font-display font-light text-architectural pt-4">
+              <h3 className="text-2xl font-display font-normal text-architectural pt-4">
                 Why Our Track Record Matters
               </h3>
               <p>
@@ -102,7 +102,7 @@ const PastTransactions = () => {
       <section className="py-16 bg-secondary">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-display font-light text-architectural mb-6">
+            <h2 className="text-2xl font-display font-normal text-architectural mb-6">
               Explore Austin Real Estate
             </h2>
             <div className="grid sm:grid-cols-2 gap-4">

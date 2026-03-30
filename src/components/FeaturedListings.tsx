@@ -120,7 +120,7 @@ const ListingCard = ({
             textShadow:
             "0 1px 6px rgba(0,0,0,0.5), 0 0 20px rgba(0,0,0,0.2)"
           }}>
-          <p className="text-[1.35rem] font-display font-light text-white mb-2 tracking-wide">
+          <p className="text-[1.35rem] font-display font-normal text-white mb-2 tracking-wide">
             {listing.price}
           </p>
           <p className="text-white/90 text-[13px] font-light">
@@ -192,7 +192,7 @@ const FeaturedListings = ({ hideRealScout = false }: FeaturedListingsProps) => {
                   FEATURED LISTINGS
                 </p>
                 <h2
-                  className="font-display font-light text-architectural"
+                  className="font-display font-normal text-architectural"
                   style={{
                     fontSize: "clamp(1.8rem, 3vw, 3rem)",
                     letterSpacing: "-0.01em"
@@ -258,7 +258,7 @@ const FeaturedListings = ({ hideRealScout = false }: FeaturedListingsProps) => {
                   }}>ON THE MARKET
                 </p>
                 <h2
-                  className="font-display font-light text-architectural"
+                  className="font-display font-normal text-architectural"
                   style={{
                     fontSize: "clamp(1.8rem, 3vw, 3rem)",
                     letterSpacing: "-0.01em"

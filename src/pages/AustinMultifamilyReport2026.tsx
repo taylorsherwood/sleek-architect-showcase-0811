@@ -205,7 +205,7 @@ const AustinMultifamilyReport2026 = () => {
             {/* text */}
             <div className="flex-1 text-center md:text-left">
               <p className="text-minimal text-[hsl(var(--gold))] mb-2">INVESTOR REPORT</p>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-light text-primary-foreground leading-[1.1] mb-3">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-normal text-primary-foreground leading-[1.1] mb-3">
                 Austin Multifamily Market Outlook 2026
               </h1>
               <p className="text-lg md:text-xl text-primary-foreground/65 leading-relaxed max-w-xl mb-2">
@@ -249,7 +249,7 @@ const AustinMultifamilyReport2026 = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-2xl mx-auto text-center">
             <p className="text-minimal text-[hsl(var(--gold))] mb-2">MARKET CONTEXT</p>
-            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-4">
+            <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-4">
               Why Austin Investors Are Watching 2026 Closely
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
@@ -270,7 +270,7 @@ const AustinMultifamilyReport2026 = () => {
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-8">
               <p className="text-minimal text-[hsl(var(--gold))] mb-2">REPORT OVERVIEW</p>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural">
                 What's Inside the Austin Multifamily Report
               </h2>
             </div>
@@ -295,7 +295,7 @@ const AustinMultifamilyReport2026 = () => {
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-8">
               <p className="text-minimal text-[hsl(var(--gold))] mb-2">KEY TAKEAWAYS</p>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural">
                 Key Takeaways for Austin Multifamily Investors
               </h2>
             </div>
@@ -316,7 +316,7 @@ const AustinMultifamilyReport2026 = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-2xl mx-auto text-center">
             <p className="text-minimal text-[hsl(var(--gold))] mb-2">ABOUT</p>
-            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-4">
+            <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-4">
               Echelon Property Group
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
@@ -337,7 +337,7 @@ const AustinMultifamilyReport2026 = () => {
           <div className="max-w-xl mx-auto">
             <div className="text-center mb-6">
               <p className="text-minimal text-[hsl(var(--gold))] mb-3">ACCESS THE REPORT</p>
-              <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-3">
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-3">
                 Get the Full Report
               </h2>
               <p className="text-muted-foreground">
@@ -348,7 +348,7 @@ const AustinMultifamilyReport2026 = () => {
             {submitted ? (
               <div className="text-center py-10 space-y-6">
                 <CheckCircle2 className="h-10 w-10 text-[hsl(var(--gold))] mx-auto" strokeWidth={1.4} />
-                <h3 className="text-2xl font-display font-light text-architectural">
+                <h3 className="text-2xl font-display font-normal text-architectural">
                   Your Report Is Ready
                 </h3>
                 <p className="text-muted-foreground max-w-md mx-auto leading-relaxed">
@@ -462,7 +462,7 @@ const AustinMultifamilyReport2026 = () => {
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-minimal text-[hsl(var(--gold))] mb-3">NEXT STEP</p>
-            <h2 className="text-3xl md:text-4xl font-display font-light text-primary-foreground leading-tight mb-3">
+            <h2 className="text-3xl md:text-4xl font-display font-normal text-primary-foreground leading-tight mb-3">
               Want a Tailored Multifamily Acquisition Strategy?
             </h2>
             <p className="text-primary-foreground/60 text-lg leading-relaxed mb-6 max-w-2xl mx-auto">

@@ -75,7 +75,7 @@ const Testimonials = () => {
             <p className="text-minimal text-gold mb-3 font-extrabold">
               CLIENT EXPERIENCES
             </p>
-            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-3">
+            <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-3">
               Trusted by Buyers, Sellers, and
               <br className="hidden md:block" />
               <span className="italic"> Investors</span> Across Austin

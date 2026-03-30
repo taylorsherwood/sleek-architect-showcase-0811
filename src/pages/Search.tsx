@@ -75,7 +75,7 @@ const SearchPage = () => {
             >
               AUSTIN REAL ESTATE
             </p>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-light text-architectural mb-6 text-warm-cream">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-normal text-architectural mb-6 text-warm-cream">
               Search All <span className="italic">Listings</span>
             </h1>
             <p className="text-lg md:text-xl text-warm-cream/70 max-w-2xl mx-auto font-light">
@@ -134,7 +134,7 @@ const SearchPage = () => {
       <section className="py-28 bg-secondary">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-display font-light text-architectural mb-8">
+            <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-8">
               Search Austin Real Estate Listings
             </h2>
             <div className="space-y-6 text-muted-foreground leading-relaxed">
@@ -146,7 +146,7 @@ const SearchPage = () => {
               </p>
             </div>
 
-            <h3 className="text-2xl font-display font-light text-architectural mt-10 mb-6">
+            <h3 className="text-2xl font-display font-normal text-architectural mt-10 mb-6">
               Frequently Asked Questions
             </h3>
             <div className="space-y-6">
@@ -158,7 +158,7 @@ const SearchPage = () => {
               ))}
             </div>
 
-            <h3 className="text-2xl font-display font-light text-architectural mt-10 mb-6">
+            <h3 className="text-2xl font-display font-normal text-architectural mt-10 mb-6">
               Explore Austin Real Estate
             </h3>
             <div className="grid sm:grid-cols-2 gap-4">

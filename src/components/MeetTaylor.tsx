@@ -27,7 +27,7 @@ const MeetTaylor = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
           <ScrollReveal>
-            <h3 className="text-2xl md:text-4xl font-display font-light text-architectural mb-3 text-center md:w-1/2">
+            <h3 className="text-2xl md:text-4xl font-display font-normal text-architectural mb-3 text-center md:w-1/2">
               Meet Taylor Sherwood
             </h3>
             <p className="text-[0.65rem] md:text-xs tracking-[0.1em] uppercase text-muted-foreground/60 mb-6 text-center md:w-1/2 leading-relaxed">

@@ -4,7 +4,7 @@ import Navigation from "@/components/Navigation";
 const Footer = lazy(() => import("@/components/Footer"));
 import AboutBlock from "@/components/AboutBlock";
 import SEOHead from "@/components/SEOHead";
-import SchemaMarkup, { createFAQSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
+import SchemaMarkup, { createFAQSchema, createBreadcrumbSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
 
 const faqs = [
   { question: "What is the most expensive neighborhood in Austin Texas?", answer: "Lake Austin waterfront is Austin's most expensive area, with estates regularly exceeding $10 million. Westlake Hills and Barton Creek also feature homes above $15 million. These neighborhoods offer limited inventory, premium amenities, and the strongest long-term appreciation in the Austin market." },

@@ -73,7 +73,7 @@ const Navigation = () => {
     { href: "/invest", label: "INVEST" },
     { href: "/communities", label: "COMMUNITIES" },
     { href: "/blog", label: "INSIGHTS" },
-    { href: "/invest", label: "PRIVATE ACCESS" },
+    { href: "/off-market-real-estate-austin", label: "PRIVATE ACCESS" },
     { href: "/about", label: "ABOUT" },
   ];
 

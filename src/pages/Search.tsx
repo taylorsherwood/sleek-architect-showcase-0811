@@ -2,7 +2,7 @@ import { lazy, Suspense, useMemo } from "react";
 import AboutBlock from "@/components/AboutBlock";
 import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";
-import SchemaMarkup, { realEstateAgentSchema, createFAQSchema } from "@/components/SchemaMarkup";
+import SchemaMarkup, { realEstateAgentSchema, createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import ScrollReveal from "@/components/ScrollReveal";
 import { Link, useSearchParams } from "react-router-dom";
 import gillisStreet from "@/assets/commercial-gillis-street.jpg";

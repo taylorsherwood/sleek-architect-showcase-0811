@@ -126,12 +126,13 @@ const CinematicVideoSection = () => {
 
               {/* Headline */}
               <h2
-                className="font-display font-medium text-white leading-[0.95] mb-2"
+                className="font-display font-medium leading-[0.95] mb-2"
                 style={{
                   ...reveal(visible, 120),
+                  color: "#F5F5F5",
                   fontSize: "clamp(2rem, 3.5vw, 2.75rem)",
                   letterSpacing: "-0.02em",
-                  textShadow: "0 2px 20px rgba(0,0,0,0.15)",
+                  textShadow: "0 1px 2px rgba(0,0,0,0.25)",
                 }}
               >
                 Luxury Marketing

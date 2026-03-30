@@ -148,7 +148,7 @@ const Hero = () => {
         style={{
           zIndex: 1,
           background: `
-            linear-gradient(to bottom, rgba(20,12,5,0.28) 0%, rgba(8,11,26,0.12) 45%, rgba(8,11,26,0.68) 100%)
+            linear-gradient(to bottom, rgba(20,12,5,0.18) 0%, rgba(8,11,26,0.08) 45%, rgba(8,11,26,0.50) 100%)
           `
         }} />
       

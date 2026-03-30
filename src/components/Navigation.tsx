@@ -92,9 +92,9 @@ const Navigation = () => {
       <div
         className="absolute inset-0 transition-all duration-500"
         style={{
-          background: isScrolled ? "rgba(13,13,13,0.95)" : "hsl(var(--background))",
-          backdropFilter: isScrolled ? "blur(8px)" : "none",
-          WebkitBackdropFilter: isScrolled ? "blur(8px)" : "none",
+          background: effectiveScrolled ? "rgba(13,13,13,0.95)" : "hsl(var(--background))",
+          backdropFilter: effectiveScrolled ? "blur(8px)" : "none",
+          WebkitBackdropFilter: effectiveScrolled ? "blur(8px)" : "none",
         }}
       />
       <div className="relative container mx-auto px-6 h-full flex items-center justify-between">

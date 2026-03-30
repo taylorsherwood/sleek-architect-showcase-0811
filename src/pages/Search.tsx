@@ -74,19 +74,54 @@ const SearchPage = () => {
       >
         <div className="container mx-auto px-6 text-center">
           <ScrollReveal>
+            <div className="flex justify-center mb-6">
+              <div style={{ width: 40, borderTop: "1px solid hsl(var(--gold))" }} />
+            </div>
             <p
               className="text-minimal mb-6"
               style={{ color: "hsl(var(--gold-light))" }}
             >
               AUSTIN REAL ESTATE
             </p>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-normal text-architectural mb-6 text-warm-cream">
-              Search All <span className="italic">Listings</span>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-normal text-architectural mb-6 text-warm-cream" style={{ fontStyle: "normal" }}>
+              Search All <span style={{ color: "hsl(var(--gold))" }}>Listings</span>
             </h1>
-            <p className="text-lg md:text-xl text-warm-cream/70 max-w-2xl mx-auto font-light">
+            <p className="max-w-2xl mx-auto" style={{
+              fontFamily: "'Jost', sans-serif",
+              fontWeight: 400,
+              fontSize: "17px",
+              color: "rgba(245, 243, 239, 0.85)",
+              letterSpacing: "0.03em",
+              lineHeight: 1.8,
+            }}>
               Explore every available home across Austin — from luxury estates
               to condos, new construction, and investment opportunities.
             </p>
+            <Link
+              to="#listings"
+              className="inline-block transition-all duration-300"
+              style={{
+                border: "1px solid hsl(var(--gold))",
+                color: "hsl(var(--gold))",
+                background: "transparent",
+                fontFamily: "'Jost', sans-serif",
+                fontSize: "11px",
+                letterSpacing: "0.18em",
+                padding: "14px 36px",
+                marginTop: "32px",
+                textTransform: "uppercase",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background = "hsl(var(--gold))";
+                e.currentTarget.style.color = "hsl(var(--black))";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background = "transparent";
+                e.currentTarget.style.color = "hsl(var(--gold))";
+              }}
+            >
+              EXPLORE LISTINGS
+            </Link>
             {filterSummary && (
               <div className="mt-6 inline-flex items-center gap-2 px-5 py-2 rounded-full border border-warm-cream/20 text-warm-cream/80 text-sm font-light">
                 <span>Filtering:</span>

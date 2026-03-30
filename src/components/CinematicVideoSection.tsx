@@ -127,7 +127,7 @@ const CinematicVideoSection = () => {
 
             {/* Right — Video */}
             <div
-              className="relative overflow-hidden mt-10 lg:mt-0"
+              className="relative overflow-hidden mt-10 lg:mt-0 lg:ml-6 xl:ml-10"
               style={{ ...reveal(visible, 350), borderRadius: 3 }}
             >
               {/* Top fade */}

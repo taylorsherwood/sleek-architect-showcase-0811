@@ -1069,7 +1069,7 @@ const Index = () => (
     <CommunitiesSection />
 
     {/* Parallax break — luxury interior */}
-    <div className="parallax-break" style={{ backgroundImage: "url('/placeholder.svg')" }} aria-hidden="true" />
+    <div className="parallax-break" style={{ backgroundImage: "url('/images/parallax-interior.jpg')" }} aria-hidden="true" />
 
     <InsightsSection />
     <LeadCapture />

@@ -967,8 +967,8 @@ const FinalCTA = () => (
           <p className="text-minimal text-gold mb-5">GET STARTED</p>
         </ScrollReveal>
         <ScrollReveal delay={80}>
-          <h2 className="font-display text-3xl md:text-[2.75rem] font-normal mb-5 leading-[1.1] tracking-[-0.01em]" style={{ color: "#FAFAF8" }}>
-            Work With <span className="italic">Echelon Property Group</span>
+          <h2 className="font-display text-3xl md:text-[2.75rem] font-normal mb-5 leading-[1.1] tracking-[0.03em]" style={{ color: "#FAFAF8" }}>
+            Work With Echelon Property Group
           </h2>
         </ScrollReveal>
         <ScrollReveal delay={150}>

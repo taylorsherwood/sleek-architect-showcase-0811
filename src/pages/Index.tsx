@@ -951,14 +951,14 @@ const FinalCTA = () => (
           <p className="text-minimal text-gold mb-5">GET STARTED</p>
         </ScrollReveal>
         <ScrollReveal delay={80}>
-          <h2 className="font-display text-3xl md:text-[2.75rem] font-normal mb-5 leading-[1.1] tracking-[0.03em]" style={{ color: "#FAFAF8" }}>
+          <h2 className="font-display text-3xl md:text-[2.75rem] font-normal mb-5 leading-[1.1] tracking-[0.03em] text-architectural">
             Work With
             <br />
             Echelon Property Group
           </h2>
         </ScrollReveal>
         <ScrollReveal delay={150}>
-          <p className="text-[15px] mb-12 max-w-[400px] mx-auto" style={{ fontFamily: '"Jost", sans-serif', fontWeight: 300, color: "rgba(250,250,248,0.7)", lineHeight: 1.8 }}>
+          <p className="text-[15px] mb-12 max-w-[400px] mx-auto text-muted-foreground" style={{ fontFamily: '"Jost", sans-serif', fontWeight: 300, lineHeight: 1.8 }}>
             Luxury real estate, redefined through strategy, access, and execution.
           </p>
           <div className="flex flex-col sm:flex-row gap-5 justify-center">
@@ -968,7 +968,7 @@ const FinalCTA = () => (
                 fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 400,
                 borderColor: "hsl(38 39% 61%)", color: "hsl(38 39% 61%)", background: "transparent",
               }}
-              onMouseEnter={(e) => { e.currentTarget.style.background = "hsl(38 39% 61%)"; e.currentTarget.style.color = "#0C0F24"; }}
+              onMouseEnter={(e) => { e.currentTarget.style.background = "hsl(38 39% 61%)"; e.currentTarget.style.color = "#fff"; }}
               onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = "hsl(38 39% 61%)"; }}>
               BUY PROPERTY
             </Link>
@@ -976,10 +976,10 @@ const FinalCTA = () => (
               className="inline-block text-center px-12 py-[14px] border transition-all duration-[400ms]"
               style={{
                 fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 400,
-                borderColor: "rgba(255,255,255,0.3)", color: "#FAFAF8", background: "transparent",
+                borderColor: "hsl(var(--foreground) / 0.25)", color: "hsl(var(--foreground))", background: "transparent",
               }}
-              onMouseEnter={(e) => { e.currentTarget.style.background = "hsl(38 39% 61%)"; e.currentTarget.style.color = "#0C0F24"; e.currentTarget.style.borderColor = "hsl(38 39% 61%)"; }}
-              onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = "#FAFAF8"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.3)"; }}>
+              onMouseEnter={(e) => { e.currentTarget.style.background = "hsl(38 39% 61%)"; e.currentTarget.style.color = "#fff"; e.currentTarget.style.borderColor = "hsl(38 39% 61%)"; }}
+              onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = "hsl(var(--foreground))"; e.currentTarget.style.borderColor = "hsl(var(--foreground) / 0.25)"; }}>
               SELL PROPERTY
             </Link>
           </div>

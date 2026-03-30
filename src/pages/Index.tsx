@@ -503,8 +503,8 @@ const FeaturedProperties = () => (
           <div className="text-center mb-16">
             <div className="w-10 h-px mx-auto mb-5" style={{ background: "hsl(38 39% 61%)" }} />
             <p className="text-minimal text-gold mb-5">FEATURED LISTINGS</p>
-            <h2 className="font-display text-3xl md:text-[2.75rem] font-normal text-foreground/90 mb-4 leading-[1.1] tracking-[-0.01em]">
-              Exceptional <span className="italic">Properties</span>
+            <h2 className="font-display text-3xl md:text-[2.75rem] font-normal text-foreground/90 mb-4 leading-[1.1] tracking-[0.03em]">
+              Exceptional Properties
             </h2>
             {/* Gold rule */}
             <div className="w-[60px] h-px mx-auto" style={{ background: "hsl(38 39% 61%)" }} />

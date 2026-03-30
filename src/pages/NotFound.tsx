@@ -35,7 +35,7 @@ const NotFound = () => {
             fontSize: "0.6rem",
             letterSpacing: "0.3em",
             textTransform: "uppercase",
-            fontFamily: '"Raleway", sans-serif',
+            fontFamily: '"Jost", sans-serif',
           }}
         >
           PAGE NOT FOUND
@@ -51,14 +51,14 @@ const NotFound = () => {
           <Link
             to="/"
             className="inline-block bg-primary-foreground text-primary px-10 py-4 hover:bg-gold hover:text-white transition-colors duration-300 tracking-[0.2em] uppercase font-medium"
-            style={{ fontSize: "0.65rem", fontFamily: '"Raleway", sans-serif' }}
+            style={{ fontSize: "0.65rem", fontFamily: '"Jost", sans-serif' }}
           >
             Return Home
           </Link>
           <Link
             to="/austin-luxury-homes-for-sale"
             className="inline-block border-2 border-primary-foreground/20 text-primary-foreground/70 px-10 py-4 hover:border-gold hover:text-gold transition-colors duration-500 tracking-[0.2em] uppercase font-medium"
-            style={{ fontSize: "0.65rem", fontFamily: '"Raleway", sans-serif' }}
+            style={{ fontSize: "0.65rem", fontFamily: '"Jost", sans-serif' }}
           >
             Explore Austin Homes
           </Link>

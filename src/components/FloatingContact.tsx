@@ -108,8 +108,8 @@ const FloatingContact = () => {
           />
         </div>
         <div className="flex flex-col items-start">
-          <span className="text-[10px] font-semibold tracking-[0.2em] uppercase text-[hsl(var(--gold))] group-hover:text-background transition-colors duration-500 leading-tight" style={{ fontFamily: '"Raleway", sans-serif' }}>CONTACT</span>
-          <span className="text-[7.5px] tracking-[0.14em] uppercase text-[hsl(var(--gold)/0.6)] group-hover:text-background/70 font-medium leading-tight mt-0.5" style={{ fontFamily: '"Raleway", sans-serif' }}>
+          <span className="text-[10px] font-semibold tracking-[0.2em] uppercase text-[hsl(var(--gold))] group-hover:text-background transition-colors duration-500 leading-tight" style={{ fontFamily: '"Jost", sans-serif' }}>CONTACT</span>
+          <span className="text-[7.5px] tracking-[0.14em] uppercase text-[hsl(var(--gold)/0.6)] group-hover:text-background/70 font-medium leading-tight mt-0.5" style={{ fontFamily: '"Jost", sans-serif' }}>
             PRIVATE ADVISOR
           </span>
         </div>

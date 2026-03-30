@@ -36,7 +36,7 @@ const LuxuryHomesAustin = () => {
           <div className="max-w-7xl mx-auto">
             <p
               className="text-gold mb-5 font-bold text-xs"
-              style={{ fontSize: "0.55rem", letterSpacing: "0.35em", textTransform: "uppercase", fontFamily: '"Raleway", sans-serif' }}>
+              style={{ fontSize: "0.55rem", letterSpacing: "0.35em", textTransform: "uppercase", fontFamily: '"Jost", sans-serif' }}>
               PRIVATE + CURATED OPPORTUNITIES
             </p>
             <h1 className="text-5xl md:text-7xl font-display font-normal text-architectural mb-6">
@@ -133,14 +133,14 @@ const LuxuryHomesAustin = () => {
                 <Link
                   to="/connect"
                   className="inline-block bg-primary text-primary-foreground hover:bg-gold hover:text-white px-10 py-4 transition-colors duration-300"
-                  style={{ fontSize: "0.6rem", letterSpacing: "0.25em", textTransform: "uppercase", fontFamily: '"Raleway", sans-serif' }}>
+                  style={{ fontSize: "0.6rem", letterSpacing: "0.25em", textTransform: "uppercase", fontFamily: '"Jost", sans-serif' }}>
                   
                   SCHEDULE A CONSULTATION
                 </Link>
                 <Link
                   to="/off-market-real-estate-austin"
                   className="inline-block border border-primary text-primary hover:bg-primary hover:text-primary-foreground px-10 py-4 transition-colors duration-300"
-                  style={{ fontSize: "0.6rem", letterSpacing: "0.25em", textTransform: "uppercase", fontFamily: '"Raleway", sans-serif' }}>
+                  style={{ fontSize: "0.6rem", letterSpacing: "0.25em", textTransform: "uppercase", fontFamily: '"Jost", sans-serif' }}>
                   
                   VIEW OFF-MARKET HOMES
                 </Link>

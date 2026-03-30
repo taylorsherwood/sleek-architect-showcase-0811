@@ -12,7 +12,7 @@ const labelStyle = {
   fontSize: "0.6rem" as const,
   letterSpacing: "0.3em",
   textTransform: "uppercase" as const,
-  fontFamily: '"Raleway", sans-serif',
+  fontFamily: '"Jost", sans-serif',
 };
 
 const AustinLandDevelopmentOpportunities = () => {

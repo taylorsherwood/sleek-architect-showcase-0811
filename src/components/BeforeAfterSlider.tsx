@@ -174,7 +174,7 @@ const BeforeAfterSlider = ({
           letterSpacing: "0.22em",
           textTransform: "uppercase" as const,
           lineHeight: 1,
-          fontFamily: '"Raleway", sans-serif',
+          fontFamily: '"Jost", sans-serif',
         }}
       >
         {beforeLabel}
@@ -193,7 +193,7 @@ const BeforeAfterSlider = ({
           letterSpacing: "0.22em",
           textTransform: "uppercase" as const,
           lineHeight: 1,
-          fontFamily: '"Raleway", sans-serif',
+          fontFamily: '"Jost", sans-serif',
         }}
       >
         {afterLabel}

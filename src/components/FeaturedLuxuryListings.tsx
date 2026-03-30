@@ -81,7 +81,7 @@ const labelStyle = {
   fontSize: "0.5rem" as const,
   letterSpacing: "0.2em",
   textTransform: "uppercase" as const,
-  fontFamily: '"Raleway", sans-serif',
+  fontFamily: '"Jost", sans-serif',
 };
 
 const ListingCardOverlay = ({
@@ -167,7 +167,7 @@ const FeaturedLuxuryListings = () => {
               fontSize: "0.65rem",
               letterSpacing: "0.35em",
               textTransform: "uppercase",
-              fontFamily: '"Raleway", sans-serif',
+              fontFamily: '"Jost", sans-serif',
             }}
           >
             UPDATED: MARCH 2026
@@ -219,7 +219,7 @@ const FeaturedLuxuryListings = () => {
                 fontSize: "0.5rem",
                 letterSpacing: "0.25em",
                 textTransform: "uppercase",
-                fontFamily: '"Raleway", sans-serif',
+                fontFamily: '"Jost", sans-serif',
               }}
             >
               Inquire About Off-Market Listings

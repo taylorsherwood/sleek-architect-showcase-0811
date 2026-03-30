@@ -161,7 +161,7 @@ const Hero = () => {
               opacity: heroVisible ? 1 : 0,
               transform: heroVisible ? "translateY(0)" : "translateY(10px)",
               transitionTimingFunction: "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
-              fontFamily: '"Raleway", sans-serif',
+              fontFamily: '"Jost", sans-serif',
               fontSize: "0.65rem",
               letterSpacing: "0.38em",
               textTransform: "uppercase",
@@ -203,7 +203,7 @@ const Hero = () => {
                   <span
                   className="text-warm-cream/85 font-medium"
                   style={{
-                    fontFamily: '"Raleway", sans-serif',
+                    fontFamily: '"Jost", sans-serif',
                     fontSize: "0.8rem",
                     letterSpacing: "0.12em",
                     fontWeight: 400,
@@ -316,7 +316,7 @@ const Hero = () => {
         <span
           className="text-warm-cream font-light"
           style={{
-            fontFamily: '"Raleway", sans-serif',
+            fontFamily: '"Jost", sans-serif',
             fontSize: "0.6rem",
             letterSpacing: "0.35em",
             textTransform: "uppercase"

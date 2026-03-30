@@ -108,7 +108,7 @@ const ListingCard = ({
               fontSize: "0.6rem",
               letterSpacing: "0.2em",
               textTransform: "uppercase",
-              fontFamily: '"Raleway", sans-serif'
+              fontFamily: '"Jost", sans-serif'
             }}>
             View Property
           </span>
@@ -187,7 +187,7 @@ const FeaturedListings = ({ hideRealScout = false }: FeaturedListingsProps) => {
                     fontSize: "0.6rem",
                     letterSpacing: "0.35em",
                     textTransform: "uppercase",
-                    fontFamily: '"Raleway", sans-serif'
+                    fontFamily: '"Jost", sans-serif'
                   }}>
                   FEATURED LISTINGS
                 </p>
@@ -211,7 +211,7 @@ const FeaturedListings = ({ hideRealScout = false }: FeaturedListingsProps) => {
                   fontSize: "0.6rem",
                   letterSpacing: "0.25em",
                   textTransform: "uppercase",
-                  fontFamily: '"Raleway", sans-serif'
+                  fontFamily: '"Jost", sans-serif'
                 }}>
                 EXPLORE AUSTIN LUXURY HOMES
                 <span className="absolute bottom-0 left-0 w-full h-px bg-gold scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
@@ -254,7 +254,7 @@ const FeaturedListings = ({ hideRealScout = false }: FeaturedListingsProps) => {
                     fontSize: "0.6rem",
                     letterSpacing: "0.35em",
                     textTransform: "uppercase",
-                    fontFamily: '"Raleway", sans-serif'
+                    fontFamily: '"Jost", sans-serif'
                   }}>ON THE MARKET
                 </p>
                 <h2
@@ -285,7 +285,7 @@ const FeaturedListings = ({ hideRealScout = false }: FeaturedListingsProps) => {
                     fontSize: "0.6rem",
                     letterSpacing: "0.25em",
                     textTransform: "uppercase",
-                    fontFamily: '"Raleway", sans-serif'
+                    fontFamily: '"Jost", sans-serif'
                   }}>
                   SEE PAST TRANSACTIONS →
                 </Link>

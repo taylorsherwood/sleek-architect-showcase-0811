@@ -35,14 +35,14 @@ const commercialLabelStyle = {
   fontSize: "0.6rem" as const,
   letterSpacing: "0.3em",
   textTransform: "uppercase" as const,
-  fontFamily: '"Roboto", sans-serif',
+  fontFamily: '"Jost", sans-serif',
 };
 
 const commercialCtaStyle = {
   fontSize: "0.6rem" as const,
   letterSpacing: "0.08em",
   textTransform: "uppercase" as const,
-  fontFamily: '"Roboto", sans-serif',
+  fontFamily: '"Jost", sans-serif',
   fontWeight: 500 as const,
 };
 
@@ -250,24 +250,24 @@ const Listings = () => {
                     <span className="absolute top-4 left-4 text-minimal bg-gold text-white px-3 py-1 font-extrabold">
                       {listing.badge}
                     </span>
-                    <span className="absolute bottom-3 right-3 text-white text-sm font-light font-[Roboto] bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-sm">{listing.price}</span>
+                    <span className="absolute bottom-3 right-3 text-white text-sm font-light  bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-sm">{listing.price}</span>
                   </div>
                   <div className="p-6 flex flex-col flex-grow">
-                    <h3 className="text-lg font-light text-foreground mb-1 font-[Roboto]">
+                    <h3 className="text-lg font-light text-foreground mb-1 ">
                       {listing.name}
                     </h3>
-                    <p className="text-muted-foreground mb-2 font-[Roboto]">{listing.location}</p>
+                    <p className="text-muted-foreground mb-2 ">{listing.location}</p>
                     <div className="grid grid-cols-2 gap-3 mb-4">
                       <div>
                         <p className="text-muted-foreground mb-1" style={commercialLabelStyle}>ASSET TYPE</p>
-                        <p className="text-foreground font-medium text-sm font-[Roboto]">{listing.assetType}</p>
+                        <p className="text-foreground font-medium text-sm ">{listing.assetType}</p>
                       </div>
                       <div>
                         <p className="text-muted-foreground mb-1" style={commercialLabelStyle}>UNITS</p>
-                        <p className="text-foreground font-medium text-sm font-[Roboto]">{listing.units}</p>
+                        <p className="text-foreground font-medium text-sm ">{listing.units}</p>
                       </div>
                     </div>
-                    <p className="text-muted-foreground text-sm leading-relaxed font-[Roboto] mb-4 flex-grow">
+                    <p className="text-muted-foreground text-sm leading-relaxed  mb-4 flex-grow">
                       {listing.description}
                     </p>
                     <Link

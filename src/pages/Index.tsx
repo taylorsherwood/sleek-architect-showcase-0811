@@ -141,8 +141,7 @@ const Hero = () => {
             fontSize: "clamp(48px, 7vw, 96px)",
             textShadow: "0 2px 12px rgba(0,0,0,0.5)"
           }}>
-            <span className="block text-7xl">Access Austin's</span>
-            <span className="block">Most Exclusive Homes</span>
+            Access Austin's Most Exclusive Homes
           </h1>
 
           <p className="max-w-[480px] mb-12 leading-[1.7]" style={{

@@ -125,17 +125,13 @@ const Footer = () => {
           {/* Bottom bar */}
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 pb-6">
             <div className="text-center md:text-left">
-              <a
-                href="https://www.dropbox.com/scl/fi/ism1gkeqt0bol9srh3b0a/IABS-1-2.pdf?rlkey=l05zn9bqqmg8e1ru4qjzsnd1o&dl=0"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                className="hover:text-gold transition-colors duration-300 underline underline-offset-2"
+              <span
                 style={{ fontFamily: '"Jost", sans-serif', fontSize: "11px", color: "hsl(38 39% 61% / 0.65)" }}
               >
                 Information About Brokerage Services
                 <br />
                 Brokered by eXp Realty
-              </a>
+              </span>
             </div>
             <p className="text-center" style={{ fontFamily: '"Jost", sans-serif', fontSize: "11px", color: "hsl(38 39% 61% / 0.65)" }}>
               <a href="https://expluxury.com/?tl=en" target="_blank" rel="noopener noreferrer nofollow" className="hover:text-gold transition-colors duration-300">

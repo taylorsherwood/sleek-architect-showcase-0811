@@ -154,21 +154,28 @@ iframe {
   }
 
   /* Kicker / eyebrow labels */
-  .text-minimal {
+  .text-minimal, .kicker, .eyebrow {
     font-family: 'Jost', sans-serif;
     font-weight: 400;
     font-size: 10px;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
   }
 
   /* Nav items and CTA text */
-  .text-nav-cta {
+  .text-nav-cta, nav a {
     font-family: 'Jost', sans-serif;
     font-weight: 400;
     letter-spacing: 0.12em;
     text-transform: uppercase;
     font-size: 12px;
+  }
+
+  /* Small UI text — minimum 13px */
+  .listing-specs, .stat-label, .badge, .caption {
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.06em;
   }
 
   .hero-overlay {

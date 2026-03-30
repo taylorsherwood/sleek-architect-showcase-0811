@@ -94,8 +94,8 @@ iframe {
     --sidebar-border: 37 8% 88%;
     --sidebar-ring: 233 47% 9%;
 
-    --gradient-hero: linear-gradient(135deg, hsl(233 47% 9% / 0.7), hsl(233 47% 9% / 0.3));
-    --gradient-overlay: linear-gradient(180deg, hsl(233 47% 9% / 0.6), hsl(233 47% 9% / 0.2));
+    --gradient-hero: none;
+    --gradient-overlay: none;
 
     --shadow-architectural: 0 25px 60px -15px hsl(233 47% 9% / 0.12);
     --shadow-elegant: 0 8px 30px -12px hsl(233 47% 9% / 0.08);
@@ -179,7 +179,7 @@ iframe {
   }
 
   .hero-overlay {
-    background: var(--gradient-overlay);
+    background: none;
   }
 
   /* Hero staggered fade-in classes */

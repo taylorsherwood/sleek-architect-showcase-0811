@@ -1036,6 +1036,7 @@ const Index = () => (
     <Hero />
     <TrustStrip />
     <SearchSection />
+    <div className="py-8 md:py-12 bg-background" />
     <AdvisorSection />
     <StatsStrip />
 

@@ -38,12 +38,12 @@ iframe {
 
 @layer base {
   :root {
-    /* ── Refined luxury palette ── */
-    --gold: 38 39% 61%;              /* #C9A96E */
-    --gold-light: 36 52% 80%;        /* #E8D5B0 */
-    --gold-dark: 40 75% 31%;         /* #8B6914 */
-    --gold-deep: 40 38% 42%;
-    --gold-highlight: 38 50% 74%;
+    /* ── Refined luxury palette — anchored to #b7a16a ── */
+    --gold: 41 30% 57%;              /* #b7a16a */
+    --gold-light: 41 35% 76%;        /* #D4C9A8 */
+    --gold-dark: 41 45% 30%;         /* #6F5E2A */
+    --gold-deep: 41 30% 40%;         /* #857548 */
+    --gold-highlight: 41 35% 68%;    /* #C5B88E */
 
     --background: 45 10% 97%;        /* #FAFAF8 */
     --foreground: 233 47% 9%;           /* #0C0F24 */

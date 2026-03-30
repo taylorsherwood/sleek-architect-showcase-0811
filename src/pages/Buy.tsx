@@ -309,6 +309,7 @@ const Buy = () => {
         { question: "Are there luxury homes available in Austin?", answer: "Yes. Austin features some of Texas's finest luxury properties including Hill Country estates, waterfront mansions, contemporary masterpieces, and gated community homes across Westlake Hills, Barton Creek, Lake Austin, and Spanish Oaks." },
         { question: "Is Austin a good place to invest in real estate?", answer: "Austin consistently ranks among the top U.S. metros for real estate investment, driven by tech-sector growth, population in-migration, no state income tax, and limited premium inventory in supply-constrained neighborhoods." },
         { question: "How do I find off-market homes for sale in Austin?", answer: "Working with an experienced luxury agent is essential. Echelon Property Group maintains access to private and whisper listings across Austin's most prestigious neighborhoods through our brokerage network and direct relationships." },
+        { question: "What are the best neighborhoods to buy a luxury home in Austin?", answer: "Westlake Hills, Barton Creek, and Lake Austin are Austin's top luxury neighborhoods. Westlake offers top-rated Eanes ISD schools, Barton Creek provides gated country club living, and Lake Austin delivers waterfront estates with private docks." },
       ])} />
       <Navigation />
 

@@ -271,8 +271,8 @@ const GlobalLuxuryAdvertising = () => {
       {/* ═══════════════════════════════════════════════════════════════ */}
       {/*  2 · PLATFORM EXPOSURE                                         */}
       {/* ═══════════════════════════════════════════════════════════════ */}
-      <section className="py-20 md:py-24 bg-background relative overflow-hidden" ref={platforms1.ref}>
-        {/* ── Oversized WSJ anchor mark ── */}
+      <section className="py-16 md:py-20 bg-background relative overflow-hidden" ref={platforms1.ref}>
+        {/* ── Oversized WSJ anchor mark — extremely subtle ── */}
         <div
           className="absolute inset-0 pointer-events-none select-none overflow-hidden"
           aria-hidden="true"
@@ -288,7 +288,7 @@ const GlobalLuxuryAdvertising = () => {
               right: "5%",
               top: "54%",
               transform: "translateY(-50%)",
-              background: "linear-gradient(90deg, hsl(35 18% 55% / 0.04) 0%, hsl(35 18% 55% / 0.11) 60%, hsl(35 18% 55% / 0.11) 100%)",
+              background: "linear-gradient(90deg, hsl(35 18% 55% / 0.02) 0%, hsl(35 18% 55% / 0.05) 60%, hsl(35 18% 55% / 0.05) 100%)",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
               backgroundClip: "text",
@@ -298,27 +298,43 @@ const GlobalLuxuryAdvertising = () => {
         </div>
 
         <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+          <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
             {/* Left – text */}
-            <div className="max-w-[560px]" style={revealStyle(platforms1.visible, 0)}>
+            <div className="max-w-[500px]" style={revealStyle(platforms1.visible, 0)}>
               <p className="text-minimal text-gold mb-4 font-extrabold">GLOBAL REACH</p>
-              <h2 className="text-3xl md:text-5xl font-display font-normal text-architectural mb-8">
+              <h2 className="text-3xl md:text-5xl font-display font-normal text-architectural mb-6">
                 Featured Across <br /> Recognized Luxury Media
               </h2>
               <p
-                className="text-muted-foreground/85 mb-14 max-w-[540px]"
-                style={{ lineHeight: 1.7, ...revealStyle(platforms1.visible, 200) }}>
-                Your property is positioned within a curated network of the world's most influential luxury, financial, and real estate platforms—strategically selected to reach qualified, high-intent buyers globally.
+                className="text-foreground/70 mb-12 max-w-[440px]"
+                style={{ lineHeight: 1.75, fontSize: "15px", letterSpacing: "0.01em", ...revealStyle(platforms1.visible, 200) }}>
+                Your property is positioned within a curated network of the world's most influential luxury, financial, and real estate platforms — strategically selected to reach qualified, high-intent buyers globally.
               </p>
 
+              {/* Publication proof block */}
               <div style={revealStyle(platforms1.visible, 400)}>
-                <p className="text-foreground/75 text-sm tracking-[0.12em] font-medium leading-[2]">
+                <p className="text-minimal text-gold/70 mb-4" style={{ fontSize: "9px", letterSpacing: "0.18em" }}>
+                  SELECT MEDIA DISTRIBUTION
+                </p>
+                <div
+                  className="mb-6"
+                  style={{ width: 32, height: 1, background: "linear-gradient(90deg, hsl(var(--gold) / 0.4), hsl(var(--gold) / 0.08))" }}
+                />
+                <p className="text-foreground/80 text-sm tracking-[0.08em] font-normal leading-[2.2]">
                   Robb Report · Mansion Global · Wall Street Journal · Barron's
                   <br />
                   JamesEdition · MarketWatch · Unique Homes · LuxuryEstate
                 </p>
-                <p className="text-foreground/75 text-sm tracking-[0.12em] font-medium mt-3">
-                  80+ International Distribution Channels
+              </div>
+
+              {/* Stat line */}
+              <div className="mt-10 pt-8" style={{ ...revealStyle(platforms1.visible, 550), borderTop: "1px solid hsl(var(--border))" }}>
+                <p className="text-minimal text-gold/70 mb-3" style={{ fontSize: "9px", letterSpacing: "0.18em" }}>
+                  GLOBAL REACH
+                </p>
+                <p className="text-foreground flex items-baseline gap-2">
+                  <span className="text-3xl md:text-4xl font-display font-normal" style={{ letterSpacing: "0.02em" }}>80+</span>
+                  <span className="text-muted-foreground text-xs tracking-[0.1em] uppercase">International Distribution Channels</span>
                 </p>
               </div>
             </div>

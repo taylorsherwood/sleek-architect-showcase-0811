@@ -68,7 +68,7 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <section className="pt-16 md:pt-20 pb-20 md:pb-24 bg-background">
+    <section className="relative pt-16 md:pt-20 pb-20 md:pb-24 bg-background overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="max-w-[60rem] mx-auto">
           {/* Header */}

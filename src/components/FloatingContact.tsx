@@ -22,6 +22,7 @@ const FloatingContact = () => {
   // Homepage-specific: hide when Private Opportunities banner is visible
   const [bannerVisible, setBannerVisible] = useState(false);
   const [heroVisible, setHeroVisible] = useState(true);
+  const [footerVisible, setFooterVisible] = useState(false);
   const delayTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {

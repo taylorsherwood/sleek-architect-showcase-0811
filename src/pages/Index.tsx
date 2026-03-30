@@ -234,8 +234,8 @@ const SearchSection = () => {
           <p className="text-minimal text-gold mb-3">
             EXPLORE THE MARKET
           </p>
-          <h2 className="font-display text-2xl md:text-[2rem] font-normal text-foreground leading-[1.1] tracking-[-0.01em] mb-3">
-            Find Your Next <span className="italic text-gold">Chapter</span>
+          <h2 className="font-display text-2xl md:text-[2rem] font-normal text-foreground leading-[1.1] tracking-[0.03em] mb-3">
+            Find Your Next <span className="text-gold">Chapter</span>
           </h2>
           <p className="text-muted-foreground/55 text-[13.5px] font-light leading-relaxed mb-8 max-w-md mx-auto">
             

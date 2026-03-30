@@ -301,10 +301,10 @@ const AdvisorSection = () => (
           </ScrollReveal>
 
           <ScrollReveal delay={80}>
-            <h2 className="font-display text-[1.85rem] md:text-[2.6rem] font-normal text-foreground leading-[1.06] tracking-[-0.015em] mb-6">
+            <h2 className="font-display text-[1.85rem] md:text-[2.6rem] font-normal text-foreground leading-[1.06] tracking-[0.03em] mb-6">
               Luxury Real Estate,
               <br />
-              <span className="italic">Without the Noise</span>
+              Without the Noise
             </h2>
           </ScrollReveal>
 

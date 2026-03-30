@@ -516,7 +516,9 @@ realscout-simple-search {
   transition: transform 800ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 a:hover > .community-tile-img,
-a:hover .community-tile-img {
+a:hover .community-tile-img,
+.group:hover > .community-tile-img,
+.group:hover .community-tile-img {
   transform: scale(1.025);
 }
 

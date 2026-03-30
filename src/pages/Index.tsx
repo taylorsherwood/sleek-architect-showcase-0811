@@ -140,7 +140,7 @@ const Hero = () => {
           <h1 className="font-display text-warm-cream mb-8" style={{
             ...anim("0.15s"), fontWeight: 400, lineHeight: 1.1, letterSpacing: "0.04em",
             fontSize: "clamp(36px, 5vw, 64px)",
-            textShadow: "0 2px 12px rgba(0,0,0,0.5)"
+            textShadow: "0 2px 16px rgba(0,0,0,0.6), 0 0 40px rgba(245,243,239,0.12), 0 0 80px rgba(245,243,239,0.06)"
           }}>
             Access Austin's Most Exclusive Homes
           </h1>

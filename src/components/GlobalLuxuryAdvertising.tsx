@@ -271,8 +271,8 @@ const GlobalLuxuryAdvertising = () => {
       {/* ═══════════════════════════════════════════════════════════════ */}
       {/*  2 · PLATFORM EXPOSURE                                         */}
       {/* ═══════════════════════════════════════════════════════════════ */}
-      <section className="py-16 md:py-20 bg-background relative overflow-hidden" ref={platforms1.ref}>
-        {/* ── Oversized WSJ anchor mark — extremely subtle ── */}
+      <section className="py-14 md:py-18 bg-background relative overflow-hidden" ref={platforms1.ref}>
+        {/* ── Oversized WSJ anchor mark — nearly imperceptible ── */}
         <div
           className="absolute inset-0 pointer-events-none select-none overflow-hidden"
           aria-hidden="true"
@@ -288,7 +288,7 @@ const GlobalLuxuryAdvertising = () => {
               right: "5%",
               top: "54%",
               transform: "translateY(-50%)",
-              background: "linear-gradient(90deg, hsl(35 18% 55% / 0.02) 0%, hsl(35 18% 55% / 0.05) 60%, hsl(35 18% 55% / 0.05) 100%)",
+              background: "linear-gradient(90deg, hsl(35 18% 55% / 0.015) 0%, hsl(35 18% 55% / 0.03) 60%, hsl(35 18% 55% / 0.03) 100%)",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
               backgroundClip: "text",
@@ -300,27 +300,27 @@ const GlobalLuxuryAdvertising = () => {
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
             {/* Left – text */}
-            <div className="max-w-[500px]" style={revealStyle(platforms1.visible, 0)}>
-              <p className="text-minimal text-gold mb-4 font-extrabold">GLOBAL REACH</p>
-              <h2 className="text-3xl md:text-5xl font-display font-normal text-architectural mb-6">
+            <div className="max-w-[480px]" style={revealStyle(platforms1.visible, 0)}>
+              <p className="text-minimal text-gold/60 mb-4" style={{ letterSpacing: "0.14em" }}>GLOBAL REACH</p>
+              <h2 className="text-3xl md:text-5xl font-display font-normal text-architectural mb-5">
                 Featured Across <br /> Recognized Luxury Media
               </h2>
               <p
-                className="text-foreground/70 mb-12 max-w-[440px]"
-                style={{ lineHeight: 1.75, fontSize: "15px", letterSpacing: "0.01em", ...revealStyle(platforms1.visible, 200) }}>
+                className="text-foreground/75 mb-10 max-w-[410px]"
+                style={{ lineHeight: 1.7, fontSize: "15px", letterSpacing: "0.01em", ...revealStyle(platforms1.visible, 200) }}>
                 Your property is positioned within a curated network of the world's most influential luxury, financial, and real estate platforms — strategically selected to reach qualified, high-intent buyers globally.
               </p>
 
               {/* Publication proof block */}
               <div style={revealStyle(platforms1.visible, 400)}>
-                <p className="text-minimal text-gold/70 mb-4" style={{ fontSize: "9px", letterSpacing: "0.18em" }}>
+                <p className="text-minimal text-gold/50 mb-3" style={{ fontSize: "9px", letterSpacing: "0.15em" }}>
                   SELECT MEDIA DISTRIBUTION
                 </p>
                 <div
-                  className="mb-6"
-                  style={{ width: 32, height: 1, background: "linear-gradient(90deg, hsl(var(--gold) / 0.4), hsl(var(--gold) / 0.08))" }}
+                  className="mb-5"
+                  style={{ width: 28, height: 1, background: "linear-gradient(90deg, hsl(var(--gold) / 0.35), hsl(var(--gold) / 0.06))" }}
                 />
-                <p className="text-foreground/80 text-sm tracking-[0.08em] font-normal leading-[2.2]">
+                <p className="text-foreground/85 text-sm tracking-[0.06em] font-medium" style={{ lineHeight: 2.4 }}>
                   Robb Report · Mansion Global · Wall Street Journal · Barron's
                   <br />
                   JamesEdition · MarketWatch · Unique Homes · LuxuryEstate
@@ -328,13 +328,13 @@ const GlobalLuxuryAdvertising = () => {
               </div>
 
               {/* Stat line */}
-              <div className="mt-10 pt-8" style={{ ...revealStyle(platforms1.visible, 550), borderTop: "1px solid hsl(var(--border))" }}>
-                <p className="text-minimal text-gold/70 mb-3" style={{ fontSize: "9px", letterSpacing: "0.18em" }}>
+              <div className="mt-12 pt-7" style={{ ...revealStyle(platforms1.visible, 550), borderTop: "1px solid hsl(var(--border))" }}>
+                <p className="text-minimal text-gold/50 mb-3" style={{ fontSize: "9px", letterSpacing: "0.15em" }}>
                   GLOBAL REACH
                 </p>
-                <p className="text-foreground flex items-baseline gap-2">
-                  <span className="text-3xl md:text-4xl font-display font-normal" style={{ letterSpacing: "0.02em" }}>80+</span>
-                  <span className="text-muted-foreground text-xs tracking-[0.1em] uppercase">International Distribution Channels</span>
+                <p className="text-foreground flex items-baseline gap-2.5">
+                  <span className="text-4xl md:text-5xl font-display font-normal" style={{ letterSpacing: "0.02em" }}>80+</span>
+                  <span className="text-muted-foreground text-[11px] tracking-[0.1em] uppercase">International Distribution Channels</span>
                 </p>
               </div>
             </div>

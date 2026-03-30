@@ -431,7 +431,7 @@ const StatsStrip = () => (
             return (
               <div key={i} ref={ref} className="text-center">
                 {/* Gold accent line */}
-                <div className="mx-auto mb-5" style={{ width: "40px", height: "1px", background: "hsl(38 39% 61%)" }} />
+                <div className="mx-auto mb-5" style={{ width: "60px", height: "1px", background: "hsl(38 39% 61%)" }} />
                 <p style={{
                   fontFamily: '"Cinzel", serif', fontWeight: 400,
                   fontSize: "clamp(48px, 6vw, 80px)", lineHeight: 1, color: "#FAFAF8",

@@ -404,7 +404,7 @@ const Sell = () => {
               </ScrollReveal>
 
               <ScrollReveal delay={80}>
-                <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-normal text-architectural mb-8 leading-[1.08]">
+                <h2 className="text-4xl md:text-5xl font-display font-normal text-architectural mb-8 leading-[1.08] lg:text-4xl">
                   Your Property Deserves More<br className="hidden md:block" /> Than Just a Sign
                 </h2>
               </ScrollReveal>

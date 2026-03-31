@@ -33,7 +33,7 @@ export const privateSales: PrivateSaleItem[] = [
     label: "Off Market",
   },
   {
-    image: "/placeholder.svg",
+    image: cedarBayouImage,
     price: "$0,000,000",
     address: "5931 W Cedar Bayou Lynchburg Rd",
     area: "Neighborhood",

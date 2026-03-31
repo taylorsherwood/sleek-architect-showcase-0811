@@ -132,7 +132,6 @@ function useCountUp(target: number, duration = 2600, from = 0, countDown = false
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
-    const initial = countDown ? from : 0;
     const obs = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -143,7 +142,7 @@ function useCountUp(target: number, duration = 2600, from = 0, countDown = false
         } else {
           if (started.current) {
             started.current = false;
-            setValue(initial);
+            setValue(from);
           }
         }
       },
@@ -151,7 +150,7 @@ function useCountUp(target: number, duration = 2600, from = 0, countDown = false
     );
     obs.observe(el);
     return () => obs.disconnect();
-  }, [animate, from, countDown]);
+  }, [animate, from]);
 
   return { value, ref };
 }

@@ -244,7 +244,7 @@ const SearchSection = () => {
    ───────────────────────────────────────────── */
 
 const TrustStrip = () => (
-  <section className="hidden md:block bg-background">
+  <section className="hidden lg:block bg-background">
     <div className="container mx-auto px-6">
       <div className="max-w-[1320px] mx-auto">
         <div className="border-t border-border/15" />

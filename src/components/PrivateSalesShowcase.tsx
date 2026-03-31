@@ -44,8 +44,8 @@ export const privateSales: PrivateSaleItem[] = [
   {
     image: "/placeholder.svg",
     price: "$1,495,000",
-    address: "Property Address",
-    area: "Neighborhood",
+    address: "The High Road",
+    area: "WESTLAKE HILLS",
     descriptor: "",
     label: "Private Sale",
   },

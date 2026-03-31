@@ -355,6 +355,10 @@ const Invest = () => {
           alt="Austin real estate investment property with Hill Country views"
           className="absolute inset-0 w-full h-full object-cover"
           loading="eager"
+          fetchPriority="high"
+          sizes="100vw"
+          width={1920}
+          height={1080}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-foreground/80 via-foreground/65 to-foreground/80" />
         <div className="relative z-10 max-w-6xl mx-auto px-6 w-full">
@@ -722,8 +726,9 @@ const Invest = () => {
           aria-hidden="true"
         >
           <img src={echelonWatermark} alt="" className="w-full h-full object-contain"
-                    loading="lazy" decoding="async"
-                    />
+            loading="lazy" decoding="async"
+            width={800} height={800}
+          />
         </div>
         <div className="max-w-4xl mx-auto px-6">
           <ScrollReveal>

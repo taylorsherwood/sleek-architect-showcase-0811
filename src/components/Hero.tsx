@@ -123,7 +123,8 @@ const Hero = () => {
           className={`hero-bg-video transition-opacity duration-700 ${
           videoReady ? "opacity-100" : "opacity-0"}`
           }
-          
+          width={1920}
+          height={1080}
           tabIndex={-1}>
           
           {videoSrc && <source src={videoSrc} type="video/mp4" />}
@@ -138,8 +139,10 @@ const Hero = () => {
         title="Austin Texas skyline — Echelon Property Group luxury real estate"
         className="absolute inset-0 w-full h-full object-cover"
         style={{ zIndex: 0 }}
-                    loading="lazy" decoding="async"
-                    />
+        loading="eager"
+        width={1920}
+        height={1080}
+      />
       }
 
       

@@ -133,6 +133,7 @@ export default defineConfig(({ mode }) => ({
       webp: { quality: 75 },
       avif: false,
       svg: { multipass: true },
+      cache: true,
     }),
   ].filter(Boolean),
   resolve: {

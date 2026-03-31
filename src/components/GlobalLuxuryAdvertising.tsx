@@ -176,7 +176,11 @@ const GlobalLuxuryAdvertising = () => {
             className="w-full h-full object-cover will-change-transform"
             style={{ transform: `scale(${heroZoom})`, transition: "transform 0.1s linear" }}
             loading="lazy"
-            decoding="async" />
+            decoding="async"
+            sizes="100vw"
+            width={1920}
+            height={1080}
+          />
 
           {/* Dark overlay */}
           <div className="absolute inset-0 bg-[#0C0F24]/55" />
@@ -352,7 +356,11 @@ const GlobalLuxuryAdvertising = () => {
                   alt="Luxury marketing collage featuring Robb Report, Wall Street Journal, Mansion Global, UPMKT, and eXp Luxury"
                   className="w-full h-auto object-cover transition-all duration-700 ease-out group-hover:scale-[1.03] group-hover:brightness-110"
                   loading="lazy"
-                  decoding="async" />
+                  decoding="async"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  width={1200}
+                  height={800}
+                />
               </div>
             </div>
           </div>
@@ -384,7 +392,11 @@ const GlobalLuxuryAdvertising = () => {
                       alt={card.title}
                       className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
                       loading="lazy"
-                      decoding="async" />
+                      decoding="async"
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                      width={800}
+                      height={533}
+                    />
                   </div>
                   <div className="p-7">
                     <div className="flex items-center gap-2.5 mb-3">

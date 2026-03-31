@@ -101,7 +101,11 @@ const ListingCardOverlay = ({
         src={listing.image}
         alt={`${listing.address} — ${listing.neighborhood}, Austin TX`}
         className="w-full h-full object-cover transition-transform duration-700 ease-out hover:scale-[1.06] group-hover:scale-[1.06]"
-        loading="lazy" decoding="async"
+        loading="lazy"
+        decoding="async"
+        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+        width={800}
+        height={600}
       />
       {/* Persistent gradient */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent pointer-events-none" />

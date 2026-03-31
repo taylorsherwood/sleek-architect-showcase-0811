@@ -107,13 +107,14 @@ const Hero = () => {
       <div aria-hidden="true" className="absolute inset-0 pointer-events-none select-none" style={{ zIndex: 0 }}>
         <video ref={videoRef} autoPlay muted loop playsInline preload="none" poster="/images/hero-poster.jpg"
           className={`hero-bg-video transition-opacity duration-700 ${videoReady ? "opacity-100" : "opacity-0"}`}
-          style={{ filter: "brightness(0.82) contrast(1.08)" }} tabIndex={-1}>
+          style={{ filter: "brightness(0.82) contrast(1.08)" }} tabIndex={-1}
+          width={1920} height={1080}>
           {videoSrc && <source src={videoSrc} type="video/mp4" />}
         </video>
       </div>
 
       {showFallback && !videoReady && (
-        <img src="/images/hero-poster.jpg" alt="Austin Texas skyline" className="absolute inset-0 w-full h-full object-cover" style={{ zIndex: 0 }} loading="eager" />
+        <img src="/images/hero-poster.jpg" alt="Austin Texas skyline" className="absolute inset-0 w-full h-full object-cover" style={{ zIndex: 0 }} loading="eager" width={1920} height={1080} />
       )}
 
       {/* Layered gradient overlay per spec */}
@@ -274,6 +275,9 @@ const AdvisorSection = () => (
             className="w-full h-full object-cover"
              style={{ objectPosition: "center center" }}
             loading="lazy" decoding="async"
+            sizes="(max-width: 1024px) 100vw, 480px"
+            width={520}
+            height={693}
           />
           {/* Bottom gradient fade */}
           <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-black/30 to-transparent" />
@@ -533,7 +537,11 @@ const FeaturedProperties = () => (
                   <div className="relative overflow-hidden" style={{ aspectRatio: "3/4", background: "#12162E" }}>
                     <img src={p.image} alt={p.address}
                       className="community-tile-img w-full h-full object-cover"
-                      loading="lazy" decoding="async" />
+                      loading="lazy" decoding="async"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      width={600}
+                      height={800}
+                    />
                     {/* Dark hover overlay with EXPLORE */}
                     <div className="absolute inset-0 bg-foreground/40 opacity-0 group-hover:opacity-100 pointer-events-none flex items-center justify-center [transition:opacity_0.6s_cubic-bezier(0.16,1,0.3,1)]">
                       <span className="text-gold tracking-[0.2em] uppercase font-normal" style={{ fontFamily: '"Jost", sans-serif', fontSize: "0.75rem" }}>
@@ -572,7 +580,10 @@ const FeaturedProperties = () => (
               <div className="relative overflow-hidden flex items-center justify-center" style={{ aspectRatio: "3/4", background: "#0C0F24" }}>
                 <img src="/static-assets/echelon-logo-gold-square.png" alt="Echelon Property Group"
                   className="w-1/2 h-auto object-contain group-hover:scale-[1.03] will-change-transform [transition:transform_1.8s_cubic-bezier(0.19,1,0.22,1)]"
-                  loading="lazy" decoding="async" />
+                  loading="lazy" decoding="async"
+                  width={400}
+                  height={400}
+                />
                 {/* Bottom overlay */}
                 <div className="absolute bottom-0 left-0 right-0 px-6 pb-6 pt-8 text-center"
                   style={{ background: "linear-gradient(to top, rgba(12,15,36,0.92) 0%, transparent 100%)" }}>

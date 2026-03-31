@@ -332,7 +332,7 @@ const Buy = () => {
             </p>
             <a
               href="#buyer-consultation"
-              className="inline-block text-minimal bg-primary-foreground text-[#0C0F24] px-8 py-3.5 hover:bg-gold hover:text-white hover:font-bold transition-all duration-300 reveal-delayed-2">
+              className="inline-block text-minimal bg-primary-foreground text-[#0C0F24] px-8 py-3.5 hover:bg-gold hover:text-white transition-all duration-300 reveal-delayed-2">
               
               SCHEDULE A BUYER CONSULTATION
             </a>

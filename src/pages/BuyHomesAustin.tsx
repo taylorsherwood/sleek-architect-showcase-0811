@@ -160,7 +160,7 @@ const BuyHomesAustin = () => {
                 <Link to="/austin-real-estate-investment" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ INVESTMENT PROPERTY</Link>
                 <Link to="/land-for-sale-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ LAND FOR SALE</Link>
                 <Link to="/communities" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ ALL COMMUNITIES</Link>
-                <Link to="/best-luxury-neighborhoods-in-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ NEIGHBORHOOD GUIDE</Link>
+                <Link to="/best-luxury-neighborhoods-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ NEIGHBORHOOD GUIDE</Link>
               </div>
             </section>
 

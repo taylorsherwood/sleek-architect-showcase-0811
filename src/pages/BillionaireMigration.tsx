@@ -424,7 +424,7 @@ const BillionaireMigration = () => {
               </h2>
               <div className="grid sm:grid-cols-2 gap-4">
                 <Link to="/moving-to-austin-texas" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ MOVING TO AUSTIN GUIDE</Link>
-                <Link to="/best-luxury-neighborhoods-in-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ BEST LUXURY NEIGHBORHOODS</Link>
+                <Link to="/best-luxury-neighborhoods-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ BEST LUXURY NEIGHBORHOODS</Link>
                 <Link to="/austin-luxury-market-report" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ AUSTIN MARKET REPORT</Link>
                 <Link to="/communities/lake-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ LAKE AUSTIN HOMES</Link>
                 <Link to="/communities/westlake-hills" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ WESTLAKE HILLS HOMES</Link>

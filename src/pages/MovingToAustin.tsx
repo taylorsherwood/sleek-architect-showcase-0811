@@ -254,7 +254,7 @@ const MovingToAustin = () => {
             </h2>
             <div className="grid sm:grid-cols-2 gap-4">
               <Link to="/best-neighborhoods-in-austin-texas" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ BEST NEIGHBORHOODS IN AUSTIN</Link>
-              <Link to="/best-luxury-neighborhoods-in-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ BEST LUXURY NEIGHBORHOODS</Link>
+              <Link to="/best-luxury-neighborhoods-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ BEST LUXURY NEIGHBORHOODS</Link>
               <Link to="/buy-homes-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ BUY A HOME IN AUSTIN</Link>
               <Link to="/sell-home-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ SELL YOUR AUSTIN HOME</Link>
               <Link to="/communities/westlake-hills" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ WESTLAKE HILLS</Link>

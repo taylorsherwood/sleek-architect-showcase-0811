@@ -444,7 +444,7 @@ const Invest = () => {
                   <button
                     type="submit"
                     disabled={submitting}
-                    className="w-full px-5 py-3.5 text-sm font-semibold rounded transition-all duration-200 disabled:opacity-50 bg-gold text-primary-foreground hover:bg-primary-foreground hover:text-gold"
+                    className="w-full px-5 py-3 sm:py-3.5 text-xs sm:text-sm font-semibold rounded transition-all duration-200 disabled:opacity-50 bg-gold text-primary-foreground hover:bg-primary-foreground hover:text-gold"
                     style={{ letterSpacing: "0.2em", textTransform: "uppercase" }}
                   >
                     {submitting ? "Submitting…" : "Request Private Access"}

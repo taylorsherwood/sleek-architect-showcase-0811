@@ -1,5 +1,6 @@
 import ScrollReveal from "@/components/ScrollReveal";
 import fm620Image from "@/assets/13505-north-fm-620.jpg";
+import cedarBayouImage from "@/assets/5931-cedar-bayou.jpg";
 
 /* ------------------------------------------------------------------ */
 /*  DATA — Edit this array to add / remove / update private sales      */

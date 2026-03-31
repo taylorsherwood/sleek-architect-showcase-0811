@@ -59,7 +59,7 @@ const RealScoutListings = ({
         <div className="max-w-7xl mx-auto">
           <p className="text-minimal text-gold mb-4 font-extrabold whitespace-pre-line">{heading}</p>
           <h2 className="font-display font-normal text-architectural mb-8 text-5xl">
-            featured sales
+            on the market
           </h2>
           {visible ? (
             <div ref={containerRef} className="w-full overflow-hidden" />

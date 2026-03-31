@@ -119,16 +119,15 @@ function useCountUp(target: number, duration = 2600, from = 0, countDown = false
 
   const animate = useCallback(() => {
     const start = performance.now();
-    const initial = countDown ? from : 0;
     const step = (now: number) => {
       const progress = Math.min((now - start) / duration, 1);
       const eased = 1 - Math.pow(1 - progress, 3); // ease-out cubic
-      const current = Math.round(initial + (target - initial) * eased);
+      const current = Math.round(from + (target - from) * eased);
       setValue(current);
       if (progress < 1) requestAnimationFrame(step);
     };
     requestAnimationFrame(step);
-  }, [target, duration, from, countDown]);
+  }, [target, duration, from]);
 
   useEffect(() => {
     const el = ref.current;

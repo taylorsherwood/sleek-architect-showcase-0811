@@ -775,7 +775,7 @@ const Invest = () => {
         <div className="max-w-4xl mx-auto px-6">
           <ScrollReveal>
             <p className="text-minimal text-gold mb-4" style={{ color: '#d4a94b' }}>Get Started</p>
-            <h2 className="text-3xl md:text-4xl font-display font-normal text-primary-foreground mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-primary-foreground mb-4">
               Tell Us What You're Looking For
             </h2>
             <p className="text-primary-foreground/60 mb-12 max-w-2xl">

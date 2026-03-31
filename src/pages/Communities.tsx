@@ -74,10 +74,10 @@ const Communities = () => {
         </div>
       </section>
 
-      <section className="pb-28">
-        <div className="container mx-auto px-6">
+      <section className="pb-20 sm:pb-28">
+        <div className="container mx-auto px-5 sm:px-6">
           <div className="max-w-7xl mx-auto">
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
               {[...communityPages].sort((a, b) => a.name.localeCompare(b.name)).map((community) => {
                 const img = imageMap[community.slug] || community.image;
                 return (

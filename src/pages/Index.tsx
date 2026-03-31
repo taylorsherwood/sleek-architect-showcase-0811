@@ -140,13 +140,12 @@ const Hero = () => {
             </p>
           </div>
 
-          <h1 className="font-display mb-7 md:mb-5 lg:mb-7" style={{
+          <h1 className="font-display mb-7 md:mb-5 lg:mb-7 text-[27px] md:text-[clamp(30px,4vw,52px)] lg:text-[clamp(32px,4vw,52px)]" style={{
             ...anim("0.15s"), fontWeight: 400, lineHeight: 1.12, letterSpacing: "0.02em",
-            fontSize: "clamp(30px, 4vw, 52px)",
             color: "rgba(250,248,244,0.98)",
             textShadow: "0 2px 12px rgba(0,0,0,0.45), 0 6px 30px rgba(0,0,0,0.30), 0 0 60px rgba(0,0,0,0.15)"
           }}>
-            Access Austin's Most<br />Exclusive Homes
+            Access Austin's Most<br className="md:hidden" />{" "}Exclusive Homes
           </h1>
 
           <p className="max-w-[480px] mb-10 md:mb-7 lg:mb-10 leading-[1.7]" style={{

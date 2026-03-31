@@ -57,7 +57,7 @@ const PastTransactions = () => {
                 A Proven Track Record
               </h1>
               <p
-                className="mt-3 text-white/80 text-sm md:text-[15px] font-light tracking-wide max-w-lg leading-relaxed"
+                className="mt-3 text-white/90 text-sm md:text-[15px] font-light tracking-wide max-w-lg leading-relaxed"
                 style={{ textShadow: "0px 2px 8px rgba(0,0,0,0.25)" }}
               >
                 A selection of transactions across Austin's most competitive luxury markets.

@@ -119,10 +119,10 @@ const Hero = () => {
         <img src="/images/hero-poster.jpg" alt="Austin Texas skyline" className="absolute inset-0 w-full h-full object-cover" style={{ zIndex: 0 }} loading="eager" width={1920} height={1080} />
       )}
 
-      {/* Soft left-side atmospheric fade — text zone only */}
+      {/* Left-side text zone gradient — strong behind text, fades before center */}
       <div className="absolute inset-0" style={{
         zIndex: 1,
-        background: `linear-gradient(to right, rgba(8,11,26,0.54) 0%, rgba(8,11,26,0.28) 30%, rgba(8,11,26,0.06) 48%, transparent 100%)`
+        background: `linear-gradient(to right, rgba(10,14,25,0.62) 0%, rgba(10,14,25,0.34) 28%, rgba(10,14,25,0.08) 45%, transparent 100%)`
       }} />
 
       {/* Content */}
@@ -132,39 +132,40 @@ const Hero = () => {
           <div style={anim("0s")} className="mb-5">
             <div className="w-10 h-px bg-gold mb-5" />
             <p style={{
-              fontFamily: '"Jost", sans-serif', fontSize: "10.5px", letterSpacing: "0.25em", textTransform: "uppercase",
-              color: "hsl(38 42% 66%)",
-              textShadow: "0 1px 4px rgba(0,0,0,0.5), 0 0 14px rgba(0,0,0,0.35)"
+              fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.25em", textTransform: "uppercase",
+              color: "hsl(38 45% 72%)",
+              textShadow: "0 1px 6px rgba(0,0,0,0.7), 0 0 20px rgba(0,0,0,0.5)"
             }}>
               STRATEGIC AUSTIN REAL ESTATE ADVISORY
             </p>
           </div>
 
-          <h1 className="font-display text-warm-cream mb-6" style={{
+          <h1 className="font-display mb-6" style={{
             ...anim("0.15s"), fontWeight: 400, lineHeight: 1.1, letterSpacing: "0.04em",
             fontSize: "clamp(36px, 5vw, 64px)",
-            textShadow: "0 2px 10px rgba(0,0,0,0.22), 0 6px 24px rgba(0,0,0,0.18)"
+            color: "rgba(250,248,244,0.98)",
+            textShadow: "0 2px 12px rgba(0,0,0,0.45), 0 6px 30px rgba(0,0,0,0.30), 0 0 60px rgba(0,0,0,0.15)"
           }}>
             Access Austin's Most Exclusive Homes
           </h1>
 
           <p className="max-w-[480px] mb-10 leading-[1.7]" style={{
             ...anim("0.3s"),
-            fontFamily: '"Jost", sans-serif', fontWeight: 350, fontSize: "15px",
-            letterSpacing: "0.04em", color: "rgba(245,243,239,0.92)",
-            textShadow: "0 1px 6px rgba(0,0,0,0.45), 0 0 16px rgba(0,0,0,0.3)"
+            fontFamily: '"Jost", sans-serif', fontWeight: 400, fontSize: "15.5px",
+            letterSpacing: "0.04em", color: "rgba(250,248,244,0.95)",
+            textShadow: "0 1px 8px rgba(0,0,0,0.6), 0 0 20px rgba(0,0,0,0.4)"
           }}>
             Private listings, off-market opportunities, and elevated real estate representation.
           </p>
 
-          {/* CTA Buttons — fully static, subtle dark backing for readability */}
+          {/* CTA Buttons — static, dark translucent glass */}
           <div className="flex flex-col sm:flex-row gap-4" style={anim("0.4s")}>
             <Link to="/austin-luxury-homes-for-sale"
               className="inline-block text-center px-8 py-[14px]"
               style={{
                 fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 400,
-                border: "1px solid hsl(38 39% 64%)", color: "hsl(38 39% 66%)",
-                background: "rgba(10,14,25,0.20)",
+                border: "1px solid hsl(38 42% 68%)", color: "hsl(38 45% 72%)",
+                background: "rgba(10,14,25,0.28)",
               }}>
               EXPLORE LUXURY HOMES
             </Link>
@@ -172,8 +173,8 @@ const Hero = () => {
               className="inline-block text-center px-8 py-[14px]"
               style={{
                 fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 400,
-                border: "1px solid rgba(255,255,255,0.35)", color: "rgba(245,243,239,0.92)",
-                background: "rgba(10,14,25,0.20)",
+                border: "1px solid rgba(255,255,255,0.38)", color: "rgba(250,248,244,0.95)",
+                background: "rgba(10,14,25,0.28)",
               }}>
               REQUEST PRIVATE ACCESS
             </Link>

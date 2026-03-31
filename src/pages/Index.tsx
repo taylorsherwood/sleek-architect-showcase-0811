@@ -122,8 +122,8 @@ const Hero = () => {
       {/* Light gradient overlay — just enough for text readability */}
       <div className="absolute inset-0" style={{
         zIndex: 1,
-        background: `linear-gradient(to bottom, rgba(8,11,26,0.15) 0%, rgba(8,11,26,0.05) 40%, rgba(8,11,26,0.40) 100%),
-                      linear-gradient(to right, rgba(8,11,26,0.30) 0%, rgba(8,11,26,0.10) 50%, rgba(8,11,26,0.0) 100%)`
+        background: `linear-gradient(to bottom, rgba(8,11,26,0.22) 0%, rgba(8,11,26,0.10) 40%, rgba(8,11,26,0.48) 100%),
+                      linear-gradient(to right, rgba(8,11,26,0.38) 0%, rgba(8,11,26,0.15) 50%, rgba(8,11,26,0.0) 100%)`
       }} />
 
       {/* Content */}

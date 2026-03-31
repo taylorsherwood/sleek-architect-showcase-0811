@@ -243,7 +243,7 @@ const OffMarketRealEstateAustin = () => {
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-[hsl(var(--gold))] mt-2 shrink-0" />
-                    <span className="text-white/60 text-[0.925rem] font-light leading-relaxed">{item}</span>
+                    <span className="text-white/60 text-[0.85rem] sm:text-[0.925rem] font-light leading-relaxed">{item}</span>
                   </li>
                 ))}
               </ul>

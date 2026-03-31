@@ -160,7 +160,7 @@ function useCountUp(target: number, duration = 2600, from = 0, countDown = false
 function AnimatedStat({ target, suffix = "", prefix = "", label, countDown = false, from = 0 }: {
   target: number; suffix?: string; prefix?: string; label: string; countDown?: boolean; from?: number;
 }) {
-  const { value, ref } = useCountUp(target, 1800, from, countDown);
+  const { value, ref } = useCountUp(target, 3200, from, countDown);
   return (
     <div ref={ref}>
       <p className="text-3xl md:text-4xl font-display font-normal text-primary-foreground mb-1">

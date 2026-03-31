@@ -107,9 +107,9 @@ const marketingFeatures = [
 
 
 const stats = [
-  { target: 98, suffix: "%", label: "List-to-Sale Price Ratio", countDown: false },
-  { target: 21, suffix: "", label: "Avg. Days on Market", countDown: true, from: 60 },
-  { target: 100, prefix: "$", suffix: "M+", label: "Career Sales Volume", countDown: false },
+  { target: 98, suffix: "%", label: "List-to-Sale Price Ratio", countDown: false, from: 75 },
+  { target: 21, suffix: "", label: "Avg. Days on Market", countDown: true, from: 10 },
+  { target: 100, prefix: "$", suffix: "M+", label: "Career Sales Volume", countDown: false, from: 60 },
 ];
 
 function useCountUp(target: number, duration = 2600, from = 0, countDown = false) {
@@ -119,21 +119,19 @@ function useCountUp(target: number, duration = 2600, from = 0, countDown = false
 
   const animate = useCallback(() => {
     const start = performance.now();
-    const initial = countDown ? from : 0;
     const step = (now: number) => {
       const progress = Math.min((now - start) / duration, 1);
       const eased = 1 - Math.pow(1 - progress, 3); // ease-out cubic
-      const current = Math.round(initial + (target - initial) * eased);
+      const current = Math.round(from + (target - from) * eased);
       setValue(current);
       if (progress < 1) requestAnimationFrame(step);
     };
     requestAnimationFrame(step);
-  }, [target, duration, from, countDown]);
+  }, [target, duration, from]);
 
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
-    const initial = countDown ? from : 0;
     const obs = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -144,7 +142,7 @@ function useCountUp(target: number, duration = 2600, from = 0, countDown = false
         } else {
           if (started.current) {
             started.current = false;
-            setValue(initial);
+            setValue(from);
           }
         }
       },
@@ -152,7 +150,7 @@ function useCountUp(target: number, duration = 2600, from = 0, countDown = false
     );
     obs.observe(el);
     return () => obs.disconnect();
-  }, [animate, from, countDown]);
+  }, [animate, from]);
 
   return { value, ref };
 }

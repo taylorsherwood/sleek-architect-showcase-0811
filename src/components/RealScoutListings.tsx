@@ -4,12 +4,14 @@ interface RealScoutListingsProps {
   listingStatus?: string;
   heading?: string;
   subheading?: string;
+  title?: string;
 }
 
 const RealScoutListings = ({
   listingStatus = "Sold",
   heading = "ECHELON RESULTS",
   subheading = "Recently Closed",
+  title = "on the market",
 }: RealScoutListingsProps) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const sectionRef = useRef<HTMLElement>(null);
@@ -59,7 +61,7 @@ const RealScoutListings = ({
         <div className="max-w-7xl mx-auto">
           <p className="text-minimal text-gold mb-4 font-extrabold whitespace-pre-line">{heading}</p>
           <h2 className="font-display font-normal text-architectural mb-8 text-5xl">
-            on the market
+            {title}
           </h2>
           {visible ? (
             <div ref={containerRef} className="w-full overflow-hidden" />

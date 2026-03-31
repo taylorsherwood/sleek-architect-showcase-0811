@@ -637,7 +637,7 @@ const Buy = () => {
               <button
                 type="submit"
                 disabled={submitting}
-                className="text-minimal border border-foreground text-foreground bg-transparent hover:bg-gold hover:border-gold hover:text-white hover:font-bold px-10 py-4 transition-all duration-300 w-full md:w-auto disabled:opacity-50 disabled:cursor-not-allowed">
+                className="text-minimal border border-foreground text-foreground bg-transparent hover:bg-gold hover:border-gold hover:text-white px-10 py-4 transition-all duration-300 w-full md:w-auto disabled:opacity-50 disabled:cursor-not-allowed">
                 
                 {submitting ? "SENDING..." : "REQUEST CONSULTATION"}
               </button>

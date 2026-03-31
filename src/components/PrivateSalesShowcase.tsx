@@ -24,7 +24,7 @@ export const privateSales: PrivateSaleItem[] = [
     label: "Private Sale",
   },
   {
-    image: "/placeholder.svg",
+    image: fm620Image,
     price: "$2,495,000",
     address: "13505 North FM 620",
     area: "Neighborhood",

@@ -787,10 +787,10 @@ const CommunitiesSection = () => (
                 <div className="absolute top-3 right-3 sm:top-4 sm:right-4 z-10" style={{
                   background: "rgba(12,15,36,0.8)", border: "1px solid hsl(38 39% 61%)",
                 }}>
-                  <span className="block px-2 py-[3px] sm:px-[10px] sm:py-1" style={{
+                  <span className="block px-2 py-[3px] sm:px-2 sm:py-[2px] lg:px-[10px] lg:py-1" style={{
                     fontFamily: '"Jost", sans-serif', letterSpacing: "0.12em",
                     color: "hsl(38 39% 61%)",
-                    fontSize: "clamp(8px, 2vw, 10px)",
+                    fontSize: "clamp(8px, 1.8vw, 10px)",
                   }}>
                     {c.priceFrom}
                   </span>

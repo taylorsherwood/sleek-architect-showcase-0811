@@ -580,7 +580,7 @@ const CommercialInvestment = () => {
       </section>
 
       {/* ── FINAL CTA ── */}
-      <section className="py-16 md:py-24 bg-muted border-t border-border">
+      <section className="py-16 md:py-24 bg-secondary border-t border-border">
         <div className="container mx-auto px-6 max-w-lg text-center">
           <p className="text-gold mb-4 font-bold" style={labelStyle}>GET STARTED</p>
           <h2 className="font-display text-2xl md:text-3xl font-light text-foreground mb-4">

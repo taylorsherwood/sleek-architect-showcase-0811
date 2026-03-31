@@ -40,18 +40,16 @@ const AsSeenIn = () => {
         <div className="flex items-center justify-center gap-4 md:gap-10 flex-wrap md:flex-nowrap">
           {logos.map((logo, i) => (
             <ScrollReveal key={logo.alt} delay={50 + i * 45}>
-              <span className="credibility-logo-wrap">
-                <img
-                  src={logo.src}
-                  alt={logo.alt}
-                  loading="lazy"
-                  decoding="async"
-                  sizes="(max-width: 768px) 96px, 160px"
-                  className="h-16 md:h-24 w-auto object-contain credibility-logo"
-                  width={200}
-                  height={96}
-                />
-              </span>
+              <img
+                src={logo.src}
+                alt={logo.alt}
+                loading="lazy"
+                decoding="async"
+                sizes="(max-width: 768px) 96px, 160px"
+                className="h-16 md:h-24 w-auto object-contain credibility-logo"
+                width={200}
+                height={96}
+              />
             </ScrollReveal>
           ))}
         </div>

@@ -131,7 +131,7 @@ const Communities = () => {
                 </p>
               </div>
               <div>
-                <h3 className="text-2xl font-display font-normal text-architectural mb-3">
+                <h3 className="text-xl sm:text-2xl font-display font-normal text-architectural mb-3">
                   Lake Austin vs Lake Travis Waterfront
                 </h3>
                 <p className="text-muted-foreground leading-relaxed mb-3">

@@ -726,8 +726,9 @@ const Invest = () => {
           aria-hidden="true"
         >
           <img src={echelonWatermark} alt="" className="w-full h-full object-contain"
-                    loading="lazy" decoding="async"
-                    />
+            loading="lazy" decoding="async"
+            width={800} height={800}
+          />
         </div>
         <div className="max-w-4xl mx-auto px-6">
           <ScrollReveal>

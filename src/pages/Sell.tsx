@@ -485,7 +485,7 @@ const Sell = () => {
           <div className="max-w-7xl mx-auto">
             <div className="mb-16">
               <p className="text-minimal text-gold mb-4 font-extrabold">THE PROCESS</p>
-              <h2 className="text-4xl md:text-5xl font-display font-normal text-architectural">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural">
                 The Selling Process, Step by Step
               </h2>
             </div>

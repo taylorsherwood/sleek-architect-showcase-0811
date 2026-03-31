@@ -651,7 +651,7 @@ const Buy = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <p className="text-minimal text-gold mb-4 font-extrabold">EXPERT INSIGHT</p>
-            <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
               Is Now a Good Time to Buy in Austin?
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">

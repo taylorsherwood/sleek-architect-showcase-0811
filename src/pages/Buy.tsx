@@ -322,7 +322,7 @@ const Buy = () => {
         <div className="relative container mx-auto px-6 pt-24 md:pt-32 lg:pt-36">
           <div className="max-w-xl">
             <p className="text-minimal text-primary-foreground/60 mb-4 reveal">BUYER SERVICES</p>
-            <h1 className="text-4xl md:text-6xl font-display font-normal text-primary-foreground leading-[1.1] mb-6 reveal">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl font-display font-normal text-primary-foreground leading-[1.1] mb-6 reveal">
               Buying Real Estate in
               <br />
               Austin
@@ -344,7 +344,7 @@ const Buy = () => {
       <section className="py-20 bg-secondary">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-8">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-6 sm:mb-8">
               What You Need to Know About Buying in Austin
             </h2>
             <ul className="space-y-4 text-muted-foreground leading-relaxed">
@@ -364,7 +364,7 @@ const Buy = () => {
           <div className="max-w-7xl mx-auto">
             <div className="mb-16 max-w-2xl">
               <p className="text-minimal text-gold mb-4 font-extrabold">YOUR ADVANTAGE</p>
-              <h2 className="text-4xl md:text-5xl font-display font-normal text-architectural mb-6 whitespace-nowrap">
+              <h2 className="text-2xl sm:text-4xl md:text-5xl font-display font-normal text-architectural mb-6">
                 Why Work With Taylor Sherwood
               </h2>
               <p className="text-muted-foreground leading-relaxed">Choosing the right Austin real estate advisor is the single most important decision you'll make in your home search. Here's what sets Taylor apart:
@@ -402,7 +402,7 @@ const Buy = () => {
           <div className="max-w-3xl mx-auto">
             <div className="mb-12 text-center">
               <p className="text-minimal text-gold mb-4 font-extrabold">PLAN AHEAD</p>
-              <h2 className="text-4xl md:text-5xl font-display font-normal text-architectural">
+              <h2 className="text-2xl sm:text-4xl md:text-5xl font-display font-normal text-architectural">
                 Estimate Your Monthly Payment
               </h2>
             </div>
@@ -417,7 +417,7 @@ const Buy = () => {
           <div className="max-w-7xl mx-auto">
             <div className="mb-16">
               <p className="text-minimal text-gold mb-4 font-extrabold">THE PROCESS</p>
-              <h2 className="text-4xl md:text-5xl font-display font-normal text-architectural">
+              <h2 className="text-2xl sm:text-4xl md:text-5xl font-display font-normal text-architectural">
                 How Buying a Home in Austin Works
               </h2>
             </div>
@@ -446,7 +446,7 @@ const Buy = () => {
             <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-16">
               <div>
                 <p className="text-minimal text-gold mb-4 font-extrabold">FEATURED LISTINGS</p>
-                <h2 className="text-4xl md:text-5xl font-display font-normal text-architectural">
+                <h2 className="text-2xl sm:text-4xl md:text-5xl font-display font-normal text-architectural">
                   Austin Luxury Homes for Sale
                 </h2>
                 <p className="text-muted-foreground mt-4 max-w-xl">
@@ -519,7 +519,7 @@ const Buy = () => {
             <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-16">
               <div>
                 <p className="text-minimal text-gold mb-4 font-extrabold">NEIGHBORHOODS</p>
-                <h2 className="text-4xl md:text-5xl font-display font-normal text-architectural">
+                <h2 className="text-2xl sm:text-4xl md:text-5xl font-display font-normal text-architectural">
                   Austin Neighborhood Highlights
                 </h2>
                 <p className="text-muted-foreground mt-4 max-w-xl">
@@ -565,7 +565,7 @@ const Buy = () => {
           <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-start">
             <div>
               <p className="text-minimal text-gold mb-4 font-extrabold">READY TO BEGIN?</p>
-              <h2 className="text-4xl md:text-5xl font-display font-normal text-architectural leading-[1.15] mb-6">
+              <h2 className="text-2xl sm:text-4xl md:text-5xl font-display font-normal text-architectural leading-[1.15] mb-6">
                 Schedule a Buyer Consultation
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-10 max-w-lg">Whether you're searching for luxury homes, relocating to Austin, or exploring investment opportunities, a consultation with Taylor is the best first step. We'll discuss your goals, timeline, and build a customized search strategy.

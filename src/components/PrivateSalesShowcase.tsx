@@ -43,8 +43,7 @@ export const privateSales: PrivateSaleItem[] = [
     area: "BAYTOWN, TEXAS",
     descriptor: "Commercial Property",
     label: "Represented Buyer",
-  }
-  {
+  },
     image: highRoadImage,
     price: "$1,495,000",
     address: "The High Road",

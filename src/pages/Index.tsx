@@ -126,8 +126,8 @@ const Hero = () => {
       }} />
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-6 pb-32 md:pb-36 pt-36 md:pt-44 lg:pt-48">
-        <div className="max-w-[780px]">
+      <div className="relative z-10 container mx-auto px-6 pb-32 md:pb-28 lg:pb-36 pt-36 md:pt-32 lg:pt-48">
+        <div className="max-w-[780px] md:max-w-[620px] lg:max-w-[780px]">
           {/* Gold line + kicker */}
           <div style={anim("0s")} className="mb-5">
             <div className="w-10 h-px bg-gold mb-5" />
@@ -140,7 +140,7 @@ const Hero = () => {
             </p>
           </div>
 
-          <h1 className="font-display mb-7" style={{
+          <h1 className="font-display mb-7 md:mb-5 lg:mb-7" style={{
             ...anim("0.15s"), fontWeight: 400, lineHeight: 1.12, letterSpacing: "0.02em",
             fontSize: "clamp(32px, 4vw, 52px)",
             color: "rgba(250,248,244,0.98)",
@@ -149,7 +149,7 @@ const Hero = () => {
             Access Austin's Most Exclusive Homes
           </h1>
 
-          <p className="max-w-[480px] mb-10 leading-[1.7]" style={{
+          <p className="max-w-[480px] mb-10 md:mb-7 lg:mb-10 leading-[1.7]" style={{
             ...anim("0.3s"),
             fontFamily: '"Jost", sans-serif', fontWeight: 400, fontSize: "15.5px",
             letterSpacing: "0.04em", color: "rgba(250,248,244,0.95)",

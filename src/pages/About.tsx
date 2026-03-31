@@ -61,8 +61,12 @@ const About = () => {
                 src="/lovable-uploads/9265260a-6432-4ccb-ad05-c43da28ecfc3.jpg"
                 loading="eager"
                 decoding="async"
-                fetchPriority="high" />
-              <img src={clhmsBadge} alt="Certified Luxury Home Marketing Specialist guild member badge" title="Certified Luxury Home Marketing Specialist designation" className="absolute bottom-3 right-3 w-20 h-20 opacity-85" loading="lazy" decoding="async" />
+                fetchPriority="high"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                width={600}
+                height={800}
+              />
+              <img src={clhmsBadge} alt="Certified Luxury Home Marketing Specialist guild member badge" title="Certified Luxury Home Marketing Specialist designation" className="absolute bottom-3 right-3 w-20 h-20 opacity-85" loading="lazy" decoding="async" width={80} height={80} />
             </div>
             <div>
               <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-2">Meet Taylor Sherwood</h2>

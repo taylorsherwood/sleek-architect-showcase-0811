@@ -34,6 +34,8 @@ const Footer = () => {
                   alt="Echelon Property Group"
                   className="h-80 w-auto"
                   loading="lazy" decoding="async"
+                  width={320}
+                  height={320}
                 />
               </Link>
             </div>

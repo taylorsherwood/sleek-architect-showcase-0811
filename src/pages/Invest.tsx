@@ -642,7 +642,7 @@ const Invest = () => {
       </section>
 
       {/* ──────────────────────── PRIVATE NETWORK GATEWAY ──────────────────────── */}
-      <section className="py-14 md:py-20 bg-warm-cream">
+      <section className="py-14 md:py-20 bg-secondary">
         <div className="max-w-2xl mx-auto px-6 text-center">
           <ScrollReveal>
             <p className="text-minimal text-gold mb-5 tracking-[0.3em]">Private Network</p>

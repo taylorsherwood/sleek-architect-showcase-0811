@@ -146,8 +146,7 @@ const Hero = () => {
             color: "rgba(250,248,244,0.98)",
             textShadow: "0 2px 12px rgba(0,0,0,0.45), 0 6px 30px rgba(0,0,0,0.30), 0 0 60px rgba(0,0,0,0.15)"
           }}>
-            Access Austin's Most
-Exclusive Homes
+            Access Austin's Most<br />Exclusive Homes
           </h1>
 
           <p className="max-w-[480px] mb-10 md:mb-7 lg:mb-10 leading-[1.7]" style={{

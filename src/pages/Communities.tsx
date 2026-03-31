@@ -191,10 +191,10 @@ const Communities = () => {
       </section>
 
       {/* ── FAQ ── */}
-      <section className="py-28 bg-background">
-        <div className="container mx-auto px-6">
+      <section className="py-20 sm:py-28 bg-background">
+        <div className="container mx-auto px-5 sm:px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-8">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-6 sm:mb-8">
               Frequently Asked Questions About Austin Communities
             </h2>
             <div className="space-y-6">

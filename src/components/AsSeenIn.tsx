@@ -46,16 +46,9 @@ const AsSeenIn = () => {
                 loading="lazy"
                 decoding="async"
                 sizes="(max-width: 768px) 96px, 160px"
-                className={`${logo.className} w-auto object-contain transition-opacity duration-400`}
-                style={{ opacity: logo.opacity }}
+                className="h-10 md:h-14 w-auto object-contain credibility-logo"
                 width={160}
-                height={112}
-                onMouseEnter={(e) => {
-                  (e.currentTarget as HTMLImageElement).style.opacity = "0.9";
-                }}
-                onMouseLeave={(e) => {
-                  (e.currentTarget as HTMLImageElement).style.opacity = String(logo.opacity);
-                }}
+                height={56}
               />
             </ScrollReveal>
           ))}

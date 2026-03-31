@@ -134,7 +134,7 @@ const Hero = () => {
             <p style={{
               fontFamily: '"Jost", sans-serif', fontSize: "10px", letterSpacing: "0.25em", textTransform: "uppercase",
               color: "hsl(38 39% 61%)",
-              textShadow: "0 0 12px rgba(198,168,91,0.5), 0 0 24px rgba(198,168,91,0.25)"
+              textShadow: "0 1px 6px rgba(0,0,0,0.7), 0 0 20px rgba(0,0,0,0.5), 0 0 12px rgba(198,168,91,0.4)"
             }}>
               STRATEGIC AUSTIN REAL ESTATE ADVISORY
             </p>
@@ -152,7 +152,7 @@ const Hero = () => {
             ...anim("0.3s"),
             fontFamily: '"Jost", sans-serif', fontWeight: 300, fontSize: "15px",
             letterSpacing: "0.05em", color: "rgba(245,243,239,0.85)",
-            textShadow: "0 2px 12px rgba(0,0,0,0.6), 0 0 30px rgba(245,243,239,0.08)"
+            textShadow: "0 1px 8px rgba(0,0,0,0.7), 0 0 24px rgba(0,0,0,0.5)"
           }}>
             Private listings, off-market opportunities, and elevated real estate representation.
           </p>

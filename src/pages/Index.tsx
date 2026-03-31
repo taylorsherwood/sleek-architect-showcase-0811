@@ -109,7 +109,7 @@ const Hero = () => {
       <div aria-hidden="true" className="absolute inset-0 pointer-events-none select-none" style={{ zIndex: 0 }}>
         <video ref={videoRef} autoPlay muted loop playsInline preload="none" poster="/images/hero-poster.jpg"
           className={`hero-bg-video transition-opacity duration-700 ${videoReady ? "opacity-100" : "opacity-0"}`}
-          style={{ filter: "brightness(0.82) contrast(1.08)" }} tabIndex={-1}
+          style={{ filter: "brightness(1.12) saturate(1.04) contrast(1.02)" }} tabIndex={-1}
           width={1920} height={1080}>
           {videoSrc && <source src={videoSrc} type="video/mp4" />}
         </video>

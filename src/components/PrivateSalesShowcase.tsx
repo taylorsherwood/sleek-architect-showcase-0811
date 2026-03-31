@@ -18,7 +18,7 @@ export interface PrivateSaleItem {
 
 export const privateSales: PrivateSaleItem[] = [
   {
-    image: "/placeholder.svg",
+    image: southeastAustinImage,
     price: "$4,950,000",
     address: "Address Witheld",
     area: "SOUTHEAST AUSTIN",

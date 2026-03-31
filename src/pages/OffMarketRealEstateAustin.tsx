@@ -249,7 +249,7 @@ const OffMarketRealEstateAustin = () => {
               </ul>
               <button
                 onClick={scrollToForm}
-                className="lg:hidden bg-[hsl(var(--gold))] hover:bg-white text-white hover:text-[hsl(var(--gold))] px-10 py-4 transition-all duration-300 active:scale-[0.98] tracking-[0.2em] uppercase font-sans font-medium"
+                className="lg:hidden bg-[hsl(var(--gold))] hover:bg-white text-white hover:text-[hsl(var(--gold))] px-8 sm:px-10 py-3 sm:py-4 transition-all duration-300 active:scale-[0.98] tracking-[0.2em] uppercase font-sans font-medium"
                 style={{ fontSize: "0.65rem" }}
               >
                 REQUEST PRIVATE ACCESS

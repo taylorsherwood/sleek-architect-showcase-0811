@@ -151,7 +151,7 @@ const Hero = () => {
       {/* Content */}
       <div
         className="relative container mx-auto pt-24 md:pt-32 lg:pt-36"
-        style={{ zIndex: 2, paddingLeft: "clamp(32px, 6vw, 96px)", paddingRight: "24px" }}>
+        style={{ zIndex: 2, paddingLeft: "clamp(32px, 6vw, 96px)", paddingRight: "24px", transform: "translateZ(0)", isolation: "isolate" }}>
         
         <div
           className="relative"

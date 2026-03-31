@@ -51,14 +51,14 @@ const CinematicVideoSection = () => {
           <video
             ref={videoRef}
             className="absolute inset-0 w-full h-full object-cover object-center"
-            src={visible ? VIDEO_URL : undefined}
             poster={POSTER_URL}
-            autoPlay
             muted
             loop
             playsInline
             preload="none"
-          />
+          >
+            {visible && <source src={VIDEO_URL} type="video/mp4" />}
+          </video>
         </div>
 
         {/* Subtle bottom gradient — warm charcoal */}

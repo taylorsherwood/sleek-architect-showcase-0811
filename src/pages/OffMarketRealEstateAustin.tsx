@@ -228,7 +228,7 @@ const OffMarketRealEstateAustin = () => {
                 Access Austin's Private &{" "}
                 <span className="italic">Off-Market</span> Homes
               </h1>
-              <p className="text-white/70 text-lg md:text-xl font-light leading-relaxed mb-4 max-w-lg">
+              <p className="text-white/70 text-base sm:text-lg md:text-xl font-light leading-relaxed mb-4 max-w-lg">
                 These properties are not available on Zillow, Realtor.com, or the MLS.
               </p>
               <p className="text-white/50 text-base font-light leading-relaxed mb-8 max-w-lg">

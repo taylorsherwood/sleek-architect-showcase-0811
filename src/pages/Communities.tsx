@@ -169,7 +169,7 @@ const Communities = () => {
                 For those seeking more space, the Texas Hill Country and Dripping Springs provide sprawling ranch estates, vineyard properties, and acreage surrounded by rolling terrain and live oaks. Downtown Austin and Travis Heights cater to buyers who prefer urban energy, walkable streetscapes, and proximity to the city's cultural core.
               </p>
 
-              <h3 className="text-2xl font-display font-normal text-architectural pt-4">
+              <h3 className="text-xl sm:text-2xl font-display font-normal text-architectural pt-4">
                 Market Insights Across Austin Neighborhoods
               </h3>
               <p>

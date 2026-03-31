@@ -288,6 +288,16 @@ realscout-simple-search {
     animation-play-state: paused;
   }
 
+  /* Credibility logos — desktop: subtle gold, mobile/tablet: stronger */
+  .credibility-logo {
+    filter: brightness(0) invert(1) sepia(1) saturate(0.35) hue-rotate(3deg) brightness(0.75);
+  }
+  @media (max-width: 768px) {
+    .credibility-logo {
+      filter: brightness(0) invert(1) sepia(1) saturate(0.5) hue-rotate(3deg) brightness(0.92);
+    }
+  }
+
   /* Hero CTA mobile */
   @media (max-width: 640px) {
     .hero-ctas {

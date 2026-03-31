@@ -516,11 +516,8 @@ const Sell = () => {
         <Testimonials />
       </Suspense>
 
-      {/* ── Spacer ── */}
-      <div className="bg-background py-8" />
-
       {/* ── Full-Spectrum Real Estate Advisory ── */}
-      <section className="pt-0 pb-14 bg-background">
+      <section className="py-20 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <div className="mb-12">

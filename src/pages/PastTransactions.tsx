@@ -41,19 +41,19 @@ const PastTransactions = () => {
           className="absolute inset-0 w-full h-full object-cover object-[center_30%] md:object-[center_25%]"
           fetchPriority="high"
         />
-        {/* Bottom-only gradient — ~25% opacity fading to transparent by mid-height */}
+        {/* Bottom-only gradient — strengthened for text area */}
         <div
-          className="absolute inset-x-0 bottom-0 h-[55%]"
-          style={{ background: "linear-gradient(to top, rgba(0,0,0,0.28) 0%, rgba(0,0,0,0.12) 40%, transparent 100%)" }}
+          className="absolute inset-x-0 bottom-0 h-[50%]"
+          style={{ background: "linear-gradient(to top, rgba(0,0,0,0.42) 0%, rgba(0,0,0,0.18) 45%, transparent 100%)" }}
         />
 
-        <div className="absolute inset-0 flex items-end pb-14 md:pb-20">
-          <div className="container mx-auto px-8 md:px-12 lg:px-16">
+        <div className="absolute inset-0 flex items-end pb-10 md:pb-14">
+          <div className="container mx-auto px-6 md:px-10 lg:px-14">
             <ScrollReveal distance={6} duration={900}>
-              <h1 className="text-4xl sm:text-5xl md:text-6xl font-display font-normal text-white leading-[1.08] tracking-[0.01em]">
+              <h1 className="text-3xl sm:text-4xl md:text-[3.25rem] font-display font-normal text-white leading-[1.1] tracking-[0.015em]">
                 A Proven Track Record
               </h1>
-              <p className="mt-4 text-white/55 text-sm md:text-[15px] font-light tracking-wide max-w-lg">
+              <p className="mt-3 text-white/65 text-sm md:text-[15px] font-light tracking-wide max-w-lg">
                 A selection of transactions across Austin's most competitive luxury markets.
               </p>
             </ScrollReveal>

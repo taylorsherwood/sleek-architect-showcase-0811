@@ -1,4 +1,5 @@
 import ScrollReveal from "@/components/ScrollReveal";
+import fm620Image from "@/assets/13505-north-fm-620.jpg";
 
 /* ------------------------------------------------------------------ */
 /*  DATA — Edit this array to add / remove / update private sales      */
@@ -23,7 +24,7 @@ export const privateSales: PrivateSaleItem[] = [
     label: "Private Sale",
   },
   {
-    image: "/placeholder.svg",
+    image: fm620Image,
     price: "$2,495,000",
     address: "13505 North FM 620",
     area: "Neighborhood",

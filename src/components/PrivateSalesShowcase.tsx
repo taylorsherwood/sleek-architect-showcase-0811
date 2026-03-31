@@ -43,7 +43,7 @@ export const privateSales: PrivateSaleItem[] = [
   },
   {
     image: "/placeholder.svg",
-    price: "$0,000,000",
+    price: "$1,495,000",
     address: "Property Address",
     area: "Neighborhood",
     descriptor: "",

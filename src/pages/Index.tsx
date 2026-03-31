@@ -158,26 +158,22 @@ const Hero = () => {
             Private listings, off-market opportunities, and elevated real estate representation.
           </p>
 
-          {/* CTA Buttons */}
+          {/* CTA Buttons — fully static, no animation, no JS hover */}
           <div className="flex flex-col sm:flex-row gap-5" style={anim("0.4s")}>
             <Link to="/austin-luxury-homes-for-sale"
-              className="inline-block text-center px-8 py-[14px] border transition-all duration-300 hover:bg-gold hover:text-foreground"
+              className="inline-block text-center px-8 py-[14px]"
               style={{
                 fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 400,
-                borderColor: "hsl(38 39% 61%)", color: "hsl(38 39% 61%)", background: "transparent",
-              }}
-              onMouseEnter={(e) => { e.currentTarget.style.background = "hsl(38 39% 61%)"; e.currentTarget.style.color = "#0C0F24"; }}
-              onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = "hsl(38 39% 61%)"; }}>
+                border: "1px solid hsl(38 39% 61%)", color: "hsl(38 39% 61%)", background: "transparent",
+              }}>
               EXPLORE LUXURY HOMES
             </Link>
             <Link to="/off-market-real-estate-austin"
-              className="inline-block text-center px-8 py-[14px] border transition-all duration-300"
+              className="inline-block text-center px-8 py-[14px]"
               style={{
                 fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 400,
-                borderColor: "rgba(255,255,255,0.3)", color: "hsl(var(--warm-cream))", background: "transparent",
-              }}
-              onMouseEnter={(e) => { e.currentTarget.style.background = "hsl(38 39% 61%)"; e.currentTarget.style.color = "#0C0F24"; e.currentTarget.style.borderColor = "hsl(38 39% 61%)"; }}
-              onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = "hsl(var(--warm-cream))"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.3)"; }}>
+                border: "1px solid rgba(255,255,255,0.3)", color: "hsl(var(--warm-cream))", background: "transparent",
+              }}>
               REQUEST PRIVATE ACCESS
             </Link>
           </div>

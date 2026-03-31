@@ -109,7 +109,7 @@ const Hero = () => {
       <div aria-hidden="true" className="absolute inset-0 pointer-events-none select-none" style={{ zIndex: 0 }}>
         <video ref={videoRef} autoPlay muted loop playsInline preload="none" poster="/images/hero-poster.jpg"
           className={`hero-bg-video transition-opacity duration-700 ${videoReady ? "opacity-100" : "opacity-0"}`}
-          style={{ filter: "brightness(0.82) contrast(1.08)" }} tabIndex={-1}
+          style={{ filter: "brightness(1.12) saturate(1.04) contrast(1.02)" }} tabIndex={-1}
           width={1920} height={1080}>
           {videoSrc && <source src={videoSrc} type="video/mp4" />}
         </video>
@@ -119,11 +119,11 @@ const Hero = () => {
         <img src="/images/hero-poster.jpg" alt="Austin Texas skyline" className="absolute inset-0 w-full h-full object-cover" style={{ zIndex: 0 }} loading="eager" width={1920} height={1080} />
       )}
 
-      {/* Layered gradient overlay per spec */}
+      {/* Light gradient overlay — just enough for text readability */}
       <div className="absolute inset-0" style={{
         zIndex: 1,
-        background: `linear-gradient(to bottom, rgba(8,11,26,0.35) 0%, rgba(8,11,26,0.20) 40%, rgba(8,11,26,0.65) 100%),
-                      linear-gradient(to right, rgba(8,11,26,0.55) 0%, rgba(8,11,26,0.25) 50%, rgba(8,11,26,0.05) 100%)`
+        background: `linear-gradient(to bottom, rgba(8,11,26,0.15) 0%, rgba(8,11,26,0.05) 40%, rgba(8,11,26,0.40) 100%),
+                      linear-gradient(to right, rgba(8,11,26,0.30) 0%, rgba(8,11,26,0.10) 50%, rgba(8,11,26,0.0) 100%)`
       }} />
 
       {/* Content */}

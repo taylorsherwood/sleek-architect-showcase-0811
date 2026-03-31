@@ -106,12 +106,11 @@ const Hero = () => {
 
   return (
     <section ref={sectionRef} id="hero-section" className="relative h-screen flex items-center overflow-hidden bg-neutral-900">
-      {/* Decorative background video */}
+      {/* ── VIDEO LAYER — fully isolated GPU compositor layer ── */}
       <div
         aria-hidden="true"
         className="absolute inset-0 pointer-events-none select-none overflow-hidden"
-        style={{ zIndex: 0, isolation: "isolate", contain: "strict" }}>
-        
+        style={{ zIndex: 0, isolation: "isolate", contain: "strict", transform: "translateZ(0)", willChange: "transform" }}>
         <video
           ref={videoRef}
           autoPlay
@@ -120,19 +119,16 @@ const Hero = () => {
           playsInline
           preload="none"
           poster="/images/hero-poster.jpg"
-          className={`hero-bg-video transition-opacity duration-700 ${
-          videoReady ? "opacity-100" : "opacity-0"}`
-          }
-          style={{ transform: "translateZ(0)", backfaceVisibility: "hidden", willChange: "transform" }}
+          className={`hero-bg-video ${videoReady ? "opacity-100" : "opacity-0"}`}
+          style={{ transform: "translateZ(0)", backfaceVisibility: "hidden", willChange: "transform, opacity", transition: "opacity 0.7s ease" }}
           width={1920}
           height={1080}
           tabIndex={-1}>
-          
           {videoSrc && <source src={videoSrc} type="video/mp4" />}
         </video>
       </div>
 
-      {/* Fallback image — uses hero poster (already preloaded), no extra import */}
+      {/* Fallback image */}
       {showFallback && !videoReady &&
       <img
         src="/images/hero-poster.jpg"
@@ -142,45 +138,39 @@ const Hero = () => {
         style={{ zIndex: 0 }}
         loading="eager"
         width={1920}
-        height={1080}
+        height={1920}
       />
       }
 
-      
-
-      {/* Content */}
+      {/* ── CONTENT LAYER — isolated from video layer ── */}
       <div
         className="relative container mx-auto pt-24 md:pt-32 lg:pt-36"
-        style={{ zIndex: 2, paddingLeft: "clamp(32px, 6vw, 96px)", paddingRight: "24px", transform: "translateZ(0)", isolation: "isolate" }}>
-        
+        style={{ zIndex: 2, paddingLeft: "clamp(32px, 6vw, 96px)", paddingRight: "24px", isolation: "isolate", contain: "layout paint", transform: "translateZ(0)" }}>
         <div
           className="relative"
-          style={{
-            maxWidth: "620px",
-          }}>
+          style={{ maxWidth: "620px" }}>
           
           <p
-            className="text-warm-cream/55 mb-6 font-bold transition-all duration-1000 will-change-[opacity,transform]"
+            className="text-warm-cream/55 mb-6 font-bold"
             style={{
               opacity: heroVisible ? 1 : 0,
-              transform: heroVisible ? "translateY(0)" : "translateY(10px)",
-              transitionTimingFunction: "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+              transform: heroVisible ? "translateZ(0) translateY(0)" : "translateZ(0) translateY(10px)",
+              transition: "opacity 1s cubic-bezier(0.25,0.46,0.45,0.94), transform 1s cubic-bezier(0.25,0.46,0.45,0.94)",
               fontFamily: '"Jost", sans-serif',
               fontSize: "0.65rem",
               letterSpacing: "0.38em",
               textTransform: "uppercase",
               textShadow: "0 0 20px rgba(12,15,36,0.7), 0 0 40px rgba(12,15,36,0.5), 0 1px 6px rgba(0,0,0,0.4)"
             }}>
-            
             AUSTIN REAL ESTATE ADVISORY
           </p>
 
           <h1
-            className="font-display text-warm-cream will-change-[opacity,transform]"
+            className="font-display text-warm-cream"
             style={{
               opacity: heroVisible ? 1 : 0,
-              transform: heroVisible ? "translateY(0)" : "translateY(10px)",
-              transition: "opacity 1.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s, transform 1.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s",
+              transform: heroVisible ? "translateZ(0) translateY(0)" : "translateZ(0) translateY(10px)",
+              transition: "opacity 1.4s cubic-bezier(0.25,0.46,0.45,0.94) 0.2s, transform 1.4s cubic-bezier(0.25,0.46,0.45,0.94) 0.2s",
               fontSize: "clamp(38px, 4.5vw, 68px)",
               lineHeight: 1.08,
               letterSpacing: "0.02em",
@@ -194,17 +184,16 @@ const Hero = () => {
           </h1>
 
           {/* Service pillars */}
-          <div className="flex flex-wrap items-center gap-x-5 gap-y-1 mb-5 transition-all duration-1000 will-change-[opacity,transform]"
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-1 mb-5"
             style={{
               opacity: heroVisible ? 1 : 0,
-              transform: heroVisible ? "translateY(0)" : "translateY(10px)",
-              transitionTimingFunction: "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
-              transitionDelay: "0.3s",
+              transform: heroVisible ? "translateZ(0) translateY(0)" : "translateZ(0) translateY(10px)",
+              transition: "opacity 1s cubic-bezier(0.25,0.46,0.45,0.94) 0.3s, transform 1s cubic-bezier(0.25,0.46,0.45,0.94) 0.3s",
             }}>
             {["Residential", "Investment", "Development"].map(
               (item, i) =>
               <span key={item} className="flex items-center gap-5">
-                  <span
+                <span
                   className="text-warm-cream/85 font-medium"
                   style={{
                     fontFamily: '"Jost", sans-serif',
@@ -213,24 +202,21 @@ const Hero = () => {
                     fontWeight: 400,
                     textShadow: "0px 1px 6px rgba(0,0,0,0.35)"
                   }}>
-                  
-                    {item}
-                  </span>
-                  {i < 2 &&
-                <span className="text-[9px] text-white/50" style={{ textShadow: "0 0 6px rgba(255,255,255,0.25)" }}>●</span>
-                }
+                  {item}
                 </span>
-
+                {i < 2 &&
+                  <span className="text-[9px] text-white/50" style={{ textShadow: "0 0 6px rgba(255,255,255,0.25)" }}>●</span>
+                }
+              </span>
             )}
           </div>
 
           <p
-            className="max-w-[500px] transition-all duration-1000 will-change-[opacity,transform]"
+            className="max-w-[500px]"
             style={{
               opacity: heroVisible ? 1 : 0,
-              transform: heroVisible ? "translateY(0)" : "translateY(10px)",
-              transitionTimingFunction: "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
-              transitionDelay: "0.35s",
+              transform: heroVisible ? "translateZ(0) translateY(0)" : "translateZ(0) translateY(10px)",
+              transition: "opacity 1s cubic-bezier(0.25,0.46,0.45,0.94) 0.35s, transform 1s cubic-bezier(0.25,0.46,0.45,0.94) 0.35s",
               fontFamily: "'Jost', sans-serif",
               fontWeight: 400,
               fontSize: "16px",
@@ -245,18 +231,18 @@ const Hero = () => {
             most sought-after neighborhoods.
           </p>
 
-          <div className="hero-ctas flex flex-row gap-4 items-center transition-all duration-1000 will-change-[opacity,transform]"
+          {/* ── CTA BUTTONS — isolated paint container, overlay-based hover ── */}
+          <div className="hero-ctas flex flex-row gap-4 items-center"
             style={{
               opacity: heroVisible ? 1 : 0,
               transform: heroVisible ? "translateZ(0) translateY(0)" : "translateZ(0) translateY(10px)",
-              transitionTimingFunction: "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
-              transitionDelay: "0.45s",
+              transition: "opacity 1s cubic-bezier(0.25,0.46,0.45,0.94) 0.45s, transform 1s cubic-bezier(0.25,0.46,0.45,0.94) 0.45s",
               marginTop: "36px",
               contain: "layout paint",
             }}>
             <Link
               to="/invest"
-              className="hero-cta-gold inline-flex items-center justify-center whitespace-nowrap"
+              className="hero-cta-gold group relative overflow-hidden inline-flex items-center justify-center whitespace-nowrap"
               style={{
                 fontFamily: "'Jost', sans-serif",
                 fontSize: "11px",
@@ -268,12 +254,14 @@ const Hero = () => {
                 maxWidth: "260px",
                 width: "fit-content",
                 transform: "translateZ(0)",
+                backfaceVisibility: "hidden",
               }}>
-              EXPLORE OPPORTUNITIES
+              <span aria-hidden="true" className="hero-cta-gold-fill" />
+              <span className="relative z-[1]">EXPLORE OPPORTUNITIES</span>
             </Link>
             <Link
               to="/off-market-real-estate-austin"
-              className="hero-cta-light inline-flex items-center justify-center whitespace-nowrap"
+              className="hero-cta-light group relative overflow-hidden inline-flex items-center justify-center whitespace-nowrap"
               style={{
                 fontFamily: "'Jost', sans-serif",
                 fontSize: "11px",
@@ -285,19 +273,19 @@ const Hero = () => {
                 maxWidth: "260px",
                 width: "fit-content",
                 transform: "translateZ(0)",
+                backfaceVisibility: "hidden",
               }}>
-              PRIVATE ACCESS
+              <span aria-hidden="true" className="hero-cta-light-fill" />
+              <span className="relative z-[1]">PRIVATE ACCESS</span>
             </Link>
           </div>
         </div>
       </div>
 
-
       {/* Scroll indicator */}
       <div
         className="absolute bottom-5 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4"
         style={{ zIndex: 3 }}>
-        
         <span
           className="text-warm-cream font-light"
           style={{
@@ -306,7 +294,6 @@ const Hero = () => {
             letterSpacing: "0.35em",
             textTransform: "uppercase"
           }}>
-          
           Discover Austin
         </span>
         <div className="scroll-indicator-line" />

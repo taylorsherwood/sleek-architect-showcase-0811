@@ -8,14 +8,14 @@ import mediaAustinHome from "@/assets/media-austin-home.png";
 import mediaAustinLuxuryHome from "@/assets/media-austin-luxury-home.png";
 
 const logos = [
-  { src: mediaWsj, alt: "The Wall Street Journal", h: "h-28 md:h-40" },
-  { src: mediaMansionGlobal, alt: "Mansion Global", h: "h-28 md:h-40" },
-  { src: mediaRobbReport, alt: "Robb Report", h: "h-28 md:h-40" },
-  { src: mediaTribeza, alt: "Tribeza", h: "h-28 md:h-40" },
-  { src: mediaAbj, alt: "Austin Business Journal", h: "h-28 md:h-40" },
-  { src: mediaHaven, alt: "Haven", h: "h-28 md:h-40" },
-  { src: mediaAustinHome, alt: "Austin Home", h: "h-28 md:h-40" },
-  { src: mediaAustinLuxuryHome, alt: "Austin Luxury Home Magazine", h: "h-28 md:h-40" },
+  { src: mediaWsj, alt: "The Wall Street Journal" },
+  { src: mediaMansionGlobal, alt: "Mansion Global" },
+  { src: mediaRobbReport, alt: "Robb Report" },
+  { src: mediaTribeza, alt: "Tribeza" },
+  { src: mediaAbj, alt: "Austin Business Journal" },
+  { src: mediaHaven, alt: "Haven" },
+  { src: mediaAustinHome, alt: "Austin Home" },
+  { src: mediaAustinLuxuryHome, alt: "Austin Luxury Home Magazine" },
 ];
 
 const ScrollingCredibilityStrip = () => {

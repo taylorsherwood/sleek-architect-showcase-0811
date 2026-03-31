@@ -246,33 +246,36 @@ realscout-simple-search {
     transition: opacity 0.7s ease;
   }
 
-  /* Hero CTA nuclear reset — kill ALL paint-triggering properties */
-  .hero-ctas,
-  .hero-ctas * {
-    transform: none !important;
-    animation: none !important;
+  /* Hero CTA — fully static, zero animation, !important overrides everything */
+  .hero-cta-gold,
+  .hero-cta-gold:hover,
+  .hero-cta-gold:focus,
+  .hero-cta-light,
+  .hero-cta-light:hover,
+  .hero-cta-light:focus {
     transition: none !important;
+    animation: none !important;
+    transform: none !important;
+    background: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
     filter: none !important;
     backdrop-filter: none !important;
-    box-shadow: none !important;
+    text-decoration: none !important;
   }
-
-  /* Static buttons — hover only changes opacity (compositor-only) */
-  .hero-cta-gold {
-    border: 1px solid hsl(var(--gold));
-    color: hsl(var(--gold));
-    background: transparent;
-    opacity: 1;
+  .hero-cta-gold,
+  .hero-cta-gold:hover,
+  .hero-cta-gold:focus {
+    border: 1px solid hsl(var(--gold)) !important;
+    color: hsl(var(--gold)) !important;
   }
-  .hero-cta-gold:hover {
-    opacity: 0.7;
+  .hero-cta-light,
+  .hero-cta-light:hover,
+  .hero-cta-light:focus {
+    border: 1px solid rgba(245, 243, 239, 0.35) !important;
+    color: rgba(245, 243, 239, 0.82) !important;
   }
-  .hero-cta-light {
-    border: 1px solid rgba(245, 243, 239, 0.35);
-    color: rgba(245, 243, 239, 0.82);
-    background: transparent;
-    opacity: 1;
-  }
+  .hero-cta-gold:hover,
   .hero-cta-light:hover {
     opacity: 0.7;
   }

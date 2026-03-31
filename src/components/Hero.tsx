@@ -229,15 +229,15 @@ const Hero = () => {
           </p>
 
           {/* ── CTA BUTTONS — fully static, zero animation ── */}
-          <div className="flex flex-row gap-4 items-center"
+          <div className="hero-ctas flex flex-row gap-4 items-center"
             style={{
               opacity: heroVisible ? 1 : 0,
               transform: heroVisible ? "translateY(0)" : "translateY(10px)",
               transition: "opacity 1s ease 0.45s, transform 1s ease 0.45s",
               marginTop: "36px",
             }}>
-            <Link
-              to="/invest"
+            <a
+              href="/invest"
               className="hero-cta-gold inline-flex items-center justify-center whitespace-nowrap"
               style={{
                 fontFamily: "'Jost', sans-serif",
@@ -251,9 +251,9 @@ const Hero = () => {
                 width: "fit-content",
               }}>
               EXPLORE OPPORTUNITIES
-            </Link>
-            <Link
-              to="/off-market-real-estate-austin"
+            </a>
+            <a
+              href="/off-market-real-estate-austin"
               className="hero-cta-light inline-flex items-center justify-center whitespace-nowrap"
               style={{
                 fontFamily: "'Jost', sans-serif",
@@ -267,7 +267,7 @@ const Hero = () => {
                 width: "fit-content",
               }}>
               PRIVATE ACCESS
-            </Link>
+            </a>
           </div>
         </div>
       </div>

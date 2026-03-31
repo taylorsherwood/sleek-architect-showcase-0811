@@ -462,7 +462,7 @@ const Invest = () => {
       {/* ── What You Need to Know ── */}
       <section className="py-20 bg-secondary">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-8">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-8">
             What You Need to Know About Austin Investment Real Estate
           </h2>
           <ul className="space-y-4 text-muted-foreground leading-relaxed">
@@ -479,7 +479,7 @@ const Invest = () => {
         <div className="max-w-6xl mx-auto px-6">
           <ScrollReveal>
             <p className="text-minimal text-gold mb-4">Client Focus</p>
-            <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-16 max-w-2xl whitespace-nowrap">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-16 max-w-2xl whitespace-nowrap">
               Austin Investment Clients We Serve
             </h2>
           </ScrollReveal>
@@ -506,7 +506,7 @@ const Invest = () => {
         <div className="max-w-6xl mx-auto px-6">
           <ScrollReveal>
             <p className="text-minimal text-gold mb-4">Methodology</p>
-            <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-16 max-w-2xl">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-16 max-w-2xl">
               Our Austin Investor Process
             </h2>
           </ScrollReveal>
@@ -534,7 +534,7 @@ const Invest = () => {
         <div className="max-w-4xl mx-auto px-6">
           <ScrollReveal>
             <p className="text-minimal text-gold mb-4 tracking-[0.25em]">Portfolio</p>
-            <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-4 max-w-3xl">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-4 max-w-3xl">
               Real Transformations.
               <br />
               Measurable Upside.
@@ -607,7 +607,7 @@ const Invest = () => {
         <div className="max-w-6xl mx-auto px-6">
           <ScrollReveal>
             <p className="text-minimal text-gold mb-4">Strategic Approach</p>
-            <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6 max-w-3xl">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-6 max-w-3xl">
               Investment Representation Built Around Opportunity, Not Emotion
             </h2>
             <p className="text-foreground max-w-3xl leading-relaxed mb-6">
@@ -693,7 +693,7 @@ const Invest = () => {
         <div className="max-w-6xl mx-auto px-6">
           <ScrollReveal>
             <p className="text-minimal text-gold mb-4">Value Proposition</p>
-            <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-16 max-w-3xl">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-16 max-w-3xl">
               How We Help Austin Investors Move Smarter
             </h2>
           </ScrollReveal>
@@ -733,7 +733,7 @@ const Invest = () => {
         <div className="max-w-4xl mx-auto px-6">
           <ScrollReveal>
             <p className="text-minimal text-gold mb-4">Market Intelligence</p>
-            <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-8 max-w-3xl">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-8 max-w-3xl">
               Why Local Market Insight Matters
             </h2>
           </ScrollReveal>
@@ -922,7 +922,7 @@ const Invest = () => {
         <div className="max-w-3xl mx-auto px-6">
           <ScrollReveal>
             <p className="text-minimal text-gold mb-4">Frequently Asked Questions</p>
-            <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-12">
               Austin Investment Real Estate FAQ
             </h2>
           </ScrollReveal>
@@ -947,7 +947,7 @@ const Invest = () => {
       <section className="py-24 md:py-32 bg-secondary">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <ScrollReveal>
-            <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
               Looking for Your Next Investment Opportunity in Austin?
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed">

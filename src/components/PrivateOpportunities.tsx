@@ -261,7 +261,7 @@ const PrivateOpportunities = ({ variant = "light" }: PrivateOpportunitiesProps) 
                   disabled={submitting}
                   className={`w-full px-5 py-3 text-sm font-medium tracking-widest uppercase rounded transition-all duration-200 disabled:opacity-50 border ${
                     isDark
-                      ? "bg-transparent text-primary-foreground border-primary-foreground/30 hover:bg-[hsl(var(--gold))] hover:text-white hover:border-[hsl(var(--gold))] hover:font-bold"
+                      ? "bg-transparent text-primary-foreground border-primary-foreground/30 hover:bg-[hsl(var(--gold))] hover:text-white hover:border-[hsl(var(--gold))]"
                       : "bg-transparent text-foreground border-foreground/20 hover:bg-[hsl(var(--gold))] hover:text-white hover:border-[hsl(var(--gold))]"
                   }`}
                 >

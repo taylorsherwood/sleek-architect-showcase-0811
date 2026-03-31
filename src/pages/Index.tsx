@@ -444,7 +444,7 @@ const StatItem = ({ stat }: { stat: typeof stats[number] }) => {
     <div ref={ref} className="text-center group/stat">
       <p style={{
         fontFamily: '"Cinzel", serif', fontWeight: 400,
-        fontSize: "clamp(48px, 6vw, 80px)", lineHeight: 1, color: "#FAFAF8",
+        fontSize: "clamp(48px, 6vw, 80px)", lineHeight: 1, color: "#F5F3EF",
       }}>
         {stat.prefix}{count}
         <span style={{
@@ -557,7 +557,7 @@ const FeaturedProperties = () => (
                       style={{ background: "linear-gradient(to top, rgba(12,15,36,0.92) 0%, transparent 100%)" }}>
                       <p style={{
                         fontFamily: '"Cinzel", serif', fontWeight: 400,
-                        fontSize: "22px", color: "#FAFAF8", marginBottom: "4px",
+                        fontSize: "22px", color: "#F5F3EF", marginBottom: "4px",
                       }}>
                         {p.price}
                       </p>
@@ -593,7 +593,7 @@ const FeaturedProperties = () => (
                   style={{ background: "linear-gradient(to top, rgba(12,15,36,0.92) 0%, transparent 100%)" }}>
                   <p style={{
                     fontFamily: '"Cinzel", serif', fontWeight: 400,
-                    fontSize: "20px", color: "#FAFAF8", marginBottom: "4px",
+                    fontSize: "20px", color: "#F5F3EF", marginBottom: "4px",
                   }}>
                     Off-Market Opportunities
                   </p>
@@ -797,7 +797,7 @@ const CommunitiesSection = () => (
 
                 {/* Bottom text */}
                 <div className="absolute bottom-6 left-5 right-5 sm:bottom-5 z-10 group-hover:opacity-0 transition-opacity duration-500">
-                  <h3 className="font-display text-base sm:text-[1.05rem] lg:text-xl font-medium tracking-[0.03em] leading-[1.1] drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)] mb-2 sm:mb-1.5" style={{ color: "#FAFAF8" }}>
+                  <h3 className="font-display text-base sm:text-[1.05rem] lg:text-xl font-medium tracking-[0.03em] leading-[1.1] drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)] mb-2 sm:mb-1.5" style={{ color: "#F5F3EF" }}>
                     {c.name}
                   </h3>
                   <p className="line-clamp-1 hidden sm:block" style={{

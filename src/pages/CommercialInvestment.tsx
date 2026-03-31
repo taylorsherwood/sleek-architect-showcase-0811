@@ -95,7 +95,7 @@ const CommercialInvestment = () => {
               </Link>
               <Link
                 to="/austin-multifamily-report-2026"
-                className="inline-block text-minimal border border-warm-cream/50 text-warm-cream hover:bg-white hover:text-primary hover:border-white px-8 py-4 transition-colors duration-300"
+                className="inline-block text-minimal border border-primary-foreground/50 text-primary-foreground hover:bg-gold hover:text-white hover:border-gold px-8 py-4 transition-colors duration-300"
               >
                 2026 MULTI FAMILY REPORT
               </Link>

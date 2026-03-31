@@ -49,13 +49,13 @@ realscout-simple-search {
     --gold-deep: 41 30% 40%;         /* #857548 */
     --gold-highlight: 41 35% 68%;    /* #C5B88E */
 
-    --background: 45 10% 97%;        /* #FAFAF8 */
+    --background: 37 15% 95%;        /* #F5F3EF */
     --foreground: 233 47% 9%;           /* #0C0F24 */
 
-    --card: 0 0% 100%;
+    --card: 37 15% 95%;              /* #F5F3EF */
     --card-foreground: 233 47% 9%;
 
-    --popover: 0 0% 100%;
+    --popover: 37 15% 95%;           /* #F5F3EF */
     --popover-foreground: 233 47% 9%;
 
     --primary: 233 47% 9%;              /* #0C0F24 */
@@ -64,17 +64,17 @@ realscout-simple-search {
     --secondary: 37 15% 95%;         /* #F5F3EF */
     --secondary-foreground: 233 47% 9%;
 
-    --muted: 37 12% 93%;
+    --muted: 37 15% 95%;             /* #F5F3EF */
     --muted-foreground: 25 4% 42%;   /* #6B6864 */
 
-    --accent: 37 12% 93%;
+    --accent: 37 15% 95%;            /* #F5F3EF */
     --accent-foreground: 233 47% 9%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 37 8% 88%;
-    --input: 0 0% 100%;
+    --input: 37 15% 95%;             /* #F5F3EF */
     --ring: 233 47% 9%;
 
     --radius: 0.25rem;
@@ -84,7 +84,7 @@ realscout-simple-search {
     --black-soft: 233 52% 7%;           /* #080B1A */
     --black-card: 233 45% 13%;          /* #12162E */
     --white-warm: 37 15% 95%;        /* #F5F3EF */
-    --gray-light: 36 8% 90%;         /* #E8E6E1 */
+    --gray-light: 37 15% 90%;        /* warm tint */
     --gray-mid: 30 3% 59%;           /* #9A9690 */
     --gray-dark: 30 3% 28%;          /* #4A4844 */
     --text-secondary: 25 4% 42%;     /* #6B6864 */
@@ -93,7 +93,7 @@ realscout-simple-search {
     --sidebar-foreground: 233 47% 9%;
     --sidebar-primary: 233 47% 9%;
     --sidebar-primary-foreground: 40 17% 95%;
-    --sidebar-accent: 37 10% 91%;
+    --sidebar-accent: 37 15% 95%;
     --sidebar-accent-foreground: 233 47% 9%;
     --sidebar-border: 37 8% 88%;
     --sidebar-ring: 233 47% 9%;

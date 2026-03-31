@@ -130,13 +130,13 @@ const LandPage = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 to="/contact"
-                className="inline-block text-minimal bg-warm-cream text-foreground hover:bg-gold hover:text-primary-foreground px-8 py-4 transition-colors duration-300 text-center"
+                className="inline-block text-minimal bg-secondary text-foreground hover:bg-gold hover:text-primary-foreground px-8 py-4 transition-colors duration-300 text-center"
               >
                 DISCUSS YOUR INVESTMENT GOALS
               </Link>
               <Link
                 to="/listings"
-                className="inline-block text-minimal border border-warm-cream/50 text-warm-cream hover:bg-warm-cream/10 px-8 py-4 transition-colors duration-300 text-center"
+                className="inline-block text-minimal border border-secondary/50 text-secondary hover:bg-secondary/10 px-8 py-4 transition-colors duration-300 text-center"
               >
                 EXPLORE OPPORTUNITIES
               </Link>
@@ -344,13 +344,13 @@ const LandPage = () => {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link
               to="/contact"
-              className="inline-block text-minimal bg-warm-cream text-foreground hover:bg-gold hover:text-primary-foreground px-10 py-4 transition-colors duration-300"
+              className="inline-block text-minimal bg-secondary text-foreground hover:bg-gold hover:text-primary-foreground px-10 py-4 transition-colors duration-300"
             >
               CONTACT TAYLOR SHERWOOD
             </Link>
             <Link
               to="/contact"
-              className="inline-block text-minimal border border-warm-cream/50 text-warm-cream hover:bg-warm-cream/10 px-10 py-4 transition-colors duration-300"
+              className="inline-block text-minimal border border-secondary/50 text-secondary hover:bg-secondary/10 px-10 py-4 transition-colors duration-300"
             >
               DISCUSS INVESTMENT OPPORTUNITIES
             </Link>

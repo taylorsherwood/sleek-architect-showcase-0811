@@ -187,7 +187,7 @@ const AdvisoryBar = () => {
               <div className="flex flex-col items-center">
                 <button
                   onClick={() => setModalOpen(true)}
-                  className="px-5 py-2 text-sm font-medium border rounded transition-all duration-200 hover:bg-[hsl(var(--gold))] hover:text-white hover:font-bold hero-cta-btn"
+                  className="px-5 py-2 text-sm font-medium border rounded transition-all duration-200 hover:bg-[hsl(var(--gold))] hover:text-white hero-cta-btn"
                   style={{ fontFamily: '"Cinzel", serif', borderColor: 'hsl(var(--gold))', color: '#fff' }}>
                   GET ACCESS
                 </button>
@@ -255,7 +255,7 @@ const AdvisoryBar = () => {
                 {/* CTA */}
                 <button
                   onClick={() => { setModalOpen(false); dismiss(); }}
-                  className="inline-flex items-center gap-2 px-12 py-3.5 text-[11px] tracking-[0.2em] uppercase font-medium text-white/90 border border-white/30 rounded transition-all duration-300 hover:bg-[hsl(var(--gold))] hover:border-[hsl(var(--gold))] hover:text-white hover:font-bold hover:shadow-[0_0_24px_hsl(var(--gold)/0.25)] hero-cta-btn">
+                  className="inline-flex items-center gap-2 px-12 py-3.5 text-[11px] tracking-[0.2em] uppercase font-medium text-white/90 border border-white/30 rounded transition-all duration-300 hover:bg-[hsl(var(--gold))] hover:border-[hsl(var(--gold))] hover:text-white hover:shadow-[0_0_24px_hsl(var(--gold)/0.25)] hero-cta-btn">
                   Continue <span className="text-[10px]">→</span>
                 </button>
               </div>
@@ -286,7 +286,7 @@ const AdvisoryBar = () => {
               <div className="pt-2">
                 <button
                   onClick={() => setSubmitError(false)}
-                  className="px-8 py-2.5 text-sm font-medium text-primary-foreground border border-primary-foreground/30 rounded transition-all duration-200 hover:bg-[hsl(var(--gold))] hover:border-[hsl(var(--gold))] hover:text-white hover:font-bold hero-cta-btn">
+                  className="px-8 py-2.5 text-sm font-medium text-primary-foreground border border-primary-foreground/30 rounded transition-all duration-200 hover:bg-[hsl(var(--gold))] hover:border-[hsl(var(--gold))] hover:text-white hero-cta-btn">
                   TRY AGAIN
                 </button>
               </div>
@@ -357,7 +357,7 @@ const AdvisoryBar = () => {
                 <button
                 type="submit"
                 disabled={submitting}
-                className="w-full px-5 py-3 text-sm font-medium text-primary-foreground border border-primary-foreground rounded transition-all duration-200 hover:bg-[hsl(var(--gold))] hover:border-[hsl(var(--gold))] hover:text-white hover:font-bold disabled:opacity-50 hero-cta-btn">
+                className="w-full px-5 py-3 text-sm font-medium text-primary-foreground border border-primary-foreground rounded transition-all duration-200 hover:bg-[hsl(var(--gold))] hover:border-[hsl(var(--gold))] hover:text-white disabled:opacity-50 hero-cta-btn">
                   {submitting ? "Submitting…" : "GET ACCESS"}
                 </button>
               </div>

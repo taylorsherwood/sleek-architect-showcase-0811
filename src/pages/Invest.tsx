@@ -642,11 +642,11 @@ const Invest = () => {
       </section>
 
       {/* ──────────────────────── PRIVATE NETWORK GATEWAY ──────────────────────── */}
-      <section className="py-14 md:py-20 bg-warm-cream">
+      <section className="py-14 md:py-20 bg-secondary">
         <div className="max-w-2xl mx-auto px-6 text-center">
           <ScrollReveal>
             <p className="text-minimal text-gold mb-5 tracking-[0.3em]">Private Network</p>
-            <h2 className="text-2xl sm:text-4xl md:text-[2.75rem] font-display font-normal text-architectural mb-6 leading-[1.15]">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-6 leading-[1.15]">
               Have a Property That Needs Work?
             </h2>
             <p className="text-muted-foreground max-w-xl mx-auto leading-relaxed mb-4 text-[0.95rem]">
@@ -800,7 +800,7 @@ const Invest = () => {
                     className={`${inputClass} bg-primary-foreground/5 border-primary-foreground/15 text-primary-foreground placeholder:text-primary-foreground/30 focus:ring-primary-foreground/30`}
                     required
                   />
-                  {errors.name && <p className="text-red-300 text-xs mt-1">{errors.name}</p>}
+                  {errors.name && <p className="text-destructive text-xs mt-1">{errors.name}</p>}
                 </div>
                 {/* Email */}
                 <div>
@@ -814,7 +814,7 @@ const Invest = () => {
                     className={`${inputClass} bg-primary-foreground/5 border-primary-foreground/15 text-primary-foreground placeholder:text-primary-foreground/30 focus:ring-primary-foreground/30`}
                     required
                   />
-                  {errors.email && <p className="text-red-300 text-xs mt-1">{errors.email}</p>}
+                  {errors.email && <p className="text-destructive text-xs mt-1">{errors.email}</p>}
                 </div>
                 {/* Phone */}
                 <div>
@@ -828,7 +828,7 @@ const Invest = () => {
                     className={`${inputClass} bg-primary-foreground/5 border-primary-foreground/15 text-primary-foreground placeholder:text-primary-foreground/30 focus:ring-primary-foreground/30`}
                     required
                   />
-                  {errors.phone && <p className="text-red-300 text-xs mt-1">{errors.phone}</p>}
+                  {errors.phone && <p className="text-destructive text-xs mt-1">{errors.phone}</p>}
                 </div>
                 {/* Investment Type */}
                 <div>

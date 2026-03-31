@@ -50,7 +50,7 @@ const labelStyle = {
 
 const BillionaireMigration = () => {
   return (
-    <div className="min-h-screen bg-warm-cream">
+    <div className="min-h-screen bg-secondary">
       <SEOHead
         title="Why Billionaires Move to Austin | Echelon Property Group"
         description="Why founders and billionaires are relocating to Austin TX. How wealth migration is reshaping Lake Austin, Westlake, and the luxury real estate market."
@@ -371,7 +371,7 @@ const BillionaireMigration = () => {
           {/* Widget at wider width */}
           <div className="max-w-5xl mx-auto">
             <div
-              className="bg-warm-cream rounded-lg border border-border/30 p-5 md:p-10"
+              className="bg-secondary rounded-lg border border-border/30 p-5 md:p-10"
               style={{
                 boxShadow:
                   "0 4px 24px -4px hsl(var(--foreground) / 0.06), 0 1px 3px hsl(var(--foreground) / 0.03)",

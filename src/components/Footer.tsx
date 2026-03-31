@@ -14,7 +14,7 @@ const footerHeadingStyle: React.CSSProperties = {
   fontSize: "10px",
   letterSpacing: "0.2em",
   textTransform: "uppercase",
-  color: "#FAFAF8",
+  color: "#F5F3EF",
   marginBottom: "20px",
   fontWeight: 400,
 };

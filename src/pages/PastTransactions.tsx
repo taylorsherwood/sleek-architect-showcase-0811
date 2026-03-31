@@ -43,21 +43,21 @@ const PastTransactions = () => {
         />
         {/* Bottom-only gradient — refined for text readability */}
         <div
-          className="absolute inset-x-0 bottom-0 h-[45%]"
-          style={{ background: "linear-gradient(to top, rgba(10,14,25,0.62) 0%, rgba(10,14,25,0.30) 40%, rgba(10,14,25,0.0) 100%)" }}
+          className="absolute inset-x-0 bottom-0 h-[52%]"
+          style={{ background: "linear-gradient(to top, rgba(10,14,25,0.60) 0%, rgba(10,14,25,0.32) 35%, rgba(10,14,25,0.10) 65%, rgba(10,14,25,0.0) 100%)" }}
         />
 
         <div className="absolute inset-0 flex items-end pb-16 md:pb-20">
           <div className="container mx-auto px-6 md:px-10 lg:px-14">
             <ScrollReveal distance={6} duration={900}>
               <h1
-                className="text-[1.7rem] sm:text-[2.1rem] md:text-[2.85rem] font-display font-normal text-white leading-[1.1] tracking-[0.02em]"
+                className="text-[1.6rem] sm:text-[2rem] md:text-[2.7rem] font-display font-light text-white leading-[1.1] tracking-[0.02em]"
                 style={{ textShadow: "0px 2px 8px rgba(0,0,0,0.25)" }}
               >
                 A Proven Track Record
               </h1>
               <p
-                className="mt-3 text-white/90 text-sm md:text-[15px] font-light tracking-wide max-w-lg leading-relaxed"
+                className="mt-5 text-white/90 text-sm md:text-[15px] font-light tracking-wide max-w-lg leading-[1.7]"
                 style={{ textShadow: "0px 2px 8px rgba(0,0,0,0.25)" }}
               >
                 A selection of transactions across Austin's most competitive luxury markets.

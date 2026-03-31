@@ -254,6 +254,26 @@ realscout-simple-search {
     filter: saturate(1.04) contrast(1.01) brightness(1.08) hue-rotate(-4deg) !important;
   }
 
+  /* Hero CTA buttons — pure CSS hover to avoid JS repaints that stutter video */
+  .hero-cta-gold {
+    border: 1px solid hsl(var(--gold));
+    color: hsl(var(--gold));
+    background: transparent;
+  }
+  .hero-cta-gold:hover {
+    background: hsl(var(--gold));
+    color: hsl(var(--black));
+  }
+  .hero-cta-light {
+    border: 1px solid rgba(245, 243, 239, 0.35);
+    color: rgba(245, 243, 239, 0.82);
+    background: transparent;
+  }
+  .hero-cta-light:hover {
+    border-color: rgba(245, 243, 239, 0.75);
+    color: #fff;
+  }
+
   /* Hero overlay — minimal neutral gradient for text readability only */
   .hero-overlay {
     background: linear-gradient(

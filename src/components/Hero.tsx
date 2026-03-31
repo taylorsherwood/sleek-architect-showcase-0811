@@ -254,7 +254,7 @@ const Hero = () => {
             }}>
             <Link
               to="/invest"
-              className="inline-flex items-center justify-center whitespace-nowrap transition-all duration-300"
+              className="hero-cta-gold inline-flex items-center justify-center whitespace-nowrap transition-all duration-300"
               style={{
                 fontFamily: "'Jost', sans-serif",
                 fontSize: "11px",
@@ -265,23 +265,12 @@ const Hero = () => {
                 minWidth: "200px",
                 maxWidth: "260px",
                 width: "fit-content",
-                border: "1px solid hsl(var(--gold))",
-                color: "hsl(var(--gold))",
-                background: "transparent",
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.background = "hsl(var(--gold))";
-                e.currentTarget.style.color = "hsl(var(--black))";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.background = "transparent";
-                e.currentTarget.style.color = "hsl(var(--gold))";
               }}>
               EXPLORE OPPORTUNITIES
             </Link>
             <Link
               to="/off-market-real-estate-austin"
-              className="inline-flex items-center justify-center whitespace-nowrap transition-all duration-300"
+              className="hero-cta-light inline-flex items-center justify-center whitespace-nowrap transition-all duration-300"
               style={{
                 fontFamily: "'Jost', sans-serif",
                 fontSize: "11px",
@@ -292,17 +281,6 @@ const Hero = () => {
                 minWidth: "200px",
                 maxWidth: "260px",
                 width: "fit-content",
-                border: "1px solid rgba(245, 243, 239, 0.35)",
-                color: "rgba(245, 243, 239, 0.82)",
-                background: "transparent",
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = "rgba(245, 243, 239, 0.75)";
-                e.currentTarget.style.color = "#fff";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.borderColor = "rgba(245, 243, 239, 0.35)";
-                e.currentTarget.style.color = "rgba(245, 243, 239, 0.82)";
               }}>
               PRIVATE ACCESS
             </Link>

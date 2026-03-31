@@ -176,7 +176,11 @@ const GlobalLuxuryAdvertising = () => {
             className="w-full h-full object-cover will-change-transform"
             style={{ transform: `scale(${heroZoom})`, transition: "transform 0.1s linear" }}
             loading="lazy"
-            decoding="async" />
+            decoding="async"
+            sizes="100vw"
+            width={1920}
+            height={1080}
+          />
 
           {/* Dark overlay */}
           <div className="absolute inset-0 bg-[#0C0F24]/55" />

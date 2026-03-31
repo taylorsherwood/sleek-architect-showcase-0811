@@ -110,6 +110,8 @@ const Contact = () => {
       ])} />
       <Navigation />
 
+      <div className="h-12 md:h-20" />
+
       <section className="pt-32 pb-28">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">

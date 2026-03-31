@@ -235,11 +235,10 @@ realscout-simple-search {
     }
   }
 
-  /* Background video — simple, no filters, no will-change, no hacks */
+  /* Background video — minimal */
   .hero-bg-video {
     position: absolute;
-    top: 0;
-    left: 0;
+    inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -247,24 +246,35 @@ realscout-simple-search {
     transition: opacity 0.7s ease;
   }
 
-  /* Hero CTA buttons — fully static, instant hover, zero animation */
+  /* Hero CTA nuclear reset — kill ALL paint-triggering properties */
+  .hero-ctas,
+  .hero-ctas * {
+    transform: none !important;
+    animation: none !important;
+    transition: none !important;
+    filter: none !important;
+    backdrop-filter: none !important;
+    box-shadow: none !important;
+  }
+
+  /* Static buttons — hover only changes opacity (compositor-only) */
   .hero-cta-gold {
     border: 1px solid hsl(var(--gold));
     color: hsl(var(--gold));
     background: transparent;
+    opacity: 1;
   }
   .hero-cta-gold:hover {
-    background: hsl(var(--gold));
-    color: hsl(var(--black));
+    opacity: 0.7;
   }
   .hero-cta-light {
     border: 1px solid rgba(245, 243, 239, 0.35);
     color: rgba(245, 243, 239, 0.82);
     background: transparent;
+    opacity: 1;
   }
   .hero-cta-light:hover {
-    border-color: rgba(245, 243, 239, 0.6);
-    color: #fff;
+    opacity: 0.7;
   }
 
   /* Hero overlay — minimal neutral gradient for text readability only */

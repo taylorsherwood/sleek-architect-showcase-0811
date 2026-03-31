@@ -130,7 +130,7 @@ const AustinLuxuryRealEstateMarketReport = () => {
                 Top Luxury Neighborhoods in Austin
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-8">
-                Performance varies meaningfully across Austin's luxury neighborhoods. The strongest markets share common characteristics: permanent supply constraints, excellent schools, natural beauty, and proximity to employment centers. For a deeper dive, see our <Link to="/best-luxury-neighborhoods-in-austin" className="text-foreground underline hover:text-muted-foreground">guide to the best luxury neighborhoods in Austin</Link>.
+                Performance varies meaningfully across Austin's luxury neighborhoods. The strongest markets share common characteristics: permanent supply constraints, excellent schools, natural beauty, and proximity to employment centers. For a deeper dive, see our <Link to="/best-luxury-neighborhoods-austin" className="text-foreground underline hover:text-muted-foreground">guide to the best luxury neighborhoods in Austin</Link>.
               </p>
 
               <div className="space-y-8">
@@ -253,7 +253,7 @@ const AustinLuxuryRealEstateMarketReport = () => {
             <div className="grid sm:grid-cols-2 gap-4">
               <Link to="/austin-luxury-market-report" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ LUXURY MARKET FORECAST</Link>
               <Link to="/austin-multifamily-report-2026" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ MULTIFAMILY REPORT 2026</Link>
-              <Link to="/best-luxury-neighborhoods-in-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ BEST LUXURY NEIGHBORHOODS</Link>
+              <Link to="/best-luxury-neighborhoods-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ BEST LUXURY NEIGHBORHOODS</Link>
               <Link to="/off-market-real-estate-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ OFF-MARKET REAL ESTATE</Link>
               <Link to="/invest" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ INVESTMENT ADVISORY</Link>
               <Link to="/communities" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ EXPLORE ALL COMMUNITIES</Link>

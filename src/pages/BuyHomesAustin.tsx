@@ -22,7 +22,7 @@ const BuyHomesAustin = () => {
       <SEOHead
         title="Buy a Home in Austin Texas | Echelon Property Group"
         description="Buy a home in Austin TX with expert representation. Luxury homes, investment properties, and off-market opportunities in Austin's best neighborhoods."
-        canonical="/buy"
+        canonical="/buy-homes-austin"
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createFAQSchema(faqs)} />
@@ -160,7 +160,7 @@ const BuyHomesAustin = () => {
                 <Link to="/austin-real-estate-investment" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ INVESTMENT PROPERTY</Link>
                 <Link to="/land-for-sale-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ LAND FOR SALE</Link>
                 <Link to="/communities" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ ALL COMMUNITIES</Link>
-                <Link to="/best-luxury-neighborhoods-in-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ NEIGHBORHOOD GUIDE</Link>
+                <Link to="/best-luxury-neighborhoods-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ NEIGHBORHOOD GUIDE</Link>
               </div>
             </section>
 

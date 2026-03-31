@@ -22,7 +22,7 @@ const allInsightLinks: InsightLink[] = [
   { to: "/austin-commercial-real-estate", label: "Austin commercial real estate opportunities", topics: ["commercial", "investment"] },
   { to: "/listings/commercial-investment-austin", label: "Commercial and investment property listings", topics: ["commercial", "investment", "listings"] },
   { to: "/blog", label: "Austin real estate blog and market insights", topics: ["market", "luxury", "investment", "guide"] },
-  { to: "/blog/best-luxury-neighborhoods-in-austin-texas", label: "Best luxury neighborhoods in Austin", topics: ["luxury", "neighborhoods", "homes"] },
+  { to: "/blog/best-luxury-neighborhoods-austin-texas", label: "Best luxury neighborhoods in Austin", topics: ["luxury", "neighborhoods", "homes"] },
   { to: "/blog/austin-luxury-real-estate-market-forecast", label: "Austin luxury real estate market forecast", topics: ["market", "luxury", "forecast"] },
   { to: "/blog/top-investment-neighborhoods-austin", label: "Top investment neighborhoods in Austin", topics: ["investment", "neighborhoods"] },
   { to: "/austin-multifamily-report-2026", label: "Austin multifamily market outlook 2026", topics: ["investment", "commercial", "market"] },

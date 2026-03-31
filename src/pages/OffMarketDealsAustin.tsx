@@ -300,7 +300,7 @@ const OffMarketDealsAustin = () => {
                 Off-market sourcing is far more effective when paired with a targeted location strategy. In Austin, buyers often focus on:
               </p>
               <ul className="space-y-2 text-foreground/60 pl-5">
-                <li className="flex items-start gap-3"><span className="text-gold mt-1.5 text-xs">■</span><Link to="/best-luxury-neighborhoods-in-austin" className="text-foreground/80 underline hover:text-foreground/50">Established luxury neighborhoods</Link></li>
+                <li className="flex items-start gap-3"><span className="text-gold mt-1.5 text-xs">■</span><Link to="/best-luxury-neighborhoods-austin" className="text-foreground/80 underline hover:text-foreground/50">Established luxury neighborhoods</Link></li>
                 <li className="flex items-start gap-3"><span className="text-gold mt-1.5 text-xs">■</span>Redevelopment corridors and infill areas</li>
                 <li className="flex items-start gap-3"><span className="text-gold mt-1.5 text-xs">■</span>Edge growth corridors for land and development</li>
               </ul>

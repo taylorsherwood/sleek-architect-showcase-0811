@@ -22,7 +22,7 @@ const AustinRealEstateInvestment = () => {
       <SEOHead
         title="Austin Real Estate Investment | Echelon Property Group"
         description="Austin real estate investment: residential, commercial, multifamily, and land advisory. Expert deal sourcing and underwriting from Echelon Property Group."
-        canonical="/invest"
+        canonical="/austin-real-estate-investment"
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createFAQSchema(faqs)} />

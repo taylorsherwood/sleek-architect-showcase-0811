@@ -59,7 +59,7 @@ realscout-simple-search {
     --popover-foreground: 233 47% 9%;
 
     --primary: 233 47% 9%;              /* #0C0F24 */
-    --primary-foreground: 40 17% 95%; /* #F5F3EF */
+    --primary-foreground: 37 15% 95%; /* #F5F3EF — unified */
 
     --secondary: 37 15% 95%;         /* #F5F3EF */
     --secondary-foreground: 233 47% 9%;
@@ -79,20 +79,19 @@ realscout-simple-search {
 
     --radius: 0.25rem;
 
-    --warm-cream: 40 17% 95%;        /* #F5F3EF */
+    --warm-cream: 37 15% 95%;        /* #F5F3EF — unified */
 
     --black-soft: 233 52% 7%;           /* #080B1A */
     --black-card: 233 45% 13%;          /* #12162E */
-    --white-warm: 37 15% 95%;        /* #F5F3EF */
-    --gray-light: 37 15% 90%;        /* warm tint */
+    --white-warm: 37 15% 95%;        /* #F5F3EF — unified */
     --gray-mid: 30 3% 59%;           /* #9A9690 */
     --gray-dark: 30 3% 28%;          /* #4A4844 */
     --text-secondary: 25 4% 42%;     /* #6B6864 */
 
-    --sidebar-background: 40 17% 95%;
+    --sidebar-background: 37 15% 95%; /* #F5F3EF — unified */
     --sidebar-foreground: 233 47% 9%;
     --sidebar-primary: 233 47% 9%;
-    --sidebar-primary-foreground: 40 17% 95%;
+    --sidebar-primary-foreground: 37 15% 95%; /* #F5F3EF — unified */
     --sidebar-accent: 37 15% 95%;
     --sidebar-accent-foreground: 233 47% 9%;
     --sidebar-border: 37 8% 88%;

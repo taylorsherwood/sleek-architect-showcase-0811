@@ -136,7 +136,7 @@ const LandPage = () => {
               </Link>
               <Link
                 to="/listings"
-                className="inline-block text-minimal border border-warm-cream/50 text-warm-cream hover:bg-warm-cream/10 px-8 py-4 transition-colors duration-300 text-center"
+                className="inline-block text-minimal border border-secondary/50 text-secondary hover:bg-secondary/10 px-8 py-4 transition-colors duration-300 text-center"
               >
                 EXPLORE OPPORTUNITIES
               </Link>

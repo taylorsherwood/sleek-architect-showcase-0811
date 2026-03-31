@@ -110,7 +110,7 @@ const Hero = () => {
       <div
         aria-hidden="true"
         className="absolute inset-0 pointer-events-none select-none overflow-hidden"
-        style={{ zIndex: 0 }}>
+        style={{ zIndex: 0, isolation: "isolate", contain: "strict" }}>
         
         <video
           ref={videoRef}
@@ -123,6 +123,7 @@ const Hero = () => {
           className={`hero-bg-video transition-opacity duration-700 ${
           videoReady ? "opacity-100" : "opacity-0"}`
           }
+          style={{ transform: "translateZ(0)", backfaceVisibility: "hidden", willChange: "transform" }}
           width={1920}
           height={1080}
           tabIndex={-1}>
@@ -150,7 +151,7 @@ const Hero = () => {
       {/* Content */}
       <div
         className="relative container mx-auto pt-24 md:pt-32 lg:pt-36"
-        style={{ zIndex: 2, paddingLeft: "clamp(32px, 6vw, 96px)", paddingRight: "24px" }}>
+        style={{ zIndex: 2, paddingLeft: "clamp(32px, 6vw, 96px)", paddingRight: "24px", transform: "translateZ(0)", isolation: "isolate" }}>
         
         <div
           className="relative"

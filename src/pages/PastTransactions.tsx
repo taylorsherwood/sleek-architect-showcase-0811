@@ -7,6 +7,7 @@ import SchemaMarkup, { realEstateAgentSchema, createFAQSchema, createBreadcrumbS
 import RealScoutListings from "@/components/RealScoutListings";
 
 const Testimonials = lazy(() => import("@/components/Testimonials"));
+const PrivateSalesShowcase = lazy(() => import("@/components/PrivateSalesShowcase"));
 
 const PastTransactions = () => {
   return (
@@ -42,6 +43,11 @@ const PastTransactions = () => {
         </div>
       </div>
       <RealScoutListings />
+
+      {/* ── Notable Private Sales ── */}
+      <Suspense fallback={<div className="min-h-[200px]" />}>
+        <PrivateSalesShowcase />
+      </Suspense>
 
       <Suspense fallback={<div className="min-h-[200px]" />}>
         <Testimonials />

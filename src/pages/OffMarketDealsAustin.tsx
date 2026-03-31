@@ -76,7 +76,7 @@ const tocItems = [
 
 const OffMarketDealsAustin = () => {
   return (
-    <div className="min-h-screen bg-warm-cream">
+    <div className="min-h-screen bg-secondary">
       <SEOHead
         title="How to Find Off-Market Real Estate Deals in Austin (2026 Guide) | Echelon Property Group"
         description="How investors, developers, and luxury buyers find off-market real estate deals in Austin. Private listings, pre-market inventory, and data-driven sourcing strategies for 2026."

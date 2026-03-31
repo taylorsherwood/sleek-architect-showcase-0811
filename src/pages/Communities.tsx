@@ -96,7 +96,7 @@ const Communities = () => {
                           loading="lazy" decoding="async"
                         />
                       ) : (
-                        <div className="w-full aspect-[4/3] bg-muted flex items-center justify-center">
+                        <div className="w-full aspect-[4/3] bg-secondary flex items-center justify-center">
                           <span className="text-muted-foreground text-sm">{community.name}</span>
                         </div>
                       )}

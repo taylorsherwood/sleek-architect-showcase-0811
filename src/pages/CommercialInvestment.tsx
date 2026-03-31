@@ -414,7 +414,7 @@ const CommercialInvestment = () => {
                   className="border-2 border-border bg-card p-8 hover:border-gold transition-colors duration-500"
                 >
                   <div className="flex items-center justify-between mb-6">
-                    <span className="bg-muted px-3 py-1 text-muted-foreground" style={labelStyle}>{listing.type}</span>
+                    <span className="bg-secondary px-3 py-1 text-muted-foreground" style={labelStyle}>{listing.type}</span>
                     <span className="text-lg font-light text-foreground ">{listing.price}</span>
                   </div>
                   <h3 className="text-xl font-display font-normal text-foreground mb-2">

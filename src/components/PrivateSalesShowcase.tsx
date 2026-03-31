@@ -18,9 +18,9 @@ export interface PrivateSaleItem {
 export const privateSales: PrivateSaleItem[] = [
   {
     image: "/placeholder.svg",
-    price: "$0,000,000",
-    address: "Property Address",
-    area: "NORTH AUSTIN",
+    price: "$4,950,000",
+    address: "Address Witheld",
+    area: "SOUTH EAST AUSTIN",
     descriptor: "Commercial Property",
     label: "Private Sale",
   },
@@ -28,7 +28,7 @@ export const privateSales: PrivateSaleItem[] = [
     image: fm620Image,
     price: "$2,495,000",
     address: "13505 North FM 620",
-    area: "BAYTOWN, TEXAS",
+    area: "NORTH AUSTIN",
     descriptor: "Commercial Property",
     label: "Off Market",
   },

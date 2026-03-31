@@ -217,8 +217,8 @@ const OffMarketRealEstateAustin = () => {
           <div className="absolute inset-0 bg-gradient-to-b from-[hsl(220,15%,8%)]/30 to-[hsl(220,15%,8%)]" />
         </div>
 
-        <div className="relative z-10 container mx-auto px-6 py-16 md:py-24">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start max-w-6xl mx-auto">
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 py-12 md:py-24">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start max-w-6xl mx-auto">
             {/* Left — Copy */}
             <div className="lg:pt-8">
               <p className="text-[hsl(var(--gold))] mb-5 font-bold" style={labelStyle}>

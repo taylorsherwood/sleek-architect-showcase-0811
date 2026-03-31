@@ -576,6 +576,11 @@ const Sell = () => {
         </div>
       </section>
 
+      {/* ── Notable Private Sales ── */}
+      <Suspense fallback={<div className="min-h-[200px]" />}>
+        <PrivateSalesShowcase />
+      </Suspense>
+
       {/* ── FAQ ── */}
       <section className="py-28 bg-secondary">
         <div className="container mx-auto px-6">

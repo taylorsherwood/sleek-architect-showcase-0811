@@ -308,7 +308,7 @@ const AdvisorSection = () => (
           <ScrollReveal delay={180}>
             <div className="space-y-4 mb-8" style={{ fontFamily: '"Jost", sans-serif', fontWeight: 300 }}>
                 <p className="text-foreground/70 text-[16px] leading-[1.8]">
-                  In Austin's upper tier, the best opportunities are rarely public. They are negotiated, sourced, and secured through relationships, timing, and leverage, not search portals.
+                  In Austin's upper tier, the best opportunities are rarely public. They are negotiated, sourced, and secured through relationships, timing, and leverage- not search portals.
                 </p>
               <p className="text-foreground/70 text-[16px] leading-[1.8]">
                 I operate in that space.

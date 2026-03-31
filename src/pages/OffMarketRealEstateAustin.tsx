@@ -217,21 +217,21 @@ const OffMarketRealEstateAustin = () => {
           <div className="absolute inset-0 bg-gradient-to-b from-[hsl(220,15%,8%)]/30 to-[hsl(220,15%,8%)]" />
         </div>
 
-        <div className="relative z-10 container mx-auto px-6 py-16 md:py-24">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start max-w-6xl mx-auto">
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 py-12 md:py-24">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start max-w-6xl mx-auto">
             {/* Left — Copy */}
             <div className="lg:pt-8">
               <p className="text-[hsl(var(--gold))] mb-5 font-bold" style={labelStyle}>
                 PRIVATE REAL ESTATE ACCESS
               </p>
-              <h1 className="font-display text-[2rem] md:text-[2.8rem] lg:text-[3.4rem] font-light text-white leading-[1.08] mb-6 tracking-tight">
+              <h1 className="font-display text-[1.6rem] sm:text-[2rem] md:text-[2.8rem] lg:text-[3.4rem] font-light text-white leading-[1.12] mb-5 tracking-tight">
                 Access Austin's Private &{" "}
                 <span className="italic">Off-Market</span> Homes
               </h1>
-              <p className="text-white/70 text-lg md:text-xl font-light leading-relaxed mb-4 max-w-lg">
+              <p className="text-white/70 text-base sm:text-lg md:text-xl font-light leading-relaxed mb-4 max-w-lg">
                 These properties are not available on Zillow, Realtor.com, or the MLS.
               </p>
-              <p className="text-white/50 text-base font-light leading-relaxed mb-8 max-w-lg">
+              <p className="text-white/50 text-sm sm:text-base font-light leading-relaxed mb-8 max-w-lg">
                 Many of Austin's most desirable homes never hit the public market. They trade quietly — through trusted relationships, private networks, and off-market channels that most buyers never see.
               </p>
               <ul className="space-y-4 mb-10">
@@ -243,13 +243,13 @@ const OffMarketRealEstateAustin = () => {
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-[hsl(var(--gold))] mt-2 shrink-0" />
-                    <span className="text-white/60 text-[0.925rem] font-light leading-relaxed">{item}</span>
+                    <span className="text-white/60 text-[0.85rem] sm:text-[0.925rem] font-light leading-relaxed">{item}</span>
                   </li>
                 ))}
               </ul>
               <button
                 onClick={scrollToForm}
-                className="lg:hidden bg-[hsl(var(--gold))] hover:bg-white text-white hover:text-[hsl(var(--gold))] px-10 py-4 transition-all duration-300 active:scale-[0.98] tracking-[0.2em] uppercase font-sans font-medium"
+                className="lg:hidden bg-[hsl(var(--gold))] hover:bg-white text-white hover:text-[hsl(var(--gold))] px-8 sm:px-10 py-3 sm:py-4 transition-all duration-300 active:scale-[0.98] tracking-[0.2em] uppercase font-sans font-medium"
                 style={{ fontSize: "0.65rem" }}
               >
                 REQUEST PRIVATE ACCESS
@@ -257,7 +257,7 @@ const OffMarketRealEstateAustin = () => {
             </div>
 
             {/* Right — Form (above the fold) */}
-            <div id="lead-form" className="border border-white/10 p-6 md:p-10 bg-white/[0.02]">
+            <div id="lead-form" className="border border-white/10 p-5 sm:p-6 md:p-10 bg-white/[0.02]">
               {!submitted && (
                 <>
                   <p className="text-[hsl(var(--gold))] mb-3 font-bold" style={labelStyle}>

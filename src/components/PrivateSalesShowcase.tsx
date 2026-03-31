@@ -36,7 +36,7 @@ export const privateSales: PrivateSaleItem[] = [
   },
   {
     image: cedarBayouImage,
-    price: "$0,000,000",
+    price: "$1,950,000",
     address: "5931 W Cedar Bayou Lynchburg Rd",
     area: "Neighborhood",
     descriptor: "Brief property descriptor",

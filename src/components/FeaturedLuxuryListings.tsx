@@ -188,7 +188,7 @@ const FeaturedLuxuryListings = () => {
             </div>
 
             {/* Two stacked */}
-            <div className="lg:col-span-4 grid grid-cols-2 lg:grid-cols-1 gap-4">
+            <div className="lg:col-span-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4">
               <ListingCardOverlay
                 listing={listings[1]}
                 aspect="aspect-[4/3] lg:aspect-auto lg:h-full"

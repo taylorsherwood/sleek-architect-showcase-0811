@@ -344,7 +344,7 @@ const Buy = () => {
       <section className="py-20 bg-secondary">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-8">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-6 sm:mb-8">
               What You Need to Know About Buying in Austin
             </h2>
             <ul className="space-y-4 text-muted-foreground leading-relaxed">

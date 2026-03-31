@@ -24,7 +24,7 @@ export const privateSales: PrivateSaleItem[] = [
   },
   {
     image: "/placeholder.svg",
-    price: "$0,000,000",
+    price: "$2,495,000",
     address: "13505 North FM 620",
     area: "Neighborhood",
     descriptor: "Brief property descriptor",

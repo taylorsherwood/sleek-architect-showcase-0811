@@ -12,6 +12,7 @@ const Testimonials = lazy(() => import("@/components/Testimonials"));
 const FeaturedListings = lazy(() => import("@/components/FeaturedListings"));
 const GlobalLuxuryAdvertising = lazy(() => import("@/components/GlobalLuxuryAdvertising"));
 const CinematicVideoSection = lazy(() => import("@/components/CinematicVideoSection"));
+const PrivateSalesShowcase = lazy(() => import("@/components/PrivateSalesShowcase"));
 const Footer = lazy(() => import("@/components/Footer"));
 import {
   CheckCircle,
@@ -574,6 +575,11 @@ const Sell = () => {
           </div>
         </div>
       </section>
+
+      {/* ── Notable Private Sales ── */}
+      <Suspense fallback={<div className="min-h-[200px]" />}>
+        <PrivateSalesShowcase />
+      </Suspense>
 
       {/* ── FAQ ── */}
       <section className="py-28 bg-secondary">

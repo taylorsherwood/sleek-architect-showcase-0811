@@ -58,7 +58,7 @@ export const privateSales: PrivateSaleItem[] = [
     address: "Address Witheld",
     area: "BARTON CREEK",
     descriptor: "",
-    label: "Represented Seller",
+    label: "Off Market",
   },
   {
     image: clearCreekImage,
@@ -66,7 +66,7 @@ export const privateSales: PrivateSaleItem[] = [
     address: "Property Address",
     area: "Neighborhood",
     descriptor: "",
-    label: "Off Market",
+    label: "Represented Seller",
   },
 ];
 

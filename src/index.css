@@ -235,7 +235,7 @@ realscout-simple-search {
     }
   }
 
-  /* Safari-safe background video */
+  /* Background video — simple, no filters, no will-change, no hacks */
   .hero-bg-video {
     position: absolute;
     top: 0;
@@ -244,64 +244,23 @@ realscout-simple-search {
     height: 100%;
     object-fit: cover;
     object-position: center 10%;
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-    will-change: transform, opacity;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    image-rendering: optimizeQuality;
-    /* Bright, warm correction — airy luxury editorial look */
-    filter: saturate(1.04) contrast(1.01) brightness(1.08) hue-rotate(-4deg) !important;
+    transition: opacity 0.7s ease;
   }
 
-  /* Hero CTA buttons — overlay-based hover, only opacity transitions, zero paint on video layer */
-  .hero-cta-gold,
-  .hero-cta-light {
-    position: relative;
-    overflow: hidden;
-    transform: translateZ(0);
-    backface-visibility: hidden;
-    /* NO transition on the element itself — all hover via inner overlay */
-  }
-
+  /* Hero CTA buttons — fully static, instant hover, zero animation */
   .hero-cta-gold {
     border: 1px solid hsl(var(--gold));
     color: hsl(var(--gold));
     background: transparent;
   }
+  .hero-cta-gold:hover {
+    background: hsl(var(--gold));
+    color: hsl(var(--black));
+  }
   .hero-cta-light {
     border: 1px solid rgba(245, 243, 239, 0.35);
     color: rgba(245, 243, 239, 0.82);
     background: transparent;
-  }
-
-  /* Inner overlay spans — only opacity is animated (compositor-only) */
-  .hero-cta-gold-fill,
-  .hero-cta-light-fill {
-    position: absolute;
-    inset: 0;
-    opacity: 0;
-    transition: opacity 0.2s ease;
-    pointer-events: none;
-    will-change: opacity;
-    transform: translateZ(0);
-  }
-  .hero-cta-gold-fill {
-    background: hsl(var(--gold));
-  }
-  .hero-cta-light-fill {
-    background: rgba(245, 243, 239, 0.12);
-  }
-
-  .hero-cta-gold:hover .hero-cta-gold-fill {
-    opacity: 1;
-  }
-  .hero-cta-gold:hover {
-    color: hsl(var(--black));
-  }
-
-  .hero-cta-light:hover .hero-cta-light-fill {
-    opacity: 1;
   }
   .hero-cta-light:hover {
     border-color: rgba(245, 243, 239, 0.6);

@@ -67,7 +67,7 @@ const PastTransactions = () => {
         </div>
       </section>
       <div className="h-8 md:h-12" />
-      <RealScoutListings />
+      <RealScoutListings title="recently sold" />
 
       {/* ── Notable Private Sales ── */}
       <Suspense fallback={<div className="min-h-[200px]" />}>

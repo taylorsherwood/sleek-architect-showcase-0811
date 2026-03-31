@@ -224,7 +224,7 @@ const OffMarketRealEstateAustin = () => {
               <p className="text-[hsl(var(--gold))] mb-5 font-bold" style={labelStyle}>
                 PRIVATE REAL ESTATE ACCESS
               </p>
-              <h1 className="font-display text-[2rem] md:text-[2.8rem] lg:text-[3.4rem] font-light text-white leading-[1.08] mb-6 tracking-tight">
+              <h1 className="font-display text-[1.6rem] sm:text-[2rem] md:text-[2.8rem] lg:text-[3.4rem] font-light text-white leading-[1.12] mb-5 tracking-tight">
                 Access Austin's Private &{" "}
                 <span className="italic">Off-Market</span> Homes
               </h1>

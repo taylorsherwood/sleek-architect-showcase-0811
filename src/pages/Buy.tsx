@@ -417,7 +417,7 @@ const Buy = () => {
           <div className="max-w-7xl mx-auto">
             <div className="mb-16">
               <p className="text-minimal text-gold mb-4 font-extrabold">THE PROCESS</p>
-              <h2 className="text-4xl md:text-5xl font-display font-normal text-architectural">
+              <h2 className="text-2xl sm:text-4xl md:text-5xl font-display font-normal text-architectural">
                 How Buying a Home in Austin Works
               </h2>
             </div>

@@ -828,7 +828,7 @@ const Invest = () => {
                     className={`${inputClass} bg-primary-foreground/5 border-primary-foreground/15 text-primary-foreground placeholder:text-primary-foreground/30 focus:ring-primary-foreground/30`}
                     required
                   />
-                  {errors.phone && <p className="text-red-300 text-xs mt-1">{errors.phone}</p>}
+                  {errors.phone && <p className="text-destructive text-xs mt-1">{errors.phone}</p>}
                 </div>
                 {/* Investment Type */}
                 <div>

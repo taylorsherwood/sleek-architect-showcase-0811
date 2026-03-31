@@ -647,7 +647,7 @@ const Buy = () => {
       </section>
 
       {/* ── Expert Insight ── */}
-      <section className="py-20 bg-secondary">
+      <section className="py-20 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <p className="text-minimal text-gold mb-4 font-extrabold">EXPERT INSIGHT</p>

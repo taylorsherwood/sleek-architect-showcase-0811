@@ -350,7 +350,7 @@ const LandPage = () => {
             </Link>
             <Link
               to="/contact"
-              className="inline-block text-minimal border border-warm-cream/50 text-warm-cream hover:bg-warm-cream/10 px-10 py-4 transition-colors duration-300"
+              className="inline-block text-minimal border border-secondary/50 text-secondary hover:bg-secondary/10 px-10 py-4 transition-colors duration-300"
             >
               DISCUSS INVESTMENT OPPORTUNITIES
             </Link>

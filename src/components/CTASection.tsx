@@ -30,7 +30,7 @@ const CTASection = () => {
         </p>
         <Link
           to="/contact"
-          className="inline-block text-minimal bg-warm-cream text-foreground hover:bg-primary hover:text-primary-foreground px-10 py-4 transition-colors duration-300">
+          className="inline-block text-minimal bg-secondary text-foreground hover:bg-primary hover:text-primary-foreground px-10 py-4 transition-colors duration-300">
           
           SCHEDULE A CONSULTATION
         </Link>

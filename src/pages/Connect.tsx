@@ -43,7 +43,7 @@ const Connect = () => {
         description="Connect with Austin luxury real estate advisor Taylor Sherwood. Browse listings, search homes, or schedule a private consultation with Echelon Property Group."
       />
       <div
-        className="min-h-screen flex flex-col items-center bg-warm-cream"
+        className="min-h-screen flex flex-col items-center bg-secondary"
       >
         <div className="w-full max-w-[440px] mx-auto flex flex-col">
 

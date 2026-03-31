@@ -233,7 +233,7 @@ const Private = () => {
 
       {/* ── CREDIBILITY ───────────────────────────────── */}
       <FadeIn>
-        <section className="py-14 md:py-20 bg-warm-cream">
+        <section className="py-14 md:py-20 bg-secondary">
           <div className="max-w-3xl mx-auto px-6 text-center">
             <p className="text-gold text-xs tracking-[0.25em] uppercase font-sans font-semibold mb-4">
               Why Echelon

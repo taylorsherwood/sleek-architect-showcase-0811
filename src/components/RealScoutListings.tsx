@@ -4,6 +4,7 @@ interface RealScoutListingsProps {
   listingStatus?: string;
   heading?: string;
   subheading?: string;
+  title?: string;
 }
 
 const RealScoutListings = ({

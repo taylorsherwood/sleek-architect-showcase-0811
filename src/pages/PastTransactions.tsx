@@ -5,9 +5,17 @@ import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { realEstateAgentSchema, createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import RealScoutListings from "@/components/RealScoutListings";
+import ScrollReveal from "@/components/ScrollReveal";
+import heroImage from "@/assets/past-transactions-hero.jpg";
 
 const Testimonials = lazy(() => import("@/components/Testimonials"));
 const PrivateSalesShowcase = lazy(() => import("@/components/PrivateSalesShowcase"));
+
+const stats = [
+  "90%+ Off-Market Transactions",
+  "Luxury & Investment Sales Across Austin",
+  "Barton Creek • Westlake • Tarrytown • Downtown",
+];
 
 const PastTransactions = () => {
   return (
@@ -26,20 +34,55 @@ const PastTransactions = () => {
         { question: "How can I see Echelon Property Group's track record?", answer: "Contact us directly for a confidential overview of our transaction history and client references. We are happy to provide case studies and examples relevant to your specific real estate needs." },
       ])} />
       <Navigation />
-      <div className="h-12 md:h-20" />
-      <div className="pt-32 pb-8 bg-background">
-        <div className="container mx-auto px-6">
-          <div className="max-w-7xl mx-auto text-center">
-            <p className="text-minimal text-gold mb-4 font-extrabold">OUR TRACK RECORD</p>
-            <h1 className="text-4xl md:text-6xl font-display font-normal text-architectural mb-6">
-              Past Transactions
-            </h1>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              A selection of recent transactions across the Austin MSA. Many opportunities are secured through private channels and will not appear in public listings.
-            </p>
+
+      {/* ── Editorial Hero ── */}
+      <section className="relative h-[50vh] md:h-[65vh] w-full overflow-hidden">
+        {/* Background image */}
+        <img
+          src={heroImage}
+          alt="Luxury homes along Lake Austin at golden hour"
+          width={1920}
+          height={1080}
+          className="absolute inset-0 w-full h-full object-cover"
+          fetchPriority="high"
+        />
+        {/* Bottom gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+
+        {/* Content */}
+        <div className="absolute inset-0 flex items-end">
+          <div className="container mx-auto px-6 pb-12 md:pb-16">
+            <div className="max-w-3xl">
+              <ScrollReveal delay={100} distance={8}>
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] font-display font-normal text-white leading-[1.1] tracking-[-0.02em] mb-5">
+                  A Proven Record Across Austin's Most Competitive Markets
+                </h1>
+              </ScrollReveal>
+              <ScrollReveal delay={250} distance={8}>
+                <p className="text-white/75 text-sm md:text-base leading-relaxed max-w-2xl mb-8">
+                  A curated selection of on-market and privately negotiated transactions across Austin's most sought-after neighborhoods. The majority of our deals are executed off-market, giving our clients access, discretion, and pricing advantages not available through traditional channels.
+                </p>
+              </ScrollReveal>
+              <ScrollReveal delay={400} distance={6}>
+                <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-0">
+                  {stats.map((stat, i) => (
+                    <span key={i} className="flex items-center gap-4 md:gap-0">
+                      <span
+                        className="text-[10px] md:text-[11px] uppercase font-medium text-white/60 tracking-[0.16em]"
+                      >
+                        {stat}
+                      </span>
+                      {i < stats.length - 1 && (
+                        <span className="hidden md:block mx-5 h-3 w-px bg-white/25" />
+                      )}
+                    </span>
+                  ))}
+                </div>
+              </ScrollReveal>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
       <div className="h-8 md:h-12" />
       <RealScoutListings />
 

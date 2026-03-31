@@ -64,7 +64,7 @@ export const privateSales: PrivateSaleItem[] = [
     image: clearCreekImage,
     price: "$499,000",
     address: "5001 Clear Creek Road",
-    area: "Neighborhood",
+    area: "COMMERCIAL PROPERTY",
     descriptor: "",
     label: "Represented Seller",
   },

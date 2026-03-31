@@ -519,7 +519,7 @@ const Buy = () => {
             <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-16">
               <div>
                 <p className="text-minimal text-gold mb-4 font-extrabold">NEIGHBORHOODS</p>
-                <h2 className="text-2xl sm:text-4xl md:text-5xl font-display font-normal text-architectural">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural">
                   Austin Neighborhood Highlights
                 </h2>
                 <p className="text-muted-foreground mt-4 max-w-xl">

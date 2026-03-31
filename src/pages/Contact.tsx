@@ -2,6 +2,7 @@ import { useState, lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 const Footer = lazy(() => import("@/components/Footer"));
+const Testimonials = lazy(() => import("@/components/Testimonials"));
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { realEstateAgentSchema, createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import { useToast } from "@/hooks/use-toast";

@@ -50,7 +50,9 @@ const Hero = () => {
       setShowFallback(true);
       return;
     }
-    requestAnimationFrame(() => setVideoSrc("/videos/hero-video.mp4"));
+    // Delay video load until after first paint + initial render settle
+    const id = setTimeout(() => setVideoSrc("/videos/hero-video.mp4"), 150);
+    return () => clearTimeout(id);
   }, []);
 
   useEffect(() => {

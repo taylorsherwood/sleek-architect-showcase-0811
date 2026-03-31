@@ -68,11 +68,18 @@ const CinematicVideoSection = () => {
             background: "linear-gradient(to top, rgba(10, 10, 8, 0.12) 0%, rgba(10, 10, 8, 0.04) 40%, transparent 100%)",
           }}
         />
-        {/* Left-side localized text protection gradient */}
+        {/* Left-side localized text protection gradient — full coverage on mobile */}
         <div
-          className="absolute inset-0 z-[1] pointer-events-none"
+          className="absolute inset-0 z-[1] pointer-events-none sm:bg-none"
           style={{
             background: "linear-gradient(to right, rgba(10, 12, 18, 0.68) 0%, rgba(10, 12, 18, 0.45) 22%, rgba(10, 12, 18, 0.18) 40%, transparent 55%)",
+          }}
+        />
+        {/* Full-screen overlay on mobile only for text readability */}
+        <div
+          className="absolute inset-0 z-[1] pointer-events-none sm:hidden"
+          style={{
+            background: "rgba(10, 12, 18, 0.45)",
           }}
         />
 

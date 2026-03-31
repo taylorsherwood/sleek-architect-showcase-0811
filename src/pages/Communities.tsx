@@ -179,7 +179,7 @@ const Communities = () => {
                 Inventory in Austin's most exclusive communities remains limited, and many of the finest properties trade off-market through private channels. Working with an agent who has deep neighborhood expertise and access to off-market inventory is essential for buyers targeting these communities.
               </p>
 
-              <h3 className="text-2xl font-display font-normal text-architectural pt-4">
+              <h3 className="text-xl sm:text-2xl font-display font-normal text-architectural pt-4">
                 Expert Guidance for Every Neighborhood
               </h3>
               <p>

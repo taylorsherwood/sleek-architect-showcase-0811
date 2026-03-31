@@ -524,7 +524,7 @@ const Sell = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <div className="mb-12">
-               <p className="text-minimal text-gold mb-4 font-extrabold whitespace-pre-line">{"\n\n\n\n"}OUR EXPERTISE</p>
+               <p className="text-minimal text-gold mb-4 font-extrabold">OUR EXPERTISE</p>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Full-Spectrum Austin Real Estate Advisory
               </h2>

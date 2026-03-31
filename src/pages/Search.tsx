@@ -323,6 +323,10 @@ const SearchPage = () => {
               ))}
             </div>
 
+            <Suspense fallback={<div className="min-h-[200px]" />}>
+              <Testimonials />
+            </Suspense>
+
             <h3 className="text-2xl font-display font-normal text-architectural mt-10 mb-6">
               Explore Austin Real Estate
             </h3>

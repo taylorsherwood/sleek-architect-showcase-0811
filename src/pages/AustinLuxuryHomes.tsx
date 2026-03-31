@@ -71,7 +71,7 @@ const AustinLuxuryHomes = () => {
 
             {/* Property Types */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-5 sm:mb-6">
                 Types of Luxury Properties in Austin
               </h2>
 

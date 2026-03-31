@@ -141,8 +141,9 @@ const Hero = () => {
           </div>
 
           <h1 className="font-display mb-6" style={{
-            ...anim("0.15s"), fontWeight: 400, lineHeight: 1.1, letterSpacing: "0.04em",
-            fontSize: "clamp(36px, 5vw, 64px)",
+            ...anim("0.15s"), fontWeight: 400, lineHeight: 1.08, letterSpacing: "0.04em",
+            fontSize: "clamp(32px, 4.2vw, 56px)",
+            maxWidth: "520px",
             color: "rgba(250,248,244,0.98)",
             textShadow: "0 2px 12px rgba(0,0,0,0.45), 0 6px 30px rgba(0,0,0,0.30), 0 0 60px rgba(0,0,0,0.15)"
           }}>

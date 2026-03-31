@@ -462,6 +462,9 @@ const Sell = () => {
                     }}
                     loading="lazy"
                     decoding="async"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    width={800}
+                    height={1000}
                   />
                   {/* Subtle bottom fade to soften transition */}
                   <div

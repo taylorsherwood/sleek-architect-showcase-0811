@@ -62,7 +62,7 @@ export const privateSales: PrivateSaleItem[] = [
   },
   {
     image: clearCreekImage,
-    price: "$0,000,000",
+    price: "$499,000",
     address: "Property Address",
     area: "Neighborhood",
     descriptor: "",

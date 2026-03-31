@@ -40,10 +40,10 @@ export const privateSales: PrivateSaleItem[] = [
     image: cedarBayouImage,
     price: "$2,250,000",
     address: "5931 W Cedar Bayou Lynchburg Rd",
-    area: "Neighborhood",
+    area: "BAYTOWN, TEXAS",
     descriptor: "Commercial Property",
     label: "Represented Buyer",
-  },
+  }
   {
     image: highRoadImage,
     price: "$1,495,000",

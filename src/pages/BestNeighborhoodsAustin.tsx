@@ -209,7 +209,7 @@ const BestNeighborhoodsAustin = () => {
       <SEOHead
         title="Best Neighborhoods in Austin Texas | Echelon Property Group"
         description="Discover the best neighborhoods in Austin TX for luxury living, waterfront estates, walkability, and investment. Expert 2026 guide from Echelon Property Group."
-        canonical="/communities"
+        canonical="/best-neighborhoods-in-austin-texas"
       />
       
       <SchemaMarkup schema={realEstateAgentSchema} />

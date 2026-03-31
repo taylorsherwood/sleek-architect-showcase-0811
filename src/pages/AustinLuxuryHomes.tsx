@@ -23,7 +23,7 @@ const AustinLuxuryHomes = () => {
       <SEOHead
         title="Austin Luxury Homes for Sale | Echelon Property Group"
         description="Browse luxury homes for sale in Austin TX. Estate properties, waterfront homes, and premium residences in Westlake, Barton Creek, and Lake Austin."
-        canonical="/listings"
+        canonical="/austin-luxury-homes-for-sale"
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createFAQSchema(faqs)} />

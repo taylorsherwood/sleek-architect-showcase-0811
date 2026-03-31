@@ -288,22 +288,10 @@ realscout-simple-search {
     animation-play-state: paused;
   }
 
-  /* Credibility logos — exact Echelon Gold (#b7a16a) via SVG-like recolor */
+  /* Credibility logos — show original artwork, no filters */
   .credibility-logo {
-    filter: brightness(0) saturate(100%);
+    filter: none;
     opacity: 1 !important;
-  }
-  .credibility-logo-wrap {
-    position: relative;
-    display: inline-flex;
-  }
-  .credibility-logo-wrap::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: #b7a16a;
-    mix-blend-mode: screen;
-    pointer-events: none;
   }
 
   /* Hero CTA mobile */

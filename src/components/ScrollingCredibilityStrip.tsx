@@ -47,17 +47,16 @@ const ScrollingCredibilityStrip = () => {
 
         <div className="scrolling-strip-track flex items-center gap-16 md:gap-24 w-max">
           {track.map((logo, i) => (
-            <span key={`${logo.alt}-${i}`} className="credibility-logo-wrap shrink-0">
-              <img
-                src={logo.src}
-                alt={logo.alt}
-                loading="lazy"
-                decoding="async"
-                className="h-20 md:h-28 w-auto object-contain credibility-logo"
-                width={200}
-                height={112}
-              />
-            </span>
+            <img
+              key={`${logo.alt}-${i}`}
+              src={logo.src}
+              alt={logo.alt}
+              loading="lazy"
+              decoding="async"
+              className="h-20 md:h-28 w-auto object-contain shrink-0 credibility-logo"
+              width={200}
+              height={112}
+            />
           ))}
         </div>
       </div>

@@ -53,10 +53,10 @@ export const privateSales: PrivateSaleItem[] = [
   },
   {
     image: "/placeholder.svg",
-    price: "$499,000",
-    address: "5001 Clear Creek Road",
-    area: "COMMERCIAL PROPERTY",
-    descriptor: "Brief property descriptor",
+    price: "$1,495,000",
+    address: "Address Witheld",
+    area: "BARTON CREEK",
+    descriptor: "",
     label: "Represented Seller",
   },
   {

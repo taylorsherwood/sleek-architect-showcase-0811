@@ -444,7 +444,7 @@ const StatItem = ({ stat }: { stat: typeof stats[number] }) => {
     <div ref={ref} className="text-center group/stat">
       <p style={{
         fontFamily: '"Cinzel", serif', fontWeight: 400,
-        fontSize: "clamp(48px, 6vw, 80px)", lineHeight: 1, color: "#FAFAF8",
+        fontSize: "clamp(48px, 6vw, 80px)", lineHeight: 1, color: "#F5F3EF",
       }}>
         {stat.prefix}{count}
         <span style={{

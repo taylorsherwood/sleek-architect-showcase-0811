@@ -356,7 +356,11 @@ const GlobalLuxuryAdvertising = () => {
                   alt="Luxury marketing collage featuring Robb Report, Wall Street Journal, Mansion Global, UPMKT, and eXp Luxury"
                   className="w-full h-auto object-cover transition-all duration-700 ease-out group-hover:scale-[1.03] group-hover:brightness-110"
                   loading="lazy"
-                  decoding="async" />
+                  decoding="async"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  width={1200}
+                  height={800}
+                />
               </div>
             </div>
           </div>

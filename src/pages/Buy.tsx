@@ -673,7 +673,7 @@ const Buy = () => {
       <section className="py-28 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-8">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-8">
               Frequently Asked Questions About Buying in Austin
             </h2>
             <div className="space-y-6">

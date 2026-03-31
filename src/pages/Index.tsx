@@ -593,7 +593,7 @@ const FeaturedProperties = () => (
                   style={{ background: "linear-gradient(to top, rgba(12,15,36,0.92) 0%, transparent 100%)" }}>
                   <p style={{
                     fontFamily: '"Cinzel", serif', fontWeight: 400,
-                    fontSize: "20px", color: "#FAFAF8", marginBottom: "4px",
+                    fontSize: "20px", color: "#F5F3EF", marginBottom: "4px",
                   }}>
                     Off-Market Opportunities
                   </p>

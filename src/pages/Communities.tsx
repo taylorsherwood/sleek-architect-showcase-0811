@@ -139,7 +139,7 @@ const Communities = () => {
                 </p>
               </div>
               <div>
-                <h3 className="text-2xl font-display font-normal text-architectural mb-3">
+                <h3 className="text-xl sm:text-2xl font-display font-normal text-architectural mb-3">
                   Tarrytown vs Travis Heights for Urban Buyers
                 </h3>
                 <p className="text-muted-foreground leading-relaxed mb-3">

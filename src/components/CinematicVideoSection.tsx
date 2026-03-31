@@ -35,8 +35,21 @@ const CinematicVideoSection = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
-    if (visible && videoRef.current) {
-      videoRef.current.play().catch(() => {});
+    const video = videoRef.current;
+    if (!visible || !video) return;
+
+    // iOS Safari needs the video to be loaded before play() works
+    const attemptPlay = () => {
+      video.play().catch(() => {});
+    };
+
+    if (video.readyState >= 2) {
+      attemptPlay();
+    } else {
+      video.addEventListener("canplay", attemptPlay, { once: true });
+      // Trigger load since preload may be "none"
+      video.load();
+      return () => video.removeEventListener("canplay", attemptPlay);
     }
   }, [visible]);
 

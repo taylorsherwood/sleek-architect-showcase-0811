@@ -275,6 +275,9 @@ const AdvisorSection = () => (
             className="w-full h-full object-cover"
              style={{ objectPosition: "center center" }}
             loading="lazy" decoding="async"
+            sizes="(max-width: 1024px) 100vw, 480px"
+            width={520}
+            height={693}
           />
           {/* Bottom gradient fade */}
           <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-black/30 to-transparent" />

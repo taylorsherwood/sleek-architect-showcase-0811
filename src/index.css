@@ -235,7 +235,7 @@ realscout-simple-search {
     }
   }
 
-  /* Background video — minimal */
+  /* Background video */
   .hero-bg-video {
     position: absolute;
     inset: 0;
@@ -244,6 +244,7 @@ realscout-simple-search {
     object-fit: cover;
     object-position: center 10%;
     transition: opacity 0.7s ease;
+    filter: saturate(1.04) contrast(1.01) brightness(1.08) hue-rotate(-4deg);
   }
 
   /* Hero CTA — fully static, zero animation, !important overrides everything */

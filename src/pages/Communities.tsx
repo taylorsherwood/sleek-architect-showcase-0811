@@ -101,8 +101,8 @@ const Communities = () => {
                         </div>
                       )}
                     </div>
-                    <p className="text-minimal text-gold mb-2">{community.priceRange}</p>
-                    <h2 className="text-2xl font-display font-normal text-architectural group-hover:text-muted-foreground transition-colors duration-300 mb-2">
+                    <p className="text-minimal text-gold mb-1.5 sm:mb-2">{community.priceRange}</p>
+                    <h2 className="text-xl sm:text-2xl font-display font-normal text-architectural group-hover:text-muted-foreground transition-colors duration-300 mb-1.5 sm:mb-2">
                       {community.name}
                     </h2>
                     <p className="text-minimal text-muted-foreground">EXPLORE COMMUNITY →</p>

@@ -35,7 +35,7 @@ const PastTransactions = () => {
               Past Transactions
             </h1>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              
+              A selection of recent transactions across the Austin MSA. Many opportunities are secured through private channels and will not appear in public listings.
             </p>
           </div>
         </div>

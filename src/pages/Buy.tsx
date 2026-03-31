@@ -402,7 +402,7 @@ const Buy = () => {
           <div className="max-w-3xl mx-auto">
             <div className="mb-12 text-center">
               <p className="text-minimal text-gold mb-4 font-extrabold">PLAN AHEAD</p>
-              <h2 className="text-2xl sm:text-4xl md:text-5xl font-display font-normal text-architectural">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural">
                 Estimate Your Monthly Payment
               </h2>
             </div>

@@ -132,11 +132,11 @@ const Contact = () => {
                 <div className="space-y-8">
                   <div>
                     <h2 className="text-minimal text-muted-foreground mb-2">EMAIL</h2>
-                    <a href="mailto:taylor@echelonpropertygroup.com" className="text-lg hover:text-muted-foreground transition-colors duration-300">Send an Email</a>
+                    <a href="mailto:taylor@echelonpropertygroup.com" className="text-lg hover:text-gold transition-colors duration-300">Send an Email</a>
                   </div>
                   <div>
                     <h2 className="text-minimal text-muted-foreground mb-2">PHONE</h2>
-                    <a href="tel:+15125551234" className="text-lg hover:text-muted-foreground transition-colors duration-300">(512) 661-3843
+                    <a href="tel:+15125551234" className="text-lg hover:text-gold transition-colors duration-300">(512) 661-3843
 
                     </a>
                   </div>
@@ -216,7 +216,7 @@ Austin, Texas 78702
                 <button
                   type="submit"
                   disabled={submitting}
-                  className="text-minimal bg-primary text-primary-foreground hover:bg-primary/90 px-10 py-4 transition-colors duration-300 w-full md:w-auto disabled:opacity-50 disabled:cursor-not-allowed">
+                  className="text-minimal bg-primary text-primary-foreground hover:bg-gold hover:text-white px-10 py-4 transition-colors duration-300 w-full md:w-auto disabled:opacity-50 disabled:cursor-not-allowed">
                   
                   {submitting ? "SENDING..." : "SEND MESSAGE"}
                 </button>

@@ -4,6 +4,7 @@ import cedarBayouImage from "@/assets/5931-cedar-bayou.jpg";
 import southeastAustinImage from "@/assets/southeast-austin-commercial.webp";
 import highRoadImage from "@/assets/the-high-road-westlake.webp";
 import clearCreekImage from "@/assets/clear-creek-road.jpg";
+import bartonCreekImage from "@/assets/barton-creek.jpg";
 
 /* ------------------------------------------------------------------ */
 /*  DATA — Edit this array to add / remove / update private sales      */

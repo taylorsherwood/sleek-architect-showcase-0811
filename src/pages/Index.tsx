@@ -161,20 +161,24 @@ const Hero = () => {
           {/* CTA Buttons — static, dark translucent glass */}
           <div className="flex flex-col sm:flex-row gap-4" style={anim("0.4s")}>
             <Link to="/austin-luxury-homes-for-sale"
-              className="inline-block text-center px-8 py-[14px]"
+              className="inline-block text-center px-8 py-[14px] hover:-translate-y-px hover:opacity-[0.92]"
               style={{
                 fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 400,
                 border: "1px solid hsl(38 42% 68%)", color: "hsl(38 45% 72%)",
                 background: "rgba(10,14,25,0.28)",
+                transform: "translateZ(0)", willChange: "transform, opacity",
+                transition: "transform 160ms ease, opacity 160ms ease",
               }}>
               EXPLORE LUXURY HOMES
             </Link>
             <Link to="/off-market-real-estate-austin"
-              className="inline-block text-center px-8 py-[14px]"
+              className="inline-block text-center px-8 py-[14px] hover:-translate-y-px hover:opacity-[0.92]"
               style={{
                 fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 400,
                 border: "1px solid rgba(255,255,255,0.38)", color: "rgba(250,248,244,0.95)",
                 background: "rgba(10,14,25,0.28)",
+                transform: "translateZ(0)", willChange: "transform, opacity",
+                transition: "transform 160ms ease, opacity 160ms ease",
               }}>
               REQUEST PRIVATE ACCESS
             </Link>

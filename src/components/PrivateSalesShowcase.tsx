@@ -1,5 +1,6 @@
 import ScrollReveal from "@/components/ScrollReveal";
 import fm620Image from "@/assets/13505-north-fm-620.jpg";
+import cedarBayouImage from "@/assets/5931-cedar-bayou.jpg";
 
 /* ------------------------------------------------------------------ */
 /*  DATA — Edit this array to add / remove / update private sales      */
@@ -32,7 +33,7 @@ export const privateSales: PrivateSaleItem[] = [
     label: "Off Market",
   },
   {
-    image: "/placeholder.svg",
+    image: cedarBayouImage,
     price: "$0,000,000",
     address: "5931 W Cedar Bayou Lynchburg Rd",
     area: "Neighborhood",

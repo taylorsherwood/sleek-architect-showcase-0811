@@ -389,7 +389,7 @@ const BillionaireMigration = () => {
           {/* CTA + Author back in article width */}
           <div className="max-w-[700px] mx-auto">
             {/* CTA Section */}
-            <section className="text-center py-20 mt-20 bg-muted -mx-6 px-6 rounded-sm">
+            <section className="text-center py-20 mt-20 bg-secondary -mx-6 px-6 rounded-sm">
               <h2 className="text-2xl md:text-3xl font-display font-normal text-architectural mb-4">
                 Access Private Austin Opportunities
               </h2>

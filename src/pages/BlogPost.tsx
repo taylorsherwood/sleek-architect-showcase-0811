@@ -112,7 +112,7 @@ const BlogPost = () => {
             
             <div className="mb-8">
               <div className="flex flex-wrap items-center text-minimal text-muted-foreground gap-x-4 gap-y-1 mb-6">
-                <span className="bg-muted px-3 py-1 text-foreground">{post.category}</span>
+                <span className="bg-secondary px-3 py-1 text-foreground">{post.category}</span>
                 <span>Published {post.date}</span>
                 <span>•</span>
                 <span>{post.readTime}</span>

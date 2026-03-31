@@ -356,7 +356,7 @@ const CommercialInvestment = () => {
       </section>
 
       {/* ── Private Market Opportunities ── */}
-      <section className="py-16 md:py-24 bg-muted border-t border-border">
+      <section className="py-16 md:py-24 bg-secondary border-t border-border">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
             <div className="mb-16">
@@ -414,7 +414,7 @@ const CommercialInvestment = () => {
                   className="border-2 border-border bg-card p-8 hover:border-gold transition-colors duration-500"
                 >
                   <div className="flex items-center justify-between mb-6">
-                    <span className="bg-muted px-3 py-1 text-muted-foreground" style={labelStyle}>{listing.type}</span>
+                    <span className="bg-secondary px-3 py-1 text-muted-foreground" style={labelStyle}>{listing.type}</span>
                     <span className="text-lg font-light text-foreground ">{listing.price}</span>
                   </div>
                   <h3 className="text-xl font-display font-normal text-foreground mb-2">
@@ -580,7 +580,7 @@ const CommercialInvestment = () => {
       </section>
 
       {/* ── FINAL CTA ── */}
-      <section className="py-16 md:py-24 bg-muted border-t border-border">
+      <section className="py-16 md:py-24 bg-secondary border-t border-border">
         <div className="container mx-auto px-6 max-w-lg text-center">
           <p className="text-gold mb-4 font-bold" style={labelStyle}>GET STARTED</p>
           <h2 className="font-display text-2xl md:text-3xl font-light text-foreground mb-4">

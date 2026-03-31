@@ -105,7 +105,7 @@ const Hero = () => {
   }, [videoSrc]);
 
   return (
-    <section ref={sectionRef} id="hero-section" className="relative h-screen flex items-center overflow-hidden bg-neutral-900">
+    <section ref={sectionRef} id="hero-section" className="relative h-screen flex items-center overflow-hidden bg-[hsl(var(--black-soft))]">
       {/* ── VIDEO LAYER ── */}
       <div
         aria-hidden="true"

@@ -188,17 +188,6 @@ const Connect = () => {
                 style={{ height: "300px", marginBottom: "-40px", objectFit: "contain", objectPosition: "53.25% center" }}
                 loading="eager"
               />
-              {/* Scroll indicator */}
-              <div
-                className="flex flex-col items-center -mt-16"
-                style={{
-                  opacity: 1 - scrollProgress * 5,
-                  pointerEvents: "none",
-                  transition: "opacity 150ms ease-out",
-                }}
-              >
-                <div className="scroll-indicator-line" />
-              </div>
             </div>
           </ScrollReveal>
 

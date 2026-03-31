@@ -159,7 +159,7 @@ const Communities = () => {
                 What makes Austin's luxury neighborhoods exceptional is the rare combination of natural beauty, urban convenience, and economic opportunity. Residents enjoy access to world-class dining, live music, outdoor recreation, and a thriving technology economy — all within a state that levies no personal income tax.
               </p>
 
-              <h3 className="text-2xl font-display font-normal text-architectural pt-4">
+              <h3 className="text-xl sm:text-2xl font-display font-normal text-architectural pt-4">
                 Why Live in Austin's Luxury Communities
               </h3>
               <p>

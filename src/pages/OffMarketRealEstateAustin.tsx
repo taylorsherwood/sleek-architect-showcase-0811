@@ -257,7 +257,7 @@ const OffMarketRealEstateAustin = () => {
             </div>
 
             {/* Right — Form (above the fold) */}
-            <div id="lead-form" className="border border-white/10 p-6 md:p-10 bg-white/[0.02]">
+            <div id="lead-form" className="border border-white/10 p-5 sm:p-6 md:p-10 bg-white/[0.02]">
               {!submitted && (
                 <>
                   <p className="text-[hsl(var(--gold))] mb-3 font-bold" style={labelStyle}>

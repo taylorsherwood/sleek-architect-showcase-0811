@@ -35,9 +35,7 @@ const PastTransactions = () => {
               Past Transactions
             </h1>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              95% of our transactions are conducted off market and will not show on this site.
-              <br />
-              The privacy of our clients is of utmost importance to us.
+              
             </p>
           </div>
         </div>

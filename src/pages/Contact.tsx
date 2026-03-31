@@ -2,6 +2,7 @@ import { useState, lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 const Footer = lazy(() => import("@/components/Footer"));
+const Testimonials = lazy(() => import("@/components/Testimonials"));
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { realEstateAgentSchema, createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import { useToast } from "@/hooks/use-toast";
@@ -282,6 +283,8 @@ Austin, Texas 78702
           </div>
         </div>
       </section>
+
+      <Suspense fallback={<div className="min-h-[100px]" />}><Testimonials /></Suspense>
 
       {/* ── Internal Links ── */}
       <section className="py-16 bg-background">

@@ -631,7 +631,7 @@ const Sell = () => {
           <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-start">
             <div>
               <p className="text-minimal text-primary-foreground/50 mb-4">READY TO SELL?</p>
-              <h2 className="text-4xl md:text-5xl font-display font-normal text-primary-foreground leading-[1.15] mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-primary-foreground leading-[1.15] mb-6">
                 Schedule a Listing Consultation
               </h2>
               <p className="text-primary-foreground/60 leading-relaxed mb-10 max-w-lg">Considering selling your Austin property? Schedule a complimentary consultation to discuss pricing strategy, marketing, timeline, and how we can position your property for maximum exposure and value.

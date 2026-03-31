@@ -187,7 +187,7 @@ const AdvisoryBar = () => {
               <div className="flex flex-col items-center">
                 <button
                   onClick={() => setModalOpen(true)}
-                  className="px-5 py-2 text-sm font-medium border rounded transition-all duration-200 hover:bg-[hsl(var(--gold))] hover:text-white hover:font-bold hero-cta-btn"
+                  className="px-5 py-2 text-sm font-medium border rounded transition-all duration-200 hover:bg-[hsl(var(--gold))] hover:text-white hero-cta-btn"
                   style={{ fontFamily: '"Cinzel", serif', borderColor: 'hsl(var(--gold))', color: '#fff' }}>
                   GET ACCESS
                 </button>

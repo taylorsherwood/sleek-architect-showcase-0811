@@ -762,9 +762,9 @@ const CommunitiesSection = () => (
         </ScrollReveal>
 
         <ScrollReveal delay={120} stagger={60}>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-4 lg:gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-5 lg:gap-4">
             {communities.map((c) => (
-              <Link key={c.slug} to={`/communities/${c.slug}`} className="group relative overflow-hidden aspect-[3/4] sm:aspect-[3/3.5] md:aspect-[4/3] transition-shadow duration-[500ms] hover:shadow-[0_12px_30px_-8px_hsl(var(--foreground)/0.1)]">
+              <Link key={c.slug} to={`/communities/${c.slug}`} className="group relative overflow-hidden aspect-[3/4] sm:aspect-[3/4] lg:aspect-[4/3] transition-shadow duration-[500ms] hover:shadow-[0_12px_30px_-8px_hsl(var(--foreground)/0.1)]">
                 <img src={c.image} alt={`Luxury homes in ${c.name}, Austin`}
                   className="community-tile-img absolute inset-0 w-full h-full object-cover transition-transform duration-[800ms]"
                   style={{ transitionTimingFunction: "cubic-bezier(0.25, 0.46, 0.45, 0.94)" }}
@@ -787,10 +787,10 @@ const CommunitiesSection = () => (
                 <div className="absolute top-3 right-3 sm:top-4 sm:right-4 z-10" style={{
                   background: "rgba(12,15,36,0.8)", border: "1px solid hsl(38 39% 61%)",
                 }}>
-                  <span className="block px-2 py-[3px] sm:px-[10px] sm:py-1" style={{
+                  <span className="block px-2 py-[3px] sm:px-2 sm:py-[2px] lg:px-[10px] lg:py-1" style={{
                     fontFamily: '"Jost", sans-serif', letterSpacing: "0.12em",
                     color: "hsl(38 39% 61%)",
-                    fontSize: "clamp(8px, 2vw, 10px)",
+                    fontSize: "clamp(8px, 1.8vw, 10px)",
                   }}>
                     {c.priceFrom}
                   </span>
@@ -798,7 +798,7 @@ const CommunitiesSection = () => (
 
                 {/* Bottom text */}
                 <div className="absolute bottom-6 left-5 right-5 sm:bottom-5 z-10 group-hover:opacity-0 transition-opacity duration-500">
-                  <h3 className="font-display text-base sm:text-lg md:text-xl font-medium tracking-[0.03em] leading-[1.1] drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)] mb-2 sm:mb-1.5" style={{ color: "#FAFAF8" }}>
+                  <h3 className="font-display text-base sm:text-[1.05rem] lg:text-xl font-medium tracking-[0.03em] leading-[1.1] drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)] mb-2 sm:mb-1.5" style={{ color: "#FAFAF8" }}>
                     {c.name}
                   </h3>
                   <p className="line-clamp-1 hidden sm:block" style={{

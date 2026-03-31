@@ -152,7 +152,7 @@ const Hero = () => {
             ...anim("0.3s"),
             fontFamily: '"Jost", sans-serif', fontWeight: 300, fontSize: "15px",
             letterSpacing: "0.05em", color: "rgba(245,243,239,0.85)",
-            textShadow: "0 2px 12px rgba(0,0,0,0.6), 0 0 30px rgba(245,243,239,0.08)"
+            textShadow: "0 1px 8px rgba(0,0,0,0.7), 0 0 24px rgba(0,0,0,0.5)"
           }}>
             Private listings, off-market opportunities, and elevated real estate representation.
           </p>

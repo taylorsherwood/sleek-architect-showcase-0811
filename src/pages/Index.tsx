@@ -328,11 +328,11 @@ const AdvisorSection = () => (
                 If you're looking for access, clarity, and execution at a higher level, you're in the right place. 
                 You don't need more listings, you need a smarter approach.
               </p>
-               <p className="text-foreground/70 text-[16px] leading-[1.8] font-medium mt-4 font-serif font-normal">
-                  Buy. Sell. Invest.
-                  <br /><br />
-                  Let's get to work,
-               </p>
+               <p className="text-foreground/70 text-[16px] leading-[1.8] font-medium mt-4 font-serif font-normal italic">
+                   Buy. Sell. Invest.
+                   <br /><br />
+                   Let's get to work,
+                </p>
                <div className="!mt-0 !pt-0 mb-16"><img src={taylorSignature} alt="Taylor Sherwood signature" className="block h-[160px] opacity-80 -translate-y-4" /></div>
             </div>
 

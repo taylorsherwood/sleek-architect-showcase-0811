@@ -407,7 +407,7 @@ const OffMarketDealsAustin = () => {
                 </Link>
                 <Link
                   to="/contact"
-                  className="inline-block border border-border text-foreground hover:bg-muted px-10 py-4 transition-colors duration-300"
+                  className="inline-block border border-border text-foreground hover:bg-secondary px-10 py-4 transition-colors duration-300"
                   style={labelStyle}
                 >
                   CONNECT WITH US

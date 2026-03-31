@@ -270,7 +270,7 @@ const LandPage = () => {
       </section>
 
       {/* ── Our Process ── */}
-      <section className="py-20 md:py-28 bg-muted">
+      <section className="py-20 md:py-28 bg-secondary">
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto">
             <p className="text-minimal text-gold mb-4 font-extrabold">OUR PROCESS</p>

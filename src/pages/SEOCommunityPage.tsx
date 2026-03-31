@@ -248,7 +248,7 @@ const SEOCommunityPage = () => {
             </section>
 
             {/* CTA */}
-            <section className="text-center py-12 bg-muted -mx-6 px-6">
+            <section className="text-center py-12 bg-secondary -mx-6 px-6">
               <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-4">
                 Interested in {community.name}?
               </h2>

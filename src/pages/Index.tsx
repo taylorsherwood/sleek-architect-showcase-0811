@@ -140,7 +140,7 @@ const Hero = () => {
             </p>
           </div>
 
-          <h1 className="font-display mb-7" style={{
+          <h1 className="font-display mb-7 md:mb-5 lg:mb-7" style={{
             ...anim("0.15s"), fontWeight: 400, lineHeight: 1.12, letterSpacing: "0.02em",
             fontSize: "clamp(32px, 4vw, 52px)",
             color: "rgba(250,248,244,0.98)",

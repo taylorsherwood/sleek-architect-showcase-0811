@@ -479,7 +479,7 @@ const Invest = () => {
         <div className="max-w-6xl mx-auto px-6">
           <ScrollReveal>
             <p className="text-minimal text-gold mb-4">Client Focus</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-16 max-w-2xl whitespace-nowrap">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-16 max-w-2xl">
               Austin Investment Clients We Serve
             </h2>
           </ScrollReveal>

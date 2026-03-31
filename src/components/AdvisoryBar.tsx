@@ -175,7 +175,7 @@ const AdvisoryBar = () => {
             {/* Text */}
             <div className="flex-1 min-w-0">
               <p className="text-primary-foreground font-semibold text-sm md:text-base leading-tight truncate">
-                See Austin Homes Before They Hit Zillow
+                Unlock Off-Market Homes
               </p>
               <p className="text-primary-foreground/70 text-xs md:text-sm leading-tight mt-0.5 hidden sm:block truncate">
                 Private + off-market homes, development sites, and investment opportunities

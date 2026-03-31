@@ -255,7 +255,7 @@ const AdvisoryBar = () => {
                 {/* CTA */}
                 <button
                   onClick={() => { setModalOpen(false); dismiss(); }}
-                  className="inline-flex items-center gap-2 px-12 py-3.5 text-[11px] tracking-[0.2em] uppercase font-medium text-white/90 border border-white/30 rounded transition-all duration-300 hover:bg-[hsl(var(--gold))] hover:border-[hsl(var(--gold))] hover:text-white hover:font-bold hover:shadow-[0_0_24px_hsl(var(--gold)/0.25)] hero-cta-btn">
+                  className="inline-flex items-center gap-2 px-12 py-3.5 text-[11px] tracking-[0.2em] uppercase font-medium text-white/90 border border-white/30 rounded transition-all duration-300 hover:bg-[hsl(var(--gold))] hover:border-[hsl(var(--gold))] hover:text-white hover:shadow-[0_0_24px_hsl(var(--gold)/0.25)] hero-cta-btn">
                   Continue <span className="text-[10px]">→</span>
                 </button>
               </div>

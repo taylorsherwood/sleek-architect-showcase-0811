@@ -2,6 +2,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import fm620Image from "@/assets/13505-north-fm-620.jpg";
 import cedarBayouImage from "@/assets/5931-cedar-bayou.jpg";
 import southeastAustinImage from "@/assets/southeast-austin-commercial.webp";
+import highRoadImage from "@/assets/the-high-road-westlake.webp";
 
 /* ------------------------------------------------------------------ */
 /*  DATA — Edit this array to add / remove / update private sales      */
@@ -42,7 +43,7 @@ export const privateSales: PrivateSaleItem[] = [
     label: "Represented Buyer",
   },
   {
-    image: "/placeholder.svg",
+    image: highRoadImage,
     price: "$1,495,000",
     address: "The High Road",
     area: "WESTLAKE HILLS",

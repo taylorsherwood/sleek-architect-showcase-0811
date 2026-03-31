@@ -43,8 +43,8 @@ const PastTransactions = () => {
         />
         {/* Bottom-only gradient — refined for text readability */}
         <div
-          className="absolute inset-x-0 bottom-0 h-[65%]"
-          style={{ background: "linear-gradient(to top, rgba(10,14,25,0.55) 0%, rgba(10,14,25,0.25) 35%, rgba(10,14,25,0.0) 65%)" }}
+          className="absolute inset-x-0 bottom-0 h-[45%]"
+          style={{ background: "linear-gradient(to top, rgba(10,14,25,0.62) 0%, rgba(10,14,25,0.30) 40%, rgba(10,14,25,0.0) 100%)" }}
         />
 
         <div className="absolute inset-0 flex items-end pb-12 md:pb-16">

@@ -762,16 +762,16 @@ const CommunitiesSection = () => (
         </ScrollReveal>
 
         <ScrollReveal delay={120} stagger={60}>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 lg:gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-4 lg:gap-4">
             {communities.map((c) => (
-              <Link key={c.slug} to={`/communities/${c.slug}`} className="group relative overflow-hidden aspect-[4/3] transition-shadow duration-[500ms] hover:shadow-[0_12px_30px_-8px_hsl(var(--foreground)/0.1)]">
+              <Link key={c.slug} to={`/communities/${c.slug}`} className="group relative overflow-hidden aspect-[3/4] sm:aspect-[3/3.5] md:aspect-[4/3] transition-shadow duration-[500ms] hover:shadow-[0_12px_30px_-8px_hsl(var(--foreground)/0.1)]">
                 <img src={c.image} alt={`Luxury homes in ${c.name}, Austin`}
                   className="community-tile-img absolute inset-0 w-full h-full object-cover transition-transform duration-[800ms]"
                   style={{ transitionTimingFunction: "cubic-bezier(0.25, 0.46, 0.45, 0.94)" }}
                   loading="lazy" decoding="async" />
 
-                {/* Default gradient */}
-                <div className="absolute inset-0 bg-gradient-to-t from-foreground/65 via-foreground/15 via-[45%] to-transparent transition-opacity duration-500 group-hover:opacity-0" />
+                {/* Default gradient — slightly stronger on mobile */}
+                <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 sm:from-foreground/65 via-foreground/20 sm:via-foreground/15 via-[45%] to-transparent transition-opacity duration-500 group-hover:opacity-0" />
 
                 {/* Hover dark overlay with Explore prompt */}
                 <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
@@ -783,25 +783,25 @@ const CommunitiesSection = () => (
                   </span>
                 </div>
 
-                {/* Price badge */}
-                <div className="absolute top-4 right-4 z-10" style={{
+                {/* Price badge — smaller on mobile/tablet */}
+                <div className="absolute top-3 right-3 sm:top-4 sm:right-4 z-10" style={{
                   background: "rgba(12,15,36,0.8)", border: "1px solid hsl(38 39% 61%)",
-                  padding: "4px 10px",
                 }}>
-                  <span style={{
-                    fontFamily: '"Jost", sans-serif', fontSize: "10px", letterSpacing: "0.12em",
+                  <span className="block px-2 py-[3px] sm:px-[10px] sm:py-1" style={{
+                    fontFamily: '"Jost", sans-serif', letterSpacing: "0.12em",
                     color: "hsl(38 39% 61%)",
+                    fontSize: "clamp(8px, 2vw, 10px)",
                   }}>
                     {c.priceFrom}
                   </span>
                 </div>
 
                 {/* Bottom text */}
-                <div className="absolute bottom-5 left-5 right-5 z-10 group-hover:opacity-0 transition-opacity duration-500">
-                  <h3 className="font-display text-lg md:text-xl font-medium tracking-[0.03em] leading-[1.1] drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)] mb-1.5" style={{ color: "#FAFAF8" }}>
+                <div className="absolute bottom-6 left-5 right-5 sm:bottom-5 z-10 group-hover:opacity-0 transition-opacity duration-500">
+                  <h3 className="font-display text-base sm:text-lg md:text-xl font-medium tracking-[0.03em] leading-[1.1] drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)] mb-2 sm:mb-1.5" style={{ color: "#FAFAF8" }}>
                     {c.name}
                   </h3>
-                  <p style={{
+                  <p className="line-clamp-1 hidden sm:block" style={{
                     fontFamily: '"Jost", sans-serif', fontSize: "10px", fontWeight: 300,
                     letterSpacing: "0.08em", textTransform: "uppercase",
                     color: "rgba(250,250,248,0.72)",

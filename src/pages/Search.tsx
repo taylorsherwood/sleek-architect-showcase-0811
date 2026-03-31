@@ -39,6 +39,7 @@ const searchFaqs = [
 const Footer = lazy(() => import("@/components/Footer"));
 const RealScoutSearch = lazy(() => import("@/components/RealScoutSearch"));
 const RealScoutListings = lazy(() => import("@/components/RealScoutListings"));
+const Testimonials = lazy(() => import("@/components/Testimonials"));
 
 const SearchPage = () => {
   const [searchParams] = useSearchParams();

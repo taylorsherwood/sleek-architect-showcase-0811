@@ -39,6 +39,7 @@ const searchFaqs = [
 const Footer = lazy(() => import("@/components/Footer"));
 const RealScoutSearch = lazy(() => import("@/components/RealScoutSearch"));
 const RealScoutListings = lazy(() => import("@/components/RealScoutListings"));
+const Testimonials = lazy(() => import("@/components/Testimonials"));
 
 const SearchPage = () => {
   const [searchParams] = useSearchParams();
@@ -321,6 +322,10 @@ const SearchPage = () => {
                 </div>
               ))}
             </div>
+
+            <Suspense fallback={<div className="min-h-[200px]" />}>
+              <Testimonials />
+            </Suspense>
 
             <h3 className="text-2xl font-display font-normal text-architectural mt-10 mb-6">
               Explore Austin Real Estate

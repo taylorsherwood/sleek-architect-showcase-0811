@@ -646,7 +646,7 @@ const Invest = () => {
         <div className="max-w-2xl mx-auto px-6 text-center">
           <ScrollReveal>
             <p className="text-minimal text-gold mb-5 tracking-[0.3em]">Private Network</p>
-            <h2 className="text-2xl sm:text-4xl md:text-[2.75rem] font-display font-normal text-architectural mb-6 leading-[1.15]">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-6 leading-[1.15]">
               Have a Property That Needs Work?
             </h2>
             <p className="text-muted-foreground max-w-xl mx-auto leading-relaxed mb-4 text-[0.95rem]">

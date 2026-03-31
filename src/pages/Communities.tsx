@@ -59,14 +59,14 @@ const Communities = () => {
       <Navigation />
       <div className="h-12 md:h-20" />
 
-      <section className="pt-32 pb-16">
-        <div className="container mx-auto px-6">
+      <section className="pt-24 sm:pt-32 pb-12 sm:pb-16">
+        <div className="container mx-auto px-5 sm:px-6">
           <div className="max-w-7xl mx-auto">
-            <p className="text-minimal text-gold mb-4 font-extrabold">LUXURY COMMUNITIES</p>
-            <h1 className="text-5xl md:text-7xl font-display font-normal text-architectural mb-8">
+            <p className="text-minimal text-gold mb-3 sm:mb-4 font-extrabold">LUXURY COMMUNITIES</p>
+            <h1 className="text-3xl sm:text-5xl md:text-7xl font-display font-normal text-architectural mb-5 sm:mb-8">
               Austin's Finest Neighborhoods
             </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl">
+            <p className="text-base sm:text-xl text-muted-foreground max-w-3xl">
               Deep expertise in the communities that define luxury living in the Austin area. 
               Explore the neighborhoods where we live, work, and help clients find their perfect home.
             </p>
@@ -74,10 +74,10 @@ const Communities = () => {
         </div>
       </section>
 
-      <section className="pb-28">
-        <div className="container mx-auto px-6">
+      <section className="pb-20 sm:pb-28">
+        <div className="container mx-auto px-5 sm:px-6">
           <div className="max-w-7xl mx-auto">
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
               {[...communityPages].sort((a, b) => a.name.localeCompare(b.name)).map((community) => {
                 const img = imageMap[community.slug] || community.image;
                 return (
@@ -101,8 +101,8 @@ const Communities = () => {
                         </div>
                       )}
                     </div>
-                    <p className="text-minimal text-gold mb-2">{community.priceRange}</p>
-                    <h2 className="text-2xl font-display font-normal text-architectural group-hover:text-muted-foreground transition-colors duration-300 mb-2">
+                    <p className="text-minimal text-gold mb-1.5 sm:mb-2">{community.priceRange}</p>
+                    <h2 className="text-xl sm:text-2xl font-display font-normal text-architectural group-hover:text-muted-foreground transition-colors duration-300 mb-1.5 sm:mb-2">
                       {community.name}
                     </h2>
                     <p className="text-minimal text-muted-foreground">EXPLORE COMMUNITY →</p>
@@ -115,15 +115,15 @@ const Communities = () => {
       </section>
 
       {/* ── Neighborhood Comparison ── */}
-      <section className="py-24 bg-secondary">
-        <div className="container mx-auto px-6">
+      <section className="py-16 sm:py-24 bg-secondary">
+        <div className="container mx-auto px-5 sm:px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-display font-normal text-architectural mb-8">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-normal text-architectural mb-6 sm:mb-8">
               Comparing Austin's Top Luxury Neighborhoods
             </h2>
             <div className="space-y-8">
               <div>
-                <h3 className="text-2xl font-display font-normal text-architectural mb-3">
+                <h3 className="text-xl sm:text-2xl font-display font-normal text-architectural mb-3">
                   Barton Creek vs Westlake Hills
                 </h3>
                 <p className="text-muted-foreground leading-relaxed mb-3">
@@ -131,7 +131,7 @@ const Communities = () => {
                 </p>
               </div>
               <div>
-                <h3 className="text-2xl font-display font-normal text-architectural mb-3">
+                <h3 className="text-xl sm:text-2xl font-display font-normal text-architectural mb-3">
                   Lake Austin vs Lake Travis Waterfront
                 </h3>
                 <p className="text-muted-foreground leading-relaxed mb-3">
@@ -139,7 +139,7 @@ const Communities = () => {
                 </p>
               </div>
               <div>
-                <h3 className="text-2xl font-display font-normal text-architectural mb-3">
+                <h3 className="text-xl sm:text-2xl font-display font-normal text-architectural mb-3">
                   Tarrytown vs Travis Heights for Urban Buyers
                 </h3>
                 <p className="text-muted-foreground leading-relaxed mb-3">
@@ -148,7 +148,7 @@ const Communities = () => {
               </div>
             </div>
 
-            <h2 className="text-4xl md:text-5xl font-display font-normal text-architectural mb-8 mt-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-normal text-architectural mb-6 sm:mb-8 mt-12 sm:mt-16">
               Luxury Living in Austin's Best Neighborhoods
             </h2>
             <div className="space-y-6 text-muted-foreground leading-relaxed">
@@ -159,7 +159,7 @@ const Communities = () => {
                 What makes Austin's luxury neighborhoods exceptional is the rare combination of natural beauty, urban convenience, and economic opportunity. Residents enjoy access to world-class dining, live music, outdoor recreation, and a thriving technology economy — all within a state that levies no personal income tax.
               </p>
 
-              <h3 className="text-2xl font-display font-normal text-architectural pt-4">
+              <h3 className="text-xl sm:text-2xl font-display font-normal text-architectural pt-4">
                 Why Live in Austin's Luxury Communities
               </h3>
               <p>
@@ -169,7 +169,7 @@ const Communities = () => {
                 For those seeking more space, the Texas Hill Country and Dripping Springs provide sprawling ranch estates, vineyard properties, and acreage surrounded by rolling terrain and live oaks. Downtown Austin and Travis Heights cater to buyers who prefer urban energy, walkable streetscapes, and proximity to the city's cultural core.
               </p>
 
-              <h3 className="text-2xl font-display font-normal text-architectural pt-4">
+              <h3 className="text-xl sm:text-2xl font-display font-normal text-architectural pt-4">
                 Market Insights Across Austin Neighborhoods
               </h3>
               <p>
@@ -179,7 +179,7 @@ const Communities = () => {
                 Inventory in Austin's most exclusive communities remains limited, and many of the finest properties trade off-market through private channels. Working with an agent who has deep neighborhood expertise and access to off-market inventory is essential for buyers targeting these communities.
               </p>
 
-              <h3 className="text-2xl font-display font-normal text-architectural pt-4">
+              <h3 className="text-xl sm:text-2xl font-display font-normal text-architectural pt-4">
                 Expert Guidance for Every Neighborhood
               </h3>
               <p>
@@ -191,10 +191,10 @@ const Communities = () => {
       </section>
 
       {/* ── FAQ ── */}
-      <section className="py-28 bg-background">
-        <div className="container mx-auto px-6">
+      <section className="py-20 sm:py-28 bg-background">
+        <div className="container mx-auto px-5 sm:px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-8">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-6 sm:mb-8">
               Frequently Asked Questions About Austin Communities
             </h2>
             <div className="space-y-6">

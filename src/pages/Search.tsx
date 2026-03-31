@@ -101,31 +101,7 @@ const SearchPage = () => {
               Explore every available home across Austin — from luxury estates
               to condos, new construction, and investment opportunities.
             </p>
-            <Link
-              to="#listings"
-              className="inline-block transition-all duration-300"
-              style={{
-                border: "1px solid hsl(var(--gold))",
-                color: "hsl(var(--gold))",
-                background: "transparent",
-                fontFamily: "'Jost', sans-serif",
-                fontSize: "11px",
-                letterSpacing: "0.18em",
-                padding: "14px 36px",
-                marginTop: "32px",
-                textTransform: "uppercase",
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.background = "hsl(var(--gold))";
-                e.currentTarget.style.color = "hsl(var(--black))";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.background = "transparent";
-                e.currentTarget.style.color = "hsl(var(--gold))";
-              }}
-            >
-              EXPLORE LISTINGS
-            </Link>
+            
             {filterSummary && (
               <div className="mt-6 inline-flex items-center gap-2 px-5 py-2 rounded-full border border-warm-cream/20 text-warm-cream/80 text-sm font-light">
                 <span>Filtering:</span>

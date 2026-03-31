@@ -151,7 +151,7 @@ const AustinLuxuryHomes = () => {
 
             {/* Why Echelon */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-5 sm:mb-6">
                 Why Work with Echelon Property Group
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-6">

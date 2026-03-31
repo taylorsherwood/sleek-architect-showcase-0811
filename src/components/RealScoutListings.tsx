@@ -11,6 +11,7 @@ const RealScoutListings = ({
   listingStatus = "Sold",
   heading = "ECHELON RESULTS",
   subheading = "Recently Closed",
+  title = "on the market",
 }: RealScoutListingsProps) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const sectionRef = useRef<HTMLElement>(null);

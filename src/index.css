@@ -52,7 +52,7 @@ realscout-simple-search {
     --background: 37 15% 95%;        /* #F5F3EF */
     --foreground: 233 47% 9%;           /* #0C0F24 */
 
-    --card: 0 0% 100%;
+    --card: 37 15% 95%;              /* #F5F3EF */
     --card-foreground: 233 47% 9%;
 
     --popover: 0 0% 100%;

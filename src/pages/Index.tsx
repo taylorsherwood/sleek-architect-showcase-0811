@@ -119,10 +119,10 @@ const Hero = () => {
         <img src="/images/hero-poster.jpg" alt="Austin Texas skyline" className="absolute inset-0 w-full h-full object-cover" style={{ zIndex: 0 }} loading="eager" width={1920} height={1080} />
       )}
 
-      {/* Left-side text zone gradient — strong behind text, fades before center */}
+      {/* Full hero overlay */}
       <div className="absolute inset-0" style={{
         zIndex: 1,
-        background: `linear-gradient(to right, rgba(10,14,25,0.62) 0%, rgba(10,14,25,0.34) 28%, rgba(10,14,25,0.08) 45%, transparent 100%)`
+        background: `rgba(10,14,25,0.38)`
       }} />
 
       {/* Content */}

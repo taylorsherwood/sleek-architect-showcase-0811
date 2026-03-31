@@ -55,7 +55,7 @@ const AustinLuxuryHomes = () => {
 
             {/* Market Overview */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-5 sm:mb-6">
                 Austin's Luxury Real Estate Market
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">

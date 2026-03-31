@@ -74,7 +74,7 @@ realscout-simple-search {
     --destructive-foreground: 0 0% 100%;
 
     --border: 37 8% 88%;
-    --input: 0 0% 100%;
+    --input: 37 15% 95%;             /* #F5F3EF */
     --ring: 233 47% 9%;
 
     --radius: 0.25rem;

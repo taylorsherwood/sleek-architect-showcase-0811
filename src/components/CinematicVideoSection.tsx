@@ -51,13 +51,13 @@ const CinematicVideoSection = () => {
           <video
             ref={videoRef}
             className="absolute inset-0 w-full h-full object-cover object-center"
-            src={VIDEO_URL}
+            src={visible ? VIDEO_URL : undefined}
             poster={POSTER_URL}
             autoPlay
             muted
             loop
             playsInline
-            preload="metadata"
+            preload="none"
           />
         </div>
 

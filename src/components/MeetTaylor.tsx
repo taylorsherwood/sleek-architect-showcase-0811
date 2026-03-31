@@ -48,8 +48,11 @@ const MeetTaylor = () => {
                 src="/lovable-uploads/537facb0-1fbc-450c-8c4a-c1d06c4aa924.jpg"
                 sizes="(max-width: 768px) 100vw, 50vw"
                 loading="lazy"
-                decoding="async" />
-              <img src="/static-assets/clhms-badge.png" alt="Certified Luxury Home Marketing Specialist guild member badge" title="Certified Luxury Home Marketing Specialist badge" className="absolute bottom-3 right-3 w-16 h-16 md:w-20 md:h-20 opacity-85" loading="lazy" decoding="async" />
+                decoding="async"
+                width={600}
+                height={800}
+              />
+              <img src="/static-assets/clhms-badge.png" alt="Certified Luxury Home Marketing Specialist guild member badge" title="Certified Luxury Home Marketing Specialist badge" className="absolute bottom-3 right-3 w-16 h-16 md:w-20 md:h-20 opacity-85" loading="lazy" decoding="async" width={80} height={80} />
             </div>
             
             <div className="relative overflow-hidden">

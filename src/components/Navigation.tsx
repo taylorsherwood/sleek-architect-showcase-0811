@@ -105,7 +105,11 @@ const Navigation = () => {
             title="Echelon Property Group — Austin Luxury Real Estate"
             className="w-auto max-w-none border-0 shrink-0 object-contain"
             style={{ height: '125%', maxHeight: '125%' }}
-            loading="lazy" decoding="async"
+            loading="eager"
+            decoding="async"
+            fetchPriority="high"
+            width={200}
+            height={80}
           />
         </Link>
 

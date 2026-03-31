@@ -12,6 +12,8 @@ const CTASection = () => {
           sizes="100vw"
           loading="lazy"
           decoding="async"
+          width={1920}
+          height={1080}
         />
       </div>
       

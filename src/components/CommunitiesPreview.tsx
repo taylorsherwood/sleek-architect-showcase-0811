@@ -87,6 +87,8 @@ const CommunitiesPreview = () => {
                     sizes="(max-width: 768px) 50vw, 42vw"
                     loading="lazy"
                     decoding="async"
+                    width={800}
+                    height={533}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-foreground/75 via-foreground/25 via-[40%] to-transparent" />
                   <div className="absolute bottom-5 left-5 right-5">

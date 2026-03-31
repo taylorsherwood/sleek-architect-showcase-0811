@@ -286,7 +286,7 @@ const AdvisoryBar = () => {
               <div className="pt-2">
                 <button
                   onClick={() => setSubmitError(false)}
-                  className="px-8 py-2.5 text-sm font-medium text-primary-foreground border border-primary-foreground/30 rounded transition-all duration-200 hover:bg-[hsl(var(--gold))] hover:border-[hsl(var(--gold))] hover:text-white hover:font-bold hero-cta-btn">
+                  className="px-8 py-2.5 text-sm font-medium text-primary-foreground border border-primary-foreground/30 rounded transition-all duration-200 hover:bg-[hsl(var(--gold))] hover:border-[hsl(var(--gold))] hover:text-white hero-cta-btn">
                   TRY AGAIN
                 </button>
               </div>

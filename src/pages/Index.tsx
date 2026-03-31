@@ -720,7 +720,7 @@ const TestimonialsSection = () => {
                 onClick={() => setActive(i)}
                 className="w-2.5 h-2.5 rounded-full transition-all duration-300 cursor-pointer"
                 style={{
-                  background: i === active ? "hsl(38 39% 61%)" : "hsl(var(--gray-light))",
+                  background: i === active ? "hsl(38 39% 61%)" : "hsl(var(--border))",
                   transform: i === active ? "scale(1.2)" : "scale(1)",
                 }}
                 aria-label={`View testimonial ${i + 1}`}

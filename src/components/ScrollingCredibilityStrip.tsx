@@ -53,8 +53,8 @@ const ScrollingCredibilityStrip = () => {
               alt={logo.alt}
               loading="lazy"
               decoding="async"
-              className={`${logo.h} w-auto object-contain shrink-0`}
-              style={{ opacity: 1, filter: "brightness(0) invert(1) sepia(1) saturate(0.5) hue-rotate(3deg) brightness(0.92)" }}
+              className={`${logo.h} w-auto object-contain shrink-0 credibility-logo`}
+              style={{ opacity: 1 }}
               width={160}
               height={160}
             />

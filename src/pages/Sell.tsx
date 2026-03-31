@@ -385,7 +385,7 @@ const Sell = () => {
       <div className="bg-background py-8" />
 
       {/* ── Thin gold divider above Marketing Strategy ── */}
-      <div className="bg-warm-cream">
+      <div className="bg-secondary">
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto h-px bg-gradient-to-r from-transparent via-gold/40 to-transparent" />
         </div>

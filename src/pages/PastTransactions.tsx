@@ -32,16 +32,20 @@ const PastTransactions = () => {
 
       {/* ── Editorial Hero ── */}
       <section className="relative h-[50vh] md:h-[60vh] w-full overflow-hidden">
+        {/* Hero image — focal point locked to upper third for consistent framing */}
         <img
           src={heroImage}
-          alt="Luxury homes along Lake Austin at golden hour"
+          alt="Aerial view of Lake Austin waterfront properties"
           width={1920}
           height={1080}
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover object-[center_30%] md:object-[center_25%]"
           fetchPriority="high"
         />
-        {/* Subtle bottom-only gradient */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/15 to-transparent" />
+        {/* Bottom-only gradient — ~25% opacity fading to transparent by mid-height */}
+        <div
+          className="absolute inset-x-0 bottom-0 h-[55%]"
+          style={{ background: "linear-gradient(to top, rgba(0,0,0,0.28) 0%, rgba(0,0,0,0.12) 40%, transparent 100%)" }}
+        />
 
         <div className="absolute inset-0 flex items-end pb-14 md:pb-20">
           <div className="container mx-auto px-8 md:px-12 lg:px-16">

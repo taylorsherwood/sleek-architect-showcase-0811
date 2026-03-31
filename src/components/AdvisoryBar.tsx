@@ -357,7 +357,7 @@ const AdvisoryBar = () => {
                 <button
                 type="submit"
                 disabled={submitting}
-                className="w-full px-5 py-3 text-sm font-medium text-primary-foreground border border-primary-foreground rounded transition-all duration-200 hover:bg-[hsl(var(--gold))] hover:border-[hsl(var(--gold))] hover:text-white hover:font-bold disabled:opacity-50 hero-cta-btn">
+                className="w-full px-5 py-3 text-sm font-medium text-primary-foreground border border-primary-foreground rounded transition-all duration-200 hover:bg-[hsl(var(--gold))] hover:border-[hsl(var(--gold))] hover:text-white disabled:opacity-50 hero-cta-btn">
                   {submitting ? "Submitting…" : "GET ACCESS"}
                 </button>
               </div>

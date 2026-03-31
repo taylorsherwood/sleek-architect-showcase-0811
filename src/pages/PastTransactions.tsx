@@ -11,11 +11,6 @@ import heroImage from "@/assets/past-transactions-hero.jpg";
 const Testimonials = lazy(() => import("@/components/Testimonials"));
 const PrivateSalesShowcase = lazy(() => import("@/components/PrivateSalesShowcase"));
 
-const stats = [
-  "90%+ Off-Market Transactions",
-  "Luxury & Investment Sales Across Austin",
-  "Barton Creek • Westlake • Tarrytown • Downtown",
-];
 
 const PastTransactions = () => {
   return (

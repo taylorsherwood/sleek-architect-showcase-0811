@@ -60,7 +60,7 @@ export const privateSales: PrivateSaleItem[] = [
     label: "Represented Seller",
   },
   {
-    image: "/placeholder.svg",
+    image: clearCreekImage,
     price: "$0,000,000",
     address: "Property Address",
     area: "Neighborhood",

@@ -148,7 +148,7 @@ const Communities = () => {
               </div>
             </div>
 
-            <h2 className="text-4xl md:text-5xl font-display font-normal text-architectural mb-8 mt-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-normal text-architectural mb-6 sm:mb-8 mt-12 sm:mt-16">
               Luxury Living in Austin's Best Neighborhoods
             </h2>
             <div className="space-y-6 text-muted-foreground leading-relaxed">

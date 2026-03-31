@@ -161,7 +161,7 @@ const Hero = () => {
           {/* CTA Buttons — static, dark translucent glass */}
           <div className="flex flex-col sm:flex-row gap-4" style={anim("0.4s")}>
             <Link to="/austin-luxury-homes-for-sale"
-              className="inline-block text-center px-8 py-[14px]"
+              className="inline-block text-center px-8 py-[14px] hover:-translate-y-px hover:opacity-[0.92]"
               style={{
                 fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 400,
                 border: "1px solid hsl(38 42% 68%)", color: "hsl(38 45% 72%)",

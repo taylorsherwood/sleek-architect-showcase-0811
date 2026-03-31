@@ -352,7 +352,7 @@ const Sell = () => {
           <div className="max-w-7xl mx-auto">
             <div className="mb-16 max-w-2xl">
               <p className="text-minimal text-gold mb-4 font-extrabold">YOUR ADVANTAGE</p>
-              <h2 className="text-4xl md:text-5xl font-display font-normal text-architectural mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Why List With Echelon
               </h2>
               <p className="text-muted-foreground leading-relaxed">

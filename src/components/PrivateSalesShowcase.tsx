@@ -20,7 +20,7 @@ export const privateSales: PrivateSaleItem[] = [
     image: "/placeholder.svg",
     price: "$4,950,000",
     address: "Address Witheld",
-    area: "SOUTH EAST AUSTIN",
+    area: "SOUTHEAST AUSTIN",
     descriptor: "Commercial Property",
     label: "Private Sale",
   },

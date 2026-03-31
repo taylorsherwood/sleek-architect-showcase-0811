@@ -44,6 +44,11 @@ const PastTransactions = () => {
       </div>
       <RealScoutListings />
 
+      {/* ── Notable Private Sales ── */}
+      <Suspense fallback={<div className="min-h-[200px]" />}>
+        <PrivateSalesShowcase />
+      </Suspense>
+
       <Suspense fallback={<div className="min-h-[200px]" />}>
         <Testimonials />
       </Suspense>

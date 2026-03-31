@@ -47,7 +47,7 @@ const PastTransactions = () => {
           style={{ background: "linear-gradient(to top, rgba(10,14,25,0.55) 0%, rgba(10,14,25,0.25) 35%, rgba(10,14,25,0.0) 65%)" }}
         />
 
-        <div className="absolute inset-0 flex items-end pb-8 md:pb-12">
+        <div className="absolute inset-0 flex items-end pb-12 md:pb-16">
           <div className="container mx-auto px-6 md:px-10 lg:px-14">
             <ScrollReveal distance={6} duration={900}>
               <h1

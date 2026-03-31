@@ -356,7 +356,7 @@ const CommercialInvestment = () => {
       </section>
 
       {/* ── Private Market Opportunities ── */}
-      <section className="py-16 md:py-24 bg-muted border-t border-border">
+      <section className="py-16 md:py-24 bg-secondary border-t border-border">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
             <div className="mb-16">

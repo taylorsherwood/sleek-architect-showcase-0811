@@ -7,6 +7,7 @@ import SchemaMarkup, { realEstateAgentSchema, createFAQSchema, createBreadcrumbS
 import RealScoutListings from "@/components/RealScoutListings";
 
 const Testimonials = lazy(() => import("@/components/Testimonials"));
+const PrivateSalesShowcase = lazy(() => import("@/components/PrivateSalesShowcase"));
 
 const PastTransactions = () => {
   return (

@@ -188,7 +188,7 @@ const FeaturedLuxuryListings = () => {
             </div>
 
             {/* Two stacked */}
-            <div className="lg:col-span-4 grid grid-cols-2 lg:grid-cols-1 gap-4">
+            <div className="lg:col-span-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4">
               <ListingCardOverlay
                 listing={listings[1]}
                 aspect="aspect-[4/3] lg:aspect-auto lg:h-full"
@@ -203,7 +203,7 @@ const FeaturedLuxuryListings = () => {
           </div>
 
           {/* SECOND ROW: 4 listings */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
             <ListingCardOverlay listing={listings[3]} aspect="aspect-[3/4] sm:aspect-[4/3]" />
             <ListingCardOverlay listing={listings[4]} aspect="aspect-[3/4] sm:aspect-[4/3]" />
             <ListingCardOverlay listing={listings[5]} aspect="aspect-[3/4] sm:aspect-[4/3]" />

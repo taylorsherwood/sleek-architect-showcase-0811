@@ -31,14 +31,14 @@ const AustinLuxuryHomes = () => {
       <div className="h-12 md:h-20" />
 
       {/* Hero */}
-      <section className="pt-32 pb-16">
-        <div className="container mx-auto px-6">
+      <section className="pt-24 sm:pt-32 pb-12 sm:pb-16">
+        <div className="container mx-auto px-5 sm:px-6">
           <div className="max-w-4xl mx-auto">
-            <p className="text-minimal text-gold mb-4">AUSTIN LUXURY REAL ESTATE</p>
-            <h1 className="text-5xl md:text-7xl font-display font-normal text-architectural mb-8">
+            <p className="text-minimal text-gold mb-3 sm:mb-4">AUSTIN LUXURY REAL ESTATE</p>
+            <h1 className="text-3xl sm:text-5xl md:text-7xl font-display font-normal text-architectural mb-5 sm:mb-8">
               Austin Luxury Homes for Sale
             </h1>
-            <p className="text-xl text-muted-foreground leading-relaxed">
+            <p className="text-base sm:text-xl text-muted-foreground leading-relaxed">
               Discover Austin's finest luxury properties — from lakefront estates and hilltop mansions 
               to gated golf communities and Hill Country ranches. Echelon Property Group is your 
               trusted guide to Austin luxury real estate.
@@ -50,12 +50,12 @@ const AustinLuxuryHomes = () => {
       <FeaturedLuxuryListings />
 
       <article className="pb-24">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto space-y-16">
+        <div className="container mx-auto px-5 sm:px-6">
+          <div className="max-w-4xl mx-auto space-y-12 sm:space-y-16">
 
             {/* Market Overview */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-5 sm:mb-6">
                 Austin's Luxury Real Estate Market
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
@@ -71,7 +71,7 @@ const AustinLuxuryHomes = () => {
 
             {/* Property Types */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-5 sm:mb-6">
                 Types of Luxury Properties in Austin
               </h2>
 
@@ -129,10 +129,10 @@ const AustinLuxuryHomes = () => {
 
             {/* All Community Links */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-8">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-6 sm:mb-8">
                 Explore Austin's Luxury Communities
               </h2>
-              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                 {communityPages.map((c) => (
                   <Link
                     key={c.slug}
@@ -151,7 +151,7 @@ const AustinLuxuryHomes = () => {
 
             {/* Why Echelon */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-5 sm:mb-6">
                 Why Work with Echelon Property Group
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
@@ -187,7 +187,7 @@ const AustinLuxuryHomes = () => {
 
             {/* FAQ */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-8">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-6 sm:mb-8">
                 Frequently Asked Questions About Austin Luxury Real Estate
               </h2>
               <div className="space-y-6">
@@ -202,7 +202,7 @@ const AustinLuxuryHomes = () => {
 
             {/* CTA */}
             <section className="text-center py-16 bg-muted -mx-6 px-6">
-              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-4">
                 Start Your Austin Luxury Home Search
               </h2>
               <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">

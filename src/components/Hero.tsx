@@ -248,14 +248,15 @@ const Hero = () => {
           <div className="hero-ctas flex flex-row gap-4 items-center transition-all duration-1000 will-change-[opacity,transform]"
             style={{
               opacity: heroVisible ? 1 : 0,
-              transform: heroVisible ? "translateY(0)" : "translateY(10px)",
+              transform: heroVisible ? "translateZ(0) translateY(0)" : "translateZ(0) translateY(10px)",
               transitionTimingFunction: "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
               transitionDelay: "0.45s",
               marginTop: "36px",
+              contain: "layout paint",
             }}>
             <Link
               to="/invest"
-              className="hero-cta-gold inline-flex items-center justify-center whitespace-nowrap transition-all duration-300"
+              className="hero-cta-gold inline-flex items-center justify-center whitespace-nowrap"
               style={{
                 fontFamily: "'Jost', sans-serif",
                 fontSize: "11px",
@@ -266,12 +267,13 @@ const Hero = () => {
                 minWidth: "200px",
                 maxWidth: "260px",
                 width: "fit-content",
+                transform: "translateZ(0)",
               }}>
               EXPLORE OPPORTUNITIES
             </Link>
             <Link
               to="/off-market-real-estate-austin"
-              className="hero-cta-light inline-flex items-center justify-center whitespace-nowrap transition-all duration-300"
+              className="hero-cta-light inline-flex items-center justify-center whitespace-nowrap"
               style={{
                 fontFamily: "'Jost', sans-serif",
                 fontSize: "11px",
@@ -282,6 +284,7 @@ const Hero = () => {
                 minWidth: "200px",
                 maxWidth: "260px",
                 width: "fit-content",
+                transform: "translateZ(0)",
               }}>
               PRIVATE ACCESS
             </Link>

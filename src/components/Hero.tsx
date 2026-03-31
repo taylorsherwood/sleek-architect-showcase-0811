@@ -139,8 +139,10 @@ const Hero = () => {
         title="Austin Texas skyline — Echelon Property Group luxury real estate"
         className="absolute inset-0 w-full h-full object-cover"
         style={{ zIndex: 0 }}
-                    loading="lazy" decoding="async"
-                    />
+        loading="eager"
+        width={1920}
+        height={1080}
+      />
       }
 
       

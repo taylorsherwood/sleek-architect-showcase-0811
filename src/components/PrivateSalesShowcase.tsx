@@ -66,7 +66,7 @@ export const privateSales: PrivateSaleItem[] = [
     address: "Property Address",
     area: "Neighborhood",
     descriptor: "",
-    label: "Off Market",
+    label: "Represented Seller",
   },
 ];
 

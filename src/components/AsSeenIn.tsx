@@ -46,9 +46,9 @@ const AsSeenIn = () => {
                 loading="lazy"
                 decoding="async"
                 sizes="(max-width: 768px) 96px, 160px"
-                className="h-10 md:h-14 w-auto object-contain credibility-logo"
-                width={160}
-                height={56}
+                className="h-16 md:h-24 w-auto object-contain credibility-logo"
+                width={200}
+                height={96}
               />
             </ScrollReveal>
           ))}

@@ -290,7 +290,8 @@ realscout-simple-search {
 
   /* Credibility logos — strong Echelon Gold (#b7a16a) */
   .credibility-logo {
-    filter: brightness(0) invert(1) sepia(1) saturate(2) hue-rotate(3deg) brightness(0.72);
+    filter: brightness(0) invert(1) sepia(1) saturate(3) hue-rotate(3deg) brightness(0.78);
+    opacity: 1 !important;
   }
 
   /* Hero CTA mobile */

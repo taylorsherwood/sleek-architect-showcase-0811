@@ -53,9 +53,9 @@ const ScrollingCredibilityStrip = () => {
               alt={logo.alt}
               loading="lazy"
               decoding="async"
-              className="h-10 md:h-14 w-auto object-contain shrink-0 credibility-logo"
-              width={160}
-              height={56}
+              className="h-20 md:h-28 w-auto object-contain shrink-0 credibility-logo"
+              width={200}
+              height={112}
             />
           ))}
         </div>

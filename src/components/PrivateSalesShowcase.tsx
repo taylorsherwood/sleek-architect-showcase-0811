@@ -1,6 +1,7 @@
 import ScrollReveal from "@/components/ScrollReveal";
 import fm620Image from "@/assets/13505-north-fm-620.jpg";
 import cedarBayouImage from "@/assets/5931-cedar-bayou.jpg";
+import southeastAustinImage from "@/assets/southeast-austin-commercial.webp";
 
 /* ------------------------------------------------------------------ */
 /*  DATA — Edit this array to add / remove / update private sales      */
@@ -17,7 +18,7 @@ export interface PrivateSaleItem {
 
 export const privateSales: PrivateSaleItem[] = [
   {
-    image: "/placeholder.svg",
+    image: southeastAustinImage,
     price: "$4,950,000",
     address: "Address Witheld",
     area: "SOUTHEAST AUSTIN",

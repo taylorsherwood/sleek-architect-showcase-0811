@@ -284,6 +284,8 @@ Austin, Texas 78702
         </div>
       </section>
 
+      <Suspense fallback={<div className="min-h-[100px]" />}><Testimonials /></Suspense>
+
       {/* ── Internal Links ── */}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-6">

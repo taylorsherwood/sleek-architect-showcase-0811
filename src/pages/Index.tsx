@@ -114,7 +114,7 @@ const Hero = () => {
       </div>
 
       {showFallback && !videoReady && (
-        <img src="/images/hero-poster.jpg" alt="Austin Texas skyline" className="absolute inset-0 w-full h-full object-cover" style={{ zIndex: 0 }} loading="eager" />
+        <img src="/images/hero-poster.jpg" alt="Austin Texas skyline" className="absolute inset-0 w-full h-full object-cover" style={{ zIndex: 0 }} loading="eager" width={1920} height={1080} />
       )}
 
       {/* Layered gradient overlay per spec */}

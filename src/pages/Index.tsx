@@ -172,7 +172,7 @@ const Hero = () => {
               EXPLORE LUXURY HOMES
             </Link>
             <Link to="/off-market-real-estate-austin"
-              className="inline-block text-center px-8 py-[14px]"
+              className="inline-block text-center px-8 py-[14px] hover:-translate-y-px hover:opacity-[0.92]"
               style={{
                 fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 400,
                 border: "1px solid rgba(255,255,255,0.38)", color: "rgba(250,248,244,0.95)",

@@ -64,10 +64,10 @@ realscout-simple-search {
     --secondary: 37 15% 95%;         /* #F5F3EF */
     --secondary-foreground: 233 47% 9%;
 
-    --muted: 37 10% 91%;
+    --muted: 37 12% 93%;
     --muted-foreground: 25 4% 42%;   /* #6B6864 */
 
-    --accent: 37 10% 91%;
+    --accent: 37 12% 93%;
     --accent-foreground: 233 47% 9%;
 
     --destructive: 0 84.2% 60.2%;

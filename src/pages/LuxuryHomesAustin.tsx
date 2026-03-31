@@ -120,7 +120,7 @@ const LuxuryHomesAustin = () => {
             </section>
 
             {/* Buyer CTA */}
-            <section className="text-center py-16 bg-muted -mx-6 px-6 rounded-sm">
+            <section className="text-center py-16 bg-secondary -mx-6 px-6 rounded-sm">
               <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-4">
                 Work With an Austin Luxury Realtor
               </h2>

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const AboutBlock = () => {
   return (
-    <section className="py-16 bg-muted">
+    <section className="py-16 bg-secondary">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl font-display font-normal text-architectural mb-6">

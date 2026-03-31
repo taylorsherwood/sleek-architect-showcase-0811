@@ -40,6 +40,7 @@ const PastTransactions = () => {
           </div>
         </div>
       </div>
+      <div className="h-8 md:h-12" />
       <RealScoutListings />
 
       {/* ── Notable Private Sales ── */}

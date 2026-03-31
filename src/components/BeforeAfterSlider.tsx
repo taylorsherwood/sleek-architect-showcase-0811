@@ -201,7 +201,7 @@ const BeforeAfterSlider = ({
 
       {/* Loading skeleton */}
       {!isLoaded && (
-        <div className="absolute inset-0 bg-muted animate-pulse" />
+        <div className="absolute inset-0 bg-secondary animate-pulse" />
       )}
     </div>
   );

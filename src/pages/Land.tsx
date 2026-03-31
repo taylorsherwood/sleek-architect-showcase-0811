@@ -344,7 +344,7 @@ const LandPage = () => {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link
               to="/contact"
-              className="inline-block text-minimal bg-warm-cream text-foreground hover:bg-gold hover:text-primary-foreground px-10 py-4 transition-colors duration-300"
+              className="inline-block text-minimal bg-secondary text-foreground hover:bg-gold hover:text-primary-foreground px-10 py-4 transition-colors duration-300"
             >
               CONTACT TAYLOR SHERWOOD
             </Link>

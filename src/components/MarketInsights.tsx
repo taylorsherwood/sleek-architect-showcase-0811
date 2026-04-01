@@ -61,7 +61,7 @@ const MarketInsights = () => {
             {featuredArticles.map((article, i) => (
               <ScrollReveal key={article.to} delay={i * 80}>
                 <Link to={article.to} className="group block h-full">
-                  <div className="border border-border/40 p-6 h-full flex flex-col hover:border-gold/50 shadow-[var(--shadow-elegant)] hover:shadow-[var(--shadow-architectural)] hover:-translate-y-1 transition-all duration-500">
+                  <div className="border-2 border-border/80 p-6 h-full flex flex-col hover:border-gold shadow-[var(--shadow-elegant)] hover:shadow-[var(--shadow-architectural)] hover:-translate-y-1 transition-all duration-500 bg-[hsl(38_20%_96%/0.35)] dark:bg-[hsl(38_15%_15%/0.2)]">
                     <p className="text-[0.65rem] tracking-[0.2em] uppercase text-gold font-semibold mb-3">
                       {article.category}
                     </p>

@@ -50,14 +50,22 @@ const ExpertiseSection = () => {
           </ScrollReveal>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {expertiseBlocks.map((block, index) => (
+            {expertiseBlocks.map((block, index) => {
+              const isFeatured = index === 0;
+              return (
                 <ScrollReveal key={block.title} delay={index * 100}>
                   <Link
                     to={block.link}
-                    className="group flex flex-col border-2 border-border rounded-lg hover:border-gold transition-colors duration-500 h-full px-6 py-8 md:px-7 md:py-9">
+                    className={`group flex flex-col border-2 hover:border-gold shadow-[var(--shadow-elegant)] hover:shadow-[var(--shadow-architectural)] hover:-translate-y-1 transition-all duration-500 h-full ${
+                      isFeatured
+                        ? "border-border/80 px-6 py-10 md:px-8 md:py-11 bg-[hsl(38_20%_96%/0.35)] dark:bg-[hsl(38_15%_15%/0.2)]"
+                        : "border-border px-6 py-8 md:px-7 md:py-9"
+                    }`}>
                     
-                      <block.icon className="text-gold mb-5 w-7 h-7" />
-                      <h3 className="font-display font-normal text-architectural text-xl mb-2.5 group-hover:text-muted-foreground transition-colors duration-300">
+                      <block.icon className={`text-gold mb-5 ${isFeatured ? "w-8 h-8" : "w-7 h-7"}`} />
+                      <h3 className={`font-display font-normal text-architectural mb-2.5 group-hover:text-muted-foreground transition-colors duration-300 ${
+                        isFeatured ? "text-[1.35rem]" : "text-xl"
+                      }`}>
                         {block.title}
                       </h3>
                       <p className="text-muted-foreground text-[0.875rem] leading-relaxed mb-6 flex-1">
@@ -68,7 +76,8 @@ const ExpertiseSection = () => {
                       </span>
                     </Link>
                 </ScrollReveal>
-              ))}
+              );
+            })}
           </div>
         </div>
       </div>

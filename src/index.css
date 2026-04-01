@@ -443,7 +443,7 @@ realscout-simple-search {
   }
   @media (max-width: 768px) {
     .parallax-break {
-      height: 400px;
+      height: 260px;
       background-attachment: scroll;
     }
   }

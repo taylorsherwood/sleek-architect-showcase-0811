@@ -56,10 +56,8 @@ const ExpertiseSection = () => {
                     to={block.link}
                     className="group flex flex-col border-2 border-border rounded-lg hover:border-gold transition-colors duration-500 h-full px-6 py-8 md:px-7 md:py-9">
                     
-                      <block.icon className={`text-gold mb-5 ${isFeatured ? "w-8 h-8" : "w-7 h-7"}`} />
-                      <h3 className={`font-display font-normal text-architectural mb-2.5 group-hover:text-muted-foreground transition-colors duration-300 ${
-                        isFeatured ? "text-[1.35rem]" : "text-xl"
-                      }`}>
+                      <block.icon className="text-gold mb-5 w-7 h-7" />
+                      <h3 className="font-display font-normal text-architectural text-xl mb-2.5 group-hover:text-muted-foreground transition-colors duration-300">
                         {block.title}
                       </h3>
                       <p className="text-muted-foreground text-[0.875rem] leading-relaxed mb-6 flex-1">
@@ -70,8 +68,7 @@ const ExpertiseSection = () => {
                       </span>
                     </Link>
                 </ScrollReveal>
-              );
-            })}
+              ))}
           </div>
         </div>
       </div>

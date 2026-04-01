@@ -49,32 +49,32 @@ realscout-simple-search {
     --gold-deep: 41 30% 40%;         /* #857548 */
     --gold-highlight: 41 35% 68%;    /* #C5B88E */
 
-    --background: 37 15% 95%;        /* #F5F3EF */
+    --background: 34 27% 95%;        /* #F7F4EF */
     --foreground: 233 47% 9%;           /* #0C0F24 */
 
-    --card: 37 15% 95%;              /* #F5F3EF */
+    --card: 34 27% 95%;              /* #F7F4EF */
     --card-foreground: 233 47% 9%;
 
-    --popover: 37 15% 95%;           /* #F5F3EF */
+    --popover: 34 27% 95%;           /* #F7F4EF */
     --popover-foreground: 233 47% 9%;
 
     --primary: 233 47% 9%;              /* #0C0F24 */
-    --primary-foreground: 37 15% 95%; /* #F5F3EF — unified */
+    --primary-foreground: 34 27% 95%; /* #F7F4EF */
 
-    --secondary: 37 15% 95%;         /* #F5F3EF */
+    --secondary: 34 27% 95%;         /* #F7F4EF */
     --secondary-foreground: 233 47% 9%;
 
-    --muted: 37 15% 95%;             /* #F5F3EF */
+    --muted: 30 28% 92%;             /* #F2ECE4 — deeper ivory for contrast layers */
     --muted-foreground: 25 4% 42%;   /* #6B6864 */
 
-    --accent: 37 15% 95%;            /* #F5F3EF */
+    --accent: 29 30% 90%;            /* #EFE7DC — soft warm contrast */
     --accent-foreground: 233 47% 9%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 37 8% 88%;
-    --input: 37 15% 95%;             /* #F5F3EF */
+    --border: 30 18% 86%;
+    --input: 34 27% 95%;             /* #F7F4EF */
     --ring: 233 47% 9%;
 
     --radius: 0.25rem;

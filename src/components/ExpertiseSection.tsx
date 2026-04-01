@@ -50,9 +50,7 @@ const ExpertiseSection = () => {
           </ScrollReveal>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {expertiseBlocks.map((block, index) => {
-              const isFeatured = index === 0;
-              return (
+            {expertiseBlocks.map((block, index) => (
                 <ScrollReveal key={block.title} delay={index * 100}>
                   <Link
                     to={block.link}

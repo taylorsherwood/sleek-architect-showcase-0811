@@ -421,7 +421,7 @@ realscout-simple-search {
 
   /* ── Parallax break panels ── */
   .parallax-break {
-    height: 500px;
+    height: 340px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -443,7 +443,7 @@ realscout-simple-search {
   }
   @media (max-width: 768px) {
     .parallax-break {
-      height: 400px;
+      height: 260px;
       background-attachment: scroll;
     }
   }

@@ -79,22 +79,22 @@ realscout-simple-search {
 
     --radius: 0.25rem;
 
-    --warm-cream: 37 15% 95%;        /* #F5F3EF — unified */
+    --warm-cream: 34 27% 95%;        /* #F7F4EF */
 
     --black-soft: 233 52% 7%;           /* #080B1A */
     --black-card: 233 45% 13%;          /* #12162E */
-    --white-warm: 37 15% 95%;        /* #F5F3EF — unified */
+    --white-warm: 34 27% 95%;        /* #F7F4EF */
     --gray-mid: 30 3% 59%;           /* #9A9690 */
     --gray-dark: 30 3% 28%;          /* #4A4844 */
     --text-secondary: 25 4% 42%;     /* #6B6864 */
 
-    --sidebar-background: 37 15% 95%; /* #F5F3EF — unified */
+    --sidebar-background: 34 27% 95%; /* #F7F4EF */
     --sidebar-foreground: 233 47% 9%;
     --sidebar-primary: 233 47% 9%;
-    --sidebar-primary-foreground: 37 15% 95%; /* #F5F3EF — unified */
-    --sidebar-accent: 37 15% 95%;
+    --sidebar-primary-foreground: 34 27% 95%; /* #F7F4EF */
+    --sidebar-accent: 34 27% 95%;
     --sidebar-accent-foreground: 233 47% 9%;
-    --sidebar-border: 37 8% 88%;
+    --sidebar-border: 30 18% 86%;
     --sidebar-ring: 233 47% 9%;
 
     --gradient-hero: none;

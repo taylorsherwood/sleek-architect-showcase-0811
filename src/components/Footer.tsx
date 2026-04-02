@@ -45,8 +45,10 @@ const Footer = () => {
               <h4 style={footerHeadingStyle}>NAVIGATION</h4>
               <div className="space-y-0">
                 {[
+                  { to: "/about", label: "About" },
                   { to: "/buy", label: "Buy" },
                   { to: "/sell", label: "Sell" },
+                  { to: "/listings", label: "Listings" },
                   { to: "/communities", label: "Communities" },
                   { to: "/blog", label: "Insights" },
                   { to: "/invest", label: "Private Access" },

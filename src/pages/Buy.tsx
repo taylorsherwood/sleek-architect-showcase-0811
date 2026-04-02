@@ -100,7 +100,7 @@ const featuredListings = [
   beds: 4,
   baths: 4,
   sqft: "4,147",
-  link: "https://www.villagovernorshill.com",
+  link: "https://www.bartoncreekvilla.com",
   badge: "Private Listing"
 },
 {

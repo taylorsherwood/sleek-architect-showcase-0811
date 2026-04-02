@@ -104,7 +104,7 @@ const FloatingContact = () => {
             src={HEADSHOT_LAUNCHER}
             alt="Taylor Sherwood, Austin luxury real estate advisor"
             title="Contact Taylor Sherwood — Austin luxury real estate advisor"
-            className="w-full h-full object-cover object-[50%_30%] scale-[1.05]"
+            className="w-full h-full object-cover object-[50%_15%] scale-[1.35]"
             loading="lazy" decoding="async"
           />
         </div>
@@ -136,7 +136,7 @@ const FloatingContact = () => {
                 src={HEADSHOT}
                 alt="Taylor Sherwood, founder of Echelon Property Group"
                 title="Taylor Sherwood — Echelon Property Group"
-                className="w-full h-full object-cover object-[50%_20%] scale-[1.03]"
+                className="w-full h-full object-cover object-[50%_15%] scale-[1.35]"
                     loading="lazy" decoding="async"
                     />
             </div>

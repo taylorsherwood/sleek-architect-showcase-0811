@@ -244,23 +244,14 @@ const Contact = () => {
 
       <Suspense fallback={<div className="min-h-[100px]" />}><Testimonials /></Suspense>
 
-      {/* ── Internal Links ── */}
-      <section className="py-16 bg-background">
+      {/* ── Explore More ── */}
+      <section className="py-20 bg-background">
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-display font-normal text-architectural mb-6">
-              Explore Austin Real Estate
-            </h2>
-            <div className="grid sm:grid-cols-2 gap-4">
-              <Link to="/about" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ ABOUT ECHELON</Link>
-              <Link to="/listings" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ CURRENT LISTINGS</Link>
-              <Link to="/blog" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ BLOG & MARKET INSIGHTS</Link>
-              <Link to="/buy" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ BUYER SERVICES</Link>
-              <Link to="/sell" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ SELLER SERVICES</Link>
-              <Link to="/off-market-real-estate-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ OFF-MARKET OPPORTUNITIES</Link>
-              <Link to="/invest" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ INVESTMENT ADVISORY</Link>
-              <Link to="/communities" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ AUSTIN COMMUNITIES</Link>
-            </div>
+          <div className="max-w-3xl mx-auto text-center">
+            <p className="text-xs tracking-[0.2em] uppercase text-gold mb-6">Explore More</p>
+            <p className="text-muted-foreground leading-[2] text-[15px]">
+              <Link to="/about" className="text-foreground hover:text-gold transition-colors duration-300 underline underline-offset-4 decoration-border">Learn more about our approach</Link> to luxury real estate in Austin, <Link to="/listings" className="text-foreground hover:text-gold transition-colors duration-300 underline underline-offset-4 decoration-border">explore available homes and investment opportunities</Link>, or <Link to="/blog" className="text-foreground hover:text-gold transition-colors duration-300 underline underline-offset-4 decoration-border">read our latest market insights</Link> for expert analysis and neighborhood guides.
+            </p>
           </div>
         </div>
       </section>

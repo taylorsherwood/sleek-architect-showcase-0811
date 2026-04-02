@@ -333,25 +333,14 @@ const Listings = () => {
       {/* Find Your Next Chapter search block */}
       <Suspense fallback={<div className="min-h-[200px]" />}><RealScoutSearch /></Suspense>
 
-      {/* ── Internal Links ── */}
-      <section className="py-16 bg-background">
+      {/* ── Explore More ── */}
+      <section className="py-20 bg-background">
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-display font-normal text-architectural mb-6">
-              Explore More
-            </h2>
-            <div className="grid sm:grid-cols-2 gap-4">
-              <Link to="/about" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ ABOUT ECHELON</Link>
-              <Link to="/contact" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ CONTACT US</Link>
-              <Link to="/communities" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ AUSTIN COMMUNITIES</Link>
-              <Link to="/blog" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ BLOG & INSIGHTS</Link>
-              <Link to="/buy" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ BUYER SERVICES</Link>
-              <Link to="/sell" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ SELLER SERVICES</Link>
-              <Link to="/off-market-real-estate-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ OFF-MARKET OPPORTUNITIES</Link>
-              <Link to="/invest" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ INVESTMENT ADVISORY</Link>
-              <Link to="/land" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ LAND & INVESTMENT PROPERTY</Link>
-              <Link to="/search" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ SEARCH ALL AUSTIN HOMES</Link>
-            </div>
+          <div className="max-w-3xl mx-auto text-center">
+            <p className="text-xs tracking-[0.2em] uppercase text-gold mb-6">Explore More</p>
+            <p className="text-muted-foreground leading-[2] text-[15px]">
+              <Link to="/communities" className="text-foreground hover:text-gold transition-colors duration-300 underline underline-offset-4 decoration-border">Discover Austin neighborhoods</Link> to find the community that fits your lifestyle, <Link to="/about" className="text-foreground hover:text-gold transition-colors duration-300 underline underline-offset-4 decoration-border">learn more about our approach</Link> to luxury real estate advisory, or <Link to="/contact" className="text-foreground hover:text-gold transition-colors duration-300 underline underline-offset-4 decoration-border">connect with our team</Link> to discuss your search.
+            </p>
           </div>
         </div>
       </section>

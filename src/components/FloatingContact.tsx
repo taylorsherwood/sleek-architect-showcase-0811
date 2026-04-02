@@ -2,9 +2,10 @@ import { useState, useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import { X, Phone, Mail } from "lucide-react";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
+import taylorHeadshot from "@/assets/taylor-headshot-widget.jpeg";
 
-const HEADSHOT = "/lovable-uploads/taylor-headshot-widget.jpg";
-const HEADSHOT_LAUNCHER = "/lovable-uploads/taylor-headshot-widget-2.jpg";
+const HEADSHOT = taylorHeadshot;
+const HEADSHOT_LAUNCHER = taylorHeadshot;
 
 const SESSION_KEY = "echelon_advisory_bar_dismissed";
 

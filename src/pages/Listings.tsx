@@ -113,8 +113,8 @@ const Listings = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Luxury Listings in Austin TX | Echelon Property Group"
-        description="Current luxury listings in Austin TX. Homes for sale, investment properties, estate homes, and land opportunities across Austin's premier neighborhoods."
+        title="Listings | Echelon Property Group"
+        description="Explore Listings with Echelon Property Group. View homes, market insights, and real estate opportunities in Austin, Texas."
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createBreadcrumbSchema([
@@ -137,21 +137,27 @@ const Listings = () => {
 
       <div className="py-8 bg-background" />
 
+      {/* Hero + Intro */}
       <section className="pt-32 pb-16">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
-            <p className="text-minimal text-gold mb-4 font-extrabold">{"\n\n\n\n"}FEATURED LISTINGS</p>
+            <p className="text-minimal text-gold mb-4 font-extrabold">FEATURED LISTINGS</p>
             <h1 className="text-5xl md:text-7xl font-display font-normal text-architectural mb-8">
-              Current Properties
+              Austin Luxury Homes
+              <br />
+              and Opportunities
             </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl">
-              Each listing features a dedicated property website with professional photography, 
-              video tours, and comprehensive details. Click any property to explore.
+            <p className="text-xl text-muted-foreground max-w-3xl mb-6">
+              Every property represented by Echelon Property Group reflects our commitment to quality, strategic positioning, and exceptional presentation. From luxury residences in Barton Creek and Westlake Hills to commercial investment opportunities across Central Texas, our portfolio is curated for discerning buyers and investors.
+            </p>
+            <p className="text-lg text-muted-foreground max-w-3xl">
+              Beyond what appears on public listing portals, our team maintains access to exclusive off-market inventory through established relationships with Austin's top agents, developers, and property owners. If you don't see what you're looking for here, <Link to="/contact" className="text-foreground hover:text-gold transition-colors duration-300 underline underline-offset-4">connect with our team</Link> — the right opportunity may already be within reach.
             </p>
           </div>
         </div>
       </section>
 
+      {/* Featured Listings */}
       <section className="pb-28">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto space-y-20">
@@ -218,6 +224,44 @@ const Listings = () => {
           subheading={"\n"}
         />
       </Suspense>
+
+      {/* Beyond What You See Online */}
+      <section className="py-20 bg-secondary">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-display font-normal text-architectural mb-8">
+              Beyond What You See Online
+            </h2>
+            <div className="space-y-6 text-muted-foreground leading-relaxed">
+              <p>
+                The most compelling properties in Austin's luxury market frequently trade before they ever appear on public listing portals. Echelon Property Group maintains access to a robust pipeline of off-market opportunities — estate homes, development parcels, and investment properties that are available exclusively through agent networks and private channels.
+              </p>
+              <p>
+                Our relationships with Austin's leading luxury agents, developers, and institutional investors give our clients a meaningful advantage. Whether you are searching for a waterfront estate, a Hill Country ranch, or a value-add multifamily asset, we proactively source opportunities that align with your criteria and investment thesis. <Link to="/about" className="text-foreground hover:text-gold transition-colors duration-300 underline underline-offset-4">Learn more about our approach</Link> to client representation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Explore Austin Neighborhoods */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-display font-normal text-architectural mb-8">
+              Explore Austin Neighborhoods
+            </h2>
+            <div className="space-y-6 text-muted-foreground leading-relaxed">
+              <p>
+                Austin's luxury landscape is shaped by its neighborhoods — each offering a distinct lifestyle, architectural character, and investment profile. From the gated estates of Barton Creek and Spanish Oaks to the tree-lined streets of Tarrytown and the waterfront retreats along Lake Austin, understanding the nuances of each community is essential to making a confident purchase decision.
+              </p>
+              <p>
+                Echelon Property Group provides hyperlocal expertise across every premier Austin neighborhood. <Link to="/communities" className="text-foreground hover:text-gold transition-colors duration-300 underline underline-offset-4">Explore our community guides</Link> for detailed insights on schools, amenities, market trends, and available inventory in the areas that matter most.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Commercial & Investment Listings */}
       <section className="py-16 md:py-24 bg-background border-t border-border">
@@ -297,18 +341,16 @@ const Listings = () => {
               Explore More
             </h2>
             <div className="grid sm:grid-cols-2 gap-4">
+              <Link to="/about" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ ABOUT ECHELON</Link>
+              <Link to="/contact" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ CONTACT US</Link>
+              <Link to="/communities" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ AUSTIN COMMUNITIES</Link>
+              <Link to="/blog" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ BLOG & INSIGHTS</Link>
               <Link to="/buy" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ BUYER SERVICES</Link>
               <Link to="/sell" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ SELLER SERVICES</Link>
               <Link to="/off-market-real-estate-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ OFF-MARKET OPPORTUNITIES</Link>
               <Link to="/invest" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ INVESTMENT ADVISORY</Link>
-              <Link to="/communities" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ AUSTIN COMMUNITIES</Link>
               <Link to="/land" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ LAND & INVESTMENT PROPERTY</Link>
               <Link to="/search" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ SEARCH ALL AUSTIN HOMES</Link>
-              <Link to="/home-value-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ FREE HOME VALUATION</Link>
-              <Link to="/listings/commercial-investment-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ COMMERCIAL & INVESTMENT</Link>
-              <Link to="/private-opportunities" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ PRIVATE OPPORTUNITIES</Link>
-              <Link to="/blog" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ BLOG & MARKET INSIGHTS</Link>
-              <Link to="/best-neighborhoods-in-austin-texas" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ BEST NEIGHBORHOODS IN AUSTIN</Link>
             </div>
           </div>
         </div>

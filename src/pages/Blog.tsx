@@ -22,8 +22,8 @@ const Blog = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Austin Luxury Real Estate Blog | Echelon Property Group"
-        description="Expert insights on Austin luxury real estate including market trends, neighborhood guides, investment strategies, and buying and selling advice."
+        title="Blog | Echelon Property Group"
+        description="Explore Blog with Echelon Property Group. View homes, market insights, and real estate opportunities in Austin, Texas."
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createBreadcrumbSchema([
@@ -40,16 +40,18 @@ const Blog = () => {
       <div className="h-12 md:h-20" />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20">
+      <section className="pt-32 pb-12">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
-            <div className="mb-12">
-              <h1 className="text-6xl md:text-8xl font-light text-architectural mb-8">
-                INSIGHTS
+            <div className="mb-8">
+              <h1 className="text-5xl md:text-7xl font-display font-normal text-architectural mb-8">
+                Austin Real Estate Insights
               </h1>
-              <p className="text-xl text-muted-foreground max-w-3xl">
-                Expert analysis of Austin's luxury real estate market, neighborhood guides, 
-                investment strategies, and lifestyle insights from Echelon Property Group.
+              <p className="text-xl text-muted-foreground max-w-3xl mb-6">
+                Your trusted resource for expert analysis of Austin's luxury real estate market. Whether you are a buyer evaluating neighborhoods, a seller preparing for market, or an investor assessing opportunities, our insights are grounded in real transaction experience and hyperlocal knowledge.
+              </p>
+              <p className="text-lg text-muted-foreground max-w-3xl">
+                Explore in-depth articles on market trends, neighborhood guides, investment strategies, and lifestyle insights — written and reviewed by <Link to="/about" className="text-foreground hover:text-gold transition-colors duration-300 underline underline-offset-4">Taylor Sherwood</Link>, Certified Luxury Home Marketing Specialist and founder of Echelon Property Group. Have a question about Austin real estate? <Link to="/contact" className="text-foreground hover:text-gold transition-colors duration-300 underline underline-offset-4">Reach out to our team</Link> or <Link to="/listings" className="text-foreground hover:text-gold transition-colors duration-300 underline underline-offset-4">browse current listings</Link>.
               </p>
             </div>
           </div>
@@ -170,19 +172,6 @@ const Blog = () => {
               <p>
                 Every article is written or reviewed by Taylor Sherwood, a Certified Luxury Home Marketing Specialist and founder of Echelon Property Group. With deep experience across residential, commercial, land, and investment real estate in Austin, Taylor brings a practitioner's perspective that goes beyond surface-level commentary. Our insights are grounded in real transaction experience and hyperlocal market knowledge.
               </p>
-              <p>
-                As an Austin luxury realtor and real estate agent specializing in the city's most prestigious addresses, Taylor works daily with buyers, sellers, and investors navigating complex transactions. That hands-on experience informs every piece of content we publish — ensuring our readers receive practical, actionable guidance rather than generic market summaries.
-              </p>
-
-              <h3 className="text-2xl font-display font-normal text-architectural pt-4">
-                Neighborhoods We Serve
-              </h3>
-              <p>
-                Our coverage spans Austin's full luxury landscape: Westlake Hills, Barton Creek, Lake Austin waterfront, Tarrytown, Rollingwood, Travis Heights, Downtown Austin, Dripping Springs, Spanish Oaks, Cat Mountain, and the greater Texas Hill Country. Each community has its own market dynamics, and our articles provide the neighborhood-level detail that national publications simply cannot match.
-              </p>
-              <p>
-                Whether you're exploring luxury homes in Austin, evaluating commercial investment properties, or researching land for sale across Central Texas, our blog is designed to be the most comprehensive and authoritative resource available. Subscribe to stay informed on the latest developments in Austin luxury real estate.
-              </p>
             </div>
           </div>
         </div>
@@ -206,6 +195,27 @@ const Blog = () => {
             >
               SUBSCRIBE
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Internal Links ── */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl font-display font-normal text-architectural mb-6">
+              Explore Austin Real Estate
+            </h2>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <Link to="/about" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ ABOUT ECHELON</Link>
+              <Link to="/contact" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ CONTACT US</Link>
+              <Link to="/listings" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ CURRENT LISTINGS</Link>
+              <Link to="/communities" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ AUSTIN COMMUNITIES</Link>
+              <Link to="/buy" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ BUYER SERVICES</Link>
+              <Link to="/sell" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ SELLER SERVICES</Link>
+              <Link to="/invest" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ INVESTMENT ADVISORY</Link>
+              <Link to="/off-market-real-estate-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ OFF-MARKET OPPORTUNITIES</Link>
+            </div>
           </div>
         </div>
       </section>

@@ -104,7 +104,7 @@ const FloatingContact = () => {
             src={HEADSHOT_LAUNCHER}
             alt="Taylor Sherwood, Austin luxury real estate advisor"
             title="Contact Taylor Sherwood — Austin luxury real estate advisor"
-            className="w-full h-full object-cover object-[50%_30%] scale-[1.05]"
+            className="w-full h-full object-cover object-[50%_15%] scale-[1.35]"
             loading="lazy" decoding="async"
           />
         </div>

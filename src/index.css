@@ -247,38 +247,40 @@ realscout-simple-search {
     filter: saturate(1.04) contrast(1.01) brightness(1.08) hue-rotate(-4deg);
   }
 
-  /* Hero CTA — fully static, zero animation, !important overrides everything */
+  /* Hero CTA — frosted glass fill */
   .hero-cta-gold,
-  .hero-cta-gold:hover,
-  .hero-cta-gold:focus,
-  .hero-cta-light,
-  .hero-cta-light:hover,
-  .hero-cta-light:focus {
-    transition: none !important;
+  .hero-cta-light {
     animation: none !important;
     transform: none !important;
-    background: transparent !important;
     background-image: none !important;
     box-shadow: none !important;
     filter: none !important;
-    backdrop-filter: none !important;
     text-decoration: none !important;
+    backdrop-filter: blur(12px) saturate(1.4) !important;
+    -webkit-backdrop-filter: blur(12px) saturate(1.4) !important;
+    transition: background 0.3s ease, border-color 0.3s ease !important;
   }
-  .hero-cta-gold,
-  .hero-cta-gold:hover,
-  .hero-cta-gold:focus {
+  .hero-cta-gold {
+    background: rgba(194, 164, 107, 0.15) !important;
     border: 1px solid hsl(var(--gold)) !important;
     color: hsl(var(--gold)) !important;
   }
-  .hero-cta-light,
+  .hero-cta-gold:hover,
+  .hero-cta-gold:focus {
+    background: rgba(194, 164, 107, 0.28) !important;
+    border: 1px solid hsl(var(--gold)) !important;
+    color: hsl(var(--gold)) !important;
+  }
+  .hero-cta-light {
+    background: rgba(245, 243, 239, 0.1) !important;
+    border: 1px solid rgba(245, 243, 239, 0.35) !important;
+    color: rgba(245, 243, 239, 1) !important;
+  }
   .hero-cta-light:hover,
   .hero-cta-light:focus {
-    border: 1px solid rgba(245, 243, 239, 0.35) !important;
-    color: rgba(245, 243, 239, 0.82) !important;
-  }
-  .hero-cta-gold:hover,
-  .hero-cta-light:hover {
-    opacity: 0.7;
+    background: rgba(245, 243, 239, 0.2) !important;
+    border: 1px solid rgba(245, 243, 239, 0.5) !important;
+    color: rgba(245, 243, 239, 1) !important;
   }
 
   /* Hero overlay — minimal neutral gradient for text readability only */

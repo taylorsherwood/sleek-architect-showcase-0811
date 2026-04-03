@@ -652,6 +652,11 @@ const testimonials = [
     name: "Alexandra Morgan",
     context: "Purchased in Spanish Oaks",
   },
+  {
+    quote: "The level of service and communication was exceptional. Taylor operates with a level of professionalism you rarely see in this industry.",
+    name: "Priya Shah",
+    context: "Purchased in Tarrytown",
+  },
 ];
 
 const TestimonialsSection = () => {

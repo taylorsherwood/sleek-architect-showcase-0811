@@ -69,7 +69,19 @@ const Testimonials = () => {
 
   return (
     <section className="relative pt-16 md:pt-20 pb-20 md:pb-24 bg-background overflow-hidden">
-      <div className="container mx-auto px-6">
+      {/* Watermark */}
+      <div
+        className="absolute inset-0 flex items-center justify-center pointer-events-none"
+        aria-hidden="true"
+      >
+        <img
+          src={echelonWatermark}
+          alt=""
+          className="w-[420px] md:w-[520px] opacity-[0.04]"
+          style={{ filter: "grayscale(20%)" }}
+        />
+      </div>
+      <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-[60rem] mx-auto">
           {/* Header */}
           <div className="text-center mb-10">

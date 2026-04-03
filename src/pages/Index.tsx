@@ -656,19 +656,45 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   const [active, setActive] = useState(0);
+  const sectionRef = useRef<HTMLElement>(null);
+  const watermarkRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const timer = setInterval(() => setActive((p) => (p + 1) % testimonials.length), 5500);
     return () => clearInterval(timer);
   }, []);
 
+  useEffect(() => {
+    let ticking = false;
+    const onScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        if (!sectionRef.current || !watermarkRef.current) { ticking = false; return; }
+        const rect = sectionRef.current.getBoundingClientRect();
+        const vh = window.innerHeight;
+        // progress: 0 when section enters bottom, 1 when it exits top
+        const progress = 1 - (rect.bottom / (vh + rect.height));
+        const clamped = Math.max(0, Math.min(1, progress));
+        // subtle drift: ~18px vertical, ~6px horizontal
+        const y = (clamped - 0.5) * 18;
+        const x = (clamped - 0.5) * -6;
+        watermarkRef.current.style.transform = `translate(calc(-6% + ${x}px), calc(4% + ${y}px))`;
+        ticking = false;
+      });
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   const t = testimonials[active];
 
   return (
-    <section className="bg-secondary relative overflow-hidden" style={{ padding: "clamp(64px, 10vw, 120px) 0" }}>
+    <section ref={sectionRef} className="bg-secondary relative overflow-hidden" style={{ padding: "clamp(64px, 10vw, 120px) 0" }}>
       {/* Watermark */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none" aria-hidden="true"
-        style={{ transform: "translate(-6%, 4%)" }}>
+      <div ref={watermarkRef} className="absolute inset-0 flex items-center justify-center pointer-events-none" aria-hidden="true"
+        style={{ transform: "translate(-6%, 4%)", transition: "transform 0.15s linear", willChange: "transform" }}>
         <div style={{
           width: "600px",
           maxWidth: "90vw",

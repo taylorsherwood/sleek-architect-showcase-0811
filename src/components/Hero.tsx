@@ -105,12 +105,9 @@ const Hero = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [videoSrc]);
 
-  // Subtle parallax: video scrolls at 40% speed of content
-  const videoParallaxY = scrollProgress * 0.4 * window.innerHeight * 0.15;
-
   return (
     <section ref={sectionRef} id="hero-section" className="relative h-screen flex items-center overflow-hidden bg-[hsl(var(--black-soft))]">
-      {/* ── VIDEO LAYER — subtle parallax ── */}
+      {/* ── VIDEO LAYER ── */}
       <div
         aria-hidden="true"
         className="absolute inset-0 pointer-events-none select-none overflow-hidden"
@@ -124,7 +121,6 @@ const Hero = () => {
           preload="none"
           poster="/images/hero-poster.jpg"
           className={`hero-bg-video ${videoReady ? "opacity-100" : "opacity-0"}`}
-          style={{ transform: `translateY(${videoParallaxY}px) scale(1.06)` }}
           width={1920}
           height={1080}
           tabIndex={-1}>

@@ -1,5 +1,4 @@
 import { useState, useRef, useEffect } from "react";
-import { useHeroScroll } from "@/hooks/useHeroScroll";
 
 const FALLBACK_TIMEOUT = 4000;
 const RETRY_DELAY = 800;
@@ -11,7 +10,6 @@ const Hero = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [heroVisible, setHeroVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
-  const scrollProgress = useHeroScroll();
 
   // Re-trigger text animation when hero scrolls back into view
   useEffect(() => {
@@ -60,7 +58,7 @@ const Hero = () => {
       const p = video.play();
       if (p !== undefined) {
         p.then(() => {
-          video.playbackRate = 0.85;
+          video.playbackRate = 0.92;
           setVideoReady(true);
           setShowFallback(false);
         }).catch(() => {
@@ -71,7 +69,7 @@ const Hero = () => {
             if (retry !== undefined) {
               retry.
               then(() => {
-                video.playbackRate = 0.85;
+                video.playbackRate = 0.92;
                 setVideoReady(true);
                 setShowFallback(false);
               }).
@@ -105,12 +103,9 @@ const Hero = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [videoSrc]);
 
-  // Subtle parallax: video scrolls at 40% speed of content
-  const videoParallaxY = scrollProgress * 0.4 * window.innerHeight * 0.15;
-
   return (
     <section ref={sectionRef} id="hero-section" className="relative h-screen flex items-center overflow-hidden bg-[hsl(var(--black-soft))]">
-      {/* ── VIDEO LAYER — subtle parallax ── */}
+      {/* ── VIDEO LAYER ── */}
       <div
         aria-hidden="true"
         className="absolute inset-0 pointer-events-none select-none overflow-hidden"
@@ -124,7 +119,6 @@ const Hero = () => {
           preload="none"
           poster="/images/hero-poster.jpg"
           className={`hero-bg-video ${videoReady ? "opacity-100" : "opacity-0"}`}
-          style={{ transform: `translateY(${videoParallaxY}px) scale(1.06)` }}
           width={1920}
           height={1080}
           tabIndex={-1}>
@@ -139,7 +133,7 @@ const Hero = () => {
         alt="Austin Texas skyline at sunset with downtown high-rises and Hill Country backdrop"
         title="Austin Texas skyline — Echelon Property Group luxury real estate"
         className="absolute inset-0 w-full h-full object-cover"
-        style={{ zIndex: 0, transform: `translateY(${videoParallaxY}px) scale(1.06)` }}
+        style={{ zIndex: 0 }}
         loading="eager"
         width={1920}
         height={1080}
@@ -260,9 +254,6 @@ const Hero = () => {
                 minWidth: "200px",
                 maxWidth: "260px",
                 width: "fit-content",
-                /* Micro-parallax: primary CTA drifts very slightly slower than surrounding text */
-                transform: `translateY(${scrollProgress * -2.5}px)`,
-                transition: "transform 0.12s ease-out",
               }}>
               EXPLORE OPPORTUNITIES
             </a>

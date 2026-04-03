@@ -333,7 +333,7 @@ const AdvisorSection = () => (
                    <br /><br />
                    <span className="font-bold">Let's get to work,</span>
                 </p>
-               <div className="!mt-0 !pt-0 mb-2"><img src={taylorSignature} alt="Taylor Sherwood signature" className="block h-[160px] opacity-80 -translate-y-4" /></div>
+               <div className="!mt-0 !pt-0 -mb-4"><img src={taylorSignature} alt="Taylor Sherwood signature" className="block h-[160px] opacity-80 -translate-y-4" /></div>
             </div>
 
             {/* Credential badges */}

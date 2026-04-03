@@ -271,7 +271,7 @@ const AdvisorSection = () => (
          {/* Left — editorial portrait */}
          <div className="flex items-center justify-center bg-background w-full lg:h-full" style={{ padding: "clamp(16px, 2vw, 32px)" }}>
            <img
-             src={taylorAboutHeadshot}
+             src={taylorBoatImg}
              alt="Taylor Sherwood — Austin luxury real estate advisor and founder of Echelon Property Group"
              title="Taylor Sherwood, Echelon Property Group"
              className="w-full max-h-[560px] md:max-h-[620px] lg:max-h-[700px] object-cover object-[30%_center] rounded-sm"

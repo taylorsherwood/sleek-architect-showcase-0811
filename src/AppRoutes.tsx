@@ -42,6 +42,7 @@ const PrivateOpportunitiesPage = lazy(() => import("@/pages/PrivateOpportunities
 const LuxuryHomesAustin = lazy(() => import("@/pages/LuxuryHomesAustin"));
 const BillionaireMigration = lazy(() => import("@/pages/BillionaireMigration"));
 const OffMarketDealsAustin = lazy(() => import("@/pages/OffMarketDealsAustin"));
+const AustinLuxuryMarketTrends = lazy(() => import("@/pages/AustinLuxuryMarketTrends"));
 const OffMarketRealEstateAustin = lazy(() => import("@/pages/OffMarketRealEstateAustin"));
 const AustinLandDevelopmentOpportunities = lazy(() => import("@/pages/AustinLandDevelopmentOpportunities"));
 const AustinLuxuryRealEstateMarketReport = lazy(() => import("@/pages/AustinLuxuryRealEstateMarketReport"));
@@ -99,6 +100,7 @@ const AppRoutes = () => {
           <Route path="/luxury-homes-austin" element={<Navigate to="/austin-luxury-homes-for-sale" replace />} />
           <Route path="/why-billionaires-are-moving-to-austin" element={<BillionaireMigration />} />
           <Route path="/blog/how-to-find-off-market-real-estate-deals-austin-2026" element={<OffMarketDealsAustin />} />
+          <Route path="/blog/austin-luxury-market-trends" element={<AustinLuxuryMarketTrends />} />
           <Route path="/invest" element={<Invest />} />
           <Route path="/private" element={<Navigate to="/off-market-real-estate-austin" replace />} />
           <Route path="/off-market-real-estate-austin" element={<OffMarketRealEstateAustin />} />

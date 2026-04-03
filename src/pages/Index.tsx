@@ -742,8 +742,9 @@ const TestimonialsSection = () => {
           {/* Quote with em dash delimiters */}
           <div style={{ minHeight: "160px", display: "flex", alignItems: "center", justifyContent: "center" }}>
             <p key={active} className="mb-6" style={{
-              fontFamily: '"Cinzel", serif', fontWeight: 400,
-              fontSize: "clamp(16px, 2vw, 24px)", lineHeight: 1.55, color: "hsl(var(--foreground))",
+              fontFamily: '"Jost", sans-serif', fontWeight: 300,
+              fontSize: "clamp(16px, 2vw, 22px)", lineHeight: 1.7, letterSpacing: "0.01em",
+              color: "hsl(var(--foreground) / 0.8)",
               animation: "fadeUp 0.6s ease both",
             }}>
               <span style={{ color: "hsl(38 39% 61%)", marginRight: "0.15em" }}>&ldquo;</span>

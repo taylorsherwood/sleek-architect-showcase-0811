@@ -733,7 +733,10 @@ const TestimonialsSection = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-[800px] mx-auto text-center relative" style={{ minHeight: "320px" }}>
           <ScrollReveal>
-            <p className="text-minimal text-gold mb-8">CLIENT EXPERIENCES</p>
+            <p className="text-minimal text-gold mb-4">CLIENT EXPERIENCES</p>
+            <h2 className="font-display text-2xl md:text-[2.2rem] font-normal text-foreground leading-[1.15] tracking-[0.02em] mb-8">
+              Discreet Representation. <span className="italic">Proven Results.</span>
+            </h2>
           </ScrollReveal>
 
           {/* Quote with em dash delimiters */}

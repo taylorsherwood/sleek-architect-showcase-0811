@@ -460,15 +460,14 @@ realscout-simple-search {
 
   /* ── Parallax break panels ── */
   .parallax-break {
-    height: 400px;
+    height: 380px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     overflow: hidden;
   }
-  /* Use background-attachment: fixed only on non-touch devices.
-     iOS/iPadOS Safari doesn't support it properly — causes blur + heavy crop. */
+  /* Use background-attachment: fixed only on non-touch devices. */
   @supports not (-webkit-touch-callout: none) {
     .parallax-break {
       background-attachment: fixed;
@@ -482,9 +481,49 @@ realscout-simple-search {
   }
   @media (max-width: 768px) {
     .parallax-break {
-      height: 300px;
+      height: 260px;
       background-attachment: scroll;
     }
+  }
+
+  /* ── Standardized luxury CTA button ── */
+  .cta-luxury {
+    display: inline-block;
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 14px 40px;
+    border: 1px solid hsl(41 30% 57%);
+    color: hsl(var(--foreground));
+    background: transparent;
+    transition: background 0.4s ease, color 0.4s ease, border-color 0.4s ease, transform 0.16s ease;
+    text-decoration: none;
+  }
+  .cta-luxury:hover {
+    background: hsl(41 30% 57%);
+    color: #fff;
+    border-color: hsl(41 30% 57%);
+    transform: translateY(-1px);
+  }
+  .cta-luxury--ghost {
+    border-color: hsl(var(--foreground) / 0.25);
+  }
+  .cta-luxury--ghost:hover {
+    background: hsl(41 30% 57%);
+    color: #fff;
+    border-color: hsl(41 30% 57%);
+  }
+  .cta-luxury--on-dark {
+    border-color: rgba(245, 243, 239, 0.5);
+    color: #F5F3EF;
+  }
+  .cta-luxury--on-dark:hover {
+    background: hsl(41 30% 57%);
+    color: #fff;
+    border-color: hsl(41 30% 57%);
   }
 }
 

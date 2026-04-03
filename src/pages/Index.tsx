@@ -1069,10 +1069,8 @@ const Index = () => (
     <Navigation />
     <Hero />
     <TrustStrip />
-    <div className="py-4 md:py-6 bg-background" />
     <SearchSection />
     <ScrollingCredibilityStrip />
-    <div className="py-4 md:py-6 bg-background" />
     <AdvisorSection />
     <StatsStrip />
 

@@ -46,6 +46,9 @@ const AustinLuxuryMarketTrends = lazy(() => import("@/pages/AustinLuxuryMarketTr
 const OffMarketRealEstateAustin = lazy(() => import("@/pages/OffMarketRealEstateAustin"));
 const AustinLandDevelopmentOpportunities = lazy(() => import("@/pages/AustinLandDevelopmentOpportunities"));
 const AustinLuxuryRealEstateMarketReport = lazy(() => import("@/pages/AustinLuxuryRealEstateMarketReport"));
+const RollingwoodVsWestlake = lazy(() => import("@/pages/RollingwoodVsWestlake"));
+const TarrytownVsBrykerWoods = lazy(() => import("@/pages/TarrytownVsBrykerWoods"));
+const LakeAustinVsLakeTravis = lazy(() => import("@/pages/LakeAustinVsLakeTravis"));
 const Invest = lazy(() => import("@/pages/Invest"));
 const NotFound = lazy(() => import("@/pages/NotFound"));
 

@@ -131,10 +131,10 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer nofollow"
                 className="hover:text-gold transition-colors duration-300 block whitespace-pre-line"
-                style={{ fontFamily: '"Jost", sans-serif', fontSize: "11px", color: "hsl(38 39% 61% / 0.65)" }}
+                style={{ fontFamily: '"Jost", sans-serif', fontSize: "12px", color: "hsl(38 39% 61% / 0.7)" }}
               >
                 Information About Brokerage Services{"\n"}
-                <b className="font-extrabold">Brokered by eXp Realty</b>
+                <b className="font-extrabold" style={{ fontSize: "13px", color: "hsl(38 39% 61% / 0.9)" }}>Brokered by eXp Realty</b>
               </a>
             </div>
             <p className="text-center" style={{ fontFamily: '"Jost", sans-serif', fontSize: "11px", color: "hsl(38 39% 61% / 0.65)" }}>

@@ -94,7 +94,7 @@ const credentials = [
 
 
 const IntroSection = () => {
-  const stat1 = useCountUp(100, 3000, "$", "M+");
+  const stat1 = useCountUp(125, 3000, "$", "M+");
   const stat2 = useCountUp(11, 2500, "", "+");
   const stat3 = useCountUp(200, 3000, "", "+");
   const stat4 = useCountDown(20, 1, 2000);

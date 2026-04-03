@@ -245,7 +245,7 @@ const TrustStrip = () => (
       <div className="max-w-[1320px] mx-auto">
         <div className="border-t border-border/15" />
         <div className="flex items-center justify-center gap-16 py-5 mt-4">
-        {["eXp Luxury Division", "Certified Luxury Home Marketing Specialist", "$100M+ Career Sales Volume"].map((text, i) => (
+        {["eXp Luxury Division", "Certified Luxury Home Marketing Specialist", "$125M+ Career Sales Volume"].map((text, i) => (
             <span key={i} className="text-muted-foreground/65" style={{
               fontFamily: '"Jost", sans-serif', fontWeight: 400, fontSize: "10px", letterSpacing: "0.18em", textTransform: "uppercase"
             }}>
@@ -333,7 +333,7 @@ const AdvisorSection = () => (
 
             {/* Credential badges */}
             <div className="flex flex-wrap gap-2.5 mb-10">
-              {["eXp Luxury Division", "CLHMS GUILD", "$100M+ Career Volume"].map((badge) => (
+              {["eXp Luxury Division", "CLHMS GUILD", "$125M+ Career Volume"].map((badge) => (
                 <span key={badge} className="border px-3 py-1" style={{
                   borderColor: "hsl(38 39% 61%)",
                   color: "hsl(var(--gold-dark))",
@@ -422,7 +422,7 @@ const useCountUp = (target: number, duration = 2600, from = 0) => {
 };
 
 const stats = [
-  { value: 100, suffix: "M+", prefix: "$", label: "Career Sales Volume", from: 50 },
+  { value: 125, suffix: "M+", prefix: "$", label: "Career Sales Volume", from: 50 },
   { value: 200, suffix: "+", prefix: "", label: "Transactions Closed", from: 100 },
   { value: 11, suffix: "+", prefix: "", label: "Years of Experience", from: 1 },
   { value: 250, suffix: "M+", prefix: "$", label: "Off-Market Access", from: 150 },

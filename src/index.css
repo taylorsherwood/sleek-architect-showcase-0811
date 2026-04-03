@@ -252,36 +252,41 @@ realscout-simple-search {
   .hero-cta-gold,
   .hero-cta-light {
     animation: none !important;
-    transform: none !important;
     background-image: none !important;
-    box-shadow: none !important;
     filter: none !important;
     text-decoration: none !important;
-    backdrop-filter: blur(12px) saturate(1.4) !important;
-    -webkit-backdrop-filter: blur(12px) saturate(1.4) !important;
-    transition: background 0.3s ease, border-color 0.3s ease !important;
+    backdrop-filter: blur(14px) saturate(1.5) !important;
+    -webkit-backdrop-filter: blur(14px) saturate(1.5) !important;
+    transition: background 0.15s ease-out, border-color 0.15s ease-out, transform 0.15s ease-out, box-shadow 0.15s ease-out !important;
+    transform: translateY(0) !important;
   }
   .hero-cta-gold {
-    background: rgba(194, 164, 107, 0.4) !important;
-    border: 1px solid hsl(var(--gold)) !important;
+    background: rgba(194, 164, 107, 0.48) !important;
+    border: 1px solid rgba(194, 164, 107, 0.85) !important;
     color: hsl(var(--gold)) !important;
+    box-shadow: 0 0 18px -4px rgba(194, 164, 107, 0.15) !important;
   }
   .hero-cta-gold:hover,
   .hero-cta-gold:focus {
-    background: rgba(194, 164, 107, 0.55) !important;
+    background: rgba(194, 164, 107, 0.62) !important;
     border: 1px solid hsl(var(--gold)) !important;
     color: hsl(var(--gold)) !important;
+    transform: translateY(-1px) scale(1.03) !important;
+    box-shadow: 0 0 24px -4px rgba(194, 164, 107, 0.25) !important;
   }
   .hero-cta-light {
-    background: rgba(245, 243, 239, 0.32) !important;
-    border: 1px solid rgba(245, 243, 239, 0.55) !important;
+    background: rgba(245, 243, 239, 0.36) !important;
+    border: 1px solid rgba(245, 243, 239, 0.6) !important;
     color: rgba(245, 243, 239, 1) !important;
+    box-shadow: none !important;
   }
   .hero-cta-light:hover,
   .hero-cta-light:focus {
-    background: rgba(245, 243, 239, 0.45) !important;
-    border: 1px solid rgba(245, 243, 239, 0.7) !important;
+    background: rgba(245, 243, 239, 0.50) !important;
+    border: 1px solid rgba(245, 243, 239, 0.78) !important;
     color: rgba(245, 243, 239, 1) !important;
+    transform: translateY(-1px) scale(1.03) !important;
+    box-shadow: 0 2px 12px -2px rgba(245, 243, 239, 0.08) !important;
   }
 
   /* Hero overlay — minimal neutral gradient for text readability only */

@@ -69,7 +69,7 @@ const About = () => {
       </section>
 
       {/* Team Image + Bio */}
-      <section className="pb-20 bg-background">
+      <section className="pt-4 pb-20 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto grid md:grid-cols-[38fr_62fr] gap-12 items-start">
             <div className="flex flex-col items-center">

@@ -245,7 +245,7 @@ const TrustStrip = () => (
       <div className="max-w-[1320px] mx-auto">
         <div className="border-t border-border/15" />
         <div className="flex items-center justify-center gap-16 py-5 mt-4">
-        {["eXp Luxury Division", "Certified Luxury Home Marketing Specialist", "$100M+ Career Sales Volume"].map((text, i) => (
+        {["eXp Luxury Division", "Certified Luxury Home Marketing Specialist", "$125M+ Career Sales Volume"].map((text, i) => (
             <span key={i} className="text-muted-foreground/65" style={{
               fontFamily: '"Jost", sans-serif', fontWeight: 400, fontSize: "10px", letterSpacing: "0.18em", textTransform: "uppercase"
             }}>

@@ -221,7 +221,7 @@ const SearchSection = () => {
   }, []);
 
   return (
-    <section className="bg-secondary relative z-20" style={{ overflow: 'visible', padding: "clamp(64px, 10vw, 120px) 0" }}>
+    <section className="bg-secondary relative z-20" style={{ overflow: 'visible', padding: "clamp(64px, 10vw, 120px) 0 clamp(40px, 6vw, 72px)" }}>
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-minimal text-gold mb-4">

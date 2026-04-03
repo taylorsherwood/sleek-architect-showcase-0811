@@ -87,6 +87,7 @@ const About = () => {
               />
               <img src={clhmsBadge} alt="Certified Luxury Home Marketing Specialist guild member badge" title="Certified Luxury Home Marketing Specialist designation" className="absolute bottom-3 right-3 w-20 h-20 opacity-85" loading="lazy" decoding="async" width={80} height={80} />
               <img src={expEchelonLogo} alt="eXp Realty and Echelon Property Group logo" className="mt-6 w-full max-w-[320px] mx-auto" loading="lazy" decoding="async" />
+            </div>
             <div>
               <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-2">Meet Taylor Sherwood</h2>
               <p className="text-xs tracking-[0.1em] uppercase text-muted-foreground/60 mb-4">CLHMS</p>

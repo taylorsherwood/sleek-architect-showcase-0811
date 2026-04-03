@@ -1024,6 +1024,7 @@ const LeadCapture = () => {
    ───────────────────────────────────────────── */
 
 const FinalCTA = () => (
+  <>
     <section id="final-cta-section" data-nav-dark-zone style={{ padding: "clamp(32px, 5vw, 56px) 0 clamp(64px, 10vw, 120px)" }} className="bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-[700px] mx-auto text-center">
@@ -1053,6 +1054,8 @@ const FinalCTA = () => (
         </div>
       </div>
     </section>
+    <div className="bg-background" style={{ height: "clamp(40px, 6vw, 80px)" }} />
+  </>
 );
 
 /* ─────────────────────────────────────────────

@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import Navigation from "@/components/Navigation";
 import expEchelonLogo from "@/assets/exp-echelon-logo.png";
+import taylorAboutHeadshot from "@/assets/taylor-about-headshot.jpeg";
 import { Link } from "react-router-dom";
 import SchemaMarkup, { taylorSherwoodSchema, createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import SEOHead from "@/components/SEOHead";

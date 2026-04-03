@@ -109,7 +109,7 @@ const marketingFeatures = [
 const stats = [
   { target: 98, suffix: "%", label: "List-to-Sale Price Ratio", countDown: false, from: 75 },
   { target: 21, suffix: "", label: "Avg. Days on Market", countDown: true, from: 10 },
-  { target: 100, prefix: "$", suffix: "M+", label: "Career Sales Volume", countDown: false, from: 75 },
+  { target: 125, prefix: "$", suffix: "M+", label: "Career Sales Volume", countDown: false, from: 75 },
 ];
 
 function useCountUp(target: number, duration = 2600, from = 0, countDown = false) {

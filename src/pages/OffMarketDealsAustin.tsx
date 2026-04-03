@@ -91,7 +91,7 @@ const OffMarketDealsAustin = () => {
       <Navigation />
 
       {/* Hero */}
-      <section className="relative w-full h-[60vh] md:h-[65vh] overflow-hidden">
+      <section className="relative w-full h-[70vh] md:h-[72vh] overflow-hidden">
         <img
           src={heroSkyline}
           alt="Austin Texas skyline — off-market real estate investment opportunities"

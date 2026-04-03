@@ -71,21 +71,19 @@ const About = () => {
       <section className="pb-20 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start">
-            <div className="relative inline-block">
-              <img
-                alt="Taylor Sherwood, founder of Echelon Property Group and Austin luxury real estate advisor"
+            <div>
+              <div
+                className="w-full h-[56vh] md:h-[70vh]"
+                role="img"
+                aria-label="Taylor Sherwood, founder of Echelon Property Group and Austin luxury real estate advisor"
                 title="Taylor Sherwood — Echelon Property Group founder and Austin real estate advisor"
-                className="w-full h-[56vh] md:h-[70vh] object-cover"
-                style={{ objectPosition: "50% 20%" }}
-                src="/lovable-uploads/9265260a-6432-4ccb-ad05-c43da28ecfc3.jpg"
-                loading="eager"
-                decoding="async"
-                fetchPriority="high"
-                sizes="(max-width: 768px) 100vw, 50vw"
-                width={600}
-                height={800}
+                style={{
+                  backgroundImage: "url('/lovable-uploads/9265260a-6432-4ccb-ad05-c43da28ecfc3.jpg')",
+                  backgroundSize: "cover",
+                  backgroundPosition: "50% 20%",
+                  backgroundRepeat: "no-repeat",
+                }}
               />
-              
               <div className="mt-6 max-w-[320px] mx-auto rounded-sm overflow-hidden" style={{ backgroundColor: "hsl(var(--background))" }}>
                 <img src={expEchelonLogo} alt="eXp Realty and Echelon Property Group logo" className="w-full mix-blend-multiply" loading="lazy" decoding="async" />
               </div>

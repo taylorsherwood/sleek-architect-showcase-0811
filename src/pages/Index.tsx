@@ -170,7 +170,7 @@ const Hero = () => {
                 transform: "translateZ(0)", willChange: "transform, opacity",
                 transition: "transform 160ms ease, opacity 160ms ease",
               }}>
-              EXPLORE LUXURY HOMES
+              EXPLORE AVAILABLE OPPORTUNITIES
             </Link>
             <Link to="/off-market-real-estate-austin"
               className="inline-block text-center px-8 py-[14px] hover:-translate-y-px hover:opacity-[0.92]"
@@ -181,7 +181,7 @@ const Hero = () => {
                 transform: "translateZ(0)", willChange: "transform, opacity",
                 transition: "transform 160ms ease, opacity 160ms ease",
               }}>
-              REQUEST PRIVATE ACCESS
+              PRIVATE AND OFF-MARKET OPPORTUNITIES
             </Link>
           </div>
 

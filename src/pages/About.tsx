@@ -116,7 +116,9 @@ const About = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-display font-normal text-architectural mb-8">
-              Expertise in Austin's Premier Neighborhoods
+              Expertise in Austin's
+              <br />
+              Premier Neighborhoods
             </h2>
             <div className="space-y-6 text-muted-foreground leading-relaxed">
               <p>

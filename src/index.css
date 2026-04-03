@@ -261,25 +261,25 @@ realscout-simple-search {
     transition: background 0.3s ease, border-color 0.3s ease !important;
   }
   .hero-cta-gold {
-    background: rgba(194, 164, 107, 0.15) !important;
+    background: rgba(194, 164, 107, 0.28) !important;
     border: 1px solid hsl(var(--gold)) !important;
     color: hsl(var(--gold)) !important;
   }
   .hero-cta-gold:hover,
   .hero-cta-gold:focus {
-    background: rgba(194, 164, 107, 0.28) !important;
+    background: rgba(194, 164, 107, 0.4) !important;
     border: 1px solid hsl(var(--gold)) !important;
     color: hsl(var(--gold)) !important;
   }
   .hero-cta-light {
-    background: rgba(245, 243, 239, 0.1) !important;
-    border: 1px solid rgba(245, 243, 239, 0.35) !important;
+    background: rgba(245, 243, 239, 0.2) !important;
+    border: 1px solid rgba(245, 243, 239, 0.45) !important;
     color: rgba(245, 243, 239, 1) !important;
   }
   .hero-cta-light:hover,
   .hero-cta-light:focus {
-    background: rgba(245, 243, 239, 0.2) !important;
-    border: 1px solid rgba(245, 243, 239, 0.5) !important;
+    background: rgba(245, 243, 239, 0.32) !important;
+    border: 1px solid rgba(245, 243, 239, 0.6) !important;
     color: rgba(245, 243, 239, 1) !important;
   }
 

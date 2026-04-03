@@ -1111,10 +1111,11 @@ const Index = () => (
 
     <ExpertiseSection />
 
+    <TestimonialsSection />
+
     {/* Parallax break — lakefront / pool terrace */}
     <div className="parallax-break" style={{ backgroundImage: "url('/images/parallax-lakefront.jpg')" }} aria-hidden="true" />
 
-    <TestimonialsSection />
     <CommunitiesSection />
 
     {/* Parallax break — luxury interior */}

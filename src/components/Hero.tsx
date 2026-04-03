@@ -1,5 +1,4 @@
 import { useState, useRef, useEffect } from "react";
-import { useHeroScroll } from "@/hooks/useHeroScroll";
 
 const FALLBACK_TIMEOUT = 4000;
 const RETRY_DELAY = 800;
@@ -11,7 +10,6 @@ const Hero = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [heroVisible, setHeroVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
-  const scrollProgress = useHeroScroll();
 
   // Re-trigger text animation when hero scrolls back into view
   useEffect(() => {

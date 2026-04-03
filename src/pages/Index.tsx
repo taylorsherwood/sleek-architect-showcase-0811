@@ -162,35 +162,38 @@ const Hero = () => {
           {/* CTA Buttons — static, dark translucent glass */}
           <div className="flex flex-col sm:flex-row gap-4" style={anim("0.4s")}>
             <Link to="/austin-luxury-homes-for-sale"
-              className="inline-block text-center px-8 py-[14px] hover:-translate-y-[2px]"
+              className="inline-block text-center px-8 py-[14px]"
               style={{
                 fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 500,
                 border: "1px solid hsl(38 42% 58%)", color: "#fff",
                 background: "hsl(38 42% 52%)",
                 boxShadow: "0 2px 12px rgba(194,164,107,0.25)",
-                transform: "translateZ(0)", willChange: "transform, box-shadow",
-                transition: "transform 160ms ease, box-shadow 160ms ease, background 160ms ease",
+                transform: "translateX(0) translateZ(0)", willChange: "transform, box-shadow",
+                transition: "transform 250ms ease, box-shadow 250ms ease, background 250ms ease",
               }}
-              onMouseEnter={e => { e.currentTarget.style.background = "hsl(38 42% 46%)"; e.currentTarget.style.boxShadow = "0 4px 20px rgba(194,164,107,0.35)"; }}
-              onMouseLeave={e => { e.currentTarget.style.background = "hsl(38 42% 52%)"; e.currentTarget.style.boxShadow = "0 2px 12px rgba(194,164,107,0.25)"; }}
+              onMouseEnter={e => { e.currentTarget.style.transform = "translateX(3px) translateZ(0)"; e.currentTarget.style.background = "hsl(38 42% 46%)"; e.currentTarget.style.boxShadow = "0 4px 20px rgba(194,164,107,0.35)"; }}
+              onMouseLeave={e => { e.currentTarget.style.transform = "translateX(0) translateZ(0)"; e.currentTarget.style.background = "hsl(38 42% 52%)"; e.currentTarget.style.boxShadow = "0 2px 12px rgba(194,164,107,0.25)"; }}
             >
-              EXPLORE AVAILABLE OPPORTUNITIES
+              Explore Available Opportunities →
             </Link>
             <Link to="/off-market-real-estate-austin"
-              className="inline-block text-center px-8 py-[14px] hover:-translate-y-[2px]"
+              className="inline-block text-center px-8 py-[14px]"
               style={{
                 fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 400,
                 border: "1px solid rgba(255,255,255,0.52)", color: "rgba(255,255,255,0.95)",
                 background: "rgba(10,14,25,0.28)",
-                transform: "translateZ(0)", willChange: "transform, background, border-color",
-                transition: "transform 160ms ease, background 160ms ease, border-color 160ms ease",
+                transform: "translateX(0) translateZ(0)", willChange: "transform, background, border-color",
+                transition: "transform 250ms ease, background 250ms ease, border-color 250ms ease",
               }}
-              onMouseEnter={e => { e.currentTarget.style.background = "rgba(255,255,255,0.10)"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.7)"; }}
-              onMouseLeave={e => { e.currentTarget.style.background = "rgba(10,14,25,0.28)"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.52)"; }}
+              onMouseEnter={e => { e.currentTarget.style.transform = "translateX(3px) translateZ(0)"; e.currentTarget.style.background = "rgba(255,255,255,0.10)"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.7)"; }}
+              onMouseLeave={e => { e.currentTarget.style.transform = "translateX(0) translateZ(0)"; e.currentTarget.style.background = "rgba(10,14,25,0.28)"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.52)"; }}
             >
-              PRIVATE AND OFF-MARKET OPPORTUNITIES
+              Private & Off-Market Opportunities →
             </Link>
           </div>
+          <p style={{ ...anim("0.5s"), fontFamily: '"Jost", sans-serif', fontSize: "10px", letterSpacing: "0.12em", color: "rgba(255,255,255,0.40)", marginTop: "14px", textTransform: "uppercase" }}>
+            View active and off-market inventory
+          </p>
 
         </div>
       </div>

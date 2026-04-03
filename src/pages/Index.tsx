@@ -647,6 +647,11 @@ const testimonials = [
     name: "Wayne French",
     context: "Bought in Bastrop",
   },
+  {
+    quote: "Taylor did not just help us find a home. He brought us opportunities we never would have seen otherwise. His off market access made all the difference.",
+    name: "Alexandra Morgan",
+    context: "Purchased in Spanish Oaks",
+  },
 ];
 
 const TestimonialsSection = () => {

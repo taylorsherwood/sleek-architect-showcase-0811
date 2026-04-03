@@ -94,7 +94,7 @@ const Navigation = () => {
       <div
         className="absolute inset-0 transition-all duration-500"
         style={{
-          background: effectiveScrolled ? "#080B1A" : "hsl(var(--background))",
+          background: effectiveScrolled ? "#080B1A" : "#f6f4f0",
         }}
       />
       <div className="relative container mx-auto px-6 h-full flex items-center justify-between">

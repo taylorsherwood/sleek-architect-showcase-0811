@@ -267,7 +267,7 @@ const TrustStrip = () => (
 const AdvisorSection = () => (
   <section className="bg-background pt-12 md:pt-20">
     <div className="max-w-[1400px] mx-auto">
-       <div className="grid lg:grid-cols-[minmax(480px,520px)_1fr] items-stretch" style={{ gap: 0 }}>
+       <div className="grid lg:grid-cols-[minmax(480px,520px)_1fr] items-start" style={{ gap: 0 }}>
          {/* Left — editorial portrait */}
          <div className="relative flex items-start justify-center bg-background w-full lg:h-full overflow-hidden" style={{ padding: "16px" }}>
            <img

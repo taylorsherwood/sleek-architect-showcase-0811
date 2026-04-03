@@ -188,7 +188,7 @@ const Hero = () => {
               onMouseEnter={e => { e.currentTarget.style.transform = "translateX(3px) translateZ(0)"; e.currentTarget.style.background = "rgba(255,255,255,0.10)"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.7)"; }}
               onMouseLeave={e => { e.currentTarget.style.transform = "translateX(0) translateZ(0)"; e.currentTarget.style.background = "rgba(10,14,25,0.28)"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.52)"; }}
             >
-              PRIVATE & OFF-MARKET OPPORTUNITIES
+              PRIVATE & OFF-MARKET OPPORTUNITIES →
             </Link>
           </div>
           <p style={{ ...anim("0.5s"), fontFamily: '"Jost", sans-serif', fontSize: "10px", letterSpacing: "0.12em", color: "rgba(255,255,255,0.40)", marginTop: "14px", textTransform: "uppercase", textAlign: "center", width: "100%" }}>

@@ -70,7 +70,7 @@ const About = () => {
       {/* Team Image + Bio */}
       <section className="pb-20 bg-background">
         <div className="container mx-auto px-6">
-          <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start">
+          <div className="max-w-7xl mx-auto grid md:grid-cols-[38fr_62fr] gap-12 items-start">
             <div>
               <div className="relative overflow-hidden">
                 <div
@@ -80,7 +80,7 @@ const About = () => {
                   title="Taylor Sherwood — Echelon Property Group founder and Austin real estate advisor"
                   style={{
                     backgroundImage: "url('/lovable-uploads/9265260a-6432-4ccb-ad05-c43da28ecfc3.jpg')",
-                    backgroundSize: "92%",
+                    backgroundSize: "cover",
                     backgroundPosition: "50% 10%",
                     backgroundRepeat: "no-repeat",
                     filter: "brightness(0.95)",

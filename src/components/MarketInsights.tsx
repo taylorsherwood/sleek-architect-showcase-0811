@@ -52,7 +52,8 @@ const MarketInsights = () => {
                 Strategic Perspective on Austin Real Estate
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                Off-market opportunities, investment trends, and market intelligence for informed decision-making.
+                Off-market opportunities, investment trends, and market intelligence for informed decision-making. We recently published an in-depth breakdown of{" "}
+                <Link to="/blog/austin-luxury-market-trends" className="text-foreground underline underline-offset-4 decoration-accent-gold/40 hover:decoration-accent-gold transition-colors duration-300">Austin's luxury real estate market trends</Link>, including where pricing, inventory, and buyer behavior are heading.
               </p>
             </div>
           </ScrollReveal>

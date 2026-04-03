@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { useHeroScroll } from "@/hooks/useHeroScroll";
 
 const FALLBACK_TIMEOUT = 4000;
 const RETRY_DELAY = 800;
@@ -11,6 +11,7 @@ const Hero = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [heroVisible, setHeroVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
+  const scrollProgress = useHeroScroll();
 
   // Re-trigger text animation when hero scrolls back into view
   useEffect(() => {
@@ -104,9 +105,12 @@ const Hero = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [videoSrc]);
 
+  // Subtle parallax: video scrolls at 40% speed of content
+  const videoParallaxY = scrollProgress * 0.4 * window.innerHeight * 0.15;
+
   return (
     <section ref={sectionRef} id="hero-section" className="relative h-screen flex items-center overflow-hidden bg-[hsl(var(--black-soft))]">
-      {/* ── VIDEO LAYER ── */}
+      {/* ── VIDEO LAYER — subtle parallax ── */}
       <div
         aria-hidden="true"
         className="absolute inset-0 pointer-events-none select-none overflow-hidden"
@@ -120,6 +124,7 @@ const Hero = () => {
           preload="none"
           poster="/images/hero-poster.jpg"
           className={`hero-bg-video ${videoReady ? "opacity-100" : "opacity-0"}`}
+          style={{ transform: `translateY(${videoParallaxY}px) scale(1.06)` }}
           width={1920}
           height={1080}
           tabIndex={-1}>
@@ -134,17 +139,23 @@ const Hero = () => {
         alt="Austin Texas skyline at sunset with downtown high-rises and Hill Country backdrop"
         title="Austin Texas skyline — Echelon Property Group luxury real estate"
         className="absolute inset-0 w-full h-full object-cover"
-        style={{ zIndex: 0 }}
+        style={{ zIndex: 0, transform: `translateY(${videoParallaxY}px) scale(1.06)` }}
         loading="eager"
         width={1920}
         height={1080}
       />
       }
 
-      {/* ── CONTENT LAYER ── */}
+      {/* ── CONTENT LAYER — positioned ~6% higher ── */}
       <div
-        className="relative container mx-auto pt-24 md:pt-32 lg:pt-36"
-        style={{ zIndex: 2, paddingLeft: "clamp(32px, 6vw, 96px)", paddingRight: "24px" }}>
+        className="relative container mx-auto"
+        style={{
+          zIndex: 2,
+          paddingLeft: "clamp(32px, 6vw, 96px)",
+          paddingRight: "24px",
+          paddingTop: "clamp(64px, 8vh, 120px)",
+          marginTop: "-6vh",
+        }}>
         <div style={{ maxWidth: "620px" }}>
           
           <p
@@ -173,7 +184,7 @@ const Hero = () => {
               letterSpacing: "0.02em",
               fontWeight: 500,
               maxWidth: "620px",
-              marginBottom: "20px",
+              marginBottom: "28px",
               textShadow: "0 2px 9px rgba(0,0,0,0.55), 0 1px 2px rgba(0,0,0,0.2)"
             }}>
             Access Austin's Most<br />
@@ -218,9 +229,9 @@ const Hero = () => {
               fontWeight: 400,
               fontSize: "16px",
               color: "rgba(245, 243, 239, 0.78)",
-              letterSpacing: "0.03em",
+              letterSpacing: "0.045em",
               lineHeight: 1.75,
-              marginTop: "20px",
+              marginTop: "24px",
               marginBottom: "0",
               textShadow: "0 2px 9px rgba(0,0,0,0.55)"
             }}>
@@ -228,13 +239,13 @@ const Hero = () => {
             most sought-after neighborhoods.
           </p>
 
-          {/* ── CTA BUTTONS — fully static, zero animation ── */}
+          {/* ── CTA BUTTONS ── */}
           <div className="hero-ctas flex flex-row gap-4 items-center"
             style={{
               opacity: heroVisible ? 1 : 0,
               transform: heroVisible ? "translateY(0)" : "translateY(10px)",
               transition: "opacity 1s ease 0.45s, transform 1s ease 0.45s",
-              marginTop: "36px",
+              marginTop: "40px",
             }}>
             <a
               href="/invest"

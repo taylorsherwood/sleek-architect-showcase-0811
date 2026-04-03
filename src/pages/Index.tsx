@@ -128,11 +128,6 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 pb-32 md:pb-28 lg:pb-36 pt-36 md:pt-32 lg:pt-48">
         <div className="max-w-[780px] md:max-w-[620px] lg:max-w-[780px] relative">
-          {/* Localized text protection gradient */}
-          <div className="absolute -inset-x-8 -inset-y-6 rounded-sm pointer-events-none" style={{
-            background: "radial-gradient(ellipse 110% 100% at 20% 50%, rgba(10,14,25,0.35) 0%, rgba(10,14,25,0.18) 55%, transparent 85%)",
-            zIndex: -1,
-          }} />
           {/* Gold line + kicker */}
           <div style={anim("0s")} className="mb-5">
             <div className="w-10 h-px bg-gold mb-5" />

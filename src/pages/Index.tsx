@@ -950,49 +950,35 @@ const LeadCapture = () => {
    ───────────────────────────────────────────── */
 
 const FinalCTA = () => (
-  <section id="final-cta-section" data-nav-dark-zone className="py-24 md:py-32 bg-background">
-    <div className="container mx-auto px-6">
-      <div className="max-w-[700px] mx-auto text-center">
-        <ScrollReveal>
-          <p className="text-minimal text-gold mb-5">GET STARTED</p>
-        </ScrollReveal>
-        <ScrollReveal delay={80}>
-          <h2 className="font-display text-3xl md:text-[2.75rem] font-normal mb-5 leading-[1.1] tracking-[0.03em] text-architectural">
-            Work With
-            <br />
-            Echelon Property Group
-          </h2>
-        </ScrollReveal>
-        <ScrollReveal delay={150}>
-          <p className="text-[15px] mb-12 max-w-[400px] mx-auto text-muted-foreground" style={{ fontFamily: '"Jost", sans-serif', fontWeight: 300, lineHeight: 1.8 }}>
-            Luxury real estate, redefined through strategy, access, and execution.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-5 justify-center">
-            <Link to="/buy"
-              className="inline-block text-center px-12 py-[14px] border transition-all duration-[400ms]"
-              style={{
-                fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 400,
-                borderColor: "hsl(38 39% 61%)", color: "hsl(38 39% 61%)", background: "transparent",
-              }}
-              onMouseEnter={(e) => { e.currentTarget.style.background = "hsl(38 39% 61%)"; e.currentTarget.style.color = "#fff"; }}
-              onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = "hsl(38 39% 61%)"; }}>
-              BUY PROPERTY
-            </Link>
-            <Link to="/sell"
-              className="inline-block text-center px-12 py-[14px] border transition-all duration-[400ms]"
-              style={{
-                fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 400,
-                borderColor: "hsl(var(--foreground) / 0.25)", color: "hsl(var(--foreground))", background: "transparent",
-              }}
-              onMouseEnter={(e) => { e.currentTarget.style.background = "hsl(38 39% 61%)"; e.currentTarget.style.color = "#fff"; e.currentTarget.style.borderColor = "hsl(38 39% 61%)"; }}
-              onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = "hsl(var(--foreground))"; e.currentTarget.style.borderColor = "hsl(var(--foreground) / 0.25)"; }}>
-              SELL PROPERTY
-            </Link>
-          </div>
-        </ScrollReveal>
+    <section id="final-cta-section" data-nav-dark-zone style={{ padding: "clamp(64px, 10vw, 120px) 0" }} className="bg-background">
+      <div className="container mx-auto px-6">
+        <div className="max-w-[700px] mx-auto text-center">
+          <ScrollReveal>
+            <p className="text-minimal text-gold mb-5">GET STARTED</p>
+          </ScrollReveal>
+          <ScrollReveal delay={80}>
+            <h2 className="font-display text-3xl md:text-[2.75rem] font-normal mb-5 leading-[1.1] tracking-[0.03em] text-architectural">
+              Work With
+              <br />
+              Echelon Property Group
+            </h2>
+          </ScrollReveal>
+          <ScrollReveal delay={150}>
+            <p className="text-[15px] mb-12 max-w-[400px] mx-auto text-muted-foreground" style={{ fontFamily: '"Jost", sans-serif', fontWeight: 300, lineHeight: 1.8 }}>
+              Luxury real estate, redefined through strategy, access, and execution.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-5 justify-center">
+              <Link to="/buy" className="cta-luxury">
+                BUY PROPERTY
+              </Link>
+              <Link to="/sell" className="cta-luxury cta-luxury--ghost">
+                SELL PROPERTY
+              </Link>
+            </div>
+          </ScrollReveal>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 );
 
 /* ─────────────────────────────────────────────

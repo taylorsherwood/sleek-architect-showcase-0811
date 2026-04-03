@@ -659,8 +659,12 @@ const TestimonialsSection = () => {
   const t = testimonials[active];
 
   return (
-    <section className="bg-secondary" style={{ padding: "clamp(64px, 10vw, 120px) 0" }}>
-      <div className="container mx-auto px-6">
+    <section className="bg-secondary relative overflow-hidden" style={{ padding: "clamp(64px, 10vw, 120px) 0" }}>
+      {/* Watermark */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none" aria-hidden="true">
+        <img src={echelonWatermark} alt="" className="w-[400px] md:w-[500px] opacity-[0.06]" />
+      </div>
+      <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-[800px] mx-auto text-center relative" style={{ minHeight: "320px" }}>
           <ScrollReveal>
             <p className="text-minimal text-gold mb-8">CLIENT EXPERIENCES</p>

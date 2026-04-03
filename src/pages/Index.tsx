@@ -679,7 +679,7 @@ const TestimonialsSection = () => {
         // subtle drift: ~18px vertical, ~6px horizontal
         const y = (clamped - 0.5) * 18;
         const x = (clamped - 0.5) * -6;
-        watermarkRef.current.style.transform = `translate(calc(-6% + ${x}px), calc(4% + ${y}px))`;
+        watermarkRef.current.style.transform = `translate(calc(-2% + ${x}px), calc(4% + ${y}px))`;
         ticking = false;
       });
     };
@@ -694,7 +694,7 @@ const TestimonialsSection = () => {
     <section ref={sectionRef} className="bg-secondary relative overflow-hidden" style={{ padding: "clamp(64px, 10vw, 120px) 0" }}>
       {/* Watermark */}
       <div ref={watermarkRef} className="absolute inset-0 flex items-center justify-center pointer-events-none" aria-hidden="true"
-        style={{ transform: "translate(-6%, 4%)", transition: "transform 0.15s linear", willChange: "transform" }}>
+        style={{ transform: "translate(-2%, 4%)", transition: "transform 0.15s linear", willChange: "transform" }}>
         <div style={{
           width: "600px",
           maxWidth: "90vw",

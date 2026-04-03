@@ -125,17 +125,19 @@ const Footer = () => {
 
           {/* Bottom bar */}
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 pb-6">
-            <div className="text-center md:text-left">
+            <div className="text-center md:text-left space-y-1">
               <a
                 href="https://www.dropbox.com/scl/fi/ism1gkeqt0bol9srh3b0a/IABS-1-2.pdf?rlkey=l05zn9bqqmg8e1ru4qjzsnd1o&dl=0"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                className="hover:text-gold transition-colors duration-300 block whitespace-pre-line"
-                style={{ fontFamily: '"Jost", sans-serif', fontSize: "12px", color: "hsl(38 39% 61% / 0.7)" }}
+                className="inline-block hover:text-gold transition-colors duration-300 underline decoration-gold/40 underline-offset-2 hover:decoration-gold"
+                style={{ fontFamily: '"Jost", sans-serif', fontSize: "12.5px", color: "hsl(38 39% 61% / 0.85)", letterSpacing: "0.03em" }}
               >
-                Information About Brokerage Services{"\n"}
-                <b className="font-extrabold" style={{ fontSize: "13px", color: "hsl(38 39% 61% / 0.9)" }}>Brokered by eXp Realty</b>
+                Information About Brokerage Services (IABS)
               </a>
+              <p style={{ fontFamily: '"Jost", sans-serif', fontSize: "13px", color: "hsl(38 39% 61% / 0.9)", fontWeight: 700 }}>
+                Brokered by eXp Realty
+              </p>
             </div>
             <p className="text-center" style={{ fontFamily: '"Jost", sans-serif', fontSize: "11px", color: "hsl(38 39% 61% / 0.65)" }}>
               © {new Date().getFullYear()} Echelon Property Group

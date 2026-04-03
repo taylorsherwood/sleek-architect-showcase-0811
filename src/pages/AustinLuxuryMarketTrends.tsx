@@ -237,6 +237,21 @@ const AustinLuxuryMarketTrends = () => {
         </div>
       </section>
 
+      {/* Explore More */}
+      <section className="py-16 md:py-20">
+        <div className="max-w-[620px] mx-auto px-6 text-center">
+          <span className="text-accent-gold text-xs tracking-[0.25em] uppercase mb-6 block">Explore More</span>
+          <p className="text-muted-foreground leading-[1.75] text-[15px]">
+            If you're exploring Austin's luxury market, you may also want to review our insights on{" "}
+            <Link to="/best-luxury-neighborhoods-austin" className="text-foreground underline underline-offset-4 decoration-accent-gold/40 hover:decoration-accent-gold transition-colors duration-300">Austin's top luxury neighborhoods</Link>,
+            browse{" "}
+            <Link to="/communities" className="text-foreground underline underline-offset-4 decoration-accent-gold/40 hover:decoration-accent-gold transition-colors duration-300">featured communities across Austin</Link>,
+            or explore{" "}
+            <Link to="/buy" className="text-foreground underline underline-offset-4 decoration-accent-gold/40 hover:decoration-accent-gold transition-colors duration-300">available luxury homes and private opportunities</Link>.
+          </p>
+        </div>
+      </section>
+
       <RelatedInsights maxLinks={5} />
       <AboutBlock />
       <Suspense fallback={<div className="min-h-[100px]" />}><Footer /></Suspense>

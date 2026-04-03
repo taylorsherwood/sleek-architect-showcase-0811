@@ -80,7 +80,7 @@ const About = () => {
                 style={{
                   backgroundImage: "url('/lovable-uploads/9265260a-6432-4ccb-ad05-c43da28ecfc3.jpg')",
                   backgroundSize: "cover",
-                  backgroundPosition: "50% 20%",
+                  backgroundPosition: "50% 10%",
                   backgroundRepeat: "no-repeat",
                 }}
               />

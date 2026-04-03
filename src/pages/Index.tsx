@@ -673,11 +673,11 @@ const TestimonialsSection = () => {
           width: "600px",
           maxWidth: "90vw",
           aspectRatio: "1",
-          maskImage: "radial-gradient(ellipse 55% 55% at center, black 0%, transparent 100%)",
-          WebkitMaskImage: "radial-gradient(ellipse 55% 55% at center, black 0%, transparent 100%)",
+          maskImage: "radial-gradient(ellipse 60% 60% at center, black 0%, black 40%, transparent 85%)",
+          WebkitMaskImage: "radial-gradient(ellipse 60% 60% at center, black 0%, black 40%, transparent 85%)",
         }}>
           <img src={echelonWatermark} alt="" className="w-full h-full object-contain"
-            style={{ opacity: 0.055, filter: "blur(1.5px) saturate(0.7) brightness(1.08)" }} />
+            style={{ opacity: 0.09, filter: "blur(0.8px) saturate(0.85) brightness(1.02)" }} />
         </div>
       </div>
       <div className="container mx-auto px-6 relative z-10">

@@ -130,11 +130,10 @@ const Footer = () => {
                 href="https://www.dropbox.com/scl/fi/ism1gkeqt0bol9srh3b0a/IABS-1-2.pdf?rlkey=l05zn9bqqmg8e1ru4qjzsnd1o&dl=0"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                className="hover:text-gold transition-colors duration-300"
+                className="hover:text-gold transition-colors duration-300 block whitespace-pre-line"
                 style={{ fontFamily: '"Jost", sans-serif', fontSize: "11px", color: "hsl(38 39% 61% / 0.65)" }}
               >
-                Information About Brokerage Services
-                <br />
+                Information About Brokerage Services{"\n"}
                 Brokered by eXp Realty
               </a>
             </div>

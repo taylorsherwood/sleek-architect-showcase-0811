@@ -1053,6 +1053,7 @@ const FinalCTA = () => (
         </div>
       </div>
     </section>
+    <div className="bg-background" style={{ height: "clamp(40px, 6vw, 80px)" }} />
 );
 
 /* ─────────────────────────────────────────────

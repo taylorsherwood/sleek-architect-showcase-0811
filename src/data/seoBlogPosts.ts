@@ -808,5 +808,41 @@ While the market fluctuates, Austin has experienced long-term appreciation drive
     category: "INVESTMENT",
     image: heroSkyline,
     href: "/blog/how-to-find-off-market-real-estate-deals-austin-2026"
+  },
+  {
+    id: "rollingwood-vs-westlake-hills",
+    title: "Rollingwood vs Westlake Hills: Which Austin Luxury Neighborhood Is Right for You?",
+    excerpt: "Compare Rollingwood and Westlake Hills to find the right Austin luxury neighborhood. Explore lifestyle, home styles, location advantages, and long-term value.",
+    content: "",
+    author: "Taylor Pullen",
+    date: "2026-04-03",
+    readTime: "10 min read",
+    category: "NEIGHBORHOODS",
+    image: communityLake,
+    href: "/blog/rollingwood-vs-westlake-hills"
+  },
+  {
+    id: "tarrytown-vs-bryker-woods",
+    title: "Tarrytown vs Bryker Woods: Choosing the Right Central Austin Neighborhood",
+    excerpt: "Compare Tarrytown and Bryker Woods to find the right Central Austin neighborhood. Explore home styles, walkability, pricing, and lifestyle differences.",
+    content: "",
+    author: "Taylor Pullen",
+    date: "2026-04-03",
+    readTime: "10 min read",
+    category: "NEIGHBORHOODS",
+    image: heroLuxury,
+    href: "/blog/tarrytown-vs-bryker-woods"
+  },
+  {
+    id: "lake-austin-vs-lake-travis",
+    title: "Lake Austin vs Lake Travis: Which Waterfront Lifestyle Is Right for You?",
+    excerpt: "Compare Lake Austin and Lake Travis living in Austin, Texas. Explore waterfront lifestyle, pricing, access, and which lake is right for your goals.",
+    content: "",
+    author: "Taylor Pullen",
+    date: "2026-04-03",
+    readTime: "10 min read",
+    category: "WATERFRONT",
+    image: communityLake,
+    href: "/blog/lake-austin-vs-lake-travis"
   }
 ];

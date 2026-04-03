@@ -645,7 +645,7 @@ const testimonials = [
   {
     quote: "I had a very good experience with Taylor on the purchase of my home in the Austin area. He provided several options to visit until I found the perfect home. Taylor was very knowledgeable, professional and patient with all of the questions I had along the way. I highly recommend him for your real estate needs!",
     name: "Wayne French",
-    context: "Bought in Bastrop",
+    context: "Purchased in Bastrop",
   },
   {
     quote: "Taylor did not just help us find a home. He brought us opportunities we never would have seen otherwise. His off market access made all the difference.",

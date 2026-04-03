@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import Navigation from "@/components/Navigation";
 import clhmsBadge from "@/assets/clhms-badge.png";
+import expEchelonLogo from "@/assets/exp-echelon-logo.png";
 import { Link } from "react-router-dom";
 import SchemaMarkup, { taylorSherwoodSchema, createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import SEOHead from "@/components/SEOHead";
@@ -85,6 +86,7 @@ const About = () => {
                 height={800}
               />
               <img src={clhmsBadge} alt="Certified Luxury Home Marketing Specialist guild member badge" title="Certified Luxury Home Marketing Specialist designation" className="absolute bottom-3 right-3 w-20 h-20 opacity-85" loading="lazy" decoding="async" width={80} height={80} />
+              <img src={expEchelonLogo} alt="eXp Realty and Echelon Property Group logo" className="mt-6 w-full max-w-[320px] mx-auto" loading="lazy" decoding="async" />
             </div>
             <div>
               <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-2">Meet Taylor Sherwood</h2>

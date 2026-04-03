@@ -743,7 +743,7 @@ const TestimonialsSection = () => {
           <div style={{ minHeight: "160px", display: "flex", alignItems: "center", justifyContent: "center" }}>
             <p key={active} className="mb-6" style={{
               fontFamily: '"Jost", sans-serif', fontWeight: 300,
-              fontSize: "clamp(16px, 2vw, 22px)", lineHeight: 1.7, letterSpacing: "0.01em",
+              fontSize: "clamp(15px, 1.8vw, 20px)", lineHeight: 1.85, letterSpacing: "0.01em",
               color: "hsl(var(--foreground) / 0.8)",
               animation: "fadeUp 0.6s ease both",
             }}>

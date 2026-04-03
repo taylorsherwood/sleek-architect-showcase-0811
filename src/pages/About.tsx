@@ -80,7 +80,7 @@ const About = () => {
                   title="Taylor Sherwood — Echelon Property Group founder and Austin real estate advisor"
                   style={{
                     backgroundImage: "url('/lovable-uploads/9265260a-6432-4ccb-ad05-c43da28ecfc3.jpg')",
-                    backgroundSize: "115%",
+                    backgroundSize: "92%",
                     backgroundPosition: "50% 10%",
                     backgroundRepeat: "no-repeat",
                     filter: "brightness(0.95)",

@@ -50,19 +50,19 @@ realscout-simple-search {
     --gold-deep: 41 30% 40%;         /* #857548 */
     --gold-highlight: 41 35% 68%;    /* #C5B88E */
 
-    --background: 34 27% 95%;        /* #F7F4EF */
+    --background: 40 25% 95%;        /* #f6f4f0 */
     --foreground: 233 47% 9%;           /* #0C0F24 */
 
-    --card: 34 27% 95%;              /* #F7F4EF */
+    --card: 40 25% 95%;              /* #f6f4f0 */
     --card-foreground: 233 47% 9%;
 
-    --popover: 34 27% 95%;           /* #F7F4EF */
+    --popover: 40 25% 95%;           /* #f6f4f0 */
     --popover-foreground: 233 47% 9%;
 
     --primary: 233 47% 9%;              /* #0C0F24 */
-    --primary-foreground: 34 27% 95%; /* #F7F4EF */
+    --primary-foreground: 40 25% 95%; /* #f6f4f0 */
 
-    --secondary: 34 27% 95%;         /* #F7F4EF */
+    --secondary: 40 25% 95%;         /* #f6f4f0 */
     --secondary-foreground: 233 47% 9%;
 
     --muted: 30 28% 92%;             /* #F2ECE4 — deeper ivory for contrast layers */
@@ -75,25 +75,25 @@ realscout-simple-search {
     --destructive-foreground: 0 0% 100%;
 
     --border: 30 18% 86%;
-    --input: 34 27% 95%;             /* #F7F4EF */
+    --input: 40 25% 95%;             /* #f6f4f0 */
     --ring: 233 47% 9%;
 
     --radius: 0.25rem;
 
-    --warm-cream: 34 27% 95%;        /* #F7F4EF */
+    --warm-cream: 40 25% 95%;        /* #f6f4f0 */
 
     --black-soft: 233 52% 7%;           /* #080B1A */
     --black-card: 233 45% 13%;          /* #12162E */
-    --white-warm: 34 27% 95%;        /* #F7F4EF */
+    --white-warm: 40 25% 95%;        /* #f6f4f0 */
     --gray-mid: 30 3% 59%;           /* #9A9690 */
     --gray-dark: 30 3% 28%;          /* #4A4844 */
     --text-secondary: 25 4% 42%;     /* #6B6864 */
 
-    --sidebar-background: 34 27% 95%; /* #F7F4EF */
+    --sidebar-background: 40 25% 95%; /* #f6f4f0 */
     --sidebar-foreground: 233 47% 9%;
     --sidebar-primary: 233 47% 9%;
-    --sidebar-primary-foreground: 34 27% 95%; /* #F7F4EF */
-    --sidebar-accent: 34 27% 95%;
+    --sidebar-primary-foreground: 40 25% 95%; /* #f6f4f0 */
+    --sidebar-accent: 40 25% 95%;
     --sidebar-accent-foreground: 233 47% 9%;
     --sidebar-border: 30 18% 86%;
     --sidebar-ring: 233 47% 9%;

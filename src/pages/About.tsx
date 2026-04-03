@@ -85,7 +85,9 @@ const About = () => {
                 height={800}
               />
               
-              <img src={expEchelonLogo} alt="eXp Realty and Echelon Property Group logo" className="mt-6 w-full max-w-[320px] mx-auto" loading="lazy" decoding="async" />
+              <div className="mt-6 max-w-[320px] mx-auto rounded-sm overflow-hidden" style={{ backgroundColor: "hsl(var(--background))" }}>
+                <img src={expEchelonLogo} alt="eXp Realty and Echelon Property Group logo" className="w-full mix-blend-multiply" loading="lazy" decoding="async" />
+              </div>
             </div>
             <div>
               <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-2">Meet Taylor Sherwood</h2>

@@ -298,7 +298,7 @@ const AdvisorSection = () => (
 
           <ScrollReveal delay={120}>
             <p className="text-foreground text-lg md:text-[1.3rem] font-medium leading-[1.4] mb-10 tracking-[-0.01em]" style={{ fontFamily: '"Jost", sans-serif', fontWeight: 400 }}>
-              Most people search for homes. My clients acquire them.
+              Most people search for properties. My clients acquire them.
             </p>
           </ScrollReveal>
 

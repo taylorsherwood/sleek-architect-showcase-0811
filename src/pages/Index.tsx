@@ -673,7 +673,7 @@ const TestimonialsSection = () => {
   const t = testimonials[active];
 
   return (
-    <section className="bg-secondary" style={{ padding: "clamp(80px, 12vw, 160px) 0" }}>
+    <section className="bg-secondary" style={{ padding: "clamp(64px, 10vw, 120px) 0" }}>
       <div className="container mx-auto px-6">
         <div className="max-w-[800px] mx-auto text-center relative" style={{ minHeight: "320px" }}>
           <ScrollReveal>

@@ -174,7 +174,7 @@ const FeaturedLuxuryListings = () => {
               fontFamily: '"Jost", sans-serif',
             }}
           >
-            UPDATED: MARCH 2026
+            UPDATED: APRIL 2026
           </p>
 
           {/* PRIMARY ROW: Hero (70%) + 2 stacked (30%) */}

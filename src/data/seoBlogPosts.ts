@@ -4,6 +4,7 @@ import heroArch from "@/assets/hero-architecture.jpg";
 import communityLake from "@/assets/community-lake-austin.jpg";
 import listing2 from "@/assets/listing-2.jpg";
 import listing1 from "@/assets/listing-1.jpg";
+import blogRollingwoodVsWestlake from "@/assets/blog-rollingwood-vs-westlake.jpg";
 
 import { BlogPost } from "./blogPosts";
 

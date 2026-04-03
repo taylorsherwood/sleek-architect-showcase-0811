@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import Navigation from "@/components/Navigation";
 import expEchelonLogo from "@/assets/exp-echelon-logo.png";
+import taylorAboutHeadshot from "@/assets/taylor-about-headshot.jpeg";
 import { Link } from "react-router-dom";
 import SchemaMarkup, { taylorSherwoodSchema, createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import SEOHead from "@/components/SEOHead";
@@ -71,29 +72,15 @@ const About = () => {
       <section className="pb-20 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto grid md:grid-cols-[38fr_62fr] gap-12 items-start">
-            <div>
-              <div className="relative overflow-hidden">
-                <div
-                  className="w-full h-[56vh] md:h-[70vh]"
-                  role="img"
-                  aria-label="Taylor Sherwood, founder of Echelon Property Group and Austin luxury real estate advisor"
-                  title="Taylor Sherwood — Echelon Property Group founder and Austin real estate advisor"
-                  style={{
-                    backgroundImage: "url('/lovable-uploads/9265260a-6432-4ccb-ad05-c43da28ecfc3.jpg')",
-                    backgroundSize: "cover",
-                    backgroundPosition: "50% 10%",
-                    backgroundRepeat: "no-repeat",
-                    filter: "brightness(0.95)",
-                  }}
-                />
-                {/* Soft gradient overlay — fades toward text column */}
-                <div
-                  className="absolute inset-0 pointer-events-none"
-                  style={{
-                    background: "linear-gradient(to right, transparent 60%, hsl(var(--background) / 0.12) 100%), linear-gradient(to bottom, transparent 85%, hsl(var(--background) / 0.15) 100%)",
-                  }}
-                />
-              </div>
+            <div className="flex flex-col items-center">
+              <img
+                src={taylorAboutHeadshot}
+                alt="Taylor Sherwood, founder of Echelon Property Group and Austin luxury real estate advisor"
+                title="Taylor Sherwood — Echelon Property Group founder and Austin real estate advisor"
+                className="w-full max-h-[520px] md:max-h-[580px] object-contain"
+                loading="eager"
+                decoding="async"
+              />
               <div className="mt-6 max-w-[320px] mx-auto rounded-sm overflow-hidden" style={{ backgroundColor: "hsl(var(--background))" }}>
                 <img src={expEchelonLogo} alt="eXp Realty and Echelon Property Group logo" className="w-full mix-blend-multiply" loading="lazy" decoding="async" />
               </div>

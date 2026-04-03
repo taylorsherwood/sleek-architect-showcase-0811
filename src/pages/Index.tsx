@@ -325,7 +325,7 @@ const AdvisorSection = () => (
                 Every move is intentional, from how a property is sourced, to how it's negotiated, to how it's presented to the market. The difference isn't subtle. It's measurable in outcomes.
               </p>
               <p className="text-foreground/70 text-[16px] leading-[1.8]">
-                If you're looking for access, clarity, and execution at a higher level, you're in the right place. 
+                If you're looking for access, clarity, and execution at a higher level, you're ready to be in the upper echelon. 
                 You don't need more listings, you need a smarter approach.
               </p>
                <p className="text-foreground/70 text-[16px] leading-[1.8] mt-4 font-serif italic">

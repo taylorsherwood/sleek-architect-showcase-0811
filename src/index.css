@@ -249,6 +249,7 @@ realscout-simple-search {
     /* Removed heavy CSS filters (saturate/contrast/brightness/hue-rotate) —
        these force per-frame GPU reprocessing and cause choppiness.
        Color grading should be baked into the source video file. */
+    filter: brightness(1.12);
     transform: translateZ(0);
     backface-visibility: hidden;
   }

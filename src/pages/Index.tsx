@@ -14,6 +14,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import { formatPhoneNumber, getPhoneDigits, getTimestamp } from "@/lib/formUtils";
 import taylorBoatImg from "@/assets/taylor-headshot.jpeg";
 import taylorSignature from "@/assets/taylor-signature.png";
+import echelonWatermark from "@/assets/echelon-watermark.png";
 import ScrollingCredibilityStrip from "@/components/ScrollingCredibilityStrip";
 import ExpertiseSection from "@/components/ExpertiseSection";
 

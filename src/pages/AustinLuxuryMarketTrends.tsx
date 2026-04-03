@@ -79,7 +79,7 @@ const AustinLuxuryMarketTrends = () => {
             <span className="bg-secondary px-3 py-1 text-foreground">MARKET INSIGHTS</span>
             <span>April 3, 2026</span>
             <span>•</span>
-            <span>8 min read</span>
+            <span>12 min read</span>
             <span>•</span>
             <span>By Taylor Pullen</span>
           </div>

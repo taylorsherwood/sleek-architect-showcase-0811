@@ -268,21 +268,19 @@ const AdvisorSection = () => (
   <section className="bg-background">
     <div className="max-w-[1400px] mx-auto">
        <div className="grid lg:grid-cols-[minmax(480px,520px)_1fr] items-stretch" style={{ gap: 0 }}>
-         {/* Left — full-bleed image */}
-         <div className="relative overflow-hidden w-full aspect-[3/4] md:max-h-[420px] lg:max-h-none lg:aspect-auto lg:h-full">
-          <img
-            src={taylorBoatImg}
-            alt="Taylor Sherwood — Austin luxury real estate advisor and founder of Echelon Property Group"
-            title="Taylor Sherwood, Echelon Property Group"
-             className="w-full h-full object-cover [object-position:center_center] md:[object-position:center_20%] lg:[object-position:center_center]"
-            loading="lazy" decoding="async"
-            sizes="(max-width: 1024px) 100vw, 480px"
-            width={520}
-            height={693}
-          />
-          {/* Bottom gradient fade */}
-          <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-black/30 to-transparent" />
-        </div>
+         {/* Left — editorial portrait */}
+         <div className="flex items-center justify-center bg-background w-full lg:h-full" style={{ padding: "clamp(24px, 3vw, 48px)" }}>
+           <img
+             src={taylorAboutHeadshot}
+             alt="Taylor Sherwood — Austin luxury real estate advisor and founder of Echelon Property Group"
+             title="Taylor Sherwood, Echelon Property Group"
+             className="w-full max-h-[480px] md:max-h-[520px] lg:max-h-[580px] object-cover object-[30%_center] rounded-sm"
+             loading="lazy" decoding="async"
+             sizes="(max-width: 1024px) 100vw, 480px"
+             width={520}
+             height={693}
+           />
+         </div>
 
         {/* Right — content */}
         <div className="flex flex-col justify-center bg-secondary" style={{ padding: "clamp(36px, 5vw, 64px)" }}>

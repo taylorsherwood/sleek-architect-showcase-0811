@@ -896,7 +896,7 @@ const insights = [
 ];
 
 const InsightsSection = () => (
-  <section id="insights-section" className="bg-secondary" style={{ padding: "clamp(64px, 10vw, 120px) 0" }}>
+  <section id="insights-section" className="bg-secondary" style={{ padding: "clamp(64px, 10vw, 120px) 0 clamp(32px, 5vw, 56px)" }}>
     <div className="container mx-auto px-6">
       <div className="max-w-[1320px] mx-auto">
         <ScrollReveal>

@@ -1024,7 +1024,7 @@ const LeadCapture = () => {
    ───────────────────────────────────────────── */
 
 const FinalCTA = () => (
-    <section id="final-cta-section" data-nav-dark-zone style={{ padding: "clamp(64px, 10vw, 120px) 0" }} className="bg-background">
+    <section id="final-cta-section" data-nav-dark-zone style={{ padding: "clamp(32px, 5vw, 56px) 0 clamp(64px, 10vw, 120px)" }} className="bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-[700px] mx-auto text-center">
           <ScrollReveal>

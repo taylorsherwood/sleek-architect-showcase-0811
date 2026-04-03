@@ -864,14 +864,7 @@ const InsightsSection = () => (
 
         <ScrollReveal delay={200}>
           <div className="text-center mt-16">
-            <Link to="/blog"
-              className="inline-block border text-foreground px-10 py-[0.9rem] transition-all duration-[400ms]"
-              style={{
-                fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 400,
-                borderColor: "hsl(38 39% 61%)",
-              }}
-              onMouseEnter={(e) => { e.currentTarget.style.background = "hsl(38 39% 61%)"; e.currentTarget.style.color = "#fff"; }}
-              onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = ""; }}>
+            <Link to="/blog" className="cta-luxury">
               EXPLORE ALL INSIGHTS
             </Link>
           </div>

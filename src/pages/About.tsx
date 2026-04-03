@@ -75,8 +75,8 @@ const About = () => {
               <img
                 alt="Taylor Sherwood, founder of Echelon Property Group and Austin luxury real estate advisor"
                 title="Taylor Sherwood — Echelon Property Group founder and Austin real estate advisor"
-                className="w-full h-[50vh] md:h-[60vh] object-cover"
-                style={{ objectPosition: "48% 35%" }}
+                className="w-full h-[56vh] md:h-[68vh] object-cover"
+                style={{ objectPosition: "50% 25%" }}
                 src="/lovable-uploads/9265260a-6432-4ccb-ad05-c43da28ecfc3.jpg"
                 loading="eager"
                 decoding="async"

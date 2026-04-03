@@ -684,7 +684,7 @@ const TestimonialsSection = () => {
         // subtle drift: ~18px vertical, ~6px horizontal
         const y = (clamped - 0.5) * 18;
         const x = (clamped - 0.5) * -6;
-        watermarkRef.current.style.transform = `translate(calc(-2% + ${x}px), calc(4% + ${y}px))`;
+        watermarkRef.current.style.transform = `translate(calc(1% + ${x}px), calc(4% + ${y}px))`;
         ticking = false;
       });
     };

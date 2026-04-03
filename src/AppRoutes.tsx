@@ -100,6 +100,7 @@ const AppRoutes = () => {
           <Route path="/luxury-homes-austin" element={<Navigate to="/austin-luxury-homes-for-sale" replace />} />
           <Route path="/why-billionaires-are-moving-to-austin" element={<BillionaireMigration />} />
           <Route path="/blog/how-to-find-off-market-real-estate-deals-austin-2026" element={<OffMarketDealsAustin />} />
+          <Route path="/blog/austin-luxury-market-trends" element={<AustinLuxuryMarketTrends />} />
           <Route path="/invest" element={<Invest />} />
           <Route path="/private" element={<Navigate to="/off-market-real-estate-austin" replace />} />
           <Route path="/off-market-real-estate-austin" element={<OffMarketRealEstateAustin />} />

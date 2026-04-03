@@ -248,7 +248,7 @@ realscout-simple-search {
     will-change: transform;
   }
 
-  /* Hero CTA — frosted glass fill */
+  /* Hero CTA — frosted glass fill with psychological hierarchy */
   .hero-cta-gold,
   .hero-cta-light {
     animation: none !important;
@@ -257,36 +257,43 @@ realscout-simple-search {
     text-decoration: none !important;
     backdrop-filter: blur(14px) saturate(1.5) !important;
     -webkit-backdrop-filter: blur(14px) saturate(1.5) !important;
-    transition: background 0.15s ease-out, border-color 0.15s ease-out, transform 0.15s ease-out, box-shadow 0.15s ease-out !important;
-    transform: translateY(0) !important;
   }
+
+  /* ── Primary: warm gold — "lit from within" ── */
   .hero-cta-gold {
-    background: rgba(194, 164, 107, 0.48) !important;
-    border: 1px solid rgba(194, 164, 107, 0.85) !important;
+    background: rgba(194, 164, 107, 0.52) !important;
+    border: 1px solid rgba(194, 164, 107, 0.82) !important;
     color: hsl(var(--gold)) !important;
-    box-shadow: 0 0 18px -4px rgba(194, 164, 107, 0.15) !important;
+    box-shadow: inset 0 1px 12px -2px rgba(210, 180, 120, 0.12), 0 0 20px -6px rgba(194, 164, 107, 0.14) !important;
+    transition: background 0.12s ease-out, border-color 0.12s ease-out, transform 0.12s ease-out, box-shadow 0.12s ease-out, filter 0.12s ease-out !important;
+    transform: translateY(0) scale(1) !important;
   }
   .hero-cta-gold:hover,
   .hero-cta-gold:focus {
     background: rgba(194, 164, 107, 0.62) !important;
-    border: 1px solid hsl(var(--gold)) !important;
+    border: 1px solid rgba(194, 164, 107, 0.95) !important;
     color: hsl(var(--gold)) !important;
     transform: translateY(-1px) scale(1.03) !important;
-    box-shadow: 0 0 24px -4px rgba(194, 164, 107, 0.25) !important;
+    box-shadow: inset 0 1px 16px -2px rgba(210, 180, 120, 0.18), 0 0 26px -5px rgba(194, 164, 107, 0.2) !important;
+    filter: brightness(1.04) !important;
   }
+
+  /* ── Secondary: cool frost — understated companion ── */
   .hero-cta-light {
-    background: rgba(245, 243, 239, 0.36) !important;
-    border: 1px solid rgba(245, 243, 239, 0.6) !important;
-    color: rgba(245, 243, 239, 1) !important;
+    background: rgba(245, 243, 239, 0.28) !important;
+    border: 1px solid rgba(245, 243, 239, 0.45) !important;
+    color: rgba(245, 243, 239, 0.88) !important;
     box-shadow: none !important;
+    transition: background 0.17s ease-out, border-color 0.17s ease-out, transform 0.17s ease-out, box-shadow 0.17s ease-out !important;
+    transform: translateY(0) scale(1) !important;
   }
   .hero-cta-light:hover,
   .hero-cta-light:focus {
-    background: rgba(245, 243, 239, 0.50) !important;
-    border: 1px solid rgba(245, 243, 239, 0.78) !important;
-    color: rgba(245, 243, 239, 1) !important;
-    transform: translateY(-1px) scale(1.03) !important;
-    box-shadow: 0 2px 12px -2px rgba(245, 243, 239, 0.08) !important;
+    background: rgba(245, 243, 239, 0.40) !important;
+    border: 1px solid rgba(245, 243, 239, 0.62) !important;
+    color: rgba(245, 243, 239, 0.95) !important;
+    transform: translateY(-0.5px) scale(1.015) !important;
+    box-shadow: 0 1px 8px -3px rgba(245, 243, 239, 0.06) !important;
   }
 
   /* Hero overlay — minimal neutral gradient for text readability only */

@@ -240,7 +240,7 @@ const Hero = () => {
           </p>
 
           {/* ── CTA BUTTONS ── */}
-          <div className="hero-ctas flex flex-row gap-4 items-center"
+          <div className="hero-ctas flex flex-row gap-6 items-center"
             style={{
               opacity: heroVisible ? 1 : 0,
               transform: heroVisible ? "translateY(0)" : "translateY(10px)",
@@ -256,7 +256,7 @@ const Hero = () => {
                 letterSpacing: "0.18em",
                 textTransform: "uppercase",
                 fontWeight: 400,
-                padding: "13px 28px",
+                padding: "14px 30px",
                 minWidth: "200px",
                 maxWidth: "260px",
                 width: "fit-content",

@@ -260,6 +260,9 @@ const Hero = () => {
                 minWidth: "200px",
                 maxWidth: "260px",
                 width: "fit-content",
+                /* Micro-parallax: primary CTA drifts very slightly slower than surrounding text */
+                transform: `translateY(${scrollProgress * -2.5}px)`,
+                transition: "transform 0.12s ease-out",
               }}>
               EXPLORE OPPORTUNITIES
             </a>

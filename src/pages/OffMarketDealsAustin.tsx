@@ -89,6 +89,7 @@ const OffMarketDealsAustin = () => {
       <SchemaMarkup schema={faqSchema} />
       <SchemaMarkup schema={breadcrumbSchema} />
       <Navigation />
+      <div className="h-12 md:h-20" aria-hidden="true" />
 
       {/* Hero */}
       <section className="relative w-full h-[70vh] md:h-[72vh] overflow-hidden">

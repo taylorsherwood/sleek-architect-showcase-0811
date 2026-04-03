@@ -333,7 +333,7 @@ const AdvisorSection = () => (
 
             {/* Credential badges */}
             <div className="flex flex-wrap gap-2.5 mb-10">
-              {["eXp Luxury Division", "CLHMS GUILD", "$100M+ Career Volume"].map((badge) => (
+              {["eXp Luxury Division", "CLHMS GUILD", "$125M+ Career Volume"].map((badge) => (
                 <span key={badge} className="border px-3 py-1" style={{
                   borderColor: "hsl(38 39% 61%)",
                   color: "hsl(var(--gold-dark))",

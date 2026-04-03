@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Instagram, Linkedin } from "lucide-react";
+import { Instagram } from "lucide-react";
 
 const footerLinkStyle: React.CSSProperties = {
   fontFamily: '"Jost", sans-serif',

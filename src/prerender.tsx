@@ -49,9 +49,6 @@ const staticRoutes = [
   "/austin-land-development-opportunities",
   "/private-opportunities",
   "/blog/how-to-find-off-market-real-estate-deals-austin-2026",
-  "/blog/rollingwood-vs-westlake-hills",
-  "/blog/tarrytown-vs-bryker-woods",
-  "/blog/lake-austin-vs-lake-travis",
 ];
 
 const allPrerenderRoutes = Array.from(

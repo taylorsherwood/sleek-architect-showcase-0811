@@ -12,16 +12,10 @@ const BlogCTA = () => {
           Whether you're exploring off-market opportunities or evaluating investment properties across Austin, we can help you move with confidence.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Link
-            to="/off-market-real-estate-austin"
-            className="px-8 py-3 border border-primary text-primary text-xs tracking-[0.2em] uppercase hover:bg-gold hover:text-white hover:border-gold transition-colors duration-300"
-          >
+          <Link to="/off-market-real-estate-austin" className="cta-luxury">
             Explore Off-Market Homes
           </Link>
-          <Link
-            to="/invest"
-            className="px-8 py-3 border border-primary text-primary text-xs tracking-[0.2em] uppercase hover:bg-gold hover:text-white hover:border-gold transition-colors duration-300"
-          >
+          <Link to="/invest" className="cta-luxury cta-luxury--ghost">
             Investment Properties
           </Link>
         </div>

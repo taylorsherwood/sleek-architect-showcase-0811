@@ -219,8 +219,8 @@ const SearchSection = () => {
   }, []);
 
   return (
-    <section className="bg-secondary relative z-20" style={{ overflow: 'visible' }}>
-      <div className="container mx-auto px-6 py-16 md:py-24">
+    <section className="bg-secondary relative z-20" style={{ overflow: 'visible', padding: "clamp(64px, 10vw, 120px) 0" }}>
+      <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-minimal text-gold mb-4">
             EXPLORE THE MARKET
@@ -348,14 +348,7 @@ const AdvisorSection = () => (
             </div>
 
             <div className="flex flex-col sm:flex-row items-start gap-5">
-              <Link to="/contact"
-                className="inline-block border text-foreground px-10 py-[0.9rem] transition-all duration-[400ms]"
-                style={{
-                  fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 400,
-                  borderColor: "hsl(38 39% 61%)", color: "hsl(var(--foreground))",
-                }}
-                onMouseEnter={(e) => { e.currentTarget.style.background = "hsl(38 39% 61%)"; e.currentTarget.style.color = "#fff"; }}
-                onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = ""; }}>
+              <Link to="/contact" className="cta-luxury">
                 WORK WITH ME
               </Link>
               <Link to="/past-transactions"
@@ -473,9 +466,9 @@ const StatItem = ({ stat }: { stat: typeof stats[number] }) => {
 };
 
 const StatsStrip = () => (
-  <section style={{ background: "#080B1A" }}>
+  <section style={{ background: "#080B1A", padding: "clamp(64px, 10vw, 120px) 0" }}>
     <div className="container mx-auto px-6">
-      <div className="max-w-[1100px] mx-auto py-16 md:py-20">
+      <div className="max-w-[1100px] mx-auto">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat, i) => (
             <StatItem key={i} stat={stat} />
@@ -512,7 +505,7 @@ const properties = [
 ];
 
 const FeaturedProperties = () => (
-  <section className="bg-secondary" style={{ padding: "clamp(80px, 12vw, 160px) 0" }}>
+  <section className="bg-secondary" style={{ padding: "clamp(64px, 10vw, 120px) 0" }}>
     <div className="container mx-auto px-6">
       <div className="max-w-[1320px] mx-auto">
         <ScrollReveal>
@@ -608,14 +601,7 @@ const FeaturedProperties = () => (
 
         <ScrollReveal delay={200}>
           <div className="text-center mt-16">
-            <Link to="/austin-luxury-homes-for-sale"
-              className="inline-block border text-foreground px-10 py-[0.9rem] transition-all duration-[400ms]"
-              style={{
-                fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 400,
-                borderColor: "hsl(38 39% 61%)", color: "hsl(var(--foreground))",
-              }}
-              onMouseEnter={(e) => { e.currentTarget.style.background = "hsl(38 39% 61%)"; e.currentTarget.style.color = "#fff"; }}
-              onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = ""; }}>
+            <Link to="/austin-luxury-homes-for-sale" className="cta-luxury">
               EXPLORE ALL LISTINGS
             </Link>
           </div>
@@ -673,7 +659,7 @@ const TestimonialsSection = () => {
   const t = testimonials[active];
 
   return (
-    <section className="bg-secondary" style={{ padding: "clamp(80px, 12vw, 160px) 0" }}>
+    <section className="bg-secondary" style={{ padding: "clamp(64px, 10vw, 120px) 0" }}>
       <div className="container mx-auto px-6">
         <div className="max-w-[800px] mx-auto text-center relative" style={{ minHeight: "320px" }}>
           <ScrollReveal>
@@ -744,7 +730,7 @@ const communities = [
 ];
 
 const CommunitiesSection = () => (
-  <section className="bg-background" style={{ padding: "clamp(80px, 12vw, 160px) 0" }}>
+  <section className="bg-background" style={{ padding: "clamp(64px, 10vw, 120px) 0" }}>
     <div className="container mx-auto px-6">
       <div className="max-w-[1320px] mx-auto">
         <ScrollReveal>
@@ -812,14 +798,7 @@ const CommunitiesSection = () => (
 
         <ScrollReveal delay={200}>
           <div className="text-center mt-16">
-            <Link to="/communities"
-              className="inline-block border text-foreground px-10 py-[0.9rem] transition-all duration-[400ms]"
-              style={{
-                fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 400,
-                borderColor: "hsl(38 39% 61%)",
-              }}
-              onMouseEnter={(e) => { e.currentTarget.style.background = "hsl(38 39% 61%)"; e.currentTarget.style.color = "#fff"; }}
-              onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = ""; }}>
+            <Link to="/communities" className="cta-luxury">
               VIEW ALL COMMUNITIES
             </Link>
           </div>
@@ -843,7 +822,7 @@ const insights = [
 ];
 
 const InsightsSection = () => (
-  <section id="insights-section" className="bg-secondary" style={{ padding: "clamp(80px, 12vw, 160px) 0" }}>
+  <section id="insights-section" className="bg-secondary" style={{ padding: "clamp(64px, 10vw, 120px) 0" }}>
     <div className="container mx-auto px-6">
       <div className="max-w-[1320px] mx-auto">
         <ScrollReveal>
@@ -878,14 +857,7 @@ const InsightsSection = () => (
 
         <ScrollReveal delay={200}>
           <div className="text-center mt-16">
-            <Link to="/blog"
-              className="inline-block border text-foreground px-10 py-[0.9rem] transition-all duration-[400ms]"
-              style={{
-                fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 400,
-                borderColor: "hsl(38 39% 61%)",
-              }}
-              onMouseEnter={(e) => { e.currentTarget.style.background = "hsl(38 39% 61%)"; e.currentTarget.style.color = "#fff"; }}
-              onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = ""; }}>
+            <Link to="/blog" className="cta-luxury">
               EXPLORE ALL INSIGHTS
             </Link>
           </div>
@@ -923,7 +895,7 @@ const LeadCapture = () => {
   };
 
   return (
-    <section className="bg-background" style={{ padding: "clamp(80px, 12vw, 120px) 0" }}>
+    <section className="bg-background" style={{ padding: "clamp(64px, 10vw, 120px) 0" }}>
       <div className="container mx-auto px-6">
         <div className="max-w-[460px] mx-auto text-center">
           <ScrollReveal>
@@ -978,49 +950,35 @@ const LeadCapture = () => {
    ───────────────────────────────────────────── */
 
 const FinalCTA = () => (
-  <section id="final-cta-section" data-nav-dark-zone className="py-24 md:py-32 bg-background">
-    <div className="container mx-auto px-6">
-      <div className="max-w-[700px] mx-auto text-center">
-        <ScrollReveal>
-          <p className="text-minimal text-gold mb-5">GET STARTED</p>
-        </ScrollReveal>
-        <ScrollReveal delay={80}>
-          <h2 className="font-display text-3xl md:text-[2.75rem] font-normal mb-5 leading-[1.1] tracking-[0.03em] text-architectural">
-            Work With
-            <br />
-            Echelon Property Group
-          </h2>
-        </ScrollReveal>
-        <ScrollReveal delay={150}>
-          <p className="text-[15px] mb-12 max-w-[400px] mx-auto text-muted-foreground" style={{ fontFamily: '"Jost", sans-serif', fontWeight: 300, lineHeight: 1.8 }}>
-            Luxury real estate, redefined through strategy, access, and execution.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-5 justify-center">
-            <Link to="/buy"
-              className="inline-block text-center px-12 py-[14px] border transition-all duration-[400ms]"
-              style={{
-                fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 400,
-                borderColor: "hsl(38 39% 61%)", color: "hsl(38 39% 61%)", background: "transparent",
-              }}
-              onMouseEnter={(e) => { e.currentTarget.style.background = "hsl(38 39% 61%)"; e.currentTarget.style.color = "#fff"; }}
-              onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = "hsl(38 39% 61%)"; }}>
-              BUY PROPERTY
-            </Link>
-            <Link to="/sell"
-              className="inline-block text-center px-12 py-[14px] border transition-all duration-[400ms]"
-              style={{
-                fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 400,
-                borderColor: "hsl(var(--foreground) / 0.25)", color: "hsl(var(--foreground))", background: "transparent",
-              }}
-              onMouseEnter={(e) => { e.currentTarget.style.background = "hsl(38 39% 61%)"; e.currentTarget.style.color = "#fff"; e.currentTarget.style.borderColor = "hsl(38 39% 61%)"; }}
-              onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = "hsl(var(--foreground))"; e.currentTarget.style.borderColor = "hsl(var(--foreground) / 0.25)"; }}>
-              SELL PROPERTY
-            </Link>
-          </div>
-        </ScrollReveal>
+    <section id="final-cta-section" data-nav-dark-zone style={{ padding: "clamp(64px, 10vw, 120px) 0" }} className="bg-background">
+      <div className="container mx-auto px-6">
+        <div className="max-w-[700px] mx-auto text-center">
+          <ScrollReveal>
+            <p className="text-minimal text-gold mb-5">GET STARTED</p>
+          </ScrollReveal>
+          <ScrollReveal delay={80}>
+            <h2 className="font-display text-3xl md:text-[2.75rem] font-normal mb-5 leading-[1.1] tracking-[0.03em] text-architectural">
+              Work With
+              <br />
+              Echelon Property Group
+            </h2>
+          </ScrollReveal>
+          <ScrollReveal delay={150}>
+            <p className="text-[15px] mb-12 max-w-[400px] mx-auto text-muted-foreground" style={{ fontFamily: '"Jost", sans-serif', fontWeight: 300, lineHeight: 1.8 }}>
+              Luxury real estate, redefined through strategy, access, and execution.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-5 justify-center">
+              <Link to="/buy" className="cta-luxury">
+                BUY PROPERTY
+              </Link>
+              <Link to="/sell" className="cta-luxury cta-luxury--ghost">
+                SELL PROPERTY
+              </Link>
+            </div>
+          </ScrollReveal>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 );
 
 /* ─────────────────────────────────────────────
@@ -1069,10 +1027,8 @@ const Index = () => (
     <Navigation />
     <Hero />
     <TrustStrip />
-    <div className="py-4 md:py-6 bg-background" />
     <SearchSection />
     <ScrollingCredibilityStrip />
-    <div className="py-4 md:py-6 bg-background" />
     <AdvisorSection />
     <StatsStrip />
 

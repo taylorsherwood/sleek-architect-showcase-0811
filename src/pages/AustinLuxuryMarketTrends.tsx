@@ -47,6 +47,7 @@ const AustinLuxuryMarketTrends = () => {
         { name: "Blog", url: "https://www.echelonpropertygroup.com/blog" },
         { name: "Austin Luxury Market Trends", url: pageUrl },
       ])} />
+      <SchemaMarkup schema={createFAQSchema(faqs)} />
       <Navigation />
 
       {/* Hero */}

@@ -735,7 +735,7 @@ const TestimonialsSection = () => {
           <ScrollReveal>
             <p className="text-minimal text-gold mb-4">CLIENT EXPERIENCES</p>
             <h2 className="font-display text-2xl md:text-[2.2rem] font-normal text-foreground leading-[1.15] tracking-[0.02em] mb-8">
-              Discreet Representation. <span className="italic">Proven Results.</span>
+              clients first. <span className="italic">Results always.</span>
             </h2>
           </ScrollReveal>
 

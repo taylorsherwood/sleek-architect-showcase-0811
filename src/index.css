@@ -248,15 +248,13 @@ realscout-simple-search {
     will-change: transform;
   }
 
-  /* Hero CTA — frosted glass fill with psychological hierarchy */
+  /* Hero CTA — scene-integrated frosted glass */
   .hero-cta-gold,
   .hero-cta-light {
     animation: none !important;
-    background-image: none !important;
-    filter: none !important;
     text-decoration: none !important;
-    backdrop-filter: blur(14px) saturate(1.5) !important;
-    -webkit-backdrop-filter: blur(14px) saturate(1.5) !important;
+    backdrop-filter: blur(18px) saturate(1.45) !important;
+    -webkit-backdrop-filter: blur(18px) saturate(1.45) !important;
   }
 
   /* ── Primary: warm gold — "lit from within" ── */

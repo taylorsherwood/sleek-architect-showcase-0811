@@ -228,7 +228,7 @@ const GlobalLuxuryAdvertising = () => {
                   ...revealStyle(hero.visible, 300),
                   width: 48,
                   height: 1,
-                  background: "linear-gradient(90deg, transparent, hsl(43 30% 56% / 0.5), transparent)",
+                  background: "#b8a06d",
                 }}
               />
 

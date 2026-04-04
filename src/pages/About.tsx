@@ -384,6 +384,7 @@ const About = () => {
 
       {/* Testimonials — editorial single-quote display */}
       <AboutTestimonialsSection />
+      <div className="pt-20 bg-secondary" />
 
       {/* Philosophy */}
       <FadeIn>

@@ -312,7 +312,7 @@ const AdvisorSection = () => (
 
           <ScrollReveal delay={80}>
             <h2 className="font-display text-[1.85rem] md:text-[2.6rem] font-normal text-foreground leading-[1.06] tracking-[0.03em] mb-6">
-              Access. Strategy. Control.
+              Access Meets Expertise
             </h2>
           </ScrollReveal>
 

@@ -181,7 +181,7 @@ const Connect = () => {
 
           {/* ── Logo between sections ── */}
           <ScrollReveal>
-            <div className="flex flex-col items-center px-4" style={{ marginTop: isMobile ? "-4px" : "8px" }}>
+            <div className="flex flex-col items-center px-4" style={{ marginTop: isMobile ? "-16px" : "8px" }}>
               <img
                 src={combinedLogo}
                 alt="eXp Realty and Echelon Property Group combined brokerage logo"

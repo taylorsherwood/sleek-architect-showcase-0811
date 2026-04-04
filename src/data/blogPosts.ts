@@ -14,6 +14,7 @@ export interface BlogPost {
   category: string;
   image: string;
   href?: string;
+  metaTitle?: string;
 }
 
 export const blogPosts: BlogPost[] = [

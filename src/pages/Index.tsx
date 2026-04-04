@@ -1196,9 +1196,6 @@ const Index = () => (
     <ExpertiseSection />
 
     <TestimonialsSection />
-    <div className="bg-secondary flex justify-center">
-      <div className="w-24 h-px bg-[#b8a06d]" />
-    </div>
     <div className="h-16 md:h-24 bg-secondary" aria-hidden="true" />
 
     {/* Parallax break — lakefront / pool terrace */}

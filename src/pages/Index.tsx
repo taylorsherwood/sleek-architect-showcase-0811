@@ -78,14 +78,14 @@ const Hero = () => {
     const attemptPlay = () => {
       const p = video.play();
       if (p !== undefined) {
-        p.then(() => { video.playbackRate = 0.85; setVideoReady(true); setShowFallback(false); })
+        p.then(() => { video.playbackRate = 0.78; setVideoReady(true); setShowFallback(false); })
           .catch(() => {
             setTimeout(() => {
               video.muted = true;
               video.defaultMuted = true;
               const retry = video.play();
               if (retry !== undefined) {
-                retry.then(() => { video.playbackRate = 0.85; setVideoReady(true); setShowFallback(false); })
+                retry.then(() => { video.playbackRate = 0.78; setVideoReady(true); setShowFallback(false); })
                   .catch(() => setShowFallback(true));
               } else setShowFallback(true);
             }, RETRY_DELAY);

@@ -251,11 +251,8 @@ realscout-simple-search {
     object-fit: cover;
     object-position: 52% 18%;
     transition: opacity 0.7s ease;
-    /* Removed heavy CSS filters (saturate/contrast/brightness/hue-rotate) —
-       these force per-frame GPU reprocessing and cause choppiness.
-       Color grading should be baked into the source video file. */
-    filter: brightness(1.12);
-    transform: translateZ(0);
+    transform: translate3d(0, 0, 0);
+    will-change: opacity, transform;
     backface-visibility: hidden;
   }
 

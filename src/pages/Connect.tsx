@@ -275,7 +275,7 @@ const Connect = () => {
                     style={{
                       fontSize: "11px",
                       letterSpacing: "0.12em",
-                      color: (link as any).gold ? "#baa26a" : "hsl(233 50% 9% / 0.65)",
+                      color: "hsl(233 50% 9% / 0.65)",
                     }}
                   >
                     {link.label}

@@ -33,7 +33,7 @@ const neighborhoodInsights: Record<string, { title: string; description: string;
   ],
   "travis-heights": [
     { title: "Top Investment Neighborhoods in Austin", description: "Travis Heights' walkability and SoCo proximity make it a top investment play.", href: "/blog/top-investment-neighborhoods-austin" },
-    { title: "Best Luxury Neighborhoods in Austin", description: "How Travis Heights compares to Austin's premier addresses.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
+    { title: "Moving to Austin from California", description: "Why Travis Heights appeals to buyers relocating from coastal California.", href: "/blog/moving-to-austin-texas-from-california" },
   ],
   "downtown": [
     { title: "Austin Luxury Market Forecast", description: "What the data says about downtown Austin's condo market and pricing trajectory.", href: "/blog/austin-luxury-real-estate-market-forecast" },

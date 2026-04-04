@@ -6,7 +6,7 @@ const footerLinkStyle: React.CSSProperties = {
   fontWeight: 300,
   fontSize: "13px",
   lineHeight: 2,
-  color: "#9A9690",
+  color: "#ffffff",
 };
 
 const footerHeadingStyle: React.CSSProperties = {

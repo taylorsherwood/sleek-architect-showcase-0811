@@ -14,7 +14,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import { formatPhoneNumber, getPhoneDigits, getTimestamp } from "@/lib/formUtils";
 import blogRollingwoodVsWestlake from "@/assets/blog-rollingwood-vs-westlake.jpg";
 import blogTarrytownVsBrykerWoods from "@/assets/blog-tarrytown-vs-bryker-woods.jpg";
-import blogLakeAustinVsLakeTravis from "@/assets/blog-lake-austin-vs-lake-travis.jpg";
+import blogLakeAustinVsLakeTravis from "@/assets/lake-travis-sunset.jpg";
 import taylorBoatImg from "@/assets/taylor-headshot.jpeg";
 import taylorAboutHeadshot from "@/assets/taylor-about-headshot.jpeg";
 import taylorSignature from "@/assets/taylor-signature.png";

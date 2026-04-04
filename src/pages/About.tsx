@@ -10,7 +10,7 @@ import echelonWatermark from "@/assets/echelon-watermark.png";
 import ScrollReveal from "@/components/ScrollReveal";
 
 const InstagramGallery = lazy(() => import("@/components/InstagramGallery"));
-const Testimonials = lazy(() => import("@/components/Testimonials"));
+const Footer = lazy(() => import("@/components/Footer"));
 const Footer = lazy(() => import("@/components/Footer"));
 
 /* Subtle opacity-only fade-in on scroll */

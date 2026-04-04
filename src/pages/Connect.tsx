@@ -36,7 +36,7 @@ const Connect = () => {
     return () => window.removeEventListener("resize", updateLayout);
   }, []);
 
-  const heroProgress = heroHeight > 0 ? Math.min(window.scrollY / (heroHeight * 0.6), 1) : 0;
+  const heroProgress = heroHeight > 0 ? Math.min(scrollProgress / 0.6, 1) : 0;
 
   return (
     <>

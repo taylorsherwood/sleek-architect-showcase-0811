@@ -49,6 +49,7 @@ const Blog = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
             <div className="mb-8">
+              <p className="text-xs tracking-[0.2em] uppercase text-gold mb-4">Blogs and Articles</p>
               <h1 className="text-5xl md:text-7xl font-display font-normal text-architectural mb-8">
                 Austin Real Estate Insights
               </h1>

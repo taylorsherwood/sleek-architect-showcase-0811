@@ -246,7 +246,7 @@ const Connect = () => {
             <div className="flex-1 h-px" style={{ background: "linear-gradient(90deg, #b8a06d, transparent)" }} />
           </div>
 
-          <nav className="flex flex-col gap-2.5 px-8" aria-label="Quick links">
+          <nav className="flex flex-col gap-2.5 px-8 mt-2" aria-label="Quick links">
             {links.map((link, i) => (
               <ScrollReveal key={link.label} delay={i * 100}>
                 <a

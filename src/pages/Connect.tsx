@@ -23,15 +23,17 @@ const socials = [
 const Connect = () => {
   const scrollProgress = useHeroScroll();
   const [heroHeight, setHeroHeight] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const updateHeight = () => {
+    const updateLayout = () => {
       const heroEl = document.getElementById("connect-hero");
       if (heroEl) setHeroHeight(heroEl.offsetHeight);
+      setIsMobile(window.innerWidth <= 430);
     };
-    updateHeight();
-    window.addEventListener("resize", updateHeight);
-    return () => window.removeEventListener("resize", updateHeight);
+    updateLayout();
+    window.addEventListener("resize", updateLayout);
+    return () => window.removeEventListener("resize", updateLayout);
   }, []);
 
   const heroProgress = heroHeight > 0 ? Math.min(window.scrollY / (heroHeight * 0.6), 1) : 0;

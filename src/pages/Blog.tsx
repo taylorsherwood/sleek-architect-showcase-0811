@@ -67,7 +67,7 @@ const Blog = () => {
       <section className="pb-16">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
-            <div className="flex flex-wrap gap-6 justify-center md:justify-start">
+            <div className="flex flex-wrap gap-x-10 gap-y-4 justify-center md:justify-start">
               {categories.map((category) => (
                 <button
                   key={category}

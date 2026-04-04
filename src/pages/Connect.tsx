@@ -256,17 +256,21 @@ const Connect = () => {
                   className={`flex items-center justify-center w-full h-[52px] rounded-full transition-all duration-200 hover:-translate-y-0.5 ${(link as any).animated ? 'work-taylor-btn' : ''}`}
                   style={{
                     background: "hsl(0 0% 100% / 0.55)",
-                    border: "1.5px solid hsl(var(--gold) / 0.5)",
+                    ...( !(link as any).animated ? {
+                      border: "1.5px solid hsl(var(--gold) / 0.5)",
+                    } : {
+                      border: "none",
+                    }),
                     boxShadow: "0 2px 8px hsl(0 0% 0% / 0.03)",
                   }}
                   onMouseEnter={(e) => {
                     const el = e.currentTarget;
-                    el.style.borderColor = "hsl(var(--gold) / 0.75)";
+                    if (!(link as any).animated) el.style.borderColor = "hsl(var(--gold) / 0.75)";
                     el.style.boxShadow = "0 4px 16px hsl(0 0% 0% / 0.05)";
                   }}
                   onMouseLeave={(e) => {
                     const el = e.currentTarget;
-                    el.style.borderColor = "hsl(var(--gold) / 0.5)";
+                    if (!(link as any).animated) el.style.borderColor = "hsl(var(--gold) / 0.5)";
                     el.style.boxShadow = "0 2px 8px hsl(0 0% 0% / 0.03)";
                   }}
                 >

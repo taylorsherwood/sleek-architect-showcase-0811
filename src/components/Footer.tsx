@@ -125,7 +125,7 @@ const Footer = () => {
 
           {/* Explore insights link */}
           <div className="text-center mb-5">
-            <Link to="/blog" className="hover:text-white transition-colors duration-300" style={{ fontFamily: '"Jost", sans-serif', fontSize: "12px", letterSpacing: "0.15em", textTransform: "uppercase", fontWeight: 300, color: "hsl(38 39% 61% / 0.7)" }}>
+            <Link to="/blog" className="relative inline-block hover:text-white transition-colors duration-300 after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-px after:bottom-0 after:left-0 after:bg-gold after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left" style={{ fontFamily: '"Jost", sans-serif', fontSize: "12px", letterSpacing: "0.15em", textTransform: "uppercase", fontWeight: 300, color: "hsl(38 39% 61% / 0.7)" }}>
               Explore More Insights →
             </Link>
           </div>

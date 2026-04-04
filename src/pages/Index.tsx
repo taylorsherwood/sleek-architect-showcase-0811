@@ -345,11 +345,11 @@ const AdvisorSection = () => (
                    <br /><br />
                    <span className="font-bold">Let's get to work,</span>
                 </p>
-               <div className="!mt-0 !pt-0 -mb-6"><img src={taylorSignature} alt="Taylor Sherwood signature" className="block h-[160px] opacity-80 -translate-y-4" /></div>
+               <div className="!mt-0 !pt-0 -mb-8"><img src={taylorSignature} alt="Taylor Sherwood signature" className="block h-[140px] opacity-80 -translate-y-4" /></div>
             </div>
 
             {/* Credential badges */}
-            <div className="flex flex-wrap gap-2.5 mb-14">
+            <div className="flex flex-wrap gap-2.5 mb-8">
               {["eXp Luxury Division", "CLHMS GUILD", "$125M+ Career Volume"].map((badge) => (
                 <span key={badge} className="border px-3 py-1" style={{
                   borderColor: "hsl(38 39% 61%)",
@@ -364,7 +364,7 @@ const AdvisorSection = () => (
               ))}
             </div>
 
-            <div className="flex flex-col sm:flex-row items-start gap-5">
+            <div className="flex flex-col sm:flex-row items-start gap-4">
               <Link to="/contact" className="cta-luxury">
                 WORK WITH ME
               </Link>
@@ -376,7 +376,7 @@ const AdvisorSection = () => (
               </Link>
             </div>
 
-            <div className="flex items-center gap-6 mt-10">
+            <div className="flex items-center gap-6 mt-7">
               <a
                 href="https://www.instagram.com/theinvestorbroker/"
                 target="_blank"

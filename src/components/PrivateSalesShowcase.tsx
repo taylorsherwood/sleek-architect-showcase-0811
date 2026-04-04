@@ -25,7 +25,7 @@ export const privateSales: PrivateSaleItem[] = [
   {
     image: multifamilySAImage,
     price: "$14,950,000",
-    address: "Address Witheld",
+    address: "Address Withheld",
     area: "SAN ANTONIO",
     descriptor: "Multi-Family",
     label: "Represented Buyer",
@@ -41,7 +41,7 @@ export const privateSales: PrivateSaleItem[] = [
   {
     image: southeastAustinImage,
     price: "$6,950,000",
-    address: "Address Witheld",
+    address: "Address Withheld",
     area: "SOUTHEAST AUSTIN",
     descriptor: "Commercial Property",
     label: "Represented Buyer",
@@ -65,7 +65,7 @@ export const privateSales: PrivateSaleItem[] = [
   {
     image: highRoadImage,
     price: "$1,495,000",
-    address: "Address Witheld",
+    address: "Address Withheld",
     area: "WESTLAKE HILLS",
     descriptor: "",
     label: "Represented Buyer",
@@ -73,7 +73,7 @@ export const privateSales: PrivateSaleItem[] = [
   {
     image: bartonCreekImage,
     price: "$1,495,000",
-    address: "Address Witheld",
+    address: "Address Withheld",
     area: "BARTON CREEK",
     descriptor: "",
     label: "Off Market",

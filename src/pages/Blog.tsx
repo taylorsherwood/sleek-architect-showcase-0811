@@ -117,7 +117,7 @@ const Blog = () => {
                     
                     <div className="space-y-4">
                       <div className="flex items-center text-xs text-muted-foreground space-x-4">
-                        <span>{post.date}</span>
+                        <span>{formatDate(post.date)}</span>
                         <span>•</span>
                         <span>{post.readTime}</span>
                         <span>•</span>

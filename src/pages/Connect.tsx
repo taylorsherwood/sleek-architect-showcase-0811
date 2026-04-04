@@ -11,7 +11,7 @@ import { useHeroScroll } from "@/hooks/useHeroScroll";
 const links = [
   { label: "Complimentary Property Valuation", href: "https://www.echelonpropertygroup.com/sell" },
   { label: "Blogs and Press Releases", href: "https://www.echelonpropertygroup.com/blog" },
-  { label: "Work With Taylor", href: "/about", gold: true },
+  { label: "Work With Taylor", href: "/about" },
 ];
 
 const socials = [

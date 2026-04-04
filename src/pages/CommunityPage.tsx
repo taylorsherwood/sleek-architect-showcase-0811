@@ -37,7 +37,7 @@ const neighborhoodInsights: Record<string, { title: string; description: string;
   ],
   "downtown": [
     { title: "Austin Luxury Market Forecast", description: "What the data says about downtown Austin's condo market and pricing trajectory.", href: "/blog/austin-luxury-real-estate-market-forecast" },
-    { title: "Top Investment Neighborhoods in Austin", description: "Cash flow, appreciation, and the case for downtown Austin condos.", href: "/blog/top-investment-neighborhoods-austin" },
+    { title: "Moving to Austin — Complete Relocation Guide", description: "Downtown living, cost of living, and what to expect as a new Austin resident.", href: "/blog/moving-to-austin-texas-complete-relocation-guide" },
   ],
   "dripping-springs": [
     { title: "Top Investment Neighborhoods in Austin", description: "Dripping Springs sits on Austin's primary growth corridor — here's why investors are paying attention.", href: "/blog/top-investment-neighborhoods-austin" },

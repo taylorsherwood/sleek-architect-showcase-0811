@@ -209,7 +209,7 @@ const Navigation = () => {
               color: "hsl(38 39% 61%)",
               background: "transparent",
             }}
-            onMouseEnter={(e) => { e.currentTarget.style.background = "hsl(38 39% 61%)"; e.currentTarget.style.color = "#0C0F24"; }}
+            onMouseEnter={(e) => { e.currentTarget.style.background = "hsl(38 39% 61%)"; e.currentTarget.style.color = "#ffffff"; }}
             onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = "hsl(38 39% 61%)"; }}
           >
             CLIENT PORTAL

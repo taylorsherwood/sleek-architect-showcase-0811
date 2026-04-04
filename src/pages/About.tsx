@@ -363,7 +363,7 @@ const About = () => {
 
       {/* Results & Relationships */}
       <FadeIn>
-        <section className="pt-20 pb-20 bg-secondary">
+        <section className="pt-20 pb-0 bg-secondary">
           <div className="container mx-auto px-6">
             <div className="max-w-[720px] mx-auto">
               <h2 className="text-4xl md:text-5xl font-display font-normal text-architectural mb-8">
@@ -384,6 +384,7 @@ const About = () => {
 
       {/* Testimonials — editorial single-quote display */}
       <AboutTestimonialsSection />
+      <div className="pt-20 bg-secondary" />
 
       {/* Philosophy */}
       <FadeIn>

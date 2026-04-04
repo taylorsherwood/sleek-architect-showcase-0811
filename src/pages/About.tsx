@@ -273,6 +273,9 @@ const About = () => {
         </section>
       </FadeIn>
 
+      {/* Testimonials — editorial single-quote display */}
+      <AboutTestimonialsSection />
+
       {/* Philosophy */}
       <FadeIn>
         <section className="pt-20 pb-20 bg-background">

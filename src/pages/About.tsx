@@ -183,7 +183,9 @@ const About = () => {
             <div>
               <p className="text-minimal text-gold mb-4 font-extrabold">OUR PHILOSOPHY</p>
               <h2 className="text-4xl md:text-5xl font-display font-normal text-architectural mb-8">
-                Every Property Tells a Story
+                Every Property Tells
+                <br />
+                a Story
               </h2>
               <div className="space-y-6 text-muted-foreground leading-relaxed">
                 <p>

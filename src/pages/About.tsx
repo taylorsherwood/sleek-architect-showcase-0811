@@ -347,7 +347,7 @@ const About = () => {
       <Suspense fallback={<div className="min-h-[200px]" />}><InstagramGallery /></Suspense>
       <div className="py-6 bg-background" />
 
-      <Suspense fallback={<div className="min-h-[200px]" />}><Testimonials /></Suspense>
+      
 
       {/* CTA */}
       <section className="pt-20 pb-20 bg-secondary text-center">

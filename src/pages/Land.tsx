@@ -117,7 +117,7 @@ const LandPage = () => {
             <p className="text-minimal mb-6" style={{ color: "hsl(var(--gold-light))" }}>
               AUSTIN LAND &amp; INVESTMENT
             </p>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-normal text-architectural mb-6 text-warm-cream">
+            <h1 className="text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-display font-normal text-architectural mb-6 text-warm-cream">
               Austin Land &amp; Investment{" "}
               <span className="italic">Property</span>
             </h1>

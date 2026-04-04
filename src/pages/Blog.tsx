@@ -151,7 +151,7 @@ const Blog = () => {
       <section className="py-28 bg-secondary">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-display font-normal text-architectural mb-8">
+            <h2 className="text-2xl sm:text-4xl md:text-5xl font-display font-normal text-architectural mb-8">
               Austin Luxury Real Estate Insights
             </h2>
             <div className="space-y-6 text-muted-foreground leading-relaxed">
@@ -187,7 +187,7 @@ const Blog = () => {
       <section className="py-32 bg-secondary">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-6xl font-light text-architectural mb-8">
+            <h2 className="text-2xl sm:text-4xl md:text-6xl font-light text-architectural mb-8">
               Stay Informed
             </h2>
             <p className="text-xl text-muted-foreground mb-12">

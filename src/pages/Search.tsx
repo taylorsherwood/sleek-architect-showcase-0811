@@ -88,7 +88,7 @@ const SearchPage = () => {
             >
               AUSTIN REAL ESTATE
             </p>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-normal text-architectural mb-6 text-warm-cream" style={{ fontStyle: "normal" }}>
+            <h1 className="text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-display font-normal text-architectural mb-6 text-warm-cream" style={{ fontStyle: "normal" }}>
               Search All <span style={{ color: "hsl(var(--gold))" }}>Listings</span>
             </h1>
             <p className="max-w-2xl mx-auto" style={{

@@ -24,7 +24,7 @@ const BlogPost = () => {
         <div className="pt-32 pb-32">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-4xl md:text-6xl font-light text-architectural mb-8">
+              <h1 className="text-2xl sm:text-4xl md:text-6xl font-light text-architectural mb-8">
                 Post Not Found
               </h1>
               <Link 
@@ -120,7 +120,7 @@ const BlogPost = () => {
                 <span>By {post.author}</span>
               </div>
               
-              <h1 className="text-4xl md:text-6xl font-light text-architectural mb-6">
+              <h1 className="text-2xl sm:text-4xl md:text-6xl font-light text-architectural mb-6">
                 {post.title}
               </h1>
               

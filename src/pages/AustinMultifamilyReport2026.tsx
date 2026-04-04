@@ -205,7 +205,7 @@ const AustinMultifamilyReport2026 = () => {
             {/* text */}
             <div className="flex-1 text-center md:text-left">
               <p className="text-minimal text-[hsl(var(--gold))] mb-2">INVESTOR REPORT</p>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-normal text-primary-foreground leading-[1.1] mb-3">
+              <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-normal text-primary-foreground leading-[1.1] mb-3">
                 Austin Multifamily Market Outlook 2026
               </h1>
               <p className="text-lg md:text-xl text-primary-foreground/65 leading-relaxed max-w-xl mb-2">

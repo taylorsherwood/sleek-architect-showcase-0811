@@ -229,7 +229,7 @@ const Listings = () => {
       <section className="py-20 bg-secondary">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-display font-normal text-architectural mb-8">
+            <h2 className="text-2xl sm:text-4xl md:text-5xl font-display font-normal text-architectural mb-8">
               Beyond What You See Online
             </h2>
             <div className="space-y-6 text-muted-foreground leading-relaxed">
@@ -248,7 +248,7 @@ const Listings = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-display font-normal text-architectural mb-8">
+            <h2 className="text-2xl sm:text-4xl md:text-5xl font-display font-normal text-architectural mb-8">
               Explore Austin Neighborhoods
             </h2>
             <div className="space-y-6 text-muted-foreground leading-relaxed">

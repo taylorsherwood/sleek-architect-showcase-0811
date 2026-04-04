@@ -233,7 +233,7 @@ const About = () => {
           <div className="container mx-auto px-6">
             <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
               <div className="max-w-[720px]">
-                <h2 className="text-4xl md:text-5xl font-display font-normal text-architectural mb-8">
+                <h2 className="text-2xl sm:text-4xl md:text-5xl font-display font-normal text-architectural mb-8">
                   Our Approach to Austin Real Estate
                 </h2>
                 <div className="space-y-6 text-muted-foreground leading-[1.7]">
@@ -316,7 +316,7 @@ const About = () => {
         <section className="pt-20 pb-20 bg-secondary">
           <div className="container mx-auto px-6">
             <div className="max-w-[720px] mx-auto">
-              <h2 className="text-4xl md:text-5xl font-display font-normal text-architectural mb-8">
+              <h2 className="text-2xl sm:text-4xl md:text-5xl font-display font-normal text-architectural mb-8">
                 Expertise in Austin's
                 <br />
                 Premier Neighborhoods
@@ -342,7 +342,7 @@ const About = () => {
         <section className="pt-20 pb-20 bg-background">
           <div className="container mx-auto px-6">
             <div className="max-w-[720px] mx-auto">
-              <h2 className="text-4xl md:text-5xl font-display font-normal text-architectural mb-8">
+              <h2 className="text-2xl sm:text-4xl md:text-5xl font-display font-normal text-architectural mb-8">
                 Tailored Client Experience
               </h2>
               <div className="space-y-6 text-muted-foreground leading-[1.7]">
@@ -366,7 +366,7 @@ const About = () => {
         <section className="pt-20 pb-0 bg-secondary">
           <div className="container mx-auto px-6">
             <div className="max-w-[720px] mx-auto">
-              <h2 className="text-4xl md:text-5xl font-display font-normal text-architectural mb-8">
+              <h2 className="text-2xl sm:text-4xl md:text-5xl font-display font-normal text-architectural mb-8">
                 Results and Relationships
               </h2>
               <div className="space-y-6 text-muted-foreground leading-[1.7]">
@@ -393,7 +393,7 @@ const About = () => {
             <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
               <div>
                 <p className="text-minimal text-gold mb-4 font-extrabold">OUR PHILOSOPHY</p>
-                <h2 className="text-4xl md:text-5xl font-display font-normal text-architectural mb-8">
+                <h2 className="text-2xl sm:text-4xl md:text-5xl font-display font-normal text-architectural mb-8">
                   Every Property Tells
                   <br />
                   a Story
@@ -462,7 +462,7 @@ const About = () => {
       {/* CTA */}
       <section className="pt-20 pb-20 bg-secondary text-center">
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl md:text-5xl font-display font-normal text-architectural mb-6">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl font-display font-normal text-architectural mb-6">
             Ready to Work Together?
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto mb-10">

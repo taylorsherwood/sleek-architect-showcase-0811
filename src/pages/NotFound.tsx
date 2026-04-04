@@ -40,7 +40,7 @@ const NotFound = () => {
         >
           PAGE NOT FOUND
         </p>
-        <h1 className="font-display text-4xl md:text-5xl font-light text-primary-foreground mb-5 tracking-tight">
+        <h1 className="font-display text-2xl sm:text-4xl md:text-5xl font-light text-primary-foreground mb-5 tracking-tight">
           This Page Isn't Available
         </h1>
         <p className="text-primary-foreground/50 text-base md:text-lg leading-relaxed mb-10 max-w-md mx-auto">

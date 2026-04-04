@@ -193,7 +193,7 @@ const Hero = () => {
               </Link>
             </div>
             <p style={{ ...anim("0.5s"), fontFamily: '"Jost", sans-serif', fontSize: "10px", letterSpacing: "0.12em", color: "rgba(255,255,255,0.55)", marginTop: "8px", textTransform: "uppercase", textShadow: "0 0 12px rgba(255,255,255,0.35), 0 0 24px rgba(255,255,255,0.15)" }}>
-              View active and off-market opportunities
+              VIEW ACTIVE AND OFF-MARKET PROPERTIES
             </p>
           </div>
 

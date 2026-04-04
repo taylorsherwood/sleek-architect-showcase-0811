@@ -25,7 +25,7 @@ export const privateSales: PrivateSaleItem[] = [
   {
     image: multifamilySAImage,
     price: "$14,950,000",
-    address: "Address Witheld",
+    address: "Address Withheld",
     area: "SAN ANTONIO",
     descriptor: "Multi-Family",
     label: "Represented Buyer",

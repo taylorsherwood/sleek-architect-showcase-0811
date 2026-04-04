@@ -111,7 +111,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   className="inline-flex items-center gap-2 hover:text-white transition-colors duration-300"
-                  style={{ ...footerLinkStyle, fontSize: "12px", color: "hsl(38 39% 61%)" }}
+                  style={{ ...footerLinkStyle, fontSize: "12px" }}
                 >
                   <Instagram className="w-4 h-4" />
                   @theinvestorbroker

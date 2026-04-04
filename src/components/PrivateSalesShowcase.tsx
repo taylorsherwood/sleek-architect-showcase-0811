@@ -27,7 +27,7 @@ export const privateSales: PrivateSaleItem[] = [
     address: "Address Witheld",
     area: "SAN ANTONIO",
     descriptor: "Multi-Family",
-    label: "Private Sale",
+    label: "Represented Buyer",
   },
   {
     image: southeastAustinImage,
@@ -35,7 +35,7 @@ export const privateSales: PrivateSaleItem[] = [
     address: "Address Witheld",
     area: "SOUTHEAST AUSTIN",
     descriptor: "Commercial Property",
-    label: "Private Sale",
+    label: "Represented Buyer",
   },
   {
     image: fm620Image,
@@ -59,7 +59,7 @@ export const privateSales: PrivateSaleItem[] = [
     address: "Address Witheld",
     area: "WESTLAKE HILLS",
     descriptor: "",
-    label: "Private Sale",
+    label: "Represented Buyer",
   },
   {
     image: bartonCreekImage,

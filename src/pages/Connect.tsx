@@ -1,7 +1,4 @@
-import { useState, useEffect, lazy, Suspense } from "react";
 import SEOHead from "@/components/SEOHead";
-
-const PrivateOpportunities = lazy(() => import("@/components/PrivateOpportunities"));
 import taylorHeadshot from "@/assets/taylor-headshot.jpg";
 import combinedLogo from "@/assets/exp-echelon-combined-logo.png";
 import { Instagram, Mail, Phone, Home, Search, Mountain } from "lucide-react";
@@ -22,21 +19,6 @@ const socials = [
 
 const Connect = () => {
   const scrollProgress = useHeroScroll();
-  const [heroHeight, setHeroHeight] = useState(0);
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const updateLayout = () => {
-      const heroEl = document.getElementById("connect-hero");
-      if (heroEl) setHeroHeight(heroEl.offsetHeight);
-      setIsMobile(window.innerWidth <= 430);
-    };
-    updateLayout();
-    window.addEventListener("resize", updateLayout);
-    return () => window.removeEventListener("resize", updateLayout);
-  }, []);
-
-  const heroProgress = heroHeight > 0 ? Math.min(scrollProgress / 0.6, 1) : 0;
 
   return (
     <>
@@ -181,13 +163,14 @@ const Connect = () => {
 
           {/* ── Logo between sections ── */}
           <ScrollReveal>
-            <div className="flex flex-col items-center px-4" style={{ marginTop: isMobile ? "-16px" : "8px" }}>
+            <div className="mt-[-16px] flex flex-col items-center px-4 sm:mt-2">
               <img
                 src={combinedLogo}
                 alt="eXp Realty and Echelon Property Group combined brokerage logo"
-                className="w-full"
-                style={{ height: isMobile ? "110px" : "300px", marginBottom: "8px", objectFit: "contain", objectPosition: "53.25% center" }}
+                className="h-[110px] w-full sm:h-[300px]"
+                style={{ marginBottom: "8px", objectFit: "contain", objectPosition: "53.25% center" }}
                 loading="lazy"
+                decoding="async"
               />
             </div>
           </ScrollReveal>

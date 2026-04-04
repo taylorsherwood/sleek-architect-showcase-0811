@@ -93,7 +93,7 @@ const BlogPost = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title={post.title}
+        title={post.metaTitle || post.title}
         description={post.excerpt}
         ogType="article"
       />

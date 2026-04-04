@@ -515,9 +515,9 @@ realscout-simple-search {
     border-color: hsl(var(--foreground) / 0.25);
   }
   .cta-luxury--ghost:hover {
-    background: hsl(41 30% 57%);
+    background: #b8a06d;
     color: #fff;
-    border-color: hsl(41 30% 57%);
+    border-color: #b8a06d;
   }
   .cta-luxury--on-dark {
     border-color: rgba(245, 243, 239, 0.5);

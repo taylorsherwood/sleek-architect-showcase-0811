@@ -147,10 +147,10 @@ const Listings = () => {
               <br />
               and Opportunities
             </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mb-6">
+            <p className="text-base sm:text-xl text-muted-foreground max-w-3xl mb-6">
               Every property represented by Echelon Property Group reflects our commitment to quality, strategic positioning, and exceptional presentation. From luxury residences in Barton Creek and Westlake Hills to commercial investment opportunities across Central Texas, our portfolio is curated for discerning buyers and investors.
             </p>
-            <p className="text-lg text-muted-foreground max-w-3xl">
+            <p className="text-sm sm:text-lg text-muted-foreground max-w-3xl">
               Beyond what appears on public listing portals, our team maintains access to exclusive off-market inventory through established relationships with Austin's top agents, developers, and property owners. If you don't see what you're looking for here, <Link to="/contact" className="text-foreground hover:text-gold transition-colors duration-300 underline underline-offset-4">connect with our team</Link> — the right opportunity may already be within reach.
             </p>
           </div>

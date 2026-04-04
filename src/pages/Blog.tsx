@@ -75,14 +75,14 @@ const Blog = () => {
                   className={`text-minimal transition-colors duration-300 relative group ${
                     activeCategory === category 
                       ? "text-foreground" 
-                      : "text-muted-foreground hover:text-foreground"
+                      : "text-muted-foreground hover:text-gold"
                   }`}
                 >
                   {category}
-                  <span className={`absolute bottom-0 left-0 w-full h-px bg-foreground transition-transform duration-300 origin-left ${
+                  <span className={`absolute bottom-0 left-0 w-full h-px transition-all duration-300 origin-left ${
                     activeCategory === category 
-                      ? "scale-x-100" 
-                      : "scale-x-0 group-hover:scale-x-100"
+                      ? "scale-x-100 bg-foreground" 
+                      : "scale-x-0 group-hover:scale-x-100 bg-gold"
                   }`}></span>
                 </button>
               ))}

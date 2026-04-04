@@ -1059,8 +1059,85 @@ const FinalCTA = () => (
 );
 
 /* ─────────────────────────────────────────────
-   NOSCRIPT FALLBACK (for crawlers)
+   SECTION 9B — EDITORIAL INSIGHTS (Curated Articles)
    ───────────────────────────────────────────── */
+
+const editorialArticles = [
+  {
+    title: "Rollingwood vs Westlake Hills",
+    description: "How two of Austin's most prestigious neighborhoods compare for luxury buyers.",
+    image: blogRollingwoodVsWestlake,
+    href: "/blog/rollingwood-vs-westlake-hills",
+  },
+  {
+    title: "Tarrytown vs Bryker Woods",
+    description: "A closer look at Austin's most sought-after 78703 neighborhoods.",
+    image: blogTarrytownVsBrykerWoods,
+    href: "/blog/tarrytown-vs-bryker-woods",
+  },
+  {
+    title: "Lake Austin vs Lake Travis",
+    description: "Waterfront lifestyles compared — proximity, pricing, and daily experience.",
+    image: blogLakeAustinVsLakeTravis,
+    href: "/blog/lake-austin-vs-lake-travis",
+  },
+];
+
+const EditorialInsights = () => (
+  <section className="bg-secondary" style={{ padding: "clamp(64px, 9vw, 110px) 0" }}>
+    <div className="container mx-auto px-6">
+      <div className="max-w-[1200px] mx-auto">
+        {/* Header */}
+        <div className="text-center mb-14 md:mb-16">
+          <ScrollReveal>
+            <p className="text-minimal text-gold mb-4 tracking-[0.25em]">CURATED KNOWLEDGE</p>
+          </ScrollReveal>
+          <ScrollReveal delay={60}>
+            <h2 className="font-display text-[1.65rem] md:text-[2.25rem] font-normal text-architectural leading-[1.1] tracking-[0.03em] mb-4">
+              Austin Real Estate Insights
+            </h2>
+          </ScrollReveal>
+          <ScrollReveal delay={100}>
+            <p className="text-muted-foreground max-w-xl mx-auto" style={{ fontFamily: '"Jost", sans-serif', fontWeight: 300, fontSize: "15px", lineHeight: 1.75 }}>
+              Strategic guidance, neighborhood comparisons, and market insights for buyers and sellers navigating Austin's luxury real estate market.
+            </p>
+          </ScrollReveal>
+        </div>
+
+        {/* 3-column editorial grid */}
+        <div className="grid md:grid-cols-3 gap-6 md:gap-8">
+          {editorialArticles.map((article, i) => (
+            <ScrollReveal key={article.href} delay={i * 80}>
+              <Link to={article.href} className="group block">
+                {/* Image */}
+                <div className="aspect-[4/3] overflow-hidden mb-5">
+                  <img
+                    src={article.image}
+                    alt={`${article.title} — Austin luxury real estate`}
+                    className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                {/* Text */}
+                <h3
+                  className="font-display text-lg md:text-xl font-normal text-architectural leading-[1.2] tracking-[0.02em] mb-2 group-hover:text-gold transition-colors duration-300"
+                >
+                  {article.title}
+                </h3>
+                <p className="text-muted-foreground" style={{ fontFamily: '"Jost", sans-serif', fontWeight: 300, fontSize: "14px", lineHeight: 1.65 }}>
+                  {article.description}
+                </p>
+              </Link>
+            </ScrollReveal>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+);
+
+
 
 const NoscriptFallback = () => (
   <noscript>

@@ -11,7 +11,7 @@ import { useHeroScroll } from "@/hooks/useHeroScroll";
 const links = [
   { label: "Complimentary Property Valuation", href: "https://www.echelonpropertygroup.com/sell" },
   { label: "Blogs and Press Releases", href: "https://www.echelonpropertygroup.com/blog" },
-  { label: "Work With Taylor", href: "/about", gold: true },
+  { label: "Work With Taylor", href: "/about" },
 ];
 
 const socials = [
@@ -253,24 +253,20 @@ const Connect = () => {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer nofollow"
-                  className={`flex items-center justify-center w-full h-[52px] rounded-full transition-all duration-200 hover:-translate-y-0.5 ${(link as any).gold ? 'rotating-gold-border' : ''}`}
+                  className="flex items-center justify-center w-full h-[52px] rounded-full transition-all duration-200 hover:-translate-y-0.5"
                   style={{
-                    ...( !(link as any).gold ? {
-                      background: (link as any).transparent ? "transparent" : "hsl(0 0% 100% / 0.55)",
-                      border: (link as any).transparent ? "1px solid hsl(233 50% 9% / 0.06)" : "1.5px solid hsl(var(--gold) / 0.5)",
-                      boxShadow: (link as any).transparent ? "none" : "0 2px 8px hsl(0 0% 0% / 0.03)",
-                    } : {
-                      boxShadow: "0 2px 8px hsl(0 0% 0% / 0.03)",
-                    }),
+                    background: "hsl(0 0% 100% / 0.55)",
+                    border: "1.5px solid hsl(var(--gold) / 0.5)",
+                    boxShadow: "0 2px 8px hsl(0 0% 0% / 0.03)",
                   }}
                   onMouseEnter={(e) => {
                     const el = e.currentTarget;
-                    if (!(link as any).gold) el.style.borderColor = "hsl(var(--gold) / 0.75)";
+                    el.style.borderColor = "hsl(var(--gold) / 0.75)";
                     el.style.boxShadow = "0 4px 16px hsl(0 0% 0% / 0.05)";
                   }}
                   onMouseLeave={(e) => {
                     const el = e.currentTarget;
-                    if (!(link as any).gold) el.style.borderColor = "hsl(var(--gold) / 0.5)";
+                    el.style.borderColor = "hsl(var(--gold) / 0.5)";
                     el.style.boxShadow = "0 2px 8px hsl(0 0% 0% / 0.03)";
                   }}
                 >
@@ -279,7 +275,7 @@ const Connect = () => {
                     style={{
                       fontSize: "11px",
                       letterSpacing: "0.12em",
-                      color: (link as any).gold ? "#baa26a" : "hsl(233 50% 9% / 0.65)",
+                      color: "hsl(233 50% 9% / 0.65)",
                     }}
                   >
                     {link.label}

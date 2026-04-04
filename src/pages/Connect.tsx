@@ -342,7 +342,7 @@ const Connect = () => {
                     color: "hsl(233 50% 9% / 0.65)",
                   }}
                 >
-                  Information About Brokerage Services
+                  INFORMATION ABOUT BROKERAGE SERVICES (IABS)
                 </span>
               </a>
             </div>

@@ -8,7 +8,12 @@ import SchemaMarkup, { realEstateAgentSchema, createBreadcrumbSchema, createFAQS
 import { blogPosts } from "@/data/blogPosts";
 import { seoBlogPosts } from "@/data/seoBlogPosts";
 
-const allPosts = [...seoBlogPosts, ...blogPosts];
+const allPosts = [...seoBlogPosts, ...blogPosts].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
+const formatDate = (dateStr: string) => {
+  const [y, m, d] = dateStr.split('-');
+  return `${m}/${d}/${y}`;
+};
 
 const Blog = () => {
   const [activeCategory, setActiveCategory] = useState("ALL");
@@ -112,7 +117,7 @@ const Blog = () => {
                     
                     <div className="space-y-4">
                       <div className="flex items-center text-xs text-muted-foreground space-x-4">
-                        <span>{post.date}</span>
+                        <span>{formatDate(post.date)}</span>
                         <span>•</span>
                         <span>{post.readTime}</span>
                         <span>•</span>

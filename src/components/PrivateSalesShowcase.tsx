@@ -28,7 +28,7 @@ export const privateSales: PrivateSaleItem[] = [
     address: "Address Withheld",
     area: "SAN ANTONIO",
     descriptor: "Multi-Family",
-    label: "Represented Buyer",
+    label: "PRIVATE SALE",
   },
   {
     image: spanishOaksImage,
@@ -36,7 +36,7 @@ export const privateSales: PrivateSaleItem[] = [
     address: "Address Withheld",
     area: "SPANISH OAKS",
     descriptor: "",
-    label: "Represented Buyer",
+    label: "PRIVATE SALE",
   },
   {
     image: southeastAustinImage,
@@ -44,7 +44,7 @@ export const privateSales: PrivateSaleItem[] = [
     address: "Address Withheld",
     area: "SOUTHEAST AUSTIN",
     descriptor: "Commercial Property",
-    label: "Represented Buyer",
+    label: "PRIVATE SALE",
   },
   {
     image: fm620Image,
@@ -60,7 +60,7 @@ export const privateSales: PrivateSaleItem[] = [
     address: "5931 W Cedar Bayou Lynchburg Road",
     area: "BAYTOWN, TEXAS",
     descriptor: "Commercial Property",
-    label: "Represented Buyer",
+    label: "PRIVATE SALE",
   },
   {
     image: highRoadImage,
@@ -68,7 +68,7 @@ export const privateSales: PrivateSaleItem[] = [
     address: "Address Withheld",
     area: "WESTLAKE HILLS",
     descriptor: "",
-    label: "Represented Buyer",
+    label: "PRIVATE SALE",
   },
   {
     image: bartonCreekImage,

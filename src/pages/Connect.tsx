@@ -269,7 +269,6 @@ const Connect = () => {
                     el.style.borderColor = "hsl(var(--gold) / 0.5)";
                     el.style.boxShadow = "0 2px 8px hsl(0 0% 0% / 0.03)";
                   }}
-                  }}
                 >
                   <span
                     className="font-sans font-medium uppercase text-center transition-colors duration-200"

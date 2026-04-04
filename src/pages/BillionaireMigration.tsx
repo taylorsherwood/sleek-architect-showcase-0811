@@ -167,42 +167,42 @@ const BillionaireMigration = () => {
                 </p>
                 <ul className="space-y-2.5 mb-6 pl-1">
                   <li className="text-foreground/60 flex items-start gap-3">
-                    <span className="text-gold/50 mt-[7px] text-[7px]">●</span>
+                    <span className="text-gold mt-[7px] text-[7px]">●</span>
                     <span>
                       <strong className="text-foreground/80 font-medium">Elon Musk</strong> — Tesla
                       HQ relocation and personal move to Texas
                     </span>
                   </li>
                   <li className="text-foreground/60 flex items-start gap-3">
-                    <span className="text-gold/50 mt-[7px] text-[7px]">●</span>
+                    <span className="text-gold mt-[7px] text-[7px]">●</span>
                     <span>
                       <strong className="text-foreground/80 font-medium">Michael Dell</strong> —
                       Founder & CEO of Dell Technologies, longtime Austin resident
                     </span>
                   </li>
                   <li className="text-foreground/60 flex items-start gap-3">
-                    <span className="text-gold/50 mt-[7px] text-[7px]">●</span>
+                    <span className="text-gold mt-[7px] text-[7px]">●</span>
                     <span>
                       <strong className="text-foreground/80 font-medium">Travis Kalanick</strong> —
                       Uber co-founder, now Austin-based
                     </span>
                   </li>
                   <li className="text-foreground/60 flex items-start gap-3">
-                    <span className="text-gold/50 mt-[7px] text-[7px]">●</span>
+                    <span className="text-gold mt-[7px] text-[7px]">●</span>
                     <span>
                       <strong className="text-foreground/80 font-medium">Joe Liemandt</strong> —
                       Austin-based billionaire founder of Trilogy Software
                     </span>
                   </li>
                   <li className="text-foreground/60 flex items-start gap-3">
-                    <span className="text-gold/50 mt-[7px] text-[7px]">●</span>
+                    <span className="text-gold mt-[7px] text-[7px]">●</span>
                     <span>
                       <strong className="text-foreground/80 font-medium">Brian Sheth</strong> —
                       billionaire private equity leader formerly of Vista Equity Partners
                     </span>
                   </li>
                   <li className="text-foreground/60 flex items-start gap-3">
-                    <span className="text-gold/50 mt-[7px] text-[7px]">●</span>
+                    <span className="text-gold mt-[7px] text-[7px]">●</span>
                     <span>
                       <strong className="text-foreground/80 font-medium">David Sacks</strong> —
                       venture capitalist expanding presence in Texas
@@ -230,15 +230,15 @@ const BillionaireMigration = () => {
                 <p className="text-foreground/60 mb-4">Texas offers:</p>
                 <ul className="space-y-2.5 mb-6 pl-1">
                   <li className="text-foreground/60 flex items-start gap-3">
-                    <span className="text-gold/50 mt-[7px] text-[7px]">●</span>
+                    <span className="text-gold mt-[7px] text-[7px]">●</span>
                     <span>No state income tax</span>
                   </li>
                   <li className="text-foreground/60 flex items-start gap-3">
-                    <span className="text-gold/50 mt-[7px] text-[7px]">●</span>
+                    <span className="text-gold mt-[7px] text-[7px]">●</span>
                     <span>No state-level capital gains tax</span>
                   </li>
                   <li className="text-foreground/60 flex items-start gap-3">
-                    <span className="text-gold/50 mt-[7px] text-[7px]">●</span>
+                    <span className="text-gold mt-[7px] text-[7px]">●</span>
                     <span>A more predictable business environment</span>
                   </li>
                 </ul>
@@ -307,7 +307,7 @@ const BillionaireMigration = () => {
                 </p>
                 <ul className="space-y-2.5 mb-6 pl-1">
                   <li className="text-foreground/60 flex items-start gap-3">
-                    <span className="text-gold/50 mt-[7px] text-[7px]">●</span>
+                    <span className="text-gold mt-[7px] text-[7px]">●</span>
                     <Link
                       to="/communities/lake-austin"
                       className="text-foreground/80 underline hover:text-foreground/50"
@@ -316,7 +316,7 @@ const BillionaireMigration = () => {
                     </Link>
                   </li>
                   <li className="text-foreground/60 flex items-start gap-3">
-                    <span className="text-gold/50 mt-[7px] text-[7px]">●</span>
+                    <span className="text-gold mt-[7px] text-[7px]">●</span>
                     <Link
                       to="/communities/westlake-hills"
                       className="text-foreground/80 underline hover:text-foreground/50"
@@ -325,7 +325,7 @@ const BillionaireMigration = () => {
                     </Link>
                   </li>
                   <li className="text-foreground/60 flex items-start gap-3">
-                    <span className="text-gold/50 mt-[7px] text-[7px]">●</span>
+                    <span className="text-gold mt-[7px] text-[7px]">●</span>
                     <Link
                       to="/communities/tarrytown"
                       className="text-foreground/80 underline hover:text-foreground/50"

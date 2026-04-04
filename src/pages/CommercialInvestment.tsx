@@ -435,7 +435,7 @@ const CommercialInvestment = () => {
                   <div className="mt-6 pt-6 border-t border-border">
                     <Link
                       to="/contact"
-                      className="text-gold hover:text-gold/80 transition-colors text-xs tracking-[0.15em] uppercase"
+                      className="text-gold hover:text-gold transition-colors text-xs tracking-[0.15em] uppercase"
                     >
                       REQUEST DETAILS →
                     </Link>

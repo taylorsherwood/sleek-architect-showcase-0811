@@ -82,7 +82,7 @@ const RelatedInsights = ({ maxLinks = 5 }: Props) => {
                   to={link.to}
                   className="group flex items-center gap-3 text-foreground/80 hover:text-gold transition-colors duration-300"
                 >
-                  <span className="w-6 h-px bg-gold/40 group-hover:w-10 transition-all duration-300" />
+                  <span className="w-6 h-px bg-gold group-hover:w-10 transition-all duration-300" />
                   <span className="text-base md:text-lg leading-relaxed">{link.label}</span>
                 </Link>
               </li>

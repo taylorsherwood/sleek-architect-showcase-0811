@@ -433,7 +433,7 @@ const Sell = () => {
                   <ScrollReveal key={item} delay={220 + i * 70}>
                     <li className="flex items-start gap-4 group">
                       <span
-                        className="mt-[7px] w-2 h-2 rounded-full bg-gold/60 group-hover:bg-gold shrink-0 transition-colors duration-300"
+                        className="mt-[7px] w-2 h-2 rounded-full bg-gold group-hover:bg-gold shrink-0 transition-colors duration-300"
                         aria-hidden="true"
                       />
                       <span className="text-foreground/85 text-[14.5px] leading-relaxed tracking-wide">

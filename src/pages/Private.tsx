@@ -200,7 +200,7 @@ const Private = () => {
               <FadeIn key={seg.title} delay={i * 100}>
                 <Link
                   to={seg.to}
-                  className="group block h-full border border-border/50 hover:border-gold/40 transition-all duration-500 hover:shadow-[0_8px_30px_rgba(0,0,0,0.06)]"
+                  className="group block h-full border border-border/50 hover:border-gold transition-all duration-500 hover:shadow-[0_8px_30px_rgba(0,0,0,0.06)]"
                 >
                   <div className="aspect-[4/3] overflow-hidden">
                     <img

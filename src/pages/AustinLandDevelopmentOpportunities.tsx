@@ -219,7 +219,7 @@ const AustinLandDevelopmentOpportunities = () => {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start max-w-6xl mx-auto">
             {/* Left — Copy */}
             <div className="lg:pt-8">
-              <p className="text-gold/80 mb-4 font-bold" style={labelStyle}>
+              <p className="text-gold mb-4 font-bold" style={labelStyle}>
                 LAND & DEVELOPMENT
               </p>
               <h1 className="font-display text-[2rem] md:text-[2.8rem] lg:text-[3.2rem] font-light text-white leading-[1.1] mb-6 tracking-tight">
@@ -252,7 +252,7 @@ const AustinLandDevelopmentOpportunities = () => {
 
             {/* Right — Form */}
             <div id="land-form" className="border border-white/10 p-6 md:p-10 bg-white/[0.02]">
-              <p className="text-gold/80 mb-3 font-bold" style={labelStyle}>
+              <p className="text-gold mb-3 font-bold" style={labelStyle}>
                 ACQUISITION CRITERIA
               </p>
               <h2 className="font-display text-xl md:text-2xl font-light text-white mb-6">
@@ -267,7 +267,7 @@ const AustinLandDevelopmentOpportunities = () => {
       {/* ── WHAT WE SOURCE ──────────────────────────── */}
       <section className="py-16 md:py-24 bg-[hsl(220,14%,6%)] border-t border-white/5">
         <div className="container mx-auto px-6 max-w-4xl">
-          <p className="text-gold/80 text-center mb-4 font-bold" style={labelStyle}>
+          <p className="text-gold text-center mb-4 font-bold" style={labelStyle}>
             SOURCING CAPABILITIES
           </p>
           <h2 className="font-display text-2xl md:text-3xl font-light text-white text-center mb-12">
@@ -304,7 +304,7 @@ const AustinLandDevelopmentOpportunities = () => {
       {/* ── WHY WORK WITH US ────────────────────────── */}
       <section className="py-16 md:py-24 bg-[hsl(220,14%,8%)] border-t border-white/5">
         <div className="container mx-auto px-6 max-w-3xl text-center">
-          <p className="text-gold/80 mb-4 font-bold" style={labelStyle}>
+          <p className="text-gold mb-4 font-bold" style={labelStyle}>
             THE ECHELON ADVANTAGE
           </p>
           <h2 className="font-display text-2xl md:text-3xl font-light text-white mb-12">
@@ -337,7 +337,7 @@ const AustinLandDevelopmentOpportunities = () => {
       {/* ── CURRENT LISTINGS ────────────────────────── */}
       <section className="py-16 md:py-24 bg-[hsl(220,14%,6%)] border-t border-white/5">
         <div className="container mx-auto px-6 max-w-3xl text-center">
-          <p className="text-gold/80 mb-4 font-bold" style={labelStyle}>
+          <p className="text-gold mb-4 font-bold" style={labelStyle}>
             ACTIVE INVENTORY
           </p>
           <h2 className="font-display text-2xl md:text-3xl font-light text-white mb-4">

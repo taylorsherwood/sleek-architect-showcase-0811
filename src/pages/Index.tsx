@@ -932,7 +932,7 @@ const InsightsSection = () => (
                     {article.title}
                   </h3>
                   <p className="text-muted-foreground/70 text-[13.5px] leading-[1.85] flex-1" style={{ fontFamily: '"Jost", sans-serif', fontWeight: 300 }}>{article.excerpt}</p>
-                  <span className="mt-5 text-gold/60 group-hover:text-gold transition-colors duration-[400ms]" style={{ fontFamily: '"Jost", sans-serif', fontSize: "10px", letterSpacing: "0.2em", textTransform: "uppercase", fontWeight: 400 }}>
+                  <span className="mt-5 text-gold group-hover:text-gold transition-colors duration-[400ms]" style={{ fontFamily: '"Jost", sans-serif', fontSize: "10px", letterSpacing: "0.2em", textTransform: "uppercase", fontWeight: 400 }}>
                     READ MORE →
                   </span>
                 </div>

@@ -106,8 +106,7 @@ const Connect = () => {
                   style={{
                     width: "40px",
                     height: "1px",
-                    background:
-                      "linear-gradient(90deg, transparent, hsl(var(--gold) / 0.6), transparent)",
+                    background: "#b8a06d",
                   }}
                 />
 

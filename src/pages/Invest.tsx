@@ -516,7 +516,7 @@ const Invest = () => {
             {processSteps.map((step, i) => (
               <ScrollReveal key={step.number} delay={i * 100}>
                 <div className="relative group">
-                  <span className="text-5xl font-display font-normal text-gold/40 mb-4 block transition-colors duration-500 group-hover:text-gold">
+                  <span className="text-5xl font-display font-normal text-gold mb-4 block transition-colors duration-500 group-hover:text-gold">
                     {step.number}
                   </span>
                   <h3 className="text-lg font-display font-normal text-foreground mb-2 transition-colors duration-300 group-hover:text-muted-foreground">
@@ -558,7 +558,7 @@ const Invest = () => {
               />
               <div className="mt-5">
                 <h3 className="text-base font-display font-normal text-foreground tracking-wide">Kitchen Renovation — South Austin</h3>
-                <div className="w-8 h-px bg-gold/30 mt-2 mb-2" />
+                <div className="w-8 h-px bg-gold mt-2 mb-2" />
                 <p className="text-[0.82rem] text-muted-foreground/75 leading-relaxed">Full cosmetic overhaul with layout refinement and finish upgrades aligned with current buyer expectations.</p>
               </div>
             </ScrollReveal>
@@ -571,7 +571,7 @@ const Invest = () => {
               />
               <div className="mt-5">
                 <h3 className="text-base font-display font-normal text-foreground tracking-wide">Living Space Transformation — South Austin</h3>
-                <div className="w-8 h-px bg-gold/30 mt-2 mb-2" />
+                <div className="w-8 h-px bg-gold mt-2 mb-2" />
                 <p className="text-[0.82rem] text-muted-foreground/75 leading-relaxed">Repositioned through lighting, layout clarity, and material updates to create a more open and marketable environment.</p>
               </div>
             </ScrollReveal>
@@ -584,7 +584,7 @@ const Invest = () => {
               />
               <div className="mt-5">
                 <h3 className="text-base font-display font-normal text-foreground tracking-wide">Kitchen Upgrade — Westlake Hills</h3>
-                <div className="w-8 h-px bg-gold/30 mt-2 mb-2" />
+                <div className="w-8 h-px bg-gold mt-2 mb-2" />
                 <p className="text-[0.82rem] text-muted-foreground/75 leading-relaxed">Refined surfaces, modernized finishes, and improved flow to elevate overall presentation and perceived value.</p>
               </div>
             </ScrollReveal>
@@ -597,7 +597,7 @@ const Invest = () => {
               />
               <div className="mt-5">
                 <h3 className="text-base font-display font-normal text-foreground tracking-wide">Bathroom Transformation — South Austin</h3>
-                <div className="w-8 h-px bg-gold/30 mt-2 mb-2" />
+                <div className="w-8 h-px bg-gold mt-2 mb-2" />
                 <p className="text-[0.82rem] text-muted-foreground/75 leading-relaxed">Clean-lined materials, upgraded fixtures, and improved lighting to align with today's buyer standards.</p>
               </div>
             </ScrollReveal>
@@ -662,19 +662,19 @@ const Invest = () => {
             <form onSubmit={handlePropSubmit} className="max-w-md mx-auto text-left">
               <div className="space-y-2.5">
                 <div>
-                  <input type="text" name="propName" placeholder="Full Name" value={propForm.propName} onChange={handlePropChange} className="w-full bg-transparent border-b border-border/60 px-1 py-3 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-gold/50 transition-colors duration-300 text-sm" required />
+                  <input type="text" name="propName" placeholder="Full Name" value={propForm.propName} onChange={handlePropChange} className="w-full bg-transparent border-b border-border/60 px-1 py-3 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-gold transition-colors duration-300 text-sm" required />
                   {propErrors.propName && <p className="text-xs text-destructive mt-1">{propErrors.propName}</p>}
                 </div>
                 <div>
-                  <input type="tel" name="propPhone" placeholder="Phone" value={propForm.propPhone} onChange={handlePropChange} className="w-full bg-transparent border-b border-border/60 px-1 py-3 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-gold/50 transition-colors duration-300 text-sm" required />
+                  <input type="tel" name="propPhone" placeholder="Phone" value={propForm.propPhone} onChange={handlePropChange} className="w-full bg-transparent border-b border-border/60 px-1 py-3 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-gold transition-colors duration-300 text-sm" required />
                   {propErrors.propPhone && <p className="text-xs text-destructive mt-1">{propErrors.propPhone}</p>}
                 </div>
                 <div>
-                  <input type="email" name="propEmail" placeholder="Email" value={propForm.propEmail} onChange={handlePropChange} className="w-full bg-transparent border-b border-border/60 px-1 py-3 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-gold/50 transition-colors duration-300 text-sm" required />
+                  <input type="email" name="propEmail" placeholder="Email" value={propForm.propEmail} onChange={handlePropChange} className="w-full bg-transparent border-b border-border/60 px-1 py-3 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-gold transition-colors duration-300 text-sm" required />
                   {propErrors.propEmail && <p className="text-xs text-destructive mt-1">{propErrors.propEmail}</p>}
                 </div>
                 <div>
-                  <input type="text" name="propAddress" placeholder="Property Address" value={propForm.propAddress} onChange={handlePropChange} className="w-full bg-transparent border-b border-border/60 px-1 py-3 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-gold/50 transition-colors duration-300 text-sm" required />
+                  <input type="text" name="propAddress" placeholder="Property Address" value={propForm.propAddress} onChange={handlePropChange} className="w-full bg-transparent border-b border-border/60 px-1 py-3 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-gold transition-colors duration-300 text-sm" required />
                   {propErrors.propAddress && <p className="text-xs text-destructive mt-1">{propErrors.propAddress}</p>}
                 </div>
               </div>

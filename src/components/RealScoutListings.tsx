@@ -67,7 +67,7 @@ const RealScoutListings = ({
             <div ref={containerRef} className="w-full overflow-hidden" />
           ) : (
             <div className="w-full min-h-[200px] flex items-center justify-center">
-              <div className="w-6 h-6 border-2 border-gold/30 border-t-gold rounded-full animate-spin" />
+              <div className="w-6 h-6 border-2 border-gold border-t-gold rounded-full animate-spin" />
             </div>
           )}
         </div>

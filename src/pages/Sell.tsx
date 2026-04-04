@@ -316,7 +316,7 @@ const Sell = () => {
           </div>
 
           {/* ── Gold divider ── */}
-          <div className="max-w-5xl mx-auto h-px bg-gradient-to-r from-transparent via-gold to-transparent mb-10" />
+          <div className="max-w-5xl mx-auto h-px bg-gold mb-10" />
 
           {/* ── Stats ── */}
           <div className="max-w-5xl mx-auto grid grid-cols-3 gap-6 text-center">
@@ -387,7 +387,7 @@ const Sell = () => {
       {/* ── Thin gold divider above Marketing Strategy ── */}
       <div className="bg-secondary">
         <div className="container mx-auto px-6">
-          <div className="max-w-5xl mx-auto h-px bg-gradient-to-r from-transparent via-gold/40 to-transparent" />
+          <div className="max-w-5xl mx-auto h-px bg-gold" />
         </div>
       </div>
 
@@ -433,7 +433,7 @@ const Sell = () => {
                   <ScrollReveal key={item} delay={220 + i * 70}>
                     <li className="flex items-start gap-4 group">
                       <span
-                        className="mt-[7px] w-2 h-2 rounded-full bg-gold/60 group-hover:bg-gold shrink-0 transition-colors duration-300"
+                        className="mt-[7px] w-2 h-2 rounded-full bg-gold group-hover:bg-gold shrink-0 transition-colors duration-300"
                         aria-hidden="true"
                       />
                       <span className="text-foreground/85 text-[14.5px] leading-relaxed tracking-wide">

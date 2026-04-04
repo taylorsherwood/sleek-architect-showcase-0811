@@ -135,7 +135,7 @@ const Testimonials = () => {
                   <p className="font-display text-[0.925rem] text-foreground tracking-tight">
                     {t.name}
                   </p>
-                  <p className="text-minimal text-gold/80 mt-1">{t.type}</p>
+                  <p className="text-minimal text-gold mt-1">{t.type}</p>
                   {t.context && (
                     <p className="text-xs text-muted-foreground/80 mt-0.5 font-light">
                       {t.context}

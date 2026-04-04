@@ -66,7 +66,7 @@ const InstagramGallery = () => {
               />
             ) : (
               <div className="flex items-center justify-center py-16">
-                <div className="w-6 h-6 border-2 border-gold/30 border-t-gold rounded-full animate-spin" />
+                <div className="w-6 h-6 border-2 border-gold border-t-gold rounded-full animate-spin" />
               </div>
             )}
           </div>

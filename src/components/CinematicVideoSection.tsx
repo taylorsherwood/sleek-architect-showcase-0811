@@ -105,7 +105,7 @@ const CinematicVideoSection = () => {
             <div className="max-w-[560px]">
               {/* Eyebrow */}
               <p
-                className="text-minimal text-gold/90 mb-6 font-extrabold"
+                className="text-minimal text-gold mb-6 font-extrabold"
                 style={reveal(visible, 0)}
               >
                 IMAGE IN MOTION

@@ -172,7 +172,7 @@ const Hero = () => {
                   transform: "translateX(0) translateZ(0)", willChange: "transform, box-shadow",
                   transition: "transform 250ms ease, box-shadow 250ms ease, background 250ms ease",
                 }}
-                onMouseEnter={e => { e.currentTarget.style.transform = "translateX(3px) translateZ(0)"; e.currentTarget.style.background = "#a6904f"; e.currentTarget.style.boxShadow = "0 4px 20px rgba(184,160,109,0.35)"; }}
+                onMouseEnter={e => { e.currentTarget.style.transform = "translateX(3px) translateZ(0)"; e.currentTarget.style.background = "#a8924e"; e.currentTarget.style.boxShadow = "0 4px 20px rgba(184,160,109,0.35)"; }}
                 onMouseLeave={e => { e.currentTarget.style.transform = "translateX(0) translateZ(0)"; e.currentTarget.style.background = "#b8a06d"; e.currentTarget.style.boxShadow = "0 2px 12px rgba(184,160,109,0.25)"; }}
               >
                 Explore Available Opportunities →
@@ -932,7 +932,7 @@ const InsightsSection = () => (
                     {article.title}
                   </h3>
                   <p className="text-muted-foreground/70 text-[13.5px] leading-[1.85] flex-1" style={{ fontFamily: '"Jost", sans-serif', fontWeight: 300 }}>{article.excerpt}</p>
-                  <span className="mt-5 text-gold/60 group-hover:text-gold transition-colors duration-[400ms]" style={{ fontFamily: '"Jost", sans-serif', fontSize: "10px", letterSpacing: "0.2em", textTransform: "uppercase", fontWeight: 400 }}>
+                  <span className="mt-5 text-gold group-hover:text-gold transition-colors duration-[400ms]" style={{ fontFamily: '"Jost", sans-serif', fontSize: "10px", letterSpacing: "0.2em", textTransform: "uppercase", fontWeight: 400 }}>
                     READ MORE →
                   </span>
                 </div>

@@ -36,7 +36,7 @@ const Connect = () => {
     return () => window.removeEventListener("resize", updateLayout);
   }, []);
 
-  const heroProgress = heroHeight > 0 ? Math.min(window.scrollY / (heroHeight * 0.6), 1) : 0;
+  const heroProgress = heroHeight > 0 ? Math.min(scrollProgress / 0.6, 1) : 0;
 
   return (
     <>
@@ -75,9 +75,9 @@ const Connect = () => {
                 alt="Taylor Sherwood – Austin Luxury Real Estate Advisor"
                 className="absolute inset-0 w-full h-full object-cover"
                 style={{ objectPosition: "50% 12%" }}
-                fetchPriority="high"
-                    loading="lazy" decoding="async"
-                    />
+                loading="eager"
+                decoding="async"
+              />
 
               {/* Cinematic gradient overlay — fades to warm cream */}
               <div
@@ -187,7 +187,7 @@ const Connect = () => {
                 alt="eXp Realty and Echelon Property Group combined brokerage logo"
                 className="w-full"
                 style={{ height: isMobile ? "110px" : "300px", marginBottom: "8px", objectFit: "contain", objectPosition: "53.25% center" }}
-                loading="eager"
+                loading="lazy"
               />
             </div>
           </ScrollReveal>

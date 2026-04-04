@@ -210,7 +210,7 @@ const AustinLuxuryHomes = () => {
                 Echelon Property Group provides the expertise and access you need to find your perfect Austin luxury home.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link to="/contact" className="inline-block text-minimal bg-primary text-primary-foreground hover:bg-primary/90 px-10 py-4 transition-colors duration-300">
+                <Link to="/contact" className="inline-block text-minimal bg-primary text-primary-foreground hover:!bg-gold hover:!text-white px-10 py-4 transition-colors duration-300">
                   CONTACT US
                 </Link>
                 <a

@@ -870,6 +870,7 @@ If you are comparing neighborhoods and want a deeper look at Austin's luxury lan
   },
   {
     id: "tarrytown-vs-bryker-woods",
+    metaTitle: "Tarrytown vs Bryker Woods Austin | 78703 Neighborhood Guide",
     title: "Tarrytown vs Bryker Woods: Choosing the Right 78703 Lifestyle",
     excerpt: "Compare Tarrytown vs Bryker Woods in Austin's 78703. Explore lifestyle, home styles, pricing, and which neighborhood fits your goals.",
     content: `For buyers targeting central Austin, few zip codes carry the prestige and convenience of 78703. Within it, Tarrytown and Bryker Woods offer two distinct interpretations of close-in luxury living.

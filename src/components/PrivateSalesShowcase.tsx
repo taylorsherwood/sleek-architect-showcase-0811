@@ -5,6 +5,7 @@ import southeastAustinImage from "@/assets/southeast-austin-commercial.webp";
 import highRoadImage from "@/assets/the-high-road-westlake.webp";
 import clearCreekImage from "@/assets/clear-creek-road.jpg";
 import bartonCreekImage from "@/assets/barton-creek.jpg";
+import multifamilySAImage from "@/assets/private-sale-multifamily-sa.webp";
 
 /* ------------------------------------------------------------------ */
 /*  DATA — Edit this array to add / remove / update private sales      */
@@ -20,6 +21,14 @@ export interface PrivateSaleItem {
 }
 
 export const privateSales: PrivateSaleItem[] = [
+  {
+    image: multifamilySAImage,
+    price: "$14,950,000",
+    address: "Address Witheld",
+    area: "SAN ANTONIO",
+    descriptor: "Multi-Family",
+    label: "Private Sale",
+  },
   {
     image: southeastAustinImage,
     price: "$6,950,000",

@@ -128,7 +128,7 @@ const Hero = () => {
       }} />
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-6 pb-32 md:pb-28 lg:pb-36 pt-36 md:pt-32 lg:pt-48">
+      <div className="relative z-10 container mx-auto px-6 pb-40 md:pb-36 lg:pb-44 pt-36 md:pt-32 lg:pt-48">
         <div className="max-w-[780px] md:max-w-[620px] lg:max-w-[780px] relative">
           {/* Gold line + kicker */}
           <div style={anim("0s")} className="mb-5">

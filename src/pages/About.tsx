@@ -1,4 +1,4 @@
-import { lazy, Suspense, useEffect, useRef } from "react";
+import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import Navigation from "@/components/Navigation";
 import expEchelonLogo from "@/assets/exp-echelon-logo.png";
 import taylorAboutHeadshot from "@/assets/taylor-about-headshot.jpeg";
@@ -6,10 +6,120 @@ import austinLifestyle from "@/assets/austin-luxury-lifestyle.jpg";
 import { Link } from "react-router-dom";
 import SchemaMarkup, { taylorSherwoodSchema, createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import SEOHead from "@/components/SEOHead";
+import echelonWatermark from "@/assets/echelon-watermark.png";
+import ScrollReveal from "@/components/ScrollReveal";
 
 const InstagramGallery = lazy(() => import("@/components/InstagramGallery"));
-const Testimonials = lazy(() => import("@/components/Testimonials"));
 const Footer = lazy(() => import("@/components/Footer"));
+
+const aboutTestimonials = [
+  { quote: "Taylor made selling our Barton Creek home seamless. His market knowledge and marketing strategy brought us multiple offers above asking within the first week.", name: "James & Sarah Mitchell", context: "Sold in Barton Creek" },
+  { quote: "Taylor was fantastic to work with! He really understood what I was looking for and showed me great options that fit my specific criteria. When I was ready to make an offer, he helped things move quickly to meet a tight closing date.", name: "Meredith Taylor", context: "Purchased in Austin" },
+  { quote: "Taylor's deep understanding of Austin's investment landscape helped us identify a property that exceeded our return expectations. His analysis was institutional-grade and his negotiation saved us significantly on the acquisition.", name: "David Chen", context: "Investment Property, Austin" },
+  { quote: "Taylor was incredible to work with! He's knowledgeable, responsive, and genuinely cares about getting the best results for his clients. Highly recommend him to anyone buying or selling in Austin.", name: "Yaniv Dotan", context: "Purchased and sold in Barton Creek" },
+  { quote: "Taylor's attention to detail and marketing approach are truly exceptional. From staging to photography to negotiation, every step reflected true professionalism and commitment.", name: "Cynthia Hampton", context: "Purchased and sold in Austin" },
+  { quote: "Taylor did not just help us find a home. He brought us opportunities we never would have seen otherwise. His off market access made all the difference.", name: "Alexandra Morgan", context: "Purchased in Spanish Oaks" },
+  { quote: "The level of service and communication was exceptional. Taylor operates with a level of professionalism you rarely see in this industry.", name: "Priya Shah", context: "Purchased in Tarrytown" },
+];
+
+const AboutTestimonialsSection = () => {
+  const [active, setActive] = useState(0);
+  const sectionRef = useRef<HTMLElement>(null);
+  const watermarkRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const timer = setInterval(() => setActive((p) => (p + 1) % aboutTestimonials.length), 5500);
+    return () => clearInterval(timer);
+  }, []);
+
+  useEffect(() => {
+    let ticking = false;
+    const onScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        if (!sectionRef.current || !watermarkRef.current) { ticking = false; return; }
+        const rect = sectionRef.current.getBoundingClientRect();
+        const vh = window.innerHeight;
+        const progress = 1 - (rect.bottom / (vh + rect.height));
+        const clamped = Math.max(0, Math.min(1, progress));
+        const y = (clamped - 0.5) * 18;
+        const x = (clamped - 0.5) * -6;
+        watermarkRef.current.style.transform = `translate(calc(1% + ${x}px), calc(4% + ${y}px))`;
+        ticking = false;
+      });
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const t = aboutTestimonials[active];
+
+  return (
+    <section ref={sectionRef} className="bg-secondary relative overflow-hidden" style={{ padding: "clamp(64px, 10vw, 120px) 0" }}>
+      <div ref={watermarkRef} className="absolute inset-0 flex items-center justify-center pointer-events-none" aria-hidden="true"
+        style={{ transform: "translate(1%, 4%)", transition: "transform 0.15s linear", willChange: "transform" }}>
+        <div style={{
+          width: "600px", maxWidth: "90vw", aspectRatio: "1",
+          maskImage: "radial-gradient(ellipse 60% 60% at center, black 0%, black 40%, transparent 85%)",
+          WebkitMaskImage: "radial-gradient(ellipse 60% 60% at center, black 0%, black 40%, transparent 85%)",
+        }}>
+          <img src={echelonWatermark} alt="" className="w-full h-full object-contain"
+            style={{ opacity: 0.09, filter: "blur(0.8px) saturate(0.85) brightness(1.02)" }} />
+        </div>
+      </div>
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="max-w-[800px] mx-auto text-center relative" style={{ minHeight: "320px" }}>
+          <ScrollReveal>
+            <p className="text-minimal text-gold mb-4">CLIENT EXPERIENCES</p>
+            <h2 className="font-display text-2xl md:text-[2.2rem] font-normal text-foreground leading-[1.15] tracking-[0.02em] mb-8">
+              clients first. <span className="italic">Proven Results.</span>
+            </h2>
+          </ScrollReveal>
+          <div style={{ minHeight: "160px", display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <p key={active} className="mb-6" style={{
+              fontFamily: '"Jost", sans-serif', fontWeight: 300,
+              fontSize: "clamp(15px, 1.8vw, 20px)", lineHeight: 1.85, letterSpacing: "0.01em",
+              color: "hsl(var(--foreground) / 0.8)",
+              animation: "fadeUp 0.6s ease both",
+            }}>
+              <span style={{ color: "hsl(38 39% 61%)", marginRight: "0.15em" }}>&ldquo;</span>
+              {t.quote}
+              <span style={{ color: "hsl(38 39% 61%)", marginLeft: "0.15em" }}>&rdquo;</span>
+            </p>
+          </div>
+          <p key={`name-${active}`} style={{
+            fontFamily: '"Jost", sans-serif', fontSize: "13px", letterSpacing: "0.18em",
+            textTransform: "uppercase", color: "hsl(38 39% 61%)", marginTop: "24px",
+            animation: "fadeUp 0.6s ease 0.15s both",
+          }}>
+            {t.name}
+          </p>
+          <p key={`ctx-${active}`} style={{
+            fontFamily: '"Jost", sans-serif', fontSize: "12px", letterSpacing: "0.12em",
+            textTransform: "uppercase", color: "hsl(var(--muted-foreground))", marginTop: "6px",
+            animation: "fadeUp 0.6s ease 0.25s both",
+          }}>
+            {t.context}
+          </p>
+          <div className="flex items-center justify-center gap-3 mt-10">
+            {aboutTestimonials.map((_, i) => (
+              <button key={i} onClick={() => setActive(i)}
+                className="w-2.5 h-2.5 rounded-full transition-all duration-300 cursor-pointer"
+                style={{
+                  background: i === active ? "hsl(38 39% 61%)" : "hsl(var(--border))",
+                  transform: i === active ? "scale(1.2)" : "scale(1)",
+                }}
+                aria-label={`View testimonial ${i + 1}`}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
 
 /* Subtle opacity-only fade-in on scroll */
 const useFadeIn = () => {
@@ -271,6 +381,9 @@ const About = () => {
         </section>
       </FadeIn>
 
+      {/* Testimonials — editorial single-quote display */}
+      <AboutTestimonialsSection />
+
       {/* Philosophy */}
       <FadeIn>
         <section className="pt-20 pb-20 bg-background">
@@ -342,7 +455,7 @@ const About = () => {
       <Suspense fallback={<div className="min-h-[200px]" />}><InstagramGallery /></Suspense>
       <div className="py-6 bg-background" />
 
-      <Suspense fallback={<div className="min-h-[200px]" />}><Testimonials /></Suspense>
+      
 
       {/* CTA */}
       <section className="pt-20 pb-20 bg-secondary text-center">

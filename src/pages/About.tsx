@@ -221,7 +221,6 @@ const About = () => {
                 </div>
               </div>
               <p className="text-center text-xs text-muted-foreground/50 tracking-wide mt-12">
-                Trusted by clients across Austin's most competitive luxury markets.
               </p>
             </div>
           </div>

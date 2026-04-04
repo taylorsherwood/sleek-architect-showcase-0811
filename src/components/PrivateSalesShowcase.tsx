@@ -22,6 +22,14 @@ export interface PrivateSaleItem {
 
 export const privateSales: PrivateSaleItem[] = [
   {
+    image: multifamilySAImage,
+    price: "$14,950,000",
+    address: "Address Witheld",
+    area: "SAN ANTONIO",
+    descriptor: "Multi-Family",
+    label: "Private Sale",
+  },
+  {
     image: southeastAustinImage,
     price: "$6,950,000",
     address: "Address Witheld",

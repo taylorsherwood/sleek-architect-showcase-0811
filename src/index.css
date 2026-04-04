@@ -506,9 +506,9 @@ realscout-simple-search {
     text-decoration: none;
   }
   .cta-luxury:hover {
-    background: hsl(41 30% 57%);
+    background: #b8a06d;
     color: #fff;
-    border-color: hsl(41 30% 57%);
+    border-color: #b8a06d;
     transform: translateY(-1px);
   }
   .cta-luxury--ghost {

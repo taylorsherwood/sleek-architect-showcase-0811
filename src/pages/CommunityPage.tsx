@@ -41,7 +41,7 @@ const neighborhoodInsights: Record<string, { title: string; description: string;
   ],
   "dripping-springs": [
     { title: "Top Investment Neighborhoods in Austin", description: "Dripping Springs sits on Austin's primary growth corridor — here's why investors are paying attention.", href: "/blog/top-investment-neighborhoods-austin" },
-    { title: "Best Luxury Neighborhoods in Austin", description: "The Hill Country gateway and its place in Austin's luxury market.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
+    { title: "Austin Property Taxes Explained", description: "How Hays County tax rates compare and what Hill Country buyers should know.", href: "/blog/austin-property-taxes-explained" },
   ],
   "texas-hill-country-estates": [
     { title: "Best Luxury Neighborhoods in Austin", description: "Ranch estates and vineyard properties in the Texas Hill Country.", href: "/blog/best-luxury-neighborhoods-austin-texas" },

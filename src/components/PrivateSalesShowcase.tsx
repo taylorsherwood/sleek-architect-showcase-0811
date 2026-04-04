@@ -65,7 +65,7 @@ export const privateSales: PrivateSaleItem[] = [
   {
     image: highRoadImage,
     price: "$1,495,000",
-    address: "Address Witheld",
+    address: "Address Withheld",
     area: "WESTLAKE HILLS",
     descriptor: "",
     label: "Represented Buyer",

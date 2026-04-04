@@ -48,6 +48,14 @@ export const privateSales: PrivateSaleItem[] = [
     label: "PRIVATE SALE",
   },
   {
+    image: eastAustinImage,
+    price: "$4,500,000",
+    address: "Address Withheld",
+    area: "EAST AUSTIN",
+    descriptor: "Commercial Property",
+    label: "Represented Buyer",
+  },
+  {
     image: fm620Image,
     price: "$2,495,000",
     address: "13505 North FM 620",

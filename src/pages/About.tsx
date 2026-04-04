@@ -297,7 +297,7 @@ const About = () => {
                   </div>
                 </div>
 
-                <div className="mt-10">
+                <div className="mt-10 text-center">
                   <Link
                     to="/contact"
                     className="gold-metallic-text gold-underline-hover inline-block px-10 py-2.5 text-[0.65rem] tracking-[0.22em] uppercase"

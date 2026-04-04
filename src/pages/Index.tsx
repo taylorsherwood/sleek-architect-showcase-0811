@@ -487,7 +487,7 @@ const StatItem = ({ stat }: { stat: typeof stats[number] }) => {
           style={{
             background: "hsl(38 39% 61%)",
             width: inView ? "100%" : "0%",
-            transition: "width 5s cubic-bezier(0.22, 1, 0.36, 1)",
+            transition: "width 3.5s cubic-bezier(0.22, 1, 0.36, 1)",
           }}
         />
       </div>

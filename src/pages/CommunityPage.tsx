@@ -9,6 +9,57 @@ import { communityPages } from "@/data/communityData";
 
 const SITE_URL = "https://www.echelonpropertygroup.com";
 
+/* Neighborhood Insights — contextual blog links per community */
+const neighborhoodInsights: Record<string, { title: string; description: string; href: string }[]> = {
+  "tarrytown": [
+    { title: "Tarrytown vs Bryker Woods", description: "How these two iconic 78703 neighborhoods compare for lifestyle, pricing, and long-term value.", href: "/blog/tarrytown-vs-bryker-woods" },
+    { title: "Best Luxury Neighborhoods in Austin", description: "Where Tarrytown ranks among Austin's most desirable addresses.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
+  ],
+  "westlake-hills": [
+    { title: "Rollingwood vs Westlake Hills", description: "A side-by-side comparison of two premier west Austin neighborhoods.", href: "/blog/rollingwood-vs-westlake-hills" },
+    { title: "Best Luxury Neighborhoods in Austin", description: "Explore how Westlake Hills anchors Austin's luxury landscape.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
+  ],
+  "rollingwood": [
+    { title: "Rollingwood vs Westlake Hills", description: "Compare proximity, lot sizes, and daily lifestyle between these two top communities.", href: "/blog/rollingwood-vs-westlake-hills" },
+    { title: "Top Investment Neighborhoods in Austin", description: "Why Rollingwood's limited inventory drives exceptional long-term appreciation.", href: "/blog/top-investment-neighborhoods-austin" },
+  ],
+  "lake-austin": [
+    { title: "Lake Austin vs Lake Travis", description: "Waterfront lifestyles compared — proximity, pricing, and daily experience.", href: "/blog/lake-austin-vs-lake-travis" },
+    { title: "Best Waterfront Homes in Austin", description: "A comprehensive look at Austin's lakefront market and what drives value.", href: "/blog/best-waterfront-homes-austin" },
+  ],
+  "barton-creek": [
+    { title: "Rollingwood vs Westlake Hills", description: "How Barton Creek's western neighbors compare in lifestyle and pricing.", href: "/blog/rollingwood-vs-westlake-hills" },
+    { title: "Best Luxury Neighborhoods in Austin", description: "Where Barton Creek fits within Austin's luxury real estate hierarchy.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
+  ],
+  "travis-heights": [
+    { title: "Top Investment Neighborhoods in Austin", description: "Travis Heights' walkability and SoCo proximity make it a top investment play.", href: "/blog/top-investment-neighborhoods-austin" },
+    { title: "Best Luxury Neighborhoods in Austin", description: "How Travis Heights compares to Austin's premier addresses.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
+  ],
+  "downtown": [
+    { title: "Austin Luxury Market Forecast", description: "What the data says about downtown Austin's condo market and pricing trajectory.", href: "/blog/austin-luxury-real-estate-market-forecast" },
+    { title: "Top Investment Neighborhoods in Austin", description: "Cash flow, appreciation, and the case for downtown Austin condos.", href: "/blog/top-investment-neighborhoods-austin" },
+  ],
+  "dripping-springs": [
+    { title: "Top Investment Neighborhoods in Austin", description: "Dripping Springs sits on Austin's primary growth corridor — here's why investors are paying attention.", href: "/blog/top-investment-neighborhoods-austin" },
+    { title: "Best Luxury Neighborhoods in Austin", description: "The Hill Country gateway and its place in Austin's luxury market.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
+  ],
+  "texas-hill-country-estates": [
+    { title: "Best Luxury Neighborhoods in Austin", description: "Ranch estates and vineyard properties in the Texas Hill Country.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
+  ],
+  "zilker-austin": [
+    { title: "Tarrytown vs Bryker Woods", description: "How Zilker's closest neighbors compare for central Austin living.", href: "/blog/tarrytown-vs-bryker-woods" },
+    { title: "Best Luxury Neighborhoods in Austin", description: "Central Austin's most walkable neighborhoods and what makes them unique.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
+  ],
+  "spanish-oaks": [
+    { title: "Best Luxury Neighborhoods in Austin", description: "Where Spanish Oaks fits within Austin's gated luxury communities.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
+    { title: "Top Investment Neighborhoods in Austin", description: "Hill Country estate communities and their long-term value trajectory.", href: "/blog/top-investment-neighborhoods-austin" },
+  ],
+  "cat-mountain-northwest-hills": [
+    { title: "Best Luxury Neighborhoods in Austin", description: "How Cat Mountain and Northwest Hills serve Austin's luxury market.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
+    { title: "Austin Luxury Market Forecast", description: "Market trends shaping pricing in Austin's western neighborhoods.", href: "/blog/austin-luxury-real-estate-market-forecast" },
+  ],
+};
+
 function createCommunitySchema(community: { name: string; slug: string; metaDescription: string }) {
   return [
     {

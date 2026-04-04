@@ -253,7 +253,7 @@ const Connect = () => {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer nofollow"
-                  className="flex items-center justify-center w-full h-[52px] rounded-full transition-all duration-200 hover:-translate-y-0.5"
+                  className={`flex items-center justify-center w-full h-[52px] rounded-full transition-all duration-200 hover:-translate-y-0.5 ${(link as any).animated ? 'work-taylor-btn' : ''}`}
                   style={{
                     background: "hsl(0 0% 100% / 0.55)",
                     border: "1.5px solid hsl(var(--gold) / 0.5)",

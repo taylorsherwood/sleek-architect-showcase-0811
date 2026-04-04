@@ -7,6 +7,7 @@ import clearCreekImage from "@/assets/clear-creek-road.jpg";
 import bartonCreekImage from "@/assets/barton-creek.jpg";
 import multifamilySAImage from "@/assets/private-sale-multifamily-sa.webp";
 import spanishOaksImage from "@/assets/spanish-oaks-private-sale.jpg";
+import eastAustinImage from "@/assets/east-austin-commercial.jpg";
 
 /* ------------------------------------------------------------------ */
 /*  DATA — Edit this array to add / remove / update private sales      */
@@ -45,6 +46,14 @@ export const privateSales: PrivateSaleItem[] = [
     area: "SOUTHEAST AUSTIN",
     descriptor: "Commercial Property",
     label: "PRIVATE SALE",
+  },
+  {
+    image: eastAustinImage,
+    price: "$4,500,000",
+    address: "Address Withheld",
+    area: "EAST AUSTIN",
+    descriptor: "Commercial Property",
+    label: "Represented Buyer",
   },
   {
     image: fm620Image,

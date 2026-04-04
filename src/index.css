@@ -11,8 +11,8 @@ html, body {
   width: 100%;
 }
 
-/* ── Global link hover — gold on hover ── */
-a:hover {
+/* ── Global link hover — gold on hover (excludes buttons/CTAs) ── */
+a:not(button a):not(.cta-luxury):not([class*="bg-"]):not([class*="border-"]):hover {
   color: hsl(41 35% 57%);
 }
 

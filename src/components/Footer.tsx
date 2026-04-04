@@ -121,7 +121,14 @@ const Footer = () => {
           </div>
 
           {/* Gold divider */}
-          <div className="w-full h-px mb-6" style={{ background: "hsl(38 39% 61% / 0.3)" }} />
+          <div className="w-full h-px mb-5" style={{ background: "hsl(38 39% 61% / 0.3)" }} />
+
+          {/* Explore insights link */}
+          <div className="text-center mb-5">
+            <Link to="/blog" className="hover:text-white transition-colors duration-300" style={{ fontFamily: '"Jost", sans-serif', fontSize: "12px", letterSpacing: "0.15em", textTransform: "uppercase", fontWeight: 300, color: "hsl(38 39% 61% / 0.7)" }}>
+              Explore More Insights →
+            </Link>
+          </div>
 
           {/* Bottom bar */}
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 pb-6">

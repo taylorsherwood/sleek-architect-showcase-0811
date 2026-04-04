@@ -166,14 +166,14 @@ const Hero = () => {
                 className="inline-block text-center px-8 py-[14px]"
                 style={{
                   fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 500,
-                  border: "1px solid hsl(38 42% 58%)", color: "#fff",
-                  background: "hsl(38 42% 52%)",
-                  boxShadow: "0 2px 12px rgba(194,164,107,0.25)",
+                  border: "1px solid #b8a06d", color: "#fff",
+                  background: "#b8a06d",
+                  boxShadow: "0 2px 12px rgba(184,160,109,0.25)",
                   transform: "translateX(0) translateZ(0)", willChange: "transform, box-shadow",
                   transition: "transform 250ms ease, box-shadow 250ms ease, background 250ms ease",
                 }}
-                onMouseEnter={e => { e.currentTarget.style.transform = "translateX(3px) translateZ(0)"; e.currentTarget.style.background = "hsl(38 42% 46%)"; e.currentTarget.style.boxShadow = "0 4px 20px rgba(194,164,107,0.35)"; }}
-                onMouseLeave={e => { e.currentTarget.style.transform = "translateX(0) translateZ(0)"; e.currentTarget.style.background = "hsl(38 42% 52%)"; e.currentTarget.style.boxShadow = "0 2px 12px rgba(194,164,107,0.25)"; }}
+                onMouseEnter={e => { e.currentTarget.style.transform = "translateX(3px) translateZ(0)"; e.currentTarget.style.background = "#a6904f"; e.currentTarget.style.boxShadow = "0 4px 20px rgba(184,160,109,0.35)"; }}
+                onMouseLeave={e => { e.currentTarget.style.transform = "translateX(0) translateZ(0)"; e.currentTarget.style.background = "#b8a06d"; e.currentTarget.style.boxShadow = "0 2px 12px rgba(184,160,109,0.25)"; }}
               >
                 Explore Available Opportunities →
               </Link>

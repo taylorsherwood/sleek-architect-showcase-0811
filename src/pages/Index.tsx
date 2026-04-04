@@ -343,11 +343,11 @@ const AdvisorSection = () => (
                    <br /><br />
                    <span className="font-bold">Let's get to work,</span>
                 </p>
-               <div className="!mt-0 !pt-0 -mb-4"><img src={taylorSignature} alt="Taylor Sherwood signature" className="block h-[160px] opacity-80 -translate-y-4" /></div>
+               <div className="!mt-0 !pt-0 -mb-6"><img src={taylorSignature} alt="Taylor Sherwood signature" className="block h-[160px] opacity-80 -translate-y-4" /></div>
             </div>
 
             {/* Credential badges */}
-            <div className="flex flex-wrap gap-2.5 mb-10">
+            <div className="flex flex-wrap gap-2.5 mb-14">
               {["eXp Luxury Division", "CLHMS GUILD", "$125M+ Career Volume"].map((badge) => (
                 <span key={badge} className="border px-3 py-1" style={{
                   borderColor: "hsl(38 39% 61%)",

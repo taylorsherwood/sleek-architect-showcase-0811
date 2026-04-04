@@ -307,7 +307,7 @@ const Connect = () => {
                   style={{
                     fontSize: "11px",
                     letterSpacing: "0.18em",
-                    color: "hsl(var(--gold-light))",
+                    color: "white",
                     fontWeight: 800,
                   }}
                 >

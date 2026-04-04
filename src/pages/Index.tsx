@@ -165,7 +165,7 @@ const Hero = () => {
           {/* CTA Buttons — static, dark translucent glass */}
           <div className="inline-flex flex-col items-center" style={anim("0.4s")}>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/austin-luxury-homes-for-sale"
+              <Link to="/search"
                 className="inline-block text-center px-6 py-[14px]"
                 style={{
                   fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 500,

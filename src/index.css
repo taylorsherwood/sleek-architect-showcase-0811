@@ -659,7 +659,7 @@ a:hover .community-tile-img,
   transform: translateX(-50%);
   width: 0;
   height: 1px;
-  background: linear-gradient(90deg, hsl(var(--gold-deep)), hsl(var(--gold-light)), hsl(var(--gold-deep)));
+  background: #b8a06d;
   transition: width 0.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
 .gold-underline-hover:hover::after {

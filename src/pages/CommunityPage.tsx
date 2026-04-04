@@ -347,6 +347,35 @@ const CommunityPage = () => {
               </div>
             </section>
 
+            {/* Neighborhood Insights — contextual blog links */}
+            {slug && neighborhoodInsights[slug] && neighborhoodInsights[slug].length > 0 && (
+              <section>
+                <p className="text-minimal text-gold mb-3 tracking-[0.2em]">EDITORIAL</p>
+                <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-8">
+                  Neighborhood Insights
+                </h2>
+                <div className="space-y-6">
+                  {neighborhoodInsights[slug].map((article) => (
+                    <Link
+                      key={article.href}
+                      to={article.href}
+                      className="group flex items-start gap-4 py-4 border-b border-border/40 hover:border-gold/40 transition-colors duration-300"
+                    >
+                      <span className="w-8 h-px bg-gold mt-3 shrink-0 group-hover:w-12 transition-all duration-300" />
+                      <div>
+                        <h3 className="text-lg font-display font-normal text-foreground group-hover:text-gold transition-colors duration-300 mb-1">
+                          {article.title}
+                        </h3>
+                        <p className="text-muted-foreground text-sm leading-relaxed" style={{ fontFamily: '"Jost", sans-serif', fontWeight: 300 }}>
+                          {article.description}
+                        </p>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              </section>
+            )}
+
             {/* Related Communities */}
             {related.length > 0 && (
               <section>

@@ -175,7 +175,7 @@ const BlogPost = () => {
             {/* Related Posts */}
             {filledRelatedPosts.length > 0 && (
               <div className="mt-20">
-                <h2 className="text-2xl font-light text-architectural mb-8">Related Articles</h2>
+                <h2 className="text-2xl font-light text-architectural mb-8">Related Reading</h2>
                 <div className="grid md:grid-cols-2 gap-8">
                   {filledRelatedPosts.map(relatedPost => (
                     <Link key={relatedPost.id} to={`/blog/${relatedPost.id}`} className="group">

@@ -130,7 +130,7 @@ const Connect = () => {
             </div>
           </div>
 
-          <div className="mt-[-22px] flex flex-col items-center px-4 sm:mt-2">
+          <div className="mt-[-8px] flex flex-col items-center px-4 sm:mt-2">
             <img
               src={combinedLogo}
               alt="eXp Realty and Echelon Property Group combined brokerage logo"

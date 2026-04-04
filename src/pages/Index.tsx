@@ -1128,6 +1128,7 @@ const Index = () => (
 
     <LeadCapture />
     <InsightsSection />
+    <EditorialInsights />
     <FinalCTA />
 
     <Suspense fallback={<div className="min-h-[100px]" />}>

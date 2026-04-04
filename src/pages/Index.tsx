@@ -172,7 +172,7 @@ const Hero = () => {
                   transform: "translateX(0) translateZ(0)", willChange: "transform, box-shadow",
                   transition: "transform 250ms ease, box-shadow 250ms ease, background 250ms ease",
                 }}
-                onMouseEnter={e => { e.currentTarget.style.transform = "translateX(3px) translateZ(0)"; e.currentTarget.style.background = "#a6904f"; e.currentTarget.style.boxShadow = "0 4px 20px rgba(184,160,109,0.35)"; }}
+                onMouseEnter={e => { e.currentTarget.style.transform = "translateX(3px) translateZ(0)"; e.currentTarget.style.background = "#a8924e"; e.currentTarget.style.boxShadow = "0 4px 20px rgba(184,160,109,0.35)"; }}
                 onMouseLeave={e => { e.currentTarget.style.transform = "translateX(0) translateZ(0)"; e.currentTarget.style.background = "#b8a06d"; e.currentTarget.style.boxShadow = "0 2px 12px rgba(184,160,109,0.25)"; }}
               >
                 Explore Available Opportunities →

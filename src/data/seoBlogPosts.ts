@@ -1,5 +1,5 @@
 import heroLuxury from "@/assets/hero-luxury-austin.jpg";
-import blogTarrytownVsBrykerWoods from "@/assets/blog-tarrytown-vs-bryker-woods.jpg";
+import blogTarrytownVsBrykerWoods from "@/assets/tarrytown-entry.jpg";
 import blogLakeAustinVsLakeTravis from "@/assets/lake-travis-sunset.jpg";
 import heroSkyline from "@/assets/hero-austin-skyline.jpg";
 import heroArch from "@/assets/hero-architecture.jpg";

@@ -315,9 +315,9 @@ realscout-simple-search {
   }
   .hero-cta-light:hover,
   .hero-cta-light:focus {
-    background: rgba(245, 243, 239, 0.40) !important;
-    border: 1px solid rgba(245, 243, 239, 0.62) !important;
-    color: rgba(245, 243, 239, 0.95) !important;
+    background: rgba(245, 243, 239, 0.95) !important;
+    border: 1px solid rgba(245, 243, 239, 1) !important;
+    color: #0C0F24 !important;
     transform: translateY(-0.5px) scale(1.015) !important;
     box-shadow: 0 1px 8px -3px rgba(245, 243, 239, 0.06) !important;
   }

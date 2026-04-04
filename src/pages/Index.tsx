@@ -166,10 +166,11 @@ const Hero = () => {
                 className="inline-block text-center px-8 py-[14px]"
                 style={{
                   fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 500,
-                  border: "1px solid #b8a06d", color: "#fff",
+                  border: "2px solid #b8a06d", color: "#fff",
                   background: "#b8a06d",
+                  boxShadow: "0 2px 8px rgba(0,0,0,0.4)",
                   transform: "translateX(0) translateZ(0)", willChange: "transform, box-shadow",
-                  transition: "transform 250ms ease, box-shadow 250ms ease, background 250ms ease",
+                  transition: "transform 250ms ease, box-shadow 250ms ease, background 250ms ease, border-color 250ms ease",
                 }}
                 onMouseEnter={e => { e.currentTarget.style.transform = "translateX(3px) translateZ(0)"; e.currentTarget.style.background = "#0C0F24"; e.currentTarget.style.borderColor = "#0C0F24"; e.currentTarget.style.color = "#fff"; }}
                 onMouseLeave={e => { e.currentTarget.style.transform = "translateX(0) translateZ(0)"; e.currentTarget.style.background = "#b8a06d"; e.currentTarget.style.borderColor = "#b8a06d"; e.currentTarget.style.color = "#fff"; }}

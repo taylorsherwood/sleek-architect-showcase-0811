@@ -376,7 +376,7 @@ const AdvisorSection = () => (
               </Link>
             </div>
 
-            <div className="flex items-center gap-6 mt-10">
+            <div className="flex items-center gap-6 mt-7">
               <a
                 href="https://www.instagram.com/theinvestorbroker/"
                 target="_blank"

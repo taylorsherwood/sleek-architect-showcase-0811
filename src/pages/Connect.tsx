@@ -253,7 +253,7 @@ const Connect = () => {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer nofollow"
-                  className={`flex items-center justify-center w-full h-[52px] rounded-full transition-all duration-200 hover:-translate-y-0.5 ${(link as any).gold ? 'rotating-gold-border' : ''}`}
+                  className="flex items-center justify-center w-full h-[52px] rounded-full transition-all duration-200 hover:-translate-y-0.5"
                   style={{
                     ...( !(link as any).gold ? {
                       background: (link as any).transparent ? "transparent" : "hsl(0 0% 100% / 0.55)",

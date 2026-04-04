@@ -6,6 +6,7 @@ import highRoadImage from "@/assets/the-high-road-westlake.webp";
 import clearCreekImage from "@/assets/clear-creek-road.jpg";
 import bartonCreekImage from "@/assets/barton-creek.jpg";
 import multifamilySAImage from "@/assets/private-sale-multifamily-sa.webp";
+import spanishOaksImage from "@/assets/spanish-oaks-private-sale.jpg";
 
 /* ------------------------------------------------------------------ */
 /*  DATA — Edit this array to add / remove / update private sales      */
@@ -27,6 +28,14 @@ export const privateSales: PrivateSaleItem[] = [
     address: "Address Witheld",
     area: "SAN ANTONIO",
     descriptor: "Multi-Family",
+    label: "Represented Buyer",
+  },
+  {
+    image: spanishOaksImage,
+    price: "$7,250,000",
+    address: "Address Withheld",
+    area: "SPANISH OAKS",
+    descriptor: "",
     label: "Represented Buyer",
   },
   {

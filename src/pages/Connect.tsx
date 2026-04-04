@@ -75,9 +75,9 @@ const Connect = () => {
                 alt="Taylor Sherwood – Austin Luxury Real Estate Advisor"
                 className="absolute inset-0 w-full h-full object-cover"
                 style={{ objectPosition: "50% 12%" }}
-                fetchPriority="high"
-                    loading="lazy" decoding="async"
-                    />
+                loading="eager"
+                decoding="async"
+              />
 
               {/* Cinematic gradient overlay — fades to warm cream */}
               <div

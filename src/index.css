@@ -44,7 +44,7 @@ realscout-simple-search {
 @layer base {
   :root {
     /* ── Refined luxury palette — warm ivory system ── */
-    --gold: 41 30% 57%;              /* #b7a16a */
+    --gold: 41 35% 57%;              /* #b8a06d */
     --gold-light: 41 35% 76%;        /* #D4C9A8 */
     --gold-dark: 41 45% 30%;         /* #6F5E2A */
     --gold-deep: 41 30% 40%;         /* #857548 */

@@ -28,7 +28,7 @@ const neighborhoodInsights: Record<string, { title: string; description: string;
     { title: "Best Waterfront Homes in Austin", description: "A comprehensive look at Austin's lakefront market and what drives value.", href: "/blog/best-waterfront-homes-austin" },
   ],
   "barton-creek": [
-    { title: "Rollingwood vs Westlake Hills", description: "How Barton Creek's western neighbors compare in lifestyle and pricing.", href: "/blog/rollingwood-vs-westlake-hills" },
+    { title: "Luxury Lock-and-Leave in Governor's Hill", description: "Inside a fully reimagined residence in one of Barton Creek's most exclusive gated enclaves.", href: "/blog/2300-barton-creek-blvd" },
     { title: "Best Luxury Neighborhoods in Austin", description: "Where Barton Creek fits within Austin's luxury real estate hierarchy.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
   ],
   "travis-heights": [

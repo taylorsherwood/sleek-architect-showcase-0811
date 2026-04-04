@@ -364,7 +364,7 @@ const AdvisorSection = () => (
               ))}
             </div>
 
-            <div className="flex flex-col sm:flex-row items-start gap-5">
+            <div className="flex flex-col sm:flex-row items-start gap-4">
               <Link to="/contact" className="cta-luxury">
                 WORK WITH ME
               </Link>

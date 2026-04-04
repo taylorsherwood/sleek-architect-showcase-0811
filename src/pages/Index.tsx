@@ -1182,6 +1182,7 @@ const Index = () => (
     <Hero />
     <TrustStrip />
     <SearchSection />
+    <div className="h-10 md:h-16 bg-background" aria-hidden="true" />
     <ScrollingCredibilityStrip />
     <AdvisorSection />
     <StatsStrip />

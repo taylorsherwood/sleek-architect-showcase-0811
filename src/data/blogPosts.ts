@@ -76,7 +76,7 @@ While the path toward sustainable architecture presents challenges—including h
 
 The future of architecture lies in our ability to create buildings that work in harmony with natural systems. As architects, we have the responsibility and the opportunity to design a built environment that supports both human well-being and planetary health. The transition to sustainable architecture is not just an environmental imperative—it is a creative challenge that will define the next era of architectural innovation.
     `,
-    author: "Sarah Chen",
+    author: "Taylor Sherwood",
     date: "2024-03-15",
     readTime: "8 min read",
     category: "SUSTAINABILITY",
@@ -162,7 +162,7 @@ Minimalism in modern living spaces represents more than just an aesthetic choice
 
 The challenge for architects and designers is to create minimalist spaces that feel alive and welcoming rather than cold or sterile. When executed thoughtfully, minimalist design can provide the perfect canvas for life's most important moments.
     `,
-    author: "Marcus Rodriguez",
+    author: "Taylor Sherwood",
     date: "2024-03-10",
     readTime: "6 min read",
     category: "DESIGN",
@@ -323,7 +323,7 @@ The future of our cities depends on our ability to create spaces that strengthen
 
 The most successful community spaces are those that grow and evolve with their users, adapting to changing needs while maintaining their essential character as places of gathering, exchange, and belonging. As architects and planners, our role is to provide the physical framework for community life while remaining flexible enough to support the unexpected ways that people will inhabit and transform these spaces.
     `,
-    author: "Elena Nakamura",
+    author: "Taylor Sherwood",
     date: "2024-03-05",
     readTime: "10 min read",
     category: "URBAN PLANNING",

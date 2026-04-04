@@ -463,6 +463,26 @@ realscout-simple-search {
     animation: gold-glow-pulse 8s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
   }
 
+  @keyframes border-rotate {
+    0% { --border-angle: 0deg; }
+    100% { --border-angle: 360deg; }
+  }
+
+  @property --border-angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+
+  .rotating-gold-border {
+    --border-angle: 0deg;
+    border: 1.5px solid transparent;
+    background: 
+      linear-gradient(hsl(0 0% 100% / 0.55), hsl(0 0% 100% / 0.55)) padding-box,
+      conic-gradient(from var(--border-angle), hsl(var(--gold) / 0.15), hsl(var(--gold) / 0.8), hsl(var(--gold) / 0.15), hsl(var(--gold) / 0.8)) border-box;
+    animation: border-rotate 3s linear infinite;
+  }
+
   /* ── Parallax break panels ── */
   .parallax-break {
     height: 500px;

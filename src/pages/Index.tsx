@@ -715,7 +715,7 @@ const TestimonialsSection = () => {
   const t = testimonials[active];
 
   return (
-    <section ref={sectionRef} className="bg-secondary relative overflow-hidden" style={{ padding: "clamp(64px, 10vw, 120px) 0" }}>
+    <section ref={sectionRef} className="bg-secondary relative overflow-hidden" style={{ padding: "clamp(48px, 7vw, 90px) 0" }}>
       {/* Watermark */}
       <div ref={watermarkRef} className="absolute inset-0 flex items-center justify-center pointer-events-none" aria-hidden="true"
         style={{ transform: "translate(1%, 4%)", transition: "transform 0.15s linear", willChange: "transform" }}>

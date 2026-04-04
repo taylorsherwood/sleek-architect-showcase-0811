@@ -28,6 +28,15 @@ img {
   box-sizing: border-box;
 }
 
+/* ── Global mobile typography safeguard ── */
+@media (max-width: 430px) {
+  h1, h2, h3 {
+    overflow-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+  }
+}
+
 /* ── Constrain embedded widgets (RealScout, EmbedSocial, iframes) ── */
 realscout-your-listings,
 realscout-advanced-search,

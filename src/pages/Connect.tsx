@@ -1,7 +1,4 @@
-import { useState, useEffect, lazy, Suspense } from "react";
 import SEOHead from "@/components/SEOHead";
-
-const PrivateOpportunities = lazy(() => import("@/components/PrivateOpportunities"));
 import taylorHeadshot from "@/assets/taylor-headshot.jpg";
 import combinedLogo from "@/assets/exp-echelon-combined-logo.png";
 import { Instagram, Mail, Phone, Home, Search, Mountain } from "lucide-react";
@@ -22,21 +19,6 @@ const socials = [
 
 const Connect = () => {
   const scrollProgress = useHeroScroll();
-  const [heroHeight, setHeroHeight] = useState(0);
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const updateLayout = () => {
-      const heroEl = document.getElementById("connect-hero");
-      if (heroEl) setHeroHeight(heroEl.offsetHeight);
-      setIsMobile(window.innerWidth <= 430);
-    };
-    updateLayout();
-    window.addEventListener("resize", updateLayout);
-    return () => window.removeEventListener("resize", updateLayout);
-  }, []);
-
-  const heroProgress = heroHeight > 0 ? Math.min(scrollProgress / 0.6, 1) : 0;
 
   return (
     <>

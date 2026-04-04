@@ -239,8 +239,12 @@ const Connect = () => {
             </div>
           </div>
 
-          {/* Spacer between Land & Investment and Property Valuation */}
-          <div className="h-4" />
+          {/* Gold ornamental spacer */}
+          <div className="flex items-center justify-center gap-3 my-6 px-12">
+            <div className="flex-1 h-px" style={{ background: "linear-gradient(90deg, transparent, #b8a06d)" }} />
+            <div className="w-1.5 h-1.5 rotate-45" style={{ background: "#b8a06d" }} />
+            <div className="flex-1 h-px" style={{ background: "linear-gradient(90deg, #b8a06d, transparent)" }} />
+          </div>
 
           <nav className="flex flex-col gap-2.5 px-8" aria-label="Quick links">
             {links.map((link, i) => (

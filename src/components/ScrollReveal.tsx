@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, type ReactNode, Children, cloneElement, isValidElement } from "react";
+import { useEffect, useRef, useState, type ReactNode, Children } from "react";
 
 interface ScrollRevealProps {
   children: ReactNode;
@@ -10,19 +10,21 @@ interface ScrollRevealProps {
   duration?: number;
   /** Stagger children by this ms each (wraps each child in a reveal) */
   stagger?: number;
+  /** Re-trigger animation every time element enters viewport (default true) */
+  retrigger?: boolean;
 }
 
 const ScrollReveal = ({
   children,
   className = "",
   delay = 0,
-  distance = 10,
-  duration = 800,
+  distance = 14,
+  duration = 900,
   stagger,
+  retrigger = true,
 }: ScrollRevealProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
-  const hasTriggered = useRef(false);
 
   useEffect(() => {
     const el = ref.current;
@@ -36,10 +38,11 @@ const ScrollReveal = ({
 
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting && !hasTriggered.current) {
-          hasTriggered.current = true;
+        if (entry.isIntersecting) {
           setVisible(true);
-          observer.unobserve(el);
+          if (!retrigger) observer.unobserve(el);
+        } else if (retrigger) {
+          setVisible(false);
         }
       },
       { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
@@ -47,7 +50,7 @@ const ScrollReveal = ({
 
     observer.observe(el);
     return () => observer.disconnect();
-  }, []);
+  }, [retrigger]);
 
   const ease = "cubic-bezier(0.16, 1, 0.3, 1)";
 
@@ -60,7 +63,7 @@ const ScrollReveal = ({
           const itemDelay = delay + i * stagger;
           const style = {
             opacity: visible ? 1 : 0,
-            transform: visible ? "translateY(0)" : `translateY(${distance}px)`,
+            transform: visible ? "translateY(0) scale(1)" : `translateY(${distance}px) scale(0.985)`,
             transition: `opacity ${duration}ms ${ease} ${itemDelay}ms, transform ${duration}ms ${ease} ${itemDelay}ms`,
           };
           return (
@@ -75,7 +78,7 @@ const ScrollReveal = ({
 
   const style = {
     opacity: visible ? 1 : 0,
-    transform: visible ? "translateY(0)" : `translateY(${distance}px)`,
+    transform: visible ? "translateY(0) scale(1)" : `translateY(${distance}px) scale(0.985)`,
     transition: `opacity ${duration}ms ${ease} ${delay}ms, transform ${duration}ms ${ease} ${delay}ms`,
   };
 

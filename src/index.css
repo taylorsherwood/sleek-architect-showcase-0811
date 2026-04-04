@@ -499,7 +499,7 @@ realscout-simple-search {
     text-transform: uppercase;
     font-weight: 400;
     padding: 14px 40px;
-    border: 1px solid hsl(41 30% 57%);
+    border: 1px solid #b8a06d;
     color: hsl(var(--foreground));
     background: transparent;
     transition: background 0.4s ease, color 0.4s ease, border-color 0.4s ease, transform 0.16s ease;

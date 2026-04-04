@@ -115,23 +115,11 @@ const Connect = () => {
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       aria-label={social.label}
-                      className="flex items-center justify-center w-11 h-11 rounded-full transition-all duration-200 hover:-translate-y-0.5"
+                      className="flex items-center justify-center w-11 h-11 rounded-full"
                       style={{
                         background: "hsl(233 50% 9% / 0.05)",
                         border: "1px solid hsl(233 50% 9% / 0.08)",
                         color: "hsl(233 50% 9% / 0.45)",
-                      }}
-                      onMouseEnter={(e) => {
-                        const el = e.currentTarget;
-                        el.style.background = "hsl(var(--gold) / 0.1)";
-                        el.style.borderColor = "hsl(var(--gold) / 0.25)";
-                        el.style.color = "hsl(var(--gold-deep))";
-                      }}
-                      onMouseLeave={(e) => {
-                        const el = e.currentTarget;
-                        el.style.background = "hsl(233 50% 9% / 0.05)";
-                        el.style.borderColor = "hsl(233 50% 9% / 0.08)";
-                        el.style.color = "hsl(233 50% 9% / 0.45)";
                       }}
                     >
                       <social.icon className="w-[18px] h-[18px]" strokeWidth={1.5} />

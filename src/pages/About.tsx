@@ -178,7 +178,7 @@ const About = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-[720px]">
             <p className="text-minimal text-gold mb-4 font-extrabold">ABOUT US</p>
-            <h1 className="text-3xl sm:text-5xl md:text-7xl font-display font-normal text-architectural mb-0 whitespace-nowrap">
+            <h1 className="text-3xl sm:text-3xl sm:text-5xl md:text-7xl font-display font-normal text-architectural mb-0 whitespace-nowrap">
               Austin Real Estate,
               <br />
               <span className="italic">Elevated</span>

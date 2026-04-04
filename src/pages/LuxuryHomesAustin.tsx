@@ -39,7 +39,7 @@ const LuxuryHomesAustin = () => {
               style={{ fontSize: "0.55rem", letterSpacing: "0.35em", textTransform: "uppercase", fontFamily: '"Jost", sans-serif' }}>
               PRIVATE + CURATED OPPORTUNITIES
             </p>
-            <h1 className="text-5xl md:text-7xl font-display font-normal text-architectural mb-6">
+            <h1 className="text-3xl sm:text-5xl md:text-7xl font-display font-normal text-architectural mb-6">
               Curated Austin Opportunities
             </h1>
             <p className="text-lg text-muted-foreground/80 leading-relaxed max-w-2xl font-light">

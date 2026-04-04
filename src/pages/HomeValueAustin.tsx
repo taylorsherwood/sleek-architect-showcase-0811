@@ -137,7 +137,7 @@ const HomeValueAustin = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <p className="text-minimal text-gold mb-4">FREE HOME VALUATION</p>
-            <h1 className="text-5xl md:text-7xl font-display font-normal text-architectural mb-8">
+            <h1 className="text-3xl sm:text-5xl md:text-7xl font-display font-normal text-architectural mb-8">
               Free Austin Home Valuation
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">

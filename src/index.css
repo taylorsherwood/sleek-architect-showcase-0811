@@ -13,7 +13,7 @@ html, body {
 
 /* ── Global link hover — gold on hover ── */
 a:hover {
-  color: hsl(41 35% 57%) !important;
+  color: hsl(41 35% 57%);
 }
 
 /* ── Global image safeguards — prevent stretching, ensure sharpness ── */

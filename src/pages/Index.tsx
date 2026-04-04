@@ -192,8 +192,8 @@ const Hero = () => {
                 PRIVATE & OFF-MARKET OPPORTUNITIES →
               </Link>
             </div>
-            <p style={{ ...anim("0.5s"), fontFamily: '"Jost", sans-serif', fontSize: "10px", letterSpacing: "0.12em", color: "rgba(255,255,255,0.55)", marginTop: "8px", textTransform: "uppercase", textShadow: "0 0 12px rgba(255,255,255,0.35), 0 0 24px rgba(255,255,255,0.15)" }}>
-              VIEW ACTIVE AND OFF-MARKET PROPERTIES
+            <p style={{ ...anim("0.5s"), fontFamily: '"Jost", sans-serif', fontSize: "10px", letterSpacing: "0.12em", color: "rgba(255,255,255,0.55)", marginTop: "8px", textTransform: "uppercase", textShadow: "0 0 12px rgba(255,255,255,0.35), 0 0 24px rgba(255,255,255,0.15)", whiteSpace: "pre-line" }}>
+              {"\n\n"}VIEW ACTIVE AND OFF-MARKET PROPERTIES
             </p>
           </div>
 

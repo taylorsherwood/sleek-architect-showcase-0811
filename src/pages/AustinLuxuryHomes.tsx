@@ -210,14 +210,14 @@ const AustinLuxuryHomes = () => {
                 Echelon Property Group provides the expertise and access you need to find your perfect Austin luxury home.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link to="/contact" className="inline-block text-minimal bg-primary text-primary-foreground hover:!bg-gold hover:!text-white px-10 py-4 transition-colors duration-300">
+                <Link to="/contact" className="inline-block text-minimal bg-primary !text-white hover:!bg-gold hover:!text-white px-10 py-4 transition-colors duration-300">
                   CONTACT US
                 </Link>
                 <a
                   href="https://taylorsherwood.realscout.com/"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
-                  className="inline-block text-minimal border border-primary text-primary hover:bg-primary hover:text-primary-foreground px-10 py-4 transition-colors duration-300"
+                  className="inline-block text-minimal border border-primary text-primary hover:!bg-gold hover:!text-white hover:border-gold px-10 py-4 transition-colors duration-300"
                 >
                   SEARCH HOMES
                 </a>

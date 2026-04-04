@@ -117,7 +117,7 @@ const Contact = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
             <p className="text-minimal text-gold mb-4 font-extrabold">CONTACT US</p>
-            <h1 className="text-5xl md:text-7xl font-display font-normal text-architectural mb-8">
+            <h1 className="text-3xl sm:text-5xl md:text-7xl font-display font-normal text-architectural mb-8">
               Connect with Echelon
               <br />
               Property Group
@@ -224,7 +224,7 @@ const Contact = () => {
       <section className="py-28 bg-secondary">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-display font-normal text-architectural mb-8">
+            <h2 className="text-2xl sm:text-4xl md:text-5xl font-display font-normal text-architectural mb-8">
               Work With Austin's Trusted Real Estate Advisor
             </h2>
             <div className="space-y-6 text-muted-foreground leading-relaxed">

@@ -183,7 +183,7 @@ const Work = () => {
       <section className="py-32 bg-secondary">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-6xl font-light text-architectural mb-8">
+            <h2 className="text-2xl sm:text-4xl md:text-6xl font-light text-architectural mb-8">
               Ready to Start
               <br />
               Your Project?

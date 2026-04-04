@@ -142,15 +142,15 @@ const Listings = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
             <p className="text-minimal text-gold mb-4 font-extrabold">FEATURED LISTINGS</p>
-            <h1 className="text-5xl md:text-7xl font-display font-normal text-architectural mb-8">
+            <h1 className="text-3xl sm:text-3xl sm:text-5xl md:text-7xl font-display font-normal text-architectural mb-8" style={{ lineHeight: 1.1 }}>
               Austin Luxury Homes
               <br />
               and Opportunities
             </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mb-6">
+            <p className="text-base sm:text-xl text-muted-foreground max-w-3xl mb-6">
               Every property represented by Echelon Property Group reflects our commitment to quality, strategic positioning, and exceptional presentation. From luxury residences in Barton Creek and Westlake Hills to commercial investment opportunities across Central Texas, our portfolio is curated for discerning buyers and investors.
             </p>
-            <p className="text-lg text-muted-foreground max-w-3xl">
+            <p className="text-sm sm:text-lg text-muted-foreground max-w-3xl">
               Beyond what appears on public listing portals, our team maintains access to exclusive off-market inventory through established relationships with Austin's top agents, developers, and property owners. If you don't see what you're looking for here, <Link to="/contact" className="text-foreground hover:text-gold transition-colors duration-300 underline underline-offset-4">connect with our team</Link> — the right opportunity may already be within reach.
             </p>
           </div>
@@ -229,7 +229,7 @@ const Listings = () => {
       <section className="py-20 bg-secondary">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-display font-normal text-architectural mb-8">
+            <h2 className="text-2xl sm:text-4xl md:text-5xl font-display font-normal text-architectural mb-8">
               Beyond What You See Online
             </h2>
             <div className="space-y-6 text-muted-foreground leading-relaxed">
@@ -248,7 +248,7 @@ const Listings = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-display font-normal text-architectural mb-8">
+            <h2 className="text-2xl sm:text-4xl md:text-5xl font-display font-normal text-architectural mb-8">
               Explore Austin Neighborhoods
             </h2>
             <div className="space-y-6 text-muted-foreground leading-relaxed">

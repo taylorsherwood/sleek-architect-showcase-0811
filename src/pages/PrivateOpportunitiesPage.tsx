@@ -70,7 +70,7 @@ const PrivateOpportunitiesPage = () => {
             <p className="text-minimal text-[hsl(var(--gold))] mb-3 tracking-widest">
               PRIVATE ACCESS
             </p>
-            <h1 className="text-4xl md:text-5xl font-display font-normal text-primary-foreground leading-tight mb-5">
+            <h1 className="text-2xl sm:text-4xl md:text-5xl font-display font-normal text-primary-foreground leading-tight mb-5">
               Private Austin Opportunities
             </h1>
             <p className="text-lg text-primary-foreground/60 leading-relaxed max-w-xl mx-auto">

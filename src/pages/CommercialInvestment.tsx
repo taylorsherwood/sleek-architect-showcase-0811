@@ -79,7 +79,7 @@ const CommercialInvestment = () => {
         <div className="relative container mx-auto px-6">
           <div className="max-w-xl py-16">
             <p className="text-minimal text-gold mb-4 font-extrabold">COMMERCIAL & INVESTMENT</p>
-            <h1 className="text-3xl sm:text-5xl md:text-7xl font-display font-normal text-warm-cream mb-5 sm:mb-8">
+            <h1 className="text-3xl sm:text-3xl sm:text-5xl md:text-7xl font-display font-normal text-warm-cream mb-5 sm:mb-8">
               Austin Commercial & Investment Real Estate
             </h1>
             <p className="text-xl text-warm-cream/80 max-w-3xl">

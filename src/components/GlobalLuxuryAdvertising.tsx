@@ -322,7 +322,7 @@ const GlobalLuxuryAdvertising = () => {
                 </p>
                 <div
                   className="mb-5"
-                  style={{ width: 28, height: 1, background: "linear-gradient(90deg, hsl(var(--gold) / 0.35), hsl(var(--gold) / 0.06))" }}
+                  style={{ width: 28, height: 1, background: "#b8a06d" }}
                 />
                 <p className="text-foreground/85 text-sm tracking-[0.06em] font-medium" style={{ lineHeight: 2.4 }}>
                   Robb Report · Mansion Global · Wall Street Journal · Barron's

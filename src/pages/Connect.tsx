@@ -23,15 +23,17 @@ const socials = [
 const Connect = () => {
   const scrollProgress = useHeroScroll();
   const [heroHeight, setHeroHeight] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const updateHeight = () => {
+    const updateLayout = () => {
       const heroEl = document.getElementById("connect-hero");
       if (heroEl) setHeroHeight(heroEl.offsetHeight);
+      setIsMobile(window.innerWidth <= 430);
     };
-    updateHeight();
-    window.addEventListener("resize", updateHeight);
-    return () => window.removeEventListener("resize", updateHeight);
+    updateLayout();
+    window.addEventListener("resize", updateLayout);
+    return () => window.removeEventListener("resize", updateLayout);
   }, []);
 
   const heroProgress = heroHeight > 0 ? Math.min(window.scrollY / (heroHeight * 0.6), 1) : 0;
@@ -184,7 +186,7 @@ const Connect = () => {
                 src={combinedLogo}
                 alt="eXp Realty and Echelon Property Group combined brokerage logo"
                 className="w-full"
-                style={{ height: window.innerWidth <= 430 ? "140px" : "300px", marginBottom: "8px", objectFit: "contain", objectPosition: "53.25% center" }}
+                style={{ height: isMobile ? "140px" : "300px", marginBottom: "8px", objectFit: "contain", objectPosition: "53.25% center" }}
                 loading="eager"
               />
             </div>

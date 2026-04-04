@@ -292,6 +292,8 @@ const About = () => {
                   <h4 className="text-minimal text-muted-foreground/50 mb-3">PROFESSIONAL DESIGNATIONS</h4>
                   <div className="space-y-1">
                     <p className="text-sm text-muted-foreground/70">Certified Luxury Home Marketing Specialist (CLHMS)</p>
+                    <p className="text-sm text-muted-foreground/70">Accredited Buyer's Representative (ABR)</p>
+                    <p className="text-sm text-muted-foreground/70">Graduate Realtor Institute (GRI)</p>
                     <p className="text-sm text-muted-foreground/70">Member, eXp Luxury Division</p>
                   </div>
                 </div>

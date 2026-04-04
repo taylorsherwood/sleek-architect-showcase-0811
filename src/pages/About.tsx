@@ -85,6 +85,39 @@ const About = () => {
         <div className="w-20 h-px bg-gold/30" />
       </div>
 
+      {/* Credibility + Positioning Strip */}
+      <FadeIn>
+        <section className="pt-16 pb-16 bg-secondary/50">
+          <div className="container mx-auto px-6">
+            <div className="max-w-[720px] md:max-w-7xl mx-auto">
+              <div className="grid md:grid-cols-3 gap-10 md:gap-0">
+                <div className="md:pr-10">
+                  <p className="text-[0.65rem] tracking-[0.2em] uppercase text-gold mb-3 font-semibold">Expertise</p>
+                  <p className="text-sm text-muted-foreground leading-[1.7]">
+                    Luxury real estate advisory rooted in deep Austin market knowledge, with a focus on long-term value and strategic positioning.
+                  </p>
+                </div>
+                <div className="md:px-10 md:border-x md:border-gold/15">
+                  <p className="text-[0.65rem] tracking-[0.2em] uppercase text-gold mb-3 font-semibold">Access</p>
+                  <p className="text-sm text-muted-foreground leading-[1.7]">
+                    Direct access to on-market and off-market opportunities, including properties not publicly available.
+                  </p>
+                </div>
+                <div className="md:pl-10">
+                  <p className="text-[0.65rem] tracking-[0.2em] uppercase text-gold mb-3 font-semibold">Representation</p>
+                  <p className="text-sm text-muted-foreground leading-[1.7]">
+                    Discreet, high-level guidance for buyers, sellers, and investors navigating complex transactions.
+                  </p>
+                </div>
+              </div>
+              <p className="text-center text-xs text-muted-foreground/50 tracking-wide mt-12">
+                Trusted by clients across Austin's most competitive luxury markets.
+              </p>
+            </div>
+          </div>
+        </section>
+      </FadeIn>
+
       {/* Our Approach — 2-column */}
       <FadeIn>
         <section className="pt-24 pb-20 bg-background">

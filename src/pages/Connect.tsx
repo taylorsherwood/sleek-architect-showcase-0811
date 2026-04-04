@@ -349,8 +349,7 @@ const Connect = () => {
               <div
                 className="w-10 h-px"
                 style={{
-                  background:
-                    "linear-gradient(90deg, transparent, hsl(var(--gold) / 0.3), transparent)",
+                  background: "#b8a06d",
                 }}
               />
               <a

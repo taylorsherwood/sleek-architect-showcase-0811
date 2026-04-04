@@ -11,6 +11,11 @@ html, body {
   width: 100%;
 }
 
+/* ── Global link hover — gold on hover ── */
+a:hover {
+  color: hsl(41 35% 57%) !important;
+}
+
 /* ── Global image safeguards — prevent stretching, ensure sharpness ── */
 img {
   max-width: 100%;

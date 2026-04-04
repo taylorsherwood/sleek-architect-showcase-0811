@@ -479,8 +479,8 @@ realscout-simple-search {
     border: 1.5px solid transparent;
     background: 
       linear-gradient(hsl(0 0% 100% / 0.55), hsl(0 0% 100% / 0.55)) padding-box,
-      conic-gradient(from var(--border-angle), hsl(var(--gold) / 0.15), hsl(var(--gold) / 0.8), hsl(var(--gold) / 0.15), hsl(var(--gold) / 0.8)) border-box;
-    animation: border-rotate 3s linear infinite;
+      conic-gradient(from var(--border-angle), #b8a06d33, #b8a06d88, #b8a06d33, #b8a06d88) border-box;
+    animation: border-rotate 6s linear infinite;
   }
 
   /* ── Parallax break panels ── */

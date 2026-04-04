@@ -163,7 +163,7 @@ const Hero = () => {
           <div className="inline-flex flex-col items-center" style={anim("0.4s")}>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/austin-luxury-homes-for-sale"
-                className="inline-block text-center px-8 py-[14px]"
+                className="inline-block text-center px-6 py-[14px]"
                 style={{
                   fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 500,
                   border: "2px solid #b8a06d", color: "#fff",

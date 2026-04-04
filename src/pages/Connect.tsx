@@ -115,23 +115,11 @@ const Connect = () => {
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       aria-label={social.label}
-                      className="flex items-center justify-center w-11 h-11 rounded-full transition-all duration-200 hover:-translate-y-0.5"
+                      className="flex items-center justify-center w-11 h-11 rounded-full"
                       style={{
                         background: "hsl(233 50% 9% / 0.05)",
                         border: "1px solid hsl(233 50% 9% / 0.08)",
                         color: "hsl(233 50% 9% / 0.45)",
-                      }}
-                      onMouseEnter={(e) => {
-                        const el = e.currentTarget;
-                        el.style.background = "hsl(var(--gold) / 0.1)";
-                        el.style.borderColor = "hsl(var(--gold) / 0.25)";
-                        el.style.color = "hsl(var(--gold-deep))";
-                      }}
-                      onMouseLeave={(e) => {
-                        const el = e.currentTarget;
-                        el.style.background = "hsl(233 50% 9% / 0.05)";
-                        el.style.borderColor = "hsl(233 50% 9% / 0.08)";
-                        el.style.color = "hsl(233 50% 9% / 0.45)";
                       }}
                     >
                       <social.icon className="w-[18px] h-[18px]" strokeWidth={1.5} />
@@ -159,21 +147,11 @@ const Connect = () => {
                 <a
                   key={card.href}
                   href={card.href}
-                  className="flex items-center gap-3.5 w-full h-[52px] px-6 rounded-full transition-all duration-200 hover:-translate-y-0.5"
+                  className="flex items-center gap-3.5 w-full h-[52px] px-6 rounded-full"
                   style={{
                     background: "hsl(0 0% 100% / 0.55)",
                     border: "1.5px solid hsl(var(--gold) / 0.5)",
                     boxShadow: "0 2px 8px hsl(0 0% 0% / 0.03)",
-                  }}
-                  onMouseEnter={(e) => {
-                    const el = e.currentTarget;
-                    el.style.borderColor = "hsl(var(--gold) / 0.75)";
-                    el.style.boxShadow = "0 4px 16px hsl(0 0% 0% / 0.05)";
-                  }}
-                  onMouseLeave={(e) => {
-                    const el = e.currentTarget;
-                    el.style.borderColor = "hsl(var(--gold) / 0.5)";
-                    el.style.boxShadow = "0 2px 8px hsl(0 0% 0% / 0.03)";
                   }}
                 >
                   <card.icon
@@ -209,25 +187,15 @@ const Connect = () => {
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                className="flex items-center justify-center w-full h-[52px] rounded-full transition-all duration-200 hover:-translate-y-0.5"
+                className="flex items-center justify-center w-full h-[52px] rounded-full"
                 style={{
                   background: "hsl(0 0% 100% / 0.55)",
                   border: "1.5px solid hsl(var(--gold) / 0.5)",
                   boxShadow: "0 2px 8px hsl(0 0% 0% / 0.03)",
                 }}
-                onMouseEnter={(e) => {
-                  const el = e.currentTarget;
-                  el.style.borderColor = "hsl(var(--gold) / 0.75)";
-                  el.style.boxShadow = "0 4px 16px hsl(0 0% 0% / 0.05)";
-                }}
-                onMouseLeave={(e) => {
-                  const el = e.currentTarget;
-                  el.style.borderColor = "hsl(var(--gold) / 0.5)";
-                  el.style.boxShadow = "0 2px 8px hsl(0 0% 0% / 0.03)";
-                }}
               >
                 <span
-                  className="font-sans font-medium uppercase text-center transition-colors duration-200"
+                  className="font-sans font-medium uppercase text-center"
                   style={{
                     fontSize: "11px",
                     letterSpacing: "0.12em",
@@ -245,17 +213,11 @@ const Connect = () => {
               href="https://www.echelonpropertygroup.com/contact"
               target="_blank"
               rel="noopener noreferrer nofollow"
-              className="flex items-center justify-center w-full h-14 rounded-full transition-all duration-200 hover:-translate-y-0.5"
+              className="flex items-center justify-center w-full h-14 rounded-full"
               style={{
                 background: "hsl(233 50% 9%)",
                 border: "1px solid hsl(233 50% 12%)",
                 boxShadow: "0 4px 20px hsl(0 0% 0% / 0.1)",
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.boxShadow = "0 8px 28px hsl(0 0% 0% / 0.16)";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.boxShadow = "0 4px 20px hsl(0 0% 0% / 0.1)";
               }}
             >
               <span
@@ -277,7 +239,7 @@ const Connect = () => {
               href="https://www.dropbox.com/scl/fi/ism1gkeqt0bol9srh3b0a/IABS-1-2.pdf?rlkey=l05zn9bqqmg8e1ru4qjzsnd1o&dl=0"
               target="_blank"
               rel="noopener noreferrer nofollow"
-              className="flex items-center justify-center w-full h-[52px] rounded-full transition-all duration-200 hover:-translate-y-0.5"
+              className="flex items-center justify-center w-full h-[52px] rounded-full"
               style={{
                 background: "transparent",
                 border: "1px solid hsl(233 50% 9% / 0.06)",

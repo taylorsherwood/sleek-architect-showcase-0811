@@ -13,7 +13,7 @@ import SchemaMarkup, {
 import ScrollReveal from "@/components/ScrollReveal";
 import { formatPhoneNumber, getPhoneDigits, getTimestamp } from "@/lib/formUtils";
 import blogRollingwoodVsWestlake from "@/assets/blog-rollingwood-vs-westlake.jpg";
-import blogTarrytownVsBrykerWoods from "@/assets/tarrytown-entry.jpg";
+import blogTarrytownVsBrykerWoods from "@/assets/tarrytown-bryker-woods.avif";
 import blogLakeAustinVsLakeTravis from "@/assets/lake-travis-sunset.jpg";
 import taylorBoatImg from "@/assets/taylor-headshot.jpeg";
 import taylorAboutHeadshot from "@/assets/taylor-about-headshot.jpeg";

@@ -28,20 +28,20 @@ const neighborhoodInsights: Record<string, { title: string; description: string;
     { title: "Best Waterfront Homes in Austin", description: "A comprehensive look at Austin's lakefront market and what drives value.", href: "/blog/best-waterfront-homes-austin" },
   ],
   "barton-creek": [
-    { title: "Rollingwood vs Westlake Hills", description: "How Barton Creek's western neighbors compare in lifestyle and pricing.", href: "/blog/rollingwood-vs-westlake-hills" },
+    { title: "Luxury Lock-and-Leave in Governor's Hill", description: "Inside a fully reimagined residence in one of Barton Creek's most exclusive gated enclaves.", href: "/blog/2300-barton-creek-blvd" },
     { title: "Best Luxury Neighborhoods in Austin", description: "Where Barton Creek fits within Austin's luxury real estate hierarchy.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
   ],
   "travis-heights": [
     { title: "Top Investment Neighborhoods in Austin", description: "Travis Heights' walkability and SoCo proximity make it a top investment play.", href: "/blog/top-investment-neighborhoods-austin" },
-    { title: "Best Luxury Neighborhoods in Austin", description: "How Travis Heights compares to Austin's premier addresses.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
+    { title: "Moving to Austin from California", description: "Why Travis Heights appeals to buyers relocating from coastal California.", href: "/blog/moving-to-austin-texas-from-california" },
   ],
   "downtown": [
     { title: "Austin Luxury Market Forecast", description: "What the data says about downtown Austin's condo market and pricing trajectory.", href: "/blog/austin-luxury-real-estate-market-forecast" },
-    { title: "Top Investment Neighborhoods in Austin", description: "Cash flow, appreciation, and the case for downtown Austin condos.", href: "/blog/top-investment-neighborhoods-austin" },
+    { title: "Moving to Austin — Complete Relocation Guide", description: "Downtown living, cost of living, and what to expect as a new Austin resident.", href: "/blog/moving-to-austin-texas-complete-relocation-guide" },
   ],
   "dripping-springs": [
     { title: "Top Investment Neighborhoods in Austin", description: "Dripping Springs sits on Austin's primary growth corridor — here's why investors are paying attention.", href: "/blog/top-investment-neighborhoods-austin" },
-    { title: "Best Luxury Neighborhoods in Austin", description: "The Hill Country gateway and its place in Austin's luxury market.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
+    { title: "Austin Property Taxes Explained", description: "How Hays County tax rates compare and what Hill Country buyers should know.", href: "/blog/austin-property-taxes-explained" },
   ],
   "texas-hill-country-estates": [
     { title: "Best Luxury Neighborhoods in Austin", description: "Ranch estates and vineyard properties in the Texas Hill Country.", href: "/blog/best-luxury-neighborhoods-austin-texas" },

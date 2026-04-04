@@ -887,12 +887,12 @@ const CommunitiesSection = () => (
    ───────────────────────────────────────────── */
 
 const insights = [
-  { to: "/moving-to-austin-texas", title: "Moving to Austin, Texas", excerpt: "Everything you need to know about relocating to Austin — neighborhoods, lifestyle, and what to expect.", category: "Relocation" },
-  { to: "/best-luxury-neighborhoods-austin-texas", title: "Best Luxury Neighborhoods in Austin", excerpt: "A comprehensive guide to Austin's most prestigious communities and what makes each one unique.", category: "Neighborhoods" },
-  { to: "/austin-luxury-market-report", title: "Austin Luxury Real Estate Market Report", excerpt: "Quarterly insights on pricing, inventory, and luxury segment performance across Austin.", category: "Market Report" },
-  { to: "/blog/how-to-find-off-market-real-estate-deals-austin-2026", title: "How to Find Off-Market Deals in Austin", excerpt: "An investor playbook for sourcing pre-market and pocket listings across Austin's competitive landscape.", category: "Investment" },
-  { to: "/austin-commercial-real-estate", title: "Austin Commercial Real Estate Opportunities", excerpt: "Explore investment opportunities across Austin including retail, office, and development land with strong long-term upside.", category: "Commercial" },
-  { to: "/invest", title: "Austin Real Estate Investment Strategy", excerpt: "Identify high-growth opportunities, off-market deals, and strategic acquisitions across Austin's evolving real estate landscape.", category: "Investing" },
+  { to: "/blog/austin-luxury-real-estate-market-forecast", title: "Austin Luxury Market Forecast", excerpt: "Expert analysis of pricing trends, inventory, and investment outlook across Austin's luxury segments.", category: "Market Insights" },
+  { to: "/blog/best-luxury-neighborhoods-austin-texas", title: "Best Luxury Neighborhoods in Austin", excerpt: "A comprehensive guide to Austin's most prestigious communities and what makes each one unique.", category: "Neighborhoods" },
+  { to: "/blog/top-investment-neighborhoods-austin", title: "Top Investment Neighborhoods", excerpt: "Data-driven analysis of appreciation trends, rental yields, and growth potential across Austin.", category: "Investment" },
+  { to: "/blog/best-waterfront-homes-austin", title: "Best Waterfront Homes in Austin", excerpt: "Lake Austin estates, Lake Travis retreats, and what to know before buying waterfront property.", category: "Waterfront" },
+  { to: "/blog/moving-to-austin-texas-from-california", title: "Moving to Austin from California", excerpt: "Everything California residents need to know about relocating — taxes, neighborhoods, and lifestyle.", category: "Relocation" },
+  { to: "/blog/austin-property-taxes-explained", title: "Austin Property Taxes Explained", excerpt: "Rates, exemptions, protest strategies, and how property taxes affect luxury real estate decisions.", category: "Market Insights" },
 ];
 
 const InsightsSection = () => (

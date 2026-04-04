@@ -13,7 +13,7 @@ const allPosts = [...seoBlogPosts, ...blogPosts];
 const Blog = () => {
   const [activeCategory, setActiveCategory] = useState("ALL");
   
-  const categories = ["ALL", "LUXURY LIVING", "RELOCATION", "MARKET INSIGHTS", "INVESTMENT", "SUSTAINABILITY", "DESIGN", "URBAN PLANNING"];
+  const categories = ["ALL", "LUXURY LIVING", "NEIGHBORHOODS", "RELOCATION", "MARKET INSIGHTS", "INVESTMENT", "FEATURED LISTING", "SUSTAINABILITY", "DESIGN", "URBAN PLANNING"];
   
   const filteredPosts = activeCategory === "ALL" 
     ? allPosts 

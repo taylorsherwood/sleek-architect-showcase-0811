@@ -178,7 +178,7 @@ const Hero = () => {
                 Explore Available Opportunities →
               </Link>
               <Link to="/off-market-real-estate-austin"
-                className="inline-block text-center px-8 py-[14px]"
+                className="inline-block text-center px-6 py-[14px]"
                 style={{
                   fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 400,
                   border: "1px solid rgba(255,255,255,0.52)", color: "rgba(255,255,255,0.95)",

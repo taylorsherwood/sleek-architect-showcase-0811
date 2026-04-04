@@ -53,7 +53,7 @@ const Hero = () => {
       return;
     }
     // Delay video load until after first paint + initial render settle
-    const id = setTimeout(() => setVideoSrc("/videos/hero-video.mp4"), 150);
+    const id = setTimeout(() => setVideoSrc("/videos/Final_Draft.mp4"), 150);
     return () => clearTimeout(id);
   }, []);
 

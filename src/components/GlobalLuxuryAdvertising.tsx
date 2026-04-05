@@ -345,7 +345,7 @@ const GlobalLuxuryAdvertising = () => {
 
             {/* Right – collage image with smooth parallax drift */}
             <div
-              className="overflow-hidden rounded group cursor-default"
+              className="overflow-hidden group cursor-default"
               style={revealScaleStyle(platforms1.visible, 300)}>
               <div
                 ref={collageParallaxRef}

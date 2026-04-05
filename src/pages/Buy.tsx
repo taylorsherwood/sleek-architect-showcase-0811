@@ -202,7 +202,10 @@ const MortgageCalculator = () => {
       <div className="grid sm:grid-cols-2 gap-6 mb-8">
         <div>
           <label className="text-minimal text-muted-foreground mb-2 block">HOME PRICE</label>
-          <input type="number" value={homePrice} onChange={(e) => setHomePrice(Number(e.target.value))} className={inputClass} />
+          <div className="relative">
+            <span className="absolute left-4 top-1/2 -translate-y-1/2 text-muted-foreground">$</span>
+            <input type="text" inputMode="numeric" value={homePrice.toLocaleString()} onChange={(e) => setHomePrice(Number(e.target.value.replace(/[^0-9]/g, '')) || 0)} className={`${inputClass} pl-8`} />
+          </div>
         </div>
         <div>
           <label className="text-minimal text-muted-foreground mb-2 block">DOWN PAYMENT (%)</label>

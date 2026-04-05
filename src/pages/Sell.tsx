@@ -112,59 +112,79 @@ const stats = [
   { target: 125, prefix: "$", suffix: "M+", label: "Career Sales Volume", countDown: false, from: 75 },
 ];
 
-function useCountUp(target: number, duration = 2600, from = 0, countDown = false) {
-  const [value, setValue] = useState(target);
+function useCountUp(target: number, duration = 3500, from = 0) {
+  const [count, setCount] = useState(from);
+  const [inView, setInView] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
-  const started = useRef(false);
-
-  const animate = useCallback(() => {
-    const start = performance.now();
-    const step = (now: number) => {
-      const progress = Math.min((now - start) / duration, 1);
-      const eased = 1 - Math.pow(1 - progress, 3); // ease-out cubic
-      const current = Math.round(from + (target - from) * eased);
-      setValue(current);
-      if (progress < 1) requestAnimationFrame(step);
-    };
-    requestAnimationFrame(step);
-  }, [target, duration, from]);
+  const animId = useRef(0);
 
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
-    const obs = new IntersectionObserver(
+    const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          if (!started.current) {
-            started.current = true;
-            animate();
-          }
+          setInView(true);
+          setCount(from);
+          const startTime = performance.now();
+          const id = ++animId.current;
+          const step = (now: number) => {
+            if (id !== animId.current) return;
+            const progress = Math.min((now - startTime) / duration, 1);
+            const eased = 1 - Math.pow(1 - progress, 3);
+            setCount(Math.round(from + eased * (target - from)));
+            if (progress < 1) requestAnimationFrame(step);
+          };
+          requestAnimationFrame(step);
         } else {
-          if (started.current) {
-            started.current = false;
-            setValue(from);
-          }
+          setCount(from);
+          setInView(false);
         }
       },
       { threshold: 0.3 }
     );
-    obs.observe(el);
-    return () => obs.disconnect();
-  }, [animate, from]);
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [target, duration, from]);
 
-  return { value, ref };
+  return { count, ref, inView };
 }
 
-function AnimatedStat({ target, suffix = "", prefix = "", label, countDown = false, from = 0 }: {
+function AnimatedStat({ target, suffix = "", prefix = "", label, from = 0 }: {
   target: number; suffix?: string; prefix?: string; label: string; countDown?: boolean; from?: number;
 }) {
-  const { value, ref } = useCountUp(target, 4800, from, countDown);
+  const { count, ref, inView } = useCountUp(target, 3500, from);
   return (
-    <div ref={ref}>
-      <p className="text-3xl md:text-4xl font-display font-normal text-primary-foreground mb-1">
-        {prefix}{value}{suffix}
+    <div ref={ref} className="text-center group/stat">
+      <p style={{
+        fontFamily: '"Cinzel", serif', fontWeight: 400,
+        fontSize: "clamp(48px, 6vw, 80px)", lineHeight: 1, color: "#F5F3EF",
+      }}>
+        {prefix}{count}
+        <span style={{
+          fontFamily: '"Cinzel", serif', fontWeight: 400,
+          fontSize: "0.6em", color: "hsl(38 39% 61%)", verticalAlign: "super",
+        }}>
+          {suffix}
+        </span>
       </p>
-      <p className="text-minimal text-primary-foreground/50">{label}</p>
+      <div className="relative inline-block mt-2 pb-3">
+        <p style={{
+          fontFamily: '"Jost", sans-serif', fontWeight: 300,
+          fontSize: "10px", letterSpacing: "0.2em", textTransform: "uppercase",
+          color: "#9A9690",
+        }}>
+          {label}
+        </p>
+        <div
+          className="absolute bottom-0 left-0 h-px"
+          style={{
+            background: "hsl(38 39% 61%)",
+            width: inView ? "100%" : "0%",
+            transition: "width 3.5s cubic-bezier(0.22, 1, 0.36, 1)",
+          }}
+        />
+      </div>
     </div>
   );
 }

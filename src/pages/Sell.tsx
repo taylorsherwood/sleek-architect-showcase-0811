@@ -322,7 +322,9 @@ const Sell = () => {
               style={{
                 border: "1px solid hsl(var(--gold))",
                 color: "hsl(var(--gold))",
-                background: "transparent",
+                background: "rgba(255,255,255,0.08)",
+                backdropFilter: "blur(12px)",
+                WebkitBackdropFilter: "blur(12px)",
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.background = "hsl(var(--gold))";

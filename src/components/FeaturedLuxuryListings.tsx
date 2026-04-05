@@ -56,7 +56,7 @@ const listings: Listing[] = [
     price: "$3,250,000",
     address: "3629 Peregrine Falcon Dr, Austin, TX 78746",
     neighborhood: "Westlake",
-    sold: true,
+    status: "sold",
     link: "https://taylorsherwood.realscout.com/agent/ls/160106167",
   },
   {
@@ -73,7 +73,7 @@ const listings: Listing[] = [
     price: "$1,599,000",
     address: "2210 Westlake Dr A, Austin, TX 78746",
     neighborhood: "Westlake",
-    sold: "pending" as any,
+    status: "pending",
     link: "https://taylorsherwood.realscout.com/agent/ls/154226813",
   },
 ];
@@ -119,13 +119,13 @@ const ListingCardOverlay = ({
       </div>
 
       {/* Sold badge */}
-      {listing.sold && (
+      {listing.status && (
         <div className="absolute top-4 left-4">
           <span
             className="bg-background/90 text-foreground backdrop-blur-sm px-3 py-1 font-semibold"
             style={{ ...labelStyle, fontSize: "0.45rem" }}
           >
-            SOLD
+            {listing.status.toUpperCase()}
           </span>
         </div>
       )}

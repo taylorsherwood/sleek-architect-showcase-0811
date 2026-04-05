@@ -367,7 +367,7 @@ const Buy = () => {
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Why Work With echelon
               </h2>
-              <p className="text-muted-foreground leading-relaxed">Choosing the right Austin real estate advisor is the single most important decision you'll make in your home search. Here's what sets Taylor apart:
+              <p className="text-muted-foreground leading-relaxed">Choosing the right Austin real estate advisor is the single most important decision you'll make in your home search. Here's what sets us apart:
 
               </p>
             </div>

@@ -73,6 +73,7 @@ const listings: Listing[] = [
     price: "$1,599,000",
     address: "2210 Westlake Dr A, Austin, TX 78746",
     neighborhood: "Westlake",
+    sold: "pending" as any,
     link: "https://taylorsherwood.realscout.com/agent/ls/154226813",
   },
 ];

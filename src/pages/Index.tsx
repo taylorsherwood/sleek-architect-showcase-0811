@@ -178,7 +178,7 @@ const Hero = () => {
                 onMouseEnter={e => { e.currentTarget.style.transform = "translateX(3px) translateZ(0)"; e.currentTarget.style.background = "#fff"; e.currentTarget.style.borderColor = "#fff"; e.currentTarget.style.color = "#b8a06d"; }}
                 onMouseLeave={e => { e.currentTarget.style.transform = "translateX(0) translateZ(0)"; e.currentTarget.style.background = "#b8a06d"; e.currentTarget.style.borderColor = "#b8a06d"; e.currentTarget.style.color = "#fff"; }}
               >
-                Explore Available Opportunities →
+                EXPLORE AVAILABLE OPPORTUNITIES →
               </Link>
               <Link to="/off-market-real-estate-austin"
                 className="inline-block text-center px-6 py-[14px]"
@@ -196,7 +196,7 @@ const Hero = () => {
               </Link>
             </div>
             <p style={{ ...anim("0.5s"), fontFamily: '"Jost", sans-serif', fontSize: "10px", letterSpacing: "0.12em", color: "rgba(255,255,255,0.55)", marginTop: "6px", textTransform: "uppercase", textShadow: "0 0 12px rgba(255,255,255,0.35), 0 0 24px rgba(255,255,255,0.15)", whiteSpace: "pre-wrap" }}>
-              {"\n\nVIEW ACTIVE AND OFF-MARKET PROPERTIES"}
+              {"\n\n\nVIEW ACTIVE AND OFF-MARKET PROPERTIES"}
             </p>
           </div>
 

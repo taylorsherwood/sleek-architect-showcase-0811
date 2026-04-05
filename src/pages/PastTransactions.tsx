@@ -41,7 +41,7 @@ const PastTransactions = () => {
             className="w-full h-full object-cover object-[center_30%] md:object-[center_25%]"
             fetchPriority="high"
           />
-          <div className="absolute inset-0 bg-gradient-to-tr from-[#0A0E19]/70 via-[#0A0E19]/35 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-tr from-[#0A0E19]/45 via-[#0A0E19]/20 to-transparent" />
         </div>
         <div className="relative container mx-auto px-6 pt-24 md:pt-32 lg:pt-36">
           <div className="max-w-xl">

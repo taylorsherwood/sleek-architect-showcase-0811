@@ -31,7 +31,7 @@ const listings: Listing[] = [
     image: listingBartonCreek,
     price: "$8,750,000",
     address: "4416 Amarra Dr, Austin, TX 78735",
-    neighborhood: "Barton Creek",
+    neighborhood: "AMARRA",
     link: "https://taylorsherwood.realscout.com/agent/ls/163332268",
   },
   {

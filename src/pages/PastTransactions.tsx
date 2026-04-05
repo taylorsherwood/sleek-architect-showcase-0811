@@ -47,7 +47,7 @@ const PastTransactions = () => {
           <div className="max-w-xl">
             <p className="text-minimal text-primary-foreground/60 mb-4">PAST TRANSACTIONS</p>
             <h1 className="text-[1.75rem] sm:text-[2.25rem] md:text-[2.85rem] lg:text-[3.25rem] font-display font-normal text-primary-foreground leading-[1.1] mb-5">
-              Proven Results Across Austin's Most Competitive Markets
+              Proven Results Across Austin's<br className="hidden lg:block" /> Most Competitive Markets
             </h1>
             <p className="text-primary-foreground/70 text-lg max-w-lg mb-8">
               Representing buyers and sellers across Austin's most desirable communities, including private and off-market opportunities.

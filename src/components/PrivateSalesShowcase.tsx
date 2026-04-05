@@ -6,7 +6,7 @@ import highRoadImage from "@/assets/the-high-road-westlake.webp";
 import clearCreekImage from "@/assets/clear-creek-road.jpg";
 import bartonCreekImage from "@/assets/barton-creek.jpg";
 import multifamilySAImage from "@/assets/private-sale-multifamily-sa.webp";
-import spanishOaksImage from "@/assets/spanish-oaks-private-sale.jpg";
+import spanishOaksImage from "@/assets/spanish-oaks-private-sale.avif";
 import eastAustinImage from "@/assets/east-austin-commercial.jpg";
 
 /* ------------------------------------------------------------------ */

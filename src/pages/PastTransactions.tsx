@@ -31,38 +31,33 @@ const PastTransactions = () => {
       <Navigation />
 
       {/* ── Editorial Hero ── */}
-      <section className="relative h-screen w-full overflow-hidden">
-        {/* Hero image — focal point locked to upper third for consistent framing */}
-        <img
-          src={heroImage}
-          alt="Aerial view of Lake Austin waterfront properties"
-          width={1920}
-          height={1080}
-          className="absolute inset-0 w-full h-full object-cover object-[center_30%] md:object-[center_25%]"
-          fetchPriority="high"
-        />
-        {/* Bottom-only gradient — refined for text readability */}
-        <div
-          className="absolute inset-x-0 bottom-0 h-[52%]"
-          style={{ background: "linear-gradient(to top, rgba(10,14,25,0.60) 0%, rgba(10,14,25,0.32) 35%, rgba(10,14,25,0.10) 65%, rgba(10,14,25,0.0) 100%)" }}
-        />
-
-        <div className="absolute inset-0 flex items-end pb-16 md:pb-20">
-          <div className="container mx-auto px-6 md:px-10 lg:px-14">
-            <ScrollReveal distance={6} duration={900}>
-              <h1
-                className="text-[1.6rem] sm:text-[2rem] md:text-[2.7rem] font-display font-light text-white leading-[1.1] tracking-[0.02em]"
-                style={{ textShadow: "0px 2px 8px rgba(0,0,0,0.25)" }}
-              >
-                A Proven Track Record
-              </h1>
-              <p
-                className="mt-5 text-white/90 text-sm md:text-[15px] font-light tracking-wide max-w-lg leading-[1.7]"
-                style={{ textShadow: "0px 2px 8px rgba(0,0,0,0.25)" }}
-              >
-                A selection of transactions across Austin's most competitive markets.
-              </p>
-            </ScrollReveal>
+      <section className="relative h-screen flex items-center overflow-hidden bg-primary">
+        <div className="absolute inset-0">
+          <img
+            src={heroImage}
+            alt="Aerial view of Lake Austin waterfront properties"
+            width={1920}
+            height={1080}
+            className="w-full h-full object-cover object-[center_30%] md:object-[center_25%]"
+            fetchPriority="high"
+          />
+          <div className="absolute inset-0 bg-gradient-to-tr from-[#0A0E19]/70 via-[#0A0E19]/35 to-transparent" />
+        </div>
+        <div className="relative container mx-auto px-6 pt-24 md:pt-32 lg:pt-36">
+          <div className="max-w-xl">
+            <p className="text-minimal text-primary-foreground/60 mb-4">PAST TRANSACTIONS</p>
+            <h1 className="text-[1.75rem] sm:text-[2.25rem] md:text-[2.85rem] lg:text-[3.25rem] font-display font-normal text-primary-foreground leading-[1.1] mb-5">
+              Proven Results Across Austin's Most Competitive Markets
+            </h1>
+            <p className="text-primary-foreground/70 text-lg max-w-lg mb-8">
+              Representing buyers and sellers across Austin's most desirable communities, including private and off-market opportunities.
+            </p>
+            <a
+              href="#transactions"
+              className="inline-block text-minimal border border-gold text-primary-foreground px-8 py-3.5 hover:bg-gold/10 transition-colors duration-300"
+            >
+              VIEW TRANSACTIONS
+            </a>
           </div>
         </div>
       </section>

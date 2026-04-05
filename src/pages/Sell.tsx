@@ -384,12 +384,6 @@ const Sell = () => {
       {/* ── White spacer ── */}
       <div className="bg-background py-8" />
 
-      {/* ── Thin gold divider above Marketing Strategy ── */}
-      <div className="bg-secondary">
-        <div className="container mx-auto px-6">
-          <div className="max-w-5xl mx-auto h-px bg-gold" />
-        </div>
-      </div>
 
       {/* ── Marketing Strategy (Editorial) ── */}
       <section className="relative py-20 md:py-28 pb-14 md:pb-18 bg-secondary overflow-visible">

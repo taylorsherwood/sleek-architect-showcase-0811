@@ -52,12 +52,12 @@ const PastTransactions = () => {
             <p className="text-primary-foreground/70 text-lg max-w-lg mb-8">
               Representing buyers and sellers across Austin's most desirable communities, including private and off-market opportunities.
             </p>
-            <a
-              href="#transactions"
-              className="inline-block text-minimal border border-gold text-primary-foreground px-8 py-3.5 hover:bg-gold/10 transition-colors duration-300"
+            <button
+              onClick={() => document.getElementById('transactions')?.scrollIntoView({ behavior: 'smooth' })}
+              className="inline-block text-minimal border border-gold text-primary-foreground px-8 py-3.5 hover:bg-gold/10 transition-colors duration-300 cursor-pointer bg-transparent"
             >
               VIEW TRANSACTIONS
-            </a>
+            </button>
           </div>
         </div>
       </section>

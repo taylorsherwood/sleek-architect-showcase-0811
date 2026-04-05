@@ -41,10 +41,10 @@ const PastTransactions = () => {
             className="w-full h-full object-cover object-[center_30%] md:object-[center_25%]"
             fetchPriority="high"
           />
-          
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0A0E19]/60 via-[#0A0E19]/30 to-transparent" style={{ width: '60%' }} />
         </div>
         <div className="relative container mx-auto px-6 pt-24 md:pt-32 lg:pt-36">
-          <div className="max-w-xl relative rounded-lg px-6 py-8 md:px-8 md:py-10" style={{ background: 'linear-gradient(135deg, rgba(10,14,25,0.55) 0%, rgba(10,14,25,0.25) 80%, transparent 100%)' }}>
+          <div className="max-w-xl">
             <p className="text-minimal text-primary-foreground/60 mb-4">PAST TRANSACTIONS</p>
             <h1 className="text-[1.75rem] sm:text-[2.25rem] md:text-[2.85rem] lg:text-[3.25rem] font-display font-normal text-primary-foreground leading-[1.1] mb-5">
               Proven Results Across Austin's Most Competitive Markets

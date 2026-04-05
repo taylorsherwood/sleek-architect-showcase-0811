@@ -303,7 +303,7 @@ const AdvisorSection = () => (
          </div>
 
         {/* Right — content */}
-        <div className="flex flex-col justify-center bg-secondary lg:-mt-24" style={{ padding: "clamp(36px, 5vw, 64px)" }}>
+        <div className="flex flex-col justify-center bg-secondary lg:-mt-[4.5rem]" style={{ padding: "clamp(36px, 5vw, 64px)" }}>
           <ScrollReveal>
             <p className="text-minimal text-gold mb-6">
               TAYLOR SHERWOOD, FOUNDER

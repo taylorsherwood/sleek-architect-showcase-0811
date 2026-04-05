@@ -77,7 +77,7 @@ const whyTaylor = [
 {
   title: "Negotiation Experience",
   description:
-  "With a background in investment strategy and hundreds of transactions closed, Taylor delivers disciplined, data-driven negotiation that protects your interests and maximizes value — whether you're buying Austin luxury homes for sale or competing in Barton Creek's most sought-after enclaves."
+  "With a background in investment strategy and hundreds of transactions closed, Taylor delivers disciplined, data-driven negotiation that protects your interests and maximizes value, whether you're buying Austin luxury homes for sale or positioning an investment disposition."
 },
 {
   title: "Off-Market Access",

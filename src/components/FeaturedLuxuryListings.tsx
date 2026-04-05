@@ -21,10 +21,10 @@ const listings: Listing[] = [
   {
     id: "1",
     image: listingLakeAustin,
-    price: "$9,990,000",
+    price: "$11,500,000",
     address: "2503 Westlake Dr 301, Austin, TX 78746",
     neighborhood: "Lake Austin",
-    link: "https://taylorsherwood.realscout.com/agent/ls/168562024",
+    link: "https://taylorsherwood.realscout.com/agent/ls/160972751",
   },
   {
     id: "2",

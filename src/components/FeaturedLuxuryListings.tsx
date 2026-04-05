@@ -13,7 +13,7 @@ interface Listing {
   price: string;
   address: string;
   neighborhood: string;
-  sold?: boolean;
+  status?: "sold" | "pending";
   link: string;
 }
 

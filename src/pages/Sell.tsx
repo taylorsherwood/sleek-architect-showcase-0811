@@ -335,8 +335,6 @@ const Sell = () => {
             </a>
           </div>
 
-          {/* ── Gold divider ── */}
-          <div className="max-w-5xl mx-auto h-px bg-gold mb-10" />
 
           {/* ── Stats ── */}
           <div className="max-w-5xl mx-auto grid grid-cols-3 gap-6 text-center">

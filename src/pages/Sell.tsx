@@ -339,7 +339,7 @@ const Sell = () => {
 
 
           {/* ── Stats ── */}
-          <div className="max-w-5xl mx-auto grid grid-cols-3 gap-6 text-center">
+          <div className="max-w-5xl mx-auto grid grid-cols-3 gap-6 text-center mt-12">
             {stats.map((s) => (
               <AnimatedStat key={s.label} {...s} />
             ))}

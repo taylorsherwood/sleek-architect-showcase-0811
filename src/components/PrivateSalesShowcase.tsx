@@ -167,7 +167,7 @@ const PrivateSalesShowcase = () => {
             </ScrollReveal>
             <ScrollReveal delay={120}>
               <p className="text-muted-foreground leading-relaxed text-[15px]">
-                A selection of notable private transactions handled with discretion, strategy, and market expertise.
+                95% of our sales never hit the MLS. Below is a selection of notable private transactions handled with discretion, strategy, and market expertise.
               </p>
             </ScrollReveal>
           </div>

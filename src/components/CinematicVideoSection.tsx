@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
 const VIDEO_URL =
-  "https://res.cloudinary.com/dp4xn1jto/video/upload/f_auto,q_auto/My_Movie_4_gxjr7u";
+  "https://res.cloudinary.com/dp4xn1jto/video/upload/q_90,br_8m,f_mp4/My_Movie_4_gxjr7u";
 
 const POSTER_URL =
-  "https://res.cloudinary.com/dp4xn1jto/video/upload/so_2,f_jpg,q_80/My_Movie_4_gxjr7u";
+  "https://res.cloudinary.com/dp4xn1jto/video/upload/so_2,f_jpg,q_90/My_Movie_4_gxjr7u";
 
 function useScrollReveal(threshold = 0.08) {
   const ref = useRef<HTMLDivElement>(null);

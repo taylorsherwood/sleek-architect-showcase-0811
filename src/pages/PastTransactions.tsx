@@ -77,7 +77,7 @@ const PastTransactions = () => {
             </p>
             <div className="flex flex-wrap gap-4">
               <button
-                onClick={() => document.getElementById('transactions')?.scrollIntoView({ behavior: 'smooth' })}
+                onClick={() => smoothScrollTo('transactions')}
                 className="inline-block text-minimal border border-primary-foreground text-primary-foreground px-8 py-3.5 hover:bg-gold hover:text-white hover:scale-105 transition-all duration-300 cursor-pointer bg-white/5 backdrop-blur-md"
               >
                 VIEW TRANSACTIONS

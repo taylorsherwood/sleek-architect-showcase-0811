@@ -164,7 +164,7 @@ const Navigation = () => {
                             }
                           }}
                         >
-                          <span className="relative inline-block after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[1px] after:bg-gold after:scale-x-0 after:origin-left after:transition-transform after:duration-300 group-hover:after:scale-x-100 hover:after:scale-x-100">
+                          <span className="relative inline-block after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[1px] after:bg-gold after:scale-x-0 after:origin-left after:transition-[transform] after:duration-500 after:ease-[cubic-bezier(0.25,0.1,0.25,1)] hover:after:scale-x-100">
                             {child.label}
                           </span>
                         </Link>

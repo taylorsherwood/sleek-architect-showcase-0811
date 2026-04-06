@@ -116,10 +116,26 @@ const TransactionsMap = () => {
   }, []);
 
   return (
-    <div className="w-full">
+    <div className="relative w-full rounded-[22px] overflow-hidden border border-[rgba(0,0,0,0.06)] shadow-[0_12px_40px_-12px_rgba(0,0,0,0.10)]">
+      {/* Top fade */}
+      <div
+        className="pointer-events-none absolute inset-x-0 top-0 z-10"
+        style={{
+          height: 100,
+          background: "linear-gradient(to bottom, hsl(var(--secondary) / 0.55), transparent)",
+        }}
+      />
+      {/* Bottom fade */}
+      <div
+        className="pointer-events-none absolute inset-x-0 bottom-0 z-10"
+        style={{
+          height: 60,
+          background: "linear-gradient(to top, hsl(var(--secondary) / 0.35), transparent)",
+        }}
+      />
       <div
         ref={mapContainer}
-        className="w-full h-[420px] sm:h-[500px] md:h-[600px] lg:h-[650px]"
+        className="w-full h-[440px] sm:h-[520px] md:h-[620px] lg:h-[660px]"
       />
     </div>
   );

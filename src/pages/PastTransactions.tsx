@@ -96,9 +96,11 @@ const PastTransactions = () => {
       </section>
 
       {/* ── Notable Private Sales ── */}
-      <Suspense fallback={<div className="min-h-[200px]" />}>
-        <PrivateSalesShowcase />
-      </Suspense>
+      <div id="private-sales">
+        <Suspense fallback={<div className="min-h-[200px]" />}>
+          <PrivateSalesShowcase />
+        </Suspense>
+      </div>
 
       <Suspense fallback={<div className="min-h-[200px]" />}>
         <Testimonials />

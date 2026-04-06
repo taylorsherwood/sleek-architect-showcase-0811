@@ -1183,7 +1183,6 @@ const Index = () => (
     <TrustStrip />
     <div className="h-10 md:h-16 bg-secondary" aria-hidden="true" />
     <SearchSection />
-    <div className="h-6 md:h-10 bg-background" aria-hidden="true" />
     <ScrollingCredibilityStrip />
     <AdvisorSection />
     <StatsStrip />

@@ -64,31 +64,32 @@ const PastTransactions = () => {
       <div id="transactions" className="h-16 md:h-24" />
       <RealScoutListings title="recently sold" />
 
-      {/* ── Transaction Map ── */}
-      <section className="py-20 md:py-28 bg-background">
+      {/* ── Past Transactions Map ── */}
+      <section className="py-24 md:py-32 bg-secondary">
         <div className="container mx-auto px-6">
-          <div className="max-w-7xl mx-auto">
-            <ScrollReveal>
-              <p className="text-minimal text-gold mb-4 font-extrabold">TRANSACTION MAP</p>
-            </ScrollReveal>
-            <ScrollReveal delay={60}>
-              <h2 className="text-4xl md:text-5xl font-display font-normal text-architectural mb-10">
-                Where We've Closed
-              </h2>
-            </ScrollReveal>
-            <ScrollReveal delay={120}>
-              <div className="w-full aspect-[4/3] md:aspect-[16/9]">
-                <iframe
-                  src="https://www.google.com/maps/d/u/0/embed?mid=1nNc8y_DQI4INekU8Jg3fuZibqrC57f4&ehbc=2E312F&noprof=1"
-                  width="100%"
-                  height="100%"
-                  className="w-full h-full border-0"
-                  loading="lazy"
-                  allowFullScreen
-                  title="Echelon Property Group transaction map"
-                />
-              </div>
-            </ScrollReveal>
+          <div className="max-w-5xl mx-auto text-center">
+            <p className="text-minimal text-gold mb-4 tracking-[0.2em]">
+              SELECTED REPRESENTATION
+            </p>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-normal text-architectural mb-5 leading-tight">
+              Past Transactions Across Austin
+            </h2>
+            <p className="text-muted-foreground text-[15px] leading-relaxed max-w-2xl mx-auto mb-12">
+              A visual record of represented transactions across Austin and surrounding markets, reflecting local knowledge, strategic execution, and consistent client representation.
+            </p>
+
+            {/* Map frame */}
+            <div className="rounded-2xl border border-border/60 shadow-[0_8px_30px_-12px_rgba(0,0,0,0.12)] overflow-hidden">
+              <iframe
+                src="https://www.google.com/maps/d/u/0/embed?mid=1nNc8y_DQI4INekU8Jg3fuZibqrC57f4&ehbc=2E312F&noprof=1"
+                width="100%"
+                className="w-full h-[440px] md:h-[600px] border-0"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                allowFullScreen
+                title="Echelon Property Group past transactions map"
+              />
+            </div>
           </div>
         </div>
       </section>

@@ -65,25 +65,29 @@ const PastTransactions = () => {
       <RealScoutListings title="recently sold" />
 
       {/* ── Past Transactions Map ── */}
-      <section className="py-24 md:py-32 bg-secondary">
+      <section className="py-28 md:py-36 bg-secondary">
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto text-center">
-            <p className="text-minimal text-gold mb-4 tracking-[0.2em]">
-              SELECTED REPRESENTATION
+            <p className="text-minimal text-gold mb-4 tracking-[0.25em]">
+              PAST TRANSACTIONS
             </p>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-normal text-architectural mb-5 leading-tight">
-              Past Transactions Across Austin
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-normal text-architectural mb-6 leading-tight">
+              A Curated Record of Notable Transactions
             </h2>
-            <p className="text-muted-foreground text-[15px] leading-relaxed max-w-2xl mx-auto mb-12">
-              A visual record of represented transactions across Austin and surrounding markets, reflecting local knowledge, strategic execution, and consistent client representation.
+            <p className="text-muted-foreground text-[15px] leading-relaxed max-w-2xl mx-auto mb-14">
+              Explore a visual overview of select transactions and market activity represented across Austin, reflecting a strategic, relationship-driven approach to luxury real estate.
             </p>
 
             {/* Map frame */}
-            <div className="rounded-2xl border border-border/60 shadow-[0_8px_30px_-12px_rgba(0,0,0,0.12)] overflow-hidden">
+            <div className="relative rounded-[22px] border border-[#b8a06d]/15 shadow-[0_12px_40px_-14px_rgba(0,0,0,0.10)] overflow-hidden">
+              {/* Top vignette */}
+              <div className="absolute inset-x-0 top-0 h-12 bg-gradient-to-b from-secondary/40 to-transparent z-10 pointer-events-none" />
+              {/* Bottom vignette */}
+              <div className="absolute inset-x-0 bottom-0 h-12 bg-gradient-to-t from-secondary/40 to-transparent z-10 pointer-events-none" />
               <iframe
                 src="https://api.mapbox.com/styles/v1/tsherwood/cmnmnxfa5004c01s51d1h1rws.html?title=false&access_token=pk.eyJ1IjoidHNoZXJ3b29kIiwiYSI6ImNtbmY4aHgxODA2N3cycHEyMjdkdHNlbmQifQ.hx2cAV-r1oFxK03uouKCJQ&zoomwheel=false#2/38/-34"
                 width="100%"
-                className="w-full h-[440px] md:h-[600px] border-0"
+                className="w-full h-[450px] md:h-[600px] border-0 block"
                 loading="lazy"
                 title="Echelon Property Group past transactions map"
               />

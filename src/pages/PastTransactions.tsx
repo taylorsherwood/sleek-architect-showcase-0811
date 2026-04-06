@@ -64,6 +64,35 @@ const PastTransactions = () => {
       <div id="transactions" className="h-16 md:h-24" />
       <RealScoutListings title="recently sold" />
 
+      {/* ── Transaction Map ── */}
+      <section className="py-20 md:py-28 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-7xl mx-auto">
+            <ScrollReveal>
+              <p className="text-minimal text-gold mb-4 font-extrabold">TRANSACTION MAP</p>
+            </ScrollReveal>
+            <ScrollReveal delay={60}>
+              <h2 className="text-4xl md:text-5xl font-display font-normal text-architectural mb-10">
+                Where We've Closed
+              </h2>
+            </ScrollReveal>
+            <ScrollReveal delay={120}>
+              <div className="w-full aspect-[4/3] md:aspect-[16/9]">
+                <iframe
+                  src="https://www.google.com/maps/d/u/0/embed?mid=1nNc8y_DQI4INekU8Jg3fuZibqrC57f4&ehbc=2E312F&noprof=1"
+                  width="100%"
+                  height="100%"
+                  className="w-full h-full border-0"
+                  loading="lazy"
+                  allowFullScreen
+                  title="Echelon Property Group transaction map"
+                />
+              </div>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
       {/* ── Notable Private Sales ── */}
       <Suspense fallback={<div className="min-h-[200px]" />}>
         <PrivateSalesShowcase />

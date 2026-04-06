@@ -731,3 +731,34 @@ a:hover .community-tile-img,
   color: #555;
   line-height: 1.4;
 }
+
+/* ── Mapbox controls refinement ── */
+.mapboxgl-ctrl-group {
+  background: rgba(250, 248, 244, 0.92) !important;
+  border: 1px solid rgba(0, 0, 0, 0.06) !important;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 12px -4px rgba(0, 0, 0, 0.08) !important;
+  overflow: hidden;
+}
+
+.mapboxgl-ctrl-group button {
+  width: 32px !important;
+  height: 32px !important;
+}
+
+.mapboxgl-ctrl-group button + button {
+  border-top: 1px solid rgba(0, 0, 0, 0.06) !important;
+}
+
+.mapboxgl-ctrl-group button .mapboxgl-ctrl-icon {
+  opacity: 0.5;
+}
+
+.mapboxgl-ctrl-group button:hover .mapboxgl-ctrl-icon {
+  opacity: 0.8;
+}
+
+.mapboxgl-ctrl-attrib,
+.mapboxgl-ctrl-logo {
+  opacity: 0.4 !important;
+}

@@ -81,12 +81,10 @@ const PastTransactions = () => {
             {/* Map frame */}
             <div className="rounded-2xl border border-border/60 shadow-[0_8px_30px_-12px_rgba(0,0,0,0.12)] overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/d/u/0/embed?mid=1nNc8y_DQI4INekU8Jg3fuZibqrC57f4&ehbc=2E312F&noprof=1"
+                src="https://api.mapbox.com/styles/v1/tsherwood/cmnmnxfa5004c01s51d1h1rws.html?title=false&access_token=pk.eyJ1IjoidHNoZXJ3b29kIiwiYSI6ImNtbmY4aHgxODA2N3cycHEyMjdkdHNlbmQifQ.hx2cAV-r1oFxK03uouKCJQ&zoomwheel=false#2/38/-34"
                 width="100%"
                 className="w-full h-[440px] md:h-[600px] border-0"
                 loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                allowFullScreen
                 title="Echelon Property Group past transactions map"
               />
             </div>

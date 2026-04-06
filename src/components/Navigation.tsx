@@ -149,7 +149,7 @@ const Navigation = () => {
                         <Link
                           key={child.href}
                           to={child.href}
-                          className="block px-7 py-4 transition-colors duration-300"
+                          className="relative block px-7 py-4 transition-colors duration-300 after:content-[''] after:absolute after:left-7 after:right-7 after:bottom-2 after:h-[1px] after:bg-gold after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100"
                           style={{
                             ...navLinkStyle,
                             fontSize: "10px",

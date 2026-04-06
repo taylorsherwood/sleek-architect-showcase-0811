@@ -83,7 +83,7 @@ const PastTransactions = () => {
                 VIEW TRANSACTIONS
               </button>
               <button
-                onClick={() => document.getElementById('private-sales')?.scrollIntoView({ behavior: 'smooth' })}
+                onClick={() => smoothScrollTo('private-sales')}
                 className="inline-block text-minimal border border-gold text-primary-foreground px-8 py-3.5 hover:bg-gold hover:text-white hover:scale-105 transition-all duration-300 cursor-pointer bg-white/5 backdrop-blur-md"
               >
                 OFF-MARKET SALES

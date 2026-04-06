@@ -236,7 +236,7 @@ const SearchSection = () => {
   }, []);
 
   return (
-    <section className="bg-secondary relative z-20" style={{ overflow: 'visible', padding: "clamp(64px, 10vw, 120px) 0 clamp(40px, 6vw, 72px)" }}>
+    <section className="bg-secondary relative z-20" style={{ overflow: 'visible', padding: "clamp(40px, 6vw, 80px) 0 clamp(40px, 6vw, 72px)" }}>
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-minimal text-gold mb-4">
@@ -1182,7 +1182,7 @@ const Index = () => (
     <Hero />
     <TrustStrip />
     <SearchSection />
-    <div className="h-10 md:h-16 bg-background" aria-hidden="true" />
+    <div className="h-16 md:h-24 bg-background" aria-hidden="true" />
     <ScrollingCredibilityStrip />
     <AdvisorSection />
     <StatsStrip />

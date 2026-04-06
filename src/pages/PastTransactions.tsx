@@ -13,6 +13,28 @@ const Testimonials = lazy(() => import("@/components/Testimonials"));
 const PrivateSalesShowcase = lazy(() => import("@/components/PrivateSalesShowcase"));
 
 
+const smoothScrollTo = (elementId: string) => {
+  const target = document.getElementById(elementId);
+  if (!target) return;
+  const start = window.scrollY;
+  const end = target.getBoundingClientRect().top + window.scrollY;
+  const distance = end - start;
+  const duration = 1400;
+  let startTime: number | null = null;
+
+  const easeInOutCubic = (t: number) =>
+    t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+
+  const step = (timestamp: number) => {
+    if (!startTime) startTime = timestamp;
+    const elapsed = timestamp - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    window.scrollTo(0, start + distance * easeInOutCubic(progress));
+    if (progress < 1) requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
+};
+
 const PastTransactions = () => {
   return (
     <div className="min-h-screen">
@@ -55,13 +77,13 @@ const PastTransactions = () => {
             </p>
             <div className="flex flex-wrap gap-4">
               <button
-                onClick={() => document.getElementById('transactions')?.scrollIntoView({ behavior: 'smooth' })}
+                onClick={() => smoothScrollTo('transactions')}
                 className="inline-block text-minimal border border-primary-foreground text-primary-foreground px-8 py-3.5 hover:bg-gold hover:text-white hover:scale-105 transition-all duration-300 cursor-pointer bg-white/5 backdrop-blur-md"
               >
                 VIEW TRANSACTIONS
               </button>
               <button
-                onClick={() => document.getElementById('private-sales')?.scrollIntoView({ behavior: 'smooth' })}
+                onClick={() => smoothScrollTo('private-sales')}
                 className="inline-block text-minimal border border-gold text-primary-foreground px-8 py-3.5 hover:bg-gold hover:text-white hover:scale-105 transition-all duration-300 cursor-pointer bg-white/5 backdrop-blur-md"
               >
                 OFF-MARKET SALES

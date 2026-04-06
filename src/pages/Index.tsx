@@ -370,9 +370,9 @@ const AdvisorSection = () => (
                   top: '50%',
                   left: '50%',
                   transform: 'translate(-50%, -50%)',
-                  height: '100%',
+                  height: '115%',
                   width: 'auto',
-                  opacity: 0.04,
+                  opacity: 0.06,
                 }}
               />
               <div className="relative space-y-4 mb-8" style={{ fontFamily: '"Jost", sans-serif', fontWeight: 300 }}>

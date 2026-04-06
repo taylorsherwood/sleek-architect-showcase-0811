@@ -7,6 +7,7 @@ import SchemaMarkup, { realEstateAgentSchema, createFAQSchema, createBreadcrumbS
 import RealScoutListings from "@/components/RealScoutListings";
 import ScrollReveal from "@/components/ScrollReveal";
 import heroImage from "@/assets/past-transactions-hero.jpg";
+import TransactionsMap from "@/components/TransactionsMap";
 
 const Testimonials = lazy(() => import("@/components/Testimonials"));
 const PrivateSalesShowcase = lazy(() => import("@/components/PrivateSalesShowcase"));
@@ -78,15 +79,9 @@ const PastTransactions = () => {
               A visual record of represented transactions across Austin and surrounding markets, reflecting local knowledge, strategic execution, and consistent client representation.
             </p>
 
-            {/* Map frame */}
+            {/* Map */}
             <div className="rounded-2xl border border-border/60 shadow-[0_8px_30px_-12px_rgba(0,0,0,0.12)] overflow-hidden">
-              <iframe
-                src="https://api.mapbox.com/styles/v1/tsherwood/cmnmnxfa5004c01s51d1h1rws.html?title=false&access_token=pk.eyJ1IjoidHNoZXJ3b29kIiwiYSI6ImNtbmY4aHgxODA2N3cycHEyMjdkdHNlbmQifQ.hx2cAV-r1oFxK03uouKCJQ&zoomwheel=false#2/38/-34"
-                width="100%"
-                className="w-full h-[440px] md:h-[600px] border-0"
-                loading="lazy"
-                title="Echelon Property Group past transactions map"
-              />
+              <TransactionsMap />
             </div>
           </div>
         </div>

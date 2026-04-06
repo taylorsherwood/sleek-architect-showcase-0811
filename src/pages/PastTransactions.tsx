@@ -13,6 +13,28 @@ const Testimonials = lazy(() => import("@/components/Testimonials"));
 const PrivateSalesShowcase = lazy(() => import("@/components/PrivateSalesShowcase"));
 
 
+const smoothScrollTo = (elementId: string) => {
+  const target = document.getElementById(elementId);
+  if (!target) return;
+  const start = window.scrollY;
+  const end = target.getBoundingClientRect().top + window.scrollY;
+  const distance = end - start;
+  const duration = 1400;
+  let startTime: number | null = null;
+
+  const easeInOutCubic = (t: number) =>
+    t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+
+  const step = (timestamp: number) => {
+    if (!startTime) startTime = timestamp;
+    const elapsed = timestamp - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    window.scrollTo(0, start + distance * easeInOutCubic(progress));
+    if (progress < 1) requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
+};
+
 const PastTransactions = () => {
   return (
     <div className="min-h-screen">

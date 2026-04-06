@@ -359,13 +359,13 @@ const AdvisorSection = () => (
           </ScrollReveal>
 
           <ScrollReveal delay={180}>
-            <div className="relative">
-              {/* Watermark */}
+            <div className="relative overflow-hidden">
+              {/* Watermark — hidden on mobile */}
               <img
                 src={echelonWatermarkLogo}
                 alt=""
                 aria-hidden="true"
-                className="absolute pointer-events-none select-none"
+                className="absolute pointer-events-none select-none hidden md:block"
                 style={{
                   top: '50%',
                   left: '50%',

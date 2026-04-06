@@ -53,12 +53,20 @@ const PastTransactions = () => {
             <p className="text-primary-foreground/70 text-lg max-w-lg mb-8">
               Representing buyers and sellers across Austin's most desirable communities, including private and off-market opportunities.
             </p>
-            <button
-              onClick={() => document.getElementById('transactions')?.scrollIntoView({ behavior: 'smooth' })}
-              className="inline-block text-minimal border border-gold text-primary-foreground px-8 py-3.5 hover:bg-gold/10 transition-colors duration-300 cursor-pointer bg-transparent"
-            >
-              VIEW TRANSACTIONS
-            </button>
+            <div className="flex flex-wrap gap-4">
+              <button
+                onClick={() => document.getElementById('transactions')?.scrollIntoView({ behavior: 'smooth' })}
+                className="inline-block text-minimal border border-gold text-primary-foreground px-8 py-3.5 hover:bg-gold/10 transition-colors duration-300 cursor-pointer bg-transparent"
+              >
+                VIEW TRANSACTIONS
+              </button>
+              <button
+                onClick={() => document.getElementById('private-sales')?.scrollIntoView({ behavior: 'smooth' })}
+                className="inline-block text-minimal border border-primary-foreground/30 text-primary-foreground px-8 py-3.5 hover:bg-primary-foreground/10 transition-colors duration-300 cursor-pointer bg-transparent"
+              >
+                OFF-MARKET SALES
+              </button>
+            </div>
           </div>
         </div>
       </section>

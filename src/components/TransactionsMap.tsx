@@ -19,10 +19,17 @@ const TransactionsMap = () => {
     map.current = new mapboxgl.Map({
       container: mapContainer.current,
       style: MAPBOX_STYLE,
+      center: [-97.7431, 30.2672],
+      zoom: 9,
+      minZoom: 8,
+      maxZoom: 16,
+      projection: "mercator" as any,
       interactive: true,
       scrollZoom: false,
       attributionControl: false,
     });
+
+    map.current.setProjection("mercator" as any);
 
     const m = map.current;
 

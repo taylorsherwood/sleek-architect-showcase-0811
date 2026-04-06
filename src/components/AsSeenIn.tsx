@@ -5,10 +5,10 @@ import mediaAbj from "@/assets/media-abj.png";
 import mediaMansionGlobal from "@/assets/media-mansion-global.png";
 
 const logos = [
-  { src: mediaWsj, alt: "The Wall Street Journal", className: "h-16 md:h-28", opacity: 1 },
-  { src: mediaMansionGlobal, alt: "Mansion Global", className: "h-16 md:h-28", opacity: 1 },
-  { src: mediaTribeza, alt: "Tribeza", className: "h-16 md:h-28", opacity: 1 },
-  { src: mediaAbj, alt: "Austin Business Journal", className: "h-16 md:h-28", opacity: 1 },
+  { src: mediaWsj, alt: "The Wall Street Journal", h: "clamp(40px, 6vw, 72px)" },
+  { src: mediaMansionGlobal, alt: "Mansion Global", h: "clamp(38px, 5.5vw, 68px)" },
+  { src: mediaTribeza, alt: "Tribeza", h: "clamp(36px, 5vw, 64px)" },
+  { src: mediaAbj, alt: "Austin Business Journal", h: "clamp(40px, 6vw, 72px)" },
 ];
 
 const AsSeenIn = () => {
@@ -40,16 +40,19 @@ const AsSeenIn = () => {
         <div className="flex items-center justify-center gap-4 md:gap-10 flex-wrap md:flex-nowrap">
           {logos.map((logo, i) => (
             <ScrollReveal key={logo.alt} delay={50 + i * 45}>
-              <img
-                src={logo.src}
-                alt={logo.alt}
-                loading="lazy"
-                decoding="async"
-                sizes="(max-width: 768px) 96px, 160px"
-                className="h-16 md:h-24 w-auto object-contain credibility-logo"
-                width={200}
-                height={96}
-              />
+              <div className="flex items-center justify-center h-14 md:h-20">
+                <img
+                  src={logo.src}
+                  alt={logo.alt}
+                  loading="lazy"
+                  decoding="async"
+                  sizes="(max-width: 768px) 96px, 160px"
+                  className="w-auto object-contain credibility-logo"
+                  width={200}
+                  height={96}
+                  style={{ height: logo.h }}
+                />
+              </div>
             </ScrollReveal>
           ))}
         </div>

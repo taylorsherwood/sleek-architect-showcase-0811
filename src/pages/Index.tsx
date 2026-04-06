@@ -369,7 +369,7 @@ const AdvisorSection = () => (
                 style={{
                   top: '50%',
                   left: '50%',
-                  transform: 'translate(-42%, -55%)',
+                  transform: 'translate(-42%, -62%)',
                   height: '115%',
                   width: 'auto',
                   opacity: 0.06,

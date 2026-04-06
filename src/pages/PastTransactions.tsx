@@ -66,7 +66,7 @@ const PastTransactions = () => {
       <RealScoutListings title="recently sold" />
 
       {/* ── Past Transactions Map ── */}
-      <section className="py-28 md:py-36 bg-secondary">
+      <section className="pt-28 md:pt-36 pb-12 md:pb-16 bg-secondary">
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto text-center">
             <p className="text-minimal text-gold mb-4 tracking-[0.2em]">

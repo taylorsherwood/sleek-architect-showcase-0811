@@ -46,7 +46,7 @@ const PastTransactions = () => {
         </div>
         <div className="relative container mx-auto px-6 pt-24 md:pt-32 lg:pt-36">
           <div className="max-w-xl">
-            <p className="text-minimal text-primary-foreground/60 mb-4">PAST TRANSACTIONS</p>
+            <p className="text-minimal text-gold mb-4">PAST TRANSACTIONS</p>
             <h1 className="text-[1.75rem] sm:text-[2.25rem] md:text-[2.85rem] lg:text-[3.25rem] font-display font-normal text-primary-foreground leading-[1.1] mb-5">
               Proven Results Across Austin's<br className="hidden lg:block" /> Most Competitive Markets
             </h1>

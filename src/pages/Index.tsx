@@ -370,7 +370,7 @@ const AdvisorSection = () => (
                   top: '50%',
                   left: '50%',
                   transform: 'translate(-32%, -72%)',
-                  height: '115%',
+                  height: '100%',
                   width: 'auto',
                   opacity: 0.06,
                 }}

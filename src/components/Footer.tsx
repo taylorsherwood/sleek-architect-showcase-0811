@@ -120,6 +120,65 @@ const Footer = () => {
             </div>
           </div>
 
+          {/* Resources row */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-0 mb-6">
+            <div>
+              <h4 style={footerHeadingStyle}>RESOURCES</h4>
+              <div className="space-y-0">
+                {[
+                  { to: "/moving-to-austin-texas", label: "Moving to Austin" },
+                  { to: "/best-luxury-neighborhoods-austin", label: "Best Luxury Neighborhoods" },
+                  { to: "/home-value-austin", label: "Home Valuation" },
+                  { to: "/off-market-real-estate-austin", label: "Off-Market Homes" },
+                  { to: "/private-opportunities", label: "Private Opportunities" },
+                ].map((link) => (
+                  <Link key={link.to} to={link.to} className="block hover:text-white transition-colors duration-300" style={footerLinkStyle}>{link.label}</Link>
+                ))}
+              </div>
+            </div>
+            <div>
+              <h4 style={footerHeadingStyle}>INVESTMENT</h4>
+              <div className="space-y-0">
+                {[
+                  { to: "/austin-real-estate-investment", label: "Investment Advisory" },
+                  { to: "/austin-commercial-real-estate", label: "Commercial Real Estate" },
+                  { to: "/land-for-sale-austin", label: "Land for Sale" },
+                  { to: "/austin-multifamily-report-2026", label: "Multifamily Report" },
+                  { to: "/austin-land-development-opportunities", label: "Land Development" },
+                ].map((link) => (
+                  <Link key={link.to} to={link.to} className="block hover:text-white transition-colors duration-300" style={footerLinkStyle}>{link.label}</Link>
+                ))}
+              </div>
+            </div>
+            <div>
+              <h4 style={footerHeadingStyle}>MARKET INSIGHTS</h4>
+              <div className="space-y-0">
+                {[
+                  { to: "/austin-luxury-market-report", label: "Luxury Market Report" },
+                  { to: "/austin-luxury-real-estate-market-report", label: "Market Data Report" },
+                  { to: "/blog/austin-luxury-market-trends", label: "Market Trends 2026" },
+                  { to: "/why-billionaires-are-moving-to-austin", label: "Billionaire Migration" },
+                  { to: "/past-transactions", label: "Past Transactions" },
+                ].map((link) => (
+                  <Link key={link.to} to={link.to} className="block hover:text-white transition-colors duration-300" style={footerLinkStyle}>{link.label}</Link>
+                ))}
+              </div>
+            </div>
+            <div>
+              <h4 style={footerHeadingStyle}>QUICK LINKS</h4>
+              <div className="space-y-0">
+                {[
+                  { to: "/search", label: "Search Properties" },
+                  { to: "/land", label: "Land & Lots" },
+                  { to: "/connect", label: "Join Private Network" },
+                  { to: "/sitemap", label: "Sitemap" },
+                ].map((link) => (
+                  <Link key={link.to} to={link.to} className="block hover:text-white transition-colors duration-300" style={footerLinkStyle}>{link.label}</Link>
+                ))}
+              </div>
+            </div>
+          </div>
+
           {/* Gold divider */}
           <div className="w-full h-px mb-5" style={{ background: "hsl(38 39% 61% / 0.3)" }} />
 

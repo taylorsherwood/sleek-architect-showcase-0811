@@ -47,6 +47,7 @@ const OffMarketRealEstateAustin = lazy(() => import("@/pages/OffMarketRealEstate
 const AustinLandDevelopmentOpportunities = lazy(() => import("@/pages/AustinLandDevelopmentOpportunities"));
 const AustinLuxuryRealEstateMarketReport = lazy(() => import("@/pages/AustinLuxuryRealEstateMarketReport"));
 const Invest = lazy(() => import("@/pages/Invest"));
+const Sitemap = lazy(() => import("@/pages/Sitemap"));
 const NotFound = lazy(() => import("@/pages/NotFound"));
 
 // Prefetch /connect chunk well after homepage is interactive
@@ -123,6 +124,7 @@ const AppRoutes = () => {
           <Route path="/balcones-park-homes-for-sale" element={<SEOCommunityPage />} />
           <Route path="/rob-roy-homes-for-sale" element={<SEOCommunityPage />} />
           <Route path="/steiner-ranch-homes-for-sale" element={<SEOCommunityPage />} />
+          <Route path="/sitemap" element={<Sitemap />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>

@@ -12,6 +12,8 @@ interface SEOHeadProps {
   ogTitle?: string;
   ogDescription?: string;
   ogType?: "website" | "article";
+  /** When true, emits <meta name="robots" content="noindex, follow" /> */
+  noindex?: boolean;
 }
 
 const normalizePageTitle = (rawTitle: string) => {
@@ -25,7 +27,7 @@ const resolveCanonicalUrl = (pathname: string, canonical?: string) => {
   return `${SITE_URL}${canonical.startsWith("/") ? canonical : `/${canonical}`}`;
 };
 
-const SEOHead = ({ title, description, canonical, ogTitle, ogDescription, ogType = "website" }: SEOHeadProps) => {
+const SEOHead = ({ title, description, canonical, ogTitle, ogDescription, ogType = "website", noindex = false }: SEOHeadProps) => {
   const { pathname } = useLocation();
   const pageTitle = normalizePageTitle(title);
   const seoTitle = `${pageTitle} | ${BRAND_NAME}`;
@@ -38,6 +40,7 @@ const SEOHead = ({ title, description, canonical, ogTitle, ogDescription, ogType
     <Helmet prioritizeSeoTags>
       <title>{seoTitle}</title>
       <meta name="description" content={seoDescription} />
+      {noindex && <meta name="robots" content="noindex, follow" />}
 
       <meta property="og:title" content={openGraphTitle} />
       <meta property="og:description" content={openGraphDescription} />

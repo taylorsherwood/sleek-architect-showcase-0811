@@ -14,6 +14,7 @@ const NotFound = () => {
       <SEOHead
         title="Page Not Found | Echelon Property Group"
         description="The page you are looking for does not exist. Return to Echelon Property Group for Austin luxury real estate, homes, and investment properties."
+        noindex
       />
 
       {/* Large decorative 404 */}

@@ -116,6 +116,7 @@ const Sitemap = () => {
       <SEOHead
         title="Sitemap | Echelon Property Group"
         description="Browse all pages on Echelon Property Group — Austin luxury real estate listings, communities, market reports, buyer and seller guides, investment resources, and more."
+        noindex
       />
       <SchemaMarkup schema={createBreadcrumbSchema([
         { name: "Home", url: "https://www.echelonpropertygroup.com/" },

@@ -12,6 +12,8 @@ interface SEOHeadProps {
   ogTitle?: string;
   ogDescription?: string;
   ogType?: "website" | "article";
+  /** When true, emits <meta name="robots" content="noindex, follow" /> */
+  noindex?: boolean;
 }
 
 const normalizePageTitle = (rawTitle: string) => {

@@ -308,6 +308,12 @@ const CommunityPage = () => {
                 Explore Austin Real Estate
               </h2>
               <div className="grid sm:grid-cols-2 gap-4">
+                <Link to="/austin-luxury-homes-for-sale" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">
+                  → AUSTIN LUXURY HOMES FOR SALE
+                </Link>
+                <Link to="/luxury-real-estate-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">
+                  → LUXURY REAL ESTATE IN AUSTIN
+                </Link>
                 <Link to="/buy-homes-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">
                   → BUY A HOME IN AUSTIN
                 </Link>
@@ -317,17 +323,14 @@ const CommunityPage = () => {
                 <Link to="/off-market-real-estate-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">
                   → OFF-MARKET & PRIVATE LISTINGS
                 </Link>
+                <Link to="/austin-real-estate-investment" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">
+                  → INVESTMENT ADVISORY
+                </Link>
                 <Link to="/best-neighborhoods-in-austin-texas" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">
                   → BEST NEIGHBORHOODS IN AUSTIN
                 </Link>
                 <Link to="/communities" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">
                   → ALL AUSTIN COMMUNITIES
-                </Link>
-                <Link to="/blog" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">
-                  → BLOG & MARKET INSIGHTS
-                </Link>
-                <Link to="/contact" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">
-                  → CONTACT ECHELON PROPERTY GROUP
                 </Link>
               </div>
             </section>

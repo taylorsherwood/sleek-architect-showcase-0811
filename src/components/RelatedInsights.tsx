@@ -6,9 +6,17 @@ interface InsightLink {
   topics: string[];
 }
 
+// Tier 1 pages get a scoring boost to increase crawl flow
+const TIER1_PATHS = new Set([
+  "/austin-luxury-homes-for-sale", "/luxury-real-estate-austin", "/off-market-real-estate-austin",
+  "/austin-real-estate-investment", "/buy", "/sell", "/invest", "/communities",
+]);
+
 const allInsightLinks: InsightLink[] = [
+  { to: "/austin-luxury-homes-for-sale", label: "Austin luxury homes for sale", topics: ["luxury", "homes", "buy"] },
   { to: "/luxury-real-estate-austin", label: "Austin luxury real estate market trends", topics: ["luxury", "market", "homes"] },
   { to: "/off-market-real-estate-austin", label: "Off-market homes and private listings in Austin", topics: ["off-market", "investment", "private"] },
+  { to: "/austin-real-estate-investment", label: "Austin real estate investment advisory", topics: ["investment", "investor", "market"] },
   { to: "/moving-to-austin-texas", label: "Moving to Austin Texas — relocation guide", topics: ["relocation", "moving", "guide"] },
   { to: "/invest", label: "Austin investment properties and value-add strategies", topics: ["investment", "investor", "flip"] },
   { to: "/private-opportunities", label: "Private real estate opportunities in Austin", topics: ["off-market", "private", "investor", "luxury"] },
@@ -26,7 +34,6 @@ const allInsightLinks: InsightLink[] = [
   { to: "/blog/austin-luxury-real-estate-market-forecast", label: "Austin luxury real estate market forecast", topics: ["market", "luxury", "forecast"] },
   { to: "/blog/top-investment-neighborhoods-austin", label: "Top investment neighborhoods in Austin", topics: ["investment", "neighborhoods"] },
   { to: "/austin-multifamily-report-2026", label: "Austin multifamily market outlook 2026", topics: ["investment", "commercial", "market"] },
-  { to: "/austin-luxury-homes-for-sale", label: "Austin luxury homes for sale", topics: ["luxury", "homes", "buy"] },
   { to: "/blog/how-to-find-off-market-real-estate-deals-austin-2026", label: "How to find off-market deals in Austin", topics: ["off-market", "investment", "investor"] },
   { to: "/why-billionaires-are-moving-to-austin", label: "Why billionaires are moving to Austin", topics: ["relocation", "luxury", "moving"] },
   { to: "/austin-luxury-market-report", label: "Austin luxury market report", topics: ["market", "luxury", "forecast"] },
@@ -60,7 +67,8 @@ const RelatedInsights = ({ maxLinks = 5 }: Props) => {
     .filter((link) => link.to !== pathname && !pathname.endsWith(link.to))
     .map((link) => ({
       ...link,
-      score: link.topics.filter((t) => pageTopics.includes(t)).length,
+      score: link.topics.filter((t) => pageTopics.includes(t)).length
+        + (TIER1_PATHS.has(link.to) ? 1 : 0), // Boost Tier 1 pages
     }))
     .sort((a, b) => b.score - a.score)
     .slice(0, maxLinks);

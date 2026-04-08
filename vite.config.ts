@@ -143,12 +143,21 @@ function sitemapPlugin(): Plugin {
     const urls = allRoutes
       .map(
         (route: string) => {
+          // Tier 1: Homepage + core service/SEO pillar pages
+          const tier1 = ["/buy", "/sell", "/listings", "/communities", "/invest", "/about",
+            "/austin-luxury-homes-for-sale", "/luxury-real-estate-austin", "/off-market-real-estate-austin",
+            "/austin-real-estate-investment", "/austin-commercial-real-estate"];
+          // Tier 2: Community pages + secondary SEO pages
+          const tier2Secondary = ["/land", "/land-for-sale-austin", "/buy-homes-austin", "/sell-home-austin",
+            "/home-value-austin", "/private-opportunities", "/past-transactions", "/contact", "/blog"];
+
           const priority = route === "/" ? "1.0"
-            : ["/buy", "/sell", "/listings", "/communities", "/invest", "/about"].includes(route) ? "0.9"
-            : route.startsWith("/communities/") ? "0.8"
+            : tier1.includes(route) ? "0.9"
+            : route.startsWith("/communities/") || tier2Secondary.includes(route) ? "0.8"
             : route.startsWith("/blog/") ? "0.6"
             : "0.7";
           const changefreq = route === "/" ? "daily"
+            : tier1.includes(route) ? "weekly"
             : route.startsWith("/blog/") ? "monthly"
             : "weekly";
           return `  <url>

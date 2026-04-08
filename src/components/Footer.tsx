@@ -49,9 +49,11 @@ const Footer = () => {
                   { to: "/buy", label: "Buy" },
                   { to: "/sell", label: "Sell" },
                   { to: "/listings", label: "Listings" },
+                  { to: "/austin-luxury-homes-for-sale", label: "Luxury Homes" },
                   { to: "/communities", label: "Communities" },
                   { to: "/blog", label: "Insights" },
-                  { to: "/invest", label: "Private Access" },
+                  { to: "/invest", label: "Investment Advisory" },
+                  { to: "/off-market-real-estate-austin", label: "Private Access" },
                   { to: "/contact", label: "Contact" },
                 ].map((link) => (
                   <Link
@@ -77,6 +79,8 @@ const Footer = () => {
                   { to: "/communities/tarrytown", label: "Tarrytown" },
                   { to: "/communities/rollingwood", label: "Rollingwood" },
                   { to: "/communities/spanish-oaks", label: "Spanish Oaks" },
+                  { to: "/communities/dripping-springs", label: "Dripping Springs" },
+                  { to: "/best-luxury-neighborhoods-austin", label: "Best Neighborhoods" },
                 ].map((link) => (
                   <Link
                     key={link.to}
@@ -131,6 +135,9 @@ const Footer = () => {
                   { to: "/home-value-austin", label: "Home Valuation" },
                   { to: "/off-market-real-estate-austin", label: "Off-Market Homes" },
                   { to: "/private-opportunities", label: "Private Opportunities" },
+                  { to: "/luxury-real-estate-austin", label: "Luxury Real Estate Austin" },
+                  { to: "/buy-homes-austin", label: "Buy Homes in Austin" },
+                  { to: "/sell-home-austin", label: "Sell Your Austin Home" },
                 ].map((link) => (
                   <Link key={link.to} to={link.to} className="block hover:text-white transition-colors duration-300" style={footerLinkStyle}>{link.label}</Link>
                 ))}

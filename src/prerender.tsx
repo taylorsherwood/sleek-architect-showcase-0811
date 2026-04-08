@@ -49,6 +49,7 @@ const staticRoutes = [
   "/austin-land-development-opportunities",
   "/private-opportunities",
   "/blog/how-to-find-off-market-real-estate-deals-austin-2026",
+  "/sitemap",
 ];
 
 const allPrerenderRoutes = Array.from(

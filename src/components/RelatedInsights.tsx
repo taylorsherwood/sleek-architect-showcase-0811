@@ -67,7 +67,8 @@ const RelatedInsights = ({ maxLinks = 5 }: Props) => {
     .filter((link) => link.to !== pathname && !pathname.endsWith(link.to))
     .map((link) => ({
       ...link,
-      score: link.topics.filter((t) => pageTopics.includes(t)).length,
+      score: link.topics.filter((t) => pageTopics.includes(t)).length
+        + (TIER1_PATHS.has(link.to) ? 1 : 0), // Boost Tier 1 pages
     }))
     .sort((a, b) => b.score - a.score)
     .slice(0, maxLinks);

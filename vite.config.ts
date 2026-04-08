@@ -137,7 +137,7 @@ const getSitemapRoutes = () => {
 
 function sitemapPlugin(): Plugin {
   function buildSitemap(): string {
-    const allRoutes = getAllIndexableRoutes();
+    const allRoutes = getSitemapRoutes();
     const today = new Date().toISOString().split("T")[0];
 
     const urls = allRoutes
@@ -191,7 +191,7 @@ export default defineConfig(({ mode }) => ({
     vitePrerenderPlugin({
       renderTarget: "#root",
       prerenderScript: path.resolve(__dirname, "src/prerender.tsx"),
-      additionalPrerenderRoutes: getAllIndexableRoutes().filter((route) => route !== "/"),
+      additionalPrerenderRoutes: getAllPrerenderRoutes().filter((route: string) => route !== "/"),
     }),
     ViteImageOptimizer({
       png: { quality: 75, compressionLevel: 9 },

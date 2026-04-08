@@ -36,7 +36,7 @@ const BuyHomesAustin = () => {
       <section className="pt-32 pb-16">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-              <p className="text-minimal text-gold mb-4">{"\n\n\n\n\n\nBUYER SERVICES"}</p>
+              <p className="text-minimal text-gold mb-4">BUYER SERVICES</p>
             <h1 className="text-3xl sm:text-5xl md:text-7xl font-display font-normal text-architectural mb-8">
               Buy a Home in Austin Texas
             </h1>
@@ -139,13 +139,43 @@ const BuyHomesAustin = () => {
                 What Should First-Time Austin Buyers Know?
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                If you're new to Austin, several unique market dynamics are important to understand. Texas uses the TREC (Texas Real Estate Commission) contract, which provides an option period — typically 7–14 days — during which you can terminate the contract for any reason. This protects buyers during due diligence.
+                If you're new to Austin, several unique market dynamics are important to understand. Texas uses the TREC (Texas Real Estate Commission) contract, which provides an option period — typically 7–14 days — during which you can terminate the contract for any reason. This protects buyers during due diligence and is a feature that doesn't exist in many other states.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Property taxes in Texas are higher than many states (approximately 1.8–2.2% of assessed value in the Austin area), but are offset by the absence of state income tax. File a homestead exemption immediately after purchasing your primary residence to cap annual assessment increases at 10%.
+                Property taxes in Texas are higher than many states (approximately 1.8–2.2% of assessed value in the Austin area), but are offset by the absence of state income tax. File a homestead exemption immediately after purchasing your primary residence to cap annual assessment increases at 10%. For buyers <Link to="/moving-to-austin-texas" className="text-foreground underline hover:text-gold transition-colors">relocating to Austin from out of state</Link>, the net tax savings are typically substantial — particularly for high-income earners coming from California, New York, or Illinois.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 Many of Austin's finest properties — particularly in the <Link to="/luxury-real-estate-austin" className="text-foreground underline hover:text-gold transition-colors">luxury segment</Link> — trade off-market. Working with an agent who has deep network connections provides access to inventory that most buyers never see.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
+                Austin Market Conditions for Buyers
+              </h2>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Austin's real estate market has stabilized following the 2022–2023 correction. Interest rate adjustments have improved purchasing power, and inventory in premium neighborhoods remains below long-term averages. For buyers with a 5+ year horizon, the current environment presents a favorable entry point — particularly in supply-constrained areas where appreciation is driven by structural scarcity rather than speculative demand.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                The strongest buyer activity is concentrated in the $1.5M–$5M range across <Link to="/westlake-hills-homes-for-sale" className="text-foreground underline hover:text-gold transition-colors">Westlake Hills</Link>, <Link to="/barton-creek-homes-for-sale" className="text-foreground underline hover:text-gold transition-colors">Barton Creek</Link>, and <Link to="/lake-austin-waterfront-homes-for-sale" className="text-foreground underline hover:text-gold transition-colors">Lake Austin</Link>. Our <Link to="/blog/austin-luxury-market-trends" className="text-foreground underline hover:text-gold transition-colors">Austin luxury market trends analysis</Link> provides detailed pricing data and absorption metrics across all major submarkets.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                For investment-minded buyers, Austin's fundamentals remain compelling. The city's tech economy continues to attract high-income households, rental demand is strong across all property types, and <Link to="/austin-real-estate-investment" className="text-foreground underline hover:text-gold transition-colors">investment property yields</Link> remain attractive relative to coastal markets. Whether you're purchasing a primary residence or building a portfolio, understanding current market dynamics is essential to making informed decisions.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
+                Financing Luxury Homes in Austin
+              </h2>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Luxury home financing in Austin involves specialized mortgage products. Conventional conforming loans have limits that most luxury properties exceed, requiring jumbo loans with different qualification criteria. Down payment requirements typically range from 20–30% for jumbo products, with strong reserves expected by lenders.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Cash purchases are increasingly common in the $3M+ segment, particularly among tech executives and out-of-state relocators. For buyers using financing, we connect you with luxury-focused lenders who understand Austin's market and can provide competitive terms for high-value transactions, including portfolio lending options for self-employed buyers and complex income profiles.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                Pre-approval is essential in competitive situations. A strong pre-approval letter from a reputable lender signals to sellers that you're a serious, qualified buyer — which can make the difference in multiple-offer scenarios. We coordinate this as part of our initial buyer consultation.
               </p>
             </section>
 

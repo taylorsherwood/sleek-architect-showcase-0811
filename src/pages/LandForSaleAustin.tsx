@@ -100,13 +100,31 @@ const LandForSaleAustin = () => {
                 Where Is the Best Land to Buy Near Austin?
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                The best land investment depends on your objectives. For custom homebuilding, the remaining lots in <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">Westlake Hills</Link> and <Link to="/communities/barton-creek" className="text-foreground underline hover:text-muted-foreground">Barton Creek</Link> represent blue-chip residential land with enduring value.
+                The best land investment depends on your objectives. For custom homebuilding, the remaining lots in <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">Westlake Hills</Link> and <Link to="/communities/barton-creek" className="text-foreground underline hover:text-muted-foreground">Barton Creek</Link> represent blue-chip residential land with enduring value. These lots are increasingly rare and often trade off-market through private networks.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                For larger-scale residential or mixed-use development, the Highway 290 West corridor between Oak Hill and Dripping Springs has been one of Austin's fastest-growing areas, with significant infrastructure investment underway. The I-35 corridor south of Austin through Buda and Kyle presents opportunities for multifamily and commercial development.
+                For larger-scale residential or mixed-use development, the Highway 290 West corridor between Oak Hill and Dripping Springs has been one of Austin's fastest-growing areas, with significant infrastructure investment underway. The I-35 corridor south of Austin through Buda and Kyle presents opportunities for multifamily and commercial development, driven by population spillover and the ongoing I-35 expansion project.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                For ranch and estate land, the Hill Country west and southwest of Austin — including Dripping Springs, Wimberley, Johnson City, and Fredericksburg — offers the most diverse selection of acreage properties with varying levels of improvement and development potential. Our <Link to="/austin-land-development-opportunities" className="text-foreground underline hover:text-muted-foreground">Austin land development advisory</Link> provides detailed analysis of growth corridors and emerging opportunities.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                For ranch and estate land, the Hill Country west and southwest of Austin — including Dripping Springs, Wimberley, Johnson City, and Fredericksburg — offers the most diverse selection of acreage properties with varying levels of improvement and development potential.
+                For investors targeting development land, understanding Austin's growth patterns is essential. The city's expansion follows infrastructure investment — when roads widen, utilities extend, and commercial services arrive, land values follow. Our <Link to="/austin-real-estate-investment" className="text-foreground underline hover:text-muted-foreground">investment advisory practice</Link> helps investors identify corridors positioned for the next wave of growth.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
+                Austin Land Development Timeline and Process
+              </h2>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Developing land in Austin involves navigating the city's land development code, environmental regulations, and permitting process. Understanding realistic timelines is essential for investors and builders. Straightforward residential lot development on properly zoned land typically takes 6–12 months from acquisition to building permit. Complex commercial or multifamily projects involving rezoning or planned unit development applications can extend to 18–24 months.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Key considerations include impervious cover limits (which vary significantly by watershed), tree preservation ordinances, compatibility standards near existing residential areas, and transportation impact analysis requirements. Properties within the Barton Springs Edwards Aquifer recharge zone face additional environmental review through the Save Our Springs ordinance.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                Working with an experienced land advisor who understands these regulatory frameworks from the outset prevents costly surprises during the development process. We coordinate with civil engineers, environmental consultants, and land-use attorneys to provide our clients with comprehensive feasibility analysis before acquisition.
               </p>
             </section>
 

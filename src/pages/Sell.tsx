@@ -572,13 +572,13 @@ const Sell = () => {
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Based on current Austin market data, sellers in premium neighborhoods are benefiting from limited inventory and sustained buyer demand. Homes in Westlake Hills, Barton Creek, and Lake Austin that are properly staged and strategically priced continue to achieve strong results.
+                Based on current Austin market data, sellers in premium neighborhoods are benefiting from limited inventory and sustained buyer demand. Homes in <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">Westlake Hills</Link>, <Link to="/communities/barton-creek" className="text-foreground underline hover:text-muted-foreground">Barton Creek</Link>, and <Link to="/communities/lake-austin" className="text-foreground underline hover:text-muted-foreground">Lake Austin</Link> that are properly staged and strategically priced continue to achieve strong results.
               </p>
               <p>
-                From recent transactions in the area, we're seeing the strongest outcomes for sellers who invest in professional marketing — including cinematic video, HDR photography, and custom property websites. The difference between a standard listing and a premium-marketed listing is measurable in both days on market and final sale price.
+                From recent transactions in the area, we're seeing the strongest outcomes for sellers who invest in professional marketing — including cinematic video, HDR photography, and custom property websites. The difference between a standard listing and a premium-marketed listing is measurable in both days on market and final sale price. Review our <Link to="/austin-luxury-market-report" className="text-foreground underline hover:text-muted-foreground">Austin luxury market report</Link> for current data.
               </p>
               <p>
-                Off-market selling has become an increasingly viable strategy for high-net-worth homeowners who value discretion. Echelon Property Group helps sellers evaluate whether a public or private approach best serves their goals, based on the property's profile and the current competitive landscape.
+                Off-market selling has become an increasingly viable strategy for high-net-worth homeowners who value discretion. Echelon Property Group helps sellers evaluate whether a public or <Link to="/off-market-real-estate-austin" className="text-foreground underline hover:text-muted-foreground">private approach</Link> best serves their goals, based on the property's profile and the current competitive landscape. <Link to="/home-value-austin" className="text-foreground underline hover:text-muted-foreground">Get a free home valuation</Link> to understand where your property stands.
               </p>
             </div>
           </div>

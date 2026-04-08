@@ -142,12 +142,22 @@ function sitemapPlugin(): Plugin {
 
     const urls = allRoutes
       .map(
-        (route) => `  <url>
+        (route: string) => {
+          const priority = route === "/" ? "1.0"
+            : ["/buy", "/sell", "/listings", "/communities", "/invest", "/about"].includes(route) ? "0.9"
+            : route.startsWith("/communities/") ? "0.8"
+            : route.startsWith("/blog/") ? "0.6"
+            : "0.7";
+          const changefreq = route === "/" ? "daily"
+            : route.startsWith("/blog/") ? "monthly"
+            : "weekly";
+          return `  <url>
     <loc>${SITE_URL}${route}</loc>
     <lastmod>${today}</lastmod>
-    <changefreq>${route === "/" ? "daily" : "weekly"}</changefreq>
-    <priority>${route === "/" ? "1.0" : route.includes("/blog/") || route.includes("/communities/") ? "0.7" : "0.8"}</priority>
-  </url>`
+    <changefreq>${changefreq}</changefreq>
+    <priority>${priority}</priority>
+  </url>`;
+        }
       )
       .join("\n");
 

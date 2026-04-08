@@ -1225,7 +1225,7 @@ const Index = () => (
   <div className="min-h-screen bg-background">
     <SEOHead
       title="Austin Luxury Real Estate and Investment Advisory"
-      description="Data-driven Austin luxury real estate advisory. Off-market access, investment strategy, and high-touch service for luxury homes, land, and commercial property."
+      description="Austin's premier luxury real estate advisory — updated for 2026. Off-market access, investment strategy, and high-touch service for luxury homes, land, and commercial property."
       ogTitle="Austin Luxury Real Estate and Investment Advisory | Echelon Property Group"
       ogDescription="Strategic real estate advisory across Austin's most exclusive markets. Off-market deals, investment property, land development, and luxury homes."
     />

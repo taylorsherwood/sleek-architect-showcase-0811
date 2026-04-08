@@ -659,13 +659,13 @@ const Buy = () => {
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Based on current Austin market data, buyers in supply-constrained neighborhoods like Westlake Hills, Barton Creek, and Lake Austin are seeing a stabilized pricing environment after the post-2022 correction. Interest rate adjustments have improved purchasing power compared to 2023–2024, and inventory in premium locations remains limited.
+                Based on current Austin market data, buyers in supply-constrained neighborhoods like <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">Westlake Hills</Link>, <Link to="/communities/barton-creek" className="text-foreground underline hover:text-muted-foreground">Barton Creek</Link>, and <Link to="/communities/lake-austin" className="text-foreground underline hover:text-muted-foreground">Lake Austin</Link> are seeing a stabilized pricing environment after the post-2022 correction. Interest rate adjustments have improved purchasing power compared to 2023–2024, and inventory in premium locations remains limited.
               </p>
               <p>
-                For buyers with a 5+ year horizon, the strongest opportunity exists in acquiring quality properties in premium locations before the next appreciation cycle. Austin's tech-driven economy, no state income tax, and sustained in-migration from coastal states provide a durable demand foundation that supports long-term value.
+                For buyers with a 5+ year horizon, the strongest opportunity exists in acquiring quality properties in premium locations before the next appreciation cycle. Austin's tech-driven economy, no state income tax, and sustained in-migration from coastal states provide a durable demand foundation that supports long-term value. Learn more in our <Link to="/blog/austin-luxury-market-trends" className="text-foreground underline hover:text-muted-foreground">Austin luxury market trends analysis</Link>.
               </p>
               <p>
-                From recent transactions in the area, we're seeing particularly strong buyer activity in the $2M–$5M range across Westlake Hills and Barton Creek. Off-market sourcing has become increasingly important — many of the best properties never reach the public MLS.
+                From recent transactions in the area, we're seeing particularly strong buyer activity in the $2M–$5M range across Westlake Hills and Barton Creek. <Link to="/off-market-real-estate-austin" className="text-foreground underline hover:text-muted-foreground">Off-market sourcing</Link> has become increasingly important — many of the best properties never reach the public MLS. For those <Link to="/moving-to-austin-texas" className="text-foreground underline hover:text-muted-foreground">relocating to Austin</Link>, understanding neighborhood dynamics is essential.
               </p>
             </div>
           </div>

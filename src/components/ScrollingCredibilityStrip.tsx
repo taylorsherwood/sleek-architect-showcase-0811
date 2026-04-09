@@ -13,7 +13,7 @@ import mediaHgtv from "@/assets/media-hgtv.png";
 import mediaNyt from "@/assets/media-nyt.png";
 
 const logos = [
-  { src: mediaWsj, alt: "The Wall Street Journal" },
+  { src: mediaWsj, alt: "The Wall Street Journal", h: "h-24 md:h-34" },
   { src: mediaCnn, alt: "CNN" },
   { src: mediaMansionGlobal, alt: "Mansion Global" },
   { src: mediaNyt, alt: "The New York Times" },
@@ -21,7 +21,7 @@ const logos = [
   { src: mediaFoxNews, alt: "Fox News" },
   { src: mediaTribeza, alt: "Tribeza" },
   { src: mediaYahoo, alt: "Yahoo!" },
-  { src: mediaAbj, alt: "Austin Business Journal" },
+  { src: mediaAbj, alt: "Austin Business Journal", h: "h-24 md:h-34" },
   { src: mediaHgtv, alt: "HGTV" },
   { src: mediaHaven, alt: "Haven" },
   { src: mediaAustinHome, alt: "Austin Home" },

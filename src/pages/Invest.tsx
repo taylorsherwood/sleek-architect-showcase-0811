@@ -16,6 +16,8 @@ import kitchen02Before from "@/assets/kitchen-02-before.jpg";
 import kitchen02After from "@/assets/kitchen-02-after.jpg";
 import kitchen03Before from "@/assets/kitchen-03-before.jpeg";
 import kitchen03After from "@/assets/kitchen-03-after.jpg";
+import officeBefore from "@/assets/office-before.jpg";
+import officeAfter from "@/assets/office-after.jpg";
 import bath04Before from "@/assets/bath-04-before.jpg";
 import bath04After from "@/assets/bath-04-after.jpeg";
 import {
@@ -593,7 +595,24 @@ const Invest = () => {
               </div>
             </ScrollReveal>
 
-            {/* Slider 4 */}
+            {/* Slider 4 — Office */}
+            <ScrollReveal>
+              <BeforeAfterSlider
+                beforeImage={officeBefore}
+                afterImage={officeAfter}
+              />
+              <div className="mt-5">
+                <h3 className="text-base font-display font-normal text-foreground tracking-wide">Office Transformation — Barton Creek</h3>
+                <div className="w-8 h-px bg-gold mt-2 mb-2" />
+                <p className="text-[0.82rem] text-muted-foreground/75 leading-relaxed">
+                  Repositioned through bold color, upgraded materials, and curated furnishings to create a sophisticated executive workspace.
+                  <br />
+                  Designed and implemented by New Edge Renovations
+                </p>
+              </div>
+            </ScrollReveal>
+
+            {/* Slider 5 */}
             <ScrollReveal>
               <BeforeAfterSlider
                 beforeImage={bath04Before}

@@ -465,6 +465,7 @@ const Invest = () => {
         </div>
       </section>
 
+      <div className="h-16 md:h-24 bg-background" aria-hidden="true" />
 
       <section className="pt-10 md:pt-12 pb-16 md:pb-20 bg-background">
         <div className="max-w-6xl mx-auto px-6">

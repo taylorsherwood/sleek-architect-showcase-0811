@@ -15,13 +15,13 @@ import mediaCulturemap from "@/assets/media-culturemap.png";
 
 const logos = [
   { src: mediaWsj, alt: "The Wall Street Journal", h: "h-12 md:h-16" },
-  { src: mediaCnn, alt: "CNN" },
+  { src: mediaCnn, alt: "CNN", h: "h-14 md:h-18" },
   { src: mediaMansionGlobal, alt: "Mansion Global", h: "h-28 md:h-36" },
-  { src: mediaNyt, alt: "The New York Times", h: "h-12 md:h-16" },
+  { src: mediaNyt, alt: "The New York Times", h: "h-9 md:h-12" },
   { src: mediaRobbReport, alt: "Robb Report" },
-  { src: mediaFoxNews, alt: "Fox News", h: "h-14 md:h-20" },
+  { src: mediaFoxNews, alt: "Fox News", h: "h-10 md:h-14" },
   { src: mediaTribeza, alt: "Tribeza" },
-  { src: mediaCulturemap, alt: "CultureMap Austin", h: "h-24 md:h-34" },
+  { src: mediaCulturemap, alt: "CultureMap Austin", h: "h-16 md:h-22" },
   { src: mediaYahoo, alt: "Yahoo!" },
   { src: mediaAbj, alt: "Austin Business Journal", h: "h-24 md:h-34" },
   { src: mediaHgtv, alt: "HGTV" },

@@ -472,7 +472,9 @@ const Invest = () => {
           <ScrollReveal>
             <p className="text-minimal text-gold mb-4">Client Focus</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-16 max-w-2xl">
-              Austin Investment Clients We Serve
+              Austin Investment Clients
+              <br />
+              We Serve
             </h2>
           </ScrollReveal>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -671,7 +673,9 @@ const Invest = () => {
           <ScrollReveal>
             <p className="text-minimal text-gold mb-4">Value Proposition</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-16 max-w-3xl">
-              How We Help Austin Investors Move Smarter
+              How We Help Austin Investors
+              <br />
+              Move Smarter
             </h2>
           </ScrollReveal>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

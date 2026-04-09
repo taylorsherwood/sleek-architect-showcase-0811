@@ -566,8 +566,8 @@ const Invest = () => {
             {/* Slider 2 */}
             <ScrollReveal>
               <BeforeAfterSlider
-                beforeImage={livingBefore}
-                afterImage={livingAfter}
+                beforeImage={kitchen02Before}
+                afterImage={kitchen02After}
               />
               <div className="mt-5">
                 <h3 className="text-base font-display font-normal text-foreground tracking-wide">Living Space Transformation — South Austin</h3>

@@ -1242,6 +1242,7 @@ const Index = () => (
     <div className="h-10 md:h-16 bg-secondary" aria-hidden="true" />
     <SearchSection />
     <ScrollingCredibilityStrip />
+    <div className="h-5 md:h-8 bg-background" aria-hidden="true" />
     <AdvisorSection />
     <StatsStrip />
 

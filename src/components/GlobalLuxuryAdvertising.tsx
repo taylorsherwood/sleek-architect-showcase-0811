@@ -336,8 +336,8 @@ const GlobalLuxuryAdvertising = () => {
                 <p className="text-minimal text-gold mb-3" style={{ fontSize: "9px", letterSpacing: "0.15em" }}>
                   GLOBAL REACH
                 </p>
-                <p className="text-foreground flex items-baseline gap-2.5">
-                  <span className="text-4xl md:text-5xl font-display font-normal" style={{ letterSpacing: "0.02em" }}>80+</span>
+                <p className="text-foreground flex items-baseline gap-2.5" ref={globalReachRef}>
+                  <span className="text-4xl md:text-5xl font-display font-normal" style={{ letterSpacing: "0.02em" }}>{globalReachCount}+</span>
                   <span className="text-muted-foreground text-[11px] tracking-[0.1em] uppercase">International Distribution Channels</span>
                 </p>
               </div>

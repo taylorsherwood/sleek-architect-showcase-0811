@@ -570,9 +570,13 @@ const Invest = () => {
                 afterImage={kitchen02After}
               />
               <div className="mt-5">
-                <h3 className="text-base font-display font-normal text-foreground tracking-wide">Living Space Transformation — South Austin</h3>
+                <h3 className="text-base font-display font-normal text-foreground tracking-wide">KITCHEN Transformation — BARTON CREEK</h3>
                 <div className="w-8 h-px bg-gold mt-2 mb-2" />
-                <p className="text-[0.82rem] text-muted-foreground/75 leading-relaxed">Repositioned through lighting, layout clarity, and material updates to create a more open and marketable environment.</p>
+                <p className="text-[0.82rem] text-muted-foreground/75 leading-relaxed">
+                  Repositioned through lighting, layout clarity, and material updates to create a more open and marketable environment.
+                  <br />
+                  Designed and implemented by New Edge Renovations
+                </p>
               </div>
             </ScrollReveal>
 

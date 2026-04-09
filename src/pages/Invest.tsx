@@ -999,7 +999,7 @@ const Invest = () => {
             </p>
             <a
               href="#lead-form"
-              className="inline-flex items-center gap-2 px-10 py-4 bg-primary text-primary-foreground font-medium text-sm tracking-wide hover:bg-primary/90 transition-colors duration-300"
+              className="inline-flex items-center gap-2 px-10 py-4 bg-primary text-primary-foreground font-medium text-sm tracking-wide hover:bg-gold hover:text-white transition-colors duration-300"
             >
               Start the Conversation
               <ArrowRight className="w-4 h-4" />

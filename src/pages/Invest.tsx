@@ -20,6 +20,8 @@ import officeBefore from "@/assets/office-before.jpg";
 import officeAfter from "@/assets/office-after.jpg";
 import bath04Before from "@/assets/bath-04-before.jpg";
 import bath04After from "@/assets/bath-04-after.jpeg";
+import bath05Before from "@/assets/bath-05-before.jpg";
+import bath05After from "@/assets/bath-05-after.jpg";
 import {
   Accordion,
   AccordionContent,
@@ -586,16 +588,16 @@ const Invest = () => {
               </div>
             </ScrollReveal>
 
-            {/* Slider 3 */}
+            {/* Slider 3 — Bathroom Upgrade Westlake Hills */}
             <ScrollReveal>
               <BeforeAfterSlider
-                beforeImage={bath04Before}
-                afterImage={bath04After}
+                beforeImage={bath05Before}
+                afterImage={bath05After}
               />
               <div className="mt-5">
-                <h3 className="text-base font-display font-normal text-foreground tracking-wide">Bathroom Transformation — South Austin</h3>
+                <h3 className="text-base font-display font-normal text-foreground tracking-wide">Bathroom Upgrade — Westlake Hills</h3>
                 <div className="w-8 h-px bg-gold mt-2 mb-2" />
-                <p className="text-[0.82rem] text-muted-foreground/75 leading-relaxed">Clean-lined materials, upgraded fixtures, and improved lighting to align with today's buyer standards.</p>
+                <p className="text-[0.82rem] text-muted-foreground/75 leading-relaxed">Complete transformation with modern vanity, freestanding tub, and upgraded fixtures to match today's luxury expectations.</p>
               </div>
             </ScrollReveal>
 
@@ -622,6 +624,19 @@ const Invest = () => {
                 <h3 className="text-base font-display font-normal text-foreground tracking-wide">Kitchen Renovation — South Austin</h3>
                 <div className="w-8 h-px bg-gold mt-2 mb-2" />
                 <p className="text-[0.82rem] text-muted-foreground/75 leading-relaxed">Full cosmetic overhaul with layout refinement and finish upgrades aligned with current buyer expectations.</p>
+              </div>
+            </ScrollReveal>
+
+            {/* Slider 6 — Bathroom South Austin (moved to bottom) */}
+            <ScrollReveal>
+              <BeforeAfterSlider
+                beforeImage={bath04Before}
+                afterImage={bath04After}
+              />
+              <div className="mt-5">
+                <h3 className="text-base font-display font-normal text-foreground tracking-wide">Bathroom Transformation — South Austin</h3>
+                <div className="w-8 h-px bg-gold mt-2 mb-2" />
+                <p className="text-[0.82rem] text-muted-foreground/75 leading-relaxed">Clean-lined materials, upgraded fixtures, and improved lighting to align with today's buyer standards.</p>
               </div>
             </ScrollReveal>
           </div>

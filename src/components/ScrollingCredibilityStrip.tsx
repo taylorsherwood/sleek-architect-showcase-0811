@@ -14,7 +14,7 @@ import mediaNyt from "@/assets/media-nyt.png";
 import mediaCulturemap from "@/assets/media-culturemap.png";
 
 const logos = [
-  { src: mediaWsj, alt: "The Wall Street Journal", h: "h-24 md:h-34" },
+  { src: mediaWsj, alt: "The Wall Street Journal" },
   { src: mediaCnn, alt: "CNN" },
   { src: mediaMansionGlobal, alt: "Mansion Global" },
   { src: mediaNyt, alt: "The New York Times" },

@@ -16,7 +16,7 @@ import mediaCulturemap from "@/assets/media-culturemap.png";
 const logos = [
   { src: mediaWsj, alt: "The Wall Street Journal", h: "h-12 md:h-16" },
   { src: mediaCnn, alt: "CNN" },
-  { src: mediaMansionGlobal, alt: "Mansion Global", h: "h-24 md:h-34" },
+  { src: mediaMansionGlobal, alt: "Mansion Global" },
   { src: mediaNyt, alt: "The New York Times", h: "h-12 md:h-16" },
   { src: mediaRobbReport, alt: "Robb Report" },
   { src: mediaFoxNews, alt: "Fox News", h: "h-14 md:h-20" },

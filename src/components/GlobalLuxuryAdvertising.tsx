@@ -159,6 +159,34 @@ const GlobalLuxuryAdvertising = () => {
   const cta = useScrollReveal(0.15);
   const collageParallaxRef = useParallaxDrift(0.06);
 
+  /* Animated counter for "80+" Global Reach stat */
+  const globalReachRef = useRef<HTMLParagraphElement>(null);
+  const [globalReachCount, setGlobalReachCount] = useState(5);
+  const [grVisible, setGrVisible] = useState(false);
+
+  useEffect(() => {
+    const el = globalReachRef.current;
+    if (!el) return;
+    const obs = new IntersectionObserver(([e]) => { if (e.isIntersecting) setGrVisible(true); }, { threshold: 0.3 });
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (!grVisible) return;
+    const start = 5, end = 80, duration = 2500;
+    const t0 = performance.now();
+    let raf: number;
+    const tick = (now: number) => {
+      const p = Math.min((now - t0) / duration, 1);
+      const eased = 1 - Math.pow(1 - p, 3);
+      setGlobalReachCount(Math.round(start + eased * (end - start)));
+      if (p < 1) raf = requestAnimationFrame(tick);
+    };
+    raf = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(raf);
+  }, [grVisible]);
+
   return (
     <div className="overflow-hidden">
       {/* ═══════════════════════════════════════════════════════════════ */}

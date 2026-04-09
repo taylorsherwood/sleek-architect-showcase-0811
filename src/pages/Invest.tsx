@@ -813,6 +813,7 @@ const Invest = () => {
       </section>
 
       {/* ──────────────────────── LEAD FORM ──────────────────────── */}
+      <div className="h-10 md:h-16 bg-background" aria-hidden="true" />
       <section id="lead-form" className="py-24 md:py-32 bg-primary">
         <div className="max-w-4xl mx-auto px-6">
           <ScrollReveal>
@@ -949,7 +950,7 @@ const Invest = () => {
               <button
                 type="submit"
                 disabled={submitting}
-                className="w-full sm:w-auto px-10 py-4 bg-primary-foreground text-foreground font-medium text-sm tracking-wide hover:bg-primary-foreground/90 transition-colors duration-300 disabled:opacity-50 inline-flex items-center justify-center gap-2"
+                className="w-full sm:w-auto px-10 py-4 bg-primary-foreground text-foreground font-medium text-sm tracking-wide hover:bg-gold hover:text-white transition-colors duration-300 disabled:opacity-50 inline-flex items-center justify-center gap-2"
               >
                 {submitting ? "Submitting..." : "Submit Your Criteria"}
                 {!submitting && <ArrowRight className="w-4 h-4" />}

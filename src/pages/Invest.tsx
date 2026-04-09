@@ -453,7 +453,7 @@ const Invest = () => {
                   >
                     {submitting ? "Submitting…" : "Request Private Access"}
                   </button>
-                  <p className="text-[11px] text-center text-primary-foreground/20 pt-0.5">
+                  <p className="text-[11px] text-center text-primary-foreground/40 pt-0.5">
                     Discreet updates from Echelon Property Group.&nbsp;
                     <br />
                     No spam.

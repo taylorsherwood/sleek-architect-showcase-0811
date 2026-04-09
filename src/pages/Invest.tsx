@@ -628,7 +628,22 @@ const Invest = () => {
         </div>
       </section>
 
-      <section className="pt-16 md:pt-20 pb-24 md:pb-32 bg-background">
+      {/* ── What You Need to Know ── */}
+      <section className="py-20 bg-secondary">
+        <div className="max-w-4xl mx-auto px-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-8">
+            What You Need to Know About Austin Investment Real Estate
+          </h2>
+          <ul className="space-y-4 text-muted-foreground leading-relaxed">
+            <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Austin consistently ranks among the top U.S. metros for <Link to="/austin-real-estate-investment" className="text-foreground underline hover:text-muted-foreground">real estate investment</Link>, driven by population growth, tech-sector expansion, and no state income tax.</span></li>
+            <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span><Link to="/off-market-real-estate-austin" className="text-foreground underline hover:text-muted-foreground">Off-market properties</Link> represent a significant share of Austin's best investment opportunities — access requires local broker relationships and direct sourcing.</span></li>
+            <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Fix-and-flip margins are strongest in transitioning corridors like East Austin and South Austin, where renovation dollars translate directly into resale value.</span></li>
+            <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Development <Link to="/land-for-sale-austin" className="text-foreground underline hover:text-muted-foreground">land in the Austin MSA</Link> ranges from entitled infill lots to large-scale tracts, with zoning and entitlement analysis essential before acquisition.</span></li>
+            <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Echelon Property Group serves both local and out-of-state investors with data-driven sourcing, property evaluation, and full transaction management. Explore our <Link to="/austin-multifamily-report-2026" className="text-foreground underline hover:text-muted-foreground">multifamily market outlook</Link> for current data.</span></li>
+          </ul>
+        </div>
+      </section>
+
         <div className="max-w-6xl mx-auto px-6">
           <ScrollReveal>
             <p className="text-minimal text-gold mb-4">Strategic Approach</p>

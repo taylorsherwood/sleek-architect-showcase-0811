@@ -672,10 +672,10 @@ const Invest = () => {
         <div className="max-w-6xl mx-auto px-6">
           <ScrollReveal>
             <p className="text-minimal text-gold mb-4">Value Proposition</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal italic text-architectural mb-16 max-w-3xl">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-16 max-w-3xl">
               How We Help Austin Investors
               <br />
-              Move Smarter
+              Move <em className="italic not-prose">Smarter</em>
             </h2>
           </ScrollReveal>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

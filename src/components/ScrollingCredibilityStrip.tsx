@@ -51,11 +51,6 @@ const ScrollingCredibilityStrip = () => {
       </p>
 
       <div className="relative">
-        {/* Edge fades */}
-        <div className="absolute left-0 top-0 bottom-0 w-20 md:w-32 z-10 pointer-events-none"
-          style={{ background: "linear-gradient(to right, hsl(var(--background)), transparent)" }} />
-        <div className="absolute right-0 top-0 bottom-0 w-20 md:w-32 z-10 pointer-events-none"
-          style={{ background: "linear-gradient(to left, hsl(var(--background)), transparent)" }} />
 
         <div className="scrolling-strip-track flex items-center gap-16 md:gap-24 w-max">
           {track.map((logo, i) => (

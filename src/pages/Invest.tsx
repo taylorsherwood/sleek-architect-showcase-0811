@@ -564,7 +564,7 @@ const Invest = () => {
                 <p className="text-[0.82rem] text-muted-foreground/75 leading-relaxed">
                   Repositioned through lighting, layout clarity, and material updates to create a more open and marketable environment.
                   <br />
-                  Designed and implemented by New Edge Renovations
+                   Designed and implemented by <a href="https://www.newedgeren.com" target="_blank" rel="noopener noreferrer" className="underline hover:text-foreground transition-colors">New Edge Renovations</a>
                 </p>
               </div>
             </ScrollReveal>
@@ -581,7 +581,7 @@ const Invest = () => {
                 <p className="text-[0.82rem] text-muted-foreground/75 leading-relaxed">
                   Repositioned through bold color, upgraded materials, and curated furnishings to create a sophisticated executive workspace.
                   <br />
-                  Designed and implemented by New Edge Renovations
+                  Designed and implemented by <a href="https://www.newedgeren.com" target="_blank" rel="noopener noreferrer" className="underline hover:text-foreground transition-colors">New Edge Renovations</a>
                 </p>
               </div>
             </ScrollReveal>

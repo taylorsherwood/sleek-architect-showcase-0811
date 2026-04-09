@@ -6,13 +6,23 @@ import mediaHaven from "@/assets/media-haven.png";
 import mediaRobbReport from "@/assets/media-robb-report.png";
 import mediaAustinHome from "@/assets/media-austin-home.png";
 import mediaAustinLuxuryHome from "@/assets/media-austin-luxury-home.png";
+import mediaCnn from "@/assets/media-cnn.png";
+import mediaFoxNews from "@/assets/media-fox-news.png";
+import mediaYahoo from "@/assets/media-yahoo.png";
+import mediaHgtv from "@/assets/media-hgtv.png";
+import mediaNyt from "@/assets/media-nyt.png";
 
 const logos = [
   { src: mediaWsj, alt: "The Wall Street Journal" },
+  { src: mediaCnn, alt: "CNN" },
   { src: mediaMansionGlobal, alt: "Mansion Global" },
+  { src: mediaNyt, alt: "The New York Times" },
   { src: mediaRobbReport, alt: "Robb Report" },
+  { src: mediaFoxNews, alt: "Fox News" },
   { src: mediaTribeza, alt: "Tribeza" },
+  { src: mediaYahoo, alt: "Yahoo!" },
   { src: mediaAbj, alt: "Austin Business Journal" },
+  { src: mediaHgtv, alt: "HGTV" },
   { src: mediaHaven, alt: "Haven" },
   { src: mediaAustinHome, alt: "Austin Home" },
   { src: mediaAustinLuxuryHome, alt: "Austin Luxury Home Magazine" },

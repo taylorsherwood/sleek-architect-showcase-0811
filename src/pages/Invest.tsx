@@ -569,33 +569,7 @@ const Invest = () => {
               </div>
             </ScrollReveal>
 
-            {/* Slider 2 */}
-            <ScrollReveal>
-              <BeforeAfterSlider
-                beforeImage={kitchenBefore}
-                afterImage={kitchenAfter}
-              />
-              <div className="mt-5">
-                <h3 className="text-base font-display font-normal text-foreground tracking-wide">Kitchen Renovation — South Austin</h3>
-                <div className="w-8 h-px bg-gold mt-2 mb-2" />
-                <p className="text-[0.82rem] text-muted-foreground/75 leading-relaxed">Full cosmetic overhaul with layout refinement and finish upgrades aligned with current buyer expectations.</p>
-              </div>
-            </ScrollReveal>
-
-            {/* Slider 3 */}
-            <ScrollReveal>
-              <BeforeAfterSlider
-                beforeImage={kitchen03Before}
-                afterImage={kitchen03After}
-              />
-              <div className="mt-5">
-                <h3 className="text-base font-display font-normal text-foreground tracking-wide">Kitchen Upgrade — Westlake Hills</h3>
-                <div className="w-8 h-px bg-gold mt-2 mb-2" />
-                <p className="text-[0.82rem] text-muted-foreground/75 leading-relaxed">Refined surfaces, modernized finishes, and improved flow to elevate overall presentation and perceived value.</p>
-              </div>
-            </ScrollReveal>
-
-            {/* Slider 4 — Office */}
+            {/* Slider 2 — Office */}
             <ScrollReveal>
               <BeforeAfterSlider
                 beforeImage={officeBefore}
@@ -609,6 +583,32 @@ const Invest = () => {
                   <br />
                   Designed and implemented by New Edge Renovations
                 </p>
+              </div>
+            </ScrollReveal>
+
+            {/* Slider 3 */}
+            <ScrollReveal>
+              <BeforeAfterSlider
+                beforeImage={kitchenBefore}
+                afterImage={kitchenAfter}
+              />
+              <div className="mt-5">
+                <h3 className="text-base font-display font-normal text-foreground tracking-wide">Kitchen Renovation — South Austin</h3>
+                <div className="w-8 h-px bg-gold mt-2 mb-2" />
+                <p className="text-[0.82rem] text-muted-foreground/75 leading-relaxed">Full cosmetic overhaul with layout refinement and finish upgrades aligned with current buyer expectations.</p>
+              </div>
+            </ScrollReveal>
+
+            {/* Slider 4 */}
+            <ScrollReveal>
+              <BeforeAfterSlider
+                beforeImage={kitchen03Before}
+                afterImage={kitchen03After}
+              />
+              <div className="mt-5">
+                <h3 className="text-base font-display font-normal text-foreground tracking-wide">Kitchen Upgrade — Westlake Hills</h3>
+                <div className="w-8 h-px bg-gold mt-2 mb-2" />
+                <p className="text-[0.82rem] text-muted-foreground/75 leading-relaxed">Refined surfaces, modernized finishes, and improved flow to elevate overall presentation and perceived value.</p>
               </div>
             </ScrollReveal>
 

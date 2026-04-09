@@ -366,7 +366,7 @@ const Invest = () => {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-foreground/80 via-foreground/65 to-foreground/80" />
         <div className="relative z-10 max-w-6xl mx-auto px-6 w-full">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-12 lg:gap-16 items-center">
             {/* Left — Copy */}
             <div className="text-center lg:text-left">
               <p

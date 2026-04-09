@@ -665,6 +665,33 @@ const Invest = () => {
         </div>
       </section>
 
+      {/* ──────────────────────── HOW WE HELP ──────────────────────── */}
+      <section className="py-24 md:py-32 bg-secondary">
+        <div className="max-w-6xl mx-auto px-6">
+          <ScrollReveal>
+            <p className="text-minimal text-gold mb-4">Value Proposition</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-16 max-w-3xl">
+              How We Help Austin Investors Move Smarter
+            </h2>
+          </ScrollReveal>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {howWeHelp.map((card, i) => (
+              <ScrollReveal key={card.title} delay={i * 80}>
+                <div className="group border-2 border-border bg-card p-8 h-full hover:border-gold transition-colors duration-500">
+                  <card.icon className="w-5 h-5 text-gold mb-4" />
+                  <h3 className="text-lg font-display font-normal text-foreground mb-2">
+                    {card.title}
+                  </h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    {card.description}
+                  </p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ──────────────────────── PRIVATE NETWORK GATEWAY ──────────────────────── */}
       <section className="py-14 md:py-20 bg-secondary">
         <div className="max-w-2xl mx-auto px-6 text-center">
@@ -711,37 +738,6 @@ const Invest = () => {
           </ScrollReveal>
         </div>
       </section>
-
-
-
-      {/* ──────────────────────── HOW WE HELP ──────────────────────── */}
-      <section className="py-24 md:py-32 bg-secondary">
-        <div className="max-w-6xl mx-auto px-6">
-          <ScrollReveal>
-            <p className="text-minimal text-gold mb-4">Value Proposition</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-16 max-w-3xl">
-              How We Help Austin Investors Move Smarter
-            </h2>
-          </ScrollReveal>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {howWeHelp.map((card, i) => (
-              <ScrollReveal key={card.title} delay={i * 80}>
-                <div className="group border-2 border-border bg-card p-8 h-full hover:border-gold transition-colors duration-500">
-                  <card.icon className="w-5 h-5 text-gold mb-4" />
-                  <h3 className="text-lg font-display font-normal text-foreground mb-2">
-                    {card.title}
-                  </h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    {card.description}
-                  </p>
-                </div>
-              </ScrollReveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
-
 
 
       {/* ──────────────────────── MARKET INSIGHT ──────────────────────── */}

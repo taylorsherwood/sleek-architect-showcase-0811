@@ -400,7 +400,7 @@ const AdvisorSection = () => (
                      <br /><br />
                      <span className="font-bold">Let's get to work,</span>
                   </p>
-                 <div className="!mt-0 !pt-0 -mb-8">{"\n\n\n"}<img src={taylorSignature} alt="Taylor Sherwood signature" className="block h-[140px] opacity-80 -translate-y-4" /></div>
+                 <div className="!mt-0 !pt-0 -mb-8"><img src={taylorSignature} alt="Taylor Sherwood signature" className="block h-[140px] opacity-80 -translate-y-4" /></div>
               </div>
             </div>
 

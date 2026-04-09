@@ -11,6 +11,7 @@ import mediaFoxNews from "@/assets/media-fox-news.png";
 import mediaYahoo from "@/assets/media-yahoo.png";
 import mediaHgtv from "@/assets/media-hgtv.png";
 import mediaNyt from "@/assets/media-nyt.png";
+import mediaCulturemap from "@/assets/media-culturemap.png";
 
 const logos = [
   { src: mediaWsj, alt: "The Wall Street Journal", h: "h-24 md:h-34" },
@@ -20,6 +21,7 @@ const logos = [
   { src: mediaRobbReport, alt: "Robb Report" },
   { src: mediaFoxNews, alt: "Fox News", h: "h-14 md:h-20" },
   { src: mediaTribeza, alt: "Tribeza" },
+  { src: mediaCulturemap, alt: "CultureMap Austin" },
   { src: mediaYahoo, alt: "Yahoo!" },
   { src: mediaAbj, alt: "Austin Business Journal", h: "h-24 md:h-34" },
   { src: mediaHgtv, alt: "HGTV" },

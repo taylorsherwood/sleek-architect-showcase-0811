@@ -18,7 +18,7 @@ const logos = [
   { src: mediaMansionGlobal, alt: "Mansion Global" },
   { src: mediaNyt, alt: "The New York Times" },
   { src: mediaRobbReport, alt: "Robb Report" },
-  { src: mediaFoxNews, alt: "Fox News" },
+  { src: mediaFoxNews, alt: "Fox News", h: "h-14 md:h-20" },
   { src: mediaTribeza, alt: "Tribeza" },
   { src: mediaYahoo, alt: "Yahoo!" },
   { src: mediaAbj, alt: "Austin Business Journal", h: "h-24 md:h-34" },

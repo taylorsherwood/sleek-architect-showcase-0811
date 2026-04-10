@@ -124,6 +124,7 @@ const AppRoutes = () => {
           <Route path="/balcones-park-homes-for-sale" element={<Navigate to="/communities/balcones-park" replace />} />
           <Route path="/rob-roy-homes-for-sale" element={<Navigate to="/communities/rob-roy" replace />} />
           <Route path="/steiner-ranch-homes-for-sale" element={<Navigate to="/communities/steiner-ranch" replace />} />
+          <Route path="/bryker-woods-homes-for-sale" element={<Navigate to="/communities/bryker-woods" replace />} />
           <Route path="/sitemap" element={<Sitemap />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

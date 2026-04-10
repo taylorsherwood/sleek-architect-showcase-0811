@@ -98,6 +98,10 @@ const neighborhoodInsights: Record<string, { title: string; description: string;
     { title: "Top Investment Neighborhoods in Austin", description: "Steiner Ranch's family-oriented value and Lake Austin proximity.", href: "/blog/top-investment-neighborhoods-austin" },
     { title: "Best Luxury Neighborhoods in Austin", description: "Master-planned communities in Austin's luxury landscape.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
   ],
+  "bryker-woods": [
+    { title: "Tarrytown vs Bryker Woods", description: "A detailed comparison of two iconic 78703 neighborhoods for lifestyle, pricing, and value.", href: "/blog/tarrytown-vs-bryker-woods" },
+    { title: "Best Luxury Neighborhoods in Austin", description: "Where Bryker Woods fits within Austin's central luxury landscape.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
+  ],
 };
 
 function createCommunitySchema(community: { name: string; slug: string; metaDescription: string }) {

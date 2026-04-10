@@ -820,10 +820,10 @@ const TestimonialsSection = () => {
 const communities = [
   { name: "Barton Creek", descriptor: "Golf, privacy, Hill Country estates", image: "/static-assets/community-barton-creek.jpg", slug: "barton-creek", priceFrom: "From $2M+" },
   { name: "Lake Austin", descriptor: "Waterfront living at its finest", image: "/static-assets/community-lake-austin.jpg", slug: "lake-austin", priceFrom: "From $3.5M+" },
-  { name: "Westlake Hills", descriptor: "Scenic bluffs, top-rated schools", image: "/static-assets/community-westlake-hills.jpg", slug: "westlake-hills", priceFrom: "From $1.8M+" },
-  { name: "Tarrytown", descriptor: "Old Austin charm, central location", image: "/static-assets/community-tarrytown.jpg", slug: "tarrytown", priceFrom: "From $1.5M+" },
   { name: "Rollingwood", descriptor: "Intimate enclave near Zilker", image: "/static-assets/community-rollingwood.jpg", slug: "rollingwood", priceFrom: "From $1.2M+" },
   { name: "Spanish Oaks", descriptor: "Gated Hill Country luxury", image: "/static-assets/community-spanish-oaks.jpg", slug: "spanish-oaks", priceFrom: "From $2.5M+" },
+  { name: "Tarrytown", descriptor: "Old Austin charm, central location", image: "/static-assets/community-tarrytown.jpg", slug: "tarrytown", priceFrom: "From $1.5M+" },
+  { name: "Westlake Hills", descriptor: "Scenic bluffs, top-rated schools", image: "/static-assets/community-westlake-hills.jpg", slug: "westlake-hills", priceFrom: "From $1.8M+" },
 ];
 
 const CommunitiesSection = () => (

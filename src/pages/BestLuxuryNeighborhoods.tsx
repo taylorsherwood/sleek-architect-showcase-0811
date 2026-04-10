@@ -213,7 +213,13 @@ const BestLuxuryNeighborhoods = () => {
               <Link to="/communities/westlake-hills" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ WESTLAKE HILLS</Link>
               <Link to="/communities/barton-creek" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ BARTON CREEK</Link>
               <Link to="/communities/lake-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ LAKE AUSTIN WATERFRONT</Link>
+              <Link to="/communities/tarrytown" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ TARRYTOWN</Link>
+              <Link to="/communities/rob-roy" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ ROB ROY</Link>
+              <Link to="/communities/pemberton-heights" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ PEMBERTON HEIGHTS</Link>
               <Link to="/communities/lakeway" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ LAKEWAY</Link>
+              <Link to="/communities/lake-travis" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ LAKE TRAVIS WATERFRONT</Link>
+              <Link to="/communities/bee-cave" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ BEE CAVE</Link>
+              <Link to="/communities/steiner-ranch" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ STEINER RANCH</Link>
               <Link to="/off-market-real-estate-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ OFF-MARKET REAL ESTATE</Link>
               <Link to="/moving-to-austin-texas" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ MOVING TO AUSTIN GUIDE</Link>
               <Link to="/austin-luxury-real-estate-market-report" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ MARKET REPORT</Link>

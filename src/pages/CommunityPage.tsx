@@ -114,6 +114,10 @@ const neighborhoodInsights: Record<string, { title: string; description: string;
     { title: "Best Luxury Neighborhoods in Austin", description: "Where Davenport Ranch ranks among Austin's gated luxury communities.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
     { title: "Rollingwood vs Westlake Hills", description: "How Davenport Ranch compares to neighboring West Austin enclaves.", href: "/blog/rollingwood-vs-westlake-hills" },
   ],
+  "lakeway": [
+    { title: "Lake Austin vs Lake Travis", description: "Waterfront lifestyles compared — proximity, pricing, and daily experience.", href: "/blog/lake-austin-vs-lake-travis" },
+    { title: "Best Waterfront Homes in Austin", description: "A comprehensive look at Austin's lakefront market and what drives value.", href: "/blog/best-waterfront-homes-austin" },
+  ],
 };
 
 function createCommunitySchema(community: { name: string; slug: string; metaDescription: string }) {

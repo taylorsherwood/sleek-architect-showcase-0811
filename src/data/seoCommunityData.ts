@@ -486,7 +486,7 @@ Rob Roy appeals to established professionals, executives, and high-net-worth buy
 Housing options in Steiner Ranch range from family-friendly homes in established sections to luxury custom estates with Lake Austin views in the premier enclave of The Commons. The community's topography provides dramatic elevation changes, creating opportunities for homes with sweeping views of the Hill Country and Lake Austin.
 
 Steiner Ranch is served by the Leander ISD, with several schools located within the community. The development's comprehensive trail system, multiple amenity centers, and proximity to Lake Austin create a resort-style lifestyle.`,
-    market: `Steiner Ranch's real estate market spans a wide range of price points. Family homes in established sections start around $500K, while larger homes in premium sections range from $800K to $1.5M. Custom estates in The Commons and other luxury sections can exceed $3M.
+    market: `Steiner Ranch's real estate market spans a wide range of price points. Family homes in established sections start around $500K, while larger homes in premium sections range from $800K to $1.5M. Custom estates in The Commons and other luxury sections can exceed $13M.
 
 The community's size and variety of home types create a relatively liquid market with consistent transaction volume. Resale homes in mature sections with premium views or pool lots command significant premiums.
 
@@ -498,7 +498,7 @@ The proximity to Lake Austin provides additional recreational opportunities incl
 Steiner Ranch appeals to families seeking a safe, amenity-rich community with good schools and outdoor recreation. The master-planned nature ensures maintained common areas, active HOA management, and a consistent level of community quality.`,
     faqs: [
       { question: "What is it like living in Steiner Ranch Austin?", answer: "Steiner Ranch offers a resort-style master-planned lifestyle with pools, trails, parks, Lake Austin access, and a strong family-oriented community." },
-      { question: "What are home prices in Steiner Ranch?", answer: "Prices range from approximately $500K for family homes to over $3M for custom estates with Lake Austin views in The Commons." },
+      { question: "What are home prices in Steiner Ranch?", answer: "Prices range from approximately $500K for family homes to over $13M for custom estates with Lake Austin views in The Commons." },
       { question: "Are there luxury homes in Steiner Ranch?", answer: "Yes. The Commons and other premium sections feature custom luxury homes with panoramic Hill Country and Lake Austin views." },
       { question: "What schools serve Steiner Ranch?", answer: "Steiner Ranch is served by the Leander ISD, with several schools located within the community including Steiner Ranch Elementary." },
       { question: "Is Steiner Ranch a good investment area?", answer: "Yes. Comprehensive amenities, Lake Austin proximity, and consistent family demand support stable appreciation across the community." },

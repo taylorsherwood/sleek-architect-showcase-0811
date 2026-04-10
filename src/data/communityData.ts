@@ -16,6 +16,7 @@ import clarksvilleImg from "@/assets/communities/clarksville.jpg";
 import greatHillsImg from "@/assets/communities/great-hills.jpg";
 import hydeParkImg from "@/assets/communities/hyde-park.jpg";
 import lakeTravisImg from "@/assets/communities/lake-travis-waterfront.jpg";
+import muellerImg from "@/assets/communities/mueller.webp";
 export interface CommunityFAQ {
   question: string;
   answer: string;
@@ -1350,7 +1351,7 @@ Finite waterfront supply and growing demand from Austin's expanding population c
     metaTitle: "Mueller Homes for Sale Austin | Echelon Property Group",
     metaDescription: "Explore homes for sale in Mueller Austin TX. Master-planned urban community with parks, shops, and homes from $400K to $1.5M+.",
     priceRange: "$400K – $1.5M+",
-    image: "",
+    image: muellerImg,
     overview: `Mueller is Austin's award-winning master-planned community built on the former Robert Mueller Municipal Airport site in central-east Austin. The development has transformed 700 acres into one of the most walkable, mixed-use neighborhoods in the city.
 
 ### Housing Options

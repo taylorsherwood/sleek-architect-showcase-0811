@@ -1132,7 +1132,7 @@ const FinalCTA = () => (
                     <div className="w-px h-full" style={{ background: "rgba(184,160,109,0.12)" }} />
                   </div>
                 )}
-                <div className="px-8 group/col transition-opacity duration-300 hover:opacity-100" style={{ opacity: 0.88 }}>
+                <div className="px-8 text-center group/col transition-opacity duration-300 hover:opacity-100" style={{ opacity: 0.88 }}>
                   <h4
                     className="text-foreground/70 mb-4"
                     style={{ fontFamily: '"Jost", sans-serif', fontSize: "9.5px", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 600 }}

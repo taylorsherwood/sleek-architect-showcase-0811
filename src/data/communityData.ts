@@ -12,6 +12,7 @@ import spanishOaksImg from "@/assets/community-spanish-oaks.jpg";
 import catMountainImg from "@/assets/community-cat-mountain.jpg";
 import balconesImg from "@/assets/communities/balcones-park.webp";
 import beeCaveImg from "@/assets/communities/bee-cave.avif";
+import clarksvilleImg from "@/assets/communities/clarksville.jpg";
 export interface CommunityFAQ {
   question: string;
   answer: string;
@@ -1164,7 +1165,7 @@ Because of limited waterfront inventory, many buyers prioritize lot quality and 
     metaTitle: "Clarksville Homes for Sale | Echelon Property Group",
     metaDescription: "Explore homes for sale in Clarksville Austin TX. Historic neighborhood near downtown with boutique shops, dining, and homes from $800K to $6M+.",
     priceRange: "$800K – $6M+",
-    image: "",
+    image: clarksvilleImg,
     overview: `Clarksville is one of Austin's oldest and most culturally significant neighborhoods, located just west of downtown between MoPac and Lamar Boulevard. Founded in the 1870s as a freedmen's community, Clarksville has evolved into one of the city's most desirable residential areas while maintaining its historic character and walkable village atmosphere.
 
 ### Architectural Character

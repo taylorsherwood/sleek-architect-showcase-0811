@@ -588,7 +588,7 @@ Pease District Park provides wooded trails and swimming holes directly adjacent 
     overview: `Davenport Ranch is one of West Austin's most sought-after luxury neighborhoods, located off Capital of Texas Highway (Loop 360) in the 78746 zip code. The community features custom-built estate homes on large, wooded lots within the Eanes Independent School District — home to Westlake High School, one of the top-ranked public high schools in Texas.
 
 Developed primarily in the 1980s and 1990s, Davenport Ranch offers oversized lots, mature tree canopy, and architectural styles ranging from traditional Hill Country limestone to fully renovated contemporary estates. Many homes feature resort-caliber outdoor living with pools, sport courts, and outdoor kitchens.`,
-    market: `Homes range from approximately $1.5M to over $8M, with median prices between $2M and $4M. Demand is consistently strong due to Eanes ISD zoning, the 78746 zip code, and the neighborhood's established reputation along the 360 corridor.
+    market: `Homes range from approximately $1.5M to over $5M, with median prices between $2M and $4M. Demand is consistently strong due to Eanes ISD zoning, the 78746 zip code, and the neighborhood's established reputation along the 360 corridor.
 
 Many original homes offer significant renovation upside. Buyers who invest in quality modernization frequently realize substantial returns. Inventory turns over gradually as many homeowners are long-term residents, keeping supply tight and values stable.`,
     whyBuyersLove: `Buyers are drawn to Davenport Ranch for its Eanes ISD schools, large wooded lots, and convenient Loop 360 location — just 15 minutes from downtown Austin. The neighborhood's established character and mature landscaping create a Hill Country retreat feel without sacrificing urban access.
@@ -596,7 +596,7 @@ Many original homes offer significant renovation upside. Buyers who invest in qu
 Wild Basin Wilderness Preserve offers 227 acres of trails adjacent to the neighborhood, and the Barton Creek Greenbelt provides premier hiking and swimming nearby. Lake Austin boating and waterfront dining are a short drive away. The family-oriented atmosphere and quiet, winding streets make it ideal for buyers seeking space, privacy, and top-tier schools.`,
     faqs: [
       { question: "What is it like living in Davenport Ranch?", answer: "Davenport Ranch offers spacious Hill Country living on large wooded lots off Loop 360, with Eanes ISD schools and downtown Austin just 15 minutes away." },
-      { question: "What are home prices in Davenport Ranch?", answer: "Prices range from approximately $1.5M for homes needing updates to over $8M for fully renovated estates on premium lots." },
+      { question: "What are home prices in Davenport Ranch?", answer: "Prices range from approximately $1.5M for homes needing updates to over $5M for fully renovated estates on premium lots." },
       { question: "Are there luxury homes in Davenport Ranch?", answer: "Yes. Custom estates feature pools, sport courts, outdoor kitchens, and panoramic Hill Country views." },
       { question: "What schools serve Davenport Ranch?", answer: "Davenport Ranch is served by Eanes ISD, including Eanes Elementary, Hill Country Middle School, and Westlake High School." },
       { question: "Is Davenport Ranch a good investment area?", answer: "Yes. Eanes ISD zoning, the 78746 zip code, and limited inventory support strong long-term appreciation." },

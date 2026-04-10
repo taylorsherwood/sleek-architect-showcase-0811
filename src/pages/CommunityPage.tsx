@@ -96,14 +96,6 @@ const neighborhoodInsights: Record<string, { title: string; description: string;
     { title: "Best Luxury Neighborhoods in Austin", description: "Where Hyde Park's historic character fits in Austin's luxury landscape.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
     { title: "Moving to Austin — Complete Relocation Guide", description: "What makes Hyde Park appealing for newcomers to Austin.", href: "/blog/moving-to-austin-texas-complete-relocation-guide" },
   ],
-  "pemberton-heights": [
-    { title: "Best Luxury Neighborhoods in Austin", description: "Pemberton Heights' distinguished architecture and central location.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
-    { title: "Tarrytown vs Bryker Woods", description: "How Pemberton Heights compares to its neighboring west Austin communities.", href: "/blog/tarrytown-vs-bryker-woods" },
-  ],
-  "bee-cave": [
-    { title: "Top Investment Neighborhoods in Austin", description: "Bee Cave's growth trajectory and Lake Travis ISD premium.", href: "/blog/top-investment-neighborhoods-austin" },
-    { title: "Best Luxury Neighborhoods in Austin", description: "Hill Country communities and what they offer luxury buyers.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
-  ],
   "great-hills": [
     { title: "Best Luxury Neighborhoods in Austin", description: "Northwest Austin's established neighborhoods and their investment appeal.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
     { title: "Austin Luxury Market Forecast", description: "Market trends for northwest Austin's premier neighborhoods.", href: "/blog/austin-luxury-real-estate-market-forecast" },

@@ -106,6 +106,10 @@ const neighborhoodInsights: Record<string, { title: string; description: string;
     { title: "Top Investment Neighborhoods in Austin", description: "Why East Austin's appreciation trajectory makes it one of Austin's top investment plays.", href: "/blog/top-investment-neighborhoods-austin" },
     { title: "Best Luxury Neighborhoods in Austin", description: "How East Austin's modern architecture is reshaping Austin's luxury landscape.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
   ],
+  "old-enfield": [
+    { title: "Best Luxury Neighborhoods in Austin", description: "Where Old Enfield ranks among Austin's most prestigious addresses.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
+    { title: "Tarrytown vs Bryker Woods", description: "How Old Enfield compares to its neighboring 78703 communities.", href: "/blog/tarrytown-vs-bryker-woods" },
+  ],
 };
 
 function createCommunitySchema(community: { name: string; slug: string; metaDescription: string }) {

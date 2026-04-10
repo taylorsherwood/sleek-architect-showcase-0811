@@ -22,7 +22,7 @@ import rollingwood from "@/assets/community-rollingwood.jpg";
 import hillCountry from "@/assets/community-hill-country.jpg";
 import travisHeights from "@/assets/community-travis-heights.jpg";
 import tarrytown from "@/assets/community-tarrytown.jpg";
-import drippingSprings from "@/assets/community-dripping-springs.jpg";
+import drippingSprings from "@/assets/communities/dripping-springs.png";
 import downtown from "@/assets/community-downtown.jpg";
 import zilker from "@/assets/community-zilker-barton-springs.jpg";
 import spanishOaks from "@/assets/community-spanish-oaks.png";

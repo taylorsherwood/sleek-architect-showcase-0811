@@ -1046,19 +1046,34 @@ const LeadCapture = () => {
    SECTION 9 — FINAL CTA
    ───────────────────────────────────────────── */
 
-const priorityLinks = [
-  { to: "/austin-luxury-homes-for-sale", label: "Austin Luxury Homes" },
-  { to: "/buy", label: "Buy a Home" },
-  { to: "/sell", label: "Sell Your Home" },
-  { to: "/invest", label: "Investment Advisory" },
-  { to: "/communities", label: "Communities" },
-  { to: "/off-market-real-estate-austin", label: "Off-Market Access" },
-  { to: "/austin-real-estate-investment", label: "Real Estate Investment" },
-  { to: "/luxury-real-estate-austin", label: "Luxury Real Estate" },
-  { to: "/land-for-sale-austin", label: "Land for Sale" },
-  { to: "/moving-to-austin-texas", label: "Moving to Austin" },
-  { to: "/austin-commercial-real-estate", label: "Commercial Real Estate" },
-  { to: "/best-luxury-neighborhoods-austin", label: "Best Neighborhoods" },
+const linkGroups = [
+  {
+    heading: "Buy & Sell",
+    links: [
+      { to: "/buy", label: "Buy a Home" },
+      { to: "/sell", label: "Sell Your Home" },
+      { to: "/austin-luxury-homes-for-sale", label: "Austin Luxury Homes" },
+      { to: "/luxury-real-estate-austin", label: "Luxury Real Estate" },
+    ],
+  },
+  {
+    heading: "Invest",
+    links: [
+      { to: "/invest", label: "Investment Advisory" },
+      { to: "/austin-real-estate-investment", label: "Real Estate Investment" },
+      { to: "/austin-commercial-real-estate", label: "Commercial Real Estate" },
+      { to: "/land-for-sale-austin", label: "Land for Sale" },
+    ],
+  },
+  {
+    heading: "Explore",
+    links: [
+      { to: "/communities", label: "Communities" },
+      { to: "/best-luxury-neighborhoods-austin", label: "Best Neighborhoods" },
+      { to: "/moving-to-austin-texas", label: "Moving to Austin" },
+      { to: "/off-market-real-estate-austin", label: "Off-Market Access" },
+    ],
+  },
 ];
 
 const FinalCTA = () => (
@@ -1094,17 +1109,38 @@ const FinalCTA = () => (
     </section>
 
     {/* Priority internal links — crawl path reinforcement */}
-    <section className="bg-secondary" style={{ padding: "clamp(40px, 6vw, 64px) 0" }}>
+    <section className="bg-secondary" style={{ padding: "clamp(56px, 8vw, 88px) 0" }}>
       <div className="container mx-auto px-6">
-        <div className="max-w-[1000px] mx-auto text-center">
-          <p className="text-minimal text-gold mb-6 tracking-[0.25em]">EXPLORE AUSTIN REAL ESTATE</p>
-          <div className="flex flex-wrap justify-center gap-x-5 gap-y-2">
-            {priorityLinks.map((link) => (
-              <Link key={link.to} to={link.to}
-                className="text-muted-foreground/60 hover:text-gold transition-colors duration-300"
-                style={{ fontFamily: '"Jost", sans-serif', fontSize: "12.5px", letterSpacing: "0.06em", fontWeight: 300 }}>
-                {link.label}
-              </Link>
+        <div className="max-w-[880px] mx-auto">
+          {/* Section heading */}
+          <div className="text-center mb-10 md:mb-12">
+            <p className="text-minimal text-gold tracking-[0.3em] mb-3" style={{ fontSize: "10px" }}>EXPLORE AUSTIN REAL ESTATE</p>
+            <div className="w-8 h-px bg-gold/30 mx-auto" />
+          </div>
+
+          {/* Link grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-y-10 gap-x-12 md:gap-x-16">
+            {linkGroups.map((group) => (
+              <div key={group.heading} className="text-center sm:text-left">
+                <h4
+                  className="text-foreground/50 mb-4"
+                  style={{ fontFamily: '"Jost", sans-serif', fontSize: "10px", letterSpacing: "0.22em", textTransform: "uppercase", fontWeight: 500 }}
+                >
+                  {group.heading}
+                </h4>
+                <div className="space-y-2">
+                  {group.links.map((link) => (
+                    <Link
+                      key={link.to}
+                      to={link.to}
+                      className="block text-muted-foreground/60 hover:text-gold transition-colors duration-300"
+                      style={{ fontFamily: '"Jost", sans-serif', fontSize: "13px", fontWeight: 300, lineHeight: 1.85, letterSpacing: "0.02em" }}
+                    >
+                      {link.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
         </div>

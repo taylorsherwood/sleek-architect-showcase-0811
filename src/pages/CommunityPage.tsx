@@ -202,9 +202,12 @@ const parseInlineLinks = (text: string): React.ReactNode => {
   return parts.length === 1 && typeof parts[0] === 'string' ? parts[0] : <>{parts}</>;
 };
 
-/** Renders markdown-like content: ### for H3, - for bullets, [text](/url) links, paragraphs split by \n\n */
-const ContentBlock = ({ text }: { text: string }) => {
-  const blocks = text.split('\n\n');
+/** Renders markdown-like content: ### for H3, - for bullets, [text](/url) links, paragraphs split by \n\n.
+ *  When `currentSlug` is provided, auto-links community names and key phrases. */
+const ContentBlock = ({ text, currentSlug }: { text: string; currentSlug?: string }) => {
+  // Apply auto-linking before parsing markdown
+  const linked = currentSlug ? autoLink(text, currentSlug) : text;
+  const blocks = linked.split('\n\n');
   return (
     <div className="space-y-4">
       {blocks.map((block, i) => {

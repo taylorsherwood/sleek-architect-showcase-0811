@@ -21,6 +21,7 @@ import muellerImg from "@/assets/communities/mueller.jpg";
 import robRoyImg from "@/assets/communities/rob-roy.png";
 import steinerRanchImg from "@/assets/communities/steiner-ranch.webp";
 import pembertonHeightsImg from "@/assets/communities/pemberton-heights.avif";
+import brykerWoodsImg from "@/assets/communities/bryker-woods.jpg";
 export interface CommunityFAQ {
   question: string;
   answer: string;
@@ -2108,6 +2109,103 @@ Comprehensive amenities, Lake Austin proximity, and consistent family demand sup
       { question: "What schools serve Steiner Ranch?", answer: "Steiner Ranch is served by the Leander ISD, with several schools located within the community including Steiner Ranch Elementary and Vandegrift High School." },
       { question: "Is Steiner Ranch a good investment area?", answer: "Yes. Comprehensive amenities, Lake Austin proximity, and consistent family demand support stable appreciation across the community." },
       { question: "What amenities does Steiner Ranch offer?", answer: "Steiner Ranch features multiple resort-style pools, sports courts, miles of trails, parks, playgrounds, fitness facilities, and community event centers." }
+    ]
+  },
+  {
+    slug: "bryker-woods",
+    name: "Bryker Woods",
+    heroTitle: "Homes for Sale in Bryker Woods Austin",
+    metaTitle: "Bryker Woods Homes for Sale Austin | Echelon Property Group",
+    metaDescription: "Explore homes for sale in Bryker Woods Austin TX. Charming central Austin neighborhood with tree-lined streets, walkability, and homes from $700K to $3M+.",
+    priceRange: "$700K – $3M+",
+    image: brykerWoodsImg,
+    overview: `Bryker Woods is one of Austin's most beloved central neighborhoods, nestled in the heart of the 78703 zip code just east of MoPac and minutes from downtown. Established in the 1930s and 1940s, the neighborhood is defined by its mature live oaks, quiet tree-lined streets, and a mix of original bungalows, thoughtfully renovated homes, and contemporary new construction.
+
+### Historic Character
+
+The neighborhood retains much of its original mid-century charm, with Craftsman-style bungalows, ranch homes, and cottage-style residences sitting alongside modern rebuilds. Strict lot coverage and setback rules help maintain the neighborhood's low-density, pedestrian-friendly character.
+
+### Central Location
+
+Bryker Woods offers unparalleled proximity to downtown Austin, the University of Texas, and the vibrant shops and restaurants along West 35th Street, Jefferson Street, and Burnet Road. Residents enjoy a walkable lifestyle with easy access to coffee shops, boutiques, and dining without leaving the neighborhood.
+
+### Community Identity
+
+Bryker Woods has a strong neighborhood association and a deeply rooted sense of community. Annual events, the beloved Bryker Woods Elementary school, and local gathering spots create an intimate, village-like atmosphere within the city.`,
+    lifestyle: `### Walkability & Convenience
+
+Bryker Woods is one of Austin's most walkable neighborhoods. Residents can walk to restaurants, coffee shops, parks, and schools. The neighborhood's central location means downtown Austin, Zilker Park, and Lady Bird Lake are all within a short drive or bike ride.
+
+### Local Favorites
+
+The neighborhood is surrounded by beloved Austin institutions including Sweetish Hill Bakery, Cipollina, Épicerie, and numerous restaurants along West 35th Street. The nearby Shoal Creek Greenbelt provides natural trails and creek access.
+
+### Parks & Green Space
+
+- Ramsey Park — the neighborhood's primary park with a pool, playground, basketball courts, and large open fields
+- Shoal Creek Greenbelt — scenic trail running along the eastern edge of the neighborhood
+- Bailey Park — pocket park with playground and picnic areas
+
+### Family-Friendly Atmosphere
+
+Bryker Woods is known for its family-oriented character. Children walk to school, neighbors know each other by name, and the community maintains a safe, welcoming environment that attracts young families and long-term residents alike.`,
+    marketInsights: `### Pricing
+
+Homes in Bryker Woods range from approximately $700K for original bungalows needing renovation to over $3M for new construction and premium renovations on larger lots. The median home price typically falls between $1M and $1.8M.
+
+### Market Dynamics
+
+Inventory in Bryker Woods is consistently limited due to the neighborhood's small geographic footprint and high desirability. Many homeowners are long-term residents, which further restricts supply. Homes that are priced well and presented professionally often receive multiple offers.
+
+### Land Value
+
+Much of Bryker Woods' value is in the land. Original homes on standard lots are frequently purchased for their lot value, with buyers planning full renovations or new construction. Lot values have appreciated significantly over the past decade.
+
+### Buyer Profile
+
+Bryker Woods attracts young professionals, families, and empty-nesters who prioritize walkability, central location, and neighborhood character over lot size and square footage.`,
+    amenitiesAndSchools: `### Austin ISD Schools
+
+- Bryker Woods Elementary — a neighborhood anchor and one of Austin ISD's most sought-after elementary schools
+- O. Henry Middle School
+- Austin High School — one of Austin's top-rated public high schools
+
+### Parks & Recreation
+
+- Ramsey Park — pool, playground, basketball, and open green space
+- Shoal Creek Greenbelt — hiking and biking trails
+- Pease District Park — nearby with extensive trails and picnic areas
+- Lady Bird Lake — accessible by bike within minutes
+
+### Shopping & Dining
+
+- West 35th Street corridor — restaurants, shops, and services
+- Jefferson Street — boutiques and local businesses
+- Burnet Road — rapidly developing dining and retail corridor
+- Downtown Austin — under 10 minutes by car or bike`,
+    investmentPotential: `### Scarcity Premium
+
+Bryker Woods encompasses a compact geographic area with a fixed number of lots. This structural scarcity, combined with the 78703 zip code cachet and central location, creates strong long-term appreciation dynamics.
+
+### Renovation & Redevelopment
+
+Many original homes offer significant value-add potential through renovation or tasteful new construction. Buyers frequently purchase older homes at land value and invest in custom rebuilds that command substantial premiums.
+
+### Rental Demand
+
+Proximity to the University of Texas, downtown employers, and central Austin amenities generates consistent rental demand. Well-maintained homes in Bryker Woods command premium rents relative to the broader Austin market.
+
+### Long-Term Appreciation
+
+Bryker Woods has been one of central Austin's strongest appreciating neighborhoods over the past two decades. The combination of limited supply, central location, and strong school demand supports continued value growth.`,
+    relatedCommunities: ["tarrytown", "clarksville", "hyde-park", "zilker-austin"],
+    faqs: [
+      { question: "What is it like living in Bryker Woods Austin?", answer: "Bryker Woods offers a walkable, tree-lined neighborhood with a strong sense of community, excellent schools, and unmatched proximity to downtown Austin and local dining." },
+      { question: "What are home prices in Bryker Woods?", answer: "Prices range from approximately $700K for original bungalows to over $3M for new construction and premium renovations on larger lots." },
+      { question: "Are there luxury homes in Bryker Woods?", answer: "Yes. Modern new construction and high-end renovations in Bryker Woods feature premium finishes, open floor plans, and outdoor living spaces, often exceeding $2M." },
+      { question: "What schools serve Bryker Woods?", answer: "Bryker Woods is served by Austin ISD, with Bryker Woods Elementary, O. Henry Middle School, and Austin High School." },
+      { question: "Is Bryker Woods a good investment area?", answer: "Yes. Limited inventory, central location, top-rated schools, and strong demand from families and professionals support consistent long-term appreciation." },
+      { question: "How does Bryker Woods compare to Tarrytown?", answer: "Bryker Woods offers smaller lots and more walkability to urban amenities, while Tarrytown provides larger lots and Lake Austin proximity. Both share the 78703 zip code and access to Austin High School." }
     ]
   }
 ];

@@ -2,7 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";
-import SchemaMarkup, { createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
+import SchemaMarkup, { createFAQSchema, createBreadcrumbSchema, createPlaceSchema } from "@/components/SchemaMarkup";
 import { seoCommunityPages } from "@/data/seoCommunityData";
 import AboutBlock from "@/components/AboutBlock";
 
@@ -11,59 +11,8 @@ const RealScoutListings = lazy(() => import("@/components/RealScoutListings"));
 
 const SITE_URL = "https://www.echelonpropertygroup.com";
 
-function createPageSchema(name: string, slug: string) {
-  return [
-    {
-      "@context": "https://schema.org",
-      "@type": "RealEstateAgent",
-      "name": "Echelon Property Group",
-      "description": `Expert real estate services in ${name}, Austin, Texas. Luxury homes, investment properties, and personalized guidance.`,
-      "url": `${SITE_URL}/${slug}`,
-      "image": `${SITE_URL}/og-image.png`,
-      "telephone": "+1-512-661-3843",
-      "email": "taylor@echelonpropertygroup.com",
-      "employee": {
-        "@type": "Person",
-        "name": "Taylor Sherwood",
-        "jobTitle": "Certified Luxury Home Marketing Specialist (CLHMS)",
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "2105 East MLK Blvd Ste 227",
-        "addressLocality": "Austin",
-        "addressRegion": "TX",
-        "postalCode": "78702",
-        "addressCountry": "US",
-      },
-      "areaServed": {
-        "@type": "Place",
-        "name": `${name}, Austin, Texas`,
-      },
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Echelon Property Group",
-      "description": `Luxury real estate brokerage serving ${name} and greater Austin, Texas.`,
-      "url": `${SITE_URL}/${slug}`,
-      "image": `${SITE_URL}/og-image.png`,
-      "telephone": "+1-512-661-3843",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "2105 East MLK Blvd Ste 227",
-        "addressLocality": "Austin",
-        "addressRegion": "TX",
-        "postalCode": "78702",
-        "addressCountry": "US",
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 30.2672,
-        "longitude": -97.7431,
-      },
-      "priceRange": "$$$",
-    },
-  ];
+function createPagePlaceSchema(name: string, slug: string, description: string) {
+  return createPlaceSchema({ name, slug, description });
 }
 
 const SEOCommunityPage = () => {
@@ -97,7 +46,7 @@ const SEOCommunityPage = () => {
         description={community.metaDescription}
       />
       <SchemaMarkup schema={createFAQSchema(community.faqs)} />
-      <SchemaMarkup schema={createPageSchema(community.name, community.slug)} />
+      <SchemaMarkup schema={createPagePlaceSchema(community.name, community.slug, community.metaDescription)} />
       <SchemaMarkup schema={createBreadcrumbSchema([
         { name: "Home", url: `${SITE_URL}/` },
         { name: "Communities", url: `${SITE_URL}/communities` },

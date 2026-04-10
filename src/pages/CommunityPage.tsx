@@ -4,7 +4,7 @@ import Navigation from "@/components/Navigation";
 const Footer = lazy(() => import("@/components/Footer"));
 import AboutBlock from "@/components/AboutBlock";
 import SEOHead from "@/components/SEOHead";
-import SchemaMarkup, { createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
+import SchemaMarkup, { createFAQSchema, createBreadcrumbSchema, createPlaceSchema } from "@/components/SchemaMarkup";
 import { communityPages } from "@/data/communityData";
 import { autoLink } from "@/lib/autoLinker";
 
@@ -121,59 +121,12 @@ const neighborhoodInsights: Record<string, { title: string; description: string;
   ],
 };
 
-function createCommunitySchema(community: { name: string; slug: string; metaDescription: string }) {
-  return [
-    {
-      "@context": "https://schema.org",
-      "@type": "RealEstateAgent",
-      "name": "Echelon Property Group",
-      "description": `Expert real estate services in ${community.name}, Austin, Texas. Luxury homes, investment properties, and personalized guidance.`,
-      "url": `${SITE_URL}/communities/${community.slug}`,
-      "image": `${SITE_URL}/og-image.png`,
-      "telephone": "+1-512-661-3843",
-      "email": "taylor@echelonpropertygroup.com",
-      "employee": {
-        "@type": "Person",
-        "name": "Taylor Sherwood",
-        "jobTitle": "Certified Luxury Home Marketing Specialist (CLHMS)"
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "2105 East MLK Blvd Ste 227",
-        "addressLocality": "Austin",
-        "addressRegion": "TX",
-        "postalCode": "78702",
-        "addressCountry": "US"
-      },
-      "areaServed": {
-        "@type": "Place",
-        "name": `${community.name}, Austin, Texas`
-      }
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Echelon Property Group",
-      "description": `Luxury real estate brokerage serving ${community.name} and greater Austin, Texas.`,
-      "url": `${SITE_URL}/communities/${community.slug}`,
-      "image": `${SITE_URL}/og-image.png`,
-      "telephone": "+1-512-661-3843",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "2105 East MLK Blvd Ste 227",
-        "addressLocality": "Austin",
-        "addressRegion": "TX",
-        "postalCode": "78702",
-        "addressCountry": "US"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 30.2672,
-        "longitude": -97.7431
-      },
-      "priceRange": "$$$"
-    }
-  ];
+function createCommunityPlaceSchema(community: { name: string; slug: string; metaDescription: string }) {
+  return createPlaceSchema({
+    name: community.name,
+    slug: community.slug,
+    description: community.metaDescription,
+  });
 }
 
 /** Parses markdown-style [text](/url) links into React elements */
@@ -305,7 +258,7 @@ const CommunityPage = () => {
         canonical={`/communities/${community.slug}`}
       />
       <SchemaMarkup schema={createFAQSchema(allFaqs)} />
-      <SchemaMarkup schema={createCommunitySchema(community)} />
+      <SchemaMarkup schema={createCommunityPlaceSchema(community)} />
       <SchemaMarkup schema={createBreadcrumbSchema([
         { name: "Home", url: `${SITE_URL}/` },
         { name: "Communities", url: `${SITE_URL}/communities` },

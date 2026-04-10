@@ -110,6 +110,10 @@ const neighborhoodInsights: Record<string, { title: string; description: string;
     { title: "Best Luxury Neighborhoods in Austin", description: "Where Old Enfield ranks among Austin's most prestigious addresses.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
     { title: "Tarrytown vs Bryker Woods", description: "How Old Enfield compares to its neighboring 78703 communities.", href: "/blog/tarrytown-vs-bryker-woods" },
   ],
+  "davenport-ranch": [
+    { title: "Best Luxury Neighborhoods in Austin", description: "Where Davenport Ranch ranks among Austin's gated luxury communities.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
+    { title: "Rollingwood vs Westlake Hills", description: "How Davenport Ranch compares to neighboring West Austin enclaves.", href: "/blog/rollingwood-vs-westlake-hills" },
+  ],
 };
 
 function createCommunitySchema(community: { name: string; slug: string; metaDescription: string }) {

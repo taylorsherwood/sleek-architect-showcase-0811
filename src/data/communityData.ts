@@ -24,6 +24,7 @@ import pembertonHeightsImg from "@/assets/communities/pemberton-heights.avif";
 import brykerWoodsImg from "@/assets/communities/bryker-woods.jpg";
 import eastAustinImg from "@/assets/communities/east-austin.jpg";
 import oldEnfieldImg from "@/assets/communities/old-enfield.jpg";
+import davenportRanchImg from "@/assets/communities/davenport-ranch.jpg";
 export interface CommunityFAQ {
   question: string;
   answer: string;
@@ -2417,6 +2418,110 @@ Old Enfield has been one of central Austin's most consistently appreciating neig
       { question: "What schools serve Old Enfield?", answer: "Old Enfield is served by Austin ISD, with Mathews Elementary, O. Henry Middle School, and Austin High School. Several prestigious private schools are also nearby." },
       { question: "Is Old Enfield a good investment area?", answer: "Yes. Irreplaceable location, structural scarcity, and strong demand from affluent buyers support consistent long-term appreciation in Old Enfield." },
       { question: "How does Old Enfield compare to Tarrytown?", answer: "Both share the 78703 zip code and Austin High School zoning. Old Enfield is closer to downtown with a more urban feel, while Tarrytown offers larger lots and Lake Austin proximity." }
+    ]
+  },
+  {
+    slug: "davenport-ranch",
+    name: "Davenport Ranch",
+    heroTitle: "Homes for Sale in Davenport Ranch Austin",
+    metaTitle: "Davenport Ranch Homes for Sale Austin | Echelon Property Group",
+    metaDescription: "Explore luxury homes for sale in Davenport Ranch Austin TX. Gated Hill Country estates with panoramic views, resort-style amenities, and homes from $1.5M to $8M+.",
+    priceRange: "$1.5M – $8M+",
+    image: davenportRanchImg,
+    overview: `Davenport Ranch is one of the most exclusive gated communities in West Austin, situated along the limestone bluffs above Lake Austin in the heart of the Hill Country. Located within the Eanes Independent School District and the coveted 78746 zip code, the neighborhood offers a rare combination of privacy, natural beauty, and proximity to both downtown Austin and the region's finest amenities.
+
+### Gated Exclusivity
+
+Davenport Ranch is a guard-gated community featuring approximately 200 custom estate homes on generous lots ranging from half an acre to over two acres. The gated entry and low-density layout provide an exceptional level of privacy and security that attracts high-net-worth buyers, executives, and families seeking a retreat-like atmosphere within city limits.
+
+### Hill Country Setting
+
+The community is built into the rolling limestone terrain of the Texas Hill Country, offering many homesites dramatic elevation changes, canyon views, and mature native landscaping. Live oaks, juniper, and wildflowers frame the winding streets, creating a natural setting that feels far removed from the city despite being just 15 minutes from downtown Austin.
+
+### Premier Architecture
+
+Davenport Ranch showcases some of West Austin's finest residential architecture. Homes range from elegant Mediterranean and Tuscan-inspired villas to striking contemporary estates with walls of glass, infinity pools, and seamless indoor-outdoor living. Many properties feature resort-caliber amenities including private tennis courts, outdoor kitchens, sport courts, and pool complexes.`,
+    lifestyle: `### Resort-Style Living
+
+Davenport Ranch residents enjoy a lifestyle defined by space, privacy, and natural beauty. The community's generous lot sizes allow for expansive outdoor living — many homes feature resort-style pools, covered patios, sport courts, and manicured grounds that rival boutique hotels.
+
+### Lake Austin Access
+
+The community's proximity to Lake Austin provides easy access to boating, kayaking, paddleboarding, and waterfront dining. Several nearby marinas offer boat storage and lake access, making Davenport Ranch ideal for buyers who want a lake lifestyle without living directly on the water.
+
+### Outdoor Recreation
+
+- Wild Basin Wilderness Preserve — 227 acres of trails and wildlife habitat adjacent to the community
+- Lake Austin — boating, fishing, and waterfront recreation
+- Hill Country hiking and biking trails
+- Nearby Hill Country Galleria and Barton Creek Square for shopping and dining
+
+### Community Character
+
+Davenport Ranch maintains an intimate, neighborly atmosphere despite its exclusivity. The community hosts seasonal events, and the low-density layout encourages outdoor living and casual interactions among residents. Families are drawn to the safe, quiet streets and the exceptional Eanes ISD schools.`,
+    marketInsights: `### Pricing
+
+Homes in Davenport Ranch range from approximately $1.5M for updated homes on standard lots to over $8M for premium estates with panoramic Hill Country or canyon views. The median home price typically falls between $2.5M and $4.5M.
+
+### Market Dynamics
+
+Inventory in Davenport Ranch is perpetually limited due to the community's small footprint and the tendency of homeowners to hold properties long-term. When homes do come to market, they attract significant interest from qualified buyers — particularly properties with views, updated interiors, and resort-caliber outdoor spaces.
+
+### Off-Market Activity
+
+A meaningful percentage of Davenport Ranch transactions occur off-market or through private agent networks. Buyers serious about the community should work with an agent who has established relationships within the neighborhood.
+
+### Buyer Profile
+
+Davenport Ranch attracts senior executives, entrepreneurs, physicians, and established families who prioritize privacy, Eanes ISD schools, and a Hill Country lifestyle with convenient access to downtown Austin.`,
+    amenitiesAndSchools: `### Eanes ISD Schools
+
+- Eanes Elementary
+- Hill Country Middle School
+- Westlake High School — consistently ranked among the top public high schools in Texas
+
+### Private Schools Nearby
+
+- St. Andrew's Episcopal School
+- Regents School of Austin
+- The Khabele School
+
+### Parks & Recreation
+
+- Wild Basin Wilderness Preserve — hiking trails and nature education
+- Lake Austin — boating, paddleboarding, and waterfront dining
+- Emma Long Metropolitan Park — camping, swimming, and lake access
+- Barton Creek Greenbelt — world-class hiking and swimming holes
+
+### Shopping & Dining
+
+- Hill Country Galleria — upscale shopping, dining, and entertainment
+- Barton Creek Square — major retail and dining center
+- Bee Cave and Lakeway — nearby restaurants and services
+- Downtown Austin — 15 minutes via Loop 360`,
+    investmentPotential: `### Eanes ISD Premium
+
+Westlake High School and the Eanes ISD are among the strongest value drivers in the Austin luxury market. Families consistently pay a premium for access to these schools, creating a durable demand floor for Davenport Ranch properties.
+
+### Scarcity & Exclusivity
+
+With approximately 200 homes behind a guarded gate, Davenport Ranch offers a level of exclusivity that few Austin communities can match. This structural scarcity, combined with the community's reputation and location, supports strong long-term appreciation.
+
+### View Premium
+
+Properties with panoramic Hill Country, canyon, or distant lake views command significant premiums and tend to appreciate faster than interior lots. View homesites in Davenport Ranch are among the most coveted in the Austin market.
+
+### Long-Term Appreciation
+
+Davenport Ranch has consistently appreciated in line with or above West Austin's broader luxury market. The combination of Eanes ISD, gated exclusivity, Hill Country setting, and proximity to downtown creates a compelling long-term investment thesis.`,
+    relatedCommunities: ["westlake-hills", "rob-roy", "barton-creek", "bee-cave"],
+    faqs: [
+      { question: "What is it like living in Davenport Ranch Austin?", answer: "Davenport Ranch offers gated, resort-style Hill Country living with panoramic views, generous lots, and the privacy and security of a guard-gated community — all within 15 minutes of downtown Austin." },
+      { question: "What are home prices in Davenport Ranch?", answer: "Prices range from approximately $1.5M for updated homes to over $8M for premium estates with panoramic Hill Country and canyon views." },
+      { question: "Are there luxury homes in Davenport Ranch?", answer: "Yes. Davenport Ranch features custom estates with resort-caliber amenities including infinity pools, sport courts, outdoor kitchens, and walls of glass showcasing Hill Country views." },
+      { question: "What schools serve Davenport Ranch?", answer: "Davenport Ranch is served by the Eanes ISD, including Eanes Elementary, Hill Country Middle School, and Westlake High School." },
+      { question: "Is Davenport Ranch a good investment area?", answer: "Yes. Eanes ISD access, gated exclusivity, and limited inventory support strong long-term appreciation in Davenport Ranch." },
+      { question: "How does Davenport Ranch compare to Rob Roy?", answer: "Both are gated West Austin luxury communities with Hill Country views. Davenport Ranch offers a slightly more intimate setting, while Rob Roy is larger with more varied price points. Both are in Eanes ISD." }
     ]
   }
 ];

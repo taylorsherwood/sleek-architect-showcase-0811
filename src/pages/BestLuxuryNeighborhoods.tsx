@@ -72,13 +72,13 @@ const BestLuxuryNeighborhoods = () => {
                 Why Austin's Luxury Market Stands Out
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Austin, Texas has cemented its position as one of the premier luxury real estate markets in the United States. The city's extraordinary growth—fueled by a world-class technology economy, Texas's favorable tax environment, and an unmatched quality of life—has created a luxury housing market that attracts discerning buyers from across the country and around the globe.
+                Austin, Texas has cemented its position as one of the premier luxury real estate markets in the United States. The city's extraordinary growth—fueled by a world-class technology economy, Texas's favorable tax environment, and an unmatched quality of life—has created a luxury housing market that attracts discerning buyers from across the country and around the globe. For a detailed look at current pricing and trends, see our <Link to="/austin-luxury-real-estate-market-report" className="text-foreground underline hover:text-muted-foreground">Austin luxury real estate market report</Link>.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                What sets Austin apart from other luxury markets is the diversity of lifestyle options available within a single metropolitan area. Buyers can choose from lakefront estates, hilltop mansions with panoramic views, walkable urban neighborhoods, gated golf communities, and sprawling Hill Country ranches—all within 30 minutes of a vibrant downtown core. This breadth of choice, combined with pricing that offers exceptional value relative to coastal markets, makes Austin uniquely compelling for luxury buyers.
+                What sets Austin apart from other luxury markets is the diversity of lifestyle options available within a single metropolitan area. Buyers can choose from lakefront estates on <Link to="/communities/lake-austin" className="text-foreground underline hover:text-muted-foreground">Lake Austin</Link>, hilltop mansions in <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">Westlake Hills</Link>, walkable urban neighborhoods like <Link to="/communities/tarrytown" className="text-foreground underline hover:text-muted-foreground">Tarrytown</Link>, resort-caliber communities like <Link to="/communities/lakeway" className="text-foreground underline hover:text-muted-foreground">Lakeway</Link> on Lake Travis, gated golf enclaves such as <Link to="/communities/barton-creek" className="text-foreground underline hover:text-muted-foreground">Barton Creek</Link>, and sprawling <Link to="/communities/texas-hill-country-estates" className="text-foreground underline hover:text-muted-foreground">Hill Country ranches</Link>—all within 30 minutes of a vibrant downtown core.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                The following guide examines each of Austin's premier luxury neighborhoods in detail, providing the market intelligence and lifestyle insights you need to identify the perfect community for your next home.
+                This breadth of choice, combined with pricing that offers exceptional value relative to coastal markets, makes Austin uniquely compelling for luxury buyers. Whether you're <Link to="/moving-to-austin-texas" className="text-foreground underline hover:text-muted-foreground">relocating to Austin</Link> or expanding your real estate portfolio, the following guide examines each of Austin's premier luxury neighborhoods in detail.
               </p>
             </section>
 
@@ -131,7 +131,7 @@ const BestLuxuryNeighborhoods = () => {
                 <div>
                   <h3 className="text-xl font-display font-medium mb-2">Walkability and Urban Access</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    <Link to="/communities/tarrytown" className="text-foreground underline hover:text-muted-foreground">Tarrytown</Link>, <Link to="/communities/travis-heights" className="text-foreground underline hover:text-muted-foreground">Travis Heights</Link>, and <Link to="/communities/downtown-austin-condos" className="text-foreground underline hover:text-muted-foreground">Downtown Austin</Link> provide the most walkable lifestyles with immediate access to dining, entertainment, and recreation.
+                    <Link to="/communities/tarrytown" className="text-foreground underline hover:text-muted-foreground">Tarrytown</Link>, <Link to="/communities/travis-heights" className="text-foreground underline hover:text-muted-foreground">Travis Heights</Link>, and <Link to="/communities/downtown" className="text-foreground underline hover:text-muted-foreground">Downtown Austin</Link> provide the most walkable lifestyles with immediate access to dining, entertainment, and recreation.
                   </p>
                 </div>
                 <div>
@@ -155,6 +155,9 @@ const BestLuxuryNeighborhoods = () => {
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 Austin's luxury market continues to evolve, shaped by technology-sector growth, in-migration from high-cost states, and the city's expanding cultural and economic footprint. Key trends shaping the market include increasing demand for new construction with modern amenities, growing interest in Hill Country estates driven by remote-work flexibility, and sustained competition for waterfront and Eanes ISD properties.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                The <Link to="/communities/lake-travis" className="text-foreground underline hover:text-muted-foreground">Lake Travis corridor</Link> — including <Link to="/communities/lakeway" className="text-foreground underline hover:text-muted-foreground">Lakeway</Link>, <Link to="/communities/steiner-ranch" className="text-foreground underline hover:text-muted-foreground">Steiner Ranch</Link>, and <Link to="/communities/bee-cave" className="text-foreground underline hover:text-muted-foreground">Bee Cave</Link> — has emerged as a major growth corridor for luxury buyers seeking waterfront access and Lake Travis ISD schools. Established West Austin enclaves like <Link to="/communities/rob-roy" className="text-foreground underline hover:text-muted-foreground">Rob Roy</Link>, <Link to="/communities/davenport-ranch" className="text-foreground underline hover:text-muted-foreground">Davenport Ranch</Link>, and <Link to="/communities/pemberton-heights" className="text-foreground underline hover:text-muted-foreground">Pemberton Heights</Link> maintain steady demand from buyers seeking privacy and prestige.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 For buyers entering the market, working with a specialist who understands these dynamics is essential. Many of Austin's best luxury properties trade off-market through private networks, and competitive situations require strategic positioning and experienced negotiation. Echelon Property Group provides the local expertise, market intelligence, and buyer representation needed to navigate Austin's luxury landscape successfully.
@@ -204,11 +207,13 @@ const BestLuxuryNeighborhoods = () => {
               Explore Austin Real Estate
             </h2>
             <div className="grid sm:grid-cols-2 gap-4">
-              <Link to="/westlake-hills-homes-for-sale" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ WESTLAKE HILLS HOMES FOR SALE</Link>
-              <Link to="/barton-creek-homes-for-sale" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ BARTON CREEK HOMES FOR SALE</Link>
-              <Link to="/lake-austin-waterfront-homes-for-sale" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ LAKE AUSTIN WATERFRONT HOMES</Link>
+              <Link to="/communities/westlake-hills" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ WESTLAKE HILLS</Link>
+              <Link to="/communities/barton-creek" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ BARTON CREEK</Link>
+              <Link to="/communities/lake-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ LAKE AUSTIN WATERFRONT</Link>
+              <Link to="/communities/lakeway" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ LAKEWAY</Link>
               <Link to="/off-market-real-estate-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ OFF-MARKET REAL ESTATE</Link>
               <Link to="/moving-to-austin-texas" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ MOVING TO AUSTIN GUIDE</Link>
+              <Link to="/austin-luxury-real-estate-market-report" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ MARKET REPORT</Link>
               <Link to="/invest" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ INVESTMENT ADVISORY</Link>
             </div>
           </div>

@@ -23,6 +23,7 @@ import steinerRanchImg from "@/assets/communities/steiner-ranch.webp";
 import pembertonHeightsImg from "@/assets/communities/pemberton-heights.avif";
 import brykerWoodsImg from "@/assets/communities/bryker-woods.jpg";
 import eastAustinImg from "@/assets/communities/east-austin.jpg";
+import oldEnfieldImg from "@/assets/communities/old-enfield.jpg";
 export interface CommunityFAQ {
   question: string;
   answer: string;

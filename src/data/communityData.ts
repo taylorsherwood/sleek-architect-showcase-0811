@@ -2465,7 +2465,7 @@ The neighborhood's 360 corridor location provides easy access to multiple retail
 Davenport Ranch is known for its family-friendly character. The neighborhood's quiet streets, large lots, and Eanes ISD schools attract families who prioritize outdoor space, safety, and academic excellence. Children grow up with room to play, and the community maintains a welcoming, established atmosphere.`,
     marketInsights: `### Pricing
 
-Homes in Davenport Ranch range from approximately $1.5M for homes on standard lots needing updates to over $8M for fully renovated or rebuilt estates on premium lots with Hill Country views. The median home price typically falls between $2M and $4M.
+Homes in Davenport Ranch range from approximately $1.5M for homes on standard lots needing updates to over $5M for fully renovated or rebuilt estates on premium lots with Hill Country views. The median home price typically falls between $2M and $4M.
 
 ### Market Dynamics
 
@@ -2521,7 +2521,7 @@ Davenport Ranch has appreciated consistently over multiple decades, supported by
     relatedCommunities: ["westlake-hills", "rob-roy", "barton-creek", "bee-cave"],
     faqs: [
       { question: "What is it like living in Davenport Ranch Austin?", answer: "Davenport Ranch offers spacious Hill Country living on large wooded lots off Loop 360, with Eanes ISD schools and downtown Austin just 15 minutes away." },
-      { question: "What are home prices in Davenport Ranch?", answer: "Prices range from approximately $1.5M for homes needing updates to over $8M for fully renovated estates with Hill Country views on premium lots." },
+      { question: "What are home prices in Davenport Ranch?", answer: "Prices range from approximately $1.5M for homes needing updates to over $5M for fully renovated estates with Hill Country views on premium lots." },
       { question: "Are there luxury homes in Davenport Ranch?", answer: "Yes. Davenport Ranch features custom estates with resort-caliber amenities including pools, sport courts, outdoor kitchens, and panoramic Hill Country views." },
       { question: "What schools serve Davenport Ranch?", answer: "Davenport Ranch is served by the Eanes ISD, including Eanes Elementary, Hill Country Middle School, and Westlake High School." },
       { question: "Is Davenport Ranch a good investment area?", answer: "Yes. Eanes ISD zoning, the 78746 zip code, and limited inventory on large lots support strong long-term appreciation." },

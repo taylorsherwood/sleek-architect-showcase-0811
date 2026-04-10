@@ -1960,7 +1960,7 @@ Bee Caves Road provides upscale dining and retail. The Hill Country Galleria and
 Gated entrances with 24/7 security create a secure, private environment. Community events and neighbor connections foster a strong sense of belonging.`,
     marketInsights: `### Pricing
 
-Prices range from approximately $1.5M for smaller homes in the community to over $10M for trophy estates with significant acreage, views, and waterfront access in the creek and lake sections.
+Prices range from approximately $1.5M for smaller homes in the community to over $20M for trophy estates with significant acreage, views, and waterfront access in the creek and lake sections.
 
 ### Community Sections
 
@@ -2011,7 +2011,7 @@ Rob Roy has demonstrated strong value resilience during market downturns, with p
     relatedCommunities: ["westlake-hills", "barton-creek", "lake-austin", "spanish-oaks"],
     faqs: [
       { question: "What is it like living in Rob Roy Austin?", answer: "Rob Roy offers gated luxury living with panoramic Hill Country views, large lots, architectural distinction, and top Eanes ISD schools." },
-      { question: "What are home prices in Rob Roy?", answer: "Prices range from approximately $1.5M to over $10M for trophy estates with premium views, acreage, or waterfront access." },
+      { question: "What are home prices in Rob Roy?", answer: "Prices range from approximately $1.5M to over $20M for trophy estates with premium views, acreage, or waterfront access." },
       { question: "Are there luxury homes in Rob Roy?", answer: "Yes. Rob Roy is one of Austin's premier luxury communities, featuring custom estates, contemporary masterpieces, and traditional elegance." },
       { question: "What schools serve Rob Roy?", answer: "Rob Roy is served by the Eanes ISD, including top-rated Westlake High School, Hill Country Middle School, and area elementary schools." },
       { question: "Is Rob Roy a good investment area?", answer: "Yes. Limited inventory, gated exclusivity, and Eanes ISD schools support strong long-term appreciation in this premier community." },

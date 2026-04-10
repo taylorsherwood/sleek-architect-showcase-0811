@@ -3,7 +3,7 @@ import lakeAustinImg from "@/assets/community-lake-austin.jpg";
 import tarrytownImg from "@/assets/community-tarrytown.jpg";
 import rollingwoodImg from "@/assets/community-rollingwood.jpg";
 import downtownImg from "@/assets/community-downtown.jpg";
-import drippingSpringsImg from "@/assets/community-dripping-springs.jpg";
+import drippingSpringsImg from "@/assets/communities/dripping-springs.png";
 import hillCountryImg from "@/assets/community-hill-country.jpg";
 import zilkerImg from "@/assets/community-zilker-barton-springs.jpg";
 import westlakeHillsImg from "@/assets/community-westlake-hills.avif";

@@ -2,16 +2,16 @@ import { Link } from "react-router-dom";
 import ScrollReveal from "@/components/ScrollReveal";
 
 const featured = [
-  { name: "Westlake Hills", slug: "westlake-hills", price: "From $1.2M+" },
   { name: "Barton Creek", slug: "barton-creek", price: "From $1.5M+" },
-  { name: "Lake Austin", slug: "lake-austin", price: "From $2M+" },
-  { name: "Tarrytown", slug: "tarrytown", price: "From $800K+" },
-  { name: "Rollingwood", slug: "rollingwood", price: "From $1M+" },
-  { name: "Rob Roy", slug: "rob-roy", price: "From $1.5M+" },
-  { name: "Spanish Oaks", slug: "spanish-oaks", price: "From $3M+" },
-  { name: "Pemberton Heights", slug: "pemberton-heights", price: "From $1.5M+" },
   { name: "Bee Cave", slug: "bee-cave", price: "From $500K+" },
   { name: "Dripping Springs", slug: "dripping-springs", price: "From $500K+" },
+  { name: "Lake Austin", slug: "lake-austin", price: "From $2M+" },
+  { name: "Pemberton Heights", slug: "pemberton-heights", price: "From $1.5M+" },
+  { name: "Rob Roy", slug: "rob-roy", price: "From $1.5M+" },
+  { name: "Rollingwood", slug: "rollingwood", price: "From $1M+" },
+  { name: "Spanish Oaks", slug: "spanish-oaks", price: "From $3M+" },
+  { name: "Tarrytown", slug: "tarrytown", price: "From $800K+" },
+  { name: "Westlake Hills", slug: "westlake-hills", price: "From $1.2M+" },
 ];
 
 const FeaturedCommunities = () => (

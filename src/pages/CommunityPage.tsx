@@ -29,8 +29,29 @@ const neighborhoodInsights: Record<string, { title: string; description: string;
     { title: "Best Waterfront Homes in Austin", description: "A comprehensive look at Austin's lakefront market and what drives value.", href: "/blog/best-waterfront-homes-austin" },
   ],
   "barton-creek": [
+    { title: "Living in Barton Creek: What Luxury Buyers Should Know", description: "An insider's guide to country club lifestyle, Eanes ISD schools, and what makes Barton Creek a perennial luxury favorite.", href: "/blog/living-in-barton-creek-austin" },
     { title: "Luxury Lock-and-Leave in Governor's Hill", description: "Inside a fully reimagined residence in one of Barton Creek's most exclusive gated enclaves.", href: "/blog/2300-barton-creek-blvd" },
     { title: "Best Luxury Neighborhoods in Austin", description: "Where Barton Creek fits within Austin's luxury real estate hierarchy.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
+  ],
+  "pemberton-heights": [
+    { title: "What Makes Pemberton Heights So Desirable?", description: "Distinguished architecture, half-acre lots, and walk-to-downtown convenience in Austin's most prestigious central neighborhood.", href: "/blog/what-makes-pemberton-heights-desirable" },
+    { title: "Best Luxury Neighborhoods in Austin", description: "Pemberton Heights' distinguished architecture and central location.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
+  ],
+  "rob-roy": [
+    { title: "Rob Roy: Inside Austin's Most Exclusive Gated Community", description: "Hilltop estates, panoramic views, and three distinct luxury enclaves in Austin's most private address.", href: "/blog/rob-roy-austin-gated-luxury" },
+    { title: "Best Luxury Neighborhoods in Austin", description: "Rob Roy's position among Austin's most exclusive addresses.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
+  ],
+  "bee-cave": [
+    { title: "Bee Cave vs Lakeway for Luxury Buyers", description: "A side-by-side comparison of two premier Hill Country communities.", href: "/blog/bee-cave-vs-lakeway-luxury-buyers" },
+    { title: "Top Investment Neighborhoods in Austin", description: "Bee Cave's growth trajectory and Lake Travis ISD premium.", href: "/blog/top-investment-neighborhoods-austin" },
+  ],
+  "steiner-ranch": [
+    { title: "Steiner Ranch: Family Living with Lake Austin Views", description: "A comprehensive guide to Austin's most amenity-rich master-planned community.", href: "/blog/steiner-ranch-lake-austin-family-living" },
+    { title: "Top Investment Neighborhoods in Austin", description: "Master-planned communities in Austin's luxury landscape.", href: "/blog/top-investment-neighborhoods-austin" },
+  ],
+  "lakeway": [
+    { title: "A Guide to Lakeway: Waterfront and Golf Course Living", description: "Everything buyers need to know about Lake Travis waterfront estates and resort-caliber living.", href: "/blog/guide-to-lakeway-waterfront-golf-living" },
+    { title: "Bee Cave vs Lakeway for Luxury Buyers", description: "How Lakeway compares to its nearest Hill Country neighbor.", href: "/blog/bee-cave-vs-lakeway-luxury-buyers" },
   ],
   "travis-heights": [
     { title: "Top Investment Neighborhoods in Austin", description: "Travis Heights' walkability and SoCo proximity make it a top investment play.", href: "/blog/top-investment-neighborhoods-austin" },
@@ -75,14 +96,6 @@ const neighborhoodInsights: Record<string, { title: string; description: string;
     { title: "Best Luxury Neighborhoods in Austin", description: "Where Hyde Park's historic character fits in Austin's luxury landscape.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
     { title: "Moving to Austin — Complete Relocation Guide", description: "What makes Hyde Park appealing for newcomers to Austin.", href: "/blog/moving-to-austin-texas-complete-relocation-guide" },
   ],
-  "pemberton-heights": [
-    { title: "Best Luxury Neighborhoods in Austin", description: "Pemberton Heights' distinguished architecture and central location.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
-    { title: "Tarrytown vs Bryker Woods", description: "How Pemberton Heights compares to its neighboring west Austin communities.", href: "/blog/tarrytown-vs-bryker-woods" },
-  ],
-  "bee-cave": [
-    { title: "Top Investment Neighborhoods in Austin", description: "Bee Cave's growth trajectory and Lake Travis ISD premium.", href: "/blog/top-investment-neighborhoods-austin" },
-    { title: "Best Luxury Neighborhoods in Austin", description: "Hill Country communities and what they offer luxury buyers.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
-  ],
   "great-hills": [
     { title: "Best Luxury Neighborhoods in Austin", description: "Northwest Austin's established neighborhoods and their investment appeal.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
     { title: "Austin Luxury Market Forecast", description: "Market trends for northwest Austin's premier neighborhoods.", href: "/blog/austin-luxury-real-estate-market-forecast" },
@@ -90,14 +103,6 @@ const neighborhoodInsights: Record<string, { title: string; description: string;
   "balcones-park": [
     { title: "Best Luxury Neighborhoods in Austin", description: "How Balcones Park offers value in Austin's northwest corridor.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
     { title: "Top Investment Neighborhoods in Austin", description: "Large lots and renovation potential in northwest Austin.", href: "/blog/top-investment-neighborhoods-austin" },
-  ],
-  "rob-roy": [
-    { title: "Rollingwood vs Westlake Hills", description: "How Rob Roy's gated luxury compares to neighboring Westlake communities.", href: "/blog/rollingwood-vs-westlake-hills" },
-    { title: "Best Luxury Neighborhoods in Austin", description: "Rob Roy's position among Austin's most exclusive addresses.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
-  ],
-  "steiner-ranch": [
-    { title: "Top Investment Neighborhoods in Austin", description: "Steiner Ranch's family-oriented value and Lake Austin proximity.", href: "/blog/top-investment-neighborhoods-austin" },
-    { title: "Best Luxury Neighborhoods in Austin", description: "Master-planned communities in Austin's luxury landscape.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
   ],
   "bryker-woods": [
     { title: "Tarrytown vs Bryker Woods", description: "A detailed comparison of two iconic 78703 neighborhoods for lifestyle, pricing, and value.", href: "/blog/tarrytown-vs-bryker-woods" },
@@ -114,10 +119,6 @@ const neighborhoodInsights: Record<string, { title: string; description: string;
   "davenport-ranch": [
     { title: "Best Luxury Neighborhoods in Austin", description: "Where Davenport Ranch ranks among Austin's gated luxury communities.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
     { title: "Rollingwood vs Westlake Hills", description: "How Davenport Ranch compares to neighboring West Austin enclaves.", href: "/blog/rollingwood-vs-westlake-hills" },
-  ],
-  "lakeway": [
-    { title: "Lake Austin vs Lake Travis", description: "Waterfront lifestyles compared — proximity, pricing, and daily experience.", href: "/blog/lake-austin-vs-lake-travis" },
-    { title: "Best Waterfront Homes in Austin", description: "A comprehensive look at Austin's lakefront market and what drives value.", href: "/blog/best-waterfront-homes-austin" },
   ],
 };
 
@@ -347,11 +348,22 @@ const CommunityPage = () => {
               </p>
             </section>
 
+            {/* Echelon Perspective (optional, editorial authority section) */}
+            {community.echelonPerspective && (
+              <section>
+                <p className="text-minimal text-gold mb-3 tracking-[0.2em]">LOCAL INSIGHT</p>
+                <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
+                  Echelon Perspective on {community.name}
+                </h2>
+                <ContentBlock text={community.echelonPerspective} currentSlug={community.slug} />
+              </section>
+            )}
+
             {/* Community Comparison (optional, SEO-optimized) */}
             {community.communityComparison && (
               <section>
                 <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
-                  {community.name} vs Other West Austin Communities
+                  {community.name} vs Other Austin Luxury Communities
                 </h2>
                 <ContentBlock text={community.communityComparison} currentSlug={community.slug} />
               </section>

@@ -1198,5 +1198,299 @@ Water level fluctuations can impact property values, particularly for homes that
     readTime: "6 min read",
     category: "NEIGHBORHOODS",
     image: blogLakeAustinVsLakeTravis
+  },
+  {
+    id: "living-in-barton-creek-austin",
+    title: "Living in Barton Creek: What Luxury Buyers Should Know",
+    metaTitle: "Living in Barton Creek Austin | Echelon Property Group",
+    excerpt: "An insider's guide to Barton Creek — from country club lifestyle and Eanes ISD schools to pricing trends and what makes this gated Austin community a perennial luxury favorite.",
+    content: `## Why Barton Creek Remains Austin's Premier Gated Community
+
+Barton Creek has long occupied a singular position in Austin's luxury real estate landscape. As a gated, master-planned community with four championship golf courses, 24/7 security, and Eanes Independent School District schools, it offers a lifestyle that few communities in the country can match. For buyers considering [Austin's luxury neighborhoods](/best-luxury-neighborhoods-austin), Barton Creek consistently ranks among the most sought-after addresses.
+
+## The Country Club Lifestyle
+
+Daily life in Barton Creek revolves around the Barton Creek Country Club, which provides access to courses designed by Tom Fazio, Ben Crenshaw, and Arnold Palmer. Beyond golf, members enjoy tennis facilities, a full-service spa, multiple dining venues, and a resort-style pool complex. The social infrastructure creates a genuine community atmosphere that extends well beyond the fairways.
+
+## Housing Stock and Pricing
+
+Homes in Barton Creek range from $1.5 million to over $15 million. The community features Spanish Colonial estates, Mediterranean villas, and contemporary builds that leverage the dramatic Hill Country topography. Properties on golf course fairways and those backing the [Barton Creek Greenbelt](/communities/barton-creek) command the highest premiums. With the community approaching build-out, remaining homesites are increasingly rare and valuable.
+
+## Schools and Families
+
+Barton Creek is served by the Eanes ISD, including Barton Creek Elementary, Hill Country Middle School, and Westlake High School. The school district consistently ranks among the top in Texas, making Barton Creek a primary destination for families who prioritize academic excellence alongside luxury living.
+
+## How Barton Creek Compares
+
+Buyers often compare Barton Creek to [Westlake Hills](/communities/westlake-hills), which shares Eanes ISD zoning but offers an ungated, more architecturally diverse setting. [Rob Roy](/communities/rob-roy) provides a smaller, more intimate gated experience with panoramic views. [Pemberton Heights](/communities/pemberton-heights) offers distinguished central Austin estates but trades country club amenities for downtown walkability.
+
+## Investment Outlook
+
+The supply-constrained nature of Barton Creek — combined with country club amenities, top schools, and proximity to Austin's tech economy — creates strong long-term appreciation fundamentals. Properties here have demonstrated consistent value growth even during periods of broader market softening, making Barton Creek a reliable choice for buyers seeking both lifestyle quality and investment security.
+
+## Frequently Asked Questions
+
+### Is Barton Creek a good investment in Austin?
+
+Yes. The combination of gated exclusivity, championship golf, Eanes ISD schools, and approaching build-out creates a supply-constrained market with strong long-term appreciation. Barton Creek has historically outperformed the broader Austin market during both growth and correction periods.
+
+### What is the buyer profile for Barton Creek?
+
+Typical buyers include corporate executives, entrepreneurs, and high-net-worth families drawn to country club living. Many are relocating from major metros and are attracted to the combination of resort amenities, security, and top schools in a single community.
+
+### How does Barton Creek compare to Westlake Hills?
+
+[Westlake Hills](/communities/westlake-hills) shares Eanes ISD schools and Hill Country character but is an ungated community with more architectural diversity. Barton Creek offers country club amenities and 24/7 security that Westlake Hills does not. The choice often depends on whether a buyer prioritizes country club lifestyle or neighborhood autonomy.`,
+    author: "Taylor Sherwood",
+    date: "2026-04-08",
+    readTime: "7 min read",
+    category: "NEIGHBORHOODS",
+    image: heroLuxury
+  },
+  {
+    id: "bee-cave-vs-lakeway-luxury-buyers",
+    title: "Bee Cave vs Lakeway: Which Austin Community Fits Your Lifestyle?",
+    metaTitle: "Bee Cave vs Lakeway for Luxury Buyers | Echelon Property Group",
+    excerpt: "A detailed comparison of Bee Cave and Lakeway — two of Austin's most popular Hill Country communities — covering lifestyle, schools, pricing, and investment potential.",
+    content: `## Two Hill Country Communities, Two Distinct Lifestyles
+
+[Bee Cave](/communities/bee-cave) and [Lakeway](/communities/lakeway) are Austin's two most prominent Hill Country communities, separated by just a few miles along Highway 71 and Ranch Road 620. Both offer Lake Travis ISD schools, Hill Country scenery, and proximity to Austin — but they deliver fundamentally different daily experiences. For buyers weighing their options among [Austin's best luxury neighborhoods](/best-luxury-neighborhoods-austin), understanding these differences is essential.
+
+## Location and Commute
+
+Bee Cave sits approximately 15 miles west of downtown Austin along Highway 71, offering a 20-30 minute commute to central Austin during typical traffic conditions. Lakeway extends further west along the southern shores of Lake Travis, adding 5-10 minutes to the commute in exchange for direct waterfront access. Buyers who prioritize a shorter drive to downtown tend to favor Bee Cave, while those seeking lake lifestyle accept the additional distance.
+
+## Lifestyle and Amenities
+
+Bee Cave's defining feature is the Hill Country Galleria — an upscale outdoor shopping and entertainment center anchoring a growing commercial corridor. Restaurants, medical offices, and professional services create a self-contained suburban infrastructure that reduces the need for downtown trips.
+
+Lakeway offers a resort-oriented lifestyle centered on Lake Travis. Championship golf at Flintrock Falls, full-service marinas, and waterfront dining create an experience more akin to a vacation destination than a suburb. For buyers drawn to boating, swimming, and lakeside recreation, Lakeway is the clear choice.
+
+## Schools
+
+Both communities are served by the Lake Travis Independent School District, including the well-regarded Lake Travis High School. This shared school zoning means school quality is not a differentiating factor between the two communities.
+
+## Housing and Pricing
+
+Bee Cave home prices range from $500K in master-planned communities to over $8M for custom estates on acreage, particularly in nearby [Spanish Oaks](/communities/spanish-oaks). Lakeway ranges from $600K to $5M+, with waterfront properties commanding the highest premiums.
+
+Bee Cave offers more architectural diversity, from master-planned homes to custom estates on Hill Country acreage. Lakeway provides a stronger selection of waterfront and golf course properties. Both communities feature luxury-caliber new construction.
+
+## Investment Comparison
+
+Both communities benefit from Austin's westward growth, strong school district demand, and Hill Country desirability. Bee Cave's commercial corridor continues to expand, attracting new residents and driving appreciation. Lakeway's waterfront scarcity and resort character support premium pricing for lake-access properties.
+
+## Who Should Choose Which?
+
+**Choose Bee Cave if:** You want upscale shopping convenience, a shorter commute to central Austin, and Hill Country space without necessarily needing waterfront access.
+
+**Choose Lakeway if:** Waterfront living on Lake Travis is your priority, you want resort-caliber golf and marina access, and you're comfortable with a slightly longer commute.
+
+## Frequently Asked Questions
+
+### Is Bee Cave or Lakeway better for families?
+
+Both are excellent for families thanks to shared Lake Travis ISD schools. Bee Cave offers more commercial convenience for daily errands, while Lakeway provides more recreational amenities for active families. The choice depends on lifestyle preference.
+
+### Which community appreciates faster?
+
+Both communities have shown strong appreciation. Lakeway waterfront properties tend to appreciate at premium rates due to shoreline scarcity, while Bee Cave benefits from Austin's westward commercial expansion. For a broader view of Austin market dynamics, see our [luxury market report](/austin-luxury-real-estate-market-report).`,
+    author: "Taylor Sherwood",
+    date: "2026-04-07",
+    readTime: "7 min read",
+    category: "NEIGHBORHOODS",
+    image: heroSkyline
+  },
+  {
+    id: "what-makes-pemberton-heights-desirable",
+    title: "What Makes Pemberton Heights So Desirable?",
+    metaTitle: "Pemberton Heights Austin — Why Buyers Love This Neighborhood | Echelon Property Group",
+    excerpt: "Explore what makes Pemberton Heights one of Austin's most prestigious neighborhoods — from its distinguished architecture and half-acre lots to walk-to-downtown convenience.",
+    content: `## Austin's Most Distinguished Central Neighborhood
+
+[Pemberton Heights](/communities/pemberton-heights) occupies a singular position in Austin's luxury landscape. Located just north of Lady Bird Lake and west of Shoal Creek, this neighborhood offers something increasingly rare in Austin: estate-scale living within walking distance of downtown. For buyers exploring [Austin's best luxury neighborhoods](/best-luxury-neighborhoods-austin), Pemberton Heights consistently ranks among the most coveted addresses.
+
+## Architecture and Character
+
+Developed in the 1920s and 1930s, Pemberton Heights features some of the most distinguished residential architecture in Austin, Texas. Georgian colonials, stately traditionals, and Mediterranean-influenced estates sit alongside contemporary rebuilds that honor the neighborhood's established character. The common thread is scale — homes here occupy generous lots with mature live oaks, manicured gardens, and significant setbacks from the street.
+
+## Location Advantage
+
+What makes Pemberton Heights truly exceptional is its central positioning. Residents walk to downtown dining, Whole Foods Market's flagship store, the Hike and Bike Trail along Lady Bird Lake, and Shoal Creek Trail. This combination of estate-scale living and urban accessibility is virtually impossible to replicate in Austin — and it's the primary driver of the neighborhood's enduring appeal.
+
+## Lot Sizes and Privacy
+
+Many Pemberton Heights homes sit on half-acre or larger lots — among the most generous in central Austin. Mature oaks, hedgerows, and thoughtful landscaping create a sense of privacy and permanence that newer neighborhoods struggle to achieve. These irreplaceable lots are a key reason why property values in Pemberton Heights demonstrate such remarkable resilience.
+
+## Buyer Profile
+
+Typical buyers include established professionals, legacy Austin families, C-suite executives, and discerning relocating buyers from major metros. The neighborhood attracts those who want the prestige and privacy of estate living without sacrificing downtown access or cultural proximity.
+
+## How Pemberton Heights Compares
+
+[Tarrytown](/communities/tarrytown) offers a more eclectic, walkable village feel with smaller lots and a stronger commercial corridor. [Westlake Hills](/communities/westlake-hills) provides Eanes ISD schools and Hill Country views in a more suburban setting. [Barton Creek](/communities/barton-creek) offers gated country club amenities. Each serves a different buyer profile — Pemberton Heights is for those who want distinguished central estates above all else.
+
+## Investment Strength
+
+Pemberton Heights has demonstrated remarkable demand resilience across market cycles. Irreplaceable lots, distinguished architecture, and walk-to-downtown convenience create a value floor that few Austin neighborhoods can match. New construction regularly exceeds $500 per square foot, and trophy estates on premium lots command $1,500+ per square foot.
+
+## Frequently Asked Questions
+
+### Is Pemberton Heights walkable?
+
+Yes. Pemberton Heights offers walk-to-downtown convenience, proximity to Lady Bird Lake and the Hike and Bike Trail, and easy access to Shoal Creek Trail. For a luxury neighborhood with estate-scale lots, its walkability is exceptional.
+
+### What school district is Pemberton Heights in?
+
+Pemberton Heights is served by Austin ISD, with homes typically zoned to Mathews Elementary, O. Henry Middle School, and Austin High School. Several prestigious private schools are also nearby.`,
+    author: "Taylor Sherwood",
+    date: "2026-04-06",
+    readTime: "6 min read",
+    category: "NEIGHBORHOODS",
+    image: heroArch
+  },
+  {
+    id: "guide-to-lakeway-waterfront-golf-living",
+    title: "A Guide to Lakeway: Waterfront and Golf Course Living",
+    metaTitle: "Lakeway TX Real Estate Guide | Echelon Property Group",
+    excerpt: "Everything buyers need to know about Lakeway — from Lake Travis waterfront estates and championship golf to schools, pricing, and how it compares to nearby communities.",
+    content: `## Lakeway: Austin's Premier Resort Community
+
+[Lakeway](/communities/lakeway) has established itself as the most comprehensive resort community along Lake Travis, offering a depth of infrastructure that sets it apart from more rural lakefront options in the Austin, Texas area. Championship golf, full-service marinas, and a thriving commercial corridor create a lifestyle that is largely self-sufficient — many residents describe it as vacation living every day.
+
+## Waterfront Living on Lake Travis
+
+Lakeway's defining feature is its extraordinary relationship with [Lake Travis](/communities/lake-travis) — a 63-mile reservoir nestled into the Texas Hill Country. Residents enjoy direct lake access through private boat docks, community marinas, lakefront parks, and miles of shoreline. Neighborhoods like Rough Hollow and Flintrock Falls offer waterfront or water-view homesites with deep-water access.
+
+## Golf and Recreation
+
+Championship golf is central to Lakeway's identity. Flintrock Falls Golf Club and the Lakeway Resort & Spa courses provide resort-caliber play in a Hill Country setting. Beyond golf, residents enjoy pools, fitness facilities, tennis courts, miles of trails, and proximity to the lake's recreational opportunities — kayaking, paddleboarding, swimming, and sunset cruises.
+
+## Schools and Families
+
+Lakeway is served by the Lake Travis ISD, consistently rated among the top school districts in the Austin metro. Lake Travis High School, in particular, draws families seeking strong academics combined with a resort-caliber community environment.
+
+## Pricing and Housing
+
+Prices range from $600K for established homes to $5M+ for waterfront estates with private docks. The housing stock includes master-planned community homes, luxury townhomes, custom builds on premium lots, and waterfront estates with panoramic lake and Hill Country views.
+
+## How Lakeway Compares
+
+[Bee Cave](/communities/bee-cave) is Lakeway's nearest neighbor, offering Hill Country Galleria shopping and a shorter commute to central Austin — but without direct waterfront access. [Steiner Ranch](/communities/steiner-ranch) provides a family-oriented master-planned experience at lower price points with Lake Austin (rather than Lake Travis) proximity. For buyers comparing waterfront options, [Lake Austin](/communities/lake-austin) offers constant water levels and closer downtown access at significantly higher prices.
+
+## Investment Outlook
+
+Lakeway has appreciated consistently over multiple decades, supported by waterfront scarcity, school district demand, resort amenities, and Austin metro growth. Properties with lake access command strong premiums and have historically demonstrated resilience during market corrections.
+
+## Frequently Asked Questions
+
+### Is Lakeway a good place to invest in real estate?
+
+Yes. Waterfront scarcity, Lake Travis ISD demand, and resort amenities support strong long-term appreciation. Select properties also offer vacation rental income potential during peak seasons.
+
+### How far is Lakeway from downtown Austin?
+
+Lakeway is approximately 25 minutes west of downtown Austin via Highway 71 and Ranch Road 620. The commute is manageable for daily work, and many Lakeway residents work remotely or in west Austin tech corridors.`,
+    author: "Taylor Sherwood",
+    date: "2026-04-05",
+    readTime: "7 min read",
+    category: "NEIGHBORHOODS",
+    image: communityLake
+  },
+  {
+    id: "rob-roy-austin-gated-luxury",
+    title: "Rob Roy: Inside Austin's Most Exclusive Gated Community",
+    metaTitle: "Rob Roy Austin TX — Gated Luxury Estates | Echelon Property Group",
+    excerpt: "Discover Rob Roy — Austin's most exclusive gated community featuring hilltop estates, panoramic views, Eanes ISD schools, and three distinct luxury enclaves.",
+    content: `## Austin's Most Exclusive Gated Address
+
+[Rob Roy](/communities/rob-roy) occupies a rarefied position in Austin's luxury market — a collection of gated enclaves along the Loop 360 corridor where panoramic Hill Country views, multi-acre lots, and Eanes ISD schools converge. For buyers seeking maximum privacy and architectural distinction among [Austin's luxury neighborhoods](/best-luxury-neighborhoods-austin), Rob Roy represents the pinnacle of gated estate living.
+
+## Three Distinct Enclaves
+
+Rob Roy is organized into several distinct sections, each offering a unique character:
+
+**Rob Roy** — The original hilltop community featuring estate homes on generous lots with sweeping Hill Country views. Architecture ranges from classic limestone traditionals to contemporary masterpieces oriented toward panoramic western vistas.
+
+**Rob Roy on the Creek** — Properties along the Barton Creek corridor, offering a more secluded, nature-immersed experience with creek frontage, mature tree canopy, and proximity to the Barton Creek Greenbelt.
+
+**Rob Roy on the Lake** — The most exclusive section, with select properties offering Lake Austin waterfront access. These trophy estates combine Rob Roy's gated privacy with the lake lifestyle that defines Austin's ultra-luxury tier.
+
+## Architecture and Homes
+
+Custom-built estates dominate Rob Roy, ranging from $1.5M to over $20M. The community's dramatic topography creates opportunities for homes with sweeping views that are rare even among Austin's premium neighborhoods. Many properties feature resort-style outdoor living areas, infinity pools, motor courts, and guest quarters befitting their estate-scale lots.
+
+## Schools and Location
+
+Rob Roy is served by the Eanes ISD, including top-rated Westlake High School. The community is centrally positioned along Loop 360, providing quick access to both downtown Austin and the [Westlake Hills](/communities/westlake-hills) corridor. Despite its exclusive feel, Rob Roy is surprisingly accessible — a 15-minute drive to downtown.
+
+## How Rob Roy Compares
+
+[Westlake Hills](/communities/westlake-hills) shares Eanes ISD zoning and Hill Country setting but is an ungated community with more architectural diversity. [Barton Creek](/communities/barton-creek) offers country club amenities with golf, spa, and social programming. [Tarrytown](/communities/tarrytown) provides walkable central living — the opposite end of Austin's luxury spectrum. Rob Roy's unique value proposition is maximum privacy and views within a gated, estate-oriented setting.
+
+## Investment Performance
+
+Rob Roy has demonstrated strong value resilience during market downturns, with properties recovering faster than most Austin neighborhoods. The combination of gated exclusivity, limited inventory, Eanes ISD, and trophy-caliber architecture creates a market with persistent demand and minimal downside risk relative to Austin's luxury segment.
+
+## Frequently Asked Questions
+
+### Is Rob Roy gated?
+
+Yes. Rob Roy and its sub-communities are gated with controlled access, providing the privacy and security that define the community's character.
+
+### What makes Rob Roy different from other Austin luxury communities?
+
+Rob Roy offers the combination of gated privacy, panoramic views, and estate-scale lots that no other Austin community matches. While [Barton Creek](/communities/barton-creek) offers country club amenities and [Westlake Hills](/communities/westlake-hills) offers community-wide prestige, Rob Roy delivers maximum seclusion and architectural grandeur.`,
+    author: "Taylor Sherwood",
+    date: "2026-04-03",
+    readTime: "7 min read",
+    category: "NEIGHBORHOODS",
+    image: listing1
+  },
+  {
+    id: "steiner-ranch-lake-austin-family-living",
+    title: "Steiner Ranch: Family Living with Lake Austin Views",
+    metaTitle: "Steiner Ranch Austin — Family Community Guide | Echelon Property Group",
+    excerpt: "A comprehensive guide to Steiner Ranch — Austin's largest master-planned community with resort amenities, Lake Austin access, and homes from $500K to $13M+.",
+    content: `## Austin's Most Amenity-Rich Master-Planned Community
+
+[Steiner Ranch](/communities/steiner-ranch) is one of Austin's largest and most popular master-planned communities, perched above Lake Austin in far northwest Austin, Texas. Spanning approximately 4,600 acres, the community offers a comprehensive lifestyle package — resort-style pools, miles of trails, sports courts, and community centers — combined with Lake Austin proximity and dramatic Hill Country topography. For families exploring [Austin's best neighborhoods](/best-luxury-neighborhoods-austin), Steiner Ranch delivers exceptional value and livability.
+
+## The Commons: Steiner Ranch's Luxury Tier
+
+While much of Steiner Ranch is oriented toward families seeking quality homes in the $500K to $1.5M range, The Commons represents the community's luxury tier. This premium section features custom estates with panoramic Lake Austin and Hill Country views, large lots, and architectural distinction that rivals Austin's most exclusive neighborhoods. Homes in The Commons range from $2M to over $13M, offering a luxury lifestyle within a family-friendly master-planned framework.
+
+## Amenities and Recreation
+
+Steiner Ranch's amenity package is among the most comprehensive in Austin. Multiple resort-style pools serve different sections of the community, complemented by sports courts, fitness facilities, playgrounds, and community event centers. Miles of trails wind through natural Hill Country terrain, and the community's elevation provides stunning sunset views.
+
+Lake Austin proximity adds a recreational dimension that most master-planned communities lack. Kayaking, paddleboarding, and hiking along the lakefront are part of daily life for many Steiner Ranch residents.
+
+## Schools
+
+Steiner Ranch is served by the Leander ISD, with several schools located within the community including Steiner Ranch Elementary and Vandegrift High School. The schools benefit from the community's engaged parent population and strong academic culture.
+
+## How Steiner Ranch Compares
+
+[Bee Cave](/communities/bee-cave) offers Lake Travis ISD schools and Hill Country Galleria shopping at a comparable price point but without Steiner Ranch's comprehensive built-in amenity package. [Lakeway](/communities/lakeway) provides direct Lake Travis access and resort-caliber golf but at generally higher prices. [Lake Travis waterfront](/communities/lake-travis) offers the premium lakeside experience at significantly higher prices. Steiner Ranch is the choice for families who want resort-style living at a more accessible entry point.
+
+## Investment Fundamentals
+
+Comprehensive amenities, Lake Austin proximity, and consistent family demand support stable appreciation across the community. Premium sections like The Commons benefit from view scarcity and custom estate quality. The community's breadth of price points creates liquidity that supports both entry-level and luxury transactions.
+
+## Frequently Asked Questions
+
+### Is Steiner Ranch a good community for families?
+
+Yes. Steiner Ranch is one of Austin's most family-oriented communities, with pools, trails, parks, playgrounds, and strong Leander ISD schools located within the community. The resort-style amenities create a self-contained lifestyle for families of all ages.
+
+### How does Steiner Ranch compare to Bee Cave?
+
+[Bee Cave](/communities/bee-cave) offers Lake Travis ISD and commercial convenience at the Hill Country Galleria, while Steiner Ranch provides more comprehensive built-in amenities and Lake Austin proximity at generally similar price points. Both are popular with families — the choice often depends on school district preference and lifestyle priorities.`,
+    author: "Taylor Sherwood",
+    date: "2026-04-02",
+    readTime: "7 min read",
+    category: "NEIGHBORHOODS",
+    image: listing2
   }
 ];

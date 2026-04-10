@@ -183,6 +183,36 @@ const AustinLuxuryRealEstateMarketReport = () => {
                     Austin's fastest-growing luxury corridor. Remote-work flexibility and infrastructure improvements fuel demand for estate properties on acreage. <Link to="/land-for-sale-austin" className="text-foreground underline hover:text-muted-foreground">Land values</Link> along the Highway 290 corridor continue to climb.
                   </p>
                 </div>
+
+                <div className="border-l-2 border-gold pl-6">
+                  <h3 className="text-xl font-display font-medium mb-2">
+                    <Link to="/communities/rob-roy" className="hover:text-muted-foreground transition-colors">Rob Roy</Link>
+                  </h3>
+                  <p className="text-minimal text-gold mb-2">Median: $3.5M+ | Annual appreciation: 5–8%</p>
+                  <p className="text-muted-foreground leading-relaxed">
+                    One of Austin's most exclusive gated communities with panoramic Hill Country views and Eanes ISD schools. Limited inventory and estate-scale architecture support strong value resilience. Properties recover faster than most Austin neighborhoods during market corrections.
+                  </p>
+                </div>
+
+                <div className="border-l-2 border-gold pl-6">
+                  <h3 className="text-xl font-display font-medium mb-2">
+                    <Link to="/communities/pemberton-heights" className="hover:text-muted-foreground transition-colors">Pemberton Heights</Link>
+                  </h3>
+                  <p className="text-minimal text-gold mb-2">Median: $2.8M+ | Annual appreciation: 6–8%</p>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Austin's most prestigious central neighborhood with irreplaceable half-acre lots and distinguished estate architecture. Walk-to-downtown convenience and mature tree canopy create demand resilience that has proven remarkably consistent across market cycles.
+                  </p>
+                </div>
+
+                <div className="border-l-2 border-gold pl-6">
+                  <h3 className="text-xl font-display font-medium mb-2">
+                    <Link to="/communities/lakeway" className="hover:text-muted-foreground transition-colors">Lakeway and Lake Travis Corridor</Link>
+                  </h3>
+                  <p className="text-minimal text-gold mb-2">Median: $1.2M+ | Annual appreciation: 5–8%</p>
+                  <p className="text-muted-foreground leading-relaxed">
+                    The <Link to="/communities/lake-travis" className="text-foreground underline hover:text-muted-foreground">Lake Travis corridor</Link> has emerged as a major luxury growth area, with <Link to="/communities/lakeway" className="text-foreground underline hover:text-muted-foreground">Lakeway</Link> providing full-service resort infrastructure, <Link to="/communities/bee-cave" className="text-foreground underline hover:text-muted-foreground">Bee Cave</Link> offering Hill Country commercial convenience, and <Link to="/communities/steiner-ranch" className="text-foreground underline hover:text-muted-foreground">Steiner Ranch</Link> delivering family-oriented amenity-rich living. Waterfront scarcity and Lake Travis ISD demand support sustained appreciation across the corridor.
+                  </p>
+                </div>
               </div>
             </section>
 

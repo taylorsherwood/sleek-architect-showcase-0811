@@ -450,8 +450,8 @@ Balcones Park attracts buyers who value space, mature trees, and a sense of neig
     slug: "rob-roy-homes-for-sale",
     name: "Rob Roy",
     metaTitle: "Rob Roy Homes for Sale Austin TX | Echelon Property Group",
-    metaDescription: "Explore luxury homes for sale in Rob Roy Austin TX. Gated Hill Country estates with panoramic views and homes from $1.5M to $10M+.",
-    priceRange: "$1.5M – $10M+",
+    metaDescription: "Explore luxury homes for sale in Rob Roy Austin TX. Gated Hill Country estates with panoramic views and homes from $1.5M to $20M+.",
+    priceRange: "$1.5M – $20M+",
     overview: `Rob Roy is one of Austin's most exclusive luxury neighborhoods, located in the Westlake Hills area along the scenic bluffs of the Capital of Texas Highway (Loop 360) corridor. The community features several gated enclaves including Rob Roy, Rob Roy on the Creek, and Rob Roy on the Lake, each offering distinctive luxury living experiences.
 
 Homes in Rob Roy range from elegant traditional estates to contemporary architectural masterpieces, many situated on generous lots with panoramic Hill Country views, mature oak groves, and extensive outdoor living areas. The community's rolling terrain creates dramatic lot positions that maximize views and privacy.

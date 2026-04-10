@@ -6,8 +6,6 @@ import SchemaMarkup, {
   realEstateAgentSchema,
   localBusinessSchema,
   taylorSherwoodSchema,
-  organizationSchema,
-  websiteSchema,
   createBreadcrumbSchema,
 } from "@/components/SchemaMarkup";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -1230,11 +1228,9 @@ const Index = () => (
       ogTitle="Austin Luxury Real Estate and Investment Advisory | Echelon Property Group"
       ogDescription="Strategic real estate advisory across Austin's most exclusive markets. Off-market deals, investment property, land development, and luxury homes."
     />
-    <SchemaMarkup schema={organizationSchema} />
     <SchemaMarkup schema={realEstateAgentSchema} />
     <SchemaMarkup schema={localBusinessSchema} />
     <SchemaMarkup schema={taylorSherwoodSchema} />
-    <SchemaMarkup schema={websiteSchema} />
     <SchemaMarkup schema={createBreadcrumbSchema([{ name: "Home", url: "https://www.echelonpropertygroup.com/" }])} />
 
     <Navigation />

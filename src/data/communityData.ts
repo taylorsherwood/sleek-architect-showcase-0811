@@ -20,6 +20,7 @@ import lakeTravisImg from "@/assets/communities/lake-travis-waterfront.jpg";
 import muellerImg from "@/assets/communities/mueller.webp";
 import robRoyImg from "@/assets/communities/rob-roy.png";
 import steinerRanchImg from "@/assets/communities/steiner-ranch.webp";
+import pembertonHeightsImg from "@/assets/communities/pemberton-heights.avif";
 export interface CommunityFAQ {
   question: string;
   answer: string;
@@ -1547,7 +1548,7 @@ Central location, UT proximity, and walkability ensure enduring demand across ma
     metaTitle: "Pemberton Heights Homes for Sale | Echelon Property Group",
     metaDescription: "Browse homes for sale in Pemberton Heights Austin TX. Prestigious central neighborhood with mature trees and homes from $1.5M to $10M+.",
     priceRange: "$1.5M – $10M+",
-    image: "",
+    image: pembertonHeightsImg,
     overview: `Pemberton Heights is one of Austin's most prestigious and established residential neighborhoods, located just north of Lady Bird Lake and west of Shoal Creek. Developed in the 1920s and 1930s, Pemberton Heights features wide, tree-lined streets, generous lot sizes, and some of the most distinguished architecture in the city.
 
 ### Architectural Distinction

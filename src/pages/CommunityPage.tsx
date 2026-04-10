@@ -356,7 +356,7 @@ const CommunityPage = () => {
               <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 {community.name} Neighborhood Overview
               </h2>
-              <ContentBlock text={community.overview} />
+              <ContentBlock text={community.overview} currentSlug={community.slug} />
             </section>
 
             {/* Lifestyle */}
@@ -364,7 +364,7 @@ const CommunityPage = () => {
               <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Lifestyle in {community.name}
               </h2>
-              <ContentBlock text={community.lifestyle} />
+              <ContentBlock text={community.lifestyle} currentSlug={community.slug} />
             </section>
 
             {/* Market Insights */}
@@ -372,7 +372,7 @@ const CommunityPage = () => {
               <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 {community.name} Real Estate Market Insights
               </h2>
-              <ContentBlock text={community.marketInsights} />
+              <ContentBlock text={community.marketInsights} currentSlug={community.slug} />
             </section>
 
             {/* Amenities & Schools */}
@@ -380,7 +380,7 @@ const CommunityPage = () => {
               <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Schools and Amenities Near {community.name}
               </h2>
-              <ContentBlock text={community.amenitiesAndSchools} />
+              <ContentBlock text={community.amenitiesAndSchools} currentSlug={community.slug} />
             </section>
 
             {/* Investment */}
@@ -388,7 +388,7 @@ const CommunityPage = () => {
               <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Investment Potential in {community.name}
               </h2>
-              <ContentBlock text={community.investmentPotential} />
+              <ContentBlock text={community.investmentPotential} currentSlug={community.slug} />
               <p className="text-muted-foreground leading-relaxed mt-4">
                 Some homes in {community.name} present strong renovation or value-add opportunities — <Link to="/invest" className="text-foreground underline hover:text-gold transition-colors">explore our investor-focused approach</Link>.
               </p>
@@ -400,7 +400,7 @@ const CommunityPage = () => {
                 <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                   {community.name} vs Other West Austin Communities
                 </h2>
-                <ContentBlock text={community.communityComparison} />
+                <ContentBlock text={community.communityComparison} currentSlug={community.slug} />
               </section>
             )}
 

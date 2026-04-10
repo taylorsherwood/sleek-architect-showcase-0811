@@ -44,6 +44,7 @@ export interface CommunityData {
   marketInsights: string;
   amenitiesAndSchools: string;
   investmentPotential: string;
+  communityComparison?: string;
   relatedCommunities: string[];
   faqs: CommunityFAQ[];
 }

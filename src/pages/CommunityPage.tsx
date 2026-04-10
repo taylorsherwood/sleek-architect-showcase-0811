@@ -432,7 +432,7 @@ const CommunityPage = () => {
                 {allFaqs.map((faq, i) => (
                   <div key={i} className="border-b border-border pb-6">
                     <h3 className="text-lg font-medium text-foreground mb-2">{faq.question}</h3>
-                    <p className="text-muted-foreground leading-relaxed">{faq.answer}</p>
+                    <p className="text-muted-foreground leading-relaxed">{parseInlineLinks(faq.answer)}</p>
                   </div>
                 ))}
               </div>

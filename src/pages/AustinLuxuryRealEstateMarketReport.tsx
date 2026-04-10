@@ -104,7 +104,7 @@ const AustinLuxuryRealEstateMarketReport = () => {
                 </div>
               </div>
               <p className="text-muted-foreground leading-relaxed">
-                Price per square foot in premium neighborhoods ranges from $450 to $800+, with new construction in <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">Westlake Hills</Link> and <Link to="/communities/barton-creek" className="text-foreground underline hover:text-muted-foreground">Barton Creek</Link> commanding the highest premiums. Waterfront properties on <Link to="/lake-austin-waterfront-homes-for-sale" className="text-foreground underline hover:text-muted-foreground">Lake Austin</Link> consistently achieve price points that rival coastal luxury markets.
+                Price per square foot in premium neighborhoods ranges from $450 to $800+, with new construction in <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">Westlake Hills</Link> and <Link to="/communities/barton-creek" className="text-foreground underline hover:text-muted-foreground">Barton Creek</Link> commanding the highest premiums. Waterfront properties on <Link to="/communities/lake-austin" className="text-foreground underline hover:text-muted-foreground">Lake Austin</Link> consistently achieve price points that rival coastal luxury markets. The <Link to="/communities/lake-travis" className="text-foreground underline hover:text-muted-foreground">Lake Travis corridor</Link> — including <Link to="/communities/lakeway" className="text-foreground underline hover:text-muted-foreground">Lakeway</Link> and <Link to="/communities/steiner-ranch" className="text-foreground underline hover:text-muted-foreground">Steiner Ranch</Link> — offers waterfront living at more accessible price points while still commanding strong premiums.
               </p>
             </section>
 
@@ -136,7 +136,7 @@ const AustinLuxuryRealEstateMarketReport = () => {
               <div className="space-y-8">
                 <div className="border-l-2 border-gold pl-6">
                   <h3 className="text-xl font-display font-medium mb-2">
-                    <Link to="/westlake-hills-homes-for-sale" className="hover:text-muted-foreground transition-colors">Westlake Hills</Link>
+                    <Link to="/communities/westlake-hills" className="hover:text-muted-foreground transition-colors">Westlake Hills</Link>
                   </h3>
                   <p className="text-minimal text-gold mb-2">Median: $2.1M+ | Annual appreciation: 6–8%</p>
                   <p className="text-muted-foreground leading-relaxed">
@@ -146,7 +146,7 @@ const AustinLuxuryRealEstateMarketReport = () => {
 
                 <div className="border-l-2 border-gold pl-6">
                   <h3 className="text-xl font-display font-medium mb-2">
-                    <Link to="/lake-austin-waterfront-homes-for-sale" className="hover:text-muted-foreground transition-colors">Lake Austin Waterfront</Link>
+                    <Link to="/communities/lake-austin" className="hover:text-muted-foreground transition-colors">Lake Austin Waterfront</Link>
                   </h3>
                   <p className="text-minimal text-gold mb-2">Median: $5.4M+ | Annual appreciation: 8–12%</p>
                   <p className="text-muted-foreground leading-relaxed">
@@ -156,7 +156,7 @@ const AustinLuxuryRealEstateMarketReport = () => {
 
                 <div className="border-l-2 border-gold pl-6">
                   <h3 className="text-xl font-display font-medium mb-2">
-                    <Link to="/barton-creek-homes-for-sale" className="hover:text-muted-foreground transition-colors">Barton Creek</Link>
+                    <Link to="/communities/barton-creek" className="hover:text-muted-foreground transition-colors">Barton Creek</Link>
                   </h3>
                   <p className="text-minimal text-gold mb-2">Median: $2.5M+ | Annual appreciation: 5–7%</p>
                   <p className="text-muted-foreground leading-relaxed">
@@ -166,7 +166,7 @@ const AustinLuxuryRealEstateMarketReport = () => {
 
                 <div className="border-l-2 border-gold pl-6">
                   <h3 className="text-xl font-display font-medium mb-2">
-                    <Link to="/tarrytown-homes-for-sale" className="hover:text-muted-foreground transition-colors">Tarrytown</Link>
+                    <Link to="/communities/tarrytown" className="hover:text-muted-foreground transition-colors">Tarrytown</Link>
                   </h3>
                   <p className="text-minimal text-gold mb-2">Median: $1.6M+ | Annual appreciation: 6–9%</p>
                   <p className="text-muted-foreground leading-relaxed">
@@ -176,7 +176,7 @@ const AustinLuxuryRealEstateMarketReport = () => {
 
                 <div className="border-l-2 border-gold pl-6">
                   <h3 className="text-xl font-display font-medium mb-2">
-                    <Link to="/dripping-springs-homes-for-sale" className="hover:text-muted-foreground transition-colors">Dripping Springs and Hill Country</Link>
+                    <Link to="/communities/dripping-springs" className="hover:text-muted-foreground transition-colors">Dripping Springs and Hill Country</Link>
                   </h3>
                   <p className="text-minimal text-gold mb-2">Median: $850K+ | Annual appreciation: 8–12%</p>
                   <p className="text-muted-foreground leading-relaxed">

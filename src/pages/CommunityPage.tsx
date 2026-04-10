@@ -390,6 +390,16 @@ const CommunityPage = () => {
               </p>
             </section>
 
+            {/* Community Comparison (optional, SEO-optimized) */}
+            {community.communityComparison && (
+              <section>
+                <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
+                  {community.name} vs Other West Austin Communities
+                </h2>
+                <ContentBlock text={community.communityComparison} />
+              </section>
+            )}
+
             {/* Internal Links */}
             <section className="border border-border p-8">
               <h2 className="text-2xl font-display font-normal text-architectural mb-6">

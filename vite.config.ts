@@ -98,7 +98,6 @@ const extractAll = (file: string, pattern: RegExp): string[] => {
 
 const getAllPrerenderRoutes = () => {
   const communitySlugs = extractAll("communityData.ts", /slug:\s*"([^"]+)"/g);
-  const seoCommunityPaths = extractAll("seoCommunityData.ts", /slug:\s*"([^"]+)"/g);
   const blogIds = [
     ...extractAll("seoBlogPosts.ts", /id:\s*"([^"]+)"/g),
     ...extractAll("blogPosts.ts", /id:\s*"([^"]+)"/g),
@@ -108,7 +107,6 @@ const getAllPrerenderRoutes = () => {
     new Set([
       ...prerenderRoutes,
       ...communitySlugs.map((slug) => `/communities/${slug}`),
-      ...seoCommunityPaths.map((slug) => `/${slug}`),
       ...blogIds.map((id) => `/blog/${id}`),
     ])
   );
@@ -116,7 +114,6 @@ const getAllPrerenderRoutes = () => {
 
 const getSitemapRoutes = () => {
   const communitySlugs = extractAll("communityData.ts", /slug:\s*"([^"]+)"/g);
-  const seoCommunityPaths = extractAll("seoCommunityData.ts", /slug:\s*"([^"]+)"/g);
   const blogIds = [
     ...extractAll("seoBlogPosts.ts", /id:\s*"([^"]+)"/g),
     ...extractAll("blogPosts.ts", /id:\s*"([^"]+)"/g),
@@ -126,7 +123,6 @@ const getSitemapRoutes = () => {
     new Set([
       ...sitemapStaticRoutes,
       ...communitySlugs.map((slug) => `/communities/${slug}`),
-      ...seoCommunityPaths.map((slug) => `/${slug}`),
       ...blogIds.map((id) => `/blog/${id}`),
       // Standalone blog-route editorial pillars
       "/blog/how-to-find-off-market-real-estate-deals-austin-2026",

@@ -175,7 +175,33 @@ function createCommunitySchema(community: { name: string; slug: string; metaDesc
   ];
 }
 
-/** Renders markdown-like content: ### for H3, - for bullets, paragraphs split by \n\n */
+/** Parses markdown-style [text](/url) links into React elements */
+const parseInlineLinks = (text: string): React.ReactNode => {
+  const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+  const parts: React.ReactNode[] = [];
+  let lastIndex = 0;
+  let match;
+  let key = 0;
+
+  while ((match = linkRegex.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      parts.push(text.slice(lastIndex, match.index));
+    }
+    const [, linkText, href] = match;
+    parts.push(
+      <Link key={key++} to={href} className="text-foreground underline decoration-[hsl(var(--gold)/0.4)] hover:text-[hsl(var(--gold))] transition-colors duration-300">
+        {linkText}
+      </Link>
+    );
+    lastIndex = match.index + match[0].length;
+  }
+  if (lastIndex < text.length) {
+    parts.push(text.slice(lastIndex));
+  }
+  return parts.length === 1 && typeof parts[0] === 'string' ? parts[0] : <>{parts}</>;
+};
+
+/** Renders markdown-like content: ### for H3, - for bullets, [text](/url) links, paragraphs split by \n\n */
 const ContentBlock = ({ text }: { text: string }) => {
   const blocks = text.split('\n\n');
   return (
@@ -185,7 +211,7 @@ const ContentBlock = ({ text }: { text: string }) => {
         if (trimmed.startsWith('### ')) {
           return (
             <h3 key={i} className="text-xl md:text-2xl font-display font-medium text-foreground mt-6 mb-2">
-              {trimmed.substring(4)}
+              {parseInlineLinks(trimmed.substring(4))}
             </h3>
           );
         }
@@ -194,13 +220,13 @@ const ContentBlock = ({ text }: { text: string }) => {
           return (
             <ul key={i} className="list-disc list-inside space-y-1.5 text-muted-foreground leading-relaxed ml-2">
               {items.map((item, j) => (
-                <li key={j}>{item.trim().substring(2)}</li>
+                <li key={j}>{parseInlineLinks(item.trim().substring(2))}</li>
               ))}
             </ul>
           );
         }
         return (
-          <p key={i} className="text-muted-foreground leading-relaxed">{trimmed}</p>
+          <p key={i} className="text-muted-foreground leading-relaxed">{parseInlineLinks(trimmed)}</p>
         );
       })}
     </div>

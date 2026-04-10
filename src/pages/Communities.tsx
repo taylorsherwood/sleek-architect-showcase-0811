@@ -52,7 +52,7 @@ const Communities = () => {
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
               {[...communityPages].sort((a, b) => a.name.localeCompare(b.name)).map((community) => {
-                const img = imageMap[community.slug] || community.image;
+                const img = community.image;
                 return (
                   <Link
                     key={community.slug}

@@ -165,6 +165,33 @@ const MovingToAustin = () => {
                     A family-oriented master-planned community with Lake Austin access and Lake Travis ISD schools. Steiner Ranch offers community pools, trails, parks, and a strong neighborhood identity at more accessible price points than many West Austin enclaves.
                   </p>
                 </div>
+
+                <div className="border-l-2 border-gold pl-6">
+                  <h3 className="text-xl font-display font-medium mb-2">
+                    <Link to="/communities/pemberton-heights" className="hover:text-muted-foreground transition-colors">Pemberton Heights</Link>
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    One of Austin's most distinguished central neighborhoods, Pemberton Heights features half-acre lots, mature oaks, and estate-scale architecture minutes from downtown. Homes range from $1.5M to $10M+. Popular with established professionals and families seeking prestigious central living with walk-to-downtown convenience.
+                  </p>
+                </div>
+
+                <div className="border-l-2 border-gold pl-6">
+                  <h3 className="text-xl font-display font-medium mb-2">
+                    <Link to="/communities/rob-roy" className="hover:text-muted-foreground transition-colors">Rob Roy</Link>
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Among Austin's most exclusive gated communities, Rob Roy features hilltop estates with panoramic Hill Country views, Eanes ISD schools, and multiple enclaves including Rob Roy on the Creek and Rob Roy on the Lake. Homes range from $1.5M to $20M+. Appeals to buyers seeking maximum privacy and architectural distinction.
+                  </p>
+                </div>
+
+                <div className="border-l-2 border-gold pl-6">
+                  <h3 className="text-xl font-display font-medium mb-2">
+                    <Link to="/communities/lake-travis" className="hover:text-muted-foreground transition-colors">Lake Travis Waterfront</Link>
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Over 60 miles of Hill Country shoreline with deep-water access, private docks, and resort-style living. Lake Travis waterfront homes range from $1M to $15M+. Buyers from coastal markets appreciate the open-water recreation and dramatic cliff-side homesites that rival lakefront destinations nationwide.
+                  </p>
+                </div>
               </div>
 
               <p className="text-muted-foreground leading-relaxed mt-6">

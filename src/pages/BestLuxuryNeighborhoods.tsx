@@ -21,9 +21,12 @@ const neighborhoods = [
   { name: "Tarrytown", slug: "tarrytown", price: "$800K – $8M+", highlight: "Walkable streets, eclectic architecture, central Austin location", best: "Urban lifestyle buyers, walkability prioritizers, young families" },
   { name: "Rollingwood", slug: "rollingwood", price: "$1M – $5M+", highlight: "Small-town charm, Zilker Park proximity, Eanes ISD schools", best: "Families, outdoor enthusiasts, value-conscious luxury buyers" },
   { name: "Travis Heights", slug: "travis-heights", price: "$600K – $4M+", highlight: "Downtown skyline views, South Congress walkability, creative energy", best: "Creative professionals, empty-nesters, lifestyle-driven buyers" },
-  { name: "Downtown Austin", slug: "downtown-austin-condos", price: "$400K – $10M+", highlight: "High-rise living, walkable entertainment, Lady Bird Lake access", best: "Urban professionals, pied-à-terre buyers, rental investors" },
+  { name: "Downtown Austin", slug: "downtown", price: "$400K – $10M+", highlight: "High-rise living, walkable entertainment, Lady Bird Lake access", best: "Urban professionals, pied-à-terre buyers, rental investors" },
   { name: "Dripping Springs", slug: "dripping-springs", price: "$500K – $10M+", highlight: "Hill Country estates, wine trail proximity, rapid growth", best: "Acreage seekers, remote workers, wine country enthusiasts" },
   { name: "Texas Hill Country", slug: "texas-hill-country-estates", price: "$1M – $30M+", highlight: "Ranch estates, vineyard properties, breathtaking landscapes", best: "Ranch buyers, privacy seekers, conservation-minded investors" },
+  { name: "Lakeway", slug: "lakeway", price: "$600K – $5M+", highlight: "Lake Travis waterfront, championship golf, resort-caliber amenities", best: "Lake lifestyle buyers, families seeking Lake Travis ISD, retirees" },
+  { name: "Rob Roy", slug: "rob-roy", price: "$1.5M – $8M+", highlight: "Gated estate community, Eanes ISD, Hill Country privacy", best: "Privacy-focused buyers, executives, established families" },
+  { name: "Steiner Ranch", slug: "steiner-ranch", price: "$500K – $2.5M+", highlight: "Master-planned community, Lake Austin access, Lake Travis ISD", best: "Families, outdoor enthusiasts, value-driven luxury buyers" },
 ];
 
 const BestLuxuryNeighborhoods = () => {

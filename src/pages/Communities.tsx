@@ -92,7 +92,7 @@ const Communities = () => {
         <div className="container mx-auto px-5 sm:px-6">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl sm:text-2xl sm:text-4xl md:text-5xl font-display font-normal text-architectural mb-6 sm:mb-8">
-              Comparing Austin's Top Luxury Neighborhoods
+              Comparing Austin's <br /> Top Neighborhoods
             </h2>
             <div className="space-y-8">
               <div>

@@ -22,6 +22,7 @@ import robRoyImg from "@/assets/communities/rob-roy.png";
 import steinerRanchImg from "@/assets/communities/steiner-ranch.webp";
 import pembertonHeightsImg from "@/assets/communities/pemberton-heights.avif";
 import brykerWoodsImg from "@/assets/communities/bryker-woods.jpg";
+import eastAustinImg from "@/assets/communities/east-austin.jpg";
 export interface CommunityFAQ {
   question: string;
   answer: string;
@@ -2206,6 +2207,110 @@ Bryker Woods has been one of central Austin's strongest appreciating neighborhoo
       { question: "What schools serve Bryker Woods?", answer: "Bryker Woods is served by Austin ISD, with Bryker Woods Elementary, O. Henry Middle School, and Austin High School." },
       { question: "Is Bryker Woods a good investment area?", answer: "Yes. Limited inventory, central location, top-rated schools, and strong demand from families and professionals support consistent long-term appreciation." },
       { question: "How does Bryker Woods compare to Tarrytown?", answer: "Bryker Woods offers smaller lots and more walkability to urban amenities, while Tarrytown provides larger lots and Lake Austin proximity. Both share the 78703 zip code and access to Austin High School." }
+    ]
+  },
+  {
+    slug: "east-austin",
+    name: "East Austin",
+    heroTitle: "Homes for Sale in East Austin",
+    metaTitle: "East Austin Homes for Sale | Echelon Property Group",
+    metaDescription: "Explore homes for sale in East Austin TX. From modern new builds to creative bungalows, discover one of Austin's most dynamic neighborhoods from $400K to $3M+.",
+    priceRange: "$400K – $3M+",
+    image: eastAustinImg,
+    overview: `East Austin has emerged as one of the most dynamic and culturally vibrant neighborhoods in the city, stretching east of Interstate 35 from the Colorado River north through the 78702 and 78722 zip codes. Once an overlooked corridor, the area has undergone a dramatic transformation over the past decade, becoming a magnet for artists, entrepreneurs, young professionals, and families drawn to its creative energy, walkability, and architectural diversity.
+
+### A Neighborhood Reborn
+
+East Austin's revitalization has been one of the most significant real estate stories in Texas. Former industrial lots and modest postwar homes have given way to striking modern residences, mixed-use developments, boutique hotels, and acclaimed restaurants — all while retaining the eclectic street art, live music venues, and independent businesses that define the area's character.
+
+### Architectural Diversity
+
+The housing stock in East Austin is remarkably varied. Buyers will find everything from renovated 1920s Craftsman bungalows and mid-century ranch homes to cutting-edge contemporary new construction featuring clean lines, metal cladding, and walls of glass. Many lots feature ADUs (accessory dwelling units) or casitas, adding both rental income potential and flexible living arrangements.
+
+### Cultural Capital
+
+East Austin is the epicenter of Austin's creative economy. The neighborhood is home to dozens of galleries, studios, music venues, and maker spaces. Annual events like the East Austin Studio Tour draw visitors from across the country, and the area's culinary scene — anchored by food trucks, taco joints, and James Beard–nominated restaurants — is among the most exciting in the South.`,
+    lifestyle: `### Walkability & Urban Living
+
+East Austin offers a distinctly urban lifestyle that's rare in the Austin market. Residents walk or bike to coffee shops, restaurants, bars, and boutiques along East Cesar Chavez, East 6th Street, East 7th Street, and East 11th Street. The neighborhood's flat terrain and grid street pattern make cycling practical and enjoyable.
+
+### Dining & Nightlife
+
+East Austin's culinary scene is legendary. From acclaimed restaurants like Suerte, Comedor, and Dai Due to beloved taco trucks and neighborhood bars, the area offers an unmatched density of dining options. The East 6th Street entertainment district provides vibrant nightlife without the congestion of downtown.
+
+### Arts & Culture
+
+- East Austin Studio Tour — annual open-studio event showcasing hundreds of local artists
+- Canopy — creative arts complex with galleries, studios, and event spaces
+- Numerous murals and street art installations throughout the neighborhood
+- Live music venues including Hotel Vegas, The White Horse, and Dozen Street
+
+### Outdoor Recreation
+
+- Roy G. Guerrero Colorado River Park — 400+ acres of trails, disc golf, and river access
+- Boggy Creek Greenbelt — neighborhood trail system
+- Lady Bird Lake hike-and-bike trail — accessible from the southern edge of the neighborhood
+- Festival Beach — waterfront park along the Colorado River`,
+    marketInsights: `### Pricing
+
+Homes in East Austin range from approximately $400K for smaller bungalows and condos to over $3M for premium new construction on larger lots. The median home price in the core 78702 zip code typically falls between $700K and $1.2M.
+
+### Market Dynamics
+
+East Austin has experienced some of the highest appreciation rates in the Austin metro over the past decade. While the pace has moderated from the frenzy of 2020–2022, demand remains strong due to the neighborhood's proximity to downtown, cultural amenities, and continued infrastructure investment.
+
+### New Construction
+
+A significant portion of East Austin's inventory is new construction. Developers have been active throughout the neighborhood, delivering modern homes that command premium pricing — often $500+ per square foot for high-end builds.
+
+### Buyer Profile
+
+East Austin attracts a diverse buyer pool including creative professionals, tech workers, investors, and young families who prioritize walkability, culture, and proximity to downtown over suburban lot sizes and traditional neighborhood structures.`,
+    amenitiesAndSchools: `### Austin ISD Schools
+
+- Blackshear Elementary — Fine Arts Academy
+- Martin Middle School
+- Eastside Early College High School
+- Austin High School and LBJ Early College High School (depending on location)
+
+### Parks & Recreation
+
+- Roy G. Guerrero Colorado River Park — trails, river access, and disc golf
+- Boggy Creek Greenbelt — neighborhood trails
+- Festival Beach — waterfront park
+- Chicano Park and Pan Am Recreation Center
+- Lady Bird Lake hike-and-bike trail
+
+### Shopping & Dining
+
+- East Cesar Chavez corridor — restaurants, cafés, and boutiques
+- East 6th Street — entertainment and dining district
+- East 11th and 12th Streets — emerging retail and restaurant corridor
+- Plaza Saltillo — mixed-use transit-oriented development with shops and restaurants
+- Mueller retail district — nearby with H-E-B, restaurants, and services`,
+    investmentPotential: `### Appreciation Trajectory
+
+East Austin has been one of the top-appreciating neighborhoods in the entire Austin metro, with values in many blocks increasing 200–400% over the past 15 years. While appreciation has normalized, the area's fundamentals remain strong.
+
+### Rental Income
+
+East Austin's proximity to downtown, UT campus, and the convention center creates robust rental demand. Properties with ADUs or casitas can generate significant supplemental income, and short-term rental demand remains high in the core 78702 area.
+
+### Development Pipeline
+
+Continued investment in infrastructure — including the Project Connect light rail with a planned East Austin station, improved streetscaping, and mixed-use developments — signals ongoing institutional confidence in the area's growth trajectory.
+
+### Long-Term Outlook
+
+East Austin's transformation from overlooked corridor to one of Austin's most desirable neighborhoods is well established. The combination of cultural capital, downtown proximity, transit investment, and continued development supports strong long-term value appreciation.`,
+    relatedCommunities: ["mueller", "travis-heights", "downtown", "hyde-park"],
+    faqs: [
+      { question: "What is it like living in East Austin?", answer: "East Austin offers a vibrant, walkable urban lifestyle with world-class dining, a thriving arts scene, and a creative energy that's unlike any other Austin neighborhood." },
+      { question: "What are home prices in East Austin?", answer: "Prices range from approximately $400K for smaller homes and condos to over $3M for premium new construction on larger lots in the core 78702 zip code." },
+      { question: "Are there luxury homes in East Austin?", answer: "Yes. Modern new construction in East Austin features striking contemporary architecture, premium finishes, and innovative design, often exceeding $1.5M." },
+      { question: "What schools serve East Austin?", answer: "East Austin is served by Austin ISD, including Blackshear Fine Arts Academy, Martin Middle School, and several high school options depending on location." },
+      { question: "Is East Austin a good investment area?", answer: "Yes. East Austin has seen some of the highest appreciation rates in the metro, supported by downtown proximity, cultural amenities, and planned light rail transit." },
+      { question: "How does East Austin compare to Mueller?", answer: "East Austin offers more architectural variety and cultural grit, while Mueller provides a master-planned, family-oriented environment. Both are on the east side and share proximity to downtown." }
     ]
   }
 ];

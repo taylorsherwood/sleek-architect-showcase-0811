@@ -102,6 +102,10 @@ const neighborhoodInsights: Record<string, { title: string; description: string;
     { title: "Tarrytown vs Bryker Woods", description: "A detailed comparison of two iconic 78703 neighborhoods for lifestyle, pricing, and value.", href: "/blog/tarrytown-vs-bryker-woods" },
     { title: "Best Luxury Neighborhoods in Austin", description: "Where Bryker Woods fits within Austin's central luxury landscape.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
   ],
+  "east-austin": [
+    { title: "Top Investment Neighborhoods in Austin", description: "Why East Austin's appreciation trajectory makes it one of Austin's top investment plays.", href: "/blog/top-investment-neighborhoods-austin" },
+    { title: "Best Luxury Neighborhoods in Austin", description: "How East Austin's modern architecture is reshaping Austin's luxury landscape.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
+  ],
 };
 
 function createCommunitySchema(community: { name: string; slug: string; metaDescription: string }) {

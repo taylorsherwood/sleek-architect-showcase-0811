@@ -25,6 +25,7 @@ import brykerWoodsImg from "@/assets/communities/bryker-woods.jpg";
 import eastAustinImg from "@/assets/communities/east-austin.jpg";
 import oldEnfieldImg from "@/assets/communities/old-enfield.jpg";
 import davenportRanchImg from "@/assets/communities/davenport-ranch.jpg";
+import lakewayImg from "@/assets/communities/lakeway.jpg";
 export interface CommunityFAQ {
   question: string;
   answer: string;
@@ -2526,6 +2527,132 @@ Davenport Ranch has appreciated consistently over multiple decades, supported by
       { question: "What schools serve Davenport Ranch?", answer: "Davenport Ranch is served by the Eanes ISD, including Eanes Elementary, Hill Country Middle School, and Westlake High School." },
       { question: "Is Davenport Ranch a good investment area?", answer: "Yes. Eanes ISD zoning, the 78746 zip code, and limited inventory on large lots support strong long-term appreciation." },
       { question: "Where is Davenport Ranch located?", answer: "Davenport Ranch is located off Capital of Texas Highway (Loop 360) in the 78746 zip code, approximately 15 minutes west of downtown Austin in the heart of the Hill Country." }
+    ]
+  },
+  {
+    slug: "lakeway",
+    name: "Lakeway",
+    heroTitle: "Homes for Sale in Lakeway TX",
+    metaTitle: "Lakeway Homes for Sale | Echelon Property Group",
+    metaDescription: "Explore luxury homes for sale in Lakeway TX. Waterfront estates on Lake Travis, resort-style amenities, top-rated Lake Travis ISD schools, and homes from $600K to $5M+.",
+    priceRange: "$600K – $5M+",
+    image: lakewayImg,
+    overview: `Lakeway is a premier Hill Country community located along the southern shores of Lake Travis, approximately 25 minutes west of downtown Austin. Spanning roughly 11 square miles, this incorporated city offers a resort-caliber lifestyle with Lake Travis waterfront access, championship golf courses, and nationally recognized schools within the Lake Travis Independent School District.
+
+### Lake Travis Living
+
+Lakeway's defining feature is its extraordinary relationship with Lake Travis — a 63-mile-long reservoir nestled into the Texas Hill Country. Residents enjoy direct lake access through private boat docks, community marinas, lakefront parks, and miles of shoreline. The Lakeway Marina and Rough Hollow Marina provide full-service boat storage, fuel, and launch facilities, while neighborhoods like The Hills of Lakeway, Rough Hollow, and Flintrock Falls offer waterfront or water-view homesites.
+
+### Planned Community Heritage
+
+Originally developed as a resort community in the 1960s, Lakeway has evolved into one of the Austin metro's most sought-after residential destinations. The community blends its resort heritage with modern master-planned neighborhoods, each offering distinct character — from the established estates along Live Oak Golf Course to the contemporary luxury of Rough Hollow and Flintrock Falls. Tree-lined streets, manicured landscaping, and thoughtful community planning define the Lakeway experience.
+
+### Strategic Location
+
+Lakeway sits along State Highway 71 and Ranch Road 620, providing direct access to the broader Austin metro while maintaining a distinct small-city identity. Residents benefit from a thriving local commercial corridor with upscale dining, boutique shopping, and essential services — reducing the need to travel into Austin for daily errands. The Bee Cave commercial hub, including the Hill Country Galleria, is minutes away.`,
+    lifestyle: `### Resort-Caliber Lakefront Living
+
+Lakeway delivers a true resort lifestyle without the vacation price tag. Lake Travis is the community's centerpiece — residents boat, kayak, paddleboard, swim, and fish throughout the year. Sunset cruises, cliff jumping at Pace Bend Park, and waterfront dining at The Oasis or Sundancer Grill are part of the daily fabric.
+
+### Golf & Recreation
+
+- **Live Oak Golf Course** — 18-hole championship course within the original Lakeway resort development
+- **Flintrock Falls Golf Course** — Jack Nicklaus-designed course with dramatic Hill Country elevation changes
+- **Yaupon Golf Course** — additional course serving Lakeway residents
+- **Lakeway Swim Center** — Olympic-size pool and aquatic facility
+- **Lakeway Activity Center** — fitness, tennis, pickleball, and community events
+
+### Outdoor Adventure
+
+- **Lake Travis** — 63 miles of waterway for boating, fishing, swimming, and watersports
+- **Pace Bend Park** — 1,400 acres of cliffs, swimming, camping, and trails along Lake Travis
+- **Hamilton Pool Preserve** — one of Texas's most iconic natural swimming holes, a short drive from Lakeway
+- **Balcones Canyonlands Preserve** — thousands of acres of Hill Country hiking and wildlife habitat nearby
+- **Turkey Bend Recreation Area** — quiet lake access and hiking adjacent to Lakeway
+
+### Dining & Shopping
+
+Lakeway's own commercial corridor along Lohmans Crossing and Ranch Road 620 features a growing selection of restaurants, cafes, and services. The Hill Country Galleria in nearby Bee Cave provides upscale retail, dining, and entertainment. Downtown Austin's renowned culinary scene is approximately 25 minutes east.
+
+### Community Culture
+
+Lakeway maintains a welcoming, family-oriented culture with an active calendar of community events, farmers markets, holiday celebrations, and charity galas. The Lakeway Heritage Center preserves the community's resort-era history. Lakeway's small-city governance provides residents with responsive local services, a dedicated police department, and community-focused planning.`,
+    marketInsights: `### Pricing
+
+Lakeway's real estate market spans a broad range — from well-maintained homes in established sections starting around $600K to waterfront estates and custom builds on premium lots exceeding $5M. The median home price typically falls between $800K and $1.5M, with lakefront and golf-course properties commanding significant premiums.
+
+### Market Dynamics
+
+Lakeway benefits from consistent demand driven by Lake Travis ISD schools, waterfront lifestyle appeal, and the community's resort-caliber amenities. Inventory varies by sub-community — established neighborhoods like The Hills of Lakeway and Lakeway Proper see steady turnover, while waterfront estates and Rough Hollow custom lots trade less frequently and at premium valuations.
+
+### New Construction & Master-Planned Growth
+
+Several master-planned communities within and adjacent to Lakeway — including Rough Hollow, Flintrock Falls, and Serene Hills — continue to add luxury inventory. New construction ranges from contemporary Hill Country designs to Mediterranean-inspired estates, often featuring smart-home technology, energy-efficient systems, and outdoor living spaces designed for the Texas climate.
+
+### Buyer Profile
+
+Lakeway attracts a diverse buyer pool including young families drawn by Lake Travis ISD schools, executives and remote workers seeking a lake lifestyle with Austin proximity, retirees downsizing from larger metros, and investors acquiring vacation or short-term rental properties near the lake.`,
+    amenitiesAndSchools: `### Lake Travis ISD Schools
+
+- Lake Travis Elementary
+- Lakeway Elementary
+- Hudson Bend Middle School
+- Lake Travis Middle School
+- Lake Travis High School — consistently ranked among the top public high schools in Central Texas, with strong academics, award-winning athletics, and robust extracurricular programs
+
+### Private Schools Nearby
+
+- Summit Christian Academy
+- Lake Hills Church School
+- Bee Cave Montessori
+
+### Parks & Recreation
+
+- Lake Travis — 63 miles of waterway with multiple public and private access points
+- Lakeway City Park — trails, playgrounds, sports fields, and community pavilions
+- Canyonlands Park — nature trails and Hill Country greenspace
+- Pace Bend Park — 1,400 acres of waterfront recreation on Lake Travis
+- Hamilton Pool Preserve — iconic natural swimming hole nearby
+
+### Golf Courses
+
+- Live Oak Golf Course
+- Flintrock Falls (Jack Nicklaus Design)
+- Yaupon Golf Course
+
+### Shopping & Dining
+
+- Lakeway Town Center — local shops, restaurants, and services
+- Hill Country Galleria — upscale retail and dining in Bee Cave
+- The Oasis on Lake Travis — iconic lakefront dining and entertainment
+- Bee Cave commercial corridor — groceries, boutiques, and everyday services`,
+    investmentPotential: `### Lake Travis Waterfront Premium
+
+Waterfront properties on Lake Travis command significant premiums and have historically appreciated at rates well above the broader Austin market. Direct lake access with a private boat dock remains one of the most coveted — and limited — property features in the Austin metro.
+
+### Lake Travis ISD Demand
+
+Lake Travis High School is one of the highest-ranked public high schools in Central Texas. Families consistently pay a premium for Lake Travis ISD zoning, creating a durable demand floor for Lakeway properties regardless of broader market conditions.
+
+### Tourism & Short-Term Rental Potential
+
+Lakeway's resort heritage and Lake Travis proximity create strong short-term rental demand. Properties with lake views or access perform particularly well on vacation rental platforms, especially during Austin's event seasons (SXSW, ACL, F1) and summer lake season. Investors should verify current Lakeway STR regulations before purchasing.
+
+### Growth Corridor
+
+The Highway 71 and Ranch Road 620 corridors continue to attract commercial and residential development, driving population growth and infrastructure investment. Major employers including Apple, Tesla, and Oracle draw workers who seek Hill Country living within commuting distance — Lakeway is a primary beneficiary of this trend.
+
+### Long-Term Appreciation
+
+Lakeway has appreciated consistently over multiple decades, supported by waterfront scarcity, Lake Travis ISD demand, resort-caliber amenities, and Austin metro growth. These fundamentals support continued strong long-term value growth.`,
+    relatedCommunities: ["lake-travis", "bee-cave", "steiner-ranch", "spanish-oaks"],
+    faqs: [
+      { question: "What is it like living in Lakeway TX?", answer: "Lakeway offers a resort-caliber Hill Country lifestyle with Lake Travis waterfront access, championship golf, top-rated Lake Travis ISD schools, and a thriving local dining and shopping scene — all within 25 minutes of downtown Austin." },
+      { question: "What are home prices in Lakeway?", answer: "Prices range from approximately $600K for established homes to over $5M for waterfront estates and custom builds on premium lots. The median home price typically falls between $800K and $1.5M." },
+      { question: "Are there luxury waterfront homes in Lakeway?", answer: "Yes. Lakeway features waterfront estates on Lake Travis with private boat docks, resort-style pools, and panoramic lake and Hill Country views." },
+      { question: "What schools serve Lakeway?", answer: "Lakeway is served by the Lake Travis ISD, including Lake Travis Elementary, Hudson Bend Middle School, Lake Travis Middle School, and Lake Travis High School." },
+      { question: "Is Lakeway a good investment area?", answer: "Yes. Waterfront scarcity, Lake Travis ISD demand, resort amenities, and Austin metro growth support strong long-term appreciation. Select properties also offer short-term rental income potential." },
+      { question: "Where is Lakeway located?", answer: "Lakeway is located along the southern shores of Lake Travis, approximately 25 minutes west of downtown Austin via Highway 71 and Ranch Road 620." }
     ]
   }
 ];

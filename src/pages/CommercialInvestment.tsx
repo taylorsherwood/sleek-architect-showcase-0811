@@ -91,7 +91,7 @@ const CommercialInvestment = () => {
       <section className="relative pt-32 pb-12">
         <div className="absolute inset-0">
           <CommercialHeroVideo />
-          <div className="absolute inset-0 bg-foreground/70" />
+          <div className="absolute inset-0 bg-foreground/50" />
         </div>
         <div className="relative container mx-auto px-6">
           <div className="max-w-xl py-16">

@@ -66,16 +66,7 @@ const CommercialInvestment = () => {
       {/* Hero */}
       <section className="relative pt-32 pb-12">
         <div className="absolute inset-0">
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="auto"
-            className="w-full h-full object-cover"
-          >
-            <source src="/videos/commercial-hero.mp4" type="video/mp4" />
-          </video>
+          <CommercialHeroVideo />
           <div className="absolute inset-0 bg-foreground/70" />
         </div>
         <div className="relative container mx-auto px-6">

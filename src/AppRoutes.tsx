@@ -33,7 +33,7 @@ const LandForSaleAustin = lazy(() => import("@/pages/LandForSaleAustin"));
 const SearchPage = lazy(() => import("@/pages/Search"));
 const LandPage = lazy(() => import("@/pages/Land"));
 const PastTransactions = lazy(() => import("@/pages/PastTransactions"));
-const SEOCommunityPage = lazy(() => import("@/pages/SEOCommunityPage"));
+
 const BestNeighborhoodsAustin = lazy(() => import("@/pages/BestNeighborhoodsAustin"));
 const AustinMultifamilyReport2026 = lazy(() => import("@/pages/AustinMultifamilyReport2026"));
 const connectImport = () => import("@/pages/Connect");
@@ -107,23 +107,23 @@ const AppRoutes = () => {
           <Route path="/off-market-real-estate-austin" element={<OffMarketRealEstateAustin />} />
           <Route path="/austin-land-development-opportunities" element={<AustinLandDevelopmentOpportunities />} />
           <Route path="/austin-luxury-real-estate-market-report" element={<AustinLuxuryRealEstateMarketReport />} />
-          <Route path="/westlake-hills-homes-for-sale" element={<SEOCommunityPage />} />
-          <Route path="/tarrytown-homes-for-sale" element={<SEOCommunityPage />} />
-          <Route path="/rollingwood-homes-for-sale" element={<SEOCommunityPage />} />
-          <Route path="/clarksville-homes-for-sale" element={<SEOCommunityPage />} />
-          <Route path="/barton-creek-homes-for-sale" element={<SEOCommunityPage />} />
-          <Route path="/lake-austin-waterfront-homes-for-sale" element={<SEOCommunityPage />} />
-          <Route path="/lake-travis-waterfront-homes-for-sale" element={<SEOCommunityPage />} />
-          <Route path="/mueller-homes-for-sale" element={<SEOCommunityPage />} />
-          <Route path="/zilker-homes-for-sale" element={<SEOCommunityPage />} />
-          <Route path="/hyde-park-homes-for-sale" element={<SEOCommunityPage />} />
-          <Route path="/pemberton-heights-homes-for-sale" element={<SEOCommunityPage />} />
-          <Route path="/dripping-springs-homes-for-sale" element={<SEOCommunityPage />} />
-          <Route path="/bee-cave-homes-for-sale" element={<SEOCommunityPage />} />
-          <Route path="/great-hills-homes-for-sale" element={<SEOCommunityPage />} />
-          <Route path="/balcones-park-homes-for-sale" element={<SEOCommunityPage />} />
-          <Route path="/rob-roy-homes-for-sale" element={<SEOCommunityPage />} />
-          <Route path="/steiner-ranch-homes-for-sale" element={<SEOCommunityPage />} />
+          <Route path="/westlake-hills-homes-for-sale" element={<Navigate to="/communities/westlake-hills" replace />} />
+          <Route path="/tarrytown-homes-for-sale" element={<Navigate to="/communities/tarrytown" replace />} />
+          <Route path="/rollingwood-homes-for-sale" element={<Navigate to="/communities/rollingwood" replace />} />
+          <Route path="/clarksville-homes-for-sale" element={<Navigate to="/communities/clarksville" replace />} />
+          <Route path="/barton-creek-homes-for-sale" element={<Navigate to="/communities/barton-creek" replace />} />
+          <Route path="/lake-austin-waterfront-homes-for-sale" element={<Navigate to="/communities/lake-austin" replace />} />
+          <Route path="/lake-travis-waterfront-homes-for-sale" element={<Navigate to="/communities/lake-travis" replace />} />
+          <Route path="/mueller-homes-for-sale" element={<Navigate to="/communities/mueller" replace />} />
+          <Route path="/zilker-homes-for-sale" element={<Navigate to="/communities/zilker-austin" replace />} />
+          <Route path="/hyde-park-homes-for-sale" element={<Navigate to="/communities/hyde-park" replace />} />
+          <Route path="/pemberton-heights-homes-for-sale" element={<Navigate to="/communities/pemberton-heights" replace />} />
+          <Route path="/dripping-springs-homes-for-sale" element={<Navigate to="/communities/dripping-springs" replace />} />
+          <Route path="/bee-cave-homes-for-sale" element={<Navigate to="/communities/bee-cave" replace />} />
+          <Route path="/great-hills-homes-for-sale" element={<Navigate to="/communities/great-hills" replace />} />
+          <Route path="/balcones-park-homes-for-sale" element={<Navigate to="/communities/balcones-park" replace />} />
+          <Route path="/rob-roy-homes-for-sale" element={<Navigate to="/communities/rob-roy" replace />} />
+          <Route path="/steiner-ranch-homes-for-sale" element={<Navigate to="/communities/steiner-ranch" replace />} />
           <Route path="/sitemap" element={<Sitemap />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -457,7 +457,7 @@ Balcones Park attracts buyers who value space, mature trees, and a sense of neig
 Homes in Rob Roy range from elegant traditional estates to contemporary architectural masterpieces, many situated on generous lots with panoramic Hill Country views, mature oak groves, and extensive outdoor living areas. The community's rolling terrain creates dramatic lot positions that maximize views and privacy.
 
 Rob Roy is served by the Eanes Independent School District and offers proximity to both downtown Austin and the Westlake Hills corridor. The community's gated security, large lot sizes, and architectural quality have made it a preferred address for Austin's most discerning buyers for decades.`,
-    market: `Rob Roy represents one of Austin's premier luxury markets. Prices range from approximately $1.5M for smaller homes in the community to over $10M for trophy estates with significant acreage, views, and waterfront access in the creek and lake sections.
+    market: `Rob Roy represents one of Austin's premier luxury markets. Prices range from approximately $1.5M for smaller homes in the community to over $20M for trophy estates with significant acreage, views, and waterfront access in the creek and lake sections.
 
 The different sections of Rob Roy cater to different buyer profiles. Rob Roy proper features hilltop estates with Hill Country views. Rob Roy on the Creek offers properties along Barton Creek. Rob Roy on the Lake provides Lake Austin waterfront access.
 
@@ -469,7 +469,7 @@ The panoramic Hill Country views available from Rob Roy's hilltop lots are among
 Rob Roy appeals to established professionals, executives, and high-net-worth buyers who value privacy, security, and architectural distinction in one of Austin's most prestigious addresses.`,
     faqs: [
       { question: "What is it like living in Rob Roy Austin?", answer: "Rob Roy offers gated luxury living with panoramic Hill Country views, large lots, architectural distinction, and top Eanes ISD schools." },
-      { question: "What are home prices in Rob Roy?", answer: "Prices range from approximately $1.5M to over $10M for trophy estates with premium views, acreage, or waterfront access." },
+      { question: "What are home prices in Rob Roy?", answer: "Prices range from approximately $1.5M to over $20M for trophy estates with premium views, acreage, or waterfront access." },
       { question: "Are there luxury homes in Rob Roy?", answer: "Yes. Rob Roy is one of Austin's premier luxury communities, featuring custom estates, contemporary masterpieces, and traditional elegance." },
       { question: "What schools serve Rob Roy?", answer: "Rob Roy is served by the Eanes ISD, including top-rated Westlake High School, Hill Country Middle School, and area elementary schools." },
       { question: "Is Rob Roy a good investment area?", answer: "Yes. Limited inventory, gated exclusivity, and Eanes ISD schools support strong long-term appreciation in this premier community." },

@@ -2024,7 +2024,7 @@ Rob Roy has demonstrated strong value resilience during market downturns, with p
     metaTitle: "Steiner Ranch Homes for Sale | Echelon Property Group",
     metaDescription: "Browse homes for sale in Steiner Ranch Austin TX. Master-planned community with Lake Austin access, trails, and homes from $500K to $3M+.",
     priceRange: "$500K – $3M+",
-    image: "",
+    image: steinerRanchImg,
     overview: `Steiner Ranch is one of Austin's largest and most popular master-planned communities, situated along the bluffs above Lake Austin in the far northwest section of the city. The community spans approximately 4,600 acres and offers a comprehensive range of amenities.
 
 ### Housing Variety

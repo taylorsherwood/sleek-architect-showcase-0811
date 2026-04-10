@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useRef, useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createFAQSchema, createBreadcrumbSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
@@ -47,6 +47,30 @@ const faqs = [
   },
 ];
 
+const CommercialHeroVideo = () => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+    const onPlay = () => { video.playbackRate = 0.55; };
+    video.addEventListener("playing", onPlay, { once: true });
+    return () => video.removeEventListener("playing", onPlay);
+  }, []);
+  return (
+    <video
+      ref={videoRef}
+      autoPlay
+      muted
+      loop
+      playsInline
+      preload="auto"
+      className="w-full h-full object-cover"
+    >
+      <source src="/videos/commercial-hero.mp4" type="video/mp4" />
+    </video>
+  );
+};
+
 const CommercialInvestment = () => {
   return (
     <div className="min-h-screen bg-background">
@@ -66,16 +90,7 @@ const CommercialInvestment = () => {
       {/* Hero */}
       <section className="relative pt-32 pb-12">
         <div className="absolute inset-0">
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="auto"
-            className="w-full h-full object-cover"
-          >
-            <source src="/videos/commercial-hero.mp4" type="video/mp4" />
-          </video>
+          <CommercialHeroVideo />
           <div className="absolute inset-0 bg-foreground/70" />
         </div>
         <div className="relative container mx-auto px-6">

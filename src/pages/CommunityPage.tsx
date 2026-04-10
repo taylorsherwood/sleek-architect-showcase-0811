@@ -104,14 +104,6 @@ const neighborhoodInsights: Record<string, { title: string; description: string;
     { title: "Best Luxury Neighborhoods in Austin", description: "How Balcones Park offers value in Austin's northwest corridor.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
     { title: "Top Investment Neighborhoods in Austin", description: "Large lots and renovation potential in northwest Austin.", href: "/blog/top-investment-neighborhoods-austin" },
   ],
-  "rob-roy": [
-    { title: "Rollingwood vs Westlake Hills", description: "How Rob Roy's gated luxury compares to neighboring Westlake communities.", href: "/blog/rollingwood-vs-westlake-hills" },
-    { title: "Best Luxury Neighborhoods in Austin", description: "Rob Roy's position among Austin's most exclusive addresses.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
-  ],
-  "steiner-ranch": [
-    { title: "Top Investment Neighborhoods in Austin", description: "Steiner Ranch's family-oriented value and Lake Austin proximity.", href: "/blog/top-investment-neighborhoods-austin" },
-    { title: "Best Luxury Neighborhoods in Austin", description: "Master-planned communities in Austin's luxury landscape.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
-  ],
   "bryker-woods": [
     { title: "Tarrytown vs Bryker Woods", description: "A detailed comparison of two iconic 78703 neighborhoods for lifestyle, pricing, and value.", href: "/blog/tarrytown-vs-bryker-woods" },
     { title: "Best Luxury Neighborhoods in Austin", description: "Where Bryker Woods fits within Austin's central luxury landscape.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
@@ -127,10 +119,6 @@ const neighborhoodInsights: Record<string, { title: string; description: string;
   "davenport-ranch": [
     { title: "Best Luxury Neighborhoods in Austin", description: "Where Davenport Ranch ranks among Austin's gated luxury communities.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
     { title: "Rollingwood vs Westlake Hills", description: "How Davenport Ranch compares to neighboring West Austin enclaves.", href: "/blog/rollingwood-vs-westlake-hills" },
-  ],
-  "lakeway": [
-    { title: "Lake Austin vs Lake Travis", description: "Waterfront lifestyles compared — proximity, pricing, and daily experience.", href: "/blog/lake-austin-vs-lake-travis" },
-    { title: "Best Waterfront Homes in Austin", description: "A comprehensive look at Austin's lakefront market and what drives value.", href: "/blog/best-waterfront-homes-austin" },
   ],
 };
 

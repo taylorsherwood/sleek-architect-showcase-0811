@@ -4,7 +4,7 @@ import Navigation from "@/components/Navigation";
 const Footer = lazy(() => import("@/components/Footer"));
 const Testimonials = lazy(() => import("@/components/Testimonials"));
 import SEOHead from "@/components/SEOHead";
-import SchemaMarkup, { realEstateAgentSchema, createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
+import SchemaMarkup, { realEstateAgentSchema, localBusinessSchema, createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
 import { formatPhoneNumber, getTimestamp } from "@/lib/formUtils";
@@ -98,6 +98,7 @@ const Contact = () => {
         description="Explore Contact with Echelon Property Group. View homes, market insights, and real estate opportunities in Austin, Texas."
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
+      <SchemaMarkup schema={localBusinessSchema} />
       <SchemaMarkup schema={createBreadcrumbSchema([
         { name: "Home", url: "https://www.echelonpropertygroup.com/" },
         { name: "Contact", url: "https://www.echelonpropertygroup.com/contact" }

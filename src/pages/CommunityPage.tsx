@@ -6,6 +6,7 @@ import AboutBlock from "@/components/AboutBlock";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import { communityPages } from "@/data/communityData";
+import { autoLink } from "@/lib/autoLinker";
 
 const SITE_URL = "https://www.echelonpropertygroup.com";
 

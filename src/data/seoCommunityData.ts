@@ -533,4 +533,27 @@ The neighborhood's mix of architectural styles — from charming original bungal
       { question: "Is Bryker Woods a good investment area?", answer: "Yes. Limited inventory, central location, and strong school demand support consistent long-term appreciation in Bryker Woods." },
     ],
   },
+  {
+    slug: "east-austin-homes-for-sale",
+    name: "East Austin",
+    metaTitle: "East Austin Homes for Sale | Echelon Property Group",
+    metaDescription: "Explore homes for sale in East Austin TX. Modern new builds, creative bungalows, and investment opportunities in one of Austin's most dynamic neighborhoods from $400K to $3M+.",
+    priceRange: "$400K – $3M+",
+    overview: `East Austin is one of the most dynamic and culturally vibrant neighborhoods in Austin, stretching east of Interstate 35 through the 78702 and 78722 zip codes. The area has undergone a dramatic transformation over the past decade, becoming a magnet for artists, entrepreneurs, young professionals, and families drawn to its creative energy, walkability, and architectural diversity.
+
+The housing stock is remarkably varied — from renovated 1920s Craftsman bungalows and mid-century ranch homes to cutting-edge contemporary new construction with clean lines, metal cladding, and walls of glass. Many lots feature ADUs or casitas, adding rental income potential and flexible living arrangements. East Austin is the epicenter of Austin's creative economy, home to dozens of galleries, studios, music venues, and an acclaimed culinary scene anchored by James Beard–nominated restaurants.`,
+    market: `East Austin has experienced some of the highest appreciation rates in the Austin metro over the past decade. Median home prices in the core 78702 zip code typically fall between $700K and $1.2M, with premium new construction commanding $500+ per square foot.
+
+Inventory includes a significant share of new construction alongside renovated originals. Demand remains strong due to downtown proximity, cultural amenities, and continued infrastructure investment including the planned Project Connect light rail. The buyer pool is diverse — creative professionals, tech workers, investors, and young families who prioritize walkability and culture over suburban lot sizes.`,
+    whyBuyersLove: `Buyers love East Austin for its walkable urban lifestyle and creative energy. Residents walk or bike to acclaimed restaurants, coffee shops, galleries, and live music venues along East Cesar Chavez, East 6th Street, and East 11th Street. The neighborhood's flat terrain and grid streets make cycling practical.
+
+The dining scene is legendary — from Suerte and Comedor to beloved taco trucks and neighborhood bars. Outdoor amenities include Roy G. Guerrero Colorado River Park with 400+ acres of trails and river access, Boggy Creek Greenbelt, and direct access to the Lady Bird Lake hike-and-bike trail. The area's architectural diversity allows buyers to find everything from charming original bungalows to striking modern builds.`,
+    faqs: [
+      { question: "What is it like living in East Austin?", answer: "East Austin offers a vibrant, walkable urban lifestyle with world-class dining, a thriving arts scene, and creative energy unlike any other Austin neighborhood." },
+      { question: "What are home prices in East Austin?", answer: "Prices range from approximately $400K for smaller homes and condos to over $3M for premium new construction on larger lots." },
+      { question: "Are there luxury homes in East Austin?", answer: "Yes. Modern new construction features striking contemporary architecture, premium finishes, and innovative design, often exceeding $1.5M." },
+      { question: "What schools serve East Austin?", answer: "East Austin is served by Austin ISD, including Blackshear Fine Arts Academy, Martin Middle School, and several high school options." },
+      { question: "Is East Austin a good investment area?", answer: "Yes. East Austin has seen some of the highest appreciation rates in the metro, supported by downtown proximity, cultural amenities, and planned light rail transit." },
+    ],
+  },
 ];

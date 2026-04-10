@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useCallback, lazy, Suspense } from "react";
+import FeaturedCommunities from "@/components/FeaturedCommunities";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";
@@ -689,6 +690,8 @@ const Sell = () => {
 
       {/* ── Thin gold divider ── */}
       <div className="h-[2px] bg-gold" />
+
+      <FeaturedCommunities />
 
       <Suspense fallback={<div className="min-h-[100px]" />}><Footer /></Suspense>
     </div>);

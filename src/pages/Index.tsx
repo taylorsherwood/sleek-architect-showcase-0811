@@ -22,6 +22,7 @@ import echelonWatermark from "@/assets/echelon-watermark.png";
 import echelonWatermarkLogo from "@/assets/echelon-watermark-logo.png";
 import ScrollingCredibilityStrip from "@/components/ScrollingCredibilityStrip";
 import ExpertiseSection from "@/components/ExpertiseSection";
+import FeaturedCommunities from "@/components/FeaturedCommunities";
 
 const Footer = lazy(() => import("@/components/Footer"));
 
@@ -1264,6 +1265,7 @@ const Index = () => (
     <div className="parallax-break" style={{ backgroundImage: "url('/images/parallax-lakefront.jpg')" }} aria-hidden="true" />
 
     <CommunitiesSection />
+    <FeaturedCommunities />
 
     {/* Parallax break — luxury interior */}
     <div className="parallax-break" style={{ backgroundImage: "url('/images/parallax-interior.jpg')" }} aria-hidden="true" />

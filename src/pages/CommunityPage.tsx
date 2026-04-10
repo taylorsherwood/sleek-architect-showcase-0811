@@ -58,6 +58,46 @@ const neighborhoodInsights: Record<string, { title: string; description: string;
     { title: "Best Luxury Neighborhoods in Austin", description: "How Cat Mountain and Northwest Hills serve Austin's luxury market.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
     { title: "Austin Luxury Market Forecast", description: "Market trends shaping pricing in Austin's western neighborhoods.", href: "/blog/austin-luxury-real-estate-market-forecast" },
   ],
+  "clarksville": [
+    { title: "Best Luxury Neighborhoods in Austin", description: "Where Clarksville fits within Austin's walkable luxury landscape.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
+    { title: "Tarrytown vs Bryker Woods", description: "How Clarksville's closest neighbors compare for central Austin living.", href: "/blog/tarrytown-vs-bryker-woods" },
+  ],
+  "lake-travis": [
+    { title: "Lake Austin vs Lake Travis", description: "Waterfront lifestyles compared — proximity, pricing, and daily experience.", href: "/blog/lake-austin-vs-lake-travis" },
+    { title: "Best Waterfront Homes in Austin", description: "A comprehensive look at Austin's lakefront market and what drives value.", href: "/blog/best-waterfront-homes-austin" },
+  ],
+  "mueller": [
+    { title: "Best Luxury Neighborhoods in Austin", description: "How Mueller's walkable urban design compares to Austin's traditional luxury neighborhoods.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
+    { title: "Top Investment Neighborhoods in Austin", description: "Mueller's master-planned value proposition for investors.", href: "/blog/top-investment-neighborhoods-austin" },
+  ],
+  "hyde-park": [
+    { title: "Best Luxury Neighborhoods in Austin", description: "Where Hyde Park's historic character fits in Austin's luxury landscape.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
+    { title: "Moving to Austin — Complete Relocation Guide", description: "What makes Hyde Park appealing for newcomers to Austin.", href: "/blog/moving-to-austin-texas-complete-relocation-guide" },
+  ],
+  "pemberton-heights": [
+    { title: "Best Luxury Neighborhoods in Austin", description: "Pemberton Heights' distinguished architecture and central location.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
+    { title: "Tarrytown vs Bryker Woods", description: "How Pemberton Heights compares to its neighboring west Austin communities.", href: "/blog/tarrytown-vs-bryker-woods" },
+  ],
+  "bee-cave": [
+    { title: "Top Investment Neighborhoods in Austin", description: "Bee Cave's growth trajectory and Lake Travis ISD premium.", href: "/blog/top-investment-neighborhoods-austin" },
+    { title: "Best Luxury Neighborhoods in Austin", description: "Hill Country communities and what they offer luxury buyers.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
+  ],
+  "great-hills": [
+    { title: "Best Luxury Neighborhoods in Austin", description: "Northwest Austin's established neighborhoods and their investment appeal.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
+    { title: "Austin Luxury Market Forecast", description: "Market trends for northwest Austin's premier neighborhoods.", href: "/blog/austin-luxury-real-estate-market-forecast" },
+  ],
+  "balcones-park": [
+    { title: "Best Luxury Neighborhoods in Austin", description: "How Balcones Park offers value in Austin's northwest corridor.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
+    { title: "Top Investment Neighborhoods in Austin", description: "Large lots and renovation potential in northwest Austin.", href: "/blog/top-investment-neighborhoods-austin" },
+  ],
+  "rob-roy": [
+    { title: "Rollingwood vs Westlake Hills", description: "How Rob Roy's gated luxury compares to neighboring Westlake communities.", href: "/blog/rollingwood-vs-westlake-hills" },
+    { title: "Best Luxury Neighborhoods in Austin", description: "Rob Roy's position among Austin's most exclusive addresses.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
+  ],
+  "steiner-ranch": [
+    { title: "Top Investment Neighborhoods in Austin", description: "Steiner Ranch's family-oriented value and Lake Austin proximity.", href: "/blog/top-investment-neighborhoods-austin" },
+    { title: "Best Luxury Neighborhoods in Austin", description: "Master-planned communities in Austin's luxury landscape.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
+  ],
 };
 
 function createCommunitySchema(community: { name: string; slug: string; metaDescription: string }) {
@@ -152,6 +192,8 @@ const slugAliases: Record<string, string> = {
   "cat-mountain": "cat-mountain-northwest-hills",
   "northwest-hills": "cat-mountain-northwest-hills",
   "downtown-austin-condos": "downtown",
+  "downtown-austin": "downtown",
+  "lake-travis-waterfront": "lake-travis",
 };
 
 const CommunityPage = () => {

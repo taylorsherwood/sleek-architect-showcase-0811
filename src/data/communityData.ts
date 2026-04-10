@@ -713,7 +713,7 @@ Investors should monitor local regulations regarding short-term rentals, as the 
   },
   {
     slug: "texas-hill-country-estates",
-    name: "Texas Hill Country Estates",
+    name: "Texas Hill Country",
     heroTitle: "Texas Hill Country Estate Homes for Sale",
     metaTitle: "Hill Country Estates for Sale | Echelon Property Group",
     metaDescription: "Explore luxury ranch estates and homes in the Texas Hill Country near Austin. Sprawling acreage, vineyard properties, and views from $1M to $30M+.",

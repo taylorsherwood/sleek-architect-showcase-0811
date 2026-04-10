@@ -38,7 +38,7 @@ const sections = [
       { to: "/communities/downtown-austin-condos", label: "Downtown Austin Condos" },
       { to: "/communities/travis-heights", label: "Travis Heights Homes for Sale" },
       { to: "/communities/cat-mountain-northwest-hills", label: "Cat Mountain & Northwest Hills" },
-      { to: "/communities/texas-hill-country-estates", label: "Texas Hill Country Estates" },
+      { to: "/communities/texas-hill-country-estates", label: "Texas Hill Country" },
     ],
   },
   {

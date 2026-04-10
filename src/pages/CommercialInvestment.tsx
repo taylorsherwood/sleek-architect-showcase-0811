@@ -49,25 +49,62 @@ const faqs = [
 
 const CommercialHeroVideo = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const hasPlayedOnce = useRef(false);
+
+  // Set playback speed
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
-    const onPlay = () => { video.playbackRate = 0.55; };
-    video.addEventListener("playing", onPlay, { once: true });
+    const onPlay = () => { video.playbackRate = 0.75; };
+    video.addEventListener("playing", onPlay);
     return () => video.removeEventListener("playing", onPlay);
   }, []);
+
+  // Re-trigger playback when user scrolls back to top
+  useEffect(() => {
+    const section = sectionRef.current;
+    const video = videoRef.current;
+    if (!section || !video) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && hasPlayedOnce.current) {
+          video.currentTime = 0;
+          video.play().catch(() => {});
+        }
+      },
+      { threshold: 0.4 }
+    );
+    observer.observe(section);
+    return () => observer.disconnect();
+  }, []);
+
+  // Mark first play complete when video ends; pause on last frame
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+    const onEnded = () => {
+      hasPlayedOnce.current = true;
+      video.pause();
+    };
+    video.addEventListener("ended", onEnded);
+    return () => video.removeEventListener("ended", onEnded);
+  }, []);
+
   return (
-    <video
-      ref={videoRef}
-      autoPlay
-      muted
-      loop
-      playsInline
-      preload="auto"
-      className="w-full h-full object-cover"
-    >
-      <source src="/videos/commercial-hero.mp4" type="video/mp4" />
-    </video>
+    <div ref={sectionRef} className="w-full h-full">
+      <video
+        ref={videoRef}
+        autoPlay
+        muted
+        playsInline
+        preload="auto"
+        className="w-full h-full object-cover"
+      >
+        <source src="/videos/commercial-hero.mp4" type="video/mp4" />
+      </video>
+    </div>
   );
 };
 

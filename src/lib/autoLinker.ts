@@ -28,7 +28,7 @@ const COMMUNITY_TARGETS: LinkTarget[] = [
   { patterns: ["Travis Heights"], href: "/communities/travis-heights" },
   { patterns: ["Downtown Austin"], href: "/communities/downtown" },
   { patterns: ["Dripping Springs"], href: "/communities/dripping-springs" },
-  { patterns: ["Hill Country Estates", "Texas Hill Country Estates"], href: "/communities/texas-hill-country-estates" },
+  { patterns: ["Hill Country Estates", "Texas Hill Country"], href: "/communities/texas-hill-country-estates" },
   { patterns: ["Lake Austin"], href: "/communities/lake-austin" },
   { patterns: ["Zilker"], href: "/communities/zilker-austin" },
   { patterns: ["Cat Mountain", "Northwest Hills"], href: "/communities/cat-mountain-northwest-hills" },

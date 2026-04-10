@@ -170,6 +170,7 @@ const MovingToAustin = () => {
               <p className="text-muted-foreground leading-relaxed mt-6">
                 For a comprehensive comparison of all premium neighborhoods, see our guide to the <Link to="/best-luxury-neighborhoods-austin" className="text-foreground underline hover:text-muted-foreground">best luxury neighborhoods in Austin</Link>, or explore the latest pricing data in the <Link to="/austin-luxury-real-estate-market-report" className="text-foreground underline hover:text-muted-foreground">Austin luxury real estate market report</Link>.
               </p>
+            </section>
 
             <section>
               <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">

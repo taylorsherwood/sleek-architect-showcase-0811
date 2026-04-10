@@ -20,6 +20,7 @@ import lakeTravisImg from "@/assets/communities/lake-travis-waterfront.jpg";
 import muellerImg from "@/assets/communities/mueller.webp";
 import robRoyImg from "@/assets/communities/rob-roy.png";
 import steinerRanchImg from "@/assets/communities/steiner-ranch.webp";
+import pembertonHeightsImg from "@/assets/communities/pemberton-heights.avif";
 export interface CommunityFAQ {
   question: string;
   answer: string;

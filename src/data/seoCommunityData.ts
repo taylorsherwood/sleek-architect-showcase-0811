@@ -556,4 +556,27 @@ The dining scene is legendary — from Suerte and Comedor to beloved taco trucks
       { question: "Is East Austin a good investment area?", answer: "Yes. East Austin has seen some of the highest appreciation rates in the metro, supported by downtown proximity, cultural amenities, and planned light rail transit." },
     ],
   },
+  {
+    slug: "old-enfield-homes-for-sale",
+    name: "Old Enfield",
+    metaTitle: "Old Enfield Homes for Sale Austin | Echelon Property Group",
+    metaDescription: "Explore homes for sale in Old Enfield Austin TX. Historic estates, contemporary luxury, and walkability to downtown in one of Austin's most prestigious neighborhoods from $900K to $5M+.",
+    priceRange: "$900K – $5M+",
+    overview: `Old Enfield is one of Austin's most storied residential neighborhoods, occupying a prime position between downtown and the western hills within the coveted 78703 zip code. Established in the early 1900s, the neighborhood features stately heritage trees, grand estates, and a rich tapestry of architectural styles from Colonial Revival and Tudor to mid-century modern and refined contemporary new construction.
+
+The neighborhood's proximity to downtown Austin is unmatched — residents are minutes from the Texas State Capitol, the University of Texas, Whole Foods headquarters, and the dining and entertainment districts along Lamar Boulevard and West 6th Street. Yet Old Enfield maintains a remarkably serene, residential character thanks to mature tree canopy, generous lot sizes, and deep setbacks.`,
+    market: `Old Enfield is one of Austin's most supply-constrained luxury markets. Homes range from approximately $900K to over $5M, with median prices between $1.5M and $2.5M. The neighborhood's compact geography and high proportion of long-term residents mean quality inventory is consistently scarce.
+
+Old Enfield commands some of the highest per-square-foot land values in Austin. The combination of the 78703 zip code, walkability to downtown, and irreplaceable tree canopy creates structural scarcity. Well-positioned homes often attract multiple offers, and original homes on desirable lots are frequently purchased for redevelopment.`,
+    whyBuyersLove: `Buyers are drawn to Old Enfield for its rare combination of estate-level living within walking distance of urban amenities. Residents stroll to restaurants, shop at the original Whole Foods, and enjoy Lady Bird Lake's trail — all without leaving the neighborhood's orbit.
+
+Pease District Park provides wooded trails and swimming holes directly adjacent to the neighborhood. The Shoal Creek Greenbelt runs along the eastern edge, and Lady Bird Lake is accessible from the southern boundary. The neighborhood's architectural diversity — spanning a century of styles — creates a visually compelling streetscape that attracts buyers who appreciate both history and design.`,
+    faqs: [
+      { question: "What is it like living in Old Enfield Austin?", answer: "Old Enfield offers estate-level living within walking distance of downtown Austin, with tree-lined streets, grand homes, and access to Pease Park and Lady Bird Lake." },
+      { question: "What are home prices in Old Enfield?", answer: "Prices range from approximately $900K for smaller homes to over $5M for grand estates and premium new construction." },
+      { question: "Are there luxury homes in Old Enfield?", answer: "Yes. Old Enfield features restored historic estates, mid-century modern gems, and sophisticated contemporary new construction." },
+      { question: "What schools serve Old Enfield?", answer: "Old Enfield is served by Austin ISD with Mathews Elementary, O. Henry Middle School, and Austin High School." },
+      { question: "Is Old Enfield a good investment area?", answer: "Yes. Irreplaceable location, structural scarcity, and strong demand support consistent long-term appreciation." },
+    ],
+  },
 ];

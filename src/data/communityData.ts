@@ -2313,5 +2313,110 @@ East Austin's transformation from overlooked corridor to one of Austin's most de
       { question: "Is East Austin a good investment area?", answer: "Yes. East Austin has seen some of the highest appreciation rates in the metro, supported by downtown proximity, cultural amenities, and planned light rail transit." },
       { question: "How does East Austin compare to Mueller?", answer: "East Austin offers more architectural variety and cultural grit, while Mueller provides a master-planned, family-oriented environment. Both are on the east side and share proximity to downtown." }
     ]
+  },
+  {
+    slug: "old-enfield",
+    name: "Old Enfield",
+    heroTitle: "Homes for Sale in Old Enfield Austin",
+    metaTitle: "Old Enfield Homes for Sale Austin | Echelon Property Group",
+    metaDescription: "Explore homes for sale in Old Enfield Austin TX. One of Austin's most prestigious central neighborhoods with grand estates, tree-lined streets, and homes from $900K to $5M+.",
+    priceRange: "$900K – $5M+",
+    image: oldEnfieldImg,
+    overview: `Old Enfield is one of Austin's most storied and prestigious residential neighborhoods, occupying a prime position between downtown Austin and the western hills. Bounded roughly by Lamar Boulevard to the east, MoPac to the west, West 15th Street to the north, and Lady Bird Lake to the south, this historic enclave sits within the coveted 78703 zip code and offers an unrivaled combination of elegance, convenience, and natural beauty.
+
+### Historic Prestige
+
+Established in the early 1900s, Old Enfield is one of Austin's original elite neighborhoods. The streets are lined with stately heritage trees — towering live oaks, pecans, and elms — that create a lush, canopied atmosphere. Many of the neighborhood's original estates have been meticulously preserved, while others have been thoughtfully renovated or replaced with sophisticated contemporary homes that respect the area's architectural heritage.
+
+### Unmatched Location
+
+Old Enfield's proximity to downtown Austin is perhaps its greatest asset. Residents are minutes from the Texas State Capitol, the University of Texas campus, Whole Foods headquarters, and the vibrant dining, shopping, and entertainment districts along Lamar Boulevard and West 6th Street. Yet the neighborhood itself feels remarkably quiet and secluded, insulated by its mature tree canopy and generous lot sizes.
+
+### Architectural Character
+
+The neighborhood showcases a rich tapestry of architectural styles spanning more than a century — from grand Colonial Revival and Tudor estates to elegant mid-century modern homes and refined contemporary new construction. This diversity creates a visually compelling streetscape that reflects Austin's evolution from a small state capital to a world-class city.`,
+    lifestyle: `### Central Austin Living
+
+Old Enfield offers the rare combination of estate-level living within walking distance of urban amenities. Residents stroll to restaurants on West 6th Street, shop at the original Whole Foods Market, and enjoy Lady Bird Lake's hike-and-bike trail — all without leaving the neighborhood's immediate orbit.
+
+### Parks & Green Space
+
+- Pease District Park — one of Austin's oldest and largest parks, featuring wooded trails, Shoal Creek swimming holes, and expansive green space directly adjacent to the neighborhood
+- Shoal Creek Greenbelt — scenic trail running along the neighborhood's eastern edge
+- Lady Bird Lake — hike-and-bike trail accessible from the southern boundary
+- Butler Park and Zilker Park — both within easy reach by foot or bike
+
+### Cultural & Social Life
+
+Old Enfield's central location places residents within minutes of Austin's most celebrated cultural institutions, including the Blanton Museum of Art, the Harry Ransom Center, the Contemporary Austin, and the live music venues of West 6th Street and Red River.
+
+### Quiet Sophistication
+
+Despite its urban proximity, Old Enfield maintains a serene, residential character. Wide lots, deep setbacks, and the dense tree canopy create an atmosphere of privacy and tranquility that belies the neighborhood's central location. It's a place where neighbors walk their dogs, children ride bikes, and the pace of life feels distinctly unhurried.`,
+    marketInsights: `### Pricing
+
+Homes in Old Enfield range from approximately $900K for smaller homes and condominiums to over $5M for grand estates and premium new construction on large lots. The median home price typically falls between $1.5M and $2.5M.
+
+### Market Dynamics
+
+Old Enfield is one of Austin's most supply-constrained luxury markets. The neighborhood's compact geography and high proportion of long-term residents mean that quality inventory is consistently scarce. Well-positioned homes often attract multiple offers and trade above asking price — particularly properties on larger lots with mature trees and updated interiors.
+
+### Land Premium
+
+Old Enfield commands some of the highest per-square-foot land values in Austin. The combination of the 78703 zip code, walkability to downtown, and irreplaceable tree canopy creates structural scarcity that supports exceptional land values. Original homes on desirable lots are frequently purchased for redevelopment.
+
+### Buyer Profile
+
+Old Enfield attracts established professionals, executives, empty-nesters, and families who value architectural distinction, walkability to urban amenities, and the prestige of one of Austin's most recognized addresses.`,
+    amenitiesAndSchools: `### Austin ISD Schools
+
+- Mathews Elementary — a highly regarded neighborhood school
+- O. Henry Middle School
+- Austin High School — one of Austin's top-rated public high schools
+
+### Private Schools Nearby
+
+- St. Andrew's Episcopal School
+- Austin Montessori
+- Kirby Hall School
+- St. Austin Catholic School
+
+### Parks & Recreation
+
+- Pease District Park — wooded trails, swimming holes, and picnic grounds
+- Shoal Creek Greenbelt — hiking and biking
+- Lady Bird Lake trail — running, cycling, and kayaking
+- Zilker Park and Barton Springs Pool — short drive or bike ride
+
+### Shopping & Dining
+
+- West 6th Street — restaurants, bars, and entertainment
+- Lamar Boulevard corridor — dining, retail, and services
+- Downtown Austin — under 10 minutes on foot
+- Clarksville neighborhood shops — boutiques and cafés nearby`,
+    investmentPotential: `### Irreplaceable Location
+
+Old Enfield occupies a geographic position that cannot be replicated — between downtown Austin and the western hills, with Lady Bird Lake to the south. This location premium is permanent and appreciates as Austin's urban core continues to densify and attract investment.
+
+### Scarcity & Demand
+
+The neighborhood contains a fixed number of lots within a compact area. Combined with strong demand from affluent buyers seeking walkable luxury living, this structural scarcity creates favorable long-term appreciation dynamics.
+
+### Renovation & Redevelopment
+
+Many original homes offer significant value-add potential through renovation or carefully designed new construction. Buyers who invest in quality rebuilds on premium lots frequently realize substantial returns as the neighborhood's price ceiling continues to rise.
+
+### Long-Term Appreciation
+
+Old Enfield has been one of central Austin's most consistently appreciating neighborhoods over multiple decades. The combination of 78703 cachet, downtown proximity, Austin High School zoning, and mature tree canopy supports continued strong value growth.`,
+    relatedCommunities: ["tarrytown", "clarksville", "pemberton-heights", "bryker-woods"],
+    faqs: [
+      { question: "What is it like living in Old Enfield Austin?", answer: "Old Enfield offers estate-level living within walking distance of downtown Austin, with tree-lined streets, grand homes, and access to Pease Park, Shoal Creek, and Lady Bird Lake." },
+      { question: "What are home prices in Old Enfield?", answer: "Prices range from approximately $900K for smaller homes to over $5M for grand estates and premium new construction on large lots." },
+      { question: "Are there luxury homes in Old Enfield?", answer: "Yes. Old Enfield features some of Austin's finest residences, including restored historic estates, mid-century modern gems, and sophisticated contemporary new construction." },
+      { question: "What schools serve Old Enfield?", answer: "Old Enfield is served by Austin ISD, with Mathews Elementary, O. Henry Middle School, and Austin High School. Several prestigious private schools are also nearby." },
+      { question: "Is Old Enfield a good investment area?", answer: "Yes. Irreplaceable location, structural scarcity, and strong demand from affluent buyers support consistent long-term appreciation in Old Enfield." },
+      { question: "How does Old Enfield compare to Tarrytown?", answer: "Both share the 78703 zip code and Austin High School zoning. Old Enfield is closer to downtown with a more urban feel, while Tarrytown offers larger lots and Lake Austin proximity." }
+    ]
   }
 ];

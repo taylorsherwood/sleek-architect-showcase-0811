@@ -47,6 +47,30 @@ const faqs = [
   },
 ];
 
+const CommercialHeroVideo = () => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+    const onPlay = () => { video.playbackRate = 0.55; };
+    video.addEventListener("playing", onPlay, { once: true });
+    return () => video.removeEventListener("playing", onPlay);
+  }, []);
+  return (
+    <video
+      ref={videoRef}
+      autoPlay
+      muted
+      loop
+      playsInline
+      preload="auto"
+      className="w-full h-full object-cover"
+    >
+      <source src="/videos/commercial-hero.mp4" type="video/mp4" />
+    </video>
+  );
+};
+
 const CommercialInvestment = () => {
   return (
     <div className="min-h-screen bg-background">

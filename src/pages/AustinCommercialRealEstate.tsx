@@ -60,14 +60,33 @@ const AustinCommercialRealEstate = () => {
       <Navigation />
 
       {/* Hero */}
-      <section className="pt-32 pb-16">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
-            <p className="text-minimal text-gold mb-4">AUSTIN COMMERCIAL REAL ESTATE</p>
-            <h1 className="text-3xl sm:text-5xl md:text-7xl font-display font-normal text-architectural mb-8">
+      <section className="relative h-[70vh] min-h-[500px] flex items-end overflow-hidden">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          className="absolute inset-0 w-full h-full object-cover"
+          style={{ zIndex: 0 }}
+        >
+          <source src="/videos/commercial-hero.mp4" type="video/mp4" />
+        </video>
+        <div
+          aria-hidden="true"
+          className="absolute inset-0"
+          style={{
+            zIndex: 1,
+            background: 'linear-gradient(to top, rgba(10,14,25,0.75) 0%, rgba(10,14,25,0.35) 40%, rgba(10,14,25,0.1) 70%, transparent 100%)',
+          }}
+        />
+        <div className="relative container mx-auto px-6 pb-16" style={{ zIndex: 2 }}>
+          <div className="max-w-4xl">
+            <p className="text-warm-cream/60 mb-4" style={{ fontFamily: '"Jost", sans-serif', fontSize: '0.65rem', letterSpacing: '0.35em', textTransform: 'uppercase', fontWeight: 600 }}>AUSTIN COMMERCIAL REAL ESTATE</p>
+            <h1 className="text-3xl sm:text-5xl md:text-7xl font-display font-normal text-warm-cream mb-6" style={{ textShadow: '0 2px 9px rgba(0,0,0,0.5)' }}>
               Austin Commercial Real Estate
             </h1>
-            <p className="text-xl text-muted-foreground leading-relaxed">
+            <p className="text-lg text-warm-cream/75 leading-relaxed max-w-2xl" style={{ textShadow: '0 1px 4px rgba(0,0,0,0.4)' }}>
               From tenant representation and investment acquisitions to development land and retail opportunities — 
               Echelon Property Group delivers strategic commercial real estate advisory across Austin and Central Texas.
             </p>

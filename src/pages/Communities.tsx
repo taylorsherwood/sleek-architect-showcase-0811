@@ -15,33 +15,6 @@ const communityFaqs = [
 import { Link } from "react-router-dom";
 import { communityPages } from "@/data/communityData";
 
-import bartonCreek from "@/assets/community-barton-creek.jpg";
-import westlake from "@/assets/community-westlake-hills.avif";
-import lakeAustin from "@/assets/community-lake-austin.jpg";
-import rollingwood from "@/assets/community-rollingwood.jpg";
-import hillCountry from "@/assets/community-hill-country.jpg";
-import travisHeights from "@/assets/community-travis-heights.jpg";
-import tarrytown from "@/assets/community-tarrytown.jpg";
-import drippingSprings from "@/assets/communities/dripping-springs.png";
-import downtown from "@/assets/community-downtown.jpg";
-import zilker from "@/assets/community-zilker-barton-springs.jpg";
-import spanishOaks from "@/assets/community-spanish-oaks.png";
-import catMountain from "@/assets/community-cat-mountain.jpg";
-
-const imageMap: Record<string, string> = {
-  "barton-creek": bartonCreek,
-  "westlake-hills": westlake,
-  "lake-austin": lakeAustin,
-  "rollingwood": rollingwood,
-  "texas-hill-country-estates": hillCountry,
-  "travis-heights": travisHeights,
-  "downtown-austin-condos": downtown,
-  "tarrytown": tarrytown,
-  "dripping-springs": drippingSprings,
-  "zilker-austin": zilker,
-  "spanish-oaks": spanishOaks,
-  "cat-mountain-northwest-hills": catMountain,
-};
 
 const Communities = () => {
   return (

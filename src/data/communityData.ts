@@ -17,7 +17,7 @@ import clarksvilleImg from "@/assets/communities/clarksville.jpg";
 import greatHillsImg from "@/assets/communities/great-hills.jpg";
 import hydeParkImg from "@/assets/communities/hyde-park.jpg";
 import lakeTravisImg from "@/assets/communities/lake-travis-waterfront.jpg";
-import muellerImg from "@/assets/communities/mueller.webp";
+import muellerImg from "@/assets/communities/mueller.jpg";
 import robRoyImg from "@/assets/communities/rob-roy.png";
 import steinerRanchImg from "@/assets/communities/steiner-ranch.webp";
 import pembertonHeightsImg from "@/assets/communities/pemberton-heights.avif";

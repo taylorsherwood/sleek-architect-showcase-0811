@@ -583,8 +583,8 @@ Pease District Park provides wooded trails and swimming holes directly adjacent 
     slug: "davenport-ranch-homes-for-sale",
     name: "Davenport Ranch",
     metaTitle: "Davenport Ranch Homes for Sale Austin | Echelon Property Group",
-    metaDescription: "Explore luxury homes for sale in Davenport Ranch Austin TX. Hill Country estates off Loop 360, Eanes ISD schools, and homes from $1.5M to $8M+.",
-    priceRange: "$1.5M – $8M+",
+    metaDescription: "Explore luxury homes for sale in Davenport Ranch Austin TX. Hill Country estates off Loop 360, Eanes ISD schools, and homes from $1.5M to $5M+.",
+    priceRange: "$1.5M – $5M+",
     overview: `Davenport Ranch is one of West Austin's most sought-after luxury neighborhoods, located off Capital of Texas Highway (Loop 360) in the 78746 zip code. The community features custom-built estate homes on large, wooded lots within the Eanes Independent School District — home to Westlake High School, one of the top-ranked public high schools in Texas.
 
 Developed primarily in the 1980s and 1990s, Davenport Ranch offers oversized lots, mature tree canopy, and architectural styles ranging from traditional Hill Country limestone to fully renovated contemporary estates. Many homes feature resort-caliber outdoor living with pools, sport courts, and outdoor kitchens.`,

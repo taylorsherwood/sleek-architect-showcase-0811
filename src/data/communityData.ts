@@ -2425,8 +2425,8 @@ Old Enfield has been one of central Austin's most consistently appreciating neig
     name: "Davenport Ranch",
     heroTitle: "Homes for Sale in Davenport Ranch Austin",
     metaTitle: "Davenport Ranch Homes for Sale Austin | Echelon Property Group",
-    metaDescription: "Explore luxury homes for sale in Davenport Ranch Austin TX. Gated Hill Country estates with panoramic views, resort-style amenities, and homes from $1.5M to $8M+.",
-    priceRange: "$1.5M – $8M+",
+    metaDescription: "Explore luxury homes for sale in Davenport Ranch Austin TX. Gated Hill Country estates with panoramic views, resort-style amenities, and homes from $1.5M to $5M+.",
+    priceRange: "$1.5M – $5M+",
     image: davenportRanchImg,
     overview: `Davenport Ranch is one of West Austin's most sought-after luxury neighborhoods, located off Capital of Texas Highway (Loop 360) in the 78746 zip code. Nestled into the rolling hills west of downtown, the community offers oversized lots, mature tree canopy, and a coveted position within the Eanes Independent School District — home to Westlake High School, one of the top-ranked public high schools in Texas.
 

@@ -9,7 +9,7 @@ import zilkerImg from "@/assets/community-zilker-barton-springs.jpg";
 import westlakeHillsImg from "@/assets/community-westlake-hills.avif";
 import bartonCreekImg from "@/assets/community-barton-creek.jpg";
 import bartonCreekCommunityImg from "@/assets/communities/barton-creek.jpg";
-import spanishOaksImg from "@/assets/community-spanish-oaks.jpg";
+import spanishOaksImg from "@/assets/communities/spanish-oaks.jpg";
 import catMountainImg from "@/assets/community-cat-mountain.jpg";
 import balconesImg from "@/assets/communities/balcones-park.webp";
 import beeCaveImg from "@/assets/communities/bee-cave.avif";

@@ -1046,19 +1046,34 @@ const LeadCapture = () => {
    SECTION 9 — FINAL CTA
    ───────────────────────────────────────────── */
 
-const priorityLinks = [
-  { to: "/austin-luxury-homes-for-sale", label: "Austin Luxury Homes" },
-  { to: "/buy", label: "Buy a Home" },
-  { to: "/sell", label: "Sell Your Home" },
-  { to: "/invest", label: "Investment Advisory" },
-  { to: "/communities", label: "Communities" },
-  { to: "/off-market-real-estate-austin", label: "Off-Market Access" },
-  { to: "/austin-real-estate-investment", label: "Real Estate Investment" },
-  { to: "/luxury-real-estate-austin", label: "Luxury Real Estate" },
-  { to: "/land-for-sale-austin", label: "Land for Sale" },
-  { to: "/moving-to-austin-texas", label: "Moving to Austin" },
-  { to: "/austin-commercial-real-estate", label: "Commercial Real Estate" },
-  { to: "/best-luxury-neighborhoods-austin", label: "Best Neighborhoods" },
+const linkGroups = [
+  {
+    heading: "Buy & Sell",
+    links: [
+      { to: "/buy", label: "Buy a Home" },
+      { to: "/sell", label: "Sell Your Home" },
+      { to: "/austin-luxury-homes-for-sale", label: "Austin Luxury Homes" },
+      { to: "/luxury-real-estate-austin", label: "Luxury Real Estate" },
+    ],
+  },
+  {
+    heading: "Invest",
+    links: [
+      { to: "/invest", label: "Investment Advisory" },
+      { to: "/austin-real-estate-investment", label: "Real Estate Investment" },
+      { to: "/austin-commercial-real-estate", label: "Commercial Real Estate" },
+      { to: "/land-for-sale-austin", label: "Land for Sale" },
+    ],
+  },
+  {
+    heading: "Explore",
+    links: [
+      { to: "/communities", label: "Communities" },
+      { to: "/best-luxury-neighborhoods-austin", label: "Best Neighborhoods" },
+      { to: "/moving-to-austin-texas", label: "Moving to Austin" },
+      { to: "/off-market-real-estate-austin", label: "Off-Market Access" },
+    ],
+  },
 ];
 
 const FinalCTA = () => (

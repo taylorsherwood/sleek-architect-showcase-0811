@@ -29,8 +29,29 @@ const neighborhoodInsights: Record<string, { title: string; description: string;
     { title: "Best Waterfront Homes in Austin", description: "A comprehensive look at Austin's lakefront market and what drives value.", href: "/blog/best-waterfront-homes-austin" },
   ],
   "barton-creek": [
+    { title: "Living in Barton Creek: What Luxury Buyers Should Know", description: "An insider's guide to country club lifestyle, Eanes ISD schools, and what makes Barton Creek a perennial luxury favorite.", href: "/blog/living-in-barton-creek-austin" },
     { title: "Luxury Lock-and-Leave in Governor's Hill", description: "Inside a fully reimagined residence in one of Barton Creek's most exclusive gated enclaves.", href: "/blog/2300-barton-creek-blvd" },
     { title: "Best Luxury Neighborhoods in Austin", description: "Where Barton Creek fits within Austin's luxury real estate hierarchy.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
+  ],
+  "pemberton-heights": [
+    { title: "What Makes Pemberton Heights So Desirable?", description: "Distinguished architecture, half-acre lots, and walk-to-downtown convenience in Austin's most prestigious central neighborhood.", href: "/blog/what-makes-pemberton-heights-desirable" },
+    { title: "Best Luxury Neighborhoods in Austin", description: "Pemberton Heights' distinguished architecture and central location.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
+  ],
+  "rob-roy": [
+    { title: "Rob Roy: Inside Austin's Most Exclusive Gated Community", description: "Hilltop estates, panoramic views, and three distinct luxury enclaves in Austin's most private address.", href: "/blog/rob-roy-austin-gated-luxury" },
+    { title: "Best Luxury Neighborhoods in Austin", description: "Rob Roy's position among Austin's most exclusive addresses.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
+  ],
+  "bee-cave": [
+    { title: "Bee Cave vs Lakeway for Luxury Buyers", description: "A side-by-side comparison of two premier Hill Country communities.", href: "/blog/bee-cave-vs-lakeway-luxury-buyers" },
+    { title: "Top Investment Neighborhoods in Austin", description: "Bee Cave's growth trajectory and Lake Travis ISD premium.", href: "/blog/top-investment-neighborhoods-austin" },
+  ],
+  "steiner-ranch": [
+    { title: "Steiner Ranch: Family Living with Lake Austin Views", description: "A comprehensive guide to Austin's most amenity-rich master-planned community.", href: "/blog/steiner-ranch-lake-austin-family-living" },
+    { title: "Top Investment Neighborhoods in Austin", description: "Master-planned communities in Austin's luxury landscape.", href: "/blog/top-investment-neighborhoods-austin" },
+  ],
+  "lakeway": [
+    { title: "A Guide to Lakeway: Waterfront and Golf Course Living", description: "Everything buyers need to know about Lake Travis waterfront estates and resort-caliber living.", href: "/blog/guide-to-lakeway-waterfront-golf-living" },
+    { title: "Bee Cave vs Lakeway for Luxury Buyers", description: "How Lakeway compares to its nearest Hill Country neighbor.", href: "/blog/bee-cave-vs-lakeway-luxury-buyers" },
   ],
   "travis-heights": [
     { title: "Top Investment Neighborhoods in Austin", description: "Travis Heights' walkability and SoCo proximity make it a top investment play.", href: "/blog/top-investment-neighborhoods-austin" },

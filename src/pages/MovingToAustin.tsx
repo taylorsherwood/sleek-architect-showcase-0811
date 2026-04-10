@@ -138,7 +138,38 @@ const MovingToAustin = () => {
                     The "Gateway to the Hill Country" offers custom estates on acreage, vineyards, and a burgeoning wine and culinary scene just 25 miles from downtown. Ideal for buyers seeking space, privacy, and a connection to the Texas landscape. Reminiscent of Napa Valley or Sonoma.
                   </p>
                 </div>
+
+                <div className="border-l-2 border-gold pl-6">
+                  <h3 className="text-xl font-display font-medium mb-2">
+                    <Link to="/communities/lakeway" className="hover:text-muted-foreground transition-colors">Lakeway</Link>
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    A resort-caliber community on Lake Travis featuring championship golf, marinas, and waterfront estates from $600K to $5M+. Lake Travis ISD schools, thriving local dining, and a self-contained lifestyle make Lakeway ideal for families and retirees seeking waterfront living within 25 minutes of downtown.
+                  </p>
+                </div>
+
+                <div className="border-l-2 border-gold pl-6">
+                  <h3 className="text-xl font-display font-medium mb-2">
+                    <Link to="/communities/bee-cave" className="hover:text-muted-foreground transition-colors">Bee Cave</Link>
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    A fast-growing Hill Country community anchored by the Hill Country Galleria. Bee Cave offers upscale shopping, dining, and Lake Travis ISD schools with a shorter commute to central Austin than Lakeway. Master-planned neighborhoods attract families seeking a suburban-luxury lifestyle with Hill Country charm.
+                  </p>
+                </div>
+
+                <div className="border-l-2 border-gold pl-6">
+                  <h3 className="text-xl font-display font-medium mb-2">
+                    <Link to="/communities/steiner-ranch" className="hover:text-muted-foreground transition-colors">Steiner Ranch</Link>
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    A family-oriented master-planned community with Lake Austin access and Lake Travis ISD schools. Steiner Ranch offers community pools, trails, parks, and a strong neighborhood identity at more accessible price points than many West Austin enclaves.
+                  </p>
+                </div>
               </div>
+
+              <p className="text-muted-foreground leading-relaxed mt-6">
+                For a comprehensive comparison of all premium neighborhoods, see our guide to the <Link to="/best-luxury-neighborhoods-austin" className="text-foreground underline hover:text-muted-foreground">best luxury neighborhoods in Austin</Link>, or explore the latest pricing data in the <Link to="/austin-luxury-real-estate-market-report" className="text-foreground underline hover:text-muted-foreground">Austin luxury real estate market report</Link>.
+              </p>
             </section>
 
             <section>
@@ -255,8 +286,8 @@ const MovingToAustin = () => {
             <div className="grid sm:grid-cols-2 gap-4">
               <Link to="/best-neighborhoods-in-austin-texas" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ BEST NEIGHBORHOODS IN AUSTIN</Link>
               <Link to="/best-luxury-neighborhoods-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ BEST LUXURY NEIGHBORHOODS</Link>
-              <Link to="/buy-homes-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ BUY A HOME IN AUSTIN</Link>
-              <Link to="/sell-home-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ SELL YOUR AUSTIN HOME</Link>
+              <Link to="/austin-luxury-real-estate-market-report" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ MARKET REPORT</Link>
+              <Link to="/communities/lakeway" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ LAKEWAY</Link>
               <Link to="/communities/westlake-hills" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ WESTLAKE HILLS</Link>
               <Link to="/communities/barton-creek" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ BARTON CREEK</Link>
               <Link to="/why-billionaires-are-moving-to-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ WHY BILLIONAIRES ARE MOVING TO AUSTIN</Link>

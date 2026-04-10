@@ -6,6 +6,7 @@ import AboutBlock from "@/components/AboutBlock";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import { communityPages } from "@/data/communityData";
+import { autoLink } from "@/lib/autoLinker";
 
 const SITE_URL = "https://www.echelonpropertygroup.com";
 
@@ -201,9 +202,12 @@ const parseInlineLinks = (text: string): React.ReactNode => {
   return parts.length === 1 && typeof parts[0] === 'string' ? parts[0] : <>{parts}</>;
 };
 
-/** Renders markdown-like content: ### for H3, - for bullets, [text](/url) links, paragraphs split by \n\n */
-const ContentBlock = ({ text }: { text: string }) => {
-  const blocks = text.split('\n\n');
+/** Renders markdown-like content: ### for H3, - for bullets, [text](/url) links, paragraphs split by \n\n.
+ *  When `currentSlug` is provided, auto-links community names and key phrases. */
+const ContentBlock = ({ text, currentSlug }: { text: string; currentSlug?: string }) => {
+  // Apply auto-linking before parsing markdown
+  const linked = currentSlug ? autoLink(text, currentSlug) : text;
+  const blocks = linked.split('\n\n');
   return (
     <div className="space-y-4">
       {blocks.map((block, i) => {
@@ -352,7 +356,7 @@ const CommunityPage = () => {
               <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 {community.name} Neighborhood Overview
               </h2>
-              <ContentBlock text={community.overview} />
+              <ContentBlock text={community.overview} currentSlug={community.slug} />
             </section>
 
             {/* Lifestyle */}
@@ -360,7 +364,7 @@ const CommunityPage = () => {
               <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Lifestyle in {community.name}
               </h2>
-              <ContentBlock text={community.lifestyle} />
+              <ContentBlock text={community.lifestyle} currentSlug={community.slug} />
             </section>
 
             {/* Market Insights */}
@@ -368,7 +372,7 @@ const CommunityPage = () => {
               <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 {community.name} Real Estate Market Insights
               </h2>
-              <ContentBlock text={community.marketInsights} />
+              <ContentBlock text={community.marketInsights} currentSlug={community.slug} />
             </section>
 
             {/* Amenities & Schools */}
@@ -376,7 +380,7 @@ const CommunityPage = () => {
               <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Schools and Amenities Near {community.name}
               </h2>
-              <ContentBlock text={community.amenitiesAndSchools} />
+              <ContentBlock text={community.amenitiesAndSchools} currentSlug={community.slug} />
             </section>
 
             {/* Investment */}
@@ -384,7 +388,7 @@ const CommunityPage = () => {
               <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Investment Potential in {community.name}
               </h2>
-              <ContentBlock text={community.investmentPotential} />
+              <ContentBlock text={community.investmentPotential} currentSlug={community.slug} />
               <p className="text-muted-foreground leading-relaxed mt-4">
                 Some homes in {community.name} present strong renovation or value-add opportunities — <Link to="/invest" className="text-foreground underline hover:text-gold transition-colors">explore our investor-focused approach</Link>.
               </p>
@@ -396,7 +400,7 @@ const CommunityPage = () => {
                 <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                   {community.name} vs Other West Austin Communities
                 </h2>
-                <ContentBlock text={community.communityComparison} />
+                <ContentBlock text={community.communityComparison} currentSlug={community.slug} />
               </section>
             )}
 
@@ -442,7 +446,7 @@ const CommunityPage = () => {
                 {allFaqs.map((faq, i) => (
                   <div key={i} className="border-b border-border pb-6">
                     <h3 className="text-lg font-medium text-foreground mb-2">{faq.question}</h3>
-                    <p className="text-muted-foreground leading-relaxed">{parseInlineLinks(faq.answer)}</p>
+                    <p className="text-muted-foreground leading-relaxed">{parseInlineLinks(autoLink(faq.answer, community.slug, 2))}</p>
                   </div>
                 ))}
               </div>

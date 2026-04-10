@@ -1,4 +1,4 @@
-import { lazy, Suspense, useState, useRef, useEffect } from "react";
+import React, { lazy, Suspense, useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";
@@ -1109,32 +1109,70 @@ const FinalCTA = () => (
     </section>
 
     {/* Priority internal links — crawl path reinforcement */}
-    <section className="bg-secondary" style={{ padding: "clamp(56px, 8vw, 88px) 0" }}>
+    <section className="bg-secondary" style={{ padding: "clamp(48px, 7vw, 76px) 0" }}>
       <div className="container mx-auto px-6">
-        <div className="max-w-[880px] mx-auto">
+        <div className="max-w-[760px] mx-auto">
           {/* Section heading */}
-          <div className="text-center mb-10 md:mb-12">
-            <p className="text-minimal text-gold tracking-[0.3em] mb-3" style={{ fontSize: "10px" }}>EXPLORE AUSTIN REAL ESTATE</p>
-            <div className="w-8 h-px bg-gold/30 mx-auto" />
+          <div className="text-center mb-8 md:mb-10">
+            <p
+              className="text-gold mb-2"
+              style={{ fontFamily: '"Jost", sans-serif', fontSize: "10px", letterSpacing: "0.35em", textTransform: "uppercase", fontWeight: 500 }}
+            >
+              EXPLORE AUSTIN REAL ESTATE
+            </p>
+            <div className="w-6 h-px mx-auto" style={{ background: "#b8a06d", opacity: 0.35 }} />
           </div>
 
-          {/* Link grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-y-10 gap-x-12 md:gap-x-16">
+          {/* Link grid with vertical dividers */}
+          <div className="hidden sm:grid sm:grid-cols-[1fr_1px_1fr_1px_1fr] gap-x-0 items-start">
+            {linkGroups.map((group, i) => (
+              <React.Fragment key={group.heading}>
+                {i > 0 && (
+                  <div className="self-stretch flex items-center justify-center">
+                    <div className="w-px h-full" style={{ background: "rgba(184,160,109,0.12)" }} />
+                  </div>
+                )}
+                <div className="px-8 group/col transition-opacity duration-300 hover:opacity-100" style={{ opacity: 0.88 }}>
+                  <h4
+                    className="text-foreground/70 mb-4"
+                    style={{ fontFamily: '"Jost", sans-serif', fontSize: "9.5px", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 600 }}
+                  >
+                    {group.heading}
+                  </h4>
+                  <div className="space-y-1">
+                    {group.links.map((link) => (
+                      <Link
+                        key={link.to}
+                        to={link.to}
+                        className="block text-muted-foreground/55 hover:text-gold transition-all duration-300 hover:translate-x-0.5"
+                        style={{ fontFamily: '"Jost", sans-serif', fontSize: "13px", fontWeight: 300, lineHeight: 2, letterSpacing: "0.015em" }}
+                      >
+                        {link.label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </React.Fragment>
+            ))}
+          </div>
+
+          {/* Mobile: stacked with spacing */}
+          <div className="sm:hidden space-y-8">
             {linkGroups.map((group) => (
-              <div key={group.heading} className="text-center sm:text-left">
+              <div key={group.heading} className="text-center">
                 <h4
-                  className="text-foreground/50 mb-4"
-                  style={{ fontFamily: '"Jost", sans-serif', fontSize: "10px", letterSpacing: "0.22em", textTransform: "uppercase", fontWeight: 500 }}
+                  className="text-foreground/70 mb-3"
+                  style={{ fontFamily: '"Jost", sans-serif', fontSize: "9.5px", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 600 }}
                 >
                   {group.heading}
                 </h4>
-                <div className="space-y-2">
+                <div className="space-y-1.5">
                   {group.links.map((link) => (
                     <Link
                       key={link.to}
                       to={link.to}
-                      className="block text-muted-foreground/60 hover:text-gold transition-colors duration-300"
-                      style={{ fontFamily: '"Jost", sans-serif', fontSize: "13px", fontWeight: 300, lineHeight: 1.85, letterSpacing: "0.02em" }}
+                      className="block text-muted-foreground/55 hover:text-gold transition-colors duration-300"
+                      style={{ fontFamily: '"Jost", sans-serif', fontSize: "13px", fontWeight: 300, lineHeight: 2, letterSpacing: "0.015em" }}
                     >
                       {link.label}
                     </Link>

@@ -583,23 +583,23 @@ Pease District Park provides wooded trails and swimming holes directly adjacent 
     slug: "davenport-ranch-homes-for-sale",
     name: "Davenport Ranch",
     metaTitle: "Davenport Ranch Homes for Sale Austin | Echelon Property Group",
-    metaDescription: "Explore luxury homes for sale in Davenport Ranch Austin TX. Gated Hill Country estates with panoramic views, Eanes ISD schools, and homes from $1.5M to $8M+.",
+    metaDescription: "Explore luxury homes for sale in Davenport Ranch Austin TX. Hill Country estates off Loop 360, Eanes ISD schools, and homes from $1.5M to $8M+.",
     priceRange: "$1.5M – $8M+",
-    overview: `Davenport Ranch is one of the most exclusive gated communities in West Austin, situated along the limestone bluffs above Lake Austin within the Eanes ISD and the 78746 zip code. The guard-gated community features approximately 200 custom estate homes on generous lots ranging from half an acre to over two acres.
+    overview: `Davenport Ranch is one of West Austin's most sought-after luxury neighborhoods, located off Capital of Texas Highway (Loop 360) in the 78746 zip code. The community features custom-built estate homes on large, wooded lots within the Eanes Independent School District — home to Westlake High School, one of the top-ranked public high schools in Texas.
 
-The community is built into rolling Hill Country terrain with dramatic elevation changes, canyon views, and mature native landscaping. Homes range from elegant Mediterranean villas to striking contemporary estates with infinity pools, sport courts, and seamless indoor-outdoor living. Many properties feature resort-caliber amenities rivaling boutique hotels.`,
-    market: `Homes range from approximately $1.5M to over $8M, with median prices between $2.5M and $4.5M. Inventory is perpetually limited due to the community's small footprint and long-term homeownership patterns.
+Developed primarily in the 1980s and 1990s, Davenport Ranch offers oversized lots, mature tree canopy, and architectural styles ranging from traditional Hill Country limestone to fully renovated contemporary estates. Many homes feature resort-caliber outdoor living with pools, sport courts, and outdoor kitchens.`,
+    market: `Homes range from approximately $1.5M to over $8M, with median prices between $2M and $4M. Demand is consistently strong due to Eanes ISD zoning, the 78746 zip code, and the neighborhood's established reputation along the 360 corridor.
 
-A meaningful percentage of transactions occur off-market or through private agent networks. Properties with panoramic Hill Country or canyon views command significant premiums. The combination of Eanes ISD, gated exclusivity, and proximity to downtown Austin supports strong long-term appreciation.`,
-    whyBuyersLove: `Buyers are drawn to Davenport Ranch for its gated privacy, Hill Country setting, and Eanes ISD access — particularly Westlake High School. The community's generous lots allow for resort-style outdoor living with pools, sport courts, and panoramic views.
+Many original homes offer significant renovation upside. Buyers who invest in quality modernization frequently realize substantial returns. Inventory turns over gradually as many homeowners are long-term residents, keeping supply tight and values stable.`,
+    whyBuyersLove: `Buyers are drawn to Davenport Ranch for its Eanes ISD schools, large wooded lots, and convenient Loop 360 location — just 15 minutes from downtown Austin. The neighborhood's established character and mature landscaping create a Hill Country retreat feel without sacrificing urban access.
 
-Proximity to Lake Austin provides easy access to boating and waterfront dining, while Wild Basin Wilderness Preserve offers 227 acres of trails adjacent to the community. Downtown Austin is just 15 minutes away, making Davenport Ranch ideal for buyers who want a Hill Country retreat without sacrificing urban convenience.`,
+Wild Basin Wilderness Preserve offers 227 acres of trails adjacent to the neighborhood, and the Barton Creek Greenbelt provides premier hiking and swimming nearby. Lake Austin boating and waterfront dining are a short drive away. The family-oriented atmosphere and quiet, winding streets make it ideal for buyers seeking space, privacy, and top-tier schools.`,
     faqs: [
-      { question: "What is it like living in Davenport Ranch?", answer: "Davenport Ranch offers gated, resort-style Hill Country living with panoramic views, generous lots, and guard-gated privacy within 15 minutes of downtown Austin." },
-      { question: "What are home prices in Davenport Ranch?", answer: "Prices range from approximately $1.5M for updated homes to over $8M for premium estates with panoramic views." },
-      { question: "Are there luxury homes in Davenport Ranch?", answer: "Yes. Custom estates feature infinity pools, sport courts, outdoor kitchens, and walls of glass showcasing Hill Country views." },
-      { question: "What schools serve Davenport Ranch?", answer: "Davenport Ranch is served by Eanes ISD, including Westlake High School." },
-      { question: "Is Davenport Ranch a good investment area?", answer: "Yes. Eanes ISD access, gated exclusivity, and limited inventory support strong long-term appreciation." },
+      { question: "What is it like living in Davenport Ranch?", answer: "Davenport Ranch offers spacious Hill Country living on large wooded lots off Loop 360, with Eanes ISD schools and downtown Austin just 15 minutes away." },
+      { question: "What are home prices in Davenport Ranch?", answer: "Prices range from approximately $1.5M for homes needing updates to over $8M for fully renovated estates on premium lots." },
+      { question: "Are there luxury homes in Davenport Ranch?", answer: "Yes. Custom estates feature pools, sport courts, outdoor kitchens, and panoramic Hill Country views." },
+      { question: "What schools serve Davenport Ranch?", answer: "Davenport Ranch is served by Eanes ISD, including Eanes Elementary, Hill Country Middle School, and Westlake High School." },
+      { question: "Is Davenport Ranch a good investment area?", answer: "Yes. Eanes ISD zoning, the 78746 zip code, and limited inventory support strong long-term appreciation." },
     ],
   },
 ];

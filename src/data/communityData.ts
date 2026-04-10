@@ -10,6 +10,7 @@ import westlakeHillsImg from "@/assets/community-westlake-hills.avif";
 import bartonCreekImg from "@/assets/community-barton-creek.jpg";
 import spanishOaksImg from "@/assets/community-spanish-oaks.jpg";
 import catMountainImg from "@/assets/community-cat-mountain.jpg";
+import balconesImg from "@/assets/communities/balcones-park.webp";
 export interface CommunityFAQ {
   question: string;
   answer: string;
@@ -1824,7 +1825,7 @@ Established location, mature lots, and proximity to major employers support cons
     metaTitle: "Balcones Park Homes for Sale | Echelon Property Group",
     metaDescription: "Browse homes for sale in Balcones Park Austin TX. Quiet northwest Austin neighborhood with large lots and homes from $600K to $2M+.",
     priceRange: "$600K – $2M+",
-    image: "",
+    image: balconesImg,
     overview: `Balcones Park is a well-established residential neighborhood in northwest Austin, located near the intersection of MoPac and Far West Boulevard. The community is known for its quiet, tree-lined streets, generous lot sizes, and convenient access to both downtown Austin and the northwest employment corridors.
 
 ### Housing Stock

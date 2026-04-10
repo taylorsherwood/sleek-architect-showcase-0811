@@ -13,6 +13,7 @@ import catMountainImg from "@/assets/community-cat-mountain.jpg";
 import balconesImg from "@/assets/communities/balcones-park.webp";
 import beeCaveImg from "@/assets/communities/bee-cave.avif";
 import clarksvilleImg from "@/assets/communities/clarksville.jpg";
+import greatHillsImg from "@/assets/communities/great-hills.jpg";
 export interface CommunityFAQ {
   question: string;
   answer: string;
@@ -1732,7 +1733,7 @@ Strong schools, lifestyle amenities, and Austin's continued growth support consi
     metaTitle: "Great Hills Homes for Sale Austin | Echelon Property Group",
     metaDescription: "Explore homes for sale in Great Hills Austin TX. Established northwest Austin neighborhood with mature trees and homes from $600K to $2.5M+.",
     priceRange: "$600K – $2.5M+",
-    image: "",
+    image: greatHillsImg,
     overview: `Great Hills is an established residential neighborhood in northwest Austin, situated along the Capital of Texas Highway (Loop 360) corridor between MoPac and Highway 183. The community was developed in the 1970s and 1980s and has matured into one of the most desirable neighborhoods in northwest Austin.
 
 ### Housing Character

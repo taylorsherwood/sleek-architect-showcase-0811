@@ -7,7 +7,6 @@ import AppRoutes from "@/AppRoutes";
 import { communityPages } from "@/data/communityData";
 import { blogPosts } from "@/data/blogPosts";
 import { seoBlogPosts } from "@/data/seoBlogPosts";
-import { seoCommunityPages } from "@/data/seoCommunityData";
 
 const SITE_URL = "https://www.echelonpropertygroup.com";
 
@@ -57,7 +56,6 @@ const allPrerenderRoutes = Array.from(
     ...staticRoutes,
     ...communityPages.map((community) => `/communities/${community.slug}`),
     ...[...seoBlogPosts, ...blogPosts].map((post) => `/blog/${post.id}`),
-    ...seoCommunityPages.map((c) => `/${c.slug}`),
   ])
 );
 

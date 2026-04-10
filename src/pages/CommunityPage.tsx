@@ -152,6 +152,8 @@ const slugAliases: Record<string, string> = {
   "cat-mountain": "cat-mountain-northwest-hills",
   "northwest-hills": "cat-mountain-northwest-hills",
   "downtown-austin-condos": "downtown",
+  "downtown-austin": "downtown",
+  "lake-travis-waterfront": "lake-travis",
 };
 
 const CommunityPage = () => {

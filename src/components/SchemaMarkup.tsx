@@ -131,6 +131,7 @@ export const realEstateAgentSchema = {
   "openingHoursSpecification": openingHoursSpec,
   "priceRange": "$$$$",
   "sameAs": sameAs,
+  "parentOrganization": { "@id": `${SITE}/#organization` },
   "hasCredential": {
     "@type": "EducationalOccupationalCredential",
     "credentialCategory": "Professional Certification",
@@ -204,6 +205,7 @@ export const localBusinessSchema = {
   "openingHoursSpecification": openingHoursSpec,
   "priceRange": "$$$$",
   "sameAs": sameAs,
+  "parentOrganization": { "@id": `${SITE}/#organization` },
 };
 
 export const websiteSchema = {

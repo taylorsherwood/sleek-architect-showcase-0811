@@ -15,6 +15,7 @@ import beeCaveImg from "@/assets/communities/bee-cave.avif";
 import clarksvilleImg from "@/assets/communities/clarksville.jpg";
 import greatHillsImg from "@/assets/communities/great-hills.jpg";
 import hydeParkImg from "@/assets/communities/hyde-park.jpg";
+import lakeTravisImg from "@/assets/communities/lake-travis-waterfront.jpg";
 export interface CommunityFAQ {
   question: string;
   answer: string;
@@ -1262,7 +1263,7 @@ The neighborhood's walkability and proximity to downtown make it highly attracti
     metaTitle: "Lake Travis Waterfront Homes | Echelon Property Group",
     metaDescription: "Browse waterfront homes for sale on Lake Travis TX. Lakefront estates, deep-water access, and Hill Country views from $1M to $15M+.",
     priceRange: "$1M – $15M+",
-    image: "",
+    image: lakeTravisImg,
     overview: `Lake Travis is one of the Highland Lakes chain along the Colorado River, stretching over 60 miles through the scenic Texas Hill Country west of Austin. It is one of the most popular recreational lakes in Texas, renowned for its clear blue water, dramatic limestone cliffs, and resort-style waterfront communities.
 
 ### Property Types

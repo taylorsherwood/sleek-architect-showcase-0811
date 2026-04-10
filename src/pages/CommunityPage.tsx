@@ -347,11 +347,22 @@ const CommunityPage = () => {
               </p>
             </section>
 
+            {/* Echelon Perspective (optional, editorial authority section) */}
+            {community.echelonPerspective && (
+              <section>
+                <p className="text-minimal text-gold mb-3 tracking-[0.2em]">LOCAL INSIGHT</p>
+                <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
+                  Echelon Perspective on {community.name}
+                </h2>
+                <ContentBlock text={community.echelonPerspective} currentSlug={community.slug} />
+              </section>
+            )}
+
             {/* Community Comparison (optional, SEO-optimized) */}
             {community.communityComparison && (
               <section>
                 <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
-                  {community.name} vs Other West Austin Communities
+                  {community.name} vs Other Austin Luxury Communities
                 </h2>
                 <ContentBlock text={community.communityComparison} currentSlug={community.slug} />
               </section>

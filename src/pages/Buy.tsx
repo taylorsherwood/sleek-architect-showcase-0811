@@ -1,4 +1,5 @@
 import { useState, lazy, Suspense } from "react";
+import FeaturedCommunities from "@/components/FeaturedCommunities";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 const Footer = lazy(() => import("@/components/Footer"));
@@ -697,6 +698,8 @@ const Buy = () => {
           </div>
         </div>
       </section>
+
+      <FeaturedCommunities />
 
       {/* ── Internal Links ── */}
       <section className="py-16 bg-background">

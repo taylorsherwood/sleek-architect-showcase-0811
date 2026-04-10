@@ -14,6 +14,7 @@ import balconesImg from "@/assets/communities/balcones-park.webp";
 import beeCaveImg from "@/assets/communities/bee-cave.avif";
 import clarksvilleImg from "@/assets/communities/clarksville.jpg";
 import greatHillsImg from "@/assets/communities/great-hills.jpg";
+import hydeParkImg from "@/assets/communities/hyde-park.jpg";
 export interface CommunityFAQ {
   question: string;
   answer: string;
@@ -1440,7 +1441,7 @@ East Austin's continued development and Mueller's established reputation support
     metaTitle: "Hyde Park Homes for Sale Austin | Echelon Property Group",
     metaDescription: "Explore homes for sale in Hyde Park Austin TX. Historic bungalows, walkable streets, and central location with homes from $500K to $2M+.",
     priceRange: "$500K – $2M+",
-    image: "",
+    image: hydeParkImg,
     overview: `Hyde Park is one of Austin's first suburban neighborhoods, established in 1891 and listed on the National Register of Historic Places. Located just north of the University of Texas campus, Hyde Park is beloved for its tree-lined streets, Victorian and Craftsman architecture, and strong sense of community.
 
 ### Architectural Heritage

@@ -96,6 +96,7 @@ const BlogPost = () => {
         title={post.metaTitle || post.title}
         description={post.excerpt}
         ogType="article"
+        noindex={["sustainable-architecture-future", "minimalism-modern-living", "urban-planning-community-spaces"].includes(post.id)}
       />
       {schemas.map((s, i) => <SchemaMarkup key={i} schema={s} />)}
       <Navigation />

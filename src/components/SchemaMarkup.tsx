@@ -355,3 +355,29 @@ export function createBlogPostingSchema(post: { title: string; description: stri
     },
   };
 }
+
+export function createPlaceSchema(community: { name: string; slug: string; description: string }) {
+  const url = `${SITE}/communities/${community.slug}`;
+  return {
+    "@context": "https://schema.org",
+    "@type": "Place",
+    "name": `${community.name}, Austin Texas`,
+    "description": community.description,
+    "url": url,
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Austin",
+      "addressRegion": "TX",
+      "addressCountry": "US",
+    },
+    "containedInPlace": {
+      "@type": "City",
+      "name": "Austin",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "Texas",
+      },
+    },
+    "provider": { "@id": `${SITE}/#organization` },
+  };
+}

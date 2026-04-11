@@ -500,10 +500,10 @@ const Sell = () => {
       <section className="py-12 md:py-16 bg-background">
         <div className="container mx-auto px-6">
           <p className="text-center text-minimal text-muted-foreground mb-8 tracking-[0.2em]">MEMBER OF SELECT OFF-MARKET BROKER NETWORKS</p>
-          <div className="flex flex-wrap items-center justify-center gap-10 md:gap-16">
+          <div className="flex flex-wrap items-center justify-center gap-10 md:gap-14">
             <img src={austinLuxuryNetwork} alt="Austin Luxury Network" className="h-12 md:h-16 object-contain" />
             <img src={topAgentNetwork} alt="Top Agent Network" className="h-12 md:h-16 object-contain" />
-            <img src={commissionClubhouse} alt="Commission Clubhouse" className="h-12 md:h-16 object-contain translate-x-4 translate-y-2" />
+            <img src={commissionClubhouse} alt="Commission Clubhouse" className="h-12 md:h-16 object-contain -translate-x-1 translate-y-[7px]" />
           </div>
         </div>
       </section>

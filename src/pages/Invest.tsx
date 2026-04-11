@@ -400,6 +400,53 @@ const Invest = () => {
 
       <div className="h-16 md:h-24 bg-background" aria-hidden="true" />
 
+      {/* ──────────────────────── PRIVATE NETWORK GATEWAY ──────────────────────── */}
+      <section className="py-14 md:py-20 bg-secondary">
+        <div className="max-w-2xl mx-auto px-6 text-center">
+          <ScrollReveal>
+            <p className="text-minimal text-gold mb-5 tracking-[0.3em]">Private Network</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-6 leading-[1.15]">
+              Have a Property That Needs Work?
+            </h2>
+            <p className="text-muted-foreground max-w-xl mx-auto leading-relaxed mb-4 text-[0.95rem]">
+              We selectively connect properties with a vetted network of investors seeking
+              renovation and value-add opportunities across Austin.
+            </p>
+            <p className="text-sm text-muted-foreground/50 italic mb-10">
+              Discreet, straightforward, and no obligation.
+            </p>
+          </ScrollReveal>
+
+          <ScrollReveal delay={100}>
+            <form onSubmit={handlePropSubmit} className="max-w-md mx-auto text-left">
+              <div className="space-y-2.5">
+                <div>
+                  <input type="text" name="propName" placeholder="Full Name" value={propForm.propName} onChange={handlePropChange} className="w-full bg-transparent border-b border-border/60 px-1 py-3 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-gold transition-colors duration-300 text-sm" required />
+                  {propErrors.propName && <p className="text-xs text-destructive mt-1">{propErrors.propName}</p>}
+                </div>
+                <div>
+                  <input type="tel" name="propPhone" placeholder="Phone" value={propForm.propPhone} onChange={handlePropChange} className="w-full bg-transparent border-b border-border/60 px-1 py-3 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-gold transition-colors duration-300 text-sm" required />
+                  {propErrors.propPhone && <p className="text-xs text-destructive mt-1">{propErrors.propPhone}</p>}
+                </div>
+                <div>
+                  <input type="email" name="propEmail" placeholder="Email" value={propForm.propEmail} onChange={handlePropChange} className="w-full bg-transparent border-b border-border/60 px-1 py-3 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-gold transition-colors duration-300 text-sm" required />
+                  {propErrors.propEmail && <p className="text-xs text-destructive mt-1">{propErrors.propEmail}</p>}
+                </div>
+                <div>
+                  <input type="text" name="propAddress" placeholder="Property Address" value={propForm.propAddress} onChange={handlePropChange} className="w-full bg-transparent border-b border-border/60 px-1 py-3 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-gold transition-colors duration-300 text-sm" required />
+                  {propErrors.propAddress && <p className="text-xs text-destructive mt-1">{propErrors.propAddress}</p>}
+                </div>
+              </div>
+              <div className="pt-8">
+                <button type="submit" disabled={propSubmitting} className="w-full py-3.5 bg-primary text-primary-foreground text-xs tracking-[0.25em] uppercase font-medium hover:bg-gold hover:text-white hover:-translate-y-px hover:shadow-md transition-all duration-300 disabled:opacity-50">
+                  {propSubmitting ? "Submitting…" : "REQUEST CASH OFFER"}
+                </button>
+              </div>
+            </form>
+          </ScrollReveal>
+        </div>
+      </section>
+
       <section className="pt-10 md:pt-12 pb-16 md:pb-20 bg-background">
         <div className="max-w-6xl mx-auto px-6">
           <ScrollReveal>
@@ -626,53 +673,6 @@ const Invest = () => {
               </ScrollReveal>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* ──────────────────────── PRIVATE NETWORK GATEWAY ──────────────────────── */}
-      <section className="py-14 md:py-20 bg-secondary">
-        <div className="max-w-2xl mx-auto px-6 text-center">
-          <ScrollReveal>
-            <p className="text-minimal text-gold mb-5 tracking-[0.3em]">Private Network</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-6 leading-[1.15]">
-              Have a Property That Needs Work?
-            </h2>
-            <p className="text-muted-foreground max-w-xl mx-auto leading-relaxed mb-4 text-[0.95rem]">
-              We selectively connect properties with a vetted network of investors seeking
-              renovation and value-add opportunities across Austin.
-            </p>
-            <p className="text-sm text-muted-foreground/50 italic mb-10">
-              Discreet, straightforward, and no obligation.
-            </p>
-          </ScrollReveal>
-
-          <ScrollReveal delay={100}>
-            <form onSubmit={handlePropSubmit} className="max-w-md mx-auto text-left">
-              <div className="space-y-2.5">
-                <div>
-                  <input type="text" name="propName" placeholder="Full Name" value={propForm.propName} onChange={handlePropChange} className="w-full bg-transparent border-b border-border/60 px-1 py-3 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-gold transition-colors duration-300 text-sm" required />
-                  {propErrors.propName && <p className="text-xs text-destructive mt-1">{propErrors.propName}</p>}
-                </div>
-                <div>
-                  <input type="tel" name="propPhone" placeholder="Phone" value={propForm.propPhone} onChange={handlePropChange} className="w-full bg-transparent border-b border-border/60 px-1 py-3 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-gold transition-colors duration-300 text-sm" required />
-                  {propErrors.propPhone && <p className="text-xs text-destructive mt-1">{propErrors.propPhone}</p>}
-                </div>
-                <div>
-                  <input type="email" name="propEmail" placeholder="Email" value={propForm.propEmail} onChange={handlePropChange} className="w-full bg-transparent border-b border-border/60 px-1 py-3 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-gold transition-colors duration-300 text-sm" required />
-                  {propErrors.propEmail && <p className="text-xs text-destructive mt-1">{propErrors.propEmail}</p>}
-                </div>
-                <div>
-                  <input type="text" name="propAddress" placeholder="Property Address" value={propForm.propAddress} onChange={handlePropChange} className="w-full bg-transparent border-b border-border/60 px-1 py-3 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-gold transition-colors duration-300 text-sm" required />
-                  {propErrors.propAddress && <p className="text-xs text-destructive mt-1">{propErrors.propAddress}</p>}
-                </div>
-              </div>
-              <div className="pt-8">
-                <button type="submit" disabled={propSubmitting} className="w-full py-3.5 bg-primary text-primary-foreground text-xs tracking-[0.25em] uppercase font-medium hover:bg-gold hover:text-white hover:-translate-y-px hover:shadow-md transition-all duration-300 disabled:opacity-50">
-                  {propSubmitting ? "Submitting…" : "REQUEST CASH OFFER"}
-                </button>
-              </div>
-            </form>
-          </ScrollReveal>
         </div>
       </section>
 

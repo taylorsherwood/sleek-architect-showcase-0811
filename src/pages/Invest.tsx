@@ -542,7 +542,7 @@ const Invest = () => {
                 afterImage={kitchenAfter}
               />
               <div className="mt-5">
-                <h3 className="text-base font-display font-normal text-foreground tracking-wide">Kitchen Transformation — Barton Creek</h3>
+                <h3 className="text-base font-display font-normal text-foreground tracking-wide">Kitchen Transformation — south austin</h3>
                 <div className="w-8 h-px bg-gold mt-2 mb-2" />
                 <p className="text-[0.82rem] text-muted-foreground/75 leading-relaxed">
                   Repositioned through layout updates, finish upgrades, and improved flow to maximize buyer appeal.

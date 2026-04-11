@@ -106,7 +106,7 @@ const PastTransactions = () => {
               Recent Transactions Across Austin
             </h2>
             <p className="text-muted-foreground text-[15px] leading-relaxed max-w-2xl mx-auto mb-3">
-              A curated view of transactions represented in 2025 across Austin’s luxury, off-market, and investment segments.
+              A curated view of transactions represented over $40m in 2025 sales volume across Austin’s luxury, off-market, and investment segments.
             </p>
             <p className="text-muted-foreground/60 text-[13px] leading-relaxed max-w-xl mx-auto mb-14 italic">
               Additional transactions and long-term client relationships extend beyond what is shown here.

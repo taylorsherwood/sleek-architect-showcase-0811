@@ -408,8 +408,6 @@ const Sell = () => {
       {/* ── White spacer ── */}
       <div className="bg-background py-8" />
 
-      <div className="h-12 md:h-20 bg-background" aria-hidden="true" />
-
 
       {/* ── Marketing Strategy (Editorial) ── */}
       <section className="relative py-20 md:py-28 pb-14 md:pb-18 bg-secondary overflow-visible">
@@ -510,7 +508,9 @@ const Sell = () => {
         </div>
       </section>
 
-      {/* ── Selling Process ── */}
+      <div className="h-12 md:h-20 bg-background" aria-hidden="true" />
+
+
       <section className="pt-16 md:pt-20 pb-28 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">

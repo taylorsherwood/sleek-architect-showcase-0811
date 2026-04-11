@@ -105,7 +105,7 @@ const Communities = () => {
               </div>
               <div>
                 <h3 className="text-xl sm:text-2xl font-display font-normal text-architectural mb-3">
-                  Lake Austin vs Lake Travis Waterfront
+                  Lake Austin vs Lake Travis
                 </h3>
                 <p className="text-muted-foreground leading-relaxed mb-3">
                   Lake Austin is a constant-level lake closer to downtown, offering the highest property values and the most exclusive waterfront lifestyle. Lake Travis is a larger, recreational lake with more diverse price points and newer lakefront developments. Both provide private docks, stunning water views, and resort-caliber living.

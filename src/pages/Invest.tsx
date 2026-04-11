@@ -395,7 +395,7 @@ const Invest = () => {
             </Link>
           </div>
         </div>
-      </section>
+      </InvestHeroSection>
 
       <div className="h-16 md:h-24 bg-background" aria-hidden="true" />
 

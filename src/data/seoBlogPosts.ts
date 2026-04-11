@@ -7,6 +7,7 @@ import communityLake from "@/assets/community-lake-austin.jpg";
 import listing2 from "@/assets/listing-2.jpg";
 import listing1 from "@/assets/listing-1.jpg";
 import blogRollingwoodVsWestlake from "@/assets/blog-rollingwood-vs-westlake.jpg";
+import blogPembertonHeights from "@/assets/pemberton-heights.avif";
 
 import { BlogPost } from "./blogPosts";
 

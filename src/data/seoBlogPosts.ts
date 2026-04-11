@@ -8,6 +8,7 @@ import listing2 from "@/assets/listing-2.jpg";
 import listing1 from "@/assets/listing-1.jpg";
 import blogRollingwoodVsWestlake from "@/assets/blog-rollingwood-vs-westlake.jpg";
 import blogPembertonHeights from "@/assets/pemberton-heights.avif";
+import blogBeeCaveVsLakeway from "@/assets/bee-cave-vs-lakeway.jpg";
 
 import { BlogPost } from "./blogPosts";
 
@@ -1300,7 +1301,7 @@ Both communities have shown strong appreciation. Lakeway waterfront properties t
     date: "2026-04-07",
     readTime: "7 min read",
     category: "NEIGHBORHOODS",
-    image: heroSkyline
+    image: blogBeeCaveVsLakeway
   },
   {
     id: "what-makes-pemberton-heights-desirable",

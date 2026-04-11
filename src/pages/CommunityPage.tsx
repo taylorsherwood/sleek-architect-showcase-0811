@@ -302,10 +302,12 @@ const CommunityPage = () => {
         </section>
       )}
 
+      <div className="h-12 md:h-20" />
+
       {/* Content */}
-      <article className="pb-20">
+      <article>
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto space-y-16">
+          <div className="max-w-4xl mx-auto">
             {/* Overview */}
             <section>
               <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">

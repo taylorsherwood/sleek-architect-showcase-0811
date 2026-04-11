@@ -187,7 +187,7 @@ Lake Austin waterfront appeals to high-net-worth buyers seeking trophy propertie
   },
   {
     slug: "lake-travis-waterfront-homes-for-sale",
-    name: "Lake Travis Waterfront",
+    name: "Lake Travis",
     metaTitle: "Lake Travis Waterfront Homes | Echelon Property Group",
     metaDescription: "Browse waterfront homes for sale on Lake Travis TX. Lakefront estates, deep-water access, and Hill Country views from $1M to $15M+.",
     priceRange: "$1M – $15M+",

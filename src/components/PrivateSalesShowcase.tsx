@@ -37,7 +37,7 @@ export const privateSales: PrivateSaleItem[] = [
     address: "Address Withheld",
     area: "SPANISH OAKS",
     descriptor: "",
-    label: "Represented Buyer",
+    label: "Represented Seller",
   },
   {
     image: southeastAustinImage,

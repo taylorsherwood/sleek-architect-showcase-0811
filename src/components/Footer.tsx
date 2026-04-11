@@ -183,7 +183,7 @@ const Footer = () => {
                   { to: "/search", label: "Search Properties" },
                   { to: "/communities", label: "Communities" },
                   { to: "/land", label: "Land & Lots" },
-                  { to: "/connect", label: "Join Private Network" },
+                  { to: "/off-market-real-estate-austin", label: "Join Private Network" },
                 ].map((link) => (
                   <Link key={link.to} to={link.to} className={linkHoverClass} style={linkStyle}>{link.label}</Link>
                 ))}

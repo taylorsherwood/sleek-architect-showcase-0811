@@ -172,10 +172,10 @@ The area's strict development standards ensure that quality investments are prot
   },
   {
     slug: "barton-creek",
-    name: "Barton Creek, Lost Creek and Amarra",
-    heroTitle: "Homes for Sale in Barton Creek, Lost Creek and Amarra Austin",
+    name: "Barton Creek, Lost Creek & Amarra",
+    heroTitle: "Homes for Sale in Barton Creek, Lost Creek & Amarra Austin",
     metaTitle: "Barton Creek Homes for Sale | Echelon Property Group",
-    metaDescription: "Discover luxury estates in Barton Creek, Lost Creek and Amarra Austin. World-class golf, gated country club living, and homes from $1.5M to $15M+ in this premier community.",
+    metaDescription: "Discover luxury estates in Barton Creek, Lost Creek & Amarra Austin. World-class golf, gated country club living, and homes from $1.5M to $15M+ in this premier community.",
     priceRange: "$1.5M – $15M+",
     image: bartonCreekCommunityImg,
     overview: `Barton Creek is Austin's premier master-planned luxury community. Spanning thousands of acres along the scenic Barton Creek corridor, this gated community rivals the most exclusive neighborhoods in the country.

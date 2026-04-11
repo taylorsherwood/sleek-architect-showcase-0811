@@ -7,6 +7,7 @@ import communityLake from "@/assets/community-lake-austin.jpg";
 import listing2 from "@/assets/listing-2.jpg";
 import listing1 from "@/assets/listing-1.jpg";
 import blogRollingwoodVsWestlake from "@/assets/blog-rollingwood-vs-westlake.jpg";
+import robRoyImg from "@/assets/communities/rob-roy.png";
 import blogPembertonHeights from "@/assets/pemberton-heights.avif";
 import blogBeeCaveVsLakeway from "@/assets/bee-cave-vs-lakeway.jpg";
 
@@ -1447,7 +1448,7 @@ Rob Roy offers the combination of gated privacy, panoramic views, and estate-sca
     date: "2026-04-03",
     readTime: "7 min read",
     category: "NEIGHBORHOODS",
-    image: listing1
+    image: robRoyImg
   },
   {
     id: "steiner-ranch-lake-austin-family-living",

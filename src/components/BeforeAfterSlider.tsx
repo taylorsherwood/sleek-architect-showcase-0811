@@ -70,7 +70,7 @@ const BeforeAfterSlider = ({
     <div
       ref={containerRef}
       className="relative w-full select-none overflow-hidden"
-      style={{ cursor: isDragging ? "ew-resize" : "default" }}
+      style={{ cursor: isDragging ? "ew-resize" : "default", touchAction: "none" }}
       onPointerDown={handlePointerDown}
       onPointerMove={handlePointerMove}
       onPointerUp={handlePointerUp}

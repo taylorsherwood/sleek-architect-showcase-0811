@@ -400,8 +400,286 @@ const Invest = () => {
 
       <div className="h-16 md:h-24 bg-background" aria-hidden="true" />
 
+      <section className="pt-10 md:pt-12 pb-16 md:pb-20 bg-background">
+        <div className="max-w-6xl mx-auto px-6">
+          <ScrollReveal>
+            <p className="text-minimal text-gold mb-4">Client Focus</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-16 max-w-2xl">
+              Austin Investment Clients
+              <br />
+              We Serve
+            </h2>
+          </ScrollReveal>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {whoWeWorkWith.map((card, i) => (
+              <ScrollReveal key={card.title} delay={i * 100}>
+                <div className="group border-2 border-border p-10 h-full hover:border-gold transition-colors duration-500">
+                  <card.icon className="w-8 h-8 text-gold mb-4" />
+                  <h3 className="text-2xl font-display font-normal text-architectural mb-3 group-hover:text-muted-foreground transition-colors duration-300">
+                    {card.title}
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    {card.description}
+                  </p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
 
-      {/* ──────────────────────── MARKET INSIGHT ──────────────────────── */}
+      {/* ──────────────────────── PROCESS ──────────────────────── */}
+      <section className="pt-10 md:pt-12 pb-24 md:pb-32 bg-background">
+        <div className="max-w-6xl mx-auto px-6">
+          <ScrollReveal>
+            <p className="text-minimal text-gold mb-4">Methodology</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-16 max-w-2xl">
+              Our Austin Investor Process
+            </h2>
+          </ScrollReveal>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {processSteps.map((step, i) => (
+              <ScrollReveal key={step.number} delay={i * 100}>
+                <div className="relative group">
+                  <span className="text-5xl font-display font-normal text-gold mb-4 block transition-colors duration-500 group-hover:text-gold">
+                    {step.number}
+                  </span>
+                  <h3 className="text-lg font-display font-normal text-foreground mb-2 transition-colors duration-300 group-hover:text-muted-foreground">
+                    {step.title}
+                  </h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    {step.description}
+                  </p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="pt-10 md:pt-14 pb-12 md:pb-16 bg-secondary">
+        <div className="max-w-4xl mx-auto px-6">
+          <ScrollReveal>
+            <p className="text-minimal text-gold mb-4 tracking-[0.25em]">Portfolio</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-4 max-w-3xl">
+              Real Transformations.
+              <br />
+              Measurable Upside.
+            </h2>
+            <p className="text-muted-foreground max-w-3xl leading-relaxed mb-2">
+              Selected transformations illustrating positioning, finish strategy, and value creation.
+            </p>
+            <p className="text-[0.8rem] text-muted-foreground/60 italic mb-10 max-w-2xl">
+              See how the right improvements translate directly into perceived value and profitable exits.
+            </p>
+          </ScrollReveal>
+
+          <div className="space-y-10 md:space-y-12">
+            {/* Slider 1 */}
+            <ScrollReveal>
+              <BeforeAfterSlider
+                beforeImage={kitchen02Before}
+                afterImage={kitchen02After}
+              />
+              <div className="mt-5">
+                <h3 className="text-base font-display font-normal text-foreground tracking-wide">KITCHEN Transformation — BARTON CREEK</h3>
+                <div className="w-8 h-px bg-gold mt-2 mb-2" />
+                <p className="text-[0.82rem] text-muted-foreground/75 leading-relaxed">
+                  Repositioned through lighting, layout clarity, and material updates to create a more open and marketable environment.
+                  <br />
+                   Designed and implemented by <a href="https://www.newedgeren.com" target="_blank" rel="noopener noreferrer" className="underline hover:text-foreground transition-colors">New Edge Renovations</a>
+                </p>
+              </div>
+            </ScrollReveal>
+
+            {/* Slider 2 — Office */}
+            <ScrollReveal>
+              <BeforeAfterSlider
+                beforeImage={officeBefore}
+                afterImage={officeAfter}
+              />
+              <div className="mt-5">
+                <h3 className="text-base font-display font-normal text-foreground tracking-wide">Office Transformation — Barton Creek</h3>
+                <div className="w-8 h-px bg-gold mt-2 mb-2" />
+                <p className="text-[0.82rem] text-muted-foreground/75 leading-relaxed">
+                  Repositioned through bold color, upgraded materials, and curated furnishings to create a sophisticated executive workspace.
+                  <br />
+                  Designed and implemented by <a href="https://www.newedgeren.com" target="_blank" rel="noopener noreferrer" className="underline hover:text-foreground transition-colors">New Edge Renovations</a>
+                </p>
+              </div>
+            </ScrollReveal>
+
+            {/* Slider 3 — Bathroom Upgrade Westlake Hills */}
+            <ScrollReveal>
+              <BeforeAfterSlider
+                beforeImage={bath05Before}
+                afterImage={bath05After}
+              />
+              <div className="mt-5">
+                <h3 className="text-base font-display font-normal text-foreground tracking-wide">Bathroom Upgrade — Westlake Hills</h3>
+                <div className="w-8 h-px bg-gold mt-2 mb-2" />
+                <p className="text-[0.82rem] text-muted-foreground/75 leading-relaxed">Elevated through material selection, improved lighting, and clean-lined finishes to match the home's luxury positioning.</p>
+              </div>
+            </ScrollReveal>
+
+            {/* Slider 4 */}
+            <ScrollReveal>
+              <BeforeAfterSlider
+                beforeImage={kitchen03Before}
+                afterImage={kitchen03After}
+              />
+              <div className="mt-5">
+                <h3 className="text-base font-display font-normal text-foreground tracking-wide">Kitchen Refresh — South Austin</h3>
+                <div className="w-8 h-px bg-gold mt-2 mb-2" />
+                <p className="text-[0.82rem] text-muted-foreground/75 leading-relaxed">Updated surfaces, hardware, and lighting to modernize the space without over-improving for the neighborhood.</p>
+              </div>
+            </ScrollReveal>
+
+            {/* Slider 5 */}
+            <ScrollReveal>
+              <BeforeAfterSlider
+                beforeImage={kitchenBefore}
+                afterImage={kitchenAfter}
+              />
+              <div className="mt-5">
+                <h3 className="text-base font-display font-normal text-foreground tracking-wide">Kitchen Transformation — Barton Creek</h3>
+                <div className="w-8 h-px bg-gold mt-2 mb-2" />
+                <p className="text-[0.82rem] text-muted-foreground/75 leading-relaxed">
+                  Repositioned through layout updates, finish upgrades, and improved flow to maximize buyer appeal.
+                  <br />
+                  Designed and implemented by <a href="https://www.newedgeren.com" target="_blank" rel="noopener noreferrer" className="underline hover:text-foreground transition-colors">New Edge Renovations</a>
+                </p>
+              </div>
+            </ScrollReveal>
+
+            {/* Slider 6 — Bathroom South Austin (moved to bottom) */}
+            <ScrollReveal>
+              <BeforeAfterSlider
+                beforeImage={bath04Before}
+                afterImage={bath04After}
+              />
+              <div className="mt-5">
+                <h3 className="text-base font-display font-normal text-foreground tracking-wide">Bathroom Transformation — South Austin</h3>
+                <div className="w-8 h-px bg-gold mt-2 mb-2" />
+                <p className="text-[0.82rem] text-muted-foreground/75 leading-relaxed">Clean-lined materials, upgraded fixtures, and improved lighting to align with today's buyer standards.</p>
+              </div>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
+      {/* ──────────────────────── PRIVATE NETWORK GATEWAY ──────────────────────── */}
+      <section className="py-14 md:py-20 bg-secondary">
+        <div className="max-w-2xl mx-auto px-6 text-center">
+          <ScrollReveal>
+            <p className="text-minimal text-gold mb-5 tracking-[0.3em]">Private Network</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-6 leading-[1.15]">
+              Have a Property That Needs Work?
+            </h2>
+            <p className="text-muted-foreground max-w-xl mx-auto leading-relaxed mb-4 text-[0.95rem]">
+              We selectively connect properties with a vetted network of investors seeking
+              renovation and value-add opportunities across Austin.
+            </p>
+            <p className="text-sm text-muted-foreground/50 italic mb-10">
+              Discreet, straightforward, and no obligation.
+            </p>
+          </ScrollReveal>
+
+          <ScrollReveal delay={100}>
+            <form onSubmit={handlePropSubmit} className="max-w-md mx-auto text-left">
+              <div className="space-y-2.5">
+                <div>
+                  <input type="text" name="propName" placeholder="Full Name" value={propForm.propName} onChange={handlePropChange} className="w-full bg-transparent border-b border-border/60 px-1 py-3 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-gold transition-colors duration-300 text-sm" required />
+                  {propErrors.propName && <p className="text-xs text-destructive mt-1">{propErrors.propName}</p>}
+                </div>
+                <div>
+                  <input type="tel" name="propPhone" placeholder="Phone" value={propForm.propPhone} onChange={handlePropChange} className="w-full bg-transparent border-b border-border/60 px-1 py-3 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-gold transition-colors duration-300 text-sm" required />
+                  {propErrors.propPhone && <p className="text-xs text-destructive mt-1">{propErrors.propPhone}</p>}
+                </div>
+                <div>
+                  <input type="email" name="propEmail" placeholder="Email" value={propForm.propEmail} onChange={handlePropChange} className="w-full bg-transparent border-b border-border/60 px-1 py-3 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-gold transition-colors duration-300 text-sm" required />
+                  {propErrors.propEmail && <p className="text-xs text-destructive mt-1">{propErrors.propEmail}</p>}
+                </div>
+                <div>
+                  <input type="text" name="propAddress" placeholder="Property Address" value={propForm.propAddress} onChange={handlePropChange} className="w-full bg-transparent border-b border-border/60 px-1 py-3 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-gold transition-colors duration-300 text-sm" required />
+                  {propErrors.propAddress && <p className="text-xs text-destructive mt-1">{propErrors.propAddress}</p>}
+                </div>
+              </div>
+              <div className="pt-8">
+                <button type="submit" disabled={propSubmitting} className="w-full py-3.5 bg-primary text-primary-foreground text-xs tracking-[0.25em] uppercase font-medium hover:bg-gold hover:text-white hover:-translate-y-px hover:shadow-md transition-all duration-300 disabled:opacity-50">
+                  {propSubmitting ? "Submitting…" : "REQUEST CASH OFFER"}
+                </button>
+              </div>
+            </form>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      <section className="pt-16 md:pt-20 pb-12 md:pb-16 bg-background">
+        <div className="max-w-6xl mx-auto px-6">
+          <ScrollReveal>
+            <p className="text-minimal text-gold mb-4">Strategic Approach</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-6 max-w-3xl">
+              Investment Representation Built Around Opportunity, Not Emotion
+            </h2>
+            <p className="text-foreground max-w-3xl leading-relaxed mb-6">
+              This is not a generic home search experience. We help investors identify the right
+              opportunities, understand neighborhood-specific demand, assess improvement potential,
+              and make smarter acquisition decisions with resale or hold strategy in mind. Every
+              recommendation is grounded in data, local insight, and a clear understanding of
+              where value is created — from <Link to="/off-market-real-estate-austin" className="text-foreground underline hover:text-muted-foreground">off-market deals</Link> to on-market value plays.
+            </p>
+            <p className="text-foreground max-w-3xl leading-relaxed mb-16">
+              Source smarter opportunities, evaluate upside with more precision, and move faster in Austin with an advisor who understands renovation potential, redevelopment value, and resale positioning. Explore our <Link to="/austin-multifamily-report-2026" className="text-foreground underline hover:text-muted-foreground">Austin multifamily market outlook</Link> for current data.
+            </p>
+          </ScrollReveal>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {credibilityCards.map((card, i) => (
+              <ScrollReveal key={card.title} delay={i * 100}>
+                <div className="group border-2 border-border p-8 h-full hover:border-gold transition-colors duration-500">
+                  <CheckCircle className="w-8 h-8 text-gold mb-4" />
+                  <h3 className="text-2xl font-display font-normal text-architectural mb-3 group-hover:text-muted-foreground transition-colors duration-300">
+                    {card.title}
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    {card.description}
+                  </p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ──────────────────────── HOW WE HELP ──────────────────────── */}
+      <section className="pt-12 md:pt-16 pb-24 md:pb-32 bg-secondary">
+        <div className="max-w-6xl mx-auto px-6">
+          <ScrollReveal>
+            <p className="text-minimal text-gold mb-4">Value Proposition</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-16 max-w-3xl">
+              How We Help Austin Investors
+              <br />
+              Move <em className="italic not-prose">Smarter</em>
+            </h2>
+          </ScrollReveal>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {howWeHelp.map((card, i) => (
+              <ScrollReveal key={card.title} delay={i * 80}>
+                <div className="group border-2 border-border bg-card p-8 h-full hover:border-gold transition-colors duration-500">
+                  <card.icon className="w-5 h-5 text-gold mb-4" />
+                  <h3 className="text-lg font-display font-normal text-foreground mb-2">
+                    {card.title}
+                  </h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    {card.description}
+                  </p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="relative py-24 md:py-32 bg-secondary overflow-hidden">
         {/* Watermark */}
         <div

@@ -5,6 +5,7 @@ import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createFAQSchema, createBreadcrumbSchema, createPlaceSchema } from "@/components/SchemaMarkup";
 import { seoCommunityPages } from "@/data/seoCommunityData";
 import AboutBlock from "@/components/AboutBlock";
+import rollingwoodBoundary from "@/assets/communities/rollingwood-boundary.png";
 
 const Footer = lazy(() => import("@/components/Footer"));
 const RealScoutListings = lazy(() => import("@/components/RealScoutListings"));

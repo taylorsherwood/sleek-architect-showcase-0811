@@ -14,6 +14,7 @@ import catMountainImg from "@/assets/community-cat-mountain.jpg";
 import balconesImg from "@/assets/communities/balcones-park.webp";
 import balconesHeroImg from "@/assets/communities/balcones-park-hero.jpg";
 import beeCaveImg from "@/assets/communities/bee-cave.avif";
+import beeCaveHeroImg from "@/assets/communities/bee-cave-hero.jpg";
 import clarksvilleImg from "@/assets/communities/clarksville.jpg";
 import greatHillsImg from "@/assets/communities/great-hills.jpg";
 import hydeParkImg from "@/assets/communities/hyde-park.jpg";
@@ -1724,6 +1725,7 @@ The neighborhood demonstrates remarkable demand resilience during market downtur
     metaDescription: "Browse homes for sale in Bee Cave TX near Austin. Hill Country living, top schools, shopping, and homes from $500K to $8M+.",
     priceRange: "$500K – $8M+",
     image: beeCaveImg,
+    heroImage: beeCaveHeroImg,
     overview: `Bee Cave is a thriving Hill Country city located along Highway 71 approximately 15 miles west of downtown Austin. Once a quiet rural community, Bee Cave has evolved into one of the most desirable suburban destinations in the Austin metro.
 
 ### Upscale Living

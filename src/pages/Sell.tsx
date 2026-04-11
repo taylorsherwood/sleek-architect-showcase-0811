@@ -28,6 +28,9 @@ import {
 import heroImg from "@/assets/sell-hero-luxury-home.jpg";
 import taylorProfileSell from "@/assets/echelon-for-sale-sign.jpg";
 import echelonWatermark from "@/assets/echelon-watermark.png";
+import austinLuxuryNetwork from "@/assets/austin-luxury-network.jpg";
+import topAgentNetwork from "@/assets/top-agent-network.webp";
+import commissionClubhouse from "@/assets/clubhouse-commission.png";
 
 /* ------------------------------------------------------------------ */
 /*  DATA                                                               */
@@ -489,6 +492,17 @@ const Sell = () => {
                 </div>
               </ScrollReveal>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Network Logos ── */}
+      <section className="py-12 md:py-16 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="flex flex-wrap items-center justify-center gap-10 md:gap-16">
+            <img src={austinLuxuryNetwork} alt="Austin Luxury Network" className="h-12 md:h-16 object-contain" />
+            <img src={topAgentNetwork} alt="Top Agent Network" className="h-12 md:h-16 object-contain" />
+            <img src={commissionClubhouse} alt="Commission Clubhouse" className="h-12 md:h-16 object-contain" />
           </div>
         </div>
       </section>

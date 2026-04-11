@@ -302,12 +302,6 @@ const CommunityPage = () => {
         </section>
       )}
 
-      {/* Neighborhood Boundary Map */}
-      <CommunityBoundaryMap
-        imageSrc={`/images/communities/${community.slug}-boundary.png`}
-        communityName={community.name}
-      />
-
       {/* Content */}
       <article className="pb-20">
         <div className="container mx-auto px-6">
@@ -319,7 +313,20 @@ const CommunityPage = () => {
               </h2>
               <ContentBlock text={community.overview} currentSlug={community.slug} />
             </section>
+          </div>
+        </div>
+      </article>
 
+      {/* Neighborhood Boundary Map */}
+      <CommunityBoundaryMap
+        imageSrc={`/images/communities/${community.slug}-boundary.png`}
+        communityName={community.name}
+      />
+
+      {/* Remaining Content */}
+      <article className="pb-20">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto space-y-16">
             {/* Lifestyle */}
             <section>
               <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">

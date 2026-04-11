@@ -360,13 +360,13 @@ const Invest = () => {
         <div className="absolute inset-0 bg-[#0C0F24]/[0.32]" style={{ zIndex: 1 }} />
         <div className="relative container mx-auto px-6 pb-16" style={{ zIndex: 2 }}>
           <div className="max-w-xl mb-14">
-            <p className="text-minimal text-gold mb-4 ml-1">PRIVATE ACCESS</p>
-            <h1 className="text-3xl sm:text-4xl md:text-6xl font-display font-normal text-primary-foreground leading-[1.1] mb-6">
+            <p className="text-minimal text-gold mb-4 ml-1" style={{ textShadow: "0 0 20px rgba(0,0,0,0.6), 0 1px 4px rgba(0,0,0,0.4)" }}>PRIVATE ACCESS</p>
+            <h1 className="text-3xl sm:text-4xl md:text-6xl font-display font-normal text-primary-foreground leading-[1.1] mb-6" style={{ textShadow: "0 2px 10px rgba(0,0,0,0.5), 0 0 30px rgba(0,0,0,0.3), 0 1px 3px rgba(0,0,0,0.3)" }}>
               Access Investment &amp;
               <br />
               Off-Market Opportunities
             </h1>
-            <p className="text-primary-foreground/70 text-lg max-w-lg mb-8">
+            <p className="text-primary-foreground/70 text-lg max-w-lg mb-8" style={{ textShadow: "0 1px 8px rgba(0,0,0,0.5), 0 0 20px rgba(0,0,0,0.3)" }}>
               Select deals, private listings, and value-add opportunities across Austin.
             </p>
             <Link

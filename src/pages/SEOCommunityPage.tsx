@@ -93,7 +93,7 @@ const SEOCommunityPage = () => {
 
             {/* Neighborhood Boundary Map */}
             <CommunityBoundaryMap
-              imageSrc={`/images/communities/${community.slug}-boundary.png`}
+              imageSrc={`/images/communities/${community.slug}-boundary.webp`}
               communityName={community.name}
             />
 

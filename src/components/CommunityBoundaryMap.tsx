@@ -25,9 +25,12 @@ const CommunityBoundaryMap = ({ imageSrc, communityName }: CommunityBoundaryMapP
             src={imageSrc}
             alt={`${communityName} neighborhood boundary map showing the community borders in Austin, Texas`}
             className="w-full rounded-[10px] shadow-md"
+            width={1000}
+            height={700}
             style={{ maxWidth: 1000 }}
             loading="lazy"
             decoding="async"
+            fetchPriority="low"
             onError={() => setImageExists(false)}
           />
           <p className="text-sm text-muted-foreground mt-4">

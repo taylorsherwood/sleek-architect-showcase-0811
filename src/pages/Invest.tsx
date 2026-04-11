@@ -366,7 +366,7 @@ const Invest = () => {
               <br />
               Off-Market Opportunities
             </h1>
-            <p className="text-primary-foreground/70 text-lg max-w-lg mb-8" style={{ textShadow: "0 1px 8px rgba(0,0,0,0.5), 0 0 20px rgba(0,0,0,0.3)" }}>
+            <p className="text-primary-foreground text-lg max-w-lg mb-8" style={{ textShadow: "0 1px 8px rgba(0,0,0,0.5), 0 0 20px rgba(0,0,0,0.3)" }}>
               Select deals, private listings, and value-add opportunities across Austin.
             </p>
             <Link

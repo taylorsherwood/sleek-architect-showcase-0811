@@ -289,7 +289,7 @@ const CommunityPage = () => {
           <div className="container mx-auto px-6">
             <div className="max-w-7xl mx-auto">
               <img
-                src={community.image}
+                src={community.heroImage || community.image}
                 alt={`Luxury homes in ${community.name} Austin Texas`}
                 title={`${community.name} real estate — luxury homes for sale in Austin`}
                 className="w-full aspect-[16/9] object-cover"

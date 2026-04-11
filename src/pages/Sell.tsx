@@ -503,7 +503,7 @@ const Sell = () => {
           <div className="flex flex-wrap items-center justify-center gap-10 md:gap-16">
             <img src={austinLuxuryNetwork} alt="Austin Luxury Network" className="h-12 md:h-16 object-contain" />
             <img src={topAgentNetwork} alt="Top Agent Network" className="h-12 md:h-16 object-contain" />
-            <img src={commissionClubhouse} alt="Commission Clubhouse" className="h-12 md:h-16 object-contain translate-x-2 translate-y-1" />
+            <img src={commissionClubhouse} alt="Commission Clubhouse" className="h-12 md:h-16 object-contain translate-x-4 translate-y-2" />
           </div>
         </div>
       </section>

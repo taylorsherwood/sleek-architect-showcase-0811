@@ -5,7 +5,7 @@ import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createFAQSchema, createBreadcrumbSchema, createPlaceSchema } from "@/components/SchemaMarkup";
 import { seoCommunityPages } from "@/data/seoCommunityData";
 import AboutBlock from "@/components/AboutBlock";
-import rollingwoodBoundary from "@/assets/communities/rollingwood-boundary.png";
+import CommunityBoundaryMap from "@/components/CommunityBoundaryMap";
 
 const Footer = lazy(() => import("@/components/Footer"));
 const RealScoutListings = lazy(() => import("@/components/RealScoutListings"));
@@ -91,22 +91,11 @@ const SEOCommunityPage = () => {
               </div>
             </section>
 
-            {/* Neighborhood Boundary Map (Rollingwood only) */}
-            {community.slug === "rollingwood" && (
-              <section className="flex flex-col items-center py-2">
-                <img
-                  src={rollingwoodBoundary}
-                  alt="Rollingwood neighborhood boundary map showing the community borders in Austin, Texas"
-                  className="w-full rounded-[10px] shadow-md"
-                  style={{ maxWidth: 1000 }}
-                  loading="lazy"
-                  decoding="async"
-                />
-                <p className="text-sm text-muted-foreground mt-4">
-                  Rollingwood neighborhood boundary for reference.
-                </p>
-              </section>
-            )}
+            {/* Neighborhood Boundary Map */}
+            <CommunityBoundaryMap
+              imageSrc={`/images/communities/${community.slug}-boundary.png`}
+              communityName={community.name}
+            />
 
             {/* Market */}
             <section>

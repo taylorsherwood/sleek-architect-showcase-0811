@@ -1348,7 +1348,7 @@ Pemberton Heights is served by Austin ISD, with homes typically zoned to Mathews
     date: "2026-04-06",
     readTime: "6 min read",
     category: "NEIGHBORHOODS",
-    image: heroArch
+    image: blogPembertonHeights
   },
   {
     id: "guide-to-lakeway-waterfront-golf-living",

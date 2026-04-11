@@ -1,4 +1,5 @@
 import { lazy, Suspense } from "react";
+import rollingwoodBoundary from "@/assets/communities/rollingwood-boundary.png";
 import { useParams, Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 const Footer = lazy(() => import("@/components/Footer"));

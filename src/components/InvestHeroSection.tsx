@@ -11,20 +11,27 @@ const InvestHeroSection = ({ children }: Props) => {
   const sectionRef = useRef<HTMLElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
   const hasPlayedOnce = useRef(false);
+  const [videoReady, setVideoReady] = useState(false);
 
   const playVideo = () => {
     const video = videoRef.current;
     if (!video) return;
-    // Reset to beginning and play once
     video.currentTime = 0;
     video.playbackRate = 1.5;
-    video.play().catch(() => {});
+    video.play().then(() => {
+      setVideoReady(true);
+    }).catch(() => {});
   };
 
-  // Play on initial load
+  // Play on initial load — wait for enough data buffered
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
+
+    video.muted = true;
+    video.defaultMuted = true;
+    video.setAttribute("muted", "");
+    video.setAttribute("playsinline", "");
 
     const onReady = () => {
       if (!hasPlayedOnce.current) {
@@ -33,11 +40,11 @@ const InvestHeroSection = ({ children }: Props) => {
       }
     };
 
-    if (video.readyState >= 2) {
+    if (video.readyState >= 3) {
       onReady();
     } else {
-      video.addEventListener("canplay", onReady, { once: true });
-      return () => video.removeEventListener("canplay", onReady);
+      video.addEventListener("canplaythrough", onReady, { once: true });
+      return () => video.removeEventListener("canplaythrough", onReady);
     }
   }, []);
 
@@ -64,15 +71,27 @@ const InvestHeroSection = ({ children }: Props) => {
       ref={sectionRef}
       className="relative h-screen flex flex-col justify-end overflow-hidden bg-primary"
     >
-      {/* Video background */}
-      <div className="absolute inset-0" style={{ zIndex: 0 }}>
+      {/* Poster fallback */}
+      <img
+        src={POSTER_URL}
+        alt=""
+        aria-hidden="true"
+        className="absolute inset-0 w-full h-full object-cover object-top"
+        style={{ zIndex: 0 }}
+        loading="eager"
+      />
+
+      {/* Video background — fades in when ready */}
+      <div
+        className="absolute inset-0 transition-opacity duration-700"
+        style={{ zIndex: 0, opacity: videoReady ? 1 : 0 }}
+      >
         <video
           ref={videoRef}
           className="w-full h-full object-cover object-top"
           muted
           playsInline
           preload="auto"
-          poster={POSTER_URL}
         >
           <source src={VIDEO_URL} type="video/mp4" />
         </video>

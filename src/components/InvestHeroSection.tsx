@@ -1,6 +1,5 @@
-import { useEffect, useRef, useState, type ReactNode } from "react";
+import { useEffect, useRef, type ReactNode } from "react";
 
-const POSTER_URL = "/images/hero-poster.jpg";
 const VIDEO_URL = "/videos/invest-hero.mp4";
 
 interface Props {
@@ -11,19 +10,16 @@ const InvestHeroSection = ({ children }: Props) => {
   const sectionRef = useRef<HTMLElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
   const hasPlayedOnce = useRef(false);
-  const [videoReady, setVideoReady] = useState(false);
 
   const playVideo = () => {
     const video = videoRef.current;
     if (!video) return;
     video.currentTime = 0;
     video.playbackRate = 1;
-    video.play().then(() => {
-      setVideoReady(true);
-    }).catch(() => {});
+    video.play().catch(() => {});
   };
 
-  // Play on initial load — wait for enough data buffered
+  // Play as soon as possible on initial load
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
@@ -40,15 +36,15 @@ const InvestHeroSection = ({ children }: Props) => {
       }
     };
 
-    if (video.readyState >= 3) {
+    if (video.readyState >= 2) {
       onReady();
     } else {
-      video.addEventListener("canplaythrough", onReady, { once: true });
-      return () => video.removeEventListener("canplaythrough", onReady);
+      video.addEventListener("loadeddata", onReady, { once: true });
+      return () => video.removeEventListener("loadeddata", onReady);
     }
   }, []);
 
-  // Re-play when section scrolls into view (after initial load)
+  // Re-play when section scrolls into view
   useEffect(() => {
     const el = sectionRef.current;
     if (!el) return;
@@ -71,24 +67,11 @@ const InvestHeroSection = ({ children }: Props) => {
       ref={sectionRef}
       className="relative h-screen flex flex-col justify-end overflow-hidden bg-primary"
     >
-      {/* Poster fallback */}
-      <img
-        src={POSTER_URL}
-        alt=""
-        aria-hidden="true"
-        className="absolute inset-0 w-full h-full object-cover object-top"
-        style={{ zIndex: 0 }}
-        loading="eager"
-      />
-
-      {/* Video background — fades in when ready */}
-      <div
-        className="absolute inset-0 transition-opacity duration-700"
-        style={{ zIndex: 0, opacity: videoReady ? 1 : 0 }}
-      >
+      <div className="absolute inset-0" style={{ zIndex: 0 }}>
         <video
           ref={videoRef}
           className="w-full h-full object-cover object-top"
+          autoPlay
           muted
           playsInline
           preload="auto"

@@ -316,7 +316,10 @@ const CommunityPage = () => {
 
             {/* Neighborhood Boundary Map (Rollingwood only) */}
             {community.slug === "rollingwood" && (
-              <section className="flex flex-col items-center">
+              <section className="flex flex-col items-center pt-12">
+                <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6 self-start w-full">
+                  Neighborhood Boundaries
+                </h2>
                 <img
                   src={rollingwoodBoundary}
                   alt="Rollingwood neighborhood boundary map showing the community borders in Austin, Texas"
@@ -326,7 +329,7 @@ const CommunityPage = () => {
                   decoding="async"
                 />
                 <p className="text-sm text-muted-foreground mt-4">
-                  Rollingwood neighborhood boundary for reference.
+                  Approximate Rollingwood neighborhood boundary.
                 </p>
               </section>
             )}

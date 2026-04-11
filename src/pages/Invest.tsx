@@ -529,7 +529,7 @@ const Invest = () => {
                 afterImage={kitchen03After}
               />
               <div className="mt-5">
-                <h3 className="text-base font-display font-normal text-foreground tracking-wide">Kitchen Refresh — South Austin</h3>
+                <h3 className="text-base font-display font-normal text-foreground tracking-wide">Kitchen Refresh — westlake hills</h3>
                 <div className="w-8 h-px bg-gold mt-2 mb-2" />
                 <p className="text-[0.82rem] text-muted-foreground/75 leading-relaxed">Updated surfaces, hardware, and lighting to modernize the space without over-improving for the neighborhood. This property generated over 150 showings and multiple offers.</p>
               </div>

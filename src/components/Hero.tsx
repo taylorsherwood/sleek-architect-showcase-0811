@@ -31,9 +31,7 @@ const Hero = () => {
       setShowFallback(true);
       return;
     }
-    // Delay video load until after first paint + initial render settle
-    const id = setTimeout(() => setVideoSrc("/videos/hero-video.mp4"), 150);
-    return () => clearTimeout(id);
+    setVideoSrc("/videos/hero-video.mp4");
   }, []);
 
   useEffect(() => {
@@ -116,7 +114,7 @@ const Hero = () => {
           muted
           loop
           playsInline
-          preload="none"
+          preload="auto"
           poster="/images/hero-poster.jpg"
           className={`hero-bg-video ${videoReady ? "opacity-100" : "opacity-0"}`}
           width={1920}

@@ -1,4 +1,5 @@
 import { lazy, Suspense } from "react";
+import rollingwoodBoundary from "@/assets/communities/rollingwood-boundary.png";
 import { useParams, Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 const Footer = lazy(() => import("@/components/Footer"));
@@ -312,6 +313,23 @@ const CommunityPage = () => {
               </h2>
               <ContentBlock text={community.overview} currentSlug={community.slug} />
             </section>
+
+            {/* Neighborhood Boundary Map (Rollingwood only) */}
+            {community.slug === "rollingwood" && (
+              <section className="flex flex-col items-center">
+                <img
+                  src={rollingwoodBoundary}
+                  alt="Rollingwood neighborhood boundary map showing the community borders in Austin, Texas"
+                  className="w-full rounded-[10px] shadow-md"
+                  style={{ maxWidth: 1000 }}
+                  loading="lazy"
+                  decoding="async"
+                />
+                <p className="text-sm text-muted-foreground mt-4">
+                  Rollingwood neighborhood boundary for reference.
+                </p>
+              </section>
+            )}
 
             {/* Lifestyle */}
             <section>

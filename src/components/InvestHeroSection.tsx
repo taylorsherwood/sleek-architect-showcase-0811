@@ -17,7 +17,7 @@ const InvestHeroSection = ({ children }: Props) => {
     if (!video) return;
     // Reset to beginning and play once
     video.currentTime = 0;
-    video.playbackRate = 1.25;
+    video.playbackRate = 1.5;
     video.play().catch(() => {});
   };
 

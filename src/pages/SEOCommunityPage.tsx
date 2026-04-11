@@ -91,6 +91,23 @@ const SEOCommunityPage = () => {
               </div>
             </section>
 
+            {/* Neighborhood Boundary Map (Rollingwood only) */}
+            {community.slug === "rollingwood" && (
+              <section className="flex flex-col items-center py-2">
+                <img
+                  src={rollingwoodBoundary}
+                  alt="Rollingwood neighborhood boundary map showing the community borders in Austin, Texas"
+                  className="w-full rounded-[10px] shadow-md"
+                  style={{ maxWidth: 1000 }}
+                  loading="lazy"
+                  decoding="async"
+                />
+                <p className="text-sm text-muted-foreground mt-4">
+                  Rollingwood neighborhood boundary for reference.
+                </p>
+              </section>
+            )}
+
             {/* Market */}
             <section>
               <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">

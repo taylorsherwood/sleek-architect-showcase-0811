@@ -17,7 +17,7 @@ const InvestHeroSection = ({ children }: Props) => {
     const video = videoRef.current;
     if (!video) return;
     video.currentTime = 0;
-    video.playbackRate = 1.5;
+    video.playbackRate = 1;
     video.play().then(() => {
       setVideoReady(true);
     }).catch(() => {});

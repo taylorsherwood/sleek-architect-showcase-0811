@@ -68,7 +68,7 @@ const InvestHeroSection = ({ children }: Props) => {
       <div className="absolute inset-0" style={{ zIndex: 0 }}>
         <video
           ref={videoRef}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-top"
           muted
           playsInline
           preload="auto"

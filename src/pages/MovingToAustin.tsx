@@ -186,7 +186,7 @@ const MovingToAustin = () => {
 
                 <div className="border-l-2 border-gold pl-6">
                   <h3 className="text-xl font-display font-medium mb-2">
-                    <Link to="/communities/lake-travis" className="hover:text-muted-foreground transition-colors">Lake Travis Waterfront</Link>
+                    <Link to="/communities/lake-travis" className="hover:text-muted-foreground transition-colors">Lake Travis</Link>
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
                     Over 60 miles of Hill Country shoreline with deep-water access, private docks, and resort-style living. Lake Travis waterfront homes range from $1M to $15M+. Buyers from coastal markets appreciate the open-water recreation and dramatic cliff-side homesites that rival lakefront destinations nationwide.

@@ -21,7 +21,7 @@ const neighborhoods = [
   { name: "Tarrytown", slug: "tarrytown", price: "$800K – $8M+", highlight: "Walkable streets, eclectic architecture, central Austin location", best: "Urban lifestyle buyers, walkability prioritizers, young families" },
   { name: "Rob Roy", slug: "rob-roy", price: "$1.5M – $20M+", highlight: "Gated hilltop estates, panoramic views, Eanes ISD, multiple exclusive enclaves", best: "Privacy-focused buyers, executives, estate-scale architecture seekers" },
   { name: "Pemberton Heights", slug: "pemberton-heights", price: "$1.5M – $10M+", highlight: "Distinguished central estates, half-acre lots, walk-to-downtown convenience", best: "Established professionals, legacy families, prestige-driven central Austin buyers" },
-  { name: "Lake Travis Waterfront", slug: "lake-travis", price: "$1M – $15M+", highlight: "Deep-water lakefront, private docks, Hill Country cliff-side estates", best: "Waterfront lifestyle buyers, second-home owners, boating enthusiasts" },
+  { name: "Lake Travis", slug: "lake-travis", price: "$1M – $15M+", highlight: "Deep-water lakefront, private docks, Hill Country cliff-side estates", best: "Waterfront lifestyle buyers, second-home owners, boating enthusiasts" },
   { name: "Lakeway", slug: "lakeway", price: "$600K – $5M+", highlight: "Lake Travis waterfront, championship golf, resort-caliber amenities", best: "Lake lifestyle buyers, families seeking Lake Travis ISD, retirees" },
   { name: "Bee Cave", slug: "bee-cave", price: "$500K – $8M+", highlight: "Hill Country Galleria, Lake Travis ISD, master-planned and custom estate living", best: "Families upgrading from central Austin, Hill Country lifestyle seekers" },
   { name: "Steiner Ranch", slug: "steiner-ranch", price: "$500K – $13M+", highlight: "Master-planned resort living, Lake Austin access, comprehensive amenities", best: "Families, outdoor enthusiasts, buyers seeking value-driven luxury" },
@@ -217,7 +217,7 @@ const BestLuxuryNeighborhoods = () => {
               <Link to="/communities/rob-roy" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ ROB ROY</Link>
               <Link to="/communities/pemberton-heights" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ PEMBERTON HEIGHTS</Link>
               <Link to="/communities/lakeway" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ LAKEWAY</Link>
-              <Link to="/communities/lake-travis" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ LAKE TRAVIS WATERFRONT</Link>
+              <Link to="/communities/lake-travis" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ LAKE TRAVIS</Link>
               <Link to="/communities/bee-cave" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ BEE CAVE</Link>
               <Link to="/communities/steiner-ranch" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ STEINER RANCH</Link>
               <Link to="/off-market-real-estate-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ OFF-MARKET REAL ESTATE</Link>

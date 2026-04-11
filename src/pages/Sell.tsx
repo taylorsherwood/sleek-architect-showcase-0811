@@ -545,6 +545,8 @@ const Sell = () => {
         <GlobalLuxuryAdvertising />
       </Suspense>
 
+      <div className="h-12 md:h-20 bg-background" aria-hidden="true" />
+
       <Suspense fallback={<div className="min-h-[200px]" />}>
         <Testimonials />
       </Suspense>

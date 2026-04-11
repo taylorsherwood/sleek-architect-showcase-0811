@@ -1316,7 +1316,7 @@ The neighborhood's walkability and proximity to downtown make it highly attracti
   },
   {
     slug: "lake-travis",
-    name: "Lake Travis Waterfront",
+    name: "Lake Travis",
     heroTitle: "Lake Travis Waterfront Homes for Sale",
     metaTitle: "Lake Travis Waterfront Homes | Echelon Property Group",
     metaDescription: "Browse waterfront homes for sale on Lake Travis TX. Lakefront estates, deep-water access, and Hill Country views from $1M to $15M+.",

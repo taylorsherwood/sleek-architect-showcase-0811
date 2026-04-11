@@ -109,7 +109,7 @@ const Footer = () => {
                 <a href="tel:+15126613843" className="block transition-colors duration-300 hover:text-white">(512) 661-3843</a>
                 <a href="mailto:taylor@echelonpropertygroup.com" className="block transition-colors duration-300 hover:text-white" style={{ fontSize: "11.5px" }}>taylor@echelonpropertygroup.com</a>
               </div>
-              <div className="mt-5 flex flex-col gap-1.5 items-center sm:items-start">
+              <div className="mt-5 flex flex-col gap-1.5 items-start">
                 <a href="https://www.linkedin.com/in/taylorsherwood/" target="_blank" rel="noopener noreferrer nofollow"
                   className="inline-flex items-center gap-2 transition-colors duration-300 hover:text-[#b8a06d]"
                   style={{ fontFamily: '"Jost", sans-serif', fontWeight: 300, fontSize: "11.5px", color: "rgba(255,255,255,0.55)" }}>

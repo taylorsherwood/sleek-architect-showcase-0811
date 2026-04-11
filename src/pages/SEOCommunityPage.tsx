@@ -56,7 +56,7 @@ const SEOCommunityPage = () => {
       <Navigation />
 
       {/* Hero */}
-      <section className="pt-32 pb-16">
+      <section className="pt-40 md:pt-44 pb-16">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
             <Link

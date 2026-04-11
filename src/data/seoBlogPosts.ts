@@ -8,6 +8,7 @@ import listing2 from "@/assets/listing-2.jpg";
 import listing1 from "@/assets/listing-1.jpg";
 import blogRollingwoodVsWestlake from "@/assets/blog-rollingwood-vs-westlake.jpg";
 import robRoyImg from "@/assets/communities/rob-roy.png";
+import steinerRanchImg from "@/assets/communities/steiner-ranch.webp";
 import blogPembertonHeights from "@/assets/pemberton-heights.avif";
 import blogBeeCaveVsLakeway from "@/assets/bee-cave-vs-lakeway.jpg";
 
@@ -1494,6 +1495,6 @@ Yes. Steiner Ranch is one of Austin's most family-oriented communities, with poo
     date: "2026-04-02",
     readTime: "7 min read",
     category: "NEIGHBORHOODS",
-    image: listing2
+    image: steinerRanchImg
   }
 ];

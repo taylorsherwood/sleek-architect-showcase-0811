@@ -1,5 +1,5 @@
 import { lazy, Suspense } from "react";
-import rollingwoodBoundary from "@/assets/communities/rollingwood-boundary.png";
+import CommunityBoundaryMap from "@/components/CommunityBoundaryMap";
 import { useParams, Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 const Footer = lazy(() => import("@/components/Footer"));
@@ -302,33 +302,11 @@ const CommunityPage = () => {
         </section>
       )}
 
-      {/* Neighborhood Boundary Map (Rollingwood only) */}
-      {community.slug === "rollingwood" && (
-        <section className="bg-secondary/40 py-20 md:py-24">
-          <div className="container mx-auto px-6">
-            <div className="max-w-4xl mx-auto flex flex-col items-center">
-              <div className="w-full h-px bg-border mb-10" />
-              <p className="text-minimal text-muted-foreground tracking-widest mb-3 self-start">
-                EXPLORE THE GEOGRAPHIC FOOTPRINT OF ROLLINGWOOD
-              </p>
-              <h2 className="text-2xl md:text-3xl font-display font-normal text-architectural tracking-tight mb-8 self-start w-full">
-                Neighborhood Boundaries
-              </h2>
-              <img
-                src={rollingwoodBoundary}
-                alt="Rollingwood neighborhood boundary map showing the community borders in Austin, Texas"
-                className="w-full rounded-[10px] shadow-md"
-                style={{ maxWidth: 1000 }}
-                loading="lazy"
-                decoding="async"
-              />
-              <p className="text-sm text-muted-foreground mt-4">
-                Approximate Rollingwood neighborhood boundary.
-              </p>
-            </div>
-          </div>
-        </section>
-      )}
+      {/* Neighborhood Boundary Map */}
+      <CommunityBoundaryMap
+        imageSrc={`/images/communities/${community.slug}-boundary.png`}
+        communityName={community.name}
+      />
 
       {/* Content */}
       <article className="pb-20">

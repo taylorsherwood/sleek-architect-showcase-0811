@@ -12,6 +12,7 @@ const SESSION_KEY = "echelon_advisory_bar_dismissed";
 const FloatingContact = () => {
   const [open, setOpen] = useState(false);
   const [visible, setVisible] = useState(false);
+  const [timerReady, setTimerReady] = useState(false);
   const location = useLocation();
   const isHomepage = location.pathname === "/";
   const isConnectPage = location.pathname === "/connect";
@@ -25,6 +26,12 @@ const FloatingContact = () => {
   const [heroVisible, setHeroVisible] = useState(true);
   const [footerVisible, setFooterVisible] = useState(false);
   const delayTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  // 20-second delay before allowing visibility
+  useEffect(() => {
+    const t = setTimeout(() => setTimerReady(true), 20000);
+    return () => clearTimeout(t);
+  }, []);
 
   useEffect(() => {
     const onDismissed = () => setAdvisoryDismissed(true);
@@ -76,7 +83,7 @@ const FloatingContact = () => {
   useEffect(() => {
     if (delayTimer.current) clearTimeout(delayTimer.current);
 
-    const shouldShow = advisoryDismissed && !isConnectPage && !footerVisible && (!isHomepage || !heroVisible);
+    const shouldShow = timerReady && advisoryDismissed && !isConnectPage && !footerVisible && (!isHomepage || !heroVisible);
 
     if (shouldShow) {
       delayTimer.current = setTimeout(() => setVisible(true), 1000);
@@ -87,7 +94,7 @@ const FloatingContact = () => {
     return () => {
       if (delayTimer.current) clearTimeout(delayTimer.current);
     };
-  }, [advisoryDismissed, isHomepage, bannerVisible, heroVisible, footerVisible]);
+  }, [timerReady, advisoryDismissed, isHomepage, bannerVisible, heroVisible, footerVisible]);
 
   return (
     <>

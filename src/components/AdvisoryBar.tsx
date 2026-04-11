@@ -27,6 +27,7 @@ const HIDDEN_ROUTES = ["/contact", "/connect", "/austin-multifamily-report-2026"
 const AdvisoryBar = () => {
   const [visible, setVisible] = useState(false);
   const [dismissed, setDismissed] = useState(false);
+  const [timerReady, setTimerReady] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
   const [form, setForm] = useState({ name: "", email: "", phone: "", lookingFor: "" });
   const [errors, setErrors] = useState<Record<string, string>>({});
@@ -45,11 +46,18 @@ const AdvisoryBar = () => {
     window.dispatchEvent(new CustomEvent("advisory-bar-dismissed"));
   }, []);
 
+  // 20-second delay before allowing visibility
+  useEffect(() => {
+    const t = setTimeout(() => setTimerReady(true), 20000);
+    return () => clearTimeout(t);
+  }, []);
+
   useEffect(() => {
     if (sessionStorage.getItem(SESSION_KEY)) {
       setDismissed(true);
       return;
     }
+    if (!timerReady) return;
 
     let lastScrollY = window.scrollY;
 

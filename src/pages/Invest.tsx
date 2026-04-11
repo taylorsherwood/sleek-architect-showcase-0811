@@ -354,20 +354,9 @@ const Invest = () => {
 
       {/* ──────────────────────── PRIVATE ACCESS HERO ──────────────────────── */}
       {/* ──────────────────────── PRIVATE ACCESS HERO ──────────────────────── */}
-      <section className="relative h-screen flex flex-col justify-end overflow-hidden bg-primary">
-        <div className="absolute inset-0">
-          <img
-            src={heroImg}
-            alt="Austin real estate investment property with Hill Country views"
-            className="w-full h-full object-cover"
-            loading="eager"
-            fetchPriority="high"
-            sizes="100vw"
-            width={1920}
-            height={1080}
-          />
-          <div className="absolute inset-0 bg-[#0C0F24]/45" />
-        </div>
+      <InvestHeroSection>
+        {/* overlay */}
+        <div className="absolute inset-0 bg-[#0C0F24]/45" style={{ zIndex: 1 }} />
         <div className="relative container mx-auto px-6 pb-16">
           <div className="max-w-xl mb-14">
             <p className="text-minimal text-gold mb-4 ml-1">PRIVATE ACCESS</p>

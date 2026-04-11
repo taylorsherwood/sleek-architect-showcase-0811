@@ -370,7 +370,7 @@ const Invest = () => {
         </div>
         <div className="relative container mx-auto px-6 pb-16">
           <div className="max-w-xl mb-14">
-            <p className="text-minimal text-gold mb-4">PRIVATE ACCESS</p>
+            <p className="text-minimal text-gold mb-4 ml-1">PRIVATE ACCESS</p>
             <h1 className="text-3xl sm:text-4xl md:text-6xl font-display font-normal text-primary-foreground leading-[1.1] mb-6">
               Access Investment &amp;
               <br />

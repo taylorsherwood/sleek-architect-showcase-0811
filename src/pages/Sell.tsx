@@ -499,10 +499,11 @@ const Sell = () => {
       {/* ── Network Logos ── */}
       <section className="py-12 md:py-16 bg-background">
         <div className="container mx-auto px-6">
+          <p className="text-center text-minimal text-muted-foreground mb-8 tracking-[0.2em]">MEMBER OF SELECT OFF-MARKET BROKER NETWORKS</p>
           <div className="flex flex-wrap items-center justify-center gap-10 md:gap-16">
             <img src={austinLuxuryNetwork} alt="Austin Luxury Network" className="h-12 md:h-16 object-contain" />
             <img src={topAgentNetwork} alt="Top Agent Network" className="h-12 md:h-16 object-contain" />
-            <img src={commissionClubhouse} alt="Commission Clubhouse" className="h-12 md:h-16 object-contain" />
+            <img src={commissionClubhouse} alt="Commission Clubhouse" className="h-12 md:h-16 object-contain translate-x-2 translate-y-1" />
           </div>
         </div>
       </section>

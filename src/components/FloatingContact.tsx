@@ -27,6 +27,12 @@ const FloatingContact = () => {
   const [footerVisible, setFooterVisible] = useState(false);
   const delayTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
+  // 20-second delay before allowing visibility
+  useEffect(() => {
+    const t = setTimeout(() => setTimerReady(true), 20000);
+    return () => clearTimeout(t);
+  }, []);
+
   useEffect(() => {
     const onDismissed = () => setAdvisoryDismissed(true);
     window.addEventListener("advisory-bar-dismissed", onDismissed);
@@ -77,7 +83,7 @@ const FloatingContact = () => {
   useEffect(() => {
     if (delayTimer.current) clearTimeout(delayTimer.current);
 
-    const shouldShow = advisoryDismissed && !isConnectPage && !footerVisible && (!isHomepage || !heroVisible);
+    const shouldShow = timerReady && advisoryDismissed && !isConnectPage && !footerVisible && (!isHomepage || !heroVisible);
 
     if (shouldShow) {
       delayTimer.current = setTimeout(() => setVisible(true), 1000);

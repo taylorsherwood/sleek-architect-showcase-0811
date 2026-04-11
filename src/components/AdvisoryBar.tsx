@@ -27,6 +27,7 @@ const HIDDEN_ROUTES = ["/contact", "/connect", "/austin-multifamily-report-2026"
 const AdvisoryBar = () => {
   const [visible, setVisible] = useState(false);
   const [dismissed, setDismissed] = useState(false);
+  const [timerReady, setTimerReady] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
   const [form, setForm] = useState({ name: "", email: "", phone: "", lookingFor: "" });
   const [errors, setErrors] = useState<Record<string, string>>({});

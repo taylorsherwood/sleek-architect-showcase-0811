@@ -12,6 +12,7 @@ const SESSION_KEY = "echelon_advisory_bar_dismissed";
 const FloatingContact = () => {
   const [open, setOpen] = useState(false);
   const [visible, setVisible] = useState(false);
+  const [timerReady, setTimerReady] = useState(false);
   const location = useLocation();
   const isHomepage = location.pathname === "/";
   const isConnectPage = location.pathname === "/connect";

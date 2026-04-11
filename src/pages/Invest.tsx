@@ -354,111 +354,56 @@ const Invest = () => {
 
       {/* ──────────────────────── PRIVATE ACCESS HERO ──────────────────────── */}
       {/* ──────────────────────── PRIVATE ACCESS HERO ──────────────────────── */}
-      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden pt-24 pb-16">
-        <img
-          src={heroImg}
-          alt="Austin real estate investment property with Hill Country views"
-          className="absolute inset-0 w-full h-full object-cover"
-          loading="eager"
-          fetchPriority="high"
-          sizes="100vw"
-          width={1920}
-          height={1080}
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-foreground/60 via-foreground/40 to-foreground/60" />
-        <div className="relative z-10 max-w-4xl mx-auto px-6 w-full text-center">
-          <p
-            className="text-minimal font-semibold mb-4"
-            style={{
-              color: "hsl(var(--gold))",
-              textShadow: "0 0 8px rgba(0,0,0,0.6)",
-              letterSpacing: "0.35em",
-            }}
-          >
-            PRIVATE ACCESS
-          </p>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-display font-normal text-primary-foreground leading-[1.15] mb-6">
-            Access Investment &amp; Off-Market Opportunities
-          </h1>
-          <p className="text-lg text-primary-foreground/70 leading-relaxed font-light max-w-lg mx-auto">
-            Select deals, private listings, and value-add opportunities across Austin.
-          </p>
+      <section className="relative h-screen flex flex-col justify-end overflow-hidden bg-primary">
+        <div className="absolute inset-0">
+          <img
+            src={heroImg}
+            alt="Austin real estate investment property with Hill Country views"
+            className="w-full h-full object-cover"
+            loading="eager"
+            fetchPriority="high"
+            sizes="100vw"
+            width={1920}
+            height={1080}
+          />
+          <div className="absolute inset-0 bg-[#0C0F24]/45" />
         </div>
-      </section>
-
-      {/* ──────────────────────── LEAD CAPTURE (below hero) ──────────────────────── */}
-      <section className="py-16 md:py-24 bg-background">
-        <div className="max-w-[500px] mx-auto px-6">
-          <div className="bg-card border border-border rounded-lg p-8 md:p-10">
-            <form onSubmit={handleSubmit} className="space-y-4" id="lead-form">
-              <div>
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Full Name"
-                  value={form.name}
-                  onChange={handleChange}
-                  maxLength={100}
-                  className={inputClass + " rounded"}
-                />
-                {errors.name && <p className="text-destructive text-xs mt-1">{errors.name}</p>}
-              </div>
-              <div>
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Email Address"
-                  value={form.email}
-                  onChange={handleChange}
-                  maxLength={255}
-                  className={inputClass + " rounded"}
-                />
-                {errors.email && <p className="text-destructive text-xs mt-1">{errors.email}</p>}
-              </div>
-              <div>
-                <input
-                  type="tel"
-                  name="phone"
-                  placeholder="Phone Number"
-                  value={form.phone}
-                  onChange={handleChange}
-                  maxLength={20}
-                  className={inputClass + " rounded"}
-                />
-                {errors.phone && <p className="text-destructive text-xs mt-1">{errors.phone}</p>}
-              </div>
-              <div className="relative">
-                <select
-                  name="interest"
-                  value={form.interest}
-                  onChange={handleChange}
-                  className={selectClass + " rounded cursor-pointer"}
-                  style={!form.interest ? { color: "hsl(var(--muted-foreground))" } : undefined}
-                >
-                  <option value="" disabled>What are you looking for?</option>
-                  <option value="buying">Buying a Property</option>
-                  <option value="investment">Investment & Off-Market Deals</option>
-                  <option value="both">Both</option>
-                </select>
-                <div className="pointer-events-none absolute inset-y-0 right-4 flex items-center">
-                  <svg className="h-4 w-4 text-muted-foreground" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
-                </div>
-                {errors.interest && <p className="text-destructive text-xs mt-1">{errors.interest}</p>}
-              </div>
-              <button
-                type="submit"
-                disabled={submitting}
-                className="w-full px-4 py-2.5 text-[11px] sm:text-xs font-semibold rounded transition-all duration-200 disabled:opacity-50 bg-gold text-primary-foreground hover:bg-primary-foreground hover:text-gold"
-                style={{ letterSpacing: "0.2em", textTransform: "uppercase" }}
-              >
-                {submitting ? "Submitting…" : "Request Private Access"}
-              </button>
-              <p className="text-[11px] text-center text-muted-foreground pt-0.5">
-                Discreet updates from Echelon Property Group.&nbsp;
-                <br />
-                No spam.
-              </p>
-            </form>
+        <div className="relative container mx-auto px-6 pb-16">
+          <div className="max-w-xl mb-14">
+            <p className="text-minimal text-gold mb-4">PRIVATE ACCESS</p>
+            <h1 className="text-3xl sm:text-4xl md:text-6xl font-display font-normal text-primary-foreground leading-[1.1] mb-6">
+              Access Investment &amp;
+              <br />
+              Off-Market Opportunities
+            </h1>
+            <p className="text-primary-foreground/70 text-lg max-w-lg mb-8">
+              Select deals, private listings, and value-add opportunities across Austin.
+            </p>
+            <Link
+              to="#lead-form"
+              className="inline-block text-minimal px-8 py-3.5 transition-all duration-300"
+              style={{
+                border: "1px solid hsl(var(--gold))",
+                color: "hsl(var(--gold))",
+                background: "rgba(255,255,255,0.08)",
+                backdropFilter: "blur(12px)",
+                WebkitBackdropFilter: "blur(12px)",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background = "hsl(var(--gold))";
+                e.currentTarget.style.color = "#fff";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background = "transparent";
+                e.currentTarget.style.color = "hsl(var(--gold))";
+              }}
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById("lead-form")?.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              REQUEST PRIVATE ACCESS
+            </Link>
           </div>
         </div>
       </section>

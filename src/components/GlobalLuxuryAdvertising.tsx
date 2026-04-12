@@ -434,7 +434,7 @@ const GlobalLuxuryAdvertising = () => {
               {marketingCards.map((card, i) =>
                 <div
                   key={card.title}
-                  className="group bg-card rounded-lg overflow-hidden shadow-elegant hover:shadow-architectural transition-all duration-500 hover:-translate-y-1"
+                  className="group bg-card rounded-lg overflow-hidden shadow-elegant hover:shadow-xl transition-all duration-700 ease-out hover:-translate-y-0.5 hover:scale-[1.015]"
                   style={revealScaleStyle(cards.visible, 200 + i * 180)}>
                   <div className="aspect-[3/2] overflow-hidden">
                     <img

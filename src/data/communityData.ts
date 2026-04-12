@@ -57,7 +57,7 @@ export const communityPages: CommunityData[] = [
   {
     slug: "westlake-hills",
     name: "Westlake Hills",
-    heroTitle: "Homes for Sale in Westlake Hills Austin",
+    heroTitle: "Homes for Sale in Westlake Hills",
     metaTitle: "Westlake Hills Homes for Sale | Echelon Property Group",
     metaDescription: "Explore luxury homes for sale in Westlake Hills Austin. Stunning Hill Country views, top Eanes ISD schools, and estates from $1.2M to $20M+.",
     priceRange: "$1.2M – $20M+",
@@ -176,7 +176,7 @@ The area's strict development standards ensure that quality investments are prot
   {
     slug: "barton-creek",
     name: "Barton Creek, Lost Creek & Amarra",
-    heroTitle: "Homes for Sale in Barton Creek, Lost Creek & Amarra Austin",
+    heroTitle: "Homes for Sale in Barton Creek, Lost Creek & Amarra",
     metaTitle: "Barton Creek Homes for Sale | Echelon Property Group",
     metaDescription: "Discover luxury estates in Barton Creek, Lost Creek & Amarra Austin. World-class golf, gated country club living, and homes from $1.5M to $15M+ in this premier community.",
     priceRange: "$1.5M – $15M+",
@@ -292,7 +292,7 @@ The combination of country club amenities, top schools, and proximity to Austin'
   {
     slug: "tarrytown",
     name: "Tarrytown",
-    heroTitle: "Homes for Sale in Tarrytown Austin",
+    heroTitle: "Homes for Sale in Tarrytown",
     metaTitle: "Tarrytown Austin Homes for Sale | Echelon Property Group",
     metaDescription: "Find luxury homes for sale in Tarrytown Austin. Tree-lined streets, walkable to downtown, and classic Austin charm from $800K to $8M+.",
     priceRange: "$800K – $8M+",
@@ -403,7 +403,7 @@ As Austin's tech economy expands, demand for walkable, centrally located neighbo
   {
     slug: "rollingwood",
     name: "Rollingwood",
-    heroTitle: "Homes for Sale in Rollingwood Austin",
+    heroTitle: "Homes for Sale in Rollingwood",
     metaTitle: "Rollingwood Homes for Sale | Echelon Property Group",
     metaDescription: "Discover homes for sale in Rollingwood Austin. Charming enclave near Zilker Park with top Eanes ISD schools and homes from $1M to $5M+.",
     priceRange: "$1M – $5M+",
@@ -484,7 +484,7 @@ High-quality tenants — often executives on temporary assignments or families e
   {
     slug: "travis-heights",
     name: "Travis Heights",
-    heroTitle: "Homes for Sale in Travis Heights Austin",
+    heroTitle: "Homes for Sale in Travis Heights",
     metaTitle: "Travis Heights Homes for Sale | Echelon Property Group",
     metaDescription: "Browse homes for sale in Travis Heights Austin. Iconic South Austin neighborhood with walkability to SoCo, eclectic charm, and homes from $600K to $4M+.",
     priceRange: "$600K – $4M+",
@@ -966,7 +966,7 @@ The neighborhood's association with Austin's identity — live music, Barton Spr
   {
     slug: "spanish-oaks",
     name: "Spanish Oaks",
-    heroTitle: "Homes for Sale in Spanish Oaks Austin",
+    heroTitle: "Homes for Sale in Spanish Oaks",
     metaTitle: "Spanish Oaks Homes for Sale | Echelon Property Group",
     metaDescription: "Explore homes for sale in Spanish Oaks, one of Austin's most exclusive gated communities featuring luxury estates, golf course homes, and Hill Country views.",
     priceRange: "$3M – $15M+",
@@ -1053,7 +1053,7 @@ Properties with golf course frontage, exceptional views, or unique architecture 
   {
     slug: "cat-mountain-northwest-hills",
     name: "Cat Mountain & Northwest Hills",
-    heroTitle: "Homes for Sale in Cat Mountain & Northwest Hills Austin",
+    heroTitle: "Homes for Sale in Cat Mountain & Northwest Hills",
     metaTitle: "Cat Mountain & NW Hills Homes | Echelon Property Group",
     metaDescription: "Discover homes for sale in Cat Mountain and Northwest Hills, two of Austin's most scenic hillside neighborhoods offering canyon views and proximity to downtown.",
     priceRange: "$900K – $4M+",
@@ -1225,7 +1225,7 @@ Because of limited waterfront inventory, many buyers prioritize lot quality and 
   {
     slug: "clarksville",
     name: "Clarksville",
-    heroTitle: "Homes for Sale in Clarksville Austin",
+    heroTitle: "Homes for Sale in Clarksville",
     metaTitle: "Clarksville Homes for Sale | Echelon Property Group",
     metaDescription: "Explore homes for sale in Clarksville Austin TX. Historic neighborhood near downtown with boutique shops, dining, and homes from $800K to $6M+.",
     priceRange: "$800K – $6M+",
@@ -1421,7 +1421,7 @@ Finite waterfront supply and growing demand from Austin's expanding population c
   {
     slug: "mueller",
     name: "Mueller",
-    heroTitle: "Homes for Sale in Mueller Austin",
+    heroTitle: "Homes for Sale in Mueller",
     metaTitle: "Mueller Homes for Sale Austin | Echelon Property Group",
     metaDescription: "Explore homes for sale in Mueller Austin TX. Master-planned urban community with parks, shops, and homes from $400K to $1.5M+.",
     priceRange: "$400K – $1.5M+",
@@ -1513,7 +1513,7 @@ East Austin's continued development and Mueller's established reputation support
   {
     slug: "hyde-park",
     name: "Hyde Park",
-    heroTitle: "Homes for Sale in Hyde Park Austin",
+    heroTitle: "Homes for Sale in Hyde Park",
     metaTitle: "Hyde Park Homes for Sale Austin | Echelon Property Group",
     metaDescription: "Explore homes for sale in Hyde Park Austin TX. Historic bungalows, walkable streets, and central location with homes from $500K to $2M+.",
     priceRange: "$500K – $2M+",
@@ -1614,7 +1614,7 @@ Central location, UT proximity, and walkability ensure enduring demand across ma
   {
     slug: "pemberton-heights",
     name: "Pemberton Heights",
-    heroTitle: "Homes for Sale in Pemberton Heights Austin",
+    heroTitle: "Homes for Sale in Pemberton Heights",
     metaTitle: "Pemberton Heights Homes for Sale | Echelon Property Group",
     metaDescription: "Browse homes for sale in Pemberton Heights Austin TX. Prestigious central neighborhood with mature trees and homes from $1.5M to $10M+.",
     priceRange: "$1.5M – $10M+",
@@ -1833,7 +1833,7 @@ Strong schools, lifestyle amenities, and Austin's continued growth support consi
   {
     slug: "great-hills",
     name: "Great Hills",
-    heroTitle: "Homes for Sale in Great Hills Austin",
+    heroTitle: "Homes for Sale in Great Hills",
     metaTitle: "Great Hills Homes for Sale Austin | Echelon Property Group",
     metaDescription: "Explore homes for sale in Great Hills Austin TX. Established northwest Austin neighborhood with mature trees and homes from $600K to $2.5M+.",
     priceRange: "$600K – $2.5M+",
@@ -1928,7 +1928,7 @@ Established location, mature lots, and proximity to major employers support cons
   {
     slug: "balcones-park",
     name: "Balcones Park",
-    heroTitle: "Homes for Sale in Balcones Park Austin",
+    heroTitle: "Homes for Sale in Balcones Park",
     metaTitle: "Balcones Park Homes for Sale | Echelon Property Group",
     metaDescription: "Browse homes for sale in Balcones Park Austin TX. Quiet northwest Austin neighborhood with large lots and homes from $600K to $2M+.",
     priceRange: "$600K – $2M+",
@@ -2024,7 +2024,7 @@ Convenient location between downtown and the northwest tech corridor ensures bro
   {
     slug: "rob-roy",
     name: "Rob Roy",
-    heroTitle: "Homes for Sale in Rob Roy Austin",
+    heroTitle: "Homes for Sale in Rob Roy",
     metaTitle: "Rob Roy Homes for Sale Austin TX | Echelon Property Group",
     metaDescription: "Explore luxury homes for sale in Rob Roy Austin TX. Gated Hill Country estates with panoramic views and homes from $1.5M to $20M+.",
     priceRange: "$1.5M – $20M+",
@@ -2132,7 +2132,7 @@ Rob Roy has demonstrated strong value resilience during market downturns, with p
   {
     slug: "steiner-ranch",
     name: "Steiner Ranch",
-    heroTitle: "Homes for Sale in Steiner Ranch Austin",
+    heroTitle: "Homes for Sale in Steiner Ranch",
     metaTitle: "Steiner Ranch Homes for Sale | Echelon Property Group",
     metaDescription: "Browse homes for sale in Steiner Ranch Austin TX. Master-planned community with Lake Austin access, trails, and homes from $500K to $13M+.",
     priceRange: "$500K – $13M+",
@@ -2237,7 +2237,7 @@ Buyers choosing between Steiner Ranch and [Lake Travis waterfront](/communities/
   {
     slug: "bryker-woods",
     name: "Bryker Woods",
-    heroTitle: "Homes for Sale in Bryker Woods Austin",
+    heroTitle: "Homes for Sale in Bryker Woods",
     metaTitle: "Bryker Woods Homes for Sale Austin | Echelon Property Group",
     metaDescription: "Explore homes for sale in Bryker Woods Austin TX. Charming central Austin neighborhood with tree-lined streets, walkability, and homes from $700K to $3M+.",
     priceRange: "$700K – $3M+",
@@ -2438,7 +2438,7 @@ East Austin's transformation from overlooked corridor to one of Austin's most de
   {
     slug: "old-enfield",
     name: "Old Enfield",
-    heroTitle: "Homes for Sale in Old Enfield Austin",
+    heroTitle: "Homes for Sale in Old Enfield",
     metaTitle: "Old Enfield Homes for Sale Austin | Echelon Property Group",
     metaDescription: "Explore homes for sale in Old Enfield Austin TX. One of Austin's most prestigious central neighborhoods with grand estates, tree-lined streets, and homes from $900K to $5M+.",
     priceRange: "$900K – $5M+",
@@ -2543,7 +2543,7 @@ Old Enfield has been one of central Austin's most consistently appreciating neig
   {
     slug: "davenport-ranch",
     name: "Davenport Ranch",
-    heroTitle: "Homes for Sale in Davenport Ranch Austin",
+    heroTitle: "Homes for Sale in Davenport Ranch",
     metaTitle: "Davenport Ranch Homes for Sale Austin | Echelon Property Group",
     metaDescription: "Explore luxury homes for sale in Davenport Ranch Austin TX. Gated Hill Country estates with panoramic views, resort-style amenities, and homes from $1.5M to $5M+.",
     priceRange: "$1.5M – $5M+",

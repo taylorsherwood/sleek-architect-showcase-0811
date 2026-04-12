@@ -49,6 +49,9 @@ const staticRoutes = [
   "/private-opportunities",
   "/blog/how-to-find-off-market-real-estate-deals-austin-2026",
   "/sitemap",
+  "/best-luxury-neighborhoods-in-austin",
+  "/communities/zilker",
+  "/communities/northwest-hills",
 ];
 
 const allPrerenderRoutes = Array.from(

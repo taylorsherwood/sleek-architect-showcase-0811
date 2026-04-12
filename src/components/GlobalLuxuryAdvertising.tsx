@@ -256,7 +256,7 @@ const GlobalLuxuryAdvertising = () => {
                   ...revealStyle(hero.visible, 300),
                   width: 48,
                   height: 1,
-                  background: "#b8a06d",
+                  background: "#b9a06c",
                 }}
               />
 
@@ -365,7 +365,7 @@ const GlobalLuxuryAdvertising = () => {
                 </p>
                 <div
                   className="mb-5"
-                  style={{ width: 28, height: 1, background: "#b8a06d" }}
+                  style={{ width: 28, height: 1, background: "#b9a06c" }}
                 />
                 <p className="text-foreground/85 text-sm tracking-[0.06em] font-medium" style={{ lineHeight: 2.4 }}>
                   Robb Report · Mansion Global · Wall Street Journal · Barron's

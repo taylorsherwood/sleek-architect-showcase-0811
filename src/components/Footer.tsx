@@ -51,7 +51,7 @@ const Footer = () => {
               <Link
                 to="/off-market-real-estate-austin"
                 className="transition-colors duration-300 hover:text-white"
-                style={{ fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", color: "#b8a06d", fontWeight: 400 }}
+                style={{ fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", color: "#b9a06c", fontWeight: 400 }}
               >
                 Explore Private Access →
               </Link>
@@ -111,13 +111,13 @@ const Footer = () => {
               </div>
               <div className="mt-5 flex flex-col gap-1.5 items-start">
                 <a href="https://www.linkedin.com/in/taylorsherwood/" target="_blank" rel="noopener noreferrer nofollow"
-                  className="inline-flex items-center gap-2 transition-colors duration-300 hover:text-[#b8a06d]"
+                  className="inline-flex items-center gap-2 transition-colors duration-300 hover:text-[#b9a06c]"
                   style={{ fontFamily: '"Jost", sans-serif', fontWeight: 300, fontSize: "11.5px", color: "rgba(255,255,255,0.55)" }}>
                   <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
                   Taylor Sherwood
                 </a>
                 <a href="https://www.instagram.com/theinvestorbroker" target="_blank" rel="noopener noreferrer nofollow"
-                  className="inline-flex items-center gap-2 transition-colors duration-300 hover:text-[#b8a06d]"
+                  className="inline-flex items-center gap-2 transition-colors duration-300 hover:text-[#b9a06c]"
                   style={{ fontFamily: '"Jost", sans-serif', fontWeight: 300, fontSize: "11.5px", color: "rgba(255,255,255,0.55)" }}>
                   <Instagram className="w-3.5 h-3.5" />
                   @theinvestorbroker
@@ -202,7 +202,7 @@ const Footer = () => {
                 href="https://www.dropbox.com/scl/fi/ism1gkeqt0bol9srh3b0a/IABS-1-2.pdf?rlkey=l05zn9bqqmg8e1ru4qjzsnd1o&dl=0"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                className="inline-block hover:text-[#b8a06d] transition-colors duration-300 underline decoration-[#b8a06d]/30 underline-offset-2 hover:decoration-[#b8a06d]"
+                className="inline-block hover:text-[#b9a06c] transition-colors duration-300 underline decoration-[#b9a06c]/30 underline-offset-2 hover:decoration-[#b9a06c]"
                 style={{ fontFamily: '"Jost", sans-serif', fontSize: "11.5px", color: "rgba(184,160,109,0.7)", letterSpacing: "0.03em" }}
               >
                 Information About Brokerage Services (IABS)

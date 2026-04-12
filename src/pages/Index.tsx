@@ -167,14 +167,14 @@ const Hero = () => {
                 className="inline-block text-center px-6 py-[14px]"
                 style={{
                   fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 500,
-                  border: "2px solid #b8a06d", color: "#fff",
-                  background: "#b8a06d",
+                  border: "2px solid #b9a06c", color: "#fff",
+                  background: "#b9a06c",
                   boxShadow: "0 2px 8px rgba(0,0,0,0.4)",
                   transform: "translateX(0) translateZ(0)", willChange: "transform, box-shadow",
                   transition: "transform 250ms ease, box-shadow 250ms ease, background 250ms ease, border-color 250ms ease",
                 }}
-                onMouseEnter={e => { e.currentTarget.style.transform = "translateX(3px) translateZ(0)"; e.currentTarget.style.background = "#fff"; e.currentTarget.style.borderColor = "#fff"; e.currentTarget.style.color = "#b8a06d"; }}
-                onMouseLeave={e => { e.currentTarget.style.transform = "translateX(0) translateZ(0)"; e.currentTarget.style.background = "#b8a06d"; e.currentTarget.style.borderColor = "#b8a06d"; e.currentTarget.style.color = "#fff"; }}
+                onMouseEnter={e => { e.currentTarget.style.transform = "translateX(3px) translateZ(0)"; e.currentTarget.style.background = "#fff"; e.currentTarget.style.borderColor = "#fff"; e.currentTarget.style.color = "#b9a06c"; }}
+                onMouseLeave={e => { e.currentTarget.style.transform = "translateX(0) translateZ(0)"; e.currentTarget.style.background = "#b9a06c"; e.currentTarget.style.borderColor = "#b9a06c"; e.currentTarget.style.color = "#fff"; }}
               >
                 EXPLORE AVAILABLE OPPORTUNITIES →
               </Link>
@@ -1121,7 +1121,7 @@ const FinalCTA = () => (
             >
               EXPLORE AUSTIN REAL ESTATE
             </p>
-            <div className="w-6 h-px mx-auto" style={{ background: "#b8a06d", opacity: 0.35 }} />
+            <div className="w-6 h-px mx-auto" style={{ background: "#b9a06c", opacity: 0.35 }} />
           </div>
 
           {/* Link grid with vertical dividers */}

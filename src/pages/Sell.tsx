@@ -423,7 +423,7 @@ const Sell = () => {
 
         <div className="grid lg:grid-cols-[minmax(0,1fr)_minmax(0,1.35fr)] items-start">
           {/* Left column — Copy (stays in container) */}
-          <div className="px-6 lg:pl-[max(1.5rem,calc((100vw-80rem)/2+1.5rem))] lg:pr-10">
+          <div className="px-6 lg:pl-[max(1.5rem,calc((100vw-80rem)/2+1.5rem))] lg:pr-20">
             <div className="max-w-[620px]">
               <ScrollReveal>
               <p

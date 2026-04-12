@@ -422,7 +422,7 @@ const Sell = () => {
         </div>
 
         <div className="container mx-auto px-6">
-          <div className="max-w-7xl mx-auto grid lg:grid-cols-[4fr_5fr] gap-14 lg:gap-16 items-start">
+          <div className="max-w-7xl mx-auto grid lg:grid-cols-[3.5fr_5.5fr] gap-14 lg:gap-16 items-start">
             {/* Left column — Copy */}
             <div className="max-w-[620px]">
               <ScrollReveal>

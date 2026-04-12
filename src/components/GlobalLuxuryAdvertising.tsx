@@ -6,7 +6,7 @@ import heroImg from "@/assets/global-luxury-hero.jpg";
 import digitalImg from "@/assets/marketing-digital.jpg";
 import printImg from "@/assets/marketing-print.jpg";
 import localImg from "@/assets/marketing-local.jpg";
-import collageImg from "@/assets/echelon-for-sale-marketing.png";
+import collageImg from "@/assets/marketing-collage-spaced.jpg";
 import expLuxuryLogo from "@/assets/exp-luxury-logo-white.png";
 
 /* ------------------------------------------------------------------ */

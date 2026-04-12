@@ -102,7 +102,7 @@ const featuredListings = [
   baths: 4,
   sqft: "4,147",
   link: "https://www.bartoncreekvilla.com",
-  badge: "Private Listing"
+  badge: "LUXURY LISTING"
 },
 {
   image: listing2,

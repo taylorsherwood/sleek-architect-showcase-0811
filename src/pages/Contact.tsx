@@ -110,6 +110,7 @@ const Contact = () => {
         { question: "Is there a cost for an initial consultation?", answer: "No. Our initial consultations are always complimentary and come with no obligation. We believe the best client relationships start with honest conversation about your goals and how we can help." },
       ])} />
       <Navigation />
+      <div className="h-12 md:h-20" aria-hidden="true" />
 
       <div className="h-12 md:h-20" />
 

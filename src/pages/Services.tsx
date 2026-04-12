@@ -32,6 +32,7 @@ const Services = () => {
         description="Echelon Property Group offers residential, commercial, renovation, and consultation services. Full-service luxury real estate advisory in Austin, Texas."
       />
       <Navigation />
+      <div className="h-12 md:h-20" aria-hidden="true" />
       <section className="pt-32 pb-32 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">

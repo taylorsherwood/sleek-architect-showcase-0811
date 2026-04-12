@@ -21,6 +21,7 @@ const BlogPost = () => {
     return (
       <div className="min-h-screen bg-background">
         <Navigation />
+      <div className="h-12 md:h-20" aria-hidden="true" />
         <div className="pt-32 pb-32">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto text-center">
@@ -100,6 +101,7 @@ const BlogPost = () => {
       />
       {schemas.map((s, i) => <SchemaMarkup key={i} schema={s} />)}
       <Navigation />
+      <div className="h-12 md:h-20" aria-hidden="true" />
       
       <article className="pt-32 pb-32">
         <div className="container mx-auto px-6">

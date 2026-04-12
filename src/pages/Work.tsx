@@ -77,6 +77,7 @@ const Work = () => {
         description="View featured projects and architectural work from Echelon Property Group. Residential, commercial, and hospitality design across Austin and beyond."
       />
       <Navigation />
+      <div className="h-12 md:h-20" aria-hidden="true" />
       
       {/* Hero Section */}
       <section className="pt-32 pb-20">

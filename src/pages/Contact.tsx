@@ -95,7 +95,7 @@ const Contact = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Contact | Echelon Property Group"
-        description="Explore Contact with Echelon Property Group. View homes, market insights, and real estate opportunities in Austin, Texas."
+        description="Contact Echelon Property Group for Austin luxury real estate. Schedule a consultation with Taylor Sherwood for buying, selling, or investing."
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={localBusinessSchema} />

@@ -156,7 +156,7 @@ const About = () => {
     <div className="min-h-screen">
       <SEOHead
         title="About Us | Echelon Property Group"
-        description="Explore About Us with Echelon Property Group. View homes, market insights, and real estate opportunities in Austin, Texas."
+        description="Meet Taylor Sherwood and the Echelon Property Group team. Austin luxury real estate advisors specializing in homes, land, and investment properties."
       />
       
       <SchemaMarkup schema={taylorSherwoodSchema} />

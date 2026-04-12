@@ -115,7 +115,7 @@ const Sitemap = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Sitemap | Echelon Property Group"
-        description="Browse all pages on Echelon Property Group — Austin luxury real estate listings, communities, market reports, buyer and seller guides, investment resources, and more."
+        description="Full sitemap for Echelon Property Group — Austin real estate listings, communities, market reports, and investment resources."
         noindex
       />
       <SchemaMarkup schema={createBreadcrumbSchema([

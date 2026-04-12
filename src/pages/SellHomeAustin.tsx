@@ -23,7 +23,7 @@ const SellHomeAustin = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Sell a Home in Austin Texas | Echelon Property Group"
-        description="Sell your Austin home for top dollar with strategic marketing, expert negotiation, and luxury presentation. Taylor Sherwood and Echelon Property Group deliver results."
+        description="Sell your Austin home for top dollar with strategic marketing, expert negotiation, and luxury presentation. Get results with Echelon."
         canonical="/sell-home-austin"
       />
       <SchemaMarkup schema={realEstateAgentSchema} />

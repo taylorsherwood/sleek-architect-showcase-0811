@@ -21,7 +21,7 @@ const Communities = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Austin Luxury Neighborhoods & Communities | Echelon Property Group"
-        description="Explore homes for sale in Austin's most exclusive neighborhoods — Westlake Hills, Barton Creek, Lake Austin, Tarrytown, Rollingwood, Spanish Oaks, and Dripping Springs."
+        description="Homes for sale in Austin's top neighborhoods — Westlake, Barton Creek, Lake Austin, Tarrytown, Rollingwood, and Dripping Springs."
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createBreadcrumbSchema([

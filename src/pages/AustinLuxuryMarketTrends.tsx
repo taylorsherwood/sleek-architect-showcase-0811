@@ -30,7 +30,7 @@ const AustinLuxuryMarketTrends = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Austin Luxury Real Estate Market Trends (2026 Update) | Echelon Property Group"
-        description="Explore Austin luxury real estate market trends for 2026. Strategic pricing, inventory shifts, buyer behavior, and what the recalibration means for Austin's high-end market."
+        description="Austin luxury real estate market trends for 2026. Pricing shifts, inventory data, buyer behavior, and what it means for Austin's high-end market."
         canonical="/blog/austin-luxury-market-trends"
         ogType="article"
       />

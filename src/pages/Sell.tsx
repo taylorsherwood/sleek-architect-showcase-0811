@@ -477,8 +477,8 @@ const Sell = () => {
                   src={taylorProfileSell}
                   alt="Echelon Property Group luxury listing sign in front of modern Austin home"
                   title="Echelon Property Group — luxury listing marketing"
-                  className="relative z-10 w-full h-full object-cover object-[60%_65%] transition-transform duration-[1200ms] ease-[cubic-bezier(0.25,0.1,0.25,1)] group-hover:scale-[1.015]"
-                  style={{ minHeight: "420px", maxHeight: "600px", marginLeft: "24px", width: "calc(100% - 24px)" }}
+                  className="relative z-10 w-full h-full object-cover object-[65%_65%] transition-transform duration-[1200ms] ease-[cubic-bezier(0.25,0.1,0.25,1)] group-hover:scale-[1.015]"
+                  style={{ minHeight: "420px", maxHeight: "600px" }}
                   loading="lazy"
                   decoding="async"
                   sizes="(max-width: 1024px) 100vw, 60vw"

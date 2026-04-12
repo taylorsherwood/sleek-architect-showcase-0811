@@ -227,6 +227,8 @@ export const websiteSchema = {
       "@type": "ImageObject",
       "@id": `${SITE}/#logo`,
       "url": LOGO,
+      "width": 600,
+      "height": 600,
     },
   },
 };
@@ -256,6 +258,8 @@ export function createArticleSchema(title: string, description: string, datePubl
         "@type": "ImageObject",
         "@id": `${SITE}/#logo`,
         "url": LOGO,
+        "width": 600,
+        "height": 600,
       },
     },
     "mainEntityOfPage": {
@@ -351,6 +355,8 @@ export function createBlogPostingSchema(post: { title: string; description: stri
         "@type": "ImageObject",
         "@id": `${SITE}/#logo`,
         "url": LOGO,
+        "width": 600,
+        "height": 600,
       },
     },
     "mainEntityOfPage": {

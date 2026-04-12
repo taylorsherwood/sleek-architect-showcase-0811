@@ -410,7 +410,7 @@ const Sell = () => {
 
 
       {/* ── Marketing Strategy (Editorial) ── */}
-      <section className="relative py-20 md:py-28 pb-14 md:pb-18 bg-secondary overflow-visible">
+      <section className="relative py-24 md:py-36 bg-secondary overflow-visible">
         {/* Single watermark — bottom-right ambient depth */}
         <div
           className="pointer-events-none absolute right-[-5%] bottom-[-18%] w-[60vw] max-w-[800px] aspect-square opacity-[0.03]"
@@ -422,7 +422,7 @@ const Sell = () => {
         </div>
 
         <div className="container mx-auto px-6">
-          <div className="max-w-7xl mx-auto grid lg:grid-cols-[4fr_5fr] gap-10 lg:gap-12 items-start">
+          <div className="max-w-7xl mx-auto grid lg:grid-cols-[4fr_5fr] gap-14 lg:gap-16 items-start">
             {/* Left column — Copy */}
             <div className="max-w-[620px]">
               <ScrollReveal>
@@ -463,31 +463,26 @@ const Sell = () => {
               </ul>
             </div>
 
-            {/* Right column — Image (editorial, dominant, overlaps into next section) */}
-            <div className="relative lg:mt-8 lg:-mr-6 xl:-mr-12 lg:-mb-[5%]">
+            {/* Right column — Image: editorial asymmetric layout */}
+            <div className="relative lg:-mt-5 lg:-mr-10 xl:-mr-20">
               <ScrollReveal delay={200}>
-                <div className="relative">
+                <div
+                  className="relative overflow-hidden rounded-[3px] group cursor-default"
+                  style={{
+                    boxShadow: "0 20px 60px rgba(0,0,0,0.07)",
+                  }}
+                >
                   <img
                     src={taylorProfileSell}
-                    alt="Taylor Sherwood — Austin luxury real estate advisor"
-                    title="Taylor Sherwood — Echelon Property Group listing specialist"
-                    className="relative z-10 w-full lg:scale-[1.10] origin-top object-contain"
-                    style={{
-                      filter: "drop-shadow(0 24px 60px hsl(220 20% 10% / 0.12)) drop-shadow(0 8px 20px hsl(220 20% 10% / 0.06))",
-                    }}
+                    alt="Echelon Property Group luxury listing sign in front of modern Austin home"
+                    title="Echelon Property Group — luxury listing marketing"
+                    className="relative z-10 w-full object-cover object-[center_35%] transition-transform duration-[1200ms] ease-[cubic-bezier(0.25,0.1,0.25,1)] group-hover:scale-[1.015]"
+                    style={{ aspectRatio: "4 / 3" }}
                     loading="lazy"
                     decoding="async"
-                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    sizes="(max-width: 1024px) 100vw, 55vw"
                     width={800}
-                    height={1000}
-                  />
-                  {/* Subtle bottom fade to soften transition */}
-                  <div
-                    className="absolute bottom-0 left-0 right-0 h-24 z-20 pointer-events-none"
-                    style={{
-                      background: "linear-gradient(to bottom, transparent, hsl(var(--background) / 0.03))",
-                    }}
-                    aria-hidden="true"
+                    height={600}
                   />
                 </div>
               </ScrollReveal>

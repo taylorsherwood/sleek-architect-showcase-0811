@@ -291,7 +291,22 @@ const GlobalLuxuryAdvertising = () => {
                 </p>
                 <Link
                   to="/home-value-austin"
-                  className="inline-block text-minimal bg-gold hover:bg-gold text-white px-8 py-3.5 transition-colors duration-300 w-full text-center">
+                  className="inline-block text-minimal px-8 py-3.5 transition-all duration-300 w-full text-center"
+                  style={{
+                    border: "1px solid hsl(var(--gold))",
+                    color: "hsl(var(--gold))",
+                    background: "rgba(255,255,255,0.08)",
+                    backdropFilter: "blur(12px)",
+                    WebkitBackdropFilter: "blur(12px)",
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.background = "hsl(var(--gold))";
+                    e.currentTarget.style.color = "#fff";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.background = "rgba(255,255,255,0.08)";
+                    e.currentTarget.style.color = "hsl(var(--gold))";
+                  }}>
                   GET YOUR VALUE ESTIMATE
                 </Link>
               </div>

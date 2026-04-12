@@ -25,7 +25,7 @@ const LuxuryHomesAustin = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Luxury Homes for Sale in Austin TX"
-        description="Explore luxury homes for sale in Austin, TX including Westlake, Barton Creek, Tarrytown, Rollingwood, and Lake Austin waterfront estates. Browse Austin luxury real estate listings above $1.5M." />
+        description="Luxury homes for sale in Austin TX — Westlake, Barton Creek, Tarrytown, Rollingwood, and Lake Austin estates. Browse listings above $1.5M." />
       
       <SchemaMarkup schema={realEstateAgentSchema} />
       <Navigation />

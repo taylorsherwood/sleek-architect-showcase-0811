@@ -114,7 +114,7 @@ const Listings = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Listings | Echelon Property Group"
-        description="Explore Listings with Echelon Property Group. View homes, market insights, and real estate opportunities in Austin, Texas."
+        description="Browse active Austin real estate listings — luxury homes, condos, land, and investment properties. Updated daily by Echelon Property Group."
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createBreadcrumbSchema([

@@ -79,6 +79,8 @@ const Testimonials = () => {
           alt=""
           className="w-[420px] md:w-[520px] opacity-[0.04]"
           style={{ filter: "grayscale(20%)" }}
+          loading="lazy"
+          decoding="async"
         />
       </div>
       <div className="container mx-auto px-6 relative z-10">

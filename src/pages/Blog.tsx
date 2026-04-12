@@ -28,7 +28,7 @@ const Blog = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Blog | Echelon Property Group"
-        description="Explore Blog with Echelon Property Group. View homes, market insights, and real estate opportunities in Austin, Texas."
+        description="Austin luxury real estate blog — market trends, neighborhood guides, investment insights, and expert analysis from Echelon Property Group."
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createBreadcrumbSchema([

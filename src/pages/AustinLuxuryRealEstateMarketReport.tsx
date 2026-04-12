@@ -20,7 +20,7 @@ const AustinLuxuryRealEstateMarketReport = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Austin Luxury Real Estate Market Report"
-        description="Comprehensive Austin luxury real estate market report with pricing trends, inventory data, neighborhood performance, and 2026 investment outlook from Echelon Property Group."
+        description="Austin luxury real estate market report — pricing trends, inventory data, neighborhood performance, and 2026 investment outlook."
         canonical="/austin-luxury-real-estate-market-report"
       />
       <SchemaMarkup schema={realEstateAgentSchema} />

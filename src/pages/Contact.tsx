@@ -95,7 +95,7 @@ const Contact = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Contact | Echelon Property Group"
-        description="Explore Contact with Echelon Property Group. View homes, market insights, and real estate opportunities in Austin, Texas."
+        description="Contact Echelon Property Group for Austin luxury real estate. Schedule a consultation with Taylor Sherwood for buying, selling, or investing."
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={localBusinessSchema} />
@@ -119,9 +119,7 @@ const Contact = () => {
           <div className="max-w-7xl mx-auto">
             <p className="text-minimal text-gold mb-4 font-extrabold">CONTACT US</p>
             <h1 className="text-3xl sm:text-5xl md:text-7xl font-display font-normal text-architectural mb-8">
-              Connect with Echelon
-              <br />
-              Property Group
+              Get in Touch
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl">
               Whether you are acquiring a significant property, preparing a luxury estate for market, or exploring investment opportunities across Austin, we welcome the opportunity to learn about your goals and provide strategic guidance tailored to your situation.

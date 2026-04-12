@@ -40,7 +40,7 @@ const PastTransactions = () => {
     <div className="min-h-screen">
       <SEOHead
         title="Recent Sales & Transactions | Echelon Property Group"
-        description="View recently closed luxury homes, land, and investment properties in Austin Texas by Echelon Property Group. See our track record of successful transactions." />
+        description="Recently closed luxury homes, land, and investment properties in Austin TX. See Echelon Property Group's track record of results." />
       <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createBreadcrumbSchema([
         { name: "Home", url: "https://www.echelonpropertygroup.com/" },
@@ -62,6 +62,8 @@ const PastTransactions = () => {
             width={1920}
             height={1080}
             className="w-full h-full object-cover object-[center_30%] md:object-[center_25%]"
+            loading="eager"
+            decoding="async"
             fetchPriority="high"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0A0E19]/60 via-[#0A0E19]/30 to-transparent" style={{ width: '60%' }} />

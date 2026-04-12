@@ -465,7 +465,7 @@ const Sell = () => {
           </div>
 
           {/* Right column — Image: full width to right edge */}
-          <div className="relative lg:-mt-5">
+          <div className="relative lg:mt-12">
             <ScrollReveal delay={250} distance={32} duration={1200}>
               <div
                 className="relative overflow-hidden rounded-l-[3px] group cursor-default"

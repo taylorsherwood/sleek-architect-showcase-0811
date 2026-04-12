@@ -193,7 +193,7 @@ const About = () => {
 
       {/* Gold divider */}
       <div className="flex justify-center pb-0 bg-background">
-        <div className="w-20 h-px bg-gold/30" />
+        <div className="w-20 h-px bg-gold" />
       </div>
 
       {/* Credibility + Positioning Strip */}
@@ -208,7 +208,7 @@ const About = () => {
                     Luxury real estate advisory rooted in deep Austin market knowledge, with a focus on long-term value and strategic positioning.
                   </p>
                 </div>
-                <div className="md:px-10 md:border-x md:border-gold/15">
+                <div className="md:px-10 md:border-x md:border-gold">
                   <p className="text-[0.65rem] tracking-[0.2em] uppercase text-gold mb-3 font-semibold">Access</p>
                   <p className="text-sm text-muted-foreground leading-[1.7]">
                     Direct access to on-market and off-market opportunities, including properties not publicly available.

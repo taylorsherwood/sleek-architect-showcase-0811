@@ -445,7 +445,7 @@ const CommunityPage = () => {
                     <Link
                       key={article.href}
                       to={article.href}
-                      className="group flex items-start gap-4 py-4 border-b border-border/40 hover:border-gold/40 transition-colors duration-300"
+                      className="group flex items-start gap-4 py-4 border-b border-border/40 hover:border-gold transition-colors duration-300"
                     >
                       <span className="w-8 h-px bg-gold mt-3 shrink-0 group-hover:w-12 transition-all duration-300" />
                       <div>

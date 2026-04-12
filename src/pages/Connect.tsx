@@ -75,7 +75,7 @@ const Connect = () => {
                   style={{
                     width: "40px",
                     height: "1px",
-                    background: "#b8a06d",
+                    background: "#b9a06c",
                   }}
                 />
 
@@ -176,9 +176,9 @@ const Connect = () => {
           </div>
 
           <div className="flex items-center justify-center gap-3 my-6 px-12">
-            <div className="flex-1 h-px" style={{ background: "linear-gradient(90deg, transparent, #b8a06d)" }} />
-            <div className="w-1.5 h-1.5 rotate-45" style={{ background: "#b8a06d" }} />
-            <div className="flex-1 h-px" style={{ background: "linear-gradient(90deg, #b8a06d, transparent)" }} />
+            <div className="flex-1 h-px" style={{ background: "linear-gradient(90deg, transparent, #b9a06c)" }} />
+            <div className="w-1.5 h-1.5 rotate-45" style={{ background: "#b9a06c" }} />
+            <div className="flex-1 h-px" style={{ background: "linear-gradient(90deg, #b9a06c, transparent)" }} />
           </div>
 
           <nav className="flex flex-col gap-2.5 px-8 mt-2" aria-label="Quick links">
@@ -263,7 +263,7 @@ const Connect = () => {
             <div
               className="w-10 h-px"
               style={{
-                background: "#b8a06d",
+                background: "#b9a06c",
               }}
             />
             <a

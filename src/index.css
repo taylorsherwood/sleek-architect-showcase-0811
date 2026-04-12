@@ -13,7 +13,7 @@ html, body {
 
 /* ── Global link hover — gold on hover (excludes buttons/CTAs) ── */
 a:not(button a):not(.cta-luxury):not([class*="bg-"]):not([class*="border-"]):hover {
-  color: hsl(41 35% 57%);
+  color: hsl(41 34% 57%);
 }
 
 /* ── Global image safeguards — prevent stretching, ensure sharpness ── */
@@ -58,7 +58,7 @@ realscout-simple-search {
 @layer base {
   :root {
     /* ── Refined luxury palette — warm ivory system ── */
-    --gold: 41 35% 57%;              /* #b8a06d */
+    --gold: 41 34% 57%;              /* #b9a06c */
     --gold-light: 41 35% 76%;        /* #D4C9A8 */
     --gold-dark: 41 45% 30%;         /* #6F5E2A */
     --gold-deep: 41 30% 40%;         /* #857548 */
@@ -511,34 +511,34 @@ realscout-simple-search {
     text-transform: uppercase;
     font-weight: 400;
     padding: 14px 40px;
-    border: 1px solid #b8a06d;
+    border: 1px solid #b9a06c;
     color: hsl(var(--foreground));
     background: transparent;
     transition: background 0.4s ease, color 0.4s ease, border-color 0.4s ease, transform 0.16s ease;
     text-decoration: none;
   }
   .cta-luxury:hover {
-    background: #b8a06d;
+    background: #b9a06c;
     color: #fff;
-    border-color: #b8a06d;
+    border-color: #b9a06c;
     transform: translateY(-1px);
   }
   .cta-luxury--ghost {
     border-color: hsl(var(--foreground) / 0.25);
   }
   .cta-luxury--ghost:hover {
-    background: #b8a06d;
+    background: #b9a06c;
     color: #fff;
-    border-color: #b8a06d;
+    border-color: #b9a06c;
   }
   .cta-luxury--on-dark {
     border-color: rgba(245, 243, 239, 0.5);
     color: #F5F3EF;
   }
   .cta-luxury--on-dark:hover {
-    background: #b8a06d;
+    background: #b9a06c;
     color: #fff;
-    border-color: #b8a06d;
+    border-color: #b9a06c;
   }
 }
 
@@ -653,10 +653,10 @@ a:hover .community-tile-img,
 
 /* ── Flat gold text — derived from Echelon brand tone ── */
 .gold-metallic-text {
-  color: #b8a06d;
+  color: #b9a06c;
 }
 .gold-metallic-text:hover {
-  color: #b8a06d;
+  color: #b9a06c;
 }
 
 /* ── Reusable gold hover underline ── */
@@ -671,7 +671,7 @@ a:hover .community-tile-img,
   transform: translateX(-50%);
   width: 0;
   height: 1px;
-  background: #b8a06d;
+  background: #b9a06c;
   transition: width 0.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
 .gold-underline-hover:hover::after {
@@ -715,7 +715,7 @@ a:hover .community-tile-img,
 .epg-popup-price {
   font-size: 15px;
   font-weight: 500;
-  color: #b8a06d;
+  color: #b9a06c;
   margin-bottom: 2px;
 }
 

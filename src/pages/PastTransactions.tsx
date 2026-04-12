@@ -40,7 +40,7 @@ const PastTransactions = () => {
     <div className="min-h-screen">
       <SEOHead
         title="Recent Sales & Transactions | Echelon Property Group"
-        description="View recently closed luxury homes, land, and investment properties in Austin Texas by Echelon Property Group. See our track record of successful transactions." />
+        description="Recently closed luxury homes, land, and investment properties in Austin TX. See Echelon Property Group's track record of results." />
       <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createBreadcrumbSchema([
         { name: "Home", url: "https://www.echelonpropertygroup.com/" },

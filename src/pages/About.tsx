@@ -66,6 +66,7 @@ const AboutTestimonialsSection = () => {
           WebkitMaskImage: "radial-gradient(ellipse 60% 60% at center, black 0%, black 40%, transparent 85%)",
         }}>
           <img src={echelonWatermark} alt="" className="w-full h-full object-contain"
+            loading="lazy" decoding="async"
             style={{ opacity: 0.09, filter: "blur(0.8px) saturate(0.85) brightness(1.02)" }} />
         </div>
       </div>

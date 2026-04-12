@@ -62,6 +62,8 @@ const PastTransactions = () => {
             width={1920}
             height={1080}
             className="w-full h-full object-cover object-[center_30%] md:object-[center_25%]"
+            loading="eager"
+            decoding="async"
             fetchPriority="high"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0A0E19]/60 via-[#0A0E19]/30 to-transparent" style={{ width: '60%' }} />

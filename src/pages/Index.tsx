@@ -362,6 +362,8 @@ const AdvisorSection = () => (
                 src={echelonWatermarkLogo}
                 alt=""
                 aria-hidden="true"
+                loading="lazy"
+                decoding="async"
                 className="absolute pointer-events-none select-none hidden md:block"
                 style={{
                   top: '50%',
@@ -397,7 +399,7 @@ const AdvisorSection = () => (
                      <br /><br />
                      <span className="font-bold">Let's get to work,</span>
                   </p>
-                 <div className="!mt-0 !pt-0 -mb-8"><img src={taylorSignature} alt="Taylor Sherwood signature" className="block h-[140px] opacity-80 -translate-y-4" /></div>
+                 <div className="!mt-0 !pt-0 -mb-8"><img src={taylorSignature} alt="Taylor Sherwood signature" className="block h-[140px] opacity-80 -translate-y-4" loading="lazy" decoding="async" /></div>
               </div>
             </div>
 
@@ -748,6 +750,7 @@ const TestimonialsSection = () => {
           WebkitMaskImage: "radial-gradient(ellipse 60% 60% at center, black 0%, black 40%, transparent 85%)",
         }}>
           <img src={echelonWatermark} alt="" className="w-full h-full object-contain"
+            loading="lazy" decoding="async"
             style={{ opacity: 0.09, filter: "blur(0.8px) saturate(0.85) brightness(1.02)" }} />
         </div>
       </div>

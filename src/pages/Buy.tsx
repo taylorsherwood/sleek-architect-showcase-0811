@@ -336,9 +336,22 @@ const Buy = () => {
             </p>
             <a
               href="#buyer-consultation"
-              className="inline-block text-minimal bg-primary-foreground text-[#0C0F24] px-8 py-3.5 hover:bg-gold hover:text-white transition-all duration-300 reveal-delayed-2">
-              
-              SCHEDULE A BUYER CONSULTATION
+              className="inline-block text-minimal px-8 py-3.5 transition-all duration-300 reveal-delayed-2"
+              style={{
+                border: "1px solid hsl(var(--gold))",
+                color: "hsl(var(--gold))",
+                background: "rgba(255,255,255,0.08)",
+                backdropFilter: "blur(12px)",
+                WebkitBackdropFilter: "blur(12px)",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background = "hsl(var(--gold))";
+                e.currentTarget.style.color = "#fff";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background = "transparent";
+                e.currentTarget.style.color = "hsl(var(--gold))";
+              }}>SCHEDULE A BUYER CONSULTATION
             </a>
           </div>
         </div>

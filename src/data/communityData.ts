@@ -403,7 +403,7 @@ As Austin's tech economy expands, demand for walkable, centrally located neighbo
   {
     slug: "rollingwood",
     name: "Rollingwood",
-    heroTitle: "Homes for Sale in Rollingwood Austin",
+    heroTitle: "Homes for Sale in Rollingwood",
     metaTitle: "Rollingwood Homes for Sale | Echelon Property Group",
     metaDescription: "Discover homes for sale in Rollingwood Austin. Charming enclave near Zilker Park with top Eanes ISD schools and homes from $1M to $5M+.",
     priceRange: "$1M – $5M+",

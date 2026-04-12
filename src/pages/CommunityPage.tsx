@@ -1,6 +1,6 @@
 import { lazy, Suspense } from "react";
 import CommunityBoundaryMap from "@/components/CommunityBoundaryMap";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, Navigate } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 const Footer = lazy(() => import("@/components/Footer"));
 import AboutBlock from "@/components/AboutBlock";
@@ -203,7 +203,14 @@ const slugAliases: Record<string, string> = {
 
 const CommunityPage = () => {
   const { slug: rawSlug } = useParams<{ slug: string }>();
-  const slug = rawSlug ? (slugAliases[rawSlug] || rawSlug) : rawSlug;
+  const canonicalSlug = rawSlug ? slugAliases[rawSlug] : undefined;
+
+  // Redirect alias slugs to canonical URL
+  if (canonicalSlug) {
+    return <Navigate to={`/communities/${canonicalSlug}`} replace />;
+  }
+
+  const slug = rawSlug;
   const community = communityPages.find((c) => c.slug === slug);
 
   if (!community) {

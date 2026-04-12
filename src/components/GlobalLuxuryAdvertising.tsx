@@ -435,10 +435,9 @@ const GlobalLuxuryAdvertising = () => {
                 <div
                   key={card.title}
                   className="group bg-card rounded-lg overflow-hidden transition-all duration-[1000ms] ease-[cubic-bezier(0.25,0.1,0.25,1)] hover:-translate-y-0.5 hover:scale-[1.012]"
-                  style={{ boxShadow: "0 4px 20px rgba(0,0,0,0.06)" }}
+                  style={{ ...revealScaleStyle(cards.visible, 200 + i * 180), boxShadow: "0 4px 20px rgba(0,0,0,0.06)" }}
                   onMouseEnter={(e) => { e.currentTarget.style.boxShadow = "0 12px 40px rgba(0,0,0,0.10)"; }}
-                  onMouseLeave={(e) => { e.currentTarget.style.boxShadow = "0 4px 20px rgba(0,0,0,0.06)"; }}
-                  style={revealScaleStyle(cards.visible, 200 + i * 180)}>
+                  onMouseLeave={(e) => { e.currentTarget.style.boxShadow = "0 4px 20px rgba(0,0,0,0.06)"; }}>
                   <div className="aspect-[3/2] overflow-hidden">
                     <img
                       src={card.image}

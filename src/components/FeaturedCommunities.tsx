@@ -33,7 +33,7 @@ const FeaturedCommunities = () => (
               <Link
                 key={c.slug}
                 to={`/communities/${c.slug}`}
-                className="group text-center border border-border/40 py-5 px-3 hover:border-gold/50 transition-all duration-300 hover:bg-background"
+                className="group text-center border border-border/40 py-5 px-3 hover:border-gold transition-all duration-300 hover:bg-background"
               >
                 <h3 className="font-display text-sm md:text-[15px] font-medium text-foreground group-hover:text-gold transition-colors duration-300 mb-1">
                   {c.name}

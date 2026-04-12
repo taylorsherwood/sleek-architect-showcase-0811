@@ -303,7 +303,7 @@ const AdvisorSection = () => (
 
             {/* Social links — signature detail */}
             <div className="w-full flex flex-col items-center pt-5 pb-2 px-4">
-              <div className="w-12 h-px bg-gold/20 mb-5" />
+              <div className="w-12 h-px bg-gold mb-5" />
               <div className="flex items-center justify-center gap-6 max-w-[360px]">
                 <a
                   href="https://www.instagram.com/theinvestorbroker/"
@@ -1121,7 +1121,7 @@ const FinalCTA = () => (
             >
               EXPLORE AUSTIN REAL ESTATE
             </p>
-            <div className="w-6 h-px mx-auto" style={{ background: "#b9a06c", opacity: 0.35 }} />
+            <div className="w-6 h-px mx-auto" style={{ background: "#b9a06c" }} />
           </div>
 
           {/* Link grid with vertical dividers */}
@@ -1329,7 +1329,7 @@ const Index = () => (
 
     <TestimonialsSection />
     <div className="h-16 md:h-24 bg-secondary flex items-center justify-center" aria-hidden="true">
-      <div className="w-16 h-px bg-gold/40" />
+      <div className="w-16 h-px bg-gold" />
     </div>
 
     {/* Parallax break — lakefront / pool terrace */}

@@ -167,7 +167,14 @@ const GlobalLuxuryAdvertising = () => {
   useEffect(() => {
     const el = globalReachRef.current;
     if (!el) return;
-    const obs = new IntersectionObserver(([e]) => { if (e.isIntersecting) setGrVisible(true); }, { threshold: 0.3 });
+    const obs = new IntersectionObserver(([e]) => {
+      if (e.isIntersecting) {
+        setGrVisible(true);
+      } else {
+        setGrVisible(false);
+        setGlobalReachCount(5);
+      }
+    }, { threshold: 0.3 });
     obs.observe(el);
     return () => obs.disconnect();
   }, []);

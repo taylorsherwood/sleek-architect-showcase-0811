@@ -13,7 +13,7 @@ html, body {
 
 /* ── Global link hover — gold on hover (excludes buttons/CTAs) ── */
 a:not(button a):not(.cta-luxury):not([class*="bg-"]):not([class*="border-"]):hover {
-  color: hsl(41 35% 57%);
+  color: hsl(41 34% 57%);
 }
 
 /* ── Global image safeguards — prevent stretching, ensure sharpness ── */

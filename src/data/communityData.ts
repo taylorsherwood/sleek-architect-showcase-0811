@@ -2334,7 +2334,7 @@ Bryker Woods has been one of central Austin's strongest appreciating neighborhoo
   {
     slug: "east-austin",
     name: "East Austin",
-    heroTitle: "Homes for Sale in East",
+    heroTitle: "Homes for Sale in East Austin",
     metaTitle: "East Austin Homes for Sale | Echelon Property Group",
     metaDescription: "Explore homes for sale in East Austin TX. From modern new builds to creative bungalows, discover one of Austin's most dynamic neighborhoods from $400K to $3M+.",
     priceRange: "$400K – $3M+",

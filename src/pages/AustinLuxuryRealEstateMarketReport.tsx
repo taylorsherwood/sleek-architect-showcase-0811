@@ -30,6 +30,7 @@ const AustinLuxuryRealEstateMarketReport = () => {
       ])} />
       <SchemaMarkup schema={createFAQSchema(faqs)} />
       <Navigation />
+      <div className="h-12 md:h-20" aria-hidden="true" />
 
       <div className="h-12 md:h-20" aria-hidden="true" />
 

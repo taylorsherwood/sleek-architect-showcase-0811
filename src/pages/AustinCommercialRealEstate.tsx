@@ -58,6 +58,7 @@ const AustinCommercialRealEstate = () => {
       <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createFAQSchema(faqs)} />
       <Navigation />
+      <div className="h-12 md:h-20" aria-hidden="true" />
 
       {/* Hero */}
       <section className="pt-32 pb-16">

@@ -1,4 +1,5 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect, useCallback } from "react";
+import { supabase } from "@/integrations/supabase/client";
 import { format, addDays, isSameDay, startOfDay, setHours, setMinutes } from "date-fns";
 import { Calendar as CalendarIcon, Clock, Phone, ArrowLeft, Check, Loader2 } from "lucide-react";
 import {

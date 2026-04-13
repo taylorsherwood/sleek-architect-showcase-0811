@@ -1,5 +1,6 @@
 import { useState, useMemo, useEffect, useCallback } from "react";
-import { supabase } from "@/integrations/supabase/client";
+import type { SupabaseClient } from "@supabase/supabase-js";
+import type { Database } from "@/integrations/supabase/types";
 import { format, addDays, isSameDay, startOfDay, setHours, setMinutes } from "date-fns";
 import { Calendar as CalendarIcon, Clock, Phone, ArrowLeft, Check, Loader2 } from "lucide-react";
 import {
@@ -27,10 +28,24 @@ const BUSINESS_HOURS = { start: 11, end: 19 }; // 11 AM - 7 PM CST
 const SLOT_DURATION = 30; // minutes
 const BOOKING_WINDOW_DAYS = 45;
 
+let browserSupabaseClientPromise: Promise<SupabaseClient<Database>> | null = null;
+
 interface BusySlot {
   start: string;
   end: string;
 }
+
+const getBrowserSupabaseClient = async () => {
+  if (typeof window === "undefined") return null;
+
+  if (!browserSupabaseClientPromise) {
+    browserSupabaseClientPromise = import("@/integrations/supabase/client").then(
+      ({ supabase }) => supabase
+    );
+  }
+
+  return browserSupabaseClientPromise;
+};
 
 const generateTimeSlots = (date: Date, busySlots: BusySlot[]): TimeSlot[] => {
   const slots: TimeSlot[] = [];
@@ -78,6 +93,9 @@ const BookingModal = ({ open, onOpenChange }: BookingModalProps) => {
 
   // Fetch busy slots when modal opens
   const fetchBusySlots = useCallback(async () => {
+    const supabase = await getBrowserSupabaseClient();
+    if (!supabase) return;
+
     setLoadingAvailability(true);
     try {
       const { data, error } = await supabase.functions.invoke("calendar-availability");

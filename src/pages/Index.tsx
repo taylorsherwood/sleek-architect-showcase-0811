@@ -133,7 +133,7 @@ const Hero = () => {
         <div className="max-w-[780px] md:max-w-[620px] lg:max-w-[780px] relative">
           {/* Gold line + kicker */}
           <div style={anim("0s")} className="mb-5">
-            <div className="w-10 h-px bg-gold mb-5" />
+            
             <p style={{
               fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.25em", textTransform: "uppercase",
               color: "hsl(38 45% 72%)",

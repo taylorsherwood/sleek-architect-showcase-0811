@@ -75,6 +75,7 @@ const InvestHeroSection = ({ children }: Props) => {
           muted
           playsInline
           preload="auto"
+          poster="/images/invest-hero-poster.jpg"
         >
           <source src={VIDEO_URL} type="video/mp4" />
         </video>

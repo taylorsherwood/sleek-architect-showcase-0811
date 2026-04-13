@@ -135,7 +135,7 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-6 pb-40 md:pb-36 lg:pb-44 pt-36 md:pt-32 lg:pt-48">
         <div className="max-w-[780px] md:max-w-[620px] lg:max-w-[780px] relative">
           {/* Gold line + kicker */}
-          <div style={anim("0s")} className="mb-5">
+          <div style={anim("0s")} className="mb-5 mt-10 md:mt-12 lg:mt-14">
             
             <p style={{
               fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.25em", textTransform: "uppercase",

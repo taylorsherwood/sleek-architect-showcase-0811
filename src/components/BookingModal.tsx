@@ -88,7 +88,8 @@ const BookingModal = ({ open, onOpenChange }: BookingModalProps) => {
         phone: formData.phone,
         booking_date: format(selectedSlot.date, "EEEE, MMMM d, yyyy"),
         booking_time: selectedSlot.time,
-        lead_source: "Booking Modal",
+        lead_source: "New Consultation Booking",
+        message: `Consultation booking for ${format(selectedSlot.date, "EEEE, MMMM d, yyyy")} at ${selectedSlot.time} — 15 min phone call`,
         page_url: window.location.href,
         timestamp: new Date().toISOString(),
       });

@@ -398,8 +398,8 @@ const BookingModal = ({ open, onOpenChange }: BookingModalProps) => {
                   fontSize: "11px",
                   letterSpacing: "0.18em",
                   fontWeight: 800,
-                  background: "hsl(233 50% 9%)",
-                  color: "#fff",
+                  background: "hsl(var(--gold))",
+                  color: "hsl(233 50% 9%)",
                   border: "none",
                 }}
               >

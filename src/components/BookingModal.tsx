@@ -203,7 +203,7 @@ const BookingModal = ({ open, onOpenChange }: BookingModalProps) => {
               fontWeight: 500,
             }}
           >
-            Taylor Sherwood
+            Echelon Property Group
           </p>
           <h2
             className="font-display font-semibold mt-1"

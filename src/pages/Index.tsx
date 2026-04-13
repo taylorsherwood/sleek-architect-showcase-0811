@@ -109,6 +109,7 @@ const Hero = () => {
   });
 
   return (
+    <>
     <section ref={sectionRef} id="hero-section" className="relative min-h-screen flex flex-col justify-end overflow-hidden bg-primary">
       {/* Video */}
       <div aria-hidden="true" className="absolute inset-0 pointer-events-none select-none" style={{ zIndex: 0 }}>

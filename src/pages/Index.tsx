@@ -1,4 +1,5 @@
 import React, { lazy, Suspense, useState, useRef, useEffect, useCallback } from "react";
+import BookingModal from "@/components/BookingModal";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";

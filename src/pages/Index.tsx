@@ -19,7 +19,7 @@ const HomeBelowFold = lazy(() => import("@/components/HomeBelowFold"));
 const FALLBACK_TIMEOUT = 4000;
 const RETRY_DELAY = 800;
 
-const CALENDLY_URL = "https://calendly.com/taylor-sherwood-exprealty/30min";
+
 
 const Hero = () => {
   const [showFallback, setShowFallback] = useState(false);
@@ -28,91 +28,8 @@ const Hero = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [heroVisible, setHeroVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
-  const calendlyScriptRef = useRef<HTMLScriptElement | null>(null);
-  const calendlyStylesheetRef = useRef<HTMLLinkElement | null>(null);
-  const [calendlyLoading, setCalendlyLoading] = useState(false);
+  const [bookingOpen, setBookingOpen] = useState(false);
 
-  const ensureCalendlyLoaded = useCallback(() => {
-    if (typeof window === "undefined") return Promise.reject(new Error("window unavailable"));
-    if ((window as any).Calendly) return Promise.resolve();
-
-    return new Promise<void>((resolve, reject) => {
-      // Inject CSS if not already present
-      if (!calendlyStylesheetRef.current) {
-        const existing = document.querySelector('link[href*="calendly"][rel="stylesheet"]');
-        if (existing) {
-          calendlyStylesheetRef.current = existing as HTMLLinkElement;
-        } else {
-          const link = document.createElement("link");
-          link.rel = "stylesheet";
-          link.href = "https://assets.calendly.com/assets/external/widget.css";
-          document.head.appendChild(link);
-          calendlyStylesheetRef.current = link;
-        }
-      }
-
-      // Inject JS if not already present
-      if (calendlyScriptRef.current) {
-        // Script already injected, wait for it
-        const check = setInterval(() => {
-          if ((window as any).Calendly) { clearInterval(check); resolve(); }
-        }, 100);
-        setTimeout(() => { clearInterval(check); reject(new Error("timeout")); }, 5000);
-        return;
-      }
-
-      const finish = () => resolve();
-      const fail = () => reject(new Error("script failed"));
-
-      const script = document.createElement("script");
-      script.src = "https://assets.calendly.com/assets/external/widget.js";
-      script.async = true;
-      script.setAttribute("data-calendly-widget", "true");
-      script.addEventListener("load", finish, { once: true });
-      script.addEventListener("error", fail, { once: true });
-      document.body.appendChild(script);
-      calendlyScriptRef.current = script;
-    });
-  }, []);
-
-  const warmCalendly = useCallback(() => {
-    void ensureCalendlyLoaded().catch(() => undefined);
-  }, [ensureCalendlyLoaded]);
-
-  const openCalendly = useCallback(async () => {
-    if (calendlyLoading) return;
-    setCalendlyLoading(true);
-
-    try {
-      await ensureCalendlyLoaded();
-      (window as any).Calendly?.initPopupWidget({ url: CALENDLY_URL });
-    } catch {
-      window.open(CALENDLY_URL, "_blank", "noopener,noreferrer");
-    } finally {
-      setCalendlyLoading(false);
-    }
-  }, [calendlyLoading, ensureCalendlyLoaded]);
-
-  useEffect(() => {
-    const idleWarm = () => warmCalendly();
-    if ("requestIdleCallback" in window) {
-      const requestIdle = (window as Window & typeof globalThis & {
-        requestIdleCallback?: (callback: IdleRequestCallback, options?: IdleRequestOptions) => number;
-        cancelIdleCallback?: (handle: number) => void;
-      }).requestIdleCallback;
-      const cancelIdle = (window as Window & typeof globalThis & {
-        cancelIdleCallback?: (handle: number) => void;
-      }).cancelIdleCallback;
-
-      if (requestIdle) {
-        const id = requestIdle(idleWarm, { timeout: 2500 });
-        return () => cancelIdle?.(id);
-      }
-    }
-
-    const timeoutId = globalThis.setTimeout(idleWarm, 1800);
-    return () => globalThis.clearTimeout(timeoutId);
-  }, [warmCalendly]);
 
   // Set video source (respects reduced motion)
   useEffect(() => {

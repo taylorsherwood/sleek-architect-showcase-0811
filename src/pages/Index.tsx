@@ -1,4 +1,4 @@
-import React, { lazy, Suspense, useState, useRef, useEffect } from "react";
+import React, { lazy, Suspense, useState, useRef, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";
@@ -30,6 +30,8 @@ const Footer = lazy(() => import("@/components/Footer"));
 
 const FALLBACK_TIMEOUT = 4000;
 const RETRY_DELAY = 800;
+
+const CALENDLY_URL = "https://calendly.com/taylor-sherwood-exprealty/30min";
 
 const Hero = () => {
   const [showFallback, setShowFallback] = useState(false);

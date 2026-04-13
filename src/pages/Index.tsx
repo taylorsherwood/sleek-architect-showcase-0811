@@ -163,7 +163,7 @@ const Hero = () => {
           {/* CTA Buttons — static, dark translucent glass */}
           <div className="inline-flex flex-col items-center" style={anim("0.4s")}>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/contact"
+              <a href="https://calendly.com/taylor-sherwood-exprealty/30min" target="_blank" rel="noopener noreferrer"
                 className="inline-block text-center px-6 py-[14px]"
                 style={{
                   fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 500,
@@ -177,7 +177,7 @@ const Hero = () => {
                 onMouseLeave={e => { e.currentTarget.style.transform = "translateX(0) translateZ(0)"; e.currentTarget.style.background = "#b9a06c"; e.currentTarget.style.borderColor = "#b9a06c"; e.currentTarget.style.color = "#fff"; }}
               >
                 BOOK A 15-MINUTE ADVISORY CALL
-              </Link>
+              </a>
               <Link to="/off-market-real-estate-austin"
                 className="inline-block text-center px-6 py-[14px]"
                 style={{

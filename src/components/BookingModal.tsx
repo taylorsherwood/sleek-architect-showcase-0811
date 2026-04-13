@@ -27,18 +27,38 @@ const BUSINESS_HOURS = { start: 11, end: 19 }; // 11 AM - 7 PM CST
 const SLOT_DURATION = 30; // minutes
 const BOOKING_WINDOW_DAYS = 45;
 
-const generateTimeSlots = (date: Date): TimeSlot[] => {
+interface BusySlot {
+  start: string;
+  end: string;
+}
+
+const generateTimeSlots = (date: Date, busySlots: BusySlot[]): TimeSlot[] => {
   const slots: TimeSlot[] = [];
   const now = new Date();
+
+  // Convert date to CST/CDT for generating business-hour slots
+  // Business hours are in CST (America/Chicago)
   for (let hour = BUSINESS_HOURS.start; hour < BUSINESS_HOURS.end; hour++) {
     for (let min = 0; min < 60; min += SLOT_DURATION) {
       const slotDate = setMinutes(setHours(startOfDay(date), hour), min);
       // Skip past slots for today
       if (isSameDay(date, now) && slotDate <= now) continue;
-      slots.push({
-        time: format(slotDate, "h:mm a"),
-        date: slotDate,
+
+      // Check if this slot overlaps with any busy period
+      const slotStart = slotDate.getTime();
+      const slotEnd = slotStart + SLOT_DURATION * 60 * 1000;
+      const isBusy = busySlots.some((busy) => {
+        const busyStart = new Date(busy.start).getTime();
+        const busyEnd = new Date(busy.end).getTime();
+        return slotStart < busyEnd && slotEnd > busyStart;
       });
+
+      if (!isBusy) {
+        slots.push({
+          time: format(slotDate, "h:mm a"),
+          date: slotDate,
+        });
+      }
     }
   }
   return slots;

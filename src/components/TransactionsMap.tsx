@@ -51,62 +51,6 @@ const TransactionsMap = () => {
 
     m.on("load", () => {
       setMapLoaded(true);
-
-      // Query all rendered layers for clickable points
-      m.on("click", (e) => {
-        const features = m.queryRenderedFeatures(e.point);
-        if (!features.length) return;
-
-        // Find a point feature with properties
-        const feature = features.find(
-          (f) =>
-            f.geometry.type === "Point" &&
-            f.properties &&
-            Object.keys(f.properties).length > 0
-        );
-        if (!feature || feature.geometry.type !== "Point") return;
-
-        const props = feature.properties || {};
-        const title = props.title || props.name || props.address || props.Address || "";
-        const price = props.price || props.Price || "";
-        const neighborhood = props.neighborhood || props.Neighborhood || props.area || "";
-        const description = props.description || "";
-
-        // Only show popup if there's meaningful content
-        if (!title && !price && !description) return;
-
-        let html = `<div class="epg-popup">`;
-        if (title) html += `<div class="epg-popup-title">${title}</div>`;
-        if (price) html += `<div class="epg-popup-price">${price}</div>`;
-        if (neighborhood) html += `<div class="epg-popup-neighborhood">${neighborhood}</div>`;
-        if (description && !title) html += `<div class="epg-popup-desc">${description}</div>`;
-        html += `</div>`;
-
-        const coords = (feature.geometry as GeoJSON.Point).coordinates.slice() as [number, number];
-
-        new mapboxgl.Popup({
-          closeButton: true,
-          closeOnClick: true,
-          maxWidth: "280px",
-          className: "epg-mapbox-popup",
-          offset: 12,
-        })
-          .setLngLat(coords)
-          .setHTML(html)
-          .addTo(m);
-      });
-
-      // Change cursor on hoverable points
-      m.on("mousemove", (e) => {
-        const features = m.queryRenderedFeatures(e.point);
-        const hasPoint = features.some(
-          (f) =>
-            f.geometry.type === "Point" &&
-            f.properties &&
-            Object.keys(f.properties).length > 0
-        );
-        m.getCanvas().style.cursor = hasPoint ? "pointer" : "";
-      });
     });
 
     return () => {

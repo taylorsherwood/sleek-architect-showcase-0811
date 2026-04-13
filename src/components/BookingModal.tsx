@@ -213,7 +213,7 @@ const BookingModal = ({ open, onOpenChange }: BookingModalProps) => {
               letterSpacing: "-0.01em",
             }}
           >
-            Consultation Call
+            Advisory Call
           </h2>
           <div className="flex items-center justify-center gap-5 mt-3">
             <span className="flex items-center gap-1.5" style={{ color: "hsl(233 50% 9% / 0.5)", fontSize: "13px" }}>
@@ -406,7 +406,7 @@ const BookingModal = ({ open, onOpenChange }: BookingModalProps) => {
                 {isSubmitting ? (
                   <Loader2 className="w-4 h-4 animate-spin" />
                 ) : (
-                  "Confirm Booking"
+                  "CONFIRM CALL"
                 )}
               </button>
             </form>

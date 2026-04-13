@@ -1,4 +1,4 @@
-import React, { lazy, Suspense, useState, useRef, useEffect } from "react";
+import React, { lazy, Suspense, useState, useRef, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";
@@ -31,6 +31,8 @@ const Footer = lazy(() => import("@/components/Footer"));
 const FALLBACK_TIMEOUT = 4000;
 const RETRY_DELAY = 800;
 
+const CALENDLY_URL = "https://calendly.com/taylor-sherwood-exprealty/30min";
+
 const Hero = () => {
   const [showFallback, setShowFallback] = useState(false);
   const [videoReady, setVideoReady] = useState(false);
@@ -38,6 +40,101 @@ const Hero = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [heroVisible, setHeroVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
+  const calendlyScriptRef = useRef<HTMLScriptElement | null>(null);
+  const calendlyStylesheetRef = useRef<HTMLLinkElement | null>(null);
+  const [calendlyLoading, setCalendlyLoading] = useState(false);
+
+  const ensureCalendlyLoaded = useCallback(() => {
+    if (typeof window === "undefined") return Promise.reject(new Error("window unavailable"));
+    if ((window as any).Calendly) return Promise.resolve();
+
+    return new Promise<void>((resolve, reject) => {
+      let settled = false;
+
+      const finish = () => {
+        if (settled) return;
+        settled = true;
+        resolve();
+      };
+
+      const fail = () => {
+        if (settled) return;
+        settled = true;
+        reject(new Error("Calendly failed to load"));
+      };
+
+      const existingStylesheet = document.querySelector('link[data-calendly-widget="true"]') as HTMLLinkElement | null;
+      if (existingStylesheet) {
+        calendlyStylesheetRef.current = existingStylesheet;
+      } else {
+        const stylesheet = document.createElement("link");
+        stylesheet.rel = "stylesheet";
+        stylesheet.href = "https://assets.calendly.com/assets/external/widget.css";
+        stylesheet.setAttribute("data-calendly-widget", "true");
+        document.head.appendChild(stylesheet);
+        calendlyStylesheetRef.current = stylesheet;
+      }
+
+      const existingScript = document.querySelector('script[data-calendly-widget="true"]') as HTMLScriptElement | null;
+      if (existingScript) {
+        calendlyScriptRef.current = existingScript;
+        existingScript.addEventListener("load", finish, { once: true });
+        existingScript.addEventListener("error", fail, { once: true });
+        window.setTimeout(() => {
+          if ((window as any).Calendly) finish();
+        }, 50);
+        return;
+      }
+
+      const script = document.createElement("script");
+      script.src = "https://assets.calendly.com/assets/external/widget.js";
+      script.async = true;
+      script.setAttribute("data-calendly-widget", "true");
+      script.addEventListener("load", finish, { once: true });
+      script.addEventListener("error", fail, { once: true });
+      document.body.appendChild(script);
+      calendlyScriptRef.current = script;
+    });
+  }, []);
+
+  const warmCalendly = useCallback(() => {
+    void ensureCalendlyLoaded().catch(() => undefined);
+  }, [ensureCalendlyLoaded]);
+
+  const openCalendly = useCallback(async () => {
+    if (calendlyLoading) return;
+    setCalendlyLoading(true);
+
+    try {
+      await ensureCalendlyLoaded();
+      (window as any).Calendly?.initPopupWidget({ url: CALENDLY_URL });
+    } catch {
+      window.open(CALENDLY_URL, "_blank", "noopener,noreferrer");
+    } finally {
+      setCalendlyLoading(false);
+    }
+  }, [calendlyLoading, ensureCalendlyLoaded]);
+
+  useEffect(() => {
+    const idleWarm = () => warmCalendly();
+    if ("requestIdleCallback" in window) {
+      const requestIdle = (window as Window & typeof globalThis & {
+        requestIdleCallback?: (callback: IdleRequestCallback, options?: IdleRequestOptions) => number;
+        cancelIdleCallback?: (handle: number) => void;
+      }).requestIdleCallback;
+      const cancelIdle = (window as Window & typeof globalThis & {
+        cancelIdleCallback?: (handle: number) => void;
+      }).cancelIdleCallback;
+
+      if (requestIdle) {
+        const id = requestIdle(idleWarm, { timeout: 2500 });
+        return () => cancelIdle?.(id);
+      }
+    }
+
+    const timeoutId = globalThis.setTimeout(idleWarm, 1800);
+    return () => globalThis.clearTimeout(timeoutId);
+  }, [warmCalendly]);
 
   useEffect(() => {
     const el = sectionRef.current;
@@ -49,56 +146,6 @@ const Hero = () => {
     observer.observe(el);
     return () => observer.disconnect();
   }, []);
-
-  useEffect(() => {
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      setShowFallback(true);
-      return;
-    }
-    setVideoSrc("/videos/Final_Draft.mp4");
-  }, []);
-
-  useEffect(() => {
-    if (!videoSrc) return;
-    const video = videoRef.current;
-    if (!video) { setShowFallback(true); return; }
-
-    video.muted = true;
-    video.defaultMuted = true;
-    video.setAttribute("muted", "");
-    video.setAttribute("playsinline", "");
-    video.setAttribute("webkit-playsinline", "");
-
-    const fallbackTimer = setTimeout(() => {
-      if (!videoReady) setShowFallback(true);
-    }, FALLBACK_TIMEOUT);
-
-    const attemptPlay = () => {
-      const p = video.play();
-      if (p !== undefined) {
-        p.then(() => { video.playbackRate = 0.78; setVideoReady(true); setShowFallback(false); })
-          .catch(() => {
-            setTimeout(() => {
-              video.muted = true;
-              video.defaultMuted = true;
-              const retry = video.play();
-              if (retry !== undefined) {
-                retry.then(() => { video.playbackRate = 0.78; setVideoReady(true); setShowFallback(false); })
-                  .catch(() => setShowFallback(true));
-              } else setShowFallback(true);
-            }, RETRY_DELAY);
-          });
-      } else setShowFallback(true);
-    };
-
-    const onReady = () => attemptPlay();
-    if (video.readyState >= 2) attemptPlay();
-    else video.addEventListener("loadeddata", onReady);
-    video.addEventListener("error", () => setShowFallback(true));
-
-    return () => { clearTimeout(fallbackTimer); video.removeEventListener("loadeddata", onReady); };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [videoSrc]);
 
   const anim = (delay: string) => ({
     opacity: heroVisible ? 1 : 0,
@@ -164,11 +211,17 @@ const Hero = () => {
           <div className="inline-flex flex-col items-center" style={anim("0.4s")}>
             <div className="flex flex-col sm:flex-row gap-4">
               <button
-                onClick={() => {
-                  if ((window as any).Calendly) {
-                    (window as any).Calendly.initPopupWidget({ url: 'https://calendly.com/taylor-sherwood-exprealty/30min' });
-                  }
+                onClick={openCalendly}
+                onMouseEnter={(e) => {
+                  warmCalendly();
+                  e.currentTarget.style.transform = "translateX(3px) translateZ(0)";
+                  e.currentTarget.style.background = "#fff";
+                  e.currentTarget.style.borderColor = "#fff";
+                  e.currentTarget.style.color = "#b9a06c";
                 }}
+                onFocus={warmCalendly}
+                onTouchStart={warmCalendly}
+                onMouseLeave={e => { e.currentTarget.style.transform = "translateX(0) translateZ(0)"; e.currentTarget.style.background = "#b9a06c"; e.currentTarget.style.borderColor = "#b9a06c"; e.currentTarget.style.color = "#fff"; }}
                 className="inline-block text-center px-6 py-[14px] cursor-pointer"
                 style={{
                   fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 500,
@@ -178,10 +231,8 @@ const Hero = () => {
                   transform: "translateX(0) translateZ(0)", willChange: "transform, box-shadow",
                   transition: "transform 250ms ease, box-shadow 250ms ease, background 250ms ease, border-color 250ms ease",
                 }}
-                onMouseEnter={e => { e.currentTarget.style.transform = "translateX(3px) translateZ(0)"; e.currentTarget.style.background = "#fff"; e.currentTarget.style.borderColor = "#fff"; e.currentTarget.style.color = "#b9a06c"; }}
-                onMouseLeave={e => { e.currentTarget.style.transform = "translateX(0) translateZ(0)"; e.currentTarget.style.background = "#b9a06c"; e.currentTarget.style.borderColor = "#b9a06c"; e.currentTarget.style.color = "#fff"; }}
               >
-                BOOK A 15-MINUTE ADVISORY CALL
+                {calendlyLoading ? "OPENING CALENDAR..." : "BOOK A 15-MINUTE ADVISORY CALL"}
               </button>
               <Link to="/off-market-real-estate-austin"
                 className="inline-block text-center px-6 py-[14px]"

@@ -1331,6 +1331,7 @@ const Index = () => (
     <div className="h-16 md:h-24 bg-secondary flex items-center justify-center" aria-hidden="true">
       <div className="w-16 h-px bg-gold" />
     </div>
+    <div className="h-12 md:h-20 bg-secondary" aria-hidden="true" />
 
     {/* Parallax break — lakefront / pool terrace */}
     <div className="parallax-break" style={{ backgroundImage: "url('/images/parallax-lakefront.jpg')" }} aria-hidden="true" />

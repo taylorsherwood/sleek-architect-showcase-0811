@@ -1,7 +1,9 @@
+import { useState } from "react";
 import SEOHead from "@/components/SEOHead";
 import taylorHeadshot from "@/assets/taylor-headshot.jpg";
 import combinedLogo from "@/assets/exp-echelon-combined-logo.png";
 import { Instagram, Mail, Phone, Home, Search, Mountain } from "lucide-react";
+import BookingModal from "@/components/BookingModal";
 
 const links = [
   { label: "Complimentary Property Valuation", href: "https://www.echelonpropertygroup.com/sell" },
@@ -22,6 +24,8 @@ const ctaCards = [
 ];
 
 const Connect = () => {
+  const [bookingOpen, setBookingOpen] = useState(false);
+
   return (
     <>
       <SEOHead
@@ -210,11 +214,9 @@ const Connect = () => {
           </nav>
 
           <div className="px-8 mt-4 mb-2">
-            <a
-              href="https://calendly.com/taylor-sherwood-exprealty/30min"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              className="flex items-center justify-center w-full h-14 rounded-full"
+            <button
+              onClick={() => setBookingOpen(true)}
+              className="flex items-center justify-center w-full h-14 rounded-full cursor-pointer"
               style={{
                 background: "hsl(233 50% 9%)",
                 border: "1px solid hsl(233 50% 12%)",
@@ -232,8 +234,10 @@ const Connect = () => {
               >
                 Schedule a Consultation
               </span>
-            </a>
+            </button>
           </div>
+
+          <BookingModal open={bookingOpen} onOpenChange={setBookingOpen} />
 
           <div className="px-8 mt-2 mb-2">
             <a

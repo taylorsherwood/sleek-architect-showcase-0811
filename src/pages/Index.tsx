@@ -159,9 +159,10 @@ const Hero = () => {
             ...anim("0.3s"),
             fontFamily: '"Jost", sans-serif', fontWeight: 400, fontSize: "15.5px",
             letterSpacing: "0.04em", color: "rgba(250,248,244,0.95)",
-            textShadow: "0 1px 8px rgba(0,0,0,0.6), 0 0 20px rgba(0,0,0,0.4)"
+            textShadow: "0 1px 8px rgba(0,0,0,0.6), 0 0 20px rgba(0,0,0,0.4)",
+            whiteSpace: "pre-wrap"
           }}>
-            Private listings, off-market opportunities, and elevated real estate representation.
+            {"Private listings & off-market opportunities.\nElevated real estate representation."}
           </p>
 
           {/* CTA Buttons */}

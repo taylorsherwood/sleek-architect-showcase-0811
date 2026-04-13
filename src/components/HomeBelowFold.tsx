@@ -1066,13 +1066,13 @@ const HomeBelowFold = () => (
 
     <div className="parallax-break" style={{ backgroundImage: "url('/images/parallax-lakefront.jpg')" }} aria-hidden="true" />
 
-    <FeaturedCommunities />
 
     <div className="parallax-break" style={{ backgroundImage: "url('/images/parallax-interior.jpg')" }} aria-hidden="true" />
 
     <LeadCapture />
     <InsightsSection />
     <EditorialInsights />
+    <FeaturedCommunities />
     <FinalCTA />
 
     <Suspense fallback={<div className="min-h-[100px]" />}>

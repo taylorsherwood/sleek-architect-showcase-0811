@@ -166,16 +166,13 @@ const Hero = () => {
           <div className="inline-flex flex-col items-center" style={anim("0.4s")}>
             <div className="flex flex-col sm:flex-row gap-4">
               <button
-                onClick={openCalendly}
+                onClick={() => setBookingOpen(true)}
                 onMouseEnter={(e) => {
-                  warmCalendly();
                   e.currentTarget.style.transform = "translateX(3px) translateZ(0)";
                   e.currentTarget.style.background = "#fff";
                   e.currentTarget.style.borderColor = "#fff";
                   e.currentTarget.style.color = "#b9a06c";
                 }}
-                onFocus={warmCalendly}
-                onTouchStart={warmCalendly}
                 onMouseLeave={e => { e.currentTarget.style.transform = "translateX(0) translateZ(0)"; e.currentTarget.style.background = "#b9a06c"; e.currentTarget.style.borderColor = "#b9a06c"; e.currentTarget.style.color = "#fff"; }}
                 className="inline-block text-center px-6 py-[14px] cursor-pointer"
                 style={{
@@ -187,7 +184,7 @@ const Hero = () => {
                   transition: "transform 250ms ease, box-shadow 250ms ease, background 250ms ease, border-color 250ms ease",
                 }}
               >
-                {calendlyLoading ? "OPENING CALENDAR..." : "BOOK A 15-MINUTE ADVISORY CALL"}
+                BOOK A 15-MINUTE ADVISORY CALL
               </button>
               <Link to="/off-market-real-estate-austin"
                 className="inline-block text-center px-6 py-[14px]"

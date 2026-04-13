@@ -154,7 +154,7 @@ const Hero = () => {
             Access Austin's Most<br className="md:hidden" />{" "}Exclusive PROPERTIES
           </h1>
 
-          <p className="max-w-[480px] mb-10 md:mb-7 lg:mb-10 leading-[1.7]" style={{
+          <p className="max-w-[480px] mb-14 md:mb-11 lg:mb-14 leading-[1.7]" style={{
             ...anim("0.3s"),
             fontFamily: '"Jost", sans-serif', fontWeight: 400, fontSize: "15.5px",
             letterSpacing: "0.04em", color: "rgba(250,248,244,0.95)",

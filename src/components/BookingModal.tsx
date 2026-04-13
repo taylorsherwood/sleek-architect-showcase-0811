@@ -22,7 +22,7 @@ interface TimeSlot {
 }
 
 // Default business hours (will be replaced by Google Calendar availability)
-const BUSINESS_HOURS = { start: 9, end: 17 }; // 9 AM - 5 PM
+const BUSINESS_HOURS = { start: 11, end: 19 }; // 11 AM - 7 PM CST
 const SLOT_DURATION = 30; // minutes
 const BOOKING_WINDOW_DAYS = 45;
 

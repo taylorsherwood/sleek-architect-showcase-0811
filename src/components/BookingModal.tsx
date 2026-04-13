@@ -1,4 +1,5 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect, useCallback } from "react";
+import { supabase } from "@/integrations/supabase/client";
 import { format, addDays, isSameDay, startOfDay, setHours, setMinutes } from "date-fns";
 import { Calendar as CalendarIcon, Clock, Phone, ArrowLeft, Check, Loader2 } from "lucide-react";
 import {
@@ -26,18 +27,38 @@ const BUSINESS_HOURS = { start: 11, end: 19 }; // 11 AM - 7 PM CST
 const SLOT_DURATION = 30; // minutes
 const BOOKING_WINDOW_DAYS = 45;
 
-const generateTimeSlots = (date: Date): TimeSlot[] => {
+interface BusySlot {
+  start: string;
+  end: string;
+}
+
+const generateTimeSlots = (date: Date, busySlots: BusySlot[]): TimeSlot[] => {
   const slots: TimeSlot[] = [];
   const now = new Date();
+
+  // Convert date to CST/CDT for generating business-hour slots
+  // Business hours are in CST (America/Chicago)
   for (let hour = BUSINESS_HOURS.start; hour < BUSINESS_HOURS.end; hour++) {
     for (let min = 0; min < 60; min += SLOT_DURATION) {
       const slotDate = setMinutes(setHours(startOfDay(date), hour), min);
       // Skip past slots for today
       if (isSameDay(date, now) && slotDate <= now) continue;
-      slots.push({
-        time: format(slotDate, "h:mm a"),
-        date: slotDate,
+
+      // Check if this slot overlaps with any busy period
+      const slotStart = slotDate.getTime();
+      const slotEnd = slotStart + SLOT_DURATION * 60 * 1000;
+      const isBusy = busySlots.some((busy) => {
+        const busyStart = new Date(busy.start).getTime();
+        const busyEnd = new Date(busy.end).getTime();
+        return slotStart < busyEnd && slotEnd > busyStart;
       });
+
+      if (!isBusy) {
+        slots.push({
+          time: format(slotDate, "h:mm a"),
+          date: slotDate,
+        });
+      }
     }
   }
   return slots;
@@ -49,13 +70,36 @@ const BookingModal = ({ open, onOpenChange }: BookingModalProps) => {
   const [selectedSlot, setSelectedSlot] = useState<TimeSlot | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({ name: "", email: "", phone: "" });
+  const [busySlots, setBusySlots] = useState<BusySlot[]>([]);
+  const [loadingAvailability, setLoadingAvailability] = useState(false);
 
   const today = startOfDay(new Date());
   const maxDate = addDays(today, BOOKING_WINDOW_DAYS);
 
+  // Fetch busy slots when modal opens
+  const fetchBusySlots = useCallback(async () => {
+    setLoadingAvailability(true);
+    try {
+      const { data, error } = await supabase.functions.invoke("calendar-availability");
+      if (!error && data?.busy) {
+        setBusySlots(data.busy);
+      }
+    } catch {
+      // Fail silently — show all slots if calendar unavailable
+    } finally {
+      setLoadingAvailability(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (open) {
+      fetchBusySlots();
+    }
+  }, [open, fetchBusySlots]);
+
   const timeSlots = useMemo(
-    () => (selectedDate ? generateTimeSlots(selectedDate) : []),
-    [selectedDate]
+    () => (selectedDate ? generateTimeSlots(selectedDate, busySlots) : []),
+    [selectedDate, busySlots]
   );
 
   const disabledDays = (date: Date) => {

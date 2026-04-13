@@ -220,6 +220,8 @@ const Hero = () => {
         <div className="scroll-indicator-line" />
       </div>
     </section>
+    <BookingModal open={bookingOpen} onOpenChange={setBookingOpen} />
+    </>
   );
 };
 

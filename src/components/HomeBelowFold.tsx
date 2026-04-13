@@ -1054,6 +1054,8 @@ const HomeBelowFold = () => (
 
     <NoscriptFallback />
 
+    <CommunitiesSection />
+
     <ExpertiseSection />
 
     <TestimonialsSection />
@@ -1064,7 +1066,6 @@ const HomeBelowFold = () => (
 
     <div className="parallax-break" style={{ backgroundImage: "url('/images/parallax-lakefront.jpg')" }} aria-hidden="true" />
 
-    <CommunitiesSection />
     <FeaturedCommunities />
 
     <div className="parallax-break" style={{ backgroundImage: "url('/images/parallax-interior.jpg')" }} aria-hidden="true" />

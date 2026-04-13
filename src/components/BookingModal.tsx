@@ -156,7 +156,7 @@ const BookingModal = ({ open, onOpenChange }: BookingModalProps) => {
         timestamp: new Date().toISOString(),
       });
 
-      await fetch("https://hooks.zapier.com/hooks/catch/26916347/upj5fa0/", {
+      await fetch("https://hooks.zapier.com/hooks/catch/26916347/u7plp1z/", {
         method: "POST",
         body: payload,
       });

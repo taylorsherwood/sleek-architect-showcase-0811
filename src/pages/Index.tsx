@@ -136,6 +136,66 @@ const Hero = () => {
     return () => globalThis.clearTimeout(timeoutId);
   }, [warmCalendly]);
 
+  // Set video source (respects reduced motion)
+  useEffect(() => {
+    const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+    if (motionQuery.matches) {
+      setShowFallback(true);
+      return;
+    }
+    setVideoSrc("/videos/hero-video.mp4");
+  }, []);
+
+  // Video playback logic
+  useEffect(() => {
+    if (!videoSrc) return;
+    const video = videoRef.current;
+    if (!video) { setShowFallback(true); return; }
+
+    video.muted = true;
+    video.defaultMuted = true;
+
+    const fallbackTimer = setTimeout(() => {
+      if (!videoReady) setShowFallback(true);
+    }, FALLBACK_TIMEOUT);
+
+    const attemptPlay = () => {
+      const p = video.play();
+      if (p !== undefined) {
+        p.then(() => {
+          video.playbackRate = 0.92;
+          setVideoReady(true);
+          setShowFallback(false);
+        }).catch(() => {
+          setTimeout(() => {
+            video.muted = true;
+            video.play()?.then(() => {
+              video.playbackRate = 0.92;
+              setVideoReady(true);
+              setShowFallback(false);
+            }).catch(() => setShowFallback(true));
+          }, RETRY_DELAY);
+        });
+      } else {
+        setShowFallback(true);
+      }
+    };
+
+    if (video.readyState >= 2) {
+      attemptPlay();
+    } else {
+      video.addEventListener("loadeddata", attemptPlay, { once: true });
+    }
+    video.addEventListener("error", () => setShowFallback(true));
+
+    return () => {
+      clearTimeout(fallbackTimer);
+      video.removeEventListener("loadeddata", attemptPlay);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [videoSrc]);
+
+  // Re-trigger text animation on visibility
   useEffect(() => {
     const el = sectionRef.current;
     if (!el) return;

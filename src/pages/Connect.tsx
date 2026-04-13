@@ -211,7 +211,7 @@ const Connect = () => {
 
           <div className="px-8 mt-4 mb-2">
             <a
-              href="https://www.echelonpropertygroup.com/contact"
+              href="https://calendly.com/taylor-sherwood-exprealty/30min"
               target="_blank"
               rel="noopener noreferrer nofollow"
               className="flex items-center justify-center w-full h-14 rounded-full"

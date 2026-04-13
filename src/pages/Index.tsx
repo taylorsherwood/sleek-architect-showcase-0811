@@ -177,7 +177,7 @@ const Hero = () => {
                 onMouseLeave={e => { e.currentTarget.style.transform = "translateX(0) translateZ(0)"; e.currentTarget.style.background = "#b9a06c"; e.currentTarget.style.borderColor = "#b9a06c"; e.currentTarget.style.color = "#fff"; }}
               >
                 BOOK A 15-MINUTE ADVISORY CALL
-              </Link>
+              </a>
               <Link to="/off-market-real-estate-austin"
                 className="inline-block text-center px-6 py-[14px]"
                 style={{

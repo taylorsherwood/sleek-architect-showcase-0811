@@ -70,13 +70,36 @@ const BookingModal = ({ open, onOpenChange }: BookingModalProps) => {
   const [selectedSlot, setSelectedSlot] = useState<TimeSlot | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({ name: "", email: "", phone: "" });
+  const [busySlots, setBusySlots] = useState<BusySlot[]>([]);
+  const [loadingAvailability, setLoadingAvailability] = useState(false);
 
   const today = startOfDay(new Date());
   const maxDate = addDays(today, BOOKING_WINDOW_DAYS);
 
+  // Fetch busy slots when modal opens
+  const fetchBusySlots = useCallback(async () => {
+    setLoadingAvailability(true);
+    try {
+      const { data, error } = await supabase.functions.invoke("calendar-availability");
+      if (!error && data?.busy) {
+        setBusySlots(data.busy);
+      }
+    } catch {
+      // Fail silently — show all slots if calendar unavailable
+    } finally {
+      setLoadingAvailability(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (open) {
+      fetchBusySlots();
+    }
+  }, [open, fetchBusySlots]);
+
   const timeSlots = useMemo(
-    () => (selectedDate ? generateTimeSlots(selectedDate) : []),
-    [selectedDate]
+    () => (selectedDate ? generateTimeSlots(selectedDate, busySlots) : []),
+    [selectedDate, busySlots]
   );
 
   const disabledDays = (date: Date) => {

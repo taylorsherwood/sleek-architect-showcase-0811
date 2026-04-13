@@ -399,7 +399,7 @@ const BookingModal = ({ open, onOpenChange }: BookingModalProps) => {
                   letterSpacing: "0.18em",
                   fontWeight: 800,
                   background: "hsl(var(--gold))",
-                  color: "hsl(233 50% 9%)",
+                  color: "#fff",
                   border: "none",
                 }}
               >

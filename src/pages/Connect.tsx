@@ -24,6 +24,8 @@ const ctaCards = [
 ];
 
 const Connect = () => {
+  const [bookingOpen, setBookingOpen] = useState(false);
+
   return (
     <>
       <SEOHead

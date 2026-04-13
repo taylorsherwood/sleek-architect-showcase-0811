@@ -128,7 +128,7 @@ const CommercialInvestment = () => {
       <section className="relative pt-32 pb-12">
         <div className="absolute inset-0">
           <CommercialHeroVideo />
-          <div className="absolute inset-0 bg-foreground/30" />
+          <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(10,14,25,0.7) 0%, rgba(10,14,25,0.45) 40%, rgba(10,14,25,0.15) 65%, transparent 85%)' }} />
         </div>
         <div className="relative container mx-auto px-6">
           <div className="max-w-xl py-16">

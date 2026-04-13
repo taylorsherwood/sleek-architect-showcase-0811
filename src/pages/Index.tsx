@@ -1,4 +1,5 @@
 import React, { lazy, Suspense, useState, useRef, useEffect, useCallback } from "react";
+import BookingModal from "@/components/BookingModal";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";
@@ -18,7 +19,7 @@ const HomeBelowFold = lazy(() => import("@/components/HomeBelowFold"));
 const FALLBACK_TIMEOUT = 4000;
 const RETRY_DELAY = 800;
 
-const CALENDLY_URL = "https://calendly.com/taylor-sherwood-exprealty/30min";
+
 
 const Hero = () => {
   const [showFallback, setShowFallback] = useState(false);
@@ -27,91 +28,8 @@ const Hero = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [heroVisible, setHeroVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
-  const calendlyScriptRef = useRef<HTMLScriptElement | null>(null);
-  const calendlyStylesheetRef = useRef<HTMLLinkElement | null>(null);
-  const [calendlyLoading, setCalendlyLoading] = useState(false);
+  const [bookingOpen, setBookingOpen] = useState(false);
 
-  const ensureCalendlyLoaded = useCallback(() => {
-    if (typeof window === "undefined") return Promise.reject(new Error("window unavailable"));
-    if ((window as any).Calendly) return Promise.resolve();
-
-    return new Promise<void>((resolve, reject) => {
-      // Inject CSS if not already present
-      if (!calendlyStylesheetRef.current) {
-        const existing = document.querySelector('link[href*="calendly"][rel="stylesheet"]');
-        if (existing) {
-          calendlyStylesheetRef.current = existing as HTMLLinkElement;
-        } else {
-          const link = document.createElement("link");
-          link.rel = "stylesheet";
-          link.href = "https://assets.calendly.com/assets/external/widget.css";
-          document.head.appendChild(link);
-          calendlyStylesheetRef.current = link;
-        }
-      }
-
-      // Inject JS if not already present
-      if (calendlyScriptRef.current) {
-        // Script already injected, wait for it
-        const check = setInterval(() => {
-          if ((window as any).Calendly) { clearInterval(check); resolve(); }
-        }, 100);
-        setTimeout(() => { clearInterval(check); reject(new Error("timeout")); }, 5000);
-        return;
-      }
-
-      const finish = () => resolve();
-      const fail = () => reject(new Error("script failed"));
-
-      const script = document.createElement("script");
-      script.src = "https://assets.calendly.com/assets/external/widget.js";
-      script.async = true;
-      script.setAttribute("data-calendly-widget", "true");
-      script.addEventListener("load", finish, { once: true });
-      script.addEventListener("error", fail, { once: true });
-      document.body.appendChild(script);
-      calendlyScriptRef.current = script;
-    });
-  }, []);
-
-  const warmCalendly = useCallback(() => {
-    void ensureCalendlyLoaded().catch(() => undefined);
-  }, [ensureCalendlyLoaded]);
-
-  const openCalendly = useCallback(async () => {
-    if (calendlyLoading) return;
-    setCalendlyLoading(true);
-
-    try {
-      await ensureCalendlyLoaded();
-      (window as any).Calendly?.initPopupWidget({ url: CALENDLY_URL });
-    } catch {
-      window.open(CALENDLY_URL, "_blank", "noopener,noreferrer");
-    } finally {
-      setCalendlyLoading(false);
-    }
-  }, [calendlyLoading, ensureCalendlyLoaded]);
-
-  useEffect(() => {
-    const idleWarm = () => warmCalendly();
-    if ("requestIdleCallback" in window) {
-      const requestIdle = (window as Window & typeof globalThis & {
-        requestIdleCallback?: (callback: IdleRequestCallback, options?: IdleRequestOptions) => number;
-        cancelIdleCallback?: (handle: number) => void;
-      }).requestIdleCallback;
-      const cancelIdle = (window as Window & typeof globalThis & {
-        cancelIdleCallback?: (handle: number) => void;
-      }).cancelIdleCallback;
-
-      if (requestIdle) {
-        const id = requestIdle(idleWarm, { timeout: 2500 });
-        return () => cancelIdle?.(id);
-      }
-    }
-
-    const timeoutId = globalThis.setTimeout(idleWarm, 1800);
-    return () => globalThis.clearTimeout(timeoutId);
-  }, [warmCalendly]);
 
   // Set video source (respects reduced motion)
   useEffect(() => {
@@ -191,6 +109,7 @@ const Hero = () => {
   });
 
   return (
+    <>
     <section ref={sectionRef} id="hero-section" className="relative min-h-screen flex flex-col justify-end overflow-hidden bg-primary">
       {/* Video */}
       <div aria-hidden="true" className="absolute inset-0 pointer-events-none select-none" style={{ zIndex: 0 }}>
@@ -248,16 +167,13 @@ const Hero = () => {
           <div className="inline-flex flex-col items-center" style={anim("0.4s")}>
             <div className="flex flex-col sm:flex-row gap-4">
               <button
-                onClick={openCalendly}
+                onClick={() => setBookingOpen(true)}
                 onMouseEnter={(e) => {
-                  warmCalendly();
                   e.currentTarget.style.transform = "translateX(3px) translateZ(0)";
                   e.currentTarget.style.background = "#fff";
                   e.currentTarget.style.borderColor = "#fff";
                   e.currentTarget.style.color = "#b9a06c";
                 }}
-                onFocus={warmCalendly}
-                onTouchStart={warmCalendly}
                 onMouseLeave={e => { e.currentTarget.style.transform = "translateX(0) translateZ(0)"; e.currentTarget.style.background = "#b9a06c"; e.currentTarget.style.borderColor = "#b9a06c"; e.currentTarget.style.color = "#fff"; }}
                 className="inline-block text-center px-6 py-[14px] cursor-pointer"
                 style={{
@@ -269,7 +185,7 @@ const Hero = () => {
                   transition: "transform 250ms ease, box-shadow 250ms ease, background 250ms ease, border-color 250ms ease",
                 }}
               >
-                {calendlyLoading ? "OPENING CALENDAR..." : "BOOK A 15-MINUTE ADVISORY CALL"}
+                BOOK A 15-MINUTE ADVISORY CALL
               </button>
               <Link to="/off-market-real-estate-austin"
                 className="inline-block text-center px-6 py-[14px]"
@@ -305,6 +221,8 @@ const Hero = () => {
         <div className="scroll-indicator-line" />
       </div>
     </section>
+    <BookingModal open={bookingOpen} onOpenChange={setBookingOpen} />
+    </>
   );
 };
 

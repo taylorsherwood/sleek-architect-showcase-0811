@@ -152,7 +152,7 @@ const Hero = () => {
             textShadow: "0 2px 12px rgba(0,0,0,0.45), 0 6px 30px rgba(0,0,0,0.30), 0 0 60px rgba(0,0,0,0.15)",
             whiteSpace: "pre-wrap"
           }}>
-            Access Austin's Most<br className="md:hidden" /> Exclusive PROPERTIES
+            Access austin's most<br className="md:hidden" /> Exclusive PROPERTIES
           </h1>
 
           <p className="max-w-[480px] mb-20 md:mb-16 lg:mb-20 leading-[1.7]" style={{

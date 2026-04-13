@@ -118,12 +118,22 @@ const Hero = () => {
   useEffect(() => {
     const idleWarm = () => warmCalendly();
     if ("requestIdleCallback" in window) {
-      const id = (window as any).requestIdleCallback(idleWarm, { timeout: 2500 });
-      return () => (window as any).cancelIdleCallback?.(id);
+      const requestIdle = (window as Window & typeof globalThis & {
+        requestIdleCallback?: (callback: IdleRequestCallback, options?: IdleRequestOptions) => number;
+        cancelIdleCallback?: (handle: number) => void;
+      }).requestIdleCallback;
+      const cancelIdle = (window as Window & typeof globalThis & {
+        cancelIdleCallback?: (handle: number) => void;
+      }).cancelIdleCallback;
+
+      if (requestIdle) {
+        const id = requestIdle(idleWarm, { timeout: 2500 });
+        return () => cancelIdle?.(id);
+      }
     }
 
-    const timeoutId = window.setTimeout(idleWarm, 1800);
-    return () => window.clearTimeout(timeoutId);
+    const timeoutId = globalThis.setTimeout(idleWarm, 1800);
+    return () => globalThis.clearTimeout(timeoutId);
   }, [warmCalendly]);
 
   useEffect(() => {

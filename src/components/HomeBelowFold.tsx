@@ -156,7 +156,7 @@ const AdvisorSection = () => (
                   I work with a select group of buyers, sellers, and investors to navigate high-value real estate with precision. That includes private and off-market opportunities, strategic acquisitions, and positioning properties to command maximum value.
                 </p>
                 <p className="text-foreground/70 text-[16px] leading-[1.8]">
-                  This is not a volume business. It's a strategy business.
+                  This is not a volume business. It's a strategy business. In fact, 95%+ of my sales never touch MLS/Zillow.
                 </p>
                 <p className="text-foreground/70 text-[16px] leading-[1.8]">
                   Every move is intentional, from how a property is sourced, to how it's negotiated, to how it's presented to the market. The difference isn't subtle. It's measurable in outcomes.

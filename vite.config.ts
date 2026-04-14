@@ -199,19 +199,18 @@ ${urls}
  * Critical CSS is already inlined in index.html, so deferring the
  * full stylesheet eliminates the render-blocking penalty (~150 ms LCP).
  */
+/**
+ * Async CSS plugin disabled — deferring the main stylesheet causes render
+ * delays that hurt LCP/Speed Index more than the ~18 KiB savings help.
+ * Critical CSS is inlined in index.html but doesn't cover all above-the-fold styles.
+ */
 function asyncCssPlugin(): Plugin {
   return {
     name: "async-css",
     enforce: "post",
     transformIndexHtml(html) {
-      // Match any Vite-injected CSS <link> regardless of attribute order
-      return html.replace(
-        /<link\s+(?=[^>]*rel=["']stylesheet["'])(?=[^>]*href=["'](\/assets\/[^"']+\.css)["'])[^>]*\/?>/gi,
-        (_, cssHref) =>
-          `<link rel="preload" as="style" href="${cssHref}" crossorigin>\n` +
-          `<link rel="stylesheet" href="${cssHref}" crossorigin media="print" onload="this.media='all'">\n` +
-          `<noscript><link rel="stylesheet" href="${cssHref}" crossorigin></noscript>`
-      );
+      // no-op: let Vite's CSS load synchronously
+      return html;
     },
   };
 }

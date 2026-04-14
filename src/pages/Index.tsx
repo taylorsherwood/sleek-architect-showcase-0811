@@ -103,7 +103,7 @@ const Hero = () => {
       {/* Video — src injected after LCP image loads */}
       {ready && !skipVideo.current && (
         <div aria-hidden="true" className="absolute inset-0 pointer-events-none select-none" style={{ zIndex: 1 }}>
-          <video ref={videoRef} autoPlay muted loop playsInline preload="auto"
+          <video ref={videoRef} autoPlay muted loop playsInline preload="metadata"
             className={`hero-bg-video transition-opacity duration-700 ${videoReady ? "opacity-100" : "opacity-0"}`}
             style={{ willChange: "opacity" }} tabIndex={-1}
             width={1920} height={1080}

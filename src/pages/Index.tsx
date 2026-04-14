@@ -113,7 +113,7 @@ const Hero = () => {
     <section ref={sectionRef} id="hero-section" className="relative min-h-screen flex flex-col justify-end overflow-hidden bg-primary">
       {/* Video */}
       <div aria-hidden="true" className="absolute inset-0 pointer-events-none select-none" style={{ zIndex: 0 }}>
-        <video ref={videoRef} autoPlay muted loop playsInline preload="metadata" poster="/images/hero-poster.jpg"
+        <video ref={videoRef} autoPlay muted loop playsInline preload="metadata" poster="/images/hero-poster.webp"
           className={`hero-bg-video transition-opacity duration-700 ${videoReady ? "opacity-100" : "opacity-0"}`}
           style={{ willChange: "transform" }} tabIndex={-1}
           width={1920} height={1080}>
@@ -122,7 +122,7 @@ const Hero = () => {
       </div>
 
       {showFallback && !videoReady && (
-        <img src="/images/hero-poster.jpg" alt="Austin Texas skyline" className="absolute inset-0 w-full h-full object-cover" style={{ zIndex: 0 }} loading="eager" width={1920} height={1080} />
+        <img src="/images/hero-poster.webp" alt="Austin Texas skyline" className="absolute inset-0 w-full h-full object-cover" style={{ zIndex: 0 }} loading="eager" width={1920} height={1080} />
       )}
 
       {/* Left-to-right gradient overlay for text readability */}

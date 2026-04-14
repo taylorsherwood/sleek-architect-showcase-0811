@@ -115,7 +115,7 @@ const Hero = () => {
           loop
           playsInline
           preload="metadata"
-          poster="/images/hero-poster.jpg"
+          poster="/images/hero-poster.webp"
           className={`hero-bg-video ${videoReady ? "opacity-100" : "opacity-0"}`}
           width={1920}
           height={1080}
@@ -127,7 +127,7 @@ const Hero = () => {
       {/* Fallback image */}
       {showFallback && !videoReady &&
       <img
-        src="/images/hero-poster.jpg"
+        src="/images/hero-poster.webp"
         alt="Austin Texas skyline at sunset with downtown high-rises and Hill Country backdrop"
         title="Austin Texas skyline — Echelon Property Group luxury real estate"
         className="absolute inset-0 w-full h-full object-cover"

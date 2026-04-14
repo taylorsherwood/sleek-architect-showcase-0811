@@ -24,14 +24,20 @@
     <link rel="preload" as="font" type="font/woff2" href="/fonts/playfair-48d1e9cd.woff2" crossorigin />
     <link rel="preload" as="font" type="font/woff2" href="/fonts/cinzel-latin.woff2" crossorigin />
     <link rel="preload" as="font" type="font/woff2" href="/fonts/jost-latin.woff2" crossorigin />
-    <link rel="stylesheet" href="/fonts/fonts.css" />
+    <!-- Load full fonts.css asynchronously (non-render-blocking) -->
+    <link rel="preload" as="style" href="/fonts/fonts.css" />
+    <link rel="stylesheet" media="print" onload="this.media='all'" href="/fonts/fonts.css" />
+    <noscript><link rel="stylesheet" href="/fonts/fonts.css" /></noscript>
 
     <!-- Preload hero poster (mobile gets smaller optimized image) -->
     <link rel="preload" as="image" href="/images/mobile-hero-poster.webp" type="image/webp" fetchpriority="high" media="(max-width: 767px)" />
     <link rel="preload" as="image" href="/images/hero-poster.webp" type="image/webp" fetchpriority="high" media="(min-width: 768px)" />
 
-    <!-- Critical inline CSS for above-the-fold rendering -->
+    <!-- Critical inline CSS for above-the-fold rendering (includes critical @font-face) -->
     <style>
+      @font-face{font-family:'Raleway';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/raleway-faccb37f.woff2) format('woff2')}
+      @font-face{font-family:'Playfair Display';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/playfair-48d1e9cd.woff2) format('woff2')}
+      @font-face{font-family:'Cinzel';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/cinzel-latin.woff2) format('woff2')}
       body{margin:0;font-family:'Raleway',sans-serif;background:#faf8f5;color:#191d2b;-webkit-font-smoothing:antialiased}
       .font-display{font-family:'Playfair Display',serif}
       #root{min-height:100vh}

@@ -65,25 +65,16 @@ const InvestHeroSection = ({ children }: Props) => {
     >
       <div className="absolute inset-0" style={{ zIndex: 0 }}>
         {useVideo ? (
-          <>
-            <video
-              ref={videoRef}
-              className={`w-full h-full object-cover object-top transition-opacity duration-700 ${videoReady ? "opacity-100" : "opacity-0"}`}
-              autoPlay
-              muted
-              playsInline
-              preload="metadata"
-              poster="/images/invest-hero-poster.webp"
-            >
-              <source src={VIDEO_URL} type="video/mp4" />
-            </video>
-            <img
-              src="/images/invest-hero-poster.webp"
-              alt=""
-              className={`absolute inset-0 w-full h-full object-cover object-top transition-opacity duration-700 ${videoReady ? "opacity-0" : "opacity-100"}`}
-              loading="eager"
-            />
-          </>
+          <video
+            ref={videoRef}
+            className="w-full h-full object-cover object-top"
+            autoPlay
+            muted
+            playsInline
+            preload="auto"
+          >
+            <source src={VIDEO_URL} type="video/mp4" />
+          </video>
         ) : (
           <img
             src="/images/invest-hero-poster-mobile.webp"

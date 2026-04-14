@@ -106,18 +106,19 @@ const Hero = () => {
         </div>
       )}
 
-      {/* LCP poster image — always rendered, hidden only when video is playing */}
-      <img
-        
-        src={posterSrc}
-        alt="Austin Texas skyline"
-        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${videoReady ? "opacity-0" : "opacity-100"}`}
-        style={{ zIndex: 0 }}
-        loading="eager"
-        fetchPriority="high"
-        width={isMobileHero ? 780 : 1920}
-        height={isMobileHero ? 1385 : 1080}
-      />
+      {/* Poster image — mobile only (desktop uses video directly, no placeholder) */}
+      {skipVideo && (
+        <img
+          src={posterSrc}
+          alt="Austin Texas skyline"
+          className="absolute inset-0 w-full h-full object-cover"
+          style={{ zIndex: 0 }}
+          loading="eager"
+          fetchPriority="high"
+          width={780}
+          height={1385}
+        />
+      )}
 
       {/* Left-to-right gradient overlay for text readability */}
       {/* Mobile: subtle full-coverage overlay */}

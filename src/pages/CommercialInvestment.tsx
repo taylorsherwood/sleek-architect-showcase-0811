@@ -112,25 +112,16 @@ const CommercialHeroVideo = () => {
   return (
     <div ref={sectionRef} className="w-full h-full relative">
       {useVideo ? (
-        <>
-          <video
-            ref={videoRef}
-            autoPlay
-            muted
-            playsInline
-            preload="metadata"
-            poster="/images/commercial-hero-poster.webp"
-            className={`w-full h-full object-cover transition-opacity duration-700 ${videoReady ? "opacity-100" : "opacity-0"}`}
-          >
-            <source src="/videos/commercial-hero.mp4" type="video/mp4" />
-          </video>
-          <img
-            src="/images/commercial-hero-poster.webp"
-            alt=""
-            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${videoReady ? "opacity-0" : "opacity-100"}`}
-            loading="eager"
-          />
-        </>
+        <video
+          ref={videoRef}
+          autoPlay
+          muted
+          playsInline
+          preload="auto"
+          className="w-full h-full object-cover"
+        >
+          <source src="/videos/commercial-hero.mp4" type="video/mp4" />
+        </video>
       ) : (
         <img
           src="/images/commercial-hero-poster-mobile.webp"

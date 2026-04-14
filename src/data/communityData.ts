@@ -428,7 +428,9 @@ Key draws include:
 
 ### Compact & Connected
 
-At less than one square mile, Rollingwood is walkable and tight-knit. Hatley Park and annual community events like the Fourth of July parade reinforce the neighborhood's identity.`,
+At less than one square mile, Rollingwood is walkable and tight-knit. Hatley Park and annual community events like the Fourth of July parade reinforce the neighborhood's identity.
+
+`,
     lifestyle: `### Parks & Nature
 
 Zilker Park's 350 acres are directly adjacent, offering Barton Springs Pool, Zilker Botanical Garden, sports fields, and playgrounds. The Barton Creek Greenbelt is accessible from several nearby trailheads.

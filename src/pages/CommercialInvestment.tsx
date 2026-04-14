@@ -112,10 +112,12 @@ const CommercialHeroVideo = () => {
         </video>
       ) : (
         <img
-          src="/images/commercial-hero-poster.webp"
+          src="/images/mobile-hero-poster.webp"
           alt="Austin commercial real estate"
           className="w-full h-full object-cover"
           loading="eager"
+          width={828}
+          height={1471}
         />
       )}
     </div>

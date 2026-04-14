@@ -7,6 +7,7 @@ const Hero = () => {
   const [showFallback, setShowFallback] = useState(false);
   const [videoReady, setVideoReady] = useState(false);
   const [videoSrc, setVideoSrc] = useState<string | null>(null);
+  const [isMobileHero] = useState(() => window.innerWidth < 768);
   const videoRef = useRef<HTMLVideoElement>(null);
   const [heroVisible, setHeroVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
@@ -128,14 +129,14 @@ const Hero = () => {
       {/* Fallback image */}
       {showFallback && !videoReady &&
       <img
-        src="/images/hero-poster.webp"
+        src={isMobileHero ? "/images/mobile-hero-poster.webp" : "/images/hero-poster.webp"}
         alt="Austin Texas skyline at sunset with downtown high-rises and Hill Country backdrop"
         title="Austin Texas skyline — Echelon Property Group luxury real estate"
         className="absolute inset-0 w-full h-full object-cover"
         style={{ zIndex: 0 }}
         loading="eager"
-        width={1920}
-        height={1080}
+        width={isMobileHero ? 828 : 1920}
+        height={isMobileHero ? 1471 : 1080}
       />
       }
 

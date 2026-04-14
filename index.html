@@ -28,6 +28,10 @@
     <link rel="preload" as="font" type="font/woff2" href="/fonts/jost-latin.woff2" crossorigin />
     <link rel="stylesheet" href="/fonts/fonts.css" />
 
+    <!-- Preload hero poster (mobile gets smaller optimized image) -->
+    <link rel="preload" as="image" href="/images/mobile-hero-poster.webp" type="image/webp" fetchpriority="high" media="(max-width: 767px)" />
+    <link rel="preload" as="image" href="/images/hero-poster.webp" type="image/webp" fetchpriority="high" media="(min-width: 768px)" />
+
     <!-- Critical inline CSS for above-the-fold rendering -->
     <style>
       body{margin:0;font-family:'Raleway',sans-serif;background:#faf8f5;color:#191d2b;-webkit-font-smoothing:antialiased}

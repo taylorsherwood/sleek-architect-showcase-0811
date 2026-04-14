@@ -35,12 +35,35 @@
 
     <!-- Critical inline CSS for above-the-fold rendering (includes critical @font-face) -->
     <style>
+      /* Critical @font-face */
       @font-face{font-family:'Raleway';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/raleway-faccb37f.woff2) format('woff2')}
       @font-face{font-family:'Playfair Display';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/playfair-48d1e9cd.woff2) format('woff2')}
       @font-face{font-family:'Cinzel';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/cinzel-latin.woff2) format('woff2')}
-      body{margin:0;font-family:'Raleway',sans-serif;background:#faf8f5;color:#191d2b;-webkit-font-smoothing:antialiased}
-      .font-display{font-family:'Playfair Display',serif}
+      @font-face{font-family:'Jost';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/jost-latin.woff2) format('woff2')}
+      /* Critical base + hero layout (prevents FOUC when main CSS loads async) */
+      *,*::before,*::after{box-sizing:border-box}
+      html,body{overflow-x:hidden;width:100%;margin:0}
+      body{font-family:'Jost',sans-serif;font-weight:400;font-size:16px;background:#f6f4f0;color:#0C0F24;-webkit-font-smoothing:antialiased}
+      img{max-width:100%;height:auto}
+      .font-display{font-family:'Cinzel',serif}
+      h1,h2,h3{font-family:'Cinzel',serif;font-weight:500}
       #root{min-height:100vh}
+      /* Hero section critical layout */
+      .relative{position:relative}.absolute{position:absolute}.overflow-hidden{overflow:hidden}
+      .flex{display:flex}.items-center{align-items:center}.flex-row{flex-direction:row}
+      .h-screen{height:100vh}.w-full{width:100%}.h-full{height:100%}
+      .inset-0{inset:0}.object-cover{object-fit:cover}
+      .pointer-events-none{pointer-events:none}.select-none{user-select:none}
+      .container{width:100%;margin-left:auto;margin-right:auto;padding-left:1rem;padding-right:1rem}
+      @media(min-width:640px){.container{max-width:640px}}
+      @media(min-width:768px){.container{max-width:768px}}
+      @media(min-width:1024px){.container{max-width:1024px}}
+      @media(min-width:1280px){.container{max-width:1280px}}
+      .mx-auto{margin-left:auto;margin-right:auto}
+      .hero-bg-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:52% 18%}
+      .transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:150ms}
+      .duration-700{transition-duration:700ms}
+      .opacity-0{opacity:0}.opacity-100{opacity:1}
     </style>
 
     <!-- RealScout widget styles (no script loaded until idle) -->

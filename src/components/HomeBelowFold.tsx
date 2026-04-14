@@ -1089,6 +1089,7 @@ const HomeBelowFold = () => (
 
     <div className="parallax-break" style={{ backgroundImage: "url('/images/parallax-lakefront.jpg')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties} aria-hidden="true" />
 
+    <div className="h-12 md:h-20 bg-secondary" aria-hidden="true" />
     <Suspense fallback={<div className="min-h-[200px] bg-secondary" />}>
       <FeaturedCommunities />
     </Suspense>

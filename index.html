@@ -40,6 +40,8 @@
       @font-face{font-family:'Playfair Display';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/playfair-48d1e9cd.woff2) format('woff2')}
       @font-face{font-family:'Cinzel';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/cinzel-latin.woff2) format('woff2')}
       @font-face{font-family:'Jost';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/jost-latin.woff2) format('woff2')}
+      /* CSS custom properties needed for prerendered hero paint */
+      :root{--primary:233 47% 9%;--primary-foreground:40 25% 95%;--background:40 25% 95%;--foreground:233 47% 9%;--secondary:40 25% 95%;--secondary-foreground:233 47% 9%;--warm-cream:40 25% 95%;--gold:41 34% 57%;--muted-foreground:25 4% 42%;--border:30 18% 86%;--ring:233 47% 9%;--radius:0.25rem;--black-soft:233 52% 7%;color-scheme:light only}
       /* Critical base + hero layout (prevents FOUC when main CSS loads async) */
       *,*::before,*::after{box-sizing:border-box}
       html,body{overflow-x:hidden;width:100%;margin:0}
@@ -51,7 +53,9 @@
       /* Hero section critical layout */
       .relative{position:relative}.absolute{position:absolute}.overflow-hidden{overflow:hidden}
       .flex{display:flex}.items-center{align-items:center}.flex-row{flex-direction:row}
-      .h-screen{height:100vh}.w-full{width:100%}.h-full{height:100%}
+      .flex-col{flex-direction:column}.justify-end{justify-content:flex-end}
+      .h-screen{height:100vh}.min-h-screen{min-height:100vh}
+      .w-full{width:100%}.h-full{height:100%}
       .inset-0{inset:0}.object-cover{object-fit:cover}
       .pointer-events-none{pointer-events:none}.select-none{user-select:none}
       .container{width:100%;margin-left:auto;margin-right:auto;padding-left:1rem;padding-right:1rem}
@@ -60,10 +64,22 @@
       @media(min-width:1024px){.container{max-width:1024px}}
       @media(min-width:1280px){.container{max-width:1280px}}
       .mx-auto{margin-left:auto;margin-right:auto}
+      .px-6{padding-left:1.5rem;padding-right:1.5rem}
+      .z-10{z-index:10}.z-20{z-index:20}
+      .bg-primary{background-color:hsl(233 47% 9%)}.bg-background{background-color:hsl(40 25% 95%)}.bg-secondary{background-color:hsl(40 25% 95%)}
+      .text-foreground{color:hsl(233 47% 9%)}
+      .text-warm-cream{color:hsl(40 25% 95%)}
       .hero-bg-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:52% 18%}
       .transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:150ms}
       .duration-700{transition-duration:700ms}
       .opacity-0{opacity:0}.opacity-100{opacity:1}
+      .inline-flex{display:inline-flex}.inline-block{display:inline-block}
+      .text-center{text-align:center}.whitespace-nowrap{white-space:nowrap}
+      .gap-4{gap:1rem}
+      .hidden{display:none}
+      @media(min-width:640px){.sm\:flex-row{flex-direction:row}}
+      @media(min-width:768px){.md\:hidden{display:none}}
+      @media(min-width:1024px){.lg\:block{display:block}}
     </style>
 
     <!-- RealScout widget styles (no script loaded until idle) -->

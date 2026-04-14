@@ -35,7 +35,7 @@ const expertiseBlocks = [
 
 const ExpertiseSection = () => {
   return (
-    <section style={{ padding: "clamp(64px, 10vw, 120px) 0" }} className="bg-background">
+    <section style={{ padding: "clamp(40px, 6vw, 80px) 0 clamp(64px, 10vw, 120px)" }} className="bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-[58rem] mx-auto">
           <ScrollReveal>

@@ -78,7 +78,7 @@ The community is anchored by the acclaimed Eanes Independent School District, co
 
 
 
-`,search:
+`,
     lifestyle: `### Outdoor Recreation
 
 Residents enjoy world-class hiking and biking at the Barton Creek Greenbelt and Wild Basin Wilderness Preserve. Lake Austin is a short drive away, offering boating, paddleboarding, and waterfront dining.

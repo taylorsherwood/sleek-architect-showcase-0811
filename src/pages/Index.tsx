@@ -49,52 +49,30 @@ const Hero = () => {
   const sectionRef = useRef<HTMLElement>(null);
   const [bookingOpen, setBookingOpen] = useState(false);
 
-  // Inject video src only after LCP poster image has loaded
+  // Play video as soon as it's ready
   useEffect(() => {
     if (!ready || skipVideo.current) return;
+    const video = videoRef.current;
+    if (!video) return;
 
-    const injectVideoSrc = () => {
-      const video = videoRef.current;
-      if (!video || video.src) return;
+    video.muted = true;
+    video.defaultMuted = true;
 
-      video.muted = true;
-      video.defaultMuted = true;
-      video.src = "/videos/hero-video.mp4";
-      video.load();
-
-      const attemptPlay = () => {
-        const p = video.play();
-        if (p !== undefined) {
-          p.then(() => {
-            setVideoReady(true);
-          }).catch(() => {
-            setTimeout(() => {
-              video.muted = true;
-              video.play()?.then(() => {
-                setVideoReady(true);
-              }).catch(() => {});
-            }, RETRY_DELAY);
-          });
-        }
-      };
-
-      if (video.readyState >= 2) {
-        attemptPlay();
-      } else {
-        video.addEventListener("loadeddata", attemptPlay, { once: true });
-      }
-      video.addEventListener("error", () => {}, { once: true });
+    const attemptPlay = () => {
+      video.play()
+        .then(() => setVideoReady(true))
+        .catch(() => {
+          setTimeout(() => {
+            video.muted = true;
+            video.play()?.then(() => setVideoReady(true)).catch(() => {});
+          }, RETRY_DELAY);
+        });
     };
 
-    const img = posterRef.current;
-    if (img && !img.complete) {
-      img.addEventListener("load", injectVideoSrc, { once: true });
+    if (video.readyState >= 2) {
+      attemptPlay();
     } else {
-      if ("requestIdleCallback" in window) {
-        requestIdleCallback(injectVideoSrc, { timeout: 2000 });
-      } else {
-        setTimeout(injectVideoSrc, 200);
-      }
+      video.addEventListener("loadeddata", attemptPlay, { once: true });
     }
   }, [ready]);
 

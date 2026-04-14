@@ -9,7 +9,7 @@ import SEOHead from "@/components/SEOHead";
 import echelonWatermark from "@/assets/echelon-watermark.webp";
 import ScrollReveal from "@/components/ScrollReveal";
 
-const InstagramGallery = lazy(() => import("@/components/InstagramGallery"));
+
 const Footer = lazy(() => import("@/components/Footer"));
 
 const aboutTestimonials = [
@@ -453,10 +453,6 @@ const About = () => {
         </section>
       </FadeIn>
 
-      {/* Instagram Feed */}
-      <div className="py-6 bg-background" />
-      <Suspense fallback={<div className="min-h-[200px]" />}><InstagramGallery /></Suspense>
-      <div className="py-6 bg-background" />
 
       
 

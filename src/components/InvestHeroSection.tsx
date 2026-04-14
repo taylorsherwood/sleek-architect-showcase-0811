@@ -16,37 +16,26 @@ const InvestHeroSection = ({ children }: Props) => {
     if (window.innerWidth >= 768) setUseVideo(true);
   }, []);
 
-  // Defer video src injection until after poster paints
+  // Play video as soon as it's ready
   useEffect(() => {
     if (!useVideo) return;
     const video = videoRef.current;
-    if (!video || video.src) return;
+    if (!video) return;
 
-    const inject = () => {
-      video.muted = true;
-      video.defaultMuted = true;
-      video.src = VIDEO_URL;
-      video.load();
+    video.muted = true;
+    video.defaultMuted = true;
 
-      const attemptPlay = () => {
-        video.play().then(() => setVideoReady(true)).catch(() => {
-          setTimeout(() => {
-            video.muted = true;
-            video.play()?.then(() => setVideoReady(true)).catch(() => {});
-          }, 800);
-        });
-      };
-
-      if (video.readyState >= 2) attemptPlay();
-      else video.addEventListener("loadeddata", attemptPlay, { once: true });
+    const attemptPlay = () => {
+      video.play().then(() => setVideoReady(true)).catch(() => {
+        setTimeout(() => {
+          video.muted = true;
+          video.play()?.then(() => setVideoReady(true)).catch(() => {});
+        }, 800);
+      });
     };
 
-    // Wait for idle to avoid competing with critical resources
-    if ("requestIdleCallback" in window) {
-      requestIdleCallback(inject, { timeout: 2000 });
-    } else {
-      setTimeout(inject, 300);
-    }
+    if (video.readyState >= 2) attemptPlay();
+    else video.addEventListener("loadeddata", attemptPlay, { once: true });
   }, [useVideo]);
 
   // Re-play when section scrolls back into view
@@ -80,12 +69,14 @@ const InvestHeroSection = ({ children }: Props) => {
             <video
               ref={videoRef}
               className={`w-full h-full object-cover object-top transition-opacity duration-700 ${videoReady ? "opacity-100" : "opacity-0"}`}
+              autoPlay
               muted
               playsInline
-              preload="none"
+              preload="auto"
               poster="/images/invest-hero-poster.webp"
-            />
-            {/* Poster shown until video is ready */}
+            >
+              <source src={VIDEO_URL} type="video/mp4" />
+            </video>
             <img
               src="/images/invest-hero-poster.webp"
               alt=""

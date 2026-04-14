@@ -49,52 +49,30 @@ const Hero = () => {
   const sectionRef = useRef<HTMLElement>(null);
   const [bookingOpen, setBookingOpen] = useState(false);
 
-  // Inject video src only after LCP poster image has loaded
+  // Play video as soon as it's ready
   useEffect(() => {
     if (!ready || skipVideo.current) return;
+    const video = videoRef.current;
+    if (!video) return;
 
-    const injectVideoSrc = () => {
-      const video = videoRef.current;
-      if (!video || video.src) return;
+    video.muted = true;
+    video.defaultMuted = true;
 
-      video.muted = true;
-      video.defaultMuted = true;
-      video.src = "/videos/hero-video.mp4";
-      video.load();
-
-      const attemptPlay = () => {
-        const p = video.play();
-        if (p !== undefined) {
-          p.then(() => {
-            setVideoReady(true);
-          }).catch(() => {
-            setTimeout(() => {
-              video.muted = true;
-              video.play()?.then(() => {
-                setVideoReady(true);
-              }).catch(() => {});
-            }, RETRY_DELAY);
-          });
-        }
-      };
-
-      if (video.readyState >= 2) {
-        attemptPlay();
-      } else {
-        video.addEventListener("loadeddata", attemptPlay, { once: true });
-      }
-      video.addEventListener("error", () => {}, { once: true });
+    const attemptPlay = () => {
+      video.play()
+        .then(() => setVideoReady(true))
+        .catch(() => {
+          setTimeout(() => {
+            video.muted = true;
+            video.play()?.then(() => setVideoReady(true)).catch(() => {});
+          }, RETRY_DELAY);
+        });
     };
 
-    const img = posterRef.current;
-    if (img && !img.complete) {
-      img.addEventListener("load", injectVideoSrc, { once: true });
+    if (video.readyState >= 2) {
+      attemptPlay();
     } else {
-      if ("requestIdleCallback" in window) {
-        requestIdleCallback(injectVideoSrc, { timeout: 2000 });
-      } else {
-        setTimeout(injectVideoSrc, 200);
-      }
+      video.addEventListener("loadeddata", attemptPlay, { once: true });
     }
   }, [ready]);
 
@@ -125,17 +103,19 @@ const Hero = () => {
       {/* Video — src injected after LCP image loads */}
       {ready && !skipVideo.current && (
         <div aria-hidden="true" className="absolute inset-0 pointer-events-none select-none" style={{ zIndex: 1 }}>
-          <video ref={videoRef} autoPlay muted loop playsInline preload="none" poster={posterSrc}
+          <video ref={videoRef} autoPlay muted loop playsInline preload="auto"
             className={`hero-bg-video transition-opacity duration-700 ${videoReady ? "opacity-100" : "opacity-0"}`}
             style={{ willChange: "opacity" }} tabIndex={-1}
             width={1920} height={1080}
-          />
+          >
+            <source src="/videos/hero-video.mp4" type="video/mp4" />
+          </video>
         </div>
       )}
 
       {/* LCP poster image — always rendered, hidden only when video is playing */}
       <img
-        ref={posterRef}
+        
         src={posterSrc}
         alt="Austin Texas skyline"
         className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${videoReady ? "opacity-0" : "opacity-100"}`}

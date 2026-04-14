@@ -86,12 +86,13 @@ const InvestHeroSection = ({ children }: Props) => {
           </>
         ) : (
           <img
-            src="/images/mobile-hero-poster.webp"
+            src="/images/invest-hero-poster-mobile.webp"
             alt="Austin investment real estate"
-            className="w-full h-full object-cover object-top"
+            className="w-full h-full object-cover object-center"
             loading="eager"
-            width={828}
-            height={1471}
+            fetchPriority="high"
+            width={780}
+            height={1386}
           />
         )}
       </div>

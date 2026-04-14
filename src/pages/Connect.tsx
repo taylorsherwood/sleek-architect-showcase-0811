@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { lazy, Suspense, useState } from "react";
 import SEOHead from "@/components/SEOHead";
 import taylorHeadshot from "@/assets/taylor-headshot.jpg";
 import combinedLogo from "@/assets/exp-echelon-combined-logo.png";
 import { Instagram, Mail, Phone, Home, Search, Mountain } from "lucide-react";
-import BookingModal from "@/components/BookingModal";
+
+const BookingModal = lazy(() => import("@/components/BookingModal"));
 
 const links = [
   { label: "Complimentary Property Valuation", href: "https://www.echelonpropertygroup.com/sell" },
@@ -237,7 +238,11 @@ const Connect = () => {
             </button>
           </div>
 
-          <BookingModal open={bookingOpen} onOpenChange={setBookingOpen} />
+          {bookingOpen ? (
+            <Suspense fallback={null}>
+              <BookingModal open={bookingOpen} onOpenChange={setBookingOpen} />
+            </Suspense>
+          ) : null}
 
           <div className="px-8 mt-2 mb-2">
             <a

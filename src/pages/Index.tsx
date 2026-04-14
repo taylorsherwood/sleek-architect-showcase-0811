@@ -223,7 +223,11 @@ const Hero = () => {
         <div className="scroll-indicator-line" />
       </div>
     </section>
-    <Suspense fallback={null}><BookingModal open={bookingOpen} onOpenChange={setBookingOpen} /></Suspense>
+    {bookingOpen ? (
+      <Suspense fallback={null}>
+        <BookingModal open={bookingOpen} onOpenChange={setBookingOpen} />
+      </Suspense>
+    ) : null}
     </>
   );
 };

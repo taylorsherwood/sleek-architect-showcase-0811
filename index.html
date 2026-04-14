@@ -22,7 +22,8 @@
     <!-- Self-hosted fonts (no external requests to fonts.googleapis.com / fonts.gstatic.com) -->
     <link rel="preload" as="font" type="font/woff2" href="/fonts/raleway-faccb37f.woff2" crossorigin />
     <link rel="preload" as="font" type="font/woff2" href="/fonts/playfair-48d1e9cd.woff2" crossorigin />
-    <link rel="stylesheet" href="/fonts/fonts.css" />
+    <link rel="preload" as="style" href="/fonts/fonts.css" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="/fonts/fonts.css" /></noscript>
 
     <!-- Preload hero poster with high priority -->
     <link rel="preload" as="image" href="/images/hero-poster.jpg" fetchpriority="high" />
@@ -137,14 +138,34 @@
         rdt('track','PageVisit');
       }
 
-      if ('requestIdleCallback' in window) {
-        requestIdleCallback(function() {
-          setTimeout(loadDeferredScripts, 5000);
-        }, { timeout: 10000 });
+      var deferredScriptsLoaded = false;
+      function startDeferredScripts() {
+        if (deferredScriptsLoaded) return;
+        deferredScriptsLoaded = true;
+        loadDeferredScripts();
+      }
+
+      function scheduleDeferredScripts() {
+        var onFirstIntent = function() {
+          setTimeout(startDeferredScripts, 1200);
+        };
+
+        window.addEventListener('pointerdown', onFirstIntent, { once: true, passive: true });
+        window.addEventListener('keydown', onFirstIntent, { once: true });
+
+        if ('requestIdleCallback' in window) {
+          requestIdleCallback(function() {
+            setTimeout(startDeferredScripts, 9000);
+          }, { timeout: 15000 });
+        } else {
+          setTimeout(startDeferredScripts, 12000);
+        }
+      }
+
+      if (document.readyState === 'complete') {
+        scheduleDeferredScripts();
       } else {
-        window.addEventListener('load', function() {
-          setTimeout(loadDeferredScripts, 7000);
-        });
+        window.addEventListener('load', scheduleDeferredScripts, { once: true });
       }
     </script>
   </body>

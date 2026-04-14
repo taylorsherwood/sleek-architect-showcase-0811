@@ -52,10 +52,19 @@ const NotFound = lazy(() => import("@/pages/NotFound"));
 
 // Prefetch /connect chunk well after homepage is interactive
 if (typeof window !== "undefined") {
-  window.addEventListener("load", () => {
-    const prefetch = () => setTimeout(() => connectImport(), 4000);
-    requestIdleCallback?.(prefetch, { timeout: 8000 }) ?? prefetch();
-  });
+  const appWindow = window as Window & { __echelonConnectPrefetchScheduled?: boolean };
+
+  if (!appWindow.__echelonConnectPrefetchScheduled) {
+    appWindow.__echelonConnectPrefetchScheduled = true;
+    window.addEventListener(
+      "load",
+      () => {
+        const prefetch = () => window.setTimeout(() => connectImport(), 10000);
+        window.requestIdleCallback?.(prefetch, { timeout: 15000 }) ?? prefetch();
+      },
+      { once: true }
+    );
+  }
 }
 
 const AppRoutes = () => {

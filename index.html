@@ -22,7 +22,8 @@
 
 
     <!-- Self-hosted fonts (all fonts now local — no external Google Fonts requests) -->
-    <!-- Only preload hero-critical fonts; others load async via fonts.css -->
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/raleway-faccb37f.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/playfair-48d1e9cd.woff2" crossorigin />
     <link rel="preload" as="font" type="font/woff2" href="/fonts/cinzel-latin.woff2" crossorigin />
     <link rel="preload" as="font" type="font/woff2" href="/fonts/jost-latin.woff2" crossorigin />
     <!-- Load full fonts.css asynchronously (non-render-blocking) -->

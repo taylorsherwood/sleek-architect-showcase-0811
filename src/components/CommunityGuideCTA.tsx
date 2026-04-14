@@ -61,7 +61,7 @@ const CommunityGuideCTA = ({ communityName, guideUrl }: CommunityGuideCTAProps) 
   return (
     <section className="border border-border bg-background p-8 md:p-10">
       <div className="max-w-xl mx-auto text-center">
-        <p className="text-minimal text-gold tracking-[0.2em] mb-3">EXCLUSIVE RESOURCE</p>
+        <p className="text-minimal text-gold tracking-[0.2em] mb-3">ECHELON INSIDER ACCESS</p>
         <h2 className="text-2xl md:text-3xl font-display font-normal text-architectural mb-3">
           Get the {communityName} Community Guide
         </h2>

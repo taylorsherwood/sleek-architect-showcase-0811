@@ -54,36 +54,26 @@ const CommercialHeroVideo = () => {
   const [useVideo] = useState(() => window.innerWidth >= 768);
   const [videoReady, setVideoReady] = useState(false);
 
-  // Defer video src injection to avoid competing with critical resources
+  // Play video as soon as it's ready
   useEffect(() => {
     if (!useVideo) return;
     const video = videoRef.current;
-    if (!video || video.src) return;
+    if (!video) return;
 
-    const inject = () => {
-      video.muted = true;
-      video.defaultMuted = true;
-      video.src = "/videos/commercial-hero.mp4";
-      video.load();
+    video.muted = true;
+    video.defaultMuted = true;
 
-      const attemptPlay = () => {
-        video.play().then(() => setVideoReady(true)).catch(() => {
-          setTimeout(() => {
-            video.muted = true;
-            video.play()?.then(() => setVideoReady(true)).catch(() => {});
-          }, 800);
-        });
-      };
-
-      if (video.readyState >= 2) attemptPlay();
-      else video.addEventListener("loadeddata", attemptPlay, { once: true });
+    const attemptPlay = () => {
+      video.play().then(() => setVideoReady(true)).catch(() => {
+        setTimeout(() => {
+          video.muted = true;
+          video.play()?.then(() => setVideoReady(true)).catch(() => {});
+        }, 800);
+      });
     };
 
-    if ("requestIdleCallback" in window) {
-      requestIdleCallback(inject, { timeout: 2000 });
-    } else {
-      setTimeout(inject, 300);
-    }
+    if (video.readyState >= 2) attemptPlay();
+    else video.addEventListener("loadeddata", attemptPlay, { once: true });
   }, [useVideo]);
 
   // Re-trigger playback when user scrolls back to top
@@ -125,12 +115,15 @@ const CommercialHeroVideo = () => {
         <>
           <video
             ref={videoRef}
+            autoPlay
             muted
             playsInline
-            preload="none"
+            preload="auto"
             poster="/images/commercial-hero-poster.webp"
             className={`w-full h-full object-cover transition-opacity duration-700 ${videoReady ? "opacity-100" : "opacity-0"}`}
-          />
+          >
+            <source src="/videos/commercial-hero.mp4" type="video/mp4" />
+          </video>
           <img
             src="/images/commercial-hero-poster.webp"
             alt=""

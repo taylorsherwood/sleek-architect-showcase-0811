@@ -194,6 +194,26 @@ ${urls}
   };
 }
 
+/**
+ * Convert Vite's render-blocking CSS <link> to async loading.
+ * Critical CSS is already inlined in index.html, so deferring the
+ * full stylesheet eliminates the render-blocking penalty (~150 ms LCP).
+ */
+function asyncCssPlugin(): Plugin {
+  return {
+    name: "async-css",
+    enforce: "post",
+    transformIndexHtml(html) {
+      return html.replace(
+        /<link\s+rel="stylesheet"\s+crossorigin\s+href="(\/assets\/[^"]+\.css)"\s*\/?>/g,
+        `<link rel="preload" as="style" href="$1" crossorigin>
+<link rel="stylesheet" href="$1" crossorigin media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="$1" crossorigin></noscript>`
+      );
+    },
+  };
+}
+
 export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
@@ -208,6 +228,7 @@ export default defineConfig(({ mode }) => ({
       prerenderScript: path.resolve(__dirname, "src/prerender.tsx"),
       additionalPrerenderRoutes: getAllPrerenderRoutes().filter((route: string) => route !== "/"),
     }),
+    asyncCssPlugin(),
     ViteImageOptimizer({
       png: { quality: 75, compressionLevel: 9 },
       jpeg: { quality: 72, mozjpeg: true },

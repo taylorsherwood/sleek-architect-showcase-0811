@@ -1,5 +1,5 @@
-import { useState, lazy, Suspense } from "react";
-import { Link } from "react-router-dom";
+import { useState, useEffect, useRef, lazy, Suspense } from "react";
+import { Link, useSearchParams } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 const Footer = lazy(() => import("@/components/Footer"));
 import AboutBlock from "@/components/AboutBlock";
@@ -13,6 +13,29 @@ const allPosts = [...seoBlogPosts, ...blogPosts].sort((a, b) => new Date(b.date)
 const formatDate = (dateStr: string) => {
   const [y, m, d] = dateStr.split('-');
   return `${m}/${d}/${y}`;
+};
+
+const SoroBlogEmbed = () => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [searchParams] = useSearchParams();
+
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container) return;
+
+    const script = document.createElement("script");
+    let url = "https://app.trysoro.com/api/embed/98591499-ba88-42f4-9755-19d9023e17c7";
+    const post = searchParams.get("post");
+    if (post) url += "?post=" + encodeURIComponent(post);
+    script.src = url;
+    container.appendChild(script);
+
+    return () => {
+      while (container.firstChild) container.removeChild(container.firstChild);
+    };
+  }, [searchParams]);
+
+  return <div id="soro-blog" ref={containerRef} />;
 };
 
 const Blog = () => {
@@ -143,6 +166,15 @@ const Blog = () => {
                 </article>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Soro Blog Embed */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-7xl mx-auto">
+            <SoroBlogEmbed />
           </div>
         </div>
       </section>

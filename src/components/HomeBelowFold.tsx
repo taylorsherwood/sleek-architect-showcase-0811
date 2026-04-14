@@ -26,7 +26,7 @@ const Footer = lazy(() => import("@/components/Footer"));
 const TrustStrip = () => (
   <section className="hidden lg:block bg-background">
     <div className="container mx-auto px-6">
-      <div className="max-w-[1320px] mx-auto">
+      <div className="max-w-5xl mx-auto text-center">
         <div className="border-t border-border/15" />
         <div className="flex items-center justify-center gap-16 py-5 mt-4">
         {["LUXURY REPRESENTATION", "STRATEGIC INVESTMENT ADVISORY", "$125M+ CAREER SALES VOLUME"].map((text, i) => (

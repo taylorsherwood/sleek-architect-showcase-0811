@@ -29,9 +29,13 @@ const Navigation = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > window.innerHeight * 0.8);
     };
-    handleScroll();
+    // Defer initial layout read to avoid forced reflow during first paint
+    const rafId = requestAnimationFrame(handleScroll);
     window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => {
+      cancelAnimationFrame(rafId);
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, [shouldNeverFade]);
 
   // Detect when nav overlaps dark-zone sections (Final CTA / Footer)

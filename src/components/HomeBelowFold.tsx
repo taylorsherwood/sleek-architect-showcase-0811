@@ -1095,10 +1095,11 @@ const HomeBelowFold = () => (
 
     <LeadCapture />
 
-    <div className="parallax-break" style={{ backgroundImage: "url('/images/parallax-interior.jpg')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties} aria-hidden="true" />
-
     <InsightsSection />
     <EditorialInsights />
+
+    <div className="parallax-break" style={{ backgroundImage: "url('/images/parallax-interior.jpg')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties} aria-hidden="true" />
+
     <FinalCTA />
 
     <Suspense fallback={<div className="min-h-[100px]" />}>

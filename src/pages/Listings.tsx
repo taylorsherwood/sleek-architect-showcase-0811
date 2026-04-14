@@ -9,7 +9,7 @@ const RealScoutSearch = lazy(() => import("@/components/RealScoutSearch"));
 const Footer = lazy(() => import("@/components/Footer"));
 import listing1 from "@/assets/listing-1.jpg";
 import listing2 from "@/assets/listing-2.jpg";
-import listing3 from "@/assets/listing-3.jpg";
+import listing3 from "@/assets/listing-3.webp";
 import gillisStreet from "@/assets/commercial-gillis-street.jpg";
 import sanJoseAve from "@/assets/commercial-san-jose-ave.jpg";
 import bremserAve from "@/assets/commercial-bremser-ave.jpg";
@@ -18,7 +18,7 @@ import s11thStreet from "@/assets/commercial-s-11th-street.webp";
 
 const listings = [
   {
-    image: "/lovable-uploads/0fc79a0b-1fde-439f-bb08-6062e50770b7.jpg",
+    image: "/lovable-uploads/0fc79a0b-1fde-439f-bb08-6062e50770b7.webp",
     address: "2300 Barton Creek Boulevard #15",
     location: "Barton Creek, Austin",
     price: "$3,495,000",

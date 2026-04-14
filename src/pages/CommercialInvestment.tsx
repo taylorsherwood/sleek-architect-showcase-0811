@@ -58,7 +58,7 @@ const CommercialHeroVideo = () => {
     if (!useVideo) return;
     const video = videoRef.current;
     if (!video) return;
-    const onPlay = () => { video.playbackRate = 0.75; };
+    const onPlay = () => { video.playbackRate = 1; };
     video.addEventListener("playing", onPlay);
     return () => video.removeEventListener("playing", onPlay);
   }, [useVideo]);

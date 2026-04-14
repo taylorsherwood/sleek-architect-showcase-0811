@@ -66,13 +66,11 @@ const Hero = () => {
         const p = video.play();
         if (p !== undefined) {
           p.then(() => {
-            video.playbackRate = 0.92;
             setVideoReady(true);
           }).catch(() => {
             setTimeout(() => {
               video.muted = true;
               video.play()?.then(() => {
-                video.playbackRate = 0.92;
                 setVideoReady(true);
               }).catch(() => {});
             }, RETRY_DELAY);

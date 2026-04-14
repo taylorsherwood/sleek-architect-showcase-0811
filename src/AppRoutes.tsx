@@ -60,17 +60,24 @@ const Invest = lazy(investImport);
 const Sitemap = lazy(() => import("@/pages/Sitemap"));
 const NotFound = lazy(() => import("@/pages/NotFound"));
 
-// Prefetch /connect chunk well after homepage is interactive
+// Prefetch high-traffic route chunks after homepage is interactive
 if (typeof window !== "undefined") {
-  const appWindow = window as Window & { __echelonConnectPrefetchScheduled?: boolean };
+  const appWindow = window as Window & { __echelonPrefetchScheduled?: boolean };
 
-  if (!appWindow.__echelonConnectPrefetchScheduled) {
-    appWindow.__echelonConnectPrefetchScheduled = true;
+  if (!appWindow.__echelonPrefetchScheduled) {
+    appWindow.__echelonPrefetchScheduled = true;
     window.addEventListener(
       "load",
       () => {
-        const prefetch = () => window.setTimeout(() => connectImport(), 10000);
-        window.requestIdleCallback?.(prefetch, { timeout: 15000 }) ?? prefetch();
+        const prefetchAll = () => {
+          // Stagger prefetches to avoid network contention
+          setTimeout(() => { buyImport(); sellImport(); }, 2000);
+          setTimeout(() => { communitiesImport(); communityPageImport(); }, 3000);
+          setTimeout(() => { listingsImport(); aboutImport(); contactImport(); }, 4000);
+          setTimeout(() => { blogImport(); blogPostImport(); investImport(); }, 5000);
+          setTimeout(() => { connectImport(); }, 8000);
+        };
+        window.requestIdleCallback?.(prefetchAll, { timeout: 10000 }) ?? setTimeout(prefetchAll, 3000);
       },
       { once: true }
     );

@@ -24,6 +24,7 @@ const InvestHeroSection = ({ children }: Props) => {
 
     video.muted = true;
     video.defaultMuted = true;
+    video.playbackRate = 1.35;
 
     const attemptPlay = () => {
       video.play().then(() => setVideoReady(true)).catch(() => {

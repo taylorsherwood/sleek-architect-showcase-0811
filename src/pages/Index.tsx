@@ -26,7 +26,7 @@ const Hero = () => {
   const [videoReady, setVideoReady] = useState(false);
   const [videoSrc, setVideoSrc] = useState<string | null>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
-  const [heroVisible, setHeroVisible] = useState(false);
+  const [heroVisible, setHeroVisible] = useState(true);
   const sectionRef = useRef<HTMLElement>(null);
   const [bookingOpen, setBookingOpen] = useState(false);
 

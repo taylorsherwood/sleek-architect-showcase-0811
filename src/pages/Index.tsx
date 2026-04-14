@@ -21,13 +21,28 @@ const RETRY_DELAY = 800;
 
 
 
+// Check mobile via CSS-based method to avoid forced reflow from window.innerWidth
+const getIsMobile = () =>
+  typeof window !== "undefined"
+    ? window.matchMedia("(max-width: 767px)").matches
+    : false;
+
 const Hero = () => {
   const [videoReady, setVideoReady] = useState(false);
-  const [isMobileHero] = useState(() => window.innerWidth < 768);
-  const [skipVideo] = useState(() => {
-    const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
-    return motionQuery.matches || window.innerWidth < 768;
-  });
+  const isMobileHero = useRef(false);
+  const skipVideo = useRef(false);
+
+  // Compute once in a layout effect (before paint, but after DOM)
+  // to avoid forced reflow during render
+  const [ready, setReady] = useState(false);
+  useEffect(() => {
+    const mobile = getIsMobile();
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    isMobileHero.current = mobile;
+    skipVideo.current = reducedMotion || mobile;
+    setReady(true);
+  }, []);
+
   const videoRef = useRef<HTMLVideoElement>(null);
   const posterRef = useRef<HTMLImageElement>(null);
   const [heroVisible, setHeroVisible] = useState(true);
@@ -36,7 +51,7 @@ const Hero = () => {
 
   // Inject video src only after LCP poster image has loaded
   useEffect(() => {
-    if (skipVideo) return;
+    if (!ready || skipVideo.current) return;
 
     const injectVideoSrc = () => {
       const video = videoRef.current;
@@ -83,7 +98,7 @@ const Hero = () => {
         setTimeout(injectVideoSrc, 200);
       }
     }
-  }, [skipVideo]);
+  }, [ready]);
 
   // Re-trigger text animation on visibility
   useEffect(() => {
@@ -103,13 +118,14 @@ const Hero = () => {
     transition: `opacity 0.9s cubic-bezier(0.16,1,0.3,1) ${delay}, transform 0.9s cubic-bezier(0.16,1,0.3,1) ${delay}`,
   });
 
-  const posterSrc = isMobileHero ? "/images/mobile-hero-poster.webp" : "/images/hero-poster.webp";
+  // Default to desktop poster; once ready, use the correct one
+  const posterSrc = (ready && isMobileHero.current) ? "/images/mobile-hero-poster.webp" : "/images/hero-poster.webp";
 
   return (
     <>
     <section ref={sectionRef} id="hero-section" className="relative min-h-screen flex flex-col justify-end overflow-hidden bg-primary">
       {/* Video — src injected after LCP image loads */}
-      {!skipVideo && (
+      {ready && !skipVideo.current && (
         <div aria-hidden="true" className="absolute inset-0 pointer-events-none select-none" style={{ zIndex: 1 }}>
           <video ref={videoRef} autoPlay muted loop playsInline preload="none" poster={posterSrc}
             className={`hero-bg-video transition-opacity duration-700 ${videoReady ? "opacity-100" : "opacity-0"}`}
@@ -128,8 +144,8 @@ const Hero = () => {
         style={{ zIndex: 0 }}
         loading="eager"
         fetchPriority="high"
-        width={isMobileHero ? 828 : 1920}
-        height={isMobileHero ? 1471 : 1080}
+        width={(ready && isMobileHero.current) ? 828 : 1920}
+        height={(ready && isMobileHero.current) ? 1471 : 1080}
       />
 
       {/* Left-to-right gradient overlay for text readability */}
@@ -247,7 +263,12 @@ const REALSCOUT_URL = "https://taylorsherwood.realscout.com/";
 
 const SearchSection = () => {
   const containerRef = useRef<HTMLDivElement>(null);
-  const [isMobile] = useState(() => window.innerWidth < 768);
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Defer layout-triggering check to avoid forced reflow
+  useEffect(() => {
+    setIsMobile(getIsMobile());
+  }, []);
 
   useEffect(() => {
     if (isMobile) return;

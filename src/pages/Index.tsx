@@ -1,4 +1,4 @@
-import React, { lazy, Suspense, useState, useRef, useEffect, useCallback } from "react";
+import React, { lazy, Suspense, useState, useRef, useEffect } from "react";
 const BookingModal = lazy(() => import("@/components/BookingModal"));
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";

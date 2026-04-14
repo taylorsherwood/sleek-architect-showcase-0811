@@ -215,7 +215,7 @@
 
         if ('requestIdleCallback' in window) {
           requestIdleCallback(function() {
-            setTimeout(startDeferredScripts, 9000);
+            setTimeout(startDeferredScripts, 15000);
           }, { timeout: 15000 });
         } else {
           setTimeout(startDeferredScripts, 12000);

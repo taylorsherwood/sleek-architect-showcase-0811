@@ -481,8 +481,8 @@ const TestimonialsSection = () => {
 
   useEffect(() => {
     let ticking = false;
-    // Defer innerHeight read to avoid forced reflow during first paint
     let cachedVh = 0;
+    let initialized = false;
 
     const updateParallax = () => {
       if (!sectionRef.current || !watermarkRef.current) return;
@@ -496,6 +496,10 @@ const TestimonialsSection = () => {
     };
 
     const onScroll = () => {
+      if (!initialized) {
+        cachedVh = window.innerHeight;
+        initialized = true;
+      }
       if (ticking) return;
       ticking = true;
       requestAnimationFrame(() => {
@@ -509,14 +513,7 @@ const TestimonialsSection = () => {
     window.addEventListener("scroll", onScroll, { passive: true });
     window.addEventListener("resize", onResize, { passive: true });
 
-    // Defer initial calculation to avoid forced reflow during render
-    const rafId = requestAnimationFrame(() => {
-      cachedVh = window.innerHeight;
-      requestAnimationFrame(updateParallax);
-    });
-
     return () => {
-      cancelAnimationFrame(rafId);
       window.removeEventListener("scroll", onScroll);
       window.removeEventListener("resize", onResize);
     };

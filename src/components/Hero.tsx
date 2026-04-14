@@ -1,14 +1,15 @@
 import { useState, useRef, useEffect } from "react";
 
-const FALLBACK_TIMEOUT = 4000;
 const RETRY_DELAY = 800;
 
 const Hero = () => {
-  const [showFallback, setShowFallback] = useState(false);
   const [videoReady, setVideoReady] = useState(false);
-  const [videoSrc, setVideoSrc] = useState<string | null>(null);
   const [isMobileHero] = useState(() => window.innerWidth < 768);
+  const [skipVideo] = useState(() => {
+    return window.matchMedia("(prefers-reduced-motion: reduce)").matches || window.innerWidth < 768;
+  });
   const videoRef = useRef<HTMLVideoElement>(null);
+  const posterRef = useRef<HTMLImageElement>(null);
   const [heroVisible, setHeroVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
 
@@ -17,128 +18,102 @@ const Hero = () => {
     const el = sectionRef.current;
     if (!el) return;
     const observer = new IntersectionObserver(
-      ([entry]) => {
-        setHeroVisible(entry.isIntersecting);
-      },
+      ([entry]) => setHeroVisible(entry.isIntersecting),
       { threshold: 0.4 }
     );
     observer.observe(el);
     return () => observer.disconnect();
   }, []);
 
+  // Inject video src only after LCP poster image has loaded
   useEffect(() => {
-    const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
-    const isMobile = window.innerWidth < 768;
-    if (motionQuery.matches || isMobile) {
-      setShowFallback(true);
-      return;
-    }
-    setVideoSrc("/videos/hero-video.mp4");
-  }, []);
+    if (skipVideo) return;
 
-  useEffect(() => {
-    if (!videoSrc) return;
-    const video = videoRef.current;
-    if (!video) {
-      setShowFallback(true);
-      return;
-    }
+    const injectVideoSrc = () => {
+      const video = videoRef.current;
+      if (!video || video.src) return;
 
-    video.muted = true;
-    video.defaultMuted = true;
-    video.setAttribute("muted", "");
-    video.setAttribute("playsinline", "");
-    video.setAttribute("webkit-playsinline", "");
+      video.muted = true;
+      video.defaultMuted = true;
+      video.src = "/videos/hero-video.mp4";
+      video.load();
 
-    const fallbackTimer = setTimeout(() => {
-      if (!videoReady) setShowFallback(true);
-    }, FALLBACK_TIMEOUT);
-
-    const attemptPlay = () => {
-      const p = video.play();
-      if (p !== undefined) {
-        p.then(() => {
-          video.playbackRate = 0.92;
-          setVideoReady(true);
-          setShowFallback(false);
-        }).catch(() => {
-          setTimeout(() => {
-            video.muted = true;
-            video.defaultMuted = true;
-            const retry = video.play();
-            if (retry !== undefined) {
-              retry.
-              then(() => {
+      const attemptPlay = () => {
+        const p = video.play();
+        if (p !== undefined) {
+          p.then(() => {
+            video.playbackRate = 0.92;
+            setVideoReady(true);
+          }).catch(() => {
+            setTimeout(() => {
+              video.muted = true;
+              video.play()?.then(() => {
                 video.playbackRate = 0.92;
                 setVideoReady(true);
-                setShowFallback(false);
-              }).
-              catch(() => {
-                setShowFallback(true);
-              });
-            } else {
-              setShowFallback(true);
-            }
-          }, RETRY_DELAY);
-        });
+              }).catch(() => {});
+            }, RETRY_DELAY);
+          });
+        }
+      };
+
+      if (video.readyState >= 2) {
+        attemptPlay();
       } else {
-        setShowFallback(true);
+        video.addEventListener("loadeddata", attemptPlay, { once: true });
       }
     };
 
-    const onReady = () => attemptPlay();
-
-    if (video.readyState >= 2) {
-      attemptPlay();
+    const img = posterRef.current;
+    if (img && !img.complete) {
+      img.addEventListener("load", injectVideoSrc, { once: true });
     } else {
-      video.addEventListener("loadeddata", onReady);
+      if ("requestIdleCallback" in window) {
+        requestIdleCallback(injectVideoSrc, { timeout: 2000 });
+      } else {
+        setTimeout(injectVideoSrc, 200);
+      }
     }
+  }, [skipVideo]);
 
-    video.addEventListener("error", () => setShowFallback(true));
-
-    return () => {
-      clearTimeout(fallbackTimer);
-      video.removeEventListener("loadeddata", onReady);
-    };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [videoSrc]);
+  const posterSrc = isMobileHero ? "/images/mobile-hero-poster.webp" : "/images/hero-poster.webp";
 
   return (
     <section ref={sectionRef} id="hero-section" className="relative h-screen flex items-center overflow-hidden bg-[hsl(var(--black-soft))]">
       {/* ── VIDEO LAYER ── */}
-      <div
-        aria-hidden="true"
-        className="absolute inset-0 pointer-events-none select-none overflow-hidden"
-        style={{ zIndex: 0 }}>
-        <video
-          ref={videoRef}
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="metadata"
-          poster="/images/hero-poster.webp"
-          className={`hero-bg-video ${videoReady ? "opacity-100" : "opacity-0"}`}
-          width={1920}
-          height={1080}
-          tabIndex={-1}>
-          {videoSrc && <source src={videoSrc} type="video/mp4" />}
-        </video>
-      </div>
+      {!skipVideo && (
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 pointer-events-none select-none overflow-hidden"
+          style={{ zIndex: 1 }}>
+          <video
+            ref={videoRef}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="none"
+            poster={posterSrc}
+            className={`hero-bg-video transition-opacity duration-700 ${videoReady ? "opacity-100" : "opacity-0"}`}
+            width={1920}
+            height={1080}
+            tabIndex={-1}
+          />
+        </div>
+      )}
 
-      {/* Fallback image */}
-      {showFallback && !videoReady &&
+      {/* LCP poster image — always rendered, hidden when video plays */}
       <img
-        src={isMobileHero ? "/images/mobile-hero-poster.webp" : "/images/hero-poster.webp"}
+        ref={posterRef}
+        src={posterSrc}
         alt="Austin Texas skyline at sunset with downtown high-rises and Hill Country backdrop"
         title="Austin Texas skyline — Echelon Property Group luxury real estate"
-        className="absolute inset-0 w-full h-full object-cover"
+        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${videoReady ? "opacity-0" : "opacity-100"}`}
         style={{ zIndex: 0 }}
         loading="eager"
+        fetchPriority="high"
         width={isMobileHero ? 828 : 1920}
         height={isMobileHero ? 1471 : 1080}
       />
-      }
 
       {/* ── LEFT-SIDE DARK OVERLAY for text readability ── */}
       <div

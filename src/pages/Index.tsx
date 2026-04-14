@@ -22,75 +22,68 @@ const RETRY_DELAY = 800;
 
 
 const Hero = () => {
-  const [showFallback, setShowFallback] = useState(false);
   const [videoReady, setVideoReady] = useState(false);
-  const [videoSrc, setVideoSrc] = useState<string | null>(null);
   const [isMobileHero] = useState(() => window.innerWidth < 768);
+  const [skipVideo] = useState(() => {
+    const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+    return motionQuery.matches || window.innerWidth < 768;
+  });
   const videoRef = useRef<HTMLVideoElement>(null);
+  const posterRef = useRef<HTMLImageElement>(null);
   const [heroVisible, setHeroVisible] = useState(true);
   const sectionRef = useRef<HTMLElement>(null);
   const [bookingOpen, setBookingOpen] = useState(false);
 
-
-  // Set video source (respects reduced motion + skip on mobile to save bandwidth)
+  // Inject video src only after LCP poster image has loaded
   useEffect(() => {
-    const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
-    const isMobile = window.innerWidth < 768;
-    if (motionQuery.matches || isMobile) {
-      setShowFallback(true);
-      return;
-    }
-    setVideoSrc("/videos/hero-video.mp4");
-  }, []);
+    if (skipVideo) return;
 
-  // Video playback logic
-  useEffect(() => {
-    if (!videoSrc) return;
-    const video = videoRef.current;
-    if (!video) { setShowFallback(true); return; }
+    const injectVideoSrc = () => {
+      const video = videoRef.current;
+      if (!video || video.src) return;
 
-    video.muted = true;
-    video.defaultMuted = true;
+      video.muted = true;
+      video.defaultMuted = true;
+      video.src = "/videos/hero-video.mp4";
+      video.load();
 
-    const fallbackTimer = setTimeout(() => {
-      if (!videoReady) setShowFallback(true);
-    }, FALLBACK_TIMEOUT);
+      const attemptPlay = () => {
+        const p = video.play();
+        if (p !== undefined) {
+          p.then(() => {
+            video.playbackRate = 0.92;
+            setVideoReady(true);
+          }).catch(() => {
+            setTimeout(() => {
+              video.muted = true;
+              video.play()?.then(() => {
+                video.playbackRate = 0.92;
+                setVideoReady(true);
+              }).catch(() => {});
+            }, RETRY_DELAY);
+          });
+        }
+      };
 
-    const attemptPlay = () => {
-      const p = video.play();
-      if (p !== undefined) {
-        p.then(() => {
-          video.playbackRate = 0.92;
-          setVideoReady(true);
-          setShowFallback(false);
-        }).catch(() => {
-          setTimeout(() => {
-            video.muted = true;
-            video.play()?.then(() => {
-              video.playbackRate = 0.92;
-              setVideoReady(true);
-              setShowFallback(false);
-            }).catch(() => setShowFallback(true));
-          }, RETRY_DELAY);
-        });
+      if (video.readyState >= 2) {
+        attemptPlay();
       } else {
-        setShowFallback(true);
+        video.addEventListener("loadeddata", attemptPlay, { once: true });
       }
+      video.addEventListener("error", () => {}, { once: true });
     };
 
-    if (video.readyState >= 2) {
-      attemptPlay();
+    const img = posterRef.current;
+    if (img && !img.complete) {
+      img.addEventListener("load", injectVideoSrc, { once: true });
     } else {
-      video.addEventListener("loadeddata", attemptPlay, { once: true });
+      if ("requestIdleCallback" in window) {
+        requestIdleCallback(injectVideoSrc, { timeout: 2000 });
+      } else {
+        setTimeout(injectVideoSrc, 200);
+      }
     }
-    video.addEventListener("error", () => setShowFallback(true));
-
-    return () => {
-      clearTimeout(fallbackTimer);
-      video.removeEventListener("loadeddata", attemptPlay);
-    };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [videoSrc]);
+  }, [skipVideo]);
 
   // Re-trigger text animation on visibility
   useEffect(() => {
@@ -110,22 +103,34 @@ const Hero = () => {
     transition: `opacity 0.9s cubic-bezier(0.16,1,0.3,1) ${delay}, transform 0.9s cubic-bezier(0.16,1,0.3,1) ${delay}`,
   });
 
+  const posterSrc = isMobileHero ? "/images/mobile-hero-poster.webp" : "/images/hero-poster.webp";
+
   return (
     <>
     <section ref={sectionRef} id="hero-section" className="relative min-h-screen flex flex-col justify-end overflow-hidden bg-primary">
-      {/* Video */}
-      <div aria-hidden="true" className="absolute inset-0 pointer-events-none select-none" style={{ zIndex: 0 }}>
-        <video ref={videoRef} autoPlay muted loop playsInline preload="metadata" poster="/images/hero-poster.webp"
-          className={`hero-bg-video transition-opacity duration-700 ${videoReady ? "opacity-100" : "opacity-0"}`}
-          style={{ willChange: "opacity" }} tabIndex={-1}
-          width={1920} height={1080}>
-          {videoSrc && <source src={videoSrc} type="video/mp4" />}
-        </video>
-      </div>
-
-      {showFallback && !videoReady && (
-        <img src={isMobileHero ? "/images/mobile-hero-poster.webp" : "/images/hero-poster.webp"} alt="Austin Texas skyline" className="absolute inset-0 w-full h-full object-cover" style={{ zIndex: 0 }} loading="eager" width={isMobileHero ? 828 : 1920} height={isMobileHero ? 1471 : 1080} />
+      {/* Video — src injected after LCP image loads */}
+      {!skipVideo && (
+        <div aria-hidden="true" className="absolute inset-0 pointer-events-none select-none" style={{ zIndex: 1 }}>
+          <video ref={videoRef} autoPlay muted loop playsInline preload="none" poster={posterSrc}
+            className={`hero-bg-video transition-opacity duration-700 ${videoReady ? "opacity-100" : "opacity-0"}`}
+            style={{ willChange: "opacity" }} tabIndex={-1}
+            width={1920} height={1080}
+          />
+        </div>
       )}
+
+      {/* LCP poster image — always rendered, hidden only when video is playing */}
+      <img
+        ref={posterRef}
+        src={posterSrc}
+        alt="Austin Texas skyline"
+        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${videoReady ? "opacity-0" : "opacity-100"}`}
+        style={{ zIndex: 0 }}
+        loading="eager"
+        fetchPriority="high"
+        width={isMobileHero ? 828 : 1920}
+        height={isMobileHero ? 1471 : 1080}
+      />
 
       {/* Left-to-right gradient overlay for text readability */}
       <div className="absolute inset-0" style={{

@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
 
 interface CommunityGuideCTAProps {
   communityName: string;
@@ -60,12 +59,13 @@ const CommunityGuideCTA = ({ communityName, guideUrl }: CommunityGuideCTAProps) 
   }
 
   return (
-    <section className="border border-gold/30 bg-secondary p-8 md:p-12">
+    <section className="border border-border bg-background p-8 md:p-10">
       <div className="max-w-xl mx-auto text-center">
+        <p className="text-minimal text-gold tracking-[0.2em] mb-3">EXCLUSIVE RESOURCE</p>
         <h2 className="text-2xl md:text-3xl font-display font-normal text-architectural mb-3">
           Get the {communityName} Community Guide
         </h2>
-        <p className="text-muted-foreground mb-6">
+        <p className="text-muted-foreground mb-6 text-sm leading-relaxed">
           Schools, market data, lifestyle details, and local insights — delivered instantly.
         </p>
         <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
@@ -75,15 +75,15 @@ const CommunityGuideCTA = ({ communityName, guideUrl }: CommunityGuideCTAProps) 
             placeholder="Your email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="flex-1 px-4 py-3 bg-background border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-gold transition-colors duration-300 text-sm"
+            className="flex-1 px-4 py-3 bg-secondary border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-gold transition-colors duration-300 text-sm"
           />
-          <Button
+          <button
             type="submit"
             disabled={loading}
-            className="bg-primary text-primary-foreground hover:bg-gold hover:text-white px-8 py-3 text-minimal whitespace-nowrap transition-colors duration-300"
+            className="px-8 py-3 text-minimal tracking-[0.15em] border border-gold text-gold hover:bg-gold hover:text-white transition-colors duration-300 disabled:opacity-50"
           >
             {loading ? "SENDING…" : "GET THE GUIDE"}
-          </Button>
+          </button>
         </form>
       </div>
     </section>

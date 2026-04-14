@@ -310,6 +310,18 @@ const CommunityPage = () => {
         </section>
       )}
 
+      {/* Community Guide CTA — Westlake Hills */}
+      {community.slug === "westlake-hills" && (
+        <div className="container mx-auto px-6 pb-8">
+          <div className="max-w-7xl mx-auto">
+            <CommunityGuideCTA
+              communityName={community.name}
+              guideUrl="https://app.liveby.com/reports/community-guide/T2c6QdMDzCN4B1?utm_source=unknown&utm_medium=copied-link&utm_campaign=report-share"
+            />
+          </div>
+        </div>
+      )}
+
       <div className="h-12 md:h-20" />
 
       {/* Content */}
@@ -492,14 +504,6 @@ const CommunityPage = () => {
                   ))}
                 </div>
               </section>
-            )}
-
-            {/* Community Guide CTA — Westlake Hills */}
-            {community.slug === "westlake-hills" && (
-              <CommunityGuideCTA
-                communityName={community.name}
-                guideUrl="https://app.liveby.com/reports/community-guide/T2c6QdMDzCN4B1?utm_source=unknown&utm_medium=copied-link&utm_campaign=report-share"
-              />
             )}
 
             {/* CTA */}

@@ -204,11 +204,13 @@ function asyncCssPlugin(): Plugin {
     name: "async-css",
     enforce: "post",
     transformIndexHtml(html) {
+      // Match any Vite-injected CSS <link> regardless of attribute order
       return html.replace(
-        /<link\s+rel="stylesheet"\s+crossorigin\s+href="(\/assets\/[^"]+\.css)"\s*\/?>/g,
-        `<link rel="preload" as="style" href="$1" crossorigin>
-<link rel="stylesheet" href="$1" crossorigin media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="$1" crossorigin></noscript>`
+        /<link\s+(?=[^>]*rel=["']stylesheet["'])(?=[^>]*href=["'](\/assets\/[^"']+\.css)["'])[^>]*\/?>/gi,
+        (_, cssHref) =>
+          `<link rel="preload" as="style" href="${cssHref}" crossorigin>\n` +
+          `<link rel="stylesheet" href="${cssHref}" crossorigin media="print" onload="this.media='all'">\n` +
+          `<noscript><link rel="stylesheet" href="${cssHref}" crossorigin></noscript>`
       );
     },
   };

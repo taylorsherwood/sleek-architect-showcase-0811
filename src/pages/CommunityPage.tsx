@@ -335,7 +335,7 @@ const CommunityPage = () => {
             <CommunityGuideCTA
               communityName={community.name}
               guideUrl={community.slug === "rob-roy"
-                ? "https://app.liveby.com/reports/community-guide/PXv6GFwfCBNrJN?utm_source=unknown&utm_medium=copied-link&utm_campaign=report-share"
+                ? "https://app.liveby.com/reports/community-guide/fmJR77C7DTgqQJ?utm_source=unknown&utm_medium=copied-link&utm_campaign=report-share"
                 : "https://app.liveby.com/reports/community-guide/T2c6QdMDzCN4B1?utm_source=unknown&utm_medium=copied-link&utm_campaign=report-share"
               }
             />

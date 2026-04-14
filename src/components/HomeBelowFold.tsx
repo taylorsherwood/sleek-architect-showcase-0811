@@ -1096,6 +1096,7 @@ const HomeBelowFold = () => (
     <LeadCapture />
 
     <InsightsSection />
+    <div className="h-12 md:h-20 bg-secondary" aria-hidden="true" />
 
     <div className="parallax-break" style={{ backgroundImage: "url('/images/parallax-interior.jpg')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties} aria-hidden="true" />
 

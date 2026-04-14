@@ -334,7 +334,10 @@ const CommunityPage = () => {
           <div className="max-w-4xl mx-auto">
             <CommunityGuideCTA
               communityName={community.name}
-              guideUrl="https://app.liveby.com/reports/community-guide/T2c6QdMDzCN4B1?utm_source=unknown&utm_medium=copied-link&utm_campaign=report-share"
+              guideUrl={community.slug === "rob-roy"
+                ? "https://app.liveby.com/reports/community-guide/PXv6GFwfCBNrJN?utm_source=unknown&utm_medium=copied-link&utm_campaign=report-share"
+                : "https://app.liveby.com/reports/community-guide/T2c6QdMDzCN4B1?utm_source=unknown&utm_medium=copied-link&utm_campaign=report-share"
+              }
             />
           </div>
         </div>

@@ -44,7 +44,7 @@ const Hero = () => {
 
   // Play video as soon as it's ready
   useEffect(() => {
-    if (!ready || skipVideo.current) return;
+    if (skipVideo) return;
     const video = videoRef.current;
     if (!video) return;
 
@@ -67,7 +67,7 @@ const Hero = () => {
     } else {
       video.addEventListener("loadeddata", attemptPlay, { once: true });
     }
-  }, [ready]);
+  }, []);
 
   // Re-trigger text animation on visibility
   useEffect(() => {

@@ -1,8 +1,8 @@
 import { renderToString } from "react-dom/server";
 import { StaticRouter } from "react-router-dom/server";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { QueryClient } from "@tanstack/react-query";
 import { HelmetProvider, type HelmetServerState } from "react-helmet-async";
-import { TooltipProvider } from "@/components/ui/tooltip";
+import { AppShell } from "@/App";
 import AppRoutes from "@/AppRoutes";
 import { communityPages } from "@/data/communityData";
 import { blogPosts } from "@/data/blogPosts";
@@ -129,13 +129,11 @@ export async function prerender(data: { url: string }) {
 
   const html = renderToString(
     <HelmetProvider context={helmetContext}>
-      <QueryClientProvider client={queryClient}>
-        <TooltipProvider>
-          <StaticRouter location={routePath}>
-            <AppRoutes />
-          </StaticRouter>
-        </TooltipProvider>
-      </QueryClientProvider>
+      <AppShell queryClient={queryClient}>
+        <StaticRouter location={routePath}>
+          <AppRoutes />
+        </StaticRouter>
+      </AppShell>
     </HelmetProvider>
   );
 

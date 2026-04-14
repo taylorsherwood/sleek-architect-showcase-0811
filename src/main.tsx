@@ -7,6 +7,11 @@ import "./index.css";
 
 const rootElement = document.getElementById("root");
 
+const hasHydratableMarkup = (root: HTMLElement) => {
+  const elementChildren = Array.from(root.children);
+  return elementChildren.some((child) => child.tagName !== "NOSCRIPT");
+};
+
 const app = (
   <StrictMode>
     <HelmetProvider>
@@ -17,7 +22,7 @@ const app = (
   </StrictMode>
 );
 
-if (rootElement?.hasChildNodes()) {
+if (rootElement && hasHydratableMarkup(rootElement)) {
   hydrateRoot(rootElement, app);
 } else if (rootElement) {
   createRoot(rootElement).render(app);

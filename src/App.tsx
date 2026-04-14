@@ -1,25 +1,35 @@
+import type { ReactNode } from "react";
 import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter } from "react-router-dom";
 import AppRoutes from "./AppRoutes";
 import SchemaMarkup, { organizationSchema, websiteSchema } from "@/components/SchemaMarkup";
 
-const queryClient = new QueryClient();
+const browserQueryClient = new QueryClient();
 
-const App = () => (
+interface AppShellProps {
+  children: ReactNode;
+  queryClient?: QueryClient;
+}
+
+export const AppShell = ({ children, queryClient = browserQueryClient }: AppShellProps) => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <SchemaMarkup schema={organizationSchema} />
       <SchemaMarkup schema={websiteSchema} />
       <Toaster />
-      <Sonner />
+      {children}
+    </TooltipProvider>
+  </QueryClientProvider>
+);
+
+const App = () => (
+  <AppShell>
       <BrowserRouter>
         <AppRoutes />
       </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
+  </AppShell>
 );
 
 export default App;

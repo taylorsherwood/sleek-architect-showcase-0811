@@ -118,9 +118,8 @@ const Hero = () => {
     transition: `opacity 0.9s cubic-bezier(0.16,1,0.3,1) ${delay}, transform 0.9s cubic-bezier(0.16,1,0.3,1) ${delay}`,
   });
 
-  // Use <picture> to let browser pick correct source without JS state dependency
-  const desktopPoster = "/images/hero-poster.webp";
-  const mobilePoster = "/images/mobile-hero-poster.webp";
+  // Default to desktop poster; once ready, use the correct one
+  const posterSrc = (ready && isMobileHero.current) ? "/images/mobile-hero-poster.webp" : "/images/hero-poster.webp";
 
   return (
     <>
@@ -128,8 +127,7 @@ const Hero = () => {
       {/* Video — src injected after LCP image loads */}
       {ready && !skipVideo.current && (
         <div aria-hidden="true" className="absolute inset-0 pointer-events-none select-none" style={{ zIndex: 1 }}>
-          <video ref={videoRef} autoPlay muted loop playsInline preload="none"
-            poster={isMobileHero.current ? mobilePoster : desktopPoster}
+          <video ref={videoRef} autoPlay muted loop playsInline preload="none" poster={posterSrc}
             className={`hero-bg-video transition-opacity duration-700 ${videoReady ? "opacity-100" : "opacity-0"}`}
             style={{ willChange: "opacity" }} tabIndex={-1}
             width={1920} height={1080}
@@ -137,22 +135,18 @@ const Hero = () => {
         </div>
       )}
 
-      {/* LCP poster — <picture> serves correct asset per viewport, no JS needed */}
-      <picture>
-        <source media="(max-width: 767px)" srcSet={mobilePoster} type="image/webp" />
-        <source media="(min-width: 768px)" srcSet={desktopPoster} type="image/webp" />
-        <img
-          ref={posterRef}
-          src={desktopPoster}
-          alt="Austin Texas skyline"
-          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${videoReady ? "opacity-0" : "opacity-100"}`}
-          style={{ zIndex: 0 }}
-          loading="eager"
-          fetchPriority="high"
-          width={1920}
-          height={1080}
-        />
-      </picture>
+      {/* LCP poster image — always rendered, hidden only when video is playing */}
+      <img
+        ref={posterRef}
+        src={posterSrc}
+        alt="Austin Texas skyline"
+        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${videoReady ? "opacity-0" : "opacity-100"}`}
+        style={{ zIndex: 0 }}
+        loading="eager"
+        fetchPriority="high"
+        width={(ready && isMobileHero.current) ? 828 : 1920}
+        height={(ready && isMobileHero.current) ? 1471 : 1080}
+      />
 
       {/* Left-to-right gradient overlay for text readability */}
       <div className="absolute inset-0" style={{

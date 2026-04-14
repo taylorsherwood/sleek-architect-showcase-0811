@@ -2,9 +2,10 @@ import React, { lazy, Suspense, useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import ScrollReveal from "@/components/ScrollReveal";
 import { formatPhoneNumber, getPhoneDigits, getTimestamp } from "@/lib/formUtils";
-import ScrollingCredibilityStrip from "@/components/ScrollingCredibilityStrip";
-import ExpertiseSection from "@/components/ExpertiseSection";
-import FeaturedCommunities from "@/components/FeaturedCommunities";
+
+const ScrollingCredibilityStrip = lazy(() => import("@/components/ScrollingCredibilityStrip"));
+const ExpertiseSection = lazy(() => import("@/components/ExpertiseSection"));
+const FeaturedCommunities = lazy(() => import("@/components/FeaturedCommunities"));
 
 // Dynamic image imports — only loaded when this chunk is loaded
 import taylorBoatImg from "@/assets/taylor-headshot.jpeg";

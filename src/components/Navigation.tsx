@@ -102,13 +102,13 @@ const Navigation = () => {
         }}
       />
       <div className="relative container mx-auto px-6 h-full flex items-center justify-between">
-        <Link to="/" onClick={() => { if (location.pathname === '/') window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="flex items-center shrink-0 overflow-visible" style={{ height: '100%' }}>
+        <Link to="/" onClick={() => { if (location.pathname === '/') window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="flex items-center shrink-0 overflow-visible mr-auto" style={{ height: '100%' }}>
           <img
             src={logo}
             alt="Echelon Property Group"
             title="Echelon Property Group — Austin Luxury Real Estate"
-            className="w-auto max-w-none border-0 shrink-0 object-contain"
-            style={{ height: '125%', maxHeight: '125%', aspectRatio: '200 / 80', display: 'block' }}
+            className="w-auto max-w-none border-0 shrink-0 object-contain h-[90%] md:h-[125%]"
+            style={{ aspectRatio: '200 / 80', display: 'block' }}
             loading="eager"
             decoding="async"
             fetchPriority="high"

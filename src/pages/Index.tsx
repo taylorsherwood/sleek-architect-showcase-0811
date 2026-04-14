@@ -21,13 +21,28 @@ const RETRY_DELAY = 800;
 
 
 
+// Check mobile via CSS-based method to avoid forced reflow from window.innerWidth
+const getIsMobile = () =>
+  typeof window !== "undefined"
+    ? window.matchMedia("(max-width: 767px)").matches
+    : false;
+
 const Hero = () => {
   const [videoReady, setVideoReady] = useState(false);
-  const [isMobileHero] = useState(() => window.innerWidth < 768);
-  const [skipVideo] = useState(() => {
-    const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
-    return motionQuery.matches || window.innerWidth < 768;
-  });
+  const isMobileHero = useRef(false);
+  const skipVideo = useRef(false);
+
+  // Compute once in a layout effect (before paint, but after DOM)
+  // to avoid forced reflow during render
+  const [ready, setReady] = useState(false);
+  useEffect(() => {
+    const mobile = getIsMobile();
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    isMobileHero.current = mobile;
+    skipVideo.current = reducedMotion || mobile;
+    setReady(true);
+  }, []);
+
   const videoRef = useRef<HTMLVideoElement>(null);
   const posterRef = useRef<HTMLImageElement>(null);
   const [heroVisible, setHeroVisible] = useState(true);

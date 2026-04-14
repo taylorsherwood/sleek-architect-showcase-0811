@@ -94,6 +94,13 @@ const Hero = () => {
       )}
 
       {/* ── LEFT-SIDE DARK OVERLAY for text readability ── */}
+      {/* Mobile: subtle full-coverage overlay */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 pointer-events-none md:hidden"
+        style={{ zIndex: 1, background: 'rgba(10,14,25,0.25)' }}
+      />
+      {/* Desktop: directional gradient */}
       <div
         aria-hidden="true"
         className="absolute inset-0 pointer-events-none hidden md:block"

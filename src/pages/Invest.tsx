@@ -357,6 +357,7 @@ const Invest = () => {
       {/* ──────────────────────── PRIVATE ACCESS HERO ──────────────────────── */}
       <InvestHeroSection>
         {/* overlay */}
+        <div className="absolute inset-0 md:hidden" style={{ zIndex: 1, background: 'rgba(12,15,36,0.25)' }} />
         <div className="absolute inset-0 hidden md:block" style={{ zIndex: 1, background: 'linear-gradient(to right, rgba(12,15,36,0.55) 0%, rgba(12,15,36,0.25) 40%, transparent 65%)' }} />
         <div className="relative container mx-auto px-6 pb-16" style={{ zIndex: 2 }}>
           <div className="max-w-xl mb-14">

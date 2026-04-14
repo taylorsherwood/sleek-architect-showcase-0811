@@ -234,12 +234,7 @@ const REALSCOUT_URL = "https://taylorsherwood.realscout.com/";
 
 const SearchSection = () => {
   const containerRef = useRef<HTMLDivElement>(null);
-  const [isMobile, setIsMobile] = useState(false);
-
-  // Defer layout-triggering check to avoid forced reflow
-  useEffect(() => {
-    setIsMobile(getIsMobile());
-  }, []);
+  const isMobile = INITIAL_IS_MOBILE;
 
   useEffect(() => {
     if (isMobile) return;

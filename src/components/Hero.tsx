@@ -3,7 +3,7 @@ import { useState, useRef, useEffect } from "react";
 const RETRY_DELAY = 800;
 
 const Hero = () => {
-  const [videoReady, setVideoReady] = useState(false);
+  const [videoReady, setVideoReady] = useState(true);
   const [isMobileHero] = useState(() => window.innerWidth < 768);
   const [skipVideo] = useState(() => {
     return window.matchMedia("(prefers-reduced-motion: reduce)").matches || window.innerWidth < 768;
@@ -25,51 +25,28 @@ const Hero = () => {
     return () => observer.disconnect();
   }, []);
 
-  // Inject video src only after LCP poster image has loaded
+  // Play video immediately
   useEffect(() => {
     if (skipVideo) return;
+    const video = videoRef.current;
+    if (!video) return;
 
-    const injectVideoSrc = () => {
-      const video = videoRef.current;
-      if (!video || video.src) return;
+    video.muted = true;
+    video.defaultMuted = true;
 
-      video.muted = true;
-      video.defaultMuted = true;
-      video.src = "/videos/hero-video.mp4";
-      video.load();
-
-      const attemptPlay = () => {
-        const p = video.play();
-        if (p !== undefined) {
-          p.then(() => {
-            setVideoReady(true);
-          }).catch(() => {
-            setTimeout(() => {
-              video.muted = true;
-              video.play()?.then(() => {
-                setVideoReady(true);
-              }).catch(() => {});
-            }, RETRY_DELAY);
-          });
-        }
-      };
-
-      if (video.readyState >= 2) {
-        attemptPlay();
-      } else {
-        video.addEventListener("loadeddata", attemptPlay, { once: true });
-      }
+    const attemptPlay = () => {
+      video.play().catch(() => {
+        setTimeout(() => {
+          video.muted = true;
+          video.play().catch(() => {});
+        }, RETRY_DELAY);
+      });
     };
 
-    const img = posterRef.current;
-    if (img && !img.complete) {
-      img.addEventListener("load", injectVideoSrc, { once: true });
+    if (video.readyState >= 2) {
+      attemptPlay();
     } else {
-      if ("requestIdleCallback" in window) {
-        requestIdleCallback(injectVideoSrc, { timeout: 2000 });
-      } else {
-        setTimeout(injectVideoSrc, 200);
-      }
+      video.addEventListener("canplay", attemptPlay, { once: true });
     }
   }, [skipVideo]);
 
@@ -89,29 +66,32 @@ const Hero = () => {
             muted
             loop
             playsInline
-            preload="none"
-            poster={posterSrc}
-            className={`hero-bg-video transition-opacity duration-700 ${videoReady ? "opacity-100" : "opacity-0"}`}
+            preload="auto"
+            className="hero-bg-video opacity-100"
             width={1920}
             height={1080}
             tabIndex={-1}
-          />
+          >
+            <source src="/videos/hero-video.mp4" type="video/mp4" />
+          </video>
         </div>
       )}
 
-      {/* LCP poster image — always rendered, hidden when video plays */}
-      <img
-        ref={posterRef}
-        src={posterSrc}
-        alt="Austin Texas skyline at sunset with downtown high-rises and Hill Country backdrop"
-        title="Austin Texas skyline — Echelon Property Group luxury real estate"
-        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${videoReady ? "opacity-0" : "opacity-100"}`}
-        style={{ zIndex: 0 }}
-        loading="eager"
-        fetchPriority="high"
-        width={isMobileHero ? 828 : 1920}
-        height={isMobileHero ? 1471 : 1080}
-      />
+      {/* Fallback poster — only shown on mobile where video is skipped */}
+      {skipVideo && (
+        <img
+          ref={posterRef}
+          src={posterSrc}
+          alt="Austin Texas skyline at sunset with downtown high-rises and Hill Country backdrop"
+          title="Austin Texas skyline — Echelon Property Group luxury real estate"
+          className="absolute inset-0 w-full h-full object-cover"
+          style={{ zIndex: 0 }}
+          loading="eager"
+          fetchPriority="high"
+          width={isMobileHero ? 828 : 1920}
+          height={isMobileHero ? 1471 : 1080}
+        />
+      )}
 
       {/* ── LEFT-SIDE DARK OVERLAY for text readability ── */}
       <div

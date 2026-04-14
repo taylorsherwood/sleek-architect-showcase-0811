@@ -6,6 +6,7 @@ import SchemaMarkup, { createFAQSchema, createBreadcrumbSchema, createPlaceSchem
 import { seoCommunityPages } from "@/data/seoCommunityData";
 import AboutBlock from "@/components/AboutBlock";
 import CommunityBoundaryMap from "@/components/CommunityBoundaryMap";
+import CommunityGuideCTA from "@/components/CommunityGuideCTA";
 
 const Footer = lazy(() => import("@/components/Footer"));
 const RealScoutListings = lazy(() => import("@/components/RealScoutListings"));
@@ -144,6 +145,14 @@ const SEOCommunityPage = () => {
                 />
               </Suspense>
             </section>
+
+            {/* Community Guide CTA — Westlake Hills */}
+            {community.slug === "westlake-hills-homes-for-sale" && (
+              <CommunityGuideCTA
+                communityName={community.name}
+                guideUrl="https://app.liveby.com/reports/community-guide/T2c6QdMDzCN4B1?utm_source=unknown&utm_medium=copied-link&utm_campaign=report-share"
+              />
+            )}
 
             {/* Internal Links */}
             <section className="border border-border p-8">

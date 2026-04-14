@@ -116,7 +116,7 @@ const Hero = () => {
         loading="eager"
         fetchPriority="high"
         width={isMobileHero ? 828 : 1920}
-        height={isMobileHero ? 1471 : 1080}
+        height={isMobileHero ? 1385 : 1080}
       />
 
       {/* Left-to-right gradient overlay for text readability */}

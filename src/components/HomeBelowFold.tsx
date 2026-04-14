@@ -1110,6 +1110,13 @@ const HomeBelowFold = () => (
     <div className="h-12 md:h-20 bg-background" aria-hidden="true" />
     <EditorialInsights />
 
+    <div className="flex items-center justify-center py-8 md:py-12 bg-background" aria-hidden="true">
+      <div className="flex items-center gap-4 max-w-[280px] w-full">
+        <div className="flex-1 h-px bg-gradient-to-r from-transparent to-[#b9a06c]" />
+        <div className="w-1.5 h-1.5 rotate-45 border border-[#b9a06c]" />
+        <div className="flex-1 h-px bg-gradient-to-l from-transparent to-[#b9a06c]" />
+      </div>
+    </div>
     <FinalCTA />
 
     <Suspense fallback={<div className="min-h-[100px]" />}>

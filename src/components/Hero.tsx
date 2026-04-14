@@ -96,7 +96,7 @@ const Hero = () => {
       {/* ── LEFT-SIDE DARK OVERLAY for text readability ── */}
       <div
         aria-hidden="true"
-        className="absolute inset-0 pointer-events-none"
+        className="absolute inset-0 pointer-events-none hidden md:block"
         style={{
           zIndex: 1,
           background: 'linear-gradient(to right, rgba(10,14,25,0.65) 0%, rgba(10,14,25,0.4) 35%, rgba(10,14,25,0.1) 55%, transparent 70%)',

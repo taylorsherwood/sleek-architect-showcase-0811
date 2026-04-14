@@ -595,12 +595,12 @@ const TestimonialsSection = () => {
    ───────────────────────────────────────────── */
 
 const communities = [
-  { name: "Barton Creek", descriptor: "Golf, privacy, Hill Country estates", image: "/static-assets/community-barton-creek.jpg", slug: "barton-creek", priceFrom: "From $2M+" },
-  { name: "Lake Austin", descriptor: "Waterfront living at its finest", image: "/static-assets/community-lake-austin.jpg", slug: "lake-austin", priceFrom: "From $3.5M+" },
-  { name: "Rollingwood", descriptor: "Intimate enclave near Zilker", image: "/static-assets/community-rollingwood.jpg", slug: "rollingwood", priceFrom: "From $1.2M+" },
-  { name: "Spanish Oaks", descriptor: "Gated Hill Country luxury", image: "/static-assets/community-spanish-oaks.jpg", slug: "spanish-oaks", priceFrom: "From $2.5M+" },
-  { name: "Tarrytown", descriptor: "Old Austin charm, central location", image: "/static-assets/community-tarrytown.jpg", slug: "tarrytown", priceFrom: "From $1.5M+" },
-  { name: "Westlake Hills", descriptor: "Scenic bluffs, top-rated schools", image: "/static-assets/community-westlake-hills.jpg", slug: "westlake-hills", priceFrom: "From $1.8M+" },
+  { name: "Barton Creek", descriptor: "Golf, privacy, Hill Country estates", image: "/static-assets/community-barton-creek.webp", slug: "barton-creek", priceFrom: "From $2M+" },
+  { name: "Lake Austin", descriptor: "Waterfront living at its finest", image: "/static-assets/community-lake-austin.webp", slug: "lake-austin", priceFrom: "From $3.5M+" },
+  { name: "Rollingwood", descriptor: "Intimate enclave near Zilker", image: "/static-assets/community-rollingwood.webp", slug: "rollingwood", priceFrom: "From $1.2M+" },
+  { name: "Spanish Oaks", descriptor: "Gated Hill Country luxury", image: "/static-assets/community-spanish-oaks.webp", slug: "spanish-oaks", priceFrom: "From $2.5M+" },
+  { name: "Tarrytown", descriptor: "Old Austin charm, central location", image: "/static-assets/community-tarrytown.webp", slug: "tarrytown", priceFrom: "From $1.5M+" },
+  { name: "Westlake Hills", descriptor: "Scenic bluffs, top-rated schools", image: "/static-assets/community-westlake-hills.webp", slug: "westlake-hills", priceFrom: "From $1.8M+" },
 ];
 
 const CommunitiesSection = () => (
@@ -1069,7 +1069,7 @@ const HomeBelowFold = () => (
     <AdvisorSection />
     <StatsStrip />
 
-    <div className="parallax-break" style={{ backgroundImage: "url('/images/parallax-skyline.jpg')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties} aria-hidden="true" />
+    <div className="parallax-break" style={{ backgroundImage: "url('/images/parallax-skyline.webp')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties} aria-hidden="true" />
 
     <FeaturedProperties />
 
@@ -1087,7 +1087,7 @@ const HomeBelowFold = () => (
     </div>
     <div className="h-12 md:h-20 bg-secondary" aria-hidden="true" />
 
-    <div className="parallax-break" style={{ backgroundImage: "url('/images/parallax-lakefront.jpg')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties} aria-hidden="true" />
+    <div className="parallax-break" style={{ backgroundImage: "url('/images/parallax-lakefront.webp')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties} aria-hidden="true" />
 
     <div className="h-12 md:h-20 bg-secondary" aria-hidden="true" />
     <Suspense fallback={<div className="min-h-[200px] bg-secondary" />}>
@@ -1099,7 +1099,7 @@ const HomeBelowFold = () => (
     <InsightsSection />
     <div className="h-12 md:h-20 bg-secondary" aria-hidden="true" />
 
-    <div className="parallax-break" style={{ backgroundImage: "url('/images/parallax-interior.jpg')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties} aria-hidden="true" />
+    <div className="parallax-break" style={{ backgroundImage: "url('/images/parallax-interior.webp')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties} aria-hidden="true" />
 
     <div className="h-12 md:h-20 bg-background" aria-hidden="true" />
     <EditorialInsights />

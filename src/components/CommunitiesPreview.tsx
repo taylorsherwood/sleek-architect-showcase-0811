@@ -5,19 +5,19 @@ const featured = [
   {
     name: "Barton Creek",
     descriptor: "Golf, privacy, Hill Country estates",
-    image: "/static-assets/community-barton-creek.jpg",
+    image: "/static-assets/community-barton-creek.webp",
     slug: "barton-creek",
   },
   {
     name: "Lake Austin",
     descriptor: "Waterfront living at its finest",
-    image: "/static-assets/community-lake-austin.jpg",
+    image: "/static-assets/community-lake-austin.webp",
     slug: "lake-austin",
   },
   {
     name: "Westlake Hills",
     descriptor: "Scenic bluffs, top-rated schools",
-    image: "/static-assets/community-westlake-hills.jpg",
+    image: "/static-assets/community-westlake-hills.webp",
     slug: "westlake-hills",
   },
 ];

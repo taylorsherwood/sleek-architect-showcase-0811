@@ -75,7 +75,7 @@ const InvestHeroSection = ({ children }: Props) => {
           muted
           playsInline
           preload="metadata"
-          poster="/images/invest-hero-poster.jpg"
+          poster="/images/invest-hero-poster.webp"
         >
           <source src={VIDEO_URL} type="video/mp4" />
         </video>

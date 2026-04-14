@@ -99,8 +99,8 @@ const CommercialHeroVideo = () => {
         autoPlay
         muted
         playsInline
-        preload="auto"
-        poster="/images/commercial-hero-poster.jpg"
+        preload="metadata"
+        poster="/images/commercial-hero-poster.webp"
         className="w-full h-full object-cover"
       >
         <source src="/videos/commercial-hero.mp4" type="video/mp4" />

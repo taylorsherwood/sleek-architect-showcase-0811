@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const commercialHeroSrc = "/images/commercial-hero-austin.jpg";
+const commercialHeroSrc = "/images/commercial-hero-austin.webp";
 
 const CommercialCTA = () => {
   return (

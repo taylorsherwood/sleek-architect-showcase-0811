@@ -115,7 +115,7 @@ const Hero = () => {
 
       {/* LCP poster image — always rendered, hidden only when video is playing */}
       <img
-        ref={posterRef}
+        
         src={posterSrc}
         alt="Austin Texas skyline"
         className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${videoReady ? "opacity-0" : "opacity-100"}`}

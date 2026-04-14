@@ -21,20 +21,28 @@ const RETRY_DELAY = 800;
 
 
 
-// matchMedia doesn't trigger reflow — safe to call during render
+// Safe SSR/prerender default: skip video (mobile-first).
+// Client-side hydration enables video only on desktop.
 const getIsMobile = () =>
   typeof window !== "undefined"
     ? window.matchMedia("(max-width: 767px)").matches
-    : false;
+    : true; // SSR → treat as mobile so <video> is never prerendered
 
-// Compute once at module level to avoid re-renders and ensure correct poster on first paint
 const INITIAL_IS_MOBILE = getIsMobile();
 const INITIAL_SKIP_VIDEO = INITIAL_IS_MOBILE || (typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
 
 const Hero = () => {
   const [videoReady, setVideoReady] = useState(false);
-  const isMobileHero = INITIAL_IS_MOBILE;
-  const skipVideo = INITIAL_SKIP_VIDEO;
+  // After hydration, re-evaluate on client to enable video on desktop
+  const [isMobileHero, setIsMobileHero] = useState(INITIAL_IS_MOBILE);
+  const [skipVideo, setSkipVideo] = useState(INITIAL_SKIP_VIDEO);
+
+  useEffect(() => {
+    const mobile = window.matchMedia("(max-width: 767px)").matches;
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    setIsMobileHero(mobile);
+    setSkipVideo(mobile || reducedMotion);
+  }, []);
 
   const videoRef = useRef<HTMLVideoElement>(null);
   const posterRef = useRef<HTMLImageElement>(null);

@@ -143,10 +143,29 @@
     </div>
     <script type="module" src="/src/main.tsx"></script>
 
-    <!-- Load RealScout widget script after page is interactive -->
+    <!-- Load RealScout widget script only when a widget is near the viewport -->
     <script>
-      function loadRealScout(){var s=document.createElement('script');s.type='module';s.src='https://em.realscout.com/widgets/realscout-web-components.umd.js';document.body.appendChild(s);}
-      if('requestIdleCallback' in window){requestIdleCallback(loadRealScout,{timeout:5000});}else{window.addEventListener('load',function(){setTimeout(loadRealScout,1500);});}
+      (function(){
+        var loaded=false;
+        function loadRealScout(){
+          if(loaded)return;loaded=true;
+          var s=document.createElement('script');s.type='module';
+          s.src='https://em.realscout.com/widgets/realscout-web-components.umd.js';
+          document.body.appendChild(s);
+        }
+        function observe(){
+          var els=document.querySelectorAll('realscout-simple-search,realscout-advanced-search,realscout-your-listings');
+          if(!els.length){setTimeout(observe,2000);return;}
+          if('IntersectionObserver' in window){
+            var io=new IntersectionObserver(function(entries){
+              for(var i=0;i<entries.length;i++){if(entries[i].isIntersecting){loadRealScout();io.disconnect();return;}}
+            },{rootMargin:'600px'});
+            els.forEach(function(el){io.observe(el);});
+          }else{loadRealScout();}
+        }
+        if(document.readyState==='complete')observe();
+        else window.addEventListener('load',observe,{once:true});
+      })();
     </script>
 
     <!-- Defer analytics & third-party scripts until after page is interactive -->

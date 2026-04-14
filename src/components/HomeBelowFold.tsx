@@ -481,10 +481,12 @@ const TestimonialsSection = () => {
 
   useEffect(() => {
     let ticking = false;
-    let cachedVh = window.innerHeight;
+    // Defer innerHeight read to avoid forced reflow during first paint
+    let cachedVh = 0;
 
     const updateParallax = () => {
       if (!sectionRef.current || !watermarkRef.current) return;
+      if (!cachedVh) cachedVh = window.innerHeight;
       const rect = sectionRef.current.getBoundingClientRect();
       const progress = 1 - (rect.bottom / (cachedVh + rect.height));
       const clamped = Math.max(0, Math.min(1, progress));
@@ -509,6 +511,7 @@ const TestimonialsSection = () => {
 
     // Defer initial calculation to avoid forced reflow during render
     const rafId = requestAnimationFrame(() => {
+      cachedVh = window.innerHeight;
       requestAnimationFrame(updateParallax);
     });
 

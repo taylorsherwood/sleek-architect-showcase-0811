@@ -295,7 +295,7 @@ const StatsStrip = () => (
 
 const properties = [
   {
-    image: "/lovable-uploads/0fc79a0b-1fde-439f-bb08-6062e50770b7.jpg",
+    image: "/lovable-uploads/0fc79a0b-1fde-439f-bb08-6062e50770b7.webp",
     address: "2300 Barton Creek Boulevard #15",
     location: "Barton Creek, Austin",
     price: "$3,495,000",
@@ -304,7 +304,7 @@ const properties = [
     badge: "Private Listing",
   },
   {
-    image: "/static-assets/listing-3.jpg",
+    image: "/static-assets/listing-3.webp",
     address: "Ranch Estate on 42 Acres",
     location: "Texas Hill Country",
     price: "$5M+",
@@ -380,7 +380,7 @@ const FeaturedProperties = () => (
             {/* Off-market card */}
             <Link to="/off-market-real-estate-austin" className="group block">
               <div className="relative overflow-hidden flex items-center justify-center" style={{ aspectRatio: "3/4", background: "#0C0F24" }}>
-                <img src="/static-assets/echelon-logo-gold-square.png" alt="Echelon Property Group"
+                <img src="/static-assets/echelon-logo-gold-square.webp" alt="Echelon Property Group"
                   className="w-1/2 h-auto object-contain group-hover:scale-[1.03] will-change-transform [transition:transform_1.8s_cubic-bezier(0.19,1,0.22,1)]"
                   loading="lazy" decoding="async"
                   width={400}

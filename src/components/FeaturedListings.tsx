@@ -7,7 +7,7 @@ interface FeaturedListingsProps {
 
 const listings = [
 {
-  image: "/lovable-uploads/0fc79a0b-1fde-439f-bb08-6062e50770b7.jpg",
+  image: "/lovable-uploads/0fc79a0b-1fde-439f-bb08-6062e50770b7.webp",
   address: "2300 Barton Creek Boulevard #15",
   location: "Barton Creek, Austin",
   price: "$3,495,000",
@@ -31,7 +31,7 @@ const listings = [
   isOffMarketCard: true
 },
 {
-  image: "/static-assets/listing-3.jpg",
+  image: "/static-assets/listing-3.webp",
   address: "Ranch Estate on 42 Acres",
   location: "Texas Hill Country",
   price: "$5M+ Hill Country Estate",
@@ -52,7 +52,7 @@ const ListingCard = ({
       <Link to={listing.link} className="group block">
         <div className="relative overflow-hidden rounded-sm aspect-[4/3] bg-gradient-to-br from-primary via-primary to-primary/80 flex flex-col items-center justify-center">
           <img
-            src="/static-assets/echelon-logo-gold-square.png"
+            src="/static-assets/echelon-logo-gold-square.webp"
             alt="Echelon Property Group"
             title="Echelon Property Group — View exclusive listings"
             className="w-1/2 h-auto object-contain transition-transform duration-700 ease-out group-hover:scale-[1.04]"

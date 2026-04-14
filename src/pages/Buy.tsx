@@ -20,7 +20,7 @@ import {
 "lucide-react";
 
 import listing2 from "@/assets/listing-2.jpg";
-import listing3 from "@/assets/listing-3.jpg";
+import listing3 from "@/assets/listing-3.webp";
 import heroImg from "@/assets/hero-luxury-austin.jpg";
 import bartonCreekImg from "@/assets/community-barton-creek.jpg";
 import westlakeImg from "@/assets/community-westlake-hills.avif";
@@ -94,7 +94,7 @@ const whyTaylor = [
 
 const featuredListings = [
 {
-  image: "/lovable-uploads/0fc79a0b-1fde-439f-bb08-6062e50770b7.jpg",
+  image: "/lovable-uploads/0fc79a0b-1fde-439f-bb08-6062e50770b7.webp",
   address: "2300 Barton Creek Boulevard #15",
   location: "Barton Creek, Austin",
   price: "$3,495,000",

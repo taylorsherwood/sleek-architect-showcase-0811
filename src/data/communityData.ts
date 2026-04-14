@@ -2043,7 +2043,9 @@ Homes in Rob Roy range from elegant traditional estates to contemporary architec
 
 ### Gated Exclusivity
 
-Rob Roy is served by the Eanes Independent School District and offers proximity to both downtown Austin and the Westlake Hills corridor. The community's gated security, large lot sizes, and architectural quality have made it a preferred address for Austin's most discerning buyers for decades.`,
+Rob Roy is served by the Eanes Independent School District and offers proximity to both downtown Austin and the Westlake Hills corridor. The community's gated security, large lot sizes, and architectural quality have made it a preferred address for Austin's most discerning buyers for decades.
+
+`,
     lifestyle: `### Views & Privacy
 
 The panoramic Hill Country views available from Rob Roy's hilltop lots are among the most spectacular in the Austin area. Many properties feature infinity pools, outdoor entertaining areas, and seamless indoor-outdoor living designed to capitalize on the views.

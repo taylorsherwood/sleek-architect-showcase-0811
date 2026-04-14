@@ -27,7 +27,8 @@ const Hero = () => {
 
   useEffect(() => {
     const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
-    if (motionQuery.matches) {
+    const isMobile = window.innerWidth < 768;
+    if (motionQuery.matches || isMobile) {
       setShowFallback(true);
       return;
     }

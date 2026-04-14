@@ -1,4 +1,4 @@
-import { useEffect, useRef, type ReactNode } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 
 const VIDEO_URL = "/videos/invest-hero.mp4";
 
@@ -10,6 +10,12 @@ const InvestHeroSection = ({ children }: Props) => {
   const sectionRef = useRef<HTMLElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
   const hasPlayedOnce = useRef(false);
+  const [useVideo, setUseVideo] = useState(false);
+
+  // Skip video on mobile to save bandwidth
+  useEffect(() => {
+    if (window.innerWidth >= 768) setUseVideo(true);
+  }, []);
 
   const playVideo = () => {
     const video = videoRef.current;
@@ -21,6 +27,7 @@ const InvestHeroSection = ({ children }: Props) => {
 
   // Play as soon as possible on initial load
   useEffect(() => {
+    if (!useVideo) return;
     const video = videoRef.current;
     if (!video) return;
 
@@ -42,10 +49,11 @@ const InvestHeroSection = ({ children }: Props) => {
       video.addEventListener("loadeddata", onReady, { once: true });
       return () => video.removeEventListener("loadeddata", onReady);
     }
-  }, []);
+  }, [useVideo]);
 
   // Re-play when section scrolls into view
   useEffect(() => {
+    if (!useVideo) return;
     const el = sectionRef.current;
     if (!el) return;
 
@@ -60,7 +68,7 @@ const InvestHeroSection = ({ children }: Props) => {
 
     observer.observe(el);
     return () => observer.disconnect();
-  }, []);
+  }, [useVideo]);
 
   return (
     <section
@@ -68,17 +76,26 @@ const InvestHeroSection = ({ children }: Props) => {
       className="relative h-screen flex flex-col justify-end overflow-hidden bg-primary"
     >
       <div className="absolute inset-0" style={{ zIndex: 0 }}>
-        <video
-          ref={videoRef}
-          className="w-full h-full object-cover object-top"
-          autoPlay
-          muted
-          playsInline
-          preload="metadata"
-          poster="/images/invest-hero-poster.webp"
-        >
-          <source src={VIDEO_URL} type="video/mp4" />
-        </video>
+        {useVideo ? (
+          <video
+            ref={videoRef}
+            className="w-full h-full object-cover object-top"
+            autoPlay
+            muted
+            playsInline
+            preload="metadata"
+            poster="/images/invest-hero-poster.webp"
+          >
+            <source src={VIDEO_URL} type="video/mp4" />
+          </video>
+        ) : (
+          <img
+            src="/images/invest-hero-poster.webp"
+            alt="Austin investment real estate"
+            className="w-full h-full object-cover object-top"
+            loading="eager"
+          />
+        )}
       </div>
 
       {children}

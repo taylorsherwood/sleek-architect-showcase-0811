@@ -18,10 +18,9 @@
 
 
     <!-- Self-hosted fonts (all fonts now local — no external Google Fonts requests) -->
-    <link rel="preload" as="font" type="font/woff2" href="/fonts/raleway-faccb37f.woff2" crossorigin />
-    <link rel="preload" as="font" type="font/woff2" href="/fonts/playfair-48d1e9cd.woff2" crossorigin />
-    <link rel="preload" as="font" type="font/woff2" href="/fonts/cinzel-latin.woff2" crossorigin />
-    <link rel="preload" as="font" type="font/woff2" href="/fonts/jost-latin.woff2" crossorigin />
+    <!-- Only preload critical above-the-fold fonts (Cinzel for H1, Jost for body) -->
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/cinzel-latin.woff2" crossorigin media="all" />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/jost-latin.woff2" crossorigin media="all" />
     <!-- Load full fonts.css asynchronously (non-render-blocking) -->
     <link rel="preload" as="style" href="/fonts/fonts.css" />
     <link rel="stylesheet" media="print" onload="this.media='all'" href="/fonts/fonts.css" />

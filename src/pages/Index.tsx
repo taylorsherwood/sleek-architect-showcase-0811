@@ -115,8 +115,8 @@ const Hero = () => {
         style={{ zIndex: 0 }}
         loading="eager"
         fetchPriority="high"
-        width={isMobileHero ? 828 : 1920}
-        height={isMobileHero ? 1471 : 1080}
+        width={isMobileHero ? 780 : 1920}
+        height={isMobileHero ? 1385 : 1080}
       />
 
       {/* Left-to-right gradient overlay for text readability */}

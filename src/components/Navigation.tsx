@@ -26,15 +26,20 @@ const Navigation = () => {
       setIsScrolled(false);
       return;
     }
+    // Cache viewport height to avoid repeated layout reads
+    let vh = window.innerHeight;
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > window.innerHeight * 0.8);
+      setIsScrolled(window.scrollY > vh * 0.8);
     };
-    // Defer initial layout read to avoid forced reflow during first paint
+    const onResize = () => { vh = window.innerHeight; };
+    // Defer initial check to avoid forced reflow during first paint
     const rafId = requestAnimationFrame(handleScroll);
     window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener("resize", onResize, { passive: true });
     return () => {
       cancelAnimationFrame(rafId);
       window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", onResize);
     };
   }, [shouldNeverFade]);
 

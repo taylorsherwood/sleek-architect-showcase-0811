@@ -43,6 +43,13 @@
 /robots.txt
   Cache-Control: public, max-age=86400
 
+# HTML pages — short cache with revalidation
+/
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/index.html
+  Cache-Control: public, max-age=3600, must-revalidate
+
 # Ensure Googlebot and all crawlers receive assets without challenge
 /*
   X-Robots-Tag: all

@@ -170,6 +170,15 @@ const Blog = () => {
         </div>
       </section>
 
+      {/* Soro Blog Embed */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-7xl mx-auto">
+            <SoroBlogEmbed />
+          </div>
+        </div>
+      </section>
+
       {/* ── SEO Content: Blog Overview ── */}
       <section className="py-28 bg-secondary">
         <div className="container mx-auto px-6">

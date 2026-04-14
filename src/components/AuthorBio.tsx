@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import taylorHeadshot from "@/assets/taylor-headshot.jpg";
+import taylorHeadshot from "@/assets/taylor-headshot.webp";
 
 interface AuthorBioProps {
   compact?: boolean;

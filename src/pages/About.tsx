@@ -6,7 +6,7 @@ import austinLifestyle from "@/assets/austin-approach-pool.jpg";
 import { Link } from "react-router-dom";
 import SchemaMarkup, { taylorSherwoodSchema, createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import SEOHead from "@/components/SEOHead";
-import echelonWatermark from "@/assets/echelon-watermark.png";
+import echelonWatermark from "@/assets/echelon-watermark.webp";
 import ScrollReveal from "@/components/ScrollReveal";
 
 const InstagramGallery = lazy(() => import("@/components/InstagramGallery"));

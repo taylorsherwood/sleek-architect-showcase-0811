@@ -27,7 +27,7 @@ import {
 
 import heroImg from "@/assets/sell-hero-luxury-home.jpg";
 import taylorProfileSell from "@/assets/echelon-for-sale-sign.jpg";
-import echelonWatermark from "@/assets/echelon-watermark.png";
+import echelonWatermark from "@/assets/echelon-watermark.webp";
 import austinLuxuryNetwork from "@/assets/austin-luxury-network.jpg";
 import topAgentNetwork from "@/assets/top-agent-network.webp";
 import commissionClubhouse from "@/assets/clubhouse-commission.png";

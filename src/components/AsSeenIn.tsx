@@ -1,8 +1,8 @@
 import ScrollReveal from "@/components/ScrollReveal";
-import mediaWsj from "@/assets/media-wsj.png";
-import mediaTribeza from "@/assets/media-tribeza.png";
-import mediaAbj from "@/assets/media-abj.png";
-import mediaMansionGlobal from "@/assets/media-mansion-global.png";
+import mediaWsj from "@/assets/media-wsj.webp";
+import mediaTribeza from "@/assets/media-tribeza.webp";
+import mediaAbj from "@/assets/media-abj.webp";
+import mediaMansionGlobal from "@/assets/media-mansion-global.webp";
 
 const logos = [
   { src: mediaWsj, alt: "The Wall Street Journal", h: "clamp(40px, 6vw, 72px)" },

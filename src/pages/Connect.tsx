@@ -1,6 +1,6 @@
 import { lazy, Suspense, useState } from "react";
 import SEOHead from "@/components/SEOHead";
-import taylorHeadshot from "@/assets/taylor-headshot.jpg";
+import taylorHeadshot from "@/assets/taylor-headshot.webp";
 import combinedLogo from "@/assets/exp-echelon-combined-logo.png";
 import { Instagram, Mail, Phone, Home, Search, Mountain } from "lucide-react";
 

@@ -237,10 +237,14 @@ const Hero = () => {
    SECTION 1B — SEARCH (RealScout Simple Search)
    ───────────────────────────────────────────── */
 
+const REALSCOUT_URL = "https://taylorsherwood.realscout.com/";
+
 const SearchSection = () => {
   const containerRef = useRef<HTMLDivElement>(null);
+  const [isMobile] = useState(() => window.innerWidth < 768);
 
   useEffect(() => {
+    if (isMobile) return;
     const container = containerRef.current;
     if (!container) return;
 
@@ -252,7 +256,7 @@ const SearchSection = () => {
     return () => {
       while (container.firstChild) container.removeChild(container.firstChild);
     };
-  }, []);
+  }, [isMobile]);
 
   return (
     <section className="bg-secondary relative z-20" style={{ overflow: 'visible', padding: "clamp(24px, 4vw, 48px) 0 clamp(32px, 4vw, 48px)" }}>
@@ -264,7 +268,18 @@ const SearchSection = () => {
           <h2 className="font-display text-2xl md:text-[2rem] font-normal text-foreground leading-[1.1] tracking-[0.03em] mb-10">
             Find Your Next <span className="text-gold italic">Chapter</span>
           </h2>
-          <div ref={containerRef} className="flex justify-center relative max-w-2xl mx-auto" style={{ minHeight: 60, zIndex: 10 }} />
+          {isMobile ? (
+            <a
+              href={REALSCOUT_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cta-luxury inline-block"
+            >
+              SEARCH NOW
+            </a>
+          ) : (
+            <div ref={containerRef} className="flex justify-center relative max-w-2xl mx-auto" style={{ minHeight: 60, zIndex: 10 }} />
+          )}
         </div>
       </div>
     </section>

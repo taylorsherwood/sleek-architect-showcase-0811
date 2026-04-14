@@ -1,11 +1,14 @@
-import { createElement, useEffect, useRef } from "react";
+import { createElement, useEffect, useRef, useState } from "react";
 
 const GOLD_HSL = "hsl(41, 36%, 57%)";
+const REALSCOUT_URL = "https://taylorsherwood.realscout.com/";
 
 const RealScoutSearch = () => {
   const containerRef = useRef<HTMLDivElement>(null);
+  const [isMobile] = useState(() => window.innerWidth < 768);
 
   useEffect(() => {
+    if (isMobile) return;
     const el = containerRef.current;
     if (!el) return;
 
@@ -13,7 +16,6 @@ const RealScoutSearch = () => {
       const widget = el.querySelector("realscout-advanced-search");
       if (!widget?.shadowRoot) return;
 
-      // Check if already injected
       if (widget.shadowRoot.querySelector("#rs-custom-styles")) return;
 
       const style = document.createElement("style");
@@ -32,12 +34,10 @@ const RealScoutSearch = () => {
       widget.shadowRoot.appendChild(style);
     };
 
-    // Try immediately then observe for shadow DOM attachment
     injectStyles();
     const observer = new MutationObserver(() => injectStyles());
     observer.observe(el, { childList: true, subtree: true });
 
-    // Retry a few times for slow-loading widgets
     const timers = [500, 1500, 3000].map((ms) =>
       setTimeout(injectStyles, ms)
     );
@@ -46,7 +46,7 @@ const RealScoutSearch = () => {
       observer.disconnect();
       timers.forEach(clearTimeout);
     };
-  }, []);
+  }, [isMobile]);
 
   return (
     <section id="realscout-search" className="bg-background pt-16 pb-12 md:pt-20 md:pb-16">
@@ -70,16 +70,29 @@ const RealScoutSearch = () => {
             </header>
           </div>
 
-          <div ref={containerRef} className="mx-auto max-w-5xl" style={{ minHeight: 120 }}>
-            {createElement("realscout-advanced-search", {
-              "agent-encoded-id": "QWdlbnQtMjg5NDU2",
-            })}
-            <noscript>
-              <p className="text-center text-muted-foreground py-4">
-                <a href="https://taylorsherwood.realscout.com/" className="underline">Search Austin homes on our listings portal →</a>
-              </p>
-            </noscript>
-          </div>
+          {isMobile ? (
+            <div className="text-center">
+              <a
+                href={REALSCOUT_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cta-luxury inline-block"
+              >
+                SEARCH NOW
+              </a>
+            </div>
+          ) : (
+            <div ref={containerRef} className="mx-auto max-w-5xl" style={{ minHeight: 120 }}>
+              {createElement("realscout-advanced-search", {
+                "agent-encoded-id": "QWdlbnQtMjg5NDU2",
+              })}
+              <noscript>
+                <p className="text-center text-muted-foreground py-4">
+                  <a href={REALSCOUT_URL} className="underline">Search Austin homes on our listings portal →</a>
+                </p>
+              </noscript>
+            </div>
+          )}
       </div>
     </section>
   );

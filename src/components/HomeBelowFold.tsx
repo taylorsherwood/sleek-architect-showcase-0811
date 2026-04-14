@@ -477,24 +477,42 @@ const TestimonialsSection = () => {
 
   useEffect(() => {
     let ticking = false;
+    let cachedVh = window.innerHeight;
+
+    const updateParallax = () => {
+      if (!sectionRef.current || !watermarkRef.current) return;
+      const rect = sectionRef.current.getBoundingClientRect();
+      const progress = 1 - (rect.bottom / (cachedVh + rect.height));
+      const clamped = Math.max(0, Math.min(1, progress));
+      const y = (clamped - 0.5) * 18;
+      const x = (clamped - 0.5) * -6;
+      watermarkRef.current.style.transform = `translate(calc(1% + ${x}px), calc(4% + ${y}px))`;
+    };
+
     const onScroll = () => {
       if (ticking) return;
       ticking = true;
       requestAnimationFrame(() => {
-        if (!sectionRef.current || !watermarkRef.current) { ticking = false; return; }
-        const rect = sectionRef.current.getBoundingClientRect();
-        const vh = window.innerHeight;
-        const progress = 1 - (rect.bottom / (vh + rect.height));
-        const clamped = Math.max(0, Math.min(1, progress));
-        const y = (clamped - 0.5) * 18;
-        const x = (clamped - 0.5) * -6;
-        watermarkRef.current.style.transform = `translate(calc(1% + ${x}px), calc(4% + ${y}px))`;
+        updateParallax();
         ticking = false;
       });
     };
+
+    const onResize = () => { cachedVh = window.innerHeight; };
+
     window.addEventListener("scroll", onScroll, { passive: true });
-    onScroll();
-    return () => window.removeEventListener("scroll", onScroll);
+    window.addEventListener("resize", onResize, { passive: true });
+
+    // Defer initial calculation to avoid forced reflow during render
+    const rafId = requestAnimationFrame(() => {
+      requestAnimationFrame(updateParallax);
+    });
+
+    return () => {
+      cancelAnimationFrame(rafId);
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onResize);
+    };
   }, []);
 
   const t = testimonials[active];

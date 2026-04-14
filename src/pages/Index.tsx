@@ -21,27 +21,20 @@ const RETRY_DELAY = 800;
 
 
 
-// Check mobile via CSS-based method to avoid forced reflow from window.innerWidth
+// matchMedia doesn't trigger reflow — safe to call during render
 const getIsMobile = () =>
   typeof window !== "undefined"
     ? window.matchMedia("(max-width: 767px)").matches
     : false;
 
+// Compute once at module level to avoid re-renders and ensure correct poster on first paint
+const INITIAL_IS_MOBILE = getIsMobile();
+const INITIAL_SKIP_VIDEO = INITIAL_IS_MOBILE || (typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+
 const Hero = () => {
   const [videoReady, setVideoReady] = useState(false);
-  const isMobileHero = useRef(false);
-  const skipVideo = useRef(false);
-
-  // Compute once in a layout effect (before paint, but after DOM)
-  // to avoid forced reflow during render
-  const [ready, setReady] = useState(false);
-  useEffect(() => {
-    const mobile = getIsMobile();
-    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    isMobileHero.current = mobile;
-    skipVideo.current = reducedMotion || mobile;
-    setReady(true);
-  }, []);
+  const isMobileHero = INITIAL_IS_MOBILE;
+  const skipVideo = INITIAL_SKIP_VIDEO;
 
   const videoRef = useRef<HTMLVideoElement>(null);
   const posterRef = useRef<HTMLImageElement>(null);

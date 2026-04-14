@@ -40,7 +40,7 @@ img {
 /* ── Constrain embedded widgets (RealScout, EmbedSocial, iframes) ── */
 realscout-your-listings,
 realscout-advanced-search,
-.embedsocial-hashtag,
+
 iframe {
   max-width: 100% !important;
   overflow: hidden;
@@ -542,102 +542,6 @@ realscout-simple-search {
   }
 }
 
-/* ── EmbedSocial feed overrides — editorial luxury styling ── */
-
-/* Hide ALL widget chrome: branding, captions, stats, navigation, overlays */
-.instagram-feed-wrapper .feed-powered-by-es,
-.instagram-feed-wrapper .es-widget-branding,
-.instagram-feed-wrapper .es-post-caption,
-.instagram-feed-wrapper .es-post-username,
-.instagram-feed-wrapper .es-post-date,
-.instagram-feed-wrapper .es-post-stats,
-.instagram-feed-wrapper .es-post-likes,
-.instagram-feed-wrapper .es-post-comments,
-.instagram-feed-wrapper .es-header,
-.instagram-feed-wrapper .es-load-more,
-.instagram-feed-wrapper .es-widget-footer,
-.instagram-feed-wrapper [class*="count"],
-.instagram-feed-wrapper [class*="counter"],
-.instagram-feed-wrapper [class*="indicator"],
-.instagram-feed-wrapper [class*="pagination"],
-.instagram-feed-wrapper [class*="arrow"],
-.instagram-feed-wrapper [class*="nav"],
-.instagram-feed-wrapper [class*="dots"],
-.instagram-feed-wrapper [class*="overlay"],
-.instagram-feed-wrapper [class*="caption"],
-.instagram-feed-wrapper [class*="bottom"],
-.instagram-feed-wrapper [class*="footer"],
-.instagram-feed-wrapper [class*="powered"],
-.instagram-feed-wrapper [class*="branding"],
-.instagram-feed-wrapper [class*="badge"] {
-  display: none !important;
-  opacity: 0 !important;
-  visibility: hidden !important;
-  pointer-events: none !important;
-}
-
-/* Strip borders/shadows/backgrounds from post wrappers */
-.instagram-feed-wrapper .es-post,
-.instagram-feed-wrapper .es-post-wrapper,
-.instagram-feed-wrapper [class*="post"],
-.instagram-feed-wrapper [class*="card"],
-.instagram-feed-wrapper [class*="item"] {
-  border: none !important;
-  box-shadow: none !important;
-  border-radius: 0 !important;
-  background: transparent !important;
-  overflow: hidden !important;
-}
-
-/* Increase horizontal spacing between cards — generous editorial gaps */
-.instagram-feed-wrapper [class*="grid"],
-.instagram-feed-wrapper [class*="row"],
-.instagram-feed-wrapper [class*="list"],
-.instagram-feed-wrapper [class*="container"] {
-  gap: 24px !important;
-}
-
-/* Make first post larger for visual hierarchy */
-.instagram-feed-wrapper [class*="post"]:first-child,
-.instagram-feed-wrapper [class*="item"]:first-child,
-.instagram-feed-wrapper [class*="card"]:first-child {
-  grid-column: span 2 !important;
-  grid-row: span 2 !important;
-}
-
-/* Editorial 4:5 aspect ratio for images */
-.instagram-feed-wrapper .es-post img,
-.instagram-feed-wrapper [class*="post"] img,
-.instagram-feed-wrapper [class*="item"] img,
-.instagram-feed-wrapper [class*="card"] img {
-  border-radius: 0 !important;
-  aspect-ratio: 4 / 5 !important;
-  object-fit: cover !important;
-  object-position: center !important;
-  width: 100% !important;
-  height: 100% !important;
-  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.5s ease !important;
-}
-
-/* Subtle hover zoom — restrained and elegant */
-.instagram-feed-wrapper .es-post:hover img,
-.instagram-feed-wrapper [class*="post"]:hover img,
-.instagram-feed-wrapper [class*="item"]:hover img {
-  transform: scale(1.02) !important;
-}
-
-/* Hide any text overlays that sit on top of images */
-.instagram-feed-wrapper [class*="post"] > *:not(img):not(a):not(picture):not(video),
-.instagram-feed-wrapper [class*="item"] > *:not(img):not(a):not(picture):not(video) {
-  display: none !important;
-}
-
-/* Ensure link wrappers around images are clean */
-.instagram-feed-wrapper a {
-  display: block !important;
-  overflow: hidden !important;
-  text-decoration: none !important;
-}
 
 /* ── Community tile hover — image only, ultra-restrained ── */
 .community-tile-img {

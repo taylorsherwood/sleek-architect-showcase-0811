@@ -289,6 +289,7 @@ const Index = () => (
 
     <Navigation />
     <Hero />
+    <div className="h-10 md:h-16 bg-background" aria-hidden="true" />
     <SearchSection />
 
     <Suspense fallback={<div className="min-h-[400px] bg-background" />}>

@@ -8,15 +8,24 @@ const AdvisoryBar = lazy(() => import("@/components/AdvisoryBar"));
 import Index from "@/pages/Index";
 
 // Lazy-load every other route to defer non-critical JS
-const About = lazy(() => import("@/pages/About"));
-const Listings = lazy(() => import("@/pages/Listings"));
-const Buy = lazy(() => import("@/pages/Buy"));
-const Sell = lazy(() => import("@/pages/Sell"));
-const Communities = lazy(() => import("@/pages/Communities"));
-const CommunityPage = lazy(() => import("@/pages/CommunityPage"));
-const Blog = lazy(() => import("@/pages/Blog"));
-const BlogPost = lazy(() => import("@/pages/BlogPost"));
-const Contact = lazy(() => import("@/pages/Contact"));
+const aboutImport = () => import("@/pages/About");
+const About = lazy(aboutImport);
+const listingsImport = () => import("@/pages/Listings");
+const Listings = lazy(listingsImport);
+const buyImport = () => import("@/pages/Buy");
+const Buy = lazy(buyImport);
+const sellImport = () => import("@/pages/Sell");
+const Sell = lazy(sellImport);
+const communitiesImport = () => import("@/pages/Communities");
+const Communities = lazy(communitiesImport);
+const communityPageImport = () => import("@/pages/CommunityPage");
+const CommunityPage = lazy(communityPageImport);
+const blogImport = () => import("@/pages/Blog");
+const Blog = lazy(blogImport);
+const blogPostImport = () => import("@/pages/BlogPost");
+const BlogPost = lazy(blogPostImport);
+const contactImport = () => import("@/pages/Contact");
+const Contact = lazy(contactImport);
 const MovingToAustin = lazy(() => import("@/pages/MovingToAustin"));
 const BestLuxuryNeighborhoods = lazy(() => import("@/pages/BestLuxuryNeighborhoods"));
 const MarketReport = lazy(() => import("@/pages/MarketReport"));
@@ -46,7 +55,8 @@ const AustinLuxuryMarketTrends = lazy(() => import("@/pages/AustinLuxuryMarketTr
 const OffMarketRealEstateAustin = lazy(() => import("@/pages/OffMarketRealEstateAustin"));
 const AustinLandDevelopmentOpportunities = lazy(() => import("@/pages/AustinLandDevelopmentOpportunities"));
 const AustinLuxuryRealEstateMarketReport = lazy(() => import("@/pages/AustinLuxuryRealEstateMarketReport"));
-const Invest = lazy(() => import("@/pages/Invest"));
+const investImport = () => import("@/pages/Invest");
+const Invest = lazy(investImport);
 const Sitemap = lazy(() => import("@/pages/Sitemap"));
 const NotFound = lazy(() => import("@/pages/NotFound"));
 

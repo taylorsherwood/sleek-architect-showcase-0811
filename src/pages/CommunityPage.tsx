@@ -329,7 +329,7 @@ const CommunityPage = () => {
       </article>
 
       {/* Community Guide CTA */}
-      {["westlake-hills", "rollingwood", "rob-roy"].includes(community.slug) && (
+      {["westlake-hills", "rollingwood", "rob-roy", "davenport-ranch"].includes(community.slug) && (
         <div className="container mx-auto px-6 py-8">
           <div className="max-w-4xl mx-auto">
             <CommunityGuideCTA

@@ -51,18 +51,21 @@ const CommercialHeroVideo = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const sectionRef = useRef<HTMLDivElement>(null);
   const hasPlayedOnce = useRef(false);
+  const [useVideo] = useState(() => window.innerWidth >= 768);
 
   // Set playback speed
   useEffect(() => {
+    if (!useVideo) return;
     const video = videoRef.current;
     if (!video) return;
     const onPlay = () => { video.playbackRate = 0.75; };
     video.addEventListener("playing", onPlay);
     return () => video.removeEventListener("playing", onPlay);
-  }, []);
+  }, [useVideo]);
 
   // Re-trigger playback when user scrolls back to top
   useEffect(() => {
+    if (!useVideo) return;
     const section = sectionRef.current;
     const video = videoRef.current;
     if (!section || !video) return;
@@ -78,10 +81,11 @@ const CommercialHeroVideo = () => {
     );
     observer.observe(section);
     return () => observer.disconnect();
-  }, []);
+  }, [useVideo]);
 
   // Mark first play complete when video ends; pause on last frame
   useEffect(() => {
+    if (!useVideo) return;
     const video = videoRef.current;
     if (!video) return;
     const onEnded = () => {
@@ -90,21 +94,30 @@ const CommercialHeroVideo = () => {
     };
     video.addEventListener("ended", onEnded);
     return () => video.removeEventListener("ended", onEnded);
-  }, []);
+  }, [useVideo]);
 
   return (
     <div ref={sectionRef} className="w-full h-full">
-      <video
-        ref={videoRef}
-        autoPlay
-        muted
-        playsInline
-        preload="metadata"
-        poster="/images/commercial-hero-poster.webp"
-        className="w-full h-full object-cover"
-      >
-        <source src="/videos/commercial-hero.mp4" type="video/mp4" />
-      </video>
+      {useVideo ? (
+        <video
+          ref={videoRef}
+          autoPlay
+          muted
+          playsInline
+          preload="metadata"
+          poster="/images/commercial-hero-poster.webp"
+          className="w-full h-full object-cover"
+        >
+          <source src="/videos/commercial-hero.mp4" type="video/mp4" />
+        </video>
+      ) : (
+        <img
+          src="/images/commercial-hero-poster.webp"
+          alt="Austin commercial real estate"
+          className="w-full h-full object-cover"
+          loading="eager"
+        />
+      )}
     </div>
   );
 };

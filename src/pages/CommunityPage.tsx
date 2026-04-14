@@ -1,4 +1,5 @@
 import { lazy, Suspense } from "react";
+import CommunityGuideCTA from "@/components/CommunityGuideCTA";
 import CommunityBoundaryMap from "@/components/CommunityBoundaryMap";
 import { useParams, Link, Navigate } from "react-router-dom";
 import Navigation from "@/components/Navigation";
@@ -491,6 +492,14 @@ const CommunityPage = () => {
                   ))}
                 </div>
               </section>
+            )}
+
+            {/* Community Guide CTA — Westlake Hills */}
+            {community.slug === "westlake-hills" && (
+              <CommunityGuideCTA
+                communityName={community.name}
+                guideUrl="https://app.liveby.com/reports/community-guide/T2c6QdMDzCN4B1?utm_source=unknown&utm_medium=copied-link&utm_campaign=report-share"
+              />
             )}
 
             {/* CTA */}

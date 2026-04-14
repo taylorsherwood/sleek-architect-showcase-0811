@@ -13,9 +13,13 @@ import taylorAboutHeadshot from "@/assets/taylor-about-headshot.jpeg";
 import taylorSignature from "@/assets/taylor-signature.webp";
 import echelonWatermark from "@/assets/echelon-watermark.webp";
 import echelonWatermarkLogo from "@/assets/echelon-watermark-logo.png";
-import blogRollingwoodVsWestlake from "@/assets/blog-rollingwood-vs-westlake.jpg";
-import blogTarrytownVsBrykerWoods from "@/assets/tarrytown-bryker-woods.avif";
-import blogLakeAustinVsLakeTravis from "@/assets/lake-travis-sunset.jpg";
+
+// Blog images use lazy-friendly static paths (not eager imports) to avoid
+// pulling ~836 KB into the initial HomeBelowFold chunk. These are only
+// visible far below the fold in the EditorialInsights section.
+const blogRollingwoodVsWestlake = new URL("@/assets/blog-rollingwood-vs-westlake.jpg", import.meta.url).href;
+const blogTarrytownVsBrykerWoods = new URL("@/assets/tarrytown-bryker-woods.avif", import.meta.url).href;
+const blogLakeAustinVsLakeTravis = new URL("@/assets/lake-travis-sunset.jpg", import.meta.url).href;
 
 const Footer = lazy(() => import("@/components/Footer"));
 

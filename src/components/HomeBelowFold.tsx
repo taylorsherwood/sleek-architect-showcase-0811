@@ -1044,12 +1044,14 @@ const HomeBelowFold = () => (
   <>
     <TrustStrip />
     <div className="h-10 md:h-16 bg-secondary" aria-hidden="true" />
-    <ScrollingCredibilityStrip />
+    <Suspense fallback={<div className="h-24" />}>
+      <ScrollingCredibilityStrip />
+    </Suspense>
     <div className="h-5 md:h-8 bg-background" aria-hidden="true" />
     <AdvisorSection />
     <StatsStrip />
 
-    <div className="parallax-break" style={{ backgroundImage: "url('/images/parallax-skyline.jpg')" }} aria-hidden="true" />
+    <div className="parallax-break" style={{ backgroundImage: "url('/images/parallax-skyline.jpg')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties} aria-hidden="true" />
 
     <FeaturedProperties />
 
@@ -1057,7 +1059,9 @@ const HomeBelowFold = () => (
 
     <CommunitiesSection />
 
-    <ExpertiseSection />
+    <Suspense fallback={<div className="min-h-[200px] bg-background" />}>
+      <ExpertiseSection />
+    </Suspense>
 
     <TestimonialsSection />
     <div className="h-16 md:h-24 bg-secondary flex items-center justify-center" aria-hidden="true">
@@ -1065,15 +1069,17 @@ const HomeBelowFold = () => (
     </div>
     <div className="h-12 md:h-20 bg-secondary" aria-hidden="true" />
 
-    <div className="parallax-break" style={{ backgroundImage: "url('/images/parallax-lakefront.jpg')" }} aria-hidden="true" />
+    <div className="parallax-break" style={{ backgroundImage: "url('/images/parallax-lakefront.jpg')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties} aria-hidden="true" />
 
 
-    <div className="parallax-break" style={{ backgroundImage: "url('/images/parallax-interior.jpg')" }} aria-hidden="true" />
+    <div className="parallax-break" style={{ backgroundImage: "url('/images/parallax-interior.jpg')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties} aria-hidden="true" />
 
     <LeadCapture />
     <InsightsSection />
     <EditorialInsights />
-    <FeaturedCommunities />
+    <Suspense fallback={<div className="min-h-[200px] bg-secondary" />}>
+      <FeaturedCommunities />
+    </Suspense>
     <FinalCTA />
 
     <Suspense fallback={<div className="min-h-[100px]" />}>

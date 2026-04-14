@@ -74,7 +74,11 @@ Homes range from elegant mid-century estates on generous lots to contemporary ma
 
 ### Schools & Exclusivity
 
-The community is anchored by the acclaimed Eanes Independent School District, consistently ranked among Texas's top districts. Limited land availability and strict zoning maintain the exclusivity and low density that residents treasure.`,
+The community is anchored by the acclaimed Eanes Independent School District, consistently ranked among Texas's top districts. Limited land availability and strict zoning maintain the exclusivity and low density that residents treasure.
+
+
+
+`,
     lifestyle: `### Outdoor Recreation
 
 Residents enjoy world-class hiking and biking at the Barton Creek Greenbelt and Wild Basin Wilderness Preserve. Lake Austin is a short drive away, offering boating, paddleboarding, and waterfront dining.

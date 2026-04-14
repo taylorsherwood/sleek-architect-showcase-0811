@@ -52,15 +52,38 @@ const CommercialHeroVideo = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const hasPlayedOnce = useRef(false);
   const [useVideo] = useState(() => window.innerWidth >= 768);
+  const [videoReady, setVideoReady] = useState(false);
 
-  // Set playback speed
+  // Defer video src injection to avoid competing with critical resources
   useEffect(() => {
     if (!useVideo) return;
     const video = videoRef.current;
-    if (!video) return;
-    const onPlay = () => { video.playbackRate = 1; };
-    video.addEventListener("playing", onPlay);
-    return () => video.removeEventListener("playing", onPlay);
+    if (!video || video.src) return;
+
+    const inject = () => {
+      video.muted = true;
+      video.defaultMuted = true;
+      video.src = "/videos/commercial-hero.mp4";
+      video.load();
+
+      const attemptPlay = () => {
+        video.play().then(() => setVideoReady(true)).catch(() => {
+          setTimeout(() => {
+            video.muted = true;
+            video.play()?.then(() => setVideoReady(true)).catch(() => {});
+          }, 800);
+        });
+      };
+
+      if (video.readyState >= 2) attemptPlay();
+      else video.addEventListener("loadeddata", attemptPlay, { once: true });
+    };
+
+    if ("requestIdleCallback" in window) {
+      requestIdleCallback(inject, { timeout: 2000 });
+    } else {
+      setTimeout(inject, 300);
+    }
   }, [useVideo]);
 
   // Re-trigger playback when user scrolls back to top
@@ -97,19 +120,24 @@ const CommercialHeroVideo = () => {
   }, [useVideo]);
 
   return (
-    <div ref={sectionRef} className="w-full h-full">
+    <div ref={sectionRef} className="w-full h-full relative">
       {useVideo ? (
-        <video
-          ref={videoRef}
-          autoPlay
-          muted
-          playsInline
-          preload="metadata"
-          poster="/images/commercial-hero-poster.webp"
-          className="w-full h-full object-cover"
-        >
-          <source src="/videos/commercial-hero.mp4" type="video/mp4" />
-        </video>
+        <>
+          <video
+            ref={videoRef}
+            muted
+            playsInline
+            preload="none"
+            poster="/images/commercial-hero-poster.webp"
+            className={`w-full h-full object-cover transition-opacity duration-700 ${videoReady ? "opacity-100" : "opacity-0"}`}
+          />
+          <img
+            src="/images/commercial-hero-poster.webp"
+            alt=""
+            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${videoReady ? "opacity-0" : "opacity-100"}`}
+            loading="eager"
+          />
+        </>
       ) : (
         <img
           src="/images/mobile-hero-poster.webp"

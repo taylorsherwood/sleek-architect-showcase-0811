@@ -118,7 +118,7 @@ const CommercialHeroVideo = () => {
             autoPlay
             muted
             playsInline
-            preload="auto"
+            preload="metadata"
             poster="/images/commercial-hero-poster.webp"
             className={`w-full h-full object-cover transition-opacity duration-700 ${videoReady ? "opacity-100" : "opacity-0"}`}
           >

@@ -479,9 +479,11 @@ const TestimonialsSection = () => {
     return () => clearInterval(timer);
   }, []);
 
+  // Parallax watermark — disabled on mobile to avoid forced reflow
   useEffect(() => {
+    if (window.matchMedia("(max-width: 767px)").matches) return;
+
     let ticking = false;
-    // Defer innerHeight read to avoid forced reflow during first paint
     let cachedVh = 0;
 
     const updateParallax = () => {
@@ -509,7 +511,6 @@ const TestimonialsSection = () => {
     window.addEventListener("scroll", onScroll, { passive: true });
     window.addEventListener("resize", onResize, { passive: true });
 
-    // Defer initial calculation to avoid forced reflow during render
     const rafId = requestAnimationFrame(() => {
       cachedVh = window.innerHeight;
       requestAnimationFrame(updateParallax);

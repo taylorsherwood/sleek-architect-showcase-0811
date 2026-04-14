@@ -31,10 +31,11 @@ const Hero = () => {
   const [bookingOpen, setBookingOpen] = useState(false);
 
 
-  // Set video source (respects reduced motion)
+  // Set video source (respects reduced motion + skip on mobile to save bandwidth)
   useEffect(() => {
     const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
-    if (motionQuery.matches) {
+    const isMobile = window.innerWidth < 768;
+    if (motionQuery.matches || isMobile) {
       setShowFallback(true);
       return;
     }

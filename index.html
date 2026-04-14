@@ -21,20 +21,12 @@
     <!-- Preload Source Sans 3 (used by RealScout widget) to break critical chain -->
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" crossorigin />
 
-    <!-- Self-hosted fonts (no external requests to fonts.googleapis.com / fonts.gstatic.com) -->
+    <!-- Self-hosted fonts (all fonts now local — no external Google Fonts requests) -->
     <link rel="preload" as="font" type="font/woff2" href="/fonts/raleway-faccb37f.woff2" crossorigin />
     <link rel="preload" as="font" type="font/woff2" href="/fonts/playfair-48d1e9cd.woff2" crossorigin />
-    <link rel="preload" as="style" href="/fonts/fonts.css" onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript><link rel="stylesheet" href="/fonts/fonts.css" /></noscript>
-
-    <!-- Preload hero poster with high priority -->
-    <link rel="preload" as="image" href="/images/hero-poster.webp" type="image/webp" fetchpriority="high" />
-
-    <!-- Google Fonts (Cinzel + Jost) — loaded async to avoid render-blocking -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Jost:wght@300;400;500&display=swap" media="print" onload="this.media='all'" />
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Jost:wght@300;400;500&display=swap" /></noscript>
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/cinzel-latin.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/jost-latin.woff2" crossorigin />
+    <link rel="stylesheet" href="/fonts/fonts.css" />
 
     <!-- Critical inline CSS for above-the-fold rendering -->
     <style>

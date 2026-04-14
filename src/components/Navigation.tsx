@@ -226,7 +226,7 @@ const Navigation = () => {
         <Button
           variant="ghost"
           size="sm"
-          className={`lg:hidden ${isScrolled ? "text-white" : ""}`}
+          className={`lg:hidden ml-auto ${isScrolled ? "text-white" : ""}`}
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? "✕" : "☰"}

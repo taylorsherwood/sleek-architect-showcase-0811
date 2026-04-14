@@ -1,5 +1,5 @@
-import { useState, lazy, Suspense } from "react";
-import { Link } from "react-router-dom";
+import { useState, useEffect, useRef, lazy, Suspense } from "react";
+import { Link, useSearchParams } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 const Footer = lazy(() => import("@/components/Footer"));
 import AboutBlock from "@/components/AboutBlock";

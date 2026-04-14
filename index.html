@@ -27,6 +27,12 @@
     <!-- Preload hero poster with high priority -->
     <link rel="preload" as="image" href="/images/hero-poster.jpg" fetchpriority="high" />
 
+    <!-- Google Fonts (Cinzel + Jost) — loaded async to avoid render-blocking -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" media="print" onload="this.media='all'" />
+
     <!-- Critical inline CSS for above-the-fold rendering -->
     <style>
       body{margin:0;font-family:'Raleway',sans-serif;background:#faf8f5;color:#191d2b;-webkit-font-smoothing:antialiased}
@@ -95,8 +101,11 @@
     </div>
     <script type="module" src="/src/main.tsx"></script>
 
-    <!-- Load RealScout widget script early so it's ready when the element renders -->
-    <script type="module" src="https://em.realscout.com/widgets/realscout-web-components.umd.js"></script>
+    <!-- Load RealScout widget script after page is interactive -->
+    <script>
+      function loadRealScout(){var s=document.createElement('script');s.type='module';s.src='https://em.realscout.com/widgets/realscout-web-components.umd.js';document.body.appendChild(s);}
+      if('requestIdleCallback' in window){requestIdleCallback(loadRealScout,{timeout:5000});}else{window.addEventListener('load',function(){setTimeout(loadRealScout,1500);});}
+    </script>
 
     <!-- Defer analytics & third-party scripts until after page is interactive -->
     <script>

@@ -1,5 +1,5 @@
 /* Warm Luxury Ivory Design System */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Jost:wght@300;400;500&display=swap');
+/* Google Fonts loaded async via index.html — no render-blocking @import */
 
 @tailwind base;
 @tailwind components;

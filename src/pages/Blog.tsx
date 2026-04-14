@@ -15,6 +15,29 @@ const formatDate = (dateStr: string) => {
   return `${m}/${d}/${y}`;
 };
 
+const SoroBlogEmbed = () => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [searchParams] = useSearchParams();
+
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container) return;
+
+    const script = document.createElement("script");
+    let url = "https://app.trysoro.com/api/embed/98591499-ba88-42f4-9755-19d9023e17c7";
+    const post = searchParams.get("post");
+    if (post) url += "?post=" + encodeURIComponent(post);
+    script.src = url;
+    container.appendChild(script);
+
+    return () => {
+      while (container.firstChild) container.removeChild(container.firstChild);
+    };
+  }, [searchParams]);
+
+  return <div id="soro-blog" ref={containerRef} />;
+};
+
 const Blog = () => {
   const [activeCategory, setActiveCategory] = useState("ALL");
   

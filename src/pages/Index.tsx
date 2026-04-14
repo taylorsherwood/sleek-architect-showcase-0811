@@ -51,7 +51,7 @@ const Hero = () => {
 
   // Inject video src only after LCP poster image has loaded
   useEffect(() => {
-    if (skipVideo) return;
+    if (!ready || skipVideo.current) return;
 
     const injectVideoSrc = () => {
       const video = videoRef.current;
@@ -98,7 +98,7 @@ const Hero = () => {
         setTimeout(injectVideoSrc, 200);
       }
     }
-  }, [skipVideo]);
+  }, [ready]);
 
   // Re-trigger text animation on visibility
   useEffect(() => {

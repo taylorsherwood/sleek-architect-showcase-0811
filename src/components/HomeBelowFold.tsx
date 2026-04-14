@@ -8,10 +8,10 @@ const ExpertiseSection = lazy(() => import("@/components/ExpertiseSection"));
 const FeaturedCommunities = lazy(() => import("@/components/FeaturedCommunities"));
 
 // Dynamic image imports — only loaded when this chunk is loaded
-import taylorBoatImg from "@/assets/taylor-headshot.jpeg";
+import taylorBoatImg from "@/assets/taylor-headshot.webp";
 import taylorAboutHeadshot from "@/assets/taylor-about-headshot.jpeg";
-import taylorSignature from "@/assets/taylor-signature.png";
-import echelonWatermark from "@/assets/echelon-watermark.png";
+import taylorSignature from "@/assets/taylor-signature.webp";
+import echelonWatermark from "@/assets/echelon-watermark.webp";
 import echelonWatermarkLogo from "@/assets/echelon-watermark-logo.png";
 import blogRollingwoodVsWestlake from "@/assets/blog-rollingwood-vs-westlake.jpg";
 import blogTarrytownVsBrykerWoods from "@/assets/tarrytown-bryker-woods.avif";

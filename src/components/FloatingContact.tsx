@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import { X, Phone, Mail } from "lucide-react";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
-import taylorHeadshot from "@/assets/taylor-headshot-widget.jpeg";
+import taylorHeadshot from "@/assets/taylor-headshot-widget.webp";
 
 const HEADSHOT = taylorHeadshot;
 const HEADSHOT_LAUNCHER = taylorHeadshot;

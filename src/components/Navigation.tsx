@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
-import logo from "@/assets/echelon-header-logo.png";
+import logo from "@/assets/echelon-header-logo.webp";
 
 interface NavLink {
   href: string;

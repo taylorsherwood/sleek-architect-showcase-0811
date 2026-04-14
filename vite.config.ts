@@ -209,8 +209,12 @@ function asyncCssPlugin(): Plugin {
     name: "async-css",
     enforce: "post",
     transformIndexHtml(html) {
-      // no-op: let Vite's CSS load synchronously
-      return html;
+      // Convert render-blocking CSS <link> to async loading.
+      // Critical CSS is inlined in index.html so this is safe.
+      return html.replace(
+        /<link rel="stylesheet" crossorigin href="(\/assets\/[^"]+\.css)">/g,
+        '<link rel="stylesheet" href="$1" media="print" onload="this.media=\'all\'" crossorigin><noscript><link rel="stylesheet" href="$1" crossorigin></noscript>'
+      );
     },
   };
 }

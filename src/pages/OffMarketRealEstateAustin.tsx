@@ -344,7 +344,7 @@ const OffMarketRealEstateAustin = () => {
               { title: "Less Competition", body: "Fewer buyers know about the opportunity, giving you stronger positioning and more room to negotiate." },
               { title: "Better Terms", body: "Flexible deal structures, creative financing, and the ability to negotiate beyond standard MLS contracts." },
               { title: "Hidden Inventory", body: "Access properties that never appear on Zillow, Realtor.com, or the Austin MLS, homes that trade exclusively through private channels discreetly." },
-              { title: "Relationship-Driven Access", body: "The best off-market homes in Austin move through trusted agent networks and direct seller relationships — not search algorithms." },
+              { title: "Relationship-Driven Access", body: "The best off-market homes in Austin move through trusted agent networks and direct seller relationships, not search algorithms." },
             ].map((item) => (
               <div key={item.title} className="group border-2 border-white/10 p-6 md:p-8 hover:border-[hsl(var(--gold))] hover:scale-[1.03] transition-all duration-500">
                 <h3 className="text-white group-hover:text-[hsl(var(--gold))] font-medium text-base mb-2 transition-colors duration-500">{item.title}</h3>

@@ -305,9 +305,9 @@ const OffMarketRealEstateAustin = () => {
           </h2>
           <div className="grid md:grid-cols-3 gap-10 md:gap-8">
             {[
-              { step: "01", title: "Submit Your Criteria", body: "Tell us what you're looking for — property type, budget, timeline, and preferred neighborhoods across Austin." },
+              { step: "01", title: "Submit Your Criteria", body: "Tell us what you're looking for: property type, budget, timeline, and preferred neighborhoods across Austin." },
               { step: "02", title: "We Source Opportunities", body: "We tap our private network of sellers, developers, and investors to match you with off-market properties that fit." },
-              { step: "03", title: "Early & Exclusive Access", body: "You see opportunities before they hit the public market — with expert advisory and deal structuring support." },
+              { step: "03", title: "Early & Exclusive Access", body: "You see opportunities before they hit the public market, with expert advisory and deal structuring support." },
             ].map((item) => (
               <div key={item.step} className="group text-center md:text-left">
                 <span className="text-[hsl(var(--gold))] font-display text-4xl font-light inline-block transition-transform duration-500 ease-out group-hover:scale-125">{item.step}</span>

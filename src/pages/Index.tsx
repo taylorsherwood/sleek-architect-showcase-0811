@@ -119,7 +119,7 @@ const Hero = () => {
         <img
           src={posterSrc}
           alt="Austin Texas skyline"
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover md:hidden"
           style={{ zIndex: 0 }}
           loading="eager"
           fetchPriority="high"

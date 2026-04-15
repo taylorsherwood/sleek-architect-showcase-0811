@@ -165,10 +165,11 @@ const BlogPost = () => {
                       } else if (line.startsWith('**') && line.endsWith('**')) {
                         return `<p class="mb-4"><strong class="text-foreground">${line.substring(2, line.length - 2)}</strong></p>`;
                       } else {
-                        return `<p class="mb-4">${line.replace(/\*\*(.*?)\*\*/g, '<strong class="text-foreground">$1</strong>')}</p>`;
+                    return `<p class="mb-4">${line.replace(/\*\*(.*?)\*\*/g, '<strong class="text-foreground">$1</strong>')}</p>`;
                       }
                     })
                     .join('')
+                    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-foreground underline underline-offset-4 decoration-accent-gold/40 hover:decoration-accent-gold transition-colors duration-300">$1</a>')
                 }}
               />
             </div>

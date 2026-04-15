@@ -232,7 +232,7 @@ const OffMarketRealEstateAustin = () => {
                 These properties are not available on Zillow, Realtor.com, or the MLS.
               </p>
               <p className="text-white/50 text-sm sm:text-base font-light leading-relaxed mb-8 max-w-lg">
-                Many of Austin's most desirable homes never hit the public market. They trade quietly — through trusted relationships, private networks, and off-market channels that most buyers never see.
+                Many of Austin's most desirable homes never hit the public market. They trade quietly, through trusted relationships, private networks, and off-market channels that most buyers never see.
               </p>
               <ul className="space-y-4 mb-10">
                 {[

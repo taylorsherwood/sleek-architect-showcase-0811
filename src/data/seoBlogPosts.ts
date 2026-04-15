@@ -1505,7 +1505,7 @@ Yes. Steiner Ranch is one of Austin's most family-oriented communities, with poo
     id: "austin-luxury-real-estate-market-outlook",
     title: "Austin Luxury Real Estate Market Outlook",
     metaTitle: "Austin Luxury Real Estate Market Outlook | Echelon Property Group",
-    excerpt: "A strategic look at the Austin luxury real estate market — micro-market dynamics, private inventory, buyer priorities, and what drives pricing power at the top end.",
+    excerpt: "A strategic look at the austin luxury real estate market, from pricing power and private inventory to micro-markets shaping buyer and seller decisions.",
     content: `A $3 million home in Austin does not trade for the same reasons it did three years ago. Today, buyers are more selective, sellers are being judged against sharper standards, and the spread between a well-positioned asset and an average luxury listing can be significant. That is what makes the [austin luxury real estate market](/austin-luxury-homes-for-sale) more strategic than headline-driven.
 
 At the top end, broad city averages rarely tell the full story. Luxury activity in Austin is shaped by micro-markets, school alignment, lot quality, architecture, privacy, and whether a property feels replaceable or genuinely scarce. For executives relocating from coastal markets, founders after a liquidity event, and investors looking for durable value, the real opportunity is in understanding what actually commands attention when price sensitivity becomes more nuanced.

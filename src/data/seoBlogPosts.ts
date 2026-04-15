@@ -8,6 +8,7 @@ import listing2 from "@/assets/listing-2.jpg";
 import listing1 from "@/assets/listing-1.jpg";
 import blogInvestmentNeighborhoods from "@/assets/blog-investment-neighborhoods.webp";
 import blogLuxuryNeighborhoods from "@/assets/blog-luxury-neighborhoods.webp";
+import blogBartonCreekAerial from "@/assets/blog-barton-creek-aerial.webp";
 import blogRollingwoodVsWestlake from "@/assets/blog-rollingwood-vs-westlake.jpg";
 import robRoyImg from "@/assets/communities/rob-roy.png";
 import steinerRanchImg from "@/assets/communities/steiner-ranch.webp";
@@ -1251,7 +1252,7 @@ Typical buyers include corporate executives, entrepreneurs, and high-net-worth f
     date: "2026-04-08",
     readTime: "7 min read",
     category: "NEIGHBORHOODS",
-    image: heroLuxury
+    image: blogBartonCreekAerial
   },
   {
     id: "bee-cave-vs-lakeway-luxury-buyers",

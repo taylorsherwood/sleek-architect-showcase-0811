@@ -7,6 +7,7 @@ import communityLake from "@/assets/community-lake-austin.jpg";
 import listing2 from "@/assets/listing-2.jpg";
 import listing1 from "@/assets/listing-1.jpg";
 import blogInvestmentNeighborhoods from "@/assets/blog-investment-neighborhoods.webp";
+import blogLuxuryNeighborhoods from "@/assets/blog-luxury-neighborhoods.webp";
 import blogRollingwoodVsWestlake from "@/assets/blog-rollingwood-vs-westlake.jpg";
 import robRoyImg from "@/assets/communities/rob-roy.png";
 import steinerRanchImg from "@/assets/communities/steiner-ranch.webp";
@@ -122,7 +123,7 @@ Understanding each neighborhood's character is only part of the equation. For bu
     date: "2025-03-01",
     readTime: "12 min read",
     category: "LUXURY LIVING",
-    image: heroLuxury
+    image: blogLuxuryNeighborhoods
   },
   {
     id: "moving-to-austin-texas-from-california",

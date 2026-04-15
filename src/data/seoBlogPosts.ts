@@ -6,6 +6,7 @@ import heroArch from "@/assets/hero-architecture.jpg";
 import communityLake from "@/assets/community-lake-austin.jpg";
 import listing2 from "@/assets/listing-2.jpg";
 import listing1 from "@/assets/listing-1.jpg";
+import blogInvestmentNeighborhoods from "@/assets/blog-investment-neighborhoods.webp";
 import blogRollingwoodVsWestlake from "@/assets/blog-rollingwood-vs-westlake.jpg";
 import robRoyImg from "@/assets/communities/rob-roy.png";
 import steinerRanchImg from "@/assets/communities/steiner-ranch.webp";
@@ -743,7 +744,7 @@ Off-market deals are accessed through established relationships with local speci
     date: "2025-01-05",
     readTime: "15 min read",
     category: "INVESTMENT",
-    image: listing1
+    image: blogInvestmentNeighborhoods
   },
   {
     id: "moving-to-austin-texas-complete-relocation-guide",

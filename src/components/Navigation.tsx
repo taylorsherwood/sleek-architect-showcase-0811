@@ -59,7 +59,7 @@ const Navigation = () => {
         className="absolute inset-0"
         style={{ background: "#f6f4f0" }}
       />
-      <div className="relative container mx-auto px-2 md:px-6 h-full flex items-center justify-start md:justify-between">
+      <div className="relative container mx-auto px-2 md:px-6 h-full flex items-center justify-start">
         <Link to="/" onClick={() => { if (location.pathname === '/') window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="flex items-center shrink-0 overflow-visible -ml-8 md:ml-0" style={{ height: '100%' }}>
           <img
             src={logo}
@@ -76,7 +76,7 @@ const Navigation = () => {
         </Link>
 
         {/* Desktop nav links */}
-        <div className="hidden lg:flex items-center space-x-5 xl:space-x-9 ml-6 xl:ml-10">
+        <div className="hidden lg:flex items-center space-x-4 xl:space-x-6 ml-2 xl:ml-4">
           {links.map((link) =>
             link.children ? (
               <div

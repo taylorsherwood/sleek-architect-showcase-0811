@@ -59,8 +59,8 @@ const Navigation = () => {
         className="absolute inset-0"
         style={{ background: "#f6f4f0" }}
       />
-      <div className="relative container mx-auto px-2 md:px-6 h-full flex items-center justify-start">
-        <Link to="/" onClick={() => { if (location.pathname === '/') window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="flex items-center shrink-0 overflow-visible -ml-8 md:ml-0" style={{ height: '100%' }}>
+      <div className="relative container mx-auto px-2 md:px-6 h-full flex items-center justify-center lg:justify-start">
+        <Link to="/" onClick={() => { if (location.pathname === '/') window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="flex items-center shrink-0 overflow-visible ml-0" style={{ height: '100%' }}>
           <img
             src={logo}
             alt="Echelon Property Group"
@@ -180,7 +180,7 @@ const Navigation = () => {
         <Button
           variant="ghost"
           size="sm"
-          className="lg:hidden ml-auto"
+          className="lg:hidden absolute right-2 md:right-6"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? "✕" : "☰"}

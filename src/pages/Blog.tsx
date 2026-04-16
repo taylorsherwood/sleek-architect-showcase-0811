@@ -15,28 +15,6 @@ const formatDate = (dateStr: string) => {
   return `${m}/${d}/${y}`;
 };
 
-const SoroBlogEmbed = () => {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const [searchParams] = useSearchParams();
-
-  useEffect(() => {
-    const container = containerRef.current;
-    if (!container) return;
-
-    const script = document.createElement("script");
-    let url = "https://app.trysoro.com/api/embed/98591499-ba88-42f4-9755-19d9023e17c7";
-    const post = searchParams.get("post");
-    if (post) url += "?post=" + encodeURIComponent(post);
-    script.src = url;
-    container.appendChild(script);
-
-    return () => {
-      while (container.firstChild) container.removeChild(container.firstChild);
-    };
-  }, [searchParams]);
-
-  return <div id="soro-blog" ref={containerRef} />;
-};
 
 const Blog = () => {
   const [activeCategory, setActiveCategory] = useState("ALL");
@@ -170,18 +148,6 @@ const Blog = () => {
         </div>
       </section>
 
-      {/* Soro Blog Embed */}
-      <section className="pb-32 bg-background">
-        <div className="container mx-auto px-6">
-          <div className="max-w-7xl mx-auto">
-            <p className="text-xs tracking-[0.2em] uppercase text-gold mb-4">Latest from the Blog</p>
-            <h2 className="text-2xl sm:text-4xl md:text-5xl font-display font-normal text-architectural mb-12">
-              Recent Articles
-            </h2>
-            <SoroBlogEmbed />
-          </div>
-        </div>
-      </section>
 
       {/* ── SEO Content: Blog Overview ── */}
       <section className="py-28 bg-secondary">

@@ -912,12 +912,12 @@ const FinalCTA = () => (
                   </div>
                 )}
                 <div className="px-8 text-center group/col transition-opacity duration-300 hover:opacity-100" style={{ opacity: 0.88 }}>
-                  <h4
+                  <h3
                     className="text-foreground/70 mb-4"
                     style={{ fontFamily: '"Jost", sans-serif', fontSize: "9.5px", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 600 }}
                   >
                     {group.heading}
-                  </h4>
+                  </h3>
                   <div className="space-y-1">
                     {group.links.map((link) => (
                       <Link
@@ -938,12 +938,12 @@ const FinalCTA = () => (
           <div className="sm:hidden space-y-8">
             {linkGroups.map((group) => (
               <div key={group.heading} className="text-center">
-                <h4
+                <h3
                   className="text-foreground/70 mb-3"
                   style={{ fontFamily: '"Jost", sans-serif', fontSize: "9.5px", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 600 }}
                 >
                   {group.heading}
-                </h4>
+                </h3>
                 <div className="space-y-1.5">
                   {group.links.map((link) => (
                     <Link

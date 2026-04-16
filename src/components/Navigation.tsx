@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 const logo = "/images/echelon-logo.png";
+const logoMobile = "/images/echelon-logo-mobile.png";
 
 interface NavLink {
   href: string;
@@ -61,15 +62,28 @@ const Navigation = () => {
       />
       <div className="relative container mx-auto px-2 md:px-6 h-full flex items-center justify-center lg:justify-start">
         <Link to="/" onClick={() => { if (location.pathname === '/') window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="flex items-center shrink-0 overflow-visible ml-0" style={{ height: '100%' }}>
+          {/* Mobile logo */}
+          <img
+            src={logoMobile}
+            alt="Echelon Property Group"
+            title="Echelon Property Group — Austin Luxury Real Estate"
+            className="lg:hidden w-auto max-w-none border-0 shrink-0 object-contain"
+            style={{ height: '60%', maxHeight: '60%', display: 'block' }}
+            loading="eager"
+            decoding="async"
+            fetchPriority="high"
+            width={400}
+            height={218}
+          />
+          {/* Desktop logo */}
           <img
             src={logo}
             alt="Echelon Property Group"
             title="Echelon Property Group — Austin Luxury Real Estate"
-            className="w-auto max-w-none border-0 shrink-0 object-contain -translate-x-1.5 md:translate-x-0"
+            className="hidden lg:block w-auto max-w-none border-0 shrink-0 object-contain -translate-x-1.5 md:translate-x-0"
             style={{ height: '125%', maxHeight: '125%', aspectRatio: '200 / 80', display: 'block' }}
             loading="eager"
             decoding="async"
-            fetchPriority="high"
             width={200}
             height={80}
           />

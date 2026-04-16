@@ -152,7 +152,7 @@ const BlogPost = () => {
               content={post.content}
               afterGlance={
                 BLOG_BOUNDARY_MAPS[post.id] ? (
-                  <div className="-mx-6 md:mx-0 my-12">
+                  <div className="-mx-6 md:mx-0 mt-4 mb-12">
                     <CommunityBoundaryMap
                       imageSrc={`/images/communities/${BLOG_BOUNDARY_MAPS[post.id].slug}-boundary.webp`}
                       communityName={BLOG_BOUNDARY_MAPS[post.id].name}

@@ -50,6 +50,7 @@ const neighborhoodInsights: Record<string, { title: string; description: string;
   ],
   "steiner-ranch": [
     { title: "Steiner Ranch: Family Living with Lake Austin Views", description: "A comprehensive guide to Austin's most amenity-rich master-planned community.", href: "/blog/steiner-ranch-lake-austin-family-living" },
+    { title: "Best Neighborhoods Near Bee Cave", description: "Where Steiner Ranch sits within the Hill Country corridor west of Austin.", href: "/blog/best-neighborhoods-near-bee-cave" },
     { title: "Top Investment Neighborhoods in Austin", description: "Master-planned communities in Austin's luxury landscape.", href: "/blog/top-investment-neighborhoods-austin" },
   ],
   "lakeway": [
@@ -77,6 +78,7 @@ const neighborhoodInsights: Record<string, { title: string; description: string;
     { title: "Best Luxury Neighborhoods in Austin", description: "Central Austin's most walkable neighborhoods and what makes them unique.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
   ],
   "spanish-oaks": [
+    { title: "Best Neighborhoods Near Bee Cave", description: "How Spanish Oaks compares to other gated Hill Country communities west of Austin.", href: "/blog/best-neighborhoods-near-bee-cave" },
     { title: "Best Luxury Neighborhoods in Austin", description: "Where Spanish Oaks fits within Austin's gated luxury communities.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
     { title: "Top Investment Neighborhoods in Austin", description: "Hill Country estate communities and their long-term value trajectory.", href: "/blog/top-investment-neighborhoods-austin" },
   ],
@@ -90,6 +92,7 @@ const neighborhoodInsights: Record<string, { title: string; description: string;
   ],
   "lake-travis": [
     { title: "Lake Austin vs Lake Travis", description: "Waterfront lifestyles compared — proximity, pricing, and daily experience.", href: "/blog/lake-austin-vs-lake-travis" },
+    { title: "Best Neighborhoods Near Bee Cave", description: "How Lake Travis-area communities compare across the Hill Country corridor.", href: "/blog/best-neighborhoods-near-bee-cave" },
     { title: "Best Waterfront Homes in Austin", description: "A comprehensive look at Austin's lakefront market and what drives value.", href: "/blog/best-waterfront-homes-austin" },
   ],
   "mueller": [

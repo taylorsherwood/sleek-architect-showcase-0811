@@ -39,7 +39,7 @@ interface BlogContentProps {
  *
  *   :::cta
  *   heading: Get a clear read on where to focus
- *   button: Request Private Guidance
+ *   button: Request Area Guide
  *   href: /contact
  *   :::
  *
@@ -194,7 +194,7 @@ const SoftCTA = ({ body }: { body: string }) => {
   const get = (key: string) =>
     lines.find((l) => l.toLowerCase().startsWith(`${key}:`))?.split(":").slice(1).join(":").trim() || "";
   const heading = get("heading") || "Get a clear read on where to focus";
-  const buttonLabel = get("button") || "Request Private Guidance";
+  const buttonLabel = get("button") || "Request Area Guide";
   const href = get("href") || "/contact";
   return (
     <div className="my-14 py-10 px-6 md:px-10 border-t border-b border-foreground/15 text-center">

@@ -16,6 +16,7 @@ import blogPembertonHeights from "@/assets/pemberton-heights.avif";
 import blogBeeCaveVsLakeway from "@/assets/bee-cave-vs-lakeway.jpg";
 import blogMarketOutlook from "@/assets/blog-market-outlook.webp";
 import blogOffMarketPrivacy from "@/assets/blog-off-market-privacy.webp";
+import blogBeeCaveHero from "@/assets/bee-cave-hero.webp";
 
 import { BlogPost } from "./blogPosts";
 

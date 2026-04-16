@@ -632,6 +632,7 @@ const CommunitiesSection = () => (
                 <img src={c.image} alt={`Luxury homes in ${c.name}, Austin`}
                   className="community-tile-img absolute inset-0 w-full h-full object-cover transition-transform duration-[800ms]"
                   style={{ transitionTimingFunction: "cubic-bezier(0.25, 0.46, 0.45, 0.94)" }}
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   loading="lazy" decoding="async" />
 
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 sm:from-foreground/65 via-foreground/20 sm:via-foreground/15 via-[45%] to-transparent transition-opacity duration-500 group-hover:opacity-0" />

@@ -1404,7 +1404,7 @@ Both communities have shown strong appreciation. Lakeway waterfront properties t
     id: "best-neighborhoods-near-bee-cave",
     title: "Best Neighborhoods Near Bee Cave",
     metaTitle: "Best Neighborhoods Near Bee Cave Austin (2026 Guide)",
-    excerpt: "An insider's guide to the neighborhoods surrounding Bee Cave — from Lakeway and Spanish Oaks to Steiner Ranch and Lake Travis — and how to choose the right fit.",
+    excerpt: "An insider's guide to the neighborhoods surrounding Bee Cave, from Lakeway and Spanish Oaks to Steiner Ranch and Lake Travis, and how to choose the right fit.",
     content: `## Best Neighborhoods Near Bee Cave for Buyers Who Want Space, Privacy, and Access
 
 Most people start their search in [Bee Cave](/communities/bee-cave) and assume that's the move.

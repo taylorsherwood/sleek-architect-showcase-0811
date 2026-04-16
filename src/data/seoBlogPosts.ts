@@ -1578,5 +1578,17 @@ For anyone making a move at the top of the market, the real edge is not speed fo
     readTime: "10 min read",
     category: "MARKET INSIGHTS",
     image: blogMarketOutlook
+  },
+  {
+    id: "private-listings-austin-buyers-actually-want",
+    title: "Private Listings Austin Buyers Actually Want",
+    excerpt: "Private listings Austin buyers want rarely appear publicly. Learn how off-market access works, who benefits most, and where strategy matters most.",
+    content: "",
+    author: "Taylor Sherwood",
+    date: "2026-04-16",
+    readTime: "6 min read",
+    category: "LUXURY LIVING",
+    image: "/images/blog/private-listings-austin-buyers.webp",
+    href: "/blog?post=private-listings-austin-buyers-actually-want"
   }
 ];

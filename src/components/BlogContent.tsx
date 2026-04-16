@@ -1,8 +1,11 @@
+import type { ReactNode } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 interface BlogContentProps {
   content: string;
+  /** Optional element rendered immediately after the first :::glance block. */
+  afterGlance?: ReactNode;
 }
 
 /**

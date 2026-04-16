@@ -42,9 +42,9 @@ const BlogPost = () => {
     );
   }
 
-  // Extract FAQs from content — only from "Frequently Asked Questions" section
-  const faqs: { question: string; answer: string }[] = [];
-  if (post.content.includes("Frequently Asked Questions")) {
+  // Extract FAQs — prefer new :::faq block, fall back to legacy "Frequently Asked Questions" markdown section
+  let faqs: { question: string; answer: string }[] = extractFAQsFromContent(post.content);
+  if (faqs.length === 0 && post.content.includes("Frequently Asked Questions")) {
     const faqContent = post.content.split("Frequently Asked Questions")[1] || "";
     const faqItems = faqContent.match(/### (.+?)\n([\s\S]+?)(?=\n###|$)/g);
     if (faqItems) {
@@ -52,7 +52,6 @@ const BlogPost = () => {
         const lines = item.trim().split('\n');
         const question = lines[0].replace('### ', '').trim();
         const answer = lines.slice(1).join(' ').replace(/\s+/g, ' ').trim();
-        // Only include if answer is substantive (20+ chars)
         if (question && answer && answer.length >= 20) {
           faqs.push({ question, answer });
         }

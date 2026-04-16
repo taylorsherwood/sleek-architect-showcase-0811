@@ -135,7 +135,7 @@ const Blog = () => {
                       </p>
                       
                       <div className="pt-4">
-                        <span className="text-minimal text-foreground hover:text-muted-foreground transition-colors duration-300 relative group-hover:underline">
+                        <span className="text-minimal text-foreground group-hover:text-gold group-hover:underline underline-offset-4 transition-colors duration-300">
                           READ MORE
                         </span>
                       </div>

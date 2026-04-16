@@ -50,7 +50,7 @@ const Hero = () => {
     }
   }, [skipVideo]);
 
-  const posterSrc = isMobileHero ? "/images/mobile-hero-poster.webp" : "/images/hero-poster.webp";
+  const posterSrc = isMobileHero ? "/images/hero-mobile-austin.webp" : "/images/hero-poster.webp";
 
   return (
     <section ref={sectionRef} id="hero-section" className="relative h-screen flex items-center overflow-hidden bg-[hsl(var(--black-soft))]">

@@ -44,6 +44,7 @@ const neighborhoodInsights: Record<string, { title: string; description: string;
     { title: "Best Luxury Neighborhoods in Austin", description: "Rob Roy's position among Austin's most exclusive addresses.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
   ],
   "bee-cave": [
+    { title: "Best Neighborhoods Near Bee Cave", description: "An insider's guide to the communities surrounding Bee Cave — Lakeway, Spanish Oaks, Steiner Ranch, and more.", href: "/blog/best-neighborhoods-near-bee-cave" },
     { title: "Bee Cave vs Lakeway for Luxury Buyers", description: "A side-by-side comparison of two premier Hill Country communities.", href: "/blog/bee-cave-vs-lakeway-luxury-buyers" },
     { title: "Top Investment Neighborhoods in Austin", description: "Bee Cave's growth trajectory and Lake Travis ISD premium.", href: "/blog/top-investment-neighborhoods-austin" },
   ],
@@ -54,6 +55,7 @@ const neighborhoodInsights: Record<string, { title: string; description: string;
   "lakeway": [
     { title: "A Guide to Lakeway: Waterfront and Golf Course Living", description: "Everything buyers need to know about Lake Travis waterfront estates and resort-caliber living.", href: "/blog/guide-to-lakeway-waterfront-golf-living" },
     { title: "Bee Cave vs Lakeway for Luxury Buyers", description: "How Lakeway compares to its nearest Hill Country neighbor.", href: "/blog/bee-cave-vs-lakeway-luxury-buyers" },
+    { title: "Best Neighborhoods Near Bee Cave", description: "How Lakeway fits into Austin's broader Hill Country corridor.", href: "/blog/best-neighborhoods-near-bee-cave" },
   ],
   "travis-heights": [
     { title: "Top Investment Neighborhoods in Austin", description: "Travis Heights' walkability and SoCo proximity make it a top investment play.", href: "/blog/top-investment-neighborhoods-austin" },

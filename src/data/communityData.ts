@@ -1218,7 +1218,19 @@ A significant portion of Lake Austin properties trade quietly. Some of the most 
 ### Redevelopment Opportunities
 
 Because of limited waterfront inventory, many buyers prioritize lot quality and location over structure — with tear-downs and redevelopment opportunities being common at the high end.`,
-    relatedCommunities: ["westlake-hills", "tarrytown", "downtown-austin", "rollingwood"],
+    echelonPerspective: `Lake Austin is the rarest waterfront tier in the Austin, Texas market — a constant-level reservoir running through the heart of the city's most established residential corridor. The buyer profile is narrow and consistent: relocating tech and finance executives from California, New York, and the Pacific Northwest who treat the waterfront as a primary residence rather than a second home, alongside a smaller cohort of established Austin families upgrading from [Tarrytown](/communities/tarrytown), [Westlake Hills](/communities/westlake-hills), or [Pemberton Heights](/communities/pemberton-heights). Pricing tiers are well-defined: non-waterfront proximity homes trade between $1.5M and $3M, entry-level waterfront sits between $2.5M and $5M, and prime waterfront with deep-water docks and unobstructed frontage commands $5M to $15M+, with trophy estates clearing $15M. What sets Lake Austin apart from [Lake Travis](/communities/lake-travis) is the combination of constant water level, year-round dockability, and proximity — most homes are 10 to 15 minutes from downtown, a logistical reality that no other Texas waterfront market can replicate. A meaningful share of inventory trades privately; access here is a function of relationships rather than search filters.`,
+    communityComparison: `### Lake Austin vs Lake Travis
+
+[Lake Travis](/communities/lake-travis) sits roughly 25 miles upriver and offers a more resort-oriented waterfront lifestyle — larger lots, deeper coves, and significantly lower price-per-acre, but with seasonal water-level fluctuations that affect dock usability in drought years. Lake Austin's constant level, downtown proximity, and Eanes / Austin ISD zoning command a substantial premium. Buyers who prioritize daily commute, urban convenience, and year-round water access choose Lake Austin; those who prioritize space, value, and a Hill Country resort feel often choose Lake Travis or [Lakeway](/communities/lakeway).
+
+### Lake Austin vs Westlake Hills
+
+[Westlake Hills](/communities/westlake-hills) shares the Eanes ISD school zone but sits on the bluffs above the lake rather than at the water. Westlake offers more inventory, more architectural variety, and Hill Country views without the dock-and-boathouse maintenance profile of waterfront ownership. Lake Austin trades that breadth for direct water access, which carries an irreplaceable lifestyle and value premium.
+
+### Lake Austin vs Rob Roy / Davenport Ranch
+
+[Rob Roy](/communities/rob-roy) and [Davenport Ranch](/communities/davenport-ranch) are the gated luxury enclaves above the Lake Austin corridor. Both offer privacy, large lots, and Eanes ISD without waterfront access. Buyers often weigh gated security and view lots in Rob Roy or Davenport Ranch against the lifestyle and rarity of true Lake Austin frontage — the decision usually comes down to whether the buyer wants the water itself or the views above it.`,
+    relatedCommunities: ["westlake-hills", "rob-roy", "davenport-ranch", "lake-travis"],
     faqs: [
       { question: "What makes Lake Austin different from Lake Travis?", answer: "Lake Austin maintains a constant water level year-round, unlike Lake Travis which can fluctuate significantly. This makes Lake Austin ideal for private docks, boathouses, and consistent waterfront living. It's also significantly closer to downtown Austin." },
       { question: "How much do Lake Austin waterfront homes cost?", answer: "Entry-level waterfront homes start around $2.5M–$5M. Prime waterfront estates range from $5M–$15M+, with trophy properties exceeding $15M. Non-waterfront homes nearby typically range from $1.5M–$3M." },

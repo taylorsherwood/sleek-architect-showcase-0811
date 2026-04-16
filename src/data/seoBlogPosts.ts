@@ -1589,6 +1589,6 @@ For anyone making a move at the top of the market, the real edge is not speed fo
     readTime: "6 min read",
     category: "LUXURY LIVING",
     image: "/images/blog/private-listings-austin-buyers.webp",
-    href: "/blog?post=private-listings-austin-buyers-actually-want"
+    href: "/blog/private-listings-austin-buyers-actually-want"
   }
 ];

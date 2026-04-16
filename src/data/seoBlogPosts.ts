@@ -1397,10 +1397,23 @@ Both communities have shown strong appreciation. Lakeway waterfront properties t
     date: "2026-04-07",
     readTime: "7 min read",
     category: "NEIGHBORHOODS",
-    image: blogBeeCaveVsLakeway
   },
   {
-    id: "what-makes-pemberton-heights-desirable",
+    id: "best-neighborhoods-near-bee-cave",
+    title: "Best Neighborhoods Near Bee Cave",
+    metaTitle: "Best Neighborhoods Near Bee Cave Austin | Echelon Property Group",
+    excerpt: "An insider's guide to the neighborhoods surrounding Bee Cave — from Lakeway and Spanish Oaks to Steiner Ranch and Lake Travis — and how to choose the right fit.",
+    content: `## Best Neighborhoods Near Bee Cave
+
+_Editorial draft in progress — full guide coming soon._
+
+For buyers exploring the area, see our active community guides for [Bee Cave](/communities/bee-cave), [Lakeway](/communities/lakeway), [Spanish Oaks](/communities/spanish-oaks), [Steiner Ranch](/communities/steiner-ranch), [Lake Travis](/communities/lake-travis), and [Westlake Hills](/communities/westlake-hills).`,
+    author: "Taylor Sherwood",
+    date: "2026-04-16",
+    readTime: "6 min read",
+    category: "NEIGHBORHOODS",
+    image: blogBeeCaveVsLakeway
+  },
     title: "What Makes Pemberton Heights So Desirable?",
     metaTitle: "Pemberton Heights Austin — Why Buyers Love This Neighborhood | Echelon Property Group",
     excerpt: "Explore what makes Pemberton Heights one of Austin's most prestigious neighborhoods — from its distinguished architecture and half-acre lots to walk-to-downtown convenience.",

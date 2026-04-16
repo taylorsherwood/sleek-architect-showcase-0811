@@ -1095,7 +1095,7 @@ const HomeBelowFold = () => (
     </div>
     <div className="h-12 md:h-20 bg-secondary" aria-hidden="true" />
 
-    <div className="parallax-break" style={{ backgroundImage: "url('/images/parallax-lakefront.webp')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties} aria-hidden="true" />
+    <div className="parallax-break hidden md:block" style={{ backgroundImage: "url('/images/parallax-lakefront.webp')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties} aria-hidden="true" />
 
     <div className="hidden md:block">
       <div className="h-12 md:h-20 bg-secondary" aria-hidden="true" />
@@ -1109,7 +1109,7 @@ const HomeBelowFold = () => (
     <InsightsSection />
     <div className="h-12 md:h-20 bg-secondary" aria-hidden="true" />
 
-    <div className="parallax-break" style={{ backgroundImage: "url('/images/parallax-interior.webp')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties} aria-hidden="true" />
+    <div className="parallax-break hidden md:block" style={{ backgroundImage: "url('/images/parallax-interior.webp')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties} aria-hidden="true" />
 
     <div className="h-12 md:h-20 bg-background" aria-hidden="true" />
     <EditorialInsights />

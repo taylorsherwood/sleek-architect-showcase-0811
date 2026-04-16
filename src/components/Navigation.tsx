@@ -14,7 +14,6 @@ interface NavLink {
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
-  const [isScrolled, setIsScrolled] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
 
@@ -22,13 +21,6 @@ const Navigation = () => {
     setOpenDropdown(null);
     setIsMenuOpen(false);
   }, [location.pathname]);
-
-  useEffect(() => {
-    const onScroll = () => setIsScrolled(window.scrollY > 8);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   const links: NavLink[] = [
     {
@@ -65,8 +57,8 @@ const Navigation = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 overflow-visible h-20 md:h-24 lg:h-[6.5rem]" style={{ borderBottom: "1px solid rgba(12, 15, 36, 0.12)", transition: "background 0.4s ease, border-color 0.4s ease" }}>
       <div
-        className="absolute inset-0 transition-[background] duration-300"
-        style={{ background: isScrolled ? "rgba(241, 237, 228, 0.95)" : "#f1ede4" }}
+        className="absolute inset-0"
+        style={{ background: "#f1ede4" }}
       />
       <div className="relative container mx-auto px-2 md:px-6 h-full flex items-center justify-center lg:justify-start">
         <Link to="/" onClick={() => { if (location.pathname === '/') window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="flex items-center shrink-0 overflow-visible ml-0" style={{ height: '100%' }}>

@@ -91,6 +91,7 @@ const AppRoutes = () => {
       <Suspense fallback={<div className="min-h-screen bg-background" />}>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/lander" element={<Navigate to="/" replace />} />
           <Route path="/about" element={<About />} />
           <Route path="/listings" element={<Listings />} />
           <Route path="/listings/commercial-investment-austin" element={<CommercialInvestment />} />

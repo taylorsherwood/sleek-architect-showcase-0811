@@ -12,13 +12,9 @@ interface NavLink {
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [inDarkZone, setInDarkZone] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
-
-
 
   useEffect(() => {
     setOpenDropdown(null);
@@ -60,10 +56,8 @@ const Navigation = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 overflow-visible h-20 md:h-24 lg:h-[6.5rem]" style={{ borderBottom: "1px solid rgba(255,255,255,0.08)" }}>
       <div
-        className="absolute inset-0 transition-all duration-500"
-        style={{
-          background: effectiveScrolled ? "#080B1A" : "#f6f4f0",
-        }}
+        className="absolute inset-0"
+        style={{ background: "#f6f4f0" }}
       />
       <div className="relative container mx-auto px-2 md:px-6 h-full flex items-center justify-start md:justify-between">
         <Link to="/" onClick={() => { if (location.pathname === '/') window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="flex items-center shrink-0 overflow-visible -ml-8 md:ml-0" style={{ height: '100%' }}>
@@ -95,9 +89,7 @@ const Navigation = () => {
                 <button
                   onClick={() => setOpenDropdown(openDropdown === link.href ? null : link.href)}
                   className={`relative transition-colors duration-300 group cursor-pointer bg-transparent border-none ${
-                    isActive(link)
-                      ? (effectiveScrolled ? "text-white" : "text-foreground")
-                      : (effectiveScrolled ? "text-white/80 hover:text-white" : "text-foreground/75 hover:text-foreground")
+                    isActive(link) ? "text-foreground" : "text-foreground/75 hover:text-foreground"
                   }`}
                   style={navLinkStyle}
                 >
@@ -112,7 +104,7 @@ const Navigation = () => {
                 </button>
                 {openDropdown === link.href && (
                   <div className="absolute top-full left-0 pt-4 min-w-[260px]">
-                    <div style={{ background: effectiveScrolled ? "rgba(8,11,26,0.95)" : "hsl(var(--background))", border: "1px solid rgba(255,255,255,0.08)" }} className="shadow-elegant">
+                    <div style={{ background: "hsl(var(--background))", border: "1px solid rgba(255,255,255,0.08)" }} className="shadow-elegant">
                       {link.children.map((child) => (
                         <Link
                           key={child.href}
@@ -122,13 +114,13 @@ const Navigation = () => {
                             ...navLinkStyle,
                             fontSize: "10px",
                             color: location.pathname === child.href
-                              ? (effectiveScrolled ? "#fff" : "hsl(var(--foreground))")
-                              : (effectiveScrolled ? "rgba(255,255,255,0.7)" : "hsl(var(--foreground) / 0.7)"),
+                              ? "hsl(var(--foreground))"
+                              : "hsl(var(--foreground) / 0.7)",
                           }}
                           onMouseEnter={(e) => { e.currentTarget.style.color = "#b9a06c"; }}
                           onMouseLeave={(e) => {
                             if (location.pathname !== child.href) {
-                              e.currentTarget.style.color = effectiveScrolled ? "rgba(255,255,255,0.7)" : "hsl(var(--foreground) / 0.7)";
+                              e.currentTarget.style.color = "hsl(var(--foreground) / 0.7)";
                             }
                           }}
                         >
@@ -147,9 +139,7 @@ const Navigation = () => {
                 to={link.href}
                 onClick={() => { if (link.href === '/' && location.pathname === '/') window.scrollTo({ top: 0, behavior: 'smooth' }); }}
                 className={`relative transition-colors duration-300 group ${
-                  location.pathname === link.href
-                    ? (effectiveScrolled ? "text-white" : "text-foreground")
-                    : (effectiveScrolled ? "text-white/80 hover:text-white" : "text-foreground/75 hover:text-foreground")
+                  location.pathname === link.href ? "text-foreground" : "text-foreground/75 hover:text-foreground"
                 }`}
                 style={navLinkStyle}
               >
@@ -190,7 +180,7 @@ const Navigation = () => {
         <Button
           variant="ghost"
           size="sm"
-          className={`lg:hidden ml-auto ${isScrolled ? "text-white" : ""}`}
+          className="lg:hidden ml-auto"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? "✕" : "☰"}

@@ -1533,6 +1533,9 @@ A: Westlake combines proximity to downtown, Eanes ISD schools, and one of the ti
     category: "NEIGHBORHOODS",
     image: blogBeeCaveVsLakeway,
     heroImage: blogBeeCaveHero
+  },
+  {
+    id: "what-makes-pemberton-heights-desirable",
     title: "What Makes Pemberton Heights So Desirable?",
     metaTitle: "Pemberton Heights Austin — Why Buyers Love This Neighborhood | Echelon Property Group",
     excerpt: "Explore what makes Pemberton Heights one of Austin's most prestigious neighborhoods — from its distinguished architecture and half-acre lots to walk-to-downtown convenience.",

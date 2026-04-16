@@ -249,14 +249,23 @@ const MarkdownChunk = ({ body }: { body: string }) => {
   );
 };
 
-const BlogContent = ({ content }: BlogContentProps) => {
+const BlogContent = ({ content, afterGlance }: BlogContentProps) => {
   const blocks = parseBlocks(content);
+  let glanceRendered = false;
   return (
     <div className="prose prose-lg max-w-none">
       {blocks.map((block, idx) => {
         switch (block.type) {
-          case "glance":
-            return <GlanceTable key={idx} body={block.body} />;
+          case "glance": {
+            const isFirstGlance = !glanceRendered;
+            glanceRendered = true;
+            return (
+              <div key={idx}>
+                <GlanceTable body={block.body} />
+                {isFirstGlance && afterGlance}
+              </div>
+            );
+          }
           case "best-for":
             return <HighlightLine key={idx} label="Best For" body={block.body} tone="best" />;
           case "watch-out":

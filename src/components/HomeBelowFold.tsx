@@ -76,7 +76,7 @@ const AdvisorSection = () => (
             {/* Social links */}
             <div className="w-full flex flex-col items-center pt-5 pb-2 px-4">
               <div className="w-12 h-px bg-gold mb-5" />
-              <div className="flex items-center justify-center gap-6 max-w-[360px]">
+              <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 max-w-[360px]">
                 <a
                   href="https://www.instagram.com/theinvestorbroker/"
                   target="_blank"

@@ -175,16 +175,18 @@ const Navigation = () => {
             href="https://echelonpropertygroup.outportal.ai"
             target="_blank"
             rel="noopener noreferrer nofollow"
-            className="whitespace-nowrap transition-all duration-300 px-5 py-2"
+            className="whitespace-nowrap transition-all duration-300 px-5 py-2 backdrop-blur-md"
             style={{
               ...navLinkStyle,
               fontSize: "10px",
               border: "1px solid hsl(38 39% 61%)",
               color: "hsl(38 39% 61%)",
-              background: "rgba(255, 255, 255, 0.5)",
+              background: "rgba(255, 255, 255, 0.25)",
+              WebkitBackdropFilter: "blur(12px)",
+              backdropFilter: "blur(12px)",
             }}
             onMouseEnter={(e) => { e.currentTarget.style.background = "hsl(38 39% 61%)"; e.currentTarget.style.color = "#ffffff"; }}
-            onMouseLeave={(e) => { e.currentTarget.style.background = "rgba(255, 255, 255, 0.5)"; e.currentTarget.style.color = "hsl(38 39% 61%)"; }}
+            onMouseLeave={(e) => { e.currentTarget.style.background = "rgba(255, 255, 255, 0.25)"; e.currentTarget.style.color = "hsl(38 39% 61%)"; }}
           >
             CLIENT PORTAL
           </a>

@@ -13,6 +13,8 @@ export interface BlogPost {
   readTime: string;
   category: string;
   image: string;
+  /** Optional larger image used as the in-article hero. Falls back to `image` when absent. */
+  heroImage?: string;
   href?: string;
   metaTitle?: string;
 }

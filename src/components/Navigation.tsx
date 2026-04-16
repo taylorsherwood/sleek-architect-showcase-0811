@@ -14,7 +14,6 @@ interface NavLink {
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
-  const [isScrolled, setIsScrolled] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
 
@@ -22,13 +21,6 @@ const Navigation = () => {
     setOpenDropdown(null);
     setIsMenuOpen(false);
   }, [location.pathname]);
-
-  useEffect(() => {
-    const onScroll = () => setIsScrolled(window.scrollY > 8);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   const links: NavLink[] = [
     {

@@ -55,7 +55,7 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 overflow-visible h-20 md:h-24 lg:h-[6.5rem]" style={{ borderBottom: "1px solid rgba(12, 15, 36, 0.12)", transition: "background 0.4s ease, border-color 0.4s ease" }}>
+    <nav className="fixed top-0 left-0 right-0 z-50 overflow-visible h-20 md:h-24 lg:h-[6.5rem]" style={{ borderBottom: "1px solid rgba(12, 15, 36, 0.10)", transition: "background 0.4s ease, border-color 0.4s ease" }}>
       <div
         className="absolute inset-0"
         style={{ background: "#e8e1d2" }}

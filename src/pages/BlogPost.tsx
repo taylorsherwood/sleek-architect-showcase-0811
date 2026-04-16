@@ -148,16 +148,19 @@ const BlogPost = () => {
                     />
             </div>
 
-            {BLOG_BOUNDARY_MAPS[post.id] && (
-              <div className="-mx-6 md:mx-0 mb-12">
-                <CommunityBoundaryMap
-                  imageSrc={`/images/communities/${BLOG_BOUNDARY_MAPS[post.id].slug}-boundary.webp`}
-                  communityName={BLOG_BOUNDARY_MAPS[post.id].name}
-                />
-              </div>
-            )}
-
-            <BlogContent content={post.content} />
+            <BlogContent
+              content={post.content}
+              afterGlance={
+                BLOG_BOUNDARY_MAPS[post.id] ? (
+                  <div className="-mx-6 md:mx-0 my-12">
+                    <CommunityBoundaryMap
+                      imageSrc={`/images/communities/${BLOG_BOUNDARY_MAPS[post.id].slug}-boundary.webp`}
+                      communityName={BLOG_BOUNDARY_MAPS[post.id].name}
+                    />
+                  </div>
+                ) : null
+              }
+            />
             
             <AuthorBio />
             

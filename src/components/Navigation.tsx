@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
-import logo from "@/assets/echelon-header-logo.webp";
+const logo = "/images/echelon-logo.png";
 
 interface NavLink {
   href: string;
@@ -18,48 +18,7 @@ const Navigation = () => {
   const dropdownRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
 
-  const noFadePages = ["/listings/commercial-investment-austin"];
-  const shouldNeverFade = noFadePages.includes(location.pathname);
 
-  useEffect(() => {
-    if (shouldNeverFade) {
-      setIsScrolled(false);
-      return;
-    }
-    // Cache viewport height to avoid repeated layout reads
-    let vh = window.innerHeight;
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > vh * 0.8);
-    };
-    const onResize = () => { vh = window.innerHeight; };
-    // Defer initial check to avoid forced reflow during first paint
-    const rafId = requestAnimationFrame(handleScroll);
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    window.addEventListener("resize", onResize, { passive: true });
-    return () => {
-      cancelAnimationFrame(rafId);
-      window.removeEventListener("scroll", handleScroll);
-      window.removeEventListener("resize", onResize);
-    };
-  }, [shouldNeverFade]);
-
-  // Detect when nav overlaps dark-zone sections (Final CTA / Footer)
-  useEffect(() => {
-    const targets = document.querySelectorAll("[data-nav-dark-zone]");
-    if (!targets.length) return;
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const anyVisible = entries.some((e) => e.isIntersecting);
-        setInDarkZone(anyVisible);
-      },
-      { rootMargin: "0px 0px -70% 0px", threshold: 0 }
-    );
-    targets.forEach((t) => observer.observe(t));
-    return () => observer.disconnect();
-  }, [location.pathname]);
-
-  // When in a dark zone, override to light (non-scrolled) appearance
-  const effectiveScrolled = isScrolled && !inDarkZone;
 
   useEffect(() => {
     setOpenDropdown(null);

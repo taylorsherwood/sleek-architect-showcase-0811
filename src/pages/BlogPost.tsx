@@ -140,7 +140,7 @@ const BlogPost = () => {
             
             <div className="w-full aspect-[16/9] mb-12 overflow-hidden">
               <img 
-                src={post.image} 
+                src={post.heroImage || post.image} 
                 alt={`${post.title} - Austin luxury real estate`}
                 title={post.title}
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"

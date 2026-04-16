@@ -39,7 +39,7 @@ const Footer = () => {
                 <img
                   src="/static-assets/echelon-footer-logo.webp"
                   alt="Echelon Property Group"
-                  className="h-56 w-auto ml-0 sm:-ml-4"
+                  className="h-56 w-56 ml-0 sm:-ml-4 object-contain"
                   loading="lazy" decoding="async"
                   width={224} height={224}
                 />

@@ -131,10 +131,10 @@ const Hero = () => {
       {/* Left-to-right gradient overlay for text readability */}
       {/* Mobile: subtle full-coverage overlay */}
       <div className="absolute inset-0 md:hidden" style={{ zIndex: 1, background: 'rgba(10,14,25,0.25)' }} />
-      {/* Desktop: directional gradient */}
-      <div className="absolute inset-0 hidden md:block" style={{
+      {/* Desktop: gradient only on left half */}
+      <div className="absolute inset-y-0 left-0 w-1/2 hidden md:block" style={{
         zIndex: 1,
-        background: `linear-gradient(to right, rgba(10,14,25,0.45) 0%, rgba(10,14,25,0.32) 35%, rgba(10,14,25,0.12) 65%, transparent 100%)`
+        background: `linear-gradient(to right, rgba(10,14,25,0.50) 0%, rgba(10,14,25,0.35) 50%, rgba(10,14,25,0.10) 85%, transparent 100%)`
       }} />
 
       {/* Content */}

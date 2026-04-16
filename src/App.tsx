@@ -27,7 +27,9 @@ export const AppShell = ({ children, queryClient = browserQueryClient }: AppShel
 const App = () => (
   <AppShell>
       <BrowserRouter>
-        <AppRoutes />
+        <main id="main-content">
+          <AppRoutes />
+        </main>
       </BrowserRouter>
   </AppShell>
 );

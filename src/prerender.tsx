@@ -131,7 +131,9 @@ export async function prerender(data: { url: string }) {
     <HelmetProvider context={helmetContext}>
       <AppShell queryClient={queryClient}>
         <StaticRouter location={routePath}>
-          <AppRoutes />
+          <main id="main-content">
+            <AppRoutes />
+          </main>
         </StaticRouter>
       </AppShell>
     </HelmetProvider>

@@ -96,7 +96,7 @@ const Hero = () => {
   });
 
   // Default to desktop poster; once ready, use the correct one
-  const posterSrc = isMobileHero ? "/images/mobile-hero-poster.webp" : "/images/hero-poster.webp";
+  const posterSrc = isMobileHero ? "/images/hero-mobile-austin.webp" : "/images/hero-poster.webp";
 
   return (
     <>

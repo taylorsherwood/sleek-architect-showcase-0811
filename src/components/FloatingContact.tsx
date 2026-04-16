@@ -101,7 +101,8 @@ const FloatingContact = () => {
       {/* Launcher — dark concierge bar */}
       <button
         onClick={() => setOpen(true)}
-        className={`hidden md:flex fixed bottom-8 right-7 z-[60] items-center gap-2.5 bg-background/95 backdrop-blur-sm text-[hsl(var(--gold))] rounded-full pl-1 pr-6 py-1 shadow-[0_4px_20px_-4px_hsl(var(--foreground)/0.1),0_1px_3px_hsl(var(--foreground)/0.06)] hover:bg-[hsl(var(--gold))] hover:text-background transition-all duration-500 ease-out group cursor-pointer border border-[hsl(var(--gold)/0.2)] hover:border-[hsl(var(--gold))] ${
+        style={{ backgroundColor: "#f1ede4" }}
+        className={`hidden md:flex fixed bottom-8 right-7 z-[60] items-center gap-2.5 backdrop-blur-sm text-[hsl(var(--gold))] rounded-full pl-1 pr-6 py-1 shadow-[0_4px_20px_-4px_hsl(var(--foreground)/0.1),0_1px_3px_hsl(var(--foreground)/0.06)] hover:!bg-[hsl(var(--gold))] hover:text-background transition-all duration-500 ease-out group cursor-pointer border border-[hsl(var(--gold)/0.2)] hover:border-[hsl(var(--gold))] ${
           visible ? "translate-x-0 opacity-100" : "translate-x-[calc(100%+2rem)] opacity-0 pointer-events-none"
         }`}
         aria-label="Connect with Taylor Sherwood">

@@ -10,6 +10,7 @@ import { seoBlogPosts } from "@/data/seoBlogPosts";
 import AuthorBio from "@/components/AuthorBio";
 import BlogCTA from "@/components/BlogCTA";
 import RelatedInsights from "@/components/RelatedInsights";
+import BlogContent, { extractFAQsFromContent } from "@/components/BlogContent";
 
 const allPosts = [...seoBlogPosts, ...blogPosts];
 
@@ -41,9 +42,9 @@ const BlogPost = () => {
     );
   }
 
-  // Extract FAQs from content — only from "Frequently Asked Questions" section
-  const faqs: { question: string; answer: string }[] = [];
-  if (post.content.includes("Frequently Asked Questions")) {
+  // Extract FAQs — prefer new :::faq block, fall back to legacy "Frequently Asked Questions" markdown section
+  let faqs: { question: string; answer: string }[] = extractFAQsFromContent(post.content);
+  if (faqs.length === 0 && post.content.includes("Frequently Asked Questions")) {
     const faqContent = post.content.split("Frequently Asked Questions")[1] || "";
     const faqItems = faqContent.match(/### (.+?)\n([\s\S]+?)(?=\n###|$)/g);
     if (faqItems) {
@@ -51,7 +52,6 @@ const BlogPost = () => {
         const lines = item.trim().split('\n');
         const question = lines[0].replace('### ', '').trim();
         const answer = lines.slice(1).join(' ').replace(/\s+/g, ' ').trim();
-        // Only include if answer is substantive (20+ chars)
         if (question && answer && answer.length >= 20) {
           faqs.push({ question, answer });
         }
@@ -142,37 +142,7 @@ const BlogPost = () => {
                     />
             </div>
             
-            <div className="prose prose-lg max-w-none">
-              <div 
-                className="text-muted-foreground leading-relaxed space-y-6"
-                dangerouslySetInnerHTML={{ 
-                  __html: post.content
-                    .split('\n')
-                    .map(line => {
-                      if (line.startsWith('# ')) {
-                        return `<h2 class="text-3xl md:text-4xl font-light text-architectural mb-8 mt-12">${line.substring(2)}</h2>`;
-                      } else if (line.startsWith('## ')) {
-                        return `<h2 class="text-2xl md:text-3xl font-light text-architectural mb-6 mt-10">${line.substring(3)}</h2>`;
-                      } else if (line.startsWith('### ')) {
-                        return `<h3 class="text-xl md:text-2xl font-medium text-foreground mb-4 mt-8">${line.substring(4)}</h3>`;
-                      } else if (line.startsWith('- **') && line.includes('**')) {
-                        const content = line.substring(2);
-                        return `<li class="ml-6 mb-2">${content.replace(/\*\*(.*?)\*\*/g, '<strong class="text-foreground">$1</strong>')}</li>`;
-                      } else if (line.startsWith('- ')) {
-                        return `<li class="ml-6 mb-2">${line.substring(2)}</li>`;
-                      } else if (line.trim() === '') {
-                        return '<br>';
-                      } else if (line.startsWith('**') && line.endsWith('**')) {
-                        return `<p class="mb-4"><strong class="text-foreground">${line.substring(2, line.length - 2)}</strong></p>`;
-                      } else {
-                    return `<p class="mb-4">${line.replace(/\*\*(.*?)\*\*/g, '<strong class="text-foreground">$1</strong>')}</p>`;
-                      }
-                    })
-                    .join('')
-                    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-foreground underline underline-offset-4 decoration-accent-gold/40 hover:decoration-accent-gold transition-colors duration-300">$1</a>')
-                }}
-              />
-            </div>
+            <BlogContent content={post.content} />
             
             <AuthorBio />
             

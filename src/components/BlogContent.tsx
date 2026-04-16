@@ -198,7 +198,7 @@ const SoftCTA = ({ body }: { body: string }) => {
       <p className="text-xl md:text-2xl font-light text-architectural mb-6 leading-snug">
         {heading}
       </p>
-      <Button asChild variant="outline" className="rounded-none border-foreground text-foreground hover:bg-foreground hover:text-background uppercase tracking-wider text-xs px-8 py-5">
+      <Button asChild variant="outline" className="rounded-none border-[#b9a06c] text-[#b9a06c] bg-transparent hover:bg-[#b9a06c] hover:text-white hover:border-[#b9a06c] uppercase tracking-wider text-xs px-8 py-5 transition-colors">
         <Link to={href}>{buttonLabel}</Link>
       </Button>
     </div>

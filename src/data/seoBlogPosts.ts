@@ -22,10 +22,12 @@ import { BlogPost } from "./blogPosts";
 export const seoBlogPosts: BlogPost[] = [
   {
     id: "find-off-market-homes-austin",
-    title: "How to Find Off-Market Homes in Austin That Nobody Lists",
-    metaTitle: "How to Find Off-Market Homes in Austin Nobody Lists",
-    excerpt: "A practical guide to finding off-market homes in Austin: broker networks, county records, direct outreach, and when to work with a firm built around private transactions.",
-    content: `If you're wondering how do I find off market homes in Austin, the short answer is: stop searching Zillow.
+    title: "How to Find Off-Market Homes in Austin",
+    metaTitle: "How to Find Off-Market Homes in Austin | Echelon Property Group",
+    excerpt: "Explore how to find off-market homes in Austin, including private listings, agent networks, and strategies most buyers never see.",
+    content: `## The Homes You Want Aren't on Zillow
+
+If you're wondering how do I find off market homes in Austin, the short answer is: stop searching Zillow.
 
 The listings you see publicly represent a fraction of what actually changes hands in this market. Industry estimates suggest roughly 48% of Austin homes sell privately, without touching a public platform, though no single source tracks this comprehensively across all price tiers. In the luxury segment above $1.2M, reported figures hover between 40 and 45% in neighborhoods like Westlake Hills, Barton Creek, and the Lake Austin corridor. The gap between what's listed and what's actually available is wide, and many buyers never realize it exists.
 

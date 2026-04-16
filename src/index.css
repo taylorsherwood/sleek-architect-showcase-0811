@@ -372,6 +372,14 @@ realscout-simple-search {
     filter: none;
     opacity: 1 !important;
   }
+  /* Mobile: constrain logo render size to actual displayed dimensions
+     to reduce decode cost (source assets are 200px wide). */
+  @media (max-width: 767px) {
+    .credibility-logo {
+      max-height: 70px;
+      width: auto;
+    }
+  }
 
   /* Hero CTA mobile */
   @media (max-width: 640px) {

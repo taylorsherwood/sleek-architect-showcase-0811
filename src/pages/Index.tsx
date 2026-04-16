@@ -101,8 +101,8 @@ const Hero = () => {
   return (
     <>
     <section ref={sectionRef} id="hero-section" className="relative min-h-screen flex flex-col justify-end overflow-hidden bg-primary">
-      {/* Video — src injected after LCP image loads */}
-      {!skipVideo && (
+      {/* Video — desktop only. Never rendered on mobile or during prerender. */}
+      {!skipVideo && !isMobileHero && (
         <div aria-hidden="true" className="absolute inset-0 pointer-events-none select-none" style={{ zIndex: 1 }}>
           <video ref={videoRef} autoPlay muted loop playsInline preload="metadata"
             className={`hero-bg-video transition-opacity duration-700 ${videoReady ? "opacity-100" : "opacity-0"}`}

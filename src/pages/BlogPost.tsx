@@ -10,6 +10,7 @@ import { seoBlogPosts } from "@/data/seoBlogPosts";
 import AuthorBio from "@/components/AuthorBio";
 import BlogCTA from "@/components/BlogCTA";
 import RelatedInsights from "@/components/RelatedInsights";
+import BlogContent, { extractFAQsFromContent } from "@/components/BlogContent";
 
 const allPosts = [...seoBlogPosts, ...blogPosts];
 

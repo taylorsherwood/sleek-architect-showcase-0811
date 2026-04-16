@@ -170,7 +170,7 @@ const Navigation = () => {
         </div>
 
         {/* Desktop Client Portal — ghost gold button */}
-        <div className="hidden lg:flex items-center shrink-0 ml-auto">
+        <div className="hidden lg:flex items-center shrink-0 ml-auto mr-6 xl:mr-10">
           <a
             href="https://echelonpropertygroup.outportal.ai"
             target="_blank"
@@ -181,10 +181,10 @@ const Navigation = () => {
               fontSize: "10px",
               border: "1px solid hsl(38 39% 61%)",
               color: "hsl(38 39% 61%)",
-              background: "transparent",
+              background: "rgba(255, 255, 255, 0.5)",
             }}
             onMouseEnter={(e) => { e.currentTarget.style.background = "hsl(38 39% 61%)"; e.currentTarget.style.color = "#ffffff"; }}
-            onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = "hsl(38 39% 61%)"; }}
+            onMouseLeave={(e) => { e.currentTarget.style.background = "rgba(255, 255, 255, 0.5)"; e.currentTarget.style.color = "hsl(38 39% 61%)"; }}
           >
             CLIENT PORTAL
           </a>

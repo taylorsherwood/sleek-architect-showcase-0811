@@ -47,26 +47,38 @@ const Navigation = () => {
 
   const navLinkStyle: React.CSSProperties = {
     fontFamily: '"Jost", sans-serif',
-    fontSize: "11px",
-    letterSpacing: "0.16em",
+    fontSize: "13px",
+    letterSpacing: "0.18em",
     textTransform: "uppercase",
     fontWeight: 400,
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 overflow-visible h-20 md:h-24 lg:h-[6.5rem]" style={{ borderBottom: "1px solid rgba(255,255,255,0.08)" }}>
+    <nav
+      className="fixed top-0 left-0 right-0 z-50 overflow-visible"
+      style={{
+        borderBottom: "1px solid rgba(180,170,155,0.25)",
+      }}
+    >
+      <div className="absolute inset-0" style={{ background: "#f6f4f0" }} />
       <div
-        className="absolute inset-0"
-        style={{ background: "#f6f4f0" }}
-      />
-      <div className="relative container mx-auto px-2 md:px-6 h-full flex items-center justify-start md:justify-between">
-        <Link to="/" onClick={() => { if (location.pathname === '/') window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="flex items-center shrink-0 overflow-visible -ml-8 md:ml-0" style={{ height: '100%' }}>
+        className="relative mx-auto flex items-center justify-between"
+        style={{
+          maxWidth: "1280px",
+          padding: "16px 40px",
+        }}
+      >
+        <Link
+          to="/"
+          onClick={() => { if (location.pathname === '/') window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+          className="flex items-center shrink-0"
+        >
           <img
             src={logo}
             alt="Echelon Property Group"
             title="Echelon Property Group — Austin Luxury Real Estate"
-            className="w-auto max-w-none border-0 shrink-0 object-contain -translate-x-1.5 md:translate-x-0"
-            style={{ height: '125%', maxHeight: '125%', aspectRatio: '200 / 80', display: 'block' }}
+            className="w-auto border-0 shrink-0 object-contain"
+            style={{ height: '36px', display: 'block' }}
             loading="eager"
             decoding="async"
             fetchPriority="high"
@@ -76,7 +88,7 @@ const Navigation = () => {
         </Link>
 
         {/* Desktop nav links */}
-        <div className="hidden lg:flex items-center space-x-5 xl:space-x-9 ml-6 xl:ml-10">
+        <div className="hidden lg:flex items-center gap-7 xl:gap-9">
           {links.map((link) =>
             link.children ? (
               <div
@@ -89,7 +101,7 @@ const Navigation = () => {
                 <button
                   onClick={() => setOpenDropdown(openDropdown === link.href ? null : link.href)}
                   className={`relative transition-colors duration-300 group cursor-pointer bg-transparent border-none ${
-                    isActive(link) ? "text-foreground" : "text-foreground/75 hover:text-foreground"
+                    isActive(link) ? "text-foreground" : "text-foreground/65 hover:text-foreground"
                   }`}
                   style={navLinkStyle}
                 >
@@ -104,7 +116,7 @@ const Navigation = () => {
                 </button>
                 {openDropdown === link.href && (
                   <div className="absolute top-full left-0 pt-4 min-w-[260px]">
-                    <div style={{ background: "hsl(var(--background))", border: "1px solid rgba(255,255,255,0.08)" }} className="shadow-elegant">
+                    <div style={{ background: "hsl(var(--background))", border: "1px solid rgba(180,170,155,0.2)" }} className="shadow-elegant">
                       {link.children.map((child) => (
                         <Link
                           key={child.href}
@@ -112,15 +124,15 @@ const Navigation = () => {
                           className="block px-7 py-4 transition-colors duration-300"
                           style={{
                             ...navLinkStyle,
-                            fontSize: "10px",
+                            fontSize: "11px",
                             color: location.pathname === child.href
                               ? "hsl(var(--foreground))"
-                              : "hsl(var(--foreground) / 0.7)",
+                              : "hsl(var(--foreground) / 0.6)",
                           }}
                           onMouseEnter={(e) => { e.currentTarget.style.color = "#b9a06c"; }}
                           onMouseLeave={(e) => {
                             if (location.pathname !== child.href) {
-                              e.currentTarget.style.color = "hsl(var(--foreground) / 0.7)";
+                              e.currentTarget.style.color = "hsl(var(--foreground) / 0.6)";
                             }
                           }}
                         >
@@ -139,7 +151,7 @@ const Navigation = () => {
                 to={link.href}
                 onClick={() => { if (link.href === '/' && location.pathname === '/') window.scrollTo({ top: 0, behavior: 'smooth' }); }}
                 className={`relative transition-colors duration-300 group ${
-                  location.pathname === link.href ? "text-foreground" : "text-foreground/75 hover:text-foreground"
+                  location.pathname === link.href ? "text-foreground" : "text-foreground/65 hover:text-foreground"
                 }`}
                 style={navLinkStyle}
               >
@@ -153,18 +165,16 @@ const Navigation = () => {
               </Link>
             )
           )}
-        </div>
 
-        {/* Desktop Client Portal — ghost gold button */}
-        <div className="hidden lg:flex items-center shrink-0 ml-4 xl:ml-8">
+          {/* Client Portal — ghost gold button */}
           <a
             href="https://echelonpropertygroup.outportal.ai"
             target="_blank"
             rel="noopener noreferrer nofollow"
-            className="whitespace-nowrap transition-all duration-300 px-5 py-2"
+            className="whitespace-nowrap transition-all duration-300 px-5 py-2 ml-2"
             style={{
               ...navLinkStyle,
-              fontSize: "10px",
+              fontSize: "11px",
               border: "1px solid hsl(38 39% 61%)",
               color: "hsl(38 39% 61%)",
               background: "transparent",
@@ -189,7 +199,7 @@ const Navigation = () => {
 
       {/* Mobile menu — full-screen dark overlay */}
       {isMenuOpen && (
-        <div className="lg:hidden fixed inset-0 top-20 md:top-24 z-40" style={{ background: "#0C0F24" }}>
+        <div className="lg:hidden fixed inset-0 top-[68px] md:top-[72px] z-40" style={{ background: "#0C0F24" }}>
           <div className="container mx-auto px-6 py-12 space-y-7">
             {links.map((link) =>
               link.children ? (
@@ -212,7 +222,7 @@ const Navigation = () => {
                           to={child.href}
                           onClick={() => setIsMenuOpen(false)}
                           className="block text-white/50 hover:text-gold transition-colors duration-300"
-                          style={{ ...navLinkStyle, fontSize: "10px" }}
+                          style={{ ...navLinkStyle, fontSize: "11px" }}
                         >
                           {child.label}
                         </Link>
@@ -240,7 +250,7 @@ const Navigation = () => {
                 className="inline-block px-6 py-3 transition-all duration-300"
                 style={{
                   ...navLinkStyle,
-                  fontSize: "10px",
+                  fontSize: "11px",
                   border: "1px solid hsl(38 39% 61%)",
                   color: "hsl(38 39% 61%)",
                 }}

@@ -48,6 +48,7 @@ const staticRoutes = [
   "/austin-land-development-opportunities",
   "/private-opportunities",
   "/blog/how-to-find-off-market-real-estate-deals-austin-2026",
+  "/blog/how-to-find-off-market-homes-in-austin-that-nobody-lists",
   "/sitemap",
   "/best-luxury-neighborhoods-in-austin",
   "/communities/zilker",

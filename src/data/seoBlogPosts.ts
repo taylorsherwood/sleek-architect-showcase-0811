@@ -15,10 +15,98 @@ import steinerRanchImg from "@/assets/communities/steiner-ranch.webp";
 import blogPembertonHeights from "@/assets/pemberton-heights.avif";
 import blogBeeCaveVsLakeway from "@/assets/bee-cave-vs-lakeway.jpg";
 import blogMarketOutlook from "@/assets/blog-market-outlook.webp";
+import blogOffMarketPrivacy from "@/assets/blog-off-market-privacy.webp";
 
 import { BlogPost } from "./blogPosts";
 
 export const seoBlogPosts: BlogPost[] = [
+  {
+    id: "how-to-find-off-market-homes-in-austin-that-nobody-lists",
+    title: "How to Find Off-Market Homes in Austin That Nobody Lists",
+    metaTitle: "How to Find Off-Market Homes in Austin Nobody Lists",
+    excerpt: "A practical guide to finding off-market homes in Austin: broker networks, county records, direct outreach, and when to work with a firm built around private transactions.",
+    content: `If you're wondering how do I find off market homes in Austin, the short answer is: stop searching Zillow.
+
+The listings you see publicly represent a fraction of what actually changes hands in this market. Industry estimates suggest roughly 48% of Austin homes sell privately, without touching a public platform, though no single source tracks this comprehensively across all price tiers. In the luxury segment above $1.2M, reported figures hover between 40 and 45% in neighborhoods like Westlake Hills, Barton Creek, and the Lake Austin corridor. The gap between what's listed and what's actually available is wide, and many buyers never realize it exists.
+
+This guide covers the real methods buyers use to access [Austin's private listing inventory](/off-market-real-estate-austin): broker networks, county records, targeted direct outreach, and knowing when to work with a firm that already operates inside these channels. Whether you're a first-time buyer or an experienced investor, the approach you take matters more than the hours you spend refreshing listings.
+
+## What "off-market" actually means in Austin
+
+The terms get used interchangeably, but they're not the same. A pocket listing is a property an agent holds back from MLS exposure, often sharing it quietly within their network before any public launch. A private listing gets shared within a brokerage or a closed agent-to-agent platform but never hits Zillow or Realtor.com. A true off-market sale happens with no public marketing at all: the seller and buyer find each other through relationships, and the transaction closes without appearing in any database. All three exist in Austin, and the access strategy for each one differs.
+
+Sellers skip the MLS for a few core reasons. In Westlake Hills and Barton Creek, high-net-worth sellers don't want strangers walking through their homes every weekend. Others want to test price without creating a public record of days-on-market that weakens their negotiating position. Some already have a buyer in mind through their agent's network. Understanding seller motivation helps buyers position themselves as the right fit, rather than just another unsolicited offer.
+
+## How to find off market homes in Austin through agent networks
+
+Several platforms drive Austin's off-market broker-to-broker sharing. The Austin Luxury Network (ALN) is a paid, license-required agent platform for sharing private listings among members, restricted to properties priced above $1.5M. Commission.Co's Clubhouse is a private network built around discreet sharing between trusted agents and qualified buyers. Compass Private Exclusives operates within the Compass brokerage, visible only to Compass agents and the buyers they represent.
+
+Access to any of these requires being represented by an agent who participates. Buyers without the right representation never see what flows through these channels. If you want to evaluate membership or find agents who participate, the Austin Luxury Network sign-up and membership information is a good starting point for understanding how that closed circulation works.
+
+Some firms don't just have access to off-market inventory, they're built around it. [Echelon Property Group](/about) is a boutique Austin advisory firm whose practice is centered on private transactions. Clients aren't waiting for listings to appear on Zillow. They're tapping a network built through years of direct relationships with sellers, developers, builders, and agents across Westlake Hills, Barton Creek, Lake Austin, and Tarrytown. For more perspective on how agents and firms locate luxury properties before they hit the public market, see this overview of [how to find off-market luxury listings in Austin](/blog/how-to-find-off-market-real-estate-deals-austin-2026). The difference between a standard buyer's agent and a firm that operates this way is the difference between browsing a public storefront and getting a private showing before a property exists in any database.
+
+When evaluating a buyer's agent, most will claim they have connections. The better question is specific: how many of your last 10 transactions came from private channels rather than the MLS? Do you participate in the Austin Luxury Network or similar platforms? Can you give an example of an off-market deal you've sourced in the neighborhoods I'm targeting? An agent who can't answer those questions concretely probably doesn't have the access they're implying.
+
+## Direct outreach methods that reach sellers before the listing exists
+
+Direct mail works when it's targeted and personal, not blasted to random zip codes. Pull a list of homeowners in your target neighborhood through the Travis Central Appraisal District (TCAD), filter by long-term ownership of 10 or more years, high equity, lower likelihood of a mortgage contingency, and send a personalized letter that references the specific address. Keep it short, direct, and offer a no-obligation conversation rather than a lowball cash pitch. Response rates for targeted campaigns like this typically run between 1 and 3% based on practitioner experience, but one good reply in the right neighborhood can justify the full campaign cost.
+
+### Driving for dollars
+
+Driving target neighborhoods works best for investors and buyers eyeing transitional properties. Note homes with deferred maintenance, overgrown lots, vehicles with flat tires, or consistently dark windows, signals of absentee ownership or deferred decision-making. Cross-reference addresses with TCAD to identify owner names and mailing addresses, then follow up with a handwritten note or personalized letter. In neighborhoods like Mueller, Allandale, and parts of East Austin, this method surfaces unlisted properties that will never hit the MLS because the owner hasn't decided to sell yet.
+
+### Cold outreach by phone
+
+Cold outreach by phone works when it leads with honesty. A simple script: "Hi [Name], I'm [Your Name]. I'm specifically looking to buy in [Neighborhood] and reaching out to a few homeowners directly. I'm not a wholesaler trying to lowball you. I'm a buyer looking for the right fit. Would you ever consider a conversation about your property?" Keep it short, leave a number, and follow up once. The goal is a conversation, not a commitment.
+
+## Mining public records to find motivated off-market sellers
+
+Probate properties often sell off-market because heirs want speed and simplicity over maximum price. Travis County probate records are searchable through the Odyssey Portal at odysseypa.traviscountytx.gov and through re:SearchTX, a free platform for public Texas court records. For official guidance and resources, consult the Travis County probate page. The portal searches by decedent name, case number, or filing date rather than property address. So the process involves identifying recent estate filings, then cross-referencing the decedent's name with TCAD to locate associated property addresses, a few extra steps, but the leads are specific and motivated.
+
+Travis Central Appraisal District also maintains tax delinquency data, which correlates with absentee ownership and financial distress. Filtering by homestead exemption status is a useful shortcut: properties without the homestead exemption are often non-owner-occupied, flagging them as potential absentee landlord or investor-held assets. Pre-foreclosure notices appear in Travis County District Clerk civil filings, searchable online for cases from 2006 onward. Williamson County maintains similar records through their county clerk's Odyssey portal. These public records are free to access and represent motivated seller pools that most buyers never reach because they don't know to look.
+
+The goal of records research is a specific, actionable list: names, addresses, and context. A letter that references "I noticed the property is currently in the estate of [Name]" converts better than a generic form letter. Personalization signals that you've done real research, which builds credibility before the seller has ever heard your voice.
+
+## Where off-market activity concentrates across Austin's neighborhoods
+
+Westlake Hills and the 78746 zip code lead Austin's private sale activity, with reported figures of 40 to 45% of ultra-luxury transactions happening off-market. Barton Creek, Rollingwood, and the Lake Austin corridor (78730 and 78733) follow as high-discretion, low-inventory areas where private sales are common, though comparable zip-level data for those corridors is less consistently documented. These neighborhoods share a common profile: limited inventory, high-equity owners, and buyers who value discretion. The combination makes off-market the preferred transaction method for both sides. For deeper neighborhood-level analysis on how off-market sales vary across Austin, see this examination of the [hidden market across Austin's neighborhoods](/blog/off-market-real-estate-austin).
+
+In the [luxury tier](/austin-luxury-homes-for-sale) between $750K and $1.2M, Tarrytown, Zilker, and Bouldin Creek see meaningful levels of private sales, often driven by agent networks rather than county records outreach. Mid-market neighborhoods like Allandale, Crestview, and Mueller also see off-market activity, primarily investor-driven. For buyers targeting any of these areas, direct outreach and public records research consistently produce better leads than waiting on MLS inventory. The work is unglamorous, but so is losing a deal to a buyer who did it.
+
+## When going it alone stops making sense
+
+A buyer who networks with a few agents, sends targeted mail, and mines public records can uncover deals. The yield, though, is inconsistent and time-intensive. An off-market specialist brings a network that took years to build: direct relationships with Austin sellers, access to private listing platforms, and visibility into deals that never get mentioned publicly. The critical distinction isn't just access, it's knowing which off-market opportunities are actually priced well versus which ones sellers are testing privately because they couldn't get their ask publicly. That judgment isn't something a few weeks of outreach can teach you.
+
+At $1.5M and above, the number of legitimate private deals a single buyer can uncover through direct outreach is small. Sellers in Westlake Hills and Barton Creek are not responding to cold mail from strangers. They're transacting through relationships, quietly and on their own timeline. Buyers competing at this level need a broker who is already inside those conversations, not one who will start building relationships from scratch after being hired.
+
+Ask for a track record, not a pitch. How many off-market transactions in the past 24 months? In which neighborhoods? At what price points? A firm whose practice is built around [private transactions](/private-opportunities), like Echelon Property Group, can show that record. One that claims broad off-market access but primarily lists on MLS cannot. The difference is verifiable, and it's worth verifying before you commit.
+
+## Start where you are, then upgrade the approach
+
+Finding off market homes in Austin is not about locating a secret database or a magic platform. It's about positioning yourself inside the right networks, doing targeted outreach that most buyers won't bother with, and at the top end of the market, working with a firm that already operates inside those channels. The method you start with should match your timeline, your budget, and the price point you're targeting.
+
+If you're still asking how do I find off market homes in Austin above $1.5M, the most direct answer is: partner with a broker who already works those channels full-time. Echelon Property Group's practice is built around exactly that. If you want to explore what's available before it ever hits a listing platform, that conversation starts with a [direct call](/contact), not a Zillow search.
+
+## Frequently Asked Questions
+
+### How do I find off market homes in Austin?
+Off-market homes in Austin are accessed through agent networks like the Austin Luxury Network, broker-only platforms such as Compass Private Exclusives, targeted direct outreach to homeowners using Travis County (TCAD) records, and by working with firms whose practice is built around private transactions. Public listing sites like Zillow only show a fraction of homes that actually trade.
+
+### What percentage of Austin luxury homes sell off-market?
+In Austin's luxury segment above $1.2M, reported figures suggest 40 to 45% of transactions happen off-market, particularly in Westlake Hills, Barton Creek, and the Lake Austin corridor. Across all price tiers, industry estimates put private Austin transactions at roughly 48%, though no single source tracks this comprehensively.
+
+### What is the difference between a pocket listing and an off-market sale?
+A pocket listing is a property an agent holds back from MLS, sharing it quietly within their network before any public launch. A true off-market sale involves no public marketing at all — the seller and buyer find each other through relationships and close without the property ever appearing in a database. A private listing falls in between, shared inside a brokerage or closed agent-to-agent platform but never on Zillow or Realtor.com.
+
+### Can I find off-market homes in Austin without an agent?
+Yes, but the yield is inconsistent. You can mine Travis County probate filings, send targeted direct mail through TCAD records, and drive neighborhoods looking for distressed properties. Above $1.5M in neighborhoods like Westlake Hills and Barton Creek, however, sellers transact through trusted broker relationships, so working with a firm already inside those channels is typically the only path to consistent access.
+`,
+    author: "Taylor Sherwood",
+    date: "2026-04-16",
+    readTime: "10 min read",
+    category: "MARKET INSIGHTS",
+    image: blogOffMarketPrivacy
+  },
   {
     id: "best-luxury-neighborhoods-austin-texas",
     title: "Best Luxury Neighborhoods in Austin Texas",

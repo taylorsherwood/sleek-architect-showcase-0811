@@ -21,7 +21,7 @@ import { BlogPost } from "./blogPosts";
 
 export const seoBlogPosts: BlogPost[] = [
   {
-    id: "how-to-find-off-market-homes-in-austin-that-nobody-lists",
+    id: "find-off-market-homes-austin",
     title: "How to Find Off-Market Homes in Austin That Nobody Lists",
     metaTitle: "How to Find Off-Market Homes in Austin Nobody Lists",
     excerpt: "A practical guide to finding off-market homes in Austin: broker networks, county records, direct outreach, and when to work with a firm built around private transactions.",

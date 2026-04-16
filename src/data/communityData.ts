@@ -391,7 +391,7 @@ As Austin's tech economy expands, demand for walkable, centrally located neighbo
 ### Tarrytown vs Barton Creek
 
 [Barton Creek](/communities/barton-creek) appeals to buyers seeking gated country club living with championship golf — a fundamentally different lifestyle than Tarrytown's urban walkability. Barton Creek offers Eanes ISD and resort-caliber amenities, while Tarrytown delivers the convenience of central Austin living with local shops, restaurants, and cultural proximity.`,
-    relatedCommunities: ["westlake-hills", "lake-austin", "downtown-austin-condos", "rollingwood"],
+    relatedCommunities: ["westlake-hills", "lake-austin", "downtown", "rollingwood"],
     faqs: [
       { question: "What makes Tarrytown Austin a desirable neighborhood?", answer: "Tarrytown offers a rare combination of central location (minutes from downtown), tree-canopied walkable streets, excellent schools (Casis Elementary), proximity to Lady Bird Lake and Deep Eddy Pool, and eclectic architectural character spanning 1930s bungalows to contemporary estates." },
       { question: "Is Tarrytown a good place to buy a luxury home in Austin?", answer: "Yes. Tarrytown is one of Austin's most established luxury neighborhoods, prized for walkability, mature tree canopy, and the coveted Casis Elementary zone. Properties here have demonstrated strong appreciation driven by limited lot supply and intense buyer demand in the 78703 zip code." },
@@ -564,7 +564,7 @@ The proximity to downtown and South Congress makes properties attractive for:
 - Long-term rentals with strong demand
 - Corporate housing
 - Vacation rentals (where permitted by city regulations)`,
-    relatedCommunities: ["downtown-austin-condos", "tarrytown", "rollingwood", "westlake-hills"],
+    relatedCommunities: ["downtown", "tarrytown", "rollingwood", "westlake-hills"],
     faqs: [
       { question: "What is Travis Heights Austin known for?", answer: "Travis Heights is known for its eclectic architectural character, sweeping downtown skyline views, proximity to South Congress Avenue, creative community spirit, and historic charm. It's one of Austin's most iconic and sought-after neighborhoods." },
       { question: "Can you walk to South Congress from Travis Heights?", answer: "Yes. Travis Heights borders South Congress Avenue, making many of Austin's best restaurants, boutiques, coffee shops, and live music venues within easy walking or biking distance." },
@@ -959,7 +959,7 @@ The built-out neighborhood means supply will remain limited, supporting continue
 ### Cultural Premium
 
 The neighborhood's association with Austin's identity — live music, Barton Springs, ACL Festival — adds intangible value that supports long-term pricing.`,
-    relatedCommunities: ["barton-creek", "travis-heights", "downtown-austin-condos", "tarrytown"],
+    relatedCommunities: ["barton-creek", "travis-heights", "downtown", "tarrytown"],
     faqs: [
       { question: "What is the average home price in Zilker Austin?", answer: "Homes in Zilker range from approximately $800,000 for smaller bungalows to over $5 million for new-construction luxury homes. The median home price is approximately $1.2 million, with new builds frequently exceeding $600 per square foot." },
       { question: "What school district serves Zilker?", answer: "Zilker is served by Austin Independent School District. Neighborhood schools include Zilker Elementary, O. Henry Middle School, and Austin High School. Several private schools are also located nearby." },
@@ -1837,7 +1837,7 @@ Strong schools, lifestyle amenities, and Austin's continued growth support consi
 ### Bee Cave vs Steiner Ranch
 
 [Steiner Ranch](/communities/steiner-ranch) is a large master-planned community northeast of Bee Cave, served by Leander ISD. Steiner Ranch offers resort-style amenities and Lake Austin proximity at a lower price point than most Bee Cave options. Bee Cave provides Lake Travis ISD, a more upscale commercial corridor, and greater architectural diversity including custom estate opportunities.`,
-    relatedCommunities: ["spanish-oaks", "lake-travis", "dripping-springs", "westlake-hills"],
+    relatedCommunities: ["spanish-oaks", "lakeway", "lake-travis", "steiner-ranch"],
     faqs: [
       { question: "Is Bee Cave a good place to buy a luxury home near Austin?", answer: "Yes. Bee Cave offers Hill Country luxury living with Lake Travis ISD schools, upscale shopping and dining, and proximity to both Lake Travis recreation and central Austin. The community has seen strong appreciation driven by Austin's westward growth and infrastructure investment." },
       { question: "How does Bee Cave compare to nearby neighborhoods?", answer: "Bee Cave offers stronger commercial infrastructure than neighboring Lakeway, while Lakeway provides direct waterfront living. Barton Creek offers gated country club living with Eanes ISD. Steiner Ranch provides master-planned amenities at a lower price point. Bee Cave balances Hill Country space, school quality, and urban access." },

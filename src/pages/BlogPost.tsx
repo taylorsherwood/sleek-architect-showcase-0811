@@ -11,6 +11,12 @@ import AuthorBio from "@/components/AuthorBio";
 import BlogCTA from "@/components/BlogCTA";
 import RelatedInsights from "@/components/RelatedInsights";
 import BlogContent, { extractFAQsFromContent } from "@/components/BlogContent";
+import CommunityBoundaryMap from "@/components/CommunityBoundaryMap";
+
+/** Posts that should display a community boundary map below the hero image. */
+const BLOG_BOUNDARY_MAPS: Record<string, { slug: string; name: string }> = {
+  "best-neighborhoods-near-bee-cave": { slug: "bee-cave", name: "Bee Cave" },
+};
 
 const allPosts = [...seoBlogPosts, ...blogPosts];
 

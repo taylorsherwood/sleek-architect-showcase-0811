@@ -75,6 +75,15 @@
       @media(min-width:640px){.sm\:flex-row{flex-direction:row}}
       @media(min-width:768px){.md\:hidden{display:none}}
       @media(min-width:1024px){.lg\:block{display:block}.lg\:flex{display:flex}.lg\:hidden{display:none}}
+      /* Critical nav styles — prevents unstyled link flash (underlined URLs) before main CSS loads */
+      a{color:inherit;text-decoration:none}
+      button{font-family:inherit;background:none;border:none;padding:0;cursor:pointer;color:inherit}
+      nav{font-family:'Jost',sans-serif}
+      .fixed{position:fixed}.top-0{top:0}.left-0{left:0}.right-0{right:0}
+      .z-40{z-index:40}.z-50{z-index:50}
+      .h-20{height:5rem}
+      @media(min-width:768px){.md\:h-24{height:6rem}}
+      @media(min-width:1024px){.lg\:h-\[6\.5rem\]{height:6.5rem}}
     </style>
 
     <!-- RealScout widget styles (no script loaded until idle) -->

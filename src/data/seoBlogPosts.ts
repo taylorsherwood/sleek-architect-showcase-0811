@@ -1485,9 +1485,9 @@ Infrastructure is still catching up. Well, septic, and road conditions vary parc
 
 [Westlake](/communities/westlake-hills) isn't really a "comparison." It's a different category.
 
-You're buying proximity to downtown, top-tier schools, and one of the most stable luxury submarkets in Austin. Inventory stays tight, demand stays consistent, and pricing reflects that.
+You're buying proximity to downtown, top-tier Eanes ISD schools, and one of the most stable luxury submarkets in Austin. Inventory stays so tight that a meaningful share of the best homes here trade through [off-market channels in Austin](/off-market-real-estate-austin) before the public ever sees them — a dynamic we explore further in our breakdown of [Rollingwood vs Westlake Hills](/blog/rollingwood-vs-westlake-hills).
 
-There's less guesswork here. You pay more upfront, but you're stepping into one of the most resilient areas in the city.
+There's less guesswork here. You pay more upfront, but you're stepping into one of the most resilient areas in the city. For buyers weighing the lake side of this equation, the [Lake Austin vs Lake Travis](/blog/lake-austin-vs-lake-travis) comparison is a useful next read.
 
 :::best-for
 Buyers who value location, schools, and long-term stability over getting a deal.
@@ -1836,7 +1836,7 @@ That is also why many of the best opportunities never become widely marketed. Ow
 
 Lake Austin is often spoken about as if it were one market. It is not. The differences between sections of the lake are meaningful, and they affect both lifestyle and liquidity.
 
-In [Westlake](/communities/westlake-hills)-adjacent stretches, demand tends to stay especially durable because buyers are balancing waterfront living with proximity to central Austin. These homes attract executives, founders, and relocators who want immediate access to the city without giving up privacy. In these pockets, even non-waterfront properties with commanding views can trade at strong levels because the broader location carries status and long-term demand support.
+In [Westlake](/communities/westlake-hills)-adjacent stretches, demand tends to stay especially durable because buyers are balancing waterfront living with proximity to central Austin. These homes attract executives, founders, and relocators who want immediate access to the city without giving up privacy — a pattern we examine more closely in our [Rollingwood vs Westlake Hills](/blog/rollingwood-vs-westlake-hills) comparison. In these pockets, even non-waterfront properties with commanding views can trade at strong levels because the broader location carries status and long-term demand support.
 
 Further along the lake, value can shift toward estate scale, larger land holdings, or a more resort-like experience. Some buyers prefer that remove from the city. Others see it as a compromise if daily convenience matters. Neither is inherently better. It depends on whether the property is being used as a primary residence, a legacy hold, or a lifestyle-driven second home within the metro.
 
@@ -1862,7 +1862,7 @@ There is also a difference between a property being expensive and being importan
 
 ## The role of off-market inventory on Lake Austin
 
-In lake austin luxury real estate, [off-market access](/off-market-real-estate-austin) is not a nice extra. It is often central to the search.
+In lake austin luxury real estate, [off-market access](/off-market-real-estate-austin) is not a nice extra. It is often central to the search. For a deeper look at how this hidden inventory behaves across the metro, see our analysis of [how to find off-market homes in Austin](/blog/find-off-market-homes-austin).
 
 Some of that is driven by privacy. High-profile owners may prefer discretion. Some of it is strategic. Owners may want to test pricing with a limited audience before deciding whether to launch publicly. And some of it is simply cultural. In tightly held luxury enclaves, strong properties often move through trusted advisor networks before the broader market ever sees them.
 
@@ -1909,7 +1909,7 @@ A true luxury brokerage is not defined by polished marketing alone. It is define
 
 In practice, that means identifying opportunities before they become broadly visible, understanding which streets and pockets outperform within a neighborhood, and knowing how to position a property to the right buyer pool rather than the widest one. The difference is subtle from the outside, but significant in the result.
 
-Many firms can present a high-end listing. Fewer can explain why one modern home in [Tarrytown](/communities/tarrytown) trades quickly while a similar house nearby sits. Fewer still can advise a buyer whether a particular [off-market opportunity](/off-market-real-estate-austin) is truly scarce or simply being framed that way. In luxury real estate, information is rarely the issue. Interpretation is.
+Many firms can present a high-end listing. Fewer can explain why one modern home in [Tarrytown](/communities/tarrytown) trades quickly while a similar house nearby sits — a dynamic we explore in our [Tarrytown vs Bryker Woods](/blog/tarrytown-vs-bryker-woods) comparison. Fewer still can advise a buyer whether a particular [off-market opportunity](/off-market-real-estate-austin) is truly scarce or simply being framed that way. In luxury real estate, information is rarely the issue. Interpretation is.
 
 ## Why Austin requires a different level of luxury brokerage
 
@@ -1947,7 +1947,7 @@ A polished campaign cannot solve a strategy problem. But precise positioning can
 
 ## Micro-market intelligence matters more than broad market headlines
 
-Luxury clients are often overexposed to general real estate commentary and underexposed to useful local insight. Broad headlines can suggest softness or strength, but they rarely explain what is happening within the [neighborhoods](/communities) where actual capital is being deployed.
+Luxury clients are often overexposed to general real estate commentary and underexposed to useful local insight. Broad headlines can suggest softness or strength, but they rarely explain what is happening within the [neighborhoods](/communities) where actual capital is being deployed — a gap our [Austin luxury real estate market outlook](/blog/austin-luxury-real-estate-market-outlook) is built to address.
 
 For example, the premium paid for new construction versus renovated legacy homes does not move uniformly across Austin. In some enclaves, buyers will stretch aggressively for turnkey product because quality new inventory is limited. In others, the lot and location still dominate, and a renovation path is acceptable if the basis is right.
 

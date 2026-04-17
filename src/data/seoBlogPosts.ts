@@ -2086,7 +2086,7 @@ This is why private listings are not simply about withholding a property from th
 
 Serious buyers often assume their search is comprehensive because they are monitoring public inventory closely. In the [luxury segment](/austin-luxury-homes-for-sale), that assumption can be expensive.
 
-Private listings real estate gives buyers access to a second market running parallel to the visible one. Some of the best homes trade there because sellers prefer confidentiality, because agents are matching opportunities directly, or because the property is being positioned selectively before any broader rollout. For a deeper look at how this hidden market behaves, see our analysis of the [off-market landscape across Austin's neighborhoods](/blog/off-market-real-estate-austin) and the practical guide to [finding off-market homes in Austin](/blog/find-off-market-homes-austin).
+Private listings real estate gives buyers access to a second market running parallel to the visible one. Some of the best homes trade there because sellers prefer confidentiality, because agents are matching opportunities directly, or because the property is being positioned selectively before any broader rollout. For a deeper look at how this hidden market behaves, see our [definitive guide to off market homes in Austin](/blog/find-off-market-homes-austin) and the [private off-market landing page](/off-market-real-estate-austin) for direct access.
 
 That access can change the search in meaningful ways. Buyers may avoid the frenzy that follows public launch. They may gain earlier insight into seller motivation. They may also encounter inventory that would have been overlooked in a portal-based search because it never entered that ecosystem in the first place.
 

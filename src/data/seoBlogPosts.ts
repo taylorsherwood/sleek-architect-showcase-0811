@@ -17,6 +17,7 @@ import blogBeeCaveVsLakeway from "@/assets/bee-cave-vs-lakeway.jpg";
 import blogMarketOutlook from "@/assets/blog-market-outlook.webp";
 import blogOffMarketPrivacy from "@/assets/blog-off-market-privacy.webp";
 import blogBeeCaveHero from "@/assets/bee-cave-hero.webp";
+import blogPrivateListingsHero from "@/assets/blog-private-listings-hero.webp";
 
 import { BlogPost } from "./blogPosts";
 
@@ -1982,5 +1983,18 @@ Austin's luxury market still rewards bold moves, but only when they are informed
     readTime: "10 min read",
     category: "MARKET INSIGHTS",
     image: "/images/blog/luxury-real-estate-brokerage-austin.webp"
+  },
+  {
+    id: "private-listings-real-estate-explained",
+    title: "Private Listings Real Estate Explained",
+    metaTitle: "Private Listings Real Estate Explained | Echelon Property Group",
+    excerpt: "Private listings real estate explained: how off-market and pocket listings work in Austin, who sees them, and how to access private inventory.",
+    content: `PLACEHOLDER — paste body copy here.`,
+    author: "Taylor Sherwood",
+    date: "2026-04-17",
+    readTime: "8 min read",
+    category: "MARKET INSIGHTS",
+    image: blogPrivateListingsHero,
+    heroImage: blogPrivateListingsHero
   }
 ];

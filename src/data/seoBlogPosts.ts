@@ -1033,18 +1033,6 @@ While the market fluctuates, Austin has experienced long-term appreciation drive
     href: "/why-billionaires-are-moving-to-austin"
   },
   {
-    id: "how-to-find-off-market-real-estate-deals-austin-2026",
-    title: "How to Find Off-Market Real Estate Deals in Austin (2026 Investor Playbook)",
-    excerpt: "Learn how investors, developers, and luxury buyers find off-market real estate deals in Austin. Explore proven strategies, private deal sourcing, and Austin investment opportunities.",
-    content: "",
-    author: "Taylor Sherwood",
-    date: "2026-03-20",
-    readTime: "14 min read",
-    category: "INVESTMENT",
-    image: heroSkyline,
-    href: "/blog/how-to-find-off-market-real-estate-deals-austin-2026"
-  },
-  {
     id: "rollingwood-vs-westlake-hills",
     title: "Rollingwood vs Westlake Hills: Which Austin Luxury Neighborhood Is Right for You?",
     excerpt: "Compare Rollingwood and Westlake Hills to find the right Austin luxury neighborhood. Explore lifestyle, home styles, location advantages, and long-term value.",

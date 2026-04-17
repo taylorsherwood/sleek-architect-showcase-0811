@@ -358,7 +358,7 @@ const Invest = () => {
         {/* overlay */}
         <div className="absolute inset-0 md:hidden" style={{ zIndex: 1, background: 'rgba(12,15,36,0.25)' }} />
         <div className="absolute inset-0 hidden md:block" style={{ zIndex: 1, background: 'linear-gradient(to right, rgba(12,15,36,0.55) 0%, rgba(12,15,36,0.25) 40%, transparent 65%)' }} />
-        <div className="relative container mx-auto px-6 pb-16" style={{ zIndex: 2 }}>
+        <div className="relative container mx-auto px-6 pb-[14vh] md:pb-[18vh]" style={{ zIndex: 2 }}>
           <div className="max-w-xl mb-14">
             <p className="text-minimal text-gold mb-4 ml-1" style={{ textShadow: "0 0 20px rgba(0,0,0,0.6), 0 1px 4px rgba(0,0,0,0.4)" }}>INVESTOR ACCESS</p>
             <h1 className="text-3xl sm:text-4xl md:text-6xl font-display font-normal text-primary-foreground leading-[1.1] mb-6" style={{ textShadow: "0 2px 10px rgba(0,0,0,0.5), 0 0 30px rgba(0,0,0,0.3), 0 1px 3px rgba(0,0,0,0.3)" }}>

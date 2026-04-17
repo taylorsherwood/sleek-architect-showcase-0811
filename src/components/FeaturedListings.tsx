@@ -15,7 +15,7 @@ const listings = [
   baths: 4,
   sqft: "4,147",
   link: "https://www.bartoncreekvilla.com",
-  badgeLabel: "Private Listing",
+  badgeLabel: "LUXE LISTING",
   isOffMarketCard: false
 },
 {

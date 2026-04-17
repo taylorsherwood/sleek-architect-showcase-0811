@@ -90,6 +90,15 @@ const InvestHeroSection = ({ children }: Props) => {
         )}
       </div>
 
+      {/* Mobile-only gradient overlay matching home page */}
+      <div
+        className="absolute inset-0 lg:hidden pointer-events-none"
+        style={{
+          zIndex: 1,
+          background: 'linear-gradient(to bottom, rgba(10,14,25,0.35) 0%, rgba(10,14,25,0.45) 45%, rgba(10,14,25,0.70) 100%)',
+        }}
+      />
+
       {children}
     </section>
   );

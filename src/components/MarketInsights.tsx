@@ -9,10 +9,10 @@ const featuredArticles = [
     category: "Market Insights",
   },
   {
-    to: "/blog/how-to-find-off-market-real-estate-deals-austin-2026",
-    title: "How to Find Off-Market Deals in Austin",
-    excerpt: "An investor playbook for sourcing pre-market and pocket listings across Austin's competitive landscape.",
-    category: "Investment",
+    to: "/blog/find-off-market-homes-austin",
+    title: "Off Market Homes in Austin",
+    excerpt: "The definitive 2026 guide to private listings, broker networks, and how access really works above $1.5M.",
+    category: "Off-Market",
   },
   {
     to: "/why-billionaires-are-moving-to-austin",

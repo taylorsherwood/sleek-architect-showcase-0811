@@ -98,8 +98,7 @@ const sections = [
       { to: "/austin-luxury-real-estate-market-report", label: "Austin Luxury Real Estate Market Report" },
       { to: "/blog/austin-luxury-market-trends", label: "Austin Luxury Market Trends (2026)" },
       { to: "/why-billionaires-are-moving-to-austin", label: "Why Billionaires Are Moving to Austin" },
-      { to: "/blog/how-to-find-off-market-real-estate-deals-austin-2026", label: "Off-Market Deals Playbook 2026" },
-      { to: "/blog/find-off-market-homes-austin", label: "How to Find Off-Market Homes in Austin" },
+      { to: "/blog/find-off-market-homes-austin", label: "Off Market Homes in Austin (Definitive Guide)" },
     ],
   },
   {

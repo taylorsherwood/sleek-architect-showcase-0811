@@ -47,7 +47,6 @@ const staticRoutes = [
   "/why-billionaires-are-moving-to-austin",
   "/austin-land-development-opportunities",
   "/private-opportunities",
-  "/blog/how-to-find-off-market-real-estate-deals-austin-2026",
   "/blog/find-off-market-homes-austin",
   "/sitemap",
   "/best-luxury-neighborhoods-in-austin",

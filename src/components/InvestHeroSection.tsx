@@ -13,7 +13,7 @@ const InvestHeroSection = ({ children }: Props) => {
   const [videoReady, setVideoReady] = useState(false);
 
   useEffect(() => {
-    if (window.innerWidth >= 768) setUseVideo(true);
+    if (window.innerWidth >= 1024) setUseVideo(true);
   }, []);
 
   // Play video as soon as it's ready
@@ -80,7 +80,7 @@ const InvestHeroSection = ({ children }: Props) => {
         ) : (
           <img
             src="/images/invest-hero-poster-mobile.webp"
-            alt="Austin investment real estate"
+            alt="Texas State Capitol on Congress Avenue, Austin"
             className="w-full h-full object-cover object-center"
             loading="eager"
             fetchPriority="high"

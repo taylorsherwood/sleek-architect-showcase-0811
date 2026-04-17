@@ -69,6 +69,7 @@ const InvestHeroSection = ({ children }: Props) => {
           <video
             ref={videoRef}
             className="w-full h-full object-cover object-top"
+            style={{ transform: "scale(1.08)", transformOrigin: "center top" }}
             autoPlay
             muted
             playsInline

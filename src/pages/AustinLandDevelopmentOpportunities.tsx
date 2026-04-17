@@ -365,7 +365,7 @@ const AustinLandDevelopmentOpportunities = () => {
           <div className="mt-8 flex flex-wrap justify-center gap-x-5 gap-y-2">
             <Link to="/off-market-real-estate-austin" className="text-white/30 hover:text-white/60 transition-colors text-xs tracking-[0.1em] uppercase underline underline-offset-4">Private opportunities</Link>
             <Link to="/land" className="text-white/30 hover:text-white/60 transition-colors text-xs tracking-[0.1em] uppercase underline underline-offset-4">Land & investment</Link>
-            <Link to="/blog/how-to-find-off-market-real-estate-deals-austin-2026" className="text-white/30 hover:text-white/60 transition-colors text-xs tracking-[0.1em] uppercase underline underline-offset-4">Off-market guide</Link>
+            <Link to="/blog/find-off-market-homes-austin" className="text-white/30 hover:text-white/60 transition-colors text-xs tracking-[0.1em] uppercase underline underline-offset-4">Off-market guide</Link>
           </div>
         </div>
       </section>

@@ -34,7 +34,7 @@ const allInsightLinks: InsightLink[] = [
   { to: "/blog/austin-luxury-real-estate-market-forecast", label: "Austin luxury real estate market forecast", topics: ["market", "luxury", "forecast"] },
   { to: "/blog/top-investment-neighborhoods-austin", label: "Top investment neighborhoods in Austin", topics: ["investment", "neighborhoods"] },
   { to: "/austin-multifamily-report-2026", label: "Austin multifamily market outlook 2026", topics: ["investment", "commercial", "market"] },
-  { to: "/blog/how-to-find-off-market-real-estate-deals-austin-2026", label: "How to find off-market deals in Austin", topics: ["off-market", "investment", "investor"] },
+  { to: "/blog/find-off-market-homes-austin", label: "How to find off-market homes in Austin", topics: ["off-market", "investment", "investor"] },
   { to: "/why-billionaires-are-moving-to-austin", label: "Why billionaires are moving to Austin", topics: ["relocation", "luxury", "moving"] },
   { to: "/austin-luxury-market-report", label: "Austin luxury market report", topics: ["market", "luxury", "forecast"] },
   { to: "/blog/private-listings-austin-buyers-actually-want", label: "Private listings Austin buyers actually want", topics: ["off-market", "private", "luxury", "homes"] },

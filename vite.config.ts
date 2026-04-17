@@ -19,7 +19,7 @@ const prerenderRoutes = [
   "/listings/commercial-investment-austin",
   "/communities",
   "/blog",
-  "/blog/how-to-find-off-market-real-estate-deals-austin-2026",
+  "/blog/find-off-market-homes-austin",
   "/contact",
   "/search",
   "/land",
@@ -125,7 +125,6 @@ const getSitemapRoutes = () => {
       ...communitySlugs.map((slug) => `/communities/${slug}`),
       ...blogIds.map((id) => `/blog/${id}`),
       // Standalone blog-route editorial pillars
-      "/blog/how-to-find-off-market-real-estate-deals-austin-2026",
       "/blog/austin-luxury-market-trends",
     ])
   );

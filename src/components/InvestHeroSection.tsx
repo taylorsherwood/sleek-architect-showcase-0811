@@ -62,7 +62,7 @@ const InvestHeroSection = ({ children }: Props) => {
   return (
     <section
       ref={sectionRef}
-      className="relative h-screen flex flex-col justify-center overflow-hidden bg-primary"
+      className="relative h-screen flex flex-col justify-end pb-[18vh] overflow-hidden bg-primary"
     >
       <div className="absolute inset-0" style={{ zIndex: 0 }}>
         {useVideo ? (

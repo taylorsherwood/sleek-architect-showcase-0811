@@ -594,7 +594,7 @@ const Buy = () => {
               <div className="space-y-6">
                 <div>
                   <h4 className="text-minimal text-primary-foreground/50 mb-1">EMAIL</h4>
-                  <a href="mailto:taylor@echelonpropertygroup.com" className="text-primary-foreground/80 hover:text-gold transition-colors duration-300">
+                  <a href="mailto:info@echelonpropertygroup.com" className="text-primary-foreground/80 hover:text-gold transition-colors duration-300">
                     Send an Email
                   </a>
                 </div>

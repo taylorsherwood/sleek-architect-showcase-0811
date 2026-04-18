@@ -169,7 +169,7 @@ const FloatingContact = () => {
                 Call or Text
               </a>
               <a
-                href="mailto:taylor@echelonpropertygroup.com"
+                href="mailto:info@echelonpropertygroup.com"
                 className="flex items-center justify-center gap-3 w-full py-3.5 border border-[hsl(var(--gold)/0.3)] text-foreground text-[10.5px] tracking-[0.2em] uppercase font-light hover:border-[hsl(var(--gold)/0.6)] hover:bg-[hsl(var(--gold)/0.04)] transition-all duration-300 rounded-[2px]">
                 <Mail className="w-3.5 h-3.5" strokeWidth={1.5} />
                 Send an Email

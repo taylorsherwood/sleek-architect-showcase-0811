@@ -104,7 +104,7 @@ const Contact = () => {
         { name: "Contact", url: "https://www.echelonpropertygroup.com/contact" }
       ])} />
       <SchemaMarkup schema={createFAQSchema([
-        { question: "How do I schedule a consultation with Echelon Property Group?", answer: "Use the contact form above, call us at (512) 661-3843, or email taylor@echelonpropertygroup.com. We typically respond within a few hours during business days and are happy to arrange in-person, phone, or video consultations based on your preference." },
+        { question: "How do I schedule a consultation with Echelon Property Group?", answer: "Use the contact form above, call us at (512) 661-3843, or email info@echelonpropertygroup.com. We typically respond within a few hours during business days and are happy to arrange in-person, phone, or video consultations based on your preference." },
         { question: "Do you work with out-of-state buyers?", answer: "Absolutely. A significant portion of our clients relocate to Austin from California, New York, Chicago, and other major metros. We provide virtual property tours, comprehensive neighborhood analysis, and full-service transaction management for remote buyers." },
         { question: "What areas of Austin do you cover?", answer: "We serve all of Austin's premier neighborhoods including Westlake Hills, Barton Creek, Lake Austin, Tarrytown, Rollingwood, Travis Heights, Downtown Austin, Dripping Springs, Spanish Oaks, and the greater Texas Hill Country." },
         { question: "Is there a cost for an initial consultation?", answer: "No. Our initial consultations are always complimentary and come with no obligation. We believe the best client relationships start with honest conversation about your goals and how we can help." },
@@ -164,7 +164,7 @@ const Contact = () => {
                 <div className="space-y-8">
                   <div>
                     <h2 className="text-minimal text-muted-foreground mb-2">EMAIL</h2>
-                    <a href="mailto:taylor@echelonpropertygroup.com" className="text-lg hover:text-gold transition-colors duration-300">Send an Email</a>
+                    <a href="mailto:info@echelonpropertygroup.com" className="text-lg hover:text-gold transition-colors duration-300">Send an Email</a>
                   </div>
                   <div>
                     <h2 className="text-minimal text-muted-foreground mb-2">PHONE</h2>

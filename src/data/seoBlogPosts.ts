@@ -2245,13 +2245,17 @@ There is also the question of price discovery. In a public listing environment, 
 
 The decision usually comes down to the [seller's hierarchy of goals](/sell). If discretion is paramount, a private listing may be the right vehicle even if it narrows the buyer pool. If maximizing competition is the priority, public distribution typically wins. The honest answer is rarely binary — many of the strongest outcomes begin privately and shift public if broader exposure is warranted, preserving optionality without forfeiting it.
 
-## Private Listing vs. Off-Market Sale: The Distinction Matters
+## Private Listing vs. Off-Market vs. Pocket Listing
 
-These terms are often used interchangeably, but they are not identical. A private listing generally means the property is actively for sale, just marketed discreetly. An [off-market opportunity](/off-market-real-estate-austin) can be less formal — it may involve an owner who would consider selling under the right terms, even though the home is not actively listed.
+These three terms get used interchangeably and should not be. Each describes a different posture toward the market.
 
-That distinction shapes buyer expectations. A true private listing usually has structure, pricing intent, and a seller prepared to transact. An off-market conversation may be more exploratory.
+A **private listing** is actively for sale. The seller has engaged an advisor, set pricing, defined a buyer profile, and is prepared to transact. The exposure is controlled, but the intent is unambiguous.
 
-For buyers, both categories can be valuable, but they require experienced navigation. The strength of the opportunity depends on how real the seller's intent is and how well the advisor frames the approach. For a fuller breakdown, our [private listings real estate guide](/blog/private-listings-real-estate-explained) covers how each channel actually behaves.
+An **[off-market opportunity](/off-market-real-estate-austin)** is often less formal. The home may not be listed at all. The owner might consider selling under the right terms — price, timing, structure — but has not committed to a sale. These conversations are exploratory by nature.
+
+A **pocket listing** sits between the two. It is typically a property an agent has been authorized to shop quietly inside their own network, often before any formal listing strategy is finalized. Pocket listings can convert into private listings or never reach the public market at all.
+
+The distinction matters because buyer expectations should adjust accordingly. A true private listing has structure and pricing intent. An off-market conversation requires patience and a longer runway. A pocket listing falls somewhere in between, and its strength depends almost entirely on the agent presenting it. For a fuller breakdown, our [private listings real estate guide](/blog/private-listings-real-estate-explained) covers how each channel actually behaves.
 
 ## Where Private Listings Work Best
 

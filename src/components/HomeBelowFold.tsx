@@ -992,6 +992,12 @@ const editorialArticles = [
     image: blogLakeAustinVsLakeTravis,
     href: "/blog/lake-austin-vs-lake-travis",
   },
+  {
+    title: "What Is a Private Listing in Real Estate?",
+    description: "How off-market and private listings actually work in Austin's upper market.",
+    image: blogWhatIsPrivateListing,
+    href: "/blog/what-is-private-listing-in-real-estate",
+  },
 ];
 
 const EditorialInsights = () => (

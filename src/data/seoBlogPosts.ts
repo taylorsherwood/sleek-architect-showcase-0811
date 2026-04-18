@@ -2233,17 +2233,17 @@ Heading into mid-2026, Austin's public MLS inventory above $3M remains uneven. M
 
 Recent broker activity inside [private listing networks](/blog/find-off-market-homes-austin) suggests a measurable share of luxury closings above $4M are sourced before any public marketing begins. For sellers, that signals room to test pricing quietly. For buyers, it underscores how much of the real opportunity sits outside the visible market.
 
-## The Trade-Offs Sellers Should Understand
+## The Tradeoff Most Sellers Overlook
 
-Private listings carry clear advantages, but they are not universally better. The main trade-off is reach. By limiting exposure, the seller may also limit the number of potential buyers who discover the property.
+Private listings carry clear advantages, but they are not universally better. The tradeoff most sellers underestimate is reach — and what reduced reach actually does to a sale.
 
-Sometimes that is the point. Other times, it suppresses competition that could have pushed the price higher in a public campaign. If a home has broad appeal, public visibility may create stronger leverage.
+Fewer eyes on a property typically means fewer offers. In a public campaign, broad exposure produces parallel interest, and parallel interest is what creates pricing tension. In a private channel, offers tend to arrive sequentially rather than simultaneously. That can suppress the competitive dynamic that pushes a final number higher than the seller's original expectation.
 
-There is also the question of price discovery. In a public listing environment, the market speaks quickly through traffic, inquiries, and offers. In a private listing, feedback is narrower. That can be useful when testing positioning, but it can also make it harder to know whether pricing is fully optimized.
+Reduced reach also concentrates risk on the advisor's network. If the agent's relationships in the relevant segment are thin, a private strategy quietly underperforms — and the seller often never knows what a fuller market would have produced. The strategy is only as strong as the buyer pool the advisor can actually reach.
 
-The decision usually comes down to the [seller's hierarchy of goals](/sell). If discretion is paramount, a private listing may be the right vehicle even if it narrows the buyer pool. If maximizing exposure is the priority, public distribution may be more effective.
+There is also the question of price discovery. In a public listing environment, the market speaks quickly through traffic, inquiries, and offers. In a private listing, feedback is narrower and slower. That can be useful when testing positioning, but it can also make it harder to know whether pricing is fully optimized before a deal closes.
 
-Some of the strongest strategies begin privately and shift public if broader exposure is warranted. That sequence preserves optionality while still allowing for full-market competition later.
+The decision usually comes down to the [seller's hierarchy of goals](/sell). If discretion is paramount, a private listing may be the right vehicle even if it narrows the buyer pool. If maximizing competition is the priority, public distribution typically wins. The honest answer is rarely binary — many of the strongest outcomes begin privately and shift public if broader exposure is warranted, preserving optionality without forfeiting it.
 
 ## Private Listing vs. Off-Market Sale: The Distinction Matters
 

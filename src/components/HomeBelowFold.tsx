@@ -20,6 +20,7 @@ import echelonWatermarkLogo from "@/assets/echelon-watermark-logo.png";
 const blogRollingwoodVsWestlake = new URL("@/assets/blog-rollingwood-vs-westlake.jpg", import.meta.url).href;
 const blogTarrytownVsBrykerWoods = new URL("@/assets/tarrytown-bryker-woods.avif", import.meta.url).href;
 const blogLakeAustinVsLakeTravis = new URL("@/assets/lake-travis-sunset.jpg", import.meta.url).href;
+const blogWhatIsPrivateListing = new URL("@/assets/blog-what-is-private-listing-hero.webp", import.meta.url).href;
 
 const Footer = lazy(() => import("@/components/Footer"));
 
@@ -991,6 +992,12 @@ const editorialArticles = [
     image: blogLakeAustinVsLakeTravis,
     href: "/blog/lake-austin-vs-lake-travis",
   },
+  {
+    title: "What Is a Private Listing in Real Estate?",
+    description: "How off-market and private listings actually work in Austin's upper market.",
+    image: blogWhatIsPrivateListing,
+    href: "/blog/what-is-private-listing-in-real-estate",
+  },
 ];
 
 const EditorialInsights = () => (
@@ -1013,7 +1020,7 @@ const EditorialInsights = () => (
           </ScrollReveal>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           {editorialArticles.map((article, i) => (
             <ScrollReveal key={article.href} delay={i * 80}>
               <Link to={article.href} className="group block">

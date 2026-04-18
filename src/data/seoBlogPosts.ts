@@ -2177,6 +2177,22 @@ There is also the matter of control. A public launch generates a high volume of 
 
 In Austin, private strategy also fits when a seller wants to reach a very specific buyer pool rather than the general market. In tightly held enclaves like [Westlake Hills](/communities/westlake-hills), [Barton Creek](/communities/barton-creek), and the [Lake Austin](/communities/lake-austin) corridor, certain homes trade because the right person sees them, not because thousands do.
 
+## When a Private Listing Strategy Makes Sense
+
+Not every home benefits from a private approach, and not every seller should default to one. The strategy fits a defined set of scenarios where controlled exposure produces a measurably better outcome than a public launch.
+
+**Privacy is non-negotiable.** Public figures, executives, founders, and families with security considerations often cannot afford to have interior photography, floor plans, or addresses circulating across portals indexed by the public.
+
+**The property is genuinely high-end or unusual.** Architect-driven estates, gated compounds, view-protected lake frontage, and homes with bespoke finishes rarely benefit from being commoditized inside a portal grid alongside standard inventory. Quiet positioning preserves narrative.
+
+**The seller wants to test pricing without public consequences.** A home that sits publicly accumulates days on market, and price reductions become part of the permanent record. A private channel allows pricing to be calibrated against real buyer feedback before any public footprint exists.
+
+**The home is tenant-occupied or actively in use.** When showings need to be choreographed around a tenant lease, an executive's travel calendar, or active staff on property, broad MLS exposure creates friction that erodes both the seller's experience and the buyer's.
+
+**Showings need to be controlled.** Some sellers want every visitor pre-qualified financially and intentionally. Private marketing makes that the default rather than the exception.
+
+The common thread is intent. A private listing strategy works when the seller has a specific outcome in mind that public exposure would actively undermine.
+
 ## Why Buyers Pursue Private Listings
 
 For buyers, private listings represent access. Not every notable property is publicly available, and many of the most compelling opportunities move quietly through trusted networks before reaching a broader audience.

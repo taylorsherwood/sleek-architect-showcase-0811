@@ -6,7 +6,7 @@ import downtownImg from "@/assets/community-downtown.jpg";
 import drippingSpringsImg from "@/assets/communities/dripping-springs.png";
 import hillCountryImg from "@/assets/community-hill-country.jpg";
 import zilkerImg from "@/assets/community-zilker-barton-springs.jpg";
-import westlakeHillsImg from "@/assets/community-westlake-hills.avif";
+import westlakeHillsImg from "@/assets/community-westlake-hills.webp";
 import bartonCreekImg from "@/assets/community-barton-creek.jpg";
 import bartonCreekCommunityImg from "@/assets/communities/barton-creek.jpg";
 import spanishOaksImg from "@/assets/communities/spanish-oaks.jpg";

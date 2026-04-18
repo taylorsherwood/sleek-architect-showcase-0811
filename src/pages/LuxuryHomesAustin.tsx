@@ -9,7 +9,7 @@ import FeaturedLuxuryListings from "@/components/FeaturedLuxuryListings";
 import RealScoutSearch from "@/components/RealScoutSearch";
 const FeaturedListings = lazy(() => import("@/components/FeaturedListings"));
 import communityBartonCreek from "@/assets/community-barton-creek.jpg";
-import communityWestlake from "@/assets/community-westlake-hills.avif";
+import communityWestlake from "@/assets/community-westlake-hills.webp";
 import communityLakeAustin from "@/assets/community-lake-austin.jpg";
 import communityRollingwood from "@/assets/community-rollingwood.jpg";
 

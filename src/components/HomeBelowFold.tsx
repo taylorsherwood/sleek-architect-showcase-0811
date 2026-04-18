@@ -1020,7 +1020,7 @@ const EditorialInsights = () => (
           </ScrollReveal>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           {editorialArticles.map((article, i) => (
             <ScrollReveal key={article.href} delay={i * 80}>
               <Link to={article.href} className="group block">

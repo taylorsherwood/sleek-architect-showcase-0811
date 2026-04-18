@@ -20,6 +20,7 @@ const prerenderRoutes = [
   "/communities",
   "/blog",
   "/blog/find-off-market-homes-austin",
+  "/blog/what-is-private-listing-in-real-estate",
   "/contact",
   "/search",
   "/land",

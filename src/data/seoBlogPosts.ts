@@ -2231,7 +2231,7 @@ The best private listings are intentional, not casual. The advisor should know w
 
 Heading into mid-2026, Austin's public MLS inventory above $3M remains uneven. Months of supply have stretched in parts of [Tarrytown](/communities/tarrytown) and West Austin, while truly elevated assets — clean lake frontage, gated estates, architect-driven new builds — continue to trade with limited public exposure.
 
-Recent broker activity inside [private listing networks](/blog/find-off-market-homes-austin) suggests a measurable share of luxury closings above $4M are sourced before any public marketing begins. For sellers, that signals room to test pricing quietly. For buyers, it underscores how much of the real opportunity sits outside the visible market.
+Recent broker activity inside [private listing networks](/blog/find-off-market-homes-austin) suggests a measurable share of luxury closings above $4M are sourced before any public marketing begins. For sellers, that signals room to test pricing quietly. For buyers, it underscores how much of the real opportunity sits outside the visible market — a dynamic we cover in detail on our [Austin off-market real estate](/off-market-real-estate-austin) page.
 
 ## The Tradeoff Most Sellers Overlook
 

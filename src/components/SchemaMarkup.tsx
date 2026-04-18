@@ -96,7 +96,7 @@ export const organizationSchema = {
   },
   "image": OG,
   "telephone": "+1-512-661-3843",
-  "email": "taylor@echelonpropertygroup.com",
+  "email": "info@echelonpropertygroup.com",
   "founder": {
     "@type": "Person",
     "@id": `${SITE}/#taylor`,
@@ -114,7 +114,7 @@ export const realEstateAgentSchema = {
   "description": "Austin Texas real estate brokerage specializing in luxury homes, residential real estate, and land development opportunities across Austin's most desirable neighborhoods.",
   "url": SITE,
   "telephone": "+1-512-661-3843",
-  "email": "taylor@echelonpropertygroup.com",
+  "email": "info@echelonpropertygroup.com",
   "image": OG,
   "logo": {
     "@type": "ImageObject",
@@ -156,7 +156,7 @@ export const taylorSherwoodSchema = {
   "description": "Austin real estate professional specializing in luxury homes, residential real estate, and land development opportunities across Austin's most desirable neighborhoods.",
   "url": `${SITE}/about`,
   "telephone": "+1-512-661-3843",
-  "email": "taylor@echelonpropertygroup.com",
+  "email": "info@echelonpropertygroup.com",
   "image": HEADSHOT,
   "worksFor": {
     "@type": "Organization",
@@ -190,7 +190,7 @@ export const localBusinessSchema = {
   "description": "Austin Texas real estate brokerage specializing in luxury homes, residential real estate, and land development opportunities across Austin's most desirable neighborhoods.",
   "url": SITE,
   "telephone": "+1-512-661-3843",
-  "email": "taylor@echelonpropertygroup.com",
+  "email": "info@echelonpropertygroup.com",
   "image": OG,
   "logo": {
     "@type": "ImageObject",

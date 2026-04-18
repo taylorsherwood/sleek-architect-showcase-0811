@@ -123,7 +123,7 @@ const PrivateOpportunitiesPage = () => {
                     </div>
                   </div>
                   <a
-                    href="mailto:taylor@echelonpropertygroup.com?subject=Private Opportunity Inquiry"
+                    href="mailto:info@echelonpropertygroup.com?subject=Private Opportunity Inquiry"
                     className="inline-block w-full text-center px-4 py-2.5 text-sm tracking-widest uppercase font-medium bg-primary text-primary-foreground rounded hover:bg-[hsl(var(--gold))] hover:text-white transition-all duration-200"
                   >
                     Request Details

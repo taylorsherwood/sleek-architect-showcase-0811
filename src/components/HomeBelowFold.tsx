@@ -1063,7 +1063,7 @@ const NoscriptFallback = () => (
           <li>Land acquisition and development advisory</li>
         </ul>
         <p>2105 East MLK Blvd Ste 227, Austin, Texas 78702</p>
-        <p>Email: <a href="mailto:taylor@echelonpropertygroup.com">Send an Email</a></p>
+        <p>Email: <a href="mailto:info@echelonpropertygroup.com">Send an Email</a></p>
         <p>Phone: <a href="tel:+15126613843">(512) 661-3843</a></p>
       </div>
     </section>

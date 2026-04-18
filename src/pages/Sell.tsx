@@ -667,7 +667,7 @@ const Sell = () => {
               <div className="space-y-6">
                 <div>
                   <h4 className="text-minimal text-primary-foreground/40 mb-1">EMAIL</h4>
-                  <a href="mailto:taylor@echelonpropertygroup.com" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                  <a href="mailto:info@echelonpropertygroup.com" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
                     Send an Email
                   </a>
                 </div>

@@ -20,6 +20,7 @@ import echelonWatermarkLogo from "@/assets/echelon-watermark-logo.png";
 const blogRollingwoodVsWestlake = new URL("@/assets/blog-rollingwood-vs-westlake.jpg", import.meta.url).href;
 const blogTarrytownVsBrykerWoods = new URL("@/assets/tarrytown-bryker-woods.avif", import.meta.url).href;
 const blogLakeAustinVsLakeTravis = new URL("@/assets/lake-travis-sunset.jpg", import.meta.url).href;
+const blogWhatIsPrivateListing = new URL("@/assets/blog-what-is-private-listing-hero.webp", import.meta.url).href;
 
 const Footer = lazy(() => import("@/components/Footer"));
 

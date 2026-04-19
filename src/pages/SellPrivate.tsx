@@ -238,36 +238,42 @@ const SellPrivate = () => {
       </section>
 
       {/* ─────────── TENSION STRIP ─────────── */}
-      <div className="h-6 md:h-8" aria-hidden="true" style={{ backgroundColor: IVORY }} />
+      <div className="h-3 md:h-4" aria-hidden="true" style={{ backgroundColor: IVORY }} />
       <section className="border-b" style={{ backgroundColor: IVORY, borderColor: "rgba(12,15,36,0.08)" }}>
-        <div className="container mx-auto px-6 py-12 md:py-16 max-w-5xl">
-          <div className="grid md:grid-cols-[18rem_1fr] gap-10 md:gap-16 items-start">
+        <div className="container mx-auto px-6 py-9 md:py-12 max-w-5xl">
+          <div className="grid md:grid-cols-[17rem_1fr] gap-8 md:gap-14 items-center">
             <div>
-              <p className="text-[hsl(var(--gold))] mb-4" style={eyebrowStyle}>
+              <p className="text-[hsl(var(--gold))] mb-3" style={eyebrowStyle}>
                 The Reality
               </p>
               <h2
-                className="font-display text-[1.5rem] md:text-[1.75rem] font-light leading-[1.2] tracking-tight"
+                className="font-display text-[1.4rem] md:text-[1.6rem] font-light leading-[1.18] tracking-tight"
                 style={{ color: NAVY }}
               >
-                Why Some Sellers Avoid the Open Market
+                Why Some Sellers<br />Avoid the Open Market
               </h2>
             </div>
-            <ul className="grid sm:grid-cols-2 gap-x-10 gap-y-4">
+            <ul className="divide-y" style={{ borderColor: "rgba(12,15,36,0.08)" }}>
               {[
                 "Privacy concerns",
                 "Avoiding constant showings and disruption",
                 "Not wanting to test pricing publicly",
                 "Uncertainty about timing",
-              ].map((item) => (
-                <li key={item} className="flex items-start gap-3">
+              ].map((item, i) => (
+                <li
+                  key={item}
+                  className="flex items-baseline gap-5 py-3 first:pt-0 last:pb-0 border-t first:border-t-0"
+                  style={{ borderColor: "rgba(12,15,36,0.08)" }}
+                >
                   <span
-                    className="w-[5px] h-[5px] rounded-full mt-[0.6rem] shrink-0"
-                    style={{ backgroundColor: "hsl(var(--gold))" }}
-                  />
+                    className="font-sans tracking-[0.18em] shrink-0 tabular-nums"
+                    style={{ fontSize: "0.62rem", color: "rgba(12,15,36,0.45)" }}
+                  >
+                    0{i + 1}
+                  </span>
                   <span
-                    className="text-[0.95rem] md:text-base font-light leading-[1.55]"
-                    style={{ color: "rgba(12,15,36,0.78)" }}
+                    className="text-[0.95rem] md:text-base font-light leading-[1.5]"
+                    style={{ color: "rgba(12,15,36,0.82)" }}
                   >
                     {item}
                   </span>
@@ -277,7 +283,7 @@ const SellPrivate = () => {
           </div>
         </div>
       </section>
-      <div className="h-6 md:h-8" aria-hidden="true" style={{ backgroundColor: IVORY }} />
+      <div className="h-3 md:h-4" aria-hidden="true" style={{ backgroundColor: IVORY }} />
 
       {/* ─────────── SECTION 1 — Before You List Publicly ─────────── */}
       <section className="py-13 md:py-18" style={{ backgroundColor: IVORY }}>

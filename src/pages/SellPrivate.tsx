@@ -170,7 +170,7 @@ const SellPrivate = () => {
             <source src={heroVideoMp4} type="video/mp4" />
           </video>
           {/* Dark overlay for hero text legibility */}
-          <div className="absolute inset-0" style={{ backgroundColor: "#000000", opacity: 0.38 }} />
+          <div className="absolute inset-0" style={{ backgroundColor: "#000000", opacity: 0.5 }} />
           <div
             className="absolute inset-0"
             style={{

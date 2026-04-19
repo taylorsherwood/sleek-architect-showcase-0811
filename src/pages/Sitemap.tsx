@@ -68,6 +68,7 @@ const sections = [
     links: [
       { to: "/buy-homes-austin", label: "Austin Home Buying Guide" },
       { to: "/sell-home-austin", label: "Austin Home Selling Guide" },
+      { to: "/sell-private", label: "Sell Your Home Privately in Austin" },
       { to: "/home-value-austin", label: "Free Austin Home Valuation" },
       { to: "/austin-luxury-homes-for-sale", label: "Austin Luxury Homes for Sale" },
       { to: "/luxury-real-estate-austin", label: "Luxury Real Estate in Austin" },

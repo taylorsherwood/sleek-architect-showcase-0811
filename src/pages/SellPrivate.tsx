@@ -274,7 +274,7 @@ const SellPrivate = () => {
                 Why Some Sellers Avoid the Open Market
               </h2>
             </div>
-            <ul className="grid sm:grid-cols-2 gap-x-8 gap-y-3.5">
+            <ul className="grid sm:grid-cols-2 sm:grid-rows-2 sm:grid-flow-col gap-x-8 gap-y-3.5">
               {[
                 "Privacy concerns",
                 "Not wanting to test pricing publicly",

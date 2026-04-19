@@ -27,7 +27,7 @@ const AboutAustinRealEstateAdvisory = () => {
         description="Echelon Property Group is an Austin, Texas real estate advisory firm specializing in off-market opportunities, luxury homes, and strategic acquisitions. Learn how we work."
         ogTitle="Austin Real Estate Advisory | Echelon Property Group"
         ogDescription="A focused advisory practice for buyers, sellers, and investors operating in Austin's most sought-after submarkets."
-        canonicalUrl={`${SITE}/about-austin-real-estate-advisory`}
+        canonical={`${SITE}/about-austin-real-estate-advisory`}
       />
       <SchemaMarkup
         schema={createBreadcrumbSchema([

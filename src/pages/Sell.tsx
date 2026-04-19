@@ -570,7 +570,7 @@ const Sell = () => {
                 <Link to="/land-for-sale-austin" className="text-foreground underline hover:text-muted-foreground">Land brokerage</Link> is a core competency, encompassing residential lots, ranch properties, Hill Country acreage, and entitled development parcels throughout the Austin MSA. We guide clients through zoning analysis, highest-and-best-use evaluation, and acquisition negotiation for properties ranging from single homesites to large-scale development tracts.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                If your property may be better suited for a renovation buyer or investor sale, <Link to="/invest" className="text-foreground underline hover:text-muted-foreground">explore our investor advisory approach</Link>.
+                If your property may be better suited for a renovation buyer or investor sale, <Link to="/invest" className="text-foreground underline hover:text-muted-foreground">explore our investor advisory approach</Link>. To understand how the broader practice operates across buyers, sellers, and investors, see <Link to="/about-austin-real-estate-advisory" className="text-foreground underline hover:text-muted-foreground">how we work as Austin real estate advisors</Link>.
               </p>
             </div>
           </div>

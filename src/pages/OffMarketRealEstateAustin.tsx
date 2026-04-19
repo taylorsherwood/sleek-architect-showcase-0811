@@ -431,7 +431,7 @@ const OffMarketRealEstateAustin = () => {
             Your Source for Off-Market Real Estate in Austin
           </h2>
           <p className="text-white/50 text-base leading-relaxed mb-12 max-w-2xl mx-auto">
-            Echelon Property Group is an Austin-based real estate advisory firm specializing in off-market transactions, luxury homes, and investment properties. We provide discreet, relationship-driven access to opportunities most buyers never see.
+            Echelon Property Group is an Austin-based real estate advisory firm specializing in off-market transactions, luxury homes, and investment properties. We provide discreet, relationship-driven access to opportunities most buyers never see — read more about <Link to="/about-austin-real-estate-advisory" className="text-white/70 underline underline-offset-4 hover:text-[hsl(var(--gold))] transition-colors">our advisory practice in Austin</Link>.
           </p>
           <div className="grid sm:grid-cols-3 gap-8">
             {[

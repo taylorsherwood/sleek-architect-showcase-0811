@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createBreadcrumbSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
@@ -24,6 +24,7 @@ const eyebrowStyle = {
 
 const SellPrivate = () => {
   const navigate = useNavigate();
+  const heroVideoRef = useRef<HTMLVideoElement>(null);
   const [form, setForm] = useState({
     name: "",
     address: "",
@@ -32,6 +33,30 @@ const SellPrivate = () => {
     timeline: "",
   });
   const [loading, setLoading] = useState(false);
+
+  // Replay hero video when it re-enters viewport (e.g., user scrolls back to top)
+  useEffect(() => {
+    const video = heroVideoRef.current;
+    if (!video) return;
+    let hasLeft = false;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0];
+        if (!entry.isIntersecting) {
+          hasLeft = true;
+          return;
+        }
+        if (hasLeft) {
+          video.currentTime = 0;
+          video.play().catch(() => {});
+          hasLeft = false;
+        }
+      },
+      { threshold: 0.4 }
+    );
+    observer.observe(video);
+    return () => observer.disconnect();
+  }, []);
 
   const fireConversion = () => {
     const gtagFn = (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag;
@@ -153,10 +178,10 @@ const SellPrivate = () => {
       <section className="relative min-h-[78vh] md:min-h-[82vh] flex items-center" style={{ backgroundColor: NAVY }}>
         <div className="absolute inset-0">
           <video
+            ref={heroVideoRef}
             className="w-full h-full object-cover"
             autoPlay
             muted
-            loop
             playsInline
             preload="metadata"
             poster={heroPoster}

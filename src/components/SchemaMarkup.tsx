@@ -79,6 +79,7 @@ const sameAs = [
   "https://www.instagram.com/theinvestorbroker",
   "https://www.linkedin.com/in/taylorsherwood/",
   "https://www.zillow.com/profile/TaylorSherwood512",
+  "https://www.realtor.com/realestateagents/5e50ed9a4cb1520012995024",
 ];
 
 export const organizationSchema = {

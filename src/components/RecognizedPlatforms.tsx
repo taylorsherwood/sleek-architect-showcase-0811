@@ -19,7 +19,7 @@ type Platform = {
 const defaultPlatforms: Platform[] = [
   { name: "Google Business Profile" },
   { name: "Zillow", url: "https://www.zillow.com/profile/TaylorSherwood512" },
-  { name: "Realtor.com" },
+  { name: "Realtor.com", url: "https://www.realtor.com/realestateagents/5e50ed9a4cb1520012995024" },
   { name: "LinkedIn", url: "https://www.linkedin.com/in/taylorsherwood/" },
   { name: "Instagram", url: "https://www.instagram.com/theinvestorbroker" },
   { name: "Yelp" },

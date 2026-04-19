@@ -127,14 +127,10 @@ const SellPrivate = () => {
       <button
         onClick={() => scrollTo("private-sale-form")}
         style={{ backgroundColor: "#f1ede4" }}
-        className="hidden lg:flex fixed bottom-8 right-7 z-[60] items-center gap-3 backdrop-blur-sm text-[hsl(var(--gold))] rounded-full pl-2 pr-6 py-1.5 shadow-[0_4px_20px_-4px_hsl(var(--foreground)/0.1),0_1px_3px_hsl(var(--foreground)/0.06)] hover:!bg-[hsl(var(--gold))] hover:text-background transition-all duration-500 ease-out group cursor-pointer border border-[hsl(var(--gold)/0.2)] hover:border-[hsl(var(--gold))]"
+        className="hidden lg:flex fixed bottom-8 right-7 z-[60] items-center backdrop-blur-sm text-[hsl(var(--gold))] rounded-full px-7 py-3.5 shadow-[0_4px_20px_-4px_hsl(var(--foreground)/0.1),0_1px_3px_hsl(var(--foreground)/0.06)] hover:!bg-[hsl(var(--gold))] hover:text-background transition-all duration-500 ease-out group cursor-pointer border border-[hsl(var(--gold)/0.2)] hover:border-[hsl(var(--gold))]"
         aria-label="Request a Private Sale Strategy"
       >
-        {/* Gold mark — replaces headshot */}
-        <span className="w-9 h-9 rounded-full flex items-center justify-center ring-[1.5px] ring-[hsl(var(--gold)/0.5)] group-hover:ring-background/80 transition-all duration-500 bg-[hsl(var(--gold)/0.08)] group-hover:bg-background/15">
-          <span className="w-1.5 h-1.5 rounded-full bg-[hsl(var(--gold))] group-hover:bg-background transition-colors duration-500" />
-        </span>
-        <span className="flex flex-col items-start pl-0.5">
+        <span className="flex flex-col items-start">
           <span
             className="text-[10px] font-semibold tracking-[0.2em] uppercase text-[hsl(var(--gold))] group-hover:text-background transition-colors duration-500 leading-tight"
             style={{ fontFamily: '"Jost", sans-serif' }}

@@ -286,38 +286,38 @@ const SellPrivate = () => {
       <div className="h-3 md:h-4" aria-hidden="true" style={{ backgroundColor: IVORY }} />
 
       {/* ─────────── SECTION 1 — Before You List Publicly ─────────── */}
-      <section className="py-13 md:py-18" style={{ backgroundColor: IVORY }}>
+      <section className="py-9 md:py-12" style={{ backgroundColor: IVORY }}>
         <div className="container mx-auto px-6 max-w-6xl">
-          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
             <div>
-              <p className="text-[hsl(var(--gold))] mb-5" style={eyebrowStyle}>
+              <p className="text-[hsl(var(--gold))] mb-4" style={eyebrowStyle}>
                 The Approach
               </p>
               <h2
-                className="font-display text-[1.7rem] md:text-[2.1rem] lg:text-[2.45rem] font-light leading-[1.15] mb-6 tracking-tight"
+                className="font-display text-[1.7rem] md:text-[2rem] lg:text-[2.3rem] font-light leading-[1.12] mb-5 tracking-tight"
                 style={{ color: NAVY }}
               >
                 Before You List Publicly
               </h2>
               <p
-                className="text-base md:text-[1.05rem] font-light leading-[1.7] mb-4"
+                className="text-base md:text-[1.05rem] font-light leading-[1.65] mb-3"
                 style={{ color: "rgba(12,15,36,0.82)" }}
               >
                 Not every home should start with broad public exposure.
               </p>
               <p
-                className="text-base font-light leading-[1.7] mb-7"
+                className="text-base font-light leading-[1.65] mb-6"
                 style={{ color: "rgba(12,15,36,0.72)" }}
               >
                 For some sellers, a more discreet approach creates better control, better timing, and a cleaner decision-making process.
               </p>
               <p
-                className="mb-4"
+                className="mb-3"
                 style={{ ...eyebrowStyle, color: "rgba(12,15,36,0.6)" }}
               >
                 A private sale strategy can help you
               </p>
-              <ul className="space-y-3 mb-7">
+              <ul className="space-y-2.5 mb-6">
                 {[
                   "Preserve privacy",
                   "Avoid unnecessary showings",
@@ -326,11 +326,11 @@ const SellPrivate = () => {
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3.5">
                     <span
-                      className="w-[5px] h-[5px] rounded-full mt-[0.65rem] shrink-0"
+                      className="w-[5px] h-[5px] rounded-full mt-[0.6rem] shrink-0"
                       style={{ backgroundColor: "hsl(var(--gold))" }}
                     />
                     <span
-                      className="text-base font-light leading-relaxed"
+                      className="text-base font-light leading-[1.55]"
                       style={{ color: "rgba(12,15,36,0.85)" }}
                     >
                       {item}
@@ -339,7 +339,7 @@ const SellPrivate = () => {
                 ))}
               </ul>
               <p
-                className="text-[0.98rem] md:text-base font-light leading-[1.75] italic border-t pt-5"
+                className="text-[0.98rem] md:text-base font-light leading-[1.7] italic border-t pt-4"
                 style={{ color: "rgba(12,15,36,0.72)", borderColor: "rgba(12,15,36,0.12)" }}
               >
                 In many cases, this approach creates stronger leverage, even if you ultimately decide to list publicly.
@@ -347,7 +347,7 @@ const SellPrivate = () => {
             </div>
 
             <div className="relative order-first lg:order-last">
-              <div className="aspect-[4/5] overflow-hidden" style={{ backgroundColor: "rgba(12,15,36,0.05)" }}>
+              <div className="aspect-[4/5] lg:aspect-[5/6] overflow-hidden" style={{ backgroundColor: "rgba(12,15,36,0.05)" }}>
                 <img
                   src={sectionImage}
                   alt="Refined Austin kitchen interior — discreet seller representation"
@@ -356,9 +356,8 @@ const SellPrivate = () => {
                   decoding="async"
                 />
               </div>
-              <div className="h-12 md:h-20" aria-hidden="true" />
               <div
-                className="hidden lg:block absolute -bottom-5 -left-5 w-24 h-px"
+                className="hidden lg:block absolute -bottom-4 -left-4 w-24 h-px"
                 style={{ background: "hsl(var(--gold))" }}
               />
             </div>

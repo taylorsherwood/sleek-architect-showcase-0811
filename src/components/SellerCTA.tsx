@@ -23,6 +23,15 @@ const SellerCTA = () => {
                 
                 GET YOUR FREE VALUATION REPORT
               </a>
+              <p className="mt-5 text-sm text-muted-foreground/80 leading-relaxed">
+                Considering selling?{" "}
+                <Link
+                  to="/sell-private"
+                  className="text-foreground border-b border-gold/40 hover:text-gold hover:border-gold transition-colors pb-[1px]"
+                >
+                  Explore a private approach.
+                </Link>
+              </p>
             </div>
             <div>
               <ul className="space-y-6">

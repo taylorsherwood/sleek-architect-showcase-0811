@@ -123,8 +123,18 @@ const SellPrivate = () => {
         </div>
       </header>
 
+      {/* ─────────── Sticky desktop CTA (minimal) ─────────── */}
+      <button
+        onClick={() => scrollTo("private-sale-form")}
+        className="hidden lg:inline-flex fixed bottom-7 right-7 z-40 items-center bg-[hsl(var(--gold))] hover:bg-[#F5F3EF] text-[#F5F3EF] hover:text-[hsl(var(--gold))] px-6 py-3 transition-colors duration-300 tracking-[0.22em] uppercase font-sans font-medium shadow-[0_8px_24px_rgba(12,15,36,0.18)]"
+        style={{ fontSize: "0.65rem" }}
+        aria-label="Request a Private Sale Strategy"
+      >
+        Request a Private Sale Strategy
+      </button>
+
       {/* ─────────── HERO ─────────── */}
-      <section className="relative min-h-[86vh] md:min-h-[88vh] flex items-center" style={{ backgroundColor: NAVY }}>
+      <section className="relative min-h-[78vh] md:min-h-[82vh] flex items-center" style={{ backgroundColor: NAVY }}>
         <div className="absolute inset-0">
           <img
             src={heroImage}
@@ -144,26 +154,32 @@ const SellPrivate = () => {
           />
         </div>
 
-        <div className="relative z-10 container mx-auto px-5 sm:px-6 pt-24 pb-16 md:pt-28 md:pb-20">
+        <div className="relative z-10 container mx-auto px-5 sm:px-6 pt-20 pb-12 md:pt-24 md:pb-16">
           <div className="max-w-2xl">
-            <p className="text-[hsl(var(--gold))] mb-6" style={eyebrowStyle}>
+            <p className="text-[hsl(var(--gold))] mb-5" style={eyebrowStyle}>
               Private Seller Advisory
             </p>
             <h1
-              className="font-display text-[1.95rem] sm:text-[2.4rem] md:text-[2.95rem] lg:text-[3.3rem] font-light leading-[1.1] mb-6 tracking-tight"
+              className="font-display text-[1.95rem] sm:text-[2.4rem] md:text-[2.95rem] lg:text-[3.3rem] font-light leading-[1.1] mb-5 tracking-tight"
               style={{ color: IVORY }}
             >
               Sell Your Home Quietly Without <span className="italic">Going Fully Public</span>
             </h1>
             <p
-              className="text-base sm:text-lg font-light leading-[1.65] mb-4 max-w-xl"
-              style={{ color: "rgba(245,243,239,0.85)" }}
+              className="text-base sm:text-lg font-light leading-[1.65] mb-3 max-w-xl"
+              style={{ color: "rgba(245,243,239,0.88)" }}
             >
               A more controlled way to explore a sale in Austin — without open houses, excessive showings, or public days on market.
             </p>
             <p
-              className="text-[0.95rem] sm:text-base font-light leading-[1.65] mb-9 max-w-xl italic"
-              style={{ color: "rgba(245,243,239,0.7)" }}
+              className="font-light tracking-[0.18em] uppercase mb-5"
+              style={{ fontSize: "0.62rem", color: "rgba(245,243,239,0.55)", fontFamily: '"Jost", sans-serif' }}
+            >
+              For homeowners who value discretion over exposure.
+            </p>
+            <p
+              className="text-[0.95rem] sm:text-base font-light leading-[1.65] mb-8 max-w-xl italic"
+              style={{ color: "rgba(245,243,239,0.72)" }}
             >
               In some cases, we already have buyers actively searching for homes like yours.
             </p>
@@ -197,7 +213,7 @@ const SellPrivate = () => {
 
       {/* ─────────── TENSION STRIP ─────────── */}
       <section className="border-b" style={{ backgroundColor: IVORY, borderColor: "rgba(12,15,36,0.08)" }}>
-        <div className="container mx-auto px-6 py-12 md:py-16 max-w-5xl">
+        <div className="container mx-auto px-6 py-10 md:py-13 max-w-5xl">
           <div className="grid md:grid-cols-[auto_1fr] gap-8 md:gap-14 items-start">
             <div className="md:max-w-[18rem]">
               <p className="text-[hsl(var(--gold))] mb-4" style={eyebrowStyle}>
@@ -236,7 +252,7 @@ const SellPrivate = () => {
       </section>
 
       {/* ─────────── SECTION 1 — Before You List Publicly ─────────── */}
-      <section className="py-16 md:py-22" style={{ backgroundColor: IVORY }}>
+      <section className="py-13 md:py-18" style={{ backgroundColor: IVORY }}>
         <div className="container mx-auto px-6 max-w-6xl">
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
             <div>
@@ -330,7 +346,7 @@ const SellPrivate = () => {
       </section>
 
       {/* ─────────── SECTION 2 — How the Process Works ─────────── */}
-      <section id="how-it-works" className="py-16 md:py-22" style={{ backgroundColor: NAVY }}>
+      <section id="how-it-works" className="py-14 md:py-20" style={{ backgroundColor: NAVY }}>
         <div className="container mx-auto px-6 max-w-6xl">
           <div className="text-center mb-12 md:mb-16">
             <p className="text-[hsl(var(--gold))] mb-5" style={eyebrowStyle}>
@@ -390,16 +406,27 @@ const SellPrivate = () => {
           </div>
 
           <p
-            className="text-center font-light leading-relaxed text-[0.95rem] md:text-base max-w-2xl mx-auto italic"
+            className="text-center font-light leading-relaxed text-[0.95rem] md:text-base max-w-2xl mx-auto italic mb-9 md:mb-11"
             style={{ color: "rgba(245,243,239,0.7)" }}
           >
             This is not about avoiding the market — it's about approaching it more strategically.
           </p>
+
+          {/* Mid-page CTA */}
+          <div className="text-center">
+            <button
+              onClick={() => scrollTo("private-sale-form")}
+              className="bg-[hsl(var(--gold))] hover:bg-[#F5F3EF] text-[#F5F3EF] hover:text-[hsl(var(--gold))] px-9 py-[1.05rem] transition-colors duration-300 tracking-[0.22em] uppercase font-sans font-medium"
+              style={{ fontSize: "0.7rem" }}
+            >
+              Request a Private Sale Strategy
+            </button>
+          </div>
         </div>
       </section>
 
       {/* ─────────── SECTION 3 — Form / Conversion ─────────── */}
-      <section id="private-sale-form" className="py-16 md:py-22" style={{ backgroundColor: NAVY }}>
+      <section id="private-sale-form" className="py-14 md:py-20" style={{ backgroundColor: NAVY }}>
         <div className="container mx-auto px-5 sm:px-6 max-w-3xl">
           <div className="text-center mb-9 md:mb-11">
             <p className="text-[hsl(var(--gold))] mb-5" style={eyebrowStyle}>
@@ -412,10 +439,16 @@ const SellPrivate = () => {
               Request a Private Sale Strategy
             </h2>
             <p
-              className="text-base md:text-[1.05rem] font-light leading-[1.7] max-w-xl mx-auto"
+              className="text-base md:text-[1.05rem] font-light leading-[1.7] max-w-xl mx-auto mb-3"
               style={{ color: "rgba(245,243,239,0.78)" }}
             >
               You'll hear directly from us — not an automated estimate.
+            </p>
+            <p
+              className="font-light tracking-[0.18em] uppercase"
+              style={{ fontSize: "0.6rem", color: "hsl(var(--gold))", fontFamily: '"Jost", sans-serif' }}
+            >
+              All inquiries are handled confidentially.
             </p>
           </div>
 
@@ -545,7 +578,7 @@ const SellPrivate = () => {
       </section>
 
       {/* ─────────── Soft close ─────────── */}
-      <section className="py-14 md:py-18" style={{ backgroundColor: IVORY }}>
+      <section className="py-12 md:py-16" style={{ backgroundColor: IVORY }}>
         <div className="container mx-auto px-6 max-w-2xl text-center">
           <h2
             className="font-display text-[1.55rem] md:text-[1.95rem] font-light mb-5 leading-tight tracking-tight"

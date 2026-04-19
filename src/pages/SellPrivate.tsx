@@ -259,41 +259,36 @@ const SellPrivate = () => {
       </section>
 
       {/* ─────────── TENSION STRIP ─────────── */}
-      <div className="h-4 md:h-6" aria-hidden="true" style={{ backgroundColor: IVORY }} />
+      <div className="h-6 md:h-8" aria-hidden="true" style={{ backgroundColor: IVORY }} />
       <section className="border-b" style={{ backgroundColor: IVORY, borderColor: "rgba(12,15,36,0.08)" }}>
-        <div className="container mx-auto px-6 py-10 md:py-14 max-w-5xl">
-          <div className="grid md:grid-cols-[20rem_1fr] gap-8 md:gap-20 items-start">
+        <div className="container mx-auto px-6 py-12 md:py-16 max-w-5xl">
+          <div className="grid md:grid-cols-[18rem_1fr] gap-10 md:gap-16 items-start">
             <div>
               <p className="text-[hsl(var(--gold))] mb-4" style={eyebrowStyle}>
                 The Reality
               </p>
               <h2
-                className="font-display text-[1.5rem] md:text-[1.75rem] font-light leading-[1.15] tracking-tight"
+                className="font-display text-[1.5rem] md:text-[1.75rem] font-light leading-[1.2] tracking-tight"
                 style={{ color: NAVY }}
               >
                 Why Some Sellers Avoid the Open Market
               </h2>
             </div>
-            <ul className="flex flex-col divide-y" style={{ borderColor: "rgba(12,15,36,0.08)" }}>
+            <ul className="grid sm:grid-cols-2 gap-x-10 gap-y-4">
               {[
                 "Privacy concerns",
                 "Avoiding constant showings and disruption",
                 "Not wanting to test pricing publicly",
                 "Uncertainty about timing",
-              ].map((item, idx) => (
-                <li
-                  key={item}
-                  className="flex items-baseline gap-5 py-3 first:pt-0 last:pb-0"
-                >
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-3">
                   <span
-                    className="font-display text-[0.7rem] tracking-[0.2em] shrink-0 w-6"
-                    style={{ color: "hsl(var(--gold))" }}
-                  >
-                    {String(idx + 1).padStart(2, "0")}
-                  </span>
+                    className="w-[5px] h-[5px] rounded-full mt-[0.6rem] shrink-0"
+                    style={{ backgroundColor: "hsl(var(--gold))" }}
+                  />
                   <span
-                    className="text-[0.95rem] md:text-base font-light leading-[1.5]"
-                    style={{ color: "rgba(12,15,36,0.82)" }}
+                    className="text-[0.95rem] md:text-base font-light leading-[1.55]"
+                    style={{ color: "rgba(12,15,36,0.78)" }}
                   >
                     {item}
                   </span>
@@ -303,7 +298,7 @@ const SellPrivate = () => {
           </div>
         </div>
       </section>
-      <div className="h-4 md:h-6" aria-hidden="true" style={{ backgroundColor: IVORY }} />
+      <div className="h-6 md:h-8" aria-hidden="true" style={{ backgroundColor: IVORY }} />
 
       {/* ─────────── SECTION 1 — Before You List Publicly ─────────── */}
       <section className="py-13 md:py-18" style={{ backgroundColor: IVORY }}>

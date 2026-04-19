@@ -123,15 +123,33 @@ const SellPrivate = () => {
         </div>
       </header>
 
-      {/* ─────────── Sticky desktop CTA (minimal) ─────────── */}
+      {/* ─────────── Sticky desktop CTA — matches site Floating Contact style ─────────── */}
       <button
         onClick={() => scrollTo("private-sale-form")}
-        className="hidden lg:inline-flex fixed bottom-7 right-7 z-40 items-center bg-[hsl(var(--gold))] hover:bg-[#F5F3EF] text-[#F5F3EF] hover:text-[hsl(var(--gold))] px-6 py-3 transition-colors duration-300 tracking-[0.22em] uppercase font-sans font-medium shadow-[0_8px_24px_rgba(12,15,36,0.18)]"
-        style={{ fontSize: "0.65rem" }}
+        style={{ backgroundColor: "#f1ede4" }}
+        className="hidden lg:flex fixed bottom-8 right-7 z-[60] items-center gap-3 backdrop-blur-sm text-[hsl(var(--gold))] rounded-full pl-2 pr-6 py-1.5 shadow-[0_4px_20px_-4px_hsl(var(--foreground)/0.1),0_1px_3px_hsl(var(--foreground)/0.06)] hover:!bg-[hsl(var(--gold))] hover:text-background transition-all duration-500 ease-out group cursor-pointer border border-[hsl(var(--gold)/0.2)] hover:border-[hsl(var(--gold))]"
         aria-label="Request a Private Sale Strategy"
       >
-        Request a Private Sale Strategy
+        {/* Gold mark — replaces headshot */}
+        <span className="w-9 h-9 rounded-full flex items-center justify-center ring-[1.5px] ring-[hsl(var(--gold)/0.5)] group-hover:ring-background/80 transition-all duration-500 bg-[hsl(var(--gold)/0.08)] group-hover:bg-background/15">
+          <span className="w-1.5 h-1.5 rounded-full bg-[hsl(var(--gold))] group-hover:bg-background transition-colors duration-500" />
+        </span>
+        <span className="flex flex-col items-start pl-0.5">
+          <span
+            className="text-[10px] font-semibold tracking-[0.2em] uppercase text-[hsl(var(--gold))] group-hover:text-background transition-colors duration-500 leading-tight"
+            style={{ fontFamily: '"Jost", sans-serif' }}
+          >
+            Request Strategy
+          </span>
+          <span
+            className="text-[7.5px] tracking-[0.14em] uppercase text-[hsl(var(--gold)/0.6)] group-hover:text-background/70 font-medium leading-tight mt-0.5"
+            style={{ fontFamily: '"Jost", sans-serif' }}
+          >
+            Private Sale Advisory
+          </span>
+        </span>
       </button>
+
 
       {/* ─────────── HERO ─────────── */}
       <section className="relative min-h-[78vh] md:min-h-[82vh] flex items-center" style={{ backgroundColor: NAVY }}>

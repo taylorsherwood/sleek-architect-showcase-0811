@@ -382,9 +382,10 @@ const SellPrivate = () => {
       <section style={{ backgroundColor: IVORY }}>
         <div className="container mx-auto px-6 max-w-3xl text-center pb-8">
           <p
-            className="font-light leading-relaxed text-[0.92rem] md:text-[0.98rem]"
+            className="font-light leading-relaxed text-[0.92rem] md:text-[0.98rem] whitespace-pre-line"
             style={{ color: "rgba(12,15,36,0.62)" }}
           >
+            {"\n\n"}
             We work with buyers actively searching in <span style={{ color: NAVY }}>Barton Creek</span>,{" "}
             <span style={{ color: NAVY }}>Westlake Hills</span>,{" "}
             <span style={{ color: NAVY }}>Rollingwood</span>, and central Austin.

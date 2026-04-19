@@ -238,12 +238,12 @@ const SellPrivate = () => {
       </section>
 
       {/* ─────────── TENSION STRIP ─────────── */}
-      <div className="h-3 md:h-4" aria-hidden="true" style={{ backgroundColor: IVORY }} />
-      <section className="border-b" style={{ backgroundColor: IVORY, borderColor: "rgba(12,15,36,0.08)" }}>
-        <div className="container mx-auto px-6 py-9 md:py-12 max-w-5xl">
-          <div className="grid md:grid-cols-[17rem_1fr] gap-8 md:gap-14 items-center">
+      <div className="h-2 md:h-3" aria-hidden="true" style={{ backgroundColor: IVORY }} />
+      <section className="border-b" style={{ backgroundColor: IVORY, borderColor: "rgba(12,15,36,0.06)" }}>
+        <div className="container mx-auto px-6 py-7 md:py-10 max-w-5xl">
+          <div className="grid md:grid-cols-[17rem_1fr] gap-7 md:gap-14 items-center">
             <div>
-              <p className="text-[hsl(var(--gold))] mb-3" style={eyebrowStyle}>
+              <p className="text-[hsl(var(--gold))] mb-2.5" style={eyebrowStyle}>
                 The Reality
               </p>
               <h2
@@ -253,7 +253,7 @@ const SellPrivate = () => {
                 Why Some Sellers<br />Avoid the Open Market
               </h2>
             </div>
-            <ul className="divide-y" style={{ borderColor: "rgba(12,15,36,0.08)" }}>
+            <ul>
               {[
                 "Privacy concerns",
                 "Avoiding constant showings and disruption",
@@ -262,17 +262,17 @@ const SellPrivate = () => {
               ].map((item, i) => (
                 <li
                   key={item}
-                  className="flex items-baseline gap-5 py-3 first:pt-0 last:pb-0 border-t first:border-t-0"
-                  style={{ borderColor: "rgba(12,15,36,0.08)" }}
+                  className="flex items-baseline gap-5 py-2.5 first:pt-0 last:pb-0 border-t first:border-t-0"
+                  style={{ borderColor: "rgba(12,15,36,0.06)" }}
                 >
                   <span
                     className="font-sans tracking-[0.18em] shrink-0 tabular-nums"
-                    style={{ fontSize: "0.62rem", color: "rgba(12,15,36,0.45)" }}
+                    style={{ fontSize: "0.62rem", color: "rgba(12,15,36,0.4)" }}
                   >
                     0{i + 1}
                   </span>
                   <span
-                    className="text-[0.95rem] md:text-base font-light leading-[1.5]"
+                    className="text-[0.95rem] md:text-base font-normal leading-[1.5]"
                     style={{ color: "rgba(12,15,36,0.82)" }}
                   >
                     {item}
@@ -283,7 +283,7 @@ const SellPrivate = () => {
           </div>
         </div>
       </section>
-      <div className="h-3 md:h-4" aria-hidden="true" style={{ backgroundColor: IVORY }} />
+      <div className="h-2 md:h-3" aria-hidden="true" style={{ backgroundColor: IVORY }} />
 
       {/* ─────────── SECTION 1 — Before You List Publicly ─────────── */}
       <section className="py-9 md:py-12" style={{ backgroundColor: IVORY }}>

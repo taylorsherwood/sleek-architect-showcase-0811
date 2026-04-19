@@ -259,6 +259,7 @@ const SellPrivate = () => {
       </section>
 
       {/* ─────────── TENSION STRIP ─────────── */}
+      <div className="h-6 md:h-8" aria-hidden="true" style={{ backgroundColor: IVORY }} />
       <section className="border-b" style={{ backgroundColor: IVORY, borderColor: "rgba(12,15,36,0.08)" }}>
         <div className="container mx-auto px-6 py-10 md:py-13 max-w-5xl">
           <div className="grid md:grid-cols-[auto_1fr] gap-8 md:gap-14 items-start">
@@ -297,6 +298,7 @@ const SellPrivate = () => {
           </div>
         </div>
       </section>
+      <div className="h-6 md:h-8" aria-hidden="true" style={{ backgroundColor: IVORY }} />
 
       {/* ─────────── SECTION 1 — Before You List Publicly ─────────── */}
       <section className="py-13 md:py-18" style={{ backgroundColor: IVORY }}>

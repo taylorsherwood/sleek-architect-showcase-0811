@@ -187,6 +187,7 @@ const Footer = () => {
                 ].map((link) => (
                   <Link key={link.to} to={link.to} className={linkHoverClass} style={linkStyle}>{link.label}</Link>
                 ))}
+                <Link to="/sell-private" className={linkHoverClass} style={linkStyle}>Private Sale Strategy</Link>
                 <Link to="/sitemap" className={linkHoverClass} style={{ ...linkStyle, color: "rgba(255,255,255,0.35)", fontSize: "11.5px" }}>Sitemap</Link>
               </div>
             </div>

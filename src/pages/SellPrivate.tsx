@@ -291,7 +291,7 @@ const SellPrivate = () => {
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
             <div>
               <p className="text-[hsl(var(--gold))] mb-3.5" style={eyebrowStyle}>
-                The Approach
+                THE APPROACH
               </p>
               <h2
                 className="font-display text-[1.7rem] md:text-[2rem] lg:text-[2.3rem] font-light leading-[1.12] mb-4 tracking-tight"
@@ -321,7 +321,7 @@ const SellPrivate = () => {
                 className="mb-3"
                 style={{ ...eyebrowStyle, color: "rgba(12,15,36,0.6)" }}
               >
-                A private sale strategy can help you
+                A PRIVATE SALE STRATEGY CAN HELP YOU
               </p>
               <ul className="space-y-2 mb-6">
                 {[

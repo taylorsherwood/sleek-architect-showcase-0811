@@ -46,6 +46,7 @@ const staticRoutes = [
   "/austin-multifamily-report-2026",
   "/why-billionaires-are-moving-to-austin",
   "/austin-land-development-opportunities",
+  "/about-austin-real-estate-advisory",
   "/private-opportunities",
   "/blog/find-off-market-homes-austin",
   "/blog/what-is-private-listing-in-real-estate",

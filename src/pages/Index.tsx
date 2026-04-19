@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, {
-  realEstateAgentSchema,
   localBusinessSchema,
   taylorSherwoodSchema,
   createBreadcrumbSchema,
@@ -303,7 +302,6 @@ const Index = () => (
       ogTitle="Austin Luxury Real Estate and Investment Advisory | Echelon Property Group"
       ogDescription="Strategic real estate advisory across Austin's most exclusive markets. Off-market deals, investment property, land development, and luxury homes."
     />
-    <SchemaMarkup schema={realEstateAgentSchema} />
     <SchemaMarkup schema={localBusinessSchema} />
     <SchemaMarkup schema={taylorSherwoodSchema} />
     <SchemaMarkup schema={createBreadcrumbSchema([{ name: "Home", url: "https://www.echelonpropertygroup.com/" }])} />

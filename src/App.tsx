@@ -4,7 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter } from "react-router-dom";
 import AppRoutes from "./AppRoutes";
-import SchemaMarkup, { organizationSchema, websiteSchema } from "@/components/SchemaMarkup";
+import SchemaMarkup, { organizationSchema, websiteSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
 
 const browserQueryClient = new QueryClient();
 
@@ -18,6 +18,7 @@ export const AppShell = ({ children, queryClient = browserQueryClient }: AppShel
     <TooltipProvider>
       <SchemaMarkup schema={organizationSchema} />
       <SchemaMarkup schema={websiteSchema} />
+      <SchemaMarkup schema={realEstateAgentSchema} />
       <Toaster />
       {children}
     </TooltipProvider>

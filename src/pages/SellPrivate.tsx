@@ -2,7 +2,9 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createBreadcrumbSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
-import heroImage from "@/assets/sell-private-hero-austin-skyline.webp";
+import heroPoster from "@/assets/sell-private-hero-poster.webp";
+import heroVideoMp4 from "@/assets/video/sell-private-hero.mp4";
+import heroVideoWebm from "@/assets/video/sell-private-hero.webm";
 import sectionImage from "@/assets/sell-private-approach-kitchen.webp";
 import { formatPhoneNumber, getTimestamp } from "@/lib/formUtils";
 
@@ -150,13 +152,19 @@ const SellPrivate = () => {
       {/* ─────────── HERO ─────────── */}
       <section className="relative min-h-[78vh] md:min-h-[82vh] flex items-center" style={{ backgroundColor: NAVY }}>
         <div className="absolute inset-0">
-          <img
-            src={heroImage}
-            alt="Austin skyline at golden hour over Lady Bird Lake"
+          <video
             className="w-full h-full object-cover"
-            loading="eager"
-            fetchPriority="high"
-          />
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            poster={heroPoster}
+            aria-hidden="true"
+          >
+            <source src={heroVideoWebm} type="video/webm" />
+            <source src={heroVideoMp4} type="video/mp4" />
+          </video>
           {/* Dark overlay for hero text legibility */}
           <div className="absolute inset-0" style={{ backgroundColor: "#000000", opacity: 0.5 }} />
           <div

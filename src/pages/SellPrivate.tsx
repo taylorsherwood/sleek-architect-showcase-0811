@@ -9,6 +9,10 @@ import { formatPhoneNumber, getTimestamp } from "@/lib/formUtils";
 const SITE = "https://www.echelonpropertygroup.com";
 const ZAPIER_WEBHOOK = "https://hooks.zapier.com/hooks/catch/26916347/upj5fa0/";
 
+// Brand tokens
+const IVORY = "#F5F3EF";
+const NAVY = "#0C0F24";
+
 const eyebrowStyle = {
   fontSize: "0.62rem" as const,
   letterSpacing: "0.32em",
@@ -74,22 +78,22 @@ const SellPrivate = () => {
   const scrollTo = (id: string) =>
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
 
-  // ── Form field styles (ivory card on dark section) ──
-  const fieldLabel =
-    "block text-[hsl(220,15%,8%)]/55 mb-2";
+  // Form field styles — ivory card on dark navy
+  const fieldLabel = "block mb-2";
+  const fieldLabelStyle = { ...eyebrowStyle, color: `${NAVY}B3` }; // ~70% navy
   const fieldInput =
-    "w-full bg-transparent border-b border-[hsl(220,15%,8%)]/15 focus:border-[hsl(var(--gold))] outline-none py-3 text-[hsl(220,15%,8%)] font-sans transition-colors placeholder:text-[hsl(220,15%,8%)]/30";
+    "w-full bg-transparent border-b border-[#0C0F24]/25 focus:border-[hsl(var(--gold))] outline-none py-3 text-[#0C0F24] font-sans transition-colors placeholder:text-[#0C0F24]/40";
   const fieldSelect =
-    "w-full bg-transparent border-b border-[hsl(220,15%,8%)]/15 focus:border-[hsl(var(--gold))] outline-none py-3 text-[hsl(220,15%,8%)] font-sans transition-colors appearance-none cursor-pointer";
+    "w-full bg-transparent border-b border-[#0C0F24]/25 focus:border-[hsl(var(--gold))] outline-none py-3 text-[#0C0F24] font-sans transition-colors appearance-none cursor-pointer";
 
   return (
-    <div className="min-h-screen bg-[#F5F3EF]">
+    <div className="min-h-screen" style={{ backgroundColor: IVORY }}>
       <SEOHead
         title="Sell Your Home Off Market in Austin | Private Seller Strategy"
         description="Explore a discreet way to sell your home in Austin without going fully public. Private seller strategy for homeowners seeking control, privacy, and flexibility."
         canonical="/sell-private"
         ogTitle="Sell Your Home Off Market in Austin"
-        ogDescription="A quieter, more controlled way to explore a sale in Austin — without open houses, public days on market, or unnecessary exposure."
+        ogDescription="A more controlled way to explore a sale in Austin — without open houses, excessive showings, or public days on market."
       />
       <SchemaMarkup
         schema={createBreadcrumbSchema([
@@ -104,14 +108,14 @@ const SellPrivate = () => {
         <div className="container mx-auto px-6 h-16 md:h-20 flex items-center justify-between">
           <Link
             to="/"
-            className="text-white/90 hover:text-[hsl(var(--gold))] transition-colors tracking-[0.22em] uppercase font-sans"
+            className="text-[#F5F3EF] hover:text-[hsl(var(--gold))] transition-colors tracking-[0.22em] uppercase font-sans"
             style={{ fontSize: "0.72rem" }}
           >
             Echelon Property Group
           </Link>
           <button
             onClick={() => scrollTo("private-sale-form")}
-            className="text-[hsl(var(--gold))] hover:text-white transition-colors tracking-[0.22em] uppercase font-sans"
+            className="text-[hsl(var(--gold))] hover:text-[#F5F3EF] transition-colors tracking-[0.22em] uppercase font-sans"
             style={{ fontSize: "0.7rem" }}
           >
             Request Strategy
@@ -120,7 +124,7 @@ const SellPrivate = () => {
       </header>
 
       {/* ─────────── HERO ─────────── */}
-      <section className="relative min-h-[88vh] md:min-h-[92vh] flex items-center bg-[hsl(220,15%,8%)]">
+      <section className="relative min-h-[86vh] md:min-h-[88vh] flex items-center" style={{ backgroundColor: NAVY }}>
         <div className="absolute inset-0">
           <img
             src={heroImage}
@@ -129,39 +133,59 @@ const SellPrivate = () => {
             loading="eager"
             fetchPriority="high"
           />
-          {/* warmer, darker overlay for readability */}
-          <div className="absolute inset-0 bg-[hsl(220,15%,8%)]/72" />
+          {/* Strong overlay for guaranteed legibility */}
+          <div className="absolute inset-0" style={{ backgroundColor: NAVY, opacity: 0.78 }} />
           <div
             className="absolute inset-0"
             style={{
               background:
-                "linear-gradient(110deg, hsl(220 15% 6% / 0.78) 0%, hsl(220 15% 6% / 0.5) 55%, hsl(220 15% 6% / 0.35) 100%)",
+                "linear-gradient(110deg, rgba(12,15,36,0.88) 0%, rgba(12,15,36,0.62) 55%, rgba(12,15,36,0.45) 100%)",
             }}
           />
         </div>
 
-        <div className="relative z-10 container mx-auto px-5 sm:px-6 pt-28 pb-20 md:pt-32 md:pb-28">
+        <div className="relative z-10 container mx-auto px-5 sm:px-6 pt-24 pb-16 md:pt-28 md:pb-20">
           <div className="max-w-2xl">
-            <p className="text-[hsl(var(--gold))] mb-7" style={eyebrowStyle}>
+            <p className="text-[hsl(var(--gold))] mb-6" style={eyebrowStyle}>
               Private Seller Advisory
             </p>
-            <h1 className="font-display text-[2rem] sm:text-[2.5rem] md:text-[3.1rem] lg:text-[3.5rem] font-light text-white leading-[1.08] mb-7 tracking-tight">
-              Sell Your Home Without <span className="italic">Going Fully Public</span>
+            <h1
+              className="font-display text-[1.95rem] sm:text-[2.4rem] md:text-[2.95rem] lg:text-[3.3rem] font-light leading-[1.1] mb-6 tracking-tight"
+              style={{ color: IVORY }}
+            >
+              Sell Your Home Quietly Without <span className="italic">Going Fully Public</span>
             </h1>
-            <p className="text-white/72 text-base sm:text-lg font-light leading-[1.65] mb-11 max-w-xl">
-              A quieter, more controlled way to explore a sale in Austin — without open houses, public days on market, or unnecessary exposure.
+            <p
+              className="text-base sm:text-lg font-light leading-[1.65] mb-4 max-w-xl"
+              style={{ color: "rgba(245,243,239,0.85)" }}
+            >
+              A more controlled way to explore a sale in Austin — without open houses, excessive showings, or public days on market.
             </p>
-            <div className="flex flex-col sm:flex-row sm:items-center gap-6 sm:gap-9">
-              <button
-                onClick={() => scrollTo("private-sale-form")}
-                className="bg-[hsl(var(--gold))] hover:bg-white text-white hover:text-[hsl(var(--gold))] px-9 py-[1.05rem] transition-colors duration-300 tracking-[0.22em] uppercase font-sans font-medium"
-                style={{ fontSize: "0.7rem" }}
-              >
-                Request a Private Sale Strategy
-              </button>
+            <p
+              className="text-[0.95rem] sm:text-base font-light leading-[1.65] mb-9 max-w-xl italic"
+              style={{ color: "rgba(245,243,239,0.7)" }}
+            >
+              In some cases, we already have buyers actively searching for homes like yours.
+            </p>
+            <div className="flex flex-col sm:flex-row sm:items-center gap-5 sm:gap-8">
+              <div className="flex flex-col items-start gap-2.5">
+                <button
+                  onClick={() => scrollTo("private-sale-form")}
+                  className="bg-[hsl(var(--gold))] hover:bg-[#F5F3EF] text-[#F5F3EF] hover:text-[hsl(var(--gold))] px-9 py-[1.05rem] transition-colors duration-300 tracking-[0.22em] uppercase font-sans font-medium"
+                  style={{ fontSize: "0.7rem" }}
+                >
+                  Request a Private Sale Strategy
+                </button>
+                <p
+                  className="font-sans tracking-wide"
+                  style={{ fontSize: "0.7rem", color: "rgba(245,243,239,0.6)" }}
+                >
+                  No pressure. No obligation.
+                </p>
+              </div>
               <button
                 onClick={() => scrollTo("how-it-works")}
-                className="text-white/85 hover:text-[hsl(var(--gold))] transition-colors tracking-[0.22em] uppercase font-sans border-b border-white/30 hover:border-[hsl(var(--gold))]/60 pb-1 self-start"
+                className="text-[#F5F3EF] hover:text-[hsl(var(--gold))] transition-colors tracking-[0.22em] uppercase font-sans border-b border-[#F5F3EF]/40 hover:border-[hsl(var(--gold))]/60 pb-1 self-start"
                 style={{ fontSize: "0.7rem" }}
               >
                 How it Works
@@ -171,41 +195,79 @@ const SellPrivate = () => {
         </div>
       </section>
 
-      {/* ─────────── Compact credibility band ─────────── */}
-      <section className="bg-[#F5F3EF] border-b border-[hsl(220,15%,8%)]/8">
-        <div className="container mx-auto px-6 py-7 md:py-9 max-w-5xl text-center">
-          <p
-            className="text-[hsl(220,15%,8%)]/75 font-light leading-relaxed text-[0.95rem] md:text-base"
-          >
-            Serving sellers across <span className="text-[hsl(220,15%,8%)]">Barton Creek</span>,{" "}
-            <span className="text-[hsl(220,15%,8%)]">Westlake Hills</span>,{" "}
-            <span className="text-[hsl(220,15%,8%)]">Rollingwood</span>,{" "}
-            <span className="text-[hsl(220,15%,8%)]">Tarrytown</span>, and Austin's most sought-after neighborhoods.
-          </p>
+      {/* ─────────── TENSION STRIP ─────────── */}
+      <section className="border-b" style={{ backgroundColor: IVORY, borderColor: "rgba(12,15,36,0.08)" }}>
+        <div className="container mx-auto px-6 py-12 md:py-16 max-w-5xl">
+          <div className="grid md:grid-cols-[auto_1fr] gap-8 md:gap-14 items-start">
+            <div className="md:max-w-[18rem]">
+              <p className="text-[hsl(var(--gold))] mb-4" style={eyebrowStyle}>
+                The Reality
+              </p>
+              <h2
+                className="font-display text-[1.5rem] md:text-[1.75rem] font-light leading-[1.2] tracking-tight"
+                style={{ color: NAVY }}
+              >
+                Why Some Sellers Avoid the Open Market
+              </h2>
+            </div>
+            <ul className="grid sm:grid-cols-2 gap-x-8 gap-y-3.5">
+              {[
+                "Privacy concerns",
+                "Not wanting to test pricing publicly",
+                "Avoiding constant showings and disruption",
+                "Uncertainty about timing",
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-3">
+                  <span
+                    className="w-[5px] h-[5px] rounded-full mt-[0.65rem] shrink-0"
+                    style={{ backgroundColor: "hsl(var(--gold))" }}
+                  />
+                  <span
+                    className="text-[0.95rem] md:text-base font-light leading-relaxed"
+                    style={{ color: "rgba(12,15,36,0.78)" }}
+                  >
+                    {item}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
 
       {/* ─────────── SECTION 1 — Before You List Publicly ─────────── */}
-      <section className="bg-[#F5F3EF] py-20 md:py-28">
+      <section className="py-16 md:py-22" style={{ backgroundColor: IVORY }}>
         <div className="container mx-auto px-6 max-w-6xl">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
             <div>
               <p className="text-[hsl(var(--gold))] mb-5" style={eyebrowStyle}>
                 The Approach
               </p>
-              <h2 className="font-display text-[1.75rem] md:text-[2.2rem] lg:text-[2.6rem] font-light text-[hsl(220,15%,8%)] leading-[1.15] mb-7 tracking-tight">
+              <h2
+                className="font-display text-[1.7rem] md:text-[2.1rem] lg:text-[2.45rem] font-light leading-[1.15] mb-6 tracking-tight"
+                style={{ color: NAVY }}
+              >
                 Before You List Publicly
               </h2>
-              <p className="text-[hsl(220,15%,8%)]/75 text-base md:text-[1.05rem] font-light leading-[1.75] mb-5">
+              <p
+                className="text-base md:text-[1.05rem] font-light leading-[1.7] mb-4"
+                style={{ color: "rgba(12,15,36,0.82)" }}
+              >
                 Not every home should start with broad public exposure.
               </p>
-              <p className="text-[hsl(220,15%,8%)]/65 text-base font-light leading-[1.75] mb-9">
+              <p
+                className="text-base font-light leading-[1.7] mb-7"
+                style={{ color: "rgba(12,15,36,0.72)" }}
+              >
                 For some sellers, a more discreet approach creates better control, better timing, and a cleaner decision-making process.
               </p>
-              <p className="text-[hsl(220,15%,8%)]/55 mb-5" style={eyebrowStyle}>
+              <p
+                className="mb-4"
+                style={{ ...eyebrowStyle, color: "rgba(12,15,36,0.6)" }}
+              >
                 A private sale strategy can help you
               </p>
-              <ul className="space-y-3.5">
+              <ul className="space-y-3 mb-7">
                 {[
                   "Preserve privacy",
                   "Avoid unnecessary showings",
@@ -213,17 +275,29 @@ const SellPrivate = () => {
                   "Decide whether a public launch is even necessary",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3.5">
-                    <span className="w-[5px] h-[5px] rounded-full bg-[hsl(var(--gold))] mt-[0.7rem] shrink-0" />
-                    <span className="text-[hsl(220,15%,8%)]/80 text-base font-light leading-relaxed">
+                    <span
+                      className="w-[5px] h-[5px] rounded-full mt-[0.65rem] shrink-0"
+                      style={{ backgroundColor: "hsl(var(--gold))" }}
+                    />
+                    <span
+                      className="text-base font-light leading-relaxed"
+                      style={{ color: "rgba(12,15,36,0.85)" }}
+                    >
                       {item}
                     </span>
                   </li>
                 ))}
               </ul>
+              <p
+                className="text-[0.98rem] md:text-base font-light leading-[1.75] italic border-t pt-5"
+                style={{ color: "rgba(12,15,36,0.72)", borderColor: "rgba(12,15,36,0.12)" }}
+              >
+                In many cases, this approach creates stronger leverage — even if you ultimately decide to list publicly.
+              </p>
             </div>
 
             <div className="relative order-first lg:order-last">
-              <div className="aspect-[4/5] overflow-hidden bg-[hsl(220,15%,8%)]/5">
+              <div className="aspect-[4/5] overflow-hidden" style={{ backgroundColor: "rgba(12,15,36,0.05)" }}>
                 <img
                   src={sectionImage}
                   alt="Refined Tarrytown residence — discreet seller representation"
@@ -241,19 +315,36 @@ const SellPrivate = () => {
         </div>
       </section>
 
+      {/* ─────────── Quiet authority signal ─────────── */}
+      <section style={{ backgroundColor: IVORY }}>
+        <div className="container mx-auto px-6 max-w-3xl text-center pb-8">
+          <p
+            className="font-light leading-relaxed text-[0.92rem] md:text-[0.98rem]"
+            style={{ color: "rgba(12,15,36,0.62)" }}
+          >
+            We work with buyers actively searching in <span style={{ color: NAVY }}>Barton Creek</span>,{" "}
+            <span style={{ color: NAVY }}>Westlake Hills</span>,{" "}
+            <span style={{ color: NAVY }}>Rollingwood</span>, and central Austin.
+          </p>
+        </div>
+      </section>
+
       {/* ─────────── SECTION 2 — How the Process Works ─────────── */}
-      <section id="how-it-works" className="bg-[hsl(220,15%,8%)] py-20 md:py-28">
+      <section id="how-it-works" className="py-16 md:py-22" style={{ backgroundColor: NAVY }}>
         <div className="container mx-auto px-6 max-w-6xl">
-          <div className="text-center mb-16 md:mb-20">
+          <div className="text-center mb-12 md:mb-16">
             <p className="text-[hsl(var(--gold))] mb-5" style={eyebrowStyle}>
               The Process
             </p>
-            <h2 className="font-display text-[1.75rem] md:text-[2.2rem] lg:text-[2.6rem] font-light text-white leading-[1.15] tracking-tight max-w-2xl mx-auto">
-              How the Process Works
+            <h2
+              className="font-display text-[1.75rem] md:text-[2.15rem] lg:text-[2.5rem] font-light leading-[1.15] tracking-tight max-w-2xl mx-auto"
+              style={{ color: IVORY }}
+            >
+              How It Works
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-10 md:gap-8 lg:gap-12">
+          <div className="grid md:grid-cols-3 gap-9 md:gap-8 lg:gap-12 mb-12 md:mb-14">
             {[
               {
                 num: "01",
@@ -267,103 +358,75 @@ const SellPrivate = () => {
               },
               {
                 num: "03",
-                title: "Strategic Next Step",
+                title: "Strategic Decision",
                 body: "You evaluate private interest and decide whether to stay quiet or go to market from a stronger position.",
               },
             ].map((step) => (
               <div
                 key={step.num}
-                className="border-t border-[hsl(var(--gold))]/30 pt-7 md:pt-9"
+                className="border-t pt-6 md:pt-8"
+                style={{ borderColor: "hsl(var(--gold) / 0.4)" }}
               >
                 <p
-                  className="text-[hsl(var(--gold))] font-display font-light mb-6"
-                  style={{ fontSize: "1.1rem", letterSpacing: "0.15em" }}
+                  className="font-display font-light mb-5"
+                  style={{ fontSize: "1.05rem", letterSpacing: "0.15em", color: "hsl(var(--gold))" }}
                 >
                   {step.num}
                 </p>
-                <h3 className="font-display text-xl md:text-[1.4rem] font-light text-white mb-4 leading-snug">
+                <h3
+                  className="font-display text-xl md:text-[1.35rem] font-light mb-3.5 leading-snug"
+                  style={{ color: IVORY }}
+                >
                   {step.title}
                 </h3>
-                <p className="text-white/65 text-[0.95rem] md:text-base font-light leading-[1.75]">
+                <p
+                  className="text-[0.95rem] md:text-base font-light leading-[1.75]"
+                  style={{ color: "rgba(245,243,239,0.78)" }}
+                >
                   {step.body}
                 </p>
               </div>
             ))}
           </div>
+
+          <p
+            className="text-center font-light leading-relaxed text-[0.95rem] md:text-base max-w-2xl mx-auto italic"
+            style={{ color: "rgba(245,243,239,0.7)" }}
+          >
+            This is not about avoiding the market — it's about approaching it more strategically.
+          </p>
         </div>
       </section>
 
-      {/* ─────────── SECTION 3 — Who This Is For ─────────── */}
-      <section className="bg-[#F5F3EF] py-20 md:py-28">
-        <div className="container mx-auto px-6 max-w-5xl">
-          <div className="text-center mb-14 md:mb-16">
-            <p className="text-[hsl(var(--gold))] mb-5" style={eyebrowStyle}>
-              The Fit
-            </p>
-            <h2 className="font-display text-[1.75rem] md:text-[2.2rem] lg:text-[2.6rem] font-light text-[hsl(220,15%,8%)] leading-[1.15] tracking-tight">
-              Who This Is For
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-10 md:gap-8 lg:gap-12 mb-16">
-            {[
-              {
-                title: "Sellers Who Value Privacy",
-                body: "Discretion matters — whether for personal, professional, or family reasons.",
-              },
-              {
-                title: "Not Ready for a Full Public Listing",
-                body: "Considering a sale, but not prepared for open houses, photography, and public days on market.",
-              },
-              {
-                title: "Wanting to Understand Options",
-                body: "Exploring what a sale could look like before committing to a direction.",
-              },
-            ].map((item) => (
-              <div key={item.title} className="text-center md:text-left">
-                <h3 className="font-display text-lg md:text-[1.25rem] font-light text-[hsl(220,15%,8%)] mb-4 leading-snug">
-                  {item.title}
-                </h3>
-                <p className="text-[hsl(220,15%,8%)]/65 text-[0.95rem] font-light leading-[1.75]">
-                  {item.body}
-                </p>
-              </div>
-            ))}
-          </div>
-
-          <div className="max-w-2xl mx-auto text-center pt-10 border-t border-[hsl(220,15%,8%)]/10">
-            <p className="text-[hsl(220,15%,8%)]/65 text-[0.95rem] md:text-base font-light leading-[1.8] italic">
-              This is not the right fit for every property. The goal is not to force a private sale — it's to assess whether a quieter approach gives you leverage.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* ─────────── SECTION 4 — Form / Conversion ─────────── */}
-      <section
-        id="private-sale-form"
-        className="bg-[hsl(220,15%,8%)] py-20 md:py-28"
-      >
+      {/* ─────────── SECTION 3 — Form / Conversion ─────────── */}
+      <section id="private-sale-form" className="py-16 md:py-22" style={{ backgroundColor: NAVY }}>
         <div className="container mx-auto px-5 sm:px-6 max-w-3xl">
-          <div className="text-center mb-10 md:mb-12">
+          <div className="text-center mb-9 md:mb-11">
             <p className="text-[hsl(var(--gold))] mb-5" style={eyebrowStyle}>
               Confidential Inquiry
             </p>
-            <h2 className="font-display text-[1.85rem] md:text-[2.3rem] lg:text-[2.7rem] font-light text-white leading-[1.12] tracking-tight mb-6">
+            <h2
+              className="font-display text-[1.85rem] md:text-[2.25rem] lg:text-[2.6rem] font-light leading-[1.12] tracking-tight mb-5"
+              style={{ color: IVORY }}
+            >
               Request a Private Sale Strategy
             </h2>
-            <p className="text-white/65 text-base md:text-[1.05rem] font-light leading-[1.7] max-w-xl mx-auto">
-              Tell us a bit about your property and timing. We'll follow up personally with a clear, honest perspective.
+            <p
+              className="text-base md:text-[1.05rem] font-light leading-[1.7] max-w-xl mx-auto"
+              style={{ color: "rgba(245,243,239,0.78)" }}
+            >
+              You'll hear directly from us — not an automated estimate.
             </p>
           </div>
 
-          {/* Ivory card on dark navy */}
+          {/* Ivory card on navy — minimal styling, no heavy borders */}
           <form
             onSubmit={handleSubmit}
-            className="bg-[#F5F3EF] p-6 sm:p-9 md:p-12 space-y-7"
+            className="p-6 sm:p-9 md:p-11 space-y-6"
+            style={{ backgroundColor: IVORY }}
           >
             <div>
-              <label htmlFor="sp-name" className={fieldLabel} style={eyebrowStyle}>
+              <label htmlFor="sp-name" className={fieldLabel} style={fieldLabelStyle}>
                 Name
               </label>
               <input
@@ -379,7 +442,7 @@ const SellPrivate = () => {
             </div>
 
             <div>
-              <label htmlFor="sp-address" className={fieldLabel} style={eyebrowStyle}>
+              <label htmlFor="sp-address" className={fieldLabel} style={fieldLabelStyle}>
                 Property Address
               </label>
               <input
@@ -394,9 +457,9 @@ const SellPrivate = () => {
               />
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-7">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div>
-                <label htmlFor="sp-email" className={fieldLabel} style={eyebrowStyle}>
+                <label htmlFor="sp-email" className={fieldLabel} style={fieldLabelStyle}>
                   Email
                 </label>
                 <input
@@ -411,7 +474,7 @@ const SellPrivate = () => {
                 />
               </div>
               <div>
-                <label htmlFor="sp-phone" className={fieldLabel} style={eyebrowStyle}>
+                <label htmlFor="sp-phone" className={fieldLabel} style={fieldLabelStyle}>
                   Phone
                 </label>
                 <input
@@ -428,7 +491,7 @@ const SellPrivate = () => {
             </div>
 
             <div>
-              <label htmlFor="sp-timeline" className={fieldLabel} style={eyebrowStyle}>
+              <label htmlFor="sp-timeline" className={fieldLabel} style={fieldLabelStyle}>
                 Timeline
               </label>
               <select
@@ -445,17 +508,36 @@ const SellPrivate = () => {
               </select>
             </div>
 
-            <div className="pt-3">
+            <div className="pt-2">
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full py-[1.1rem] tracking-[0.22em] uppercase font-sans font-medium transition-colors duration-300 ease-out disabled:opacity-50 bg-[hsl(220,15%,8%)] hover:bg-[hsl(var(--gold))] text-white"
-                style={{ fontSize: "0.72rem" }}
+                className="w-full py-[1.05rem] tracking-[0.22em] uppercase font-sans font-medium transition-colors duration-300 ease-out disabled:opacity-50"
+                style={{
+                  fontSize: "0.72rem",
+                  backgroundColor: NAVY,
+                  color: IVORY,
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = "hsl(var(--gold))";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = NAVY;
+                }}
               >
                 {loading ? "Submitting…" : "Submit Request"}
               </button>
-              <p className="text-center text-[hsl(220,15%,8%)]/55 text-xs tracking-wide mt-5 font-light">
-                No pressure. No obligation. Just a private conversation.
+              <p
+                className="text-center text-xs tracking-wide mt-4 font-light"
+                style={{ color: "rgba(12,15,36,0.65)" }}
+              >
+                Most inquiries are responded to within a few hours.
+              </p>
+              <p
+                className="text-center text-xs tracking-wide mt-1.5 font-light"
+                style={{ color: "rgba(12,15,36,0.5)" }}
+              >
+                No pressure. No obligation.
               </p>
             </div>
           </form>
@@ -463,28 +545,37 @@ const SellPrivate = () => {
       </section>
 
       {/* ─────────── Soft close ─────────── */}
-      <section className="bg-[#F5F3EF] py-16 md:py-20">
+      <section className="py-14 md:py-18" style={{ backgroundColor: IVORY }}>
         <div className="container mx-auto px-6 max-w-2xl text-center">
-          <h2 className="font-display text-[1.6rem] md:text-[2rem] font-light text-[hsl(220,15%,8%)] mb-6 leading-tight tracking-tight">
+          <h2
+            className="font-display text-[1.55rem] md:text-[1.95rem] font-light mb-5 leading-tight tracking-tight"
+            style={{ color: NAVY }}
+          >
             Not Sure Yet?
           </h2>
-          <p className="text-[hsl(220,15%,8%)]/70 text-base md:text-[1.05rem] font-light leading-[1.75]">
-            That's fine. Many sellers begin here simply to understand their options before deciding how or when to move.
+          <p
+            className="text-base md:text-[1.05rem] font-light leading-[1.75]"
+            style={{ color: "rgba(12,15,36,0.78)" }}
+          >
+            That's completely fine. Many sellers begin here simply to understand their options before deciding how or when to move.
           </p>
         </div>
       </section>
 
       {/* ─────────── Quiet footer ─────────── */}
-      <footer className="bg-[hsl(220,15%,8%)] py-10">
+      <footer className="py-9" style={{ backgroundColor: NAVY }}>
         <div className="container mx-auto px-6 text-center">
           <Link
             to="/"
-            className="text-white/55 hover:text-[hsl(var(--gold))] transition-colors tracking-[0.22em] uppercase font-sans"
-            style={{ fontSize: "0.7rem" }}
+            className="hover:text-[hsl(var(--gold))] transition-colors tracking-[0.22em] uppercase font-sans"
+            style={{ fontSize: "0.7rem", color: "rgba(245,243,239,0.7)" }}
           >
             Echelon Property Group · Austin, Texas
           </Link>
-          <p className="text-white/30 text-[0.65rem] tracking-[0.2em] uppercase mt-4">
+          <p
+            className="text-[0.65rem] tracking-[0.2em] uppercase mt-3.5"
+            style={{ color: "rgba(245,243,239,0.4)" }}
+          >
             Discreet · Confidential · By Inquiry
           </p>
         </div>

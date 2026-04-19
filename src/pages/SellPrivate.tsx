@@ -126,11 +126,11 @@ const SellPrivate = () => {
       {/* ─────────── Sticky desktop CTA — matches site Floating Contact style ─────────── */}
       <button
         onClick={() => scrollTo("private-sale-form")}
-        style={{ backgroundColor: "#f1ede4" }}
-        className="hidden lg:flex fixed bottom-8 right-7 z-[60] items-center backdrop-blur-sm text-[hsl(var(--gold))] rounded-full px-7 py-3.5 shadow-[0_4px_20px_-4px_hsl(var(--foreground)/0.1),0_1px_3px_hsl(var(--foreground)/0.06)] hover:!bg-[hsl(var(--gold))] hover:text-background transition-all duration-500 ease-out group cursor-pointer border border-[hsl(var(--gold)/0.2)] hover:border-[hsl(var(--gold))]"
+        style={{ backgroundColor: "hsl(var(--background))" }}
+        className="hidden lg:flex fixed bottom-8 right-7 z-[60] items-center justify-center backdrop-blur-sm text-[hsl(var(--gold))] rounded-full px-7 py-3.5 shadow-[0_4px_20px_-4px_hsl(var(--foreground)/0.1),0_1px_3px_hsl(var(--foreground)/0.06)] hover:!bg-[hsl(var(--gold))] hover:text-background transition-all duration-500 ease-out group cursor-pointer border border-[hsl(var(--gold)/0.2)] hover:border-[hsl(var(--gold))]"
         aria-label="Request a Private Sale Strategy"
       >
-        <span className="flex flex-col items-start">
+        <span className="flex flex-col items-center text-center">
           <span
             className="text-[10px] font-semibold tracking-[0.2em] uppercase text-[hsl(var(--gold))] group-hover:text-background transition-colors duration-500 leading-tight"
             style={{ fontFamily: '"Jost", sans-serif' }}

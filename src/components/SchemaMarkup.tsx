@@ -78,6 +78,7 @@ const openingHoursSpec = {
 const sameAs = [
   "https://www.instagram.com/theinvestorbroker",
   "https://www.linkedin.com/in/taylorsherwood/",
+  "https://www.zillow.com/profile/TaylorSherwood512",
 ];
 
 export const organizationSchema = {

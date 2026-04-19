@@ -535,6 +535,28 @@ const Sell = () => {
 
       <div className="h-12 md:h-20 bg-background" aria-hidden="true" />
 
+      {/* ── Discreet Path — Private Sale bridge ── */}
+      <section className="py-16 md:py-24 bg-secondary">
+        <div className="container mx-auto px-6">
+          <div className="max-w-3xl mx-auto text-center">
+            <p className="text-minimal text-gold mb-4 font-extrabold">A QUIETER PATH</p>
+            <h2 className="text-2xl sm:text-3xl md:text-[2.25rem] font-display font-normal text-architectural mb-5 leading-[1.15]">
+              Prefer a more discreet approach?
+            </h2>
+            <p className="text-muted-foreground leading-relaxed mb-8 max-w-xl mx-auto">
+              If you're not ready to fully go to market, there's a quieter way to explore your options — without open houses, public days on market, or unnecessary exposure.
+            </p>
+            <Link
+              to="/sell-private"
+              className="inline-block tracking-[0.22em] uppercase font-sans border-b border-gold/50 hover:border-gold pb-1 text-foreground hover:text-gold transition-colors"
+              style={{ fontSize: "0.7rem" }}
+            >
+              Explore Private Sale Options →
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* ── Global Luxury Advertising ── */}
       <Suspense fallback={<div className="min-h-[200px]" />}>
         <GlobalLuxuryAdvertising />

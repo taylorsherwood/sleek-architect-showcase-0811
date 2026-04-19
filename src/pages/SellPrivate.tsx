@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createBreadcrumbSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
-import heroImage from "@/assets/listing-westlake-2210-westlake-dr.jpg";
+import heroImage from "@/assets/sell-private-hero-austin-skyline.webp";
 import sectionImage from "@/assets/listing-tarrytown-2621-exposition.jpg";
 import { formatPhoneNumber, getTimestamp } from "@/lib/formUtils";
 
@@ -128,20 +128,13 @@ const SellPrivate = () => {
         <div className="absolute inset-0">
           <img
             src={heroImage}
-            alt="Discreet luxury residence in Austin's most sought-after neighborhoods"
+            alt="Austin skyline at golden hour over Lady Bird Lake"
             className="w-full h-full object-cover"
             loading="eager"
             fetchPriority="high"
           />
-          {/* Strong overlay for guaranteed legibility */}
-          <div className="absolute inset-0" style={{ backgroundColor: NAVY, opacity: 0.78 }} />
-          <div
-            className="absolute inset-0"
-            style={{
-              background:
-                "linear-gradient(110deg, rgba(12,15,36,0.88) 0%, rgba(12,15,36,0.62) 55%, rgba(12,15,36,0.45) 100%)",
-            }}
-          />
+          {/* Subtle ~20% dark overlay for legibility while keeping the image fully visible */}
+          <div className="absolute inset-0" style={{ backgroundColor: "#000000", opacity: 0.2 }} />
         </div>
 
         <div className="relative z-10 container mx-auto px-5 sm:px-6 pt-24 pb-16 md:pt-28 md:pb-20">

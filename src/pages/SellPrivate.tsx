@@ -362,10 +362,6 @@ const SellPrivate = () => {
                   decoding="async"
                 />
               </div>
-              <div
-                className="hidden lg:block absolute -bottom-8 -left-4 w-24 h-px"
-                style={{ background: "hsl(var(--gold))" }}
-              />
             </div>
           </div>
         </div>
@@ -374,11 +370,14 @@ const SellPrivate = () => {
       {/* ─────────── Quiet authority signal ─────────── */}
       <section style={{ backgroundColor: IVORY }}>
         <div className="container mx-auto px-6 max-w-3xl text-center pb-8">
+          <div
+            className="w-24 h-px mx-auto mb-6"
+            style={{ background: "hsl(var(--gold))" }}
+          />
           <p
-            className="font-light leading-relaxed text-[0.92rem] md:text-[0.98rem] whitespace-pre-line"
+            className="font-light leading-relaxed text-[0.92rem] md:text-[0.98rem]"
             style={{ color: "rgba(12,15,36,0.62)" }}
           >
-            {"\n\n"}
             We work with buyers actively searching in <span style={{ color: NAVY }}>Barton Creek</span>,{" "}
             <span style={{ color: NAVY }}>Westlake Hills</span>,{" "}
             <span style={{ color: NAVY }}>Rollingwood</span>, and central Austin.

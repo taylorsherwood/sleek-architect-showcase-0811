@@ -238,12 +238,12 @@ const SellPrivate = () => {
       </section>
 
       {/* ─────────── TENSION STRIP ─────────── */}
-      <div className="h-3 md:h-4" aria-hidden="true" style={{ backgroundColor: IVORY }} />
-      <section className="border-b" style={{ backgroundColor: IVORY, borderColor: "rgba(12,15,36,0.08)" }}>
-        <div className="container mx-auto px-6 py-9 md:py-12 max-w-5xl">
-          <div className="grid md:grid-cols-[17rem_1fr] gap-8 md:gap-14 items-center">
+      <div className="h-2 md:h-3" aria-hidden="true" style={{ backgroundColor: IVORY }} />
+      <section className="border-b" style={{ backgroundColor: IVORY, borderColor: "rgba(12,15,36,0.06)" }}>
+        <div className="container mx-auto px-6 py-7 md:py-10 max-w-5xl">
+          <div className="grid md:grid-cols-[17rem_1fr] gap-7 md:gap-14 items-center">
             <div>
-              <p className="text-[hsl(var(--gold))] mb-3" style={eyebrowStyle}>
+              <p className="text-[hsl(var(--gold))] mb-2.5" style={eyebrowStyle}>
                 The Reality
               </p>
               <h2
@@ -253,7 +253,7 @@ const SellPrivate = () => {
                 Why Some Sellers<br />Avoid the Open Market
               </h2>
             </div>
-            <ul className="divide-y" style={{ borderColor: "rgba(12,15,36,0.08)" }}>
+            <ul>
               {[
                 "Privacy concerns",
                 "Avoiding constant showings and disruption",
@@ -262,17 +262,17 @@ const SellPrivate = () => {
               ].map((item, i) => (
                 <li
                   key={item}
-                  className="flex items-baseline gap-5 py-3 first:pt-0 last:pb-0 border-t first:border-t-0"
-                  style={{ borderColor: "rgba(12,15,36,0.08)" }}
+                  className="flex items-baseline gap-5 py-2.5 first:pt-0 last:pb-0 border-t first:border-t-0"
+                  style={{ borderColor: "rgba(12,15,36,0.06)" }}
                 >
                   <span
                     className="font-sans tracking-[0.18em] shrink-0 tabular-nums"
-                    style={{ fontSize: "0.62rem", color: "rgba(12,15,36,0.45)" }}
+                    style={{ fontSize: "0.62rem", color: "rgba(12,15,36,0.4)" }}
                   >
                     0{i + 1}
                   </span>
                   <span
-                    className="text-[0.95rem] md:text-base font-light leading-[1.5]"
+                    className="text-[0.95rem] md:text-base font-normal leading-[1.5]"
                     style={{ color: "rgba(12,15,36,0.82)" }}
                   >
                     {item}
@@ -283,33 +283,39 @@ const SellPrivate = () => {
           </div>
         </div>
       </section>
-      <div className="h-3 md:h-4" aria-hidden="true" style={{ backgroundColor: IVORY }} />
+      <div className="h-2 md:h-3" aria-hidden="true" style={{ backgroundColor: IVORY }} />
 
       {/* ─────────── SECTION 1 — Before You List Publicly ─────────── */}
-      <section className="py-9 md:py-12" style={{ backgroundColor: IVORY }}>
+      <section className="py-8 md:py-11" style={{ backgroundColor: IVORY }}>
         <div className="container mx-auto px-6 max-w-6xl">
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
             <div>
-              <p className="text-[hsl(var(--gold))] mb-4" style={eyebrowStyle}>
+              <p className="text-[hsl(var(--gold))] mb-3.5" style={eyebrowStyle}>
                 The Approach
               </p>
               <h2
-                className="font-display text-[1.7rem] md:text-[2rem] lg:text-[2.3rem] font-light leading-[1.12] mb-5 tracking-tight"
+                className="font-display text-[1.7rem] md:text-[2rem] lg:text-[2.3rem] font-light leading-[1.12] mb-4 tracking-tight"
                 style={{ color: NAVY }}
               >
                 Before You List Publicly
               </h2>
               <p
-                className="text-base md:text-[1.05rem] font-light leading-[1.65] mb-3"
+                className="text-base md:text-[1.05rem] font-light leading-[1.6] mb-2.5"
                 style={{ color: "rgba(12,15,36,0.82)" }}
               >
                 Not every home should start with broad public exposure.
               </p>
               <p
-                className="text-base font-light leading-[1.65] mb-6"
+                className="text-base font-light leading-[1.6] mb-2.5"
                 style={{ color: "rgba(12,15,36,0.72)" }}
               >
                 For some sellers, a more discreet approach creates better control, better timing, and a cleaner decision-making process.
+              </p>
+              <p
+                className="text-base font-light leading-[1.6] mb-6"
+                style={{ color: "rgba(12,15,36,0.72)" }}
+              >
+                For some sellers, going public too early creates unnecessary friction.
               </p>
               <p
                 className="mb-3"
@@ -317,7 +323,7 @@ const SellPrivate = () => {
               >
                 A private sale strategy can help you
               </p>
-              <ul className="space-y-2.5 mb-6">
+              <ul className="space-y-2 mb-6">
                 {[
                   "Preserve privacy",
                   "Avoid unnecessary showings",
@@ -340,14 +346,14 @@ const SellPrivate = () => {
               </ul>
               <p
                 className="text-[0.98rem] md:text-base font-light leading-[1.7] italic border-t pt-4"
-                style={{ color: "rgba(12,15,36,0.72)", borderColor: "rgba(12,15,36,0.12)" }}
+                style={{ color: "rgba(12,15,36,0.72)", borderColor: "rgba(12,15,36,0.1)" }}
               >
                 In many cases, this approach creates stronger leverage, even if you ultimately decide to list publicly.
               </p>
             </div>
 
             <div className="relative order-first lg:order-last lg:-mr-[6vw] xl:-mr-[10vw]">
-              <div className="aspect-[3/2] sm:aspect-[16/10] lg:aspect-[16/10] overflow-hidden" style={{ backgroundColor: "rgba(12,15,36,0.05)" }}>
+              <div className="aspect-[3/2] sm:aspect-[16/9] lg:aspect-[16/9] overflow-hidden" style={{ backgroundColor: "rgba(12,15,36,0.05)" }}>
                 <img
                   src={sectionImage}
                   alt="Refined Austin luxury home exterior at dusk — discreet seller representation"
@@ -357,7 +363,7 @@ const SellPrivate = () => {
                 />
               </div>
               <div
-                className="hidden lg:block absolute -bottom-10 -left-4 w-24 h-px"
+                className="hidden lg:block absolute -bottom-8 -left-4 w-24 h-px"
                 style={{ background: "hsl(var(--gold))" }}
               />
             </div>

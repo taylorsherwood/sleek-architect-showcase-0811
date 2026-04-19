@@ -298,6 +298,7 @@ const SellPrivate = () => {
           </div>
         </div>
       </section>
+      <div className="h-6 md:h-8" aria-hidden="true" style={{ backgroundColor: IVORY }} />
 
       {/* ─────────── SECTION 1 — Before You List Publicly ─────────── */}
       <section className="py-13 md:py-18" style={{ backgroundColor: IVORY }}>

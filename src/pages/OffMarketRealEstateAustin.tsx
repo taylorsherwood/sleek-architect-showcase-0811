@@ -377,6 +377,10 @@ const OffMarketRealEstateAustin = () => {
             Explore Private Sale Strategy →
           </Link>
         </div>
+      </section>
+
+      {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+          WHAT YOU CAN ACCESS — with internal links
       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
       <section className="py-16 md:py-24 bg-[hsl(220,15%,8%)] border-t border-white/5">
         <div className="container mx-auto px-6 max-w-4xl">

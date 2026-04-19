@@ -261,9 +261,9 @@ const SellPrivate = () => {
       {/* ─────────── TENSION STRIP ─────────── */}
       <div className="h-6 md:h-8" aria-hidden="true" style={{ backgroundColor: IVORY }} />
       <section className="border-b" style={{ backgroundColor: IVORY, borderColor: "rgba(12,15,36,0.08)" }}>
-        <div className="container mx-auto px-6 py-10 md:py-13 max-w-5xl">
-          <div className="grid md:grid-cols-[auto_1fr] gap-8 md:gap-14 items-start">
-            <div className="md:max-w-[18rem]">
+        <div className="container mx-auto px-6 py-12 md:py-16 max-w-5xl">
+          <div className="grid md:grid-cols-[18rem_1fr] gap-10 md:gap-16 items-start">
+            <div>
               <p className="text-[hsl(var(--gold))] mb-4" style={eyebrowStyle}>
                 The Reality
               </p>
@@ -274,20 +274,20 @@ const SellPrivate = () => {
                 Why Some Sellers Avoid the Open Market
               </h2>
             </div>
-            <ul className="grid sm:grid-cols-2 sm:grid-rows-2 sm:grid-flow-col gap-x-8 gap-y-3.5">
+            <ul className="grid sm:grid-cols-2 gap-x-10 gap-y-4">
               {[
                 "Privacy concerns",
-                "Not wanting to test pricing publicly",
                 "Avoiding constant showings and disruption",
+                "Not wanting to test pricing publicly",
                 "Uncertainty about timing",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <span
-                    className="w-[5px] h-[5px] rounded-full mt-[0.65rem] shrink-0"
+                    className="w-[5px] h-[5px] rounded-full mt-[0.6rem] shrink-0"
                     style={{ backgroundColor: "hsl(var(--gold))" }}
                   />
                   <span
-                    className="text-[0.95rem] md:text-base font-light leading-relaxed"
+                    className="text-[0.95rem] md:text-base font-light leading-[1.55]"
                     style={{ color: "rgba(12,15,36,0.78)" }}
                   >
                     {item}

@@ -356,7 +356,27 @@ const OffMarketRealEstateAustin = () => {
       </section>
 
       {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-          WHAT YOU CAN ACCESS — with internal links
+          SELLER BRIDGE — for homeowners considering a private sale
+      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
+      <section className="py-14 md:py-20 bg-[hsl(220,15%,8%)] border-t border-white/5">
+        <div className="container mx-auto px-6 max-w-3xl text-center">
+          <p className="text-[hsl(var(--gold))] mb-4 font-bold" style={labelStyle}>
+            FOR HOMEOWNERS
+          </p>
+          <h2 className="font-display text-xl md:text-2xl font-light text-white mb-5 leading-snug">
+            Considering a Private Sale?
+          </h2>
+          <p className="text-white/55 text-sm md:text-base font-light leading-relaxed mb-7 max-w-xl mx-auto">
+            If you're a homeowner considering a private sale, learn more here.
+          </p>
+          <Link
+            to="/sell-private"
+            className="inline-block tracking-[0.2em] uppercase font-sans border-b border-[hsl(var(--gold))]/40 hover:border-[hsl(var(--gold))] pb-1 text-[hsl(var(--gold))] hover:text-white transition-colors"
+            style={{ fontSize: "0.7rem" }}
+          >
+            Explore Private Sale Strategy →
+          </Link>
+        </div>
       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
       <section className="py-16 md:py-24 bg-[hsl(220,15%,8%)] border-t border-white/5">
         <div className="container mx-auto px-6 max-w-4xl">

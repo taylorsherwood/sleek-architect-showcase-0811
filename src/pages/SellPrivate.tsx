@@ -369,6 +369,7 @@ const SellPrivate = () => {
                   decoding="async"
                 />
               </div>
+              <div className="h-12 md:h-20" aria-hidden="true" />
               <div
                 className="hidden lg:block absolute -bottom-5 -left-5 w-24 h-px"
                 style={{ background: "hsl(var(--gold))" }}

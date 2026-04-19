@@ -45,6 +45,7 @@ const prerenderRoutes = [
   "/off-market-real-estate-austin",
   "/austin-land-development-opportunities",
   "/austin-luxury-real-estate-market-report",
+  "/about-austin-real-estate-advisory",
   "/sitemap",
 ];
 
@@ -83,6 +84,7 @@ const sitemapStaticRoutes = [
   "/why-billionaires-are-moving-to-austin",
   "/off-market-real-estate-austin",
   "/austin-land-development-opportunities",
+  "/about-austin-real-estate-advisory",
 ];
 
 // Blog posts excluded from sitemap (generic/thin content, not Austin-focused)

@@ -355,7 +355,7 @@ const SellPrivate = () => {
                 className="text-[0.98rem] md:text-base font-light leading-[1.75] italic border-t pt-5"
                 style={{ color: "rgba(12,15,36,0.72)", borderColor: "rgba(12,15,36,0.12)" }}
               >
-                In many cases, this approach creates stronger leverage — even if you ultimately decide to list publicly.
+                In many cases, this approach creates stronger leverage, even if you ultimately decide to list publicly.
               </p>
             </div>
 

@@ -30,9 +30,7 @@
 
     <!-- Critical inline CSS for above-the-fold rendering (includes critical @font-face) -->
     <style>
-      /* Critical @font-face */
-      @font-face{font-family:'Raleway';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/raleway-faccb37f.woff2) format('woff2')}
-      @font-face{font-family:'Playfair Display';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/playfair-48d1e9cd.woff2) format('woff2')}
+      /* Critical @font-face — only the two fonts rendered on the page */
       @font-face{font-family:'Cinzel';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/cinzel-latin.woff2) format('woff2')}
       @font-face{font-family:'Jost';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/jost-latin.woff2) format('woff2')}
       /* CSS custom properties needed for prerendered hero paint */
@@ -129,8 +127,8 @@
   <body>
     <div id="root">
       <noscript>
-        <div style="max-width:800px;margin:60px auto;padding:0 24px;font-family:'Raleway',sans-serif;color:#0C0F24">
-          <h1 style="font-family:'Playfair Display',serif;font-size:2rem;margin-bottom:16px">Echelon Property Group — Austin Luxury Real Estate</h1>
+        <div style="max-width:800px;margin:60px auto;padding:0 24px;font-family:'Jost',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:#0C0F24">
+          <h1 style="font-family:'Cinzel',Georgia,serif;font-size:2rem;margin-bottom:16px">Echelon Property Group — Austin Luxury Real Estate</h1>
           <p>Austin's premier luxury real estate advisory. Buy, sell, and invest in Austin's finest properties with expert guidance from Taylor Sherwood.</p>
           <nav style="margin:24px 0">
             <a href="/buy" style="margin-right:16px;color:#0C0F24">Buy</a>

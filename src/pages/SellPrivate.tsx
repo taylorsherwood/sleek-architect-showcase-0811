@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createBreadcrumbSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
 import heroImage from "@/assets/sell-private-hero-austin-skyline.webp";
-import sectionImage from "@/assets/listing-tarrytown-2621-exposition.jpg";
+import sectionImage from "@/assets/sell-private-approach-kitchen.webp";
 import { formatPhoneNumber, getTimestamp } from "@/lib/formUtils";
 
 const SITE = "https://www.echelonpropertygroup.com";
@@ -133,8 +133,15 @@ const SellPrivate = () => {
             loading="eager"
             fetchPriority="high"
           />
-          {/* Subtle ~20% dark overlay for legibility while keeping the image fully visible */}
-          <div className="absolute inset-0" style={{ backgroundColor: "#000000", opacity: 0.2 }} />
+          {/* Dark overlay for hero text legibility */}
+          <div className="absolute inset-0" style={{ backgroundColor: "#000000", opacity: 0.5 }} />
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                "linear-gradient(100deg, rgba(12,15,36,0.55) 0%, rgba(12,15,36,0.25) 65%, rgba(12,15,36,0.15) 100%)",
+            }}
+          />
         </div>
 
         <div className="relative z-10 container mx-auto px-5 sm:px-6 pt-24 pb-16 md:pt-28 md:pb-20">
@@ -293,7 +300,7 @@ const SellPrivate = () => {
               <div className="aspect-[4/5] overflow-hidden" style={{ backgroundColor: "rgba(12,15,36,0.05)" }}>
                 <img
                   src={sectionImage}
-                  alt="Refined Tarrytown residence — discreet seller representation"
+                  alt="Refined Austin kitchen interior — discreet seller representation"
                   className="w-full h-full object-cover"
                   loading="lazy"
                   decoding="async"

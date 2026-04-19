@@ -404,11 +404,14 @@ const Invest = () => {
         <div className="max-w-6xl mx-auto px-6">
           <ScrollReveal>
             <p className="text-minimal text-gold mb-4">Client Focus</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-16 max-w-2xl">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-6 max-w-2xl">
               Austin Investment Clients
               <br />
               We Serve
             </h2>
+            <p className="text-muted-foreground leading-relaxed max-w-2xl mb-16">
+              Investment work sits within a broader <Link to="/about-austin-real-estate-advisory" className="text-foreground underline hover:text-muted-foreground">Austin real estate advisory practice</Link> built around discretion, underwriting, and access to off-market opportunities.
+            </p>
           </ScrollReveal>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {whoWeWorkWith.map((card, i) => (

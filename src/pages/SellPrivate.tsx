@@ -167,8 +167,8 @@ const SellPrivate = () => {
             >
               In some cases, we already have buyers actively searching for homes like yours.
             </p>
-            <div className="flex flex-col sm:flex-row sm:items-center gap-5 sm:gap-8">
-              <div className="flex flex-col items-start gap-2.5">
+            <div className="flex flex-col items-start gap-5">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-5 sm:gap-8">
                 <button
                   onClick={() => scrollTo("private-sale-form")}
                   className="bg-[hsl(var(--gold))] hover:bg-[#F5F3EF] text-[#F5F3EF] hover:text-[hsl(var(--gold))] px-9 py-[1.05rem] transition-colors duration-300 tracking-[0.22em] uppercase font-sans font-medium"
@@ -176,20 +176,20 @@ const SellPrivate = () => {
                 >
                   Request a Private Sale Strategy
                 </button>
-                <p
-                  className="font-sans tracking-wide"
-                  style={{ fontSize: "0.7rem", color: "rgba(245,243,239,0.6)" }}
+                <button
+                  onClick={() => scrollTo("how-it-works")}
+                  className="text-[#F5F3EF] hover:text-[hsl(var(--gold))] transition-colors tracking-[0.22em] uppercase font-sans border-b border-[#F5F3EF]/40 hover:border-[hsl(var(--gold))]/60 pb-1 self-start sm:self-auto"
+                  style={{ fontSize: "0.7rem" }}
                 >
-                  No pressure. No obligation.
-                </p>
+                  How it Works
+                </button>
               </div>
-              <button
-                onClick={() => scrollTo("how-it-works")}
-                className="text-[#F5F3EF] hover:text-[hsl(var(--gold))] transition-colors tracking-[0.22em] uppercase font-sans border-b border-[#F5F3EF]/40 hover:border-[hsl(var(--gold))]/60 pb-1 self-start"
-                style={{ fontSize: "0.7rem" }}
+              <p
+                className="font-sans tracking-wide"
+                style={{ fontSize: "0.7rem", color: "rgba(245,243,239,0.6)" }}
               >
-                How it Works
-              </button>
+                No pressure. No obligation.
+              </p>
             </div>
           </div>
         </div>

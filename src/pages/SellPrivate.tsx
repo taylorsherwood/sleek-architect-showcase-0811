@@ -198,8 +198,8 @@ const SellPrivate = () => {
               A more controlled way to explore a sale in Austin — without open houses, excessive showings, or public days on market.
             </p>
             <p
-              className="font-light tracking-[0.18em] uppercase mb-5"
-              style={{ fontSize: "0.62rem", color: "rgba(245,243,239,0.55)", fontFamily: '"Jost", sans-serif' }}
+              className="font-light tracking-[0.18em] uppercase mb-5 text-[hsl(var(--gold))]"
+              style={{ fontSize: "0.62rem", fontFamily: '"Jost", sans-serif' }}
             >
               For homeowners who value discretion over exposure.
             </p>

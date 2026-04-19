@@ -346,8 +346,8 @@ const SellPrivate = () => {
               </p>
             </div>
 
-            <div className="relative order-first lg:order-last">
-              <div className="aspect-[4/5] lg:aspect-[4/5] overflow-hidden" style={{ backgroundColor: "rgba(12,15,36,0.05)" }}>
+            <div className="relative order-first lg:order-last lg:-mr-[6vw] xl:-mr-[10vw]">
+              <div className="aspect-[3/2] sm:aspect-[16/10] lg:aspect-[16/10] overflow-hidden" style={{ backgroundColor: "rgba(12,15,36,0.05)" }}>
                 <img
                   src={sectionImage}
                   alt="Refined Austin luxury home exterior at dusk — discreet seller representation"
@@ -357,7 +357,7 @@ const SellPrivate = () => {
                 />
               </div>
               <div
-                className="hidden lg:block absolute -bottom-4 -left-4 w-24 h-px"
+                className="hidden lg:block absolute -bottom-10 -left-4 w-24 h-px"
                 style={{ background: "hsl(var(--gold))" }}
               />
             </div>

@@ -59,6 +59,8 @@ const investImport = () => import("@/pages/Invest");
 const Invest = lazy(investImport);
 const Sitemap = lazy(() => import("@/pages/Sitemap"));
 const AboutAustinRealEstateAdvisory = lazy(() => import("@/pages/AboutAustinRealEstateAdvisory"));
+const SellPrivate = lazy(() => import("@/pages/SellPrivate"));
+const SellPrivateThankYou = lazy(() => import("@/pages/SellPrivateThankYou"));
 const NotFound = lazy(() => import("@/pages/NotFound"));
 
 // Prefetch high-traffic route chunks after homepage is interactive
@@ -159,6 +161,8 @@ const AppRoutes = () => {
           <Route path="/lakeway-homes-for-sale" element={<Navigate to="/communities/lakeway" replace />} />
           <Route path="/sitemap" element={<Sitemap />} />
           <Route path="/about-austin-real-estate-advisory" element={<AboutAustinRealEstateAdvisory />} />
+          <Route path="/sell-private" element={<SellPrivate />} />
+          <Route path="/sell-private/thank-you" element={<SellPrivateThankYou />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>

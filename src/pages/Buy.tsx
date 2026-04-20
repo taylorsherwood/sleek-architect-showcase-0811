@@ -318,7 +318,7 @@ const Buy = () => {
       <Navigation />
 
       {/* ── Hero ── */}
-      <section className="relative h-screen flex items-center overflow-hidden bg-primary">
+      <section className="relative h-screen max-h-[900px] xl:max-h-[920px] 2xl:max-h-[940px] flex items-center overflow-hidden bg-primary">
         <div className="absolute inset-0">
           <img src={heroImg} alt="Luxury home in Austin Texas" title="Austin luxury real estate — buyer services" className="w-full h-full object-cover" loading="eager" decoding="async" />
           <div className="absolute inset-0 bg-[#0C0F24]/60" />

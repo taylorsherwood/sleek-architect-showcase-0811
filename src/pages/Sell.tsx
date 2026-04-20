@@ -26,6 +26,8 @@ import {
 "lucide-react";
 
 import heroImg from "@/assets/sell-hero-luxury-home.jpg";
+import sellHeroVideo from "@/assets/sell-hero-video.mp4";
+import sellHeroVideoPoster from "@/assets/sell-hero-video-poster.webp";
 import taylorProfileSell from "@/assets/echelon-for-sale-sign.jpg";
 import echelonWatermark from "@/assets/echelon-watermark.webp";
 import austinLuxuryNetwork from "@/assets/austin-luxury-network.jpg";
@@ -306,7 +308,22 @@ const Sell = () => {
       {/* ── Hero ── */}
       <section className="relative h-screen flex flex-col justify-end overflow-hidden bg-primary">
         <div className="absolute inset-0">
-          <img src={heroImg} alt="Luxury property in Austin Texas" title="Sell your Austin luxury home — Echelon Property Group" className="w-full h-full object-cover" loading="eager" decoding="async" fetchPriority="high" sizes="100vw" width={1920} height={1080} />
+          {/* Mobile: keep existing image as LCP. Hidden on md+ */}
+          <img src={heroImg} alt="Luxury property in Austin Texas" title="Sell your Austin luxury home — Echelon Property Group" className="md:hidden w-full h-full object-cover" loading="eager" decoding="async" fetchPriority="high" sizes="100vw" width={1920} height={1080} />
+          {/* Desktop: poster paints instantly (LCP), video autoplays once loaded */}
+          <video
+            className="hidden md:block w-full h-full object-cover"
+            src={sellHeroVideo}
+            poster={sellHeroVideoPoster}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            aria-hidden="true"
+            width={1920}
+            height={1080}
+          />
           <div className="absolute inset-0 bg-[#0C0F24]/45" />
         </div>
         <div className="relative container mx-auto px-6 pb-16">

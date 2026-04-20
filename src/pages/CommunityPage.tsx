@@ -279,7 +279,7 @@ const CommunityPage = () => {
         <Helmet prioritizeSeoTags>
           {/* Preload the community hero image so the browser starts fetching it
               during HTML parse, before React hydrates. Critical for LCP. */}
-          <link rel="preload" as="image" href={heroImageSrc} fetchpriority="high" />
+          <link rel="preload" as="image" href={heroImageSrc} fetchPriority="high" />
         </Helmet>
       )}
       <SchemaMarkup schema={createFAQSchema(allFaqs)} />

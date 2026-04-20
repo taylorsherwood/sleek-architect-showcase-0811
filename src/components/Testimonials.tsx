@@ -33,6 +33,13 @@ const testimonials = [
   },
   {
     quote:
+      "Taylor's knowledge of the Austin luxury market is exceptional. He knew the comps, the trends, and which streets were commanding premiums before we even asked.",
+    name: "Chris and Anne Brown",
+    type: "Seller Client",
+    context: "Sold in Tarrytown",
+  },
+  {
+    quote:
       "Taylor was incredible to work with! He's knowledgable, responsive, and genuinely cares about getting the best results for his clients. The entire process was smooth and stress-free. You can tell he really loves what he does and we couldn't have asked for a better experience! Highly recommend him to anyone buying or selling in Austin.",
     name: "Yaniv Dotan",
     type: "BUYER & SELLER CLIENT",

@@ -348,7 +348,7 @@ const Sell = () => {
             width={1920}
             height={1080}
           />
-          <div className="absolute inset-0 bg-[#0C0F24]/45" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0C0F24]/80 via-[#0C0F24]/55 to-[#0C0F24]/35" />
         </div>
         <div className="relative container mx-auto px-6 pb-16">
           <div className="max-w-xl mb-14">

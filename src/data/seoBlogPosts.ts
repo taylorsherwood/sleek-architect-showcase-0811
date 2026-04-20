@@ -19,6 +19,7 @@ import blogOffMarketPrivacy from "@/assets/blog-off-market-privacy.webp";
 import blogBeeCaveHero from "@/assets/bee-cave-hero.webp";
 import blogPrivateListingsHero from "@/assets/blog-private-listings-hero.webp";
 import blogWhatIsPrivateListingHero from "@/assets/blog-what-is-private-listing-hero.webp";
+import blogBuyersNeverSeeBestHomes from "@/assets/blog-buyers-never-see-best-homes-hero.jpg";
 
 import { BlogPost } from "./blogPosts";
 

@@ -99,7 +99,7 @@ const Hero = () => {
 
   return (
     <>
-    <section ref={sectionRef} id="hero-section" className="relative min-h-screen flex flex-col justify-end overflow-hidden bg-primary">
+    <section ref={sectionRef} id="hero-section" className="relative min-h-screen max-h-[900px] xl:max-h-[920px] 2xl:max-h-[940px] flex flex-col justify-end overflow-hidden bg-primary">
       {/* Video — desktop only. Never rendered on mobile or during prerender. */}
       {!skipVideo && !isMobileHero && (
         <div aria-hidden="true" className="absolute inset-0 pointer-events-none select-none" style={{ zIndex: 1 }}>

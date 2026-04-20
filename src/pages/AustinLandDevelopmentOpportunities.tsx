@@ -203,7 +203,7 @@ const AustinLandDevelopmentOpportunities = () => {
       </header>
 
       {/* ── HERO + FORM ─────────────────────────────── */}
-      <section className="relative min-h-screen flex items-center pt-14">
+      <section className="relative min-h-screen max-h-[900px] xl:max-h-[920px] 2xl:max-h-[940px] flex items-center pt-14">
         <div className="absolute inset-0">
           <img
             src={heroImage}

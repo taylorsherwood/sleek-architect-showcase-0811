@@ -52,9 +52,6 @@ const staticRoutes = [
   "/blog/find-off-market-homes-austin",
   "/blog/what-is-private-listing-in-real-estate",
   "/sitemap",
-  "/best-luxury-neighborhoods-in-austin",
-  "/communities/zilker",
-  "/communities/northwest-hills",
 ];
 
 const allPrerenderRoutes = Array.from(

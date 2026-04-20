@@ -49,6 +49,8 @@ const ExpertiseSection = () => {
             </div>
           </ScrollReveal>
 
+          <div className="h-6 md:h-10" aria-hidden="true" />
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {expertiseBlocks.map((block, index) => {
               const isFeatured = index === 0;

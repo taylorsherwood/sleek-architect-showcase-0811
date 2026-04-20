@@ -213,6 +213,30 @@ const consultSchema = z.object({
 
 const Sell = () => {
   const { toast } = useToast();
+  const heroVideoRef = useRef<HTMLVideoElement>(null);
+
+  // Replay hero video whenever the user scrolls back to the top
+  useEffect(() => {
+    const video = heroVideoRef.current;
+    if (!video) return;
+    let wasAwayFromTop = false;
+    const onScroll = () => {
+      const atTop = window.scrollY < 80;
+      if (!atTop) {
+        wasAwayFromTop = true;
+        return;
+      }
+      if (wasAwayFromTop) {
+        wasAwayFromTop = false;
+        try {
+          video.currentTime = 0;
+          void video.play();
+        } catch {}
+      }
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
 
   /* Consult form */
@@ -310,14 +334,14 @@ const Sell = () => {
         <div className="absolute inset-0">
           {/* Mobile: keep existing image as LCP. Hidden on md+ */}
           <img src={heroImg} alt="Luxury property in Austin Texas" title="Sell your Austin luxury home — Echelon Property Group" className="md:hidden w-full h-full object-cover" loading="eager" decoding="async" fetchPriority="high" sizes="100vw" width={1920} height={1080} />
-          {/* Desktop: poster paints instantly (LCP), video autoplays once loaded */}
+          {/* Desktop: poster paints instantly (LCP), video plays once on load and again when user scrolls back to top */}
           <video
+            ref={heroVideoRef}
             className="hidden md:block w-full h-full object-cover"
             src={sellHeroVideo}
             poster={sellHeroVideoPoster}
             autoPlay
             muted
-            loop
             playsInline
             preload="metadata"
             aria-hidden="true"

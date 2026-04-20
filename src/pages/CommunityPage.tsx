@@ -1,4 +1,5 @@
 import { lazy, Suspense } from "react";
+import { Helmet } from "react-helmet-async";
 import CommunityGuideCTA from "@/components/CommunityGuideCTA";
 import CommunityBoundaryMap from "@/components/CommunityBoundaryMap";
 import { useParams, Link, Navigate } from "react-router-dom";
@@ -265,6 +266,8 @@ const CommunityPage = () => {
   );
   const allFaqs = [...existingFaqs, ...dedupedStandard];
 
+  const heroImageSrc = community.heroImage || community.image;
+
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
@@ -272,6 +275,13 @@ const CommunityPage = () => {
         description={`${community.name} homes for sale in Austin TX. Browse listings, pricing trends, and neighborhood insights from Echelon Property Group.`}
         canonical={`/communities/${community.slug}`}
       />
+      {heroImageSrc && (
+        <Helmet prioritizeSeoTags>
+          {/* Preload the community hero image so the browser starts fetching it
+              during HTML parse, before React hydrates. Critical for LCP. */}
+          <link rel="preload" as="image" href={heroImageSrc} fetchpriority="high" />
+        </Helmet>
+      )}
       <SchemaMarkup schema={createFAQSchema(allFaqs)} />
       <SchemaMarkup schema={createCommunityPlaceSchema(community)} />
       <SchemaMarkup schema={createBreadcrumbSchema([
@@ -297,17 +307,21 @@ const CommunityPage = () => {
       </section>
 
       {/* Hero Image */}
-      {community.image && (
+      {heroImageSrc && (
         <section className="pb-16">
           <div className="container mx-auto px-6">
             <div className="max-w-7xl mx-auto">
               <img
-                src={community.heroImage || community.image}
+                src={heroImageSrc}
                 alt={`Luxury homes in ${community.name} Austin Texas`}
                 title={`${community.name} real estate — luxury homes for sale in Austin`}
                 className="w-full aspect-[16/9] object-cover"
+                width={1280}
+                height={720}
                 loading="eager"
+                fetchPriority="high"
                 decoding="async"
+                sizes="(max-width: 768px) 100vw, (max-width: 1280px) 90vw, 1280px"
                 style={{ imageRendering: 'auto' }}
               />
             </div>

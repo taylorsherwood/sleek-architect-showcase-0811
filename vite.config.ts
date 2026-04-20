@@ -21,6 +21,7 @@ const prerenderRoutes = [
   "/blog",
   "/blog/find-off-market-homes-austin",
   "/blog/what-is-private-listing-in-real-estate",
+  "/blog/why-most-buyers-never-see-austins-best-homes",
   "/contact",
   "/search",
   "/land",

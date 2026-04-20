@@ -101,6 +101,7 @@ const sections = [
       { to: "/why-billionaires-are-moving-to-austin", label: "Why Billionaires Are Moving to Austin" },
       { to: "/blog/find-off-market-homes-austin", label: "Off Market Homes in Austin (Definitive Guide)" },
       { to: "/blog/what-is-private-listing-in-real-estate", label: "What Is a Private Listing in Real Estate?" },
+      { to: "/blog/why-most-buyers-never-see-austins-best-homes", label: "Why Most Buyers Never See Austin's Best Homes" },
     ],
   },
   {

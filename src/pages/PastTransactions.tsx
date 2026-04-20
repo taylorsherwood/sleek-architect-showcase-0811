@@ -54,7 +54,7 @@ const PastTransactions = () => {
       <Navigation />
 
       {/* ── Editorial Hero ── */}
-      <section className="relative h-screen flex items-center overflow-hidden bg-primary">
+      <section className="relative h-screen max-h-[900px] xl:max-h-[920px] 2xl:max-h-[940px] flex items-center overflow-hidden bg-primary">
         <div className="absolute inset-0">
           <img
             src={heroImage}

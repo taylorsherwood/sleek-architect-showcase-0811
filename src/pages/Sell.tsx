@@ -213,6 +213,30 @@ const consultSchema = z.object({
 
 const Sell = () => {
   const { toast } = useToast();
+  const heroVideoRef = useRef<HTMLVideoElement>(null);
+
+  // Replay hero video whenever the user scrolls back to the top
+  useEffect(() => {
+    const video = heroVideoRef.current;
+    if (!video) return;
+    let wasAwayFromTop = false;
+    const onScroll = () => {
+      const atTop = window.scrollY < 80;
+      if (!atTop) {
+        wasAwayFromTop = true;
+        return;
+      }
+      if (wasAwayFromTop) {
+        wasAwayFromTop = false;
+        try {
+          video.currentTime = 0;
+          void video.play();
+        } catch {}
+      }
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
 
   /* Consult form */

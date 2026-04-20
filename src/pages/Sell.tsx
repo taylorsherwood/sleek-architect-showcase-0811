@@ -330,7 +330,7 @@ const Sell = () => {
       <Navigation />
 
       {/* ── Hero ── */}
-      <section className="relative h-screen max-h-[900px] xl:max-h-[920px] 2xl:max-h-[940px] flex flex-col justify-end overflow-hidden bg-primary">
+      <section className="relative min-h-[640px] md:min-h-[720px] lg:h-[820px] xl:h-[860px] 2xl:h-[880px] flex flex-col justify-end overflow-hidden bg-primary">
         <div className="absolute inset-0">
           {/* Mobile: keep existing image as LCP. Hidden on md+ */}
           <img src={heroImg} alt="Luxury property in Austin Texas" title="Sell your Austin luxury home — Echelon Property Group" className="md:hidden w-full h-full object-cover" loading="eager" decoding="async" fetchPriority="high" sizes="100vw" width={1920} height={1080} />

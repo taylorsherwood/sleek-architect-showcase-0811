@@ -1103,15 +1103,15 @@ const HomeBelowFold = () => (
 
     <CommunitiesSection />
 
-    <Suspense fallback={<div className="min-h-[200px] bg-background" />}>
-      <ExpertiseSection />
-    </Suspense>
-
     <TestimonialsSection />
     <div className="h-16 md:h-24 bg-secondary flex items-center justify-center" aria-hidden="true">
       <div className="w-16 h-px bg-gold" />
     </div>
     <div className="h-12 md:h-20 bg-secondary" aria-hidden="true" />
+
+    <Suspense fallback={<div className="min-h-[200px] bg-background" />}>
+      <ExpertiseSection />
+    </Suspense>
 
     <div className="parallax-break hidden md:block" style={{ backgroundImage: "url('/images/parallax-lakefront.webp')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties} aria-hidden="true" />
 

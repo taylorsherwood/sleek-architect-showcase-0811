@@ -429,6 +429,16 @@ const FeaturedProperties = () => (
 
 const testimonials = [
   {
+    quote: "Taylor's knowledge of the Austin luxury market is exceptional. He knew the comps, the trends, and which streets were commanding premiums before we even asked.",
+    name: "Chris and Anne Brown",
+    context: "Sold in Tarrytown",
+  },
+  {
+    quote: "After a failed listing experience I was hesitant. Taylor showed me exactly what went wrong before and what he would do differently. That honesty earned my trust, and the sale.",
+    name: "Cameron Miller",
+    context: "Sold in Northwest Hills",
+  },
+  {
     quote: "Taylor made selling our Barton Creek home seamless. His market knowledge and marketing strategy brought us multiple offers above asking within the first week.",
     name: "James & Sarah Mitchell",
     context: "Sold in Barton Creek",

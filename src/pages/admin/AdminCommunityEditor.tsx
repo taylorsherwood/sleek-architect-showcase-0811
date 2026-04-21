@@ -286,7 +286,33 @@ const AdminCommunityEditor = () => {
                     </Field>
                   ))}
                 </div>
-                <Field label="As-of date">
+                <div className="grid sm:grid-cols-2 gap-4">
+                  <Field label="Inventory trend" hint="Short qualitative read, e.g. “Tightening”, “Stable”, “Softening”.">
+                    <input
+                      className={inputClass}
+                      value={form.market_stats.inventory_trend || ""}
+                      onChange={(e) =>
+                        setForm((f) => ({
+                          ...f,
+                          market_stats: { ...f.market_stats, inventory_trend: e.target.value || null },
+                        }))
+                      }
+                    />
+                  </Field>
+                  <Field label="Buyer demand signal" hint="Short qualitative read, e.g. “Multiple-offer activity returning under $3.5M”.">
+                    <input
+                      className={inputClass}
+                      value={form.market_stats.buyer_demand || ""}
+                      onChange={(e) =>
+                        setForm((f) => ({
+                          ...f,
+                          market_stats: { ...f.market_stats, buyer_demand: e.target.value || null },
+                        }))
+                      }
+                    />
+                  </Field>
+                </div>
+                <Field label="As-of date" hint="Free-form, e.g. “Q1 2026” or “April 2026”.">
                   <input
                     className={inputClass}
                     value={form.market_stats.as_of_date || ""}

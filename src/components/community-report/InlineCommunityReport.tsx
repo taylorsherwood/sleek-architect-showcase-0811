@@ -13,6 +13,9 @@ const RealScoutListings = lazy(() => import("@/components/RealScoutListings"));
 
 interface InlineCommunityReportProps {
   slug: string;
+  /** Optional extra content rendered inside the unlocked report (e.g. static
+   *  marketing copy that should live behind the gate). */
+  unlockedExtras?: React.ReactNode;
 }
 
 /**
@@ -22,7 +25,7 @@ interface InlineCommunityReportProps {
  * conversion-focused teaser, an inline gate, and the full report once
  * unlocked (30-day device-level localStorage).
  */
-const InlineCommunityReport = ({ slug }: InlineCommunityReportProps) => {
+const InlineCommunityReport = ({ slug, unlockedExtras }: InlineCommunityReportProps) => {
   const [community, setCommunity] = useState<CommunityRecord | null>(null);
   const [loading, setLoading] = useState(true);
   const [unlocked, setUnlockedState] = useState(false);

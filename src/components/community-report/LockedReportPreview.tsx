@@ -132,8 +132,8 @@ const LockedReportPreview = ({
 
           {/* Blurred dataset preview grid */}
           <div className="mt-10">
-            <p className="text-minimal text-muted-foreground tracking-[0.2em] mb-5">
-              FULL DATASET — PREVIEW
+            <p className="text-minimal text-muted-foreground tracking-[0.2em] mb-5 uppercase">
+              {communityName} Community Profile
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
               {BLURRED_CARDS.map((card) => (

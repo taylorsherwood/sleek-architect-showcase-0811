@@ -27,6 +27,7 @@ const emptyForm: FormData = {
   realscout_reference: null,
   related_communities: [],
   faqs: [],
+  local_highlights: [],
   seo_title: null,
   meta_description: null,
   canonical_url: null,
@@ -79,6 +80,7 @@ const AdminCommunityEditor = () => {
             market_stats: rec.market_stats || {},
             related_communities: rec.related_communities || [],
             faqs: rec.faqs || [],
+            local_highlights: rec.local_highlights || [],
           });
         }
         setLoadingData(false);

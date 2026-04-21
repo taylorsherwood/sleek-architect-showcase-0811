@@ -260,9 +260,7 @@ const LockedReportPreview = ({
                     <p className="text-minimal text-gold tracking-[0.2em] mb-2">
                       {card.eyebrow}
                     </p>
-                    <p className="text-foreground text-sm md:text-base">
-                      {"\n"}
-                    </p>
+                    <p className="text-foreground text-sm md:text-base" />
                   </div>
                 </div>
               ))}
@@ -273,7 +271,7 @@ const LockedReportPreview = ({
           <div className="mt-12 grid md:grid-cols-2 gap-8 md:gap-12 items-start">
             <p className="text-muted-foreground max-w-xl leading-relaxed">
               Reserved for buyers and sellers actively evaluating {communityName}.<br />
-              &nbsp;Instant access. No spam. Updated regularly.
+              Instant access. No spam. Updated regularly.
             </p>
             <div className="w-full">
               {!formExpanded ? (

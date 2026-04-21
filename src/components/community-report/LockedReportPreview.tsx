@@ -267,13 +267,9 @@ const LockedReportPreview = ({
             </div>
           </div>
 
-          {/* CTA — button morphs into email field on click */}
-          <div className="mt-12 grid md:grid-cols-2 gap-8 md:gap-12 items-start">
-            <p className="text-muted-foreground max-w-xl leading-relaxed">
-              Reserved for buyers and sellers actively evaluating {communityName}.<br />
-              Instant access. No spam. Updated regularly.
-            </p>
-            <div className="w-full">
+          {/* CTA — button morphs into email field on click, centered under cards */}
+          <div className="mt-12 flex flex-col items-center text-center gap-6">
+            <div className="w-full max-w-xl flex justify-center">
               {!formExpanded ? (
                 <button
                   type="button"
@@ -325,6 +321,10 @@ const LockedReportPreview = ({
                 </form>
               )}
             </div>
+            <p className="text-muted-foreground max-w-xl leading-relaxed">
+              Reserved for buyers and sellers actively evaluating {communityName}.<br />
+              Instant access. No spam. Updated regularly.
+            </p>
           </div>
         </div>
       </div>

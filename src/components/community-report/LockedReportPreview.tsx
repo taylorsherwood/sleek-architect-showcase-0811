@@ -1,6 +1,10 @@
 import { Lock, TrendingDown, TrendingUp } from "lucide-react";
-import { useEffect, useState } from "react";
-import { isUnlocked } from "@/lib/communityUnlock";
+import { FormEvent, useEffect, useState } from "react";
+import { supabase } from "@/integrations/supabase/client";
+import { isUnlocked, setUnlocked, getUtmParams } from "@/lib/communityUnlock";
+import { getTimestamp } from "@/lib/formUtils";
+
+const ZAPIER_WEBHOOK = "https://hooks.zapier.com/hooks/catch/26916347/upj5fa0/";
 
 interface LockedReportPreviewProps {
   slug: string;

@@ -54,7 +54,7 @@ const FeaturedCommunities = () => (
               to="/communities"
               className="relative inline-block text-foreground hover:text-gold transition-colors duration-300 text-minimal after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-[1px] after:bottom-0 after:left-0 after:bg-gold after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left"
             >
-              VIEW ALL COMMUNITIES →
+              VIEW ALL COMMUNITIES →{"\n\n\n\n"}
             </Link>
           </div>
         </ScrollReveal>

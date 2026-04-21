@@ -351,6 +351,12 @@ const CommunityPage = () => {
         />
       )}
 
+      {/* Neighborhood Boundary Map — sits directly above the overview */}
+      <CommunityBoundaryMap
+        imageSrc={`/images/communities/${community.slug}-boundary.webp`}
+        communityName={community.name}
+      />
+
       {/* Content */}
       <article>
         <div className="container mx-auto px-6">

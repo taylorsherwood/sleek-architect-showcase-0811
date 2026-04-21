@@ -7,6 +7,7 @@ import drippingSpringsImg from "@/assets/communities/dripping-springs.png";
 import hillCountryImg from "@/assets/community-hill-country.jpg";
 import zilkerImg from "@/assets/community-zilker-barton-springs.jpg";
 import westlakeHillsImg from "@/assets/community-westlake-hills.webp";
+import westlakeHillsHeroImg from "@/assets/community-westlake-hills-hero.webp";
 import bartonCreekImg from "@/assets/community-barton-creek.jpg";
 import bartonCreekCommunityImg from "@/assets/communities/barton-creek.jpg";
 import spanishOaksImg from "@/assets/communities/spanish-oaks.jpg";
@@ -62,6 +63,7 @@ export const communityPages: CommunityData[] = [
     metaDescription: "Explore luxury homes for sale in Westlake Hills Austin. Stunning Hill Country views, top Eanes ISD schools, and estates from $1.2M to $20M+.",
     priceRange: "$1.2M – $20M+",
     image: westlakeHillsImg,
+    heroImage: westlakeHillsHeroImg,
     overview: `Westlake Hills is one of Austin's most sought-after luxury communities. Situated on scenic bluffs west of downtown, it overlooks the Hill Country and Lake Austin.
 
 ### Location & Setting

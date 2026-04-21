@@ -5,7 +5,7 @@ interface Props {
 }
 
 const descriptor = (label: string, score?: number | null): { tier: string; note: string } => {
-  if (score == null) return { tier: "—", note: "" };
+  if (score == null) return { tier: "—", note: "Add a score in the admin to populate this card." };
   if (label === "Walk Score") {
     if (score >= 90) return { tier: "Walker's Paradise", note: "Daily errands do not require a car" };
     if (score >= 70) return { tier: "Very Walkable", note: "Most errands can be accomplished on foot" };
@@ -20,7 +20,6 @@ const descriptor = (label: string, score?: number | null): { tier: string; note:
     if (score >= 25) return { tier: "Somewhat Bikeable", note: "Minimal bike infrastructure" };
     return { tier: "Not Bikeable", note: "Limited or no bike infrastructure" };
   }
-  // Transit
   if (score >= 90) return { tier: "Rider's Paradise", note: "World-class public transportation" };
   if (score >= 70) return { tier: "Excellent Transit", note: "Transit is convenient for most trips" };
   if (score >= 50) return { tier: "Good Transit", note: "Many nearby public transportation options" };
@@ -33,9 +32,9 @@ const TransitPanel = ({ transit }: Props) => {
     { label: "Walk Score", value: transit.walk_score },
     { label: "Bike Score", value: transit.bike_score },
     { label: "Transit Score", value: transit.transit_score },
-  ].filter((s) => s.value != null);
+  ];
 
-  if (scores.length === 0 && !transit.summary) return null;
+  const hasData = scores.some((s) => s.value != null) || !!transit.summary;
 
   return (
     <section>
@@ -43,38 +42,43 @@ const TransitPanel = ({ transit }: Props) => {
         Walkability & Transportation
       </h2>
       <p className="text-sm text-muted-foreground mb-8">
-        How easy it is to get around on foot, by bike, and by transit in this area.
+        {hasData
+          ? "How easy it is to get around on foot, by bike, and by transit in this area."
+          : "Walk / Bike / Transit scores — populate via admin. Showing placeholder layout."}
       </p>
 
-      {scores.length > 0 && (
-        <div className="grid sm:grid-cols-3 gap-px bg-border mb-6">
-          {scores.map((s) => {
-            const d = descriptor(s.label, s.value);
-            return (
-              <div key={s.label} className="bg-background p-6">
-                <p className="text-[11px] tracking-[0.2em] uppercase text-muted-foreground mb-3">
-                  {s.label}
+      <div className="grid sm:grid-cols-3 gap-px bg-border mb-6">
+        {scores.map((s) => {
+          const d = descriptor(s.label, s.value);
+          const has = s.value != null;
+          return (
+            <div key={s.label} className="bg-background p-6">
+              <p className="text-[11px] tracking-[0.2em] uppercase text-muted-foreground mb-3">
+                {s.label}
+              </p>
+              <div className="flex items-baseline gap-3 mb-2">
+                <p
+                  className={`text-4xl font-display ${
+                    has ? "text-architectural" : "text-muted-foreground/40"
+                  }`}
+                >
+                  {has ? s.value : "—"}
                 </p>
-                <div className="flex items-baseline gap-3 mb-2">
-                  <p className="text-4xl font-display text-architectural">{s.value}</p>
-                  <p className="text-sm text-foreground">{d.tier}</p>
-                </div>
-                <p className="text-xs text-muted-foreground leading-relaxed">{d.note}</p>
+                <p className={`text-sm ${has ? "text-foreground" : "text-muted-foreground/60"}`}>
+                  {d.tier}
+                </p>
               </div>
-            );
-          })}
-        </div>
-      )}
+              <p className="text-xs text-muted-foreground leading-relaxed">{d.note}</p>
+            </div>
+          );
+        })}
+      </div>
 
       {transit.summary && (
         <p className="text-muted-foreground leading-relaxed">{transit.summary}</p>
       )}
 
-      {scores.length > 0 && (
-        <p className="text-[11px] text-muted-foreground mt-4">
-          Source: Walk Score®
-        </p>
-      )}
+      <p className="text-[11px] text-muted-foreground mt-4">Source: Walk Score®</p>
     </section>
   );
 };

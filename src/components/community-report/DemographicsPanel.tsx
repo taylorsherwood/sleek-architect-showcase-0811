@@ -45,9 +45,9 @@ const DemographicsPanel = ({ demographics }: Props) => {
       value: demographics.average_household_size?.toString(),
       sub: "Persons per household",
     },
-  ].filter((i) => i.value);
+  ];
 
-  if (items.length === 0) return null;
+  const hasData = items.some((i) => i.value);
 
   return (
     <section>
@@ -55,7 +55,9 @@ const DemographicsPanel = ({ demographics }: Props) => {
         Demographics
       </h2>
       <p className="text-sm text-muted-foreground mb-8">
-        Key demographic metrics for the area, based on the latest available US Census data.
+        {hasData
+          ? "Key demographic metrics for the area, based on the latest available US Census data."
+          : "Demographic metrics — populate via admin. Showing placeholder layout."}
       </p>
       <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-px bg-border">
         {items.map((item) => (
@@ -63,7 +65,13 @@ const DemographicsPanel = ({ demographics }: Props) => {
             <p className="text-[11px] tracking-[0.2em] uppercase text-muted-foreground mb-3">
               {item.label}
             </p>
-            <p className="text-3xl font-display text-architectural mb-1">{item.value}</p>
+            <p
+              className={`text-3xl font-display mb-1 ${
+                item.value ? "text-architectural" : "text-muted-foreground/40"
+              }`}
+            >
+              {item.value || "—"}
+            </p>
             <p className="text-xs text-muted-foreground">{item.sub}</p>
           </div>
         ))}

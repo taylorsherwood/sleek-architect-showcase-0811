@@ -8,6 +8,7 @@ import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
 import ScrollReveal from "@/components/ScrollReveal";
 import { formatPhoneNumber, getTimestamp } from "@/lib/formUtils";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 
 const Testimonials = lazy(() => import("@/components/Testimonials"));
 const FeaturedListings = lazy(() => import("@/components/FeaturedListings"));
@@ -214,6 +215,18 @@ const consultSchema = z.object({
 const Sell = () => {
   const { toast } = useToast();
   const heroVideoRef = useRef<HTMLVideoElement>(null);
+  const [valuationOpen, setValuationOpen] = useState(false);
+
+  // Lazy-load RealScout web component script when the valuation modal opens
+  useEffect(() => {
+    if (!valuationOpen) return;
+    const SRC = "https://em.realscout.com/widgets/realscout-web-components.umd.js";
+    if (document.querySelector(`script[src="${SRC}"]`)) return;
+    const s = document.createElement("script");
+    s.type = "module";
+    s.src = SRC;
+    document.body.appendChild(s);
+  }, [valuationOpen]);
 
   // Replay hero video whenever the user scrolls back to the top
   useEffect(() => {
@@ -361,13 +374,10 @@ const Sell = () => {
             <p className="text-primary-foreground/70 text-lg max-w-lg mb-8 reveal-delayed">
               Strategic marketing and expert representation designed to maximize your property's value in Austin's competitive luxury market.
             </p>
-            <a
-              href="#listing-consultation"
-              onClick={(e) => {
-                e.preventDefault();
-                document.getElementById("listing-consultation")?.scrollIntoView({ behavior: "smooth", block: "start" });
-              }}
-              className="inline-block text-minimal px-8 py-3.5 transition-all duration-300 reveal-delayed-2"
+            <button
+              type="button"
+              onClick={() => setValuationOpen(true)}
+              className="inline-block text-minimal px-8 py-3.5 transition-all duration-300 reveal-delayed-2 cursor-pointer"
               style={{
                 border: "1px solid hsl(var(--gold))",
                 color: "hsl(var(--gold))",
@@ -383,7 +393,7 @@ const Sell = () => {
                 e.currentTarget.style.background = "transparent";
                 e.currentTarget.style.color = "hsl(var(--gold))";
               }}>REQUEST A PROPERTY VALUATION
-            </a>
+            </button>
           </div>
 
 
@@ -777,6 +787,40 @@ const Sell = () => {
       <FeaturedCommunities />
 
       <Suspense fallback={<div className="min-h-[100px]" />}><Footer /></Suspense>
+
+      {/* ── Home Valuation Modal (RealScout) ── */}
+      <Dialog open={valuationOpen} onOpenChange={setValuationOpen}>
+        <DialogContent className="max-w-2xl p-0 overflow-hidden bg-[#f5f3ef] border-0">
+          <DialogHeader className="px-8 pt-8 pb-2">
+            <DialogTitle className="font-display text-2xl text-[#0c0f24]">Get Your Home's Value</DialogTitle>
+            <DialogDescription className="text-[#1c1e26]/60">
+              Enter your address to receive a complimentary property valuation.
+            </DialogDescription>
+          </DialogHeader>
+          <div className="px-8 pb-8 pt-4">
+            <style>{`
+              realscout-home-value {
+                --rs-hvw-background-color: #f5f3ef;
+                --rs-hvw-title-color: #000000;
+                --rs-hvw-subtitle-color: rgba(28, 30, 38, 0.5);
+                --rs-hvw-primary-button-text-color: #ffffff;
+                --rs-hvw-primary-button-color: #0c0f24;
+                --rs-hvw-secondary-button-text-color: #0c0f24;
+                --rs-hvw-secondary-button-color: #ffffff;
+                --rs-hvw-widget-width: auto;
+                display: block;
+                width: 100%;
+              }
+            `}</style>
+            <div
+              dangerouslySetInnerHTML={{
+                __html:
+                  '<realscout-home-value agent-encoded-id="QWdlbnQtMjg5NDU2" include-name include-phone remove-title remove-subtitle></realscout-home-value>',
+              }}
+            />
+          </div>
+        </DialogContent>
+      </Dialog>
     </div>);
 
 };

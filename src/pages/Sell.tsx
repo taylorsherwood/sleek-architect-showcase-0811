@@ -750,52 +750,51 @@ const Sell = () => {
       </section>
 
       {/* ── Inline Home Valuation (RealScout) ── */}
-      <section id="home-valuation" className="py-24 md:py-28" style={{ background: "#f6f4f0", scrollMarginTop: "6rem" }}>
-        <div className="container mx-auto px-6">
-          <div className="max-w-3xl mx-auto text-center mb-12 md:mb-14">
-            <p className="text-minimal text-gold mb-4">COMPLIMENTARY VALUATION</p>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-normal text-primary leading-[1.15] mb-5">
+      <section
+        id="home-valuation"
+        className="py-24 md:py-32"
+        style={{ background: "#f6f4f0", scrollMarginTop: "6rem" }}
+      >
+        <div className="mx-auto px-6" style={{ maxWidth: "960px" }}>
+          {/* Subtle gold divider anchor */}
+          <div className="flex justify-center mb-10 md:mb-12">
+            <span className="block h-px w-12" style={{ background: "#b9a06c" }} />
+          </div>
+
+          <div className="text-center mb-10 md:mb-14">
+            <p className="text-minimal text-gold mb-5">COMPLIMENTARY VALUATION</p>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-normal text-primary leading-[1.1] mb-5">
               What's Your Austin Home Worth?
             </h2>
-            <p className="text-foreground/70 leading-relaxed max-w-xl mx-auto">
-              Receive a discreet, data-backed estimate informed by recent comparable sales, current Austin market conditions, and our private transaction insights.
+            <p className="text-foreground/65 leading-relaxed max-w-xl mx-auto text-base md:text-lg">
+              A discreet, data-backed estimate informed by recent comparable sales and our private transaction insights.
             </p>
           </div>
 
+          <style>{`
+            #home-valuation realscout-home-value {
+              --rs-hvw-background-color: transparent;
+              --rs-hvw-title-color: #0c0f24;
+              --rs-hvw-subtitle-color: rgba(28, 30, 38, 0.55);
+              --rs-hvw-primary-button-text-color: #ffffff;
+              --rs-hvw-primary-button-color: #0c0f24;
+              --rs-hvw-secondary-button-text-color: #0c0f24;
+              --rs-hvw-secondary-button-color: transparent;
+              --rs-hvw-widget-width: 100%;
+              display: block;
+              width: 100%;
+              background: transparent;
+            }
+          `}</style>
           <div
-            className="max-w-3xl mx-auto bg-white"
-            style={{
-              border: "1px solid hsl(var(--border))",
-              boxShadow: "0 1px 2px rgba(12,15,36,0.04), 0 12px 32px -16px rgba(12,15,36,0.12)",
+            dangerouslySetInnerHTML={{
+              __html:
+                '<realscout-home-value agent-encoded-id="QWdlbnQtMjg5NDU2" include-name include-phone remove-title remove-subtitle></realscout-home-value>',
             }}
-          >
-            <div className="px-6 md:px-10 py-10 md:py-12">
-              <style>{`
-                #home-valuation realscout-home-value {
-                  --rs-hvw-background-color: #ffffff;
-                  --rs-hvw-title-color: #0c0f24;
-                  --rs-hvw-subtitle-color: rgba(28, 30, 38, 0.55);
-                  --rs-hvw-primary-button-text-color: #ffffff;
-                  --rs-hvw-primary-button-color: #0c0f24;
-                  --rs-hvw-secondary-button-text-color: #0c0f24;
-                  --rs-hvw-secondary-button-color: #ffffff;
-                  --rs-hvw-widget-width: 100%;
-                  display: block;
-                  width: 100%;
-                  background: #ffffff;
-                }
-              `}</style>
-              <div
-                dangerouslySetInnerHTML={{
-                  __html:
-                    '<realscout-home-value agent-encoded-id="QWdlbnQtMjg5NDU2" include-name include-phone remove-title remove-subtitle></realscout-home-value>',
-                }}
-              />
-            </div>
-          </div>
+          />
 
-          <p className="text-center text-xs text-foreground/50 mt-8 max-w-xl mx-auto">
-            Your information is kept strictly confidential. A member of the Echelon team may follow up to refine the estimate with neighborhood-specific context.
+          <p className="text-center text-[11px] tracking-wide text-foreground/40 mt-6 max-w-md mx-auto">
+            Your information is kept strictly confidential.
           </p>
         </div>
       </section>

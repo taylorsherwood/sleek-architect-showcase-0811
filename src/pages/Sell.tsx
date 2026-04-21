@@ -37,25 +37,33 @@ const slowSmoothScrollTo = (
   const target = document.getElementById(elementId);
   if (!target) return;
 
-  const { duration = 4200, offset = 32 } = options;
+  const { duration = 5600, offset = 12 } = options;
   const start = window.scrollY;
   let startTime: number | null = null;
 
   const easeInOutQuart = (t: number) =>
     t < 0.5 ? 8 * t * t * t * t : 1 - Math.pow(-2 * t + 2, 4) / 2;
 
+  const getTargetTop = () =>
+    Math.max(0, target.getBoundingClientRect().top + window.scrollY - offset);
+
   const step = (timestamp: number) => {
     if (startTime === null) startTime = timestamp;
     const elapsed = timestamp - startTime;
     const progress = Math.min(elapsed / duration, 1);
-    const currentTargetTop = Math.max(
-      0,
-      target.getBoundingClientRect().top + window.scrollY - offset
-    );
+    const liveTargetTop = getTargetTop();
 
-    window.scrollTo(0, start + (currentTargetTop - start) * easeInOutQuart(progress));
+    window.scrollTo(0, start + (liveTargetTop - start) * easeInOutQuart(progress));
 
-    if (progress < 1) requestAnimationFrame(step);
+    if (progress < 1) {
+      requestAnimationFrame(step);
+      return;
+    }
+
+    window.scrollTo({ top: getTargetTop(), behavior: "auto" });
+    requestAnimationFrame(() => {
+      window.scrollTo({ top: getTargetTop(), behavior: "auto" });
+    });
   };
 
   requestAnimationFrame(step);

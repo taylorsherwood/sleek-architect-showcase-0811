@@ -107,6 +107,23 @@
         .xl\:-ml-14{margin-left:-3.5rem}
         .xl\:mr-10{margin-right:2.5rem}
       }
+      /* Hero section sizing — prevents collapse before main CSS loads */
+      .min-h-\[640px\]{min-height:640px}
+      @media(min-width:768px){.md\:min-h-\[720px\]{min-height:720px}}
+      @media(min-width:1024px){.lg\:h-\[820px\]{height:820px}}
+      @media(min-width:1280px){.xl\:h-\[860px\]{height:860px}}
+      @media(min-width:1536px){.\32xl\:h-\[880px\]{height:880px}}
+      /* Nav inline-element fixes (dropdown caret, client portal button) */
+      .align-middle{vertical-align:middle}
+      .ml-1\.5{margin-left:.375rem}
+      .opacity-30{opacity:.3}
+      .text-\[7px\]{font-size:7px;line-height:1}
+      .text-\[10px\]{font-size:10px;line-height:1}
+      .text-\[11px\]{font-size:11px;line-height:1}
+      .px-5{padding-left:1.25rem;padding-right:1.25rem}
+      .py-2{padding-top:.5rem;padding-bottom:.5rem}
+      .backdrop-blur-md{-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+      .space-x-6>*+*{margin-left:1.5rem}
     </style>
 
     <!-- RealScout widget styles (no script loaded until idle) -->

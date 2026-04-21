@@ -8,6 +8,7 @@ import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
 import ScrollReveal from "@/components/ScrollReveal";
 import { formatPhoneNumber, getTimestamp } from "@/lib/formUtils";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 
 const Testimonials = lazy(() => import("@/components/Testimonials"));
 const FeaturedListings = lazy(() => import("@/components/FeaturedListings"));

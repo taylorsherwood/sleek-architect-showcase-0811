@@ -1,0 +1,1 @@
+UPDATE public.communities SET gate_enabled = false WHERE slug = 'westlake-hills';

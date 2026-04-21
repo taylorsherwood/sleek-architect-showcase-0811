@@ -749,55 +749,6 @@ const Sell = () => {
         </div>
       </section>
 
-      {/* ── Inline Home Valuation (RealScout) ── */}
-      <section
-        id="home-valuation"
-        className="py-24 md:py-32"
-        style={{ background: "#f6f4f0", scrollMarginTop: "6rem" }}
-      >
-        <div className="mx-auto px-6" style={{ maxWidth: "960px" }}>
-          {/* Subtle gold divider anchor */}
-          <div className="flex justify-center mb-10 md:mb-12">
-            <span className="block h-px w-12" style={{ background: "#b9a06c" }} />
-          </div>
-
-          <div className="text-center mb-10 md:mb-14">
-            <p className="text-minimal text-gold mb-5">COMPLIMENTARY VALUATION</p>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-normal text-primary leading-[1.1] mb-5">
-              What's Your Austin Home Worth?
-            </h2>
-            <p className="text-foreground/65 leading-relaxed max-w-xl mx-auto text-base md:text-lg">
-              A discreet, data-backed estimate informed by recent comparable sales and our private transaction insights.
-            </p>
-          </div>
-
-          <style>{`
-            #home-valuation realscout-home-value {
-              --rs-hvw-background-color: transparent;
-              --rs-hvw-title-color: #0c0f24;
-              --rs-hvw-subtitle-color: rgba(28, 30, 38, 0.55);
-              --rs-hvw-primary-button-text-color: #ffffff;
-              --rs-hvw-primary-button-color: #0c0f24;
-              --rs-hvw-secondary-button-text-color: #0c0f24;
-              --rs-hvw-secondary-button-color: transparent;
-              --rs-hvw-widget-width: 100%;
-              display: block;
-              width: 100%;
-              background: transparent;
-            }
-          `}</style>
-          <div
-            dangerouslySetInnerHTML={{
-              __html:
-                '<realscout-home-value agent-encoded-id="QWdlbnQtMjg5NDU2" include-name include-phone remove-title remove-subtitle></realscout-home-value>',
-            }}
-          />
-
-          <p className="text-center text-[11px] tracking-wide text-foreground/40 mt-6 max-w-md mx-auto">
-            Your information is kept strictly confidential.
-          </p>
-        </div>
-      </section>
 
       {/* ── CTA / Listing Consultation ── */}
       <section id="listing-consultation" className="py-28 bg-[#0C0F24]">

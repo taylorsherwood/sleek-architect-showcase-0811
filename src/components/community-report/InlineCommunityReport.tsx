@@ -16,6 +16,9 @@ interface InlineCommunityReportProps {
   /** Optional extra content rendered inside the unlocked report (e.g. static
    *  marketing copy that should live behind the gate). */
   unlockedExtras?: React.ReactNode;
+  /** When true, hides the embedded RealScout listings widget. Used on the
+   *  parent community page where listings already appear elsewhere. */
+  hideListings?: boolean;
 }
 
 /**

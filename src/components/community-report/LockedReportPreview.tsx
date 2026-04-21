@@ -187,7 +187,7 @@ const LockedReportPreview = ({
                       {card.eyebrow}
                     </p>
                     <p className="text-foreground text-sm md:text-base">
-                      Full dataset unlocked after access
+                      {"\n"}
                     </p>
                   </div>
                 </div>

@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter } from "react-router-dom";
 import AppRoutes from "./AppRoutes";
 import SchemaMarkup, { organizationSchema, websiteSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
+import { AuthProvider } from "@/hooks/useAuth";
 
 const browserQueryClient = new QueryClient();
 
@@ -28,9 +29,11 @@ export const AppShell = ({ children, queryClient = browserQueryClient }: AppShel
 const App = () => (
   <AppShell>
       <BrowserRouter>
-        <main id="main-content">
-          <AppRoutes />
-        </main>
+        <AuthProvider>
+          <main id="main-content">
+            <AppRoutes />
+          </main>
+        </AuthProvider>
       </BrowserRouter>
   </AppShell>
 );

@@ -145,6 +145,21 @@ const CommunityReportPage = () => {
                 {community.tagline}
               </p>
             )}
+            {community.updated_at && (
+              <p
+                className={`mt-8 text-[11px] tracking-[0.2em] uppercase ${
+                  community.hero_image_url ? "text-background/60" : "text-muted-foreground"
+                }`}
+              >
+                Last updated{" "}
+                {new Date(community.updated_at).toLocaleDateString("en-US", {
+                  month: "long",
+                  day: "numeric",
+                  year: "numeric",
+                })}{" "}
+                • Curated by Echelon Property Group
+              </p>
+            )}
           </div>
         </div>
       </section>

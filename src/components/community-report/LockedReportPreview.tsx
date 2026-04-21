@@ -280,7 +280,7 @@ const LockedReportPreview = ({
                 <button
                   type="button"
                   onClick={() => setFormExpanded(true)}
-                  className="inline-flex items-center justify-center px-8 py-4 border border-gold bg-transparent text-gold tracking-[0.2em] text-sm hover:bg-transparent hover:text-gold transition-colors duration-300 whitespace-nowrap"
+                  className="inline-flex items-center justify-center px-8 py-4 border border-solid border-[#b9a06c] bg-transparent text-gold tracking-[0.2em] text-sm hover:bg-transparent hover:text-gold transition-colors duration-300 whitespace-nowrap"
                 >
                   UNLOCK FULL REPORT
                 </button>

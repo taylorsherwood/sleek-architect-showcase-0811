@@ -126,8 +126,11 @@ const CommunityReportPage = () => {
               aria-hidden="true"
             />
             <div
-              className="absolute inset-0 bg-foreground"
-              style={{ opacity: community.hero_overlay_opacity }}
+              className="absolute inset-0"
+              style={{
+                background:
+                  "linear-gradient(180deg, hsl(var(--foreground) / 0.15) 0%, hsl(var(--foreground) / 0.35) 55%, hsl(var(--foreground) / 0.6) 100%)",
+              }}
               aria-hidden="true"
             />
           </>

@@ -37,6 +37,10 @@ export interface CommunityMarketStats {
   sold_count_last_90_days?: number | null;
   average_dom?: number | null;
   median_price_per_sqft?: number | null;
+  /** Qualitative direction of inventory (e.g. "Tightening", "Stable", "Expanding"). */
+  inventory_trend?: string | null;
+  /** Qualitative read on buyer demand (e.g. "Strong, multiple-offer activity returning"). */
+  buyer_demand?: string | null;
   as_of_date?: string | null;
   notes?: string | null;
 }
@@ -75,4 +79,5 @@ export interface CommunityRecord {
   thank_you_message: string | null;
   published: boolean;
   sort_order: number;
+  updated_at?: string | null;
 }

@@ -370,7 +370,46 @@ const CommunityPage = () => {
       {GATED_REPORT_SLUGS.has(community.slug) && (
         <div id="unlock-report" className="container mx-auto px-6 py-8 scroll-mt-24">
           <div className="max-w-4xl mx-auto">
-            <InlineCommunityReport slug={community.slug} />
+            <InlineCommunityReport
+              slug={community.slug}
+              unlockedExtras={
+                <>
+                  <section>
+                    <h3 className="text-2xl md:text-3xl font-display font-normal text-architectural mb-6">
+                      {community.name} Real Estate Market Insights
+                    </h3>
+                    <ContentBlock text={community.marketInsights} currentSlug={community.slug} />
+                  </section>
+
+                  <section>
+                    <h3 className="text-2xl md:text-3xl font-display font-normal text-architectural mb-6">
+                      Schools and Amenities Near {community.name}
+                    </h3>
+                    <ContentBlock text={community.amenitiesAndSchools} currentSlug={community.slug} />
+                  </section>
+
+                  <section>
+                    <h3 className="text-2xl md:text-3xl font-display font-normal text-architectural mb-6">
+                      Investment Potential in {community.name}
+                    </h3>
+                    <ContentBlock text={community.investmentPotential} currentSlug={community.slug} />
+                    <p className="text-muted-foreground leading-relaxed mt-4">
+                      Some homes in {community.name} present strong renovation or value-add opportunities — <Link to="/invest" className="text-foreground underline hover:text-gold transition-colors">explore our investor-focused approach</Link>.
+                    </p>
+                  </section>
+
+                  {community.echelonPerspective && (
+                    <section>
+                      <p className="text-minimal text-gold mb-3 tracking-[0.2em]">LOCAL INSIGHT</p>
+                      <h3 className="text-2xl md:text-3xl font-display font-normal text-architectural mb-6">
+                        Echelon Perspective on {community.name}
+                      </h3>
+                      <ContentBlock text={community.echelonPerspective} currentSlug={community.slug} />
+                    </section>
+                  )}
+                </>
+              }
+            />
           </div>
         </div>
       )}

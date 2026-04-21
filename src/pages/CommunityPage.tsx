@@ -370,7 +370,46 @@ const CommunityPage = () => {
       {GATED_REPORT_SLUGS.has(community.slug) && (
         <div id="unlock-report" className="container mx-auto px-6 py-8 scroll-mt-24">
           <div className="max-w-4xl mx-auto">
-            <InlineCommunityReport slug={community.slug} />
+            <InlineCommunityReport
+              slug={community.slug}
+              unlockedExtras={
+                <>
+                  <section>
+                    <h3 className="text-2xl md:text-3xl font-display font-normal text-architectural mb-6">
+                      {community.name} Real Estate Market Insights
+                    </h3>
+                    <ContentBlock text={community.marketInsights} currentSlug={community.slug} />
+                  </section>
+
+                  <section>
+                    <h3 className="text-2xl md:text-3xl font-display font-normal text-architectural mb-6">
+                      Schools and Amenities Near {community.name}
+                    </h3>
+                    <ContentBlock text={community.amenitiesAndSchools} currentSlug={community.slug} />
+                  </section>
+
+                  <section>
+                    <h3 className="text-2xl md:text-3xl font-display font-normal text-architectural mb-6">
+                      Investment Potential in {community.name}
+                    </h3>
+                    <ContentBlock text={community.investmentPotential} currentSlug={community.slug} />
+                    <p className="text-muted-foreground leading-relaxed mt-4">
+                      Some homes in {community.name} present strong renovation or value-add opportunities — <Link to="/invest" className="text-foreground underline hover:text-gold transition-colors">explore our investor-focused approach</Link>.
+                    </p>
+                  </section>
+
+                  {community.echelonPerspective && (
+                    <section>
+                      <p className="text-minimal text-gold mb-3 tracking-[0.2em]">LOCAL INSIGHT</p>
+                      <h3 className="text-2xl md:text-3xl font-display font-normal text-architectural mb-6">
+                        Echelon Perspective on {community.name}
+                      </h3>
+                      <ContentBlock text={community.echelonPerspective} currentSlug={community.slug} />
+                    </section>
+                  )}
+                </>
+              }
+            />
           </div>
         </div>
       )}
@@ -424,57 +463,50 @@ const CommunityPage = () => {
 
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto space-y-16">
-            {/* Market Insights */}
-            <section>
-              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
-                {community.name} Real Estate Market Insights
-              </h2>
-              {GATED_REPORT_SLUGS.has(community.slug) ? (
-                <div className="relative">
+            {/* Sections below are public for non-gated slugs. For gated slugs
+                (e.g. westlake-hills) Market Insights, Schools/Amenities,
+                Investment Potential, and Echelon Perspective are rendered
+                inside the unlocked InlineCommunityReport above. */}
+            {!GATED_REPORT_SLUGS.has(community.slug) && (
+              <>
+                {/* Market Insights */}
+                <section>
+                  <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
+                    {community.name} Real Estate Market Insights
+                  </h2>
                   <ContentBlock text={community.marketInsights} currentSlug={community.slug} />
-                  {/* Subtle bottom fade — visual nudge that more data exists behind access */}
-                  <div
-                    aria-hidden
-                    className="pointer-events-none absolute inset-x-0 bottom-0 h-24"
-                    style={{
-                      background:
-                        "linear-gradient(180deg, hsl(var(--background) / 0) 0%, hsl(var(--background) / 0.85) 100%)",
-                    }}
-                  />
-                </div>
-              ) : (
-                <ContentBlock text={community.marketInsights} currentSlug={community.slug} />
-              )}
-            </section>
+                </section>
 
-            {/* Amenities & Schools */}
-            <section>
-              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
-                Schools and Amenities Near {community.name}
-              </h2>
-              <ContentBlock text={community.amenitiesAndSchools} currentSlug={community.slug} />
-            </section>
+                {/* Amenities & Schools */}
+                <section>
+                  <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
+                    Schools and Amenities Near {community.name}
+                  </h2>
+                  <ContentBlock text={community.amenitiesAndSchools} currentSlug={community.slug} />
+                </section>
 
-            {/* Investment */}
-            <section>
-              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
-                Investment Potential in {community.name}
-              </h2>
-              <ContentBlock text={community.investmentPotential} currentSlug={community.slug} />
-              <p className="text-muted-foreground leading-relaxed mt-4">
-                Some homes in {community.name} present strong renovation or value-add opportunities — <Link to="/invest" className="text-foreground underline hover:text-gold transition-colors">explore our investor-focused approach</Link>.
-              </p>
-            </section>
+                {/* Investment */}
+                <section>
+                  <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
+                    Investment Potential in {community.name}
+                  </h2>
+                  <ContentBlock text={community.investmentPotential} currentSlug={community.slug} />
+                  <p className="text-muted-foreground leading-relaxed mt-4">
+                    Some homes in {community.name} present strong renovation or value-add opportunities — <Link to="/invest" className="text-foreground underline hover:text-gold transition-colors">explore our investor-focused approach</Link>.
+                  </p>
+                </section>
 
-            {/* Echelon Perspective (optional, editorial authority section) */}
-            {community.echelonPerspective && (
-              <section>
-                <p className="text-minimal text-gold mb-3 tracking-[0.2em]">LOCAL INSIGHT</p>
-                <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
-                  Echelon Perspective on {community.name}
-                </h2>
-                <ContentBlock text={community.echelonPerspective} currentSlug={community.slug} />
-              </section>
+                {/* Echelon Perspective (optional, editorial authority section) */}
+                {community.echelonPerspective && (
+                  <section>
+                    <p className="text-minimal text-gold mb-3 tracking-[0.2em]">LOCAL INSIGHT</p>
+                    <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
+                      Echelon Perspective on {community.name}
+                    </h2>
+                    <ContentBlock text={community.echelonPerspective} currentSlug={community.slug} />
+                  </section>
+                )}
+              </>
             )}
 
             {/* Community Comparison (optional, SEO-optimized) */}

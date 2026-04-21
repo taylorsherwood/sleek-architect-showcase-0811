@@ -6,27 +6,44 @@ interface Props {
 
 const DemographicsPanel = ({ demographics }: Props) => {
   const items = [
-    { label: "Population", value: demographics.population?.toLocaleString() },
+    {
+      label: "Total Population",
+      value: demographics.population?.toLocaleString(),
+      sub: "Residents",
+    },
     {
       label: "Median Household Income",
-      value: demographics.median_household_income != null
-        ? `$${demographics.median_household_income.toLocaleString()}`
-        : undefined,
+      value:
+        demographics.median_household_income != null
+          ? `$${demographics.median_household_income.toLocaleString()}`
+          : undefined,
+      sub: "Per year",
     },
-    { label: "Median Age", value: demographics.median_age?.toString() },
+    {
+      label: "Median Age",
+      value: demographics.median_age?.toString(),
+      sub: "Years old",
+    },
     {
       label: "Homeownership",
-      value: demographics.homeownership_rate != null ? `${demographics.homeownership_rate}%` : undefined,
+      value:
+        demographics.homeownership_rate != null
+          ? `${demographics.homeownership_rate}%`
+          : undefined,
+      sub: "Owner-occupied homes",
     },
     {
-      label: "Bachelor's or Higher",
-      value: demographics.education_bachelors_or_higher != null
-        ? `${demographics.education_bachelors_or_higher}%`
-        : undefined,
+      label: "Education Level",
+      value:
+        demographics.education_bachelors_or_higher != null
+          ? `${demographics.education_bachelors_or_higher}%`
+          : undefined,
+      sub: "Bachelor's or higher",
     },
     {
-      label: "Avg. Household Size",
+      label: "Average Household Size",
       value: demographics.average_household_size?.toString(),
+      sub: "Persons per household",
     },
   ].filter((i) => i.value);
 
@@ -34,16 +51,20 @@ const DemographicsPanel = ({ demographics }: Props) => {
 
   return (
     <section>
-      <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-8">
+      <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-2">
         Demographics
       </h2>
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <p className="text-sm text-muted-foreground mb-8">
+        Key demographic metrics for the area, based on the latest available US Census data.
+      </p>
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-px bg-border">
         {items.map((item) => (
-          <div key={item.label}>
-            <p className="text-xs uppercase tracking-wider text-muted-foreground mb-2">
+          <div key={item.label} className="bg-background p-6">
+            <p className="text-[11px] tracking-[0.2em] uppercase text-muted-foreground mb-3">
               {item.label}
             </p>
-            <p className="text-2xl font-display text-architectural">{item.value}</p>
+            <p className="text-3xl font-display text-architectural mb-1">{item.value}</p>
+            <p className="text-xs text-muted-foreground">{item.sub}</p>
           </div>
         ))}
       </div>

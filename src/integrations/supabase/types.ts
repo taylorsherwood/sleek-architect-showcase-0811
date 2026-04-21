@@ -30,6 +30,7 @@ export type Database = {
           hero_overlay_opacity: number
           highlights: Json
           id: string
+          local_highlights: Json
           market_stats: Json
           meta_description: string | null
           name: string
@@ -62,6 +63,7 @@ export type Database = {
           hero_overlay_opacity?: number
           highlights?: Json
           id?: string
+          local_highlights?: Json
           market_stats?: Json
           meta_description?: string | null
           name: string
@@ -94,6 +96,7 @@ export type Database = {
           hero_overlay_opacity?: number
           highlights?: Json
           id?: string
+          local_highlights?: Json
           market_stats?: Json
           meta_description?: string | null
           name?: string

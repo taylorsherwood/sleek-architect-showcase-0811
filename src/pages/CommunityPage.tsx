@@ -300,14 +300,14 @@ const CommunityPage = () => {
       <Navigation />
 
       {/* Hero */}
-      <section className="pt-40 md:pt-44 pb-16">
+      <section className="pt-32 md:pt-36 pb-10">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
-            <Link to="/communities" className="inline-block text-minimal text-muted-foreground hover:text-foreground transition-colors duration-300 mb-8">
+            <Link to="/communities" className="inline-block text-minimal text-muted-foreground hover:text-foreground transition-colors duration-300 mb-6">
               ← ALL COMMUNITIES
             </Link>
-            <p className="text-minimal text-gold mb-4">{community.priceRange}</p>
-            <h1 className="text-3xl sm:text-5xl md:text-7xl font-display font-normal text-architectural mb-8">
+            <p className="text-minimal text-gold mb-3">{community.priceRange}</p>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-display font-normal text-architectural mb-6">
               {community.heroTitle || `Homes for Sale in ${community.name}`}
             </h1>
           </div>
@@ -316,16 +316,16 @@ const CommunityPage = () => {
 
       {/* Hero Image */}
       {heroImageSrc && (
-        <section className="pb-16">
+        <section className="pb-12">
           <div className="container mx-auto px-6">
             <div className="max-w-7xl mx-auto">
               <img
                 src={heroImageSrc}
                 alt={`Luxury homes in ${community.name} Austin Texas`}
                 title={`${community.name} real estate — luxury homes for sale in Austin`}
-                className="w-full aspect-[16/9] object-cover"
+                className="w-full aspect-[21/9] md:aspect-[24/9] object-cover"
                 width={1280}
-                height={720}
+                height={480}
                 loading="eager"
                 fetchPriority="high"
                 decoding="async"

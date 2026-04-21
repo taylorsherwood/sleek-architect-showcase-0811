@@ -353,8 +353,18 @@ const CommunityPage = () => {
         </div>
       </article>
 
-      {/* Community Guide CTA */}
-      {["westlake-hills", "rollingwood", "rob-roy", "davenport-ranch"].includes(community.slug) && (
+      {/* Gated Insider Report (replaces the old LiveBy guide for migrated slugs) */}
+      {GATED_REPORT_SLUGS.has(community.slug) && (
+        <div className="container mx-auto px-6 py-8">
+          <div className="max-w-4xl mx-auto">
+            <InlineCommunityReport slug={community.slug} />
+          </div>
+        </div>
+      )}
+
+      {/* Legacy LiveBy Community Guide CTA — only for slugs not yet migrated */}
+      {!GATED_REPORT_SLUGS.has(community.slug) &&
+        ["rollingwood", "rob-roy", "davenport-ranch"].includes(community.slug) && (
         <div className="container mx-auto px-6 py-8">
           <div className="max-w-4xl mx-auto">
             <CommunityGuideCTA

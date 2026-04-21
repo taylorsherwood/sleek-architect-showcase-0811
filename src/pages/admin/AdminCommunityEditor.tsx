@@ -417,6 +417,117 @@ const AdminCommunityEditor = () => {
                 </button>
               </section>
 
+              {/* Local Highlights (POI categories) */}
+              <section className="border border-border p-6">
+                <h2 className="text-xl font-display text-architectural mb-2">Local Highlights</h2>
+                <p className="text-xs text-muted-foreground mb-6">
+                  Curated nearby places by category (e.g. Parks, Restaurants, Trails). Categories with no items are hidden on the live report.
+                </p>
+                {form.local_highlights.map((cat, ci) => (
+                  <div key={ci} className="border-l-2 border-border pl-4 mb-6">
+                    <div className="grid sm:grid-cols-3 gap-3 mb-3">
+                      <input
+                        className={inputClass}
+                        placeholder="Category (e.g. Parks)"
+                        value={cat.category}
+                        onChange={(e) => {
+                          const next = [...form.local_highlights];
+                          next[ci] = { ...next[ci], category: e.target.value };
+                          update("local_highlights", next);
+                        }}
+                      />
+                      <input
+                        className={inputClass}
+                        placeholder="Icon (emoji, optional) — e.g. 🌳"
+                        value={cat.icon || ""}
+                        onChange={(e) => {
+                          const next = [...form.local_highlights];
+                          next[ci] = { ...next[ci], icon: e.target.value || null };
+                          update("local_highlights", next);
+                        }}
+                      />
+                      <button
+                        onClick={() =>
+                          update(
+                            "local_highlights",
+                            form.local_highlights.filter((_, idx) => idx !== ci),
+                          )
+                        }
+                        className="text-xs text-destructive hover:underline justify-self-start self-center"
+                      >
+                        Remove category
+                      </button>
+                    </div>
+
+                    {cat.items.map((item, ii) => (
+                      <div key={ii} className="grid sm:grid-cols-[1fr_2fr_auto] gap-2 mb-2">
+                        <input
+                          className={inputClass}
+                          placeholder="Place name"
+                          value={item.name}
+                          onChange={(e) => {
+                            const next = [...form.local_highlights];
+                            const items = [...next[ci].items];
+                            items[ii] = { ...items[ii], name: e.target.value };
+                            next[ci] = { ...next[ci], items };
+                            update("local_highlights", next);
+                          }}
+                        />
+                        <input
+                          className={inputClass}
+                          placeholder="Detail (optional) — short note, address, etc."
+                          value={item.detail || ""}
+                          onChange={(e) => {
+                            const next = [...form.local_highlights];
+                            const items = [...next[ci].items];
+                            items[ii] = { ...items[ii], detail: e.target.value || null };
+                            next[ci] = { ...next[ci], items };
+                            update("local_highlights", next);
+                          }}
+                        />
+                        <button
+                          onClick={() => {
+                            const next = [...form.local_highlights];
+                            next[ci] = {
+                              ...next[ci],
+                              items: next[ci].items.filter((_, idx) => idx !== ii),
+                            };
+                            update("local_highlights", next);
+                          }}
+                          className="text-xs text-destructive hover:underline self-center"
+                        >
+                          Remove
+                        </button>
+                      </div>
+                    ))}
+                    <button
+                      onClick={() => {
+                        const next = [...form.local_highlights];
+                        next[ci] = {
+                          ...next[ci],
+                          items: [...next[ci].items, { name: "", detail: "" }],
+                        };
+                        update("local_highlights", next);
+                      }}
+                      className="text-xs text-gold hover:underline mt-2"
+                    >
+                      + Add place
+                    </button>
+                  </div>
+                ))}
+                <button
+                  onClick={() =>
+                    update("local_highlights", [
+                      ...form.local_highlights,
+                      { category: "", icon: "", items: [] },
+                    ])
+                  }
+                  className="text-sm text-gold hover:underline"
+                >
+                  + Add category
+                </button>
+              </section>
+
               {/* Related */}
               <section className="border border-border p-6">
                 <h2 className="text-xl font-display text-architectural mb-6">Related Communities</h2>

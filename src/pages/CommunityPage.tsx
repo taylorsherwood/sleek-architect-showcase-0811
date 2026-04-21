@@ -3,6 +3,8 @@ import { Helmet } from "react-helmet-async";
 import CommunityGuideCTA from "@/components/CommunityGuideCTA";
 import CommunityBoundaryMap from "@/components/CommunityBoundaryMap";
 import InlineCommunityReport from "@/components/community-report/InlineCommunityReport";
+import LockedReportPreview from "@/components/community-report/LockedReportPreview";
+import MidPageCTABand from "@/components/community-report/MidPageCTABand";
 import { useParams, Link, Navigate } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 
@@ -338,6 +340,17 @@ const CommunityPage = () => {
 
       <div className="h-12 md:h-20" />
 
+      {/* Locked Private Market Report preview (gated slugs only) — sits between
+          hero and existing content. Adds visible metrics + blurred dataset
+          preview that scrolls to the inline gate form below. */}
+      {GATED_REPORT_SLUGS.has(community.slug) && (
+        <LockedReportPreview
+          slug={community.slug}
+          communityName={community.name}
+          formTargetId="unlock-report"
+        />
+      )}
+
       {/* Content */}
       <article>
         <div className="container mx-auto px-6">
@@ -355,7 +368,7 @@ const CommunityPage = () => {
 
       {/* Gated Insider Report (replaces the old LiveBy guide for migrated slugs) */}
       {GATED_REPORT_SLUGS.has(community.slug) && (
-        <div className="container mx-auto px-6 py-8">
+        <div id="unlock-report" className="container mx-auto px-6 py-8 scroll-mt-24">
           <div className="max-w-4xl mx-auto">
             <InlineCommunityReport slug={community.slug} />
           </div>
@@ -395,13 +408,43 @@ const CommunityPage = () => {
               </h2>
               <ContentBlock text={community.lifestyle} currentSlug={community.slug} />
             </section>
+          </div>
+        </div>
 
+        {/* Mid-page CTA interrupt (gated slugs only) */}
+        {GATED_REPORT_SLUGS.has(community.slug) && (
+          <div className="my-16">
+            <MidPageCTABand
+              slug={community.slug}
+              communityName={community.name}
+              formTargetId="unlock-report"
+            />
+          </div>
+        )}
+
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto space-y-16">
             {/* Market Insights */}
             <section>
               <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 {community.name} Real Estate Market Insights
               </h2>
-              <ContentBlock text={community.marketInsights} currentSlug={community.slug} />
+              {GATED_REPORT_SLUGS.has(community.slug) ? (
+                <div className="relative">
+                  <ContentBlock text={community.marketInsights} currentSlug={community.slug} />
+                  {/* Subtle bottom fade — visual nudge that more data exists behind access */}
+                  <div
+                    aria-hidden
+                    className="pointer-events-none absolute inset-x-0 bottom-0 h-24"
+                    style={{
+                      background:
+                        "linear-gradient(180deg, hsl(var(--background) / 0) 0%, hsl(var(--background) / 0.85) 100%)",
+                    }}
+                  />
+                </div>
+              ) : (
+                <ContentBlock text={community.marketInsights} currentSlug={community.slug} />
+              )}
             </section>
 
             {/* Amenities & Schools */}

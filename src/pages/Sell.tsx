@@ -791,14 +791,14 @@ const Sell = () => {
       {/* ── Home Valuation Modal (RealScout) ── */}
       <Dialog open={valuationOpen} onOpenChange={setValuationOpen}>
         <DialogContent
-          className="p-0 overflow-hidden bg-[#f5f3ef] border-0 shadow-none"
-          style={{ width: "min(720px, calc(100vw - 2rem))", maxWidth: "min(720px, calc(100vw - 2rem))" }}
+          className="p-0 overflow-hidden bg-[#f5f3ef] border-0 shadow-2xl"
+          style={{ width: "min(520px, calc(100vw - 2rem))", maxWidth: "min(520px, calc(100vw - 2rem))" }}
         >
           <DialogHeader className="sr-only">
             <DialogTitle>Get Your Home's Value</DialogTitle>
             <DialogDescription>Enter your address to receive a complimentary property valuation.</DialogDescription>
           </DialogHeader>
-          <div className="p-5 overflow-x-auto flex justify-center">
+          <div className="px-4 pt-10 pb-4">
             <style>{`
               realscout-home-value {
                 --rs-hvw-background-color: #f5f3ef;
@@ -810,6 +810,7 @@ const Sell = () => {
                 --rs-hvw-secondary-button-color: #ffffff;
                 --rs-hvw-widget-width: 100% !important;
                 display: block;
+                width: 100%;
                 background: #f5f3ef;
                 box-shadow: none !important;
                 border: 0 !important;

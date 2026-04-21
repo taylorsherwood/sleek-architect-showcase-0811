@@ -185,13 +185,7 @@ const CommunityReportPage = () => {
                   community.hero_image_url ? "text-background/60" : "text-muted-foreground"
                 }`}
               >
-                Last updated{" "}
-                {new Date(community.updated_at).toLocaleDateString("en-US", {
-                  month: "long",
-                  day: "numeric",
-                  year: "numeric",
-                })}{" "}
-                • Curated by Echelon Property Group
+                {"\n"}
               </p>
             )}
           </div>

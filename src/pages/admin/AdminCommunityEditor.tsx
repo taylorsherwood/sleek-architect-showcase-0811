@@ -3,6 +3,7 @@ import { Navigate, useParams, Link } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/hooks/useAuth";
 import { CommunityRecord } from "@/types/community";
+import { toCommunityRecord } from "@/lib/communityCoerce";
 import Navigation from "@/components/Navigation";
 
 type FormData = Omit<CommunityRecord, "id">;
@@ -66,17 +67,18 @@ const AdminCommunityEditor = () => {
       .maybeSingle()
       .then(({ data }) => {
         if (data) {
-          setId(data.id);
+          const rec = toCommunityRecord(data);
+          setId(rec.id);
           setForm({
             ...emptyForm,
-            ...(data as Partial<CommunityRecord>),
-            highlights: (data.highlights as FormData["highlights"]) || [],
-            demographics: (data.demographics as FormData["demographics"]) || {},
-            schools: (data.schools as FormData["schools"]) || [],
-            transit: (data.transit as FormData["transit"]) || {},
-            market_stats: (data.market_stats as FormData["market_stats"]) || {},
-            related_communities: (data.related_communities as string[]) || [],
-            faqs: (data.faqs as FormData["faqs"]) || [],
+            ...rec,
+            highlights: rec.highlights || [],
+            demographics: rec.demographics || {},
+            schools: rec.schools || [],
+            transit: rec.transit || {},
+            market_stats: rec.market_stats || {},
+            related_communities: rec.related_communities || [],
+            faqs: rec.faqs || [],
           });
         }
         setLoadingData(false);
@@ -103,7 +105,8 @@ const AdminCommunityEditor = () => {
   const handleSave = async () => {
     if (!id) return;
     setSaving(true);
-    const { error } = await supabase.from("communities").update(form).eq("id", id);
+    const payload = form as unknown as Record<string, unknown>;
+    const { error } = await supabase.from("communities").update(payload).eq("id", id);
     setSaving(false);
     if (error) {
       alert(error.message);

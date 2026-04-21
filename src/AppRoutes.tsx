@@ -62,6 +62,10 @@ const AboutAustinRealEstateAdvisory = lazy(() => import("@/pages/AboutAustinReal
 const SellPrivate = lazy(() => import("@/pages/SellPrivate"));
 const SellPrivateThankYou = lazy(() => import("@/pages/SellPrivateThankYou"));
 const NotFound = lazy(() => import("@/pages/NotFound"));
+const CommunityReportPage = lazy(() => import("@/pages/CommunityReportPage"));
+const AdminLogin = lazy(() => import("@/pages/admin/AdminLogin"));
+const AdminDashboard = lazy(() => import("@/pages/admin/AdminDashboard"));
+const AdminCommunityEditor = lazy(() => import("@/pages/admin/AdminCommunityEditor"));
 
 // Prefetch high-traffic route chunks after homepage is interactive
 if (typeof window !== "undefined") {
@@ -163,6 +167,10 @@ const AppRoutes = () => {
           <Route path="/about-austin-real-estate-advisory" element={<AboutAustinRealEstateAdvisory />} />
           <Route path="/sell-private" element={<SellPrivate />} />
           <Route path="/sell-private/thank-you" element={<SellPrivateThankYou />} />
+          <Route path="/communities/:slug/report" element={<CommunityReportPage />} />
+          <Route path="/admin/login" element={<AdminLogin />} />
+          <Route path="/admin" element={<AdminDashboard />} />
+          <Route path="/admin/communities/:slug" element={<AdminCommunityEditor />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>

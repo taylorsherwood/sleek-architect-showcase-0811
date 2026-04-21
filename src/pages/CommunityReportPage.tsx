@@ -2,6 +2,7 @@ import { lazy, Suspense, useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
 import { CommunityRecord } from "@/types/community";
+import { toCommunityRecord } from "@/lib/communityCoerce";
 import { isUnlocked } from "@/lib/communityUnlock";
 import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";
@@ -38,7 +39,7 @@ const CommunityReportPage = () => {
       .eq("published", true)
       .maybeSingle()
       .then(({ data }) => {
-        setCommunity(data as CommunityRecord | null);
+        setCommunity(data ? toCommunityRecord(data) : null);
         setLoading(false);
       });
     setUnlockedState(isUnlocked(slug));
@@ -78,7 +79,7 @@ const CommunityReportPage = () => {
           community.meta_description ||
           `Inside look at ${community.name}: market trends, schools, demographics, and current listings.`
         }
-        canonicalUrl={canonical}
+        canonical={canonical}
       />
       {community.faqs?.length > 0 && <SchemaMarkup schema={createFAQSchema(community.faqs)} />}
       <SchemaMarkup

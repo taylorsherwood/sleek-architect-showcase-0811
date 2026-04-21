@@ -436,7 +436,7 @@ const Sell = () => {
               href="#home-valuation-widget"
               onClick={(e) => {
                 e.preventDefault();
-                slowSmoothScrollTo("home-valuation-widget", { duration: 5600, offset: 12 });
+                slowSmoothScrollTo("home-valuation-widget", { duration: 5600, offset: 24 });
               }}
               className="inline-block text-minimal px-8 py-3.5 transition-all duration-300 reveal-delayed-2 cursor-pointer"
               style={{

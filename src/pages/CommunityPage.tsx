@@ -2,11 +2,12 @@ import { lazy, Suspense } from "react";
 import { Helmet } from "react-helmet-async";
 import CommunityGuideCTA from "@/components/CommunityGuideCTA";
 import CommunityBoundaryMap from "@/components/CommunityBoundaryMap";
+import InlineCommunityReport from "@/components/community-report/InlineCommunityReport";
 import { useParams, Link, Navigate } from "react-router-dom";
 import Navigation from "@/components/Navigation";
-import CommunityReportPage from "@/pages/CommunityReportPage";
 
-// Slugs that should render the new gated CMS-driven report instead of the legacy static page.
+// Slugs whose old LiveBy CommunityGuideCTA is replaced inline by the new
+// CMS-driven gated report (teaser + gate + full unlocked content).
 const GATED_REPORT_SLUGS = new Set<string>(["westlake-hills"]);
 const Footer = lazy(() => import("@/components/Footer"));
 import AboutBlock from "@/components/AboutBlock";

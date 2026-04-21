@@ -424,7 +424,7 @@ const GlobalLuxuryAdvertising = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16" style={revealStyle(cards.visible, 0)}>
-              <p className="text-minimal text-gold mb-4 font-extrabold">MARKETING EXECUTION</p>
+              <p className="text-minimal text-gold mb-4 font-extrabold">{"\n\n"}MARKETING EXECUTION</p>
               <h2 className="text-3xl md:text-5xl font-display font-normal text-architectural">
                 Three Pillars of Premium Presentation
               </h2>

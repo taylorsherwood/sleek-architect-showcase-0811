@@ -311,28 +311,30 @@ const CommunityReportPage = () => {
                   <TransitPanel transit={community.transit} />
                 </section>
 
-                <section id="homes" className="scroll-mt-32">
-                  <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-2">
-                    Current Listings in {community.name}
-                  </h2>
-                  <p className="text-sm text-muted-foreground mb-6">
-                    Live inventory from MLS, curated through Echelon's RealScout integration.
-                  </p>
-                  <Suspense
-                    fallback={
-                      <div className="min-h-[200px] flex items-center justify-center text-muted-foreground">
-                        Loading listings…
-                      </div>
-                    }
-                  >
-                    <RealScoutListings
-                      heading={`${community.name.toUpperCase()} INVENTORY`}
-                      subheading="Available Now"
-                      title="Currently Available"
-                      listingStatus="For Sale"
-                    />
-                  </Suspense>
-                </section>
+                {community.slug !== "westlake-hills" && (
+                  <section id="homes" className="scroll-mt-32">
+                    <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-2">
+                      Current Listings in {community.name}
+                    </h2>
+                    <p className="text-sm text-muted-foreground mb-6">
+                      Live inventory from MLS, curated through Echelon's RealScout integration.
+                    </p>
+                    <Suspense
+                      fallback={
+                        <div className="min-h-[200px] flex items-center justify-center text-muted-foreground">
+                          Loading listings…
+                        </div>
+                      }
+                    >
+                      <RealScoutListings
+                        heading={`${community.name.toUpperCase()} INVENTORY`}
+                        subheading="Available Now"
+                        title="Currently Available"
+                        listingStatus="For Sale"
+                      />
+                    </Suspense>
+                  </section>
+                )}
 
                 <section id="take" className="scroll-mt-32">
                   {community.our_take ? (

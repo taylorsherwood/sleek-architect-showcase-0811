@@ -58,10 +58,10 @@ const MarketSnapshot = ({ stats, communityName }: MarketSnapshotProps) => {
         <div className="grid sm:grid-cols-2 gap-px bg-border mt-px">
           {qualitativeItems.map((item) => (
             <div key={item.label} className="bg-background p-6">
-              <p className="text-xs uppercase tracking-wider text-muted-foreground mb-2">
+              <p className="text-xs uppercase tracking-wider text-gold mb-2">
                 {item.label}
               </p>
-              <p className="text-base text-foreground leading-relaxed">{item.value}</p>
+              <p className="text-base text-architectural font-normal leading-relaxed">{item.value}</p>
             </div>
           ))}
         </div>

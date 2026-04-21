@@ -82,6 +82,31 @@
       .h-20{height:5rem}
       @media(min-width:768px){.md\:h-24{height:6rem}}
       @media(min-width:1024px){.lg\:h-\[6\.5rem\]{height:6.5rem}}
+      /* Critical nav layout — prevents stacked/misaligned flash before main CSS loads */
+      .overflow-visible{overflow:visible}
+      .shrink-0{flex-shrink:0}
+      .justify-center{justify-content:center}
+      .ml-0{margin-left:0}.ml-auto{margin-left:auto}
+      .mr-6{margin-right:1.5rem}
+      .px-2{padding-left:.5rem;padding-right:.5rem}
+      .max-w-none{max-width:none}
+      .w-auto{width:auto}
+      .border-0{border-width:0}
+      nav ul,nav ol{list-style:none;margin:0;padding:0}
+      @media(min-width:768px){.md\:px-6{padding-left:1.5rem;padding-right:1.5rem}}
+      @media(min-width:1024px){
+        .lg\:flex{display:flex}.lg\:hidden{display:none}.lg\:block{display:block}
+        .lg\:justify-start{justify-content:flex-start}
+        .lg\:-ml-16{margin-left:-4rem}
+      }
+      @media(min-width:1024px){
+        nav .lg\:flex.items-center>*+*{margin-left:1.5rem}
+      }
+      @media(min-width:1280px){
+        nav .xl\:space-x-8>*+*{margin-left:2rem}
+        .xl\:-ml-14{margin-left:-3.5rem}
+        .xl\:mr-10{margin-right:2.5rem}
+      }
     </style>
 
     <!-- RealScout widget styles (no script loaded until idle) -->

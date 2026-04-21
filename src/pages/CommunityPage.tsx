@@ -372,6 +372,7 @@ const CommunityPage = () => {
           <div className="max-w-4xl mx-auto">
             <InlineCommunityReport
               slug={community.slug}
+              hideListings
               unlockedExtras={
                 <>
                   <section>

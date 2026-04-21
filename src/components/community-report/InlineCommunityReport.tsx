@@ -16,6 +16,9 @@ interface InlineCommunityReportProps {
   /** Optional extra content rendered inside the unlocked report (e.g. static
    *  marketing copy that should live behind the gate). */
   unlockedExtras?: React.ReactNode;
+  /** When true, hides the embedded RealScout listings widget. Used on the
+   *  parent community page where listings already appear elsewhere. */
+  hideListings?: boolean;
 }
 
 /**
@@ -25,7 +28,7 @@ interface InlineCommunityReportProps {
  * conversion-focused teaser, an inline gate, and the full report once
  * unlocked (30-day device-level localStorage).
  */
-const InlineCommunityReport = ({ slug, unlockedExtras }: InlineCommunityReportProps) => {
+const InlineCommunityReport = ({ slug, unlockedExtras, hideListings = false }: InlineCommunityReportProps) => {
   const [community, setCommunity] = useState<CommunityRecord | null>(null);
   const [loading, setLoading] = useState(true);
   const [unlocked, setUnlockedState] = useState(false);
@@ -187,25 +190,27 @@ const InlineCommunityReport = ({ slug, unlockedExtras }: InlineCommunityReportPr
 
             <MarketSnapshot stats={community.market_stats} communityName={community.name} />
 
-            <section>
-              <h3 className="text-2xl md:text-3xl font-display font-normal text-architectural mb-6">
-                Current Listings in {community.name}
-              </h3>
-              <Suspense
-                fallback={
-                  <div className="min-h-[200px] flex items-center justify-center text-muted-foreground">
-                    Loading listings…
-                  </div>
-                }
-              >
-                <RealScoutListings
-                  heading={`${community.name.toUpperCase()} INVENTORY`}
-                  subheading="Available Now"
-                  title="Currently Available"
-                  listingStatus="For Sale"
-                />
-              </Suspense>
-            </section>
+            {!hideListings && (
+              <section>
+                <h3 className="text-2xl md:text-3xl font-display font-normal text-architectural mb-6">
+                  Current Listings in {community.name}
+                </h3>
+                <Suspense
+                  fallback={
+                    <div className="min-h-[200px] flex items-center justify-center text-muted-foreground">
+                      Loading listings…
+                    </div>
+                  }
+                >
+                  <RealScoutListings
+                    heading={`${community.name.toUpperCase()} INVENTORY`}
+                    subheading="Available Now"
+                    title="Currently Available"
+                    listingStatus="For Sale"
+                  />
+                </Suspense>
+              </section>
+            )}
 
             <DemographicsPanel demographics={community.demographics} />
             <SchoolsPanel schools={community.schools} />

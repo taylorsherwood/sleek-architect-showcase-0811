@@ -419,7 +419,7 @@ const Sell = () => {
               href="#home-valuation"
               onClick={(e) => {
                 e.preventDefault();
-                slowSmoothScrollTo("home-valuation", 1800);
+                slowSmoothScrollTo("home-valuation", 3200);
               }}
               className="inline-block text-minimal px-8 py-3.5 transition-all duration-300 reveal-delayed-2 cursor-pointer"
               style={{
@@ -686,11 +686,6 @@ const Sell = () => {
           </div>
 
           <style>{`
-            #home-valuation .rs-widget-wrap {
-              max-width: 720px;
-              margin-left: auto;
-              margin-right: auto;
-            }
             #home-valuation realscout-home-value {
               --rs-hvw-background-color: transparent;
               --rs-hvw-title-color: #0c0f24;
@@ -702,9 +697,18 @@ const Sell = () => {
               --rs-hvw-widget-width: 100%;
               display: block;
               width: 100%;
-              max-width: 100%;
-              margin: 0 auto;
+              max-width: 720px;
+              margin-left: auto !important;
+              margin-right: auto !important;
               background: transparent;
+            }
+            #home-valuation .rs-widget-wrap {
+              width: 100%;
+              max-width: 720px;
+              margin-left: auto;
+              margin-right: auto;
+              display: flex;
+              justify-content: center;
             }
           `}</style>
           <div

@@ -686,6 +686,11 @@ const Sell = () => {
           </div>
 
           <style>{`
+            #home-valuation .rs-widget-wrap {
+              max-width: 720px;
+              margin-left: auto;
+              margin-right: auto;
+            }
             #home-valuation realscout-home-value {
               --rs-hvw-background-color: transparent;
               --rs-hvw-title-color: #0c0f24;
@@ -697,10 +702,13 @@ const Sell = () => {
               --rs-hvw-widget-width: 100%;
               display: block;
               width: 100%;
+              max-width: 100%;
+              margin: 0 auto;
               background: transparent;
             }
           `}</style>
           <div
+            className="rs-widget-wrap"
             dangerouslySetInnerHTML={{
               __html:
                 '<realscout-home-value agent-encoded-id="QWdlbnQtMjg5NDU2" include-name include-phone remove-title remove-subtitle></realscout-home-value>',

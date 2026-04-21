@@ -794,9 +794,15 @@ const Sell = () => {
         style={{ background: "#f6f4f0", scrollMarginTop: "6rem" }}
       >
         <div className="mx-auto px-6" style={{ maxWidth: "980px" }}>
-          {/* Subtle gold divider anchor */}
-          <div className="flex justify-center mb-9 md:mb-10">
-            <span className="block h-px w-12" style={{ background: "#b9a06c" }} />
+          {/* Ornamental gold divider */}
+          <div className="flex items-center justify-center gap-3 mb-9 md:mb-10" aria-hidden="true">
+            <span className="block h-px w-16 md:w-20" style={{ background: "linear-gradient(to right, transparent, #b9a06c)" }} />
+            <span className="block h-1.5 w-1.5 rotate-45" style={{ background: "#b9a06c" }} />
+            <span className="block h-px w-6" style={{ background: "#b9a06c" }} />
+            <span className="block h-2 w-2 rotate-45 border" style={{ borderColor: "#b9a06c" }} />
+            <span className="block h-px w-6" style={{ background: "#b9a06c" }} />
+            <span className="block h-1.5 w-1.5 rotate-45" style={{ background: "#b9a06c" }} />
+            <span className="block h-px w-16 md:w-20" style={{ background: "linear-gradient(to left, transparent, #b9a06c)" }} />
           </div>
 
           <div className="max-w-[780px] mx-auto text-center mb-8 md:mb-10">

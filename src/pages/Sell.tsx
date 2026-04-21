@@ -686,11 +686,6 @@ const Sell = () => {
           </div>
 
           <style>{`
-            #home-valuation .rs-widget-wrap {
-              max-width: 720px;
-              margin-left: auto;
-              margin-right: auto;
-            }
             #home-valuation realscout-home-value {
               --rs-hvw-background-color: transparent;
               --rs-hvw-title-color: #0c0f24;
@@ -702,9 +697,18 @@ const Sell = () => {
               --rs-hvw-widget-width: 100%;
               display: block;
               width: 100%;
-              max-width: 100%;
-              margin: 0 auto;
+              max-width: 720px;
+              margin-left: auto !important;
+              margin-right: auto !important;
               background: transparent;
+            }
+            #home-valuation .rs-widget-wrap {
+              width: 100%;
+              max-width: 720px;
+              margin-left: auto;
+              margin-right: auto;
+              display: flex;
+              justify-content: center;
             }
           `}</style>
           <div

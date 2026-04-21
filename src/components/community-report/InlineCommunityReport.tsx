@@ -95,25 +95,25 @@ const InlineCommunityReport = ({ slug }: InlineCommunityReportProps) => {
             </p>
             <ul className="grid sm:grid-cols-2 gap-x-10 gap-y-4 text-foreground">
               <li className="flex items-start gap-3">
-                <span className="text-gold mt-2 shrink-0">—</span>
+                <span aria-hidden className="text-gold shrink-0 leading-relaxed w-4">—</span>
                 <span className="leading-relaxed">
                   Where pricing is actually moving, not the headline numbers
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-gold mt-2 shrink-0">—</span>
+                <span aria-hidden className="text-gold shrink-0 leading-relaxed w-4">—</span>
                 <span className="leading-relaxed">
                   Pockets within {community.name} appreciating fastest
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-gold mt-2 shrink-0">—</span>
+                <span aria-hidden className="text-gold shrink-0 leading-relaxed w-4">—</span>
                 <span className="leading-relaxed">
                   Current inventory paired with our read on each property
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-gold mt-2 shrink-0">—</span>
+                <span aria-hidden className="text-gold shrink-0 leading-relaxed w-4">—</span>
                 <span className="leading-relaxed">
                   Schools, demographics, and walkability in one place
                 </span>

@@ -408,13 +408,43 @@ const CommunityPage = () => {
               </h2>
               <ContentBlock text={community.lifestyle} currentSlug={community.slug} />
             </section>
+          </div>
+        </div>
 
+        {/* Mid-page CTA interrupt (gated slugs only) */}
+        {GATED_REPORT_SLUGS.has(community.slug) && (
+          <div className="my-16">
+            <MidPageCTABand
+              slug={community.slug}
+              communityName={community.name}
+              formTargetId="unlock-report"
+            />
+          </div>
+        )}
+
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto space-y-16">
             {/* Market Insights */}
             <section>
               <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 {community.name} Real Estate Market Insights
               </h2>
-              <ContentBlock text={community.marketInsights} currentSlug={community.slug} />
+              {GATED_REPORT_SLUGS.has(community.slug) ? (
+                <div className="relative">
+                  <ContentBlock text={community.marketInsights} currentSlug={community.slug} />
+                  {/* Subtle bottom fade — visual nudge that more data exists behind access */}
+                  <div
+                    aria-hidden
+                    className="pointer-events-none absolute inset-x-0 bottom-0 h-24"
+                    style={{
+                      background:
+                        "linear-gradient(180deg, hsl(var(--background) / 0) 0%, hsl(var(--background) / 0.85) 100%)",
+                    }}
+                  />
+                </div>
+              ) : (
+                <ContentBlock text={community.marketInsights} currentSlug={community.slug} />
+              )}
             </section>
 
             {/* Amenities & Schools */}

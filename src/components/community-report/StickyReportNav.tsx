@@ -50,7 +50,7 @@ const StickyReportNav = ({ items }: StickyReportNavProps) => {
       <div className="container mx-auto px-6">
         <nav
           aria-label="Report sections"
-          className="flex gap-x-8 overflow-x-auto scrollbar-none py-4 -mx-6 px-6"
+          className="flex md:justify-center gap-x-8 overflow-x-auto scrollbar-none py-4 -mx-6 px-6"
         >
           {items.map((item) => {
             const active = item.id === activeId;

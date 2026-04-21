@@ -46,8 +46,19 @@ const InlineCommunityReport = ({ slug, unlockedExtras }: InlineCommunityReportPr
         setLoading(false);
       });
     setUnlockedState(isUnlocked(slug));
+
+    const onUnlock = (e: Event) => {
+      const detail = (e as CustomEvent<{ slug?: string }>).detail;
+      if (detail?.slug === slug) {
+        setUnlockedState(true);
+        setJustUnlocked(true);
+      }
+    };
+    window.addEventListener("echelon:community-unlocked", onUnlock as EventListener);
+
     return () => {
       cancelled = true;
+      window.removeEventListener("echelon:community-unlocked", onUnlock as EventListener);
     };
   }, [slug]);
 

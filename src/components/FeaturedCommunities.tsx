@@ -20,7 +20,7 @@ const FeaturedCommunities = () => (
       <div className="max-w-4xl mx-auto">
         <ScrollReveal>
           <div className="text-center mb-10">
-            <p className="text-minimal text-gold mb-4 tracking-[0.25em]">FEATURED AUSTIN COMMUNITIES</p>
+            <p className="text-minimal text-gold mb-4 tracking-[0.25em]">{"\n\n"}FEATURED AUSTIN COMMUNITIES</p>
             <h2 className="text-2xl md:text-3xl font-display font-normal text-architectural leading-[1.1] tracking-[0.03em]">
               Explore Austin's Premier Neighborhoods
             </h2>

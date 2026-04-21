@@ -145,6 +145,21 @@ const CommunityReportPage = () => {
                 {community.tagline}
               </p>
             )}
+            {community.updated_at && (
+              <p
+                className={`mt-8 text-[11px] tracking-[0.2em] uppercase ${
+                  community.hero_image_url ? "text-background/60" : "text-muted-foreground"
+                }`}
+              >
+                Last updated{" "}
+                {new Date(community.updated_at).toLocaleDateString("en-US", {
+                  month: "long",
+                  day: "numeric",
+                  year: "numeric",
+                })}{" "}
+                • Curated by Echelon Property Group
+              </p>
+            )}
           </div>
         </div>
       </section>
@@ -253,7 +268,7 @@ const CommunityReportPage = () => {
               <SchoolsPanel schools={community.schools} />
               <TransitPanel transit={community.transit} />
 
-              {community.our_take && (
+              {community.our_take ? (
                 <section className="border-l-4 border-gold pl-8">
                   <p className="text-minimal text-gold mb-4 tracking-[0.2em]">ECHELON'S TAKE</p>
                   <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
@@ -266,6 +281,14 @@ const CommunityReportPage = () => {
                       </p>
                     ))}
                   </div>
+                </section>
+              ) : (
+                <section className="border-l-4 border-gold/40 pl-8">
+                  <p className="text-minimal text-gold mb-4 tracking-[0.2em]">ECHELON'S TAKE</p>
+                  <p className="text-muted-foreground italic leading-relaxed">
+                    Our read on {community.name} is being updated. Reach out for the most current
+                    perspective from the team.
+                  </p>
                 </section>
               )}
 
@@ -303,6 +326,19 @@ const CommunityReportPage = () => {
                   </div>
                 </section>
               )}
+
+              {/* Methodology / data note */}
+              <section className="border-t border-border pt-8">
+                <p className="text-[11px] tracking-[0.2em] uppercase text-muted-foreground mb-3">
+                  Report Methodology
+                </p>
+                <p className="text-sm text-muted-foreground leading-relaxed max-w-3xl">
+                  Sections are curated by Echelon Property Group using a combination of public
+                  market data, MLS-aggregated area figures, and on-the-ground knowledge from active
+                  representation in {community.name}. Individual sold transaction prices are not
+                  displayed. Specific property valuations are provided privately on request.
+                </p>
+              </section>
 
               {/* CTAs */}
               <section className="text-center py-12 bg-secondary -mx-6 px-6">

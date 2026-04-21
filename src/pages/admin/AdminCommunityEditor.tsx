@@ -105,8 +105,10 @@ const AdminCommunityEditor = () => {
   const handleSave = async () => {
     if (!id) return;
     setSaving(true);
-    const payload = form as unknown as Record<string, unknown>;
-    const { error } = await supabase.from("communities").update(payload).eq("id", id);
+    // The form fields mirror the table columns; cast through unknown to satisfy
+    // the generated `RejectExcessProperties` constraint on the update builder.
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const { error } = await (supabase.from("communities").update as any)(form).eq("id", id);
     setSaving(false);
     if (error) {
       alert(error.message);

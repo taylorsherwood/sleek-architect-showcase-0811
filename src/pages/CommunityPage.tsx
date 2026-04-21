@@ -4,6 +4,10 @@ import CommunityGuideCTA from "@/components/CommunityGuideCTA";
 import CommunityBoundaryMap from "@/components/CommunityBoundaryMap";
 import { useParams, Link, Navigate } from "react-router-dom";
 import Navigation from "@/components/Navigation";
+import CommunityReportPage from "@/pages/CommunityReportPage";
+
+// Slugs that should render the new gated CMS-driven report instead of the legacy static page.
+const GATED_REPORT_SLUGS = new Set<string>(["westlake-hills"]);
 const Footer = lazy(() => import("@/components/Footer"));
 import AboutBlock from "@/components/AboutBlock";
 import SEOHead from "@/components/SEOHead";

@@ -28,6 +28,30 @@ import {
 
 import heroImg from "@/assets/sell-hero-luxury-home.jpg";
 import sellHeroVideo from "@/assets/sell-hero-video.mp4";
+
+// Slow, cinematic smooth-scroll helper for in-page anchors
+const slowSmoothScrollTo = (elementId: string, duration = 1800) => {
+  const target = document.getElementById(elementId);
+  if (!target) return;
+  const start = window.scrollY;
+  const headerOffset = 96; // matches scrollMarginTop on the section
+  const end = target.getBoundingClientRect().top + window.scrollY - headerOffset;
+  const distance = end - start;
+  let startTime: number | null = null;
+
+  const easeInOutQuart = (t: number) =>
+    t < 0.5 ? 8 * t * t * t * t : 1 - Math.pow(-2 * t + 2, 4) / 2;
+
+  const step = (timestamp: number) => {
+    if (startTime === null) startTime = timestamp;
+    const elapsed = timestamp - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    window.scrollTo(0, start + distance * easeInOutQuart(progress));
+    if (progress < 1) requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
+};
+
 import sellHeroVideoPoster from "@/assets/sell-hero-video-poster.webp";
 import taylorProfileSell from "@/assets/echelon-for-sale-sign.jpg";
 import echelonWatermark from "@/assets/echelon-watermark.webp";

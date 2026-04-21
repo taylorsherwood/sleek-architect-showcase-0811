@@ -268,7 +268,7 @@ const CommunityReportPage = () => {
               <SchoolsPanel schools={community.schools} />
               <TransitPanel transit={community.transit} />
 
-              {community.our_take && (
+              {community.our_take ? (
                 <section className="border-l-4 border-gold pl-8">
                   <p className="text-minimal text-gold mb-4 tracking-[0.2em]">ECHELON'S TAKE</p>
                   <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
@@ -281,6 +281,14 @@ const CommunityReportPage = () => {
                       </p>
                     ))}
                   </div>
+                </section>
+              ) : (
+                <section className="border-l-4 border-gold/40 pl-8">
+                  <p className="text-minimal text-gold mb-4 tracking-[0.2em]">ECHELON'S TAKE</p>
+                  <p className="text-muted-foreground italic leading-relaxed">
+                    Our read on {community.name} is being updated. Reach out for the most current
+                    perspective from the team.
+                  </p>
                 </section>
               )}
 

@@ -692,7 +692,7 @@ const Sell = () => {
             <span className="block h-px w-12" style={{ background: "#b9a06c" }} />
           </div>
 
-          <div className="max-w-[720px] mx-auto text-center mb-10 md:mb-14">
+          <div className="max-w-[860px] mx-auto text-center mb-10 md:mb-14">
             <p className="text-minimal text-gold mb-5">COMPLIMENTARY VALUATION</p>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-normal text-primary leading-[1.1] mb-5 text-balance">
               What's Your Austin Home Worth?
@@ -711,18 +711,18 @@ const Sell = () => {
               --rs-hvw-primary-button-color: #0c0f24;
               --rs-hvw-secondary-button-text-color: #0c0f24;
               --rs-hvw-secondary-button-color: transparent;
-              --rs-hvw-widget-width: 100%;
+              --rs-hvw-widget-width: min(100%, 860px);
               display: block;
-              width: min(100%, 720px);
-              max-width: 720px;
+              width: 100%;
               margin-left: auto !important;
               margin-right: auto !important;
               background: transparent;
             }
             #home-valuation .rs-widget-wrap {
               width: 100%;
-              display: grid;
-              place-items: center;
+              max-width: 860px;
+              margin-left: auto;
+              margin-right: auto;
             }
           `}</style>
           <div

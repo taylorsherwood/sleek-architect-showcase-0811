@@ -790,12 +790,12 @@ const Sell = () => {
 
       {/* ── Home Valuation Modal (RealScout) ── */}
       <Dialog open={valuationOpen} onOpenChange={setValuationOpen}>
-        <DialogContent className="max-w-xl p-0 overflow-hidden bg-[#f5f3ef] border-0 shadow-none">
+        <DialogContent className="w-[calc(100vw-2rem)] sm:max-w-lg p-0 overflow-hidden bg-[#f5f3ef] border-0 shadow-none">
           <DialogHeader className="sr-only">
             <DialogTitle>Get Your Home's Value</DialogTitle>
             <DialogDescription>Enter your address to receive a complimentary property valuation.</DialogDescription>
           </DialogHeader>
-          <div className="p-6">
+          <div className="p-5 overflow-hidden">
             <style>{`
               realscout-home-value {
                 --rs-hvw-background-color: #f5f3ef;
@@ -805,15 +805,20 @@ const Sell = () => {
                 --rs-hvw-primary-button-color: #0c0f24;
                 --rs-hvw-secondary-button-text-color: #0c0f24;
                 --rs-hvw-secondary-button-color: #ffffff;
-                --rs-hvw-widget-width: 100%;
+                --rs-hvw-widget-width: 100% !important;
                 display: block;
-                width: 100%;
+                width: 100% !important;
+                max-width: 100% !important;
                 background: #f5f3ef;
                 box-shadow: none !important;
                 border: 0 !important;
               }
+              realscout-home-value > * {
+                max-width: 100% !important;
+              }
             `}</style>
             <div
+              className="w-full max-w-full"
               dangerouslySetInnerHTML={{
                 __html:
                   '<realscout-home-value agent-encoded-id="QWdlbnQtMjg5NDU2" include-name include-phone remove-title remove-subtitle></realscout-home-value>',

@@ -222,6 +222,12 @@ const CommunityPage = () => {
   }
 
   const slug = rawSlug;
+
+  // For slugs migrated to the gated CMS-driven report, render the new template.
+  if (slug && GATED_REPORT_SLUGS.has(slug)) {
+    return <CommunityReportPage />;
+  }
+
   const community = communityPages.find((c) => c.slug === slug);
 
   if (!community) {

@@ -78,6 +78,7 @@ const LockedReportPreview = ({
   formTargetId = "unlock-report",
 }: LockedReportPreviewProps) => {
   const [unlocked, setUnlockedLocal] = useState(false);
+  const [formExpanded, setFormExpanded] = useState(false);
   const [email, setEmail] = useState("");
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);

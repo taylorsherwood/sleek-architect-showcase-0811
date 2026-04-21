@@ -433,10 +433,10 @@ const Sell = () => {
               Strategic marketing and expert representation designed to maximize your property's value in Austin's competitive luxury market.
             </p>
             <a
-              href="#home-valuation-widget"
+              href="#home-valuation"
               onClick={(e) => {
                 e.preventDefault();
-                slowSmoothScrollTo("home-valuation-widget", { duration: 5600, offset: 24 });
+                slowSmoothScrollTo("home-valuation", { duration: 5600, offset: 0 });
               }}
               className="inline-block text-minimal px-8 py-3.5 transition-all duration-300 reveal-delayed-2 cursor-pointer"
               style={{

@@ -48,16 +48,19 @@ const CommunityReportPage = () => {
 
   const navItems = useMemo(() => {
     if (!community) return [];
-    return [
+    const items = [
       { id: "overview", label: "Overview" },
       { id: "highlights", label: "Highlights" },
       { id: "local", label: "Local" },
       { id: "demographics", label: "Demographics" },
       { id: "schools", label: "Schools" },
       { id: "transit", label: "Walkability" },
-      { id: "homes", label: "Homes" },
-      { id: "take", label: "Echelon's Take" },
     ];
+    if (community.slug !== "westlake-hills") {
+      items.push({ id: "homes", label: "Homes" });
+    }
+    items.push({ id: "take", label: "Echelon's Take" });
+    return items;
   }, [community]);
 
   if (loading) {

@@ -27,6 +27,9 @@ export function setUnlocked(slug: string): void {
   if (typeof window === "undefined") return;
   try {
     localStorage.setItem(KEY_PREFIX + slug, String(Date.now() + TTL_MS));
+    // Notify any mounted components that this slug just unlocked so they
+    // can update without a full reload.
+    window.dispatchEvent(new CustomEvent("echelon:community-unlocked", { detail: { slug } }));
   } catch {
     /* ignore */
   }

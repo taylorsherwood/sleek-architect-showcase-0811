@@ -437,12 +437,6 @@ const CommunityPage = () => {
         </div>
       )}
 
-      {/* Neighborhood Boundary Map */}
-      <CommunityBoundaryMap
-        imageSrc={`/images/communities/${community.slug}-boundary.webp`}
-        communityName={community.name}
-      />
-
       {/* Remaining Content */}
       <article className="pb-20">
         <div className="container mx-auto px-6">

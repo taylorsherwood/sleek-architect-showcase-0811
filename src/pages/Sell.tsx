@@ -215,6 +215,18 @@ const consultSchema = z.object({
 const Sell = () => {
   const { toast } = useToast();
   const heroVideoRef = useRef<HTMLVideoElement>(null);
+  const [valuationOpen, setValuationOpen] = useState(false);
+
+  // Lazy-load RealScout web component script when the valuation modal opens
+  useEffect(() => {
+    if (!valuationOpen) return;
+    const SRC = "https://em.realscout.com/widgets/realscout-web-components.umd.js";
+    if (document.querySelector(`script[src="${SRC}"]`)) return;
+    const s = document.createElement("script");
+    s.type = "module";
+    s.src = SRC;
+    document.body.appendChild(s);
+  }, [valuationOpen]);
 
   // Replay hero video whenever the user scrolls back to the top
   useEffect(() => {

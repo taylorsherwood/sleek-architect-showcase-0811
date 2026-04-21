@@ -340,6 +340,17 @@ const CommunityPage = () => {
 
       <div className="h-12 md:h-20" />
 
+      {/* Locked Private Market Report preview (gated slugs only) — sits between
+          hero and existing content. Adds visible metrics + blurred dataset
+          preview that scrolls to the inline gate form below. */}
+      {GATED_REPORT_SLUGS.has(community.slug) && (
+        <LockedReportPreview
+          slug={community.slug}
+          communityName={community.name}
+          formTargetId="unlock-report"
+        />
+      )}
+
       {/* Content */}
       <article>
         <div className="container mx-auto px-6">
@@ -357,7 +368,7 @@ const CommunityPage = () => {
 
       {/* Gated Insider Report (replaces the old LiveBy guide for migrated slugs) */}
       {GATED_REPORT_SLUGS.has(community.slug) && (
-        <div className="container mx-auto px-6 py-8">
+        <div id="unlock-report" className="container mx-auto px-6 py-8 scroll-mt-24">
           <div className="max-w-4xl mx-auto">
             <InlineCommunityReport slug={community.slug} />
           </div>

@@ -215,6 +215,8 @@ const InlineCommunityReport = ({ slug, unlockedExtras }: InlineCommunityReportPr
                 </div>
               </section>
             )}
+
+            {unlockedExtras}
           </div>
         </div>
       )}

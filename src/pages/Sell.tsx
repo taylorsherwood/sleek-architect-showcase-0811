@@ -391,9 +391,12 @@ const Sell = () => {
             <p className="text-primary-foreground/70 text-lg max-w-lg mb-8 reveal-delayed">
               Strategic marketing and expert representation designed to maximize your property's value in Austin's competitive luxury market.
             </p>
-            <button
-              type="button"
-              onClick={() => setValuationOpen(true)}
+            <a
+              href="#home-valuation"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById("home-valuation")?.scrollIntoView({ behavior: "smooth", block: "start" });
+              }}
               className="inline-block text-minimal px-8 py-3.5 transition-all duration-300 reveal-delayed-2 cursor-pointer"
               style={{
                 border: "1px solid hsl(var(--gold))",
@@ -410,7 +413,7 @@ const Sell = () => {
                 e.currentTarget.style.background = "transparent";
                 e.currentTarget.style.color = "hsl(var(--gold))";
               }}>REQUEST A PROPERTY VALUATION
-            </button>
+            </a>
           </div>
 
 

@@ -30,13 +30,15 @@ import heroImg from "@/assets/sell-hero-luxury-home.jpg";
 import sellHeroVideo from "@/assets/sell-hero-video.mp4";
 
 // Slow, cinematic smooth-scroll helper for in-page anchors
-const slowSmoothScrollTo = (elementId: string, duration = 1800) => {
+const slowSmoothScrollTo = (
+  elementId: string,
+  options: { duration?: number; offset?: number } = {}
+) => {
   const target = document.getElementById(elementId);
   if (!target) return;
+
+  const { duration = 4200, offset = 32 } = options;
   const start = window.scrollY;
-  const headerOffset = 96; // matches scrollMarginTop on the section
-  const end = target.getBoundingClientRect().top + window.scrollY - headerOffset;
-  const distance = end - start;
   let startTime: number | null = null;
 
   const easeInOutQuart = (t: number) =>
@@ -46,9 +48,16 @@ const slowSmoothScrollTo = (elementId: string, duration = 1800) => {
     if (startTime === null) startTime = timestamp;
     const elapsed = timestamp - startTime;
     const progress = Math.min(elapsed / duration, 1);
-    window.scrollTo(0, start + distance * easeInOutQuart(progress));
+    const currentTargetTop = Math.max(
+      0,
+      target.getBoundingClientRect().top + window.scrollY - offset
+    );
+
+    window.scrollTo(0, start + (currentTargetTop - start) * easeInOutQuart(progress));
+
     if (progress < 1) requestAnimationFrame(step);
   };
+
   requestAnimationFrame(step);
 };
 
@@ -416,10 +425,10 @@ const Sell = () => {
               Strategic marketing and expert representation designed to maximize your property's value in Austin's competitive luxury market.
             </p>
             <a
-              href="#home-valuation"
+              href="#home-valuation-widget"
               onClick={(e) => {
                 e.preventDefault();
-                slowSmoothScrollTo("home-valuation", 3200);
+                slowSmoothScrollTo("home-valuation-widget", { duration: 4200, offset: 36 });
               }}
               className="inline-block text-minimal px-8 py-3.5 transition-all duration-300 reveal-delayed-2 cursor-pointer"
               style={{
@@ -675,12 +684,12 @@ const Sell = () => {
             <span className="block h-px w-12" style={{ background: "#b9a06c" }} />
           </div>
 
-          <div className="text-center mb-10 md:mb-14">
+          <div className="max-w-[720px] mx-auto text-center mb-10 md:mb-14">
             <p className="text-minimal text-gold mb-5">COMPLIMENTARY VALUATION</p>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-normal text-primary leading-[1.1] mb-5">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-normal text-primary leading-[1.1] mb-5 text-balance">
               What's Your Austin Home Worth?
             </h2>
-            <p className="text-foreground/65 leading-relaxed max-w-xl mx-auto text-base md:text-lg">
+            <p className="text-foreground/65 leading-relaxed max-w-xl mx-auto text-base md:text-lg text-balance">
               A discreet, data-backed estimate informed by recent comparable sales and our private transaction insights.
             </p>
           </div>
@@ -696,7 +705,7 @@ const Sell = () => {
               --rs-hvw-secondary-button-color: transparent;
               --rs-hvw-widget-width: 100%;
               display: block;
-              width: 100%;
+              width: min(100%, 720px);
               max-width: 720px;
               margin-left: auto !important;
               margin-right: auto !important;
@@ -704,14 +713,12 @@ const Sell = () => {
             }
             #home-valuation .rs-widget-wrap {
               width: 100%;
-              max-width: 720px;
-              margin-left: auto;
-              margin-right: auto;
-              display: flex;
-              justify-content: center;
+              display: grid;
+              place-items: center;
             }
           `}</style>
           <div
+            id="home-valuation-widget"
             className="rs-widget-wrap"
             dangerouslySetInnerHTML={{
               __html:

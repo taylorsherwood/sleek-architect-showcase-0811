@@ -8,7 +8,7 @@ import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
 import ScrollReveal from "@/components/ScrollReveal";
 import { formatPhoneNumber, getTimestamp } from "@/lib/formUtils";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
+
 
 const Testimonials = lazy(() => import("@/components/Testimonials"));
 const FeaturedListings = lazy(() => import("@/components/FeaturedListings"));
@@ -215,18 +215,35 @@ const consultSchema = z.object({
 const Sell = () => {
   const { toast } = useToast();
   const heroVideoRef = useRef<HTMLVideoElement>(null);
-  const [valuationOpen, setValuationOpen] = useState(false);
 
-  // Lazy-load RealScout web component script when the valuation modal opens
+  // Lazy-load RealScout web component script when the valuation section is near the viewport
   useEffect(() => {
-    if (!valuationOpen) return;
     const SRC = "https://em.realscout.com/widgets/realscout-web-components.umd.js";
     if (document.querySelector(`script[src="${SRC}"]`)) return;
-    const s = document.createElement("script");
-    s.type = "module";
-    s.src = SRC;
-    document.body.appendChild(s);
-  }, [valuationOpen]);
+    const target = document.getElementById("home-valuation");
+    if (!target) return;
+    const load = () => {
+      if (document.querySelector(`script[src="${SRC}"]`)) return;
+      const s = document.createElement("script");
+      s.type = "module";
+      s.src = SRC;
+      document.body.appendChild(s);
+    };
+    if ("IntersectionObserver" in window) {
+      const io = new IntersectionObserver(
+        (entries) => {
+          if (entries.some((e) => e.isIntersecting)) {
+            load();
+            io.disconnect();
+          }
+        },
+        { rootMargin: "600px" }
+      );
+      io.observe(target);
+      return () => io.disconnect();
+    }
+    load();
+  }, []);
 
   // Replay hero video whenever the user scrolls back to the top
   useEffect(() => {
@@ -374,9 +391,12 @@ const Sell = () => {
             <p className="text-primary-foreground/70 text-lg max-w-lg mb-8 reveal-delayed">
               Strategic marketing and expert representation designed to maximize your property's value in Austin's competitive luxury market.
             </p>
-            <button
-              type="button"
-              onClick={() => setValuationOpen(true)}
+            <a
+              href="#home-valuation"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById("home-valuation")?.scrollIntoView({ behavior: "smooth", block: "start" });
+              }}
               className="inline-block text-minimal px-8 py-3.5 transition-all duration-300 reveal-delayed-2 cursor-pointer"
               style={{
                 border: "1px solid hsl(var(--gold))",
@@ -393,7 +413,7 @@ const Sell = () => {
                 e.currentTarget.style.background = "transparent";
                 e.currentTarget.style.color = "hsl(var(--gold))";
               }}>REQUEST A PROPERTY VALUATION
-            </button>
+            </a>
           </div>
 
 
@@ -729,6 +749,57 @@ const Sell = () => {
         </div>
       </section>
 
+      {/* ── Inline Home Valuation (RealScout) ── */}
+      <section id="home-valuation" className="py-24 md:py-28" style={{ background: "#f6f4f0", scrollMarginTop: "6rem" }}>
+        <div className="container mx-auto px-6">
+          <div className="max-w-3xl mx-auto text-center mb-12 md:mb-14">
+            <p className="text-minimal text-gold mb-4">COMPLIMENTARY VALUATION</p>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-normal text-primary leading-[1.15] mb-5">
+              What's Your Austin Home Worth?
+            </h2>
+            <p className="text-foreground/70 leading-relaxed max-w-xl mx-auto">
+              Receive a discreet, data-backed estimate informed by recent comparable sales, current Austin market conditions, and our private transaction insights.
+            </p>
+          </div>
+
+          <div
+            className="max-w-3xl mx-auto bg-white"
+            style={{
+              border: "1px solid hsl(var(--border))",
+              boxShadow: "0 1px 2px rgba(12,15,36,0.04), 0 12px 32px -16px rgba(12,15,36,0.12)",
+            }}
+          >
+            <div className="px-6 md:px-10 py-10 md:py-12">
+              <style>{`
+                #home-valuation realscout-home-value {
+                  --rs-hvw-background-color: #ffffff;
+                  --rs-hvw-title-color: #0c0f24;
+                  --rs-hvw-subtitle-color: rgba(28, 30, 38, 0.55);
+                  --rs-hvw-primary-button-text-color: #ffffff;
+                  --rs-hvw-primary-button-color: #0c0f24;
+                  --rs-hvw-secondary-button-text-color: #0c0f24;
+                  --rs-hvw-secondary-button-color: #ffffff;
+                  --rs-hvw-widget-width: 100%;
+                  display: block;
+                  width: 100%;
+                  background: #ffffff;
+                }
+              `}</style>
+              <div
+                dangerouslySetInnerHTML={{
+                  __html:
+                    '<realscout-home-value agent-encoded-id="QWdlbnQtMjg5NDU2" include-name include-phone remove-title remove-subtitle></realscout-home-value>',
+                }}
+              />
+            </div>
+          </div>
+
+          <p className="text-center text-xs text-foreground/50 mt-8 max-w-xl mx-auto">
+            Your information is kept strictly confidential. A member of the Echelon team may follow up to refine the estimate with neighborhood-specific context.
+          </p>
+        </div>
+      </section>
+
       {/* ── CTA / Listing Consultation ── */}
       <section id="listing-consultation" className="py-28 bg-[#0C0F24]">
         <div className="container mx-auto px-6">
@@ -788,43 +859,6 @@ const Sell = () => {
 
       <Suspense fallback={<div className="min-h-[100px]" />}><Footer /></Suspense>
 
-      {/* ── Home Valuation Modal (RealScout) ── */}
-      <Dialog open={valuationOpen} onOpenChange={setValuationOpen}>
-        <DialogContent
-          className="p-0 overflow-hidden bg-[#f5f3ef] border-0 shadow-2xl"
-          style={{ width: "min(520px, calc(100vw - 2rem))", maxWidth: "min(520px, calc(100vw - 2rem))" }}
-        >
-          <DialogHeader className="sr-only">
-            <DialogTitle>Get Your Home's Value</DialogTitle>
-            <DialogDescription>Enter your address to receive a complimentary property valuation.</DialogDescription>
-          </DialogHeader>
-          <div className="px-4 pt-10 pb-4">
-            <style>{`
-              realscout-home-value {
-                --rs-hvw-background-color: #f5f3ef;
-                --rs-hvw-title-color: #000000;
-                --rs-hvw-subtitle-color: rgba(28, 30, 38, 0.5);
-                --rs-hvw-primary-button-text-color: #ffffff;
-                --rs-hvw-primary-button-color: #0c0f24;
-                --rs-hvw-secondary-button-text-color: #0c0f24;
-                --rs-hvw-secondary-button-color: #ffffff;
-                --rs-hvw-widget-width: 100% !important;
-                display: block;
-                width: 100%;
-                background: #f5f3ef;
-                box-shadow: none !important;
-                border: 0 !important;
-              }
-            `}</style>
-            <div
-              dangerouslySetInnerHTML={{
-                __html:
-                  '<realscout-home-value agent-encoded-id="QWdlbnQtMjg5NDU2" include-name include-phone remove-title remove-subtitle></realscout-home-value>',
-              }}
-            />
-          </div>
-        </DialogContent>
-      </Dialog>
     </div>);
 
 };

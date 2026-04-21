@@ -106,9 +106,6 @@ const SchoolsPanel = ({ schools }: Props) => {
               </div>
               <div className="flex flex-wrap gap-x-6 gap-y-1 text-sm text-muted-foreground">
                 {school.grades && <span>Grades {school.grades}</span>}
-                {school.enrollment != null && (
-                  <span>{school.enrollment.toLocaleString()} students</span>
-                )}
                 {school.ratio && <span>Ratio {school.ratio}</span>}
                 {school.rating && <span className="text-gold">{school.rating}</span>}
               </div>

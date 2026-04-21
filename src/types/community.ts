@@ -50,6 +50,20 @@ export interface CommunityFAQ {
   answer: string;
 }
 
+export interface LocalHighlightItem {
+  name: string;
+  detail?: string | null;
+}
+
+export interface LocalHighlightCategory {
+  /** e.g. "Parks", "Restaurants", "Cafes", "Trails" */
+  category: string;
+  /** Single emoji or short label rendered as the icon. Optional. */
+  icon?: string | null;
+  /** Curated places in this category. */
+  items: LocalHighlightItem[];
+}
+
 export interface CommunityRecord {
   id: string;
   slug: string;
@@ -70,6 +84,7 @@ export interface CommunityRecord {
   realscout_reference: string | null;
   related_communities: string[];
   faqs: CommunityFAQ[];
+  local_highlights: LocalHighlightCategory[];
   seo_title: string | null;
   meta_description: string | null;
   canonical_url: string | null;

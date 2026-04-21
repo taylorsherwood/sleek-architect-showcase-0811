@@ -155,10 +155,10 @@ const LockedReportPreview = ({
     setSubmitting(false);
     setUnlockedLocal(true);
 
-    requestAnimationFrame(() => {
-      const el = document.getElementById(formTargetId);
-      if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
-    });
+    // Redirect to the full gated report page
+    if (typeof window !== "undefined") {
+      window.location.assign(`/communities/${slug}/report`);
+    }
   };
 
   return (

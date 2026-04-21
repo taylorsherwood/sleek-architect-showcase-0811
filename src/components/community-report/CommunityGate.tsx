@@ -92,82 +92,92 @@ const CommunityGate = ({
   };
 
   return (
-    <section className="py-16 md:py-24 bg-foreground text-background">
-      <div className="container mx-auto px-6">
-        <div className="max-w-2xl mx-auto text-center">
-          <p className="text-minimal text-gold mb-6 tracking-[0.2em]">PRIVATE COMMUNITY REPORT</p>
-          <h2 className="text-3xl md:text-5xl font-display font-normal mb-6">
+    <section className="bg-foreground text-background px-6 md:px-12 py-14 md:py-20">
+      <div className="max-w-2xl mx-auto">
+        <div className="text-center mb-10">
+          <p className="text-minimal text-gold mb-5 tracking-[0.25em]">REQUEST ACCESS</p>
+          <h3 className="text-2xl md:text-4xl font-display font-normal mb-5 leading-[1.2]">
             {headline}
-          </h2>
-          <p className="text-base md:text-lg opacity-80 mb-10 leading-relaxed">
+          </h3>
+          <p className="text-sm md:text-base opacity-75 leading-relaxed max-w-lg mx-auto">
             {subheadline}
           </p>
-
-          <form onSubmit={handleSubmit} className="space-y-4 text-left">
-            <div className="grid sm:grid-cols-2 gap-4">
-              <input
-                type="text"
-                placeholder="First name"
-                value={firstName}
-                onChange={(e) => setFirstName(e.target.value)}
-                required
-                maxLength={100}
-                className="w-full px-4 py-3 bg-transparent border border-background/30 text-background placeholder:text-background/50 focus:outline-none focus:border-gold transition-colors"
-              />
-              <input
-                type="text"
-                placeholder="Last name"
-                value={lastName}
-                onChange={(e) => setLastName(e.target.value)}
-                required
-                maxLength={100}
-                className="w-full px-4 py-3 bg-transparent border border-background/30 text-background placeholder:text-background/50 focus:outline-none focus:border-gold transition-colors"
-              />
-            </div>
-            <input
-              type="email"
-              placeholder="Email address"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-              maxLength={255}
-              className="w-full px-4 py-3 bg-transparent border border-background/30 text-background placeholder:text-background/50 focus:outline-none focus:border-gold transition-colors"
-            />
-            <input
-              type="tel"
-              placeholder="(512) 555-0100"
-              value={phone}
-              onChange={(e) => setPhone(formatPhoneNumber(e.target.value))}
-              required
-              className="w-full px-4 py-3 bg-transparent border border-background/30 text-background placeholder:text-background/50 focus:outline-none focus:border-gold transition-colors"
-            />
-            <select
-              value={interest}
-              onChange={(e) => setInterest(e.target.value)}
-              className="w-full px-4 py-3 bg-transparent border border-background/30 text-background focus:outline-none focus:border-gold transition-colors"
-            >
-              <option value="" className="bg-foreground">Interest (optional)</option>
-              <option value="buying" className="bg-foreground">Buying</option>
-              <option value="selling" className="bg-foreground">Selling</option>
-              <option value="investing" className="bg-foreground">Investing</option>
-              <option value="researching" className="bg-foreground">Just researching</option>
-            </select>
-
-            {error && <p className="text-sm text-gold">{error}</p>}
-
-            <button
-              type="submit"
-              disabled={submitting}
-              className="w-full text-minimal bg-gold text-foreground hover:bg-background hover:text-foreground px-10 py-4 transition-colors duration-300 disabled:opacity-50"
-            >
-              {submitting ? "UNLOCKING..." : "UNLOCK FULL REPORT"}
-            </button>
-
-            <p className="text-xs opacity-60 text-center pt-2">
-              {thankYouMessage ? thankYouMessage : "We respect your privacy. No spam, ever."}
-            </p>
-          </form>
         </div>
+
+        <form onSubmit={handleSubmit} className="space-y-4 text-left">
+          <div className="grid sm:grid-cols-2 gap-4">
+            <input
+              type="text"
+              placeholder="First name"
+              value={firstName}
+              onChange={(e) => setFirstName(e.target.value)}
+              required
+              maxLength={100}
+              className="w-full px-4 py-3.5 bg-transparent border border-background/25 text-background placeholder:text-background/45 focus:outline-none focus:border-gold transition-colors"
+            />
+            <input
+              type="text"
+              placeholder="Last name"
+              value={lastName}
+              onChange={(e) => setLastName(e.target.value)}
+              required
+              maxLength={100}
+              className="w-full px-4 py-3.5 bg-transparent border border-background/25 text-background placeholder:text-background/45 focus:outline-none focus:border-gold transition-colors"
+            />
+          </div>
+          <input
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+            maxLength={255}
+            className="w-full px-4 py-3.5 bg-transparent border border-background/25 text-background placeholder:text-background/45 focus:outline-none focus:border-gold transition-colors"
+          />
+          <input
+            type="tel"
+            placeholder="Phone"
+            value={phone}
+            onChange={(e) => setPhone(formatPhoneNumber(e.target.value))}
+            required
+            className="w-full px-4 py-3.5 bg-transparent border border-background/25 text-background placeholder:text-background/45 focus:outline-none focus:border-gold transition-colors"
+          />
+          <select
+            value={interest}
+            onChange={(e) => setInterest(e.target.value)}
+            className="w-full px-4 py-3.5 bg-transparent border border-background/25 text-background focus:outline-none focus:border-gold transition-colors"
+          >
+            <option value="" className="bg-foreground">What brings you here? (optional)</option>
+            <option value="buying" className="bg-foreground">Considering a purchase</option>
+            <option value="selling" className="bg-foreground">Considering a sale</option>
+            <option value="investing" className="bg-foreground">Evaluating as an investment</option>
+            <option value="researching" className="bg-foreground">Researching the area</option>
+          </select>
+
+          {error && <p className="text-sm text-gold">{error}</p>}
+
+          <button
+            type="submit"
+            disabled={submitting}
+            className="w-full text-minimal bg-gold text-foreground hover:bg-background hover:text-foreground px-10 py-4 mt-2 tracking-[0.15em] transition-colors duration-300 disabled:opacity-50"
+          >
+            {submitting ? "OPENING ACCESS…" : "OPEN THE BRIEFING"}
+          </button>
+
+          <div className="flex flex-wrap justify-center items-center gap-x-6 gap-y-2 pt-4 text-[11px] tracking-[0.18em] opacity-60 uppercase">
+            <span>Instant access</span>
+            <span className="text-gold/60">•</span>
+            <span>Direct line, no list</span>
+            <span className="text-gold/60">•</span>
+            <span>Discreet by default</span>
+          </div>
+
+          {thankYouMessage && (
+            <p className="text-xs opacity-55 text-center pt-3 leading-relaxed">
+              {thankYouMessage}
+            </p>
+          )}
+        </form>
       </div>
     </section>
   );

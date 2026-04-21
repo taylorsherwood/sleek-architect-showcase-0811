@@ -2,11 +2,12 @@ import { lazy, Suspense } from "react";
 import { Helmet } from "react-helmet-async";
 import CommunityGuideCTA from "@/components/CommunityGuideCTA";
 import CommunityBoundaryMap from "@/components/CommunityBoundaryMap";
+import InlineCommunityReport from "@/components/community-report/InlineCommunityReport";
 import { useParams, Link, Navigate } from "react-router-dom";
 import Navigation from "@/components/Navigation";
-import CommunityReportPage from "@/pages/CommunityReportPage";
 
-// Slugs that should render the new gated CMS-driven report instead of the legacy static page.
+// Slugs whose old LiveBy CommunityGuideCTA is replaced inline by the new
+// CMS-driven gated report (teaser + gate + full unlocked content).
 const GATED_REPORT_SLUGS = new Set<string>(["westlake-hills"]);
 const Footer = lazy(() => import("@/components/Footer"));
 import AboutBlock from "@/components/AboutBlock";
@@ -223,11 +224,6 @@ const CommunityPage = () => {
 
   const slug = rawSlug;
 
-  // For slugs migrated to the gated CMS-driven report, render the new template.
-  if (slug && GATED_REPORT_SLUGS.has(slug)) {
-    return <CommunityReportPage />;
-  }
-
   const community = communityPages.find((c) => c.slug === slug);
 
   if (!community) {
@@ -357,8 +353,18 @@ const CommunityPage = () => {
         </div>
       </article>
 
-      {/* Community Guide CTA */}
-      {["westlake-hills", "rollingwood", "rob-roy", "davenport-ranch"].includes(community.slug) && (
+      {/* Gated Insider Report (replaces the old LiveBy guide for migrated slugs) */}
+      {GATED_REPORT_SLUGS.has(community.slug) && (
+        <div className="container mx-auto px-6 py-8">
+          <div className="max-w-4xl mx-auto">
+            <InlineCommunityReport slug={community.slug} />
+          </div>
+        </div>
+      )}
+
+      {/* Legacy LiveBy Community Guide CTA — only for slugs not yet migrated */}
+      {!GATED_REPORT_SLUGS.has(community.slug) &&
+        ["rollingwood", "rob-roy", "davenport-ranch"].includes(community.slug) && (
         <div className="container mx-auto px-6 py-8">
           <div className="max-w-4xl mx-auto">
             <CommunityGuideCTA

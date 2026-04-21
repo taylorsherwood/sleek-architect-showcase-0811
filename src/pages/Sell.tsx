@@ -37,25 +37,33 @@ const slowSmoothScrollTo = (
   const target = document.getElementById(elementId);
   if (!target) return;
 
-  const { duration = 4200, offset = 32 } = options;
+  const { duration = 5600, offset = 12 } = options;
   const start = window.scrollY;
   let startTime: number | null = null;
 
   const easeInOutQuart = (t: number) =>
     t < 0.5 ? 8 * t * t * t * t : 1 - Math.pow(-2 * t + 2, 4) / 2;
 
+  const getTargetTop = () =>
+    Math.max(0, target.getBoundingClientRect().top + window.scrollY - offset);
+
   const step = (timestamp: number) => {
     if (startTime === null) startTime = timestamp;
     const elapsed = timestamp - startTime;
     const progress = Math.min(elapsed / duration, 1);
-    const currentTargetTop = Math.max(
-      0,
-      target.getBoundingClientRect().top + window.scrollY - offset
-    );
+    const liveTargetTop = getTargetTop();
 
-    window.scrollTo(0, start + (currentTargetTop - start) * easeInOutQuart(progress));
+    window.scrollTo(0, start + (liveTargetTop - start) * easeInOutQuart(progress));
 
-    if (progress < 1) requestAnimationFrame(step);
+    if (progress < 1) {
+      requestAnimationFrame(step);
+      return;
+    }
+
+    window.scrollTo({ top: getTargetTop(), behavior: "auto" });
+    requestAnimationFrame(() => {
+      window.scrollTo({ top: getTargetTop(), behavior: "auto" });
+    });
   };
 
   requestAnimationFrame(step);
@@ -428,7 +436,7 @@ const Sell = () => {
               href="#home-valuation-widget"
               onClick={(e) => {
                 e.preventDefault();
-                slowSmoothScrollTo("home-valuation-widget", { duration: 4200, offset: 36 });
+                slowSmoothScrollTo("home-valuation-widget", { duration: 5600, offset: 12 });
               }}
               className="inline-block text-minimal px-8 py-3.5 transition-all duration-300 reveal-delayed-2 cursor-pointer"
               style={{
@@ -684,7 +692,7 @@ const Sell = () => {
             <span className="block h-px w-12" style={{ background: "#b9a06c" }} />
           </div>
 
-          <div className="max-w-[720px] mx-auto text-center mb-10 md:mb-14">
+          <div className="max-w-[860px] mx-auto text-center mb-10 md:mb-14">
             <p className="text-minimal text-gold mb-5">COMPLIMENTARY VALUATION</p>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-normal text-primary leading-[1.1] mb-5 text-balance">
               What's Your Austin Home Worth?
@@ -703,18 +711,18 @@ const Sell = () => {
               --rs-hvw-primary-button-color: #0c0f24;
               --rs-hvw-secondary-button-text-color: #0c0f24;
               --rs-hvw-secondary-button-color: transparent;
-              --rs-hvw-widget-width: 100%;
+              --rs-hvw-widget-width: min(100%, 860px);
               display: block;
-              width: min(100%, 720px);
-              max-width: 720px;
+              width: 100%;
               margin-left: auto !important;
               margin-right: auto !important;
               background: transparent;
             }
             #home-valuation .rs-widget-wrap {
               width: 100%;
-              display: grid;
-              place-items: center;
+              max-width: 860px;
+              margin-left: auto;
+              margin-right: auto;
             }
           `}</style>
           <div

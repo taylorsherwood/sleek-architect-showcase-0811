@@ -351,7 +351,7 @@ const CommunityReportPage = () => {
                       </h2>
                       <div className="space-y-4">
                         {community.our_take.split("\n\n").map((p, i) => (
-                          <p key={i} className="text-foreground leading-relaxed text-lg">
+                          <p key={i} className="text-foreground leading-relaxed text-lg font-light">
                             {p.trim()}
                           </p>
                         ))}

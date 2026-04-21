@@ -419,7 +419,7 @@ const Sell = () => {
               href="#home-valuation"
               onClick={(e) => {
                 e.preventDefault();
-                document.getElementById("home-valuation")?.scrollIntoView({ behavior: "smooth", block: "start" });
+                slowSmoothScrollTo("home-valuation", 1800);
               }}
               className="inline-block text-minimal px-8 py-3.5 transition-all duration-300 reveal-delayed-2 cursor-pointer"
               style={{

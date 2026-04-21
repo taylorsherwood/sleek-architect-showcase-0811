@@ -17,6 +17,7 @@ import LocalHighlightsPanel from "@/components/community-report/LocalHighlightsP
 import DemographicsPanel from "@/components/community-report/DemographicsPanel";
 import SchoolsPanel from "@/components/community-report/SchoolsPanel";
 import TransitPanel from "@/components/community-report/TransitPanel";
+import MarketSnapshot from "@/components/community-report/MarketSnapshot";
 import AboutBlock from "@/components/AboutBlock";
 
 const Footer = lazy(() => import("@/components/Footer"));
@@ -52,6 +53,7 @@ const CommunityReportPage = () => {
       { id: "overview", label: "Overview" },
       { id: "highlights", label: "Highlights" },
       { id: "local", label: "Local" },
+      { id: "market", label: "Market" },
       { id: "demographics", label: "Demographics" },
       { id: "schools", label: "Schools" },
       { id: "transit", label: "Walkability" },
@@ -313,6 +315,10 @@ const CommunityReportPage = () => {
                     highlights={community.local_highlights || []}
                     communityName={community.name}
                   />
+                </section>
+
+                <section id="market" className="scroll-mt-32">
+                  <MarketSnapshot stats={community.market_stats} communityName={community.name} />
                 </section>
 
                 <section id="demographics" className="scroll-mt-32">

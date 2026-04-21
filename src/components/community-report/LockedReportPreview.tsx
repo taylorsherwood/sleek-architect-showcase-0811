@@ -78,6 +78,7 @@ const LockedReportPreview = ({
   formTargetId = "unlock-report",
 }: LockedReportPreviewProps) => {
   const [unlocked, setUnlockedLocal] = useState(false);
+  const [formExpanded, setFormExpanded] = useState(false);
   const [email, setEmail] = useState("");
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -268,51 +269,64 @@ const LockedReportPreview = ({
             </div>
           </div>
 
-          {/* Inline email-only quick unlock */}
+          {/* CTA — button morphs into email field on click */}
           <div className="mt-12 grid md:grid-cols-2 gap-8 md:gap-12 items-start">
             <p className="text-muted-foreground max-w-xl leading-relaxed">
               Reserved for buyers and sellers actively evaluating {communityName}.
               Instant access. No spam. Updated regularly.
             </p>
-            <form
-              onSubmit={handleQuickUnlock}
-              className="w-full"
-              aria-label={`Unlock ${communityName} private market report`}
-            >
-              <div className="flex flex-col sm:flex-row gap-3">
-                <label htmlFor="locked-report-email" className="sr-only">
-                  Email address
-                </label>
-                <input
-                  id="locked-report-email"
-                  type="email"
-                  inputMode="email"
-                  autoComplete="email"
-                  placeholder="Enter your email"
-                  value={email}
-                  onChange={(ev) => setEmail(ev.target.value)}
-                  required
-                  maxLength={255}
-                  disabled={submitting}
-                  className="flex-1 min-w-0 px-4 py-4 bg-transparent border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-gold transition-colors disabled:opacity-50"
-                />
+            <div className="w-full">
+              {!formExpanded ? (
                 <button
-                  type="submit"
-                  disabled={submitting}
-                  className="inline-flex items-center justify-center px-8 py-4 border border-gold text-gold tracking-[0.2em] text-sm hover:bg-gold hover:text-background transition-colors duration-300 whitespace-nowrap disabled:opacity-50 disabled:cursor-not-allowed"
+                  type="button"
+                  onClick={() => setFormExpanded(true)}
+                  className="inline-flex items-center justify-center px-8 py-4 border border-gold text-gold tracking-[0.2em] text-sm hover:bg-gold hover:text-background transition-colors duration-300 whitespace-nowrap"
                 >
-                  {submitting ? "UNLOCKING…" : "UNLOCK FULL REPORT"}
+                  UNLOCK FULL REPORT
                 </button>
-              </div>
-              {error && (
-                <p className="text-sm text-gold mt-3" role="alert">
-                  {error}
-                </p>
+              ) : (
+                <form
+                  onSubmit={handleQuickUnlock}
+                  className="w-full animate-fade-in"
+                  aria-label={`Unlock ${communityName} private market report`}
+                >
+                  <div className="flex flex-col sm:flex-row gap-3">
+                    <label htmlFor="locked-report-email" className="sr-only">
+                      Email address
+                    </label>
+                    <input
+                      id="locked-report-email"
+                      type="email"
+                      inputMode="email"
+                      autoComplete="email"
+                      placeholder="Enter your email"
+                      value={email}
+                      onChange={(ev) => setEmail(ev.target.value)}
+                      required
+                      maxLength={255}
+                      disabled={submitting}
+                      autoFocus
+                      className="flex-1 min-w-0 px-4 py-4 bg-transparent border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-gold transition-colors disabled:opacity-50"
+                    />
+                    <button
+                      type="submit"
+                      disabled={submitting}
+                      className="inline-flex items-center justify-center px-8 py-4 border border-gold text-gold tracking-[0.2em] text-sm hover:bg-gold hover:text-background transition-colors duration-300 whitespace-nowrap disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                      {submitting ? "UNLOCKING…" : "GET ACCESS"}
+                    </button>
+                  </div>
+                  {error && (
+                    <p className="text-sm text-gold mt-3" role="alert">
+                      {error}
+                    </p>
+                  )}
+                  <p className="text-xs text-muted-foreground mt-3 tracking-wide">
+                    Instant access. No spam. We&apos;ll never share your email.
+                  </p>
+                </form>
               )}
-              <p className="text-xs text-muted-foreground mt-3 tracking-wide">
-                Instant access. No spam. We&apos;ll never share your email.
-              </p>
-            </form>
+            </div>
           </div>
         </div>
       </div>

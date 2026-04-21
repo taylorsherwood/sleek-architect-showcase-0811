@@ -677,94 +677,6 @@ const Sell = () => {
       <Suspense fallback={<div className="min-h-[200px]" />}>
         <GlobalLuxuryAdvertising />
       </Suspense>
-
-      <div className="h-12 md:h-20 bg-background" aria-hidden="true" />
-
-      {/* ── Inline Home Valuation (RealScout) — sits above Testimonials ── */}
-      <section
-        id="home-valuation"
-        className="py-20 md:py-24"
-        style={{ background: "#f6f4f0", scrollMarginTop: "6rem" }}
-      >
-        <div className="mx-auto px-6" style={{ maxWidth: "980px" }}>
-          {/* Subtle gold divider anchor */}
-          <div className="flex justify-center mb-9 md:mb-10">
-            <span className="block h-px w-12" style={{ background: "#b9a06c" }} />
-          </div>
-
-          <div className="max-w-[780px] mx-auto text-center mb-8 md:mb-10">
-            <p className="text-minimal text-gold mb-4">COMPLIMENTARY VALUATION</p>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-normal text-primary leading-[1.1] mb-4 text-balance">
-              What's Your Austin Home Worth?
-            </h2>
-            <p className="text-foreground/65 leading-relaxed max-w-2xl mx-auto text-base md:text-lg text-balance">
-              A discreet, data-backed estimate informed by recent comparable sales and our private transaction insights.
-            </p>
-          </div>
-
-          <style>{`
-            #home-valuation realscout-home-value {
-              --rs-hvw-background-color: hsl(var(--background));
-              --rs-hvw-title-color: hsl(var(--foreground));
-              --rs-hvw-subtitle-color: hsl(var(--muted-foreground));
-              --rs-hvw-primary-button-text-color: hsl(var(--primary-foreground));
-              --rs-hvw-primary-button-color: hsl(var(--primary));
-              --rs-hvw-secondary-button-text-color: hsl(var(--primary));
-              --rs-hvw-secondary-button-color: transparent;
-              --rs-hvw-widget-width: min(100%, 940px);
-              display: block;
-              width: 100%;
-              margin-left: auto !important;
-              margin-right: auto !important;
-              background: transparent;
-            }
-            #home-valuation .rs-widget-wrap {
-              width: 100%;
-              max-width: 940px;
-              margin-left: auto;
-              margin-right: auto;
-            }
-            #home-valuation realscout-home-value .wmhw-card {
-              width: 100% !important;
-              margin-inline: 0 !important;
-              padding: 1.5rem !important;
-              background: hsl(var(--background)) !important;
-              border: 1px solid hsl(var(--border)) !important;
-              border-radius: 6px !important;
-              box-shadow: 0 10px 24px -24px hsl(var(--foreground) / 0.18) !important;
-            }
-            #home-valuation realscout-home-value .MuiInputBase-root,
-            #home-valuation realscout-home-value .react-tel-input .form-control,
-            #home-valuation realscout-home-value .react-select__control {
-              min-height: 58px !important;
-            }
-            #home-valuation realscout-home-value .wmhw-primary-button {
-              font-size: 14px !important;
-            }
-            @media (max-width: 768px) {
-              #home-valuation .rs-widget-wrap {
-                max-width: 100%;
-              }
-              #home-valuation realscout-home-value .wmhw-card {
-                padding: 1.125rem !important;
-              }
-            }
-          `}</style>
-          <div
-            id="home-valuation-widget"
-            className="rs-widget-wrap"
-            dangerouslySetInnerHTML={{
-              __html:
-                '<realscout-home-value disable-shadow-dom agent-encoded-id="QWdlbnQtMjg5NDU2" include-name include-phone remove-title remove-subtitle></realscout-home-value>',
-            }}
-          />
-
-          <p className="text-center text-[11px] tracking-wide text-foreground/40 mt-4 max-w-md mx-auto">
-            Your information is kept strictly confidential.
-          </p>
-        </div>
-      </section>
-
       <Suspense fallback={<div className="min-h-[200px]" />}>
         <Testimonials />
       </Suspense>
@@ -872,6 +784,91 @@ const Sell = () => {
               <Link to="/listings" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ CURRENT LISTINGS</Link>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* ── Inline Home Valuation (RealScout) — bottom of page ── */}
+      <section
+        id="home-valuation"
+        className="py-20 md:py-24"
+        style={{ background: "#f6f4f0", scrollMarginTop: "6rem" }}
+      >
+        <div className="mx-auto px-6" style={{ maxWidth: "980px" }}>
+          {/* Subtle gold divider anchor */}
+          <div className="flex justify-center mb-9 md:mb-10">
+            <span className="block h-px w-12" style={{ background: "#b9a06c" }} />
+          </div>
+
+          <div className="max-w-[780px] mx-auto text-center mb-8 md:mb-10">
+            <p className="text-minimal text-gold mb-4">COMPLIMENTARY VALUATION</p>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-normal text-primary leading-[1.1] mb-4 text-balance">
+              What's Your Austin Home Worth?
+            </h2>
+            <p className="text-foreground/65 leading-relaxed max-w-2xl mx-auto text-base md:text-lg text-balance">
+              A discreet, data-backed estimate informed by recent comparable sales and our private transaction insights.
+            </p>
+          </div>
+
+          <style>{`
+            #home-valuation realscout-home-value {
+              --rs-hvw-background-color: hsl(var(--background));
+              --rs-hvw-title-color: hsl(var(--foreground));
+              --rs-hvw-subtitle-color: hsl(var(--muted-foreground));
+              --rs-hvw-primary-button-text-color: hsl(var(--primary-foreground));
+              --rs-hvw-primary-button-color: hsl(var(--primary));
+              --rs-hvw-secondary-button-text-color: hsl(var(--primary));
+              --rs-hvw-secondary-button-color: transparent;
+              --rs-hvw-widget-width: min(100%, 940px);
+              display: block;
+              width: 100%;
+              margin-left: auto !important;
+              margin-right: auto !important;
+              background: transparent;
+            }
+            #home-valuation .rs-widget-wrap {
+              width: 100%;
+              max-width: 940px;
+              margin-left: auto;
+              margin-right: auto;
+            }
+            #home-valuation realscout-home-value .wmhw-card {
+              width: 100% !important;
+              margin-inline: 0 !important;
+              padding: 1.5rem !important;
+              background: hsl(var(--background)) !important;
+              border: 1px solid hsl(var(--border)) !important;
+              border-radius: 6px !important;
+              box-shadow: 0 10px 24px -24px hsl(var(--foreground) / 0.18) !important;
+            }
+            #home-valuation realscout-home-value .MuiInputBase-root,
+            #home-valuation realscout-home-value .react-tel-input .form-control,
+            #home-valuation realscout-home-value .react-select__control {
+              min-height: 58px !important;
+            }
+            #home-valuation realscout-home-value .wmhw-primary-button {
+              font-size: 14px !important;
+            }
+            @media (max-width: 768px) {
+              #home-valuation .rs-widget-wrap {
+                max-width: 100%;
+              }
+              #home-valuation realscout-home-value .wmhw-card {
+                padding: 1.125rem !important;
+              }
+            }
+          `}</style>
+          <div
+            id="home-valuation-widget"
+            className="rs-widget-wrap"
+            dangerouslySetInnerHTML={{
+              __html:
+                '<realscout-home-value disable-shadow-dom agent-encoded-id="QWdlbnQtMjg5NDU2" include-name include-phone remove-title remove-subtitle></realscout-home-value>',
+            }}
+          />
+
+          <p className="text-center text-[11px] tracking-wide text-foreground/40 mt-4 max-w-md mx-auto">
+            Your information is kept strictly confidential.
+          </p>
         </div>
       </section>
 

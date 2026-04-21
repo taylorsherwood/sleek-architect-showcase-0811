@@ -3,6 +3,8 @@ import { Helmet } from "react-helmet-async";
 import CommunityGuideCTA from "@/components/CommunityGuideCTA";
 import CommunityBoundaryMap from "@/components/CommunityBoundaryMap";
 import InlineCommunityReport from "@/components/community-report/InlineCommunityReport";
+import LockedReportPreview from "@/components/community-report/LockedReportPreview";
+import MidPageCTABand from "@/components/community-report/MidPageCTABand";
 import { useParams, Link, Navigate } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 

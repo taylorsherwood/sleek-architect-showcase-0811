@@ -48,20 +48,16 @@ const CommunityReportPage = () => {
 
   const navItems = useMemo(() => {
     if (!community) return [];
-    const items: { id: string; label: string }[] = [];
-    if (community.full_overview) items.push({ id: "overview", label: "Overview" });
-    if (community.highlights?.length) items.push({ id: "highlights", label: "Highlights" });
-    if (community.local_highlights?.some((c) => c.items?.length))
-      items.push({ id: "local", label: "Local" });
-    const demo = community.demographics || {};
-    if (Object.values(demo).some((v) => v != null)) items.push({ id: "demographics", label: "Demographics" });
-    if (community.schools?.length) items.push({ id: "schools", label: "Schools" });
-    const t = community.transit || {};
-    if (t.walk_score != null || t.bike_score != null || t.transit_score != null || t.summary)
-      items.push({ id: "transit", label: "Walkability" });
-    items.push({ id: "homes", label: "Homes" });
-    if (community.our_take) items.push({ id: "take", label: "Echelon's Take" });
-    return items;
+    return [
+      { id: "overview", label: "Overview" },
+      { id: "highlights", label: "Highlights" },
+      { id: "local", label: "Local" },
+      { id: "demographics", label: "Demographics" },
+      { id: "schools", label: "Schools" },
+      { id: "transit", label: "Walkability" },
+      { id: "homes", label: "Homes" },
+      { id: "take", label: "Echelon's Take" },
+    ];
   }, [community]);
 
   if (loading) {
@@ -235,11 +231,11 @@ const CommunityReportPage = () => {
           <article className="pb-24">
             <div className="container mx-auto px-6">
               <div className="max-w-4xl mx-auto space-y-20 pt-16 md:pt-20">
-                {community.full_overview && (
-                  <section id="overview" className="scroll-mt-32">
-                    <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
-                      Overview of {community.name}
-                    </h2>
+                <section id="overview" className="scroll-mt-32">
+                  <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
+                    Overview of {community.name}
+                  </h2>
+                  {community.full_overview ? (
                     <div className="space-y-4">
                       {community.full_overview.split("\n\n").map((p, i) => (
                         <p key={i} className="text-muted-foreground leading-relaxed">
@@ -247,38 +243,61 @@ const CommunityReportPage = () => {
                         </p>
                       ))}
                     </div>
-                  </section>
-                )}
-
-                {community.highlights?.length > 0 && (
-                  <section id="highlights" className="scroll-mt-32">
-                    <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-2">
-                      What Makes It Special
-                    </h2>
-                    <p className="text-sm text-muted-foreground mb-8">
-                      Curated by Echelon Property Group.
+                  ) : (
+                    <p className="text-muted-foreground/60 italic leading-relaxed">
+                      Overview content for {community.name} — populate via admin to replace this placeholder.
                     </p>
-                    <div className="grid sm:grid-cols-2 gap-px bg-border">
-                      {community.highlights.slice(0, 4).map((h, i) => (
+                  )}
+                </section>
+
+                <section id="highlights" className="scroll-mt-32">
+                  <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-2">
+                    What Makes It Special
+                  </h2>
+                  <p className="text-sm text-muted-foreground mb-8">
+                    {community.highlights?.length > 0
+                      ? "Curated by Echelon Property Group."
+                      : "Add 4 highlights via admin to populate. Showing placeholder layout."}
+                  </p>
+                  <div className="grid sm:grid-cols-2 gap-px bg-border">
+                    {(community.highlights?.length > 0
+                      ? community.highlights.slice(0, 4)
+                      : [
+                          { title: "Highlight One", description: "Add a defining feature of this community." },
+                          { title: "Highlight Two", description: "Describe what sets this neighborhood apart." },
+                          { title: "Highlight Three", description: "Note a key amenity, view, or lifestyle perk." },
+                          { title: "Highlight Four", description: "Round out with a fourth distinguishing detail." },
+                        ]
+                    ).map((h, i) => {
+                      const isPlaceholder = !(community.highlights?.length > 0);
+                      return (
                         <div key={i} className="bg-background p-8">
-                          <p className="text-minimal text-gold mb-3 tracking-[0.15em]">
+                          <p
+                            className={`text-minimal mb-3 tracking-[0.15em] ${
+                              isPlaceholder ? "text-gold/60" : "text-gold"
+                            }`}
+                          >
                             {h.title.toUpperCase()}
                           </p>
-                          <p className="text-muted-foreground leading-relaxed">{h.description}</p>
+                          <p
+                            className={`leading-relaxed ${
+                              isPlaceholder ? "text-muted-foreground/60 italic" : "text-muted-foreground"
+                            }`}
+                          >
+                            {h.description}
+                          </p>
                         </div>
-                      ))}
-                    </div>
-                  </section>
-                )}
+                      );
+                    })}
+                  </div>
+                </section>
 
-                {community.local_highlights?.some((c) => c.items?.length) && (
-                  <section id="local" className="scroll-mt-32">
-                    <LocalHighlightsPanel
-                      highlights={community.local_highlights}
-                      communityName={community.name}
-                    />
-                  </section>
-                )}
+                <section id="local" className="scroll-mt-32">
+                  <LocalHighlightsPanel
+                    highlights={community.local_highlights || []}
+                    communityName={community.name}
+                  />
+                </section>
 
                 <section id="demographics" className="scroll-mt-32">
                   <DemographicsPanel demographics={community.demographics} />

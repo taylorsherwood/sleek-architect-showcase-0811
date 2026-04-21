@@ -24,6 +24,12 @@ const matchFilter = (school: CommunitySchool, filter: Filter): boolean => {
   return true;
 };
 
+const PLACEHOLDER_SCHOOLS: { name: string; district: string; grades: string }[] = [
+  { name: "Add an elementary school", district: "Local ISD", grades: "PK-5" },
+  { name: "Add a middle school", district: "Local ISD", grades: "6-8" },
+  { name: "Add a high school", district: "Local ISD", grades: "9-12" },
+];
+
 const SchoolsPanel = ({ schools }: Props) => {
   const [filter, setFilter] = useState<Filter>("All");
   const visible = useMemo(
@@ -31,8 +37,7 @@ const SchoolsPanel = ({ schools }: Props) => {
     [schools, filter]
   );
 
-  if (!schools || schools.length === 0) return null;
-
+  const hasData = schools && schools.length > 0;
   const filters: Filter[] = ["All", "Elementary", "Middle", "High", "Private"];
 
   return (
@@ -41,7 +46,9 @@ const SchoolsPanel = ({ schools }: Props) => {
         Schools
       </h2>
       <p className="text-sm text-muted-foreground mb-6">
-        Schools serving the community. Filter by level to narrow results.
+        {hasData
+          ? "Schools serving the community. Filter by level to narrow results."
+          : "Schools — populate via admin. Showing placeholder layout."}
       </p>
 
       <div className="flex flex-wrap gap-2 mb-6">
@@ -63,7 +70,24 @@ const SchoolsPanel = ({ schools }: Props) => {
         })}
       </div>
 
-      {visible.length === 0 ? (
+      {!hasData ? (
+        <div className="space-y-px bg-border">
+          {PLACEHOLDER_SCHOOLS.map((school, i) => (
+            <div
+              key={i}
+              className="bg-background p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3"
+            >
+              <div>
+                <p className="text-lg font-display text-muted-foreground/40 italic">{school.name}</p>
+                <p className="text-sm text-muted-foreground/60 mt-1">{school.district}</p>
+              </div>
+              <div className="flex flex-wrap gap-x-6 gap-y-1 text-sm text-muted-foreground/60">
+                <span>Grades {school.grades}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      ) : visible.length === 0 ? (
         <p className="text-sm text-muted-foreground italic">
           No {filter.toLowerCase()} schools currently listed for this community.
         </p>

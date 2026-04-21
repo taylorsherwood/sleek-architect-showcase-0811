@@ -14,16 +14,204 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      communities: {
+        Row: {
+          canonical_url: string | null
+          city: string
+          county: string | null
+          created_at: string
+          demographics: Json
+          faqs: Json
+          full_overview: string | null
+          gate_enabled: boolean
+          gate_headline: string | null
+          gate_subheadline: string | null
+          hero_image_url: string | null
+          hero_overlay_opacity: number
+          highlights: Json
+          id: string
+          market_stats: Json
+          meta_description: string | null
+          name: string
+          our_take: string | null
+          published: boolean
+          realscout_reference: string | null
+          related_communities: Json
+          schools: Json
+          seo_title: string | null
+          slug: string
+          sort_order: number
+          tagline: string | null
+          teaser_summary: string | null
+          thank_you_message: string | null
+          transit: Json
+          updated_at: string
+        }
+        Insert: {
+          canonical_url?: string | null
+          city?: string
+          county?: string | null
+          created_at?: string
+          demographics?: Json
+          faqs?: Json
+          full_overview?: string | null
+          gate_enabled?: boolean
+          gate_headline?: string | null
+          gate_subheadline?: string | null
+          hero_image_url?: string | null
+          hero_overlay_opacity?: number
+          highlights?: Json
+          id?: string
+          market_stats?: Json
+          meta_description?: string | null
+          name: string
+          our_take?: string | null
+          published?: boolean
+          realscout_reference?: string | null
+          related_communities?: Json
+          schools?: Json
+          seo_title?: string | null
+          slug: string
+          sort_order?: number
+          tagline?: string | null
+          teaser_summary?: string | null
+          thank_you_message?: string | null
+          transit?: Json
+          updated_at?: string
+        }
+        Update: {
+          canonical_url?: string | null
+          city?: string
+          county?: string | null
+          created_at?: string
+          demographics?: Json
+          faqs?: Json
+          full_overview?: string | null
+          gate_enabled?: boolean
+          gate_headline?: string | null
+          gate_subheadline?: string | null
+          hero_image_url?: string | null
+          hero_overlay_opacity?: number
+          highlights?: Json
+          id?: string
+          market_stats?: Json
+          meta_description?: string | null
+          name?: string
+          our_take?: string | null
+          published?: boolean
+          realscout_reference?: string | null
+          related_communities?: Json
+          schools?: Json
+          seo_title?: string | null
+          slug?: string
+          sort_order?: number
+          tagline?: string | null
+          teaser_summary?: string | null
+          thank_you_message?: string | null
+          transit?: Json
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      community_leads: {
+        Row: {
+          community_name: string
+          community_slug: string
+          created_at: string
+          email: string
+          first_name: string
+          id: string
+          interest: string | null
+          last_name: string
+          page_url: string | null
+          phone: string
+          referrer: string | null
+          source_tag: string | null
+          user_agent: string | null
+          utm_campaign: string | null
+          utm_content: string | null
+          utm_medium: string | null
+          utm_source: string | null
+          utm_term: string | null
+        }
+        Insert: {
+          community_name: string
+          community_slug: string
+          created_at?: string
+          email: string
+          first_name: string
+          id?: string
+          interest?: string | null
+          last_name: string
+          page_url?: string | null
+          phone: string
+          referrer?: string | null
+          source_tag?: string | null
+          user_agent?: string | null
+          utm_campaign?: string | null
+          utm_content?: string | null
+          utm_medium?: string | null
+          utm_source?: string | null
+          utm_term?: string | null
+        }
+        Update: {
+          community_name?: string
+          community_slug?: string
+          created_at?: string
+          email?: string
+          first_name?: string
+          id?: string
+          interest?: string | null
+          last_name?: string
+          page_url?: string | null
+          phone?: string
+          referrer?: string | null
+          source_tag?: string | null
+          user_agent?: string | null
+          utm_campaign?: string | null
+          utm_content?: string | null
+          utm_medium?: string | null
+          utm_source?: string | null
+          utm_term?: string | null
+        }
+        Relationships: []
+      }
+      user_roles: {
+        Row: {
+          created_at: string
+          id: string
+          role: Database["public"]["Enums"]["app_role"]
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          role: Database["public"]["Enums"]["app_role"]
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          role?: Database["public"]["Enums"]["app_role"]
+          user_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      has_role: {
+        Args: {
+          _role: Database["public"]["Enums"]["app_role"]
+          _user_id: string
+        }
+        Returns: boolean
+      }
     }
     Enums: {
-      [_ in never]: never
+      app_role: "admin"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -150,6 +338,8 @@ export type CompositeTypes<
 
 export const Constants = {
   public: {
-    Enums: {},
+    Enums: {
+      app_role: ["admin"],
+    },
   },
 } as const

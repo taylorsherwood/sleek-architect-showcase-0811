@@ -78,17 +78,86 @@ const LockedReportPreview = ({
   formTargetId = "unlock-report",
 }: LockedReportPreviewProps) => {
   const [unlocked, setUnlockedLocal] = useState(false);
+  const [email, setEmail] = useState("");
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     setUnlockedLocal(isUnlocked(slug));
+    const onUnlock = (e: Event) => {
+      const detail = (e as CustomEvent<{ slug?: string }>).detail;
+      if (detail?.slug === slug) setUnlockedLocal(true);
+    };
+    window.addEventListener("echelon:community-unlocked", onUnlock as EventListener);
+    return () => {
+      window.removeEventListener("echelon:community-unlocked", onUnlock as EventListener);
+    };
   }, [slug]);
 
   if (unlocked) return null;
 
-  const handleScrollToForm = (e: React.MouseEvent<HTMLAnchorElement>) => {
+  const handleQuickUnlock = async (e: FormEvent) => {
     e.preventDefault();
-    const el = document.getElementById(formTargetId);
-    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+    setError(null);
+    const trimmed = email.trim();
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(trimmed) || trimmed.length > 255) {
+      setError("Please enter a valid email address.");
+      return;
+    }
+
+    setSubmitting(true);
+    const sourceTag = `Community Report Quick Unlock - ${communityName}`;
+    const utm = getUtmParams();
+
+    const dbPromise = supabase.from("community_leads").insert({
+      community_slug: slug,
+      community_name: communityName,
+      first_name: "(quick unlock)",
+      last_name: "(quick unlock)",
+      email: trimmed,
+      phone: "",
+      interest: null,
+      utm_source: utm.utm_source || null,
+      utm_medium: utm.utm_medium || null,
+      utm_campaign: utm.utm_campaign || null,
+      utm_term: utm.utm_term || null,
+      utm_content: utm.utm_content || null,
+      referrer: typeof document !== "undefined" ? document.referrer : null,
+      page_url: typeof window !== "undefined" ? window.location.href : null,
+      user_agent: typeof navigator !== "undefined" ? navigator.userAgent : null,
+      source_tag: sourceTag,
+    });
+
+    const formData = new URLSearchParams();
+    formData.append("first_name", "(quick unlock)");
+    formData.append("last_name", "(quick unlock)");
+    formData.append("name", "(quick unlock)");
+    formData.append("email", trimmed);
+    formData.append("phone", "");
+    formData.append("interest", "");
+    formData.append("source", sourceTag);
+    formData.append("community_slug", slug);
+    formData.append("community_name", communityName);
+    formData.append("page", typeof window !== "undefined" ? window.location.href : "");
+    formData.append("timestamp", getTimestamp());
+    Object.entries(utm).forEach(([k, v]) => formData.append(k, v));
+
+    const zapPromise = fetch(ZAPIER_WEBHOOK, {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: formData.toString(),
+    }).catch(() => null);
+
+    await Promise.allSettled([dbPromise, zapPromise]);
+
+    setUnlocked(slug); // Dispatches echelon:community-unlocked event
+    setSubmitting(false);
+    setUnlockedLocal(true);
+
+    requestAnimationFrame(() => {
+      const el = document.getElementById(formTargetId);
+      if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
   };
 
   return (

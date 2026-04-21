@@ -28,7 +28,7 @@ interface InlineCommunityReportProps {
  * conversion-focused teaser, an inline gate, and the full report once
  * unlocked (30-day device-level localStorage).
  */
-const InlineCommunityReport = ({ slug, unlockedExtras }: InlineCommunityReportProps) => {
+const InlineCommunityReport = ({ slug, unlockedExtras, hideListings = false }: InlineCommunityReportProps) => {
   const [community, setCommunity] = useState<CommunityRecord | null>(null);
   const [loading, setLoading] = useState(true);
   const [unlocked, setUnlockedState] = useState(false);

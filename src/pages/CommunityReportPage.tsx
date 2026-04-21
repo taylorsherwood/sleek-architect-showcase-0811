@@ -129,7 +129,7 @@ const CommunityReportPage = () => {
               className="absolute inset-0"
               style={{
                 background:
-                  "linear-gradient(180deg, hsl(var(--foreground) / 0.15) 0%, hsl(var(--foreground) / 0.35) 55%, hsl(var(--foreground) / 0.6) 100%)",
+                  "linear-gradient(180deg, hsl(var(--foreground) / 0.45) 0%, hsl(var(--foreground) / 0.6) 55%, hsl(var(--foreground) / 0.8) 100%)",
               }}
               aria-hidden="true"
             />
@@ -155,14 +155,24 @@ const CommunityReportPage = () => {
               className={`text-4xl sm:text-5xl md:text-7xl font-display font-normal mb-6 ${
                 community.hero_image_url ? "text-background" : "text-architectural"
               }`}
+              style={
+                community.hero_image_url
+                  ? { textShadow: "0 2px 24px hsl(var(--foreground) / 0.65), 0 1px 4px hsl(var(--foreground) / 0.5)" }
+                  : undefined
+              }
             >
               {community.name}
             </h1>
             {community.tagline && (
               <p
                 className={`text-lg md:text-xl max-w-2xl leading-relaxed ${
-                  community.hero_image_url ? "text-background/85" : "text-muted-foreground"
+                  community.hero_image_url ? "text-background/95" : "text-muted-foreground"
                 }`}
+                style={
+                  community.hero_image_url
+                    ? { textShadow: "0 1px 12px hsl(var(--foreground) / 0.6)" }
+                    : undefined
+                }
               >
                 {community.tagline}
               </p>

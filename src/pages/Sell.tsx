@@ -876,55 +876,87 @@ const Sell = () => {
       </section>
 
 
-      {/* ── CTA / Listing Consultation ── */}
-      <section id="listing-consultation" className="py-28 bg-[#0C0F24]">
-        <div className="container mx-auto px-6">
-          <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-start">
-            <div>
-              <p className="text-minimal text-primary-foreground/50 mb-4">READY TO SELL?</p>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-primary-foreground leading-[1.15] mb-6">
-                Schedule a Listing Consultation
-              </h2>
-              <p className="text-primary-foreground/60 leading-relaxed mb-10 max-w-lg">Considering selling your Austin property? Schedule a complimentary consultation to discuss pricing strategy, marketing, timeline, and how we can position your property for maximum exposure and value.
-
-              </p>
-              <div className="space-y-6">
-                <div>
-                  <h4 className="text-minimal text-primary-foreground/40 mb-1">EMAIL</h4>
-                  <a href="mailto:info@echelonpropertygroup.com" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                    Send an Email
-                  </a>
-                </div>
-                <div>
-                  <h4 className="text-minimal text-primary-foreground/40 mb-1">PHONE</h4>
-                  <a href="tel:+15126613843" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                    (512) 661-3843
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <form onSubmit={handleConSubmit} className="space-y-6">
-              <div>
-                <input type="text" name="name" placeholder="Full Name" value={conForm.name} onChange={handleConChange} maxLength={100} className={inputDark} />
-                {conErrors.name && <p className="text-destructive text-sm mt-1">{conErrors.name}</p>}
-              </div>
-              <div>
-                <input type="email" name="email" placeholder="Email Address" value={conForm.email} onChange={handleConChange} maxLength={255} className={inputDark} />
-                {conErrors.email && <p className="text-destructive text-sm mt-1">{conErrors.email}</p>}
-              </div>
-              <div>
-                <input type="tel" name="phone" placeholder="Phone Number" value={conForm.phone} onChange={handleConChange} maxLength={20} className={inputDark} />
-                {conErrors.phone && <p className="text-destructive text-sm mt-1">{conErrors.phone}</p>}
-              </div>
-              <div>
-                <textarea name="message" placeholder="Tell us about your property and goals..." value={conForm.message} onChange={handleConChange} rows={4} maxLength={2000} className={`${inputDark} resize-none`} />
-              </div>
-              <button type="submit" disabled={conSubmitting} className="text-minimal border border-primary-foreground/30 text-primary-foreground/80 hover:bg-gold hover:text-white hover:border-gold px-10 py-4 transition-colors duration-300 w-full md:w-auto disabled:opacity-50 disabled:cursor-not-allowed">
-                {conSubmitting ? "SENDING..." : "REQUEST CONSULTATION"}
-              </button>
-            </form>
+      {/* ── Inline Home Valuation (RealScout) — replaces Listing Consultation block ── */}
+      <section
+        id="listing-consultation"
+        className="py-20 md:py-24 bg-[#0C0F24]"
+        style={{ scrollMarginTop: "6rem" }}
+      >
+        <div className="mx-auto px-6" style={{ maxWidth: "980px" }}>
+          {/* Subtle gold divider anchor */}
+          <div className="flex justify-center mb-9 md:mb-10">
+            <span className="block h-px w-12" style={{ background: "#b9a06c" }} />
           </div>
+
+          <div className="max-w-[780px] mx-auto text-center mb-8 md:mb-10">
+            <p className="text-minimal text-gold mb-4">COMPLIMENTARY VALUATION</p>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-normal text-primary-foreground leading-[1.1] mb-4 text-balance">
+              What's Your Austin Home Worth?
+            </h2>
+            <p className="text-primary-foreground/65 leading-relaxed max-w-2xl mx-auto text-base md:text-lg text-balance">
+              A discreet, data-backed estimate informed by recent comparable sales and our private transaction insights.
+            </p>
+          </div>
+
+          <style>{`
+            #listing-consultation realscout-home-value {
+              --rs-hvw-background-color: #ffffff;
+              --rs-hvw-title-color: #0c0f24;
+              --rs-hvw-subtitle-color: rgba(28, 30, 38, 0.55);
+              --rs-hvw-primary-button-text-color: #0c0f24;
+              --rs-hvw-primary-button-color: #b9a06c;
+              --rs-hvw-secondary-button-text-color: #0c0f24;
+              --rs-hvw-secondary-button-color: transparent;
+              --rs-hvw-widget-width: min(100%, 940px);
+              display: block;
+              width: 100%;
+              margin-left: auto !important;
+              margin-right: auto !important;
+              background: transparent;
+            }
+            #listing-consultation .rs-widget-wrap {
+              width: 100%;
+              max-width: 940px;
+              margin-left: auto;
+              margin-right: auto;
+            }
+            #listing-consultation realscout-home-value .wmhw-card {
+              width: 100% !important;
+              margin-inline: 0 !important;
+              padding: 1.5rem !important;
+              background: #ffffff !important;
+              border: 1px solid rgba(255, 255, 255, 0.08) !important;
+              border-radius: 6px !important;
+              box-shadow: 0 18px 40px -28px rgba(0, 0, 0, 0.55) !important;
+            }
+            #listing-consultation realscout-home-value .MuiInputBase-root,
+            #listing-consultation realscout-home-value .react-tel-input .form-control,
+            #listing-consultation realscout-home-value .react-select__control {
+              min-height: 58px !important;
+            }
+            #listing-consultation realscout-home-value .wmhw-primary-button {
+              font-size: 14px !important;
+            }
+            @media (max-width: 768px) {
+              #listing-consultation .rs-widget-wrap {
+                max-width: 100%;
+              }
+              #listing-consultation realscout-home-value .wmhw-card {
+                padding: 1.125rem !important;
+              }
+            }
+          `}</style>
+          <div
+            className="rs-widget-wrap"
+            dangerouslySetInnerHTML={{
+              __html:
+                '<realscout-home-value disable-shadow-dom agent-encoded-id="QWdlbnQtMjg5NDU2" include-name include-phone remove-title remove-subtitle></realscout-home-value>',
+            }}
+          />
+
+          <p className="text-center text-[11px] tracking-wide text-primary-foreground/50 mt-4 max-w-md mx-auto">
+            Your information is kept strictly confidential.
+          </p>
         </div>
       </section>
 

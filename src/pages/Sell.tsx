@@ -215,18 +215,35 @@ const consultSchema = z.object({
 const Sell = () => {
   const { toast } = useToast();
   const heroVideoRef = useRef<HTMLVideoElement>(null);
-  const [valuationOpen, setValuationOpen] = useState(false);
 
-  // Lazy-load RealScout web component script when the valuation modal opens
+  // Lazy-load RealScout web component script when the valuation section is near the viewport
   useEffect(() => {
-    if (!valuationOpen) return;
     const SRC = "https://em.realscout.com/widgets/realscout-web-components.umd.js";
     if (document.querySelector(`script[src="${SRC}"]`)) return;
-    const s = document.createElement("script");
-    s.type = "module";
-    s.src = SRC;
-    document.body.appendChild(s);
-  }, [valuationOpen]);
+    const target = document.getElementById("home-valuation");
+    if (!target) return;
+    const load = () => {
+      if (document.querySelector(`script[src="${SRC}"]`)) return;
+      const s = document.createElement("script");
+      s.type = "module";
+      s.src = SRC;
+      document.body.appendChild(s);
+    };
+    if ("IntersectionObserver" in window) {
+      const io = new IntersectionObserver(
+        (entries) => {
+          if (entries.some((e) => e.isIntersecting)) {
+            load();
+            io.disconnect();
+          }
+        },
+        { rootMargin: "600px" }
+      );
+      io.observe(target);
+      return () => io.disconnect();
+    }
+    load();
+  }, []);
 
   // Replay hero video whenever the user scrolls back to the top
   useEffect(() => {

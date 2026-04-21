@@ -1,0 +1,1 @@
+UPDATE public.communities SET hero_image_url = '/images/communities/westlake-hills-report-hero.jpg', hero_overlay_opacity = 0.45 WHERE slug = 'westlake-hills';

@@ -393,7 +393,7 @@ const Sell = () => {
                 e.currentTarget.style.background = "transparent";
                 e.currentTarget.style.color = "hsl(var(--gold))";
               }}>REQUEST A PROPERTY VALUATION
-            </a>
+            </button>
           </div>
 
 

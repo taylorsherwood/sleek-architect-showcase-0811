@@ -129,7 +129,7 @@ const CommunityReportPage = () => {
               className="absolute inset-0"
               style={{
                 background:
-                  "linear-gradient(180deg, hsl(var(--foreground) / 0.15) 0%, hsl(var(--foreground) / 0.35) 55%, hsl(var(--foreground) / 0.6) 100%)",
+                  "linear-gradient(180deg, hsl(var(--foreground) / 0.45) 0%, hsl(var(--foreground) / 0.6) 55%, hsl(var(--foreground) / 0.8) 100%)",
               }}
               aria-hidden="true"
             />

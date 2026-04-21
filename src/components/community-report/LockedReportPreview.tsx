@@ -1,6 +1,10 @@
 import { Lock, TrendingDown, TrendingUp } from "lucide-react";
-import { useEffect, useState } from "react";
-import { isUnlocked } from "@/lib/communityUnlock";
+import { FormEvent, useEffect, useState } from "react";
+import { supabase } from "@/integrations/supabase/client";
+import { isUnlocked, setUnlocked, getUtmParams } from "@/lib/communityUnlock";
+import { getTimestamp } from "@/lib/formUtils";
+
+const ZAPIER_WEBHOOK = "https://hooks.zapier.com/hooks/catch/26916347/upj5fa0/";
 
 interface LockedReportPreviewProps {
   slug: string;
@@ -74,17 +78,86 @@ const LockedReportPreview = ({
   formTargetId = "unlock-report",
 }: LockedReportPreviewProps) => {
   const [unlocked, setUnlockedLocal] = useState(false);
+  const [email, setEmail] = useState("");
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     setUnlockedLocal(isUnlocked(slug));
+    const onUnlock = (e: Event) => {
+      const detail = (e as CustomEvent<{ slug?: string }>).detail;
+      if (detail?.slug === slug) setUnlockedLocal(true);
+    };
+    window.addEventListener("echelon:community-unlocked", onUnlock as EventListener);
+    return () => {
+      window.removeEventListener("echelon:community-unlocked", onUnlock as EventListener);
+    };
   }, [slug]);
 
   if (unlocked) return null;
 
-  const handleScrollToForm = (e: React.MouseEvent<HTMLAnchorElement>) => {
+  const handleQuickUnlock = async (e: FormEvent) => {
     e.preventDefault();
-    const el = document.getElementById(formTargetId);
-    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+    setError(null);
+    const trimmed = email.trim();
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(trimmed) || trimmed.length > 255) {
+      setError("Please enter a valid email address.");
+      return;
+    }
+
+    setSubmitting(true);
+    const sourceTag = `Community Report Quick Unlock - ${communityName}`;
+    const utm = getUtmParams();
+
+    const dbPromise = supabase.from("community_leads").insert({
+      community_slug: slug,
+      community_name: communityName,
+      first_name: "(quick unlock)",
+      last_name: "(quick unlock)",
+      email: trimmed,
+      phone: "",
+      interest: null,
+      utm_source: utm.utm_source || null,
+      utm_medium: utm.utm_medium || null,
+      utm_campaign: utm.utm_campaign || null,
+      utm_term: utm.utm_term || null,
+      utm_content: utm.utm_content || null,
+      referrer: typeof document !== "undefined" ? document.referrer : null,
+      page_url: typeof window !== "undefined" ? window.location.href : null,
+      user_agent: typeof navigator !== "undefined" ? navigator.userAgent : null,
+      source_tag: sourceTag,
+    });
+
+    const formData = new URLSearchParams();
+    formData.append("first_name", "(quick unlock)");
+    formData.append("last_name", "(quick unlock)");
+    formData.append("name", "(quick unlock)");
+    formData.append("email", trimmed);
+    formData.append("phone", "");
+    formData.append("interest", "");
+    formData.append("source", sourceTag);
+    formData.append("community_slug", slug);
+    formData.append("community_name", communityName);
+    formData.append("page", typeof window !== "undefined" ? window.location.href : "");
+    formData.append("timestamp", getTimestamp());
+    Object.entries(utm).forEach(([k, v]) => formData.append(k, v));
+
+    const zapPromise = fetch(ZAPIER_WEBHOOK, {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: formData.toString(),
+    }).catch(() => null);
+
+    await Promise.allSettled([dbPromise, zapPromise]);
+
+    setUnlocked(slug); // Dispatches echelon:community-unlocked event
+    setSubmitting(false);
+    setUnlockedLocal(true);
+
+    requestAnimationFrame(() => {
+      const el = document.getElementById(formTargetId);
+      if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
   };
 
   return (
@@ -195,19 +268,51 @@ const LockedReportPreview = ({
             </div>
           </div>
 
-          {/* Primary CTA below the preview */}
-          <div className="mt-12 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+          {/* Inline email-only quick unlock */}
+          <div className="mt-12 grid md:grid-cols-2 gap-8 md:gap-12 items-start">
             <p className="text-muted-foreground max-w-xl leading-relaxed">
               Reserved for buyers and sellers actively evaluating {communityName}.
               Instant access. No spam. Updated regularly.
             </p>
-            <a
-              href={`#${formTargetId}`}
-              onClick={handleScrollToForm}
-              className="inline-flex items-center justify-center px-8 py-4 border border-gold text-gold tracking-[0.2em] text-sm hover:bg-gold hover:text-background transition-colors duration-300 whitespace-nowrap"
+            <form
+              onSubmit={handleQuickUnlock}
+              className="w-full"
+              aria-label={`Unlock ${communityName} private market report`}
             >
-              UNLOCK FULL REPORT
-            </a>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <label htmlFor="locked-report-email" className="sr-only">
+                  Email address
+                </label>
+                <input
+                  id="locked-report-email"
+                  type="email"
+                  inputMode="email"
+                  autoComplete="email"
+                  placeholder="Enter your email"
+                  value={email}
+                  onChange={(ev) => setEmail(ev.target.value)}
+                  required
+                  maxLength={255}
+                  disabled={submitting}
+                  className="flex-1 min-w-0 px-4 py-4 bg-transparent border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-gold transition-colors disabled:opacity-50"
+                />
+                <button
+                  type="submit"
+                  disabled={submitting}
+                  className="inline-flex items-center justify-center px-8 py-4 border border-gold text-gold tracking-[0.2em] text-sm hover:bg-gold hover:text-background transition-colors duration-300 whitespace-nowrap disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  {submitting ? "UNLOCKING…" : "UNLOCK FULL REPORT"}
+                </button>
+              </div>
+              {error && (
+                <p className="text-sm text-gold mt-3" role="alert">
+                  {error}
+                </p>
+              )}
+              <p className="text-xs text-muted-foreground mt-3 tracking-wide">
+                Instant access. No spam. We&apos;ll never share your email.
+              </p>
+            </form>
           </div>
         </div>
       </div>

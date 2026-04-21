@@ -787,6 +787,40 @@ const Sell = () => {
       <FeaturedCommunities />
 
       <Suspense fallback={<div className="min-h-[100px]" />}><Footer /></Suspense>
+
+      {/* ── Home Valuation Modal (RealScout) ── */}
+      <Dialog open={valuationOpen} onOpenChange={setValuationOpen}>
+        <DialogContent className="max-w-2xl p-0 overflow-hidden bg-[#f5f3ef] border-0">
+          <DialogHeader className="px-8 pt-8 pb-2">
+            <DialogTitle className="font-display text-2xl text-[#0c0f24]">Get Your Home's Value</DialogTitle>
+            <DialogDescription className="text-[#1c1e26]/60">
+              Enter your address to receive a complimentary property valuation.
+            </DialogDescription>
+          </DialogHeader>
+          <div className="px-8 pb-8 pt-4">
+            <style>{`
+              realscout-home-value {
+                --rs-hvw-background-color: #f5f3ef;
+                --rs-hvw-title-color: #000000;
+                --rs-hvw-subtitle-color: rgba(28, 30, 38, 0.5);
+                --rs-hvw-primary-button-text-color: #ffffff;
+                --rs-hvw-primary-button-color: #0c0f24;
+                --rs-hvw-secondary-button-text-color: #0c0f24;
+                --rs-hvw-secondary-button-color: #ffffff;
+                --rs-hvw-widget-width: auto;
+                display: block;
+                width: 100%;
+              }
+            `}</style>
+            <div
+              dangerouslySetInnerHTML={{
+                __html:
+                  '<realscout-home-value agent-encoded-id="QWdlbnQtMjg5NDU2" include-name include-phone remove-title remove-subtitle></realscout-home-value>',
+              }}
+            />
+          </div>
+        </DialogContent>
+      </Dialog>
     </div>);
 
 };

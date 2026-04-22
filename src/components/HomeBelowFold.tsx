@@ -1093,6 +1093,7 @@ const HomeBelowFold = () => (
     </Suspense>
     <div className="h-5 md:h-8 bg-background" aria-hidden="true" />
     <AdvisorSection />
+    <div className="h-12 md:h-20 bg-secondary" aria-hidden="true" />
     <StatsStrip />
 
     <div className="parallax-break hidden md:block" style={{ backgroundImage: "url('/images/parallax-skyline.webp')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties} aria-hidden="true" />

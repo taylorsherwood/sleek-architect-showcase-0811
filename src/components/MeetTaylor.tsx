@@ -39,12 +39,12 @@ const MeetTaylor = () => {
             </p>
           </ScrollReveal>
           <ScrollReveal delay={100}>
-          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start">
-            <div className="relative inline-block">
+          <div className="grid md:grid-cols-12 gap-10 md:gap-20 items-start">
+            <div className="relative inline-block md:col-span-6">
               <img
                 alt="Taylor Sherwood — Austin luxury real estate advisor and CLHMS specialist"
                 title="Taylor Sherwood — Certified Luxury Home Marketing Specialist"
-                className="w-full h-[40vh] md:h-[60vh] object-contain"
+                className="w-full h-[40vh] md:h-[60vh] object-contain rounded-[10px]"
                 src="/lovable-uploads/537facb0-1fbc-450c-8c4a-c1d06c4aa924.jpg"
                 sizes="(max-width: 768px) 100vw, 50vw"
                 loading="lazy"
@@ -55,12 +55,15 @@ const MeetTaylor = () => {
               <img src="/static-assets/clhms-badge.png" alt="Certified Luxury Home Marketing Specialist guild member badge" title="Certified Luxury Home Marketing Specialist badge" className="absolute bottom-3 right-3 w-16 h-16 md:w-20 md:h-20 opacity-85" loading="lazy" decoding="async" width={80} height={80} />
             </div>
             
-            <div className="relative overflow-hidden">
+            <div className="relative md:col-span-5 md:pt-10 md:max-w-[460px]">
               <h4 className="text-minimal text-gold mb-4 font-extrabold">AUSTIN LUXURY REAL ESTATE SPECIALIST</h4>
-              <p className="text-muted-foreground leading-relaxed max-w-md text-base md:text-xl mb-6">
-                Taylor Sherwood is an Austin-based real estate advisor specializing in distinctive homes, luxury properties, and land opportunities. Known for his attention to detail and thoughtful approach to marketing, he helps clients navigate complex transactions with confidence while showcasing properties in their best possible light.
+              <p className="text-muted-foreground leading-[1.85] text-base md:text-xl mb-7">
+                Taylor Sherwood is an Austin-based real estate advisor specializing in distinctive homes, luxury properties, and land opportunities.
               </p>
-              <p className="text-muted-foreground leading-relaxed max-w-md text-base md:text-xl mb-6">
+              <p className="text-muted-foreground leading-[1.85] text-base md:text-xl mb-7">
+                Known for his attention to detail and thoughtful approach to marketing, he helps clients navigate complex transactions with confidence while showcasing properties in their best possible light.
+              </p>
+              <p className="text-muted-foreground leading-[1.85] text-base md:text-xl mb-7">
                 With deep expertise across Austin's most sought-after neighborhoods — including Westlake Hills, Barton Creek, Tarrytown, and Lake Austin — Taylor works closely with buyers and sellers to ensure every transaction is handled with care, discretion, and strategic insight.
               </p>
               <a

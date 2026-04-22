@@ -137,8 +137,8 @@ const Hero = () => {
       }} />
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-6 pb-40 md:pb-36 lg:pb-44 pt-36 md:pt-32 lg:pt-48">
-        <div className="max-w-[780px] md:max-w-[620px] lg:max-w-[780px] relative">
+      <div className="relative z-10 container mx-auto px-6 pb-28 md:pb-26 lg:pb-32 pt-28 md:pt-24 lg:pt-36">
+        <div className="max-w-[780px] md:max-w-[640px] lg:max-w-[820px] relative">
           {/* Gold line + kicker */}
           <div style={anim("0s")} className="mb-5 mt-4 md:mt-5 lg:mt-6">
             
@@ -151,16 +151,16 @@ const Hero = () => {
             </p>
           </div>
 
-          <h1 className="font-display mb-7 md:mb-5 lg:mb-7 text-[27px] md:text-[clamp(30px,4vw,52px)] lg:text-[clamp(32px,4vw,52px)]" style={{
-            ...anim("0.15s"), fontWeight: 400, lineHeight: 1.12, letterSpacing: "0.02em",
-            color: "rgba(250,248,244,0.98)",
-            textShadow: "0 2px 12px rgba(0,0,0,0.45), 0 6px 30px rgba(0,0,0,0.30), 0 0 60px rgba(0,0,0,0.15)",
+          <h1 className="font-display mb-6 md:mb-5 lg:mb-6 text-[29px] md:text-[clamp(34px,4.4vw,58px)] lg:text-[clamp(38px,4.4vw,58px)]" style={{
+            ...anim("0.15s"), fontWeight: 400, lineHeight: 1.08, letterSpacing: "0.012em",
+            color: "rgba(252,250,246,1)",
+            textShadow: "0 2px 14px rgba(0,0,0,0.55), 0 6px 30px rgba(0,0,0,0.35), 0 0 60px rgba(0,0,0,0.18)",
             whiteSpace: "pre-wrap"
           }}>
             Access austin's most<br className="md:hidden" /> Exclusive PROPERTIES
           </h1>
 
-          <p className="max-w-[480px] mb-20 md:mb-16 lg:mb-20 leading-[1.7]" style={{
+          <p className="max-w-[480px] mb-14 md:mb-12 lg:mb-14 leading-[1.7]" style={{
             ...anim("0.3s"),
             fontFamily: '"Jost", sans-serif', fontWeight: 400, fontSize: "15.5px",
             letterSpacing: "0.04em", color: "rgba(250,248,244,0.95)",
@@ -263,13 +263,13 @@ const SearchSection = () => {
   }, [isMobile]);
 
   return (
-    <section className="bg-background relative z-20" style={{ overflow: 'visible', padding: "clamp(20px, 3vw, 32px) 0 clamp(8px, 1.5vw, 16px)" }}>
+    <section className="search-section bg-background relative z-20" style={{ overflow: 'visible', padding: "clamp(16px, 2.4vw, 24px) 0 clamp(6px, 1vw, 12px)" }}>
       <div className="container mx-auto px-6">
-        <div className="max-w-3xl mx-auto text-center">
+        <div className="max-w-2xl mx-auto text-center">
           <p className="text-minimal text-gold mb-3">
             EXPLORE THE MARKET
           </p>
-          <h2 className="font-display text-2xl md:text-[2rem] font-normal text-foreground leading-[1.1] tracking-[0.03em] mb-6">
+          <h2 className="font-display text-2xl md:text-[2rem] font-normal text-foreground leading-[1.1] tracking-[0.03em] mb-5">
             Find Your Next <span className="text-gold italic">Chapter</span>
           </h2>
           {isMobile ? (
@@ -282,7 +282,7 @@ const SearchSection = () => {
               SEARCH NOW
             </a>
           ) : (
-            <div ref={containerRef} className="flex justify-center relative max-w-2xl mx-auto" style={{ minHeight: 60, zIndex: 10 }} />
+            <div ref={containerRef} className="flex justify-center relative max-w-xl mx-auto search-widget-frame" style={{ minHeight: 60, zIndex: 10 }} />
           )}
         </div>
       </div>
@@ -308,7 +308,7 @@ const Index = () => (
 
     <Navigation />
     <Hero />
-    <div className="h-4 md:h-6 bg-background" aria-hidden="true" />
+    <div className="h-2 md:h-3 bg-background" aria-hidden="true" />
     <SearchSection />
 
     <Suspense fallback={<div className="min-h-[400px] bg-background" />}>

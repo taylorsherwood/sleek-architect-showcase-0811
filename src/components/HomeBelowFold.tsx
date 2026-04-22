@@ -28,24 +28,31 @@ const Footer = lazy(() => import("@/components/Footer"));
    SECTION 2 — MICRO-TRUST STRIP
    ───────────────────────────────────────────── */
 
-const TrustStrip = () => (
-  <section className="hidden lg:block bg-background">
-    <div className="container mx-auto px-6">
-      <div className="max-w-5xl mx-auto text-center">
-        
-        <div className="flex items-center justify-center gap-16 pt-6 pb-2 mt-0">
-        {["LUXURY REPRESENTATION", "STRATEGIC INVESTMENT ADVISORY", "$125M+ CAREER SALES VOLUME"].map((text, i) => (
-            <span key={i} className="text-muted-foreground/65" style={{
-              fontFamily: '"Jost", sans-serif', fontWeight: 400, fontSize: "10px", letterSpacing: "0.18em", textTransform: "uppercase"
-            }}>
-              {text}
-            </span>
-          ))}
+const TrustStrip = () => {
+  const items = ["LUXURY REPRESENTATION", "STRATEGIC INVESTMENT ADVISORY", "$125M+ CAREER SALES VOLUME"];
+  return (
+    <section className="hidden lg:block bg-background">
+      <div className="container mx-auto px-6">
+        <div className="max-w-3xl mx-auto text-center">
+          <div className="flex items-center justify-center pt-3 pb-1 mt-0">
+            {items.map((text, i) => (
+              <React.Fragment key={i}>
+                <span className="text-foreground/55" style={{
+                  fontFamily: '"Jost", sans-serif', fontWeight: 400, fontSize: "10px", letterSpacing: "0.14em", textTransform: "uppercase"
+                }}>
+                  {text}
+                </span>
+                {i < items.length - 1 && (
+                  <span aria-hidden="true" className="mx-5 inline-block w-px h-3 bg-foreground/15" />
+                )}
+              </React.Fragment>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
 
 /* ─────────────────────────────────────────────
    SECTION 3 — ADVISOR POSITIONING

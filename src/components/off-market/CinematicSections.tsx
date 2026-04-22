@@ -101,6 +101,88 @@ const CinematicSections = ({ formNode }: Props) => {
         },
       });
 
+      // ── Section 2.5: Image Split Reveal
+      gsap.to(".split-top-half", {
+        yPercent: -100,
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".split-section",
+          start: "top top",
+          end: "+=200%",
+          pin: true,
+          scrub: 1,
+        },
+      });
+      gsap.to(".split-bottom-half", {
+        yPercent: 100,
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".split-section",
+          start: "top top",
+          end: "+=200%",
+          scrub: 1,
+        },
+      });
+      gsap.fromTo(
+        ".split-text",
+        { opacity: 0, scale: 0.95 },
+        {
+          opacity: 1,
+          scale: 1,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: ".split-section",
+            start: "top top-=120%",
+            end: "top top-=200%",
+            scrub: 1,
+          },
+        }
+      );
+
+      // ── Section 3 (new): Scroll-Scrubbed Drone Video
+      const droneVideo = droneVideoRef.current;
+      if (droneVideo) {
+        const playPromise = droneVideo.play();
+        if (playPromise) playPromise.then(() => droneVideo.pause()).catch(() => {});
+        ScrollTrigger.create({
+          trigger: ".drone-section",
+          start: "top top",
+          end: "+=200%",
+          pin: true,
+          scrub: 0.5,
+          onUpdate: (self) => {
+            if (droneVideo.duration && !isNaN(droneVideo.duration)) {
+              droneVideo.currentTime = droneVideo.duration * self.progress;
+            }
+          },
+        });
+        // Text fade: in 0-15%, hold, out 90-100%
+        gsap.fromTo(
+          ".drone-text",
+          { opacity: 0 },
+          {
+            opacity: 1,
+            ease: "none",
+            scrollTrigger: {
+              trigger: ".drone-section",
+              start: "top top",
+              end: "top top-=30%",
+              scrub: true,
+            },
+          }
+        );
+        gsap.to(".drone-text", {
+          opacity: 0,
+          ease: "none",
+          scrollTrigger: {
+            trigger: ".drone-section",
+            start: "top top-=180%",
+            end: "top top-=200%",
+            scrub: true,
+          },
+        });
+      }
+
       // ── Section 3: Parallax Image Reveal
       gsap.to(".parallax-image", {
         yPercent: -20,

@@ -29,7 +29,7 @@ const Footer = lazy(() => import("@/components/Footer"));
    ───────────────────────────────────────────── */
 
 const TrustStrip = () => (
-  <section className="hidden lg:block bg-secondary">
+  <section className="hidden lg:block bg-background">
     <div className="container mx-auto px-6">
       <div className="max-w-5xl mx-auto text-center">
         <div className="border-t border-border/15" />

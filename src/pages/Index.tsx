@@ -310,6 +310,7 @@ const Index = () => (
     <Hero />
     <div className="h-16 md:h-24 bg-background" aria-hidden="true" />
     <SearchSection />
+    <div className="h-16 md:h-24" aria-hidden="true" style={{ background: "#F5F3EF" }} />
 
     <Suspense fallback={<div className="min-h-[400px] bg-background" />}>
       <HomeBelowFold />

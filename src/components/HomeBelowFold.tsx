@@ -52,11 +52,11 @@ const TrustStrip = () => (
    ───────────────────────────────────────────── */
 
 const AdvisorSection = () => (
-  <section className="bg-background pt-12 md:pt-20">
+  <section className="bg-secondary pt-12 md:pt-20">
     <div className="max-w-[1400px] mx-auto">
        <div className="grid lg:grid-cols-[minmax(480px,520px)_1fr] items-start" style={{ gap: 0 }}>
          {/* Left — editorial portrait */}
-          <div className="relative flex flex-col items-center bg-background w-full overflow-hidden">
+          <div className="relative flex flex-col items-center bg-secondary w-full overflow-hidden">
             <div className="relative w-full p-4 md:pt-14">
               <img
                 src={taylorBoatImg}
@@ -70,7 +70,7 @@ const AdvisorSection = () => (
                 style={{ filter: "brightness(0.96) contrast(1.03)" }}
               />
               <div className="absolute inset-4 rounded-sm pointer-events-none" style={{
-                boxShadow: "inset 0 0 60px 20px hsl(var(--background) / 0.15)",
+                boxShadow: "inset 0 0 60px 20px hsl(var(--secondary) / 0.15)",
               }} />
             </div>
 

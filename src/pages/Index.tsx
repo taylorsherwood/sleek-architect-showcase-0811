@@ -263,7 +263,7 @@ const SearchSection = () => {
   }, [isMobile]);
 
   return (
-    <section className="bg-secondary relative z-20" style={{ overflow: 'visible', padding: "clamp(24px, 4vw, 48px) 0 clamp(32px, 4vw, 48px)" }}>
+    <section className="bg-background relative z-20" style={{ overflow: 'visible', padding: "clamp(24px, 4vw, 48px) 0 clamp(32px, 4vw, 48px)" }}>
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-minimal text-gold mb-4">
@@ -308,7 +308,7 @@ const Index = () => (
 
     <Navigation />
     <Hero />
-    <div className="h-10 md:h-16 bg-secondary" aria-hidden="true" />
+    <div className="h-10 md:h-16 bg-background" aria-hidden="true" />
     <SearchSection />
 
     <Suspense fallback={<div className="min-h-[400px] bg-background" />}>

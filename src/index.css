@@ -56,35 +56,37 @@ realscout-simple-search {
 }
 
 /* ─────────────────────────────────────────────────────────
-   Section blending — softens seams between alternating
-   warm-white (#FAF9F6) and ivory (#F5F3EF) sections.
-   Pure visual fade; no layout, spacing, or border changes.
+   Section blending — soft but controlled.
+   Very faint cross-fade between warm-white (#FAF9F6) and
+   ivory (#F5F3EF) sections, plus a near-invisible 1px
+   anchor line for editorial structure.
+   No layout, spacing, or component changes.
    ───────────────────────────────────────────────────────── */
 section {
   position: relative;
 }
 
-/* Warm-white sections fade their top/bottom edges toward ivory */
+/* Warm-white sections — barely-there fade toward ivory */
 section.bg-background::before,
 section.bg-background::after {
   content: "";
   position: absolute;
   left: 0;
   right: 0;
-  height: 56px;
+  height: 28px;
   pointer-events: none;
   z-index: 0;
 }
 section.bg-background::before {
   top: 0;
-  background: linear-gradient(to bottom, hsl(38 21% 95% / 0.55) 0%, hsl(38 21% 95% / 0) 100%);
+  background: linear-gradient(to bottom, hsl(38 21% 95% / 0.22) 0%, hsl(38 21% 95% / 0) 100%);
 }
 section.bg-background::after {
   bottom: 0;
-  background: linear-gradient(to top, hsl(38 21% 95% / 0.55) 0%, hsl(38 21% 95% / 0) 100%);
+  background: linear-gradient(to top, hsl(38 21% 95% / 0.22) 0%, hsl(38 21% 95% / 0) 100%);
 }
 
-/* Ivory sections fade their top/bottom edges toward warm white */
+/* Ivory sections — barely-there fade toward warm white */
 section.bg-secondary::before,
 section.bg-secondary::after,
 section.bg-muted::before,
@@ -93,19 +95,27 @@ section.bg-muted::after {
   position: absolute;
   left: 0;
   right: 0;
-  height: 56px;
+  height: 28px;
   pointer-events: none;
   z-index: 0;
 }
 section.bg-secondary::before,
 section.bg-muted::before {
   top: 0;
-  background: linear-gradient(to bottom, hsl(40 33% 97% / 0.55) 0%, hsl(40 33% 97% / 0) 100%);
+  background: linear-gradient(to bottom, hsl(40 33% 97% / 0.22) 0%, hsl(40 33% 97% / 0) 100%);
 }
 section.bg-secondary::after,
 section.bg-muted::after {
   bottom: 0;
-  background: linear-gradient(to top, hsl(40 33% 97% / 0.55) 0%, hsl(40 33% 97% / 0) 100%);
+  background: linear-gradient(to top, hsl(40 33% 97% / 0.22) 0%, hsl(40 33% 97% / 0) 100%);
+}
+
+/* Single near-invisible anchor line at the top of light sections —
+   gives editorial structure without a visible border. */
+section.bg-background,
+section.bg-secondary,
+section.bg-muted {
+  box-shadow: inset 0 1px 0 0 hsl(233 47% 9% / 0.04);
 }
 
 /* Keep section content above the fade layer */
@@ -116,7 +126,13 @@ section.bg-muted > * {
   z-index: 1;
 }
 
-/* Never fade hero, navy, or video sections — preserve full contrast */
+/* Never fade or anchor hero, navy, or video sections */
+section.bg-primary,
+section#hero-section,
+section[class*="bg-black"],
+section[class*="bg-navy"] {
+  box-shadow: none;
+}
 section.bg-primary::before,
 section.bg-primary::after,
 section#hero-section::before,

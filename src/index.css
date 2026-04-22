@@ -82,13 +82,9 @@ realscout-simple-search::part(container) {
   background: linear-gradient(to bottom, #FAFAF8 0%, #F5F3EF 100%);
 }
 
-/* Dimmed credibility logos — sit visually behind the foreground */
+/* Credibility logos — always full opacity */
 .credibility-logo-dim {
-  opacity: 0.7;
-  transition: opacity 400ms ease;
-}
-.credibility-logo-dim:hover {
-  opacity: 1;
+  opacity: 1 !important;
 }
 
 :root {

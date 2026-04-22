@@ -14,16 +14,16 @@ import mediaNyt from "@/assets/media-nyt.webp";
 import mediaCulturemap from "@/assets/media-culturemap.webp";
 
 const logos = [
-  { src: mediaWsj, alt: "The Wall Street Journal", h: "h-10 md:h-14" },
-  { src: mediaCnn, alt: "CNN", h: "h-12 md:h-16" },
-  { src: mediaMansionGlobal, alt: "Mansion Global", h: "h-24 md:h-32" },
-  { src: mediaNyt, alt: "The New York Times", h: "h-8 md:h-10" },
+  { src: mediaWsj, alt: "The Wall Street Journal", h: "h-8 md:h-11" },
+  { src: mediaCnn, alt: "CNN", h: "h-10 md:h-13" },
+  { src: mediaMansionGlobal, alt: "Mansion Global", h: "h-20 md:h-26" },
+  { src: mediaNyt, alt: "The New York Times", h: "h-7 md:h-9" },
   { src: mediaRobbReport, alt: "Robb Report" },
-  { src: mediaFoxNews, alt: "Fox News", h: "h-9 md:h-12" },
+  { src: mediaFoxNews, alt: "Fox News", h: "h-8 md:h-10" },
   { src: mediaTribeza, alt: "Tribeza" },
-  { src: mediaCulturemap, alt: "CultureMap Austin", h: "h-14 md:h-20" },
+  { src: mediaCulturemap, alt: "CultureMap Austin", h: "h-12 md:h-16" },
   { src: mediaYahoo, alt: "Yahoo!" },
-  { src: mediaAbj, alt: "Austin Business Journal", h: "h-20 md:h-28" },
+  { src: mediaAbj, alt: "Austin Business Journal", h: "h-16 md:h-22" },
   { src: mediaHgtv, alt: "HGTV" },
   { src: mediaHaven, alt: "Haven" },
   { src: mediaAustinHome, alt: "Austin Home" },
@@ -35,7 +35,7 @@ const ScrollingCredibilityStrip = () => {
   const track = [...logos, ...logos];
 
   return (
-    <section className="bg-background pt-2 md:pt-3 pb-5 md:pb-7 overflow-hidden">
+    <section className="bg-background pt-1 md:pt-2 pb-3 md:pb-4 overflow-hidden">
       <p
         className="text-center mb-2"
         style={{
@@ -50,8 +50,8 @@ const ScrollingCredibilityStrip = () => {
         AS SEEN IN
       </p>
 
-      <div className="relative mx-auto" style={{ maxWidth: "1400px" }}>
-        <div className="scrolling-strip-track flex items-center gap-20 md:gap-28 w-max">
+      <div className="relative mx-auto" style={{ maxWidth: "1100px" }}>
+        <div className="scrolling-strip-track flex items-center gap-16 md:gap-24 w-max">
           {track.map((logo, i) => (
             <img
               key={`${logo.alt}-${i}`}
@@ -59,7 +59,7 @@ const ScrollingCredibilityStrip = () => {
               alt={logo.alt}
               loading="lazy"
               decoding="async"
-              className={`${logo.h || "h-16 md:h-24"} w-auto object-contain shrink-0 credibility-logo`}
+              className={`${logo.h || "h-14 md:h-20"} w-auto object-contain shrink-0 credibility-logo-dim`}
               width={200}
               height={112}
             />

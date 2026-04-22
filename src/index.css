@@ -61,18 +61,34 @@ realscout-simple-search::part(container) {
   background-color: hsl(38 21% 95%) !important;
 }
 
-/* Premium framing for the homepage search widget — subtle warm border + shadow */
+/* Premium framing for the homepage search widget — soft diffused float */
 .search-widget-frame {
-  border: 1px solid #E8E3D9;
-  border-radius: 6px;
-  box-shadow: 0 1px 2px rgba(12, 15, 36, 0.03), 0 8px 24px -12px rgba(12, 15, 36, 0.08);
+  border: 1px solid rgba(232, 227, 217, 0.6);
+  border-radius: 8px;
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.6) inset,
+    0 1px 3px rgba(12, 15, 36, 0.04),
+    0 12px 32px -16px rgba(12, 15, 36, 0.10),
+    0 24px 48px -24px rgba(12, 15, 36, 0.08);
   overflow: hidden;
-  background: hsl(38 21% 95%);
+  background: linear-gradient(to bottom, #FBFAF7 0%, hsl(38 21% 95%) 100%);
+  padding: 6px;
+  position: relative;
+  z-index: 2;
 }
 
-/* Subtle tonal background for the search section — top-to-bottom ivory variation */
+/* Subtle tonal background for the search section — soft ivory gradient */
 .search-section {
-  background: linear-gradient(to bottom, hsl(38 21% 96%) 0%, hsl(var(--background)) 60%);
+  background: linear-gradient(to bottom, #FAFAF8 0%, #F5F3EF 100%);
+}
+
+/* Dimmed credibility logos — sit visually behind the foreground */
+.credibility-logo-dim {
+  opacity: 0.7;
+  transition: opacity 400ms ease;
+}
+.credibility-logo-dim:hover {
+  opacity: 1;
 }
 
 :root {

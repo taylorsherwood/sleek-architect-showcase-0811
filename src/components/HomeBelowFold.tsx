@@ -33,17 +33,17 @@ const TrustStrip = () => {
   return (
     <section className="hidden lg:block bg-background">
       <div className="container mx-auto px-6">
-        <div className="max-w-3xl mx-auto text-center">
-          <div className="flex items-center justify-center pt-3 pb-1 mt-0">
+        <div className="max-w-2xl mx-auto text-center">
+          <div className="flex items-center justify-center pt-2 pb-0">
             {items.map((text, i) => (
               <React.Fragment key={i}>
-                <span className="text-foreground/55" style={{
-                  fontFamily: '"Jost", sans-serif', fontWeight: 400, fontSize: "10px", letterSpacing: "0.14em", textTransform: "uppercase"
+                <span className="text-foreground/70" style={{
+                  fontFamily: '"Jost", sans-serif', fontWeight: 400, fontSize: "11px", letterSpacing: "0.10em", textTransform: "uppercase"
                 }}>
                   {text}
                 </span>
                 {i < items.length - 1 && (
-                  <span aria-hidden="true" className="mx-5 inline-block w-px h-3 bg-foreground/15" />
+                  <span aria-hidden="true" className="mx-4 inline-block w-px h-3" style={{ background: "rgba(185, 160, 108, 0.30)" }} />
                 )}
               </React.Fragment>
             ))}

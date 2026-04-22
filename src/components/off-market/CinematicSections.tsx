@@ -1,0 +1,493 @@
+import { useEffect, useRef, type ReactNode } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Lenis from "lenis";
+import { useIsMobile } from "@/hooks/use-mobile";
+
+import westlakeDusk from "@/assets/community-westlake-hills-hero.webp";
+import card78746 from "@/assets/barton-creek.jpg";
+import cardTarrytown from "@/assets/community-tarrytown.jpg";
+import cardOldEnfield from "@/assets/pemberton-heights.avif";
+import cardWestlake from "@/assets/community-westlake.jpg";
+import cardDavenport from "@/assets/the-high-road-westlake.webp";
+import desktopNote from "@/assets/austin-luxury-lifestyle.jpg";
+
+gsap.registerPlugin(ScrollTrigger);
+
+const labelStyle = {
+  fontSize: "0.6rem" as const,
+  letterSpacing: "0.3em",
+  textTransform: "uppercase" as const,
+  fontFamily: '"Jost", sans-serif',
+};
+
+const THESIS = "The best Austin homes don't get listed. They get introduced.";
+
+const NEIGHBORHOODS = [
+  { name: "78746", image: card78746, stat: "Median sale: $3.2M" },
+  { name: "Tarrytown", image: cardTarrytown, stat: "Avg DOM off-market: 14 days" },
+  { name: "Old Enfield", image: cardOldEnfield, stat: "60% of trades private" },
+  { name: "West Lake Hills", image: cardWestlake, stat: "Median sale: $4.1M" },
+  { name: "Davenport Ranch", image: cardDavenport, stat: "Country-club gated estates" },
+];
+
+const STATS = [
+  { value: 3.2, prefix: "$", suffix: "M", label: "Median private sale price" },
+  { value: 41, prefix: "", suffix: "", label: "Off-market deals closed" },
+  { value: 60, prefix: "", suffix: "%", label: "Of luxury sales never list publicly" },
+];
+
+interface Props {
+  formNode: ReactNode;
+}
+
+const CinematicSections = ({ formNode }: Props) => {
+  const isMobile = useIsMobile();
+  const rootRef = useRef<HTMLDivElement>(null);
+  const lenisRef = useRef<Lenis | null>(null);
+
+  // Lenis smooth scroll (desktop only)
+  useEffect(() => {
+    if (isMobile) return;
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduceMotion) return;
+
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      smoothWheel: true,
+    });
+    lenisRef.current = lenis;
+
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+
+    lenis.on("scroll", ScrollTrigger.update);
+    ScrollTrigger.refresh();
+
+    return () => {
+      lenis.destroy();
+      lenisRef.current = null;
+    };
+  }, [isMobile]);
+
+  // GSAP scroll-linked animations (desktop only)
+  useEffect(() => {
+    if (isMobile) return;
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduceMotion) return;
+    const root = rootRef.current;
+    if (!root) return;
+
+    const ctx = gsap.context(() => {
+      // ── Section 2: Pinned Thesis word-by-word reveal
+      const words = gsap.utils.toArray<HTMLSpanElement>(".thesis-word");
+      gsap.set(words, { opacity: 0, y: 40 });
+      gsap.to(words, {
+        opacity: 1,
+        y: 0,
+        ease: "power3.out",
+        stagger: 1,
+        scrollTrigger: {
+          trigger: ".thesis-section",
+          start: "top top",
+          end: "+=150%",
+          pin: true,
+          scrub: 1,
+        },
+      });
+
+      // ── Section 3: Parallax Image Reveal
+      gsap.to(".parallax-image", {
+        yPercent: -20,
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".parallax-section",
+          start: "top bottom",
+          end: "bottom top",
+          scrub: 1,
+        },
+      });
+      gsap.fromTo(
+        ".parallax-headline",
+        { scale: 0.9 },
+        {
+          scale: 1,
+          ease: "none",
+          scrollTrigger: {
+            trigger: ".parallax-section",
+            start: "top bottom",
+            end: "bottom top",
+            scrub: 1,
+          },
+        }
+      );
+
+      // ── Section 4: Horizontal Scroll Gallery
+      const horizontalTrack = document.querySelector<HTMLDivElement>(".horizontal-track");
+      if (horizontalTrack) {
+        const totalScroll = horizontalTrack.scrollWidth - window.innerWidth;
+        gsap.to(horizontalTrack, {
+          x: -totalScroll,
+          ease: "none",
+          scrollTrigger: {
+            trigger: ".horizontal-section",
+            start: "top top",
+            end: () => `+=${totalScroll}`,
+            pin: true,
+            scrub: 1,
+            invalidateOnRefresh: true,
+          },
+        });
+
+        // Per-card image parallax
+        gsap.utils.toArray<HTMLDivElement>(".horizontal-card-image").forEach((img) => {
+          gsap.fromTo(
+            img,
+            { xPercent: -8 },
+            {
+              xPercent: 8,
+              ease: "none",
+              scrollTrigger: {
+                trigger: img.parentElement!,
+                containerAnimation: gsap.getTweensOf(horizontalTrack)[0],
+                start: "left right",
+                end: "right left",
+                scrub: 1,
+              },
+            }
+          );
+        });
+      }
+
+      // ── Section 5: Pinned Counter
+      const statEls = gsap.utils.toArray<HTMLSpanElement>(".stat-number");
+      const counterObj = STATS.map((s) => ({ value: 0, target: s.value }));
+      gsap.to(counterObj, {
+        value: (i) => counterObj[i].target,
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".stats-section",
+          start: "top top",
+          end: "+=200%",
+          pin: true,
+          scrub: 1,
+          onUpdate: () => {
+            statEls.forEach((el, i) => {
+              const stat = STATS[i];
+              const v = counterObj[i].value;
+              const formatted =
+                stat.suffix === "M"
+                  ? v.toFixed(1)
+                  : Math.round(v).toString();
+              el.textContent = `${stat.prefix}${formatted}${stat.suffix}`;
+            });
+          },
+        },
+      });
+      gsap.from(".stat-label", {
+        opacity: 0,
+        y: 20,
+        stagger: 0.2,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: ".stats-section",
+          start: "top top+=100",
+          toggleActions: "play none none reverse",
+        },
+      });
+
+      // ── Section 6: Split Parallax Testimonial
+      gsap.to(".testimonial-image", {
+        yPercent: -15,
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".testimonial-section",
+          start: "top bottom",
+          end: "bottom top",
+          scrub: 1,
+        },
+      });
+      gsap.from(".testimonial-line", {
+        opacity: 0,
+        y: 20,
+        stagger: 0.15,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: ".testimonial-section",
+          start: "top center",
+          toggleActions: "play none none reverse",
+        },
+      });
+      gsap.from(".testimonial-attribution", {
+        opacity: 0,
+        delay: 0.6,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: ".testimonial-section",
+          start: "top center",
+          toggleActions: "play none none reverse",
+        },
+      });
+
+      // ── Section 7: Form reveal
+      gsap.from(".form-field", {
+        opacity: 0,
+        y: 30,
+        stagger: 0.1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: ".form-section",
+          start: "top 70%",
+          toggleActions: "play none none reverse",
+        },
+      });
+    }, root);
+
+    return () => {
+      ctx.revert();
+      ScrollTrigger.getAll().forEach((st) => st.kill());
+    };
+  }, [isMobile]);
+
+  // ─────────────────────────────────────────────
+  // MOBILE: stacked, no GSAP / Lenis, simple fades
+  // ─────────────────────────────────────────────
+  if (isMobile) {
+    return (
+      <div className="bg-[hsl(220,15%,8%)] text-white">
+        {/* Section 2 — Thesis (static) */}
+        <section className="py-24 px-6 bg-[hsl(220,15%,8%)] text-center">
+          <p className="font-display text-3xl sm:text-4xl leading-tight text-[hsl(40,30%,90%)]">
+            {THESIS}
+          </p>
+        </section>
+
+        {/* Section 3 — Image + headline */}
+        <section className="relative">
+          <img
+            src={westlakeDusk}
+            alt="Westlake estate at dusk"
+            className="w-full h-[60vh] object-cover"
+            loading="lazy"
+          />
+          <div className="px-6 py-12 text-center">
+            <p className="text-[hsl(var(--gold))] mb-4 font-bold" style={labelStyle}>
+              01 — PRIVATE INVENTORY
+            </p>
+            <h2 className="font-display text-3xl text-white">
+              Homes That Never Reach The Market
+            </h2>
+          </div>
+        </section>
+
+        {/* Section 4 — Stacked neighborhood cards */}
+        <section className="px-6 py-12 space-y-8">
+          {NEIGHBORHOODS.map((n) => (
+            <div key={n.name} className="relative h-[60vh] overflow-hidden">
+              <img src={n.image} alt={n.name} className="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+              <div className="absolute bottom-6 left-6 right-6">
+                <h3 className="font-display text-3xl text-white mb-2">{n.name}</h3>
+                <p className="text-[hsl(var(--gold))] text-xs tracking-[0.2em] uppercase font-sans">{n.stat}</p>
+              </div>
+            </div>
+          ))}
+        </section>
+
+        {/* Section 5 — Stats */}
+        <section className="py-20 px-6 text-center space-y-12">
+          {STATS.map((s) => (
+            <div key={s.label}>
+              <p className="font-display text-6xl text-white mb-3">
+                {s.prefix}
+                {s.suffix === "M" ? s.value.toFixed(1) : s.value}
+                {s.suffix}
+              </p>
+              <p className="text-white/50 text-sm tracking-[0.2em] uppercase font-sans">{s.label}</p>
+            </div>
+          ))}
+        </section>
+
+        {/* Section 6 — Testimonial */}
+        <section className="bg-[hsl(220,15%,6%)]">
+          <img src={desktopNote} alt="Handwritten note on desk" className="w-full h-[40vh] object-cover" loading="lazy" />
+          <div className="px-6 py-12 text-center">
+            <p className="font-display italic text-2xl text-white/90 leading-snug mb-6">
+              "Echelon brought us a Westlake estate before it ever hit the market. We closed in twelve days."
+            </p>
+            <p className="text-[hsl(var(--gold))] text-xs tracking-[0.2em] uppercase font-sans">
+              — Private Buyer, Westlake Hills
+            </p>
+          </div>
+        </section>
+
+        {/* Section 7 — Form */}
+        <section className="py-16 px-6 bg-[hsl(220,15%,8%)]">
+          <div className="max-w-xl mx-auto border border-white/10 p-6 bg-white/[0.02]">
+            <p className="text-[hsl(var(--gold))] mb-3 font-bold" style={labelStyle}>
+              REQUEST PRIVATE ACCESS
+            </p>
+            <h2 className="font-display text-2xl font-light text-white mb-6">
+              Tell Us What You're Looking For
+            </h2>
+            {formNode}
+          </div>
+        </section>
+      </div>
+    );
+  }
+
+  // ─────────────────────────────────────────────
+  // DESKTOP: full cinematic experience
+  // ─────────────────────────────────────────────
+  return (
+    <div ref={rootRef} className="bg-[hsl(220,15%,8%)] text-white">
+      {/* ── Section 2: Pinned Thesis ───────────── */}
+      <section className="thesis-section relative h-screen w-full bg-[hsl(220,15%,8%)] flex items-center justify-center overflow-hidden">
+        <h2
+          className="font-display text-[hsl(40,30%,92%)] text-center px-8 max-w-[90vw] leading-[1.15] font-light"
+          style={{ fontSize: "6vw" }}
+        >
+          {THESIS.split(" ").map((word, i) => (
+            <span key={i} className="thesis-word inline-block mr-[0.25em] will-change-transform">
+              {word}
+            </span>
+          ))}
+        </h2>
+      </section>
+
+      {/* ── Section 3: Parallax Image Reveal ───── */}
+      <section className="parallax-section relative h-screen w-full overflow-hidden">
+        <div className="absolute inset-0" style={{ height: "120%" }}>
+          <img
+            src={westlakeDusk}
+            alt="Westlake estate at dusk — private Austin luxury home"
+            className="parallax-image w-full h-full object-cover will-change-transform"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-black/30" />
+        </div>
+        <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-8" style={{ mixBlendMode: "difference" }}>
+          <p className="text-[hsl(var(--gold))] mb-6 font-bold" style={labelStyle}>
+            01 — PRIVATE INVENTORY
+          </p>
+          <h2
+            className="parallax-headline font-display text-white font-light leading-[1.05] max-w-[90vw] will-change-transform"
+            style={{ fontSize: "5vw" }}
+          >
+            Homes That Never<br />Reach The Market
+          </h2>
+        </div>
+      </section>
+
+      {/* ── Section 4: Horizontal Scroll Gallery ─ */}
+      <section className="horizontal-section relative h-screen w-full overflow-hidden bg-[hsl(220,15%,6%)]">
+        <div className="horizontal-track absolute top-0 left-0 h-full flex" style={{ width: "max-content" }}>
+          {NEIGHBORHOODS.map((n) => (
+            <div
+              key={n.name}
+              className="relative h-screen flex items-end overflow-hidden"
+              style={{ width: "80vw" }}
+            >
+              <div
+                className="horizontal-card-image absolute inset-0 will-change-transform"
+                style={{ width: "120%", left: "-10%" }}
+              >
+                <img
+                  src={n.image}
+                  alt={`${n.name} luxury Austin neighborhood`}
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
+              <div className="relative z-10 p-12 lg:p-16 max-w-2xl">
+                <h3 className="font-display text-white font-light leading-tight mb-4" style={{ fontSize: "4vw" }}>
+                  {n.name}
+                </h3>
+                <p className="text-[hsl(var(--gold))] tracking-[0.25em] uppercase font-sans" style={{ fontSize: "0.75rem" }}>
+                  {n.stat}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ── Section 5: Pinned Counter ──────────── */}
+      <section className="stats-section relative h-screen w-full bg-[hsl(220,15%,8%)] flex items-center justify-center overflow-hidden">
+        <div className="container mx-auto px-8">
+          <div className="grid grid-cols-3 gap-8 items-end">
+            {STATS.map((s, i) => (
+              <div key={s.label} className="text-center">
+                <span
+                  className="stat-number block font-display text-white font-light leading-none mb-6"
+                  style={{ fontSize: "14vw" }}
+                >
+                  {s.prefix}
+                  {s.suffix === "M" ? "0.0" : "0"}
+                  {s.suffix}
+                </span>
+                <p className="stat-label text-white/60 tracking-[0.25em] uppercase font-sans" style={{ fontSize: "0.75rem" }}>
+                  {s.label}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Section 6: Split Parallax Testimonial ─ */}
+      <section className="testimonial-section relative w-full bg-[hsl(220,15%,6%)] grid grid-cols-2 min-h-screen overflow-hidden">
+        <div className="relative overflow-hidden h-full">
+          <img
+            src={desktopNote}
+            alt="Handwritten note on a desk"
+            className="testimonial-image absolute inset-0 w-full h-[120%] object-cover will-change-transform"
+            loading="lazy"
+          />
+        </div>
+        <div className="flex flex-col justify-center px-12 lg:px-20 py-24">
+          <p className="font-display italic text-white/90 font-light leading-[1.3] mb-10" style={{ fontSize: "2.4vw" }}>
+            <span className="testimonial-line block">"Echelon brought us a</span>
+            <span className="testimonial-line block">Westlake estate before</span>
+            <span className="testimonial-line block">it ever reached the market.</span>
+            <span className="testimonial-line block">We closed in twelve days."</span>
+          </p>
+          <p className="testimonial-attribution text-[hsl(var(--gold))] tracking-[0.25em] uppercase font-sans" style={{ fontSize: "0.7rem" }}>
+            — Private Buyer, Westlake Hills
+          </p>
+        </div>
+      </section>
+
+      {/* ── Section 7: Form ────────────────────── */}
+      <section
+        className="form-section relative w-full py-32 px-8 overflow-hidden"
+        style={{
+          background:
+            "radial-gradient(ellipse at top, hsl(220,18%,12%) 0%, hsl(220,15%,6%) 70%)",
+        }}
+      >
+        <div className="max-w-2xl mx-auto">
+          <div className="form-field text-center mb-12">
+            <p className="text-[hsl(var(--gold))] mb-4 font-bold" style={labelStyle}>
+              REQUEST PRIVATE ACCESS
+            </p>
+            <h2 className="font-display text-4xl md:text-5xl font-light text-white leading-tight">
+              Tell Us What You're Looking For
+            </h2>
+          </div>
+          <div className="form-field border border-white/10 p-10 bg-white/[0.02] backdrop-blur-sm">
+            {formNode}
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default CinematicSections;

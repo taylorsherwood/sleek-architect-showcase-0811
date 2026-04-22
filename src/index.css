@@ -80,7 +80,7 @@ realscout-simple-search {
     --secondary-foreground: 233 47% 9%;
 
     --muted: 38 21% 95%;             /* #F5F3EF — ivory for muted layers */
-    --muted-foreground: 233 47% 9%;  /* #0C0F24 — navy text on light backgrounds */
+    --muted-foreground: 233 20% 30%; /* #3D4257 — readable navy-gray for secondary text */
 
     --accent: 38 21% 95%;            /* #F5F3EF — ivory accent */
     --accent-foreground: 233 47% 9%;

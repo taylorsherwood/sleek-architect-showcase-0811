@@ -1096,7 +1096,7 @@ const HomeBelowFold = () => (
     <Suspense fallback={<div className="h-24" />}>
       <ScrollingCredibilityStrip />
     </Suspense>
-    <div className="h-16 md:h-24 bg-background" aria-hidden="true" />
+    <div className="h-4 md:h-6 bg-background" aria-hidden="true" />
     <AdvisorSection />
     <div className="h-12 md:h-20 bg-secondary" aria-hidden="true" />
     <StatsStrip />

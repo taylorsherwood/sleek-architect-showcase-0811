@@ -70,7 +70,7 @@ const AdvisorSection = () => (
                 style={{ filter: "brightness(0.96) contrast(1.03)" }}
               />
               <div className="absolute inset-4 rounded-sm pointer-events-none" style={{
-                boxShadow: "inset 0 0 60px 20px hsl(var(--background) / 0.15)",
+                boxShadow: "inset 0 0 60px 20px hsl(var(--secondary) / 0.15)",
               }} />
             </div>
 

@@ -263,13 +263,13 @@ const SearchSection = () => {
   }, [isMobile]);
 
   return (
-    <section className="bg-background relative z-20" style={{ overflow: 'visible', padding: "clamp(24px, 4vw, 48px) 0 clamp(32px, 4vw, 48px)" }}>
+    <section className="bg-background relative z-20" style={{ overflow: 'visible', padding: "clamp(20px, 3vw, 32px) 0 clamp(8px, 1.5vw, 16px)" }}>
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center">
-          <p className="text-minimal text-gold mb-4">
+          <p className="text-minimal text-gold mb-3">
             EXPLORE THE MARKET
           </p>
-          <h2 className="font-display text-2xl md:text-[2rem] font-normal text-foreground leading-[1.1] tracking-[0.03em] mb-10">
+          <h2 className="font-display text-2xl md:text-[2rem] font-normal text-foreground leading-[1.1] tracking-[0.03em] mb-6">
             Find Your Next <span className="text-gold italic">Chapter</span>
           </h2>
           {isMobile ? (
@@ -308,7 +308,7 @@ const Index = () => (
 
     <Navigation />
     <Hero />
-    <div className="h-10 md:h-16 bg-background" aria-hidden="true" />
+    <div className="h-4 md:h-6 bg-background" aria-hidden="true" />
     <SearchSection />
 
     <Suspense fallback={<div className="min-h-[400px] bg-background" />}>

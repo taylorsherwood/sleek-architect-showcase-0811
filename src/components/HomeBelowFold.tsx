@@ -1093,8 +1093,6 @@ const NoscriptFallback = () => (
 
 const HomeBelowFold = () => (
   <>
-    <TrustStrip />
-    <div className="h-2 md:h-3 bg-background" aria-hidden="true" />
     <Suspense fallback={<div className="h-24" />}>
       <ScrollingCredibilityStrip />
     </Suspense>

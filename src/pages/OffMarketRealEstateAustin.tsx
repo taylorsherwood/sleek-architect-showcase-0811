@@ -5,6 +5,7 @@ import SchemaMarkup, { createBreadcrumbSchema, createFAQSchema, realEstateAgentS
 import heroImage from "@/assets/hero-luxury-austin.jpg";
 import echelonLogo from "@/assets/echelon-logo-gold.png";
 import { formatPhoneNumber, getTimestamp } from "@/lib/formUtils";
+import CinematicSections from "@/components/off-market/CinematicSections";
 
 const SITE = "https://www.echelonpropertygroup.com";
 
@@ -86,7 +87,7 @@ const OffMarketRealEstateAustin = () => {
   };
 
   const scrollToForm = () => {
-    document.getElementById("lead-form")?.scrollIntoView({ behavior: "smooth" });
+    document.querySelector(".form-section")?.scrollIntoView({ behavior: "smooth" });
   };
 
   const inputClass =
@@ -203,7 +204,7 @@ const OffMarketRealEstateAustin = () => {
       </header>
 
       {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-          HERO — Above-the-fold lead capture
+          HERO — Brand statement (form moved to Section 7)
       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
       <section className="relative min-h-[640px] md:min-h-[720px] lg:h-[820px] xl:h-[860px] 2xl:h-[880px] flex items-center pt-14">
         <div className="absolute inset-0">
@@ -218,309 +219,38 @@ const OffMarketRealEstateAustin = () => {
         </div>
 
         <div className="relative z-10 container mx-auto px-4 sm:px-6 py-12 md:py-24">
-          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start max-w-6xl mx-auto">
-            {/* Left — Copy */}
-            <div className="lg:pt-8">
-              <p className="text-[hsl(var(--gold))] mb-5 font-bold" style={labelStyle}>
-                PRIVATE REAL ESTATE ACCESS
-              </p>
-              <h1 className="font-display text-[1.6rem] sm:text-[2rem] md:text-[2.8rem] lg:text-[3.4rem] font-light text-white leading-[1.12] mb-5 tracking-tight">
-                Access Austin's Private &{" "}
-                <span className="italic">Off-Market</span> Homes
-              </h1>
-              <p className="text-white/70 text-base sm:text-lg md:text-xl font-light leading-relaxed mb-4 max-w-lg">
-                These properties are not available on Zillow, Realtor.com, or the MLS.
-              </p>
-              <p className="text-white/50 text-sm sm:text-base font-light leading-relaxed mb-8 max-w-lg">
-                Many of Austin's most desirable homes never hit the public market. They trade quietly, through trusted relationships, private networks, and off-market channels that most buyers never see.
-              </p>
-              <ul className="space-y-4 mb-10">
-                {[
-                  "Luxury homes sold privately before reaching the open market",
-                  "Investment and value-add opportunities sourced through direct relationships",
-                  "Land and development sites available before public listing",
-                  "Curated matches based on your criteria and investment goals",
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[hsl(var(--gold))] mt-2 shrink-0" />
-                    <span className="text-white/60 text-[0.85rem] sm:text-[0.925rem] font-light leading-relaxed">{item}</span>
-                  </li>
-                ))}
-              </ul>
-              <button
-                onClick={scrollToForm}
-                className="lg:hidden bg-[hsl(var(--gold))] hover:bg-white text-white hover:text-[hsl(var(--gold))] px-8 sm:px-10 py-3 sm:py-4 transition-all duration-300 active:scale-[0.98] tracking-[0.2em] uppercase font-sans font-medium"
-                style={{ fontSize: "0.65rem" }}
-              >
-                REQUEST PRIVATE ACCESS
-              </button>
-            </div>
-
-            {/* Right — Form (above the fold) */}
-            <div id="lead-form" className="border border-white/10 p-5 sm:p-6 md:p-10 bg-white/[0.02]">
-              {!submitted && (
-                <>
-                  <p className="text-[hsl(var(--gold))] mb-3 font-bold" style={labelStyle}>
-                    REQUEST PRIVATE ACCESS
-                  </p>
-                  <h2 className="font-display text-xl md:text-2xl font-light text-white mb-6">
-                    Tell Us What You're Looking For
-                  </h2>
-                </>
-              )}
-              {formContent}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-          EXCLUSIVITY STATEMENT
-      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
-      <section className="py-20 md:py-28 bg-[hsl(220,15%,6%)] border-t border-white/5">
-        <div className="container mx-auto px-6 max-w-3xl text-center">
-          <div
-            className="mx-auto mb-8"
-            style={{ width: "48px", height: "1px", background: "hsl(var(--gold) / 0.4)" }}
-          />
-          <blockquote className="font-display text-xl md:text-2xl lg:text-3xl font-normal text-white/90 leading-relaxed mb-8">
-            "Many of Austin's most desirable homes never hit the public market. They move through private channels, trusted relationships, and curated networks."
-          </blockquote>
-          <p className="text-white/40 text-sm tracking-[0.15em] uppercase">
-            — Echelon Property Group
-          </p>
-        </div>
-      </section>
-
-      {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-          HOW IT WORKS
-      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
-      <section className="py-16 md:py-24 bg-[hsl(220,15%,8%)] border-t border-white/5">
-        <div className="container mx-auto px-6 max-w-4xl">
-          <p className="text-[hsl(var(--gold))] text-center mb-4 font-bold" style={labelStyle}>
-            HOW IT WORKS
-          </p>
-          <h2 className="font-display text-2xl md:text-3xl font-light text-white text-center mb-14">
-            Three Steps to Private Access
-          </h2>
-          <div className="grid md:grid-cols-3 gap-10 md:gap-8">
-            {[
-              { step: "01", title: "Submit Your Criteria", body: "Tell us what you're looking for: property type, budget, timeline, and preferred neighborhoods across Austin." },
-              { step: "02", title: "We Source Opportunities", body: "We tap our private network of sellers, developers, and investors to match you with off-market properties that fit." },
-              { step: "03", title: "Early & Exclusive Access", body: "You see opportunities before they hit the public market, with expert advisory and deal structuring support." },
-            ].map((item) => (
-              <div key={item.step} className="group text-center md:text-left">
-                <span className="text-[hsl(var(--gold))] font-display text-4xl font-light inline-block transition-transform duration-500 ease-out group-hover:scale-125">{item.step}</span>
-                <h3 className="text-white font-medium text-base mt-3 mb-2 transition-colors duration-500 group-hover:text-[hsl(var(--gold))]">{item.title}</h3>
-                <p className="text-white/45 text-sm leading-relaxed">{item.body}</p>
-              </div>
-            ))}
-          </div>
-          <div className="text-center mt-14">
+          <div className="max-w-3xl mx-auto text-center">
+            <p className="text-[hsl(var(--gold))] mb-5 font-bold" style={labelStyle}>
+              PRIVATE REAL ESTATE ACCESS
+            </p>
+            <h1 className="font-display text-[2rem] sm:text-[2.6rem] md:text-[3.4rem] lg:text-[4rem] font-light text-white leading-[1.08] mb-6 tracking-tight">
+              Access Austin's Private &{" "}
+              <span className="italic">Off-Market</span> Homes
+            </h1>
+            <p className="text-white/70 text-base sm:text-lg md:text-xl font-light leading-relaxed mb-4 max-w-xl mx-auto">
+              These properties are not available on Zillow, Realtor.com, or the MLS.
+            </p>
+            <p className="text-white/50 text-sm sm:text-base font-light leading-relaxed mb-10 max-w-xl mx-auto">
+              Many of Austin's most desirable homes never hit the public market. They trade quietly, through trusted relationships and private networks that most buyers never see.
+            </p>
             <button
               onClick={scrollToForm}
-              className="border-2 border-[hsl(var(--gold))]/40 text-[hsl(var(--gold))] hover:bg-[hsl(var(--gold))] hover:text-white hover:border-[hsl(var(--gold))] px-10 py-4 transition-all duration-300 active:scale-[0.98] tracking-[0.2em] uppercase font-sans font-medium"
-              style={{ fontSize: "0.65rem" }}
+              className="bg-[hsl(var(--gold))] hover:bg-white text-white hover:text-[hsl(var(--gold))] px-10 sm:px-12 py-3 sm:py-4 transition-all duration-300 active:scale-[0.98] tracking-[0.2em] uppercase font-sans font-medium"
+              style={{ fontSize: "0.7rem" }}
             >
               REQUEST PRIVATE ACCESS
             </button>
+            <p className="mt-10 text-white/30 text-xs tracking-[0.3em] uppercase font-sans">
+              ↓ Scroll
+            </p>
           </div>
         </div>
       </section>
 
       {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-          WHY OFF-MARKET
+          CINEMATIC SECTIONS 2–7 (with form in Section 7)
       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
-      <section className="py-16 md:py-24 bg-[hsl(220,15%,6%)] border-t border-white/5">
-        <div className="container mx-auto px-6 max-w-4xl">
-          <p className="text-[hsl(var(--gold))] text-center mb-4 font-bold" style={labelStyle}>
-            THE OFF-MARKET ADVANTAGE
-          </p>
-          <h2 className="font-display text-2xl md:text-3xl font-light text-white text-center mb-12">
-            Why Serious Buyers Go Off-Market
-          </h2>
-          <div className="grid sm:grid-cols-2 gap-8 md:gap-10">
-            {[
-              { title: "Less Competition", body: "Fewer buyers know about the opportunity, giving you stronger positioning and more room to negotiate." },
-              { title: "Better Terms", body: "Flexible deal structures, creative financing, and the ability to negotiate beyond standard MLS contracts." },
-              { title: "Hidden Inventory", body: "Access properties that never appear on Zillow, Realtor.com, or the Austin MLS, homes that trade exclusively through private channels discreetly." },
-              { title: "Relationship-Driven Access", body: "The best off-market homes in Austin move through trusted agent networks and direct seller relationships, not search algorithms." },
-            ].map((item) => (
-              <div key={item.title} className="group border-2 border-white/10 p-6 md:p-8 hover:border-[hsl(var(--gold))] hover:scale-[1.03] transition-all duration-500">
-                <h3 className="text-white group-hover:text-[hsl(var(--gold))] font-medium text-base mb-2 transition-colors duration-500">{item.title}</h3>
-                <p className="text-white/45 text-sm leading-relaxed">{item.body}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-          SELLER BRIDGE — for homeowners considering a private sale
-      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
-      <section className="py-14 md:py-20 bg-[hsl(220,15%,8%)] border-t border-white/5">
-        <div className="container mx-auto px-6 max-w-3xl text-center">
-          <p className="text-[hsl(var(--gold))] mb-4 font-bold" style={labelStyle}>
-            FOR HOMEOWNERS
-          </p>
-          <h2 className="font-display text-xl md:text-2xl font-light text-white mb-5 leading-snug">
-            Considering a Private Sale?
-          </h2>
-          <p className="text-white/55 text-sm md:text-base font-light leading-relaxed mb-7 max-w-xl mx-auto">
-            If you're a homeowner considering a private sale, learn more here.
-          </p>
-          <Link
-            to="/sell-private"
-            className="inline-block tracking-[0.2em] uppercase font-sans border-b border-[hsl(var(--gold))]/40 hover:border-[hsl(var(--gold))] pb-1 text-[hsl(var(--gold))] hover:text-white transition-colors"
-            style={{ fontSize: "0.7rem" }}
-          >
-            Explore Private Sale Strategy →
-          </Link>
-        </div>
-      </section>
-
-      {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-          WHAT YOU CAN ACCESS — with internal links
-      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
-      <section className="py-16 md:py-24 bg-[hsl(220,15%,8%)] border-t border-white/5">
-        <div className="container mx-auto px-6 max-w-4xl">
-          <p className="text-[hsl(var(--gold))] text-center mb-4 font-bold" style={labelStyle}>
-            DEAL TYPES
-          </p>
-          <h2 className="font-display text-2xl md:text-3xl font-light text-white text-center mb-12">
-            Off-Market Opportunities Across Austin
-          </h2>
-          <div className="grid sm:grid-cols-2 gap-6">
-            {[
-              {
-                title: "Off-Market Luxury Homes",
-                desc: "Discreet sales in Austin's most sought-after neighborhoods — Westlake Hills, Tarrytown, Barton Creek, Lake Austin, and Rollingwood.",
-                links: [
-                  { to: "/communities/westlake-hills", text: "Westlake Hills" },
-                  { to: "/communities/barton-creek", text: "Barton Creek" },
-                  { to: "/communities/tarrytown", text: "Tarrytown" },
-                  { to: "/communities/lake-austin", text: "Lake Austin" },
-                ],
-              },
-              {
-                title: "Investment Properties",
-                desc: "Value-add residential, small multifamily, and income-producing assets across the Austin metro area.",
-                links: [
-                  { to: "/austin-real-estate-investment", text: "Investment opportunities" },
-                  { to: "/invest", text: "Explore investments" },
-                ],
-              },
-              {
-                title: "Land & Development",
-                desc: "Raw land, infill lots, assemblage plays, and entitled development sites across Central Texas.",
-                links: [
-                  { to: "/land-for-sale-austin", text: "Land for sale" },
-                  { to: "/austin-land-development-opportunities", text: "Development sites" },
-                ],
-              },
-              {
-                title: "Pre-Market Listings",
-                desc: "Properties preparing for market that you can access and negotiate on before public exposure drives up competition.",
-                links: [
-                  { to: "/off-market-real-estate-austin", text: "Off-market luxury homes" },
-                  { to: "/luxury-homes-austin", text: "Luxury homes Austin" },
-                ],
-              },
-            ].map((item) => (
-              <div key={item.title} className="group border-2 border-white/10 p-6 md:p-8 hover:border-[hsl(var(--gold))] hover:scale-[1.03] transition-all duration-500">
-                <h3 className="text-white group-hover:text-[hsl(var(--gold))] font-medium text-base mb-2 transition-colors duration-500">{item.title}</h3>
-                <p className="text-white/45 text-sm leading-relaxed mb-4">{item.desc}</p>
-                <div className="flex flex-wrap gap-x-4 gap-y-1">
-                  {item.links.map((link) => (
-                    <Link key={link.to} to={link.to} className="text-[hsl(var(--gold))] hover:text-white transition-colors text-xs tracking-[0.1em] uppercase">
-                      {link.text} →
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-          WHY ECHELON — Authority section
-      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
-      <section className="py-16 md:py-24 bg-[hsl(220,15%,6%)] border-t border-white/5">
-        <div className="container mx-auto px-6 max-w-3xl text-center">
-          <p className="text-[hsl(var(--gold))] mb-4 font-bold" style={labelStyle}>
-            WHY ECHELON PROPERTY GROUP
-          </p>
-          <h2 className="font-display text-2xl md:text-3xl font-light text-white mb-6">
-            Your Source for Off-Market Real Estate in Austin
-          </h2>
-          <p className="text-white/50 text-base leading-relaxed mb-12 max-w-2xl mx-auto">
-            Echelon Property Group is an Austin-based real estate advisory firm specializing in off-market transactions, luxury homes, and investment properties. We provide discreet, relationship-driven access to opportunities most buyers never see — read more about <Link to="/about-austin-real-estate-advisory" className="text-white/70 underline underline-offset-4 hover:text-[hsl(var(--gold))] transition-colors">our advisory practice in Austin</Link>.
-          </p>
-          <div className="grid sm:grid-cols-3 gap-8">
-            {[
-              { heading: "Local Expertise", body: "Deep market knowledge across Austin's luxury, investment, land, and commercial real estate sectors." },
-              { heading: "Private Networks", body: "Direct relationships with developers, investors, builders, and private sellers throughout Central Texas." },
-              { heading: "Advisory Approach", body: "Strategy-first guidance — we help you find, evaluate, structure, and close with confidence." },
-            ].map((item) => (
-              <div key={item.heading}>
-                <h3 className="text-white font-medium text-sm mb-2">{item.heading}</h3>
-                <p className="text-white/40 text-sm leading-relaxed">{item.body}</p>
-              </div>
-            ))}
-          </div>
-          <div className="mt-10 flex flex-wrap justify-center gap-x-5 gap-y-2">
-            <Link to="/about" className="text-white/30 hover:text-[hsl(var(--gold))] transition-colors duration-500 text-xs tracking-[0.1em] uppercase no-underline relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-px after:bg-[hsl(var(--gold))] after:transition-all after:duration-500 hover:after:w-full">About us</Link>
-            <Link to="/communities" className="text-white/30 hover:text-[hsl(var(--gold))] transition-colors duration-500 text-xs tracking-[0.1em] uppercase no-underline relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-px after:bg-[hsl(var(--gold))] after:transition-all after:duration-500 hover:after:w-full">Austin communities</Link>
-            <Link to="/listings" className="text-white/30 hover:text-[hsl(var(--gold))] transition-colors duration-500 text-xs tracking-[0.1em] uppercase no-underline relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-px after:bg-[hsl(var(--gold))] after:transition-all after:duration-500 hover:after:w-full">Active listings</Link>
-            <Link to="/buy" className="text-white/30 hover:text-[hsl(var(--gold))] transition-colors duration-500 text-xs tracking-[0.1em] uppercase no-underline relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-px after:bg-[hsl(var(--gold))] after:transition-all after:duration-500 hover:after:w-full">Buyer services</Link>
-            <Link to="/blog/private-listings-austin-buyers-actually-want" className="text-white/30 hover:text-[hsl(var(--gold))] transition-colors duration-500 text-xs tracking-[0.1em] uppercase no-underline relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-px after:bg-[hsl(var(--gold))] after:transition-all after:duration-500 hover:after:w-full">Private listings guide</Link>
-          </div>
-        </div>
-      </section>
-
-      {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-          FAQ — Merged from /off-market-real-estate-austin
-      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
-      <section className="py-16 md:py-24 bg-[hsl(220,15%,8%)] border-t border-white/5">
-        <div className="container mx-auto px-6 max-w-4xl">
-          <p className="text-[hsl(var(--gold))] text-center mb-4 font-bold" style={labelStyle}>
-            FREQUENTLY ASKED QUESTIONS
-          </p>
-          <h2 className="font-display text-2xl md:text-3xl font-light text-white text-center mb-12">
-            Off-Market Real Estate in Austin
-          </h2>
-          <div className="space-y-8">
-            {faqs.map((faq, i) => (
-              <div key={i} className="border-b border-white/10 pb-6">
-                <h3 className="text-white font-medium text-base mb-2">{faq.question}</h3>
-                <p className="text-white/45 text-sm leading-relaxed">{faq.answer}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-          FINAL CTA
-      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
-      <section className="py-20 md:py-28 bg-[hsl(220,15%,8%)] border-t border-white/5">
-        <div className="container mx-auto px-6 max-w-lg text-center">
-          <h2 className="font-display text-2xl md:text-3xl font-light text-white mb-4">
-            Ready for Private Access?
-          </h2>
-          <p className="text-white/50 text-sm leading-relaxed mb-8">
-            Submit your criteria and we'll match you with off-market homes, investment properties, and land opportunities across Austin — before they hit the public market.
-          </p>
-          <button
-            onClick={scrollToForm}
-            className="bg-[hsl(var(--gold))] hover:bg-white text-white hover:text-[hsl(var(--gold))] hover:font-bold px-12 py-4 transition-all duration-300 ease-out active:scale-[0.98] hover:shadow-[0_4px_20px_rgba(255,255,255,0.12)] tracking-[0.2em] uppercase font-sans font-medium"
-            style={{ fontSize: "0.65rem" }}
-          >
-            REQUEST PRIVATE ACCESS
-          </button>
-        </div>
-      </section>
+      <CinematicSections formNode={formContent} />
 
       {/* ── Footer (minimal) ────────────────────────── */}
       <footer className="py-8 bg-[hsl(220,15%,5%)] border-t border-white/5">

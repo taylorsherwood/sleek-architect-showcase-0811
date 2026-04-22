@@ -308,7 +308,7 @@ const Index = () => (
 
     <Navigation />
     <Hero />
-    <div className="h-16 md:h-24 bg-background" aria-hidden="true" />
+    <div className="h-16 md:h-24" aria-hidden="true" style={{ background: "#FAFAF8" }} />
     <SearchSection />
     <div className="h-16 md:h-24" aria-hidden="true" style={{ background: "#F5F3EF" }} />
 

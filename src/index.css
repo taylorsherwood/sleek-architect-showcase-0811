@@ -39,11 +39,14 @@ img {
 
 /* ── Constrain embedded widgets (RealScout, EmbedSocial, iframes) ── */
 realscout-your-listings,
-realscout-advanced-search,
-
 iframe {
   max-width: 100% !important;
   overflow: hidden;
+}
+
+realscout-advanced-search {
+  max-width: 100% !important;
+  overflow: visible !important;
 }
 
 realscout-simple-search {

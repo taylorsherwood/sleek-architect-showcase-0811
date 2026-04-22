@@ -32,8 +32,8 @@ const TrustStrip = () => (
   <section className="hidden lg:block bg-background">
     <div className="container mx-auto px-6">
       <div className="max-w-5xl mx-auto text-center">
-        <div className="border-t border-border/15" />
-        <div className="flex items-center justify-center gap-16 pt-12 pb-12 mt-0">
+        
+        <div className="flex items-center justify-center gap-16 pt-6 pb-2 mt-0">
         {["LUXURY REPRESENTATION", "STRATEGIC INVESTMENT ADVISORY", "$125M+ CAREER SALES VOLUME"].map((text, i) => (
             <span key={i} className="text-muted-foreground/65" style={{
               fontFamily: '"Jost", sans-serif', fontWeight: 400, fontSize: "10px", letterSpacing: "0.18em", textTransform: "uppercase"
@@ -1087,7 +1087,7 @@ const NoscriptFallback = () => (
 const HomeBelowFold = () => (
   <>
     <TrustStrip />
-    <div className="h-10 md:h-16 bg-secondary" aria-hidden="true" />
+    <div className="h-2 md:h-3 bg-background" aria-hidden="true" />
     <Suspense fallback={<div className="h-24" />}>
       <ScrollingCredibilityStrip />
     </Suspense>

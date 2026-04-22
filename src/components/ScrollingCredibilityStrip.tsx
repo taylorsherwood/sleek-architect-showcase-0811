@@ -35,9 +35,9 @@ const ScrollingCredibilityStrip = () => {
   const track = [...logos, ...logos];
 
   return (
-    <section className="bg-background pt-10 md:pt-14 pb-12 md:pb-16 overflow-hidden">
+    <section className="bg-background pt-3 md:pt-4 pb-10 md:pb-14 overflow-hidden">
       <p
-        className="text-center mb-6"
+        className="text-center mb-3"
         style={{
           fontFamily: '"Jost", sans-serif',
           fontSize: "10px",

@@ -55,6 +55,79 @@ realscout-simple-search {
   color-scheme: light only;
 }
 
+/* ─────────────────────────────────────────────────────────
+   Section blending — softens seams between alternating
+   warm-white (#FAF9F6) and ivory (#F5F3EF) sections.
+   Pure visual fade; no layout, spacing, or border changes.
+   ───────────────────────────────────────────────────────── */
+section {
+  position: relative;
+}
+
+/* Warm-white sections fade their top/bottom edges toward ivory */
+section.bg-background::before,
+section.bg-background::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 56px;
+  pointer-events: none;
+  z-index: 0;
+}
+section.bg-background::before {
+  top: 0;
+  background: linear-gradient(to bottom, hsl(38 21% 95% / 0.55) 0%, hsl(38 21% 95% / 0) 100%);
+}
+section.bg-background::after {
+  bottom: 0;
+  background: linear-gradient(to top, hsl(38 21% 95% / 0.55) 0%, hsl(38 21% 95% / 0) 100%);
+}
+
+/* Ivory sections fade their top/bottom edges toward warm white */
+section.bg-secondary::before,
+section.bg-secondary::after,
+section.bg-muted::before,
+section.bg-muted::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 56px;
+  pointer-events: none;
+  z-index: 0;
+}
+section.bg-secondary::before,
+section.bg-muted::before {
+  top: 0;
+  background: linear-gradient(to bottom, hsl(40 33% 97% / 0.55) 0%, hsl(40 33% 97% / 0) 100%);
+}
+section.bg-secondary::after,
+section.bg-muted::after {
+  bottom: 0;
+  background: linear-gradient(to top, hsl(40 33% 97% / 0.55) 0%, hsl(40 33% 97% / 0) 100%);
+}
+
+/* Keep section content above the fade layer */
+section.bg-background > *,
+section.bg-secondary > *,
+section.bg-muted > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Never fade hero, navy, or video sections — preserve full contrast */
+section.bg-primary::before,
+section.bg-primary::after,
+section#hero-section::before,
+section#hero-section::after,
+section[class*="bg-black"]::before,
+section[class*="bg-black"]::after,
+section[class*="bg-navy"]::before,
+section[class*="bg-navy"]::after {
+  display: none !important;
+}
+
 @layer base {
   :root {
     /* ── Refined luxury palette — warm ivory system ── */

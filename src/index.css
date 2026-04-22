@@ -81,6 +81,10 @@ realscout-simple-search::part(container) {
 .search-section {
   background: linear-gradient(to bottom, #FAFAF8 0%, #F5F3EF 100%);
 }
+.search-section::before,
+.search-section::after {
+  display: none !important;
+}
 
 /* Credibility logos — always full opacity */
 .credibility-logo-dim {

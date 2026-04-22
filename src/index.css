@@ -64,37 +64,37 @@ realscout-simple-search {
     --gold-deep: 41 30% 40%;         /* #857548 */
     --gold-highlight: 41 35% 68%;    /* #C5B88E */
 
-    --background: 40 25% 95%;        /* #f6f4f0 */
+    --background: 40 33% 97%;        /* #FAF9F6 — warm white (primary) */
     --foreground: 233 47% 9%;           /* #0C0F24 */
 
-    --card: 40 25% 95%;              /* #f6f4f0 */
+    --card: 0 0% 100%;               /* #FFFFFF — clean white cards for contrast */
     --card-foreground: 233 47% 9%;
 
-    --popover: 40 25% 95%;           /* #f6f4f0 */
+    --popover: 0 0% 100%;            /* #FFFFFF */
     --popover-foreground: 233 47% 9%;
 
     --primary: 233 47% 9%;              /* #0C0F24 */
-    --primary-foreground: 40 25% 95%; /* #f6f4f0 */
+    --primary-foreground: 40 33% 97%; /* #FAF9F6 */
 
-    --secondary: 40 25% 95%;         /* #f6f4f0 */
+    --secondary: 38 21% 95%;         /* #F5F3EF — ivory (alternating layer) */
     --secondary-foreground: 233 47% 9%;
 
-    --muted: 30 28% 92%;             /* #F2ECE4 — deeper ivory for contrast layers */
-    --muted-foreground: 25 4% 42%;   /* #6B6864 */
+    --muted: 38 21% 95%;             /* #F5F3EF — ivory for muted layers */
+    --muted-foreground: 233 20% 30%; /* #3D4257 — readable navy-gray for secondary text */
 
-    --accent: 29 30% 90%;            /* #EFE7DC — soft warm contrast */
+    --accent: 38 21% 95%;            /* #F5F3EF — ivory accent */
     --accent-foreground: 233 47% 9%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 30 18% 86%;
-    --input: 40 25% 95%;             /* #f6f4f0 */
+    --input: 0 0% 100%;              /* #FFFFFF — clean white inputs */
     --ring: 233 47% 9%;
 
     --radius: 0.25rem;
 
-    --warm-cream: 40 25% 95%;        /* #f6f4f0 */
+    --warm-cream: 40 33% 97%;        /* #FAF9F6 */
 
     --black-soft: 233 52% 7%;           /* #080B1A */
     --black-card: 233 45% 13%;          /* #12162E */

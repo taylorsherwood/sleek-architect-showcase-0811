@@ -49,6 +49,16 @@ iframe {
 realscout-simple-search {
   max-width: 100% !important;
   overflow: visible !important;
+  --rs-bg: hsl(40 33% 97%) !important;
+  --rs-input-bg: hsl(40 33% 97%) !important;
+  --rs-background-color: hsl(40 33% 97%) !important;
+  background: hsl(40 33% 97%) !important;
+}
+realscout-simple-search::part(input),
+realscout-simple-search::part(search-input),
+realscout-simple-search::part(container) {
+  background: hsl(40 33% 97%) !important;
+  background-color: hsl(40 33% 97%) !important;
 }
 
 :root {

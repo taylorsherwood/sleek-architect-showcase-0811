@@ -45,6 +45,7 @@ const CinematicSections = ({ formNode }: Props) => {
   const isMobile = useIsMobile();
   const rootRef = useRef<HTMLDivElement>(null);
   const lenisRef = useRef<Lenis | null>(null);
+  const droneVideoRef = useRef<HTMLVideoElement>(null);
 
   // Lenis smooth scroll (desktop only)
   useEffect(() => {

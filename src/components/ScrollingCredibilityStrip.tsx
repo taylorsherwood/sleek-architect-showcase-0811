@@ -35,7 +35,7 @@ const ScrollingCredibilityStrip = () => {
   const track = [...logos, ...logos];
 
   return (
-    <section className="bg-background pt-3 md:pt-4 pb-10 md:pb-14 overflow-hidden">
+    <section className="bg-background pt-3 md:pt-4 pb-6 md:pb-8 overflow-hidden">
       <p
         className="text-center mb-3"
         style={{
@@ -45,10 +45,9 @@ const ScrollingCredibilityStrip = () => {
           textTransform: "uppercase",
           fontWeight: 400,
           color: "hsl(var(--muted-foreground) / 0.55)",
-          whiteSpace: "pre-line",
         }}
       >
-        {"\n\n\n\nAS SEEN IN"}
+        AS SEEN IN
       </p>
 
       <div className="relative">

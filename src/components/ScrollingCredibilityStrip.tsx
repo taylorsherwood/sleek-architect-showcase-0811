@@ -45,9 +45,10 @@ const ScrollingCredibilityStrip = () => {
           textTransform: "uppercase",
           fontWeight: 400,
           color: "hsl(var(--muted-foreground) / 0.55)",
+          whiteSpace: "pre-line",
         }}
       >
-        As Seen In
+        {"\n\n\n\nAS SEEN IN"}
       </p>
 
       <div className="relative">

@@ -349,6 +349,46 @@ const CinematicSections = ({ formNode }: Props) => {
           </p>
         </section>
 
+        {/* Section 2.5 (mobile static) — Image Split fallback */}
+        <section className="relative">
+          <img
+            src={westlakeDusk}
+            alt="Private Austin estate"
+            className="w-full h-[50vh] object-cover"
+            loading="lazy"
+          />
+          <div className="px-6 py-12 text-center bg-[hsl(220,15%,8%)]">
+            <p className="text-[hsl(var(--gold))] mb-4 font-bold" style={labelStyle}>
+              02 — THE INVITATION
+            </p>
+            <h2 className="font-display text-3xl text-[hsl(40,30%,92%)]">
+              What happens before it's listed.
+            </h2>
+          </div>
+        </section>
+
+        {/* Section 3 (mobile static) — Drone video fallback (first frame) */}
+        <section className="relative">
+          <video
+            src="/video/hero-scrub.mp4"
+            muted
+            playsInline
+            preload="metadata"
+            className="w-full h-[50vh] object-cover"
+          />
+          <div className="px-6 py-12 text-center bg-[hsl(220,15%,8%)]">
+            <p className="text-[hsl(var(--gold))] mb-4 font-bold" style={labelStyle}>
+              01 — PRIVATE INVENTORY
+            </p>
+            <h2 className="font-display text-3xl text-[hsl(40,30%,92%)] leading-tight mb-4">
+              Austin, from the inside.
+            </h2>
+            <p className="text-white/80 font-sans max-w-md mx-auto">
+              The city you're moving to. The homes no one else will show you.
+            </p>
+          </div>
+        </section>
+
         {/* Section 3 — Image + headline */}
         <section className="relative">
           <img

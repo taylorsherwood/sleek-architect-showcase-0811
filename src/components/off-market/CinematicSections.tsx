@@ -84,24 +84,59 @@ const CinematicSections = ({ formNode }: Props) => {
     if (reduceMotion) return;
 
     const lenis = new Lenis({
-      duration: 1.6,
-      easing: (t) => 1 - Math.pow(1 - t, 4),
+      duration: 2.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       smoothWheel: true,
-      wheelMultiplier: 0.85,
-    });
+      wheelMultiplier: 0.6,
+      touchMultiplier: 1.5,
+      lerp: 0.05,
+      syncTouch: true,
+      syncTouchLerp: 0.075,
+      gestureOrientation: "vertical",
+      normalizeWheel: true,
+    } as ConstructorParameters<typeof Lenis>[0]);
     lenisRef.current = lenis;
     (window as unknown as { __lenis?: Lenis }).__lenis = lenis;
 
+    // Disable native momentum/rubber-band that competes with Lenis on Mac trackpads
+    const prevHtmlOverscroll = document.documentElement.style.overscrollBehavior;
+    const prevBodyOverscroll = document.body.style.overscrollBehavior;
+    document.documentElement.style.overscrollBehavior = "none";
+    document.body.style.overscrollBehavior = "none";
+    const wheelGuard = (e: WheelEvent) => {
+      if (e.ctrlKey) return; // allow pinch-to-zoom
+    };
+    document.addEventListener("wheel", wheelGuard, { passive: true });
+
+    // Velocity-aware dampener — cap extreme trackpad flicks
+    let scrollVelocity = 0;
+    lenis.on("scroll", ({ velocity }: { velocity: number }) => {
+      scrollVelocity = Math.abs(velocity);
+      ScrollTrigger.update();
+    });
+    const lenisOpts = (lenis as unknown as { options: { wheelMultiplier: number } }).options;
+    Object.defineProperty(lenisOpts, "wheelMultiplier", {
+      configurable: true,
+      get() {
+        return scrollVelocity > 50 ? 0.4 : 0.6;
+      },
+    });
+
+    let rafId = 0;
     function raf(time: number) {
       lenis.raf(time);
-      requestAnimationFrame(raf);
+      rafId = requestAnimationFrame(raf);
     }
-    requestAnimationFrame(raf);
+    rafId = requestAnimationFrame(raf);
 
-    lenis.on("scroll", ScrollTrigger.update);
+    gsap.ticker.lagSmoothing(0);
     ScrollTrigger.refresh();
 
     return () => {
+      cancelAnimationFrame(rafId);
+      document.removeEventListener("wheel", wheelGuard);
+      document.documentElement.style.overscrollBehavior = prevHtmlOverscroll;
+      document.body.style.overscrollBehavior = prevBodyOverscroll;
       lenis.destroy();
       lenisRef.current = null;
       delete (window as unknown as { __lenis?: Lenis }).__lenis;

@@ -137,7 +137,7 @@ const CinematicSections = ({ formNode }: Props) => {
         thesisTl.to(w, { opacity: 1, y: 0, ease: "power3.out", duration: 1 });
       });
       // Hold the final state briefly before releasing the pin
-      thesisTl.to({}, { duration: 0.6 });
+      thesisTl.to({}, { duration: 0.3 });
 
       // ── Section 2.5: Image Split Reveal
       // Phase 1 (0 → 0.45): image locks full-screen, subtle settle (slight zoom-out).

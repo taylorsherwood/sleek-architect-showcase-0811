@@ -6,6 +6,7 @@ import heroImage from "@/assets/hero-austin-skyline-sunset.jpg";
 import echelonLogo from "@/assets/echelon-logo-gold.png";
 import { formatPhoneNumber, getTimestamp } from "@/lib/formUtils";
 import CinematicSections from "@/components/off-market/CinematicSections";
+import { Dialog, DialogContent, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 
 const SITE = "https://www.echelonpropertygroup.com";
 
@@ -38,6 +39,7 @@ const OffMarketRealEstateAustin = () => {
   });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
 
   const fireConversion = () => {
     const gtagFn = (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag;
@@ -202,7 +204,7 @@ const OffMarketRealEstateAustin = () => {
             Echelon Property Group
           </Link>
           <button
-            onClick={scrollToForm}
+            onClick={() => setModalOpen(true)}
             className="text-[hsl(var(--gold))]/80 hover:text-white transition-colors tracking-[0.12em] uppercase font-sans" style={{ fontSize: "0.75rem" }}
           >
             Request Access
@@ -263,7 +265,7 @@ const OffMarketRealEstateAustin = () => {
               Many of Austin's most desirable homes never hit the public market. They trade quietly, through trusted relationships and private networks that most buyers never see.
             </p>
             <button
-              onClick={scrollToForm}
+              onClick={() => setModalOpen(true)}
               className="group inline-flex items-center transition-colors duration-300 ease-out"
               style={{
                 fontFamily: '"Jost", sans-serif',
@@ -308,6 +310,27 @@ const OffMarketRealEstateAustin = () => {
           </div>
         </div>
       </footer>
+
+      {/* ── Lightbox: Request Private Access form ── */}
+      <Dialog open={modalOpen} onOpenChange={setModalOpen}>
+        <DialogContent className="max-w-2xl bg-[hsl(220,15%,8%)] border border-white/10 p-8 sm:p-10 max-h-[90vh] overflow-y-auto">
+          <DialogTitle className="sr-only">Request Private Access</DialogTitle>
+          <DialogDescription className="sr-only">
+            Submit your details to receive curated off-market opportunities in Austin.
+          </DialogDescription>
+          {!submitted && (
+            <div className="mb-6">
+              <p className="text-[hsl(var(--gold))] mb-3 font-bold" style={labelStyle}>
+                PRIVATE ACCESS
+              </p>
+              <h2 className="font-display text-2xl sm:text-3xl text-white font-light leading-tight">
+                Request Private Access
+              </h2>
+            </div>
+          )}
+          {formContent}
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };

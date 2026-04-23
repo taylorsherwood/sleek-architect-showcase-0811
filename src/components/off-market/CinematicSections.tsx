@@ -323,18 +323,45 @@ const CinematicSections = ({ formNode }: Props) => {
           "+=0.4"
         );
 
-      // ── Section 7: Form reveal
-      gsap.from(".form-field", {
-        opacity: 0,
-        y: 30,
-        stagger: 0.1,
-        ease: "power3.out",
+      // ── Section 7: Form — elegant cinematic reveal as user scrolls
+      // past the testimonial. Each element rises into place with a soft
+      // blur clearing, finishing with the form panel scaling up.
+      const formEls = gsap.utils.toArray<HTMLElement>(".form-field");
+      gsap.set(formEls, { opacity: 0, y: 60, filter: "blur(12px)" });
+      gsap.set(".form-panel", { opacity: 0, y: 80, scale: 0.96, filter: "blur(14px)" });
+
+      const formTl = gsap.timeline({
         scrollTrigger: {
           trigger: ".form-section",
-          start: "top 70%",
-          toggleActions: "play none none reverse",
+          start: "top 85%",
+          end: "top 30%",
+          scrub: 1.2,
         },
       });
+
+      formTl
+        .to(formEls[0], {
+          opacity: 1,
+          y: 0,
+          filter: "blur(0px)",
+          ease: "power3.out",
+          duration: 0.6,
+        }, 0)
+        .to(formEls[1], {
+          opacity: 1,
+          y: 0,
+          filter: "blur(0px)",
+          ease: "power3.out",
+          duration: 0.6,
+        }, 0.25)
+        .to(".form-panel", {
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          filter: "blur(0px)",
+          ease: "power3.out",
+          duration: 0.9,
+        }, 0.45);
     }, root);
 
     return () => {

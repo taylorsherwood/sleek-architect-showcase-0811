@@ -279,18 +279,14 @@ const CinematicSections = ({ formNode }: Props) => {
 
       // ── Section 5: Counter — REMOVED
 
-      // ── Section 6: Cinematic Side-Reveal Testimonial
+      // ── Section 6: Cinematic Vertical-Split Reveal Testimonial
       // A slow, deliberate luxury reveal:
-      //  Phase 1 (0 → 0.30): the image breathes — a slow Ken Burns drift while
-      //    a soft warm vignette gently lifts.
-      //  Phase 2 (0.30 → 0.85): the right half slides away on a long, eased
-      //    curve; the left image gently parallaxes for depth.
+      //  Phase 1 (0 → 0.32): the image breathes — a slow Ken Burns settle.
+      //  Phase 2 (0.32 → 0.85): both halves part on a long, expo-eased curve.
       //  Phase 3 (0.62 → 1): the testimonial lines clear blur and rise in a
-      //    measured cadence, attribution settles last.
-      gsap.set(".testimonial-split-right", { xPercent: 0 });
-      gsap.set(".testimonial-split-image", { scale: 1.12 });
-      gsap.set(".testimonial-split-image-left", { x: 0 });
-      gsap.set(".testimonial-vignette", { opacity: 0 });
+      //    measured cadence; attribution settles last.
+      gsap.set([".testimonial-split-left", ".testimonial-split-right"], { xPercent: 0 });
+      gsap.set(".testimonial-split-image", { scale: 1.10 });
       gsap.set(".testimonial-line", { opacity: 0, y: 24, filter: "blur(8px)" });
       gsap.set(".testimonial-attribution", { opacity: 0, y: 12, filter: "blur(6px)" });
 
@@ -307,14 +303,11 @@ const CinematicSections = ({ formNode }: Props) => {
       });
 
       testimonialTl
-        // Phase 1 — slow Ken Burns breath + vignette warm-up
-        .to(".testimonial-split-image", { scale: 1.04, ease: "none", duration: 0.30 }, 0)
-        .to(".testimonial-vignette", { opacity: 1, ease: "power1.out", duration: 0.30 }, 0)
-        // Phase 2 — right half drifts away on a long, refined curve;
-        // left image gently nudges for parallax depth.
-        .to(".testimonial-split-right", { xPercent: 100, ease: "expo.inOut", duration: 0.55 }, 0.30)
-        .to(".testimonial-split-image-left", { x: "-3%", ease: "expo.inOut", duration: 0.55 }, 0.30)
-        .to(".testimonial-split-image", { scale: 1, ease: "expo.inOut", duration: 0.55 }, 0.30)
+        // Phase 1 — slow Ken Burns settle
+        .to(".testimonial-split-image", { scale: 1, ease: "power1.out", duration: 0.32 }, 0)
+        // Phase 2 — both halves part on a long, refined curve
+        .to(".testimonial-split-left", { xPercent: -100, ease: "expo.inOut", duration: 0.55 }, 0.32)
+        .to(".testimonial-split-right", { xPercent: 100, ease: "expo.inOut", duration: 0.55 }, 0.32)
         // Phase 3 — testimonial lines clear blur and rise, measured cadence
         .to(".testimonial-line", { opacity: 1, y: 0, filter: "blur(0px)", ease: "power3.out", stagger: 0.18, duration: 0.65 }, 0.62)
         .to(".testimonial-attribution", { opacity: 1, y: 0, filter: "blur(0px)", ease: "power2.out", duration: 0.55 }, 1.0)
@@ -685,11 +678,11 @@ const CinematicSections = ({ formNode }: Props) => {
       {/* ── Section 6: Vertical Split-Reveal Testimonial ─ */}
       <section className="testimonial-section relative w-full h-screen bg-[hsl(220,15%,6%)] overflow-hidden">
         {/* Testimonial sits behind the split image */}
-        <div className="absolute inset-0 z-0 flex items-center justify-end px-8 md:px-16 lg:px-24">
-          <div className="max-w-xl md:w-1/2 md:pl-8">
+        <div className="absolute inset-0 z-0 flex items-center justify-center px-8">
+          <div className="max-w-4xl text-center">
             <p
-              className="font-display italic text-white/90 font-light leading-[1.3] mb-10"
-              style={{ fontSize: "clamp(1.4rem, 2.2vw, 2.1rem)" }}
+              className="font-display italic text-white/90 font-light leading-[1.25] mb-10"
+              style={{ fontSize: "clamp(1.6rem, 2.6vw, 2.6rem)" }}
             >
               <span className="testimonial-line block will-change-transform">"Taylor brought us a Westlake home</span>
               <span className="testimonial-line block will-change-transform">before it ever hit the market.</span>
@@ -704,35 +697,25 @@ const CinematicSections = ({ formNode }: Props) => {
           </div>
         </div>
 
-        {/* Left half of the image — remains; gentle parallax for depth */}
+        {/* Left half — slides off to the LEFT */}
         <div className="testimonial-split-left absolute inset-y-0 left-0 w-1/2 z-10 overflow-hidden will-change-transform">
-          <div className="testimonial-split-image-left absolute inset-0 will-change-transform">
-            <img
-              src={testimonialSplitImg}
-              alt="Lake Austin luxury waterfront estate at golden hour"
-              className="testimonial-split-image absolute inset-y-0 left-0 h-full w-screen max-w-none object-cover will-change-transform"
-              decoding="async"
-            />
-            {/* Warm cinematic vignette — fades in during phase 1 */}
-            <div
-              className="testimonial-vignette absolute inset-0 pointer-events-none"
-              style={{
-                background:
-                  "radial-gradient(ellipse at 30% 50%, transparent 35%, rgba(0,0,0,0.55) 100%)",
-              }}
-            />
-            {/* Feathered inner shadow on the parting edge */}
-            <div
-              className="absolute inset-y-0 right-0 w-24 pointer-events-none"
-              style={{
-                background:
-                  "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.35) 100%)",
-              }}
-            />
-          </div>
+          <img
+            src={testimonialSplitImg}
+            alt="Lake Austin luxury waterfront estate at golden hour"
+            className="testimonial-split-image absolute inset-y-0 left-0 h-full w-screen max-w-none object-cover will-change-transform"
+            decoding="async"
+          />
+          {/* Feathered shadow on parting edge */}
+          <div
+            className="absolute inset-y-0 right-0 w-24 pointer-events-none"
+            style={{
+              background:
+                "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.35) 100%)",
+            }}
+          />
         </div>
 
-        {/* Right half of the image — slides off to the RIGHT */}
+        {/* Right half — slides off to the RIGHT */}
         <div className="testimonial-split-right absolute inset-y-0 right-0 w-1/2 z-10 overflow-hidden will-change-transform">
           <img
             src={testimonialSplitImg}
@@ -741,7 +724,7 @@ const CinematicSections = ({ formNode }: Props) => {
             className="testimonial-split-image absolute inset-y-0 right-0 h-full w-screen max-w-none object-cover will-change-transform"
             decoding="async"
           />
-          {/* Soft trailing shadow on the leading edge as it departs */}
+          {/* Feathered shadow on parting edge */}
           <div
             className="absolute inset-y-0 left-0 w-24 pointer-events-none"
             style={{

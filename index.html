@@ -5,6 +5,17 @@
     <meta name="color-scheme" content="light only" />
     <meta name="supported-color-schemes" content="light only" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function () {
+        try {
+          var isDeepLink = window.location.pathname !== '/';
+          var hasGenericHomeTitle = document.title === 'Echelon Property Group';
+          if (isDeepLink && hasGenericHomeTitle) {
+            document.documentElement.setAttribute('data-route-pending', 'true');
+          }
+        } catch (_) {}
+      })();
+    </script>
     <title>Echelon Property Group</title>
     <meta name="google-site-verification" content="dhXAgewx3oiXuLhNF6giXHxaz8pFcyt_MogbeQKtTfA" />
     <meta name="author" content="Echelon Property Group" />
@@ -39,6 +50,7 @@
       /* Critical base + hero layout (prevents FOUC when main CSS loads async) */
       *,*::before,*::after{box-sizing:border-box}
       html,body{overflow-x:hidden;width:100%;margin:0}
+      html[data-route-pending='true'] #root{visibility:hidden}
       body{font-family:'Jost',sans-serif;font-weight:400;font-size:16px;background:#f6f4f0;color:#0C0F24;-webkit-font-smoothing:antialiased}
       img{max-width:100%;height:auto}
       .font-display{font-family:'Cinzel',serif}

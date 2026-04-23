@@ -55,7 +55,7 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 overflow-visible h-20 md:h-24 lg:h-[6.5rem]" style={{ borderBottom: "1px solid rgba(12, 15, 36, 0.06)", transition: "background 0.4s ease, border-color 0.4s ease", WebkitBackdropFilter: "blur(6px)", backdropFilter: "blur(6px)" }}>
+    <nav className="fixed top-0 left-0 right-0 z-50 overflow-visible h-28 md:h-28 lg:h-[6.5rem]" style={{ borderBottom: "1px solid rgba(12, 15, 36, 0.06)", transition: "background 0.4s ease, border-color 0.4s ease", WebkitBackdropFilter: "blur(6px)", backdropFilter: "blur(6px)" }}>
       <div
         className="absolute inset-0"
         style={{ background: "#FCFBF9" }}
@@ -67,8 +67,8 @@ const Navigation = () => {
             src={logoMobile}
             alt="Echelon Property Group"
             title="Echelon Property Group — Austin Luxury Real Estate"
-            className="block lg:hidden w-auto max-w-[420px] border-0 shrink-0 object-contain"
-            style={{ height: 'auto', maxHeight: '120%' }}
+            className="block lg:hidden w-auto max-w-[560px] border-0 shrink-0 object-contain"
+            style={{ height: 'auto', maxHeight: '160%' }}
             loading="eager"
             decoding="async"
             fetchPriority="high"

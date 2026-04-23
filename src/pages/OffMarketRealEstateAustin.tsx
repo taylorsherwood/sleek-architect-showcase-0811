@@ -243,6 +243,9 @@ const OffMarketRealEstateAustin = () => {
             title="Off-market homes in Austin Texas — private listings not on Zillow or MLS"
             className="w-full h-full object-cover"
             loading="eager"
+            decoding="sync"
+            // @ts-expect-error fetchpriority is a valid HTML attribute
+            fetchpriority="high"
           />
           <div className="absolute inset-0" style={{ backgroundColor: "rgba(12, 15, 36, 0.3)" }} />
           {/* Gradient overlay for text readability */}

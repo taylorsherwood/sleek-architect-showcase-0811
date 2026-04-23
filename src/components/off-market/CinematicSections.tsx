@@ -45,6 +45,7 @@ const CinematicSections = ({ formNode }: Props) => {
   const isMobile = useIsMobile();
   const rootRef = useRef<HTMLDivElement>(null);
   const lenisRef = useRef<Lenis | null>(null);
+  const droneVideoRef = useRef<HTMLVideoElement>(null);
 
   // Lenis smooth scroll (desktop only)
   useEffect(() => {
@@ -99,6 +100,88 @@ const CinematicSections = ({ formNode }: Props) => {
           scrub: 1,
         },
       });
+
+      // ── Section 2.5: Image Split Reveal
+      gsap.to(".split-top-half", {
+        yPercent: -100,
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".split-section",
+          start: "top top",
+          end: "+=200%",
+          pin: true,
+          scrub: 1,
+        },
+      });
+      gsap.to(".split-bottom-half", {
+        yPercent: 100,
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".split-section",
+          start: "top top",
+          end: "+=200%",
+          scrub: 1,
+        },
+      });
+      gsap.fromTo(
+        ".split-text",
+        { opacity: 0, scale: 0.95 },
+        {
+          opacity: 1,
+          scale: 1,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: ".split-section",
+            start: "top top-=120%",
+            end: "top top-=200%",
+            scrub: 1,
+          },
+        }
+      );
+
+      // ── Section 3 (new): Scroll-Scrubbed Drone Video
+      const droneVideo = droneVideoRef.current;
+      if (droneVideo) {
+        const playPromise = droneVideo.play();
+        if (playPromise) playPromise.then(() => droneVideo.pause()).catch(() => {});
+        ScrollTrigger.create({
+          trigger: ".drone-section",
+          start: "top top",
+          end: "+=200%",
+          pin: true,
+          scrub: 0.5,
+          onUpdate: (self) => {
+            if (droneVideo.duration && !isNaN(droneVideo.duration)) {
+              droneVideo.currentTime = droneVideo.duration * self.progress;
+            }
+          },
+        });
+        // Text fade: in 0-15%, hold, out 90-100%
+        gsap.fromTo(
+          ".drone-text",
+          { opacity: 0 },
+          {
+            opacity: 1,
+            ease: "none",
+            scrollTrigger: {
+              trigger: ".drone-section",
+              start: "top top",
+              end: "top top-=30%",
+              scrub: true,
+            },
+          }
+        );
+        gsap.to(".drone-text", {
+          opacity: 0,
+          ease: "none",
+          scrollTrigger: {
+            trigger: ".drone-section",
+            start: "top top-=180%",
+            end: "top top-=200%",
+            scrub: true,
+          },
+        });
+      }
 
       // ── Section 3: Parallax Image Reveal
       gsap.to(".parallax-image", {
@@ -266,6 +349,46 @@ const CinematicSections = ({ formNode }: Props) => {
           </p>
         </section>
 
+        {/* Section 2.5 (mobile static) — Image Split fallback */}
+        <section className="relative">
+          <img
+            src={westlakeDusk}
+            alt="Private Austin estate"
+            className="w-full h-[50vh] object-cover"
+            loading="lazy"
+          />
+          <div className="px-6 py-12 text-center bg-[hsl(220,15%,8%)]">
+            <p className="text-[hsl(var(--gold))] mb-4 font-bold" style={labelStyle}>
+              02 — THE INVITATION
+            </p>
+            <h2 className="font-display text-3xl text-[hsl(40,30%,92%)]">
+              What happens before it's listed.
+            </h2>
+          </div>
+        </section>
+
+        {/* Section 3 (mobile static) — Drone video fallback (first frame) */}
+        <section className="relative">
+          <video
+            src="/video/hero-scrub.mp4"
+            muted
+            playsInline
+            preload="metadata"
+            className="w-full h-[50vh] object-cover"
+          />
+          <div className="px-6 py-12 text-center bg-[hsl(220,15%,8%)]">
+            <p className="text-[hsl(var(--gold))] mb-4 font-bold" style={labelStyle}>
+              01 — PRIVATE INVENTORY
+            </p>
+            <h2 className="font-display text-3xl text-[hsl(40,30%,92%)] leading-tight mb-4">
+              Austin, from the inside.
+            </h2>
+            <p className="text-white/80 font-sans max-w-md mx-auto">
+              The city you're moving to. The homes no one else will show you.
+            </p>
+          </div>
+        </section>
+
         {/* Section 3 — Image + headline */}
         <section className="relative">
           <img
@@ -358,6 +481,88 @@ const CinematicSections = ({ formNode }: Props) => {
             </span>
           ))}
         </h2>
+      </section>
+
+      {/* ── Section 2.5: Image Split Reveal ────── */}
+      <section className="split-section relative h-screen w-full overflow-hidden bg-[hsl(220,15%,8%)]">
+        {/* Pinned text behind */}
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-8 z-0">
+          <div className="split-text will-change-transform">
+            <p className="text-[hsl(var(--gold))] mb-6 font-bold" style={labelStyle}>
+              02 — THE INVITATION
+            </p>
+            <h2
+              className="font-display text-[hsl(40,30%,92%)] font-light leading-[1.05] max-w-[90vw]"
+              style={{ fontSize: "6vw" }}
+            >
+              What happens before it's listed.
+            </h2>
+          </div>
+        </div>
+        {/* Top half */}
+        <div
+          className="split-top-half absolute inset-0 z-10 will-change-transform"
+          style={{ clipPath: "inset(0 0 50% 0)" }}
+        >
+          <img
+            src={westlakeDusk}
+            alt=""
+            aria-hidden="true"
+            className="w-full h-full object-cover"
+            loading="lazy"
+          />
+        </div>
+        {/* Bottom half */}
+        <div
+          className="split-bottom-half absolute inset-0 z-10 will-change-transform"
+          style={{ clipPath: "inset(50% 0 0 0)" }}
+        >
+          <img
+            src={westlakeDusk}
+            alt=""
+            aria-hidden="true"
+            className="w-full h-full object-cover"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      {/* ── Section 3 (new): Scroll-Scrubbed Drone Video ── */}
+      <section className="drone-section relative h-screen w-full overflow-hidden bg-[hsl(220,15%,8%)]">
+        <video
+          ref={droneVideoRef}
+          src="/video/hero-scrub.mp4"
+          muted
+          playsInline
+          preload="auto"
+          className="absolute inset-0 w-full h-full object-cover will-change-transform"
+        />
+        {/* Legibility radial gradient */}
+        <div
+          className="absolute inset-0 z-10 pointer-events-none"
+          style={{
+            background:
+              "radial-gradient(ellipse at center, transparent 0%, rgba(12,15,36,0.4) 70%, rgba(12,15,36,0.7) 100%)",
+          }}
+        />
+        {/* Overlay text */}
+        <div className="drone-text absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-8 will-change-[opacity]">
+          <p className="text-[hsl(var(--gold))] mb-6 font-bold" style={labelStyle}>
+            01 — PRIVATE INVENTORY
+          </p>
+          <h2
+            className="font-display text-[hsl(40,30%,92%)] font-light leading-[1.05] mb-6 max-w-[90vw]"
+            style={{ fontSize: "7vw" }}
+          >
+            Austin, from the inside.
+          </h2>
+          <p
+            className="text-white/80 font-sans"
+            style={{ fontSize: "1.2rem", maxWidth: "500px" }}
+          >
+            The city you're moving to. The homes no one else will show you.
+          </p>
+        </div>
       </section>
 
       {/* ── Section 3: Parallax Image Reveal ───── */}

@@ -543,10 +543,10 @@ const TestimonialsSection = () => {
           scrub: 2,
           anticipatePin: 1,
           onUpdate: (self) => {
-            if (self.progress > 0.62 && !hasOpenedRef.current) {
+            if (self.progress >= 0.66 && !hasOpenedRef.current) {
               hasOpenedRef.current = true;
               setRevealed(true);
-            } else if (self.progress < 0.2 && hasOpenedRef.current) {
+            } else if (self.progress < 0.62 && hasOpenedRef.current) {
               hasOpenedRef.current = false;
               setRevealed(false);
             }

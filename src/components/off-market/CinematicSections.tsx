@@ -335,10 +335,10 @@ const CinematicSections = ({ formNode }: Props) => {
         scrollTrigger: {
           trigger: ".testimonial-section",
           start: "top top",
-          end: "+=240%",
+          end: "+=160%",
           pin: true,
           pinSpacing: true,
-          scrub: 1.4,
+          scrub: 1.0,
           anticipatePin: 1,
         },
       });

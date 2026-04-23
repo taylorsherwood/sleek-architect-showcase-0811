@@ -570,58 +570,51 @@ const TestimonialsSection = () => {
 
   return (
     <>
-      {/* DESKTOP / iPAD — Cinematic side-reveal testimonial */}
+      {/* DESKTOP / iPAD — same split-cover structure as off-market, on light background */}
       <section
         ref={splitRef}
         className="tsplit-section hidden md:block relative w-full h-screen bg-secondary overflow-hidden"
         aria-label="Client experiences"
       >
-        {/* Two halves below already form a complete full-width image — no separate base layer needed */}
-
-        {/* Testimonial sits behind on the right side, revealed when the right half slides away */}
         <div className="absolute inset-0 z-0 flex items-center justify-end px-8 md:px-16 lg:px-24">
           <div className="max-w-xl md:w-1/2 md:pl-8">
-            <p className="text-minimal text-gold mb-6 tsplit-attribution will-change-transform">
-              CLIENT EXPERIENCES
+            <p
+              className="tsplit-attribution text-gold mb-6 font-sans uppercase will-change-transform"
+              style={{ fontSize: "0.72rem", letterSpacing: "0.28em" }}
+            >
+              Client Experiences
             </p>
-            <div className="relative" style={{ minHeight: "300px" }}>
+            <div className="relative min-h-[320px]">
               <p
                 key={`quote-${active}`}
-                className="font-display italic text-foreground/90 font-light leading-[1.35] mb-10"
-                style={{ fontSize: "clamp(1.25rem, 1.9vw, 1.85rem)" }}
+                className="font-display italic text-foreground/90 font-light leading-[1.3] mb-10"
+                style={{ fontSize: "clamp(1.4rem, 2.2vw, 2.1rem)" }}
               >
                 <span
                   className="tsplit-line block will-change-transform"
                   style={{ animation: revealed ? "fadeUp 0.7s ease both" : undefined }}
                 >
-                  <span style={{ color: "hsl(38 39% 61%)", marginRight: "0.1em" }}>&ldquo;</span>
-                  {t.quote}
-                  <span style={{ color: "hsl(38 39% 61%)", marginLeft: "0.1em" }}>&rdquo;</span>
+                  &ldquo;{t.quote}&rdquo;
                 </span>
               </p>
               <p
                 key={`name-${active}`}
-                className="tsplit-attribution will-change-transform"
+                className="tsplit-attribution text-gold uppercase font-sans will-change-transform"
                 style={{
-                  fontFamily: '"Jost", sans-serif',
-                  fontSize: "12px",
+                  fontSize: "0.72rem",
                   letterSpacing: "0.28em",
-                  textTransform: "uppercase",
-                  color: "hsl(38 39% 61%)",
                   animation: revealed ? "fadeUp 0.7s ease 0.15s both" : undefined,
                 }}
               >
-                — {t.name}
+                {t.name}
               </p>
               <p
                 key={`ctx-${active}`}
+                className="tsplit-attribution text-muted-foreground uppercase font-sans will-change-transform"
                 style={{
-                  fontFamily: '"Jost", sans-serif',
-                  fontSize: "11px",
+                  fontSize: "0.7rem",
                   letterSpacing: "0.18em",
-                  textTransform: "uppercase",
-                  color: "hsl(var(--muted-foreground))",
-                  marginTop: "6px",
+                  marginTop: "0.55rem",
                   animation: revealed ? "fadeUp 0.7s ease 0.25s both" : undefined,
                 }}
               >
@@ -648,7 +641,6 @@ const TestimonialsSection = () => {
           </div>
         </div>
 
-        {/* Left half — remains in place after the split */}
         <div className="tsplit-left absolute inset-y-0 left-0 w-1/2 z-10 overflow-hidden will-change-transform">
           <img
             src={lakeAustinTestimonialImg}
@@ -658,7 +650,6 @@ const TestimonialsSection = () => {
           />
         </div>
 
-        {/* Right half — slides off to the right */}
         <div className="tsplit-right absolute inset-y-0 right-0 w-1/2 z-10 overflow-hidden will-change-transform">
           <img
             src={lakeAustinTestimonialImg}

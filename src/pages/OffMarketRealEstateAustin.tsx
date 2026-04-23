@@ -87,7 +87,14 @@ const OffMarketRealEstateAustin = () => {
   };
 
   const scrollToForm = () => {
-    document.querySelector(".form-section")?.scrollIntoView({ behavior: "smooth" });
+    const target = document.getElementById("section-7-form");
+    if (!target) return;
+    const lenis = (window as unknown as { __lenis?: { scrollTo: (t: Element, o?: { duration?: number }) => void } }).__lenis;
+    if (lenis && typeof lenis.scrollTo === "function") {
+      lenis.scrollTo(target, { duration: 1.5 });
+    } else {
+      target.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   const inputClass =

@@ -5,6 +5,7 @@ import Lenis from "lenis";
 import { useIsMobile } from "@/hooks/use-mobile";
 
 import westlakeDusk from "@/assets/community-westlake-hills-hero.webp";
+import privateInventoryHero from "@/assets/hero-luxury-austin.jpg";
 import card78746 from "@/assets/barton-creek-estate-new.jpg";
 import cardTarrytown from "@/assets/community-tarrytown.jpg";
 import cardOldEnfield from "@/assets/pemberton-heights.avif";
@@ -364,7 +365,7 @@ const CinematicSections = ({ formNode }: Props) => {
         {/* Section 2.5 (mobile static) — Image Split fallback */}
         <section className="relative">
           <img
-            src={westlakeDusk}
+            src={privateInventoryHero}
             alt="Private Austin estate"
             className="w-full h-[50vh] object-cover"
             loading="lazy"
@@ -415,7 +416,7 @@ const CinematicSections = ({ formNode }: Props) => {
         {/* Section 3 — Image + headline */}
         <section className="relative">
           <img
-            src={westlakeDusk}
+            src={privateInventoryHero}
             alt="Westlake estate at dusk"
             className="w-full h-[60vh] object-cover"
             loading="lazy"
@@ -614,7 +615,7 @@ const CinematicSections = ({ formNode }: Props) => {
           style={{ top: "-20%", height: "140%" }}
         >
           <img
-            src={westlakeDusk}
+            src={privateInventoryHero}
             alt="Westlake estate at dusk — private Austin luxury home"
             className="parallax-image w-full h-full object-cover will-change-transform"
           />

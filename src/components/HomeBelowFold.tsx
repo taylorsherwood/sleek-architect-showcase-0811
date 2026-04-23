@@ -582,7 +582,7 @@ const TestimonialsSection = () => {
           <div className="max-w-xl md:w-1/2 md:pl-8">
             <p
               className="tsplit-attribution text-gold mb-6 font-sans uppercase will-change-transform"
-              style={{ fontSize: "0.72rem", letterSpacing: "0.28em" }}
+              style={{ fontSize: "0.72rem", letterSpacing: "0.28em", paddingLeft: "0.9ch" }}
             >
               Client Experiences
             </p>
@@ -605,6 +605,7 @@ const TestimonialsSection = () => {
                 style={{
                   fontSize: "0.72rem",
                   letterSpacing: "0.28em",
+                  paddingLeft: "0.9ch",
                   animation: revealed ? "fadeUp 0.7s ease 0.15s both" : undefined,
                 }}
               >
@@ -617,6 +618,7 @@ const TestimonialsSection = () => {
                   fontSize: "0.7rem",
                   letterSpacing: "0.18em",
                   marginTop: "0.55rem",
+                  paddingLeft: "0.9ch",
                   animation: revealed ? "fadeUp 0.7s ease 0.25s both" : undefined,
                 }}
               >
@@ -624,7 +626,7 @@ const TestimonialsSection = () => {
               </p>
 
               {revealed && (
-                <div className="flex items-center gap-2.5 mt-10">
+                <div className="flex items-center gap-2.5 mt-10" style={{ paddingLeft: "0.9ch" }}>
                   {testimonials.map((_, i) => (
                     <button
                       key={i}

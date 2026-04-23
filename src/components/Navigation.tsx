@@ -203,11 +203,11 @@ const Navigation = () => {
         </Button>
       </div>
 
-      {/* Mobile menu — full-screen dark overlay */}
+      {/* Mobile menu — Safari-safe overlay panel */}
       {isMenuOpen && (
         <div
-          className="lg:hidden fixed inset-0 z-40 overflow-y-auto"
-          style={{ backgroundColor: "#0C0F24", top: "7rem" }}
+          className="lg:hidden absolute left-0 right-0 top-full z-40 overflow-y-auto"
+          style={{ backgroundColor: "#0C0F24", minHeight: "calc(100vh - 7rem)", WebkitOverflowScrolling: "touch" }}
         >
           <div className="container mx-auto px-6 py-12 space-y-7">
             {links.map((link) =>

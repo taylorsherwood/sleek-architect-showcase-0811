@@ -11,8 +11,8 @@ const FeaturedCommunities = lazy(() => import("@/components/FeaturedCommunities"
 import taylorBoatImg from "@/assets/taylor-headshot.webp";
 import taylorAboutHeadshot from "@/assets/taylor-about-headshot.jpeg";
 import taylorSignature from "@/assets/taylor-signature.webp";
-import echelonWatermark from "@/assets/echelon-watermark.webp";
 import echelonWatermarkLogo from "@/assets/echelon-watermark-logo.png";
+import lakeAustinTestimonialImg from "@/assets/lake-austin-luxury-testimonials.webp";
 
 // Blog images use lazy-friendly static paths (not eager imports) to avoid
 // pulling ~836 KB into the initial HomeBelowFold chunk. These are only
@@ -489,125 +489,159 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   const [active, setActive] = useState(0);
-  const sectionRef = useRef<HTMLElement>(null);
-  const watermarkRef = useRef<HTMLDivElement>(null);
 
+  // Mobile-only auto-rotation for the centered single-quote layout
   useEffect(() => {
+    if (typeof window === "undefined") return;
+    const isDesktop = window.matchMedia("(min-width: 768px)").matches;
+    if (isDesktop) return;
     const timer = setInterval(() => setActive((p) => (p + 1) % testimonials.length), 5500);
     return () => clearInterval(timer);
-  }, []);
-
-  // Parallax watermark — disabled on mobile to avoid forced reflow
-  useEffect(() => {
-    if (window.matchMedia("(max-width: 767px)").matches) return;
-
-    let ticking = false;
-    let cachedVh = 0;
-
-    const updateParallax = () => {
-      if (!sectionRef.current || !watermarkRef.current) return;
-      if (!cachedVh) cachedVh = window.innerHeight;
-      const rect = sectionRef.current.getBoundingClientRect();
-      const progress = 1 - (rect.bottom / (cachedVh + rect.height));
-      const clamped = Math.max(0, Math.min(1, progress));
-      const y = (clamped - 0.5) * 18;
-      const x = (clamped - 0.5) * -6;
-      watermarkRef.current.style.transform = `translate(${x}px, ${y}px)`;
-    };
-
-    const onScroll = () => {
-      if (ticking) return;
-      ticking = true;
-      requestAnimationFrame(() => {
-        updateParallax();
-        ticking = false;
-      });
-    };
-
-    const onResize = () => { cachedVh = window.innerHeight; };
-
-    window.addEventListener("scroll", onScroll, { passive: true });
-    window.addEventListener("resize", onResize, { passive: true });
-
-    const rafId = requestAnimationFrame(() => {
-      cachedVh = window.innerHeight;
-      requestAnimationFrame(updateParallax);
-    });
-
-    return () => {
-      cancelAnimationFrame(rafId);
-      window.removeEventListener("scroll", onScroll);
-      window.removeEventListener("resize", onResize);
-    };
   }, []);
 
   const t = testimonials[active];
 
   return (
-    <section ref={sectionRef} className="bg-secondary relative overflow-hidden" style={{ padding: "clamp(48px, 7vw, 90px) 0" }}>
-      <div ref={watermarkRef} className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden" aria-hidden="true"
-        style={{ transition: "transform 0.15s linear" }}>
-        <div style={{
-          width: "600px",
-          maxWidth: "90vw",
-          aspectRatio: "1 / 1",
-          maskImage: "radial-gradient(ellipse 60% 60% at center, black 0%, black 40%, transparent 85%)",
-          WebkitMaskImage: "radial-gradient(ellipse 60% 60% at center, black 0%, black 40%, transparent 85%)",
-        }}>
-          <img src={echelonWatermark} alt="" className="w-full object-contain"
-            loading="lazy" decoding="async"
-            style={{ width: "100%", height: "100%", opacity: 0.09, filter: "blur(0.8px) saturate(0.85) brightness(1.02)" }} />
-        </div>
-      </div>
+    <section className="bg-secondary relative overflow-hidden" style={{ padding: "clamp(48px, 7vw, 90px) 0" }}>
       <div className="container mx-auto px-6 relative z-10">
-        <div className="max-w-[800px] mx-auto text-center relative" style={{ minHeight: "320px" }}>
+        {/* Section header */}
+        <div className="max-w-[900px] mx-auto text-center mb-10 md:mb-14">
           <ScrollReveal>
             <p className="text-minimal text-gold mb-4">CLIENT EXPERIENCES</p>
-            <h2 className="font-display text-2xl md:text-[2.2rem] font-normal text-foreground leading-[1.15] tracking-[0.02em] mb-8">
+            <h2 className="font-display text-2xl md:text-[2.2rem] font-normal text-foreground leading-[1.15] tracking-[0.02em]">
               clients first. <span className="italic">Proven Results.</span>
             </h2>
           </ScrollReveal>
+        </div>
 
-          <div style={{ minHeight: "160px", display: "flex", alignItems: "center", justifyContent: "center" }}>
-            <p key={active} className="mb-6" style={{
-              fontFamily: '"Jost", sans-serif', fontWeight: 300,
-              fontSize: "clamp(15px, 1.8vw, 20px)", lineHeight: 1.85, letterSpacing: "0.01em",
-              color: "hsl(var(--foreground) / 0.8)",
-              animation: "fadeUp 0.6s ease both",
+        {/* MOBILE: centered single rotating quote */}
+        <div className="md:hidden">
+          <div className="max-w-[800px] mx-auto text-center relative" style={{ minHeight: "320px" }}>
+            <div style={{ minHeight: "160px", display: "flex", alignItems: "center", justifyContent: "center" }}>
+              <p key={active} className="mb-6" style={{
+                fontFamily: '"Jost", sans-serif', fontWeight: 300,
+                fontSize: "clamp(15px, 1.8vw, 20px)", lineHeight: 1.85, letterSpacing: "0.01em",
+                color: "hsl(var(--foreground) / 0.8)",
+                animation: "fadeUp 0.6s ease both",
+              }}>
+                <span style={{ color: "hsl(38 39% 61%)", marginRight: "0.15em" }}>&ldquo;</span>
+                {t.quote}
+                <span style={{ color: "hsl(38 39% 61%)", marginLeft: "0.15em" }}>&rdquo;</span>
+              </p>
+            </div>
+
+            <p key={`name-${active}`} style={{
+              fontFamily: '"Jost", sans-serif', fontSize: "13px", letterSpacing: "0.18em",
+              textTransform: "uppercase", color: "hsl(38 39% 61%)", marginTop: "24px",
+              animation: "fadeUp 0.6s ease 0.15s both",
             }}>
-              <span style={{ color: "hsl(38 39% 61%)", marginRight: "0.15em" }}>&ldquo;</span>
-              {t.quote}
-              <span style={{ color: "hsl(38 39% 61%)", marginLeft: "0.15em" }}>&rdquo;</span>
+              {t.name}
             </p>
+            <p key={`ctx-${active}`} style={{
+              fontFamily: '"Jost", sans-serif', fontSize: "12px", letterSpacing: "0.12em",
+              textTransform: "uppercase", color: "hsl(var(--muted-foreground))", marginTop: "6px",
+              animation: "fadeUp 0.6s ease 0.25s both",
+            }}>
+              {t.context}
+            </p>
+
+            <div className="flex items-center justify-center gap-3 mt-10">
+              {testimonials.map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => setActive(i)}
+                  className="w-2.5 h-2.5 rounded-full transition-all duration-300 cursor-pointer"
+                  style={{
+                    background: i === active ? "hsl(38 39% 61%)" : "hsl(var(--border))",
+                    transform: i === active ? "scale(1.2)" : "scale(1)",
+                  }}
+                  aria-label={`View testimonial ${i + 1}`}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* DESKTOP / iPAD: vertical split — sticky image on left, scrolling testimonials on right */}
+        <div className="hidden md:grid md:grid-cols-2 md:gap-10 lg:gap-14 max-w-[1320px] mx-auto items-start">
+          {/* Left column — sticky image */}
+          <div className="relative">
+            <div className="sticky top-24 overflow-hidden" style={{ aspectRatio: "4 / 5" }}>
+              <img
+                src={lakeAustinTestimonialImg}
+                alt="Lake Austin luxury waterfront estate at golden hour"
+                className="absolute inset-0 w-full h-full object-cover"
+                loading="lazy"
+                decoding="async"
+              />
+              <div
+                className="absolute inset-0 pointer-events-none"
+                style={{
+                  background:
+                    "linear-gradient(180deg, rgba(10,14,25,0.0) 60%, rgba(10,14,25,0.35) 100%)",
+                }}
+              />
+              <div className="absolute bottom-6 left-6 right-6">
+                <p
+                  className="font-sans"
+                  style={{
+                    fontSize: "10px",
+                    letterSpacing: "0.28em",
+                    textTransform: "uppercase",
+                    color: "rgba(255,255,255,0.85)",
+                  }}
+                >
+                  AUSTIN · TRUSTED REPRESENTATION
+                </p>
+              </div>
+            </div>
           </div>
 
-          <p key={`name-${active}`} style={{
-            fontFamily: '"Jost", sans-serif', fontSize: "13px", letterSpacing: "0.18em",
-            textTransform: "uppercase", color: "hsl(38 39% 61%)", marginTop: "24px",
-            animation: "fadeUp 0.6s ease 0.15s both",
-          }}>
-            {t.name}
-          </p>
-          <p key={`ctx-${active}`} style={{
-            fontFamily: '"Jost", sans-serif', fontSize: "12px", letterSpacing: "0.12em",
-            textTransform: "uppercase", color: "hsl(var(--muted-foreground))", marginTop: "6px",
-            animation: "fadeUp 0.6s ease 0.25s both",
-          }}>
-            {t.context}
-          </p>
-
-          <div className="flex items-center justify-center gap-3 mt-10">
-            {testimonials.map((_, i) => (
-              <button
-                key={i}
-                onClick={() => setActive(i)}
-                className="w-2.5 h-2.5 rounded-full transition-all duration-300 cursor-pointer"
-                style={{
-                  background: i === active ? "hsl(38 39% 61%)" : "hsl(var(--border))",
-                  transform: i === active ? "scale(1.2)" : "scale(1)",
-                }}
-                aria-label={`View testimonial ${i + 1}`}
-              />
+          {/* Right column — scrolling testimonials */}
+          <div className="flex flex-col gap-5 lg:gap-6">
+            {testimonials.map((item, i) => (
+              <ScrollReveal key={i} delay={i * 40}>
+                <article
+                  className="relative px-7 pt-6 pb-7 md:px-8 md:pt-7 md:pb-8 transition-shadow duration-500 hover:shadow-[0_12px_36px_rgba(0,0,0,0.07)]"
+                  style={{
+                    background: "#FFFFFF",
+                    border: "1px solid rgba(0,0,0,0.06)",
+                    boxShadow: "0 10px 30px rgba(0,0,0,0.05)",
+                  }}
+                >
+                  <p
+                    className="text-foreground/[0.88] italic font-light"
+                    style={{
+                      fontFamily: '"Jost", sans-serif',
+                      fontSize: "clamp(14.5px, 1.05vw, 16px)",
+                      lineHeight: 1.8,
+                      marginBottom: "1.25rem",
+                    }}
+                  >
+                    <span style={{ color: "hsl(38 39% 61%)", marginRight: "0.15em" }}>&ldquo;</span>
+                    {item.quote}
+                    <span style={{ color: "hsl(38 39% 61%)", marginLeft: "0.15em" }}>&rdquo;</span>
+                  </p>
+                  <p
+                    className="font-display text-foreground tracking-tight"
+                    style={{ fontSize: "0.95rem" }}
+                  >
+                    {item.name}
+                  </p>
+                  <p
+                    style={{
+                      fontFamily: '"Jost", sans-serif',
+                      fontSize: "11px",
+                      letterSpacing: "0.18em",
+                      textTransform: "uppercase",
+                      color: "hsl(38 39% 61%)",
+                      marginTop: "6px",
+                    }}
+                  >
+                    {item.context}
+                  </p>
+                </article>
+              </ScrollReveal>
             ))}
           </div>
         </div>

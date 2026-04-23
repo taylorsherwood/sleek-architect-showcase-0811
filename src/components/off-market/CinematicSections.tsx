@@ -127,7 +127,7 @@ const CinematicSections = ({ formNode }: Props) => {
           trigger: ".thesis-section",
           start: "top top",
           // Allocate scroll distance per word so the reveal fills the pin
-          end: () => `+=${Math.max(words.length * 180, 1200)}`,
+          end: () => `+=${Math.max(words.length * 110, 800)}`,
           pin: true,
           scrub: 1,
           anticipatePin: 1,

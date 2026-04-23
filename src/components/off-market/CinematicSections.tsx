@@ -349,17 +349,30 @@ const CinematicSections = ({ formNode }: Props) => {
           </div>
         </section>
 
-        {/* Section 3 (mobile static) — Drone video fallback (first frame) */}
+        {/* Section 3 (mobile) — Autoplay drone video */}
         <section className="relative">
-          <video
-            src="/video/hero-scrub.mp4"
-            muted
-            playsInline
-            preload="metadata"
-            className="w-full h-[50vh] object-cover"
-          />
+          <div className="relative w-full h-[60vh] overflow-hidden">
+            <video
+              autoPlay
+              muted
+              playsInline
+              loop
+              preload="auto"
+              className="hero-video absolute inset-0 w-full h-full object-cover"
+            >
+              <source src="/video/hero-scrub.webm" type="video/webm" />
+              <source src="/video/hero-scrub.mp4" type="video/mp4" />
+            </video>
+            <div
+              className="absolute inset-0 pointer-events-none"
+              style={{
+                background:
+                  "radial-gradient(ellipse at center, transparent 0%, rgba(12,15,36,0.4) 70%, rgba(12,15,36,0.7) 100%)",
+              }}
+            />
+          </div>
           <div className="px-6 py-12 text-center bg-[hsl(220,15%,8%)]">
-            <p className="text-[hsl(var(--gold))] mb-4 font-bold" style={labelStyle}>
+            <p className="mb-4 font-bold" style={{ ...labelStyle, color: "#BAA26A" }}>
               01 — PRIVATE INVENTORY
             </p>
             <h2 className="font-display text-3xl text-[hsl(40,30%,92%)] leading-tight mb-4">

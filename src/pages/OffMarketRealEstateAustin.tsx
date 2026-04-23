@@ -87,7 +87,14 @@ const OffMarketRealEstateAustin = () => {
   };
 
   const scrollToForm = () => {
-    document.querySelector(".form-section")?.scrollIntoView({ behavior: "smooth" });
+    const target = document.getElementById("section-7-form");
+    if (!target) return;
+    const lenis = (window as unknown as { __lenis?: { scrollTo: (t: Element, o?: { duration?: number }) => void } }).__lenis;
+    if (lenis && typeof lenis.scrollTo === "function") {
+      lenis.scrollTo(target, { duration: 1.5 });
+    } else {
+      target.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   const inputClass =
@@ -212,37 +219,60 @@ const OffMarketRealEstateAustin = () => {
             src={heroImage}
             alt="Luxury Austin estate representing exclusive off-market real estate opportunities"
             title="Off-market homes in Austin Texas — private listings not on Zillow or MLS"
-            className="w-full h-full object-cover opacity-20"
+            className="w-full h-full object-cover"
             loading="eager"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-[hsl(220,15%,8%)]/30 to-[hsl(220,15%,8%)]" />
+          <div className="absolute inset-0" style={{ backgroundColor: "rgba(12, 15, 36, 0.3)" }} />
         </div>
 
-        <div className="relative z-10 container mx-auto px-4 sm:px-6 py-12 md:py-24">
-          <div className="max-w-3xl mx-auto text-center">
-            <p className="text-[hsl(var(--gold))] mb-5 font-bold" style={labelStyle}>
+        <div className="relative z-10 container mx-auto px-6 sm:px-10 md:px-16 py-12 md:py-24">
+          <div className="max-w-full md:max-w-[60vw] text-left">
+            <p className="text-[hsl(var(--gold))] mb-6 font-bold" style={labelStyle}>
               PRIVATE REAL ESTATE ACCESS
             </p>
-            <h1 className="font-display text-[2rem] sm:text-[2.6rem] md:text-[3.4rem] lg:text-[4rem] font-light text-white leading-[1.08] mb-6 tracking-tight">
+            <h1
+              className="font-display font-light text-[#F5F1EA] mb-8 tracking-tight"
+              style={{
+                fontSize: "clamp(2.25rem, 7vw, 7rem)",
+                lineHeight: 1.05,
+                maxWidth: "60vw",
+              }}
+            >
               Access Austin's Private &{" "}
               <span className="italic">Off-Market</span> Homes
             </h1>
-            <p className="text-white/70 text-base sm:text-lg md:text-xl font-light leading-relaxed mb-4 max-w-xl mx-auto">
+            <p className="text-white/70 text-base sm:text-lg md:text-xl font-light leading-relaxed mb-4 max-w-xl">
               These properties are not available on Zillow, Realtor.com, or the MLS.
             </p>
-            <p className="text-white/50 text-sm sm:text-base font-light leading-relaxed mb-10 max-w-xl mx-auto">
+            <p className="text-white/50 text-sm sm:text-base font-light leading-relaxed mb-12 max-w-xl">
               Many of Austin's most desirable homes never hit the public market. They trade quietly, through trusted relationships and private networks that most buyers never see.
             </p>
             <button
               onClick={scrollToForm}
-              className="bg-[hsl(var(--gold))] hover:bg-white text-white hover:text-[hsl(var(--gold))] px-10 sm:px-12 py-3 sm:py-4 transition-all duration-300 active:scale-[0.98] tracking-[0.2em] uppercase font-sans font-medium"
-              style={{ fontSize: "0.7rem" }}
+              className="group inline-flex items-center transition-colors duration-300 ease-out"
+              style={{
+                fontFamily: '"Jost", sans-serif',
+                fontSize: "0.9rem",
+                fontWeight: 400,
+                letterSpacing: "0.2em",
+                textTransform: "uppercase",
+                background: "transparent",
+                border: "1px solid #BAA26A",
+                color: "#BAA26A",
+                padding: "1.25rem 2.5rem",
+                borderRadius: 0,
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = "#BAA26A";
+                e.currentTarget.style.color = "#0C0F24";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = "transparent";
+                e.currentTarget.style.color = "#BAA26A";
+              }}
             >
-              REQUEST PRIVATE ACCESS
+              REQUEST PRIVATE ACCESS →
             </button>
-            <p className="mt-10 text-white/30 text-xs tracking-[0.3em] uppercase font-sans">
-              ↓ Scroll
-            </p>
           </div>
         </div>
       </section>

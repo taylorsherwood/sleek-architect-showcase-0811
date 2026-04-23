@@ -202,13 +202,51 @@ const CinematicSections = ({ formNode }: Props) => {
       const horizontalTrack = document.querySelector<HTMLDivElement>(".horizontal-track");
       if (horizontalTrack) {
         const totalScroll = horizontalTrack.scrollWidth - window.innerWidth;
+
+        // Cinematic intro: fade the whole gallery up as it enters the viewport
+        gsap.fromTo(
+          ".horizontal-section",
+          { opacity: 0 },
+          {
+            opacity: 1,
+            ease: "power2.out",
+            duration: 1.2,
+            scrollTrigger: {
+              trigger: ".horizontal-section",
+              start: "top 85%",
+              end: "top 35%",
+              scrub: 1,
+            },
+          }
+        );
+
+        // Stagger each card in with a subtle rise + scale before the horizontal scroll engages
+        gsap.fromTo(
+          ".horizontal-card",
+          { opacity: 0, y: 60, scale: 0.96 },
+          {
+            opacity: 1,
+            y: 0,
+            scale: 1,
+            ease: "power3.out",
+            duration: 1.1,
+            stagger: 0.18,
+            scrollTrigger: {
+              trigger: ".horizontal-section",
+              start: "top 70%",
+              toggleActions: "play none none reverse",
+            },
+          }
+        );
+
+        // Horizontal scroll — small lead-in so cards finish revealing before track moves
         gsap.to(horizontalTrack, {
           x: -totalScroll,
           ease: "none",
           scrollTrigger: {
             trigger: ".horizontal-section",
             start: "top top",
-            end: () => `+=${totalScroll}`,
+            end: () => `+=${totalScroll + window.innerHeight * 0.3}`,
             pin: true,
             scrub: 1,
             anticipatePin: 1,

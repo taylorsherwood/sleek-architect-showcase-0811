@@ -679,6 +679,8 @@ const CinematicSections = ({ formNode }: Props) => {
               src={privateInventoryHero}
               alt="Westlake estate at dusk — private Austin luxury home"
               className="parallax-image w-full h-full object-cover will-change-transform"
+              loading="lazy"
+              decoding="async"
             />
             <div
               className="absolute inset-0"

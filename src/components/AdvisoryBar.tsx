@@ -22,7 +22,7 @@ const formSchema = z.object({
   phone: z.string().trim().min(1, "Phone is required").max(20),
 });
 
-const HIDDEN_ROUTES = ["/contact", "/connect", "/austin-multifamily-report-2026"];
+const HIDDEN_ROUTES = ["/contact", "/connect", "/austin-multifamily-report-2026", "/off-market-real-estate-austin"];
 
 const AdvisoryBar = () => {
   const [visible, setVisible] = useState(false);

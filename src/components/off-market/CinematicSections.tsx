@@ -72,28 +72,10 @@ const CinematicSections = ({ formNode }: Props) => {
     return () => obs.disconnect();
   }, [isMobile]);
 
-  // Play testimonial background video the moment its section enters view
-  // (i.e. as the image takes over the screen, before the split reveal).
-  useEffect(() => {
-    const video = testimonialVideoRef.current;
-    if (!video) return;
-    const section = video.closest("section");
-    if (!section) return;
-
-    const obs = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          video.play().catch(() => {});
-        } else {
-          video.pause();
-          video.currentTime = 0;
-        }
-      },
-      { threshold: 0.25 }
-    );
-    obs.observe(section);
-    return () => obs.disconnect();
-  }, [isMobile]);
+  // Testimonial / split-reveal video playback is driven by ScrollTrigger
+  // inside the GSAP context (see Section 2.5 below). It fires the moment the
+  // split is fully open and re-triggers each time the user scrolls back into
+  // that point — no auto-loop.
 
   // Lenis smooth scroll (desktop only)
   useEffect(() => {

@@ -1257,10 +1257,7 @@ const HomeBelowFold = () => (
     <CommunitiesSection />
 
     <TestimonialsSection />
-    <div className="h-16 md:h-24 bg-secondary flex items-center justify-center" aria-hidden="true">
-      <div className="w-16 h-px bg-gold" />
-    </div>
-    <div className="h-12 md:h-20 bg-secondary" aria-hidden="true" />
+    <div className="h-8 md:h-12 bg-secondary" aria-hidden="true" />
 
     <Suspense fallback={<div className="min-h-[200px] bg-background" />}>
       <ExpertiseSection />

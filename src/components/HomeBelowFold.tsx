@@ -778,7 +778,7 @@ const communities = [
 ];
 
 const CommunitiesSection = () => (
-  <section className="bg-background" style={{ padding: "clamp(32px, 5vw, 64px) 0 clamp(64px, 10vw, 120px)" }}>
+  <section className="bg-background" style={{ padding: "clamp(16px, 2.5vw, 32px) 0 clamp(64px, 10vw, 120px)" }}>
     <div className="container mx-auto px-6">
       <div className="max-w-[1320px] mx-auto">
         <ScrollReveal>

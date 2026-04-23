@@ -48,7 +48,7 @@ const CinematicSections = ({ formNode }: Props) => {
   const rootRef = useRef<HTMLDivElement>(null);
   const lenisRef = useRef<Lenis | null>(null);
   const droneVideoRef = useRef<HTMLVideoElement>(null);
-  
+import austinSkylineParallax from "@/assets/austin-skyline-parallax.webp";
 
   // Play drone video only while its section is in view; pause + reset when it leaves.
   useEffect(() => {
@@ -533,9 +533,8 @@ const CinematicSections = ({ formNode }: Props) => {
         {/* Revealed background image */}
         <div className="absolute inset-0 z-0">
           <img
-            src={testimonialSplitImg}
-            alt=""
-            aria-hidden="true"
+            src={austinSkylineParallax}
+            alt="Austin downtown skyline at sunset over Lady Bird Lake"
             className="w-full h-full object-cover"
             decoding="async"
           />

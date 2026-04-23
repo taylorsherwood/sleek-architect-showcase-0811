@@ -288,7 +288,7 @@ const CinematicSections = ({ formNode }: Props) => {
         scrollTrigger: {
           trigger: ".stats-section",
           start: "top top",
-          end: "+=100%",
+          end: "+=200%",
           scrub: 1,
           pin: true,
           pinSpacing: true,

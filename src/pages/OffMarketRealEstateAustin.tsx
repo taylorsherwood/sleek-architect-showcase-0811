@@ -281,7 +281,7 @@ const OffMarketRealEstateAustin = () => {
             <p className="text-white/70 text-base sm:text-lg md:text-xl font-light leading-relaxed mb-4 max-w-xl">
               These properties are not available on Zillow, Realtor.com, or the MLS.
             </p>
-            <p className="text-white/50 text-sm sm:text-base font-light leading-relaxed mb-12 max-w-xl">
+            <p className="text-white/50 text-sm sm:text-base font-light leading-relaxed mb-6 max-w-xl">
               Many of Austin's most desirable homes never hit the public market. They trade quietly, through trusted relationships and private networks that most buyers never see.
             </p>
             <button
@@ -289,14 +289,14 @@ const OffMarketRealEstateAustin = () => {
               className="group inline-flex items-center transition-colors duration-300 ease-out"
               style={{
                 fontFamily: '"Jost", sans-serif',
-                fontSize: "0.9rem",
+                fontSize: "0.7rem",
                 fontWeight: 400,
-                letterSpacing: "0.2em",
+                letterSpacing: "0.18em",
                 textTransform: "uppercase",
                 background: "transparent",
                 border: "1px solid #BAA26A",
                 color: "#BAA26A",
-                padding: "1.25rem 2.5rem",
+                padding: "0.6rem 1.25rem",
                 borderRadius: 0,
               }}
               onMouseEnter={(e) => {

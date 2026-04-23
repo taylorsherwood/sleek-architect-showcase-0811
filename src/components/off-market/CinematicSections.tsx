@@ -447,7 +447,7 @@ const CinematicSections = ({ formNode }: Props) => {
 
         {/* Section 6 — Testimonial */}
         <section className="bg-[hsl(220,15%,6%)]">
-          <img src={desktopNote} alt="Handwritten note on desk" className="w-full h-[40vh] object-cover" decoding="async" />
+          <img src={testimonialSplitImg} alt="Lake Austin luxury waterfront estate" className="w-full h-[40vh] object-cover" decoding="async" />
           <div className="px-6 py-12 text-center">
             <p className="font-display italic text-2xl text-white/90 leading-snug mb-6">
               "Taylor brought us a Westlake home before it ever hit the market. We never would have seen it without him."

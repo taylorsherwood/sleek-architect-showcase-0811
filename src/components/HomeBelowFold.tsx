@@ -1166,7 +1166,7 @@ const editorialArticles = [
 ];
 
 const EditorialInsights = () => (
-  <section className="bg-secondary" style={{ padding: "clamp(64px, 9vw, 110px) 0" }}>
+  <section className="bg-background" style={{ padding: "clamp(64px, 9vw, 110px) 0" }}>
     <div className="container mx-auto px-6">
       <div className="max-w-[1200px] mx-auto">
         <div className="text-center mb-14 md:mb-16">

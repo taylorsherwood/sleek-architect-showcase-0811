@@ -532,6 +532,7 @@ const TestimonialsSection = () => {
       gsap.set(".tsplit-image", { scale: 1.08 });
       gsap.set(".tsplit-line", { opacity: 0, y: 24, filter: "blur(8px)" });
       gsap.set(".tsplit-attribution", { opacity: 0, y: 12, filter: "blur(6px)" });
+      gsap.set(".tsplit-overlay", { opacity: 1, y: 0, filter: "blur(0px)" });
 
       gsap.timeline({
         scrollTrigger: {
@@ -553,6 +554,7 @@ const TestimonialsSection = () => {
           },
         },
       })
+        .to(".tsplit-overlay", { opacity: 0, y: -16, filter: "blur(8px)", ease: "power2.in", duration: 0.3 }, 0.05)
         .to(".tsplit-image", { scale: 1, ease: "power1.out", duration: 0.35 }, 0)
         .to(".tsplit-right", { xPercent: 100, ease: "expo.inOut", duration: 0.6 }, 0.35)
         .to(".tsplit-line", { opacity: 1, y: 0, filter: "blur(0px)", ease: "power3.out", stagger: 0.15, duration: 0.6 }, 0.65)
@@ -658,6 +660,31 @@ const TestimonialsSection = () => {
             className="tsplit-image absolute inset-y-0 right-0 h-full w-screen max-w-none object-cover will-change-transform"
             decoding="async"
           />
+        </div>
+
+        {/* Overlay verbiage — fades out as the split begins */}
+        <div className="tsplit-overlay absolute inset-0 z-20 flex items-center justify-center pointer-events-none px-6 will-change-transform">
+          <div className="text-center">
+            <p
+              className="text-gold mb-6 font-sans uppercase"
+              style={{ fontSize: "0.72rem", letterSpacing: "0.32em" }}
+            >
+              Client Experiences
+            </p>
+            <h2
+              className="font-display font-normal leading-[1.05] tracking-[0.02em]"
+              style={{
+                fontFamily: '"Cinzel", serif',
+                color: "#F5F3EF",
+                fontSize: "clamp(2rem, 5vw, 4.5rem)",
+                textTransform: "uppercase",
+              }}
+            >
+              clients first.{" "}
+              <span style={{ color: "#b9a06c" }}>Proven Results.</span>
+            </h2>
+            <div className="w-16 h-px mx-auto mt-8" style={{ background: "#b9a06c" }} />
+          </div>
         </div>
       </section>
 

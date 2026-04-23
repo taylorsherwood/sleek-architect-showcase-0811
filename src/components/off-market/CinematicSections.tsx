@@ -627,13 +627,13 @@ const CinematicSections = ({ formNode }: Props) => {
 
       {/* ── Section 5: Pinned Counter ──────────── */}
       <section className="stats-section relative h-screen w-full bg-[hsl(220,15%,8%)] flex items-center justify-center overflow-hidden">
-        <div className="container mx-auto px-8">
-          <div className="grid grid-cols-3 gap-8 items-end">
+        <div className="container mx-auto px-8 max-w-7xl">
+          <div className="grid grid-cols-3 gap-12 lg:gap-16 items-end">
             {STATS.map((s, i) => (
-              <div key={s.label} className="text-center">
+              <div key={s.label} className="text-center min-w-0 overflow-hidden">
                 <span
-                  className="stat-number block font-display text-white font-light leading-none mb-6"
-                  style={{ fontSize: "14vw" }}
+                  className="stat-number block font-display text-white font-light leading-[0.95] mb-6 whitespace-nowrap"
+                  style={{ fontSize: "clamp(3rem, 8vw, 8rem)" }}
                 >
                   {s.prefix}
                   {s.suffix === "M" ? "0.0" : "0"}

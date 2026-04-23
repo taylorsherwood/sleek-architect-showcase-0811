@@ -452,7 +452,7 @@ const CinematicSections = ({ formNode }: Props) => {
         </section>
 
         {/* Section 7 — Form */}
-        <section className="py-16 px-6 bg-[hsl(220,15%,8%)]">
+        <section id="section-7-form" className="py-16 px-6 bg-[hsl(220,15%,8%)]">
           <div className="max-w-xl mx-auto border border-white/10 p-6 bg-white/[0.02]">
             <p className="text-[hsl(var(--gold))] mb-3 font-bold" style={labelStyle}>
               REQUEST PRIVATE ACCESS

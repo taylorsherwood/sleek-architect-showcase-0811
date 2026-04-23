@@ -652,6 +652,40 @@ const CinematicSections = ({ formNode }: Props) => {
         </div>
       </section>
 
+      {/* ── Section 3.5: Cinematic Parallax Bridge ─ */}
+      <section className="bridge-section relative h-screen w-full overflow-hidden bg-[hsl(220,15%,6%)]">
+        <div className="bridge-image absolute inset-0 will-change-transform" style={{ top: "-10%", height: "120%" }}>
+          <img
+            src={westlakeDusk}
+            alt="Austin luxury estate at golden hour"
+            className="w-full h-full object-cover"
+            decoding="async"
+          />
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                "linear-gradient(180deg, hsl(220,15%,6%) 0%, rgba(12,15,36,0.5) 30%, rgba(12,15,36,0.45) 70%, hsl(220,15%,6%) 100%)",
+            }}
+          />
+        </div>
+        <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-8">
+          <p
+            className="bridge-eyebrow mb-6 font-bold opacity-0"
+            style={{ ...labelStyle, color: "#b9a06c" }}
+          >
+            THE INSIDE TRACK
+          </p>
+          <h2
+            className="bridge-headline font-display font-light text-white leading-[1.05] max-w-[18ch] opacity-0"
+            style={{ fontSize: "clamp(2.5rem, 5vw, 5rem)" }}
+          >
+            Where Austin's <span style={{ color: "#b9a06c" }}>quietest</span> homes change hands.
+          </h2>
+          <div className="bridge-rule mt-10 h-px bg-[#b9a06c] opacity-0" style={{ width: 0 }} />
+        </div>
+      </section>
+
       {/* ── Section 4: Horizontal Scroll Gallery ─ */}
       <section className="horizontal-section relative h-screen w-full overflow-hidden bg-[hsl(220,15%,6%)]">
         <div className="horizontal-track absolute top-0 left-0 h-full flex" style={{ width: "max-content" }}>

@@ -9,7 +9,7 @@ import card78746 from "@/assets/barton-creek-estate.jpg";
 import cardTarrytown from "@/assets/community-tarrytown.jpg";
 import cardOldEnfield from "@/assets/pemberton-heights.avif";
 import cardWestlake from "@/assets/community-westlake.jpg";
-import cardDavenport from "@/assets/the-high-road-westlake.webp";
+import cardDavenport from "@/assets/davenport-ranch-estate.jpg";
 import desktopNote from "@/assets/austin-luxury-lifestyle.jpg";
 import austinSkylineParallax from "@/assets/austin-skyline-parallax.jpeg";
 import clarksvilleImg from "@/assets/communities/clarksville.jpg";

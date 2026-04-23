@@ -279,37 +279,46 @@ const CinematicSections = ({ formNode }: Props) => {
 
       // ── Section 5: Counter — REMOVED
 
-      // ── Section 6: Vertical Split-Reveal Testimonial
-      // Phase 1 (0 → 0.35): image locks full-screen, settles from a slight zoom.
-      // Phase 2 (0.35 → 0.8): the two halves part LEFT and RIGHT along a vertical
-      //   seam, exposing the testimonial behind.
-      // Phase 3 (0.65 → 1): each testimonial line + attribution rises into place.
-      gsap.set([".testimonial-split-left", ".testimonial-split-right"], { xPercent: 0 });
-      gsap.set(".testimonial-split-image", { scale: 1.08 });
-      gsap.set(".testimonial-line", { opacity: 0, y: 30 });
-      gsap.set(".testimonial-attribution", { opacity: 0, y: 15 });
+      // ── Section 6: Cinematic Side-Reveal Testimonial
+      // A slow, deliberate luxury reveal:
+      //  Phase 1 (0 → 0.30): the image breathes — a slow Ken Burns drift while
+      //    a soft warm vignette gently lifts.
+      //  Phase 2 (0.30 → 0.85): the right half slides away on a long, eased
+      //    curve; the left image gently parallaxes for depth.
+      //  Phase 3 (0.62 → 1): the testimonial lines clear blur and rise in a
+      //    measured cadence, attribution settles last.
+      gsap.set(".testimonial-split-right", { xPercent: 0 });
+      gsap.set(".testimonial-split-image", { scale: 1.12 });
+      gsap.set(".testimonial-split-image-left", { x: 0 });
+      gsap.set(".testimonial-vignette", { opacity: 0 });
+      gsap.set(".testimonial-line", { opacity: 0, y: 24, filter: "blur(8px)" });
+      gsap.set(".testimonial-attribution", { opacity: 0, y: 12, filter: "blur(6px)" });
 
       const testimonialTl = gsap.timeline({
         scrollTrigger: {
           trigger: ".testimonial-section",
           start: "top top",
-          end: "+=240%",
+          end: "+=320%",
           pin: true,
           pinSpacing: true,
-          scrub: 1,
+          scrub: 1.4,
           anticipatePin: 1,
         },
       });
 
       testimonialTl
-        // Phase 1 — lock & settle
-        .to(".testimonial-split-image", { scale: 1, ease: "none", duration: 0.35 }, 0)
-        // Phase 2 — right half slides away to expose testimonial; left half stays
-        .to(".testimonial-split-right", { xPercent: 100, ease: "power2.inOut", duration: 0.45 }, 0.35)
-        // Phase 3 — testimonial copy reveals
-        .to(".testimonial-line", { opacity: 1, y: 0, ease: "power2.out", stagger: 0.12, duration: 0.5 }, 0.65)
-        .to(".testimonial-attribution", { opacity: 1, y: 0, ease: "power2.out", duration: 0.4 }, 0.95)
-        .to({}, { duration: 0.1 });
+        // Phase 1 — slow Ken Burns breath + vignette warm-up
+        .to(".testimonial-split-image", { scale: 1.04, ease: "none", duration: 0.30 }, 0)
+        .to(".testimonial-vignette", { opacity: 1, ease: "power1.out", duration: 0.30 }, 0)
+        // Phase 2 — right half drifts away on a long, refined curve;
+        // left image gently nudges for parallax depth.
+        .to(".testimonial-split-right", { xPercent: 100, ease: "expo.inOut", duration: 0.55 }, 0.30)
+        .to(".testimonial-split-image-left", { x: "-3%", ease: "expo.inOut", duration: 0.55 }, 0.30)
+        .to(".testimonial-split-image", { scale: 1, ease: "expo.inOut", duration: 0.55 }, 0.30)
+        // Phase 3 — testimonial lines clear blur and rise, measured cadence
+        .to(".testimonial-line", { opacity: 1, y: 0, filter: "blur(0px)", ease: "power3.out", stagger: 0.18, duration: 0.65 }, 0.62)
+        .to(".testimonial-attribution", { opacity: 1, y: 0, filter: "blur(0px)", ease: "power2.out", duration: 0.55 }, 1.0)
+        .to({}, { duration: 0.15 });
 
       // ── Section 7: Form — elegant cinematic reveal as user scrolls
       // past the testimonial. Each element rises into place with a soft

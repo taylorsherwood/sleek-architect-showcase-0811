@@ -664,6 +664,9 @@ section[class*="bg-navy"]::after {
     inset: 0;
     background: rgba(8, 11, 26, 0.35);
   }
+  .parallax-break.parallax-break--no-tint::after {
+    background: transparent;
+  }
   @media (max-width: 768px) {
     .parallax-break {
       height: 340px;

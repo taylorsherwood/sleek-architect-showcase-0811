@@ -554,6 +554,7 @@ const TestimonialsSection = () => {
           },
         },
       })
+        .to(".tsplit-overlay", { opacity: 0, y: -16, filter: "blur(8px)", ease: "power2.in", duration: 0.3 }, 0.05)
         .to(".tsplit-image", { scale: 1, ease: "power1.out", duration: 0.35 }, 0)
         .to(".tsplit-right", { xPercent: 100, ease: "expo.inOut", duration: 0.6 }, 0.35)
         .to(".tsplit-line", { opacity: 1, y: 0, filter: "blur(0px)", ease: "power3.out", stagger: 0.15, duration: 0.6 }, 0.65)

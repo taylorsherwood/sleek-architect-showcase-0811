@@ -155,8 +155,10 @@ const OffMarketRealEstateAustin = () => {
 
   const inputClass =
     "w-full bg-transparent border-b border-white/20 focus:border-[hsl(var(--gold))] outline-none py-3 text-white font-sans transition-colors placeholder:text-white/30";
-  const selectClass =
-    "w-full bg-transparent border-b border-white/20 focus:border-[hsl(var(--gold))] outline-none py-3 text-white font-sans transition-colors appearance-none cursor-pointer [&>option]:bg-[hsl(220,15%,12%)] [&>option]:text-white";
+  const selectBase =
+    "w-full bg-transparent border-b border-white/20 focus:border-[hsl(var(--gold))] outline-none py-3 font-sans transition-colors appearance-none cursor-pointer [&>option]:bg-[hsl(220,15%,12%)] [&>option]:text-white";
+  const selectClassFor = (value: string) =>
+    `${selectBase} ${value ? "text-white" : "text-[hsl(var(--gold))]"}`;
 
   const formContent = submitted ? (
     <div className="text-center py-12 pt-20 flex flex-col items-center">

@@ -674,7 +674,11 @@ const TestimonialsSection = () => {
           <div className="text-center">
             <p
               className="text-gold mb-6 font-sans uppercase"
-              style={{ fontSize: "0.72rem", letterSpacing: "0.32em" }}
+              style={{
+                fontSize: "0.72rem",
+                letterSpacing: "0.32em",
+                textShadow: "0 0 18px rgba(0,0,0,0.55), 0 1px 2px rgba(0,0,0,0.5)",
+              }}
             >
               Client Experiences
             </p>
@@ -685,6 +689,7 @@ const TestimonialsSection = () => {
                 color: "#F5F3EF",
                 fontSize: "clamp(2rem, 5vw, 4.5rem)",
                 textTransform: "uppercase",
+                textShadow: "0 0 32px rgba(0,0,0,0.55), 0 0 12px rgba(0,0,0,0.45), 0 2px 4px rgba(0,0,0,0.5)",
               }}
             >
               clients first.{" "}

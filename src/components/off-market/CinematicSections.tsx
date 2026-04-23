@@ -11,6 +11,7 @@ import cardOldEnfield from "@/assets/pemberton-heights.avif";
 import cardWestlake from "@/assets/community-westlake.jpg";
 import cardDavenport from "@/assets/the-high-road-westlake.webp";
 import desktopNote from "@/assets/austin-luxury-lifestyle.jpg";
+import austinSkylineParallax from "@/assets/austin-skyline-parallax.jpeg";
 
 gsap.registerPlugin(ScrollTrigger);
 

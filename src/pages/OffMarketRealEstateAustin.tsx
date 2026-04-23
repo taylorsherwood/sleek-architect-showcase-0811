@@ -168,10 +168,30 @@ const OffMarketRealEstateAustin = () => {
       <button
         type="submit"
         disabled={loading}
-        className="w-full py-4 tracking-[0.2em] uppercase font-sans font-medium transition-all duration-300 ease-out disabled:opacity-50 active:scale-[0.98] mt-1 bg-[hsl(var(--gold))] hover:bg-white text-white hover:text-[hsl(var(--gold))] hover:font-bold"
-        style={{ fontSize: "0.7rem" }}
+        className="w-full inline-flex items-center justify-center transition-colors duration-300 ease-out disabled:opacity-50 active:scale-[0.98] mt-1"
+        style={{
+          fontFamily: '"Jost", sans-serif',
+          fontSize: "0.9rem",
+          fontWeight: 400,
+          letterSpacing: "0.2em",
+          textTransform: "uppercase",
+          background: "transparent",
+          border: "1px solid #BAA26A",
+          color: "#BAA26A",
+          padding: "1.25rem 2.5rem",
+          borderRadius: 0,
+        }}
+        onMouseEnter={(e) => {
+          if (loading) return;
+          e.currentTarget.style.backgroundColor = "#BAA26A";
+          e.currentTarget.style.color = "#0C0F24";
+        }}
+        onMouseLeave={(e) => {
+          e.currentTarget.style.backgroundColor = "transparent";
+          e.currentTarget.style.color = "#BAA26A";
+        }}
       >
-        {loading ? "Submitting…" : "Request Private Access"}
+        {loading ? "Submitting…" : "Request Private Access →"}
       </button>
       <p className="text-center text-white/30 text-xs tracking-wide">
         Your information is never shared. Discreet advisory only.

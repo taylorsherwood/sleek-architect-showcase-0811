@@ -517,14 +517,16 @@ const CinematicSections = ({ formNode }: Props) => {
         </div>
       </section>
 
-      {/* ── Section 3 (new): Scroll-Scrubbed Drone Video ── */}
+      {/* ── Section 3 (new): Autoplay Drone Video w/ Ken Burns ── */}
       <section className="drone-section relative h-screen w-full overflow-hidden bg-[hsl(220,15%,8%)]">
         <video
           ref={droneVideoRef}
+          autoPlay
           muted
           playsInline
+          loop
           preload="auto"
-          className="absolute inset-0 w-full h-full object-cover will-change-transform"
+          className="hero-video absolute inset-0 w-full h-full object-cover will-change-transform"
         >
           <source src="/video/hero-scrub.webm" type="video/webm" />
           <source src="/video/hero-scrub.mp4" type="video/mp4" />
@@ -538,19 +540,19 @@ const CinematicSections = ({ formNode }: Props) => {
           }}
         />
         {/* Overlay text */}
-        <div className="drone-text absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-8 will-change-[opacity]">
-          <p className="text-[hsl(var(--gold))] mb-6 font-bold" style={labelStyle}>
+        <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-8">
+          <p className="drone-reveal mb-6 font-bold" style={{ ...labelStyle, color: "#BAA26A", fontSize: "0.9rem", letterSpacing: "0.2em" }}>
             01 — PRIVATE INVENTORY
           </p>
           <h2
-            className="font-display text-[hsl(40,30%,92%)] font-light leading-[1.05] mb-6 max-w-[90vw]"
-            style={{ fontSize: "7vw" }}
+            className="drone-reveal font-display font-light leading-[1.05] mb-6 max-w-[90vw]"
+            style={{ fontSize: "7vw", color: "#F5F1EA" }}
           >
             Austin, from the inside.
           </h2>
           <p
-            className="text-white/80 font-sans"
-            style={{ fontSize: "1.2rem", maxWidth: "500px" }}
+            className="drone-reveal font-sans"
+            style={{ fontSize: "1.2rem", maxWidth: "500px", color: "rgba(245,241,234,0.8)" }}
           >
             The city you're moving to. The homes no one else will show you.
           </p>

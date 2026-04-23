@@ -726,18 +726,13 @@ const CinematicSections = ({ formNode }: Props) => {
           </div>
         </div>
 
-        {/* Left half — video plays the moment the section enters view */}
+        {/* Left half — stays in place */}
         <div className="testimonial-split-left absolute inset-y-0 left-0 w-1/2 z-10 overflow-hidden will-change-transform">
-          <video
-            ref={testimonialVideoRef}
+          <img
+            src={testimonialSplitImg}
+            alt="Lake Austin luxury waterfront estate at golden hour"
             className="testimonial-split-image absolute inset-y-0 left-0 h-full w-screen max-w-none object-cover will-change-transform"
-            src="/videos/testimonial-barton-creek.mp4"
-            poster={testimonialSplitImg}
-            muted
-            playsInline
-            loop
-            preload="metadata"
-            aria-label="2300 Barton Creek private estate"
+            decoding="async"
           />
         </div>
 

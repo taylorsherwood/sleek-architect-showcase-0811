@@ -217,16 +217,33 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-5 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2" style={{ zIndex: 3 }}>
-        <span style={{
-          fontFamily: '"Jost", sans-serif', fontSize: "10px", letterSpacing: "0.35em",
-          textTransform: "uppercase", color: "hsl(var(--warm-cream))",
-        }}>
+      {/* Scroll indicator — animated bar travels down a gold track */}
+      <button
+        onClick={() => {
+          window.scrollTo({ top: window.innerHeight, behavior: "smooth" });
+        }}
+        aria-label="Scroll to discover Austin"
+        className="hero-scroll-cue absolute bottom-5 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 group cursor-pointer"
+        style={{ zIndex: 3 }}
+      >
+        <span
+          className="font-sans group-hover:text-white transition-colors duration-500"
+          style={{
+            fontFamily: '"Jost", sans-serif',
+            fontSize: "0.85rem",
+            letterSpacing: "0.5em",
+            textTransform: "uppercase",
+            fontWeight: 600,
+            color: "hsl(var(--warm-cream))",
+            textShadow: "0 1px 6px rgba(0,0,0,0.6)",
+          }}
+        >
           Discover Austin
         </span>
-        <div className="scroll-indicator-line" />
-      </div>
+        <span className="hero-scroll-track relative block w-[1px] h-16 md:h-20 overflow-hidden bg-[hsl(var(--gold))]/20">
+          <span className="hero-scroll-bar absolute top-0 left-0 w-full h-1/2 bg-[hsl(var(--gold))]" />
+        </span>
+      </button>
     </section>
     {bookingOpen ? (
       <Suspense fallback={null}>

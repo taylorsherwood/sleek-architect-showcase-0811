@@ -476,19 +476,6 @@ const CinematicSections = ({ formNode }: Props) => {
           ))}
         </section>
 
-        {/* Section 5 — Stats */}
-        <section className="py-20 px-6 text-center space-y-12">
-          {STATS.map((s) => (
-            <div key={s.label}>
-              <p className="font-display text-6xl text-white mb-3">
-                {s.prefix}
-                {s.suffix === "M" ? s.value.toFixed(1) : s.value}
-                {s.suffix}
-              </p>
-              <p className="text-sm tracking-[0.2em] uppercase font-sans" style={{ color: "#b9a06c" }}>{s.label}</p>
-            </div>
-          ))}
-        </section>
 
         {/* Section 6 — Testimonial */}
         <section className="bg-[hsl(220,15%,6%)]">

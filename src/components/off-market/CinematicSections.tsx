@@ -165,17 +165,21 @@ const CinematicSections = ({ formNode }: Props) => {
         },
       });
 
-      // ── Section 3: Parallax Image Reveal
-      gsap.to(".parallax-image", {
-        yPercent: -20,
-        ease: "none",
-        scrollTrigger: {
-          trigger: ".parallax-section",
-          start: "top bottom",
-          end: "bottom top",
-          scrub: 1,
-        },
-      });
+      // ── Section 3: Parallax Image Reveal — gentle parallax within oversized container
+      gsap.fromTo(
+        ".parallax-image",
+        { yPercent: -8 },
+        {
+          yPercent: 8,
+          ease: "none",
+          scrollTrigger: {
+            trigger: ".parallax-section",
+            start: "top bottom",
+            end: "bottom top",
+            scrub: 1,
+          },
+        }
+      );
       gsap.fromTo(
         ".parallax-headline",
         { scale: 0.9 },
@@ -509,7 +513,7 @@ const CinematicSections = ({ formNode }: Props) => {
           style={{ clipPath: "inset(0 0 50% 0)" }}
         >
           <img
-            src={austinSkylineParallax}
+            src={westlakeDusk}
             alt=""
             aria-hidden="true"
             className="w-full h-full object-cover"
@@ -522,7 +526,7 @@ const CinematicSections = ({ formNode }: Props) => {
           style={{ clipPath: "inset(50% 0 0 0)" }}
         >
           <img
-            src={austinSkylineParallax}
+            src={westlakeDusk}
             alt=""
             aria-hidden="true"
             className="w-full h-full object-cover"
@@ -577,13 +581,12 @@ const CinematicSections = ({ formNode }: Props) => {
       <section className="parallax-section relative h-screen w-full overflow-hidden bg-[hsl(220,15%,8%)]">
         <div
           className="absolute left-0 right-0"
-          style={{ top: "-15%", bottom: "-15%" }}
+          style={{ top: "-20%", height: "140%" }}
         >
           <img
-            src={westlakeDusk}
-            alt="Westlake estate at dusk — private Austin luxury home"
+            src={austinSkylineParallax}
+            alt="Austin downtown skyline at sunset over Lady Bird Lake"
             className="parallax-image w-full h-full object-cover will-change-transform"
-            loading="lazy"
           />
           <div className="absolute inset-0 bg-black/30" />
         </div>

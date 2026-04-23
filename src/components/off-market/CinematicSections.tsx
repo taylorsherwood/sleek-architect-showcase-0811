@@ -38,12 +38,6 @@ const NEIGHBORHOODS = [
   { name: "Spanish Oaks", image: cardSpanishOaks, stat: "GUARD GATED GOLF ESTATES" },
 ];
 
-const STATS = [
-  { value: 3.2, prefix: "$", suffix: "M", label: "Median private sale price" },
-  { value: 41, prefix: "", suffix: "", label: "Off-market deals closed" },
-  { value: 60, prefix: "", suffix: "%", label: "Of luxury sales never list publicly" },
-];
-
 interface Props {
   formNode: ReactNode;
 }
@@ -418,20 +412,6 @@ const CinematicSections = ({ formNode }: Props) => {
           </div>
         </section>
 
-        {/* Section 5 — Stats (moved up) */}
-        <section className="py-20 px-6 text-center space-y-12">
-          {STATS.map((s) => (
-            <div key={s.label}>
-              <p className="font-display text-6xl text-white mb-3">
-                {s.prefix}
-                {s.suffix === "M" ? s.value.toFixed(1) : s.value}
-                {s.suffix}
-              </p>
-              <p className="text-sm tracking-[0.2em] uppercase font-sans" style={{ color: "#b9a06c" }}>{s.label}</p>
-            </div>
-          ))}
-        </section>
-
         {/* Section 3 — REMOVED (Homes That Never Reach The Market) */}
 
         {/* Section 4 — Stacked neighborhood cards */}
@@ -631,29 +611,6 @@ const CinematicSections = ({ formNode }: Props) => {
             Where Austin's <span style={{ color: "#b9a06c" }}>quietest</span> homes change hands.
           </h2>
           <div className="bridge-rule mt-10 h-px bg-[#b9a06c] opacity-0" style={{ width: 0 }} />
-        </div>
-      </section>
-
-      {/* ── Section 5: Pinned Counter ──────────── */}
-      <section className="stats-section relative h-screen w-full bg-[hsl(220,15%,8%)] flex items-center justify-center overflow-hidden">
-        <div className="container mx-auto px-8 max-w-7xl">
-          <div className="grid grid-cols-3 gap-12 lg:gap-16 items-end">
-            {STATS.map((s, i) => (
-              <div key={s.label} className="text-center min-w-0 overflow-hidden">
-                <span
-                  className="stat-number block font-display text-white font-light leading-[0.95] mb-6 whitespace-nowrap"
-                  style={{ fontSize: "clamp(3rem, 8vw, 8rem)" }}
-                >
-                  {s.prefix}
-                  {s.suffix === "M" ? "0.0" : "0"}
-                  {s.suffix}
-                </span>
-                <p className="stat-label tracking-[0.25em] uppercase font-sans" style={{ fontSize: "0.75rem", color: "#b9a06c" }}>
-                  {s.label}
-                </p>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 

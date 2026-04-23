@@ -539,13 +539,18 @@ const CinematicSections = ({ formNode }: Props) => {
 
       {/* ── Section 2.5: Image Split Reveal ────── */}
       <section className="split-section relative h-screen w-full overflow-hidden bg-[hsl(220,15%,8%)]">
-        {/* Revealed background image */}
+        {/* Revealed background video — plays the moment it takes over the screen */}
         <div className="absolute inset-0 z-0">
-          <img
-            src={austinSkylineParallax}
-            alt="Austin downtown skyline at sunset over Lady Bird Lake"
+          <video
+            ref={testimonialVideoRef}
             className="w-full h-full object-cover"
-            decoding="async"
+            src="/videos/testimonial-barton-creek.mp4"
+            poster={austinSkylineParallax}
+            muted
+            playsInline
+            loop
+            preload="metadata"
+            aria-label="2300 Barton Creek private estate aerial"
           />
           <div className="absolute inset-0 bg-black/20" />
         </div>

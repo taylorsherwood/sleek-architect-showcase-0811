@@ -730,28 +730,6 @@ const CinematicSections = ({ formNode }: Props) => {
         </div>
       </section>
 
-      {/* ── Section 5: Pinned Counter ──────────── */}
-      <section className="stats-section relative h-screen w-full bg-[hsl(220,15%,8%)] flex items-center justify-center overflow-hidden">
-        <div className="container mx-auto px-8 max-w-7xl">
-          <div className="grid grid-cols-3 gap-12 lg:gap-16 items-end">
-            {STATS.map((s, i) => (
-              <div key={s.label} className="text-center min-w-0 overflow-hidden">
-                <span
-                  className="stat-number block font-display text-white font-light leading-[0.95] mb-6 whitespace-nowrap"
-                  style={{ fontSize: "clamp(3rem, 8vw, 8rem)" }}
-                >
-                  {s.prefix}
-                  {s.suffix === "M" ? "0.0" : "0"}
-                  {s.suffix}
-                </span>
-                <p className="stat-label tracking-[0.25em] uppercase font-sans" style={{ fontSize: "0.75rem", color: "#b9a06c" }}>
-                  {s.label}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* ── Section 6: Split Parallax Testimonial ─ */}
       <section className="testimonial-section relative w-full bg-[hsl(220,15%,6%)] grid grid-cols-2 min-h-screen overflow-hidden">

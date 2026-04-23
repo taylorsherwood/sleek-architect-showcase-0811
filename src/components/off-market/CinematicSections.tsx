@@ -175,26 +175,36 @@ const CinematicSections = ({ formNode }: Props) => {
         // Hold the open state briefly before unpin
         .to({}, { duration: 0.15 });
 
-      // Trigger the split-reveal video the moment the split is fully open.
-      // Re-fires every time the user scrolls back to that point — no auto-loop.
+      // Trigger the split-reveal video as soon as the section pins (image
+      // takes over the screen). Re-fires every time the user scrolls back
+      // into the section — no auto-loop.
       ScrollTrigger.create({
         trigger: ".split-section",
         start: "top top",
         end: "+=260%",
-        onUpdate: (self) => {
+        onEnter: () => {
           const video = testimonialVideoRef.current;
           if (!video) return;
-          if (self.progress >= 0.85) {
-            if (video.paused) {
-              video.currentTime = 0;
-              video.play().catch(() => {});
-            }
-          } else {
-            if (!video.paused) {
-              video.pause();
-              video.currentTime = 0;
-            }
-          }
+          video.currentTime = 0;
+          video.play().catch(() => {});
+        },
+        onEnterBack: () => {
+          const video = testimonialVideoRef.current;
+          if (!video) return;
+          video.currentTime = 0;
+          video.play().catch(() => {});
+        },
+        onLeave: () => {
+          const video = testimonialVideoRef.current;
+          if (!video) return;
+          video.pause();
+          video.currentTime = 0;
+        },
+        onLeaveBack: () => {
+          const video = testimonialVideoRef.current;
+          if (!video) return;
+          video.pause();
+          video.currentTime = 0;
         },
       });
 

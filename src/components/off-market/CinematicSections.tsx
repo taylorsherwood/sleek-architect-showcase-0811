@@ -590,7 +590,7 @@ const CinematicSections = ({ formNode }: Props) => {
             src={clarksvilleImg}
             alt=""
             aria-hidden="true"
-            className="w-full h-full object-cover"
+            className="split-cover-image w-full h-full object-cover will-change-transform"
             decoding="async"
           />
         </div>
@@ -603,7 +603,7 @@ const CinematicSections = ({ formNode }: Props) => {
             src={clarksvilleImg}
             alt=""
             aria-hidden="true"
-            className="w-full h-full object-cover"
+            className="split-cover-image w-full h-full object-cover will-change-transform"
             decoding="async"
           />
         </div>

@@ -684,6 +684,7 @@ const CinematicSections = ({ formNode }: Props) => {
 
       {/* ── Section 7: Form ────────────────────── */}
       <section
+        id="section-7-form"
         className="form-section relative w-full py-32 px-8 overflow-hidden"
         style={{
           background:

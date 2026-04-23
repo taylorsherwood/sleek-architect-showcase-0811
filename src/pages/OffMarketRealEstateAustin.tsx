@@ -187,7 +187,7 @@ const OffMarketRealEstateAustin = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div>
           <label htmlFor="interest" className="block text-white/40 mb-1.5" style={labelStyle}>Looking For</label>
-          <select id="interest" value={form.interest} onChange={(e) => setForm(prev => ({ ...prev, interest: e.target.value }))} className={selectClass}>
+          <select id="interest" value={form.interest} onChange={(e) => setForm(prev => ({ ...prev, interest: e.target.value }))} className={selectClassFor(form.interest)}>
             <option value="">Select</option>
             <option value="Luxury Residential">Luxury Residential</option>
             <option value="Investment">Investment Property</option>

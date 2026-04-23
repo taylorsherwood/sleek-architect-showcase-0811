@@ -576,15 +576,7 @@ const TestimonialsSection = () => {
         className="tsplit-section hidden md:block relative w-full h-screen bg-secondary overflow-hidden"
         aria-label="Client experiences"
       >
-        {/* Base full-width cover image shown first */}
-        <div className="absolute inset-0 z-[1] overflow-hidden">
-          <img
-            src={lakeAustinTestimonialImg}
-            alt="Lake Austin luxury waterfront estate at golden hour"
-            className="tsplit-image absolute inset-0 h-full w-full object-cover will-change-transform"
-            decoding="async"
-          />
-        </div>
+        {/* Two halves below already form a complete full-width image — no separate base layer needed */}
 
         {/* Testimonial sits behind on the right side, revealed when the right half slides away */}
         <div className="absolute inset-0 z-0 flex items-center justify-end px-8 md:px-16 lg:px-24">
@@ -660,8 +652,7 @@ const TestimonialsSection = () => {
         <div className="tsplit-left absolute inset-y-0 left-0 w-1/2 z-10 overflow-hidden will-change-transform">
           <img
             src={lakeAustinTestimonialImg}
-            alt=""
-            aria-hidden="true"
+            alt="Lake Austin luxury waterfront estate at golden hour"
             className="tsplit-image absolute inset-y-0 left-0 h-full w-screen max-w-none object-cover will-change-transform"
             decoding="async"
           />

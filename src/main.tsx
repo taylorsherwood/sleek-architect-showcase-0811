@@ -6,6 +6,7 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import "./index.css";
 
 const rootElement = document.getElementById("root");
+const routePendingAttribute = "data-route-pending";
 
 const hasHydratableMarkup = (root: HTMLElement) => {
   const elementChildren = Array.from(root.children);
@@ -37,6 +38,10 @@ const shouldHydrate = (root: HTMLElement) => {
   return requestedPath === serverRenderedPath;
 };
 
+const revealInitialRoute = () => {
+  document.documentElement.removeAttribute(routePendingAttribute);
+};
+
 const app = (
   <StrictMode>
     <HelmetProvider>
@@ -49,9 +54,11 @@ const app = (
 
 if (rootElement) {
   if (shouldHydrate(rootElement)) {
+    revealInitialRoute();
     hydrateRoot(rootElement, app);
   } else {
     rootElement.replaceChildren();
+    revealInitialRoute();
     createRoot(rootElement).render(app);
   }
 }

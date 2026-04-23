@@ -937,23 +937,6 @@ a:hover .community-tile-img,
   border-radius: 0 !important;
 }
 
-/* Subtle Ken Burns zoom for cinematic hero videos */
-@keyframes subtle-zoom {
-  0% { transform: scale(1); }
-  100% { transform: scale(1.08); }
-}
+/* hero-video plays at native scale; Ken Burns animation removed */
 
-video.hero-video {
-  animation: subtle-zoom 10s ease-in-out infinite alternate;
-}
-
-@media (max-width: 768px) {
-  @keyframes subtle-zoom-mobile {
-    0% { transform: scale(1); }
-    100% { transform: scale(1.04); }
-  }
-  video.hero-video {
-    animation: subtle-zoom-mobile 10s ease-in-out infinite alternate;
-  }
-}
 

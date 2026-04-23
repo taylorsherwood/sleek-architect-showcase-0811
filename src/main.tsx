@@ -1,4 +1,4 @@
-import { StrictMode } from "react";
+import { StrictMode, useLayoutEffect } from "react";
 import { createRoot, hydrateRoot } from "react-dom/client";
 import { HelmetProvider } from "react-helmet-async";
 import App from "./App.tsx";
@@ -42,23 +42,31 @@ const revealInitialRoute = () => {
   document.documentElement.removeAttribute(routePendingAttribute);
 };
 
+const RouteReady = ({ children }: { children: React.ReactNode }) => {
+  useLayoutEffect(() => {
+    revealInitialRoute();
+  }, []);
+
+  return children;
+};
+
 const app = (
   <StrictMode>
-    <HelmetProvider>
-      <ThemeProvider defaultTheme="light" storageKey="architecture-theme">
-        <App />
-      </ThemeProvider>
-    </HelmetProvider>
+    <RouteReady>
+      <HelmetProvider>
+        <ThemeProvider defaultTheme="light" storageKey="architecture-theme">
+          <App />
+        </ThemeProvider>
+      </HelmetProvider>
+    </RouteReady>
   </StrictMode>
 );
 
 if (rootElement) {
   if (shouldHydrate(rootElement)) {
-    revealInitialRoute();
     hydrateRoot(rootElement, app);
   } else {
     rootElement.replaceChildren();
-    revealInitialRoute();
     createRoot(rootElement).render(app);
   }
 }

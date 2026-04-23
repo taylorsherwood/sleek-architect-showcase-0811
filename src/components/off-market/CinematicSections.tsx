@@ -6,7 +6,7 @@ import { useIsMobile } from "@/hooks/use-mobile";
 
 import westlakeDusk from "@/assets/community-westlake-hills-hero.webp";
 import privateInventoryHero from "@/assets/hero-luxury-austin.webp";
-import parallaxEstate from "@/assets/off-market-parallax-estate.webp";
+
 import card78746 from "@/assets/barton-creek-estate-new.webp";
 import cardTarrytown from "@/assets/community-tarrytown.webp";
 import cardOldEnfield from "@/assets/pemberton-heights.webp";

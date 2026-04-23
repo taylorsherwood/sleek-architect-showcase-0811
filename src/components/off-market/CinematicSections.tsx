@@ -223,26 +223,59 @@ const CinematicSections = ({ formNode }: Props) => {
       if (horizontalTrack && horizontalSection) {
         const totalScroll = horizontalTrack.scrollWidth - window.innerWidth;
 
-        // Cinematic entrance — first card image gently scales/fades from below
-        // as the section approaches, BEFORE the horizontal pin engages.
-        gsap.fromTo(
-          ".horizontal-card",
-          { opacity: 0, scale: 1.08, y: 40 },
-          {
-            opacity: 1,
-            scale: 1,
-            y: 0,
-            ease: "power2.out",
-            duration: 1.4,
-            stagger: { amount: 0.4, from: "start" },
-            scrollTrigger: {
-              trigger: ".horizontal-section",
-              start: "top 90%",
-              end: "top 20%",
-              scrub: 1.2,
-            },
-          }
-        );
+        // Pre-set states for the curtain reveal
+        gsap.set(".reveal-curtain", { yPercent: 0 });
+        gsap.set(".horizontal-card.is-first .horizontal-card-image", { scale: 1.25, yPercent: 8 });
+        gsap.set(".horizontal-card.is-first .card-content", { opacity: 0, y: 60 });
+
+        // Sophisticated curtain reveal — pinned timeline that bridges counter → gallery
+        const revealTl = gsap.timeline({
+          scrollTrigger: {
+            trigger: ".horizontal-section",
+            start: "top bottom",
+            end: "top top",
+            scrub: 1.4,
+          },
+        });
+        revealTl
+          // Gold bloom blooms in first
+          .fromTo(
+            ".reveal-bloom",
+            { opacity: 0, scale: 0.6 },
+            { opacity: 1, scale: 1, ease: "power2.out", duration: 0.5 },
+            0
+          )
+          // Eyebrow label fades in mid-reveal
+          .fromTo(
+            ".reveal-eyebrow",
+            { opacity: 0, y: 20 },
+            { opacity: 1, y: 0, ease: "power2.out", duration: 0.4 },
+            0.15
+          )
+          // Curtain lifts up to expose the first card
+          .to(
+            ".reveal-curtain",
+            { yPercent: -100, ease: "power3.inOut", duration: 0.8 },
+            0.3
+          )
+          // First card image settles from over-scaled position into place
+          .to(
+            ".horizontal-card.is-first .horizontal-card-image",
+            { scale: 1, yPercent: 0, ease: "power2.out", duration: 0.9 },
+            0.3
+          )
+          // Eyebrow + bloom fade out as card content rises
+          .to(
+            [".reveal-eyebrow", ".reveal-bloom"],
+            { opacity: 0, ease: "power2.in", duration: 0.4 },
+            0.7
+          )
+          // First card text rises
+          .to(
+            ".horizontal-card.is-first .card-content",
+            { opacity: 1, y: 0, ease: "power3.out", duration: 0.6 },
+            0.75
+          );
 
         // Horizontal scroll pin
         gsap.to(horizontalTrack, {

@@ -59,6 +59,7 @@ const CinematicSections = ({ formNode }: Props) => {
       smoothWheel: true,
     });
     lenisRef.current = lenis;
+    (window as unknown as { __lenis?: Lenis }).__lenis = lenis;
 
     function raf(time: number) {
       lenis.raf(time);

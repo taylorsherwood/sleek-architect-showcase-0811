@@ -72,28 +72,10 @@ const CinematicSections = ({ formNode }: Props) => {
     return () => obs.disconnect();
   }, [isMobile]);
 
-  // Play testimonial background video the moment its section enters view
-  // (i.e. as the image takes over the screen, before the split reveal).
-  useEffect(() => {
-    const video = testimonialVideoRef.current;
-    if (!video) return;
-    const section = video.closest("section");
-    if (!section) return;
-
-    const obs = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          video.play().catch(() => {});
-        } else {
-          video.pause();
-          video.currentTime = 0;
-        }
-      },
-      { threshold: 0.25 }
-    );
-    obs.observe(section);
-    return () => obs.disconnect();
-  }, [isMobile]);
+  // Testimonial / split-reveal video playback is driven by ScrollTrigger
+  // inside the GSAP context (see Section 2.5 below). It fires the moment the
+  // split is fully open and re-triggers each time the user scrolls back into
+  // that point — no auto-loop.
 
   // Lenis smooth scroll (desktop only)
   useEffect(() => {
@@ -192,6 +174,29 @@ const CinematicSections = ({ formNode }: Props) => {
         )
         // Hold the open state briefly before unpin
         .to({}, { duration: 0.15 });
+
+      // Trigger the split-reveal video the moment the split is fully open.
+      // Re-fires every time the user scrolls back to that point — no auto-loop.
+      ScrollTrigger.create({
+        trigger: ".split-section",
+        start: "top top",
+        end: "+=260%",
+        onUpdate: (self) => {
+          const video = testimonialVideoRef.current;
+          if (!video) return;
+          if (self.progress >= 0.85) {
+            if (video.paused) {
+              video.currentTime = 0;
+              video.play().catch(() => {});
+            }
+          } else {
+            if (!video.paused) {
+              video.pause();
+              video.currentTime = 0;
+            }
+          }
+        },
+      });
 
       // ── Section 3 (new): Drone Video — pin section, reveal text on scroll
       const droneEls = gsap.utils.toArray<HTMLElement>(".drone-reveal");
@@ -548,8 +553,7 @@ const CinematicSections = ({ formNode }: Props) => {
             poster={austinSkylineParallax}
             muted
             playsInline
-            loop
-            preload="metadata"
+            preload="auto"
             aria-label="2300 Barton Creek private estate aerial"
           />
           <div className="absolute inset-0 bg-black/20" />

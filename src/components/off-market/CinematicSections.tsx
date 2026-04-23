@@ -475,11 +475,19 @@ const CinematicSections = ({ formNode }: Props) => {
           className="font-display text-[hsl(40,30%,92%)] text-center px-8 max-w-[90vw] leading-[1.15] font-light"
           style={{ fontSize: "6vw" }}
         >
-          {THESIS.split(" ").map((word, i) => (
-            <span key={i} className="thesis-word inline-block mr-[0.25em] will-change-transform">
-              {word}
-            </span>
-          ))}
+          {THESIS.split(" ").map((word, i) => {
+            const isIntroduced = word.replace(/[.,]/g, "").toLowerCase() === "introduced";
+            return (
+              <span
+                key={i}
+                className={`thesis-word inline-block mr-[0.25em] will-change-transform ${
+                  isIntroduced ? "italic text-[hsl(var(--gold))]" : ""
+                }`}
+              >
+                {word}
+              </span>
+            );
+          })}
         </h2>
       </section>
 

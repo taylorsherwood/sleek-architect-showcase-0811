@@ -626,7 +626,7 @@ const TestimonialsSection = () => {
               </p>
 
               {revealed && (
-                <div className="flex items-center gap-2.5 mt-10" style={{ paddingLeft: "0.9ch" }}>
+                <div className="flex items-center gap-2.5 mt-10" style={{ paddingLeft: "1.6ch" }}>
                   {testimonials.map((_, i) => (
                     <button
                       key={i}

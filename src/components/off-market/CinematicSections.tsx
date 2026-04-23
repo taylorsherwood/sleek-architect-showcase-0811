@@ -345,7 +345,8 @@ const CinematicSections = ({ formNode }: Props) => {
         {/* Section 2 — Thesis (static) */}
         <section className="py-24 px-6 bg-[hsl(220,15%,8%)] text-center">
           <p className="font-display text-3xl sm:text-4xl leading-tight text-[hsl(40,30%,90%)]">
-            {THESIS}
+            The best Austin homes don't get listed. They get{" "}
+            <span className="italic text-[hsl(var(--gold))]">introduced</span>.
           </p>
         </section>
 

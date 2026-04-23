@@ -259,7 +259,7 @@ const CinematicSections = ({ formNode }: Props) => {
         });
       }
 
-      // ── Section 5: Pinned Counter
+      // ── Section 5: Counter (no pin — flows between drone and parallax sections)
       const statEls = gsap.utils.toArray<HTMLSpanElement>(".stat-number");
       const counterObj = STATS.map((s) => ({ value: 0, target: s.value }));
       gsap.to(counterObj, {
@@ -267,9 +267,8 @@ const CinematicSections = ({ formNode }: Props) => {
         ease: "none",
         scrollTrigger: {
           trigger: ".stats-section",
-          start: "top top",
-          end: "+=200%",
-          pin: true,
+          start: "top 80%",
+          end: "bottom 30%",
           scrub: 1,
           onUpdate: () => {
             statEls.forEach((el, i) => {

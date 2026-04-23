@@ -672,7 +672,7 @@ const CinematicSections = ({ formNode }: Props) => {
           {NEIGHBORHOODS.map((n) => (
             <div
               key={n.name}
-              className="relative h-screen flex items-end overflow-hidden"
+              className="horizontal-card relative h-screen flex items-end overflow-hidden will-change-transform"
               style={{ width: "80vw" }}
             >
               <div

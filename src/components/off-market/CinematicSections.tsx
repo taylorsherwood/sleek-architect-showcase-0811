@@ -496,7 +496,7 @@ const CinematicSections = ({ formNode }: Props) => {
               ECHELON INSIDER
             </p>
             <h2 className="font-display text-2xl font-light text-white mb-3 text-center whitespace-pre-line">
-              {"\n\n"}See you on the inside,
+              {"\n"}See you on the inside,
             </h2>
             <div className="flex justify-center mb-3">
               <img
@@ -768,7 +768,7 @@ const CinematicSections = ({ formNode }: Props) => {
               ECHELON INSIDER
             </p>
             <h2 className="font-display text-4xl md:text-5xl font-light text-white leading-tight whitespace-pre-line">
-              {"\n\n"}See you on the inside,
+              {"\n"}See you on the inside,
             </h2>
           </div>
           <div className="form-field flex justify-center mb-4">

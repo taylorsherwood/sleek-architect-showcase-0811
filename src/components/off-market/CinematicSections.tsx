@@ -143,7 +143,6 @@ const CinematicSections = ({ formNode }: Props) => {
       //   the skyline + headline behind them.
       // Phase 3 (0.85 → 1):   headline blooms in at full scale.
       gsap.set([".split-top-half", ".split-bottom-half"], { yPercent: 0 });
-      gsap.set(".split-text", { opacity: 0, scale: 0.94 });
       gsap.set(".split-cover-image", { scale: 1.08 });
 
       const splitTl = gsap.timeline({
@@ -171,12 +170,6 @@ const CinematicSections = ({ formNode }: Props) => {
           ".split-bottom-half",
           { yPercent: 100, ease: "power2.inOut", duration: 0.4 },
           0.45
-        )
-        // Phase 3 — text bloom
-        .to(
-          ".split-text",
-          { opacity: 1, scale: 1, ease: "power3.out", duration: 0.25 },
-          0.7
         )
         // Hold the open state briefly before unpin
         .to({}, { duration: 0.15 });

@@ -155,8 +155,10 @@ const OffMarketRealEstateAustin = () => {
 
   const inputClass =
     "w-full bg-transparent border-b border-white/20 focus:border-[hsl(var(--gold))] outline-none py-3 text-white font-sans transition-colors placeholder:text-white/30";
-  const selectClass =
-    "w-full bg-transparent border-b border-white/20 focus:border-[hsl(var(--gold))] outline-none py-3 text-white font-sans transition-colors appearance-none cursor-pointer [&>option]:bg-[hsl(220,15%,12%)] [&>option]:text-white";
+  const selectBase =
+    "w-full bg-transparent border-b border-white/20 focus:border-[hsl(var(--gold))] outline-none py-3 font-sans transition-colors appearance-none cursor-pointer [&>option]:bg-[hsl(220,15%,12%)] [&>option]:text-white";
+  const selectClassFor = (value: string) =>
+    `${selectBase} ${value ? "text-white" : "text-[hsl(var(--gold))]"}`;
 
   const formContent = submitted ? (
     <div className="text-center py-12 pt-20 flex flex-col items-center">
@@ -185,7 +187,7 @@ const OffMarketRealEstateAustin = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div>
           <label htmlFor="interest" className="block text-white/40 mb-1.5" style={labelStyle}>Looking For</label>
-          <select id="interest" value={form.interest} onChange={(e) => setForm(prev => ({ ...prev, interest: e.target.value }))} className={selectClass}>
+          <select id="interest" value={form.interest} onChange={(e) => setForm(prev => ({ ...prev, interest: e.target.value }))} className={selectClassFor(form.interest)}>
             <option value="">Select</option>
             <option value="Luxury Residential">Luxury Residential</option>
             <option value="Investment">Investment Property</option>
@@ -195,7 +197,7 @@ const OffMarketRealEstateAustin = () => {
         </div>
         <div>
           <label htmlFor="budget" className="block text-white/40 mb-1.5" style={labelStyle}>Budget Range</label>
-          <select id="budget" value={form.budget} onChange={(e) => setForm(prev => ({ ...prev, budget: e.target.value }))} className={selectClass}>
+          <select id="budget" value={form.budget} onChange={(e) => setForm(prev => ({ ...prev, budget: e.target.value }))} className={selectClassFor(form.budget)}>
             <option value="">Select</option>
             <option value="$500K–$1M">$500K – $1M</option>
             <option value="$1M–$3M">$1M – $3M</option>
@@ -207,7 +209,7 @@ const OffMarketRealEstateAustin = () => {
       </div>
       <div>
         <label htmlFor="timeline" className="block text-white/40 mb-1.5" style={labelStyle}>Timeline</label>
-        <select id="timeline" value={form.timeline} onChange={(e) => setForm(prev => ({ ...prev, timeline: e.target.value }))} className={selectClass}>
+        <select id="timeline" value={form.timeline} onChange={(e) => setForm(prev => ({ ...prev, timeline: e.target.value }))} className={selectClassFor(form.timeline)}>
           <option value="">Select</option>
           <option value="Immediately">Immediately</option>
           <option value="1–3 months">1–3 months</option>

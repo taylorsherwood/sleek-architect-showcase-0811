@@ -371,12 +371,7 @@ const CinematicSections = ({ formNode }: Props) => {
           end: "+=160%",
           pin: true,
           pinSpacing: true,
-          scrub: 1.0,
-          anticipatePin: 1,
-        },
-      });
-
-      testimonialTl
+          scrub: 2,
         // Phase 1 — slow Ken Burns settle
         .to(".testimonial-split-image", { scale: 1, ease: "power1.out", duration: 0.35 }, 0)
         // Phase 2 — right half drifts away on a long, refined curve

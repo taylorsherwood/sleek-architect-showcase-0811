@@ -198,6 +198,25 @@ const CinematicSections = ({ formNode }: Props) => {
 
       // ── Section 3: Parallax Image Reveal — REMOVED
 
+      // ── Section 3.5: Cinematic Parallax Bridge — pin and reveal headline
+      const bridgeTl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".bridge-section",
+          start: "top top",
+          end: "+=120%",
+          scrub: 1,
+          pin: true,
+          pinSpacing: true,
+          anticipatePin: 1,
+        },
+      });
+      bridgeTl
+        .fromTo(".bridge-image", { yPercent: -8, scale: 1.08 }, { yPercent: 8, scale: 1, ease: "none" }, 0)
+        .fromTo(".bridge-eyebrow", { opacity: 0, y: 20 }, { opacity: 1, y: 0, ease: "power2.out", duration: 0.4 }, 0.15)
+        .fromTo(".bridge-headline", { opacity: 0, y: 50 }, { opacity: 1, y: 0, ease: "power2.out", duration: 0.6 }, 0.25)
+        .fromTo(".bridge-rule", { width: 0, opacity: 0 }, { width: 120, opacity: 1, ease: "power2.out", duration: 0.5 }, 0.5)
+        .to({}, { duration: 0.3 });
+
       // ── Section 4: Horizontal Scroll Gallery
       const horizontalTrack = document.querySelector<HTMLDivElement>(".horizontal-track");
       const horizontalSection = document.querySelector<HTMLElement>(".horizontal-section");

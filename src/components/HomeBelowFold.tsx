@@ -532,6 +532,7 @@ const TestimonialsSection = () => {
       gsap.set(".tsplit-image", { scale: 1.08 });
       gsap.set(".tsplit-line", { opacity: 0, y: 24, filter: "blur(8px)" });
       gsap.set(".tsplit-attribution", { opacity: 0, y: 12, filter: "blur(6px)" });
+      gsap.set(".tsplit-overlay", { opacity: 1, y: 0, filter: "blur(0px)" });
 
       gsap.timeline({
         scrollTrigger: {

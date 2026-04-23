@@ -783,6 +783,7 @@ const CommunitiesSection = () => (
       <div className="max-w-[1320px] mx-auto">
         <ScrollReveal>
           <div className="text-center mb-16">
+            <div className="w-10 h-px mx-auto mb-5" style={{ background: "hsl(38 39% 61%)" }} />
             <p className="text-minimal text-gold mb-5">SELECT COMMUNITIES</p>
             <h2 className="font-display text-3xl md:text-[2.75rem] font-normal text-foreground/90 leading-[1.1] tracking-[0.03em]">
               Explore Austin's Most Sought-After Communities

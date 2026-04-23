@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createBreadcrumbSchema, createFAQSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
@@ -7,6 +7,33 @@ import echelonLogo from "@/assets/echelon-logo-gold.png";
 import { formatPhoneNumber, getTimestamp } from "@/lib/formUtils";
 import CinematicSections from "@/components/off-market/CinematicSections";
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from "@/components/ui/dialog";
+
+// Eagerly preload all hero & funnel media so it's ready before scroll
+import privateInventoryHero from "@/assets/hero-luxury-austin.webp";
+import austinSkylineParallax from "@/assets/austin-skyline-parallax.webp";
+import westlakeHillsHero from "@/assets/community-westlake-hills-hero.webp";
+import bartonCreekEstate from "@/assets/barton-creek-estate-new.webp";
+import westlakeNew from "@/assets/community-westlake-new.webp";
+import davenportRanch from "@/assets/davenport-ranch-estate.webp";
+import spanishOaks from "@/assets/spanish-oaks-estate.webp";
+import tarrytown from "@/assets/community-tarrytown.webp";
+import pembertonHeights from "@/assets/pemberton-heights.webp";
+import testimonialLivingRoom from "@/assets/testimonial-westlake-living-room.webp";
+import offMarketReveal from "@/assets/off-market-reveal-estate.webp";
+
+const FUNNEL_ASSETS = [
+  privateInventoryHero,
+  austinSkylineParallax,
+  westlakeHillsHero,
+  bartonCreekEstate,
+  westlakeNew,
+  davenportRanch,
+  spanishOaks,
+  tarrytown,
+  pembertonHeights,
+  testimonialLivingRoom,
+  offMarketReveal,
+];
 
 const SITE = "https://www.echelonpropertygroup.com";
 

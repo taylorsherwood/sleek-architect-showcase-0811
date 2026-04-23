@@ -582,7 +582,7 @@ const TestimonialsSection = () => {
           <div className="max-w-xl md:w-1/2 md:pl-8">
             <p
               className="tsplit-attribution text-gold mb-6 font-sans uppercase will-change-transform"
-              style={{ fontSize: "0.72rem", letterSpacing: "0.28em", paddingLeft: "0.9ch" }}
+              style={{ fontSize: "0.72rem", letterSpacing: "0.28em", paddingLeft: "1.6ch" }}
             >
               Client Experiences
             </p>

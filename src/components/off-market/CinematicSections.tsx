@@ -14,7 +14,7 @@ import cardWestlake from "@/assets/community-westlake-new.webp";
 import cardDavenport from "@/assets/davenport-ranch-estate.webp";
 import cardSpanishOaks from "@/assets/spanish-oaks-estate.webp";
 import desktopNote from "@/assets/testimonial-westlake-living-room.webp";
-import austinSkylineParallax from "@/assets/austin-skyline-parallax.webp";
+
 import clarksvilleImg from "@/assets/off-market-reveal-estate.webp";
 import taylorSignature from "@/assets/taylor-sherwood-signature.png";
 import testimonialSplitImg from "@/assets/testimonial-split-lake-austin.webp";
@@ -48,7 +48,7 @@ const CinematicSections = ({ formNode }: Props) => {
   const rootRef = useRef<HTMLDivElement>(null);
   const lenisRef = useRef<Lenis | null>(null);
   const droneVideoRef = useRef<HTMLVideoElement>(null);
-  const testimonialVideoRef = useRef<HTMLVideoElement>(null);
+  
 
   // Play drone video only while its section is in view; pause + reset when it leaves.
   useEffect(() => {
@@ -84,43 +84,20 @@ const CinematicSections = ({ formNode }: Props) => {
     if (reduceMotion) return;
 
     const lenis = new Lenis({
-      duration: 2.2,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      duration: 1.4,
+      easing: (t) => 1 - Math.pow(1 - t, 3),
       smoothWheel: true,
-      wheelMultiplier: 0.6,
+      wheelMultiplier: 1.0,
       touchMultiplier: 1.5,
-      lerp: 0.05,
+      lerp: 0.1,
       syncTouch: true,
       syncTouchLerp: 0.075,
       gestureOrientation: "vertical",
-      normalizeWheel: true,
     } as ConstructorParameters<typeof Lenis>[0]);
     lenisRef.current = lenis;
     (window as unknown as { __lenis?: Lenis }).__lenis = lenis;
 
-    // Disable native momentum/rubber-band that competes with Lenis on Mac trackpads
-    const prevHtmlOverscroll = document.documentElement.style.overscrollBehavior;
-    const prevBodyOverscroll = document.body.style.overscrollBehavior;
-    document.documentElement.style.overscrollBehavior = "none";
-    document.body.style.overscrollBehavior = "none";
-    const wheelGuard = (e: WheelEvent) => {
-      if (e.ctrlKey) return; // allow pinch-to-zoom
-    };
-    document.addEventListener("wheel", wheelGuard, { passive: true });
-
-    // Velocity-aware dampener — cap extreme trackpad flicks
-    let scrollVelocity = 0;
-    lenis.on("scroll", ({ velocity }: { velocity: number }) => {
-      scrollVelocity = Math.abs(velocity);
-      ScrollTrigger.update();
-    });
-    const lenisOpts = (lenis as unknown as { options: { wheelMultiplier: number } }).options;
-    Object.defineProperty(lenisOpts, "wheelMultiplier", {
-      configurable: true,
-      get() {
-        return scrollVelocity > 50 ? 0.4 : 0.6;
-      },
-    });
+    lenis.on("scroll", () => ScrollTrigger.update());
 
     let rafId = 0;
     function raf(time: number) {
@@ -134,9 +111,6 @@ const CinematicSections = ({ formNode }: Props) => {
 
     return () => {
       cancelAnimationFrame(rafId);
-      document.removeEventListener("wheel", wheelGuard);
-      document.documentElement.style.overscrollBehavior = prevHtmlOverscroll;
-      document.body.style.overscrollBehavior = prevBodyOverscroll;
       lenis.destroy();
       lenisRef.current = null;
       delete (window as unknown as { __lenis?: Lenis }).__lenis;
@@ -211,38 +185,6 @@ const CinematicSections = ({ formNode }: Props) => {
         // Hold the open state briefly before unpin
         .to({}, { duration: 0.15 });
 
-      // Trigger the split-reveal video as soon as the section pins (image
-      // takes over the screen). Re-fires every time the user scrolls back
-      // into the section — no auto-loop.
-      ScrollTrigger.create({
-        trigger: ".split-section",
-        start: "top top",
-        end: "+=160%",
-        onEnter: () => {
-          const video = testimonialVideoRef.current;
-          if (!video) return;
-          video.currentTime = 0;
-          video.play().catch(() => {});
-        },
-        onEnterBack: () => {
-          const video = testimonialVideoRef.current;
-          if (!video) return;
-          video.currentTime = 0;
-          video.play().catch(() => {});
-        },
-        onLeave: () => {
-          const video = testimonialVideoRef.current;
-          if (!video) return;
-          video.pause();
-          video.currentTime = 0;
-        },
-        onLeaveBack: () => {
-          const video = testimonialVideoRef.current;
-          if (!video) return;
-          video.pause();
-          video.currentTime = 0;
-        },
-      });
 
       // ── Section 3 (new): Drone Video — pin section, reveal text on scroll
       const droneEls = gsap.utils.toArray<HTMLElement>(".drone-reveal");
@@ -588,17 +530,14 @@ const CinematicSections = ({ formNode }: Props) => {
 
       {/* ── Section 2.5: Image Split Reveal ────── */}
       <section className="split-section relative h-screen w-full overflow-hidden bg-[hsl(220,15%,8%)]">
-        {/* Revealed background video — plays the moment it takes over the screen */}
+        {/* Revealed background image */}
         <div className="absolute inset-0 z-0">
-          <video
-            ref={testimonialVideoRef}
+          <img
+            src={testimonialSplitImg}
+            alt=""
+            aria-hidden="true"
             className="w-full h-full object-cover"
-            src="/videos/testimonial-barton-creek.mp4"
-            poster={austinSkylineParallax}
-            muted
-            playsInline
-            preload="auto"
-            aria-label="2300 Barton Creek private estate aerial"
+            decoding="async"
           />
           <div className="absolute inset-0 bg-black/20" />
         </div>

@@ -15,6 +15,7 @@ import cardSpanishOaks from "@/assets/spanish-oaks-estate.jpg";
 import desktopNote from "@/assets/testimonial-westlake-living-room.jpg";
 import austinSkylineParallax from "@/assets/austin-skyline-parallax.jpeg";
 import clarksvilleImg from "@/assets/off-market-reveal-estate.webp";
+import taylorSignature from "@/assets/taylor-sherwood-signature.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -490,14 +491,24 @@ const CinematicSections = ({ formNode }: Props) => {
 
         {/* Section 7 — Form */}
         <section id="section-7-form" className="py-16 px-6 bg-[hsl(220,15%,8%)]">
-          <div className="max-w-xl mx-auto border border-white/10 p-6 bg-white/[0.02]">
-            <p className="text-[hsl(var(--gold))] mb-3 font-bold" style={labelStyle}>
+          <div className="max-w-xl mx-auto">
+            <p className="text-[hsl(var(--gold))] mb-3 font-bold text-center" style={labelStyle}>
               REQUEST PRIVATE ACCESS
             </p>
-            <h2 className="font-display text-2xl font-light text-white mb-6">
+            <h2 className="font-display text-2xl font-light text-white mb-6 text-center">
               Tell Us What You're Looking For
             </h2>
-            {formNode}
+            <div className="flex justify-center mb-5">
+              <img
+                src={taylorSignature}
+                alt="Taylor Sherwood signature"
+                className="h-14 w-auto"
+                loading="lazy"
+              />
+            </div>
+            <div className="border border-white/10 p-6 bg-white/[0.02]">
+              {formNode}
+            </div>
           </div>
         </section>
       </div>
@@ -758,6 +769,14 @@ const CinematicSections = ({ formNode }: Props) => {
             <h2 className="font-display text-4xl md:text-5xl font-light text-white leading-tight">
               Tell Us What You're Looking For
             </h2>
+          </div>
+          <div className="form-field flex justify-center mb-6">
+            <img
+              src={taylorSignature}
+              alt="Taylor Sherwood signature"
+              className="h-16 md:h-20 w-auto"
+              loading="lazy"
+            />
           </div>
           <div className="form-field border border-white/10 p-10 bg-white/[0.02] backdrop-blur-sm">
             {formNode}

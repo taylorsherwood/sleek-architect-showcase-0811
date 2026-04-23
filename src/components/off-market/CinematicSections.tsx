@@ -73,6 +73,7 @@ const CinematicSections = ({ formNode }: Props) => {
     return () => {
       lenis.destroy();
       lenisRef.current = null;
+      delete (window as unknown as { __lenis?: Lenis }).__lenis;
     };
   }, [isMobile]);
 

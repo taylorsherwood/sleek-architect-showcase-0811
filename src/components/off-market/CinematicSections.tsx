@@ -84,9 +84,10 @@ const CinematicSections = ({ formNode }: Props) => {
     if (reduceMotion) return;
 
     const lenis = new Lenis({
-      duration: 1.2,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      duration: 1.6,
+      easing: (t) => 1 - Math.pow(1 - t, 4),
       smoothWheel: true,
+      wheelMultiplier: 0.85,
     });
     lenisRef.current = lenis;
     (window as unknown as { __lenis?: Lenis }).__lenis = lenis;
@@ -126,7 +127,7 @@ const CinematicSections = ({ formNode }: Props) => {
           trigger: ".thesis-section",
           start: "top top",
           // Allocate scroll distance per word so the reveal fills the pin
-          end: () => `+=${Math.max(words.length * 180, 1200)}`,
+          end: () => `+=${Math.max(words.length * 110, 800)}`,
           pin: true,
           scrub: 1,
           anticipatePin: 1,
@@ -136,7 +137,7 @@ const CinematicSections = ({ formNode }: Props) => {
         thesisTl.to(w, { opacity: 1, y: 0, ease: "power3.out", duration: 1 });
       });
       // Hold the final state briefly before releasing the pin
-      thesisTl.to({}, { duration: 0.6 });
+      thesisTl.to({}, { duration: 0.3 });
 
       // ── Section 2.5: Image Split Reveal
       // Phase 1 (0 → 0.45): image locks full-screen, subtle settle (slight zoom-out).
@@ -150,7 +151,7 @@ const CinematicSections = ({ formNode }: Props) => {
         scrollTrigger: {
           trigger: ".split-section",
           start: "top top",
-          end: "+=260%",
+          end: "+=160%",
           pin: true,
           pinSpacing: true,
           scrub: 1,
@@ -181,7 +182,7 @@ const CinematicSections = ({ formNode }: Props) => {
       ScrollTrigger.create({
         trigger: ".split-section",
         start: "top top",
-        end: "+=260%",
+        end: "+=160%",
         onEnter: () => {
           const video = testimonialVideoRef.current;
           if (!video) return;
@@ -215,7 +216,7 @@ const CinematicSections = ({ formNode }: Props) => {
         scrollTrigger: {
           trigger: ".drone-section",
           start: "top top",
-          end: "+=100%",
+          end: "+=70%",
           scrub: 1,
           pin: true,
           pinSpacing: true,
@@ -236,7 +237,7 @@ const CinematicSections = ({ formNode }: Props) => {
         scrollTrigger: {
           trigger: ".bridge-section",
           start: "top top",
-          end: "+=120%",
+          end: "+=80%",
           scrub: 1,
           pin: true,
           pinSpacing: true,
@@ -334,10 +335,10 @@ const CinematicSections = ({ formNode }: Props) => {
         scrollTrigger: {
           trigger: ".testimonial-section",
           start: "top top",
-          end: "+=240%",
+          end: "+=160%",
           pin: true,
           pinSpacing: true,
-          scrub: 1.4,
+          scrub: 1.0,
           anticipatePin: 1,
         },
       });

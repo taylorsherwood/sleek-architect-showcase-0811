@@ -677,11 +677,11 @@ const CinematicSections = ({ formNode }: Props) => {
       {/* ── Section 6: Vertical Split-Reveal Testimonial ─ */}
       <section className="testimonial-section relative w-full h-screen bg-[hsl(220,15%,6%)] overflow-hidden">
         {/* Testimonial sits behind the split image */}
-        <div className="absolute inset-0 z-0 flex items-center justify-center px-8">
-          <div className="max-w-4xl text-center">
+        <div className="absolute inset-0 z-0 flex items-center justify-end px-8 md:px-16 lg:px-24">
+          <div className="max-w-xl md:w-1/2 md:pl-8">
             <p
-              className="font-display italic text-white/90 font-light leading-[1.25] mb-10"
-              style={{ fontSize: "clamp(1.6rem, 2.6vw, 2.6rem)" }}
+              className="font-display italic text-white/90 font-light leading-[1.3] mb-10"
+              style={{ fontSize: "clamp(1.4rem, 2.2vw, 2.1rem)" }}
             >
               <span className="testimonial-line block will-change-transform">"Taylor brought us a Westlake home</span>
               <span className="testimonial-line block will-change-transform">before it ever hit the market.</span>

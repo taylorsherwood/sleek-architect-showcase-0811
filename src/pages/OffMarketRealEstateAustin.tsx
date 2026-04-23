@@ -312,6 +312,30 @@ const OffMarketRealEstateAustin = () => {
             </button>
           </div>
         </div>
+
+        {/* Scroll indicator — exaggerated, elegant */}
+        <button
+          onClick={() => {
+            window.scrollTo({ top: window.innerHeight, behavior: "smooth" });
+          }}
+          aria-label="Scroll to explore"
+          className="hero-scroll-cue absolute bottom-8 md:bottom-12 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-3 group cursor-pointer"
+        >
+          <span
+            className="text-[hsl(var(--gold))] font-sans group-hover:text-white transition-colors duration-500"
+            style={{
+              fontSize: "0.65rem",
+              letterSpacing: "0.45em",
+              textTransform: "uppercase",
+              fontWeight: 500,
+            }}
+          >
+            Scroll
+          </span>
+          <span className="hero-scroll-track relative block w-[1px] h-16 md:h-20 overflow-hidden bg-[hsl(var(--gold))]/20">
+            <span className="hero-scroll-bar absolute top-0 left-0 w-full h-1/2 bg-[hsl(var(--gold))]" />
+          </span>
+        </button>
       </section>
 
       {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

@@ -567,20 +567,6 @@ const CinematicSections = ({ formNode }: Props) => {
           />
           <div className="absolute inset-0 bg-black/20" />
         </div>
-        {/* Pinned text behind */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-8 z-0">
-          <div className="split-text will-change-transform relative z-10">
-            <p className="text-[hsl(var(--gold))] mb-6 font-bold" style={labelStyle}>
-              THE INVITATION
-            </p>
-            <h2
-              className="font-display text-[hsl(40,30%,92%)] font-light leading-[1.05] max-w-[90vw]"
-              style={{ fontSize: "6vw" }}
-            >
-              What happens before it's listed.
-            </h2>
-          </div>
-        </div>
         {/* Top half */}
         <div
           className="split-top-half absolute inset-0 z-10 will-change-transform"

@@ -1,12 +1,39 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createBreadcrumbSchema, createFAQSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
-import heroImage from "@/assets/hero-austin-skyline-sunset.jpg";
+import heroImage from "@/assets/hero-austin-skyline-sunset.webp";
 import echelonLogo from "@/assets/echelon-logo-gold.png";
 import { formatPhoneNumber, getTimestamp } from "@/lib/formUtils";
 import CinematicSections from "@/components/off-market/CinematicSections";
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from "@/components/ui/dialog";
+
+// Eagerly preload all hero & funnel media so it's ready before scroll
+import privateInventoryHero from "@/assets/hero-luxury-austin.webp";
+import austinSkylineParallax from "@/assets/austin-skyline-parallax.webp";
+import westlakeHillsHero from "@/assets/community-westlake-hills-hero.webp";
+import bartonCreekEstate from "@/assets/barton-creek-estate-new.webp";
+import westlakeNew from "@/assets/community-westlake-new.webp";
+import davenportRanch from "@/assets/davenport-ranch-estate.webp";
+import spanishOaks from "@/assets/spanish-oaks-estate.webp";
+import tarrytown from "@/assets/community-tarrytown.webp";
+import pembertonHeights from "@/assets/pemberton-heights.webp";
+import testimonialLivingRoom from "@/assets/testimonial-westlake-living-room.webp";
+import offMarketReveal from "@/assets/off-market-reveal-estate.webp";
+
+const FUNNEL_ASSETS = [
+  privateInventoryHero,
+  austinSkylineParallax,
+  westlakeHillsHero,
+  bartonCreekEstate,
+  westlakeNew,
+  davenportRanch,
+  spanishOaks,
+  tarrytown,
+  pembertonHeights,
+  testimonialLivingRoom,
+  offMarketReveal,
+];
 
 const SITE = "https://www.echelonpropertygroup.com";
 
@@ -40,6 +67,33 @@ const OffMarketRealEstateAustin = () => {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
+
+  // Aggressively preload every funnel image + drone video so nothing pops in on scroll
+  useEffect(() => {
+    const head = document.head;
+    const created: HTMLLinkElement[] = [];
+    FUNNEL_ASSETS.forEach((href) => {
+      const link = document.createElement("link");
+      link.rel = "preload";
+      link.as = "image";
+      link.href = href;
+      head.appendChild(link);
+      created.push(link);
+      // Also force the browser to begin decoding immediately
+      const img = new Image();
+      img.src = href;
+    });
+    const videoLink = document.createElement("link");
+    videoLink.rel = "preload";
+    videoLink.as = "video";
+    videoLink.href = "/video/barton-creek-drone.mp4";
+    videoLink.setAttribute("type", "video/mp4");
+    head.appendChild(videoLink);
+    created.push(videoLink);
+    return () => {
+      created.forEach((l) => l.parentNode?.removeChild(l));
+    };
+  }, []);
 
   const fireConversion = () => {
     const gtagFn = (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag;
@@ -243,6 +297,9 @@ const OffMarketRealEstateAustin = () => {
             title="Off-market homes in Austin Texas — private listings not on Zillow or MLS"
             className="w-full h-full object-cover"
             loading="eager"
+            decoding="sync"
+            // @ts-expect-error fetchpriority is a valid HTML attribute
+            fetchpriority="high"
           />
           <div className="absolute inset-0" style={{ backgroundColor: "rgba(12, 15, 36, 0.3)" }} />
           {/* Gradient overlay for text readability */}

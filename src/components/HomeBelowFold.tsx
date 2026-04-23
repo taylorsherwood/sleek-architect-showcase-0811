@@ -697,7 +697,6 @@ const TestimonialsSection = () => {
               clients first.{" "}
               <span style={{ color: "#b9a06c" }}>Proven Results.</span>
             </h2>
-            <div className="w-16 h-px mx-auto mt-8" style={{ background: "#b9a06c" }} />
           </div>
         </div>
       </section>

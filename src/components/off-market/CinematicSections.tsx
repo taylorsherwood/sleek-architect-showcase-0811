@@ -677,7 +677,8 @@ const CinematicSections = ({ formNode }: Props) => {
 
       {/* ── Section 5: Pinned Counter ──────────── */}
       <section className="stats-section relative h-screen w-full bg-[hsl(220,15%,8%)] flex items-center justify-center overflow-hidden">
-        <div className="container mx-auto px-8 max-w-7xl">
+        <div className="stats-outro pointer-events-none absolute inset-0 bg-[hsl(220,15%,8%)] opacity-0" aria-hidden="true" />
+        <div className="stats-grid container relative z-10 mx-auto px-8 max-w-7xl">
           <div className="grid grid-cols-3 gap-12 lg:gap-16 items-end">
             {STATS.map((s, i) => (
               <div key={s.label} className="text-center min-w-0 overflow-hidden">
@@ -699,36 +700,41 @@ const CinematicSections = ({ formNode }: Props) => {
       </section>
 
       {/* ── Section 4: Horizontal Scroll Gallery ─ */}
-      <section className="horizontal-section relative h-screen w-full overflow-hidden bg-[hsl(220,15%,6%)]">
-        <div className="horizontal-track absolute top-0 left-0 h-full flex" style={{ width: "max-content" }}>
-          {NEIGHBORHOODS.map((n, idx) => (
-            <div
-              key={n.name}
-              className={`horizontal-card relative h-screen flex items-end overflow-hidden will-change-transform ${idx === 0 ? "is-first" : ""}`}
-              style={{ width: "80vw" }}
-            >
-              <div
-                className="horizontal-card-image absolute inset-0 will-change-transform"
-                style={{ width: "100%", left: "0%" }}
-              >
-                <img
-                  src={n.image}
-                  alt={`${n.name} luxury Austin neighborhood`}
-                  className="w-full h-full object-cover"
-                  decoding="async"
-                />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/15 to-transparent" />
-              <div className="card-content relative z-10 p-10 lg:p-14 max-w-xl">
-                <p className="mb-4 text-xs uppercase tracking-[0.24em] font-sans" style={{ color: "#b9a06c" }}>
-                  {n.stat}
-                </p>
-                <h2 className="font-display text-4xl lg:text-6xl text-white leading-[0.98]">
-                  {n.name}
-                </h2>
-              </div>
+      <section className="communities-section relative w-full bg-[hsl(220,15%,6%)] overflow-hidden">
+        <div className="sticky top-0 h-screen overflow-hidden">
+          <div className="communities-veil pointer-events-none absolute inset-0 z-20 bg-[hsl(220,15%,8%)]" aria-hidden="true" />
+          <div className="horizontal-section relative h-screen w-full overflow-hidden bg-[hsl(220,15%,6%)]">
+            <div className="horizontal-track absolute top-0 left-0 h-full flex" style={{ width: "max-content" }}>
+              {NEIGHBORHOODS.map((n, idx) => (
+                <div
+                  key={n.name}
+                  className={`horizontal-card relative h-screen flex items-end overflow-hidden will-change-transform ${idx === 0 ? "is-first" : ""}`}
+                  style={{ width: "80vw" }}
+                >
+                  <div
+                    className="horizontal-card-image absolute inset-0 will-change-transform"
+                    style={{ width: "100%", left: "0%" }}
+                  >
+                    <img
+                      src={n.image}
+                      alt={`${n.name} luxury Austin neighborhood`}
+                      className="w-full h-full object-cover"
+                      decoding="async"
+                    />
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/15 to-transparent" />
+                  <div className="card-content relative z-10 p-10 lg:p-14 max-w-xl">
+                    <p className="mb-4 text-xs uppercase tracking-[0.24em] font-sans" style={{ color: "#b9a06c" }}>
+                      {n.stat}
+                    </p>
+                    <h2 className="font-display text-4xl lg:text-6xl text-white leading-[0.98]">
+                      {n.name}
+                    </h2>
+                  </div>
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
         </div>
       </section>
 

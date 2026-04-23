@@ -652,8 +652,7 @@ const TestimonialsSection = () => {
         <div className="tsplit-left absolute inset-y-0 left-0 w-1/2 z-10 overflow-hidden will-change-transform">
           <img
             src={lakeAustinTestimonialImg}
-            alt=""
-            aria-hidden="true"
+            alt="Lake Austin luxury waterfront estate at golden hour"
             className="tsplit-image absolute inset-y-0 left-0 h-full w-screen max-w-none object-cover will-change-transform"
             decoding="async"
           />

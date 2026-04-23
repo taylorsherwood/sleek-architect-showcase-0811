@@ -757,7 +757,7 @@ const CinematicSections = ({ formNode }: Props) => {
             <img
               src={taylorSignature}
               alt="Taylor Sherwood signature"
-              className="h-28 md:h-36 w-auto"
+              className="h-20 md:h-28 w-auto"
               decoding="async"
             />
           </div>

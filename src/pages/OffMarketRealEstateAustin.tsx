@@ -68,6 +68,33 @@ const OffMarketRealEstateAustin = () => {
   const [loading, setLoading] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
 
+  // Aggressively preload every funnel image + drone video so nothing pops in on scroll
+  useEffect(() => {
+    const head = document.head;
+    const created: HTMLLinkElement[] = [];
+    FUNNEL_ASSETS.forEach((href) => {
+      const link = document.createElement("link");
+      link.rel = "preload";
+      link.as = "image";
+      link.href = href;
+      head.appendChild(link);
+      created.push(link);
+      // Also force the browser to begin decoding immediately
+      const img = new Image();
+      img.src = href;
+    });
+    const videoLink = document.createElement("link");
+    videoLink.rel = "preload";
+    videoLink.as = "video";
+    videoLink.href = "/video/barton-creek-drone.mp4";
+    videoLink.setAttribute("type", "video/mp4");
+    head.appendChild(videoLink);
+    created.push(videoLink);
+    return () => {
+      created.forEach((l) => l.parentNode?.removeChild(l));
+    };
+  }, []);
+
   const fireConversion = () => {
     const gtagFn = (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag;
     if (typeof gtagFn === "function") {

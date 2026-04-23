@@ -509,7 +509,7 @@ const CinematicSections = ({ formNode }: Props) => {
           style={{ clipPath: "inset(0 0 50% 0)" }}
         >
           <img
-            src={westlakeDusk}
+            src={austinSkylineParallax}
             alt=""
             aria-hidden="true"
             className="w-full h-full object-cover"
@@ -522,7 +522,7 @@ const CinematicSections = ({ formNode }: Props) => {
           style={{ clipPath: "inset(50% 0 0 0)" }}
         >
           <img
-            src={westlakeDusk}
+            src={austinSkylineParallax}
             alt=""
             aria-hidden="true"
             className="w-full h-full object-cover"

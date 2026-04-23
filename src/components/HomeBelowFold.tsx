@@ -535,7 +535,7 @@ const TestimonialsSection = () => {
 
       gsap.timeline({
         scrollTrigger: {
-          trigger: ".tsplit-section",
+          trigger: root,
           start: "top top",
           end: "+=160%",
           pin: true,

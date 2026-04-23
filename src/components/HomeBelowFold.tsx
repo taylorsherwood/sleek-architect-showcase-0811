@@ -605,7 +605,7 @@ const TestimonialsSection = () => {
                 style={{
                   fontSize: "0.72rem",
                   letterSpacing: "0.28em",
-                  paddingLeft: "0.9ch",
+                  paddingLeft: "1.6ch",
                   animation: revealed ? "fadeUp 0.7s ease 0.15s both" : undefined,
                 }}
               >

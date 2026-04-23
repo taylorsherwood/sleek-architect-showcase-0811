@@ -218,9 +218,9 @@ const CinematicSections = ({ formNode }: Props) => {
         .to({}, { duration: 0.3 });
 
       // ── Section 4: Horizontal Scroll Gallery
-      const horizontalTrack = document.querySelector<HTMLDivElement>(".horizontal-track");
+      const horizontalTrack = root.querySelector<HTMLDivElement>(".horizontal-track");
       if (horizontalTrack) {
-        const totalScroll = horizontalTrack.scrollWidth - window.innerWidth;
+        const getTotalScroll = () => Math.max(horizontalTrack.scrollWidth - window.innerWidth, 0);
 
         // Cinematic reveal — as the gallery enters viewport (after counter unpins),
         // the first card image scales down from over-zoomed and the entire track
@@ -243,14 +243,15 @@ const CinematicSections = ({ formNode }: Props) => {
           .to(".horizontal-card.is-first .card-content", { opacity: 1, y: 0, ease: "none" }, 0.4);
 
         // Horizontal scroll pin
-        gsap.to(horizontalTrack, {
-          x: -totalScroll,
+        const horizontalTween = gsap.to(horizontalTrack, {
+          x: () => -getTotalScroll(),
           ease: "none",
           scrollTrigger: {
             trigger: ".horizontal-section",
             start: "top top",
-            end: () => `+=${totalScroll}`,
+            end: () => `+=${getTotalScroll()}`,
             pin: true,
+            pinSpacing: true,
             scrub: 1,
             anticipatePin: 1,
             invalidateOnRefresh: true,
@@ -267,7 +268,7 @@ const CinematicSections = ({ formNode }: Props) => {
               ease: "none",
               scrollTrigger: {
                 trigger: img.parentElement!,
-                containerAnimation: gsap.getTweensOf(horizontalTrack)[0],
+                containerAnimation: horizontalTween,
                 start: "left right",
                 end: "right left",
                 scrub: 1,
@@ -705,12 +706,12 @@ const CinematicSections = ({ formNode }: Props) => {
 
       {/* ── Section 4: Horizontal Scroll Gallery ─ */}
       <section className="horizontal-section relative h-screen w-full overflow-hidden bg-[hsl(220,15%,6%)]">
-        <div className="horizontal-track absolute top-0 left-0 h-full flex" style={{ width: "max-content" }}>
+        <div className="horizontal-track absolute top-0 left-0 flex h-full" style={{ width: `${NEIGHBORHOODS.length * 100}vw` }}>
           {NEIGHBORHOODS.map((n, idx) => (
             <div
               key={n.name}
               className={`horizontal-card relative h-screen flex items-end overflow-hidden will-change-transform ${idx === 0 ? "is-first" : ""}`}
-              style={{ width: "80vw" }}
+              style={{ width: "100vw", height: "100vh", flexShrink: 0 }}
             >
               <div
                 className="horizontal-card-image absolute inset-0 will-change-transform"
@@ -723,7 +724,17 @@ const CinematicSections = ({ formNode }: Props) => {
                   decoding="async"
                 />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/15 to-transparent" />
+              <div
+                className="absolute inset-0 pointer-events-none"
+                style={{ backgroundColor: "rgba(12, 15, 36, 0.2)" }}
+              />
+              <div
+                className="absolute inset-x-0 bottom-0 h-1/2 pointer-events-none"
+                style={{
+                  background:
+                    "linear-gradient(to top, rgba(12, 15, 36, 0.75), rgba(12, 15, 36, 0))",
+                }}
+              />
               <div className="card-content relative z-10 p-10 lg:p-14 max-w-xl">
                 <p className="mb-4 text-xs uppercase tracking-[0.24em] font-sans" style={{ color: "#b9a06c" }}>
                   {n.stat}

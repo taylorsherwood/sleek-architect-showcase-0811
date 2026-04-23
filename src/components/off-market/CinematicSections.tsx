@@ -495,10 +495,10 @@ const CinematicSections = ({ formNode }: Props) => {
             <p className="text-[hsl(var(--gold))] mb-3 font-bold text-center" style={labelStyle}>
               ECHELON INSIDER
             </p>
-            <h2 className="font-display text-2xl font-light text-white mb-6 text-center whitespace-pre-line">
+            <h2 className="font-display text-2xl font-light text-white mb-3 text-center whitespace-pre-line">
               {"\n\n"}See you on the inside,
             </h2>
-            <div className="flex justify-center mb-5">
+            <div className="flex justify-center mb-3">
               <img
                 src={taylorSignature}
                 alt="Taylor Sherwood signature"
@@ -506,6 +506,7 @@ const CinematicSections = ({ formNode }: Props) => {
                 loading="lazy"
               />
             </div>
+            <div className="h-4" aria-hidden="true" />
             <div className="border border-white/10 p-6 bg-white/[0.02]">
               {formNode}
             </div>

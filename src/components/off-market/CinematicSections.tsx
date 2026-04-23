@@ -584,6 +584,11 @@ const CinematicSections = ({ formNode }: Props) => {
         >
           <source src="/video/barton-creek-drone.mp4" type="video/mp4" />
         </video>
+        {/* Faint dark tint (matches hero) */}
+        <div
+          className="absolute inset-0 z-10 pointer-events-none"
+          style={{ backgroundColor: "rgba(12, 15, 36, 0.3)" }}
+        />
         {/* Legibility radial gradient */}
         <div
           className="absolute inset-0 z-10 pointer-events-none"

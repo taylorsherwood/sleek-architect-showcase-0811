@@ -32,7 +32,7 @@ const NEIGHBORHOODS = [
   { name: "Old Enfield", image: cardOldEnfield, stat: "60% OF TRADES ARE PRIVATE" },
   { name: "West Lake Hills", image: cardWestlake, stat: "Median sale: $4.1M" },
   { name: "Tarrytown", image: cardDavenport, stat: "CENTRAL ACCESS TO AUS" },
-  { name: "Spanish Oaks", image: cardSpanishOaks, stat: "Hill Country golf estates" },
+  { name: "Spanish Oaks", image: cardSpanishOaks, stat: "GUARD GATED GOLF ESTATES" },
 ];
 
 const STATS = [

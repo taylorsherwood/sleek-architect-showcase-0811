@@ -322,9 +322,7 @@ const CinematicSections = ({ formNode }: Props) => {
             end: () => `+=${getTotalScroll()}`,
             pin: true,
             pinSpacing: true,
-            scrub: 1,
-            anticipatePin: 1,
-            invalidateOnRefresh: true,
+            scrub: 2.5,
           },
         });
 

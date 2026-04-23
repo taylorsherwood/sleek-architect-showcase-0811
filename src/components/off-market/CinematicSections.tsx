@@ -403,7 +403,7 @@ const CinematicSections = ({ formNode }: Props) => {
               preload="metadata"
               className="hero-video absolute inset-0 w-full h-full object-cover"
             >
-              <source src="/video/barton-creek-drone.mp4" type="video/mp4" />
+              <source src="/video/bart-creek-drone.mp4" type="video/mp4" />
             </video>
             <div
               className="absolute inset-0 pointer-events-none"
@@ -498,7 +498,274 @@ const CinematicSections = ({ formNode }: Props) => {
             <h2 className="font-display text-2xl font-light text-white mb-6 text-center">
               See you on the inside,
             </h2>
-// ... keep existing code
+            <div className="flex justify-center mb-5">
+              <img
+                src={taylorSignature}
+                alt="Taylor Sherwood signature"
+                className="h-14 w-auto"
+                loading="lazy"
+              />
+            </div>
+            <div className="border border-white/10 p-6 bg-white/[0.02]">
+              {formNode}
+            </div>
+          </div>
+        </section>
+      </div>
+    );
+  }
+
+  // ─────────────────────────────────────────────
+  // DESKTOP: full cinematic experience
+  // ─────────────────────────────────────────────
+  return (
+    <div ref={rootRef} className="bg-[hsl(220,15%,8%)] text-white">
+      {/* ── Section 2: Pinned Thesis ───────────── */}
+      <section className="thesis-section relative h-screen w-full bg-[hsl(220,15%,8%)] flex items-center justify-center overflow-hidden">
+        <h2
+          className="font-display text-[hsl(40,30%,92%)] text-center px-8 max-w-[90vw] leading-[1.15] font-light"
+          style={{ fontSize: "6vw" }}
+        >
+          {THESIS.split(" ").map((word, i) => {
+            const isIntroduced = word.replace(/[.,]/g, "").toLowerCase() === "introduced";
+            return (
+              <span
+                key={i}
+                className={`thesis-word inline-block mr-[0.25em] will-change-transform ${
+                  isIntroduced ? "italic text-[hsl(var(--gold))]" : ""
+                }`}
+              >
+                {word}
+              </span>
+            );
+          })}
+        </h2>
+      </section>
+
+      {/* ── Section 2.5: Image Split Reveal ────── */}
+      <section className="split-section relative h-screen w-full overflow-hidden bg-[hsl(220,15%,8%)]">
+        {/* Revealed background image */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src={austinSkylineParallax}
+            alt="Austin downtown skyline at sunset over Lady Bird Lake"
+            className="w-full h-full object-cover"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-black/20" />
+        </div>
+        {/* Pinned text behind */}
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-8 z-0">
+          <div className="split-text will-change-transform relative z-10">
+            <p className="text-[hsl(var(--gold))] mb-6 font-bold" style={labelStyle}>
+              THE INVITATION
+            </p>
+            <h2
+              className="font-display text-[hsl(40,30%,92%)] font-light leading-[1.05] max-w-[90vw]"
+              style={{ fontSize: "6vw" }}
+            >
+              What happens before it's listed.
+            </h2>
+          </div>
+        </div>
+        {/* Top half */}
+        <div
+          className="split-top-half absolute inset-0 z-10 will-change-transform"
+          style={{ clipPath: "inset(0 0 50% 0)" }}
+        >
+          <img
+            src={clarksvilleImg}
+            alt=""
+            aria-hidden="true"
+            className="w-full h-full object-cover"
+            loading="lazy"
+          />
+        </div>
+        {/* Bottom half */}
+        <div
+          className="split-bottom-half absolute inset-0 z-10 will-change-transform"
+          style={{ clipPath: "inset(50% 0 0 0)" }}
+        >
+          <img
+            src={clarksvilleImg}
+            alt=""
+            aria-hidden="true"
+            className="w-full h-full object-cover"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      {/* ── Section 3 (new): Drone Video — plays only when in view ── */}
+      <section className="drone-section relative h-screen w-full overflow-hidden bg-[hsl(220,15%,8%)]">
+        <video
+          ref={droneVideoRef}
+          muted
+          playsInline
+          preload="metadata"
+          className="hero-video absolute inset-0 w-full h-full object-cover will-change-transform"
+        >
+          <source src="/video/barton-creek-drone.mp4" type="video/mp4" />
+        </video>
+        {/* Faint dark tint (matches hero) */}
+        <div
+          className="absolute inset-0 z-10 pointer-events-none"
+          style={{ backgroundColor: "rgba(12, 15, 36, 0.3)" }}
+        />
+        {/* Legibility radial gradient */}
+        <div
+          className="absolute inset-0 z-10 pointer-events-none"
+          style={{
+            background:
+              "radial-gradient(ellipse at center, transparent 0%, rgba(12,15,36,0.4) 70%, rgba(12,15,36,0.7) 100%)",
+          }}
+        />
+        {/* Overlay text */}
+        <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-8">
+          <p className="drone-reveal mb-6 font-bold" style={{ ...labelStyle, color: "#BAA26A", fontSize: "0.9rem", letterSpacing: "0.2em" }}>
+            OFF-MARKET
+          </p>
+          <h2
+            className="drone-reveal font-display font-light leading-[1.05] mb-6 max-w-[90vw]"
+            style={{ fontSize: "7vw", color: "#F5F1EA" }}
+          >
+            Austin, from the inside.
+          </h2>
+          <p
+            className="drone-reveal font-sans"
+            style={{ fontSize: "1.2rem", maxWidth: "500px", color: "rgba(245,241,234,0.8)" }}
+          >
+            The city you're moving to. The homes no one else will show you.
+          </p>
+        </div>
+      </section>
+
+      {/* ── Section 3: Parallax Image Reveal ───── */}
+      <section className="parallax-section relative h-screen w-full overflow-hidden bg-[hsl(220,15%,8%)]">
+        <div
+          className="absolute left-0 right-0"
+          style={{ top: "-20%", height: "140%" }}
+        >
+          <img
+            src={privateInventoryHero}
+            alt="Westlake estate at dusk — private Austin luxury home"
+            className="parallax-image w-full h-full object-cover will-change-transform"
+          />
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                "radial-gradient(ellipse at center, rgba(12,15,36,0.55) 0%, rgba(12,15,36,0.4) 60%, rgba(12,15,36,0.25) 100%)",
+            }}
+          />
+        </div>
+        <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-8">
+          <p className="mb-6 font-bold" style={{ ...labelStyle, color: "#BAA26A" }}>
+            OFF-MARKET
+          </p>
+          <h2
+            className="parallax-headline font-display font-light leading-[1.05] max-w-[90vw] will-change-transform"
+            style={{ fontSize: "5vw", color: "#BAA26A", textShadow: "0 2px 24px rgba(0,0,0,0.6)" }}
+          >
+            Homes That Never<br />Reach The Market
+          </h2>
+        </div>
+      </section>
+
+      {/* ── Section 4: Horizontal Scroll Gallery ─ */}
+      <section className="horizontal-section relative h-screen w-full overflow-hidden bg-[hsl(220,15%,6%)]">
+        <div className="horizontal-track absolute top-0 left-0 h-full flex" style={{ width: "max-content" }}>
+          {NEIGHBORHOODS.map((n) => (
+            <div
+              key={n.name}
+              className="relative h-screen flex items-end overflow-hidden"
+              style={{ width: "80vw" }}
+            >
+              <div
+                className="horizontal-card-image absolute inset-0 will-change-transform"
+                style={{ width: "100%", left: "0%" }}
+              >
+                <img
+                  src={n.image}
+                  alt={`${n.name} luxury Austin neighborhood`}
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
+              <div className="relative z-10 p-12 lg:p-16 max-w-2xl">
+                <h3 className="font-display text-white font-light leading-tight mb-4" style={{ fontSize: "4vw" }}>
+                  {n.name}
+                </h3>
+                <p className="text-[hsl(var(--gold))] tracking-[0.25em] uppercase font-sans" style={{ fontSize: "0.75rem" }}>
+                  {n.stat}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ── Section 5: Pinned Counter ──────────── */}
+      <section className="stats-section relative h-screen w-full bg-[hsl(220,15%,8%)] flex items-center justify-center overflow-hidden">
+        <div className="container mx-auto px-8 max-w-7xl">
+          <div className="grid grid-cols-3 gap-12 lg:gap-16 items-end">
+            {STATS.map((s, i) => (
+              <div key={s.label} className="text-center min-w-0 overflow-hidden">
+                <span
+                  className="stat-number block font-display text-white font-light leading-[0.95] mb-6 whitespace-nowrap"
+                  style={{ fontSize: "clamp(3rem, 8vw, 8rem)" }}
+                >
+                  {s.prefix}
+                  {s.suffix === "M" ? "0.0" : "0"}
+                  {s.suffix}
+                </span>
+                <p className="stat-label text-white/60 tracking-[0.25em] uppercase font-sans" style={{ fontSize: "0.75rem" }}>
+                  {s.label}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Section 6: Split Parallax Testimonial ─ */}
+      <section className="testimonial-section relative w-full bg-[hsl(220,15%,6%)] grid grid-cols-2 min-h-screen overflow-hidden">
+        <div className="relative overflow-hidden h-full">
+          <img
+            src={desktopNote}
+            alt="Handwritten note on a desk"
+            className="testimonial-image absolute inset-0 w-full h-[120%] object-cover will-change-transform"
+            loading="lazy"
+          />
+        </div>
+        <div className="flex flex-col justify-center px-12 lg:px-20 py-24">
+          <p className="font-display italic text-white/90 font-light leading-[1.3] mb-10" style={{ fontSize: "2.4vw" }}>
+            <span className="testimonial-line block">"Taylor brought us a</span>
+            <span className="testimonial-line block">Westlake home before</span>
+            <span className="testimonial-line block">it ever hit the market.</span>
+            <span className="testimonial-line block">We never would have seen it without him."</span>
+          </p>
+          <p className="testimonial-attribution text-[hsl(var(--gold))] tracking-[0.25em] uppercase font-sans" style={{ fontSize: "0.7rem" }}>
+            — Private Buyer, Westlake Hills
+          </p>
+        </div>
+      </section>
+
+      {/* ── Section 7: Form ────────────────────── */}
+      <section
+        id="section-7-form"
+        className="form-section relative w-full py-32 px-8 overflow-hidden"
+        style={{
+          background:
+            "radial-gradient(ellipse at top, hsl(220,18%,12%) 0%, hsl(220,15%,6%) 70%)",
+        }}
+      >
+        <div className="max-w-2xl mx-auto">
+          <div className="form-field text-center mb-12">
+            <p className="text-[hsl(var(--gold))] mb-4 font-bold" style={labelStyle}>
+              ECHELON INSIDER
+            </p>
             <h2 className="font-display text-4xl md:text-5xl font-light text-white leading-tight">
               See you on the inside,
             </h2>

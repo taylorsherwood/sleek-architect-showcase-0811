@@ -345,7 +345,8 @@ const CinematicSections = ({ formNode }: Props) => {
         {/* Section 2 — Thesis (static) */}
         <section className="py-24 px-6 bg-[hsl(220,15%,8%)] text-center">
           <p className="font-display text-3xl sm:text-4xl leading-tight text-[hsl(40,30%,90%)]">
-            {THESIS}
+            The best Austin homes don't get listed. They get{" "}
+            <span className="italic text-[hsl(var(--gold))]">introduced</span>.
           </p>
         </section>
 
@@ -475,11 +476,19 @@ const CinematicSections = ({ formNode }: Props) => {
           className="font-display text-[hsl(40,30%,92%)] text-center px-8 max-w-[90vw] leading-[1.15] font-light"
           style={{ fontSize: "6vw" }}
         >
-          {THESIS.split(" ").map((word, i) => (
-            <span key={i} className="thesis-word inline-block mr-[0.25em] will-change-transform">
-              {word}
-            </span>
-          ))}
+          {THESIS.split(" ").map((word, i) => {
+            const isIntroduced = word.replace(/[.,]/g, "").toLowerCase() === "introduced";
+            return (
+              <span
+                key={i}
+                className={`thesis-word inline-block mr-[0.25em] will-change-transform ${
+                  isIntroduced ? "italic text-[hsl(var(--gold))]" : ""
+                }`}
+              >
+                {word}
+              </span>
+            );
+          })}
         </h2>
       </section>
 

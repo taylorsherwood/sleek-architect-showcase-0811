@@ -495,6 +495,7 @@ const TestimonialsSection = () => {
   const [active, setActive] = useState(0);
   const [revealed, setRevealed] = useState(false);
   const splitRef = useRef<HTMLDivElement>(null);
+  const hasOpenedRef = useRef(false);
 
   // Mobile-only auto-rotation for the centered single-quote layout
   useEffect(() => {
@@ -514,7 +515,7 @@ const TestimonialsSection = () => {
     return () => clearInterval(timer);
   }, [revealed]);
 
-  // Desktop / iPad — GSAP horizontal split-reveal (mirrors /off-market-real-estate-austin)
+  // Desktop / iPad — GSAP horizontal split-reveal (image opens left/right)
   useEffect(() => {
     if (typeof window === "undefined") return;
     if (!window.matchMedia("(min-width: 768px)").matches) return;
@@ -532,7 +533,7 @@ const TestimonialsSection = () => {
       gsap.set(".tsplit-line", { opacity: 0, y: 24, filter: "blur(8px)" });
       gsap.set(".tsplit-attribution", { opacity: 0, y: 12, filter: "blur(6px)" });
 
-      const tl = gsap.timeline({
+      gsap.timeline({
         scrollTrigger: {
           trigger: ".tsplit-section",
           start: "top top",
@@ -541,12 +542,17 @@ const TestimonialsSection = () => {
           pinSpacing: true,
           scrub: 2,
           anticipatePin: 1,
-          onLeave: () => setRevealed(true),
-          onEnterBack: () => setRevealed(true),
+          onUpdate: (self) => {
+            if (self.progress > 0.62 && !hasOpenedRef.current) {
+              hasOpenedRef.current = true;
+              setRevealed(true);
+            } else if (self.progress < 0.2 && hasOpenedRef.current) {
+              hasOpenedRef.current = false;
+              setRevealed(false);
+            }
+          },
         },
-      });
-
-      tl
+      })
         .to(".tsplit-image", { scale: 1, ease: "power1.out", duration: 0.35 }, 0)
         .to(".tsplit-right", { xPercent: 100, ease: "expo.inOut", duration: 0.6 }, 0.35)
         .to(".tsplit-line", { opacity: 1, y: 0, filter: "blur(0px)", ease: "power3.out", stagger: 0.15, duration: 0.6 }, 0.65)
@@ -559,16 +565,27 @@ const TestimonialsSection = () => {
     };
   }, []);
 
+
   const t = testimonials[active];
 
   return (
     <>
-      {/* DESKTOP / iPAD — Cinematic side-reveal testimonial (matches /off-market-real-estate-austin) */}
+      {/* DESKTOP / iPAD — Cinematic side-reveal testimonial */}
       <section
         ref={splitRef}
         className="tsplit-section hidden md:block relative w-full h-screen bg-secondary overflow-hidden"
         aria-label="Client experiences"
       >
+        {/* Base full-width cover image shown first */}
+        <div className="absolute inset-0 z-[1] overflow-hidden">
+          <img
+            src={lakeAustinTestimonialImg}
+            alt="Lake Austin luxury waterfront estate at golden hour"
+            className="tsplit-image absolute inset-0 h-full w-full object-cover will-change-transform"
+            decoding="async"
+          />
+        </div>
+
         {/* Testimonial sits behind on the right side, revealed when the right half slides away */}
         <div className="absolute inset-0 z-0 flex items-center justify-end px-8 md:px-16 lg:px-24">
           <div className="max-w-xl md:w-1/2 md:pl-8">
@@ -639,11 +656,12 @@ const TestimonialsSection = () => {
           </div>
         </div>
 
-        {/* Left half — stays in place */}
+        {/* Left half — remains in place after the split */}
         <div className="tsplit-left absolute inset-y-0 left-0 w-1/2 z-10 overflow-hidden will-change-transform">
           <img
             src={lakeAustinTestimonialImg}
-            alt="Lake Austin luxury waterfront estate at golden hour"
+            alt=""
+            aria-hidden="true"
             className="tsplit-image absolute inset-y-0 left-0 h-full w-screen max-w-none object-cover will-change-transform"
             decoding="async"
           />

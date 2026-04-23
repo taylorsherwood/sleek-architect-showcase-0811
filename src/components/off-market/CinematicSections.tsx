@@ -259,7 +259,7 @@ const CinematicSections = ({ formNode }: Props) => {
         });
       }
 
-      // ── Section 5: Counter (no pin — flows between drone and parallax sections)
+      // ── Section 5: Counter — pin so user can't scroll past until counters finish.
       const statEls = gsap.utils.toArray<HTMLSpanElement>(".stat-number");
       const counterObj = STATS.map((s) => ({ value: 0, target: s.value }));
       gsap.to(counterObj, {
@@ -267,9 +267,12 @@ const CinematicSections = ({ formNode }: Props) => {
         ease: "none",
         scrollTrigger: {
           trigger: ".stats-section",
-          start: "top 80%",
-          end: "bottom 30%",
+          start: "top top",
+          end: "+=100%",
           scrub: 1,
+          pin: true,
+          pinSpacing: true,
+          anticipatePin: 1,
           onUpdate: () => {
             statEls.forEach((el, i) => {
               const stat = STATS[i];

@@ -7,7 +7,6 @@ import echelonLogo from "@/assets/echelon-logo-gold.png";
 import { formatPhoneNumber, getTimestamp } from "@/lib/formUtils";
 import CinematicSections from "@/components/off-market/CinematicSections";
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from "@/components/ui/dialog";
-import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 
 const SITE = "https://www.echelonpropertygroup.com";
 

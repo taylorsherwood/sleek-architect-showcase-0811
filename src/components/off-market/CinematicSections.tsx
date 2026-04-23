@@ -631,7 +631,7 @@ const CinematicSections = ({ formNode }: Props) => {
             >
               <div
                 className="horizontal-card-image absolute inset-0 will-change-transform"
-                style={{ width: "120%", left: "-10%" }}
+                style={{ width: "100%", left: "0%" }}
               >
                 <img
                   src={n.image}

@@ -1101,7 +1101,7 @@ const HomeBelowFold = () => (
     <div className="h-12 md:h-20 bg-secondary" aria-hidden="true" />
     <StatsStrip />
 
-    <div className="parallax-break hidden md:block" style={{ backgroundImage: "url('/images/parallax-skyline.webp')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties} aria-hidden="true" />
+    <div className="parallax-break parallax-break--no-tint hidden md:block" style={{ backgroundImage: "url('/images/parallax-skyline.webp')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties} aria-hidden="true" />
 
     <FeaturedProperties />
 

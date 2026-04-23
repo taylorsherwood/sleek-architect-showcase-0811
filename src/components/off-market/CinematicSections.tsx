@@ -111,9 +111,6 @@ const CinematicSections = ({ formNode }: Props) => {
 
     return () => {
       cancelAnimationFrame(rafId);
-      document.removeEventListener("wheel", wheelGuard);
-      document.documentElement.style.overscrollBehavior = prevHtmlOverscroll;
-      document.body.style.overscrollBehavior = prevBodyOverscroll;
       lenis.destroy();
       lenisRef.current = null;
       delete (window as unknown as { __lenis?: Lenis }).__lenis;
@@ -188,38 +185,6 @@ const CinematicSections = ({ formNode }: Props) => {
         // Hold the open state briefly before unpin
         .to({}, { duration: 0.15 });
 
-      // Trigger the split-reveal video as soon as the section pins (image
-      // takes over the screen). Re-fires every time the user scrolls back
-      // into the section — no auto-loop.
-      ScrollTrigger.create({
-        trigger: ".split-section",
-        start: "top top",
-        end: "+=160%",
-        onEnter: () => {
-          const video = testimonialVideoRef.current;
-          if (!video) return;
-          video.currentTime = 0;
-          video.play().catch(() => {});
-        },
-        onEnterBack: () => {
-          const video = testimonialVideoRef.current;
-          if (!video) return;
-          video.currentTime = 0;
-          video.play().catch(() => {});
-        },
-        onLeave: () => {
-          const video = testimonialVideoRef.current;
-          if (!video) return;
-          video.pause();
-          video.currentTime = 0;
-        },
-        onLeaveBack: () => {
-          const video = testimonialVideoRef.current;
-          if (!video) return;
-          video.pause();
-          video.currentTime = 0;
-        },
-      });
 
       // ── Section 3 (new): Drone Video — pin section, reveal text on scroll
       const droneEls = gsap.utils.toArray<HTMLElement>(".drone-reveal");

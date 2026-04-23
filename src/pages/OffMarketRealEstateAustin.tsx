@@ -223,6 +223,21 @@ const OffMarketRealEstateAustin = () => {
             loading="eager"
           />
           <div className="absolute inset-0" style={{ backgroundColor: "rgba(12, 15, 36, 0.3)" }} />
+          {/* Gradient overlay for text readability */}
+          <div
+            className="absolute inset-0 pointer-events-none"
+            style={{
+              background:
+                "linear-gradient(to right, rgba(8, 11, 28, 0.85) 0%, rgba(8, 11, 28, 0.65) 35%, rgba(8, 11, 28, 0.3) 60%, rgba(8, 11, 28, 0.1) 100%)",
+            }}
+          />
+          <div
+            className="absolute inset-0 pointer-events-none"
+            style={{
+              background:
+                "linear-gradient(to top, rgba(8, 11, 28, 0.7) 0%, rgba(8, 11, 28, 0.2) 40%, transparent 70%)",
+            }}
+          />
         </div>
 
         <div className="relative z-10 container mx-auto px-6 sm:px-10 md:px-16 py-12 md:py-24">

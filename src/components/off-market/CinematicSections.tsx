@@ -282,44 +282,7 @@ const CinematicSections = ({ formNode }: Props) => {
         });
       }
 
-      // ── Section 5: Counter — pin so user can't scroll past until counters finish.
-      const statEls = gsap.utils.toArray<HTMLSpanElement>(".stat-number");
-      const counterObj = STATS.map((s) => ({ value: 0, target: s.value }));
-      gsap.to(counterObj, {
-        value: (i) => counterObj[i].target,
-        ease: "none",
-        scrollTrigger: {
-          trigger: ".stats-section",
-          start: "top top",
-          end: "+=200%",
-          scrub: 1,
-          pin: true,
-          pinSpacing: true,
-          anticipatePin: 1,
-          onUpdate: () => {
-            statEls.forEach((el, i) => {
-              const stat = STATS[i];
-              const v = counterObj[i].value;
-              const formatted =
-                stat.suffix === "M"
-                  ? v.toFixed(1)
-                  : Math.round(v).toString();
-              el.textContent = `${stat.prefix}${formatted}${stat.suffix}`;
-            });
-          },
-        },
-      });
-      gsap.from(".stat-label", {
-        opacity: 0,
-        y: 20,
-        stagger: 0.2,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: ".stats-section",
-          start: "top top+=100",
-          toggleActions: "play none none reverse",
-        },
-      });
+      // ── Section 5: Counter — REMOVED
 
       // ── Section 6: Split Parallax Testimonial — pin so user can't fly past.
       gsap.to(".testimonial-image", {

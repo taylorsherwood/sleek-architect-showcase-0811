@@ -495,6 +495,7 @@ const TestimonialsSection = () => {
   const [active, setActive] = useState(0);
   const [revealed, setRevealed] = useState(false);
   const splitRef = useRef<HTMLDivElement>(null);
+  const hasOpenedRef = useRef(false);
 
   // Mobile-only auto-rotation for the centered single-quote layout
   useEffect(() => {
@@ -514,7 +515,7 @@ const TestimonialsSection = () => {
     return () => clearInterval(timer);
   }, [revealed]);
 
-  // Desktop / iPad — GSAP horizontal split-reveal (mirrors /off-market-real-estate-austin)
+  // Desktop / iPad — GSAP horizontal split-reveal (image opens left/right)
   useEffect(() => {
     if (typeof window === "undefined") return;
     if (!window.matchMedia("(min-width: 768px)").matches) return;
@@ -532,7 +533,7 @@ const TestimonialsSection = () => {
       gsap.set(".tsplit-line", { opacity: 0, y: 24, filter: "blur(8px)" });
       gsap.set(".tsplit-attribution", { opacity: 0, y: 12, filter: "blur(6px)" });
 
-      const tl = gsap.timeline({
+      gsap.timeline({
         scrollTrigger: {
           trigger: ".tsplit-section",
           start: "top top",
@@ -541,12 +542,17 @@ const TestimonialsSection = () => {
           pinSpacing: true,
           scrub: 2,
           anticipatePin: 1,
-          onLeave: () => setRevealed(true),
-          onEnterBack: () => setRevealed(true),
+          onUpdate: (self) => {
+            if (self.progress > 0.62 && !hasOpenedRef.current) {
+              hasOpenedRef.current = true;
+              setRevealed(true);
+            } else if (self.progress < 0.2 && hasOpenedRef.current) {
+              hasOpenedRef.current = false;
+              setRevealed(false);
+            }
+          },
         },
-      });
-
-      tl
+      })
         .to(".tsplit-image", { scale: 1, ease: "power1.out", duration: 0.35 }, 0)
         .to(".tsplit-right", { xPercent: 100, ease: "expo.inOut", duration: 0.6 }, 0.35)
         .to(".tsplit-line", { opacity: 1, y: 0, filter: "blur(0px)", ease: "power3.out", stagger: 0.15, duration: 0.6 }, 0.65)
@@ -558,6 +564,7 @@ const TestimonialsSection = () => {
       ctx.revert();
     };
   }, []);
+
 
   const t = testimonials[active];
 

@@ -553,8 +553,7 @@ const CinematicSections = ({ formNode }: Props) => {
             poster={austinSkylineParallax}
             muted
             playsInline
-            loop
-            preload="metadata"
+            preload="auto"
             aria-label="2300 Barton Creek private estate aerial"
           />
           <div className="absolute inset-0 bg-black/20" />

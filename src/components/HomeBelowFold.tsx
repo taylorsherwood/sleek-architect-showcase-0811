@@ -1,7 +1,11 @@
 import React, { lazy, Suspense, useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ScrollReveal from "@/components/ScrollReveal";
 import { formatPhoneNumber, getPhoneDigits, getTimestamp } from "@/lib/formUtils";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const ScrollingCredibilityStrip = lazy(() => import("@/components/ScrollingCredibilityStrip"));
 const ExpertiseSection = lazy(() => import("@/components/ExpertiseSection"));

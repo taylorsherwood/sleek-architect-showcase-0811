@@ -217,9 +217,9 @@ const CinematicSections = ({ formNode }: Props) => {
         gsap.utils.toArray<HTMLDivElement>(".horizontal-card-image").forEach((img) => {
           gsap.fromTo(
             img,
-            { xPercent: -8 },
+            { xPercent: -3 },
             {
-              xPercent: 8,
+              xPercent: 3,
               ease: "none",
               scrollTrigger: {
                 trigger: img.parentElement!,

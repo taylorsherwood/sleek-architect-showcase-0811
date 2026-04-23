@@ -512,7 +512,7 @@ const TestimonialsSection = () => {
       const clamped = Math.max(0, Math.min(1, progress));
       const y = (clamped - 0.5) * 18;
       const x = (clamped - 0.5) * -6;
-      watermarkRef.current.style.transform = `translate(calc(1% + ${x}px), calc(4% + ${y}px))`;
+      watermarkRef.current.style.transform = `translate(${x}px, ${y}px)`;
     };
 
     const onScroll = () => {
@@ -546,7 +546,7 @@ const TestimonialsSection = () => {
   return (
     <section ref={sectionRef} className="bg-secondary relative overflow-hidden" style={{ padding: "clamp(48px, 7vw, 90px) 0" }}>
       <div ref={watermarkRef} className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden" aria-hidden="true"
-        style={{ transform: "translate(1%, 4%)", transition: "transform 0.15s linear" }}>
+        style={{ transition: "transform 0.15s linear" }}>
         <div style={{
           width: "600px",
           maxWidth: "90vw",

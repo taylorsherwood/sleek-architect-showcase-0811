@@ -355,19 +355,17 @@ const CinematicSections = ({ formNode }: Props) => {
           </div>
         </section>
 
-        {/* Section 3 (mobile) — Autoplay drone video */}
+        {/* Section 3 (mobile) — Drone video, plays only in view */}
         <section className="relative">
           <div className="relative w-full h-[60vh] overflow-hidden">
             <video
-              autoPlay
+              ref={droneVideoRef}
               muted
               playsInline
-              loop
-              preload="auto"
+              preload="metadata"
               className="hero-video absolute inset-0 w-full h-full object-cover"
             >
-              <source src="/video/hero-scrub.webm" type="video/webm" />
-              <source src="/video/hero-scrub.mp4" type="video/mp4" />
+              <source src="/video/barton-creek-drone.mp4" type="video/mp4" />
             </video>
             <div
               className="absolute inset-0 pointer-events-none"

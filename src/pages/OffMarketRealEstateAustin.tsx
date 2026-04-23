@@ -311,6 +311,29 @@ const OffMarketRealEstateAustin = () => {
           </div>
         </div>
       </footer>
+
+      {/* ── Lightbox: Request Private Access form ── */}
+      <Dialog open={modalOpen} onOpenChange={setModalOpen}>
+        <DialogContent className="max-w-2xl bg-[hsl(220,15%,8%)] border border-white/10 p-8 sm:p-10 max-h-[90vh] overflow-y-auto">
+          <VisuallyHidden>
+            <DialogTitle>Request Private Access</DialogTitle>
+            <DialogDescription>
+              Submit your details to receive curated off-market opportunities in Austin.
+            </DialogDescription>
+          </VisuallyHidden>
+          {!submitted && (
+            <div className="mb-6">
+              <p className="text-[hsl(var(--gold))] mb-3 font-bold" style={labelStyle}>
+                PRIVATE ACCESS
+              </p>
+              <h2 className="font-display text-2xl sm:text-3xl text-white font-light leading-tight">
+                Request Private Access
+              </h2>
+            </div>
+          )}
+          {formContent}
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };

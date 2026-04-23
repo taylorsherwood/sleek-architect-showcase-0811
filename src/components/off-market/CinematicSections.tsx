@@ -11,6 +11,7 @@ import cardOldEnfield from "@/assets/pemberton-heights.avif";
 import cardWestlake from "@/assets/community-westlake.jpg";
 import cardDavenport from "@/assets/the-high-road-westlake.webp";
 import desktopNote from "@/assets/austin-luxury-lifestyle.jpg";
+import austinSkylineParallax from "@/assets/austin-skyline-parallax.jpeg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -576,8 +577,8 @@ const CinematicSections = ({ formNode }: Props) => {
       <section className="parallax-section relative h-screen w-full overflow-hidden">
         <div className="absolute inset-0" style={{ height: "120%" }}>
           <img
-            src={westlakeDusk}
-            alt="Westlake estate at dusk — private Austin luxury home"
+            src={austinSkylineParallax}
+            alt="Austin downtown skyline at sunset over Lady Bird Lake"
             className="parallax-image w-full h-full object-cover will-change-transform"
             loading="lazy"
           />

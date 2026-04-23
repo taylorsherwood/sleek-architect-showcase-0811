@@ -151,7 +151,7 @@ const CinematicSections = ({ formNode }: Props) => {
         scrollTrigger: {
           trigger: ".split-section",
           start: "top top",
-          end: "+=260%",
+          end: "+=160%",
           pin: true,
           pinSpacing: true,
           scrub: 1,

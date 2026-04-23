@@ -266,7 +266,7 @@ const OffMarketRealEstateAustin = () => {
               Many of Austin's most desirable homes never hit the public market. They trade quietly, through trusted relationships and private networks that most buyers never see.
             </p>
             <button
-              onClick={scrollToForm}
+              onClick={() => setModalOpen(true)}
               className="group inline-flex items-center transition-colors duration-300 ease-out"
               style={{
                 fontFamily: '"Jost", sans-serif',

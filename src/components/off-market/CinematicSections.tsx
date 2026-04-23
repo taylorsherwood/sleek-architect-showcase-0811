@@ -49,6 +49,28 @@ const CinematicSections = ({ formNode }: Props) => {
   const lenisRef = useRef<Lenis | null>(null);
   const droneVideoRef = useRef<HTMLVideoElement>(null);
 
+  // Play drone video only while its section is in view; pause + reset when it leaves.
+  useEffect(() => {
+    const video = droneVideoRef.current;
+    if (!video) return;
+    const section = video.closest("section");
+    if (!section) return;
+
+    const obs = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          video.play().catch(() => {});
+        } else {
+          video.pause();
+          video.currentTime = 0;
+        }
+      },
+      { threshold: 0.4 }
+    );
+    obs.observe(section);
+    return () => obs.disconnect();
+  }, [isMobile]);
+
   // Lenis smooth scroll (desktop only)
   useEffect(() => {
     if (isMobile) return;

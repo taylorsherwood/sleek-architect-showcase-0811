@@ -509,7 +509,7 @@ const CinematicSections = ({ formNode }: Props) => {
           style={{ clipPath: "inset(0 0 50% 0)" }}
         >
           <img
-            src={westlakeDusk}
+            src={austinSkylineParallax}
             alt=""
             aria-hidden="true"
             className="w-full h-full object-cover"
@@ -522,7 +522,7 @@ const CinematicSections = ({ formNode }: Props) => {
           style={{ clipPath: "inset(50% 0 0 0)" }}
         >
           <img
-            src={westlakeDusk}
+            src={austinSkylineParallax}
             alt=""
             aria-hidden="true"
             className="w-full h-full object-cover"
@@ -580,8 +580,8 @@ const CinematicSections = ({ formNode }: Props) => {
           style={{ top: "-15%", bottom: "-15%" }}
         >
           <img
-            src={austinSkylineParallax}
-            alt="Austin downtown skyline at sunset over Lady Bird Lake"
+            src={westlakeDusk}
+            alt="Westlake estate at dusk — private Austin luxury home"
             className="parallax-image w-full h-full object-cover will-change-transform"
             loading="lazy"
           />

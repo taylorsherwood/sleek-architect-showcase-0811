@@ -6,7 +6,7 @@ import { useIsMobile } from "@/hooks/use-mobile";
 
 import westlakeDusk from "@/assets/community-westlake-hills-hero.webp";
 import privateInventoryHero from "@/assets/hero-luxury-austin.webp";
-import parallaxEstate from "@/assets/off-market-parallax-estate.webp";
+
 import card78746 from "@/assets/barton-creek-estate-new.webp";
 import cardTarrytown from "@/assets/community-tarrytown.webp";
 import cardOldEnfield from "@/assets/pemberton-heights.webp";
@@ -196,32 +196,7 @@ const CinematicSections = ({ formNode }: Props) => {
         stagger: 0.4,
       });
 
-      // ── Section 3: Parallax Image Reveal — pin section, reveal headline on scroll
-      const parallaxTl = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".parallax-section",
-          start: "top top",
-          end: "+=100%",
-          scrub: 1,
-          pin: ".parallax-pin",
-          pinSpacing: false,
-          anticipatePin: 1,
-        },
-      });
-      parallaxTl
-        .fromTo(
-          ".parallax-image",
-          { yPercent: -4, scale: 1.03 },
-          { yPercent: 4, scale: 1, ease: "none" },
-          0
-        )
-        .fromTo(
-          ".parallax-headline",
-          { opacity: 0, y: 40, scale: 0.96 },
-          { opacity: 1, y: 0, scale: 1, ease: "power2.out" },
-          0.2
-        )
-        .to({}, { duration: 0.25 });
+      // ── Section 3: Parallax Image Reveal — REMOVED
 
       // ── Section 4: Horizontal Scroll Gallery
       const horizontalTrack = document.querySelector<HTMLDivElement>(".horizontal-track");
@@ -448,23 +423,7 @@ const CinematicSections = ({ formNode }: Props) => {
           ))}
         </section>
 
-        {/* Section 3 — Image + headline */}
-        <section className="relative">
-          <img
-            src={privateInventoryHero}
-            alt="Westlake estate at dusk"
-            className="w-full h-[60vh] object-cover"
-            decoding="async"
-          />
-          <div className="px-6 py-12 text-center">
-            <p className="text-[hsl(var(--gold))] mb-4 font-bold" style={labelStyle}>
-              OFF-MARKET
-            </p>
-            <h2 className="font-display text-3xl text-white">
-              Homes That Never Reach The Market
-            </h2>
-          </div>
-        </section>
+        {/* Section 3 — REMOVED (Homes That Never Reach The Market) */}
 
         {/* Section 4 — Stacked neighborhood cards */}
         <section className="px-6 py-12 space-y-8">
@@ -669,78 +628,7 @@ const CinematicSections = ({ formNode }: Props) => {
         </div>
       </section>
 
-      {/* ── Section 3: Parallax Image Reveal ───── */}
-      <section className="parallax-section relative h-screen w-full bg-[hsl(220,15%,8%)]">
-        <div className="parallax-pin relative h-screen w-full overflow-hidden">
-          <div
-            className="absolute inset-0 overflow-hidden"
-          >
-            <div
-              className="absolute left-0 right-0"
-              style={{ top: "-20%", height: "140%" }}
-            >
-              <img
-                src={parallaxEstate}
-                alt="Modern luxury Austin estate at dusk — private off-market home"
-                className="parallax-image w-full h-full object-cover will-change-transform"
-                decoding="async"
-              />
-              <div
-                className="absolute inset-0"
-                style={{
-                  background:
-                    "radial-gradient(ellipse at center, rgba(12,15,36,0.55) 0%, rgba(12,15,36,0.4) 60%, rgba(12,15,36,0.25) 100%)",
-                }}
-              />
-            </div>
-          </div>
-          <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-8">
-            <p className="mb-6 font-bold" style={{ ...labelStyle, color: "#BAA26A" }}>
-              {"\n"}
-            </p>
-            <h2
-              className="parallax-headline font-display font-light leading-[1.05] max-w-[90vw] will-change-transform"
-              style={{ fontSize: "5vw", color: "#BAA26A", textShadow: "0 2px 24px rgba(0,0,0,0.6)" }}
-            >
-              Homes That Never<br />Reach The Market
-            </h2>
-          </div>
-        </div>
-      </section>
-
-      {/* ── Section 4: Horizontal Scroll Gallery ─ */}
-      <section className="horizontal-section relative h-screen w-full overflow-hidden bg-[hsl(220,15%,6%)]">
-        <div className="horizontal-track absolute top-0 left-0 h-full flex" style={{ width: "max-content" }}>
-          {NEIGHBORHOODS.map((n) => (
-            <div
-              key={n.name}
-              className="relative h-screen flex items-end overflow-hidden"
-              style={{ width: "80vw" }}
-            >
-              <div
-                className="horizontal-card-image absolute inset-0 will-change-transform"
-                style={{ width: "100%", left: "0%" }}
-              >
-                <img
-                  src={n.image}
-                  alt={`${n.name} luxury Austin neighborhood`}
-                  className="w-full h-full object-cover"
-                  decoding="async"
-                />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
-              <div className="relative z-10 p-12 lg:p-16 max-w-2xl">
-                <h3 className="font-display text-white font-light leading-tight mb-4" style={{ fontSize: "4vw" }}>
-                  {n.name}
-                </h3>
-                <p className="text-[hsl(var(--gold))] tracking-[0.25em] uppercase font-sans" style={{ fontSize: "0.75rem" }}>
-                  {n.stat}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+      {/* ── Section 3: Parallax Image Reveal — REMOVED ───── */}
 
 
       {/* ── Section 6: Split Parallax Testimonial ─ */}

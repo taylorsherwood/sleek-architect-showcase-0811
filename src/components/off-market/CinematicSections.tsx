@@ -175,6 +175,29 @@ const CinematicSections = ({ formNode }: Props) => {
         // Hold the open state briefly before unpin
         .to({}, { duration: 0.15 });
 
+      // Trigger the split-reveal video the moment the split is fully open.
+      // Re-fires every time the user scrolls back to that point — no auto-loop.
+      ScrollTrigger.create({
+        trigger: ".split-section",
+        start: "top top",
+        end: "+=260%",
+        onUpdate: (self) => {
+          const video = testimonialVideoRef.current;
+          if (!video) return;
+          if (self.progress >= 0.85) {
+            if (video.paused) {
+              video.currentTime = 0;
+              video.play().catch(() => {});
+            }
+          } else {
+            if (!video.paused) {
+              video.pause();
+              video.currentTime = 0;
+            }
+          }
+        },
+      });
+
       // ── Section 3 (new): Drone Video — pin section, reveal text on scroll
       const droneEls = gsap.utils.toArray<HTMLElement>(".drone-reveal");
       gsap.set(droneEls, { opacity: 0, y: 30 });

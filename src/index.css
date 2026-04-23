@@ -161,12 +161,19 @@ section.bg-muted {
   box-shadow: inset 0 1px 0 0 hsl(233 47% 9% / 0.04);
 }
 
-/* Keep section content above the fade layer */
-section.bg-background > *,
-section.bg-secondary > *,
-section.bg-muted > * {
+/* Keep section content above the fade layer without breaking decorative
+   absolute-positioned backgrounds like watermarks. */
+section.bg-background > *:not(.absolute),
+section.bg-secondary > *:not(.absolute),
+section.bg-muted > *:not(.absolute) {
   position: relative;
   z-index: 1;
+}
+
+section.bg-background > .absolute,
+section.bg-secondary > .absolute,
+section.bg-muted > .absolute {
+  z-index: 0;
 }
 
 /* Never fade or anchor hero, navy, or video sections */

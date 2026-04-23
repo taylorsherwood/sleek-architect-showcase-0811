@@ -217,67 +217,56 @@ const CinematicSections = ({ formNode }: Props) => {
         .fromTo(".bridge-rule", { width: 0, opacity: 0 }, { width: 120, opacity: 1, ease: "power2.out", duration: 0.5 }, 0.5)
         .to({}, { duration: 0.3 });
 
-      // ── Section 4: Horizontal Scroll Gallery
+      // ── Section 4: Community reveal + Horizontal Scroll Gallery
       const horizontalTrack = document.querySelector<HTMLDivElement>(".horizontal-track");
       const horizontalSection = document.querySelector<HTMLElement>(".horizontal-section");
       if (horizontalTrack && horizontalSection) {
         const totalScroll = horizontalTrack.scrollWidth - window.innerWidth;
 
-        // Pre-set states for the curtain reveal
-        gsap.set(".reveal-curtain", { yPercent: 0 });
-        gsap.set(".horizontal-card.is-first .horizontal-card-image", { scale: 1.25, yPercent: 8 });
-        gsap.set(".horizontal-card.is-first .card-content", { opacity: 0, y: 60 });
+        // Dedicated reveal section before the gallery so the gallery itself doesn't snap on pin.
+        gsap.set(".community-reveal-image", { scale: 1.14, yPercent: 6 });
+        gsap.set(".community-reveal-copy", { opacity: 0, y: 48 });
+        gsap.set(".community-reveal-veil", { yPercent: 0 });
 
-        // Sophisticated curtain reveal — pinned timeline that bridges counter → gallery
-        const revealTl = gsap.timeline({
+        const communityRevealTl = gsap.timeline({
           scrollTrigger: {
-            trigger: ".horizontal-section",
+            trigger: ".community-reveal-section",
             start: "top bottom",
-            end: "top top",
-            scrub: 1.4,
+            end: "bottom top",
+            scrub: 1.15,
           },
         });
-        revealTl
-          // Gold bloom blooms in first
+
+        communityRevealTl
           .fromTo(
-            ".reveal-bloom",
-            { opacity: 0, scale: 0.6 },
-            { opacity: 1, scale: 1, ease: "power2.out", duration: 0.5 },
+            ".community-reveal-bloom",
+            { opacity: 0, scale: 0.85 },
+            { opacity: 1, scale: 1.08, ease: "none" },
             0
           )
-          // Eyebrow label fades in mid-reveal
+          .to(
+            ".community-reveal-veil",
+            { yPercent: -100, ease: "none" },
+            0.12
+          )
+          .to(
+            ".community-reveal-image",
+            { scale: 1, yPercent: 0, ease: "none" },
+            0
+          )
           .fromTo(
-            ".reveal-eyebrow",
-            { opacity: 0, y: 20 },
-            { opacity: 1, y: 0, ease: "power2.out", duration: 0.4 },
-            0.15
+            ".community-reveal-copy",
+            { opacity: 0, y: 48 },
+            { opacity: 1, y: 0, ease: "none" },
+            0.22
           )
-          // Curtain lifts up to expose the first card
           .to(
-            ".reveal-curtain",
-            { yPercent: -100, ease: "power3.inOut", duration: 0.8 },
-            0.3
-          )
-          // First card image settles from over-scaled position into place
-          .to(
-            ".horizontal-card.is-first .horizontal-card-image",
-            { scale: 1, yPercent: 0, ease: "power2.out", duration: 0.9 },
-            0.3
-          )
-          // Eyebrow + bloom fade out as card content rises
-          .to(
-            [".reveal-eyebrow", ".reveal-bloom"],
-            { opacity: 0, ease: "power2.in", duration: 0.4 },
-            0.7
-          )
-          // First card text rises
-          .to(
-            ".horizontal-card.is-first .card-content",
-            { opacity: 1, y: 0, ease: "power3.out", duration: 0.6 },
-            0.75
+            [".community-reveal-copy", ".community-reveal-bloom"],
+            { opacity: 0, y: -24, ease: "none" },
+            0.76
           );
 
-        // Horizontal scroll pin
+        // Horizontal scroll pin starts cleanly after the reveal section.
         gsap.to(horizontalTrack, {
           x: -totalScroll,
           ease: "none",
@@ -738,31 +727,44 @@ const CinematicSections = ({ formNode }: Props) => {
         </div>
       </section>
 
-      {/* ── Section 4: Horizontal Scroll Gallery ─ */}
-      <section className="horizontal-section relative h-screen w-full overflow-hidden bg-[hsl(220,15%,6%)]">
-        {/* Curtain overlay — lifts upward to reveal cards */}
-        <div className="reveal-curtain absolute inset-0 z-30 pointer-events-none bg-[hsl(220,15%,6%)]" />
-        {/* Gold light bloom — sweeps across during hand-off */}
-        <div
-          className="reveal-bloom absolute inset-0 z-20 pointer-events-none opacity-0"
-          style={{
-            background:
-              "radial-gradient(ellipse 60% 40% at 50% 50%, rgba(185,160,108,0.18) 0%, rgba(185,160,108,0) 70%)",
-          }}
-        />
-        {/* Reveal eyebrow — appears as curtain lifts */}
-        <div className="reveal-eyebrow absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-40 pointer-events-none text-center opacity-0">
-          <p className="font-bold mb-3" style={{ ...labelStyle, color: "#b9a06c" }}>
-            PRIVATE INVENTORY
-          </p>
-          <div className="h-px bg-[#b9a06c] mx-auto" style={{ width: 80 }} />
+      {/* ── Section 4a: Community reveal ─ */}
+      <section className="community-reveal-section relative h-[140vh] w-full overflow-hidden bg-[hsl(220,15%,6%)]">
+        <div className="sticky top-0 h-screen overflow-hidden">
+          <div className="community-reveal-image absolute inset-0 will-change-transform">
+            <img
+              src={NEIGHBORHOODS[0].image}
+              alt={`${NEIGHBORHOODS[0].name} luxury Austin neighborhood`}
+              className="w-full h-full object-cover"
+              decoding="async"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/20 to-[hsl(220,15%,6%)]" />
+          </div>
+          <div className="community-reveal-veil absolute inset-0 z-20 pointer-events-none bg-[hsl(220,15%,6%)]" />
+          <div
+            className="community-reveal-bloom absolute inset-0 z-10 pointer-events-none opacity-0"
+            style={{
+              background:
+                "radial-gradient(ellipse 55% 38% at 50% 45%, rgba(185,160,108,0.16) 0%, rgba(185,160,108,0) 70%)",
+            }}
+          />
+          <div className="community-reveal-copy absolute inset-0 z-30 flex flex-col items-center justify-center px-8 text-center pointer-events-none">
+            <p className="mb-5 font-bold" style={{ ...labelStyle, color: "#b9a06c" }}>
+              PRIVATE INVENTORY
+            </p>
+            <h2 className="font-display font-light text-white leading-[1.02] max-w-[14ch]" style={{ fontSize: "clamp(2.5rem, 5vw, 5.2rem)" }}>
+              The communities where access matters first.
+            </h2>
+          </div>
         </div>
+      </section>
 
+      {/* ── Section 4b: Horizontal Scroll Gallery ─ */}
+      <section className="horizontal-section relative h-screen w-full overflow-hidden bg-[hsl(220,15%,6%)]">
         <div className="horizontal-track absolute top-0 left-0 h-full flex" style={{ width: "max-content" }}>
-          {NEIGHBORHOODS.map((n, idx) => (
+          {NEIGHBORHOODS.map((n) => (
             <div
               key={n.name}
-              className={`horizontal-card relative h-screen flex items-end overflow-hidden will-change-transform ${idx === 0 ? "is-first" : ""}`}
+              className="horizontal-card relative h-screen flex items-end overflow-hidden will-change-transform"
               style={{ width: "80vw" }}
             >
               <div

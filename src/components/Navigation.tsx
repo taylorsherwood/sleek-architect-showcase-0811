@@ -172,7 +172,7 @@ const Navigation = () => {
         {/* Desktop Client Portal — ghost gold button */}
         <div className="hidden lg:flex items-center shrink-0 ml-auto mr-6 xl:mr-10">
           <a
-            href="https://echelonpropertygroup.outportal.ai"
+            href="https://portal.echelonpropertygroup.com"
             target="_blank"
             rel="noopener noreferrer nofollow"
             className="whitespace-nowrap transition-all duration-300 px-5 py-2 backdrop-blur-md"
@@ -250,7 +250,7 @@ const Navigation = () => {
             )}
             <div className="pt-8" style={{ borderTop: "1px solid hsl(38 39% 61% / 0.2)" }}>
               <a
-                href="https://echelonpropertygroup.outportal.ai"
+                href="https://portal.echelonpropertygroup.com"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
                 className="inline-block px-6 py-3 transition-all duration-300"

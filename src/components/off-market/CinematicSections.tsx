@@ -402,7 +402,7 @@ const CinematicSections = ({ formNode }: Props) => {
               ref={droneVideoRef}
               muted
               playsInline
-              preload="metadata"
+              preload="auto"
               className="hero-video absolute inset-0 w-full h-full object-cover"
             >
               <source src="/video/bart-creek-drone.mp4" type="video/mp4" />

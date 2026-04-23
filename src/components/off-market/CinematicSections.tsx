@@ -14,7 +14,7 @@ import cardWestlake from "@/assets/community-westlake-new.webp";
 import cardDavenport from "@/assets/davenport-ranch-estate.webp";
 import cardSpanishOaks from "@/assets/spanish-oaks-estate.webp";
 import desktopNote from "@/assets/testimonial-westlake-living-room.webp";
-import austinSkylineParallax from "@/assets/austin-skyline-parallax.webp";
+
 import clarksvilleImg from "@/assets/off-market-reveal-estate.webp";
 import taylorSignature from "@/assets/taylor-sherwood-signature.png";
 import testimonialSplitImg from "@/assets/testimonial-split-lake-austin.webp";

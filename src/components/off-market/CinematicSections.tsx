@@ -423,23 +423,7 @@ const CinematicSections = ({ formNode }: Props) => {
           ))}
         </section>
 
-        {/* Section 3 — Image + headline */}
-        <section className="relative">
-          <img
-            src={privateInventoryHero}
-            alt="Westlake estate at dusk"
-            className="w-full h-[60vh] object-cover"
-            decoding="async"
-          />
-          <div className="px-6 py-12 text-center">
-            <p className="text-[hsl(var(--gold))] mb-4 font-bold" style={labelStyle}>
-              OFF-MARKET
-            </p>
-            <h2 className="font-display text-3xl text-white">
-              Homes That Never Reach The Market
-            </h2>
-          </div>
-        </section>
+        {/* Section 3 — REMOVED (Homes That Never Reach The Market) */}
 
         {/* Section 4 — Stacked neighborhood cards */}
         <section className="px-6 py-12 space-y-8">

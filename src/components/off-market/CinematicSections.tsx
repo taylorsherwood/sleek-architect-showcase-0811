@@ -165,17 +165,21 @@ const CinematicSections = ({ formNode }: Props) => {
         },
       });
 
-      // ── Section 3: Parallax Image Reveal
-      gsap.to(".parallax-image", {
-        yPercent: -20,
-        ease: "none",
-        scrollTrigger: {
-          trigger: ".parallax-section",
-          start: "top bottom",
-          end: "bottom top",
-          scrub: 1,
-        },
-      });
+      // ── Section 3: Parallax Image Reveal — gentle parallax within oversized container
+      gsap.fromTo(
+        ".parallax-image",
+        { yPercent: -8 },
+        {
+          yPercent: 8,
+          ease: "none",
+          scrollTrigger: {
+            trigger: ".parallax-section",
+            start: "top bottom",
+            end: "bottom top",
+            scrub: 1,
+          },
+        }
+      );
       gsap.fromTo(
         ".parallax-headline",
         { scale: 0.9 },

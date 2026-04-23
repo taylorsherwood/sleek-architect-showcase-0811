@@ -196,32 +196,7 @@ const CinematicSections = ({ formNode }: Props) => {
         stagger: 0.4,
       });
 
-      // ── Section 3: Parallax Image Reveal — pin section, reveal headline on scroll
-      const parallaxTl = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".parallax-section",
-          start: "top top",
-          end: "+=100%",
-          scrub: 1,
-          pin: ".parallax-pin",
-          pinSpacing: false,
-          anticipatePin: 1,
-        },
-      });
-      parallaxTl
-        .fromTo(
-          ".parallax-image",
-          { yPercent: -4, scale: 1.03 },
-          { yPercent: 4, scale: 1, ease: "none" },
-          0
-        )
-        .fromTo(
-          ".parallax-headline",
-          { opacity: 0, y: 40, scale: 0.96 },
-          { opacity: 1, y: 0, scale: 1, ease: "power2.out" },
-          0.2
-        )
-        .to({}, { duration: 0.25 });
+      // ── Section 3: Parallax Image Reveal — REMOVED
 
       // ── Section 4: Horizontal Scroll Gallery
       const horizontalTrack = document.querySelector<HTMLDivElement>(".horizontal-track");

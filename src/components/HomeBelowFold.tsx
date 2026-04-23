@@ -662,6 +662,13 @@ const TestimonialsSection = () => {
           />
         </div>
 
+        {/* Faint dark tint — improves overlay text readability, fades with overlay */}
+        <div
+          className="tsplit-overlay absolute inset-0 z-[15] pointer-events-none will-change-[opacity]"
+          style={{ background: "rgba(0, 0, 0, 0.32)" }}
+          aria-hidden="true"
+        />
+
         {/* Overlay verbiage — fades out as the split begins */}
         <div className="tsplit-overlay absolute inset-0 z-20 flex items-center justify-center pointer-events-none px-6 will-change-transform">
           <div className="text-center">

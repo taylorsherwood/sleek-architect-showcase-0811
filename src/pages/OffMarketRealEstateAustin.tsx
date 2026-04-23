@@ -40,6 +40,7 @@ const OffMarketRealEstateAustin = () => {
   });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
 
   const fireConversion = () => {
     const gtagFn = (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag;

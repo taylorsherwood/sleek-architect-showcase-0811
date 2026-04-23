@@ -223,8 +223,9 @@ const CinematicSections = ({ formNode }: Props) => {
 
         // Cinematic reveal — as the gallery enters viewport (after counter unpins),
         // the first card image scales down from over-zoomed and the entire track
-        // rises up smoothly. Scrub-driven so it feels tied to user scroll.
-        gsap.set(".horizontal-track", { yPercent: 12, opacity: 0 });
+        // eases in. Track opacity is NOT animated post-reveal so cards never
+        // re-fade (which previously caused a black flash + re-appearance bug).
+        gsap.set(".horizontal-track", { yPercent: 8 });
         gsap.set(".horizontal-card.is-first .horizontal-card-image img", { scale: 1.18 });
         gsap.set(".horizontal-card.is-first .card-content", { opacity: 0, y: 40 });
 
@@ -237,7 +238,7 @@ const CinematicSections = ({ formNode }: Props) => {
           },
         });
         galleryReveal
-          .to(".horizontal-track", { yPercent: 0, opacity: 1, ease: "none" }, 0)
+          .to(".horizontal-track", { yPercent: 0, ease: "none" }, 0)
           .to(".horizontal-card.is-first .horizontal-card-image img", { scale: 1, ease: "none" }, 0)
           .to(".horizontal-card.is-first .card-content", { opacity: 1, y: 0, ease: "none" }, 0.4);
 
@@ -257,8 +258,12 @@ const CinematicSections = ({ formNode }: Props) => {
           },
         });
 
-        // Per-card image parallax
-        gsap.utils.toArray<HTMLDivElement>(".horizontal-card-image").forEach((img) => {
+        // Per-card image parallax — skip the LAST card so it doesn't shift
+        // back into frame after the pin releases (which caused the
+        // "black screen → Spanish Oaks reappears" flash).
+        const cardImages = gsap.utils.toArray<HTMLDivElement>(".horizontal-card-image");
+        cardImages.forEach((img, i) => {
+          if (i === cardImages.length - 1) return;
           gsap.fromTo(
             img,
             { xPercent: -3 },

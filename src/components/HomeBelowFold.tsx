@@ -512,7 +512,7 @@ const TestimonialsSection = () => {
       const clamped = Math.max(0, Math.min(1, progress));
       const y = (clamped - 0.5) * 18;
       const x = (clamped - 0.5) * -6;
-      watermarkRef.current.style.transform = `translate(calc(1% + ${x}px), calc(4% + ${y}px))`;
+      watermarkRef.current.style.transform = `translate(${x}px, ${y}px)`;
     };
 
     const onScroll = () => {

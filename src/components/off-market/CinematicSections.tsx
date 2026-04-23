@@ -707,11 +707,29 @@ const CinematicSections = ({ formNode }: Props) => {
 
       {/* ── Section 4: Horizontal Scroll Gallery ─ */}
       <section className="horizontal-section relative h-screen w-full overflow-hidden bg-[hsl(220,15%,6%)]">
+        {/* Curtain overlay — lifts upward to reveal cards */}
+        <div className="reveal-curtain absolute inset-0 z-30 pointer-events-none bg-[hsl(220,15%,6%)]" />
+        {/* Gold light bloom — sweeps across during hand-off */}
+        <div
+          className="reveal-bloom absolute inset-0 z-20 pointer-events-none opacity-0"
+          style={{
+            background:
+              "radial-gradient(ellipse 60% 40% at 50% 50%, rgba(185,160,108,0.18) 0%, rgba(185,160,108,0) 70%)",
+          }}
+        />
+        {/* Reveal eyebrow — appears as curtain lifts */}
+        <div className="reveal-eyebrow absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-40 pointer-events-none text-center opacity-0">
+          <p className="font-bold mb-3" style={{ ...labelStyle, color: "#b9a06c" }}>
+            PRIVATE INVENTORY
+          </p>
+          <div className="h-px bg-[#b9a06c] mx-auto" style={{ width: 80 }} />
+        </div>
+
         <div className="horizontal-track absolute top-0 left-0 h-full flex" style={{ width: "max-content" }}>
-          {NEIGHBORHOODS.map((n) => (
+          {NEIGHBORHOODS.map((n, idx) => (
             <div
               key={n.name}
-              className="horizontal-card relative h-screen flex items-end overflow-hidden will-change-transform"
+              className={`horizontal-card relative h-screen flex items-end overflow-hidden will-change-transform ${idx === 0 ? "is-first" : ""}`}
               style={{ width: "80vw" }}
             >
               <div
@@ -726,7 +744,7 @@ const CinematicSections = ({ formNode }: Props) => {
                 />
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/15 to-transparent" />
-              <div className="relative z-10 p-10 lg:p-14 max-w-xl">
+              <div className="card-content relative z-10 p-10 lg:p-14 max-w-xl">
                 <p className="mb-4 text-xs uppercase tracking-[0.24em] font-sans" style={{ color: "#b9a06c" }}>
                   {n.stat}
                 </p>

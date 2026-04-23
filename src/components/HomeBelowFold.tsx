@@ -661,6 +661,31 @@ const TestimonialsSection = () => {
             decoding="async"
           />
         </div>
+
+        {/* Overlay verbiage — fades out as the split begins */}
+        <div className="tsplit-overlay absolute inset-0 z-20 flex items-center justify-center pointer-events-none px-6 will-change-transform">
+          <div className="text-center">
+            <p
+              className="text-gold mb-6 font-sans uppercase"
+              style={{ fontSize: "0.72rem", letterSpacing: "0.32em" }}
+            >
+              Client Experiences
+            </p>
+            <h2
+              className="font-display font-normal leading-[1.05] tracking-[0.02em]"
+              style={{
+                fontFamily: '"Cinzel", serif',
+                color: "#F5F3EF",
+                fontSize: "clamp(2rem, 5vw, 4.5rem)",
+                textTransform: "uppercase",
+              }}
+            >
+              clients first.{" "}
+              <span style={{ color: "#b9a06c" }}>Proven Results.</span>
+            </h2>
+            <div className="w-16 h-px mx-auto mt-8" style={{ background: "#b9a06c" }} />
+          </div>
+        </div>
       </section>
 
       {/* MOBILE — centered rotating quote */}

@@ -197,7 +197,7 @@ const OffMarketRealEstateAustin = () => {
         </div>
         <div>
           <label htmlFor="budget" className="block text-white/40 mb-1.5" style={labelStyle}>Budget Range</label>
-          <select id="budget" value={form.budget} onChange={(e) => setForm(prev => ({ ...prev, budget: e.target.value }))} className={selectClass}>
+          <select id="budget" value={form.budget} onChange={(e) => setForm(prev => ({ ...prev, budget: e.target.value }))} className={selectClassFor(form.budget)}>
             <option value="">Select</option>
             <option value="$500K–$1M">$500K – $1M</option>
             <option value="$1M–$3M">$1M – $3M</option>

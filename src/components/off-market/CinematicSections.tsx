@@ -295,7 +295,7 @@ const CinematicSections = ({ formNode }: Props) => {
         },
       });
 
-      // ── Section 6: Split Parallax Testimonial
+      // ── Section 6: Split Parallax Testimonial — pin so user can't fly past.
       gsap.to(".testimonial-image", {
         yPercent: -15,
         ease: "none",
@@ -306,27 +306,39 @@ const CinematicSections = ({ formNode }: Props) => {
           scrub: 1,
         },
       });
-      gsap.from(".testimonial-line", {
-        opacity: 0,
-        y: 20,
-        stagger: 0.15,
-        ease: "power3.out",
+
+      // Pinned scrub timeline: each line reveals progressively as the user scrolls,
+      // forcing them to slow down and absorb the testimonial.
+      const testimonialTl = gsap.timeline({
         scrollTrigger: {
           trigger: ".testimonial-section",
-          start: "top center",
-          toggleActions: "play none none reverse",
+          start: "top top",
+          end: "+=1400",
+          scrub: 1,
+          pin: true,
+          pinSpacing: true,
+          anticipatePin: 1,
         },
       });
-      gsap.from(".testimonial-attribution", {
-        opacity: 0,
-        delay: 0.6,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: ".testimonial-section",
-          start: "top center",
-          toggleActions: "play none none reverse",
-        },
-      });
+
+      testimonialTl
+        .from(".testimonial-line", {
+          opacity: 0,
+          y: 30,
+          stagger: 0.8,
+          ease: "power2.out",
+          duration: 1,
+        })
+        .from(
+          ".testimonial-attribution",
+          {
+            opacity: 0,
+            y: 15,
+            ease: "power2.out",
+            duration: 0.8,
+          },
+          "+=0.4"
+        );
 
       // ── Section 7: Form reveal
       gsap.from(".form-field", {

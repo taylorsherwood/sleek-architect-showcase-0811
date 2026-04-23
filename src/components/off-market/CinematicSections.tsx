@@ -685,11 +685,11 @@ const CinematicSections = ({ formNode }: Props) => {
       {/* ── Section 6: Vertical Split-Reveal Testimonial ─ */}
       <section className="testimonial-section relative w-full h-screen bg-[hsl(220,15%,6%)] overflow-hidden">
         {/* Testimonial sits behind the split image */}
-        <div className="absolute inset-0 z-0 flex items-center justify-end px-8 md:px-16 lg:px-24">
-          <div className="max-w-xl md:w-1/2 md:pl-8">
+        <div className="absolute inset-0 z-0 flex items-center justify-center px-8">
+          <div className="max-w-4xl text-center">
             <p
-              className="font-display italic text-white/90 font-light leading-[1.3] mb-10"
-              style={{ fontSize: "clamp(1.4rem, 2.2vw, 2.1rem)" }}
+              className="font-display italic text-white/90 font-light leading-[1.25] mb-10"
+              style={{ fontSize: "clamp(1.6rem, 2.6vw, 2.6rem)" }}
             >
               <span className="testimonial-line block will-change-transform">"Taylor brought us a Westlake home</span>
               <span className="testimonial-line block will-change-transform">before it ever hit the market.</span>
@@ -704,35 +704,25 @@ const CinematicSections = ({ formNode }: Props) => {
           </div>
         </div>
 
-        {/* Left half of the image — remains; gentle parallax for depth */}
+        {/* Left half — slides off to the LEFT */}
         <div className="testimonial-split-left absolute inset-y-0 left-0 w-1/2 z-10 overflow-hidden will-change-transform">
-          <div className="testimonial-split-image-left absolute inset-0 will-change-transform">
-            <img
-              src={testimonialSplitImg}
-              alt="Lake Austin luxury waterfront estate at golden hour"
-              className="testimonial-split-image absolute inset-y-0 left-0 h-full w-screen max-w-none object-cover will-change-transform"
-              decoding="async"
-            />
-            {/* Warm cinematic vignette — fades in during phase 1 */}
-            <div
-              className="testimonial-vignette absolute inset-0 pointer-events-none"
-              style={{
-                background:
-                  "radial-gradient(ellipse at 30% 50%, transparent 35%, rgba(0,0,0,0.55) 100%)",
-              }}
-            />
-            {/* Feathered inner shadow on the parting edge */}
-            <div
-              className="absolute inset-y-0 right-0 w-24 pointer-events-none"
-              style={{
-                background:
-                  "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.35) 100%)",
-              }}
-            />
-          </div>
+          <img
+            src={testimonialSplitImg}
+            alt="Lake Austin luxury waterfront estate at golden hour"
+            className="testimonial-split-image absolute inset-y-0 left-0 h-full w-screen max-w-none object-cover will-change-transform"
+            decoding="async"
+          />
+          {/* Feathered shadow on parting edge */}
+          <div
+            className="absolute inset-y-0 right-0 w-24 pointer-events-none"
+            style={{
+              background:
+                "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.35) 100%)",
+            }}
+          />
         </div>
 
-        {/* Right half of the image — slides off to the RIGHT */}
+        {/* Right half — slides off to the RIGHT */}
         <div className="testimonial-split-right absolute inset-y-0 right-0 w-1/2 z-10 overflow-hidden will-change-transform">
           <img
             src={testimonialSplitImg}
@@ -741,7 +731,7 @@ const CinematicSections = ({ formNode }: Props) => {
             className="testimonial-split-image absolute inset-y-0 right-0 h-full w-screen max-w-none object-cover will-change-transform"
             decoding="async"
           />
-          {/* Soft trailing shadow on the leading edge as it departs */}
+          {/* Feathered shadow on parting edge */}
           <div
             className="absolute inset-y-0 left-0 w-24 pointer-events-none"
             style={{

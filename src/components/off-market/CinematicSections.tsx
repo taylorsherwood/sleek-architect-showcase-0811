@@ -711,7 +711,7 @@ const CinematicSections = ({ formNode }: Props) => {
           <p className="font-display italic text-white/90 font-light leading-[1.3] mb-10" style={{ fontSize: "2.4vw" }}>
             <span className="testimonial-line block">"Taylor brought us a</span>
             <span className="testimonial-line block">Westlake home before</span>
-            <span className="testimonial-line block">it ever reached the market.</span>
+            <span className="testimonial-line block">it ever hit the market.</span>
             <span className="testimonial-line block">We never would have seen it without him."</span>
           </p>
           <p className="testimonial-attribution text-[hsl(var(--gold))] tracking-[0.25em] uppercase font-sans" style={{ fontSize: "0.7rem" }}>

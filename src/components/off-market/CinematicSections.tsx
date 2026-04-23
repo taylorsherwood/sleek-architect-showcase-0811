@@ -706,10 +706,10 @@ const CinematicSections = ({ formNode }: Props) => {
       {/* ── Section 4: Horizontal Scroll Gallery ─ */}
       <section className="horizontal-section relative h-screen w-full overflow-hidden bg-[hsl(220,15%,6%)]">
         <div className="horizontal-track absolute top-0 left-0 h-full flex" style={{ width: "max-content" }}>
-          {NEIGHBORHOODS.map((n) => (
+          {NEIGHBORHOODS.map((n, idx) => (
             <div
               key={n.name}
-              className="horizontal-card relative h-screen flex items-end overflow-hidden will-change-transform"
+              className={`horizontal-card relative h-screen flex items-end overflow-hidden will-change-transform ${idx === 0 ? "is-first" : ""}`}
               style={{ width: "80vw" }}
             >
               <div

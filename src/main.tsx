@@ -12,6 +12,31 @@ const hasHydratableMarkup = (root: HTMLElement) => {
   return elementChildren.some((child) => child.tagName !== "NOSCRIPT");
 };
 
+const getServerRenderedPath = () => {
+  const canonicalHref = document
+    .querySelector('link[rel="canonical"]')
+    ?.getAttribute("href");
+
+  if (!canonicalHref) return null;
+
+  try {
+    return new URL(canonicalHref, window.location.origin).pathname;
+  } catch {
+    return null;
+  }
+};
+
+const shouldHydrate = (root: HTMLElement) => {
+  if (!hasHydratableMarkup(root)) return false;
+
+  const requestedPath = window.location.pathname;
+  const serverRenderedPath = getServerRenderedPath();
+
+  if (!serverRenderedPath) return true;
+
+  return requestedPath === serverRenderedPath;
+};
+
 const app = (
   <StrictMode>
     <HelmetProvider>
@@ -22,9 +47,12 @@ const app = (
   </StrictMode>
 );
 
-if (rootElement && hasHydratableMarkup(rootElement)) {
-  hydrateRoot(rootElement, app);
-} else if (rootElement) {
-  createRoot(rootElement).render(app);
+if (rootElement) {
+  if (shouldHydrate(rootElement)) {
+    hydrateRoot(rootElement, app);
+  } else {
+    rootElement.replaceChildren();
+    createRoot(rootElement).render(app);
+  }
 }
 

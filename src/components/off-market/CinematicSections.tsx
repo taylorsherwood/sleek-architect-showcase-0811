@@ -14,7 +14,7 @@ import cardDavenport from "@/assets/davenport-ranch-estate.jpg";
 import cardSpanishOaks from "@/assets/spanish-oaks-estate.jpg";
 import desktopNote from "@/assets/testimonial-westlake-living-room.jpg";
 import austinSkylineParallax from "@/assets/austin-skyline-parallax.jpeg";
-import clarksvilleImg from "@/assets/communities/clarksville.jpg";
+import clarksvilleImg from "@/assets/off-market-reveal-estate.webp";
 
 gsap.registerPlugin(ScrollTrigger);
 

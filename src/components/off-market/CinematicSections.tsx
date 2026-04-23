@@ -577,13 +577,12 @@ const CinematicSections = ({ formNode }: Props) => {
       <section className="parallax-section relative h-screen w-full overflow-hidden bg-[hsl(220,15%,8%)]">
         <div
           className="absolute left-0 right-0"
-          style={{ top: "-15%", bottom: "-15%" }}
+          style={{ top: "-20%", height: "140%" }}
         >
           <img
             src={austinSkylineParallax}
             alt="Austin downtown skyline at sunset over Lady Bird Lake"
             className="parallax-image w-full h-full object-cover will-change-transform"
-            loading="lazy"
           />
           <div className="absolute inset-0 bg-black/30" />
         </div>

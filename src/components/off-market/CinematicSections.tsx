@@ -5,15 +5,15 @@ import Lenis from "lenis";
 import { useIsMobile } from "@/hooks/use-mobile";
 
 import westlakeDusk from "@/assets/community-westlake-hills-hero.webp";
-import privateInventoryHero from "@/assets/hero-luxury-austin.jpg";
-import card78746 from "@/assets/barton-creek-estate-new.jpg";
-import cardTarrytown from "@/assets/community-tarrytown.jpg";
-import cardOldEnfield from "@/assets/pemberton-heights.avif";
-import cardWestlake from "@/assets/community-westlake-new.jpg";
-import cardDavenport from "@/assets/davenport-ranch-estate.jpg";
-import cardSpanishOaks from "@/assets/spanish-oaks-estate.jpg";
-import desktopNote from "@/assets/testimonial-westlake-living-room.jpg";
-import austinSkylineParallax from "@/assets/austin-skyline-parallax.jpeg";
+import privateInventoryHero from "@/assets/hero-luxury-austin.webp";
+import card78746 from "@/assets/barton-creek-estate-new.webp";
+import cardTarrytown from "@/assets/community-tarrytown.webp";
+import cardOldEnfield from "@/assets/pemberton-heights.webp";
+import cardWestlake from "@/assets/community-westlake-new.webp";
+import cardDavenport from "@/assets/davenport-ranch-estate.webp";
+import cardSpanishOaks from "@/assets/spanish-oaks-estate.webp";
+import desktopNote from "@/assets/testimonial-westlake-living-room.webp";
+import austinSkylineParallax from "@/assets/austin-skyline-parallax.webp";
 import clarksvilleImg from "@/assets/off-market-reveal-estate.webp";
 import taylorSignature from "@/assets/taylor-sherwood-signature.png";
 

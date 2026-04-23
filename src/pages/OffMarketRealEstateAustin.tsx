@@ -376,7 +376,7 @@ const OffMarketRealEstateAustin = () => {
             window.scrollTo({ top: window.innerHeight, behavior: "smooth" });
           }}
           aria-label="Scroll to explore"
-          className="hero-scroll-cue absolute bottom-8 md:bottom-12 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-3 group cursor-pointer"
+          className="hero-scroll-cue absolute bottom-2 md:bottom-4 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-3 group cursor-pointer"
         >
           <span
             className="text-[hsl(var(--gold))] font-sans group-hover:text-white transition-colors duration-500"

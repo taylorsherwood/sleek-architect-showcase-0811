@@ -19,10 +19,8 @@
     <!-- Only preload critical above-the-fold fonts (Cinzel for H1, Jost for body) -->
     <link rel="preload" as="font" type="font/woff2" href="/fonts/cinzel-latin.woff2" crossorigin media="all" />
     <link rel="preload" as="font" type="font/woff2" href="/fonts/jost-latin.woff2" crossorigin media="all" />
-    <!-- Load full fonts.css asynchronously (non-render-blocking) -->
-    <link rel="preload" as="style" href="/fonts/fonts.css" />
-    <link rel="stylesheet" media="print" onload="this.media='all'" href="/fonts/fonts.css" />
-    <noscript><link rel="stylesheet" href="/fonts/fonts.css" /></noscript>
+    <!-- Load full fonts.css render-blocking so all weights resolve before first paint -->
+    <link rel="stylesheet" href="/fonts/fonts.css" />
 
     <!-- Preload hero poster (mobile gets smaller optimized image) -->
     <link rel="preload" as="image" href="/images/mobile-hero-poster.webp" type="image/webp" fetchpriority="high" media="(max-width: 767px)" />

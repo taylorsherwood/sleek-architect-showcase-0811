@@ -217,9 +217,9 @@ const CinematicSections = ({ formNode }: Props) => {
         gsap.utils.toArray<HTMLDivElement>(".horizontal-card-image").forEach((img) => {
           gsap.fromTo(
             img,
-            { xPercent: -8 },
+            { xPercent: -3 },
             {
-              xPercent: 8,
+              xPercent: 3,
               ease: "none",
               scrollTrigger: {
                 trigger: img.parentElement!,
@@ -631,7 +631,7 @@ const CinematicSections = ({ formNode }: Props) => {
             >
               <div
                 className="horizontal-card-image absolute inset-0 will-change-transform"
-                style={{ width: "120%", left: "-10%" }}
+                style={{ width: "100%", left: "0%" }}
               >
                 <img
                   src={n.image}

@@ -582,7 +582,7 @@ const TestimonialsSection = () => {
           <div className="max-w-xl md:w-1/2 md:pl-8">
             <p
               className="tsplit-attribution text-gold mb-6 font-sans uppercase will-change-transform"
-              style={{ fontSize: "0.72rem", letterSpacing: "0.28em", paddingLeft: "0.9ch" }}
+              style={{ fontSize: "0.72rem", letterSpacing: "0.28em", paddingLeft: "1.6ch" }}
             >
               Client Experiences
             </p>
@@ -605,7 +605,7 @@ const TestimonialsSection = () => {
                 style={{
                   fontSize: "0.72rem",
                   letterSpacing: "0.28em",
-                  paddingLeft: "0.9ch",
+                  paddingLeft: "1.6ch",
                   animation: revealed ? "fadeUp 0.7s ease 0.15s both" : undefined,
                 }}
               >
@@ -618,7 +618,7 @@ const TestimonialsSection = () => {
                   fontSize: "0.7rem",
                   letterSpacing: "0.18em",
                   marginTop: "0.55rem",
-                  paddingLeft: "0.9ch",
+                  paddingLeft: "1.6ch",
                   animation: revealed ? "fadeUp 0.7s ease 0.25s both" : undefined,
                 }}
               >
@@ -626,7 +626,7 @@ const TestimonialsSection = () => {
               </p>
 
               {revealed && (
-                <div className="flex items-center gap-2.5 mt-10" style={{ paddingLeft: "0.9ch" }}>
+                <div className="flex items-center gap-2.5 mt-10" style={{ paddingLeft: "1.6ch" }}>
                   {testimonials.map((_, i) => (
                     <button
                       key={i}
@@ -783,7 +783,6 @@ const CommunitiesSection = () => (
       <div className="max-w-[1320px] mx-auto">
         <ScrollReveal>
           <div className="text-center mb-16">
-            <div className="w-10 h-px mx-auto mb-5" style={{ background: "hsl(38 39% 61%)" }} />
             <p className="text-minimal text-gold mb-5">SELECT COMMUNITIES</p>
             <h2 className="font-display text-3xl md:text-[2.75rem] font-normal text-foreground/90 leading-[1.1] tracking-[0.03em]">
               Explore Austin's Most Sought-After Communities

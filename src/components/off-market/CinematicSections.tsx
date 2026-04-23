@@ -628,8 +628,39 @@ const CinematicSections = ({ formNode }: Props) => {
         </div>
       </section>
 
-      {/* ── Section 3: Parallax Image Reveal — REMOVED ───── */}
-
+      {/* ── Section 4: Horizontal Scroll Gallery ─ */}
+      <section className="horizontal-section relative h-screen w-full overflow-hidden bg-[hsl(220,15%,6%)]">
+        <div className="horizontal-track absolute top-0 left-0 h-full flex" style={{ width: "max-content" }}>
+          {NEIGHBORHOODS.map((n) => (
+            <div
+              key={n.name}
+              className="relative h-screen flex items-end overflow-hidden"
+              style={{ width: "80vw" }}
+            >
+              <div
+                className="horizontal-card-image absolute inset-0 will-change-transform"
+                style={{ width: "100%", left: "0%" }}
+              >
+                <img
+                  src={n.image}
+                  alt={`${n.name} luxury Austin neighborhood`}
+                  className="w-full h-full object-cover"
+                  decoding="async"
+                />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/15 to-transparent" />
+              <div className="relative z-10 p-10 lg:p-14 max-w-xl">
+                <p className="mb-4 text-xs uppercase tracking-[0.24em] font-sans" style={{ color: "#b9a06c" }}>
+                  {n.stat}
+                </p>
+                <h2 className="font-display text-4xl lg:text-6xl text-white leading-[0.98]">
+                  {n.name}
+                </h2>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
 
       {/* ── Section 6: Split Parallax Testimonial ─ */}
       <section className="testimonial-section relative w-full bg-[hsl(220,15%,6%)] grid grid-cols-2 min-h-screen overflow-hidden">

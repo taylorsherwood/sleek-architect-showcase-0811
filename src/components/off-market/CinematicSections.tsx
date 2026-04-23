@@ -8,7 +8,7 @@ import westlakeDusk from "@/assets/community-westlake-hills-hero.webp";
 import card78746 from "@/assets/barton-creek-estate-new.jpg";
 import cardTarrytown from "@/assets/community-tarrytown.jpg";
 import cardOldEnfield from "@/assets/pemberton-heights.avif";
-import cardWestlake from "@/assets/community-westlake.jpg";
+import cardWestlake from "@/assets/community-westlake-new.jpg";
 import cardDavenport from "@/assets/davenport-ranch-estate.jpg";
 import cardSpanishOaks from "@/assets/spanish-oaks-estate.jpg";
 import desktopNote from "@/assets/austin-luxury-lifestyle.jpg";

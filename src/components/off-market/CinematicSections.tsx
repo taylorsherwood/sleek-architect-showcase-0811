@@ -5,7 +5,7 @@ import Lenis from "lenis";
 import { useIsMobile } from "@/hooks/use-mobile";
 
 import westlakeDusk from "@/assets/community-westlake-hills-hero.webp";
-import card78746 from "@/assets/barton-creek.jpg";
+import card78746 from "@/assets/barton-creek-estate.jpg";
 import cardTarrytown from "@/assets/community-tarrytown.jpg";
 import cardOldEnfield from "@/assets/pemberton-heights.avif";
 import cardWestlake from "@/assets/community-westlake.jpg";

@@ -202,24 +202,25 @@ const CinematicSections = ({ formNode }: Props) => {
           start: "top top",
           end: "+=100%",
           scrub: 1,
-          pin: true,
-          pinSpacing: true,
+          pin: ".parallax-pin",
+          pinSpacing: false,
           anticipatePin: 1,
         },
       });
       parallaxTl
         .fromTo(
           ".parallax-image",
-          { yPercent: -6, scale: 1.05 },
-          { yPercent: 6, scale: 1, ease: "none" },
+          { yPercent: -4, scale: 1.03 },
+          { yPercent: 4, scale: 1, ease: "none" },
           0
         )
         .fromTo(
           ".parallax-headline",
-          { opacity: 0, y: 40, scale: 0.94 },
+          { opacity: 0, y: 40, scale: 0.96 },
           { opacity: 1, y: 0, scale: 1, ease: "power2.out" },
-          0.15
-        );
+          0.2
+        )
+        .to({}, { duration: 0.25 });
 
       // ── Section 4: Horizontal Scroll Gallery
       const horizontalTrack = document.querySelector<HTMLDivElement>(".horizontal-track");

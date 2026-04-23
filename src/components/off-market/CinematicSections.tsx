@@ -114,6 +114,8 @@ const CinematicSections = ({ formNode }: Props) => {
     const root = rootRef.current;
     if (!root) return;
 
+    let cleanupCommunitiesHeightSync: (() => void) | undefined;
+
     const ctx = gsap.context(() => {
       // ── Section 2: Pinned Thesis word-by-word reveal
       // Pin the section and reveal each word as the user scrolls.
@@ -217,66 +219,6 @@ const CinematicSections = ({ formNode }: Props) => {
         .fromTo(".bridge-rule", { width: 0, opacity: 0 }, { width: 120, opacity: 1, ease: "power2.out", duration: 0.5 }, 0.5)
         .to({}, { duration: 0.3 });
 
-      // ── Section 4: Horizontal Scroll Gallery
-      const horizontalTrack = document.querySelector<HTMLDivElement>(".horizontal-track");
-      if (horizontalTrack) {
-        const totalScroll = horizontalTrack.scrollWidth - window.innerWidth;
-
-        // Cinematic reveal — as the gallery enters viewport (after counter unpins),
-        // the first card image scales down from over-zoomed and the entire track
-        // rises up smoothly. Scrub-driven so it feels tied to user scroll.
-        gsap.set(".horizontal-track", { yPercent: 12, opacity: 0 });
-        gsap.set(".horizontal-card.is-first .horizontal-card-image img", { scale: 1.18 });
-        gsap.set(".horizontal-card.is-first .card-content", { opacity: 0, y: 40 });
-
-        const galleryReveal = gsap.timeline({
-          scrollTrigger: {
-            trigger: ".horizontal-section",
-            start: "top bottom",
-            end: "top top",
-            scrub: 1.2,
-          },
-        });
-        galleryReveal
-          .to(".horizontal-track", { yPercent: 0, opacity: 1, ease: "none" }, 0)
-          .to(".horizontal-card.is-first .horizontal-card-image img", { scale: 1, ease: "none" }, 0)
-          .to(".horizontal-card.is-first .card-content", { opacity: 1, y: 0, ease: "none" }, 0.4);
-
-        // Horizontal scroll pin
-        gsap.to(horizontalTrack, {
-          x: -totalScroll,
-          ease: "none",
-          scrollTrigger: {
-            trigger: ".horizontal-section",
-            start: "top top",
-            end: () => `+=${totalScroll}`,
-            pin: true,
-            scrub: 1,
-            anticipatePin: 1,
-            invalidateOnRefresh: true,
-          },
-        });
-
-        // Per-card image parallax
-        gsap.utils.toArray<HTMLDivElement>(".horizontal-card-image").forEach((img) => {
-          gsap.fromTo(
-            img,
-            { xPercent: -3 },
-            {
-              xPercent: 3,
-              ease: "none",
-              scrollTrigger: {
-                trigger: img.parentElement!,
-                containerAnimation: gsap.getTweensOf(horizontalTrack)[0],
-                start: "left right",
-                end: "right left",
-                scrub: 1,
-              },
-            }
-          );
-        });
-      }
-
       // ── Section 5: Counter — pin so user can't scroll past until counters finish.
       const statEls = gsap.utils.toArray<HTMLSpanElement>(".stat-number");
       const counterObj = STATS.map((s) => ({ value: 0, target: s.value }));
@@ -304,6 +246,18 @@ const CinematicSections = ({ formNode }: Props) => {
           },
         },
       });
+      const statsOutroTl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".stats-section",
+          start: "top top",
+          end: "+=200%",
+          scrub: 1,
+        },
+      });
+      statsOutroTl
+        .to(".stats-grid", { opacity: 1, y: 0, ease: "none", duration: 160 }, 0)
+        .to(".stats-grid", { opacity: 0.12, y: -40, ease: "none", duration: 40 }, 160)
+        .to(".stats-outro", { opacity: 1, ease: "none", duration: 40 }, 160);
       gsap.from(".stat-label", {
         opacity: 0,
         y: 20,
@@ -315,6 +269,46 @@ const CinematicSections = ({ formNode }: Props) => {
           toggleActions: "play none none reverse",
         },
       });
+
+      // ── Section 4: Communities reveal + horizontal gallery
+      const communitiesSection = root.querySelector<HTMLElement>(".communities-section");
+      const horizontalTrack = root.querySelector<HTMLDivElement>(".horizontal-track");
+      if (communitiesSection && horizontalTrack) {
+        const getIntroDistance = () => Math.round(window.innerHeight * 0.8);
+        const getHorizontalDistance = () => Math.max(horizontalTrack.scrollWidth - window.innerWidth, 0);
+
+        const syncCommunitiesHeight = () => {
+          communitiesSection.style.height = `${window.innerHeight + getIntroDistance() + getHorizontalDistance()}px`;
+        };
+
+        syncCommunitiesHeight();
+        ScrollTrigger.addEventListener("refreshInit", syncCommunitiesHeight);
+        cleanupCommunitiesHeightSync = () => {
+          ScrollTrigger.removeEventListener("refreshInit", syncCommunitiesHeight);
+        };
+
+        gsap.set(".horizontal-track", { yPercent: 8 });
+        gsap.set(".horizontal-card-image img", { scale: 1.08 });
+        gsap.set(".card-content", { y: 36 });
+        gsap.set(".communities-veil", { opacity: 0.78 });
+
+        const communitiesTimeline = gsap.timeline({
+          scrollTrigger: {
+            trigger: communitiesSection,
+            start: "top top",
+            end: () => `+=${getIntroDistance() + getHorizontalDistance()}`,
+            scrub: 1,
+            invalidateOnRefresh: true,
+          },
+        });
+
+        communitiesTimeline
+          .to(".communities-veil", { opacity: 0, ease: "none", duration: getIntroDistance() }, 0)
+          .to(".horizontal-track", { yPercent: 0, ease: "none", duration: getIntroDistance() }, 0)
+          .to(".horizontal-card-image img", { scale: 1, ease: "none", duration: getIntroDistance() }, 0)
+          .to(".card-content", { y: 0, ease: "none", duration: getIntroDistance() * 0.86 }, getIntroDistance() * 0.14)
+          .to(horizontalTrack, { x: () => -getHorizontalDistance(), ease: "none", duration: Math.max(getHorizontalDistance(), 1) }, getIntroDistance());
+      }
 
       // ── Section 6: Split Parallax Testimonial — pin so user can't fly past.
       gsap.to(".testimonial-image", {
@@ -376,6 +370,7 @@ const CinematicSections = ({ formNode }: Props) => {
     }, root);
 
     return () => {
+      cleanupCommunitiesHeightSync?.();
       ctx.revert();
       ScrollTrigger.getAll().forEach((st) => st.kill());
     };
@@ -682,7 +677,8 @@ const CinematicSections = ({ formNode }: Props) => {
 
       {/* ── Section 5: Pinned Counter ──────────── */}
       <section className="stats-section relative h-screen w-full bg-[hsl(220,15%,8%)] flex items-center justify-center overflow-hidden">
-        <div className="container mx-auto px-8 max-w-7xl">
+        <div className="stats-outro pointer-events-none absolute inset-0 bg-[hsl(220,15%,8%)] opacity-0" aria-hidden="true" />
+        <div className="stats-grid container relative z-10 mx-auto px-8 max-w-7xl">
           <div className="grid grid-cols-3 gap-12 lg:gap-16 items-end">
             {STATS.map((s, i) => (
               <div key={s.label} className="text-center min-w-0 overflow-hidden">
@@ -704,36 +700,41 @@ const CinematicSections = ({ formNode }: Props) => {
       </section>
 
       {/* ── Section 4: Horizontal Scroll Gallery ─ */}
-      <section className="horizontal-section relative h-screen w-full overflow-hidden bg-[hsl(220,15%,6%)]">
-        <div className="horizontal-track absolute top-0 left-0 h-full flex" style={{ width: "max-content" }}>
-          {NEIGHBORHOODS.map((n, idx) => (
-            <div
-              key={n.name}
-              className={`horizontal-card relative h-screen flex items-end overflow-hidden will-change-transform ${idx === 0 ? "is-first" : ""}`}
-              style={{ width: "80vw" }}
-            >
-              <div
-                className="horizontal-card-image absolute inset-0 will-change-transform"
-                style={{ width: "100%", left: "0%" }}
-              >
-                <img
-                  src={n.image}
-                  alt={`${n.name} luxury Austin neighborhood`}
-                  className="w-full h-full object-cover"
-                  decoding="async"
-                />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/15 to-transparent" />
-              <div className="card-content relative z-10 p-10 lg:p-14 max-w-xl">
-                <p className="mb-4 text-xs uppercase tracking-[0.24em] font-sans" style={{ color: "#b9a06c" }}>
-                  {n.stat}
-                </p>
-                <h2 className="font-display text-4xl lg:text-6xl text-white leading-[0.98]">
-                  {n.name}
-                </h2>
-              </div>
+      <section className="communities-section relative w-full bg-[hsl(220,15%,6%)] overflow-hidden">
+        <div className="sticky top-0 h-screen overflow-hidden">
+          <div className="communities-veil pointer-events-none absolute inset-0 z-20 bg-[hsl(220,15%,8%)]" aria-hidden="true" />
+          <div className="horizontal-section relative h-screen w-full overflow-hidden bg-[hsl(220,15%,6%)]">
+            <div className="horizontal-track absolute top-0 left-0 h-full flex" style={{ width: "max-content" }}>
+              {NEIGHBORHOODS.map((n, idx) => (
+                <div
+                  key={n.name}
+                  className={`horizontal-card relative h-screen flex items-end overflow-hidden will-change-transform ${idx === 0 ? "is-first" : ""}`}
+                  style={{ width: "80vw" }}
+                >
+                  <div
+                    className="horizontal-card-image absolute inset-0 will-change-transform"
+                    style={{ width: "100%", left: "0%" }}
+                  >
+                    <img
+                      src={n.image}
+                      alt={`${n.name} luxury Austin neighborhood`}
+                      className="w-full h-full object-cover"
+                      decoding="async"
+                    />
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/15 to-transparent" />
+                  <div className="card-content relative z-10 p-10 lg:p-14 max-w-xl">
+                    <p className="mb-4 text-xs uppercase tracking-[0.24em] font-sans" style={{ color: "#b9a06c" }}>
+                      {n.stat}
+                    </p>
+                    <h2 className="font-display text-4xl lg:text-6xl text-white leading-[0.98]">
+                      {n.name}
+                    </h2>
+                  </div>
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
         </div>
       </section>
 

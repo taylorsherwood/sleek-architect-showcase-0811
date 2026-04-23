@@ -28,7 +28,7 @@ const THESIS = "The best Austin homes don't get listed. They get introduced.";
 
 const NEIGHBORHOODS = [
   { name: "Barton creek", image: card78746, stat: "Median sale: $3.2M" },
-  { name: "Tarrytown", image: cardTarrytown, stat: "Avg DOM off-market: 14 days" },
+  { name: "Rollingwood", image: cardTarrytown, stat: "Avg DOM off-market: 14 days" },
   { name: "Old Enfield", image: cardOldEnfield, stat: "60% OF TRADES ARE PRIVATE" },
   { name: "West Lake Hills", image: cardWestlake, stat: "Median sale: $4.1M" },
   { name: "Rollingwood", image: cardDavenport, stat: "Country-club gated estates" },

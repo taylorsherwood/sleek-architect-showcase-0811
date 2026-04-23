@@ -222,18 +222,21 @@ const OffMarketRealEstateAustin = () => {
       <button
         type="submit"
         disabled={loading}
-        className="w-full inline-flex items-center justify-center transition-colors duration-300 ease-out disabled:opacity-50 active:scale-[0.98] mt-1"
+        className="w-full inline-flex items-center justify-center transition-all duration-300 ease-out disabled:opacity-50 active:scale-[0.98] mt-1"
         style={{
           fontFamily: '"Jost", sans-serif',
           fontSize: "0.9rem",
           fontWeight: 400,
           letterSpacing: "0.2em",
           textTransform: "uppercase",
-          background: "transparent",
+          background: "rgba(186, 162, 106, 0.08)",
+          backdropFilter: "blur(14px) saturate(140%)",
+          WebkitBackdropFilter: "blur(14px) saturate(140%)",
           border: "1px solid #BAA26A",
           color: "#BAA26A",
           padding: "1.25rem 2.5rem",
           borderRadius: 0,
+          boxShadow: "inset 0 1px 0 rgba(255,255,255,0.06)",
         }}
         onMouseEnter={(e) => {
           if (loading) return;
@@ -243,6 +246,7 @@ const OffMarketRealEstateAustin = () => {
         onMouseLeave={(e) => {
           e.currentTarget.style.backgroundColor = "transparent";
           e.currentTarget.style.color = "#BAA26A";
+          e.currentTarget.style.background = "rgba(186, 162, 106, 0.08)";
         }}
       >
         {loading ? "Submitting…" : "Request Private Access →"}
@@ -350,11 +354,14 @@ const OffMarketRealEstateAustin = () => {
                 fontWeight: 400,
                 letterSpacing: "0.18em",
                 textTransform: "uppercase",
-                background: "transparent",
+                background: "rgba(186, 162, 106, 0.10)",
+                backdropFilter: "blur(14px) saturate(140%)",
+                WebkitBackdropFilter: "blur(14px) saturate(140%)",
                 border: "1px solid #BAA26A",
                 color: "#BAA26A",
                 padding: "0.6rem 1.25rem",
                 borderRadius: 0,
+                boxShadow: "inset 0 1px 0 rgba(255,255,255,0.08)",
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.backgroundColor = "#BAA26A";
@@ -363,6 +370,7 @@ const OffMarketRealEstateAustin = () => {
               onMouseLeave={(e) => {
                 e.currentTarget.style.backgroundColor = "transparent";
                 e.currentTarget.style.color = "#BAA26A";
+                e.currentTarget.style.background = "rgba(186, 162, 106, 0.10)";
               }}
             >
               REQUEST PRIVATE ACCESS →

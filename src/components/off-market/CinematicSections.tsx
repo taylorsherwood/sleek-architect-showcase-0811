@@ -372,7 +372,7 @@ const CinematicSections = ({ formNode }: Props) => {
           />
           <div className="px-6 py-12 text-center bg-[hsl(220,15%,8%)]">
             <p className="text-[hsl(var(--gold))] mb-4 font-bold" style={labelStyle}>
-              02 — THE INVITATION
+              THE INVITATION
             </p>
             <h2 className="font-display text-3xl text-[hsl(40,30%,92%)]">
               What happens before it's listed.
@@ -531,7 +531,7 @@ const CinematicSections = ({ formNode }: Props) => {
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-8 z-0">
           <div className="split-text will-change-transform relative z-10">
             <p className="text-[hsl(var(--gold))] mb-6 font-bold" style={labelStyle}>
-              02 — THE INVITATION
+              THE INVITATION
             </p>
             <h2
               className="font-display text-[hsl(40,30%,92%)] font-light leading-[1.05] max-w-[90vw]"

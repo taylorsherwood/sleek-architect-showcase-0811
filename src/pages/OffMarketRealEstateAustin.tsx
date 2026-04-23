@@ -228,7 +228,7 @@ const OffMarketRealEstateAustin = () => {
         <div className="relative z-10 container mx-auto px-6 sm:px-10 md:px-16 py-12 md:py-24">
           <div className="max-w-full md:max-w-[60vw] text-left">
             <p className="text-[hsl(var(--gold))] mb-6 font-bold" style={labelStyle}>
-              PRIVATE REAL ESTATE ACCESS
+              PRIVATE INVENTORY
             </p>
             <h1
               className="font-display font-light text-[#F5F1EA] mb-8 tracking-tight"

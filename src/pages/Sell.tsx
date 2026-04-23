@@ -529,11 +529,12 @@ const Sell = () => {
       <section className="relative py-24 md:py-36 bg-secondary overflow-hidden">
         {/* Single watermark — bottom-right ambient depth */}
         <div
-          className="pointer-events-none absolute right-[-5%] bottom-[-18%] w-[60vw] max-w-[800px] aspect-square opacity-[0.03]"
+          className="pointer-events-none absolute right-[-5%] bottom-[-18%] w-[60vw] max-w-[800px] aspect-square overflow-hidden opacity-[0.03]"
           aria-hidden="true"
         >
-          <img src={echelonWatermark} alt="" className="w-full h-full object-contain"
+          <img src={echelonWatermark} alt="" className="w-full object-contain"
                     loading="lazy" decoding="async"
+                    style={{ width: "100%", height: "100%" }}
                     />
         </div>
 

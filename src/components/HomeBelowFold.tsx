@@ -545,18 +545,18 @@ const TestimonialsSection = () => {
 
   return (
     <section ref={sectionRef} className="bg-secondary relative overflow-hidden" style={{ padding: "clamp(48px, 7vw, 90px) 0" }}>
-      <div ref={watermarkRef} className="absolute inset-0 flex items-center justify-center pointer-events-none" aria-hidden="true"
+      <div ref={watermarkRef} className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden" aria-hidden="true"
         style={{ transform: "translate(1%, 4%)", transition: "transform 0.15s linear" }}>
         <div style={{
           width: "600px",
           maxWidth: "90vw",
-          aspectRatio: "1",
+          aspectRatio: "1 / 1",
           maskImage: "radial-gradient(ellipse 60% 60% at center, black 0%, black 40%, transparent 85%)",
           WebkitMaskImage: "radial-gradient(ellipse 60% 60% at center, black 0%, black 40%, transparent 85%)",
         }}>
-          <img src={echelonWatermark} alt="" className="w-full h-full object-contain"
+          <img src={echelonWatermark} alt="" className="w-full object-contain"
             loading="lazy" decoding="async"
-            style={{ opacity: 0.09, filter: "blur(0.8px) saturate(0.85) brightness(1.02)" }} />
+            style={{ width: "100%", height: "100%", opacity: 0.09, filter: "blur(0.8px) saturate(0.85) brightness(1.02)" }} />
         </div>
       </div>
       <div className="container mx-auto px-6 relative z-10">

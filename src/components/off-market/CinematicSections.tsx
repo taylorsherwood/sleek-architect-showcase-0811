@@ -441,7 +441,7 @@ const CinematicSections = ({ formNode }: Props) => {
           <img src={desktopNote} alt="Handwritten note on desk" className="w-full h-[40vh] object-cover" loading="lazy" />
           <div className="px-6 py-12 text-center">
             <p className="font-display italic text-2xl text-white/90 leading-snug mb-6">
-              "Echelon brought us a Westlake estate before it ever hit the market. We closed in twelve days."
+              "Taylor brought us a Westlake home before it ever hit the market. We never would have seen it without him."
             </p>
             <p className="text-[hsl(var(--gold))] text-xs tracking-[0.2em] uppercase font-sans">
               — Private Buyer, Westlake Hills
@@ -669,10 +669,10 @@ const CinematicSections = ({ formNode }: Props) => {
         </div>
         <div className="flex flex-col justify-center px-12 lg:px-20 py-24">
           <p className="font-display italic text-white/90 font-light leading-[1.3] mb-10" style={{ fontSize: "2.4vw" }}>
-            <span className="testimonial-line block">"Echelon brought us a</span>
-            <span className="testimonial-line block">Westlake estate before</span>
+            <span className="testimonial-line block">"Taylor brought us a</span>
+            <span className="testimonial-line block">Westlake home before</span>
             <span className="testimonial-line block">it ever reached the market.</span>
-            <span className="testimonial-line block">We closed in twelve days."</span>
+            <span className="testimonial-line block">We never would have seen it without him."</span>
           </p>
           <p className="testimonial-attribution text-[hsl(var(--gold))] tracking-[0.25em] uppercase font-sans" style={{ fontSize: "0.7rem" }}>
             — Private Buyer, Westlake Hills

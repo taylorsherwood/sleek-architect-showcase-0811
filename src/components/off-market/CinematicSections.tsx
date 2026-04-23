@@ -257,8 +257,12 @@ const CinematicSections = ({ formNode }: Props) => {
           },
         });
 
-        // Per-card image parallax
-        gsap.utils.toArray<HTMLDivElement>(".horizontal-card-image").forEach((img) => {
+        // Per-card image parallax — skip the LAST card so it doesn't shift
+        // back into frame after the pin releases (which caused the
+        // "black screen → Spanish Oaks reappears" flash).
+        const cardImages = gsap.utils.toArray<HTMLDivElement>(".horizontal-card-image");
+        cardImages.forEach((img, i) => {
+          if (i === cardImages.length - 1) return;
           gsap.fromTo(
             img,
             { xPercent: -3 },

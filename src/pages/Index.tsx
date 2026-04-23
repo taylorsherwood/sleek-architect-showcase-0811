@@ -223,7 +223,7 @@ const Hero = () => {
           window.scrollTo({ top: window.innerHeight, behavior: "smooth" });
         }}
         aria-label="Scroll to discover Austin"
-        className="hero-scroll-cue absolute bottom-5 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 group cursor-pointer"
+        className="hero-scroll-cue absolute bottom-1 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 group cursor-pointer"
         style={{ zIndex: 3 }}
       >
         <span

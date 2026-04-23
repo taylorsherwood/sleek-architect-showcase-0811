@@ -680,8 +680,8 @@ const CinematicSections = ({ formNode }: Props) => {
               style={{ top: "-20%", height: "140%" }}
             >
               <img
-                src={privateInventoryHero}
-                alt="Westlake estate at dusk — private Austin luxury home"
+                src={parallaxEstate}
+                alt="Modern luxury Austin estate at dusk — private off-market home"
                 className="parallax-image w-full h-full object-cover will-change-transform"
                 decoding="async"
               />

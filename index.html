@@ -19,10 +19,8 @@
     <!-- Only preload critical above-the-fold fonts (Cinzel for H1, Jost for body) -->
     <link rel="preload" as="font" type="font/woff2" href="/fonts/cinzel-latin.woff2" crossorigin media="all" />
     <link rel="preload" as="font" type="font/woff2" href="/fonts/jost-latin.woff2" crossorigin media="all" />
-    <!-- Load full fonts.css asynchronously (non-render-blocking) -->
-    <link rel="preload" as="style" href="/fonts/fonts.css" />
-    <link rel="stylesheet" media="print" onload="this.media='all'" href="/fonts/fonts.css" />
-    <noscript><link rel="stylesheet" href="/fonts/fonts.css" /></noscript>
+    <!-- Load full fonts.css render-blocking so all weights resolve before first paint -->
+    <link rel="stylesheet" href="/fonts/fonts.css" />
 
     <!-- Preload hero poster (mobile gets smaller optimized image) -->
     <link rel="preload" as="image" href="/images/mobile-hero-poster.webp" type="image/webp" fetchpriority="high" media="(max-width: 767px)" />
@@ -30,9 +28,12 @@
 
     <!-- Critical inline CSS for above-the-fold rendering (includes critical @font-face) -->
     <style>
-      /* Critical @font-face — only the two fonts rendered on the page */
+      /* Critical @font-face — covers both 400 and 500 weights used by body/headings */
       @font-face{font-family:'Cinzel';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/cinzel-latin.woff2) format('woff2')}
+      @font-face{font-family:'Cinzel';font-style:normal;font-weight:500;font-display:swap;src:url(/fonts/cinzel-latin.woff2) format('woff2')}
+      @font-face{font-family:'Jost';font-style:normal;font-weight:300;font-display:swap;src:url(/fonts/jost-latin.woff2) format('woff2')}
       @font-face{font-family:'Jost';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/jost-latin.woff2) format('woff2')}
+      @font-face{font-family:'Jost';font-style:normal;font-weight:500;font-display:swap;src:url(/fonts/jost-latin.woff2) format('woff2')}
       /* CSS custom properties needed for prerendered hero paint */
       :root{--primary:233 47% 9%;--primary-foreground:40 25% 95%;--background:40 25% 95%;--foreground:233 47% 9%;--secondary:40 25% 95%;--secondary-foreground:233 47% 9%;--warm-cream:40 25% 95%;--gold:41 34% 57%;--muted-foreground:25 4% 42%;--border:30 18% 86%;--ring:233 47% 9%;--radius:0.25rem;--black-soft:233 52% 7%;color-scheme:light only}
       /* Critical base + hero layout (prevents FOUC when main CSS loads async) */

@@ -203,22 +203,16 @@ ${urls}
  * full stylesheet eliminates the render-blocking penalty (~150 ms LCP).
  */
 /**
- * Async CSS plugin disabled — deferring the main stylesheet causes render
- * delays that hurt LCP/Speed Index more than the ~18 KiB savings help.
- * Critical CSS is inlined in index.html but doesn't cover all above-the-fold styles.
+ * Async CSS plugin — DISABLED.
+ * Deferring the main stylesheet caused FOUC: logo, nav links, and headings
+ * paint with system fallback fonts/styles before the real stylesheet loads.
+ * Critical CSS in index.html is not exhaustive enough to safely defer.
+ * Keep the function as a no-op so the plugin slot stays wired but does nothing.
  */
 function asyncCssPlugin(): Plugin {
   return {
     name: "async-css",
     enforce: "post",
-    transformIndexHtml(html) {
-      // Convert render-blocking CSS <link> to async loading.
-      // Critical CSS is inlined in index.html so this is safe.
-      return html.replace(
-        /<link rel="stylesheet" crossorigin href="(\/assets\/[^"]+\.css)">/g,
-        '<link rel="stylesheet" href="$1" media="print" onload="this.media=\'all\'" crossorigin><noscript><link rel="stylesheet" href="$1" crossorigin></noscript>'
-      );
-    },
   };
 }
 

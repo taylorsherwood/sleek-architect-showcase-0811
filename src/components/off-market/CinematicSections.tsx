@@ -403,7 +403,7 @@ const CinematicSections = ({ formNode }: Props) => {
               preload="metadata"
               className="hero-video absolute inset-0 w-full h-full object-cover"
             >
-              <source src="/video/barton-creek-drone.mp4" type="video/mp4" />
+              <source src="/video/bart-creek-drone.mp4" type="video/mp4" />
             </video>
             <div
               className="absolute inset-0 pointer-events-none"
@@ -496,7 +496,7 @@ const CinematicSections = ({ formNode }: Props) => {
               ECHELON INSIDER
             </p>
             <h2 className="font-display text-2xl font-light text-white mb-6 text-center">
-              Tell Us What You're Looking For
+              See you on the inside,
             </h2>
             <div className="flex justify-center mb-5">
               <img
@@ -767,7 +767,7 @@ const CinematicSections = ({ formNode }: Props) => {
               ECHELON INSIDER
             </p>
             <h2 className="font-display text-4xl md:text-5xl font-light text-white leading-tight">
-              Tell Us What You're Looking For
+              See you on the inside,
             </h2>
           </div>
           <div className="form-field flex justify-center mb-6">

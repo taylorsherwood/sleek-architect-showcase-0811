@@ -493,9 +493,19 @@ const CinematicSections = ({ formNode }: Props) => {
 
       {/* ── Section 2.5: Image Split Reveal ────── */}
       <section className="split-section relative h-screen w-full overflow-hidden bg-[hsl(220,15%,8%)]">
+        {/* Revealed background image */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src={austinSkylineParallax}
+            alt="Austin downtown skyline at sunset over Lady Bird Lake"
+            className="w-full h-full object-cover"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-black/20" />
+        </div>
         {/* Pinned text behind */}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-8 z-0">
-          <div className="split-text will-change-transform">
+          <div className="split-text will-change-transform relative z-10">
             <p className="text-[hsl(var(--gold))] mb-6 font-bold" style={labelStyle}>
               02 — THE INVITATION
             </p>

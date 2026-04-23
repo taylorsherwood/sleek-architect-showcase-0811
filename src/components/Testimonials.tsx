@@ -85,14 +85,14 @@ const Testimonials = () => {
     <section className="relative pt-16 md:pt-20 pb-20 md:pb-24 bg-background overflow-hidden">
       {/* Watermark */}
       <div
-        className="absolute inset-0 flex items-center justify-center pointer-events-none"
+        className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden"
         aria-hidden="true"
       >
         <img
           src={echelonWatermark}
           alt=""
-          className="w-[420px] md:w-[520px] opacity-[0.04]"
-          style={{ filter: "grayscale(20%)" }}
+          className="w-[420px] md:w-[520px] object-contain opacity-[0.04]"
+          style={{ width: "min(520px, 90vw)", height: "auto", filter: "grayscale(20%)" }}
           loading="lazy"
           decoding="async"
         />

@@ -174,22 +174,25 @@ const CinematicSections = ({ formNode }: Props) => {
         }
       );
 
-      // ── Section 3 (new): Autoplay drone video, play-on-enter text reveal
+      // ── Section 3 (new): Drone Video — pin section, reveal text on scroll
       const droneEls = gsap.utils.toArray<HTMLElement>(".drone-reveal");
       gsap.set(droneEls, { opacity: 0, y: 30 });
-      ScrollTrigger.create({
-        trigger: ".drone-section",
-        start: "top 70%",
-        once: true,
-        onEnter: () => {
-          gsap.to(droneEls, {
-            opacity: 1,
-            y: 0,
-            duration: 1,
-            ease: "power3.out",
-            stagger: 0.2,
-          });
+      const droneTl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".drone-section",
+          start: "top top",
+          end: "+=100%",
+          scrub: 1,
+          pin: true,
+          pinSpacing: true,
+          anticipatePin: 1,
         },
+      });
+      droneTl.to(droneEls, {
+        opacity: 1,
+        y: 0,
+        ease: "power2.out",
+        stagger: 0.4,
       });
 
       // ── Section 3: Parallax Image Reveal — pin section, reveal headline on scroll

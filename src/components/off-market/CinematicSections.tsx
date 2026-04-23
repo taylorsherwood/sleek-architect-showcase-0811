@@ -49,6 +49,28 @@ const CinematicSections = ({ formNode }: Props) => {
   const lenisRef = useRef<Lenis | null>(null);
   const droneVideoRef = useRef<HTMLVideoElement>(null);
 
+  // Play drone video only while its section is in view; pause + reset when it leaves.
+  useEffect(() => {
+    const video = droneVideoRef.current;
+    if (!video) return;
+    const section = video.closest("section");
+    if (!section) return;
+
+    const obs = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          video.play().catch(() => {});
+        } else {
+          video.pause();
+          video.currentTime = 0;
+        }
+      },
+      { threshold: 0.4 }
+    );
+    obs.observe(section);
+    return () => obs.disconnect();
+  }, [isMobile]);
+
   // Lenis smooth scroll (desktop only)
   useEffect(() => {
     if (isMobile) return;
@@ -355,19 +377,17 @@ const CinematicSections = ({ formNode }: Props) => {
           </div>
         </section>
 
-        {/* Section 3 (mobile) — Autoplay drone video */}
+        {/* Section 3 (mobile) — Drone video, plays only in view */}
         <section className="relative">
           <div className="relative w-full h-[60vh] overflow-hidden">
             <video
-              autoPlay
+              ref={droneVideoRef}
               muted
               playsInline
-              loop
-              preload="auto"
+              preload="metadata"
               className="hero-video absolute inset-0 w-full h-full object-cover"
             >
-              <source src="/video/hero-scrub.webm" type="video/webm" />
-              <source src="/video/hero-scrub.mp4" type="video/mp4" />
+              <source src="/video/barton-creek-drone.mp4" type="video/mp4" />
             </video>
             <div
               className="absolute inset-0 pointer-events-none"
@@ -546,19 +566,16 @@ const CinematicSections = ({ formNode }: Props) => {
         </div>
       </section>
 
-      {/* ── Section 3 (new): Autoplay Drone Video w/ Ken Burns ── */}
+      {/* ── Section 3 (new): Drone Video — plays only when in view ── */}
       <section className="drone-section relative h-screen w-full overflow-hidden bg-[hsl(220,15%,8%)]">
         <video
           ref={droneVideoRef}
-          autoPlay
           muted
           playsInline
-          loop
-          preload="auto"
+          preload="metadata"
           className="hero-video absolute inset-0 w-full h-full object-cover will-change-transform"
         >
-          <source src="/video/hero-scrub.webm" type="video/webm" />
-          <source src="/video/hero-scrub.mp4" type="video/mp4" />
+          <source src="/video/barton-creek-drone.mp4" type="video/mp4" />
         </video>
         {/* Legibility radial gradient */}
         <div

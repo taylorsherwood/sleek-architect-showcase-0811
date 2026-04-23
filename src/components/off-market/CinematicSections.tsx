@@ -10,6 +10,7 @@ import cardTarrytown from "@/assets/community-tarrytown.jpg";
 import cardOldEnfield from "@/assets/pemberton-heights.avif";
 import cardWestlake from "@/assets/community-westlake.jpg";
 import cardDavenport from "@/assets/davenport-ranch-estate.jpg";
+import cardSpanishOaks from "@/assets/spanish-oaks-estate.jpg";
 import desktopNote from "@/assets/austin-luxury-lifestyle.jpg";
 import austinSkylineParallax from "@/assets/austin-skyline-parallax.jpeg";
 import clarksvilleImg from "@/assets/communities/clarksville.jpg";
@@ -31,6 +32,7 @@ const NEIGHBORHOODS = [
   { name: "Old Enfield", image: cardOldEnfield, stat: "60% OF TRADES ARE PRIVATE" },
   { name: "West Lake Hills", image: cardWestlake, stat: "Median sale: $4.1M" },
   { name: "Rollingwood", image: cardDavenport, stat: "Country-club gated estates" },
+  { name: "Spanish Oaks", image: cardSpanishOaks, stat: "Hill Country golf estates" },
 ];
 
 const STATS = [

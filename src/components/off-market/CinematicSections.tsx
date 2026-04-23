@@ -304,8 +304,7 @@ const CinematicSections = ({ formNode }: Props) => {
       testimonialTl
         // Phase 1 — lock & settle
         .to(".testimonial-split-image", { scale: 1, ease: "none", duration: 0.35 }, 0)
-        // Phase 2 — vertical split apart
-        .to(".testimonial-split-left", { xPercent: -100, ease: "power2.inOut", duration: 0.45 }, 0.35)
+        // Phase 2 — right half slides away to expose testimonial; left half stays
         .to(".testimonial-split-right", { xPercent: 100, ease: "power2.inOut", duration: 0.45 }, 0.35)
         // Phase 3 — testimonial copy reveals
         .to(".testimonial-line", { opacity: 1, y: 0, ease: "power2.out", stagger: 0.12, duration: 0.5 }, 0.65)

@@ -234,6 +234,7 @@ const CinematicSections = ({ formNode }: Props) => {
             end: () => `+=${totalScroll}`,
             pin: true,
             scrub: 1,
+            anticipatePin: 1,
             invalidateOnRefresh: true,
           },
         });
@@ -679,7 +680,6 @@ const CinematicSections = ({ formNode }: Props) => {
               src={privateInventoryHero}
               alt="Westlake estate at dusk — private Austin luxury home"
               className="parallax-image w-full h-full object-cover will-change-transform"
-              loading="lazy"
               decoding="async"
             />
             <div

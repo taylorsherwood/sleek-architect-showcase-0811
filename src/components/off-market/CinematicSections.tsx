@@ -594,8 +594,8 @@ const CinematicSections = ({ formNode }: Props) => {
           style={{ top: "-20%", height: "140%" }}
         >
           <img
-            src={austinSkylineParallax}
-            alt="Austin downtown skyline at sunset over Lady Bird Lake"
+            src={westlakeDusk}
+            alt="Westlake estate at dusk — private Austin luxury home"
             className="parallax-image w-full h-full object-cover will-change-transform"
           />
           <div className="absolute inset-0 bg-black/30" />

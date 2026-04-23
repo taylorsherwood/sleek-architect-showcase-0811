@@ -599,15 +599,21 @@ const CinematicSections = ({ formNode }: Props) => {
             alt="Westlake estate at dusk — private Austin luxury home"
             className="parallax-image w-full h-full object-cover will-change-transform"
           />
-          <div className="absolute inset-0 bg-black/30" />
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                "radial-gradient(ellipse at center, rgba(12,15,36,0.55) 0%, rgba(12,15,36,0.4) 60%, rgba(12,15,36,0.25) 100%)",
+            }}
+          />
         </div>
-        <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-8" style={{ mixBlendMode: "overlay" }}>
+        <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-8">
           <p className="mb-6 font-bold" style={{ ...labelStyle, color: "#BAA26A" }}>
             01 — PRIVATE INVENTORY
           </p>
           <h2
             className="parallax-headline font-display font-light leading-[1.05] max-w-[90vw] will-change-transform"
-            style={{ fontSize: "5vw", color: "#BAA26A" }}
+            style={{ fontSize: "5vw", color: "#BAA26A", textShadow: "0 2px 24px rgba(0,0,0,0.6)" }}
           >
             Homes That Never<br />Reach The Market
           </h2>

@@ -30,7 +30,7 @@ const NEIGHBORHOODS = [
   { name: "Tarrytown", image: cardTarrytown, stat: "Avg DOM off-market: 14 days" },
   { name: "Old Enfield", image: cardOldEnfield, stat: "60% OF TRADES ARE PRIVATE" },
   { name: "West Lake Hills", image: cardWestlake, stat: "Median sale: $4.1M" },
-  { name: "Davenport Ranch", image: cardDavenport, stat: "Country-club gated estates" },
+  { name: "Rollingwood", image: cardDavenport, stat: "Country-club gated estates" },
 ];
 
 const STATS = [

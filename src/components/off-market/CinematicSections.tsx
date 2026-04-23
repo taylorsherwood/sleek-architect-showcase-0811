@@ -17,6 +17,7 @@ import desktopNote from "@/assets/testimonial-westlake-living-room.webp";
 import austinSkylineParallax from "@/assets/austin-skyline-parallax.webp";
 import clarksvilleImg from "@/assets/off-market-reveal-estate.webp";
 import taylorSignature from "@/assets/taylor-sherwood-signature.png";
+import testimonialSplitImg from "@/assets/testimonial-split-lake-austin.webp";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -278,50 +279,38 @@ const CinematicSections = ({ formNode }: Props) => {
 
       // ── Section 5: Counter — REMOVED
 
-      // ── Section 6: Split Parallax Testimonial — pin so user can't fly past.
-      gsap.to(".testimonial-image", {
-        yPercent: -15,
-        ease: "none",
-        scrollTrigger: {
-          trigger: ".testimonial-section",
-          start: "top bottom",
-          end: "bottom top",
-          scrub: 1,
-        },
-      });
+      // ── Section 6: Vertical Split-Reveal Testimonial
+      // Phase 1 (0 → 0.35): image locks full-screen, settles from a slight zoom.
+      // Phase 2 (0.35 → 0.8): the two halves part LEFT and RIGHT along a vertical
+      //   seam, exposing the testimonial behind.
+      // Phase 3 (0.65 → 1): each testimonial line + attribution rises into place.
+      gsap.set([".testimonial-split-left", ".testimonial-split-right"], { xPercent: 0 });
+      gsap.set(".testimonial-split-image", { scale: 1.08 });
+      gsap.set(".testimonial-line", { opacity: 0, y: 30 });
+      gsap.set(".testimonial-attribution", { opacity: 0, y: 15 });
 
-      // Pinned scrub timeline: each line reveals progressively as the user scrolls,
-      // forcing them to slow down and absorb the testimonial.
       const testimonialTl = gsap.timeline({
         scrollTrigger: {
           trigger: ".testimonial-section",
           start: "top top",
-          end: "+=1400",
-          scrub: 1,
+          end: "+=240%",
           pin: true,
           pinSpacing: true,
+          scrub: 1,
           anticipatePin: 1,
         },
       });
 
       testimonialTl
-        .from(".testimonial-line", {
-          opacity: 0,
-          y: 30,
-          stagger: 0.8,
-          ease: "power2.out",
-          duration: 1,
-        })
-        .from(
-          ".testimonial-attribution",
-          {
-            opacity: 0,
-            y: 15,
-            ease: "power2.out",
-            duration: 0.8,
-          },
-          "+=0.4"
-        );
+        // Phase 1 — lock & settle
+        .to(".testimonial-split-image", { scale: 1, ease: "none", duration: 0.35 }, 0)
+        // Phase 2 — vertical split apart
+        .to(".testimonial-split-left", { xPercent: -100, ease: "power2.inOut", duration: 0.45 }, 0.35)
+        .to(".testimonial-split-right", { xPercent: 100, ease: "power2.inOut", duration: 0.45 }, 0.35)
+        // Phase 3 — testimonial copy reveals
+        .to(".testimonial-line", { opacity: 1, y: 0, ease: "power2.out", stagger: 0.12, duration: 0.5 }, 0.65)
+        .to(".testimonial-attribution", { opacity: 1, y: 0, ease: "power2.out", duration: 0.4 }, 0.95)
+        .to({}, { duration: 0.1 });
 
       // ── Section 7: Form — elegant cinematic reveal as user scrolls
       // past the testimonial. Each element rises into place with a soft
@@ -458,7 +447,7 @@ const CinematicSections = ({ formNode }: Props) => {
 
         {/* Section 6 — Testimonial */}
         <section className="bg-[hsl(220,15%,6%)]">
-          <img src={desktopNote} alt="Handwritten note on desk" className="w-full h-[40vh] object-cover" decoding="async" />
+          <img src={testimonialSplitImg} alt="Lake Austin luxury waterfront estate" className="w-full h-[40vh] object-cover" decoding="async" />
           <div className="px-6 py-12 text-center">
             <p className="font-display italic text-2xl text-white/90 leading-snug mb-6">
               "Taylor brought us a Westlake home before it ever hit the market. We never would have seen it without him."
@@ -685,27 +674,55 @@ const CinematicSections = ({ formNode }: Props) => {
         </div>
       </section>
 
-      {/* ── Section 6: Split Parallax Testimonial ─ */}
-      <section className="testimonial-section relative w-full bg-[hsl(220,15%,6%)] grid grid-cols-2 min-h-screen overflow-hidden">
-        <div className="relative overflow-hidden h-full">
+      {/* ── Section 6: Vertical Split-Reveal Testimonial ─ */}
+      <section className="testimonial-section relative w-full h-screen bg-[hsl(220,15%,6%)] overflow-hidden">
+        {/* Testimonial sits behind the split image */}
+        <div className="absolute inset-0 z-0 flex items-center justify-center px-8">
+          <div className="max-w-4xl text-center">
+            <p
+              className="font-display italic text-white/90 font-light leading-[1.25] mb-10"
+              style={{ fontSize: "clamp(1.6rem, 2.6vw, 2.6rem)" }}
+            >
+              <span className="testimonial-line block will-change-transform">"Taylor brought us a Westlake home</span>
+              <span className="testimonial-line block will-change-transform">before it ever hit the market.</span>
+              <span className="testimonial-line block will-change-transform">We never would have seen it without him."</span>
+            </p>
+            <p
+              className="testimonial-attribution text-[hsl(var(--gold))] tracking-[0.28em] uppercase font-sans will-change-transform"
+              style={{ fontSize: "0.72rem" }}
+            >
+              — Private Buyer, Westlake Hills
+            </p>
+          </div>
+        </div>
+
+        {/* Left half of the image — slides off to the LEFT */}
+        <div
+          className="testimonial-split-left absolute inset-y-0 left-0 w-1/2 z-10 overflow-hidden will-change-transform"
+        >
           <img
-            src={desktopNote}
-            alt="Handwritten note on a desk"
-            className="testimonial-image absolute inset-0 w-full h-[120%] object-cover will-change-transform"
+            src={testimonialSplitImg}
+            alt="Lake Austin luxury waterfront estate at golden hour"
+            className="testimonial-split-image absolute inset-y-0 left-0 h-full w-screen max-w-none object-cover will-change-transform"
             decoding="async"
           />
         </div>
-        <div className="flex flex-col justify-center px-12 lg:px-20 py-24">
-          <p className="font-display italic text-white/90 font-light leading-[1.3] mb-10" style={{ fontSize: "2.4vw" }}>
-            <span className="testimonial-line block">"Taylor brought us a</span>
-            <span className="testimonial-line block">Westlake home before</span>
-            <span className="testimonial-line block">it ever hit the market.</span>
-            <span className="testimonial-line block">We never would have seen it without him."</span>
-          </p>
-          <p className="testimonial-attribution text-[hsl(var(--gold))] tracking-[0.25em] uppercase font-sans" style={{ fontSize: "0.7rem" }}>
-            — Private Buyer, Westlake Hills
-          </p>
+
+        {/* Right half of the image — slides off to the RIGHT */}
+        <div
+          className="testimonial-split-right absolute inset-y-0 right-0 w-1/2 z-10 overflow-hidden will-change-transform"
+        >
+          <img
+            src={testimonialSplitImg}
+            alt=""
+            aria-hidden="true"
+            className="testimonial-split-image absolute inset-y-0 right-0 h-full w-screen max-w-none object-cover will-change-transform"
+            decoding="async"
+          />
         </div>
+
+        {/* Subtle vertical seam */}
+        <div className="absolute inset-y-0 left-1/2 w-px bg-white/10 z-20 pointer-events-none" />
       </section>
 
       {/* ── Section 7: Form ────────────────────── */}

@@ -546,19 +546,16 @@ const CinematicSections = ({ formNode }: Props) => {
         </div>
       </section>
 
-      {/* ── Section 3 (new): Autoplay Drone Video w/ Ken Burns ── */}
+      {/* ── Section 3 (new): Drone Video — plays only when in view ── */}
       <section className="drone-section relative h-screen w-full overflow-hidden bg-[hsl(220,15%,8%)]">
         <video
           ref={droneVideoRef}
-          autoPlay
           muted
           playsInline
-          loop
-          preload="auto"
+          preload="metadata"
           className="hero-video absolute inset-0 w-full h-full object-cover will-change-transform"
         >
-          <source src="/video/hero-scrub.webm" type="video/webm" />
-          <source src="/video/hero-scrub.mp4" type="video/mp4" />
+          <source src="/video/barton-creek-drone.mp4" type="video/mp4" />
         </video>
         {/* Legibility radial gradient */}
         <div

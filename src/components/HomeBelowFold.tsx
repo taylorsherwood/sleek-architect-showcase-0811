@@ -493,6 +493,7 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   const [active, setActive] = useState(0);
+  const [revealed, setRevealed] = useState(false);
   const splitRef = useRef<HTMLDivElement>(null);
 
   // Mobile-only auto-rotation for the centered single-quote layout
@@ -504,38 +505,52 @@ const TestimonialsSection = () => {
     return () => clearInterval(timer);
   }, []);
 
-  // Desktop / iPad — GSAP split-reveal animation
+  // Desktop / iPad — auto-rotate testimonials AFTER the split has opened
   useEffect(() => {
     if (typeof window === "undefined") return;
-    const mq = window.matchMedia("(min-width: 768px)");
-    if (!mq.matches) return;
+    if (!window.matchMedia("(min-width: 768px)").matches) return;
+    if (!revealed) return;
+    const timer = setInterval(() => setActive((p) => (p + 1) % testimonials.length), 5500);
+    return () => clearInterval(timer);
+  }, [revealed]);
+
+  // Desktop / iPad — GSAP horizontal split-reveal (mirrors /off-market-real-estate-austin)
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    if (!window.matchMedia("(min-width: 768px)").matches) return;
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (reduceMotion) return;
+    if (reduceMotion) {
+      setRevealed(true);
+      return;
+    }
     const root = splitRef.current;
     if (!root) return;
 
     const ctx = gsap.context(() => {
-      gsap.set(".tsplit-top-half, .tsplit-bottom-half", { yPercent: 0 });
-      gsap.set(".tsplit-cover-image", { scale: 1.06 });
-      gsap.set(".tsplit-reveal", { opacity: 0, y: 20 });
+      gsap.set(".tsplit-right", { xPercent: 0 });
+      gsap.set(".tsplit-image", { scale: 1.08 });
+      gsap.set(".tsplit-line", { opacity: 0, y: 24, filter: "blur(8px)" });
+      gsap.set(".tsplit-attribution", { opacity: 0, y: 12, filter: "blur(6px)" });
 
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: ".tsplit-section",
           start: "top top",
-          end: "+=140%",
+          end: "+=160%",
           pin: true,
           pinSpacing: true,
-          scrub: 1.6,
+          scrub: 2,
           anticipatePin: 1,
+          onLeave: () => setRevealed(true),
+          onEnterBack: () => setRevealed(true),
         },
       });
 
       tl
-        .to(".tsplit-cover-image", { scale: 1, ease: "none", duration: 0.4 }, 0)
-        .to(".tsplit-top-half", { yPercent: -100, ease: "power2.inOut", duration: 0.45 }, 0.4)
-        .to(".tsplit-bottom-half", { yPercent: 100, ease: "power2.inOut", duration: 0.45 }, 0.4)
-        .to(".tsplit-reveal", { opacity: 1, y: 0, ease: "power2.out", stagger: 0.1, duration: 0.4 }, 0.7)
+        .to(".tsplit-image", { scale: 1, ease: "power1.out", duration: 0.35 }, 0)
+        .to(".tsplit-right", { xPercent: 100, ease: "expo.inOut", duration: 0.6 }, 0.35)
+        .to(".tsplit-line", { opacity: 1, y: 0, filter: "blur(0px)", ease: "power3.out", stagger: 0.15, duration: 0.6 }, 0.65)
+        .to(".tsplit-attribution", { opacity: 1, y: 0, filter: "blur(0px)", ease: "power2.out", duration: 0.5 }, 1.05)
         .to({}, { duration: 0.15 });
     }, root);
 
@@ -548,61 +563,116 @@ const TestimonialsSection = () => {
 
   return (
     <>
-      {/* DESKTOP / iPAD — Full-screen split-reveal entry */}
+      {/* DESKTOP / iPAD — Cinematic side-reveal testimonial (matches /off-market-real-estate-austin) */}
       <section
         ref={splitRef}
         className="tsplit-section hidden md:block relative w-full h-screen bg-secondary overflow-hidden"
         aria-label="Client experiences"
       >
-        {/* Behind-the-image content revealed when split opens */}
-        <div className="absolute inset-0 z-0 flex items-center justify-center px-8">
-          <div className="text-center max-w-[760px]">
-            <p className="tsplit-reveal text-minimal text-gold mb-5">CLIENT EXPERIENCES</p>
-            <h2 className="tsplit-reveal font-display text-3xl md:text-[2.6rem] font-normal text-foreground leading-[1.15] tracking-[0.02em] mb-5">
-              clients first. <span className="italic">Proven Results.</span>
-            </h2>
-            <p className="tsplit-reveal text-foreground/70 font-light" style={{ fontFamily: '"Jost", sans-serif', fontSize: "14px", letterSpacing: "0.02em" }}>
-              Continue scrolling to read what buyers, sellers, and investors say about working with Taylor.
+        {/* Testimonial sits behind on the right side, revealed when the right half slides away */}
+        <div className="absolute inset-0 z-0 flex items-center justify-end px-8 md:px-16 lg:px-24">
+          <div className="max-w-xl md:w-1/2 md:pl-8">
+            <p className="text-minimal text-gold mb-6 tsplit-attribution will-change-transform">
+              CLIENT EXPERIENCES
             </p>
+            <div className="relative" style={{ minHeight: "300px" }}>
+              <p
+                key={`quote-${active}`}
+                className="font-display italic text-foreground/90 font-light leading-[1.35] mb-10"
+                style={{ fontSize: "clamp(1.25rem, 1.9vw, 1.85rem)" }}
+              >
+                <span
+                  className="tsplit-line block will-change-transform"
+                  style={{ animation: revealed ? "fadeUp 0.7s ease both" : undefined }}
+                >
+                  <span style={{ color: "hsl(38 39% 61%)", marginRight: "0.1em" }}>&ldquo;</span>
+                  {t.quote}
+                  <span style={{ color: "hsl(38 39% 61%)", marginLeft: "0.1em" }}>&rdquo;</span>
+                </span>
+              </p>
+              <p
+                key={`name-${active}`}
+                className="tsplit-attribution will-change-transform"
+                style={{
+                  fontFamily: '"Jost", sans-serif',
+                  fontSize: "12px",
+                  letterSpacing: "0.28em",
+                  textTransform: "uppercase",
+                  color: "hsl(38 39% 61%)",
+                  animation: revealed ? "fadeUp 0.7s ease 0.15s both" : undefined,
+                }}
+              >
+                — {t.name}
+              </p>
+              <p
+                key={`ctx-${active}`}
+                style={{
+                  fontFamily: '"Jost", sans-serif',
+                  fontSize: "11px",
+                  letterSpacing: "0.18em",
+                  textTransform: "uppercase",
+                  color: "hsl(var(--muted-foreground))",
+                  marginTop: "6px",
+                  animation: revealed ? "fadeUp 0.7s ease 0.25s both" : undefined,
+                }}
+              >
+                {t.context}
+              </p>
+
+              {revealed && (
+                <div className="flex items-center gap-2.5 mt-10">
+                  {testimonials.map((_, i) => (
+                    <button
+                      key={i}
+                      onClick={() => setActive(i)}
+                      className="w-2 h-2 rounded-full transition-all duration-300 cursor-pointer"
+                      style={{
+                        background: i === active ? "hsl(38 39% 61%)" : "hsl(var(--border))",
+                        transform: i === active ? "scale(1.3)" : "scale(1)",
+                      }}
+                      aria-label={`View testimonial ${i + 1}`}
+                    />
+                  ))}
+                </div>
+              )}
+            </div>
           </div>
         </div>
 
-        {/* Top half — slides up */}
-        <div className="tsplit-top-half absolute inset-x-0 top-0 h-1/2 z-10 overflow-hidden will-change-transform">
+        {/* Left half — stays in place */}
+        <div className="tsplit-left absolute inset-y-0 left-0 w-1/2 z-10 overflow-hidden will-change-transform">
           <img
             src={lakeAustinTestimonialImg}
             alt="Lake Austin luxury waterfront estate at golden hour"
-            className="tsplit-cover-image absolute inset-x-0 top-0 w-full h-screen object-cover will-change-transform"
+            className="tsplit-image absolute inset-y-0 left-0 h-full w-screen max-w-none object-cover will-change-transform"
             decoding="async"
           />
         </div>
 
-        {/* Bottom half — slides down */}
-        <div className="tsplit-bottom-half absolute inset-x-0 bottom-0 h-1/2 z-10 overflow-hidden will-change-transform">
+        {/* Right half — slides off to the right */}
+        <div className="tsplit-right absolute inset-y-0 right-0 w-1/2 z-10 overflow-hidden will-change-transform">
           <img
             src={lakeAustinTestimonialImg}
             alt=""
             aria-hidden="true"
-            className="tsplit-cover-image absolute inset-x-0 bottom-0 w-full h-screen object-cover will-change-transform"
+            className="tsplit-image absolute inset-y-0 right-0 h-full w-screen max-w-none object-cover will-change-transform"
             decoding="async"
           />
         </div>
       </section>
 
-      <section className="bg-secondary relative overflow-hidden" style={{ padding: "clamp(48px, 7vw, 90px) 0" }}>
+      {/* MOBILE — centered rotating quote */}
+      <section className="md:hidden bg-secondary relative overflow-hidden" style={{ padding: "clamp(48px, 7vw, 90px) 0" }}>
         <div className="container mx-auto px-6 relative z-10">
-          {/* Mobile-only header (desktop header now lives in the split reveal) */}
-          <div className="md:hidden max-w-[900px] mx-auto text-center mb-10">
+          <div className="max-w-[900px] mx-auto text-center mb-10">
             <ScrollReveal>
               <p className="text-minimal text-gold mb-4">CLIENT EXPERIENCES</p>
-              <h2 className="font-display text-2xl md:text-[2.2rem] font-normal text-foreground leading-[1.15] tracking-[0.02em]">
+              <h2 className="font-display text-2xl font-normal text-foreground leading-[1.15] tracking-[0.02em]">
                 clients first. <span className="italic">Proven Results.</span>
               </h2>
             </ScrollReveal>
           </div>
 
-        {/* MOBILE: centered single rotating quote */}
-        <div className="md:hidden">
           <div className="max-w-[800px] mx-auto text-center relative" style={{ minHeight: "320px" }}>
             <div style={{ minHeight: "160px", display: "flex", alignItems: "center", justifyContent: "center" }}>
               <p key={active} className="mb-6" style={{
@@ -617,14 +687,14 @@ const TestimonialsSection = () => {
               </p>
             </div>
 
-            <p key={`name-${active}`} style={{
+            <p key={`m-name-${active}`} style={{
               fontFamily: '"Jost", sans-serif', fontSize: "13px", letterSpacing: "0.18em",
               textTransform: "uppercase", color: "hsl(38 39% 61%)", marginTop: "24px",
               animation: "fadeUp 0.6s ease 0.15s both",
             }}>
               {t.name}
             </p>
-            <p key={`ctx-${active}`} style={{
+            <p key={`m-ctx-${active}`} style={{
               fontFamily: '"Jost", sans-serif', fontSize: "12px", letterSpacing: "0.12em",
               textTransform: "uppercase", color: "hsl(var(--muted-foreground))", marginTop: "6px",
               animation: "fadeUp 0.6s ease 0.25s both",
@@ -648,95 +718,11 @@ const TestimonialsSection = () => {
             </div>
           </div>
         </div>
-
-        {/* DESKTOP / iPAD: vertical split — sticky image on left, scrolling testimonials on right */}
-        <div className="hidden md:grid md:grid-cols-2 md:gap-10 lg:gap-14 max-w-[1320px] mx-auto items-start">
-          {/* Left column — sticky image */}
-          <div className="relative">
-            <div className="sticky top-24 overflow-hidden" style={{ aspectRatio: "4 / 5" }}>
-              <img
-                src={lakeAustinTestimonialImg}
-                alt="Lake Austin luxury waterfront estate at golden hour"
-                className="absolute inset-0 w-full h-full object-cover"
-                loading="lazy"
-                decoding="async"
-              />
-              <div
-                className="absolute inset-0 pointer-events-none"
-                style={{
-                  background:
-                    "linear-gradient(180deg, rgba(10,14,25,0.0) 60%, rgba(10,14,25,0.35) 100%)",
-                }}
-              />
-              <div className="absolute bottom-6 left-6 right-6">
-                <p
-                  className="font-sans"
-                  style={{
-                    fontSize: "10px",
-                    letterSpacing: "0.28em",
-                    textTransform: "uppercase",
-                    color: "rgba(255,255,255,0.85)",
-                  }}
-                >
-                  AUSTIN · TRUSTED REPRESENTATION
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Right column — scrolling testimonials */}
-          <div className="flex flex-col gap-5 lg:gap-6">
-            {testimonials.map((item, i) => (
-              <ScrollReveal key={i} delay={i * 40}>
-                <article
-                  className="relative px-7 pt-6 pb-7 md:px-8 md:pt-7 md:pb-8 transition-shadow duration-500 hover:shadow-[0_12px_36px_rgba(0,0,0,0.07)]"
-                  style={{
-                    background: "#FFFFFF",
-                    border: "1px solid rgba(0,0,0,0.06)",
-                    boxShadow: "0 10px 30px rgba(0,0,0,0.05)",
-                  }}
-                >
-                  <p
-                    className="text-foreground/[0.88] italic font-light"
-                    style={{
-                      fontFamily: '"Jost", sans-serif',
-                      fontSize: "clamp(14.5px, 1.05vw, 16px)",
-                      lineHeight: 1.8,
-                      marginBottom: "1.25rem",
-                    }}
-                  >
-                    <span style={{ color: "hsl(38 39% 61%)", marginRight: "0.15em" }}>&ldquo;</span>
-                    {item.quote}
-                    <span style={{ color: "hsl(38 39% 61%)", marginLeft: "0.15em" }}>&rdquo;</span>
-                  </p>
-                  <p
-                    className="font-display text-foreground tracking-tight"
-                    style={{ fontSize: "0.95rem" }}
-                  >
-                    {item.name}
-                  </p>
-                  <p
-                    style={{
-                      fontFamily: '"Jost", sans-serif',
-                      fontSize: "11px",
-                      letterSpacing: "0.18em",
-                      textTransform: "uppercase",
-                      color: "hsl(38 39% 61%)",
-                      marginTop: "6px",
-                    }}
-                  >
-                    {item.context}
-                  </p>
-                </article>
-              </ScrollReveal>
-            ))}
-          </div>
-        </div>
-        </div>
       </section>
     </>
   );
 };
+
 
 /* ─────────────────────────────────────────────
    SECTION 6 — COMMUNITIES

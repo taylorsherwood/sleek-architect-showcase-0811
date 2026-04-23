@@ -12,6 +12,7 @@ import cardWestlake from "@/assets/community-westlake.jpg";
 import cardDavenport from "@/assets/the-high-road-westlake.webp";
 import desktopNote from "@/assets/austin-luxury-lifestyle.jpg";
 import austinSkylineParallax from "@/assets/austin-skyline-parallax.jpeg";
+import clarksvilleImg from "@/assets/communities/clarksville.jpg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -523,7 +524,7 @@ const CinematicSections = ({ formNode }: Props) => {
           style={{ clipPath: "inset(0 0 50% 0)" }}
         >
           <img
-            src={westlakeDusk}
+            src={clarksvilleImg}
             alt=""
             aria-hidden="true"
             className="w-full h-full object-cover"
@@ -536,7 +537,7 @@ const CinematicSections = ({ formNode }: Props) => {
           style={{ clipPath: "inset(50% 0 0 0)" }}
         >
           <img
-            src={westlakeDusk}
+            src={clarksvilleImg}
             alt=""
             aria-hidden="true"
             className="w-full h-full object-cover"

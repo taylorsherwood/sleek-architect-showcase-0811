@@ -443,8 +443,8 @@ const CommunityPage = () => {
           <div className="max-w-4xl mx-auto space-y-16">
             {/* Lifestyle */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
-                Lifestyle in {community.name}
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6 whitespace-pre-line">
+                {"\n\n"}Lifestyle in {community.name}
               </h2>
               <ContentBlock text={community.lifestyle} currentSlug={community.slug} />
             </section>
@@ -472,24 +472,24 @@ const CommunityPage = () => {
               <>
                 {/* Market Insights */}
                 <section>
-                  <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
-                    {community.name} Real Estate Market Insights
+                  <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6 whitespace-pre-line">
+                    {"\n\n"}{community.name} Real Estate Market Insights
                   </h2>
                   <ContentBlock text={community.marketInsights} currentSlug={community.slug} />
                 </section>
 
                 {/* Amenities & Schools */}
                 <section>
-                  <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
-                    Schools and Amenities Near {community.name}
+                  <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6 whitespace-pre-line">
+                    {"\n\n"}Schools and Amenities Near {community.name}
                   </h2>
                   <ContentBlock text={community.amenitiesAndSchools} currentSlug={community.slug} />
                 </section>
 
                 {/* Investment */}
                 <section>
-                  <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
-                    Investment Potential in {community.name}
+                  <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6 whitespace-pre-line">
+                    {"\n\n"}Investment Potential in {community.name}
                   </h2>
                   <ContentBlock text={community.investmentPotential} currentSlug={community.slug} />
                   <p className="text-muted-foreground leading-relaxed mt-4">
@@ -501,8 +501,8 @@ const CommunityPage = () => {
                 {community.echelonPerspective && (
                   <section>
                     <p className="text-minimal text-gold mb-3 tracking-[0.2em]">LOCAL INSIGHT</p>
-                    <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
-                      Echelon Perspective on {community.name}
+                    <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6 whitespace-pre-line">
+                      {"\n\n"}Echelon Perspective on {community.name}
                     </h2>
                     <ContentBlock text={community.echelonPerspective} currentSlug={community.slug} />
                   </section>
@@ -513,8 +513,8 @@ const CommunityPage = () => {
             {/* Community Comparison (optional, SEO-optimized) */}
             {community.communityComparison && (
               <section>
-                <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
-                  {community.name} vs Other Austin Luxury Communities
+                <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6 whitespace-pre-line">
+                  {"\n\n"}{community.name} vs Other Austin Luxury Communities
                 </h2>
                 <ContentBlock text={community.communityComparison} currentSlug={community.slug} />
               </section>
@@ -522,8 +522,8 @@ const CommunityPage = () => {
 
             {/* Internal Links */}
             <section className="border border-border p-8">
-              <h2 className="text-2xl font-display font-normal text-architectural mb-6">
-                Explore Austin Real Estate
+              <h2 className="text-2xl font-display font-normal text-architectural mb-6 whitespace-pre-line">
+                {"\n\n"}Explore Austin Real Estate
               </h2>
               <div className="grid sm:grid-cols-2 gap-4">
                 <Link to="/austin-luxury-homes-for-sale" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">
@@ -555,8 +555,8 @@ const CommunityPage = () => {
 
             {/* FAQ */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-8">
-                Frequently Asked Questions About {community.name}
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-8 whitespace-pre-line">
+                {"\n\n"}Frequently Asked Questions About {community.name}
               </h2>
               <div className="space-y-6">
                 {allFaqs.map((faq, i) => (
@@ -571,7 +571,7 @@ const CommunityPage = () => {
             {/* Neighborhood Insights — contextual blog links */}
             {slug && neighborhoodInsights[slug] && neighborhoodInsights[slug].length > 0 && (
               <section>
-                <p className="text-minimal text-gold mb-3 tracking-[0.2em]">EDITORIAL</p>
+                <p className="text-minimal text-gold mb-3 tracking-[0.2em] whitespace-pre-line">{"\n\n"}EDITORIAL</p>
                 <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-8">
                   Neighborhood Insights
                 </h2>
@@ -600,8 +600,8 @@ const CommunityPage = () => {
             {/* Related Communities */}
             {related.length > 0 && (
               <section>
-                <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-8">
-                  Explore Nearby Austin Communities
+                <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-8 whitespace-pre-line">
+                  {"\n\n"}Explore Nearby Austin Communities
                 </h2>
                 <div className="grid sm:grid-cols-2 gap-6">
                   {related.map((rc) => (
@@ -623,8 +623,8 @@ const CommunityPage = () => {
 
             {/* CTA */}
             <section className="text-center py-12 bg-secondary -mx-6 px-6">
-              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-4">
-                Interested in {community.name}?
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-4 whitespace-pre-line">
+                {"\n\n"}Interested in {community.name}?
               </h2>
               <p className="text-muted-foreground mb-8">
                 Contact Echelon Property Group for expert guidance on buying or selling in {community.name}.

@@ -594,13 +594,13 @@ const CinematicSections = ({ formNode }: Props) => {
           />
           <div className="absolute inset-0 bg-black/30" />
         </div>
-        <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-8" style={{ mixBlendMode: "difference" }}>
-          <p className="text-[hsl(var(--gold))] mb-6 font-bold" style={labelStyle}>
+        <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-8" style={{ mixBlendMode: "overlay" }}>
+          <p className="mb-6 font-bold" style={{ ...labelStyle, color: "#BAA26A" }}>
             01 — PRIVATE INVENTORY
           </p>
           <h2
-            className="parallax-headline font-display text-white font-light leading-[1.05] max-w-[90vw] will-change-transform"
-            style={{ fontSize: "5vw" }}
+            className="parallax-headline font-display font-light leading-[1.05] max-w-[90vw] will-change-transform"
+            style={{ fontSize: "5vw", color: "#BAA26A" }}
           >
             Homes That Never<br />Reach The Market
           </h2>

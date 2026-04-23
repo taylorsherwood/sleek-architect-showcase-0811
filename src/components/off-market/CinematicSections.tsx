@@ -666,21 +666,25 @@ const CinematicSections = ({ formNode }: Props) => {
       {/* ── Section 3: Parallax Image Reveal ───── */}
       <section className="parallax-section relative h-screen w-full overflow-hidden bg-[hsl(220,15%,8%)]">
         <div
-          className="absolute left-0 right-0"
-          style={{ top: "-20%", height: "140%" }}
+          className="absolute inset-0 overflow-hidden"
         >
-          <img
-            src={privateInventoryHero}
-            alt="Westlake estate at dusk — private Austin luxury home"
-            className="parallax-image w-full h-full object-cover will-change-transform"
-          />
           <div
-            className="absolute inset-0"
-            style={{
-              background:
-                "radial-gradient(ellipse at center, rgba(12,15,36,0.55) 0%, rgba(12,15,36,0.4) 60%, rgba(12,15,36,0.25) 100%)",
-            }}
-          />
+            className="absolute left-0 right-0"
+            style={{ top: "-20%", height: "140%" }}
+          >
+            <img
+              src={privateInventoryHero}
+              alt="Westlake estate at dusk — private Austin luxury home"
+              className="parallax-image w-full h-full object-cover will-change-transform"
+            />
+            <div
+              className="absolute inset-0"
+              style={{
+                background:
+                  "radial-gradient(ellipse at center, rgba(12,15,36,0.55) 0%, rgba(12,15,36,0.4) 60%, rgba(12,15,36,0.25) 100%)",
+              }}
+            />
+          </div>
         </div>
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-8">
           <p className="mb-6 font-bold" style={{ ...labelStyle, color: "#BAA26A" }}>

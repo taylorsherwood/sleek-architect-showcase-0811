@@ -217,56 +217,10 @@ const CinematicSections = ({ formNode }: Props) => {
         .fromTo(".bridge-rule", { width: 0, opacity: 0 }, { width: 120, opacity: 1, ease: "power2.out", duration: 0.5 }, 0.5)
         .to({}, { duration: 0.3 });
 
-      // ── Section 4: Community reveal + Horizontal Scroll Gallery
+      // ── Section 4: Horizontal Scroll Gallery
       const horizontalTrack = document.querySelector<HTMLDivElement>(".horizontal-track");
-      const horizontalSection = document.querySelector<HTMLElement>(".horizontal-section");
-      if (horizontalTrack && horizontalSection) {
+      if (horizontalTrack) {
         const totalScroll = horizontalTrack.scrollWidth - window.innerWidth;
-
-        // Dedicated reveal section before the gallery so the gallery itself doesn't snap on pin.
-        gsap.set(".community-reveal-image", { scale: 1.14, yPercent: 6 });
-        gsap.set(".community-reveal-copy", { opacity: 0, y: 48 });
-        gsap.set(".community-reveal-veil", { yPercent: 0 });
-
-        const communityRevealTl = gsap.timeline({
-          scrollTrigger: {
-            trigger: ".community-reveal-section",
-            start: "top bottom",
-            end: "bottom top",
-            scrub: 1.15,
-          },
-        });
-
-        communityRevealTl
-          .fromTo(
-            ".community-reveal-bloom",
-            { opacity: 0, scale: 0.85 },
-            { opacity: 1, scale: 1.08, ease: "none" },
-            0
-          )
-          .to(
-            ".community-reveal-veil",
-            { yPercent: -100, ease: "none" },
-            0.12
-          )
-          .to(
-            ".community-reveal-image",
-            { scale: 1, yPercent: 0, ease: "none" },
-            0
-          )
-          .fromTo(
-            ".community-reveal-copy",
-            { opacity: 0, y: 48 },
-            { opacity: 1, y: 0, ease: "none" },
-            0.22
-          )
-          .to(
-            [".community-reveal-copy", ".community-reveal-bloom"],
-            { opacity: 0, y: -24, ease: "none" },
-            0.76
-          );
-
-        // Horizontal scroll pin starts cleanly after the reveal section.
         gsap.to(horizontalTrack, {
           x: -totalScroll,
           ease: "none",
@@ -727,38 +681,7 @@ const CinematicSections = ({ formNode }: Props) => {
         </div>
       </section>
 
-      {/* ── Section 4a: Community reveal ─ */}
-      <section className="community-reveal-section relative h-[140vh] w-full overflow-hidden bg-[hsl(220,15%,6%)]">
-        <div className="sticky top-0 h-screen overflow-hidden">
-          <div className="community-reveal-image absolute inset-0 will-change-transform">
-            <img
-              src={NEIGHBORHOODS[0].image}
-              alt={`${NEIGHBORHOODS[0].name} luxury Austin neighborhood`}
-              className="w-full h-full object-cover"
-              decoding="async"
-            />
-            <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/20 to-[hsl(220,15%,6%)]" />
-          </div>
-          <div className="community-reveal-veil absolute inset-0 z-20 pointer-events-none bg-[hsl(220,15%,6%)]" />
-          <div
-            className="community-reveal-bloom absolute inset-0 z-10 pointer-events-none opacity-0"
-            style={{
-              background:
-                "radial-gradient(ellipse 55% 38% at 50% 45%, rgba(185,160,108,0.16) 0%, rgba(185,160,108,0) 70%)",
-            }}
-          />
-          <div className="community-reveal-copy absolute inset-0 z-30 flex flex-col items-center justify-center px-8 text-center pointer-events-none">
-            <p className="mb-5 font-bold" style={{ ...labelStyle, color: "#b9a06c" }}>
-              PRIVATE INVENTORY
-            </p>
-            <h2 className="font-display font-light text-white leading-[1.02] max-w-[14ch]" style={{ fontSize: "clamp(2.5rem, 5vw, 5.2rem)" }}>
-              The communities where access matters first.
-            </h2>
-          </div>
-        </div>
-      </section>
-
-      {/* ── Section 4b: Horizontal Scroll Gallery ─ */}
+      {/* ── Section 4: Horizontal Scroll Gallery ─ */}
       <section className="horizontal-section relative h-screen w-full overflow-hidden bg-[hsl(220,15%,6%)]">
         <div className="horizontal-track absolute top-0 left-0 h-full flex" style={{ width: "max-content" }}>
           {NEIGHBORHOODS.map((n) => (

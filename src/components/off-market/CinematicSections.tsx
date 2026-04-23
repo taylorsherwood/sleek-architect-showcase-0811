@@ -531,12 +531,14 @@ const CinematicSections = ({ formNode }: Props) => {
       <section className="drone-section relative h-screen w-full overflow-hidden bg-[hsl(220,15%,8%)]">
         <video
           ref={droneVideoRef}
-          src="/video/hero-scrub.mp4"
           muted
           playsInline
           preload="auto"
           className="absolute inset-0 w-full h-full object-cover will-change-transform"
-        />
+        >
+          <source src="/video/hero-scrub.webm" type="video/webm" />
+          <source src="/video/hero-scrub.mp4" type="video/mp4" />
+        </video>
         {/* Legibility radial gradient */}
         <div
           className="absolute inset-0 z-10 pointer-events-none"

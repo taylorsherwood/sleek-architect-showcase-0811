@@ -721,7 +721,7 @@ const CinematicSections = ({ formNode }: Props) => {
                   {s.suffix === "M" ? "0.0" : "0"}
                   {s.suffix}
                 </span>
-                <p className="stat-label text-white/60 tracking-[0.25em] uppercase font-sans" style={{ fontSize: "0.75rem" }}>
+                <p className="stat-label tracking-[0.25em] uppercase font-sans" style={{ fontSize: "0.75rem", color: "#b9a06c" }}>
                   {s.label}
                 </p>
               </div>

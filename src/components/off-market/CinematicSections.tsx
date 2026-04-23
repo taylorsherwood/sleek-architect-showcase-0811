@@ -87,21 +87,26 @@ const CinematicSections = ({ formNode }: Props) => {
 
     const ctx = gsap.context(() => {
       // ── Section 2: Pinned Thesis word-by-word reveal
+      // Pin the section and reveal each word as the user scrolls.
+      // The user cannot scroll past until every word has appeared.
       const words = gsap.utils.toArray<HTMLSpanElement>(".thesis-word");
       gsap.set(words, { opacity: 0, y: 40 });
-      gsap.to(words, {
-        opacity: 1,
-        y: 0,
-        ease: "power3.out",
-        stagger: 1,
+      const thesisTl = gsap.timeline({
         scrollTrigger: {
           trigger: ".thesis-section",
           start: "top top",
-          end: "+=150%",
+          // Allocate scroll distance per word so the reveal fills the pin
+          end: () => `+=${Math.max(words.length * 180, 1200)}`,
           pin: true,
           scrub: 1,
+          anticipatePin: 1,
         },
       });
+      words.forEach((w) => {
+        thesisTl.to(w, { opacity: 1, y: 0, ease: "power3.out", duration: 1 });
+      });
+      // Hold the final state briefly before releasing the pin
+      thesisTl.to({}, { duration: 0.6 });
 
       // ── Section 2.5: Image Split Reveal
       gsap.to(".split-top-half", {

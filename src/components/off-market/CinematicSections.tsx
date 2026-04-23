@@ -221,6 +221,28 @@ const CinematicSections = ({ formNode }: Props) => {
       const horizontalTrack = document.querySelector<HTMLDivElement>(".horizontal-track");
       if (horizontalTrack) {
         const totalScroll = horizontalTrack.scrollWidth - window.innerWidth;
+
+        // Cinematic reveal — as the gallery enters viewport (after counter unpins),
+        // the first card image scales down from over-zoomed and the entire track
+        // rises up smoothly. Scrub-driven so it feels tied to user scroll.
+        gsap.set(".horizontal-track", { yPercent: 12, opacity: 0 });
+        gsap.set(".horizontal-card.is-first .horizontal-card-image img", { scale: 1.18 });
+        gsap.set(".horizontal-card.is-first .card-content", { opacity: 0, y: 40 });
+
+        const galleryReveal = gsap.timeline({
+          scrollTrigger: {
+            trigger: ".horizontal-section",
+            start: "top bottom",
+            end: "top top",
+            scrub: 1.2,
+          },
+        });
+        galleryReveal
+          .to(".horizontal-track", { yPercent: 0, opacity: 1, ease: "none" }, 0)
+          .to(".horizontal-card.is-first .horizontal-card-image img", { scale: 1, ease: "none" }, 0)
+          .to(".horizontal-card.is-first .card-content", { opacity: 1, y: 0, ease: "none" }, 0.4);
+
+        // Horizontal scroll pin
         gsap.to(horizontalTrack, {
           x: -totalScroll,
           ease: "none",
@@ -684,10 +706,10 @@ const CinematicSections = ({ formNode }: Props) => {
       {/* ── Section 4: Horizontal Scroll Gallery ─ */}
       <section className="horizontal-section relative h-screen w-full overflow-hidden bg-[hsl(220,15%,6%)]">
         <div className="horizontal-track absolute top-0 left-0 h-full flex" style={{ width: "max-content" }}>
-          {NEIGHBORHOODS.map((n) => (
+          {NEIGHBORHOODS.map((n, idx) => (
             <div
               key={n.name}
-              className="horizontal-card relative h-screen flex items-end overflow-hidden will-change-transform"
+              className={`horizontal-card relative h-screen flex items-end overflow-hidden will-change-transform ${idx === 0 ? "is-first" : ""}`}
               style={{ width: "80vw" }}
             >
               <div

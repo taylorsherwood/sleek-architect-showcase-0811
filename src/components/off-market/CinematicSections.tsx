@@ -31,7 +31,7 @@ const NEIGHBORHOODS = [
   { name: "Rollingwood", image: cardTarrytown, stat: "Avg DOM off-market: 14 days" },
   { name: "Old Enfield", image: cardOldEnfield, stat: "60% OF TRADES ARE PRIVATE" },
   { name: "West Lake Hills", image: cardWestlake, stat: "Median sale: $4.1M" },
-  { name: "Tarrytown", image: cardDavenport, stat: "CENTRAL ACCESS TO AUS" },
+  { name: "Tarrytown", image: cardDavenport, stat: "CENTRAL ACCESS TO AUSTIN" },
   { name: "Spanish Oaks", image: cardSpanishOaks, stat: "GUARD GATED GOLF ESTATES" },
 ];
 

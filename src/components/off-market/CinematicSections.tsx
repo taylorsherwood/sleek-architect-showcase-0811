@@ -669,39 +669,41 @@ const CinematicSections = ({ formNode }: Props) => {
       </section>
 
       {/* ── Section 3: Parallax Image Reveal ───── */}
-      <section className="parallax-section relative h-screen w-full overflow-hidden bg-[hsl(220,15%,8%)]">
-        <div
-          className="absolute inset-0 overflow-hidden"
-        >
+      <section className="parallax-section relative h-screen w-full bg-[hsl(220,15%,8%)]">
+        <div className="parallax-pin relative h-screen w-full overflow-hidden">
           <div
-            className="absolute left-0 right-0"
-            style={{ top: "-20%", height: "140%" }}
+            className="absolute inset-0 overflow-hidden"
           >
-            <img
-              src={privateInventoryHero}
-              alt="Westlake estate at dusk — private Austin luxury home"
-              className="parallax-image w-full h-full object-cover will-change-transform"
-              decoding="async"
-            />
             <div
-              className="absolute inset-0"
-              style={{
-                background:
-                  "radial-gradient(ellipse at center, rgba(12,15,36,0.55) 0%, rgba(12,15,36,0.4) 60%, rgba(12,15,36,0.25) 100%)",
-              }}
-            />
+              className="absolute left-0 right-0"
+              style={{ top: "-20%", height: "140%" }}
+            >
+              <img
+                src={privateInventoryHero}
+                alt="Westlake estate at dusk — private Austin luxury home"
+                className="parallax-image w-full h-full object-cover will-change-transform"
+                decoding="async"
+              />
+              <div
+                className="absolute inset-0"
+                style={{
+                  background:
+                    "radial-gradient(ellipse at center, rgba(12,15,36,0.55) 0%, rgba(12,15,36,0.4) 60%, rgba(12,15,36,0.25) 100%)",
+                }}
+              />
+            </div>
           </div>
-        </div>
-        <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-8">
-          <p className="mb-6 font-bold" style={{ ...labelStyle, color: "#BAA26A" }}>
-            {"\n"}
-          </p>
-          <h2
-            className="parallax-headline font-display font-light leading-[1.05] max-w-[90vw] will-change-transform"
-            style={{ fontSize: "5vw", color: "#BAA26A", textShadow: "0 2px 24px rgba(0,0,0,0.6)" }}
-          >
-            Homes That Never<br />Reach The Market
-          </h2>
+          <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-8">
+            <p className="mb-6 font-bold" style={{ ...labelStyle, color: "#BAA26A" }}>
+              {"\n"}
+            </p>
+            <h2
+              className="parallax-headline font-display font-light leading-[1.05] max-w-[90vw] will-change-transform"
+              style={{ fontSize: "5vw", color: "#BAA26A", textShadow: "0 2px 24px rgba(0,0,0,0.6)" }}
+            >
+              Homes That Never<br />Reach The Market
+            </h2>
+          </div>
         </div>
       </section>
 

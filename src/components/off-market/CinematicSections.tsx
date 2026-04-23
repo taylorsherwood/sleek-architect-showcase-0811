@@ -685,7 +685,7 @@ const CinematicSections = ({ formNode }: Props) => {
         </div>
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-8">
           <p className="mb-6 font-bold" style={{ ...labelStyle, color: "#BAA26A" }}>
-            OFF-MARKET
+            {"\n"}
           </p>
           <h2
             className="parallax-headline font-display font-light leading-[1.05] max-w-[90vw] will-change-transform"

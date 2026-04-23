@@ -48,7 +48,7 @@ const CinematicSections = ({ formNode }: Props) => {
   const rootRef = useRef<HTMLDivElement>(null);
   const lenisRef = useRef<Lenis | null>(null);
   const droneVideoRef = useRef<HTMLVideoElement>(null);
-  const testimonialVideoRef = useRef<HTMLVideoElement>(null);
+  
 
   // Play drone video only while its section is in view; pause + reset when it leaves.
   useEffect(() => {
@@ -530,17 +530,14 @@ const CinematicSections = ({ formNode }: Props) => {
 
       {/* ── Section 2.5: Image Split Reveal ────── */}
       <section className="split-section relative h-screen w-full overflow-hidden bg-[hsl(220,15%,8%)]">
-        {/* Revealed background video — plays the moment it takes over the screen */}
+        {/* Revealed background image */}
         <div className="absolute inset-0 z-0">
-          <video
-            ref={testimonialVideoRef}
+          <img
+            src={testimonialSplitImg}
+            alt=""
+            aria-hidden="true"
             className="w-full h-full object-cover"
-            src="/videos/testimonial-barton-creek.mp4"
-            poster={austinSkylineParallax}
-            muted
-            playsInline
-            preload="auto"
-            aria-label="2300 Barton Creek private estate aerial"
+            decoding="async"
           />
           <div className="absolute inset-0 bg-black/20" />
         </div>

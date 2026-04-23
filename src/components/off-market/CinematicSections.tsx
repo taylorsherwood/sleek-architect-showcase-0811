@@ -279,14 +279,15 @@ const CinematicSections = ({ formNode }: Props) => {
 
       // ── Section 5: Counter — REMOVED
 
-      // ── Section 6: Cinematic Vertical-Split Reveal Testimonial
-      // A slow, deliberate luxury reveal:
-      //  Phase 1 (0 → 0.32): the image breathes — a slow Ken Burns settle.
-      //  Phase 2 (0.32 → 0.85): both halves part on a long, expo-eased curve.
-      //  Phase 3 (0.62 → 1): the testimonial lines clear blur and rise in a
+      // ── Section 6: Cinematic Side-Reveal Testimonial
+      // Slow, smooth, deliberate luxury reveal:
+      //  Phase 1 (0 → 0.35): the image breathes — gentle Ken Burns settle.
+      //  Phase 2 (0.35 → 0.95): the right half drifts off on a long, expo-eased
+      //    curve, exposing the testimonial on the right.
+      //  Phase 3 (0.65 → 1): each testimonial line clears blur and rises in a
       //    measured cadence; attribution settles last.
-      gsap.set([".testimonial-split-left", ".testimonial-split-right"], { xPercent: 0 });
-      gsap.set(".testimonial-split-image", { scale: 1.10 });
+      gsap.set(".testimonial-split-right", { xPercent: 0 });
+      gsap.set(".testimonial-split-image", { scale: 1.08 });
       gsap.set(".testimonial-line", { opacity: 0, y: 24, filter: "blur(8px)" });
       gsap.set(".testimonial-attribution", { opacity: 0, y: 12, filter: "blur(6px)" });
 
@@ -294,23 +295,22 @@ const CinematicSections = ({ formNode }: Props) => {
         scrollTrigger: {
           trigger: ".testimonial-section",
           start: "top top",
-          end: "+=320%",
+          end: "+=380%",
           pin: true,
           pinSpacing: true,
-          scrub: 1.4,
+          scrub: 1.6,
           anticipatePin: 1,
         },
       });
 
       testimonialTl
         // Phase 1 — slow Ken Burns settle
-        .to(".testimonial-split-image", { scale: 1, ease: "power1.out", duration: 0.32 }, 0)
-        // Phase 2 — both halves part on a long, refined curve
-        .to(".testimonial-split-left", { xPercent: -100, ease: "expo.inOut", duration: 0.55 }, 0.32)
-        .to(".testimonial-split-right", { xPercent: 100, ease: "expo.inOut", duration: 0.55 }, 0.32)
-        // Phase 3 — testimonial lines clear blur and rise, measured cadence
-        .to(".testimonial-line", { opacity: 1, y: 0, filter: "blur(0px)", ease: "power3.out", stagger: 0.18, duration: 0.65 }, 0.62)
-        .to(".testimonial-attribution", { opacity: 1, y: 0, filter: "blur(0px)", ease: "power2.out", duration: 0.55 }, 1.0)
+        .to(".testimonial-split-image", { scale: 1, ease: "power1.out", duration: 0.35 }, 0)
+        // Phase 2 — right half drifts away on a long, refined curve
+        .to(".testimonial-split-right", { xPercent: 100, ease: "expo.inOut", duration: 0.60 }, 0.35)
+        // Phase 3 — testimonial copy clears blur and rises, measured cadence
+        .to(".testimonial-line", { opacity: 1, y: 0, filter: "blur(0px)", ease: "power3.out", stagger: 0.20, duration: 0.70 }, 0.65)
+        .to(".testimonial-attribution", { opacity: 1, y: 0, filter: "blur(0px)", ease: "power2.out", duration: 0.55 }, 1.05)
         .to({}, { duration: 0.15 });
 
       // ── Section 7: Form — elegant cinematic reveal as user scrolls

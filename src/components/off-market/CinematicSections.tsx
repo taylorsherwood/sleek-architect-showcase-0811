@@ -704,22 +704,36 @@ const CinematicSections = ({ formNode }: Props) => {
           </div>
         </div>
 
-        {/* Left half of the image — slides off to the LEFT */}
-        <div
-          className="testimonial-split-left absolute inset-y-0 left-0 w-1/2 z-10 overflow-hidden will-change-transform"
-        >
-          <img
-            src={testimonialSplitImg}
-            alt="Lake Austin luxury waterfront estate at golden hour"
-            className="testimonial-split-image absolute inset-y-0 left-0 h-full w-screen max-w-none object-cover will-change-transform"
-            decoding="async"
-          />
+        {/* Left half of the image — remains; gentle parallax for depth */}
+        <div className="testimonial-split-left absolute inset-y-0 left-0 w-1/2 z-10 overflow-hidden will-change-transform">
+          <div className="testimonial-split-image-left absolute inset-0 will-change-transform">
+            <img
+              src={testimonialSplitImg}
+              alt="Lake Austin luxury waterfront estate at golden hour"
+              className="testimonial-split-image absolute inset-y-0 left-0 h-full w-screen max-w-none object-cover will-change-transform"
+              decoding="async"
+            />
+            {/* Warm cinematic vignette — fades in during phase 1 */}
+            <div
+              className="testimonial-vignette absolute inset-0 pointer-events-none"
+              style={{
+                background:
+                  "radial-gradient(ellipse at 30% 50%, transparent 35%, rgba(0,0,0,0.55) 100%)",
+              }}
+            />
+            {/* Feathered inner shadow on the parting edge */}
+            <div
+              className="absolute inset-y-0 right-0 w-24 pointer-events-none"
+              style={{
+                background:
+                  "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.35) 100%)",
+              }}
+            />
+          </div>
         </div>
 
         {/* Right half of the image — slides off to the RIGHT */}
-        <div
-          className="testimonial-split-right absolute inset-y-0 right-0 w-1/2 z-10 overflow-hidden will-change-transform"
-        >
+        <div className="testimonial-split-right absolute inset-y-0 right-0 w-1/2 z-10 overflow-hidden will-change-transform">
           <img
             src={testimonialSplitImg}
             alt=""
@@ -727,10 +741,18 @@ const CinematicSections = ({ formNode }: Props) => {
             className="testimonial-split-image absolute inset-y-0 right-0 h-full w-screen max-w-none object-cover will-change-transform"
             decoding="async"
           />
+          {/* Soft trailing shadow on the leading edge as it departs */}
+          <div
+            className="absolute inset-y-0 left-0 w-24 pointer-events-none"
+            style={{
+              background:
+                "linear-gradient(to left, transparent 0%, rgba(0,0,0,0.35) 100%)",
+            }}
+          />
         </div>
 
-        {/* Subtle vertical seam */}
-        <div className="absolute inset-y-0 left-1/2 w-px bg-white/10 z-20 pointer-events-none" />
+        {/* Refined hairline seam */}
+        <div className="absolute inset-y-0 left-1/2 w-px bg-white/[0.06] z-20 pointer-events-none" />
       </section>
 
       {/* ── Section 7: Form ────────────────────── */}

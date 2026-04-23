@@ -48,6 +48,7 @@ const CinematicSections = ({ formNode }: Props) => {
   const rootRef = useRef<HTMLDivElement>(null);
   const lenisRef = useRef<Lenis | null>(null);
   const droneVideoRef = useRef<HTMLVideoElement>(null);
+  const testimonialVideoRef = useRef<HTMLVideoElement>(null);
 
   // Play drone video only while its section is in view; pause + reset when it leaves.
   useEffect(() => {
@@ -66,6 +67,29 @@ const CinematicSections = ({ formNode }: Props) => {
         }
       },
       { threshold: 0.4 }
+    );
+    obs.observe(section);
+    return () => obs.disconnect();
+  }, [isMobile]);
+
+  // Play testimonial background video the moment its section enters view
+  // (i.e. as the image takes over the screen, before the split reveal).
+  useEffect(() => {
+    const video = testimonialVideoRef.current;
+    if (!video) return;
+    const section = video.closest("section");
+    if (!section) return;
+
+    const obs = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          video.play().catch(() => {});
+        } else {
+          video.pause();
+          video.currentTime = 0;
+        }
+      },
+      { threshold: 0.25 }
     );
     obs.observe(section);
     return () => obs.disconnect();

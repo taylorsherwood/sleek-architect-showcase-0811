@@ -165,6 +165,10 @@ const CinematicSections = ({ formNode }: Props) => {
           end: () => `+=${Math.max(words.length * 110, 800)}`,
           pin: true,
           scrub: 2,
+          anticipatePin: 1,
+        },
+      });
+      words.forEach((w) => {
         thesisTl.to(w, { opacity: 1, y: 0, ease: "power3.out", duration: 1 });
       });
       // Hold the final state briefly before releasing the pin

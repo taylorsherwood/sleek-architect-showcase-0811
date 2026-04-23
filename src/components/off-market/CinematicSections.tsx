@@ -189,12 +189,7 @@ const CinematicSections = ({ formNode }: Props) => {
           end: "+=160%",
           pin: true,
           pinSpacing: true,
-          scrub: 1,
-          anticipatePin: 1,
-        },
-      });
-
-      splitTl
+          scrub: 2,
         // Phase 1 — lock & settle
         .to(".split-cover-image", { scale: 1, ease: "none", duration: 0.45 }, 0)
         // Phase 2 — elegant split

@@ -587,8 +587,8 @@ const TestimonialsSection = () => {
             <div className="relative min-h-[320px]">
               <p
                 key={`quote-${active}`}
-                className="font-display italic text-foreground/90 font-light leading-[1.3] mb-10"
-                style={{ fontSize: "clamp(1.4rem, 2.2vw, 2.1rem)" }}
+                className="font-display italic text-foreground/90 font-light leading-[1.45] mb-8 normal-case"
+                style={{ fontSize: "clamp(1.05rem, 1.4vw, 1.4rem)", textTransform: "none" }}
               >
                 <span
                   className="tsplit-line block will-change-transform"

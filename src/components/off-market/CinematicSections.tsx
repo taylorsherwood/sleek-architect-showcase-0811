@@ -5,15 +5,15 @@ import Lenis from "lenis";
 import { useIsMobile } from "@/hooks/use-mobile";
 
 import westlakeDusk from "@/assets/community-westlake-hills-hero.webp";
-import privateInventoryHero from "@/assets/hero-luxury-austin.jpg";
-import card78746 from "@/assets/barton-creek-estate-new.jpg";
-import cardTarrytown from "@/assets/community-tarrytown.jpg";
-import cardOldEnfield from "@/assets/pemberton-heights.avif";
-import cardWestlake from "@/assets/community-westlake-new.jpg";
-import cardDavenport from "@/assets/davenport-ranch-estate.jpg";
-import cardSpanishOaks from "@/assets/spanish-oaks-estate.jpg";
-import desktopNote from "@/assets/testimonial-westlake-living-room.jpg";
-import austinSkylineParallax from "@/assets/austin-skyline-parallax.jpeg";
+import privateInventoryHero from "@/assets/hero-luxury-austin.webp";
+import card78746 from "@/assets/barton-creek-estate-new.webp";
+import cardTarrytown from "@/assets/community-tarrytown.webp";
+import cardOldEnfield from "@/assets/pemberton-heights.webp";
+import cardWestlake from "@/assets/community-westlake-new.webp";
+import cardDavenport from "@/assets/davenport-ranch-estate.webp";
+import cardSpanishOaks from "@/assets/spanish-oaks-estate.webp";
+import desktopNote from "@/assets/testimonial-westlake-living-room.webp";
+import austinSkylineParallax from "@/assets/austin-skyline-parallax.webp";
 import clarksvilleImg from "@/assets/off-market-reveal-estate.webp";
 import taylorSignature from "@/assets/taylor-sherwood-signature.png";
 
@@ -382,7 +382,7 @@ const CinematicSections = ({ formNode }: Props) => {
             src={privateInventoryHero}
             alt="Private Austin estate"
             className="w-full h-[50vh] object-cover"
-            loading="lazy"
+            loading="lazy" decoding="async"
           />
           <div className="px-6 py-12 text-center bg-[hsl(220,15%,8%)]">
             <p className="text-[hsl(var(--gold))] mb-4 font-bold" style={labelStyle}>
@@ -451,7 +451,7 @@ const CinematicSections = ({ formNode }: Props) => {
             src={privateInventoryHero}
             alt="Westlake estate at dusk"
             className="w-full h-[60vh] object-cover"
-            loading="lazy"
+            loading="lazy" decoding="async"
           />
           <div className="px-6 py-12 text-center">
             <p className="text-[hsl(var(--gold))] mb-4 font-bold" style={labelStyle}>
@@ -467,7 +467,7 @@ const CinematicSections = ({ formNode }: Props) => {
         <section className="px-6 py-12 space-y-8">
           {NEIGHBORHOODS.map((n) => (
             <div key={n.name} className="relative h-[60vh] overflow-hidden">
-              <img src={n.image} alt={n.name} className="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+              <img src={n.image} alt={n.name} className="absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
               <div className="absolute bottom-6 left-6 right-6">
                 <h3 className="font-display text-3xl text-white mb-2">{n.name}</h3>
@@ -480,7 +480,7 @@ const CinematicSections = ({ formNode }: Props) => {
 
         {/* Section 6 — Testimonial */}
         <section className="bg-[hsl(220,15%,6%)]">
-          <img src={desktopNote} alt="Handwritten note on desk" className="w-full h-[40vh] object-cover" loading="lazy" />
+          <img src={desktopNote} alt="Handwritten note on desk" className="w-full h-[40vh] object-cover" loading="lazy" decoding="async" />
           <div className="px-6 py-12 text-center">
             <p className="font-display italic text-2xl text-white/90 leading-snug mb-6">
               "Taylor brought us a Westlake home before it ever hit the market. We never would have seen it without him."
@@ -505,7 +505,7 @@ const CinematicSections = ({ formNode }: Props) => {
                 src={taylorSignature}
                 alt="Taylor Sherwood signature"
                 className="h-14 w-auto"
-                loading="lazy"
+                loading="lazy" decoding="async"
               />
             </div>
             <div className="h-4" aria-hidden="true" />
@@ -553,7 +553,7 @@ const CinematicSections = ({ formNode }: Props) => {
             src={austinSkylineParallax}
             alt="Austin downtown skyline at sunset over Lady Bird Lake"
             className="w-full h-full object-cover"
-            loading="lazy"
+            loading="lazy" decoding="async"
           />
           <div className="absolute inset-0 bg-black/20" />
         </div>
@@ -581,7 +581,7 @@ const CinematicSections = ({ formNode }: Props) => {
             alt=""
             aria-hidden="true"
             className="w-full h-full object-cover"
-            loading="lazy"
+            loading="lazy" decoding="async"
           />
         </div>
         {/* Bottom half */}
@@ -594,7 +594,7 @@ const CinematicSections = ({ formNode }: Props) => {
             alt=""
             aria-hidden="true"
             className="w-full h-full object-cover"
-            loading="lazy"
+            loading="lazy" decoding="async"
           />
         </div>
       </section>
@@ -679,6 +679,8 @@ const CinematicSections = ({ formNode }: Props) => {
               src={privateInventoryHero}
               alt="Westlake estate at dusk — private Austin luxury home"
               className="parallax-image w-full h-full object-cover will-change-transform"
+              loading="lazy"
+              decoding="async"
             />
             <div
               className="absolute inset-0"
@@ -719,7 +721,7 @@ const CinematicSections = ({ formNode }: Props) => {
                   src={n.image}
                   alt={`${n.name} luxury Austin neighborhood`}
                   className="w-full h-full object-cover"
-                  loading="lazy"
+                  loading="lazy" decoding="async"
                 />
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
@@ -744,7 +746,7 @@ const CinematicSections = ({ formNode }: Props) => {
             src={desktopNote}
             alt="Handwritten note on a desk"
             className="testimonial-image absolute inset-0 w-full h-[120%] object-cover will-change-transform"
-            loading="lazy"
+            loading="lazy" decoding="async"
           />
         </div>
         <div className="flex flex-col justify-center px-12 lg:px-20 py-24">
@@ -783,7 +785,7 @@ const CinematicSections = ({ formNode }: Props) => {
               src={taylorSignature}
               alt="Taylor Sherwood signature"
               className="h-16 md:h-20 w-auto"
-              loading="lazy"
+              loading="lazy" decoding="async"
             />
           </div>
           <div className="h-6 md:h-8" aria-hidden="true" />

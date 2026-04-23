@@ -495,10 +495,10 @@ const CinematicSections = ({ formNode }: Props) => {
             <p className="text-[hsl(var(--gold))] mb-3 font-bold text-center" style={labelStyle}>
               ECHELON INSIDER
             </p>
-            <h2 className="font-display text-2xl font-light text-white mb-6 text-center whitespace-pre-line">
+            <h2 className="font-display text-2xl font-light text-white mb-3 text-center whitespace-pre-line">
               {"\n\n"}See you on the inside,
             </h2>
-            <div className="flex justify-center mb-5">
+            <div className="flex justify-center mb-3">
               <img
                 src={taylorSignature}
                 alt="Taylor Sherwood signature"
@@ -506,6 +506,7 @@ const CinematicSections = ({ formNode }: Props) => {
                 loading="lazy"
               />
             </div>
+            <div className="h-4" aria-hidden="true" />
             <div className="border border-white/10 p-6 bg-white/[0.02]">
               {formNode}
             </div>
@@ -762,7 +763,7 @@ const CinematicSections = ({ formNode }: Props) => {
         }}
       >
         <div className="max-w-2xl mx-auto">
-          <div className="form-field text-center mb-12">
+          <div className="form-field text-center mb-4">
             <p className="text-[hsl(var(--gold))] mb-4 font-bold" style={labelStyle}>
               ECHELON INSIDER
             </p>
@@ -770,7 +771,7 @@ const CinematicSections = ({ formNode }: Props) => {
               {"\n\n"}See you on the inside,
             </h2>
           </div>
-          <div className="form-field flex justify-center mb-6">
+          <div className="form-field flex justify-center mb-4">
             <img
               src={taylorSignature}
               alt="Taylor Sherwood signature"
@@ -778,6 +779,7 @@ const CinematicSections = ({ formNode }: Props) => {
               loading="lazy"
             />
           </div>
+          <div className="h-6 md:h-8" aria-hidden="true" />
           <div className="form-field border border-white/10 p-10 bg-white/[0.02] backdrop-blur-sm">
             {formNode}
           </div>

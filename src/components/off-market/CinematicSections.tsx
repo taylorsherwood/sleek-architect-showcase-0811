@@ -146,49 +146,23 @@ const CinematicSections = ({ formNode }: Props) => {
         }
       );
 
-      // ── Section 3 (new): Scroll-Scrubbed Drone Video
-      const droneVideo = droneVideoRef.current;
-      if (droneVideo) {
-        const playPromise = droneVideo.play();
-        if (playPromise) playPromise.then(() => droneVideo.pause()).catch(() => {});
-        ScrollTrigger.create({
-          trigger: ".drone-section",
-          start: "top top",
-          end: "+=200%",
-          pin: true,
-          scrub: 0.5,
-          onUpdate: (self) => {
-            if (droneVideo.duration && !isNaN(droneVideo.duration)) {
-              droneVideo.currentTime = droneVideo.duration * self.progress;
-            }
-          },
-        });
-        // Text fade: in 0-15%, hold, out 90-100%
-        gsap.fromTo(
-          ".drone-text",
-          { opacity: 0 },
-          {
+      // ── Section 3 (new): Autoplay drone video, play-on-enter text reveal
+      const droneEls = gsap.utils.toArray<HTMLElement>(".drone-reveal");
+      gsap.set(droneEls, { opacity: 0, y: 30 });
+      ScrollTrigger.create({
+        trigger: ".drone-section",
+        start: "top 70%",
+        once: true,
+        onEnter: () => {
+          gsap.to(droneEls, {
             opacity: 1,
-            ease: "none",
-            scrollTrigger: {
-              trigger: ".drone-section",
-              start: "top top",
-              end: "top top-=30%",
-              scrub: true,
-            },
-          }
-        );
-        gsap.to(".drone-text", {
-          opacity: 0,
-          ease: "none",
-          scrollTrigger: {
-            trigger: ".drone-section",
-            start: "top top-=180%",
-            end: "top top-=200%",
-            scrub: true,
-          },
-        });
-      }
+            y: 0,
+            duration: 1,
+            ease: "power3.out",
+            stagger: 0.2,
+          });
+        },
+      });
 
       // ── Section 3: Parallax Image Reveal
       gsap.to(".parallax-image", {

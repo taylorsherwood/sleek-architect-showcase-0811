@@ -209,7 +209,7 @@ const OffMarketRealEstateAustin = () => {
       </div>
       <div>
         <label htmlFor="timeline" className="block text-white/40 mb-1.5" style={labelStyle}>Timeline</label>
-        <select id="timeline" value={form.timeline} onChange={(e) => setForm(prev => ({ ...prev, timeline: e.target.value }))} className={selectClass}>
+        <select id="timeline" value={form.timeline} onChange={(e) => setForm(prev => ({ ...prev, timeline: e.target.value }))} className={selectClassFor(form.timeline)}>
           <option value="">Select</option>
           <option value="Immediately">Immediately</option>
           <option value="1–3 months">1–3 months</option>

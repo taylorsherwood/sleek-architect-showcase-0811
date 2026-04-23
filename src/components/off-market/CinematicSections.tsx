@@ -11,7 +11,7 @@ import cardOldEnfield from "@/assets/pemberton-heights.avif";
 import cardWestlake from "@/assets/community-westlake-new.jpg";
 import cardDavenport from "@/assets/davenport-ranch-estate.jpg";
 import cardSpanishOaks from "@/assets/spanish-oaks-estate.jpg";
-import desktopNote from "@/assets/austin-luxury-lifestyle.jpg";
+import desktopNote from "@/assets/testimonial-westlake-living-room.jpg";
 import austinSkylineParallax from "@/assets/austin-skyline-parallax.jpeg";
 import clarksvilleImg from "@/assets/communities/clarksville.jpg";
 

@@ -1,7 +1,11 @@
 import React, { lazy, Suspense, useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ScrollReveal from "@/components/ScrollReveal";
 import { formatPhoneNumber, getPhoneDigits, getTimestamp } from "@/lib/formUtils";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const ScrollingCredibilityStrip = lazy(() => import("@/components/ScrollingCredibilityStrip"));
 const ExpertiseSection = lazy(() => import("@/components/ExpertiseSection"));
@@ -489,6 +493,7 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   const [active, setActive] = useState(0);
+  const splitRef = useRef<HTMLDivElement>(null);
 
   // Mobile-only auto-rotation for the centered single-quote layout
   useEffect(() => {
@@ -499,20 +504,102 @@ const TestimonialsSection = () => {
     return () => clearInterval(timer);
   }, []);
 
+  // Desktop / iPad — GSAP split-reveal animation
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const mq = window.matchMedia("(min-width: 768px)");
+    if (!mq.matches) return;
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduceMotion) return;
+    const root = splitRef.current;
+    if (!root) return;
+
+    const ctx = gsap.context(() => {
+      gsap.set(".tsplit-top-half, .tsplit-bottom-half", { yPercent: 0 });
+      gsap.set(".tsplit-cover-image", { scale: 1.06 });
+      gsap.set(".tsplit-reveal", { opacity: 0, y: 20 });
+
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".tsplit-section",
+          start: "top top",
+          end: "+=140%",
+          pin: true,
+          pinSpacing: true,
+          scrub: 1.6,
+          anticipatePin: 1,
+        },
+      });
+
+      tl
+        .to(".tsplit-cover-image", { scale: 1, ease: "none", duration: 0.4 }, 0)
+        .to(".tsplit-top-half", { yPercent: -100, ease: "power2.inOut", duration: 0.45 }, 0.4)
+        .to(".tsplit-bottom-half", { yPercent: 100, ease: "power2.inOut", duration: 0.45 }, 0.4)
+        .to(".tsplit-reveal", { opacity: 1, y: 0, ease: "power2.out", stagger: 0.1, duration: 0.4 }, 0.7)
+        .to({}, { duration: 0.15 });
+    }, root);
+
+    return () => {
+      ctx.revert();
+    };
+  }, []);
+
   const t = testimonials[active];
 
   return (
-    <section className="bg-secondary relative overflow-hidden" style={{ padding: "clamp(48px, 7vw, 90px) 0" }}>
-      <div className="container mx-auto px-6 relative z-10">
-        {/* Section header */}
-        <div className="max-w-[900px] mx-auto text-center mb-10 md:mb-14">
-          <ScrollReveal>
-            <p className="text-minimal text-gold mb-4">CLIENT EXPERIENCES</p>
-            <h2 className="font-display text-2xl md:text-[2.2rem] font-normal text-foreground leading-[1.15] tracking-[0.02em]">
+    <>
+      {/* DESKTOP / iPAD — Full-screen split-reveal entry */}
+      <section
+        ref={splitRef}
+        className="tsplit-section hidden md:block relative w-full h-screen bg-secondary overflow-hidden"
+        aria-label="Client experiences"
+      >
+        {/* Behind-the-image content revealed when split opens */}
+        <div className="absolute inset-0 z-0 flex items-center justify-center px-8">
+          <div className="text-center max-w-[760px]">
+            <p className="tsplit-reveal text-minimal text-gold mb-5">CLIENT EXPERIENCES</p>
+            <h2 className="tsplit-reveal font-display text-3xl md:text-[2.6rem] font-normal text-foreground leading-[1.15] tracking-[0.02em] mb-5">
               clients first. <span className="italic">Proven Results.</span>
             </h2>
-          </ScrollReveal>
+            <p className="tsplit-reveal text-foreground/70 font-light" style={{ fontFamily: '"Jost", sans-serif', fontSize: "14px", letterSpacing: "0.02em" }}>
+              Continue scrolling to read what buyers, sellers, and investors say about working with Taylor.
+            </p>
+          </div>
         </div>
+
+        {/* Top half — slides up */}
+        <div className="tsplit-top-half absolute inset-x-0 top-0 h-1/2 z-10 overflow-hidden will-change-transform">
+          <img
+            src={lakeAustinTestimonialImg}
+            alt="Lake Austin luxury waterfront estate at golden hour"
+            className="tsplit-cover-image absolute inset-x-0 top-0 w-full h-screen object-cover will-change-transform"
+            decoding="async"
+          />
+        </div>
+
+        {/* Bottom half — slides down */}
+        <div className="tsplit-bottom-half absolute inset-x-0 bottom-0 h-1/2 z-10 overflow-hidden will-change-transform">
+          <img
+            src={lakeAustinTestimonialImg}
+            alt=""
+            aria-hidden="true"
+            className="tsplit-cover-image absolute inset-x-0 bottom-0 w-full h-screen object-cover will-change-transform"
+            decoding="async"
+          />
+        </div>
+      </section>
+
+      <section className="bg-secondary relative overflow-hidden" style={{ padding: "clamp(48px, 7vw, 90px) 0" }}>
+        <div className="container mx-auto px-6 relative z-10">
+          {/* Mobile-only header (desktop header now lives in the split reveal) */}
+          <div className="md:hidden max-w-[900px] mx-auto text-center mb-10">
+            <ScrollReveal>
+              <p className="text-minimal text-gold mb-4">CLIENT EXPERIENCES</p>
+              <h2 className="font-display text-2xl md:text-[2.2rem] font-normal text-foreground leading-[1.15] tracking-[0.02em]">
+                clients first. <span className="italic">Proven Results.</span>
+              </h2>
+            </ScrollReveal>
+          </div>
 
         {/* MOBILE: centered single rotating quote */}
         <div className="md:hidden">
@@ -645,8 +732,9 @@ const TestimonialsSection = () => {
             ))}
           </div>
         </div>
-      </div>
-    </section>
+        </div>
+      </section>
+    </>
   );
 };
 

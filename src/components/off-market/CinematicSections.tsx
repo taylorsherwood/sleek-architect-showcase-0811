@@ -192,35 +192,31 @@ const CinematicSections = ({ formNode }: Props) => {
         },
       });
 
-      // ── Section 3: Parallax Image Reveal — gentle parallax within oversized container
-      gsap.fromTo(
-        ".parallax-image",
-        { yPercent: -8 },
-        {
-          yPercent: 8,
-          ease: "none",
-          scrollTrigger: {
-            trigger: ".parallax-section",
-            start: "top bottom",
-            end: "bottom top",
-            scrub: 1,
-          },
-        }
-      );
-      gsap.fromTo(
-        ".parallax-headline",
-        { scale: 0.9 },
-        {
-          scale: 1,
-          ease: "none",
-          scrollTrigger: {
-            trigger: ".parallax-section",
-            start: "top bottom",
-            end: "bottom top",
-            scrub: 1,
-          },
-        }
-      );
+      // ── Section 3: Parallax Image Reveal — pin section, reveal headline on scroll
+      const parallaxTl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".parallax-section",
+          start: "top top",
+          end: "+=100%",
+          scrub: 1,
+          pin: true,
+          pinSpacing: true,
+          anticipatePin: 1,
+        },
+      });
+      parallaxTl
+        .fromTo(
+          ".parallax-image",
+          { yPercent: -6, scale: 1.05 },
+          { yPercent: 6, scale: 1, ease: "none" },
+          0
+        )
+        .fromTo(
+          ".parallax-headline",
+          { opacity: 0, y: 40, scale: 0.94 },
+          { opacity: 1, y: 0, scale: 1, ease: "power2.out" },
+          0.15
+        );
 
       // ── Section 4: Horizontal Scroll Gallery
       const horizontalTrack = document.querySelector<HTMLDivElement>(".horizontal-track");

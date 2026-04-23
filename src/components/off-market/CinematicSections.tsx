@@ -216,7 +216,7 @@ const CinematicSections = ({ formNode }: Props) => {
         scrollTrigger: {
           trigger: ".drone-section",
           start: "top top",
-          end: "+=100%",
+          end: "+=70%",
           scrub: 1,
           pin: true,
           pinSpacing: true,

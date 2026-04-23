@@ -146,49 +146,23 @@ const CinematicSections = ({ formNode }: Props) => {
         }
       );
 
-      // ── Section 3 (new): Scroll-Scrubbed Drone Video
-      const droneVideo = droneVideoRef.current;
-      if (droneVideo) {
-        const playPromise = droneVideo.play();
-        if (playPromise) playPromise.then(() => droneVideo.pause()).catch(() => {});
-        ScrollTrigger.create({
-          trigger: ".drone-section",
-          start: "top top",
-          end: "+=200%",
-          pin: true,
-          scrub: 0.5,
-          onUpdate: (self) => {
-            if (droneVideo.duration && !isNaN(droneVideo.duration)) {
-              droneVideo.currentTime = droneVideo.duration * self.progress;
-            }
-          },
-        });
-        // Text fade: in 0-15%, hold, out 90-100%
-        gsap.fromTo(
-          ".drone-text",
-          { opacity: 0 },
-          {
+      // ── Section 3 (new): Autoplay drone video, play-on-enter text reveal
+      const droneEls = gsap.utils.toArray<HTMLElement>(".drone-reveal");
+      gsap.set(droneEls, { opacity: 0, y: 30 });
+      ScrollTrigger.create({
+        trigger: ".drone-section",
+        start: "top 70%",
+        once: true,
+        onEnter: () => {
+          gsap.to(droneEls, {
             opacity: 1,
-            ease: "none",
-            scrollTrigger: {
-              trigger: ".drone-section",
-              start: "top top",
-              end: "top top-=30%",
-              scrub: true,
-            },
-          }
-        );
-        gsap.to(".drone-text", {
-          opacity: 0,
-          ease: "none",
-          scrollTrigger: {
-            trigger: ".drone-section",
-            start: "top top-=180%",
-            end: "top top-=200%",
-            scrub: true,
-          },
-        });
-      }
+            y: 0,
+            duration: 1,
+            ease: "power3.out",
+            stagger: 0.2,
+          });
+        },
+      });
 
       // ── Section 3: Parallax Image Reveal
       gsap.to(".parallax-image", {
@@ -375,17 +349,30 @@ const CinematicSections = ({ formNode }: Props) => {
           </div>
         </section>
 
-        {/* Section 3 (mobile static) — Drone video fallback (first frame) */}
+        {/* Section 3 (mobile) — Autoplay drone video */}
         <section className="relative">
-          <video
-            src="/video/hero-scrub.mp4"
-            muted
-            playsInline
-            preload="metadata"
-            className="w-full h-[50vh] object-cover"
-          />
+          <div className="relative w-full h-[60vh] overflow-hidden">
+            <video
+              autoPlay
+              muted
+              playsInline
+              loop
+              preload="auto"
+              className="hero-video absolute inset-0 w-full h-full object-cover"
+            >
+              <source src="/video/hero-scrub.webm" type="video/webm" />
+              <source src="/video/hero-scrub.mp4" type="video/mp4" />
+            </video>
+            <div
+              className="absolute inset-0 pointer-events-none"
+              style={{
+                background:
+                  "radial-gradient(ellipse at center, transparent 0%, rgba(12,15,36,0.4) 70%, rgba(12,15,36,0.7) 100%)",
+              }}
+            />
+          </div>
           <div className="px-6 py-12 text-center bg-[hsl(220,15%,8%)]">
-            <p className="text-[hsl(var(--gold))] mb-4 font-bold" style={labelStyle}>
+            <p className="mb-4 font-bold" style={{ ...labelStyle, color: "#BAA26A" }}>
               01 — PRIVATE INVENTORY
             </p>
             <h2 className="font-display text-3xl text-[hsl(40,30%,92%)] leading-tight mb-4">
@@ -543,14 +530,16 @@ const CinematicSections = ({ formNode }: Props) => {
         </div>
       </section>
 
-      {/* ── Section 3 (new): Scroll-Scrubbed Drone Video ── */}
+      {/* ── Section 3 (new): Autoplay Drone Video w/ Ken Burns ── */}
       <section className="drone-section relative h-screen w-full overflow-hidden bg-[hsl(220,15%,8%)]">
         <video
           ref={droneVideoRef}
+          autoPlay
           muted
           playsInline
+          loop
           preload="auto"
-          className="absolute inset-0 w-full h-full object-cover will-change-transform"
+          className="hero-video absolute inset-0 w-full h-full object-cover will-change-transform"
         >
           <source src="/video/hero-scrub.webm" type="video/webm" />
           <source src="/video/hero-scrub.mp4" type="video/mp4" />
@@ -564,19 +553,19 @@ const CinematicSections = ({ formNode }: Props) => {
           }}
         />
         {/* Overlay text */}
-        <div className="drone-text absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-8 will-change-[opacity]">
-          <p className="text-[hsl(var(--gold))] mb-6 font-bold" style={labelStyle}>
+        <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-8">
+          <p className="drone-reveal mb-6 font-bold" style={{ ...labelStyle, color: "#BAA26A", fontSize: "0.9rem", letterSpacing: "0.2em" }}>
             01 — PRIVATE INVENTORY
           </p>
           <h2
-            className="font-display text-[hsl(40,30%,92%)] font-light leading-[1.05] mb-6 max-w-[90vw]"
-            style={{ fontSize: "7vw" }}
+            className="drone-reveal font-display font-light leading-[1.05] mb-6 max-w-[90vw]"
+            style={{ fontSize: "7vw", color: "#F5F1EA" }}
           >
             Austin, from the inside.
           </h2>
           <p
-            className="text-white/80 font-sans"
-            style={{ fontSize: "1.2rem", maxWidth: "500px" }}
+            className="drone-reveal font-sans"
+            style={{ fontSize: "1.2rem", maxWidth: "500px", color: "rgba(245,241,234,0.8)" }}
           >
             The city you're moving to. The homes no one else will show you.
           </p>

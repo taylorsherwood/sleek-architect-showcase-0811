@@ -164,11 +164,7 @@ const CinematicSections = ({ formNode }: Props) => {
           // Allocate scroll distance per word so the reveal fills the pin
           end: () => `+=${Math.max(words.length * 110, 800)}`,
           pin: true,
-          scrub: 1,
-          anticipatePin: 1,
-        },
-      });
-      words.forEach((w) => {
+          scrub: 2,
         thesisTl.to(w, { opacity: 1, y: 0, ease: "power3.out", duration: 1 });
       });
       // Hold the final state briefly before releasing the pin

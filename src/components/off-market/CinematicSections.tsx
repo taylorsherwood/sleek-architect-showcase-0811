@@ -402,7 +402,7 @@ const CinematicSections = ({ formNode }: Props) => {
           </div>
           <div className="px-6 py-12 text-center bg-[hsl(220,15%,8%)]">
             <p className="mb-4 font-bold" style={{ ...labelStyle, color: "#BAA26A" }}>
-              PRIVATE INVENTORY
+              OFF-MARKET
             </p>
             <h2 className="font-display text-3xl text-[hsl(40,30%,92%)] leading-tight mb-4">
               Austin, from the inside.
@@ -423,7 +423,7 @@ const CinematicSections = ({ formNode }: Props) => {
           />
           <div className="px-6 py-12 text-center">
             <p className="text-[hsl(var(--gold))] mb-4 font-bold" style={labelStyle}>
-              PRIVATE INVENTORY
+              OFF-MARKET
             </p>
             <h2 className="font-display text-3xl text-white">
               Homes That Never Reach The Market
@@ -591,7 +591,7 @@ const CinematicSections = ({ formNode }: Props) => {
         {/* Overlay text */}
         <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-8">
           <p className="drone-reveal mb-6 font-bold" style={{ ...labelStyle, color: "#BAA26A", fontSize: "0.9rem", letterSpacing: "0.2em" }}>
-            PRIVATE INVENTORY
+            OFF-MARKET
           </p>
           <h2
             className="drone-reveal font-display font-light leading-[1.05] mb-6 max-w-[90vw]"
@@ -629,7 +629,7 @@ const CinematicSections = ({ formNode }: Props) => {
         </div>
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-8">
           <p className="mb-6 font-bold" style={{ ...labelStyle, color: "#BAA26A" }}>
-            PRIVATE INVENTORY
+            OFF-MARKET
           </p>
           <h2
             className="parallax-headline font-display font-light leading-[1.05] max-w-[90vw] will-change-transform"

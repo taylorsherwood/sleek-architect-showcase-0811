@@ -182,7 +182,7 @@ const CinematicSections = ({ formNode }: Props) => {
       ScrollTrigger.create({
         trigger: ".split-section",
         start: "top top",
-        end: "+=260%",
+        end: "+=160%",
         onEnter: () => {
           const video = testimonialVideoRef.current;
           if (!video) return;

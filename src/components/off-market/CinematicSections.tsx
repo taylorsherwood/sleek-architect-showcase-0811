@@ -314,8 +314,8 @@ const CinematicSections = ({ formNode }: Props) => {
       //    measured cadence; attribution settles last.
       gsap.set(".testimonial-split-right", { xPercent: 0 });
       gsap.set(".testimonial-split-image", { scale: 1.08 });
-      gsap.set(".testimonial-line", { opacity: 0, y: 24, filter: "blur(8px)" });
-      gsap.set(".testimonial-attribution", { opacity: 0, y: 12, filter: "blur(6px)" });
+      gsap.set(".testimonial-line", { opacity: 0, y: 24 });
+      gsap.set(".testimonial-attribution", { opacity: 0, y: 12 });
 
       const testimonialTl = gsap.timeline({
         scrollTrigger: {
@@ -324,34 +324,35 @@ const CinematicSections = ({ formNode }: Props) => {
           end: "+=160%",
           pin: true,
           pinSpacing: true,
-          scrub: 2,
+          scrub: 0.8,
           anticipatePin: 1,
+          fastScrollEnd: true,
         },
       });
 
       testimonialTl
         // Phase 1 — slow Ken Burns settle
-        .to(".testimonial-split-image", { scale: 1, ease: "power1.out", duration: 0.35 }, 0)
+        .to(".testimonial-split-image", { scale: 1, ease: "power1.out", duration: 0.35, force3D: true }, 0)
         // Phase 2 — right half drifts away on a long, refined curve
-        .to(".testimonial-split-right", { xPercent: 100, ease: "expo.inOut", duration: 0.60 }, 0.35)
-        // Phase 3 — testimonial copy clears blur and rises, measured cadence
-        .to(".testimonial-line", { opacity: 1, y: 0, filter: "blur(0px)", ease: "power3.out", stagger: 0.20, duration: 0.70 }, 0.65)
-        .to(".testimonial-attribution", { opacity: 1, y: 0, filter: "blur(0px)", ease: "power2.out", duration: 0.55 }, 1.05)
+        .to(".testimonial-split-right", { xPercent: 100, ease: "expo.inOut", duration: 0.60, force3D: true }, 0.35)
+        // Phase 3 — testimonial copy rises in measured cadence (no blur — too expensive on scrub)
+        .to(".testimonial-line", { opacity: 1, y: 0, ease: "power3.out", stagger: 0.20, duration: 0.70, force3D: true }, 0.65)
+        .to(".testimonial-attribution", { opacity: 1, y: 0, ease: "power2.out", duration: 0.55, force3D: true }, 1.05)
         .to({}, { duration: 0.15 });
 
       // ── Section 7: Form — elegant cinematic reveal as user scrolls
-      // past the testimonial. Each element rises into place with a soft
-      // blur clearing, finishing with the form panel scaling up.
+      // past the testimonial. Filter blurs removed (GPU thrash on scrub).
       const formEls = gsap.utils.toArray<HTMLElement>(".form-field");
-      gsap.set(formEls, { opacity: 0, y: 60, filter: "blur(12px)" });
-      gsap.set(".form-panel", { opacity: 0, y: 80, scale: 0.96, filter: "blur(14px)" });
+      gsap.set(formEls, { opacity: 0, y: 60 });
+      gsap.set(".form-panel", { opacity: 0, y: 80, scale: 0.96 });
 
       const formTl = gsap.timeline({
         scrollTrigger: {
           trigger: ".form-section",
           start: "top 85%",
           end: "top 30%",
-          scrub: 1.2,
+          scrub: 0.8,
+          fastScrollEnd: true,
         },
       });
 
@@ -359,24 +360,24 @@ const CinematicSections = ({ formNode }: Props) => {
         .to(formEls[0], {
           opacity: 1,
           y: 0,
-          filter: "blur(0px)",
           ease: "power3.out",
           duration: 0.6,
+          force3D: true,
         }, 0)
         .to(formEls[1], {
           opacity: 1,
           y: 0,
-          filter: "blur(0px)",
           ease: "power3.out",
           duration: 0.6,
+          force3D: true,
         }, 0.25)
         .to(".form-panel", {
           opacity: 1,
           y: 0,
           scale: 1,
-          filter: "blur(0px)",
           ease: "power3.out",
           duration: 0.9,
+          force3D: true,
         }, 0.45);
     }, root);
 

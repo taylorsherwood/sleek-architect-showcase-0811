@@ -2,6 +2,7 @@ import { useEffect, useRef, useState, type ReactNode } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Lenis from "lenis";
+import StackingCommunityCards from "./StackingCommunityCards";
 
 import westlakeDusk from "@/assets/community-westlake-hills-hero.webp";
 import privateInventoryHero from "@/assets/hero-luxury-austin.webp";
@@ -258,26 +259,7 @@ const CinematicSections = ({ formNode }: Props) => {
         .fromTo(".bridge-rule", { width: 0, opacity: 0 }, { width: 120, opacity: 1, ease: "power2.out", duration: 0.5 }, 0.5)
         .to({}, { duration: 0.3 });
 
-      // ── Section 4: Stacking Cards Gallery
-      // Sticky-pinned cards that scale down as the next card stacks on top.
-      // Animation is per-card, scrubbed to scroll position of its own wrapper.
-      const stackCards = gsap.utils.toArray<HTMLDivElement>(".stack-card");
-      stackCards.forEach((card, i) => {
-        if (i === stackCards.length - 1) return; // last card stays full size
-        const targetScale = 1 - (stackCards.length - i) * 0.04;
-        gsap.to(card, {
-          scale: targetScale,
-          ease: "none",
-          force3D: true,
-          scrollTrigger: {
-            trigger: card.parentElement!,
-            start: "top top",
-            endTrigger: stackCards[stackCards.length - 1].parentElement!,
-            end: "top top",
-            scrub: 0.6,
-          },
-        });
-      });
+      // ── Section 4: Stacking Cards Gallery (handled by StackingCommunityCards using motion)
 
       // ── Section 5: Counter — REMOVED
 

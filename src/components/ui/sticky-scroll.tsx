@@ -1,6 +1,5 @@
 'use client';
 
-import { ReactLenis } from 'lenis/react';
 import { Link } from 'react-router-dom';
 import { communityPages } from '@/data/communityData';
 
@@ -37,8 +36,7 @@ const communities = FEATURED_SLUGS
 
 export default function StickyScroll() {
   return (
-    <ReactLenis root>
-      <section className="relative w-full bg-[#0C0F24]">
+    <section className="relative w-full bg-[#0C0F24]">
         <div className="flex w-full">
           {/* LEFT — sticky panel (desktop only) */}
           <div className="sticky top-0 hidden lg:flex h-screen w-5/12 flex-col justify-center px-12 xl:px-16 shrink-0">
@@ -110,7 +108,6 @@ export default function StickyScroll() {
             ))}
           </div>
         </div>
-      </section>
-    </ReactLenis>
+    </section>
   );
 }

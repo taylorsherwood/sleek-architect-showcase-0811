@@ -121,7 +121,7 @@ const Testimonials = () => {
               <div
                 key={i}
                 ref={(el) => { cardsRef.current[i] = el; }}
-                className={`group relative rounded-lg px-6 pt-5 pb-6 md:px-8 md:pt-7 md:pb-8 flex flex-col justify-between overflow-hidden${i === testimonials.length - 1 ? " md:col-span-2 md:w-[calc(50%-0.625rem)] lg:w-[calc(50%-0.75rem)] md:mx-auto md:-translate-x-4 lg:-translate-x-6" : ""}`}
+                className={`group relative rounded-lg px-6 pt-5 pb-6 md:px-8 md:pt-7 md:pb-8 flex flex-col justify-between overflow-hidden${i === testimonials.length - 1 ? " md:col-span-2 md:w-[calc(50%-0.625rem)] lg:w-[calc(50%-0.75rem)] md:ml-0 md:mr-auto lg:ml-[10%]" : ""}`}
                 style={{
                   opacity: 0,
                   transform: "translateY(40px)",

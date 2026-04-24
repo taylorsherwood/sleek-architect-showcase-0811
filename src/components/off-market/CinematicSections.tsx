@@ -258,73 +258,26 @@ const CinematicSections = ({ formNode }: Props) => {
         .fromTo(".bridge-rule", { width: 0, opacity: 0 }, { width: 120, opacity: 1, ease: "power2.out", duration: 0.5 }, 0.5)
         .to({}, { duration: 0.3 });
 
-      // ── Section 4: Horizontal Scroll Gallery
-      const horizontalTrack = root.querySelector<HTMLDivElement>(".horizontal-track");
-      if (horizontalTrack) {
-        const getTotalScroll = () => Math.max(horizontalTrack.scrollWidth - window.innerWidth, 0);
-
-        // Cinematic reveal — as the gallery enters viewport (after counter unpins),
-        // the first card image scales down from over-zoomed and the entire track
-        // eases in. Track opacity is NOT animated post-reveal so cards never
-        // re-fade (which previously caused a black flash + re-appearance bug).
-        gsap.set(".horizontal-track", { yPercent: 8 });
-        gsap.set(".horizontal-card.is-first .horizontal-card-image img", { scale: 1.18 });
-        gsap.set(".horizontal-card.is-first .card-content", { opacity: 0, y: 40 });
-
-        const galleryReveal = gsap.timeline({
+      // ── Section 4: Stacking Cards Gallery
+      // Sticky-pinned cards that scale down as the next card stacks on top.
+      // Animation is per-card, scrubbed to scroll position of its own wrapper.
+      const stackCards = gsap.utils.toArray<HTMLDivElement>(".stack-card");
+      stackCards.forEach((card, i) => {
+        if (i === stackCards.length - 1) return; // last card stays full size
+        const targetScale = 1 - (stackCards.length - i) * 0.04;
+        gsap.to(card, {
+          scale: targetScale,
+          ease: "none",
+          force3D: true,
           scrollTrigger: {
-            trigger: ".horizontal-section",
-            start: "top bottom",
+            trigger: card.parentElement!,
+            start: "top top",
+            endTrigger: stackCards[stackCards.length - 1].parentElement!,
             end: "top top",
             scrub: 0.6,
           },
         });
-        galleryReveal
-          .to(".horizontal-track", { yPercent: 0, ease: "none", force3D: true }, 0)
-          .to(".horizontal-card.is-first .horizontal-card-image img", { scale: 1, ease: "none", force3D: true }, 0)
-          .to(".horizontal-card.is-first .card-content", { opacity: 1, y: 0, ease: "none", force3D: true }, 0.4);
-
-        // Horizontal scroll pin
-        const horizontalTween = gsap.to(horizontalTrack, {
-          x: () => -getTotalScroll(),
-          ease: "none",
-          force3D: true,
-          scrollTrigger: {
-            trigger: ".horizontal-section",
-            start: "top top",
-            end: () => `+=${getTotalScroll()}`,
-            pin: true,
-            pinSpacing: true,
-            scrub: 1,
-            fastScrollEnd: true,
-            anticipatePin: 1,
-          },
-        });
-
-        // Per-card image parallax — skip the LAST card so it doesn't shift
-        // back into frame after the pin releases (which caused the
-        // "black screen → Spanish Oaks reappears" flash).
-        const cardImages = gsap.utils.toArray<HTMLDivElement>(".horizontal-card-image");
-        cardImages.forEach((img, i) => {
-          if (i === cardImages.length - 1) return;
-          gsap.fromTo(
-            img,
-            { xPercent: -3 },
-            {
-              xPercent: 3,
-              ease: "none",
-              force3D: true,
-              scrollTrigger: {
-                trigger: img.parentElement!,
-                containerAnimation: horizontalTween,
-                start: "left right",
-                end: "right left",
-                scrub: 0.6,
-              },
-            }
-          );
-        });
-      }
+      });
 
       // ── Section 5: Counter — REMOVED
 
@@ -681,48 +634,52 @@ const CinematicSections = ({ formNode }: Props) => {
         </div>
       </section>
 
-      {/* ── Section 4: Horizontal Scroll Gallery ─ */}
-      <section className="horizontal-section relative h-screen w-full overflow-hidden bg-[hsl(220,15%,6%)]">
-        <div className="horizontal-track absolute top-0 left-0 flex h-full" style={{ width: `${NEIGHBORHOODS.length * 100}vw` }}>
-          {NEIGHBORHOODS.map((n, idx) => (
+      {/* ── Section 4: Stacking Cards Gallery ─ */}
+      <section className="stacking-section relative w-full bg-[hsl(220,15%,6%)]">
+        {NEIGHBORHOODS.map((n, idx) => (
+          <div
+            key={n.name}
+            className="stack-wrapper h-screen flex items-center justify-center sticky top-0"
+          >
             <div
-              key={n.name}
-              className={`horizontal-card relative h-screen flex items-end overflow-hidden will-change-transform ${idx === 0 ? "is-first" : ""}`}
-              style={{ width: "100vw", height: "100vh", flexShrink: 0 }}
+              className="stack-card relative overflow-hidden rounded-md will-change-transform"
+              style={{
+                top: `calc(-5vh + ${idx * 28}px)`,
+                width: "min(82vw, 1200px)",
+                height: "min(72vh, 640px)",
+                backgroundColor: "#0C0F24",
+                transformOrigin: "top center",
+                boxShadow: "0 30px 80px rgba(0,0,0,0.45)",
+              }}
             >
-              <div
-                className="horizontal-card-image absolute inset-0 will-change-transform"
-                style={{ width: "100%", left: "0%" }}
-              >
-                <img
-                  src={n.image}
-                  alt={`${n.name} luxury Austin neighborhood`}
-                  className="w-full h-full object-cover"
-                  decoding="async"
-                />
-              </div>
+              <img
+                src={n.image}
+                alt={`${n.name} luxury Austin neighborhood`}
+                className="absolute inset-0 w-full h-full object-cover"
+                decoding="async"
+              />
               <div
                 className="absolute inset-0 pointer-events-none"
-                style={{ backgroundColor: "rgba(12, 15, 36, 0.2)" }}
-              />
-              <div
-                className="absolute inset-x-0 bottom-0 h-1/2 pointer-events-none"
                 style={{
                   background:
-                    "linear-gradient(to top, rgba(12, 15, 36, 0.75), rgba(12, 15, 36, 0))",
+                    "linear-gradient(to top, rgba(12,15,36,0.88) 0%, rgba(12,15,36,0.25) 45%, rgba(12,15,36,0) 70%)",
                 }}
               />
-              <div className="card-content relative z-10 p-10 lg:p-14 max-w-xl">
-                <p className="mb-4 text-xs uppercase tracking-[0.24em] font-sans" style={{ color: "#b9a06c" }}>
-                  {n.stat}
-                </p>
-                <h2 className="font-display text-4xl lg:text-6xl text-white leading-[0.98]">
+              <div className="absolute inset-x-0 bottom-0 p-10 lg:p-14 text-center">
+                <h3
+                  className="font-display font-light leading-[1]"
+                  style={{
+                    color: "#b9a06c",
+                    fontSize: "clamp(2.25rem, 4.5vw, 4.25rem)",
+                    letterSpacing: "0.02em",
+                  }}
+                >
                   {n.name}
-                </h2>
+                </h3>
               </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </section>
 
       {/* ── Section 6: Vertical Split-Reveal Testimonial ─ */}

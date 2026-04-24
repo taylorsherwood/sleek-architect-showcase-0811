@@ -1,8 +1,7 @@
-import { useEffect, useRef, type ReactNode } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Lenis from "lenis";
-import { useIsMobile } from "@/hooks/use-mobile";
 
 import westlakeDusk from "@/assets/community-westlake-hills-hero.webp";
 import privateInventoryHero from "@/assets/hero-luxury-austin.webp";
@@ -44,8 +43,34 @@ interface Props {
   formNode: ReactNode;
 }
 
+// Treat anything narrower than the desktop GSAP breakpoint (1024px) as the
+// stacked "compact" layout. The pinned cinematic sequence relies on real
+// desktop scroll + Lenis smooth-wheel handling and does not pin reliably on
+// tablet / touch viewports — collapsing those sections to 0px and skipping
+// the page from hero straight to the form. The compact layout is the same
+// static stacked version previously used for mobile only.
+const COMPACT_MAX_WIDTH = 1024;
+
+const useIsCompact = () => {
+  const [isCompact, setIsCompact] = useState<boolean>(() => {
+    if (typeof window === "undefined") return false;
+    return window.innerWidth < COMPACT_MAX_WIDTH;
+  });
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const mql = window.matchMedia(`(max-width: ${COMPACT_MAX_WIDTH - 1}px)`);
+    const onChange = () => setIsCompact(window.innerWidth < COMPACT_MAX_WIDTH);
+    mql.addEventListener("change", onChange);
+    onChange();
+    return () => mql.removeEventListener("change", onChange);
+  }, []);
+
+  return isCompact;
+};
+
 const CinematicSections = ({ formNode }: Props) => {
-  const isMobile = useIsMobile();
+  const isMobile = useIsCompact();
   const rootRef = useRef<HTMLDivElement>(null);
   const lenisRef = useRef<Lenis | null>(null);
   const droneVideoRef = useRef<HTMLVideoElement>(null);

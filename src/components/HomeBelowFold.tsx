@@ -824,7 +824,7 @@ const CommunityTile = ({ c, heightClass }: { c: typeof communities[number]; heig
         {c.name}
       </h3>
       <p
-        className="line-clamp-1 hidden sm:block"
+        className="line-clamp-2 hidden sm:block"
         style={{
           fontFamily: '"Jost", sans-serif',
           fontSize: "10px",
@@ -853,35 +853,46 @@ const CommunitiesSection = () => {
             </h2>
           </div>
 
-          {/* Mobile: simple stacked grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:hidden">
             {communities.map((c) => (
               <CommunityTile key={c.slug} c={c} heightClass="h-[420px]" />
             ))}
           </div>
 
-          {/* Desktop: CSS-sticky gallery — left/right scroll, middle column sticks
-              Side columns are intentionally taller than the middle (h-screen) so
-              the middle column has real travel distance to "stick" against. */}
           <div className="hidden lg:grid grid-cols-12 gap-3 items-start">
             <div className="grid gap-3 col-span-4">
               {leftCommunities.map((c) => (
-                <CommunityTile key={c.slug} c={c} heightClass="h-[36rem]" />
+                <CommunityTile key={c.slug} c={c} heightClass="h-[32rem]" />
               ))}
             </div>
 
-            <div className="sticky top-20 h-[calc(100vh-6rem)] w-full col-span-4 gap-3 grid grid-rows-3 self-start">
-              {stickyCommunities.map((c) => (
-                <CommunityTile key={c.slug} c={c} heightClass="h-full" />
-              ))}
+            <div className="col-span-4 self-start">
+              <div className="sticky top-20 h-[calc(100vh-6rem)] overflow-hidden">
+                <div className="grid auto-rows-fr gap-3 h-full">
+                  {stickyCommunities.map((c) => (
+                    <CommunityTile key={c.slug} c={c} heightClass="min-h-[calc((100vh-8rem)/3)]" />
+                  ))}
+                </div>
+              </div>
             </div>
 
             <div className="grid gap-3 col-span-4">
               {rightCommunities.map((c) => (
-                <CommunityTile key={c.slug} c={c} heightClass="h-[36rem]" />
+                <CommunityTile key={c.slug} c={c} heightClass="h-[32rem]" />
               ))}
             </div>
           </div>
+
+          <div className="text-center mt-16">
+            <Link to="/communities" className="cta-luxury">
+              VIEW ALL COMMUNITIES
+            </Link>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
 
           <div className="text-center mt-16">
             <Link to="/communities" className="cta-luxury">

@@ -9,6 +9,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const ScrollingCredibilityStrip = lazy(() => import("@/components/ScrollingCredibilityStrip"));
 const ExpertiseSection = lazy(() => import("@/components/ExpertiseSection"));
+const AdvisoryPathways = lazy(() => import("@/components/AdvisoryPathways"));
 const FeaturedCommunities = lazy(() => import("@/components/FeaturedCommunities"));
 
 // Dynamic image imports — only loaded when this chunk is loaded
@@ -1264,7 +1265,7 @@ const HomeBelowFold = () => (
     <div className="h-8 md:h-12 bg-secondary" aria-hidden="true" />
 
     <Suspense fallback={<div className="min-h-[200px] bg-background" />}>
-      <ExpertiseSection />
+      <AdvisoryPathways />
     </Suspense>
 
     <div className="parallax-break hidden md:block" style={{ backgroundImage: "url('/images/parallax-lakefront.webp')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties} aria-hidden="true" />

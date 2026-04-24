@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ScrollReveal from "@/components/ScrollReveal";
+import { communityPages } from "@/data/communityData";
 import { formatPhoneNumber, getPhoneDigits, getTimestamp } from "@/lib/formUtils";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -771,23 +772,20 @@ const TestimonialsSection = () => {
    SECTION 6 — COMMUNITIES
    ───────────────────────────────────────────── */
 
-const communities = [
-  { name: "Barton Creek", descriptor: "Golf, privacy, Hill Country estates", image: "/static-assets/community-barton-creek.webp", slug: "barton-creek", priceFrom: "From $2M+" },
-  { name: "Lake Austin", descriptor: "Waterfront living at its finest", image: "/static-assets/community-lake-austin.webp", slug: "lake-austin", priceFrom: "From $3.5M+" },
-  { name: "Westlake Hills", descriptor: "Scenic bluffs, top-rated schools", image: "/static-assets/community-westlake-hills.webp", slug: "westlake-hills", priceFrom: "From $1.8M+" },
-  { name: "Tarrytown", descriptor: "Old Austin charm, central location", image: "/static-assets/community-tarrytown.webp", slug: "tarrytown", priceFrom: "From $1.5M+" },
-  { name: "Rollingwood", descriptor: "Intimate enclave near Zilker", image: "/static-assets/community-rollingwood.webp", slug: "rollingwood", priceFrom: "From $1.2M+" },
-  { name: "Spanish Oaks", descriptor: "Gated Hill Country luxury", image: "/static-assets/community-spanish-oaks.webp", slug: "spanish-oaks", priceFrom: "From $2.5M+" },
-  { name: "Dripping Springs", descriptor: "Hill Country acreage estates", image: "/static-assets/community-dripping-springs.webp", slug: "dripping-springs", priceFrom: "From $1M+" },
-  { name: "Travis Heights", descriptor: "South Congress character & charm", image: "/static-assets/community-travis-heights.webp", slug: "travis-heights", priceFrom: "From $1.2M+" },
-  { name: "Downtown Austin", descriptor: "Skyline residences & penthouses", image: "/static-assets/community-downtown.webp", slug: "downtown", priceFrom: "From $1M+" },
-];
+const communities = [...communityPages]
+  .sort((a, b) => a.name.localeCompare(b.name))
+  .map((community) => ({
+    name: community.name,
+    descriptor: community.metaDescription || community.overview?.slice(0, 80) || "Explore this Austin community",
+    image: community.image,
+    slug: community.slug,
+    priceFrom: community.priceRange,
+  }))
+  .filter((community) => Boolean(community.image));
 
-// Split 9 communities into 3 columns: left (4) + middle sticky (3) + right (4-ish)
-// Following the requested CSS-sticky gallery pattern.
-const leftCommunities = communities.slice(0, 3);
-const stickyCommunities = communities.slice(3, 6);
-const rightCommunities = communities.slice(6, 9);
+const leftCommunities = communities.filter((_, index) => index % 3 === 0);
+const stickyCommunities = communities.filter((_, index) => index % 3 === 1);
+const rightCommunities = communities.filter((_, index) => index % 3 === 2);
 
 const CommunityTile = ({ c, heightClass }: { c: typeof communities[number]; heightClass: string }) => (
   <Link
@@ -826,7 +824,7 @@ const CommunityTile = ({ c, heightClass }: { c: typeof communities[number]; heig
         {c.name}
       </h3>
       <p
-        className="line-clamp-1 hidden sm:block"
+        className="line-clamp-2 hidden sm:block"
         style={{
           fontFamily: '"Jost", sans-serif',
           fontSize: "10px",
@@ -855,32 +853,32 @@ const CommunitiesSection = () => {
             </h2>
           </div>
 
-          {/* Mobile: simple stacked grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:hidden">
             {communities.map((c) => (
               <CommunityTile key={c.slug} c={c} heightClass="h-[420px]" />
             ))}
           </div>
 
-          {/* Desktop: CSS-sticky gallery — left/right scroll, middle column sticks
-              Side columns are intentionally taller than the middle (h-screen) so
-              the middle column has real travel distance to "stick" against. */}
           <div className="hidden lg:grid grid-cols-12 gap-3 items-start">
             <div className="grid gap-3 col-span-4">
               {leftCommunities.map((c) => (
-                <CommunityTile key={c.slug} c={c} heightClass="h-[36rem]" />
+                <CommunityTile key={c.slug} c={c} heightClass="h-[32rem]" />
               ))}
             </div>
 
-            <div className="sticky top-20 h-[calc(100vh-6rem)] w-full col-span-4 gap-3 grid grid-rows-3 self-start">
-              {stickyCommunities.map((c) => (
-                <CommunityTile key={c.slug} c={c} heightClass="h-full" />
-              ))}
+            <div className="col-span-4 self-start">
+              <div className="sticky top-20 h-[calc(100vh-6rem)] overflow-hidden">
+                <div className="grid auto-rows-fr gap-3 h-full">
+                  {stickyCommunities.map((c) => (
+                    <CommunityTile key={c.slug} c={c} heightClass="min-h-[calc((100vh-8rem)/3)]" />
+                  ))}
+                </div>
+              </div>
             </div>
 
             <div className="grid gap-3 col-span-4">
               {rightCommunities.map((c) => (
-                <CommunityTile key={c.slug} c={c} heightClass="h-[36rem]" />
+                <CommunityTile key={c.slug} c={c} heightClass="h-[32rem]" />
               ))}
             </div>
           </div>
@@ -895,6 +893,7 @@ const CommunitiesSection = () => {
     </section>
   );
 };
+
 
 /* ─────────────────────────────────────────────
    SECTION 7 — INSIGHTS

@@ -8,6 +8,7 @@ import bartonCreekImage from "@/assets/barton-creek.jpg";
 import multifamilySAImage from "@/assets/private-sale-multifamily-sa.webp";
 import spanishOaksImage from "@/assets/spanish-oaks-private-sale.avif";
 import eastAustinImage from "@/assets/east-austin-commercial.jpg";
+import tarrytownImage from "@/assets/tarrytown-private-sale.webp";
 
 /* ------------------------------------------------------------------ */
 /*  DATA — Edit this array to add / remove / update private sales      */
@@ -38,6 +39,14 @@ export const privateSales: PrivateSaleItem[] = [
     area: "SPANISH OAKS",
     descriptor: "",
     label: "Represented Seller",
+  },
+  {
+    image: tarrytownImage,
+    price: "$6,995,000",
+    address: "Address Withheld",
+    area: "TARRYTOWN",
+    descriptor: "",
+    label: "Represented Buyer",
   },
   {
     image: southeastAustinImage,

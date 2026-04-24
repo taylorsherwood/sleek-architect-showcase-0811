@@ -10,6 +10,7 @@ import SchemaMarkup, {
 } from "@/components/SchemaMarkup";
 
 const HomeBelowFold = lazy(() => import("@/components/HomeBelowFold"));
+import AustinMarketExplorer from "@/components/AustinMarketExplorer";
 
 /* ─────────────────────────────────────────────
    SECTION 1 — HERO
@@ -325,9 +326,8 @@ const Index = () => (
 
     <Navigation />
     <Hero />
-    <div className="h-16 md:h-24" aria-hidden="true" style={{ background: "#FAFAF8" }} />
-    <SearchSection />
-    <div className="h-16 md:h-24" aria-hidden="true" style={{ background: "#F5F3EF" }} />
+    <AustinMarketExplorer />
+    <div className="h-12 md:h-16" aria-hidden="true" style={{ background: "hsl(var(--background))" }} />
 
     <Suspense fallback={<div className="min-h-[400px] bg-background" />}>
       <HomeBelowFold />

@@ -43,13 +43,11 @@ interface Props {
   formNode: ReactNode;
 }
 
-// Treat anything narrower than the desktop GSAP breakpoint (1024px) as the
-// stacked "compact" layout. The pinned cinematic sequence relies on real
-// desktop scroll + Lenis smooth-wheel handling and does not pin reliably on
-// tablet / touch viewports — collapsing those sections to 0px and skipping
-// the page from hero straight to the form. The compact layout is the same
-// static stacked version previously used for mobile only.
-const COMPACT_MAX_WIDTH = 1024;
+// Tablet (>=768px) and desktop both receive the full pinned cinematic
+// sequence. Only true mobile viewports fall back to the stacked compact
+// layout. Lenis + ScrollTrigger handle touch scrolling on tablets via
+// `syncTouch`, so the pinned sections animate identically to desktop.
+const COMPACT_MAX_WIDTH = 768;
 
 const useIsCompact = () => {
   const [isCompact, setIsCompact] = useState<boolean>(() => {

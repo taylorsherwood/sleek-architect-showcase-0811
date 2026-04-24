@@ -422,19 +422,6 @@ const AustinMarketExplorer = () => {
             ))}
           </div>
         )}
-
-
-          {/* Bottom progress rail */}
-          <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-white/10">
-            <div
-              className="h-full bg-gold"
-              style={{
-                width: `${((active + 1) / SCENES.length) * 100}%`,
-                transition: reducedMotion ? "none" : "width 500ms ease-out",
-              }}
-            />
-          </div>
-        </div>
       </div>
 
       {/* MOBILE — stacked step-by-step scenes.

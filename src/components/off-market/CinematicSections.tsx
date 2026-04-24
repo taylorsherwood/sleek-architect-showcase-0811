@@ -85,12 +85,12 @@ const CinematicSections = ({ formNode }: Props) => {
     if (reduceMotion) return;
 
     const lenis = new Lenis({
-      duration: 1.4,
+      duration: 1.2,
       easing: (t) => 1 - Math.pow(1 - t, 3),
       smoothWheel: true,
       wheelMultiplier: 1.0,
       touchMultiplier: 1.5,
-      lerp: 0.1,
+      lerp: 0.08,
       syncTouch: true,
       syncTouchLerp: 0.075,
       gestureOrientation: "vertical",
@@ -98,7 +98,7 @@ const CinematicSections = ({ formNode }: Props) => {
     lenisRef.current = lenis;
     (window as unknown as { __lenis?: Lenis }).__lenis = lenis;
 
-    lenis.on("scroll", () => ScrollTrigger.update());
+    lenis.on("scroll", ScrollTrigger.update);
 
     let rafId = 0;
     function raf(time: number) {
@@ -107,7 +107,8 @@ const CinematicSections = ({ formNode }: Props) => {
     }
     rafId = requestAnimationFrame(raf);
 
-    gsap.ticker.lagSmoothing(0);
+    // Re-enable lag smoothing so dropped frames don't jolt timelines
+    gsap.ticker.lagSmoothing(500, 33);
     ScrollTrigger.refresh();
 
     return () => {
@@ -139,12 +140,13 @@ const CinematicSections = ({ formNode }: Props) => {
           // Allocate scroll distance per word so the reveal fills the pin
           end: () => `+=${Math.max(words.length * 110, 800)}`,
           pin: true,
-          scrub: 2,
+          scrub: 0.6,
           anticipatePin: 1,
+          fastScrollEnd: true,
         },
       });
       words.forEach((w) => {
-        thesisTl.to(w, { opacity: 1, y: 0, ease: "power3.out", duration: 1 });
+        thesisTl.to(w, { opacity: 1, y: 0, ease: "power3.out", duration: 1, force3D: true });
       });
       // Hold the final state briefly before releasing the pin
       thesisTl.to({}, { duration: 0.3 });
@@ -164,23 +166,24 @@ const CinematicSections = ({ formNode }: Props) => {
           end: "+=160%",
           pin: true,
           pinSpacing: true,
-          scrub: 2,
+          scrub: 0.8,
           anticipatePin: 1,
+          fastScrollEnd: true,
         },
       });
 
       splitTl
         // Phase 1 — lock & settle
-        .to(".split-cover-image", { scale: 1, ease: "none", duration: 0.45 }, 0)
+        .to(".split-cover-image", { scale: 1, ease: "none", duration: 0.45, force3D: true }, 0)
         // Phase 2 — elegant split
         .to(
           ".split-top-half",
-          { yPercent: -100, ease: "power2.inOut", duration: 0.4 },
+          { yPercent: -100, ease: "power2.inOut", duration: 0.4, force3D: true },
           0.45
         )
         .to(
           ".split-bottom-half",
-          { yPercent: 100, ease: "power2.inOut", duration: 0.4 },
+          { yPercent: 100, ease: "power2.inOut", duration: 0.4, force3D: true },
           0.45
         )
         // Hold the open state briefly before unpin
@@ -195,10 +198,11 @@ const CinematicSections = ({ formNode }: Props) => {
           trigger: ".drone-section",
           start: "top top",
           end: "+=70%",
-          scrub: 1,
+          scrub: 0.6,
           pin: true,
           pinSpacing: true,
           anticipatePin: 1,
+          fastScrollEnd: true,
         },
       });
       droneTl.to(droneEls, {
@@ -206,6 +210,7 @@ const CinematicSections = ({ formNode }: Props) => {
         y: 0,
         ease: "power2.out",
         stagger: 0.4,
+        force3D: true,
       });
 
       // ── Section 3: Parallax Image Reveal — REMOVED
@@ -216,16 +221,17 @@ const CinematicSections = ({ formNode }: Props) => {
           trigger: ".bridge-section",
           start: "top top",
           end: "+=80%",
-          scrub: 1,
+          scrub: 0.6,
           pin: true,
           pinSpacing: true,
           anticipatePin: 1,
+          fastScrollEnd: true,
         },
       });
       bridgeTl
-        .fromTo(".bridge-image", { yPercent: -8, scale: 1.08 }, { yPercent: 8, scale: 1, ease: "none" }, 0)
-        .fromTo(".bridge-eyebrow", { opacity: 0, y: 20 }, { opacity: 1, y: 0, ease: "power2.out", duration: 0.4 }, 0.15)
-        .fromTo(".bridge-headline", { opacity: 0, y: 50 }, { opacity: 1, y: 0, ease: "power2.out", duration: 0.6 }, 0.25)
+        .fromTo(".bridge-image", { yPercent: -8, scale: 1.08 }, { yPercent: 8, scale: 1, ease: "none", force3D: true }, 0)
+        .fromTo(".bridge-eyebrow", { opacity: 0, y: 20 }, { opacity: 1, y: 0, ease: "power2.out", duration: 0.4, force3D: true }, 0.15)
+        .fromTo(".bridge-headline", { opacity: 0, y: 50 }, { opacity: 1, y: 0, ease: "power2.out", duration: 0.6, force3D: true }, 0.25)
         .fromTo(".bridge-rule", { width: 0, opacity: 0 }, { width: 120, opacity: 1, ease: "power2.out", duration: 0.5 }, 0.5)
         .to({}, { duration: 0.3 });
 
@@ -247,25 +253,28 @@ const CinematicSections = ({ formNode }: Props) => {
             trigger: ".horizontal-section",
             start: "top bottom",
             end: "top top",
-            scrub: 1.2,
+            scrub: 0.6,
           },
         });
         galleryReveal
-          .to(".horizontal-track", { yPercent: 0, ease: "none" }, 0)
-          .to(".horizontal-card.is-first .horizontal-card-image img", { scale: 1, ease: "none" }, 0)
-          .to(".horizontal-card.is-first .card-content", { opacity: 1, y: 0, ease: "none" }, 0.4);
+          .to(".horizontal-track", { yPercent: 0, ease: "none", force3D: true }, 0)
+          .to(".horizontal-card.is-first .horizontal-card-image img", { scale: 1, ease: "none", force3D: true }, 0)
+          .to(".horizontal-card.is-first .card-content", { opacity: 1, y: 0, ease: "none", force3D: true }, 0.4);
 
         // Horizontal scroll pin
         const horizontalTween = gsap.to(horizontalTrack, {
           x: () => -getTotalScroll(),
           ease: "none",
+          force3D: true,
           scrollTrigger: {
             trigger: ".horizontal-section",
             start: "top top",
             end: () => `+=${getTotalScroll()}`,
             pin: true,
             pinSpacing: true,
-            scrub: 2.5,
+            scrub: 1,
+            fastScrollEnd: true,
+            anticipatePin: 1,
           },
         });
 
@@ -281,12 +290,13 @@ const CinematicSections = ({ formNode }: Props) => {
             {
               xPercent: 3,
               ease: "none",
+              force3D: true,
               scrollTrigger: {
                 trigger: img.parentElement!,
                 containerAnimation: horizontalTween,
                 start: "left right",
                 end: "right left",
-                scrub: 1,
+                scrub: 0.6,
               },
             }
           );

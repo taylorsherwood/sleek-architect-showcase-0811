@@ -2,6 +2,7 @@ import { useEffect, useRef, useState, type ReactNode } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Lenis from "lenis";
+import StackingCommunityCards from "./StackingCommunityCards";
 
 import westlakeDusk from "@/assets/community-westlake-hills-hero.webp";
 import privateInventoryHero from "@/assets/hero-luxury-austin.webp";
@@ -258,26 +259,7 @@ const CinematicSections = ({ formNode }: Props) => {
         .fromTo(".bridge-rule", { width: 0, opacity: 0 }, { width: 120, opacity: 1, ease: "power2.out", duration: 0.5 }, 0.5)
         .to({}, { duration: 0.3 });
 
-      // ── Section 4: Stacking Cards Gallery
-      // Sticky-pinned cards that scale down as the next card stacks on top.
-      // Animation is per-card, scrubbed to scroll position of its own wrapper.
-      const stackCards = gsap.utils.toArray<HTMLDivElement>(".stack-card");
-      stackCards.forEach((card, i) => {
-        if (i === stackCards.length - 1) return; // last card stays full size
-        const targetScale = 1 - (stackCards.length - i) * 0.04;
-        gsap.to(card, {
-          scale: targetScale,
-          ease: "none",
-          force3D: true,
-          scrollTrigger: {
-            trigger: card.parentElement!,
-            start: "top top",
-            endTrigger: stackCards[stackCards.length - 1].parentElement!,
-            end: "top top",
-            scrub: 0.6,
-          },
-        });
-      });
+      // ── Section 4: Stacking Cards Gallery (handled by StackingCommunityCards using motion)
 
       // ── Section 5: Counter — REMOVED
 
@@ -634,53 +616,8 @@ const CinematicSections = ({ formNode }: Props) => {
         </div>
       </section>
 
-      {/* ── Section 4: Stacking Cards Gallery ─ */}
-      <section className="stacking-section relative w-full bg-[hsl(220,15%,6%)]">
-        {NEIGHBORHOODS.map((n, idx) => (
-          <div
-            key={n.name}
-            className="stack-wrapper h-screen flex items-center justify-center sticky top-0"
-          >
-            <div
-              className="stack-card relative overflow-hidden rounded-md will-change-transform"
-              style={{
-                top: `calc(-5vh + ${idx * 28}px)`,
-                width: "min(82vw, 1200px)",
-                height: "min(72vh, 640px)",
-                backgroundColor: "#0C0F24",
-                transformOrigin: "top center",
-                boxShadow: "0 30px 80px rgba(0,0,0,0.45)",
-              }}
-            >
-              <img
-                src={n.image}
-                alt={`${n.name} luxury Austin neighborhood`}
-                className="absolute inset-0 w-full h-full object-cover"
-                decoding="async"
-              />
-              <div
-                className="absolute inset-0 pointer-events-none"
-                style={{
-                  background:
-                    "linear-gradient(to top, rgba(12,15,36,0.88) 0%, rgba(12,15,36,0.25) 45%, rgba(12,15,36,0) 70%)",
-                }}
-              />
-              <div className="absolute inset-x-0 bottom-0 p-10 lg:p-14 text-center">
-                <h3
-                  className="font-display font-light leading-[1]"
-                  style={{
-                    color: "#b9a06c",
-                    fontSize: "clamp(2.25rem, 4.5vw, 4.25rem)",
-                    letterSpacing: "0.02em",
-                  }}
-                >
-                  {n.name}
-                </h3>
-              </div>
-            </div>
-          </div>
-        ))}
-      </section>
+      {/* ── Section 4: Stacking Cards Gallery (motion-driven) ─ */}
+      <StackingCommunityCards />
 
       {/* ── Section 6: Vertical Split-Reveal Testimonial ─ */}
       <section className="testimonial-section relative w-full h-screen bg-[hsl(220,15%,6%)] overflow-hidden">

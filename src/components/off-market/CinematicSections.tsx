@@ -639,7 +639,7 @@ const CinematicSections = ({ formNode }: Props) => {
         {NEIGHBORHOODS.map((n, idx) => (
           <div
             key={n.name}
-            className="stack-wrapper relative h-screen flex items-center justify-center"
+            className="stack-wrapper h-screen flex items-center justify-center sticky top-0"
           >
             <div
               className="stack-card relative overflow-hidden rounded-md will-change-transform"

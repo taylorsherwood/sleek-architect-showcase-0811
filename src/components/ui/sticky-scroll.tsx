@@ -49,13 +49,6 @@ const communities = FEATURED_SLUGS
 
 type Item = (typeof communities)[number];
 
-// Distribute communities across three uniform columns (round-robin so
-// each column has roughly the same number of tiles and the section
-// ends at the same baseline).
-const left = communities.filter((_, i) => i % 3 === 0);
-const middle = communities.filter((_, i) => i % 3 === 1);
-const right = communities.filter((_, i) => i % 3 === 2);
-
 const PriceBadge = ({ price }: { price: string }) =>
   price ? (
     <span
@@ -144,7 +137,7 @@ export default function StickyScroll() {
       <div
         style={{
           textAlign: 'center',
-          padding: 'clamp(64px, 8vw, 110px) 24px clamp(40px, 5vw, 64px)',
+          padding: 'clamp(56px, 6vw, 88px) 24px clamp(28px, 3vw, 44px)',
         }}
       >
         <p
@@ -165,7 +158,7 @@ export default function StickyScroll() {
             fontFamily: 'Cinzel, serif',
             fontWeight: 400,
             color: 'white',
-            fontSize: 'clamp(28px, 3.4vw, 48px)',
+            fontSize: 'clamp(26px, 2.8vw, 40px)',
             letterSpacing: '0.02em',
             lineHeight: 1.15,
             margin: 0,
@@ -177,32 +170,17 @@ export default function StickyScroll() {
 
       <div
         style={{
+          maxWidth: '1320px',
+          margin: '0 auto',
+          padding: '0 24px clamp(64px, 7vw, 104px)',
           display: 'grid',
-          gridTemplateColumns: 'repeat(12, minmax(0, 1fr))',
-          gap: '8px',
-          padding: '8px',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
+          gap: '14px',
         }}
       >
-        {/* LEFT — scrolls */}
-        <div style={{ gridColumn: 'span 4 / span 4', display: 'grid', gap: '8px' }}>
-          {left.map((c) => (
-            <Tile key={c.slug} item={c} />
-          ))}
-        </div>
-
-        {/* CENTER */}
-        <div style={{ gridColumn: 'span 4 / span 4', display: 'grid', gap: '8px' }}>
-          {middle.map((c) => (
-            <Tile key={c.slug} item={c} />
-          ))}
-        </div>
-
-        {/* RIGHT — scrolls */}
-        <div style={{ gridColumn: 'span 4 / span 4', display: 'grid', gap: '8px' }}>
-          {right.map((c) => (
-            <Tile key={c.slug} item={c} />
-          ))}
-        </div>
+        {communities.map((c) => (
+          <Tile key={c.slug} item={c} />
+        ))}
       </div>
     </section>
   );

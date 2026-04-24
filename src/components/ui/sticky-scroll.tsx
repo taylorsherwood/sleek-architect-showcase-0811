@@ -84,11 +84,24 @@ const Column = ({
 );
 
 export default function StickyScroll() {
-  const wrapperRef = useRef<HTMLDivElement>(null);
+  const wrapperRef = useRef<HTMLElement>(null);
+  const viewportRef = useRef<HTMLDivElement>(null);
+  const colARef = useRef<HTMLDivElement>(null);
+  const colBRef = useRef<HTMLDivElement>(null);
+  const colCRef = useRef<HTMLDivElement>(null);
   const [progress, setProgress] = useState(0); // 0..1 across the pinned section
+  const [travel, setTravel] = useState({ a: 0, b: 0, c: 0 });
 
   useEffect(() => {
     let raf = 0;
+    const measure = () => {
+      const viewportHeight = viewportRef.current?.offsetHeight ?? window.innerHeight;
+      setTravel({
+        a: Math.max((colARef.current?.scrollHeight ?? 0) - viewportHeight, 0),
+        b: Math.max((colBRef.current?.scrollHeight ?? 0) - viewportHeight, 0),
+        c: Math.max((colCRef.current?.scrollHeight ?? 0) - viewportHeight, 0),
+      });
+    };
     const update = () => {
       raf = 0;
       const el = wrapperRef.current;
@@ -104,21 +117,33 @@ export default function StickyScroll() {
     const onScroll = () => {
       if (!raf) raf = requestAnimationFrame(update);
     };
+    const resizeObserver = new ResizeObserver(() => {
+      measure();
+      update();
+    });
+
+    if (viewportRef.current) resizeObserver.observe(viewportRef.current);
+    if (colARef.current) resizeObserver.observe(colARef.current);
+    if (colBRef.current) resizeObserver.observe(colBRef.current);
+    if (colCRef.current) resizeObserver.observe(colCRef.current);
+
+    measure();
     update();
     window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', measure);
     window.addEventListener('resize', update);
     return () => {
       window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', measure);
       window.removeEventListener('resize', update);
+      resizeObserver.disconnect();
       if (raf) cancelAnimationFrame(raf);
     };
   }, []);
 
-  // Each column travels a different distance for a parallax feel.
-  // Negative = moves up as user scrolls down.
-  const yA = -progress * 600; // slow
-  const yB = -progress * 1100; // fast
-  const yC = -progress * 750; // medium
+  const yA = -(travel.a * (0.04 + progress * 0.56));
+  const yB = -(travel.b * (0.12 + progress * 0.78));
+  const yC = -(travel.c * (0.08 + progress * 0.64));
 
   return (
     <section
@@ -127,10 +152,11 @@ export default function StickyScroll() {
       style={{
         position: 'relative',
         backgroundColor: '#0C0F24',
-        height: '200vh', // gives us 100vh of scroll-driven animation
+        height: '165vh',
       }}
     >
       <div
+        ref={viewportRef}
         style={{
           position: 'sticky',
           top: 0,
@@ -147,13 +173,13 @@ export default function StickyScroll() {
             display: 'grid',
             gridTemplateColumns: 'repeat(3, minmax(0, 1fr))',
             gap: '12px',
-            padding: '0 12px',
+            padding: '2vh 12px',
             alignItems: 'start',
           }}
         >
-          <Column items={colA} translateY={yA} />
-          <Column items={colB} translateY={yB} />
-          <Column items={colC} translateY={yC} />
+          <div ref={colARef}><Column items={colA} translateY={yA} /></div>
+          <div ref={colBRef}><Column items={colB} translateY={yB} /></div>
+          <div ref={colCRef}><Column items={colC} translateY={yC} /></div>
         </div>
       </div>
     </section>

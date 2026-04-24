@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ScrollReveal from "@/components/ScrollReveal";
-import { communityPages } from "@/data/communityData";
 import { formatPhoneNumber, getPhoneDigits, getTimestamp } from "@/lib/formUtils";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -11,7 +10,6 @@ gsap.registerPlugin(ScrollTrigger);
 const ScrollingCredibilityStrip = lazy(() => import("@/components/ScrollingCredibilityStrip"));
 const ExpertiseSection = lazy(() => import("@/components/ExpertiseSection"));
 const FeaturedCommunities = lazy(() => import("@/components/FeaturedCommunities"));
-
 
 // Dynamic image imports — only loaded when this chunk is loaded
 import taylorBoatImg from "@/assets/taylor-headshot.webp";
@@ -578,8 +576,8 @@ const TestimonialsSection = () => {
         className="tsplit-section hidden md:block relative w-full h-screen bg-secondary overflow-hidden"
         aria-label="Client experiences"
       >
-        <div className="absolute inset-0 z-0 flex items-center px-8 md:px-16 lg:px-24">
-          <div className="md:ml-[58%] lg:ml-[60%] max-w-xl md:pl-4 lg:pl-8" style={{ paddingTop: "clamp(40px, 7vh, 96px)" }}>
+        <div className="absolute inset-0 z-0 flex items-center justify-end px-8 md:px-16 lg:px-24">
+          <div className="max-w-xl md:w-1/2 md:pl-8" style={{ paddingTop: "clamp(40px, 7vh, 96px)" }}>
             <p
               className="tsplit-attribution text-gold mb-6 font-sans uppercase will-change-transform"
               style={{ fontSize: "0.72rem", letterSpacing: "0.28em", paddingLeft: "1.6ch", opacity: 0 }}
@@ -772,6 +770,91 @@ const TestimonialsSection = () => {
 /* ─────────────────────────────────────────────
    SECTION 6 — COMMUNITIES
    ───────────────────────────────────────────── */
+
+const communities = [
+  { name: "Barton Creek", descriptor: "Golf, privacy, Hill Country estates", image: "/static-assets/community-barton-creek.webp", slug: "barton-creek", priceFrom: "From $2M+" },
+  { name: "Lake Austin", descriptor: "Waterfront living at its finest", image: "/static-assets/community-lake-austin.webp", slug: "lake-austin", priceFrom: "From $3.5M+" },
+  { name: "Rollingwood", descriptor: "Intimate enclave near Zilker", image: "/static-assets/community-rollingwood.webp", slug: "rollingwood", priceFrom: "From $1.2M+" },
+  { name: "Spanish Oaks", descriptor: "Gated Hill Country luxury", image: "/static-assets/community-spanish-oaks.webp", slug: "spanish-oaks", priceFrom: "From $2.5M+" },
+  { name: "Tarrytown", descriptor: "Old Austin charm, central location", image: "/static-assets/community-tarrytown.webp", slug: "tarrytown", priceFrom: "From $1.5M+" },
+  { name: "Westlake Hills", descriptor: "Scenic bluffs, top-rated schools", image: "/static-assets/community-westlake-hills.webp", slug: "westlake-hills", priceFrom: "From $1.8M+" },
+];
+
+const CommunitiesSection = () => (
+  <section className="bg-background" style={{ padding: "clamp(16px, 2.5vw, 32px) 0 clamp(64px, 10vw, 120px)" }}>
+    <div className="container mx-auto px-6">
+      <div className="max-w-[1320px] mx-auto">
+        <ScrollReveal>
+          <div className="text-center mb-16">
+            <div className="w-10 h-px mx-auto mb-5" style={{ background: "hsl(38 39% 61%)" }} />
+            <p className="text-minimal text-gold mb-5">SELECT COMMUNITIES</p>
+            <h2 className="font-display text-3xl md:text-[2.75rem] font-normal text-foreground/90 leading-[1.1] tracking-[0.03em]">
+              Explore Austin's Most Sought-After Communities
+            </h2>
+          </div>
+        </ScrollReveal>
+
+        <ScrollReveal delay={120} stagger={60}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-5 lg:gap-4">
+            {communities.map((c) => (
+              <Link key={c.slug} to={`/communities/${c.slug}`} className="group relative overflow-hidden aspect-[3/4] sm:aspect-[3/4] lg:aspect-[4/3] transition-shadow duration-[500ms] hover:shadow-[0_12px_30px_-8px_hsl(var(--foreground)/0.1)]">
+                <img src={c.image} alt={`Luxury homes in ${c.name}, Austin`}
+                  className="community-tile-img absolute inset-0 w-full h-full object-cover transition-transform duration-[800ms]"
+                  style={{ transitionTimingFunction: "cubic-bezier(0.25, 0.46, 0.45, 0.94)" }}
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  loading="lazy" decoding="async" />
+
+                <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 sm:from-foreground/65 via-foreground/20 sm:via-foreground/15 via-[45%] to-transparent transition-opacity duration-500 group-hover:opacity-0" />
+
+                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                  <span style={{
+                    fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em",
+                    textTransform: "uppercase", color: "hsl(38 39% 61%)", fontWeight: 400,
+                  }}>
+                    Explore →
+                  </span>
+                </div>
+
+                <div className="absolute top-3 right-3 sm:top-4 sm:right-4 z-10" style={{
+                  background: "rgba(12,15,36,0.8)", border: "1px solid hsl(38 39% 61%)",
+                }}>
+                  <span className="block px-2 py-[3px] sm:px-2 sm:py-[2px] lg:px-[10px] lg:py-1" style={{
+                    fontFamily: '"Jost", sans-serif', letterSpacing: "0.12em",
+                    color: "hsl(38 39% 61%)",
+                    fontSize: "clamp(8px, 1.8vw, 10px)",
+                  }}>
+                    {c.priceFrom}
+                  </span>
+                </div>
+
+                <div className="absolute bottom-6 left-5 right-5 sm:bottom-5 z-10 group-hover:opacity-0 transition-opacity duration-500">
+                  <h3 className="font-display text-base sm:text-[1.05rem] lg:text-xl font-medium tracking-[0.03em] leading-[1.1] drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)] mb-2 sm:mb-1.5" style={{ color: "#F5F3EF" }}>
+                    {c.name}
+                  </h3>
+                  <p className="line-clamp-1 hidden sm:block" style={{
+                    fontFamily: '"Jost", sans-serif', fontSize: "10px", fontWeight: 300,
+                    letterSpacing: "0.08em", textTransform: "uppercase",
+                    color: "rgba(250,250,248,0.72)",
+                  }}>
+                    {c.descriptor}
+                  </p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </ScrollReveal>
+
+        <ScrollReveal delay={200}>
+          <div className="text-center mt-16">
+            <Link to="/communities" className="cta-luxury">
+              VIEW ALL COMMUNITIES
+            </Link>
+          </div>
+        </ScrollReveal>
+      </div>
+    </div>
+  </section>
+);
 
 /* ─────────────────────────────────────────────
    SECTION 7 — INSIGHTS
@@ -1174,6 +1257,8 @@ const HomeBelowFold = () => (
     <FeaturedProperties />
 
     <NoscriptFallback />
+
+    <CommunitiesSection />
 
     <TestimonialsSection />
     <div className="h-8 md:h-12 bg-secondary" aria-hidden="true" />

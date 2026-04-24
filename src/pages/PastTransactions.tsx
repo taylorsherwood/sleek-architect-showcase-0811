@@ -68,7 +68,7 @@ const PastTransactions = () => {
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0A0E19]/60 via-[#0A0E19]/30 to-transparent" style={{ width: '60%' }} />
         </div>
-        <div className="relative container mx-auto px-6 pt-24 md:pt-32 lg:pt-36">
+        <div className="relative container mx-auto px-6 pt-12 md:pt-16 lg:pt-20">
           <div className="max-w-xl">
             <p className="text-minimal text-gold mb-4">PAST TRANSACTIONS</p>
             <h1 className="text-[1.75rem] sm:text-[2.25rem] md:text-[2.85rem] lg:text-[3.25rem] font-display font-normal text-primary-foreground leading-[1.1] mb-5">

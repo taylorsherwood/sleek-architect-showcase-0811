@@ -149,34 +149,38 @@ const CommunitiesPreview = () => {
               </div>
             </Link>
 
-            {/* Secondary — 5 tiles in 5-col grid area, 2 rows */}
-            {secondary.map((c) => (
-              <Link
-                key={c.slug}
-                to={`/communities/${c.slug}`}
-                className="community-pin-tile group relative overflow-hidden md:col-span-5 lg:col-span-5 aspect-[3/2] md:aspect-auto md:min-h-[180px]"
-              >
-                <img
-                  src={c.image}
-                  alt={`Luxury homes in ${c.name}, Austin Texas`}
-                  className="community-tile-img absolute inset-0 w-full h-full object-cover"
-                  sizes="(max-width: 768px) 50vw, 42vw"
-                  loading="lazy"
-                  decoding="async"
-                  width={800}
-                  height={533}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-foreground/75 via-foreground/25 via-[40%] to-transparent" />
-                <div className="absolute bottom-5 left-5 right-5">
-                  <h3 className="text-warm-cream font-display text-lg md:text-xl mb-1 font-medium tracking-[0.03em] leading-[1.1] drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)]">
-                    {c.name}
-                  </h3>
-                  <p className="text-warm-cream/65 text-[0.55rem] font-normal tracking-[0.07em] uppercase drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
-                    {c.descriptor}
-                  </p>
-                </div>
-              </Link>
-            ))}
+            {/* Secondary — 5 tiles arranged 2×3 next to hero (5 of 12 cols, 3 rows) */}
+            <div className="md:col-span-5 md:row-span-3 grid grid-cols-2 md:grid-cols-2 md:grid-rows-3 gap-[6px]">
+              {secondary.map((c, idx) => (
+                <Link
+                  key={c.slug}
+                  to={`/communities/${c.slug}`}
+                  className={`community-pin-tile group relative overflow-hidden aspect-[3/2] md:aspect-auto md:min-h-[180px] ${
+                    idx === 4 ? "col-span-2" : ""
+                  }`}
+                >
+                  <img
+                    src={c.image}
+                    alt={`Luxury homes in ${c.name}, Austin Texas`}
+                    className="community-tile-img absolute inset-0 w-full h-full object-cover"
+                    sizes="(max-width: 768px) 50vw, 21vw"
+                    loading="lazy"
+                    decoding="async"
+                    width={800}
+                    height={533}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-foreground/75 via-foreground/25 via-[40%] to-transparent" />
+                  <div className="absolute bottom-5 left-5 right-5">
+                    <h3 className="text-warm-cream font-display text-lg md:text-xl mb-1 font-medium tracking-[0.03em] leading-[1.1] drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)]">
+                      {c.name}
+                    </h3>
+                    <p className="text-warm-cream/65 text-[0.55rem] font-normal tracking-[0.07em] uppercase drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
+                      {c.descriptor}
+                    </p>
+                  </div>
+                </Link>
+              ))}
+            </div>
           </div>
           </ScrollReveal>
 

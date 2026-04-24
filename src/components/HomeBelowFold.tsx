@@ -783,65 +783,69 @@ const communities = [
   { name: "Downtown Austin", descriptor: "Skyline residences & penthouses", image: "/static-assets/community-downtown.webp", slug: "downtown", priceFrom: "From $1M+" },
 ];
 
+// Split 9 communities into 3 columns: left (4) + middle sticky (3) + right (4-ish)
+// Following the requested CSS-sticky gallery pattern.
+const leftCommunities = communities.slice(0, 3);
+const stickyCommunities = communities.slice(3, 6);
+const rightCommunities = communities.slice(6, 9);
+
+const CommunityTile = ({ c, heightClass }: { c: typeof communities[number]; heightClass: string }) => (
+  <Link
+    to={`/communities/${c.slug}`}
+    className={`group relative block overflow-hidden w-full ${heightClass}`}
+  >
+    <img
+      src={c.image}
+      alt={`Luxury homes in ${c.name}, Austin`}
+      className="absolute inset-0 w-full h-full object-cover align-bottom"
+      loading="lazy"
+      decoding="async"
+    />
+    <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/20 via-[45%] to-transparent" />
+    <div
+      className="absolute top-3 right-3 sm:top-4 sm:right-4 z-10"
+      style={{ background: "rgba(12,15,36,0.8)", border: "1px solid hsl(38 39% 61%)" }}
+    >
+      <span
+        className="block px-2 py-[3px] sm:px-2 sm:py-[2px] lg:px-[10px] lg:py-1"
+        style={{
+          fontFamily: '"Jost", sans-serif',
+          letterSpacing: "0.12em",
+          color: "hsl(38 39% 61%)",
+          fontSize: "clamp(8px, 1.8vw, 10px)",
+        }}
+      >
+        {c.priceFrom}
+      </span>
+    </div>
+    <div className="absolute bottom-6 left-5 right-5 sm:bottom-5 z-10">
+      <h3
+        className="font-display text-base sm:text-[1.05rem] lg:text-xl font-medium tracking-[0.03em] leading-[1.1] drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)] mb-2 sm:mb-1.5"
+        style={{ color: "#F5F3EF" }}
+      >
+        {c.name}
+      </h3>
+      <p
+        className="line-clamp-1 hidden sm:block"
+        style={{
+          fontFamily: '"Jost", sans-serif',
+          fontSize: "10px",
+          fontWeight: 300,
+          letterSpacing: "0.08em",
+          textTransform: "uppercase",
+          color: "rgba(250,250,248,0.72)",
+        }}
+      >
+        {c.descriptor}
+      </p>
+    </div>
+  </Link>
+);
+
 const CommunitiesSection = () => {
-  const sectionRef = useRef<HTMLElement>(null);
-  const innerRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-    if (window.matchMedia("(max-width: 767px)").matches) return;
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-
-    const ctx = gsap.context(() => {
-      const tiles = gsap.utils.toArray<HTMLElement>(".community-pin-tile");
-
-      // Pin the section briefly while tiles parallax-reveal in
-      gsap.fromTo(
-        tiles,
-        { y: 50, opacity: 0.55 },
-        {
-          y: 0,
-          opacity: 1,
-          ease: "none",
-          stagger: 0.05,
-          scrollTrigger: {
-            trigger: sectionRef.current,
-            start: "top top+=40",
-            end: "+=85%",
-            scrub: 0.6,
-            pin: innerRef.current,
-            pinSpacing: true,
-          },
-        }
-      );
-
-      // Subtle image scale during pin
-      tiles.forEach((tile) => {
-        const img = tile.querySelector("img");
-        if (!img) return;
-        gsap.fromTo(
-          img,
-          { scale: 1.06 },
-          {
-            scale: 1,
-            ease: "none",
-            scrollTrigger: {
-              trigger: sectionRef.current,
-              start: "top top+=40",
-              end: "+=85%",
-              scrub: 0.6,
-            },
-          }
-        );
-      });
-    }, sectionRef);
-
-    return () => ctx.revert();
-  }, []);
-
   return (
-    <section ref={sectionRef} className="bg-background" style={{ padding: "clamp(16px, 2.5vw, 32px) 0 clamp(64px, 10vw, 120px)" }}>
-      <div ref={innerRef} className="container mx-auto px-6">
+    <section className="bg-background" style={{ padding: "clamp(16px, 2.5vw, 32px) 0 clamp(64px, 10vw, 120px)" }}>
+      <div className="container mx-auto px-6">
         <div className="max-w-[1320px] mx-auto">
           <div className="text-center mb-16">
             <div className="w-10 h-px mx-auto mb-5" style={{ background: "hsl(38 39% 61%)" }} />
@@ -851,42 +855,32 @@ const CommunitiesSection = () => {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-5 lg:gap-4">
+          {/* Mobile: simple stacked grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:hidden">
             {communities.map((c) => (
-              <Link key={c.slug} to={`/communities/${c.slug}`} className="community-pin-tile group relative overflow-hidden aspect-[3/4] sm:aspect-[3/4] lg:aspect-[4/3]">
-                <img src={c.image} alt={`Luxury homes in ${c.name}, Austin`}
-                  className="community-tile-img absolute inset-0 w-full h-full object-cover"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  loading="lazy" decoding="async" />
-
-                <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 sm:from-foreground/65 via-foreground/20 sm:via-foreground/15 via-[45%] to-transparent" />
-
-                <div className="absolute top-3 right-3 sm:top-4 sm:right-4 z-10" style={{
-                  background: "rgba(12,15,36,0.8)", border: "1px solid hsl(38 39% 61%)",
-                }}>
-                  <span className="block px-2 py-[3px] sm:px-2 sm:py-[2px] lg:px-[10px] lg:py-1" style={{
-                    fontFamily: '"Jost", sans-serif', letterSpacing: "0.12em",
-                    color: "hsl(38 39% 61%)",
-                    fontSize: "clamp(8px, 1.8vw, 10px)",
-                  }}>
-                    {c.priceFrom}
-                  </span>
-                </div>
-
-                <div className="absolute bottom-6 left-5 right-5 sm:bottom-5 z-10">
-                  <h3 className="font-display text-base sm:text-[1.05rem] lg:text-xl font-medium tracking-[0.03em] leading-[1.1] drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)] mb-2 sm:mb-1.5" style={{ color: "#F5F3EF" }}>
-                    {c.name}
-                  </h3>
-                  <p className="line-clamp-1 hidden sm:block" style={{
-                    fontFamily: '"Jost", sans-serif', fontSize: "10px", fontWeight: 300,
-                    letterSpacing: "0.08em", textTransform: "uppercase",
-                    color: "rgba(250,250,248,0.72)",
-                  }}>
-                    {c.descriptor}
-                  </p>
-                </div>
-              </Link>
+              <CommunityTile key={c.slug} c={c} heightClass="h-[420px]" />
             ))}
+          </div>
+
+          {/* Desktop: CSS-sticky gallery — left/right scroll, middle column sticks */}
+          <div className="hidden lg:grid grid-cols-12 gap-3">
+            <div className="grid gap-3 col-span-4">
+              {leftCommunities.map((c) => (
+                <CommunityTile key={c.slug} c={c} heightClass="h-[28rem]" />
+              ))}
+            </div>
+
+            <div className="sticky top-0 h-screen w-full col-span-4 gap-3 grid grid-rows-3">
+              {stickyCommunities.map((c) => (
+                <CommunityTile key={c.slug} c={c} heightClass="h-full" />
+              ))}
+            </div>
+
+            <div className="grid gap-3 col-span-4">
+              {rightCommunities.map((c) => (
+                <CommunityTile key={c.slug} c={c} heightClass="h-[28rem]" />
+              ))}
+            </div>
           </div>
 
           <div className="text-center mt-16">

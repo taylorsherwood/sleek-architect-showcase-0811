@@ -772,35 +772,47 @@ const TestimonialsSection = () => {
    SECTION 6 — COMMUNITIES
    ───────────────────────────────────────────── */
 
-const communities = [...communityPages]
-  .sort((a, b) => a.name.localeCompare(b.name))
+// Curated set of marquee communities (kept tight for a clean sticky-scroll experience).
+// Order matters — first item leads the left column, others distribute outward.
+const FEATURED_COMMUNITY_SLUGS = [
+  "westlake-hills",
+  "barton-creek",
+  "tarrytown",
+  "rollingwood",
+  "lake-austin",
+  "spanish-oaks",
+  "rob-roy",
+  "downtown-austin",
+  "clarksville",
+  "pemberton-heights",
+  "lake-travis",
+  "zilker",
+] as const;
+
+const communityBySlug = new Map(communityPages.map((c) => [c.slug, c]));
+
+const communities = FEATURED_COMMUNITY_SLUGS
+  .map((slug) => communityBySlug.get(slug))
+  .filter((community): community is (typeof communityPages)[number] => Boolean(community?.image))
   .map((community) => ({
     name: community.name,
-    descriptor: community.metaDescription || community.overview?.slice(0, 80) || "Explore this Austin community",
+    descriptor:
+      community.metaDescription ||
+      community.overview?.slice(0, 80) ||
+      "Explore this Austin community",
     image: community.image,
     slug: community.slug,
     priceFrom: community.priceRange,
-  }))
-  .filter((community) => Boolean(community.image));
+  }));
 
-const stickyCommunityIndexes = Array.from(
-  new Set(
-    [0.2, 0.5, 0.8].map((ratio) =>
-      Math.min(communities.length - 1, Math.floor((communities.length - 1) * ratio)),
-    ),
-  ),
+// Distribute into a 4 / 3-sticky / 4 layout. Equal side-column counts give
+// the center column even scroll travel on both entry and exit.
+const stickyCount = Math.min(3, communities.length);
+const stickyStart = Math.floor((communities.length - stickyCount) / 2);
+const stickyCommunities = communities.slice(stickyStart, stickyStart + stickyCount);
+const sideCommunities = communities.filter(
+  (_, index) => index < stickyStart || index >= stickyStart + stickyCount,
 );
-
-while (stickyCommunityIndexes.length < Math.min(3, communities.length)) {
-  const fallbackIndex = stickyCommunityIndexes.length;
-  if (!stickyCommunityIndexes.includes(fallbackIndex)) {
-    stickyCommunityIndexes.push(fallbackIndex);
-  }
-}
-
-const stickyCommunityIndexSet = new Set(stickyCommunityIndexes.slice(0, 3));
-const stickyCommunities = [...stickyCommunityIndexSet].map((index) => communities[index]);
-const sideCommunities = communities.filter((_, index) => !stickyCommunityIndexSet.has(index));
 const leftCommunities = sideCommunities.filter((_, index) => index % 2 === 0);
 const rightCommunities = sideCommunities.filter((_, index) => index % 2 === 1);
 
@@ -876,22 +888,22 @@ const CommunitiesSection = () => {
             ))}
           </div>
 
-          <div className="hidden lg:grid grid-cols-12 gap-3 items-start">
-            <div className="grid gap-3 col-span-4">
+          <div className="hidden lg:grid grid-cols-12 gap-4 items-start">
+            <div className="grid gap-4 col-span-4">
               {leftCommunities.map((c) => (
-                <CommunityTile key={c.slug} c={c} heightClass="h-[34rem]" />
+                <CommunityTile key={c.slug} c={c} heightClass="h-[26rem]" />
               ))}
             </div>
 
-            <div className="sticky top-24 col-span-4 self-start h-[calc(100vh-6rem)] grid grid-rows-3 gap-3">
+            <div className="col-span-4 self-start sticky top-24 grid grid-rows-3 gap-4 h-[calc(100vh-7rem)]">
               {stickyCommunities.map((c) => (
                 <CommunityTile key={c.slug} c={c} heightClass="h-full min-h-0" />
               ))}
             </div>
 
-            <div className="grid gap-3 col-span-4">
+            <div className="grid gap-4 col-span-4">
               {rightCommunities.map((c) => (
-                <CommunityTile key={c.slug} c={c} heightClass="h-[34rem]" />
+                <CommunityTile key={c.slug} c={c} heightClass="h-[26rem]" />
               ))}
             </div>
           </div>

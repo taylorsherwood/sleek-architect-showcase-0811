@@ -579,7 +579,7 @@ const TestimonialsSection = () => {
         aria-label="Client experiences"
       >
         <div className="absolute inset-0 z-0 flex items-center px-8 md:px-16 lg:px-24">
-          <div className="md:ml-[52%] max-w-xl md:pl-4 lg:pl-8" style={{ paddingTop: "clamp(40px, 7vh, 96px)" }}>
+          <div className="md:ml-[58%] lg:ml-[60%] max-w-xl md:pl-4 lg:pl-8" style={{ paddingTop: "clamp(40px, 7vh, 96px)" }}>
             <p
               className="tsplit-attribution text-gold mb-6 font-sans uppercase will-change-transform"
               style={{ fontSize: "0.72rem", letterSpacing: "0.28em", paddingLeft: "1.6ch", opacity: 0 }}

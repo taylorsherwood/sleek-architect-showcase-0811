@@ -71,36 +71,30 @@ const usePrefersReducedMotion = () => {
 
 const AdvisoryPathways = () => {
   const reducedMotion = usePrefersReducedMotion();
-  const sectionRef = useRef<HTMLDivElement>(null);
-  const stepRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const stepRefs = useRef<(HTMLElement | null)[]>([]);
   const [active, setActive] = useState(0);
 
   // IntersectionObserver-driven step detection (no scroll listener)
   useEffect(() => {
-    if (reducedMotion) return;
-    const steps = stepRefs.current.filter(Boolean) as HTMLDivElement[];
+    const steps = stepRefs.current.filter(Boolean) as HTMLElement[];
     if (steps.length === 0) return;
 
-    const visible = new Map<Element, number>();
     const io = new IntersectionObserver(
       (entries) => {
-        for (const entry of entries) {
-          visible.set(entry.target, entry.intersectionRatio);
+        const visibleEntry = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+        if (!visibleEntry) return;
+
+        const nextIndex = steps.findIndex((el) => el === visibleEntry.target);
+        if (nextIndex >= 0) {
+          setActive((prev) => (prev === nextIndex ? prev : nextIndex));
         }
-        let bestIdx = 0;
-        let bestRatio = -1;
-        steps.forEach((el, i) => {
-          const r = visible.get(el) ?? 0;
-          if (r > bestRatio) {
-            bestRatio = r;
-            bestIdx = i;
-          }
-        });
-        setActive((prev) => (prev === bestIdx ? prev : bestIdx));
       },
       {
-        rootMargin: "-45% 0px -45% 0px",
-        threshold: [0, 0.01, 0.5, 1],
+        rootMargin: "-38% 0px -38% 0px",
+        threshold: [0, 0.35, 0.7, 1],
       }
     );
     steps.forEach((el) => io.observe(el));
@@ -152,19 +146,12 @@ const AdvisoryPathways = () => {
         </div>
       </div>
 
-      {/* DESKTOP — Sticky-scroll pathway */}
-      <div
-        ref={sectionRef}
-        className="relative hidden md:block"
-        style={{
-          height: reducedMotion ? "auto" : `${STEPS.length * 90}vh`,
-        }}
-      >
-        <div className="sticky top-0 h-screen w-full overflow-hidden bg-secondary">
-          <div className="relative h-full container mx-auto px-6">
-            <div className="grid grid-cols-12 gap-10 lg:gap-14 h-full items-center">
-              {/* Left — sticky visual stack */}
-              <div className="col-span-6 relative h-[78vh] max-h-[680px] overflow-hidden">
+      {/* DESKTOP — real scroll steps with a sticky visual, no spacer divs */}
+      <div className="hidden md:block bg-secondary">
+        <div className="container mx-auto px-6">
+          <div className="grid grid-cols-12 gap-10 lg:gap-16 items-start">
+            <div className="col-span-6 sticky top-24 h-[calc(100vh-7rem)] min-h-[560px] max-h-[760px] py-8">
+              <div className="relative h-full overflow-hidden bg-primary">
                 {STEPS.map((s, i) => {
                   const isActive = i === active;
                   return (
@@ -194,7 +181,13 @@ const AdvisoryPathways = () => {
                         fetchPriority={i === 0 ? "high" : "low"}
                         sizes="(max-width: 1280px) 50vw, 600px"
                       />
-                      {/* subtle inner vignette */}
+                      <div
+                        className="absolute inset-0"
+                        style={{
+                          background:
+                            "linear-gradient(180deg, rgba(8,11,26,0.10) 0%, rgba(8,11,26,0.18) 48%, rgba(8,11,26,0.66) 100%)",
+                        }}
+                      />
                       <div
                         className="absolute inset-0 pointer-events-none"
                         style={{
@@ -221,18 +214,52 @@ const AdvisoryPathways = () => {
                     </div>
                   );
                 })}
-              </div>
 
-              {/* Right — sticky copy column */}
-              <div className="col-span-6 relative h-[78vh] max-h-[680px]">
-                {/* Step ticker */}
-                <ul className="mb-8 space-y-3">
+                <div className="absolute bottom-0 left-0 right-0 z-10 p-7 lg:p-9">
+                  <p
+                    className="text-gold mb-3"
+                    style={{
+                      fontFamily: '"Jost", sans-serif',
+                      fontSize: "10.5px",
+                      letterSpacing: "0.28em",
+                      textTransform: "uppercase",
+                    }}
+                  >
+                    {STEPS[active].kicker}
+                  </p>
+                  <h3
+                    className="font-display text-warm-cream leading-[1.05]"
+                    style={{
+                      fontSize: "clamp(34px, 4vw, 58px)",
+                      fontWeight: 400,
+                      textShadow: "0 2px 18px rgba(0,0,0,0.45)",
+                    }}
+                  >
+                    {STEPS[active].title}
+                  </h3>
+                </div>
+
+                <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-white/10">
+                  <div
+                    className="h-full bg-gold"
+                    style={{
+                      width: `${((active + 1) / STEPS.length) * 100}%`,
+                      transition: reducedMotion ? "none" : "width 500ms ease-out",
+                    }}
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="col-span-6">
+              <div className="py-8">
+                <ul className="sticky top-24 z-10 mb-8 flex gap-5 bg-secondary/90 py-4 backdrop-blur-sm">
                   {STEPS.map((s, i) => {
                     const isActive = i === active;
                     return (
                       <li
                         key={s.title}
-                        className="flex items-center gap-3"
+                        className="flex items-center gap-2"
                         style={{
                           opacity: isActive ? 1 : 0.4,
                           transition: reducedMotion
@@ -243,7 +270,7 @@ const AdvisoryPathways = () => {
                         <span
                           className="block h-px"
                           style={{
-                            width: isActive ? 36 : 14,
+                            width: isActive ? 30 : 12,
                             background: isActive
                               ? "#b9a06c"
                               : "hsl(var(--foreground) / 0.35)",
@@ -262,141 +289,117 @@ const AdvisoryPathways = () => {
                             fontWeight: isActive ? 500 : 300,
                           }}
                         >
-                          {s.index} · {s.title}
+                          {s.index}
                         </span>
                       </li>
                     );
                   })}
                 </ul>
 
-                {/* Animated copy */}
-                <div className="relative" style={{ minHeight: 460 }}>
+                <div>
                   {STEPS.map((s, i) => {
                     const isActive = i === active;
                     return (
-                      <div
+                      <article
                         key={s.title}
-                        className="absolute inset-0"
-                        style={{
-                          opacity: isActive ? 1 : 0,
-                          transform: isActive
-                            ? "translateY(0)"
-                            : i < active
-                              ? "translateY(-18px)"
-                              : "translateY(18px)",
-                          transition: copyTransition,
-                          pointerEvents: isActive ? "auto" : "none",
+                        ref={(el) => {
+                          stepRefs.current[i] = el;
                         }}
-                        aria-hidden={isActive ? undefined : true}
+                        className="min-h-[74vh] flex items-center border-b border-border/60"
                       >
-                        <h3
-                          className="font-display text-architectural leading-[1.04] tracking-[0.01em] mb-5"
+                        <div
+                          className="max-w-[560px] py-16"
                           style={{
-                            fontSize: "clamp(34px, 3.6vw, 52px)",
-                            fontWeight: 400,
+                            opacity: isActive ? 1 : 0.46,
+                            transform: isActive ? "translateY(0)" : "translateY(10px)",
+                            transition: copyTransition,
                           }}
                         >
-                          {s.title}
-                        </h3>
-                        <p
-                          className="text-foreground/75 leading-[1.7] mb-7 max-w-[520px]"
-                          style={{
-                            fontFamily: '"Jost", sans-serif',
-                            fontSize: "16px",
-                            letterSpacing: "0.01em",
-                          }}
-                        >
-                          {s.body}
-                        </p>
-                        <ul className="space-y-3 mb-9">
-                          {s.bullets.map((b) => (
-                            <li
-                              key={b}
-                              className="flex items-start gap-3 text-foreground/80"
-                              style={{
-                                fontFamily: '"Jost", sans-serif',
-                                fontSize: "14px",
-                                letterSpacing: "0.01em",
-                              }}
-                            >
-                              <span
-                                aria-hidden="true"
-                                className="mt-[10px] inline-block w-3 h-px bg-gold flex-shrink-0"
-                              />
-                              <span>{b}</span>
-                            </li>
-                          ))}
-                        </ul>
-                        <Link
-                          to={s.cta.to}
-                          className="inline-flex items-center gap-3 group/cta"
-                          style={{
-                            fontFamily: '"Jost", sans-serif',
-                            fontSize: "11px",
-                            letterSpacing: "0.22em",
-                            textTransform: "uppercase",
-                            color: "hsl(var(--foreground))",
-                          }}
-                        >
-                          <span className="relative pb-1">
-                            {s.cta.label}
-                            <span className="absolute left-0 bottom-0 h-px w-full bg-gold" />
-                          </span>
-                          <span
-                            className="text-gold"
+                          <p
+                            className="text-gold mb-4"
                             style={{
-                              transition: reducedMotion
-                                ? "none"
-                                : "transform 500ms ease",
+                              fontFamily: '"Jost", sans-serif',
+                              fontSize: "10.5px",
+                              letterSpacing: "0.28em",
+                              textTransform: "uppercase",
                             }}
-                            aria-hidden="true"
                           >
-                            →
-                          </span>
-                        </Link>
-                      </div>
+                            {s.index} · {s.kicker}
+                          </p>
+                          <h3
+                            className="font-display text-architectural leading-[1.04] tracking-[0.01em] mb-5"
+                            style={{
+                              fontSize: "clamp(34px, 3.6vw, 52px)",
+                              fontWeight: 400,
+                            }}
+                          >
+                            {s.title}
+                          </h3>
+                          <p
+                            className="text-foreground/75 leading-[1.7] mb-7"
+                            style={{
+                              fontFamily: '"Jost", sans-serif',
+                              fontSize: "16px",
+                              letterSpacing: "0.01em",
+                            }}
+                          >
+                            {s.body}
+                          </p>
+                          <ul className="space-y-3 mb-9">
+                            {s.bullets.map((b) => (
+                              <li
+                                key={b}
+                                className="flex items-start gap-3 text-foreground/80"
+                                style={{
+                                  fontFamily: '"Jost", sans-serif',
+                                  fontSize: "14px",
+                                  letterSpacing: "0.01em",
+                                }}
+                              >
+                                <span
+                                  aria-hidden="true"
+                                  className="mt-[10px] inline-block w-3 h-px bg-gold flex-shrink-0"
+                                />
+                                <span>{b}</span>
+                              </li>
+                            ))}
+                          </ul>
+                          <Link
+                            to={s.cta.to}
+                            className="inline-flex items-center gap-3 group/cta"
+                            style={{
+                              fontFamily: '"Jost", sans-serif',
+                              fontSize: "11px",
+                              letterSpacing: "0.22em",
+                              textTransform: "uppercase",
+                              color: "hsl(var(--foreground))",
+                            }}
+                          >
+                            <span className="relative pb-1">
+                              {s.cta.label}
+                              <span className="absolute left-0 bottom-0 h-px w-full bg-gold" />
+                            </span>
+                            <span
+                              className="text-gold"
+                              style={{
+                                transition: reducedMotion
+                                  ? "none"
+                                  : "transform 500ms ease",
+                              }}
+                              aria-hidden="true"
+                            >
+                              →
+                            </span>
+                          </Link>
+                        </div>
+                      </article>
                     );
                   })}
                 </div>
               </div>
             </div>
           </div>
-
-          {/* Bottom progress rail */}
-          <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-foreground/10">
-            <div
-              className="h-full bg-gold"
-              style={{
-                width: `${((active + 1) / STEPS.length) * 100}%`,
-                transition: reducedMotion ? "none" : "width 500ms ease-out",
-              }}
-            />
-          </div>
         </div>
-
-        {/* IO step anchors — siblings of sticky child so they traverse the viewport */}
-        {!reducedMotion && (
-          <div
-            aria-hidden="true"
-            className="absolute inset-0 pointer-events-none"
-          >
-            {STEPS.map((s, i) => (
-              <div
-                key={s.title}
-                ref={(el) => {
-                  stepRefs.current[i] = el;
-                }}
-                style={{
-                  position: "absolute",
-                  top: `${(i / STEPS.length) * 100}%`,
-                  height: `${100 / STEPS.length}%`,
-                  left: 0,
-                  right: 0,
-                }}
-              />
-            ))}
-          </div>
-        )}
       </div>
 
       {/* MOBILE — stacked panels (also serves as SEO-readable fallback) */}

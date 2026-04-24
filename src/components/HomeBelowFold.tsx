@@ -780,7 +780,7 @@ const communities = [
   { name: "Spanish Oaks", descriptor: "Gated Hill Country luxury", image: "/static-assets/community-spanish-oaks.webp", slug: "spanish-oaks", priceFrom: "From $2.5M+" },
   { name: "Dripping Springs", descriptor: "Hill Country acreage estates", image: "/static-assets/community-dripping-springs.webp", slug: "dripping-springs", priceFrom: "From $1M+" },
   { name: "Travis Heights", descriptor: "South Congress character & charm", image: "/static-assets/community-travis-heights.webp", slug: "travis-heights", priceFrom: "From $1.2M+" },
-  { name: "Downtown Austin", descriptor: "Skyline residences & penthouses", image: "/static-assets/community-downtown.webp", slug: "downtown-austin", priceFrom: "From $1M+" },
+  { name: "Downtown Austin", descriptor: "Skyline residences & penthouses", image: "/static-assets/community-downtown.webp", slug: "downtown", priceFrom: "From $1M+" },
 ];
 
 const CommunitiesSection = () => {

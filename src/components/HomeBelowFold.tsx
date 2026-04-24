@@ -783,9 +783,26 @@ const communities = [...communityPages]
   }))
   .filter((community) => Boolean(community.image));
 
-const leftCommunities = communities.filter((_, index) => index % 3 === 0);
-const stickyCommunities = communities.filter((_, index) => index % 3 === 1);
-const rightCommunities = communities.filter((_, index) => index % 3 === 2);
+const stickyCommunityIndexes = Array.from(
+  new Set(
+    [0.2, 0.5, 0.8].map((ratio) =>
+      Math.min(communities.length - 1, Math.floor((communities.length - 1) * ratio)),
+    ),
+  ),
+);
+
+while (stickyCommunityIndexes.length < Math.min(3, communities.length)) {
+  const fallbackIndex = stickyCommunityIndexes.length;
+  if (!stickyCommunityIndexes.includes(fallbackIndex)) {
+    stickyCommunityIndexes.push(fallbackIndex);
+  }
+}
+
+const stickyCommunityIndexSet = new Set(stickyCommunityIndexes.slice(0, 3));
+const stickyCommunities = [...stickyCommunityIndexSet].map((index) => communities[index]);
+const sideCommunities = communities.filter((_, index) => !stickyCommunityIndexSet.has(index));
+const leftCommunities = sideCommunities.filter((_, index) => index % 2 === 0);
+const rightCommunities = sideCommunities.filter((_, index) => index % 2 === 1);
 
 const CommunityTile = ({ c, heightClass }: { c: typeof communities[number]; heightClass: string }) => (
   <Link
@@ -862,23 +879,19 @@ const CommunitiesSection = () => {
           <div className="hidden lg:grid grid-cols-12 gap-3 items-start">
             <div className="grid gap-3 col-span-4">
               {leftCommunities.map((c) => (
-                <CommunityTile key={c.slug} c={c} heightClass="h-[32rem]" />
+                <CommunityTile key={c.slug} c={c} heightClass="h-[34rem]" />
               ))}
             </div>
 
-            <div className="col-span-4 self-start">
-              <div className="sticky top-20 h-[calc(100vh-6rem)] overflow-hidden">
-                <div className="grid auto-rows-fr gap-3 h-full">
-                  {stickyCommunities.map((c) => (
-                    <CommunityTile key={c.slug} c={c} heightClass="min-h-[calc((100vh-8rem)/3)]" />
-                  ))}
-                </div>
-              </div>
+            <div className="sticky top-24 col-span-4 self-start h-[calc(100vh-6rem)] grid grid-rows-3 gap-3">
+              {stickyCommunities.map((c) => (
+                <CommunityTile key={c.slug} c={c} heightClass="h-full min-h-0" />
+              ))}
             </div>
 
             <div className="grid gap-3 col-span-4">
               {rightCommunities.map((c) => (
-                <CommunityTile key={c.slug} c={c} heightClass="h-[32rem]" />
+                <CommunityTile key={c.slug} c={c} heightClass="h-[34rem]" />
               ))}
             </div>
           </div>

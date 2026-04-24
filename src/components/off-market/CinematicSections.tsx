@@ -85,12 +85,12 @@ const CinematicSections = ({ formNode }: Props) => {
     if (reduceMotion) return;
 
     const lenis = new Lenis({
-      duration: 1.4,
+      duration: 1.2,
       easing: (t) => 1 - Math.pow(1 - t, 3),
       smoothWheel: true,
       wheelMultiplier: 1.0,
       touchMultiplier: 1.5,
-      lerp: 0.1,
+      lerp: 0.08,
       syncTouch: true,
       syncTouchLerp: 0.075,
       gestureOrientation: "vertical",
@@ -98,7 +98,7 @@ const CinematicSections = ({ formNode }: Props) => {
     lenisRef.current = lenis;
     (window as unknown as { __lenis?: Lenis }).__lenis = lenis;
 
-    lenis.on("scroll", () => ScrollTrigger.update());
+    lenis.on("scroll", ScrollTrigger.update);
 
     let rafId = 0;
     function raf(time: number) {
@@ -107,7 +107,8 @@ const CinematicSections = ({ formNode }: Props) => {
     }
     rafId = requestAnimationFrame(raf);
 
-    gsap.ticker.lagSmoothing(0);
+    // Re-enable lag smoothing so dropped frames don't jolt timelines
+    gsap.ticker.lagSmoothing(500, 33);
     ScrollTrigger.refresh();
 
     return () => {
@@ -139,12 +140,13 @@ const CinematicSections = ({ formNode }: Props) => {
           // Allocate scroll distance per word so the reveal fills the pin
           end: () => `+=${Math.max(words.length * 110, 800)}`,
           pin: true,
-          scrub: 2,
+          scrub: 0.6,
           anticipatePin: 1,
+          fastScrollEnd: true,
         },
       });
       words.forEach((w) => {
-        thesisTl.to(w, { opacity: 1, y: 0, ease: "power3.out", duration: 1 });
+        thesisTl.to(w, { opacity: 1, y: 0, ease: "power3.out", duration: 1, force3D: true });
       });
       // Hold the final state briefly before releasing the pin
       thesisTl.to({}, { duration: 0.3 });
@@ -164,23 +166,24 @@ const CinematicSections = ({ formNode }: Props) => {
           end: "+=160%",
           pin: true,
           pinSpacing: true,
-          scrub: 2,
+          scrub: 0.8,
           anticipatePin: 1,
+          fastScrollEnd: true,
         },
       });
 
       splitTl
         // Phase 1 — lock & settle
-        .to(".split-cover-image", { scale: 1, ease: "none", duration: 0.45 }, 0)
+        .to(".split-cover-image", { scale: 1, ease: "none", duration: 0.45, force3D: true }, 0)
         // Phase 2 — elegant split
         .to(
           ".split-top-half",
-          { yPercent: -100, ease: "power2.inOut", duration: 0.4 },
+          { yPercent: -100, ease: "power2.inOut", duration: 0.4, force3D: true },
           0.45
         )
         .to(
           ".split-bottom-half",
-          { yPercent: 100, ease: "power2.inOut", duration: 0.4 },
+          { yPercent: 100, ease: "power2.inOut", duration: 0.4, force3D: true },
           0.45
         )
         // Hold the open state briefly before unpin
@@ -195,10 +198,11 @@ const CinematicSections = ({ formNode }: Props) => {
           trigger: ".drone-section",
           start: "top top",
           end: "+=70%",
-          scrub: 1,
+          scrub: 0.6,
           pin: true,
           pinSpacing: true,
           anticipatePin: 1,
+          fastScrollEnd: true,
         },
       });
       droneTl.to(droneEls, {
@@ -206,6 +210,7 @@ const CinematicSections = ({ formNode }: Props) => {
         y: 0,
         ease: "power2.out",
         stagger: 0.4,
+        force3D: true,
       });
 
       // ── Section 3: Parallax Image Reveal — REMOVED
@@ -216,16 +221,17 @@ const CinematicSections = ({ formNode }: Props) => {
           trigger: ".bridge-section",
           start: "top top",
           end: "+=80%",
-          scrub: 1,
+          scrub: 0.6,
           pin: true,
           pinSpacing: true,
           anticipatePin: 1,
+          fastScrollEnd: true,
         },
       });
       bridgeTl
-        .fromTo(".bridge-image", { yPercent: -8, scale: 1.08 }, { yPercent: 8, scale: 1, ease: "none" }, 0)
-        .fromTo(".bridge-eyebrow", { opacity: 0, y: 20 }, { opacity: 1, y: 0, ease: "power2.out", duration: 0.4 }, 0.15)
-        .fromTo(".bridge-headline", { opacity: 0, y: 50 }, { opacity: 1, y: 0, ease: "power2.out", duration: 0.6 }, 0.25)
+        .fromTo(".bridge-image", { yPercent: -8, scale: 1.08 }, { yPercent: 8, scale: 1, ease: "none", force3D: true }, 0)
+        .fromTo(".bridge-eyebrow", { opacity: 0, y: 20 }, { opacity: 1, y: 0, ease: "power2.out", duration: 0.4, force3D: true }, 0.15)
+        .fromTo(".bridge-headline", { opacity: 0, y: 50 }, { opacity: 1, y: 0, ease: "power2.out", duration: 0.6, force3D: true }, 0.25)
         .fromTo(".bridge-rule", { width: 0, opacity: 0 }, { width: 120, opacity: 1, ease: "power2.out", duration: 0.5 }, 0.5)
         .to({}, { duration: 0.3 });
 
@@ -247,25 +253,28 @@ const CinematicSections = ({ formNode }: Props) => {
             trigger: ".horizontal-section",
             start: "top bottom",
             end: "top top",
-            scrub: 1.2,
+            scrub: 0.6,
           },
         });
         galleryReveal
-          .to(".horizontal-track", { yPercent: 0, ease: "none" }, 0)
-          .to(".horizontal-card.is-first .horizontal-card-image img", { scale: 1, ease: "none" }, 0)
-          .to(".horizontal-card.is-first .card-content", { opacity: 1, y: 0, ease: "none" }, 0.4);
+          .to(".horizontal-track", { yPercent: 0, ease: "none", force3D: true }, 0)
+          .to(".horizontal-card.is-first .horizontal-card-image img", { scale: 1, ease: "none", force3D: true }, 0)
+          .to(".horizontal-card.is-first .card-content", { opacity: 1, y: 0, ease: "none", force3D: true }, 0.4);
 
         // Horizontal scroll pin
         const horizontalTween = gsap.to(horizontalTrack, {
           x: () => -getTotalScroll(),
           ease: "none",
+          force3D: true,
           scrollTrigger: {
             trigger: ".horizontal-section",
             start: "top top",
             end: () => `+=${getTotalScroll()}`,
             pin: true,
             pinSpacing: true,
-            scrub: 2.5,
+            scrub: 1,
+            fastScrollEnd: true,
+            anticipatePin: 1,
           },
         });
 
@@ -281,12 +290,13 @@ const CinematicSections = ({ formNode }: Props) => {
             {
               xPercent: 3,
               ease: "none",
+              force3D: true,
               scrollTrigger: {
                 trigger: img.parentElement!,
                 containerAnimation: horizontalTween,
                 start: "left right",
                 end: "right left",
-                scrub: 1,
+                scrub: 0.6,
               },
             }
           );
@@ -304,8 +314,8 @@ const CinematicSections = ({ formNode }: Props) => {
       //    measured cadence; attribution settles last.
       gsap.set(".testimonial-split-right", { xPercent: 0 });
       gsap.set(".testimonial-split-image", { scale: 1.08 });
-      gsap.set(".testimonial-line", { opacity: 0, y: 24, filter: "blur(8px)" });
-      gsap.set(".testimonial-attribution", { opacity: 0, y: 12, filter: "blur(6px)" });
+      gsap.set(".testimonial-line", { opacity: 0, y: 24 });
+      gsap.set(".testimonial-attribution", { opacity: 0, y: 12 });
 
       const testimonialTl = gsap.timeline({
         scrollTrigger: {
@@ -314,34 +324,35 @@ const CinematicSections = ({ formNode }: Props) => {
           end: "+=160%",
           pin: true,
           pinSpacing: true,
-          scrub: 2,
+          scrub: 0.8,
           anticipatePin: 1,
+          fastScrollEnd: true,
         },
       });
 
       testimonialTl
         // Phase 1 — slow Ken Burns settle
-        .to(".testimonial-split-image", { scale: 1, ease: "power1.out", duration: 0.35 }, 0)
+        .to(".testimonial-split-image", { scale: 1, ease: "power1.out", duration: 0.35, force3D: true }, 0)
         // Phase 2 — right half drifts away on a long, refined curve
-        .to(".testimonial-split-right", { xPercent: 100, ease: "expo.inOut", duration: 0.60 }, 0.35)
-        // Phase 3 — testimonial copy clears blur and rises, measured cadence
-        .to(".testimonial-line", { opacity: 1, y: 0, filter: "blur(0px)", ease: "power3.out", stagger: 0.20, duration: 0.70 }, 0.65)
-        .to(".testimonial-attribution", { opacity: 1, y: 0, filter: "blur(0px)", ease: "power2.out", duration: 0.55 }, 1.05)
+        .to(".testimonial-split-right", { xPercent: 100, ease: "expo.inOut", duration: 0.60, force3D: true }, 0.35)
+        // Phase 3 — testimonial copy rises in measured cadence (no blur — too expensive on scrub)
+        .to(".testimonial-line", { opacity: 1, y: 0, ease: "power3.out", stagger: 0.20, duration: 0.70, force3D: true }, 0.65)
+        .to(".testimonial-attribution", { opacity: 1, y: 0, ease: "power2.out", duration: 0.55, force3D: true }, 1.05)
         .to({}, { duration: 0.15 });
 
       // ── Section 7: Form — elegant cinematic reveal as user scrolls
-      // past the testimonial. Each element rises into place with a soft
-      // blur clearing, finishing with the form panel scaling up.
+      // past the testimonial. Filter blurs removed (GPU thrash on scrub).
       const formEls = gsap.utils.toArray<HTMLElement>(".form-field");
-      gsap.set(formEls, { opacity: 0, y: 60, filter: "blur(12px)" });
-      gsap.set(".form-panel", { opacity: 0, y: 80, scale: 0.96, filter: "blur(14px)" });
+      gsap.set(formEls, { opacity: 0, y: 60 });
+      gsap.set(".form-panel", { opacity: 0, y: 80, scale: 0.96 });
 
       const formTl = gsap.timeline({
         scrollTrigger: {
           trigger: ".form-section",
           start: "top 85%",
           end: "top 30%",
-          scrub: 1.2,
+          scrub: 0.8,
+          fastScrollEnd: true,
         },
       });
 
@@ -349,24 +360,24 @@ const CinematicSections = ({ formNode }: Props) => {
         .to(formEls[0], {
           opacity: 1,
           y: 0,
-          filter: "blur(0px)",
           ease: "power3.out",
           duration: 0.6,
+          force3D: true,
         }, 0)
         .to(formEls[1], {
           opacity: 1,
           y: 0,
-          filter: "blur(0px)",
           ease: "power3.out",
           duration: 0.6,
+          force3D: true,
         }, 0.25)
         .to(".form-panel", {
           opacity: 1,
           y: 0,
           scale: 1,
-          filter: "blur(0px)",
           ease: "power3.out",
           duration: 0.9,
+          force3D: true,
         }, 0.45);
     }, root);
 
@@ -762,7 +773,7 @@ const CinematicSections = ({ formNode }: Props) => {
             />
           </div>
           <div className="h-6 md:h-8" aria-hidden="true" />
-          <div className="form-panel border border-white/10 p-10 bg-white/[0.02] backdrop-blur-sm will-change-transform">
+          <div className="form-panel border border-white/10 p-10 bg-white/[0.02] will-change-transform">
             {formNode}
           </div>
         </div>

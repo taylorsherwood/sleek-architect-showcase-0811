@@ -61,11 +61,12 @@ const pickMiddle = (): Item[] => {
   return idx.filter((i) => !seen.has(i) && seen.add(i)).map((i) => communities[i]);
 };
 
-const middle = pickMiddle();
-const middleSlugs = new Set(middle.map((c) => c.slug));
-const side = communities.filter((c) => !middleSlugs.has(c.slug));
-const left = side.filter((_, i) => i % 2 === 0);
-const right = side.filter((_, i) => i % 2 === 1);
+// Distribute communities across three uniform columns (round-robin so
+// each column has roughly the same number of tiles and the section
+// ends at the same baseline).
+const left = communities.filter((_, i) => i % 3 === 0);
+const middle = communities.filter((_, i) => i % 3 === 1);
+const right = communities.filter((_, i) => i % 3 === 2);
 
 const PriceBadge = ({ price }: { price: string }) =>
   price ? (
@@ -201,49 +202,10 @@ export default function StickyScroll() {
           ))}
         </div>
 
-        {/* CENTER — sticky */}
-        <div
-          style={{
-            gridColumn: 'span 4 / span 4',
-            position: 'sticky',
-            top: 0,
-            height: '100vh',
-            display: 'grid',
-            gridTemplateRows: `repeat(${middle.length}, minmax(0, 1fr))`,
-            gap: '8px',
-            alignSelf: 'start',
-          }}
-        >
+        {/* CENTER */}
+        <div style={{ gridColumn: 'span 4 / span 4', display: 'grid', gap: '8px' }}>
           {middle.map((c) => (
-            <figure key={c.slug} style={{ width: '100%', height: '100%', margin: 0 }}>
-              <Link
-                to={`/communities/${c.slug}`}
-                aria-label={`${c.name} — view community`}
-                style={{
-                  position: 'relative',
-                  display: 'block',
-                  width: '100%',
-                  height: '100%',
-                  overflow: 'hidden',
-                  borderRadius: '6px',
-                }}
-              >
-                <img
-                  src={c.img}
-                  alt={c.name}
-                  loading="lazy"
-                  decoding="async"
-                  style={{
-                    width: '100%',
-                    height: '100%',
-                    objectFit: 'cover',
-                    display: 'block',
-                  }}
-                />
-                <PriceBadge price={c.price} />
-                <NameStrip name={c.name} />
-              </Link>
-            </figure>
+            <Tile key={c.slug} item={c} />
           ))}
         </div>
 

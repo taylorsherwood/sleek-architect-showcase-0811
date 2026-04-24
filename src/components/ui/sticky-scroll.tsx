@@ -170,11 +170,11 @@ export default function StickyScroll() {
 
       <div
         style={{
-          maxWidth: '1320px',
-          margin: '0 auto',
+          width: '100%',
+          margin: 0,
           padding: '0 24px clamp(64px, 7vw, 104px)',
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
           gap: '14px',
         }}
       >

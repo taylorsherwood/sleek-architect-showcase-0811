@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 
 type Scene = {
   name: string;
@@ -43,8 +43,7 @@ const SCENES: Scene[] = [
     name: "Lake Austin",
     slug: "lake-austin",
     meta: "Waterfront · Private Access",
-    insight:
-      "Waterfront scarcity, private access, and lifestyle-driven value.",
+    insight: "Waterfront scarcity, private access, and lifestyle-driven value.",
     image: "/static-assets/community-lake-austin.webp",
   },
   {
@@ -57,6 +56,18 @@ const SCENES: Scene[] = [
     image: "/static-assets/community-barton-creek.webp",
   },
 ];
+
+const usePrefersReducedMotion = () => {
+  const [reduced, setReduced] = useState(false);
+  useEffect(() => {
+    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
+    setReduced(mq.matches);
+    const handler = (e: MediaQueryListEvent) => setReduced(e.matches);
+    mq.addEventListener("change", handler);
+    return () => mq.removeEventListener("change", handler);
+  }, []);
+  return reduced;
+};
 
 const MapBackdrop = () => (
   <svg
@@ -96,48 +107,60 @@ const MapBackdrop = () => (
 );
 
 const AustinMarketExplorer = () => {
+  const reducedMotion = usePrefersReducedMotion();
   const sectionRef = useRef<HTMLDivElement>(null);
+  const stepRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [active, setActive] = useState(0);
 
-  // Scroll progress → active scene (desktop sticky)
+  // IntersectionObserver-driven scene detection (no scroll listener)
   useEffect(() => {
-    const el = sectionRef.current;
-    if (!el) return;
+    if (reducedMotion) return; // no scroll-driven changes when reduced motion
+    const steps = stepRefs.current.filter(Boolean) as HTMLDivElement[];
+    if (steps.length === 0) return;
 
-    let raf = 0;
-    const onScroll = () => {
-      if (raf) return;
-      raf = requestAnimationFrame(() => {
-        raf = 0;
-        const rect = el.getBoundingClientRect();
-        const vh = window.innerHeight;
-        // total scrollable distance within the section
-        const total = el.offsetHeight - vh;
-        if (total <= 0) return;
-        const scrolled = Math.min(Math.max(-rect.top, 0), total);
-        const progress = scrolled / total; // 0 → 1
-        // Map progress across SCENES.length steps
-        const step = Math.min(
-          SCENES.length - 1,
-          Math.floor(progress * SCENES.length)
-        );
-        setActive((prev) => (prev === step ? prev : step));
-      });
-    };
+    const visible = new Map<Element, number>();
+    const io = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          visible.set(entry.target, entry.intersectionRatio);
+        }
+        let bestIdx = 0;
+        let bestRatio = -1;
+        steps.forEach((el, i) => {
+          const r = visible.get(el) ?? 0;
+          if (r > bestRatio) {
+            bestRatio = r;
+            bestIdx = i;
+          }
+        });
+        setActive((prev) => (prev === bestIdx ? prev : bestIdx));
+      },
+      {
+        // Activate the step whose center is near viewport center
+        rootMargin: "-45% 0px -45% 0px",
+        threshold: [0, 0.01, 0.5, 1],
+      }
+    );
 
-    window.addEventListener("scroll", onScroll, { passive: true });
-    onScroll();
-    return () => {
-      window.removeEventListener("scroll", onScroll);
-      if (raf) cancelAnimationFrame(raf);
-    };
-  }, []);
+    steps.forEach((el) => io.observe(el));
+    return () => io.disconnect();
+  }, [reducedMotion]);
+
+  // Pre-compute transition CSS so we can disable motion cleanly
+  const fadeTransition = useMemo(
+    () => (reducedMotion ? "none" : "opacity 900ms ease-out"),
+    [reducedMotion]
+  );
+  const copyTransition = useMemo(
+    () =>
+      reducedMotion
+        ? "none"
+        : "opacity 700ms ease-out, transform 700ms ease-out",
+    [reducedMotion]
+  );
 
   return (
-    <section
-      aria-labelledby="ame-heading"
-      className="relative bg-background"
-    >
+    <section aria-labelledby="ame-heading" className="relative bg-background">
       {/* Intro band */}
       <div className="container mx-auto px-6 pt-16 md:pt-24 pb-10 md:pb-14">
         <div className="max-w-3xl mx-auto text-center">
@@ -165,30 +188,44 @@ const AustinMarketExplorer = () => {
         </div>
       </div>
 
-      {/* DESKTOP — Sticky-scroll cinematic */}
+      {/* DESKTOP — Sticky-scroll cinematic.
+          Hidden on mobile entirely (CSS-only) so we don't render duplicate
+          DOM/images. SEO copy is preserved on mobile stacked variant below. */}
       <div
         ref={sectionRef}
         className="relative hidden md:block"
-        style={{ height: `${SCENES.length * 80}vh` }}
+        // Reduced motion: collapse to a single sticky frame (no scroll choreography)
+        style={{
+          height: reducedMotion ? "100vh" : `${SCENES.length * 80}vh`,
+        }}
       >
         <div className="sticky top-0 h-screen w-full overflow-hidden bg-[#080B1A]">
-          {/* Layered images — crossfade */}
+          {/* Layered images — crossfade. Explicit width/height + object-cover
+              prevents CLS. First image eager + fetchPriority high to keep LCP
+              candidates stable; rest lazy. */}
           <div className="absolute inset-0">
             {SCENES.map((s, i) => (
               <div
                 key={s.slug}
-                className="absolute inset-0 transition-opacity duration-[1100ms] ease-out"
-                style={{ opacity: i === active ? 1 : 0 }}
+                className="absolute inset-0"
+                style={{
+                  opacity: i === active ? 1 : 0,
+                  transition: fadeTransition,
+                  willChange: "opacity",
+                }}
                 aria-hidden={i === active ? undefined : true}
               >
                 <img
                   src={s.image}
                   alt=""
+                  width={1600}
+                  height={900}
                   className="w-full h-full object-cover"
                   loading={i === 0 ? "eager" : "lazy"}
                   decoding="async"
+                  fetchPriority={i === 0 ? "high" : "low"}
+                  sizes="100vw"
                 />
-                {/* image grading */}
                 <div
                   className="absolute inset-0"
                   style={{
@@ -205,7 +242,6 @@ const AustinMarketExplorer = () => {
                 />
               </div>
             ))}
-            {/* Map texture overlay */}
             <div className="absolute inset-0 opacity-70 mix-blend-screen">
               <MapBackdrop />
             </div>
@@ -222,14 +258,24 @@ const AustinMarketExplorer = () => {
                     return (
                       <li
                         key={s.slug}
-                        className="flex items-center gap-3 transition-all duration-500"
-                        style={{ opacity: isActive ? 1 : 0.38 }}
+                        className="flex items-center gap-3"
+                        style={{
+                          opacity: isActive ? 1 : 0.38,
+                          transition: reducedMotion
+                            ? "none"
+                            : "opacity 500ms ease",
+                        }}
                       >
                         <span
-                          className="block h-px transition-all duration-700"
+                          className="block h-px"
                           style={{
                             width: isActive ? 36 : 14,
-                            background: isActive ? "#b9a06c" : "rgba(255,255,255,0.5)",
+                            background: isActive
+                              ? "#b9a06c"
+                              : "rgba(255,255,255,0.5)",
+                            transition: reducedMotion
+                              ? "none"
+                              : "width 700ms ease, background 700ms ease",
                           }}
                         />
                         <span
@@ -250,14 +296,15 @@ const AustinMarketExplorer = () => {
                 </ul>
               </div>
 
-              {/* Center / right — active scene copy */}
+              {/* Center / right — active scene copy.
+                  All scenes rendered for SEO; only one visible at a time. */}
               <div className="col-span-9 lg:col-span-7 lg:col-start-5 relative">
                 {SCENES.map((s, i) => {
                   const isActive = i === active;
                   return (
                     <div
                       key={s.slug}
-                      className="absolute inset-0 transition-all duration-[900ms] ease-out"
+                      className="absolute inset-0"
                       style={{
                         opacity: isActive ? 1 : 0,
                         transform: isActive
@@ -265,6 +312,7 @@ const AustinMarketExplorer = () => {
                           : i < active
                             ? "translateY(-16px)"
                             : "translateY(16px)",
+                        transition: copyTransition,
                         pointerEvents: isActive ? "auto" : "none",
                       }}
                       aria-hidden={isActive ? undefined : true}
@@ -314,10 +362,15 @@ const AustinMarketExplorer = () => {
                       >
                         <span className="relative pb-1">
                           Advisory On {s.name}
-                          <span className="absolute left-0 bottom-0 h-px w-full bg-gold scale-x-100 origin-left transition-transform duration-500" />
+                          <span className="absolute left-0 bottom-0 h-px w-full bg-gold scale-x-100 origin-left" />
                         </span>
                         <span
-                          className="text-gold transition-transform duration-500 group-hover/cta:translate-x-1"
+                          className="text-gold"
+                          style={{
+                            transition: reducedMotion
+                              ? "none"
+                              : "transform 500ms ease",
+                          }}
                           aria-hidden="true"
                         >
                           →
@@ -326,25 +379,53 @@ const AustinMarketExplorer = () => {
                     </div>
                   );
                 })}
-                {/* spacer to reserve height */}
+                {/* Reserved height — prevents CLS as scenes are absolutely positioned */}
                 <div aria-hidden="true" style={{ height: 360 }} />
               </div>
             </div>
           </div>
 
+          {/* Scroll-step anchors — IntersectionObserver targets.
+              Stretched across the section's scroll range. */}
+          {!reducedMotion && (
+            <div
+              aria-hidden="true"
+              className="absolute inset-0 pointer-events-none"
+            >
+              {SCENES.map((s, i) => (
+                <div
+                  key={s.slug}
+                  ref={(el) => {
+                    stepRefs.current[i] = el;
+                  }}
+                  style={{
+                    position: "absolute",
+                    top: `${(i / SCENES.length) * 100}%`,
+                    height: `${100 / SCENES.length}%`,
+                    left: 0,
+                    right: 0,
+                  }}
+                />
+              ))}
+            </div>
+          )}
+
           {/* Bottom progress rail */}
           <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-white/10">
             <div
-              className="h-full bg-gold transition-[width] duration-500 ease-out"
+              className="h-full bg-gold"
               style={{
                 width: `${((active + 1) / SCENES.length) * 100}%`,
+                transition: reducedMotion ? "none" : "width 500ms ease-out",
               }}
             />
           </div>
         </div>
       </div>
 
-      {/* MOBILE — stacked step-by-step scenes */}
+      {/* MOBILE — stacked step-by-step scenes.
+          Hidden on md+ via CSS; this is also the SEO-friendly stacked variant
+          for reduced-motion users in the visual layer above. */}
       <div className="md:hidden">
         {SCENES.map((s, i) => (
           <article
@@ -355,9 +436,12 @@ const AustinMarketExplorer = () => {
             <img
               src={s.image}
               alt={`${s.name}, Austin`}
+              width={780}
+              height={1040}
               className="absolute inset-0 w-full h-full object-cover"
-              loading={i === 0 ? "eager" : "lazy"}
+              loading="lazy"
               decoding="async"
+              sizes="100vw"
             />
             <div
               className="absolute inset-0"
@@ -428,7 +512,9 @@ const AustinMarketExplorer = () => {
               border: "2px solid #b9a06c",
               color: "#fff",
               background: "#b9a06c",
-              transition: "background 250ms ease, color 250ms ease",
+              transition: reducedMotion
+                ? "none"
+                : "background 250ms ease, color 250ms ease",
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.background = "#fff";
@@ -453,8 +539,9 @@ const AustinMarketExplorer = () => {
               border: "1px solid hsl(var(--foreground) / 0.35)",
               color: "hsl(var(--foreground))",
               background: "transparent",
-              transition:
-                "background 250ms ease, border-color 250ms ease, color 250ms ease",
+              transition: reducedMotion
+                ? "none"
+                : "background 250ms ease, border-color 250ms ease, color 250ms ease",
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.background = "hsl(var(--foreground))";

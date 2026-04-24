@@ -544,12 +544,10 @@ const TestimonialsSection = () => {
           scrub: 2,
           anticipatePin: 1,
           onUpdate: (self) => {
+            // One-way reveal: once opened, stay open (prevents stuck blur on slow scroll-back)
             if (self.progress >= 0.66 && !hasOpenedRef.current) {
               hasOpenedRef.current = true;
               setRevealed(true);
-            } else if (self.progress < 0.62 && hasOpenedRef.current) {
-              hasOpenedRef.current = false;
-              setRevealed(false);
             }
           },
         },
@@ -595,10 +593,10 @@ const TestimonialsSection = () => {
                 <span
                   className="tsplit-line block will-change-transform"
                   style={{
-                    opacity: 0,
-                    transform: "translateY(24px)",
-                    filter: "blur(8px)",
-                    animation: revealed ? "fadeUp 0.7s ease both" : undefined,
+                    opacity: revealed ? undefined : 0,
+                    transform: revealed ? undefined : "translateY(24px)",
+                    filter: revealed ? undefined : "blur(8px)",
+                    animation: revealed ? "fadeUpBlur 0.7s ease both" : undefined,
                   }}
                 >
                   &ldquo;{t.quote}&rdquo;
@@ -611,10 +609,10 @@ const TestimonialsSection = () => {
                   fontSize: "0.72rem",
                   letterSpacing: "0.28em",
                   paddingLeft: "1.6ch",
-                  opacity: 0,
-                  transform: "translateY(12px)",
-                  filter: "blur(6px)",
-                  animation: revealed ? "fadeUp 0.7s ease 0.15s both" : undefined,
+                  opacity: revealed ? undefined : 0,
+                  transform: revealed ? undefined : "translateY(12px)",
+                  filter: revealed ? undefined : "blur(6px)",
+                  animation: revealed ? "fadeUpBlur 0.7s ease 0.15s both" : undefined,
                 }}
               >
                 {t.name}
@@ -627,14 +625,15 @@ const TestimonialsSection = () => {
                   letterSpacing: "0.18em",
                   marginTop: "0.55rem",
                   paddingLeft: "1.6ch",
-                  opacity: 0,
-                  transform: "translateY(12px)",
-                  filter: "blur(6px)",
-                  animation: revealed ? "fadeUp 0.7s ease 0.25s both" : undefined,
+                  opacity: revealed ? undefined : 0,
+                  transform: revealed ? undefined : "translateY(12px)",
+                  filter: revealed ? undefined : "blur(6px)",
+                  animation: revealed ? "fadeUpBlur 0.7s ease 0.25s both" : undefined,
                 }}
               >
                 {t.context}
               </p>
+
 
               {revealed && (
                 <div

@@ -582,7 +582,7 @@ const TestimonialsSection = () => {
           <div className="max-w-xl md:w-1/2 md:pl-8" style={{ paddingTop: "clamp(40px, 7vh, 96px)" }}>
             <p
               className="tsplit-attribution text-gold mb-6 font-sans uppercase will-change-transform"
-              style={{ fontSize: "0.72rem", letterSpacing: "0.28em", paddingLeft: "1.6ch" }}
+              style={{ fontSize: "0.72rem", letterSpacing: "0.28em", paddingLeft: "1.6ch", opacity: 0 }}
             >
               Client Experiences
             </p>
@@ -594,7 +594,12 @@ const TestimonialsSection = () => {
               >
                 <span
                   className="tsplit-line block will-change-transform"
-                  style={{ animation: revealed ? "fadeUp 0.7s ease both" : undefined }}
+                  style={{
+                    opacity: 0,
+                    transform: "translateY(24px)",
+                    filter: "blur(8px)",
+                    animation: revealed ? "fadeUp 0.7s ease both" : undefined,
+                  }}
                 >
                   &ldquo;{t.quote}&rdquo;
                 </span>
@@ -606,6 +611,9 @@ const TestimonialsSection = () => {
                   fontSize: "0.72rem",
                   letterSpacing: "0.28em",
                   paddingLeft: "1.6ch",
+                  opacity: 0,
+                  transform: "translateY(12px)",
+                  filter: "blur(6px)",
                   animation: revealed ? "fadeUp 0.7s ease 0.15s both" : undefined,
                 }}
               >
@@ -619,6 +627,9 @@ const TestimonialsSection = () => {
                   letterSpacing: "0.18em",
                   marginTop: "0.55rem",
                   paddingLeft: "1.6ch",
+                  opacity: 0,
+                  transform: "translateY(12px)",
+                  filter: "blur(6px)",
                   animation: revealed ? "fadeUp 0.7s ease 0.25s both" : undefined,
                 }}
               >
@@ -626,7 +637,10 @@ const TestimonialsSection = () => {
               </p>
 
               {revealed && (
-                <div className="flex items-center gap-2.5 mt-10" style={{ paddingLeft: "1.6ch" }}>
+                <div
+                  className="flex items-center gap-2.5 mt-10"
+                  style={{ paddingLeft: "1.6ch", opacity: 0, animation: "fadeUp 0.6s ease 0.35s both" }}
+                >
                   {testimonials.map((_, i) => (
                     <button
                       key={i}
@@ -674,16 +688,6 @@ const TestimonialsSection = () => {
         {/* Overlay verbiage — fades out as the split begins */}
         <div className="tsplit-overlay absolute inset-0 z-20 flex items-center justify-center pointer-events-none px-6 will-change-transform">
           <div className="text-center">
-            <p
-              className="text-gold mb-6 font-sans uppercase"
-              style={{
-                fontSize: "0.72rem",
-                letterSpacing: "0.32em",
-                textShadow: "0 0 18px rgba(0,0,0,0.55), 0 1px 2px rgba(0,0,0,0.5)",
-              }}
-            >
-              Client Experiences
-            </p>
             <h2
               className="font-display font-normal leading-[1.05] tracking-[0.02em]"
               style={{

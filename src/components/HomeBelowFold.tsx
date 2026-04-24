@@ -782,11 +782,11 @@ const FEATURED_COMMUNITY_SLUGS = [
   "lake-austin",
   "spanish-oaks",
   "rob-roy",
-  "downtown-austin",
+  "downtown",
   "clarksville",
   "pemberton-heights",
   "lake-travis",
-  "zilker",
+  "zilker-austin",
 ] as const;
 
 const communityBySlug = new Map(communityPages.map((c) => [c.slug, c]));

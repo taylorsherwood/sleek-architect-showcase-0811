@@ -894,16 +894,6 @@ const CommunitiesSection = () => {
   );
 };
 
-          <div className="text-center mt-16">
-            <Link to="/communities" className="cta-luxury">
-              VIEW ALL COMMUNITIES
-            </Link>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
 
 /* ─────────────────────────────────────────────
    SECTION 7 — INSIGHTS

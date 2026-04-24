@@ -17,6 +17,8 @@ export default {
         display: ['"Cinzel"', 'serif'],
         sans: ['"Jost"', 'sans-serif'],
         body: ['"Jost"', 'sans-serif'],
+        cinzel: ['"Cinzel"', 'serif'],
+        jost: ['"Jost"', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",

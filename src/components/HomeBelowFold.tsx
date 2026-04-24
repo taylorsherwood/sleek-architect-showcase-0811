@@ -1175,7 +1175,9 @@ const HomeBelowFold = () => (
 
     <NoscriptFallback />
 
-    <CommunitiesSection />
+    <Suspense fallback={<div className="min-h-screen bg-[#0C0F24]" />}>
+      <StickyCommunitiesScroll />
+    </Suspense>
 
     <TestimonialsSection />
     <div className="h-8 md:h-12 bg-secondary" aria-hidden="true" />

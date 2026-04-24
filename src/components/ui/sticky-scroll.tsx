@@ -54,14 +54,14 @@ const PriceBadge = ({ price }: { price: string }) =>
     <span
       style={{
         position: 'absolute',
-        top: '14px',
-        right: '14px',
+        top: '10px',
+        right: '10px',
         backgroundColor: '#0C0F24',
         color: '#BAA26A',
         fontFamily: 'Cinzel, serif',
-        fontSize: '11px',
+        fontSize: '10px',
         letterSpacing: '0.2em',
-        padding: '6px 12px',
+        padding: '5px 10px',
         borderRadius: '2px',
         whiteSpace: 'nowrap',
         pointerEvents: 'none',
@@ -78,12 +78,12 @@ const NameStrip = ({ name }: { name: string }) => (
       left: 0,
       right: 0,
       bottom: 0,
-      padding: '18px 18px 16px',
+      padding: '14px 14px 12px',
       background:
         'linear-gradient(to top, rgba(12,15,36,0.85) 0%, rgba(12,15,36,0.35) 60%, rgba(12,15,36,0) 100%)',
       color: 'white',
       fontFamily: 'Cinzel, serif',
-      fontSize: 'clamp(14px, 1.05vw, 18px)',
+      fontSize: 'clamp(12px, 0.85vw, 15px)',
       letterSpacing: '0.04em',
       lineHeight: 1.15,
       pointerEvents: 'none',
@@ -102,9 +102,9 @@ const Tile = ({ item }: { item: Item }) => (
         position: 'relative',
         display: 'block',
         width: '100%',
-        aspectRatio: '4 / 5',
+        aspectRatio: '4 / 3',
         overflow: 'hidden',
-        borderRadius: '6px',
+        borderRadius: '4px',
       }}
     >
       <img

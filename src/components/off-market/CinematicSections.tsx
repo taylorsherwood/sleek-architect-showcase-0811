@@ -2,7 +2,6 @@ import { useEffect, useRef, useState, type ReactNode } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Lenis from "lenis";
-import StackingCommunityCards from "./StackingCommunityCards";
 
 import westlakeDusk from "@/assets/community-westlake-hills-hero.webp";
 import privateInventoryHero from "@/assets/hero-luxury-austin.webp";
@@ -182,13 +181,12 @@ const CinematicSections = ({ formNode }: Props) => {
       // Phase 3 (0.85 → 1):   headline blooms in at full scale.
       gsap.set([".split-top-half", ".split-bottom-half"], { yPercent: 0 });
       gsap.set(".split-cover-image", { scale: 1.08 });
-      gsap.set(".split-stat", { opacity: 0, y: 24, filter: "blur(14px)" });
 
       const splitTl = gsap.timeline({
         scrollTrigger: {
           trigger: ".split-section",
           start: "top top",
-          end: "+=200%",
+          end: "+=160%",
           pin: true,
           pinSpacing: true,
           scrub: 0.8,
@@ -199,26 +197,20 @@ const CinematicSections = ({ formNode }: Props) => {
 
       splitTl
         // Phase 1 — lock & settle
-        .to(".split-cover-image", { scale: 1, ease: "none", duration: 0.35, force3D: true }, 0)
+        .to(".split-cover-image", { scale: 1, ease: "none", duration: 0.45, force3D: true }, 0)
         // Phase 2 — elegant split
         .to(
           ".split-top-half",
-          { yPercent: -100, ease: "power2.inOut", duration: 0.35, force3D: true },
-          0.35
+          { yPercent: -100, ease: "power2.inOut", duration: 0.4, force3D: true },
+          0.45
         )
         .to(
           ".split-bottom-half",
-          { yPercent: 100, ease: "power2.inOut", duration: 0.35, force3D: true },
-          0.35
-        )
-        // Phase 3 — stat headline blurs in once the image behind is exposed
-        .to(
-          ".split-stat",
-          { opacity: 1, y: 0, filter: "blur(0px)", ease: "power2.out", duration: 0.35, force3D: true },
-          0.75
+          { yPercent: 100, ease: "power2.inOut", duration: 0.4, force3D: true },
+          0.45
         )
         // Hold the open state briefly before unpin
-        .to({}, { duration: 0.2 });
+        .to({}, { duration: 0.15 });
 
 
       // ── Section 3 (new): Drone Video — pin section, reveal text on scroll
@@ -266,7 +258,73 @@ const CinematicSections = ({ formNode }: Props) => {
         .fromTo(".bridge-rule", { width: 0, opacity: 0 }, { width: 120, opacity: 1, ease: "power2.out", duration: 0.5 }, 0.5)
         .to({}, { duration: 0.3 });
 
-      // ── Section 4: Stacking Cards Gallery (handled by StackingCommunityCards using motion)
+      // ── Section 4: Horizontal Scroll Gallery
+      const horizontalTrack = root.querySelector<HTMLDivElement>(".horizontal-track");
+      if (horizontalTrack) {
+        const getTotalScroll = () => Math.max(horizontalTrack.scrollWidth - window.innerWidth, 0);
+
+        // Cinematic reveal — as the gallery enters viewport (after counter unpins),
+        // the first card image scales down from over-zoomed and the entire track
+        // eases in. Track opacity is NOT animated post-reveal so cards never
+        // re-fade (which previously caused a black flash + re-appearance bug).
+        gsap.set(".horizontal-track", { yPercent: 8 });
+        gsap.set(".horizontal-card.is-first .horizontal-card-image img", { scale: 1.18 });
+        gsap.set(".horizontal-card.is-first .card-content", { opacity: 0, y: 40 });
+
+        const galleryReveal = gsap.timeline({
+          scrollTrigger: {
+            trigger: ".horizontal-section",
+            start: "top bottom",
+            end: "top top",
+            scrub: 0.6,
+          },
+        });
+        galleryReveal
+          .to(".horizontal-track", { yPercent: 0, ease: "none", force3D: true }, 0)
+          .to(".horizontal-card.is-first .horizontal-card-image img", { scale: 1, ease: "none", force3D: true }, 0)
+          .to(".horizontal-card.is-first .card-content", { opacity: 1, y: 0, ease: "none", force3D: true }, 0.4);
+
+        // Horizontal scroll pin
+        const horizontalTween = gsap.to(horizontalTrack, {
+          x: () => -getTotalScroll(),
+          ease: "none",
+          force3D: true,
+          scrollTrigger: {
+            trigger: ".horizontal-section",
+            start: "top top",
+            end: () => `+=${getTotalScroll()}`,
+            pin: true,
+            pinSpacing: true,
+            scrub: 1,
+            fastScrollEnd: true,
+            anticipatePin: 1,
+          },
+        });
+
+        // Per-card image parallax — skip the LAST card so it doesn't shift
+        // back into frame after the pin releases (which caused the
+        // "black screen → Spanish Oaks reappears" flash).
+        const cardImages = gsap.utils.toArray<HTMLDivElement>(".horizontal-card-image");
+        cardImages.forEach((img, i) => {
+          if (i === cardImages.length - 1) return;
+          gsap.fromTo(
+            img,
+            { xPercent: -3 },
+            {
+              xPercent: 3,
+              ease: "none",
+              force3D: true,
+              scrollTrigger: {
+                trigger: img.parentElement!,
+                containerAnimation: horizontalTween,
+                start: "left right",
+                end: "right left",
+                scrub: 0.6,
+              },
+            }
+          );
+        });
+      }
 
       // ── Section 5: Counter — REMOVED
 
@@ -543,20 +601,6 @@ const CinematicSections = ({ formNode }: Props) => {
             decoding="async"
           />
         </div>
-        {/* Stat overlay — matches thesis typography. Revealed AFTER the split opens. */}
-        <div className="split-stat absolute inset-0 z-20 flex items-center justify-center pointer-events-none px-8 opacity-0">
-          <h2
-            className="font-display text-[hsl(40,30%,92%)] text-center max-w-[90vw] leading-[1.15] font-light"
-            style={{
-              fontSize: "clamp(1.75rem, 3.4vw, 3.4rem)",
-              textShadow: "0 2px 24px rgba(0,0,0,0.55), 0 0 12px rgba(0,0,0,0.45)",
-            }}
-          >
-            <span style={{ color: "#b9a06c" }} className="italic">$1.2B</span> in active private luxury inventory.{" "}
-            <span style={{ color: "#b9a06c" }} className="italic">15–20%</span> of $2M+ homes close off-market.{" "}
-            <span style={{ color: "#b9a06c" }} className="italic">$4.6B</span> in Austin luxury sales.
-          </h2>
-        </div>
       </section>
 
       {/* ── Section 3 (new): Drone Video — plays only when in view ── */}
@@ -637,8 +681,49 @@ const CinematicSections = ({ formNode }: Props) => {
         </div>
       </section>
 
-      {/* ── Section 4: Stacking Cards Gallery (motion-driven) ─ */}
-      <StackingCommunityCards />
+      {/* ── Section 4: Horizontal Scroll Gallery ─ */}
+      <section className="horizontal-section relative h-screen w-full overflow-hidden bg-[hsl(220,15%,6%)]">
+        <div className="horizontal-track absolute top-0 left-0 flex h-full" style={{ width: `${NEIGHBORHOODS.length * 100}vw` }}>
+          {NEIGHBORHOODS.map((n, idx) => (
+            <div
+              key={n.name}
+              className={`horizontal-card relative h-screen flex items-end overflow-hidden will-change-transform ${idx === 0 ? "is-first" : ""}`}
+              style={{ width: "100vw", height: "100vh", flexShrink: 0 }}
+            >
+              <div
+                className="horizontal-card-image absolute inset-0 will-change-transform"
+                style={{ width: "100%", left: "0%" }}
+              >
+                <img
+                  src={n.image}
+                  alt={`${n.name} luxury Austin neighborhood`}
+                  className="w-full h-full object-cover"
+                  decoding="async"
+                />
+              </div>
+              <div
+                className="absolute inset-0 pointer-events-none"
+                style={{ backgroundColor: "rgba(12, 15, 36, 0.2)" }}
+              />
+              <div
+                className="absolute inset-x-0 bottom-0 h-1/2 pointer-events-none"
+                style={{
+                  background:
+                    "linear-gradient(to top, rgba(12, 15, 36, 0.75), rgba(12, 15, 36, 0))",
+                }}
+              />
+              <div className="card-content relative z-10 p-10 lg:p-14 max-w-xl">
+                <p className="mb-4 text-xs uppercase tracking-[0.24em] font-sans" style={{ color: "#b9a06c" }}>
+                  {n.stat}
+                </p>
+                <h2 className="font-display text-4xl lg:text-6xl text-white leading-[0.98]">
+                  {n.name}
+                </h2>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
 
       {/* ── Section 6: Vertical Split-Reveal Testimonial ─ */}
       <section className="testimonial-section relative w-full h-screen bg-[hsl(220,15%,6%)] overflow-hidden">

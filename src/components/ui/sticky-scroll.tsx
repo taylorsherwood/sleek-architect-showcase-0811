@@ -47,19 +47,7 @@ const communities = FEATURED_SLUGS
     price: PRICE_BY_SLUG[c.slug] ?? '',
   }));
 
-// Distribute communities across three columns. Middle column will be sticky
-// (5 hero tiles to fill the section), left/right columns scroll past it.
 type Item = (typeof communities)[number];
-
-const pickMiddle = (): Item[] => {
-  if (communities.length <= 5) return [...communities];
-  // Evenly sampled across the list so we don't bunch the same neighborhoods.
-  const idx = [0, 0.25, 0.5, 0.75, 1].map((t) =>
-    Math.round(t * (communities.length - 1)),
-  );
-  const seen = new Set<number>();
-  return idx.filter((i) => !seen.has(i) && seen.add(i)).map((i) => communities[i]);
-};
 
 // Distribute communities across three uniform columns (round-robin so
 // each column has roughly the same number of tiles and the section

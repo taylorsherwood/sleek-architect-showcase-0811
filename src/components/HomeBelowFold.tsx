@@ -544,12 +544,10 @@ const TestimonialsSection = () => {
           scrub: 2,
           anticipatePin: 1,
           onUpdate: (self) => {
+            // One-way reveal: once opened, stay open (prevents stuck blur on slow scroll-back)
             if (self.progress >= 0.66 && !hasOpenedRef.current) {
               hasOpenedRef.current = true;
               setRevealed(true);
-            } else if (self.progress < 0.62 && hasOpenedRef.current) {
-              hasOpenedRef.current = false;
-              setRevealed(false);
             }
           },
         },

@@ -49,26 +49,19 @@ const communities = FEATURED_SLUGS
 
 type Item = (typeof communities)[number];
 
-// Distribute communities across three uniform columns (round-robin so
-// each column has roughly the same number of tiles and the section
-// ends at the same baseline).
-const left = communities.filter((_, i) => i % 3 === 0);
-const middle = communities.filter((_, i) => i % 3 === 1);
-const right = communities.filter((_, i) => i % 3 === 2);
-
 const PriceBadge = ({ price }: { price: string }) =>
   price ? (
     <span
       style={{
         position: 'absolute',
-        top: '14px',
-        right: '14px',
+        top: '10px',
+        right: '10px',
         backgroundColor: '#0C0F24',
         color: '#BAA26A',
         fontFamily: 'Cinzel, serif',
-        fontSize: '11px',
+        fontSize: '10px',
         letterSpacing: '0.2em',
-        padding: '6px 12px',
+        padding: '5px 10px',
         borderRadius: '2px',
         whiteSpace: 'nowrap',
         pointerEvents: 'none',
@@ -85,12 +78,12 @@ const NameStrip = ({ name }: { name: string }) => (
       left: 0,
       right: 0,
       bottom: 0,
-      padding: '18px 18px 16px',
+      padding: '14px 14px 12px',
       background:
         'linear-gradient(to top, rgba(12,15,36,0.85) 0%, rgba(12,15,36,0.35) 60%, rgba(12,15,36,0) 100%)',
       color: 'white',
       fontFamily: 'Cinzel, serif',
-      fontSize: 'clamp(14px, 1.05vw, 18px)',
+      fontSize: 'clamp(12px, 0.85vw, 15px)',
       letterSpacing: '0.04em',
       lineHeight: 1.15,
       pointerEvents: 'none',
@@ -109,9 +102,9 @@ const Tile = ({ item }: { item: Item }) => (
         position: 'relative',
         display: 'block',
         width: '100%',
-        aspectRatio: '4 / 5',
+        aspectRatio: '4 / 3',
         overflow: 'hidden',
-        borderRadius: '6px',
+        borderRadius: '4px',
       }}
     >
       <img
@@ -144,7 +137,7 @@ export default function StickyScroll() {
       <div
         style={{
           textAlign: 'center',
-          padding: 'clamp(64px, 8vw, 110px) 24px clamp(40px, 5vw, 64px)',
+          padding: 'clamp(56px, 6vw, 88px) 24px clamp(28px, 3vw, 44px)',
         }}
       >
         <p
@@ -165,7 +158,7 @@ export default function StickyScroll() {
             fontFamily: 'Cinzel, serif',
             fontWeight: 400,
             color: 'white',
-            fontSize: 'clamp(28px, 3.4vw, 48px)',
+            fontSize: 'clamp(26px, 2.8vw, 40px)',
             letterSpacing: '0.02em',
             lineHeight: 1.15,
             margin: 0,
@@ -177,32 +170,17 @@ export default function StickyScroll() {
 
       <div
         style={{
+          maxWidth: '1320px',
+          margin: '0 auto',
+          padding: '0 24px clamp(64px, 7vw, 104px)',
           display: 'grid',
-          gridTemplateColumns: 'repeat(12, minmax(0, 1fr))',
-          gap: '8px',
-          padding: '8px',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
+          gap: '14px',
         }}
       >
-        {/* LEFT — scrolls */}
-        <div style={{ gridColumn: 'span 4 / span 4', display: 'grid', gap: '8px' }}>
-          {left.map((c) => (
-            <Tile key={c.slug} item={c} />
-          ))}
-        </div>
-
-        {/* CENTER */}
-        <div style={{ gridColumn: 'span 4 / span 4', display: 'grid', gap: '8px' }}>
-          {middle.map((c) => (
-            <Tile key={c.slug} item={c} />
-          ))}
-        </div>
-
-        {/* RIGHT — scrolls */}
-        <div style={{ gridColumn: 'span 4 / span 4', display: 'grid', gap: '8px' }}>
-          {right.map((c) => (
-            <Tile key={c.slug} item={c} />
-          ))}
-        </div>
+        {communities.map((c) => (
+          <Tile key={c.slug} item={c} />
+        ))}
       </div>
     </section>
   );

@@ -182,12 +182,13 @@ const CinematicSections = ({ formNode }: Props) => {
       // Phase 3 (0.85 → 1):   headline blooms in at full scale.
       gsap.set([".split-top-half", ".split-bottom-half"], { yPercent: 0 });
       gsap.set(".split-cover-image", { scale: 1.08 });
+      gsap.set(".split-stat", { opacity: 0, y: 24, filter: "blur(14px)" });
 
       const splitTl = gsap.timeline({
         scrollTrigger: {
           trigger: ".split-section",
           start: "top top",
-          end: "+=160%",
+          end: "+=200%",
           pin: true,
           pinSpacing: true,
           scrub: 0.8,
@@ -198,20 +199,26 @@ const CinematicSections = ({ formNode }: Props) => {
 
       splitTl
         // Phase 1 — lock & settle
-        .to(".split-cover-image", { scale: 1, ease: "none", duration: 0.45, force3D: true }, 0)
+        .to(".split-cover-image", { scale: 1, ease: "none", duration: 0.35, force3D: true }, 0)
         // Phase 2 — elegant split
         .to(
           ".split-top-half",
-          { yPercent: -100, ease: "power2.inOut", duration: 0.4, force3D: true },
-          0.45
+          { yPercent: -100, ease: "power2.inOut", duration: 0.35, force3D: true },
+          0.35
         )
         .to(
           ".split-bottom-half",
-          { yPercent: 100, ease: "power2.inOut", duration: 0.4, force3D: true },
-          0.45
+          { yPercent: 100, ease: "power2.inOut", duration: 0.35, force3D: true },
+          0.35
+        )
+        // Phase 3 — stat headline blurs in once the image behind is exposed
+        .to(
+          ".split-stat",
+          { opacity: 1, y: 0, filter: "blur(0px)", ease: "power2.out", duration: 0.35, force3D: true },
+          0.75
         )
         // Hold the open state briefly before unpin
-        .to({}, { duration: 0.15 });
+        .to({}, { duration: 0.2 });
 
 
       // ── Section 3 (new): Drone Video — pin section, reveal text on scroll

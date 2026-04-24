@@ -773,7 +773,7 @@ const CinematicSections = ({ formNode }: Props) => {
             />
           </div>
           <div className="h-6 md:h-8" aria-hidden="true" />
-          <div className="form-panel border border-white/10 p-10 bg-white/[0.02] backdrop-blur-sm will-change-transform">
+          <div className="form-panel border border-white/10 p-10 bg-white/[0.02] will-change-transform">
             {formNode}
           </div>
         </div>

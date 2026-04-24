@@ -11,7 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 const ScrollingCredibilityStrip = lazy(() => import("@/components/ScrollingCredibilityStrip"));
 const ExpertiseSection = lazy(() => import("@/components/ExpertiseSection"));
 const FeaturedCommunities = lazy(() => import("@/components/FeaturedCommunities"));
-import StickyCommunitiesScroll from "@/components/ui/sticky-scroll";
+
 
 // Dynamic image imports — only loaded when this chunk is loaded
 import taylorBoatImg from "@/assets/taylor-headshot.webp";
@@ -1174,8 +1174,6 @@ const HomeBelowFold = () => (
     <FeaturedProperties />
 
     <NoscriptFallback />
-
-    <StickyCommunitiesScroll />
 
     <TestimonialsSection />
     <div className="h-8 md:h-12 bg-secondary" aria-hidden="true" />

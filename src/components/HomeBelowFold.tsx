@@ -772,23 +772,20 @@ const TestimonialsSection = () => {
    SECTION 6 — COMMUNITIES
    ───────────────────────────────────────────── */
 
-const communities = [
-  { name: "Barton Creek", descriptor: "Golf, privacy, Hill Country estates", image: "/static-assets/community-barton-creek.webp", slug: "barton-creek", priceFrom: "From $2M+" },
-  { name: "Lake Austin", descriptor: "Waterfront living at its finest", image: "/static-assets/community-lake-austin.webp", slug: "lake-austin", priceFrom: "From $3.5M+" },
-  { name: "Westlake Hills", descriptor: "Scenic bluffs, top-rated schools", image: "/static-assets/community-westlake-hills.webp", slug: "westlake-hills", priceFrom: "From $1.8M+" },
-  { name: "Tarrytown", descriptor: "Old Austin charm, central location", image: "/static-assets/community-tarrytown.webp", slug: "tarrytown", priceFrom: "From $1.5M+" },
-  { name: "Rollingwood", descriptor: "Intimate enclave near Zilker", image: "/static-assets/community-rollingwood.webp", slug: "rollingwood", priceFrom: "From $1.2M+" },
-  { name: "Spanish Oaks", descriptor: "Gated Hill Country luxury", image: "/static-assets/community-spanish-oaks.webp", slug: "spanish-oaks", priceFrom: "From $2.5M+" },
-  { name: "Dripping Springs", descriptor: "Hill Country acreage estates", image: "/static-assets/community-dripping-springs.webp", slug: "dripping-springs", priceFrom: "From $1M+" },
-  { name: "Travis Heights", descriptor: "South Congress character & charm", image: "/static-assets/community-travis-heights.webp", slug: "travis-heights", priceFrom: "From $1.2M+" },
-  { name: "Downtown Austin", descriptor: "Skyline residences & penthouses", image: "/static-assets/community-downtown.webp", slug: "downtown", priceFrom: "From $1M+" },
-];
+const communities = [...communityPages]
+  .sort((a, b) => a.name.localeCompare(b.name))
+  .map((community) => ({
+    name: community.name,
+    descriptor: community.metaDescription || community.overview?.slice(0, 80) || "Explore this Austin community",
+    image: community.image,
+    slug: community.slug,
+    priceFrom: community.priceRange,
+  }))
+  .filter((community) => Boolean(community.image));
 
-// Split 9 communities into 3 columns: left (4) + middle sticky (3) + right (4-ish)
-// Following the requested CSS-sticky gallery pattern.
-const leftCommunities = communities.slice(0, 3);
-const stickyCommunities = communities.slice(3, 6);
-const rightCommunities = communities.slice(6, 9);
+const leftCommunities = communities.filter((_, index) => index % 3 === 0);
+const stickyCommunities = communities.filter((_, index) => index % 3 === 1);
+const rightCommunities = communities.filter((_, index) => index % 3 === 2);
 
 const CommunityTile = ({ c, heightClass }: { c: typeof communities[number]; heightClass: string }) => (
   <Link

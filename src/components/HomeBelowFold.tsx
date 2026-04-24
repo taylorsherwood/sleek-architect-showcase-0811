@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ScrollReveal from "@/components/ScrollReveal";
+import { communityPages } from "@/data/communityData";
 import { formatPhoneNumber, getPhoneDigits, getTimestamp } from "@/lib/formUtils";
 
 gsap.registerPlugin(ScrollTrigger);

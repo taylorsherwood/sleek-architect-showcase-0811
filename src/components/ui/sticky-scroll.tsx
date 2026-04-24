@@ -66,70 +66,7 @@ const Tile = ({ src, alt, slug }: { src: string; alt: string; slug: string }) =>
 
 export default function StickyScroll() {
   return (
-    <main style={{ backgroundColor: '#0C0F24' }}>
-      {/* INTRO — full-screen hero with grid backdrop, sticky behind the gallery */}
-      <div className="sticky-wrapper">
-        <section
-          style={{
-            color: 'white',
-            height: '100vh',
-            width: '100%',
-            backgroundColor: '#0C0F24',
-            display: 'grid',
-            placeContent: 'center',
-            position: 'sticky',
-            top: 0,
-            overflow: 'hidden',
-          }}
-        >
-          {/* grid backdrop */}
-          <div
-            aria-hidden="true"
-            style={{
-              position: 'absolute',
-              inset: 0,
-              backgroundImage:
-                'linear-gradient(to right, rgba(186,162,106,0.10) 1px, transparent 1px), linear-gradient(to bottom, rgba(186,162,106,0.10) 1px, transparent 1px)',
-              backgroundSize: '54px 54px',
-              maskImage:
-                'radial-gradient(ellipse 60% 50% at 50% 0%, #000 70%, transparent 100%)',
-              WebkitMaskImage:
-                'radial-gradient(ellipse 60% 50% at 50% 0%, #000 70%, transparent 100%)',
-            }}
-          />
-          <div style={{ position: 'relative', padding: '0 32px', textAlign: 'center' }}>
-            <p
-              style={{
-                color: '#BAA26A',
-                fontFamily: 'Cinzel, serif',
-                fontSize: '12px',
-                letterSpacing: '0.4em',
-                textTransform: 'uppercase',
-                marginBottom: '24px',
-              }}
-            >
-              Featured Communities
-            </p>
-            <h2
-              style={{
-                fontSize: 'clamp(36px, 5.5vw, 72px)',
-                fontFamily: 'Cinzel, serif',
-                fontWeight: 600,
-                letterSpacing: '-0.01em',
-                lineHeight: 1.2,
-                color: 'white',
-                margin: 0,
-              }}
-            >
-              Where Austin&apos;s Best <br />
-              Real Estate Lives <br />
-              <span style={{ color: '#BAA26A' }}>Scroll down 👇</span>
-            </h2>
-          </div>
-        </section>
-      </div>
-
-      {/* GALLERY — 3-column grid; middle column is sticky */}
+    <section aria-label="Featured communities" style={{ backgroundColor: '#0C0F24' }}>
       <section style={{ color: 'white', width: '100%', backgroundColor: '#0C0F24' }}>
         <div
           style={{
@@ -196,49 +133,6 @@ export default function StickyScroll() {
           </div>
         </div>
       </section>
-
-      {/* OUTRO — gradient wordmark, like the reference */}
-      <footer style={{ backgroundColor: '#0C0F24', position: 'relative' }}>
-        <h2
-          style={{
-            fontSize: '16vw',
-            transform: 'translateY(80px)',
-            lineHeight: 1,
-            textTransform: 'uppercase',
-            fontFamily: 'Cinzel, serif',
-            fontWeight: 700,
-            textAlign: 'center',
-            background: 'linear-gradient(to right, #BAA26A, #5a4a2a)',
-            WebkitBackgroundClip: 'text',
-            backgroundClip: 'text',
-            color: 'transparent',
-            margin: 0,
-          }}
-        >
-          Echelon
-        </h2>
-        <div
-          style={{
-            backgroundColor: '#000',
-            height: '160px',
-            position: 'relative',
-            zIndex: 10,
-            display: 'grid',
-            placeContent: 'center',
-            color: 'rgba(255,255,255,0.6)',
-            fontFamily: 'Jost, sans-serif',
-            fontSize: '12px',
-            letterSpacing: '0.2em',
-            textTransform: 'uppercase',
-            borderTopLeftRadius: '9999px',
-            borderTopRightRadius: '9999px',
-          }}
-        >
-          <a href="/communities" style={{ color: '#BAA26A', textDecoration: 'none' }}>
-            View all communities →
-          </a>
-        </div>
-      </footer>
-    </main>
+    </section>
   );
 }

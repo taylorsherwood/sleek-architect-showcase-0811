@@ -536,6 +536,20 @@ const CinematicSections = ({ formNode }: Props) => {
             decoding="async"
           />
         </div>
+        {/* Stat overlay — matches thesis typography */}
+        <div className="absolute inset-0 z-20 flex items-center justify-center pointer-events-none px-8">
+          <h2
+            className="font-display text-[hsl(40,30%,92%)] text-center max-w-[90vw] leading-[1.15] font-light"
+            style={{
+              fontSize: "clamp(1.75rem, 3.4vw, 3.4rem)",
+              textShadow: "0 2px 24px rgba(0,0,0,0.55), 0 0 12px rgba(0,0,0,0.45)",
+            }}
+          >
+            <span style={{ color: "#b9a06c" }} className="italic">$1.2B</span> in active private luxury inventory.{" "}
+            <span style={{ color: "#b9a06c" }} className="italic">15–20%</span> of $2M+ homes close off-market.{" "}
+            <span style={{ color: "#b9a06c" }} className="italic">$4.6B</span> in Austin luxury sales.
+          </h2>
+        </div>
       </section>
 
       {/* ── Section 3 (new): Drone Video — plays only when in view ── */}

@@ -92,12 +92,12 @@ const Card = ({
       <motion.div
         style={{
           scale,
-          top: `calc(-5vh + ${i * 32}px)`,
+          top: `calc(${i * 28}px)`,
           backgroundColor: "#0C0F24",
           transformOrigin: "top center",
           boxShadow: "0 30px 80px rgba(0,0,0,0.55)",
         }}
-        className="relative rounded-md overflow-hidden w-[min(86vw,1200px)] h-[min(70vh,620px)] flex"
+        className="relative rounded-md overflow-hidden w-[min(92vw,1320px)] h-[88vh] max-h-[820px] flex"
       >
         {/* Left: copy panel */}
         <div className="relative z-10 hidden md:flex flex-col justify-center w-[42%] p-10 lg:p-14">

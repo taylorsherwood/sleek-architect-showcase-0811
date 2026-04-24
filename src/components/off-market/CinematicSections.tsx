@@ -536,8 +536,8 @@ const CinematicSections = ({ formNode }: Props) => {
             decoding="async"
           />
         </div>
-        {/* Stat overlay — matches thesis typography */}
-        <div className="absolute inset-0 z-20 flex items-center justify-center pointer-events-none px-8">
+        {/* Stat overlay — matches thesis typography. Revealed AFTER the split opens. */}
+        <div className="split-stat absolute inset-0 z-20 flex items-center justify-center pointer-events-none px-8 opacity-0">
           <h2
             className="font-display text-[hsl(40,30%,92%)] text-center max-w-[90vw] leading-[1.15] font-light"
             style={{

@@ -862,15 +862,17 @@ const CommunitiesSection = () => {
             ))}
           </div>
 
-          {/* Desktop: CSS-sticky gallery — left/right scroll, middle column sticks */}
-          <div className="hidden lg:grid grid-cols-12 gap-3">
+          {/* Desktop: CSS-sticky gallery — left/right scroll, middle column sticks
+              Side columns are intentionally taller than the middle (h-screen) so
+              the middle column has real travel distance to "stick" against. */}
+          <div className="hidden lg:grid grid-cols-12 gap-3 items-start">
             <div className="grid gap-3 col-span-4">
               {leftCommunities.map((c) => (
-                <CommunityTile key={c.slug} c={c} heightClass="h-[28rem]" />
+                <CommunityTile key={c.slug} c={c} heightClass="h-[36rem]" />
               ))}
             </div>
 
-            <div className="sticky top-0 h-screen w-full col-span-4 gap-3 grid grid-rows-3">
+            <div className="sticky top-20 h-[calc(100vh-6rem)] w-full col-span-4 gap-3 grid grid-rows-3 self-start">
               {stickyCommunities.map((c) => (
                 <CommunityTile key={c.slug} c={c} heightClass="h-full" />
               ))}
@@ -878,7 +880,7 @@ const CommunitiesSection = () => {
 
             <div className="grid gap-3 col-span-4">
               {rightCommunities.map((c) => (
-                <CommunityTile key={c.slug} c={c} heightClass="h-[28rem]" />
+                <CommunityTile key={c.slug} c={c} heightClass="h-[36rem]" />
               ))}
             </div>
           </div>

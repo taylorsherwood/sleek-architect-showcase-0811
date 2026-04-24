@@ -385,31 +385,6 @@ const AustinMarketExplorer = () => {
             </div>
           </div>
 
-          {/* Scroll-step anchors — IntersectionObserver targets.
-              Stretched across the section's scroll range. */}
-          {!reducedMotion && (
-            <div
-              aria-hidden="true"
-              className="absolute inset-0 pointer-events-none"
-            >
-              {SCENES.map((s, i) => (
-                <div
-                  key={s.slug}
-                  ref={(el) => {
-                    stepRefs.current[i] = el;
-                  }}
-                  style={{
-                    position: "absolute",
-                    top: `${(i / SCENES.length) * 100}%`,
-                    height: `${100 / SCENES.length}%`,
-                    left: 0,
-                    right: 0,
-                  }}
-                />
-              ))}
-            </div>
-          )}
-
           {/* Bottom progress rail */}
           <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-white/10">
             <div
@@ -421,6 +396,32 @@ const AustinMarketExplorer = () => {
             />
           </div>
         </div>
+
+        {/* Scroll-step anchors — IntersectionObserver targets.
+            Placed OUTSIDE the sticky child so they actually traverse the
+            viewport as the page scrolls through the section. */}
+        {!reducedMotion && (
+          <div
+            aria-hidden="true"
+            className="absolute inset-0 pointer-events-none"
+          >
+            {SCENES.map((s, i) => (
+              <div
+                key={s.slug}
+                ref={(el) => {
+                  stepRefs.current[i] = el;
+                }}
+                style={{
+                  position: "absolute",
+                  top: `${(i / SCENES.length) * 100}%`,
+                  height: `${100 / SCENES.length}%`,
+                  left: 0,
+                  right: 0,
+                }}
+              />
+            ))}
+          </div>
+        )}
       </div>
 
       {/* MOBILE — stacked step-by-step scenes.

@@ -122,11 +122,11 @@ const CommunitiesPreview = () => {
 
           {/* Editorial layout: hero + 5 secondary tiles */}
           <ScrollReveal delay={100}>
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-[6px]">
-            {/* Hero — 7 of 12 cols, spans 2 rows */}
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-[6px] md:auto-rows-[minmax(0,1fr)]">
+            {/* Hero — 7 of 12 cols, spans 2 rows on desktop */}
             <Link
               to={`/communities/${hero.slug}`}
-              className="community-pin-tile group relative overflow-hidden md:col-span-7 md:row-span-2 aspect-[4/3] md:aspect-auto"
+              className="community-pin-tile group relative overflow-hidden md:col-span-7 md:row-span-3 aspect-[4/3] md:aspect-auto md:min-h-[560px]"
             >
               <img
                 src={hero.image}

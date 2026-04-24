@@ -1,5 +1,6 @@
 'use client';
 
+import { Link } from 'react-router-dom';
 import { communityPages } from '@/data/communityData';
 
 const FEATURED_SLUGS = [
@@ -66,58 +67,60 @@ const side = communities.filter((c) => !middleSlugs.has(c.slug));
 const left = side.filter((_, i) => i % 2 === 0);
 const right = side.filter((_, i) => i % 2 === 1);
 
-const Caption = ({ name, price }: { name: string; price: string }) => (
-  <figcaption
+const PriceBadge = ({ price }: { price: string }) =>
+  price ? (
+    <span
+      style={{
+        position: 'absolute',
+        top: '14px',
+        right: '14px',
+        backgroundColor: '#0C0F24',
+        color: '#BAA26A',
+        fontFamily: 'Cinzel, serif',
+        fontSize: '11px',
+        letterSpacing: '0.2em',
+        padding: '6px 12px',
+        borderRadius: '2px',
+        whiteSpace: 'nowrap',
+        pointerEvents: 'none',
+      }}
+    >
+      {price}
+    </span>
+  ) : null;
+
+const NameStrip = ({ name }: { name: string }) => (
+  <span
     style={{
       position: 'absolute',
       left: 0,
       right: 0,
       bottom: 0,
-      padding: '20px 22px',
+      padding: '18px 18px 16px',
       background:
-        'linear-gradient(to top, rgba(12,15,36,0.85) 0%, rgba(12,15,36,0.45) 55%, rgba(12,15,36,0) 100%)',
-      display: 'flex',
-      alignItems: 'flex-end',
-      justifyContent: 'space-between',
-      gap: '12px',
+        'linear-gradient(to top, rgba(12,15,36,0.85) 0%, rgba(12,15,36,0.35) 60%, rgba(12,15,36,0) 100%)',
       color: 'white',
+      fontFamily: 'Cinzel, serif',
+      fontSize: 'clamp(14px, 1.05vw, 18px)',
+      letterSpacing: '0.04em',
+      lineHeight: 1.15,
       pointerEvents: 'none',
     }}
   >
-    <span
-      style={{
-        fontFamily: 'Cinzel, serif',
-        fontSize: 'clamp(14px, 1.05vw, 18px)',
-        letterSpacing: '0.04em',
-        lineHeight: 1.15,
-      }}
-    >
-      {name}
-    </span>
-    {price && (
-      <span
-        style={{
-          fontFamily: 'Jost, sans-serif',
-          fontSize: '11px',
-          letterSpacing: '0.18em',
-          textTransform: 'uppercase',
-          color: '#BAA26A',
-          whiteSpace: 'nowrap',
-        }}
-      >
-        {price}
-      </span>
-    )}
-  </figcaption>
+    {name}
+  </span>
 );
 
-const Tile = ({ item, height }: { item: Item; height: string }) => (
+const Tile = ({ item }: { item: Item }) => (
   <figure style={{ width: '100%', margin: 0 }}>
-    <a
-      href={`/communities/${item.slug}`}
+    <Link
+      to={`/communities/${item.slug}`}
+      aria-label={`${item.name} — view community`}
       style={{
         position: 'relative',
         display: 'block',
+        width: '100%',
+        aspectRatio: '4 / 5',
         overflow: 'hidden',
         borderRadius: '6px',
       }}
@@ -128,14 +131,17 @@ const Tile = ({ item, height }: { item: Item; height: string }) => (
         loading="lazy"
         decoding="async"
         style={{
+          position: 'absolute',
+          inset: 0,
           width: '100%',
-          height,
+          height: '100%',
           objectFit: 'cover',
           display: 'block',
         }}
       />
-      <Caption name={item.name} price={item.price} />
-    </a>
+      <PriceBadge price={item.price} />
+      <NameStrip name={item.name} />
+    </Link>
   </figure>
 );
 
@@ -191,7 +197,7 @@ export default function StickyScroll() {
         {/* LEFT — scrolls */}
         <div style={{ gridColumn: 'span 4 / span 4', display: 'grid', gap: '8px' }}>
           {left.map((c) => (
-            <Tile key={c.slug} item={c} height="24rem" />
+            <Tile key={c.slug} item={c} />
           ))}
         </div>
 
@@ -210,8 +216,9 @@ export default function StickyScroll() {
         >
           {middle.map((c) => (
             <figure key={c.slug} style={{ width: '100%', height: '100%', margin: 0 }}>
-              <a
-                href={`/communities/${c.slug}`}
+              <Link
+                to={`/communities/${c.slug}`}
+                aria-label={`${c.name} — view community`}
                 style={{
                   position: 'relative',
                   display: 'block',
@@ -233,8 +240,9 @@ export default function StickyScroll() {
                     display: 'block',
                   }}
                 />
-                <Caption name={c.name} price={c.price} />
-              </a>
+                <PriceBadge price={c.price} />
+                <NameStrip name={c.name} />
+              </Link>
             </figure>
           ))}
         </div>
@@ -242,7 +250,7 @@ export default function StickyScroll() {
         {/* RIGHT — scrolls */}
         <div style={{ gridColumn: 'span 4 / span 4', display: 'grid', gap: '8px' }}>
           {right.map((c) => (
-            <Tile key={c.slug} item={c} height="24rem" />
+            <Tile key={c.slug} item={c} />
           ))}
         </div>
       </div>

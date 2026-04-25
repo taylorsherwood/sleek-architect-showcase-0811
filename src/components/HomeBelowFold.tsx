@@ -579,16 +579,50 @@ const TestimonialsSection = () => {
         <div className="absolute inset-0 z-0 flex items-center justify-end px-8 md:px-16 lg:px-24">
           <div className="max-w-xl md:w-1/2 md:pl-8" style={{ paddingTop: "clamp(40px, 7vh, 96px)" }}>
             <p
-              className="tsplit-attribution text-gold mb-6 font-sans uppercase will-change-transform"
-              style={{ fontSize: "0.72rem", letterSpacing: "0.28em", paddingLeft: "1.6ch", opacity: 0 }}
+              className="tsplit-attribution text-gold mb-10 will-change-transform"
+              style={{
+                fontFamily: '"Jost", sans-serif',
+                fontSize: "0.7rem",
+                fontWeight: 500,
+                letterSpacing: "0.32em",
+                textTransform: "uppercase",
+                opacity: 0,
+              }}
             >
               Client Experiences
             </p>
-            <div className="relative min-h-[320px]">
+            <div className="relative min-h-[340px]">
+              {/* Oversized editorial opening quote — graphic element */}
+              <span
+                aria-hidden="true"
+                className="select-none pointer-events-none"
+                style={{
+                  position: "absolute",
+                  top: "-0.55em",
+                  left: "-0.05em",
+                  fontFamily: '"Cinzel", serif',
+                  fontWeight: 400,
+                  fontSize: "clamp(4.5rem, 7vw, 6.5rem)",
+                  lineHeight: 1,
+                  color: "#b9a06c",
+                  opacity: revealed ? 0.9 : 0,
+                  transition: "opacity 0.7s ease 0.1s",
+                }}
+              >
+                &ldquo;
+              </span>
+
               <p
                 key={`quote-${active}`}
-                className="font-display italic text-foreground/90 font-light leading-[1.45] mb-8 normal-case"
-                style={{ fontSize: "clamp(1.05rem, 1.4vw, 1.4rem)", textTransform: "none" }}
+                className="text-foreground/90 mb-10 relative"
+                style={{
+                  fontFamily: '"Jost", sans-serif',
+                  fontWeight: 300,
+                  fontSize: "clamp(1.05rem, 1.35vw, 1.35rem)",
+                  lineHeight: 1.7,
+                  letterSpacing: "0.005em",
+                  paddingTop: "0.8rem",
+                }}
               >
                 <span
                   className="tsplit-line block will-change-transform"
@@ -599,16 +633,33 @@ const TestimonialsSection = () => {
                     animation: revealed ? "fadeUpBlur 0.7s ease both" : undefined,
                   }}
                 >
-                  &ldquo;{t.quote}&rdquo;
+                  {t.quote}
                 </span>
               </p>
+
+              {/* Refined gold hairline divider */}
+              <div
+                key={`rule-${active}`}
+                style={{
+                  width: "32px",
+                  height: "1px",
+                  background: "#b9a06c",
+                  opacity: revealed ? 0.7 : 0,
+                  marginBottom: "1.25rem",
+                  transition: "opacity 0.6s ease 0.2s",
+                }}
+              />
+
               <p
                 key={`name-${active}`}
-                className="tsplit-attribution text-gold uppercase font-sans will-change-transform"
+                className="tsplit-attribution will-change-transform"
                 style={{
-                  fontSize: "0.72rem",
-                  letterSpacing: "0.28em",
-                  paddingLeft: "1.6ch",
+                  fontFamily: '"Cinzel", serif',
+                  fontSize: "0.78rem",
+                  fontWeight: 500,
+                  letterSpacing: "0.22em",
+                  textTransform: "uppercase",
+                  color: "hsl(var(--foreground))",
                   opacity: revealed ? undefined : 0,
                   transform: revealed ? undefined : "translateY(12px)",
                   filter: revealed ? undefined : "blur(6px)",
@@ -619,16 +670,19 @@ const TestimonialsSection = () => {
               </p>
               <p
                 key={`ctx-${active}`}
-                className="tsplit-attribution text-muted-foreground uppercase font-sans will-change-transform"
+                className="tsplit-attribution will-change-transform"
                 style={{
-                  fontSize: "0.7rem",
-                  letterSpacing: "0.18em",
-                  marginTop: "0.55rem",
-                  paddingLeft: "1.6ch",
+                  fontFamily: '"Jost", sans-serif',
+                  fontSize: "0.68rem",
+                  fontWeight: 400,
+                  letterSpacing: "0.24em",
+                  textTransform: "uppercase",
+                  color: "hsl(var(--muted-foreground))",
+                  marginTop: "0.6rem",
+                  animation: revealed ? "fadeUpBlur 0.7s ease 0.25s both" : undefined,
                   opacity: revealed ? undefined : 0,
                   transform: revealed ? undefined : "translateY(12px)",
                   filter: revealed ? undefined : "blur(6px)",
-                  animation: revealed ? "fadeUpBlur 0.7s ease 0.25s both" : undefined,
                 }}
               >
                 {t.context}
@@ -637,8 +691,8 @@ const TestimonialsSection = () => {
 
               {revealed && (
                 <div
-                  className="flex items-center gap-2.5 mt-10"
-                  style={{ paddingLeft: "1.6ch", opacity: 0, animation: "fadeUp 0.6s ease 0.35s both" }}
+                  className="flex items-center gap-2.5 mt-12"
+                  style={{ opacity: 0, animation: "fadeUp 0.6s ease 0.35s both" }}
                 >
                   {testimonials.map((_, i) => (
                     <button

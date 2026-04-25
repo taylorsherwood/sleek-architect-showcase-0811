@@ -1478,6 +1478,7 @@ const HomeBelowFold = () => (
 
     <div className="parallax-break hidden md:block" style={{ backgroundImage: "url('/images/parallax-interior.webp')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties} aria-hidden="true" />
 
+    <div className="h-12 md:h-20 bg-background" aria-hidden="true" />
     <div className="flex items-center justify-center py-8 md:py-12 bg-background" aria-hidden="true">
       <div className="flex items-center gap-4 max-w-[280px] w-full">
         <div className="flex-1 h-px bg-gradient-to-r from-transparent to-[#b9a06c]" />

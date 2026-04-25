@@ -853,7 +853,7 @@ const TestimonialsSection = () => {
               {testimonials.map((_, i) => (
                 <button
                   key={i}
-                  onClick={() => setActive(i)}
+                  onClick={() => handleDotClick(i)}
                   className="w-2.5 h-2.5 rounded-full transition-all duration-300 cursor-pointer"
                   style={{
                     background: i === active ? "hsl(38 39% 61%)" : "hsl(var(--border))",

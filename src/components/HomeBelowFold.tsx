@@ -848,12 +848,35 @@ const communities = [
   { name: "Westlake Hills", eyebrow: "EANES ISD, FROM $1.8M", image: "/static-assets/community-westlake-hills.webp", slug: "westlake-hills" },
 ];
 
-const CommunitiesSection = () => (
-  <section className="bg-background" style={{ padding: "clamp(80px, 12vw, 120px) 0 0" }}>
-    <div className="container mx-auto px-6">
-      <div className="max-w-[1320px] mx-auto">
-        <ScrollReveal>
-          <div className="text-center" style={{ marginBottom: "clamp(48px, 6vw, 72px)" }}>
+const CommunitiesSection = () => {
+  const headerRef = useRef<HTMLDivElement>(null);
+  const [revealed, setRevealed] = useState(false);
+
+  useEffect(() => {
+    const el = headerRef.current;
+    if (!el) return;
+    const obs = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setRevealed(true);
+          obs.disconnect();
+        }
+      },
+      { threshold: 0.35 }
+    );
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, []);
+
+  return (
+    <section className="bg-background" style={{ padding: "clamp(28px, 4vw, 48px) 0 0" }}>
+      <div className="container mx-auto px-6">
+        <div className="max-w-[1320px] mx-auto">
+          <div
+            ref={headerRef}
+            className="text-center"
+            style={{ marginBottom: "clamp(40px, 5vw, 64px)" }}
+          >
             <p
               className="text-gold mb-5"
               style={{
@@ -862,6 +885,12 @@ const CommunitiesSection = () => (
                 fontWeight: 500,
                 letterSpacing: "0.3em",
                 textTransform: "uppercase",
+                opacity: revealed ? 1 : 0,
+                filter: revealed ? "blur(0px)" : "blur(12px)",
+                transform: revealed ? "translateY(0)" : "translateY(14px)",
+                transition:
+                  "opacity 1s cubic-bezier(0.22, 1, 0.36, 1), filter 1.1s cubic-bezier(0.22, 1, 0.36, 1), transform 1s cubic-bezier(0.22, 1, 0.36, 1)",
+                willChange: "opacity, filter, transform",
               }}
             >
               FEATURED NEIGHBORHOODS
@@ -875,34 +904,48 @@ const CommunitiesSection = () => (
                 lineHeight: 1.2,
                 letterSpacing: "0.02em",
                 marginBottom: "1.75rem",
+                opacity: revealed ? 1 : 0,
+                filter: revealed ? "blur(0px)" : "blur(18px)",
+                transform: revealed ? "translateY(0)" : "translateY(22px)",
+                transition:
+                  "opacity 1.2s cubic-bezier(0.22, 1, 0.36, 1) 0.15s, filter 1.3s cubic-bezier(0.22, 1, 0.36, 1) 0.15s, transform 1.2s cubic-bezier(0.22, 1, 0.36, 1) 0.15s",
+                willChange: "opacity, filter, transform",
               }}
             >
               Where Austin lives well.
             </h2>
             <div
               aria-hidden="true"
-              style={{ width: "40px", height: "1px", background: "#b9a06c", margin: "0 auto" }}
+              style={{
+                width: revealed ? "40px" : "0px",
+                height: "1px",
+                background: "#b9a06c",
+                margin: "0 auto",
+                opacity: revealed ? 1 : 0,
+                transition:
+                  "width 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.5s, opacity 0.6s ease 0.5s",
+              }}
             />
+          </div>
+        </div>
+      </div>
+
+      <Suspense fallback={<div className="min-h-[400px] bg-[hsl(220,15%,6%)]" />}>
+        <HomeCommunitiesScroll />
+      </Suspense>
+
+      <div className="container mx-auto px-6">
+        <ScrollReveal delay={200}>
+          <div className="text-center" style={{ padding: "clamp(48px, 6vw, 72px) 0" }}>
+            <Link to="/communities" className="cta-luxury">
+              VIEW ALL COMMUNITIES
+            </Link>
           </div>
         </ScrollReveal>
       </div>
-    </div>
-
-    <Suspense fallback={<div className="min-h-[400px] bg-[hsl(220,15%,6%)]" />}>
-      <HomeCommunitiesScroll />
-    </Suspense>
-
-    <div className="container mx-auto px-6">
-      <ScrollReveal delay={200}>
-        <div className="text-center" style={{ padding: "clamp(48px, 6vw, 72px) 0" }}>
-          <Link to="/communities" className="cta-luxury">
-            VIEW ALL COMMUNITIES
-          </Link>
-        </div>
-      </ScrollReveal>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
 
 /* ─────────────────────────────────────────────
    SECTION 7 — INSIGHTS

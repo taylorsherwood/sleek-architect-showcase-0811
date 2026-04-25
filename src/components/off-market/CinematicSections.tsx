@@ -732,49 +732,7 @@ const CinematicSections = ({ formNode }: Props) => {
         </div>
       </section>
 
-      {/* ── Section 4: Horizontal Scroll Gallery ─ */}
-      <section className="horizontal-section relative h-screen w-full overflow-hidden bg-[hsl(220,15%,6%)]">
-        <div className="horizontal-track absolute top-0 left-0 flex h-full" style={{ width: `${NEIGHBORHOODS.length * 100}vw` }}>
-          {NEIGHBORHOODS.map((n, idx) => (
-            <div
-              key={n.name}
-              className={`horizontal-card relative h-screen flex items-end overflow-hidden will-change-transform ${idx === 0 ? "is-first" : ""}`}
-              style={{ width: "100vw", height: "100vh", flexShrink: 0 }}
-            >
-              <div
-                className="horizontal-card-image absolute inset-0 will-change-transform"
-                style={{ width: "100%", left: "0%" }}
-              >
-                <img
-                  src={n.image}
-                  alt={`${n.name} luxury Austin neighborhood`}
-                  className="w-full h-full object-cover"
-                  decoding="async"
-                />
-              </div>
-              <div
-                className="absolute inset-0 pointer-events-none"
-                style={{ backgroundColor: "rgba(12, 15, 36, 0.2)" }}
-              />
-              <div
-                className="absolute inset-x-0 bottom-0 h-1/2 pointer-events-none"
-                style={{
-                  background:
-                    "linear-gradient(to top, rgba(12, 15, 36, 0.75), rgba(12, 15, 36, 0))",
-                }}
-              />
-              <div className="card-content relative z-10 p-10 lg:p-14 max-w-xl">
-                <p className="mb-4 text-xs uppercase tracking-[0.24em] font-sans" style={{ color: "#b9a06c" }}>
-                  {n.stat}
-                </p>
-                <h2 className="font-display text-4xl lg:text-6xl text-white leading-[0.98]">
-                  {n.name}
-                </h2>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+      {/* ── Section 4: Horizontal Scroll Gallery — REMOVED ─ */}
 
       {/* ── Section 6: Vertical Split-Reveal Testimonial ─ */}
       <section className="testimonial-section relative w-full h-screen bg-[hsl(220,15%,6%)] overflow-hidden">

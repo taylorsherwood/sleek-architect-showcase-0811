@@ -886,12 +886,6 @@ const CommunitiesSection = () => {
                 fontWeight: 500,
                 letterSpacing: "0.3em",
                 textTransform: "uppercase",
-                opacity: revealed ? 1 : 0,
-                filter: revealed ? "blur(0px)" : "blur(12px)",
-                transform: revealed ? "translateY(0)" : "translateY(14px)",
-                transition:
-                  "opacity 1s cubic-bezier(0.22, 1, 0.36, 1), filter 1.1s cubic-bezier(0.22, 1, 0.36, 1), transform 1s cubic-bezier(0.22, 1, 0.36, 1)",
-                willChange: "opacity, filter, transform",
               }}
             >
               <span>FEATURED NEIGHBORHOODS</span>
@@ -905,12 +899,6 @@ const CommunitiesSection = () => {
                 lineHeight: 1.2,
                 letterSpacing: "0.02em",
                 marginBottom: "1.75rem",
-                opacity: revealed ? 1 : 0,
-                filter: revealed ? "blur(0px)" : "blur(18px)",
-                transform: revealed ? "translateY(0)" : "translateY(22px)",
-                transition:
-                  "opacity 1.2s cubic-bezier(0.22, 1, 0.36, 1) 0.15s, filter 1.3s cubic-bezier(0.22, 1, 0.36, 1) 0.15s, transform 1.2s cubic-bezier(0.22, 1, 0.36, 1) 0.15s",
-                willChange: "opacity, filter, transform",
               }}
             >
               <span>Where Austin lives well.</span>
@@ -918,13 +906,10 @@ const CommunitiesSection = () => {
             <div
               aria-hidden="true"
               style={{
-                width: revealed ? "40px" : "0px",
+                width: "40px",
                 height: "1px",
                 background: "#b9a06c",
                 margin: "0 auto",
-                opacity: revealed ? 1 : 0,
-                transition:
-                  "width 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.5s, opacity 0.6s ease 0.5s",
               }}
             />
           </div>

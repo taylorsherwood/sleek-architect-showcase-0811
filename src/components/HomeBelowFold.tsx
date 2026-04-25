@@ -912,7 +912,7 @@ const CommunitiesSection = () => {
                 willChange: "opacity, filter, transform",
               }}
             >
-              Where Austin lives well.
+              <span>Where Austin lives well.</span>
             </h2>
             <div
               aria-hidden="true"

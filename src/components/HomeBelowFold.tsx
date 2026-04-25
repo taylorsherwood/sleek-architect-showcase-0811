@@ -655,6 +655,7 @@ const TestimonialsSection = () => {
                   letterSpacing: "-0.005em",
                   color: "hsl(var(--foreground) / 0.92)",
                   zIndex: 1,
+                  minHeight: "clamp(280px, 32vh, 360px)",
                 }}
               >
                 <span

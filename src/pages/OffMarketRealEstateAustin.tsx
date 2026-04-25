@@ -4,6 +4,7 @@ import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createBreadcrumbSchema, createFAQSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
 import heroImage from "@/assets/hero-austin-skyline-sunset.webp";
 import echelonLogo from "@/assets/echelon-logo-gold.png";
+import echelonMark from "@/assets/echelon-mark-gold.png";
 import { formatPhoneNumber, getTimestamp } from "@/lib/formUtils";
 import CinematicSections from "@/components/off-market/CinematicSections";
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from "@/components/ui/dialog";

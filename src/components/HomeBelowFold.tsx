@@ -784,6 +784,7 @@ const TestimonialsSection = () => {
           </div>
         </div>
       </section>
+      </div>
 
       {/* MOBILE — centered rotating quote */}
       <section className="md:hidden bg-secondary relative overflow-hidden" style={{ padding: "clamp(48px, 7vw, 90px) 0" }}>

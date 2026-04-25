@@ -84,27 +84,32 @@ const HomeCommunitiesScroll = () => {
         },
       });
 
-      // Per-card subtle parallax (skip last card to avoid post-pin shift)
-      const cardImages = gsap.utils.toArray<HTMLDivElement>(".hcs-card-image");
-      cardImages.forEach((img, i) => {
-        if (i === cardImages.length - 1) return;
-        gsap.fromTo(
-          img,
-          { xPercent: -3 },
-          {
-            xPercent: 3,
-            ease: "none",
-            force3D: true,
-            scrollTrigger: {
-              trigger: img.parentElement!,
-              containerAnimation: horizontalTween,
-              start: "left right",
-              end: "right left",
-              scrub: 0.6,
-            },
-          }
-        );
-      });
+      // Per-card subtle parallax (skip last card to avoid post-pin shift).
+      // Skipped on coarse pointers (touch tablets) where the pinned horizontal
+      // scroll is already work-intensive — keeps frame budget for the main pan.
+      const isCoarsePointer = window.matchMedia("(pointer: coarse)").matches;
+      if (!isCoarsePointer) {
+        const cardImages = gsap.utils.toArray<HTMLDivElement>(".hcs-card-image");
+        cardImages.forEach((img, i) => {
+          if (i === cardImages.length - 1) return;
+          gsap.fromTo(
+            img,
+            { xPercent: -2 },
+            {
+              xPercent: 2,
+              ease: "none",
+              force3D: true,
+              scrollTrigger: {
+                trigger: img.parentElement!,
+                containerAnimation: horizontalTween,
+                start: "left right",
+                end: "right left",
+                scrub: true,
+              },
+            }
+          );
+        });
+      }
 
       // Hide site navigation while the gallery is fully pinned (immersive
       // full-screen mode). Restore once the user scrolls past the last card
@@ -158,7 +163,7 @@ const HomeCommunitiesScroll = () => {
               key={n.name}
               to={`/communities/${n.slug}`}
               aria-label={`Explore ${n.name} — luxury Austin community`}
-              className={`hcs-card group relative h-screen flex items-end overflow-hidden will-change-transform cursor-pointer ${idx === 0 ? "is-first" : ""}`}
+              className={`hcs-card group relative h-screen flex items-end overflow-hidden cursor-pointer ${idx === 0 ? "is-first" : ""}`}
               style={{ width: "100vw", height: "100vh", flexShrink: 0 }}
             >
               <div
@@ -169,8 +174,9 @@ const HomeCommunitiesScroll = () => {
                   src={n.image}
                   alt={`${n.name} luxury Austin neighborhood`}
                   className="w-full h-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.03]"
-                  decoding="async"
-                  loading="lazy"
+                  decoding={idx <= 1 ? "sync" : "async"}
+                  loading={idx === 0 ? "eager" : "lazy"}
+                  fetchPriority={idx === 0 ? "high" : "auto"}
                 />
               </div>
               <div

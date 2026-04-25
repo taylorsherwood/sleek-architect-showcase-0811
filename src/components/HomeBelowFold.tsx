@@ -1348,13 +1348,17 @@ const HomeBelowFold = () => (
 
     <LeadCapture />
 
-    <InsightsSection />
+    <div style={{ contentVisibility: "auto", containIntrinsicSize: "0 800px" } as React.CSSProperties}>
+      <InsightsSection />
+    </div>
     <div className="h-12 md:h-20 bg-secondary" aria-hidden="true" />
 
     <div className="parallax-break hidden md:block" style={{ backgroundImage: "url('/images/parallax-interior.webp')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties} aria-hidden="true" />
 
     <div className="h-12 md:h-20 bg-background" aria-hidden="true" />
-    <EditorialInsights />
+    <div style={{ contentVisibility: "auto", containIntrinsicSize: "0 1200px" } as React.CSSProperties}>
+      <EditorialInsights />
+    </div>
 
     <div className="flex items-center justify-center py-8 md:py-12 bg-background" aria-hidden="true">
       <div className="flex items-center gap-4 max-w-[280px] w-full">
@@ -1363,7 +1367,9 @@ const HomeBelowFold = () => (
         <div className="flex-1 h-px bg-gradient-to-l from-transparent to-[#b9a06c]" />
       </div>
     </div>
-    <FinalCTA />
+    <div style={{ contentVisibility: "auto", containIntrinsicSize: "0 600px" } as React.CSSProperties}>
+      <FinalCTA />
+    </div>
 
     <Suspense fallback={<div className="min-h-[100px]" />}>
       <Footer />

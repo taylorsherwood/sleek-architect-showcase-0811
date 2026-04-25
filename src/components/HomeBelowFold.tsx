@@ -726,20 +726,34 @@ const TestimonialsSection = () => {
               {revealed && (
                 <div
                   className="flex items-center gap-3 mt-14 relative"
-                  style={{ opacity: 0, animation: "fadeUp 0.6s ease 0.4s both", zIndex: 1 }}
+                  style={{ opacity: 0, animation: "fadeUp 0.6s ease 0.4s both", zIndex: 2 }}
                 >
                   {testimonials.map((_, i) => (
                     <button
                       key={i}
-                      onClick={() => setActive(i)}
-                      className="transition-all duration-500 cursor-pointer"
+                      onClick={() => handleDotClick(i)}
+                      className="group relative cursor-pointer flex items-center justify-center"
                       style={{
-                        width: i === active ? "24px" : "6px",
-                        height: "1px",
-                        background: i === active ? "#b9a06c" : "hsl(var(--border))",
+                        // Generous hit area for accessibility / clickability
+                        width: i === active ? "32px" : "14px",
+                        height: "20px",
+                        background: "transparent",
+                        border: "none",
+                        padding: 0,
+                        transition: "width 500ms ease",
                       }}
                       aria-label={`View testimonial ${i + 1}`}
-                    />
+                    >
+                      <span
+                        aria-hidden="true"
+                        className="block transition-all duration-500"
+                        style={{
+                          width: i === active ? "24px" : "6px",
+                          height: "1px",
+                          background: i === active ? "#b9a06c" : "hsl(var(--border))",
+                        }}
+                      />
+                    </button>
                   ))}
                 </div>
               )}

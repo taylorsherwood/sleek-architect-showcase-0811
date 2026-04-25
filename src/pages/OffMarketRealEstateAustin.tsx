@@ -224,19 +224,16 @@ const OffMarketRealEstateAustin = () => {
       <button
         type="submit"
         disabled={loading}
-        className="w-full inline-flex items-center justify-center transition-all duration-300 ease-out disabled:opacity-50 active:scale-[0.98] mt-1"
+        className="w-full inline-flex items-center justify-center transition-all duration-300 ease-out disabled:opacity-50 active:scale-[0.98] mt-1 text-[0.7rem] md:text-[0.9rem] py-3 md:py-5 px-6 md:px-10 tracking-[0.18em] md:tracking-[0.2em]"
         style={{
           fontFamily: '"Jost", sans-serif',
-          fontSize: "0.9rem",
           fontWeight: 400,
-          letterSpacing: "0.2em",
           textTransform: "uppercase",
           background: "rgba(186, 162, 106, 0.08)",
           backdropFilter: "blur(14px) saturate(140%)",
           WebkitBackdropFilter: "blur(14px) saturate(140%)",
           border: "1px solid #BAA26A",
           color: "#BAA26A",
-          padding: "1.25rem 2.5rem",
           borderRadius: 0,
           boxShadow: "inset 0 1px 0 rgba(255,255,255,0.06)",
         }}

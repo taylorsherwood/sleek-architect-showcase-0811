@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import ScrollReveal from "@/components/ScrollReveal";
 import commercialMusicLane from "@/assets/commercial-music-lane-austin.jpg";
 import luxuryHomesKitchen from "@/assets/luxury-homes-austin-kitchen.webp";
+import paseoInvestment from "@/assets/paseo-downtown-austin-investment.jpg";
 
 const expertiseBlocks = [
   {

@@ -401,11 +401,14 @@ const CinematicSections = ({ formNode }: Props) => {
                 THE INVITATION
               </p>
               <h2
-                className="font-display text-[#F5F1EA] leading-[1.1] tracking-tight whitespace-pre-line"
+                className="font-display text-[#F5F1EA] leading-[1.1] tracking-tight mb-5 whitespace-pre-line"
                 style={{ fontSize: "clamp(1.85rem, 8vw, 2.6rem)" }}
               >
                 What happens <span className="italic">{"\n"}before</span> it's listed.
               </h2>
+              <p className="text-white/75 font-light leading-relaxed text-base max-w-md">
+                15–20% of all home sales over $2M in Austin occur off-market.
+              </p>
               <div className="mt-6 h-[1px] w-12 bg-[hsl(var(--gold))]/60" />
             </div>
           </div>

@@ -499,19 +499,7 @@ const CinematicSections = ({ formNode }: Props) => {
 
         {/* Section 3 — REMOVED (Homes That Never Reach The Market) */}
 
-        {/* Section 4 — Stacked neighborhood cards */}
-        <section className="px-6 py-12 space-y-8">
-          {NEIGHBORHOODS.map((n) => (
-            <div key={n.name} className="relative h-[60vh] overflow-hidden">
-              <img src={n.image} alt={n.name} className="absolute inset-0 w-full h-full object-cover" decoding="async" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-              <div className="absolute bottom-6 left-6 right-6">
-                <h3 className="font-display text-3xl text-white mb-2">{n.name}</h3>
-                <p className="text-[hsl(var(--gold))] text-xs tracking-[0.2em] uppercase font-sans">{n.stat}</p>
-              </div>
-            </div>
-          ))}
-        </section>
+        {/* Section 4 — REMOVED (Stacked neighborhood cards) */}
 
 
         {/* Section 6 — Testimonial */}

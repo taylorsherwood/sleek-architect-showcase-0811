@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import ScrollReveal from "@/components/ScrollReveal";
 import commercialMusicLane from "@/assets/commercial-music-lane-austin.jpg";
+import luxuryHomesKitchen from "@/assets/luxury-homes-austin-kitchen.webp";
 
 const expertiseBlocks = [
   {
@@ -9,8 +10,8 @@ const expertiseBlocks = [
     description: "Lakefront estates, hilltop mansions, and gated golf communities across Austin's most exclusive enclaves.",
     link: "/austin-luxury-homes-for-sale",
     linkText: "Explore",
-    image: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1600&q=80",
-    alt: "Lake Austin waterfront luxury estate at dusk",
+    image: luxuryHomesKitchen,
+    alt: "Modern Austin luxury home interior with chef's kitchen and open living space",
   },
   {
     eyebrow: "LAND & ENTITLEMENT",

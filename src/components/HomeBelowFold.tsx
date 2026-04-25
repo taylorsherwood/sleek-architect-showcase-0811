@@ -1367,7 +1367,9 @@ const HomeBelowFold = () => (
         <div className="flex-1 h-px bg-gradient-to-l from-transparent to-[#b9a06c]" />
       </div>
     </div>
-    <FinalCTA />
+    <div style={{ contentVisibility: "auto", containIntrinsicSize: "0 600px" } as React.CSSProperties}>
+      <FinalCTA />
+    </div>
 
     <Suspense fallback={<div className="min-h-[100px]" />}>
       <Footer />

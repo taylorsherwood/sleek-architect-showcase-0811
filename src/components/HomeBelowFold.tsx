@@ -542,6 +542,7 @@ const TestimonialsSection = () => {
           pinSpacing: true,
           scrub: 2,
           anticipatePin: 1,
+          invalidateOnRefresh: true,
           onUpdate: (self) => {
             // One-way reveal: once opened, stay open (prevents stuck blur on slow scroll-back)
             if (self.progress >= 0.66 && !hasOpenedRef.current) {

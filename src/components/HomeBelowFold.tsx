@@ -561,6 +561,15 @@ const TestimonialsSection = () => {
     }, root);
 
     return () => {
+      // Kill any ScrollTriggers tied to this root before reverting the gsap context.
+      // This ensures GSAP unwraps its pin-spacer BEFORE React tries to unmount the
+      // section, preventing "removeChild ... not a child of this node" crashes
+      // when sibling sections (FeaturedListings, etc.) re-render around it.
+      ScrollTrigger.getAll().forEach((st) => {
+        if (st.trigger === root || (st.trigger && root?.contains(st.trigger as Node))) {
+          st.kill(true);
+        }
+      });
       ctx.revert();
     };
   }, []);
@@ -570,12 +579,15 @@ const TestimonialsSection = () => {
 
   return (
     <>
-      {/* DESKTOP / iPAD — same split-cover structure as off-market, on light background */}
-      <section
-        ref={splitRef}
-        className="tsplit-section hidden md:block relative w-full h-screen bg-secondary overflow-hidden"
-        aria-label="Client experiences"
-      >
+      {/* Stable wrapper — GSAP ScrollTrigger pin-spacer goes inside this div,
+          so React's parent only ever sees this wrapper as its child. Prevents
+          "removeChild" crashes when sibling sections re-render. */}
+      <div className="hidden md:block">
+        <section
+          ref={splitRef}
+          className="tsplit-section relative w-full h-screen bg-secondary overflow-hidden"
+          aria-label="Client experiences"
+        >
         <div className="absolute inset-0 z-0 flex items-center justify-end pl-8 md:pl-10 lg:pl-14 pr-16 md:pr-24 lg:pr-32">
           <div className="max-w-xl md:w-1/2 md:pl-0" style={{ paddingTop: "clamp(40px, 7vh, 96px)" }}>
             {/* Eyebrow with gold hairline rule — magazine masthead treatment */}
@@ -772,6 +784,7 @@ const TestimonialsSection = () => {
           </div>
         </div>
       </section>
+      </div>
 
       {/* MOBILE — centered rotating quote */}
       <section className="md:hidden bg-secondary relative overflow-hidden" style={{ padding: "clamp(48px, 7vw, 90px) 0" }}>

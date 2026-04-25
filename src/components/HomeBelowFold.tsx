@@ -1344,9 +1344,9 @@ const HomeBelowFold = () => (
 
     <NoscriptFallback />
 
-    <div className="parallax-break hidden md:block" style={{ backgroundImage: "url('/images/parallax-lakefront.webp')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties} aria-hidden="true" />
-
     <LeadCapture />
+
+    <div className="parallax-break hidden md:block" style={{ backgroundImage: "url('/images/parallax-lakefront.webp')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties} aria-hidden="true" />
 
     <div style={{ contentVisibility: "auto", containIntrinsicSize: "0 800px" } as React.CSSProperties}>
       <InsightsSection />

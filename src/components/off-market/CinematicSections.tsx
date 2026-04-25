@@ -650,6 +650,7 @@ const CinematicSections = ({ formNode }: Props) => {
           >
             <span style={{ color: "#BAA26A" }}>$4.6B</span> in Austin luxury sales 2025
           </p>
+          </div>
         </div>
       </section>
 

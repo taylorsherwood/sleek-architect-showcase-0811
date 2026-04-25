@@ -6,6 +6,9 @@ type Scene = {
   slug: string;
   meta: string;
   insight: string;
+  character: string;
+  access: string;
+  advisor: string;
   image: string;
   index: string;
 };
@@ -17,7 +20,10 @@ const SCENES: Scene[] = [
     slug: "westlake-hills",
     meta: "Hill Country · Eanes ISD",
     insight:
-      "Estate privacy, topographical scarcity, and long-term luxury demand.",
+      "Estate privacy, topographical scarcity, and long-term luxury demand shape one of Austin's most durable luxury markets.",
+    character: "Privacy, schools, terrain, and scarcity drive the premium.",
+    access: "The strongest opportunities are often relationship-led before they become public search results.",
+    advisor: "Street-by-street context matters here; two homes with similar specs can carry very different long-term value.",
     image: "/static-assets/community-westlake-hills.webp",
   },
   {
@@ -26,7 +32,10 @@ const SCENES: Scene[] = [
     slug: "tarrytown",
     meta: "Central Austin · Heritage",
     insight:
-      "Central Austin heritage, quiet streets, and enduring resale strength.",
+      "Central Austin heritage, quiet streets, and enduring resale strength create a market where nuance lives block by block.",
+    character: "Classic architecture, mature trees, and proximity to the city's core keep demand resilient.",
+    access: "Quiet conversations and pre-market awareness can matter as much as public inventory.",
+    advisor: "Pricing depends heavily on street position, renovation quality, lot utility, and buyer psychology.",
     image: "/static-assets/community-tarrytown.webp",
   },
   {
@@ -35,7 +44,10 @@ const SCENES: Scene[] = [
     slug: "downtown-austin",
     meta: "Skyline · Walkable",
     insight:
-      "Vertical living, walkability, and lock-and-leave convenience.",
+      "Vertical living, walkability, and lock-and-leave convenience appeal to buyers who value access, service, and mobility.",
+    character: "Buildings, views, services, and HOA strength separate premium assets from commodity condos.",
+    access: "Well-positioned residences can trade through broker networks before broader exposure.",
+    advisor: "The real evaluation is not just price per foot; it is building quality, view corridor, liquidity, and lifestyle fit.",
     image: "/static-assets/community-downtown.webp",
   },
   {
@@ -43,7 +55,10 @@ const SCENES: Scene[] = [
     name: "Lake Austin",
     slug: "lake-austin",
     meta: "Waterfront · Private Access",
-    insight: "Waterfront scarcity, private access, and lifestyle-driven value.",
+    insight: "Waterfront scarcity, private access, and lifestyle-driven value make Lake Austin a market defined by rarity.",
+    character: "Water frontage, orientation, dock potential, and privacy shape value more than simple square footage.",
+    access: "Many serious opportunities never behave like normal listings because the ownership base is patient.",
+    advisor: "This is where access, discretion, and property-specific diligence become the strategy.",
     image: "/static-assets/community-lake-austin.webp",
   },
   {
@@ -52,7 +67,10 @@ const SCENES: Scene[] = [
     slug: "barton-creek",
     meta: "Gated · Golf · Resort",
     insight:
-      "Gated privacy, acreage feel, golf access, and resort-style living.",
+      "Gated privacy, acreage feel, golf access, and resort-style living create a distinct luxury lane within Austin.",
+    character: "Security, scale, resort amenities, and Hill Country calm attract lifestyle-driven buyers.",
+    access: "Private market awareness can reveal options before they are broadly marketed.",
+    advisor: "Value is shaped by setting, lot quality, club proximity, updates, and the buyer pool at each price band.",
     image: "/static-assets/community-barton-creek.webp",
   },
 ];
@@ -136,14 +154,14 @@ const AustinMarketExplorer = () => {
               textTransform: "uppercase",
             }}
           >
-            Explore The Market
+            Austin Market Intelligence
           </p>
           <h2
             id="ame-heading"
             className="font-display font-normal text-warm-cream leading-[1.05] tracking-[0.015em] mb-6"
             style={{ fontSize: "clamp(34px, 4.6vw, 60px)" }}
           >
-            Austin Is Not <span className="text-gold italic">One Market</span>
+            The Market Beneath <span className="text-gold italic">The Listing</span>
           </h2>
           <div className="w-10 h-px bg-gold/60 mx-auto mb-6" />
           <p
@@ -155,9 +173,10 @@ const AustinMarketExplorer = () => {
               maxWidth: "620px",
             }}
           >
-            Each neighborhood carries its own rhythm, constraints, buyer
-            psychology, and long-term value profile. Echelon helps clients read
-            those differences before making a move.
+            The best Austin opportunities rarely begin with a search bar. They
+            begin with knowing which streets matter, which sellers may move
+            quietly, and which properties are worth pursuing before the market
+            sees them.
           </p>
         </div>
       </div>
@@ -271,7 +290,7 @@ const AustinMarketExplorer = () => {
                   {activeScene.name}
                 </h3>
                 <p
-                  className="text-warm-cream/85 max-w-[560px] leading-[1.65] mb-6"
+                  className="text-warm-cream/85 max-w-[600px] leading-[1.65] mb-6"
                   style={{
                     fontFamily: '"Jost", sans-serif',
                     fontSize: "16px",
@@ -280,6 +299,29 @@ const AustinMarketExplorer = () => {
                 >
                   {activeScene.insight}
                 </p>
+                <div className="max-w-[600px] border-t border-white/18 pt-5 mb-7 grid grid-cols-[120px_1fr] gap-5">
+                  <p
+                    className="text-gold"
+                    style={{
+                      fontFamily: '"Jost", sans-serif',
+                      fontSize: "9.5px",
+                      letterSpacing: "0.24em",
+                      textTransform: "uppercase",
+                    }}
+                  >
+                    Access Signal
+                  </p>
+                  <p
+                    className="text-warm-cream/74 leading-[1.6]"
+                    style={{
+                      fontFamily: '"Jost", sans-serif',
+                      fontSize: "13.5px",
+                      letterSpacing: "0.01em",
+                    }}
+                  >
+                    {activeScene.access}
+                  </p>
+                </div>
                 <Link
                   to={`/communities/${activeScene.slug}`}
                   className="inline-flex items-center gap-3 text-warm-cream"
@@ -329,7 +371,32 @@ const AustinMarketExplorer = () => {
                         transform: isActive ? "translateY(0)" : "translateY(10px)",
                         transition: copyTransition,
                       }}
-                    >
+                      >
+                      <div className="flex items-center gap-3 mb-5">
+                        <span
+                          className="block h-px"
+                          style={{
+                            width: isActive ? 42 : 18,
+                            background: isActive
+                              ? "#b9a06c"
+                              : "rgba(255,255,255,0.28)",
+                            transition: reducedMotion
+                              ? "none"
+                              : "width 500ms ease, background 500ms ease",
+                          }}
+                        />
+                        <span
+                          className="text-warm-cream/46"
+                          style={{
+                            fontFamily: '"Jost", sans-serif',
+                            fontSize: "10px",
+                            letterSpacing: "0.24em",
+                            textTransform: "uppercase",
+                          }}
+                        >
+                          The Market Beneath The Listing
+                        </span>
+                      </div>
                       <p
                         className="text-gold mb-4"
                         style={{
@@ -357,6 +424,40 @@ const AustinMarketExplorer = () => {
                       >
                         {scene.insight}
                       </p>
+                      <div className="space-y-4 mb-8">
+                        {[
+                          ["Market Character", scene.character],
+                          ["Access Dynamics", scene.access],
+                          ["Advisor Lens", scene.advisor],
+                        ].map(([label, value]) => (
+                          <div
+                            key={label}
+                            className="grid grid-cols-[150px_1fr] gap-5 border-t border-white/10 pt-4"
+                          >
+                            <p
+                              className="text-gold"
+                              style={{
+                                fontFamily: '"Jost", sans-serif',
+                                fontSize: "9.5px",
+                                letterSpacing: "0.22em",
+                                textTransform: "uppercase",
+                              }}
+                            >
+                              {label}
+                            </p>
+                            <p
+                              className="text-warm-cream/66 leading-[1.65]"
+                              style={{
+                                fontFamily: '"Jost", sans-serif',
+                                fontSize: "13.5px",
+                                letterSpacing: "0.01em",
+                              }}
+                            >
+                              {value}
+                            </p>
+                          </div>
+                        ))}
+                      </div>
                       <Link
                         to={`/communities/${scene.slug}`}
                         className="inline-flex items-center gap-2 text-warm-cream"
@@ -390,7 +491,7 @@ const AustinMarketExplorer = () => {
                 textTransform: "uppercase",
               }}
             >
-              Five Micro-Markets · Five Decisions
+              Private Access · Local Authority
             </p>
             <p
               className="text-warm-cream/72 leading-[1.75]"
@@ -400,15 +501,14 @@ const AustinMarketExplorer = () => {
                 letterSpacing: "0.01em",
               }}
             >
-              The right Austin property strategy changes by school district,
-              terrain, walkability, waterfront scarcity, privacy, and
-              long-term liquidity. Start with the market, then choose the
-              property.
+              Zillow can show what is public. Echelon helps clients understand
+              what is desirable, what is mispriced, what may trade quietly, and
+              where long-term value is actually being created.
             </p>
           </div>
           <div className="flex items-center gap-4">
             <Link
-              to="/communities"
+              to="/off-market-real-estate-austin"
               className="inline-block text-center px-7 py-[14px]"
               style={{
                 fontFamily: '"Jost", sans-serif',
@@ -421,10 +521,10 @@ const AustinMarketExplorer = () => {
                 background: "#b9a06c",
               }}
             >
-              Explore Austin Communities
+              Request Private Access
             </Link>
             <Link
-              to="/austin-luxury-homes-for-sale"
+              to="/communities"
               className="inline-block text-center px-7 py-[14px]"
               style={{
                 fontFamily: '"Jost", sans-serif',
@@ -437,7 +537,7 @@ const AustinMarketExplorer = () => {
                 background: "transparent",
               }}
             >
-              View Active Listings
+              Explore Austin Communities
             </Link>
           </div>
         </div>
@@ -499,6 +599,15 @@ const AustinMarketExplorer = () => {
                   >
                     {scene.insight}
                   </p>
+                  <p
+                    className="text-warm-cream/58 leading-[1.6] max-w-[560px] mt-4"
+                    style={{
+                      fontFamily: '"Jost", sans-serif',
+                      fontSize: "13.5px",
+                    }}
+                  >
+                    {scene.access}
+                  </p>
                 </div>
               </Link>
             ))}
@@ -506,7 +615,7 @@ const AustinMarketExplorer = () => {
 
           <div className="mt-10 flex flex-col sm:flex-row items-start gap-4">
             <Link
-              to="/communities"
+              to="/off-market-real-estate-austin"
               className="inline-block text-center px-7 py-[14px]"
               style={{
                 fontFamily: '"Jost", sans-serif',
@@ -519,10 +628,10 @@ const AustinMarketExplorer = () => {
                 background: "#b9a06c",
               }}
             >
-              Explore Austin Communities
+              Request Private Access
             </Link>
             <Link
-              to="/austin-luxury-homes-for-sale"
+              to="/communities"
               className="inline-block text-center px-7 py-[14px]"
               style={{
                 fontFamily: '"Jost", sans-serif',
@@ -535,7 +644,7 @@ const AustinMarketExplorer = () => {
                 background: "transparent",
               }}
             >
-              View Active Listings
+              Explore Austin Communities
             </Link>
           </div>
         </div>

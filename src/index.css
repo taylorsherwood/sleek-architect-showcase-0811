@@ -974,3 +974,15 @@ a:hover .community-tile-img,
 /* hero-video plays at native scale; Ken Burns animation removed */
 
 
+
+/* Immersive mode: hide site nav while the home Featured Communities
+   horizontal-scroll gallery is fully pinned (full-screen experience). */
+body.hcs-immersive nav.fixed {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-100%);
+  transition: opacity 0.45s ease, transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+nav.fixed {
+  transition: opacity 0.45s ease, transform 0.5s cubic-bezier(0.22, 1, 0.36, 1), background 0.4s ease, border-color 0.4s ease;
+}

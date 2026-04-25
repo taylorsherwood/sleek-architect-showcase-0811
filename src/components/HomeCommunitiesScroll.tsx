@@ -106,6 +106,19 @@ const HomeCommunitiesScroll = () => {
         );
       });
 
+      // Hide site navigation while the gallery is fully pinned (immersive
+      // full-screen mode). Restore once the user scrolls past the last card
+      // or back above the first.
+      ScrollTrigger.create({
+        trigger: ".hcs-section",
+        start: "top top",
+        end: () => `+=${getTotalScroll()}`,
+        onEnter: () => document.body.classList.add("hcs-immersive"),
+        onLeave: () => document.body.classList.remove("hcs-immersive"),
+        onEnterBack: () => document.body.classList.add("hcs-immersive"),
+        onLeaveBack: () => document.body.classList.remove("hcs-immersive"),
+      });
+
       // Refresh after images load to pick up final dimensions
       const onLoad = () => ScrollTrigger.refresh();
       window.addEventListener("load", onLoad);
@@ -114,6 +127,7 @@ const HomeCommunitiesScroll = () => {
 
     return () => {
       ctx.revert();
+      document.body.classList.remove("hcs-immersive");
     };
   }, []);
 

@@ -403,8 +403,7 @@ section[class*="bg-navy"]::after {
     object-fit: cover;
     object-position: 52% 18%;
     transition: opacity 0.7s ease;
-    transform: translate3d(0, 0, 0);
-    will-change: opacity, transform;
+    transform: translateZ(0);
     backface-visibility: hidden;
   }
 

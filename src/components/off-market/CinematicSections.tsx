@@ -176,10 +176,10 @@ const CinematicSections = ({ formNode }: Props) => {
 
       // ── Section 2.5: Image Split Reveal
       // Phase 1 (0 → 0.30): image locks full-screen, subtle settle (slight zoom-out).
-      // Phase 2 (0.30 → 0.85): stat lines rise + clear blur over the image,
-      //   in the same restrained cadence as the testimonial reveal.
-      // Phase 3 (0.95 → 1.35): stats fade out and the two halves split apart,
+      // Phase 2 (0.30 → 0.70): the two halves split apart vertically,
       //   revealing the skyline behind them.
+      // Phase 3 (0.75 → 1.30): stat lines clear blur and rise over the
+      //   revealed skyline in the same restrained cadence as the testimonial reveal.
       gsap.set([".split-top-half", ".split-bottom-half"], { yPercent: 0 });
       gsap.set(".split-cover-image", { scale: 1.08 });
       gsap.set(".split-stat", { opacity: 0, y: 28, filter: "blur(14px)" });
@@ -200,7 +200,20 @@ const CinematicSections = ({ formNode }: Props) => {
       splitTl
         // Phase 1 — lock & settle
         .to(".split-cover-image", { scale: 1, ease: "none", duration: 0.30, force3D: true }, 0)
-        // Phase 2 — stat lines clear blur and rise, staggered (matches testimonial cadence)
+        // Phase 2 — elegant split, revealing the skyline behind
+        .to(
+          ".split-top-half",
+          { yPercent: -100, ease: "power2.inOut", duration: 0.4, force3D: true },
+          0.30
+        )
+        .to(
+          ".split-bottom-half",
+          { yPercent: 100, ease: "power2.inOut", duration: 0.4, force3D: true },
+          0.30
+        )
+        // Brief hold so the revealed image breathes before text appears
+        .to({}, { duration: 0.10 })
+        // Phase 3 — stat lines clear blur and rise over the revealed image
         .to(
           ".split-stat",
           {
@@ -209,32 +222,13 @@ const CinematicSections = ({ formNode }: Props) => {
             filter: "blur(0px)",
             ease: "power3.out",
             stagger: 0.22,
-            duration: 0.55,
+            duration: 0.60,
             force3D: true,
           },
-          0.30
-        )
-        // Hold the stats fully visible
-        .to({}, { duration: 0.25 })
-        // Phase 3 — gently fade stats before the split
-        .to(
-          ".split-stat",
-          { opacity: 0, y: -16, filter: "blur(8px)", ease: "power2.inOut", duration: 0.20, force3D: true },
           ">"
         )
-        // Phase 4 — elegant split
-        .to(
-          ".split-top-half",
-          { yPercent: -100, ease: "power2.inOut", duration: 0.4, force3D: true },
-          ">-0.05"
-        )
-        .to(
-          ".split-bottom-half",
-          { yPercent: 100, ease: "power2.inOut", duration: 0.4, force3D: true },
-          "<"
-        )
-        // Hold the open state briefly before unpin
-        .to({}, { duration: 0.15 });
+        // Hold the open + revealed state briefly before unpin
+        .to({}, { duration: 0.20 });
 
 
       // ── Section 3 (new): Drone Video — pin section, reveal text on scroll

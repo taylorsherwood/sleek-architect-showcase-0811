@@ -176,6 +176,7 @@ const AppRoutes = () => {
       </Suspense>
       <Suspense fallback={null}>
         <FloatingContact />
+        <ExitIntentModal />
       </Suspense>
     </>
   );

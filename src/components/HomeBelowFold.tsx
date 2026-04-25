@@ -9,7 +9,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const ScrollingCredibilityStrip = lazy(() => import("@/components/ScrollingCredibilityStrip"));
 const ExpertiseSection = lazy(() => import("@/components/ExpertiseSection"));
-const FeaturedCommunities = lazy(() => import("@/components/FeaturedCommunities"));
+const HomeCommunitiesScroll = lazy(() => import("@/components/HomeCommunitiesScroll"));
 
 // Dynamic image imports — only loaded when this chunk is loaded
 import taylorBoatImg from "@/assets/taylor-headshot.webp";
@@ -1405,12 +1405,9 @@ const HomeBelowFold = () => (
 
     <div className="parallax-break hidden md:block" style={{ backgroundImage: "url('/images/parallax-lakefront.webp')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties} aria-hidden="true" />
 
-    <div className="hidden md:block">
-      <div className="h-12 md:h-20 bg-secondary" aria-hidden="true" />
-      <Suspense fallback={<div className="min-h-[200px] bg-secondary" />}>
-        <FeaturedCommunities />
-      </Suspense>
-    </div>
+    <Suspense fallback={<div className="min-h-[400px] bg-[hsl(220,15%,6%)]" />}>
+      <HomeCommunitiesScroll />
+    </Suspense>
 
     <LeadCapture />
 

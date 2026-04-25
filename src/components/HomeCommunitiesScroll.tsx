@@ -84,27 +84,32 @@ const HomeCommunitiesScroll = () => {
         },
       });
 
-      // Per-card subtle parallax (skip last card to avoid post-pin shift)
-      const cardImages = gsap.utils.toArray<HTMLDivElement>(".hcs-card-image");
-      cardImages.forEach((img, i) => {
-        if (i === cardImages.length - 1) return;
-        gsap.fromTo(
-          img,
-          { xPercent: -3 },
-          {
-            xPercent: 3,
-            ease: "none",
-            force3D: true,
-            scrollTrigger: {
-              trigger: img.parentElement!,
-              containerAnimation: horizontalTween,
-              start: "left right",
-              end: "right left",
-              scrub: 0.6,
-            },
-          }
-        );
-      });
+      // Per-card subtle parallax (skip last card to avoid post-pin shift).
+      // Skipped on coarse pointers (touch tablets) where the pinned horizontal
+      // scroll is already work-intensive — keeps frame budget for the main pan.
+      const isCoarsePointer = window.matchMedia("(pointer: coarse)").matches;
+      if (!isCoarsePointer) {
+        const cardImages = gsap.utils.toArray<HTMLDivElement>(".hcs-card-image");
+        cardImages.forEach((img, i) => {
+          if (i === cardImages.length - 1) return;
+          gsap.fromTo(
+            img,
+            { xPercent: -2 },
+            {
+              xPercent: 2,
+              ease: "none",
+              force3D: true,
+              scrollTrigger: {
+                trigger: img.parentElement!,
+                containerAnimation: horizontalTween,
+                start: "left right",
+                end: "right left",
+                scrub: true,
+              },
+            }
+          );
+        });
+      }
 
       // Hide site navigation while the gallery is fully pinned (immersive
       // full-screen mode). Restore once the user scrolls past the last card

@@ -325,26 +325,25 @@ const OffMarketRealEstateAustin = () => {
           />
         </div>
 
-        <div className="relative z-10 container mx-auto px-6 sm:px-10 md:px-16 py-12 md:py-24">
+        <div className="relative z-10 container mx-auto px-6 sm:px-10 md:px-16 py-10 md:py-24">
           <div className="max-w-full md:max-w-[60vw] text-left">
-            <p className="text-[hsl(var(--gold))] mb-6 font-bold" style={labelStyle}>
+            <p className="text-[hsl(var(--gold))] mb-5 md:mb-6 font-bold" style={labelStyle}>
               PRIVATE INVENTORY
             </p>
             <h1
-              className="font-display font-light text-[#F5F1EA] mb-8 tracking-tight"
+              className="font-display font-light text-[#F5F1EA] mb-6 md:mb-8 tracking-tight"
               style={{
-                fontSize: "clamp(2.25rem, 7vw, 7rem)",
-                lineHeight: 1.05,
-                maxWidth: "60vw",
+                fontSize: "clamp(2.5rem, 11vw, 7rem)",
+                lineHeight: 1.04,
               }}
             >
               Access Austin's Private &{" "}
               <span className="italic">Off-Market</span> Homes
             </h1>
-            <p className="text-white/70 text-base sm:text-lg md:text-xl font-light leading-relaxed mb-4 max-w-xl">
+            <p className="text-white/75 text-base sm:text-lg md:text-xl font-light leading-relaxed mb-3 md:mb-4 max-w-xl">
               These properties are not available on Zillow, Realtor.com, or the MLS.
             </p>
-            <p className="text-white/50 text-sm sm:text-base font-light leading-relaxed mb-6 max-w-xl">
+            <p className="text-white/55 text-sm sm:text-base font-light leading-relaxed mb-7 md:mb-6 max-w-xl">
               Many of Austin's most desirable homes never hit the public market. They trade quietly, through trusted relationships and private networks that most buyers never see.
             </p>
             <button

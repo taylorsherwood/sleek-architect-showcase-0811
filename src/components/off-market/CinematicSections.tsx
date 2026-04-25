@@ -176,10 +176,10 @@ const CinematicSections = ({ formNode }: Props) => {
 
       // ── Section 2.5: Image Split Reveal
       // Phase 1 (0 → 0.30): image locks full-screen, subtle settle (slight zoom-out).
-      // Phase 2 (0.30 → 0.85): stat lines rise + clear blur over the image,
-      //   in the same restrained cadence as the testimonial reveal.
-      // Phase 3 (0.95 → 1.35): stats fade out and the two halves split apart,
+      // Phase 2 (0.30 → 0.70): the two halves split apart vertically,
       //   revealing the skyline behind them.
+      // Phase 3 (0.75 → 1.30): stat lines clear blur and rise over the
+      //   revealed skyline in the same restrained cadence as the testimonial reveal.
       gsap.set([".split-top-half", ".split-bottom-half"], { yPercent: 0 });
       gsap.set(".split-cover-image", { scale: 1.08 });
       gsap.set(".split-stat", { opacity: 0, y: 28, filter: "blur(14px)" });
@@ -200,7 +200,20 @@ const CinematicSections = ({ formNode }: Props) => {
       splitTl
         // Phase 1 — lock & settle
         .to(".split-cover-image", { scale: 1, ease: "none", duration: 0.30, force3D: true }, 0)
-        // Phase 2 — stat lines clear blur and rise, staggered (matches testimonial cadence)
+        // Phase 2 — elegant split, revealing the skyline behind
+        .to(
+          ".split-top-half",
+          { yPercent: -100, ease: "power2.inOut", duration: 0.4, force3D: true },
+          0.30
+        )
+        .to(
+          ".split-bottom-half",
+          { yPercent: 100, ease: "power2.inOut", duration: 0.4, force3D: true },
+          0.30
+        )
+        // Brief hold so the revealed image breathes before text appears
+        .to({}, { duration: 0.10 })
+        // Phase 3 — stat lines clear blur and rise over the revealed image
         .to(
           ".split-stat",
           {
@@ -209,32 +222,13 @@ const CinematicSections = ({ formNode }: Props) => {
             filter: "blur(0px)",
             ease: "power3.out",
             stagger: 0.22,
-            duration: 0.55,
+            duration: 0.60,
             force3D: true,
           },
-          0.30
-        )
-        // Hold the stats fully visible
-        .to({}, { duration: 0.25 })
-        // Phase 3 — gently fade stats before the split
-        .to(
-          ".split-stat",
-          { opacity: 0, y: -16, filter: "blur(8px)", ease: "power2.inOut", duration: 0.20, force3D: true },
           ">"
         )
-        // Phase 4 — elegant split
-        .to(
-          ".split-top-half",
-          { yPercent: -100, ease: "power2.inOut", duration: 0.4, force3D: true },
-          ">-0.05"
-        )
-        .to(
-          ".split-bottom-half",
-          { yPercent: 100, ease: "power2.inOut", duration: 0.4, force3D: true },
-          "<"
-        )
-        // Hold the open state briefly before unpin
-        .to({}, { duration: 0.15 });
+        // Hold the open + revealed state briefly before unpin
+        .to({}, { duration: 0.20 });
 
 
       // ── Section 3 (new): Drone Video — pin section, reveal text on scroll
@@ -625,8 +619,19 @@ const CinematicSections = ({ formNode }: Props) => {
             decoding="async"
           />
         </div>
-        {/* Stat overlay — blur-reveals over the locked image, fades before the split */}
-        <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-8 pointer-events-none">
+        {/* Stat overlay — sits above bg image but BELOW the split halves so it
+            only becomes visible after the halves slide away. Then the lines
+            blur-reveal in over the revealed skyline. */}
+        <div className="absolute inset-0 z-[5] flex flex-col items-center justify-center text-center px-8 pointer-events-none">
+          {/* Subtle dark scrim for legibility against bright skyline */}
+          <div
+            className="absolute inset-0 pointer-events-none"
+            style={{
+              background:
+                "radial-gradient(ellipse at center, rgba(12,15,36,0.55) 0%, rgba(12,15,36,0.25) 55%, rgba(12,15,36,0) 100%)",
+            }}
+          />
+          <div className="relative flex flex-col items-center justify-center w-full">
           <p
             className="split-stat font-display font-light leading-[1.15] mb-5 max-w-[90vw] will-change-[opacity,transform,filter]"
             style={{ fontSize: "clamp(1.5rem, 3.4vw, 2.6rem)", color: "#F5F1EA" }}
@@ -645,6 +650,7 @@ const CinematicSections = ({ formNode }: Props) => {
           >
             <span style={{ color: "#BAA26A" }}>$4.6B</span> in Austin luxury sales 2025
           </p>
+          </div>
         </div>
       </section>
 

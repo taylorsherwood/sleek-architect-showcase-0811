@@ -893,7 +893,7 @@ const CommunitiesSection = () => {
                 willChange: "opacity, filter, transform",
               }}
             >
-              FEATURED NEIGHBORHOODS
+              <span>FEATURED NEIGHBORHOODS</span>
             </p>
             <h2
               className="font-display font-normal text-architectural"

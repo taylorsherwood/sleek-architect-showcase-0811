@@ -621,7 +621,7 @@ const TestimonialsSection = () => {
               </p>
             </div>
 
-            <div className="relative min-h-[360px]">
+            <div className="relative" style={{ maxWidth: "34rem" }}>
               {/* Oversized watermark quote glyph — sits behind text, far top-right */}
               <span
                 aria-hidden="true"

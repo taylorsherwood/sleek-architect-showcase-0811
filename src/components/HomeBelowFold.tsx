@@ -1022,7 +1022,7 @@ const CommunitiesSection = () => {
                 textTransform: "uppercase",
               }}
             >
-              The Full Portfolio
+              AUSTIN MICRO MARKETS
             </p>
             <p
               className="font-display"
@@ -1036,7 +1036,7 @@ const CommunitiesSection = () => {
                 marginBottom: "clamp(28px, 3vw, 40px)",
               }}
             >
-              Twenty-seven neighborhoods. <br className="hidden md:block" />One discerning point of view.
+              each neighborhood has a story. <br className="hidden md:block" />One discerning point of view.
             </p>
             <span
               aria-hidden="true"

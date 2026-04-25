@@ -1317,10 +1317,6 @@ const HomeBelowFold = () => (
 
     <div className="parallax-break hidden md:block" style={{ backgroundImage: "url('/images/parallax-lakefront.webp')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties} aria-hidden="true" />
 
-    <Suspense fallback={<div className="min-h-[400px] bg-[hsl(220,15%,6%)]" />}>
-      <HomeCommunitiesScroll />
-    </Suspense>
-
     <LeadCapture />
 
     <InsightsSection />

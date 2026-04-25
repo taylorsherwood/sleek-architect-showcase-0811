@@ -4,6 +4,7 @@ import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createBreadcrumbSchema, createFAQSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
 import heroImage from "@/assets/hero-austin-skyline-sunset.webp";
 import echelonLogo from "@/assets/echelon-logo-gold.png";
+import echelonMark from "@/assets/echelon-mark-gold.png";
 import { formatPhoneNumber, getTimestamp } from "@/lib/formUtils";
 import CinematicSections from "@/components/off-market/CinematicSections";
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from "@/components/ui/dialog";
@@ -324,6 +325,14 @@ const OffMarketRealEstateAustin = () => {
 
         <div className="relative z-10 container mx-auto px-6 sm:px-10 md:px-16 py-10 md:py-24">
           <div className="max-w-full md:max-w-[60vw] text-left">
+            <img
+              src={echelonMark}
+              alt=""
+              aria-hidden="true"
+              className="md:hidden mx-auto mb-6 w-20 h-auto opacity-95"
+              loading="eager"
+              decoding="async"
+            />
             <p className="text-[hsl(var(--gold))] mb-5 md:mb-6 font-bold" style={labelStyle}>
               PRIVATE INVENTORY
             </p>

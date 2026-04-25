@@ -24,14 +24,6 @@ const labelStyle = {
 
 const THESIS = "The best Austin homes don't get listed. They get introduced.";
 
-const NEIGHBORHOODS = [
-  { name: "Barton creek", image: card78746, stat: "Median sale: $3.2M" },
-  { name: "Rollingwood", image: cardTarrytown, stat: "Avg DOM off-market: 14 days" },
-  { name: "Old Enfield", image: cardOldEnfield, stat: "60% OF TRADES ARE PRIVATE" },
-  { name: "Westlake Hills", image: cardWestlake, stat: "Median sale: $4.1M" },
-  { name: "Tarrytown", image: cardDavenport, stat: "CENTRAL ACCESS TO AUSTIN" },
-  { name: "Spanish Oaks", image: cardSpanishOaks, stat: "GUARD GATED GOLF ESTATES" },
-];
 
 interface Props {
   formNode: ReactNode;

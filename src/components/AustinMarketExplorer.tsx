@@ -165,8 +165,9 @@ const AustinMarketExplorer = () => {
       {/* Desktop sticky-scroll experience */}
       <div className="hidden lg:block px-8 lg:px-12 pb-20 lg:pb-24">
         <div className="max-w-[1480px] mx-auto grid grid-cols-12 gap-8 lg:gap-10 items-start">
-          <div className="col-span-7 sticky top-24 h-[calc(100vh-7rem)] min-h-[600px] max-h-[760px]">
-            <div className="relative h-full overflow-hidden bg-primary">
+          <div className="col-span-7 relative">
+            <div className="sticky top-24 h-[calc(100vh-7rem)] min-h-[600px] max-h-[760px]">
+              <div className="relative h-full overflow-hidden bg-primary">
               {SCENES.map((scene, index) => {
                 const isActive = index === active;
                 return (
@@ -304,6 +305,7 @@ const AustinMarketExplorer = () => {
                     transition: reducedMotion ? "none" : "width 500ms ease-out",
                   }}
                 />
+              </div>
               </div>
             </div>
           </div>

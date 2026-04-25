@@ -578,35 +578,46 @@ const TestimonialsSection = () => {
       >
         <div className="absolute inset-0 z-0 flex items-center justify-end px-8 md:px-16 lg:px-24">
           <div className="max-w-xl md:w-1/2 md:pl-8" style={{ paddingTop: "clamp(40px, 7vh, 96px)" }}>
-            <p
-              className="tsplit-attribution text-gold mb-10 will-change-transform"
-              style={{
-                fontFamily: '"Jost", sans-serif',
-                fontSize: "0.7rem",
-                fontWeight: 500,
-                letterSpacing: "0.32em",
-                textTransform: "uppercase",
-                opacity: 0,
-              }}
+            {/* Eyebrow with gold hairline rule — magazine masthead treatment */}
+            <div
+              className="tsplit-attribution flex items-center gap-4 mb-12 will-change-transform"
+              style={{ opacity: 0 }}
             >
-              Client Experiences
-            </p>
-            <div className="relative min-h-[340px]">
-              {/* Oversized editorial opening quote — graphic element */}
+              <span
+                aria-hidden="true"
+                style={{ display: "block", width: "28px", height: "1px", background: "#b9a06c" }}
+              />
+              <p
+                className="text-gold m-0"
+                style={{
+                  fontFamily: '"Jost", sans-serif',
+                  fontSize: "0.68rem",
+                  fontWeight: 500,
+                  letterSpacing: "0.34em",
+                  textTransform: "uppercase",
+                }}
+              >
+                Client Experiences
+              </p>
+            </div>
+
+            <div className="relative min-h-[360px]">
+              {/* Oversized watermark quote glyph — sits behind text, far top-right */}
               <span
                 aria-hidden="true"
                 className="select-none pointer-events-none"
                 style={{
                   position: "absolute",
-                  top: "-0.55em",
-                  left: "-0.05em",
+                  top: "-0.42em",
+                  right: "-0.08em",
                   fontFamily: '"Cinzel", serif',
                   fontWeight: 400,
-                  fontSize: "clamp(4.5rem, 7vw, 6.5rem)",
+                  fontSize: "clamp(7rem, 11vw, 11rem)",
                   lineHeight: 1,
                   color: "#b9a06c",
-                  opacity: revealed ? 0.9 : 0,
-                  transition: "opacity 0.7s ease 0.1s",
+                  opacity: revealed ? 0.12 : 0,
+                  transition: "opacity 0.9s ease 0.1s",
+                  zIndex: 0,
                 }}
               >
                 &ldquo;
@@ -614,75 +625,78 @@ const TestimonialsSection = () => {
 
               <p
                 key={`quote-${active}`}
-                className="text-foreground/90 mb-10 relative"
+                className="relative mb-12"
                 style={{
                   fontFamily: '"Jost", sans-serif',
                   fontWeight: 300,
-                  fontSize: "clamp(1.05rem, 1.35vw, 1.35rem)",
-                  lineHeight: 1.7,
-                  letterSpacing: "0.005em",
-                  paddingTop: "0.8rem",
+                  fontStyle: "italic",
+                  fontSize: "clamp(1.2rem, 1.55vw, 1.55rem)",
+                  lineHeight: 1.55,
+                  letterSpacing: "-0.005em",
+                  color: "hsl(var(--foreground) / 0.92)",
+                  zIndex: 1,
                 }}
               >
                 <span
                   className="tsplit-line block will-change-transform"
                   style={{
                     opacity: revealed ? undefined : 0,
-                    transform: revealed ? undefined : "translateY(24px)",
-                    filter: revealed ? undefined : "blur(8px)",
-                    animation: revealed ? "fadeUpBlur 0.7s ease both" : undefined,
+                    transform: revealed ? undefined : "translateY(20px)",
+                    animation: revealed ? "fadeUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) both" : undefined,
                   }}
                 >
                   {t.quote}
                 </span>
               </p>
 
-              {/* Refined gold hairline divider */}
+              {/* Gold hairline divider before attribution */}
               <div
                 key={`rule-${active}`}
                 style={{
-                  width: "32px",
+                  width: "40px",
                   height: "1px",
                   background: "#b9a06c",
-                  opacity: revealed ? 0.7 : 0,
-                  marginBottom: "1.25rem",
-                  transition: "opacity 0.6s ease 0.2s",
+                  opacity: revealed ? 1 : 0,
+                  marginBottom: "1.5rem",
+                  transition: "opacity 0.6s ease 0.25s",
+                  position: "relative",
+                  zIndex: 1,
                 }}
               />
 
               <p
                 key={`name-${active}`}
-                className="tsplit-attribution will-change-transform"
+                className="tsplit-attribution will-change-transform relative"
                 style={{
                   fontFamily: '"Cinzel", serif',
-                  fontSize: "0.78rem",
+                  fontSize: "0.82rem",
                   fontWeight: 500,
-                  letterSpacing: "0.22em",
+                  letterSpacing: "0.26em",
                   textTransform: "uppercase",
                   color: "hsl(var(--foreground))",
                   opacity: revealed ? undefined : 0,
-                  transform: revealed ? undefined : "translateY(12px)",
-                  filter: revealed ? undefined : "blur(6px)",
-                  animation: revealed ? "fadeUpBlur 0.7s ease 0.15s both" : undefined,
+                  transform: revealed ? undefined : "translateY(10px)",
+                  animation: revealed ? "fadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.2s both" : undefined,
+                  zIndex: 1,
                 }}
               >
                 {t.name}
               </p>
               <p
                 key={`ctx-${active}`}
-                className="tsplit-attribution will-change-transform"
+                className="tsplit-attribution will-change-transform relative"
                 style={{
                   fontFamily: '"Jost", sans-serif',
-                  fontSize: "0.68rem",
+                  fontSize: "0.7rem",
                   fontWeight: 400,
-                  letterSpacing: "0.24em",
+                  letterSpacing: "0.22em",
                   textTransform: "uppercase",
                   color: "hsl(var(--muted-foreground))",
-                  marginTop: "0.6rem",
-                  animation: revealed ? "fadeUpBlur 0.7s ease 0.25s both" : undefined,
+                  marginTop: "0.65rem",
+                  animation: revealed ? "fadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.3s both" : undefined,
                   opacity: revealed ? undefined : 0,
-                  transform: revealed ? undefined : "translateY(12px)",
-                  filter: revealed ? undefined : "blur(6px)",
+                  transform: revealed ? undefined : "translateY(10px)",
+                  zIndex: 1,
                 }}
               >
                 {t.context}
@@ -691,17 +705,18 @@ const TestimonialsSection = () => {
 
               {revealed && (
                 <div
-                  className="flex items-center gap-2.5 mt-12"
-                  style={{ opacity: 0, animation: "fadeUp 0.6s ease 0.35s both" }}
+                  className="flex items-center gap-3 mt-14 relative"
+                  style={{ opacity: 0, animation: "fadeUp 0.6s ease 0.4s both", zIndex: 1 }}
                 >
                   {testimonials.map((_, i) => (
                     <button
                       key={i}
                       onClick={() => setActive(i)}
-                      className="w-2 h-2 rounded-full transition-all duration-300 cursor-pointer"
+                      className="transition-all duration-500 cursor-pointer"
                       style={{
-                        background: i === active ? "hsl(38 39% 61%)" : "hsl(var(--border))",
-                        transform: i === active ? "scale(1.3)" : "scale(1)",
+                        width: i === active ? "24px" : "6px",
+                        height: "1px",
+                        background: i === active ? "#b9a06c" : "hsl(var(--border))",
                       }}
                       aria-label={`View testimonial ${i + 1}`}
                     />

@@ -493,26 +493,34 @@ const testimonials = [
 const TestimonialsSection = () => {
   const [active, setActive] = useState(0);
   const [revealed, setRevealed] = useState(false);
+  const [userPaused, setUserPaused] = useState(false);
   const splitRef = useRef<HTMLDivElement>(null);
   const hasOpenedRef = useRef(false);
+
+  const handleDotClick = (i: number) => {
+    setActive(i);
+    setUserPaused(true);
+  };
 
   // Mobile-only auto-rotation for the centered single-quote layout
   useEffect(() => {
     if (typeof window === "undefined") return;
     const isDesktop = window.matchMedia("(min-width: 768px)").matches;
     if (isDesktop) return;
+    if (userPaused) return;
     const timer = setInterval(() => setActive((p) => (p + 1) % testimonials.length), 5500);
     return () => clearInterval(timer);
-  }, []);
+  }, [userPaused]);
 
   // Desktop / iPad — auto-rotate testimonials AFTER the split has opened
   useEffect(() => {
     if (typeof window === "undefined") return;
     if (!window.matchMedia("(min-width: 768px)").matches) return;
     if (!revealed) return;
+    if (userPaused) return;
     const timer = setInterval(() => setActive((p) => (p + 1) % testimonials.length), 5500);
     return () => clearInterval(timer);
-  }, [revealed]);
+  }, [revealed, userPaused]);
 
   // Desktop / iPad — GSAP horizontal split-reveal (image opens left/right)
   useEffect(() => {

@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -12,12 +13,12 @@ import cardSpanishOaks from "@/assets/spanish-oaks-estate.webp";
 gsap.registerPlugin(ScrollTrigger);
 
 const NEIGHBORHOODS = [
-  { name: "Barton creek", image: card78746, stat: "Median sale: $3.2M" },
-  { name: "Rollingwood", image: cardTarrytown, stat: "Avg DOM off-market: 14 days" },
-  { name: "Old Enfield", image: cardOldEnfield, stat: "60% OF TRADES ARE PRIVATE" },
-  { name: "Westlake Hills", image: cardWestlake, stat: "Median sale: $4.1M" },
-  { name: "Tarrytown", image: cardDavenport, stat: "CENTRAL ACCESS TO AUSTIN" },
-  { name: "Spanish Oaks", image: cardSpanishOaks, stat: "GUARD GATED GOLF ESTATES" },
+  { name: "Barton creek", image: card78746, stat: "Median sale: $3.2M", slug: "barton-creek" },
+  { name: "Rollingwood", image: cardTarrytown, stat: "Avg DOM off-market: 14 days", slug: "rollingwood" },
+  { name: "Old Enfield", image: cardOldEnfield, stat: "60% OF TRADES ARE PRIVATE", slug: "old-enfield" },
+  { name: "Westlake Hills", image: cardWestlake, stat: "Median sale: $4.1M", slug: "westlake-hills" },
+  { name: "Tarrytown", image: cardDavenport, stat: "CENTRAL ACCESS TO AUSTIN", slug: "tarrytown" },
+  { name: "Spanish Oaks", image: cardSpanishOaks, stat: "GUARD GATED GOLF ESTATES", slug: "spanish-oaks" },
 ];
 
 /**

@@ -1425,8 +1425,8 @@ const EditorialInsights = () => (
         {/* Editorial grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-14 md:gap-x-10">
           {editorialArticles.map((article, i) => (
-            <ScrollReveal key={article.href} delay={i * 90}>
-              <Link to={article.href} className="group block h-full">
+            <ScrollReveal key={article.href} delay={i * 90} className="h-full">
+              <Link to={article.href} className="group flex flex-col h-full">
                 {/* Index marker + hairline */}
                 <div className="flex items-center gap-3 mb-4">
                   <span
@@ -1480,7 +1480,7 @@ const EditorialInsights = () => (
                 </h3>
 
                 <p
-                  className="text-muted-foreground mb-5"
+                  className="text-muted-foreground mb-5 flex-1"
                   style={{
                     fontFamily: '"Jost", sans-serif',
                     fontWeight: 300,

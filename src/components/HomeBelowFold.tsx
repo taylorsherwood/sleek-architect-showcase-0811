@@ -575,7 +575,7 @@ const TestimonialsSection = () => {
         className="tsplit-section hidden md:block relative w-full h-screen bg-secondary overflow-hidden"
         aria-label="Client experiences"
       >
-        <div className="absolute inset-0 z-0 flex items-center justify-end px-8 md:px-10 lg:px-14">
+        <div className="absolute inset-0 z-0 flex items-center justify-end pl-8 md:pl-10 lg:pl-14 pr-16 md:pr-24 lg:pr-32">
           <div className="max-w-xl md:w-1/2 md:pl-0" style={{ paddingTop: "clamp(40px, 7vh, 96px)" }}>
             {/* Eyebrow with gold hairline rule — magazine masthead treatment */}
             <div

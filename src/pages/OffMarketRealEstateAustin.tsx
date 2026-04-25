@@ -251,7 +251,7 @@ const OffMarketRealEstateAustin = () => {
         {loading ? "Submitting…" : "Request Private Access →"}
       </button>
       <p className="text-center text-white/30 text-xs tracking-wide">
-        Your information is never shared. Discreet advisory only.
+        Your information is never shared. <br /> Discreet advisory only.
       </p>
     </form>
   );

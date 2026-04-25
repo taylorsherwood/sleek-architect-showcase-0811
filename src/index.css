@@ -975,13 +975,18 @@ a:hover .community-tile-img,
 
 
 /* Immersive mode: hide site nav while the home Featured Communities
-   horizontal-scroll gallery is fully pinned (full-screen experience). */
+   horizontal-scroll gallery is fully pinned (full-screen experience).
+   Uses !important to override the inline `transition` set on <nav> by
+   the Navigation component, otherwise the show/hide snaps instantly. */
+nav.fixed {
+  transition: opacity 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+              background 0.4s ease,
+              border-color 0.4s ease !important;
+  will-change: opacity, transform;
+}
 body.hcs-immersive nav.fixed {
   opacity: 0;
   pointer-events: none;
   transform: translateY(-100%);
-  transition: opacity 0.45s ease, transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
-}
-nav.fixed {
-  transition: opacity 0.45s ease, transform 0.5s cubic-bezier(0.22, 1, 0.36, 1), background 0.4s ease, border-color 0.4s ease;
 }

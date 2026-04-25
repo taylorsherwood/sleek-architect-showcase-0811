@@ -625,6 +625,27 @@ const CinematicSections = ({ formNode }: Props) => {
             decoding="async"
           />
         </div>
+        {/* Stat overlay — blur-reveals over the locked image, fades before the split */}
+        <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-8 pointer-events-none">
+          <p
+            className="split-stat font-display font-light leading-[1.15] mb-5 max-w-[90vw] will-change-[opacity,transform,filter]"
+            style={{ fontSize: "clamp(1.5rem, 3.4vw, 2.6rem)", color: "#F5F1EA" }}
+          >
+            <span style={{ color: "#BAA26A" }}>$1.2B</span> in active private luxury inventory
+          </p>
+          <p
+            className="split-stat font-display font-light leading-[1.15] mb-5 max-w-[90vw] will-change-[opacity,transform,filter]"
+            style={{ fontSize: "clamp(1.5rem, 3.4vw, 2.6rem)", color: "#F5F1EA" }}
+          >
+            <span style={{ color: "#BAA26A" }}>15–20%</span> of $2M+ homes close off-market
+          </p>
+          <p
+            className="split-stat font-display font-light leading-[1.15] max-w-[90vw] will-change-[opacity,transform,filter]"
+            style={{ fontSize: "clamp(1.5rem, 3.4vw, 2.6rem)", color: "#F5F1EA" }}
+          >
+            <span style={{ color: "#BAA26A" }}>$4.6B</span> in Austin luxury sales 2025
+          </p>
+        </div>
       </section>
 
       {/* ── Section 3 (new): Drone Video — plays only when in view ── */}

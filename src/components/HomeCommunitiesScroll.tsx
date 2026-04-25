@@ -191,9 +191,11 @@ const HomeCommunitiesScroll = () => {
       {/* MOBILE — stacked full-bleed fallback (no pin) */}
       <div className="md:hidden bg-[hsl(220,15%,6%)]">
         {NEIGHBORHOODS.map((n) => (
-          <div
+          <Link
             key={`m-${n.name}`}
-            className="relative w-full overflow-hidden"
+            to={`/communities/${n.slug}`}
+            aria-label={`Explore ${n.name} — luxury Austin community`}
+            className="relative w-full overflow-hidden block"
             style={{ height: "70vh" }}
           >
             <img
@@ -225,7 +227,7 @@ const HomeCommunitiesScroll = () => {
                 {n.name}
               </h2>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

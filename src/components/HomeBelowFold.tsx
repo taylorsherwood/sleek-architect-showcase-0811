@@ -561,6 +561,15 @@ const TestimonialsSection = () => {
     }, root);
 
     return () => {
+      // Kill any ScrollTriggers tied to this root before reverting the gsap context.
+      // This ensures GSAP unwraps its pin-spacer BEFORE React tries to unmount the
+      // section, preventing "removeChild ... not a child of this node" crashes
+      // when sibling sections (FeaturedListings, etc.) re-render around it.
+      ScrollTrigger.getAll().forEach((st) => {
+        if (st.trigger === root || (st.trigger && root?.contains(st.trigger as Node))) {
+          st.kill(true);
+        }
+      });
       ctx.revert();
     };
   }, []);

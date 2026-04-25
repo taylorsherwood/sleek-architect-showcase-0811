@@ -287,7 +287,7 @@ const OffMarketRealEstateAustin = () => {
             onClick={() => setModalOpen(true)}
             className="text-[hsl(var(--gold))]/80 hover:text-white transition-colors tracking-[0.12em] uppercase font-sans" style={{ fontSize: "0.75rem" }}
           >
-            Request Access
+            {"\n"}
           </button>
         </div>
       </header>

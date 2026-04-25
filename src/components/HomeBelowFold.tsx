@@ -1308,12 +1308,12 @@ const HomeBelowFold = () => (
 
     <CommunitiesSection />
 
-    <TestimonialsSection />
-    <div className="h-8 md:h-12 bg-secondary" aria-hidden="true" />
-
     <Suspense fallback={<div className="min-h-[200px] bg-background" />}>
       <ExpertiseSection />
     </Suspense>
+
+    <TestimonialsSection />
+    <div className="h-8 md:h-12 bg-secondary" aria-hidden="true" />
 
     <div className="parallax-break hidden md:block" style={{ backgroundImage: "url('/images/parallax-lakefront.webp')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties} aria-hidden="true" />
 

@@ -175,18 +175,20 @@ const CinematicSections = ({ formNode }: Props) => {
       thesisTl.to({}, { duration: 0.3 });
 
       // ── Section 2.5: Image Split Reveal
-      // Phase 1 (0 → 0.45): image locks full-screen, subtle settle (slight zoom-out).
-      // Phase 2 (0.45 → 0.85): the two halves split apart vertically, revealing
-      //   the skyline + headline behind them.
-      // Phase 3 (0.85 → 1):   headline blooms in at full scale.
+      // Phase 1 (0 → 0.30): image locks full-screen, subtle settle (slight zoom-out).
+      // Phase 2 (0.30 → 0.85): stat lines rise + clear blur over the image,
+      //   in the same restrained cadence as the testimonial reveal.
+      // Phase 3 (0.95 → 1.35): stats fade out and the two halves split apart,
+      //   revealing the skyline behind them.
       gsap.set([".split-top-half", ".split-bottom-half"], { yPercent: 0 });
       gsap.set(".split-cover-image", { scale: 1.08 });
+      gsap.set(".split-stat", { opacity: 0, y: 28, filter: "blur(14px)" });
 
       const splitTl = gsap.timeline({
         scrollTrigger: {
           trigger: ".split-section",
           start: "top top",
-          end: "+=160%",
+          end: "+=240%",
           pin: true,
           pinSpacing: true,
           scrub: 0.8,
@@ -197,17 +199,39 @@ const CinematicSections = ({ formNode }: Props) => {
 
       splitTl
         // Phase 1 — lock & settle
-        .to(".split-cover-image", { scale: 1, ease: "none", duration: 0.45, force3D: true }, 0)
-        // Phase 2 — elegant split
+        .to(".split-cover-image", { scale: 1, ease: "none", duration: 0.30, force3D: true }, 0)
+        // Phase 2 — stat lines clear blur and rise, staggered (matches testimonial cadence)
+        .to(
+          ".split-stat",
+          {
+            opacity: 1,
+            y: 0,
+            filter: "blur(0px)",
+            ease: "power3.out",
+            stagger: 0.22,
+            duration: 0.55,
+            force3D: true,
+          },
+          0.30
+        )
+        // Hold the stats fully visible
+        .to({}, { duration: 0.25 })
+        // Phase 3 — gently fade stats before the split
+        .to(
+          ".split-stat",
+          { opacity: 0, y: -16, filter: "blur(8px)", ease: "power2.inOut", duration: 0.20, force3D: true },
+          ">"
+        )
+        // Phase 4 — elegant split
         .to(
           ".split-top-half",
           { yPercent: -100, ease: "power2.inOut", duration: 0.4, force3D: true },
-          0.45
+          ">-0.05"
         )
         .to(
           ".split-bottom-half",
           { yPercent: 100, ease: "power2.inOut", duration: 0.4, force3D: true },
-          0.45
+          "<"
         )
         // Hold the open state briefly before unpin
         .to({}, { duration: 0.15 });
@@ -600,6 +624,27 @@ const CinematicSections = ({ formNode }: Props) => {
             className="split-cover-image w-full h-full object-cover will-change-transform"
             decoding="async"
           />
+        </div>
+        {/* Stat overlay — blur-reveals over the locked image, fades before the split */}
+        <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-8 pointer-events-none">
+          <p
+            className="split-stat font-display font-light leading-[1.15] mb-5 max-w-[90vw] will-change-[opacity,transform,filter]"
+            style={{ fontSize: "clamp(1.5rem, 3.4vw, 2.6rem)", color: "#F5F1EA" }}
+          >
+            <span style={{ color: "#BAA26A" }}>$1.2B</span> in active private luxury inventory
+          </p>
+          <p
+            className="split-stat font-display font-light leading-[1.15] mb-5 max-w-[90vw] will-change-[opacity,transform,filter]"
+            style={{ fontSize: "clamp(1.5rem, 3.4vw, 2.6rem)", color: "#F5F1EA" }}
+          >
+            <span style={{ color: "#BAA26A" }}>15–20%</span> of $2M+ homes close off-market
+          </p>
+          <p
+            className="split-stat font-display font-light leading-[1.15] max-w-[90vw] will-change-[opacity,transform,filter]"
+            style={{ fontSize: "clamp(1.5rem, 3.4vw, 2.6rem)", color: "#F5F1EA" }}
+          >
+            <span style={{ color: "#BAA26A" }}>$4.6B</span> in Austin luxury sales 2025
+          </p>
         </div>
       </section>
 

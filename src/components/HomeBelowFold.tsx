@@ -865,7 +865,7 @@ const CommunitiesSection = () => (
                 textTransform: "uppercase",
               }}
             >
-              Neighborhoods
+              FEATURED NEIGHBORHOODS
             </p>
             <h2
               className="font-display font-normal text-architectural"

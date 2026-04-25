@@ -401,10 +401,10 @@ const CinematicSections = ({ formNode }: Props) => {
                 THE INVITATION
               </p>
               <h2
-                className="font-display text-[#F5F1EA] leading-[1.1] tracking-tight"
+                className="font-display text-[#F5F1EA] leading-[1.1] tracking-tight whitespace-pre-line"
                 style={{ fontSize: "clamp(1.85rem, 8vw, 2.6rem)" }}
               >
-                What happens <span className="italic">before</span> it's listed.
+                What happens <span className="italic">{"\n"}before</span> it's listed.
               </h2>
               <div className="mt-6 h-[1px] w-12 bg-[hsl(var(--gold))]/60" />
             </div>

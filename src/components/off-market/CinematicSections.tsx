@@ -420,6 +420,7 @@ const CinematicSections = ({ formNode }: Props) => {
               playsInline
               preload="auto"
               className="hero-video absolute inset-0 w-full h-full object-cover"
+              style={{ objectPosition: "20% center" }}
             >
               <source src="/video/barton-creek-drone.mp4" type="video/mp4" />
             </video>

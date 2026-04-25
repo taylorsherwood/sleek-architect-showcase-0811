@@ -118,7 +118,7 @@ const ExpertiseSection = () => {
                     className="absolute inset-0 transition-opacity duration-700"
                     style={{
                       background:
-                        "linear-gradient(to top, rgba(12,15,36,0.85) 0%, rgba(12,15,36,0.4) 50%, rgba(12,15,36,0.15) 100%)",
+                        "linear-gradient(to top, rgba(10,10,12,0.78) 0%, rgba(10,10,12,0.3) 50%, rgba(10,10,12,0.08) 100%)",
                     }}
                   />
 
@@ -126,7 +126,7 @@ const ExpertiseSection = () => {
                   <div
                     aria-hidden="true"
                     className="expertise-card__darken absolute inset-0 opacity-0 transition-opacity duration-700"
-                    style={{ background: "rgba(12,15,36,0.18)" }}
+                    style={{ background: "rgba(10,10,12,0.14)" }}
                   />
 
                   {/* Content (bottom-left) */}

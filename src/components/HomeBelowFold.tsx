@@ -579,12 +579,15 @@ const TestimonialsSection = () => {
 
   return (
     <>
-      {/* DESKTOP / iPAD — same split-cover structure as off-market, on light background */}
-      <section
-        ref={splitRef}
-        className="tsplit-section hidden md:block relative w-full h-screen bg-secondary overflow-hidden"
-        aria-label="Client experiences"
-      >
+      {/* Stable wrapper — GSAP ScrollTrigger pin-spacer goes inside this div,
+          so React's parent only ever sees this wrapper as its child. Prevents
+          "removeChild" crashes when sibling sections re-render. */}
+      <div className="hidden md:block">
+        <section
+          ref={splitRef}
+          className="tsplit-section relative w-full h-screen bg-secondary overflow-hidden"
+          aria-label="Client experiences"
+        >
         <div className="absolute inset-0 z-0 flex items-center justify-end pl-8 md:pl-10 lg:pl-14 pr-16 md:pr-24 lg:pr-32">
           <div className="max-w-xl md:w-1/2 md:pl-0" style={{ paddingTop: "clamp(40px, 7vh, 96px)" }}>
             {/* Eyebrow with gold hairline rule — magazine masthead treatment */}

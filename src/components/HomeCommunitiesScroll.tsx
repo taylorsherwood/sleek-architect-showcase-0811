@@ -129,9 +129,11 @@ const HomeCommunitiesScroll = () => {
           style={{ width: `${NEIGHBORHOODS.length * 100}vw` }}
         >
           {NEIGHBORHOODS.map((n, idx) => (
-            <div
+            <Link
               key={n.name}
-              className={`hcs-card relative h-screen flex items-end overflow-hidden will-change-transform ${idx === 0 ? "is-first" : ""}`}
+              to={`/communities/${n.slug}`}
+              aria-label={`Explore ${n.name} — luxury Austin community`}
+              className={`hcs-card group relative h-screen flex items-end overflow-hidden will-change-transform cursor-pointer ${idx === 0 ? "is-first" : ""}`}
               style={{ width: "100vw", height: "100vh", flexShrink: 0 }}
             >
               <div
@@ -141,13 +143,13 @@ const HomeCommunitiesScroll = () => {
                 <img
                   src={n.image}
                   alt={`${n.name} luxury Austin neighborhood`}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.03]"
                   decoding="async"
                   loading="lazy"
                 />
               </div>
               <div
-                className="absolute inset-0 pointer-events-none"
+                className="absolute inset-0 pointer-events-none transition-colors duration-500 group-hover:bg-[rgba(12,15,36,0.32)]"
                 style={{ backgroundColor: "rgba(12, 15, 36, 0.2)" }}
               />
               <div
@@ -164,11 +166,24 @@ const HomeCommunitiesScroll = () => {
                 >
                   {n.stat}
                 </p>
-                <h2 className="font-display text-4xl lg:text-6xl text-white leading-[0.98]">
+                <h2 className="font-display text-4xl lg:text-6xl text-white leading-[0.98] mb-5">
                   {n.name}
                 </h2>
+                <span
+                  className="inline-block text-white/0 group-hover:text-white/90 transition-colors duration-500"
+                  style={{
+                    fontFamily: '"Jost", sans-serif',
+                    fontSize: "0.7rem",
+                    letterSpacing: "0.28em",
+                    textTransform: "uppercase",
+                    borderBottom: "1px solid rgba(185, 160, 108, 0.7)",
+                    paddingBottom: "4px",
+                  }}
+                >
+                  Explore Community →
+                </span>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </section>

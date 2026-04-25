@@ -348,21 +348,21 @@ const OffMarketRealEstateAustin = () => {
             </p>
             <button
               onClick={() => setModalOpen(true)}
-              className="group inline-flex items-center transition-colors duration-300 ease-out"
+              className="group inline-flex items-center justify-center transition-colors duration-300 ease-out w-full sm:w-auto"
               style={{
                 fontFamily: '"Jost", sans-serif',
-                fontSize: "0.7rem",
                 fontWeight: 400,
-                letterSpacing: "0.18em",
+                letterSpacing: "0.2em",
                 textTransform: "uppercase",
                 background: "rgba(186, 162, 106, 0.10)",
                 backdropFilter: "blur(14px) saturate(140%)",
                 WebkitBackdropFilter: "blur(14px) saturate(140%)",
                 border: "1px solid #BAA26A",
                 color: "#BAA26A",
-                padding: "0.6rem 1.25rem",
                 borderRadius: 0,
                 boxShadow: "inset 0 1px 0 rgba(255,255,255,0.08)",
+                fontSize: "clamp(0.7rem, 2.6vw, 0.78rem)",
+                padding: "clamp(0.95rem, 3.2vw, 1.05rem) clamp(1.5rem, 5vw, 2rem)",
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.backgroundColor = "#BAA26A";

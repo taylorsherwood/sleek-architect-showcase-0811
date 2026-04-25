@@ -1419,12 +1419,12 @@ const HomeBelowFold = () => (
       <ExpertiseSection />
     </Suspense>
 
+    <TestimonialsSection />
+    <div className="h-8 md:h-12 bg-secondary" aria-hidden="true" />
+
     <FeaturedProperties />
 
     <CommunitiesSection />
-
-    <TestimonialsSection />
-    <div className="h-8 md:h-12 bg-secondary" aria-hidden="true" />
 
     <NoscriptFallback />
 

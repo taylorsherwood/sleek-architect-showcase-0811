@@ -356,14 +356,6 @@ const CinematicSections = ({ formNode }: Props) => {
       <div className="bg-[hsl(220,15%,8%)] text-white">
         {/* ── Section 2 — Editorial Thesis ── */}
         <section className="relative px-7 pt-20 pb-24 bg-[hsl(220,15%,8%)] overflow-hidden">
-          {/* Gold quotation mark */}
-          <span
-            aria-hidden="true"
-            className="absolute top-6 left-7 text-[hsl(var(--gold))]/20 font-display select-none pointer-events-none"
-            style={{ fontSize: "8rem", lineHeight: 1, fontStyle: "italic" }}
-          >
-            "
-          </span>
           <p className="relative text-[hsl(var(--gold))] mb-6 font-bold" style={labelStyle}>
             THE THESIS
           </p>
@@ -473,10 +465,10 @@ const CinematicSections = ({ formNode }: Props) => {
               }}
             />
           </div>
-          <div className="px-7 py-16 relative">
+          <div className="px-7 pt-24 pb-16 relative">
             <span
               aria-hidden="true"
-              className="absolute -top-2 left-7 text-[hsl(var(--gold))]/25 font-display select-none pointer-events-none"
+              className="absolute top-8 left-7 text-[hsl(var(--gold))]/25 font-display select-none pointer-events-none"
               style={{ fontSize: "6rem", lineHeight: 1, fontStyle: "italic" }}
             >
               "

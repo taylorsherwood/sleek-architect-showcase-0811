@@ -849,11 +849,11 @@ const communities = [
 ];
 
 const CommunitiesSection = () => (
-  <section className="bg-background" style={{ padding: "clamp(80px, 12vw, 120px) 0" }}>
+  <section className="bg-background" style={{ padding: "clamp(80px, 12vw, 120px) 0 0" }}>
     <div className="container mx-auto px-6">
       <div className="max-w-[1320px] mx-auto">
         <ScrollReveal>
-          <div className="text-center" style={{ marginBottom: "clamp(64px, 8vw, 96px)" }}>
+          <div className="text-center" style={{ marginBottom: "clamp(48px, 6vw, 72px)" }}>
             <p
               className="text-gold mb-5"
               style={{
@@ -885,109 +885,22 @@ const CommunitiesSection = () => (
             />
           </div>
         </ScrollReveal>
-
-        <ScrollReveal delay={120} stagger={60}>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3" style={{ gap: "24px" }}>
-            {communities.map((c) => (
-              <Link
-                key={c.slug}
-                to={`/communities/${c.slug}`}
-                className="community-card group relative block w-full overflow-hidden"
-                style={{ aspectRatio: "3 / 2" }}
-              >
-                <img
-                  src={c.image}
-                  alt={`Luxury homes in ${c.name}, Austin`}
-                  className="absolute inset-0 w-full h-full object-cover"
-                  style={{ transition: "transform 800ms cubic-bezier(0.22, 1, 0.36, 1)" }}
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  loading="lazy"
-                  decoding="async"
-                />
-
-                {/* Default cinematic gradient */}
-                <div
-                  aria-hidden="true"
-                  className="absolute inset-0 transition-opacity duration-700"
-                  style={{
-                    background:
-                      "linear-gradient(to top, rgba(12,15,36,0.75) 0%, rgba(12,15,36,0.2) 60%, transparent 100%)",
-                  }}
-                />
-
-                {/* Hover darkening */}
-                <div
-                  aria-hidden="true"
-                  className="community-card__darken absolute inset-0 opacity-0 transition-opacity duration-700"
-                  style={{
-                    background:
-                      "linear-gradient(to top, rgba(12,15,36,0.85) 0%, rgba(12,15,36,0.25) 60%, transparent 100%)",
-                  }}
-                />
-
-                {/* Hover gold inset border */}
-                <div
-                  aria-hidden="true"
-                  className="community-card__border absolute inset-0 opacity-0 transition-opacity duration-500 pointer-events-none"
-                  style={{ boxShadow: "inset 0 0 0 1px rgba(185, 160, 108, 0.4)" }}
-                />
-
-                {/* Content (bottom-left) */}
-                <div
-                  className="absolute inset-0 flex flex-col justify-end items-start"
-                  style={{ padding: "clamp(20px, 3vw, 32px)" }}
-                >
-                  <p
-                    style={{
-                      fontFamily: '"Jost", sans-serif',
-                      fontSize: "0.7rem",
-                      fontWeight: 400,
-                      letterSpacing: "0.25em",
-                      textTransform: "uppercase",
-                      color: "#b9a06c",
-                      marginBottom: "0.625rem",
-                    }}
-                  >
-                    {c.eyebrow}
-                  </p>
-                  <h3
-                    style={{
-                      fontFamily: '"Cinzel", serif',
-                      fontSize: "clamp(1.5rem, 2.6vw, 2.2rem)",
-                      fontWeight: 400,
-                      lineHeight: 1.1,
-                      letterSpacing: "0.02em",
-                      color: "#FAFAF8",
-                      textShadow: "0 2px 12px rgba(0,0,0,0.35)",
-                      margin: 0,
-                    }}
-                  >
-                    {c.name}
-                  </h3>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </ScrollReveal>
-
-        <ScrollReveal delay={200}>
-          <div className="text-center mt-16">
-            <Link to="/communities" className="cta-luxury">
-              VIEW ALL COMMUNITIES
-            </Link>
-          </div>
-        </ScrollReveal>
       </div>
     </div>
 
-    <style>{`
-      .community-card:hover img { transform: scale(1.04); }
-      .community-card:hover .community-card__darken { opacity: 1; }
-      .community-card:hover .community-card__border { opacity: 1; }
-      @media (max-width: 640px) {
-        .community-card { aspect-ratio: 4 / 3 !important; }
-      }
-    `}</style>
+    <Suspense fallback={<div className="min-h-[400px] bg-[hsl(220,15%,6%)]" />}>
+      <HomeCommunitiesScroll />
+    </Suspense>
+
+    <div className="container mx-auto px-6">
+      <ScrollReveal delay={200}>
+        <div className="text-center" style={{ padding: "clamp(48px, 6vw, 72px) 0" }}>
+          <Link to="/communities" className="cta-luxury">
+            VIEW ALL COMMUNITIES
+          </Link>
+        </div>
+      </ScrollReveal>
+    </div>
   </section>
 );
 
@@ -1403,10 +1316,6 @@ const HomeBelowFold = () => (
     </Suspense>
 
     <div className="parallax-break hidden md:block" style={{ backgroundImage: "url('/images/parallax-lakefront.webp')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties} aria-hidden="true" />
-
-    <Suspense fallback={<div className="min-h-[400px] bg-[hsl(220,15%,6%)]" />}>
-      <HomeCommunitiesScroll />
-    </Suspense>
 
     <LeadCapture />
 

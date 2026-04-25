@@ -295,7 +295,7 @@ const OffMarketRealEstateAustin = () => {
       {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
           HERO — Brand statement (form moved to Section 7)
       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
-      <section className="relative min-h-[640px] md:min-h-[720px] lg:h-[820px] xl:h-[860px] 2xl:h-[880px] flex items-center pt-14">
+      <section className="relative min-h-[100svh] md:min-h-[720px] lg:h-[820px] xl:h-[860px] 2xl:h-[880px] flex items-center pt-14">
         <div className="absolute inset-0">
           <img
             src={heroImage}
@@ -325,45 +325,44 @@ const OffMarketRealEstateAustin = () => {
           />
         </div>
 
-        <div className="relative z-10 container mx-auto px-6 sm:px-10 md:px-16 py-12 md:py-24">
+        <div className="relative z-10 container mx-auto px-6 sm:px-10 md:px-16 py-10 md:py-24">
           <div className="max-w-full md:max-w-[60vw] text-left">
-            <p className="text-[hsl(var(--gold))] mb-6 font-bold" style={labelStyle}>
+            <p className="text-[hsl(var(--gold))] mb-5 md:mb-6 font-bold" style={labelStyle}>
               PRIVATE INVENTORY
             </p>
             <h1
-              className="font-display font-light text-[#F5F1EA] mb-8 tracking-tight"
+              className="font-display font-light text-[#F5F1EA] mb-6 md:mb-8 tracking-tight"
               style={{
-                fontSize: "clamp(2.25rem, 7vw, 7rem)",
-                lineHeight: 1.05,
-                maxWidth: "60vw",
+                fontSize: "clamp(2.5rem, 11vw, 7rem)",
+                lineHeight: 1.04,
               }}
             >
               Access Austin's Private &{" "}
               <span className="italic">Off-Market</span> Homes
             </h1>
-            <p className="text-white/70 text-base sm:text-lg md:text-xl font-light leading-relaxed mb-4 max-w-xl">
+            <p className="text-white/75 text-base sm:text-lg md:text-xl font-light leading-relaxed mb-3 md:mb-4 max-w-xl">
               These properties are not available on Zillow, Realtor.com, or the MLS.
             </p>
-            <p className="text-white/50 text-sm sm:text-base font-light leading-relaxed mb-6 max-w-xl">
+            <p className="text-white/55 text-sm sm:text-base font-light leading-relaxed mb-7 md:mb-6 max-w-xl">
               Many of Austin's most desirable homes never hit the public market. They trade quietly, through trusted relationships and private networks that most buyers never see.
             </p>
             <button
               onClick={() => setModalOpen(true)}
-              className="group inline-flex items-center transition-colors duration-300 ease-out"
+              className="group inline-flex items-center justify-center transition-colors duration-300 ease-out w-full sm:w-auto"
               style={{
                 fontFamily: '"Jost", sans-serif',
-                fontSize: "0.7rem",
                 fontWeight: 400,
-                letterSpacing: "0.18em",
+                letterSpacing: "0.2em",
                 textTransform: "uppercase",
                 background: "rgba(186, 162, 106, 0.10)",
                 backdropFilter: "blur(14px) saturate(140%)",
                 WebkitBackdropFilter: "blur(14px) saturate(140%)",
                 border: "1px solid #BAA26A",
                 color: "#BAA26A",
-                padding: "0.6rem 1.25rem",
                 borderRadius: 0,
                 boxShadow: "inset 0 1px 0 rgba(255,255,255,0.08)",
+                fontSize: "clamp(0.7rem, 2.6vw, 0.78rem)",
+                padding: "clamp(0.95rem, 3.2vw, 1.05rem) clamp(1.5rem, 5vw, 2rem)",
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.backgroundColor = "#BAA26A";
@@ -380,13 +379,13 @@ const OffMarketRealEstateAustin = () => {
           </div>
         </div>
 
-        {/* Scroll indicator — exaggerated, elegant */}
+        {/* Scroll indicator — desktop only (overlaps CTA on mobile) */}
         <button
           onClick={() => {
             window.scrollTo({ top: window.innerHeight, behavior: "smooth" });
           }}
           aria-label="Scroll to explore"
-          className="hero-scroll-cue absolute bottom-2 md:bottom-4 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-3 group cursor-pointer"
+          className="hero-scroll-cue hidden md:flex absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex-col items-center gap-3 group cursor-pointer"
         >
           <span
             className="text-[hsl(var(--gold))] font-sans group-hover:text-white transition-colors duration-500"

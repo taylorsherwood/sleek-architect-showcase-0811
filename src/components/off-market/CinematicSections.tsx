@@ -276,73 +276,7 @@ const CinematicSections = ({ formNode }: Props) => {
         .fromTo(".bridge-rule", { width: 0, opacity: 0 }, { width: 120, opacity: 1, ease: "power2.out", duration: 0.5 }, 0.5)
         .to({}, { duration: 0.3 });
 
-      // ── Section 4: Horizontal Scroll Gallery
-      const horizontalTrack = root.querySelector<HTMLDivElement>(".horizontal-track");
-      if (horizontalTrack) {
-        const getTotalScroll = () => Math.max(horizontalTrack.scrollWidth - window.innerWidth, 0);
-
-        // Cinematic reveal — as the gallery enters viewport (after counter unpins),
-        // the first card image scales down from over-zoomed and the entire track
-        // eases in. Track opacity is NOT animated post-reveal so cards never
-        // re-fade (which previously caused a black flash + re-appearance bug).
-        gsap.set(".horizontal-track", { yPercent: 8 });
-        gsap.set(".horizontal-card.is-first .horizontal-card-image img", { scale: 1.18 });
-        gsap.set(".horizontal-card.is-first .card-content", { opacity: 0, y: 40 });
-
-        const galleryReveal = gsap.timeline({
-          scrollTrigger: {
-            trigger: ".horizontal-section",
-            start: "top bottom",
-            end: "top top",
-            scrub: 0.6,
-          },
-        });
-        galleryReveal
-          .to(".horizontal-track", { yPercent: 0, ease: "none", force3D: true }, 0)
-          .to(".horizontal-card.is-first .horizontal-card-image img", { scale: 1, ease: "none", force3D: true }, 0)
-          .to(".horizontal-card.is-first .card-content", { opacity: 1, y: 0, ease: "none", force3D: true }, 0.4);
-
-        // Horizontal scroll pin
-        const horizontalTween = gsap.to(horizontalTrack, {
-          x: () => -getTotalScroll(),
-          ease: "none",
-          force3D: true,
-          scrollTrigger: {
-            trigger: ".horizontal-section",
-            start: "top top",
-            end: () => `+=${getTotalScroll()}`,
-            pin: true,
-            pinSpacing: true,
-            scrub: 1,
-            fastScrollEnd: true,
-            anticipatePin: 1,
-          },
-        });
-
-        // Per-card image parallax — skip the LAST card so it doesn't shift
-        // back into frame after the pin releases (which caused the
-        // "black screen → Spanish Oaks reappears" flash).
-        const cardImages = gsap.utils.toArray<HTMLDivElement>(".horizontal-card-image");
-        cardImages.forEach((img, i) => {
-          if (i === cardImages.length - 1) return;
-          gsap.fromTo(
-            img,
-            { xPercent: -3 },
-            {
-              xPercent: 3,
-              ease: "none",
-              force3D: true,
-              scrollTrigger: {
-                trigger: img.parentElement!,
-                containerAnimation: horizontalTween,
-                start: "left right",
-                end: "right left",
-                scrub: 0.6,
-              },
-            }
-          );
-        });
-      }
+      // ── Section 4: Horizontal Scroll Gallery — REMOVED
 
       // ── Section 5: Counter — REMOVED
 

@@ -6,12 +6,6 @@ import Lenis from "lenis";
 import westlakeDusk from "@/assets/community-westlake-hills-hero.webp";
 import privateInventoryHero from "@/assets/hero-luxury-austin.webp";
 
-import card78746 from "@/assets/barton-creek-estate-new.webp";
-import cardTarrytown from "@/assets/community-tarrytown.webp";
-import cardOldEnfield from "@/assets/pemberton-heights.webp";
-import cardWestlake from "@/assets/community-westlake-new.webp";
-import cardDavenport from "@/assets/davenport-ranch-estate.webp";
-import cardSpanishOaks from "@/assets/spanish-oaks-estate.webp";
 import desktopNote from "@/assets/testimonial-westlake-living-room.webp";
 
 import clarksvilleImg from "@/assets/off-market-reveal-estate.webp";
@@ -30,14 +24,6 @@ const labelStyle = {
 
 const THESIS = "The best Austin homes don't get listed. They get introduced.";
 
-const NEIGHBORHOODS = [
-  { name: "Barton creek", image: card78746, stat: "Median sale: $3.2M" },
-  { name: "Rollingwood", image: cardTarrytown, stat: "Avg DOM off-market: 14 days" },
-  { name: "Old Enfield", image: cardOldEnfield, stat: "60% OF TRADES ARE PRIVATE" },
-  { name: "Westlake Hills", image: cardWestlake, stat: "Median sale: $4.1M" },
-  { name: "Tarrytown", image: cardDavenport, stat: "CENTRAL ACCESS TO AUSTIN" },
-  { name: "Spanish Oaks", image: cardSpanishOaks, stat: "GUARD GATED GOLF ESTATES" },
-];
 
 interface Props {
   formNode: ReactNode;
@@ -276,73 +262,7 @@ const CinematicSections = ({ formNode }: Props) => {
         .fromTo(".bridge-rule", { width: 0, opacity: 0 }, { width: 120, opacity: 1, ease: "power2.out", duration: 0.5 }, 0.5)
         .to({}, { duration: 0.3 });
 
-      // ── Section 4: Horizontal Scroll Gallery
-      const horizontalTrack = root.querySelector<HTMLDivElement>(".horizontal-track");
-      if (horizontalTrack) {
-        const getTotalScroll = () => Math.max(horizontalTrack.scrollWidth - window.innerWidth, 0);
-
-        // Cinematic reveal — as the gallery enters viewport (after counter unpins),
-        // the first card image scales down from over-zoomed and the entire track
-        // eases in. Track opacity is NOT animated post-reveal so cards never
-        // re-fade (which previously caused a black flash + re-appearance bug).
-        gsap.set(".horizontal-track", { yPercent: 8 });
-        gsap.set(".horizontal-card.is-first .horizontal-card-image img", { scale: 1.18 });
-        gsap.set(".horizontal-card.is-first .card-content", { opacity: 0, y: 40 });
-
-        const galleryReveal = gsap.timeline({
-          scrollTrigger: {
-            trigger: ".horizontal-section",
-            start: "top bottom",
-            end: "top top",
-            scrub: 0.6,
-          },
-        });
-        galleryReveal
-          .to(".horizontal-track", { yPercent: 0, ease: "none", force3D: true }, 0)
-          .to(".horizontal-card.is-first .horizontal-card-image img", { scale: 1, ease: "none", force3D: true }, 0)
-          .to(".horizontal-card.is-first .card-content", { opacity: 1, y: 0, ease: "none", force3D: true }, 0.4);
-
-        // Horizontal scroll pin
-        const horizontalTween = gsap.to(horizontalTrack, {
-          x: () => -getTotalScroll(),
-          ease: "none",
-          force3D: true,
-          scrollTrigger: {
-            trigger: ".horizontal-section",
-            start: "top top",
-            end: () => `+=${getTotalScroll()}`,
-            pin: true,
-            pinSpacing: true,
-            scrub: 1,
-            fastScrollEnd: true,
-            anticipatePin: 1,
-          },
-        });
-
-        // Per-card image parallax — skip the LAST card so it doesn't shift
-        // back into frame after the pin releases (which caused the
-        // "black screen → Spanish Oaks reappears" flash).
-        const cardImages = gsap.utils.toArray<HTMLDivElement>(".horizontal-card-image");
-        cardImages.forEach((img, i) => {
-          if (i === cardImages.length - 1) return;
-          gsap.fromTo(
-            img,
-            { xPercent: -3 },
-            {
-              xPercent: 3,
-              ease: "none",
-              force3D: true,
-              scrollTrigger: {
-                trigger: img.parentElement!,
-                containerAnimation: horizontalTween,
-                start: "left right",
-                end: "right left",
-                scrub: 0.6,
-              },
-            }
-          );
-        });
-      }
+      // ── Section 4: Horizontal Scroll Gallery — REMOVED
 
       // ── Section 5: Counter — REMOVED
 
@@ -499,19 +419,7 @@ const CinematicSections = ({ formNode }: Props) => {
 
         {/* Section 3 — REMOVED (Homes That Never Reach The Market) */}
 
-        {/* Section 4 — Stacked neighborhood cards */}
-        <section className="px-6 py-12 space-y-8">
-          {NEIGHBORHOODS.map((n) => (
-            <div key={n.name} className="relative h-[60vh] overflow-hidden">
-              <img src={n.image} alt={n.name} className="absolute inset-0 w-full h-full object-cover" decoding="async" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-              <div className="absolute bottom-6 left-6 right-6">
-                <h3 className="font-display text-3xl text-white mb-2">{n.name}</h3>
-                <p className="text-[hsl(var(--gold))] text-xs tracking-[0.2em] uppercase font-sans">{n.stat}</p>
-              </div>
-            </div>
-          ))}
-        </section>
+        {/* Section 4 — REMOVED (Stacked neighborhood cards) */}
 
 
         {/* Section 6 — Testimonial */}
@@ -732,49 +640,7 @@ const CinematicSections = ({ formNode }: Props) => {
         </div>
       </section>
 
-      {/* ── Section 4: Horizontal Scroll Gallery ─ */}
-      <section className="horizontal-section relative h-screen w-full overflow-hidden bg-[hsl(220,15%,6%)]">
-        <div className="horizontal-track absolute top-0 left-0 flex h-full" style={{ width: `${NEIGHBORHOODS.length * 100}vw` }}>
-          {NEIGHBORHOODS.map((n, idx) => (
-            <div
-              key={n.name}
-              className={`horizontal-card relative h-screen flex items-end overflow-hidden will-change-transform ${idx === 0 ? "is-first" : ""}`}
-              style={{ width: "100vw", height: "100vh", flexShrink: 0 }}
-            >
-              <div
-                className="horizontal-card-image absolute inset-0 will-change-transform"
-                style={{ width: "100%", left: "0%" }}
-              >
-                <img
-                  src={n.image}
-                  alt={`${n.name} luxury Austin neighborhood`}
-                  className="w-full h-full object-cover"
-                  decoding="async"
-                />
-              </div>
-              <div
-                className="absolute inset-0 pointer-events-none"
-                style={{ backgroundColor: "rgba(12, 15, 36, 0.2)" }}
-              />
-              <div
-                className="absolute inset-x-0 bottom-0 h-1/2 pointer-events-none"
-                style={{
-                  background:
-                    "linear-gradient(to top, rgba(12, 15, 36, 0.75), rgba(12, 15, 36, 0))",
-                }}
-              />
-              <div className="card-content relative z-10 p-10 lg:p-14 max-w-xl">
-                <p className="mb-4 text-xs uppercase tracking-[0.24em] font-sans" style={{ color: "#b9a06c" }}>
-                  {n.stat}
-                </p>
-                <h2 className="font-display text-4xl lg:text-6xl text-white leading-[0.98]">
-                  {n.name}
-                </h2>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+      {/* ── Section 4: Horizontal Scroll Gallery — REMOVED ─ */}
 
       {/* ── Section 6: Vertical Split-Reveal Testimonial ─ */}
       <section className="testimonial-section relative w-full h-screen bg-[hsl(220,15%,6%)] overflow-hidden">

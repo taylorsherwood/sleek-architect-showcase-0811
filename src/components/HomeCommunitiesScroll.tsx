@@ -122,7 +122,18 @@ const HomeCommunitiesScroll = () => {
       // Refresh after images load to pick up final dimensions
       const onLoad = () => ScrollTrigger.refresh();
       window.addEventListener("load", onLoad);
-      return () => window.removeEventListener("load", onLoad);
+
+      // Refresh shortly after mount so downstream pinned triggers
+      // (e.g. TestimonialsSection split-reveal) recompute their start/end
+      // against the pinSpacing height this gallery adds to the page.
+      const refreshTimer = window.setTimeout(() => ScrollTrigger.refresh(), 100);
+      const refreshTimer2 = window.setTimeout(() => ScrollTrigger.refresh(), 600);
+
+      return () => {
+        window.removeEventListener("load", onLoad);
+        window.clearTimeout(refreshTimer);
+        window.clearTimeout(refreshTimer2);
+      };
     }, root);
 
     return () => {

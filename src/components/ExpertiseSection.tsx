@@ -38,8 +38,8 @@ const expertiseBlocks = [
     description: "Income-producing assets and value-add opportunities, underwritten to institutional standards.",
     link: "/austin-real-estate-investment",
     linkText: "View investments",
-    image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1600&q=80",
-    alt: "Modern multifamily architectural portfolio property",
+    image: paseoInvestment,
+    alt: "Paseo high-rise tower at sunset in downtown Austin — investment property",
   },
 ];
 

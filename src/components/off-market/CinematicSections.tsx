@@ -354,35 +354,66 @@ const CinematicSections = ({ formNode }: Props) => {
   if (isMobile) {
     return (
       <div className="bg-[hsl(220,15%,8%)] text-white">
-        {/* Section 2 — Thesis (static) */}
-        <section className="py-24 px-6 bg-[hsl(220,15%,8%)] text-center">
-          <p className="font-display text-3xl sm:text-4xl leading-tight text-[hsl(40,30%,90%)]">
-            The best Austin homes don't get listed. They get{" "}
-            <span className="italic text-[hsl(var(--gold))]">introduced</span>.
+        {/* ── Section 2 — Editorial Thesis ── */}
+        <section className="relative px-7 pt-20 pb-24 bg-[hsl(220,15%,8%)] overflow-hidden">
+          {/* Gold quotation mark */}
+          <span
+            aria-hidden="true"
+            className="absolute top-6 left-7 text-[hsl(var(--gold))]/20 font-display select-none pointer-events-none"
+            style={{ fontSize: "8rem", lineHeight: 1, fontStyle: "italic" }}
+          >
+            "
+          </span>
+          <p className="relative text-[hsl(var(--gold))] mb-6 font-bold" style={labelStyle}>
+            THE THESIS
           </p>
+          <p
+            className="relative font-display text-[hsl(40,30%,92%)] leading-[1.15] tracking-tight"
+            style={{ fontSize: "clamp(1.85rem, 8vw, 2.6rem)" }}
+          >
+            The best Austin homes don't get listed.{" "}
+            <span className="italic text-[hsl(var(--gold))]">They get introduced.</span>
+          </p>
+          {/* Gold rule */}
+          <div className="mt-10 h-[1px] w-16 bg-[hsl(var(--gold))]/60" />
         </section>
 
-        {/* Section 2.5 (mobile static) — Image Split fallback */}
+        {/* ── Section 2.5 — Full-bleed editorial image with caption overlay ── */}
         <section className="relative">
-          <img
-            src={privateInventoryHero}
-            alt="Private Austin estate"
-            className="w-full h-[50vh] object-cover"
-            decoding="async"
-          />
-          <div className="px-6 py-12 text-center bg-[hsl(220,15%,8%)]">
-            <p className="text-[hsl(var(--gold))] mb-4 font-bold" style={labelStyle}>
-              THE INVITATION
-            </p>
-            <h2 className="font-display text-3xl text-[hsl(40,30%,92%)]">
-              What happens before it's listed.
-            </h2>
+          <div className="relative w-full h-[78vh] overflow-hidden">
+            <img
+              src={privateInventoryHero}
+              alt="Private Austin estate"
+              className="w-full h-full object-cover"
+              decoding="async"
+            />
+            {/* Bottom-up gradient for caption legibility */}
+            <div
+              className="absolute inset-0 pointer-events-none"
+              style={{
+                background:
+                  "linear-gradient(to top, rgba(8,11,28,0.92) 0%, rgba(8,11,28,0.55) 35%, rgba(8,11,28,0.15) 65%, transparent 100%)",
+              }}
+            />
+            {/* Caption overlay */}
+            <div className="absolute inset-x-0 bottom-0 px-7 pb-12">
+              <p className="text-[hsl(var(--gold))] mb-4 font-bold" style={labelStyle}>
+                THE INVITATION
+              </p>
+              <h2
+                className="font-display text-[#F5F1EA] leading-[1.1] tracking-tight"
+                style={{ fontSize: "clamp(1.85rem, 8vw, 2.6rem)" }}
+              >
+                What happens <span className="italic">before</span> it's listed.
+              </h2>
+              <div className="mt-6 h-[1px] w-12 bg-[hsl(var(--gold))]/60" />
+            </div>
           </div>
         </section>
 
-        {/* Section 3 (mobile) — Drone video, plays only in view */}
+        {/* ── Section 3 — Drone video with editorial caption ── */}
         <section className="relative">
-          <div className="relative w-full h-[60vh] overflow-hidden">
+          <div className="relative w-full h-[80vh] overflow-hidden">
             <video
               ref={droneVideoRef}
               muted
@@ -394,57 +425,84 @@ const CinematicSections = ({ formNode }: Props) => {
             </video>
             <div
               className="absolute inset-0 pointer-events-none"
-              style={{ backgroundColor: "rgba(12, 15, 36, 0.3)" }}
+              style={{ backgroundColor: "rgba(12, 15, 36, 0.35)" }}
             />
             <div
               className="absolute inset-0 pointer-events-none"
               style={{
                 background:
-                  "radial-gradient(ellipse at center, transparent 0%, rgba(12,15,36,0.4) 70%, rgba(12,15,36,0.7) 100%)",
+                  "linear-gradient(to top, rgba(8,11,28,0.92) 0%, rgba(8,11,28,0.4) 40%, transparent 75%)",
+              }}
+            />
+            <div className="absolute inset-x-0 bottom-0 px-7 pb-12">
+              <p className="mb-4 font-bold" style={{ ...labelStyle, color: "#BAA26A" }}>
+                OFF-MARKET
+              </p>
+              <h2
+                className="font-display text-[#F5F1EA] leading-[1.1] tracking-tight mb-5"
+                style={{ fontSize: "clamp(1.85rem, 8vw, 2.6rem)" }}
+              >
+                Austin, from the <span className="italic">inside.</span>
+              </h2>
+              <p className="text-white/75 font-light leading-relaxed text-base max-w-md">
+                The city you're moving to. The homes no one else will show you.
+              </p>
+              <div className="mt-6 h-[1px] w-12 bg-[hsl(var(--gold))]/60" />
+            </div>
+          </div>
+        </section>
+
+        {/* ── Section 6 — Editorial testimonial ── */}
+        <section className="bg-[hsl(220,15%,6%)]">
+          <div className="relative w-full h-[55vh] overflow-hidden">
+            <img
+              src={testimonialSplitImg}
+              alt="Lake Austin luxury waterfront estate"
+              className="w-full h-full object-cover"
+              decoding="async"
+            />
+            <div
+              className="absolute inset-0 pointer-events-none"
+              style={{
+                background:
+                  "linear-gradient(to bottom, transparent 0%, rgba(8,11,28,0.3) 60%, rgba(8,11,28,0.85) 100%)",
               }}
             />
           </div>
-          <div className="px-6 py-12 text-center bg-[hsl(220,15%,8%)]">
-            <p className="mb-4 font-bold" style={{ ...labelStyle, color: "#BAA26A" }}>
-              OFF-MARKET
+          <div className="px-7 py-16 relative">
+            <span
+              aria-hidden="true"
+              className="absolute -top-2 left-7 text-[hsl(var(--gold))]/25 font-display select-none pointer-events-none"
+              style={{ fontSize: "6rem", lineHeight: 1, fontStyle: "italic" }}
+            >
+              "
+            </span>
+            <p
+              className="relative font-display italic text-white/90 leading-[1.35] mb-7"
+              style={{ fontSize: "clamp(1.35rem, 5.5vw, 1.7rem)" }}
+            >
+              Taylor brought us a Westlake home before it ever hit the market. We never would have seen it without him.
             </p>
-            <h2 className="font-display text-3xl text-[hsl(40,30%,92%)] leading-tight mb-4">
-              Austin, from the inside.
-            </h2>
-            <p className="text-white/80 font-sans max-w-md mx-auto">
-              The city you're moving to. The homes no one else will show you.
-            </p>
-          </div>
-        </section>
-
-        {/* Section 3 — REMOVED (Homes That Never Reach The Market) */}
-
-        {/* Section 4 — REMOVED (Stacked neighborhood cards) */}
-
-
-        {/* Section 6 — Testimonial */}
-        <section className="bg-[hsl(220,15%,6%)]">
-          <img src={testimonialSplitImg} alt="Lake Austin luxury waterfront estate" className="w-full h-[40vh] object-cover" decoding="async" />
-          <div className="px-6 py-12 text-center">
-            <p className="font-display italic text-2xl text-white/90 leading-snug mb-6">
-              "Taylor brought us a Westlake home before it ever hit the market. We never would have seen it without him."
-            </p>
-            <p className="text-[hsl(var(--gold))] text-xs tracking-[0.2em] uppercase font-sans">
-              — Private Buyer, Westlake Hills
+            <div className="h-[1px] w-10 bg-[hsl(var(--gold))]/60 mb-4" />
+            <p className="text-[hsl(var(--gold))] text-[0.65rem] tracking-[0.3em] uppercase font-sans font-medium">
+              Private Buyer · Westlake Hills
             </p>
           </div>
         </section>
 
-        {/* Section 7 — Form */}
-        <section id="section-7-form" className="py-16 px-6 bg-[hsl(220,15%,8%)]">
+        {/* ── Section 7 — Form ── */}
+        <section id="section-7-form" className="py-20 px-6 bg-[hsl(220,15%,8%)]">
           <div className="max-w-xl mx-auto">
-            <p className="text-[hsl(var(--gold))] mb-3 font-bold text-center" style={labelStyle}>
+            <p className="text-[hsl(var(--gold))] mb-4 font-bold text-center" style={labelStyle}>
               ECHELON INSIDER
             </p>
-            <h2 className="font-display text-2xl font-light text-white mb-3 text-center whitespace-pre-line">
-              {"\n"}See you on the inside,
+            <h2
+              className="font-display font-light text-[#F5F1EA] mb-4 text-center leading-[1.1] tracking-tight"
+              style={{ fontSize: "clamp(1.75rem, 7vw, 2.25rem)" }}
+            >
+              See you on the <span className="italic">inside,</span>
             </h2>
-            <div className="flex justify-center mb-3">
+            <div className="flex justify-center mb-6">
               <img
                 src={taylorSignature}
                 alt="Taylor Sherwood signature"
@@ -452,7 +510,6 @@ const CinematicSections = ({ formNode }: Props) => {
                 decoding="async"
               />
             </div>
-            <div className="h-4" aria-hidden="true" />
             <div className="border border-white/10 p-6 bg-white/[0.02]">
               {formNode}
             </div>

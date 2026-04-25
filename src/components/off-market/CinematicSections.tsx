@@ -465,7 +465,7 @@ const CinematicSections = ({ formNode }: Props) => {
               }}
             />
           </div>
-          <div className="px-7 py-16 relative">
+          <div className="px-7 pt-24 pb-16 relative">
             <span
               aria-hidden="true"
               className="absolute top-8 left-7 text-[hsl(var(--gold))]/25 font-display select-none pointer-events-none"

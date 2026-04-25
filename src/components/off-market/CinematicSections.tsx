@@ -443,7 +443,7 @@ const CinematicSections = ({ formNode }: Props) => {
                 className="font-display text-[#F5F1EA] leading-[1.1] tracking-tight mb-5 whitespace-pre-line"
                 style={{ fontSize: "clamp(1.85rem, 8vw, 2.6rem)" }}
               >
-                Austin, from the <span className="italic">{"\n"}inside.</span>
+                Austin, from the <span className="italic">{"\n"}Inside.</span>
               </h2>
               <p className="text-white/75 font-light leading-relaxed text-base max-w-md">
                 The city you're moving to. The homes no one else will show you.
@@ -653,7 +653,7 @@ const CinematicSections = ({ formNode }: Props) => {
             className="drone-reveal font-display font-light leading-[1.05] mb-6 max-w-[90vw] whitespace-pre-line"
             style={{ fontSize: "7vw", color: "#F5F1EA" }}
           >
-            Austin, from the {"\n"}inside.
+            Austin, from the {"\n"}Inside.
           </h2>
           <p
             className="drone-reveal font-sans"

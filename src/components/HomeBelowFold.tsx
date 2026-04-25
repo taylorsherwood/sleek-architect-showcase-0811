@@ -893,7 +893,7 @@ const CommunitiesSection = () => {
                 willChange: "opacity, filter, transform",
               }}
             >
-              FEATURED NEIGHBORHOODS
+              <span>FEATURED NEIGHBORHOODS</span>
             </p>
             <h2
               className="font-display font-normal text-architectural"
@@ -912,7 +912,7 @@ const CommunitiesSection = () => {
                 willChange: "opacity, filter, transform",
               }}
             >
-              Where Austin lives well.
+              <span>Where Austin lives well.</span>
             </h2>
             <div
               aria-hidden="true"
@@ -1351,12 +1351,12 @@ const HomeBelowFold = () => (
 
     <FeaturedProperties />
 
-    <NoscriptFallback />
-
     <CommunitiesSection />
 
     <TestimonialsSection />
     <div className="h-8 md:h-12 bg-secondary" aria-hidden="true" />
+
+    <NoscriptFallback />
 
     <div className="parallax-break hidden md:block" style={{ backgroundImage: "url('/images/parallax-lakefront.webp')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties} aria-hidden="true" />
 

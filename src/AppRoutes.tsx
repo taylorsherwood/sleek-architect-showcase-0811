@@ -175,7 +175,6 @@ const AppRoutes = () => {
       </Suspense>
       <Suspense fallback={null}>
         <FloatingContact />
-        <AdvisoryBar />
       </Suspense>
     </>
   );

@@ -333,8 +333,8 @@ const OffMarketRealEstateAustin = () => {
               loading="eager"
               decoding="async"
             />
-            <p className="text-[hsl(var(--gold))] mb-5 md:mb-6 font-bold" style={labelStyle}>
-              PRIVATE INVENTORY
+            <p className="text-[hsl(var(--gold))] mb-5 md:mb-6 font-bold whitespace-pre-line" style={labelStyle}>
+              {"\n\n\n\nPRIVATE INVENTORY"}
             </p>
             <h1
               className="font-display font-light text-[#F5F1EA] mb-6 md:mb-8 tracking-tight"

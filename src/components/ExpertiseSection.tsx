@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import ScrollReveal from "@/components/ScrollReveal";
+import commercialMusicLane from "@/assets/commercial-music-lane-austin.jpg";
 
 const expertiseBlocks = [
   {
@@ -26,8 +27,8 @@ const expertiseBlocks = [
     description: "Multifamily, retail, office, and mixed-use across the metro — tenant rep to acquisitions.",
     link: "/austin-commercial-real-estate",
     linkText: "Explore commercial",
-    image: "https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=1600&q=80",
-    alt: "Austin downtown skyline mixed-use commercial buildings",
+    image: commercialMusicLane,
+    alt: "Music Lane mixed-use development on South Congress with downtown Austin skyline",
   },
   {
     eyebrow: "INVESTMENT ADVISORY",

@@ -2,6 +2,7 @@ import { lazy, Suspense } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 import { ScrollToTop } from "@/components/ScrollToTop";
 const FloatingContact = lazy(() => import("@/components/FloatingContact"));
+const ExitIntentModal = lazy(() => import("@/components/ExitIntentModal"));
 
 // Eagerly load the homepage for instant first paint
 import Index from "@/pages/Index";

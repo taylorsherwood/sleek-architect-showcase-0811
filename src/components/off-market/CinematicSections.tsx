@@ -6,12 +6,6 @@ import Lenis from "lenis";
 import westlakeDusk from "@/assets/community-westlake-hills-hero.webp";
 import privateInventoryHero from "@/assets/hero-luxury-austin.webp";
 
-import card78746 from "@/assets/barton-creek-estate-new.webp";
-import cardTarrytown from "@/assets/community-tarrytown.webp";
-import cardOldEnfield from "@/assets/pemberton-heights.webp";
-import cardWestlake from "@/assets/community-westlake-new.webp";
-import cardDavenport from "@/assets/davenport-ranch-estate.webp";
-import cardSpanishOaks from "@/assets/spanish-oaks-estate.webp";
 import desktopNote from "@/assets/testimonial-westlake-living-room.webp";
 
 import clarksvilleImg from "@/assets/off-market-reveal-estate.webp";

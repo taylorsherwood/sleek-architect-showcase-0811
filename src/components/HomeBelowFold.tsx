@@ -826,72 +826,130 @@ const TestimonialsSection = () => {
    ───────────────────────────────────────────── */
 
 const communities = [
-  { name: "Barton Creek", descriptor: "Golf, privacy, Hill Country estates", image: "/static-assets/community-barton-creek.webp", slug: "barton-creek", priceFrom: "From $2M+" },
-  { name: "Lake Austin", descriptor: "Waterfront living at its finest", image: "/static-assets/community-lake-austin.webp", slug: "lake-austin", priceFrom: "From $3.5M+" },
-  { name: "Rollingwood", descriptor: "Intimate enclave near Zilker", image: "/static-assets/community-rollingwood.webp", slug: "rollingwood", priceFrom: "From $1.2M+" },
-  { name: "Spanish Oaks", descriptor: "Gated Hill Country luxury", image: "/static-assets/community-spanish-oaks.webp", slug: "spanish-oaks", priceFrom: "From $2.5M+" },
-  { name: "Tarrytown", descriptor: "Old Austin charm, central location", image: "/static-assets/community-tarrytown.webp", slug: "tarrytown", priceFrom: "From $1.5M+" },
-  { name: "Westlake Hills", descriptor: "Scenic bluffs, top-rated schools", image: "/static-assets/community-westlake-hills.webp", slug: "westlake-hills", priceFrom: "From $1.8M+" },
+  { name: "Barton Creek", eyebrow: "MEDIAN SALE: $3.2M", image: "/static-assets/community-barton-creek.webp", slug: "barton-creek" },
+  { name: "Lake Austin", eyebrow: "WATERFRONT ESTATES FROM $3.5M", image: "/static-assets/community-lake-austin.webp", slug: "lake-austin" },
+  { name: "Rollingwood", eyebrow: "MEDIAN SALE: $1.8M", image: "/static-assets/community-rollingwood.webp", slug: "rollingwood" },
+  { name: "Spanish Oaks", eyebrow: "GATED ESTATES FROM $2.5M", image: "/static-assets/community-spanish-oaks.webp", slug: "spanish-oaks" },
+  { name: "Tarrytown", eyebrow: "OLD AUSTIN, CENTRAL", image: "/static-assets/community-tarrytown.webp", slug: "tarrytown" },
+  { name: "Westlake Hills", eyebrow: "EANES ISD, FROM $1.8M", image: "/static-assets/community-westlake-hills.webp", slug: "westlake-hills" },
 ];
 
 const CommunitiesSection = () => (
-  <section className="bg-background" style={{ padding: "clamp(16px, 2.5vw, 32px) 0 clamp(64px, 10vw, 120px)" }}>
+  <section className="bg-background" style={{ padding: "clamp(80px, 12vw, 120px) 0" }}>
     <div className="container mx-auto px-6">
       <div className="max-w-[1320px] mx-auto">
         <ScrollReveal>
-          <div className="text-center mb-16">
-            <div className="w-10 h-px mx-auto mb-5" style={{ background: "hsl(38 39% 61%)" }} />
-            <p className="text-minimal text-gold mb-5">SELECT COMMUNITIES</p>
-            <h2 className="font-display text-3xl md:text-[2.75rem] font-normal text-foreground/90 leading-[1.1] tracking-[0.03em]">
-              Explore Austin's Most Sought-After Communities
+          <div className="text-center" style={{ marginBottom: "clamp(64px, 8vw, 96px)" }}>
+            <p
+              className="text-gold mb-5"
+              style={{
+                fontFamily: '"Jost", sans-serif',
+                fontSize: "0.75rem",
+                fontWeight: 500,
+                letterSpacing: "0.3em",
+                textTransform: "uppercase",
+              }}
+            >
+              Neighborhoods
+            </p>
+            <h2
+              className="font-display font-normal text-architectural"
+              style={{
+                fontFamily: '"Cinzel", serif',
+                fontSize: "clamp(1.5rem, 3vw, 2.05rem)",
+                fontWeight: 400,
+                lineHeight: 1.2,
+                letterSpacing: "0.02em",
+                marginBottom: "1.75rem",
+              }}
+            >
+              Where Austin lives well.
             </h2>
+            <div
+              aria-hidden="true"
+              style={{ width: "40px", height: "1px", background: "#b9a06c", margin: "0 auto" }}
+            />
           </div>
         </ScrollReveal>
 
         <ScrollReveal delay={120} stagger={60}>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-5 lg:gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3" style={{ gap: "24px" }}>
             {communities.map((c) => (
-              <Link key={c.slug} to={`/communities/${c.slug}`} className="group relative overflow-hidden aspect-[3/4] sm:aspect-[3/4] lg:aspect-[4/3] transition-shadow duration-[500ms] hover:shadow-[0_12px_30px_-8px_hsl(var(--foreground)/0.1)]">
-                <img src={c.image} alt={`Luxury homes in ${c.name}, Austin`}
-                  className="community-tile-img absolute inset-0 w-full h-full object-cover transition-transform duration-[800ms]"
-                  style={{ transitionTimingFunction: "cubic-bezier(0.25, 0.46, 0.45, 0.94)" }}
+              <Link
+                key={c.slug}
+                to={`/communities/${c.slug}`}
+                className="community-card group relative block w-full overflow-hidden"
+                style={{ aspectRatio: "3 / 2" }}
+              >
+                <img
+                  src={c.image}
+                  alt={`Luxury homes in ${c.name}, Austin`}
+                  className="absolute inset-0 w-full h-full object-cover"
+                  style={{ transition: "transform 800ms cubic-bezier(0.22, 1, 0.36, 1)" }}
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  loading="lazy" decoding="async" />
+                  loading="lazy"
+                  decoding="async"
+                />
 
-                <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 sm:from-foreground/65 via-foreground/20 sm:via-foreground/15 via-[45%] to-transparent transition-opacity duration-500 group-hover:opacity-0" />
+                {/* Default cinematic gradient */}
+                <div
+                  aria-hidden="true"
+                  className="absolute inset-0 transition-opacity duration-700"
+                  style={{
+                    background:
+                      "linear-gradient(to top, rgba(12,15,36,0.75) 0%, rgba(12,15,36,0.2) 60%, transparent 100%)",
+                  }}
+                />
 
-                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
-                  <span style={{
-                    fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em",
-                    textTransform: "uppercase", color: "hsl(38 39% 61%)", fontWeight: 400,
-                  }}>
-                    Explore →
-                  </span>
-                </div>
+                {/* Hover darkening */}
+                <div
+                  aria-hidden="true"
+                  className="community-card__darken absolute inset-0 opacity-0 transition-opacity duration-700"
+                  style={{
+                    background:
+                      "linear-gradient(to top, rgba(12,15,36,0.85) 0%, rgba(12,15,36,0.25) 60%, transparent 100%)",
+                  }}
+                />
 
-                <div className="absolute top-3 right-3 sm:top-4 sm:right-4 z-10" style={{
-                  background: "rgba(12,15,36,0.8)", border: "1px solid hsl(38 39% 61%)",
-                }}>
-                  <span className="block px-2 py-[3px] sm:px-2 sm:py-[2px] lg:px-[10px] lg:py-1" style={{
-                    fontFamily: '"Jost", sans-serif', letterSpacing: "0.12em",
-                    color: "hsl(38 39% 61%)",
-                    fontSize: "clamp(8px, 1.8vw, 10px)",
-                  }}>
-                    {c.priceFrom}
-                  </span>
-                </div>
+                {/* Hover gold inset border */}
+                <div
+                  aria-hidden="true"
+                  className="community-card__border absolute inset-0 opacity-0 transition-opacity duration-500 pointer-events-none"
+                  style={{ boxShadow: "inset 0 0 0 1px rgba(185, 160, 108, 0.4)" }}
+                />
 
-                <div className="absolute bottom-6 left-5 right-5 sm:bottom-5 z-10 group-hover:opacity-0 transition-opacity duration-500">
-                  <h3 className="font-display text-base sm:text-[1.05rem] lg:text-xl font-medium tracking-[0.03em] leading-[1.1] drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)] mb-2 sm:mb-1.5" style={{ color: "#F5F3EF" }}>
+                {/* Content (bottom-left) */}
+                <div
+                  className="absolute inset-0 flex flex-col justify-end items-start"
+                  style={{ padding: "clamp(20px, 3vw, 32px)" }}
+                >
+                  <p
+                    style={{
+                      fontFamily: '"Jost", sans-serif',
+                      fontSize: "0.7rem",
+                      fontWeight: 400,
+                      letterSpacing: "0.25em",
+                      textTransform: "uppercase",
+                      color: "#b9a06c",
+                      marginBottom: "0.625rem",
+                    }}
+                  >
+                    {c.eyebrow}
+                  </p>
+                  <h3
+                    style={{
+                      fontFamily: '"Cinzel", serif',
+                      fontSize: "clamp(1.5rem, 2.6vw, 2.2rem)",
+                      fontWeight: 400,
+                      lineHeight: 1.1,
+                      letterSpacing: "0.02em",
+                      color: "#FAFAF8",
+                      textShadow: "0 2px 12px rgba(0,0,0,0.35)",
+                      margin: 0,
+                    }}
+                  >
                     {c.name}
                   </h3>
-                  <p className="line-clamp-1 hidden sm:block" style={{
-                    fontFamily: '"Jost", sans-serif', fontSize: "10px", fontWeight: 300,
-                    letterSpacing: "0.08em", textTransform: "uppercase",
-                    color: "rgba(250,250,248,0.72)",
-                  }}>
-                    {c.descriptor}
-                  </p>
                 </div>
               </Link>
             ))}
@@ -907,6 +965,15 @@ const CommunitiesSection = () => (
         </ScrollReveal>
       </div>
     </div>
+
+    <style>{`
+      .community-card:hover img { transform: scale(1.04); }
+      .community-card:hover .community-card__darken { opacity: 1; }
+      .community-card:hover .community-card__border { opacity: 1; }
+      @media (max-width: 640px) {
+        .community-card { aspect-ratio: 4 / 3 !important; }
+      }
+    `}</style>
   </section>
 );
 

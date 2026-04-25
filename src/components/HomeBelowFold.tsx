@@ -821,8 +821,8 @@ const TestimonialsSection = () => {
             </ScrollReveal>
           </div>
 
-          <div className="max-w-[800px] mx-auto text-center relative" style={{ minHeight: "320px" }}>
-            <div style={{ minHeight: "160px", display: "flex", alignItems: "center", justifyContent: "center" }}>
+          <div className="max-w-[800px] mx-auto text-center relative">
+            <div style={{ minHeight: "clamp(280px, 42vw, 340px)", display: "flex", alignItems: "center", justifyContent: "center" }}>
               <p key={active} className="mb-6" style={{
                 fontFamily: '"Jost", sans-serif', fontWeight: 300,
                 fontSize: "clamp(15px, 1.8vw, 20px)", lineHeight: 1.85, letterSpacing: "0.01em",

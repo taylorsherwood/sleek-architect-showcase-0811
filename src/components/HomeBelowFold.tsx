@@ -1480,7 +1480,7 @@ const EditorialInsights = () => (
                 </h3>
 
                 <p
-                  className="text-muted-foreground mb-5"
+                  className="text-muted-foreground mb-5 flex-1"
                   style={{
                     fontFamily: '"Jost", sans-serif',
                     fontWeight: 300,

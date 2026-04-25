@@ -619,8 +619,19 @@ const CinematicSections = ({ formNode }: Props) => {
             decoding="async"
           />
         </div>
-        {/* Stat overlay — blur-reveals over the locked image, fades before the split */}
-        <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-8 pointer-events-none">
+        {/* Stat overlay — sits above bg image but BELOW the split halves so it
+            only becomes visible after the halves slide away. Then the lines
+            blur-reveal in over the revealed skyline. */}
+        <div className="absolute inset-0 z-[5] flex flex-col items-center justify-center text-center px-8 pointer-events-none">
+          {/* Subtle dark scrim for legibility against bright skyline */}
+          <div
+            className="absolute inset-0 pointer-events-none"
+            style={{
+              background:
+                "radial-gradient(ellipse at center, rgba(12,15,36,0.55) 0%, rgba(12,15,36,0.25) 55%, rgba(12,15,36,0) 100%)",
+            }}
+          />
+          <div className="relative flex flex-col items-center justify-center w-full">
           <p
             className="split-stat font-display font-light leading-[1.15] mb-5 max-w-[90vw] will-change-[opacity,transform,filter]"
             style={{ fontSize: "clamp(1.5rem, 3.4vw, 2.6rem)", color: "#F5F1EA" }}

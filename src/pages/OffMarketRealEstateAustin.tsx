@@ -329,7 +329,7 @@ const OffMarketRealEstateAustin = () => {
               src={echelonMark}
               alt=""
               aria-hidden="true"
-              className="md:hidden mx-auto mb-6 w-20 h-auto opacity-95"
+              className="md:hidden mx-auto -mt-10 mb-6 w-20 h-auto opacity-95"
               loading="eager"
               decoding="async"
             />

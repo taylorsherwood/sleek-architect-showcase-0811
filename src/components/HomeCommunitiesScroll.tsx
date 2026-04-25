@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -12,12 +13,12 @@ import cardSpanishOaks from "@/assets/spanish-oaks-estate.webp";
 gsap.registerPlugin(ScrollTrigger);
 
 const NEIGHBORHOODS = [
-  { name: "Barton creek", image: card78746, stat: "Median sale: $3.2M" },
-  { name: "Rollingwood", image: cardTarrytown, stat: "Avg DOM off-market: 14 days" },
-  { name: "Old Enfield", image: cardOldEnfield, stat: "60% OF TRADES ARE PRIVATE" },
-  { name: "Westlake Hills", image: cardWestlake, stat: "Median sale: $4.1M" },
-  { name: "Tarrytown", image: cardDavenport, stat: "CENTRAL ACCESS TO AUSTIN" },
-  { name: "Spanish Oaks", image: cardSpanishOaks, stat: "GUARD GATED GOLF ESTATES" },
+  { name: "Barton creek", image: card78746, stat: "Median sale: $3.2M", slug: "barton-creek" },
+  { name: "Rollingwood", image: cardTarrytown, stat: "Avg DOM off-market: 14 days", slug: "rollingwood" },
+  { name: "Old Enfield", image: cardOldEnfield, stat: "60% OF TRADES ARE PRIVATE", slug: "old-enfield" },
+  { name: "Westlake Hills", image: cardWestlake, stat: "Median sale: $4.1M", slug: "westlake-hills" },
+  { name: "Tarrytown", image: cardDavenport, stat: "CENTRAL ACCESS TO AUSTIN", slug: "tarrytown" },
+  { name: "Spanish Oaks", image: cardSpanishOaks, stat: "GUARD GATED GOLF ESTATES", slug: "spanish-oaks" },
 ];
 
 /**
@@ -128,9 +129,11 @@ const HomeCommunitiesScroll = () => {
           style={{ width: `${NEIGHBORHOODS.length * 100}vw` }}
         >
           {NEIGHBORHOODS.map((n, idx) => (
-            <div
+            <Link
               key={n.name}
-              className={`hcs-card relative h-screen flex items-end overflow-hidden will-change-transform ${idx === 0 ? "is-first" : ""}`}
+              to={`/communities/${n.slug}`}
+              aria-label={`Explore ${n.name} — luxury Austin community`}
+              className={`hcs-card group relative h-screen flex items-end overflow-hidden will-change-transform cursor-pointer ${idx === 0 ? "is-first" : ""}`}
               style={{ width: "100vw", height: "100vh", flexShrink: 0 }}
             >
               <div
@@ -140,13 +143,13 @@ const HomeCommunitiesScroll = () => {
                 <img
                   src={n.image}
                   alt={`${n.name} luxury Austin neighborhood`}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.03]"
                   decoding="async"
                   loading="lazy"
                 />
               </div>
               <div
-                className="absolute inset-0 pointer-events-none"
+                className="absolute inset-0 pointer-events-none transition-colors duration-500 group-hover:bg-[rgba(12,15,36,0.32)]"
                 style={{ backgroundColor: "rgba(12, 15, 36, 0.2)" }}
               />
               <div
@@ -163,11 +166,24 @@ const HomeCommunitiesScroll = () => {
                 >
                   {n.stat}
                 </p>
-                <h2 className="font-display text-4xl lg:text-6xl text-white leading-[0.98]">
+                <h2 className="font-display text-4xl lg:text-6xl text-white leading-[0.98] mb-5">
                   {n.name}
                 </h2>
+                <span
+                  className="inline-block text-white/0 group-hover:text-white/90 transition-colors duration-500"
+                  style={{
+                    fontFamily: '"Jost", sans-serif',
+                    fontSize: "0.7rem",
+                    letterSpacing: "0.28em",
+                    textTransform: "uppercase",
+                    borderBottom: "1px solid rgba(185, 160, 108, 0.7)",
+                    paddingBottom: "4px",
+                  }}
+                >
+                  Explore Community →
+                </span>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </section>
@@ -175,9 +191,11 @@ const HomeCommunitiesScroll = () => {
       {/* MOBILE — stacked full-bleed fallback (no pin) */}
       <div className="md:hidden bg-[hsl(220,15%,6%)]">
         {NEIGHBORHOODS.map((n) => (
-          <div
+          <Link
             key={`m-${n.name}`}
-            className="relative w-full overflow-hidden"
+            to={`/communities/${n.slug}`}
+            aria-label={`Explore ${n.name} — luxury Austin community`}
+            className="relative w-full overflow-hidden block"
             style={{ height: "70vh" }}
           >
             <img
@@ -209,7 +227,7 @@ const HomeCommunitiesScroll = () => {
                 {n.name}
               </h2>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

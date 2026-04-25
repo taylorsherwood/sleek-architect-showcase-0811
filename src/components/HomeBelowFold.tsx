@@ -1366,50 +1366,184 @@ const editorialArticles = [
 ];
 
 const EditorialInsights = () => (
-  <section className="bg-background" style={{ padding: "clamp(64px, 9vw, 110px) 0" }}>
+  <section className="bg-background" style={{ padding: "clamp(72px, 10vw, 130px) 0" }}>
     <div className="container mx-auto px-6">
-      <div className="max-w-[1200px] mx-auto">
-        <div className="text-center mb-14 md:mb-16">
+      <div className="max-w-[1240px] mx-auto">
+        {/* Editorial masthead */}
+        <div className="text-center mb-16 md:mb-20">
           <ScrollReveal>
-            <p className="text-minimal text-gold mb-4 tracking-[0.25em]">CURATED KNOWLEDGE</p>
+            <div className="flex items-center justify-center gap-4 md:gap-5 mb-6" aria-hidden="true">
+              <span className="block h-px w-10 md:w-14 bg-[#b9a06c]" />
+              <span className="block w-1.5 h-1.5 rotate-45 border border-[#b9a06c]" />
+              <span className="block h-px w-10 md:w-14 bg-[#b9a06c]" />
+            </div>
           </ScrollReveal>
           <ScrollReveal delay={60}>
-            <h2 className="font-display text-[1.65rem] md:text-[2.25rem] font-normal text-architectural leading-[1.1] tracking-[0.03em] mb-4">
-              Austin Real Estate Insights
-            </h2>
+            <p
+              className="text-gold mb-6"
+              style={{
+                fontFamily: '"Jost", sans-serif',
+                fontSize: "0.68rem",
+                fontWeight: 500,
+                letterSpacing: "0.34em",
+                textTransform: "uppercase",
+              }}
+            >
+              The Journal &nbsp;·&nbsp; Issue No. 01
+            </p>
           </ScrollReveal>
           <ScrollReveal delay={100}>
-            <p className="text-muted-foreground max-w-xl mx-auto" style={{ fontFamily: '"Jost", sans-serif', fontWeight: 300, fontSize: "15px", lineHeight: 1.75 }}>
-              Strategic guidance, neighborhood comparisons, and market insights for buyers and sellers navigating Austin's luxury real estate market.
+            <h2
+              className="font-display font-normal text-architectural mb-6"
+              style={{
+                fontSize: "clamp(2rem, 4.4vw, 3.4rem)",
+                lineHeight: 1.04,
+                letterSpacing: "0.015em",
+              }}
+            >
+              Austin Real Estate, <span className="italic">Studied.</span>
+            </h2>
+          </ScrollReveal>
+          <ScrollReveal delay={140}>
+            <p
+              className="text-muted-foreground max-w-[42rem] mx-auto"
+              style={{
+                fontFamily: '"Jost", sans-serif',
+                fontWeight: 300,
+                fontSize: "15px",
+                lineHeight: 1.8,
+                letterSpacing: "0.005em",
+              }}
+            >
+              Field notes, neighborhood comparisons, and considered analysis from the
+              upper end of Austin's market — written for buyers and sellers who expect
+              more than headlines.
             </p>
           </ScrollReveal>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+        {/* Editorial grid */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-14 md:gap-x-10">
           {editorialArticles.map((article, i) => (
-            <ScrollReveal key={article.href} delay={i * 80}>
-              <Link to={article.href} className="group block">
-                <div className="aspect-[4/3] overflow-hidden mb-5">
+            <ScrollReveal key={article.href} delay={i * 90}>
+              <Link to={article.href} className="group block h-full">
+                {/* Index marker + hairline */}
+                <div className="flex items-center gap-3 mb-4">
+                  <span
+                    className="text-gold"
+                    style={{
+                      fontFamily: '"Jost", sans-serif',
+                      fontSize: "0.7rem",
+                      fontWeight: 500,
+                      letterSpacing: "0.32em",
+                    }}
+                  >
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <span aria-hidden="true" className="flex-1 h-px bg-[#b9a06c]/40" />
+                </div>
+
+                {/* Image — taller, more editorial proportion with gentle zoom */}
+                <div className="aspect-[4/5] overflow-hidden mb-6">
                   <img
                     src={article.image}
                     alt={`${article.title} — Austin luxury real estate`}
-                    className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+                    className="w-full h-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.04]"
                     loading="lazy"
                     decoding="async"
                   />
                 </div>
+
+                {/* Eyebrow category */}
+                <p
+                  className="text-muted-foreground/80 mb-3"
+                  style={{
+                    fontFamily: '"Jost", sans-serif',
+                    fontSize: "0.6rem",
+                    fontWeight: 500,
+                    letterSpacing: "0.28em",
+                    textTransform: "uppercase",
+                  }}
+                >
+                  Field Notes
+                </p>
+
                 <h3
-                  className="font-display text-lg md:text-xl font-normal text-architectural leading-[1.2] tracking-[0.02em] mb-2 group-hover:text-gold transition-colors duration-300"
+                  className="font-display font-normal text-architectural mb-3 transition-colors duration-300 group-hover:text-gold"
+                  style={{
+                    fontSize: "1.2rem",
+                    lineHeight: 1.22,
+                    letterSpacing: "0.01em",
+                  }}
                 >
                   {article.title}
                 </h3>
-                <p className="text-muted-foreground" style={{ fontFamily: '"Jost", sans-serif', fontWeight: 300, fontSize: "14px", lineHeight: 1.65 }}>
+
+                <p
+                  className="text-muted-foreground mb-5"
+                  style={{
+                    fontFamily: '"Jost", sans-serif',
+                    fontWeight: 300,
+                    fontSize: "13.5px",
+                    lineHeight: 1.7,
+                  }}
+                >
                   {article.description}
                 </p>
+
+                {/* Read affordance — animated underline */}
+                <span
+                  className="inline-flex items-center gap-2 text-gold"
+                  style={{
+                    fontFamily: '"Jost", sans-serif',
+                    fontSize: "0.66rem",
+                    fontWeight: 500,
+                    letterSpacing: "0.32em",
+                    textTransform: "uppercase",
+                  }}
+                >
+                  <span className="relative">
+                    Read Insight
+                    <span
+                      aria-hidden="true"
+                      className="absolute left-0 -bottom-1 h-px bg-[#b9a06c] origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out"
+                      style={{ width: "100%" }}
+                    />
+                  </span>
+                  <span aria-hidden="true" className="transition-transform duration-500 ease-out group-hover:translate-x-1">→</span>
+                </span>
               </Link>
             </ScrollReveal>
           ))}
         </div>
+
+        {/* Footer rule + "View Journal" link */}
+        <ScrollReveal delay={120}>
+          <div className="mt-20 md:mt-24 flex flex-col items-center">
+            <span aria-hidden="true" className="block h-px w-24 bg-[#b9a06c] mb-8" />
+            <Link
+              to="/blog"
+              className="group inline-flex items-center gap-3 text-architectural hover:text-gold transition-colors duration-300"
+              style={{
+                fontFamily: '"Jost", sans-serif',
+                fontSize: "0.72rem",
+                fontWeight: 500,
+                letterSpacing: "0.34em",
+                textTransform: "uppercase",
+              }}
+            >
+              <span className="relative">
+                Explore the Journal
+                <span
+                  aria-hidden="true"
+                  className="absolute left-0 -bottom-1 h-px bg-[#b9a06c] origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out"
+                  style={{ width: "100%" }}
+                />
+              </span>
+              <span aria-hidden="true" className="transition-transform duration-500 ease-out group-hover:translate-x-1">→</span>
+            </Link>
+          </div>
+        </ScrollReveal>
       </div>
     </div>
   </section>

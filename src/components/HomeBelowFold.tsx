@@ -621,7 +621,7 @@ const TestimonialsSection = () => {
               </p>
             </div>
 
-            <div className="relative min-h-[360px]">
+            <div className="relative" style={{ maxWidth: "34rem" }}>
               {/* Oversized watermark quote glyph — sits behind text, far top-right */}
               <span
                 aria-hidden="true"
@@ -655,6 +655,7 @@ const TestimonialsSection = () => {
                   letterSpacing: "-0.005em",
                   color: "hsl(var(--foreground) / 0.92)",
                   zIndex: 1,
+                  minHeight: "clamp(280px, 32vh, 360px)",
                 }}
               >
                 <span
@@ -820,8 +821,8 @@ const TestimonialsSection = () => {
             </ScrollReveal>
           </div>
 
-          <div className="max-w-[800px] mx-auto text-center relative" style={{ minHeight: "320px" }}>
-            <div style={{ minHeight: "160px", display: "flex", alignItems: "center", justifyContent: "center" }}>
+          <div className="max-w-[800px] mx-auto text-center relative">
+            <div style={{ minHeight: "clamp(280px, 42vw, 340px)", display: "flex", alignItems: "center", justifyContent: "center" }}>
               <p key={active} className="mb-6" style={{
                 fontFamily: '"Jost", sans-serif', fontWeight: 300,
                 fontSize: "clamp(15px, 1.8vw, 20px)", lineHeight: 1.85, letterSpacing: "0.01em",

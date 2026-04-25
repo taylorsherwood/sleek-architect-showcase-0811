@@ -163,7 +163,7 @@ const HomeCommunitiesScroll = () => {
               key={n.name}
               to={`/communities/${n.slug}`}
               aria-label={`Explore ${n.name} — luxury Austin community`}
-              className={`hcs-card group relative h-screen flex items-end overflow-hidden will-change-transform cursor-pointer ${idx === 0 ? "is-first" : ""}`}
+              className={`hcs-card group relative h-screen flex items-end overflow-hidden cursor-pointer ${idx === 0 ? "is-first" : ""}`}
               style={{ width: "100vw", height: "100vh", flexShrink: 0 }}
             >
               <div

@@ -328,6 +328,15 @@ const properties = [
     link: "#",
     badge: "Private Market Opportunity",
   },
+  {
+    image: "/static-assets/community-westlake-hills.webp",
+    address: "Address withheld",
+    location: "Westlake Hills",
+    price: "$3,950,000",
+    beds: 5, baths: 5, sqft: "—",
+    link: "/off-market-real-estate-austin",
+    badge: "Private Listing",
+  },
 ];
 
 const FeaturedProperties = () => {

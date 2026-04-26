@@ -829,6 +829,7 @@ const TestimonialsSection = () => {
                 fontSize: "clamp(15px, 1.8vw, 20px)", lineHeight: 1.85, letterSpacing: "0.01em",
                 color: "hsl(var(--foreground) / 0.8)",
                 animation: "fadeUp 0.6s ease both",
+                whiteSpace: "pre-wrap",
               }}>
                 <span style={{ color: "hsl(38 39% 61%)", marginRight: "0.15em" }}>&ldquo;</span>
                 {t.quote}

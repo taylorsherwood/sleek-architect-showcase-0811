@@ -990,3 +990,16 @@ body.hcs-immersive nav.fixed {
   pointer-events: none;
   transform: translateY(-100%);
 }
+
+/* Featured Properties — horizontal editorial scroll */
+.featured-scroll::-webkit-scrollbar {
+  display: none;
+}
+.featured-scroll.is-dragging {
+  cursor: grabbing !important;
+  scroll-snap-type: none;
+}
+.featured-scroll.is-dragging a,
+.featured-scroll.is-dragging img {
+  pointer-events: none;
+}

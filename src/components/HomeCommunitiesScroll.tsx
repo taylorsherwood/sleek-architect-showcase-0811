@@ -48,6 +48,12 @@ const HomeCommunitiesScroll = () => {
       const getTotalScroll = () =>
         Math.max(horizontalTrack.scrollWidth - window.innerWidth, 0);
 
+      // Compress how much vertical scroll is required to complete the
+      // horizontal pan. The track still travels its full width, but the
+      // user reaches the next section in roughly half the scroll distance.
+      const SCROLL_COMPRESSION = 0.5;
+      const getPinScroll = () => getTotalScroll() * SCROLL_COMPRESSION;
+
       // Reveal: track eases up, first card image scales down from over-zoom.
       gsap.set(".hcs-track", { yPercent: 8 });
       gsap.set(".hcs-card.is-first .hcs-card-image img", { scale: 1.18 });
@@ -74,7 +80,7 @@ const HomeCommunitiesScroll = () => {
         scrollTrigger: {
           trigger: ".hcs-section",
           start: "top top",
-          end: () => `+=${getTotalScroll()}`,
+          end: () => `+=${getPinScroll()}`,
           pin: true,
           pinSpacing: true,
           scrub: 1,
@@ -117,7 +123,7 @@ const HomeCommunitiesScroll = () => {
       ScrollTrigger.create({
         trigger: ".hcs-section",
         start: "top top",
-        end: () => `+=${getTotalScroll()}`,
+        end: () => `+=${getPinScroll()}`,
         onEnter: () => document.body.classList.add("hcs-immersive"),
         onLeave: () => document.body.classList.remove("hcs-immersive"),
         onEnterBack: () => document.body.classList.add("hcs-immersive"),

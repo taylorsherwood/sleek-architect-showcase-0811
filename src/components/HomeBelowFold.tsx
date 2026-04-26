@@ -328,6 +328,15 @@ const properties = [
     link: "#",
     badge: "Private Market Opportunity",
   },
+  {
+    image: "/static-assets/community-westlake-hills.webp",
+    address: "Address withheld",
+    location: "Westlake Hills",
+    price: "$3,950,000",
+    beds: 5, baths: 5, sqft: "—",
+    link: "/off-market-real-estate-austin",
+    badge: "Private Listing",
+  },
 ];
 
 const FeaturedProperties = () => {
@@ -452,7 +461,9 @@ const FeaturedProperties = () => {
                           textAlign: "left",
                         }}
                       >
-                        {p.address} — {p.beds} beds · {p.baths} baths · {p.sqft} sq ft.
+                        {p.sqft === "—"
+                          ? `${p.location} — private inquiry`
+                          : `${p.address} — ${p.beds} beds · ${p.baths} baths · ${p.sqft} sq ft.`}
                       </p>
                       <span
                         className="expertise-card__cta inline-flex items-center"
@@ -495,7 +506,7 @@ const FeaturedProperties = () => {
             <ScrollReveal delay={properties.length * 100}>
               <Link
                 to="/off-market-real-estate-austin"
-                className="expertise-card group relative block w-full overflow-hidden md:col-span-2"
+                className="expertise-card group relative block w-full overflow-hidden"
                 style={{ aspectRatio: "4 / 5", background: "#0C0F24" }}
                 aria-label="Off-Market Opportunities — Exclusive Private Listings"
               >

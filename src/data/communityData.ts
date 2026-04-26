@@ -10,6 +10,7 @@ import westlakeHillsImg from "@/assets/community-westlake-hills.webp";
 import westlakeHillsHeroImg from "@/assets/community-westlake-hills-hero.webp";
 import bartonCreekImg from "@/assets/community-barton-creek.jpg";
 import bartonCreekCommunityImg from "@/assets/communities/barton-creek.jpg";
+import bartonCreekHeroImg from "@/assets/community-barton-creek-hero.jpg";
 import spanishOaksImg from "@/assets/communities/spanish-oaks.jpg";
 import catMountainImg from "@/assets/community-cat-mountain.jpg";
 import balconesImg from "@/assets/communities/balcones-park.webp";
@@ -187,6 +188,7 @@ The area's strict development standards ensure that quality investments are prot
     metaDescription: "Discover luxury estates in Barton Creek, Lost Creek & Amarra Austin. World-class golf, gated country club living, and homes from $1.5M to $15M+ in this premier community.",
     priceRange: "$1.5M – $15M+",
     image: bartonCreekCommunityImg,
+    heroImage: bartonCreekHeroImg,
     overview: `Barton Creek is Austin's premier master-planned luxury community. Spanning thousands of acres along the scenic Barton Creek corridor, this gated community rivals the most exclusive neighborhoods in the country.
 
 ### World-Class Amenities

@@ -506,7 +506,7 @@ const FeaturedProperties = () => {
             <ScrollReveal delay={properties.length * 100}>
               <Link
                 to="/off-market-real-estate-austin"
-                className="expertise-card group relative block w-full overflow-hidden md:col-span-2"
+                className="expertise-card group relative block w-full overflow-hidden"
                 style={{ aspectRatio: "4 / 5", background: "#0C0F24" }}
                 aria-label="Off-Market Opportunities — Exclusive Private Listings"
               >

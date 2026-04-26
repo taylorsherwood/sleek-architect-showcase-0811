@@ -4,7 +4,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import card78746 from "@/assets/barton-creek-estate-new.webp";
-import cardTarrytown from "@/assets/community-rollingwood.webp";
+import cardRollingwood from "@/assets/community-rollingwood.webp";
 import cardOldEnfield from "@/assets/pemberton-heights.webp";
 import cardWestlake from "@/assets/community-westlake-new.webp";
 import cardDavenport from "@/assets/davenport-ranch-estate.webp";
@@ -14,7 +14,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const NEIGHBORHOODS = [
   { name: "Barton creek", image: card78746, stat: "Median sale: $3.2M", slug: "barton-creek" },
-  { name: "Rollingwood", image: cardTarrytown, stat: "Avg DOM off-market: 14 days", slug: "rollingwood" },
+  { name: "Rollingwood", image: cardRollingwood, stat: "Avg DOM off-market: 14 days", slug: "rollingwood" },
   { name: "Old Enfield", image: cardOldEnfield, stat: "60% OF TRADES ARE PRIVATE", slug: "old-enfield" },
   { name: "Westlake Hills", image: cardWestlake, stat: "Median sale: $4.1M", slug: "westlake-hills" },
   { name: "Tarrytown", image: cardDavenport, stat: "CENTRAL ACCESS TO AUSTIN", slug: "tarrytown" },

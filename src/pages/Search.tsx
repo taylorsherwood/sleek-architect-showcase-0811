@@ -82,7 +82,7 @@ const SearchPage = () => {
             loading="eager"
             decoding="async"
           />
-          <div className="absolute inset-0 bg-[#0C0F24]/30" />
+          <div className="absolute inset-0 bg-[#0C0F24]/45" />
         </div>
         <div className="relative container mx-auto px-6 pt-24 md:pt-32 lg:pt-36">
           <div className="max-w-xl">

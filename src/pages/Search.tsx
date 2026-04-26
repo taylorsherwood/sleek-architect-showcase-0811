@@ -86,13 +86,24 @@ const SearchPage = () => {
         </div>
         <div className="relative container mx-auto px-6 pt-24 md:pt-32 lg:pt-36">
           <div className="max-w-xl">
-            <p className="text-minimal text-gold mb-4 reveal">AUSTIN REAL ESTATE</p>
-            <h1 className="text-3xl sm:text-2xl sm:text-4xl md:text-6xl font-display font-normal text-primary-foreground leading-[1.1] mb-6 reveal">
+            <p
+              className="text-minimal text-gold mb-4 reveal"
+              style={{ textShadow: "0 1px 12px rgba(12, 15, 36, 0.55)" }}
+            >
+              AUSTIN REAL ESTATE
+            </p>
+            <h1
+              className="text-3xl sm:text-2xl sm:text-4xl md:text-6xl font-display font-normal text-primary-foreground leading-[1.1] mb-6 reveal"
+              style={{ textShadow: "0 2px 24px rgba(12, 15, 36, 0.6), 0 1px 3px rgba(12, 15, 36, 0.45)" }}
+            >
               Search All
               <br />
               Listings
             </h1>
-            <p className="text-primary-foreground/70 text-lg max-w-lg mb-8 reveal-delayed">
+            <p
+              className="text-primary-foreground/70 text-lg max-w-lg mb-8 reveal-delayed"
+              style={{ textShadow: "0 1px 14px rgba(12, 15, 36, 0.55)" }}
+            >
               Explore every available home across Austin — from luxury estates to condos, new construction, and investment opportunities.
             </p>
             {filterSummary && (

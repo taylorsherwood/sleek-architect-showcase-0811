@@ -255,6 +255,7 @@ export default defineConfig(({ mode }) => ({
       additionalPrerenderRoutes: getAllPrerenderRoutes().filter((route: string) => route !== "/"),
     }),
     asyncCssPlugin(),
+    stripPrerenderModulepreloadPlugin(),
     ViteImageOptimizer({
       png: { quality: 70, compressionLevel: 9 },
       jpeg: { quality: 65, mozjpeg: true },

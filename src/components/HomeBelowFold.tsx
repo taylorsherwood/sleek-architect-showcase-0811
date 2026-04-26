@@ -329,7 +329,7 @@ const properties = [
     badge: "Private Market Opportunity",
   },
   {
-    image: "/static-assets/community-westlake-hills.webp",
+    image: "/static-assets/listing-westlake-hills-private.webp",
     address: "Address withheld",
     location: "Westlake Hills",
     price: "$3,950,000",

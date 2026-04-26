@@ -123,100 +123,104 @@ const SearchPage = () => {
       </section>
 
       {/* ── Off-Market Access CTA ── */}
-      <section
-        className="relative py-20 md:py-28"
-        style={{
-          background:
-            "linear-gradient(180deg, hsl(233 50% 9%) 0%, hsl(233 50% 14%) 100%)",
-        }}
-      >
+      <section className="py-12 md:py-16 bg-background">
         <div className="container mx-auto px-6">
-          <ScrollReveal>
-            <div className="text-center max-w-3xl mx-auto">
-              <div className="flex justify-center mb-6">
-                <div style={{ width: 40, borderTop: "1px solid hsl(var(--gold))" }} />
+          <div className="max-w-5xl mx-auto">
+            <ScrollReveal>
+              <div
+                className="relative overflow-hidden border border-border/60 px-8 py-12 md:px-16 md:py-16"
+                style={{
+                  background:
+                    "linear-gradient(180deg, hsl(233 50% 9%) 0%, hsl(233 50% 14%) 100%)",
+                }}
+              >
+                <div className="text-center max-w-3xl mx-auto">
+                  <div className="flex justify-center mb-6">
+                    <div style={{ width: 40, borderTop: "1px solid hsl(var(--gold))" }} />
+                  </div>
+                  <p
+                    className="mb-5"
+                    style={{
+                      fontFamily: '"Jost", sans-serif',
+                      fontSize: "0.6rem",
+                      letterSpacing: "0.35em",
+                      textTransform: "uppercase",
+                      color: "hsl(var(--gold))",
+                      fontWeight: 600,
+                    }}
+                  >
+                    PRIVATE INVENTORY
+                  </p>
+                  <h2
+                    className="font-display font-normal text-warm-cream mb-5"
+                    style={{
+                      fontSize: "clamp(1.6rem, 3vw, 2.6rem)",
+                      letterSpacing: "-0.01em",
+                      lineHeight: 1.2,
+                    }}
+                  >
+                    Looking for something you won't find on zillow?
+                  </h2>
+                  <p
+                    className="mx-auto mb-9"
+                    style={{
+                      fontFamily: "'Jost', sans-serif",
+                      fontWeight: 300,
+                      fontSize: "16px",
+                      color: "rgba(245, 243, 239, 0.78)",
+                      letterSpacing: "0.02em",
+                      lineHeight: 1.8,
+                      maxWidth: "640px",
+                    }}
+                  >
+                    More than 95% of the homes we transact never appear on the
+                    MLS. Request access to our private inventory of off-market
+                    Austin properties — quietly available to qualified buyers
+                    through Echelon Property Group.
+                  </p>
+                  <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <Link
+                      to="/off-market-real-estate-austin"
+                      className="inline-block border border-gold bg-gold text-primary-foreground px-10 py-4 hover:bg-transparent hover:text-warm-cream transition-all duration-500"
+                      style={{
+                        fontFamily: '"Jost", sans-serif',
+                        fontSize: "0.6rem",
+                        letterSpacing: "0.25em",
+                        textTransform: "uppercase",
+                        fontWeight: 500,
+                      }}
+                    >
+                      Request Off-Market Access
+                    </Link>
+                    <Link
+                      to="/contact"
+                      className="inline-block text-warm-cream/70 hover:text-warm-cream transition-colors duration-500 relative group"
+                      style={{
+                        fontFamily: '"Jost", sans-serif',
+                        fontSize: "0.6rem",
+                        letterSpacing: "0.25em",
+                        textTransform: "uppercase",
+                      }}
+                    >
+                      Speak With An Advisor
+                      <span className="absolute bottom-[-4px] left-0 w-full h-px bg-gold scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
+                    </Link>
+                  </div>
+                  <p
+                    className="mt-8 text-warm-cream/50"
+                    style={{
+                      fontFamily: "'Jost', sans-serif',",
+                      fontSize: "12px",
+                      letterSpacing: "0.05em",
+                      fontWeight: 300,
+                    }}
+                  >
+                    Discreet · Vetted Buyers Only · No Obligation
+                  </p>
+                </div>
               </div>
-              <p
-                className="mb-5"
-                style={{
-                  fontFamily: '"Jost", sans-serif',
-                  fontSize: "0.6rem",
-                  letterSpacing: "0.35em",
-                  textTransform: "uppercase",
-                  color: "hsl(var(--gold))",
-                  fontWeight: 600,
-                }}
-              >
-                PRIVATE INVENTORY
-              </p>
-              <h2
-                className="font-display font-normal text-warm-cream mb-5"
-                style={{
-                  fontSize: "clamp(1.6rem, 3vw, 2.6rem)",
-                  letterSpacing: "-0.01em",
-                  lineHeight: 1.2,
-                }}
-              >
-                Looking for something you won't find here?
-              </h2>
-              <p
-                className="mx-auto mb-9"
-                style={{
-                  fontFamily: "'Jost', sans-serif",
-                  fontWeight: 300,
-                  fontSize: "16px",
-                  color: "rgba(245, 243, 239, 0.78)",
-                  letterSpacing: "0.02em",
-                  lineHeight: 1.8,
-                  maxWidth: "640px",
-                }}
-              >
-                More than 95% of the homes we transact never appear on the
-                MLS. Request access to our private inventory of off-market
-                Austin properties — quietly available to qualified buyers
-                through Echelon Property Group.
-              </p>
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <Link
-                  to="/off-market-real-estate-austin"
-                  className="inline-block border border-gold bg-gold text-primary-foreground hover:bg-white hover:text-gold hover:border-white px-10 py-4 transition-all duration-500"
-                  style={{
-                    fontFamily: '"Jost", sans-serif',
-                    fontSize: "0.6rem",
-                    letterSpacing: "0.25em",
-                    textTransform: "uppercase",
-                    fontWeight: 500,
-                  }}
-                >
-                  Request Off-Market Access
-                </Link>
-                <Link
-                  to="/contact"
-                  className="inline-block text-warm-cream/70 hover:text-warm-cream transition-colors duration-500 relative group"
-                  style={{
-                    fontFamily: '"Jost", sans-serif',
-                    fontSize: "0.6rem",
-                    letterSpacing: "0.25em",
-                    textTransform: "uppercase",
-                  }}
-                >
-                  Speak With An Advisor
-                  <span className="absolute bottom-[-4px] left-0 w-full h-px bg-gold scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
-                </Link>
-              </div>
-              <p
-                className="mt-8 text-warm-cream/50"
-                style={{
-                  fontFamily: "'Jost', sans-serif",
-                  fontSize: "12px",
-                  letterSpacing: "0.05em",
-                  fontWeight: 300,
-                }}
-              >
-                Discreet · Vetted Buyers Only · No Obligation
-              </p>
-            </div>
-          </ScrollReveal>
+            </ScrollReveal>
+          </div>
         </div>
       </section>
 

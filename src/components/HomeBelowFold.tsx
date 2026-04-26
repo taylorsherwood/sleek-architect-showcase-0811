@@ -926,6 +926,7 @@ const CommunitiesSection = () => {
 
   return (
     <section className="bg-background" style={{ padding: "clamp(48px, 7vw, 96px) 0 0" }}>
+      <div className="h-12 md:h-20" aria-hidden="true" />
       <div className="container mx-auto px-6">
         <div className="max-w-[1320px] mx-auto">
           <div

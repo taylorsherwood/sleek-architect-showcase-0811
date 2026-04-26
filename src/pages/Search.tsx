@@ -82,15 +82,15 @@ const SearchPage = () => {
             loading="eager"
             decoding="async"
           />
-          <div className="absolute inset-0 bg-[#0C0F24]/60" />
+          <div className="absolute inset-0 bg-[#0C0F24]/30" />
         </div>
         <div className="relative container mx-auto px-6 pt-24 md:pt-32 lg:pt-36">
           <div className="max-w-xl">
             <p className="text-minimal text-gold mb-4 reveal">AUSTIN REAL ESTATE</p>
             <h1 className="text-3xl sm:text-2xl sm:text-4xl md:text-6xl font-display font-normal text-primary-foreground leading-[1.1] mb-6 reveal">
-              Search All
+              Find Your
               <br />
-              Listings
+              Austin Home
             </h1>
             <p className="text-primary-foreground/70 text-lg max-w-lg mb-8 reveal-delayed">
               Explore every available home across Austin — from luxury estates to condos, new construction, and investment opportunities.

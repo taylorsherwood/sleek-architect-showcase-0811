@@ -330,22 +330,93 @@ const properties = [
   },
 ];
 
-const FeaturedProperties = () => (
-  <section className="bg-secondary" style={{ padding: "clamp(64px, 10vw, 120px) 0" }}>
-    <div className="container mx-auto px-6">
-      <div className="max-w-[1320px] mx-auto">
-        <ScrollReveal>
-          <div className="text-center mb-24 md:mb-28">
-            <p className="text-minimal text-gold mb-5">FEATURED LISTINGS</p>
-            <h2 className="font-display text-3xl md:text-[2.75rem] font-normal text-foreground/90 mb-4 leading-[1.1] tracking-[0.03em]">
-              Exceptional Properties
-            </h2>
-            <div className="w-[60px] h-px mx-auto" style={{ background: "hsl(38 39% 61%)" }} />
-          </div>
-        </ScrollReveal>
+const FeaturedProperties = () => {
+  const scrollRef = useRef<HTMLDivElement>(null);
 
-        <ScrollReveal delay={120}>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 items-stretch">
+  // Click-and-drag horizontal scrolling (desktop). Native trackpad/touch
+  // scrolling continues to work untouched.
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+    if (typeof window === "undefined") return;
+    if (window.matchMedia("(pointer: coarse)").matches) return;
+
+    let isDown = false;
+    let startX = 0;
+    let startScroll = 0;
+    let moved = false;
+
+    const onDown = (e: PointerEvent) => {
+      // Only react to primary mouse button
+      if (e.button !== 0) return;
+      isDown = true;
+      moved = false;
+      startX = e.clientX;
+      startScroll = el.scrollLeft;
+      el.classList.add("is-dragging");
+    };
+    const onMove = (e: PointerEvent) => {
+      if (!isDown) return;
+      const dx = e.clientX - startX;
+      if (Math.abs(dx) > 4) moved = true;
+      el.scrollLeft = startScroll - dx;
+    };
+    const onUp = () => {
+      isDown = false;
+      el.classList.remove("is-dragging");
+    };
+    // Suppress click navigation if the user actually dragged
+    const onClickCapture = (e: MouseEvent) => {
+      if (moved) {
+        e.preventDefault();
+        e.stopPropagation();
+        moved = false;
+      }
+    };
+
+    el.addEventListener("pointerdown", onDown);
+    window.addEventListener("pointermove", onMove);
+    window.addEventListener("pointerup", onUp);
+    el.addEventListener("click", onClickCapture, true);
+    return () => {
+      el.removeEventListener("pointerdown", onDown);
+      window.removeEventListener("pointermove", onMove);
+      window.removeEventListener("pointerup", onUp);
+      el.removeEventListener("click", onClickCapture, true);
+    };
+  }, []);
+
+  return (
+    <section className="bg-secondary" style={{ padding: "clamp(64px, 10vw, 120px) 0" }}>
+      <div className="container mx-auto px-6">
+        <div className="max-w-[1320px] mx-auto">
+          <ScrollReveal>
+            <div className="text-center mb-28 md:mb-36">
+              <p className="text-minimal text-gold mb-5">FEATURED LISTINGS</p>
+              <h2 className="font-display text-3xl md:text-[2.75rem] font-normal text-foreground/90 mb-4 leading-[1.1] tracking-[0.03em]">
+                Exceptional Properties
+              </h2>
+              <div className="w-[60px] h-px mx-auto" style={{ background: "hsl(38 39% 61%)" }} />
+            </div>
+          </ScrollReveal>
+        </div>
+      </div>
+
+      <ScrollReveal delay={120}>
+        <div className="relative">
+          <div
+            ref={scrollRef}
+            className="featured-scroll flex overflow-x-auto overflow-y-hidden snap-x snap-mandatory gap-6 md:gap-8 scroll-smooth"
+            style={{
+              paddingLeft: "clamp(24px, 6vw, 96px)",
+              paddingRight: "clamp(24px, 12vw, 200px)",
+              scrollPaddingLeft: "clamp(24px, 6vw, 96px)",
+              scrollbarWidth: "none",
+              msOverflowStyle: "none",
+              WebkitOverflowScrolling: "touch",
+              cursor: "grab",
+            }}
+          >
             {properties.map((p, i) => {
               const isExternal = p.link.startsWith("http");
               const Wrapper = isExternal ? "a" : "div";
@@ -355,35 +426,41 @@ const FeaturedProperties = () => (
                 <Wrapper
                   key={i}
                   {...wrapperProps}
-                  className="group block cursor-pointer will-change-transform [transition:transform_0.7s_cubic-bezier(0.19,1,0.22,1)] hover:-translate-y-1"
+                  className="group block cursor-pointer will-change-transform [transition:transform_0.7s_cubic-bezier(0.19,1,0.22,1)] hover:-translate-y-1 snap-start shrink-0"
+                  style={{
+                    width: isPrimary
+                      ? "clamp(320px, 62vw, 820px)"
+                      : "clamp(280px, 38vw, 500px)",
+                  }}
                 >
                   <div className="relative overflow-hidden h-full flex flex-col" style={{ aspectRatio: "3/4", background: "#12162E" }}>
                     <img src={p.image} alt={p.address}
-                      className="community-tile-img w-full h-full object-cover [transition:transform_1.4s_cubic-bezier(0.19,1,0.22,1)] group-hover:scale-[1.05]"
+                      className="community-tile-img w-full h-full object-cover [transition:transform_1.4s_cubic-bezier(0.19,1,0.22,1)] group-hover:scale-[1.04]"
                       loading="lazy" decoding="async"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      sizes="(max-width: 768px) 80vw, (max-width: 1024px) 50vw, 40vw"
                       width={600}
                       height={800}
+                      draggable={false}
                     />
-                    <div className="absolute inset-0 bg-foreground/30 opacity-0 group-hover:opacity-100 pointer-events-none flex items-center justify-center [transition:opacity_0.6s_cubic-bezier(0.16,1,0.3,1)]">
+                    <div className="absolute inset-0 bg-foreground/25 opacity-0 group-hover:opacity-100 pointer-events-none flex items-center justify-center [transition:opacity_0.6s_cubic-bezier(0.16,1,0.3,1)]">
                       <span className="text-gold tracking-[0.2em] uppercase font-normal" style={{ fontFamily: '"Jost", sans-serif', fontSize: "0.75rem" }}>
                         EXPLORE &rarr;
                       </span>
                     </div>
 
-                    <div className="absolute bottom-0 left-0 right-0 px-7 pb-7 pt-12"
-                      style={{ background: "linear-gradient(to top, rgba(12,15,36,0.55) 0%, rgba(12,15,36,0.18) 55%, rgba(12,15,36,0) 100%)" }}>
+                    <div className="absolute bottom-0 left-0 right-0 px-8 pb-9 pt-14"
+                      style={{ background: "linear-gradient(to top, rgba(12,15,36,0.55) 0%, rgba(12,15,36,0.12) 60%, rgba(12,15,36,0) 100%)" }}>
                       <p style={{
                         fontFamily: '"Cinzel", serif', fontWeight: 400,
-                        fontSize: isPrimary ? "26px" : "23px",
-                        letterSpacing: "0.02em",
-                        color: "#F5F3EF", marginBottom: "8px",
+                        fontSize: isPrimary ? "30px" : "24px",
+                        letterSpacing: "0.005em",
+                        color: "#FFFFFF", marginBottom: "10px",
                       }}>
                         {p.price}
                       </p>
                       <p style={{
                         fontFamily: '"Jost", sans-serif', fontWeight: 300,
-                        fontSize: "12.5px", color: "rgba(245,243,239,0.65)",
+                        fontSize: "12.5px", color: "rgba(245,243,239,0.55)",
                         letterSpacing: "0.02em",
                       }}>
                         {p.address}
@@ -391,8 +468,8 @@ const FeaturedProperties = () => (
                       <p style={{
                         fontFamily: '"Jost", sans-serif', fontWeight: 300,
                         fontSize: "10.5px",
-                        color: "rgba(245,243,239,0.55)",
-                        marginTop: "10px", letterSpacing: "0.18em",
+                        color: "rgba(245,243,239,0.45)",
+                        marginTop: "12px", letterSpacing: "0.2em",
                         textTransform: "uppercase",
                       }}>
                         {p.beds} Beds &nbsp;·&nbsp; {p.baths} Baths &nbsp;·&nbsp; {p.sqft} Sq Ft
@@ -403,32 +480,41 @@ const FeaturedProperties = () => (
               );
             })}
 
-            {/* Off-market card */}
+            {/* Off-market card — final card in scroll */}
             <Link
               to="/off-market-real-estate-austin"
-              className="group block will-change-transform [transition:transform_0.7s_cubic-bezier(0.19,1,0.22,1)] hover:-translate-y-1"
+              className="group block will-change-transform [transition:transform_0.7s_cubic-bezier(0.19,1,0.22,1)] hover:-translate-y-1 snap-start shrink-0"
+              style={{ width: "clamp(280px, 38vw, 500px)" }}
             >
-              <div className="relative overflow-hidden flex items-center justify-center h-full" style={{ aspectRatio: "3/4", background: "#0C0F24" }}>
+              <div
+                className="relative overflow-hidden flex items-center justify-center h-full"
+                style={{
+                  aspectRatio: "3/4",
+                  background:
+                    "radial-gradient(ellipse at 50% 35%, #14182f 0%, #0C0F24 60%, #080a1c 100%)",
+                }}
+              >
                 <img src="/static-assets/echelon-logo-gold-square.webp" alt="Echelon Property Group"
-                  className="w-[62%] h-auto object-contain group-hover:scale-[1.05] will-change-transform [transition:transform_1.4s_cubic-bezier(0.19,1,0.22,1)]"
+                  className="w-[68%] h-auto object-contain group-hover:scale-[1.04] will-change-transform [transition:transform_1.4s_cubic-bezier(0.19,1,0.22,1)]"
                   loading="lazy" decoding="async"
                   width={400}
                   height={400}
+                  draggable={false}
                 />
-                <div className="absolute bottom-0 left-0 right-0 px-7 pb-7 pt-12 text-center"
-                  style={{ background: "linear-gradient(to top, rgba(12,15,36,0.55) 0%, rgba(12,15,36,0.18) 55%, rgba(12,15,36,0) 100%)" }}>
-                  <div className="w-10 h-px mx-auto mb-4" style={{ background: "rgba(185,160,108,0.6)" }} />
+                <div className="absolute bottom-0 left-0 right-0 px-8 pb-9 pt-14 text-center"
+                  style={{ background: "linear-gradient(to top, rgba(12,15,36,0.55) 0%, rgba(12,15,36,0.12) 60%, rgba(12,15,36,0) 100%)" }}>
+                  <div className="w-12 h-px mx-auto mb-5" style={{ background: "rgba(185,160,108,0.7)" }} />
                   <p style={{
                     fontFamily: '"Cinzel", serif', fontWeight: 400,
-                    fontSize: "22px", color: "#F5F3EF", marginBottom: "8px",
-                    letterSpacing: "0.02em",
+                    fontSize: "23px", color: "#FFFFFF", marginBottom: "10px",
+                    letterSpacing: "0.01em",
                   }}>
                     Off-Market Opportunities
                   </p>
                   <p style={{
                     fontFamily: '"Jost", sans-serif', fontWeight: 300,
-                    fontSize: "10.5px", color: "rgba(245,243,239,0.6)",
-                    letterSpacing: "0.22em", textTransform: "uppercase",
+                    fontSize: "10.5px", color: "rgba(245,243,239,0.55)",
+                    letterSpacing: "0.26em", textTransform: "uppercase",
                   }}>
                     Exclusive Private Listings →
                   </p>
@@ -436,19 +522,34 @@ const FeaturedProperties = () => (
               </div>
             </Link>
           </div>
-        </ScrollReveal>
 
-        <ScrollReveal delay={200}>
-          <div className="text-center mt-16">
-            <Link to="/austin-luxury-homes-for-sale" className="cta-luxury">
-              EXPLORE ALL LISTINGS
-            </Link>
-          </div>
-        </ScrollReveal>
+          {/* Soft right-edge fade — subtle scroll indicator */}
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute top-0 right-0 h-full hidden md:block"
+            style={{
+              width: "clamp(48px, 8vw, 140px)",
+              background:
+                "linear-gradient(to left, hsl(var(--secondary)) 0%, hsl(var(--secondary) / 0.6) 50%, transparent 100%)",
+            }}
+          />
+        </div>
+      </ScrollReveal>
+
+      <div className="container mx-auto px-6">
+        <div className="max-w-[1320px] mx-auto">
+          <ScrollReveal delay={200}>
+            <div className="text-center mt-20">
+              <Link to="/austin-luxury-homes-for-sale" className="cta-luxury">
+                EXPLORE ALL LISTINGS
+              </Link>
+            </div>
+          </ScrollReveal>
+        </div>
       </div>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
 
 /* ─────────────────────────────────────────────
    SECTION 5 — TESTIMONIALS

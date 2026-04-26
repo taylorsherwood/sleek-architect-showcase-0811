@@ -508,7 +508,7 @@ const TestimonialsSection = () => {
     const isDesktop = window.matchMedia("(min-width: 768px)").matches;
     if (isDesktop) return;
     if (userPaused) return;
-    const timer = setInterval(() => setActive((p) => (p + 1) % testimonials.length), 5500);
+    const timer = setInterval(() => setActive((p) => (p + 1) % testimonials.length), 4000);
     return () => clearInterval(timer);
   }, [userPaused]);
 
@@ -518,7 +518,7 @@ const TestimonialsSection = () => {
     if (!window.matchMedia("(min-width: 768px)").matches) return;
     if (!revealed) return;
     if (userPaused) return;
-    const timer = setInterval(() => setActive((p) => (p + 1) % testimonials.length), 5500);
+    const timer = setInterval(() => setActive((p) => (p + 1) % testimonials.length), 4000);
     return () => clearInterval(timer);
   }, [revealed, userPaused]);
 

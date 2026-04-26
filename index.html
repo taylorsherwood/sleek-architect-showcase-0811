@@ -34,8 +34,8 @@
     <link rel="stylesheet" href="/fonts/fonts.css" media="print" onload="this.media='all'" />
     <noscript><link rel="stylesheet" href="/fonts/fonts.css" /></noscript>
 
-    <!-- Preload hero poster (mobile gets smaller optimized image) -->
-    <link rel="preload" as="image" href="/images/mobile-hero-poster.webp" type="image/webp" fetchpriority="high" media="(max-width: 767px)" />
+    <!-- Preload hero LCP image (mobile uses optimized webp; desktop uses video poster as fallback) -->
+    <link rel="preload" as="image" href="/images/hero-mobile-austin-v2.webp" type="image/webp" fetchpriority="high" media="(max-width: 767px)" />
     <link rel="preload" as="image" href="/images/hero-poster.webp" type="image/webp" fetchpriority="high" media="(min-width: 768px)" />
 
     <!-- Critical inline CSS for above-the-fold rendering (includes critical @font-face) -->

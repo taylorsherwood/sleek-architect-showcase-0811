@@ -11,7 +11,7 @@ const CommunityBoundaryMap = ({ imageSrc, communityName }: CommunityBoundaryMapP
   if (!imageExists) return null;
 
   return (
-    <section className="bg-secondary/40 py-20 md:py-24">
+    <section className="bg-secondary/40 pt-6 pb-20 md:pt-8 md:pb-24">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto flex flex-col items-center">
           <div className="w-full h-px bg-border mb-10" />

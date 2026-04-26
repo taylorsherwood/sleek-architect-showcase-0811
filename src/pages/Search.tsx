@@ -250,7 +250,7 @@ const SearchPage = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="mb-16">
-              <p className="text-gold text-center mb-4 font-bold" style={{ fontSize: "0.6rem", letterSpacing: "0.3em", textTransform: "uppercase", fontFamily: '"Jost", sans-serif' }}>CURRENT INVENTORY</p>
+              <p className="text-gold text-center mb-4 font-bold" style={{ fontSize: "0.6rem", letterSpacing: "0.3em", textTransform: "uppercase", fontFamily: '"Jost", sans-serif' }}>ECHELON COMMERCIAL PROPERTIES</p>
               <h2 className="font-display text-2xl md:text-3xl font-light text-foreground text-center mb-4">
                 Current Commercial Listings
               </h2>

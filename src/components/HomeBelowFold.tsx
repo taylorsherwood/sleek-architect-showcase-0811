@@ -461,7 +461,9 @@ const FeaturedProperties = () => {
                           textAlign: "left",
                         }}
                       >
-                        {p.address} — {p.beds} beds · {p.baths} baths · {p.sqft} sq ft.
+                        {p.sqft === "—"
+                          ? `${p.location} — private inquiry`
+                          : `${p.address} — ${p.beds} beds · ${p.baths} baths · ${p.sqft} sq ft.`}
                       </p>
                       <span
                         className="expertise-card__cta inline-flex items-center"

@@ -123,7 +123,7 @@ const HomeCommunitiesScroll = () => {
       ScrollTrigger.create({
         trigger: ".hcs-section",
         start: "top top",
-        end: () => `+=${getTotalScroll()}`,
+        end: () => `+=${getPinScroll()}`,
         onEnter: () => document.body.classList.add("hcs-immersive"),
         onLeave: () => document.body.classList.remove("hcs-immersive"),
         onEnterBack: () => document.body.classList.add("hcs-immersive"),

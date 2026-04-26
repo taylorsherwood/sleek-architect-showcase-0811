@@ -439,7 +439,7 @@ const FeaturedProperties = () => (
 
 const testimonials = [
   {
-    quote: "Taylor's knowledge of the Austin luxury market is exceptional. He knew the comps, the trends, and which streets were commanding premiums before we even asked.",
+    quote: "\nTaylor's knowledge of the Austin luxury market is exceptional. He knew the comps, the trends, and which streets were commanding premiums before we even asked.",
     name: "Chris and Anne Brown",
     context: "Sold in Tarrytown",
   },
@@ -656,6 +656,7 @@ const TestimonialsSection = () => {
                   color: "hsl(var(--foreground) / 0.92)",
                   zIndex: 1,
                   minHeight: "clamp(280px, 32vh, 360px)",
+                  whiteSpace: "pre-wrap",
                 }}
               >
                 <span
@@ -828,6 +829,7 @@ const TestimonialsSection = () => {
                 fontSize: "clamp(15px, 1.8vw, 20px)", lineHeight: 1.85, letterSpacing: "0.01em",
                 color: "hsl(var(--foreground) / 0.8)",
                 animation: "fadeUp 0.6s ease both",
+                whiteSpace: "pre-wrap",
               }}>
                 <span style={{ color: "hsl(38 39% 61%)", marginRight: "0.15em" }}>&ldquo;</span>
                 {t.quote}

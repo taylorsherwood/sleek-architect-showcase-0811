@@ -80,7 +80,7 @@ const HomeCommunitiesScroll = () => {
         scrollTrigger: {
           trigger: ".hcs-section",
           start: "top top",
-          end: () => `+=${getTotalScroll()}`,
+          end: () => `+=${getPinScroll()}`,
           pin: true,
           pinSpacing: true,
           scrub: 1,

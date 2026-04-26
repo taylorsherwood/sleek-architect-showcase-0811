@@ -715,7 +715,7 @@ const TestimonialsSection = () => {
           aria-label="Client experiences"
         >
         <div className="absolute inset-0 z-0 flex items-center justify-end pl-8 md:pl-10 lg:pl-14 pr-16 md:pr-24 lg:pr-32">
-          <div className="max-w-xl md:w-1/2 md:pl-0" style={{ paddingTop: "clamp(40px, 7vh, 96px)" }}>
+          <div className="max-w-xl md:w-1/2 md:pl-0" style={{ paddingTop: "clamp(120px, 18vh, 220px)" }}>
             {/* Eyebrow with gold hairline rule — magazine masthead treatment */}
             <div
               className="tsplit-attribution flex items-center gap-4 mb-12 will-change-transform"

@@ -4,7 +4,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import card78746 from "@/assets/barton-creek-estate-new.webp";
-import cardTarrytown from "@/assets/community-tarrytown.webp";
+import cardTarrytown from "@/assets/community-rollingwood.webp";
 import cardOldEnfield from "@/assets/pemberton-heights.webp";
 import cardWestlake from "@/assets/community-westlake-new.webp";
 import cardDavenport from "@/assets/davenport-ranch-estate.webp";

@@ -338,7 +338,7 @@ const CommunityPage = () => {
       )}
 
 
-      <div className="h-12 md:h-20" />
+      <div className="h-4 md:h-6" />
 
       {/* Locked Private Market Report preview (gated slugs only) — sits between
           hero and existing content. Adds visible metrics + blurred dataset

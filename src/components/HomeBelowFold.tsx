@@ -335,7 +335,7 @@ const FeaturedProperties = () => (
     <div className="container mx-auto px-6">
       <div className="max-w-[1320px] mx-auto">
         <ScrollReveal>
-          <div className="text-center mb-16">
+          <div className="text-center mb-24 md:mb-28">
             <p className="text-minimal text-gold mb-5">FEATURED LISTINGS</p>
             <h2 className="font-display text-3xl md:text-[2.75rem] font-normal text-foreground/90 mb-4 leading-[1.1] tracking-[0.03em]">
               Exceptional Properties
@@ -345,46 +345,57 @@ const FeaturedProperties = () => (
         </ScrollReveal>
 
         <ScrollReveal delay={120}>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 items-stretch">
             {properties.map((p, i) => {
               const isExternal = p.link.startsWith("http");
               const Wrapper = isExternal ? "a" : "div";
               const wrapperProps = isExternal ? { href: p.link, target: "_blank" as const, rel: "noopener noreferrer" } : {};
+              const isPrimary = i === 0;
               return (
-                <Wrapper key={i} {...wrapperProps} className="group block cursor-pointer">
-                  <div className="relative overflow-hidden" style={{ aspectRatio: "3/4", background: "#12162E" }}>
+                <Wrapper
+                  key={i}
+                  {...wrapperProps}
+                  className="group block cursor-pointer will-change-transform [transition:transform_0.7s_cubic-bezier(0.19,1,0.22,1)] hover:-translate-y-1"
+                >
+                  <div className="relative overflow-hidden h-full flex flex-col" style={{ aspectRatio: "3/4", background: "#12162E" }}>
                     <img src={p.image} alt={p.address}
-                      className="community-tile-img w-full h-full object-cover"
+                      className="community-tile-img w-full h-full object-cover [transition:transform_1.4s_cubic-bezier(0.19,1,0.22,1)] group-hover:scale-[1.05]"
                       loading="lazy" decoding="async"
                       sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       width={600}
                       height={800}
                     />
-                    <div className="absolute inset-0 bg-foreground/40 opacity-0 group-hover:opacity-100 pointer-events-none flex items-center justify-center [transition:opacity_0.6s_cubic-bezier(0.16,1,0.3,1)]">
+                    <div className="absolute inset-0 bg-foreground/30 opacity-0 group-hover:opacity-100 pointer-events-none flex items-center justify-center [transition:opacity_0.6s_cubic-bezier(0.16,1,0.3,1)]">
                       <span className="text-gold tracking-[0.2em] uppercase font-normal" style={{ fontFamily: '"Jost", sans-serif', fontSize: "0.75rem" }}>
                         EXPLORE &rarr;
                       </span>
                     </div>
 
-                    <div className="absolute bottom-0 left-0 right-0 px-6 pb-6 pt-8"
-                      style={{ background: "linear-gradient(to top, rgba(12,15,36,0.92) 0%, transparent 100%)" }}>
+                    <div className="absolute bottom-0 left-0 right-0 px-7 pb-7 pt-12"
+                      style={{ background: "linear-gradient(to top, rgba(12,15,36,0.55) 0%, rgba(12,15,36,0.18) 55%, rgba(12,15,36,0) 100%)" }}>
                       <p style={{
                         fontFamily: '"Cinzel", serif', fontWeight: 400,
-                        fontSize: "22px", color: "#F5F3EF", marginBottom: "4px",
+                        fontSize: isPrimary ? "26px" : "23px",
+                        letterSpacing: "0.02em",
+                        color: "#F5F3EF", marginBottom: "8px",
                       }}>
                         {p.price}
                       </p>
                       <p style={{
                         fontFamily: '"Jost", sans-serif', fontWeight: 300,
-                        fontSize: "13px", color: "rgba(245,243,239,0.8)",
+                        fontSize: "12.5px", color: "rgba(245,243,239,0.65)",
+                        letterSpacing: "0.02em",
                       }}>
                         {p.address}
                       </p>
                       <p style={{
-                        fontFamily: '"Jost", sans-serif', fontSize: "11px",
-                        color: "#9A9690", marginTop: "6px", letterSpacing: "0.05em",
+                        fontFamily: '"Jost", sans-serif', fontWeight: 300,
+                        fontSize: "10.5px",
+                        color: "rgba(245,243,239,0.55)",
+                        marginTop: "10px", letterSpacing: "0.18em",
+                        textTransform: "uppercase",
                       }}>
-                        {p.beds} Beds · {p.baths} Baths · {p.sqft} Sq Ft
+                        {p.beds} Beds &nbsp;·&nbsp; {p.baths} Baths &nbsp;·&nbsp; {p.sqft} Sq Ft
                       </p>
                     </div>
                   </div>
@@ -393,27 +404,33 @@ const FeaturedProperties = () => (
             })}
 
             {/* Off-market card */}
-            <Link to="/off-market-real-estate-austin" className="group block">
-              <div className="relative overflow-hidden flex items-center justify-center" style={{ aspectRatio: "3/4", background: "#0C0F24" }}>
+            <Link
+              to="/off-market-real-estate-austin"
+              className="group block will-change-transform [transition:transform_0.7s_cubic-bezier(0.19,1,0.22,1)] hover:-translate-y-1"
+            >
+              <div className="relative overflow-hidden flex items-center justify-center h-full" style={{ aspectRatio: "3/4", background: "#0C0F24" }}>
                 <img src="/static-assets/echelon-logo-gold-square.webp" alt="Echelon Property Group"
-                  className="w-1/2 h-auto object-contain group-hover:scale-[1.03] will-change-transform [transition:transform_1.8s_cubic-bezier(0.19,1,0.22,1)]"
+                  className="w-[62%] h-auto object-contain group-hover:scale-[1.05] will-change-transform [transition:transform_1.4s_cubic-bezier(0.19,1,0.22,1)]"
                   loading="lazy" decoding="async"
                   width={400}
                   height={400}
                 />
-                <div className="absolute bottom-0 left-0 right-0 px-6 pb-6 pt-8 text-center"
-                  style={{ background: "linear-gradient(to top, rgba(12,15,36,0.92) 0%, transparent 100%)" }}>
+                <div className="absolute bottom-0 left-0 right-0 px-7 pb-7 pt-12 text-center"
+                  style={{ background: "linear-gradient(to top, rgba(12,15,36,0.55) 0%, rgba(12,15,36,0.18) 55%, rgba(12,15,36,0) 100%)" }}>
+                  <div className="w-10 h-px mx-auto mb-4" style={{ background: "rgba(185,160,108,0.6)" }} />
                   <p style={{
                     fontFamily: '"Cinzel", serif', fontWeight: 400,
-                    fontSize: "20px", color: "#F5F3EF", marginBottom: "4px",
+                    fontSize: "22px", color: "#F5F3EF", marginBottom: "8px",
+                    letterSpacing: "0.02em",
                   }}>
                     Off-Market Opportunities
                   </p>
                   <p style={{
                     fontFamily: '"Jost", sans-serif', fontWeight: 300,
-                    fontSize: "13px", color: "rgba(245,243,239,0.6)",
+                    fontSize: "10.5px", color: "rgba(245,243,239,0.6)",
+                    letterSpacing: "0.22em", textTransform: "uppercase",
                   }}>
-                    Exclusive private listings →
+                    Exclusive Private Listings →
                   </p>
                 </div>
               </div>

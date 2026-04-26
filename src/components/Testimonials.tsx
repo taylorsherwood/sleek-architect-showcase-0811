@@ -142,8 +142,8 @@ const Testimonials = () => {
                 }}
               >
                 {/* Quote text with quotation marks */}
-                <p className="text-foreground/[0.88] text-[0.9rem] md:text-[0.95rem] leading-[1.8] font-light italic mb-4 flex-1 relative z-10">
-                  &ldquo;{t.quote}&rdquo;
+                <p className="text-foreground/[0.88] text-[0.9rem] md:text-[0.95rem] leading-[1.8] font-light italic flex-1 relative z-10 flex items-center py-6 md:py-8">
+                  <span>&ldquo;{t.quote}&rdquo;</span>
                 </p>
 
                 {/* Attribution */}

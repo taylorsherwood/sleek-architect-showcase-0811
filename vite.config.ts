@@ -216,6 +216,27 @@ function asyncCssPlugin(): Plugin {
   };
 }
 
+/**
+ * Strip the modulepreload hint for the prerender bundle from generated HTML.
+ * vite-prerender-plugin emits a chunk that contains react-dom/server, StaticRouter,
+ * and other build-time-only deps (~324 KB). The chunk is only invoked by Node at
+ * build time, but the modulepreload hint causes browsers to download it on every
+ * page load, wasting ~130 KB of unused JS. Removing the link prevents the fetch
+ * without affecting build-time prerendering.
+ */
+function stripPrerenderModulepreloadPlugin(): Plugin {
+  return {
+    name: "strip-prerender-modulepreload",
+    enforce: "post",
+    transformIndexHtml(html) {
+      return html.replace(
+        /\s*<link\s+rel="modulepreload"[^>]*href="[^"]*\/prerender-[^"]*\.js"[^>]*>/g,
+        ""
+      );
+    },
+  };
+}
+
 export default defineConfig(({ mode }) => ({
   server: {
     host: "::",

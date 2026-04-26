@@ -24,8 +24,8 @@
     <link rel="preload" as="image" href="/images/hero-mobile-austin-v2.webp" type="image/webp" fetchpriority="high" media="(max-width: 767px)" />
     <link rel="preload" as="image" href="/images/hero-poster.webp" type="image/webp" fetchpriority="high" media="(min-width: 768px)" />
 
-    <!-- Preconnect to critical third-party origins to shorten the network dependency chain -->
-    <link rel="preconnect" href="https://em.realscout.com" crossorigin />
+    <!-- DNS-prefetch RealScout: preconnect was unused because the widget loads only after user interaction / IntersectionObserver -->
+    <link rel="dns-prefetch" href="https://em.realscout.com" />
 
     <!-- Self-hosted fonts (all fonts now local — no external Google Fonts requests) -->
     <!-- Only preload critical above-the-fold fonts (Cinzel for H1, Jost for body) -->

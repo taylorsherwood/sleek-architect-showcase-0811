@@ -5,6 +5,7 @@ import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { realEstateAgentSchema, createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import ScrollReveal from "@/components/ScrollReveal";
 import { Link, useSearchParams } from "react-router-dom";
+import heroSearchImg from "@/assets/hero-search-austin.jpg";
 import gillisStreet from "@/assets/commercial-gillis-street.jpg";
 import sanJoseAve from "@/assets/commercial-san-jose-ave.jpg";
 import bremserAve from "@/assets/commercial-bremser-ave.jpg";
@@ -70,47 +71,37 @@ const SearchPage = () => {
       <SchemaMarkup schema={createFAQSchema(searchFaqs)} />
       <Navigation />
 
-      {/* Hero */}
-      <section
-        className="relative pt-32 pb-20 md:pt-40 md:pb-28"
-        style={{
-          background:
-            "linear-gradient(180deg, hsl(233 50% 9%) 0%, hsl(233 50% 14%) 100%)",
-        }}
-      >
-        <div className="container mx-auto px-6 text-center">
-          <ScrollReveal>
-            <div className="flex justify-center mb-6">
-              <div style={{ width: 40, borderTop: "1px solid hsl(var(--gold))" }} />
-            </div>
-            <p
-              className="text-minimal mb-6"
-              style={{ color: "hsl(var(--gold-light))" }}
-            >
-              AUSTIN REAL ESTATE
-            </p>
-            <h1 className="text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-display font-normal text-architectural mb-6 text-warm-cream" style={{ fontStyle: "normal" }}>
-              Search All <span style={{ color: "hsl(var(--gold))" }}>Listings</span>
+      {/* ── Hero ── */}
+      <section className="relative min-h-[640px] md:min-h-[720px] lg:h-[820px] xl:h-[860px] 2xl:h-[880px] flex items-center overflow-hidden bg-primary">
+        <div className="absolute inset-0">
+          <img
+            src={heroSearchImg}
+            alt="Modern luxury Austin home with floor-to-ceiling glass and architectural concrete"
+            title="Search Austin homes for sale"
+            className="w-full h-full object-cover"
+            loading="eager"
+            decoding="async"
+          />
+          <div className="absolute inset-0 bg-[#0C0F24]/60" />
+        </div>
+        <div className="relative container mx-auto px-6 pt-24 md:pt-32 lg:pt-36">
+          <div className="max-w-xl">
+            <p className="text-minimal text-gold mb-4 reveal">AUSTIN REAL ESTATE</p>
+            <h1 className="text-3xl sm:text-2xl sm:text-4xl md:text-6xl font-display font-normal text-primary-foreground leading-[1.1] mb-6 reveal">
+              Search All
+              <br />
+              Listings
             </h1>
-            <p className="max-w-2xl mx-auto" style={{
-              fontFamily: "'Jost', sans-serif",
-              fontWeight: 400,
-              fontSize: "17px",
-              color: "rgba(245, 243, 239, 0.85)",
-              letterSpacing: "0.03em",
-              lineHeight: 1.8,
-            }}>
-              Explore every available home across Austin — from luxury estates
-              to condos, new construction, and investment opportunities.
+            <p className="text-primary-foreground/70 text-lg max-w-lg mb-8 reveal-delayed">
+              Explore every available home across Austin — from luxury estates to condos, new construction, and investment opportunities.
             </p>
-            
             {filterSummary && (
-              <div className="mt-6 inline-flex items-center gap-2 px-5 py-2 rounded-full border border-warm-cream/20 text-warm-cream/80 text-sm font-light">
+              <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-warm-cream/20 text-warm-cream/80 text-sm font-light reveal-delayed-2">
                 <span>Filtering:</span>
                 <span className="text-gold font-medium">{filterSummary}</span>
               </div>
             )}
-          </ScrollReveal>
+          </div>
         </div>
       </section>
 

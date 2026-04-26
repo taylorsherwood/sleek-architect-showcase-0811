@@ -104,7 +104,7 @@ const SearchPage = () => {
               className="text-primary-foreground/70 text-lg max-w-lg mb-8 reveal-delayed"
               style={{ textShadow: "0 1px 14px rgba(12, 15, 36, 0.55)" }}
             >
-              Explore every available home across Austin — from luxury estates to condos, new construction, and investment opportunities.
+              Explore every available home across Austin, from luxury estates to condos, new construction, and investment opportunities.
             </p>
             {filterSummary && (
               <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-warm-cream/20 text-warm-cream/80 text-sm font-light reveal-delayed-2">

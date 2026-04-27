@@ -1,9 +1,7 @@
 import { useState, FormEvent } from "react";
 import { supabase } from "@/integrations/supabase/client";
-import { formatPhoneNumber, getPhoneDigits, getTimestamp } from "@/lib/formUtils";
+import { formatPhoneNumber, getPhoneDigits, submitLeadToZapier } from "@/lib/formUtils";
 import { setUnlocked, getUtmParams } from "@/lib/communityUnlock";
-
-const ZAPIER_WEBHOOK = "https://hooks.zapier.com/hooks/catch/26916347/upj5fa0/";
 
 interface CommunityGateProps {
   slug: string;

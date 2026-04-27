@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ScrollReveal from "@/components/ScrollReveal";
-import { formatPhoneNumber, getPhoneDigits, getTimestamp } from "@/lib/formUtils";
+import { formatPhoneNumber, getPhoneDigits, submitLeadToZapier } from "@/lib/formUtils";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -1312,26 +1312,32 @@ const InsightsSection = () => (
    SECTION 8 — LEAD CAPTURE
    ───────────────────────────────────────────── */
 
-const ZAPIER_WEBHOOK = "https://hooks.zapier.com/hooks/catch/26916347/upj5fa0/";
-
 const LeadCapture = () => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!email) return;
+    setErrorMsg(null);
+    if (!name.trim() || !email.trim()) {
+      setErrorMsg("Please enter your name and email.");
+      return;
+    }
     setLoading(true);
-    try {
-      const body = new URLSearchParams({
-        name, email, lead_source: "Homepage Off-Market CTA",
-        page_url: window.location.href, submitted_at: getTimestamp(),
-      });
-      await fetch(ZAPIER_WEBHOOK, { method: "POST", body });
+    const res = await submitLeadToZapier({
+      name,
+      email,
+      message: "Requested access to private off-market opportunities (homepage CTA).",
+      source: "Homepage Off-Market CTA",
+    });
+    if (res.ok) {
       setSubmitted(true);
-    } catch { /* silent */ }
+    } else {
+      setErrorMsg(res.error || "Something went wrong. Please try again.");
+    }
     setLoading(false);
   };
 
@@ -1360,13 +1366,16 @@ const LeadCapture = () => {
             ) : (
               <form onSubmit={handleSubmit} className="max-w-[420px] mx-auto">
                 <div className="flex flex-col gap-2.5 mb-3">
-                  <input type="text" placeholder="Your Name" value={name} onChange={(e) => setName(e.target.value)}
+                  <input type="text" placeholder="Your Name" required value={name} onChange={(e) => setName(e.target.value)}
                     className="w-full px-4 py-3 text-[13px] focus:outline-none transition-all duration-300"
                     style={{ fontFamily: '"Jost", sans-serif', fontWeight: 300, background: "#FFFFFF", border: "1px solid rgba(0,0,0,0.1)", borderRadius: "0", color: "#0C0F24" }} />
                   <input type="email" placeholder="Email Address" required value={email} onChange={(e) => setEmail(e.target.value)}
                     className="w-full px-4 py-3 text-[13px] focus:outline-none transition-all duration-300"
                     style={{ fontFamily: '"Jost", sans-serif', fontWeight: 300, background: "#FFFFFF", border: "1px solid rgba(0,0,0,0.1)", borderRadius: "0", color: "#0C0F24" }} />
                 </div>
+                {errorMsg && (
+                  <p className="text-[12px] text-gold mb-3" style={{ fontFamily: '"Jost", sans-serif' }}>{errorMsg}</p>
+                )}
                 <button type="submit" disabled={loading}
                   className="w-full py-3 text-white disabled:opacity-50 transition-all duration-[250ms] ease-out hover:-translate-y-[1px] active:translate-y-0"
                   style={{

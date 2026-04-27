@@ -47,7 +47,6 @@ const prerenderRoutes = [
   "/austin-land-development-opportunities",
   "/austin-luxury-real-estate-market-report",
   "/about-austin-real-estate-advisory",
-  "/sitemap",
 ];
 
 // ── Curated sitemap routes (high-value, canonical, 200-status pages only) ──

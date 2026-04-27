@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { useLocation } from "react-router-dom";
-import { getTimestamp } from "@/lib/formUtils";
+import { getTimestamp, submitLeadToZapier } from "@/lib/formUtils";
 
-const ZAPIER_WEBHOOK = "https://hooks.zapier.com/hooks/catch/26916347/upj5fa0/";
+const STORAGE_KEY_LEGACY_PLACEHOLDER = "";
 const STORAGE_KEY = "echelon_exit_intent_v1";
 
 // Routes where the modal should never appear (user already converting / dedicated lead pages)

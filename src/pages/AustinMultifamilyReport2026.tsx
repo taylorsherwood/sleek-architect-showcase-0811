@@ -17,7 +17,7 @@ import {
 } from "@/components/ui/select";
 import { TrendingUp, Building2, MapPin, BarChart3, CheckCircle2, ArrowDown } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
-import { formatPhoneNumber } from "@/lib/formUtils";
+import { formatPhoneNumber, submitLeadToZapier } from "@/lib/formUtils";
 import reportCover from "@/assets/multifamily-report-cover.png";
 
 const PrivateOpportunities = lazy(() => import("@/components/PrivateOpportunities"));
@@ -129,58 +129,35 @@ const AustinMultifamilyReport2026 = () => {
     }
     setIsSubmitting(true);
 
-    const timestamp = new Date().toLocaleString("en-US", {
-      timeZone: "America/Chicago",
-      dateStyle: "full",
-      timeStyle: "short",
+    const message = `2026 Multifamily Report download${formData.investmentFocus ? ` — Investment focus: ${formData.investmentFocus}` : ""}`;
+
+    const res = await submitLeadToZapier({
+      name: `${formData.firstName} ${formData.lastName}`.trim(),
+      email: formData.email,
+      phone: formData.phone,
+      message,
+      source: "Austin Multifamily Report 2026",
+      extra: {
+        first_name: formData.firstName,
+        last_name: formData.lastName,
+        investment_focus: formData.investmentFocus || "Not specified",
+      },
     });
 
-    const payload = {
-      name: `${formData.firstName} ${formData.lastName}`,
-      email: formData.email,
-      phone: formData.phone || "Not provided",
-      investment_focus: formData.investmentFocus || "Not specified",
-      submitted_at: timestamp,
-      source: "Austin Multifamily Report 2026",
-      page_url: window.location.href,
-    };
-
-    console.log("[Report Form] Payload sent:", payload);
-
-    try {
-      const res = await fetch("https://hooks.zapier.com/hooks/catch/26916347/upj5fa0/", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/x-www-form-urlencoded",
-        },
-        body: new URLSearchParams(payload),
-      });
-
-      console.log("[Report Form] Response status:", res.status);
-
-      if (res.ok) {
-        console.log("[Report Form] ✅ Webhook triggered successfully");
-        setSubmitted(true);
-        console.log("[Report Form] Opening report PDF...");
-        window.open(REPORT_URL, "_blank", "noopener,noreferrer");
-      } else {
-        console.error("[Report Form] ❌ Webhook request failed:", res.status);
-        toast({
-          title: "Submission failed",
-          description: "The form submission failed. Please try again.",
-          variant: "destructive",
-        });
-      }
-    } catch (err) {
-      console.error("[Report Form] ❌ Network error:", err);
+    if (res.ok) {
+      console.log("[Report Form] ✅ Webhook triggered successfully");
+      setSubmitted(true);
+      console.log("[Report Form] Opening report PDF...");
+      window.open(REPORT_URL, "_blank", "noopener,noreferrer");
+    } else {
+      console.error("[Report Form] ❌ Submission failed:", res.error);
       toast({
-        title: "Network error",
-        description: "Could not reach the form service. Please check your connection and try again.",
+        title: "Submission failed",
+        description: res.error || "The form submission failed. Please try again.",
         variant: "destructive",
       });
-    } finally {
-      setIsSubmitting(false);
     }
+    setIsSubmitting(false);
   };
 
   return (

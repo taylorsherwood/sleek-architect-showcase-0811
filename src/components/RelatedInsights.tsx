@@ -21,7 +21,7 @@ const allInsightLinks: InsightLink[] = [
   { to: "/invest", label: "Austin investment properties and value-add strategies", topics: ["investment", "investor", "flip"] },
   { to: "/private-opportunities", label: "Private real estate opportunities in Austin", topics: ["off-market", "private", "investor", "luxury"] },
   { to: "/sell", label: "Sell your Austin home — comprehensive seller guide", topics: ["sell", "marketing", "luxury", "homes"] },
-  { to: "/buy-homes-austin", label: "Buy a home in Austin — complete buyer guide", topics: ["buy", "luxury", "homes", "neighborhoods"] },
+  { to: "/buy", label: "Buy a home in Austin — complete buyer guide", topics: ["buy", "luxury", "homes", "neighborhoods"] },
   { to: "/sell", label: "Sell your Austin home with strategic marketing", topics: ["sell", "marketing", "luxury"] },
   { to: "/buy", label: "Buy luxury homes in Austin Texas", topics: ["buy", "luxury", "homes"] },
   { to: "/land", label: "Austin land and development opportunities", topics: ["land", "investment", "development"] },

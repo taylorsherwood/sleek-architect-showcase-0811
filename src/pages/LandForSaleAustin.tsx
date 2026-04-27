@@ -162,7 +162,7 @@ const LandForSaleAustin = () => {
                 <Link to="/austin-real-estate-investment" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ INVESTMENT PROPERTY</Link>
                 <Link to="/austin-commercial-real-estate" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ COMMERCIAL REAL ESTATE</Link>
                 <Link to="/communities" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ ALL COMMUNITIES</Link>
-                <Link to="/buy-homes-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ BUY A HOME</Link>
+                <Link to="/buy" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ BUY A HOME</Link>
                 <Link to="/contact" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ CONTACT US</Link>
               </div>
             </section>

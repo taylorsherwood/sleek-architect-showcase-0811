@@ -5,7 +5,7 @@ import SchemaMarkup, { createBreadcrumbSchema, createFAQSchema, realEstateAgentS
 import heroImage from "@/assets/hero-austin-skyline-sunset.webp";
 import echelonLogo from "@/assets/echelon-logo-gold.png";
 import echelonMark from "@/assets/echelon-mark-gold.png";
-import { formatPhoneNumber, getTimestamp } from "@/lib/formUtils";
+import { formatPhoneNumber, submitLeadToZapier } from "@/lib/formUtils";
 import CinematicSections from "@/components/off-market/CinematicSections";
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 
@@ -115,32 +115,31 @@ const OffMarketRealEstateAustin = () => {
     e.preventDefault();
     if (!form.name.trim() || !form.email.trim() || !form.phone.trim()) return;
     setLoading(true);
-    try {
-      const res = await fetch("https://hooks.zapier.com/hooks/catch/26916347/upj5fa0/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams({
-          name: form.name,
-          email: form.email,
-          phone: form.phone || "Not provided",
-          interest: form.interest || "General",
-          budget: form.budget,
-          timeline: form.timeline,
-          notes: form.notes,
-          source: "Off-Market Landing Page",
-          page_url: typeof window !== "undefined" ? window.location.href : "",
-          submitted_at: getTimestamp(),
-        }),
-      });
-      if (res.ok) {
-        setSubmitted(true);
-        fireConversion();
-      }
-    } catch {
-      // silent
-    } finally {
-      setLoading(false);
+    const composedMessage = [
+      form.interest && `Interest: ${form.interest}`,
+      form.budget && `Budget: ${form.budget}`,
+      form.timeline && `Timeline: ${form.timeline}`,
+      form.notes && `Notes: ${form.notes}`,
+    ].filter(Boolean).join(" | ") || "Off-market inquiry.";
+
+    const res = await submitLeadToZapier({
+      name: form.name,
+      email: form.email,
+      phone: form.phone,
+      message: composedMessage,
+      source: "Off-Market Landing Page",
+      extra: {
+        interest: form.interest || "General",
+        budget: form.budget,
+        timeline: form.timeline,
+        notes: form.notes,
+      },
+    });
+    if (res.ok) {
+      setSubmitted(true);
+      fireConversion();
     }
+    setLoading(false);
   };
 
   const scrollToForm = () => {

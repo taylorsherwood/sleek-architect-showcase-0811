@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ScrollReveal from "@/components/ScrollReveal";
-import { formatPhoneNumber, getPhoneDigits, submitLeadToZapier } from "@/lib/formUtils";
+import { formatPhoneNumber, submitLeadToZapier } from "@/lib/formUtils";
 
 gsap.registerPlugin(ScrollTrigger);
 

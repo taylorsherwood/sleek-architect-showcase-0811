@@ -146,7 +146,7 @@ function sitemapPlugin(): Plugin {
             "/austin-luxury-homes-for-sale", "/luxury-real-estate-austin", "/off-market-real-estate-austin",
             "/austin-real-estate-investment", "/austin-commercial-real-estate"];
           // Tier 2: Community pages + secondary SEO pages
-          const tier2Secondary = ["/land", "/land-for-sale-austin", "/buy-homes-austin", "/sell-home-austin",
+          const tier2Secondary = ["/land", "/land-for-sale-austin", "/buy-homes-austin",
             "/home-value-austin", "/private-opportunities", "/past-transactions", "/contact", "/blog"];
 
           const priority = route === "/" ? "1.0"

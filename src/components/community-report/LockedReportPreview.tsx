@@ -2,9 +2,7 @@ import { Lock, TrendingDown, TrendingUp } from "lucide-react";
 import { FormEvent, useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { isUnlocked, setUnlocked, getUtmParams } from "@/lib/communityUnlock";
-import { getTimestamp } from "@/lib/formUtils";
-
-const ZAPIER_WEBHOOK = "https://hooks.zapier.com/hooks/catch/26916347/upj5fa0/";
+import { getTimestamp, submitLeadToZapier } from "@/lib/formUtils";
 
 interface LockedReportPreviewProps {
   slug: string;
@@ -129,25 +127,19 @@ const LockedReportPreview = ({
       source_tag: sourceTag,
     });
 
-    const formData = new URLSearchParams();
-    formData.append("first_name", "(quick unlock)");
-    formData.append("last_name", "(quick unlock)");
-    formData.append("name", "(quick unlock)");
-    formData.append("email", trimmed);
-    formData.append("phone", "");
-    formData.append("interest", "");
-    formData.append("source", sourceTag);
-    formData.append("community_slug", slug);
-    formData.append("community_name", communityName);
-    formData.append("page", typeof window !== "undefined" ? window.location.href : "");
-    formData.append("timestamp", getTimestamp());
-    Object.entries(utm).forEach(([k, v]) => formData.append(k, v));
-
-    const zapPromise = fetch(ZAPIER_WEBHOOK, {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: formData.toString(),
-    }).catch(() => null);
+    const zapPromise = submitLeadToZapier({
+      name: `${communityName} Quick Unlock`,
+      email: trimmed,
+      message: `Quick unlock — ${communityName} community report`,
+      source: sourceTag,
+      extra: {
+        first_name: "(quick unlock)",
+        last_name: "(quick unlock)",
+        community_slug: slug,
+        community_name: communityName,
+        ...utm,
+      },
+    });
 
     await Promise.allSettled([dbPromise, zapPromise]);
 

@@ -7,7 +7,7 @@ import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { realEstateAgentSchema, localBusinessSchema, createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
-import { formatPhoneNumber, getTimestamp } from "@/lib/formUtils";
+import { formatPhoneNumber, submitLeadToZapier } from "@/lib/formUtils";
 
 const contactSchema = z.object({
   name: z.string().trim().min(1, "Name is required").max(100, "Name must be under 100 characters"),
@@ -42,43 +42,28 @@ const Contact = () => {
     }
     setErrors({});
     setSubmitting(true);
-    try {
-      const response = await fetch("https://hooks.zapier.com/hooks/catch/26916347/upj5fa0/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams({
-          name: form.name,
-          email: form.email,
-          phone: form.phone || "Not provided",
-          interest: form.interest,
-          message: form.message,
-          source: "Contact Page",
-          page_url: typeof window !== "undefined" ? window.location.href : "",
-          submitted_at: getTimestamp(),
-        }),
+    const result2 = await submitLeadToZapier({
+      name: form.name,
+      email: form.email,
+      phone: form.phone,
+      message: form.message,
+      source: "Contact Page",
+      extra: { interest: form.interest },
+    });
+    if (result2.ok) {
+      toast({
+        title: "Message Sent",
+        description: "Thank you for reaching out. We'll be in touch shortly.",
       });
-      if (response.ok) {
-        toast({
-          title: "Message Sent",
-          description: "Thank you for reaching out. We'll be in touch shortly."
-        });
-        setForm({ name: "", email: "", phone: "", interest: "", message: "" });
-      } else {
-        toast({
-          title: "Submission Failed",
-          description: "Something went wrong. Please try again or contact us directly.",
-          variant: "destructive",
-        });
-      }
-    } catch {
+      setForm({ name: "", email: "", phone: "", interest: "", message: "" });
+    } else {
       toast({
         title: "Submission Failed",
-        description: "Something went wrong. Please try again or contact us directly.",
+        description: result2.error || "Something went wrong. Please try again or contact us directly.",
         variant: "destructive",
       });
-    } finally {
-      setSubmitting(false);
     }
+    setSubmitting(false);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {

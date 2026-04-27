@@ -6,10 +6,9 @@ import heroPoster from "@/assets/sell-private-hero-poster.webp";
 import heroVideoMp4 from "@/assets/video/sell-private-hero.mp4";
 import heroVideoWebm from "@/assets/video/sell-private-hero.webm";
 import sectionImage from "@/assets/sell-private-approach-kitchen.webp";
-import { formatPhoneNumber, getTimestamp } from "@/lib/formUtils";
+import { formatPhoneNumber, submitLeadToZapier } from "@/lib/formUtils";
 
 const SITE = "https://www.echelonpropertygroup.com";
-const ZAPIER_WEBHOOK = "https://hooks.zapier.com/hooks/catch/26916347/upj5fa0/";
 
 // Brand tokens
 const IVORY = "#F5F3EF";
@@ -77,29 +76,22 @@ const SellPrivate = () => {
     e.preventDefault();
     if (!form.name.trim() || !form.email.trim() || !form.phone.trim() || !form.address.trim()) return;
     setLoading(true);
-    try {
-      await fetch(ZAPIER_WEBHOOK, {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams({
-          name: form.name,
-          email: form.email,
-          phone: form.phone,
-          property_address: form.address,
-          timeline: form.timeline || "Not specified",
-          interest: "Private Seller Inquiry",
-          source: "Sell Private Landing Page",
-          page_url: typeof window !== "undefined" ? window.location.href : "",
-          submitted_at: getTimestamp(),
-        }),
-      });
-      fireConversion();
-      navigate("/sell-private/thank-you");
-    } catch {
-      navigate("/sell-private/thank-you");
-    } finally {
-      setLoading(false);
-    }
+    const message = `Private seller inquiry — Address: ${form.address}${form.timeline ? ` | Timeline: ${form.timeline}` : ""}`;
+    await submitLeadToZapier({
+      name: form.name,
+      email: form.email,
+      phone: form.phone,
+      message,
+      source: "Sell Private Landing Page",
+      extra: {
+        property_address: form.address,
+        timeline: form.timeline || "Not specified",
+        interest: "Private Seller Inquiry",
+      },
+    });
+    fireConversion();
+    setLoading(false);
+    navigate("/sell-private/thank-you");
   };
 
   const scrollTo = (id: string) =>

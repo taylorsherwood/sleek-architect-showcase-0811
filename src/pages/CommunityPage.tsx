@@ -535,7 +535,7 @@ const CommunityPage = () => {
                 <Link to="/buy-homes-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">
                   → BUY A HOME IN AUSTIN
                 </Link>
-                <Link to="/sell-home-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">
+                <Link to="/sell" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">
                   → SELL YOUR AUSTIN HOME
                 </Link>
                 <Link to="/off-market-real-estate-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">

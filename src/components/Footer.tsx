@@ -142,7 +142,7 @@ const Footer = () => {
                   { to: "/private-opportunities", label: "Private Opportunities" },
                   { to: "/luxury-real-estate-austin", label: "Luxury Real Estate Austin" },
                   { to: "/buy-homes-austin", label: "Buy Homes in Austin" },
-                  { to: "/sell-home-austin", label: "Sell Your Austin Home" },
+                  { to: "/sell", label: "Sell Your Austin Home" },
                 ].map((link) => (
                   <Link key={link.to} to={link.to} className={linkHoverClass} style={linkStyle}>{link.label}</Link>
                 ))}

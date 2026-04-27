@@ -135,7 +135,7 @@ In the upper tier of the market, representation is less about opening doors and 
 
 ## What a luxury home advisor in Austin actually does
 
-A true advisor is not operating like a generalist brokerage built for volume. The role is part strategist, part negotiator, part market interpreter. For [buyers](/buy-homes-austin), that often means filtering an overwhelming field of options down to a small set of properties that fit both lifestyle and long-term asset logic. For [sellers](/sell-home-austin), it means understanding whether a home should be broadly marketed, selectively introduced, or handled through a more private process.
+A true advisor is not operating like a generalist brokerage built for volume. The role is part strategist, part negotiator, part market interpreter. For [buyers](/buy-homes-austin), that often means filtering an overwhelming field of options down to a small set of properties that fit both lifestyle and long-term asset logic. For [sellers](/sell), it means understanding whether a home should be broadly marketed, selectively introduced, or handled through a more private process.
 
 That distinction matters in Austin because the [luxury market](/austin-luxury-homes-for-sale) is not one market. It is a network of micro-markets with different buyer pools, price sensitivities, and liquidity patterns. A modern home in [West Lake Hills](/communities/westlake-hills) trades on very different dynamics than a legacy estate in [Tarrytown](/communities/tarrytown) or a lock-and-leave residence downtown. Even within the same price band, the path to a successful transaction can be completely different.
 
@@ -218,7 +218,7 @@ A: Beyond what is available, ask how a specific property will hold up over the n
     title: "Selling a Luxury Home in Austin",
     metaTitle: "Selling a Luxury Home in Austin | Strategy, Pricing & Discretion",
     excerpt: "How to sell a luxury home in Austin the right way — from market positioning and pricing strategy to private launches, presentation, and representation that protects premium outcomes.",
-    content: `A luxury home that lingers sends a message, whether a seller intends it to or not. In the upper tier of the market, days on market are not just a metric. They become part of the asset's story. That is why [selling a luxury home in Austin](/sell-home-austin) requires more than listing it beautifully and waiting for the right buyer to appear.
+    content: `A luxury home that lingers sends a message, whether a seller intends it to or not. In the upper tier of the market, days on market are not just a metric. They become part of the asset's story. That is why [selling a luxury home in Austin](/sell) requires more than listing it beautifully and waiting for the right buyer to appear.
 
 At this level, buyers are not simply comparing square footage, finish quality, and lot size. They are weighing scarcity, status, privacy, future value, and how a property fits their lifestyle. They are also highly informed. Many have access to [off-market opportunities](/off-market-real-estate-austin), private advisors, and neighborhood-level intelligence that never shows up in public listing remarks. Sellers who treat a luxury property like a standard resale often miss what actually drives premium outcomes.
 

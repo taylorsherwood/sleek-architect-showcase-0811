@@ -39,7 +39,7 @@ const staticRoutes = [
   "/home-value-austin",
   "/luxury-real-estate-austin",
   "/buy-homes-austin",
-  "/sell-home-austin",
+  
   "/austin-real-estate-investment",
   "/land-for-sale-austin",
   "/past-transactions",

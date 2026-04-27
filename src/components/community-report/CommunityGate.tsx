@@ -1,9 +1,7 @@
 import { useState, FormEvent } from "react";
 import { supabase } from "@/integrations/supabase/client";
-import { formatPhoneNumber, getPhoneDigits, getTimestamp } from "@/lib/formUtils";
+import { formatPhoneNumber, getPhoneDigits, submitLeadToZapier } from "@/lib/formUtils";
 import { setUnlocked, getUtmParams } from "@/lib/communityUnlock";
-
-const ZAPIER_WEBHOOK = "https://hooks.zapier.com/hooks/catch/26916347/upj5fa0/";
 
 interface CommunityGateProps {
   slug: string;
@@ -63,26 +61,23 @@ const CommunityGate = ({
       source_tag: sourceTag,
     });
 
-    // Post to Zapier in same site-wide format
-    const formData = new URLSearchParams();
-    formData.append("first_name", firstName.trim());
-    formData.append("last_name", lastName.trim());
-    formData.append("name", `${firstName.trim()} ${lastName.trim()}`);
-    formData.append("email", email.trim());
-    formData.append("phone", getPhoneDigits(phone));
-    formData.append("interest", interest);
-    formData.append("source", sourceTag);
-    formData.append("community_slug", slug);
-    formData.append("community_name", communityName);
-    formData.append("page", typeof window !== "undefined" ? window.location.href : "");
-    formData.append("timestamp", getTimestamp());
-    Object.entries(utm).forEach(([k, v]) => formData.append(k, v));
-
-    const zapPromise = fetch(ZAPIER_WEBHOOK, {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: formData.toString(),
-    }).catch(() => null);
+    // Post to Zapier with normalized canonical fields
+    const message = `Community report unlock — ${communityName}${interest ? ` | Interest: ${interest}` : ""}`;
+    const zapPromise = submitLeadToZapier({
+      name: `${firstName.trim()} ${lastName.trim()}`,
+      email: email.trim(),
+      phone: getPhoneDigits(phone),
+      message,
+      source: sourceTag,
+      extra: {
+        first_name: firstName.trim(),
+        last_name: lastName.trim(),
+        interest,
+        community_slug: slug,
+        community_name: communityName,
+        ...utm,
+      },
+    });
 
     await Promise.allSettled([dbPromise, zapPromise]);
 

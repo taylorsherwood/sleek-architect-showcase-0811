@@ -1,8 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { useLocation } from "react-router-dom";
-import { getTimestamp } from "@/lib/formUtils";
-
-const ZAPIER_WEBHOOK = "https://hooks.zapier.com/hooks/catch/26916347/upj5fa0/";
+import { getTimestamp, submitLeadToZapier } from "@/lib/formUtils";
 const STORAGE_KEY = "echelon_exit_intent_v1";
 
 // Routes where the modal should never appear (user already converting / dedicated lead pages)
@@ -114,19 +112,18 @@ const ExitIntentModal = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!email) return;
+    if (!email.trim()) return;
     setLoading(true);
-    try {
-      const body = new URLSearchParams({
-        email,
-        lead_source: "Exit Intent — Private Listings",
-        page_url: window.location.href,
-        submitted_at: getTimestamp(),
-      });
-      await fetch(ZAPIER_WEBHOOK, { method: "POST", body });
+    const res = await submitLeadToZapier({
+      // No name field on exit-intent modal — use a clear default so the Zap
+      // still receives a populated `name` and `message`.
+      name: "Exit Intent Visitor",
+      email,
+      message: "Requested early access to private listings via exit-intent modal.",
+      source: "Exit Intent — Private Listings",
+    });
+    if (res.ok) {
       setSubmitted(true);
-    } catch {
-      /* silent — keep UX uninterrupted */
     }
     setLoading(false);
   };

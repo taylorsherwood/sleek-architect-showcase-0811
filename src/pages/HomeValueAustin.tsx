@@ -7,7 +7,7 @@ import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createFAQSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
-import { formatPhoneNumber, getTimestamp } from "@/lib/formUtils";
+import { formatPhoneNumber, submitLeadToZapier } from "@/lib/formUtils";
 
 const faqs = [
   {
@@ -77,40 +77,36 @@ const HomeValueAustin = () => {
       return;
     }
     setErrors({});
-    try {
-      const response = await fetch("https://hooks.zapier.com/hooks/catch/26916347/upj5fa0/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams({
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone || "Not provided",
-          property_address: formData.address,
-          property_type: formData.propertyType,
-          price_range: formData.priceRange,
-          notes: formData.notes || "",
-          source: "Home Value Austin Page",
-          page_url: typeof window !== "undefined" ? window.location.href : "",
-          submitted_at: getTimestamp(),
-        }),
+    const message = [
+      `Property: ${formData.address}`,
+      `Type: ${formData.propertyType}`,
+      `Estimated price range: ${formData.priceRange}`,
+      formData.notes && `Notes: ${formData.notes}`,
+    ].filter(Boolean).join(" | ");
+
+    const res = await submitLeadToZapier({
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      message,
+      source: "Home Value Austin Page",
+      extra: {
+        property_address: formData.address,
+        property_type: formData.propertyType,
+        price_range: formData.priceRange,
+        notes: formData.notes || "",
+      },
+    });
+    if (res.ok) {
+      setSubmitted(true);
+      toast({
+        title: "Valuation Request Received",
+        description: "We'll be in touch within 24–48 hours with your confidential home valuation.",
       });
-      if (response.ok) {
-        setSubmitted(true);
-        toast({
-          title: "Valuation Request Received",
-          description: "We'll be in touch within 24–48 hours with your confidential home valuation.",
-        });
-      } else {
-        toast({
-          title: "Submission Failed",
-          description: "Something went wrong. Please try again.",
-          variant: "destructive",
-        });
-      }
-    } catch {
+    } else {
       toast({
         title: "Submission Failed",
-        description: "Something went wrong. Please try again.",
+        description: res.error || "Something went wrong. Please try again.",
         variant: "destructive",
       });
     }

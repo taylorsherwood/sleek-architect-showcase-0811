@@ -1,43 +1,45 @@
 import { useState } from "react";
+import { submitLeadToZapier, ZAPIER_BOOKING_WEBHOOK } from "@/lib/formUtils";
 
 interface CommunityGuideCTAProps {
   communityName: string;
   guideUrl: string;
 }
 
-const ZAPIER_WEBHOOK = "https://hooks.zapier.com/hooks/catch/26916347/u7plp1z/";
-
 const CommunityGuideCTA = ({ communityName, guideUrl }: CommunityGuideCTAProps) => {
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!email.trim()) return;
-
-    setLoading(true);
-    try {
-      const body = new URLSearchParams({
-        email: email.trim(),
-        lead_source: `${communityName} Community Guide`,
-        page_url: window.location.href,
-        timestamp: new Date().toLocaleString("en-US", { timeZone: "America/Chicago" }),
-      });
-
-      await fetch(ZAPIER_WEBHOOK, {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: body.toString(),
-        mode: "no-cors",
-      });
-    } catch {
-      // Fire-and-forget
+    setErrorMsg(null);
+    if (!email.trim()) {
+      setErrorMsg("Please enter your email.");
+      return;
     }
 
-    setSubmitted(true);
+    setLoading(true);
+    const res = await submitLeadToZapier(
+      {
+        // Email-only inline CTA — supply a default name so the Zap receives
+        // a populated `name` and `message`.
+        name: `${communityName} Guide Request`,
+        email: email.trim(),
+        message: `Requested the ${communityName} community guide PDF.`,
+        source: `${communityName} Community Guide`,
+      },
+      ZAPIER_BOOKING_WEBHOOK
+    );
+
+    if (res.ok) {
+      setSubmitted(true);
+      window.open(guideUrl, "_blank", "noopener");
+    } else {
+      setErrorMsg(res.error || "Something went wrong. Please try again.");
+    }
     setLoading(false);
-    window.open(guideUrl, "_blank", "noopener");
   };
 
   if (submitted) {
@@ -85,6 +87,9 @@ const CommunityGuideCTA = ({ communityName, guideUrl }: CommunityGuideCTAProps) 
             {loading ? "SENDING…" : "GET THE GUIDE"}
           </button>
         </form>
+        {errorMsg && (
+          <p className="text-sm text-gold mt-3" role="alert">{errorMsg}</p>
+        )}
       </div>
     </section>
   );

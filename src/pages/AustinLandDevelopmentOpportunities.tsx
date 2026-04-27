@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import heroImage from "@/assets/community-hill-country.jpg";
-import { formatPhoneNumber, getTimestamp } from "@/lib/formUtils";
+import { formatPhoneNumber, submitLeadToZapier } from "@/lib/formUtils";
 import RelatedInsights from "@/components/RelatedInsights";
 
 const SITE = "https://www.echelonpropertygroup.com";
@@ -48,33 +48,33 @@ const AustinLandDevelopmentOpportunities = () => {
     e.preventDefault();
     if (!form.name.trim() || !form.email.trim() || !form.phone.trim()) return;
     setLoading(true);
-    try {
-      const res = await fetch("https://hooks.zapier.com/hooks/catch/26916347/upj5fa0/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams({
-          name: form.name,
-          email: form.email,
-          phone: form.phone || "Not provided",
-          intended_use: form.use || "General",
-          acreage_range: form.acreage,
-          budget: form.budget,
-          timeline: form.timeline,
-          notes: form.notes,
-          source: "Land Development Landing Page",
-          page_url: typeof window !== "undefined" ? window.location.href : "",
-          submitted_at: getTimestamp(),
-        }),
-      });
-      if (res.ok) {
-        setSubmitted(true);
-        fireConversion();
-      }
-    } catch {
-      // silent
-    } finally {
-      setLoading(false);
+    const composedMessage = [
+      form.use && `Intended use: ${form.use}`,
+      form.acreage && `Acreage: ${form.acreage}`,
+      form.budget && `Budget: ${form.budget}`,
+      form.timeline && `Timeline: ${form.timeline}`,
+      form.notes && `Notes: ${form.notes}`,
+    ].filter(Boolean).join(" | ") || "Land development inquiry.";
+
+    const res = await submitLeadToZapier({
+      name: form.name,
+      email: form.email,
+      phone: form.phone,
+      message: composedMessage,
+      source: "Land Development Landing Page",
+      extra: {
+        intended_use: form.use || "General",
+        acreage_range: form.acreage,
+        budget: form.budget,
+        timeline: form.timeline,
+        notes: form.notes,
+      },
+    });
+    if (res.ok) {
+      setSubmitted(true);
+      fireConversion();
     }
+    setLoading(false);
   };
 
   const scrollToForm = () => {

@@ -6,7 +6,7 @@ import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { realEstateAgentSchema, createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
-import { formatPhoneNumber, getTimestamp } from "@/lib/formUtils";
+import { formatPhoneNumber, submitLeadToZapier } from "@/lib/formUtils";
 
 const ScrollReveal = lazy(() => import("@/components/ScrollReveal"));
 const BeforeAfterSlider = lazy(() => import("@/components/BeforeAfterSlider"));
@@ -241,32 +241,22 @@ const Invest = () => {
       return;
     }
     setPropSubmitting(true);
-    try {
-      const response = await fetch("https://hooks.zapier.com/hooks/catch/26916347/upj5fa0/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams({
-          name: propForm.propName,
-          email: propForm.propEmail,
-          phone: propForm.propPhone || "Not provided",
-          property_address: propForm.propAddress,
-          source: "Invest Page — Property CTA",
-          page_url: typeof window !== "undefined" ? window.location.href : "",
-          submitted_at: getTimestamp(),
-        }),
-      });
-      if (response.ok) {
-        toast({ title: "Property Submitted", description: "We'll review your property and be in touch shortly." });
-        setPropForm({ propName: "", propPhone: "", propEmail: "", propAddress: "" });
-        setPropErrors({});
-      } else {
-        toast({ title: "Submission Failed", description: "Please try again or call us directly.", variant: "destructive" });
-      }
-    } catch {
-      toast({ title: "Submission Failed", description: "Please try again or call us directly.", variant: "destructive" });
-    } finally {
-      setPropSubmitting(false);
+    const res = await submitLeadToZapier({
+      name: propForm.propName,
+      email: propForm.propEmail,
+      phone: propForm.propPhone,
+      message: `Property submission: ${propForm.propAddress}`,
+      source: "Invest Page — Property CTA",
+      extra: { property_address: propForm.propAddress },
+    });
+    if (res.ok) {
+      toast({ title: "Property Submitted", description: "We'll review your property and be in touch shortly." });
+      setPropForm({ propName: "", propPhone: "", propEmail: "", propAddress: "" });
+      setPropErrors({});
+    } else {
+      toast({ title: "Submission Failed", description: res.error || "Please try again or call us directly.", variant: "destructive" });
     }
+    setPropSubmitting(false);
   };
 
   const handleChange = (
@@ -290,40 +280,40 @@ const Invest = () => {
     }
 
     setSubmitting(true);
-    try {
-      const response = await fetch("https://hooks.zapier.com/hooks/catch/26916347/upj5fa0/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams({
-          name: form.name,
-          email: form.email,
-          phone: form.phone || "Not provided",
-          interest: form.interest || "Not specified",
-          investment_type: form.investmentType || "Not specified",
-          target_areas: form.targetAreas || "Not specified",
-          budget_range: form.budget || "Not specified",
-          timeline: form.timeline || "Not specified",
-          notes: form.notes || "None",
-          source: "Private Access — Invest Page",
-          page_url: typeof window !== "undefined" ? window.location.href : "",
-          submitted_at: getTimestamp(),
-        }),
+    const composedMessage = [
+      form.notes,
+      form.investmentType && `Investment type: ${form.investmentType}`,
+      form.targetAreas && `Target areas: ${form.targetAreas}`,
+      form.budget && `Budget: ${form.budget}`,
+      form.timeline && `Timeline: ${form.timeline}`,
+    ].filter(Boolean).join(" | ") || "Investor inquiry from Invest page.";
+
+    const res = await submitLeadToZapier({
+      name: form.name,
+      email: form.email,
+      phone: form.phone,
+      message: composedMessage,
+      source: "Private Access — Invest Page",
+      extra: {
+        interest: form.interest || "Not specified",
+        investment_type: form.investmentType || "Not specified",
+        target_areas: form.targetAreas || "Not specified",
+        budget_range: form.budget || "Not specified",
+        timeline: form.timeline || "Not specified",
+        notes: form.notes || "None",
+      },
+    });
+    if (res.ok) {
+      toast({
+        title: "Request Received",
+        description: "We'll be in touch shortly to discuss your investment goals.",
       });
-      if (response.ok) {
-        toast({
-          title: "Request Received",
-          description: "We'll be in touch shortly to discuss your investment goals.",
-        });
-        setForm({ name: "", email: "", phone: "", interest: "", investmentType: "", targetAreas: "", budget: "", timeline: "", notes: "" });
-        setErrors({});
-      } else {
-        toast({ title: "Submission Failed", description: "Please try again or call us directly.", variant: "destructive" });
-      }
-    } catch {
-      toast({ title: "Submission Failed", description: "Please try again or call us directly.", variant: "destructive" });
-    } finally {
-      setSubmitting(false);
+      setForm({ name: "", email: "", phone: "", interest: "", investmentType: "", targetAreas: "", budget: "", timeline: "", notes: "" });
+      setErrors({});
+    } else {
+      toast({ title: "Submission Failed", description: res.error || "Please try again or call us directly.", variant: "destructive" });
     }
+    setSubmitting(false);
   };
 
   const inputClass =

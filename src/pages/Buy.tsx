@@ -7,7 +7,7 @@ import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { realEstateAgentSchema, createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
-import { formatPhoneNumber, getTimestamp } from "@/lib/formUtils";
+import { formatPhoneNumber, submitLeadToZapier } from "@/lib/formUtils";
 import {
   CheckCircle,
   ArrowRight,
@@ -265,32 +265,21 @@ const Buy = () => {
     }
     setErrors({});
     setSubmitting(true);
-    try {
-      const response = await fetch("https://hooks.zapier.com/hooks/catch/26916347/upj5fa0/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams({
-          name: form.name,
-          email: form.email,
-          phone: form.phone || "Not provided",
-          message: form.message || "Buyer consultation request from Buy page.",
-          interest: "Buying a Home",
-          source: "Buy Page",
-          page_url: typeof window !== "undefined" ? window.location.href : "",
-          submitted_at: getTimestamp(),
-        }),
-      });
-      if (response.ok) {
-        toast({ title: "Request Sent", description: "Thank you — we'll be in touch shortly to schedule your consultation." });
-        setForm({ name: "", email: "", phone: "", message: "" });
-      } else {
-        toast({ title: "Submission Failed", description: "Something went wrong. Please try again or call us directly.", variant: "destructive" });
-      }
-    } catch {
-      toast({ title: "Submission Failed", description: "Something went wrong. Please try again or call us directly.", variant: "destructive" });
-    } finally {
-      setSubmitting(false);
+    const res = await submitLeadToZapier({
+      name: form.name,
+      email: form.email,
+      phone: form.phone,
+      message: form.message || "Buyer consultation request from Buy page.",
+      source: "Buy Page",
+      extra: { interest: "Buying a Home" },
+    });
+    if (res.ok) {
+      toast({ title: "Request Sent", description: "Thank you — we'll be in touch shortly to schedule your consultation." });
+      setForm({ name: "", email: "", phone: "", message: "" });
+    } else {
+      toast({ title: "Submission Failed", description: res.error || "Something went wrong. Please try again or call us directly.", variant: "destructive" });
     }
+    setSubmitting(false);
   };
 
   const inputClass =

@@ -7,7 +7,7 @@ import SchemaMarkup, { realEstateAgentSchema, createFAQSchema, createBreadcrumbS
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
 import ScrollReveal from "@/components/ScrollReveal";
-import { formatPhoneNumber, getTimestamp } from "@/lib/formUtils";
+import { formatPhoneNumber, submitLeadToZapier } from "@/lib/formUtils";
 
 
 const Testimonials = lazy(() => import("@/components/Testimonials"));
@@ -323,29 +323,24 @@ const Sell = () => {
   };
 
   const submitForm = async (
-  payload: Record<string, string>,
-  setSubmitting: (v: boolean) => void,
-  resetForm: () => void,
-  successMsg: string) =>
-  {
+    data: { name: string; email: string; phone?: string; message?: string; source: string; extra?: Record<string, string> },
+    setSubmitting: (v: boolean) => void,
+    resetForm: () => void,
+    successMsg: string
+  ) => {
     setSubmitting(true);
-    try {
-      const response = await fetch("https://hooks.zapier.com/hooks/catch/26916347/upj5fa0/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(payload),
+    const res = await submitLeadToZapier(data);
+    if (res.ok) {
+      toast({ title: "Request Sent", description: successMsg });
+      resetForm();
+    } else {
+      toast({
+        title: "Submission Failed",
+        description: res.error || "Something went wrong. Please try again or call us directly.",
+        variant: "destructive",
       });
-      if (response.ok) {
-        toast({ title: "Request Sent", description: successMsg });
-        resetForm();
-      } else {
-        toast({ title: "Submission Failed", description: "Something went wrong. Please try again or call us directly.", variant: "destructive" });
-      }
-    } catch {
-      toast({ title: "Submission Failed", description: "Something went wrong. Please try again or call us directly.", variant: "destructive" });
-    } finally {
-      setSubmitting(false);
     }
+    setSubmitting(false);
   };
 
 
@@ -363,12 +358,10 @@ const Sell = () => {
       {
         name: conForm.name,
         email: conForm.email,
-        phone: conForm.phone || "Not provided",
+        phone: conForm.phone,
         message: conForm.message || "Listing consultation request from Sell page.",
-        interest: "Selling My Home",
         source: "Sell Page — Consultation Form",
-        page_url: typeof window !== "undefined" ? window.location.href : "",
-        submitted_at: getTimestamp(),
+        extra: { interest: "Selling My Home" },
       },
       setConSubmitting,
       () => setConForm({ name: "", email: "", phone: "", message: "" }),

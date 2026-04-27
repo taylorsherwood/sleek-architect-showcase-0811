@@ -57,7 +57,7 @@ const AustinLandDevelopmentOpportunities = lazy(() => import("@/pages/AustinLand
 const AustinLuxuryRealEstateMarketReport = lazy(() => import("@/pages/AustinLuxuryRealEstateMarketReport"));
 const investImport = () => import("@/pages/Invest");
 const Invest = lazy(investImport);
-const Sitemap = lazy(() => import("@/pages/Sitemap"));
+
 const AboutAustinRealEstateAdvisory = lazy(() => import("@/pages/AboutAustinRealEstateAdvisory"));
 const SellPrivate = lazy(() => import("@/pages/SellPrivate"));
 const SellPrivateThankYou = lazy(() => import("@/pages/SellPrivateThankYou"));
@@ -163,7 +163,7 @@ const AppRoutes = () => {
           <Route path="/old-enfield-homes-for-sale" element={<Navigate to="/communities/old-enfield" replace />} />
           <Route path="/davenport-ranch-homes-for-sale" element={<Navigate to="/communities/davenport-ranch" replace />} />
           <Route path="/lakeway-homes-for-sale" element={<Navigate to="/communities/lakeway" replace />} />
-          <Route path="/sitemap" element={<Sitemap />} />
+          <Route path="/sitemap" element={<Navigate to="/sitemap.xml" replace />} />
           <Route path="/about-austin-real-estate-advisory" element={<AboutAustinRealEstateAdvisory />} />
           <Route path="/sell-private" element={<SellPrivate />} />
           <Route path="/sell-private/thank-you" element={<SellPrivateThankYou />} />

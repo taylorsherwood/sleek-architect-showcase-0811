@@ -3,7 +3,7 @@ import { useNavigate, Link } from "react-router-dom";
 import { Home, Landmark, Building2, TrendingUp } from "lucide-react";
 import { z } from "zod";
 import { useToast } from "@/hooks/use-toast";
-import { formatPhoneNumber } from "@/lib/formUtils";
+import { formatPhoneNumber, submitLeadToZapier } from "@/lib/formUtils";
 import {
   Select,
   SelectContent,
@@ -69,35 +69,25 @@ const PrivateOpportunities = ({ variant = "light" }: PrivateOpportunitiesProps) 
     }
     setErrors({});
     setSubmitting(true);
-    try {
-      const response = await fetch("https://hooks.zapier.com/hooks/catch/26916347/upj5fa0/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams({
-          name: form.name,
-          email: form.email,
-          phone: form.phone || "Not provided",
-          investmentRange: form.investmentRange || "Not specified",
-          source: "Private Opportunities Section",
-          page_url: typeof window !== "undefined" ? window.location.href : "",
-          submitted_at: new Date().toLocaleString("en-US", {
-            timeZone: "America/Chicago",
-            dateStyle: "full",
-            timeStyle: "short",
-          }),
-        }),
-      });
-      if (!response.ok) throw new Error("Webhook request failed");
+    const message = `Private opportunities request${form.investmentRange ? ` — Investment range: ${form.investmentRange}` : ""}`;
+    const res = await submitLeadToZapier({
+      name: form.name,
+      email: form.email,
+      phone: form.phone,
+      message,
+      source: "Private Opportunities Section",
+      extra: { investmentRange: form.investmentRange || "Not specified" },
+    });
+    if (res.ok) {
       navigate("/private-opportunities");
-    } catch {
+    } else {
       toast({
         title: "Submission Failed",
-        description: "Something went wrong. Please try again.",
+        description: res.error || "Something went wrong. Please try again.",
         variant: "destructive",
       });
-    } finally {
-      setSubmitting(false);
     }
+    setSubmitting(false);
   };
 
   const isDark = variant === "dark";

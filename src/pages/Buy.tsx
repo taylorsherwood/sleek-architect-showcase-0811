@@ -729,7 +729,7 @@ const Buy = () => {
               <Link to="/moving-to-austin-texas" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ MOVING TO AUSTIN GUIDE</Link>
               <Link to="/luxury-real-estate-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ AUSTIN LUXURY REAL ESTATE</Link>
               <Link to="/communities" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ EXPLORE ALL COMMUNITIES</Link>
-              <Link to="/buy-homes-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ BUYING GUIDE</Link>
+              <Link to="/buy" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ BUYING GUIDE</Link>
               <Link to="/private-opportunities" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ PRIVATE OPPORTUNITIES</Link>
               <Link to="/blog" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ BLOG & MARKET INSIGHTS</Link>
               <Link to="/why-billionaires-are-moving-to-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ WHY BILLIONAIRES ARE MOVING TO AUSTIN</Link>

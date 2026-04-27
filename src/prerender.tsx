@@ -38,7 +38,7 @@ const staticRoutes = [
   "/austin-commercial-real-estate",
   "/home-value-austin",
   "/luxury-real-estate-austin",
-  "/buy-homes-austin",
+  
   
   "/austin-real-estate-investment",
   "/land-for-sale-austin",

@@ -135,7 +135,7 @@ In the upper tier of the market, representation is less about opening doors and 
 
 ## What a luxury home advisor in Austin actually does
 
-A true advisor is not operating like a generalist brokerage built for volume. The role is part strategist, part negotiator, part market interpreter. For [buyers](/buy-homes-austin), that often means filtering an overwhelming field of options down to a small set of properties that fit both lifestyle and long-term asset logic. For [sellers](/sell), it means understanding whether a home should be broadly marketed, selectively introduced, or handled through a more private process.
+A true advisor is not operating like a generalist brokerage built for volume. The role is part strategist, part negotiator, part market interpreter. For [buyers](/buy), that often means filtering an overwhelming field of options down to a small set of properties that fit both lifestyle and long-term asset logic. For [sellers](/sell), it means understanding whether a home should be broadly marketed, selectively introduced, or handled through a more private process.
 
 That distinction matters in Austin because the [luxury market](/austin-luxury-homes-for-sale) is not one market. It is a network of micro-markets with different buyer pools, price sensitivities, and liquidity patterns. A modern home in [West Lake Hills](/communities/westlake-hills) trades on very different dynamics than a legacy estate in [Tarrytown](/communities/tarrytown) or a lock-and-leave residence downtown. Even within the same price band, the path to a successful transaction can be completely different.
 
@@ -513,7 +513,7 @@ This is where direct sourcing comes into play. Not mass outreach, not generic le
 
 The approach matters.
 
-At the top end of the market, random outreach rarely works. Thoughtful, relationship-driven introductions do. Sometimes through an agent. Sometimes through a shared connection. Always with context. This is the same discipline we apply when [representing buyers in Austin](/buy-homes-austin) at the top of the market.
+At the top end of the market, random outreach rarely works. Thoughtful, relationship-driven introductions do. Sometimes through an agent. Sometimes through a shared connection. Always with context. This is the same discipline we apply when [representing buyers in Austin](/buy) at the top of the market.
 
 The goal is not volume. It is precision.
 

@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/dialog";
 import { Calendar } from "@/components/ui/calendar";
 import { cn } from "@/lib/utils";
+import { submitLeadToZapier, ZAPIER_BOOKING_WEBHOOK } from "@/lib/formUtils";
 
 interface BookingModalProps {
   open: boolean;
@@ -139,35 +140,29 @@ const BookingModal = ({ open, onOpenChange }: BookingModalProps) => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!selectedSlot) return;
+    if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim()) return;
     setIsSubmitting(true);
 
-    try {
-      // TODO: Wire up to edge function
-      // For now, submit via Zapier webhook as a booking lead
-      const payload = new URLSearchParams({
+    const dateStr = format(selectedSlot.date, "EEEE, MMMM d, yyyy");
+    const message = `Consultation booking for ${dateStr} at ${selectedSlot.time} — 15 min phone call`;
+
+    await submitLeadToZapier(
+      {
         name: formData.name,
         email: formData.email,
         phone: formData.phone,
-        booking_date: format(selectedSlot.date, "EEEE, MMMM d, yyyy"),
-        booking_time: selectedSlot.time,
-        lead_source: "New Consultation Booking",
-        message: `Consultation booking for ${format(selectedSlot.date, "EEEE, MMMM d, yyyy")} at ${selectedSlot.time} — 15 min phone call`,
-        page_url: window.location.href,
-        timestamp: new Date().toISOString(),
-      });
+        message,
+        source: "New Consultation Booking",
+        extra: {
+          booking_date: dateStr,
+          booking_time: selectedSlot.time,
+        },
+      },
+      ZAPIER_BOOKING_WEBHOOK
+    );
 
-      await fetch("https://hooks.zapier.com/hooks/catch/26916347/u7plp1z/", {
-        method: "POST",
-        body: payload,
-      });
-
-      setStep("confirmed");
-    } catch {
-      // Still show confirmed - the lead data was attempted
-      setStep("confirmed");
-    } finally {
-      setIsSubmitting(false);
-    }
+    setStep("confirmed");
+    setIsSubmitting(false);
   };
 
   const handleClose = () => {

@@ -87,6 +87,9 @@ const CommunityGuideCTA = ({ communityName, guideUrl }: CommunityGuideCTAProps) 
             {loading ? "SENDING…" : "GET THE GUIDE"}
           </button>
         </form>
+        {errorMsg && (
+          <p className="text-sm text-gold mt-3" role="alert">{errorMsg}</p>
+        )}
       </div>
     </section>
   );

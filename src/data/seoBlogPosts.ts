@@ -2452,7 +2452,7 @@ For anyone making a move at the top of the market, the real edge is not speed fo
   },
   {
     id: "private-listings-austin-buyers-actually-want",
-    title: "Private Listings Austin Buyers Actually Want",
+    title: "LUXURY LISTINGS Austin Buyers Actually Want",
     excerpt: "Private listings Austin buyers want rarely appear publicly. Learn how off-market access works, who benefits most, and where strategy matters most.",
     content: "",
     author: "Taylor Sherwood",
@@ -2632,8 +2632,8 @@ Austin's luxury market still rewards bold moves, but only when they are informed
   },
   {
     id: "private-listings-real-estate-explained",
-    title: "Private Listings Real Estate Explained",
-    metaTitle: "Private Listings Real Estate Explained | Echelon Property Group",
+    title: "LUXURY LISTINGS Real Estate Explained",
+    metaTitle: "LUXURY LISTINGS Real Estate Explained | Echelon Property Group",
     excerpt: "Private listings real estate explained: how off-market and pocket listings work in Austin, who sees them, and how to access private inventory.",
     content: `The most desirable homes are not always the ones you can see. In the upper tier of the market, [private listings real estate](/off-market-real-estate-austin) often sits behind direct relationships, trusted advisor networks, and carefully controlled exposure rather than public search portals. For buyers and sellers operating at a high level, that is not a workaround. It is often the strategy.
 
@@ -2734,8 +2734,8 @@ Sellers should avoid private strategy when the property would benefit from broad
   },
   {
     id: "what-is-private-listing-in-real-estate",
-    title: "What Is a Private Listing in Real Estate? An Austin Advisor's Perspective",
-    metaTitle: "What Is a Private Listing in Real Estate? | Austin Guide",
+    title: "What Is a LUXURY LISTING in Real Estate? An Austin Advisor's Perspective",
+    metaTitle: "What Is a LUXURY LISTING in Real Estate? | Austin Guide",
     excerpt: "What is a private listing in real estate? An Austin advisor's perspective on how discreet sales work, when they fit, and where buyers find access.",
     content: `Some of the most consequential homes sold in Austin each year never appear on Zillow, never hit the MLS, and never see a public showing schedule. They move through phone calls, vetted introductions, and small circles of advisors who know exactly which buyer is quietly looking for a particular street, view, or architectural style.
 
@@ -2743,7 +2743,7 @@ That is the world of private listings. It is relationship-driven, deliberately e
 
 A private listing is a property offered for sale without broad public marketing — no MLS syndication, no portal exposure, no mass advertising. Instead, it is shared selectively through a trusted advisor's network of qualified buyers, top agents, private client databases, and direct relationships inside a specific market. The mechanics are simple. The strategy behind them is not.
 
-## What Is a Private Listing in Real Estate, Really?
+## What Is a LUXURY LISTING in Real Estate, Really?
 
 In practice, a private listing means the home is for sale, but access to that information is controlled. The property may only be shown to vetted buyers. Pricing guidance is shared privately rather than published. Photography, floor plans, and address details may be limited or withheld entirely.
 

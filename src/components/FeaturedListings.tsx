@@ -39,7 +39,7 @@ const listings = [
   baths: 5,
   sqft: "5,800",
   link: "#",
-  badgeLabel: "Private Market Opportunity",
+  badgeLabel: "Luxury Listing",
   isOffMarketCard: false
 }];
 
@@ -71,7 +71,7 @@ const ListingCard = ({
             {listing.address}
           </h3>
           <p className="text-[13px] text-muted-foreground/70 leading-relaxed font-light">
-            Exclusive private listings and investment opportunities not publicly
+            Exclusive luxury listings and investment opportunities not publicly
             advertised. →
           </p>
         </div>
@@ -175,7 +175,7 @@ const FeaturedListings = ({ hideRealScout = false }: FeaturedListingsProps) => {
 
   return (
     <>
-      {/* ── Curated Private Listings ── */}
+      {/* ── Curated Luxury Listings ── */}
       <section className="pt-28 pb-0 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
@@ -229,7 +229,7 @@ const FeaturedListings = ({ hideRealScout = false }: FeaturedListingsProps) => {
                 to="/off-market-real-estate-austin"
                 className="inline-block text-[13px] text-muted-foreground/60 hover:text-foreground transition-colors duration-500 font-light">
                 Did you know that 95%+ of our listings aren't on market? If you
-                are searching for private market opportunities in Austin,
+                are searching for luxury listing opportunities in Austin,
                 contact us to become an Echelon Insider for discreet listings
                 not publicly advertised.
                 <br />

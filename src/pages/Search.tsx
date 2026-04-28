@@ -191,7 +191,7 @@ const SearchPage = () => {
                   <div className="flex items-center justify-center">
                     <Link
                       to="/off-market-real-estate-austin"
-                      className="inline-block border border-gold bg-gold text-primary-foreground px-10 py-4 hover:bg-transparent hover:text-warm-cream transition-all duration-500"
+                      className="inline-block border border-gold bg-gold text-primary-foreground px-10 py-4 hover:bg-white hover:text-gold hover:border-white transition-all duration-500"
                       style={{
                         fontFamily: '"Jost", sans-serif',
                         fontSize: "0.6rem",

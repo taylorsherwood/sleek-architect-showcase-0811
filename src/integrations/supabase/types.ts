@@ -179,6 +179,69 @@ export type Database = {
         }
         Relationships: []
       }
+      leads: {
+        Row: {
+          created_at: string
+          email: string
+          extra: Json
+          id: string
+          message: string | null
+          name: string
+          page_url: string | null
+          phone: string | null
+          referrer: string | null
+          source: string
+          user_agent: string | null
+          utm_campaign: string | null
+          utm_content: string | null
+          utm_medium: string | null
+          utm_source: string | null
+          utm_term: string | null
+          zapier_error: string | null
+          zapier_status: Database["public"]["Enums"]["lead_zapier_status"]
+        }
+        Insert: {
+          created_at?: string
+          email: string
+          extra?: Json
+          id?: string
+          message?: string | null
+          name: string
+          page_url?: string | null
+          phone?: string | null
+          referrer?: string | null
+          source?: string
+          user_agent?: string | null
+          utm_campaign?: string | null
+          utm_content?: string | null
+          utm_medium?: string | null
+          utm_source?: string | null
+          utm_term?: string | null
+          zapier_error?: string | null
+          zapier_status?: Database["public"]["Enums"]["lead_zapier_status"]
+        }
+        Update: {
+          created_at?: string
+          email?: string
+          extra?: Json
+          id?: string
+          message?: string | null
+          name?: string
+          page_url?: string | null
+          phone?: string | null
+          referrer?: string | null
+          source?: string
+          user_agent?: string | null
+          utm_campaign?: string | null
+          utm_content?: string | null
+          utm_medium?: string | null
+          utm_source?: string | null
+          utm_term?: string | null
+          zapier_error?: string | null
+          zapier_status?: Database["public"]["Enums"]["lead_zapier_status"]
+        }
+        Relationships: []
+      }
       user_roles: {
         Row: {
           created_at: string
@@ -215,6 +278,7 @@ export type Database = {
     }
     Enums: {
       app_role: "admin"
+      lead_zapier_status: "pending" | "sent" | "failed" | "blocked"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -343,6 +407,7 @@ export const Constants = {
   public: {
     Enums: {
       app_role: ["admin"],
+      lead_zapier_status: ["pending", "sent", "failed", "blocked"],
     },
   },
 } as const

@@ -2452,7 +2452,7 @@ For anyone making a move at the top of the market, the real edge is not speed fo
   },
   {
     id: "private-listings-austin-buyers-actually-want",
-    title: "Private Listings Austin Buyers Actually Want",
+    title: "LUXURY LISTINGS Austin Buyers Actually Want",
     excerpt: "Private listings Austin buyers want rarely appear publicly. Learn how off-market access works, who benefits most, and where strategy matters most.",
     content: "",
     author: "Taylor Sherwood",

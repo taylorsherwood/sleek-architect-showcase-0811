@@ -188,7 +188,7 @@ const SearchPage = () => {
                     Austin properties — quietly available to qualified buyers
                     through Echelon Property Group.
                   </p>
-                  <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                  <div className="flex items-center justify-center">
                     <Link
                       to="/off-market-real-estate-austin"
                       className="inline-block border border-gold bg-gold text-primary-foreground px-10 py-4 hover:bg-transparent hover:text-warm-cream transition-all duration-500"
@@ -201,19 +201,6 @@ const SearchPage = () => {
                       }}
                     >
                       Request Off-Market Access
-                    </Link>
-                    <Link
-                      to="/contact"
-                      className="inline-block text-warm-cream/70 hover:text-warm-cream transition-colors duration-500 relative group"
-                      style={{
-                        fontFamily: '"Jost", sans-serif',
-                        fontSize: "0.6rem",
-                        letterSpacing: "0.25em",
-                        textTransform: "uppercase",
-                      }}
-                    >
-                      Speak With An Advisor
-                      <span className="absolute bottom-[-4px] left-0 w-full h-px bg-gold scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
                     </Link>
                   </div>
                   <p

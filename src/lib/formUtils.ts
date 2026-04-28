@@ -166,46 +166,51 @@ export async function submitLeadToZapier(
   }
   const utmMerged = { ...utmFromUrl, ...(data.extra || {}) };
 
-  let leadId: string | null = null;
+  // Generate the lead ID client-side so we can both insert it AND
+  // update its zapier_status later WITHOUT needing SELECT permission
+  // (anon role has no SELECT policy on `leads` — admin-only reads).
+  const leadId: string =
+    typeof crypto !== "undefined" && "randomUUID" in crypto
+      ? crypto.randomUUID()
+      : `${Date.now()}-${Math.random().toString(36).slice(2)}`;
+
+  let leadSaved = false;
   try {
-    const { data: insertedLead, error: dbError } = await supabase
-      .from("leads")
-      .insert({
-        name: payload.name,
-        email: payload.email,
-        phone: payload.phone || null,
-        message: payload.message || null,
-        source: payload.source,
-        page_url: page || null,
-        referrer:
-          typeof document !== "undefined" ? document.referrer || null : null,
-        user_agent:
-          typeof navigator !== "undefined" ? navigator.userAgent || null : null,
-        utm_source: (utmMerged as Record<string, unknown>).utm_source
-          ? String((utmMerged as Record<string, unknown>).utm_source)
-          : null,
-        utm_medium: (utmMerged as Record<string, unknown>).utm_medium
-          ? String((utmMerged as Record<string, unknown>).utm_medium)
-          : null,
-        utm_campaign: (utmMerged as Record<string, unknown>).utm_campaign
-          ? String((utmMerged as Record<string, unknown>).utm_campaign)
-          : null,
-        utm_term: (utmMerged as Record<string, unknown>).utm_term
-          ? String((utmMerged as Record<string, unknown>).utm_term)
-          : null,
-        utm_content: (utmMerged as Record<string, unknown>).utm_content
-          ? String((utmMerged as Record<string, unknown>).utm_content)
-          : null,
-        extra: extraForDb as never,
-        zapier_status: "pending" as const,
-      } as never)
-      .select("id")
-      .single();
+    const { error: dbError } = await supabase.from("leads").insert({
+      id: leadId,
+      name: payload.name,
+      email: payload.email,
+      phone: payload.phone || null,
+      message: payload.message || null,
+      source: payload.source,
+      page_url: page || null,
+      referrer:
+        typeof document !== "undefined" ? document.referrer || null : null,
+      user_agent:
+        typeof navigator !== "undefined" ? navigator.userAgent || null : null,
+      utm_source: (utmMerged as Record<string, unknown>).utm_source
+        ? String((utmMerged as Record<string, unknown>).utm_source)
+        : null,
+      utm_medium: (utmMerged as Record<string, unknown>).utm_medium
+        ? String((utmMerged as Record<string, unknown>).utm_medium)
+        : null,
+      utm_campaign: (utmMerged as Record<string, unknown>).utm_campaign
+        ? String((utmMerged as Record<string, unknown>).utm_campaign)
+        : null,
+      utm_term: (utmMerged as Record<string, unknown>).utm_term
+        ? String((utmMerged as Record<string, unknown>).utm_term)
+        : null,
+      utm_content: (utmMerged as Record<string, unknown>).utm_content
+        ? String((utmMerged as Record<string, unknown>).utm_content)
+        : null,
+      extra: extraForDb as never,
+      zapier_status: "pending" as const,
+    } as never);
     if (dbError) {
       // eslint-disable-next-line no-console
       console.error("[Lead capture] DB insert failed", dbError);
     } else {
-      leadId = insertedLead?.id ?? null;
+      leadSaved = true;
       // eslint-disable-next-line no-console
       console.log("[Lead capture] ✓ saved to database", leadId);
     }
@@ -219,7 +224,7 @@ export async function submitLeadToZapier(
     status: "sent" | "failed",
     errorMsg?: string
   ) => {
-    if (!leadId) return;
+    if (!leadSaved) return;
     try {
       await supabase
         .from("leads")

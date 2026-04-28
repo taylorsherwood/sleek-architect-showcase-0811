@@ -259,8 +259,8 @@ const OffMarketRealEstateAustin = () => {
   return (
     <div className="min-h-screen bg-[hsl(220,15%,8%)]">
       <SEOHead
-        title="Off-Market Homes & Private Listings in Austin | Echelon Property Group"
-        description="Access Austin's most exclusive off-market homes and private listings. Luxury properties, investment deals, and land opportunities not on the public market."
+        title="Off-Market Homes & Luxury Listings in Austin | Echelon Property Group"
+        description="Access Austin's most exclusive off-market homes and luxury listings. Luxury properties, investment deals, and land opportunities not on the public market."
         canonical="/off-market-real-estate-austin"
         ogTitle="Off-Market Homes in Austin | Echelon Property Group"
         ogDescription="Many of Austin's most desirable homes never hit the public market. Get private access to off-market luxury homes and investment properties."

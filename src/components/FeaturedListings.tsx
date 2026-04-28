@@ -229,7 +229,7 @@ const FeaturedListings = ({ hideRealScout = false }: FeaturedListingsProps) => {
                 to="/off-market-real-estate-austin"
                 className="inline-block text-[13px] text-muted-foreground/60 hover:text-foreground transition-colors duration-500 font-light">
                 Did you know that 95%+ of our listings aren't on market? If you
-                are searching for private market opportunities in Austin,
+                are searching for luxury listing opportunities in Austin,
                 contact us to become an Echelon Insider for discreet listings
                 not publicly advertised.
                 <br />

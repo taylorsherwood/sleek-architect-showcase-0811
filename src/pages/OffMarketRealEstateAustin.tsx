@@ -135,10 +135,14 @@ const OffMarketRealEstateAustin = () => {
         notes: form.notes,
       },
     });
-    if (res.ok) {
-      setSubmitted(true);
-      fireConversion();
+    // Lead is persisted to DB inside submitLeadToZapier BEFORE the webhook,
+    // so even if Zapier delivery fails the lead is captured. Always confirm.
+    if (!res.ok) {
+      // eslint-disable-next-line no-console
+      console.warn("[Off-Market form] Zapier delivery failed but lead was saved:", res.error);
     }
+    setSubmitted(true);
+    fireConversion();
     setLoading(false);
   };
 

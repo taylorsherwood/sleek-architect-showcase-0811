@@ -95,7 +95,7 @@ const LuxuryHomesAustin = () => {
             {/* Luxury Neighborhoods */}
             <section>
               <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-10">
-                Best Luxury Neighborhoods in Austin
+                LUXURY LIVING
               </h2>
               <div className="grid sm:grid-cols-2 gap-8">
                 {neighborhoods.map((n) =>

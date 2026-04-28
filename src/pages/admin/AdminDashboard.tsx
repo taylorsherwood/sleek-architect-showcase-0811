@@ -23,11 +23,25 @@ interface LeadRow {
   created_at: string;
 }
 
+interface SiteLeadRow {
+  id: string;
+  name: string;
+  email: string;
+  phone: string | null;
+  message: string | null;
+  source: string;
+  page_url: string | null;
+  zapier_status: "pending" | "sent" | "failed" | "blocked";
+  zapier_error: string | null;
+  created_at: string;
+}
+
 const AdminDashboard = () => {
   const { user, isAdmin, loading, signOut } = useAuth();
   const navigate = useNavigate();
   const [communities, setCommunities] = useState<CommunityRow[]>([]);
   const [leads, setLeads] = useState<LeadRow[]>([]);
+  const [siteLeads, setSiteLeads] = useState<SiteLeadRow[]>([]);
   const [loadingData, setLoadingData] = useState(true);
 
   useEffect(() => {
@@ -39,9 +53,15 @@ const AdminDashboard = () => {
         .select("id, community_name, first_name, last_name, email, phone, interest, created_at")
         .order("created_at", { ascending: false })
         .limit(50),
-    ]).then(([cRes, lRes]) => {
+      supabase
+        .from("leads")
+        .select("id, name, email, phone, message, source, page_url, zapier_status, zapier_error, created_at")
+        .order("created_at", { ascending: false })
+        .limit(100),
+    ]).then(([cRes, lRes, sRes]) => {
       setCommunities((cRes.data as CommunityRow[]) || []);
       setLeads((lRes.data as LeadRow[]) || []);
+      setSiteLeads((sRes.data as SiteLeadRow[]) || []);
       setLoadingData(false);
     });
   }, [isAdmin]);

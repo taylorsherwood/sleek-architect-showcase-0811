@@ -1,8 +1,27 @@
 /**
  * Shared form utilities for lead capture forms.
  * Phone formatting, timestamp generation, and the centralized
- * Zapier webhook submitter used by every lead/contact form site-wide.
+ * lead submitter used by every lead/contact form site-wide.
+ *
+ * Every submission is permanently captured in the `leads` table
+ * BEFORE the Zapier webhook is called, so no lead is ever lost
+ * even if Zapier fails or the webhook URL changes.
  */
+import { supabase } from "@/integrations/supabase/client";
+
+/** Reads UTM parameters from the current URL. */
+function getUtmFromUrl(): Record<string, string> {
+  if (typeof window === "undefined") return {};
+  const params = new URLSearchParams(window.location.search);
+  const out: Record<string, string> = {};
+  ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content"].forEach(
+    (k) => {
+      const v = params.get(k);
+      if (v) out[k] = v;
+    }
+  );
+  return out;
+}
 
 /**
  * Formats a phone string as (xxx) xxx-xxxx as user types.
@@ -133,6 +152,84 @@ export async function submitLeadToZapier(
   // eslint-disable-next-line no-console
   console.log("[Zapier lead submission] payload:", payload);
 
+  // ── PERMANENT CAPTURE: write to `leads` table BEFORE calling Zapier ──
+  // This guarantees we never lose a lead, even if Zapier fails downstream.
+  const utmFromUrl = getUtmFromUrl();
+  const extraForDb: Record<string, unknown> = {};
+  if (data.extra) {
+    for (const [k, v] of Object.entries(data.extra)) {
+      if (v === undefined || v === null) continue;
+      // Strip UTM keys out of `extra` since they have dedicated columns
+      if (k.startsWith("utm_")) continue;
+      extraForDb[k] = v;
+    }
+  }
+  const utmMerged = { ...utmFromUrl, ...(data.extra || {}) };
+
+  let leadId: string | null = null;
+  try {
+    const { data: insertedLead, error: dbError } = await supabase
+      .from("leads")
+      .insert({
+        name: payload.name,
+        email: payload.email,
+        phone: payload.phone || null,
+        message: payload.message || null,
+        source: payload.source,
+        page_url: page || null,
+        referrer:
+          typeof document !== "undefined" ? document.referrer || null : null,
+        user_agent:
+          typeof navigator !== "undefined" ? navigator.userAgent || null : null,
+        utm_source: (utmMerged as Record<string, unknown>).utm_source
+          ? String((utmMerged as Record<string, unknown>).utm_source)
+          : null,
+        utm_medium: (utmMerged as Record<string, unknown>).utm_medium
+          ? String((utmMerged as Record<string, unknown>).utm_medium)
+          : null,
+        utm_campaign: (utmMerged as Record<string, unknown>).utm_campaign
+          ? String((utmMerged as Record<string, unknown>).utm_campaign)
+          : null,
+        utm_term: (utmMerged as Record<string, unknown>).utm_term
+          ? String((utmMerged as Record<string, unknown>).utm_term)
+          : null,
+        utm_content: (utmMerged as Record<string, unknown>).utm_content
+          ? String((utmMerged as Record<string, unknown>).utm_content)
+          : null,
+        extra: extraForDb as never,
+        zapier_status: "pending" as const,
+      } as never)
+      .select("id")
+      .single();
+    if (dbError) {
+      // eslint-disable-next-line no-console
+      console.error("[Lead capture] DB insert failed", dbError);
+    } else {
+      leadId = insertedLead?.id ?? null;
+      // eslint-disable-next-line no-console
+      console.log("[Lead capture] ✓ saved to database", leadId);
+    }
+  } catch (err) {
+    // eslint-disable-next-line no-console
+    console.error("[Lead capture] DB insert threw", err);
+  }
+
+  // Helper to update the lead's Zapier delivery status
+  const markZapierStatus = async (
+    status: "sent" | "failed",
+    errorMsg?: string
+  ) => {
+    if (!leadId) return;
+    try {
+      await supabase
+        .from("leads")
+        .update({ zapier_status: status, zapier_error: errorMsg ?? null })
+        .eq("id", leadId);
+    } catch {
+      /* swallow — DB record exists, status update is best-effort */
+    }
+  };
+
   try {
     const response = await fetch(webhookUrl, {
       method: "POST",
@@ -140,12 +237,10 @@ export async function submitLeadToZapier(
       body: JSON.stringify(payload),
     });
     if (!response.ok) {
+      const errMsg = `HTTP ${response.status} ${response.statusText}`;
       // eslint-disable-next-line no-console
-      console.error(
-        "[Zapier lead submission] ✗ HTTP",
-        response.status,
-        response.statusText
-      );
+      console.error("[Zapier lead submission] ✗", errMsg);
+      void markZapierStatus("failed", errMsg);
       return {
         ok: false,
         error: `Submission failed (${response.status}).`,
@@ -153,10 +248,13 @@ export async function submitLeadToZapier(
     }
     // eslint-disable-next-line no-console
     console.log("[Zapier lead submission] ✓ delivered");
+    void markZapierStatus("sent");
     return { ok: true };
   } catch (err) {
+    const errMsg = err instanceof Error ? err.message : "Network error";
     // eslint-disable-next-line no-console
     console.error("[Zapier lead submission] ✗ network error", err);
+    void markZapierStatus("failed", errMsg);
     return { ok: false, error: "Network error. Please try again." };
   }
 }

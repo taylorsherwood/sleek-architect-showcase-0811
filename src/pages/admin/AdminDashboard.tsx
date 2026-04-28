@@ -23,11 +23,25 @@ interface LeadRow {
   created_at: string;
 }
 
+interface SiteLeadRow {
+  id: string;
+  name: string;
+  email: string;
+  phone: string | null;
+  message: string | null;
+  source: string;
+  page_url: string | null;
+  zapier_status: "pending" | "sent" | "failed" | "blocked";
+  zapier_error: string | null;
+  created_at: string;
+}
+
 const AdminDashboard = () => {
   const { user, isAdmin, loading, signOut } = useAuth();
   const navigate = useNavigate();
   const [communities, setCommunities] = useState<CommunityRow[]>([]);
   const [leads, setLeads] = useState<LeadRow[]>([]);
+  const [siteLeads, setSiteLeads] = useState<SiteLeadRow[]>([]);
   const [loadingData, setLoadingData] = useState(true);
 
   useEffect(() => {
@@ -39,9 +53,15 @@ const AdminDashboard = () => {
         .select("id, community_name, first_name, last_name, email, phone, interest, created_at")
         .order("created_at", { ascending: false })
         .limit(50),
-    ]).then(([cRes, lRes]) => {
+      supabase
+        .from("leads")
+        .select("id, name, email, phone, message, source, page_url, zapier_status, zapier_error, created_at")
+        .order("created_at", { ascending: false })
+        .limit(100),
+    ]).then(([cRes, lRes, sRes]) => {
       setCommunities((cRes.data as CommunityRow[]) || []);
       setLeads((lRes.data as LeadRow[]) || []);
+      setSiteLeads((sRes.data as SiteLeadRow[]) || []);
       setLoadingData(false);
     });
   }, [isAdmin]);
@@ -161,6 +181,62 @@ const AdminDashboard = () => {
                 </div>
               </section>
             </div>
+          )}
+
+          {/* All Site Leads — every form submission site-wide */}
+          {!loadingData && (
+            <section className="mt-16">
+              <div className="flex items-baseline justify-between mb-6">
+                <h2 className="text-2xl font-display text-architectural">
+                  All Site Leads <span className="text-sm text-muted-foreground">({siteLeads.length})</span>
+                </h2>
+                <p className="text-xs text-muted-foreground">Every form submission, captured before Zapier delivery.</p>
+              </div>
+              <div className="space-y-px bg-border max-h-[700px] overflow-y-auto">
+                {siteLeads.map((l) => {
+                  const statusColor =
+                    l.zapier_status === "sent"
+                      ? "bg-gold text-foreground"
+                      : l.zapier_status === "failed" || l.zapier_status === "blocked"
+                      ? "bg-foreground text-background"
+                      : "border border-border text-muted-foreground";
+                  return (
+                    <div key={l.id} className="bg-background p-4">
+                      <div className="flex items-start justify-between gap-4 mb-1">
+                        <div>
+                          <p className="font-display text-architectural">{l.name}</p>
+                          <p className="text-xs text-gold uppercase tracking-wider mt-0.5">{l.source}</p>
+                        </div>
+                        <div className="flex items-center gap-3 whitespace-nowrap">
+                          <span className={`text-[10px] uppercase tracking-wider px-2 py-1 ${statusColor}`}>
+                            {l.zapier_status}
+                          </span>
+                          <p className="text-xs text-muted-foreground">
+                            {new Date(l.created_at).toLocaleString()}
+                          </p>
+                        </div>
+                      </div>
+                      <p className="text-sm text-muted-foreground mt-1">
+                        {l.email}
+                        {l.phone ? ` • ${l.phone}` : ""}
+                      </p>
+                      {l.message && (
+                        <p className="text-sm text-foreground/80 mt-2 italic">"{l.message}"</p>
+                      )}
+                      {l.zapier_error && (
+                        <p className="text-xs text-foreground mt-2">⚠ {l.zapier_error}</p>
+                      )}
+                      {l.page_url && (
+                        <p className="text-[10px] text-muted-foreground mt-2 truncate">{l.page_url}</p>
+                      )}
+                    </div>
+                  );
+                })}
+                {siteLeads.length === 0 && (
+                  <p className="bg-background p-4 text-muted-foreground">No site-wide leads captured yet.</p>
+                )}
+              </div>
+            </section>
           )}
         </div>
       </div>

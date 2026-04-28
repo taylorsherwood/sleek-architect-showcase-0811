@@ -231,30 +231,23 @@ export async function submitLeadToZapier(
   };
 
   try {
-    const response = await fetch(webhookUrl, {
+    await fetch(webhookUrl, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload),
+      mode: "no-cors",
+      headers: { "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8" },
+      body: new URLSearchParams(payload).toString(),
     });
-    if (!response.ok) {
-      const errMsg = `HTTP ${response.status} ${response.statusText}`;
-      // eslint-disable-next-line no-console
-      console.error("[Zapier lead submission] ✗", errMsg);
-      void markZapierStatus("failed", errMsg);
-      return {
-        ok: false,
-        error: `Submission failed (${response.status}).`,
-      };
-    }
     // eslint-disable-next-line no-console
-    console.log("[Zapier lead submission] ✓ delivered");
+    console.log("[Zapier lead submission] ✓ dispatched");
     void markZapierStatus("sent");
     return { ok: true };
   } catch (err) {
     const errMsg = err instanceof Error ? err.message : "Network error";
     // eslint-disable-next-line no-console
-    console.error("[Zapier lead submission] ✗ network error", err);
+    console.error("[Zapier lead submission] ✗ dispatch error", err);
     void markZapierStatus("failed", errMsg);
-    return { ok: false, error: "Network error. Please try again." };
+    return leadId
+      ? { ok: true }
+      : { ok: false, error: "Network error. Please try again." };
   }
 }

@@ -81,7 +81,7 @@ const Footer = () => {
 
             {/* Communities */}
             <div className="order-3">
-              <h4 style={headingStyle}>Communities</h4>
+              <h4 style={headingStyle}>LUXURY LIVING</h4>
               <div>
                 {[
                   { to: "/communities/barton-creek", label: "Barton Creek" },

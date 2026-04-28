@@ -20,7 +20,7 @@ const Communities = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Austin Luxury Neighborhoods & Communities | Echelon Property Group"
+        title="Austin Luxury Living & Communities | Echelon Property Group"
         description="Homes for sale in Austin's top neighborhoods — Westlake, Barton Creek, Lake Austin, Tarrytown, Rollingwood, and Dripping Springs."
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
@@ -35,7 +35,7 @@ const Communities = () => {
       <section className="pt-24 sm:pt-32 pb-12 sm:pb-16">
         <div className="container mx-auto px-5 sm:px-6">
           <div className="max-w-7xl mx-auto">
-            <p className="text-minimal text-gold mb-3 sm:mb-4 font-extrabold">OUR COMMUNITIES</p>
+            <p className="text-minimal text-gold mb-3 sm:mb-4 font-extrabold">LUXURY LIVING</p>
             <h1 className="text-3xl sm:text-3xl sm:text-5xl md:text-7xl font-display font-normal text-architectural mb-5 sm:mb-8">
               Austin's Finest Neighborhoods
             </h1>
@@ -122,7 +122,7 @@ const Communities = () => {
             </div>
 
             <h2 className="text-3xl sm:text-2xl sm:text-4xl md:text-5xl font-display font-normal text-architectural mb-6 sm:mb-8 mt-12 sm:mt-16">
-              Luxury Living in Austin's Best Neighborhoods
+              LUXURY LIVING
             </h2>
             <div className="space-y-6 text-muted-foreground leading-relaxed">
               <p>

@@ -196,9 +196,9 @@ export async function submitLeadToZapier(
         utm_content: (utmMerged as Record<string, unknown>).utm_content
           ? String((utmMerged as Record<string, unknown>).utm_content)
           : null,
-        extra: extraForDb,
-        zapier_status: "pending",
-      })
+        extra: extraForDb as never,
+        zapier_status: "pending" as const,
+      } as never)
       .select("id")
       .single();
     if (dbError) {

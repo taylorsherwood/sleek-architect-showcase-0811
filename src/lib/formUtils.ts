@@ -85,21 +85,12 @@ export async function submitLeadToZapier(
   const message = (data.message || "").trim();
   const source = (data.source || "").trim();
 
-  // Validation — never trigger the webhook on incomplete data
-  if (!name) return { ok: false, error: "Name is required." };
-  if (!email) return { ok: false, error: "Email is required." };
-  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-    return { ok: false, error: "Please enter a valid email address." };
-  }
-  if (!phone && !message) {
-    return { ok: false, error: "Please provide a phone number or a message." };
-  }
-
   const page =
     typeof window !== "undefined" ? window.location.href : "";
   const time = getTimestamp();
 
-  // Canonical payload — keys must match the Zap field mapping exactly
+  // Canonical payload — keys must match the Zap field mapping exactly.
+  // Built from live submit-time values, never from stale refs.
   const payload: Record<string, string> = {
     name,
     email,
@@ -119,9 +110,28 @@ export async function submitLeadToZapier(
     }
   }
 
-  // Console-log the payload so submissions can be verified live
+  // ── HARD VALIDATION GUARD ──────────────────────────────────────
+  // Block empty/incomplete payloads from ever reaching Zapier.
+  if (
+    !payload.name ||
+    !payload.email ||
+    (!payload.phone && !payload.message)
+  ) {
+    // eslint-disable-next-line no-console
+    console.warn("Blocked empty Zapier payload", payload);
+    if (!payload.name) return { ok: false, error: "Name is required." };
+    if (!payload.email) return { ok: false, error: "Email is required." };
+    return { ok: false, error: "Please provide a phone number or a message." };
+  }
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(payload.email)) {
+    // eslint-disable-next-line no-console
+    console.warn("Blocked empty Zapier payload", payload);
+    return { ok: false, error: "Please enter a valid email address." };
+  }
+
+  // Log only on valid, about-to-fire submissions
   // eslint-disable-next-line no-console
-  console.log("[Zapier lead submission] →", webhookUrl, payload);
+  console.log("[Zapier lead submission] payload:", payload);
 
   try {
     const response = await fetch(webhookUrl, {

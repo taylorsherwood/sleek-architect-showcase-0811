@@ -243,9 +243,5 @@ const AdminDashboard = () => {
     </div>
   );
 };
-      </div>
-    </div>
-  );
-};
 
 export default AdminDashboard;

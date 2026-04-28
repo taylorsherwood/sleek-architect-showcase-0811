@@ -230,8 +230,7 @@ const SearchPage = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </ScrollReveal>
+          </ScrollReveal>
       </section>
 
       {/* Listings widget */}

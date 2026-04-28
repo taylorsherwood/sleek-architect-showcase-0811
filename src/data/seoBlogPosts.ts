@@ -2982,7 +2982,7 @@ The most common error is underestimating how much micro-market fit drives long-t
     author: "Taylor Sherwood",
     date: "2026-04-28",
     readTime: "10 min read",
-    category: "BUYER GUIDES",
+    category: "RELOCATION",
     image: blogBuyingLuxuryOutOfState,
     heroImage: blogBuyingLuxuryOutOfState
   }

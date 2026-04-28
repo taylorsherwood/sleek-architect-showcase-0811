@@ -134,18 +134,17 @@ const SearchPage = () => {
       </section>
 
       {/* ── Off-Market Access CTA ── */}
-      <section className="py-12 md:py-16 bg-background">
-        <div className="container mx-auto px-6">
-          <div className="max-w-5xl mx-auto">
-            <ScrollReveal>
-              <div
-                className="relative overflow-hidden border border-border/60 px-8 py-12 md:px-16 md:py-16"
-                style={{
-                  background:
-                    "linear-gradient(180deg, hsl(233 50% 9%) 0%, hsl(233 50% 14%) 100%)",
-                }}
-              >
-                <div className="text-center max-w-3xl mx-auto">
+      <section
+        className="relative overflow-hidden px-6 py-16 md:py-24"
+        style={{
+          background:
+            "linear-gradient(180deg, hsl(233 50% 9%) 0%, hsl(233 50% 14%) 100%)",
+        }}
+      >
+        <ScrollReveal>
+          <div>
+            <div>
+              <div className="text-center max-w-3xl mx-auto">
                   <div className="flex justify-center mb-6">
                     <div style={{ width: 40, borderTop: "1px solid hsl(var(--gold))" }} />
                   </div>
@@ -230,9 +229,8 @@ const SearchPage = () => {
                   </p>
                 </div>
               </div>
-            </ScrollReveal>
-          </div>
-        </div>
+            </div>
+          </ScrollReveal>
       </section>
 
       {/* Listings widget */}

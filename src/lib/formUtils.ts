@@ -1,8 +1,27 @@
 /**
  * Shared form utilities for lead capture forms.
  * Phone formatting, timestamp generation, and the centralized
- * Zapier webhook submitter used by every lead/contact form site-wide.
+ * lead submitter used by every lead/contact form site-wide.
+ *
+ * Every submission is permanently captured in the `leads` table
+ * BEFORE the Zapier webhook is called, so no lead is ever lost
+ * even if Zapier fails or the webhook URL changes.
  */
+import { supabase } from "@/integrations/supabase/client";
+
+/** Reads UTM parameters from the current URL. */
+function getUtmFromUrl(): Record<string, string> {
+  if (typeof window === "undefined") return {};
+  const params = new URLSearchParams(window.location.search);
+  const out: Record<string, string> = {};
+  ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content"].forEach(
+    (k) => {
+      const v = params.get(k);
+      if (v) out[k] = v;
+    }
+  );
+  return out;
+}
 
 /**
  * Formats a phone string as (xxx) xxx-xxxx as user types.

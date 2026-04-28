@@ -237,12 +237,10 @@ export async function submitLeadToZapier(
       body: JSON.stringify(payload),
     });
     if (!response.ok) {
+      const errMsg = `HTTP ${response.status} ${response.statusText}`;
       // eslint-disable-next-line no-console
-      console.error(
-        "[Zapier lead submission] ✗ HTTP",
-        response.status,
-        response.statusText
-      );
+      console.error("[Zapier lead submission] ✗", errMsg);
+      void markZapierStatus("failed", errMsg);
       return {
         ok: false,
         error: `Submission failed (${response.status}).`,
@@ -250,10 +248,13 @@ export async function submitLeadToZapier(
     }
     // eslint-disable-next-line no-console
     console.log("[Zapier lead submission] ✓ delivered");
+    void markZapierStatus("sent");
     return { ok: true };
   } catch (err) {
+    const errMsg = err instanceof Error ? err.message : "Network error";
     // eslint-disable-next-line no-console
     console.error("[Zapier lead submission] ✗ network error", err);
+    void markZapierStatus("failed", errMsg);
     return { ok: false, error: "Network error. Please try again." };
   }
 }

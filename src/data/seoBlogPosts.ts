@@ -25,6 +25,7 @@ import blogSellingLuxuryHomeAustin from "@/assets/blog-selling-luxury-home-austi
 import blogLuxuryHomeAdvisorAustin from "@/assets/blog-luxury-home-advisor-austin.webp";
 
 import blogBestAustinEnclavesForPrivacy from "@/assets/blog-best-austin-enclaves-for-privacy.avif";
+import blogBuyingLuxuryOutOfState from "@/assets/blog-buying-luxury-out-of-state-hero.jpg";
 
 import { BlogPost } from "./blogPosts";
 
@@ -2886,5 +2887,18 @@ Buyers gain access primarily through advisors who participate in trusted agent n
     category: "MARKET INSIGHTS",
     image: blogWhatIsPrivateListingHero,
     heroImage: blogWhatIsPrivateListingHero
+  },
+  {
+    id: "buying-luxury-home-from-out-of-state",
+    title: "Buying a Luxury Home from Out of State",
+    metaTitle: "Buying a Luxury Home in Austin from Out of State | Echelon Property Group",
+    excerpt: "How sophisticated out-of-state buyers acquire luxury homes in Austin — from off-market access and remote due diligence to neighborhood selection, private tours, and closing without ever compromising on fit.",
+    content: `_Content coming soon._`,
+    author: "Taylor Sherwood",
+    date: "2026-04-28",
+    readTime: "10 min read",
+    category: "BUYER GUIDES",
+    image: blogBuyingLuxuryOutOfState,
+    heroImage: blogBuyingLuxuryOutOfState
   }
 ];

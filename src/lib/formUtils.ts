@@ -251,7 +251,7 @@ export async function submitLeadToZapier(
     // eslint-disable-next-line no-console
     console.error("[Zapier lead submission] ✗ dispatch error", err);
     void markZapierStatus("failed", errMsg);
-    return leadId
+    return leadSaved
       ? { ok: true }
       : { ok: false, error: "Network error. Please try again." };
   }

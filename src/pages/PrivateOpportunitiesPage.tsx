@@ -90,7 +90,7 @@ const PrivateOpportunitiesPage = () => {
                 SELECT OPPORTUNITIES
               </p>
               <h2 className="text-3xl md:text-4xl font-display font-normal text-foreground">
-                Current Private Listings
+                Current Luxury Listings
               </h2>
             </div>
 

@@ -98,6 +98,8 @@ export async function submitLeadToZapier(
   data: LeadSubmission,
   webhookUrl: string = ZAPIER_LEAD_WEBHOOK
 ): Promise<SubmitResult> {
+  // eslint-disable-next-line no-console
+  console.log("Lead submit clicked");
   const name = (data.name || "").trim();
   const email = (data.email || "").trim();
   const phone = (data.phone || "").trim();
@@ -137,122 +139,47 @@ export async function submitLeadToZapier(
     (!payload.phone && !payload.message)
   ) {
     // eslint-disable-next-line no-console
-    console.warn("Blocked empty Zapier payload", payload);
+    console.warn("Submission blocked: missing required fields", payload);
     if (!payload.name) return { ok: false, error: "Name is required." };
     if (!payload.email) return { ok: false, error: "Email is required." };
     return { ok: false, error: "Please provide a phone number or a message." };
   }
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(payload.email)) {
     // eslint-disable-next-line no-console
-    console.warn("Blocked empty Zapier payload", payload);
+    console.warn("Submission blocked: missing required fields", payload);
     return { ok: false, error: "Please enter a valid email address." };
   }
 
   // Log only on valid, about-to-fire submissions
   // eslint-disable-next-line no-console
-  console.log("[Zapier lead submission] payload:", payload);
-
-  // ── PERMANENT CAPTURE: write to `leads` table BEFORE calling Zapier ──
-  // This guarantees we never lose a lead, even if Zapier fails downstream.
-  const utmFromUrl = getUtmFromUrl();
-  const extraForDb: Record<string, unknown> = {};
-  if (data.extra) {
-    for (const [k, v] of Object.entries(data.extra)) {
-      if (v === undefined || v === null) continue;
-      // Strip UTM keys out of `extra` since they have dedicated columns
-      if (k.startsWith("utm_")) continue;
-      extraForDb[k] = v;
-    }
-  }
-  const utmMerged = { ...utmFromUrl, ...(data.extra || {}) };
-
-  // Generate the lead ID client-side so we can both insert it AND
-  // update its zapier_status later WITHOUT needing SELECT permission
-  // (anon role has no SELECT policy on `leads` — admin-only reads).
-  const leadId: string =
-    typeof crypto !== "undefined" && "randomUUID" in crypto
-      ? crypto.randomUUID()
-      : `${Date.now()}-${Math.random().toString(36).slice(2)}`;
-
-  let leadSaved = false;
-  try {
-    const { error: dbError } = await supabase.from("leads").insert({
-      id: leadId,
-      name: payload.name,
-      email: payload.email,
-      phone: payload.phone || null,
-      message: payload.message || null,
-      source: payload.source,
-      page_url: page || null,
-      referrer:
-        typeof document !== "undefined" ? document.referrer || null : null,
-      user_agent:
-        typeof navigator !== "undefined" ? navigator.userAgent || null : null,
-      utm_source: (utmMerged as Record<string, unknown>).utm_source
-        ? String((utmMerged as Record<string, unknown>).utm_source)
-        : null,
-      utm_medium: (utmMerged as Record<string, unknown>).utm_medium
-        ? String((utmMerged as Record<string, unknown>).utm_medium)
-        : null,
-      utm_campaign: (utmMerged as Record<string, unknown>).utm_campaign
-        ? String((utmMerged as Record<string, unknown>).utm_campaign)
-        : null,
-      utm_term: (utmMerged as Record<string, unknown>).utm_term
-        ? String((utmMerged as Record<string, unknown>).utm_term)
-        : null,
-      utm_content: (utmMerged as Record<string, unknown>).utm_content
-        ? String((utmMerged as Record<string, unknown>).utm_content)
-        : null,
-      extra: extraForDb as never,
-      zapier_status: "pending" as const,
-    } as never);
-    if (dbError) {
-      // eslint-disable-next-line no-console
-      console.error("[Lead capture] DB insert failed", dbError);
-    } else {
-      leadSaved = true;
-      // eslint-disable-next-line no-console
-      console.log("[Lead capture] ✓ saved to database", leadId);
-    }
-  } catch (err) {
-    // eslint-disable-next-line no-console
-    console.error("[Lead capture] DB insert threw", err);
-  }
-
-  // Helper to update the lead's Zapier delivery status
-  const markZapierStatus = async (
-    status: "sent" | "failed",
-    errorMsg?: string
-  ) => {
-    if (!leadSaved) return;
-    try {
-      await supabase
-        .from("leads")
-        .update({ zapier_status: status, zapier_error: errorMsg ?? null })
-        .eq("id", leadId);
-    } catch {
-      /* swallow — DB record exists, status update is best-effort */
-    }
-  };
+  console.log("Validation passed");
+  // eslint-disable-next-line no-console
+  console.log("[Zapier lead submission] outgoing payload:", payload);
 
   try {
-    await fetch(webhookUrl, {
-      method: "POST",
-      mode: "no-cors",
-      headers: { "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8" },
-      body: new URLSearchParams(payload).toString(),
+    const { data: response, error } = await supabase.functions.invoke("submit-lead", {
+      body: {
+        payload,
+        webhookUrl,
+        extra: data.extra || {},
+        utm: getUtmFromUrl(),
+        referrer: typeof document !== "undefined" ? document.referrer || "" : "",
+        userAgent: typeof navigator !== "undefined" ? navigator.userAgent || "" : "",
+      },
     });
+
+    if (error) throw error;
+    if (response && typeof response === "object" && "ok" in response && !response.ok) {
+      return { ok: false, error: String(response.error || "Submission failed.") };
+    }
+
     // eslint-disable-next-line no-console
-    console.log("[Zapier lead submission] ✓ dispatched");
-    void markZapierStatus("sent");
+    console.log("Payload sent");
     return { ok: true };
   } catch (err) {
     const errMsg = err instanceof Error ? err.message : "Network error";
     // eslint-disable-next-line no-console
     console.error("[Zapier lead submission] ✗ dispatch error", err);
-    void markZapierStatus("failed", errMsg);
-    return leadSaved
-      ? { ok: true }
-      : { ok: false, error: "Network error. Please try again." };
+    return { ok: false, error: errMsg || "Network error. Please try again." };
   }
 }

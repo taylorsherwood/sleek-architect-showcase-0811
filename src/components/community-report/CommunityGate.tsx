@@ -1,5 +1,4 @@
 import { useState, FormEvent } from "react";
-import { supabase } from "@/integrations/supabase/client";
 import { formatPhoneNumber, getPhoneDigits, submitLeadToZapier } from "@/lib/formUtils";
 import { setUnlocked, getUtmParams } from "@/lib/communityUnlock";
 
@@ -41,29 +40,10 @@ const CommunityGate = ({
     const sourceTag = `Community Report - ${communityName}`;
     const utm = getUtmParams();
 
-    // Store lead in DB (non-blocking for unlock)
-    const dbPromise = supabase.from("community_leads").insert({
-      community_slug: slug,
-      community_name: communityName,
-      first_name: firstName.trim(),
-      last_name: lastName.trim(),
-      email: email.trim(),
-      phone: getPhoneDigits(phone),
-      interest: interest || null,
-      utm_source: utm.utm_source || null,
-      utm_medium: utm.utm_medium || null,
-      utm_campaign: utm.utm_campaign || null,
-      utm_term: utm.utm_term || null,
-      utm_content: utm.utm_content || null,
-      referrer: typeof document !== "undefined" ? document.referrer : null,
-      page_url: typeof window !== "undefined" ? window.location.href : null,
-      user_agent: typeof navigator !== "undefined" ? navigator.userAgent : null,
-      source_tag: sourceTag,
-    });
-
-    // Post to Zapier with normalized canonical fields
+    // Post through the shared validated submitter. It stores the lead in /admin
+    // and sends Zapier from one intentional submit request only.
     const message = `Community report unlock — ${communityName}${interest ? ` | Interest: ${interest}` : ""}`;
-    const zapPromise = submitLeadToZapier({
+    await submitLeadToZapier({
       name: `${firstName.trim()} ${lastName.trim()}`,
       email: email.trim(),
       phone: getPhoneDigits(phone),
@@ -78,8 +58,6 @@ const CommunityGate = ({
         ...utm,
       },
     });
-
-    await Promise.allSettled([dbPromise, zapPromise]);
 
     setUnlocked(slug);
     setSubmitting(false);

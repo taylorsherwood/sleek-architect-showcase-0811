@@ -1,8 +1,7 @@
 import { Lock, TrendingDown, TrendingUp } from "lucide-react";
 import { FormEvent, useEffect, useState } from "react";
-import { supabase } from "@/integrations/supabase/client";
 import { isUnlocked, setUnlocked, getUtmParams } from "@/lib/communityUnlock";
-import { getTimestamp, submitLeadToZapier } from "@/lib/formUtils";
+import { submitLeadToZapier } from "@/lib/formUtils";
 
 interface LockedReportPreviewProps {
   slug: string;
@@ -108,26 +107,7 @@ const LockedReportPreview = ({
     const sourceTag = `Community Report Quick Unlock - ${communityName}`;
     const utm = getUtmParams();
 
-    const dbPromise = supabase.from("community_leads").insert({
-      community_slug: slug,
-      community_name: communityName,
-      first_name: "(quick unlock)",
-      last_name: "(quick unlock)",
-      email: trimmed,
-      phone: "",
-      interest: null,
-      utm_source: utm.utm_source || null,
-      utm_medium: utm.utm_medium || null,
-      utm_campaign: utm.utm_campaign || null,
-      utm_term: utm.utm_term || null,
-      utm_content: utm.utm_content || null,
-      referrer: typeof document !== "undefined" ? document.referrer : null,
-      page_url: typeof window !== "undefined" ? window.location.href : null,
-      user_agent: typeof navigator !== "undefined" ? navigator.userAgent : null,
-      source_tag: sourceTag,
-    });
-
-    const zapPromise = submitLeadToZapier({
+    await submitLeadToZapier({
       name: `${communityName} Quick Unlock`,
       email: trimmed,
       message: `Quick unlock — ${communityName} community report`,
@@ -140,8 +120,6 @@ const LockedReportPreview = ({
         ...utm,
       },
     });
-
-    await Promise.allSettled([dbPromise, zapPromise]);
 
     setUnlocked(slug); // Dispatches echelon:community-unlocked event
     setSubmitting(false);

@@ -1,4 +1,5 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
+import { Quote } from "lucide-react";
 import echelonWatermark from "@/assets/echelon-watermark.webp";
 
 const testimonials = [
@@ -54,162 +55,116 @@ const testimonials = [
 ];
 
 const Testimonials = () => {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [isReleased, setIsReleased] = useState(false);
-  const [isPinned, setIsPinned] = useState(false);
+  const cardsRef = useRef<(HTMLDivElement | null)[]>([]);
 
-  // Pin window: 2 viewport heights (one per scroll-revealed testimonial)
-  // After that, the section "releases" and continues normal page scroll.
-  // While pinned and after both have shown, an auto-rotation through the
-  // remaining testimonials begins.
   useEffect(() => {
-    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (reduced) {
-      setIsReleased(true);
-      return;
-    }
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const el = entry.target as HTMLElement;
+          if (entry.isIntersecting) {
+            el.style.opacity = "1";
+            el.style.transform = "translateY(0)";
+          } else {
+            el.style.opacity = "0";
+            el.style.transform = "translateY(40px)";
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
 
-    let ticking = false;
-    const onScroll = () => {
-      if (ticking) return;
-      ticking = true;
-      requestAnimationFrame(() => {
-        const el = containerRef.current;
-        if (!el) {
-          ticking = false;
-          return;
-        }
-        const rect = el.getBoundingClientRect();
-        const vh = window.innerHeight;
-        // Total scrollable distance for the pin (= 2 viewports)
-        const total = el.offsetHeight - vh;
-        // How far into the pin range we are (0 → 1)
-        const scrolled = Math.min(Math.max(-rect.top, 0), total);
-        const progress = total > 0 ? scrolled / total : 0;
+    cardsRef.current.forEach((el) => {
+      if (el) observer.observe(el);
+    });
 
-        const pinned = rect.top <= 0 && rect.bottom >= vh;
-        setIsPinned(pinned);
-
-        // First half = testimonial 0, second half = testimonial 1
-        if (progress < 0.5) {
-          setActiveIndex(0);
-        } else if (progress < 1) {
-          setActiveIndex(1);
-        }
-
-        // Released once we've scrolled past the full pin range
-        setIsReleased(progress >= 1);
-        ticking = false;
-      });
-    };
-
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    window.addEventListener("resize", onScroll);
-    return () => {
-      window.removeEventListener("scroll", onScroll);
-      window.removeEventListener("resize", onScroll);
-    };
+    return () => observer.disconnect();
   }, []);
 
-  // Auto-rotate once released OR while still pinned at the end of the scroll range
-  useEffect(() => {
-    if (!isReleased && !(isPinned && activeIndex >= 1)) return;
-    const id = window.setInterval(() => {
-      setActiveIndex((i) => (i + 1) % testimonials.length);
-    }, 5500);
-    return () => window.clearInterval(id);
-  }, [isReleased, isPinned, activeIndex]);
-
   return (
-    <section
-      ref={containerRef}
-      className="relative bg-background"
-      style={{ height: "200vh" }}
-      aria-label="Client testimonials"
-    >
-      <div className="sticky top-0 h-screen w-full flex items-center justify-center overflow-hidden">
-        {/* Watermark */}
-        <div
-          className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden"
-          aria-hidden="true"
-        >
-          <img
-            src={echelonWatermark}
-            alt=""
-            className="object-contain opacity-[0.04]"
-            style={{ width: "min(520px, 90vw)", height: "auto", filter: "grayscale(20%)" }}
-            loading="lazy"
-            decoding="async"
-          />
-        </div>
-
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-3xl mx-auto text-center">
-            {/* Header */}
-            <p className="text-minimal text-gold mb-4 font-extrabold">
+    <section className="relative pt-16 md:pt-20 pb-20 md:pb-24 bg-background overflow-hidden">
+      {/* Watermark */}
+      <div
+        className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden"
+        aria-hidden="true"
+      >
+        <img
+          src={echelonWatermark}
+          alt=""
+          className="w-[420px] md:w-[520px] object-contain opacity-[0.04]"
+          style={{ width: "min(520px, 90vw)", height: "auto", filter: "grayscale(20%)" }}
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="max-w-[60rem] mx-auto">
+          {/* Header */}
+          <div className="text-center mb-10">
+            <p className="text-minimal text-gold mb-3 font-extrabold">
               CLIENT EXPERIENCES
             </p>
-            <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-10 md:mb-12">
-              Trusted by Buyers, Sellers, and Investors Across Austin
+            <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-3">
+              Trusted by Buyers, Sellers, and
+              <br className="hidden md:block" />
+              {" "}Investors Across Austin
             </h2>
+            <p className="text-muted-foreground text-sm max-w-xl mx-auto font-light leading-relaxed">
+              Real experiences from clients represented across Austin's most
+              competitive neighborhoods.
+            </p>
+          </div>
 
-            {/* Featured testimonial slot */}
-            <div className="relative min-h-[320px] md:min-h-[300px]">
-              {testimonials.map((t, i) => {
-                const active = i === activeIndex;
-                return (
-                  <figure
-                    key={i}
-                    className="absolute inset-0 flex flex-col items-center justify-center"
-                    style={{
-                      opacity: active ? 1 : 0,
-                      transform: active ? "translateY(0)" : "translateY(16px)",
-                      transition:
-                        "opacity 900ms cubic-bezier(0.16, 1, 0.3, 1), transform 900ms cubic-bezier(0.16, 1, 0.3, 1)",
-                      pointerEvents: active ? "auto" : "none",
-                    }}
-                    aria-hidden={!active}
-                  >
-                    <blockquote className="text-foreground/[0.9] text-lg md:text-2xl leading-[1.7] font-light italic max-w-2xl">
-                      <span>&ldquo;{t.quote}&rdquo;</span>
-                    </blockquote>
-                    <figcaption className="mt-8">
-                      <p className="font-display text-base md:text-lg text-foreground tracking-tight">
-                        {t.name}
-                      </p>
-                      <p className="text-minimal text-gold mt-1">{t.type}</p>
-                      {t.context && (
-                        <p className="text-xs text-muted-foreground/80 mt-1 font-light">
-                          {t.context}
-                        </p>
-                      )}
-                    </figcaption>
-                  </figure>
-                );
-              })}
-            </div>
+          {/* Testimonial Grid */}
+          <div className="grid md:grid-cols-2 gap-5 lg:gap-6">
+            {testimonials.map((t, i) => (
+              <div
+                key={i}
+                ref={(el) => { cardsRef.current[i] = el; }}
+                className={`group relative rounded-lg px-6 pt-5 pb-6 md:px-8 md:pt-7 md:pb-8 flex flex-col justify-between overflow-hidden${i === testimonials.length - 1 ? " md:col-span-2 md:max-w-[calc(50%-0.75rem)] md:mx-auto" : ""}`}
+                style={{
+                  opacity: 0,
+                  transform: "translateY(40px)",
+                  transition: `opacity 500ms ease ${i * 120}ms, transform 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94) ${i * 120}ms, box-shadow 500ms ease`,
+                  background: "#FFFFFF",
+                  border: "1px solid rgba(0,0,0,0.06)",
+                  boxShadow: "0 10px 30px rgba(0,0,0,0.05)",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = "translateY(-2px)";
+                  e.currentTarget.style.boxShadow =
+                    "0 12px 36px rgba(0,0,0,0.07)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = "translateY(0)";
+                  e.currentTarget.style.boxShadow =
+                    "0 10px 30px rgba(0,0,0,0.05)";
+                }}
+              >
+                {/* Quote text with quotation marks */}
+                <p className="text-foreground/[0.88] text-[0.9rem] md:text-[0.95rem] leading-[1.8] font-light italic flex-1 relative z-10 flex items-center pt-10 pb-6 md:pt-14 md:pb-8">
+                  <span>&ldquo;{t.quote}&rdquo;</span>
+                </p>
 
-            {/* Progress dots */}
-            <div className="flex items-center justify-center gap-2 mt-10">
-              {testimonials.map((_, i) => (
-                <span
-                  key={i}
-                  className="block rounded-full transition-all duration-500"
-                  style={{
-                    width: i === activeIndex ? 22 : 6,
-                    height: 2,
-                    background:
-                      i === activeIndex ? "#b9a06c" : "rgba(0,0,0,0.18)",
-                  }}
-                  aria-hidden="true"
-                />
-              ))}
-            </div>
+                {/* Attribution */}
+                <div>
+                  <p className="font-display text-[0.925rem] text-foreground tracking-tight">
+                    {t.name}
+                  </p>
+                  <p className="text-minimal text-gold mt-1">{t.type}</p>
+                  {t.context && (
+                    <p className="text-xs text-muted-foreground/80 mt-0.5 font-light">
+                      {t.context}
+                    </p>
+                  )}
+                </div>
+
+              </div>
+            ))}
           </div>
         </div>
       </div>
+
     </section>
   );
 };

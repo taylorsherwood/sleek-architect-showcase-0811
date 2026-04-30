@@ -705,15 +705,18 @@ const TestimonialsSection = () => {
     return () => clearInterval(timer);
   }, [userPaused]);
 
-  // Desktop / iPad — auto-rotate testimonials AFTER the split has opened
+  // Desktop / iPad — auto-rotate AFTER the scroll-driven walk has reached
+  // testimonial #2 (active >= 1). This lets scroll govern the first two,
+  // then auto-rotation continues for users who linger or have scrolled past.
   useEffect(() => {
     if (typeof window === "undefined") return;
     if (!window.matchMedia("(min-width: 768px)").matches) return;
     if (!revealed) return;
+    if (active < 1) return;
     if (userPaused) return;
     const timer = setInterval(() => setActive((p) => (p + 1) % testimonials.length), 4000);
     return () => clearInterval(timer);
-  }, [revealed, userPaused]);
+  }, [revealed, userPaused, active]);
 
   // Desktop / iPad — GSAP horizontal split-reveal (image opens left/right)
   useEffect(() => {
@@ -734,11 +737,15 @@ const TestimonialsSection = () => {
       gsap.set(".tsplit-attribution", { opacity: 0, y: 12, filter: "blur(6px)" });
       gsap.set(".tsplit-overlay", { opacity: 1, y: 0, filter: "blur(0px)" });
 
+      // Pin runs longer now: first ~50% of progress drives the split-reveal,
+      // remaining ~50% drives a scroll-controlled walk through the first
+      // two testimonials before the page is released. Auto-rotation takes
+      // over for any user who lingers in the pinned end-state.
       gsap.timeline({
         scrollTrigger: {
           trigger: root,
           start: "top top",
-          end: "+=160%",
+          end: "+=320%",
           pin: true,
           pinSpacing: true,
           scrub: 2,
@@ -746,9 +753,18 @@ const TestimonialsSection = () => {
           invalidateOnRefresh: true,
           onUpdate: (self) => {
             // One-way reveal: once opened, stay open (prevents stuck blur on slow scroll-back)
-            if (self.progress >= 0.66 && !hasOpenedRef.current) {
+            if (self.progress >= 0.33 && !hasOpenedRef.current) {
               hasOpenedRef.current = true;
               setRevealed(true);
+            }
+            // Scroll-driven walk through first two testimonials.
+            // 0.00 – 0.50 = split-reveal phase (testimonial index 0 visible)
+            // 0.50 – 0.78 = testimonial 0 holds
+            // 0.78 – 1.00 = testimonial 1 takes over, then release
+            if (self.progress >= 0.78) {
+              setActive((prev) => (prev === 0 ? 1 : prev));
+            } else if (self.progress >= 0.33) {
+              setActive((prev) => (prev > 1 ? prev : 0));
             }
           },
         },
@@ -758,7 +774,9 @@ const TestimonialsSection = () => {
         .to(".tsplit-right", { xPercent: 100, ease: "expo.inOut", duration: 0.6 }, 0.35)
         .to(".tsplit-line", { opacity: 1, y: 0, filter: "blur(0px)", ease: "power3.out", stagger: 0.15, duration: 0.6 }, 0.65)
         .to(".tsplit-attribution", { opacity: 1, y: 0, filter: "blur(0px)", ease: "power2.out", duration: 0.5 }, 1.05)
-        .to({}, { duration: 0.15 });
+        // Long tail keeps the section pinned long enough for testimonial 0
+        // to read, then for testimonial 1 to take over before release.
+        .to({}, { duration: 1.6 });
     }, root);
 
     return () => {

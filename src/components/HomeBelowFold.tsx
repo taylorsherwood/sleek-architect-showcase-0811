@@ -705,15 +705,18 @@ const TestimonialsSection = () => {
     return () => clearInterval(timer);
   }, [userPaused]);
 
-  // Desktop / iPad — auto-rotate testimonials AFTER the split has opened
+  // Desktop / iPad — auto-rotate AFTER the scroll-driven walk has reached
+  // testimonial #2 (active >= 1). This lets scroll govern the first two,
+  // then auto-rotation continues for users who linger or have scrolled past.
   useEffect(() => {
     if (typeof window === "undefined") return;
     if (!window.matchMedia("(min-width: 768px)").matches) return;
     if (!revealed) return;
+    if (active < 1) return;
     if (userPaused) return;
     const timer = setInterval(() => setActive((p) => (p + 1) % testimonials.length), 4000);
     return () => clearInterval(timer);
-  }, [revealed, userPaused]);
+  }, [revealed, userPaused, active]);
 
   // Desktop / iPad — GSAP horizontal split-reveal (image opens left/right)
   useEffect(() => {

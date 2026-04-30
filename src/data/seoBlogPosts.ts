@@ -26,10 +26,62 @@ import blogLuxuryHomeAdvisorAustin from "@/assets/blog-luxury-home-advisor-austi
 
 import blogBestAustinEnclavesForPrivacy from "@/assets/blog-best-austin-enclaves-for-privacy.avif";
 import blogBuyingLuxuryOutOfState from "@/assets/blog-buying-luxury-out-of-state-hero.jpg";
+import blogOffMarketHomesAustinHero from "@/assets/blog-off-market-homes-austin-hero.jpg";
 
 import { BlogPost } from "./blogPosts";
 
 export const seoBlogPosts: BlogPost[] = [
+  {
+    id: "off-market-homes-austin",
+    title: "Austin Off Market Homes: What Buyers Miss",
+    metaTitle: "Off Market Homes Austin | What Buyers Miss | Echelon Property Group",
+    excerpt: "TODO: Replace with final excerpt — a 1–2 sentence summary of what buyers miss when they only shop public Austin inventory and what off-market access actually looks like in the upper tier.",
+    content: `TODO: Paste final verbiage here. Use Markdown with a single H1 implied by the title, then ## for primary sections and ### for sub-sections. Inline links should follow the [anchor](/path) pattern below — the auto-linker will catch the rest.
+
+High-intent internal anchors to weave in naturally:
+- [off-market homes in Austin](/off-market-real-estate-austin)
+- [sell privately](/sell-private)
+- [buy with Echelon](/buy)
+- [Austin luxury homes for sale](/austin-luxury-homes-for-sale)
+- [Austin real estate investment](/austin-real-estate-investment)
+- [past transactions](/past-transactions)
+- [about Echelon Property Group](/about-austin-real-estate-advisory)
+- [private consultation](/contact)
+
+Neighborhood/community anchors (use where contextually relevant):
+- [West Lake Hills](/communities/westlake-hills)
+- [Tarrytown](/communities/tarrytown)
+- [Pemberton Heights](/communities/pemberton-heights)
+- [Barton Creek](/communities/barton-creek)
+- [Spanish Oaks](/communities/spanish-oaks)
+- [Rob Roy](/communities/rob-roy)
+- [Lake Austin](/communities/lake-austin)
+
+Sibling editorial anchors (link 2–3, not all):
+- [7 Best Austin Enclaves for Privacy](/blog/best-austin-enclaves-for-privacy)
+- [What Is a Private Listing](/blog/what-is-a-private-listing)
+- [Why Buyers Never See the Best Homes](/blog/buyers-never-see-best-homes)
+- [Best Austin Luxury Neighborhoods](/blog/best-austin-luxury-neighborhoods)
+- [Luxury Home Advisor Austin](/blog/luxury-home-advisor-austin)
+
+:::faq
+Q: TODO question 1?
+A: TODO answer.
+
+Q: TODO question 2?
+A: TODO answer.
+
+Q: TODO question 3?
+A: TODO answer.
+:::
+    `,
+    author: "Taylor Sherwood",
+    date: "2026-04-30",
+    readTime: "8 min read",
+    category: "OFF-MARKET",
+    image: blogOffMarketHomesAustinHero,
+    heroImage: blogOffMarketHomesAustinHero,
+  },
   {
     id: "best-austin-enclaves-for-privacy",
     title: "7 Best Austin Enclaves for Privacy",

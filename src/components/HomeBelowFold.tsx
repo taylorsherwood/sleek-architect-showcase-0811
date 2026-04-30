@@ -317,7 +317,7 @@ const properties = [
     price: "$3,495,000",
     beds: 4, baths: 4, sqft: "4,147",
     link: "https://www.bartoncreekvilla.com",
-    badge: "Private Listing",
+    badge: "LUXURY LISTING",
   },
   {
     image: "/static-assets/listing-3.webp",
@@ -335,7 +335,7 @@ const properties = [
     price: "$3,950,000",
     beds: 5, baths: 5, sqft: "—",
     link: "/off-market-real-estate-austin",
-    badge: "Private Listing",
+    badge: "LUXURY LISTING",
   },
 ];
 

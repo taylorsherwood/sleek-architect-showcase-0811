@@ -27,11 +27,11 @@ const neighborhoodInsights: Record<string, { title: string; description: string;
     { title: "Best Luxury Neighborhoods in Austin", description: "Where Tarrytown ranks among Austin's most desirable addresses.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
   ],
   "westlake-hills": [
-    { title: "Rollingwood vs Westlake Hills", description: "A side-by-side comparison of two premier west Austin neighborhoods.", href: "/blog/rollingwood-vs-westlake-hills" },
-    { title: "Best Luxury Neighborhoods in Austin", description: "Explore how Westlake Hills anchors Austin's luxury landscape.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
+    { title: "Rollingwood vs West lake Hills", description: "A side-by-side comparison of two premier west Austin neighborhoods.", href: "/blog/rollingwood-vs-westlake-hills" },
+    { title: "Best Luxury Neighborhoods in Austin", description: "Explore how West lake Hills anchors Austin's luxury landscape.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
   ],
   "rollingwood": [
-    { title: "Rollingwood vs Westlake Hills", description: "Compare proximity, lot sizes, and daily lifestyle between these two top communities.", href: "/blog/rollingwood-vs-westlake-hills" },
+    { title: "Rollingwood vs West lake Hills", description: "Compare proximity, lot sizes, and daily lifestyle between these two top communities.", href: "/blog/rollingwood-vs-westlake-hills" },
     { title: "Top Investment Neighborhoods in Austin", description: "Why Rollingwood's limited inventory drives exceptional long-term appreciation.", href: "/blog/top-investment-neighborhoods-austin" },
   ],
   "lake-austin": [
@@ -133,7 +133,7 @@ const neighborhoodInsights: Record<string, { title: string; description: string;
   ],
   "davenport-ranch": [
     { title: "Best Luxury Neighborhoods in Austin", description: "Where Davenport Ranch ranks among Austin's gated luxury communities.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
-    { title: "Rollingwood vs Westlake Hills", description: "How Davenport Ranch compares to neighboring West Austin enclaves.", href: "/blog/rollingwood-vs-westlake-hills" },
+    { title: "Rollingwood vs West lake Hills", description: "How Davenport Ranch compares to neighboring West Austin enclaves.", href: "/blog/rollingwood-vs-westlake-hills" },
   ],
 };
 

@@ -146,7 +146,7 @@ const SEOCommunityPage = () => {
               </Suspense>
             </section>
 
-            {/* Community Guide CTA — Westlake Hills */}
+            {/* Community Guide CTA — West lake Hills */}
             {community.slug === "westlake-hills-homes-for-sale" && (
               <CommunityGuideCTA
                 communityName={community.name}

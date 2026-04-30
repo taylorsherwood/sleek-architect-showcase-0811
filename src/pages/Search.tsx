@@ -13,7 +13,7 @@ import killeenPortfolio from "@/assets/commercial-killeen-portfolio.jpg";
 import s11thStreet from "@/assets/commercial-s-11th-street.webp";
 
 const LOCATION_LABELS: Record<string, string> = {
-  "westlake-hills": "Westlake Hills",
+  "westlake-hills": "West lake Hills",
   "barton-creek": "Barton Creek",
   "lake-austin": "Lake Austin",
   "tarrytown": "Tarrytown",
@@ -34,7 +34,7 @@ const searchFaqs = [
   { question: "How do I search for homes in Austin Texas?", answer: "Use our integrated listing search above to browse all available homes in Austin. Filter by price, neighborhood, property type, and features. For off-market opportunities not shown on the MLS, contact Echelon Property Group directly." },
   { question: "What types of properties can I find in Austin?", answer: "Austin offers luxury single-family homes, waterfront estates, downtown condos, Hill Country ranches, new construction, investment properties, and development land. Our search includes properties across all Austin neighborhoods and price points." },
   { question: "Are there off-market homes available in Austin?", answer: "Yes. Many of Austin's finest properties trade privately through agent networks before appearing on public listing sites. Echelon Property Group provides qualified buyers with access to exclusive off-market inventory." },
-  { question: "What neighborhoods should I search in Austin?", answer: "Austin's premier neighborhoods include Westlake Hills, Barton Creek, Lake Austin, Tarrytown, Rollingwood, Spanish Oaks, and Dripping Springs. Each offers a unique lifestyle, price range, and investment profile." },
+  { question: "What neighborhoods should I search in Austin?", answer: "Austin's premier neighborhoods include West lake Hills, Barton Creek, Lake Austin, Tarrytown, Rollingwood, Spanish Oaks, and Dripping Springs. Each offers a unique lifestyle, price range, and investment profile." },
 ];
 
 const Footer = lazy(() => import("@/components/Footer"));

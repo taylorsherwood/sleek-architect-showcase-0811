@@ -13,31 +13,31 @@ export interface SEOCommunityPage {
 export const seoCommunityPages: SEOCommunityPage[] = [
   {
     slug: "westlake-hills-homes-for-sale",
-    name: "Westlake Hills",
-    metaTitle: "Westlake Hills Homes for Sale | Echelon Property Group",
-    metaDescription: "Browse luxury homes for sale in Westlake Hills Austin TX. Hillside estates, Eanes ISD schools, and Hill Country views from $1.2M to $20M+.",
+    name: "West lake Hills",
+    metaTitle: "West lake Hills Homes for Sale | Echelon Property Group",
+    metaDescription: "Browse luxury homes for sale in West lake Hills Austin TX. Hillside estates, Eanes ISD schools, and Hill Country views from $1.2M to $20M+.",
     priceRange: "$1.2M – $20M+",
-    overview: `Westlake Hills is one of the most prestigious residential enclaves in Austin, Texas. Located just west of downtown along the scenic bluffs overlooking Lake Austin and the Hill Country, it offers a rare combination of privacy, natural beauty, and proximity to urban amenities.
+    overview: `West lake Hills is one of the most prestigious residential enclaves in Austin, Texas. Located just west of downtown along the scenic bluffs overlooking Lake Austin and the Hill Country, it offers a rare combination of privacy, natural beauty, and proximity to urban amenities.
 
 The community is anchored by the highly acclaimed Eanes Independent School District, consistently ranked among Texas's top districts. Homes range from elegant mid-century estates to contemporary masterpieces featuring walls of glass, infinity pools, and seamless indoor-outdoor living. Lot sizes are generous, and strict zoning preserves the low-density character that residents value.
 
-Westlake Hills is an incorporated city with its own municipal services, contributing to a small-town atmosphere despite being minutes from downtown Austin's world-class dining, entertainment, and tech economy.`,
-    market: `Westlake Hills is one of Austin's strongest and most consistent luxury markets. Median home prices exceed $1.5 million, with premium estates regularly trading above $5 million. New construction often exceeds $500 per square foot.
+West lake Hills is an incorporated city with its own municipal services, contributing to a small-town atmosphere despite being minutes from downtown Austin's world-class dining, entertainment, and tech economy.`,
+    market: `West lake Hills is one of Austin's strongest and most consistent luxury markets. Median home prices exceed $1.5 million, with premium estates regularly trading above $5 million. New construction often exceeds $500 per square foot.
 
 Inventory remains chronically low relative to demand. Homes that are priced well and presented professionally often sell within weeks, particularly in the $1.5M to $4M range. Off-market activity is significant, with many of the best properties trading privately through agent networks.
 
-Over the past decade, Westlake Hills has outpaced most Austin neighborhoods in appreciation. The combination of Eanes ISD, Hill Country views, and limited developable land creates a structural supply constraint that supports long-term value.`,
-    whyBuyersLove: `Buyers are drawn to Westlake Hills for its schools, privacy, and natural setting. The Eanes ISD is a primary driver for families relocating to Austin, particularly those coming from top-tier school districts in other states.
+Over the past decade, West lake Hills has outpaced most Austin neighborhoods in appreciation. The combination of Eanes ISD, Hill Country views, and limited developable land creates a structural supply constraint that supports long-term value.`,
+    whyBuyersLove: `Buyers are drawn to West lake Hills for its schools, privacy, and natural setting. The Eanes ISD is a primary driver for families relocating to Austin, particularly those coming from top-tier school districts in other states.
 
 The outdoor lifestyle is unmatched. Residents enjoy hiking at the Barton Creek Greenbelt and Wild Basin Wilderness Preserve, boating on Lake Austin, and dining along Bee Caves Road and the Hill Country Galleria.
 
-The community maintains a strong sense of identity with local events, farmers markets, and neighborhood gatherings. It offers country club living at the Westlake Hills Country Club while remaining just minutes from downtown Austin.`,
+The community maintains a strong sense of identity with local events, farmers markets, and neighborhood gatherings. It offers country club living at the West lake Hills Country Club while remaining just minutes from downtown Austin.`,
     faqs: [
-      { question: "What is it like living in Westlake Hills Austin?", answer: "Westlake Hills offers a retreat-like lifestyle with rolling terrain, mature oaks, Hill Country views, and excellent Eanes ISD schools — all just minutes from downtown Austin." },
-      { question: "What are home prices in Westlake Hills?", answer: "Home prices range from $1.2 million to over $20 million. The median exceeds $1.5M, with luxury estates regularly trading above $5M." },
-      { question: "Are there luxury homes in Westlake Hills?", answer: "Yes. Westlake Hills features some of Austin's finest luxury properties, including custom estates, contemporary homes, and hilltop compounds with panoramic views." },
-      { question: "What schools serve Westlake Hills?", answer: "Westlake Hills is served by the Eanes Independent School District, including Bridge Point Elementary, Hill Country Middle School, and Westlake High School." },
-      { question: "Is Westlake Hills a good investment area?", answer: "Yes. Limited land, top schools, and sustained demand have driven strong long-term appreciation, consistently outpacing most Austin-area neighborhoods." },
+      { question: "What is it like living in West lake Hills Austin?", answer: "West lake Hills offers a retreat-like lifestyle with rolling terrain, mature oaks, Hill Country views, and excellent Eanes ISD schools — all just minutes from downtown Austin." },
+      { question: "What are home prices in West lake Hills?", answer: "Home prices range from $1.2 million to over $20 million. The median exceeds $1.5M, with luxury estates regularly trading above $5M." },
+      { question: "Are there luxury homes in West lake Hills?", answer: "Yes. West lake Hills features some of Austin's finest luxury properties, including custom estates, contemporary homes, and hilltop compounds with panoramic views." },
+      { question: "What schools serve West lake Hills?", answer: "West lake Hills is served by the Eanes Independent School District, including Bridge Point Elementary, Hill Country Middle School, and Westlake High School." },
+      { question: "Is West lake Hills a good investment area?", answer: "Yes. Limited land, top schools, and sustained demand have driven strong long-term appreciation, consistently outpacing most Austin-area neighborhoods." },
     ],
   },
   {
@@ -75,7 +75,7 @@ The Casis Elementary school zone, proximity to St. Andrew's Episcopal School, an
     metaTitle: "Rollingwood Homes for Sale | Echelon Property Group",
     metaDescription: "Discover homes for sale in Rollingwood Austin TX. Charming enclave near Zilker Park with Eanes ISD schools and homes from $1M to $5M+.",
     priceRange: "$1M – $5M+",
-    overview: `Rollingwood is a small incorporated city of less than one square mile nestled between Zilker Park, Barton Creek, and the Westlake Hills corridor. Despite its compact size, Rollingwood is one of Austin's most desirable residential neighborhoods, offering a walkable, close-knit community with easy access to everything Austin has to offer.
+    overview: `Rollingwood is a small incorporated city of less than one square mile nestled between Zilker Park, Barton Creek, and the West lake Hills corridor. Despite its compact size, Rollingwood is one of Austin's most desirable residential neighborhoods, offering a walkable, close-knit community with easy access to everything Austin has to offer.
 
 Homes in Rollingwood range from updated mid-century ranch houses to fully custom new construction. The neighborhood's proximity to Zilker Park, Barton Springs Pool, the Barton Creek Greenbelt, and downtown Austin makes it extraordinarily well-positioned for buyers who want both lifestyle and convenience.
 
@@ -166,7 +166,7 @@ Families value the Eanes ISD school zone, while empty-nesters and retirees appre
 
 Waterfront homes on Lake Austin represent some of the most coveted real estate in Texas. Properties range from updated mid-century lakefront retreats to sprawling contemporary compounds featuring private docks, infinity pools, outdoor kitchens, and direct deep-water access.
 
-The lake is bordered by Westlake Hills, Tarrytown, and the scenic bluffs of west Austin, placing waterfront residents minutes from downtown, world-class dining, and Austin's tech economy.`,
+The lake is bordered by West lake Hills, Tarrytown, and the scenic bluffs of west Austin, placing waterfront residents minutes from downtown, world-class dining, and Austin's tech economy.`,
     market: `Lake Austin waterfront is Austin's most exclusive and highest-priced residential market. Prices range from $2M for properties with limited frontage to over $25M for trophy estates with significant deep-water shoreline, private docks, and panoramic views.
 
 Price per front foot of shoreline ranges from $10,000 to $30,000+, with premium properties featuring deep water, sunset views, and gentle slopes commanding the highest prices. Inventory is extremely limited — there are only a finite number of waterfront lots on the lake.
@@ -432,7 +432,7 @@ The neighborhood is bordered by the Balcones Country Club, providing golf and re
 
 The neighborhood has experienced increasing redevelopment activity, with several tear-down and rebuild projects introducing modern construction to the established streetscape. Lot sizes and locations make Balcones Park attractive to builders and custom-home buyers.
 
-Demand is driven by the neighborhood's convenient location, access to quality schools, and proximity to the Balcones Country Club. The relatively affordable entry point compared to Westlake Hills and Tarrytown attracts families seeking northwest Austin's lifestyle.`,
+Demand is driven by the neighborhood's convenient location, access to quality schools, and proximity to the Balcones Country Club. The relatively affordable entry point compared to West lake Hills and Tarrytown attracts families seeking northwest Austin's lifestyle.`,
     whyBuyersLove: `Buyers love Balcones Park for its quiet residential character, large lots, and strategic northwest Austin location. The neighborhood feels established and peaceful while being minutes from major employment centers and downtown.
 
 Access to the Balcones Country Club provides golf, dining, and social amenities for members. The neighborhood's proximity to quality dining, shopping at the Arboretum and Domain, and outdoor recreation along Shoal Creek add to its appeal.
@@ -452,11 +452,11 @@ Balcones Park attracts buyers who value space, mature trees, and a sense of neig
     metaTitle: "Rob Roy Homes for Sale Austin TX | Echelon Property Group",
     metaDescription: "Explore luxury homes for sale in Rob Roy Austin TX. Gated Hill Country estates with panoramic views and homes from $1.5M to $20M+.",
     priceRange: "$1.5M – $20M+",
-    overview: `Rob Roy is one of Austin's most exclusive luxury neighborhoods, located in the Westlake Hills area along the scenic bluffs of the Capital of Texas Highway (Loop 360) corridor. The community features several gated enclaves including Rob Roy, Rob Roy on the Creek, and Rob Roy on the Lake, each offering distinctive luxury living experiences.
+    overview: `Rob Roy is one of Austin's most exclusive luxury neighborhoods, located in the West lake Hills area along the scenic bluffs of the Capital of Texas Highway (Loop 360) corridor. The community features several gated enclaves including Rob Roy, Rob Roy on the Creek, and Rob Roy on the Lake, each offering distinctive luxury living experiences.
 
 Homes in Rob Roy range from elegant traditional estates to contemporary architectural masterpieces, many situated on generous lots with panoramic Hill Country views, mature oak groves, and extensive outdoor living areas. The community's rolling terrain creates dramatic lot positions that maximize views and privacy.
 
-Rob Roy is served by the Eanes Independent School District and offers proximity to both downtown Austin and the Westlake Hills corridor. The community's gated security, large lot sizes, and architectural quality have made it a preferred address for Austin's most discerning buyers for decades.`,
+Rob Roy is served by the Eanes Independent School District and offers proximity to both downtown Austin and the West lake Hills corridor. The community's gated security, large lot sizes, and architectural quality have made it a preferred address for Austin's most discerning buyers for decades.`,
     market: `Rob Roy represents one of Austin's premier luxury markets. Prices range from approximately $1.5M for smaller homes in the community to over $20M for trophy estates with significant acreage, views, and waterfront access in the creek and lake sections.
 
 The different sections of Rob Roy cater to different buyer profiles. Rob Roy proper features hilltop estates with Hill Country views. Rob Roy on the Creek offers properties along Barton Creek. Rob Roy on the Lake provides Lake Austin waterfront access.

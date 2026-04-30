@@ -11,7 +11,7 @@ const featured = [
   { name: "Rollingwood", slug: "rollingwood", price: "From $1M+" },
   { name: "Spanish Oaks", slug: "spanish-oaks", price: "From $3M+" },
   { name: "Tarrytown", slug: "tarrytown", price: "From $800K+" },
-  { name: "Westlake Hills", slug: "westlake-hills", price: "From $1.2M+" },
+  { name: "West lake Hills", slug: "westlake-hills", price: "From $1.2M+" },
 ];
 
 const FeaturedCommunities = () => (

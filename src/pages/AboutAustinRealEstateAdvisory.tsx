@@ -110,7 +110,7 @@ const AboutAustinRealEstateAdvisory = () => {
           <ul className="grid grid-cols-2 sm:grid-cols-3 gap-x-8 gap-y-3 text-foreground/85 text-[0.98rem]">
             <li>Austin</li>
             <li>Barton Creek</li>
-            <li>Westlake Hills</li>
+            <li>West lake Hills</li>
             <li>Rollingwood</li>
             <li>Tarrytown</li>
             <li>Downtown Austin</li>
@@ -140,7 +140,7 @@ const AboutAustinRealEstateAdvisory = () => {
             </p>
             <p>
               Buyers exploring specific submarkets can begin with our{" "}
-              <Link to="/communities/westlake-hills" className="text-foreground underline underline-offset-4 hover:text-muted-foreground">Westlake Hills</Link>,{" "}
+              <Link to="/communities/westlake-hills" className="text-foreground underline underline-offset-4 hover:text-muted-foreground">West lake Hills</Link>,{" "}
               <Link to="/communities/barton-creek" className="text-foreground underline underline-offset-4 hover:text-muted-foreground">Barton Creek</Link>,{" "}
               <Link to="/communities/tarrytown" className="text-foreground underline underline-offset-4 hover:text-muted-foreground">Tarrytown</Link>, and{" "}
               <Link to="/communities/lake-austin" className="text-foreground underline underline-offset-4 hover:text-muted-foreground">Lake Austin</Link> neighborhood guides, or browse the full{" "}

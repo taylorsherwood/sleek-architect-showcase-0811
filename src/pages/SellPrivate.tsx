@@ -371,7 +371,7 @@ const SellPrivate = () => {
             style={{ color: "rgba(12,15,36,0.62)" }}
           >
             We work with buyers actively searching in <span style={{ color: NAVY }}>Barton Creek</span>,{" "}
-            <span style={{ color: NAVY }}>Westlake Hills</span>,{" "}
+            <span style={{ color: NAVY }}>West lake Hills</span>,{" "}
             <span style={{ color: NAVY }}>Rollingwood</span>, and central Austin.
           </p>
         </div>

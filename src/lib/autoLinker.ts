@@ -21,7 +21,7 @@ interface LinkTarget {
 
 // Community pages — canonical names and common variants
 const COMMUNITY_TARGETS: LinkTarget[] = [
-  { patterns: ["Westlake Hills"], href: "/communities/westlake-hills" },
+  { patterns: ["West lake Hills"], href: "/communities/westlake-hills" },
   { patterns: ["Barton Creek"], href: "/communities/barton-creek" },
   { patterns: ["Tarrytown"], href: "/communities/tarrytown" },
   { patterns: ["Rollingwood"], href: "/communities/rollingwood" },

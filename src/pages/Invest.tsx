@@ -502,14 +502,14 @@ const Invest = () => {
               </div>
             </ScrollReveal>
 
-            {/* Slider 3 — Bathroom Upgrade Westlake Hills */}
+            {/* Slider 3 — Bathroom Upgrade West lake Hills */}
             <ScrollReveal>
               <BeforeAfterSlider
                 beforeImage={bath05Before}
                 afterImage={bath05After}
               />
               <div className="mt-5">
-                <h3 className="text-base font-display font-normal text-foreground tracking-wide">Bathroom Upgrade — Westlake Hills</h3>
+                <h3 className="text-base font-display font-normal text-foreground tracking-wide">Bathroom Upgrade — West lake Hills</h3>
                 <div className="w-8 h-px bg-gold mt-2 mb-2" />
                 <p className="text-[0.82rem] text-muted-foreground/75 leading-relaxed">Elevated through material selection, improved lighting, and clean-lined finishes to match the home's luxury positioning.</p>
               </div>

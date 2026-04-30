@@ -273,7 +273,7 @@ const AustinCommercialRealEstate = () => {
                 <div className="border-l-2 border-gold pl-6">
                   <h3 className="text-lg font-medium text-foreground mb-2">Suburban Growth Acceleration</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Austin's suburban ring — from <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">Westlake Hills</Link> and <Link to="/communities/barton-creek" className="text-foreground underline hover:text-muted-foreground">Barton Creek</Link> to Cedar Park, Leander, and Georgetown — is experiencing rapid commercial development driven by residential rooftops and population density. Retail, medical, and professional office demand in these areas is creating new investment opportunities.
+                    Austin's suburban ring — from <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">West lake Hills</Link> and <Link to="/communities/barton-creek" className="text-foreground underline hover:text-muted-foreground">Barton Creek</Link> to Cedar Park, Leander, and Georgetown — is experiencing rapid commercial development driven by residential rooftops and population density. Retail, medical, and professional office demand in these areas is creating new investment opportunities.
                   </p>
                 </div>
                 <div className="border-l-2 border-gold pl-6">
@@ -310,7 +310,7 @@ const AustinCommercialRealEstate = () => {
                 <div className="border-l-2 border-gold pl-6">
                   <h3 className="text-lg font-medium text-foreground mb-2">Cross-Sector Expertise</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Many of our clients invest across both residential and commercial asset classes. Our integrated practice allows us to advise holistically — whether you're acquiring a luxury home in <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">Westlake Hills</Link>, purchasing an office building downtown, or assembling land for a mixed-use development.
+                    Many of our clients invest across both residential and commercial asset classes. Our integrated practice allows us to advise holistically — whether you're acquiring a luxury home in <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">West lake Hills</Link>, purchasing an office building downtown, or assembling land for a mixed-use development.
                   </p>
                 </div>
                 <div className="border-l-2 border-gold pl-6">

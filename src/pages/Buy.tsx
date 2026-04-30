@@ -107,7 +107,7 @@ const featuredListings = [
 {
   image: listing2,
   address: "1203 Westlake Ridge",
-  location: "Westlake Hills, Austin",
+  location: "West lake Hills, Austin",
   price: "$7M+ Luxury Home",
   beds: 6,
   baths: 7,
@@ -137,7 +137,7 @@ const neighborhoods = [
   "Gated luxury living with world-class golf, resort amenities, and homes ranging from $1M to $10M+. One of Austin's most prestigious addresses for families and executives."
 },
 {
-  name: "Westlake Hills",
+  name: "West lake Hills",
   slug: "westlake-hills",
   image: westlakeImg,
   description:
@@ -298,11 +298,11 @@ const Buy = () => {
       ])} />
       <SchemaMarkup schema={createFAQSchema([
         { question: "What is it like buying a home in Austin Texas?", answer: "Austin offers a dynamic real estate market with diverse neighborhoods ranging from waterfront estates on Lake Austin to walkable urban homes in Tarrytown. Buyers benefit from no state income tax, a thriving tech economy, and exceptional lifestyle amenities." },
-        { question: "What is the average home price in Austin?", answer: "Austin's median home price varies by neighborhood. Entry-level luxury begins around $1 million, with premium neighborhoods like Westlake Hills, Barton Creek, and Lake Austin ranging from $1.5M to $25M+." },
-        { question: "Are there luxury homes available in Austin?", answer: "Yes. Austin features some of Texas's finest luxury properties including Hill Country estates, waterfront mansions, contemporary masterpieces, and gated community homes across Westlake Hills, Barton Creek, Lake Austin, and Spanish Oaks." },
+        { question: "What is the average home price in Austin?", answer: "Austin's median home price varies by neighborhood. Entry-level luxury begins around $1 million, with premium neighborhoods like West lake Hills, Barton Creek, and Lake Austin ranging from $1.5M to $25M+." },
+        { question: "Are there luxury homes available in Austin?", answer: "Yes. Austin features some of Texas's finest luxury properties including Hill Country estates, waterfront mansions, contemporary masterpieces, and gated community homes across West lake Hills, Barton Creek, Lake Austin, and Spanish Oaks." },
         { question: "Is Austin a good place to invest in real estate?", answer: "Austin consistently ranks among the top U.S. metros for real estate investment, driven by tech-sector growth, population in-migration, no state income tax, and limited premium inventory in supply-constrained neighborhoods." },
         { question: "How do I find off-market homes for sale in Austin?", answer: "Working with an experienced luxury agent is essential. Echelon Property Group maintains access to private and whisper listings across Austin's most prestigious neighborhoods through our brokerage network and direct relationships." },
-        { question: "What are the best neighborhoods to buy a luxury home in Austin?", answer: "Westlake Hills, Barton Creek, and Lake Austin are Austin's top luxury neighborhoods. Westlake offers top-rated Eanes ISD schools, Barton Creek provides gated country club living, and Lake Austin delivers waterfront estates with private docks." },
+        { question: "What are the best neighborhoods to buy a luxury home in Austin?", answer: "West lake Hills, Barton Creek, and Lake Austin are Austin's top luxury neighborhoods. Westlake offers top-rated Eanes ISD schools, Barton Creek provides gated country club living, and Lake Austin delivers waterfront estates with private docks." },
       ])} />
       <Navigation />
 
@@ -354,10 +354,10 @@ const Buy = () => {
               What You Need to Know About Buying in Austin
             </h2>
             <ul className="space-y-4 text-muted-foreground leading-relaxed">
-              <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Austin's luxury market starts at approximately $1 million, with premium neighborhoods like Westlake Hills, Barton Creek, and Lake Austin ranging from $1.5M to $25M+.</span></li>
+              <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Austin's luxury market starts at approximately $1 million, with premium neighborhoods like West lake Hills, Barton Creek, and Lake Austin ranging from $1.5M to $25M+.</span></li>
               <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Texas has no state income tax, which represents significant annual savings for buyers relocating from California, New York, or Illinois.</span></li>
               <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Many of Austin's finest homes trade off-market through private broker networks. Working with an agent who has access to these channels is essential.</span></li>
-              <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Eanes ISD — serving Westlake Hills, Barton Creek, and Rollingwood — is consistently ranked among the top school districts in Texas.</span></li>
+              <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Eanes ISD — serving West lake Hills, Barton Creek, and Rollingwood — is consistently ranked among the top school districts in Texas.</span></li>
               <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Austin's tech economy (Apple, Tesla, Google, Meta, Oracle) drives sustained luxury housing demand and long-term appreciation.</span></li>
             </ul>
           </div>
@@ -674,13 +674,13 @@ const Buy = () => {
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Based on current Austin market data, buyers in supply-constrained neighborhoods like <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">Westlake Hills</Link>, <Link to="/communities/barton-creek" className="text-foreground underline hover:text-muted-foreground">Barton Creek</Link>, and <Link to="/communities/lake-austin" className="text-foreground underline hover:text-muted-foreground">Lake Austin</Link> are seeing a stabilized pricing environment after the post-2022 correction. Interest rate adjustments have improved purchasing power compared to 2023–2024, and inventory in premium locations remains limited.
+                Based on current Austin market data, buyers in supply-constrained neighborhoods like <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">West lake Hills</Link>, <Link to="/communities/barton-creek" className="text-foreground underline hover:text-muted-foreground">Barton Creek</Link>, and <Link to="/communities/lake-austin" className="text-foreground underline hover:text-muted-foreground">Lake Austin</Link> are seeing a stabilized pricing environment after the post-2022 correction. Interest rate adjustments have improved purchasing power compared to 2023–2024, and inventory in premium locations remains limited.
               </p>
               <p>
                 For buyers with a 5+ year horizon, the strongest opportunity exists in acquiring quality properties in premium locations before the next appreciation cycle. Austin's tech-driven economy, no state income tax, and sustained in-migration from coastal states provide a durable demand foundation that supports long-term value. Learn more in our <Link to="/blog/austin-luxury-market-trends" className="text-foreground underline hover:text-muted-foreground">Austin luxury market trends analysis</Link>.
               </p>
               <p>
-                From recent transactions in the area, we're seeing particularly strong buyer activity in the $2M–$5M range across Westlake Hills and Barton Creek. <Link to="/off-market-real-estate-austin" className="text-foreground underline hover:text-muted-foreground">Off-market sourcing</Link> has become increasingly important — many of the best properties never reach the public MLS. For those <Link to="/moving-to-austin-texas" className="text-foreground underline hover:text-muted-foreground">relocating to Austin</Link>, understanding neighborhood dynamics is essential.
+                From recent transactions in the area, we're seeing particularly strong buyer activity in the $2M–$5M range across West lake Hills and Barton Creek. <Link to="/off-market-real-estate-austin" className="text-foreground underline hover:text-muted-foreground">Off-market sourcing</Link> has become increasingly important — many of the best properties never reach the public MLS. For those <Link to="/moving-to-austin-texas" className="text-foreground underline hover:text-muted-foreground">relocating to Austin</Link>, understanding neighborhood dynamics is essential.
               </p>
             </div>
           </div>
@@ -697,11 +697,11 @@ const Buy = () => {
             <div className="space-y-6">
               {[
                 { q: "What is it like buying a home in Austin Texas?", a: "Austin offers a dynamic real estate market with diverse neighborhoods ranging from waterfront estates on Lake Austin to walkable urban homes in Tarrytown. Buyers benefit from no state income tax, a thriving tech economy, and exceptional lifestyle amenities." },
-                { q: "What is the average home price in Austin?", a: "Austin's median home price varies by neighborhood. Entry-level luxury begins around $1 million, with premium neighborhoods like Westlake Hills, Barton Creek, and Lake Austin ranging from $1.5M to $25M+." },
-                { q: "Are there luxury homes available in Austin?", a: "Yes. Austin features some of Texas's finest luxury properties including Hill Country estates, waterfront mansions, contemporary masterpieces, and gated community homes across Westlake Hills, Barton Creek, Lake Austin, and Spanish Oaks." },
+                { q: "What is the average home price in Austin?", a: "Austin's median home price varies by neighborhood. Entry-level luxury begins around $1 million, with premium neighborhoods like West lake Hills, Barton Creek, and Lake Austin ranging from $1.5M to $25M+." },
+                { q: "Are there luxury homes available in Austin?", a: "Yes. Austin features some of Texas's finest luxury properties including Hill Country estates, waterfront mansions, contemporary masterpieces, and gated community homes across West lake Hills, Barton Creek, Lake Austin, and Spanish Oaks." },
                 { q: "Is Austin a good place to invest in real estate?", a: "Austin consistently ranks among the top U.S. metros for real estate investment, driven by tech-sector growth, population in-migration, no state income tax, and limited premium inventory in supply-constrained neighborhoods." },
                 { q: "How do I find off-market homes for sale in Austin?", a: "Working with an experienced luxury agent is essential. Echelon Property Group maintains access to private and whisper listings across Austin's most prestigious neighborhoods through our brokerage network and direct relationships." },
-                { q: "What are the best neighborhoods to buy a luxury home in Austin?", a: "Westlake Hills, Barton Creek, and Lake Austin are Austin's top luxury neighborhoods. Westlake offers top-rated Eanes ISD schools, Barton Creek provides gated country club living, and Lake Austin delivers waterfront estates with private docks." },
+                { q: "What are the best neighborhoods to buy a luxury home in Austin?", a: "West lake Hills, Barton Creek, and Lake Austin are Austin's top luxury neighborhoods. Westlake offers top-rated Eanes ISD schools, Barton Creek provides gated country club living, and Lake Austin delivers waterfront estates with private docks." },
               ].map((faq, i) => (
                 <div key={i} className="border-b border-border pb-6">
                   <h3 className="text-lg font-medium text-foreground mb-2">{faq.q}</h3>

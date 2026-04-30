@@ -120,7 +120,7 @@ const ExitIntentModal = () => {
       name: "Exit Intent Visitor",
       email,
       message: "Requested early access to private listings via exit-intent modal.",
-      source: "Exit Intent — Private Listings",
+      source: "Exit Intent — LUXURY LISTINGs",
     });
     if (res.ok) {
       setSubmitted(true);
@@ -204,7 +204,7 @@ const ExitIntentModal = () => {
                 letterSpacing: "0.02em",
               }}
             >
-              Private Listings, Before They&rsquo;re Public
+              LUXURY LISTINGs, Before They&rsquo;re Public
             </h2>
 
             <p

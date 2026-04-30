@@ -466,7 +466,7 @@ But the real reason is simpler.
 
 If the right buyer can be found without going public, why go public at all?
 
-A well-placed call, the right introduction, or a known buyer profile can outperform weeks on the market. In those cases, exposure becomes unnecessary. We break down the seller side of this in [What Is a Private Listing](/blog/what-is-a-private-listing) and how Echelon executes [private sales for Austin homeowners](/sell-private).
+A well-placed call, the right introduction, or a known buyer profile can outperform weeks on the market. In those cases, exposure becomes unnecessary. We break down the seller side of this in [What Is a LUXURY LISTING](/blog/what-is-a-private-listing) and how Echelon executes [private sales for Austin homeowners](/sell-private).
 
 ## Where Buyers Get It Wrong
 
@@ -2751,7 +2751,7 @@ The seller still has formal representation, a pricing plan, showing protocols, a
 
 This matters most when the asset itself is unusual, high-profile, or hard to position in a broad marketplace. Some homes perform best when scarcity and discretion are part of the presentation. Others need a more expansive campaign. The right answer depends on the property, the seller's priorities, and current demand inside that specific segment.
 
-## Why Sellers Choose a Private Listing
+## Why Sellers Choose a LUXURY LISTING
 
 For many high-net-worth sellers, privacy is the obvious reason. They may not want interior photography circulating publicly, especially if the home includes art collections, security-sensitive features, or a recognizable address. Public exposure invites curiosity without producing serious buyer intent.
 
@@ -2761,7 +2761,7 @@ There is also the matter of control. A public launch generates a high volume of 
 
 In Austin, private strategy also fits when a seller wants to reach a very specific buyer pool rather than the general market. In tightly held enclaves like [West lake Hills](/communities/westlake-hills), [Barton Creek](/communities/barton-creek), and the [Lake Austin](/communities/lake-austin) corridor, certain homes trade because the right person sees them, not because thousands do.
 
-## When a Private Listing Strategy Makes Sense
+## When a LUXURY LISTING Strategy Makes Sense
 
 Not every home benefits from a private approach, and not every seller should default to one. The strategy fits a defined set of scenarios where controlled exposure produces a measurably better outcome than a public launch.
 
@@ -2777,7 +2777,7 @@ Not every home benefits from a private approach, and not every seller should def
 
 The common thread is intent. A private listing strategy works when the seller has a specific outcome in mind that public exposure would actively undermine.
 
-## Why Buyers Pursue Private Listings
+## Why Buyers Pursue LUXURY LISTINGs
 
 For buyers, private listings represent access. Not every notable property is publicly available, and many of the most compelling opportunities move quietly through trusted networks before they ever reach a broader audience.
 
@@ -2793,7 +2793,7 @@ For sophisticated buyers, especially those relocating on a compressed timeline o
 
 A strong advisor matters here. Buyers who rely only on public search portals miss the layer of inventory moving through agent networks, direct outreach, and private client channels. For a deeper view of how that channel operates, see our [Austin off-market real estate](/off-market-real-estate-austin) overview.
 
-## How Private Listings Work in Austin
+## How LUXURY LISTINGs Work in Austin
 
 Austin's private listing channel is not a single marketplace. It is a layered network of broker relationships, brokerage-internal inventory, and informal seller conversations that operate alongside the public market without ever fully merging into it.
 
@@ -2803,7 +2803,7 @@ This creates a reality that surprises buyers new to the market: two buyers searc
 
 For sellers, the same dynamic explains why advisor selection at the upper end is rarely about marketing budgets. It is about whether the advisor genuinely sits inside the relationships that move quiet inventory in [the neighborhoods where their property lives](/communities/barton-creek). Without that, a private strategy is just limited exposure dressed up in better language.
 
-## How a Private Listing Works in Practice
+## How a LUXURY LISTING Works in Practice
 
 The mechanics vary, but the framework is consistent. A seller engages an advisor, the property is positioned, pricing is established, and a target buyer profile is defined. From there, the offering is marketed discreetly rather than broadly.
 
@@ -2829,7 +2829,7 @@ There is also the question of price discovery. In a public listing environment, 
 
 The decision usually comes down to the [seller's hierarchy of goals](/sell). If discretion is paramount, a private listing may be the right vehicle even if it narrows the buyer pool. If maximizing competition is the priority, public distribution typically wins. The honest answer is rarely binary — many of the strongest outcomes begin privately and shift public if broader exposure is warranted, preserving optionality without forfeiting it.
 
-## Private Listing vs. Off-Market vs. Pocket Listing
+## LUXURY LISTING vs. Off-Market vs. Pocket Listing
 
 These three terms get used interchangeably and should not be. Each describes a different posture toward the market.
 
@@ -2841,7 +2841,7 @@ A **pocket listing** sits between the two. It is typically a property an agent h
 
 The distinction matters because buyer expectations should adjust accordingly. A true private listing has structure and pricing intent. An off-market conversation requires patience and a longer runway. A pocket listing falls somewhere in between, and its strength depends almost entirely on the agent presenting it. For a fuller breakdown, our [private listings real estate guide](/blog/private-listings-real-estate-explained) covers how each channel actually behaves.
 
-## Where Private Listings Work Best
+## Where LUXURY LISTINGs Work Best
 
 Private listings tend to work best when the property is exceptional, the seller values discretion, and the advisor has a real network rather than a theoretical one. A private strategy without genuine buyer access is just limited exposure.
 
@@ -2849,7 +2849,7 @@ In Austin, this is especially true at the top of the market, where relationships
 
 Private inventory is not about secrecy. It is about targeted circulation. The quality of the network determines the quality of the outcome.
 
-## When a Private Listing Is the Smart Move
+## When a LUXURY LISTING Is the Smart Move
 
 A private listing is worth considering when the home is high-profile, highly customized, security-sensitive, or aligned with a defined buyer profile. It can also fit when a seller wants to test pricing discreetly, avoid public days-on-market metrics, or maintain tight control over access.
 

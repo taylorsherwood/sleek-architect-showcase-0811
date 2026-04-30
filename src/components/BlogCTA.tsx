@@ -16,7 +16,7 @@ const BlogCTA = () => {
             Explore Homes
           </a>
           <Link to="/connect" className="cta-luxury cta-luxury--ghost">
-            Request Private Listings
+            Request LUXURY LISTINGs
           </Link>
         </div>
       </div>

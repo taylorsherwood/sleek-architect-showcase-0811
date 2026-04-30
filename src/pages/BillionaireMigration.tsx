@@ -35,9 +35,9 @@ const articleSchema = {
 };
 
 const billionaireFaqs = [
-  { question: "Why are billionaires moving to Austin Texas?", answer: "Billionaires and high-net-worth founders are relocating to Austin for Texas's zero state income tax, a pro-business regulatory environment, proximity to a booming tech economy, and access to luxury waterfront living on Lake Austin and in Westlake Hills — all within minutes of a major metro." },
-  { question: "How does billionaire migration affect Austin real estate prices?", answer: "When ultra-high-net-worth individuals relocate, they drive demand for premium inventory in supply-constrained neighborhoods like Lake Austin, Westlake Hills, and Tarrytown. This increases competition, accelerates price appreciation, and pushes more luxury transactions off-market." },
-  { question: "Which Austin neighborhoods attract the most billionaires?", answer: "Lake Austin waterfront, Westlake Hills, and Tarrytown are the primary destinations for billionaire buyers. These areas offer large estates, privacy, water access, and proximity to downtown Austin — a combination rarely found in other major U.S. metros." },
+  { question: "Why are billionaires moving to Austin Texas?", answer: "Billionaires and high-net-worth founders are relocating to Austin for Texas's zero state income tax, a pro-business regulatory environment, proximity to a booming tech economy, and access to luxury waterfront living on Lake Austin and in West lake Hills — all within minutes of a major metro." },
+  { question: "How does billionaire migration affect Austin real estate prices?", answer: "When ultra-high-net-worth individuals relocate, they drive demand for premium inventory in supply-constrained neighborhoods like Lake Austin, West lake Hills, and Tarrytown. This increases competition, accelerates price appreciation, and pushes more luxury transactions off-market." },
+  { question: "Which Austin neighborhoods attract the most billionaires?", answer: "Lake Austin waterfront, West lake Hills, and Tarrytown are the primary destinations for billionaire buyers. These areas offer large estates, privacy, water access, and proximity to downtown Austin — a combination rarely found in other major U.S. metros." },
   { question: "Are luxury homes in Austin a good investment in 2026?", answer: "Austin's luxury market continues to benefit from corporate relocations, population growth, and limited high-end inventory. Combined with no state income tax and strong long-term appreciation in neighborhoods like Barton Creek and Lake Austin, luxury real estate in Austin remains a compelling investment." },
 ];
 
@@ -321,7 +321,7 @@ const BillionaireMigration = () => {
                       to="/communities/westlake-hills"
                       className="text-foreground/80 underline hover:text-foreground/50"
                     >
-                      Westlake Hills
+                      West lake Hills
                     </Link>
                   </li>
                   <li className="text-foreground/60 flex items-start gap-3">

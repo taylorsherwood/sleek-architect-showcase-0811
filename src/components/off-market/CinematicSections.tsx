@@ -481,7 +481,7 @@ const CinematicSections = ({ formNode }: Props) => {
             </p>
             <div className="h-[1px] w-10 bg-[hsl(var(--gold))]/60 mb-4" />
             <p className="text-[hsl(var(--gold))] text-[0.65rem] tracking-[0.3em] uppercase font-sans font-medium">
-              Private Buyer · Westlake Hills
+              Private Buyer · West lake Hills
             </p>
           </div>
         </section>
@@ -712,7 +712,7 @@ const CinematicSections = ({ formNode }: Props) => {
               className="testimonial-attribution text-[hsl(var(--gold))] tracking-[0.28em] uppercase font-sans will-change-transform"
               style={{ fontSize: "0.72rem" }}
             >
-              — Private Buyer, Westlake Hills
+              — Private Buyer, West lake Hills
             </p>
           </div>
         </div>

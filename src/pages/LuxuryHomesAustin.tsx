@@ -14,10 +14,10 @@ import communityLakeAustin from "@/assets/community-lake-austin.jpg";
 import communityRollingwood from "@/assets/community-rollingwood.jpg";
 
 const neighborhoods = [
-{ name: "Westlake Hills", slug: "/communities/westlake-hills", image: communityWestlake, desc: "Hilltop estates with panoramic Hill Country views and Eanes ISD schools." },
+{ name: "West lake Hills", slug: "/communities/westlake-hills", image: communityWestlake, desc: "Hilltop estates with panoramic Hill Country views and Eanes ISD schools." },
 { name: "Barton Creek", slug: "/communities/barton-creek", image: communityBartonCreek, desc: "Gated golf community with championship courses and estate-sized lots." },
 { name: "Lake Austin", slug: "/communities/lake-austin", image: communityLakeAustin, desc: "Waterfront estates with private docks and resort-style living." },
-{ name: "Rollingwood", slug: "/communities/rollingwood", image: communityRollingwood, desc: "Intimate enclave between Zilker Park and Westlake Hills." }];
+{ name: "Rollingwood", slug: "/communities/rollingwood", image: communityRollingwood, desc: "Intimate enclave between Zilker Park and West lake Hills." }];
 
 
 const LuxuryHomesAustin = () => {
@@ -73,7 +73,7 @@ const LuxuryHomesAustin = () => {
                 campuses — paired with Texas's no-state-income-tax advantage, the city attracts high-net-worth buyers
                 from coast to coast. The luxury segment, generally defined as properties priced above $1.5 million,
                 spans waterfront estates on <Link to="/communities/lake-austin" className="text-foreground underline hover:text-muted-foreground">Lake Austin</Link>,
-                architecturally significant hilltop mansions in <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">Westlake Hills</Link>,
+                architecturally significant hilltop mansions in <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">West lake Hills</Link>,
                 and gated golf-community homes in <Link to="/communities/barton-creek" className="text-foreground underline hover:text-muted-foreground">Barton Creek</Link>.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
@@ -86,7 +86,7 @@ const LuxuryHomesAustin = () => {
               <p className="text-muted-foreground leading-relaxed">
                 Compared to San Francisco, Los Angeles, and New York, Austin consistently delivers more square footage,
                 better amenities, and a lower overall cost of living — without sacrificing career opportunity or cultural
-                richness. Supply-constrained neighborhoods like Lake Austin waterfront and Westlake Hills have
+                richness. Supply-constrained neighborhoods like Lake Austin waterfront and West lake Hills have
                 demonstrated 7–12% average annual appreciation over the past decade, making Austin luxury real estate
                 both a lifestyle upgrade and a sound long-term investment.
               </p>

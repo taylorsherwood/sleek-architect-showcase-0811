@@ -91,7 +91,7 @@ const Contact = () => {
       <SchemaMarkup schema={createFAQSchema([
         { question: "How do I schedule a consultation with Echelon Property Group?", answer: "Use the contact form above, call us at (512) 661-3843, or email info@echelonpropertygroup.com. We typically respond within a few hours during business days and are happy to arrange in-person, phone, or video consultations based on your preference." },
         { question: "Do you work with out-of-state buyers?", answer: "Absolutely. A significant portion of our clients relocate to Austin from California, New York, Chicago, and other major metros. We provide virtual property tours, comprehensive neighborhood analysis, and full-service transaction management for remote buyers." },
-        { question: "What areas of Austin do you cover?", answer: "We serve all of Austin's premier neighborhoods including Westlake Hills, Barton Creek, Lake Austin, Tarrytown, Rollingwood, Travis Heights, Downtown Austin, Dripping Springs, Spanish Oaks, and the greater Texas Hill Country." },
+        { question: "What areas of Austin do you cover?", answer: "We serve all of Austin's premier neighborhoods including West lake Hills, Barton Creek, Lake Austin, Tarrytown, Rollingwood, Travis Heights, Downtown Austin, Dripping Springs, Spanish Oaks, and the greater Texas Hill Country." },
         { question: "Is there a cost for an initial consultation?", answer: "No. Our initial consultations are always complimentary and come with no obligation. We believe the best client relationships start with honest conversation about your goals and how we can help." },
       ])} />
       <Navigation />
@@ -217,7 +217,7 @@ const Contact = () => {
                 Whether you're buying your first luxury home in Austin, selling a family estate, exploring commercial investment opportunities, or relocating from out of state, Echelon Property Group provides the expert guidance and personalized service that complex real estate decisions demand. Founded by Taylor Sherwood, a Certified Luxury Home Marketing Specialist, our firm specializes in luxury residential, commercial, land, and investment real estate across Austin and the Texas Hill Country.
               </p>
               <p>
-                For sellers, we deliver premium marketing campaigns featuring professional photography, cinematic video, drone footage, custom property websites, and targeted digital advertising. Our strategic pricing methodology and negotiation expertise consistently achieve above-market results for luxury listings across Barton Creek, Westlake Hills, Lake Austin, and beyond.
+                For sellers, we deliver premium marketing campaigns featuring professional photography, cinematic video, drone footage, custom property websites, and targeted digital advertising. Our strategic pricing methodology and negotiation expertise consistently achieve above-market results for luxury listings across Barton Creek, West lake Hills, Lake Austin, and beyond.
               </p>
               <p>
                 Explore our <Link to="/blog" className="text-foreground hover:text-gold transition-colors duration-300 underline underline-offset-4">latest market insights</Link> for data-driven analysis of Austin's luxury real estate landscape, or <Link to="/listings" className="text-foreground hover:text-gold transition-colors duration-300 underline underline-offset-4">browse current listings</Link> to see properties represented by our team.

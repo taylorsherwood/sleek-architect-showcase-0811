@@ -331,7 +331,7 @@ const properties = [
   {
     image: "/static-assets/listing-westlake-hills-private.webp",
     address: "Address withheld",
-    location: "Westlake Hills",
+    location: "West lake Hills",
     price: "$3,950,000",
     beds: 5, baths: 5, sqft: "—",
     link: "/off-market-real-estate-austin",
@@ -1095,7 +1095,7 @@ const communities = [
   { name: "Rollingwood", eyebrow: "MEDIAN SALE: $1.8M", image: "/static-assets/community-rollingwood.webp", slug: "rollingwood" },
   { name: "Spanish Oaks", eyebrow: "GATED ESTATES FROM $2.5M", image: "/static-assets/community-spanish-oaks.webp", slug: "spanish-oaks" },
   { name: "Tarrytown", eyebrow: "OLD AUSTIN, CENTRAL", image: "/static-assets/community-tarrytown.webp", slug: "tarrytown" },
-  { name: "Westlake Hills", eyebrow: "EANES ISD, FROM $1.8M", image: "/static-assets/community-westlake-hills.webp", slug: "westlake-hills" },
+  { name: "West lake Hills", eyebrow: "EANES ISD, FROM $1.8M", image: "/static-assets/community-westlake-hills.webp", slug: "westlake-hills" },
 ];
 
 const CommunitiesSection = () => {
@@ -1563,7 +1563,7 @@ const FinalCTA = () => (
 
 const editorialArticles = [
   {
-    title: "Rollingwood vs Westlake Hills",
+    title: "Rollingwood vs West lake Hills",
     description: "How two of Austin's most prestigious neighborhoods compare for luxury buyers.",
     image: blogRollingwoodVsWestlake,
     href: "/blog/rollingwood-vs-westlake-hills",
@@ -1779,7 +1779,7 @@ const NoscriptFallback = () => (
         <h2 className="text-3xl font-light mb-6">Austin Luxury Real Estate Services</h2>
         <p className="mb-4">Echelon Property Group provides strategic luxury real estate advisory across Austin, Texas.</p>
         <ul className="list-disc pl-6 mb-6 space-y-2">
-          <li>Luxury residential sales in Westlake Hills, Barton Creek, Lake Austin, Tarrytown, and Rollingwood</li>
+          <li>Luxury residential sales in West lake Hills, Barton Creek, Lake Austin, Tarrytown, and Rollingwood</li>
           <li>Off-market and private listing opportunities</li>
           <li>Commercial real estate and multifamily investment</li>
           <li>Land acquisition and development advisory</li>

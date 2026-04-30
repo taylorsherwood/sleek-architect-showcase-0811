@@ -29,7 +29,7 @@ const testimonials = [
       "From staging to close, every step was handled with professionalism and care. We couldn't have asked for a better experience. We'd recommend anyone thinking about buying or selling in Austin to call Taylor first.",
     name: "Katherine & Robert Ellis",
     type: "Seller Client",
-    context: "Sold in Westlake Hills",
+    context: "Sold in West lake Hills",
   },
   {
     quote:

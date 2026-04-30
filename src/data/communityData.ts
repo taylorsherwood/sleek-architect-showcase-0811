@@ -58,14 +58,14 @@ export interface CommunityData {
 export const communityPages: CommunityData[] = [
   {
     slug: "westlake-hills",
-    name: "Westlake Hills",
-    heroTitle: "Homes for Sale in Westlake Hills",
-    metaTitle: "Westlake Hills Homes for Sale | Echelon Property Group",
-    metaDescription: "Explore luxury homes for sale in Westlake Hills Austin. Stunning Hill Country views, top Eanes ISD schools, and estates from $1.2M to $20M+.",
+    name: "West lake Hills",
+    heroTitle: "Homes for Sale in West lake Hills",
+    metaTitle: "West lake Hills Homes for Sale | Echelon Property Group",
+    metaDescription: "Explore luxury homes for sale in West lake Hills Austin. Stunning Hill Country views, top Eanes ISD schools, and estates from $1.2M to $20M+.",
     priceRange: "$1.2M – $20M+",
     image: westlakeHillsImg,
     heroImage: westlakeHillsHeroImg,
-    overview: `Westlake Hills is one of Austin's most sought-after luxury communities. Situated on scenic bluffs west of downtown, it overlooks the Hill Country and Lake Austin.
+    overview: `West lake Hills is one of Austin's most sought-after luxury communities. Situated on scenic bluffs west of downtown, it overlooks the Hill Country and Lake Austin.
 
 ### Location & Setting
 
@@ -88,7 +88,7 @@ Residents enjoy world-class hiking and biking at the Barton Creek Greenbelt and 
 
 ### Country Club Living
 
-The Westlake Hills Country Club provides golf, tennis, swimming, and fine dining in an intimate setting.
+The West lake Hills Country Club provides golf, tennis, swimming, and fine dining in an intimate setting.
 
 ### Dining & Culture
 
@@ -96,14 +96,14 @@ Upscale dining and boutique shops line Bee Caves Road and the Hill Country Galle
 
 ### Community Character
 
-Westlake Hills maintains small-town charm with local events, farmers markets, and community gatherings throughout the year.`,
+West lake Hills maintains small-town charm with local events, farmers markets, and community gatherings throughout the year.`,
     marketInsights: `### Pricing & Demand
 
 Median home prices consistently exceed $1.5 million. Luxury estates regularly trade above $5 million. The market is characterized by low inventory and high demand.
 
 ### Appreciation Trends
 
-Over the past decade, Westlake Hills property values have outpaced many other Austin-area neighborhoods. New construction often exceeds $500 per square foot.
+Over the past decade, West lake Hills property values have outpaced many other Austin-area neighborhoods. New construction often exceeds $500 per square foot.
 
 ### Buyer Profile
 
@@ -115,7 +115,7 @@ The buyer profile includes:
 
 ### Rental Market
 
-Luxury rentals command $8,000 to $25,000 per month, making Westlake Hills attractive for investors targeting high-net-worth tenants.`,
+Luxury rentals command $8,000 to $25,000 per month, making West lake Hills attractive for investors targeting high-net-worth tenants.`,
     amenitiesAndSchools: `### Eanes ISD Schools
 
 Key schools include Bridge Point Elementary, Hill Country Middle School, and Westlake High School — a perennial state powerhouse that consistently earns National Blue Ribbon recognition.
@@ -140,11 +140,11 @@ Outdoor highlights include:
 - Zilker Park and Barton Springs Pool`,
     investmentPotential: `### Long-Term Appreciation
 
-Westlake Hills has historically outperformed the broader Austin market during growth periods and demonstrated greater resilience during downturns.
+West lake Hills has historically outperformed the broader Austin market during growth periods and demonstrated greater resilience during downturns.
 
 ### Tech Economy Driver
 
-The expansion of Apple, Google, Tesla, Oracle, and Meta continues to drive high-income relocations. Westlake Hills is a primary beneficiary of this trend.
+The expansion of Apple, Google, Tesla, Oracle, and Meta continues to drive high-income relocations. West lake Hills is a primary beneficiary of this trend.
 
 ### Investment Strategies
 
@@ -155,29 +155,29 @@ Opportunities include:
 - Properties with waterfront access, panoramic views, or guest houses
 
 The area's strict development standards ensure that quality investments are protected by overall neighborhood character.`,
-    echelonPerspective: `Westlake Hills remains one of the most consistent luxury markets in Austin, Texas. Buyers are drawn to the combination of Eanes ISD schools, hilltop privacy, and a 10-minute commute to downtown. The housing stock ranges from refined mid-century estates on half-acre lots to contemporary builds exceeding $500 per square foot. Typical buyers include tech executives relocating from the Bay Area, established Austin families upgrading within the Eanes district, and investors drawn to the area's steady 7–10% annual appreciation. For those considering alternatives, [Barton Creek](/communities/barton-creek) offers country club living with gated security, while [Tarrytown](/communities/tarrytown) provides a more walkable, urban-adjacent lifestyle at a lower entry price. Westlake Hills continues to command a premium for its blend of serenity, access, and school quality.`,
-    communityComparison: `### Westlake Hills vs Barton Creek
+    echelonPerspective: `West lake Hills remains one of the most consistent luxury markets in Austin, Texas. Buyers are drawn to the combination of Eanes ISD schools, hilltop privacy, and a 10-minute commute to downtown. The housing stock ranges from refined mid-century estates on half-acre lots to contemporary builds exceeding $500 per square foot. Typical buyers include tech executives relocating from the Bay Area, established Austin families upgrading within the Eanes district, and investors drawn to the area's steady 7–10% annual appreciation. For those considering alternatives, [Barton Creek](/communities/barton-creek) offers country club living with gated security, while [Tarrytown](/communities/tarrytown) provides a more walkable, urban-adjacent lifestyle at a lower entry price. West lake Hills continues to command a premium for its blend of serenity, access, and school quality.`,
+    communityComparison: `### West lake Hills vs Barton Creek
 
-[Barton Creek](/communities/barton-creek) shares Eanes ISD zoning and a Hill Country setting, but offers a fundamentally different experience — gated country club living with four championship golf courses, 24/7 security, and a resort-caliber amenity set. Westlake Hills, by contrast, is an independent incorporated city with more architectural diversity, no HOA gates, and a stronger sense of neighborhood autonomy. Barton Creek homes tend to start higher, while Westlake Hills offers a broader range from $1.2M renovations to $20M+ new construction.
+[Barton Creek](/communities/barton-creek) shares Eanes ISD zoning and a Hill Country setting, but offers a fundamentally different experience — gated country club living with four championship golf courses, 24/7 security, and a resort-caliber amenity set. West lake Hills, by contrast, is an independent incorporated city with more architectural diversity, no HOA gates, and a stronger sense of neighborhood autonomy. Barton Creek homes tend to start higher, while West lake Hills offers a broader range from $1.2M renovations to $20M+ new construction.
 
-### Westlake Hills vs Tarrytown
+### West lake Hills vs Tarrytown
 
-[Tarrytown](/communities/tarrytown) is Austin's most walkable luxury neighborhood, offering tree-canopied streets, Deep Eddy Pool, and an urban village feel. Westlake Hills trades that walkability for Hill Country views, larger lots, and Eanes ISD (versus Austin ISD for Tarrytown). Buyers who prioritize proximity to restaurants and Lady Bird Lake often prefer Tarrytown; those seeking panoramic views and top-ranked public schools gravitate toward Westlake.
+[Tarrytown](/communities/tarrytown) is Austin's most walkable luxury neighborhood, offering tree-canopied streets, Deep Eddy Pool, and an urban village feel. West lake Hills trades that walkability for Hill Country views, larger lots, and Eanes ISD (versus Austin ISD for Tarrytown). Buyers who prioritize proximity to restaurants and Lady Bird Lake often prefer Tarrytown; those seeking panoramic views and top-ranked public schools gravitate toward Westlake.
 
-### Westlake Hills vs Pemberton Heights
+### West lake Hills vs Pemberton Heights
 
-[Pemberton Heights](/communities/pemberton-heights) offers distinguished estates on generous lots just north of Lady Bird Lake — one of the most prestigious addresses in central Austin. Westlake Hills provides a more suburban Hill Country setting with Eanes ISD, while Pemberton Heights sits in Austin ISD with a shorter walk to downtown dining and culture.`,
+[Pemberton Heights](/communities/pemberton-heights) offers distinguished estates on generous lots just north of Lady Bird Lake — one of the most prestigious addresses in central Austin. West lake Hills provides a more suburban Hill Country setting with Eanes ISD, while Pemberton Heights sits in Austin ISD with a shorter walk to downtown dining and culture.`,
     relatedCommunities: ["barton-creek", "lake-austin", "rollingwood", "tarrytown"],
     faqs: [
-      { question: "What school district serves Westlake Hills?", answer: "Westlake Hills is served by the Eanes Independent School District, consistently ranked among the top districts in Texas. Schools include Bridge Point Elementary, Hill Country Middle School, and Westlake High School, which earns National Blue Ribbon recognition." },
-      { question: "What is the average home price in Westlake Hills Austin?", answer: "Home prices in Westlake Hills range from $1.2 million to over $20 million. The median home price exceeds $1.5 million, with luxury estates regularly trading above $5 million. New construction often exceeds $500 per square foot." },
-      { question: "How far is Westlake Hills from downtown Austin?", answer: "Westlake Hills is approximately 10 to 15 minutes from downtown Austin via Loop 360 or MoPac Expressway, offering a retreat-like atmosphere with quick urban access." },
-      { question: "Is Westlake Hills a good place to buy a luxury home in Austin?", answer: "Yes. Westlake Hills consistently ranks among Austin's most desirable luxury communities thanks to Eanes ISD schools, hilltop views, architectural diversity, and proximity to downtown. The area attracts tech executives, established families, and discerning buyers seeking privacy with urban convenience." },
-      { question: "How does Westlake Hills compare to nearby neighborhoods?", answer: "Westlake Hills offers a Hill Country setting with Eanes ISD and larger lots compared to walkable Tarrytown (Austin ISD) or gated Barton Creek (country club living). Rob Roy provides a more exclusive gated enclave nearby, while Rollingwood offers similar school zoning in a smaller, more intimate community." },
-      { question: "What types of homes are common in Westlake Hills?", answer: "Westlake Hills features mid-century estates on generous lots, contemporary builds with walls of glass and infinity pools, and traditional limestone residences. Many homes showcase indoor-outdoor living with Hill Country views. Teardown-rebuild activity is common on premium parcels." },
-      { question: "Who typically buys in Westlake Hills?", answer: "Typical buyers include tech executives relocating from the Bay Area and other major metros, established Austin families upgrading within Eanes ISD, and investors seeking strong long-term appreciation in a supply-constrained market." },
-      { question: "Are there waterfront homes in Westlake Hills?", answer: "While Westlake Hills itself is a hilltop community, many homes are just minutes from Lake Austin waterfront access. Some properties on the western edge offer lake views, and nearby marinas provide boating access." },
-      { question: "What outdoor activities are near Westlake Hills?", answer: "Residents enjoy the Barton Creek Greenbelt, Wild Basin Wilderness Preserve, Lake Austin boating, and numerous hiking and biking trails. The area also offers country club golf, tennis, and swimming." }
+      { question: "What school district serves West lake Hills?", answer: "West lake Hills is served by the Eanes Independent School District, consistently ranked among the top districts in Texas. Schools include Bridge Point Elementary, Hill Country Middle School, and Westlake High School, which earns National Blue Ribbon recognition." },
+      { question: "What is the average home price in West lake Hills Austin?", answer: "Home prices in West lake Hills range from $1.2 million to over $20 million. The median home price exceeds $1.5 million, with luxury estates regularly trading above $5 million. New construction often exceeds $500 per square foot." },
+      { question: "How far is West lake Hills from downtown Austin?", answer: "West lake Hills is approximately 10 to 15 minutes from downtown Austin via Loop 360 or MoPac Expressway, offering a retreat-like atmosphere with quick urban access." },
+      { question: "Is West lake Hills a good place to buy a luxury home in Austin?", answer: "Yes. West lake Hills consistently ranks among Austin's most desirable luxury communities thanks to Eanes ISD schools, hilltop views, architectural diversity, and proximity to downtown. The area attracts tech executives, established families, and discerning buyers seeking privacy with urban convenience." },
+      { question: "How does West lake Hills compare to nearby neighborhoods?", answer: "West lake Hills offers a Hill Country setting with Eanes ISD and larger lots compared to walkable Tarrytown (Austin ISD) or gated Barton Creek (country club living). Rob Roy provides a more exclusive gated enclave nearby, while Rollingwood offers similar school zoning in a smaller, more intimate community." },
+      { question: "What types of homes are common in West lake Hills?", answer: "West lake Hills features mid-century estates on generous lots, contemporary builds with walls of glass and infinity pools, and traditional limestone residences. Many homes showcase indoor-outdoor living with Hill Country views. Teardown-rebuild activity is common on premium parcels." },
+      { question: "Who typically buys in West lake Hills?", answer: "Typical buyers include tech executives relocating from the Bay Area and other major metros, established Austin families upgrading within Eanes ISD, and investors seeking strong long-term appreciation in a supply-constrained market." },
+      { question: "Are there waterfront homes in West lake Hills?", answer: "While West lake Hills itself is a hilltop community, many homes are just minutes from Lake Austin waterfront access. Some properties on the western edge offer lake views, and nearby marinas provide boating access." },
+      { question: "What outdoor activities are near West lake Hills?", answer: "Residents enjoy the Barton Creek Greenbelt, Wild Basin Wilderness Preserve, Lake Austin boating, and numerous hiking and biking trails. The area also offers country club golf, tennis, and swimming." }
     ]
   },
   {
@@ -271,10 +271,10 @@ The community is approaching build-out. The shrinking supply of available homesi
 ### Stable Demand
 
 The combination of country club amenities, top schools, and proximity to Austin's tech economy ensures ongoing demand from high-net-worth buyers. Properties in Barton Creek have demonstrated consistent value growth, even during periods of broader market softening.`,
-    echelonPerspective: `Barton Creek represents the gold standard of gated luxury living in Austin, Texas. Four championship golf courses, 24/7 security, and Eanes ISD schools create a resort-caliber experience that few communities nationwide can match. The housing stock spans Spanish Colonial estates on golf course fairways to sleek contemporary builds backing the Barton Creek Greenbelt. Buyers tend to be corporate executives, entrepreneurs, and high-net-worth families who value privacy, country club membership, and walkable greenbelt access. With the community approaching build-out, remaining homesites are increasingly rare — making resale values particularly resilient. For those who prefer a non-gated setting, [Westlake Hills](/communities/westlake-hills) provides a similar school district and Hill Country character without country club HOA commitments. [Rob Roy](/communities/rob-roy) offers a smaller, more intimate gated experience nearby.`,
-    communityComparison: `### Barton Creek vs Westlake Hills
+    echelonPerspective: `Barton Creek represents the gold standard of gated luxury living in Austin, Texas. Four championship golf courses, 24/7 security, and Eanes ISD schools create a resort-caliber experience that few communities nationwide can match. The housing stock spans Spanish Colonial estates on golf course fairways to sleek contemporary builds backing the Barton Creek Greenbelt. Buyers tend to be corporate executives, entrepreneurs, and high-net-worth families who value privacy, country club membership, and walkable greenbelt access. With the community approaching build-out, remaining homesites are increasingly rare — making resale values particularly resilient. For those who prefer a non-gated setting, [West lake Hills](/communities/westlake-hills) provides a similar school district and Hill Country character without country club HOA commitments. [Rob Roy](/communities/rob-roy) offers a smaller, more intimate gated experience nearby.`,
+    communityComparison: `### Barton Creek vs West lake Hills
 
-[Westlake Hills](/communities/westlake-hills) shares Eanes ISD zoning and a scenic Hill Country setting, but diverges in character. Barton Creek is a gated, amenity-rich master-planned community with country club membership options, while Westlake Hills is an independent city offering more architectural freedom and no gated entry. Barton Creek's entry point is higher, but its resort-caliber amenities and security infrastructure appeal to buyers who want a self-contained luxury lifestyle.
+[West lake Hills](/communities/westlake-hills) shares Eanes ISD zoning and a scenic Hill Country setting, but diverges in character. Barton Creek is a gated, amenity-rich master-planned community with country club membership options, while West lake Hills is an independent city offering more architectural freedom and no gated entry. Barton Creek's entry point is higher, but its resort-caliber amenities and security infrastructure appeal to buyers who want a self-contained luxury lifestyle.
 
 ### Barton Creek vs Rob Roy
 
@@ -289,7 +289,7 @@ The combination of country club amenities, top schools, and proximity to Austin'
       { question: "How many golf courses are in Barton Creek?", answer: "Barton Creek features four championship golf courses designed by Tom Fazio, Ben Crenshaw, and Arnold Palmer, all accessible through the Barton Creek Country Club. Membership provides access to golf, tennis, swimming, dining, and spa facilities." },
       { question: "What are home prices in Barton Creek Austin?", answer: "Homes in Barton Creek range from $1.5 million to over $15 million. The median home price exceeds $2 million, with estate properties on golf course lots or with greenbelt views commanding the highest premiums." },
       { question: "Is Barton Creek a good place to buy a luxury home in Austin?", answer: "Barton Creek is widely regarded as one of Austin's premier luxury addresses. Gated security, championship golf, Eanes ISD schools, and a supply-constrained market create exceptional long-term value and lifestyle quality for discerning buyers." },
-      { question: "How does Barton Creek compare to nearby neighborhoods?", answer: "Barton Creek offers gated country club living with four golf courses and resort amenities. Westlake Hills provides a similar school district without gates. Rob Roy offers a smaller gated enclave with more panoramic views. Pemberton Heights trades seclusion for central Austin walkability." },
+      { question: "How does Barton Creek compare to nearby neighborhoods?", answer: "Barton Creek offers gated country club living with four golf courses and resort amenities. West lake Hills provides a similar school district without gates. Rob Roy offers a smaller gated enclave with more panoramic views. Pemberton Heights trades seclusion for central Austin walkability." },
       { question: "What types of homes are common in Barton Creek?", answer: "Barton Creek features Spanish Colonial estates, Mediterranean villas, contemporary glass-and-stone builds, and traditional Hill Country residences. Many homes sit on golf course fairways or back to the Barton Creek Greenbelt with private trail access." },
       { question: "Who typically buys in Barton Creek?", answer: "Typical buyers include corporate executives, entrepreneurs, and high-net-worth families seeking privacy, country club amenities, and top-tier schools. Many are relocating from major metros and are drawn to the gated, resort-caliber lifestyle." },
       { question: "What school district is Barton Creek in?", answer: "Barton Creek is served by the Eanes Independent School District, including Barton Creek Elementary, Hill Country Middle School, and Westlake High School—all consistently ranked among the top schools in Texas." },
@@ -383,10 +383,10 @@ Acquiring original homes on large lots (7,000+ sq ft) and building new can gener
 ### Growth Tailwinds
 
 As Austin's tech economy expands, demand for walkable, centrally located neighborhoods like Tarrytown continues to intensify. Proximity to downtown, the university, and major employment centers ensures broad buyer demand.`,
-    echelonPerspective: `Tarrytown is Austin's quintessential walkable luxury neighborhood, where tree-canopied streets, historic character, and a 5-minute downtown commute create a lifestyle that is genuinely difficult to replicate elsewhere in the city. The buyer profile here is diverse — young families drawn to Casis Elementary, professionals who want to walk to work downtown, and long-time Austinites upgrading within the 78703 zip code. Housing ranges from original 1930s bungalows on quarter-acre lots to contemporary new construction exceeding $700 per square foot. The teardown-rebuild cycle is particularly active here, as lot values in prime Casis zones regularly exceed $1 million. For buyers weighing alternatives, [Westlake Hills](/communities/westlake-hills) offers Eanes ISD and Hill Country views, while [Pemberton Heights](/communities/pemberton-heights) provides similarly distinguished central Austin living with even larger lots.`,
-    communityComparison: `### Tarrytown vs Westlake Hills
+    echelonPerspective: `Tarrytown is Austin's quintessential walkable luxury neighborhood, where tree-canopied streets, historic character, and a 5-minute downtown commute create a lifestyle that is genuinely difficult to replicate elsewhere in the city. The buyer profile here is diverse — young families drawn to Casis Elementary, professionals who want to walk to work downtown, and long-time Austinites upgrading within the 78703 zip code. Housing ranges from original 1930s bungalows on quarter-acre lots to contemporary new construction exceeding $700 per square foot. The teardown-rebuild cycle is particularly active here, as lot values in prime Casis zones regularly exceed $1 million. For buyers weighing alternatives, [West lake Hills](/communities/westlake-hills) offers Eanes ISD and Hill Country views, while [Pemberton Heights](/communities/pemberton-heights) provides similarly distinguished central Austin living with even larger lots.`,
+    communityComparison: `### Tarrytown vs West lake Hills
 
-[Westlake Hills](/communities/westlake-hills) offers Eanes ISD schools (consistently ranked above Austin ISD), larger lots, and panoramic Hill Country views — but trades away Tarrytown's walkability, urban village feel, and proximity to Lady Bird Lake. Tarrytown buyers typically prioritize a pedestrian-friendly lifestyle with walkable dining and recreation, while Westlake buyers seek hilltop privacy and top-tier school ratings.
+[West lake Hills](/communities/westlake-hills) offers Eanes ISD schools (consistently ranked above Austin ISD), larger lots, and panoramic Hill Country views — but trades away Tarrytown's walkability, urban village feel, and proximity to Lady Bird Lake. Tarrytown buyers typically prioritize a pedestrian-friendly lifestyle with walkable dining and recreation, while Westlake buyers seek hilltop privacy and top-tier school ratings.
 
 ### Tarrytown vs Pemberton Heights
 
@@ -399,7 +399,7 @@ As Austin's tech economy expands, demand for walkable, centrally located neighbo
     faqs: [
       { question: "What makes Tarrytown Austin a desirable neighborhood?", answer: "Tarrytown offers a rare combination of central location (minutes from downtown), tree-canopied walkable streets, excellent schools (Casis Elementary), proximity to Lady Bird Lake and Deep Eddy Pool, and eclectic architectural character spanning 1930s bungalows to contemporary estates." },
       { question: "Is Tarrytown a good place to buy a luxury home in Austin?", answer: "Yes. Tarrytown is one of Austin's most established luxury neighborhoods, prized for walkability, mature tree canopy, and the coveted Casis Elementary zone. Properties here have demonstrated strong appreciation driven by limited lot supply and intense buyer demand in the 78703 zip code." },
-      { question: "How does Tarrytown compare to nearby neighborhoods?", answer: "Tarrytown offers walkable urban luxury that Westlake Hills and Barton Creek cannot match. Pemberton Heights provides similar central positioning with larger estate lots. Clarksville is more compact and boutique-oriented. Each neighborhood serves a distinct buyer profile while sharing Austin's west-side desirability." },
+      { question: "How does Tarrytown compare to nearby neighborhoods?", answer: "Tarrytown offers walkable urban luxury that West lake Hills and Barton Creek cannot match. Pemberton Heights provides similar central positioning with larger estate lots. Clarksville is more compact and boutique-oriented. Each neighborhood serves a distinct buyer profile while sharing Austin's west-side desirability." },
       { question: "What types of homes are common in Tarrytown?", answer: "Tarrytown features original 1930s-1960s bungalows, mid-century ranch homes, thoughtfully renovated period properties, and contemporary new construction. The teardown-rebuild market is active, with new builds achieving $600 to $800 per square foot." },
       { question: "Who typically buys in Tarrytown?", answer: "Typical buyers include young families seeking Casis Elementary, downtown professionals wanting walkable commutes, and established Austinites upgrading within the 78703 zip code. The neighborhood also attracts relocating buyers from California and the Northeast drawn to its village-like character." },
       { question: "What school zone is Tarrytown Austin in?", answer: "Tarrytown is served by Austin ISD, with homes primarily zoned to Casis Elementary School (one of the highest-performing in the district), O. Henry Middle School, and Austin High School. St. Andrew's Episcopal School, a top private school, is also located within the neighborhood." },
@@ -416,7 +416,7 @@ As Austin's tech economy expands, demand for walkable, centrally located neighbo
     metaDescription: "Discover homes for sale in Rollingwood Austin. Charming enclave near Zilker Park with top Eanes ISD schools and homes from $1M to $5M+.",
     priceRange: "$1M – $5M+",
     image: rollingwoodImg,
-    overview: `Rollingwood is a small incorporated city nestled between Zilker Park and Westlake Hills. With just over 1,500 residents, it offers small-town intimacy with immediate access to Austin's best amenities.
+    overview: `Rollingwood is a small incorporated city nestled between Zilker Park and West lake Hills. With just over 1,500 residents, it offers small-town intimacy with immediate access to Austin's best amenities.
 
 ### Housing Stock
 
@@ -1222,14 +1222,14 @@ A significant portion of Lake Austin properties trade quietly. Some of the most 
 ### Redevelopment Opportunities
 
 Because of limited waterfront inventory, many buyers prioritize lot quality and location over structure — with tear-downs and redevelopment opportunities being common at the high end.`,
-    echelonPerspective: `Lake Austin is the rarest waterfront tier in the Austin, Texas market — a constant-level reservoir running through the heart of the city's most established residential corridor. The buyer profile is narrow and consistent: relocating tech and finance executives from California, New York, and the Pacific Northwest who treat the waterfront as a primary residence rather than a second home, alongside a smaller cohort of established Austin families upgrading from [Tarrytown](/communities/tarrytown), [Westlake Hills](/communities/westlake-hills), or [Pemberton Heights](/communities/pemberton-heights). Pricing tiers are well-defined: non-waterfront proximity homes trade between $1.5M and $3M, entry-level waterfront sits between $2.5M and $5M, and prime waterfront with deep-water docks and unobstructed frontage commands $5M to $15M+, with trophy estates clearing $15M. What sets Lake Austin apart from [Lake Travis](/communities/lake-travis) is the combination of constant water level, year-round dockability, and proximity — most homes are 10 to 15 minutes from downtown, a logistical reality that no other Texas waterfront market can replicate. A meaningful share of inventory trades privately; access here is a function of relationships rather than search filters.`,
+    echelonPerspective: `Lake Austin is the rarest waterfront tier in the Austin, Texas market — a constant-level reservoir running through the heart of the city's most established residential corridor. The buyer profile is narrow and consistent: relocating tech and finance executives from California, New York, and the Pacific Northwest who treat the waterfront as a primary residence rather than a second home, alongside a smaller cohort of established Austin families upgrading from [Tarrytown](/communities/tarrytown), [West lake Hills](/communities/westlake-hills), or [Pemberton Heights](/communities/pemberton-heights). Pricing tiers are well-defined: non-waterfront proximity homes trade between $1.5M and $3M, entry-level waterfront sits between $2.5M and $5M, and prime waterfront with deep-water docks and unobstructed frontage commands $5M to $15M+, with trophy estates clearing $15M. What sets Lake Austin apart from [Lake Travis](/communities/lake-travis) is the combination of constant water level, year-round dockability, and proximity — most homes are 10 to 15 minutes from downtown, a logistical reality that no other Texas waterfront market can replicate. A meaningful share of inventory trades privately; access here is a function of relationships rather than search filters.`,
     communityComparison: `### Lake Austin vs Lake Travis
 
 [Lake Travis](/communities/lake-travis) sits roughly 25 miles upriver and offers a more resort-oriented waterfront lifestyle — larger lots, deeper coves, and significantly lower price-per-acre, but with seasonal water-level fluctuations that affect dock usability in drought years. Lake Austin's constant level, downtown proximity, and Eanes / Austin ISD zoning command a substantial premium. Buyers who prioritize daily commute, urban convenience, and year-round water access choose Lake Austin; those who prioritize space, value, and a Hill Country resort feel often choose Lake Travis or [Lakeway](/communities/lakeway).
 
-### Lake Austin vs Westlake Hills
+### Lake Austin vs West lake Hills
 
-[Westlake Hills](/communities/westlake-hills) shares the Eanes ISD school zone but sits on the bluffs above the lake rather than at the water. Westlake offers more inventory, more architectural variety, and Hill Country views without the dock-and-boathouse maintenance profile of waterfront ownership. Lake Austin trades that breadth for direct water access, which carries an irreplaceable lifestyle and value premium.
+[West lake Hills](/communities/westlake-hills) shares the Eanes ISD school zone but sits on the bluffs above the lake rather than at the water. Westlake offers more inventory, more architectural variety, and Hill Country views without the dock-and-boathouse maintenance profile of waterfront ownership. Lake Austin trades that breadth for direct water access, which carries an irreplaceable lifestyle and value premium.
 
 ### Lake Austin vs Rob Roy / Davenport Ranch
 
@@ -1716,14 +1716,14 @@ Many Pemberton Heights properties represent generational wealth holdings. The ne
 ### Demand Resilience
 
 The neighborhood demonstrates remarkable demand resilience during market downturns, with values recovering faster than most Austin neighborhoods.`,
-    echelonPerspective: `Pemberton Heights is one of Austin's most quietly prestigious neighborhoods — a place where half-acre lots, mature live oaks, and distinguished architecture create a sense of permanence that few Austin communities can match. Located just north of Lady Bird Lake and west of Shoal Creek, the neighborhood is minutes from downtown dining, the Hike and Bike Trail, and Whole Foods Market's flagship store. Buyers here tend to be established professionals, legacy Austin families, and executives who want central proximity without sacrificing lot size or privacy. The housing stock includes Georgian colonials, stately traditionals, and contemporary rebuilds — many exceeding $500 per square foot for new construction. For those weighing alternatives, [Tarrytown](/communities/tarrytown) offers a more walkable village feel at a slightly lower entry point, while [Westlake Hills](/communities/westlake-hills) provides Eanes ISD schools and Hill Country views in a more suburban setting.`,
+    echelonPerspective: `Pemberton Heights is one of Austin's most quietly prestigious neighborhoods — a place where half-acre lots, mature live oaks, and distinguished architecture create a sense of permanence that few Austin communities can match. Located just north of Lady Bird Lake and west of Shoal Creek, the neighborhood is minutes from downtown dining, the Hike and Bike Trail, and Whole Foods Market's flagship store. Buyers here tend to be established professionals, legacy Austin families, and executives who want central proximity without sacrificing lot size or privacy. The housing stock includes Georgian colonials, stately traditionals, and contemporary rebuilds — many exceeding $500 per square foot for new construction. For those weighing alternatives, [Tarrytown](/communities/tarrytown) offers a more walkable village feel at a slightly lower entry point, while [West lake Hills](/communities/westlake-hills) provides Eanes ISD schools and Hill Country views in a more suburban setting.`,
     communityComparison: `### Pemberton Heights vs Tarrytown
 
 [Tarrytown](/communities/tarrytown) shares Pemberton Heights' central positioning and Austin ISD zoning, but offers a more eclectic architectural mix and a stronger walkable commercial corridor along Exposition Boulevard. Pemberton Heights provides larger lots, more estate-scale architecture, and a quieter residential feel. Buyers choosing between the two weigh walkable convenience (Tarrytown) against space and architectural gravitas (Pemberton Heights).
 
-### Pemberton Heights vs Westlake Hills
+### Pemberton Heights vs West lake Hills
 
-[Westlake Hills](/communities/westlake-hills) offers Eanes ISD schools and panoramic Hill Country views in a more suburban setting west of MoPac. Pemberton Heights trades those school ratings for central Austin walkability, proximity to downtown, and some of the most distinguished residential architecture in the city. Both communities attract high-net-worth buyers, but the lifestyle is fundamentally different — urban estate living versus Hill Country retreat.
+[West lake Hills](/communities/westlake-hills) offers Eanes ISD schools and panoramic Hill Country views in a more suburban setting west of MoPac. Pemberton Heights trades those school ratings for central Austin walkability, proximity to downtown, and some of the most distinguished residential architecture in the city. Both communities attract high-net-worth buyers, but the lifestyle is fundamentally different — urban estate living versus Hill Country retreat.
 
 ### Pemberton Heights vs Barton Creek
 
@@ -1731,7 +1731,7 @@ The neighborhood demonstrates remarkable demand resilience during market downtur
     relatedCommunities: ["tarrytown", "clarksville", "westlake-hills", "downtown"],
     faqs: [
       { question: "Is Pemberton Heights a good place to buy a luxury home in Austin?", answer: "Pemberton Heights is one of Austin's most prestigious residential addresses. Distinguished architecture, half-acre lots, mature oak canopy, and walk-to-downtown convenience make it a perennial favorite among luxury buyers seeking central Austin living." },
-      { question: "How does Pemberton Heights compare to nearby neighborhoods?", answer: "Pemberton Heights offers larger lots and more estate-scale architecture than neighboring Tarrytown and Clarksville, while maintaining similar central Austin convenience. Westlake Hills provides Eanes ISD but is more suburban. Barton Creek offers gated country club living. Pemberton Heights is the choice for buyers seeking distinguished central estates." },
+      { question: "How does Pemberton Heights compare to nearby neighborhoods?", answer: "Pemberton Heights offers larger lots and more estate-scale architecture than neighboring Tarrytown and Clarksville, while maintaining similar central Austin convenience. West lake Hills provides Eanes ISD but is more suburban. Barton Creek offers gated country club living. Pemberton Heights is the choice for buyers seeking distinguished central estates." },
       { question: "What types of homes are common in Pemberton Heights?", answer: "Pemberton Heights features Georgian colonials, traditional estates, Mediterranean-influenced homes, and contemporary rebuilds. Most properties sit on generous lots with mature landscaping, significant setbacks, and architectural distinction uncommon in central Austin." },
       { question: "Who typically buys in Pemberton Heights?", answer: "Typical buyers include established professionals, legacy Austin families, C-suite executives, and discerning relocating buyers who want proximity to downtown, Lady Bird Lake, and Austin's cultural core without sacrificing lot size or privacy." },
       { question: "What are home prices in Pemberton Heights?", answer: "Prices range from approximately $1.5M to over $10M for trophy estates on premium lots." },
@@ -1993,11 +1993,11 @@ The neighborhood has experienced increasing redevelopment activity, with several
 
 ### Value Positioning
 
-Balcones Park offers strong value relative to premium neighborhoods like Westlake Hills and Tarrytown, while providing comparable convenience and neighborhood character.
+Balcones Park offers strong value relative to premium neighborhoods like West lake Hills and Tarrytown, while providing comparable convenience and neighborhood character.
 
 ### Buyer Appeal
 
-The relatively affordable entry point compared to Westlake Hills and Tarrytown attracts families seeking northwest Austin's lifestyle with larger lots.`,
+The relatively affordable entry point compared to West lake Hills and Tarrytown attracts families seeking northwest Austin's lifestyle with larger lots.`,
     amenitiesAndSchools: `### Austin ISD Schools
 
 Balcones Park is served by Austin ISD, with access to well-regarded northwest Austin elementary, middle, and high schools.
@@ -2051,7 +2051,7 @@ Convenient location between downtown and the northwest tech corridor ensures bro
     metaDescription: "Explore luxury homes for sale in Rob Roy Austin TX. Gated Hill Country estates with panoramic views and homes from $1.5M to $20M+.",
     priceRange: "$1.5M – $20M+",
     image: robRoyImg,
-    overview: `Rob Roy is one of Austin's most exclusive luxury neighborhoods, located in the Westlake Hills area along the scenic bluffs of the Capital of Texas Highway (Loop 360) corridor. The community features several gated enclaves including Rob Roy, Rob Roy on the Creek, and Rob Roy on the Lake, each offering distinctive luxury living experiences.
+    overview: `Rob Roy is one of Austin's most exclusive luxury neighborhoods, located in the West lake Hills area along the scenic bluffs of the Capital of Texas Highway (Loop 360) corridor. The community features several gated enclaves including Rob Roy, Rob Roy on the Creek, and Rob Roy on the Lake, each offering distinctive luxury living experiences.
 
 ### Architectural Excellence
 
@@ -2059,7 +2059,7 @@ Homes in Rob Roy range from elegant traditional estates to contemporary architec
 
 ### Gated Exclusivity
 
-Rob Roy is served by the Eanes Independent School District and offers proximity to both downtown Austin and the Westlake Hills corridor. The community's gated security, large lot sizes, and architectural quality have made it a preferred address for Austin's most discerning buyers for decades.
+Rob Roy is served by the Eanes Independent School District and offers proximity to both downtown Austin and the West lake Hills corridor. The community's gated security, large lot sizes, and architectural quality have made it a preferred address for Austin's most discerning buyers for decades.
 
 `,
     lifestyle: `### Views & Privacy
@@ -2071,7 +2071,7 @@ The panoramic Hill Country views available from Rob Roy's hilltop lots are among
 - Barton Creek Greenbelt — accessible from several community entry points
 - Lake Austin — nearby for boating and waterfront dining
 - Wild Basin Wilderness Preserve — hiking and nature observation
-- Westlake Hills Country Club — golf, tennis, and swimming
+- West lake Hills Country Club — golf, tennis, and swimming
 
 ### Dining & Shopping
 
@@ -2110,7 +2110,7 @@ Nearby private schools include St. Andrew's Episcopal School, Regents School of 
 
 - Barton Creek Greenbelt — hiking, swimming, and mountain biking
 - Lake Austin — boating, paddleboarding, and waterfront dining
-- Westlake Hills Country Club — golf, tennis, and swimming
+- West lake Hills Country Club — golf, tennis, and swimming
 
 ### Shopping & Services
 
@@ -2130,10 +2130,10 @@ Properties in Rob Roy's premium sections — particularly those with exceptional
 ### Resilient Values
 
 Rob Roy has demonstrated strong value resilience during market downturns, with properties recovering faster than most Austin neighborhoods.`,
-    echelonPerspective: `Rob Roy is among the most exclusive gated communities in Austin, Texas — a collection of hilltop enclaves along the Loop 360 corridor where panoramic views, multi-acre lots, and Eanes ISD schools converge. The community is organized into distinct sections: Rob Roy proper (hilltop estates), Rob Roy on the Creek (properties along Barton Creek), and Rob Roy on the Lake (Lake Austin waterfront access). Buyers are drawn by the combination of gated privacy, architectural distinction, and proximity to both downtown and the Westlake Hills corridor. The housing stock features custom-built estates ranging from classic limestone traditionals to contemporary masterpieces with walls of glass oriented toward sweeping views. For buyers comparing options, [Westlake Hills](/communities/westlake-hills) offers a similar school district without gates, while [Barton Creek](/communities/barton-creek) provides country club amenities with a resort-caliber lifestyle.`,
-    communityComparison: `### Rob Roy vs Westlake Hills
+    echelonPerspective: `Rob Roy is among the most exclusive gated communities in Austin, Texas — a collection of hilltop enclaves along the Loop 360 corridor where panoramic views, multi-acre lots, and Eanes ISD schools converge. The community is organized into distinct sections: Rob Roy proper (hilltop estates), Rob Roy on the Creek (properties along Barton Creek), and Rob Roy on the Lake (Lake Austin waterfront access). Buyers are drawn by the combination of gated privacy, architectural distinction, and proximity to both downtown and the West lake Hills corridor. The housing stock features custom-built estates ranging from classic limestone traditionals to contemporary masterpieces with walls of glass oriented toward sweeping views. For buyers comparing options, [West lake Hills](/communities/westlake-hills) offers a similar school district without gates, while [Barton Creek](/communities/barton-creek) provides country club amenities with a resort-caliber lifestyle.`,
+    communityComparison: `### Rob Roy vs West lake Hills
 
-[Westlake Hills](/communities/westlake-hills) shares Eanes ISD zoning and a Hill Country setting, but is an independent incorporated city without gated entry. Rob Roy offers more exclusivity and larger lots within its guarded enclaves, while Westlake Hills provides a broader architectural range and a more integrated community feel. Both attract high-net-worth buyers; the choice often comes down to whether gated privacy or neighborhood accessibility is the priority.
+[West lake Hills](/communities/westlake-hills) shares Eanes ISD zoning and a Hill Country setting, but is an independent incorporated city without gated entry. Rob Roy offers more exclusivity and larger lots within its guarded enclaves, while West lake Hills provides a broader architectural range and a more integrated community feel. Both attract high-net-worth buyers; the choice often comes down to whether gated privacy or neighborhood accessibility is the priority.
 
 ### Rob Roy vs Barton Creek
 
@@ -2145,7 +2145,7 @@ Rob Roy has demonstrated strong value resilience during market downturns, with p
     relatedCommunities: ["westlake-hills", "barton-creek", "lake-austin", "spanish-oaks"],
     faqs: [
       { question: "Is Rob Roy a good place to buy a luxury home in Austin?", answer: "Rob Roy is one of Austin's most exclusive luxury communities, offering gated privacy, panoramic Hill Country views, Eanes ISD schools, and estate-scale architecture. Properties here have demonstrated strong value resilience and consistent appreciation." },
-      { question: "How does Rob Roy compare to nearby neighborhoods?", answer: "Rob Roy offers gated estate living with panoramic views. Westlake Hills provides a similar school district without gates. Barton Creek offers country club amenities with golf. Tarrytown provides walkable central Austin living. Rob Roy is the choice for buyers seeking maximum privacy and architectural distinction." },
+      { question: "How does Rob Roy compare to nearby neighborhoods?", answer: "Rob Roy offers gated estate living with panoramic views. West lake Hills provides a similar school district without gates. Barton Creek offers country club amenities with golf. Tarrytown provides walkable central Austin living. Rob Roy is the choice for buyers seeking maximum privacy and architectural distinction." },
       { question: "What types of homes are common in Rob Roy?", answer: "Custom-built estates dominate Rob Roy, ranging from classic Hill Country limestone homes to contemporary glass-and-steel masterpieces. Most properties feature generous lots, resort-style outdoor living areas, and orientation toward sweeping Hill Country or lake views." },
       { question: "Who typically buys in Rob Roy?", answer: "Buyers include C-suite executives, entrepreneurs, and high-net-worth families seeking gated privacy, Eanes ISD schools, and trophy-caliber architecture. The community also attracts second-home buyers from major metros drawn to its exclusive character." },
       { question: "What are home prices in Rob Roy?", answer: "Prices range from approximately $1.5M to over $20M for trophy estates with premium views, acreage, or waterfront access." },

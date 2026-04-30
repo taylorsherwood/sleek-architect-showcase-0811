@@ -66,7 +66,7 @@ const MeetTaylor = () => {
                 Known for his attention to detail and thoughtful approach to marketing, he helps clients navigate complex transactions with confidence while showcasing properties in their best possible light.
               </p>
               <p className="text-muted-foreground leading-[1.85] text-base md:text-xl mb-7">
-                With deep expertise across Austin's most sought-after neighborhoods — including Westlake Hills, Barton Creek, Tarrytown, and Lake Austin — Taylor works closely with buyers and sellers to ensure every transaction is handled with care, discretion, and strategic insight.
+                With deep expertise across Austin's most sought-after neighborhoods — including West lake Hills, Barton Creek, Tarrytown, and Lake Austin — Taylor works closely with buyers and sellers to ensure every transaction is handled with care, discretion, and strategic insight.
               </p>
               <a
                 href="https://www.instagram.com/theinvestorbroker"

@@ -163,7 +163,7 @@ const HomeValueAustin = () => {
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 For luxury properties in communities like{" "}
-                <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">Westlake Hills</Link>,{" "}
+                <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">West lake Hills</Link>,{" "}
                 <Link to="/communities/barton-creek" className="text-foreground underline hover:text-muted-foreground">Barton Creek</Link>,{" "}
                 <Link to="/communities/lake-austin" className="text-foreground underline hover:text-muted-foreground">Lake Austin</Link>, and{" "}
                 <Link to="/communities/tarrytown" className="text-foreground underline hover:text-muted-foreground">Tarrytown</Link>, 

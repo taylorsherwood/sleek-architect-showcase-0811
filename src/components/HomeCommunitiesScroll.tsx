@@ -16,7 +16,7 @@ const NEIGHBORHOODS = [
   { name: "Barton creek", image: card78746, stat: "Median sale: $3.2M", slug: "barton-creek" },
   { name: "Rollingwood", image: cardRollingwood, stat: "Avg DOM off-market: 14 days", slug: "rollingwood" },
   { name: "Old Enfield", image: cardOldEnfield, stat: "60% OF TRADES ARE PRIVATE", slug: "old-enfield" },
-  { name: "Westlake Hills", image: cardWestlake, stat: "Median sale: $4.1M", slug: "westlake-hills" },
+  { name: "West lake Hills", image: cardWestlake, stat: "Median sale: $4.1M", slug: "westlake-hills" },
   { name: "Tarrytown", image: cardDavenport, stat: "CENTRAL ACCESS TO AUSTIN", slug: "tarrytown" },
   { name: "Spanish Oaks", image: cardSpanishOaks, stat: "GUARD GATED GOLF ESTATES", slug: "spanish-oaks" },
 ];

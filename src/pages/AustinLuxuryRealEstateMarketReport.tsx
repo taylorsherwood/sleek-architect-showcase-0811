@@ -9,9 +9,9 @@ import RelatedInsights from "@/components/RelatedInsights";
 
 const faqs = [
   { question: "What defines luxury real estate in Austin Texas?", answer: "Luxury real estate in Austin generally begins at $1.5 million for single-family homes in premium neighborhoods. The core luxury tier spans $1.5M to $5M, while ultra-luxury encompasses Lake Austin waterfront estates, Hill Country ranches, and architectural masterpieces above $5M. Key indicators include location prestige, lot size, build quality, and access to top-rated school districts like Eanes ISD." },
-  { question: "Is Austin's luxury housing market a good investment in 2026?", answer: "Austin's luxury market fundamentals remain strong heading into 2026. Supply-constrained neighborhoods like Westlake Hills, Lake Austin, and Barton Creek continue to appreciate at 5-10% annually. The combination of tech-sector job growth, no state income tax, and sustained in-migration from coastal markets provides a durable demand foundation that supports long-term appreciation." },
-  { question: "How much have Austin luxury home prices increased?", answer: "Austin luxury home prices have appreciated significantly over the past decade. Median prices in top neighborhoods like Westlake Hills have increased from approximately $1.2M in 2016 to over $2.1M in 2026. Lake Austin waterfront has seen even steeper gains, with median prices exceeding $5M. While the pace moderated after the 2021-2022 peak, the long-term trend remains upward." },
-  { question: "What neighborhoods have the strongest luxury market performance?", answer: "Lake Austin waterfront leads with 8-12% annual appreciation and the highest absolute prices. Westlake Hills and Barton Creek deliver consistent 5-8% gains with deep buyer demand. Tarrytown offers strong central-city appreciation of 6-9%. Dripping Springs and Hill Country represent the fastest-growing luxury corridor with 8-12% gains on estate properties." },
+  { question: "Is Austin's luxury housing market a good investment in 2026?", answer: "Austin's luxury market fundamentals remain strong heading into 2026. Supply-constrained neighborhoods like West lake Hills, Lake Austin, and Barton Creek continue to appreciate at 5-10% annually. The combination of tech-sector job growth, no state income tax, and sustained in-migration from coastal markets provides a durable demand foundation that supports long-term appreciation." },
+  { question: "How much have Austin luxury home prices increased?", answer: "Austin luxury home prices have appreciated significantly over the past decade. Median prices in top neighborhoods like West lake Hills have increased from approximately $1.2M in 2016 to over $2.1M in 2026. Lake Austin waterfront has seen even steeper gains, with median prices exceeding $5M. While the pace moderated after the 2021-2022 peak, the long-term trend remains upward." },
+  { question: "What neighborhoods have the strongest luxury market performance?", answer: "Lake Austin waterfront leads with 8-12% annual appreciation and the highest absolute prices. West lake Hills and Barton Creek deliver consistent 5-8% gains with deep buyer demand. Tarrytown offers strong central-city appreciation of 6-9%. Dripping Springs and Hill Country represent the fastest-growing luxury corridor with 8-12% gains on estate properties." },
   { question: "Should luxury buyers act now or wait in Austin?", answer: "For buyers with a 5+ year horizon, current conditions favor purchasing in supply-constrained neighborhoods where inventory won't materially increase. Interest rate stabilization has improved purchasing power compared to 2023-2024. The strongest opportunity exists in acquiring quality properties in premium locations before the next appreciation cycle accelerates. Consult Echelon Property Group for a personalized market assessment." },
 ];
 
@@ -92,7 +92,7 @@ const AustinLuxuryRealEstateMarketReport = () => {
                   <span className="text-gold font-display">$5.4M+</span>
                 </div>
                 <div className="flex justify-between items-center border-b border-border pb-3">
-                  <span className="text-foreground font-medium">Westlake Hills median</span>
+                  <span className="text-foreground font-medium">West lake Hills median</span>
                   <span className="text-gold font-display">$2.1M+</span>
                 </div>
                 <div className="flex justify-between items-center border-b border-border pb-3">
@@ -105,7 +105,7 @@ const AustinLuxuryRealEstateMarketReport = () => {
                 </div>
               </div>
               <p className="text-muted-foreground leading-relaxed">
-                Price per square foot in premium neighborhoods ranges from $450 to $800+, with new construction in <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">Westlake Hills</Link> and <Link to="/communities/barton-creek" className="text-foreground underline hover:text-muted-foreground">Barton Creek</Link> commanding the highest premiums. Waterfront properties on <Link to="/communities/lake-austin" className="text-foreground underline hover:text-muted-foreground">Lake Austin</Link> consistently achieve price points that rival coastal luxury markets. The <Link to="/communities/lake-travis" className="text-foreground underline hover:text-muted-foreground">Lake Travis corridor</Link> — including <Link to="/communities/lakeway" className="text-foreground underline hover:text-muted-foreground">Lakeway</Link> and <Link to="/communities/steiner-ranch" className="text-foreground underline hover:text-muted-foreground">Steiner Ranch</Link> — offers waterfront living at more accessible price points while still commanding strong premiums.
+                Price per square foot in premium neighborhoods ranges from $450 to $800+, with new construction in <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">West lake Hills</Link> and <Link to="/communities/barton-creek" className="text-foreground underline hover:text-muted-foreground">Barton Creek</Link> commanding the highest premiums. Waterfront properties on <Link to="/communities/lake-austin" className="text-foreground underline hover:text-muted-foreground">Lake Austin</Link> consistently achieve price points that rival coastal luxury markets. The <Link to="/communities/lake-travis" className="text-foreground underline hover:text-muted-foreground">Lake Travis corridor</Link> — including <Link to="/communities/lakeway" className="text-foreground underline hover:text-muted-foreground">Lakeway</Link> and <Link to="/communities/steiner-ranch" className="text-foreground underline hover:text-muted-foreground">Steiner Ranch</Link> — offers waterfront living at more accessible price points while still commanding strong premiums.
               </p>
             </section>
 
@@ -137,7 +137,7 @@ const AustinLuxuryRealEstateMarketReport = () => {
               <div className="space-y-8">
                 <div className="border-l-2 border-gold pl-6">
                   <h3 className="text-xl font-display font-medium mb-2">
-                    <Link to="/communities/westlake-hills" className="hover:text-muted-foreground transition-colors">Westlake Hills</Link>
+                    <Link to="/communities/westlake-hills" className="hover:text-muted-foreground transition-colors">West lake Hills</Link>
                   </h3>
                   <p className="text-minimal text-gold mb-2">Median: $2.1M+ | Annual appreciation: 6–8%</p>
                   <p className="text-muted-foreground leading-relaxed">
@@ -225,7 +225,7 @@ const AustinLuxuryRealEstateMarketReport = () => {
 
               <h3 className="text-xl font-display font-medium mb-3">For Buyers</h3>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                The current market offers a window to acquire luxury properties at price points below the pandemic-era peaks while still capturing Austin's long-term growth trajectory. Buyers who act decisively in supply-constrained neighborhoods — particularly <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">Westlake Hills</Link> and <Link to="/communities/lake-austin" className="text-foreground underline hover:text-muted-foreground">Lake Austin</Link> — position themselves ahead of the next appreciation cycle. For those <Link to="/moving-to-austin-texas" className="text-foreground underline hover:text-muted-foreground">relocating to Austin</Link>, working with a local specialist is essential for navigating neighborhood nuances and accessing off-market inventory.
+                The current market offers a window to acquire luxury properties at price points below the pandemic-era peaks while still capturing Austin's long-term growth trajectory. Buyers who act decisively in supply-constrained neighborhoods — particularly <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">West lake Hills</Link> and <Link to="/communities/lake-austin" className="text-foreground underline hover:text-muted-foreground">Lake Austin</Link> — position themselves ahead of the next appreciation cycle. For those <Link to="/moving-to-austin-texas" className="text-foreground underline hover:text-muted-foreground">relocating to Austin</Link>, working with a local specialist is essential for navigating neighborhood nuances and accessing off-market inventory.
               </p>
 
               <h3 className="text-xl font-display font-medium mb-3">For Sellers</h3>

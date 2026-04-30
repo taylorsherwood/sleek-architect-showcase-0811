@@ -15,7 +15,7 @@ const featured = [
     slug: "lake-austin",
   },
   {
-    name: "Westlake Hills",
+    name: "West lake Hills",
     descriptor: "Scenic bluffs, top-rated schools",
     image: "/static-assets/community-westlake-hills.webp",
     slug: "westlake-hills",

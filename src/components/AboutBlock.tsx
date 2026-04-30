@@ -22,7 +22,7 @@ const AboutBlock = () => {
               For sellers, this means expanded visibility and reach across a powerful national agent network. For buyers and investors, it provides deeper market insights and access to opportunities that may not yet be widely available.
             </p>
             <p className="text-muted-foreground leading-relaxed text-sm">
-              Service areas include Westlake Hills, Tarrytown, Spanish Oaks, Northwest Hills, Barton Creek, and surrounding Austin communities.
+              Service areas include West lake Hills, Tarrytown, Spanish Oaks, Northwest Hills, Barton Creek, and surrounding Austin communities.
             </p>
           </div>
         </div>

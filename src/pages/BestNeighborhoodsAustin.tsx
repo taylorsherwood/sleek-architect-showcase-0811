@@ -12,17 +12,17 @@ const faqs = [
 {
   question: "What is the most expensive neighborhood in Austin?",
   answer:
-  "The most expensive neighborhoods in Austin include Westlake Hills, Barton Creek, Lake Austin Waterfront, Pemberton Heights, and Spanish Oaks. Trophy estates in these areas can exceed $15–25 million. Lake Austin waterfront properties command some of the highest per-foot prices in Texas."
+  "The most expensive neighborhoods in Austin include West lake Hills, Barton Creek, Lake Austin Waterfront, Pemberton Heights, and Spanish Oaks. Trophy estates in these areas can exceed $15–25 million. Lake Austin waterfront properties command some of the highest per-foot prices in Texas."
 },
 {
   question: "What is the best neighborhood in Austin for families?",
   answer:
-  "Westlake Hills and Barton Creek are top choices for families due to the Eanes Independent School District, consistently ranked among the best in Texas. Steiner Ranch and Dripping Springs also offer excellent schools and family-friendly amenities."
+  "West lake Hills and Barton Creek are top choices for families due to the Eanes Independent School District, consistently ranked among the best in Texas. Steiner Ranch and Dripping Springs also offer excellent schools and family-friendly amenities."
 },
 {
   question: "Where do wealthy people live in Austin?",
   answer:
-  "High-net-worth buyers concentrate in Westlake Hills, Barton Creek, Lake Austin Waterfront, Pemberton Heights, Rob Roy, and Spanish Oaks. Tech executives frequently choose Westlake Hills for Eanes ISD schools and proximity to downtown."
+  "High-net-worth buyers concentrate in West lake Hills, Barton Creek, Lake Austin Waterfront, Pemberton Heights, Rob Roy, and Spanish Oaks. Tech executives frequently choose West lake Hills for Eanes ISD schools and proximity to downtown."
 },
 {
   question: "What is the best area in Austin for walkability?",
@@ -37,22 +37,22 @@ const faqs = [
 {
   question: "What neighborhoods in Austin have the best views?",
   answer:
-  "Westlake Hills and Rob Roy offer panoramic Hill Country views from elevated lots. Lake Austin and Lake Travis provide stunning waterfront panoramas. Travis Heights is known for its iconic downtown skyline views across Lady Bird Lake."
+  "West lake Hills and Rob Roy offer panoramic Hill Country views from elevated lots. Lake Austin and Lake Travis provide stunning waterfront panoramas. Travis Heights is known for its iconic downtown skyline views across Lady Bird Lake."
 }];
 
 
 const luxuryNeighborhoods = [
 {
-  name: "Westlake Hills",
+  name: "West lake Hills",
   slug: "/westlake-hills-homes-for-sale",
   existingSlug: "/communities/westlake-hills",
   description:
-  "Westlake Hills is Austin's most sought-after luxury enclave, situated on scenic bluffs west of downtown overlooking the Hill Country and Lake Austin. The community is anchored by the acclaimed Eanes Independent School District.",
+  "West lake Hills is Austin's most sought-after luxury enclave, situated on scenic bluffs west of downtown overlooking the Hill Country and Lake Austin. The community is anchored by the acclaimed Eanes Independent School District.",
   architecture:
   "Contemporary masterpieces, mid-century estates, and custom Hill Country modern homes on generous lots with mature live oaks.",
   prices: "$1.2M – $20M+",
   lifestyle:
-  "World-class hiking at Barton Creek Greenbelt, boating on Lake Austin, dining along Bee Caves Road, and country club living at Westlake Hills Country Club."
+  "World-class hiking at Barton Creek Greenbelt, boating on Lake Austin, dining along Bee Caves Road, and country club living at West lake Hills Country Club."
 },
 {
   name: "Tarrytown",
@@ -414,7 +414,7 @@ const BestNeighborhoodsAustin = () => {
                   Austin's real estate market continues to rank among the strongest in the United States. The city's population growth, fueled by corporate relocations, tech expansion, and lifestyle migration, has created sustained demand across residential, commercial, and land segments.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  The luxury market — generally defined as homes above $1 million — has shown particular resilience. Neighborhoods like Westlake Hills, Barton Creek, and Lake Austin Waterfront have demonstrated 7–12% annual appreciation over the past decade, driven by limited inventory, top-tier schools, and Austin's economic fundamentals.
+                  The luxury market — generally defined as homes above $1 million — has shown particular resilience. Neighborhoods like West lake Hills, Barton Creek, and Lake Austin Waterfront have demonstrated 7–12% annual appreciation over the past decade, driven by limited inventory, top-tier schools, and Austin's economic fundamentals.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
                   Texas's lack of a state income tax remains a powerful draw for high-net-worth individuals and business owners relocating from California, New York, and other high-tax states. This migration pattern continues to support premium pricing in Austin's most desirable neighborhoods.

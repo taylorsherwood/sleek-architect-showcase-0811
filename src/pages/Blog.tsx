@@ -37,8 +37,8 @@ const Blog = () => {
         { name: "Blog", url: "https://www.echelonpropertygroup.com/blog" }
       ])} />
       <SchemaMarkup schema={createFAQSchema([
-        { question: "What is the Austin luxury real estate market like in 2026?", answer: "Austin's luxury market in 2026 continues to grow, driven by tech relocations, no state income tax, and limited high-end inventory in neighborhoods like Westlake Hills, Lake Austin, and Barton Creek. Demand from out-of-state buyers remains strong, particularly from California and New York." },
-        { question: "What neighborhoods are best for luxury homes in Austin?", answer: "The top luxury neighborhoods in Austin include Westlake Hills, Barton Creek, Lake Austin waterfront, Tarrytown, Rollingwood, Spanish Oaks, and Dripping Springs. Each offers distinct lifestyle benefits ranging from waterfront living to Hill Country estates and proximity to downtown." },
+        { question: "What is the Austin luxury real estate market like in 2026?", answer: "Austin's luxury market in 2026 continues to grow, driven by tech relocations, no state income tax, and limited high-end inventory in neighborhoods like West lake Hills, Lake Austin, and Barton Creek. Demand from out-of-state buyers remains strong, particularly from California and New York." },
+        { question: "What neighborhoods are best for luxury homes in Austin?", answer: "The top luxury neighborhoods in Austin include West lake Hills, Barton Creek, Lake Austin waterfront, Tarrytown, Rollingwood, Spanish Oaks, and Dripping Springs. Each offers distinct lifestyle benefits ranging from waterfront living to Hill Country estates and proximity to downtown." },
         { question: "How do I find off-market luxury homes in Austin?", answer: "Off-market properties are accessed through agent networks, private listings, and direct outreach. Working with a well-connected Austin luxury agent like Taylor Sherwood at Echelon Property Group provides access to exclusive inventory that never appears on public listing portals." },
         { question: "Is Austin a good place to invest in real estate?", answer: "Austin ranks among the top real estate investment markets in the U.S. thanks to strong population growth, a diversified tech economy, favorable tax environment, and consistent long-term appreciation. Both residential and commercial segments offer compelling opportunities for investors." },
       ])} />
@@ -168,7 +168,7 @@ const Blog = () => {
                 What We Cover
               </h3>
               <p>
-                Our editorial team publishes in-depth articles across a range of topics relevant to Austin luxury real estate. Market reports analyze pricing trends, inventory levels, and demand drivers across neighborhoods like Westlake Hills, Barton Creek, Lake Austin, Tarrytown, and Rollingwood. Neighborhood guides explore the lifestyle, amenities, schools, and investment potential of Austin's most sought-after communities.
+                Our editorial team publishes in-depth articles across a range of topics relevant to Austin luxury real estate. Market reports analyze pricing trends, inventory levels, and demand drivers across neighborhoods like West lake Hills, Barton Creek, Lake Austin, Tarrytown, and Rollingwood. Neighborhood guides explore the lifestyle, amenities, schools, and investment potential of Austin's most sought-after communities.
               </p>
               <p>
                 Investment-focused content examines commercial real estate opportunities, land acquisition strategies, 1031 exchange considerations, and portfolio diversification through Austin property. Our relocation guides help out-of-state buyers navigate Austin's neighborhoods, school districts, and lifestyle offerings with confidence.

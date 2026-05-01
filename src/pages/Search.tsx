@@ -304,6 +304,8 @@ const SearchPage = () => {
         </div>
       </section>
 
+      <div className="h-12 md:h-20 bg-background" aria-hidden="true" />
+
       {/* ── Off-Market Access CTA ── */}
       <section
         className="relative overflow-hidden px-6 py-16 md:py-24"

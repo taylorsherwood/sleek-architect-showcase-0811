@@ -85,7 +85,7 @@ const SearchPage = () => {
           />
           <div className="absolute inset-0 bg-[#0C0F24]/45" />
         </div>
-        <div className="relative container mx-auto px-6 pt-12 md:pt-20 lg:pt-24">
+        <div className="relative container mx-auto px-6 pt-4 md:pt-8 lg:pt-10">
           <div className="max-w-xl">
             <p
               className="text-minimal text-gold mb-4 reveal"

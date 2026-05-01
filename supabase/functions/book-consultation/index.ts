@@ -39,6 +39,26 @@ function escapeHtml(s: string): string {
   }[c] as string));
 }
 
+function utf8ToBase64(str: string): string {
+  const bytes = new TextEncoder().encode(str);
+  let binary = "";
+  for (const b of bytes) binary += String.fromCharCode(b);
+  return btoa(binary);
+}
+
+// RFC 2047 encoded-word for headers (Subject, display names) so non-ASCII
+// characters like em-dashes render correctly in every mail client.
+function encodeHeader(str: string): string {
+  // eslint-disable-next-line no-control-regex
+  if (/^[\x00-\x7F]*$/.test(str)) return str;
+  return `=?UTF-8?B?${utf8ToBase64(str)}?=`;
+}
+
+// Wrap a base64 string at 76 chars per line (RFC 2045).
+function wrapBase64(b64: string): string {
+  return b64.match(/.{1,76}/g)?.join("\r\n") ?? b64;
+}
+
 function buildRawEmail(opts: {
   to: string;
   toName: string;
@@ -47,39 +67,45 @@ function buildRawEmail(opts: {
   text: string;
 }): string {
   const boundary = `b_${crypto.randomUUID().replace(/-/g, "")}`;
+  const fromName = encodeHeader(HOST_NAME);
+  const toName = encodeHeader(opts.toName);
+
   const headers = [
-    `From: "${HOST_NAME}" <${HOST_EMAIL}>`,
-    `To: "${opts.toName}" <${opts.to}>`,
-    `Reply-To: "${HOST_NAME}" <${HOST_EMAIL}>`,
-    `Subject: ${opts.subject}`,
+    `From: "${fromName}" <${HOST_EMAIL}>`,
+    `To: "${toName}" <${opts.to}>`,
+    `Reply-To: "${fromName}" <${HOST_EMAIL}>`,
+    `Subject: ${encodeHeader(opts.subject)}`,
     `MIME-Version: 1.0`,
     `Content-Type: multipart/alternative; boundary="${boundary}"`,
   ].join("\r\n");
+
+  const textB64 = wrapBase64(utf8ToBase64(opts.text));
+  const htmlB64 = wrapBase64(utf8ToBase64(opts.html));
 
   const body = [
     "",
     `--${boundary}`,
     `Content-Type: text/plain; charset="UTF-8"`,
-    `Content-Transfer-Encoding: 7bit`,
+    `Content-Transfer-Encoding: base64`,
     "",
-    opts.text,
+    textB64,
     "",
     `--${boundary}`,
     `Content-Type: text/html; charset="UTF-8"`,
-    `Content-Transfer-Encoding: 7bit`,
+    `Content-Transfer-Encoding: base64`,
     "",
-    opts.html,
+    htmlB64,
     "",
     `--${boundary}--`,
     "",
   ].join("\r\n");
 
   const raw = headers + "\r\n" + body;
-  // base64url encode (Gmail API requirement)
-  const bytes = new TextEncoder().encode(raw);
-  let binary = "";
-  for (const b of bytes) binary += String.fromCharCode(b);
-  return btoa(binary).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+  // base64url encode the whole MIME message (Gmail API requirement)
+  return utf8ToBase64(raw)
+    .replace(/\+/g, "-")
+    .replace(/\//g, "_")
+    .replace(/=+$/, "");
 }
 
 Deno.serve(async (req) => {

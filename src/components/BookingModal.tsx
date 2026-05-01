@@ -146,6 +146,7 @@ const BookingModal = ({ open, onOpenChange }: BookingModalProps) => {
     const dateStr = format(selectedSlot.date, "EEEE, MMMM d, yyyy");
     const message = `Consultation booking for ${dateStr} at ${selectedSlot.time} — 15 min phone call`;
 
+    // 1. Zapier remains the system of record — fire first.
     await submitLeadToZapier(
       {
         name: formData.name,
@@ -160,6 +161,29 @@ const BookingModal = ({ open, onOpenChange }: BookingModalProps) => {
       },
       ZAPIER_BOOKING_WEBHOOK
     );
+
+    // 2. Create the Google Calendar event (with invite to the visitor) and
+    //    send the branded Gmail confirmation. Failures here don't block
+    //    the user — they still see the confirmation step.
+    try {
+      const supabase = await getBrowserSupabaseClient();
+      if (supabase) {
+        await supabase.functions.invoke("book-consultation", {
+          body: {
+            name: formData.name,
+            email: formData.email,
+            phone: formData.phone,
+            startISO: selectedSlot.date.toISOString(),
+            durationMinutes: 15,
+            displayDate: dateStr,
+            displayTime: selectedSlot.time,
+          },
+        });
+      }
+    } catch (err) {
+      // eslint-disable-next-line no-console
+      console.warn("[BookingModal] book-consultation invoke failed:", err);
+    }
 
     setStep("confirmed");
     setIsSubmitting(false);

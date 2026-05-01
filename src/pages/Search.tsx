@@ -83,27 +83,28 @@ const SearchPage = () => {
             loading="eager"
             decoding="async"
           />
-          <div className="absolute inset-0 bg-[#0C0F24]/45" />
+          <div className="absolute inset-0 bg-[#0C0F24]/55" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0C0F24]/60 via-[#0C0F24]/30 to-transparent" />
         </div>
         <div className="relative container mx-auto px-6 pt-24 md:pt-32 lg:pt-36">
           <div className="max-w-xl">
             <p
               className="text-minimal text-gold mb-4 reveal"
-              style={{ textShadow: "0 1px 12px rgba(12, 15, 36, 0.55)" }}
+              style={{ textShadow: "0 0 24px rgba(12, 15, 36, 0.85), 0 2px 16px rgba(12, 15, 36, 0.7)" }}
             >
               AUSTIN REAL ESTATE
             </p>
             <h1
               className="text-3xl sm:text-2xl sm:text-4xl md:text-6xl font-display font-normal text-primary-foreground leading-[1.1] mb-6 reveal"
-              style={{ textShadow: "0 2px 24px rgba(12, 15, 36, 0.6), 0 1px 3px rgba(12, 15, 36, 0.45)" }}
+              style={{ textShadow: "0 0 40px rgba(12, 15, 36, 0.85), 0 2px 28px rgba(12, 15, 36, 0.75), 0 1px 4px rgba(12, 15, 36, 0.6)" }}
             >
               Search All
               <br />
               Listings
             </h1>
             <p
-              className="text-primary-foreground/70 text-lg max-w-lg mb-8 reveal-delayed"
-              style={{ textShadow: "0 1px 14px rgba(12, 15, 36, 0.55)" }}
+              className="text-primary-foreground/85 text-lg max-w-lg mb-8 reveal-delayed"
+              style={{ textShadow: "0 0 28px rgba(12, 15, 36, 0.85), 0 2px 18px rgba(12, 15, 36, 0.7)" }}
             >
               Explore every available home across Austin, from luxury estates to condos, new construction, and investment opportunities.
             </p>

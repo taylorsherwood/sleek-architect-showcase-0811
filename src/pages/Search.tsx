@@ -107,6 +107,30 @@ const SearchPage = () => {
             >
               Explore every available home across Austin, from luxury estates to condos, new construction, and investment opportunities.
             </p>
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-8 reveal-delayed-2">
+              <button
+                type="button"
+                onClick={() =>
+                  document
+                    .getElementById("echelon-listings")
+                    ?.scrollIntoView({ behavior: "smooth", block: "start" })
+                }
+                className="group inline-flex items-center justify-center px-7 py-3 text-sm tracking-[0.18em] uppercase font-medium border transition-colors duration-300 bg-[#b9a06c] text-white border-[#b9a06c] hover:bg-white hover:text-[#b9a06c]"
+              >
+                See Echelon Listings
+              </button>
+              <button
+                type="button"
+                onClick={() =>
+                  document
+                    .getElementById("off-market-access")
+                    ?.scrollIntoView({ behavior: "smooth", block: "start" })
+                }
+                className="group inline-flex items-center justify-center px-7 py-3 text-sm tracking-[0.18em] uppercase font-medium border border-white/40 text-white bg-white/10 backdrop-blur-md transition-colors duration-300 hover:bg-[#b9a06c] hover:text-white hover:border-[#b9a06c]"
+              >
+                Access Off-Market Listings
+              </button>
+            </div>
             {filterSummary && (
               <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-warm-cream/20 text-warm-cream/80 text-sm font-light reveal-delayed-2">
                 <span>Filtering:</span>

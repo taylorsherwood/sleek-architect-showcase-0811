@@ -221,6 +221,11 @@ const SearchPage = () => {
           </ScrollReveal>
       </section>
 
+      {/* Featured properties (mirrors home page) */}
+      <Suspense fallback={<div className="min-h-[400px] bg-secondary" />}>
+        <FeaturedProperties />
+      </Suspense>
+
       {/* Listings widget */}
       <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-6">

@@ -43,6 +43,25 @@ const RealScoutListings = lazy(() => import("@/components/RealScoutListings"));
 const Testimonials = lazy(() => import("@/components/Testimonials"));
 const FeaturedProperties = lazy(() => import("@/components/FeaturedProperties"));
 
+// Slow, eased scroll for hero CTAs (≈1.8s, easeInOutCubic)
+const slowScrollTo = (elementId: string, duration = 1800) => {
+  const el = document.getElementById(elementId);
+  if (!el) return;
+  const startY = window.scrollY || window.pageYOffset;
+  const targetY = el.getBoundingClientRect().top + startY - 80; // offset for nav
+  const distance = targetY - startY;
+  const startTime = performance.now();
+  const ease = (t: number) =>
+    t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+
+  const step = (now: number) => {
+    const elapsed = now - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    window.scrollTo(0, startY + distance * ease(progress));
+    if (progress < 1) requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
+};
 const SearchPage = () => {
   const [searchParams] = useSearchParams();
   const location = searchParams.get("location") || "";

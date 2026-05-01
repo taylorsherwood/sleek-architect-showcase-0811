@@ -706,13 +706,13 @@ const TestimonialsSection = () => {
   }, [userPaused]);
 
   // Desktop / iPad — auto-rotate AFTER the scroll-driven walk has reached
-  // testimonial #2 (active >= 1). This lets scroll govern the first two,
-  // then auto-rotation continues for users who linger or have scrolled past.
+  // testimonial #4 (active >= 3). Scroll governs the first four, then
+  // auto-rotation continues for users who linger or scroll past.
   useEffect(() => {
     if (typeof window === "undefined") return;
     if (!window.matchMedia("(min-width: 768px)").matches) return;
     if (!revealed) return;
-    if (active < 1) return;
+    if (active < 3) return;
     if (userPaused) return;
     const timer = setInterval(() => setActive((p) => (p + 1) % testimonials.length), 4000);
     return () => clearInterval(timer);

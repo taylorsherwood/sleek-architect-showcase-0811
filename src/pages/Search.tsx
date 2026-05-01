@@ -129,11 +129,7 @@ const SearchPage = () => {
             <div className="flex flex-col sm:flex-row gap-4 mb-8 reveal-delayed-2">
               <button
                 type="button"
-                onClick={() =>
-                  document
-                    .getElementById("echelon-listings")
-                    ?.scrollIntoView({ behavior: "smooth", block: "start" })
-                }
+                onClick={() => slowScrollTo("echelon-listings")}
                 className="inline-block text-center px-6 py-[14px] cursor-pointer"
                 style={{
                   fontFamily: '"Jost", sans-serif',
@@ -167,11 +163,7 @@ const SearchPage = () => {
               </button>
               <button
                 type="button"
-                onClick={() =>
-                  document
-                    .getElementById("off-market-access")
-                    ?.scrollIntoView({ behavior: "smooth", block: "start" })
-                }
+                onClick={() => slowScrollTo("off-market-access")}
                 className="inline-block text-center px-6 py-[14px] cursor-pointer"
                 style={{
                   fontFamily: '"Jost", sans-serif',

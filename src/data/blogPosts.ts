@@ -3,6 +3,7 @@ import blogMinimalist from "@/assets/blog-minimalist-living.jpg";
 import blogUrban from "@/assets/blog-urban-planning.jpg";
 import blog2300BartonCreek from "@/assets/2300-barton-creek-blvd.jpg";
 import blogSellPrivately from "@/assets/blog-sell-privately.webp";
+import blog78746Guide from "@/assets/blog-78746-luxury-homes-guide.jpg";
 
 export interface BlogPost {
   id: string;

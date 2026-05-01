@@ -104,25 +104,32 @@ const Hero = () => {
     transition: `opacity 0.9s cubic-bezier(0.16,1,0.3,1) ${delay}, transform 0.9s cubic-bezier(0.16,1,0.3,1) ${delay}`,
   });
 
-  // Default to desktop poster; once ready, use the correct one
-  const posterSrc = isMobileHero ? "/images/hero-mobile-austin-v2.webp" : "/images/hero-poster.webp";
-
   return (
     <>
     <section ref={sectionRef} id="hero-section" className="relative min-h-[640px] md:min-h-[720px] lg:h-[820px] xl:h-[860px] 2xl:h-[880px] flex flex-col justify-end overflow-hidden bg-primary">
-      {/* Poster image — ALWAYS rendered so users see an instant hero frame.
-          Mobile uses the mobile poster; desktop uses the desktop poster, which sits behind the
-          <video> until it's ready (prevents the "dark hero while video buffers" lag). */}
+      {/* Poster images — BOTH rendered with CSS media queries so the correct one paints
+          instantly regardless of SSR assumptions (no JS-driven swap on hydration). */}
       <img
-        src={posterSrc}
+        src="/images/hero-mobile-austin-v2.webp"
         alt="Austin Texas skyline"
-        className="absolute inset-0 w-full h-full object-cover"
+        className="hero-poster-mobile absolute inset-0 w-full h-full object-cover md:hidden"
         style={{ zIndex: 0 }}
         loading="eager"
         fetchPriority="high"
         decoding="async"
-        width={isMobileHero ? 780 : 1920}
-        height={isMobileHero ? 1385 : 1080}
+        width={780}
+        height={1385}
+      />
+      <img
+        src="/images/hero-poster.webp"
+        alt="Austin Texas skyline"
+        className="hero-poster-desktop absolute inset-0 w-full h-full object-cover hidden md:block"
+        style={{ zIndex: 0 }}
+        loading="eager"
+        fetchPriority="high"
+        decoding="async"
+        width={1920}
+        height={1080}
       />
 
       {/* Video — desktop only. Fades in over the poster once it can play. */}
@@ -132,7 +139,7 @@ const Hero = () => {
             className={`hero-bg-video transition-opacity duration-700 ${videoReady ? "opacity-100" : "opacity-0"}`}
             style={{ willChange: "opacity" }} tabIndex={-1}
             width={1920} height={1080}
-            poster={posterSrc}
+            poster="/images/hero-poster.webp"
           >
             <source src="/videos/hero-video.mp4" type="video/mp4" />
           </video>

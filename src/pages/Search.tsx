@@ -77,7 +77,7 @@ const SearchPage = () => {
         <div className="absolute inset-0">
           <img
             src={heroSearchImg}
-            alt="Sunlit Austin home with bougainvillea in bloom against a clear blue sky"
+            alt="Modern Austin luxury living room with curved sofa, sheer drapery, and warm wood accents"
             title="Search Austin homes for sale"
             className="w-full h-full object-cover"
             loading="eager"

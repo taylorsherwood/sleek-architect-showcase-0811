@@ -127,7 +127,7 @@ Well-positioned homes with disciplined pricing often trade quickly, sometimes be
 ### Should I buy in 78746 or in Barton Creek or Spanish Oaks instead?
 
 It depends on lifestyle priorities. 78746 favors closer-in convenience and Eanes schools. <a href="/communities/barton-creek" class="text-foreground underline hover:text-muted-foreground">Barton Creek</a> and <a href="/communities/spanish-oaks" class="text-foreground underline hover:text-muted-foreground">Spanish Oaks</a> offer more gated, club-oriented estate environments. The right answer is property-specific, not ZIP-specific.
-    \`,
+    `,
     author: "Taylor Sherwood",
     date: "2026-05-01",
     readTime: "9 min read",

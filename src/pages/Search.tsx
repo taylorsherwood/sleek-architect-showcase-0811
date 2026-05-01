@@ -107,7 +107,7 @@ const SearchPage = () => {
             >
               Explore every available home across Austin, from luxury estates to condos, new construction, and investment opportunities.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-8 reveal-delayed-2">
+            <div className="flex flex-col sm:flex-row gap-4 mb-8 reveal-delayed-2">
               <button
                 type="button"
                 onClick={() =>
@@ -115,7 +115,34 @@ const SearchPage = () => {
                     .getElementById("echelon-listings")
                     ?.scrollIntoView({ behavior: "smooth", block: "start" })
                 }
-                className="group inline-flex items-center justify-center px-7 py-3 text-sm tracking-[0.18em] uppercase font-medium border transition-colors duration-300 bg-[#b9a06c] text-white border-[#b9a06c] hover:bg-white hover:text-[#b9a06c]"
+                className="inline-block text-center px-6 py-[14px] cursor-pointer"
+                style={{
+                  fontFamily: '"Jost", sans-serif',
+                  fontSize: "11px",
+                  letterSpacing: "0.18em",
+                  textTransform: "uppercase",
+                  fontWeight: 500,
+                  border: "2px solid #b9a06c",
+                  color: "#fff",
+                  background: "#b9a06c",
+                  boxShadow: "0 2px 8px rgba(0,0,0,0.4)",
+                  transform: "translateX(0) translateZ(0)",
+                  willChange: "transform, box-shadow",
+                  transition:
+                    "transform 250ms ease, box-shadow 250ms ease, background 250ms ease, border-color 250ms ease, color 250ms ease",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = "translateX(3px) translateZ(0)";
+                  e.currentTarget.style.background = "#fff";
+                  e.currentTarget.style.borderColor = "#fff";
+                  e.currentTarget.style.color = "#b9a06c";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = "translateX(0) translateZ(0)";
+                  e.currentTarget.style.background = "#b9a06c";
+                  e.currentTarget.style.borderColor = "#b9a06c";
+                  e.currentTarget.style.color = "#fff";
+                }}
               >
                 See Echelon Listings
               </button>
@@ -126,7 +153,35 @@ const SearchPage = () => {
                     .getElementById("off-market-access")
                     ?.scrollIntoView({ behavior: "smooth", block: "start" })
                 }
-                className="group inline-flex items-center justify-center px-7 py-3 text-sm tracking-[0.18em] uppercase font-medium border border-white/40 text-white bg-white/10 backdrop-blur-md transition-colors duration-300 hover:bg-[#b9a06c] hover:text-white hover:border-[#b9a06c]"
+                className="inline-block text-center px-6 py-[14px] cursor-pointer"
+                style={{
+                  fontFamily: '"Jost", sans-serif',
+                  fontSize: "11px",
+                  letterSpacing: "0.18em",
+                  textTransform: "uppercase",
+                  fontWeight: 400,
+                  border: "1px solid rgba(255,255,255,0.52)",
+                  color: "rgba(255,255,255,0.95)",
+                  background: "rgba(10,14,25,0.28)",
+                  backdropFilter: "blur(8px)",
+                  WebkitBackdropFilter: "blur(8px)",
+                  transform: "translateX(0) translateZ(0)",
+                  willChange: "transform, background, border-color",
+                  transition:
+                    "transform 250ms ease, background 250ms ease, border-color 250ms ease, color 250ms ease",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = "translateX(3px) translateZ(0)";
+                  e.currentTarget.style.background = "#b9a06c";
+                  e.currentTarget.style.borderColor = "#b9a06c";
+                  e.currentTarget.style.color = "#fff";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = "translateX(0) translateZ(0)";
+                  e.currentTarget.style.background = "rgba(10,14,25,0.28)";
+                  e.currentTarget.style.borderColor = "rgba(255,255,255,0.52)";
+                  e.currentTarget.style.color = "rgba(255,255,255,0.95)";
+                }}
               >
                 Access Off-Market Listings
               </button>

@@ -706,13 +706,13 @@ const TestimonialsSection = () => {
   }, [userPaused]);
 
   // Desktop / iPad — auto-rotate AFTER the scroll-driven walk has reached
-  // testimonial #2 (active >= 1). This lets scroll govern the first two,
-  // then auto-rotation continues for users who linger or have scrolled past.
+  // testimonial #4 (active >= 3). Scroll governs the first four, then
+  // auto-rotation continues for users who linger or scroll past.
   useEffect(() => {
     if (typeof window === "undefined") return;
     if (!window.matchMedia("(min-width: 768px)").matches) return;
     if (!revealed) return;
-    if (active < 1) return;
+    if (active < 3) return;
     if (userPaused) return;
     const timer = setInterval(() => setActive((p) => (p + 1) % testimonials.length), 4000);
     return () => clearInterval(timer);
@@ -737,15 +737,15 @@ const TestimonialsSection = () => {
       gsap.set(".tsplit-attribution", { opacity: 0, y: 12, filter: "blur(6px)" });
       gsap.set(".tsplit-overlay", { opacity: 1, y: 0, filter: "blur(0px)" });
 
-      // Pin runs longer now: first ~50% of progress drives the split-reveal,
-      // remaining ~50% drives a scroll-controlled walk through the first
-      // two testimonials before the page is released. Auto-rotation takes
+      // Pin runs longer now: first ~33% of progress drives the split-reveal,
+      // remaining ~67% drives a scroll-controlled walk through the first
+      // four testimonials before the page is released. Auto-rotation takes
       // over for any user who lingers in the pinned end-state.
       gsap.timeline({
         scrollTrigger: {
           trigger: root,
           start: "top top",
-          end: "+=320%",
+          end: "+=520%",
           pin: true,
           pinSpacing: true,
           scrub: 2,
@@ -753,19 +753,23 @@ const TestimonialsSection = () => {
           invalidateOnRefresh: true,
           onUpdate: (self) => {
             // One-way reveal: once opened, stay open (prevents stuck blur on slow scroll-back)
-            if (self.progress >= 0.33 && !hasOpenedRef.current) {
+            if (self.progress >= 0.22 && !hasOpenedRef.current) {
               hasOpenedRef.current = true;
               setRevealed(true);
             }
-            // Scroll-driven walk through first two testimonials.
-            // 0.00 – 0.50 = split-reveal phase (testimonial index 0 visible)
-            // 0.50 – 0.78 = testimonial 0 holds
-            // 0.78 – 1.00 = testimonial 1 takes over, then release
-            if (self.progress >= 0.78) {
-              setActive((prev) => (prev === 0 ? 1 : prev));
-            } else if (self.progress >= 0.33) {
-              setActive((prev) => (prev > 1 ? prev : 0));
-            }
+            // Scroll-driven walk through first four testimonials.
+            // 0.00 – 0.22 = split-reveal phase (testimonial 0 visible)
+            // 0.22 – 0.45 = testimonial 0 holds
+            // 0.45 – 0.62 = testimonial 1
+            // 0.62 – 0.79 = testimonial 2
+            // 0.79 – 1.00 = testimonial 3, then release
+            const p = self.progress;
+            let target = 0;
+            if (p >= 0.79) target = 3;
+            else if (p >= 0.62) target = 2;
+            else if (p >= 0.45) target = 1;
+            else target = 0;
+            setActive((prev) => (prev > 3 ? prev : target));
           },
         },
       })
@@ -774,9 +778,9 @@ const TestimonialsSection = () => {
         .to(".tsplit-right", { xPercent: 100, ease: "expo.inOut", duration: 0.6 }, 0.35)
         .to(".tsplit-line", { opacity: 1, y: 0, filter: "blur(0px)", ease: "power3.out", stagger: 0.15, duration: 0.6 }, 0.65)
         .to(".tsplit-attribution", { opacity: 1, y: 0, filter: "blur(0px)", ease: "power2.out", duration: 0.5 }, 1.05)
-        // Long tail keeps the section pinned long enough for testimonial 0
-        // to read, then for testimonial 1 to take over before release.
-        .to({}, { duration: 1.6 });
+        // Long tail keeps the section pinned long enough for testimonials
+        // 0 → 3 to each have time to read before release.
+        .to({}, { duration: 3.4 });
     }, root);
 
     return () => {

@@ -984,6 +984,8 @@ const TestimonialsSection = () => {
             alt="Lake Austin luxury waterfront estate at golden hour"
             className="tsplit-image absolute inset-y-0 left-0 h-full w-screen max-w-none object-cover will-change-transform"
             decoding="async"
+            loading="eager"
+            fetchPriority="high"
           />
         </div>
 
@@ -994,6 +996,7 @@ const TestimonialsSection = () => {
             aria-hidden="true"
             className="tsplit-image absolute inset-y-0 right-0 h-full w-screen max-w-none object-cover will-change-transform"
             decoding="async"
+            loading="eager"
           />
         </div>
 

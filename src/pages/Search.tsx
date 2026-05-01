@@ -140,7 +140,7 @@ const SearchPage = () => {
       </Suspense>
 
       {/* Listings widget */}
-      <section className="py-16 md:py-24 bg-background">
+      <section id="echelon-listings" className="py-16 md:py-24 bg-background scroll-mt-24">
         <div className="container mx-auto px-6">
           <ScrollReveal>
             <Suspense
@@ -308,7 +308,8 @@ const SearchPage = () => {
 
       {/* ── Off-Market Access CTA ── */}
       <section
-        className="relative overflow-hidden px-6 py-16 md:py-24"
+        id="off-market-access"
+        className="relative overflow-hidden px-6 py-16 md:py-24 scroll-mt-24"
         style={{
           background:
             "linear-gradient(180deg, hsl(233 50% 9%) 0%, hsl(233 50% 14%) 100%)",

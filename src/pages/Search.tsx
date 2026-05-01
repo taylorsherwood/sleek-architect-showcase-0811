@@ -41,6 +41,7 @@ const Footer = lazy(() => import("@/components/Footer"));
 const RealScoutSearch = lazy(() => import("@/components/RealScoutSearch"));
 const RealScoutListings = lazy(() => import("@/components/RealScoutListings"));
 const Testimonials = lazy(() => import("@/components/Testimonials"));
+const FeaturedProperties = lazy(() => import("@/components/FeaturedProperties"));
 
 const SearchPage = () => {
   const [searchParams] = useSearchParams();
@@ -219,6 +220,11 @@ const SearchPage = () => {
             </div>
           </ScrollReveal>
       </section>
+
+      {/* Featured properties (mirrors home page) */}
+      <Suspense fallback={<div className="min-h-[400px] bg-secondary" />}>
+        <FeaturedProperties />
+      </Suspense>
 
       {/* Listings widget */}
       <section className="py-16 md:py-24 bg-background">

@@ -27,7 +27,7 @@ const properties = [
     price: "$5,950,000",
     beds: 5, baths: 5, sqft: "—",
     link: "/off-market-real-estate-austin",
-    badge: "LUXURY LISTING",
+    badge: "PRIVATE LISTING",
   },
 ];
 

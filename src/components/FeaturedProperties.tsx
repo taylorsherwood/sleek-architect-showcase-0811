@@ -24,7 +24,7 @@ const properties = [
     image: "/static-assets/listing-westlake-hills-private.webp",
     address: "Address withheld",
     location: "West lake Hills",
-    price: "$3,950,000",
+    price: "$5,950,000",
     beds: 5, baths: 5, sqft: "—",
     link: "/off-market-real-estate-austin",
     badge: "LUXURY LISTING",

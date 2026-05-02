@@ -21,9 +21,9 @@ const properties = [
     badge: "Private Market Opportunity",
   },
   {
-    image: "/static-assets/listing-westlake-hills-private.webp",
+    image: "/static-assets/listing-westlake-hills-private.avif",
     address: "Address withheld",
-    location: "West lake Hills",
+    location: "West Lake Hills",
     price: "$5,950,000",
     beds: 5, baths: 5, sqft: "—",
     link: "/off-market-real-estate-austin",

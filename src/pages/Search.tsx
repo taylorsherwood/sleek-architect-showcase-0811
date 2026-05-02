@@ -13,7 +13,7 @@ import killeenPortfolio from "@/assets/commercial-killeen-portfolio.jpg";
 import s11thStreet from "@/assets/commercial-s-11th-street.webp";
 
 const LOCATION_LABELS: Record<string, string> = {
-  "westlake-hills": "West lake Hills",
+  "westlake-hills": "West Lake Hills",
   "barton-creek": "Barton Creek",
   "lake-austin": "Lake Austin",
   "tarrytown": "Tarrytown",

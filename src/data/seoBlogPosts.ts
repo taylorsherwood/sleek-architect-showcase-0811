@@ -28,6 +28,7 @@ import blogBestAustinEnclavesForPrivacy from "@/assets/blog-best-austin-enclaves
 import blogBuyingLuxuryOutOfState from "@/assets/blog-buying-luxury-out-of-state-hero.jpg";
 import blogOffMarketHomesAustinHero from "@/assets/blog-off-market-homes-austin-hero.jpg";
 import blogWealthBuildingLuxury from "@/assets/blog-wealth-building-luxury-real-estate.jpg";
+import blogNewConstructionAustin from "@/assets/blog-new-construction-austin.jpg";
 
 import { BlogPost } from "./blogPosts";
 
@@ -3161,5 +3162,18 @@ Luxury real estate can be a meaningful wealth-building tool, but only when appro
     category: "INVESTMENT",
     image: blogWealthBuildingLuxury,
     heroImage: blogWealthBuildingLuxury
+  },
+  {
+    id: "new-construction-austin-what-wins",
+    title: "New Construction in Austin: What Wins",
+    metaTitle: "New Construction in Austin: What Wins | Echelon Property Group",
+    excerpt: "PLACEHOLDER - awaiting copy.",
+    content: `PLACEHOLDER - awaiting copy.`,
+    author: "Taylor Sherwood",
+    date: "2026-05-03",
+    readTime: "9 min read",
+    category: "INVESTMENT",
+    image: blogNewConstructionAustin,
+    heroImage: blogNewConstructionAustin
   }
 ];

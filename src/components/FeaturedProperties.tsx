@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import ScrollReveal from "@/components/ScrollReveal";
+import gillisStreet from "@/assets/commercial-gillis-street.jpg";
 
 const properties = [
   {
@@ -12,13 +13,14 @@ const properties = [
     badge: "LUXURY LISTING",
   },
   {
-    image: "/static-assets/listing-3.webp",
-    address: "Ranch Estate on 42 Acres",
-    location: "Texas Hill Country",
-    price: "$5M+",
-    beds: 4, baths: 5, sqft: "5,800",
-    link: "#",
-    badge: "Private Market Opportunity",
+    image: gillisStreet,
+    address: "4314 Gillis Street",
+    location: "Austin, TX 78745",
+    price: "$2,495,000",
+    beds: 24, baths: 0, sqft: "24-unit",
+    link: "/listings/commercial-investment-austin",
+    badge: "MULTIFAMILY INVESTMENT",
+    subtitle: "4314 Gillis Street — 24-unit value-add multifamily, 78745.",
   },
   {
     image: "/static-assets/listing-westlake-hills-private.avif",
@@ -151,7 +153,9 @@ const FeaturedProperties = () => {
                           textAlign: "left",
                         }}
                       >
-                        {p.sqft === "—"
+                        {(p as any).subtitle
+                          ? (p as any).subtitle
+                          : p.sqft === "—"
                           ? `${p.location} — private inquiry`
                           : `${p.address} — ${p.beds} beds · ${p.baths} baths · ${p.sqft} sq ft.`}
                       </p>

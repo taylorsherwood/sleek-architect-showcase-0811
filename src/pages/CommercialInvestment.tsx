@@ -472,7 +472,7 @@ const CommercialInvestment = () => {
                   price: "$97,000,000",
                   capRate: "TBD",
                   sqft: "138 Acres",
-                  highlights: "Full utilities and entitlements completed. I-35 corridor anchored by brand new Bucc-ee's Store"
+                  highlights: "Full utilities and entitlements completed. I-35 corridor anchored by brand new Buc-ee's Store"
                 },
                 {
                   type: "Development Land",

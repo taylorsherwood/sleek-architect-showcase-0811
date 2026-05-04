@@ -466,13 +466,13 @@ const CommercialInvestment = () => {
                   highlights: "Strong rent growth corridor, proximity to Oracle HQ"
                 },
                 {
-                  type: "Retail Center",
-                  name: "Anchored Neighborhood Center",
-                  location: "Cedar Park, TX",
-                  price: "$6,750,000",
-                  capRate: "6.2%",
-                  sqft: "32,000",
-                  highlights: "95% occupied, NNN leases, high-growth suburban submarket"
+                  type: "Development Site",
+                  name: "Kyle I-35 Development Land",
+                  location: "Kyle, TX",
+                  price: "$97,000,000",
+                  capRate: "TBD",
+                  sqft: "138 Acres",
+                  highlights: "Full utilities and entitlements completed. I-35 corridor anchored by brand new Bucc-ee's Store"
                 },
                 {
                   type: "Development Land",

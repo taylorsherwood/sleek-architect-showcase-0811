@@ -13,13 +13,14 @@ const properties = [
     badge: "LUXURY LISTING",
   },
   {
-    image: "/src/assets/commercial-gillis-street.jpg",
-    address: "4314 Gillis Street — 24 Units",
+    image: gillisStreet,
+    address: "4314 Gillis Street",
     location: "Austin, TX 78745",
     price: "$2,495,000",
-    beds: 24, baths: 0, sqft: "—",
+    beds: 24, baths: 0, sqft: "24-unit",
     link: "/listings/commercial-investment-austin",
     badge: "MULTIFAMILY INVESTMENT",
+    subtitle: "4314 Gillis Street — 24-unit value-add multifamily, 78745.",
   },
   {
     image: "/static-assets/listing-westlake-hills-private.avif",

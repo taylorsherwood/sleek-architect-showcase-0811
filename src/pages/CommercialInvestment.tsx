@@ -228,7 +228,7 @@ const CommercialInvestment = () => {
                   <span className="absolute top-4 left-4 text-minimal bg-gold text-white px-3 py-1 font-extrabold">
                     MULTIFAMILY
                   </span>
-                  <span className="absolute bottom-3 right-3 text-white text-sm font-light  bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-sm">$2,500,000</span>
+                  <span className="absolute bottom-3 right-3 text-white text-sm font-light  bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-sm">$2,495,000</span>
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
                   <h3 className="text-lg font-light text-foreground mb-1 ">

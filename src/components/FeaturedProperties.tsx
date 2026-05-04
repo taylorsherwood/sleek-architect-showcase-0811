@@ -153,7 +153,9 @@ const FeaturedProperties = () => {
                           textAlign: "left",
                         }}
                       >
-                        {p.sqft === "—"
+                        {(p as any).subtitle
+                          ? (p as any).subtitle
+                          : p.sqft === "—"
                           ? `${p.location} — private inquiry`
                           : `${p.address} — ${p.beds} beds · ${p.baths} baths · ${p.sqft} sq ft.`}
                       </p>

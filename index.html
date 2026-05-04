@@ -397,6 +397,28 @@
         !function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js?pixel_id=a2_ipm5ghc593ui";t.async=1;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);
         rdt('init','a2_ipm5ghc593ui');
         rdt('track','PageVisit');
+
+        // Follow Up Boss Pixel (tracking only — no CTA widget)
+        if (!window.widgetTracker) {
+          (function(w,i,d,g,e,t){w["WidgetTrackerObject"]=g;(w[g]=w[g]||function(){(w[g].q=w[g].q||[]).push(arguments);}),(w[g].ds=1*new Date());(e="script"),(t=d.createElement(e)),(e=d.getElementsByTagName(e)[0]);t.async=1;t.src=i;e.parentNode.insertBefore(t,e);})(window,"https://widgetbe.com/agent",document,"widgetTracker");
+          window.widgetTracker("create", "WT-TVTEDLMM");
+          window.widgetTracker("send", "pageview");
+
+          // SPA route change pageviews
+          var fubLastPath = location.pathname + location.search;
+          var fubSendPageview = function() {
+            var p = location.pathname + location.search;
+            if (p === fubLastPath) return;
+            fubLastPath = p;
+            window.widgetTracker && window.widgetTracker("send", "pageview");
+          };
+          ['pushState','replaceState'].forEach(function(m){
+            var orig = history[m];
+            history[m] = function(){ var r = orig.apply(this, arguments); window.dispatchEvent(new Event('fub:locationchange')); return r; };
+          });
+          window.addEventListener('popstate', fubSendPageview);
+          window.addEventListener('fub:locationchange', fubSendPageview);
+        }
       }
 
       var deferredScriptsLoaded = false;

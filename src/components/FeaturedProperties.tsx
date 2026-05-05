@@ -19,7 +19,7 @@ const properties = [
     price: "$2,495,000",
     beds: 24, baths: 0, sqft: "24-unit",
     link: "/listings/commercial-investment-austin",
-    badge: "MULTIFAMILY INVESTMENT",
+    badge: "COMMERCIAL LISTING",
     subtitle: "4314 Gillis Street — 24-unit value-add multifamily, 78745.",
   },
   {

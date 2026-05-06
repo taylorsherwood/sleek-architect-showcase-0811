@@ -229,32 +229,49 @@ const ExitIntentModal = () => {
             </p>
 
             <form onSubmit={handleSubmit} className="space-y-3">
-              <input
-                type="email"
-                required
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Your email"
-                aria-label="Email address"
-                className="w-full bg-transparent text-foreground placeholder:text-foreground/40 focus:outline-none transition-colors duration-300"
-                style={{
-                  fontFamily: '"Jost", sans-serif',
-                  fontSize: "0.95rem",
-                  letterSpacing: "0.02em",
-                  padding: "14px 4px",
-                  borderTop: "none",
-                  borderLeft: "none",
-                  borderRight: "none",
-                  borderBottom: "1px solid rgba(0,0,0,0.18)",
-                  borderRadius: 0,
-                }}
-                onFocus={(e) => {
-                  e.currentTarget.style.borderBottomColor = "#b9a06c";
-                }}
-                onBlur={(e) => {
-                  e.currentTarget.style.borderBottomColor = "rgba(0,0,0,0.18)";
-                }}
-              />
+              {[
+                { key: "name", type: "text", value: fullName, onChange: (v: string) => setFullName(v), placeholder: "Full name", aria: "Full name", autoComplete: "name" },
+                { key: "email", type: "email", value: email, onChange: (v: string) => setEmail(v), placeholder: "Email", aria: "Email address", autoComplete: "email" },
+                { key: "phone", type: "tel", value: phone, onChange: (v: string) => setPhone(formatPhoneNumber(v)), placeholder: "Phone", aria: "Phone number", autoComplete: "tel" },
+              ].map((f) => (
+                <input
+                  key={f.key}
+                  type={f.type}
+                  required
+                  value={f.value}
+                  onChange={(e) => f.onChange(e.target.value)}
+                  placeholder={f.placeholder}
+                  aria-label={f.aria}
+                  autoComplete={f.autoComplete}
+                  className="w-full bg-transparent text-foreground placeholder:text-foreground/40 focus:outline-none transition-colors duration-300"
+                  style={{
+                    fontFamily: '"Jost", sans-serif',
+                    fontSize: "0.95rem",
+                    letterSpacing: "0.02em",
+                    padding: "14px 4px",
+                    borderTop: "none",
+                    borderLeft: "none",
+                    borderRight: "none",
+                    borderBottom: "1px solid rgba(0,0,0,0.18)",
+                    borderRadius: 0,
+                  }}
+                  onFocus={(e) => {
+                    e.currentTarget.style.borderBottomColor = "#b9a06c";
+                  }}
+                  onBlur={(e) => {
+                    e.currentTarget.style.borderBottomColor = "rgba(0,0,0,0.18)";
+                  }}
+                />
+              ))}
+
+              {error && (
+                <p
+                  className="text-gold text-center"
+                  style={{ fontFamily: '"Jost", sans-serif', fontSize: "0.78rem", letterSpacing: "0.04em" }}
+                >
+                  {error}
+                </p>
+              )}
 
               <button
                 type="submit"

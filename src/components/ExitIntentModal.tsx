@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { useLocation } from "react-router-dom";
-import { getTimestamp, submitLeadToZapier } from "@/lib/formUtils";
+import { getTimestamp, submitLeadToZapier, formatPhoneNumber, getPhoneDigits } from "@/lib/formUtils";
 const STORAGE_KEY = "echelon_exit_intent_v1";
 
 // Routes where the modal should never appear (user already converting / dedicated lead pages)
@@ -13,7 +13,10 @@ const EXCLUDED_PATH_PREFIXES = [
 const ExitIntentModal = () => {
   const location = useLocation();
   const [open, setOpen] = useState(false);
+  const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [error, setError] = useState<string | null>(null);
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const armedRef = useRef(false);
@@ -112,13 +115,18 @@ const ExitIntentModal = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!email.trim()) return;
+    setError(null);
+    const name = fullName.trim();
+    const phoneDigits = getPhoneDigits(phone);
+    if (!name || !email.trim() || phoneDigits.length < 10) {
+      setError("Please complete all fields.");
+      return;
+    }
     setLoading(true);
     const res = await submitLeadToZapier({
-      // No name field on exit-intent modal — use a clear default so the Zap
-      // still receives a populated `name` and `message`.
-      name: "Exit Intent Visitor",
-      email,
+      name,
+      email: email.trim(),
+      phone: phoneDigits,
       message: "Requested early access to private listings via exit-intent modal.",
       source: "Exit Intent — LUXURY LISTINGs",
     });
@@ -221,32 +229,49 @@ const ExitIntentModal = () => {
             </p>
 
             <form onSubmit={handleSubmit} className="space-y-3">
-              <input
-                type="email"
-                required
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Your email"
-                aria-label="Email address"
-                className="w-full bg-transparent text-foreground placeholder:text-foreground/40 focus:outline-none transition-colors duration-300"
-                style={{
-                  fontFamily: '"Jost", sans-serif',
-                  fontSize: "0.95rem",
-                  letterSpacing: "0.02em",
-                  padding: "14px 4px",
-                  borderTop: "none",
-                  borderLeft: "none",
-                  borderRight: "none",
-                  borderBottom: "1px solid rgba(0,0,0,0.18)",
-                  borderRadius: 0,
-                }}
-                onFocus={(e) => {
-                  e.currentTarget.style.borderBottomColor = "#b9a06c";
-                }}
-                onBlur={(e) => {
-                  e.currentTarget.style.borderBottomColor = "rgba(0,0,0,0.18)";
-                }}
-              />
+              {[
+                { key: "name", type: "text", value: fullName, onChange: (v: string) => setFullName(v), placeholder: "Full name", aria: "Full name", autoComplete: "name" },
+                { key: "email", type: "email", value: email, onChange: (v: string) => setEmail(v), placeholder: "Email", aria: "Email address", autoComplete: "email" },
+                { key: "phone", type: "tel", value: phone, onChange: (v: string) => setPhone(formatPhoneNumber(v)), placeholder: "Phone", aria: "Phone number", autoComplete: "tel" },
+              ].map((f) => (
+                <input
+                  key={f.key}
+                  type={f.type}
+                  required
+                  value={f.value}
+                  onChange={(e) => f.onChange(e.target.value)}
+                  placeholder={f.placeholder}
+                  aria-label={f.aria}
+                  autoComplete={f.autoComplete}
+                  className="w-full bg-transparent text-foreground placeholder:text-foreground/40 focus:outline-none transition-colors duration-300"
+                  style={{
+                    fontFamily: '"Jost", sans-serif',
+                    fontSize: "0.95rem",
+                    letterSpacing: "0.02em",
+                    padding: "14px 4px",
+                    borderTop: "none",
+                    borderLeft: "none",
+                    borderRight: "none",
+                    borderBottom: "1px solid rgba(0,0,0,0.18)",
+                    borderRadius: 0,
+                  }}
+                  onFocus={(e) => {
+                    e.currentTarget.style.borderBottomColor = "#b9a06c";
+                  }}
+                  onBlur={(e) => {
+                    e.currentTarget.style.borderBottomColor = "rgba(0,0,0,0.18)";
+                  }}
+                />
+              ))}
+
+              {error && (
+                <p
+                  className="text-gold text-center"
+                  style={{ fontFamily: '"Jost", sans-serif', fontSize: "0.78rem", letterSpacing: "0.04em" }}
+                >
+                  {error}
+                </p>
+              )}
 
               <button
                 type="submit"

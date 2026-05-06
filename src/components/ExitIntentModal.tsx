@@ -13,7 +13,10 @@ const EXCLUDED_PATH_PREFIXES = [
 const ExitIntentModal = () => {
   const location = useLocation();
   const [open, setOpen] = useState(false);
+  const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [error, setError] = useState<string | null>(null);
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const armedRef = useRef(false);

@@ -1003,3 +1003,41 @@ body.hcs-immersive nav.fixed {
 .featured-scroll.is-dragging img {
   pointer-events: none;
 }
+
+/* ──────────────────────────────────────────────────────────────────
+   Safari-only scroll perf fixes.
+   Targets desktop Safari (and iOS Safari) via the -webkit-hyphens
+   feature query, which only Safari supports. Goal: eliminate the
+   three biggest Safari jank sources without touching Chrome/Firefox:
+     1. background-attachment: fixed (forces full-page repaint on scroll)
+     2. heavy backdrop-filter (blur + saturate re-sampled every frame
+        while hero video plays beneath)
+     3. composited-layer promotion for the pinned horizontal gallery
+   ────────────────────────────────────────────────────────────────── */
+@supports (-webkit-hyphens: none) {
+  /* 1. Kill fixed-attachment parallax on Safari — known major scroll jank */
+  .parallax-break {
+    background-attachment: scroll !important;
+  }
+
+  /* 2. Lighter backdrop-filter on hero CTAs (drop saturate, reduce blur).
+        Safari's backdrop-filter cost scales sharply with blur radius and
+        compounds with `saturate`. Visual difference is negligible. */
+  .hero-cta-gold,
+  .hero-cta-light {
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+  }
+
+  /* 3. Force GPU compositing on the pinned horizontal communities track
+        and its card images — keeps Safari from re-rasterizing on each
+        scroll frame during the pin/scrub animation. */
+  .hcs-track,
+  .hcs-card-image,
+  .hcs-card-image img {
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+}

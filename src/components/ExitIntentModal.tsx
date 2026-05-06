@@ -115,13 +115,18 @@ const ExitIntentModal = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!email.trim()) return;
+    setError(null);
+    const name = fullName.trim();
+    const phoneDigits = getPhoneDigits(phone);
+    if (!name || !email.trim() || phoneDigits.length < 10) {
+      setError("Please complete all fields.");
+      return;
+    }
     setLoading(true);
     const res = await submitLeadToZapier({
-      // No name field on exit-intent modal — use a clear default so the Zap
-      // still receives a populated `name` and `message`.
-      name: "Exit Intent Visitor",
-      email,
+      name,
+      email: email.trim(),
+      phone: phoneDigits,
       message: "Requested early access to private listings via exit-intent modal.",
       source: "Exit Intent — LUXURY LISTINGs",
     });

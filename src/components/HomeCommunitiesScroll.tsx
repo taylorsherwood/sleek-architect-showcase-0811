@@ -91,10 +91,11 @@ const HomeCommunitiesScroll = () => {
       });
 
       // Per-card subtle parallax (skip last card to avoid post-pin shift).
-      // Skipped on coarse pointers (touch tablets) where the pinned horizontal
-      // scroll is already work-intensive — keeps frame budget for the main pan.
+      // Skipped on coarse pointers (touch tablets) and Safari — both pay a
+      // disproportionate cost for the extra scrubbed transforms during the pin.
       const isCoarsePointer = window.matchMedia("(pointer: coarse)").matches;
-      if (!isCoarsePointer) {
+      const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+      if (!isCoarsePointer && !isSafari) {
         const cardImages = gsap.utils.toArray<HTMLDivElement>(".hcs-card-image");
         cardImages.forEach((img, i) => {
           if (i === cardImages.length - 1) return;

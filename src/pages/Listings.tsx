@@ -21,7 +21,7 @@ const listings = [
     image: "/lovable-uploads/0fc79a0b-1fde-439f-bb08-6062e50770b7.webp",
     address: "2300 Barton Creek Boulevard #15",
     location: "Barton Creek, Austin",
-    price: "$3,495,000",
+    price: "$3,349,000",
     beds: 4,
     baths: 4,
     sqft: "4,147",

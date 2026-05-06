@@ -657,7 +657,7 @@ At the same time, nearby greenbelts, trails, and natural preserves provide a dir
 
 ## A Rare Opportunity in Governors Hill
 
-Offered at $3,495,000, 2300 Barton Creek Blvd #15 represents a compelling opportunity to acquire a fully renovated lock-and-leave residence in one of Austin’s most exclusive gated communities.
+Offered at $3,349,000, 2300 Barton Creek Blvd #15 represents a compelling opportunity to acquire a fully renovated lock-and-leave residence in one of Austin’s most exclusive gated communities.
 
 For buyers relocating to Austin or seeking a refined second home, this property offers a rare combination of security, convenience, and elevated design—all within minutes of the city’s core.
 

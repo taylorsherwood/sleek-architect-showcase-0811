@@ -228,7 +228,7 @@ It depends on lifestyle priorities. 78746 favors closer-in convenience and Eanes
     author: "Taylor Sherwood",
     date: "2026-05-06",
     readTime: "9 min read",
-    category: "BUYER STRATEGY",
+    category: "BUYER GUIDE",
     image: blog78746Guide,
     heroImage: blog78746Guide
   },

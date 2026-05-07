@@ -4,6 +4,7 @@ import blogUrban from "@/assets/blog-urban-planning.jpg";
 import blog2300BartonCreek from "@/assets/2300-barton-creek-blvd.jpg";
 import blogSellPrivately from "@/assets/blog-sell-privately.webp";
 import blog78746Guide from "@/assets/blog-78746-luxury-homes-guide.jpg";
+import blogOutdoorBars2026 from "@/assets/blog-austin-outdoor-bars-2026.jpg";
 
 export interface BlogPost {
   id: string;
@@ -22,6 +23,102 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  {
+    id: "austin-newest-outdoor-bars-2026",
+    title: "Austin's Newest Outdoor Bars: Where to Drink Outside in 2026",
+    metaTitle: "Austin's Newest Outdoor Bars: Where to Drink Outside in 2026",
+    excerpt: "The newest outdoor bars in Austin: Only the Wild Ones, Boni's, Aperí, Bar Hacienda, Oria and more. Where locals are actually drinking this patio season.",
+    content: `
+# Austin's Newest Outdoor Bars: Where to Drink Outside in 2026
+
+If you've spent more than five minutes in Austin, you know the math. Nine months of patio season, three months of pretending you don't need one, and a constant pipeline of new outdoor bar openings trying to claim the prettiest backyard in town. Spring 2026 brought a particularly strong batch. A few of these spots are already booked solid through Memorial Day, and the operators behind them include some of the most respected names in Los Angeles, New York, and Austin's own restaurant scene.
+
+Here's where locals (and your future neighbors) are actually drinking right now.
+
+## Only the Wild Ones (South Congress)
+
+The <a href="https://www.austinmonthly.com/exclusive-only-the-wild-ones/" rel="noopener" class="text-foreground underline hover:text-muted-foreground">Austin Monthly feature</a> got everyone talking about this one for a reason. Only the Wild Ones opened May 1 inside the old South Congress Cafe courtyard at 1600 South Congress Avenue, and the founders are calling it Austin's first dedicated outdoor listening bar. Translation: natural wine, agave cocktails, and a vinyl-only soundtrack played loud enough to be the point of being there.
+
+Heather Tierney, the Butcher's Daughter founder behind the concept, designed the space around a sunken courtyard, a 20-foot Cypress wood bar, limestone walls, reclaimed wood decking, and a live oak. The aesthetic borrows from Japanese jazz kissas and Old World Mediterranean alleyways, which sounds insufferable on paper and looks gorgeous in person.
+
+The wine program is run by Kate Harrington (formerly of Emmer & Rye and Oseyo), with bottles from small producers in Italy, Serbia, and the Texas Hill Country. Cocktails come from DrinkWell's Jessica Sanders and The Treasury's Antonio Matta. A White Mezcal Negroni and a Honeydew Margarita lead the menu, and there's a real zero-proof list for the sober-curious crowd, including a Grilled Lemon Spritz with kanna flower extract.
+
+Hours: 4 to 10 pm Wednesday, Thursday, and Sunday. 4 pm to midnight Friday and Saturday. Walk-ins welcome with limited reservations online. The Butcher's Daughter restaurant moves into the adjacent building in late summer or early fall.
+
+Why this matters for the South Congress corridor: it's the first major addition to the SoCo bar scene since Aba opened, and it cements the strip's pivot from tourist destination to legitimate locals night out. <a href="/communities/zilker-austin" class="text-foreground underline hover:text-muted-foreground">Walking distance to SoCo</a> just got a noticeable value bump for nearby <a href="/austin-luxury-homes-for-sale" class="text-foreground underline hover:text-muted-foreground">78704 luxury homes</a>.
+
+## Boni's (South 1st Street)
+
+Boni's quietly opened on the same property as Lenoir at 1805 South 1st, and it might be the best small bar in Austin right now. The team built it inside a hand-built 1934 bungalow with a hidden backyard patio, umbrellas overhead, and a Spanish wine list that starts at $10 a glass.
+
+The food is tapas-style and built for a long sit. Softshell crawfish chips, stewed pork meatballs, conservas, cured hams, plus a cocktail list heavy on cava, vermouth, and sherry. No reservations. No fuss. Open 3 pm to midnight daily, closed Tuesdays.
+
+Boni's pairs well with Lenoir's wine garden next door if you want to make a longer night of it. Both are walkable from <a href="/communities/zilker-austin" class="text-foreground underline hover:text-muted-foreground">Bouldin Creek and Zilker</a> and easy from <a href="/communities/tarrytown" class="text-foreground underline hover:text-muted-foreground">Travis Heights-adjacent neighborhoods</a>.
+
+## Aperí at The Loren (South Congress)
+
+The new Loren Hotel on South Congress brought Aperí with it, a small retail wine and charcuterie shop with a built-for-loitering patio. The list runs about 40 bottles, charcuterie boards are made to order, and you can drink on site or take everything to go. It's the kind of place that feels effortless when you have a guest in town and don't want to commit to a full dinner reservation.
+
+The Loren itself is a real signal. Bringing a luxury hotel brand of this tier to South Congress changes the long-term trajectory of the corridor, with predictable <a href="/austin-luxury-real-estate-market-report" class="text-foreground underline hover:text-muted-foreground">follow-on effects for nearby property values</a>.
+
+## Bar Hacienda (Rainey Street)
+
+Rainey Street keeps adding cocktail bars and Bar Hacienda is the most disciplined of the recent batch. Tropical-leaning without being gimmicky. Try the Hacienda Highball (mezcal, toasted coconut, clarified citrus, soda) and the room makes sense quickly. The patio sits in the middle of the Rainey scene without feeling overrun by it.
+
+If you've been priced out of buying on Rainey itself, the latest tower wave nearby is opening up <a href="/listings" class="text-foreground underline hover:text-muted-foreground">downtown rental and pied-à-terre options worth a conversation</a>.
+
+## Oria (Barton Springs Road)
+
+Taking over the former Zoé Tong space on the strip leading into Zilker Park, Oria comes from the Space Cowboy team. The food is Southern European meeting Eastern Mediterranean. Smoked baba ghanoush, braised short ribs, a whole branzino. The patio is quieter than you'd expect for the location, the kitchen stays open until 2 am on weekends, and it's the rare Zilker-adjacent spot that locals actually keep going back to instead of recommending only to visitors.
+
+For anyone living in 78704 or eyeing <a href="/communities/zilker-austin" class="text-foreground underline hover:text-muted-foreground">Zilker and Barton Hills</a>, this is your new default drop-in.
+
+## Rosewood Social Club (East Austin)
+
+Rosewood Social Club opened in the old Saddle Up and Micklethwait space on Rosewood Avenue. Coffee and pastries by day, cocktails by night, and a large patio with firepits and shaded tables built for both Austin extremes. 108 in August, 28 in February, the patio handles both. Good for the all-day move when one of you wants to work and the other wants a drink.
+
+<a href="/communities/east-austin" class="text-foreground underline hover:text-muted-foreground">East Austin</a> keeps absorbing operators with this kind of polish, and the neighborhood's evolution from artist enclave to mature urban district is reflected in the comps.
+
+## Worth Watching
+
+A few more openings already on the radar that didn't quite make the main list:
+
+- **Ēma at Domain Northside.** Mediterranean small plates under heritage oaks, from the Aba team. Already proving popular with the North Austin crowd.
+- **East End Ballroom inside Arlyn Studios.** Retro-luxe supper club with DJ programming and a Sunday brunch designed for the East Side creative class.
+- **Strangelove Coffee & Wine on the East Side.** Cafe by day, wine bar with rotating pop-up chefs by night, and a serious patio.
+- **The Driskill Grill.** Returning in early 2026 after a multi-year renovation. Not outdoor, but worth flagging as the most significant fine dining reopening of the year.
+
+## Why This Matters Beyond Where to Drink
+
+Austin's bar and restaurant openings are a leading indicator for the property market. Operators chase neighborhoods with momentum, and the corridors landing the strongest concepts right now (South Congress, South 1st, East Austin, Barton Springs Road) are the same corridors seeing the strongest demand from <a href="/luxury-real-estate-austin" class="text-foreground underline hover:text-muted-foreground">luxury</a> and <a href="/austin-real-estate-investment" class="text-foreground underline hover:text-muted-foreground">investment buyers</a>.
+
+If you're tracking <a href="/best-neighborhoods-in-austin-texas" class="text-foreground underline hover:text-muted-foreground">where to buy in Austin</a>, watch where the second locations of established New York and Los Angeles brands are landing first. The Butcher's Daughter picking South Congress for its first Texas outpost is a data point worth a few comps. The same pattern shows up in our <a href="/off-market-real-estate-austin" class="text-foreground underline hover:text-muted-foreground">off-market pipeline</a>, where corridor momentum often precedes price movement by a quarter or two.
+
+If you're <a href="/moving-to-austin-texas" class="text-foreground underline hover:text-muted-foreground">relocating to Austin</a> and trying to figure out which neighborhood actually fits you, the patio you'd default to on a Tuesday says a lot more than the school ratings ever will.
+
+:::faq
+Q: What is the newest outdoor bar in Austin?
+A: Only the Wild Ones, which opened May 1, 2026 at 1600 South Congress Avenue, is the most talked-about new outdoor bar in Austin. It's a natural wine and vinyl listening bar from the Butcher's Daughter team, with locations already in Venice Beach and New York.
+
+Q: Where is Only the Wild Ones in Austin?
+A: Only the Wild Ones is at 1600 South Congress Avenue, in the courtyard that previously housed South Congress Cafe. Open 4 pm to 10 pm Wednesday, Thursday, and Sunday, and 4 pm to midnight Friday and Saturday.
+
+Q: What is the best new patio in South Austin in 2026?
+A: For South Congress, Only the Wild Ones is the headline opening of the year. For South 1st, Boni's at 1805 South 1st is the best small new bar in the area, with a hidden backyard patio and a $10-and-up Spanish wine list.
+
+Q: When is patio season in Austin?
+A: Realistically, patio season runs from late February through early December. Most outdoor venues install misters for the August stretch and firepits or heaters for the cold snaps.
+:::
+
+Looking to live within walking distance of Austin's best new outdoor bars? <a href="/contact" class="text-foreground underline hover:text-muted-foreground">Reach out to Echelon Property Group</a> or <a href="/listings" class="text-foreground underline hover:text-muted-foreground">browse current luxury listings</a>.
+    `,
+    author: "Taylor Sherwood",
+    date: "2026-05-07",
+    readTime: "8 min read",
+    category: "AUSTIN LIFESTYLE",
+    image: blogOutdoorBars2026,
+    heroImage: blogOutdoorBars2026
+  },
   {
     id: "78746-luxury-homes-guide-for-smart-buyers",
     title: "78746 Luxury Homes Guide for Smart Buyers",

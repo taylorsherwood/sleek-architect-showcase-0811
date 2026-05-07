@@ -1,42 +1,29 @@
-import { useEffect, useId } from "react";
+import { Helmet } from "react-helmet-async";
 
 interface SchemaMarkupProps {
   schema: Record<string, unknown> | Record<string, unknown>[] | null;
 }
 
+/**
+ * Renders a JSON-LD <script> tag via react-helmet-async so the schema is
+ * included in the prerendered HTML and survives hydration without duplication.
+ *
+ * Previously this used a useEffect + document.head.appendChild pattern, which
+ * caused duplicate FAQPage entries in Google Search Console when the component
+ * re-rendered (new object reference for `schema`) and the dedupe logic raced
+ * against itself across mount/unmount cycles.
+ */
 const SchemaMarkup = ({ schema }: SchemaMarkupProps) => {
-  const id = useId();
-
-  useEffect(() => {
-    if (!schema) return;
-
-    const schemaType = (schema as Record<string, unknown>)["@type"] as string | undefined;
-
-    // Before adding a FAQPage schema, remove any existing FAQPage scripts
-    // (prevents duplicates from Strict Mode, re-renders, or route transitions)
-    if (schemaType === "FAQPage") {
-      const existing = document.querySelectorAll('script[data-schema-type="FAQPage"]');
-      existing.forEach((el) => {
-        if (el.getAttribute("data-schema-id") !== id) {
-          el.remove();
-        }
-      });
-    }
-
-    const script = document.createElement("script");
-    script.type = "application/ld+json";
-    script.text = JSON.stringify(schema);
-    script.setAttribute("data-schema", "true");
-    script.setAttribute("data-schema-id", id);
-    if (schemaType) script.setAttribute("data-schema-type", schemaType);
-    document.head.appendChild(script);
-
-    return () => {
-      script.remove();
-    };
-  }, [schema, id]);
-
-  return null;
+  if (!schema) return null;
+  const schemaType = (schema as Record<string, unknown>)["@type"];
+  const typeAttr = typeof schemaType === "string" ? schemaType : undefined;
+  return (
+    <Helmet>
+      <script type="application/ld+json" data-schema-type={typeAttr}>
+        {JSON.stringify(schema)}
+      </script>
+    </Helmet>
+  );
 };
 
 export default SchemaMarkup;

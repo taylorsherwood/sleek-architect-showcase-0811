@@ -3,7 +3,7 @@ import blogMinimalist from "@/assets/blog-minimalist-living.jpg";
 import blogUrban from "@/assets/blog-urban-planning.jpg";
 import blog2300BartonCreek from "@/assets/2300-barton-creek-blvd.jpg";
 import blogSellPrivately from "@/assets/blog-sell-privately.webp";
-import blog78746Guide from "@/assets/blog-78746-luxury-homes-guide.jpg";
+import blog78746Guide from "@/assets/blog-78746-luxury-homes-guide.avif";
 import blogOutdoorBars2026 from "@/assets/blog-austin-outdoor-bars-2026.jpg";
 
 export interface BlogPost {
@@ -226,7 +226,7 @@ Well-positioned homes with disciplined pricing often trade quickly, sometimes be
 It depends on lifestyle priorities. 78746 favors closer-in convenience and Eanes schools. <a href="/communities/barton-creek" class="text-foreground underline hover:text-muted-foreground">Barton Creek</a> and <a href="/communities/spanish-oaks" class="text-foreground underline hover:text-muted-foreground">Spanish Oaks</a> offer more gated, club-oriented estate environments. The right answer is property-specific, not ZIP-specific.
     `,
     author: "Taylor Sherwood",
-    date: "2026-05-01",
+    date: "2026-05-06",
     readTime: "9 min read",
     category: "BUYER STRATEGY",
     image: blog78746Guide,

@@ -109,16 +109,16 @@ const Blog = () => {
                         className="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105"
                         loading="lazy" decoding="async"
                       />
-                      <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                      <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                       <div className="absolute top-4 left-4 bg-gold px-3 py-1">
-                        <span className="text-xs text-white font-medium">
+                        <span className="text-xs text-primary-foreground font-medium">
                           {post.category}
                         </span>
                       </div>
                     </div>
                     
-                    <div className="flex flex-col flex-1 space-y-4">
-                      <div className="flex items-center text-xs text-muted-foreground space-x-4">
+                    <div className="grid flex-1 grid-rows-[2.5rem_6rem_5.5rem_auto] gap-4 md:grid-rows-[2rem_7rem_5.5rem_auto]">
+                      <div className="flex flex-wrap items-start gap-x-4 gap-y-1 text-xs text-muted-foreground overflow-hidden">
                         <span>{formatDate(post.date)}</span>
                         <span>•</span>
                         <span>{post.readTime}</span>
@@ -126,15 +126,15 @@ const Blog = () => {
                         <span>{post.author}</span>
                       </div>
                       
-                      <h2 className="text-xl lg:text-2xl font-light text-architectural group-hover:text-muted-foreground transition-colors duration-500">
+                      <h2 className="text-xl lg:text-2xl font-light leading-snug text-architectural line-clamp-3 group-hover:text-muted-foreground transition-colors duration-500">
                         {post.title}
                       </h2>
                       
-                      <p className="text-muted-foreground leading-relaxed line-clamp-3">
+                      <p className="text-muted-foreground leading-relaxed line-clamp-3 overflow-hidden">
                         {post.excerpt}
                       </p>
                       
-                      <div className="pt-4 mt-auto">
+                      <div className="pt-4 self-end">
                         <span className="text-minimal text-foreground group-hover:text-gold group-hover:underline underline-offset-4 transition-colors duration-300">
                           READ MORE
                         </span>

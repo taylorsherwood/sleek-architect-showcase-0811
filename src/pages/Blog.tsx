@@ -109,16 +109,16 @@ const Blog = () => {
                         className="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105"
                         loading="lazy" decoding="async"
                       />
-                      <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                      <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                       <div className="absolute top-4 left-4 bg-gold px-3 py-1">
-                        <span className="text-xs text-white font-medium">
+                        <span className="text-xs text-primary-foreground font-medium">
                           {post.category}
                         </span>
                       </div>
                     </div>
                     
                     <div className="flex flex-col flex-1 space-y-4">
-                      <div className="flex items-center text-xs text-muted-foreground space-x-4">
+                      <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-muted-foreground md:min-h-8">
                         <span>{formatDate(post.date)}</span>
                         <span>•</span>
                         <span>{post.readTime}</span>
@@ -126,7 +126,7 @@ const Blog = () => {
                         <span>{post.author}</span>
                       </div>
                       
-                      <h2 className="text-xl lg:text-2xl font-light text-architectural group-hover:text-muted-foreground transition-colors duration-500">
+                      <h2 className="text-xl lg:text-2xl font-light leading-snug text-architectural line-clamp-3 md:min-h-[5.25rem] lg:min-h-24 group-hover:text-muted-foreground transition-colors duration-500">
                         {post.title}
                       </h2>
                       

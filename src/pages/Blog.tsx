@@ -118,7 +118,7 @@ const Blog = () => {
                     </div>
                     
                     <div className="flex flex-col flex-1 space-y-4">
-                      <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-muted-foreground md:min-h-8">
+                      <div className="flex flex-wrap items-start gap-x-4 gap-y-1 text-xs text-muted-foreground h-10 md:h-8 overflow-hidden">
                         <span>{formatDate(post.date)}</span>
                         <span>•</span>
                         <span>{post.readTime}</span>
@@ -126,7 +126,7 @@ const Blog = () => {
                         <span>{post.author}</span>
                       </div>
                       
-                      <h2 className="text-xl lg:text-2xl font-light leading-snug text-architectural line-clamp-3 md:min-h-[5.25rem] lg:min-h-24 group-hover:text-muted-foreground transition-colors duration-500">
+                      <h2 className="text-xl lg:text-2xl font-light leading-snug text-architectural line-clamp-3 h-24 lg:h-28 group-hover:text-muted-foreground transition-colors duration-500">
                         {post.title}
                       </h2>
                       

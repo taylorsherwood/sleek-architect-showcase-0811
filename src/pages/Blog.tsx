@@ -99,8 +99,8 @@ const Blog = () => {
           <div className="max-w-7xl mx-auto">
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16">
               {filteredPosts.map((post) => (
-                <article key={post.id} className="group">
-                  <Link to={post.href || `/blog/${post.id}`} className="block">
+                <article key={post.id} className="group h-full">
+                  <Link to={post.href || `/blog/${post.id}`} className="flex flex-col h-full">
                     <div className="relative overflow-hidden mb-6">
                       <img 
                         src={post.image} 
@@ -117,7 +117,7 @@ const Blog = () => {
                       </div>
                     </div>
                     
-                    <div className="space-y-4">
+                    <div className="flex flex-col flex-1 space-y-4">
                       <div className="flex items-center text-xs text-muted-foreground space-x-4">
                         <span>{formatDate(post.date)}</span>
                         <span>•</span>
@@ -134,7 +134,7 @@ const Blog = () => {
                         {post.excerpt}
                       </p>
                       
-                      <div className="pt-4">
+                      <div className="pt-4 mt-auto">
                         <span className="text-minimal text-foreground group-hover:text-gold group-hover:underline underline-offset-4 transition-colors duration-300">
                           READ MORE
                         </span>

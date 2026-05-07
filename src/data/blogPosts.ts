@@ -120,6 +120,7 @@ Looking to live within walking distance of Austin's best new outdoor bars? <a hr
     heroImage: blogOutdoorBars2026
   },
   {
+    id: "78746-luxury-homes-guide-for-smart-buyers",
     title: "78746 Luxury Homes Guide for Smart Buyers",
     metaTitle: "78746 Luxury Homes Guide for Smart Buyers | Echelon Property Group",
     excerpt: "An advisor's guide to 78746 luxury homes — how Westlake's micro-markets, lot quality, and private inventory shape value for buyers and sellers.",

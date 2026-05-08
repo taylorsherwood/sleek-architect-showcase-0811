@@ -210,7 +210,7 @@ const AdvisorSection = () => (
    SECTION 3B — STATS STRIP
    ───────────────────────────────────────────── */
 
-const useCountUp = (target: number, duration = 2600, from = 0) => {
+const useCountUp = (target: number, duration = 2600, from = 0, decimals = 0) => {
   const [count, setCount] = useState(from);
   const [inView, setInView] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
@@ -230,7 +230,8 @@ const useCountUp = (target: number, duration = 2600, from = 0) => {
             if (id !== animId.current) return;
             const progress = Math.min((now - startTime) / duration, 1);
             const eased = 1 - Math.pow(1 - progress, 3);
-            setCount(Math.round(from + eased * (target - from)));
+            const raw = from + eased * (target - from);
+            setCount(decimals > 0 ? Number(raw.toFixed(decimals)) : Math.round(raw));
             if (progress < 1) requestAnimationFrame(step);
           };
           requestAnimationFrame(step);
@@ -243,7 +244,7 @@ const useCountUp = (target: number, duration = 2600, from = 0) => {
     );
     observer.observe(el);
     return () => observer.disconnect();
-  }, [target, duration, from]);
+  }, [target, duration, from, decimals]);
 
   return { count, ref, inView };
 };
@@ -252,7 +253,7 @@ const stats = [
   { value: 125, suffix: "M+", prefix: "$", label: "Career Sales Volume", from: 50 },
   { value: 200, suffix: "+", prefix: "", label: "Transactions Closed", from: 100 },
   { value: 11, suffix: "+", prefix: "", label: "Years of Experience", from: 1 },
-  { value: 250, suffix: "M+", prefix: "$", label: "Off-Market Access", from: 150 },
+  { value: 1.6, suffix: "B+", prefix: "$", label: "Off-Market Access", from: 0.75, decimals: 1 },
 ];
 
 const StatItem = ({ stat }: { stat: typeof stats[number] }) => {

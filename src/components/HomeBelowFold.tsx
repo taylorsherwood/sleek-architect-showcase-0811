@@ -257,7 +257,7 @@ const stats = [
 ];
 
 const StatItem = ({ stat }: { stat: typeof stats[number] }) => {
-  const { count, ref, inView } = useCountUp(stat.value, 3500, stat.from);
+  const { count, ref, inView } = useCountUp(stat.value, 3500, stat.from, (stat as any).decimals ?? 0);
   return (
     <div ref={ref} className="text-center group/stat">
       <p style={{

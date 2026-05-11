@@ -29,7 +29,7 @@ import blogBuyingLuxuryOutOfState from "@/assets/blog-buying-luxury-out-of-state
 import blogOffMarketHomesAustinHero from "@/assets/blog-off-market-homes-austin-hero.jpg";
 import blogWealthBuildingLuxury from "@/assets/blog-wealth-building-luxury-real-estate.jpg";
 import blogNewConstructionAustin from "@/assets/blog-new-construction-austin.jpg";
-import blogLakeAustinWaterfrontValue from "@/assets/blog-lake-austin-waterfront-value.jpg";
+import blogLakeAustinWaterfrontValue from "@/assets/lake-austin-waterfront.jpg";
 
 import { BlogPost } from "./blogPosts";
 

@@ -114,7 +114,7 @@ A meaningful share of upper-tier transactions in Austin happen off-market or pre
 ### How should I decide between a downtown luxury condo and an estate neighborhood?
 
 Choose downtown if you want service, security, lock-and-leave convenience, and amenity-driven living. Choose an estate neighborhood if you want land, privacy, and architectural control. They serve different lifestyles, not different price points.
-    \`,
+    `,
     author: "Taylor Sherwood",
     date: "2026-05-11",
     readTime: "9 min read",

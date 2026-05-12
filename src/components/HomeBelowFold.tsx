@@ -87,8 +87,8 @@ const AdvisorSection = () => (
               }} />
             </div>
 
-            {/* Brokerage logo */}
-            <div className="w-full flex flex-col items-center pt-5 pb-2 px-4">
+            {/* Brokerage logo — desktop only */}
+            <div className="hidden lg:flex w-full flex-col items-center pt-5 pb-2 px-4">
               <div className="w-12 h-px bg-gold mb-5" />
               <div className="w-full max-w-[300px] mx-auto">
                 <img

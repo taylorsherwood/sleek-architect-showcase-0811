@@ -16,6 +16,7 @@ import FeaturedProperties from "@/components/FeaturedProperties";
 import taylorBoatImg from "@/assets/taylor-headshot.webp";
 import taylorAboutHeadshot from "@/assets/taylor-about-headshot.jpeg";
 import taylorSignature from "@/assets/taylor-signature.webp";
+import expEchelonLogo from "@/assets/exp-echelon-logo.png";
 import echelonWatermarkLogo from "@/assets/echelon-watermark-logo.png";
 import lakeAustinTestimonialImg from "@/assets/lake-austin-luxury-testimonials.webp";
 
@@ -116,6 +117,15 @@ const AdvisorSection = () => (
                     <span className="absolute left-0 -bottom-0.5 w-full h-px bg-gold scale-x-0 group-hover/li:scale-x-100 transition-transform duration-500 origin-center" />
                   </span>
                 </a>
+              </div>
+              <div className="mt-6 w-full max-w-[260px]">
+                <img
+                  src={expEchelonLogo}
+                  alt="eXp Realty and Echelon Property Group brokerage partnership"
+                  className="w-full mix-blend-multiply"
+                  loading="lazy"
+                  decoding="async"
+                />
               </div>
             </div>
           </div>

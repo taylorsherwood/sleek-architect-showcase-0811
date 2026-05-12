@@ -192,9 +192,9 @@ const AdvisorSection = () => (
               </div>
 
               {/* Column 2 — Secondary */}
-              <div className="flex flex-col items-start gap-7 sm:pt-[18px]">
+              <div className="flex flex-col items-start gap-7">
                 <Link to="/past-transactions"
-                  className="relative inline-flex items-center text-muted-foreground/45 hover:text-gold transition-colors duration-[450ms] group/link"
+                  className="relative inline-flex items-center text-muted-foreground/45 hover:text-gold transition-colors duration-[450ms] sm:mt-[18px] group/link"
                   style={{ fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.12em", textTransform: "uppercase", fontWeight: 400 }}>
                   VIEW PAST TRANSACTIONS
                   <span aria-hidden="true" className="ml-1.5 inline-block transition-transform duration-500 ease-out group-hover/link:translate-x-1">→</span>

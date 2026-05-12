@@ -184,7 +184,7 @@ const AdvisorSection = () => (
                   style={{ fontFamily: '"Jost", sans-serif', fontSize: "9.5px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 300 }}
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="flex-shrink-0"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-                  <span className="relative leading-none">
+                  <span className="relative leading-none font-semibold">
                     @THEINVESTORBROKER
                     <span className="absolute left-0 -bottom-0.5 w-full h-px bg-gold scale-x-0 group-hover/ig:scale-x-100 transition-transform duration-500 origin-center" />
                   </span>

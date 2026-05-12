@@ -118,7 +118,7 @@ const AdvisorSection = () => (
                   </span>
                 </a>
               </div>
-              <div className="mt-6 w-full max-w-[260px]">
+              <div className="mt-6 w-full max-w-[260px] translate-x-[18px]">
                 <img
                   src={expEchelonLogo}
                   alt="eXp Realty and Echelon Property Group brokerage partnership"

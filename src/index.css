@@ -713,6 +713,18 @@ section[class*="bg-navy"]::after {
     color: #fff;
     border-color: #b9a06c;
   }
+  /* Refined variant: softer border, ivory→gold wash, subtle text darkening */
+  .cta-luxury--soft {
+    padding: 17px 40px;
+    border-color: rgba(185, 160, 108, 0.55);
+    transition: background 0.45s ease, color 0.45s ease, border-color 0.45s ease, transform 0.16s ease;
+  }
+  .cta-luxury--soft:hover {
+    background: rgba(185, 160, 108, 0.14);
+    color: #0C0F24;
+    border-color: rgba(185, 160, 108, 0.75);
+    transform: none;
+  }
 }
 
 

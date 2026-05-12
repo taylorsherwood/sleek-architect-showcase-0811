@@ -89,7 +89,7 @@ const AdvisorSection = () => (
 
             {/* Brokerage logo — desktop only */}
             <div className="hidden lg:flex w-full flex-col items-center pt-5 pb-2 px-4">
-              <div className="w-12 h-px bg-gold mb-5" />
+
               <div className="w-full max-w-[300px] mx-auto">
                 <img
                   src={expEchelonLogo}
@@ -140,7 +140,7 @@ const AdvisorSection = () => (
                   opacity: 0.06,
                 }}
               />
-              <div className="relative space-y-4 mb-8" style={{ fontFamily: '"Jost", sans-serif', fontWeight: 300 }}>
+            <div className="relative space-y-4 mb-14" style={{ fontFamily: '"Jost", sans-serif', fontWeight: 300 }}>
                   <p className="text-foreground/70 text-[16px] leading-[1.8]">
                     In Austin's upper tier, the best opportunities are rarely public. They are negotiated, sourced, and secured through relationships, timing, and leverage- not search portals.
                   </p>
@@ -160,36 +160,37 @@ const AdvisorSection = () => (
                   If you're looking for <em>access</em>, <em>clarity</em>, and <em>execution</em> at a higher level, you're ready to be in the <em>upper echelon</em>. 
                   You don't need more listings, you need a <em>smarter approach</em>.
                 </p>
-                 <p className="text-foreground/70 text-[16px] leading-[1.8] mt-4 font-serif italic">
+                 <p className="text-foreground/55 text-[15px] leading-[1.8] mt-4 font-serif italic">
                      Buy. Sell. Invest.
                      <br /><br />
-                     <span className="font-bold">Let's get to work,</span>
+                     <span className="font-normal text-foreground/70">Let's get to work,</span>
                   </p>
                  <div className="!mt-0 !pt-0 -mb-8"><img src={taylorSignature} alt="Taylor Sherwood signature" className="block h-[140px] opacity-80 -translate-y-4" loading="lazy" decoding="async" width={341} height={140} /></div>
               </div>
             </div>
 
 
-            <div className="flex flex-col sm:flex-row items-start gap-4">
-              <Link to="/contact" className="cta-luxury">
+            <div className="flex flex-col sm:flex-row items-start gap-5 sm:gap-10">
+              <Link to="/contact" className="cta-luxury cta-luxury--soft">
                 WORK WITH ME
               </Link>
               <Link to="/past-transactions"
-                className="relative inline-flex items-center text-muted-foreground/55 hover:text-gold transition-colors duration-[400ms] pt-3 sm:pt-0 sm:self-center sm:ml-2 group/link"
+                className="relative inline-flex items-center text-muted-foreground/45 hover:text-gold transition-colors duration-[450ms] pt-3 sm:pt-0 sm:self-center sm:ml-1 group/link"
                 style={{ fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.12em", textTransform: "uppercase", fontWeight: 400 }}>
-                VIEW PAST TRANSACTIONS →
+                VIEW PAST TRANSACTIONS
+                <span aria-hidden="true" className="ml-1.5 inline-block transition-transform duration-500 ease-out group-hover/link:translate-x-1">→</span>
                 <span className="absolute bottom-0 left-0 w-full h-px bg-gold scale-x-0 group-hover/link:scale-x-100 transition-transform duration-500 origin-left" />
               </Link>
             </div>
 
             {/* Social links */}
-            <div className="mt-8 flex flex-col sm:flex-row items-start gap-4 sm:gap-6">
+            <div className="mt-14 flex flex-col sm:flex-row items-start gap-4 sm:gap-7">
               <a
                 href="https://www.instagram.com/theinvestorbroker/"
                 target="_blank"
                 rel="nofollow noopener noreferrer"
-                className="inline-flex items-center gap-2 text-gold group/ig"
-                style={{ fontFamily: '"Jost", sans-serif', fontSize: "9.5px", letterSpacing: "0.15em", textTransform: "uppercase", fontWeight: 400 }}
+                className="inline-flex items-center gap-2 text-gold/70 hover:text-gold transition-colors duration-[450ms] group/ig"
+                style={{ fontFamily: '"Jost", sans-serif', fontSize: "9.5px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 300 }}
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="flex-shrink-0"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
                 <span className="relative leading-none">
@@ -201,8 +202,8 @@ const AdvisorSection = () => (
                 href="https://www.linkedin.com/in/taylorsherwood/"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                className="inline-flex items-center gap-2 text-gold group/li"
-                style={{ fontFamily: '"Jost", sans-serif', fontSize: "9.5px", letterSpacing: "0.15em", textTransform: "uppercase", fontWeight: 400 }}
+                className="inline-flex items-center gap-2 text-gold/70 hover:text-gold transition-colors duration-[450ms] group/li"
+                style={{ fontFamily: '"Jost", sans-serif', fontSize: "9.5px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 300 }}
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" stroke="none" className="flex-shrink-0"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
                 <span className="relative leading-none">

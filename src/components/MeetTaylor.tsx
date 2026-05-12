@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Instagram } from "lucide-react";
 import echelonWatermark from "@/assets/echelon-watermark.webp";
+import expEchelonLogo from "@/assets/exp-echelon-logo.png";
 import ScrollReveal from "@/components/ScrollReveal";
 
 const MeetTaylor = () => {
@@ -78,6 +79,15 @@ const MeetTaylor = () => {
                 <Instagram className="w-5 h-5 text-gold" />
                 <span className="text-xs tracking-[0.15em] uppercase">@TheInvestorBroker</span>
               </a>
+              <div className="mt-8 max-w-[260px]">
+                <img
+                  src={expEchelonLogo}
+                  alt="eXp Realty and Echelon Property Group brokerage partnership"
+                  className="w-full mix-blend-multiply"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
             </div>
           </div>
           </ScrollReveal>

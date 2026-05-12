@@ -94,7 +94,7 @@ const AdvisorSection = () => (
                 <img
                   src={expEchelonLogo}
                   alt="eXp Realty and Echelon Property Group brokerage partnership"
-                  className="w-full mix-blend-multiply"
+                  className="w-full"
                   loading="lazy"
                   decoding="async"
                 />

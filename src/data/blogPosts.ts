@@ -27,6 +27,115 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "austin-luxury-inventory-trends",
+    title: "Austin Luxury Inventory Trends Right Now",
+    metaTitle: "Austin Luxury Inventory Trends Right Now | Echelon Property Group",
+    excerpt: "Austin luxury inventory is rising, but not uniformly. An advisor's read on which homes are still moving, where buyers have leverage, and how sellers should position now.",
+    content: `
+# Austin Luxury Inventory Trends Right Now
+
+A $3 million home in one Austin neighborhood can draw immediate interest while a similarly priced property ten minutes away sits quietly through multiple weekends. That gap is what makes <a href="/austin-luxury-market-trends" class="text-foreground underline hover:text-muted-foreground">Austin luxury inventory trends</a> worth watching closely right now. Volume alone is not the story. The more useful question is which homes are actually earning urgency, and why.
+
+The <a href="/luxury-real-estate-austin" class="text-foreground underline hover:text-muted-foreground">Austin luxury market</a> has moved into a more discriminating phase. Buyers still have conviction, but they are far less willing to compromise on location, design integrity, privacy, lot quality, and overall finish. Sellers still have opportunity, but the market is no longer rewarding aspirational pricing simply because an address falls within a desirable zip code. Inventory has increased in many upper-tier segments, yet that rise has not created a uniform buyer's market. It has created separation.
+
+## What Austin luxury inventory trends really show
+
+At the highest level, inventory has expanded compared with the compressed conditions that defined the earlier run-up. More options are available across several luxury bands, particularly in homes that would once have expected immediate competition. That added supply has changed buyer behavior. Sophisticated purchasers are taking more time, comparing trade-offs more carefully, and waiting for a home that feels difficult to replicate.
+
+That does not mean demand has disappeared. It means demand has become highly selective. Well-positioned properties still transact decisively, especially when they offer a clean architectural point of view, meaningful privacy, and a location with enduring social and resale value. Homes that feel generic, overbuilt for the street, or thin on lot quality are spending longer on market, even if the finish level is technically strong.
+
+This is where broad market headlines often miss the point. In luxury, inventory is not just a count. It is a quality mix. If a larger share of available homes lacks the characteristics discerning buyers want, then rising inventory can coexist with tight competition for the small set of truly exceptional offerings — a dynamic our <a href="/austin-luxury-real-estate-market-report" class="text-foreground underline hover:text-muted-foreground">Austin luxury market report</a> tracks in detail.
+
+## The market is splitting by quality, not just price
+
+One of the clearest patterns beneath current Austin luxury inventory trends is stratification inside the same price tier. Two homes can enter the market at nearly identical prices and perform very differently based on product type, land value, and level of rarity.
+
+In practical terms, newer construction with strong architecture and a protected sense of privacy continues to command attention. So do renovated legacy properties in established neighborhoods like <a href="/communities/tarrytown" class="text-foreground underline hover:text-muted-foreground">Tarrytown</a> and <a href="/communities/pemberton-heights" class="text-foreground underline hover:text-muted-foreground">Pemberton Heights</a> where replacement opportunities are limited. By contrast, homes that read as expensive but not distinctive are seeing more resistance. Buyers at this level are not paying a premium simply for square footage. They are paying for scarcity, cohesion, and confidence in long-term desirability.
+
+That distinction matters even more in Austin's micro-markets. In some neighborhoods, inventory growth reflects owners testing pricing at the upper edge of the market. In others, it reflects a genuine increase in optionality for buyers who want best-in-class product. Those are not the same thing, and they should not be interpreted the same way — which is why a disciplined <a href="/home-value-austin" class="text-foreground underline hover:text-muted-foreground">home valuation</a> matters more than ever.
+
+## Why standout homes still move
+
+The best-performing properties share a few traits. They are difficult to duplicate, well located within the neighborhood itself, and appropriately aligned with the expectations of the buyer profile for that area. They also tend to present with clarity. The home makes sense the moment it is seen, whether the appeal is architecture, land, views, walkability, school adjacency, or turnkey design.
+
+Luxury buyers are often busy, well-advised, and capable of waiting. What they respond to is certainty. A home that eliminates doubt can still create competitive energy, even in a market with more visible supply. That pattern is consistent across the strongest <a href="/austin-luxury-homes-for-sale" class="text-foreground underline hover:text-muted-foreground">Austin luxury homes for sale</a> right now.
+
+## Why average luxury listings are taking longer
+
+The opposite side of the market is equally instructive. Homes that are merely good, rather than exceptional, now face more scrutiny. Floor plans with awkward room allocation, lots with limited privacy, finishes that already feel dated, or locations with subtle drawbacks are being discounted by buyers much more aggressively than before.
+
+That does not make these homes unsellable. It does mean the margin for pricing error is thinner. In a market with more inventory, buyers no longer need to stretch for a property that almost works.
+
+## Neighborhood-level inventory matters more than citywide data
+
+Luxury real estate has always been hyperlocal, but that is especially true now. A citywide inventory figure may suggest broader softening, while a tightly held enclave remains notably constrained. Conversely, a neighborhood with several new listings may appear active on paper, but if those homes are clustered around one product type or one overrepresented price band, the actual buyer opportunity may be narrower than it looks.
+
+This is why serious buyers and sellers should focus on inventory by micro-market and by property profile. In <a href="/communities/westlake-hills" class="text-foreground underline hover:text-muted-foreground">West Lake Hills</a>, Tarrytown, Pemberton, <a href="/communities/barton-creek" class="text-foreground underline hover:text-muted-foreground">Barton Creek</a>, <a href="/communities/rollingwood" class="text-foreground underline hover:text-muted-foreground">Rollingwood</a>, and select pockets of <a href="/communities/downtown-austin" class="text-foreground underline hover:text-muted-foreground">central Austin</a>, supply and demand can behave very differently despite similar headline price points. In one area, lot scarcity may keep premium land values intact. In another, newer inventory may create more leverage for buyers evaluating contemporary homes with overlapping features.
+
+The relevant question is not whether inventory is up. It is whether inventory is up in the exact segment that matters to your decision — a question we work through with clients at the <a href="/best-luxury-neighborhoods-austin" class="text-foreground underline hover:text-muted-foreground">neighborhood level</a>.
+
+## Off-market supply is still shaping the top of the market
+
+Public inventory only tells part of the story in luxury. Some of the strongest homes never reach broad-market exposure at all. Others are quietly shown before a formal launch, allowing a seller to test demand while preserving discretion. For buyers, that means relying on visible listings alone can create a distorted read of actual supply.
+
+This dynamic is especially important at the upper end, where privacy and select access remain central to how deals come together. A market can look more saturated online than it feels in practice if the most compelling homes are trading through <a href="/off-market-real-estate-austin" class="text-foreground underline hover:text-muted-foreground">off-market channels</a>. It can also look tighter than it really is if several owners are willing to sell, but only through targeted conversations.
+
+For that reason, inventory strategy is not just about monitoring what is active. It is also about understanding what is likely to come available, what is being discussed quietly, and which properties are realistically attainable before they become widely known — exactly what our <a href="/private-opportunities" class="text-foreground underline hover:text-muted-foreground">private opportunities network</a> is built to surface.
+
+## What buyers should do with these inventory conditions
+
+More inventory can create better positioning for buyers, but only if they use the extra choice well. The advantage is not in making lower offers across the board. It is in becoming more precise.
+
+In this market, buyers should separate homes into two categories: properties that are replaceable and properties that are not. Replaceable inventory deserves patience and disciplined pricing. Irreplaceable inventory often deserves faster action, because the buyer pool for truly special homes remains deeper than many assume.
+
+This is also a market where preparation matters. When the right home appears, particularly in a tightly held neighborhood like <a href="/communities/rob-roy" class="text-foreground underline hover:text-muted-foreground">Rob Roy</a> or <a href="/communities/spanish-oaks" class="text-foreground underline hover:text-muted-foreground">Spanish Oaks</a> or through a private channel, the window to act can still be short. Buyers who have clarity on their criteria, trade-offs, and acquisition strategy are in a stronger position than those who mistake broader market softness for universal leverage.
+
+## What sellers should understand about Austin luxury inventory trends
+
+For sellers, the current environment rewards realism and precision. The market is still capable of delivering excellent outcomes, but presentation and pricing need to be grounded in actual buyer behavior, not retrospective peak-era assumptions.
+
+That starts with honest positioning. If the home is among the best available in its segment, it should be marketed with confidence and discipline. If it is entering a field of similar listings, then differentiation becomes essential. That may come through pricing, timing, cosmetic refinement, or access strategy. Not every luxury property benefits from maximum public exposure at the outset. In some cases, a quieter <a href="/sell-private" class="text-foreground underline hover:text-muted-foreground">private sale approach</a> preserves leverage and attracts a more qualified audience.
+
+The common mistake is treating all inventory as equal. It is not. The market is measuring each home against a much sharper standard than it did a few years ago.
+
+## The outlook: more opportunity, but less forgiveness
+
+The most likely path forward is not a dramatic swing in one direction. It is a continued market defined by selective demand, neighborhood-level divergence, and stronger rewards for quality. Inventory should remain meaningful enough to give buyers choice, but that choice will not erase the premium attached to rare product in the right location.
+
+For <a href="/austin-real-estate-investment" class="text-foreground underline hover:text-muted-foreground">investors</a> and primary residence buyers alike, this is a market that favors judgment over speed for its own sake. For sellers, it favors strategy over optimism. And for anyone operating seriously in the upper tier, the edge will come from reading the inventory beneath the headline count — which homes are fungible, which are scarce, and which will look even more difficult to replace two years from now.
+
+That is where a lot of value is being created right now: not in reacting to the market, but in seeing its hierarchy clearly before everyone else does. If you'd like a confidential read on inventory in your specific segment, <a href="/contact" class="text-foreground underline hover:text-muted-foreground">start a conversation</a> with <a href="/about" class="text-foreground underline hover:text-muted-foreground">Echelon Property Group</a>.
+
+## Frequently Asked Questions
+
+### Is Austin luxury inventory rising or falling right now?
+
+Inventory has expanded across several upper-tier segments compared with the compressed levels of the prior run-up, but the increase is uneven. Some neighborhoods remain tightly held while others have more visible supply, so citywide figures can be misleading at the luxury level.
+
+### Does more inventory mean it's a buyer's market for Austin luxury homes?
+
+Not uniformly. More choice gives buyers leverage on replaceable, generic homes, but truly distinctive properties — strong architecture, exceptional lots, scarce locations — still transact decisively and often draw competitive interest.
+
+### Which Austin luxury neighborhoods have the tightest inventory?
+
+Tarrytown, Pemberton Heights, the best pockets of Westlake, and parts of Rollingwood remain the most supply-constrained because land is finite and replacement opportunities are limited. Barton Creek and newer construction segments tend to show more visible inventory.
+
+### How much of Austin's luxury market trades off-market?
+
+A meaningful share of upper-tier transactions in Austin happen off-market or pre-market, particularly in scarce neighborhoods. Buyers limited to public listings typically see only part of the real opportunity set.
+
+### Should I sell my Austin luxury home now or wait?
+
+It depends on the home. Properties that are best-in-class for their segment can perform strongly today with disciplined pricing and the right exposure strategy. Homes that face direct competition from similar listings often benefit from differentiation, timing adjustments, or a quieter, off-market launch.
+    \`,
+    author: "Taylor Sherwood",
+    date: "2026-05-12",
+    readTime: "8 min read",
+    category: "MARKET INSIGHT",
+    image: blogAustinLuxuryInventoryTrends,
+    heroImage: blogAustinLuxuryInventoryTrends
+  },
+  {
     id: "austin-luxury-neighborhood-review",
     title: "Austin Luxury Neighborhood Review",
     metaTitle: "Austin Luxury Neighborhood Review | Echelon Property Group",

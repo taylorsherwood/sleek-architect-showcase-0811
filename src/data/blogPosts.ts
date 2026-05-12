@@ -127,7 +127,7 @@ A meaningful share of upper-tier transactions in Austin happen off-market or pre
 ### Should I sell my Austin luxury home now or wait?
 
 It depends on the home. Properties that are best-in-class for their segment can perform strongly today with disciplined pricing and the right exposure strategy. Homes that face direct competition from similar listings often benefit from differentiation, timing adjustments, or a quieter, off-market launch.
-    \`,
+    `,
     author: "Taylor Sherwood",
     date: "2026-05-12",
     readTime: "8 min read",

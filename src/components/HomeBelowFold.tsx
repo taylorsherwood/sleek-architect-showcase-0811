@@ -90,7 +90,7 @@ const AdvisorSection = () => (
             {/* Brokerage logo */}
             <div className="w-full flex flex-col items-center pt-5 pb-2 px-4">
               <div className="w-12 h-px bg-gold mb-5" />
-              <div className="w-full max-w-[260px] translate-x-[18px]">
+              <div className="w-full max-w-[260px] mx-auto">
                 <img
                   src={expEchelonLogo}
                   alt="eXp Realty and Echelon Property Group brokerage partnership"

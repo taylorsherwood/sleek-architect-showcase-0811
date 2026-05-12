@@ -6,6 +6,7 @@ import blogSellPrivately from "@/assets/blog-sell-privately.webp";
 import blog78746Guide from "@/assets/blog-78746-luxury-homes-guide.jpg";
 import blogOutdoorBars2026 from "@/assets/blog-austin-outdoor-bars-2026.jpg";
 import blogAustinLuxuryNeighborhoodReview from "@/assets/blog-austin-luxury-neighborhood-review.avif";
+import blogAustinLuxuryInventoryTrends from "@/assets/blog-austin-luxury-inventory-trends.jpg";
 
 
 export interface BlogPost {

@@ -31,11 +31,92 @@ import blogWealthBuildingLuxury from "@/assets/blog-wealth-building-luxury-real-
 import blogNewConstructionAustin from "@/assets/blog-new-construction-austin.jpg";
 import blogLakeAustinWaterfrontValue from "@/assets/lake-austin-waterfront.jpg";
 import blogAustinLuxuryTrends from "@/assets/blog-austin-luxury-trends.jpg";
+import blogLuxurySellersQuiet from "@/assets/blog-austin-luxury-sellers-going-quiet.png";
 
 import { BlogPost } from "./blogPosts";
 
-// Build marker: ensure austin-luxury-housing-trends-to-watch ships in bundle
+// Build marker: ensure new posts ship in bundle (v3)
 export const seoBlogPosts: BlogPost[] = [
+  {
+    id: "why-austin-luxury-sellers-are-going-quiet",
+    title: "Why Austin Luxury Sellers Are Going Quiet",
+    metaTitle: "Why Austin Luxury Sellers Are Going Quiet | Echelon",
+    excerpt: "Why a growing number of Austin luxury homeowners are choosing a quieter path to market — how private and off-market strategy preserves leverage, controls timing, and reaches the right buyer without public exposure.",
+    content: `Not every luxury home should hit the market the same way.
+
+In Austin's higher-end neighborhoods, the decision to sell is often more layered than simply choosing a list price and launching on MLS. For many owners, privacy matters. Timing matters. The right buyer pool matters. And in some cases, the most effective strategy begins before the public ever sees the home.
+
+This is especially true in areas like [Barton Creek](/communities/barton-creek), [Westlake](/communities/westlake-hills), [Rollingwood](/communities/rollingwood), [Tarrytown](/communities/tarrytown), and select pockets of [Lake Austin](/communities/lake-austin), where properties are not always easily compared by square footage or recent sales alone.
+
+A home may have a view that cannot be replicated.
+A renovation that took years to execute.
+A lot position that only a handful of buyers would truly understand.
+Or a seller who simply does not want public attention around a major life transition.
+
+That is where a more discreet approach can make sense.
+
+## A private strategy is about control, not concealment
+
+A [private or off-market strategy](/off-market-real-estate-austin) is not about hiding a home. It is about controlling the process.
+
+It allows a seller to test pricing, gauge qualified interest, and create conversations with the right buyers before committing to a full public launch. In some cases, it can help preserve leverage. In others, it can reveal that the broader market is necessary.
+
+The key is knowing the difference.
+
+## Off-market done well is highly intentional
+
+There is a misconception that off-market means passive. In reality, a strong [private listing strategy](/blog/what-is-private-listing-in-real-estate) should be highly intentional. It requires careful positioning, curated exposure, qualified buyer targeting, and honest feedback.
+
+Done poorly, it limits opportunity.
+Done well, it can create a quieter, more controlled path forward.
+
+For a deeper look at why so many of the city's most desirable homes never reach public portals, see [why most buyers never see Austin's best homes](/blog/why-most-buyers-never-see-austins-best-homes) and [how to find off-market homes in Austin](/blog/find-off-market-homes-austin).
+
+## The better question for Austin luxury sellers
+
+For [Austin luxury sellers](/sell), the question is not always "Should we list publicly or privately?"
+
+The better question is:
+
+What approach gives this specific property the best chance to reach the right buyer while protecting the seller's goals?
+
+Sometimes that means MLS.
+Sometimes it means [private conversations first](/sell-private).
+Often, the best strategy is a thoughtful combination of both.
+
+The market is more nuanced than a Zestimate, a comp, or a headline — see our [Austin luxury real estate market report](/austin-luxury-real-estate-market-report) for the current view. And for owners of distinctive properties, the strategy should be just as nuanced.
+
+If you are considering a move and want to understand what a discreet sale could look like, [I am always happy to have a confidential conversation](/contact).
+
+:::cta
+heading: Considering a quieter path to market?
+button: Request a Confidential Conversation
+href: /sell-private
+:::
+
+:::faq
+Q: What does it mean to sell a luxury home off-market in Austin?
+A: An off-market or private sale means the home is marketed selectively to qualified buyers and their advisors rather than listed publicly on MLS. The owner retains control over who sees the property, when, and how — protecting privacy while still creating real competition among the right pool of buyers.
+
+Q: Is a private sale the same as not marketing the home?
+A: No. A well-run private strategy is highly intentional. It involves careful positioning, curated exposure to qualified buyers, broker-to-broker outreach, and honest feedback from the market. The difference is the audience, not the effort.
+
+Q: Which Austin neighborhoods are best suited to a private sale?
+A: Tarrytown, Westlake, Rollingwood, Barton Creek, Pemberton Heights, and select Lake Austin pockets see meaningful private activity because ownership is stable, properties are distinctive, and buyers at that level value discretion.
+
+Q: Can a private sale still get full market value?
+A: Often, yes — especially when the property is genuinely scarce and the buyer pool is well-defined. Private does not mean discounted. It means controlled. In some cases, discretion itself commands a premium.
+
+Q: When should a seller consider going public instead?
+A: When the property benefits from broad demand, when comparable inventory is thin, or when private outreach has clarified that the right buyer is not already in the qualified pool. The best strategy often combines a quiet first phase with a disciplined public launch if needed.
+:::`,
+    author: "Taylor Sherwood",
+    date: "2026-05-13",
+    readTime: "5 min read",
+    category: "MARKET TRENDS",
+    image: blogLuxurySellersQuiet,
+    heroImage: blogLuxurySellersQuiet,
+  },
   {
     id: "austin-luxury-housing-trends-to-watch",
     title: "Austin Luxury Housing Trends to Watch",

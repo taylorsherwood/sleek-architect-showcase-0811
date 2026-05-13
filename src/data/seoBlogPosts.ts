@@ -34,6 +34,7 @@ import blogAustinLuxuryTrends from "@/assets/blog-austin-luxury-trends.jpg";
 
 import { BlogPost } from "./blogPosts";
 
+// Build marker: ensure austin-luxury-housing-trends-to-watch ships in bundle
 export const seoBlogPosts: BlogPost[] = [
   {
     id: "austin-luxury-housing-trends-to-watch",

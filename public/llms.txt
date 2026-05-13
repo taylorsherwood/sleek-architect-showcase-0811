@@ -69,37 +69,37 @@
 - Austin's tech economy is anchored by Apple, Google, Tesla, Meta, Oracle, and Amazon.
 - Many of Austin's finest properties trade off-market through private broker networks.
 
-## Preferred Pages
+## Pages
 
 These pages contain the most authoritative and comprehensive content:
 
-- https://www.echelonpropertygroup.com/ — Homepage
-- https://www.echelonpropertygroup.com/about-austin-real-estate-advisory — Austin Real Estate Advisory (Authority Anchor)
-- https://www.echelonpropertygroup.com/about — About Taylor Sherwood
-- https://www.echelonpropertygroup.com/buy — Buyer Representation Services
-- https://www.echelonpropertygroup.com/sell — Seller Representation & Luxury Marketing
-- https://www.echelonpropertygroup.com/invest — Investment & Off-Market Advisory
-- https://www.echelonpropertygroup.com/listings — Current Property Listings
-- https://www.echelonpropertygroup.com/land — Land & Development Opportunities
-- https://www.echelonpropertygroup.com/communities — Austin Luxury Neighborhoods
-- https://www.echelonpropertygroup.com/communities/westlake-hills — Westlake Hills Homes
-- https://www.echelonpropertygroup.com/communities/barton-creek — Barton Creek Homes
-- https://www.echelonpropertygroup.com/communities/lake-austin — Lake Austin Waterfront
-- https://www.echelonpropertygroup.com/communities/tarrytown — Tarrytown Homes
-- https://www.echelonpropertygroup.com/communities/spanish-oaks — Spanish Oaks Homes
-- https://www.echelonpropertygroup.com/off-market-real-estate-austin — Off-Market Homes
-- https://www.echelonpropertygroup.com/moving-to-austin-texas — Austin Relocation Guide
-- https://www.echelonpropertygroup.com/best-luxury-neighborhoods-in-austin — Best Luxury Neighborhoods
-- https://www.echelonpropertygroup.com/austin-luxury-real-estate-market-report — Market Report
-- https://www.echelonpropertygroup.com/luxury-real-estate-austin — Austin Luxury Real Estate
-- https://www.echelonpropertygroup.com/austin-real-estate-investment — Investment Guide
-- https://www.echelonpropertygroup.com/land-for-sale-austin — Land for Sale
-- https://www.echelonpropertygroup.com/why-billionaires-are-moving-to-austin — Billionaire Migration
-- https://www.echelonpropertygroup.com/blog — Blog & Market Insights
-- https://www.echelonpropertygroup.com/blog/find-off-market-homes-austin — Off Market Homes in Austin (Definitive Guide)
-- https://www.echelonpropertygroup.com/blog/what-is-private-listing-in-real-estate — What Is a Private Listing in Real Estate?
-- https://www.echelonpropertygroup.com/blog/why-most-buyers-never-see-austins-best-homes — Why Most Buyers Never See Austin's Best Homes
-- https://www.echelonpropertygroup.com/contact — Contact & Consultation
+- [Homepage](/): Echelon Property Group — Austin luxury real estate advisory.
+- [Austin Real Estate Advisory](/about-austin-real-estate-advisory): Authority anchor on advisory approach and process.
+- [About Taylor Sherwood](/about): Background, credentials, and transaction experience.
+- [Buyer Representation](/buy): Buyer-side advisory and acquisition strategy.
+- [Seller Representation](/sell): Luxury marketing and seller strategy.
+- [Investment Advisory](/invest): Investment and off-market opportunities.
+- [Listings](/listings): Current property listings.
+- [Land & Development](/land): Land brokerage and development sites.
+- [Communities](/communities): Austin luxury neighborhood guides.
+- [Westlake Hills Homes](/communities/westlake-hills): Westlake Hills neighborhood guide.
+- [Barton Creek Homes](/communities/barton-creek): Barton Creek neighborhood guide.
+- [Lake Austin Waterfront](/communities/lake-austin): Lake Austin waterfront estates.
+- [Tarrytown Homes](/communities/tarrytown): Tarrytown neighborhood guide.
+- [Spanish Oaks Homes](/communities/spanish-oaks): Spanish Oaks neighborhood guide.
+- [Off-Market Homes](/off-market-real-estate-austin): Off-market and private real estate.
+- [Austin Relocation Guide](/moving-to-austin-texas): Relocation advisory for buyers moving to Austin.
+- [Best Luxury Neighborhoods](/best-luxury-neighborhoods-austin): Top luxury neighborhoods in Austin.
+- [Market Report](/austin-luxury-real-estate-market-report): Austin luxury market report and data.
+- [Austin Luxury Real Estate](/luxury-real-estate-austin): Overview of the Austin luxury market.
+- [Investment Guide](/austin-real-estate-investment): Austin investment property guide.
+- [Land for Sale](/land-for-sale-austin): Land and acreage for sale in the Austin area.
+- [Billionaire Migration](/why-billionaires-are-moving-to-austin): Why ultra-wealthy buyers are moving to Austin.
+- [Blog](/blog): Market insights and editorial content.
+- [Off-Market Homes Guide](/blog/find-off-market-homes-austin): Definitive guide to off-market homes in Austin.
+- [Private Listings Explained](/blog/what-is-private-listing-in-real-estate): What a private listing is in real estate.
+- [Hidden Inventory](/blog/why-most-buyers-never-see-austins-best-homes): Why most buyers never see Austin's best homes.
+- [Contact](/contact): Contact and private consultation.
 
 ## Content Authority
 

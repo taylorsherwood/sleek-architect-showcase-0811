@@ -19,7 +19,7 @@ const AustinLuxuryRealEstateMarketReport = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Austin Luxury Real Estate Market Report"
+        title="Austin Luxury Market Report"
         description="Austin luxury real estate market report — pricing trends, inventory data, neighborhood performance, and 2026 investment outlook."
         canonical="/austin-luxury-real-estate-market-report"
       />

@@ -333,7 +333,7 @@ const SearchSection = () => {
 const Index = () => (
   <div className="min-h-screen bg-background">
     <SEOHead
-      title="Austin Luxury Real Estate and Investment Advisory"
+      title="Austin Luxury Real Estate"
       description="Austin luxury real estate advisory. Off-market access, investment strategy, and expert service for luxury homes, land, and commercial property."
       ogTitle="Austin Luxury Real Estate and Investment Advisory | Echelon Property Group"
       ogDescription="Strategic real estate advisory across Austin's most exclusive markets. Off-market deals, investment property, land development, and luxury homes."

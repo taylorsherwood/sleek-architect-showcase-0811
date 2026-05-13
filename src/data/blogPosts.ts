@@ -29,7 +29,7 @@ export const blogPosts: BlogPost[] = [
   {
     id: "austin-luxury-inventory-trends",
     title: "Austin Luxury Inventory Trends Right Now",
-    metaTitle: "Austin Luxury Inventory Trends Right Now | Echelon Property Group",
+    metaTitle: "Austin Luxury Inventory Trends | Echelon Property Group",
     excerpt: "Austin luxury inventory is rising, but not uniformly. An advisor's read on which homes are still moving, where buyers have leverage, and how sellers should position now.",
     content: `
 # Austin Luxury Inventory Trends Right Now
@@ -235,7 +235,7 @@ Choose downtown if you want service, security, lock-and-leave convenience, and a
   {
     id: "austin-newest-outdoor-bars-2026",
     title: "Austin's Newest Outdoor Bars: Where to Drink Outside in 2026",
-    metaTitle: "Austin's Newest Outdoor Bars: Where to Drink Outside in 2026",
+    metaTitle: "Austin's Newest Outdoor Bars 2026 | Echelon Property Group",
     excerpt: "The newest outdoor bars in Austin: Only the Wild Ones, Boni's, Aperí, Bar Hacienda, Oria and more. Where locals are actually drinking this patio season.",
     content: `
 # Austin's Newest Outdoor Bars: Where to Drink Outside in 2026
@@ -331,7 +331,7 @@ Looking to live within walking distance of Austin's best new outdoor bars? <a hr
   {
     id: "78746-luxury-homes-guide-for-smart-buyers",
     title: "78746 Luxury Homes Guide for Smart Buyers",
-    metaTitle: "78746 Luxury Homes Guide for Smart Buyers | Echelon Property Group",
+    metaTitle: "78746 Luxury Homes Buyer Guide | Echelon Property Group",
     excerpt: "An advisor's guide to 78746 luxury homes — how Westlake's micro-markets, lot quality, and private inventory shape value for buyers and sellers.",
     content: `
 # 78746 Luxury Homes Guide for Smart Buyers
@@ -444,7 +444,7 @@ It depends on lifestyle priorities. 78746 favors closer-in convenience and Eanes
   {
     id: "how-to-sell-privately-the-right-way",
     title: "How to Sell Privately the Right Way",
-    metaTitle: "How to Sell a Home Privately in Austin | Echelon Property Group",
+    metaTitle: "How to Sell a Home Privately | Echelon Property Group",
     excerpt: "A private sale can protect privacy, control the narrative, and attract serious buyers — but only if it's executed with discipline. Here's how to do it without leaving value on the table.",
     content: `
 # How to Sell Privately the Right Way
@@ -549,6 +549,7 @@ If you're considering a private sale, think less about avoiding the market and m
   {
     id: "sustainable-architecture-future",
     title: "The Future of Sustainable Architecture",
+    metaTitle: "Future of Sustainable Architecture | Echelon Property Group",
     excerpt: "Exploring how modern architectural practices are evolving to meet environmental challenges while maintaining design excellence.",
     content: `
 # The Future of Sustainable Architecture
@@ -915,6 +916,7 @@ Walkability varies by neighborhood. Central areas like Tarrytown, Bryker Woods, 
   {
     id: "2300-barton-creek-blvd",
     title: "Luxury Lock-and-Leave in Governor's Hill",
+    metaTitle: "Lock-and-Leave in Governor's Hill | Echelon Property Group",
     excerpt: "Living at 2300 Barton Creek Blvd #15, Austin, TX 78735",
     content: `
 

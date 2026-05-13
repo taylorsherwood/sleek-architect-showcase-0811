@@ -37,7 +37,7 @@ export const seoBlogPosts: BlogPost[] = [
   {
     id: "off-market-homes-austin",
     title: "Austin Off Market Homes: What Buyers Miss",
-    metaTitle: "Off Market Homes Austin | What Buyers Miss | Echelon Property Group",
+    metaTitle: "Austin Off-Market Homes | Echelon Property Group",
     excerpt: "Why the most desirable Austin homes often trade quietly — how off-market inventory actually works in the luxury tier, where private opportunities surface, the mistakes buyers make, and how strategic representation turns discreet access into measurable advantage.",
     content: `Some of the most desirable homes in Austin never ask for public attention. They trade quietly, through trusted relationships, private outreach, and a level of market fluency that rarely shows up in a listing alert. For buyers focused on access, discretion, and long-term asset quality, [Austin off market homes](/off-market-real-estate-austin) are not a side channel. They are often where the real market begins.
 
@@ -229,7 +229,7 @@ A: Look at lot orientation, sightlines from adjacent and uphill lots, street hie
   {
     id: "luxury-home-advisor-austin",
     title: "Luxury Home Advisor Austin: What Matters",
-    metaTitle: "Luxury Home Advisor Austin | What Actually Matters at the High End",
+    metaTitle: "Austin Luxury Home Advisor | Echelon Property Group",
     excerpt: "What a luxury home advisor in Austin really does — how strategy, micro-market judgment, off-market access, and selective representation shape outcomes for buyers and sellers in the upper tier.",
     content: `A $3 million home rarely sells because it was simply listed well. It trades because the right buyer saw the right asset at the right moment, with the right positioning behind it. That is the difference a [luxury home advisor Austin](/about-austin-real-estate-advisory) clients rely on is meant to create — not more noise, but better outcomes.
 
@@ -318,7 +318,7 @@ A: Beyond what is available, ask how a specific property will hold up over the n
   {
     id: "selling-a-luxury-home-in-austin",
     title: "Selling a Luxury Home in Austin",
-    metaTitle: "Selling a Luxury Home in Austin | Strategy, Pricing & Discretion",
+    metaTitle: "Selling a Luxury Home in Austin | Echelon Property Group",
     excerpt: "How to sell a luxury home in Austin the right way — from market positioning and pricing strategy to private launches, presentation, and representation that protects premium outcomes.",
     content: `A luxury home that lingers sends a message, whether a seller intends it to or not. In the upper tier of the market, days on market are not just a metric. They become part of the asset's story. That is why [selling a luxury home in Austin](/sell) requires more than listing it beautifully and waiting for the right buyer to appear.
 
@@ -432,7 +432,7 @@ A: West lake Hills, Tarrytown, Pemberton Heights, Barton Creek, Rollingwood, and
   {
     id: "best-austin-neighborhoods-for-luxury-homes",
     title: "Best Austin Neighborhoods for Luxury Homes",
-    metaTitle: "Best Austin Neighborhoods for Luxury Homes | Echelon Property Group",
+    metaTitle: "Best Austin Luxury Neighborhoods | Echelon Property Group",
     excerpt: "A precise look at the best Austin neighborhoods for luxury homes — from West lake Hills and Tarrytown to Barton Creek, Pemberton Heights, Rollingwood, Lake Austin, Spanish Oaks, Zilker, and Barton Hills — and how serious buyers narrow the field.",
     content: `A luxury home search in Austin usually narrows quickly once priorities become clear. The best Austin neighborhoods for luxury homes are not interchangeable. Some trade on land and privacy, some on walkability and architectural pedigree, and some on long-term scarcity that keeps demand durable even when the broader market shifts.
 
@@ -527,7 +527,7 @@ Both offer gated, estate-scale living. Barton Creek tends to feel more establish
   {
     id: "why-most-buyers-never-see-austins-best-homes",
     title: "Why Most Buyers Never See Austin's Best Homes (And How to Change That)",
-    metaTitle: "Why Most Buyers Never See Austin's Best Homes | Echelon Property Group",
+    metaTitle: "Austin's Hidden Best Homes | Echelon Property Group",
     excerpt: "The best homes in Austin rarely rely on exposure to sell. Here's how the controlled market actually works — and how serious buyers position themselves to be in the room before listings ever go public.",
     content: `Most buyers think they're seeing the market.
 
@@ -711,7 +711,7 @@ Off-market and private listing activity is concentrated in luxury neighborhoods 
   {
     id: "find-off-market-homes-austin",
     title: "Off Market Homes in Austin: The Definitive 2026 Buyer & Investor Guide",
-    metaTitle: "Off Market Homes in Austin (2026 Guide) | Echelon Property Group",
+    metaTitle: "Off-Market Homes Austin Guide | Echelon Property Group",
     excerpt: "How off market homes in Austin actually trade — private listings, broker networks, county records, and the access strategies that work above $1.5M.",
     content: `## The Homes You Want Are Not on Zillow
 
@@ -873,6 +873,7 @@ Yes, but the yield is inconsistent. You can mine Travis County probate filings, 
   {
     id: "best-luxury-neighborhoods-austin-texas",
     title: "Best Luxury Neighborhoods in Austin Texas",
+    metaTitle: "Best Austin Luxury Neighborhoods | Echelon Property Group",
     excerpt: "Discover the top luxury neighborhoods in Austin, Texas. From West lake Hills to Barton Creek, explore where Austin's finest homes and estates are located.",
     content: `## Why Austin Is a Top Luxury Real Estate Market
 
@@ -981,6 +982,7 @@ Understanding each neighborhood's character is only part of the equation. For bu
   {
     id: "moving-to-austin-texas-from-california",
     title: "Moving to Austin Texas from California",
+    metaTitle: "Moving to Austin from California | Echelon Property Group",
     excerpt: "Everything California residents need to know about relocating to Austin, Texas. Compare cost of living, taxes, neighborhoods, and lifestyle between CA and TX.",
     content: `## Why Californians Are Moving to Austin
 
@@ -1359,7 +1361,7 @@ Many Lake Austin transactions occur off-market. Working with a specialized agent
   {
     id: "austin-luxury-real-estate-market-forecast",
     title: "Austin Luxury Real Estate Market Forecast: 2026 Pricing, Trends & Expert Predictions",
-    metaTitle: "Austin Luxury Real Estate Market Forecast 2026 | Pricing & Trends",
+    metaTitle: "Austin Luxury Market Forecast 2026 | Echelon Property Group",
     excerpt: "Data-backed 2026 forecast for Austin's luxury real estate market. Taylor Sherwood analyzes pricing tiers, buyer-seller leverage shifts, neighborhood-level predictions, and where smart money is moving in Austin's $2M+ segment.",
     content: `## Where Austin's Luxury Market Stands in 2026
 
@@ -1471,6 +1473,7 @@ Austin commands a 20–40% premium on price per square foot over Dallas and Hous
   {
     id: "top-investment-neighborhoods-austin",
     title: "Top Investment Neighborhoods in Austin",
+    metaTitle: "Top Austin Investment Areas | Echelon Property Group",
     excerpt: "Discover the best neighborhoods for real estate investment in Austin, Texas. Data-driven analysis of appreciation trends, rental yields, and growth potential.",
     content: `## Why Austin Is a Top Real Estate Investment Market
 
@@ -1603,6 +1606,7 @@ Off-market deals are accessed through established relationships with local speci
   {
     id: "moving-to-austin-texas-complete-relocation-guide",
     title: "Moving to Austin Texas: A Complete Relocation Guide",
+    metaTitle: "Moving to Austin Texas Guide | Echelon Property Group",
     excerpt: "A complete guide to relocating to Austin, Texas. Explore neighborhoods, cost of living, lifestyle, and real estate opportunities for new residents.",
     content: `Austin has become one of the most desirable cities in the United States for professionals, entrepreneurs, and families seeking opportunity, culture, and a high quality of life. With its thriving technology sector, vibrant music scene, and diverse neighborhoods, Austin continues to attract thousands of new residents each year.
 
@@ -1709,6 +1713,7 @@ While the market fluctuates, Austin has experienced long-term appreciation drive
   {
     id: "why-billionaires-are-moving-to-austin",
     title: "Why Billionaires Are Moving to Austin",
+    metaTitle: "Why Billionaires Move to Austin | Echelon Property Group",
     excerpt: "From Elon Musk to Travis Kalanick, discover why the world's wealthiest individuals are relocating to Austin — and what it means for the luxury real estate market.",
     content: "",
     author: "Taylor Sherwood",
@@ -1721,6 +1726,7 @@ While the market fluctuates, Austin has experienced long-term appreciation drive
   {
     id: "rollingwood-vs-westlake-hills",
     title: "Rollingwood vs West lake Hills: Which Austin Luxury Neighborhood Is Right for You?",
+    metaTitle: "Rollingwood vs Westlake Hills | Echelon Property Group",
     excerpt: "Compare Rollingwood and West lake Hills to find the right Austin luxury neighborhood. Explore lifestyle, home styles, location advantages, and long-term value.",
     content: `When buyers begin narrowing down Austin's most desirable close-in luxury neighborhoods, Rollingwood and West lake Hills almost always rise to the top. Both offer exceptional access to downtown, strong long-term appeal, and a polished residential atmosphere—but the day-to-day experience of living in each is very different.
 
@@ -1803,7 +1809,7 @@ Yes. Both neighborhoods are served by the Eanes Independent School District, con
   },
   {
     id: "tarrytown-vs-bryker-woods",
-    metaTitle: "Tarrytown vs Bryker Woods Austin | 78703 Neighborhood Guide",
+    metaTitle: "Tarrytown vs Bryker Woods 78703 | Echelon Property Group",
     title: "Tarrytown vs Bryker Woods: Choosing the Right 78703 Lifestyle",
     excerpt: "Compare Tarrytown vs Bryker Woods in Austin's 78703. Explore lifestyle, home styles, pricing, and which neighborhood fits your goals.",
     content: `For buyers targeting central Austin, few zip codes carry the prestige and convenience of 78703. Within it, Tarrytown and Bryker Woods offer two distinct interpretations of close-in luxury living.
@@ -1923,7 +1929,7 @@ Tarrytown is approximately 5-10 minutes from downtown Austin, making it one of t
   },
   {
     id: "lake-austin-vs-lake-travis",
-    metaTitle: "Lake Austin vs Lake Travis | Waterfront Living in Austin Texas",
+    metaTitle: "Lake Austin vs Lake Travis | Echelon Property Group",
     title: "Lake Austin vs Lake Travis: How the Lifestyles Compare",
     excerpt: "Compare Lake Austin vs Lake Travis real estate. Discover lifestyle differences, property types, and which waterfront fits your goals.",
     content: `For buyers considering waterfront living in Austin, the decision often comes down to Lake Austin or Lake Travis. While both offer stunning views and luxury homes, the lifestyle experience between the two is dramatically different.
@@ -2097,7 +2103,7 @@ Typical buyers include corporate executives, entrepreneurs, and high-net-worth f
   {
     id: "bee-cave-vs-lakeway-luxury-buyers",
     title: "Bee Cave vs Lakeway: Which Austin Community Fits Your Lifestyle?",
-    metaTitle: "Bee Cave vs Lakeway for Luxury Buyers | Echelon Property Group",
+    metaTitle: "Bee Cave vs Lakeway | Echelon Property Group",
     excerpt: "A detailed comparison of Bee Cave and Lakeway — two of Austin's most popular Hill Country communities — covering lifestyle, schools, pricing, and investment potential.",
     content: `## Two Hill Country Communities, Two Distinct Lifestyles
 
@@ -2151,7 +2157,7 @@ Both communities have shown strong appreciation. Lakeway waterfront properties t
   {
     id: "best-neighborhoods-near-bee-cave",
     title: "Best Neighborhoods Near Bee Cave",
-    metaTitle: "Best Neighborhoods Near Bee Cave Austin (2026 Guide)",
+    metaTitle: "Best Neighborhoods Near Bee Cave | Echelon Property Group",
     excerpt: "An insider's guide to the neighborhoods surrounding Bee Cave, from Lakeway and Spanish Oaks to Steiner Ranch and Lake Travis, and how to choose the right fit.",
     content: `## Best Neighborhoods Near Bee Cave for Buyers Who Want Space, Privacy, and Access
 
@@ -2284,7 +2290,7 @@ A: Westlake combines proximity to downtown, Eanes ISD schools, and one of the ti
   {
     id: "what-makes-pemberton-heights-desirable",
     title: "What Makes Pemberton Heights So Desirable?",
-    metaTitle: "Pemberton Heights Austin — Why Buyers Love This Neighborhood | Echelon Property Group",
+    metaTitle: "Pemberton Heights Austin | Echelon Property Group",
     excerpt: "Explore what makes Pemberton Heights one of Austin's most prestigious neighborhoods — from its distinguished architecture and half-acre lots to walk-to-downtown convenience.",
     content: `## Austin's Most Distinguished Central Neighborhood
 
@@ -2380,7 +2386,7 @@ Lakeway is approximately 25 minutes west of downtown Austin via Highway 71 and R
   {
     id: "rob-roy-austin-gated-luxury",
     title: "Rob Roy: Inside Austin's Most Exclusive Gated Community",
-    metaTitle: "Rob Roy Austin TX — Gated Luxury Estates | Echelon Property Group",
+    metaTitle: "Rob Roy Austin Gated Estates | Echelon Property Group",
     excerpt: "Discover Rob Roy — Austin's most exclusive gated community featuring hilltop estates, panoramic views, Eanes ISD schools, and three distinct luxury enclaves.",
     content: `## Austin's Most Exclusive Gated Address
 
@@ -2430,7 +2436,7 @@ Rob Roy offers the combination of gated privacy, panoramic views, and estate-sca
   {
     id: "steiner-ranch-lake-austin-family-living",
     title: "Steiner Ranch: Family Living with Lake Austin Views",
-    metaTitle: "Steiner Ranch Austin — Family Community Guide | Echelon Property Group",
+    metaTitle: "Steiner Ranch Austin Guide | Echelon Property Group",
     excerpt: "A comprehensive guide to Steiner Ranch — Austin's largest master-planned community with resort amenities, Lake Austin access, and homes from $500K to $13M+.",
     content: `## Austin's Most Amenity-Rich Master-Planned Community
 
@@ -2476,7 +2482,7 @@ Yes. Steiner Ranch is one of Austin's most family-oriented communities, with poo
   {
     id: "austin-luxury-real-estate-market-outlook",
     title: "Austin Luxury Real Estate Market Outlook",
-    metaTitle: "Austin Luxury Real Estate Market Outlook | Echelon Property Group",
+    metaTitle: "Austin Luxury Market Outlook | Echelon Property Group",
     excerpt: "A strategic look at the austin luxury real estate market, from pricing power and private inventory to micro-markets shaping buyer and seller decisions.",
     content: `A $3 million home in Austin does not trade for the same reasons it did three years ago. Today, buyers are more selective, sellers are being judged against sharper standards, and the spread between a well-positioned asset and an average luxury listing can be significant. That is what makes the [austin luxury real estate market](/austin-luxury-homes-for-sale) more strategic than headline-driven.
 
@@ -2554,6 +2560,7 @@ For anyone making a move at the top of the market, the real edge is not speed fo
   {
     id: "private-listings-austin-buyers-actually-want",
     title: "LUXURY LISTINGS Austin Buyers Actually Want",
+    metaTitle: "Private Listings Austin Buyers Want | Echelon Property Group",
     excerpt: "Private listings Austin buyers want rarely appear publicly. Learn how off-market access works, who benefits most, and where strategy matters most.",
     content: "",
     author: "Taylor Sherwood",
@@ -2566,6 +2573,7 @@ For anyone making a move at the top of the market, the real edge is not speed fo
   {
     id: "lake-austin-luxury-real-estate-2026",
     title: "Lake Austin Luxury Real Estate in 2026",
+    metaTitle: "Lake Austin Luxury 2026 | Echelon Property Group",
     excerpt: "Lake Austin luxury real estate remains one of Austin's most tightly held markets, where frontage, privacy, and design drive premium pricing.",
     content: `A clean stretch of waterfront on [Lake Austin](/communities/lake-austin) can trade on a different logic than the rest of the city. Two homes may sit minutes apart, carry similar square footage, and still command dramatically different pricing based on shoreline quality, view corridor, topography, or whether the lot supports a true lock-and-leave estate experience. That is what makes lake austin luxury real estate less about broad market headlines and more about precise asset selection.
 
@@ -2734,7 +2742,7 @@ Austin's luxury market still rewards bold moves, but only when they are informed
   {
     id: "private-listings-real-estate-explained",
     title: "LUXURY LISTINGS Real Estate Explained",
-    metaTitle: "LUXURY LISTINGS Real Estate Explained | Echelon Property Group",
+    metaTitle: "Private Listings Explained | Echelon Property Group",
     excerpt: "Private listings real estate explained: how off-market and pocket listings work in Austin, who sees them, and how to access private inventory.",
     content: `The most desirable homes are not always the ones you can see. In the upper tier of the market, [private listings real estate](/off-market-real-estate-austin) often sits behind direct relationships, trusted advisor networks, and carefully controlled exposure rather than public search portals. For buyers and sellers operating at a high level, that is not a workaround. It is often the strategy.
 
@@ -2836,7 +2844,7 @@ Sellers should avoid private strategy when the property would benefit from broad
   {
     id: "what-is-private-listing-in-real-estate",
     title: "What Is a LUXURY LISTING in Real Estate? An Austin Advisor's Perspective",
-    metaTitle: "What Is a LUXURY LISTING in Real Estate? | Austin Guide",
+    metaTitle: "What Is a Private Listing? | Echelon Property Group",
     excerpt: "What is a private listing in real estate? An Austin advisor's perspective on how discreet sales work, when they fit, and where buyers find access.",
     content: `Some of the most consequential homes sold in Austin each year never appear on Zillow, never hit the MLS, and never see a public showing schedule. They move through phone calls, vetted introductions, and small circles of advisors who know exactly which buyer is quietly looking for a particular street, view, or architectural style.
 
@@ -2992,7 +3000,7 @@ Buyers gain access primarily through advisors who participate in trusted agent n
   {
     id: "buying-luxury-home-from-out-of-state",
     title: "Buying a Luxury Home from Out of State",
-    metaTitle: "Buying a Luxury Home in Austin from Out of State | Echelon Property Group",
+    metaTitle: "Buying Austin Luxury Out of State | Echelon Property Group",
     excerpt: "Relocating to an Austin luxury home is a strategic decision, not just a lifestyle one. How sophisticated out-of-state buyers evaluate micro-market fit, off-market access, and long-term value across West Lake Hills, Tarrytown, Barton Creek, Spanish Oaks, and Austin's most tightly held enclaves.",
     content: `A relocation at the luxury level is rarely about square footage alone. Relocating to an [Austin luxury home](/austin-luxury-homes-for-sale) usually starts with a more specific question: which version of Austin actually fits the way you live, work, host, and invest?
 
@@ -3090,7 +3098,7 @@ The most common error is underestimating how much micro-market fit drives long-t
   {
     id: "wealth-building-through-luxury-real-estate",
     title: "Wealth Building Through Luxury Real Estate",
-    metaTitle: "Wealth Building Through Luxury Real Estate | Echelon Property Group",
+    metaTitle: "Wealth Building via Luxury RE | Echelon Property Group",
     excerpt: "How affluent buyers and investors compound capital through scarcity, off-market access, and disciplined micro-market judgment — why the best luxury acquisitions protect capital, create optionality, and reward selectivity over time.",
     content: `The difference between a luxury home and a luxury asset is rarely the finish level. It is the quality of the location, the scarcity of the offering, and the discipline behind the acquisition. [Wealth building through luxury real estate](/austin-real-estate-investment) is less about buying something expensive and more about securing something difficult to replicate, difficult to access, and well positioned to compound value over time.
 
@@ -3167,7 +3175,7 @@ Luxury real estate can be a meaningful wealth-building tool, but only when appro
   {
     id: "new-construction-austin-what-wins",
     title: "New Construction in Austin: What Wins",
-    metaTitle: "New Construction in Austin: What Wins | Echelon Property Group",
+    metaTitle: "New Construction Austin: Wins | Echelon Property Group",
     excerpt: "What actually defines new construction luxury in Austin today — how site selection, architectural coherence, builder credibility, and micro-market positioning separate homes that hold value from those that simply photograph well.",
     content: `A glass-walled spec home with a pool and downtown views can command immediate attention. In [new construction luxury Austin](/luxury-real-estate-austin), that first impression matters, but it is rarely the whole story. The homes that hold status and value over time are not just photogenic. They are well-positioned, carefully executed, and aligned with how affluent buyers actually live.
 
@@ -3262,7 +3270,7 @@ A new luxury home should feel current on day one. The better ones still feel rel
   {
     id: "lake-austin-waterfront-homes-what-drives-value",
     title: "Lake Austin Waterfront Homes: What Drives Value",
-    metaTitle: "Lake Austin Waterfront Homes: What Drives Value | Echelon Property Group",
+    metaTitle: "Lake Austin Waterfront Value | Echelon Property Group",
     excerpt: "What actually drives pricing on Lake Austin waterfront homes — how frontage, topography, privacy, dock rights, and micro-segment demand separate trophy assets from merely expensive ones.",
     content: `On [Lake Austin](/communities/lake-austin), two homes can sit minutes apart by boat and still command meaningfully different pricing. The gap usually has less to do with square footage than buyers expect and far more to do with shoreline quality, privacy, topography, and what the property actually allows you to do on the water. That is the real conversation around [Lake Austin waterfront homes](/austin-luxury-homes-for-sale).
 

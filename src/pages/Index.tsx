@@ -120,18 +120,18 @@ const Hero = () => {
         width={780}
         height={1385}
       />
-      {/* Desktop: video paints directly with no static poster placeholder. */}
-      {!skipVideo && !isMobileHero && (
-        <div aria-hidden="true" className="absolute inset-0 pointer-events-none select-none hidden md:block" style={{ zIndex: 1 }}>
-          <video ref={videoRef} autoPlay muted loop playsInline preload="auto"
-            className="hero-bg-video"
-            tabIndex={-1}
-            width={1920} height={1080}
-          >
-            <source src="/videos/hero-video.mp4" type="video/mp4" />
-          </video>
-        </div>
-      )}
+      {/* Desktop: video paints directly with no static poster placeholder.
+          Always rendered (hidden on mobile via CSS) so it exists in prerendered HTML
+          and starts downloading immediately on initial load. */}
+      <div aria-hidden="true" className="absolute inset-0 pointer-events-none select-none hidden md:block" style={{ zIndex: 1 }}>
+        <video ref={videoRef} autoPlay muted loop playsInline preload="auto"
+          className="hero-bg-video"
+          tabIndex={-1}
+          width={1920} height={1080}
+        >
+          <source src="/videos/hero-video.mp4" type="video/mp4" />
+        </video>
+      </div>
 
       {/* Left-to-right gradient overlay for text readability */}
       {/* Mobile: stronger overlay for text readability */}

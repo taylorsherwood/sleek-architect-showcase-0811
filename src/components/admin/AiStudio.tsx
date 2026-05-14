@@ -84,7 +84,7 @@ const ActionButton = ({
   </button>
 );
 
-const AiStudio = ({ listing, sections, media, onApply, onClose }: Props) => {
+const AiStudio = ({ listing, sections, media, onMediaChange, onApply, onClose }: Props) => {
   // Brief state
   const [mlsRemarks, setMlsRemarks] = useState("");
   const [propertyDesc, setPropertyDesc] = useState(listing.full_description || "");
@@ -94,13 +94,59 @@ const AiStudio = ({ listing, sections, media, onApply, onClose }: Props) => {
   const [neighborhood, setNeighborhood] = useState("");
   const [matterport, setMatterport] = useState("");
   const [videoUrl, setVideoUrl] = useState("");
+  const [extraVideoUrls, setExtraVideoUrls] = useState<string[]>([]);
   const [floorplanUrl, setFloorplanUrl] = useState("");
   const [tone, setTone] = useState("");
+  const [uploadingVideo, setUploadingVideo] = useState(false);
+  const videoInputRef = useRef<HTMLInputElement | null>(null);
+
+  const galleryImages = media.filter((m) => (m.media_type || "gallery") !== "video");
+  const videoMedia = media.filter((m) => m.media_type === "video");
 
   const [generating, setGenerating] = useState(false);
   const [activeMode, setActiveMode] = useState<Mode | null>(null);
   const [result, setResult] = useState<GeneratedResult | null>(null);
   const [error, setError] = useState<string | null>(null);
+
+  const uploadVideos = async (files: FileList) => {
+    setUploadingVideo(true);
+    try {
+      const next: ListingMedia[] = [...media];
+      for (let i = 0; i < files.length; i++) {
+        const file = files[i];
+        const ext = file.name.split(".").pop();
+        const path = `${listing.id}/video-${Date.now()}-${i}.${ext}`;
+        const { error: upErr } = await supabase.storage.from("listing-media").upload(path, file, { upsert: true });
+        if (upErr) {
+          setError(upErr.message);
+          continue;
+        }
+        const { data: pub } = supabase.storage.from("listing-media").getPublicUrl(path);
+        const { data: row } = await supabase
+          .from("listing_media")
+          .insert({
+            listing_id: listing.id,
+            media_url: pub.publicUrl,
+            media_type: "video",
+            display_order: next.length,
+            caption: file.name,
+          })
+          .select()
+          .single();
+        if (row) next.push(row as ListingMedia);
+      }
+      onMediaChange?.(next);
+    } finally {
+      setUploadingVideo(false);
+      if (videoInputRef.current) videoInputRef.current.value = "";
+    }
+  };
+
+  const removeVideoMedia = async (id: string) => {
+    await supabase.from("listing_media").delete().eq("id", id);
+    onMediaChange?.(media.filter((m) => m.id !== id));
+  };
+
 
   const callGenerate = async (mode: Mode, extra: Record<string, unknown> = {}) => {
     setGenerating(true);

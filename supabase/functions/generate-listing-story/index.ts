@@ -36,6 +36,7 @@ interface Brief {
   // Media
   matterport_url?: string;
   video_url?: string;
+  video_urls?: string[];
   floorplan_urls?: string[];
   image_urls?: string[];
   // Tone
@@ -164,7 +165,12 @@ const buildPrompt = (b: Brief): string => {
     lines.push(`Floorplan available (${b.floorplan_urls.length}). Include a 'floorplan' section.`);
   }
   if (b.matterport_url) lines.push(`Matterport URL provided — include a 'matterport' section.`);
-  if (b.video_url) lines.push(`Video URL provided — include a 'video' section.`);
+  const videoList = (b.video_urls && b.video_urls.length ? b.video_urls : (b.video_url ? [b.video_url] : []));
+  if (videoList.length) {
+    lines.push(
+      `${videoList.length} video clip(s) available, indexed 0..${videoList.length - 1}. Include up to ${Math.min(videoList.length, 3)} 'video' section(s) — short clips work as motion accents between editorial moments, longer videos as a single anchor moment. Reference clips by video_index. In presentation_mode, weave clips between hero stills for cinematic pacing.`
+    );
+  }
 
   if (b.mode === "regenerate_section" && b.current_section) {
     lines.push("");
@@ -233,7 +239,11 @@ const TOOL = {
                 type: "integer",
                 description: "For renovation_highlights 'after' image, or -1.",
               },
-              video_url: { type: "string", description: "Empty string if not used." },
+              video_url: { type: "string", description: "Empty string if not used. Prefer video_index when picking from provided clips." },
+              video_index: {
+                type: "integer",
+                description: "Index into the provided video_urls array, or -1 for none. Use this for 'video' section type when clips are available.",
+              },
               button_label: { type: "string" },
               button_url: { type: "string" },
               background_style: { type: "string", enum: ["ivory", "warm", "navy", "gold"] },
@@ -331,17 +341,26 @@ Deno.serve(async (req) => {
 
     // Resolve media_index → media_url, inject matterport/video URLs, sanitize
     const images = brief.image_urls || [];
+    const videos = (brief.video_urls && brief.video_urls.length ? brief.video_urls : (brief.video_url ? [brief.video_url] : []));
     const floorplan = brief.floorplan_urls?.[0] || "";
+    let videoCursor = 0;
     const sections = (parsed.sections || []).map((s: any) => {
       const idx = typeof s.media_index === "number" ? s.media_index : -1;
       const idx2 = typeof s.secondary_media_index === "number" ? s.secondary_media_index : -1;
+      const vIdx = typeof s.video_index === "number" ? s.video_index : -1;
       let media_url = idx >= 0 && idx < images.length ? images[idx] : "";
       const secondary_media_url = idx2 >= 0 && idx2 < images.length ? images[idx2] : "";
       let video_url = s.video_url || "";
 
       // Type-specific media resolution
       if (s.section_type === "matterport" && brief.matterport_url) video_url = brief.matterport_url;
-      if (s.section_type === "video" && brief.video_url) video_url = brief.video_url;
+      if (s.section_type === "video") {
+        if (vIdx >= 0 && vIdx < videos.length) video_url = videos[vIdx];
+        else if (!video_url && videos.length) {
+          video_url = videos[Math.min(videoCursor, videos.length - 1)];
+          videoCursor++;
+        }
+      }
       if (s.section_type === "floorplan" && floorplan) media_url = floorplan;
 
       return {

@@ -235,6 +235,12 @@ const AdminListingEditor = () => {
             </div>
             <div className="flex items-center gap-3">
               {savedAt && <span className="text-xs text-muted-foreground">Saved {savedAt}</span>}
+              <button
+                onClick={() => setAiOpen(true)}
+                className="inline-flex items-center gap-2 text-xs tracking-[0.25em] uppercase border border-gold text-gold px-4 py-2 hover:bg-gold hover:text-foreground transition-colors"
+              >
+                <Sparkles className="w-3.5 h-3.5" /> AI Studio
+              </button>
               <Link
                 to={`/listing/${listing.slug}`}
                 target="_blank"

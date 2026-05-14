@@ -4,7 +4,8 @@ import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/hooks/useAuth";
 import Navigation from "@/components/Navigation";
 import { SECTION_TYPES, type Listing, type StorySection, type ListingMedia, type SectionType } from "@/types/listing";
-import { ChevronUp, ChevronDown, Trash2, Eye, EyeOff, Upload } from "lucide-react";
+import { ChevronUp, ChevronDown, Trash2, Eye, EyeOff, Upload, Sparkles } from "lucide-react";
+import AiStudio, { type GeneratedResult, type ApplyMode } from "@/components/admin/AiStudio";
 
 const Field = ({
   label,
@@ -33,6 +34,7 @@ const AdminListingEditor = () => {
   const [saving, setSaving] = useState(false);
   const [savedAt, setSavedAt] = useState<string | null>(null);
   const [uploading, setUploading] = useState(false);
+  const [aiOpen, setAiOpen] = useState(false);
 
   useEffect(() => {
     if (!isAdmin || !slug) return;

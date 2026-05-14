@@ -88,23 +88,7 @@ const MeetTaylor = () => {
             </p>
             <Link
               to="/contact"
-              className="inline-block text-minimal px-8 py-3.5 transition-all duration-300"
-              style={{
-                border: "1px solid hsl(var(--gold))",
-                color: "hsl(var(--gold))",
-                background: "rgba(255,255,255,0.08)",
-                backdropFilter: "blur(12px)",
-                WebkitBackdropFilter: "blur(12px)",
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.background = "hsl(var(--gold))";
-                e.currentTarget.style.color = "#fff";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.background = "rgba(255,255,255,0.08)";
-                e.currentTarget.style.color = "hsl(var(--gold))";
-              }}
-            >
+              className="inline-block border border-primary text-primary px-6 md:px-8 py-3 text-minimal tracking-widest hover:bg-gold hover:text-white hover:border-gold transition-colors duration-300">
               SCHEDULE A PRIVATE CONSULTATION
             </Link>
           </div>

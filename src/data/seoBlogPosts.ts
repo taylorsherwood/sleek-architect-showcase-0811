@@ -33,11 +33,25 @@ import blogLakeAustinWaterfrontValue from "@/assets/lake-austin-waterfront.jpg";
 import blogAustinLuxuryTrends from "@/assets/blog-austin-luxury-trends.jpg";
 import blogLuxurySellersQuiet from "@/assets/blog-austin-luxury-sellers-going-quiet.png";
 import blogExclusiveInventory from "@/assets/blog-how-to-access-exclusive-home-inventory.webp";
+import blogExclusiveAustinProperties from "@/assets/blog/exclusive-austin-properties.jpg";
 
 import { BlogPost } from "./blogPosts";
 
 // Build marker: ensure new posts ship in bundle (v4)
 export const seoBlogPosts: BlogPost[] = [
+  {
+    id: "exclusive-austin-properties",
+    title: "Exclusive Austin Properties: Your Complete City Guide",
+    metaTitle: "Exclusive Austin Properties: Your Complete City Guide | Echelon",
+    excerpt: "Discover exclusive austin properties in this comprehensive guide to the city's most coveted addresses, top neighborhoods, and luxury real estate insights.",
+    content: `<!-- COPY PENDING — awaiting body from author. -->`,
+    author: "Taylor Sherwood",
+    date: "May 14, 2026",
+    readTime: "10 min read",
+    category: "Luxury Market",
+    image: blogExclusiveAustinProperties,
+    heroImage: blogExclusiveAustinProperties,
+  },
   {
     id: "how-to-access-exclusive-home-inventory",
     title: "How to Access Exclusive Home Inventory",

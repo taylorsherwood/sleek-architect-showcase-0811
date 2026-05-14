@@ -130,7 +130,7 @@ const Blog = () => {
                         {post.title}
                       </h2>
                       
-                      <p className="text-muted-foreground leading-relaxed line-clamp-3 overflow-hidden">
+                      <p className="text-muted-foreground leading-relaxed line-clamp-3 overflow-hidden max-h-[4.95rem]">
                         {post.excerpt}
                       </p>
                       

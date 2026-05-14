@@ -242,6 +242,270 @@ export type Database = {
         }
         Relationships: []
       }
+      listing_leads: {
+        Row: {
+          created_at: string
+          cta_clicked: string | null
+          email: string
+          id: string
+          listing_id: string | null
+          message: string | null
+          name: string
+          page_url: string | null
+          phone: string | null
+          source: string | null
+        }
+        Insert: {
+          created_at?: string
+          cta_clicked?: string | null
+          email: string
+          id?: string
+          listing_id?: string | null
+          message?: string | null
+          name: string
+          page_url?: string | null
+          phone?: string | null
+          source?: string | null
+        }
+        Update: {
+          created_at?: string
+          cta_clicked?: string | null
+          email?: string
+          id?: string
+          listing_id?: string | null
+          message?: string | null
+          name?: string
+          page_url?: string | null
+          phone?: string | null
+          source?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "listing_leads_listing_id_fkey"
+            columns: ["listing_id"]
+            isOneToOne: false
+            referencedRelation: "listings"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      listing_media: {
+        Row: {
+          alt_text: string | null
+          caption: string | null
+          created_at: string
+          display_order: number
+          focal_point: string | null
+          id: string
+          is_featured: boolean
+          listing_id: string
+          media_type: string
+          media_url: string
+        }
+        Insert: {
+          alt_text?: string | null
+          caption?: string | null
+          created_at?: string
+          display_order?: number
+          focal_point?: string | null
+          id?: string
+          is_featured?: boolean
+          listing_id: string
+          media_type?: string
+          media_url: string
+        }
+        Update: {
+          alt_text?: string | null
+          caption?: string | null
+          created_at?: string
+          display_order?: number
+          focal_point?: string | null
+          id?: string
+          is_featured?: boolean
+          listing_id?: string
+          media_type?: string
+          media_url?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "listing_media_listing_id_fkey"
+            columns: ["listing_id"]
+            isOneToOne: false
+            referencedRelation: "listings"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      listings: {
+        Row: {
+          acres: number | null
+          address: string | null
+          agent_email: string | null
+          agent_headshot_url: string | null
+          agent_name: string | null
+          agent_phone: string | null
+          baths: number | null
+          beds: number | null
+          city: string | null
+          created_at: string
+          full_description: string | null
+          hero_image_url: string | null
+          hero_video_url: string | null
+          id: string
+          is_published: boolean
+          meta_description: string | null
+          meta_title: string | null
+          mls_number: string | null
+          neighborhood: string | null
+          og_image_url: string | null
+          price: number | null
+          property_type: string | null
+          short_intro: string | null
+          slug: string
+          sqft: number | null
+          state: string | null
+          status: string | null
+          title: string
+          updated_at: string
+          year_built: number | null
+          zip: string | null
+        }
+        Insert: {
+          acres?: number | null
+          address?: string | null
+          agent_email?: string | null
+          agent_headshot_url?: string | null
+          agent_name?: string | null
+          agent_phone?: string | null
+          baths?: number | null
+          beds?: number | null
+          city?: string | null
+          created_at?: string
+          full_description?: string | null
+          hero_image_url?: string | null
+          hero_video_url?: string | null
+          id?: string
+          is_published?: boolean
+          meta_description?: string | null
+          meta_title?: string | null
+          mls_number?: string | null
+          neighborhood?: string | null
+          og_image_url?: string | null
+          price?: number | null
+          property_type?: string | null
+          short_intro?: string | null
+          slug: string
+          sqft?: number | null
+          state?: string | null
+          status?: string | null
+          title: string
+          updated_at?: string
+          year_built?: number | null
+          zip?: string | null
+        }
+        Update: {
+          acres?: number | null
+          address?: string | null
+          agent_email?: string | null
+          agent_headshot_url?: string | null
+          agent_name?: string | null
+          agent_phone?: string | null
+          baths?: number | null
+          beds?: number | null
+          city?: string | null
+          created_at?: string
+          full_description?: string | null
+          hero_image_url?: string | null
+          hero_video_url?: string | null
+          id?: string
+          is_published?: boolean
+          meta_description?: string | null
+          meta_title?: string | null
+          mls_number?: string | null
+          neighborhood?: string | null
+          og_image_url?: string | null
+          price?: number | null
+          property_type?: string | null
+          short_intro?: string | null
+          slug?: string
+          sqft?: number | null
+          state?: string | null
+          status?: string | null
+          title?: string
+          updated_at?: string
+          year_built?: number | null
+          zip?: string | null
+        }
+        Relationships: []
+      }
+      story_sections: {
+        Row: {
+          animation_style: string | null
+          background_style: string | null
+          body: string | null
+          button_label: string | null
+          button_url: string | null
+          created_at: string
+          display_order: number
+          eyebrow: string | null
+          id: string
+          is_visible: boolean
+          listing_id: string
+          media_url: string | null
+          secondary_media_url: string | null
+          section_type: string
+          title: string | null
+          updated_at: string
+          video_url: string | null
+        }
+        Insert: {
+          animation_style?: string | null
+          background_style?: string | null
+          body?: string | null
+          button_label?: string | null
+          button_url?: string | null
+          created_at?: string
+          display_order?: number
+          eyebrow?: string | null
+          id?: string
+          is_visible?: boolean
+          listing_id: string
+          media_url?: string | null
+          secondary_media_url?: string | null
+          section_type: string
+          title?: string | null
+          updated_at?: string
+          video_url?: string | null
+        }
+        Update: {
+          animation_style?: string | null
+          background_style?: string | null
+          body?: string | null
+          button_label?: string | null
+          button_url?: string | null
+          created_at?: string
+          display_order?: number
+          eyebrow?: string | null
+          id?: string
+          is_visible?: boolean
+          listing_id?: string
+          media_url?: string | null
+          secondary_media_url?: string | null
+          section_type?: string
+          title?: string | null
+          updated_at?: string
+          video_url?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "story_sections_listing_id_fkey"
+            columns: ["listing_id"]
+            isOneToOne: false
+            referencedRelation: "listings"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       user_roles: {
         Row: {
           created_at: string

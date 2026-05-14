@@ -399,6 +399,7 @@ const AiStudio = ({ listing, sections, media, onApply, onClose }: Props) => {
           )}
         </div>
       </div>
+      </div>
     </div>
   );
 };

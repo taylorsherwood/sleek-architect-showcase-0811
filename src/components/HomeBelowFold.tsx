@@ -172,7 +172,25 @@ const AdvisorSection = () => (
 
             <div className="grid grid-cols-1 sm:grid-cols-[auto_auto] items-center gap-y-12 gap-x-10 justify-start">
               {/* Row 1 — CTAs */}
-              <Link to="/contact" className="cta-luxury cta-luxury--soft">
+              <Link
+                to="/contact"
+                className="inline-block text-minimal px-8 py-3.5 transition-all duration-300"
+                style={{
+                  border: "1px solid hsl(var(--gold))",
+                  color: "hsl(var(--gold))",
+                  background: "rgba(255,255,255,0.08)",
+                  backdropFilter: "blur(12px)",
+                  WebkitBackdropFilter: "blur(12px)",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background = "hsl(var(--gold))";
+                  e.currentTarget.style.color = "#fff";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = "rgba(255,255,255,0.08)";
+                  e.currentTarget.style.color = "hsl(var(--gold))";
+                }}
+              >
                 WORK WITH ME
               </Link>
               <Link to="/past-transactions"

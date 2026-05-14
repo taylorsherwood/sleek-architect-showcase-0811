@@ -154,7 +154,13 @@ const AiStudio = ({ listing, sections, media, onMediaChange, onApply, onClose }:
     setError(null);
     setResult(null);
 
-    const imageUrls = media.map((m) => m.media_url);
+    const imageUrls = galleryImages.map((m) => m.media_url);
+    const uploadedClipUrls = videoMedia.map((m) => m.media_url);
+    const allVideoUrls = [
+      ...uploadedClipUrls,
+      ...extraVideoUrls.filter((u) => u.trim()),
+      ...(videoUrl.trim() ? [videoUrl.trim()] : []),
+    ];
     const floorplanUrls = floorplanUrl ? [floorplanUrl] : [];
 
     const body = {
@@ -176,7 +182,8 @@ const AiStudio = ({ listing, sections, media, onMediaChange, onApply, onClose }:
       target_buyer: targetBuyer,
       neighborhood_positioning: neighborhood,
       matterport_url: matterport,
-      video_url: videoUrl,
+      video_url: allVideoUrls[0] || "",
+      video_urls: allVideoUrls,
       floorplan_urls: floorplanUrls,
       image_urls: imageUrls,
       tone,

@@ -110,7 +110,7 @@ const Blog = () => {
                         loading="lazy" decoding="async"
                       />
                       <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                      <div className="absolute top-4 left-4 bg-gold px-3 py-1">
+                      <div className="absolute top-4 right-4 bg-gold px-3 py-1">
                         <span className="text-xs text-primary-foreground font-medium">
                           {post.category}
                         </span>

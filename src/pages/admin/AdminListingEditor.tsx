@@ -4,7 +4,8 @@ import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/hooks/useAuth";
 import Navigation from "@/components/Navigation";
 import { SECTION_TYPES, type Listing, type StorySection, type ListingMedia, type SectionType } from "@/types/listing";
-import { ChevronUp, ChevronDown, Trash2, Eye, EyeOff, Upload } from "lucide-react";
+import { ChevronUp, ChevronDown, Trash2, Eye, EyeOff, Upload, Sparkles } from "lucide-react";
+import AiStudio, { type GeneratedResult, type ApplyMode } from "@/components/admin/AiStudio";
 
 const Field = ({
   label,
@@ -33,6 +34,7 @@ const AdminListingEditor = () => {
   const [saving, setSaving] = useState(false);
   const [savedAt, setSavedAt] = useState<string | null>(null);
   const [uploading, setUploading] = useState(false);
+  const [aiOpen, setAiOpen] = useState(false);
 
   useEffect(() => {
     if (!isAdmin || !slug) return;
@@ -166,6 +168,57 @@ const AdminListingEditor = () => {
     setMedia((m) => m.filter((x) => x.id !== id));
   };
 
+  // Apply AI-generated story
+  const applyAiResult = async (result: GeneratedResult, mode: ApplyMode) => {
+    if (!listing) return;
+
+    // Update listing-level copy when generating a full story
+    const listingPatch: Partial<Listing> = {};
+    if (mode === "replace") {
+      if (result.short_intro) listingPatch.short_intro = result.short_intro;
+      if (result.full_description) listingPatch.full_description = result.full_description;
+      if (result.recommended_meta_title && !listing.meta_title) listingPatch.meta_title = result.recommended_meta_title;
+      if (result.recommended_meta_description && !listing.meta_description)
+        listingPatch.meta_description = result.recommended_meta_description;
+    }
+    if (Object.keys(listingPatch).length > 0) {
+      await supabase.from("listings").update(listingPatch).eq("id", listing.id);
+      setListing((l) => (l ? { ...l, ...listingPatch } : l));
+    }
+
+    // Replace = wipe existing sections; Append = keep them
+    if (mode === "replace" && sections.length > 0) {
+      await supabase.from("story_sections").delete().eq("listing_id", listing.id);
+    }
+
+    const baseOrder = mode === "replace" ? 0 : sections.length;
+    const inserts = result.sections.map((s, i) => ({
+      listing_id: listing.id,
+      section_type: s.section_type,
+      eyebrow: s.eyebrow,
+      title: s.title,
+      body: s.body,
+      media_url: s.media_url,
+      secondary_media_url: s.secondary_media_url,
+      video_url: s.video_url,
+      button_label: s.button_label,
+      button_url: s.button_url,
+      background_style: s.background_style || "ivory",
+      animation_style: s.animation_style || "fade",
+      is_visible: true,
+      display_order: baseOrder + i,
+    }));
+
+    const { data, error } = await supabase.from("story_sections").insert(inserts).select();
+    if (error) {
+      alert(error.message);
+      return;
+    }
+
+    setSections(mode === "replace" ? (data as StorySection[]) : [...sections, ...((data as StorySection[]) || [])]);
+    setSavedAt(new Date().toLocaleTimeString());
+  };
+
   return (
     <div className="min-h-screen bg-[#FAFAF8]">
       <Navigation />
@@ -182,6 +235,12 @@ const AdminListingEditor = () => {
             </div>
             <div className="flex items-center gap-3">
               {savedAt && <span className="text-xs text-muted-foreground">Saved {savedAt}</span>}
+              <button
+                onClick={() => setAiOpen(true)}
+                className="inline-flex items-center gap-2 text-xs tracking-[0.25em] uppercase border border-gold text-gold px-4 py-2 hover:bg-gold hover:text-foreground transition-colors"
+              >
+                <Sparkles className="w-3.5 h-3.5" /> AI Studio
+              </button>
               <Link
                 to={`/listing/${listing.slug}`}
                 target="_blank"
@@ -475,6 +534,16 @@ const AdminListingEditor = () => {
           </Card>
         </div>
       </div>
+
+      {aiOpen && (
+        <AiStudio
+          listing={listing}
+          sections={sections}
+          media={media}
+          onApply={applyAiResult}
+          onClose={() => setAiOpen(false)}
+        />
+      )}
     </div>
   );
 };

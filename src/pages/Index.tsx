@@ -234,9 +234,9 @@ const Hero = () => {
         style={{ zIndex: 3 }}
       >
         <span
-          className="font-sans group-hover:text-white transition-colors duration-500"
+          className="group-hover:text-white transition-colors duration-500"
           style={{
-            fontFamily: '"Jost", sans-serif',
+            fontFamily: '"Cinzel", serif',
             fontSize: "0.85rem",
             letterSpacing: "0.5em",
             textTransform: "uppercase",

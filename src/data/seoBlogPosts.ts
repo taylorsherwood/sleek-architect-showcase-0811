@@ -207,7 +207,7 @@ Q: Is Austin still a strong long-term luxury market?
 A: Yes. Austin's combination of no state income tax, a maturing technology and venture capital economy, lifestyle quality, and genuine scarcity in the upper tier continues to attract sustained high-net-worth demand from California, New York, and other major metros.
 :::`,
     author: "Taylor Sherwood",
-    date: "May 14, 2026",
+    date: "2026-05-14",
     readTime: "10 min read",
     category: "LUXURY GUIDE",
     image: blogExclusiveAustinProperties,

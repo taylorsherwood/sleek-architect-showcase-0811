@@ -120,26 +120,13 @@ const Hero = () => {
         width={780}
         height={1385}
       />
-      <img
-        src="/images/hero-poster.webp"
-        alt="Austin Texas skyline"
-        className="hero-poster-desktop absolute inset-0 w-full h-full object-cover hidden md:block"
-        style={{ zIndex: 0 }}
-        loading="eager"
-        fetchPriority="high"
-        decoding="async"
-        width={1920}
-        height={1080}
-      />
-
-      {/* Video — desktop only. Fades in over the poster once it can play. */}
+      {/* Desktop: video paints directly with no static poster placeholder. */}
       {!skipVideo && !isMobileHero && (
-        <div aria-hidden="true" className="absolute inset-0 pointer-events-none select-none" style={{ zIndex: 1 }}>
+        <div aria-hidden="true" className="absolute inset-0 pointer-events-none select-none hidden md:block" style={{ zIndex: 1 }}>
           <video ref={videoRef} autoPlay muted loop playsInline preload="auto"
-            className={`hero-bg-video transition-opacity duration-700 ${videoReady ? "opacity-100" : "opacity-0"}`}
-            style={{ willChange: "opacity" }} tabIndex={-1}
+            className="hero-bg-video"
+            tabIndex={-1}
             width={1920} height={1080}
-            poster="/images/hero-poster.webp"
           >
             <source src="/videos/hero-video.mp4" type="video/mp4" />
           </video>

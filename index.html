@@ -20,13 +20,11 @@
     <meta name="google-site-verification" content="dhXAgewx3oiXuLhNF6giXHxaz8pFcyt_MogbeQKtTfA" />
     <meta name="author" content="Echelon Property Group" />
 
-    <!-- Preload hero LCP image FIRST so the preload scanner queues it before fonts/JS (fixes LCP resource-load-delay) -->
+    <!-- Preload mobile hero LCP image; desktop uses video directly (no static poster) -->
     <link rel="preload" as="image" href="/images/hero-mobile-austin-v2.webp" type="image/webp" fetchpriority="high" media="(max-width: 767px)" />
-    <link rel="preload" as="image" href="/images/hero-poster.webp" type="image/webp" fetchpriority="high" media="(min-width: 768px)" />
 
-    <!-- Desktop hero video: warm the connection + start the byte download in parallel with HTML parsing
-         so the video can paint shortly after the poster instead of waiting on JS to mount the <video>. -->
-    <link rel="preload" as="video" type="video/mp4" href="/videos/hero-video.mp4" media="(min-width: 768px)" />
+    <!-- Desktop hero video: high-priority preload so first frame paints ASAP without any placeholder image -->
+    <link rel="preload" as="video" type="video/mp4" href="/videos/hero-video.mp4" media="(min-width: 768px)" fetchpriority="high" />
 
     <!-- DNS-prefetch RealScout: preconnect was unused because the widget loads only after user interaction / IntersectionObserver -->
     <link rel="dns-prefetch" href="https://em.realscout.com" />

@@ -2,6 +2,7 @@ import { useState } from "react";
 import type { StorySection, ListingMedia } from "@/types/listing";
 import Lightbox from "./Lightbox";
 import LeadCaptureForm from "./LeadCaptureForm";
+import { useReveal } from "@/hooks/useReveal";
 
 interface Props {
   section: StorySection;
@@ -28,28 +29,48 @@ const SectionShell = ({
   children,
   background,
   full,
+  pad = "py-24 md:py-40",
 }: {
   children: React.ReactNode;
   background: string | null;
   full?: boolean;
-}) => (
-  <section className={`${bgClass(background)} ${full ? "" : "py-16 md:py-28"}`}>
-    {full ? children : <div className="container mx-auto px-6 md:px-10 max-w-6xl">{children}</div>}
-  </section>
-);
+  pad?: string;
+}) => {
+  const ref = useReveal<HTMLDivElement>();
+  return (
+    <section className={`${bgClass(background)} ${full ? "" : pad}`}>
+      <div ref={ref} className="ls-reveal">
+        {full ? children : <div className="container mx-auto px-6 md:px-10 max-w-6xl">{children}</div>}
+      </div>
+    </section>
+  );
+};
 
 const Eyebrow = ({ text }: { text: string }) => (
-  <p className="text-[10px] md:text-xs tracking-[0.3em] uppercase text-gold mb-4 md:mb-6">{text}</p>
+  <p className="text-[10px] tracking-[0.4em] uppercase text-gold mb-6 md:mb-8">{text}</p>
 );
 
 const Heading = ({ text, className = "" }: { text: string; className?: string }) => (
-  <h2 className={`font-display text-3xl md:text-5xl leading-[1.1] text-architectural ${className}`}>
+  <h2
+    className={`font-display text-[1.75rem] sm:text-3xl md:text-[2.75rem] leading-[1.12] tracking-[-0.005em] ${className}`}
+  >
     {text}
   </h2>
 );
 
+const Body = ({ text, className = "" }: { text: string; className?: string }) => (
+  <p
+    className={`font-body text-[15px] md:text-[17px] leading-[1.95] whitespace-pre-line ${className}`}
+  >
+    {text}
+  </p>
+);
+
 const StorySectionRenderer = ({ section, media, listingId, listingTitle }: Props) => {
   const [lightboxIdx, setLightboxIdx] = useState<number | null>(null);
+  const isDark = section.background_style === "navy";
+  const bodyTone = isDark ? "text-background/80" : "text-foreground/80";
+  const headingTone = isDark ? "" : "text-architectural";
 
   switch (section.section_type) {
     case "editorial_text":
@@ -57,12 +78,8 @@ const StorySectionRenderer = ({ section, media, listingId, listingTitle }: Props
         <SectionShell background={section.background_style}>
           <div className="max-w-3xl">
             {section.eyebrow && <Eyebrow text={section.eyebrow} />}
-            {section.title && <Heading text={section.title} className="mb-8" />}
-            {section.body && (
-              <div className="font-body text-base md:text-lg leading-[1.8] text-foreground/85 whitespace-pre-line">
-                {section.body}
-              </div>
-            )}
+            {section.title && <Heading text={section.title} className={`mb-10 ${headingTone}`} />}
+            {section.body && <Body text={section.body} className={bodyTone} />}
           </div>
         </SectionShell>
       );
@@ -71,7 +88,7 @@ const StorySectionRenderer = ({ section, media, listingId, listingTitle }: Props
       return (
         <SectionShell background={section.background_style} full>
           {section.media_url && (
-            <div className="relative w-full h-[60vh] md:h-[85vh] overflow-hidden">
+            <div className="relative w-full h-[70vh] md:h-[92vh] overflow-hidden bg-foreground">
               <img
                 src={section.media_url}
                 alt={section.title || ""}
@@ -79,16 +96,23 @@ const StorySectionRenderer = ({ section, media, listingId, listingTitle }: Props
                 loading="lazy"
               />
               {(section.title || section.eyebrow) && (
-                <div className="absolute inset-0 flex flex-col items-center justify-end pb-12 md:pb-20 text-center px-6 bg-gradient-to-t from-[#0C0F24]/60 via-transparent to-transparent">
-                  {section.eyebrow && (
-                    <p className="text-[10px] md:text-xs tracking-[0.3em] uppercase text-gold mb-3">{section.eyebrow}</p>
-                  )}
-                  {section.title && (
-                    <h2 className="font-display text-2xl md:text-5xl text-background leading-tight max-w-3xl">
-                      {section.title}
-                    </h2>
-                  )}
-                </div>
+                <>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0C0F24]/65 via-[#0C0F24]/10 to-transparent" />
+                  <div className="absolute inset-0 flex flex-col justify-end pb-16 md:pb-24 px-6 md:px-12 text-background">
+                    <div className="max-w-3xl">
+                      {section.eyebrow && (
+                        <p className="text-[10px] tracking-[0.45em] uppercase text-gold mb-5">
+                          {section.eyebrow}
+                        </p>
+                      )}
+                      {section.title && (
+                        <h2 className="font-display text-3xl md:text-6xl leading-[1.05] tracking-[-0.005em] max-w-2xl">
+                          {section.title}
+                        </h2>
+                      )}
+                    </div>
+                  </div>
+                </>
               )}
             </div>
           )}
@@ -98,9 +122,9 @@ const StorySectionRenderer = ({ section, media, listingId, listingTitle }: Props
     case "image_text_split":
       return (
         <SectionShell background={section.background_style}>
-          <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
+          <div className="grid md:grid-cols-2 gap-10 md:gap-20 items-center">
             {section.media_url && (
-              <div className="aspect-[4/5] md:aspect-[4/5] w-full overflow-hidden">
+              <div className="aspect-[4/5] w-full overflow-hidden">
                 <img
                   src={section.media_url}
                   alt={section.title || ""}
@@ -111,16 +135,14 @@ const StorySectionRenderer = ({ section, media, listingId, listingTitle }: Props
             )}
             <div>
               {section.eyebrow && <Eyebrow text={section.eyebrow} />}
-              {section.title && <Heading text={section.title} className="mb-6" />}
-              {section.body && (
-                <p className="font-body text-base md:text-lg leading-[1.8] text-foreground/85 whitespace-pre-line">
-                  {section.body}
-                </p>
-              )}
+              {section.title && <Heading text={section.title} className={`mb-8 ${headingTone}`} />}
+              {section.body && <Body text={section.body} className={bodyTone} />}
               {section.button_label && section.button_url && (
                 <a
                   href={section.button_url}
-                  className="inline-block mt-8 text-xs tracking-[0.3em] uppercase border-b border-gold pb-1 text-architectural hover:text-gold transition-colors"
+                  className={`inline-block mt-10 text-[10px] tracking-[0.4em] uppercase border-b border-gold pb-1 transition-colors ${
+                    isDark ? "text-background hover:text-gold" : "text-architectural hover:text-gold"
+                  }`}
                 >
                   {section.button_label}
                 </a>
@@ -132,14 +154,18 @@ const StorySectionRenderer = ({ section, media, listingId, listingTitle }: Props
 
     case "quote":
       return (
-        <SectionShell background={section.background_style}>
-          <figure className="max-w-3xl mx-auto text-center">
-            <p className="font-display text-2xl md:text-4xl leading-[1.3] text-architectural italic">
-              &ldquo;{section.body}&rdquo;
+        <SectionShell background={section.background_style} pad="py-32 md:py-56">
+          <figure className="max-w-4xl mx-auto text-center">
+            <p
+              className={`font-display text-2xl md:text-[2.75rem] leading-[1.35] tracking-[-0.01em] ${
+                isDark ? "" : "text-architectural"
+              }`}
+            >
+              {section.body}
             </p>
             {section.title && (
-              <figcaption className="mt-8 text-xs tracking-[0.3em] uppercase text-gold">
-                — {section.title}
+              <figcaption className="mt-12 text-[10px] tracking-[0.5em] uppercase text-gold">
+                {section.title}
               </figcaption>
             )}
           </figure>
@@ -150,27 +176,61 @@ const StorySectionRenderer = ({ section, media, listingId, listingTitle }: Props
       const items = media.filter((m) => m.media_type === "gallery" || m.media_type === "image");
       const grid = items.length ? items : media;
       return (
-        <SectionShell background={section.background_style}>
-          {section.eyebrow && <Eyebrow text={section.eyebrow} />}
-          {section.title && <Heading text={section.title} className="mb-10" />}
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4">
-            {grid.map((m, idx) => (
-              <button
-                key={m.id}
-                onClick={() => setLightboxIdx(idx)}
-                className={`relative overflow-hidden ${
-                  idx % 5 === 0 ? "col-span-2 md:col-span-2 aspect-[4/3]" : "aspect-square"
-                } group`}
-              >
-                <img
-                  src={m.media_url}
-                  alt={m.alt_text || ""}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
-                  loading="lazy"
-                />
-              </button>
-            ))}
+        <SectionShell background={section.background_style} full>
+          <div className="container mx-auto px-6 md:px-10 max-w-6xl">
+            {section.eyebrow && <Eyebrow text={section.eyebrow} />}
+            {section.title && <Heading text={section.title} className={`mb-12 md:mb-16 ${headingTone}`} />}
           </div>
+
+          {/* Mobile — edge-peek swipe rail */}
+          <div className="md:hidden">
+            <div className="ls-rail flex gap-3 overflow-x-auto px-6 pb-6">
+              {grid.map((m, idx) => (
+                <button
+                  key={m.id}
+                  onClick={() => setLightboxIdx(idx)}
+                  className="ls-tile relative shrink-0 overflow-hidden bg-foreground"
+                  style={{ width: "82vw", height: "62vw" }}
+                >
+                  <img
+                    src={m.media_url}
+                    alt={m.alt_text || ""}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </button>
+              ))}
+            </div>
+            <p className="text-center text-[10px] tracking-[0.4em] uppercase text-muted-foreground mt-2">
+              Swipe — {grid.length} images
+            </p>
+          </div>
+
+          {/* Desktop — refined editorial grid */}
+          <div className="hidden md:block container mx-auto px-6 md:px-10 max-w-6xl">
+            <div className="grid grid-cols-3 gap-3">
+              {grid.map((m, idx) => {
+                const wide = idx % 5 === 0;
+                return (
+                  <button
+                    key={m.id}
+                    onClick={() => setLightboxIdx(idx)}
+                    className={`ls-tile relative overflow-hidden bg-foreground ${
+                      wide ? "col-span-2 aspect-[4/3]" : "aspect-square"
+                    }`}
+                  >
+                    <img
+                      src={m.media_url}
+                      alt={m.alt_text || ""}
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+
           {lightboxIdx !== null && (
             <Lightbox media={grid} startIndex={lightboxIdx} onClose={() => setLightboxIdx(null)} />
           )}
@@ -182,7 +242,7 @@ const StorySectionRenderer = ({ section, media, listingId, listingTitle }: Props
       return (
         <SectionShell background={section.background_style}>
           {section.eyebrow && <Eyebrow text={section.eyebrow} />}
-          {section.title && <Heading text={section.title} className="mb-8" />}
+          {section.title && <Heading text={section.title} className={`mb-12 ${headingTone}`} />}
           {section.video_url && (
             <div className="aspect-video w-full overflow-hidden bg-foreground">
               {section.video_url.includes("youtube") || section.video_url.includes("vimeo") ? (
@@ -210,18 +270,21 @@ const StorySectionRenderer = ({ section, media, listingId, listingTitle }: Props
     case "floorplan":
       return (
         <SectionShell background={section.background_style}>
-          {section.eyebrow && <Eyebrow text={section.eyebrow} />}
-          {section.title && <Heading text={section.title} className="mb-8" />}
-          {section.media_url && (
-            <div className="bg-[#FAFAF8] p-4 md:p-10 border border-foreground/5">
+          <div className="text-center max-w-4xl mx-auto">
+            {section.eyebrow && <Eyebrow text={section.eyebrow} />}
+            {section.title && <Heading text={section.title} className={`mb-12 ${headingTone}`} />}
+            {section.media_url && (
               <img
                 src={section.media_url}
                 alt={section.title || "Floorplan"}
-                className="w-full h-auto object-contain"
+                className="w-full h-auto object-contain mx-auto"
                 loading="lazy"
               />
-            </div>
-          )}
+            )}
+            {section.body && (
+              <Body text={section.body} className={`${bodyTone} mt-10 max-w-2xl mx-auto`} />
+            )}
+          </div>
         </SectionShell>
       );
 
@@ -229,9 +292,9 @@ const StorySectionRenderer = ({ section, media, listingId, listingTitle }: Props
       return (
         <SectionShell background={section.background_style}>
           {section.eyebrow && <Eyebrow text={section.eyebrow} />}
-          {section.title && <Heading text={section.title} className="mb-8" />}
+          {section.title && <Heading text={section.title} className={`mb-12 ${headingTone}`} />}
           {section.video_url && (
-            <div className="aspect-video w-full overflow-hidden">
+            <div className="aspect-video w-full overflow-hidden bg-foreground">
               <iframe
                 src={section.video_url}
                 className="w-full h-full"
@@ -247,22 +310,18 @@ const StorySectionRenderer = ({ section, media, listingId, listingTitle }: Props
     case "map":
       return (
         <SectionShell background={section.background_style}>
-          <div className="grid md:grid-cols-5 gap-8 md:gap-12 items-center">
+          <div className="grid md:grid-cols-5 gap-10 md:gap-16 items-center">
             <div className="md:col-span-2">
               {section.eyebrow && <Eyebrow text={section.eyebrow} />}
-              {section.title && <Heading text={section.title} className="mb-6" />}
-              {section.body && (
-                <p className="font-body text-base md:text-lg leading-[1.8] text-foreground/85 whitespace-pre-line">
-                  {section.body}
-                </p>
-              )}
+              {section.title && <Heading text={section.title} className={`mb-8 ${headingTone}`} />}
+              {section.body && <Body text={section.body} className={bodyTone} />}
             </div>
             <div className="md:col-span-3 aspect-[4/3] md:aspect-square overflow-hidden">
               {section.media_url ? (
                 <img src={section.media_url} alt="Location" className="w-full h-full object-cover" />
               ) : (
-                <div className="w-full h-full bg-[#FAFAF8] flex items-center justify-center text-muted-foreground text-sm">
-                  Map preview
+                <div className="w-full h-full bg-[#FAFAF8] flex items-center justify-center text-muted-foreground text-[10px] tracking-[0.4em] uppercase">
+                  Map
                 </div>
               )}
             </div>
@@ -274,18 +333,14 @@ const StorySectionRenderer = ({ section, media, listingId, listingTitle }: Props
     case "lifestyle":
       return (
         <SectionShell background={section.background_style}>
-          <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
+          <div className="grid md:grid-cols-2 gap-10 md:gap-20 items-center">
             <div>
               {section.eyebrow && <Eyebrow text={section.eyebrow} />}
-              {section.title && <Heading text={section.title} className="mb-6" />}
-              {section.body && (
-                <p className="font-body text-base md:text-lg leading-[1.8] text-foreground/85 whitespace-pre-line">
-                  {section.body}
-                </p>
-              )}
+              {section.title && <Heading text={section.title} className={`mb-8 ${headingTone}`} />}
+              {section.body && <Body text={section.body} className={bodyTone} />}
             </div>
             {section.media_url && (
-              <div className="aspect-[4/3] overflow-hidden order-first md:order-last">
+              <div className="aspect-[4/5] overflow-hidden order-first md:order-last">
                 <img
                   src={section.media_url}
                   alt={section.title || ""}
@@ -302,12 +357,12 @@ const StorySectionRenderer = ({ section, media, listingId, listingTitle }: Props
       return (
         <SectionShell background={section.background_style}>
           {section.eyebrow && <Eyebrow text={section.eyebrow} />}
-          {section.title && <Heading text={section.title} className="mb-10" />}
-          <div className="grid md:grid-cols-2 gap-2 md:gap-4">
+          {section.title && <Heading text={section.title} className={`mb-12 ${headingTone}`} />}
+          <div className="grid md:grid-cols-2 gap-3">
             {section.media_url && (
               <div className="aspect-[4/3] overflow-hidden relative">
                 <img src={section.media_url} alt="Before" className="w-full h-full object-cover" loading="lazy" />
-                <span className="absolute top-3 left-3 text-[10px] tracking-[0.3em] uppercase bg-foreground text-background px-3 py-1">
+                <span className="absolute top-4 left-4 text-[9px] tracking-[0.4em] uppercase bg-foreground/90 text-background px-3 py-1.5">
                   Before
                 </span>
               </div>
@@ -315,35 +370,44 @@ const StorySectionRenderer = ({ section, media, listingId, listingTitle }: Props
             {section.secondary_media_url && (
               <div className="aspect-[4/3] overflow-hidden relative">
                 <img src={section.secondary_media_url} alt="After" className="w-full h-full object-cover" loading="lazy" />
-                <span className="absolute top-3 left-3 text-[10px] tracking-[0.3em] uppercase bg-gold text-foreground px-3 py-1">
+                <span className="absolute top-4 left-4 text-[9px] tracking-[0.4em] uppercase bg-gold text-foreground px-3 py-1.5">
                   After
                 </span>
               </div>
             )}
           </div>
-          {section.body && (
-            <p className="font-body text-base md:text-lg leading-[1.8] text-foreground/85 whitespace-pre-line mt-10 max-w-3xl">
-              {section.body}
-            </p>
-          )}
+          {section.body && <Body text={section.body} className={`${bodyTone} mt-12 max-w-3xl`} />}
         </SectionShell>
       );
 
     case "cta":
       return (
-        <SectionShell background={section.background_style || "navy"}>
+        <SectionShell background={section.background_style || "navy"} pad="py-32 md:py-44">
           <div className="text-center max-w-2xl mx-auto">
             {section.eyebrow && (
-              <p className="text-[10px] md:text-xs tracking-[0.3em] uppercase text-gold mb-4">{section.eyebrow}</p>
+              <p className="text-[10px] tracking-[0.4em] uppercase text-gold mb-6">
+                {section.eyebrow}
+              </p>
             )}
             {section.title && (
-              <h2 className="font-display text-3xl md:text-5xl mb-6 leading-[1.1]">{section.title}</h2>
+              <h2 className="font-display text-3xl md:text-5xl mb-8 leading-[1.1] tracking-[-0.005em]">
+                {section.title}
+              </h2>
             )}
-            {section.body && <p className="font-body text-base md:text-lg opacity-85 mb-10">{section.body}</p>}
+            {section.body && (
+              <p
+                className={`font-body text-[15px] md:text-[17px] leading-relaxed mb-12 ${
+                  isDark ? "opacity-80" : "text-foreground/75"
+                }`}
+              >
+                {section.body}
+              </p>
+            )}
             <LeadCaptureForm
               listingId={listingId}
               listingTitle={listingTitle}
               ctaClicked={section.button_label || "story_cta"}
+              variant={isDark ? "dark" : "light"}
             />
           </div>
         </SectionShell>

@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import type { Listing, StorySection, ListingMedia } from "@/types/listing";
-import { Sparkles, X, Wand2, Shuffle, Smartphone, Presentation, RefreshCw } from "lucide-react";
+import { Sparkles, X, Wand2, Shuffle, Smartphone, Presentation, RefreshCw, Film, Upload, Trash2, Plus } from "lucide-react";
 
 interface Props {
   listing: Listing;

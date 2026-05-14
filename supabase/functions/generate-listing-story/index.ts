@@ -165,7 +165,12 @@ const buildPrompt = (b: Brief): string => {
     lines.push(`Floorplan available (${b.floorplan_urls.length}). Include a 'floorplan' section.`);
   }
   if (b.matterport_url) lines.push(`Matterport URL provided — include a 'matterport' section.`);
-  if (b.video_url) lines.push(`Video URL provided — include a 'video' section.`);
+  const videoList = (b.video_urls && b.video_urls.length ? b.video_urls : (b.video_url ? [b.video_url] : []));
+  if (videoList.length) {
+    lines.push(
+      `${videoList.length} video clip(s) available, indexed 0..${videoList.length - 1}. Include up to ${Math.min(videoList.length, 3)} 'video' section(s) — short clips work as motion accents between editorial moments, longer videos as a single anchor moment. Reference clips by video_index. In presentation_mode, weave clips between hero stills for cinematic pacing.`
+    );
+  }
 
   if (b.mode === "regenerate_section" && b.current_section) {
     lines.push("");

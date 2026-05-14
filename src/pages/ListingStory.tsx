@@ -303,7 +303,10 @@ const ListingStory = () => {
       )}
 
       {/* Mobile sticky CTA — minimal hairline bar */}
-      <div className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-background/95 backdrop-blur-xl border-t border-foreground/10 px-4 py-3 flex gap-2 safe-bottom">
+      <div
+        className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-background/95 backdrop-blur-xl border-t border-foreground/10 px-4 py-3 flex gap-2"
+        style={{ paddingBottom: "calc(0.75rem + env(safe-area-inset-bottom))" }}
+      >
         {listing.agent_phone && (
           <a
             href={`tel:${listing.agent_phone.replace(/[^\d+]/g, "")}`}

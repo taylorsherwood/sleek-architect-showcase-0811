@@ -261,14 +261,106 @@ const AiStudio = ({ listing, sections, media, onMediaChange, onApply, onClose }:
               <input className={inputCls} value={tone} onChange={(e) => setTone(e.target.value)} placeholder="e.g. quiet luxury, architectural, warm and lived-in" />
             </Field>
             <div className="md:col-span-2 text-xs text-muted-foreground">
-              {media.length > 0 ? (
+              {galleryImages.length > 0 ? (
                 <span>
-                  <span className="text-gold">{media.length}</span> gallery image{media.length === 1 ? "" : "s"} available — the AI will choose hero-class shots and pair images with sections automatically.
+                  <span className="text-gold">{galleryImages.length}</span> gallery image{galleryImages.length === 1 ? "" : "s"} available — the AI will choose hero-class shots and pair images with sections automatically.
                 </span>
               ) : (
                 <span className="text-destructive">No gallery images uploaded yet — sections will generate without imagery. Upload images first for the strongest result.</span>
               )}
             </div>
+          </div>
+
+          {/* Video clips */}
+          <div className="px-6 md:px-8 py-6 border-b border-foreground/10">
+            <div className="flex items-center justify-between mb-4">
+              <div className="flex items-center gap-2">
+                <Film className="w-4 h-4 text-gold" />
+                <p className="text-[10px] tracking-[0.4em] uppercase text-muted-foreground">Video & Motion</p>
+              </div>
+              <div className="flex items-center gap-2">
+                <input
+                  ref={videoInputRef}
+                  type="file"
+                  accept="video/*"
+                  multiple
+                  className="hidden"
+                  onChange={(e) => e.target.files && uploadVideos(e.target.files)}
+                />
+                <button
+                  type="button"
+                  onClick={() => videoInputRef.current?.click()}
+                  disabled={uploadingVideo}
+                  className="inline-flex items-center gap-2 px-3 py-2 border border-foreground/15 hover:border-gold text-[10px] tracking-[0.3em] uppercase disabled:opacity-50"
+                >
+                  <Upload className="w-3.5 h-3.5" />
+                  {uploadingVideo ? "Uploading…" : "Upload Clips"}
+                </button>
+              </div>
+            </div>
+
+            <p className="text-xs text-muted-foreground mb-4 leading-relaxed">
+              Upload short clips (5–15s, drone passes, walk-throughs, lifestyle moments) and longer videos. The AI will pace them across the story and weave them into Presentation Mode automatically. Mix uploaded files with hosted YouTube / Vimeo / MP4 URLs.
+            </p>
+
+            {videoMedia.length > 0 && (
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
+                {videoMedia.map((v) => (
+                  <div key={v.id} className="relative group bg-foreground/5 aspect-video overflow-hidden">
+                    <video src={v.media_url} className="w-full h-full object-cover" muted playsInline preload="metadata" />
+                    <button
+                      type="button"
+                      onClick={() => removeVideoMedia(v.id)}
+                      className="absolute top-1.5 right-1.5 p-1.5 bg-background/90 opacity-0 group-hover:opacity-100 transition-opacity"
+                      aria-label="Remove clip"
+                    >
+                      <Trash2 className="w-3 h-3 text-destructive" />
+                    </button>
+                    {v.caption && (
+                      <div className="absolute bottom-0 inset-x-0 px-2 py-1 bg-foreground/70 text-background text-[10px] truncate">
+                        {v.caption}
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            )}
+
+            <div className="space-y-2">
+              {extraVideoUrls.map((u, i) => (
+                <div key={i} className="flex gap-2">
+                  <input
+                    className={inputCls}
+                    value={u}
+                    onChange={(e) => {
+                      const next = [...extraVideoUrls];
+                      next[i] = e.target.value;
+                      setExtraVideoUrls(next);
+                    }}
+                    placeholder="https://youtube.com/… · https://vimeo.com/… · https://…/clip.mp4"
+                  />
+                  <button
+                    type="button"
+                    onClick={() => setExtraVideoUrls(extraVideoUrls.filter((_, j) => j !== i))}
+                    className="px-3 border border-foreground/15 hover:border-destructive hover:text-destructive"
+                    aria-label="Remove URL"
+                  >
+                    <Trash2 className="w-3.5 h-3.5" />
+                  </button>
+                </div>
+              ))}
+              <button
+                type="button"
+                onClick={() => setExtraVideoUrls([...extraVideoUrls, ""])}
+                className="inline-flex items-center gap-2 text-[10px] tracking-[0.3em] uppercase text-muted-foreground hover:text-gold"
+              >
+                <Plus className="w-3 h-3" /> Add Hosted Video URL
+              </button>
+            </div>
+
+            <p className="text-xs text-muted-foreground mt-4">
+              <span className="text-gold">{videoMedia.length + extraVideoUrls.filter((u) => u.trim()).length + (videoUrl.trim() ? 1 : 0)}</span> total clip{videoMedia.length + extraVideoUrls.filter((u) => u.trim()).length + (videoUrl.trim() ? 1 : 0) === 1 ? "" : "s"} ready for the story.
+            </p>
           </div>
 
           {/* Action buttons */}

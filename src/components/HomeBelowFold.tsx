@@ -1521,7 +1521,7 @@ const HomeBelowFold = () => (
 
     <FeaturedProperties />
 
-    <div className="parallax-break hidden md:block" style={{ backgroundImage: "url('/images/parallax-barton-springs.webp')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties} aria-hidden="true" />
+    <div className="parallax-break hidden md:block" style={{ backgroundImage: "url('/images/parallax-lakefront.webp')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties} aria-hidden="true" />
 
     <CommunitiesSection />
 

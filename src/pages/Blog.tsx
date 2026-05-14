@@ -117,7 +117,7 @@ const Blog = () => {
                       </div>
                     </div>
                     
-                    <div className="grid flex-1 grid-rows-[2.5rem_6rem_5.5rem_auto] gap-4 md:grid-rows-[2rem_7rem_5.5rem_auto]">
+                    <div className="grid flex-1 grid-rows-[2rem_5rem_7rem_auto] gap-2 md:grid-rows-[2rem_5.5rem_7rem_auto]">
                       <div className="flex flex-wrap items-start gap-x-4 gap-y-1 text-xs text-muted-foreground overflow-hidden">
                         <span>{formatDate(post.date)}</span>
                         <span>•</span>
@@ -126,15 +126,15 @@ const Blog = () => {
                         <span>{post.author}</span>
                       </div>
                       
-                      <h2 className="text-xl lg:text-2xl font-light leading-snug text-architectural line-clamp-3 group-hover:text-muted-foreground transition-colors duration-500">
+                      <h2 className="text-xl lg:text-2xl font-light leading-snug text-architectural line-clamp-2 group-hover:text-muted-foreground transition-colors duration-500">
                         {post.title}
                       </h2>
                       
-                      <p className="text-muted-foreground leading-relaxed line-clamp-3 overflow-hidden">
+                      <p className="text-muted-foreground leading-relaxed line-clamp-4 overflow-hidden">
                         {post.excerpt}
                       </p>
                       
-                      <div className="pt-4 self-end">
+                      <div className="pt-2 self-end">
                         <span className="text-minimal text-foreground group-hover:text-gold group-hover:underline underline-offset-4 transition-colors duration-300">
                           READ MORE
                         </span>

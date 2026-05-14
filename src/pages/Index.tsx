@@ -139,7 +139,7 @@ const Hero = () => {
       {/* Desktop: gradient only on left half */}
       <div className="absolute inset-y-0 left-0 w-1/2 hidden md:block" style={{
         zIndex: 1,
-        background: `linear-gradient(to right, rgba(10,14,25,0.78) 0%, rgba(10,14,25,0.60) 50%, rgba(10,14,25,0.25) 85%, transparent 100%)`
+        background: `linear-gradient(to right, rgba(10,14,25,0.78) 0%, rgba(10,14,25,0.72) 60%, rgba(10,14,25,0.55) 90%, transparent 100%)`
       }} />
 
       {/* Content */}

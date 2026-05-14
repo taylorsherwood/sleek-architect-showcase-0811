@@ -7,6 +7,7 @@ interface Props {
   listing: Listing;
   sections: StorySection[];
   media: ListingMedia[];
+  onMediaChange?: (media: ListingMedia[]) => void;
   onApply: (result: GeneratedResult, mode: ApplyMode) => Promise<void>;
   onClose: () => void;
 }

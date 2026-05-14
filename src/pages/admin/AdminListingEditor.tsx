@@ -219,7 +219,7 @@ const AdminListingEditor = () => {
     setSavedAt(new Date().toLocaleTimeString());
   };
 
-
+  return (
     <div className="min-h-screen bg-[#FAFAF8]">
       <Navigation />
       <div className="pt-28 pb-32">

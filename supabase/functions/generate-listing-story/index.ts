@@ -36,6 +36,7 @@ interface Brief {
   // Media
   matterport_url?: string;
   video_url?: string;
+  video_urls?: string[];
   floorplan_urls?: string[];
   image_urls?: string[];
   // Tone

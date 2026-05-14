@@ -239,7 +239,11 @@ const TOOL = {
                 type: "integer",
                 description: "For renovation_highlights 'after' image, or -1.",
               },
-              video_url: { type: "string", description: "Empty string if not used." },
+              video_url: { type: "string", description: "Empty string if not used. Prefer video_index when picking from provided clips." },
+              video_index: {
+                type: "integer",
+                description: "Index into the provided video_urls array, or -1 for none. Use this for 'video' section type when clips are available.",
+              },
               button_label: { type: "string" },
               button_url: { type: "string" },
               background_style: { type: "string", enum: ["ivory", "warm", "navy", "gold"] },

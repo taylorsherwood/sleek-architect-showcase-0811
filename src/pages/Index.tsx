@@ -182,20 +182,21 @@ const Hero = () => {
               <button
                 onClick={() => setBookingOpen(true)}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = "translateX(3px) translateZ(0)";
-                  e.currentTarget.style.background = "#fff";
-                  e.currentTarget.style.borderColor = "#fff";
-                  e.currentTarget.style.color = "#b9a06c";
+                  e.currentTarget.style.background = "hsl(var(--gold))";
+                  e.currentTarget.style.color = "#fff";
                 }}
-                onMouseLeave={e => { e.currentTarget.style.transform = "translateX(0) translateZ(0)"; e.currentTarget.style.background = "#b9a06c"; e.currentTarget.style.borderColor = "#b9a06c"; e.currentTarget.style.color = "#fff"; }}
-                className="inline-block text-center px-6 py-[14px] cursor-pointer"
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = "rgba(255,255,255,0.08)";
+                  e.currentTarget.style.color = "hsl(var(--gold))";
+                }}
+                className="inline-block text-center px-8 py-3.5 cursor-pointer transition-all duration-300"
                 style={{
                   fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 500,
-                  border: "2px solid #b9a06c", color: "#fff",
-                  background: "#b9a06c",
-                  boxShadow: "0 2px 8px rgba(0,0,0,0.4)",
-                  transform: "translateX(0) translateZ(0)", willChange: "transform, box-shadow",
-                  transition: "transform 250ms ease, box-shadow 250ms ease, background 250ms ease, border-color 250ms ease",
+                  border: "1px solid hsl(var(--gold))",
+                  color: "hsl(var(--gold))",
+                  background: "rgba(255,255,255,0.08)",
+                  backdropFilter: "blur(12px)",
+                  WebkitBackdropFilter: "blur(12px)",
                 }}
               >
                 BOOK A 15-MINUTE ADVISORY CALL

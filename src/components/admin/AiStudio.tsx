@@ -156,8 +156,9 @@ const AiStudio = ({ listing, sections, media, onApply, onClose }: Props) => {
   };
 
   return (
-    <div className="fixed inset-0 z-[120] bg-foreground/55 backdrop-blur-sm flex items-stretch md:items-center justify-center p-0 md:p-6 overflow-y-auto">
-      <div className="bg-[#FAFAF8] w-full md:max-w-5xl md:my-8 md:rounded-none border border-foreground/10 flex flex-col">
+    <div className="fixed inset-0 z-[120] bg-foreground/55 backdrop-blur-sm overflow-y-auto">
+      <div className="min-h-full flex items-start justify-center p-0 md:p-6">
+      <div className="bg-[#FAFAF8] w-full md:max-w-5xl md:my-0 md:rounded-none border border-foreground/10 flex flex-col">
         {/* Header */}
         <div className="flex items-center justify-between px-6 md:px-8 py-5 border-b border-foreground/10 sticky top-0 bg-[#FAFAF8] z-10">
           <div className="flex items-center gap-3">
@@ -172,7 +173,7 @@ const AiStudio = ({ listing, sections, media, onApply, onClose }: Props) => {
           </button>
         </div>
 
-        <div className="flex-1 overflow-y-auto">
+        <div>
           {/* Brief inputs */}
           <div className="px-6 md:px-8 py-6 grid md:grid-cols-2 gap-5 border-b border-foreground/10">
             <Field label="MLS Remarks">
@@ -397,6 +398,7 @@ const AiStudio = ({ listing, sections, media, onApply, onClose }: Props) => {
             </div>
           )}
         </div>
+      </div>
       </div>
     </div>
   );

@@ -540,6 +540,7 @@ const AdminListingEditor = () => {
           listing={listing}
           sections={sections}
           media={media}
+          onMediaChange={setMedia}
           onApply={applyAiResult}
           onClose={() => setAiOpen(false)}
         />

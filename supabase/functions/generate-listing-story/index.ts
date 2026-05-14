@@ -341,17 +341,26 @@ Deno.serve(async (req) => {
 
     // Resolve media_index → media_url, inject matterport/video URLs, sanitize
     const images = brief.image_urls || [];
+    const videos = (brief.video_urls && brief.video_urls.length ? brief.video_urls : (brief.video_url ? [brief.video_url] : []));
     const floorplan = brief.floorplan_urls?.[0] || "";
+    let videoCursor = 0;
     const sections = (parsed.sections || []).map((s: any) => {
       const idx = typeof s.media_index === "number" ? s.media_index : -1;
       const idx2 = typeof s.secondary_media_index === "number" ? s.secondary_media_index : -1;
+      const vIdx = typeof s.video_index === "number" ? s.video_index : -1;
       let media_url = idx >= 0 && idx < images.length ? images[idx] : "";
       const secondary_media_url = idx2 >= 0 && idx2 < images.length ? images[idx2] : "";
       let video_url = s.video_url || "";
 
       // Type-specific media resolution
       if (s.section_type === "matterport" && brief.matterport_url) video_url = brief.matterport_url;
-      if (s.section_type === "video" && brief.video_url) video_url = brief.video_url;
+      if (s.section_type === "video") {
+        if (vIdx >= 0 && vIdx < videos.length) video_url = videos[vIdx];
+        else if (!video_url && videos.length) {
+          video_url = videos[Math.min(videoCursor, videos.length - 1)];
+          videoCursor++;
+        }
+      }
       if (s.section_type === "floorplan" && floorplan) media_url = floorplan;
 
       return {

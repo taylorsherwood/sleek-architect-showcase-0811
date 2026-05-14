@@ -173,7 +173,7 @@ const AiStudio = ({ listing, sections, media, onApply, onClose }: Props) => {
           </button>
         </div>
 
-        <div className="flex-1 overflow-y-auto">
+        <div>
           {/* Brief inputs */}
           <div className="px-6 md:px-8 py-6 grid md:grid-cols-2 gap-5 border-b border-foreground/10">
             <Field label="MLS Remarks">

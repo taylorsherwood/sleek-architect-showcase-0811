@@ -209,7 +209,7 @@ A: Yes. Austin's combination of no state income tax, a maturing technology and v
     author: "Taylor Sherwood",
     date: "May 14, 2026",
     readTime: "10 min read",
-    category: "Luxury Market",
+    category: "LUXURY GUIDE",
     image: blogExclusiveAustinProperties,
     heroImage: blogExclusiveAustinProperties,
   },

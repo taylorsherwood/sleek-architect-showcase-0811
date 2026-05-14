@@ -117,7 +117,7 @@ const Blog = () => {
                       </div>
                     </div>
                     
-                    <div className="grid flex-1 grid-rows-[2rem_5rem_7rem_auto] gap-2 md:grid-rows-[2rem_5.5rem_7rem_auto]">
+                    <div className="grid flex-1 grid-rows-[2rem_5rem_5.5rem_auto] gap-2 md:grid-rows-[2rem_5.5rem_5.5rem_auto]">
                       <div className="flex flex-wrap items-start gap-x-4 gap-y-1 text-xs text-muted-foreground overflow-hidden">
                         <span>{formatDate(post.date)}</span>
                         <span>•</span>
@@ -130,7 +130,7 @@ const Blog = () => {
                         {post.title}
                       </h2>
                       
-                      <p className="text-muted-foreground leading-relaxed line-clamp-4 overflow-hidden">
+                      <p className="text-muted-foreground leading-relaxed line-clamp-3 overflow-hidden">
                         {post.excerpt}
                       </p>
                       

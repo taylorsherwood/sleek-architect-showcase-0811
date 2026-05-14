@@ -534,6 +534,16 @@ const AdminListingEditor = () => {
           </Card>
         </div>
       </div>
+
+      {aiOpen && (
+        <AiStudio
+          listing={listing}
+          sections={sections}
+          media={media}
+          onApply={applyAiResult}
+          onClose={() => setAiOpen(false)}
+        />
+      )}
     </div>
   );
 };

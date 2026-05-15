@@ -139,7 +139,7 @@ const Hero = () => {
       {/* Desktop: heavier gradient covering left side, fading through center */}
       <div className="absolute inset-0 hidden md:block" style={{
         zIndex: 1,
-        background: `linear-gradient(to right, rgba(10,14,25,0.88) 0%, rgba(10,14,25,0.78) 25%, rgba(10,14,25,0.55) 45%, rgba(10,14,25,0.20) 70%, transparent 85%)`
+        background: `linear-gradient(to right, rgba(10,14,25,0.55) 0%, rgba(10,14,25,0.40) 30%, rgba(10,14,25,0.25) 60%, rgba(10,14,25,0.10) 100%)`
       }} />
 
       {/* Content */}

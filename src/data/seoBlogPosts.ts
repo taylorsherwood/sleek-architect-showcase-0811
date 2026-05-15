@@ -34,6 +34,7 @@ import blogAustinLuxuryTrends from "@/assets/blog-austin-luxury-trends.jpg";
 import blogLuxurySellersQuiet from "@/assets/blog-austin-luxury-sellers-going-quiet.png";
 import blogExclusiveInventory from "@/assets/blog-how-to-access-exclusive-home-inventory.webp";
 import blogExclusiveAustinProperties from "@/assets/blog/exclusive-austin-properties.jpg";
+import blogBestLuxuryAgentsAustin from "@/assets/blog-best-luxury-real-estate-agents-austin.jpg";
 
 import { BlogPost } from "./blogPosts";
 

@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { ChevronLeft, ChevronRight, X, Phone } from "lucide-react";
+import { ChevronLeft, ChevronRight, ChevronUp, ChevronDown, X } from "lucide-react";
 import type { Listing, StorySection, ListingMedia } from "@/types/listing";
 import LeadCaptureForm from "./LeadCaptureForm";
 
@@ -13,15 +13,12 @@ interface Props {
 type Slide =
   | { kind: "cover" }
   | { kind: "stats" }
-  | { kind: "section"; section: StorySection }
-  | { kind: "gallery"; media: ListingMedia }
+  | { kind: "section"; section: StorySection; index: number }
+  | { kind: "gallery"; mosaic: ListingMedia[]; index: number }
   | { kind: "inquiry" };
 
 const fmtPrice = (p: number | null) =>
   p ? `$${Math.round(p).toLocaleString()}` : null;
-
-const chapterLabel = (s: StorySection, i: number) =>
-  s.eyebrow || s.title || `Chapter ${String(i).padStart(2, "0")}`;
 
 const FlipbookStory = ({ listing, sections, media }: Props) => {
   const visibleSections = useMemo(
@@ -32,332 +29,294 @@ const FlipbookStory = ({ listing, sections, media }: Props) => {
   const slides: Slide[] = useMemo(() => {
     const out: Slide[] = [{ kind: "cover" }];
     if (
-      listing.beds ||
-      listing.baths ||
-      listing.sqft ||
-      listing.acres ||
-      listing.year_built
-    ) {
-      out.push({ kind: "stats" });
+      listing.beds || listing.baths || listing.sqft ||
+      listing.acres || listing.year_built
+    ) out.push({ kind: "stats" });
+    visibleSections.forEach((s, idx) =>
+      out.push({ kind: "section", section: s, index: idx + 1 })
+    );
+    // Gallery mosaics (3 images per page)
+    for (let i = 0; i < Math.min(media.length, 9); i += 3) {
+      const mosaic = media.slice(i, i + 3);
+      if (mosaic.length) out.push({ kind: "gallery", mosaic, index: i / 3 + 1 });
     }
-    visibleSections.forEach((s) => out.push({ kind: "section", section: s }));
-    media.slice(0, 6).forEach((m) => out.push({ kind: "gallery", media: m }));
     out.push({ kind: "inquiry" });
     return out;
   }, [listing, visibleSections, media]);
 
   const [i, setI] = useState(0);
-  const [started, setStarted] = useState(false);
   const [dir, setDir] = useState<1 | -1>(1);
-  const heroVideoRef = useRef<HTMLVideoElement>(null);
   const touchStart = useRef<{ x: number; y: number } | null>(null);
+  const heroVideoRef = useRef<HTMLVideoElement>(null);
 
   const total = slides.length;
   const progress = ((i + 1) / total) * 100;
 
   const go = (n: number) => {
-    setDir(n > i ? 1 : -1);
-    setI(Math.max(0, Math.min(total - 1, n)));
+    const clamped = Math.max(0, Math.min(total - 1, n));
+    if (clamped === i) return;
+    setDir(clamped > i ? 1 : -1);
+    setI(clamped);
   };
   const next = () => go(i + 1);
   const prev = () => go(i - 1);
 
   useEffect(() => {
     document.body.style.overflow = "hidden";
-    return () => {
-      document.body.style.overflow = "";
-    };
+    return () => { document.body.style.overflow = ""; };
   }, []);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (!started) return;
-      if (e.key === "ArrowRight" || e.key === " " || e.key === "PageDown") {
-        e.preventDefault();
-        next();
+      if (e.key === "ArrowRight" || e.key === "PageDown" || e.key === " ") {
+        e.preventDefault(); next();
       } else if (e.key === "ArrowLeft" || e.key === "PageUp") {
-        e.preventDefault();
-        prev();
+        e.preventDefault(); prev();
       }
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [i, started]);
+  }, [i]);
 
   useEffect(() => {
-    if (started && heroVideoRef.current) {
-      heroVideoRef.current.play().catch(() => {});
-    }
-  }, [started]);
-
-  const slide = slides[i];
+    if (heroVideoRef.current) heroVideoRef.current.play().catch(() => {});
+  }, [i]);
 
   const onTouchStart = (e: React.TouchEvent) => {
-    touchStart.current = {
-      x: e.touches[0].clientX,
-      y: e.touches[0].clientY,
-    };
+    touchStart.current = { x: e.touches[0].clientX, y: e.touches[0].clientY };
   };
   const onTouchEnd = (e: React.TouchEvent) => {
     if (!touchStart.current) return;
     const dx = e.changedTouches[0].clientX - touchStart.current.x;
     const dy = e.changedTouches[0].clientY - touchStart.current.y;
     if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy)) {
-      if (dx < 0) next();
-      else prev();
+      if (dx < 0) next(); else prev();
     }
     touchStart.current = null;
   };
 
-  // Map a section to a layout variant.
-  const renderSection = (s: StorySection) => {
-    const t = s.section_type;
-    if (
-      t === "full_bleed_image" ||
-      (t === "lifestyle" && s.media_url)
-    ) {
-      return <FullBleedSlide section={s} />;
-    }
-    if (t === "quote") return <QuoteSlide section={s} />;
-    if (t === "gallery") return <GallerySectionSlide section={s} media={media} />;
-    if (t === "video" && (s.video_url || s.media_url)) {
-      return <VideoSlide section={s} />;
-    }
-    if (t === "editorial_text" && !s.media_url) {
-      return <TextOnlySlide section={s} />;
-    }
-    return <SplitSlide section={s} flip={false} />;
-  };
+  const slide = slides[i];
 
   return (
-    <div className="fixed inset-0 z-[100] bg-[#0C0F24] text-background overflow-hidden">
+    <div className="fixed inset-0 z-[100] bg-[#EFEDE7] overflow-hidden flex flex-col">
       {/* Top chrome */}
-      <div className="absolute top-0 left-0 right-0 z-30 flex items-center justify-between px-5 md:px-10 py-5 md:py-6 pointer-events-none">
+      <div className="flex-shrink-0 flex items-center justify-between px-5 md:px-10 pt-4 md:pt-6 pb-2 md:pb-3">
         <Link
           to="/"
-          className="pointer-events-auto text-[9px] md:text-[10px] tracking-[0.5em] uppercase text-background/75 hover:text-gold transition-colors"
+          className="text-[9px] md:text-[10px] tracking-[0.5em] uppercase text-foreground/65 hover:text-gold transition-colors"
         >
           Echelon · Private Presentation
         </Link>
-        <div className="hidden md:flex items-center gap-6 pointer-events-auto">
-          {started && slide.kind === "section" && slide.section && (
-            <span className="text-[9px] tracking-[0.45em] uppercase text-background/55 truncate max-w-[40vw]">
-              {chapterLabel(slide.section, i)}
-            </span>
-          )}
-          <span className="text-[9px] tracking-[0.5em] uppercase text-background/55">
-            {String(i + 1).padStart(2, "0")} / {String(total).padStart(2, "0")}
-          </span>
+        <div className="hidden md:block text-[9px] tracking-[0.5em] uppercase text-foreground/55">
+          {String(i + 1).padStart(2, "0")} / {String(total).padStart(2, "0")}
         </div>
         <Link
           to="/listings"
-          className="md:hidden pointer-events-auto p-2 text-background/75 hover:text-gold transition-colors"
-          aria-label="Exit presentation"
+          className="md:hidden p-2 text-foreground/65 hover:text-gold transition-colors"
+          aria-label="Exit"
         >
           <X className="w-4 h-4" />
         </Link>
       </div>
 
-      {/* Hairline progress */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-background/10 z-40">
+      {/* Hairline progress under top chrome */}
+      <div className="flex-shrink-0 h-px bg-foreground/10 mx-5 md:mx-10 relative">
         <div
-          className="h-full bg-gold transition-[width] duration-700"
-          style={{
-            width: `${progress}%`,
-            transitionTimingFunction: "cubic-bezier(0.16, 1, 0.3, 1)",
-          }}
+          className="absolute left-0 top-0 h-full bg-gold transition-[width] duration-700"
+          style={{ width: `${progress}%`, transitionTimingFunction: "cubic-bezier(0.16, 1, 0.3, 1)" }}
         />
       </div>
 
-      {/* Slide stage */}
+      {/* Page stage */}
       <div
-        className="absolute inset-0"
+        className="flex-1 relative flex items-center justify-center px-0 md:px-20 lg:px-28 py-3 md:py-6 min-h-0"
         onTouchStart={onTouchStart}
         onTouchEnd={onTouchEnd}
       >
-        <div
-          key={i}
-          className={`absolute inset-0 ${
-            dir === 1 ? "fb-enter-right" : "fb-enter-left"
-          }`}
-        >
-          {slide.kind === "cover" && (
-            <CoverSlide
-              listing={listing}
-              videoRef={heroVideoRef}
-              started={started}
-              onBegin={() => {
-                setStarted(true);
-                next();
-              }}
-            />
-          )}
-          {slide.kind === "stats" && <StatsSlide listing={listing} />}
-          {slide.kind === "section" && renderSection(slide.section)}
-          {slide.kind === "gallery" && <GalleryImageSlide media={slide.media} />}
-          {slide.kind === "inquiry" && <InquirySlide listing={listing} />}
-        </div>
-      </div>
-
-      {/* Side nav arrows — desktop */}
-      {started && i > 0 && (
+        {/* Side arrows (desktop) */}
         <button
           onClick={prev}
-          className="hidden md:flex absolute left-6 top-1/2 -translate-y-1/2 z-30 w-12 h-12 items-center justify-center rounded-full border border-background/20 bg-background/5 backdrop-blur-sm text-background/80 hover:text-gold hover:border-gold/60 transition-colors"
-          aria-label="Previous"
+          disabled={i === 0}
+          aria-label="Previous page"
+          className="hidden md:flex absolute left-4 lg:left-6 top-1/2 -translate-y-1/2 z-30 w-12 h-12 lg:w-14 lg:h-14 items-center justify-center rounded-full bg-[#0C0F24] text-background hover:bg-gold hover:text-foreground transition-colors disabled:opacity-25 disabled:hover:bg-[#0C0F24] disabled:hover:text-background"
         >
           <ChevronLeft className="w-5 h-5" />
         </button>
-      )}
-      {started && i < total - 1 && (
         <button
           onClick={next}
-          className="hidden md:flex absolute right-6 top-1/2 -translate-y-1/2 z-30 w-12 h-12 items-center justify-center rounded-full border border-background/20 bg-background/5 backdrop-blur-sm text-background/80 hover:text-gold hover:border-gold/60 transition-colors"
-          aria-label="Next"
+          disabled={i === total - 1}
+          aria-label="Next page"
+          className="hidden md:flex absolute right-4 lg:right-6 top-1/2 -translate-y-1/2 z-30 w-12 h-12 lg:w-14 lg:h-14 items-center justify-center rounded-full bg-[#0C0F24] text-background hover:bg-gold hover:text-foreground transition-colors disabled:opacity-25 disabled:hover:bg-[#0C0F24] disabled:hover:text-background"
         >
           <ChevronRight className="w-5 h-5" />
         </button>
-      )}
 
-      {/* Bottom chrome */}
-      {started && (
-        <div className="absolute bottom-0 left-0 right-0 z-30 px-5 md:px-10 pb-5 md:pb-7 flex items-center justify-between gap-4">
-          {/* Chapter dots — desktop */}
-          <div className="hidden md:flex items-center gap-1.5 flex-1 max-w-md">
-            {slides.map((_, idx) => (
-              <button
-                key={idx}
-                onClick={() => go(idx)}
-                aria-label={`Go to slide ${idx + 1}`}
-                className={`h-px transition-all duration-500 ${
-                  idx === i
-                    ? "w-8 bg-gold"
-                    : idx < i
-                    ? "w-4 bg-background/45"
-                    : "w-4 bg-background/15 hover:bg-background/35"
-                }`}
-              />
-            ))}
-          </div>
-
-          {/* Mobile prev/next */}
-          <div className="md:hidden flex items-center gap-3">
-            <button
-              onClick={prev}
-              disabled={i === 0}
-              className="w-10 h-10 inline-flex items-center justify-center border border-background/20 text-background/80 disabled:opacity-30"
-              aria-label="Previous"
-            >
-              <ChevronLeft className="w-4 h-4" />
-            </button>
-            <span className="text-[9px] tracking-[0.4em] uppercase text-background/60">
-              {String(i + 1).padStart(2, "0")} / {String(total).padStart(2, "0")}
-            </span>
-            <button
-              onClick={next}
-              disabled={i === total - 1}
-              className="w-10 h-10 inline-flex items-center justify-center border border-background/20 text-background/80 disabled:opacity-30"
-              aria-label="Next"
-            >
-              <ChevronRight className="w-4 h-4" />
-            </button>
-          </div>
-
-          {/* Inquire CTA */}
-          <button
-            onClick={() => go(total - 1)}
-            className="text-[9px] md:text-[10px] tracking-[0.4em] uppercase border-b border-gold pb-1 text-background hover:text-gold transition-colors"
+        {/* Page card */}
+        <div className="relative w-full h-full md:max-w-[1280px] md:aspect-[16/10] md:h-auto md:max-h-full overflow-hidden bg-[#0C0F24] shadow-[0_30px_80px_-20px_rgba(12,15,36,0.35)]">
+          <div
+            key={i}
+            className={`absolute inset-0 ${dir === 1 ? "fb-page-right" : "fb-page-left"}`}
           >
-            Request Showing
-          </button>
+            <PageBody
+              slide={slide}
+              listing={listing}
+              media={media}
+              videoRef={heroVideoRef}
+              onBegin={next}
+              onInquire={() => go(total - 1)}
+            />
+          </div>
         </div>
-      )}
+      </div>
+
+      {/* Bottom chrome — chevron + mobile nav */}
+      <div className="flex-shrink-0 flex items-center justify-between px-5 md:px-10 pb-4 md:pb-5 pt-2">
+        {/* Mobile prev */}
+        <button
+          onClick={prev}
+          disabled={i === 0}
+          className="md:hidden w-10 h-10 inline-flex items-center justify-center rounded-full bg-[#0C0F24] text-background disabled:opacity-25"
+          aria-label="Previous"
+        >
+          <ChevronLeft className="w-4 h-4" />
+        </button>
+
+        {/* Center chevron up — opens slide index (desktop) / chapter label (mobile) */}
+        <div className="flex-1 flex justify-center">
+          <ChapterIndicator slide={slide} listing={listing} index={i} total={total} onChevron={next} />
+        </div>
+
+        {/* Mobile next */}
+        <button
+          onClick={next}
+          disabled={i === total - 1}
+          className="md:hidden w-10 h-10 inline-flex items-center justify-center rounded-full bg-[#0C0F24] text-background disabled:opacity-25"
+          aria-label="Next"
+        >
+          <ChevronRight className="w-4 h-4" />
+        </button>
+      </div>
     </div>
   );
 };
 
-/* ---------- Slide variants ---------- */
+/* ---------- Chapter indicator ---------- */
 
-const CoverSlide = ({
-  listing,
-  videoRef,
-  started,
-  onBegin,
+const ChapterIndicator = ({
+  slide, listing, index, total, onChevron,
 }: {
+  slide: Slide; listing: Listing; index: number; total: number; onChevron: () => void;
+}) => {
+  let label = "";
+  if (slide.kind === "cover") label = "Cover";
+  else if (slide.kind === "stats") label = "At a Glance";
+  else if (slide.kind === "section") label = slide.section.eyebrow || slide.section.title || `Chapter ${slide.index}`;
+  else if (slide.kind === "gallery") label = `Gallery · ${slide.index}`;
+  else if (slide.kind === "inquiry") label = "Private Showing";
+
+  return (
+    <div className="flex flex-col items-center gap-1.5">
+      <button
+        onClick={onChevron}
+        disabled={index === total - 1}
+        aria-label="Next page"
+        className="w-9 h-9 md:w-10 md:h-10 inline-flex items-center justify-center text-foreground/55 hover:text-gold transition-colors disabled:opacity-25"
+      >
+        <ChevronUp className="w-4 h-4 md:w-5 md:h-5" />
+      </button>
+      <span className="text-[9px] tracking-[0.45em] uppercase text-foreground/50 truncate max-w-[60vw]">
+        {label}
+      </span>
+    </div>
+  );
+};
+
+/* ---------- Page body router ---------- */
+
+const PageBody = ({
+  slide, listing, media, videoRef, onBegin, onInquire,
+}: {
+  slide: Slide;
   listing: Listing;
+  media: ListingMedia[];
   videoRef: React.RefObject<HTMLVideoElement>;
-  started: boolean;
   onBegin: () => void;
+  onInquire: () => void;
+}) => {
+  if (slide.kind === "cover") return <CoverPage listing={listing} videoRef={videoRef} onBegin={onBegin} />;
+  if (slide.kind === "stats") return <StatsPage listing={listing} />;
+  if (slide.kind === "inquiry") return <InquiryPage listing={listing} />;
+  if (slide.kind === "gallery") return <GalleryMosaicPage mosaic={slide.mosaic} index={slide.index} listing={listing} />;
+  // section
+  return <SectionPage section={slide.section} index={slide.index} media={media} onInquire={onInquire} />;
+};
+
+/* ---------- Pages ---------- */
+
+const CoverPage = ({
+  listing, videoRef, onBegin,
+}: {
+  listing: Listing; videoRef: React.RefObject<HTMLVideoElement>; onBegin: () => void;
 }) => (
-  <div className="absolute inset-0">
-    <div className="absolute inset-0 fb-kenburns">
+  <div className="absolute inset-0 grid grid-rows-[1fr_auto] md:grid-rows-[1.6fr_1fr]">
+    <div className="relative overflow-hidden bg-[#0C0F24]">
       {listing.hero_video_url ? (
         <video
           ref={videoRef}
           src={listing.hero_video_url}
           poster={listing.hero_image_url || undefined}
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="metadata"
-          className="absolute inset-0 w-full h-full object-cover"
+          autoPlay muted loop playsInline preload="metadata"
+          className="absolute inset-0 w-full h-full object-cover fb-kenburns"
         />
       ) : listing.hero_image_url ? (
         <img
           src={listing.hero_image_url}
           alt={listing.title}
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover fb-kenburns"
           fetchPriority="high"
         />
       ) : null}
     </div>
-    <div className="absolute inset-0 bg-gradient-to-b from-[#0C0F24]/35 via-[#0C0F24]/15 to-[#0C0F24]/85" />
-
-    <div className="relative z-10 h-full flex flex-col justify-end pb-24 md:pb-28 px-6 md:px-12 text-background">
-      <div className="max-w-5xl">
+    <div className="bg-[#0C0F24] text-background grid grid-cols-1 md:grid-cols-[auto_1fr] items-center gap-6 md:gap-12 px-6 md:px-14 py-8 md:py-0">
+      <div className="flex flex-col items-start md:items-start">
+        <p className="text-[10px] tracking-[0.5em] uppercase text-gold mb-2">Echelon</p>
+        <p className="text-[9px] tracking-[0.45em] uppercase text-background/55">Private Presentation</p>
+      </div>
+      <div className="md:border-l md:border-background/15 md:pl-12">
         {listing.neighborhood && (
-          <p className="fb-rise text-[10px] md:text-[11px] tracking-[0.5em] uppercase text-gold mb-6">
+          <p className="fb-rise text-[10px] tracking-[0.5em] uppercase text-gold mb-3">
             {listing.neighborhood}
           </p>
         )}
-        <h1 className="fb-rise-1 font-display text-[2.5rem] sm:text-6xl md:text-[5.5rem] lg:text-[6.5rem] leading-[0.98] tracking-[-0.01em] mb-6 md:mb-8 max-w-4xl">
+        <h1 className="fb-rise-1 font-display text-[2rem] md:text-[3.25rem] lg:text-[3.75rem] leading-[1.02] tracking-[-0.01em] mb-4">
           {listing.title}
         </h1>
         {listing.short_intro && (
-          <p className="fb-rise-2 font-body text-base md:text-xl opacity-85 max-w-2xl leading-snug mb-10">
+          <p className="fb-rise-2 font-body text-sm md:text-base opacity-80 leading-snug max-w-xl mb-5 line-clamp-2 md:line-clamp-none">
             {listing.short_intro}
           </p>
         )}
-        <div className="fb-rise-3 flex flex-col sm:flex-row sm:items-center gap-6 sm:gap-10">
+        <div className="fb-rise-3 flex items-center gap-6 flex-wrap">
           <button
             onClick={onBegin}
-            className="group inline-flex items-center gap-3 text-[10px] md:text-[11px] tracking-[0.45em] uppercase text-background hover:text-gold transition-colors"
+            className="group inline-flex items-center gap-3 text-[10px] md:text-[11px] tracking-[0.45em] uppercase hover:text-gold transition-colors"
           >
             <span className="border-b border-gold pb-1">Begin Presentation</span>
             <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
           </button>
           {fmtPrice(listing.price) && (
-            <span className="font-display text-lg md:text-xl tracking-wide opacity-90">
+            <span className="font-display text-base md:text-lg tracking-wide opacity-90">
               {fmtPrice(listing.price)}
             </span>
           )}
         </div>
       </div>
     </div>
-
-    {!started && (
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2">
-        <span className="text-[9px] tracking-[0.5em] uppercase text-background/55">
-          Swipe or tap to begin
-        </span>
-      </div>
-    )}
   </div>
 );
 
-const StatsSlide = ({ listing }: { listing: Listing }) => {
+const StatsPage = ({ listing }: { listing: Listing }) => {
   const stats = [
     listing.beds && { label: "Beds", value: listing.beds },
     listing.baths && { label: "Baths", value: listing.baths },
@@ -365,26 +324,19 @@ const StatsSlide = ({ listing }: { listing: Listing }) => {
     listing.acres && { label: "Acres", value: listing.acres },
     listing.year_built && { label: "Built", value: listing.year_built },
   ].filter(Boolean) as { label: string; value: string | number }[];
-
   return (
-    <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
-      <p className="fb-rise text-[10px] md:text-[11px] tracking-[0.5em] uppercase text-gold mb-12">
-        At a Glance
-      </p>
-      <div className="fb-rise-1 grid grid-cols-2 md:grid-cols-5 gap-y-12 gap-x-12 md:gap-x-20 max-w-5xl">
+    <div className="absolute inset-0 bg-[#0C0F24] text-background flex flex-col items-center justify-center px-6 md:px-12 text-center">
+      <p className="fb-rise text-[10px] tracking-[0.5em] uppercase text-gold mb-10">At a Glance</p>
+      <div className="fb-rise-1 grid grid-cols-2 md:grid-cols-5 gap-y-10 gap-x-12 md:gap-x-20 max-w-4xl">
         {stats.map((s) => (
           <div key={s.label} className="text-center">
-            <p className="font-display text-4xl md:text-6xl leading-none">
-              {s.value}
-            </p>
-            <p className="text-[10px] tracking-[0.35em] uppercase text-background/55 mt-4">
-              {s.label}
-            </p>
+            <p className="font-display text-3xl md:text-5xl leading-none">{s.value}</p>
+            <p className="text-[10px] tracking-[0.35em] uppercase text-background/55 mt-3">{s.label}</p>
           </div>
         ))}
       </div>
       {fmtPrice(listing.price) && (
-        <p className="fb-rise-2 mt-16 font-display text-2xl md:text-3xl tracking-wide text-background/85">
+        <p className="fb-rise-2 mt-12 font-display text-xl md:text-2xl tracking-wide text-background/85">
           {fmtPrice(listing.price)}
         </p>
       )}
@@ -392,244 +344,169 @@ const StatsSlide = ({ listing }: { listing: Listing }) => {
   );
 };
 
-const FullBleedSlide = ({ section }: { section: StorySection }) => (
-  <div className="absolute inset-0">
-    {section.media_url && (
-      <>
-        <img
-          src={section.media_url}
-          alt={section.title || ""}
-          className="absolute inset-0 w-full h-full object-cover fb-kenburns"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0C0F24]/85 via-[#0C0F24]/20 to-transparent" />
-      </>
-    )}
-    <div className="relative z-10 h-full flex flex-col justify-end pb-24 md:pb-28 px-6 md:px-12 max-w-4xl">
-      {section.eyebrow && (
-        <p className="fb-rise text-[10px] md:text-[11px] tracking-[0.5em] uppercase text-gold mb-5">
-          {section.eyebrow}
-        </p>
-      )}
-      {section.title && (
-        <h2 className="fb-rise-1 font-display text-3xl md:text-6xl leading-[1.05] tracking-[-0.005em] mb-6">
-          {section.title}
-        </h2>
-      )}
-      {section.body && (
-        <p className="fb-rise-2 font-body text-[15px] md:text-lg leading-[1.8] opacity-85 whitespace-pre-line max-w-2xl">
-          {section.body}
-        </p>
-      )}
-    </div>
-  </div>
-);
-
-const SplitSlide = ({
-  section,
-  flip,
+const SectionPage = ({
+  section, index, media, onInquire,
 }: {
-  section: StorySection;
-  flip: boolean;
-}) => (
-  <div
-    className={`absolute inset-0 flex flex-col ${
-      flip ? "md:flex-row-reverse" : "md:flex-row"
-    } overflow-y-auto md:overflow-hidden`}
-  >
-    {section.media_url && (
-      <div className="relative md:w-1/2 h-[42vh] md:h-full bg-foreground flex-shrink-0">
-        <img
-          src={section.media_url}
-          alt={section.title || ""}
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-      </div>
-    )}
-    <div
-      className={`${
-        section.media_url ? "md:w-1/2" : "w-full"
-      } flex flex-col justify-center px-6 md:px-16 lg:px-24 py-14 md:py-12`}
-    >
-      {section.eyebrow && (
-        <p className="fb-rise text-[10px] md:text-[11px] tracking-[0.5em] uppercase text-gold mb-6">
-          {section.eyebrow}
-        </p>
-      )}
-      {section.title && (
-        <h2 className="fb-rise-1 font-display text-2xl md:text-[2.5rem] leading-[1.15] tracking-[-0.005em] mb-7 max-w-xl">
-          {section.title}
-        </h2>
-      )}
-      {section.body && (
-        <p className="fb-rise-2 font-body text-[15px] md:text-[17px] leading-[1.85] opacity-80 whitespace-pre-line max-w-xl">
-          {section.body}
-        </p>
-      )}
-    </div>
-  </div>
-);
-
-const TextOnlySlide = ({ section }: { section: StorySection }) => (
-  <div className="absolute inset-0 flex items-center justify-center px-6 md:px-12 overflow-y-auto py-24">
-    <div className="max-w-3xl">
-      {section.eyebrow && (
-        <p className="fb-rise text-[10px] md:text-[11px] tracking-[0.5em] uppercase text-gold mb-7">
-          {section.eyebrow}
-        </p>
-      )}
-      {section.title && (
-        <h2 className="fb-rise-1 font-display text-3xl md:text-5xl leading-[1.1] tracking-[-0.005em] mb-10">
-          {section.title}
-        </h2>
-      )}
-      {section.body && (
-        <p className="fb-rise-2 font-body text-[15px] md:text-lg leading-[1.95] opacity-85 whitespace-pre-line">
-          {section.body}
-        </p>
-      )}
-    </div>
-  </div>
-);
-
-const QuoteSlide = ({ section }: { section: StorySection }) => (
-  <div className="absolute inset-0 flex items-center justify-center px-6 md:px-12 text-center">
-    <div className="max-w-3xl">
-      {section.eyebrow && (
-        <p className="fb-rise text-[10px] tracking-[0.5em] uppercase text-gold mb-10">
-          {section.eyebrow}
-        </p>
-      )}
-      <p className="fb-rise-1 font-display text-2xl md:text-4xl leading-[1.35] tracking-[-0.005em] italic">
-        “{section.body || section.title}”
-      </p>
-      {section.title && section.body && (
-        <p className="fb-rise-2 mt-10 text-[10px] tracking-[0.4em] uppercase text-background/60">
-          {section.title}
-        </p>
-      )}
-    </div>
-  </div>
-);
-
-const VideoSlide = ({ section }: { section: StorySection }) => (
-  <div className="absolute inset-0 bg-black">
-    <video
-      src={section.video_url || section.media_url || ""}
-      autoPlay
-      muted
-      loop
-      playsInline
-      className="absolute inset-0 w-full h-full object-cover"
-    />
-    <div className="absolute inset-0 bg-gradient-to-t from-[#0C0F24]/70 via-transparent to-[#0C0F24]/30" />
-    <div className="relative z-10 h-full flex flex-col justify-end pb-24 px-6 md:px-12 max-w-3xl">
-      {section.eyebrow && (
-        <p className="text-[10px] tracking-[0.5em] uppercase text-gold mb-5">
-          {section.eyebrow}
-        </p>
-      )}
-      {section.title && (
-        <h2 className="font-display text-3xl md:text-5xl leading-[1.1] mb-4">
-          {section.title}
-        </h2>
-      )}
-    </div>
-  </div>
-);
-
-const GallerySectionSlide = ({
-  section,
-  media,
-}: {
-  section: StorySection;
-  media: ListingMedia[];
+  section: StorySection; index: number; media: ListingMedia[]; onInquire: () => void;
 }) => {
-  const items = media.length ? media : [];
+  const t = section.section_type;
+
+  if (t === "quote") {
+    return (
+      <div className="absolute inset-0 bg-[#0C0F24] text-background flex items-center justify-center px-8 md:px-16 text-center">
+        <div className="max-w-3xl">
+          {section.eyebrow && (
+            <p className="fb-rise text-[10px] tracking-[0.5em] uppercase text-gold mb-8">{section.eyebrow}</p>
+          )}
+          <p className="fb-rise-1 font-display text-2xl md:text-4xl leading-[1.35] tracking-[-0.005em] italic">
+            “{section.body || section.title}”
+          </p>
+          {section.title && section.body && (
+            <p className="fb-rise-2 mt-8 text-[10px] tracking-[0.4em] uppercase text-background/60">
+              {section.title}
+            </p>
+          )}
+        </div>
+      </div>
+    );
+  }
+
+  if (t === "full_bleed_image" && section.media_url) {
+    return (
+      <div className="absolute inset-0">
+        <img src={section.media_url} alt={section.title || ""} className="absolute inset-0 w-full h-full object-cover fb-kenburns" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0C0F24]/85 via-[#0C0F24]/15 to-transparent" />
+        <div className="relative z-10 h-full flex flex-col justify-end px-6 md:px-14 pb-10 md:pb-14 text-background max-w-4xl">
+          {section.eyebrow && (
+            <p className="fb-rise text-[10px] tracking-[0.5em] uppercase text-gold mb-4">{section.eyebrow}</p>
+          )}
+          {section.title && (
+            <h2 className="fb-rise-1 font-display text-3xl md:text-5xl leading-[1.05] tracking-[-0.005em] mb-4">
+              {section.title}
+            </h2>
+          )}
+          {section.body && (
+            <p className="fb-rise-2 font-body text-sm md:text-base leading-[1.7] opacity-85 whitespace-pre-line max-w-xl line-clamp-4">
+              {section.body}
+            </p>
+          )}
+        </div>
+      </div>
+    );
+  }
+
+  // Default: split (image + dark text panel) — alternate orientation by index
+  const flip = index % 2 === 0;
+  const hasImage = !!section.media_url;
+  const secondary = section.secondary_media_url;
+
   return (
-    <div className="absolute inset-0 flex flex-col px-6 md:px-12 pt-20 pb-24 overflow-y-auto">
-      {section.eyebrow && (
-        <p className="text-[10px] tracking-[0.5em] uppercase text-gold mb-4">
-          {section.eyebrow}
-        </p>
+    <div className={`absolute inset-0 grid ${hasImage ? "grid-rows-[40%_60%] md:grid-rows-1 md:grid-cols-[1.15fr_1fr]" : "grid-cols-1"}`}>
+      {hasImage && (
+        <div className={`relative bg-[#0C0F24] overflow-hidden ${flip ? "md:order-2" : ""} ${secondary ? "grid grid-rows-2 gap-1" : ""}`}>
+          <img src={section.media_url!} alt="" className={`${secondary ? "" : "absolute inset-0"} w-full h-full object-cover`} />
+          {secondary && (
+            <img src={secondary} alt="" className="w-full h-full object-cover" />
+          )}
+        </div>
       )}
-      {section.title && (
-        <h2 className="font-display text-2xl md:text-4xl mb-8">{section.title}</h2>
-      )}
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-5">
-        {items.slice(0, 9).map((m) => (
-          <div key={m.id} className="aspect-[4/5] overflow-hidden bg-background/5">
-            <img
-              src={m.media_url}
-              alt={m.alt_text || ""}
-              className="w-full h-full object-cover"
-            />
-          </div>
-        ))}
+      <div className={`relative bg-[#0C0F24] text-background flex flex-col justify-center px-6 md:px-12 lg:px-16 py-8 md:py-10 ${flip && hasImage ? "md:order-1" : ""}`}>
+        <div className="absolute top-4 right-5 md:top-5 md:right-6 text-[9px] tracking-[0.4em] uppercase text-background/35">
+          {String(index).padStart(2, "0")}
+        </div>
+        {section.eyebrow && (
+          <p className="fb-rise text-[10px] tracking-[0.5em] uppercase text-gold mb-5">{section.eyebrow}</p>
+        )}
+        {section.title && (
+          <h2 className="fb-rise-1 font-display text-2xl md:text-[2.25rem] lg:text-[2.5rem] leading-[1.12] tracking-[-0.005em] mb-5 max-w-xl">
+            {section.title}
+          </h2>
+        )}
+        {section.body && (
+          <p className="fb-rise-2 font-body text-[14px] md:text-[15px] leading-[1.75] opacity-80 whitespace-pre-line max-w-xl">
+            {section.body}
+          </p>
+        )}
+        {section.button_label && section.button_url && (
+          <a
+            href={section.button_url}
+            onClick={(e) => {
+              if (section.button_url === "#inquire") { e.preventDefault(); onInquire(); }
+            }}
+            className="fb-rise-3 mt-6 inline-flex items-center gap-2 self-start text-[10px] tracking-[0.4em] uppercase border-b border-gold pb-1 hover:text-gold transition-colors w-fit"
+          >
+            {section.button_label} <ChevronRight className="w-3 h-3" />
+          </a>
+        )}
       </div>
     </div>
   );
 };
 
-const GalleryImageSlide = ({ media }: { media: ListingMedia }) => (
-  <div className="absolute inset-0">
-    <img
-      src={media.media_url}
-      alt={media.alt_text || media.caption || ""}
-      className="absolute inset-0 w-full h-full object-cover fb-kenburns"
-    />
-    <div className="absolute inset-0 bg-gradient-to-t from-[#0C0F24]/55 via-transparent to-transparent" />
-    {media.caption && (
-      <p className="absolute bottom-24 left-1/2 -translate-x-1/2 text-[10px] tracking-[0.45em] uppercase text-background/75">
-        {media.caption}
-      </p>
-    )}
-  </div>
-);
-
-const InquirySlide = ({ listing }: { listing: Listing }) => (
-  <div className="absolute inset-0 overflow-y-auto">
-    <div className="min-h-full flex items-center justify-center px-6 md:px-12 py-24">
-      <div className="w-full max-w-xl text-center">
-        <p className="fb-rise text-[10px] tracking-[0.5em] uppercase text-gold mb-6">
-          Private Showing
-        </p>
-        <h2 className="fb-rise-1 font-display text-3xl md:text-5xl leading-[1.1] mb-6 tracking-[-0.005em]">
-          Experience {listing.title}
+const GalleryMosaicPage = ({
+  mosaic, index, listing,
+}: {
+  mosaic: ListingMedia[]; index: number; listing: Listing;
+}) => {
+  const [a, b, c] = [mosaic[0], mosaic[1], mosaic[2]];
+  return (
+    <div className="absolute inset-0 grid grid-rows-[1fr_auto] md:grid-rows-1 md:grid-cols-[2fr_1fr]">
+      <div className="grid grid-cols-2 grid-rows-2 gap-1 bg-[#0C0F24] overflow-hidden">
+        {a && <img src={a.media_url} alt={a.alt_text || ""} className="row-span-2 w-full h-full object-cover" />}
+        {b && <img src={b.media_url} alt={b.alt_text || ""} className="w-full h-full object-cover" />}
+        {c && <img src={c.media_url} alt={c.alt_text || ""} className="w-full h-full object-cover" />}
+      </div>
+      <div className="bg-[#0C0F24] text-background flex flex-col justify-center px-6 md:px-10 py-8 md:py-0">
+        <p className="fb-rise text-[10px] tracking-[0.5em] uppercase text-gold mb-4">Gallery · {String(index).padStart(2, "0")}</p>
+        <h2 className="fb-rise-1 font-display text-xl md:text-3xl leading-[1.15] tracking-[-0.005em] mb-4">
+          {listing.title}
         </h2>
-        <p className="fb-rise-2 font-body text-[15px] md:text-[17px] opacity-80 mb-10 leading-relaxed">
-          Speak directly with the Echelon team to arrange a confidential viewing.
+        {listing.neighborhood && (
+          <p className="fb-rise-2 text-[11px] md:text-xs tracking-[0.25em] uppercase text-background/65">
+            {listing.neighborhood}
+          </p>
+        )}
+      </div>
+    </div>
+  );
+};
+
+const InquiryPage = ({ listing }: { listing: Listing }) => (
+  <div className="absolute inset-0 grid grid-rows-[35%_65%] md:grid-rows-1 md:grid-cols-[1fr_1.1fr]">
+    <div className="relative bg-[#0C0F24] overflow-hidden">
+      {listing.hero_image_url && (
+        <img src={listing.hero_image_url} alt="" className="absolute inset-0 w-full h-full object-cover" />
+      )}
+      <div className="absolute inset-0 bg-gradient-to-br from-[#0C0F24]/40 via-transparent to-[#0C0F24]/60" />
+      <div className="absolute bottom-0 left-0 right-0 p-6 md:p-10 text-background">
+        <p className="text-[10px] tracking-[0.5em] uppercase text-gold mb-2">Echelon</p>
+        <p className="font-display text-lg md:text-2xl leading-tight">{listing.title}</p>
+      </div>
+    </div>
+    <div className="bg-[#0C0F24] text-background overflow-y-auto">
+      <div className="px-6 md:px-12 lg:px-16 py-8 md:py-10">
+        <p className="fb-rise text-[10px] tracking-[0.5em] uppercase text-gold mb-4">Private Showing</p>
+        <h2 className="fb-rise-1 font-display text-2xl md:text-3xl leading-[1.15] mb-4 tracking-[-0.005em]">
+          Request a Confidential Viewing
+        </h2>
+        <p className="fb-rise-2 font-body text-[14px] md:text-[15px] opacity-80 mb-6 leading-relaxed">
+          Speak directly with the Echelon team to arrange a private tour of {listing.title}.
         </p>
         <div className="fb-rise-2">
-          <LeadCaptureForm
-            listingId={listing.id}
-            listingTitle={listing.title}
-            variant="dark"
-          />
+          <LeadCaptureForm listingId={listing.id} listingTitle={listing.title} variant="dark" />
         </div>
         {listing.agent_name && (
-          <div className="mt-12 pt-8 border-t border-background/15 text-sm tracking-wide opacity-80">
+          <div className="mt-8 pt-6 border-t border-background/15 text-sm tracking-wide opacity-80 space-y-1">
             <p className="font-display text-base">{listing.agent_name}</p>
             {listing.agent_phone && (
-              <a
-                href={`tel:${listing.agent_phone.replace(/[^\d+]/g, "")}`}
-                className="mt-1 inline-flex items-center gap-2 hover:text-gold transition-colors"
-              >
-                <Phone className="w-3 h-3" /> {listing.agent_phone}
-              </a>
+              <a href={`tel:${listing.agent_phone.replace(/[^\d+]/g, "")}`} className="block hover:text-gold transition-colors">{listing.agent_phone}</a>
             )}
             {listing.agent_email && (
-              <p className="mt-1">
-                <a
-                  href={`mailto:${listing.agent_email}`}
-                  className="hover:text-gold transition-colors"
-                >
-                  {listing.agent_email}
-                </a>
-              </p>
+              <a href={`mailto:${listing.agent_email}`} className="block hover:text-gold transition-colors">{listing.agent_email}</a>
             )}
           </div>
         )}
-        <p className="mt-10 text-[9px] tracking-[0.45em] uppercase text-background/40">
+        <p className="mt-8 text-[9px] tracking-[0.45em] uppercase text-background/40">
           Echelon Property Group · Texas Real Estate Commission
         </p>
       </div>

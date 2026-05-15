@@ -347,7 +347,7 @@ const StatsStrip = () => (
 
 const testimonials = [
   {
-    quote: "\nTaylor's knowledge of the Austin luxury market is exceptional. He knew the comps, the trends, and which streets were commanding premiums before we even asked.",
+    quote: "Taylor's knowledge of the Austin luxury market is exceptional. He knew the comps, the trends, and which streets were commanding premiums before we even asked.",
     name: "Chris and Anne Brown",
     context: "Sold in Tarrytown",
   },
@@ -586,6 +586,9 @@ const TestimonialsSection = () => {
                   color: "hsl(var(--foreground) / 0.92)",
                   zIndex: 1,
                   whiteSpace: "pre-wrap",
+                  minHeight: "clamp(280px, 32vh, 360px)",
+                  display: "flex",
+                  alignItems: "center",
                 }}
               >
                 <span

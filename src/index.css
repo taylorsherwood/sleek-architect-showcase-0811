@@ -1163,3 +1163,37 @@ body.hcs-immersive nav.fixed {
    full-bleed media sections. */
 .ls-root section::before,
 .ls-root section::after { display: none !important; }
+
+/* ===== Flipbook story transitions ===== */
+@keyframes fbEnterRight {
+  from { opacity: 0; transform: translateX(3.5%); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes fbEnterLeft {
+  from { opacity: 0; transform: translateX(-3.5%); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+.fb-enter-right { animation: fbEnterRight 0.85s var(--ls-ease) both; }
+.fb-enter-left  { animation: fbEnterLeft  0.85s var(--ls-ease) both; }
+
+@keyframes fbKenburns {
+  0%   { transform: scale(1.06); }
+  100% { transform: scale(1.00); }
+}
+.fb-kenburns { animation: fbKenburns 12s ease-out both; }
+
+@keyframes fbRise {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.fb-rise   { animation: fbRise 1.0s var(--ls-ease) 0.10s both; }
+.fb-rise-1 { animation: fbRise 1.0s var(--ls-ease) 0.28s both; }
+.fb-rise-2 { animation: fbRise 1.0s var(--ls-ease) 0.48s both; }
+.fb-rise-3 { animation: fbRise 1.0s var(--ls-ease) 0.68s both; }
+
+@media (prefers-reduced-motion: reduce) {
+  .fb-enter-right, .fb-enter-left, .fb-kenburns,
+  .fb-rise, .fb-rise-1, .fb-rise-2, .fb-rise-3 {
+    animation: none !important;
+  }
+}

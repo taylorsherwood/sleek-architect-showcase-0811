@@ -181,9 +181,9 @@ const HomeCommunitiesScroll = () => {
                   src={n.image}
                   alt={`${n.name} luxury Austin neighborhood`}
                   className="w-full h-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.03]"
-                  decoding={idx <= 1 ? "sync" : "async"}
-                  loading={idx === 0 ? "eager" : "lazy"}
-                  fetchPriority={idx === 0 ? "high" : "auto"}
+                  decoding="async"
+                  loading="eager"
+                  fetchPriority={idx <= 1 ? "high" : "low"}
                 />
               </div>
               <div

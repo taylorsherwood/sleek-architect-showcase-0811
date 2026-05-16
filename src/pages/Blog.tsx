@@ -97,37 +97,37 @@ const Blog = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-black/15 to-[#1a1410]/55" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#0C0F24]/35 via-transparent to-transparent" />
 
-        <div className="absolute inset-0 flex items-end md:items-center">
-          <div className="container mx-auto px-6 pb-16 md:pb-0">
-            <div className="max-w-xl md:max-w-2xl motion-safe:animate-[fadeUp_1.1s_ease-out_both]" style={{ textShadow: '0 2px 24px rgba(0,0,0,0.55), 0 1px 4px rgba(0,0,0,0.45)' }}>
-              <p className="text-[10px] tracking-[0.4em] uppercase text-[#b9a06c] mb-10 md:mb-14">
-                Luxury Real Estate Insights
-              </p>
-              <h1 className="text-[1.75rem] sm:text-3xl md:text-[2.5rem] lg:text-[3rem] font-display font-normal leading-[1.25] md:leading-[1.2] tracking-[-0.01em] text-background mb-12 md:mb-16 max-w-[18ch]">
-                Austin real estate intelligence for buyers, sellers &amp; investors.
-              </h1>
-              <p className="text-[15px] md:text-base text-background/75 leading-[1.9] max-w-lg mb-14 md:mb-16">
-                Hyperlocal analysis, off-market strategy, and neighborhood expertise across Austin's most desirable communities.
-              </p>
-              <div className="flex items-center gap-7 md:gap-9">
-                <a
-                  href="#articles"
-                  onClick={(e) => { e.preventDefault(); smoothScrollTo("articles"); }}
-                  className="group relative inline-flex items-center text-[11px] tracking-[0.25em] uppercase text-background pb-2 transition-colors duration-500 hover:text-[#b9a06c]"
-                >
-                  Explore Articles
-                  <span className="ml-3 transition-transform duration-500 group-hover:translate-x-1">→</span>
-                  <span className="pointer-events-none absolute left-0 bottom-0 h-px w-full origin-left scale-x-0 bg-[#b9a06c] transition-transform duration-500 group-hover:scale-x-100" />
-                </a>
-                <Link
-                  to="/off-market-real-estate-austin"
-                  className="group relative inline-flex items-center text-[11px] tracking-[0.25em] uppercase text-background/65 pb-2 transition-colors duration-500 hover:text-[#b9a06c]"
-                >
-                  Private Access
-                  <span className="pointer-events-none absolute left-0 bottom-0 h-px w-full origin-left scale-x-0 bg-[#b9a06c] transition-transform duration-500 group-hover:scale-x-100" />
-                </Link>
-              </div>
-            </div>
+        <div className="relative container mx-auto px-6 pt-12 md:pt-16 lg:pt-20 flex items-center min-h-[610px] md:min-h-[685px] lg:min-h-[780px] xl:min-h-[818px] 2xl:min-h-[838px]">
+          <div className="max-w-xl reveal">
+            <p className="text-minimal text-gold mb-4">LUXURY REAL ESTATE INSIGHTS</p>
+            <h1 className="text-3xl sm:text-2xl sm:text-4xl md:text-6xl font-display font-normal text-primary-foreground leading-[1.1] mb-6">
+              Austin Real Estate
+              <br />
+              Intelligence
+            </h1>
+            <p className="text-primary-foreground/70 text-lg max-w-lg mb-8 reveal-delayed">
+              Hyperlocal analysis, off-market strategy, and neighborhood expertise across Austin's most desirable communities.
+            </p>
+            <a
+              href="#articles"
+              onClick={(e) => { e.preventDefault(); smoothScrollTo("articles"); }}
+              className="inline-block text-minimal px-8 py-3.5 transition-all duration-300 reveal-delayed-2"
+              style={{
+                border: "1px solid hsl(var(--gold))",
+                color: "hsl(var(--gold))",
+                background: "rgba(255,255,255,0.08)",
+                backdropFilter: "blur(12px)",
+                WebkitBackdropFilter: "blur(12px)",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background = "hsl(var(--gold))";
+                e.currentTarget.style.color = "#fff";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background = "transparent";
+                e.currentTarget.style.color = "hsl(var(--gold))";
+              }}>EXPLORE ARTICLES
+            </a>
           </div>
         </div>
       </section>

@@ -54,8 +54,8 @@ const Communities = () => {
               Neighborhoods
             </h1>
             <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              A curated guide to the communities that define how Austin actually lives —
-              told by the advisors who work them every day.
+              A curated guide to the communities that define how Austin actually lives,
+              told by the advisors who work and live in them every day.
             </p>
           </div>
         </div>

@@ -70,7 +70,7 @@ const Blog = () => {
         <img
           src={heroLuxury}
           alt="Austin luxury real estate editorial"
-          className="absolute inset-0 w-full h-full object-cover scale-105 motion-safe:animate-[heroDrift_24s_ease-in-out_infinite_alternate]"
+          className="absolute inset-0 w-full h-full object-cover object-top scale-105 motion-safe:animate-[heroDrift_24s_ease-in-out_infinite_alternate]"
           loading="eager"
           decoding="async"
         />
@@ -80,7 +80,7 @@ const Blog = () => {
 
         <div className="absolute inset-0 flex items-end md:items-center">
           <div className="container mx-auto px-6 pb-16 md:pb-0">
-            <div className="max-w-xl md:max-w-2xl motion-safe:animate-[fadeUp_1.1s_ease-out_both]">
+            <div className="max-w-xl md:max-w-2xl motion-safe:animate-[fadeUp_1.1s_ease-out_both]" style={{ textShadow: '0 2px 24px rgba(0,0,0,0.55), 0 1px 4px rgba(0,0,0,0.45)' }}>
               <p className="text-[10px] tracking-[0.4em] uppercase text-[#b9a06c] mb-10 md:mb-14">
                 Luxury Real Estate Insights
               </p>

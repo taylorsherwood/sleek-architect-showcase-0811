@@ -261,6 +261,7 @@ A meaningful share of the most attractive Austin multifamily and commercial tran
 :::
 `,
   },
+  {
     id: "white-glove-real-estate-service",
     title: "White Glove Real Estate Service for Luxury Home Buyers",
     metaTitle: "White Glove Real Estate Service in Austin | Echelon Property Group",

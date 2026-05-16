@@ -32,53 +32,112 @@ const Communities = () => {
       <Navigation />
       <div className="h-12 md:h-20" />
 
-      <section className="pt-24 sm:pt-32 pb-12 sm:pb-16">
+      {/* ── Editorial Hero ── */}
+      <section className="relative overflow-hidden">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 -z-10"
+          style={{
+            background:
+              "radial-gradient(120% 80% at 50% 0%, hsl(var(--secondary) / 0.55) 0%, hsl(var(--background) / 0) 60%)",
+          }}
+        />
         <div className="container mx-auto px-5 sm:px-6">
-          <div className="max-w-7xl mx-auto">
-            <p className="text-minimal text-gold mb-3 sm:mb-4 font-extrabold">LUXURY LIVING</p>
-            <h1 className="text-3xl sm:text-3xl sm:text-5xl md:text-7xl font-display font-normal text-architectural mb-5 sm:mb-8">
-              Austin's Finest Neighborhoods
+          <div className="max-w-4xl mx-auto pt-16 sm:pt-24 pb-14 sm:pb-20 text-center animate-fade-in">
+            <div className="flex items-center justify-center gap-3 mb-5 sm:mb-6">
+              <span className="h-px w-8 sm:w-12 bg-gold/70" />
+              <p className="text-minimal text-gold font-extrabold tracking-[0.25em]">LUXURY LIVING</p>
+              <span className="h-px w-8 sm:w-12 bg-gold/70" />
+            </div>
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-display font-normal text-architectural leading-[1.05] mb-5 sm:mb-7">
+              Austin's Finest <br className="hidden sm:block" />
+              Neighborhoods
             </h1>
-            <p className="text-base sm:text-xl text-muted-foreground max-w-3xl">
-              Deep expertise in the communities that define luxury living in the Austin area. 
-              Explore the neighborhoods where we live, work, and help clients find their perfect home.
+            <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+              A curated guide to the communities that define how Austin actually lives —
+              told by the advisors who work them every day.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="pb-20 sm:pb-28">
+      {/* ── Curated Neighborhood Grid ── */}
+      <section className="pb-24 sm:pb-32">
         <div className="container mx-auto px-5 sm:px-6">
           <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-              {[...communityPages].sort((a, b) => a.name.localeCompare(b.name)).map((community) => {
+            <div className="flex items-end justify-between mb-10 sm:mb-14">
+              <div>
+                <p className="text-minimal text-gold mb-2 sm:mb-3 tracking-[0.25em]">THE COLLECTION</p>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural">
+                  Neighborhoods, considered.
+                </h2>
+              </div>
+              <div className="hidden sm:block h-px flex-1 bg-border ml-10" />
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 sm:gap-x-10 gap-y-14 sm:gap-y-20">
+              {[...communityPages].sort((a, b) => a.name.localeCompare(b.name)).map((community, idx) => {
                 const img = community.image;
+                // Editorial rhythm: vary aspect ratios + subtle vertical offset
+                const aspect =
+                  idx % 7 === 0 ? "aspect-[3/4]" :
+                  idx % 5 === 0 ? "aspect-[5/6]" :
+                  idx % 4 === 0 ? "aspect-[4/5]" :
+                  "aspect-[4/5]";
+                const offset =
+                  idx % 6 === 1 ? "lg:translate-y-10" :
+                  idx % 6 === 3 ? "lg:translate-y-16" :
+                  idx % 6 === 5 ? "lg:translate-y-6" :
+                  "";
                 return (
                   <Link
                     key={community.slug}
                     to={`/communities/${community.slug}`}
-                    className="group"
+                    className={`group block ${offset} transition-transform duration-700`}
                   >
-                    <div className="overflow-hidden mb-4">
+                    <div className="relative overflow-hidden bg-secondary shadow-[0_1px_2px_hsl(var(--foreground)/0.04)] transition-all duration-700 group-hover:-translate-y-1 group-hover:shadow-[0_30px_60px_-30px_hsl(var(--foreground)/0.25)]">
                       {img ? (
                         <img
                           src={img}
                           alt={`Luxury homes for sale in ${community.name}, Austin Texas`}
                           title={`${community.name} homes for sale — Austin luxury real estate`}
-                          className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
+                          className={`w-full ${aspect} object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.06]`}
                           loading="lazy" decoding="async"
                         />
                       ) : (
-                        <div className="w-full aspect-[4/3] bg-secondary flex items-center justify-center">
+                        <div className={`w-full ${aspect} bg-secondary flex items-center justify-center`}>
                           <span className="text-muted-foreground text-sm">{community.name}</span>
                         </div>
                       )}
+                      {/* Cinematic lower-third gradient */}
+                      <div
+                        aria-hidden="true"
+                        className="pointer-events-none absolute inset-x-0 bottom-0 h-1/2 opacity-70 group-hover:opacity-90 transition-opacity duration-700"
+                        style={{
+                          background:
+                            "linear-gradient(to top, hsl(var(--foreground) / 0.55) 0%, hsl(var(--foreground) / 0) 100%)",
+                        }}
+                      />
+                      {/* Overlay badge */}
+                      <div className="absolute top-4 left-4 sm:top-5 sm:left-5">
+                        <span className="text-[10px] sm:text-[11px] tracking-[0.25em] text-background/90 font-medium">
+                          {community.priceRange}
+                        </span>
+                      </div>
+                      {/* Overlaid name */}
+                      <div className="absolute inset-x-0 bottom-0 p-5 sm:p-6">
+                        <h3 className="text-xl sm:text-2xl md:text-[1.7rem] font-display font-normal text-background leading-tight transition-transform duration-700 group-hover:-translate-y-1">
+                          {community.name}
+                        </h3>
+                      </div>
                     </div>
-                    <p className="text-minimal text-gold mb-1.5 sm:mb-2">{community.priceRange}</p>
-                    <h2 className="text-xl sm:text-2xl font-display font-normal text-architectural group-hover:text-muted-foreground transition-colors duration-300 mb-1.5 sm:mb-2">
-                      {community.name}
-                    </h2>
-                    <p className="text-minimal text-muted-foreground">EXPLORE COMMUNITY →</p>
+                    <div className="pt-4 sm:pt-5 flex items-center gap-3">
+                      <span className="relative inline-block text-minimal text-foreground tracking-[0.2em]">
+                        EXPLORE COMMUNITY
+                        <span className="absolute -bottom-1 left-0 h-px w-0 bg-gold transition-all duration-500 group-hover:w-full" />
+                      </span>
+                      <span className="text-gold transition-transform duration-500 group-hover:translate-x-1">→</span>
+                    </div>
                   </Link>
                 );
               })}

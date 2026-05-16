@@ -69,7 +69,7 @@ const Communities = () => {
               <div>
                 <p className="text-minimal text-gold mb-2 sm:mb-3 tracking-[0.25em]">THE COLLECTION</p>
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural">
-                  Austin: at the micro market level
+                  the micro markets of Austin
                 </h2>
               </div>
               <div className="hidden sm:block h-px flex-1 bg-border ml-10" />

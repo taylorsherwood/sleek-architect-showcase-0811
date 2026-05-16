@@ -18,6 +18,25 @@ const formatDate = (dateStr: string) => {
   return `${m}/${d}/${y}`;
 };
 
+const smoothScrollTo = (elementId: string) => {
+  const target = document.getElementById(elementId);
+  if (!target) return;
+  const start = window.scrollY;
+  const end = target.getBoundingClientRect().top + window.scrollY - 80;
+  const distance = end - start;
+  const duration = 1600;
+  let startTime: number | null = null;
+  const easeInOutCubic = (t: number) =>
+    t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+  const step = (timestamp: number) => {
+    if (!startTime) startTime = timestamp;
+    const progress = Math.min((timestamp - startTime) / duration, 1);
+    window.scrollTo(0, start + distance * easeInOutCubic(progress));
+    if (progress < 1) requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
+};
+
 const Blog = () => {
   const [activeCategory, setActiveCategory] = useState("ALL");
 
@@ -93,6 +112,7 @@ const Blog = () => {
               <div className="flex items-center gap-7 md:gap-9">
                 <a
                   href="#articles"
+                  onClick={(e) => { e.preventDefault(); smoothScrollTo("articles"); }}
                   className="group relative inline-flex items-center text-[11px] tracking-[0.25em] uppercase text-background pb-2 transition-colors duration-500 hover:text-[#b9a06c]"
                 >
                   Explore Articles

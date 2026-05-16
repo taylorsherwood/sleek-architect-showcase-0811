@@ -312,7 +312,7 @@ const Buy = () => {
           <img src={heroImg} alt="Luxury home in Austin Texas" title="Austin luxury real estate — buyer services" className="w-full h-full object-cover" loading="eager" decoding="async" />
           <div className="absolute inset-0 bg-[#0C0F24]/60" />
         </div>
-        <div className="relative container mx-auto px-6 pt-24 md:pt-32 lg:pt-36">
+        <div className="relative container mx-auto px-6 pt-12 md:pt-16 lg:pt-20">
           <div className="max-w-xl">
             <p className="text-minimal text-gold mb-4 reveal">BUYER SERVICES</p>
             <h1 className="text-3xl sm:text-2xl sm:text-4xl md:text-6xl font-display font-normal text-primary-foreground leading-[1.1] mb-6 reveal">

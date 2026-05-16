@@ -370,7 +370,7 @@ If you are considering [buying](/buy) or [selling](/sell) a luxury property in A
     author: "Taylor Sherwood",
     date: "2026-05-16",
     readTime: "11 min read",
-    category: "BUYER STRATEGY",
+    category: "RELOCATION",
     image: blogWhiteGloveService,
     heroImage: blogWhiteGloveService,
   },

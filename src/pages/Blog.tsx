@@ -7,7 +7,7 @@ import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { realEstateAgentSchema, createBreadcrumbSchema, createFAQSchema } from "@/components/SchemaMarkup";
 import { blogPosts } from "@/data/blogPosts";
 import { seoBlogPosts } from "@/data/seoBlogPosts";
-import heroLuxury from "@/assets/hero-luxury-austin.jpg";
+import heroLuxury from "@/assets/blog-hero-pennybacker.jpg";
 
 const allPosts = [...seoBlogPosts, ...blogPosts].sort(
   (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
@@ -66,7 +66,7 @@ const Blog = () => {
       <Navigation />
 
       {/* ── Cinematic Editorial Hero ── */}
-      <section className="relative w-full h-[62vh] min-h-[480px] md:h-[72vh] md:min-h-[600px] overflow-hidden">
+      <section className="relative w-full min-h-[640px] md:min-h-[720px] lg:h-[820px] xl:h-[860px] 2xl:h-[880px] overflow-hidden">
         <img
           src={heroLuxury}
           alt="Austin luxury real estate editorial"

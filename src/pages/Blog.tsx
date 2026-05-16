@@ -108,26 +108,36 @@ const Blog = () => {
             <p className="text-primary-foreground/70 text-lg max-w-lg mb-8 reveal-delayed">
               Hyperlocal analysis, off-market strategy, and neighborhood expertise across Austin's most desirable communities.
             </p>
-            <a
-              href="#articles"
-              onClick={(e) => { e.preventDefault(); smoothScrollTo("articles"); }}
-              className="inline-block text-minimal px-8 py-3.5 transition-all duration-300 reveal-delayed-2"
-              style={{
-                border: "1px solid hsl(var(--gold))",
-                color: "hsl(var(--gold))",
-                background: "rgba(255,255,255,0.08)",
-                backdropFilter: "blur(12px)",
-                WebkitBackdropFilter: "blur(12px)",
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.background = "hsl(var(--gold))";
-                e.currentTarget.style.color = "#fff";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.background = "transparent";
-                e.currentTarget.style.color = "hsl(var(--gold))";
-              }}>EXPLORE ARTICLES
-            </a>
+            <div className="flex flex-wrap items-center gap-6 reveal-delayed-2">
+              <a
+                href="#articles"
+                onClick={(e) => { e.preventDefault(); smoothScrollTo("articles"); }}
+                className="inline-block text-minimal px-8 py-3.5 transition-all duration-300"
+                style={{
+                  border: "1px solid hsl(var(--gold))",
+                  color: "hsl(var(--gold))",
+                  background: "rgba(255,255,255,0.08)",
+                  backdropFilter: "blur(12px)",
+                  WebkitBackdropFilter: "blur(12px)",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background = "hsl(var(--gold))";
+                  e.currentTarget.style.color = "#fff";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = "transparent";
+                  e.currentTarget.style.color = "hsl(var(--gold))";
+                }}>EXPLORE ARTICLES
+              </a>
+              <Link
+                to="/off-market-real-estate-austin"
+                className="group relative inline-flex items-center text-minimal text-primary-foreground/80 pb-1.5 transition-colors duration-500 hover:text-[#b9a06c]"
+              >
+                ACCESS OFF-MARKET
+                <span className="ml-3 transition-transform duration-500 group-hover:translate-x-1">→</span>
+                <span className="pointer-events-none absolute left-0 bottom-0 h-px w-full origin-left scale-x-0 bg-[#b9a06c] transition-transform duration-500 group-hover:scale-x-100" />
+              </Link>
+            </div>
           </div>
         </div>
       </section>

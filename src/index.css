@@ -1199,3 +1199,9 @@ body.hcs-immersive nav.fixed {
     animation: none !important;
   }
 }
+
+@keyframes heroDrift {
+  0%   { transform: scale(1.05) translate3d(0, 0, 0); }
+  100% { transform: scale(1.08) translate3d(-1.2%, -0.8%, 0); }
+}
+

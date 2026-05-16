@@ -66,37 +66,41 @@ const Blog = () => {
       <Navigation />
 
       {/* ── Cinematic Editorial Hero ── */}
-      <section className="relative w-full h-[65vh] min-h-[520px] md:h-[80vh] md:min-h-[640px] overflow-hidden">
+      <section className="relative w-full h-[62vh] min-h-[480px] md:h-[72vh] md:min-h-[600px] overflow-hidden">
         <img
           src={heroLuxury}
           alt="Austin luxury real estate editorial"
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover scale-105 motion-safe:animate-[heroDrift_24s_ease-in-out_infinite_alternate]"
           loading="eager"
           decoding="async"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0C0F24]/70 via-[#0C0F24]/45 to-[#0C0F24]/85" />
+        {/* Soft warm cinematic grade — no muddy blue overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-black/15 to-[#1a1410]/55" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0C0F24]/35 via-transparent to-transparent" />
+
         <div className="absolute inset-0 flex items-end md:items-center">
-          <div className="container mx-auto px-6 pb-20 md:pb-0">
-            <div className="max-w-3xl">
-              <p className="text-[10px] md:text-xs tracking-[0.3em] uppercase text-[#b9a06c] mb-5 md:mb-7">
+          <div className="container mx-auto px-6 pb-16 md:pb-0">
+            <div className="max-w-xl md:max-w-2xl motion-safe:animate-[fadeUp_1.1s_ease-out_both]">
+              <p className="text-[10px] tracking-[0.35em] uppercase text-[#b9a06c] mb-6 md:mb-8">
                 Luxury Real Estate Insights
               </p>
-              <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-normal leading-[1.05] text-background mb-6 md:mb-8">
-                Austin Real Estate Intelligence for Buyers, Sellers & Investors
+              <h1 className="text-[1.75rem] sm:text-3xl md:text-[2.5rem] lg:text-[3rem] font-display font-normal leading-[1.12] tracking-[-0.01em] text-background mb-7 md:mb-9 max-w-[18ch]">
+                Austin real estate intelligence for buyers, sellers &amp; investors.
               </h1>
-              <p className="text-base md:text-lg text-background/80 leading-relaxed max-w-2xl mb-8 md:mb-10">
-                Hyperlocal market analysis, off-market strategy, neighborhood expertise, and luxury real estate insights across Austin's most desirable communities.
+              <p className="text-[15px] md:text-base text-background/75 leading-[1.75] max-w-lg mb-10 md:mb-12">
+                Hyperlocal analysis, off-market strategy, and neighborhood expertise across Austin's most desirable communities.
               </p>
-              <div className="flex flex-wrap gap-3 md:gap-4">
+              <div className="flex items-center gap-7 md:gap-9">
                 <a
                   href="#articles"
-                  className="inline-block px-7 py-3.5 bg-background text-foreground hover:bg-[#b9a06c] hover:text-background transition-colors duration-500 text-xs tracking-[0.2em] uppercase"
+                  className="group inline-flex items-center text-[11px] tracking-[0.25em] uppercase text-background pb-2 border-b border-[#b9a06c] hover:text-[#b9a06c] transition-colors duration-500"
                 >
                   Explore Articles
+                  <span className="ml-3 transition-transform duration-500 group-hover:translate-x-1">→</span>
                 </a>
                 <Link
                   to="/off-market-real-estate-austin"
-                  className="inline-block px-7 py-3.5 border border-background/40 text-background hover:border-[#b9a06c] hover:text-[#b9a06c] transition-colors duration-500 text-xs tracking-[0.2em] uppercase"
+                  className="text-[11px] tracking-[0.25em] uppercase text-background/65 hover:text-background transition-colors duration-500"
                 >
                   Private Access
                 </Link>
@@ -106,43 +110,49 @@ const Blog = () => {
         </div>
       </section>
 
-      {/* ── Featured Insight (overlapping editorial card) ── */}
+      {/* ── Featured Insight — placed below hero with breathing room ── */}
       {featured && (
-        <section className="relative -mt-16 md:-mt-24 z-10 pb-16 md:pb-24">
+        <section className="pt-20 md:pt-32 pb-20 md:pb-28">
           <div className="container mx-auto px-6">
             <div className="max-w-6xl mx-auto">
+              <div className="flex items-end justify-between mb-10 md:mb-14">
+                <p className="text-[10px] tracking-[0.35em] uppercase text-[#b9a06c]">
+                  Featured Insight
+                </p>
+                <span className="hidden md:block text-[10px] tracking-[0.3em] uppercase text-muted-foreground/70">
+                  {featured.category}
+                </span>
+              </div>
+
               <Link
                 to={featured.href || `/blog/${featured.id}`}
-                className="group block bg-background shadow-[0_30px_80px_-40px_rgba(12,15,36,0.45)]"
+                className="group block"
               >
-                <div className="grid md:grid-cols-[1.15fr_1fr]">
-                  <div className="relative aspect-[4/3] md:aspect-auto md:h-[440px] overflow-hidden">
+                <div className="grid md:grid-cols-12 gap-8 md:gap-14 items-center">
+                  <div className="md:col-span-7 relative aspect-[5/4] md:aspect-[4/3] overflow-hidden">
                     <img
                       src={featured.image}
                       alt={`${featured.title} - Austin luxury real estate insights`}
-                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.03]"
+                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.04]"
                       loading="eager"
                       decoding="async"
                     />
                   </div>
-                  <div className="flex flex-col justify-center px-7 py-10 md:px-12 md:py-14">
-                    <p className="text-[10px] tracking-[0.3em] uppercase text-[#b9a06c] mb-5">
-                      Featured Insight · {featured.category}
-                    </p>
-                    <h2 className="text-2xl md:text-3xl lg:text-[2.25rem] font-display font-normal leading-[1.15] text-architectural mb-5 group-hover:text-foreground/80 transition-colors duration-500">
+                  <div className="md:col-span-5">
+                    <h2 className="text-[1.65rem] md:text-3xl lg:text-[2.125rem] font-display font-normal leading-[1.18] tracking-[-0.005em] text-architectural mb-6 group-hover:text-foreground/75 transition-colors duration-500">
                       {featured.title}
                     </h2>
-                    <p className="text-muted-foreground leading-relaxed line-clamp-3 mb-8 max-w-xl">
+                    <p className="text-[15px] text-muted-foreground leading-[1.8] line-clamp-3 mb-9 max-w-md">
                       {featured.excerpt}
                     </p>
-                    <div className="flex items-center gap-4 text-[11px] tracking-[0.15em] uppercase text-muted-foreground">
+                    <div className="flex items-center gap-5 text-[10px] tracking-[0.25em] uppercase text-muted-foreground">
                       <span>{formatDate(featured.date)}</span>
-                      <span className="w-1 h-1 rounded-full bg-muted-foreground/40" />
+                      <span className="w-[3px] h-[3px] rounded-full bg-muted-foreground/40" />
                       <span>{featured.readTime}</span>
-                      <span className="w-1 h-1 rounded-full bg-muted-foreground/40" />
-                      <span className="text-foreground group-hover:text-[#b9a06c] transition-colors">
-                        Read
-                      </span>
+                    </div>
+                    <div className="mt-8 inline-flex items-center text-[11px] tracking-[0.25em] uppercase text-foreground pb-1.5 border-b border-[#b9a06c] group-hover:text-[#b9a06c] transition-colors duration-500">
+                      Read Article
+                      <span className="ml-3 transition-transform duration-500 group-hover:translate-x-1">→</span>
                     </div>
                   </div>
                 </div>
@@ -151,6 +161,7 @@ const Blog = () => {
           </div>
         </section>
       )}
+
 
       {/* ── Refined Editorial Category Filter ── */}
       <section id="articles" className="pb-10 md:pb-14 scroll-mt-24">

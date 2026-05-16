@@ -85,7 +85,7 @@ const Blog = () => {
       <Navigation />
 
       {/* ── Cinematic Editorial Hero ── */}
-      <section className="relative w-full min-h-[640px] md:min-h-[720px] lg:h-[820px] xl:h-[860px] 2xl:h-[880px] overflow-hidden">
+      <section className="relative w-full min-h-[580px] md:min-h-[650px] lg:h-[740px] xl:h-[775px] 2xl:h-[795px] overflow-hidden">
         <img
           src={heroLuxury}
           alt="Austin luxury real estate editorial"

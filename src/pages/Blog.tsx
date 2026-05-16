@@ -81,13 +81,13 @@ const Blog = () => {
         <div className="absolute inset-0 flex items-end md:items-center">
           <div className="container mx-auto px-6 pb-16 md:pb-0">
             <div className="max-w-xl md:max-w-2xl motion-safe:animate-[fadeUp_1.1s_ease-out_both]">
-              <p className="text-[10px] tracking-[0.35em] uppercase text-[#b9a06c] mb-6 md:mb-8">
+              <p className="text-[10px] tracking-[0.4em] uppercase text-[#b9a06c] mb-10 md:mb-14">
                 Luxury Real Estate Insights
               </p>
-              <h1 className="text-[1.75rem] sm:text-3xl md:text-[2.5rem] lg:text-[3rem] font-display font-normal leading-[1.12] tracking-[-0.01em] text-background mb-7 md:mb-9 max-w-[18ch]">
+              <h1 className="text-[1.75rem] sm:text-3xl md:text-[2.5rem] lg:text-[3rem] font-display font-normal leading-[1.25] md:leading-[1.2] tracking-[-0.01em] text-background mb-12 md:mb-16 max-w-[18ch]">
                 Austin real estate intelligence for buyers, sellers &amp; investors.
               </h1>
-              <p className="text-[15px] md:text-base text-background/75 leading-[1.75] max-w-lg mb-10 md:mb-12">
+              <p className="text-[15px] md:text-base text-background/75 leading-[1.9] max-w-lg mb-14 md:mb-16">
                 Hyperlocal analysis, off-market strategy, and neighborhood expertise across Austin's most desirable communities.
               </p>
               <div className="flex items-center gap-7 md:gap-9">

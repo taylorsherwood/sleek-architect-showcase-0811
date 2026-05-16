@@ -7,7 +7,7 @@ import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { realEstateAgentSchema, createBreadcrumbSchema, createFAQSchema } from "@/components/SchemaMarkup";
 import { blogPosts } from "@/data/blogPosts";
 import { seoBlogPosts } from "@/data/seoBlogPosts";
-import heroLuxury from "@/assets/blog-hero-pennybacker.jpg";
+import heroLuxury from "@/assets/blog-hero-austin-skyline.jpg";
 
 const allPosts = [...seoBlogPosts, ...blogPosts].sort(
   (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()

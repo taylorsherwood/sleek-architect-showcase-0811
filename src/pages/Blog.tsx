@@ -102,7 +102,7 @@ const Blog = () => {
           <div className="max-w-xl reveal">
             <p className="text-minimal text-gold mb-4">LUXURY REAL ESTATE INSIGHTS</p>
             <h1 className="text-3xl sm:text-2xl sm:text-4xl md:text-6xl font-display font-normal text-primary-foreground leading-[1.1] mb-6">
-              Austin&nbsp;
+              Austin
               <br />
               Real Estate
               <br />

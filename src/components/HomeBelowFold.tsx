@@ -1348,7 +1348,7 @@ const EditorialInsights = () => (
                 letterSpacing: "0.015em",
               }}
             >
-              Austin Real Estate, <span className="italic">Studied.</span>
+              Real Estate, <span className="italic">Studied.</span>
             </h2>
           </ScrollReveal>
           <ScrollReveal delay={140}>

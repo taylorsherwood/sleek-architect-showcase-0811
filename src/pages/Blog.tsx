@@ -96,6 +96,7 @@ const Blog = () => {
         {/* Soft warm cinematic grade — no muddy blue overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-black/15 to-[#1a1410]/55" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#0C0F24]/35 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-[#0C0F24]/20" />
 
         <div className="relative container mx-auto px-6 pt-12 md:pt-16 lg:pt-20 flex items-center min-h-[610px] md:min-h-[685px] lg:min-h-[780px] xl:min-h-[818px] 2xl:min-h-[838px]">
           <div className="max-w-xl reveal">

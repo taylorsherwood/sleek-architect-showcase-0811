@@ -130,8 +130,44 @@ const Communities = () => {
               })}
             </div>
           </div>
+        </div>
+      </section>
 
-            <h2 className="text-3xl sm:text-2xl sm:text-4xl md:text-5xl font-display font-normal text-architectural mb-6 sm:mb-8 mt-12 sm:mt-16">
+      {/* ── Comparison + Editorial Copy ── */}
+      <section className="py-16 sm:py-24 bg-secondary">
+        <div className="container mx-auto px-5 sm:px-6">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-normal text-architectural mb-6 sm:mb-8">
+              Comparing Austin's <br /> Top Neighborhoods
+            </h2>
+            <div className="space-y-8 mb-12 sm:mb-16">
+              <div>
+                <h3 className="text-xl sm:text-2xl font-display font-normal text-architectural mb-3">
+                  Barton Creek vs West lake Hills
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Both neighborhoods share access to the top-rated Eanes ISD school district and offer homes in the $1.5M–$15M+ range. Barton Creek is ideal for buyers who want gated community security, country club amenities, and championship golf. West lake Hills suits buyers seeking larger lots, Hill Country views, and more architectural variety. Both communities deliver strong long-term appreciation.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xl sm:text-2xl font-display font-normal text-architectural mb-3">
+                  Lake Austin vs Lake Travis
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Lake Austin is a constant-level lake closer to downtown, offering the highest property values and the most exclusive waterfront lifestyle. Lake Travis is a larger, recreational lake with more diverse price points and newer lakefront developments. Both provide private docks, stunning water views, and resort-caliber living.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xl sm:text-2xl font-display font-normal text-architectural mb-3">
+                  Tarrytown vs Travis Heights for Urban Buyers
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Tarrytown offers old Austin charm with tree-lined streets, walkability to downtown, and homes from $800K to $8M+. Travis Heights appeals to buyers seeking South Congress proximity, downtown skyline views, and a more eclectic architectural character. Both are among Austin's most walkable luxury neighborhoods.
+                </p>
+              </div>
+            </div>
+
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-normal text-architectural mb-6 sm:mb-8">
               LUXURY LIVING
             </h2>
             <div className="space-y-6 text-muted-foreground leading-relaxed">

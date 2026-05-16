@@ -177,8 +177,8 @@ const Hero = () => {
           </p>
 
           {/* CTA Buttons */}
-          <div className="inline-flex flex-col items-center" style={anim("0.4s")}>
-            <div className="flex flex-col sm:flex-row gap-4">
+          <div className="inline-flex flex-col items-center w-full sm:w-auto" style={anim("0.4s")}>
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto items-stretch sm:items-center">
               <button
                 onClick={() => setBookingOpen(true)}
                 onMouseEnter={(e) => {
@@ -189,9 +189,9 @@ const Hero = () => {
                   e.currentTarget.style.background = "rgba(255,255,255,0.08)";
                   e.currentTarget.style.color = "hsl(var(--gold))";
                 }}
-                className="inline-block text-center px-8 py-3.5 cursor-pointer transition-all duration-300"
+                className="inline-block text-center px-5 py-3 sm:px-8 sm:py-3.5 cursor-pointer transition-all duration-300 text-[10px] sm:text-[11px]"
                 style={{
-                  fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 500,
+                  fontFamily: '"Jost", sans-serif', letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 500,
                   border: "1px solid hsl(var(--gold))",
                   color: "hsl(var(--gold))",
                   background: "rgba(255,255,255,0.08)",
@@ -199,12 +199,13 @@ const Hero = () => {
                   WebkitBackdropFilter: "blur(12px)",
                 }}
               >
-                BOOK A 15-MINUTE ADVISORY CALL
+                <span className="sm:hidden">Book a Call</span>
+                <span className="hidden sm:inline">Book a 15-Minute Advisory Call</span>
               </button>
               <Link to="/off-market-real-estate-austin"
-                className="inline-block text-center px-6 py-[14px]"
+                className="inline-block text-center px-5 py-3 sm:px-6 sm:py-[14px] text-[10px] sm:text-[11px]"
                 style={{
-                  fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 400,
+                  fontFamily: '"Jost", sans-serif', letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 400,
                   border: "1px solid rgba(255,255,255,0.52)", color: "rgba(255,255,255,0.95)",
                   background: "rgba(10,14,25,0.28)",
                   transform: "translateX(0) translateZ(0)", willChange: "transform, background, border-color",
@@ -213,7 +214,8 @@ const Hero = () => {
                 onMouseEnter={e => { e.currentTarget.style.transform = "translateX(3px) translateZ(0)"; e.currentTarget.style.background = "#0C0F24"; e.currentTarget.style.borderColor = "#0C0F24"; e.currentTarget.style.color = "#fff"; }}
                 onMouseLeave={e => { e.currentTarget.style.transform = "translateX(0) translateZ(0)"; e.currentTarget.style.background = "rgba(10,14,25,0.28)"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.52)"; e.currentTarget.style.color = "rgba(255,255,255,0.95)"; }}
               >
-                CONNECT ME WITH OFF-MARKET PROPERTIES →
+                <span className="sm:hidden">Off-Market Properties →</span>
+                <span className="hidden sm:inline">Connect Me With Off-Market Properties →</span>
               </Link>
             </div>
             <p style={{ ...anim("0.5s"), fontFamily: '"Jost", sans-serif', fontSize: "10px", letterSpacing: "0.12em", color: "rgba(255,255,255,0.55)", marginTop: "6px", textTransform: "uppercase", textShadow: "0 0 12px rgba(255,255,255,0.35), 0 0 24px rgba(255,255,255,0.15)", whiteSpace: "pre-wrap" }}>

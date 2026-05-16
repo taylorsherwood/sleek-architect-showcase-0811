@@ -65,7 +65,7 @@ const Communities = () => {
       <section className="pb-24 sm:pb-32">
         <div className="container mx-auto px-5 sm:px-6">
           <div className="max-w-7xl mx-auto">
-            <div className="flex items-end justify-between mb-10 sm:mb-14">
+            <div className="flex items-end justify-between mb-10 sm:mb-16">
               <div>
                 <p className="text-minimal text-gold mb-2 sm:mb-3 tracking-[0.25em]">THE COLLECTION</p>
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural">
@@ -75,33 +75,26 @@ const Communities = () => {
               <div className="hidden sm:block h-px flex-1 bg-border ml-10" />
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 sm:gap-x-10 gap-y-14 sm:gap-y-20">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 sm:gap-x-8 gap-y-12 sm:gap-y-16">
               {[...communityPages].sort((a, b) => a.name.localeCompare(b.name)).map((community, idx) => {
                 const img = community.image;
-                // Editorial rhythm: vary aspect ratios + subtle vertical offset
-                const aspect =
-                  idx % 7 === 0 ? "aspect-[3/4]" :
-                  idx % 5 === 0 ? "aspect-[5/6]" :
-                  idx % 4 === 0 ? "aspect-[4/5]" :
-                  "aspect-[4/5]";
-                const offset =
-                  idx % 6 === 1 ? "lg:translate-y-10" :
-                  idx % 6 === 3 ? "lg:translate-y-16" :
-                  idx % 6 === 5 ? "lg:translate-y-6" :
-                  "";
+                // Two intentional aspect ratios — quiet editorial rhythm
+                const aspect = idx % 3 === 1 ? "aspect-[3/4]" : "aspect-[4/5]";
+                // Very subtle vertical offset on middle column only (desktop)
+                const offset = idx % 3 === 1 ? "lg:translate-y-8" : "";
                 return (
                   <Link
                     key={community.slug}
                     to={`/communities/${community.slug}`}
-                    className={`group block ${offset} transition-transform duration-700`}
+                    className={`group block ${offset}`}
                   >
-                    <div className="relative overflow-hidden bg-secondary shadow-[0_1px_2px_hsl(var(--foreground)/0.04)] transition-all duration-700 group-hover:-translate-y-1 group-hover:shadow-[0_30px_60px_-30px_hsl(var(--foreground)/0.25)]">
+                    <div className="relative overflow-hidden bg-secondary">
                       {img ? (
                         <img
                           src={img}
                           alt={`Luxury homes for sale in ${community.name}, Austin Texas`}
                           title={`${community.name} homes for sale — Austin luxury real estate`}
-                          className={`w-full ${aspect} object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.06]`}
+                          className={`w-full ${aspect} object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.03]`}
                           loading="lazy" decoding="async"
                         />
                       ) : (
@@ -109,76 +102,34 @@ const Communities = () => {
                           <span className="text-muted-foreground text-sm">{community.name}</span>
                         </div>
                       )}
-                      {/* Cinematic lower-third gradient */}
+                      {/* Soft lower-third gradient for legibility */}
                       <div
                         aria-hidden="true"
-                        className="pointer-events-none absolute inset-x-0 bottom-0 h-1/2 opacity-70 group-hover:opacity-90 transition-opacity duration-700"
+                        className="pointer-events-none absolute inset-x-0 bottom-0 h-2/5"
                         style={{
                           background:
-                            "linear-gradient(to top, hsl(var(--foreground) / 0.55) 0%, hsl(var(--foreground) / 0) 100%)",
+                            "linear-gradient(to top, hsl(var(--foreground) / 0.45) 0%, hsl(var(--foreground) / 0) 100%)",
                         }}
                       />
-                      {/* Overlay badge */}
-                      <div className="absolute top-4 left-4 sm:top-5 sm:left-5">
-                        <span className="text-[10px] sm:text-[11px] tracking-[0.25em] text-background/90 font-medium">
-                          {community.priceRange}
-                        </span>
-                      </div>
-                      {/* Overlaid name */}
-                      <div className="absolute inset-x-0 bottom-0 p-5 sm:p-6">
-                        <h3 className="text-xl sm:text-2xl md:text-[1.7rem] font-display font-normal text-background leading-tight transition-transform duration-700 group-hover:-translate-y-1">
-                          {community.name}
-                        </h3>
-                      </div>
                     </div>
-                    <div className="pt-4 sm:pt-5 flex items-center gap-3">
-                      <span className="relative inline-block text-minimal text-foreground tracking-[0.2em]">
-                        EXPLORE COMMUNITY
+                    {/* Editorial caption block — anchored below image, not floating */}
+                    <div className="pt-5 sm:pt-6">
+                      <p className="text-[10px] sm:text-[11px] tracking-[0.25em] uppercase mb-2" style={{ color: "#b9a06c" }}>
+                        {community.priceRange}
+                      </p>
+                      <h3 className="text-xl sm:text-2xl font-display font-normal text-architectural leading-tight mb-3">
+                        {community.name}
+                      </h3>
+                      <span className="relative inline-block text-minimal text-muted-foreground tracking-[0.2em]">
+                        EXPLORE
                         <span className="absolute -bottom-1 left-0 h-px w-0 bg-gold transition-all duration-500 group-hover:w-full" />
                       </span>
-                      <span className="text-gold transition-transform duration-500 group-hover:translate-x-1">→</span>
                     </div>
                   </Link>
                 );
               })}
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* ── Neighborhood Comparison ── */}
-      <section className="py-16 sm:py-24 bg-secondary">
-        <div className="container mx-auto px-5 sm:px-6">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl sm:text-2xl sm:text-4xl md:text-5xl font-display font-normal text-architectural mb-6 sm:mb-8">
-              Comparing Austin's <br /> Top Neighborhoods
-            </h2>
-            <div className="space-y-8">
-              <div>
-                <h3 className="text-xl sm:text-2xl font-display font-normal text-architectural mb-3">
-                  Barton Creek vs West lake Hills
-                </h3>
-                <p className="text-muted-foreground leading-relaxed mb-3">
-                  Both neighborhoods share access to the top-rated Eanes ISD school district and offer homes in the $1.5M–$15M+ range. Barton Creek is ideal for buyers who want gated community security, country club amenities, and championship golf. West lake Hills suits buyers seeking larger lots, Hill Country views, and more architectural variety. Both communities deliver strong long-term appreciation.
-                </p>
-              </div>
-              <div>
-                <h3 className="text-xl sm:text-2xl font-display font-normal text-architectural mb-3">
-                  Lake Austin vs Lake Travis
-                </h3>
-                <p className="text-muted-foreground leading-relaxed mb-3">
-                  Lake Austin is a constant-level lake closer to downtown, offering the highest property values and the most exclusive waterfront lifestyle. Lake Travis is a larger, recreational lake with more diverse price points and newer lakefront developments. Both provide private docks, stunning water views, and resort-caliber living.
-                </p>
-              </div>
-              <div>
-                <h3 className="text-xl sm:text-2xl font-display font-normal text-architectural mb-3">
-                  Tarrytown vs Travis Heights for Urban Buyers
-                </h3>
-                <p className="text-muted-foreground leading-relaxed mb-3">
-                  Tarrytown offers old Austin charm with tree-lined streets, walkability to downtown, and homes from $800K to $8M+. Travis Heights appeals to buyers seeking South Congress proximity, downtown skyline views, and a more eclectic architectural character. Both are among Austin's most walkable luxury neighborhoods.
-                </p>
-              </div>
-            </div>
 
             <h2 className="text-3xl sm:text-2xl sm:text-4xl md:text-5xl font-display font-normal text-architectural mb-6 sm:mb-8 mt-12 sm:mt-16">
               LUXURY LIVING

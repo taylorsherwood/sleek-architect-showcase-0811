@@ -78,15 +78,11 @@ const Communities = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 sm:gap-x-8 gap-y-12 sm:gap-y-16">
               {[...communityPages].sort((a, b) => a.name.localeCompare(b.name)).map((community, idx) => {
                 const img = community.image;
-                // Two intentional aspect ratios — quiet editorial rhythm
-                const aspect = idx % 3 === 1 ? "aspect-[3/4]" : "aspect-[4/5]";
-                // Very subtle vertical offset on middle column only (desktop)
-                const offset = idx % 3 === 1 ? "lg:translate-y-8" : "";
                 return (
                   <Link
                     key={community.slug}
                     to={`/communities/${community.slug}`}
-                    className={`group block ${offset}`}
+                    className="group block"
                   >
                     <div className="relative overflow-hidden bg-secondary">
                       {img ? (

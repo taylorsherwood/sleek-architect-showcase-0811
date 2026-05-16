@@ -90,11 +90,11 @@ const Communities = () => {
                           src={img}
                           alt={`Luxury homes for sale in ${community.name}, Austin Texas`}
                           title={`${community.name} homes for sale — Austin luxury real estate`}
-                          className={`w-full ${aspect} object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.03]`}
+                          className={`w-full aspect-[4/5] object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.03]`}
                           loading="lazy" decoding="async"
                         />
                       ) : (
-                        <div className={`w-full ${aspect} bg-secondary flex items-center justify-center`}>
+                        <div className={`w-full aspect-[4/5] bg-secondary flex items-center justify-center`}>
                           <span className="text-muted-foreground text-sm">{community.name}</span>
                         </div>
                       )}

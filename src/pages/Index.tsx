@@ -186,7 +186,7 @@ const Hero = () => {
                   e.currentTarget.style.color = "#fff";
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.background = "rgba(255,255,255,0.08)";
+                  e.currentTarget.style.background = "rgba(10,14,25,0.55)";
                   e.currentTarget.style.color = "hsl(var(--gold))";
                 }}
                 className="inline-block text-center px-5 py-3 sm:px-8 sm:py-3.5 cursor-pointer transition-all duration-300 text-[10px] sm:text-[11px]"
@@ -194,9 +194,10 @@ const Hero = () => {
                   fontFamily: '"Jost", sans-serif', letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 500,
                   border: "1px solid hsl(var(--gold))",
                   color: "hsl(var(--gold))",
-                  background: "rgba(255,255,255,0.08)",
+                  background: "rgba(10,14,25,0.55)",
                   backdropFilter: "blur(12px)",
                   WebkitBackdropFilter: "blur(12px)",
+                  textShadow: "0 1px 2px rgba(0,0,0,0.45)",
                 }}
               >
                 <span className="sm:hidden">Book a Call</span>
@@ -206,13 +207,16 @@ const Hero = () => {
                 className="inline-block text-center px-5 py-3 sm:px-6 sm:py-[14px] text-[10px] sm:text-[11px]"
                 style={{
                   fontFamily: '"Jost", sans-serif', letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 400,
-                  border: "1px solid rgba(255,255,255,0.52)", color: "rgba(255,255,255,0.95)",
-                  background: "rgba(10,14,25,0.28)",
+                  border: "1px solid rgba(255,255,255,0.72)", color: "#fff",
+                  background: "rgba(10,14,25,0.55)",
+                  backdropFilter: "blur(12px)",
+                  WebkitBackdropFilter: "blur(12px)",
+                  textShadow: "0 1px 2px rgba(0,0,0,0.45)",
                   transform: "translateX(0) translateZ(0)", willChange: "transform, background, border-color",
                   transition: "transform 250ms ease, background 250ms ease, border-color 250ms ease",
                 }}
                 onMouseEnter={e => { e.currentTarget.style.transform = "translateX(3px) translateZ(0)"; e.currentTarget.style.background = "#0C0F24"; e.currentTarget.style.borderColor = "#0C0F24"; e.currentTarget.style.color = "#fff"; }}
-                onMouseLeave={e => { e.currentTarget.style.transform = "translateX(0) translateZ(0)"; e.currentTarget.style.background = "rgba(10,14,25,0.28)"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.52)"; e.currentTarget.style.color = "rgba(255,255,255,0.95)"; }}
+                onMouseLeave={e => { e.currentTarget.style.transform = "translateX(0) translateZ(0)"; e.currentTarget.style.background = "rgba(10,14,25,0.55)"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.72)"; e.currentTarget.style.color = "#fff"; }}
               >
                 <span className="sm:hidden">Off-Market Properties →</span>
                 <span className="hidden sm:inline">Connect Me With Off-Market Properties →</span>

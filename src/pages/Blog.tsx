@@ -93,16 +93,18 @@ const Blog = () => {
               <div className="flex items-center gap-7 md:gap-9">
                 <a
                   href="#articles"
-                  className="group inline-flex items-center text-[11px] tracking-[0.25em] uppercase text-background pb-2 border-b border-[#b9a06c] hover:text-[#b9a06c] transition-colors duration-500"
+                  className="group relative inline-flex items-center text-[11px] tracking-[0.25em] uppercase text-background pb-2 transition-colors duration-500 hover:text-[#b9a06c]"
                 >
                   Explore Articles
                   <span className="ml-3 transition-transform duration-500 group-hover:translate-x-1">→</span>
+                  <span className="pointer-events-none absolute left-0 bottom-0 h-px w-full origin-left scale-x-0 bg-[#b9a06c] transition-transform duration-500 group-hover:scale-x-100" />
                 </a>
                 <Link
                   to="/off-market-real-estate-austin"
-                  className="text-[11px] tracking-[0.25em] uppercase text-background/65 hover:text-background transition-colors duration-500"
+                  className="group relative inline-flex items-center text-[11px] tracking-[0.25em] uppercase text-background/65 pb-2 transition-colors duration-500 hover:text-[#b9a06c]"
                 >
                   Private Access
+                  <span className="pointer-events-none absolute left-0 bottom-0 h-px w-full origin-left scale-x-0 bg-[#b9a06c] transition-transform duration-500 group-hover:scale-x-100" />
                 </Link>
               </div>
             </div>

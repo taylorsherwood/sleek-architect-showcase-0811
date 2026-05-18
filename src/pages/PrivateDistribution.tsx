@@ -12,6 +12,7 @@ import {
   getFeaturedEdition,
   type BriefEdition,
 } from "@/data/privateDistribution";
+import privateCover from "@/assets/private-distribution-cover.jpg";
 
 const SITE = "https://www.echelonpropertygroup.com";
 const NAVY = "#0C0F24";
@@ -523,7 +524,7 @@ const PrivateDistributionIndex = () => {
       />
       <Navigation />
 
-      {/* ───────────── Editorial cover — light, modular, collectible ───────────── */}
+      {/* ───────────── Editorial cover — asymmetric, atmospheric ───────────── */}
       <section
         className="relative w-full overflow-hidden"
         style={{ background: PAPER, color: NAVY }}
@@ -537,11 +538,23 @@ const PrivateDistributionIndex = () => {
               "radial-gradient(ellipse at 50% 0%, rgba(185,160,108,0.07), transparent 70%)",
           }}
         />
+        {/* Ultra-faint paper grain across canvas */}
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            backgroundImage:
+              "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.06  0 0 0 0 0.14  0 0 0 0.45 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>\")",
+            backgroundSize: "240px 240px",
+            opacity: 0.05,
+            mixBlendMode: "multiply",
+          }}
+        />
 
-        <div className="relative max-w-[1140px] mx-auto px-6 md:px-12 pt-28 md:pt-36 pb-20 md:pb-28">
+        <div className="relative max-w-[1240px] mx-auto px-6 md:px-12 pt-20 md:pt-28 pb-16 md:pb-24">
           {/* Top masthead rail */}
           <div
-            className="flex items-center justify-between pb-5 mb-14 md:mb-20"
+            className="flex items-center justify-between pb-5 mb-12 md:mb-16"
             style={{ borderBottom: `1px solid rgba(12,15,36,0.10)` }}
           >
             <span
@@ -570,14 +583,14 @@ const PrivateDistributionIndex = () => {
             </span>
           </div>
 
-          {/* Cover composition: left eyebrow + headline, right meta column */}
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-y-14 md:gap-x-16">
-            <div className="md:col-span-8">
-              <div className="flex items-center gap-3 mb-6">
+          {/* Asymmetric cover: headline (7) + editorial image (5) */}
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-y-12 md:gap-x-14 items-start">
+            <div className="md:col-span-7 md:pt-6">
+              <div className="flex items-center gap-3 mb-7">
                 <span
                   aria-hidden="true"
                   className="h-px w-8"
-                  style={{ background: GOLD, opacity: 0.85 }}
+                  style={{ background: GOLD }}
                 />
                 <span
                   style={{
@@ -594,79 +607,267 @@ const PrivateDistributionIndex = () => {
               </div>
 
               <h1
-                className="mb-8 max-w-[20ch]"
+                className="mb-9"
                 style={{
                   fontFamily: '"Cinzel", serif',
                   fontWeight: 500,
-                  fontSize: "clamp(30px, 4.4vw, 50px)",
-                  letterSpacing: "0.025em",
-                  lineHeight: 1.1,
+                  fontSize: "clamp(38px, 6.2vw, 78px)",
+                  letterSpacing: "0.01em",
+                  lineHeight: 0.98,
                   color: NAVY,
                 }}
               >
-                Curated private market intelligence, edition by edition.
+                Quiet markets,
+                <br />
+                <span style={{ fontStyle: "italic", fontWeight: 400, color: GOLD_DEEP }}>
+                  carefully read.
+                </span>
               </h1>
 
               <p
-                className="max-w-[560px]"
+                className="max-w-[520px] mb-10"
                 style={{
-                  fontFamily: '"Cinzel", serif',
-                  fontStyle: "italic",
-                  fontSize: "16px",
-                  lineHeight: 1.8,
+                  fontFamily: '"Jost", sans-serif',
+                  fontSize: "15.5px",
+                  lineHeight: 1.75,
                   color: NAVY,
-                  opacity: 0.7,
-                  fontWeight: 400,
+                  opacity: 0.78,
+                  fontWeight: 300,
                 }}
               >
-                A rotating series of advisory briefings on Austin's most considered neighborhoods, off-market opportunities, and private collections — circulated to a narrow audience.
+                A rotating series of advisory briefings on the neighborhoods, off-market opportunities, and private collections worth knowing about — circulated to a narrow audience.
               </p>
-            </div>
 
-            {/* Right meta column — collectible publication chrome */}
-            <aside
-              className="md:col-span-4 md:pt-2"
-              aria-label="Publication details"
-            >
+              {/* Inline meta row — tightened utility band */}
               <div
-                className="pl-6 md:pl-8 space-y-6"
-                style={{ borderLeft: `1px solid ${RULE}` }}
+                className="flex flex-wrap items-center gap-x-7 gap-y-3 pt-6"
+                style={{ borderTop: `1px solid ${RULE}` }}
               >
                 {[
                   { k: "Series", v: "Advisory Edition" },
-                  { k: "Cadence", v: "Monthly · Rotating Markets" },
-                  { k: "Audience", v: "Qualified · By Invitation" },
-                  { k: "Format", v: "Off-Market · Editorial" },
+                  { k: "Cadence", v: "Monthly" },
+                  { k: "Audience", v: "By Invitation" },
                 ].map((row) => (
-                  <div key={row.k}>
-                    <p
+                  <div key={row.k} className="flex items-baseline gap-2">
+                    <span
                       style={{
                         fontFamily: '"Jost", sans-serif',
                         fontSize: "9px",
                         letterSpacing: "0.34em",
                         textTransform: "uppercase",
                         color: GOLD_DEEP,
-                        marginBottom: "4px",
                         fontWeight: 500,
                       }}
                     >
                       {row.k}
-                    </p>
-                    <p
+                    </span>
+                    <span
                       style={{
                         fontFamily: '"Cinzel", serif',
-                        fontSize: "13px",
-                        letterSpacing: "0.04em",
+                        fontSize: "12px",
+                        letterSpacing: "0.05em",
                         color: NAVY,
-                        fontWeight: 500,
                       }}
                     >
                       {row.v}
-                    </p>
+                    </span>
                   </div>
                 ))}
               </div>
-            </aside>
+            </div>
+
+            {/* Right editorial image — asymmetric, framed */}
+            <div className="md:col-span-5 relative">
+              <div className="relative">
+                {/* Gold register lines, top-left & bottom-right */}
+                <span
+                  aria-hidden="true"
+                  className="absolute -top-3 -left-3 w-6 h-px"
+                  style={{ background: GOLD }}
+                />
+                <span
+                  aria-hidden="true"
+                  className="absolute -top-3 -left-3 h-6 w-px"
+                  style={{ background: GOLD }}
+                />
+                <span
+                  aria-hidden="true"
+                  className="absolute -bottom-3 -right-3 w-6 h-px"
+                  style={{ background: GOLD }}
+                />
+                <span
+                  aria-hidden="true"
+                  className="absolute -bottom-3 -right-3 h-6 w-px"
+                  style={{ background: GOLD }}
+                />
+
+                <div
+                  className="relative overflow-hidden"
+                  style={{
+                    aspectRatio: "4 / 5",
+                    background: NAVY,
+                  }}
+                >
+                  <img
+                    src={privateCover}
+                    alt=""
+                    width={1024}
+                    height={1280}
+                    className="absolute inset-0 w-full h-full object-cover will-change-transform"
+                    style={{
+                      filter: "grayscale(0.15) contrast(1.02)",
+                      animation: "pdCoverDrift 28s ease-in-out infinite alternate",
+                    }}
+                  />
+                  {/* Warm vignette */}
+                  <div
+                    aria-hidden="true"
+                    className="absolute inset-0 pointer-events-none"
+                    style={{
+                      background:
+                        "linear-gradient(180deg, rgba(12,15,36,0) 55%, rgba(12,15,36,0.35) 100%)",
+                    }}
+                  />
+                  {/* Caption — bottom-left */}
+                  <div className="absolute left-5 bottom-5 right-5">
+                    <p
+                      style={{
+                        fontFamily: '"Jost", sans-serif',
+                        fontSize: "9px",
+                        letterSpacing: "0.36em",
+                        textTransform: "uppercase",
+                        color: "rgba(245,243,239,0.85)",
+                        fontWeight: 500,
+                      }}
+                    >
+                      Plate · {String(editions.length).padStart(2, "0")} / {String(editions.length).padStart(2, "0")}
+                    </p>
+                    <p
+                      className="mt-1"
+                      style={{
+                        fontFamily: '"Cinzel", serif',
+                        fontStyle: "italic",
+                        fontSize: "12px",
+                        color: "rgba(245,243,239,0.85)",
+                      }}
+                    >
+                      From the current edition
+                    </p>
+                  </div>
+                </div>
+
+                <p
+                  className="mt-4 md:hidden"
+                  style={{
+                    fontFamily: '"Jost", sans-serif',
+                    fontSize: "10px",
+                    letterSpacing: "0.28em",
+                    textTransform: "uppercase",
+                    color: MUTED,
+                  }}
+                >
+                  Plate from the current edition
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Subtle drift keyframes — slow, premium, never flashy */}
+        <style>{`
+          @keyframes pdCoverDrift {
+            0%   { transform: scale(1.04) translate3d(0, 0, 0); }
+            100% { transform: scale(1.07) translate3d(-1.2%, -1.2%, 0); }
+          }
+          @media (prefers-reduced-motion: reduce) {
+            [style*="pdCoverDrift"] { animation: none !important; transform: scale(1.04); }
+          }
+        `}</style>
+      </section>
+
+      {/* ───────────── Market Pulse — focal tonal band ───────────── */}
+      <section
+        className="relative w-full"
+        style={{
+          background: "#EFEAE0",
+          borderTop: `1px solid ${RULE}`,
+          borderBottom: `1px solid ${RULE}`,
+        }}
+      >
+        <div className="max-w-[1140px] mx-auto px-6 md:px-12 py-16 md:py-20 grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-14 items-center">
+          <div className="md:col-span-5">
+            <p
+              className="mb-4"
+              style={{
+                fontFamily: '"Jost", sans-serif',
+                fontSize: "10px",
+                letterSpacing: "0.36em",
+                textTransform: "uppercase",
+                color: GOLD_DEEP,
+                fontWeight: 500,
+              }}
+            >
+              Market Pulse
+            </p>
+            <p
+              style={{
+                fontFamily: '"Cinzel", serif',
+                fontWeight: 500,
+                fontSize: "clamp(64px, 8vw, 104px)",
+                lineHeight: 0.95,
+                letterSpacing: "0.005em",
+                color: NAVY,
+              }}
+            >
+              ~68<span style={{ color: GOLD_DEEP, fontStyle: "italic", fontWeight: 400 }}>%</span>
+            </p>
+            <p
+              className="mt-3 max-w-[320px]"
+              style={{
+                fontFamily: '"Jost", sans-serif',
+                fontSize: "12px",
+                letterSpacing: "0.22em",
+                textTransform: "uppercase",
+                color: MUTED,
+                lineHeight: 1.65,
+              }}
+            >
+              of featured opportunities transact before reaching the open market
+            </p>
+          </div>
+
+          <div
+            className="md:col-span-7 md:pl-14 md:border-l"
+            style={{ borderColor: RULE }}
+          >
+            <p
+              style={{
+                fontFamily: '"Cinzel", serif',
+                fontStyle: "italic",
+                fontWeight: 400,
+                fontSize: "clamp(20px, 2.2vw, 26px)",
+                lineHeight: 1.5,
+                color: NAVY,
+                letterSpacing: "0.005em",
+              }}
+            >
+              “The most considered trades in Austin rarely surface in public.
+              They are introduced — quietly, deliberately, between people who
+              already know each other's standards.”
+            </p>
+            <p
+              className="mt-6"
+              style={{
+                fontFamily: '"Jost", sans-serif',
+                fontSize: "10px",
+                letterSpacing: "0.34em",
+                textTransform: "uppercase",
+                color: GOLD_DEEP,
+                fontWeight: 500,
+              }}
+            >
+              — From the Editor's Desk
+            </p>
           </div>
         </div>
       </section>

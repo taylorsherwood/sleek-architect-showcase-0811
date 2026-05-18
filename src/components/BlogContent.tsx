@@ -60,24 +60,79 @@ const renderInline = (text: string) =>
       '<a href="$2" class="text-foreground underline underline-offset-4 decoration-accent-gold/40 hover:decoration-accent-gold transition-colors duration-300">$1</a>'
     );
 
-const renderMarkdownLine = (line: string): string => {
+const renderHeading = (line: string): string => {
   if (line.startsWith("# ")) {
-    return `<h2 class="text-3xl md:text-4xl font-light text-architectural mb-8 mt-12">${line.substring(2)}</h2>`;
+    return `<h2 class="text-3xl md:text-4xl font-light text-architectural mb-6 mt-12">${line.substring(2)}</h2>`;
   }
   if (line.startsWith("## ")) {
-    return `<h2 class="text-2xl md:text-3xl font-light text-architectural mb-6 mt-12">${line.substring(3)}</h2>`;
+    return `<h2 class="text-2xl md:text-3xl font-light text-architectural mb-5 mt-12">${line.substring(3)}</h2>`;
   }
   if (line.startsWith("### ")) {
-    return `<h3 class="text-xl md:text-2xl font-medium text-foreground mb-4 mt-8">${line.substring(4)}</h3>`;
+    return `<h3 class="text-xl md:text-2xl font-medium text-foreground mb-3 mt-8">${line.substring(4)}</h3>`;
   }
-  if (line.startsWith("- ")) {
-    return `<li class="ml-6 mb-2 leading-[1.85]">${renderInline(line.substring(2))}</li>`;
+  return "";
+};
+
+/**
+ * Render markdown body, grouping consecutive non-blank text lines into
+ * a single paragraph. Blank lines separate paragraphs. This prevents
+ * the "one-sentence-per-paragraph" gigantic spacing when source content
+ * is written line-per-sentence.
+ */
+const renderMarkdownBody = (body: string): string => {
+  const lines = body.split("\n");
+  const out: string[] = [];
+  let paraBuf: string[] = [];
+  let listBuf: string[] = [];
+
+  const flushPara = () => {
+    if (!paraBuf.length) return;
+    const text = paraBuf.join(" ").trim();
+    paraBuf = [];
+    if (!text) return;
+    if (text.startsWith("**") && text.endsWith("**") && text.indexOf("**", 2) === text.length - 2) {
+      out.push(`<p class="mb-5 leading-[1.85]"><strong class="text-foreground">${text.substring(2, text.length - 2)}</strong></p>`);
+    } else {
+      out.push(`<p class="mb-5 leading-[1.85]">${renderInline(text)}</p>`);
+    }
+  };
+
+  const flushList = () => {
+    if (!listBuf.length) return;
+    const items = listBuf.map((l) => `<li class="mb-2 leading-[1.85]">${renderInline(l)}</li>`).join("");
+    out.push(`<ul class="list-disc pl-6 mb-6 space-y-1 text-muted-foreground">${items}</ul>`);
+    listBuf = [];
+  };
+
+  for (const raw of lines) {
+    const trimmed = raw.trim();
+
+    if (trimmed.startsWith("- ")) {
+      flushPara();
+      listBuf.push(trimmed.substring(2));
+      continue;
+    }
+
+    if (trimmed === "") {
+      flushPara();
+      flushList();
+      continue;
+    }
+
+    if (raw.startsWith("# ") || raw.startsWith("## ") || raw.startsWith("### ")) {
+      flushPara();
+      flushList();
+      out.push(renderHeading(raw));
+      continue;
+    }
+
+    flushList();
+    paraBuf.push(trimmed);
   }
-  if (line.trim() === "") return "<br>";
-  if (line.startsWith("**") && line.endsWith("**")) {
-    return `<p class="mb-4 leading-[1.85]"><strong class="text-foreground">${line.substring(2, line.length - 2)}</strong></p>`;
-  }
-  return `<p class="mb-5 leading-[1.85]">${renderInline(line)}</p>`;
+
+  flushPara();
+  flushList();
+  return out.join("");
 };
 
 interface Block {

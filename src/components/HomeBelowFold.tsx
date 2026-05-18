@@ -29,6 +29,7 @@ const blogLakeAustinVsLakeTravis = new URL("@/assets/lake-travis-sunset.jpg", im
 const blogWhatIsPrivateListing = new URL("@/assets/blog-what-is-private-listing-hero.webp", import.meta.url).href;
 
 const Footer = lazy(() => import("@/components/Footer"));
+import PrivateDistributionStrip from "@/components/private-distribution/PrivateDistributionStrip";
 
 /* ─────────────────────────────────────────────
    SECTION 2 — MICRO-TRUST STRIP

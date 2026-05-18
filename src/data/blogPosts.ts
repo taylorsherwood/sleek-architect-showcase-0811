@@ -8,6 +8,7 @@ import blogOutdoorBars2026 from "@/assets/blog-austin-outdoor-bars-2026.jpg";
 import blogAustinLuxuryNeighborhoodReview from "@/assets/blog-austin-luxury-neighborhood-review.avif";
 import blogAustinLuxuryInventoryTrends from "@/assets/blog-austin-luxury-inventory-trends.jpg";
 import blogConfidentialTransactions from "@/assets/blog-confidential-property-transactions.jpg";
+import blogBestLuxuryNeighborhoods from "@/assets/blog-best-neighborhoods-luxury-homes-austin.jpg";
 
 
 export interface BlogPost {

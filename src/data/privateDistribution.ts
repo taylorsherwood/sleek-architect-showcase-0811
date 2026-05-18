@@ -7,6 +7,11 @@
  * be added by appending an object — no layout changes required.
  */
 
+import almarionImg from "@/assets/private-distribution/almarion-drive.jpg";
+import flintridgeImg from "@/assets/private-distribution/flintridge-road.jpg";
+import mistywoodImg from "@/assets/private-distribution/mistywood-drive-interior.png";
+
+
 export type BriefSectionType =
   | "observation"
   | "properties"
@@ -33,6 +38,8 @@ export interface PropertyFeature {
   description: string;
   insightLabel?: string;  // default "Why It Matters"
   insight: string;
+  image?: string;         // imported asset URL
+  imageAlt?: string;
 }
 
 export interface WatchingItem {
@@ -136,6 +143,8 @@ export const PRIVATE_DISTRIBUTION: BriefEdition[] = [
               "The Monarch — a Christopher Sanders mid-century completed in 2023, set on what was once part of the original Hatley estate, the founding grounds of Rollingwood. The architect's signature folded-hinge geometry orients every upstairs room to a full downtown skyline view, with Lake Austin in profile and the ACL main stage visible in the distance. Pool with screened lounge and fireplace, separate casita with kitchenette and laundry, infrared and hot-rock sauna, gym, dedicated office, three-car garage. Floor plan engineered to expand without compromising flow.",
             insight:
               "Sanders's final residential work. Downtown-facing trophy parcels at this scale almost never trade publicly in Rollingwood — direct access here is the differentiator.",
+            image: almarionImg,
+            imageAlt: "Living room with downtown Austin skyline view — Almarion Drive, Rollingwood",
           },
           {
             status: "Pocket Listing",
@@ -152,6 +161,8 @@ export const PRIVATE_DISTRIBUTION: BriefEdition[] = [
               "A complete gut renovation of a 1978 ranch on 2.14 acres inside West Lake Hills city limits. Vaulted ceilings with exposed beams, fluted Taj Mahal quartzite kitchen with integrated Thermador appliances, two distinct living spaces, new pool and spa. Split single-story plan with the primary suite at the rear overlooking the pool and a full in-law suite at the opposite end. Circular drive, room on the lot for a carriage house or second garage.",
             insight:
               "Two-plus acres inside West Lake Hills city limits is the rarest land profile in 78746. Finding it paired with a fully reset single-story is essentially a unicorn — these don't come back around.",
+            image: flintridgeImg,
+            imageAlt: "Renovated kitchen with quartzite island and alabaster pendants — Flintridge Road, West Lake Hills",
           },
           {
             status: "Pocket Listing",
@@ -168,6 +179,8 @@ export const PRIVATE_DISTRIBUTION: BriefEdition[] = [
               "A creek-backed Westlake home with a pool and a genuinely usable yard — the kind of lot that's increasingly hard to find at this price point. Walking distance to all three Eanes ISD schools and bikeable to Zilker. Dedicated office off the entry, main-level game room as a flexible second living space, kitchen designed to open to the backyard.",
             insight:
               "Sub-$1.8M in Westlake with a pool, a real backyard, and walking distance to all three Eanes schools is the single most demanded profile in the corridor for relocating families.",
+            image: mistywoodImg,
+            imageAlt: "Modern open-plan living and kitchen with floor-to-ceiling windows — Mistywood Drive, Westlake",
           },
         ],
       },

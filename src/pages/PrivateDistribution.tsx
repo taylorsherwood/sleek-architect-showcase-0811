@@ -119,13 +119,13 @@ const BriefHero = ({ edition }: { edition: BriefEdition }) => (
             </div>
 
             <h1
-              className="mb-8 max-w-[18ch]"
+              className="mb-9 max-w-[16ch]"
               style={{
                 fontFamily: '"Cinzel", serif',
                 fontWeight: 500,
-                fontSize: "clamp(30px, 4.2vw, 48px)",
-                letterSpacing: "0.03em",
-                lineHeight: 1.1,
+                fontSize: "clamp(32px, 4.2vw, 52px)",
+                letterSpacing: "-0.005em",
+                lineHeight: 1.02,
                 color: NAVY,
               }}
             >
@@ -133,15 +133,16 @@ const BriefHero = ({ edition }: { edition: BriefEdition }) => (
             </h1>
 
             <p
-              className="max-w-[560px]"
+              className="max-w-[520px]"
               style={{
                 fontFamily: '"Cinzel", serif',
                 fontStyle: "italic",
                 fontWeight: 400,
-                fontSize: "16px",
+                fontSize: "15.5px",
                 lineHeight: 1.8,
                 color: NAVY,
-                opacity: 0.72,
+                opacity: 0.7,
+                letterSpacing: "0.005em",
               }}
             >
               {edition.subtitle}
@@ -584,19 +585,19 @@ const PrivateDistributionIndex = () => {
           </div>
 
           {/* Asymmetric cover: headline (7) + editorial image (5) */}
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-y-12 md:gap-x-14 items-start">
-            <div className="md:col-span-7 md:pt-6">
-              <div className="flex items-center gap-3 mb-7">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-y-14 md:gap-x-16 items-start">
+            <div className="md:col-span-7 md:pt-10">
+              <div className="flex items-center gap-3 mb-8">
                 <span
                   aria-hidden="true"
-                  className="h-px w-8"
+                  className="h-px w-7"
                   style={{ background: GOLD }}
                 />
                 <span
                   style={{
                     fontFamily: '"Jost", sans-serif',
                     fontSize: "10px",
-                    letterSpacing: "0.36em",
+                    letterSpacing: "0.38em",
                     textTransform: "uppercase",
                     color: GOLD_DEEP,
                     fontWeight: 500,
@@ -607,40 +608,50 @@ const PrivateDistributionIndex = () => {
               </div>
 
               <h1
-                className="mb-9"
+                className="mb-10"
                 style={{
                   fontFamily: '"Cinzel", serif',
                   fontWeight: 500,
-                  fontSize: "clamp(38px, 6.2vw, 78px)",
-                  letterSpacing: "0.01em",
-                  lineHeight: 0.98,
+                  fontSize: "clamp(36px, 5.6vw, 72px)",
+                  letterSpacing: "-0.005em",
+                  lineHeight: 0.94,
                   color: NAVY,
                 }}
               >
                 Quiet markets,
                 <br />
-                <span style={{ fontStyle: "italic", fontWeight: 400, color: GOLD_DEEP }}>
+                <em
+                  style={{
+                    fontFamily: '"Cinzel", serif',
+                    fontStyle: "italic",
+                    fontWeight: 400,
+                    color: GOLD_DEEP,
+                    letterSpacing: "0.005em",
+                  }}
+                >
                   carefully read.
-                </span>
+                </em>
               </h1>
 
               <p
-                className="max-w-[520px] mb-10"
+                className="max-w-[460px] mb-12"
                 style={{
                   fontFamily: '"Jost", sans-serif',
-                  fontSize: "15.5px",
-                  lineHeight: 1.75,
+                  fontSize: "14.5px",
+                  lineHeight: 1.85,
                   color: NAVY,
-                  opacity: 0.78,
+                  opacity: 0.72,
                   fontWeight: 300,
                 }}
               >
-                A rotating series of advisory briefings on the neighborhoods, off-market opportunities, and private collections worth knowing about — circulated to a narrow audience.
+                A rotating series of advisory briefings on the neighborhoods,
+                off-market opportunities, and private collections worth knowing
+                about — circulated to a narrow audience.
               </p>
 
               {/* Inline meta row — tightened utility band */}
               <div
-                className="flex flex-wrap items-center gap-x-7 gap-y-3 pt-6"
+                className="flex flex-wrap items-baseline gap-x-8 gap-y-3 pt-6"
                 style={{ borderTop: `1px solid ${RULE}` }}
               >
                 {[
@@ -648,12 +659,12 @@ const PrivateDistributionIndex = () => {
                   { k: "Cadence", v: "Monthly" },
                   { k: "Audience", v: "By Invitation" },
                 ].map((row) => (
-                  <div key={row.k} className="flex items-baseline gap-2">
+                  <div key={row.k} className="flex items-baseline gap-2.5">
                     <span
                       style={{
                         fontFamily: '"Jost", sans-serif',
                         fontSize: "9px",
-                        letterSpacing: "0.34em",
+                        letterSpacing: "0.36em",
                         textTransform: "uppercase",
                         color: GOLD_DEEP,
                         fontWeight: 500,
@@ -665,7 +676,7 @@ const PrivateDistributionIndex = () => {
                       style={{
                         fontFamily: '"Cinzel", serif',
                         fontSize: "12px",
-                        letterSpacing: "0.05em",
+                        letterSpacing: "0.04em",
                         color: NAVY,
                       }}
                     >
@@ -676,28 +687,28 @@ const PrivateDistributionIndex = () => {
               </div>
             </div>
 
-            {/* Right editorial image — asymmetric, framed */}
-            <div className="md:col-span-5 relative">
-              <div className="relative">
-                {/* Gold register lines, top-left & bottom-right */}
+            {/* Right editorial image — asymmetric, framed, slightly offset */}
+            <div className="md:col-span-5 relative md:-mt-2">
+              <div className="relative md:translate-x-3">
+                {/* Slim gold register lines — top-left & bottom-right only */}
                 <span
                   aria-hidden="true"
-                  className="absolute -top-3 -left-3 w-6 h-px"
+                  className="absolute -top-2 -left-2 w-5 h-px"
                   style={{ background: GOLD }}
                 />
                 <span
                   aria-hidden="true"
-                  className="absolute -top-3 -left-3 h-6 w-px"
+                  className="absolute -top-2 -left-2 h-5 w-px"
                   style={{ background: GOLD }}
                 />
                 <span
                   aria-hidden="true"
-                  className="absolute -bottom-3 -right-3 w-6 h-px"
+                  className="absolute -bottom-2 -right-2 w-5 h-px"
                   style={{ background: GOLD }}
                 />
                 <span
                   aria-hidden="true"
-                  className="absolute -bottom-3 -right-3 h-6 w-px"
+                  className="absolute -bottom-2 -right-2 h-5 w-px"
                   style={{ background: GOLD }}
                 />
 
@@ -715,17 +726,30 @@ const PrivateDistributionIndex = () => {
                     height={1280}
                     className="absolute inset-0 w-full h-full object-cover will-change-transform"
                     style={{
-                      filter: "grayscale(0.15) contrast(1.02)",
-                      animation: "pdCoverDrift 28s ease-in-out infinite alternate",
+                      filter:
+                        "grayscale(0.28) contrast(0.92) brightness(1.02) sepia(0.08) saturate(0.92)",
+                      animation: "pdCoverDrift 36s ease-in-out infinite alternate",
                     }}
                   />
-                  {/* Warm vignette */}
+                  {/* Warm tone wash */}
+                  <div
+                    aria-hidden="true"
+                    className="absolute inset-0 pointer-events-none mix-blend-multiply"
+                    style={{
+                      background:
+                        "linear-gradient(160deg, rgba(245,238,222,0.18), rgba(12,15,36,0.0) 45%, rgba(12,15,36,0.32))",
+                    }}
+                  />
+                  {/* Film grain — fine, warm */}
                   <div
                     aria-hidden="true"
                     className="absolute inset-0 pointer-events-none"
                     style={{
-                      background:
-                        "linear-gradient(180deg, rgba(12,15,36,0) 55%, rgba(12,15,36,0.35) 100%)",
+                      backgroundImage:
+                        "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='g'><feTurbulence type='fractalNoise' baseFrequency='1.1' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.96  0 0 0 0 0.88  0 0 0 0 0.74  0 0 0 0.55 0'/></filter><rect width='100%' height='100%' filter='url(%23g)'/></svg>\")",
+                      backgroundSize: "180px 180px",
+                      opacity: 0.22,
+                      mixBlendMode: "overlay",
                     }}
                   />
                   {/* Caption — bottom-left */}
@@ -734,43 +758,42 @@ const PrivateDistributionIndex = () => {
                       style={{
                         fontFamily: '"Jost", sans-serif',
                         fontSize: "9px",
-                        letterSpacing: "0.36em",
+                        letterSpacing: "0.4em",
                         textTransform: "uppercase",
-                        color: "rgba(245,243,239,0.85)",
+                        color: "rgba(245,243,239,0.88)",
                         fontWeight: 500,
                       }}
                     >
                       Plate · {String(editions.length).padStart(2, "0")} / {String(editions.length).padStart(2, "0")}
                     </p>
                     <p
-                      className="mt-1"
+                      className="mt-1.5"
                       style={{
                         fontFamily: '"Cinzel", serif',
                         fontStyle: "italic",
-                        fontSize: "12px",
-                        color: "rgba(245,243,239,0.85)",
+                        fontWeight: 400,
+                        fontSize: "11.5px",
+                        letterSpacing: "0.02em",
+                        color: "rgba(245,243,239,0.82)",
                       }}
                     >
                       From the current edition
                     </p>
                   </div>
                 </div>
-
-                <p
-                  className="mt-4 md:hidden"
-                  style={{
-                    fontFamily: '"Jost", sans-serif',
-                    fontSize: "10px",
-                    letterSpacing: "0.28em",
-                    textTransform: "uppercase",
-                    color: MUTED,
-                  }}
-                >
-                  Plate from the current edition
-                </p>
               </div>
             </div>
           </div>
+
+          {/* Tonal bleed into the next section — smoother flow */}
+          <div
+            aria-hidden="true"
+            className="absolute inset-x-0 bottom-0 h-24 pointer-events-none"
+            style={{
+              background:
+                "linear-gradient(to bottom, transparent, rgba(239,234,224,0.55))",
+            }}
+          />
         </div>
 
         {/* Subtle drift keyframes — slow, premium, never flashy */}
@@ -785,23 +808,22 @@ const PrivateDistributionIndex = () => {
         `}</style>
       </section>
 
-      {/* ───────────── Market Pulse — focal tonal band ───────────── */}
+      {/* ───────────── Market Pulse — focal tonal band, asymmetric ───────────── */}
       <section
         className="relative w-full"
         style={{
           background: "#EFEAE0",
-          borderTop: `1px solid ${RULE}`,
           borderBottom: `1px solid ${RULE}`,
         }}
       >
-        <div className="max-w-[1140px] mx-auto px-6 md:px-12 py-16 md:py-20 grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-14 items-center">
-          <div className="md:col-span-5">
+        <div className="max-w-[1180px] mx-auto px-6 md:px-12 py-20 md:py-28 grid grid-cols-1 md:grid-cols-12 gap-y-12 md:gap-x-16 items-end">
+          <div className="md:col-span-5 md:col-start-1">
             <p
-              className="mb-4"
+              className="mb-5"
               style={{
                 fontFamily: '"Jost", sans-serif',
                 fontSize: "10px",
-                letterSpacing: "0.36em",
+                letterSpacing: "0.38em",
                 textTransform: "uppercase",
                 color: GOLD_DEEP,
                 fontWeight: 500,
@@ -813,23 +835,34 @@ const PrivateDistributionIndex = () => {
               style={{
                 fontFamily: '"Cinzel", serif',
                 fontWeight: 500,
-                fontSize: "clamp(64px, 8vw, 104px)",
-                lineHeight: 0.95,
-                letterSpacing: "0.005em",
+                fontSize: "clamp(72px, 9vw, 124px)",
+                lineHeight: 0.9,
+                letterSpacing: "-0.01em",
                 color: NAVY,
               }}
             >
-              ~68<span style={{ color: GOLD_DEEP, fontStyle: "italic", fontWeight: 400 }}>%</span>
+              ~68
+              <em
+                style={{
+                  color: GOLD_DEEP,
+                  fontStyle: "italic",
+                  fontWeight: 400,
+                  letterSpacing: 0,
+                }}
+              >
+                %
+              </em>
             </p>
             <p
-              className="mt-3 max-w-[320px]"
+              className="mt-5 max-w-[300px]"
               style={{
                 fontFamily: '"Jost", sans-serif',
-                fontSize: "12px",
-                letterSpacing: "0.22em",
+                fontSize: "11.5px",
+                letterSpacing: "0.24em",
                 textTransform: "uppercase",
                 color: MUTED,
-                lineHeight: 1.65,
+                lineHeight: 1.75,
+                fontWeight: 400,
               }}
             >
               of featured opportunities transact before reaching the open market
@@ -837,7 +870,7 @@ const PrivateDistributionIndex = () => {
           </div>
 
           <div
-            className="md:col-span-7 md:pl-14 md:border-l"
+            className="md:col-span-6 md:col-start-7 md:pl-12 md:border-l"
             style={{ borderColor: RULE }}
           >
             <p
@@ -845,10 +878,11 @@ const PrivateDistributionIndex = () => {
                 fontFamily: '"Cinzel", serif',
                 fontStyle: "italic",
                 fontWeight: 400,
-                fontSize: "clamp(20px, 2.2vw, 26px)",
-                lineHeight: 1.5,
+                fontSize: "clamp(19px, 1.95vw, 24px)",
+                lineHeight: 1.55,
                 color: NAVY,
                 letterSpacing: "0.005em",
+                opacity: 0.92,
               }}
             >
               “The most considered trades in Austin rarely surface in public.
@@ -856,11 +890,11 @@ const PrivateDistributionIndex = () => {
               already know each other's standards.”
             </p>
             <p
-              className="mt-6"
+              className="mt-7"
               style={{
                 fontFamily: '"Jost", sans-serif',
                 fontSize: "10px",
-                letterSpacing: "0.34em",
+                letterSpacing: "0.36em",
                 textTransform: "uppercase",
                 color: GOLD_DEEP,
                 fontWeight: 500,

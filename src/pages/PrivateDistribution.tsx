@@ -6,6 +6,7 @@ import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import PrivateBriefGate from "@/components/private-distribution/PrivateBriefGate";
 import BriefSectionBlock from "@/components/private-distribution/BriefSectionBlock";
+import { useAuth } from "@/hooks/useAuth";
 import {
   PRIVATE_DISTRIBUTION,
   getEditionBySlug,
@@ -418,7 +419,9 @@ const BriefBody = ({ edition }: { edition: BriefEdition }) => (
 
 const PrivateDistributionEdition = ({ edition }: { edition: BriefEdition }) => {
   const storageKey = `echelon_private_distribution_${edition.slug}`;
+  const { isAdmin } = useAuth();
   const [unlocked, setUnlocked] = useState(false);
+  const effectiveUnlocked = unlocked || isAdmin;
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -462,7 +465,7 @@ const PrivateDistributionEdition = ({ edition }: { edition: BriefEdition }) => {
       <BriefHero edition={edition} />
       <FromTheDesk edition={edition} />
 
-      {unlocked ? (
+      {effectiveUnlocked ? (
         <BriefBody edition={edition} />
       ) : (
         <PrivateBriefGate
@@ -472,7 +475,7 @@ const PrivateDistributionEdition = ({ edition }: { edition: BriefEdition }) => {
         />
       )}
 
-      {unlocked && edition.pdfUrl && (
+      {effectiveUnlocked && edition.pdfUrl && (
         <section className="w-full" style={{ background: NAVY }}>
           <div className="max-w-[820px] mx-auto px-6 md:px-12 py-14 text-center">
             <a

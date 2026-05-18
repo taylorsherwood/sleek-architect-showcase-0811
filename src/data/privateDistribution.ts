@@ -10,6 +10,7 @@
 import almarionImg from "@/assets/private-distribution/almarion-drive.jpg";
 import flintridgeImg from "@/assets/private-distribution/flintridge-road.jpg";
 import mistywoodImg from "@/assets/private-distribution/mistywood-drive.jpg";
+import westlakeModernImg from "@/assets/private-distribution/mistywood-drive-interior.png";
 
 
 export type BriefSectionType =
@@ -126,7 +127,7 @@ export const PRIVATE_DISTRIBUTION: BriefEdition[] = [
         chapter: "I",
         eyebrow: "Active · Off-Market",
         title: "Active · Off-Market",
-        count: "03 properties",
+        count: "04 properties",
         properties: [
           {
             status: "Pocket Listing",
@@ -163,6 +164,24 @@ export const PRIVATE_DISTRIBUTION: BriefEdition[] = [
               "Two-plus acres inside West Lake Hills city limits is the rarest land profile in 78746. Finding it paired with a fully reset single-story is essentially a unicorn — these don't come back around.",
             image: flintridgeImg,
             imageAlt: "Renovated kitchen with quartzite island and alabaster pendants — Flintridge Road, West Lake Hills",
+          },
+          {
+            status: "Pre-Market",
+            address: "Westlake · Modern Under $2M",
+            zone: "78746 · Eanes ISD",
+            specs: [
+              { label: "Beds", value: "3" },
+              { label: "Baths", value: "2.5" },
+              { label: "Interior", value: "2,000 sf" },
+              { label: "Built", value: "2009" },
+            ],
+            price: "$1,990,000",
+            description:
+              "A 2009 modern build inside Westlake — compact at 2,000 sf, but engineered for light and a real view from a price point that almost never holds modern, move-in ready inventory in this district. Listing brokerage releasing photos late May; we have a window to preview before the broader market sees it. Address held until launch.",
+            insight:
+              "Sub-$2M Eanes inventory disappears in days when it's actually move-in ready. Modern with views at this price point is the rarest combination in the corridor.",
+            image: westlakeModernImg,
+            imageAlt: "Modern open-plan living and kitchen with floor-to-ceiling windows — Westlake pre-market home",
           },
           {
             status: "Pocket Listing",

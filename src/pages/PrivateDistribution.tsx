@@ -547,59 +547,74 @@ const PrivateDistributionIndex = () => {
         className="relative w-full overflow-hidden"
         style={{ background: NAVY, color: PAPER }}
       >
+        {/* Ultra-subtle paper grain across navy */}
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            backgroundImage:
+              "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 0.94  0 0 0 0 0.82  0 0 0 0.5 0'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='0.55'/></svg>\")",
+            backgroundSize: "220px 220px",
+            opacity: 0.18,
+            mixBlendMode: "overlay",
+          }}
+        />
         {/* Faint diagonal grid */}
         <div
           aria-hidden="true"
           className="absolute inset-0 pointer-events-none"
           style={{
             backgroundImage:
-              "linear-gradient(to right, rgba(245,243,239,0.035) 1px, transparent 1px), linear-gradient(to bottom, rgba(245,243,239,0.025) 1px, transparent 1px)",
-            backgroundSize: "120px 120px",
+              "linear-gradient(to right, rgba(245,243,239,0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(245,243,239,0.02) 1px, transparent 1px)",
+            backgroundSize: "140px 140px",
             maskImage:
-              "radial-gradient(ellipse 80% 70% at 50% 40%, #000 35%, transparent 100%)",
+              "radial-gradient(ellipse 70% 60% at 30% 45%, #000 30%, transparent 100%)",
             WebkitMaskImage:
-              "radial-gradient(ellipse 80% 70% at 50% 40%, #000 35%, transparent 100%)",
+              "radial-gradient(ellipse 70% 60% at 30% 45%, #000 30%, transparent 100%)",
           }}
         />
-        {/* Top-right gold glow */}
+        {/* Warm spotlight glow behind headline */}
         <div
           aria-hidden="true"
           className="absolute pointer-events-none"
           style={{
-            top: "-120px",
-            right: "-120px",
-            width: "520px",
-            height: "520px",
+            top: "18%",
+            left: "-8%",
+            width: "780px",
+            height: "560px",
             background:
-              "radial-gradient(circle, rgba(185,160,108,0.18), transparent 65%)",
+              "radial-gradient(ellipse, rgba(185,160,108,0.14), rgba(185,160,108,0.045) 40%, transparent 70%)",
+            filter: "blur(20px)",
           }}
         />
-        {/* Oversized watermark */}
+        {/* Oversized watermark — embedded, blurred */}
         <span
           aria-hidden="true"
           className="absolute pointer-events-none select-none hidden md:block"
           style={{
-            bottom: "-40px",
-            left: "-30px",
+            bottom: "-60px",
+            left: "-40px",
             fontFamily: '"Cinzel", serif',
-            fontSize: "clamp(180px, 28vw, 320px)",
+            fontSize: "clamp(180px, 30vw, 360px)",
             lineHeight: 0.82,
             letterSpacing: "0.02em",
             color: PAPER,
-            opacity: 0.025,
+            opacity: 0.014,
             whiteSpace: "nowrap",
+            filter: "blur(1.5px)",
           }}
         >
           Private
         </span>
 
-        <div className="relative max-w-[1100px] mx-auto px-6 md:px-12 pt-36 md:pt-48 pb-24 md:pb-32">
-          {/* Top confidential rail */}
+        <div className="relative max-w-[1180px] mx-auto px-6 md:px-12 pt-36 md:pt-56 pb-28 md:pb-44">
+          {/* Top confidential rail with issue lockup */}
           <div
-            className="flex items-center justify-between pb-6 mb-12"
+            className="flex items-center justify-between pb-6 mb-16 md:mb-24"
             style={{ borderBottom: "1px solid rgba(245,243,239,0.08)" }}
           >
             <span
+              className="flex items-baseline gap-3"
               style={{
                 fontFamily: '"Jost", sans-serif',
                 fontSize: "9.5px",
@@ -609,7 +624,15 @@ const PrivateDistributionIndex = () => {
                 fontWeight: 500,
               }}
             >
-              Echelon · Private Distribution
+              <span>Echelon · Private Distribution</span>
+              <span
+                aria-hidden="true"
+                className="hidden sm:inline-block h-px w-6"
+                style={{ background: "rgba(185,160,108,0.45)" }}
+              />
+              <span className="hidden sm:inline" style={{ color: "rgba(185,160,108,0.7)" }}>
+                №&nbsp;{featured?.issueNumber?.replace(/^[^\d]*/, "") || "04"} · Vol&nbsp;II
+              </span>
             </span>
             <span
               className="hidden sm:inline"
@@ -618,26 +641,28 @@ const PrivateDistributionIndex = () => {
                 fontSize: "9.5px",
                 letterSpacing: "0.32em",
                 textTransform: "uppercase",
-                color: "rgba(245,243,239,0.45)",
+                color: "rgba(245,243,239,0.42)",
               }}
             >
-              Invitation-only · By advisory
+              Circulated privately · By advisory
             </span>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-10 md:gap-16 items-end">
-            <div>
-              <div className="flex items-center gap-3 mb-6">
+          {/* Asymmetric editorial composition */}
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-y-20 md:gap-y-0 md:gap-x-12">
+            {/* LEFT — headline & deck (cols 1-8) */}
+            <div className="md:col-span-8 md:pr-6">
+              <div className="flex items-center gap-3 mb-8">
                 <span
-                  className="h-px w-12"
+                  className="h-px w-10"
                   style={{ background: GOLD, opacity: 0.7 }}
                   aria-hidden="true"
                 />
                 <span
                   style={{
                     fontFamily: '"Jost", sans-serif',
-                    fontSize: "10.5px",
-                    letterSpacing: "0.34em",
+                    fontSize: "10px",
+                    letterSpacing: "0.36em",
                     textTransform: "uppercase",
                     color: GOLD,
                     fontWeight: 500,
@@ -647,71 +672,175 @@ const PrivateDistributionIndex = () => {
                 </span>
               </div>
               <h1
-                className="mb-8"
+                className="mb-10 max-w-[14ch]"
                 style={{
                   fontFamily: '"Cinzel", serif',
                   fontWeight: 500,
-                  fontSize: "clamp(34px, 5.6vw, 62px)",
+                  fontSize: "clamp(34px, 5.2vw, 60px)",
                   letterSpacing: "0.035em",
-                  lineHeight: 1.06,
+                  lineHeight: 1.02,
                 }}
               >
                 Private market intelligence for Austin's most guarded zip codes.
               </h1>
-              <p
-                className="max-w-[620px]"
-                style={{
-                  fontFamily: '"Cinzel", serif',
-                  fontStyle: "italic",
-                  fontSize: "17px",
-                  lineHeight: 1.75,
-                  color: "rgba(245,243,239,0.78)",
-                  fontWeight: 400,
-                }}
+
+              <div className="grid grid-cols-1 md:grid-cols-[auto_1fr] gap-x-6 gap-y-4 items-start max-w-[640px]">
+                <span
+                  aria-hidden="true"
+                  className="hidden md:block mt-3 h-px w-10"
+                  style={{ background: "rgba(185,160,108,0.55)" }}
+                />
+                <p
+                  style={{
+                    fontFamily: '"Cinzel", serif',
+                    fontStyle: "italic",
+                    fontSize: "17px",
+                    lineHeight: 1.75,
+                    color: "rgba(245,243,239,0.74)",
+                    fontWeight: 400,
+                  }}
+                >
+                  {featured?.subtitle ??
+                    "A confidential brief distributed monthly to a narrow audience of buyers, sellers, and capital allocators."}
+                </p>
+              </div>
+
+              {/* Pull-stat treatment */}
+              <div
+                className="mt-14 md:mt-20 inline-flex items-end gap-5 pl-5"
+                style={{ borderLeft: `1px solid rgba(185,160,108,0.45)` }}
               >
-                {featured?.subtitle ??
-                  "A confidential brief distributed monthly to a narrow audience of buyers, sellers, and capital allocators."}
-              </p>
+                <span
+                  style={{
+                    fontFamily: '"Cinzel", serif',
+                    fontWeight: 500,
+                    fontSize: "clamp(38px, 4.4vw, 54px)",
+                    letterSpacing: "0.02em",
+                    lineHeight: 1,
+                    color: PAPER,
+                  }}
+                >
+                  ≈ 68%
+                </span>
+                <span
+                  className="pb-2 max-w-[220px]"
+                  style={{
+                    fontFamily: '"Jost", sans-serif',
+                    fontSize: "10.5px",
+                    letterSpacing: "0.22em",
+                    textTransform: "uppercase",
+                    color: "rgba(245,243,239,0.55)",
+                    lineHeight: 1.6,
+                  }}
+                >
+                  of featured opportunities transact before reaching the open market
+                </span>
+              </div>
             </div>
 
-            {/* Right side meta card */}
-            <div
-              className="hidden md:block min-w-[220px]"
-              style={{ borderLeft: `1px solid rgba(185,160,108,0.4)` }}
-            >
-              <div className="pl-7 space-y-4">
+            {/* RIGHT — metadata panel (cols 10-12), pushed down */}
+            <div className="hidden md:block md:col-span-4 md:col-start-10 md:pt-40">
+              <div className="relative">
+                {/* Layered transparency panel */}
+                <div
+                  aria-hidden="true"
+                  className="absolute -inset-x-5 -inset-y-6 pointer-events-none"
+                  style={{
+                    background: "rgba(245,243,239,0.018)",
+                    border: "1px solid rgba(245,243,239,0.05)",
+                  }}
+                />
+                {/* Registration crosshairs */}
                 {[
-                  { k: "Frequency", v: "Monthly · Recurring" },
-                  { k: "Audience", v: "Qualified · Narrow" },
-                  { k: "Format", v: "Off-MLS · Advisory" },
-                  { k: "Origin", v: "Austin, TX" },
-                ].map((row) => (
-                  <div key={row.k}>
-                    <p
-                      style={{
-                        fontFamily: '"Jost", sans-serif',
-                        fontSize: "9px",
-                        letterSpacing: "0.32em",
-                        textTransform: "uppercase",
-                        color: "rgba(185,160,108,0.85)",
-                        marginBottom: "4px",
-                      }}
-                    >
-                      {row.k}
-                    </p>
-                    <p
-                      style={{
-                        fontFamily: '"Cinzel", serif',
-                        fontSize: "13.5px",
-                        letterSpacing: "0.04em",
-                        color: PAPER,
-                        fontWeight: 400,
-                      }}
-                    >
-                      {row.v}
-                    </p>
-                  </div>
+                  { top: -10, left: -10 },
+                  { top: -10, right: -10 },
+                  { bottom: -10, left: -10 },
+                  { bottom: -10, right: -10 },
+                ].map((p, i) => (
+                  <span
+                    key={i}
+                    aria-hidden="true"
+                    className="absolute pointer-events-none"
+                    style={{
+                      ...p,
+                      width: 9,
+                      height: 9,
+                    }}
+                  >
+                    <span
+                      className="absolute left-1/2 top-0 bottom-0 w-px -translate-x-1/2"
+                      style={{ background: "rgba(185,160,108,0.55)" }}
+                    />
+                    <span
+                      className="absolute top-1/2 left-0 right-0 h-px -translate-y-1/2"
+                      style={{ background: "rgba(185,160,108,0.55)" }}
+                    />
+                  </span>
                 ))}
+
+                <div
+                  className="relative pl-7 space-y-5"
+                  style={{ borderLeft: `1px solid rgba(185,160,108,0.4)` }}
+                >
+                  <p
+                    className="-ml-7 pl-7 pb-3 mb-1"
+                    style={{
+                      fontFamily: '"Jost", sans-serif',
+                      fontSize: "9px",
+                      letterSpacing: "0.36em",
+                      textTransform: "uppercase",
+                      color: "rgba(185,160,108,0.85)",
+                      borderBottom: "1px solid rgba(245,243,239,0.07)",
+                    }}
+                  >
+                    Memorandum · Section Index
+                  </p>
+                  {[
+                    { i: "I", k: "Frequency", v: "Monthly · Recurring" },
+                    { i: "II", k: "Audience", v: "Qualified · Narrow" },
+                    { i: "III", k: "Format", v: "Off-MLS · Advisory" },
+                    { i: "IV", k: "Origin", v: "Austin, TX" },
+                  ].map((row) => (
+                    <div key={row.k} className="grid grid-cols-[18px_1fr] gap-x-3">
+                      <span
+                        style={{
+                          fontFamily: '"Cinzel", serif',
+                          fontSize: "10px",
+                          letterSpacing: "0.18em",
+                          color: "rgba(185,160,108,0.75)",
+                          paddingTop: "2px",
+                        }}
+                      >
+                        {row.i}
+                      </span>
+                      <div>
+                        <p
+                          style={{
+                            fontFamily: '"Jost", sans-serif',
+                            fontSize: "9px",
+                            letterSpacing: "0.32em",
+                            textTransform: "uppercase",
+                            color: "rgba(185,160,108,0.85)",
+                            marginBottom: "4px",
+                          }}
+                        >
+                          {row.k}
+                        </p>
+                        <p
+                          style={{
+                            fontFamily: '"Cinzel", serif',
+                            fontSize: "13.5px",
+                            letterSpacing: "0.04em",
+                            color: PAPER,
+                            fontWeight: 400,
+                          }}
+                        >
+                          {row.v}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>

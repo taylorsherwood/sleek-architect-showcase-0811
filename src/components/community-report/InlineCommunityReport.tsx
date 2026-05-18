@@ -2,7 +2,7 @@ import { lazy, Suspense, useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { CommunityRecord } from "@/types/community";
 import { toCommunityRecord } from "@/lib/communityCoerce";
-import { isUnlocked } from "@/lib/communityUnlock";
+import { getCachedUnlock } from "@/lib/communityUnlock";
 import CommunityGate from "@/components/community-report/CommunityGate";
 import MarketSnapshot from "@/components/community-report/MarketSnapshot";
 import DemographicsPanel from "@/components/community-report/DemographicsPanel";
@@ -10,6 +10,13 @@ import SchoolsPanel from "@/components/community-report/SchoolsPanel";
 import TransitPanel from "@/components/community-report/TransitPanel";
 
 const RealScoutListings = lazy(() => import("@/components/RealScoutListings"));
+
+// Public teaser columns granted to anon. Gated columns (full_overview,
+// demographics, market_stats, schools, transit, our_take, local_highlights)
+// arrive via the get-community-report edge function after server-side
+// verification of a matching community_lead.
+const TEASER_COLUMNS =
+  "id, slug, name, city, county, hero_image_url, hero_overlay_opacity, tagline, teaser_summary, highlights, faqs, related_communities, sort_order, published, seo_title, meta_description, canonical_url, gate_enabled, gate_headline, gate_subheadline, thank_you_message, updated_at";
 
 interface InlineCommunityReportProps {
   slug: string;
@@ -21,13 +28,6 @@ interface InlineCommunityReportProps {
   hideListings?: boolean;
 }
 
-/**
- * Inline gated community report. Designed to be embedded inside an existing
- * community page (e.g. /communities/westlake-hills) without bringing its own
- * hero, navigation, or footer. Loads CMS content from Supabase. Renders a
- * conversion-focused teaser, an inline gate, and the full report once
- * unlocked (30-day device-level localStorage).
- */
 const InlineCommunityReport = ({ slug, unlockedExtras, hideListings = false }: InlineCommunityReportProps) => {
   const [community, setCommunity] = useState<CommunityRecord | null>(null);
   const [loading, setLoading] = useState(true);
@@ -39,20 +39,23 @@ const InlineCommunityReport = ({ slug, unlockedExtras, hideListings = false }: I
     setLoading(true);
     supabase
       .from("communities")
-      .select("*")
+      .select(TEASER_COLUMNS)
       .eq("slug", slug)
       .eq("published", true)
       .maybeSingle()
       .then(({ data }) => {
         if (cancelled) return;
-        setCommunity(data ? toCommunityRecord(data) : null);
+        const teaser = data ? toCommunityRecord(data) : null;
+        const cached = getCachedUnlock(slug);
+        setCommunity(cached || teaser);
+        setUnlockedState(!!cached);
         setLoading(false);
       });
-    setUnlockedState(isUnlocked(slug));
 
     const onUnlock = (e: Event) => {
-      const detail = (e as CustomEvent<{ slug?: string }>).detail;
+      const detail = (e as CustomEvent<{ slug?: string; community?: CommunityRecord }>).detail;
       if (detail?.slug === slug) {
+        if (detail.community) setCommunity(detail.community);
         setUnlockedState(true);
         setJustUnlocked(true);
       }

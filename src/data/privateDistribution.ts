@@ -9,10 +9,37 @@
 
 export type BriefSectionType =
   | "observation"
+  | "properties"
+  | "watching"
   | "trades"
   | "feature"
   | "commentary"
   | "note";
+
+export type PropertyStatus = "Pocket Listing" | "Pre-Market" | "Off-Market" | "Active";
+
+export interface PropertySpec {
+  label: string; // "Beds", "Interior", "Lot", "Built"
+  value: string; // "6", "5,519 sf", "0.73 ac", "2009"
+}
+
+export interface PropertyFeature {
+  status: PropertyStatus;
+  address: string;        // "Almarion Drive · Rollingwood"
+  zone?: string;          // "78746 · Eanes ISD"
+  specs: PropertySpec[];
+  price: string;          // "$13,900,000"
+  priceQualifier?: string;
+  description: string;
+  insightLabel?: string;  // default "Why It Matters"
+  insight: string;
+}
+
+export interface WatchingItem {
+  timeline: string;       // "Expected · 30–60 days"
+  where: string;          // "Tarrytown · West 35th area"
+  note: string;
+}
 
 export interface TradeRow {
   address: string;
@@ -21,38 +48,50 @@ export interface TradeRow {
   notes?: string;
 }
 
-export interface FeatureProperty {
-  label: string;
-  headline: string;
-  description: string;
-  meta?: string[];
+export interface SignOff {
+  name: string;
+  title: string;
+  phone?: string;
+  email?: string;
+  website?: string;
+  handle?: string;
 }
 
 export interface BriefSection {
   id: string;
   type: BriefSectionType;
+  /** Roman or numeric chapter marker for the section header (e.g. "I", "II"). */
+  chapter?: string;
   eyebrow?: string;
   title?: string;
+  /** Count chip in the section header, e.g. "04 properties". */
+  count?: string;
   body?: string;
   bullets?: string[];
+  properties?: PropertyFeature[];
+  watching?: WatchingItem[];
   trades?: TradeRow[];
-  feature?: FeatureProperty;
+  feature?: PropertyFeature;
   attribution?: string;
 }
 
 export interface BriefEdition {
   slug: string;
-  issueNumber: string;        // "No. 04"
+  volume?: string;            // "Volume I"
+  issueNumber: string;        // "Edition No. 04"
   market: string;             // "78746 · Westlake"
   edition: string;            // "May 2026 Edition"
   publishedAt: string;        // ISO date
+  watermark?: string;         // oversize watermark in hero (e.g. "78746")
   title: string;              // "The 78746 Brief"
   subtitle: string;           // editorial subhead
-  dek: string;                // 1-2 sentence teaser
-  teaserParagraphs: string[]; // shown publicly above the gate
+  dek: string;                // 1-2 sentence public teaser
+  fromTheDesk?: string;       // public "Editor's note"
   sections: BriefSection[];   // gated content
+  howThisWorks?: string;      // gated explainer near sign-off
+  signOff?: SignOff;
   closingNote?: string;
-  pdfUrl?: string;            // optional print edition
+  pdfUrl?: string;
   /** When false, the edition is hidden from the index page. */
   active?: boolean;
 }
@@ -60,83 +99,129 @@ export interface BriefEdition {
 export const PRIVATE_DISTRIBUTION: BriefEdition[] = [
   {
     slug: "78746-may-2026",
-    issueNumber: "No. 04",
-    market: "78746 · Westlake",
+    volume: "Volume I",
+    issueNumber: "Edition No. 04",
+    market: "78746 · Austin, TX",
     edition: "May 2026 Edition",
     publishedAt: "2026-05-01",
+    watermark: "78746",
     title: "The 78746 Brief",
-    subtitle: "Private market intelligence for Austin's most guarded zip code.",
-    dek: "A confidential read on Westlake, Rollingwood, and the Eanes corridor — trades closed off-market, properties whispered before listing, and the strategic posture of buyers actively in the field.",
-    teaserParagraphs: [
-      "The 78746 corridor — Westlake Hills, Rollingwood, the Eanes school footprint — continues to trade at a pace and discretion the public market never sees. This edition collects what our advisory observed over the past thirty days: properties moved without ever surfacing on the MLS, capital quietly assembled for tear-downs along Westlake Drive, and the strategic posture of the half-dozen buyers currently active above twelve million.",
-      "The brief is distributed privately to a limited list of principals, family offices, and qualified buyers and sellers. It is not indexed in full, and the underlying transaction notes are not published anywhere else.",
-    ],
+    subtitle:
+      "An off-market dossier on Westlake, Rollingwood, and the Eanes corridor — circulated only to qualified buyers.",
+    dek:
+      "An off-market dossier on Westlake, Rollingwood, and the Eanes corridor — circulated only to qualified buyers.",
+    fromTheDesk:
+      "May has been quieter on paper than the headlines suggest. Three of the four properties below never touched MLS. Two won't. Inventory in Eanes ISD is up 11% year-over-year but the homes that actually trade still go in under three weeks — the gap is real, the floor isn't moving. If something here lines up with your timing, reply to the email this came attached to.",
     sections: [
       {
-        id: "market-observation",
-        type: "observation",
-        eyebrow: "Market Observation",
-        title: "Inventory has tightened; conviction has not.",
-        body:
-          "Active listings inside the 78746 boundary fell to thirty-one homes in April, a six-year low for the spring window. Withdrawn-and-relisted activity continues to climb as sellers test private channels before re-engaging the public market. Buyer behavior has not softened in parallel — we tracked four offers above ten million written on properties never publicly marketed, all from out-of-state principals represented by Texas counsel.",
-        bullets: [
-          "Active listings: 31 (-22% YoY)",
-          "Median closed price: $4.85M (+9% YoY)",
-          "Off-market closings tracked by Echelon advisory: 11",
-          "Days from private introduction to LOI (median): 9",
+        id: "active-off-market",
+        type: "properties",
+        chapter: "I",
+        eyebrow: "Active · Off-Market",
+        title: "Active · Off-Market",
+        count: "04 properties",
+        properties: [
+          {
+            status: "Pocket Listing",
+            address: "Almarion Drive · Rollingwood",
+            zone: "78746 · Eanes ISD",
+            specs: [
+              { label: "Beds", value: "6" },
+              { label: "Baths", value: "6" },
+              { label: "Interior", value: "5,519 sf" },
+              { label: "Lot", value: "0.73 ac" },
+            ],
+            price: "$13,900,000",
+            description:
+              "The Monarch — a Christopher Sanders mid-century completed in 2023, set on what was once part of the original Hatley estate, the founding grounds of Rollingwood. The architect's signature folded-hinge geometry orients every upstairs room to a full downtown skyline view, with Lake Austin in profile and the ACL main stage visible in the distance. Pool with screened lounge and fireplace, separate casita with kitchenette and laundry, infrared and hot-rock sauna, gym, dedicated office, three-car garage. Floor plan engineered to expand without compromising flow.",
+            insight:
+              "Sanders's final residential work. Downtown-facing trophy parcels at this scale almost never trade publicly in Rollingwood — direct access here is the differentiator.",
+          },
+          {
+            status: "Pocket Listing",
+            address: "Flintridge Road · West Lake Hills",
+            zone: "78746 · Eanes ISD",
+            specs: [
+              { label: "Beds", value: "5" },
+              { label: "Baths", value: "4" },
+              { label: "Interior", value: "3,605 sf" },
+              { label: "Lot", value: "2.14 ac" },
+            ],
+            price: "$3,400,000",
+            description:
+              "A complete gut renovation of a 1978 ranch on 2.14 acres inside West Lake Hills city limits. Vaulted ceilings with exposed beams, fluted Taj Mahal quartzite kitchen with integrated Thermador appliances, two distinct living spaces, new pool and spa. Split single-story plan with the primary suite at the rear overlooking the pool and a full in-law suite at the opposite end. Circular drive, room on the lot for a carriage house or second garage.",
+            insight:
+              "Two-plus acres inside West Lake Hills city limits is the rarest land profile in 78746. Finding it paired with a fully reset single-story is essentially a unicorn — these don't come back around.",
+          },
+          {
+            status: "Pre-Market",
+            address: "Westlake · Modern Under $2M",
+            zone: "78746 · Eanes ISD",
+            specs: [
+              { label: "Beds", value: "3" },
+              { label: "Baths", value: "2.5" },
+              { label: "Interior", value: "2,000 sf" },
+              { label: "Built", value: "2009" },
+            ],
+            price: "$1,990,000",
+            description:
+              "A 2009 modern build inside Westlake — compact at 2,000 sf, but engineered for light and a real view from a price point that almost never holds modern, move-in ready inventory in this district. Listing brokerage releasing photos late May; we have a window to preview before the broader market sees it. Address held until launch.",
+            insight:
+              "Sub-$2M Eanes inventory disappears in days when it's actually move-in ready. Modern with views at this price point is the rarest combination in the corridor.",
+          },
+          {
+            status: "Pocket Listing",
+            address: "Mistywood Drive · Westlake",
+            zone: "78746 · Eanes ISD",
+            specs: [
+              { label: "Beds", value: "4" },
+              { label: "Baths", value: "2.5" },
+              { label: "Interior", value: "2,852 sf" },
+              { label: "Lot", value: "0.23 ac" },
+            ],
+            price: "$1,799,000",
+            description:
+              "A creek-backed Westlake home with a pool and a genuinely usable yard — the kind of lot that's increasingly hard to find at this price point. Walking distance to all three Eanes ISD schools and bikeable to Zilker. Dedicated office off the entry, main-level game room as a flexible second living space, kitchen designed to open to the backyard.",
+            insight:
+              "Sub-$1.8M in Westlake with a pool, a real backyard, and walking distance to all three Eanes schools is the single most demanded profile in the corridor for relocating families.",
+          },
         ],
       },
       {
-        id: "private-trades",
-        type: "trades",
-        eyebrow: "Recent Private Trades",
-        title: "Closings that did not touch the MLS.",
-        body:
-          "The following transactions were closed off-market in the trailing thirty days. Addresses are abbreviated; full street-and-folio detail is available on request to verified principals.",
-        trades: [
-          { address: "Westlake Dr · single-loaded waterfront", neighborhood: "Westlake Hills", closedPrice: "$14.8M", notes: "Tear-down basis; assembled with adjacent lot under separate entity." },
-          { address: "Toro Canyon Rd · canyon-rim estate", neighborhood: "Rollingwood", closedPrice: "$9.2M", notes: "Closed in 11 days from private introduction." },
-          { address: "Pascal Ln · architect-built contemporary", neighborhood: "Westlake Hills", closedPrice: "$7.6M", notes: "Buyer represented; seller declined to list." },
-          { address: "Bridge Way · main-basin Lake Austin", neighborhood: "Davenport/Westlake border", closedPrice: "$22.4M", notes: "Closed all-cash; principal-to-principal introduction." },
+        id: "on-the-radar",
+        type: "watching",
+        chapter: "II",
+        eyebrow: "On the Radar",
+        title: "On the Radar",
+        count: "02 properties",
+        watching: [
+          {
+            timeline: "Expected · 30–60 days",
+            where: "Tarrytown · West 35th area",
+            note:
+              "Long-time owners preparing for a downsize. Lakeview frontage, dock rights. Currently estimating $5.5–6M range; we'll see specs in 3 weeks.",
+          },
+          {
+            timeline: "Expected · Q3 2026",
+            where: "Davenport Ranch · Pascal Lane",
+            note:
+              "New build wrapping up. Spec home from a builder we've sold three times for. Likely $4.2–4.5M; pre-construction allocation possible.",
+          },
         ],
-      },
-      {
-        id: "featured-property",
-        type: "feature",
-        eyebrow: "Featured — Private Inventory",
-        title: "A property currently available off-market.",
-        feature: {
-          label: "Coming Off-Market · 78746",
-          headline: "An architecturally significant Westlake Drive estate with deepwater frontage.",
-          description:
-            "Approximately 1.4 acres of single-loaded Lake Austin frontage with a 2018 reimagining by a regionally recognized firm. The owner is prepared to entertain qualified offers between $24M and $28M without public marketing. Tours by invitation; financial qualification required prior to address disclosure.",
-          meta: [
-            "Approx. 8,400 sq ft · 5 bedrooms",
-            "1.4 acres · deepwater dock with two slips",
-            "Available without public marketing",
-          ],
-        },
-      },
-      {
-        id: "insider-commentary",
-        type: "commentary",
-        eyebrow: "Insider Commentary",
-        title: "What the public data does not show.",
-        body:
-          "Three observations from the past quarter that do not appear in any published market report. First: the most active buyer profile in 78746 is no longer the tech operator — it is the family office allocating from a sold operating business, typically structured through a Texas-domiciled LLC. Second: tear-down pricing on Westlake Drive has compressed against finished-home pricing to within roughly fifteen percent per usable acre, narrowing a gap that was historically closer to thirty. Third: a small number of long-tenured owners along the canyon rim are quietly listening to unsolicited approaches for the first time in a decade.",
-        attribution: "— Taylor Sherwood, Founding Advisor",
-      },
-      {
-        id: "editorial-note",
-        type: "note",
-        eyebrow: "Editorial Note",
-        title: "On distribution and discretion.",
-        body:
-          "This brief is shared with a narrow audience of buyers, sellers, and capital allocators with active interest in the 78746 market. Specific addresses, principals, and financial detail beyond what is published here are available only through direct introduction. To request an introduction or to receive future editions, reply to the access confirmation email.",
       },
     ],
+    howThisWorks:
+      "The Brief circulates monthly to a short list of qualified buyers. Properties on it are either off-MLS, pre-MLS, or expired inventory I can re-open quietly. If something resonates, a reply is enough — I'll share the address, full marketing materials, and we can decide together whether to pursue.",
+    signOff: {
+      name: "Taylor Sherwood",
+      title: "Principal · Echelon Property Group",
+      phone: "(512) 661-3843",
+      email: "taylor@echelonpropertygroup.com",
+      website: "echelonpropertygroup.com",
+      handle: "@TheInvestorBroker",
+    },
     closingNote:
-      "Distributed privately by Echelon Property Group. Not for redistribution. Information is believed accurate as of the publication date and is sourced from confidential transactions, principal conversations, and proprietary market tracking.",
+      "Echelon Property Group · Affiliated with eXp Realty, LLC · Texas Real Estate License #734520. This document is for the use of the named recipient only. Information believed accurate, not guaranteed.",
     active: true,
   },
 ];

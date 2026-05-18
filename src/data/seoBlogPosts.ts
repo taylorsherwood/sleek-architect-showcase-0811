@@ -2867,7 +2867,7 @@ The most sophisticated buyers and investors I'm working with are executing three
 
 **2. Teardown-Rebuild Arbitrage.** Purchasing dated homes on premium lots in <a href="/communities/rollingwood" class="text-foreground underline hover:text-muted-foreground">Rollingwood</a>, Tarrytown, and West Lake Hills, then constructing contemporary homes. The arbitrage between lot acquisition + construction cost and finished market value is $500K–$1.5M in the right locations.
 
-**3. Off-Market Acquisition.** Patient capital is waiting for motivated sellers in supply-constrained neighborhoods, transacting privately to avoid bidding competition. Our <a href="/private" class="text-foreground underline hover:text-muted-foreground">private opportunities program</a> facilitates these connections.
+**3. Off-Market Acquisition.** Patient capital is waiting for motivated sellers in supply-constrained neighborhoods, transacting privately to avoid bidding competition. Our <a href="/off-market-real-estate-austin" class="text-foreground underline hover:text-muted-foreground">private opportunities program</a> facilitates these connections.
 
 ## Risks Worth Watching
 

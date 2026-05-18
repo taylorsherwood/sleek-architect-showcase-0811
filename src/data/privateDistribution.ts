@@ -22,7 +22,7 @@ export type BriefSectionType =
   | "commentary"
   | "note";
 
-export type PropertyStatus = "Pocket Listing" | "Pre-Market" | "Off-Market" | "Active";
+export type PropertyStatus = "Private Listing" | "Pre-Market" | "Off-Market" | "Active";
 
 export interface PropertySpec {
   label: string; // "Beds", "Interior", "Lot", "Built"
@@ -130,7 +130,7 @@ export const PRIVATE_DISTRIBUTION: BriefEdition[] = [
         count: "04 properties",
         properties: [
           {
-            status: "Pocket Listing",
+            status: "Private Listing",
             address: "Almarion Drive · Rollingwood",
             zone: "78746 · Eanes ISD",
             specs: [
@@ -148,7 +148,7 @@ export const PRIVATE_DISTRIBUTION: BriefEdition[] = [
             imageAlt: "Living room with downtown Austin skyline view — Almarion Drive, Rollingwood",
           },
           {
-            status: "Pocket Listing",
+            status: "Private Listing",
             address: "Flintridge Road · West Lake Hills",
             zone: "78746 · Eanes ISD",
             specs: [
@@ -184,7 +184,7 @@ export const PRIVATE_DISTRIBUTION: BriefEdition[] = [
             imageAlt: "Modern open-plan living and kitchen with floor-to-ceiling windows — Westlake pre-market home",
           },
           {
-            status: "Pocket Listing",
+            status: "Private Listing",
             address: "Mistywood Drive · Westlake",
             zone: "78746 · Eanes ISD",
             specs: [

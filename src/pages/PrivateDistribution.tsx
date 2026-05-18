@@ -418,7 +418,9 @@ const BriefBody = ({ edition }: { edition: BriefEdition }) => (
 
 const PrivateDistributionEdition = ({ edition }: { edition: BriefEdition }) => {
   const storageKey = `echelon_private_distribution_${edition.slug}`;
+  const { isAdmin } = useAuth();
   const [unlocked, setUnlocked] = useState(false);
+  const effectiveUnlocked = unlocked || isAdmin;
 
   useEffect(() => {
     if (typeof window === "undefined") return;

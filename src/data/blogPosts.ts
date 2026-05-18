@@ -413,7 +413,7 @@ In a market increasingly defined by visibility, strategic invisibility has becom
 From <a href="/off-market-real-estate-austin" class="text-foreground underline hover:text-muted-foreground">off-market acquisitions</a> and <a href="/sell-private" class="text-foreground underline hover:text-muted-foreground">private listing strategies</a> to executive relocations and discreet negotiations, our approach is built around discretion, precision, and hyperlocal market expertise.
 
 Whether you are considering a confidential sale, seeking access to <a href="/private-opportunities" class="text-foreground underline hover:text-muted-foreground">private inventory</a>, or evaluating strategic <a href="/austin-real-estate-investment" class="text-foreground underline hover:text-muted-foreground">acquisition opportunities</a> in Austin luxury real estate, the first step is a <a href="/contact" class="text-foreground underline hover:text-muted-foreground">private conversation</a> conducted entirely on your terms.
-    \`,
+    `,
     author: "Taylor Sherwood",
     date: "2026-05-17",
     readTime: "10 min read",

@@ -196,63 +196,6 @@ const BriefHero = ({ edition }: { edition: BriefEdition }) => (
         </div>
       </div>
     </div>
-
-        {/* Two-column deck + advisory line */}
-        <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-8 md:gap-12 items-start">
-          <p
-            style={{
-              fontFamily: '"Cinzel", serif',
-              fontStyle: "italic",
-              fontWeight: 400,
-              fontSize: "17px",
-              lineHeight: 1.75,
-              color: NAVY,
-              opacity: 0.72,
-            }}
-          >
-            {edition.subtitle}
-          </p>
-          <div
-            className="md:text-right"
-            style={{
-              fontFamily: '"Jost", sans-serif',
-              fontSize: "11px",
-              letterSpacing: "0.22em",
-              textTransform: "uppercase",
-              color: GOLD_DEEP,
-              fontWeight: 500,
-              lineHeight: 1.9,
-            }}
-          >
-            Prepared by
-            <span
-              className="block mt-1"
-              style={{
-                fontFamily: '"Cinzel", serif',
-                textTransform: "none",
-                letterSpacing: "0.05em",
-                fontSize: "15px",
-                color: NAVY,
-                fontWeight: 500,
-              }}
-            >
-              {edition.signOff?.name ?? "Echelon Advisory Desk"}
-            </span>
-            <span
-              className="block mt-1"
-              style={{
-                color: MUTED,
-                fontWeight: 400,
-                letterSpacing: "0.26em",
-                fontSize: "9.5px",
-              }}
-            >
-              {edition.signOff?.title ?? "Private Market Desk"}
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
   </section>
 );
 

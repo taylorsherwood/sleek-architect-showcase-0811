@@ -17,7 +17,7 @@ import privateCover from "@/assets/private-distribution-cover.jpg";
 
 const SITE = "https://www.echelonpropertygroup.com";
 const NAVY = "#0C0F24";
-const PAPER = "#FAFAF8";
+const PAPER = "#F4EFE3";
 const GOLD = "#b9a06c";
 const GOLD_DEEP = "#8e7a4a";
 const RULE = "#d9cfb8";

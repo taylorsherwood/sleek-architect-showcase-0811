@@ -85,7 +85,7 @@ const Blog = () => {
       <Navigation />
 
       {/* ── Cinematic Editorial Hero ── */}
-      <section className="relative w-full min-h-[610px] md:min-h-[685px] lg:h-[780px] xl:h-[818px] 2xl:h-[838px] overflow-hidden">
+      <section className="relative w-full min-h-[640px] md:min-h-[720px] lg:h-[820px] xl:h-[860px] 2xl:h-[880px] overflow-hidden">
         <img
           src={heroLuxury}
           alt="Austin luxury real estate editorial"
@@ -98,7 +98,7 @@ const Blog = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-[#0C0F24]/50 via-transparent to-transparent" />
         <div className="absolute inset-0 bg-[#0C0F24]/30" />
 
-        <div className="relative container mx-auto px-6 pt-12 md:pt-16 lg:pt-20 flex items-center min-h-[610px] md:min-h-[685px] lg:min-h-[780px] xl:min-h-[818px] 2xl:min-h-[838px]">
+        <div className="relative container mx-auto px-6 pt-12 md:pt-16 lg:pt-20 flex items-center min-h-[640px] md:min-h-[720px] lg:min-h-[820px] xl:min-h-[860px] 2xl:min-h-[880px]">
           <div className="max-w-xl reveal">
             <p className="text-minimal text-gold mb-4">LUXURY REAL ESTATE INSIGHTS</p>
             <h1 className="text-3xl sm:text-2xl sm:text-4xl md:text-6xl font-display font-normal text-primary-foreground leading-[1.1] mb-6">

@@ -108,7 +108,7 @@ const PropertyCard = ({ p, isLast }: { p: PropertyFeature; isLast: boolean }) =>
     className="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-7 md:gap-8 py-10 md:py-11"
     style={{ borderBottom: isLast ? "none" : `1px solid ${RULE}` }}
   >
-    {/* Image placeholder — navy with subtle gold radial, ready for future photo */}
+    {/* Property image — falls back to navy/gold placeholder when no image provided */}
     <div
       className="w-full overflow-hidden relative"
       style={{
@@ -116,26 +116,40 @@ const PropertyCard = ({ p, isLast }: { p: PropertyFeature; isLast: boolean }) =>
         background: `linear-gradient(135deg, ${NAVY} 0%, #1a1f3a 100%)`,
         borderRadius: "2px",
       }}
-      aria-hidden="true"
     >
-      <div
-        className="absolute inset-0"
-        style={{
-          background:
-            "radial-gradient(circle at 30% 30%, rgba(185,160,108,0.15), transparent 60%)",
-        }}
-      />
-      <div
-        className="absolute inset-0 flex items-center justify-center text-center px-5"
-        style={{
-          fontFamily: '"Cinzel", serif',
-          fontSize: "10px",
-          letterSpacing: "0.32em",
-          color: GOLD,
-        }}
-      >
-        IMAGERY ON REQUEST
-      </div>
+      {p.image ? (
+        <img
+          src={p.image}
+          alt={p.imageAlt ?? p.address}
+          loading="lazy"
+          decoding="async"
+          className="absolute inset-0 w-full h-full"
+          style={{ objectFit: "cover", objectPosition: "center" }}
+        />
+      ) : (
+        <>
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                "radial-gradient(circle at 30% 30%, rgba(185,160,108,0.15), transparent 60%)",
+            }}
+            aria-hidden="true"
+          />
+          <div
+            className="absolute inset-0 flex items-center justify-center text-center px-5"
+            style={{
+              fontFamily: '"Cinzel", serif',
+              fontSize: "10px",
+              letterSpacing: "0.32em",
+              color: GOLD,
+            }}
+            aria-hidden="true"
+          >
+            IMAGERY ON REQUEST
+          </div>
+        </>
+      )}
     </div>
 
     <div className="flex flex-col">

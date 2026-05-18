@@ -48,18 +48,41 @@ export function clearLegacyUnlockFlag(slug: string): void {
   }
 }
 
+export interface UnlockSubmission {
+  first_name: string;
+  last_name: string;
+  email: string;
+  phone: string;
+  community_name: string;
+  interest?: string;
+}
+
 /**
- * Calls the get-community-report edge function. The function verifies a
- * recently-submitted community_lead and returns the full community row
- * (including gated columns). Returns null on failure.
+ * Calls the get-community-report edge function. The function inserts a
+ * community_lead and returns the full community row (including gated
+ * columns) — the gated data only ever reaches the browser through this
+ * server-verified path.
  */
 export async function fetchUnlockedReport(
   slug: string,
-  email: string,
+  submission: UnlockSubmission,
 ): Promise<CommunityRecord | null> {
   try {
+    const utm = getUtmParams();
     const { data, error } = await supabase.functions.invoke("get-community-report", {
-      body: { slug, email },
+      body: {
+        slug,
+        email: submission.email,
+        first_name: submission.first_name,
+        last_name: submission.last_name,
+        phone: submission.phone,
+        community_name: submission.community_name,
+        interest: submission.interest ?? "",
+        ...utm,
+        referrer: typeof document !== "undefined" ? document.referrer || "" : "",
+        page_url: typeof window !== "undefined" ? window.location.href : "",
+        source_tag: `Community Report - ${submission.community_name}`,
+      },
     });
     if (error || !data?.community) return null;
     const community = data.community as CommunityRecord;

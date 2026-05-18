@@ -251,12 +251,13 @@ const PropertyCard = ({ p, isLast }: { p: PropertyFeature; isLast: boolean }) =>
 
       <p
         style={{
-          fontFamily: '"Jost", sans-serif',
-          fontSize: "15px",
-          lineHeight: 1.7,
+          fontFamily: 'Georgia, "Times New Roman", serif',
+          fontSize: "15.5px",
+          lineHeight: 1.75,
           color: "#1a1a1a",
           marginBottom: "14px",
-          fontWeight: 300,
+          fontWeight: 400,
+          fontStyle: "normal",
         }}
       >
         {p.description}

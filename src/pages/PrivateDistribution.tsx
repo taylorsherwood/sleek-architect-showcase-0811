@@ -14,137 +14,347 @@ import {
 } from "@/data/privateDistribution";
 
 const SITE = "https://www.echelonpropertygroup.com";
+const NAVY = "#0C0F24";
+const PAPER = "#FAFAF8";
+const GOLD = "#b9a06c";
+const GOLD_DEEP = "#8e7a4a";
+const RULE = "#d9cfb8";
+const MUTED = "#6b6557";
 
-const formatDate = (iso: string) =>
-  new Date(iso).toLocaleDateString("en-US", {
-    month: "long",
-    year: "numeric",
-  });
+const formatMonthYear = (iso: string) =>
+  new Date(iso).toLocaleDateString("en-US", { month: "long", year: "numeric" });
 
 /* ─────────────────────────────────────────────
-   Editorial hero
+   Editorial hero — meta strip, oversized watermark,
+   centered headline, italic deck.
    ───────────────────────────────────────────── */
 
 const BriefHero = ({ edition }: { edition: BriefEdition }) => (
   <section
     className="relative w-full overflow-hidden"
-    style={{ background: "#0C0F24", color: "#F5F3EF" }}
+    style={{ background: PAPER, color: NAVY }}
   >
-    <div className="max-w-[980px] mx-auto px-6 md:px-10 pt-36 md:pt-44 pb-20 md:pb-28">
+    <div className="max-w-[880px] mx-auto px-6 md:px-12 pt-32 md:pt-40 pb-12 md:pb-16 relative">
+      {/* Oversized watermark behind the title */}
+      {edition.watermark && (
+        <span
+          aria-hidden="true"
+          className="absolute pointer-events-none select-none"
+          style={{
+            bottom: "8px",
+            right: "-6px",
+            fontFamily: '"Cinzel", serif',
+            fontWeight: 400,
+            fontSize: "clamp(110px, 22vw, 210px)",
+            lineHeight: 0.85,
+            letterSpacing: "0.02em",
+            color: NAVY,
+            opacity: 0.04,
+            whiteSpace: "nowrap",
+            zIndex: 0,
+          }}
+        >
+          {edition.watermark}
+        </span>
+      )}
+
       <div
-        className="h-px w-16 mb-8"
-        style={{ background: "rgba(184,160,109,0.6)" }}
-        aria-hidden="true"
-      />
-      <div className="flex flex-wrap items-center gap-x-6 gap-y-3 mb-8">
+        className="relative z-10 pt-4"
+        style={{ borderTop: `1px solid rgba(12,15,36,0.18)` }}
+      >
+        {/* Meta strip */}
         <p
+          className="text-center mb-8"
           style={{
             fontFamily: '"Jost", sans-serif',
-            fontSize: "10.5px",
-            letterSpacing: "0.32em",
+            fontSize: "9.5px",
+            letterSpacing: "0.36em",
             textTransform: "uppercase",
-            color: "#b9a06c",
+            color: MUTED,
+            opacity: 0.85,
+            paddingTop: "14px",
           }}
         >
-          Private Distribution · {edition.issueNumber}
+          {[edition.volume, edition.issueNumber, formatMonthYear(edition.publishedAt), "Austin, TX"]
+            .filter(Boolean)
+            .map((v, i, arr) => (
+              <span key={i}>
+                {v}
+                {i < arr.length - 1 && (
+                  <span className="mx-2 opacity-60" aria-hidden="true">·</span>
+                )}
+              </span>
+            ))}
         </p>
-        <p
+
+        {/* Eyebrow with trailing gold rule */}
+        <div className="flex items-center gap-3.5 mb-6 md:mb-7">
+          <span
+            style={{
+              fontFamily: '"Jost", sans-serif',
+              fontSize: "10px",
+              letterSpacing: "0.44em",
+              textTransform: "uppercase",
+              color: GOLD_DEEP,
+              fontWeight: 500,
+              whiteSpace: "nowrap",
+            }}
+          >
+            Private Distribution
+          </span>
+          <span
+            aria-hidden="true"
+            className="flex-1 max-w-[120px] h-px"
+            style={{ background: GOLD, opacity: 0.55 }}
+          />
+        </div>
+
+        {/* Headline — centered, dominant */}
+        <h1
+          className="text-center mb-8 md:mb-10"
           style={{
-            fontFamily: '"Jost", sans-serif',
-            fontSize: "10.5px",
-            letterSpacing: "0.22em",
-            textTransform: "uppercase",
-            color: "rgba(245,243,239,0.55)",
+            fontFamily: '"Cinzel", serif',
+            fontWeight: 500,
+            fontSize: "clamp(36px, 7vw, 66px)",
+            letterSpacing: "0.045em",
+            lineHeight: 1.05,
+            color: NAVY,
+            margin: "0 0 38px",
           }}
         >
-          {edition.market} · {formatDate(edition.publishedAt)}
-        </p>
+          {edition.title}
+        </h1>
+
+        {/* Deck — right-offset italic */}
+        <div className="flex md:justify-end">
+          <p
+            className="max-w-full md:max-w-[360px] md:pr-2"
+            style={{
+              fontFamily: '"Cinzel", serif',
+              fontStyle: "italic",
+              fontWeight: 400,
+              fontSize: "16px",
+              lineHeight: 1.75,
+              color: NAVY,
+              opacity: 0.62,
+              textAlign: "left",
+            }}
+          >
+            {edition.subtitle}
+          </p>
+        </div>
       </div>
-      <h1
-        className="font-display text-[40px] md:text-[64px] lg:text-[72px] leading-[1.05] mb-8"
-        style={{ fontWeight: 400, letterSpacing: "0.005em" }}
-      >
-        {edition.title}
-      </h1>
-      <p
-        className="max-w-[640px] text-[17px] md:text-[20px] leading-[1.55]"
-        style={{
-          fontFamily: '"Jost", sans-serif',
-          color: "rgba(245,243,239,0.85)",
-          fontWeight: 300,
-        }}
-      >
-        {edition.subtitle}
-      </p>
     </div>
   </section>
 );
 
-/* ─────────────────────────────────────────────
-   Teaser (always public, indexable)
-   ───────────────────────────────────────────── */
+/* ─── Editor's note (public, indexable teaser) ─── */
 
-const BriefTeaser = ({ edition }: { edition: BriefEdition }) => (
-  <section className="w-full" style={{ background: "#F5F3EF" }}>
-    <div className="max-w-[760px] mx-auto px-6 md:px-10 py-20 md:py-28">
-      <p
-        className="font-display text-[22px] md:text-[26px] leading-[1.55] mb-10"
-        style={{ color: "#0C0F24", fontWeight: 400, fontStyle: "italic" }}
-      >
-        {edition.dek}
-      </p>
-      <div className="space-y-7">
-        {edition.teaserParagraphs.map((p, i) => (
+const FromTheDesk = ({ edition }: { edition: BriefEdition }) => {
+  if (!edition.fromTheDesk) return null;
+  return (
+    <section className="w-full" style={{ background: PAPER }}>
+      <div className="max-w-[880px] mx-auto px-6 md:px-12 py-10 md:py-14">
+        <div
+          className="pl-6 md:pl-7"
+          style={{ borderLeft: `1px solid ${GOLD}`, maxWidth: 720 }}
+        >
+          <span
+            className="block mb-3"
+            style={{
+              fontFamily: '"Jost", sans-serif',
+              fontSize: "10px",
+              letterSpacing: "0.32em",
+              textTransform: "uppercase",
+              color: GOLD_DEEP,
+              fontWeight: 500,
+            }}
+          >
+            From the Desk
+          </span>
           <p
-            key={i}
             style={{
               fontFamily: '"Jost", sans-serif',
               fontSize: "16.5px",
               lineHeight: 1.85,
-              color: "rgba(12,15,36,0.82)",
+              color: NAVY,
+              opacity: 0.9,
               fontWeight: 300,
             }}
           >
-            {p}
+            {edition.fromTheDesk}
           </p>
-        ))}
+        </div>
       </div>
+    </section>
+  );
+};
+
+/* ─── Gated: full sections + how-this-works + sign-off ─── */
+
+const HowThisWorks = ({ text }: { text: string }) => (
+  <section className="w-full" style={{ background: PAPER }}>
+    <div className="max-w-[820px] mx-auto px-6 md:px-12 py-14 md:py-16">
+      <h3
+        className="mb-5"
+        style={{
+          fontFamily: '"Cinzel", serif',
+          fontWeight: 500,
+          fontSize: "16px",
+          letterSpacing: "0.28em",
+          textTransform: "uppercase",
+          color: NAVY,
+        }}
+      >
+        How This Works
+      </h3>
+      <p
+        style={{
+          fontFamily: '"Jost", sans-serif',
+          fontSize: "16px",
+          lineHeight: 1.75,
+          color: "#1a1a1a",
+          fontWeight: 300,
+          maxWidth: 680,
+        }}
+      >
+        {text}
+      </p>
     </div>
   </section>
 );
 
-/* ─────────────────────────────────────────────
-   Locked sections (rendered only after unlock)
-   ───────────────────────────────────────────── */
+const SignOffBlock = ({ edition }: { edition: BriefEdition }) => {
+  if (!edition.signOff) return null;
+  const s = edition.signOff;
+  return (
+    <section className="w-full" style={{ background: PAPER }}>
+      <div
+        className="max-w-[820px] mx-auto px-6 md:px-12 pt-10 md:pt-12 pb-10"
+        style={{ borderTop: `3px solid ${NAVY}` }}
+      >
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+          <div>
+            <h3
+              className="mb-3.5"
+              style={{
+                fontFamily: '"Cinzel", serif',
+                fontWeight: 500,
+                fontSize: "16px",
+                letterSpacing: "0.22em",
+                textTransform: "uppercase",
+                color: NAVY,
+              }}
+            >
+              Reply to discuss
+            </h3>
+            <p
+              style={{
+                fontFamily: '"Jost", sans-serif',
+                fontSize: "15px",
+                lineHeight: 1.65,
+                color: "#1a1a1a",
+                fontWeight: 300,
+              }}
+            >
+              Reply to the email this came attached to, or contact directly using the details opposite. Each conversation is held in confidence.
+            </p>
+          </div>
+          <div className="md:text-right">
+            <p
+              style={{
+                fontFamily: '"Cinzel", serif',
+                fontWeight: 500,
+                fontSize: "18px",
+                letterSpacing: "0.06em",
+                color: NAVY,
+                marginBottom: "6px",
+              }}
+            >
+              {s.name}
+            </p>
+            <p
+              className="mb-4"
+              style={{
+                fontFamily: '"Jost", sans-serif',
+                fontSize: "10px",
+                letterSpacing: "0.28em",
+                textTransform: "uppercase",
+                color: MUTED,
+              }}
+            >
+              {s.title}
+            </p>
+            <div
+              className="space-y-1.5"
+              style={{
+                fontFamily: '"Jost", sans-serif',
+                fontSize: "13px",
+                color: NAVY,
+                lineHeight: 1.7,
+              }}
+            >
+              {s.phone && (
+                <div>
+                  <a href={`tel:${s.phone.replace(/[^0-9+]/g, "")}`} style={{ color: NAVY, borderBottom: `1px solid ${GOLD}` }}>
+                    {s.phone}
+                  </a>
+                </div>
+              )}
+              {s.email && (
+                <div>
+                  <a href={`mailto:${s.email}`} style={{ color: NAVY, borderBottom: `1px solid ${GOLD}` }}>
+                    {s.email}
+                  </a>
+                </div>
+              )}
+              {s.website && (
+                <div>
+                  <a href={`https://${s.website}`} target="_blank" rel="noopener noreferrer" style={{ color: NAVY, borderBottom: `1px solid ${GOLD}` }}>
+                    {s.website}
+                  </a>
+                </div>
+              )}
+              {s.handle && <div style={{ color: NAVY }}>{s.handle}</div>}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const FinePrint = ({ text }: { text: string }) => (
+  <section className="w-full" style={{ background: PAPER }}>
+    <div
+      className="max-w-[820px] mx-auto px-6 md:px-12 pt-5 pb-14 md:pb-20"
+      style={{ borderTop: `1px solid ${RULE}` }}
+    >
+      <p
+        className="text-center"
+        style={{
+          fontFamily: '"Jost", sans-serif',
+          fontSize: "9.5px",
+          letterSpacing: "0.18em",
+          textTransform: "uppercase",
+          color: MUTED,
+          lineHeight: 1.7,
+        }}
+      >
+        {text}
+      </p>
+    </div>
+  </section>
+);
 
 const BriefBody = ({ edition }: { edition: BriefEdition }) => (
   <>
     {edition.sections.map((s) => (
       <BriefSectionBlock key={s.id} section={s} />
     ))}
-    {edition.closingNote && (
-      <section className="w-full" style={{ background: "#F5F3EF" }}>
-        <div className="max-w-[760px] mx-auto px-6 md:px-10 py-14 md:py-20">
-          <div
-            className="h-px w-12 mb-6"
-            style={{ background: "rgba(184,160,109,0.5)" }}
-            aria-hidden="true"
-          />
-          <p
-            style={{
-              fontFamily: '"Jost", sans-serif',
-              fontSize: "13.5px",
-              lineHeight: 1.85,
-              color: "rgba(12,15,36,0.6)",
-              fontWeight: 300,
-              fontStyle: "italic",
-            }}
-          >
-            {edition.closingNote}
-          </p>
-        </div>
-      </section>
-    )}
+    {edition.howThisWorks && <HowThisWorks text={edition.howThisWorks} />}
+    <SignOffBlock edition={edition} />
+    {edition.closingNote && <FinePrint text={edition.closingNote} />}
   </>
 );
 
@@ -178,7 +388,7 @@ const PrivateDistributionEdition = ({ edition }: { edition: BriefEdition }) => {
   const canonical = `${SITE}/private-distribution/${edition.slug}`;
 
   return (
-    <div className="min-h-screen" style={{ background: "#F5F3EF" }}>
+    <div className="min-h-screen" style={{ background: PAPER }}>
       <SEOHead
         title={`${edition.title} — ${edition.market}`}
         description={edition.subtitle}
@@ -196,7 +406,7 @@ const PrivateDistributionEdition = ({ edition }: { edition: BriefEdition }) => {
 
       <Navigation />
       <BriefHero edition={edition} />
-      <BriefTeaser edition={edition} />
+      <FromTheDesk edition={edition} />
 
       {unlocked ? (
         <BriefBody edition={edition} />
@@ -209,8 +419,8 @@ const PrivateDistributionEdition = ({ edition }: { edition: BriefEdition }) => {
       )}
 
       {unlocked && edition.pdfUrl && (
-        <section className="w-full" style={{ background: "#0C0F24" }}>
-          <div className="max-w-[760px] mx-auto px-6 md:px-10 py-14 text-center">
+        <section className="w-full" style={{ background: NAVY }}>
+          <div className="max-w-[820px] mx-auto px-6 md:px-12 py-14 text-center">
             <a
               href={edition.pdfUrl}
               target="_blank"
@@ -222,8 +432,8 @@ const PrivateDistributionEdition = ({ edition }: { edition: BriefEdition }) => {
                 letterSpacing: "0.22em",
                 textTransform: "uppercase",
                 fontWeight: 500,
-                color: "#b9a06c",
-                borderBottom: "1px solid rgba(184,160,109,0.4)",
+                color: GOLD,
+                borderBottom: `1px solid rgba(185,160,108,0.4)`,
                 paddingBottom: "6px",
               }}
             >
@@ -239,7 +449,7 @@ const PrivateDistributionEdition = ({ edition }: { edition: BriefEdition }) => {
 };
 
 /* ─────────────────────────────────────────────
-   Index view (lists editions)
+   Index view — lists current edition + archive
    ───────────────────────────────────────────── */
 
 const PrivateDistributionIndex = () => {
@@ -252,10 +462,10 @@ const PrivateDistributionIndex = () => {
   const canonical = `${SITE}/private-distribution`;
 
   return (
-    <div className="min-h-screen" style={{ background: "#F5F3EF" }}>
+    <div className="min-h-screen" style={{ background: PAPER }}>
       <SEOHead
-        title="Private Distribution — Austin Luxury Market Intelligence"
-        description="Recurring private market intelligence on Austin's most guarded zip codes. Off-market trades, properties whispered before listing, and advisory commentary for qualified buyers and sellers."
+        title="Private Distribution — Austin Private Market Intelligence"
+        description="A recurring private brief on Austin's most guarded zip codes — off-market trades, pocket inventory, and advisory commentary for qualified buyers and sellers."
         canonical={canonical}
         noindex
       />
@@ -263,12 +473,12 @@ const PrivateDistributionIndex = () => {
 
       <section
         className="relative w-full overflow-hidden"
-        style={{ background: "#0C0F24", color: "#F5F3EF" }}
+        style={{ background: NAVY, color: PAPER }}
       >
-        <div className="max-w-[980px] mx-auto px-6 md:px-10 pt-36 md:pt-44 pb-20 md:pb-28">
+        <div className="max-w-[980px] mx-auto px-6 md:px-12 pt-36 md:pt-44 pb-20 md:pb-28">
           <div
             className="h-px w-16 mb-8"
-            style={{ background: "rgba(184,160,109,0.6)" }}
+            style={{ background: "rgba(185,160,108,0.6)" }}
             aria-hidden="true"
           />
           <p
@@ -278,36 +488,41 @@ const PrivateDistributionIndex = () => {
               fontSize: "10.5px",
               letterSpacing: "0.32em",
               textTransform: "uppercase",
-              color: "#b9a06c",
+              color: GOLD,
             }}
           >
             Private Distribution
           </p>
           <h1
-            className="font-display text-[40px] md:text-[60px] leading-[1.05] mb-7"
-            style={{ fontWeight: 400, letterSpacing: "0.005em" }}
+            className="mb-7"
+            style={{
+              fontFamily: '"Cinzel", serif',
+              fontWeight: 500,
+              fontSize: "clamp(34px, 5.5vw, 60px)",
+              letterSpacing: "0.03em",
+              lineHeight: 1.08,
+            }}
           >
             Private market intelligence for Austin's most guarded zip codes.
           </h1>
           <p
-            className="max-w-[640px] text-[17px] md:text-[19px] leading-[1.6]"
+            className="max-w-[640px]"
             style={{
               fontFamily: '"Jost", sans-serif',
+              fontSize: "17px",
+              lineHeight: 1.65,
               color: "rgba(245,243,239,0.82)",
               fontWeight: 300,
             }}
           >
-            A confidential, recurring brief distributed privately to a narrow
-            audience of buyers, sellers, and capital allocators. Off-market
-            trades, properties whispered before listing, and the strategic
-            posture of the principals currently active in the field.
+            A confidential brief distributed monthly to a narrow audience of buyers, sellers, and capital allocators. Off-MLS inventory, pre-market introductions, and advisory commentary on the corridors that move privately.
           </p>
         </div>
       </section>
 
       {featured && (
-        <section className="w-full" style={{ background: "#F5F3EF" }}>
-          <div className="max-w-[980px] mx-auto px-6 md:px-10 py-20 md:py-28">
+        <section className="w-full" style={{ background: PAPER }}>
+          <div className="max-w-[980px] mx-auto px-6 md:px-12 py-20 md:py-28">
             <p
               className="mb-5"
               style={{
@@ -315,29 +530,37 @@ const PrivateDistributionIndex = () => {
                 fontSize: "10.5px",
                 letterSpacing: "0.32em",
                 textTransform: "uppercase",
-                color: "#b9a06c",
+                color: GOLD_DEEP,
               }}
             >
-              Current Edition
+              Current Edition · {formatMonthYear(featured.publishedAt)}
             </p>
             <Link to={`/private-distribution/${featured.slug}`} className="group block">
               <h2
-                className="font-display text-[30px] md:text-[44px] leading-[1.15] mb-5 max-w-[760px]"
-                style={{ color: "#0C0F24", fontWeight: 400 }}
+                className="mb-5 max-w-[760px]"
+                style={{
+                  fontFamily: '"Cinzel", serif',
+                  fontWeight: 500,
+                  fontSize: "clamp(28px, 4vw, 44px)",
+                  letterSpacing: "0.025em",
+                  lineHeight: 1.15,
+                  color: NAVY,
+                }}
               >
                 {featured.title} — {featured.market}
               </h2>
               <p
                 className="max-w-[640px] mb-7"
                 style={{
-                  fontFamily: '"Jost", sans-serif',
-                  fontSize: "16.5px",
-                  lineHeight: 1.8,
-                  color: "rgba(12,15,36,0.78)",
-                  fontWeight: 300,
+                  fontFamily: '"Cinzel", serif',
+                  fontStyle: "italic",
+                  fontSize: "17px",
+                  lineHeight: 1.7,
+                  color: NAVY,
+                  opacity: 0.7,
                 }}
               >
-                {featured.dek}
+                {featured.subtitle}
               </p>
               <span
                 className="inline-flex items-center gap-3"
@@ -347,8 +570,8 @@ const PrivateDistributionIndex = () => {
                   letterSpacing: "0.22em",
                   textTransform: "uppercase",
                   fontWeight: 500,
-                  color: "#b9a06c",
-                  borderBottom: "1px solid rgba(184,160,109,0.4)",
+                  color: GOLD_DEEP,
+                  borderBottom: `1px solid rgba(185,160,108,0.4)`,
                   paddingBottom: "6px",
                 }}
               >
@@ -360,8 +583,8 @@ const PrivateDistributionIndex = () => {
       )}
 
       {archive.length > 0 && (
-        <section className="w-full" style={{ background: "#FAFAF8" }}>
-          <div className="max-w-[980px] mx-auto px-6 md:px-10 py-20 md:py-24">
+        <section className="w-full" style={{ background: "#FFFFFF" }}>
+          <div className="max-w-[980px] mx-auto px-6 md:px-12 py-20 md:py-24">
             <p
               className="mb-9"
               style={{
@@ -369,17 +592,17 @@ const PrivateDistributionIndex = () => {
                 fontSize: "10.5px",
                 letterSpacing: "0.32em",
                 textTransform: "uppercase",
-                color: "#b9a06c",
+                color: GOLD_DEEP,
               }}
             >
               Archive
             </p>
-            <ul className="divide-y divide-[rgba(12,15,36,0.1)]">
+            <ul style={{ borderTop: `1px solid ${RULE}` }}>
               {archive.map((e) => (
-                <li key={e.slug}>
+                <li key={e.slug} style={{ borderBottom: `1px solid ${RULE}` }}>
                   <Link
                     to={`/private-distribution/${e.slug}`}
-                    className="grid grid-cols-1 md:grid-cols-[160px_1fr] gap-3 md:gap-10 py-6 group"
+                    className="grid grid-cols-1 md:grid-cols-[180px_1fr] gap-3 md:gap-10 py-6"
                   >
                     <span
                       style={{
@@ -387,14 +610,18 @@ const PrivateDistributionIndex = () => {
                         fontSize: "11px",
                         letterSpacing: "0.22em",
                         textTransform: "uppercase",
-                        color: "rgba(12,15,36,0.55)",
+                        color: MUTED,
                       }}
                     >
-                      {formatDate(e.publishedAt)}
+                      {formatMonthYear(e.publishedAt)}
                     </span>
                     <span
-                      className="font-display text-[20px] md:text-[22px]"
-                      style={{ color: "#0C0F24", fontWeight: 400 }}
+                      style={{
+                        fontFamily: '"Cinzel", serif',
+                        fontWeight: 500,
+                        fontSize: "20px",
+                        color: NAVY,
+                      }}
                     >
                       {e.title} — {e.market}
                     </span>
@@ -411,16 +638,12 @@ const PrivateDistributionIndex = () => {
   );
 };
 
-/* ─────────────────────────────────────────────
-   Route entry
-   ───────────────────────────────────────────── */
+/* ─── Route entry ─── */
 
 const PrivateDistribution = () => {
   const { slug } = useParams<{ slug?: string }>();
 
-  if (!slug) {
-    return <PrivateDistributionIndex />;
-  }
+  if (!slug) return <PrivateDistributionIndex />;
 
   const edition = getEditionBySlug(slug);
   if (!edition || edition.active === false) {

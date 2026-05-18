@@ -29,6 +29,7 @@ const blogLakeAustinVsLakeTravis = new URL("@/assets/lake-travis-sunset.jpg", im
 const blogWhatIsPrivateListing = new URL("@/assets/blog-what-is-private-listing-hero.webp", import.meta.url).href;
 
 const Footer = lazy(() => import("@/components/Footer"));
+import PrivateDistributionStrip from "@/components/private-distribution/PrivateDistributionStrip";
 
 /* ─────────────────────────────────────────────
    SECTION 2 — MICRO-TRUST STRIP
@@ -1550,6 +1551,8 @@ const HomeBelowFold = () => (
     <div className="parallax-break hidden md:block" style={{ backgroundImage: "url('/images/parallax-barton-springs.webp')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties} aria-hidden="true" />
 
     <LeadCapture />
+
+    <PrivateDistributionStrip />
 
     <div style={{ contentVisibility: "auto", containIntrinsicSize: "0 800px" } as React.CSSProperties}>
       <InsightsSection />

@@ -69,6 +69,7 @@ const AdminCommunityEditor = lazy(() => import("@/pages/admin/AdminCommunityEdit
 const ListingStory = lazy(() => import("@/pages/ListingStory"));
 const AdminListingStories = lazy(() => import("@/pages/admin/AdminListingStories"));
 const AdminListingEditor = lazy(() => import("@/pages/admin/AdminListingEditor"));
+const PrivateDistribution = lazy(() => import("@/pages/PrivateDistribution"));
 
 // Prefetch high-traffic route chunks after homepage is interactive
 if (typeof window !== "undefined") {
@@ -177,6 +178,8 @@ const AppRoutes = () => {
           <Route path="/admin/listing-stories" element={<AdminListingStories />} />
           <Route path="/admin/listing-stories/:slug" element={<AdminListingEditor />} />
           <Route path="/listing/:slug" element={<ListingStory />} />
+          <Route path="/private-distribution" element={<PrivateDistribution />} />
+          <Route path="/private-distribution/:slug" element={<PrivateDistribution />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>

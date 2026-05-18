@@ -105,7 +105,7 @@ const BriefHero = ({ edition }: { edition: BriefEdition }) => {
                   fontSize: "clamp(180px, 22vw, 320px)",
                   lineHeight: 1,
                   color: NAVY,
-                  opacity: 0.05,
+                  opacity: 0.028,
                   right: "-2%",
                   top: "55%",
                   transform: "translateY(-50%)",

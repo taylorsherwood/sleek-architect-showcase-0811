@@ -610,45 +610,8 @@ const PrivateDistributionIndex = () => {
         </span>
 
         <div className="relative max-w-[1180px] mx-auto px-6 md:px-12 pt-36 md:pt-56 pb-28 md:pb-44">
-          {/* Top confidential rail with issue lockup */}
-          <div
-            className="flex items-center justify-between pb-6 mb-16 md:mb-24"
-            style={{ borderBottom: "1px solid rgba(245,243,239,0.08)" }}
-          >
-            <span
-              className="flex items-baseline gap-3"
-              style={{
-                fontFamily: '"Jost", sans-serif',
-                fontSize: "9.5px",
-                letterSpacing: "0.4em",
-                textTransform: "uppercase",
-                color: GOLD,
-                fontWeight: 500,
-              }}
-            >
-              <span>Echelon · Private Distribution</span>
-              <span
-                aria-hidden="true"
-                className="hidden sm:inline-block h-px w-6"
-                style={{ background: "rgba(185,160,108,0.45)" }}
-              />
-              <span className="hidden sm:inline" style={{ color: "rgba(185,160,108,0.7)" }}>
-                №&nbsp;{featured?.issueNumber?.replace(/^[^\d]*/, "") || "04"} · Vol&nbsp;II
-              </span>
-            </span>
-            <span
-              className="hidden sm:inline"
-              style={{
-                fontFamily: '"Jost", sans-serif',
-                fontSize: "9.5px",
-                letterSpacing: "0.32em",
-                textTransform: "uppercase",
-                color: "rgba(245,243,239,0.42)",
-              }}
-            >
-              Circulated privately · By advisory
-            </span>
-          </div>
+
+
 
           {/* Asymmetric editorial composition */}
           <div className="grid grid-cols-1 md:grid-cols-12 gap-y-20 md:gap-y-0 md:gap-x-12">

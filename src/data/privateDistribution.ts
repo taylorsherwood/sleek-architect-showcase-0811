@@ -100,9 +100,9 @@ export const PRIVATE_DISTRIBUTION: BriefEdition[] = [
   {
     slug: "78746-may-2026",
     volume: "Volume I",
-    issueNumber: "Edition No. 04",
+    issueNumber: "EDITION NO. 04",
     market: "78746 · Austin, TX",
-    edition: "May 2026 Edition",
+    edition: "MAY 2026 EDITION",
     publishedAt: "2026-05-01",
     watermark: "78746",
     title: "The 78746 Brief",

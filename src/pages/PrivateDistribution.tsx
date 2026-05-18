@@ -6,6 +6,7 @@ import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import PrivateBriefGate from "@/components/private-distribution/PrivateBriefGate";
 import BriefSectionBlock from "@/components/private-distribution/BriefSectionBlock";
+import { useAuth } from "@/hooks/useAuth";
 import {
   PRIVATE_DISTRIBUTION,
   getEditionBySlug,

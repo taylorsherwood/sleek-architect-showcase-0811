@@ -98,8 +98,6 @@ export async function submitLeadToZapier(
   data: LeadSubmission,
   webhookUrl: string = ZAPIER_LEAD_WEBHOOK
 ): Promise<SubmitResult> {
-  // eslint-disable-next-line no-console
-  console.log("Lead submit clicked");
   const name = (data.name || "").trim();
   const email = (data.email || "").trim();
   const phone = (data.phone || "").trim();
@@ -138,23 +136,13 @@ export async function submitLeadToZapier(
     !payload.email ||
     (!payload.phone && !payload.message)
   ) {
-    // eslint-disable-next-line no-console
-    console.warn("Submission blocked: missing required fields", payload);
     if (!payload.name) return { ok: false, error: "Name is required." };
     if (!payload.email) return { ok: false, error: "Email is required." };
     return { ok: false, error: "Please provide a phone number or a message." };
   }
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(payload.email)) {
-    // eslint-disable-next-line no-console
-    console.warn("Submission blocked: missing required fields", payload);
     return { ok: false, error: "Please enter a valid email address." };
   }
-
-  // Log only on valid, about-to-fire submissions
-  // eslint-disable-next-line no-console
-  console.log("Validation passed");
-  // eslint-disable-next-line no-console
-  console.log("[Zapier lead submission] outgoing payload:", payload);
 
   try {
     const { data: response, error } = await supabase.functions.invoke("submit-lead", {

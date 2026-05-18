@@ -94,9 +94,9 @@ const Blog = () => {
           decoding="async"
         />
         {/* Soft warm cinematic grade — no muddy blue overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-[#1a1410]/70" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0C0F24]/50 via-transparent to-transparent" />
-        <div className="absolute inset-0 bg-[#0C0F24]/30" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-[#1a1410]/55" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0C0F24]/40 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-[#0C0F24]/20" />
 
         <div className="relative container mx-auto px-6 pt-12 md:pt-16 lg:pt-20 flex items-center min-h-[640px] md:min-h-[720px] lg:min-h-[820px] xl:min-h-[860px] 2xl:min-h-[880px]">
           <div className="max-w-xl reveal -translate-y-6 md:-translate-y-10 lg:-translate-y-12">

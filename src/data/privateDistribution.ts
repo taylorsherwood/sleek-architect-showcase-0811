@@ -7,6 +7,11 @@
  * be added by appending an object — no layout changes required.
  */
 
+import almarionImg from "@/assets/private-distribution/almarion-drive.jpg";
+import flintridgeImg from "@/assets/private-distribution/flintridge-road.jpg";
+import mistywoodImg from "@/assets/private-distribution/mistywood-drive-interior.png";
+
+
 export type BriefSectionType =
   | "observation"
   | "properties"

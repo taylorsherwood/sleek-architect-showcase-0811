@@ -1551,6 +1551,8 @@ const HomeBelowFold = () => (
 
     <LeadCapture />
 
+    <PrivateDistributionStrip />
+
     <div style={{ contentVisibility: "auto", containIntrinsicSize: "0 800px" } as React.CSSProperties}>
       <InsightsSection />
     </div>

@@ -48,10 +48,10 @@ const BriefHero = ({ edition }: { edition: BriefEdition }) => {
       className="relative w-full overflow-hidden"
       style={{ background: PAPER, color: NAVY }}
     >
-      <div className="max-w-[1180px] mx-auto px-6 md:px-12 pt-20 md:pt-24 pb-16 md:pb-24 relative">
+      <div className="max-w-[1180px] mx-auto px-6 md:px-12 pt-36 md:pt-48 pb-16 md:pb-24 relative">
         {/* Top hairline + centered meta strip */}
         <div
-          className="pb-8 md:pb-10 mb-10 md:mb-14"
+          className="pb-8 md:pb-10 mb-16 md:mb-24"
           style={{ borderBottom: `1px solid rgba(12,15,36,0.10)` }}
         >
           <p
@@ -69,15 +69,6 @@ const BriefHero = ({ edition }: { edition: BriefEdition }) => {
           </p>
         </div>
 
-        {/* Centered Echelon mark */}
-        <div className="flex justify-center mb-16 md:mb-24">
-          <img
-            src="/images/echelon-logo.webp"
-            alt="Echelon Property Group"
-            className="h-14 md:h-16 w-auto"
-            style={{ objectFit: "contain" }}
-          />
-        </div>
 
         {/* Editorial cover block */}
         <div className="relative">

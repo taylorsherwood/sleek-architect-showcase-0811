@@ -91,7 +91,7 @@ const BriefHero = ({ edition }: { edition: BriefEdition }) => (
               color: MUTED,
             }}
           >
-            By Invitation
+            EST. 2018 AUSTIN · BY INVITATION
           </span>
         </div>
 
@@ -580,7 +580,7 @@ const PrivateDistributionIndex = () => {
                 color: MUTED,
               }}
             >
-              Est. Austin · By Invitation
+              EST. 2018 AUSTIN · BY INVITATION
             </span>
           </div>
 

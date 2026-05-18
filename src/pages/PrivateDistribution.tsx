@@ -12,6 +12,7 @@ import {
   getFeaturedEdition,
   type BriefEdition,
 } from "@/data/privateDistribution";
+import privateCover from "@/assets/private-distribution-cover.jpg";
 
 const SITE = "https://www.echelonpropertygroup.com";
 const NAVY = "#0C0F24";

@@ -807,23 +807,22 @@ const PrivateDistributionIndex = () => {
         `}</style>
       </section>
 
-      {/* ───────────── Market Pulse — focal tonal band ───────────── */}
+      {/* ───────────── Market Pulse — focal tonal band, asymmetric ───────────── */}
       <section
         className="relative w-full"
         style={{
           background: "#EFEAE0",
-          borderTop: `1px solid ${RULE}`,
           borderBottom: `1px solid ${RULE}`,
         }}
       >
-        <div className="max-w-[1140px] mx-auto px-6 md:px-12 py-16 md:py-20 grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-14 items-center">
-          <div className="md:col-span-5">
+        <div className="max-w-[1180px] mx-auto px-6 md:px-12 py-20 md:py-28 grid grid-cols-1 md:grid-cols-12 gap-y-12 md:gap-x-16 items-end">
+          <div className="md:col-span-5 md:col-start-1">
             <p
-              className="mb-4"
+              className="mb-5"
               style={{
                 fontFamily: '"Jost", sans-serif',
                 fontSize: "10px",
-                letterSpacing: "0.36em",
+                letterSpacing: "0.38em",
                 textTransform: "uppercase",
                 color: GOLD_DEEP,
                 fontWeight: 500,
@@ -835,23 +834,34 @@ const PrivateDistributionIndex = () => {
               style={{
                 fontFamily: '"Cinzel", serif',
                 fontWeight: 500,
-                fontSize: "clamp(64px, 8vw, 104px)",
-                lineHeight: 0.95,
-                letterSpacing: "0.005em",
+                fontSize: "clamp(72px, 9vw, 124px)",
+                lineHeight: 0.9,
+                letterSpacing: "-0.01em",
                 color: NAVY,
               }}
             >
-              ~68<span style={{ color: GOLD_DEEP, fontStyle: "italic", fontWeight: 400 }}>%</span>
+              ~68
+              <em
+                style={{
+                  color: GOLD_DEEP,
+                  fontStyle: "italic",
+                  fontWeight: 400,
+                  letterSpacing: 0,
+                }}
+              >
+                %
+              </em>
             </p>
             <p
-              className="mt-3 max-w-[320px]"
+              className="mt-5 max-w-[300px]"
               style={{
                 fontFamily: '"Jost", sans-serif',
-                fontSize: "12px",
-                letterSpacing: "0.22em",
+                fontSize: "11.5px",
+                letterSpacing: "0.24em",
                 textTransform: "uppercase",
                 color: MUTED,
-                lineHeight: 1.65,
+                lineHeight: 1.75,
+                fontWeight: 400,
               }}
             >
               of featured opportunities transact before reaching the open market
@@ -859,7 +869,7 @@ const PrivateDistributionIndex = () => {
           </div>
 
           <div
-            className="md:col-span-7 md:pl-14 md:border-l"
+            className="md:col-span-6 md:col-start-7 md:pl-12 md:border-l"
             style={{ borderColor: RULE }}
           >
             <p
@@ -867,10 +877,11 @@ const PrivateDistributionIndex = () => {
                 fontFamily: '"Cinzel", serif',
                 fontStyle: "italic",
                 fontWeight: 400,
-                fontSize: "clamp(20px, 2.2vw, 26px)",
-                lineHeight: 1.5,
+                fontSize: "clamp(19px, 1.95vw, 24px)",
+                lineHeight: 1.55,
                 color: NAVY,
                 letterSpacing: "0.005em",
+                opacity: 0.92,
               }}
             >
               “The most considered trades in Austin rarely surface in public.
@@ -878,11 +889,11 @@ const PrivateDistributionIndex = () => {
               already know each other's standards.”
             </p>
             <p
-              className="mt-6"
+              className="mt-7"
               style={{
                 fontFamily: '"Jost", sans-serif',
                 fontSize: "10px",
-                letterSpacing: "0.34em",
+                letterSpacing: "0.36em",
                 textTransform: "uppercase",
                 color: GOLD_DEEP,
                 fontWeight: 500,

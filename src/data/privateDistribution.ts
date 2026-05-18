@@ -154,22 +154,6 @@ export const PRIVATE_DISTRIBUTION: BriefEdition[] = [
               "Two-plus acres inside West Lake Hills city limits is the rarest land profile in 78746. Finding it paired with a fully reset single-story is essentially a unicorn — these don't come back around.",
           },
           {
-            status: "Pre-Market",
-            address: "Westlake · Modern Under $2M",
-            zone: "78746 · Eanes ISD",
-            specs: [
-              { label: "Beds", value: "3" },
-              { label: "Baths", value: "2.5" },
-              { label: "Interior", value: "2,000 sf" },
-              { label: "Built", value: "2009" },
-            ],
-            price: "$1,990,000",
-            description:
-              "A 2009 modern build inside Westlake — compact at 2,000 sf, but engineered for light and a real view from a price point that almost never holds modern, move-in ready inventory in this district. Listing brokerage releasing photos late May; we have a window to preview before the broader market sees it. Address held until launch.",
-            insight:
-              "Sub-$2M Eanes inventory disappears in days when it's actually move-in ready. Modern with views at this price point is the rarest combination in the corridor.",
-          },
-          {
             status: "Pocket Listing",
             address: "Mistywood Drive · Westlake",
             zone: "78746 · Eanes ISD",

@@ -1,6 +1,6 @@
 import { useState, FormEvent } from "react";
 import { formatPhoneNumber, getPhoneDigits, submitLeadToZapier } from "@/lib/formUtils";
-import { setUnlocked, getUtmParams } from "@/lib/communityUnlock";
+import { fetchUnlockedReport, getUtmParams } from "@/lib/communityUnlock";
 
 interface CommunityGateProps {
   slug: string;

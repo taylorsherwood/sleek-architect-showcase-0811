@@ -17,7 +17,7 @@ import privateCover from "@/assets/private-distribution-cover.jpg";
 
 const SITE = "https://www.echelonpropertygroup.com";
 const NAVY = "#0C0F24";
-const PAPER = "#FAFAF8";
+const PAPER = "#F4EFE3";
 const GOLD = "#b9a06c";
 const GOLD_DEEP = "#8e7a4a";
 const RULE = "#d9cfb8";
@@ -105,7 +105,7 @@ const BriefHero = ({ edition }: { edition: BriefEdition }) => {
                   fontSize: "clamp(180px, 22vw, 320px)",
                   lineHeight: 1,
                   color: NAVY,
-                  opacity: 0.05,
+                  opacity: 0.028,
                   right: "-2%",
                   top: "55%",
                   transform: "translateY(-50%)",

@@ -12,11 +12,11 @@ import {
  */
 
 const NAVY = "#0C0F24";
-const PAPER = "#FAFAF8";
-const CREAM = "#F5F1E8";
+const PAPER = "#F4EFE3";
+const CREAM = "#EDE5D0";
 const GOLD = "#b9a06c";
 const GOLD_DEEP = "#8e7a4a";
-const RULE = "#d9cfb8";
+const RULE = "#d4c9ad";
 const MUTED = "#6b6557";
 
 const sectionWrap = "max-w-[820px] mx-auto px-6 md:px-12";
@@ -115,7 +115,7 @@ const PropertyCard = ({ p, isLast }: { p: PropertyFeature; isLast: boolean }) =>
       style={{
         aspectRatio: "4 / 3",
         background: `linear-gradient(135deg, ${NAVY} 0%, #1a1f3a 100%)`,
-        borderRadius: "2px",
+        borderRadius: "0px",
       }}
     >
       {p.image ? (
@@ -251,12 +251,13 @@ const PropertyCard = ({ p, isLast }: { p: PropertyFeature; isLast: boolean }) =>
 
       <p
         style={{
-          fontFamily: '"Jost", sans-serif',
-          fontSize: "15px",
-          lineHeight: 1.7,
+          fontFamily: 'Georgia, "Times New Roman", serif',
+          fontSize: "15.5px",
+          lineHeight: 1.75,
           color: "#1a1a1a",
           marginBottom: "14px",
-          fontWeight: 300,
+          fontWeight: 400,
+          fontStyle: "normal",
         }}
       >
         {p.description}

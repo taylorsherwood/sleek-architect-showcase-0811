@@ -552,7 +552,7 @@ const PrivateDistributionIndex = () => {
           }}
         />
 
-        <div className="relative max-w-[1240px] mx-auto px-6 md:px-12 pt-20 md:pt-28 pb-16 md:pb-24">
+        <div className="relative max-w-[1240px] mx-auto px-6 md:px-12 pt-32 md:pt-44 pb-16 md:pb-24">
           {/* Top masthead rail */}
           <div
             className="flex items-center justify-between pb-5 mb-12 md:mb-16"

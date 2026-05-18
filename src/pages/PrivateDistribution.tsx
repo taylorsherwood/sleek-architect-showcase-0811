@@ -580,7 +580,7 @@ const PrivateDistributionIndex = () => {
                 color: MUTED,
               }}
             >
-              Est. Austin · By Invitation
+              EST. 2018 AUSTIN · BY INVITATION
             </span>
           </div>
 

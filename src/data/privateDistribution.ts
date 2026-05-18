@@ -99,7 +99,7 @@ export interface BriefEdition {
 export const PRIVATE_DISTRIBUTION: BriefEdition[] = [
   {
     slug: "78746-may-2026",
-    volume: "Volume I",
+    volume: "VOLUME I",
     issueNumber: "EDITION NO. 04",
     market: "78746 · Austin, TX",
     edition: "MAY 2026 EDITION",

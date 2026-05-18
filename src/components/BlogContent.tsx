@@ -295,10 +295,10 @@ const FAQBlock = ({ body }: { body: string }) => {
 };
 
 const MarkdownChunk = ({ body }: { body: string }) => {
-  const html = body.split("\n").map(renderMarkdownLine).join("");
+  const html = renderMarkdownBody(body);
   return (
     <div
-      className="text-muted-foreground space-y-1"
+      className="text-muted-foreground"
       dangerouslySetInnerHTML={{ __html: html }}
     />
   );

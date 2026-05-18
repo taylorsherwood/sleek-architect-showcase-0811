@@ -7,6 +7,7 @@ import echelonLogo from "@/assets/echelon-logo-gold.png";
 import echelonMark from "@/assets/echelon-mark-gold.png";
 import { formatPhoneNumber, submitLeadToZapier } from "@/lib/formUtils";
 import CinematicSections from "@/components/off-market/CinematicSections";
+import PrivateDistributionStrip from "@/components/private-distribution/PrivateDistributionStrip";
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 
 // Eagerly preload all hero & funnel media so it's ready before scroll
@@ -417,6 +418,14 @@ const OffMarketRealEstateAustin = () => {
           CINEMATIC SECTIONS 2–7 (with form in Section 7)
       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
       <CinematicSections formNode={formContent} />
+
+      <PrivateDistributionStrip
+        variant="navy"
+        eyebrow="Private Distribution"
+        headline="Monthly market intelligence for qualified buyers and sellers."
+        body="A confidential brief covering Austin's most guarded zip codes — off-market trades, properties whispered before listing, and the strategic posture of principals currently active in the field."
+        ctaLabel="Access the Current Edition"
+      />
 
       {/* ── Footer (minimal) ────────────────────────── */}
       <footer className="py-8 bg-[hsl(220,15%,5%)] border-t border-white/5">

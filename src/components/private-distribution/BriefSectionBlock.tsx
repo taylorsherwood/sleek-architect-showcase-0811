@@ -12,11 +12,11 @@ import {
  */
 
 const NAVY = "#0C0F24";
-const PAPER = "#F4EFE3";
-const CREAM = "#EDE5D0";
+const PAPER = "#F6F4F0";
+const CREAM = "#EFECE3";
 const GOLD = "#b9a06c";
 const GOLD_DEEP = "#8e7a4a";
-const RULE = "#d4c9ad";
+const RULE = "#E4E0D6";
 const MUTED = "#6b6557";
 
 const sectionWrap = "max-w-[820px] mx-auto px-6 md:px-12";

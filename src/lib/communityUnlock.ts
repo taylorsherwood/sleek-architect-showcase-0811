@@ -1,37 +1,86 @@
 /**
- * Device-level unlock for gated community reports.
- * Stores per-slug unlock with a 30-day TTL in localStorage.
+ * Server-verified unlock for gated community reports.
+ *
+ * Security model: the full community report is fetched from the
+ * `get-community-report` edge function, which verifies a recent
+ * `community_leads` row matches the submitted {slug, email}. Only after
+ * that server-side check does the full payload reach the browser.
+ *
+ * localStorage is used ONLY as a UI convenience cache (so returning
+ * visitors don't see the gate again for 30 days) — it never grants
+ * access to data on its own.
  */
+import { supabase } from "@/integrations/supabase/client";
+import type { CommunityRecord } from "@/types/community";
 
-const KEY_PREFIX = "echelon_community_unlock_";
-const TTL_MS = 30 * 24 * 60 * 60 * 1000; // 30 days
+const DATA_PREFIX = "echelon_community_unlock_v2_";
+const LEGACY_FLAG_PREFIX = "echelon_community_unlock_";
+const TTL_MS = 30 * 24 * 60 * 60 * 1000;
 
-export function isUnlocked(slug: string): boolean {
-  if (typeof window === "undefined") return false;
+interface CachedUnlock {
+  expires: number;
+  community: CommunityRecord;
+}
+
+export function getCachedUnlock(slug: string): CommunityRecord | null {
+  if (typeof window === "undefined") return null;
   try {
-    const raw = localStorage.getItem(KEY_PREFIX + slug);
-    if (!raw) return false;
-    const expires = parseInt(raw, 10);
-    if (!Number.isFinite(expires)) return false;
-    if (Date.now() > expires) {
-      localStorage.removeItem(KEY_PREFIX + slug);
-      return false;
+    const raw = localStorage.getItem(DATA_PREFIX + slug);
+    if (!raw) return null;
+    const parsed = JSON.parse(raw) as CachedUnlock;
+    if (!parsed?.community || typeof parsed.expires !== "number") return null;
+    if (Date.now() > parsed.expires) {
+      localStorage.removeItem(DATA_PREFIX + slug);
+      return null;
     }
-    return true;
+    return parsed.community;
   } catch {
-    return false;
+    return null;
   }
 }
 
-export function setUnlocked(slug: string): void {
+export function clearLegacyUnlockFlag(slug: string): void {
   if (typeof window === "undefined") return;
   try {
-    localStorage.setItem(KEY_PREFIX + slug, String(Date.now() + TTL_MS));
-    // Notify any mounted components that this slug just unlocked so they
-    // can update without a full reload.
-    window.dispatchEvent(new CustomEvent("echelon:community-unlocked", { detail: { slug } }));
+    localStorage.removeItem(LEGACY_FLAG_PREFIX + slug);
   } catch {
     /* ignore */
+  }
+}
+
+/**
+ * Calls the get-community-report edge function. The function verifies a
+ * recently-submitted community_lead and returns the full community row
+ * (including gated columns). Returns null on failure.
+ */
+export async function fetchUnlockedReport(
+  slug: string,
+  email: string,
+): Promise<CommunityRecord | null> {
+  try {
+    const { data, error } = await supabase.functions.invoke("get-community-report", {
+      body: { slug, email },
+    });
+    if (error || !data?.community) return null;
+    const community = data.community as CommunityRecord;
+    try {
+      const payload: CachedUnlock = {
+        expires: Date.now() + TTL_MS,
+        community,
+      };
+      localStorage.setItem(DATA_PREFIX + slug, JSON.stringify(payload));
+      clearLegacyUnlockFlag(slug);
+      window.dispatchEvent(
+        new CustomEvent("echelon:community-unlocked", {
+          detail: { slug, community },
+        }),
+      );
+    } catch {
+      /* storage full or disabled — payload is still returned for in-memory use */
+    }
+    return community;
+  } catch {
+    return null;
   }
 }
 
@@ -44,4 +93,14 @@ export function getUtmParams(): Record<string, string> {
     if (v) out[k] = v;
   });
   return out;
+}
+
+// --- Legacy named exports retained so any straggling imports do not crash ---
+// These are intentional no-ops; unlock state is now driven by getCachedUnlock.
+export function isUnlocked(slug: string): boolean {
+  return getCachedUnlock(slug) !== null;
+}
+
+export function setUnlocked(_slug: string): void {
+  /* deprecated: use fetchUnlockedReport which performs server verification */
 }

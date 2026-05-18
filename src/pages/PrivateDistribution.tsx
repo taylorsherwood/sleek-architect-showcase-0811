@@ -1020,7 +1020,7 @@ const PrivateDistributionIndex = () => {
                         lineHeight: 1.6,
                       }}
                     >
-                      {featured.sections.length} dossiers
+                      {featured.sections.reduce((n, s: any) => n + (s.properties?.length || s.watching?.length || 0), 0)} opportunities
                     </p>
                   </div>
                   <div>

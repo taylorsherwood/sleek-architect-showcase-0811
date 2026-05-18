@@ -21,8 +21,10 @@ const GOLD_DEEP = "#8e7a4a";
 const RULE = "#d9cfb8";
 const MUTED = "#6b6557";
 
-const formatMonthYear = (iso: string) =>
-  new Date(iso).toLocaleDateString("en-US", { month: "long", year: "numeric" });
+const formatMonthYear = (iso: string) => {
+  const [y, m] = iso.split("-").map(Number);
+  return new Date(y, (m || 1) - 1, 1).toLocaleDateString("en-US", { month: "long", year: "numeric" });
+};
 
 /* ─────────────────────────────────────────────
    Editorial hero — meta strip, oversized watermark,
@@ -1018,7 +1020,7 @@ const PrivateDistributionIndex = () => {
                         lineHeight: 1.6,
                       }}
                     >
-                      {featured.sections.length} dossiers
+                      {featured.sections.reduce((n, s: any) => n + (s.properties?.length || s.watching?.length || 0), 0)} opportunities
                     </p>
                   </div>
                   <div>

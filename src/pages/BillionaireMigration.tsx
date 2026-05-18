@@ -69,7 +69,7 @@ const BillionaireMigration = () => {
         description: "Why founders and billionaires are relocating to Austin TX. How wealth migration is reshaping Lake Austin, Westlake, and the luxury real estate market.",
         datePublished: "2026-02-15",
         author: "Taylor Sherwood",
-        url: "https://www.echelonpropertygroup.com/blog/why-billionaires-are-moving-to-austin",
+        url: "https://www.echelonpropertygroup.com/why-billionaires-are-moving-to-austin",
       })} />
       <Navigation />
 

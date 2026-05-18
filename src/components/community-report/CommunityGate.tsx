@@ -60,7 +60,14 @@ const CommunityGate = ({
 
     // 2. Server-verify the lead and fetch the gated payload. The full
     //    report data only reaches the browser after this call succeeds.
-    const community = await fetchUnlockedReport(slug, email.trim());
+    const community = await fetchUnlockedReport(slug, {
+      first_name: firstName.trim(),
+      last_name: lastName.trim(),
+      email: email.trim(),
+      phone: getPhoneDigits(phone),
+      community_name: communityName,
+      interest,
+    });
     setSubmitting(false);
 
     if (!community) {

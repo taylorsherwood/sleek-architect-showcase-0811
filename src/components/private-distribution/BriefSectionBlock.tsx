@@ -95,8 +95,9 @@ const statusStyle = (status: PropertyFeature["status"]): React.CSSProperties => 
     alignSelf: "flex-start",
   };
   if (status === "Pre-Market") {
-    return { ...base, background: "transparent", color: NAVY, border: `1px solid ${NAVY}` };
+    return { ...base, background: NAVY, color: PAPER };
   }
+
   if (status === "Active" || status === "Off-Market") {
     return { ...base, background: NAVY, color: PAPER };
   }

@@ -34,22 +34,47 @@ const BriefHero = ({ edition }: { edition: BriefEdition }) => (
     className="relative w-full overflow-hidden"
     style={{ background: PAPER, color: NAVY }}
   >
-    <div className="max-w-[880px] mx-auto px-6 md:px-12 pt-32 md:pt-40 pb-12 md:pb-16 relative">
-      {/* Oversized watermark behind the title */}
+    {/* Faint editorial grid */}
+    <div
+      aria-hidden="true"
+      className="absolute inset-0 pointer-events-none"
+      style={{
+        backgroundImage:
+          "linear-gradient(to right, rgba(12,15,36,0.04) 1px, transparent 1px)",
+        backgroundSize: "minmax(120px, 16.6666%) 100%",
+        opacity: 0.6,
+        maskImage:
+          "linear-gradient(to bottom, transparent 0%, #000 18%, #000 82%, transparent 100%)",
+        WebkitMaskImage:
+          "linear-gradient(to bottom, transparent 0%, #000 18%, #000 82%, transparent 100%)",
+      }}
+    />
+    {/* Soft top gold wash */}
+    <div
+      aria-hidden="true"
+      className="absolute inset-x-0 top-0 h-[260px] pointer-events-none"
+      style={{
+        background:
+          "radial-gradient(ellipse at 50% 0%, rgba(185,160,108,0.10), transparent 65%)",
+      }}
+    />
+
+    <div className="max-w-[920px] mx-auto px-6 md:px-12 pt-32 md:pt-44 pb-16 md:pb-24 relative">
+      {/* Oversized watermark */}
       {edition.watermark && (
         <span
           aria-hidden="true"
           className="absolute pointer-events-none select-none"
           style={{
-            bottom: "8px",
-            right: "-6px",
+            bottom: "-12px",
+            right: "-14px",
             fontFamily: '"Cinzel", serif',
             fontWeight: 400,
-            fontSize: "clamp(110px, 22vw, 210px)",
-            lineHeight: 0.85,
+            fontSize: "clamp(140px, 26vw, 260px)",
+            lineHeight: 0.82,
             letterSpacing: "0.02em",
             color: NAVY,
-            opacity: 0.04,
+            opacity: 0.045,
             whiteSpace: "nowrap",
             zIndex: 0,
           }}
@@ -58,95 +83,147 @@ const BriefHero = ({ edition }: { edition: BriefEdition }) => (
         </span>
       )}
 
-      <div
-        className="relative z-10 pt-4"
-        style={{ borderTop: `1px solid rgba(12,15,36,0.18)` }}
-      >
-        {/* Meta strip */}
-        <p
-          className="text-center mb-8"
-          style={{
-            fontFamily: '"Jost", sans-serif',
-            fontSize: "9.5px",
-            letterSpacing: "0.36em",
-            textTransform: "uppercase",
-            color: MUTED,
-            opacity: 0.85,
-            paddingTop: "14px",
-          }}
+      <div className="relative z-10">
+        {/* Top meta rail — confidential ledger feel */}
+        <div
+          className="flex items-center justify-between pb-5 mb-10"
+          style={{ borderBottom: `1px solid rgba(12,15,36,0.12)` }}
         >
-          {[edition.volume, edition.issueNumber, formatMonthYear(edition.publishedAt), "Austin, TX"]
-            .filter(Boolean)
-            .map((v, i, arr) => (
-              <span key={i}>
-                {v}
-                {i < arr.length - 1 && (
-                  <span className="mx-2 opacity-60" aria-hidden="true">·</span>
-                )}
-              </span>
-            ))}
-        </p>
-
-        {/* Eyebrow with trailing gold rule */}
-        <div className="flex items-center gap-3.5 mb-6 md:mb-7">
           <span
             style={{
               fontFamily: '"Jost", sans-serif',
-              fontSize: "10px",
-              letterSpacing: "0.44em",
+              fontSize: "9.5px",
+              letterSpacing: "0.4em",
               textTransform: "uppercase",
               color: GOLD_DEEP,
               fontWeight: 500,
-              whiteSpace: "nowrap",
             }}
           >
-            Private Distribution
+            Echelon · Private Distribution
           </span>
           <span
-            aria-hidden="true"
-            className="flex-1 max-w-[120px] h-px"
-            style={{ background: GOLD, opacity: 0.55 }}
-          />
+            className="hidden sm:inline"
+            style={{
+              fontFamily: '"Jost", sans-serif',
+              fontSize: "9.5px",
+              letterSpacing: "0.32em",
+              textTransform: "uppercase",
+              color: MUTED,
+            }}
+          >
+            Confidential · Not for redistribution
+          </span>
         </div>
 
-        {/* Headline — centered, dominant */}
+        {/* Volume / issue / date / market */}
+        <div className="flex flex-wrap items-center gap-x-5 gap-y-2 mb-10 md:mb-14">
+          {[edition.volume, edition.issueNumber, formatMonthYear(edition.publishedAt), edition.market]
+            .filter(Boolean)
+            .map((v, i, arr) => (
+              <span key={i} className="flex items-center gap-5">
+                <span
+                  style={{
+                    fontFamily: '"Jost", sans-serif',
+                    fontSize: "10px",
+                    letterSpacing: "0.34em",
+                    textTransform: "uppercase",
+                    color: i === arr.length - 1 ? NAVY : MUTED,
+                    fontWeight: i === arr.length - 1 ? 500 : 400,
+                  }}
+                >
+                  {v}
+                </span>
+                {i < arr.length - 1 && (
+                  <span
+                    aria-hidden="true"
+                    className="h-[3px] w-[3px] rounded-full"
+                    style={{ background: GOLD, opacity: 0.7 }}
+                  />
+                )}
+              </span>
+            ))}
+        </div>
+
+        {/* Headline */}
         <h1
-          className="text-center mb-8 md:mb-10"
+          className="mb-10 md:mb-12"
           style={{
             fontFamily: '"Cinzel", serif',
             fontWeight: 500,
-            fontSize: "clamp(36px, 7vw, 66px)",
-            letterSpacing: "0.045em",
-            lineHeight: 1.05,
+            fontSize: "clamp(34px, 6.4vw, 64px)",
+            letterSpacing: "0.04em",
+            lineHeight: 1.06,
             color: NAVY,
-            margin: "0 0 38px",
+            maxWidth: "880px",
           }}
         >
           {edition.title}
         </h1>
 
-        {/* Deck — right-offset italic */}
-        <div className="flex md:justify-end">
+        {/* Two-column deck + advisory line */}
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-8 md:gap-12 items-start">
           <p
-            className="max-w-full md:max-w-[360px] md:pr-2"
             style={{
               fontFamily: '"Cinzel", serif',
               fontStyle: "italic",
               fontWeight: 400,
-              fontSize: "16px",
+              fontSize: "17px",
               lineHeight: 1.75,
               color: NAVY,
-              opacity: 0.62,
-              textAlign: "left",
+              opacity: 0.72,
             }}
           >
             {edition.subtitle}
           </p>
+          <span
+            aria-hidden="true"
+            className="hidden md:block self-stretch w-px"
+            style={{ background: "rgba(185,160,108,0.45)" }}
+          />
+          <div
+            className="md:text-right"
+            style={{
+              fontFamily: '"Jost", sans-serif',
+              fontSize: "11px",
+              letterSpacing: "0.22em",
+              textTransform: "uppercase",
+              color: GOLD_DEEP,
+              fontWeight: 500,
+              lineHeight: 1.9,
+            }}
+          >
+            Prepared by
+            <span
+              className="block mt-1"
+              style={{
+                fontFamily: '"Cinzel", serif',
+                textTransform: "none",
+                letterSpacing: "0.05em",
+                fontSize: "15px",
+                color: NAVY,
+                fontWeight: 500,
+              }}
+            >
+              {edition.signOff?.name ?? "Echelon Advisory Desk"}
+            </span>
+            <span
+              className="block mt-1"
+              style={{
+                color: MUTED,
+                fontWeight: 400,
+                letterSpacing: "0.26em",
+                fontSize: "9.5px",
+              }}
+            >
+              {edition.signOff?.title ?? "Private Market Desk"}
+            </span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 );
+
 
 /* ─── Editor's note (public, indexable teaser) ─── */
 

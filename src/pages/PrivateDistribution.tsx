@@ -61,160 +61,138 @@ const BriefHero = ({ edition }: { edition: BriefEdition }) => (
       }}
     />
 
-    <div className="max-w-[920px] mx-auto px-6 md:px-12 pt-32 md:pt-44 pb-16 md:pb-24 relative">
-      {/* Oversized watermark */}
-      {edition.watermark && (
-        <span
-          aria-hidden="true"
-          className="absolute pointer-events-none select-none"
-          style={{
-            bottom: "-12px",
-            right: "-14px",
-            fontFamily: '"Cinzel", serif',
-            fontWeight: 400,
-            fontSize: "clamp(140px, 26vw, 260px)",
-            lineHeight: 0.82,
-            letterSpacing: "0.02em",
-            color: NAVY,
-            opacity: 0.045,
-            whiteSpace: "nowrap",
-            zIndex: 0,
-          }}
-        >
-          {edition.watermark}
-        </span>
-      )}
-
+    <div className="max-w-[1080px] mx-auto px-6 md:px-12 pt-28 md:pt-36 pb-14 md:pb-20 relative">
       <div className="relative z-10">
-        {/* Top meta rail — confidential ledger feel */}
+        {/* Top meta rail */}
         <div
-          className="flex items-center justify-between pb-5 mb-10"
-          style={{ borderBottom: `1px solid rgba(12,15,36,0.12)` }}
+          className="flex items-center justify-between pb-5 mb-12 md:mb-16"
+          style={{ borderBottom: `1px solid rgba(12,15,36,0.10)` }}
         >
           <span
             style={{
-              fontFamily: '"Jost", sans-serif',
-              fontSize: "9.5px",
-              letterSpacing: "0.4em",
+              fontFamily: '"Cinzel", serif',
+              fontSize: "11px",
+              letterSpacing: "0.34em",
               textTransform: "uppercase",
-              color: GOLD_DEEP,
+              color: NAVY,
               fontWeight: 500,
             }}
           >
-            Echelon · Private Distribution
+            Echelon · Advisory Edition
           </span>
           <span
             className="hidden sm:inline"
             style={{
               fontFamily: '"Jost", sans-serif',
-              fontSize: "9.5px",
+              fontSize: "10px",
               letterSpacing: "0.32em",
               textTransform: "uppercase",
               color: MUTED,
             }}
           >
-            Confidential · Not for redistribution
+            By Invitation
           </span>
         </div>
 
-        {/* Volume / issue / date / market */}
-        <div className="flex flex-wrap items-center gap-x-5 gap-y-2 mb-10 md:mb-14">
-          {[edition.volume, edition.issueNumber, formatMonthYear(edition.publishedAt), edition.market]
-            .filter(Boolean)
-            .map((v, i, arr) => (
-              <span key={i} className="flex items-center gap-5">
-                <span
-                  style={{
-                    fontFamily: '"Jost", sans-serif',
-                    fontSize: "10px",
-                    letterSpacing: "0.34em",
-                    textTransform: "uppercase",
-                    color: i === arr.length - 1 ? NAVY : MUTED,
-                    fontWeight: i === arr.length - 1 ? 500 : 400,
-                  }}
-                >
-                  {v}
-                </span>
-                {i < arr.length - 1 && (
-                  <span
-                    aria-hidden="true"
-                    className="h-[3px] w-[3px] rounded-full"
-                    style={{ background: GOLD, opacity: 0.7 }}
-                  />
-                )}
+        {/* Editorial cover: headline (left) + meta column (right) */}
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-y-12 md:gap-x-16">
+          <div className="md:col-span-8">
+            <div className="flex items-center gap-3 mb-6">
+              <span
+                aria-hidden="true"
+                className="h-px w-8"
+                style={{ background: GOLD, opacity: 0.85 }}
+              />
+              <span
+                style={{
+                  fontFamily: '"Jost", sans-serif',
+                  fontSize: "10px",
+                  letterSpacing: "0.36em",
+                  textTransform: "uppercase",
+                  color: GOLD_DEEP,
+                  fontWeight: 500,
+                }}
+              >
+                {edition.market}
               </span>
-            ))}
-        </div>
+            </div>
 
-        {/* Headline */}
-        <h1
-          className="mb-10 md:mb-12"
-          style={{
-            fontFamily: '"Cinzel", serif',
-            fontWeight: 500,
-            fontSize: "clamp(34px, 6.4vw, 64px)",
-            letterSpacing: "0.04em",
-            lineHeight: 1.06,
-            color: NAVY,
-            maxWidth: "880px",
-          }}
-        >
-          {edition.title}
-        </h1>
-
-        {/* Two-column deck + advisory line */}
-        <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-8 md:gap-12 items-start">
-          <p
-            style={{
-              fontFamily: '"Cinzel", serif',
-              fontStyle: "italic",
-              fontWeight: 400,
-              fontSize: "17px",
-              lineHeight: 1.75,
-              color: NAVY,
-              opacity: 0.72,
-            }}
-          >
-            {edition.subtitle}
-          </p>
-          <div
-            className="md:text-right"
-            style={{
-              fontFamily: '"Jost", sans-serif',
-              fontSize: "11px",
-              letterSpacing: "0.22em",
-              textTransform: "uppercase",
-              color: GOLD_DEEP,
-              fontWeight: 500,
-              lineHeight: 1.9,
-            }}
-          >
-            Prepared by
-            <span
-              className="block mt-1"
+            <h1
+              className="mb-8 max-w-[18ch]"
               style={{
                 fontFamily: '"Cinzel", serif',
-                textTransform: "none",
-                letterSpacing: "0.05em",
-                fontSize: "15px",
-                color: NAVY,
                 fontWeight: 500,
+                fontSize: "clamp(30px, 4.2vw, 48px)",
+                letterSpacing: "0.03em",
+                lineHeight: 1.1,
+                color: NAVY,
               }}
             >
-              {edition.signOff?.name ?? "Echelon Advisory Desk"}
-            </span>
-            <span
-              className="block mt-1"
+              {edition.title}
+            </h1>
+
+            <p
+              className="max-w-[560px]"
               style={{
-                color: MUTED,
+                fontFamily: '"Cinzel", serif',
+                fontStyle: "italic",
                 fontWeight: 400,
-                letterSpacing: "0.26em",
-                fontSize: "9.5px",
+                fontSize: "16px",
+                lineHeight: 1.8,
+                color: NAVY,
+                opacity: 0.72,
               }}
             >
-              {edition.signOff?.title ?? "Private Market Desk"}
-            </span>
+              {edition.subtitle}
+            </p>
           </div>
+
+          {/* Right meta column */}
+          <aside
+            className="md:col-span-4 md:pt-2"
+            aria-label="Edition details"
+          >
+            <div
+              className="pl-6 md:pl-8 space-y-6"
+              style={{ borderLeft: `1px solid ${RULE}` }}
+            >
+              {[
+                edition.volume && { k: "Series", v: edition.volume },
+                edition.issueNumber && { k: "Edition", v: edition.issueNumber },
+                { k: "Published", v: formatMonthYear(edition.publishedAt) },
+                edition.signOff?.name && { k: "Prepared by", v: edition.signOff.name },
+              ]
+                .filter(Boolean)
+                .map((row: any) => (
+                  <div key={row.k}>
+                    <p
+                      style={{
+                        fontFamily: '"Jost", sans-serif',
+                        fontSize: "9px",
+                        letterSpacing: "0.34em",
+                        textTransform: "uppercase",
+                        color: GOLD_DEEP,
+                        marginBottom: "4px",
+                        fontWeight: 500,
+                      }}
+                    >
+                      {row.k}
+                    </p>
+                    <p
+                      style={{
+                        fontFamily: '"Cinzel", serif',
+                        fontSize: "13px",
+                        letterSpacing: "0.04em",
+                        color: NAVY,
+                        fontWeight: 500,
+                      }}
+                    >
+                      {row.v}
+                    </p>
+                  </div>
+                ))}
+            </div>
+          </aside>
         </div>
       </div>
     </div>
@@ -545,83 +523,61 @@ const PrivateDistributionIndex = () => {
       />
       <Navigation />
 
+      {/* ───────────── Editorial cover — light, modular, collectible ───────────── */}
       <section
         className="relative w-full overflow-hidden"
-        style={{ background: NAVY, color: PAPER }}
+        style={{ background: PAPER, color: NAVY }}
       >
-        {/* Ultra-subtle paper grain across navy */}
+        {/* Whisper-soft gold wash at top */}
         <div
           aria-hidden="true"
-          className="absolute inset-0 pointer-events-none"
+          className="absolute inset-x-0 top-0 h-[220px] pointer-events-none"
           style={{
-            backgroundImage:
-              "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 0.94  0 0 0 0 0.82  0 0 0 0.5 0'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='0.55'/></svg>\")",
-            backgroundSize: "220px 220px",
-            opacity: 0.18,
-            mixBlendMode: "overlay",
-          }}
-        />
-        {/* Faint diagonal grid */}
-        <div
-          aria-hidden="true"
-          className="absolute inset-0 pointer-events-none"
-          style={{
-            backgroundImage:
-              "linear-gradient(to right, rgba(245,243,239,0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(245,243,239,0.02) 1px, transparent 1px)",
-            backgroundSize: "140px 140px",
-            maskImage:
-              "radial-gradient(ellipse 70% 60% at 30% 45%, #000 30%, transparent 100%)",
-            WebkitMaskImage:
-              "radial-gradient(ellipse 70% 60% at 30% 45%, #000 30%, transparent 100%)",
-          }}
-        />
-        {/* Warm spotlight glow behind headline */}
-        <div
-          aria-hidden="true"
-          className="absolute pointer-events-none"
-          style={{
-            top: "18%",
-            left: "-8%",
-            width: "780px",
-            height: "560px",
             background:
-              "radial-gradient(ellipse, rgba(185,160,108,0.14), rgba(185,160,108,0.045) 40%, transparent 70%)",
-            filter: "blur(20px)",
+              "radial-gradient(ellipse at 50% 0%, rgba(185,160,108,0.07), transparent 70%)",
           }}
         />
-        {/* Oversized watermark — embedded, blurred */}
-        <span
-          aria-hidden="true"
-          className="absolute pointer-events-none select-none hidden md:block"
-          style={{
-            bottom: "-60px",
-            left: "-40px",
-            fontFamily: '"Cinzel", serif',
-            fontSize: "clamp(180px, 30vw, 360px)",
-            lineHeight: 0.82,
-            letterSpacing: "0.02em",
-            color: PAPER,
-            opacity: 0.014,
-            whiteSpace: "nowrap",
-            filter: "blur(1.5px)",
-          }}
-        >
-          Private
-        </span>
 
-        <div className="relative max-w-[1180px] mx-auto px-6 md:px-12 pt-36 md:pt-56 pb-28 md:pb-44">
+        <div className="relative max-w-[1140px] mx-auto px-6 md:px-12 pt-28 md:pt-36 pb-20 md:pb-28">
+          {/* Top masthead rail */}
+          <div
+            className="flex items-center justify-between pb-5 mb-14 md:mb-20"
+            style={{ borderBottom: `1px solid rgba(12,15,36,0.10)` }}
+          >
+            <span
+              style={{
+                fontFamily: '"Cinzel", serif',
+                fontSize: "11px",
+                letterSpacing: "0.36em",
+                textTransform: "uppercase",
+                color: NAVY,
+                fontWeight: 500,
+              }}
+            >
+              Echelon · Private Distribution
+            </span>
+            <span
+              className="hidden sm:inline"
+              style={{
+                fontFamily: '"Jost", sans-serif',
+                fontSize: "10px",
+                letterSpacing: "0.32em",
+                textTransform: "uppercase",
+                color: MUTED,
+              }}
+            >
+              Est. Austin · By Invitation
+            </span>
+          </div>
 
-
-
-          {/* Asymmetric editorial composition */}
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-y-20 md:gap-y-0 md:gap-x-12">
-            {/* LEFT — headline & deck (cols 1-8) */}
-            <div className="md:col-span-8 md:pr-6">
-              <div className="flex items-center gap-3 mb-8">
+          {/* Cover composition: left eyebrow + headline, right meta column */}
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-y-14 md:gap-x-16">
+            <div className="md:col-span-8">
+              <div className="flex items-center gap-3 mb-6">
                 <span
-                  className="h-px w-10"
-                  style={{ background: GOLD, opacity: 0.7 }}
                   aria-hidden="true"
+                  className="h-px w-8"
+                  style={{ background: GOLD, opacity: 0.85 }}
                 />
                 <span
                   style={{
@@ -629,185 +585,88 @@ const PrivateDistributionIndex = () => {
                     fontSize: "10px",
                     letterSpacing: "0.36em",
                     textTransform: "uppercase",
-                    color: GOLD,
+                    color: GOLD_DEEP,
                     fontWeight: 500,
                   }}
                 >
-                  Private Market Intelligence
+                  Featured Market Intelligence
                 </span>
               </div>
+
               <h1
-                className="mb-10 max-w-[14ch]"
+                className="mb-8 max-w-[20ch]"
                 style={{
                   fontFamily: '"Cinzel", serif',
                   fontWeight: 500,
-                  fontSize: "clamp(34px, 5.2vw, 60px)",
-                  letterSpacing: "0.035em",
-                  lineHeight: 1.02,
+                  fontSize: "clamp(30px, 4.4vw, 50px)",
+                  letterSpacing: "0.025em",
+                  lineHeight: 1.1,
+                  color: NAVY,
                 }}
               >
-                Private market intelligence for Austin's most guarded zip codes.
+                Curated private market intelligence, edition by edition.
               </h1>
 
-              <div className="grid grid-cols-1 md:grid-cols-[auto_1fr] gap-x-6 gap-y-4 items-start max-w-[640px]">
-                <span
-                  aria-hidden="true"
-                  className="hidden md:block mt-3 h-px w-10"
-                  style={{ background: "rgba(185,160,108,0.55)" }}
-                />
-                <p
-                  style={{
-                    fontFamily: '"Cinzel", serif',
-                    fontStyle: "italic",
-                    fontSize: "17px",
-                    lineHeight: 1.75,
-                    color: "rgba(245,243,239,0.74)",
-                    fontWeight: 400,
-                  }}
-                >
-                  {featured?.subtitle ??
-                    "A confidential brief distributed monthly to a narrow audience of buyers, sellers, and capital allocators."}
-                </p>
-              </div>
-
-              {/* Pull-stat treatment */}
-              <div
-                className="mt-14 md:mt-20 inline-flex items-end gap-5 pl-5"
-                style={{ borderLeft: `1px solid rgba(185,160,108,0.45)` }}
+              <p
+                className="max-w-[560px]"
+                style={{
+                  fontFamily: '"Cinzel", serif',
+                  fontStyle: "italic",
+                  fontSize: "16px",
+                  lineHeight: 1.8,
+                  color: NAVY,
+                  opacity: 0.7,
+                  fontWeight: 400,
+                }}
               >
-                <span
-                  style={{
-                    fontFamily: '"Cinzel", serif',
-                    fontWeight: 500,
-                    fontSize: "clamp(38px, 4.4vw, 54px)",
-                    letterSpacing: "0.02em",
-                    lineHeight: 1,
-                    color: PAPER,
-                  }}
-                >
-                  ≈ 68%
-                </span>
-                <span
-                  className="pb-2 max-w-[220px]"
-                  style={{
-                    fontFamily: '"Jost", sans-serif',
-                    fontSize: "10.5px",
-                    letterSpacing: "0.22em",
-                    textTransform: "uppercase",
-                    color: "rgba(245,243,239,0.55)",
-                    lineHeight: 1.6,
-                  }}
-                >
-                  of featured opportunities transact before reaching the open market
-                </span>
-              </div>
+                A rotating series of advisory briefings on Austin's most considered neighborhoods, off-market opportunities, and private collections — circulated to a narrow audience.
+              </p>
             </div>
 
-            {/* RIGHT — metadata panel (cols 10-12), pushed down */}
-            <div className="hidden md:block md:col-span-4 md:col-start-10 md:pt-40">
-              <div className="relative">
-                {/* Layered transparency panel */}
-                <div
-                  aria-hidden="true"
-                  className="absolute -inset-x-5 -inset-y-6 pointer-events-none"
-                  style={{
-                    background: "rgba(245,243,239,0.018)",
-                    border: "1px solid rgba(245,243,239,0.05)",
-                  }}
-                />
-                {/* Registration crosshairs */}
+            {/* Right meta column — collectible publication chrome */}
+            <aside
+              className="md:col-span-4 md:pt-2"
+              aria-label="Publication details"
+            >
+              <div
+                className="pl-6 md:pl-8 space-y-6"
+                style={{ borderLeft: `1px solid ${RULE}` }}
+              >
                 {[
-                  { top: -10, left: -10 },
-                  { top: -10, right: -10 },
-                  { bottom: -10, left: -10 },
-                  { bottom: -10, right: -10 },
-                ].map((p, i) => (
-                  <span
-                    key={i}
-                    aria-hidden="true"
-                    className="absolute pointer-events-none"
-                    style={{
-                      ...p,
-                      width: 9,
-                      height: 9,
-                    }}
-                  >
-                    <span
-                      className="absolute left-1/2 top-0 bottom-0 w-px -translate-x-1/2"
-                      style={{ background: "rgba(185,160,108,0.55)" }}
-                    />
-                    <span
-                      className="absolute top-1/2 left-0 right-0 h-px -translate-y-1/2"
-                      style={{ background: "rgba(185,160,108,0.55)" }}
-                    />
-                  </span>
+                  { k: "Series", v: "Advisory Edition" },
+                  { k: "Cadence", v: "Monthly · Rotating Markets" },
+                  { k: "Audience", v: "Qualified · By Invitation" },
+                  { k: "Format", v: "Off-Market · Editorial" },
+                ].map((row) => (
+                  <div key={row.k}>
+                    <p
+                      style={{
+                        fontFamily: '"Jost", sans-serif',
+                        fontSize: "9px",
+                        letterSpacing: "0.34em",
+                        textTransform: "uppercase",
+                        color: GOLD_DEEP,
+                        marginBottom: "4px",
+                        fontWeight: 500,
+                      }}
+                    >
+                      {row.k}
+                    </p>
+                    <p
+                      style={{
+                        fontFamily: '"Cinzel", serif',
+                        fontSize: "13px",
+                        letterSpacing: "0.04em",
+                        color: NAVY,
+                        fontWeight: 500,
+                      }}
+                    >
+                      {row.v}
+                    </p>
+                  </div>
                 ))}
-
-                <div
-                  className="relative pl-7 space-y-5"
-                  style={{ borderLeft: `1px solid rgba(185,160,108,0.4)` }}
-                >
-                  <p
-                    className="-ml-7 pl-7 pb-3 mb-1"
-                    style={{
-                      fontFamily: '"Jost", sans-serif',
-                      fontSize: "9px",
-                      letterSpacing: "0.36em",
-                      textTransform: "uppercase",
-                      color: "rgba(185,160,108,0.85)",
-                      borderBottom: "1px solid rgba(245,243,239,0.07)",
-                    }}
-                  >
-                    Memorandum · Section Index
-                  </p>
-                  {[
-                    { i: "I", k: "Frequency", v: "Monthly · Recurring" },
-                    { i: "II", k: "Audience", v: "Qualified · Narrow" },
-                    { i: "III", k: "Format", v: "Off-MLS · Advisory" },
-                    { i: "IV", k: "Origin", v: "Austin, TX" },
-                  ].map((row) => (
-                    <div key={row.k} className="grid grid-cols-[18px_1fr] gap-x-3">
-                      <span
-                        style={{
-                          fontFamily: '"Cinzel", serif',
-                          fontSize: "10px",
-                          letterSpacing: "0.18em",
-                          color: "rgba(185,160,108,0.75)",
-                          paddingTop: "2px",
-                        }}
-                      >
-                        {row.i}
-                      </span>
-                      <div>
-                        <p
-                          style={{
-                            fontFamily: '"Jost", sans-serif',
-                            fontSize: "9px",
-                            letterSpacing: "0.32em",
-                            textTransform: "uppercase",
-                            color: "rgba(185,160,108,0.85)",
-                            marginBottom: "4px",
-                          }}
-                        >
-                          {row.k}
-                        </p>
-                        <p
-                          style={{
-                            fontFamily: '"Cinzel", serif',
-                            fontSize: "13.5px",
-                            letterSpacing: "0.04em",
-                            color: PAPER,
-                            fontWeight: 400,
-                          }}
-                        >
-                          {row.v}
-                        </p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
               </div>
-            </div>
+            </aside>
           </div>
         </div>
       </section>
@@ -840,7 +699,7 @@ const PrivateDistributionIndex = () => {
                   fontWeight: 500,
                 }}
               >
-                CURRENT EDITION · MAY 2026
+                Current Edition · {formatMonthYear(featured.publishedAt)}
               </span>
             </div>
 

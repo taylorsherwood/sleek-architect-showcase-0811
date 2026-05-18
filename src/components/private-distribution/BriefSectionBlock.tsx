@@ -115,7 +115,7 @@ const PropertyCard = ({ p, isLast }: { p: PropertyFeature; isLast: boolean }) =>
       style={{
         aspectRatio: "4 / 3",
         background: `linear-gradient(135deg, ${NAVY} 0%, #1a1f3a 100%)`,
-        borderRadius: "2px",
+        borderRadius: "0px",
       }}
     >
       {p.image ? (

@@ -1,6 +1,6 @@
 import { useState, FormEvent } from "react";
 import { formatPhoneNumber, getPhoneDigits, submitLeadToZapier } from "@/lib/formUtils";
-import { setUnlocked, getUtmParams } from "@/lib/communityUnlock";
+import { fetchUnlockedReport, getUtmParams } from "@/lib/communityUnlock";
 
 interface CommunityGateProps {
   slug: string;
@@ -40,8 +40,7 @@ const CommunityGate = ({
     const sourceTag = `Community Report - ${communityName}`;
     const utm = getUtmParams();
 
-    // Post through the shared validated submitter. It stores the lead in /admin
-    // and sends Zapier from one intentional submit request only.
+    // 1. Insert the lead (also dispatches Zapier).
     const message = `Community report unlock — ${communityName}${interest ? ` | Interest: ${interest}` : ""}`;
     await submitLeadToZapier({
       name: `${firstName.trim()} ${lastName.trim()}`,
@@ -59,8 +58,23 @@ const CommunityGate = ({
       },
     });
 
-    setUnlocked(slug);
+    // 2. Server-verify the lead and fetch the gated payload. The full
+    //    report data only reaches the browser after this call succeeds.
+    const community = await fetchUnlockedReport(slug, {
+      first_name: firstName.trim(),
+      last_name: lastName.trim(),
+      email: email.trim(),
+      phone: getPhoneDigits(phone),
+      community_name: communityName,
+      interest,
+    });
     setSubmitting(false);
+
+    if (!community) {
+      setError("We couldn't verify access. Please try again in a moment.");
+      return;
+    }
+
     onUnlock();
   };
 

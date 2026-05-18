@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
 import { CommunityRecord } from "@/types/community";
 import { toCommunityRecord } from "@/lib/communityCoerce";
-import { isUnlocked } from "@/lib/communityUnlock";
+import { getCachedUnlock } from "@/lib/communityUnlock";
 import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, {
@@ -25,6 +25,13 @@ const RealScoutListings = lazy(() => import("@/components/RealScoutListings"));
 
 const SITE_URL = "https://www.echelonpropertygroup.com";
 
+// Public teaser columns — these are the only `communities` columns granted to
+// anon. Gated columns (full_overview, demographics, market_stats, schools,
+// transit, our_take, local_highlights) come from the get-community-report
+// edge function after server-side verification.
+const TEASER_COLUMNS =
+  "id, slug, name, city, county, hero_image_url, hero_overlay_opacity, tagline, teaser_summary, highlights, faqs, related_communities, sort_order, published, seo_title, meta_description, canonical_url, gate_enabled, gate_headline, gate_subheadline, thank_you_message, updated_at";
+
 const CommunityReportPage = () => {
   const { slug } = useParams<{ slug: string }>();
   const [community, setCommunity] = useState<CommunityRecord | null>(null);
@@ -36,15 +43,27 @@ const CommunityReportPage = () => {
     setLoading(true);
     supabase
       .from("communities")
-      .select("*")
+      .select(TEASER_COLUMNS)
       .eq("slug", slug)
       .eq("published", true)
       .maybeSingle()
       .then(({ data }) => {
-        setCommunity(data ? toCommunityRecord(data) : null);
+        const teaser = data ? toCommunityRecord(data) : null;
+        const cached = getCachedUnlock(slug);
+        setCommunity(cached || teaser);
+        setUnlockedState(!!cached);
         setLoading(false);
       });
-    setUnlockedState(isUnlocked(slug));
+
+    const onUnlock = (e: Event) => {
+      const detail = (e as CustomEvent<{ slug?: string; community?: CommunityRecord }>).detail;
+      if (detail?.slug === slug && detail.community) {
+        setCommunity(detail.community);
+        setUnlockedState(true);
+      }
+    };
+    window.addEventListener("echelon:community-unlocked", onUnlock as EventListener);
+    return () => window.removeEventListener("echelon:community-unlocked", onUnlock as EventListener);
   }, [slug]);
 
   const navItems = useMemo(() => {

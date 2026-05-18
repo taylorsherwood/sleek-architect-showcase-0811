@@ -108,9 +108,44 @@ function buildRawEmail(opts: {
     .replace(/=+$/, "");
 }
 
+// ── Naive in-memory per-IP rate limiter ───────────────────────────────────
+// Resets on cold start; sufficient as a first line of defense against
+// scripted abuse. For stronger guarantees, move to a durable store.
+const RATE_WINDOW_MS = 60 * 60 * 1000; // 1 hour
+const RATE_MAX = 3;                    // 3 bookings / IP / hour
+const ipHits = new Map<string, number[]>();
+function rateLimited(ip: string): boolean {
+  const now = Date.now();
+  const arr = (ipHits.get(ip) || []).filter((t) => now - t < RATE_WINDOW_MS);
+  if (arr.length >= RATE_MAX) {
+    ipHits.set(ip, arr);
+    return true;
+  }
+  arr.push(now);
+  ipHits.set(ip, arr);
+  // Opportunistic cleanup
+  if (ipHits.size > 5000) {
+    for (const [k, v] of ipHits) {
+      const fresh = v.filter((t) => now - t < RATE_WINDOW_MS);
+      if (fresh.length === 0) ipHits.delete(k);
+      else ipHits.set(k, fresh);
+    }
+  }
+  return false;
+}
+
 Deno.serve(async (req) => {
   if (req.method === "OPTIONS") return new Response("ok", { headers: corsHeaders });
   if (req.method !== "POST") return json({ ok: false, error: "Method not allowed" }, 405);
+
+  // Rate-limit by client IP before doing any work
+  const ip =
+    req.headers.get("cf-connecting-ip") ||
+    req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ||
+    "unknown";
+  if (rateLimited(ip)) {
+    return json({ ok: false, error: "Too many booking attempts. Please try again later." }, 429);
+  }
 
   const lovableKey = Deno.env.get("LOVABLE_API_KEY");
   const calendarKey = Deno.env.get("GOOGLE_CALENDAR_API_KEY");
@@ -127,23 +162,35 @@ Deno.serve(async (req) => {
     return json({ ok: false, error: "Invalid JSON" }, 400);
   }
 
-  const name = (payload.name || "").trim();
-  const email = (payload.email || "").trim();
-  const phone = (payload.phone || "").trim();
+  const name = (payload.name || "").trim().slice(0, 200);
+  const email = (payload.email || "").trim().slice(0, 255);
+  const phone = (payload.phone || "").trim().slice(0, 30);
   const startISO = (payload.startISO || "").trim();
   const duration = Number(payload.durationMinutes) || 15;
 
   if (!name || !email || !phone || !startISO) {
     return json({ ok: false, error: "Missing required fields" }, 400);
   }
+  if (name.length < 2) {
+    return json({ ok: false, error: "Invalid name" }, 400);
+  }
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
     return json({ ok: false, error: "Invalid email" }, 400);
+  }
+  if (phone.replace(/\D/g, "").length < 7) {
+    return json({ ok: false, error: "Invalid phone" }, 400);
   }
   const startDate = new Date(startISO);
   if (Number.isNaN(startDate.getTime())) {
     return json({ ok: false, error: "Invalid startISO" }, 400);
   }
-  const endDate = new Date(startDate.getTime() + duration * 60 * 1000);
+  // Reject bookings in the past or absurdly far in the future
+  const now = Date.now();
+  const startMs = startDate.getTime();
+  if (startMs < now - 5 * 60 * 1000 || startMs > now + 180 * 24 * 60 * 60 * 1000) {
+    return json({ ok: false, error: "Invalid booking time" }, 400);
+  }
+  const endDate = new Date(startMs + duration * 60 * 1000);
 
   const displayDate = payload.displayDate || startDate.toLocaleDateString("en-US", {
     weekday: "long", month: "long", day: "numeric", year: "numeric", timeZone: "America/Chicago",

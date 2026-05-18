@@ -127,7 +127,7 @@ export const PRIVATE_DISTRIBUTION: BriefEdition[] = [
         chapter: "I",
         eyebrow: "Active · Off-Market",
         title: "Active · Off-Market",
-        count: "03 properties",
+        count: "04 properties",
         properties: [
           {
             status: "Pocket Listing",

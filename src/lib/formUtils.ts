@@ -161,13 +161,9 @@ export async function submitLeadToZapier(
       return { ok: false, error: String(response.error || "Submission failed.") };
     }
 
-    // eslint-disable-next-line no-console
-    console.log("Payload sent");
     return { ok: true };
   } catch (err) {
     const errMsg = err instanceof Error ? err.message : "Network error";
-    // eslint-disable-next-line no-console
-    console.error("[Zapier lead submission] ✗ dispatch error", err);
     return { ok: false, error: errMsg || "Network error. Please try again." };
   }
 }

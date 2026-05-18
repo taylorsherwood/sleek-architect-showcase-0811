@@ -119,13 +119,13 @@ const BriefHero = ({ edition }: { edition: BriefEdition }) => (
             </div>
 
             <h1
-              className="mb-8 max-w-[18ch]"
+              className="mb-9 max-w-[16ch]"
               style={{
                 fontFamily: '"Cinzel", serif',
                 fontWeight: 500,
-                fontSize: "clamp(30px, 4.2vw, 48px)",
-                letterSpacing: "0.03em",
-                lineHeight: 1.1,
+                fontSize: "clamp(32px, 4.2vw, 52px)",
+                letterSpacing: "-0.005em",
+                lineHeight: 1.02,
                 color: NAVY,
               }}
             >
@@ -133,15 +133,16 @@ const BriefHero = ({ edition }: { edition: BriefEdition }) => (
             </h1>
 
             <p
-              className="max-w-[560px]"
+              className="max-w-[520px]"
               style={{
                 fontFamily: '"Cinzel", serif',
                 fontStyle: "italic",
                 fontWeight: 400,
-                fontSize: "16px",
+                fontSize: "15.5px",
                 lineHeight: 1.8,
                 color: NAVY,
-                opacity: 0.72,
+                opacity: 0.7,
+                letterSpacing: "0.005em",
               }}
             >
               {edition.subtitle}

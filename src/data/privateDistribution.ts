@@ -9,7 +9,7 @@
 
 import almarionImg from "@/assets/private-distribution/almarion-drive.jpg";
 import flintridgeImg from "@/assets/private-distribution/flintridge-road.jpg";
-import mistywoodImg from "@/assets/private-distribution/mistywood-drive-interior.png";
+import mistywoodImg from "@/assets/private-distribution/mistywood-drive.jpg";
 
 
 export type BriefSectionType =

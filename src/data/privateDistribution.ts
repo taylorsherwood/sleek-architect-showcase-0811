@@ -33,6 +33,8 @@ export interface PropertyFeature {
   description: string;
   insightLabel?: string;  // default "Why It Matters"
   insight: string;
+  image?: string;         // imported asset URL
+  imageAlt?: string;
 }
 
 export interface WatchingItem {

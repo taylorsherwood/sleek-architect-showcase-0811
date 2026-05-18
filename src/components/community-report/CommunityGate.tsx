@@ -40,8 +40,7 @@ const CommunityGate = ({
     const sourceTag = `Community Report - ${communityName}`;
     const utm = getUtmParams();
 
-    // Post through the shared validated submitter. It stores the lead in /admin
-    // and sends Zapier from one intentional submit request only.
+    // 1. Insert the lead (also dispatches Zapier).
     const message = `Community report unlock — ${communityName}${interest ? ` | Interest: ${interest}` : ""}`;
     await submitLeadToZapier({
       name: `${firstName.trim()} ${lastName.trim()}`,
@@ -59,8 +58,16 @@ const CommunityGate = ({
       },
     });
 
-    setUnlocked(slug);
+    // 2. Server-verify the lead and fetch the gated payload. The full
+    //    report data only reaches the browser after this call succeeds.
+    const community = await fetchUnlockedReport(slug, email.trim());
     setSubmitting(false);
+
+    if (!community) {
+      setError("We couldn't verify access. Please try again in a moment.");
+      return;
+    }
+
     onUnlock();
   };
 

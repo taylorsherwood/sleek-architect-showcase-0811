@@ -91,7 +91,7 @@ const BriefHero = ({ edition }: { edition: BriefEdition }) => (
               color: MUTED,
             }}
           >
-            By Invitation
+            EST. 2018 AUSTIN · BY INVITATION
           </span>
         </div>
 

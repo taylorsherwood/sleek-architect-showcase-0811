@@ -310,6 +310,10 @@ While confidential transactions can dramatically limit public exposure during ma
 
 An experienced brokerage should explain these limitations clearly rather than overpromising absolute secrecy.
 
+### Property Tax Exposure and the Texas Non-Disclosure Advantage
+
+One often overlooked advantage of confidential property transactions in Texas is the potential impact on future property tax exposure. Because Texas is a non-disclosure state, sale prices are not publicly reported in the same way they are in many other states, and off-market transactions are typically never entered into the MLS database at all. While county appraisal districts can still estimate value through deed records, market activity, and other valuation methods, the absence of a publicly searchable MLS sale history can reduce the visibility and amplification of a transaction's exact pricing details. For high-value properties, particularly in <a href="/luxury-real-estate-austin" class="text-foreground underline hover:text-muted-foreground">Austin's luxury market</a> where public comparable sales can quickly influence surrounding assessments, maintaining discretion around a sale may help limit unnecessary appraisal attention and preserve stronger positioning during future property tax protests. Confidential transactions should never be viewed as a guarantee against reassessment, but strategic privacy can become another layer of long-term financial protection for luxury homeowners.
+
 ## Risks and Trade-Offs of Confidential Property Sales
 
 Confidential transactions provide significant advantages, but they also involve strategic trade-offs.

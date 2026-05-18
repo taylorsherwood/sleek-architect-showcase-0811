@@ -131,7 +131,7 @@ const BriefHero = ({ edition }: { edition: BriefEdition }) => (
                     fontWeight: i === arr.length - 1 ? 500 : 400,
                   }}
                 >
-                  {v === "Edition No. 04" ? "EDITION NO. 04" : v}
+                  {v}
                 </span>
                 {i < arr.length - 1 && (
                   <span

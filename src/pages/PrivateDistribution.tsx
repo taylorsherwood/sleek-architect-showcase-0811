@@ -721,7 +721,7 @@ const PrivateDistributionIndex = () => {
                   fontWeight: 500,
                 }}
               >
-                CURRENT EDITION · MAY 2026
+                Current Edition · {formatMonthYear(featured.publishedAt)}
               </span>
             </div>
 

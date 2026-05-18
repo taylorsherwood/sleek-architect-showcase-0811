@@ -589,7 +589,7 @@ Austin's luxury market rewards local knowledge. The difference between a good pu
 The reality is that many of Austin's most significant luxury transactions never appear publicly. Trophy waterfront estates, architecturally important homes, and legacy properties in neighborhoods like West Lake Hills, Barton Creek, Tarrytown, and Lake Austin frequently change hands quietly through trusted advisor networks before reaching traditional listing platforms.
 
 <a href="/about" class="text-foreground underline hover:text-muted-foreground">Echelon Property Group</a> specializes in helping discerning buyers navigate Austin's most competitive luxury neighborhoods, including access to <a href="/private-opportunities" class="text-foreground underline hover:text-muted-foreground">private and off-market opportunities</a> throughout the city's premier enclaves. Whether you're <a href="/moving-to-austin-texas" class="text-foreground underline hover:text-muted-foreground">relocating to Austin</a>, searching for a legacy estate, or evaluating which luxury neighborhood best aligns with your long-term vision, our advisory approach is designed to provide the market intelligence, discretion, and strategic guidance required at the highest level of Austin real estate. The first step is a <a href="/contact" class="text-foreground underline hover:text-muted-foreground">private conversation</a> conducted entirely on your terms.
-    \`,
+    `,
     author: "Taylor Sherwood",
     date: "2026-05-18",
     readTime: "12 min read",
@@ -597,6 +597,7 @@ The reality is that many of Austin's most significant luxury transactions never 
     image: blogBestLuxuryNeighborhoods,
     heroImage: blogBestLuxuryNeighborhoods
   },
+  {
     id: "austin-luxury-inventory-trends",
     title: "Austin Luxury Inventory Trends Right Now",
     metaTitle: "Austin Luxury Inventory Trends | Echelon Property Group",

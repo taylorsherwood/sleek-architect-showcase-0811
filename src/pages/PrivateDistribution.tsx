@@ -175,11 +175,6 @@ const BriefHero = ({ edition }: { edition: BriefEdition }) => (
           >
             {edition.subtitle}
           </p>
-          <span
-            aria-hidden="true"
-            className="hidden md:block self-stretch w-px"
-            style={{ background: "rgba(185,160,108,0.45)" }}
-          />
           <div
             className="md:text-right"
             style={{

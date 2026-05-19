@@ -62,7 +62,7 @@ const renderInline = (text: string) =>
 
 const renderHeading = (line: string): string => {
   if (line.startsWith("# ")) {
-    return `<h2 class="text-3xl md:text-4xl font-light text-architectural mb-6 mt-12">${line.substring(2)}</h2>`;
+    return `<h2 class="text-3xl md:text-4xl font-light text-architectural mb-6 mt-12 whitespace-pre-wrap">${line.substring(2)}</h2>`;
   }
   if (line.startsWith("## ")) {
     return `<h2 class="text-2xl md:text-3xl font-light text-architectural mb-5 mt-12">${line.substring(3)}</h2>`;

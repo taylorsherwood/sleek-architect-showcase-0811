@@ -129,7 +129,7 @@ const BlogPost = () => {
                 <span>By {post.author}</span>
               </div>
               
-              <h1 className="text-2xl sm:text-4xl md:text-6xl font-light text-architectural mb-6">
+              <h1 className="text-2xl sm:text-4xl md:text-6xl font-light text-architectural mb-6 whitespace-pre-wrap">
                 {post.title}
               </h1>
               

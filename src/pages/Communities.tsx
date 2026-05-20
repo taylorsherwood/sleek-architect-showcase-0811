@@ -9,7 +9,7 @@ const communityFaqs = [
   { question: "What is the average home price in Austin's luxury communities?", answer: "Prices vary by neighborhood. West lake Hills ranges from $1.2M to $20M+, Barton Creek from $1.5M to $15M+, and Lake Austin waterfront from $2M to $25M+. Entry-level luxury starts around $800K in neighborhoods like Tarrytown." },
   { question: "Which Austin neighborhood has the best schools?", answer: "West lake Hills, Barton Creek, and Rollingwood are served by the Eanes Independent School District, consistently ranked among the top districts in Texas." },
   { question: "Are there waterfront homes in Austin?", answer: "Yes. Lake Austin and Lake Travis offer waterfront estates with private docks, panoramic water views, and a resort-like lifestyle just minutes from downtown Austin." },
-  { question: "Barton Creek vs West lake Hills — which is better?", answer: "Both are premier Austin neighborhoods. Barton Creek offers gated country club living with championship golf and resort amenities, ideal for families and golf enthusiasts. West lake Hills provides sweeping Hill Country views, a wider price range, and more diverse architectural styles. Both share access to the top-rated Eanes ISD school district." },
+  { question: "Barton Creek vs West lake Hills, which is better?", answer: "Both are premier Austin neighborhoods. Barton Creek offers gated country club living with championship golf and resort amenities, ideal for families and golf enthusiasts. West lake Hills provides sweeping Hill Country views, a wider price range, and more diverse architectural styles. Both share access to the top-rated Eanes ISD school district." },
   { question: "What is the most expensive neighborhood in Austin?", answer: "Lake Austin waterfront is Austin's most expensive submarket, with estates regularly exceeding $10 million. West lake Hills and Barton Creek also feature ultra-luxury homes above $15 million. These neighborhoods offer limited inventory and the strongest long-term appreciation in the Austin market." },
 ];
 import { Link } from "react-router-dom";
@@ -21,7 +21,7 @@ const Communities = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Austin Luxury Living & Communities | Echelon Property Group"
-        description="Homes for sale in Austin's top neighborhoods — Westlake, Barton Creek, Lake Austin, Tarrytown, Rollingwood, and Dripping Springs."
+        description="Homes for sale in Austin's top neighborhoods, Westlake, Barton Creek, Lake Austin, Tarrytown, Rollingwood, and Dripping Springs."
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createBreadcrumbSchema([
@@ -89,7 +89,7 @@ const Communities = () => {
                         <img
                           src={img}
                           alt={`Luxury homes for sale in ${community.name}, Austin Texas`}
-                          title={`${community.name} homes for sale — Austin luxury real estate`}
+                          title={`${community.name} homes for sale, Austin luxury real estate`}
                           className={`w-full aspect-[4/5] object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.03]`}
                           loading="lazy" decoding="async"
                         />
@@ -108,7 +108,7 @@ const Communities = () => {
                         }}
                       />
                     </div>
-                    {/* Editorial caption block — anchored below image, not floating */}
+                    {/* Editorial caption block, anchored below image, not floating */}
                     <div className="pt-5 sm:pt-6">
                       <p className="text-[10px] sm:text-[11px] tracking-[0.25em] uppercase mb-2" style={{ color: "#b9a06c" }}>
                         {community.priceRange}
@@ -168,10 +168,10 @@ const Communities = () => {
             </h2>
             <div className="space-y-6 text-muted-foreground leading-relaxed">
               <p>
-                Austin, Texas is home to some of the most desirable luxury communities in the American Southwest. From the gated estates of <Link to="/barton-creek-homes-for-sale" className="text-foreground underline hover:text-muted-foreground">Barton Creek</Link> and <Link to="/communities/spanish-oaks" className="text-foreground underline hover:text-muted-foreground">Spanish Oaks</Link> to the <Link to="/lake-austin-waterfront-homes-for-sale" className="text-foreground underline hover:text-muted-foreground">waterfront properties along Lake Austin</Link> and <Link to="/lake-travis-waterfront-homes-for-sale" className="text-foreground underline hover:text-muted-foreground">Lake Travis</Link>, the city offers a remarkable diversity of high-end living environments — each with its own distinct character, amenities, and lifestyle appeal.
+                Austin, Texas is home to some of the most desirable luxury communities in the American Southwest. From the gated estates of <Link to="/barton-creek-homes-for-sale" className="text-foreground underline hover:text-muted-foreground">Barton Creek</Link> and <Link to="/communities/spanish-oaks" className="text-foreground underline hover:text-muted-foreground">Spanish Oaks</Link> to the <Link to="/lake-austin-waterfront-homes-for-sale" className="text-foreground underline hover:text-muted-foreground">waterfront properties along Lake Austin</Link> and <Link to="/lake-travis-waterfront-homes-for-sale" className="text-foreground underline hover:text-muted-foreground">Lake Travis</Link>, the city offers a remarkable diversity of high-end living environments, each with its own distinct character, amenities, and lifestyle appeal.
               </p>
               <p>
-                What makes Austin's luxury neighborhoods exceptional is the rare combination of natural beauty, urban convenience, and economic opportunity. Residents enjoy access to world-class dining, live music, outdoor recreation, and a thriving technology economy — all within a state that levies no personal income tax. Discover <Link to="/why-billionaires-are-moving-to-austin" className="text-foreground underline hover:text-muted-foreground">why billionaires are choosing Austin</Link>.
+                What makes Austin's luxury neighborhoods exceptional is the rare combination of natural beauty, urban convenience, and economic opportunity. Residents enjoy access to world-class dining, live music, outdoor recreation, and a thriving technology economy, all within a state that levies no personal income tax. Discover <Link to="/why-billionaires-are-moving-to-austin" className="text-foreground underline hover:text-muted-foreground">why billionaires are choosing Austin</Link>.
               </p>
 
               <h3 className="text-xl sm:text-2xl font-display font-normal text-architectural pt-4">
@@ -198,7 +198,7 @@ const Communities = () => {
                 Expert Guidance for Every Neighborhood
               </h3>
               <p>
-                At Echelon Property Group, we don't just sell homes in these communities — we know them intimately. Taylor Sherwood provides clients with hyperlocal market knowledge, including pricing trends, school zone boundaries, HOA details, flood zone considerations, and upcoming development that could impact property values. Whether you're <Link to="/buy" className="text-foreground underline hover:text-muted-foreground">buying a luxury home in Austin</Link> or <Link to="/invest" className="text-foreground underline hover:text-muted-foreground">evaluating an investment opportunity</Link>, our community-level expertise ensures you find the right fit for your lifestyle and investment goals.
+                At Echelon Property Group, we don't just sell homes in these communities, we know them intimately. Taylor Sherwood provides clients with hyperlocal market knowledge, including pricing trends, school zone boundaries, HOA details, flood zone considerations, and upcoming development that could impact property values. Whether you're <Link to="/buy" className="text-foreground underline hover:text-muted-foreground">buying a luxury home in Austin</Link> or <Link to="/invest" className="text-foreground underline hover:text-muted-foreground">evaluating an investment opportunity</Link>, our community-level expertise ensures you find the right fit for your lifestyle and investment goals.
               </p>
             </div>
           </div>

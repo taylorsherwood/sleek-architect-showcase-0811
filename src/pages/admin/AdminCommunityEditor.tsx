@@ -438,7 +438,7 @@ const AdminCommunityEditor = () => {
                       />
                       <input
                         className={inputClass}
-                        placeholder="Icon (emoji, optional) — e.g. 🌳"
+                        placeholder="Icon (emoji, optional), e.g. 🌳"
                         value={cat.icon || ""}
                         onChange={(e) => {
                           const next = [...form.local_highlights];
@@ -475,7 +475,7 @@ const AdminCommunityEditor = () => {
                         />
                         <input
                           className={inputClass}
-                          placeholder="Detail (optional) — short note, address, etc."
+                          placeholder="Detail (optional), short note, address, etc."
                           value={item.detail || ""}
                           onChange={(e) => {
                             const next = [...form.local_highlights];
@@ -589,8 +589,8 @@ const AdminCommunityEditor = () => {
                     value={form.gate_enabled ? "true" : "false"}
                     onChange={(e) => update("gate_enabled", e.target.value === "true")}
                   >
-                    <option value="true">On — visitors must submit form to see full report</option>
-                    <option value="false">Off — full report public</option>
+                    <option value="true">On, visitors must submit form to see full report</option>
+                    <option value="false">Off, full report public</option>
                   </select>
                 </Field>
                 <Field label="Gate headline">

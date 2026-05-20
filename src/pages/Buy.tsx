@@ -37,14 +37,14 @@ const buyingSteps = [
   number: "01",
   title: "Consultation & Strategy",
   description:
-  "We start with a one-on-one consultation to understand your goals, timeline, budget, and lifestyle priorities. From there we build a tailored strategy — whether you're buying a luxury home in Austin, an investment property, or relocating from out of state."
+  "We start with a one-on-one consultation to understand your goals, timeline, budget, and lifestyle priorities. From there we build a tailored strategy, whether you're buying a luxury home in Austin, an investment property, or relocating from out of state."
 },
 {
   icon: Search,
   number: "02",
   title: "Property Search & Private Showings",
   description:
-  "Leveraging MLS access, off-market networks, and our private database, we curate a shortlist of properties aligned with your criteria. You'll receive private showings — not generic listing alerts — in neighborhoods like Barton Creek, Westlake, and Lake Travis."
+  "Leveraging MLS access, off-market networks, and our private database, we curate a shortlist of properties aligned with your criteria. You'll receive private showings, not generic listing alerts, in neighborhoods like Barton Creek, Westlake, and Lake Travis."
 },
 {
   icon: Shield,
@@ -58,7 +58,7 @@ const buyingSteps = [
   number: "04",
   title: "Due Diligence & Inspections",
   description:
-  "We coordinate inspections, appraisals, title review, and survey — managing every detail so nothing is missed. Our trusted network of inspectors and contractors provides thorough assessments to protect your investment."
+  "We coordinate inspections, appraisals, title review, and survey, managing every detail so nothing is missed. Our trusted network of inspectors and contractors provides thorough assessments to protect your investment."
 },
 {
   icon: Home,
@@ -274,7 +274,7 @@ const Buy = () => {
       extra: { interest: "Buying a Home" },
     });
     if (res.ok) {
-      toast({ title: "Request Sent", description: "Thank you — we'll be in touch shortly to schedule your consultation." });
+      toast({ title: "Request Sent", description: "Thank you, we'll be in touch shortly to schedule your consultation." });
       setForm({ name: "", email: "", phone: "", message: "" });
     } else {
       toast({ title: "Submission Failed", description: res.error || "Something went wrong. Please try again or call us directly.", variant: "destructive" });
@@ -309,7 +309,7 @@ const Buy = () => {
       {/* ── Hero ── */}
       <section className="relative min-h-[640px] md:min-h-[720px] lg:h-[820px] xl:h-[860px] 2xl:h-[880px] flex items-center overflow-hidden bg-primary">
         <div className="absolute inset-0">
-          <img src={heroImg} alt="Luxury home in Austin Texas" title="Austin luxury real estate — buyer services" className="w-full h-full object-cover" loading="eager" decoding="async" />
+          <img src={heroImg} alt="Luxury home in Austin Texas" title="Austin luxury real estate, buyer services" className="w-full h-full object-cover" loading="eager" decoding="async" />
           <div className="absolute inset-0 bg-[#0C0F24]/60" />
         </div>
         <div className="relative container mx-auto px-6 pt-12 md:pt-16 lg:pt-20">
@@ -357,7 +357,7 @@ const Buy = () => {
               <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Austin's luxury market starts at approximately $1 million, with premium neighborhoods like West lake Hills, Barton Creek, and Lake Austin ranging from $1.5M to $25M+.</span></li>
               <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Texas has no state income tax, which represents significant annual savings for buyers relocating from California, New York, or Illinois.</span></li>
               <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Many of Austin's finest homes trade off-market through private broker networks. Working with an agent who has access to these channels is essential.</span></li>
-              <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Eanes ISD — serving West lake Hills, Barton Creek, and Rollingwood — is consistently ranked among the top school districts in Texas.</span></li>
+              <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Eanes ISD, serving West lake Hills, Barton Creek, and Rollingwood, is consistently ranked among the top school districts in Texas.</span></li>
               <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Austin's tech economy (Apple, Tesla, Google, Meta, Oracle) drives sustained luxury housing demand and long-term appreciation.</span></li>
             </ul>
           </div>
@@ -479,7 +479,7 @@ const Buy = () => {
                       <img
                         src={listing.image}
                         alt={listing.address}
-                        title={`${listing.address} — ${listing.price}`}
+                        title={`${listing.address}, ${listing.price}`}
                         className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
                         loading="lazy" decoding="async" />
                       
@@ -529,7 +529,7 @@ const Buy = () => {
                   Austin Neighborhood Highlights
                 </h2>
                 <p className="text-muted-foreground mt-4 max-w-xl">
-                  Austin offers an extraordinary range of luxury lifestyles — from gated golf communities and waterfront estates to walkable urban enclaves. Here are some of the most sought-after areas for buyers.
+                  Austin offers an extraordinary range of luxury lifestyles, from gated golf communities and waterfront estates to walkable urban enclaves. Here are some of the most sought-after areas for buyers.
                 </p>
               </div>
               <Link
@@ -546,7 +546,7 @@ const Buy = () => {
                     <img
                     src={n.image}
                     alt={`${n.name} homes for sale in Austin`}
-                    title={`${n.name} — luxury homes for sale in Austin TX`}
+                    title={`${n.name}, luxury homes for sale in Austin TX`}
                     className="w-full aspect-[16/9] object-cover transition-transform duration-700 group-hover:scale-105"
                     loading="lazy" decoding="async" />
                   
@@ -680,7 +680,7 @@ const Buy = () => {
                 For buyers with a 5+ year horizon, the strongest opportunity exists in acquiring quality properties in premium locations before the next appreciation cycle. Austin's tech-driven economy, no state income tax, and sustained in-migration from coastal states provide a durable demand foundation that supports long-term value. Learn more in our <Link to="/blog/austin-luxury-market-trends" className="text-foreground underline hover:text-muted-foreground">Austin luxury market trends analysis</Link>.
               </p>
               <p>
-                From recent transactions in the area, we're seeing particularly strong buyer activity in the $2M–$5M range across West lake Hills and Barton Creek. <Link to="/off-market-real-estate-austin" className="text-foreground underline hover:text-muted-foreground">Off-market sourcing</Link> has become increasingly important — many of the best properties never reach the public MLS. For those <Link to="/moving-to-austin-texas" className="text-foreground underline hover:text-muted-foreground">relocating to Austin</Link>, understanding neighborhood dynamics is essential.
+                From recent transactions in the area, we're seeing particularly strong buyer activity in the $2M–$5M range across West lake Hills and Barton Creek. <Link to="/off-market-real-estate-austin" className="text-foreground underline hover:text-muted-foreground">Off-market sourcing</Link> has become increasingly important, many of the best properties never reach the public MLS. For those <Link to="/moving-to-austin-texas" className="text-foreground underline hover:text-muted-foreground">relocating to Austin</Link>, understanding neighborhood dynamics is essential.
               </p>
             </div>
           </div>

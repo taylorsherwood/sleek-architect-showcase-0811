@@ -207,7 +207,7 @@ const AustinLandDevelopmentOpportunities = () => {
         <div className="absolute inset-0">
           <img
             src={heroImage}
-            alt="Austin Hill Country land — development and investment opportunities"
+            alt="Austin Hill Country land, development and investment opportunities"
             title="Austin land for development and investment"
             className="w-full h-full object-cover opacity-15"
             loading="eager"
@@ -217,7 +217,7 @@ const AustinLandDevelopmentOpportunities = () => {
 
         <div className="relative z-10 container mx-auto px-6 py-16 md:py-24">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start max-w-6xl mx-auto">
-            {/* Left — Copy */}
+            {/* Left, Copy */}
             <div className="lg:pt-8">
               <p className="text-gold mb-4 font-bold" style={labelStyle}>
                 LAND & DEVELOPMENT
@@ -226,7 +226,7 @@ const AustinLandDevelopmentOpportunities = () => {
                 Austin Land & Development Opportunities
               </h1>
               <p className="text-white/55 text-lg font-light leading-relaxed mb-8 max-w-lg">
-                Access land, redevelopment sites, and development opportunities across Austin and Central Texas — both on-market and off-market.
+                Access land, redevelopment sites, and development opportunities across Austin and Central Texas, both on-market and off-market.
               </p>
               <ul className="space-y-3 mb-10">
                 {[
@@ -250,7 +250,7 @@ const AustinLandDevelopmentOpportunities = () => {
               </button>
             </div>
 
-            {/* Right — Form */}
+            {/* Right, Form */}
             <div id="land-form" className="border border-white/10 p-6 md:p-10 bg-white/[0.02]">
               <p className="text-gold mb-3 font-bold" style={labelStyle}>
                 ACQUISITION CRITERIA

@@ -35,7 +35,7 @@ const PrivateBriefGate = ({ editionSlug, editionTitle, onUnlock }: PrivateBriefG
       name: name.trim(),
       email: email.trim(),
       phone: phone ? getPhoneDigits(phone) : "",
-      message: `Private Distribution access — ${editionTitle}`,
+      message: `Private Distribution access, ${editionTitle}`,
       source: "Private Distribution",
       extra: {
         edition_slug: editionSlug,
@@ -74,7 +74,7 @@ const PrivateBriefGate = ({ editionSlug, editionTitle, onUnlock }: PrivateBriefG
       className="relative w-full overflow-hidden"
       style={{ background: "#F5F3EF" }}
     >
-      {/* Veil — faux locked-content shimmer behind gate */}
+      {/* Veil, faux locked-content shimmer behind gate */}
       <div
         aria-hidden="true"
         className="absolute inset-x-0 top-0 h-[180px] pointer-events-none"

@@ -126,7 +126,7 @@ const SEOCommunityPage = () => {
               </div>
             </section>
 
-            {/* Homes for Sale — RealScout Widget */}
+            {/* Homes for Sale, RealScout Widget */}
             <section>
               <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Homes for Sale in {community.name}
@@ -146,7 +146,7 @@ const SEOCommunityPage = () => {
               </Suspense>
             </section>
 
-            {/* Community Guide CTA — West lake Hills */}
+            {/* Community Guide CTA, West lake Hills */}
             {community.slug === "westlake-hills-homes-for-sale" && (
               <CommunityGuideCTA
                 communityName={community.name}

@@ -7,7 +7,7 @@
  * that server-side check does the full payload reach the browser.
  *
  * localStorage is used ONLY as a UI convenience cache (so returning
- * visitors don't see the gate again for 30 days) — it never grants
+ * visitors don't see the gate again for 30 days), it never grants
  * access to data on its own.
  */
 import { supabase } from "@/integrations/supabase/client";
@@ -60,7 +60,7 @@ export interface UnlockSubmission {
 /**
  * Calls the get-community-report edge function. The function inserts a
  * community_lead and returns the full community row (including gated
- * columns) — the gated data only ever reaches the browser through this
+ * columns), the gated data only ever reaches the browser through this
  * server-verified path.
  */
 export async function fetchUnlockedReport(
@@ -99,7 +99,7 @@ export async function fetchUnlockedReport(
         }),
       );
     } catch {
-      /* storage full or disabled — payload is still returned for in-memory use */
+      /* storage full or disabled, payload is still returned for in-memory use */
     }
     return community;
   } catch {

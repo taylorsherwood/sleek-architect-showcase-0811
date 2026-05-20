@@ -219,8 +219,8 @@ const CommercialInvestment = () => {
                 <div className="relative overflow-hidden">
                   <img
                     src={gillisStreet}
-                    alt="4314 Gillis Street, Austin TX 78745 — 24-unit multifamily"
-                    title="4314 Gillis Street — 24-unit multifamily investment, Austin TX"
+                    alt="4314 Gillis Street, Austin TX 78745, 24-unit multifamily"
+                    title="4314 Gillis Street, 24-unit multifamily investment, Austin TX"
                     className="w-full aspect-[3/2] object-cover transition-transform duration-700 group-hover:scale-105"
                     loading="lazy"
                     decoding="async"
@@ -263,8 +263,8 @@ const CommercialInvestment = () => {
                 <div className="relative overflow-hidden">
                   <img
                     src={sanJoseAve}
-                    alt="10811 San Jose Ave, Del Valle TX — 3.06 acres redevelopment land"
-                    title="10811 San Jose Ave — development land opportunity, Del Valle TX"
+                    alt="10811 San Jose Ave, Del Valle TX, 3.06 acres redevelopment land"
+                    title="10811 San Jose Ave, development land opportunity, Del Valle TX"
                     className="w-full aspect-[3/2] object-cover transition-transform duration-700 group-hover:scale-105"
                     loading="lazy"
                     decoding="async"
@@ -307,8 +307,8 @@ const CommercialInvestment = () => {
                 <div className="relative overflow-hidden">
                   <img
                     src={s11thStreet}
-                    alt="717 S. 11th St, Temple TX — 6-unit multifamily"
-                    title="717 S. 11th St — multifamily investment, Temple TX"
+                    alt="717 S. 11th St, Temple TX, 6-unit multifamily"
+                    title="717 S. 11th St, multifamily investment, Temple TX"
                     className="w-full aspect-[3/2] object-cover transition-transform duration-700 group-hover:scale-105"
                     loading="lazy"
                     decoding="async"
@@ -351,8 +351,8 @@ const CommercialInvestment = () => {
                 <div className="relative overflow-hidden">
                   <img
                     src={killeenPortfolio}
-                    alt="Small Killeen Rental Portfolio — 9 rentable units, 100% occupied"
-                    title="Small Killeen Rental Portfolio — rental investment, Killeen TX"
+                    alt="Small Killeen Rental Portfolio, 9 rentable units, 100% occupied"
+                    title="Small Killeen Rental Portfolio, rental investment, Killeen TX"
                     className="w-full aspect-[3/2] object-cover transition-transform duration-700 group-hover:scale-105"
                     loading="lazy"
                     decoding="async"
@@ -395,8 +395,8 @@ const CommercialInvestment = () => {
                 <div className="relative overflow-hidden">
                   <img
                     src={bremserAve}
-                    alt="709/711/713 Bremser Ave, Killeen TX — 3 individual rental homes"
-                    title="709/711/713 Bremser Ave — rental homes, Killeen TX"
+                    alt="709/711/713 Bremser Ave, Killeen TX, 3 individual rental homes"
+                    title="709/711/713 Bremser Ave, rental homes, Killeen TX"
                     className="w-full aspect-[3/2] object-cover transition-transform duration-700 group-hover:scale-105"
                     loading="lazy"
                     decoding="async"

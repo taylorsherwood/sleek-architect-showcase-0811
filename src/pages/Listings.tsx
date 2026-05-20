@@ -49,8 +49,8 @@ const commercialCtaStyle = {
 const commercialListings = [
   {
     image: gillisStreet,
-    alt: "4314 Gillis Street, Austin TX 78745 — 24-unit multifamily",
-    title: "4314 Gillis Street — 24-unit multifamily investment, Austin TX",
+    alt: "4314 Gillis Street, Austin TX 78745, 24-unit multifamily",
+    title: "4314 Gillis Street, 24-unit multifamily investment, Austin TX",
     badge: "MULTIFAMILY",
     name: "4314 Gillis Street",
     location: "Austin, TX 78745",
@@ -61,8 +61,8 @@ const commercialListings = [
   },
   {
     image: sanJoseAve,
-    alt: "10811 San Jose Ave, Del Valle TX — 3.06 acres redevelopment land",
-    title: "10811 San Jose Ave — development land opportunity, Del Valle TX",
+    alt: "10811 San Jose Ave, Del Valle TX, 3.06 acres redevelopment land",
+    title: "10811 San Jose Ave, development land opportunity, Del Valle TX",
     badge: "DEVELOPMENT LAND",
     name: "10811 San Jose Ave",
     location: "Del Valle, TX",
@@ -73,8 +73,8 @@ const commercialListings = [
   },
   {
     image: s11thStreet,
-    alt: "717 S. 11th St, Temple TX — 6-unit multifamily",
-    title: "717 S. 11th St — multifamily investment, Temple TX",
+    alt: "717 S. 11th St, Temple TX, 6-unit multifamily",
+    title: "717 S. 11th St, multifamily investment, Temple TX",
     badge: "MULTIFAMILY",
     name: "717 S. 11th St.",
     location: "Temple, TX",
@@ -85,8 +85,8 @@ const commercialListings = [
   },
   {
     image: killeenPortfolio,
-    alt: "Small Killeen Rental Portfolio — 9 rentable units, 100% occupied",
-    title: "Small Killeen Rental Portfolio — rental investment, Killeen TX",
+    alt: "Small Killeen Rental Portfolio, 9 rentable units, 100% occupied",
+    title: "Small Killeen Rental Portfolio, rental investment, Killeen TX",
     badge: "PORTFOLIO SALE",
     name: "Small Killeen Rental Portfolio",
     location: "Killeen, TX",
@@ -97,8 +97,8 @@ const commercialListings = [
   },
   {
     image: bremserAve,
-    alt: "709/711/713 Bremser Ave, Killeen TX — 3 individual rental homes",
-    title: "709/711/713 Bremser Ave — rental homes, Killeen TX",
+    alt: "709/711/713 Bremser Ave, Killeen TX, 3 individual rental homes",
+    title: "709/711/713 Bremser Ave, rental homes, Killeen TX",
     badge: "PORTFOLIO SALE",
     name: "709/711/713 Bremser Ave",
     location: "Killeen, TX",
@@ -114,7 +114,7 @@ const Listings = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Listings | Echelon Property Group"
-        description="Browse active Austin real estate listings — luxury homes, condos, land, and investment properties. Updated daily by Echelon Property Group."
+        description="Browse active Austin real estate listings, luxury homes, condos, land, and investment properties. Updated daily by Echelon Property Group."
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createBreadcrumbSchema([
@@ -152,7 +152,7 @@ const Listings = () => {
               Every property represented by Echelon Property Group reflects our commitment to quality, strategic positioning, and exceptional presentation. From luxury residences in Barton Creek and West lake Hills to commercial investment opportunities across Central Texas, our portfolio is curated for discerning buyers and investors.
             </p>
             <p className="text-sm sm:text-lg text-muted-foreground max-w-3xl">
-              Beyond what appears on public listing portals, our team maintains access to exclusive off-market inventory through established relationships with Austin's top agents, developers, and property owners. If you don't see what you're looking for here, <Link to="/contact" className="text-foreground hover:text-gold transition-colors duration-300 underline underline-offset-4">connect with our team</Link> — the right opportunity may already be within reach.
+              Beyond what appears on public listing portals, our team maintains access to exclusive off-market inventory through established relationships with Austin's top agents, developers, and property owners. If you don't see what you're looking for here, <Link to="/contact" className="text-foreground hover:text-gold transition-colors duration-300 underline underline-offset-4">connect with our team</Link>, the right opportunity may already be within reach.
             </p>
           </div>
         </div>
@@ -172,7 +172,7 @@ const Listings = () => {
                   <img
                     src={listing.image}
                     alt={listing.address}
-                    title={`${listing.address} — ${listing.price}`}
+                    title={`${listing.address}, ${listing.price}`}
                     className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
                     loading="lazy" decoding="async"
                   />
@@ -235,7 +235,7 @@ const Listings = () => {
             </h2>
             <div className="space-y-6 text-muted-foreground leading-relaxed">
               <p>
-                The most compelling properties in Austin's luxury market frequently trade before they ever appear on public listing portals. Echelon Property Group maintains access to a robust pipeline of off-market opportunities — estate homes, development parcels, and investment properties that are available exclusively through agent networks and private channels.
+                The most compelling properties in Austin's luxury market frequently trade before they ever appear on public listing portals. Echelon Property Group maintains access to a robust pipeline of off-market opportunities, estate homes, development parcels, and investment properties that are available exclusively through agent networks and private channels.
               </p>
               <p>
                 Our relationships with Austin's leading luxury agents, developers, and institutional investors give our clients a meaningful advantage. Whether you are searching for a waterfront estate, a Hill Country ranch, or a value-add multifamily asset, we proactively source opportunities that align with your criteria and investment thesis. <Link to="/about" className="text-foreground hover:text-gold transition-colors duration-300 underline underline-offset-4">Learn more about our approach</Link> to client representation.
@@ -254,7 +254,7 @@ const Listings = () => {
             </h2>
             <div className="space-y-6 text-muted-foreground leading-relaxed">
               <p>
-                Austin's luxury landscape is shaped by its neighborhoods — each offering a distinct lifestyle, architectural character, and investment profile. From the gated estates of Barton Creek and Spanish Oaks to the tree-lined streets of Tarrytown and the waterfront retreats along Lake Austin, understanding the nuances of each community is essential to making a confident purchase decision.
+                Austin's luxury landscape is shaped by its neighborhoods, each offering a distinct lifestyle, architectural character, and investment profile. From the gated estates of Barton Creek and Spanish Oaks to the tree-lined streets of Tarrytown and the waterfront retreats along Lake Austin, understanding the nuances of each community is essential to making a confident purchase decision.
               </p>
               <p>
                 Echelon Property Group provides hyperlocal expertise across every premier Austin neighborhood. <Link to="/communities" className="text-foreground hover:text-gold transition-colors duration-300 underline underline-offset-4">Explore our community guides</Link> for detailed insights on schools, amenities, market trends, and available inventory in the areas that matter most.

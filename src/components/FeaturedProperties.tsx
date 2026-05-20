@@ -20,7 +20,7 @@ const properties = [
     beds: 24, baths: 0, sqft: "24-unit",
     link: "/listings/commercial-investment-austin",
     badge: "COMMERCIAL LISTING",
-    subtitle: "4314 Gillis Street — 24-unit value-add multifamily, 78745.",
+    subtitle: "4314 Gillis Street, 24-unit value-add multifamily, 78745.",
   },
   {
     image: "/static-assets/listing-westlake-hills-private.avif",
@@ -88,7 +88,7 @@ const FeaturedProperties = () => {
                     {...wrapperProps}
                     className="expertise-card group relative block w-full overflow-hidden"
                     style={{ aspectRatio: "4 / 5" }}
-                    aria-label={`${p.address} — ${p.price}`}
+                    aria-label={`${p.address}, ${p.price}`}
                   >
                     <img
                       src={p.image}
@@ -156,8 +156,8 @@ const FeaturedProperties = () => {
                         {(p as any).subtitle
                           ? (p as any).subtitle
                           : p.sqft === "—"
-                          ? `${p.location} — private inquiry`
-                          : `${p.address} — ${p.beds} beds · ${p.baths} baths · ${p.sqft} sq ft.`}
+                          ? `${p.location}, private inquiry`
+                          : `${p.address}, ${p.beds} beds · ${p.baths} baths · ${p.sqft} sq ft.`}
                       </p>
                       <span
                         className="expertise-card__cta inline-flex items-center"
@@ -196,13 +196,13 @@ const FeaturedProperties = () => {
               );
             })}
 
-            {/* Off-market card — spans full width on second row */}
+            {/* Off-market card, spans full width on second row */}
             <ScrollReveal delay={properties.length * 100}>
               <Link
                 to="/off-market-real-estate-austin"
                 className="expertise-card group relative block w-full overflow-hidden"
                 style={{ aspectRatio: "4 / 5", background: "#0C0F24" }}
-                aria-label="Off-Market Opportunities — Exclusive Private Listings"
+                aria-label="Off-Market Opportunities, Exclusive Private Listings"
               >
                 <div className="absolute inset-0 flex items-center justify-center">
                   <img

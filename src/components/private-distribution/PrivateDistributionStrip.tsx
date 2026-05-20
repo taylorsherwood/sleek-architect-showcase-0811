@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
  * ivory background, thin gold rules, restrained typography.
  *
  * Variants:
- *  - "ivory" (default) — for homepage / standard ivory contexts
- *  - "navy" — for darker editorial contexts (off-market funnel)
+ *  - "ivory" (default), for homepage / standard ivory contexts
+ *  - "navy", for darker editorial contexts (off-market funnel)
  */
 
 interface PrivateDistributionStripProps {
@@ -21,7 +21,7 @@ interface PrivateDistributionStripProps {
 const PrivateDistributionStrip = ({
   variant = "ivory",
   eyebrow = "Private Distribution",
-  headline = "The 78746 Brief — May 2026",
+  headline = "The 78746 Brief, May 2026",
   body = "Private market intelligence for Austin's most guarded zip code. Off-market trades, properties whispered before listing, and the strategic posture of buyers active in the field.",
   ctaLabel = "Access the Brief",
 }: PrivateDistributionStripProps) => {

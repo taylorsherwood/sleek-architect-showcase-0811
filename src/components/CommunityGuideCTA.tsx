@@ -23,7 +23,7 @@ const CommunityGuideCTA = ({ communityName, guideUrl }: CommunityGuideCTAProps) 
     setLoading(true);
     const res = await submitLeadToZapier(
       {
-        // Email-only inline CTA — supply a default name so the Zap receives
+        // Email-only inline CTA, supply a default name so the Zap receives
         // a populated `name` and `message`.
         name: `${communityName} Guide Request`,
         email: email.trim(),
@@ -46,7 +46,7 @@ const CommunityGuideCTA = ({ communityName, guideUrl }: CommunityGuideCTAProps) 
     return (
       <section className="border border-gold/30 bg-secondary p-8 md:p-12 text-center">
         <p className="text-lg text-foreground font-display">
-          Your guide is ready — check the new tab.
+          Your guide is ready, check the new tab.
         </p>
         <a
           href={guideUrl}
@@ -68,7 +68,7 @@ const CommunityGuideCTA = ({ communityName, guideUrl }: CommunityGuideCTAProps) 
           Get the {communityName} Community Guide
         </h2>
         <p className="text-muted-foreground mb-6 text-sm leading-relaxed">
-          Schools, market data, lifestyle details, and local insights — delivered instantly.
+          Schools, market data, lifestyle details, and local insights, delivered instantly.
         </p>
         <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
           <input

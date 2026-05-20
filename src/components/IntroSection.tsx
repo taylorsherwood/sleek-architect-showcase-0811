@@ -113,7 +113,7 @@ const IntroSection = () => {
                 <div className="space-y-6 text-muted-foreground leading-relaxed">
                   <p className="whitespace-pre-line">
                     At Echelon Property Group we believe real estate is more than
-                    transactions—it's about creating opportunities and building
+                    transactions, it's about creating opportunities and building
                     lasting relationships. With expertise across residential,
                     commercial, and investment properties, our team provides
                     clients with clear guidance, innovative strategies, and

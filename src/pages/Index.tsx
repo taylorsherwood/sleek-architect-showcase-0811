@@ -12,7 +12,7 @@ import SchemaMarkup, {
 const HomeBelowFold = lazy(() => import("@/components/HomeBelowFold"));
 
 /* ─────────────────────────────────────────────
-   SECTION 1 — HERO
+   SECTION 1, HERO
    ───────────────────────────────────────────── */
 
 const FALLBACK_TIMEOUT = 4000;
@@ -107,7 +107,7 @@ const Hero = () => {
   return (
     <>
     <section ref={sectionRef} id="hero-section" className="relative min-h-[640px] md:min-h-[720px] lg:h-[820px] xl:h-[860px] 2xl:h-[880px] flex flex-col justify-end overflow-hidden bg-primary">
-      {/* Poster images — BOTH rendered with CSS media queries so the correct one paints
+      {/* Poster images, BOTH rendered with CSS media queries so the correct one paints
           instantly regardless of SSR assumptions (no JS-driven swap on hydration). */}
       <img
         src="/images/hero-mobile-austin-v2.webp"
@@ -230,7 +230,7 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Scroll indicator — animated bar travels down a gold track */}
+      {/* Scroll indicator, animated bar travels down a gold track */}
       <button
         onClick={() => {
           window.scrollTo({ top: window.innerHeight, behavior: "smooth" });
@@ -268,7 +268,7 @@ const Hero = () => {
 };
 
 /* ─────────────────────────────────────────────
-   SECTION 1B — SEARCH (RealScout Simple Search)
+   SECTION 1B, SEARCH (RealScout Simple Search)
    ───────────────────────────────────────────── */
 
 const REALSCOUT_URL = "https://taylorsherwood.realscout.com/";

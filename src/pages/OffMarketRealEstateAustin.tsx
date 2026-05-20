@@ -46,7 +46,7 @@ const faqs = [
   { question: "Are off-market homes more expensive than listed homes?", answer: "Not necessarily. Off-market homes can sometimes be acquired at favorable prices because there is less competition from other buyers. Without public marketing generating multiple offers, negotiations may be more straightforward. However, pricing depends on the specific property, seller motivation, and market conditions." },
   { question: "What neighborhoods have the most off-market activity in Austin?", answer: "The highest concentration of off-market transactions occurs in Austin's most exclusive neighborhoods: Lake Austin waterfront, West lake Hills, Barton Creek, Tarrytown, and Rollingwood. These communities have high-net-worth homeowners who value privacy, and the limited inventory creates an environment where many transactions occur through private channels." },
   { question: "Can I sell my Austin luxury home off-market?", answer: "Yes. Echelon Property Group offers a discreet, off-market selling program for luxury homeowners who prefer privacy. We market your property exclusively to qualified buyers through our private network, ensuring confidentiality while achieving optimal pricing. Contact us for a confidential consultation about selling your home off-market." },
-  { question: "What price range qualifies for off-market listings in Austin?", answer: "While off-market transactions occur at all price points, they are most common in Austin's luxury segment—generally properties priced above $2 million. The highest concentration of off-market activity is in the $3 million to $25 million range, where privacy concerns make private transactions the preferred approach." },
+  { question: "What price range qualifies for off-market listings in Austin?", answer: "While off-market transactions occur at all price points, they are most common in Austin's luxury segment, generally properties priced above $2 million. The highest concentration of off-market activity is in the $3 million to $25 million range, where privacy concerns make private transactions the preferred approach." },
 ];
 
 const labelStyle = {
@@ -167,7 +167,7 @@ const OffMarketRealEstateAustin = () => {
 
   const formContent = submitted ? (
     <div className="text-center py-12 pt-20 flex flex-col items-center">
-      <img src={echelonLogo} alt="Echelon Property Group logo — Austin luxury real estate" className="h-[10.5rem] mb-4"
+      <img src={echelonLogo} alt="Echelon Property Group logo, Austin luxury real estate" className="h-[10.5rem] mb-4"
                     loading="lazy" decoding="async"
                     />
       <h3 className="font-display text-2xl text-white mb-2">You're In</h3>
@@ -295,14 +295,14 @@ const OffMarketRealEstateAustin = () => {
       </header>
 
       {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-          HERO — Brand statement (form moved to Section 7)
+          HERO, Brand statement (form moved to Section 7)
       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
       <section className="relative min-h-[100svh] md:min-h-[720px] lg:h-[820px] xl:h-[860px] 2xl:h-[880px] flex items-center pt-14">
         <div className="absolute inset-0">
           <img
             src={heroImage}
             alt="Luxury Austin estate representing exclusive off-market real estate opportunities"
-            title="Off-market homes in Austin Texas — private listings not on Zillow or MLS"
+            title="Off-market homes in Austin Texas, private listings not on Zillow or MLS"
             className="w-full h-full object-cover"
             loading="eager"
             decoding="sync"
@@ -389,7 +389,7 @@ const OffMarketRealEstateAustin = () => {
           </div>
         </div>
 
-        {/* Scroll indicator — desktop only (overlaps CTA on mobile) */}
+        {/* Scroll indicator, desktop only (overlaps CTA on mobile) */}
         <button
           onClick={() => {
             window.scrollTo({ top: window.innerHeight, behavior: "smooth" });
@@ -423,7 +423,7 @@ const OffMarketRealEstateAustin = () => {
         variant="navy"
         eyebrow="Private Distribution"
         headline="Monthly market intelligence for qualified buyers and sellers."
-        body="A confidential brief covering Austin's most guarded zip codes — off-market trades, properties whispered before listing, and the strategic posture of principals currently active in the field."
+        body="A confidential brief covering Austin's most guarded zip codes, off-market trades, properties whispered before listing, and the strategic posture of principals currently active in the field."
         ctaLabel="Access the Current Edition"
       />
 

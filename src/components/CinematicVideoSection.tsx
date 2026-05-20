@@ -74,14 +74,14 @@ const CinematicVideoSection = () => {
           </video>
         </div>
 
-        {/* Subtle bottom gradient — warm charcoal */}
+        {/* Subtle bottom gradient, warm charcoal */}
         <div
           className="absolute inset-0 z-[1] pointer-events-none"
           style={{
             background: "linear-gradient(to top, rgba(10, 10, 8, 0.12) 0%, rgba(10, 10, 8, 0.04) 40%, transparent 100%)",
           }}
         />
-        {/* Left-side localized text protection gradient — hidden on mobile */}
+        {/* Left-side localized text protection gradient, hidden on mobile */}
         <div
           className="absolute inset-0 z-[1] pointer-events-none hidden sm:block"
           style={{
@@ -96,7 +96,7 @@ const CinematicVideoSection = () => {
           }}
         />
 
-        {/* Content — left-aligned, vertically centered (slightly above) */}
+        {/* Content, left-aligned, vertically centered (slightly above) */}
         <div
           className="absolute inset-0 z-10 flex items-center"
           style={{ marginTop: "-3vh" }}

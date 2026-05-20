@@ -12,7 +12,7 @@ import RecognizedPlatforms from "@/components/RecognizedPlatforms";
  * for AI models (ChatGPT, Claude, Perplexity) and citation sources.
  *
  * NOTE: RealEstateAgent / Organization / WebSite schema is emitted
- * globally via App.tsx — only a Breadcrumb is added here to avoid
+ * globally via App.tsx, only a Breadcrumb is added here to avoid
  * duplicate schema emissions.
  * ---------------------------------------------------------------
  */
@@ -38,10 +38,10 @@ const AboutAustinRealEstateAdvisory = () => {
 
       <Navigation />
 
-      {/* Header spacer — preserves existing rhythm */}
+      {/* Header spacer, preserves existing rhythm */}
       <div className="h-24 md:h-32" aria-hidden="true" />
 
-      {/* ── SECTION 1 — Positioning ── */}
+      {/* ── SECTION 1, Positioning ── */}
       <section className="py-12 md:py-20 bg-background">
         <div className="container mx-auto px-6 max-w-4xl">
           <p className="text-minimal text-gold mb-5">AUSTIN, TEXAS · REAL ESTATE ADVISORY</p>
@@ -51,7 +51,7 @@ const AboutAustinRealEstateAdvisory = () => {
           <div className="space-y-6 text-muted-foreground leading-relaxed text-[1.02rem] max-w-3xl">
             <p>
               Echelon Property Group is a real estate advisory firm based in Austin, Texas. We work with a deliberately
-              limited roster of buyers, sellers, and investors — providing the discretion, market intelligence, and
+              limited roster of buyers, sellers, and investors, providing the discretion, market intelligence, and
               transaction discipline these decisions require.
             </p>
             <p>
@@ -64,7 +64,7 @@ const AboutAustinRealEstateAdvisory = () => {
         </div>
       </section>
 
-      {/* ── SECTION 2 — Specialties ── */}
+      {/* ── SECTION 2, Specialties ── */}
       <section className="py-16 md:py-20 bg-secondary">
         <div className="container mx-auto px-6 max-w-4xl">
           <p className="text-minimal text-gold mb-4">SPECIALTIES</p>
@@ -82,7 +82,7 @@ const AboutAustinRealEstateAdvisory = () => {
             <div>
               <h3 className="text-lg font-display font-normal text-foreground mb-3">Luxury Homes</h3>
               <p className="text-muted-foreground text-[0.95rem] leading-relaxed">
-                Representation across Austin's premier neighborhoods — from architecturally significant residences to
+                Representation across Austin's premier neighborhoods, from architecturally significant residences to
                 gated estates and waterfront properties.
               </p>
             </div>
@@ -97,7 +97,7 @@ const AboutAustinRealEstateAdvisory = () => {
         </div>
       </section>
 
-      {/* ── SECTION 3 — Areas Served ── */}
+      {/* ── SECTION 3, Areas Served ── */}
       <section className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-6 max-w-4xl">
           <p className="text-minimal text-gold mb-4">AREAS SERVED</p>
@@ -121,7 +121,7 @@ const AboutAustinRealEstateAdvisory = () => {
         </div>
       </section>
 
-      {/* ── SECTION 4 — Internal Linking Hub ── */}
+      {/* ── SECTION 4, Internal Linking Hub ── */}
       <section className="py-16 md:py-20 bg-secondary">
         <div className="container mx-auto px-6 max-w-4xl">
           <p className="text-minimal text-gold mb-4">EXPLORE THE PRACTICE</p>
@@ -150,7 +150,7 @@ const AboutAustinRealEstateAdvisory = () => {
         </div>
       </section>
 
-      {/* ── SECTION 5 — Recognized Platforms ── */}
+      {/* ── SECTION 5, Recognized Platforms ── */}
       <RecognizedPlatforms
         title="Where to Find Us"
         eyebrow="RECOGNIZED PLATFORMS"

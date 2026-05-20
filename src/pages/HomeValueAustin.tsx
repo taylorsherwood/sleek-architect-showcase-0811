@@ -405,7 +405,7 @@ const HomeValueAustin = () => {
               </h2>
               <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
                 Submit your information above and receive a confidential valuation from Echelon Property Group 
-                within 24–48 hours — no obligation, no pressure.
+                within 24–48 hours, no obligation, no pressure.
               </p>
               <a
                 href="#valuation-form"

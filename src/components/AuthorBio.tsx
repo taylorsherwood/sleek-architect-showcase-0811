@@ -11,7 +11,7 @@ const AuthorBio = ({ compact = false }: AuthorBioProps) => {
       <div className="mt-16 pt-8 border-t border-border">
         <div className="flex items-start gap-4">
           <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
-            <img src={taylorHeadshot} alt="Taylor Sherwood - Austin Real Estate Advisor" title="Taylor Sherwood — Austin luxury real estate advisor" className="w-full h-full object-cover object-[50%_30%]"
+            <img src={taylorHeadshot} alt="Taylor Sherwood - Austin Real Estate Advisor" title="Taylor Sherwood, Austin luxury real estate advisor" className="w-full h-full object-cover object-[50%_30%]"
                     loading="lazy" decoding="async"
                     />
           </div>
@@ -29,7 +29,7 @@ const AuthorBio = ({ compact = false }: AuthorBioProps) => {
     <section className="mt-16 pt-8 border-t border-border">
       <div className="flex flex-col sm:flex-row items-start gap-6">
         <div className="w-20 h-20 rounded-full overflow-hidden flex-shrink-0">
-          <img src={taylorHeadshot} alt="Taylor Sherwood - Austin Real Estate Advisor" title="Taylor Sherwood — Austin luxury real estate advisor" className="w-full h-full object-cover object-[50%_30%]"
+          <img src={taylorHeadshot} alt="Taylor Sherwood - Austin Real Estate Advisor" title="Taylor Sherwood, Austin luxury real estate advisor" className="w-full h-full object-cover object-[50%_30%]"
                     loading="lazy" decoding="async"
                     />
         </div>

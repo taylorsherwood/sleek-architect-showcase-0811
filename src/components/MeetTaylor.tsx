@@ -6,7 +6,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 const MeetTaylor = () => {
   return (
     <section className="relative pt-16 md:pt-20 pb-14 md:pb-16 bg-background overflow-hidden">
-      {/* Watermark — centered in the gap between text blocks */}
+      {/* Watermark, centered in the gap between text blocks */}
       <div
         className="pointer-events-none absolute right-[0%] bottom-[-8%] hidden md:block w-[60vw] max-w-[1050px] aspect-square"
         aria-hidden="true"
@@ -44,8 +44,8 @@ const MeetTaylor = () => {
           <div className="grid md:grid-cols-12 gap-10 md:gap-20 items-start">
             <div className="relative inline-block md:col-span-6">
               <img
-                alt="Taylor Sherwood — Austin luxury real estate advisor and CLHMS specialist"
-                title="Taylor Sherwood — Certified Luxury Home Marketing Specialist"
+                alt="Taylor Sherwood, Austin luxury real estate advisor and CLHMS specialist"
+                title="Taylor Sherwood, Certified Luxury Home Marketing Specialist"
                 className="w-full h-[40vh] md:h-[60vh] object-contain rounded-[10px]"
                 src="/lovable-uploads/537facb0-1fbc-450c-8c4a-c1d06c4aa924.jpg"
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -66,7 +66,7 @@ const MeetTaylor = () => {
                 Known for his attention to detail and thoughtful approach to marketing, he helps clients navigate complex transactions with confidence while showcasing properties in their best possible light.
               </p>
               <p className="text-muted-foreground leading-[1.85] text-base md:text-xl mb-7">
-                With deep expertise across Austin's most sought-after neighborhoods — including West lake Hills, Barton Creek, Tarrytown, and Lake Austin — Taylor works closely with buyers and sellers to ensure every transaction is handled with care, discretion, and strategic insight.
+                With deep expertise across Austin's most sought-after neighborhoods, including West lake Hills, Barton Creek, Tarrytown, and Lake Austin, Taylor works closely with buyers and sellers to ensure every transaction is handled with care, discretion, and strategic insight.
               </p>
               <a
                 href="https://www.instagram.com/theinvestorbroker"

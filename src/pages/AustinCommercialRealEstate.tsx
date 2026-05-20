@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     question: "What is tenant representation and why do I need it?",
-    answer: "Tenant representation is a specialized real estate service where a broker exclusively represents the interests of a business seeking to lease or purchase commercial space. Unlike a listing agent who represents the landlord, a tenant rep works solely for you — negotiating favorable lease terms, identifying optimal locations, and providing market intelligence. In Austin's competitive market, professional tenant representation can save businesses 10–30% on total occupancy costs through strategic lease negotiations and site selection."
+    answer: "Tenant representation is a specialized real estate service where a broker exclusively represents the interests of a business seeking to lease or purchase commercial space. Unlike a listing agent who represents the landlord, a tenant rep works solely for you, negotiating favorable lease terms, identifying optimal locations, and providing market intelligence. In Austin's competitive market, professional tenant representation can save businesses 10–30% on total occupancy costs through strategic lease negotiations and site selection."
   },
   {
     question: "Where are the best areas for commercial real estate in Austin?",
@@ -29,7 +29,7 @@ const faqs = [
   },
   {
     question: "How is commercial real estate different from residential real estate?",
-    answer: "Commercial real estate involves properties used for business purposes — offices, retail spaces, warehouses, multifamily developments, and mixed-use projects. Unlike residential transactions, commercial deals are evaluated primarily on income potential, cap rates, lease structures, and return on investment. Lease terms are more complex, due diligence is more extensive, and transactions often involve sophisticated financial analysis. Working with a brokerage experienced in both residential and commercial sectors, like Echelon Property Group, ensures seamless advisory whether you're investing in an office building or purchasing your personal residence."
+    answer: "Commercial real estate involves properties used for business purposes, offices, retail spaces, warehouses, multifamily developments, and mixed-use projects. Unlike residential transactions, commercial deals are evaluated primarily on income potential, cap rates, lease structures, and return on investment. Lease terms are more complex, due diligence is more extensive, and transactions often involve sophisticated financial analysis. Working with a brokerage experienced in both residential and commercial sectors, like Echelon Property Group, ensures seamless advisory whether you're investing in an office building or purchasing your personal residence."
   },
   {
     question: "What are the best investment opportunities in Austin commercial real estate right now?",
@@ -45,7 +45,7 @@ const faqs = [
   },
   {
     question: "Does Echelon Property Group work with out-of-state commercial investors?",
-    answer: "Absolutely. A significant portion of our commercial investment clients are based outside Texas — attracted by Austin's growth fundamentals, favorable tax environment, and strong risk-adjusted returns. We provide comprehensive market orientation, submarket analysis, property tours (virtual and in-person), and end-to-end transaction management for out-of-state investors. Our team serves as your local eyes, ears, and strategic advisors throughout the investment lifecycle."
+    answer: "Absolutely. A significant portion of our commercial investment clients are based outside Texas, attracted by Austin's growth fundamentals, favorable tax environment, and strong risk-adjusted returns. We provide comprehensive market orientation, submarket analysis, property tours (virtual and in-person), and end-to-end transaction management for out-of-state investors. Our team serves as your local eyes, ears, and strategic advisors throughout the investment lifecycle."
   },
 ];
 const AustinCommercialRealEstate = () => {
@@ -69,7 +69,7 @@ const AustinCommercialRealEstate = () => {
               Austin Commercial Real Estate
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              From tenant representation and investment acquisitions to development land and retail opportunities — 
+              From tenant representation and investment acquisitions to development land and retail opportunities, 
               Echelon Property Group delivers strategic commercial real estate advisory across Austin and Central Texas.
             </p>
           </div>
@@ -86,7 +86,7 @@ const AustinCommercialRealEstate = () => {
                 Why Austin Is a Top Commercial Real Estate Market
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Austin, Texas has emerged as one of the most compelling commercial real estate markets in the United States. The city's explosive population growth — adding more than 150,000 residents over the past five years — has created sustained demand for office space, retail locations, industrial facilities, and mixed-use developments. Major corporate relocations and expansions by Apple, Tesla, Google, Meta, Oracle, Samsung, and dozens of high-growth startups have transformed Austin into a Tier 1 commercial market.
+                Austin, Texas has emerged as one of the most compelling commercial real estate markets in the United States. The city's explosive population growth, adding more than 150,000 residents over the past five years, has created sustained demand for office space, retail locations, industrial facilities, and mixed-use developments. Major corporate relocations and expansions by Apple, Tesla, Google, Meta, Oracle, Samsung, and dozens of high-growth startups have transformed Austin into a Tier 1 commercial market.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 Texas's business-friendly regulatory environment, absence of state income tax, and comparatively low cost of doing business relative to California, New York, and other coastal markets continue to attract corporate tenants and investors. Austin's commercial vacancy rates remain competitive, lease rates have appreciated steadily across most asset classes, and new development continues to reshape the skyline and suburban corridors alike.
@@ -102,13 +102,13 @@ const AustinCommercialRealEstate = () => {
                 Tenant Representation
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Securing the right commercial space is one of the most consequential decisions a business makes. Location, lease terms, buildout allowances, and expansion options directly impact operational efficiency, employee recruitment, and long-term profitability. Echelon Property Group's tenant representation services ensure that businesses of all sizes — from emerging startups to established enterprises — are positioned for success.
+                Securing the right commercial space is one of the most consequential decisions a business makes. Location, lease terms, buildout allowances, and expansion options directly impact operational efficiency, employee recruitment, and long-term profitability. Echelon Property Group's tenant representation services ensure that businesses of all sizes, from emerging startups to established enterprises, are positioned for success.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 Our tenant representation process begins with a comprehensive needs analysis: understanding your business objectives, workforce distribution, growth projections, and budget parameters. We then conduct a thorough market survey across Austin's commercial submarkets, identifying properties that align with your strategic requirements. Our team negotiates lease terms on your behalf, leveraging deep market knowledge to secure favorable economics including base rent, tenant improvement allowances, free rent periods, and renewal and expansion options.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                As your exclusive tenant representative, we work solely in your interest — never representing the landlord in the same transaction. This conflict-free advocacy is fundamental to achieving the best possible outcome for your business. Whether you need 1,500 square feet for a boutique office or 50,000 square feet for a corporate headquarters, our tenant representation expertise delivers measurable value.
+                As your exclusive tenant representative, we work solely in your interest, never representing the landlord in the same transaction. This conflict-free advocacy is fundamental to achieving the best possible outcome for your business. Whether you need 1,500 square feet for a boutique office or 50,000 square feet for a corporate headquarters, our tenant representation expertise delivers measurable value.
               </p>
             </section>
 
@@ -124,7 +124,7 @@ const AustinCommercialRealEstate = () => {
                 Echelon Property Group assists private investors, family offices, and institutional buyers in identifying, evaluating, and acquiring income-producing commercial properties throughout the Austin metropolitan area. Our investment advisory services encompass market analysis, financial underwriting, due diligence coordination, and transaction management. We evaluate properties on the basis of current income, value-add potential, cap rate trends, tenant quality, and long-term market positioning.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Our network extends beyond publicly marketed properties. Through established relationships with property owners, developers, and fellow brokers, we source <Link to="/off-market-real-estate-austin" className="text-foreground underline hover:text-muted-foreground">off-market opportunities</Link> that may never appear on commercial listing platforms — giving our clients a competitive advantage in a market where the best deals often transact privately.
+                Our network extends beyond publicly marketed properties. Through established relationships with property owners, developers, and fellow brokers, we source <Link to="/off-market-real-estate-austin" className="text-foreground underline hover:text-muted-foreground">off-market opportunities</Link> that may never appear on commercial listing platforms, giving our clients a competitive advantage in a market where the best deals often transact privately.
               </p>
             </section>
 
@@ -140,7 +140,7 @@ const AustinCommercialRealEstate = () => {
                 Echelon Property Group's land advisory practice serves developers, builders, and investors seeking commercial, multifamily, industrial, and mixed-use development sites. We conduct highest-and-best-use analyses, evaluate zoning compatibility and entitlement timelines, assess environmental and topographic considerations, and negotiate acquisitions that align with our clients' development pro formas and investment criteria.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Austin's growth corridors — including the I-35 corridor, Highway 290 West, Highway 71 South, and the emerging eastern suburbs — present significant development potential. Our team monitors land availability, municipal planning initiatives, and infrastructure investments to identify opportunities before they reach the broader market.
+                Austin's growth corridors, including the I-35 corridor, Highway 290 West, Highway 71 South, and the emerging eastern suburbs, present significant development potential. Our team monitors land availability, municipal planning initiatives, and infrastructure investments to identify opportunities before they reach the broader market.
               </p>
             </section>
 
@@ -194,7 +194,7 @@ const AustinCommercialRealEstate = () => {
                 <div>
                   <h3 className="text-xl font-display font-medium mb-3">Retail Centers</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Austin's rapidly expanding suburban communities — including Cedar Park, Pflugerville, Leander, Buda, and Kyle — are driving demand for neighborhood and community retail centers. Grocery-anchored centers, essential services retail, and experiential dining and entertainment concepts perform particularly well in these high-growth submarkets. Additionally, boutique retail opportunities in established corridors like South Congress, South Lamar, and <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">Westlake</Link> attract premium tenants and command strong lease rates.
+                    Austin's rapidly expanding suburban communities, including Cedar Park, Pflugerville, Leander, Buda, and Kyle, are driving demand for neighborhood and community retail centers. Grocery-anchored centers, essential services retail, and experiential dining and entertainment concepts perform particularly well in these high-growth submarkets. Additionally, boutique retail opportunities in established corridors like South Congress, South Lamar, and <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">Westlake</Link> attract premium tenants and command strong lease rates.
                   </p>
                 </div>
 
@@ -213,10 +213,10 @@ const AustinCommercialRealEstate = () => {
                 Austin Multifamily Investment Opportunities
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Austin's multifamily sector remains one of the most active commercial real estate asset classes in the region. The city's sustained population growth — driven by corporate relocations, tech-sector expansion, and in-migration from higher-cost states — creates persistent demand for rental housing across all price points. For investors seeking income-producing assets with strong appreciation potential, Austin multifamily properties offer a compelling risk-adjusted return profile.
+                Austin's multifamily sector remains one of the most active commercial real estate asset classes in the region. The city's sustained population growth, driven by corporate relocations, tech-sector expansion, and in-migration from higher-cost states, creates persistent demand for rental housing across all price points. For investors seeking income-producing assets with strong appreciation potential, Austin multifamily properties offer a compelling risk-adjusted return profile.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Class A multifamily communities in high-growth suburban corridors such as Cedar Park, Round Rock, Pflugerville, and Kyle benefit from strong absorption rates and rising rents as new residents settle into the Austin metro. Value-add acquisitions in established neighborhoods closer to downtown — including areas near <Link to="/communities/travis-heights" className="text-foreground underline hover:text-muted-foreground">Travis Heights</Link>, East Riverside, and South Lamar — provide opportunities to renovate aging inventory, reposition properties, and capture significant rent premiums upon completion.
+                Class A multifamily communities in high-growth suburban corridors such as Cedar Park, Round Rock, Pflugerville, and Kyle benefit from strong absorption rates and rising rents as new residents settle into the Austin metro. Value-add acquisitions in established neighborhoods closer to downtown, including areas near <Link to="/communities/travis-heights" className="text-foreground underline hover:text-muted-foreground">Travis Heights</Link>, East Riverside, and South Lamar, provide opportunities to renovate aging inventory, reposition properties, and capture significant rent premiums upon completion.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 Austin's young, highly educated workforce and the ongoing shift toward renter-by-choice demographics further support multifamily investment fundamentals. As detailed in our <Link to="/austin-luxury-market-report" className="text-foreground underline hover:text-muted-foreground">Austin Luxury Market Report</Link>, the intersection of limited affordable housing supply and growing demand creates favorable conditions for multifamily investors who can identify well-located assets and execute value-add business plans effectively.
@@ -229,13 +229,13 @@ const AustinCommercialRealEstate = () => {
                 Austin Development Land Opportunities
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Land acquisition in the Austin metropolitan area represents one of the highest-potential commercial real estate strategies available today. As the city's population approaches — and is projected to exceed — three million residents in the broader MSA, demand for development-ready sites continues to outpace supply in many key corridors. Developers, builders, and land bankers who secure well-positioned parcels now stand to benefit from Austin's long-term growth trajectory.
+                Land acquisition in the Austin metropolitan area represents one of the highest-potential commercial real estate strategies available today. As the city's population approaches, and is projected to exceed, three million residents in the broader MSA, demand for development-ready sites continues to outpace supply in many key corridors. Developers, builders, and land bankers who secure well-positioned parcels now stand to benefit from Austin's long-term growth trajectory.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 The most active development land markets in Austin span several distinct geographies. The Highway 290 West corridor toward <Link to="/communities/dripping-springs" className="text-foreground underline hover:text-muted-foreground">Dripping Springs</Link> continues to attract master-planned residential and mixed-use development. The I-35 corridor through Southeast Austin and San Marcos is emerging as a logistics and industrial hub. East Austin infill sites command premium pricing but offer density advantages and proximity to downtown employment centers. Northern suburbs including Leander, Liberty Hill, and Georgetown present large-tract opportunities for residential subdivision and commercial pad development.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Echelon Property Group's land advisory practice helps investors navigate the complexities of Austin-area land acquisition — from zoning analysis and entitlement timelines to utility availability and environmental considerations. Our team sources both on-market and off-market land opportunities, providing clients with access to deals that often transact before reaching public listing platforms.
+                Echelon Property Group's land advisory practice helps investors navigate the complexities of Austin-area land acquisition, from zoning analysis and entitlement timelines to utility availability and environmental considerations. Our team sources both on-market and off-market land opportunities, providing clients with access to deals that often transact before reaching public listing platforms.
               </p>
             </section>
 
@@ -248,10 +248,10 @@ const AustinCommercialRealEstate = () => {
                 Austin's retail and office investment markets offer distinct opportunities shaped by the city's unique economic and demographic profile. The retail sector benefits from Austin's rapidly expanding consumer base, tourism economy, and the proliferation of experiential retail concepts that draw traffic even in an increasingly digital marketplace. Grocery-anchored centers, mixed-use retail with residential components, and boutique retail on high-profile corridors like South Congress and the Domain consistently attract investor interest.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                The office investment landscape in Austin has evolved significantly. While downtown Class A properties — particularly in buildings with modern amenities, sustainability certifications, and walkable locations — continue to command premium rents and attract institutional capital, suburban office assets in corridors like the Arboretum, Northwest Austin, and Southwest Austin offer higher yields with stable tenancy. The growing demand for creative and flex office space, driven by Austin's startup ecosystem and tech culture, has also created a niche asset class that appeals to value-oriented investors.
+                The office investment landscape in Austin has evolved significantly. While downtown Class A properties, particularly in buildings with modern amenities, sustainability certifications, and walkable locations, continue to command premium rents and attract institutional capital, suburban office assets in corridors like the Arboretum, Northwest Austin, and Southwest Austin offer higher yields with stable tenancy. The growing demand for creative and flex office space, driven by Austin's startup ecosystem and tech culture, has also created a niche asset class that appeals to value-oriented investors.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Whether you are evaluating a single-tenant net-leased retail property, a multi-tenant suburban office building, or a repositioning opportunity in an emerging submarket, Echelon Property Group provides the market intelligence and transaction expertise to execute successfully. Our approach combines the rigor of institutional-grade analysis with the personalized service of a boutique advisory — the same principles that guide our <Link to="/austin-luxury-homes-for-sale" className="text-foreground underline hover:text-muted-foreground">luxury residential practice</Link>.
+                Whether you are evaluating a single-tenant net-leased retail property, a multi-tenant suburban office building, or a repositioning opportunity in an emerging submarket, Echelon Property Group provides the market intelligence and transaction expertise to execute successfully. Our approach combines the rigor of institutional-grade analysis with the personalized service of a boutique advisory, the same principles that guide our <Link to="/austin-luxury-homes-for-sale" className="text-foreground underline hover:text-muted-foreground">luxury residential practice</Link>.
               </p>
             </section>
 
@@ -273,7 +273,7 @@ const AustinCommercialRealEstate = () => {
                 <div className="border-l-2 border-gold pl-6">
                   <h3 className="text-lg font-medium text-foreground mb-2">Suburban Growth Acceleration</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Austin's suburban ring — from <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">West lake Hills</Link> and <Link to="/communities/barton-creek" className="text-foreground underline hover:text-muted-foreground">Barton Creek</Link> to Cedar Park, Leander, and Georgetown — is experiencing rapid commercial development driven by residential rooftops and population density. Retail, medical, and professional office demand in these areas is creating new investment opportunities.
+                    Austin's suburban ring, from <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">West lake Hills</Link> and <Link to="/communities/barton-creek" className="text-foreground underline hover:text-muted-foreground">Barton Creek</Link> to Cedar Park, Leander, and Georgetown, is experiencing rapid commercial development driven by residential rooftops and population density. Retail, medical, and professional office demand in these areas is creating new investment opportunities.
                   </p>
                 </div>
                 <div className="border-l-2 border-gold pl-6">
@@ -304,13 +304,13 @@ const AustinCommercialRealEstate = () => {
                 <div className="border-l-2 border-gold pl-6">
                   <h3 className="text-lg font-medium text-foreground mb-2">Local Market Intelligence</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Our team tracks commercial transaction data, lease comps, vacancy trends, and development pipelines across every Austin submarket. This intelligence informs every recommendation we make — from site selection to pricing strategy to investment underwriting.
+                    Our team tracks commercial transaction data, lease comps, vacancy trends, and development pipelines across every Austin submarket. This intelligence informs every recommendation we make, from site selection to pricing strategy to investment underwriting.
                   </p>
                 </div>
                 <div className="border-l-2 border-gold pl-6">
                   <h3 className="text-lg font-medium text-foreground mb-2">Cross-Sector Expertise</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Many of our clients invest across both residential and commercial asset classes. Our integrated practice allows us to advise holistically — whether you're acquiring a luxury home in <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">West lake Hills</Link>, purchasing an office building downtown, or assembling land for a mixed-use development.
+                    Many of our clients invest across both residential and commercial asset classes. Our integrated practice allows us to advise holistically, whether you're acquiring a luxury home in <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">West lake Hills</Link>, purchasing an office building downtown, or assembling land for a mixed-use development.
                   </p>
                 </div>
                 <div className="border-l-2 border-gold pl-6">

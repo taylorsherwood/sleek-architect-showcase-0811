@@ -245,7 +245,7 @@ const GlobalLuxuryAdvertising = () => {
                 GLOBAL LUXURY ADVERTISING
               </p>
 
-              {/* Seller hook — more space above */}
+              {/* Seller hook, more space above */}
               <p
                 className="text-primary-foreground/75 text-sm md:text-base font-light mt-5 mb-4"
                 style={{
@@ -256,7 +256,7 @@ const GlobalLuxuryAdvertising = () => {
                 Positioned to Achieve Maximum Value
               </p>
 
-              {/* Divider — shorter, subtler */}
+              {/* Divider, shorter, subtler */}
               <div
                 className="mb-5"
                 style={{
@@ -326,7 +326,7 @@ const GlobalLuxuryAdvertising = () => {
       {/*  2 · PLATFORM EXPOSURE                                         */}
       {/* ═══════════════════════════════════════════════════════════════ */}
       <section className="py-14 md:py-18 relative overflow-hidden" style={{ background: "#0C0F24" }} ref={platforms1.ref}>
-        {/* ── Oversized WSJ anchor mark — nearly imperceptible ── */}
+        {/* ── Oversized WSJ anchor mark, nearly imperceptible ── */}
         <div
           className="absolute inset-0 pointer-events-none select-none overflow-hidden"
           aria-hidden="true"
@@ -362,7 +362,7 @@ const GlobalLuxuryAdvertising = () => {
               <p
                 className="mb-10 max-w-[410px]"
                 style={{ lineHeight: 1.7, fontSize: "15px", letterSpacing: "0.01em", color: "rgba(255,255,255,0.75)", ...revealStyle(platforms1.visible, 200) }}>
-                Your property is positioned within a curated network of the world's most influential luxury, financial, and real estate platforms — strategically selected to reach qualified, high-intent buyers globally.
+                Your property is positioned within a curated network of the world's most influential luxury, financial, and real estate platforms, strategically selected to reach qualified, high-intent buyers globally.
               </p>
 
               {/* Publication proof block */}
@@ -481,7 +481,7 @@ const GlobalLuxuryAdvertising = () => {
             <p
               className="text-muted-foreground leading-relaxed mb-12 max-w-2xl mx-auto"
               style={revealStyle(why.visible, 300)}>
-              Effective marketing is not just about visibility — it's about reaching the right buyers, elevating perceived value, and creating the conditions for stronger offers.
+              Effective marketing is not just about visibility, it's about reaching the right buyers, elevating perceived value, and creating the conditions for stronger offers.
             </p>
 
             <div className="space-y-5 max-w-lg mx-auto text-left">

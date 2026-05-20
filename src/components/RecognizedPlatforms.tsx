@@ -6,7 +6,7 @@
  *
  * Each platform renders as plain text by default. When a verified
  * URL is supplied via the `url` field on a platform entry, the
- * label automatically becomes an anchor — no redesign required.
+ * label automatically becomes an anchor, no redesign required.
  * ---------------------------------------------------------------
  */
 

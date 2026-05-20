@@ -77,7 +77,7 @@ const SellPrivate = () => {
     e.preventDefault();
     if (!form.name.trim() || !form.email.trim() || !form.phone.trim() || !form.address.trim()) return;
     setLoading(true);
-    const message = `Private seller inquiry — Address: ${form.address}${form.timeline ? ` | Timeline: ${form.timeline}` : ""}`;
+    const message = `Private seller inquiry, Address: ${form.address}${form.timeline ? ` | Timeline: ${form.timeline}` : ""}`;
     await submitLeadToZapier({
       name: form.name,
       email: form.email,
@@ -98,7 +98,7 @@ const SellPrivate = () => {
   const scrollTo = (id: string) =>
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
 
-  // Form field styles — ivory card on dark navy
+  // Form field styles, ivory card on dark navy
   const fieldLabel = "block mb-2";
   const fieldLabelStyle = { ...eyebrowStyle, color: `${NAVY}B3` }; // ~70% navy
   const fieldInput =
@@ -113,7 +113,7 @@ const SellPrivate = () => {
         description="Explore a discreet way to sell your home in Austin without going fully public. Private seller strategy for homeowners seeking control, privacy, and flexibility."
         canonical="/sell-private"
         ogTitle="Sell Your Home Off Market in Austin"
-        ogDescription="A more controlled way to explore a sale in Austin — without open houses, excessive showings, or public days on market."
+        ogDescription="A more controlled way to explore a sale in Austin, without open houses, excessive showings, or public days on market."
       />
       <SchemaMarkup
         schema={createBreadcrumbSchema([
@@ -188,7 +188,7 @@ const SellPrivate = () => {
               className="text-base sm:text-lg font-light leading-[1.65] mb-3 max-w-xl"
               style={{ color: "rgba(245,243,239,0.88)" }}
             >
-              A more controlled way to explore a sale in Austin — without open houses, excessive showings, or public days on market.
+              A more controlled way to explore a sale in Austin, without open houses, excessive showings, or public days on market.
             </p>
             <p
               className="font-semibold tracking-[0.18em] uppercase mb-5 text-[hsl(var(--gold))]"
@@ -278,7 +278,7 @@ const SellPrivate = () => {
       </section>
       <div className="h-2 md:h-3" aria-hidden="true" style={{ backgroundColor: IVORY }} />
 
-      {/* ─────────── SECTION 1 — Before You List Publicly ─────────── */}
+      {/* ─────────── SECTION 1, Before You List Publicly ─────────── */}
       <section className="py-8 md:py-11" style={{ backgroundColor: IVORY }}>
         <div className="container mx-auto px-6 max-w-6xl">
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
@@ -349,7 +349,7 @@ const SellPrivate = () => {
               <div className="aspect-[3/2] sm:aspect-[16/9] lg:aspect-[16/9] overflow-hidden" style={{ backgroundColor: "rgba(12,15,36,0.05)" }}>
                 <img
                   src={sectionImage}
-                  alt="Refined Austin luxury home exterior at dusk — discreet seller representation"
+                  alt="Refined Austin luxury home exterior at dusk, discreet seller representation"
                   className="w-full h-full object-cover"
                   loading="lazy"
                   decoding="async"
@@ -378,7 +378,7 @@ const SellPrivate = () => {
         </div>
       </section>
 
-      {/* ─────────── SECTION 2 — How the Process Works ─────────── */}
+      {/* ─────────── SECTION 2, How the Process Works ─────────── */}
       <section id="how-it-works" className="py-14 md:py-20" style={{ backgroundColor: NAVY }}>
         <div className="container mx-auto px-6 max-w-6xl">
           <div className="text-center mb-12 md:mb-16">
@@ -442,7 +442,7 @@ const SellPrivate = () => {
             className="text-center font-light leading-relaxed text-[0.95rem] md:text-base max-w-2xl mx-auto italic mb-9 md:mb-11"
             style={{ color: "rgba(245,243,239,0.7)" }}
           >
-            This is not about avoiding the market — it's about approaching it more strategically.
+            This is not about avoiding the market, it's about approaching it more strategically.
           </p>
 
           {/* Mid-page CTA */}
@@ -458,7 +458,7 @@ const SellPrivate = () => {
         </div>
       </section>
 
-      {/* ─────────── SECTION 3 — Form / Conversion ─────────── */}
+      {/* ─────────── SECTION 3, Form / Conversion ─────────── */}
       <section id="private-sale-form" className="py-14 md:py-20" style={{ backgroundColor: NAVY }}>
         <div className="container mx-auto px-5 sm:px-6 max-w-3xl">
           <div className="text-center mb-9 md:mb-11">
@@ -475,7 +475,7 @@ const SellPrivate = () => {
               className="text-base md:text-[1.05rem] font-light leading-[1.7] max-w-xl mx-auto mb-3"
               style={{ color: "rgba(245,243,239,0.78)" }}
             >
-              You'll hear directly from us — not an automated estimate.
+              You'll hear directly from us, not an automated estimate.
             </p>
             <p
               className="font-light tracking-[0.18em] uppercase"
@@ -485,7 +485,7 @@ const SellPrivate = () => {
             </p>
           </div>
 
-          {/* Ivory card on navy — minimal styling, no heavy borders */}
+          {/* Ivory card on navy, minimal styling, no heavy borders */}
           <form
             onSubmit={handleSubmit}
             className="p-6 sm:p-9 md:p-11 space-y-6"

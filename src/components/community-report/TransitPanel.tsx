@@ -44,7 +44,7 @@ const TransitPanel = ({ transit }: Props) => {
       <p className="text-sm text-muted-foreground mb-8">
         {hasData
           ? "How easy it is to get around on foot, by bike, and by transit in this area."
-          : "Walk / Bike / Transit scores — populate via admin. Showing placeholder layout."}
+          : "Walk / Bike / Transit scores, populate via admin. Showing placeholder layout."}
       </p>
 
       <div className="grid sm:grid-cols-3 gap-px bg-border mb-6">

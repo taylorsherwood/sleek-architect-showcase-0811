@@ -48,7 +48,7 @@ const BlogPost = () => {
     );
   }
 
-  // Extract FAQs — prefer new :::faq block, fall back to legacy "Frequently Asked Questions" markdown section
+  // Extract FAQs, prefer new :::faq block, fall back to legacy "Frequently Asked Questions" markdown section
   let faqs: { question: string; answer: string }[] = extractFAQsFromContent(post.content);
   if (faqs.length === 0 && post.content.includes("Frequently Asked Questions")) {
     const faqContent = post.content.split("Frequently Asked Questions")[1] || "";

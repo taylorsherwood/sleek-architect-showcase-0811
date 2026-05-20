@@ -69,7 +69,7 @@ const PrivateOpportunities = ({ variant = "light" }: PrivateOpportunitiesProps) 
     }
     setErrors({});
     setSubmitting(true);
-    const message = `Private opportunities request${form.investmentRange ? ` — Investment range: ${form.investmentRange}` : ""}`;
+    const message = `Private opportunities request${form.investmentRange ? `, Investment range: ${form.investmentRange}` : ""}`;
     const res = await submitLeadToZapier({
       name: form.name,
       email: form.email,
@@ -107,7 +107,7 @@ const PrivateOpportunities = ({ variant = "light" }: PrivateOpportunitiesProps) 
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-start">
-            {/* Left — Copy */}
+            {/* Left, Copy */}
             <div>
               <p
                 className="text-minimal tracking-widest mb-3"
@@ -163,7 +163,7 @@ const PrivateOpportunities = ({ variant = "light" }: PrivateOpportunitiesProps) 
               </Link>
             </div>
 
-            {/* Right — Form Card */}
+            {/* Right, Form Card */}
             <div
               className={`rounded-lg p-6 md:p-8 ${
                 isDark

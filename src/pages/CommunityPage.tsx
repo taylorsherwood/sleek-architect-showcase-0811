@@ -20,7 +20,7 @@ import { autoLink } from "@/lib/autoLinker";
 
 const SITE_URL = "https://www.echelonpropertygroup.com";
 
-/* Neighborhood Insights — contextual blog links per community */
+/* Neighborhood Insights, contextual blog links per community */
 const neighborhoodInsights: Record<string, { title: string; description: string; href: string }[]> = {
   "tarrytown": [
     { title: "Tarrytown vs Bryker Woods", description: "How these two iconic 78703 neighborhoods compare for lifestyle, pricing, and long-term value.", href: "/blog/tarrytown-vs-bryker-woods" },
@@ -35,7 +35,7 @@ const neighborhoodInsights: Record<string, { title: string; description: string;
     { title: "Top Investment Neighborhoods in Austin", description: "Why Rollingwood's limited inventory drives exceptional long-term appreciation.", href: "/blog/top-investment-neighborhoods-austin" },
   ],
   "lake-austin": [
-    { title: "Lake Austin vs Lake Travis", description: "Waterfront lifestyles compared — proximity, pricing, and daily experience.", href: "/blog/lake-austin-vs-lake-travis" },
+    { title: "Lake Austin vs Lake Travis", description: "Waterfront lifestyles compared, proximity, pricing, and daily experience.", href: "/blog/lake-austin-vs-lake-travis" },
     { title: "Best Waterfront Homes in Austin", description: "A comprehensive look at Austin's lakefront market and what drives value.", href: "/blog/best-waterfront-homes-austin" },
   ],
   "barton-creek": [
@@ -52,7 +52,7 @@ const neighborhoodInsights: Record<string, { title: string; description: string;
     { title: "Best Luxury Neighborhoods in Austin", description: "Rob Roy's position among Austin's most exclusive addresses.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
   ],
   "bee-cave": [
-    { title: "Best Neighborhoods Near Bee Cave", description: "An insider's guide to the communities surrounding Bee Cave — Lakeway, Spanish Oaks, Steiner Ranch, and more.", href: "/blog/best-neighborhoods-near-bee-cave" },
+    { title: "Best Neighborhoods Near Bee Cave", description: "An insider's guide to the communities surrounding Bee Cave, Lakeway, Spanish Oaks, Steiner Ranch, and more.", href: "/blog/best-neighborhoods-near-bee-cave" },
     { title: "Bee Cave vs Lakeway for Luxury Buyers", description: "A side-by-side comparison of two premier Hill Country communities.", href: "/blog/bee-cave-vs-lakeway-luxury-buyers" },
     { title: "Top Investment Neighborhoods in Austin", description: "Bee Cave's growth trajectory and Lake Travis ISD premium.", href: "/blog/top-investment-neighborhoods-austin" },
   ],
@@ -72,10 +72,10 @@ const neighborhoodInsights: Record<string, { title: string; description: string;
   ],
   "downtown": [
     { title: "Austin Luxury Market Forecast", description: "What the data says about downtown Austin's condo market and pricing trajectory.", href: "/blog/austin-luxury-real-estate-market-forecast" },
-    { title: "Moving to Austin — Complete Relocation Guide", description: "Downtown living, cost of living, and what to expect as a new Austin resident.", href: "/blog/moving-to-austin-texas-complete-relocation-guide" },
+    { title: "Moving to Austin, Complete Relocation Guide", description: "Downtown living, cost of living, and what to expect as a new Austin resident.", href: "/blog/moving-to-austin-texas-complete-relocation-guide" },
   ],
   "dripping-springs": [
-    { title: "Top Investment Neighborhoods in Austin", description: "Dripping Springs sits on Austin's primary growth corridor — here's why investors are paying attention.", href: "/blog/top-investment-neighborhoods-austin" },
+    { title: "Top Investment Neighborhoods in Austin", description: "Dripping Springs sits on Austin's primary growth corridor, here's why investors are paying attention.", href: "/blog/top-investment-neighborhoods-austin" },
     { title: "Austin Property Taxes Explained", description: "How Hays County tax rates compare and what Hill Country buyers should know.", href: "/blog/austin-property-taxes-explained" },
   ],
   "texas-hill-country-estates": [
@@ -99,7 +99,7 @@ const neighborhoodInsights: Record<string, { title: string; description: string;
     { title: "Tarrytown vs Bryker Woods", description: "How Clarksville's closest neighbors compare for central Austin living.", href: "/blog/tarrytown-vs-bryker-woods" },
   ],
   "lake-travis": [
-    { title: "Lake Austin vs Lake Travis", description: "Waterfront lifestyles compared — proximity, pricing, and daily experience.", href: "/blog/lake-austin-vs-lake-travis" },
+    { title: "Lake Austin vs Lake Travis", description: "Waterfront lifestyles compared, proximity, pricing, and daily experience.", href: "/blog/lake-austin-vs-lake-travis" },
     { title: "Best Neighborhoods Near Bee Cave", description: "How Lake Travis-area communities compare across the Hill Country corridor.", href: "/blog/best-neighborhoods-near-bee-cave" },
     { title: "Best Waterfront Homes in Austin", description: "A comprehensive look at Austin's lakefront market and what drives value.", href: "/blog/best-waterfront-homes-austin" },
   ],
@@ -109,7 +109,7 @@ const neighborhoodInsights: Record<string, { title: string; description: string;
   ],
   "hyde-park": [
     { title: "Best Luxury Neighborhoods in Austin", description: "Where Hyde Park's historic character fits in Austin's luxury landscape.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
-    { title: "Moving to Austin — Complete Relocation Guide", description: "What makes Hyde Park appealing for newcomers to Austin.", href: "/blog/moving-to-austin-texas-complete-relocation-guide" },
+    { title: "Moving to Austin, Complete Relocation Guide", description: "What makes Hyde Park appealing for newcomers to Austin.", href: "/blog/moving-to-austin-texas-complete-relocation-guide" },
   ],
   "great-hills": [
     { title: "Best Luxury Neighborhoods in Austin", description: "Northwest Austin's established neighborhoods and their investment appeal.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
@@ -322,7 +322,7 @@ const CommunityPage = () => {
               <img
                 src={heroImageSrc}
                 alt={`Luxury homes in ${community.name} Austin Texas`}
-                title={`${community.name} real estate — luxury homes for sale in Austin`}
+                title={`${community.name} real estate, luxury homes for sale in Austin`}
                 className="w-full aspect-[21/9] md:aspect-[24/9] object-cover"
                 width={1280}
                 height={480}
@@ -340,7 +340,7 @@ const CommunityPage = () => {
 
       <div className="h-4 md:h-6" />
 
-      {/* Locked Private Market Report preview (gated slugs only) — sits between
+      {/* Locked Private Market Report preview (gated slugs only), sits between
           hero and existing content. Adds visible metrics + blurred dataset
           preview that scrolls to the inline gate form below. */}
       {GATED_REPORT_SLUGS.has(community.slug) && (
@@ -351,7 +351,7 @@ const CommunityPage = () => {
         />
       )}
 
-      {/* Neighborhood Boundary Map — sits directly above the overview */}
+      {/* Neighborhood Boundary Map, sits directly above the overview */}
       <CommunityBoundaryMap
         imageSrc={`/images/communities/${community.slug}-boundary.webp`}
         communityName={community.name}
@@ -401,7 +401,7 @@ const CommunityPage = () => {
                     </h3>
                     <ContentBlock text={community.investmentPotential} currentSlug={community.slug} />
                     <p className="text-muted-foreground leading-relaxed mt-4">
-                      Some homes in {community.name} present strong renovation or value-add opportunities — <Link to="/invest" className="text-foreground underline hover:text-gold transition-colors">explore our investor-focused approach</Link>.
+                      Some homes in {community.name} present strong renovation or value-add opportunities, <Link to="/invest" className="text-foreground underline hover:text-gold transition-colors">explore our investor-focused approach</Link>.
                     </p>
                   </section>
 
@@ -421,7 +421,7 @@ const CommunityPage = () => {
         </div>
       )}
 
-      {/* Legacy LiveBy Community Guide CTA — only for slugs not yet migrated */}
+      {/* Legacy LiveBy Community Guide CTA, only for slugs not yet migrated */}
       {!GATED_REPORT_SLUGS.has(community.slug) &&
         ["rollingwood", "rob-roy", "davenport-ranch"].includes(community.slug) && (
         <div className="container mx-auto px-6 py-8">
@@ -493,7 +493,7 @@ const CommunityPage = () => {
                   </h2>
                   <ContentBlock text={community.investmentPotential} currentSlug={community.slug} />
                   <p className="text-muted-foreground leading-relaxed mt-4">
-                    Some homes in {community.name} present strong renovation or value-add opportunities — <Link to="/invest" className="text-foreground underline hover:text-gold transition-colors">explore our investor-focused approach</Link>.
+                    Some homes in {community.name} present strong renovation or value-add opportunities, <Link to="/invest" className="text-foreground underline hover:text-gold transition-colors">explore our investor-focused approach</Link>.
                   </p>
                 </section>
 
@@ -568,7 +568,7 @@ const CommunityPage = () => {
               </div>
             </section>
 
-            {/* Neighborhood Insights — contextual blog links */}
+            {/* Neighborhood Insights, contextual blog links */}
             {slug && neighborhoodInsights[slug] && neighborhoodInsights[slug].length > 0 && (
               <section>
                 <p className="text-minimal text-gold mb-3 tracking-[0.2em] whitespace-pre-line">{"\n\n"}EDITORIAL</p>

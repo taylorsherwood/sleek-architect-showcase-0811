@@ -100,14 +100,14 @@ const sellingSteps = [
   number: "03",
   title: "Luxury Marketing & Exposure",
   description:
-  "Every listing receives professional HDR photography, cinematic video, drone footage, 3-D virtual tours, a custom property website, targeted digital advertising, and syndication to 500+ listing platforms worldwide. This isn't a template — it's a bespoke campaign."
+  "Every listing receives professional HDR photography, cinematic video, drone footage, 3-D virtual tours, a custom property website, targeted digital advertising, and syndication to 500+ listing platforms worldwide. This isn't a template, it's a bespoke campaign."
 },
 {
   icon: Globe,
   number: "04",
   title: "Showings & Buyer Engagement",
   description:
-  "We actively market to our network of qualified buyers, relocation clients, and high-net-worth investors. Private broker previews, luxury open houses, and targeted outreach ensure your home reaches the right audience — locally and globally."
+  "We actively market to our network of qualified buyers, relocation clients, and high-net-worth investors. Private broker previews, luxury open houses, and targeted outreach ensure your home reaches the right audience, locally and globally."
 },
 {
   icon: Handshake,
@@ -132,7 +132,7 @@ const whySell = [
 {
   title: "Luxury Property Presentation",
   description:
-  "We coordinate professional staging, photography, and property branding to position your home as a standout in the market — whether it's a Barton Creek estate, a Westlake hilltop, or a Lake Austin waterfront."
+  "We coordinate professional staging, photography, and property branding to position your home as a standout in the market, whether it's a Barton Creek estate, a Westlake hilltop, or a Lake Austin waterfront."
 },
 {
   title: "Global Reach, Local Expertise",
@@ -360,12 +360,12 @@ const Sell = () => {
         email: conForm.email,
         phone: conForm.phone,
         message: conForm.message || "Listing consultation request from Sell page.",
-        source: "Sell Page — Consultation Form",
+        source: "Sell Page, Consultation Form",
         extra: { interest: "Selling My Home" },
       },
       setConSubmitting,
       () => setConForm({ name: "", email: "", phone: "", message: "" }),
-      "Thank you — we'll be in touch shortly to schedule your listing consultation."
+      "Thank you, we'll be in touch shortly to schedule your listing consultation."
     );
   };
 
@@ -397,7 +397,7 @@ const Sell = () => {
       <section className="relative min-h-[640px] md:min-h-[720px] lg:h-[820px] xl:h-[860px] 2xl:h-[880px] flex flex-col justify-end overflow-hidden bg-primary">
         <div className="absolute inset-0">
           {/* Mobile: keep existing image as LCP. Hidden on md+ */}
-          <img src={heroImg} alt="Luxury property in Austin Texas" title="Sell your Austin luxury home — Echelon Property Group" className="md:hidden w-full h-full object-cover" loading="eager" decoding="async" fetchPriority="high" sizes="100vw" width={1920} height={1080} />
+          <img src={heroImg} alt="Luxury property in Austin Texas" title="Sell your Austin luxury home, Echelon Property Group" className="md:hidden w-full h-full object-cover" loading="eager" decoding="async" fetchPriority="high" sizes="100vw" width={1920} height={1080} />
           {/* Desktop: poster paints instantly (LCP), video plays once on load and again when user scrolls back to top */}
           <video
             ref={heroVideoRef}
@@ -470,7 +470,7 @@ const Sell = () => {
             <ul className="space-y-4 text-muted-foreground leading-relaxed">
               <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Well-priced luxury homes in Austin typically sell within 30–90 days. Strategic pricing and premium marketing are the most critical success factors.</span></li>
               <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Off-market selling is increasingly popular among high-net-worth homeowners in West lake Hills, Barton Creek, and Lake Austin who prioritize privacy.</span></li>
-              <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>In Austin's luxury segment, a significant portion of high-end properties transact off-market or through private networks — meaning many of the best opportunities are never publicly listed.</span></li>
+              <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>In Austin's luxury segment, a significant portion of high-end properties transact off-market or through private networks, meaning many of the best opportunities are never publicly listed.</span></li>
               <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Professional photography, cinematic video, drone footage, and custom property websites are standard expectations for luxury listings in Austin.</span></li>
               <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Austin's luxury inventory remains limited in top neighborhoods, creating strong seller leverage when properties are properly positioned.</span></li>
               <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Echelon Property Group's listings receive global exposure through the eXp Luxury Division network and syndication to 500+ platforms.</span></li>
@@ -489,7 +489,7 @@ const Sell = () => {
                 Why List With Echelon
               </h2>
               <p className="text-muted-foreground leading-relaxed">
-                Selling property in Austin requires more than a listing — it requires a strategy. Here's why top sellers trust Taylor as their Austin luxury listing agent.
+                Selling property in Austin requires more than a listing, it requires a strategy. Here's why top sellers trust Taylor as their Austin luxury listing agent.
               </p>
             </div>
             <div className="grid md:grid-cols-2 gap-x-16 gap-y-12">
@@ -520,7 +520,7 @@ const Sell = () => {
 
       {/* ── Marketing Strategy (Editorial) ── */}
       <section className="relative py-24 md:py-36 bg-secondary overflow-hidden">
-        {/* Single watermark — bottom-right ambient depth */}
+        {/* Single watermark, bottom-right ambient depth */}
         <div
           className="pointer-events-none absolute right-[-5%] bottom-[-18%] w-[60vw] max-w-[800px] aspect-square overflow-hidden opacity-[0.03]"
           aria-hidden="true"
@@ -532,7 +532,7 @@ const Sell = () => {
         </div>
 
         <div className="grid lg:grid-cols-[minmax(0,1fr)_minmax(0,1.35fr)] items-start">
-          {/* Left column — Copy (stays in container) */}
+          {/* Left column, Copy (stays in container) */}
           <div className="px-6 lg:pl-[max(1.5rem,calc((100vw-80rem)/2+1.5rem))] lg:pr-20">
             <div className="max-w-[620px]">
               <ScrollReveal>
@@ -551,7 +551,7 @@ const Sell = () => {
 
               <ScrollReveal delay={160}>
                 <p className="text-muted-foreground/80 leading-relaxed mb-14 max-w-[580px] text-[15px]">
-                  Every Echelon listing receives a bespoke marketing campaign engineered to attract qualified, motivated buyers — locally and globally. Here's what's included when you sell your home in Austin with us.
+                  Every Echelon listing receives a bespoke marketing campaign engineered to attract qualified, motivated buyers, locally and globally. Here's what's included when you sell your home in Austin with us.
                 </p>
               </ScrollReveal>
 
@@ -574,7 +574,7 @@ const Sell = () => {
             </div>
           </div>
 
-          {/* Right column — Image: full width to right edge */}
+          {/* Right column, Image: full width to right edge */}
           <div className="relative lg:mt-12">
             <ScrollReveal delay={250} distance={32} duration={1200}>
               <div
@@ -586,7 +586,7 @@ const Sell = () => {
                 <img
                   src={taylorProfileSell}
                   alt="Echelon Property Group luxury listing sign in front of modern Austin home"
-                  title="Echelon Property Group — luxury listing marketing"
+                  title="Echelon Property Group, luxury listing marketing"
                   className="relative z-10 w-full h-full object-cover object-[65%_65%] transition-transform duration-[1200ms] ease-[cubic-bezier(0.25,0.1,0.25,1)] group-hover:scale-[1.015]"
                   style={{ minHeight: "420px", maxHeight: "600px" }}
                   loading="lazy"
@@ -645,7 +645,7 @@ const Sell = () => {
 
       <div className="h-12 md:h-20 bg-background" aria-hidden="true" />
 
-      {/* ── Discreet Path — Private Sale bridge ── */}
+      {/* ── Discreet Path, Private Sale bridge ── */}
       <section className="py-16 md:py-24 bg-secondary">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto text-center">
@@ -654,7 +654,7 @@ const Sell = () => {
               Prefer a more discreet approach?
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-8 max-w-xl mx-auto">
-              If you're not ready to fully go to market, there's a quieter way to explore your options — without open houses, public days on market, or unnecessary exposure.
+              If you're not ready to fully go to market, there's a quieter way to explore your options, without open houses, public days on market, or unnecessary exposure.
             </p>
             <Link
               to="/sell-private"
@@ -687,7 +687,7 @@ const Sell = () => {
             </div>
             <div className="space-y-6 text-muted-foreground leading-relaxed max-w-4xl">
               <p>
-                Echelon Property Group provides comprehensive real estate services across residential, commercial, land, and investment sectors. Unlike single-focus agents, our breadth of experience allows us to advise clients holistically — whether they're purchasing a primary residence, diversifying into <Link to="/austin-commercial-real-estate" className="text-foreground underline hover:text-muted-foreground">commercial property</Link>, or assembling land for development.
+                Echelon Property Group provides comprehensive real estate services across residential, commercial, land, and investment sectors. Unlike single-focus agents, our breadth of experience allows us to advise clients holistically, whether they're purchasing a primary residence, diversifying into <Link to="/austin-commercial-real-estate" className="text-foreground underline hover:text-muted-foreground">commercial property</Link>, or assembling land for development.
               </p>
               <p>
                 Our residential practice covers <Link to="/austin-luxury-homes-for-sale" className="text-foreground underline hover:text-muted-foreground">luxury homes in Austin</Link>'s most coveted neighborhoods including <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">West lake Hills</Link>, <Link to="/communities/barton-creek" className="text-foreground underline hover:text-muted-foreground">Barton Creek</Link>, <Link to="/communities/lake-austin" className="text-foreground underline hover:text-muted-foreground">Lake Austin</Link>, <Link to="/communities/tarrytown" className="text-foreground underline hover:text-muted-foreground">Tarrytown</Link>, <Link to="/communities/rollingwood" className="text-foreground underline hover:text-muted-foreground">Rollingwood</Link>, and <Link to="/communities/spanish-oaks" className="text-foreground underline hover:text-muted-foreground">Spanish Oaks</Link>. We represent both buyers and sellers, bringing strategic pricing, premium marketing, and disciplined negotiation to every transaction.
@@ -721,7 +721,7 @@ const Sell = () => {
                 Based on current Austin market data, sellers in premium neighborhoods are benefiting from limited inventory and sustained buyer demand. Homes in <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">West lake Hills</Link>, <Link to="/communities/barton-creek" className="text-foreground underline hover:text-muted-foreground">Barton Creek</Link>, and <Link to="/communities/lake-austin" className="text-foreground underline hover:text-muted-foreground">Lake Austin</Link> that are properly staged and strategically priced continue to achieve strong results.
               </p>
               <p>
-                From recent transactions in the area, we're seeing the strongest outcomes for sellers who invest in professional marketing — including cinematic video, HDR photography, and custom property websites. The difference between a standard listing and a premium-marketed listing is measurable in both days on market and final sale price. Review our <Link to="/austin-luxury-market-report" className="text-foreground underline hover:text-muted-foreground">Austin luxury market report</Link> for current data.
+                From recent transactions in the area, we're seeing the strongest outcomes for sellers who invest in professional marketing, including cinematic video, HDR photography, and custom property websites. The difference between a standard listing and a premium-marketed listing is measurable in both days on market and final sale price. Review our <Link to="/austin-luxury-market-report" className="text-foreground underline hover:text-muted-foreground">Austin luxury market report</Link> for current data.
               </p>
               <p>
                 Off-market selling has become an increasingly viable strategy for high-net-worth homeowners who value discretion. Echelon Property Group helps sellers evaluate whether a public or <Link to="/off-market-real-estate-austin" className="text-foreground underline hover:text-muted-foreground">private approach</Link> best serves their goals, based on the property's profile and the current competitive landscape. <Link to="/home-value-austin" className="text-foreground underline hover:text-muted-foreground">Get a free home valuation</Link> to understand where your property stands.
@@ -781,7 +781,7 @@ const Sell = () => {
         </div>
       </section>
 
-      {/* ── Inline Home Valuation (RealScout) — bottom of page ── */}
+      {/* ── Inline Home Valuation (RealScout), bottom of page ── */}
       <section
         id="home-valuation"
         className="py-20 md:py-24"

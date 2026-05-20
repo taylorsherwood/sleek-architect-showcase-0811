@@ -29,7 +29,7 @@ const formatMonthYear = (iso: string) => {
 };
 
 /* ─────────────────────────────────────────────
-   Editorial hero — meta strip, oversized watermark,
+   Editorial hero, meta strip, oversized watermark,
    centered headline, italic deck.
    ───────────────────────────────────────────── */
 
@@ -402,7 +402,7 @@ const PrivateDistributionEdition = ({ edition }: { edition: BriefEdition }) => {
   return (
     <div className="min-h-screen" style={{ background: PAPER }}>
       <SEOHead
-        title={`${edition.title} — ${edition.market}`}
+        title={`${edition.title}, ${edition.market}`}
         description={edition.subtitle}
         canonical={canonical}
         ogType="article"
@@ -425,7 +425,7 @@ const PrivateDistributionEdition = ({ edition }: { edition: BriefEdition }) => {
       ) : (
         <PrivateBriefGate
           editionSlug={edition.slug}
-          editionTitle={`${edition.title} — ${edition.edition}`}
+          editionTitle={`${edition.title}, ${edition.edition}`}
           onUnlock={() => setUnlocked(true)}
         />
       )}
@@ -461,7 +461,7 @@ const PrivateDistributionEdition = ({ edition }: { edition: BriefEdition }) => {
 };
 
 /* ─────────────────────────────────────────────
-   Index view — lists current edition + archive
+   Index view, lists current edition + archive
    ───────────────────────────────────────────── */
 
 const PrivateDistributionIndex = () => {
@@ -476,14 +476,14 @@ const PrivateDistributionIndex = () => {
   return (
     <div className="min-h-screen" style={{ background: PAPER }}>
       <SEOHead
-        title="Private Distribution — Austin Private Market Intelligence"
-        description="A recurring private brief on Austin's most guarded zip codes — off-market trades, pocket inventory, and advisory commentary for qualified buyers and sellers."
+        title="Private Distribution, Austin Private Market Intelligence"
+        description="A recurring private brief on Austin's most guarded zip codes, off-market trades, pocket inventory, and advisory commentary for qualified buyers and sellers."
         canonical={canonical}
         noindex
       />
       <Navigation />
 
-      {/* ───────────── Editorial cover — asymmetric, atmospheric ───────────── */}
+      {/* ───────────── Editorial cover, asymmetric, atmospheric ───────────── */}
       <section
         className="relative w-full overflow-hidden"
         style={{ background: PAPER, color: NAVY }}
@@ -604,10 +604,10 @@ const PrivateDistributionIndex = () => {
               >
                 A rotating series of advisory briefings on the neighborhoods,
                 off-market opportunities, and private collections worth knowing
-                about — circulated to a narrow audience.
+                about, circulated to a narrow audience.
               </p>
 
-              {/* Inline meta row — tightened utility band */}
+              {/* Inline meta row, tightened utility band */}
               <div
                 className="flex flex-wrap items-baseline gap-x-8 gap-y-3 pt-6"
                 style={{ borderTop: `1px solid ${RULE}` }}
@@ -645,10 +645,10 @@ const PrivateDistributionIndex = () => {
               </div>
             </div>
 
-            {/* Right editorial image — asymmetric, framed, slightly offset */}
+            {/* Right editorial image, asymmetric, framed, slightly offset */}
             <div className="md:col-span-5 relative md:-mt-2">
               <div className="relative md:translate-x-3">
-                {/* Slim gold register lines — top-left & bottom-right only */}
+                {/* Slim gold register lines, top-left & bottom-right only */}
                 <span
                   aria-hidden="true"
                   className="absolute -top-2 -left-2 w-5 h-px"
@@ -698,7 +698,7 @@ const PrivateDistributionIndex = () => {
                         "linear-gradient(160deg, rgba(245,238,222,0.18), rgba(12,15,36,0.0) 45%, rgba(12,15,36,0.32))",
                     }}
                   />
-                  {/* Film grain — fine, warm */}
+                  {/* Film grain, fine, warm */}
                   <div
                     aria-hidden="true"
                     className="absolute inset-0 pointer-events-none"
@@ -710,7 +710,7 @@ const PrivateDistributionIndex = () => {
                       mixBlendMode: "overlay",
                     }}
                   />
-                  {/* Caption — bottom-left */}
+                  {/* Caption, bottom-left */}
                   <div className="absolute left-5 bottom-5 right-5">
                     <p
                       style={{
@@ -743,7 +743,7 @@ const PrivateDistributionIndex = () => {
             </div>
           </div>
 
-          {/* Tonal bleed into the next section — smoother flow */}
+          {/* Tonal bleed into the next section, smoother flow */}
           <div
             aria-hidden="true"
             className="absolute inset-x-0 bottom-0 h-24 pointer-events-none"
@@ -754,7 +754,7 @@ const PrivateDistributionIndex = () => {
           />
         </div>
 
-        {/* Subtle drift keyframes — slow, premium, never flashy */}
+        {/* Subtle drift keyframes, slow, premium, never flashy */}
         <style>{`
           @keyframes pdCoverDrift {
             0%   { transform: scale(1.04) translate3d(0, 0, 0); }
@@ -766,7 +766,7 @@ const PrivateDistributionIndex = () => {
         `}</style>
       </section>
 
-      {/* ───────────── Market Pulse — focal tonal band, asymmetric ───────────── */}
+      {/* ───────────── Market Pulse, focal tonal band, asymmetric ───────────── */}
       <section
         className="relative w-full"
         style={{
@@ -844,7 +844,7 @@ const PrivateDistributionIndex = () => {
               }}
             >
               “The most considered trades in Austin rarely surface in public.
-              They are introduced — quietly, deliberately, between people who
+              They are introduced, quietly, deliberately, between people who
               already know each other's standards.”
             </p>
             <p
@@ -858,7 +858,7 @@ const PrivateDistributionIndex = () => {
                 fontWeight: 500,
               }}
             >
-              — From the Editor's Desk
+             , From the Editor's Desk
             </p>
           </div>
         </div>

@@ -25,7 +25,7 @@ const LuxuryHomesAustin = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Luxury Homes for Sale in Austin TX"
-        description="Luxury homes for sale in Austin TX — Westlake, Barton Creek, Tarrytown, Rollingwood, and Lake Austin estates. Browse listings above $1.5M." />
+        description="Luxury homes for sale in Austin TX, Westlake, Barton Creek, Tarrytown, Rollingwood, and Lake Austin estates. Browse listings above $1.5M." />
       
       <SchemaMarkup schema={realEstateAgentSchema} />
       <Navigation />
@@ -43,7 +43,7 @@ const LuxuryHomesAustin = () => {
               Curated Austin Opportunities
             </h1>
             <p className="text-lg text-muted-foreground/80 leading-relaxed max-w-2xl font-light">
-              Not all opportunities are created equal. Each month, we curate a small selection of homes, development sites, and investment properties based on pricing, location, and long-term upside. This is not a feed — it's a filter.
+              Not all opportunities are created equal. Each month, we curate a small selection of homes, development sites, and investment properties based on pricing, location, and long-term upside. This is not a feed, it's a filter.
             </p>
           </div>
         </div>
@@ -69,8 +69,8 @@ const LuxuryHomesAustin = () => {
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 Austin, Texas has cemented its position as one of the nation's most sought-after luxury real estate
-                markets. Driven by a booming technology economy — home to Apple, Google, Tesla, Meta, and Oracle
-                campuses — paired with Texas's no-state-income-tax advantage, the city attracts high-net-worth buyers
+                markets. Driven by a booming technology economy, home to Apple, Google, Tesla, Meta, and Oracle
+                campuses, paired with Texas's no-state-income-tax advantage, the city attracts high-net-worth buyers
                 from coast to coast. The luxury segment, generally defined as properties priced above $1.5 million,
                 spans waterfront estates on <Link to="/communities/lake-austin" className="text-foreground underline hover:text-muted-foreground">Lake Austin</Link>,
                 architecturally significant hilltop mansions in <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">West lake Hills</Link>,
@@ -85,7 +85,7 @@ const LuxuryHomesAustin = () => {
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 Compared to San Francisco, Los Angeles, and New York, Austin consistently delivers more square footage,
-                better amenities, and a lower overall cost of living — without sacrificing career opportunity or cultural
+                better amenities, and a lower overall cost of living, without sacrificing career opportunity or cultural
                 richness. Supply-constrained neighborhoods like Lake Austin waterfront and West lake Hills have
                 demonstrated 7–12% average annual appreciation over the past decade, making Austin luxury real estate
                 both a lifestyle upgrade and a sound long-term investment.
@@ -104,7 +104,7 @@ const LuxuryHomesAustin = () => {
                       <img
                       src={n.image}
                       alt={`${n.name} homes for sale in Austin Texas`}
-                      title={`${n.name} — Austin luxury neighborhood`}
+                      title={`${n.name}, Austin luxury neighborhood`}
                       className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
                       loading="lazy" decoding="async" />
                     

@@ -33,7 +33,7 @@ The outdoor lifestyle is unmatched. Residents enjoy hiking at the Barton Creek G
 
 The community maintains a strong sense of identity with local events, farmers markets, and neighborhood gatherings. It offers country club living at the West lake Hills Country Club while remaining just minutes from downtown Austin.`,
     faqs: [
-      { question: "What is it like living in West lake Hills Austin?", answer: "West lake Hills offers a retreat-like lifestyle with rolling terrain, mature oaks, Hill Country views, and excellent Eanes ISD schools — all just minutes from downtown Austin." },
+      { question: "What is it like living in West lake Hills Austin?", answer: "West lake Hills offers a retreat-like lifestyle with rolling terrain, mature oaks, Hill Country views, and excellent Eanes ISD schools, all just minutes from downtown Austin." },
       { question: "What are home prices in West lake Hills?", answer: "Home prices range from $1.2 million to over $20 million. The median exceeds $1.5M, with luxury estates regularly trading above $5M." },
       { question: "Are there luxury homes in West lake Hills?", answer: "Yes. West lake Hills features some of Austin's finest luxury properties, including custom estates, contemporary homes, and hilltop compounds with panoramic views." },
       { question: "What schools serve West lake Hills?", answer: "West lake Hills is served by the Eanes Independent School District, including Bridge Point Elementary, Hill Country Middle School, and Westlake High School." },
@@ -50,19 +50,19 @@ The community maintains a strong sense of identity with local events, farmers ma
 
 The neighborhood features a mix of beautifully preserved 1930s bungalows, mid-century ranch homes, and striking contemporary new construction. Many homes sit on generous lots with mature landscaping, and the neighborhood's proximity to Deep Eddy Pool, Hike-and-Bike Trail, and downtown Austin makes it one of the most walkable luxury neighborhoods in the city.
 
-Tarrytown is served by Austin ISD, with homes primarily zoned to Casis Elementary — one of the highest-performing elementary schools in the district. The blend of old Austin charm and modern luxury makes Tarrytown uniquely appealing.`,
+Tarrytown is served by Austin ISD, with homes primarily zoned to Casis Elementary, one of the highest-performing elementary schools in the district. The blend of old Austin charm and modern luxury makes Tarrytown uniquely appealing.`,
     market: `Tarrytown's real estate market is characterized by steady demand and limited inventory. Home prices range from $800K for smaller bungalows to over $8 million for new-construction estates on premium lots.
 
 Tear-down and rebuild activity is significant, with developers and custom builders acquiring older homes on desirable lots. New construction in Tarrytown typically ranges from $400 to $600+ per square foot depending on finishes and lot position.
 
-The neighborhood's central location, walkability, and proximity to the University of Texas, downtown employers, and Lady Bird Lake ensure broad buyer demand across multiple demographics — from young professionals to established families to empty-nesters.`,
+The neighborhood's central location, walkability, and proximity to the University of Texas, downtown employers, and Lady Bird Lake ensure broad buyer demand across multiple demographics, from young professionals to established families to empty-nesters.`,
     whyBuyersLove: `Tarrytown offers something few Austin neighborhoods can match: genuine walkability combined with luxury living. Residents walk to Deep Eddy Pool, the Hike-and-Bike Trail, local restaurants, and neighborhood shops.
 
 The tree-lined streets and architectural diversity create visual character that newer developments cannot replicate. Buyers love the blend of historic Austin charm with the convenience of being minutes from downtown, MoPac, and Lake Austin.
 
 The Casis Elementary school zone, proximity to St. Andrew's Episcopal School, and strong community involvement through neighborhood associations and events round out the appeal.`,
     faqs: [
-      { question: "What is it like living in Tarrytown Austin?", answer: "Tarrytown offers tree-canopied walkable streets, proximity to downtown and Lady Bird Lake, excellent schools, and a vibrant community — one of Austin's most livable luxury neighborhoods." },
+      { question: "What is it like living in Tarrytown Austin?", answer: "Tarrytown offers tree-canopied walkable streets, proximity to downtown and Lady Bird Lake, excellent schools, and a vibrant community, one of Austin's most livable luxury neighborhoods." },
       { question: "What are home prices in Tarrytown?", answer: "Prices range from approximately $800K for smaller homes to over $8M for new-construction estates on premium lots." },
       { question: "Are there luxury homes in Tarrytown?", answer: "Yes. Tarrytown features significant new construction alongside beautifully renovated estates, many exceeding $3M to $8M+." },
       { question: "What schools serve Tarrytown?", answer: "Tarrytown is served by Austin ISD, with most homes zoned to Casis Elementary, O. Henry Middle School, and Austin High School." },
@@ -79,13 +79,13 @@ The Casis Elementary school zone, proximity to St. Andrew's Episcopal School, an
 
 Homes in Rollingwood range from updated mid-century ranch houses to fully custom new construction. The neighborhood's proximity to Zilker Park, Barton Springs Pool, the Barton Creek Greenbelt, and downtown Austin makes it extraordinarily well-positioned for buyers who want both lifestyle and convenience.
 
-Rollingwood is served by the Eanes Independent School District, with children attending Eanes Elementary, Hill Country Middle School, and Westlake High School — all top-rated institutions.`,
+Rollingwood is served by the Eanes Independent School District, with children attending Eanes Elementary, Hill Country Middle School, and Westlake High School, all top-rated institutions.`,
     market: `The Rollingwood real estate market is defined by scarcity. With approximately 500 homes in the entire city, turnover is low and demand consistently outpaces supply. Prices range from $1M for homes needing updates to $5M+ for new construction on premium lots.
 
 Tear-down and rebuild activity has accelerated in recent years, with builders paying a premium for lots in this prime location. New construction in Rollingwood typically exceeds $450 per square foot.
 
 The combination of Eanes ISD schools, walkability to Zilker Park, and proximity to downtown creates a unique value proposition that supports continued price appreciation.`,
-    whyBuyersLove: `Buyers love Rollingwood for its village-like atmosphere within one of America's most dynamic cities. The small-town feel — where neighbors know each other and children walk to the park — is increasingly rare and highly valued.
+    whyBuyersLove: `Buyers love Rollingwood for its village-like atmosphere within one of America's most dynamic cities. The small-town feel, where neighbors know each other and children walk to the park, is increasingly rare and highly valued.
 
 Proximity to Zilker Park, Barton Springs Pool, and the Barton Creek Greenbelt provides world-class outdoor recreation literally steps from home. Downtown Austin's restaurants, live music, and cultural offerings are just minutes away.
 
@@ -108,7 +108,7 @@ The Eanes ISD school zone is a major draw for families, and the neighborhood's i
 
 The neighborhood features a charming mix of restored Victorian cottages, Craftsman bungalows, and contemporary new construction. West Lynn Street serves as the neighborhood's commercial spine, lined with beloved local restaurants, coffee shops, and boutiques that create a true neighborhood village feel.
 
-Clarksville's location is exceptional — walkable to downtown Austin, Lady Bird Lake, the Whole Foods flagship, and the vibrant South Lamar corridor. It offers urban convenience with neighborhood intimacy.`,
+Clarksville's location is exceptional, walkable to downtown Austin, Lady Bird Lake, the Whole Foods flagship, and the vibrant South Lamar corridor. It offers urban convenience with neighborhood intimacy.`,
     market: `Clarksville's real estate market reflects its scarcity and location premium. Prices range from $800K for smaller historic homes to over $6M for new-construction estates. The neighborhood's proximity to downtown and its walkable commercial district drive sustained demand.
 
 Lot sizes are relatively modest by Austin standards, but the location premium more than compensates. New construction on Clarksville lots commands $500 to $700+ per square foot.
@@ -116,11 +116,11 @@ Lot sizes are relatively modest by Austin standards, but the location premium mo
 Inventory is extremely limited, and many transactions occur off-market through established agent networks. The neighborhood's historic district designation in certain blocks adds an additional layer of exclusivity and character preservation.`,
     whyBuyersLove: `Buyers love Clarksville for its authentic Austin character and unbeatable walkability. The ability to walk to restaurants, coffee shops, parks, and downtown is a lifestyle that few Austin neighborhoods can match.
 
-The neighborhood's rich history and architectural diversity — from Victorian cottages to sleek modern builds — create a visual tapestry that feels curated rather than planned. It appeals to buyers who value authenticity and community over gated uniformity.
+The neighborhood's rich history and architectural diversity, from Victorian cottages to sleek modern builds, create a visual tapestry that feels curated rather than planned. It appeals to buyers who value authenticity and community over gated uniformity.
 
 Clarksville attracts a diverse mix of creative professionals, tech executives, and longtime Austin residents who appreciate the neighborhood's cultural significance and central location.`,
     faqs: [
-      { question: "What is it like living in Clarksville Austin?", answer: "Clarksville offers a walkable village lifestyle with boutique shops, restaurants, and parks — all within walking distance of downtown Austin." },
+      { question: "What is it like living in Clarksville Austin?", answer: "Clarksville offers a walkable village lifestyle with boutique shops, restaurants, and parks, all within walking distance of downtown Austin." },
       { question: "What are home prices in Clarksville?", answer: "Prices range from approximately $800K for smaller historic homes to over $6M for new-construction estates." },
       { question: "Are there luxury homes in Clarksville?", answer: "Yes. Contemporary new construction and beautifully restored historic homes in Clarksville rank among Austin's most desirable properties." },
       { question: "What schools serve Clarksville?", answer: "Clarksville is served by Austin ISD. Nearby schools include Mathews Elementary, O. Henry Middle School, and Austin High School." },
@@ -169,7 +169,7 @@ Waterfront homes on Lake Austin represent some of the most coveted real estate i
 The lake is bordered by West lake Hills, Tarrytown, and the scenic bluffs of west Austin, placing waterfront residents minutes from downtown, world-class dining, and Austin's tech economy.`,
     market: `Lake Austin waterfront is Austin's most exclusive and highest-priced residential market. Prices range from $2M for properties with limited frontage to over $25M for trophy estates with significant deep-water shoreline, private docks, and panoramic views.
 
-Price per front foot of shoreline ranges from $10,000 to $30,000+, with premium properties featuring deep water, sunset views, and gentle slopes commanding the highest prices. Inventory is extremely limited — there are only a finite number of waterfront lots on the lake.
+Price per front foot of shoreline ranges from $10,000 to $30,000+, with premium properties featuring deep water, sunset views, and gentle slopes commanding the highest prices. Inventory is extremely limited, there are only a finite number of waterfront lots on the lake.
 
 Off-market transactions are particularly common on Lake Austin. Many of the finest properties trade privately through established agent networks, and qualified buyers benefit from working with agents who have deep relationships in the waterfront community.`,
     whyBuyersLove: `Buyers are drawn to Lake Austin for the ultimate waterfront lifestyle. The constant water level ensures year-round boating, paddleboarding, kayaking, and swimming directly from private docks.
@@ -230,7 +230,7 @@ Mueller's central location provides easy access to downtown Austin, the Universi
 The community's master-planned nature means inventory is relatively predictable, with new phases and builders releasing homes on a planned schedule. Resale homes in established sections command a premium for their mature landscaping and proximity to parks and retail.
 
 Mueller appeals to a broad buyer demographic including young professionals, families, and empty-nesters who value walkability, community, and central Austin convenience.`,
-    whyBuyersLove: `Buyers love Mueller for its walkable lifestyle and sense of community. The neighborhood features miles of trails, Lake Park, the Thinkery children's museum, local restaurants, and retail — all within walking or biking distance.
+    whyBuyersLove: `Buyers love Mueller for its walkable lifestyle and sense of community. The neighborhood features miles of trails, Lake Park, the Thinkery children's museum, local restaurants, and retail, all within walking or biking distance.
 
 The master-planned design creates a cohesive, pedestrian-friendly environment that encourages neighborhood interaction. Front porches, pocket parks, and community events foster genuine connections among residents.
 
@@ -290,7 +290,7 @@ The neighborhood's historic district designation in certain blocks restricts dem
 Demand is driven by buyers who value authenticity, walkability, and central Austin living. The University of Texas proximity provides a stable base of demand from faculty, staff, and affiliated professionals.`,
     whyBuyersLove: `Buyers love Hyde Park for its authentic Austin character and central location. The neighborhood's Victorian and Craftsman homes, mature trees, and walkable streets create an atmosphere that cannot be replicated in newer developments.
 
-The strong community identity — including the Hyde Park Neighborhood Association, local events, and beloved institutions like Quack's Bakery and Asti — fosters genuine neighborhood connection.
+The strong community identity, including the Hyde Park Neighborhood Association, local events, and beloved institutions like Quack's Bakery and Asti, fosters genuine neighborhood connection.
 
 Hyde Park appeals to buyers who prioritize character, walkability, and proximity to the University of Texas and downtown over newer construction and modern amenities.`,
     faqs: [
@@ -311,7 +311,7 @@ Hyde Park appeals to buyers who prioritize character, walkability, and proximity
 
 The neighborhood is home to a mix of beautifully preserved Georgian, Colonial, and Tudor estates alongside contemporary new construction and thoughtful renovations. Many homes sit on half-acre or larger lots with mature oaks, manicured gardens, and significant setbacks from the street.
 
-Pemberton Heights' location is exceptional — walking distance to downtown Austin, Pease Park, Shoal Creek Trail, and the Clarksville neighborhood's restaurants and shops. It offers old-money elegance within minutes of Austin's modern urban core.`,
+Pemberton Heights' location is exceptional, walking distance to downtown Austin, Pease Park, Shoal Creek Trail, and the Clarksville neighborhood's restaurants and shops. It offers old-money elegance within minutes of Austin's modern urban core.`,
     market: `Pemberton Heights represents one of Austin's highest-value residential markets. Prices range from $1.5M for homes needing renovation to over $10M for trophy estates on premium lots.
 
 The neighborhood's large lots, mature landscaping, and architectural distinction create properties that are genuinely irreplaceable. New construction and significant renovations in Pemberton Heights routinely exceed $600 per square foot.
@@ -352,7 +352,7 @@ The winery and distillery scene along Highway 290 has created a unique lifestyle
 
 Families are drawn to the Dripping Springs ISD, which has invested heavily in new facilities and programs as the community has grown. The school district is a primary motivator for many relocating families.`,
     faqs: [
-      { question: "What is it like living in Dripping Springs Texas?", answer: "Dripping Springs offers Hill Country living with scenic views, wineries, a charming downtown, and access to Austin — about 25 miles west of the city." },
+      { question: "What is it like living in Dripping Springs Texas?", answer: "Dripping Springs offers Hill Country living with scenic views, wineries, a charming downtown, and access to Austin, about 25 miles west of the city." },
       { question: "What are home prices in Dripping Springs?", answer: "Prices range from $500K in master-planned communities to over $10M for custom estates and ranch properties on acreage." },
       { question: "Are there luxury homes in Dripping Springs?", answer: "Yes. Dripping Springs features custom Hill Country estates, ranch compounds, and luxury homes on significant acreage with panoramic views." },
       { question: "What schools serve Dripping Springs?", answer: "Dripping Springs is served by the Dripping Springs ISD, which has invested in new schools and programs to serve the growing community." },
@@ -379,7 +379,7 @@ The market benefits from Lake Travis ISD schools, proximity to the Hill Country 
 
 Lake Travis ISD schools are a significant draw for families. The district's investment in facilities, programs, and athletics has established it as one of the most sought-after school districts in Central Texas.
 
-Bee Cave appeals to buyers seeking more space and a slower pace while maintaining access to Austin's economy. The commute to downtown is manageable, and the lifestyle trade-offs — Hill Country views, larger lots, and outdoor recreation — are compelling.`,
+Bee Cave appeals to buyers seeking more space and a slower pace while maintaining access to Austin's economy. The commute to downtown is manageable, and the lifestyle trade-offs, Hill Country views, larger lots, and outdoor recreation, are compelling.`,
     faqs: [
       { question: "What is it like living in Bee Cave Texas?", answer: "Bee Cave offers Hill Country living with upscale shopping at the Hill Country Galleria, top Lake Travis ISD schools, and proximity to Austin." },
       { question: "What are home prices in Bee Cave?", answer: "Prices range from approximately $500K in master-planned communities to over $8M for custom estates on acreage." },
@@ -406,7 +406,7 @@ The neighborhood has seen increasing renovation and rebuild activity as buyers r
 Demand is driven by families seeking Austin ISD schools, professionals working along the 360 and MoPac corridors, and buyers who appreciate mature neighborhoods with established trees and infrastructure.`,
     whyBuyersLove: `Buyers love Great Hills for its combination of established character, convenient location, and relative value. The mature tree canopy, rolling terrain, and generous lot sizes create a neighborhood feel that newer developments cannot replicate.
 
-The location is highly strategic — minutes from the Domain, the Arboretum, major tech employers, and excellent dining along the 360 corridor. Access to downtown via MoPac is straightforward, making it practical for a wide range of commuters.
+The location is highly strategic, minutes from the Domain, the Arboretum, major tech employers, and excellent dining along the 360 corridor. Access to downtown via MoPac is straightforward, making it practical for a wide range of commuters.
 
 Great Hills appeals to families, professionals, and empty-nesters who value neighborhood maturity, convenience, and the ability to get more space and character per dollar than many central Austin alternatives.`,
     faqs: [
@@ -491,7 +491,7 @@ Steiner Ranch is served by the Leander ISD, with several schools located within 
 The community's size and variety of home types create a relatively liquid market with consistent transaction volume. Resale homes in mature sections with premium views or pool lots command significant premiums.
 
 Key value drivers include section location, view orientation, lot size, and proximity to community amenities. Homes with Lake Austin views or direct trail access are particularly sought after.`,
-    whyBuyersLove: `Buyers love Steiner Ranch for its comprehensive amenities, natural beauty, and family-friendly atmosphere. The community offers multiple pools, sports courts, parks, playgrounds, and miles of trails — creating a self-contained lifestyle for residents of all ages.
+    whyBuyersLove: `Buyers love Steiner Ranch for its comprehensive amenities, natural beauty, and family-friendly atmosphere. The community offers multiple pools, sports courts, parks, playgrounds, and miles of trails, creating a self-contained lifestyle for residents of all ages.
 
 The proximity to Lake Austin provides additional recreational opportunities including boating, kayaking, and paddleboarding. The community's elevation above the lake creates stunning sunset views from many home sites.
 
@@ -515,7 +515,7 @@ Steiner Ranch appeals to families seeking a safe, amenity-rich community with go
 The neighborhood retains much of its original mid-century character, with Craftsman bungalows and ranch homes alongside modern rebuilds. Strict lot coverage and setback regulations preserve the low-density, pedestrian-friendly character that residents value.
 
 Bryker Woods offers unparalleled proximity to downtown Austin, the University of Texas, and the vibrant shops and restaurants along West 35th Street and Jefferson Street. The beloved Bryker Woods Elementary school anchors the community and drives significant family demand.`,
-    market: `Bryker Woods' real estate market benefits from structural scarcity — the neighborhood encompasses a compact geographic area with a fixed number of lots. Homes range from approximately $700K for original bungalows needing renovation to over $3M for new construction on premium lots.
+    market: `Bryker Woods' real estate market benefits from structural scarcity, the neighborhood encompasses a compact geographic area with a fixed number of lots. Homes range from approximately $700K for original bungalows needing renovation to over $3M for new construction on premium lots.
 
 Inventory is consistently limited. Many homeowners are long-term residents, which further restricts supply. Well-priced homes often receive multiple offers within days of listing. Much of the neighborhood's value is in the land, with original homes frequently purchased at lot value for renovation or new construction.
 
@@ -524,7 +524,7 @@ The buyer profile skews toward young professionals, families, and empty-nesters 
 
 The school district is a major draw. Bryker Woods Elementary is one of Austin ISD's most sought-after schools, and the Austin High School feeder pattern adds long-term family appeal.
 
-The neighborhood's mix of architectural styles — from charming original bungalows to sleek modern builds — creates visual interest and allows buyers to find homes that match their aesthetic. The strong neighborhood association and annual events foster genuine connections among residents.`,
+The neighborhood's mix of architectural styles, from charming original bungalows to sleek modern builds, creates visual interest and allows buyers to find homes that match their aesthetic. The strong neighborhood association and annual events foster genuine connections among residents.`,
     faqs: [
       { question: "What is it like living in Bryker Woods Austin?", answer: "Bryker Woods offers a walkable, tree-lined neighborhood with a strong sense of community, excellent schools, and unmatched proximity to downtown Austin." },
       { question: "What are home prices in Bryker Woods?", answer: "Prices range from approximately $700K for original bungalows to over $3M for new construction and premium renovations on larger lots." },
@@ -541,13 +541,13 @@ The neighborhood's mix of architectural styles — from charming original bungal
     priceRange: "$400K – $3M+",
     overview: `East Austin is one of the most dynamic and culturally vibrant neighborhoods in Austin, stretching east of Interstate 35 through the 78702 and 78722 zip codes. The area has undergone a dramatic transformation over the past decade, becoming a magnet for artists, entrepreneurs, young professionals, and families drawn to its creative energy, walkability, and architectural diversity.
 
-The housing stock is remarkably varied — from renovated 1920s Craftsman bungalows and mid-century ranch homes to cutting-edge contemporary new construction with clean lines, metal cladding, and walls of glass. Many lots feature ADUs or casitas, adding rental income potential and flexible living arrangements. East Austin is the epicenter of Austin's creative economy, home to dozens of galleries, studios, music venues, and an acclaimed culinary scene anchored by James Beard–nominated restaurants.`,
+The housing stock is remarkably varied, from renovated 1920s Craftsman bungalows and mid-century ranch homes to cutting-edge contemporary new construction with clean lines, metal cladding, and walls of glass. Many lots feature ADUs or casitas, adding rental income potential and flexible living arrangements. East Austin is the epicenter of Austin's creative economy, home to dozens of galleries, studios, music venues, and an acclaimed culinary scene anchored by James Beard–nominated restaurants.`,
     market: `East Austin has experienced some of the highest appreciation rates in the Austin metro over the past decade. Median home prices in the core 78702 zip code typically fall between $700K and $1.2M, with premium new construction commanding $500+ per square foot.
 
-Inventory includes a significant share of new construction alongside renovated originals. Demand remains strong due to downtown proximity, cultural amenities, and continued infrastructure investment including the planned Project Connect light rail. The buyer pool is diverse — creative professionals, tech workers, investors, and young families who prioritize walkability and culture over suburban lot sizes.`,
+Inventory includes a significant share of new construction alongside renovated originals. Demand remains strong due to downtown proximity, cultural amenities, and continued infrastructure investment including the planned Project Connect light rail. The buyer pool is diverse, creative professionals, tech workers, investors, and young families who prioritize walkability and culture over suburban lot sizes.`,
     whyBuyersLove: `Buyers love East Austin for its walkable urban lifestyle and creative energy. Residents walk or bike to acclaimed restaurants, coffee shops, galleries, and live music venues along East Cesar Chavez, East 6th Street, and East 11th Street. The neighborhood's flat terrain and grid streets make cycling practical.
 
-The dining scene is legendary — from Suerte and Comedor to beloved taco trucks and neighborhood bars. Outdoor amenities include Roy G. Guerrero Colorado River Park with 400+ acres of trails and river access, Boggy Creek Greenbelt, and direct access to the Lady Bird Lake hike-and-bike trail. The area's architectural diversity allows buyers to find everything from charming original bungalows to striking modern builds.`,
+The dining scene is legendary, from Suerte and Comedor to beloved taco trucks and neighborhood bars. Outdoor amenities include Roy G. Guerrero Colorado River Park with 400+ acres of trails and river access, Boggy Creek Greenbelt, and direct access to the Lady Bird Lake hike-and-bike trail. The area's architectural diversity allows buyers to find everything from charming original bungalows to striking modern builds.`,
     faqs: [
       { question: "What is it like living in East Austin?", answer: "East Austin offers a vibrant, walkable urban lifestyle with world-class dining, a thriving arts scene, and creative energy unlike any other Austin neighborhood." },
       { question: "What are home prices in East Austin?", answer: "Prices range from approximately $400K for smaller homes and condos to over $3M for premium new construction on larger lots." },
@@ -564,13 +564,13 @@ The dining scene is legendary — from Suerte and Comedor to beloved taco trucks
     priceRange: "$900K – $5M+",
     overview: `Old Enfield is one of Austin's most storied residential neighborhoods, occupying a prime position between downtown and the western hills within the coveted 78703 zip code. Established in the early 1900s, the neighborhood features stately heritage trees, grand estates, and a rich tapestry of architectural styles from Colonial Revival and Tudor to mid-century modern and refined contemporary new construction.
 
-The neighborhood's proximity to downtown Austin is unmatched — residents are minutes from the Texas State Capitol, the University of Texas, Whole Foods headquarters, and the dining and entertainment districts along Lamar Boulevard and West 6th Street. Yet Old Enfield maintains a remarkably serene, residential character thanks to mature tree canopy, generous lot sizes, and deep setbacks.`,
+The neighborhood's proximity to downtown Austin is unmatched, residents are minutes from the Texas State Capitol, the University of Texas, Whole Foods headquarters, and the dining and entertainment districts along Lamar Boulevard and West 6th Street. Yet Old Enfield maintains a remarkably serene, residential character thanks to mature tree canopy, generous lot sizes, and deep setbacks.`,
     market: `Old Enfield is one of Austin's most supply-constrained luxury markets. Homes range from approximately $900K to over $5M, with median prices between $1.5M and $2.5M. The neighborhood's compact geography and high proportion of long-term residents mean quality inventory is consistently scarce.
 
 Old Enfield commands some of the highest per-square-foot land values in Austin. The combination of the 78703 zip code, walkability to downtown, and irreplaceable tree canopy creates structural scarcity. Well-positioned homes often attract multiple offers, and original homes on desirable lots are frequently purchased for redevelopment.`,
-    whyBuyersLove: `Buyers are drawn to Old Enfield for its rare combination of estate-level living within walking distance of urban amenities. Residents stroll to restaurants, shop at the original Whole Foods, and enjoy Lady Bird Lake's trail — all without leaving the neighborhood's orbit.
+    whyBuyersLove: `Buyers are drawn to Old Enfield for its rare combination of estate-level living within walking distance of urban amenities. Residents stroll to restaurants, shop at the original Whole Foods, and enjoy Lady Bird Lake's trail, all without leaving the neighborhood's orbit.
 
-Pease District Park provides wooded trails and swimming holes directly adjacent to the neighborhood. The Shoal Creek Greenbelt runs along the eastern edge, and Lady Bird Lake is accessible from the southern boundary. The neighborhood's architectural diversity — spanning a century of styles — creates a visually compelling streetscape that attracts buyers who appreciate both history and design.`,
+Pease District Park provides wooded trails and swimming holes directly adjacent to the neighborhood. The Shoal Creek Greenbelt runs along the eastern edge, and Lady Bird Lake is accessible from the southern boundary. The neighborhood's architectural diversity, spanning a century of styles, creates a visually compelling streetscape that attracts buyers who appreciate both history and design.`,
     faqs: [
       { question: "What is it like living in Old Enfield Austin?", answer: "Old Enfield offers estate-level living within walking distance of downtown Austin, with tree-lined streets, grand homes, and access to Pease Park and Lady Bird Lake." },
       { question: "What are home prices in Old Enfield?", answer: "Prices range from approximately $900K for smaller homes to over $5M for grand estates and premium new construction." },
@@ -585,13 +585,13 @@ Pease District Park provides wooded trails and swimming holes directly adjacent 
     metaTitle: "Davenport Ranch Homes for Sale Austin | Echelon Property Group",
     metaDescription: "Explore luxury homes for sale in Davenport Ranch Austin TX. Hill Country estates off Loop 360, Eanes ISD schools, and homes from $1.5M to $5M+.",
     priceRange: "$1.5M – $5M+",
-    overview: `Davenport Ranch is one of West Austin's most sought-after luxury neighborhoods, located off Capital of Texas Highway (Loop 360) in the 78746 zip code. The community features custom-built estate homes on large, wooded lots within the Eanes Independent School District — home to Westlake High School, one of the top-ranked public high schools in Texas.
+    overview: `Davenport Ranch is one of West Austin's most sought-after luxury neighborhoods, located off Capital of Texas Highway (Loop 360) in the 78746 zip code. The community features custom-built estate homes on large, wooded lots within the Eanes Independent School District, home to Westlake High School, one of the top-ranked public high schools in Texas.
 
 Developed primarily in the 1980s and 1990s, Davenport Ranch offers oversized lots, mature tree canopy, and architectural styles ranging from traditional Hill Country limestone to fully renovated contemporary estates. Many homes feature resort-caliber outdoor living with pools, sport courts, and outdoor kitchens.`,
     market: `Homes range from approximately $1.5M to over $5M, with median prices between $2M and $4M. Demand is consistently strong due to Eanes ISD zoning, the 78746 zip code, and the neighborhood's established reputation along the 360 corridor.
 
 Many original homes offer significant renovation upside. Buyers who invest in quality modernization frequently realize substantial returns. Inventory turns over gradually as many homeowners are long-term residents, keeping supply tight and values stable.`,
-    whyBuyersLove: `Buyers are drawn to Davenport Ranch for its Eanes ISD schools, large wooded lots, and convenient Loop 360 location — just 15 minutes from downtown Austin. The neighborhood's established character and mature landscaping create a Hill Country retreat feel without sacrificing urban access.
+    whyBuyersLove: `Buyers are drawn to Davenport Ranch for its Eanes ISD schools, large wooded lots, and convenient Loop 360 location, just 15 minutes from downtown Austin. The neighborhood's established character and mature landscaping create a Hill Country retreat feel without sacrificing urban access.
 
 Wild Basin Wilderness Preserve offers 227 acres of trails adjacent to the neighborhood, and the Barton Creek Greenbelt provides premier hiking and swimming nearby. Lake Austin boating and waterfront dining are a short drive away. The family-oriented atmosphere and quiet, winding streets make it ideal for buyers seeking space, privacy, and top-tier schools.`,
     faqs: [
@@ -610,18 +610,18 @@ Wild Basin Wilderness Preserve offers 227 acres of trails adjacent to the neighb
     priceRange: "$600K – $5M+",
     overview: `Lakeway is a premier Hill Country community along the southern shores of Lake Travis, approximately 25 minutes west of downtown Austin. Originally developed as a resort community in the 1960s, Lakeway has evolved into one of the Austin metro's most sought-after residential destinations featuring waterfront estates, master-planned neighborhoods, championship golf courses, and top-rated Lake Travis ISD schools.
 
-Spanning roughly 11 square miles, Lakeway offers distinct sub-communities including Rough Hollow, Flintrock Falls, The Hills of Lakeway, and established neighborhoods along Live Oak Golf Course — each with unique character and price points.`,
+Spanning roughly 11 square miles, Lakeway offers distinct sub-communities including Rough Hollow, Flintrock Falls, The Hills of Lakeway, and established neighborhoods along Live Oak Golf Course, each with unique character and price points.`,
     market: `Homes range from approximately $600K for established residences to over $5M for waterfront estates and custom builds. The median home price typically falls between $800K and $1.5M. Waterfront and golf-course properties command significant premiums.
 
 Lakeway benefits from consistent demand driven by Lake Travis ISD schools, waterfront lifestyle appeal, and resort-caliber amenities. Master-planned communities like Rough Hollow and Flintrock Falls continue to add luxury inventory, while waterfront estates trade less frequently at premium valuations.`,
-    whyBuyersLove: `Buyers are drawn to Lakeway for its Lake Travis waterfront access, championship golf courses, Lake Travis ISD schools, and resort-caliber amenities — all within 25 minutes of downtown Austin. The community offers boating, kayaking, paddleboarding, and fishing on 63 miles of Lake Travis waterway.
+    whyBuyersLove: `Buyers are drawn to Lakeway for its Lake Travis waterfront access, championship golf courses, Lake Travis ISD schools, and resort-caliber amenities, all within 25 minutes of downtown Austin. The community offers boating, kayaking, paddleboarding, and fishing on 63 miles of Lake Travis waterway.
 
 Lakeway's family-oriented culture, active community events calendar, and thriving local dining and shopping corridor create a self-contained lifestyle. Hill Country Galleria in nearby Bee Cave provides additional upscale retail and entertainment. The combination of small-city governance, responsive local services, and Austin metro proximity makes Lakeway ideal for families, executives, retirees, and investors alike.`,
     faqs: [
-      { question: "What is it like living in Lakeway?", answer: "Lakeway offers a resort-caliber Hill Country lifestyle with Lake Travis waterfront access, championship golf, top-rated schools, and a thriving local scene — all within 25 minutes of downtown Austin." },
+      { question: "What is it like living in Lakeway?", answer: "Lakeway offers a resort-caliber Hill Country lifestyle with Lake Travis waterfront access, championship golf, top-rated schools, and a thriving local scene, all within 25 minutes of downtown Austin." },
       { question: "What are home prices in Lakeway?", answer: "Prices range from approximately $600K for established homes to over $5M for waterfront estates. The median typically falls between $800K and $1.5M." },
       { question: "Are there waterfront homes in Lakeway?", answer: "Yes. Lakeway features waterfront estates on Lake Travis with private boat docks, resort-style pools, and panoramic lake views." },
-      { question: "What schools serve Lakeway?", answer: "Lakeway is served by Lake Travis ISD, including Lake Travis Elementary and Lake Travis High School — one of the top-ranked public high schools in Central Texas." },
+      { question: "What schools serve Lakeway?", answer: "Lakeway is served by Lake Travis ISD, including Lake Travis Elementary and Lake Travis High School, one of the top-ranked public high schools in Central Texas." },
       { question: "Is Lakeway a good investment area?", answer: "Yes. Waterfront scarcity, Lake Travis ISD demand, resort amenities, and Austin metro growth support strong long-term appreciation." },
     ],
   },

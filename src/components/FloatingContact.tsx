@@ -98,7 +98,7 @@ const FloatingContact = () => {
 
   return (
     <>
-      {/* Launcher — dark concierge bar */}
+      {/* Launcher, dark concierge bar */}
       <button
         onClick={() => setOpen(true)}
         style={{ backgroundColor: "#f1ede4" }}
@@ -111,7 +111,7 @@ const FloatingContact = () => {
           <img
             src={HEADSHOT_LAUNCHER}
             alt="Taylor Sherwood, Austin luxury real estate advisor"
-            title="Contact Taylor Sherwood — Austin luxury real estate advisor"
+            title="Contact Taylor Sherwood, Austin luxury real estate advisor"
             className="w-full h-full object-cover object-[50%_15%] scale-[1.35]"
             loading="lazy" decoding="async"
           />
@@ -143,7 +143,7 @@ const FloatingContact = () => {
               <img
                 src={HEADSHOT}
                 alt="Taylor Sherwood, founder of Echelon Property Group"
-                title="Taylor Sherwood — Echelon Property Group"
+                title="Taylor Sherwood, Echelon Property Group"
                 className="w-full h-full object-cover object-[50%_15%] scale-[1.35]"
                     loading="lazy" decoding="async"
                     />

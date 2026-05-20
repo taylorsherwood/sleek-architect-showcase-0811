@@ -127,7 +127,7 @@ const Contact = () => {
             <div>
               <h2 className="text-2xl font-display font-normal text-architectural mb-4">Seller Consultations</h2>
               <p className="text-muted-foreground leading-relaxed">
-                Position your property for maximum exposure and return with our strategic advisory approach. We combine premium marketing, precise pricing analysis, and targeted outreach to attract qualified buyers — often before a listing goes public. Every engagement begins with a complimentary market evaluation.
+                Position your property for maximum exposure and return with our strategic advisory approach. We combine premium marketing, precise pricing analysis, and targeted outreach to attract qualified buyers, often before a listing goes public. Every engagement begins with a complimentary market evaluation.
               </p>
             </div>
             <div>

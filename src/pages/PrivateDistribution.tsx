@@ -864,468 +864,215 @@ const PrivateDistributionIndex = () => {
         </div>
       </section>
 
-      {featured && (
+      {editions.length > 0 && (
         <section className="relative w-full" style={{ background: PAPER }}>
-          {/* Soft top gold rule across panel */}
-          <div
-            aria-hidden="true"
-            className="absolute inset-x-0 top-0 h-px"
-            style={{
-              background:
-                "linear-gradient(to right, transparent, rgba(185,160,108,0.4), transparent)",
-            }}
-          />
-          <div className="max-w-[1100px] mx-auto px-6 md:px-12 py-20 md:py-28">
-            <div className="flex items-center gap-3 mb-10">
-              <span
-                className="h-px w-10"
-                style={{ background: GOLD, opacity: 0.7 }}
-                aria-hidden="true"
-              />
-              <span
-                style={{
-                  fontFamily: '"Jost", sans-serif',
-                  fontSize: "10.5px",
-                  letterSpacing: "0.34em",
-                  textTransform: "uppercase",
-                  color: GOLD_DEEP,
-                  fontWeight: 500,
-                }}
-              >
-                Current Edition · {formatMonthYear(featured.publishedAt)}
-              </span>
-            </div>
-
-            <Link
-              to={`/private-distribution/${featured.slug}`}
-              className="group block relative"
-            >
-              <div
-                className="relative grid grid-cols-1 md:grid-cols-[1fr_280px] gap-10 md:gap-16 p-8 md:p-12"
-                style={{
-                  background: "#FFFFFF",
-                  border: `1px solid ${RULE}`,
-                  transition: "border-color 0.5s ease, transform 0.5s ease",
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.borderColor = GOLD;
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.borderColor = RULE;
-                }}
-              >
-                {/* Gold corner brackets */}
-                {[
-                  { top: -1, left: -1, borderTop: true, borderLeft: true },
-                  { top: -1, right: -1, borderTop: true, borderRight: true },
-                  { bottom: -1, left: -1, borderBottom: true, borderLeft: true },
-                  { bottom: -1, right: -1, borderBottom: true, borderRight: true },
-                ].map((c, i) => (
-                  <span
-                    key={i}
-                    aria-hidden="true"
-                    className="absolute w-4 h-4 pointer-events-none"
-                    style={{
-                      top: c.top,
-                      left: c.left,
-                      right: c.right,
-                      bottom: c.bottom,
-                      borderTop: c.borderTop ? `1px solid ${GOLD}` : undefined,
-                      borderLeft: c.borderLeft ? `1px solid ${GOLD}` : undefined,
-                      borderRight: c.borderRight ? `1px solid ${GOLD}` : undefined,
-                      borderBottom: c.borderBottom ? `1px solid ${GOLD}` : undefined,
-                    }}
-                  />
-                ))}
-
-                <div>
-                  <div className="flex flex-wrap items-center gap-x-4 gap-y-2 mb-6">
-                    {[featured.issueNumber, formatMonthYear(featured.publishedAt), featured.market]
-                      .filter(Boolean)
-                      .map((v, i, arr) => (
-                        <span key={i} className="flex items-center gap-4">
-                          <span
-                            style={{
-                              fontFamily: '"Jost", sans-serif',
-                              fontSize: "9.5px",
-                              letterSpacing: "0.32em",
-                              textTransform: "uppercase",
-                              color: MUTED,
-                            }}
-                          >
-                            {v}
-                          </span>
-                          {i < arr.length - 1 && (
-                            <span
-                              aria-hidden="true"
-                              className="h-[3px] w-[3px] rounded-full"
-                              style={{ background: GOLD, opacity: 0.7 }}
-                            />
-                          )}
-                        </span>
-                      ))}
-                  </div>
-                  <h2
-                    className="mb-5 max-w-[680px]"
-                    style={{
-                      fontFamily: '"Cinzel", serif',
-                      fontWeight: 500,
-                      fontSize: "clamp(26px, 3.6vw, 40px)",
-                      letterSpacing: "0.03em",
-                      lineHeight: 1.15,
-                      color: NAVY,
-                    }}
-                  >
-                    {featured.title}
-                  </h2>
-                  <p
-                    className="max-w-[600px] mb-8"
-                    style={{
-                      fontFamily: '"Cinzel", serif',
-                      fontStyle: "italic",
-                      fontSize: "16px",
-                      lineHeight: 1.75,
-                      color: NAVY,
-                      opacity: 0.7,
-                    }}
-                  >
-                    {featured.subtitle}
-                  </p>
-                  <span
-                    className="inline-flex items-center gap-3 transition-colors"
-                    style={{
-                      fontFamily: '"Jost", sans-serif',
-                      fontSize: "11px",
-                      letterSpacing: "0.24em",
-                      textTransform: "uppercase",
-                      fontWeight: 500,
-                      color: GOLD_DEEP,
-                      borderBottom: `1px solid ${GOLD}`,
-                      paddingBottom: "5px",
-                    }}
-                  >
-                    Read this edition →
-                  </span>
-                </div>
-
-                <div
-                  className="md:border-l md:pl-10 space-y-5"
-                  style={{ borderColor: RULE }}
+          <div className="max-w-[1100px] mx-auto px-6 md:px-12 py-20 md:py-28 space-y-12 md:space-y-16">
+            {editions
+              .slice()
+              .sort((a, b) => (a.publishedAt < b.publishedAt ? 1 : -1))
+              .map((e) => (
+                <Link
+                  key={e.slug}
+                  to={`/private-distribution/${e.slug}`}
+                  className="group block relative"
                 >
-                  <div>
-                    <p
-                      style={{
-                        fontFamily: '"Jost", sans-serif',
-                        fontSize: "9px",
-                        letterSpacing: "0.32em",
-                        textTransform: "uppercase",
-                        color: GOLD_DEEP,
-                        marginBottom: "5px",
-                      }}
-                    >
-                      Inside this edition
-                    </p>
-                    <p
-                      style={{
-                        fontFamily: '"Cinzel", serif',
-                        fontSize: "13.5px",
-                        letterSpacing: "0.04em",
-                        color: NAVY,
-                        fontWeight: 500,
-                        lineHeight: 1.6,
-                      }}
-                    >
-                      {featured.sections.reduce((n, s) => n + (s.properties?.length || s.watching?.length || 0), 0)} opportunities
-                    </p>
-                  </div>
-                  <div>
-                    <p
-                      style={{
-                        fontFamily: '"Jost", sans-serif',
-                        fontSize: "9px",
-                        letterSpacing: "0.32em",
-                        textTransform: "uppercase",
-                        color: GOLD_DEEP,
-                        marginBottom: "5px",
-                      }}
-                    >
-                      Distribution
-                    </p>
-                    <p
-                      style={{
-                        fontFamily: '"Cinzel", serif',
-                        fontSize: "13.5px",
-                        letterSpacing: "0.04em",
-                        color: NAVY,
-                        fontWeight: 500,
-                        lineHeight: 1.6,
-                      }}
-                    >
-                      Private · Gated
-                    </p>
-                  </div>
-                  <div>
-                    <p
-                      style={{
-                        fontFamily: '"Jost", sans-serif',
-                        fontSize: "9px",
-                        letterSpacing: "0.32em",
-                        textTransform: "uppercase",
-                        color: GOLD_DEEP,
-                        marginBottom: "5px",
-                      }}
-                    >
-                      Prepared by
-                    </p>
-                    <p
-                      style={{
-                        fontFamily: '"Cinzel", serif',
-                        fontSize: "13.5px",
-                        letterSpacing: "0.04em",
-                        color: NAVY,
-                        fontWeight: 500,
-                        lineHeight: 1.6,
-                      }}
-                    >
-                      {featured.signOff?.name ?? "Echelon Desk"}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </Link>
-          </div>
-        </section>
-      )}
-
-      {library.length > 0 && (
-        <section
-          className="relative w-full"
-          style={{ background: PAPER, borderTop: `1px solid ${RULE}` }}
-        >
-          <div className="max-w-[1100px] mx-auto px-6 md:px-12 py-20 md:py-28 space-y-16 md:space-y-20">
-            <div className="flex items-center gap-3">
-              <span
-                className="h-px w-10"
-                style={{ background: GOLD, opacity: 0.7 }}
-                aria-hidden="true"
-              />
-              <span
-                style={{
-                  fontFamily: '"Jost", sans-serif',
-                  fontSize: "10.5px",
-                  letterSpacing: "0.34em",
-                  textTransform: "uppercase",
-                  color: GOLD_DEEP,
-                  fontWeight: 500,
-                }}
-              >
-                Distribution Library
-              </span>
-            </div>
-
-            {library.map((e) => (
-              <Link
-                key={e.slug}
-                to={`/private-distribution/${e.slug}`}
-                className="group block relative"
-              >
-                <div
-                  className="relative grid grid-cols-1 md:grid-cols-[1fr_280px] gap-10 md:gap-16 p-8 md:p-12"
-                  style={{
-                    background: "#FFFFFF",
-                    border: `1px solid ${RULE}`,
-                    transition: "border-color 0.5s ease, transform 0.5s ease",
-                  }}
-                  onMouseEnter={(el) => {
-                    el.currentTarget.style.borderColor = GOLD;
-                  }}
-                  onMouseLeave={(el) => {
-                    el.currentTarget.style.borderColor = RULE;
-                  }}
-                >
-                  {[
-                    { top: -1, left: -1, borderTop: true, borderLeft: true },
-                    { top: -1, right: -1, borderTop: true, borderRight: true },
-                    { bottom: -1, left: -1, borderBottom: true, borderLeft: true },
-                    { bottom: -1, right: -1, borderBottom: true, borderRight: true },
-                  ].map((c, i) => (
-                    <span
-                      key={i}
-                      aria-hidden="true"
-                      className="absolute w-4 h-4 pointer-events-none"
-                      style={{
-                        top: c.top,
-                        left: c.left,
-                        right: c.right,
-                        bottom: c.bottom,
-                        borderTop: c.borderTop ? `1px solid ${GOLD}` : undefined,
-                        borderLeft: c.borderLeft ? `1px solid ${GOLD}` : undefined,
-                        borderRight: c.borderRight ? `1px solid ${GOLD}` : undefined,
-                        borderBottom: c.borderBottom ? `1px solid ${GOLD}` : undefined,
-                      }}
-                    />
-                  ))}
-
-                  <div>
-                    <div className="flex flex-wrap items-center gap-x-4 gap-y-2 mb-6">
-                      {[e.issueNumber, formatMonthYear(e.publishedAt), e.market]
-                        .filter(Boolean)
-                        .map((v, i, arr) => (
-                          <span key={i} className="flex items-center gap-4">
-                            <span
-                              style={{
-                                fontFamily: '"Jost", sans-serif',
-                                fontSize: "9.5px",
-                                letterSpacing: "0.32em",
-                                textTransform: "uppercase",
-                                color: MUTED,
-                              }}
-                            >
-                              {v}
-                            </span>
-                            {i < arr.length - 1 && (
-                              <span
-                                aria-hidden="true"
-                                className="h-[3px] w-[3px] rounded-full"
-                                style={{ background: GOLD, opacity: 0.7 }}
-                              />
-                            )}
-                          </span>
-                        ))}
-                    </div>
-                    <h3
-                      className="mb-5 max-w-[680px]"
-                      style={{
-                        fontFamily: '"Cinzel", serif',
-                        fontWeight: 500,
-                        fontSize: "clamp(26px, 3.6vw, 40px)",
-                        letterSpacing: "0.03em",
-                        lineHeight: 1.15,
-                        color: NAVY,
-                      }}
-                    >
-                      {e.title}
-                    </h3>
-                    <p
-                      className="max-w-[600px] mb-8"
-                      style={{
-                        fontFamily: '"Cinzel", serif',
-                        fontStyle: "italic",
-                        fontSize: "16px",
-                        lineHeight: 1.75,
-                        color: NAVY,
-                        opacity: 0.7,
-                      }}
-                    >
-                      {e.subtitle}
-                    </p>
-                    <span
-                      className="inline-flex items-center gap-3 transition-colors"
-                      style={{
-                        fontFamily: '"Jost", sans-serif',
-                        fontSize: "11px",
-                        letterSpacing: "0.24em",
-                        textTransform: "uppercase",
-                        fontWeight: 500,
-                        color: GOLD_DEEP,
-                        borderBottom: `1px solid ${GOLD}`,
-                        paddingBottom: "5px",
-                      }}
-                    >
-                      Read this edition →
-                    </span>
-                  </div>
-
                   <div
-                    className="md:border-l md:pl-10 space-y-5"
-                    style={{ borderColor: RULE }}
+                    className="relative grid grid-cols-1 md:grid-cols-[1fr_280px] gap-10 md:gap-16 p-8 md:p-12"
+                    style={{
+                      background: "#FFFFFF",
+                      border: `1px solid ${RULE}`,
+                      transition: "border-color 0.5s ease, transform 0.5s ease",
+                    }}
+                    onMouseEnter={(el) => {
+                      el.currentTarget.style.borderColor = GOLD;
+                    }}
+                    onMouseLeave={(el) => {
+                      el.currentTarget.style.borderColor = RULE;
+                    }}
                   >
-                    <div>
-                      <p
+                    {[
+                      { top: -1, left: -1, borderTop: true, borderLeft: true },
+                      { top: -1, right: -1, borderTop: true, borderRight: true },
+                      { bottom: -1, left: -1, borderBottom: true, borderLeft: true },
+                      { bottom: -1, right: -1, borderBottom: true, borderRight: true },
+                    ].map((c, i) => (
+                      <span
+                        key={i}
+                        aria-hidden="true"
+                        className="absolute w-4 h-4 pointer-events-none"
                         style={{
-                          fontFamily: '"Jost", sans-serif',
-                          fontSize: "9px",
-                          letterSpacing: "0.32em",
-                          textTransform: "uppercase",
-                          color: GOLD_DEEP,
-                          marginBottom: "5px",
+                          top: c.top,
+                          left: c.left,
+                          right: c.right,
+                          bottom: c.bottom,
+                          borderTop: c.borderTop ? `1px solid ${GOLD}` : undefined,
+                          borderLeft: c.borderLeft ? `1px solid ${GOLD}` : undefined,
+                          borderRight: c.borderRight ? `1px solid ${GOLD}` : undefined,
+                          borderBottom: c.borderBottom ? `1px solid ${GOLD}` : undefined,
                         }}
-                      >
-                        Inside this edition
-                      </p>
-                      <p
+                      />
+                    ))}
+
+                    <div>
+                      <div className="flex flex-wrap items-center gap-x-4 gap-y-2 mb-6">
+                        {[e.issueNumber, formatMonthYear(e.publishedAt), e.market]
+                          .filter(Boolean)
+                          .map((v, i, arr) => (
+                            <span key={i} className="flex items-center gap-4">
+                              <span
+                                style={{
+                                  fontFamily: '"Jost", sans-serif',
+                                  fontSize: "9.5px",
+                                  letterSpacing: "0.32em",
+                                  textTransform: "uppercase",
+                                  color: MUTED,
+                                }}
+                              >
+                                {v}
+                              </span>
+                              {i < arr.length - 1 && (
+                                <span
+                                  aria-hidden="true"
+                                  className="h-[3px] w-[3px] rounded-full"
+                                  style={{ background: GOLD, opacity: 0.7 }}
+                                />
+                              )}
+                            </span>
+                          ))}
+                      </div>
+                      <h2
+                        className="mb-5 max-w-[680px]"
                         style={{
                           fontFamily: '"Cinzel", serif',
-                          fontSize: "13.5px",
-                          letterSpacing: "0.04em",
-                          color: NAVY,
                           fontWeight: 500,
-                          lineHeight: 1.6,
+                          fontSize: "clamp(26px, 3.6vw, 40px)",
+                          letterSpacing: "0.03em",
+                          lineHeight: 1.15,
+                          color: NAVY,
                         }}
                       >
-                        {e.sections.reduce(
-                          (n, s) => n + (s.properties?.length || s.watching?.length || 0),
-                          0,
-                        )}{" "}
-                        opportunities
+                        {e.title}
+                      </h2>
+                      <p
+                        className="max-w-[600px] mb-8"
+                        style={{
+                          fontFamily: '"Cinzel", serif',
+                          fontStyle: "italic",
+                          fontSize: "16px",
+                          lineHeight: 1.75,
+                          color: NAVY,
+                          opacity: 0.7,
+                        }}
+                      >
+                        {e.subtitle}
                       </p>
+                      <span
+                        className="inline-flex items-center gap-3 transition-colors"
+                        style={{
+                          fontFamily: '"Jost", sans-serif',
+                          fontSize: "11px",
+                          letterSpacing: "0.24em",
+                          textTransform: "uppercase",
+                          fontWeight: 500,
+                          color: GOLD_DEEP,
+                          borderBottom: `1px solid ${GOLD}`,
+                          paddingBottom: "5px",
+                        }}
+                      >
+                        Read this edition →
+                      </span>
                     </div>
-                    <div>
-                      <p
-                        style={{
-                          fontFamily: '"Jost", sans-serif',
-                          fontSize: "9px",
-                          letterSpacing: "0.32em",
-                          textTransform: "uppercase",
-                          color: GOLD_DEEP,
-                          marginBottom: "5px",
-                        }}
-                      >
-                        Distribution
-                      </p>
-                      <p
-                        style={{
-                          fontFamily: '"Cinzel", serif',
-                          fontSize: "13.5px",
-                          letterSpacing: "0.04em",
-                          color: NAVY,
-                          fontWeight: 500,
-                          lineHeight: 1.6,
-                        }}
-                      >
-                        Private · Gated
-                      </p>
-                    </div>
-                    <div>
-                      <p
-                        style={{
-                          fontFamily: '"Jost", sans-serif',
-                          fontSize: "9px",
-                          letterSpacing: "0.32em",
-                          textTransform: "uppercase",
-                          color: GOLD_DEEP,
-                          marginBottom: "5px",
-                        }}
-                      >
-                        Prepared by
-                      </p>
-                      <p
-                        style={{
-                          fontFamily: '"Cinzel", serif',
-                          fontSize: "13.5px",
-                          letterSpacing: "0.04em",
-                          color: NAVY,
-                          fontWeight: 500,
-                          lineHeight: 1.6,
-                        }}
-                      >
-                        {e.signOff?.name ?? "Echelon Desk"}
-                      </p>
+
+                    <div
+                      className="md:border-l md:pl-10 space-y-5"
+                      style={{ borderColor: RULE }}
+                    >
+                      <div>
+                        <p
+                          style={{
+                            fontFamily: '"Jost", sans-serif',
+                            fontSize: "9px",
+                            letterSpacing: "0.32em",
+                            textTransform: "uppercase",
+                            color: GOLD_DEEP,
+                            marginBottom: "5px",
+                          }}
+                        >
+                          Inside this edition
+                        </p>
+                        <p
+                          style={{
+                            fontFamily: '"Cinzel", serif',
+                            fontSize: "13.5px",
+                            letterSpacing: "0.04em",
+                            color: NAVY,
+                            fontWeight: 500,
+                            lineHeight: 1.6,
+                          }}
+                        >
+                          {e.sections.reduce(
+                            (n, s) => n + (s.properties?.length || s.watching?.length || 0),
+                            0,
+                          )}{" "}
+                          opportunities
+                        </p>
+                      </div>
+                      <div>
+                        <p
+                          style={{
+                            fontFamily: '"Jost", sans-serif',
+                            fontSize: "9px",
+                            letterSpacing: "0.32em",
+                            textTransform: "uppercase",
+                            color: GOLD_DEEP,
+                            marginBottom: "5px",
+                          }}
+                        >
+                          Distribution
+                        </p>
+                        <p
+                          style={{
+                            fontFamily: '"Cinzel", serif',
+                            fontSize: "13.5px",
+                            letterSpacing: "0.04em",
+                            color: NAVY,
+                            fontWeight: 500,
+                            lineHeight: 1.6,
+                          }}
+                        >
+                          Private · Gated
+                        </p>
+                      </div>
+                      <div>
+                        <p
+                          style={{
+                            fontFamily: '"Jost", sans-serif',
+                            fontSize: "9px",
+                            letterSpacing: "0.32em",
+                            textTransform: "uppercase",
+                            color: GOLD_DEEP,
+                            marginBottom: "5px",
+                          }}
+                        >
+                          Prepared by
+                        </p>
+                        <p
+                          style={{
+                            fontFamily: '"Cinzel", serif',
+                            fontSize: "13.5px",
+                            letterSpacing: "0.04em",
+                            color: NAVY,
+                            fontWeight: 500,
+                            lineHeight: 1.6,
+                          }}
+                        >
+                          {e.signOff?.name ?? "Echelon Desk"}
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </Link>
-            ))}
+                </Link>
+              ))}
           </div>
         </section>
       )}

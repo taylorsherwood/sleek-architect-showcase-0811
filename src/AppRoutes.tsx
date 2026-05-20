@@ -172,9 +172,6 @@ const AppRoutes = () => {
           <Route path="/admin/login" element={<AdminLogin />} />
           <Route path="/admin" element={<AdminDashboard />} />
           <Route path="/admin/communities/:slug" element={<AdminCommunityEditor />} />
-          <Route path="/admin/listing-stories" element={<AdminListingStories />} />
-          <Route path="/admin/listing-stories/:slug" element={<AdminListingEditor />} />
-          <Route path="/listing/:slug" element={<ListingStory />} />
           <Route path="/private-distribution" element={<PrivateDistribution />} />
           <Route path="/private-distribution/:slug" element={<PrivateDistribution />} />
           <Route path="*" element={<NotFound />} />

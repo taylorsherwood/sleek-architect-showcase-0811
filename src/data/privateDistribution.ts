@@ -243,7 +243,7 @@ export const PRIVATE_DISTRIBUTION: BriefEdition[] = [
   {
     slug: "78703-may-2026",
     volume: "VOLUME I",
-    issueNumber: "EDITION NO. 01",
+    issueNumber: "EDITION NO. 05",
     market: "78703 · Austin, TX",
     edition: "MAY 2026 EDITION",
     publishedAt: "2026-05-20",

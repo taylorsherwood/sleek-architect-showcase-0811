@@ -469,8 +469,8 @@ const PrivateDistributionIndex = () => {
     () => PRIVATE_DISTRIBUTION.filter((e) => e.active !== false),
     []
   );
-  const featured = editions[0];
-  const archive = editions.slice(1);
+  const featured = getFeaturedEdition();
+  const library = editions.filter((e) => e.slug !== featured?.slug);
   const canonical = `${SITE}/private-distribution`;
 
   return (
@@ -1035,7 +1035,7 @@ const PrivateDistributionIndex = () => {
                         lineHeight: 1.6,
                       }}
                     >
-                      {featured.sections.reduce((n, s: any) => n + (s.properties?.length || s.watching?.length || 0), 0)} opportunities
+                      {featured.sections.reduce((n, s) => n + (s.properties?.length || s.watching?.length || 0), 0)} opportunities
                     </p>
                   </div>
                   <div>
@@ -1097,7 +1097,7 @@ const PrivateDistributionIndex = () => {
         </section>
       )}
 
-      {archive.length > 0 && (
+      {library.length > 0 && (
         <section
           className="w-full"
           style={{ background: "#FFFFFF", borderTop: `1px solid ${RULE}` }}
@@ -1119,11 +1119,11 @@ const PrivateDistributionIndex = () => {
                   fontWeight: 500,
                 }}
               >
-                Archive
+                Distribution Library
               </span>
             </div>
             <ul>
-              {archive.map((e) => (
+              {library.map((e) => (
                 <li key={e.slug} style={{ borderBottom: `1px solid ${RULE}` }}>
                   <Link
                     to={`/private-distribution/${e.slug}`}

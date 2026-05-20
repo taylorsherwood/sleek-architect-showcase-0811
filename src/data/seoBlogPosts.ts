@@ -450,7 +450,7 @@ You should feel:
 - Respected
 - Calmly informed
 
-—not pressured.
+Not pressured.
 
 The best luxury advisors operate more like trusted consultants than salespeople, the [advisory model](/about-austin-real-estate-advisory) we've built Echelon around.
 

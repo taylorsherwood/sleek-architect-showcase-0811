@@ -140,7 +140,7 @@ const AustinLuxuryMarketTrends = () => {
             <p className="text-muted-foreground leading-[1.7]">
               The divergence is sharpest in the downtown condo market, where days on market frequently exceed 90 and sellers face 5–10% negotiation gaps. Meanwhile, single-family homes in{" "}
               <Link to="/best-luxury-neighborhoods-austin" className="text-foreground underline underline-offset-4 decoration-accent-gold/40 hover:decoration-accent-gold transition-colors duration-300">Austin's top luxury neighborhoods</Link>
-              —particularly those with strong school districts and limited future supply, continue to trade within 30–45 days when priced appropriately.
+              Particularly those with strong school districts and limited future supply, continue to trade within 30–45 days when priced appropriately.
             </p>
           </section>
 

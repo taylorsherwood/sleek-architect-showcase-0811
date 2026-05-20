@@ -159,7 +159,7 @@ const FloatingContact = () => {
               Taylor Sherwood
             </h3>
             <p className="text-[9.5px] tracking-[0.25em] uppercase text-[hsl(var(--gold))] mt-2 mb-6 font-normal">CONNECT WITH AN ADVISOR</p>
-            <p className="text-muted-foreground text-sm leading-[1.75] mb-9 max-w-[270px] mx-auto font-light">Buying, selling, investing, or exploring off-market opportunities in Austin— I'd welcome the conversation.</p>
+            <p className="text-muted-foreground text-sm leading-[1.75] mb-9 max-w-[270px] mx-auto font-light">Buying, selling, investing, or exploring off-market opportunities in Austin. I'd welcome the conversation.</p>
 
             <div className="flex flex-col gap-3">
               <a

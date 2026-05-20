@@ -369,7 +369,7 @@ export const PRIVATE_DISTRIBUTION: BriefEdition[] = [
   },
 ];
 
-export const FEATURED_EDITION_SLUG = "78746-may-2026";
+export const FEATURED_EDITION_SLUG = "78703-may-2026";
 
 export function getEditionBySlug(slug: string): BriefEdition | undefined {
   return PRIVATE_DISTRIBUTION.find((e) => e.slug === slug);

@@ -66,9 +66,6 @@ const CommunityReportPage = lazy(() => import("@/pages/CommunityReportPage"));
 const AdminLogin = lazy(() => import("@/pages/admin/AdminLogin"));
 const AdminDashboard = lazy(() => import("@/pages/admin/AdminDashboard"));
 const AdminCommunityEditor = lazy(() => import("@/pages/admin/AdminCommunityEditor"));
-const ListingStory = lazy(() => import("@/pages/ListingStory"));
-const AdminListingStories = lazy(() => import("@/pages/admin/AdminListingStories"));
-const AdminListingEditor = lazy(() => import("@/pages/admin/AdminListingEditor"));
 const PrivateDistribution = lazy(() => import("@/pages/PrivateDistribution"));
 
 // Prefetch high-traffic route chunks after homepage is interactive
@@ -175,9 +172,6 @@ const AppRoutes = () => {
           <Route path="/admin/login" element={<AdminLogin />} />
           <Route path="/admin" element={<AdminDashboard />} />
           <Route path="/admin/communities/:slug" element={<AdminCommunityEditor />} />
-          <Route path="/admin/listing-stories" element={<AdminListingStories />} />
-          <Route path="/admin/listing-stories/:slug" element={<AdminListingEditor />} />
-          <Route path="/listing/:slug" element={<ListingStory />} />
           <Route path="/private-distribution" element={<PrivateDistribution />} />
           <Route path="/private-distribution/:slug" element={<PrivateDistribution />} />
           <Route path="*" element={<NotFound />} />

@@ -55,7 +55,7 @@ const whoWeWorkWith = [
     icon: Hammer,
     title: "Fix-and-Flip Investors",
     description:
-      "Find homes with genuine margin potential — undervalued properties in appreciating corridors where the right scope of work translates directly into strong resale positioning.",
+      "Find homes with genuine margin potential, undervalued properties in appreciating corridors where the right scope of work translates directly into strong resale positioning.",
   },
   {
     icon: Building2,
@@ -67,13 +67,13 @@ const whoWeWorkWith = [
     icon: TrendingUp,
     title: "Buy-and-Hold Investors",
     description:
-      "Build a location-driven portfolio anchored in tenant demand, long-term appreciation, and neighborhoods with structural tailwinds — not speculative hope.",
+      "Build a location-driven portfolio anchored in tenant demand, long-term appreciation, and neighborhoods with structural tailwinds, not speculative hope.",
   },
   {
     icon: Globe,
     title: "Out-of-State Investors",
     description:
-      "Gain a trusted local advisor for sourcing, evaluation, and execution — someone who walks properties, understands block-by-block dynamics, and protects your capital from a distance.",
+      "Gain a trusted local advisor for sourcing, evaluation, and execution, someone who walks properties, understands block-by-block dynamics, and protects your capital from a distance.",
   },
 ];
 
@@ -91,7 +91,7 @@ const howWeHelp = [
   {
     icon: PaintBucket,
     title: "Spot Cosmetic vs. Structural Upside",
-    description: "Distinguish between properties that need paint and those that need foundation work — before you commit capital.",
+    description: "Distinguish between properties that need paint and those that need foundation work, before you commit capital.",
   },
   {
     icon: Ruler,
@@ -106,7 +106,7 @@ const howWeHelp = [
   {
     icon: Target,
     title: "Build Around End Value",
-    description: "Structure every acquisition decision around a clear exit — whether that's resale in 90 days or a 10-year hold.",
+    description: "Structure every acquisition decision around a clear exit, whether that's resale in 90 days or a 10-year hold.",
   },
 ];
 
@@ -137,17 +137,17 @@ const faqItems = [
   {
     question: "What Austin neighborhoods are best for flipping?",
     answer:
-      "It depends on your budget, risk tolerance, and target buyer profile. Areas like East Austin, South Austin, and pockets of North Central Austin often present strong flip opportunities — but success is highly block-by-block. We help investors identify corridors where renovation dollars return the most value based on current demand and comparable resale data.",
+      "It depends on your budget, risk tolerance, and target buyer profile. Areas like East Austin, South Austin, and pockets of North Central Austin often present strong flip opportunities, but success is highly block-by-block. We help investors identify corridors where renovation dollars return the most value based on current demand and comparable resale data.",
   },
   {
     question: "Do you help investors find off-market properties?",
     answer:
-      "Yes. A significant portion of our investor work involves off-market sourcing — properties that aren't publicly listed but may be available through our brokerage network, pre-market relationships, and direct outreach. This gives our clients access to opportunities before they hit the open market.",
+      "Yes. A significant portion of our investor work involves off-market sourcing, properties that aren't publicly listed but may be available through our brokerage network, pre-market relationships, and direct outreach. This gives our clients access to opportunities before they hit the open market.",
   },
   {
     question: "Can you help evaluate renovation potential before I buy?",
     answer:
-      "Absolutely. We assess properties through an investor lens — evaluating cosmetic vs. structural needs, estimating improvement costs relative to comparable resale values, and identifying which updates move the needle. We also connect clients with trusted contractors for more detailed scope-of-work estimates.",
+      "Absolutely. We assess properties through an investor lens, evaluating cosmetic vs. structural needs, estimating improvement costs relative to comparable resale values, and identifying which updates move the needle. We also connect clients with trusted contractors for more detailed scope-of-work estimates.",
   },
   {
     question: "Do you work with builders and redevelopment buyers?",
@@ -157,12 +157,12 @@ const faqItems = [
   {
     question: "Can out-of-state investors work with you?",
     answer:
-      "Definitely. We serve as local boots-on-the-ground for out-of-state investors — walking properties, evaluating neighborhoods, coordinating inspections, and managing the acquisition process remotely. Our goal is to give distant investors the same level of confidence and insight they'd have if they were here in person.",
+      "Definitely. We serve as local boots-on-the-ground for out-of-state investors, walking properties, evaluating neighborhoods, coordinating inspections, and managing the acquisition process remotely. Our goal is to give distant investors the same level of confidence and insight they'd have if they were here in person.",
   },
   {
     question: "Do you help with both acquisition and resale positioning?",
     answer:
-      "Yes. We approach every investment with the exit in mind. Whether you're buying to flip, hold, or redevelop, we help position the acquisition around a realistic end value — and when it's time to sell, our full marketing and listing platform is designed to maximize your return.",
+      "Yes. We approach every investment with the exit in mind. Whether you're buying to flip, hold, or redevelop, we help position the acquisition around a realistic end value, and when it's time to sell, our full marketing and listing platform is designed to maximize your return.",
   },
 ];
 
@@ -246,7 +246,7 @@ const Invest = () => {
       email: propForm.propEmail,
       phone: propForm.propPhone,
       message: `Property submission: ${propForm.propAddress}`,
-      source: "Invest Page — Property CTA",
+      source: "Invest Page, Property CTA",
       extra: { property_address: propForm.propAddress },
     });
     if (res.ok) {
@@ -293,7 +293,7 @@ const Invest = () => {
       email: form.email,
       phone: form.phone,
       message: composedMessage,
-      source: "Private Access — Invest Page",
+      source: "Private Access, Invest Page",
       extra: {
         interest: form.interest || "Not specified",
         investment_type: form.investmentType || "Not specified",
@@ -475,7 +475,7 @@ const Invest = () => {
                 afterImage={kitchen02After}
               />
               <div className="mt-5">
-                <h3 className="text-base font-display font-normal text-foreground tracking-wide">KITCHEN Transformation — BARTON CREEK</h3>
+                <h3 className="text-base font-display font-normal text-foreground tracking-wide">KITCHEN Transformation, BARTON CREEK</h3>
                 <div className="w-8 h-px bg-gold mt-2 mb-2" />
                 <p className="text-[0.82rem] text-muted-foreground/75 leading-relaxed">
                   Repositioned through lighting, layout clarity, and material updates to create a more open and marketable environment.
@@ -485,14 +485,14 @@ const Invest = () => {
               </div>
             </ScrollReveal>
 
-            {/* Slider 2 — Office */}
+            {/* Slider 2, Office */}
             <ScrollReveal>
               <BeforeAfterSlider
                 beforeImage={officeBefore}
                 afterImage={officeAfter}
               />
               <div className="mt-5">
-                <h3 className="text-base font-display font-normal text-foreground tracking-wide">Office Transformation — Barton Creek</h3>
+                <h3 className="text-base font-display font-normal text-foreground tracking-wide">Office Transformation, Barton Creek</h3>
                 <div className="w-8 h-px bg-gold mt-2 mb-2" />
                 <p className="text-[0.82rem] text-muted-foreground/75 leading-relaxed">
                   Repositioned through bold color, upgraded materials, and curated furnishings to create a sophisticated executive workspace.
@@ -502,14 +502,14 @@ const Invest = () => {
               </div>
             </ScrollReveal>
 
-            {/* Slider 3 — Bathroom Upgrade West lake Hills */}
+            {/* Slider 3, Bathroom Upgrade West lake Hills */}
             <ScrollReveal>
               <BeforeAfterSlider
                 beforeImage={bath05Before}
                 afterImage={bath05After}
               />
               <div className="mt-5">
-                <h3 className="text-base font-display font-normal text-foreground tracking-wide">Bathroom Upgrade — West lake Hills</h3>
+                <h3 className="text-base font-display font-normal text-foreground tracking-wide">Bathroom Upgrade, West lake Hills</h3>
                 <div className="w-8 h-px bg-gold mt-2 mb-2" />
                 <p className="text-[0.82rem] text-muted-foreground/75 leading-relaxed">Elevated through material selection, improved lighting, and clean-lined finishes to match the home's luxury positioning.</p>
               </div>
@@ -522,7 +522,7 @@ const Invest = () => {
                 afterImage={kitchen03After}
               />
               <div className="mt-5">
-                <h3 className="text-base font-display font-normal text-foreground tracking-wide">Kitchen Refresh — westlake hills</h3>
+                <h3 className="text-base font-display font-normal text-foreground tracking-wide">Kitchen Refresh, westlake hills</h3>
                 <div className="w-8 h-px bg-gold mt-2 mb-2" />
                 <p className="text-[0.82rem] text-muted-foreground/75 leading-relaxed">Updated surfaces, hardware, and lighting to modernize the space without over-improving for the neighborhood. This property generated over 150 showings and multiple offers.</p>
               </div>
@@ -535,7 +535,7 @@ const Invest = () => {
                 afterImage={kitchenAfter}
               />
               <div className="mt-5">
-                <h3 className="text-base font-display font-normal text-foreground tracking-wide">Kitchen Transformation — south austin</h3>
+                <h3 className="text-base font-display font-normal text-foreground tracking-wide">Kitchen Transformation, south austin</h3>
                 <div className="w-8 h-px bg-gold mt-2 mb-2" />
                 <p className="text-[0.82rem] text-muted-foreground/75 leading-relaxed">
                   Repositioned through layout updates, finish upgrades, and improved flow to maximize buyer appeal.
@@ -545,14 +545,14 @@ const Invest = () => {
               </div>
             </ScrollReveal>
 
-            {/* Slider 6 — Bathroom South Austin (moved to bottom) */}
+            {/* Slider 6, Bathroom South Austin (moved to bottom) */}
             <ScrollReveal>
               <BeforeAfterSlider
                 beforeImage={bath04Before}
                 afterImage={bath04After}
               />
               <div className="mt-5">
-                <h3 className="text-base font-display font-normal text-foreground tracking-wide">Bathroom Transformation — South Austin</h3>
+                <h3 className="text-base font-display font-normal text-foreground tracking-wide">Bathroom Transformation, South Austin</h3>
                 <div className="w-8 h-px bg-gold mt-2 mb-2" />
                 <p className="text-[0.82rem] text-muted-foreground/75 leading-relaxed">Clean-lined materials, upgraded fixtures, and improved lighting to align with today's buyer standards.</p>
               </div>
@@ -620,7 +620,7 @@ const Invest = () => {
               opportunities, understand neighborhood-specific demand, assess improvement potential,
               and make smarter acquisition decisions with resale or hold strategy in mind. Every
               recommendation is grounded in data, local insight, and a clear understanding of
-              where value is created — from <Link to="/off-market-real-estate-austin" className="text-foreground underline hover:text-muted-foreground">off-market deals</Link> to on-market value plays.
+              where value is created, from <Link to="/off-market-real-estate-austin" className="text-foreground underline hover:text-muted-foreground">off-market deals</Link> to on-market value plays.
             </p>
             <p className="text-foreground max-w-3xl leading-relaxed mb-16">
               Source smarter opportunities, evaluate upside with more precision, and move faster in Austin with an advisor who understands renovation potential, redevelopment value, and resale positioning. Explore our <Link to="/austin-multifamily-report-2026" className="text-foreground underline hover:text-muted-foreground">Austin multifamily market outlook</Link> for current data.
@@ -704,14 +704,14 @@ const Invest = () => {
                 Not every renovation dollar returns equally. A $150,000 kitchen remodel in a
                 neighborhood with a $600,000 price ceiling is a fundamentally different proposition
                 than the same scope in a market that absorbs $1.2 million resales. Understanding
-                where improvement capital generates real returns — and where it leads to
-                over-improvement — is the difference between a profitable flip and a lesson learned.
+                where improvement capital generates real returns, and where it leads to
+                over-improvement, is the difference between a profitable flip and a lesson learned.
               </p>
               <p>
                 Finish level should always match end-buyer expectations. In some Austin submarkets,
                 buyers expect designer fixtures and custom millwork. In others, clean, functional
                 updates outperform premium finishes. We help investors calibrate their renovation
-                strategy to the specific demand profile of each neighborhood — ensuring every dollar
+                strategy to the specific demand profile of each neighborhood, ensuring every dollar
                 spent is a dollar that comes back at resale.
               </p>
               <p>
@@ -733,7 +733,7 @@ const Invest = () => {
           </h2>
           <ul className="space-y-4 text-muted-foreground leading-relaxed">
             <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Austin consistently ranks among the top U.S. metros for <Link to="/austin-real-estate-investment" className="text-foreground underline hover:text-muted-foreground">real estate investment</Link>, driven by population growth, tech-sector expansion, and no state income tax.</span></li>
-            <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span><Link to="/off-market-real-estate-austin" className="text-foreground underline hover:text-muted-foreground">Off-market properties</Link> represent a significant share of Austin's best investment opportunities — access requires local broker relationships and direct sourcing.</span></li>
+            <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span><Link to="/off-market-real-estate-austin" className="text-foreground underline hover:text-muted-foreground">Off-market properties</Link> represent a significant share of Austin's best investment opportunities, access requires local broker relationships and direct sourcing.</span></li>
             <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Fix-and-flip margins are strongest in transitioning corridors like East Austin and South Austin, where renovation dollars translate directly into resale value.</span></li>
             <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Development <Link to="/land-for-sale-austin" className="text-foreground underline hover:text-muted-foreground">land in the Austin MSA</Link> ranges from entitled infill lots to large-scale tracts, with zoning and entitlement analysis essential before acquisition.</span></li>
             <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Echelon Property Group serves both local and out-of-state investors with data-driven sourcing, property evaluation, and full transaction management. Explore our <Link to="/austin-multifamily-report-2026" className="text-foreground underline hover:text-muted-foreground">multifamily market outlook</Link> for current data.</span></li>

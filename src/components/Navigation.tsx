@@ -73,7 +73,7 @@ const Navigation = () => {
           <img
             src={logoMobile}
             alt="Echelon Property Group"
-            title="Echelon Property Group — Austin Luxury Real Estate"
+            title="Echelon Property Group, Austin Luxury Real Estate"
             className="block lg:hidden w-auto max-w-[450px] border-0 shrink-0 object-contain"
             style={{ height: 'auto', maxHeight: '128%' }}
             loading="eager"
@@ -86,7 +86,7 @@ const Navigation = () => {
           <img
             src={logo}
             alt="Echelon Property Group"
-            title="Echelon Property Group — Austin Luxury Real Estate"
+            title="Echelon Property Group, Austin Luxury Real Estate"
             className="hidden lg:block w-auto max-w-none border-0 shrink-0 object-contain"
             style={{ height: '140%', maxHeight: '140%', aspectRatio: '200 / 80' }}
             loading="eager"
@@ -176,7 +176,7 @@ const Navigation = () => {
           )}
         </div>
 
-        {/* Desktop Client Portal — ghost gold button */}
+        {/* Desktop Client Portal, ghost gold button */}
         <div className="hidden lg:flex items-center shrink-0 ml-auto mr-6 xl:mr-10">
           <a
             href="https://portal.echelonpropertygroup.com/login"
@@ -210,7 +210,7 @@ const Navigation = () => {
         </Button>
       </div>
 
-      {/* Mobile menu — Safari-safe overlay panel */}
+      {/* Mobile menu, Safari-safe overlay panel */}
       {isMenuOpen && (
         <div
           className="lg:hidden absolute left-0 right-0 top-full z-40 overflow-y-auto"

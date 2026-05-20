@@ -38,7 +38,7 @@ const LandForSaleAustin = () => {
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
               From residential homesites and entitled development parcels to Hill Country ranches and 
-              commercial land — Echelon Property Group provides expert land advisory across the Austin metro 
+              commercial land, Echelon Property Group provides expert land advisory across the Austin metro 
               and Texas Hill Country.
             </p>
           </div>
@@ -107,10 +107,10 @@ const LandForSaleAustin = () => {
                 For larger-scale residential or mixed-use development, the Highway 290 West corridor between Oak Hill and Dripping Springs has been one of Austin's fastest-growing areas, with significant infrastructure investment underway. The I-35 corridor south of Austin through Buda and Kyle presents opportunities for multifamily and commercial development, driven by population spillover and the ongoing I-35 expansion project.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                For ranch and estate land, the Hill Country west and southwest of Austin — including Dripping Springs, Wimberley, Johnson City, and Fredericksburg — offers the most diverse selection of acreage properties with varying levels of improvement and development potential. Our <Link to="/austin-land-development-opportunities" className="text-foreground underline hover:text-muted-foreground">Austin land development advisory</Link> provides detailed analysis of growth corridors and emerging opportunities.
+                For ranch and estate land, the Hill Country west and southwest of Austin, including Dripping Springs, Wimberley, Johnson City, and Fredericksburg, offers the most diverse selection of acreage properties with varying levels of improvement and development potential. Our <Link to="/austin-land-development-opportunities" className="text-foreground underline hover:text-muted-foreground">Austin land development advisory</Link> provides detailed analysis of growth corridors and emerging opportunities.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                For investors targeting development land, understanding Austin's growth patterns is essential. The city's expansion follows infrastructure investment — when roads widen, utilities extend, and commercial services arrive, land values follow. Our <Link to="/austin-real-estate-investment" className="text-foreground underline hover:text-muted-foreground">investment advisory practice</Link> helps investors identify corridors positioned for the next wave of growth.
+                For investors targeting development land, understanding Austin's growth patterns is essential. The city's expansion follows infrastructure investment, when roads widen, utilities extend, and commercial services arrive, land values follow. Our <Link to="/austin-real-estate-investment" className="text-foreground underline hover:text-muted-foreground">investment advisory practice</Link> helps investors identify corridors positioned for the next wave of growth.
               </p>
             </section>
 
@@ -148,7 +148,7 @@ const LandForSaleAustin = () => {
                 </div>
                 <div className="border-l-2 border-gold pl-6">
                   <h3 className="text-lg font-medium text-foreground mb-1">Property Taxes & Agricultural Exemptions</h3>
-                  <p className="text-muted-foreground text-sm">Many rural and ranch properties carry agricultural tax exemptions that significantly reduce carrying costs. Understanding how exemptions work — and what triggers rollback taxes — is essential for land investors.</p>
+                  <p className="text-muted-foreground text-sm">Many rural and ranch properties carry agricultural tax exemptions that significantly reduce carrying costs. Understanding how exemptions work, and what triggers rollback taxes, is essential for land investors.</p>
                 </div>
               </div>
             </section>

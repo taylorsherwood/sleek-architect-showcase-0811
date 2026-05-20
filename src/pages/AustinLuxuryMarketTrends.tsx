@@ -10,10 +10,10 @@ import AuthorBio from "@/components/AuthorBio";
 import heroImage from "@/assets/austin-luxury-market-trends-hero.jpg";
 
 const faqs = [
-  { question: "Is Austin still a strong luxury real estate market?", answer: "Yes—while price growth has stabilized, demand remains strong due to continued inbound migration from California, New York, and other high-tax states, combined with lifestyle appeal and long-term economic fundamentals that continue to attract high-net-worth buyers." },
+  { question: "Is Austin still a strong luxury real estate market?", answer: "Yes, while price growth has stabilized, demand remains strong due to continued inbound migration from California, New York, and other high-tax states, combined with lifestyle appeal and long-term economic fundamentals that continue to attract high-net-worth buyers." },
   { question: "Are luxury home prices dropping in Austin?", answer: "Some segments have adjusted, particularly where inventory has increased and days on market have extended. However, prime single-family properties in supply-constrained neighborhoods like West lake Hills and Lake Austin remain resilient, with pricing holding steady in the $1.5M–$3M core luxury tier." },
   { question: "How long are luxury homes taking to sell in Austin?", answer: "Many luxury properties are seeing longer timelines than in previous years, particularly if not priced strategically from day one. Homes that are overpriced or lack differentiation often extend beyond 60–90 days on market, while well-positioned properties in prime locations continue to move within 30–45 days." },
-  { question: "Is now a good time to buy luxury real estate in Austin?", answer: "Buyers currently have more leverage, more inventory, and more negotiation room than in previous years. This creates a strategic window for well-positioned acquisitions—particularly for buyers with a long-term horizon who can identify value in properties sitting 60–120 days without strong offers." },
+  { question: "Is now a good time to buy luxury real estate in Austin?", answer: "Buyers currently have more leverage, more inventory, and more negotiation room than in previous years. This creates a strategic window for well-positioned acquisitions, particularly for buyers with a long-term horizon who can identify value in properties sitting 60–120 days without strong offers." },
   { question: "What price range defines luxury real estate in Austin?", answer: "Austin's luxury market generally begins at $1.3M for single-family homes in desirable neighborhoods. The core luxury tier spans $1.5M–$3M, while ultra-luxury encompasses Lake Austin waterfront estates, Hill Country ranches, and architectural properties above $3M–$5M." },
 ];
 
@@ -36,7 +36,7 @@ const AustinLuxuryMarketTrends = () => {
       />
       <SchemaMarkup schema={createArticleSchema(
         "Austin Luxury Real Estate Market Trends (2026 Update)",
-        "A more strategic market has emerged—defined by opportunity, selectivity, and precision at the high end.",
+        "A more strategic market has emerged, defined by opportunity, selectivity, and precision at the high end.",
         "April 3, 2026",
         "Taylor Pullen",
         heroImage,
@@ -66,7 +66,7 @@ const AustinLuxuryMarketTrends = () => {
             Austin Luxury Real Estate Market Trends (2026 Update)
           </h1>
           <p className="text-white/85 text-lg md:text-xl font-light leading-relaxed max-w-[680px]">
-            A more strategic market has emerged—defined by opportunity, selectivity, and precision at the high end.
+            A more strategic market has emerged, defined by opportunity, selectivity, and precision at the high end.
           </p>
         </div>
       </section>
@@ -90,13 +90,13 @@ const AustinLuxuryMarketTrends = () => {
               A Market in Recalibration, Not Decline
             </h2>
             <p className="text-muted-foreground leading-[1.7] mb-4">
-              Austin's luxury market has shifted into a more balanced environment—moving away from rapid appreciation and into a phase that rewards precision.
+              Austin's luxury market has shifted into a more balanced environment, moving away from rapid appreciation and into a phase that rewards precision.
             </p>
             <p className="text-muted-foreground leading-[1.7] mb-4">
-              Prices at the top end have adjusted modestly, driven by increased inventory and more selective buyers. This is not a downturn—it is a normalization.
+              Prices at the top end have adjusted modestly, driven by increased inventory and more selective buyers. This is not a downturn, it is a normalization.
             </p>
             <p className="text-muted-foreground leading-[1.7]">
-              In the $1.5M–$3M core luxury tier, median sale prices have softened 3–7% from peak levels, while properties above $3M are seeing longer negotiation cycles and increased pricing sensitivity. The adjustment is most pronounced in areas where new inventory has outpaced absorption—creating a healthier, more transparent marketplace.
+              In the $1.5M–$3M core luxury tier, median sale prices have softened 3–7% from peak levels, while properties above $3M are seeing longer negotiation cycles and increased pricing sensitivity. The adjustment is most pronounced in areas where new inventory has outpaced absorption, creating a healthier, more transparent marketplace.
             </p>
           </section>
 
@@ -113,10 +113,10 @@ const AustinLuxuryMarketTrends = () => {
               Sellers now have to compete.
             </p>
             <p className="text-muted-foreground leading-[1.7] mb-4">
-              The result is a market where pricing strategy and presentation matter more than ever. Overpricing is no longer absorbed—it is exposed.
+              The result is a market where pricing strategy and presentation matter more than ever. Overpricing is no longer absorbed, it is exposed.
             </p>
             <p className="text-muted-foreground leading-[1.7]">
-              Active listings in the $1.5M+ segment have increased substantially year-over-year, pushing average days on market beyond 60 in several submarkets. Properties that launch at or slightly below market value are still generating strong interest—but those that test the ceiling are sitting, accumulating days, and ultimately selling at steeper discounts than if they had been priced correctly from the start.
+              Active listings in the $1.5M+ segment have increased substantially year-over-year, pushing average days on market beyond 60 in several submarkets. Properties that launch at or slightly below market value are still generating strong interest, but those that test the ceiling are sitting, accumulating days, and ultimately selling at steeper discounts than if they had been priced correctly from the start.
             </p>
           </section>
 
@@ -140,7 +140,7 @@ const AustinLuxuryMarketTrends = () => {
             <p className="text-muted-foreground leading-[1.7]">
               The divergence is sharpest in the downtown condo market, where days on market frequently exceed 90 and sellers face 5–10% negotiation gaps. Meanwhile, single-family homes in{" "}
               <Link to="/best-luxury-neighborhoods-austin" className="text-foreground underline underline-offset-4 decoration-accent-gold/40 hover:decoration-accent-gold transition-colors duration-300">Austin's top luxury neighborhoods</Link>
-              —particularly those with strong school districts and limited future supply—continue to trade within 30–45 days when priced appropriately.
+              , particularly those with strong school districts and limited future supply, continue to trade within 30–45 days when priced appropriately.
             </p>
           </section>
 
@@ -153,14 +153,14 @@ const AustinLuxuryMarketTrends = () => {
               Today's luxury buyer is more analytical, more patient, and less emotional.
             </p>
             <p className="text-muted-foreground leading-[1.7] mb-4">
-              They are not chasing appreciation—they are evaluating value.
+              They are not chasing appreciation, they are evaluating value.
             </p>
             <p className="text-muted-foreground leading-[1.7] mb-4">
               Homes that feel average are overlooked.<br />
               Homes that feel exceptional still command attention.
             </p>
             <p className="text-muted-foreground leading-[1.7]">
-              Relocation buyers from California and New York—who once drove rapid closings and over-ask offers—are now conducting deeper due diligence, comparing multiple properties, and negotiating with more discipline. The emotional urgency of 2021–2022 has been replaced by a measured, investment-grade approach that favors properties with clear intrinsic value.
+              Relocation buyers from California and New York, who once drove rapid closings and over-ask offers, are now conducting deeper due diligence, comparing multiple properties, and negotiating with more discipline. The emotional urgency of 2021–2022 has been replaced by a measured, investment-grade approach that favors properties with clear intrinsic value.
             </p>
           </section>
 
@@ -173,13 +173,13 @@ const AustinLuxuryMarketTrends = () => {
               The current environment has created distinct pockets of opportunity for buyers willing to look beyond surface-level market narratives.
             </p>
             <p className="text-muted-foreground leading-[1.7] mb-4">
-              Off-market properties and private listings represent one of the strongest avenues. Sellers who prefer discretion over public exposure are often more flexible on terms—and the absence of competitive bidding creates negotiation leverage that doesn't exist in open-market transactions.
+              Off-market properties and private listings represent one of the strongest avenues. Sellers who prefer discretion over public exposure are often more flexible on terms, and the absence of competitive bidding creates negotiation leverage that doesn't exist in open-market transactions.
             </p>
             <p className="text-muted-foreground leading-[1.7] mb-4">
               Properties sitting 60–120 days without strong offers present another window. These homes are frequently well-located and well-built, but launched at prices the market has since corrected. For buyers who recognize the underlying value, these listings offer meaningful entry points below replacement cost.
             </p>
             <p className="text-muted-foreground leading-[1.7]">
-              There is also a growing disconnect between new construction and resale pricing. In several submarkets, new builds are priced 10–15% above comparable resale inventory—creating an arbitrage opportunity for buyers focused on existing homes in established neighborhoods with mature landscaping and proven appreciation trajectories.
+              There is also a growing disconnect between new construction and resale pricing. In several submarkets, new builds are priced 10–15% above comparable resale inventory, creating an arbitrage opportunity for buyers focused on existing homes in established neighborhoods with mature landscaping and proven appreciation trajectories.
             </p>
           </section>
 
@@ -224,7 +224,7 @@ const AustinLuxuryMarketTrends = () => {
               </li>
             </ul>
             <p className="text-muted-foreground leading-[1.7] mb-4">
-              The market rewards precision—and punishes hesitation.
+              The market rewards precision, and punishes hesitation.
             </p>
             <p className="text-muted-foreground leading-[1.7]">
               Sellers who invest in professional staging, architectural photography, and targeted marketing are consistently outperforming those who rely on location alone. In a market where buyers are comparing five to ten properties before making a decision, the homes that create an emotional response within the first 48 hours of listing are the ones that close at or near asking price.
@@ -243,7 +243,7 @@ const AustinLuxuryMarketTrends = () => {
               Buyers have more leverage, more inventory, and more time.
             </p>
             <p className="text-muted-foreground leading-[1.7] mb-4">
-              However, the best properties still move quickly—making timing and decisiveness critical.
+              However, the best properties still move quickly, making timing and decisiveness critical.
             </p>
             <p className="text-muted-foreground leading-[1.7]">
               For those ready to act, the current environment offers a rare combination: expanded selection, reduced competition, and sellers who are increasingly willing to negotiate on price, closing costs, and terms. Buyers who{" "}
@@ -268,13 +268,13 @@ const AustinLuxuryMarketTrends = () => {
               The smart opportunities remain.
             </p>
             <p className="text-muted-foreground leading-[1.7]">
-              Over the next 12–18 months, the market will likely reward disciplined participants on both sides. Sellers who price with precision and present with intention will find qualified buyers. Buyers who move with clarity and conviction will acquire assets that outperform over the long term. The fundamentals that made Austin one of America's most desirable luxury markets have not changed—only the pace has adjusted.
+              Over the next 12–18 months, the market will likely reward disciplined participants on both sides. Sellers who price with precision and present with intention will find qualified buyers. Buyers who move with clarity and conviction will acquire assets that outperform over the long term. The fundamentals that made Austin one of America's most desirable luxury markets have not changed, only the pace has adjusted.
             </p>
           </section>
 
           {/* Authority line */}
           <p className="text-foreground leading-[1.7] mb-16 md:mb-20 italic">
-            Austin's luxury market requires more than access—it requires precision, positioning, and a deep understanding of how high-end buyers are making decisions today.
+            Austin's luxury market requires more than access, it requires precision, positioning, and a deep understanding of how high-end buyers are making decisions today.
           </p>
 
           {/* FAQ Section */}

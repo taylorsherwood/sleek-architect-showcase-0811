@@ -26,7 +26,7 @@ const expertiseBlocks = [
   {
     eyebrow: "COMMERCIAL",
     title: "Commercial real estate",
-    description: "Multifamily, retail, office, and mixed-use across the metro — tenant rep to acquisitions.",
+    description: "Multifamily, retail, office, and mixed-use across the metro, tenant rep to acquisitions.",
     link: "/listings/commercial-investment-austin",
     linkText: "Explore commercial",
     image: commercialMusicLane,
@@ -39,7 +39,7 @@ const expertiseBlocks = [
     link: "/invest",
     linkText: "View investments",
     image: paseoInvestment,
-    alt: "Paseo high-rise tower at sunset in downtown Austin — investment property",
+    alt: "Paseo high-rise tower at sunset in downtown Austin, investment property",
   },
 ];
 
@@ -99,7 +99,7 @@ const ExpertiseSection = () => {
                   to={block.link}
                   className="expertise-card group relative block w-full overflow-hidden"
                   style={{ aspectRatio: "4 / 5" }}
-                  aria-label={`${block.title} — ${block.linkText}`}
+                  aria-label={`${block.title}, ${block.linkText}`}
                 >
                   {/* Background image */}
                   <img

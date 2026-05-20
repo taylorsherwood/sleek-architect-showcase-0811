@@ -108,7 +108,7 @@ export async function submitLeadToZapier(
     typeof window !== "undefined" ? window.location.href : "";
   const time = getTimestamp();
 
-  // Canonical payload — keys must match the Zap field mapping exactly.
+  // Canonical payload, keys must match the Zap field mapping exactly.
   // Built from live submit-time values, never from stale refs.
   const payload: Record<string, string> = {
     name,

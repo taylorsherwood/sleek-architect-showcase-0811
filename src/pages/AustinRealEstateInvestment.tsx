@@ -23,7 +23,7 @@ const AustinRealEstateInvestment = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Austin Real Estate Investment | Echelon Property Group"
-        description="Austin real estate investment advisory — residential, commercial, multifamily, and land. Expert deal sourcing and portfolio strategy."
+        description="Austin real estate investment advisory, residential, commercial, multifamily, and land. Expert deal sourcing and portfolio strategy."
         canonical="/austin-real-estate-investment"
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
@@ -60,7 +60,7 @@ const AustinRealEstateInvestment = () => {
                 Why Invest in Austin Real Estate?
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Austin has emerged as one of the most compelling real estate investment markets in the United States. The city's fundamental growth drivers — a diversified technology economy, sustained population growth, no state income tax, and exceptional quality of life — create a demand environment that supports multiple investment strategies across asset classes.
+                Austin has emerged as one of the most compelling real estate investment markets in the United States. The city's fundamental growth drivers, a diversified technology economy, sustained population growth, no state income tax, and exceptional quality of life, create a demand environment that supports multiple investment strategies across asset classes.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 Major corporate relocations and expansions by Apple, Tesla, Google, Meta, Oracle, and Samsung generate thousands of high-income households annually, driving sustained demand for both housing and commercial space. Austin's population has grown by over 300,000 residents in the past five years, creating long-term demand tailwinds that benefit property owners and developers.
@@ -78,13 +78,13 @@ const AustinRealEstateInvestment = () => {
                 <div>
                   <h3 className="text-xl font-display font-medium mb-3">Luxury Residential Buy-and-Hold</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Supply-constrained neighborhoods like <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-gold transition-colors">West lake Hills</Link>, <Link to="/communities/lake-austin" className="text-foreground underline hover:text-gold transition-colors">Lake Austin</Link>, and <Link to="/communities/barton-creek" className="text-foreground underline hover:text-gold transition-colors">Barton Creek</Link> offer the most reliable long-term appreciation. Limited buildable lots, top-tier schools, and sustained demand from tech-economy growth create a foundation for 7–12% average annual appreciation. These neighborhoods benefit from permanently constrained supply — there are no new lots to develop — which creates a structural advantage for existing property owners.
+                    Supply-constrained neighborhoods like <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-gold transition-colors">West lake Hills</Link>, <Link to="/communities/lake-austin" className="text-foreground underline hover:text-gold transition-colors">Lake Austin</Link>, and <Link to="/communities/barton-creek" className="text-foreground underline hover:text-gold transition-colors">Barton Creek</Link> offer the most reliable long-term appreciation. Limited buildable lots, top-tier schools, and sustained demand from tech-economy growth create a foundation for 7–12% average annual appreciation. These neighborhoods benefit from permanently constrained supply, there are no new lots to develop, which creates a structural advantage for existing property owners.
                   </p>
                 </div>
                 <div>
                   <h3 className="text-xl font-display font-medium mb-3">Value-Add and Fix-and-Flip</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Established neighborhoods like <Link to="/communities/tarrytown" className="text-foreground underline hover:text-gold transition-colors">Tarrytown</Link>, <Link to="/communities/rollingwood" className="text-foreground underline hover:text-gold transition-colors">Rollingwood</Link>, and South Austin offer compelling renovation and teardown-rebuild opportunities. The spread between acquisition cost and improved value supports profitable projects, particularly on larger lots or properties with significant improvement potential. Understanding neighborhood-specific finish expectations is critical — we help investors calibrate renovation scope to end-buyer demand profiles.
+                    Established neighborhoods like <Link to="/communities/tarrytown" className="text-foreground underline hover:text-gold transition-colors">Tarrytown</Link>, <Link to="/communities/rollingwood" className="text-foreground underline hover:text-gold transition-colors">Rollingwood</Link>, and South Austin offer compelling renovation and teardown-rebuild opportunities. The spread between acquisition cost and improved value supports profitable projects, particularly on larger lots or properties with significant improvement potential. Understanding neighborhood-specific finish expectations is critical, we help investors calibrate renovation scope to end-buyer demand profiles.
                   </p>
                 </div>
                 <div>
@@ -96,7 +96,7 @@ const AustinRealEstateInvestment = () => {
                 <div>
                   <h3 className="text-xl font-display font-medium mb-3">Development Land</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    <Link to="/land-for-sale-austin" className="text-foreground underline hover:text-gold transition-colors">Land along Austin's growth corridors</Link> — including I-35, Highway 290 West, and the <Link to="/communities/dripping-springs" className="text-foreground underline hover:text-gold transition-colors">Dripping Springs</Link> corridor — presents significant appreciation potential for investors with medium- to long-term horizons. Our <Link to="/austin-land-development-opportunities" className="text-foreground underline hover:text-gold transition-colors">land development advisory</Link> covers site selection, entitlement analysis, and highest-and-best-use evaluation.
+                    <Link to="/land-for-sale-austin" className="text-foreground underline hover:text-gold transition-colors">Land along Austin's growth corridors</Link>, including I-35, Highway 290 West, and the <Link to="/communities/dripping-springs" className="text-foreground underline hover:text-gold transition-colors">Dripping Springs</Link> corridor, presents significant appreciation potential for investors with medium- to long-term horizons. Our <Link to="/austin-land-development-opportunities" className="text-foreground underline hover:text-gold transition-colors">land development advisory</Link> covers site selection, entitlement analysis, and highest-and-best-use evaluation.
                   </p>
                 </div>
               </div>
@@ -107,7 +107,7 @@ const AustinRealEstateInvestment = () => {
                 Austin Investment Submarkets: Where to Deploy Capital
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Austin's investment landscape varies dramatically by submarket. Understanding which areas align with your investment thesis — appreciation, cash flow, development upside, or a combination — is essential to capital allocation decisions.
+                Austin's investment landscape varies dramatically by submarket. Understanding which areas align with your investment thesis, appreciation, cash flow, development upside, or a combination, is essential to capital allocation decisions.
               </p>
               <div className="space-y-6 mt-8">
                 <div className="border-l-2 border-gold pl-6">
@@ -147,7 +147,7 @@ const AustinRealEstateInvestment = () => {
                 </div>
                 <div className="border-l-2 border-border pl-6">
                   <h3 className="text-lg font-medium text-foreground mb-1">Financial Underwriting</h3>
-                  <p className="text-muted-foreground text-sm">We provide comparative market analysis, rent comps, cap rate analysis, and pro forma modeling to support your acquisition decisions with data — not speculation.</p>
+                  <p className="text-muted-foreground text-sm">We provide comparative market analysis, rent comps, cap rate analysis, and pro forma modeling to support your acquisition decisions with data, not speculation.</p>
                 </div>
                 <div className="border-l-2 border-border pl-6">
                   <h3 className="text-lg font-medium text-foreground mb-1">Renovation Strategy</h3>
@@ -169,13 +169,13 @@ const AustinRealEstateInvestment = () => {
                 Austin vs. Other Investment Markets
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Investors comparing Austin to other Sun Belt markets — Dallas, Houston, Nashville, Phoenix, Tampa — will find several structural advantages. Austin's technology economy is more diversified than Nashville's healthcare base or Phoenix's financial services concentration. The city's no-income-tax advantage attracts high-income earners at a rate that supports premium rent levels and property values.
+                Investors comparing Austin to other Sun Belt markets, Dallas, Houston, Nashville, Phoenix, Tampa, will find several structural advantages. Austin's technology economy is more diversified than Nashville's healthcare base or Phoenix's financial services concentration. The city's no-income-tax advantage attracts high-income earners at a rate that supports premium rent levels and property values.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 Compared to California and New York, Austin offers dramatically better cap rates, lower operating costs, landlord-favorable regulation, and faster entitlement timelines. Investors exiting overregulated coastal markets consistently find that Austin's business environment, growth trajectory, and yield profile make it a superior deployment target for real estate capital.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Austin's primary risk factor — property tax rates averaging 1.8–2.2% of assessed value — is offset by the absence of state income tax and strong rent growth that consistently outpaces tax increases. Investors should factor property taxes into underwriting but recognize that the overall tax burden for property owners remains competitive nationally.
+                Austin's primary risk factor, property tax rates averaging 1.8–2.2% of assessed value, is offset by the absence of state income tax and strong rent growth that consistently outpaces tax increases. Investors should factor property taxes into underwriting but recognize that the overall tax burden for property owners remains competitive nationally.
               </p>
             </section>
 

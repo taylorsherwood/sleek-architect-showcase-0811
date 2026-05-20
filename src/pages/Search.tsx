@@ -268,7 +268,7 @@ const SearchPage = () => {
               {/* Gillis Street */}
               <div className="border border-border/60 overflow-hidden group bg-card hover:border-gold hover:shadow-[0_0_0_1px_hsl(var(--gold))] transition-colors duration-500 flex flex-col">
                 <div className="relative overflow-hidden">
-                  <img src={gillisStreet} alt="4314 Gillis Street, Austin TX 78745 — 24-unit multifamily" className="w-full aspect-[3/2] object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" />
+                  <img src={gillisStreet} alt="4314 Gillis Street, Austin TX 78745, 24-unit multifamily" className="w-full aspect-[3/2] object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" />
                   <span className="absolute top-4 left-4 text-minimal bg-gold text-white px-3 py-1 font-extrabold">MULTIFAMILY</span>
                   <span className="absolute bottom-3 right-3 text-white text-sm font-light  bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-sm">$2,500,000</span>
                 </div>
@@ -293,7 +293,7 @@ const SearchPage = () => {
               {/* San Jose Ave */}
               <div className="border border-border/60 overflow-hidden group bg-card hover:border-gold hover:shadow-[0_0_0_1px_hsl(var(--gold))] transition-colors duration-500 flex flex-col">
                 <div className="relative overflow-hidden">
-                  <img src={sanJoseAve} alt="10811 San Jose Ave, Del Valle TX — 3.06 acres redevelopment land" className="w-full aspect-[3/2] object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" />
+                  <img src={sanJoseAve} alt="10811 San Jose Ave, Del Valle TX, 3.06 acres redevelopment land" className="w-full aspect-[3/2] object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" />
                   <span className="absolute top-4 left-4 text-minimal bg-gold text-white px-3 py-1 font-extrabold">DEVELOPMENT LAND</span>
                   <span className="absolute bottom-3 right-3 text-white text-sm font-light  bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-sm">$1,600,000</span>
                 </div>
@@ -318,7 +318,7 @@ const SearchPage = () => {
               {/* 717 S. 11th St */}
               <div className="border border-border/60 overflow-hidden group bg-card hover:border-gold hover:shadow-[0_0_0_1px_hsl(var(--gold))] transition-colors duration-500 flex flex-col">
                 <div className="relative overflow-hidden">
-                  <img src={s11thStreet} alt="717 S. 11th St, Temple TX — 6-unit multifamily" className="w-full aspect-[3/2] object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" />
+                  <img src={s11thStreet} alt="717 S. 11th St, Temple TX, 6-unit multifamily" className="w-full aspect-[3/2] object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" />
                   <span className="absolute top-4 left-4 text-minimal bg-gold text-white px-3 py-1 font-extrabold">MULTIFAMILY</span>
                   <span className="absolute bottom-3 right-3 text-white text-sm font-light  bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-sm">Price Upon Request</span>
                 </div>
@@ -343,7 +343,7 @@ const SearchPage = () => {
               {/* Small Killeen Rental Portfolio */}
               <div className="border border-border/60 overflow-hidden group bg-card hover:border-gold hover:shadow-[0_0_0_1px_hsl(var(--gold))] transition-colors duration-500 flex flex-col">
                 <div className="relative overflow-hidden">
-                  <img src={killeenPortfolio} alt="Small Killeen Rental Portfolio — 9 rentable units, 100% occupied" className="w-full aspect-[3/2] object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" />
+                  <img src={killeenPortfolio} alt="Small Killeen Rental Portfolio, 9 rentable units, 100% occupied" className="w-full aspect-[3/2] object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" />
                   <span className="absolute top-4 left-4 text-minimal bg-gold text-white px-3 py-1 font-extrabold">PENDING</span>
                   <span className="absolute bottom-3 right-3 text-white text-sm font-light  bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-sm">$550,000</span>
                 </div>
@@ -368,7 +368,7 @@ const SearchPage = () => {
               {/* 709/711/713 Bremser Ave */}
               <div className="border border-border/60 overflow-hidden group bg-card hover:border-gold hover:shadow-[0_0_0_1px_hsl(var(--gold))] transition-colors duration-500 flex flex-col">
                 <div className="relative overflow-hidden">
-                  <img src={bremserAve} alt="709/711/713 Bremser Ave, Killeen TX — 3 individual rental homes" className="w-full aspect-[3/2] object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" />
+                  <img src={bremserAve} alt="709/711/713 Bremser Ave, Killeen TX, 3 individual rental homes" className="w-full aspect-[3/2] object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" />
                   <span className="absolute top-4 left-4 text-minimal bg-gold text-white px-3 py-1 font-extrabold">RENTAL PORTFOLIO</span>
                   <span className="absolute bottom-3 right-3 text-white text-sm font-light  bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-sm">$240,000</span>
                 </div>
@@ -449,7 +449,7 @@ const SearchPage = () => {
                   >
                     More than 95% of the homes we transact never appear on the
                     MLS. Request access to our private inventory of off-market
-                    Austin properties — quietly available to qualified buyers
+                    Austin properties, quietly available to qualified buyers
                     through Echelon Property Group.
                   </p>
                   <div className="flex items-center justify-center">
@@ -493,7 +493,7 @@ const SearchPage = () => {
             </h2>
             <div className="space-y-6 text-muted-foreground leading-relaxed">
               <p>
-                Austin's real estate market spans an extraordinary range of properties — from contemporary Hill Country estates and Lake Austin waterfront homes to downtown high-rise penthouses and sprawling ranch land. Whether you're searching for a luxury primary residence, an investment property, or land for development, our comprehensive search covers every available listing across greater Austin.
+                Austin's real estate market spans an extraordinary range of properties, from contemporary Hill Country estates and Lake Austin waterfront homes to downtown high-rise penthouses and sprawling ranch land. Whether you're searching for a luxury primary residence, an investment property, or land for development, our comprehensive search covers every available listing across greater Austin.
               </p>
               <p>
                 Echelon Property Group provides expert guidance for buyers navigating Austin's competitive market. Beyond public listings, we maintain access to off-market properties and private opportunities through our brokerage network. Work with Taylor Sherwood for personalized property recommendations tailored to your goals, timeline, and budget.

@@ -104,7 +104,7 @@ const BookingModal = ({ open, onOpenChange }: BookingModalProps) => {
         setBusySlots(data.busy);
       }
     } catch {
-      // Fail silently — show all slots if calendar unavailable
+      // Fail silently, show all slots if calendar unavailable
     } finally {
       setLoadingAvailability(false);
     }
@@ -144,9 +144,9 @@ const BookingModal = ({ open, onOpenChange }: BookingModalProps) => {
     setIsSubmitting(true);
 
     const dateStr = format(selectedSlot.date, "EEEE, MMMM d, yyyy");
-    const message = `Consultation booking for ${dateStr} at ${selectedSlot.time} — 15 min phone call`;
+    const message = `Consultation booking for ${dateStr} at ${selectedSlot.time}, 15 min phone call`;
 
-    // 1. Zapier remains the system of record — fire first.
+    // 1. Zapier remains the system of record, fire first.
     await submitLeadToZapier(
       {
         name: formData.name,
@@ -164,7 +164,7 @@ const BookingModal = ({ open, onOpenChange }: BookingModalProps) => {
 
     // 2. Create the Google Calendar event (with invite to the visitor) and
     //    send the branded Gmail confirmation. Failures here don't block
-    //    the user — they still see the confirmation step.
+    //    the user, they still see the confirmation step.
     try {
       const supabase = await getBrowserSupabaseClient();
       if (supabase) {

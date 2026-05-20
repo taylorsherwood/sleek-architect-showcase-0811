@@ -46,7 +46,7 @@ const CommunitiesPreview = () => {
           {/* Single-row editorial layout */}
           <ScrollReveal delay={100}>
           <div className="grid grid-cols-1 md:grid-cols-12 gap-[6px]">
-            {/* Hero — ~58% width (7 of 12 cols) */}
+            {/* Hero, ~58% width (7 of 12 cols) */}
             <Link
               to={`/communities/${hero.slug}`}
               className="group relative overflow-hidden md:col-span-7 aspect-[4/3]"
@@ -72,7 +72,7 @@ const CommunitiesPreview = () => {
               </div>
             </Link>
 
-            {/* Secondary — stacked, 5 of 12 cols */}
+            {/* Secondary, stacked, 5 of 12 cols */}
             <div className="md:col-span-5 grid grid-cols-2 md:grid-cols-1 gap-[6px]">
               {secondary.map((c) => (
                 <Link

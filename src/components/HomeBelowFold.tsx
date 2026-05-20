@@ -12,7 +12,7 @@ const ExpertiseSection = lazy(() => import("@/components/ExpertiseSection"));
 const HomeCommunitiesScroll = lazy(() => import("@/components/HomeCommunitiesScroll"));
 import FeaturedProperties from "@/components/FeaturedProperties";
 
-// Dynamic image imports — only loaded when this chunk is loaded
+// Dynamic image imports, only loaded when this chunk is loaded
 import taylorBoatImg from "@/assets/taylor-headshot.webp";
 import taylorAboutHeadshot from "@/assets/taylor-about-headshot.jpeg";
 import taylorSignature from "@/assets/taylor-signature.webp";
@@ -32,7 +32,7 @@ const Footer = lazy(() => import("@/components/Footer"));
 import PrivateDistributionStrip from "@/components/private-distribution/PrivateDistributionStrip";
 
 /* ─────────────────────────────────────────────
-   SECTION 2 — MICRO-TRUST STRIP
+   SECTION 2, MICRO-TRUST STRIP
    ───────────────────────────────────────────── */
 
 const TrustStrip = () => {
@@ -62,19 +62,19 @@ const TrustStrip = () => {
 };
 
 /* ─────────────────────────────────────────────
-   SECTION 3 — ADVISOR POSITIONING
+   SECTION 3, ADVISOR POSITIONING
    ───────────────────────────────────────────── */
 
 const AdvisorSection = () => (
   <section className="bg-secondary pt-12 md:pt-20">
     <div className="max-w-[1400px] mx-auto">
        <div className="grid lg:grid-cols-[minmax(480px,520px)_1fr] items-start" style={{ gap: 0 }}>
-         {/* Left — editorial portrait */}
+         {/* Left, editorial portrait */}
           <div className="relative flex flex-col items-center bg-secondary w-full overflow-hidden">
             <div className="relative w-full p-4 md:pt-14">
               <img
                 src={taylorBoatImg}
-                alt="Taylor Sherwood — Austin luxury real estate advisor and founder of Echelon Property Group"
+                alt="Taylor Sherwood, Austin luxury real estate advisor and founder of Echelon Property Group"
                 title="Taylor Sherwood, Echelon Property Group"
                 className="w-full h-[400px] md:h-[700px] object-cover object-center rounded-sm"
                 loading="lazy" decoding="async"
@@ -88,7 +88,7 @@ const AdvisorSection = () => (
               }} />
             </div>
 
-            {/* Brokerage logo — desktop only */}
+            {/* Brokerage logo, desktop only */}
             <div className="hidden lg:flex w-full flex-col items-center pt-5 pb-2 px-4">
 
               <div className="w-full max-w-[300px] mx-auto">
@@ -103,7 +103,7 @@ const AdvisorSection = () => (
             </div>
           </div>
 
-        {/* Right — content */}
+        {/* Right, content */}
         <div className="flex flex-col justify-center bg-secondary lg:-mt-14" style={{ padding: "clamp(36px, 5vw, 64px)" }}>
           <ScrollReveal>
             <p className="text-minimal text-gold mb-6">
@@ -172,7 +172,7 @@ const AdvisorSection = () => (
 
 
             <div className="grid grid-cols-1 sm:grid-cols-[auto_auto] items-center gap-y-12 gap-x-10 justify-start">
-              {/* Row 1 — CTAs */}
+              {/* Row 1, CTAs */}
               <Link
                 to="/contact"
                 className="inline-block text-minimal px-8 py-3.5 transition-all duration-300"
@@ -202,7 +202,7 @@ const AdvisorSection = () => (
                 <span className="absolute bottom-0 left-0 w-full h-px bg-gold scale-x-0 group-hover/link:scale-x-100 transition-transform duration-500 origin-left" />
               </Link>
 
-              {/* Row 2 — Socials */}
+              {/* Row 2, Socials */}
               <a
                 href="https://www.instagram.com/theinvestorbroker/"
                 target="_blank"
@@ -238,7 +238,7 @@ const AdvisorSection = () => (
 );
 
 /* ─────────────────────────────────────────────
-   SECTION 3B — STATS STRIP
+   SECTION 3B, STATS STRIP
    ───────────────────────────────────────────── */
 
 const useCountUp = (target: number, duration = 2600, from = 0, decimals = 0) => {
@@ -339,11 +339,11 @@ const StatsStrip = () => (
 );
 
 /* ─────────────────────────────────────────────
-   SECTION 4 — FEATURED PROPERTIES (extracted to @/components/FeaturedProperties)
+   SECTION 4, FEATURED PROPERTIES (extracted to @/components/FeaturedProperties)
    ───────────────────────────────────────────── */
 
 /* ─────────────────────────────────────────────
-   SECTION 5 — TESTIMONIALS
+   SECTION 5, TESTIMONIALS
    ───────────────────────────────────────────── */
 
 const testimonials = [
@@ -421,7 +421,7 @@ const TestimonialsSection = () => {
     return () => clearInterval(timer);
   }, [userPaused]);
 
-  // Desktop / iPad — auto-rotate AFTER the scroll-driven walk has reached
+  // Desktop / iPad, auto-rotate AFTER the scroll-driven walk has reached
   // testimonial #4 (active >= 3). Scroll governs the first four, then
   // auto-rotation continues for users who linger or scroll past.
   useEffect(() => {
@@ -434,7 +434,7 @@ const TestimonialsSection = () => {
     return () => clearInterval(timer);
   }, [revealed, userPaused, active]);
 
-  // Desktop / iPad — GSAP horizontal split-reveal (image opens left/right)
+  // Desktop / iPad, GSAP horizontal split-reveal (image opens left/right)
   useEffect(() => {
     if (typeof window === "undefined") return;
     if (!window.matchMedia("(min-width: 768px)").matches) return;
@@ -518,7 +518,7 @@ const TestimonialsSection = () => {
 
   return (
     <>
-      {/* Stable wrapper — GSAP ScrollTrigger pin-spacer goes inside this div,
+      {/* Stable wrapper, GSAP ScrollTrigger pin-spacer goes inside this div,
           so React's parent only ever sees this wrapper as its child. Prevents
           "removeChild" crashes when sibling sections re-render. */}
       <div className="hidden md:block">
@@ -529,7 +529,7 @@ const TestimonialsSection = () => {
         >
         <div className="absolute inset-0 z-0 flex items-center justify-end pl-8 md:pl-10 lg:pl-14 pr-16 md:pr-24 lg:pr-32">
           <div className="max-w-xl md:w-1/2 md:pl-0" style={{ paddingTop: "clamp(240px, 34vh, 380px)" }}>
-            {/* Eyebrow with gold hairline rule — magazine masthead treatment */}
+            {/* Eyebrow with gold hairline rule, magazine masthead treatment */}
             <div
               className="tsplit-attribution flex items-center gap-4 mb-12 will-change-transform"
               style={{ opacity: 0 }}
@@ -553,7 +553,7 @@ const TestimonialsSection = () => {
             </div>
 
             <div className="relative" style={{ maxWidth: "34rem" }}>
-              {/* Oversized watermark quote glyph — sits behind text, far top-right */}
+              {/* Oversized watermark quote glyph, sits behind text, far top-right */}
               <span
                 aria-hidden="true"
                 className="select-none pointer-events-none"
@@ -718,14 +718,14 @@ const TestimonialsSection = () => {
           />
         </div>
 
-        {/* Faint dark tint — improves overlay text readability, fades with overlay */}
+        {/* Faint dark tint, improves overlay text readability, fades with overlay */}
         <div
           className="tsplit-overlay absolute inset-0 z-[15] pointer-events-none will-change-[opacity]"
           style={{ background: "rgba(0, 0, 0, 0.32)" }}
           aria-hidden="true"
         />
 
-        {/* Overlay verbiage — fades out as the split begins */}
+        {/* Overlay verbiage, fades out as the split begins */}
         <div className="tsplit-overlay absolute inset-0 z-20 flex items-center justify-center pointer-events-none px-6 will-change-transform">
           <div className="text-center">
             <h2
@@ -746,7 +746,7 @@ const TestimonialsSection = () => {
       </section>
       </div>
 
-      {/* MOBILE — centered rotating quote */}
+      {/* MOBILE, centered rotating quote */}
       <section className="md:hidden bg-secondary relative overflow-hidden" style={{ padding: "clamp(48px, 7vw, 90px) 0" }}>
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-[900px] mx-auto text-center mb-10">
@@ -811,7 +811,7 @@ const TestimonialsSection = () => {
 
 
 /* ─────────────────────────────────────────────
-   SECTION 6 — COMMUNITIES
+   SECTION 6, COMMUNITIES
    ───────────────────────────────────────────── */
 
 const communities = [
@@ -853,7 +853,7 @@ const CommunitiesSection = () => {
             className="text-center"
             style={{ marginBottom: "clamp(56px, 7vw, 96px)" }}
           >
-            {/* Eyebrow flanked by gold hairlines — editorial masthead */}
+            {/* Eyebrow flanked by gold hairlines, editorial masthead */}
             <div
               className="flex items-center justify-center gap-4 md:gap-6 mb-8"
               style={{
@@ -884,7 +884,7 @@ const CommunitiesSection = () => {
               />
             </div>
 
-            {/* Display headline — dramatically larger with italic accent */}
+            {/* Display headline, dramatically larger with italic accent */}
             <h2
               className="font-display font-normal"
               style={{
@@ -922,10 +922,10 @@ const CommunitiesSection = () => {
                 transition: "opacity 1s cubic-bezier(0.22, 1, 0.36, 1) 0.25s, transform 1s cubic-bezier(0.22, 1, 0.36, 1) 0.25s",
               }}
             >
-              A curated atlas of the city's most coveted enclaves — each shaped by its own quiet authority.
+              A curated atlas of the city's most coveted enclaves, each shaped by its own quiet authority.
             </p>
 
-            {/* Ornamental divider — hairline + diamond + hairline */}
+            {/* Ornamental divider, hairline + diamond + hairline */}
             <div
               aria-hidden="true"
               className="flex items-center justify-center gap-3 mx-auto"
@@ -947,7 +947,7 @@ const CommunitiesSection = () => {
         <HomeCommunitiesScroll />
       </Suspense>
 
-      {/* Editorial CTA — italic call, hairline rule, gold-bordered button, supporting line */}
+      {/* Editorial CTA, italic call, hairline rule, gold-bordered button, supporting line */}
       <div className="container mx-auto px-6">
         <ScrollReveal delay={200}>
           <div className="text-center mx-auto" style={{ padding: "clamp(64px, 8vw, 104px) 0", maxWidth: "640px" }}>
@@ -993,7 +993,7 @@ const CommunitiesSection = () => {
 };
 
 /* ─────────────────────────────────────────────
-   SECTION 7 — INSIGHTS
+   SECTION 7, INSIGHTS
    ───────────────────────────────────────────── */
 
 const insights = [
@@ -1001,7 +1001,7 @@ const insights = [
   { to: "/blog/best-luxury-neighborhoods-austin-texas", title: "LUXURY LIVING", excerpt: "A comprehensive guide to Austin's most prestigious communities and what makes each one unique.", category: "Neighborhoods" },
   { to: "/blog/top-investment-neighborhoods-austin", title: "Top Investment Neighborhoods", excerpt: "Data-driven analysis of appreciation trends, rental yields, and growth potential across Austin.", category: "Investment" },
   { to: "/blog/best-waterfront-homes-austin", title: "Best Waterfront Homes in Austin", excerpt: "Lake Austin estates, Lake Travis retreats, and what to know before buying waterfront property.", category: "Waterfront" },
-  { to: "/blog/moving-to-austin-texas-from-california", title: "Moving to Austin from California", excerpt: "Everything California residents need to know about relocating — taxes, neighborhoods, and lifestyle.", category: "Relocation" },
+  { to: "/blog/moving-to-austin-texas-from-california", title: "Moving to Austin from California", excerpt: "Everything California residents need to know about relocating, taxes, neighborhoods, and lifestyle.", category: "Relocation" },
   { to: "/blog/austin-property-taxes-explained", title: "Austin Property Taxes Explained", excerpt: "Rates, exemptions, protest strategies, and how property taxes affect luxury real estate decisions.", category: "Market Insights" },
 ];
 
@@ -1052,7 +1052,7 @@ const InsightsSection = () => (
 );
 
 /* ─────────────────────────────────────────────
-   SECTION 8 — LEAD CAPTURE
+   SECTION 8, LEAD CAPTURE
    ───────────────────────────────────────────── */
 
 const LeadCapture = () => {
@@ -1139,7 +1139,7 @@ const LeadCapture = () => {
 };
 
 /* ─────────────────────────────────────────────
-   SECTION 9 — FINAL CTA
+   SECTION 9, FINAL CTA
    ───────────────────────────────────────────── */
 
 const linkGroups = [
@@ -1283,7 +1283,7 @@ const FinalCTA = () => (
 );
 
 /* ─────────────────────────────────────────────
-   SECTION 9B — EDITORIAL INSIGHTS
+   SECTION 9B, EDITORIAL INSIGHTS
    ───────────────────────────────────────────── */
 
 const editorialArticles = [
@@ -1301,7 +1301,7 @@ const editorialArticles = [
   },
   {
     title: "Lake Austin vs Lake Travis",
-    description: "Waterfront lifestyles compared — proximity, pricing, and daily experience.",
+    description: "Waterfront lifestyles compared, proximity, pricing, and daily experience.",
     image: blogLakeAustinVsLakeTravis,
     href: "/blog/lake-austin-vs-lake-travis",
   },
@@ -1364,7 +1364,7 @@ const EditorialInsights = () => (
               }}
             >
               Field notes, neighborhood comparisons, and considered analysis from the
-              upper end of Austin's market — written for buyers and sellers who expect
+              upper end of Austin's market, written for buyers and sellers who expect
               more than headlines.
             </p>
           </ScrollReveal>
@@ -1391,11 +1391,11 @@ const EditorialInsights = () => (
                   <span aria-hidden="true" className="flex-1 h-px bg-[#b9a06c]/40" />
                 </div>
 
-                {/* Image — taller, more editorial proportion with gentle zoom */}
+                {/* Image, taller, more editorial proportion with gentle zoom */}
                 <div className="aspect-[4/5] overflow-hidden mb-6">
                   <img
                     src={article.image}
-                    alt={`${article.title} — Austin luxury real estate`}
+                    alt={`${article.title}, Austin luxury real estate`}
                     className="w-full h-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.04]"
                     loading="lazy"
                     decoding="async"
@@ -1439,7 +1439,7 @@ const EditorialInsights = () => (
                   {article.description}
                 </p>
 
-                {/* Read affordance — animated underline */}
+                {/* Read affordance, animated underline */}
                 <span
                   className="inline-flex items-center gap-2 text-gold"
                   style={{

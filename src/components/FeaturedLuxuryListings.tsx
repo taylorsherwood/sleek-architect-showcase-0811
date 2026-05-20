@@ -100,7 +100,7 @@ const ListingCardOverlay = ({
     <div className={`relative overflow-hidden rounded-md ${aspect} ${className}`}>
       <img
         src={listing.image}
-        alt={`${listing.address} — ${listing.neighborhood}, Austin TX`}
+        alt={`${listing.address}, ${listing.neighborhood}, Austin TX`}
         className="w-full h-full object-cover transition-transform duration-700 ease-out hover:scale-[1.06] group-hover:scale-[1.06]"
         loading="lazy"
         decoding="async"
@@ -211,7 +211,7 @@ const FeaturedLuxuryListings = () => {
             <ListingCardOverlay listing={listings[6]} aspect="aspect-[3/4] sm:aspect-[4/3]" />
           </div>
 
-          {/* Off-market CTA — subtle, editorial */}
+          {/* Off-market CTA, subtle, editorial */}
           <div className="mt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
             <p className="text-muted-foreground/60 text-[13px] font-light leading-relaxed">
               Looking for something more discreet? We also advise clients on private and off-market

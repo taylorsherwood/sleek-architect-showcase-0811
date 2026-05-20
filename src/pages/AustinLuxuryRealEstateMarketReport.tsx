@@ -20,7 +20,7 @@ const AustinLuxuryRealEstateMarketReport = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Austin Luxury Market Report"
-        description="Austin luxury real estate market report — pricing trends, inventory data, neighborhood performance, and 2026 investment outlook."
+        description="Austin luxury real estate market report, pricing trends, inventory data, neighborhood performance, and 2026 investment outlook."
         canonical="/austin-luxury-real-estate-market-report"
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
@@ -38,12 +38,12 @@ const AustinLuxuryRealEstateMarketReport = () => {
       <section className="pt-32 pb-16">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <p className="text-minimal text-gold mb-4">MARKET REPORT — 2026</p>
+            <p className="text-minimal text-gold mb-4">MARKET REPORT, 2026</p>
             <h1 className="text-3xl sm:text-5xl md:text-7xl font-display font-normal text-architectural mb-8">
               Austin Luxury Real Estate Market Report
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              A comprehensive analysis of Austin's luxury housing market — covering pricing trends, 
+              A comprehensive analysis of Austin's luxury housing market, covering pricing trends, 
               inventory dynamics, buyer demand, top-performing neighborhoods, and the investment 
               outlook for high-net-worth buyers, sellers, and investors.
             </p>
@@ -67,10 +67,10 @@ const AustinLuxuryRealEstateMarketReport = () => {
                 Austin has established itself as one of America's most dynamic luxury real estate markets. The convergence of technology-sector expansion, favorable tax policy, natural beauty, and cultural vibrancy has transformed Austin from a regional capital into a destination that attracts wealth from across the country and around the world.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                The luxury segment — generally defined as properties above $1.5 million — represents a growing share of overall market activity. Demand is anchored by technology executives, entrepreneurs, and relocating professionals from higher-cost metros like San Francisco, Los Angeles, New York, and Seattle. These buyers bring significant equity and sophisticated expectations, elevating the quality and competitiveness of Austin's premium housing stock.
+                The luxury segment, generally defined as properties above $1.5 million, represents a growing share of overall market activity. Demand is anchored by technology executives, entrepreneurs, and relocating professionals from higher-cost metros like San Francisco, Los Angeles, New York, and Seattle. These buyers bring significant equity and sophisticated expectations, elevating the quality and competitiveness of Austin's premium housing stock.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Following the extraordinary appreciation of 2020–2022, the market has normalized into a more sustainable growth pattern. Prices in the most desirable neighborhoods have stabilized at elevated levels, and well-positioned properties continue to transact efficiently. The current environment rewards strategic positioning — whether buying, selling, or investing.
+                Following the extraordinary appreciation of 2020–2022, the market has normalized into a more sustainable growth pattern. Prices in the most desirable neighborhoods have stabilized at elevated levels, and well-positioned properties continue to transact efficiently. The current environment rewards strategic positioning, whether buying, selling, or investing.
               </p>
             </section>
 
@@ -105,7 +105,7 @@ const AustinLuxuryRealEstateMarketReport = () => {
                 </div>
               </div>
               <p className="text-muted-foreground leading-relaxed">
-                Price per square foot in premium neighborhoods ranges from $450 to $800+, with new construction in <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">West lake Hills</Link> and <Link to="/communities/barton-creek" className="text-foreground underline hover:text-muted-foreground">Barton Creek</Link> commanding the highest premiums. Waterfront properties on <Link to="/communities/lake-austin" className="text-foreground underline hover:text-muted-foreground">Lake Austin</Link> consistently achieve price points that rival coastal luxury markets. The <Link to="/communities/lake-travis" className="text-foreground underline hover:text-muted-foreground">Lake Travis corridor</Link> — including <Link to="/communities/lakeway" className="text-foreground underline hover:text-muted-foreground">Lakeway</Link> and <Link to="/communities/steiner-ranch" className="text-foreground underline hover:text-muted-foreground">Steiner Ranch</Link> — offers waterfront living at more accessible price points while still commanding strong premiums.
+                Price per square foot in premium neighborhoods ranges from $450 to $800+, with new construction in <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">West lake Hills</Link> and <Link to="/communities/barton-creek" className="text-foreground underline hover:text-muted-foreground">Barton Creek</Link> commanding the highest premiums. Waterfront properties on <Link to="/communities/lake-austin" className="text-foreground underline hover:text-muted-foreground">Lake Austin</Link> consistently achieve price points that rival coastal luxury markets. The <Link to="/communities/lake-travis" className="text-foreground underline hover:text-muted-foreground">Lake Travis corridor</Link>, including <Link to="/communities/lakeway" className="text-foreground underline hover:text-muted-foreground">Lakeway</Link> and <Link to="/communities/steiner-ranch" className="text-foreground underline hover:text-muted-foreground">Steiner Ranch</Link>, offers waterfront living at more accessible price points while still commanding strong premiums.
               </p>
             </section>
 
@@ -115,13 +115,13 @@ const AustinLuxuryRealEstateMarketReport = () => {
                 Inventory and Demand Dynamics
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Inventory remains the defining constraint of Austin's luxury market. In the most sought-after neighborhoods, available homes represent less than three months of supply — firmly in seller's territory. This scarcity is structural rather than cyclical: these neighborhoods are largely built out, and new inventory can only come from resale or occasional teardown-rebuilds.
+                Inventory remains the defining constraint of Austin's luxury market. In the most sought-after neighborhoods, available homes represent less than three months of supply, firmly in seller's territory. This scarcity is structural rather than cyclical: these neighborhoods are largely built out, and new inventory can only come from resale or occasional teardown-rebuilds.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 Demand continues to be driven by three primary buyer segments: technology executives and entrepreneurs anchored by Austin's growing corporate presence; out-of-state relocators attracted by lifestyle and tax advantages; and investors seeking long-term appreciation in supply-constrained markets.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                The <Link to="/off-market-real-estate-austin" className="text-foreground underline hover:text-muted-foreground">off-market segment</Link> has grown meaningfully as a result of tight inventory. An increasing share of luxury transactions — particularly above $3 million — occur through private networks and broker-to-broker channels rather than public MLS listings. Access to these opportunities requires working with an agent deeply embedded in Austin's luxury community.
+                The <Link to="/off-market-real-estate-austin" className="text-foreground underline hover:text-muted-foreground">off-market segment</Link> has grown meaningfully as a result of tight inventory. An increasing share of luxury transactions, particularly above $3 million, occur through private networks and broker-to-broker channels rather than public MLS listings. Access to these opportunities requires working with an agent deeply embedded in Austin's luxury community.
               </p>
             </section>
 
@@ -225,12 +225,12 @@ const AustinLuxuryRealEstateMarketReport = () => {
 
               <h3 className="text-xl font-display font-medium mb-3">For Buyers</h3>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                The current market offers a window to acquire luxury properties at price points below the pandemic-era peaks while still capturing Austin's long-term growth trajectory. Buyers who act decisively in supply-constrained neighborhoods — particularly <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">West lake Hills</Link> and <Link to="/communities/lake-austin" className="text-foreground underline hover:text-muted-foreground">Lake Austin</Link> — position themselves ahead of the next appreciation cycle. For those <Link to="/moving-to-austin-texas" className="text-foreground underline hover:text-muted-foreground">relocating to Austin</Link>, working with a local specialist is essential for navigating neighborhood nuances and accessing off-market inventory.
+                The current market offers a window to acquire luxury properties at price points below the pandemic-era peaks while still capturing Austin's long-term growth trajectory. Buyers who act decisively in supply-constrained neighborhoods, particularly <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">West lake Hills</Link> and <Link to="/communities/lake-austin" className="text-foreground underline hover:text-muted-foreground">Lake Austin</Link>, position themselves ahead of the next appreciation cycle. For those <Link to="/moving-to-austin-texas" className="text-foreground underline hover:text-muted-foreground">relocating to Austin</Link>, working with a local specialist is essential for navigating neighborhood nuances and accessing off-market inventory.
               </p>
 
               <h3 className="text-xl font-display font-medium mb-3">For Sellers</h3>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Strategic pricing and premium marketing are critical in a more discerning buyer market. Well-positioned properties in top neighborhoods still achieve strong outcomes — especially when presented with professional staging, compelling photography, and targeted marketing to qualified buyer networks. Echelon Property Group's approach combines <Link to="/sell" className="text-foreground underline hover:text-muted-foreground">strategic advisory</Link> with access to global luxury channels to maximize seller outcomes.
+                Strategic pricing and premium marketing are critical in a more discerning buyer market. Well-positioned properties in top neighborhoods still achieve strong outcomes, especially when presented with professional staging, compelling photography, and targeted marketing to qualified buyer networks. Echelon Property Group's approach combines <Link to="/sell" className="text-foreground underline hover:text-muted-foreground">strategic advisory</Link> with access to global luxury channels to maximize seller outcomes.
               </p>
 
               <h3 className="text-xl font-display font-medium mb-3">For Investors</h3>

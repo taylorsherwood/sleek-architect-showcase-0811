@@ -185,7 +185,7 @@ const AdminDashboard = () => {
             </div>
           )}
 
-          {/* All Site Leads — every form submission site-wide */}
+          {/* All Site Leads, every form submission site-wide */}
           {!loadingData && (
             <section className="mt-16">
               <div className="flex items-baseline justify-between mb-6">

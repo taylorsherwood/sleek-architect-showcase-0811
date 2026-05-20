@@ -29,7 +29,7 @@ const ExitIntentModal = () => {
     location.pathname.toLowerCase().startsWith(p)
   );
 
-  // Has the user already seen / dismissed / submitted? — once-ever per browser
+  // Has the user already seen / dismissed / submitted?, once-ever per browser
   const alreadyShown = (): boolean => {
     if (typeof window === "undefined") return true;
     try {
@@ -66,14 +66,14 @@ const ExitIntentModal = () => {
       setOpen(true);
     };
 
-    // Desktop — exit intent (cursor leaves through the top of the viewport)
+    // Desktop, exit intent (cursor leaves through the top of the viewport)
     const onMouseOut = (e: MouseEvent) => {
       if (e.relatedTarget) return; // moved to another element, not out of window
       if (e.clientY > 0) return; // only top edge
       triggerOpen();
     };
 
-    // Mobile — fast scroll-up near the top of the page (equivalent of exit intent)
+    // Mobile, fast scroll-up near the top of the page (equivalent of exit intent)
     const onScroll = () => {
       const y = window.scrollY;
       const last = lastScrollYRef.current;
@@ -128,7 +128,7 @@ const ExitIntentModal = () => {
       email: email.trim(),
       phone: phoneDigits,
       message: "Requested early access to private listings via exit-intent modal.",
-      source: "Exit Intent — LUXURY LISTINGs",
+      source: "Exit Intent, LUXURY LISTINGs",
     });
     if (res.ok) {
       setSubmitted(true);
@@ -225,7 +225,7 @@ const ExitIntentModal = () => {
                 maxWidth: "340px",
               }}
             >
-              Receive Echelon&rsquo;s curated off-market opportunities — quietly, before they reach MLS or Zillow.
+              Receive Echelon&rsquo;s curated off-market opportunities, quietly, before they reach MLS or Zillow.
             </p>
 
             <form onSubmit={handleSubmit} className="space-y-3">

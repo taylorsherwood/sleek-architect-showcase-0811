@@ -39,7 +39,7 @@ const AustinLuxuryHomes = () => {
               Austin Luxury Homes for Sale
             </h1>
             <p className="text-base sm:text-xl text-muted-foreground leading-relaxed">
-              Discover Austin's finest luxury properties — from lakefront estates and hilltop mansions 
+              Discover Austin's finest luxury properties, from lakefront estates and hilltop mansions 
               to gated golf communities and Hill Country ranches. Echelon Property Group is your 
               trusted guide to Austin luxury real estate.
             </p>
@@ -65,7 +65,7 @@ const AustinLuxuryHomes = () => {
                 The Austin luxury market spans an extraordinary range of property types and lifestyles. Buyers can choose from waterfront estates with private docks on <Link to="/communities/lake-austin" className="text-foreground underline hover:text-muted-foreground">Lake Austin</Link>, architecturally significant hilltop mansions in <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">West lake Hills</Link>, gated golf community homes in <Link to="/communities/barton-creek" className="text-foreground underline hover:text-muted-foreground">Barton Creek</Link>, charming walkable estates in <Link to="/communities/tarrytown" className="text-foreground underline hover:text-muted-foreground">Tarrytown</Link>, sleek high-rise penthouses in <Link to="/communities/downtown-austin-condos" className="text-foreground underline hover:text-muted-foreground">Downtown Austin</Link>, and expansive ranch properties in the <Link to="/communities/texas-hill-country-estates" className="text-foreground underline hover:text-muted-foreground">Texas Hill Country</Link>.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                What sets Austin apart from other luxury markets is the combination of exceptional value relative to coastal cities, a thriving and diversified economy, and a quality of life that balances urban sophistication with natural beauty. Buyers relocating from San Francisco, Los Angeles, New York, and other high-cost markets consistently find that Austin delivers more space, better amenities, and a lower overall cost of living — all without sacrificing career opportunity or cultural richness.
+                What sets Austin apart from other luxury markets is the combination of exceptional value relative to coastal cities, a thriving and diversified economy, and a quality of life that balances urban sophistication with natural beauty. Buyers relocating from San Francisco, Los Angeles, New York, and other high-cost markets consistently find that Austin delivers more space, better amenities, and a lower overall cost of living, all without sacrificing career opportunity or cultural richness.
               </p>
             </section>
 
@@ -79,7 +79,7 @@ const AustinLuxuryHomes = () => {
                 <div>
                   <h3 className="text-xl font-display font-medium mb-3">Waterfront Estates</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    <Link to="/communities/lake-austin" className="text-foreground underline hover:text-muted-foreground">Lake Austin waterfront</Link> homes represent the pinnacle of Austin luxury real estate. These properties feature private docks, infinity-edge pools, panoramic water views, and resort-style outdoor living. Lake Austin's constant water level — unlike the fluctuating Lake Travis — makes it ideal for year-round boating and waterfront enjoyment. Prices range from $2 million to over $25 million, with extreme scarcity ensuring strong long-term appreciation.
+                    <Link to="/communities/lake-austin" className="text-foreground underline hover:text-muted-foreground">Lake Austin waterfront</Link> homes represent the pinnacle of Austin luxury real estate. These properties feature private docks, infinity-edge pools, panoramic water views, and resort-style outdoor living. Lake Austin's constant water level, unlike the fluctuating Lake Travis, makes it ideal for year-round boating and waterfront enjoyment. Prices range from $2 million to over $25 million, with extreme scarcity ensuring strong long-term appreciation.
                   </p>
                 </div>
 
@@ -114,7 +114,7 @@ const AustinLuxuryHomes = () => {
                 <div>
                   <h3 className="text-xl font-display font-medium mb-3">Ranch and Hill Country Estates</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    The <Link to="/communities/texas-hill-country-estates" className="text-foreground underline hover:text-muted-foreground">Texas Hill Country</Link> and <Link to="/communities/dripping-springs" className="text-foreground underline hover:text-muted-foreground">Dripping Springs</Link> offer luxury on a grand scale — sprawling ranch estates, vineyard properties, and custom homes set among rolling hills, ancient live oaks, and wildflower meadows. Properties range from boutique estates on 10 to 50 acres to working ranches spanning thousands of acres, with prices from $1 million to over $30 million.
+                    The <Link to="/communities/texas-hill-country-estates" className="text-foreground underline hover:text-muted-foreground">Texas Hill Country</Link> and <Link to="/communities/dripping-springs" className="text-foreground underline hover:text-muted-foreground">Dripping Springs</Link> offer luxury on a grand scale, sprawling ranch estates, vineyard properties, and custom homes set among rolling hills, ancient live oaks, and wildflower meadows. Properties range from boutique estates on 10 to 50 acres to working ranches spanning thousands of acres, with prices from $1 million to over $30 million.
                   </p>
                 </div>
 
@@ -155,7 +155,7 @@ const AustinLuxuryHomes = () => {
                 Why Work with Echelon Property Group
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Navigating Austin's luxury real estate market requires more than access to listings — it demands deep neighborhood knowledge, established relationships, strategic negotiation skills, and an understanding of the nuances that distinguish exceptional properties from ordinary ones. Echelon Property Group brings all of this to every client engagement.
+                Navigating Austin's luxury real estate market requires more than access to listings, it demands deep neighborhood knowledge, established relationships, strategic negotiation skills, and an understanding of the nuances that distinguish exceptional properties from ordinary ones. Echelon Property Group brings all of this to every client engagement.
               </p>
               <div className="space-y-6">
                 <div className="border-l-2 border-gold pl-6">
@@ -167,7 +167,7 @@ const AustinLuxuryHomes = () => {
                 <div className="border-l-2 border-gold pl-6">
                   <h3 className="text-lg font-medium text-foreground mb-2">Hyper-Local Expertise</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    We don't just sell homes in Austin's luxury neighborhoods — we live in them. Our deep, street-level knowledge of communities from West lake Hills to the Hill Country allows us to provide insights that data alone cannot capture.
+                    We don't just sell homes in Austin's luxury neighborhoods, we live in them. Our deep, street-level knowledge of communities from West lake Hills to the Hill Country allows us to provide insights that data alone cannot capture.
                   </p>
                 </div>
                 <div className="border-l-2 border-gold pl-6">

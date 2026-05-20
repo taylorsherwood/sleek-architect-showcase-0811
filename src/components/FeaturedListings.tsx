@@ -54,7 +54,7 @@ const ListingCard = ({
           <img
             src="/static-assets/echelon-logo-gold-square.webp"
             alt="Echelon Property Group"
-            title="Echelon Property Group — View exclusive listings"
+            title="Echelon Property Group, View exclusive listings"
             className="w-1/2 h-auto object-contain transition-transform duration-700 ease-out group-hover:scale-[1.04]"
             loading="lazy"
             decoding="async" />
@@ -93,7 +93,7 @@ const ListingCard = ({
         <img
           src={listing.image}
           alt={listing.address}
-          title={`${listing.address} — ${listing.price}`}
+          title={`${listing.address}, ${listing.price}`}
           className="w-full aspect-[4/3] object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
           loading="lazy"
           decoding="async" />
@@ -267,7 +267,7 @@ const FeaturedListings = ({ hideRealScout = false }: FeaturedListingsProps) => {
                 </h2>
                 <p className="text-muted-foreground/70 mt-5 max-w-xl text-[15px] font-light leading-relaxed">
                   Browse current listings across Austin's most desirable
-                  neighborhoods — residential, commercial, and land.
+                  neighborhoods, residential, commercial, and land.
                 </p>
               </div>
               <div ref={widgetRef} className="w-full" />

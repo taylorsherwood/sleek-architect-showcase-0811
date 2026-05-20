@@ -129,7 +129,7 @@ const AustinMultifamilyReport2026 = () => {
     }
     setIsSubmitting(true);
 
-    const message = `2026 Multifamily Report download${formData.investmentFocus ? ` — Investment focus: ${formData.investmentFocus}` : ""}`;
+    const message = `2026 Multifamily Report download${formData.investmentFocus ? `, Investment focus: ${formData.investmentFocus}` : ""}`;
 
     const res = await submitLeadToZapier({
       name: `${formData.firstName} ${formData.lastName}`.trim(),
@@ -207,12 +207,12 @@ const AustinMultifamilyReport2026 = () => {
                 </Button>
               </div>
             </div>
-            {/* report mockup — desktop */}
+            {/* report mockup, desktop */}
             <div className="hidden md:flex flex-shrink-0 justify-center -ml-8 lg:-ml-10">
               <img
                 src={reportCover}
                 alt="Austin Multifamily Market Outlook 2026 report cover"
-                title="Austin Multifamily Market Outlook 2026 — Echelon Property Group"
+                title="Austin Multifamily Market Outlook 2026, Echelon Property Group"
                 className="w-80 lg:w-[28rem] drop-shadow-2xl rotate-[8deg]"
                 loading="eager"
               />

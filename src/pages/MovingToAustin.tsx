@@ -61,10 +61,10 @@ const MovingToAustin = () => {
                 Why Austin Is Attracting America's Top Talent
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Austin, Texas has emerged as one of the most desirable relocation destinations in the United States. The city's unique combination of a booming technology economy, no state income tax, world-class dining and entertainment, year-round outdoor lifestyle, and exceptional quality of life has made it a magnet for professionals, entrepreneurs, and families from across the country—particularly from high-cost, high-tax states like California, New York, and Illinois.
+                Austin, Texas has emerged as one of the most desirable relocation destinations in the United States. The city's unique combination of a booming technology economy, no state income tax, world-class dining and entertainment, year-round outdoor lifestyle, and exceptional quality of life has made it a magnet for professionals, entrepreneurs, and families from across the country, particularly from high-cost, high-tax states like California, New York, and Illinois.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                The numbers tell a compelling story. Austin has consistently ranked among the fastest-growing large cities in America, with the metropolitan area adding tens of thousands of new residents annually. This growth is driven not by affordability alone—though Austin offers remarkable value compared to coastal markets—but by a genuine quality of life that combines career opportunity, cultural richness, natural beauty, and community warmth in a way that few American cities can match.
+                The numbers tell a compelling story. Austin has consistently ranked among the fastest-growing large cities in America, with the metropolitan area adding tens of thousands of new residents annually. This growth is driven not by affordability alone, though Austin offers remarkable value compared to coastal markets, but by a genuine quality of life that combines career opportunity, cultural richness, natural beauty, and community warmth in a way that few American cities can match.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 For luxury homebuyers considering a move to Austin, understanding the city's neighborhoods, schools, tax implications, and lifestyle is essential to making the right decision. This guide provides the comprehensive information you need to plan a successful relocation.
@@ -220,7 +220,7 @@ const MovingToAustin = () => {
                 Austin's Lifestyle and Culture
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Austin's lifestyle is genuinely unique among American cities. The city's unofficial motto—"Keep Austin Weird"—reflects a culture that values individuality, creativity, and authenticity. For luxury homebuyers, this translates into a community that is welcoming to newcomers, engaged in civic life, and deeply connected to the natural environment.
+                Austin's lifestyle is genuinely unique among American cities. The city's unofficial motto, "Keep Austin Weird", reflects a culture that values individuality, creativity, and authenticity. For luxury homebuyers, this translates into a community that is welcoming to newcomers, engaged in civic life, and deeply connected to the natural environment.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 Outdoor recreation is central to Austin living. Lady Bird Lake, Lake Austin, Barton Springs Pool, the Barton Creek Greenbelt, and Zilker Park provide year-round opportunities for swimming, boating, hiking, biking, and paddleboarding. The Hill Country's proximity adds hunting, horseback riding, and wine country experiences within a short drive.

@@ -65,7 +65,7 @@ const Blog = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Blog | Echelon Property Group"
-        description="Austin luxury real estate blog — market trends, neighborhood guides, investment insights, and expert analysis from Echelon Property Group."
+        description="Austin luxury real estate blog, market trends, neighborhood guides, investment insights, and expert analysis from Echelon Property Group."
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup
@@ -93,7 +93,7 @@ const Blog = () => {
           loading="eager"
           decoding="async"
         />
-        {/* Soft warm cinematic grade — no muddy blue overlay */}
+        {/* Soft warm cinematic grade, no muddy blue overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-[#1a1410]/55" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#0C0F24]/40 via-transparent to-transparent" />
         <div className="absolute inset-0 bg-[#0C0F24]/20" />
@@ -145,7 +145,7 @@ const Blog = () => {
         </div>
       </section>
 
-      {/* ── Featured Insight — placed below hero with breathing room ── */}
+      {/* ── Featured Insight, placed below hero with breathing room ── */}
       {featured && (
         <section className="pt-20 md:pt-32 pb-20 md:pb-28">
           <div className="container mx-auto px-6">
@@ -357,7 +357,7 @@ const Blog = () => {
               Stay Informed
             </h2>
             <p className="text-base md:text-lg text-muted-foreground mb-10 leading-relaxed">
-              A quiet, occasional dispatch on Austin's luxury market — market shifts, off-market opportunities, and neighborhood intelligence.
+              A quiet, occasional dispatch on Austin's luxury market, market shifts, off-market opportunities, and neighborhood intelligence.
             </p>
             <a
               href="https://taylorsherwood.myflodesk.com/biolink"

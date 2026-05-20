@@ -10,7 +10,7 @@ import RelatedInsights from "@/components/RelatedInsights";
 
 const faqs = [
   { question: "What defines luxury real estate in Austin?", answer: "Luxury real estate in Austin generally begins at $1 million for single-family homes. The core luxury market spans $1.5M to $5M, while ultra-luxury encompasses properties above $5M. Lake Austin waterfront, West lake Hills, and Barton Creek represent the highest tier, with properties exceeding $15–25M." },
-  { question: "Where are the best luxury homes in Austin?", answer: "Austin's premier luxury neighborhoods include West lake Hills, Barton Creek, Lake Austin waterfront, Tarrytown, Rollingwood, Spanish Oaks, and the Texas Hill Country. Each offers a distinct lifestyle — from gated golf estates to waterfront properties to sprawling ranch compounds." },
+  { question: "Where are the best luxury homes in Austin?", answer: "Austin's premier luxury neighborhoods include West lake Hills, Barton Creek, Lake Austin waterfront, Tarrytown, Rollingwood, Spanish Oaks, and the Texas Hill Country. Each offers a distinct lifestyle, from gated golf estates to waterfront properties to sprawling ranch compounds." },
   { question: "Is Austin luxury real estate a good investment?", answer: "Yes. Austin's luxury market benefits from tech-economy growth, no state income tax, sustained in-migration, and limited premium inventory. Neighborhoods like West lake Hills and Lake Austin have demonstrated 7–12% annual appreciation over the past decade." },
   { question: "How do I find off-market luxury homes in Austin?", answer: "Access to off-market listings requires working with an agent embedded in Austin's luxury network. Echelon Property Group provides qualified buyers with access to private and whisper listings across Austin's most prestigious neighborhoods." },
   { question: "What neighborhoods in Austin have skyline views?", answer: "Travis Heights offers the most iconic downtown skyline views. West lake Hills provides sweeping Hill Country vistas. Downtown Austin high-rises deliver panoramic skyline and Lady Bird Lake views from upper floors." },
@@ -54,7 +54,7 @@ const LuxuryRealEstateAustin = () => {
                 Why Austin Is a Premier Luxury Real Estate Market
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Austin, Texas has transformed from a mid-size state capital into a global technology hub, fundamentally reshaping its residential real estate landscape. The city's luxury market now rivals established coastal destinations in terms of price points, buyer sophistication, and transaction complexity — while offering dramatically better value.
+                Austin, Texas has transformed from a mid-size state capital into a global technology hub, fundamentally reshaping its residential real estate landscape. The city's luxury market now rivals established coastal destinations in terms of price points, buyer sophistication, and transaction complexity, while offering dramatically better value.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 Several factors drive Austin's luxury market: a world-class technology economy anchored by Apple, Tesla, Google, Meta, Oracle, and Samsung; Texas's absence of state income tax, which provides significant savings for high-income earners; sustained in-migration from California, New York, and other high-cost markets; and an exceptional quality of life combining urban culture with natural beauty.
@@ -74,7 +74,7 @@ const LuxuryRealEstateAustin = () => {
               <div className="space-y-6">
                 <div className="border-l-2 border-gold pl-6">
                   <h3 className="text-xl font-display font-medium mb-2">
-                    <Link to="/communities/westlake-hills" className="hover:text-muted-foreground transition-colors">West lake Hills</Link> — $1.2M to $20M+
+                    <Link to="/communities/westlake-hills" className="hover:text-muted-foreground transition-colors">West lake Hills</Link>, $1.2M to $20M+
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
                     Austin's most prestigious address. Panoramic Hill Country views, Eanes ISD schools, and estate homes on generous lots. Popular with tech executives, families, and buyers seeking prestige and privacy.
@@ -82,7 +82,7 @@ const LuxuryRealEstateAustin = () => {
                 </div>
                 <div className="border-l-2 border-gold pl-6">
                   <h3 className="text-xl font-display font-medium mb-2">
-                    <Link to="/communities/barton-creek" className="hover:text-muted-foreground transition-colors">Barton Creek</Link> — $1.5M to $15M+
+                    <Link to="/communities/barton-creek" className="hover:text-muted-foreground transition-colors">Barton Creek</Link>, $1.5M to $15M+
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
                     Premier gated community with four championship golf courses, country club amenities, and access to the Barton Creek Greenbelt. Approaching build-out, which increases the premium on existing homes.
@@ -90,7 +90,7 @@ const LuxuryRealEstateAustin = () => {
                 </div>
                 <div className="border-l-2 border-gold pl-6">
                   <h3 className="text-xl font-display font-medium mb-2">
-                    <Link to="/communities/lake-austin" className="hover:text-muted-foreground transition-colors">Lake Austin Waterfront</Link> — $2M to $25M+
+                    <Link to="/communities/lake-austin" className="hover:text-muted-foreground transition-colors">Lake Austin Waterfront</Link>, $2M to $25M+
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
                     The pinnacle of Austin luxury. Constant-level lake, private docks, and extreme scarcity create the strongest appreciation profile in the metro. Many transactions occur off-market.
@@ -98,7 +98,7 @@ const LuxuryRealEstateAustin = () => {
                 </div>
                 <div className="border-l-2 border-gold pl-6">
                   <h3 className="text-xl font-display font-medium mb-2">
-                    <Link to="/communities/tarrytown" className="hover:text-muted-foreground transition-colors">Tarrytown</Link> — $800K to $8M+
+                    <Link to="/communities/tarrytown" className="hover:text-muted-foreground transition-colors">Tarrytown</Link>, $800K to $8M+
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
                     Austin's most walkable luxury neighborhood. Tree-lined streets, eclectic architecture, and proximity to downtown, Lady Bird Lake, and Deep Eddy Pool.
@@ -106,7 +106,7 @@ const LuxuryRealEstateAustin = () => {
                 </div>
                 <div className="border-l-2 border-gold pl-6">
                   <h3 className="text-xl font-display font-medium mb-2">
-                    <Link to="/communities/spanish-oaks" className="hover:text-muted-foreground transition-colors">Spanish Oaks</Link> — $1.5M to $10M+
+                    <Link to="/communities/spanish-oaks" className="hover:text-muted-foreground transition-colors">Spanish Oaks</Link>, $1.5M to $10M+
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
                     Exclusive gated community in Bee Cave featuring a private Bobby Weed-designed golf course, resort amenities, and custom estates on 1–5+ acre lots surrounded by Hill Country landscape.
@@ -114,7 +114,7 @@ const LuxuryRealEstateAustin = () => {
                 </div>
                 <div className="border-l-2 border-gold pl-6">
                   <h3 className="text-xl font-display font-medium mb-2">
-                    <Link to="/communities/texas-hill-country-estates" className="hover:text-muted-foreground transition-colors">Texas Hill Country</Link> — $1M to $30M+
+                    <Link to="/communities/texas-hill-country-estates" className="hover:text-muted-foreground transition-colors">Texas Hill Country</Link>, $1M to $30M+
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
                     Ranch estates, vineyard properties, and luxury retreats on expansive acreage. Remote-work flexibility has accelerated demand for Hill Country properties with space and privacy.

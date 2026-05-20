@@ -25,7 +25,7 @@ const RealScoutListings = lazy(() => import("@/components/RealScoutListings"));
 
 const SITE_URL = "https://www.echelonpropertygroup.com";
 
-// Public teaser columns — these are the only `communities` columns granted to
+// Public teaser columns, these are the only `communities` columns granted to
 // anon. Gated columns (full_overview, demographics, market_stats, schools,
 // transit, our_take, local_highlights) come from the get-community-report
 // edge function after server-side verification.
@@ -247,7 +247,7 @@ const CommunityReportPage = () => {
             headline={community.gate_headline || `Unlock the full ${community.name} report`}
             subheadline={
               community.gate_subheadline ||
-              "Market trends, schools, demographics, and current listings — delivered instantly."
+              "Market trends, schools, demographics, and current listings, delivered instantly."
             }
             thankYouMessage={community.thank_you_message || ""}
             onUnlock={() => setUnlockedState(true)}
@@ -276,7 +276,7 @@ const CommunityReportPage = () => {
                     </div>
                   ) : (
                     <p className="text-muted-foreground/60 italic leading-relaxed">
-                      Overview content for {community.name} — populate via admin to replace this placeholder.
+                      Overview content for {community.name}, populate via admin to replace this placeholder.
                     </p>
                   )}
                 </section>

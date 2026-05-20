@@ -118,7 +118,7 @@ The buyer profile includes:
 Luxury rentals command $8,000 to $25,000 per month, making West lake Hills attractive for investors targeting high-net-worth tenants.`,
     amenitiesAndSchools: `### Eanes ISD Schools
 
-Key schools include Bridge Point Elementary, Hill Country Middle School, and Westlake High School — a perennial state powerhouse that consistently earns National Blue Ribbon recognition.
+Key schools include Bridge Point Elementary, Hill Country Middle School, and Westlake High School, a perennial state powerhouse that consistently earns National Blue Ribbon recognition.
 
 ### Private School Options
 
@@ -158,7 +158,7 @@ The area's strict development standards ensure that quality investments are prot
     echelonPerspective: `West lake Hills remains one of the most consistent luxury markets in Austin, Texas. Buyers are drawn to the combination of Eanes ISD schools, hilltop privacy, and a 10-minute commute to downtown. The housing stock ranges from refined mid-century estates on half-acre lots to contemporary builds exceeding $500 per square foot. Typical buyers include tech executives relocating from the Bay Area, established Austin families upgrading within the Eanes district, and investors drawn to the area's steady 7–10% annual appreciation. For those considering alternatives, [Barton Creek](/communities/barton-creek) offers country club living with gated security, while [Tarrytown](/communities/tarrytown) provides a more walkable, urban-adjacent lifestyle at a lower entry price. West lake Hills continues to command a premium for its blend of serenity, access, and school quality.`,
     communityComparison: `### West lake Hills vs Barton Creek
 
-[Barton Creek](/communities/barton-creek) shares Eanes ISD zoning and a Hill Country setting, but offers a fundamentally different experience — gated country club living with four championship golf courses, 24/7 security, and a resort-caliber amenity set. West lake Hills, by contrast, is an independent incorporated city with more architectural diversity, no HOA gates, and a stronger sense of neighborhood autonomy. Barton Creek homes tend to start higher, while West lake Hills offers a broader range from $1.2M renovations to $20M+ new construction.
+[Barton Creek](/communities/barton-creek) shares Eanes ISD zoning and a Hill Country setting, but offers a fundamentally different experience, gated country club living with four championship golf courses, 24/7 security, and a resort-caliber amenity set. West lake Hills, by contrast, is an independent incorporated city with more architectural diversity, no HOA gates, and a stronger sense of neighborhood autonomy. Barton Creek homes tend to start higher, while West lake Hills offers a broader range from $1.2M renovations to $20M+ new construction.
 
 ### West lake Hills vs Tarrytown
 
@@ -166,7 +166,7 @@ The area's strict development standards ensure that quality investments are prot
 
 ### West lake Hills vs Pemberton Heights
 
-[Pemberton Heights](/communities/pemberton-heights) offers distinguished estates on generous lots just north of Lady Bird Lake — one of the most prestigious addresses in central Austin. West lake Hills provides a more suburban Hill Country setting with Eanes ISD, while Pemberton Heights sits in Austin ISD with a shorter walk to downtown dining and culture.`,
+[Pemberton Heights](/communities/pemberton-heights) offers distinguished estates on generous lots just north of Lady Bird Lake, one of the most prestigious addresses in central Austin. West lake Hills provides a more suburban Hill Country setting with Eanes ISD, while Pemberton Heights sits in Austin ISD with a shorter walk to downtown dining and culture.`,
     relatedCommunities: ["barton-creek", "lake-austin", "rollingwood", "tarrytown"],
     faqs: [
       { question: "What school district serves West lake Hills?", answer: "West lake Hills is served by the Eanes Independent School District, consistently ranked among the top districts in Texas. Schools include Bridge Point Elementary, Hill Country Middle School, and Westlake High School, which earns National Blue Ribbon recognition." },
@@ -271,14 +271,14 @@ The community is approaching build-out. The shrinking supply of available homesi
 ### Stable Demand
 
 The combination of country club amenities, top schools, and proximity to Austin's tech economy ensures ongoing demand from high-net-worth buyers. Properties in Barton Creek have demonstrated consistent value growth, even during periods of broader market softening.`,
-    echelonPerspective: `Barton Creek represents the gold standard of gated luxury living in Austin, Texas. Four championship golf courses, 24/7 security, and Eanes ISD schools create a resort-caliber experience that few communities nationwide can match. The housing stock spans Spanish Colonial estates on golf course fairways to sleek contemporary builds backing the Barton Creek Greenbelt. Buyers tend to be corporate executives, entrepreneurs, and high-net-worth families who value privacy, country club membership, and walkable greenbelt access. With the community approaching build-out, remaining homesites are increasingly rare — making resale values particularly resilient. For those who prefer a non-gated setting, [West lake Hills](/communities/westlake-hills) provides a similar school district and Hill Country character without country club HOA commitments. [Rob Roy](/communities/rob-roy) offers a smaller, more intimate gated experience nearby.`,
+    echelonPerspective: `Barton Creek represents the gold standard of gated luxury living in Austin, Texas. Four championship golf courses, 24/7 security, and Eanes ISD schools create a resort-caliber experience that few communities nationwide can match. The housing stock spans Spanish Colonial estates on golf course fairways to sleek contemporary builds backing the Barton Creek Greenbelt. Buyers tend to be corporate executives, entrepreneurs, and high-net-worth families who value privacy, country club membership, and walkable greenbelt access. With the community approaching build-out, remaining homesites are increasingly rare, making resale values particularly resilient. For those who prefer a non-gated setting, [West lake Hills](/communities/westlake-hills) provides a similar school district and Hill Country character without country club HOA commitments. [Rob Roy](/communities/rob-roy) offers a smaller, more intimate gated experience nearby.`,
     communityComparison: `### Barton Creek vs West lake Hills
 
 [West lake Hills](/communities/westlake-hills) shares Eanes ISD zoning and a scenic Hill Country setting, but diverges in character. Barton Creek is a gated, amenity-rich master-planned community with country club membership options, while West lake Hills is an independent city offering more architectural freedom and no gated entry. Barton Creek's entry point is higher, but its resort-caliber amenities and security infrastructure appeal to buyers who want a self-contained luxury lifestyle.
 
 ### Barton Creek vs Rob Roy
 
-[Rob Roy](/communities/rob-roy) is another premier gated community in the Eanes ISD corridor, offering a more intimate enclave feel with panoramic Hill Country views. Rob Roy lots tend to be larger, and the community has a more estate-oriented character. Barton Creek offers deeper amenities — four golf courses, a full-service spa, and multiple dining venues — making it the choice for buyers seeking country club living.
+[Rob Roy](/communities/rob-roy) is another premier gated community in the Eanes ISD corridor, offering a more intimate enclave feel with panoramic Hill Country views. Rob Roy lots tend to be larger, and the community has a more estate-oriented character. Barton Creek offers deeper amenities, four golf courses, a full-service spa, and multiple dining venues, making it the choice for buyers seeking country club living.
 
 ### Barton Creek vs Pemberton Heights
 
@@ -292,7 +292,7 @@ The combination of country club amenities, top schools, and proximity to Austin'
       { question: "How does Barton Creek compare to nearby neighborhoods?", answer: "Barton Creek offers gated country club living with four golf courses and resort amenities. West lake Hills provides a similar school district without gates. Rob Roy offers a smaller gated enclave with more panoramic views. Pemberton Heights trades seclusion for central Austin walkability." },
       { question: "What types of homes are common in Barton Creek?", answer: "Barton Creek features Spanish Colonial estates, Mediterranean villas, contemporary glass-and-stone builds, and traditional Hill Country residences. Many homes sit on golf course fairways or back to the Barton Creek Greenbelt with private trail access." },
       { question: "Who typically buys in Barton Creek?", answer: "Typical buyers include corporate executives, entrepreneurs, and high-net-worth families seeking privacy, country club amenities, and top-tier schools. Many are relocating from major metros and are drawn to the gated, resort-caliber lifestyle." },
-      { question: "What school district is Barton Creek in?", answer: "Barton Creek is served by the Eanes Independent School District, including Barton Creek Elementary, Hill Country Middle School, and Westlake High School—all consistently ranked among the top schools in Texas." },
+      { question: "What school district is Barton Creek in?", answer: "Barton Creek is served by the Eanes Independent School District, including Barton Creek Elementary, Hill Country Middle School, and Westlake High School, all consistently ranked among the top schools in Texas." },
       { question: "Can you hike in Barton Creek?", answer: "Yes. The Barton Creek Greenbelt runs directly through the community, offering residents private trail access to over 12 miles of hiking and mountain biking paths, natural swimming holes like Sculpture Falls and Twin Falls, and rock climbing." },
       { question: "Is Barton Creek still building new homes?", answer: "Barton Creek is approaching build-out, meaning remaining homesites are increasingly rare and valuable. Some teardown-and-rebuild opportunities exist on older lots, but the limited supply of new construction drives premium pricing." }
     ]
@@ -314,9 +314,9 @@ The housing stock ranges from charming 1930s bungalows and mid-century ranches t
 ### Sub-Neighborhoods
 
 Tarrytown encompasses several distinct areas:
-- Deep Eddy — prized for park and pool access
-- Casis Village — walkable to shops and schools
-- Lakeside streets — closest to Lake Austin waterfront
+- Deep Eddy, prized for park and pool access
+- Casis Village, walkable to shops and schools
+- Lakeside streets, closest to Lake Austin waterfront
 
 ### Boundaries
 
@@ -354,9 +354,9 @@ Tarrytown attracts young professionals, families, and empty-nesters seeking cent
     amenitiesAndSchools: `### Austin ISD Schools
 
 Key schools include:
-- Casis Elementary School — one of Austin ISD's highest-performing
+- Casis Elementary School, one of Austin ISD's highest-performing
 - O. Henry Middle School
-- Austin High School — overlooking Lady Bird Lake
+- Austin High School, overlooking Lady Bird Lake
 
 ### Private Schools
 
@@ -364,9 +364,9 @@ St. Andrew's Episcopal School occupies a campus in the heart of Tarrytown. Addit
 
 ### Parks & Recreation
 
-- Deep Eddy Pool — iconic spring-fed swimming
+- Deep Eddy Pool, iconic spring-fed swimming
 - Reed Park and Walsh Boat Landing
-- Red Bud Isle — popular off-leash dog park
+- Red Bud Isle, popular off-leash dog park
 - Zilker Park and Barton Springs Pool are just across the river
 
 ### Daily Conveniences
@@ -383,10 +383,10 @@ Acquiring original homes on large lots (7,000+ sq ft) and building new can gener
 ### Growth Tailwinds
 
 As Austin's tech economy expands, demand for walkable, centrally located neighborhoods like Tarrytown continues to intensify. Proximity to downtown, the university, and major employment centers ensures broad buyer demand.`,
-    echelonPerspective: `Tarrytown is Austin's quintessential walkable luxury neighborhood, where tree-canopied streets, historic character, and a 5-minute downtown commute create a lifestyle that is genuinely difficult to replicate elsewhere in the city. The buyer profile here is diverse — young families drawn to Casis Elementary, professionals who want to walk to work downtown, and long-time Austinites upgrading within the 78703 zip code. Housing ranges from original 1930s bungalows on quarter-acre lots to contemporary new construction exceeding $700 per square foot. The teardown-rebuild cycle is particularly active here, as lot values in prime Casis zones regularly exceed $1 million. For buyers weighing alternatives, [West lake Hills](/communities/westlake-hills) offers Eanes ISD and Hill Country views, while [Pemberton Heights](/communities/pemberton-heights) provides similarly distinguished central Austin living with even larger lots.`,
+    echelonPerspective: `Tarrytown is Austin's quintessential walkable luxury neighborhood, where tree-canopied streets, historic character, and a 5-minute downtown commute create a lifestyle that is genuinely difficult to replicate elsewhere in the city. The buyer profile here is diverse, young families drawn to Casis Elementary, professionals who want to walk to work downtown, and long-time Austinites upgrading within the 78703 zip code. Housing ranges from original 1930s bungalows on quarter-acre lots to contemporary new construction exceeding $700 per square foot. The teardown-rebuild cycle is particularly active here, as lot values in prime Casis zones regularly exceed $1 million. For buyers weighing alternatives, [West lake Hills](/communities/westlake-hills) offers Eanes ISD and Hill Country views, while [Pemberton Heights](/communities/pemberton-heights) provides similarly distinguished central Austin living with even larger lots.`,
     communityComparison: `### Tarrytown vs West lake Hills
 
-[West lake Hills](/communities/westlake-hills) offers Eanes ISD schools (consistently ranked above Austin ISD), larger lots, and panoramic Hill Country views — but trades away Tarrytown's walkability, urban village feel, and proximity to Lady Bird Lake. Tarrytown buyers typically prioritize a pedestrian-friendly lifestyle with walkable dining and recreation, while Westlake buyers seek hilltop privacy and top-tier school ratings.
+[West lake Hills](/communities/westlake-hills) offers Eanes ISD schools (consistently ranked above Austin ISD), larger lots, and panoramic Hill Country views, but trades away Tarrytown's walkability, urban village feel, and proximity to Lady Bird Lake. Tarrytown buyers typically prioritize a pedestrian-friendly lifestyle with walkable dining and recreation, while Westlake buyers seek hilltop privacy and top-tier school ratings.
 
 ### Tarrytown vs Pemberton Heights
 
@@ -394,7 +394,7 @@ As Austin's tech economy expands, demand for walkable, centrally located neighbo
 
 ### Tarrytown vs Barton Creek
 
-[Barton Creek](/communities/barton-creek) appeals to buyers seeking gated country club living with championship golf — a fundamentally different lifestyle than Tarrytown's urban walkability. Barton Creek offers Eanes ISD and resort-caliber amenities, while Tarrytown delivers the convenience of central Austin living with local shops, restaurants, and cultural proximity.`,
+[Barton Creek](/communities/barton-creek) appeals to buyers seeking gated country club living with championship golf, a fundamentally different lifestyle than Tarrytown's urban walkability. Barton Creek offers Eanes ISD and resort-caliber amenities, while Tarrytown delivers the convenience of central Austin living with local shops, restaurants, and cultural proximity.`,
     relatedCommunities: ["westlake-hills", "lake-austin", "downtown", "rollingwood"],
     faqs: [
       { question: "What makes Tarrytown Austin a desirable neighborhood?", answer: "Tarrytown offers a rare combination of central location (minutes from downtown), tree-canopied walkable streets, excellent schools (Casis Elementary), proximity to Lady Bird Lake and Deep Eddy Pool, and eclectic architectural character spanning 1930s bungalows to contemporary estates." },
@@ -441,7 +441,7 @@ Zilker Park's 350 acres are directly adjacent, offering Barton Springs Pool, Zil
 
 ### Dining & Entertainment
 
-South Lamar Boulevard — just minutes away — features acclaimed restaurants, breweries, and live music. South Congress Avenue's boutique retail and galleries are equally accessible.
+South Lamar Boulevard, just minutes away, features acclaimed restaurants, breweries, and live music. South Congress Avenue's boutique retail and galleries are equally accessible.
 
 ### Community Life
 
@@ -456,16 +456,16 @@ Original 1950s–1960s homes on generous lots (many exceeding 10,000 sq ft) are 
 
 ### Inventory & Demand
 
-Inventory is consistently tight due to the community's small geographic footprint. Homes in prime locations — backing to the greenbelt, offering views, or on quiet cul-de-sacs — sell quickly.`,
+Inventory is consistently tight due to the community's small geographic footprint. Homes in prime locations, backing to the greenbelt, offering views, or on quiet cul-de-sacs, sell quickly.`,
     amenitiesAndSchools: `### Eanes ISD
 
-Children typically attend Eanes Elementary, Hill Country Middle School, and Westlake High School — all among the top-ranked schools in Texas.
+Children typically attend Eanes Elementary, Hill Country Middle School, and Westlake High School, all among the top-ranked schools in Texas.
 
 ### Parks & Recreation
 
-- Hatley Park — playground, basketball courts, green space
-- Zilker Park — swimming, botanical gardens, sports fields
-- Barton Creek Greenbelt — hiking, swimming, nature
+- Hatley Park, playground, basketball courts, green space
+- Zilker Park, swimming, botanical gardens, sports fields
+- Barton Creek Greenbelt, hiking, swimming, nature
 
 ### Shopping & Services
 
@@ -480,10 +480,10 @@ The teardown-rebuild market offers strong returns. The spread between lot value 
 
 ### Rental Appeal
 
-High-quality tenants — often executives on temporary assignments or families exploring the area — pay premium rents for Eanes ISD enrollment and proximity to central Austin.`,
+High-quality tenants, often executives on temporary assignments or families exploring the area, pay premium rents for Eanes ISD enrollment and proximity to central Austin.`,
     relatedCommunities: ["westlake-hills", "barton-creek", "tarrytown", "lake-austin"],
     faqs: [
-      { question: "Is Rollingwood in Eanes ISD?", answer: "Yes. Rollingwood is served by the Eanes Independent School District, with children typically attending Eanes Elementary, Hill Country Middle School, and Westlake High School—all among the top-ranked schools in Texas." },
+      { question: "Is Rollingwood in Eanes ISD?", answer: "Yes. Rollingwood is served by the Eanes Independent School District, with children typically attending Eanes Elementary, Hill Country Middle School, and Westlake High School, all among the top-ranked schools in Texas." },
       { question: "How big is Rollingwood Austin?", answer: "Rollingwood is a small incorporated city of less than one square mile with approximately 1,500 residents. Its compact size creates a walkable, close-knit community with a strong neighborhood identity." },
       { question: "What are home prices in Rollingwood?", answer: "Homes in Rollingwood range from $1 million to over $5 million. Median home prices exceed $1.5 million, with new construction and renovated homes regularly trading above $2.5 million. The teardown-rebuild market is active." },
       { question: "Is Rollingwood near Zilker Park?", answer: "Yes. Rollingwood is directly adjacent to Zilker Park, providing residents with walkable access to 350 acres of recreation including Barton Springs Pool, Zilker Botanical Garden, sports fields, and the Barton Creek Greenbelt." },
@@ -503,7 +503,7 @@ High-quality tenants — often executives on temporary assignments or families e
 
 ### Architectural Character
 
-The housing stock is remarkably diverse — Craftsman bungalows, Spanish Colonial Revival homes, and sleek contemporary new construction share the same streets. Winding roads and dramatic topography give the neighborhood visual richness.
+The housing stock is remarkably diverse, Craftsman bungalows, Spanish Colonial Revival homes, and sleek contemporary new construction share the same streets. Winding roads and dramatic topography give the neighborhood visual richness.
 
 ### Location & Boundaries
 
@@ -524,7 +524,7 @@ Some of Austin's best restaurants, boutiques, coffee shops, and live music venue
 The Travis Heights Art Trail opens private homes and studios each spring. Block parties and community clean-up days reinforce the neighborhood's reputation as one of Austin's most engaged communities.`,
     marketInsights: `### Pricing
 
-Median home prices exceed $1 million. Premium properties — especially those with downtown views or larger lots — trade well above $2 million.
+Median home prices exceed $1 million. Premium properties, especially those with downtown views or larger lots, trade well above $2 million.
 
 ### New vs. Vintage
 
@@ -539,7 +539,7 @@ Travis Heights attracts diverse buyer demographics:
 - Buyers who prefer authentic neighborhoods over planned communities`,
     amenitiesAndSchools: `### Austin ISD Schools
 
-- Travis Heights Elementary — well-regarded with strong community involvement
+- Travis Heights Elementary, well-regarded with strong community involvement
 - Fulmore Middle School
 - Travis High School
 
@@ -683,7 +683,7 @@ Units with efficient layouts, desirable views, and premium building amenities ge
     metaDescription: "Explore homes and estates for sale in Dripping Springs TX. Hill Country charm, wineries, and ranch properties from $500K to $10M+ just west of Austin.",
     priceRange: "$500K – $10M+",
     image: drippingSpringsImg,
-    overview: `Dripping Springs — the "Gateway to the Hill Country" — is one of the fastest-growing luxury communities near Austin. Located about 25 miles west along Highway 290, it blends small-town authenticity with modern luxury.
+    overview: `Dripping Springs, the "Gateway to the Hill Country", is one of the fastest-growing luxury communities near Austin. Located about 25 miles west along Highway 290, it blends small-town authenticity with modern luxury.
 
 ### Property Types
 
@@ -725,8 +725,8 @@ Custom homes on acreage regularly exceed $1.5 million. Premier estate properties
 ### Market Segments
 
 The market splits between:
-- **Master-planned communities** (Headwaters, Caliterra, Belterra) — more accessible price points with community amenities
-- **Custom estates on acreage** — attracting high-net-worth buyers seeking privacy and views
+- **Master-planned communities** (Headwaters, Caliterra, Belterra), more accessible price points with community amenities
+- **Custom estates on acreage**, attracting high-net-worth buyers seeking privacy and views
 
 ### Infrastructure Growth
 
@@ -743,9 +743,9 @@ The district has earned a strong reputation for academic excellence with high TE
 
 ### Recreation Highlights
 
-- Pedernales Falls and Hamilton Pool — world-class hiking and swimming
-- Reimers Ranch Park — mountain biking and rock climbing
-- 290 Wine Trail — wineries, distilleries, and breweries`,
+- Pedernales Falls and Hamilton Pool, world-class hiking and swimming
+- Reimers Ranch Park, mountain biking and rock climbing
+- 290 Wine Trail, wineries, distilleries, and breweries`,
     investmentPotential: `### Growth Trajectory
 
 Dripping Springs is widely viewed as one of the most compelling growth investments in the greater Austin market. Properties purchased five years ago have seen substantial value gains.
@@ -795,7 +795,7 @@ Hill Country estates encompass:
 The market extends through Hays, Blanco, Gillespie, Llano, Kendall, and Comal counties. Popular corridors include Highway 290 toward Fredericksburg, Highway 281 toward Johnson City, and the Pedernales and Blanco River valleys.`,
     lifestyle: `### Connection to the Land
 
-Residents wake to panoramic views, spend mornings riding horses or hiking private trails, and watch spectacular sunsets from their porches. The quality of light — especially during wildflower season — is a constant source of inspiration.
+Residents wake to panoramic views, spend mornings riding horses or hiking private trails, and watch spectacular sunsets from their porches. The quality of light, especially during wildflower season, is a constant source of inspiration.
 
 ### Wine & Culinary Culture
 
@@ -838,7 +838,7 @@ Regional centers in Fredericksburg, Marble Falls, and Dripping Springs provide h
 
 ### Shopping & Dining
 
-- Fredericksburg's Main Street — world-class dining and galleries
+- Fredericksburg's Main Street, world-class dining and galleries
 - Johnson City, Wimberley, and Marble Falls downtowns
 - H-E-B grocery stores in most communities
 
@@ -847,14 +847,14 @@ Regional centers in Fredericksburg, Marble Falls, and Dripping Springs provide h
 State parks, private hunting preserves, equestrian facilities, and the Highland Lakes chain provide extensive outdoor options.`,
     investmentPotential: `### Land Appreciation
 
-Prime acreage near Austin has appreciated 10-15% annually over the past five years. The best parcels — with water features, views, and road frontage — are becoming increasingly scarce.
+Prime acreage near Austin has appreciated 10-15% annually over the past five years. The best parcels, with water features, views, and road frontage, are becoming increasingly scarce.
 
 ### Investment Strategies
 
-- **Land banking** — acquiring raw acreage for future appreciation
-- **Custom spec homes** — building estate properties for resale
-- **Agritourism** — wineries, wedding venues, glamping retreats
-- **Conservation easements** — significant tax benefits for qualified properties
+- **Land banking**, acquiring raw acreage for future appreciation
+- **Custom spec homes**, building estate properties for resale
+- **Agritourism**, wineries, wedding venues, glamping retreats
+- **Conservation easements**, significant tax benefits for qualified properties
 
 ### Tax Advantages
 
@@ -881,7 +881,7 @@ Agricultural exemptions can reduce property taxes by 90% or more on qualifying l
 
 ### Architectural Mix
 
-The neighborhood features everything from restored 1930s bungalows to sleek modern new builds — often on the same block. This diversity reflects Zilker's evolution into one of Central Texas's most desirable addresses.
+The neighborhood features everything from restored 1930s bungalows to sleek modern new builds, often on the same block. This diversity reflects Zilker's evolution into one of Central Texas's most desirable addresses.
 
 ### Prime Location
 
@@ -928,7 +928,7 @@ Zilker attracts young professionals, creative entrepreneurs, tech executives, an
 Single-family home rents range from $3,500 to $10,000 per month. Investors should review Austin's STR regulations before pursuing short-term rental strategies.`,
     amenitiesAndSchools: `### Austin ISD Schools
 
-- Zilker Elementary — well-regarded with strong parent involvement
+- Zilker Elementary, well-regarded with strong parent involvement
 - O. Henry Middle School
 - Austin High School
 
@@ -962,7 +962,7 @@ The built-out neighborhood means supply will remain limited, supporting continue
 
 ### Cultural Premium
 
-The neighborhood's association with Austin's identity — live music, Barton Springs, ACL Festival — adds intangible value that supports long-term pricing.`,
+The neighborhood's association with Austin's identity, live music, Barton Springs, ACL Festival, adds intangible value that supports long-term pricing.`,
     relatedCommunities: ["barton-creek", "travis-heights", "downtown", "tarrytown"],
     faqs: [
       { question: "What is the average home price in Zilker Austin?", answer: "Homes in Zilker range from approximately $800,000 for smaller bungalows to over $5 million for new-construction luxury homes. The median home price is approximately $1.2 million, with new builds frequently exceeding $600 per square foot." },
@@ -992,7 +992,7 @@ Developed around the acclaimed Spanish Oaks Golf Club, the community blends natu
 The community features 24-hour guard-gated security, offering a level of privacy rarely found this close to Austin.`,
     lifestyle: `### Peaceful Environment
 
-Residents enjoy quiet streets, scenic landscapes, and carefully maintained surroundings — all just minutes from Austin's energy.
+Residents enjoy quiet streets, scenic landscapes, and carefully maintained surroundings, all just minutes from Austin's energy.
 
 ### Spanish Oaks Golf Club
 
@@ -1114,7 +1114,7 @@ Many homes include:
 
 - Doss Elementary School
 - Murchison Middle School
-- Anderson High School — consistently ranked among Austin's top public schools
+- Anderson High School, consistently ranked among Austin's top public schools
 
 ### Shopping & Dining
 
@@ -1132,7 +1132,7 @@ The neighborhoods have outperformed many Central Austin areas over the past deca
 
 ### Diverse Housing Stock
 
-The range from mid-century homes to luxury estates provides opportunities at multiple price points — including renovation projects with strong upside.
+The range from mid-century homes to luxury estates provides opportunities at multiple price points, including renovation projects with strong upside.
 
 ### Tech Economy Benefit
 
@@ -1160,7 +1160,7 @@ Proximity to Apple, Google, Meta, and other major employers makes these neighbor
 
 Unlike many lake markets, Lake Austin maintains consistent water levels year-round, making it ideal for boating, wake surfing, and everyday waterfront living.
 
-Homes here range from classic estates tucked into mature tree canopies to newly constructed architectural properties designed for indoor-outdoor living. Large lots, private docks, and unobstructed water frontage are what define this market — and what continue to drive demand at the highest price points in Austin.
+Homes here range from classic estates tucked into mature tree canopies to newly constructed architectural properties designed for indoor-outdoor living. Large lots, private docks, and unobstructed water frontage are what define this market, and what continue to drive demand at the highest price points in Austin.
 
 ### Location & Geography
 
@@ -1184,7 +1184,7 @@ Despite its privacy, Lake Austin is minutes from:
 - Top private and public schools
 - Major employment hubs
 
-It offers a rare combination — resort-style living without leaving the city.`,
+It offers a rare combination, resort-style living without leaving the city.`,
     marketInsights: `### Price Points & Market Dynamics
 
 Lake Austin operates in a different tier than most Austin submarkets.
@@ -1221,11 +1221,11 @@ A significant portion of Lake Austin properties trade quietly. Some of the most 
 
 ### Redevelopment Opportunities
 
-Because of limited waterfront inventory, many buyers prioritize lot quality and location over structure — with tear-downs and redevelopment opportunities being common at the high end.`,
-    echelonPerspective: `Lake Austin is the rarest waterfront tier in the Austin, Texas market — a constant-level reservoir running through the heart of the city's most established residential corridor. The buyer profile is narrow and consistent: relocating tech and finance executives from California, New York, and the Pacific Northwest who treat the waterfront as a primary residence rather than a second home, alongside a smaller cohort of established Austin families upgrading from [Tarrytown](/communities/tarrytown), [West lake Hills](/communities/westlake-hills), or [Pemberton Heights](/communities/pemberton-heights). Pricing tiers are well-defined: non-waterfront proximity homes trade between $1.5M and $3M, entry-level waterfront sits between $2.5M and $5M, and prime waterfront with deep-water docks and unobstructed frontage commands $5M to $15M+, with trophy estates clearing $15M. What sets Lake Austin apart from [Lake Travis](/communities/lake-travis) is the combination of constant water level, year-round dockability, and proximity — most homes are 10 to 15 minutes from downtown, a logistical reality that no other Texas waterfront market can replicate. A meaningful share of inventory trades privately; access here is a function of relationships rather than search filters.`,
+Because of limited waterfront inventory, many buyers prioritize lot quality and location over structure, with tear-downs and redevelopment opportunities being common at the high end.`,
+    echelonPerspective: `Lake Austin is the rarest waterfront tier in the Austin, Texas market, a constant-level reservoir running through the heart of the city's most established residential corridor. The buyer profile is narrow and consistent: relocating tech and finance executives from California, New York, and the Pacific Northwest who treat the waterfront as a primary residence rather than a second home, alongside a smaller cohort of established Austin families upgrading from [Tarrytown](/communities/tarrytown), [West lake Hills](/communities/westlake-hills), or [Pemberton Heights](/communities/pemberton-heights). Pricing tiers are well-defined: non-waterfront proximity homes trade between $1.5M and $3M, entry-level waterfront sits between $2.5M and $5M, and prime waterfront with deep-water docks and unobstructed frontage commands $5M to $15M+, with trophy estates clearing $15M. What sets Lake Austin apart from [Lake Travis](/communities/lake-travis) is the combination of constant water level, year-round dockability, and proximity, most homes are 10 to 15 minutes from downtown, a logistical reality that no other Texas waterfront market can replicate. A meaningful share of inventory trades privately; access here is a function of relationships rather than search filters.`,
     communityComparison: `### Lake Austin vs Lake Travis
 
-[Lake Travis](/communities/lake-travis) sits roughly 25 miles upriver and offers a more resort-oriented waterfront lifestyle — larger lots, deeper coves, and significantly lower price-per-acre, but with seasonal water-level fluctuations that affect dock usability in drought years. Lake Austin's constant level, downtown proximity, and Eanes / Austin ISD zoning command a substantial premium. Buyers who prioritize daily commute, urban convenience, and year-round water access choose Lake Austin; those who prioritize space, value, and a Hill Country resort feel often choose Lake Travis or [Lakeway](/communities/lakeway).
+[Lake Travis](/communities/lake-travis) sits roughly 25 miles upriver and offers a more resort-oriented waterfront lifestyle, larger lots, deeper coves, and significantly lower price-per-acre, but with seasonal water-level fluctuations that affect dock usability in drought years. Lake Austin's constant level, downtown proximity, and Eanes / Austin ISD zoning command a substantial premium. Buyers who prioritize daily commute, urban convenience, and year-round water access choose Lake Austin; those who prioritize space, value, and a Hill Country resort feel often choose Lake Travis or [Lakeway](/communities/lakeway).
 
 ### Lake Austin vs West lake Hills
 
@@ -1233,7 +1233,7 @@ Because of limited waterfront inventory, many buyers prioritize lot quality and 
 
 ### Lake Austin vs Rob Roy / Davenport Ranch
 
-[Rob Roy](/communities/rob-roy) and [Davenport Ranch](/communities/davenport-ranch) are the gated luxury enclaves above the Lake Austin corridor. Both offer privacy, large lots, and Eanes ISD without waterfront access. Buyers often weigh gated security and view lots in Rob Roy or Davenport Ranch against the lifestyle and rarity of true Lake Austin frontage — the decision usually comes down to whether the buyer wants the water itself or the views above it.`,
+[Rob Roy](/communities/rob-roy) and [Davenport Ranch](/communities/davenport-ranch) are the gated luxury enclaves above the Lake Austin corridor. Both offer privacy, large lots, and Eanes ISD without waterfront access. Buyers often weigh gated security and view lots in Rob Roy or Davenport Ranch against the lifestyle and rarity of true Lake Austin frontage, the decision usually comes down to whether the buyer wants the water itself or the views above it.`,
     relatedCommunities: ["westlake-hills", "rob-roy", "davenport-ranch", "lake-travis"],
     faqs: [
       { question: "What makes Lake Austin different from Lake Travis?", answer: "Lake Austin maintains a constant water level year-round, unlike Lake Travis which can fluctuate significantly. This makes Lake Austin ideal for private docks, boathouses, and consistent waterfront living. It's also significantly closer to downtown Austin." },
@@ -1241,7 +1241,7 @@ Because of limited waterfront inventory, many buyers prioritize lot quality and 
       { question: "Are there off-market homes available on Lake Austin?", answer: "Yes. A meaningful percentage of Lake Austin transactions occur off-market or through private networks. Access often comes down to relationships and timing. Contact Echelon Property Group for private listing access." },
       { question: "What school districts serve Lake Austin?", answer: "Most Lake Austin properties are served by Eanes ISD (including Westlake High School) or Austin ISD, depending on location. Several top private schools are also within a short drive." },
       { question: "How far is Lake Austin from downtown Austin?", answer: "Most Lake Austin homes are located just 10–15 minutes from downtown Austin, making it one of the most accessible waterfront markets in Central Texas." },
-      { question: "What is the lifestyle like on Lake Austin?", answer: "Life on Lake Austin centers around the water — boating, paddleboarding, and dock entertaining are everyday activities. Popular waterfront restaurants are accessible by boat, and the area offers resort-style living within minutes of urban amenities." }
+      { question: "What is the lifestyle like on Lake Austin?", answer: "Life on Lake Austin centers around the water, boating, paddleboarding, and dock entertaining are everyday activities. Popular waterfront restaurants are accessible by boat, and the area offers resort-style living within minutes of urban amenities." }
     ]
   },
   {
@@ -1260,7 +1260,7 @@ The neighborhood features a charming mix of restored Victorian cottages, Craftsm
 
 ### Location & Boundaries
 
-Clarksville's location is exceptional — walkable to downtown Austin, Lady Bird Lake, the Whole Foods flagship, and the vibrant South Lamar corridor. It offers urban convenience with neighborhood intimacy. The neighborhood is bounded roughly by MoPac to the west, Lamar Boulevard to the east, 6th Street to the south, and 15th Street to the north.`,
+Clarksville's location is exceptional, walkable to downtown Austin, Lady Bird Lake, the Whole Foods flagship, and the vibrant South Lamar corridor. It offers urban convenience with neighborhood intimacy. The neighborhood is bounded roughly by MoPac to the west, Lamar Boulevard to the east, 6th Street to the south, and 15th Street to the north.`,
     lifestyle: `### Walkable Village Living
 
 Clarksville offers one of Austin's most walkable lifestyles. Residents stroll to restaurants, coffee shops, and boutiques along West Lynn Street. The neighborhood's compact size and pedestrian-friendly streets make daily errands a pleasure rather than a chore.
@@ -1298,7 +1298,7 @@ Clarksville attracts a diverse mix of creative professionals, tech executives, a
 
 - Mathews Elementary School
 - O. Henry Middle School
-- Austin High School — overlooking Lady Bird Lake
+- Austin High School, overlooking Lady Bird Lake
 
 ### Private Schools
 
@@ -1306,10 +1306,10 @@ Nearby private schools include St. Andrew's Episcopal School and The Griffin Sch
 
 ### Parks & Recreation
 
-- Pease Park — recently renovated with expanded trails and amenities
-- Shoal Creek Trail — scenic cycling and jogging
-- Lady Bird Lake — kayaking, paddleboarding, and the Hike-and-Bike Trail
-- Deep Eddy Pool — iconic spring-fed swimming
+- Pease Park, recently renovated with expanded trails and amenities
+- Shoal Creek Trail, scenic cycling and jogging
+- Lady Bird Lake, kayaking, paddleboarding, and the Hike-and-Bike Trail
+- Deep Eddy Pool, iconic spring-fed swimming
 
 ### Daily Conveniences
 
@@ -1331,7 +1331,7 @@ Older homes on desirable lots present tear-down and rebuild opportunities. New c
 The neighborhood's walkability and proximity to downtown make it highly attractive for premium long-term rentals, with monthly rents ranging from $4,000 to $12,000+.`,
     relatedCommunities: ["tarrytown", "downtown", "travis-heights", "westlake-hills"],
     faqs: [
-      { question: "What is it like living in Clarksville Austin?", answer: "Clarksville offers a walkable village lifestyle with boutique shops, restaurants, and parks — all within walking distance of downtown Austin. The neighborhood's historic character and cultural significance create a unique sense of place." },
+      { question: "What is it like living in Clarksville Austin?", answer: "Clarksville offers a walkable village lifestyle with boutique shops, restaurants, and parks, all within walking distance of downtown Austin. The neighborhood's historic character and cultural significance create a unique sense of place." },
       { question: "What are home prices in Clarksville?", answer: "Prices range from approximately $800K for smaller historic homes to over $6M for new-construction estates. New construction commands $500 to $700+ per square foot." },
       { question: "Are there luxury homes in Clarksville?", answer: "Yes. Contemporary new construction and beautifully restored historic homes in Clarksville rank among Austin's most desirable properties." },
       { question: "What schools serve Clarksville?", answer: "Clarksville is served by Austin ISD. Nearby schools include Mathews Elementary, O. Henry Middle School, and Austin High School." },
@@ -1400,7 +1400,7 @@ The Hill Country Galleria in Bee Cave provides upscale shopping, dining, and ent
 
 ### Healthcare
 
-Baylor Scott & White Medical Center — Lakeway provides comprehensive medical services to the Lake Travis community.`,
+Baylor Scott & White Medical Center, Lakeway provides comprehensive medical services to the Lake Travis community.`,
     investmentPotential: `### Austin Growth Corridor
 
 Austin's continued growth and limited waterfront inventory support strong demand and long-term appreciation for lakefront properties.
@@ -1416,7 +1416,7 @@ Select lakefront parcels remain available for custom construction, though prime 
 ### Long-Term Value
 
 Finite waterfront supply and growing demand from Austin's expanding population create favorable conditions for long-term appreciation.`,
-    echelonPerspective: `Lake Travis waterfront real estate occupies a unique position in the Austin, Texas luxury market. Unlike Lake Austin — which is closer to downtown and maintains constant water levels — Lake Travis stretches over 60 miles through dramatic Hill Country terrain, offering open-water boating, cliff-side homesites, and a distinctly resort-oriented lifestyle. Buyers here range from families seeking Lake Travis ISD schools and weekend boating to retirees and second-home buyers drawn to the area's natural beauty. Deep-water access and private dock rights are the primary value drivers; properties with these features command significant premiums. Communities along the lake include [Lakeway](/communities/lakeway) on the southern shore and numerous custom-home enclaves along the northern ridge. For buyers prioritizing proximity to central Austin, [Lake Austin waterfront](/communities/lake-austin) offers a closer alternative with constant water levels.`,
+    echelonPerspective: `Lake Travis waterfront real estate occupies a unique position in the Austin, Texas luxury market. Unlike Lake Austin, which is closer to downtown and maintains constant water levels, Lake Travis stretches over 60 miles through dramatic Hill Country terrain, offering open-water boating, cliff-side homesites, and a distinctly resort-oriented lifestyle. Buyers here range from families seeking Lake Travis ISD schools and weekend boating to retirees and second-home buyers drawn to the area's natural beauty. Deep-water access and private dock rights are the primary value drivers; properties with these features command significant premiums. Communities along the lake include [Lakeway](/communities/lakeway) on the southern shore and numerous custom-home enclaves along the northern ridge. For buyers prioritizing proximity to central Austin, [Lake Austin waterfront](/communities/lake-austin) offers a closer alternative with constant water levels.`,
     communityComparison: `### Lake Travis vs Lakeway
 
 [Lakeway](/communities/lakeway) is the most established community along Lake Travis, offering full-service marinas, championship golf, and a self-contained commercial corridor. Lakeway provides infrastructure and convenience that more rural Lake Travis shoreline locations lack, making it ideal for buyers who want lake living with suburban amenities.
@@ -1463,7 +1463,7 @@ The community was designed with sustainability and connectivity at its core. Gre
 Mueller's central location provides easy access to downtown Austin, the University of Texas, major employers along the I-35 corridor, and Austin-Bergstrom International Airport.`,
     lifestyle: `### Walkable Urban Living
 
-Mueller's walkable lifestyle centers around Lake Park, the Thinkery children's museum, local restaurants, and retail — all within walking or biking distance. Miles of trails and bike paths connect residents to amenities.
+Mueller's walkable lifestyle centers around Lake Park, the Thinkery children's museum, local restaurants, and retail, all within walking or biking distance. Miles of trails and bike paths connect residents to amenities.
 
 ### Community Character
 
@@ -1493,14 +1493,14 @@ Mueller appeals to a broad buyer demographic including young professionals, fami
 Mueller has demonstrated consistent appreciation since its development, driven by its central location and comprehensive amenities.`,
     amenitiesAndSchools: `### Austin ISD Schools
 
-- Blanton Elementary — located within the community
+- Blanton Elementary, located within the community
 - Martin Middle School
 - Various nearby magnet and choice programs
 
 ### Parks & Recreation
 
-- Lake Park — the community's centerpiece with walking paths and water features
-- The Thinkery — interactive children's museum
+- Lake Park, the community's centerpiece with walking paths and water features
+- The Thinkery, interactive children's museum
 - Multiple pocket parks and playgrounds
 - Extensive trail system connecting to surrounding neighborhoods
 
@@ -1567,9 +1567,9 @@ Proximity to the University of Texas provides cultural amenities including museu
 
 ### Parks & Green Space
 
-- Shipe Park — the neighborhood's primary gathering space with a pool, playground, and sports courts
-- Avenue B Gardens — community garden space
-- Waller Creek — scenic walking paths
+- Shipe Park, the neighborhood's primary gathering space with a pool, playground, and sports courts
+- Avenue B Gardens, community garden space
+- Waller Creek, scenic walking paths
 
 ### Cultural Events
 
@@ -1601,9 +1601,9 @@ The UT campus is within walking or biking distance, providing access to librarie
 
 ### Parks & Recreation
 
-- Shipe Park — neighborhood pool, playground, basketball courts
-- Hike-and-Bike Trail — accessible via Duval Street corridor
-- Waller Creek — scenic walking and nature observation
+- Shipe Park, neighborhood pool, playground, basketball courts
+- Hike-and-Bike Trail, accessible via Duval Street corridor
+- Waller Creek, scenic walking and nature observation
 
 ### Shopping & Dining
 
@@ -1649,16 +1649,16 @@ The neighborhood is home to a mix of beautifully preserved Georgian, Colonial, a
 
 ### Location Premium
 
-Pemberton Heights' location is exceptional — walking distance to downtown Austin, Pease Park, Shoal Creek Trail, and the Clarksville neighborhood's restaurants and shops. It offers old-money elegance within minutes of Austin's modern urban core.`,
+Pemberton Heights' location is exceptional, walking distance to downtown Austin, Pease Park, Shoal Creek Trail, and the Clarksville neighborhood's restaurants and shops. It offers old-money elegance within minutes of Austin's modern urban core.`,
     lifestyle: `### Central Elegance
 
 Pemberton Heights offers a lifestyle of understated luxury. The wide streets, towering oaks, and distinguished architecture create an atmosphere of established prestige that few Austin neighborhoods can match.
 
 ### Parks & Recreation
 
-- Pease Park — recently renovated with expanded trails, a playground, and community gathering spaces
-- Shoal Creek Trail — scenic walking, jogging, and cycling
-- Lady Bird Lake — accessible for kayaking, paddleboarding, and the Hike-and-Bike Trail
+- Pease Park, recently renovated with expanded trails, a playground, and community gathering spaces
+- Shoal Creek Trail, scenic walking, jogging, and cycling
+- Lady Bird Lake, accessible for kayaking, paddleboarding, and the Hike-and-Bike Trail
 
 ### Walkable Amenities
 
@@ -1686,7 +1686,7 @@ Pemberton Heights appeals to established professionals, executives, and families
 
 - Mathews Elementary School
 - O. Henry Middle School
-- Austin High School — overlooking Lady Bird Lake
+- Austin High School, overlooking Lady Bird Lake
 
 ### Private Schools
 
@@ -1694,9 +1694,9 @@ St. Andrew's Episcopal School is located nearby, along with several other privat
 
 ### Parks
 
-- Pease Park — Austin's oldest park, recently renovated
-- Shoal Creek Trail — connects to downtown and Lady Bird Lake
-- Caswell Tennis Center — public tennis courts
+- Pease Park, Austin's oldest park, recently renovated
+- Shoal Creek Trail, connects to downtown and Lady Bird Lake
+- Caswell Tennis Center, public tennis courts
 
 ### Daily Conveniences
 
@@ -1716,14 +1716,14 @@ Many Pemberton Heights properties represent generational wealth holdings. The ne
 ### Demand Resilience
 
 The neighborhood demonstrates remarkable demand resilience during market downturns, with values recovering faster than most Austin neighborhoods.`,
-    echelonPerspective: `Pemberton Heights is one of Austin's most quietly prestigious neighborhoods — a place where half-acre lots, mature live oaks, and distinguished architecture create a sense of permanence that few Austin communities can match. Located just north of Lady Bird Lake and west of Shoal Creek, the neighborhood is minutes from downtown dining, the Hike and Bike Trail, and Whole Foods Market's flagship store. Buyers here tend to be established professionals, legacy Austin families, and executives who want central proximity without sacrificing lot size or privacy. The housing stock includes Georgian colonials, stately traditionals, and contemporary rebuilds — many exceeding $500 per square foot for new construction. For those weighing alternatives, [Tarrytown](/communities/tarrytown) offers a more walkable village feel at a slightly lower entry point, while [West lake Hills](/communities/westlake-hills) provides Eanes ISD schools and Hill Country views in a more suburban setting.`,
+    echelonPerspective: `Pemberton Heights is one of Austin's most quietly prestigious neighborhoods, a place where half-acre lots, mature live oaks, and distinguished architecture create a sense of permanence that few Austin communities can match. Located just north of Lady Bird Lake and west of Shoal Creek, the neighborhood is minutes from downtown dining, the Hike and Bike Trail, and Whole Foods Market's flagship store. Buyers here tend to be established professionals, legacy Austin families, and executives who want central proximity without sacrificing lot size or privacy. The housing stock includes Georgian colonials, stately traditionals, and contemporary rebuilds, many exceeding $500 per square foot for new construction. For those weighing alternatives, [Tarrytown](/communities/tarrytown) offers a more walkable village feel at a slightly lower entry point, while [West lake Hills](/communities/westlake-hills) provides Eanes ISD schools and Hill Country views in a more suburban setting.`,
     communityComparison: `### Pemberton Heights vs Tarrytown
 
 [Tarrytown](/communities/tarrytown) shares Pemberton Heights' central positioning and Austin ISD zoning, but offers a more eclectic architectural mix and a stronger walkable commercial corridor along Exposition Boulevard. Pemberton Heights provides larger lots, more estate-scale architecture, and a quieter residential feel. Buyers choosing between the two weigh walkable convenience (Tarrytown) against space and architectural gravitas (Pemberton Heights).
 
 ### Pemberton Heights vs West lake Hills
 
-[West lake Hills](/communities/westlake-hills) offers Eanes ISD schools and panoramic Hill Country views in a more suburban setting west of MoPac. Pemberton Heights trades those school ratings for central Austin walkability, proximity to downtown, and some of the most distinguished residential architecture in the city. Both communities attract high-net-worth buyers, but the lifestyle is fundamentally different — urban estate living versus Hill Country retreat.
+[West lake Hills](/communities/westlake-hills) offers Eanes ISD schools and panoramic Hill Country views in a more suburban setting west of MoPac. Pemberton Heights trades those school ratings for central Austin walkability, proximity to downtown, and some of the most distinguished residential architecture in the city. Both communities attract high-net-worth buyers, but the lifestyle is fundamentally different, urban estate living versus Hill Country retreat.
 
 ### Pemberton Heights vs Barton Creek
 
@@ -1736,7 +1736,7 @@ The neighborhood demonstrates remarkable demand resilience during market downtur
       { question: "Who typically buys in Pemberton Heights?", answer: "Typical buyers include established professionals, legacy Austin families, C-suite executives, and discerning relocating buyers who want proximity to downtown, Lady Bird Lake, and Austin's cultural core without sacrificing lot size or privacy." },
       { question: "What are home prices in Pemberton Heights?", answer: "Prices range from approximately $1.5M to over $10M for trophy estates on premium lots." },
       { question: "What schools serve Pemberton Heights?", answer: "Pemberton Heights is served by Austin ISD, with homes typically zoned to Mathews Elementary, O. Henry Middle School, and Austin High School." },
-      { question: "How large are lots in Pemberton Heights?", answer: "Many homes in Pemberton Heights sit on half-acre or larger lots with mature oaks, manicured gardens, and significant setbacks from the street — among the most generous lot sizes in central Austin." }
+      { question: "How large are lots in Pemberton Heights?", answer: "Many homes in Pemberton Heights sit on half-acre or larger lots with mature oaks, manicured gardens, and significant setbacks from the street, among the most generous lot sizes in central Austin." }
     ]
   },
   {
@@ -1771,9 +1771,9 @@ Restaurants range from casual Hill Country fare to upscale dining. The Galleria 
 
 ### Outdoor Recreation
 
-- Lake Travis — boating, swimming, and waterfront dining
-- Hamilton Pool Preserve — iconic swimming hole
-- Reimers Ranch Park — mountain biking and rock climbing
+- Lake Travis, boating, swimming, and waterfront dining
+- Hamilton Pool Preserve, iconic swimming hole
+- Reimers Ranch Park, mountain biking and rock climbing
 - Numerous Hill Country hiking trails
 
 ### Family-Friendly
@@ -1797,14 +1797,14 @@ Growth continues to be strong as Austin's westward expansion drives demand for q
     amenitiesAndSchools: `### Lake Travis ISD
 
 Bee Cave is primarily served by the Lake Travis ISD, including:
-- Lake Travis High School — perennial state powerhouse
+- Lake Travis High School, perennial state powerhouse
 - Bee Cave Middle School
 - Lake Pointe Elementary
 - Several other highly rated elementary schools
 
 ### Shopping & Services
 
-- Hill Country Galleria — premier outdoor shopping center
+- Hill Country Galleria, premier outdoor shopping center
 - H-E-B grocery and specialty stores
 - Medical offices and urgent care facilities
 - Professional services and banking
@@ -1824,15 +1824,15 @@ Lake Travis ISD's strong reputation creates a school-zone premium that supports 
 
 ### Diverse Market
 
-The range of property types — from master-planned homes to custom estates — provides investment opportunities at multiple price levels.
+The range of property types, from master-planned homes to custom estates, provides investment opportunities at multiple price levels.
 
 ### Long-Term Fundamentals
 
 Strong schools, lifestyle amenities, and Austin's continued growth support consistent long-term appreciation in Bee Cave.`,
-    echelonPerspective: `Bee Cave has evolved from a quiet Hill Country crossroads into one of the most desirable suburban cities in the Austin, Texas metro — driven by Lake Travis ISD schools, upscale retail at Hill Country Galleria, and easy Highway 71 access to both downtown and the lake. The buyer profile skews toward families upgrading from central Austin who want more space, better schools, and Hill Country character without a long commute. Housing options range from master-planned community homes in the $500K range to custom estates on acreage exceeding $8 million, particularly in nearby [Spanish Oaks](/communities/spanish-oaks). Bee Cave's position between [Lakeway](/communities/lakeway) and [Barton Creek](/communities/barton-creek) gives buyers access to lake recreation and Austin's cultural core within a 20-minute drive in either direction.`,
+    echelonPerspective: `Bee Cave has evolved from a quiet Hill Country crossroads into one of the most desirable suburban cities in the Austin, Texas metro, driven by Lake Travis ISD schools, upscale retail at Hill Country Galleria, and easy Highway 71 access to both downtown and the lake. The buyer profile skews toward families upgrading from central Austin who want more space, better schools, and Hill Country character without a long commute. Housing options range from master-planned community homes in the $500K range to custom estates on acreage exceeding $8 million, particularly in nearby [Spanish Oaks](/communities/spanish-oaks). Bee Cave's position between [Lakeway](/communities/lakeway) and [Barton Creek](/communities/barton-creek) gives buyers access to lake recreation and Austin's cultural core within a 20-minute drive in either direction.`,
     communityComparison: `### Bee Cave vs Lakeway
 
-[Lakeway](/communities/lakeway) is Bee Cave's closest neighbor and the primary destination for buyers seeking direct Lake Travis waterfront living. Lakeway offers marinas, championship golf, and a more established resort community feel, while Bee Cave provides stronger commercial infrastructure — Hill Country Galleria, restaurants, medical facilities — and a slightly shorter commute to central Austin. Buyers often explore both communities before deciding.
+[Lakeway](/communities/lakeway) is Bee Cave's closest neighbor and the primary destination for buyers seeking direct Lake Travis waterfront living. Lakeway offers marinas, championship golf, and a more established resort community feel, while Bee Cave provides stronger commercial infrastructure, Hill Country Galleria, restaurants, medical facilities, and a slightly shorter commute to central Austin. Buyers often explore both communities before deciding.
 
 ### Bee Cave vs Barton Creek
 
@@ -1879,10 +1879,10 @@ The Arboretum and The Domain are nearby, offering upscale shopping, dining, and 
 
 ### Outdoor Recreation
 
-- Bull Creek District Park — swimming, hiking, and picnicking
-- Bright Leaf Preserve — nature trails and wildlife observation
-- Great Hills Park — neighborhood gathering space
-- Lake Austin — accessible within a short drive
+- Bull Creek District Park, swimming, hiking, and picnicking
+- Bright Leaf Preserve, nature trails and wildlife observation
+- Great Hills Park, neighborhood gathering space
+- Lake Austin, accessible within a short drive
 
 ### Tech Corridor Access
 
@@ -1908,8 +1908,8 @@ Great Hills is served by Austin ISD, with access to several well-regarded elemen
 
 ### Shopping & Dining
 
-- The Domain — premier mixed-use development
-- The Arboretum — upscale shopping and dining
+- The Domain, premier mixed-use development
+- The Arboretum, upscale shopping and dining
 - Whole Foods, Central Market, and specialty grocers
 
 ### Parks & Recreation
@@ -1979,10 +1979,10 @@ The Arboretum and The Domain provide upscale retail and dining within minutes. F
 
 ### Outdoor Recreation
 
-- Shoal Creek Trail — accessible from the neighborhood
-- Bull Creek District Park — swimming and hiking
-- Balcones District Park — sports fields and playgrounds
-- Lake Austin — accessible within a short drive`,
+- Shoal Creek Trail, accessible from the neighborhood
+- Bull Creek District Park, swimming and hiking
+- Balcones District Park, sports fields and playgrounds
+- Lake Austin, accessible within a short drive`,
     marketInsights: `### Pricing
 
 Prices range from approximately $600K for homes in original condition to over $2M for fully renovated or rebuilt estates.
@@ -2004,9 +2004,9 @@ Balcones Park is served by Austin ISD, with access to well-regarded northwest Au
 
 ### Shopping & Dining
 
-- The Arboretum — upscale shopping and dining
-- The Domain — premier mixed-use development
-- Far West Boulevard — casual dining and services
+- The Arboretum, upscale shopping and dining
+- The Domain, premier mixed-use development
+- Far West Boulevard, casual dining and services
 - H-E-B, Whole Foods, and specialty grocers
 
 ### Parks & Recreation
@@ -2068,10 +2068,10 @@ The panoramic Hill Country views available from Rob Roy's hilltop lots are among
 
 ### Outdoor Recreation
 
-- Barton Creek Greenbelt — accessible from several community entry points
-- Lake Austin — nearby for boating and waterfront dining
-- Wild Basin Wilderness Preserve — hiking and nature observation
-- West lake Hills Country Club — golf, tennis, and swimming
+- Barton Creek Greenbelt, accessible from several community entry points
+- Lake Austin, nearby for boating and waterfront dining
+- Wild Basin Wilderness Preserve, hiking and nature observation
+- West lake Hills Country Club, golf, tennis, and swimming
 
 ### Dining & Shopping
 
@@ -2098,7 +2098,7 @@ The community's prestige, Eanes ISD schools, and gated security support strong l
     amenitiesAndSchools: `### Eanes ISD
 
 Rob Roy is served by the Eanes Independent School District, including:
-- Westlake High School — perennial state powerhouse
+- Westlake High School, perennial state powerhouse
 - Hill Country Middle School
 - Area elementary schools
 
@@ -2108,9 +2108,9 @@ Nearby private schools include St. Andrew's Episcopal School, Regents School of 
 
 ### Recreation
 
-- Barton Creek Greenbelt — hiking, swimming, and mountain biking
-- Lake Austin — boating, paddleboarding, and waterfront dining
-- West lake Hills Country Club — golf, tennis, and swimming
+- Barton Creek Greenbelt, hiking, swimming, and mountain biking
+- Lake Austin, boating, paddleboarding, and waterfront dining
+- West lake Hills Country Club, golf, tennis, and swimming
 
 ### Shopping & Services
 
@@ -2125,12 +2125,12 @@ The community's built-out nature means new inventory rarely enters the market. T
 
 ### Trophy Property Market
 
-Properties in Rob Roy's premium sections — particularly those with exceptional views or waterfront access — represent trophy assets that attract high-net-worth buyers from across the country.
+Properties in Rob Roy's premium sections, particularly those with exceptional views or waterfront access, represent trophy assets that attract high-net-worth buyers from across the country.
 
 ### Resilient Values
 
 Rob Roy has demonstrated strong value resilience during market downturns, with properties recovering faster than most Austin neighborhoods.`,
-    echelonPerspective: `Rob Roy is among the most exclusive gated communities in Austin, Texas — a collection of hilltop enclaves along the Loop 360 corridor where panoramic views, multi-acre lots, and Eanes ISD schools converge. The community is organized into distinct sections: Rob Roy proper (hilltop estates), Rob Roy on the Creek (properties along Barton Creek), and Rob Roy on the Lake (Lake Austin waterfront access). Buyers are drawn by the combination of gated privacy, architectural distinction, and proximity to both downtown and the West lake Hills corridor. The housing stock features custom-built estates ranging from classic limestone traditionals to contemporary masterpieces with walls of glass oriented toward sweeping views. For buyers comparing options, [West lake Hills](/communities/westlake-hills) offers a similar school district without gates, while [Barton Creek](/communities/barton-creek) provides country club amenities with a resort-caliber lifestyle.`,
+    echelonPerspective: `Rob Roy is among the most exclusive gated communities in Austin, Texas, a collection of hilltop enclaves along the Loop 360 corridor where panoramic views, multi-acre lots, and Eanes ISD schools converge. The community is organized into distinct sections: Rob Roy proper (hilltop estates), Rob Roy on the Creek (properties along Barton Creek), and Rob Roy on the Lake (Lake Austin waterfront access). Buyers are drawn by the combination of gated privacy, architectural distinction, and proximity to both downtown and the West lake Hills corridor. The housing stock features custom-built estates ranging from classic limestone traditionals to contemporary masterpieces with walls of glass oriented toward sweeping views. For buyers comparing options, [West lake Hills](/communities/westlake-hills) offers a similar school district without gates, while [Barton Creek](/communities/barton-creek) provides country club amenities with a resort-caliber lifestyle.`,
     communityComparison: `### Rob Roy vs West lake Hills
 
 [West lake Hills](/communities/westlake-hills) shares Eanes ISD zoning and a Hill Country setting, but is an independent incorporated city without gated entry. Rob Roy offers more exclusivity and larger lots within its guarded enclaves, while West lake Hills provides a broader architectural range and a more integrated community feel. Both attract high-net-worth buyers; the choice often comes down to whether gated privacy or neighborhood accessibility is the priority.
@@ -2141,7 +2141,7 @@ Rob Roy has demonstrated strong value resilience during market downturns, with p
 
 ### Rob Roy vs Tarrytown
 
-[Tarrytown](/communities/tarrytown) represents the opposite end of Austin's luxury spectrum — walkable urban living versus gated Hill Country seclusion. Tarrytown buyers prioritize proximity to downtown restaurants, Lady Bird Lake, and a pedestrian-friendly lifestyle. Rob Roy buyers prioritize panoramic views, multi-acre lots, and gated privacy. The two neighborhoods rarely compete directly for the same buyer profile.`,
+[Tarrytown](/communities/tarrytown) represents the opposite end of Austin's luxury spectrum, walkable urban living versus gated Hill Country seclusion. Tarrytown buyers prioritize proximity to downtown restaurants, Lady Bird Lake, and a pedestrian-friendly lifestyle. Rob Roy buyers prioritize panoramic views, multi-acre lots, and gated privacy. The two neighborhoods rarely compete directly for the same buyer profile.`,
     relatedCommunities: ["westlake-hills", "barton-creek", "lake-austin", "spanish-oaks"],
     faqs: [
       { question: "Is Rob Roy a good place to buy a luxury home in Austin?", answer: "Rob Roy is one of Austin's most exclusive luxury communities, offering gated privacy, panoramic Hill Country views, Eanes ISD schools, and estate-scale architecture. Properties here have demonstrated strong value resilience and consistent appreciation." },
@@ -2172,7 +2172,7 @@ Housing options in Steiner Ranch range from family-friendly homes in established
 The community features pools, parks, trails, sports courts, and community centers. Steiner Ranch is served by the Leander ISD, with several schools located within the community.`,
     lifestyle: `### Resort-Style Living
 
-Steiner Ranch offers resort-style living with multiple pools, sports courts, parks, playgrounds, and miles of trails — creating a self-contained lifestyle for residents of all ages.
+Steiner Ranch offers resort-style living with multiple pools, sports courts, parks, playgrounds, and miles of trails, creating a self-contained lifestyle for residents of all ages.
 
 ### Lake Austin Access
 
@@ -2205,7 +2205,7 @@ Resale homes in mature sections with premium views or pool lots command signific
 Steiner Ranch is served by the Leander ISD, with several schools located within the community:
 - Steiner Ranch Elementary
 - Canyon Ridge Middle School
-- Vandegrift High School — top-rated school with strong academics and athletics
+- Vandegrift High School, top-rated school with strong academics and athletics
 
 ### Amenity Centers
 
@@ -2235,7 +2235,7 @@ Strong rental demand from families provides reliable income. The community's sch
 ### Long-Term Appreciation
 
 Comprehensive amenities, Lake Austin proximity, and consistent family demand support stable appreciation across the community.`,
-    echelonPerspective: `Steiner Ranch is one of Austin's largest and most amenity-rich master-planned communities, perched above Lake Austin in far northwest Austin, Texas. The community appeals primarily to families seeking resort-style amenities — multiple pools, miles of trails, sports courts, and community centers — combined with proximity to Lake Austin and strong Leander ISD schools. The housing market spans a wide range, from established family homes in the $500K range to custom estates in The Commons exceeding $13 million with panoramic Lake Austin views. What distinguishes Steiner Ranch from other master-planned communities is its natural topography: dramatic elevation changes create opportunities for homes with sweeping views that are rare in planned developments. For buyers comparing options, [Bee Cave](/communities/bee-cave) offers Lake Travis ISD schools and Hill Country Galleria shopping, while [Lake Travis waterfront](/communities/lake-travis) provides direct deep-water access at a higher price point.`,
+    echelonPerspective: `Steiner Ranch is one of Austin's largest and most amenity-rich master-planned communities, perched above Lake Austin in far northwest Austin, Texas. The community appeals primarily to families seeking resort-style amenities, multiple pools, miles of trails, sports courts, and community centers, combined with proximity to Lake Austin and strong Leander ISD schools. The housing market spans a wide range, from established family homes in the $500K range to custom estates in The Commons exceeding $13 million with panoramic Lake Austin views. What distinguishes Steiner Ranch from other master-planned communities is its natural topography: dramatic elevation changes create opportunities for homes with sweeping views that are rare in planned developments. For buyers comparing options, [Bee Cave](/communities/bee-cave) offers Lake Travis ISD schools and Hill Country Galleria shopping, while [Lake Travis waterfront](/communities/lake-travis) provides direct deep-water access at a higher price point.`,
     communityComparison: `### Steiner Ranch vs Bee Cave
 
 [Bee Cave](/communities/bee-cave) sits roughly 15 minutes south of Steiner Ranch and offers Lake Travis ISD (versus Leander ISD), upscale shopping at Hill Country Galleria, and a more established commercial corridor. Steiner Ranch provides a more self-contained master-planned experience with resort-style amenities and Lake Austin proximity at generally lower price points. Families often compare both communities before deciding.
@@ -2249,7 +2249,7 @@ Comprehensive amenities, Lake Austin proximity, and consistent family demand sup
 Buyers choosing between Steiner Ranch and [Lake Travis waterfront](/communities/lake-travis) homes are weighing master-planned amenities and family infrastructure against direct deep-water lakefront living. Steiner Ranch offers a broader community experience at lower price points, while Lake Travis waterfront delivers the premium lakeside lifestyle with private docks and open-water access.`,
     relatedCommunities: ["lake-austin", "lake-travis", "bee-cave", "cat-mountain-northwest-hills"],
     faqs: [
-      { question: "Is Steiner Ranch a good place to buy a luxury home near Austin?", answer: "Yes. Steiner Ranch's premium sections — particularly The Commons — feature custom luxury estates with Lake Austin views, while the broader community offers resort-style amenities, strong schools, and a family-oriented lifestyle that supports stable property values." },
+      { question: "Is Steiner Ranch a good place to buy a luxury home near Austin?", answer: "Yes. Steiner Ranch's premium sections, particularly The Commons, feature custom luxury estates with Lake Austin views, while the broader community offers resort-style amenities, strong schools, and a family-oriented lifestyle that supports stable property values." },
       { question: "How does Steiner Ranch compare to nearby neighborhoods?", answer: "Steiner Ranch provides comprehensive master-planned amenities at a more accessible price point than Lakeway or Lake Travis waterfront. Bee Cave offers Lake Travis ISD and upscale shopping. Cat Mountain provides proximity to northwest Austin tech corridors. Steiner Ranch is the choice for families seeking resort living with Lake Austin proximity." },
       { question: "What types of homes are common in Steiner Ranch?", answer: "Steiner Ranch features established family homes, move-in-ready residences in various sections, and custom luxury estates in The Commons with panoramic Lake Austin and Hill Country views. Architectural styles range from traditional Hill Country to modern transitional." },
       { question: "Who typically buys in Steiner Ranch?", answer: "Typical buyers include families seeking Leander ISD schools and resort-style amenities, professionals working in northwest Austin's tech corridor, and luxury buyers drawn to The Commons for its Lake Austin views and custom estate opportunities." },
@@ -2289,9 +2289,9 @@ The neighborhood is surrounded by beloved Austin institutions including Sweetish
 
 ### Parks & Green Space
 
-- Ramsey Park — the neighborhood's primary park with a pool, playground, basketball courts, and large open fields
-- Shoal Creek Greenbelt — scenic trail running along the eastern edge of the neighborhood
-- Bailey Park — pocket park with playground and picnic areas
+- Ramsey Park, the neighborhood's primary park with a pool, playground, basketball courts, and large open fields
+- Shoal Creek Greenbelt, scenic trail running along the eastern edge of the neighborhood
+- Bailey Park, pocket park with playground and picnic areas
 
 ### Family-Friendly Atmosphere
 
@@ -2313,23 +2313,23 @@ Much of Bryker Woods' value is in the land. Original homes on standard lots are 
 Bryker Woods attracts young professionals, families, and empty-nesters who prioritize walkability, central location, and neighborhood character over lot size and square footage.`,
     amenitiesAndSchools: `### Austin ISD Schools
 
-- Bryker Woods Elementary — a neighborhood anchor and one of Austin ISD's most sought-after elementary schools
+- Bryker Woods Elementary, a neighborhood anchor and one of Austin ISD's most sought-after elementary schools
 - O. Henry Middle School
-- Austin High School — one of Austin's top-rated public high schools
+- Austin High School, one of Austin's top-rated public high schools
 
 ### Parks & Recreation
 
-- Ramsey Park — pool, playground, basketball, and open green space
-- Shoal Creek Greenbelt — hiking and biking trails
-- Pease District Park — nearby with extensive trails and picnic areas
-- Lady Bird Lake — accessible by bike within minutes
+- Ramsey Park, pool, playground, basketball, and open green space
+- Shoal Creek Greenbelt, hiking and biking trails
+- Pease District Park, nearby with extensive trails and picnic areas
+- Lady Bird Lake, accessible by bike within minutes
 
 ### Shopping & Dining
 
-- West 35th Street corridor — restaurants, shops, and services
-- Jefferson Street — boutiques and local businesses
-- Burnet Road — rapidly developing dining and retail corridor
-- Downtown Austin — under 10 minutes by car or bike`,
+- West 35th Street corridor, restaurants, shops, and services
+- Jefferson Street, boutiques and local businesses
+- Burnet Road, rapidly developing dining and retail corridor
+- Downtown Austin, under 10 minutes by car or bike`,
     investmentPotential: `### Scarcity Premium
 
 Bryker Woods encompasses a compact geographic area with a fixed number of lots. This structural scarcity, combined with the 78703 zip code cachet and central location, creates strong long-term appreciation dynamics.
@@ -2367,7 +2367,7 @@ Bryker Woods has been one of central Austin's strongest appreciating neighborhoo
 
 ### A Neighborhood Reborn
 
-East Austin's revitalization has been one of the most significant real estate stories in Texas. Former industrial lots and modest postwar homes have given way to striking modern residences, mixed-use developments, boutique hotels, and acclaimed restaurants — all while retaining the eclectic street art, live music venues, and independent businesses that define the area's character.
+East Austin's revitalization has been one of the most significant real estate stories in Texas. Former industrial lots and modest postwar homes have given way to striking modern residences, mixed-use developments, boutique hotels, and acclaimed restaurants, all while retaining the eclectic street art, live music venues, and independent businesses that define the area's character.
 
 ### Architectural Diversity
 
@@ -2375,7 +2375,7 @@ The housing stock in East Austin is remarkably varied. Buyers will find everythi
 
 ### Cultural Capital
 
-East Austin is the epicenter of Austin's creative economy. The neighborhood is home to dozens of galleries, studios, music venues, and maker spaces. Annual events like the East Austin Studio Tour draw visitors from across the country, and the area's culinary scene — anchored by food trucks, taco joints, and James Beard–nominated restaurants — is among the most exciting in the South.`,
+East Austin is the epicenter of Austin's creative economy. The neighborhood is home to dozens of galleries, studios, music venues, and maker spaces. Annual events like the East Austin Studio Tour draw visitors from across the country, and the area's culinary scene, anchored by food trucks, taco joints, and James Beard–nominated restaurants, is among the most exciting in the South.`,
     lifestyle: `### Walkability & Urban Living
 
 East Austin offers a distinctly urban lifestyle that's rare in the Austin market. Residents walk or bike to coffee shops, restaurants, bars, and boutiques along East Cesar Chavez, East 6th Street, East 7th Street, and East 11th Street. The neighborhood's flat terrain and grid street pattern make cycling practical and enjoyable.
@@ -2386,17 +2386,17 @@ East Austin's culinary scene is legendary. From acclaimed restaurants like Suert
 
 ### Arts & Culture
 
-- East Austin Studio Tour — annual open-studio event showcasing hundreds of local artists
-- Canopy — creative arts complex with galleries, studios, and event spaces
+- East Austin Studio Tour, annual open-studio event showcasing hundreds of local artists
+- Canopy, creative arts complex with galleries, studios, and event spaces
 - Numerous murals and street art installations throughout the neighborhood
 - Live music venues including Hotel Vegas, The White Horse, and Dozen Street
 
 ### Outdoor Recreation
 
-- Roy G. Guerrero Colorado River Park — 400+ acres of trails, disc golf, and river access
-- Boggy Creek Greenbelt — neighborhood trail system
-- Lady Bird Lake hike-and-bike trail — accessible from the southern edge of the neighborhood
-- Festival Beach — waterfront park along the Colorado River`,
+- Roy G. Guerrero Colorado River Park, 400+ acres of trails, disc golf, and river access
+- Boggy Creek Greenbelt, neighborhood trail system
+- Lady Bird Lake hike-and-bike trail, accessible from the southern edge of the neighborhood
+- Festival Beach, waterfront park along the Colorado River`,
     marketInsights: `### Pricing
 
 Homes in East Austin range from approximately $400K for smaller bungalows and condos to over $3M for premium new construction on larger lots. The median home price in the core 78702 zip code typically falls between $700K and $1.2M.
@@ -2407,33 +2407,33 @@ East Austin has experienced some of the highest appreciation rates in the Austin
 
 ### New Construction
 
-A significant portion of East Austin's inventory is new construction. Developers have been active throughout the neighborhood, delivering modern homes that command premium pricing — often $500+ per square foot for high-end builds.
+A significant portion of East Austin's inventory is new construction. Developers have been active throughout the neighborhood, delivering modern homes that command premium pricing, often $500+ per square foot for high-end builds.
 
 ### Buyer Profile
 
 East Austin attracts a diverse buyer pool including creative professionals, tech workers, investors, and young families who prioritize walkability, culture, and proximity to downtown over suburban lot sizes and traditional neighborhood structures.`,
     amenitiesAndSchools: `### Austin ISD Schools
 
-- Blackshear Elementary — Fine Arts Academy
+- Blackshear Elementary, Fine Arts Academy
 - Martin Middle School
 - Eastside Early College High School
 - Austin High School and LBJ Early College High School (depending on location)
 
 ### Parks & Recreation
 
-- Roy G. Guerrero Colorado River Park — trails, river access, and disc golf
-- Boggy Creek Greenbelt — neighborhood trails
-- Festival Beach — waterfront park
+- Roy G. Guerrero Colorado River Park, trails, river access, and disc golf
+- Boggy Creek Greenbelt, neighborhood trails
+- Festival Beach, waterfront park
 - Chicano Park and Pan Am Recreation Center
 - Lady Bird Lake hike-and-bike trail
 
 ### Shopping & Dining
 
-- East Cesar Chavez corridor — restaurants, cafés, and boutiques
-- East 6th Street — entertainment and dining district
-- East 11th and 12th Streets — emerging retail and restaurant corridor
-- Plaza Saltillo — mixed-use transit-oriented development with shops and restaurants
-- Mueller retail district — nearby with H-E-B, restaurants, and services`,
+- East Cesar Chavez corridor, restaurants, cafés, and boutiques
+- East 6th Street, entertainment and dining district
+- East 11th and 12th Streets, emerging retail and restaurant corridor
+- Plaza Saltillo, mixed-use transit-oriented development with shops and restaurants
+- Mueller retail district, nearby with H-E-B, restaurants, and services`,
     investmentPotential: `### Appreciation Trajectory
 
 East Austin has been one of the top-appreciating neighborhoods in the entire Austin metro, with values in many blocks increasing 200–400% over the past 15 years. While appreciation has normalized, the area's fundamentals remain strong.
@@ -2444,7 +2444,7 @@ East Austin's proximity to downtown, UT campus, and the convention center create
 
 ### Development Pipeline
 
-Continued investment in infrastructure — including the Project Connect light rail with a planned East Austin station, improved streetscaping, and mixed-use developments — signals ongoing institutional confidence in the area's growth trajectory.
+Continued investment in infrastructure, including the Project Connect light rail with a planned East Austin station, improved streetscaping, and mixed-use developments, signals ongoing institutional confidence in the area's growth trajectory.
 
 ### Long-Term Outlook
 
@@ -2471,7 +2471,7 @@ East Austin's transformation from overlooked corridor to one of Austin's most de
 
 ### Historic Prestige
 
-Established in the early 1900s, Old Enfield is one of Austin's original elite neighborhoods. The streets are lined with stately heritage trees — towering live oaks, pecans, and elms — that create a lush, canopied atmosphere. Many of the neighborhood's original estates have been meticulously preserved, while others have been thoughtfully renovated or replaced with sophisticated contemporary homes that respect the area's architectural heritage.
+Established in the early 1900s, Old Enfield is one of Austin's original elite neighborhoods. The streets are lined with stately heritage trees, towering live oaks, pecans, and elms, that create a lush, canopied atmosphere. Many of the neighborhood's original estates have been meticulously preserved, while others have been thoughtfully renovated or replaced with sophisticated contemporary homes that respect the area's architectural heritage.
 
 ### Unmatched Location
 
@@ -2479,17 +2479,17 @@ Old Enfield's proximity to downtown Austin is perhaps its greatest asset. Reside
 
 ### Architectural Character
 
-The neighborhood showcases a rich tapestry of architectural styles spanning more than a century — from grand Colonial Revival and Tudor estates to elegant mid-century modern homes and refined contemporary new construction. This diversity creates a visually compelling streetscape that reflects Austin's evolution from a small state capital to a world-class city.`,
+The neighborhood showcases a rich tapestry of architectural styles spanning more than a century, from grand Colonial Revival and Tudor estates to elegant mid-century modern homes and refined contemporary new construction. This diversity creates a visually compelling streetscape that reflects Austin's evolution from a small state capital to a world-class city.`,
     lifestyle: `### Central Austin Living
 
-Old Enfield offers the rare combination of estate-level living within walking distance of urban amenities. Residents stroll to restaurants on West 6th Street, shop at the original Whole Foods Market, and enjoy Lady Bird Lake's hike-and-bike trail — all without leaving the neighborhood's immediate orbit.
+Old Enfield offers the rare combination of estate-level living within walking distance of urban amenities. Residents stroll to restaurants on West 6th Street, shop at the original Whole Foods Market, and enjoy Lady Bird Lake's hike-and-bike trail, all without leaving the neighborhood's immediate orbit.
 
 ### Parks & Green Space
 
-- Pease District Park — one of Austin's oldest and largest parks, featuring wooded trails, Shoal Creek swimming holes, and expansive green space directly adjacent to the neighborhood
-- Shoal Creek Greenbelt — scenic trail running along the neighborhood's eastern edge
-- Lady Bird Lake — hike-and-bike trail accessible from the southern boundary
-- Butler Park and Zilker Park — both within easy reach by foot or bike
+- Pease District Park, one of Austin's oldest and largest parks, featuring wooded trails, Shoal Creek swimming holes, and expansive green space directly adjacent to the neighborhood
+- Shoal Creek Greenbelt, scenic trail running along the neighborhood's eastern edge
+- Lady Bird Lake, hike-and-bike trail accessible from the southern boundary
+- Butler Park and Zilker Park, both within easy reach by foot or bike
 
 ### Cultural & Social Life
 
@@ -2504,7 +2504,7 @@ Homes in Old Enfield range from approximately $900K for smaller homes and condom
 
 ### Market Dynamics
 
-Old Enfield is one of Austin's most supply-constrained luxury markets. The neighborhood's compact geography and high proportion of long-term residents mean that quality inventory is consistently scarce. Well-positioned homes often attract multiple offers and trade above asking price — particularly properties on larger lots with mature trees and updated interiors.
+Old Enfield is one of Austin's most supply-constrained luxury markets. The neighborhood's compact geography and high proportion of long-term residents mean that quality inventory is consistently scarce. Well-positioned homes often attract multiple offers and trade above asking price, particularly properties on larger lots with mature trees and updated interiors.
 
 ### Land Premium
 
@@ -2515,9 +2515,9 @@ Old Enfield commands some of the highest per-square-foot land values in Austin. 
 Old Enfield attracts established professionals, executives, empty-nesters, and families who value architectural distinction, walkability to urban amenities, and the prestige of one of Austin's most recognized addresses.`,
     amenitiesAndSchools: `### Austin ISD Schools
 
-- Mathews Elementary — a highly regarded neighborhood school
+- Mathews Elementary, a highly regarded neighborhood school
 - O. Henry Middle School
-- Austin High School — one of Austin's top-rated public high schools
+- Austin High School, one of Austin's top-rated public high schools
 
 ### Private Schools Nearby
 
@@ -2528,20 +2528,20 @@ Old Enfield attracts established professionals, executives, empty-nesters, and f
 
 ### Parks & Recreation
 
-- Pease District Park — wooded trails, swimming holes, and picnic grounds
-- Shoal Creek Greenbelt — hiking and biking
-- Lady Bird Lake trail — running, cycling, and kayaking
-- Zilker Park and Barton Springs Pool — short drive or bike ride
+- Pease District Park, wooded trails, swimming holes, and picnic grounds
+- Shoal Creek Greenbelt, hiking and biking
+- Lady Bird Lake trail, running, cycling, and kayaking
+- Zilker Park and Barton Springs Pool, short drive or bike ride
 
 ### Shopping & Dining
 
-- West 6th Street — restaurants, bars, and entertainment
-- Lamar Boulevard corridor — dining, retail, and services
-- Downtown Austin — under 10 minutes on foot
-- Clarksville neighborhood shops — boutiques and cafés nearby`,
+- West 6th Street, restaurants, bars, and entertainment
+- Lamar Boulevard corridor, dining, retail, and services
+- Downtown Austin, under 10 minutes on foot
+- Clarksville neighborhood shops, boutiques and cafés nearby`,
     investmentPotential: `### Irreplaceable Location
 
-Old Enfield occupies a geographic position that cannot be replicated — between downtown Austin and the western hills, with Lady Bird Lake to the south. This location premium is permanent and appreciates as Austin's urban core continues to densify and attract investment.
+Old Enfield occupies a geographic position that cannot be replicated, between downtown Austin and the western hills, with Lady Bird Lake to the south. This location premium is permanent and appreciates as Austin's urban core continues to densify and attract investment.
 
 ### Scarcity & Demand
 
@@ -2572,7 +2572,7 @@ Old Enfield has been one of central Austin's most consistently appreciating neig
     metaDescription: "Explore luxury homes for sale in Davenport Ranch Austin TX. Gated Hill Country estates with panoramic views, resort-style amenities, and homes from $1.5M to $5M+.",
     priceRange: "$1.5M – $5M+",
     image: davenportRanchImg,
-    overview: `Davenport Ranch is one of West Austin's most sought-after luxury neighborhoods, located off Capital of Texas Highway (Loop 360) in the 78746 zip code. Nestled into the rolling hills west of downtown, the community offers oversized lots, mature tree canopy, and a coveted position within the Eanes Independent School District — home to Westlake High School, one of the top-ranked public high schools in Texas.
+    overview: `Davenport Ranch is one of West Austin's most sought-after luxury neighborhoods, located off Capital of Texas Highway (Loop 360) in the 78746 zip code. Nestled into the rolling hills west of downtown, the community offers oversized lots, mature tree canopy, and a coveted position within the Eanes Independent School District, home to Westlake High School, one of the top-ranked public high schools in Texas.
 
 ### Location Along 360
 
@@ -2580,7 +2580,7 @@ Davenport Ranch sits directly off Loop 360 (Capital of Texas Highway), one of Au
 
 ### Established Luxury
 
-Developed primarily in the 1980s and 1990s, Davenport Ranch features custom-built estate homes on large, wooded lots — many exceeding half an acre. Architectural styles range from traditional Hill Country limestone and Mediterranean-inspired designs to fully renovated contemporary estates. Many homes have been extensively updated with modern finishes, open floor plans, and resort-caliber outdoor living spaces including pools, sport courts, and outdoor kitchens.
+Developed primarily in the 1980s and 1990s, Davenport Ranch features custom-built estate homes on large, wooded lots, many exceeding half an acre. Architectural styles range from traditional Hill Country limestone and Mediterranean-inspired designs to fully renovated contemporary estates. Many homes have been extensively updated with modern finishes, open floor plans, and resort-caliber outdoor living spaces including pools, sport courts, and outdoor kitchens.
 
 ### Community Character
 
@@ -2591,18 +2591,18 @@ Davenport Ranch delivers a true Hill Country lifestyle without sacrificing conve
 
 ### Outdoor Recreation
 
-- Wild Basin Wilderness Preserve — 227 acres of hiking trails and wildlife habitat located adjacent to the neighborhood along 360
-- Barton Creek Greenbelt — premier hiking, swimming, and mountain biking accessible nearby
-- Lake Austin — boating, kayaking, paddleboarding, and waterfront dining a short drive away
+- Wild Basin Wilderness Preserve, 227 acres of hiking trails and wildlife habitat located adjacent to the neighborhood along 360
+- Barton Creek Greenbelt, premier hiking, swimming, and mountain biking accessible nearby
+- Lake Austin, boating, kayaking, paddleboarding, and waterfront dining a short drive away
 - Loop 360 scenic overlooks and Hill Country trails
 
 ### Shopping & Dining
 
 The neighborhood's 360 corridor location provides easy access to multiple retail and dining destinations:
-- Barton Creek Square — major shopping and dining center
-- Hill Country Galleria — upscale retail, restaurants, and entertainment in Bee Cave
-- Westlake dining corridor — restaurants along Bee Cave Road and 360
-- Downtown Austin — 15 minutes via Loop 360
+- Barton Creek Square, major shopping and dining center
+- Hill Country Galleria, upscale retail, restaurants, and entertainment in Bee Cave
+- Westlake dining corridor, restaurants along Bee Cave Road and 360
+- Downtown Austin, 15 minutes via Loop 360
 
 ### Family-Oriented Atmosphere
 
@@ -2613,7 +2613,7 @@ Homes in Davenport Ranch range from approximately $1.5M for homes on standard lo
 
 ### Market Dynamics
 
-Davenport Ranch benefits from consistently strong demand driven by Eanes ISD zoning, the desirable 78746 zip code, and the neighborhood's established reputation. Inventory turns over gradually — many homeowners are long-term residents, which keeps supply tight and values stable.
+Davenport Ranch benefits from consistently strong demand driven by Eanes ISD zoning, the desirable 78746 zip code, and the neighborhood's established reputation. Inventory turns over gradually, many homeowners are long-term residents, which keeps supply tight and values stable.
 
 ### Renovation & Modernization
 
@@ -2626,7 +2626,7 @@ Davenport Ranch attracts senior executives, entrepreneurs, physicians, and estab
 
 - Eanes Elementary
 - Hill Country Middle School
-- Westlake High School — consistently ranked among the top public high schools in Texas, with exceptional academics, athletics, and college placement
+- Westlake High School, consistently ranked among the top public high schools in Texas, with exceptional academics, athletics, and college placement
 
 ### Private Schools Nearby
 
@@ -2636,17 +2636,17 @@ Davenport Ranch attracts senior executives, entrepreneurs, physicians, and estab
 
 ### Parks & Recreation
 
-- Wild Basin Wilderness Preserve — 227 acres of trails adjacent to the neighborhood along 360
-- Barton Creek Greenbelt — hiking, swimming holes, and mountain biking
-- Lake Austin — boating and waterfront recreation nearby
+- Wild Basin Wilderness Preserve, 227 acres of trails adjacent to the neighborhood along 360
+- Barton Creek Greenbelt, hiking, swimming holes, and mountain biking
+- Lake Austin, boating and waterfront recreation nearby
 - Eanes ISD athletic facilities and community parks
 
 ### Shopping & Dining
 
-- Barton Creek Square — shopping, dining, and entertainment
-- Hill Country Galleria — upscale Bee Cave retail and dining
+- Barton Creek Square, shopping, dining, and entertainment
+- Hill Country Galleria, upscale Bee Cave retail and dining
 - Westlake corridor restaurants along Bee Cave Road
-- Downtown Austin — 15 minutes via Capital of Texas Highway (Loop 360)`,
+- Downtown Austin, 15 minutes via Capital of Texas Highway (Loop 360)`,
     investmentPotential: `### Eanes ISD Premium
 
 Westlake High School and the Eanes ISD are among the strongest value drivers in the Austin luxury market. Families consistently pay a premium for Eanes ISD zoning, creating a durable demand floor for Davenport Ranch properties regardless of broader market conditions.
@@ -2684,34 +2684,34 @@ Davenport Ranch has appreciated consistently over multiple decades, supported by
 
 ### Lake Travis Living
 
-Lakeway's defining feature is its extraordinary relationship with Lake Travis — a 63-mile-long reservoir nestled into the Texas Hill Country. Residents enjoy direct lake access through private boat docks, community marinas, lakefront parks, and miles of shoreline. The Lakeway Marina and Rough Hollow Marina provide full-service boat storage, fuel, and launch facilities, while neighborhoods like The Hills of Lakeway, Rough Hollow, and Flintrock Falls offer waterfront or water-view homesites. Buyers seeking additional [Lake Travis waterfront properties](/communities/lake-travis) will find complementary options along the northern shores.
+Lakeway's defining feature is its extraordinary relationship with Lake Travis, a 63-mile-long reservoir nestled into the Texas Hill Country. Residents enjoy direct lake access through private boat docks, community marinas, lakefront parks, and miles of shoreline. The Lakeway Marina and Rough Hollow Marina provide full-service boat storage, fuel, and launch facilities, while neighborhoods like The Hills of Lakeway, Rough Hollow, and Flintrock Falls offer waterfront or water-view homesites. Buyers seeking additional [Lake Travis waterfront properties](/communities/lake-travis) will find complementary options along the northern shores.
 
 ### Planned Community Heritage
 
-Originally developed as a resort community in the 1960s, Lakeway has evolved into one of the Austin metro's most sought-after residential destinations. The community blends its resort heritage with modern master-planned neighborhoods, each offering distinct character — from the established estates along Live Oak Golf Course to the contemporary luxury of Rough Hollow and Flintrock Falls. Tree-lined streets, manicured landscaping, and thoughtful community planning define the Lakeway experience.
+Originally developed as a resort community in the 1960s, Lakeway has evolved into one of the Austin metro's most sought-after residential destinations. The community blends its resort heritage with modern master-planned neighborhoods, each offering distinct character, from the established estates along Live Oak Golf Course to the contemporary luxury of Rough Hollow and Flintrock Falls. Tree-lined streets, manicured landscaping, and thoughtful community planning define the Lakeway experience.
 
 ### Strategic Location
 
-Lakeway sits along State Highway 71 and Ranch Road 620, providing direct access to the broader Austin metro while maintaining a distinct small-city identity. Residents benefit from a thriving local commercial corridor with upscale dining, boutique shopping, and essential services — reducing the need to travel into Austin for daily errands. The [Bee Cave commercial hub](/communities/bee-cave), including the Hill Country Galleria, is minutes away.`,
+Lakeway sits along State Highway 71 and Ranch Road 620, providing direct access to the broader Austin metro while maintaining a distinct small-city identity. Residents benefit from a thriving local commercial corridor with upscale dining, boutique shopping, and essential services, reducing the need to travel into Austin for daily errands. The [Bee Cave commercial hub](/communities/bee-cave), including the Hill Country Galleria, is minutes away.`,
     lifestyle: `### Resort-Caliber Lakefront Living
 
-Lakeway delivers a true resort lifestyle without the vacation price tag. Lake Travis is the community's centerpiece — residents boat, kayak, paddleboard, swim, and fish throughout the year. Sunset cruises, cliff jumping at Pace Bend Park, and waterfront dining at The Oasis or Sundancer Grill are part of the daily fabric. This waterfront lifestyle is shared with neighboring communities like [Steiner Ranch](/communities/steiner-ranch), though Lakeway offers the most comprehensive marina and recreation infrastructure on the lake.
+Lakeway delivers a true resort lifestyle without the vacation price tag. Lake Travis is the community's centerpiece, residents boat, kayak, paddleboard, swim, and fish throughout the year. Sunset cruises, cliff jumping at Pace Bend Park, and waterfront dining at The Oasis or Sundancer Grill are part of the daily fabric. This waterfront lifestyle is shared with neighboring communities like [Steiner Ranch](/communities/steiner-ranch), though Lakeway offers the most comprehensive marina and recreation infrastructure on the lake.
 
 ### Golf & Recreation
 
-- **Live Oak Golf Course** — 18-hole championship course within the original Lakeway resort development
-- **Flintrock Falls Golf Course** — Jack Nicklaus-designed course with dramatic Hill Country elevation changes
-- **Yaupon Golf Course** — additional course serving Lakeway residents
-- **Lakeway Swim Center** — Olympic-size pool and aquatic facility
-- **Lakeway Activity Center** — fitness, tennis, pickleball, and community events
+- **Live Oak Golf Course**, 18-hole championship course within the original Lakeway resort development
+- **Flintrock Falls Golf Course**, Jack Nicklaus-designed course with dramatic Hill Country elevation changes
+- **Yaupon Golf Course**, additional course serving Lakeway residents
+- **Lakeway Swim Center**, Olympic-size pool and aquatic facility
+- **Lakeway Activity Center**, fitness, tennis, pickleball, and community events
 
 ### Outdoor Adventure
 
-- **Lake Travis** — 63 miles of waterway for boating, fishing, swimming, and watersports
-- **Pace Bend Park** — 1,400 acres of cliffs, swimming, camping, and trails along Lake Travis
-- **Hamilton Pool Preserve** — one of Texas's most iconic natural swimming holes, a short drive from Lakeway
-- **Balcones Canyonlands Preserve** — thousands of acres of Hill Country hiking and wildlife habitat nearby
-- **Turkey Bend Recreation Area** — quiet lake access and hiking adjacent to Lakeway
+- **Lake Travis**, 63 miles of waterway for boating, fishing, swimming, and watersports
+- **Pace Bend Park**, 1,400 acres of cliffs, swimming, camping, and trails along Lake Travis
+- **Hamilton Pool Preserve**, one of Texas's most iconic natural swimming holes, a short drive from Lakeway
+- **Balcones Canyonlands Preserve**, thousands of acres of Hill Country hiking and wildlife habitat nearby
+- **Turkey Bend Recreation Area**, quiet lake access and hiking adjacent to Lakeway
 
 ### Dining & Shopping
 
@@ -2722,15 +2722,15 @@ Lakeway's own commercial corridor along Lohmans Crossing and Ranch Road 620 feat
 Lakeway maintains a welcoming, family-oriented culture with an active calendar of community events, farmers markets, holiday celebrations, and charity galas. The Lakeway Heritage Center preserves the community's resort-era history. Lakeway's small-city governance provides residents with responsive local services, a dedicated police department, and community-focused planning.`,
     marketInsights: `### Pricing
 
-Lakeway's real estate market spans a broad range — from well-maintained homes in established sections starting around $600K to waterfront estates and custom builds on premium lots exceeding $5M. The median home price typically falls between $800K and $1.5M, with lakefront and golf-course properties commanding significant premiums. For current data on how Lakeway fits within the broader market, see the [Austin luxury real estate market report](/austin-luxury-real-estate-market-report).
+Lakeway's real estate market spans a broad range, from well-maintained homes in established sections starting around $600K to waterfront estates and custom builds on premium lots exceeding $5M. The median home price typically falls between $800K and $1.5M, with lakefront and golf-course properties commanding significant premiums. For current data on how Lakeway fits within the broader market, see the [Austin luxury real estate market report](/austin-luxury-real-estate-market-report).
 
 ### Market Dynamics
 
-Lakeway benefits from consistent demand driven by Lake Travis ISD schools, waterfront lifestyle appeal, and the community's resort-caliber amenities. Inventory varies by sub-community — established neighborhoods like The Hills of Lakeway and Lakeway Proper see steady turnover, while waterfront estates and Rough Hollow custom lots trade less frequently and at premium valuations. Buyers who also explore [Steiner Ranch real estate options](/communities/steiner-ranch) often compare the two for Lake Travis access and school quality.
+Lakeway benefits from consistent demand driven by Lake Travis ISD schools, waterfront lifestyle appeal, and the community's resort-caliber amenities. Inventory varies by sub-community, established neighborhoods like The Hills of Lakeway and Lakeway Proper see steady turnover, while waterfront estates and Rough Hollow custom lots trade less frequently and at premium valuations. Buyers who also explore [Steiner Ranch real estate options](/communities/steiner-ranch) often compare the two for Lake Travis access and school quality.
 
 ### New Construction & Master-Planned Growth
 
-Several master-planned communities within and adjacent to Lakeway — including Rough Hollow, Flintrock Falls, and Serene Hills — continue to add luxury inventory. New construction ranges from contemporary Hill Country designs to Mediterranean-inspired estates, often featuring smart-home technology, energy-efficient systems, and outdoor living spaces designed for the Texas climate. For buyers seeking a more established, gated enclave, [Barton Creek](/communities/barton-creek) offers an alternative luxury profile closer to central Austin.
+Several master-planned communities within and adjacent to Lakeway, including Rough Hollow, Flintrock Falls, and Serene Hills, continue to add luxury inventory. New construction ranges from contemporary Hill Country designs to Mediterranean-inspired estates, often featuring smart-home technology, energy-efficient systems, and outdoor living spaces designed for the Texas climate. For buyers seeking a more established, gated enclave, [Barton Creek](/communities/barton-creek) offers an alternative luxury profile closer to central Austin.
 
 ### Buyer Profile
 
@@ -2741,7 +2741,7 @@ Lakeway attracts a diverse buyer pool including young families drawn by Lake Tra
 - Lakeway Elementary
 - Hudson Bend Middle School
 - Lake Travis Middle School
-- Lake Travis High School — consistently ranked among the top public high schools in Central Texas, with strong academics, award-winning athletics, and robust extracurricular programs
+- Lake Travis High School, consistently ranked among the top public high schools in Central Texas, with strong academics, award-winning athletics, and robust extracurricular programs
 
 Families weighing school districts across multiple communities will find a detailed breakdown in our guide to the [best luxury neighborhoods in Austin](/best-luxury-neighborhoods-austin).
 
@@ -2753,11 +2753,11 @@ Families weighing school districts across multiple communities will find a detai
 
 ### Parks & Recreation
 
-- Lake Travis — 63 miles of waterway with multiple public and private access points
-- Lakeway City Park — trails, playgrounds, sports fields, and community pavilions
-- Canyonlands Park — nature trails and Hill Country greenspace
-- Pace Bend Park — 1,400 acres of waterfront recreation on Lake Travis
-- Hamilton Pool Preserve — iconic natural swimming hole nearby
+- Lake Travis, 63 miles of waterway with multiple public and private access points
+- Lakeway City Park, trails, playgrounds, sports fields, and community pavilions
+- Canyonlands Park, nature trails and Hill Country greenspace
+- Pace Bend Park, 1,400 acres of waterfront recreation on Lake Travis
+- Hamilton Pool Preserve, iconic natural swimming hole nearby
 
 ### Golf Courses
 
@@ -2767,13 +2767,13 @@ Families weighing school districts across multiple communities will find a detai
 
 ### Shopping & Dining
 
-- Lakeway Town Center — local shops, restaurants, and services
-- Hill Country Galleria — upscale retail and dining in Bee Cave
-- The Oasis on Lake Travis — iconic lakefront dining and entertainment
-- Bee Cave commercial corridor — groceries, boutiques, and everyday services`,
+- Lakeway Town Center, local shops, restaurants, and services
+- Hill Country Galleria, upscale retail and dining in Bee Cave
+- The Oasis on Lake Travis, iconic lakefront dining and entertainment
+- Bee Cave commercial corridor, groceries, boutiques, and everyday services`,
     investmentPotential: `### Lake Travis Waterfront Premium
 
-Waterfront properties on Lake Travis command significant premiums and have historically appreciated at rates well above the broader Austin market. Direct lake access with a private boat dock remains one of the most coveted — and limited — property features in the Austin metro.
+Waterfront properties on Lake Travis command significant premiums and have historically appreciated at rates well above the broader Austin market. Direct lake access with a private boat dock remains one of the most coveted, and limited, property features in the Austin metro.
 
 ### Lake Travis ISD Demand
 
@@ -2785,31 +2785,31 @@ Lakeway's resort heritage and Lake Travis proximity create strong short-term ren
 
 ### Growth Corridor
 
-The Highway 71 and Ranch Road 620 corridors continue to attract commercial and residential development, driving population growth and infrastructure investment. Major employers including Apple, Tesla, and Oracle draw workers who seek Hill Country living within commuting distance — Lakeway is a primary beneficiary of this trend.
+The Highway 71 and Ranch Road 620 corridors continue to attract commercial and residential development, driving population growth and infrastructure investment. Major employers including Apple, Tesla, and Oracle draw workers who seek Hill Country living within commuting distance, Lakeway is a primary beneficiary of this trend.
 
 ### Long-Term Appreciation
 
 Lakeway has appreciated consistently over multiple decades, supported by waterfront scarcity, Lake Travis ISD demand, resort-caliber amenities, and Austin metro growth. These fundamentals support continued strong long-term value growth.`,
-    echelonPerspective: `Lakeway is the most established resort community along Lake Travis, offering an infrastructure depth that sets it apart from more rural lakefront options in the Austin, Texas area. Championship golf at Flintrock Falls and Lakeway Resort, full-service marinas, and a self-contained commercial corridor along Ranch Road 620 create a lifestyle that is largely self-sufficient. The buyer profile ranges from families relocating for Lake Travis ISD schools to retirees seeking waterfront living and second-home buyers from major metros. Pricing spans from $600K for established homes to $5M+ for waterfront estates with private docks. What makes Lakeway particularly compelling is its position as both a primary residence community and a vacation destination — properties with lake access command strong appreciation and seasonal rental income. For buyers comparing options, [Bee Cave](/communities/bee-cave) offers a shorter commute with upscale shopping, while [Steiner Ranch](/communities/steiner-ranch) provides a family-oriented alternative at a lower entry point.`,
+    echelonPerspective: `Lakeway is the most established resort community along Lake Travis, offering an infrastructure depth that sets it apart from more rural lakefront options in the Austin, Texas area. Championship golf at Flintrock Falls and Lakeway Resort, full-service marinas, and a self-contained commercial corridor along Ranch Road 620 create a lifestyle that is largely self-sufficient. The buyer profile ranges from families relocating for Lake Travis ISD schools to retirees seeking waterfront living and second-home buyers from major metros. Pricing spans from $600K for established homes to $5M+ for waterfront estates with private docks. What makes Lakeway particularly compelling is its position as both a primary residence community and a vacation destination, properties with lake access command strong appreciation and seasonal rental income. For buyers comparing options, [Bee Cave](/communities/bee-cave) offers a shorter commute with upscale shopping, while [Steiner Ranch](/communities/steiner-ranch) provides a family-oriented alternative at a lower entry point.`,
     communityComparison: `Lakeway occupies a distinct position among West Austin's luxury communities, offering a combination of waterfront access, resort amenities, and master-planned living that few neighborhoods can match.
 
-Compared to the broader [Lake Travis waterfront market](/communities/lake-travis), Lakeway provides the most comprehensive infrastructure — marinas, championship golf, and a self-contained commercial corridor — making it ideal for buyers who want a full-service lake lifestyle rather than a secluded waterfront retreat.
+Compared to the broader [Lake Travis waterfront market](/communities/lake-travis), Lakeway provides the most comprehensive infrastructure, marinas, championship golf, and a self-contained commercial corridor, making it ideal for buyers who want a full-service lake lifestyle rather than a secluded waterfront retreat.
 
 [Steiner Ranch](/communities/steiner-ranch), located just east along Ranch Road 620, shares Lake Travis ISD zoning and offers a family-oriented master-planned experience at a lower price point. However, Steiner Ranch does not offer direct marina access or the same depth of on-site amenities.
 
-[Bee Cave](/communities/bee-cave) is Lakeway's nearest neighbor and primary commercial hub. Buyers who prioritize proximity to Hill Country Galleria shopping and dining — with a slightly shorter commute to central Austin — may prefer Bee Cave, while those seeking waterfront living gravitate toward Lakeway.
+[Bee Cave](/communities/bee-cave) is Lakeway's nearest neighbor and primary commercial hub. Buyers who prioritize proximity to Hill Country Galleria shopping and dining, with a slightly shorter commute to central Austin, may prefer Bee Cave, while those seeking waterfront living gravitate toward Lakeway.
 
-For buyers drawn to gated enclaves with a more exclusive, estate-oriented atmosphere, [Rob Roy](/communities/rob-roy) and [Pemberton Heights](/communities/pemberton-heights) offer distinguished alternatives closer to central Austin — though without the lake lifestyle that defines Lakeway.
+For buyers drawn to gated enclaves with a more exclusive, estate-oriented atmosphere, [Rob Roy](/communities/rob-roy) and [Pemberton Heights](/communities/pemberton-heights) offer distinguished alternatives closer to central Austin, though without the lake lifestyle that defines Lakeway.
 
 Established northwest Austin neighborhoods like [Great Hills](/communities/great-hills) provide strong value and convenient access to the Arboretum corridor, but lack Lakeway's waterfront recreation and resort character.`,
     relatedCommunities: ["lake-travis", "bee-cave", "steiner-ranch", "spanish-oaks"],
     faqs: [
-      { question: "What is it like living in Lakeway TX?", answer: "Lakeway offers a resort-caliber Hill Country lifestyle with Lake Travis waterfront access, championship golf, top-rated Lake Travis ISD schools, and a thriving local dining and shopping scene — all within 25 minutes of downtown Austin." },
+      { question: "What is it like living in Lakeway TX?", answer: "Lakeway offers a resort-caliber Hill Country lifestyle with Lake Travis waterfront access, championship golf, top-rated Lake Travis ISD schools, and a thriving local dining and shopping scene, all within 25 minutes of downtown Austin." },
       { question: "What are home prices in Lakeway?", answer: "Prices range from approximately $600K for established homes to over $5M for waterfront estates and custom builds on premium lots. The median home price typically falls between $800K and $1.5M." },
       { question: "Are there luxury waterfront homes in Lakeway?", answer: "Yes. Lakeway features waterfront estates on Lake Travis with private boat docks, resort-style pools, and panoramic lake and Hill Country views." },
       { question: "What schools serve Lakeway?", answer: "Lakeway is served by the Lake Travis ISD, including Lake Travis Elementary, Hudson Bend Middle School, Lake Travis Middle School, and Lake Travis High School." },
       { question: "Is Lakeway a good investment area?", answer: "Yes. Waterfront scarcity, Lake Travis ISD demand, resort amenities, and Austin metro growth support strong long-term appreciation. Select properties also offer short-term rental income potential." },
-      { question: "How does Lakeway compare to other West Austin communities?", answer: "Lakeway is unique for its full-service lake lifestyle with marinas, golf, and resort amenities. Nearby communities like [Steiner Ranch](/communities/steiner-ranch) and [Bee Cave](/communities/bee-cave) offer complementary options — Steiner Ranch at a lower price point with shared Lake Travis ISD schools, and Bee Cave with closer proximity to Hill Country Galleria shopping." }
+      { question: "How does Lakeway compare to other West Austin communities?", answer: "Lakeway is unique for its full-service lake lifestyle with marinas, golf, and resort amenities. Nearby communities like [Steiner Ranch](/communities/steiner-ranch) and [Bee Cave](/communities/bee-cave) offer complementary options, Steiner Ranch at a lower price point with shared Lake Travis ISD schools, and Bee Cave with closer proximity to Hill Country Galleria shopping." }
     ]
   }
 ];

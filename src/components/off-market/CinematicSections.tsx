@@ -85,7 +85,7 @@ const CinematicSections = ({ formNode }: Props) => {
   // Testimonial / split-reveal video playback is driven by ScrollTrigger
   // inside the GSAP context (see Section 2.5 below). It fires the moment the
   // split is fully open and re-triggers each time the user scrolls back into
-  // that point — no auto-loop.
+  // that point, no auto-loop.
 
   // Lenis smooth scroll (desktop only)
   useEffect(() => {
@@ -184,9 +184,9 @@ const CinematicSections = ({ formNode }: Props) => {
       });
 
       splitTl
-        // Phase 1 — lock & settle
+        // Phase 1, lock & settle
         .to(".split-cover-image", { scale: 1, ease: "none", duration: 0.30, force3D: true }, 0)
-        // Phase 2 — elegant split, revealing the skyline behind
+        // Phase 2, elegant split, revealing the skyline behind
         .to(
           ".split-top-half",
           { yPercent: -100, ease: "power2.inOut", duration: 0.4, force3D: true },
@@ -199,7 +199,7 @@ const CinematicSections = ({ formNode }: Props) => {
         )
         // Brief hold so the revealed image breathes before text appears
         .to({}, { duration: 0.10 })
-        // Phase 3 — stat lines clear blur and rise over the revealed image
+        // Phase 3, stat lines clear blur and rise over the revealed image
         .to(
           ".split-stat",
           {
@@ -217,7 +217,7 @@ const CinematicSections = ({ formNode }: Props) => {
         .to({}, { duration: 0.20 });
 
 
-      // ── Section 3 (new): Drone Video — pin section, reveal text on scroll
+      // ── Section 3 (new): Drone Video, pin section, reveal text on scroll
       const droneEls = gsap.utils.toArray<HTMLElement>(".drone-reveal");
       gsap.set(droneEls, { opacity: 0, y: 30 });
       const droneTl = gsap.timeline({
@@ -240,9 +240,9 @@ const CinematicSections = ({ formNode }: Props) => {
         force3D: true,
       });
 
-      // ── Section 3: Parallax Image Reveal — REMOVED
+      // ── Section 3: Parallax Image Reveal, REMOVED
 
-      // ── Section 3.5: Cinematic Parallax Bridge — pin and reveal headline
+      // ── Section 3.5: Cinematic Parallax Bridge, pin and reveal headline
       const bridgeTl = gsap.timeline({
         scrollTrigger: {
           trigger: ".bridge-section",
@@ -262,13 +262,13 @@ const CinematicSections = ({ formNode }: Props) => {
         .fromTo(".bridge-rule", { width: 0, opacity: 0 }, { width: 120, opacity: 1, ease: "power2.out", duration: 0.5 }, 0.5)
         .to({}, { duration: 0.3 });
 
-      // ── Section 4: Horizontal Scroll Gallery — REMOVED
+      // ── Section 4: Horizontal Scroll Gallery, REMOVED
 
-      // ── Section 5: Counter — REMOVED
+      // ── Section 5: Counter, REMOVED
 
       // ── Section 6: Cinematic Side-Reveal Testimonial
       // Slow, smooth, deliberate luxury reveal:
-      //  Phase 1 (0 → 0.35): the image breathes — gentle Ken Burns settle.
+      //  Phase 1 (0 → 0.35): the image breathes, gentle Ken Burns settle.
       //  Phase 2 (0.35 → 0.95): the right half drifts off on a long, expo-eased
       //    curve, exposing the testimonial on the right.
       //  Phase 3 (0.65 → 1): each testimonial line clears blur and rises in a
@@ -292,16 +292,16 @@ const CinematicSections = ({ formNode }: Props) => {
       });
 
       testimonialTl
-        // Phase 1 — slow Ken Burns settle
+        // Phase 1, slow Ken Burns settle
         .to(".testimonial-split-image", { scale: 1, ease: "power1.out", duration: 0.35, force3D: true }, 0)
-        // Phase 2 — right half drifts away on a long, refined curve
+        // Phase 2, right half drifts away on a long, refined curve
         .to(".testimonial-split-right", { xPercent: 100, ease: "expo.inOut", duration: 0.60, force3D: true }, 0.35)
-        // Phase 3 — testimonial copy rises in measured cadence (no blur — too expensive on scrub)
+        // Phase 3, testimonial copy rises in measured cadence (no blur, too expensive on scrub)
         .to(".testimonial-line", { opacity: 1, y: 0, ease: "power3.out", stagger: 0.20, duration: 0.70, force3D: true }, 0.65)
         .to(".testimonial-attribution", { opacity: 1, y: 0, ease: "power2.out", duration: 0.55, force3D: true }, 1.05)
         .to({}, { duration: 0.15 });
 
-      // ── Section 7: Form — elegant cinematic reveal as user scrolls
+      // ── Section 7: Form, elegant cinematic reveal as user scrolls
       // past the testimonial. Filter blurs removed (GPU thrash on scrub).
       const formEls = gsap.utils.toArray<HTMLElement>(".form-field");
       gsap.set(formEls, { opacity: 0, y: 60 });
@@ -354,7 +354,7 @@ const CinematicSections = ({ formNode }: Props) => {
   if (isMobile) {
     return (
       <div className="bg-[hsl(220,15%,8%)] text-white">
-        {/* ── Section 2 — Editorial Thesis ── */}
+        {/* ── Section 2, Editorial Thesis ── */}
         <section className="relative px-7 pt-20 pb-24 bg-[hsl(220,15%,8%)] overflow-hidden">
           <p className="relative text-[hsl(var(--gold))] mb-6 font-bold" style={labelStyle}>
             THE THESIS
@@ -370,7 +370,7 @@ const CinematicSections = ({ formNode }: Props) => {
           <div className="mt-10 h-[1px] w-16 bg-[hsl(var(--gold))]/60" />
         </section>
 
-        {/* ── Section 2.5 — Full-bleed editorial image with caption overlay ── */}
+        {/* ── Section 2.5, Full-bleed editorial image with caption overlay ── */}
         <section className="relative">
           <div className="relative w-full h-[78vh] overflow-hidden">
             <img
@@ -406,7 +406,7 @@ const CinematicSections = ({ formNode }: Props) => {
           </div>
         </section>
 
-        {/* ── Section 3 — Drone video with editorial caption ── */}
+        {/* ── Section 3, Drone video with editorial caption ── */}
         <section className="relative">
           <div className="relative w-full h-[80vh] overflow-hidden">
             <video
@@ -448,7 +448,7 @@ const CinematicSections = ({ formNode }: Props) => {
           </div>
         </section>
 
-        {/* ── Section 6 — Editorial testimonial ── */}
+        {/* ── Section 6, Editorial testimonial ── */}
         <section className="bg-[hsl(220,15%,6%)]">
           <div className="relative w-full h-[55vh] overflow-hidden">
             <img
@@ -486,7 +486,7 @@ const CinematicSections = ({ formNode }: Props) => {
           </div>
         </section>
 
-        {/* ── Section 7 — Form ── */}
+        {/* ── Section 7, Form ── */}
         <section id="section-7-form" className="py-20 px-6 bg-[hsl(220,15%,8%)]">
           <div className="max-w-xl mx-auto">
             <p className="text-[hsl(var(--gold))] mb-4 font-bold text-center" style={labelStyle}>
@@ -580,7 +580,7 @@ const CinematicSections = ({ formNode }: Props) => {
             decoding="async"
           />
         </div>
-        {/* Stat overlay — sits above bg image but BELOW the split halves so it
+        {/* Stat overlay, sits above bg image but BELOW the split halves so it
             only becomes visible after the halves slide away. Then the lines
             blur-reveal in over the revealed skyline. */}
         <div className="absolute inset-0 z-[5] flex flex-col items-center justify-center text-center px-8 pointer-events-none">
@@ -615,7 +615,7 @@ const CinematicSections = ({ formNode }: Props) => {
         </div>
       </section>
 
-      {/* ── Section 3 (new): Drone Video — plays only when in view ── */}
+      {/* ── Section 3 (new): Drone Video, plays only when in view ── */}
       <section className="drone-section relative h-screen w-full overflow-hidden bg-[hsl(220,15%,8%)]">
         <video
           ref={droneVideoRef}
@@ -693,7 +693,7 @@ const CinematicSections = ({ formNode }: Props) => {
         </div>
       </section>
 
-      {/* ── Section 4: Horizontal Scroll Gallery — REMOVED ─ */}
+      {/* ── Section 4: Horizontal Scroll Gallery, REMOVED ─ */}
 
       {/* ── Section 6: Vertical Split-Reveal Testimonial ─ */}
       <section className="testimonial-section relative w-full h-screen bg-[hsl(220,15%,6%)] overflow-hidden">
@@ -712,12 +712,12 @@ const CinematicSections = ({ formNode }: Props) => {
               className="testimonial-attribution text-[hsl(var(--gold))] tracking-[0.28em] uppercase font-sans will-change-transform"
               style={{ fontSize: "0.72rem" }}
             >
-              — Private Buyer, West lake Hills
+             , Private Buyer, West lake Hills
             </p>
           </div>
         </div>
 
-        {/* Left half — stays in place */}
+        {/* Left half, stays in place */}
         <div className="testimonial-split-left absolute inset-y-0 left-0 w-1/2 z-10 overflow-hidden will-change-transform">
           <img
             src={testimonialSplitImg}
@@ -727,7 +727,7 @@ const CinematicSections = ({ formNode }: Props) => {
           />
         </div>
 
-        {/* Right half — slides off to the RIGHT */}
+        {/* Right half, slides off to the RIGHT */}
         <div className="testimonial-split-right absolute inset-y-0 right-0 w-1/2 z-10 overflow-hidden will-change-transform">
           <img
             src={testimonialSplitImg}

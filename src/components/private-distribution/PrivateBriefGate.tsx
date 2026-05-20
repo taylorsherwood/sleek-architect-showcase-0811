@@ -3,7 +3,7 @@ import { formatPhoneNumber, getPhoneDigits, submitLeadToZapier } from "@/lib/for
 
 /**
  * Refined inline gate for Private Distribution editions.
- * Designed to feel like part of the editorial layout rather than a popup —
+ * Designed to feel like part of the editorial layout rather than a popup,
  * ivory card with a single thin gold rule, restrained typography, and
  * minimum-friction fields (name, email, optional phone).
  */
@@ -35,7 +35,7 @@ const PrivateBriefGate = ({ editionSlug, editionTitle, onUnlock }: PrivateBriefG
       name: name.trim(),
       email: email.trim(),
       phone: phone ? getPhoneDigits(phone) : "",
-      message: `Private Distribution access — ${editionTitle}`,
+      message: `Private Distribution access, ${editionTitle}`,
       source: "Private Distribution",
       extra: {
         edition_slug: editionSlug,
@@ -74,7 +74,7 @@ const PrivateBriefGate = ({ editionSlug, editionTitle, onUnlock }: PrivateBriefG
       className="relative w-full overflow-hidden"
       style={{ background: "#F5F3EF" }}
     >
-      {/* Veil — faux locked-content shimmer behind gate */}
+      {/* Veil, faux locked-content shimmer behind gate */}
       <div
         aria-hidden="true"
         className="absolute inset-x-0 top-0 h-[180px] pointer-events-none"
@@ -173,7 +173,7 @@ const PrivateBriefGate = ({ editionSlug, editionTitle, onUnlock }: PrivateBriefG
                 fontWeight: 400,
               }}
             >
-              Off-market dossiers, pocket inventory, and advisory commentary —
+              Off-market dossiers, pocket inventory, and advisory commentary,
               shared with a narrow audience by introduction only.
             </p>
           </div>

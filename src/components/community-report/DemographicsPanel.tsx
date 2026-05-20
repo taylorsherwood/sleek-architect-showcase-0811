@@ -57,7 +57,7 @@ const DemographicsPanel = ({ demographics }: Props) => {
       <p className="text-sm text-muted-foreground mb-8">
         {hasData
           ? "Key demographic metrics for the area, based on the latest available US Census data."
-          : "Demographic metrics — populate via admin. Showing placeholder layout."}
+          : "Demographic metrics, populate via admin. Showing placeholder layout."}
       </p>
       <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-px bg-border">
         {items.map((item) => (

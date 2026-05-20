@@ -79,7 +79,7 @@ const MarketReport = () => {
 
               <h3 className="text-xl font-display font-medium mb-3">Tax Advantages</h3>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Texas's absence of a state income tax remains a powerful draw for high-income buyers. For households earning $500,000 to $2 million or more annually, the tax savings compared to California, New York, or New Jersey can amount to $75,000 to $250,000 or more per year—a compelling financial incentive that directly enhances luxury home purchasing power.
+                Texas's absence of a state income tax remains a powerful draw for high-income buyers. For households earning $500,000 to $2 million or more annually, the tax savings compared to California, New York, or New Jersey can amount to $75,000 to $250,000 or more per year, a compelling financial incentive that directly enhances luxury home purchasing power.
               </p>
 
               <h3 className="text-xl font-display font-medium mb-3">Remote Work Flexibility</h3>
@@ -161,7 +161,7 @@ const MarketReport = () => {
                 Investment Outlook and Opportunities
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Austin's luxury real estate market offers compelling investment opportunities across multiple strategies and risk profiles. The city's fundamental growth drivers—tech-economy expansion, in-migration, tax advantages, and lifestyle appeal—provide a strong foundation for continued appreciation.
+                Austin's luxury real estate market offers compelling investment opportunities across multiple strategies and risk profiles. The city's fundamental growth drivers, tech-economy expansion, in-migration, tax advantages, and lifestyle appeal, provide a strong foundation for continued appreciation.
               </p>
 
               <h3 className="text-xl font-display font-medium mb-3">Strongest Investment Segments</h3>
@@ -191,7 +191,7 @@ const MarketReport = () => {
                 Market Forecast Summary
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Looking ahead, Austin's luxury market is expected to deliver continued, moderated appreciation in the 5-10% range for premium neighborhoods, with supply-constrained segments like Lake Austin waterfront and West lake Hills at the higher end of that range. The market will reward quality—well-located, well-designed, and well-maintained properties will outperform, while dated properties in secondary locations may see slower appreciation.
+                Looking ahead, Austin's luxury market is expected to deliver continued, moderated appreciation in the 5-10% range for premium neighborhoods, with supply-constrained segments like Lake Austin waterfront and West lake Hills at the higher end of that range. The market will reward quality, well-located, well-designed, and well-maintained properties will outperform, while dated properties in secondary locations may see slower appreciation.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 For buyers, the current market presents an opportunity to acquire luxury properties at price points below the pandemic-era peaks while still benefiting from Austin's long-term growth trajectory. For sellers, strategic pricing and premium marketing remain essential to achieving optimal outcomes in a more discerning buyer market. For investors, Austin continues to offer one of the best risk-adjusted luxury real estate opportunities in the country.

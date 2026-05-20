@@ -185,7 +185,7 @@ const About = () => {
               <span className="italic">Elevated</span>
             </h1>
             <p className="text-xl text-muted-foreground mt-6 leading-[1.7]">
-              Echelon Property Group was founded with a singular vision: to redefine luxury real estate advisory in Austin, Texas. We are not simply agents — we are strategic partners who guide buyers, sellers, and investors through the most consequential financial decisions of their lives.
+              Echelon Property Group was founded with a singular vision: to redefine luxury real estate advisory in Austin, Texas. We are not simply agents, we are strategic partners who guide buyers, sellers, and investors through the most consequential financial decisions of their lives.
             </p>
           </div>
         </div>
@@ -228,7 +228,7 @@ const About = () => {
         </section>
       </FadeIn>
 
-      {/* Our Approach — 2-column */}
+      {/* Our Approach, 2-column */}
       <FadeIn>
         <section className="pt-24 pb-20 bg-background">
           <div className="container mx-auto px-6">
@@ -239,7 +239,7 @@ const About = () => {
                 </h2>
                 <div className="space-y-6 text-muted-foreground leading-[1.7]">
                   <p>
-                    Discretion, strategy, and access define every engagement at Echelon Property Group. In a market where the most compelling opportunities rarely appear on public listing portals, our clients benefit from deep relationships with Austin's top agents, developers, and property owners. We identify and secure <Link to="/off-market-real-estate-austin" className="text-foreground hover:text-gold transition-colors duration-300 underline underline-offset-4 decoration-border">off-market properties</Link> before they reach the open market — and we position our sellers to attract qualified, motivated buyers with precision and confidentiality.
+                    Discretion, strategy, and access define every engagement at Echelon Property Group. In a market where the most compelling opportunities rarely appear on public listing portals, our clients benefit from deep relationships with Austin's top agents, developers, and property owners. We identify and secure <Link to="/off-market-real-estate-austin" className="text-foreground hover:text-gold transition-colors duration-300 underline underline-offset-4 decoration-border">off-market properties</Link> before they reach the open market, and we position our sellers to attract qualified, motivated buyers with precision and confidentiality.
                   </p>
                   <p>
                     Our advisory practice extends well beyond transaction coordination. We provide institutional-grade market analysis, strategic pricing counsel, and negotiation expertise honed across hundreds of residential, <Link to="/austin-commercial-real-estate" className="text-foreground hover:text-gold transition-colors duration-300 underline underline-offset-4 decoration-border">commercial</Link>, and <Link to="/land-for-sale-austin" className="text-foreground hover:text-gold transition-colors duration-300 underline underline-offset-4 decoration-border">land transactions</Link>. Whether you are <Link to="/buy" className="text-foreground hover:text-gold transition-colors duration-300 underline underline-offset-4 decoration-border">acquiring a primary residence</Link>, diversifying into <Link to="/invest" className="text-foreground hover:text-gold transition-colors duration-300 underline underline-offset-4 decoration-border">investment property</Link>, or preparing a luxury estate for sale, our approach is built around your specific objectives and timeline.
@@ -274,7 +274,7 @@ const About = () => {
                 <img
                   src={taylorAboutHeadshot}
                   alt="Taylor Sherwood, founder of Echelon Property Group and Austin luxury real estate advisor"
-                  title="Taylor Sherwood — Echelon Property Group founder and Austin real estate advisor"
+                  title="Taylor Sherwood, Echelon Property Group founder and Austin real estate advisor"
                   className="w-full max-h-[520px] md:max-h-[580px] object-cover object-[30%_center]"
                   loading="eager"
                   decoding="async"
@@ -324,10 +324,10 @@ const About = () => {
               </h2>
               <div className="space-y-6 text-muted-foreground leading-[1.7]">
                 <p>
-                  Austin's luxury landscape is defined by its neighborhoods — each with distinct character, market dynamics, and lifestyle appeal. Echelon Property Group maintains deep expertise across the communities where discerning buyers and investors focus their attention: <Link to="/communities/barton-creek" className="text-foreground hover:text-gold transition-colors duration-300 underline underline-offset-4 decoration-border">Barton Creek</Link>, <Link to="/communities/westlake-hills" className="text-foreground hover:text-gold transition-colors duration-300 underline underline-offset-4 decoration-border">West lake Hills</Link>, <Link to="/communities/lake-austin" className="text-foreground hover:text-gold transition-colors duration-300 underline underline-offset-4 decoration-border">Lake Austin</Link>, <Link to="/communities/tarrytown" className="text-foreground hover:text-gold transition-colors duration-300 underline underline-offset-4 decoration-border">Tarrytown</Link>, <Link to="/communities/rollingwood" className="text-foreground hover:text-gold transition-colors duration-300 underline underline-offset-4 decoration-border">Rollingwood</Link>, <Link to="/communities/spanish-oaks" className="text-foreground hover:text-gold transition-colors duration-300 underline underline-offset-4 decoration-border">Spanish Oaks</Link>, Zilker, Cat Mountain, and the broader Texas Hill Country.
+                  Austin's luxury landscape is defined by its neighborhoods, each with distinct character, market dynamics, and lifestyle appeal. Echelon Property Group maintains deep expertise across the communities where discerning buyers and investors focus their attention: <Link to="/communities/barton-creek" className="text-foreground hover:text-gold transition-colors duration-300 underline underline-offset-4 decoration-border">Barton Creek</Link>, <Link to="/communities/westlake-hills" className="text-foreground hover:text-gold transition-colors duration-300 underline underline-offset-4 decoration-border">West lake Hills</Link>, <Link to="/communities/lake-austin" className="text-foreground hover:text-gold transition-colors duration-300 underline underline-offset-4 decoration-border">Lake Austin</Link>, <Link to="/communities/tarrytown" className="text-foreground hover:text-gold transition-colors duration-300 underline underline-offset-4 decoration-border">Tarrytown</Link>, <Link to="/communities/rollingwood" className="text-foreground hover:text-gold transition-colors duration-300 underline underline-offset-4 decoration-border">Rollingwood</Link>, <Link to="/communities/spanish-oaks" className="text-foreground hover:text-gold transition-colors duration-300 underline underline-offset-4 decoration-border">Spanish Oaks</Link>, Zilker, Cat Mountain, and the broader Texas Hill Country.
                 </p>
                 <p>
-                  This hyperlocal knowledge allows us to advise with precision — whether you are evaluating a <Link to="/lake-austin-waterfront-homes-for-sale" className="text-foreground hover:text-gold transition-colors duration-300 underline underline-offset-4 decoration-border">waterfront estate on Lake Austin</Link>, comparing school districts in Westlake, or assessing <Link to="/austin-land-development-opportunities" className="text-foreground hover:text-gold transition-colors duration-300 underline underline-offset-4 decoration-border">land value in Dripping Springs</Link>. We understand the micro-trends, development pipelines, and buyer profiles that shape pricing in each community, and we use that intelligence to position our clients for success.
+                  This hyperlocal knowledge allows us to advise with precision, whether you are evaluating a <Link to="/lake-austin-waterfront-homes-for-sale" className="text-foreground hover:text-gold transition-colors duration-300 underline underline-offset-4 decoration-border">waterfront estate on Lake Austin</Link>, comparing school districts in Westlake, or assessing <Link to="/austin-land-development-opportunities" className="text-foreground hover:text-gold transition-colors duration-300 underline underline-offset-4 decoration-border">land value in Dripping Springs</Link>. We understand the micro-trends, development pipelines, and buyer profiles that shape pricing in each community, and we use that intelligence to position our clients for success.
                 </p>
                 <p>
                   Ready to find your place in one of Austin's most coveted neighborhoods? <Link to="/listings" className="text-foreground hover:text-gold transition-colors duration-300 underline underline-offset-4">Explore available homes</Link> or <Link to="/contact" className="text-foreground hover:text-gold transition-colors duration-300 underline underline-offset-4">connect with our team</Link> to discuss your search.
@@ -351,10 +351,10 @@ const About = () => {
                   Every client engagement at Echelon Property Group begins with listening. We take time to understand your goals, financial parameters, and timeline before recommending a course of action. This consultative approach ensures that every property we present, every marketing strategy we design, and every negotiation we lead is aligned with your specific priorities.
                 </p>
                 <p>
-                  For <strong>buyers</strong>, we provide curated property tours, off-market sourcing, and rigorous due diligence — from comparative market analysis to inspection coordination. For <strong>sellers</strong>, we deliver premium marketing campaigns featuring professional photography, cinematic video, targeted digital advertising, and strategic pricing that maximizes return. Considering <Link to="/sell" className="text-foreground hover:text-gold transition-colors duration-300 underline underline-offset-4">selling your home</Link>? Our team provides a complimentary market evaluation to help you understand your position.
+                  For <strong>buyers</strong>, we provide curated property tours, off-market sourcing, and rigorous due diligence, from comparative market analysis to inspection coordination. For <strong>sellers</strong>, we deliver premium marketing campaigns featuring professional photography, cinematic video, targeted digital advertising, and strategic pricing that maximizes return. Considering <Link to="/sell" className="text-foreground hover:text-gold transition-colors duration-300 underline underline-offset-4">selling your home</Link>? Our team provides a complimentary market evaluation to help you understand your position.
                 </p>
                 <p>
-                  For <strong>investors</strong>, we offer deal sourcing, underwriting support, and portfolio strategy across residential, commercial, multifamily, and land asset classes. Our background in economics and investment analysis ensures that every recommendation is grounded in financial fundamentals — not speculation.
+                  For <strong>investors</strong>, we offer deal sourcing, underwriting support, and portfolio strategy across residential, commercial, multifamily, and land asset classes. Our background in economics and investment analysis ensures that every recommendation is grounded in financial fundamentals, not speculation.
                 </p>
               </div>
             </div>
@@ -372,7 +372,7 @@ const About = () => {
               </h2>
               <div className="space-y-6 text-muted-foreground leading-[1.7]">
                 <p>
-                  We measure success not by the number of transactions we close, but by the strength of the relationships we build. Many of our clients return for multiple transactions — purchasing investment properties, upgrading primary residences, or referring family and colleagues. That continuity reflects a level of trust and satisfaction that only comes from consistently delivering exceptional outcomes.
+                  We measure success not by the number of transactions we close, but by the strength of the relationships we build. Many of our clients return for multiple transactions, purchasing investment properties, upgrading primary residences, or referring family and colleagues. That continuity reflects a level of trust and satisfaction that only comes from consistently delivering exceptional outcomes.
                 </p>
                 <p>
                   As a member of the eXp Luxury Division, Echelon Property Group connects clients to a global network of agents and affluent buyers, expanding the reach of every listing and search beyond Austin's borders. Whether your next real estate move involves a $1.5 million Tarrytown bungalow or a $15 million Lake Austin estate, we bring the same level of strategic thinking and personal commitment.
@@ -383,7 +383,7 @@ const About = () => {
         </section>
       </FadeIn>
 
-      {/* Testimonials — editorial single-quote display */}
+      {/* Testimonials, editorial single-quote display */}
       <AboutTestimonialsSection />
       <div className="pt-20 bg-secondary" />
 
@@ -444,7 +444,7 @@ const About = () => {
                   <h3 className="text-xl font-display font-medium mb-3"><Link to="/communities" className="hover:text-[hsl(var(--gold))] transition-colors duration-500">Local Expertise</Link></h3>
                   <p className="text-muted-foreground">
                     Deep roots in Austin's most prestigious neighborhoods. We don't just sell homes 
-                    here—we live here.
+                    here, we live here.
                   </p>
                 </div>
               </div>

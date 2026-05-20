@@ -92,7 +92,7 @@ const InlineCommunityReport = ({ slug, unlockedExtras, hideListings = false }: I
             </p>
           </div>
 
-          {/* Teaser Highlights — what the report contains */}
+          {/* Teaser Highlights, what the report contains */}
           {community.highlights?.length > 0 && (
             <div className="grid sm:grid-cols-2 gap-px bg-border border-y border-border">
               {community.highlights.slice(0, 4).map((h, i) => (
@@ -108,7 +108,7 @@ const InlineCommunityReport = ({ slug, unlockedExtras, hideListings = false }: I
             </div>
           )}
 
-          {/* Inside the report — concrete benefits */}
+          {/* Inside the report, concrete benefits */}
           <div className="px-6 md:px-12 py-10 md:py-12 max-w-3xl mx-auto">
             <p className="text-xs text-muted-foreground tracking-[0.2em] mb-6 text-center">
               INSIDE THIS BRIEFING
@@ -166,7 +166,7 @@ const InlineCommunityReport = ({ slug, unlockedExtras, hideListings = false }: I
             <div className="border border-gold/40 bg-secondary px-6 md:px-10 py-6 md:py-8 mb-12 text-center">
               <p className="text-minimal text-gold mb-2 tracking-[0.2em]">ACCESS GRANTED</p>
               <p className="text-foreground text-base md:text-lg leading-relaxed">
-                The full {community.name} briefing is open below. Take your time — we will not
+                The full {community.name} briefing is open below. Take your time, we will not
                 follow up unless you reach out first.
               </p>
             </div>

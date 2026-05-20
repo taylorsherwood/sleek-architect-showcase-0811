@@ -11,7 +11,7 @@ import eastAustinImage from "@/assets/east-austin-commercial.jpg";
 import tarrytownImage from "@/assets/tarrytown-private-sale.webp";
 
 /* ------------------------------------------------------------------ */
-/*  DATA — Edit this array to add / remove / update private sales      */
+/*  DATA, Edit this array to add / remove / update private sales      */
 /* ------------------------------------------------------------------ */
 
 export interface PrivateSaleItem {

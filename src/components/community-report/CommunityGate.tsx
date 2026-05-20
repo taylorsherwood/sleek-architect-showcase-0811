@@ -41,7 +41,7 @@ const CommunityGate = ({
     const utm = getUtmParams();
 
     // 1. Insert the lead (also dispatches Zapier).
-    const message = `Community report unlock — ${communityName}${interest ? ` | Interest: ${interest}` : ""}`;
+    const message = `Community report unlock, ${communityName}${interest ? ` | Interest: ${interest}` : ""}`;
     await submitLeadToZapier({
       name: `${firstName.trim()} ${lastName.trim()}`,
       email: email.trim(),

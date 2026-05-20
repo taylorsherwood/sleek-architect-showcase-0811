@@ -110,7 +110,7 @@ const LockedReportPreview = ({
     await submitLeadToZapier({
       name: `${communityName} Quick Unlock`,
       email: trimmed,
-      message: `Quick unlock — ${communityName} community report`,
+      message: `Quick unlock, ${communityName} community report`,
       source: sourceTag,
       extra: {
         first_name: "(quick unlock)",
@@ -237,7 +237,7 @@ const LockedReportPreview = ({
             </div>
           </div>
 
-          {/* CTA — button morphs into email field on click, centered under cards */}
+          {/* CTA, button morphs into email field on click, centered under cards */}
           <div className="mt-12 flex flex-col items-center text-center gap-6">
             <div className="w-full max-w-xl flex justify-center">
               {!formExpanded ? (

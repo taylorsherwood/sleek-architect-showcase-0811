@@ -48,7 +48,7 @@ const SchoolsPanel = ({ schools }: Props) => {
       <p className="text-sm text-muted-foreground mb-6">
         {hasData
           ? "Schools serving the community. Filter by level to narrow results."
-          : "Schools — populate via admin. Showing placeholder layout."}
+          : "Schools, populate via admin. Showing placeholder layout."}
       </p>
 
       <div className="flex flex-wrap gap-2 mb-6">

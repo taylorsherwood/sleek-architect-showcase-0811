@@ -22,7 +22,7 @@ const NEIGHBORHOODS = [
 ];
 
 /**
- * Horizontal pinned scroll gallery — mirrors Section 4 of
+ * Horizontal pinned scroll gallery, mirrors Section 4 of
  * /off-market-real-estate-austin (CinematicSections.tsx).
  *
  * Desktop/tablet: section pins, neighborhoods slide horizontally as the
@@ -91,7 +91,7 @@ const HomeCommunitiesScroll = () => {
       });
 
       // Per-card subtle parallax (skip last card to avoid post-pin shift).
-      // Skipped on coarse pointers (touch tablets) and Safari — both pay a
+      // Skipped on coarse pointers (touch tablets) and Safari, both pay a
       // disproportionate cost for the extra scrubbed transforms during the pin.
       const isCoarsePointer = window.matchMedia("(pointer: coarse)").matches;
       const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
@@ -156,7 +156,7 @@ const HomeCommunitiesScroll = () => {
 
   return (
     <div ref={rootRef} className="bg-[hsl(220,15%,6%)]">
-      {/* DESKTOP / TABLET — pinned horizontal scroll */}
+      {/* DESKTOP / TABLET, pinned horizontal scroll */}
       <section
         className="hcs-section relative h-screen w-full overflow-hidden bg-[hsl(220,15%,6%)] hidden md:block"
         aria-label="Featured Austin communities"
@@ -169,7 +169,7 @@ const HomeCommunitiesScroll = () => {
             <Link
               key={n.name}
               to={`/communities/${n.slug}`}
-              aria-label={`Explore ${n.name} — luxury Austin community`}
+              aria-label={`Explore ${n.name}, luxury Austin community`}
               className={`hcs-card group relative h-screen flex items-end overflow-hidden cursor-pointer ${idx === 0 ? "is-first" : ""}`}
               style={{ width: "100vw", height: "100vh", flexShrink: 0 }}
             >
@@ -226,13 +226,13 @@ const HomeCommunitiesScroll = () => {
         </div>
       </section>
 
-      {/* MOBILE — stacked full-bleed fallback (no pin) */}
+      {/* MOBILE, stacked full-bleed fallback (no pin) */}
       <div className="md:hidden bg-[hsl(220,15%,6%)]">
         {NEIGHBORHOODS.map((n) => (
           <Link
             key={`m-${n.name}`}
             to={`/communities/${n.slug}`}
-            aria-label={`Explore ${n.name} — luxury Austin community`}
+            aria-label={`Explore ${n.name}, luxury Austin community`}
             className="relative w-full overflow-hidden block"
             style={{ height: "70vh" }}
           >

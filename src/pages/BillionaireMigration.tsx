@@ -35,9 +35,9 @@ const articleSchema = {
 };
 
 const billionaireFaqs = [
-  { question: "Why are billionaires moving to Austin Texas?", answer: "Billionaires and high-net-worth founders are relocating to Austin for Texas's zero state income tax, a pro-business regulatory environment, proximity to a booming tech economy, and access to luxury waterfront living on Lake Austin and in West lake Hills — all within minutes of a major metro." },
+  { question: "Why are billionaires moving to Austin Texas?", answer: "Billionaires and high-net-worth founders are relocating to Austin for Texas's zero state income tax, a pro-business regulatory environment, proximity to a booming tech economy, and access to luxury waterfront living on Lake Austin and in West lake Hills, all within minutes of a major metro." },
   { question: "How does billionaire migration affect Austin real estate prices?", answer: "When ultra-high-net-worth individuals relocate, they drive demand for premium inventory in supply-constrained neighborhoods like Lake Austin, West lake Hills, and Tarrytown. This increases competition, accelerates price appreciation, and pushes more luxury transactions off-market." },
-  { question: "Which Austin neighborhoods attract the most billionaires?", answer: "Lake Austin waterfront, West lake Hills, and Tarrytown are the primary destinations for billionaire buyers. These areas offer large estates, privacy, water access, and proximity to downtown Austin — a combination rarely found in other major U.S. metros." },
+  { question: "Which Austin neighborhoods attract the most billionaires?", answer: "Lake Austin waterfront, West lake Hills, and Tarrytown are the primary destinations for billionaire buyers. These areas offer large estates, privacy, water access, and proximity to downtown Austin, a combination rarely found in other major U.S. metros." },
   { question: "Are luxury homes in Austin a good investment in 2026?", answer: "Austin's luxury market continues to benefit from corporate relocations, population growth, and limited high-end inventory. Combined with no state income tax and strong long-term appreciation in neighborhoods like Barton Creek and Lake Austin, luxury real estate in Austin remains a compelling investment." },
 ];
 
@@ -124,10 +124,10 @@ const BillionaireMigration = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-[700px] mx-auto" style={{ lineHeight: "1.65" }}>
             <div className="space-y-10">
-              {/* Section 1 — Opening */}
+              {/* Section 1, Opening */}
               <section className="space-y-[18px]">
                 <p className="text-foreground/85 text-lg md:text-xl font-light">
-                  Austin isn't just growing — it's compounding.
+                  Austin isn't just growing, it's compounding.
                 </p>
                 <p className="text-foreground/60">
                   The latest signal came quietly, but it matters.
@@ -145,7 +145,7 @@ const BillionaireMigration = () => {
                 </p>
                 <p className="text-foreground/60">
                   He joins a steadily growing group of billionaires, founders, and capital
-                  allocators who are no longer just investing in Austin — they're living here.
+                  allocators who are no longer just investing in Austin, they're living here.
                 </p>
                 <p className="text-foreground/60">
                   And when people at that level move, they don't follow trends.
@@ -153,13 +153,13 @@ const BillionaireMigration = () => {
                 <p className="text-foreground/85 font-light text-lg">They create them.</p>
               </section>
 
-              {/* Section 2 — The Billionaire Migration */}
+              {/* Section 2, The Billionaire Migration */}
               <section>
                 <h2 className="text-2xl md:text-3xl font-display font-normal text-architectural mt-10 mb-4">
                   The Billionaire Migration Is Real
                 </h2>
                 <p className="text-foreground/60 mb-5">
-                  Kalanick isn't an outlier — he's part of a broader shift that's been building
+                  Kalanick isn't an outlier, he's part of a broader shift that's been building
                   for years.
                 </p>
                 <p className="text-foreground/60 mb-6">
@@ -169,42 +169,42 @@ const BillionaireMigration = () => {
                   <li className="text-foreground/60 flex items-start gap-3">
                     <span className="text-gold mt-[7px] text-[7px]">●</span>
                     <span>
-                      <strong className="text-foreground/80 font-medium">Elon Musk</strong> — Tesla
+                      <strong className="text-foreground/80 font-medium">Elon Musk</strong>, Tesla
                       HQ relocation and personal move to Texas
                     </span>
                   </li>
                   <li className="text-foreground/60 flex items-start gap-3">
                     <span className="text-gold mt-[7px] text-[7px]">●</span>
                     <span>
-                      <strong className="text-foreground/80 font-medium">Michael Dell</strong> —
+                      <strong className="text-foreground/80 font-medium">Michael Dell</strong>,
                       Founder & CEO of Dell Technologies, longtime Austin resident
                     </span>
                   </li>
                   <li className="text-foreground/60 flex items-start gap-3">
                     <span className="text-gold mt-[7px] text-[7px]">●</span>
                     <span>
-                      <strong className="text-foreground/80 font-medium">Travis Kalanick</strong> —
+                      <strong className="text-foreground/80 font-medium">Travis Kalanick</strong>,
                       Uber co-founder, now Austin-based
                     </span>
                   </li>
                   <li className="text-foreground/60 flex items-start gap-3">
                     <span className="text-gold mt-[7px] text-[7px]">●</span>
                     <span>
-                      <strong className="text-foreground/80 font-medium">Joe Liemandt</strong> —
+                      <strong className="text-foreground/80 font-medium">Joe Liemandt</strong>,
                       Austin-based billionaire founder of Trilogy Software
                     </span>
                   </li>
                   <li className="text-foreground/60 flex items-start gap-3">
                     <span className="text-gold mt-[7px] text-[7px]">●</span>
                     <span>
-                      <strong className="text-foreground/80 font-medium">Brian Sheth</strong> —
+                      <strong className="text-foreground/80 font-medium">Brian Sheth</strong>,
                       billionaire private equity leader formerly of Vista Equity Partners
                     </span>
                   </li>
                   <li className="text-foreground/60 flex items-start gap-3">
                     <span className="text-gold mt-[7px] text-[7px]">●</span>
                     <span>
-                      <strong className="text-foreground/80 font-medium">David Sacks</strong> —
+                      <strong className="text-foreground/80 font-medium">David Sacks</strong>,
                       venture capitalist expanding presence in Texas
                     </span>
                   </li>
@@ -215,11 +215,11 @@ const BillionaireMigration = () => {
                 </p>
                 <p className="text-foreground/60">The pattern is clear:</p>
                 <p className="text-foreground/85 font-light text-lg mt-3">
-                  Capital is decentralizing — and Austin is one of the primary landing zones.
+                  Capital is decentralizing, and Austin is one of the primary landing zones.
                 </p>
               </section>
 
-              {/* Section 3 — Why They're Leaving California */}
+              {/* Section 3, Why They're Leaving California */}
               <section>
                 <h2 className="text-2xl md:text-3xl font-display font-normal text-architectural mt-10 mb-4">
                   Why They're Leaving California
@@ -243,12 +243,12 @@ const BillionaireMigration = () => {
                   </li>
                 </ul>
                 <p className="text-foreground/60">
-                  For high-net-worth individuals, that isn't a lifestyle choice — it's a strategic
+                  For high-net-worth individuals, that isn't a lifestyle choice, it's a strategic
                   one.
                 </p>
               </section>
 
-              {/* Section 4 — Regulation and Speed */}
+              {/* Section 4, Regulation and Speed */}
               <section>
                 <h2 className="text-2xl md:text-3xl font-display font-normal text-architectural mt-10 mb-4">
                   Regulation and Speed
@@ -261,7 +261,7 @@ const BillionaireMigration = () => {
                 </p>
               </section>
 
-              {/* Section 5 — Lifestyle Without Compromise */}
+              {/* Section 5, Lifestyle Without Compromise */}
               <section>
                 <h2 className="text-2xl md:text-3xl font-display font-normal text-architectural mt-10 mb-4">
                   Lifestyle Without Compromise
@@ -270,14 +270,14 @@ const BillionaireMigration = () => {
                   Austin offers something rare:
                 </p>
                 <p className="text-foreground/60 mb-[18px]">
-                  Waterfront living, privacy, and space — all within minutes of a major city.
+                  Waterfront living, privacy, and space, all within minutes of a major city.
                 </p>
                 <p className="text-foreground/85 font-light text-lg">
                   You can operate at a high level and still be on the lake by sunset.
                 </p>
               </section>
 
-              {/* Section 6 — Network Effects */}
+              {/* Section 6, Network Effects */}
               <section>
                 <h2 className="text-2xl md:text-3xl font-display font-normal text-architectural mt-10 mb-4">
                   Network Effects
@@ -289,12 +289,12 @@ const BillionaireMigration = () => {
                 <p className="text-foreground/60">Capital follows talent.</p>
                 <p className="text-foreground/60 mb-5">Deals follow capital.</p>
                 <p className="text-foreground/85 font-light text-lg">
-                  Austin has reached a point where it no longer depends on Silicon Valley — it
+                  Austin has reached a point where it no longer depends on Silicon Valley, it
                   competes with it.
                 </p>
               </section>
 
-              {/* Section 7 — Impact on Real Estate */}
+              {/* Section 7, Impact on Real Estate */}
               <section>
                 <h2 className="text-2xl md:text-3xl font-display font-normal text-architectural mt-10 mb-4">
                   Impact on Real Estate
@@ -342,7 +342,7 @@ const BillionaireMigration = () => {
                 </p>
               </section>
 
-              {/* Section 8 — The Bottom Line */}
+              {/* Section 8, The Bottom Line */}
               <section>
                 <h2 className="text-2xl md:text-3xl font-display font-normal text-architectural mt-10 mb-4">
                   The Bottom Line
@@ -352,12 +352,12 @@ const BillionaireMigration = () => {
                 </p>
                 <p className="text-foreground/60">
                   As more high-net-worth individuals establish long-term presence here, real
-                  estate becomes increasingly scarce — especially at the high end.
+                  estate becomes increasingly scarce, especially at the high end.
                 </p>
               </section>
             </div>
 
-            {/* Featured Homes — RealScout Widget (wider) */}
+            {/* Featured Homes, RealScout Widget (wider) */}
             <div className="mt-20">
               <h2 className="text-2xl md:text-3xl font-display font-normal text-architectural mb-3">
                 Featured Austin Luxury Homes

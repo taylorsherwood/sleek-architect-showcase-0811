@@ -113,7 +113,7 @@ const waterfrontNeighborhoods = [
   "Lake Austin is a constant-level reservoir offering Austin's most exclusive waterfront living. Properties feature private docks, boathouses, and direct deep-water access with panoramic lake views.",
   prices: "$2M – $25M+",
   lifestyle:
-  "Year-round boating, paddleboarding, waterfront dining, and sunset entertaining — all minutes from downtown Austin."
+  "Year-round boating, paddleboarding, waterfront dining, and sunset entertaining, all minutes from downtown Austin."
 },
 {
   name: "Lake Travis",
@@ -143,7 +143,7 @@ const walkableNeighborhoods = [
   slug: "/clarksville-homes-for-sale",
   existingSlug: null,
   description:
-  "Clarksville is one of Austin's oldest and most culturally significant neighborhoods, offering a walkable village atmosphere with boutique shops, local restaurants, and coffee shops along West Lynn Street — all steps from downtown.",
+  "Clarksville is one of Austin's oldest and most culturally significant neighborhoods, offering a walkable village atmosphere with boutique shops, local restaurants, and coffee shops along West Lynn Street, all steps from downtown.",
   prices: "$800K – $6M+",
   lifestyle:
   "Walk to restaurants, Whole Foods, Lady Bird Lake, and downtown. Victorian cottages alongside contemporary new construction."
@@ -166,7 +166,7 @@ const walkableNeighborhoods = [
   "Mueller is Austin's award-winning master-planned community built on the former municipal airport site. Designed around new urbanist principles with walkable streets, parks, retail, and restaurants.",
   prices: "$400K – $1.5M+",
   lifestyle:
-  "Lake Park, the Thinkery, local restaurants, and miles of trails — all within walking or biking distance in central-east Austin."
+  "Lake Park, the Thinkery, local restaurants, and miles of trails, all within walking or biking distance in central-east Austin."
 }];
 
 
@@ -236,7 +236,7 @@ const BestNeighborhoodsAustin = () => {
             <section>
               <div className="space-y-4">
                 <p className="text-muted-foreground leading-relaxed">
-                  Austin, Texas has established itself as one of the most dynamic and desirable cities in the United States. A thriving tech economy anchored by Apple, Tesla, Google, Meta, Oracle, and Samsung — combined with no state income tax, year-round outdoor living, and a world-renowned cultural scene — has drawn a sustained wave of high-net-worth buyers, corporate relocations, and lifestyle-motivated purchasers from across the country.
+                  Austin, Texas has established itself as one of the most dynamic and desirable cities in the United States. A thriving tech economy anchored by Apple, Tesla, Google, Meta, Oracle, and Samsung, combined with no state income tax, year-round outdoor living, and a world-renowned cultural scene, has drawn a sustained wave of high-net-worth buyers, corporate relocations, and lifestyle-motivated purchasers from across the country.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
                   The Austin luxury real estate market offers remarkable diversity. From gated Hill Country golf estates and waterfront compounds on Lake Austin to walkable historic neighborhoods steps from downtown, the city provides options for virtually every lifestyle preference and investment objective. Whether you are relocating for work, seeking a second home, or pursuing investment opportunities, the neighborhood you choose defines your daily experience.
@@ -414,13 +414,13 @@ const BestNeighborhoodsAustin = () => {
                   Austin's real estate market continues to rank among the strongest in the United States. The city's population growth, fueled by corporate relocations, tech expansion, and lifestyle migration, has created sustained demand across residential, commercial, and land segments.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  The luxury market — generally defined as homes above $1 million — has shown particular resilience. Neighborhoods like West lake Hills, Barton Creek, and Lake Austin Waterfront have demonstrated 7–12% annual appreciation over the past decade, driven by limited inventory, top-tier schools, and Austin's economic fundamentals.
+                  The luxury market, generally defined as homes above $1 million, has shown particular resilience. Neighborhoods like West lake Hills, Barton Creek, and Lake Austin Waterfront have demonstrated 7–12% annual appreciation over the past decade, driven by limited inventory, top-tier schools, and Austin's economic fundamentals.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
                   Texas's lack of a state income tax remains a powerful draw for high-net-worth individuals and business owners relocating from California, New York, and other high-tax states. This migration pattern continues to support premium pricing in Austin's most desirable neighborhoods.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  For investors, Austin offers opportunities across multiple asset classes including luxury residential, multifamily, land development, and commercial real estate. The city's growth corridors — particularly the Highway 290 West, Highway 71, and I-35 corridors — present significant upside for buyers with medium- to long-term horizons.
+                  For investors, Austin offers opportunities across multiple asset classes including luxury residential, multifamily, land development, and commercial real estate. The city's growth corridors, particularly the Highway 290 West, Highway 71, and I-35 corridors, present significant upside for buyers with medium- to long-term horizons.
                 </p>
               </div>
             </section>

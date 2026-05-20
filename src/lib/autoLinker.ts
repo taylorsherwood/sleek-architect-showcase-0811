@@ -19,7 +19,7 @@ interface LinkTarget {
   priority?: number;
 }
 
-// Community pages — canonical names and common variants
+// Community pages, canonical names and common variants
 const COMMUNITY_TARGETS: LinkTarget[] = [
   { patterns: ["West lake Hills"], href: "/communities/westlake-hills" },
   { patterns: ["Barton Creek"], href: "/communities/barton-creek" },
@@ -116,7 +116,7 @@ export function autoLink(text: string, currentSlug?: string, maxLinks = MAX_AUTO
       const lastOpen = before.lastIndexOf('[');
       const lastClose = before.lastIndexOf(']');
       if (lastOpen > lastClose) {
-        // We're inside a markdown link text — skip
+        // We're inside a markdown link text, skip
         continue;
       }
 

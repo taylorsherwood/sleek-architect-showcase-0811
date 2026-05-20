@@ -153,7 +153,7 @@ section.bg-muted::after {
   background: linear-gradient(to top, hsl(40 33% 97% / 0.22) 0%, hsl(40 33% 97% / 0) 100%);
 }
 
-/* Single near-invisible anchor line at the top of light sections —
+/* Single near-invisible anchor line at the top of light sections,
    gives editorial structure without a visible border. */
 section.bg-background,
 section.bg-secondary,

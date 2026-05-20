@@ -176,35 +176,35 @@ const BillionaireMigration = () => {
                   <li className="text-foreground/60 flex items-start gap-3">
                     <span className="text-gold mt-[7px] text-[7px]">●</span>
                     <span>
-                      <strong className="text-foreground/80 font-medium">Michael Dell</strong> —
+                      <strong className="text-foreground/80 font-medium">Michael Dell</strong>,
                       Founder & CEO of Dell Technologies, longtime Austin resident
                     </span>
                   </li>
                   <li className="text-foreground/60 flex items-start gap-3">
                     <span className="text-gold mt-[7px] text-[7px]">●</span>
                     <span>
-                      <strong className="text-foreground/80 font-medium">Travis Kalanick</strong> —
+                      <strong className="text-foreground/80 font-medium">Travis Kalanick</strong>,
                       Uber co-founder, now Austin-based
                     </span>
                   </li>
                   <li className="text-foreground/60 flex items-start gap-3">
                     <span className="text-gold mt-[7px] text-[7px]">●</span>
                     <span>
-                      <strong className="text-foreground/80 font-medium">Joe Liemandt</strong> —
+                      <strong className="text-foreground/80 font-medium">Joe Liemandt</strong>,
                       Austin-based billionaire founder of Trilogy Software
                     </span>
                   </li>
                   <li className="text-foreground/60 flex items-start gap-3">
                     <span className="text-gold mt-[7px] text-[7px]">●</span>
                     <span>
-                      <strong className="text-foreground/80 font-medium">Brian Sheth</strong> —
+                      <strong className="text-foreground/80 font-medium">Brian Sheth</strong>,
                       billionaire private equity leader formerly of Vista Equity Partners
                     </span>
                   </li>
                   <li className="text-foreground/60 flex items-start gap-3">
                     <span className="text-gold mt-[7px] text-[7px]">●</span>
                     <span>
-                      <strong className="text-foreground/80 font-medium">David Sacks</strong> —
+                      <strong className="text-foreground/80 font-medium">David Sacks</strong>,
                       venture capitalist expanding presence in Texas
                     </span>
                   </li>

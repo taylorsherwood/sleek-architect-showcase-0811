@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 /**
  * Subtle editorial entry strip for the Private Distribution.
- * Designed to be embedded into existing pages without redesigning them —
+ * Designed to be embedded into existing pages without redesigning them,
  * ivory background, thin gold rules, restrained typography.
  *
  * Variants:

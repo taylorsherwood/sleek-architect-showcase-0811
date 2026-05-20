@@ -220,7 +220,7 @@ const MovingToAustin = () => {
                 Austin's Lifestyle and Culture
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Austin's lifestyle is genuinely unique among American cities. The city's unofficial motto—"Keep Austin Weird"—reflects a culture that values individuality, creativity, and authenticity. For luxury homebuyers, this translates into a community that is welcoming to newcomers, engaged in civic life, and deeply connected to the natural environment.
+                Austin's lifestyle is genuinely unique among American cities. The city's unofficial motto, "Keep Austin Weird", reflects a culture that values individuality, creativity, and authenticity. For luxury homebuyers, this translates into a community that is welcoming to newcomers, engaged in civic life, and deeply connected to the natural environment.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 Outdoor recreation is central to Austin living. Lady Bird Lake, Lake Austin, Barton Springs Pool, the Barton Creek Greenbelt, and Zilker Park provide year-round opportunities for swimming, boating, hiking, biking, and paddleboarding. The Hill Country's proximity adds hunting, horseback riding, and wine country experiences within a short drive.

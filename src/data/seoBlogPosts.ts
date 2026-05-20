@@ -442,7 +442,7 @@ A: High-net-worth sellers prioritize discretion, control, and leverage. Off-mark
   },
   {
     id: "what-makes-property-luxury-real-estate",
-    title: "What Makes a Property Luxury Real Estate? \n\nlooking Beyond Price",
+    title: "What Makes a Property Luxury Real Estate? \nlooking Beyond Price",
     metaTitle: "What Makes a Property Luxury Real Estate? looking Beyond Price | Echelon Property Group",
     excerpt: "Discover what makes property luxury real estate beyond price. Learn the defining traits—design, exclusivity, and craftsmanship—that set luxury homes apart.",
     author: "Taylor Sherwood",
@@ -451,7 +451,7 @@ A: High-net-worth sellers prioritize discretion, control, and leverage. Off-mark
     category: "LUXURY",
     image: blogWhatMakesLuxury,
     heroImage: blogWhatMakesLuxury,
-    content: `# What Makes a Property Luxury Real Estate? \n\nlooking Beyond Price
+    content: `# What Makes a Property Luxury Real Estate? \nlooking Beyond Price
 
 Understanding what makes a property [luxury real estate](/luxury-real-estate-austin) goes far beyond price tags alone. True luxury is defined by irreplaceable qualities such as architectural distinction, elite location, exceptional craftsmanship, privacy, lifestyle integration, and the kind of scarcity that money alone cannot manufacture. This guide explores the defining characteristics that separate genuinely luxurious properties from homes that are simply expensive, helping buyers and sellers better understand how real value is created in the upper tier of the market.
 

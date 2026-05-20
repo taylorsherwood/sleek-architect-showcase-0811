@@ -243,7 +243,7 @@ export const PRIVATE_DISTRIBUTION: BriefEdition[] = [
   {
     slug: "78703-may-2026",
     volume: "VOLUME I",
-    issueNumber: "EDITION NO. 01",
+    issueNumber: "EDITION NO. 05",
     market: "78703 · Austin, TX",
     edition: "MAY 2026 EDITION",
     publishedAt: "2026-05-20",
@@ -369,7 +369,7 @@ export const PRIVATE_DISTRIBUTION: BriefEdition[] = [
   },
 ];
 
-export const FEATURED_EDITION_SLUG = "78746-may-2026";
+export const FEATURED_EDITION_SLUG = "78703-may-2026";
 
 export function getEditionBySlug(slug: string): BriefEdition | undefined {
   return PRIVATE_DISTRIBUTION.find((e) => e.slug === slug);

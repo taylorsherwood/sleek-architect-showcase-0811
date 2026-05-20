@@ -442,7 +442,7 @@ A: High-net-worth sellers prioritize discretion, control, and leverage. Off-mark
   },
   {
     id: "what-makes-property-luxury-real-estate",
-    title: "What Makes a Property Luxury Real Estate? \n\n\nlooking Beyond Price",
+    title: "What Makes a Property Luxury Real Estate? \n\nlooking Beyond Price",
     metaTitle: "What Makes a Property Luxury Real Estate? The Defining Characteristics Beyond Price | Echelon Property Group",
     excerpt: "Discover what makes property luxury real estate beyond price. Learn the defining traits—design, exclusivity, and craftsmanship—that set luxury homes apart.",
     author: "Taylor Sherwood",

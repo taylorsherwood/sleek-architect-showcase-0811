@@ -366,12 +366,6 @@ Whether you're searching for an <a href="/off-market-real-estate-austin" class="
 
 Explore Austin's finest homes with the level of privacy, strategy, and market access sophisticated buyers and sellers should expect.
 `,
-    author: "Taylor Sherwood",
-    date: "2026-05-20",
-    readTime: "11 min read",
-    category: "OFF-MARKET",
-    image: blogPrivateShowingsAustin,
-    heroImage: blogPrivateShowingsAustin,
   },
   {
     id: "confidential-property-transactions",

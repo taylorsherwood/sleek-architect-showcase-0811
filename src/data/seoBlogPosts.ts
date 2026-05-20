@@ -40,11 +40,91 @@ import blogAustinMultifamilyInstitutional from "@/assets/blog-austin-multifamily
 
 import blogWhatMakesLuxury from "@/assets/blog-what-makes-luxury-real-estate.jpg";
 import blogChooseLuxuryAdvisor from "@/assets/blog-luxury-advisor-austin.jpg";
+import blogAustinTopZipUp from "@/assets/blog-austin-top-zip-code-up.jpg";
 
 import { BlogPost } from "./blogPosts";
 
 // Build marker: ensure new posts ship in bundle (v6)
 export const seoBlogPosts: BlogPost[] = [
+  {
+    id: "austin-real-estate-down-top-zip-code-up-3-5-percent",
+    title: "Austin Real Estate Is Down. The Top Zip Code Is Up 3.5%. Here's Why.",
+    metaTitle: "Austin Real Estate Is Down. The Top Zip Code Is Up 3.5% | Echelon Property Group",
+    excerpt: "Austin's metro median is down 6.8%, but 78746 just hit a record $2.39M. Why the luxury tier and the broader market have decoupled — and what it means for buyers and sellers.",
+    author: "Taylor Sherwood",
+    date: "2026-05-20",
+    readTime: "8 min read",
+    category: "MARKET",
+    image: blogAustinTopZipUp,
+    heroImage: blogAustinTopZipUp,
+    content: `# Austin Real Estate Is Down. The Top Zip Code Is Up 3.5%. Here's Why.
+
+Every market story written about [Austin](/moving-to-austin-texas) in the last two years has been some version of the same headline. Prices are falling, the boom is over, the correction has arrived.
+
+The data does not actually say that.
+
+It says something more interesting, and more useful if you are trying to [buy](/buy), [sell](/sell), or [deploy capital](/austin-real-estate-investment) here.
+
+## What The Numbers Actually Show
+
+Forty-eight of seventy-five Austin metro zip codes posted year over year median price declines from 2025 into YTD 2026. The metro median is down roughly 6.8 percent. Months of inventory sits at 5.7. Days on market are stretching. Sellers in the middle of the market are taking the haircut everyone has been writing about — a dynamic we track in detail in our [Austin luxury real estate market report](/austin-luxury-real-estate-market-report).
+
+Then there is the other Austin.
+
+In the four zip codes where the 2025 median sale price cleared $1.5 million, three are up year over year. The average gain across that tier is plus 3.5 percent. 78746, covering [Westlake](/communities/westlake-hills) and West Lake Hills, posted a YTD median sale price of $2,394,287. That is the highest in the metro and a new mark for the area.
+
+Same city. Same calendar year. Opposite direction.
+
+## Why It Splits
+
+This is not a coincidence and it is not a temporary blip. The split has a structural explanation.
+
+The middle of the market runs on mortgage rates. When the cost of capital doubles, the buyer pool for a $600,000 home in Pflugerville contracts fast, because that buyer was using leverage to stretch into the purchase. Inventory builds. Prices soften. New construction in the suburbs competes directly with resale and pulls comps down further.
+
+The top of the market does not run on rates. It runs on liquidity, taxes, schools, and lifestyle. A buyer writing a $3.5 million check in [78746](/communities/westlake-hills) is not refinancing every move in the ten year yield. They are weighing Eanes ISD, lot quality, view corridors, and whether they want to be twelve minutes from downtown. That demand pool has held up because the underlying drivers have held up — the same forces driving [why billionaires keep moving to Austin](/why-billionaires-are-moving-to-austin).
+
+Add the supply side. The land in [78746](/communities/westlake-hills) is functionally built out. New construction in Eanes ISD almost never happens. The Overlook at Westlake, 48 homes priced $2.85M to $5M coming late this year, is the rare exception that proves the rule. Scarcity does what scarcity always does — a pattern we unpack across [Austin's best luxury neighborhoods](/best-luxury-neighborhoods-austin).
+
+## What Sellers Need To Hear
+
+If you are [selling](/sell) between $400,000 and $1.5 million in Austin, the metro headlines are your reality. Price for the current buyer pool, not for what your neighbor got in 2022. Condition matters more than it has in a decade. Generic remodels and ambitious pricing are sitting at 85 plus days on market. Distinctive homes priced correctly are still moving.
+
+If you are selling above $1.5 million in [78746](/communities/westlake-hills), [78733](/communities/davenport-ranch), or [78703](/communities/tarrytown), your competitive set is not the metro. Pricing strategy and [presentation discipline](/blog/selling-luxury-home-austin) still matter. Buyers in this tier are selective and unforgiving of weak product, but the demand is there. Roughly 30 to 40 percent of [luxury Westlake inventory](/communities/westlake-hills) never touches the MLS — see [why most buyers never see Austin's best homes](/blog/why-most-buyers-never-see-austins-best-homes) for how that inventory actually moves. If your agent is not active in the [private network](/private-opportunities), you are missing the most qualified buyers in the city.
+
+## What Buyers Need To Hear
+
+If you have been waiting on a [Westlake](/communities/westlake-hills) correction in line with the metro number, you have been waiting for something that is not coming. The discounts are real in 78735 [Barton Creek](/communities/barton-creek), down 18.1 percent year over year, and in pockets of 78731 and 78701. They are not real in core [78746](/communities/westlake-hills). You have more time and more leverage than you did in 2021, but the broad reset everyone keeps predicting is not the trade.
+
+If you are looking at the rest of Austin, you have the most negotiating power [buyers](/buy) have had in five years. Use it. Look hard at established neighborhoods with walkability and infrastructure already in place — [Tarrytown](/communities/tarrytown), [Pemberton Heights](/communities/pemberton-heights), [Rollingwood](/communities/rollingwood), [Bryker Woods](/blog/tarrytown-vs-bryker-woods). Those are the corners that historically lead any recovery, and the same logic we apply to [investment-grade Austin neighborhoods](/blog/best-austin-neighborhoods-for-real-estate-investment).
+
+## The Take
+
+Austin is not one market. It has not been one market for about eighteen months. Treating it as one is how sellers misprice and how buyers miss the trade.
+
+If you want a real read on your specific zip code, your specific street, or a property you are tracking [off market](/off-market-real-estate-austin), [send me a note](/contact). Generic data does not close deals.
+
+At [Echelon Property Group](/about-austin-real-estate-advisory), we advise buyers, sellers, and investors across [Westlake Hills](/communities/westlake-hills), [Tarrytown](/communities/tarrytown), [Barton Creek](/communities/barton-creek), [Rollingwood](/communities/rollingwood), [Spanish Oaks](/communities/spanish-oaks), [Davenport Ranch](/communities/davenport-ranch), and [Lake Austin](/communities/lake-austin) — with a focus on [private, off-market opportunities](/private-opportunities) at the top of the market.
+
+:::faq
+Q: Is the Austin real estate market actually down in 2026?
+A: Yes, in aggregate. The Austin metro median sale price is down approximately 6.8 percent year over year, with 48 of 75 metro zip codes posting declines from 2025 into YTD 2026. Months of inventory sits at 5.7 and days on market are extending. But the decline is concentrated in the middle of the market — the luxury tier above $1.5 million has held up and in several zip codes is up year over year.
+
+Q: Which Austin zip code has the highest median home price in 2026?
+A: 78746, covering Westlake and West Lake Hills, posted a YTD median sale price of $2,394,287 — the highest in the Austin metro and a new mark for the area. It is one of three luxury zip codes above $1.5 million showing year-over-year gains while the broader metro declines.
+
+Q: Why is Westlake up while the rest of Austin is down?
+A: The middle of the Austin market runs on mortgage rates; the top runs on liquidity, schools, lot quality, and lifestyle. 78746 buyers are not rate-sensitive, Eanes ISD demand is durable, and the land is functionally built out with almost no new construction. Scarcity plus inelastic demand explains the split.
+
+Q: Should I wait for Westlake home prices to drop before buying?
+A: The broad correction priced into metro headlines is not arriving in core 78746. Discounts are real in 78735 Barton Creek (down 18.1 percent year over year) and parts of 78731 and 78701, but not in central Westlake. Buyers have more time and leverage than in 2021, but waiting for a Westlake reset in line with the metro number is waiting for something that is not coming.
+
+Q: How should I price my Austin home if I'm selling in 2026?
+A: If your home is between $400,000 and $1.5 million, price for the current buyer pool — not 2022 comps. Condition matters more than it has in a decade. Above $1.5 million in 78746, 78733, or 78703, demand is there but buyers are selective. Roughly 30 to 40 percent of luxury Westlake inventory transacts off-market, so engaging an advisor active in the private network is essential.
+
+Q: What percentage of luxury Austin homes sell off-market?
+A: Roughly 30 to 40 percent of luxury inventory in Westlake and the surrounding high-end zip codes never touches the MLS. These properties move through advisor networks, family offices, and private buyer pools — which is why working with an advisor with real off-market access matters more at the top of the market than anywhere else.
+:::`,
+  },
   {
     id: "how-to-choose-luxury-real-estate-advisor-austin",
     title: "How to Choose the Right Luxury Real Estate Advisor in Austin",

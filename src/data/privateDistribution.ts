@@ -240,6 +240,133 @@ export const PRIVATE_DISTRIBUTION: BriefEdition[] = [
       "Echelon Property Group · Affiliated with eXp Realty, LLC · Texas Real Estate License #734520. This document is for the use of the named recipient only. Information believed accurate, not guaranteed.",
     active: true,
   },
+  {
+    slug: "78703-may-2026",
+    volume: "VOLUME I",
+    issueNumber: "EDITION NO. 01",
+    market: "78703 · Austin, TX",
+    edition: "MAY 2026 EDITION",
+    publishedAt: "2026-05-20",
+    watermark: "78703",
+    title: "The 78703 Brief",
+    subtitle:
+      "An off-market dossier on Tarrytown, Old Enfield, and the west side of central Austin — circulated only to qualified buyers.",
+    dek:
+      "An off-market dossier on Tarrytown, Old Enfield, and the west side of central Austin — circulated only to qualified buyers.",
+    fromTheDesk:
+      "Three of the four below are held off-market or priced on request — which tells you most of what you need to know about 78703 right now. Tarrytown and Old Enfield don't have an inventory problem so much as an access problem: the best houses move through relationships, not the MLS. This edition runs from a 1927 Kreïsle estate to a brand-new Tarrytown build to a 42nd-floor penthouse over Lady Bird Lake — the full range of how this zip actually lives. If one of them fits, reply to the email this came attached to.",
+    sections: [
+      {
+        id: "active-off-market",
+        type: "properties",
+        chapter: "I",
+        eyebrow: "Active · Off-Market",
+        title: "Active · Off-Market",
+        count: "04 properties",
+        properties: [
+          {
+            status: "Private Listing",
+            address: "Windsor Road · Old Enfield",
+            zone: "78703 · Austin ISD",
+            specs: [
+              { label: "Beds", value: "6" },
+              { label: "Baths", value: "6F · 4H" },
+              { label: "Built", value: "1927" },
+              { label: "Lot", value: "1.13 ac" },
+            ],
+            price: "$17,900,000",
+            description:
+              "A 1927 Tudor estate by architect Edwin F. Kreïsle, set behind fieldstone walls on ~1.13 gated acres — an English garden compound of five freestanding structures: the main residence, guest house, garage apartment, gate house, and a glass conservatory. Steeply pitched slate roofs, ornamental half-timbering, hand-forged ironwork, and panoramic views from the UT Tower to the Capitol. Inside, a paneled library with hand-carved ceiling and concealed doors, a living room with plaster detail modeled on The Breakers in Newport, reclaimed longleaf pine in the kitchen, and a commercial elevator across levels. A brick drive crosses a private stone bridge over a koi pond to grounds with an English-fountain pool.",
+            insight:
+              "One of Austin's most architecturally significant residences. Pre-war estates of this provenance in Old Enfield are generational holdings — they almost never trade, and never quietly. Direct access is the entire game here.",
+          },
+          {
+            status: "Pre-Market",
+            address: "Greenlee Drive · Tarrytown",
+            zone: "78703 · Austin ISD",
+            specs: [
+              { label: "Beds", value: "6" },
+              { label: "Baths", value: "7F · 1H" },
+              { label: "Interior", value: "9,500 sf" },
+              { label: "Lot", value: "0.65 ac" },
+            ],
+            price: "Price Upon Request",
+            description:
+              "A soon-to-be-completed European-inspired estate behind gates on one of Tarrytown's most private streets — ~9,500 sf by Nomad Design Build with interiors by Jenny Mason Designs. A formal dining salon with glass courtyard walls anchors the main level; dual catering pantries, a second-level speakeasy lounge with full bar, and a paneled billiards-and-club room with concealed doors handle entertaining at scale. The two-level primary retreat connects a main-level wing to an upstairs dressing salon by sculptural spiral stair. A lantern-lined motor court opens to a resort-style pool and spa with a covered loggia and outdoor fireplace.",
+            insight:
+              "New-construction estates at this scale in Tarrytown are almost always spoken for before completion. A pre-completion allocation is the only way in at this level — and there's still a window to influence final selections.",
+          },
+          {
+            status: "Private Listing",
+            address: "McCullough Street · Tarrytown",
+            zone: "78703 · Austin ISD",
+            specs: [
+              { label: "Beds", value: "5" },
+              { label: "Baths", value: "4F · 1H" },
+              { label: "Interior", value: "4,789 sf" },
+              { label: "Lot", value: "0.23 ac" },
+            ],
+            price: "$2,950,000",
+            description:
+              "A custom-built residence in the heart of Tarrytown — ~4,789 sf on a 10,000+ sf lot, with a new stucco exterior and a renovated kitchen built for both intimate dinners and larger gatherings. The primary suite is down, with a studs-out remodeled bath in marble: freestanding soaker tub, steam shower, dual vanities, custom walk-in closet. Five bedrooms plus an office that lives as a sixth, two additional living spaces, and room on the lot to add a pool. Minutes to Lake Austin, Casis Elementary, and downtown.",
+            insight:
+              "Primary-down, five bedrooms, Casis zoning, under $3M — the exact profile relocating families fight over in Tarrytown, and one that rarely surfaces with a fully reset single-level primary.",
+          },
+          {
+            status: "Private Listing",
+            address: "Bowie Street · West Downtown",
+            zone: "78703 · Austin ISD",
+            specs: [
+              { label: "Beds", value: "3" },
+              { label: "Baths", value: "3F · 1H" },
+              { label: "Interior", value: "3,614 sf" },
+              { label: "Floor", value: "42nd" },
+            ],
+            price: "Price Upon Request",
+            description:
+              "A two-story penthouse on the 42nd floor of the Spring, designed by Dick Clark Architecture, with floor-to-ceiling glass on every wall framing Lady Bird Lake, downtown, and the Hill Country. Italian cabinetry, imported marble, Wolf and Bosch appliances, a Sub-Zero, and an EcoSmart fireplace; a private rooftop terrace with custom seating and landscaping that has hosted live performances. Three garage spaces, two private storage units, 24/7 concierge, heated pool. Whole Foods and Trader Joe's across the street, Lady Bird Lake two blocks down.",
+            insight:
+              "Two-story penthouses with private terraces in the Spring rarely list — and almost never publicly. The lock-and-leave counterweight to a Tarrytown estate, for a buyer who wants the lake and downtown at the door.",
+          },
+        ],
+      },
+      {
+        id: "on-the-radar",
+        type: "watching",
+        chapter: "II",
+        eyebrow: "On the Radar",
+        title: "On the Radar",
+        count: "02 properties",
+        watching: [
+          {
+            timeline: "Expected · 30–60 days",
+            where: "Pemberton Heights · near Pease Park",
+            note:
+              "Estate sale of a 1930s original on an oversized lot. Heirs deciding between a quiet direct sale and a renovate-and-list. Early-mover advantage if it goes direct — we're in the conversation.",
+          },
+          {
+            timeline: "Expected · Q3 2026",
+            where: "Clarksville · West Lynn corridor",
+            note:
+              "Architect's personal residence likely to free up on a relocation — modern infill on a rare double lot. Pre-market preview possible before it's formally shopped.",
+          },
+        ],
+      },
+    ],
+    howThisWorks:
+      "The Brief circulates monthly to a short list of qualified buyers. Properties on it are either off-MLS, pre-MLS, or expired inventory I can re-open quietly. If something resonates, a reply is enough — I'll share the address, full marketing materials, and we can decide together whether to pursue.",
+    signOff: {
+      name: "Taylor Sherwood",
+      title: "Principal · Echelon Property Group",
+      phone: "(512) 661-3843",
+      email: "taylor@echelonpropertygroup.com",
+      website: "echelonpropertygroup.com",
+      handle: "@TheInvestorBroker",
+    },
+    closingNote:
+      "Echelon Property Group · Affiliated with eXp Realty, LLC · Texas Real Estate License #734520. This document is for the use of the named recipient only. Information believed accurate, not guaranteed.",
+    active: true,
+  },
 ];
 
 export const FEATURED_EDITION_SLUG = "78746-may-2026";

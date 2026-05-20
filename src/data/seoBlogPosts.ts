@@ -451,7 +451,7 @@ A: High-net-worth sellers prioritize discretion, control, and leverage. Off-mark
     category: "LUXURY",
     image: blogWhatMakesLuxury,
     heroImage: blogWhatMakesLuxury,
-    content: `# What Makes a Property Luxury Real Estate? \n\n\nThe Defining Characteristics \nBeyond Price
+    content: `# What Makes a Property Luxury Real Estate? \n\nlooking Beyond Price
 
 Understanding what makes a property [luxury real estate](/luxury-real-estate-austin) goes far beyond price tags alone. True luxury is defined by irreplaceable qualities such as architectural distinction, elite location, exceptional craftsmanship, privacy, lifestyle integration, and the kind of scarcity that money alone cannot manufacture. This guide explores the defining characteristics that separate genuinely luxurious properties from homes that are simply expensive, helping buyers and sellers better understand how real value is created in the upper tier of the market.
 

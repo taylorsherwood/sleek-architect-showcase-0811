@@ -11,6 +11,10 @@ import almarionImg from "@/assets/private-distribution/almarion-drive.jpg";
 import flintridgeImg from "@/assets/private-distribution/flintridge-road.jpg";
 import mistywoodImg from "@/assets/private-distribution/mistywood-drive.jpg";
 import westlakeModernImg from "@/assets/private-distribution/mistywood-drive-interior.png";
+import windsorRoadImg from "@/assets/private-distribution/windsor-road.jpg";
+import greenleeDriveImg from "@/assets/private-distribution/greenlee-drive.jpg";
+import mcculloughStreetImg from "@/assets/private-distribution/mccullough-street.jpg";
+import bowieStreetImg from "@/assets/private-distribution/bowie-street.jpg";
 
 
 export type BriefSectionType =
@@ -279,6 +283,8 @@ export const PRIVATE_DISTRIBUTION: BriefEdition[] = [
               "A 1927 Tudor estate by architect Edwin F. Kreïsle, set behind fieldstone walls on ~1.13 gated acres — an English garden compound of five freestanding structures: the main residence, guest house, garage apartment, gate house, and a glass conservatory. Steeply pitched slate roofs, ornamental half-timbering, hand-forged ironwork, and panoramic views from the UT Tower to the Capitol. Inside, a paneled library with hand-carved ceiling and concealed doors, a living room with plaster detail modeled on The Breakers in Newport, reclaimed longleaf pine in the kitchen, and a commercial elevator across levels. A brick drive crosses a private stone bridge over a koi pond to grounds with an English-fountain pool.",
             insight:
               "One of Austin's most architecturally significant residences. Pre-war estates of this provenance in Old Enfield are generational holdings — they almost never trade, and never quietly. Direct access is the entire game here.",
+            image: windsorRoadImg,
+            imageAlt: "Windsor Road Tudor estate in Old Enfield, Austin",
           },
           {
             status: "Pre-Market",
@@ -295,6 +301,8 @@ export const PRIVATE_DISTRIBUTION: BriefEdition[] = [
               "A soon-to-be-completed European-inspired estate behind gates on one of Tarrytown's most private streets — ~9,500 sf by Nomad Design Build with interiors by Jenny Mason Designs. A formal dining salon with glass courtyard walls anchors the main level; dual catering pantries, a second-level speakeasy lounge with full bar, and a paneled billiards-and-club room with concealed doors handle entertaining at scale. The two-level primary retreat connects a main-level wing to an upstairs dressing salon by sculptural spiral stair. A lantern-lined motor court opens to a resort-style pool and spa with a covered loggia and outdoor fireplace.",
             insight:
               "New-construction estates at this scale in Tarrytown are almost always spoken for before completion. A pre-completion allocation is the only way in at this level — and there's still a window to influence final selections.",
+            image: greenleeDriveImg,
+            imageAlt: "Greenlee Drive estate behind gates in Tarrytown, Austin",
           },
           {
             status: "Private Listing",
@@ -311,6 +319,8 @@ export const PRIVATE_DISTRIBUTION: BriefEdition[] = [
               "A custom-built residence in the heart of Tarrytown — ~4,789 sf on a 10,000+ sf lot, with a new stucco exterior and a renovated kitchen built for both intimate dinners and larger gatherings. The primary suite is down, with a studs-out remodeled bath in marble: freestanding soaker tub, steam shower, dual vanities, custom walk-in closet. Five bedrooms plus an office that lives as a sixth, two additional living spaces, and room on the lot to add a pool. Minutes to Lake Austin, Casis Elementary, and downtown.",
             insight:
               "Primary-down, five bedrooms, Casis zoning, under $3M — the exact profile relocating families fight over in Tarrytown, and one that rarely surfaces with a fully reset single-level primary.",
+            image: mcculloughStreetImg,
+            imageAlt: "McCullough Street custom residence in Tarrytown, Austin",
           },
           {
             status: "Private Listing",
@@ -327,6 +337,8 @@ export const PRIVATE_DISTRIBUTION: BriefEdition[] = [
               "A two-story penthouse on the 42nd floor of the Spring, designed by Dick Clark Architecture, with floor-to-ceiling glass on every wall framing Lady Bird Lake, downtown, and the Hill Country. Italian cabinetry, imported marble, Wolf and Bosch appliances, a Sub-Zero, and an EcoSmart fireplace; a private rooftop terrace with custom seating and landscaping that has hosted live performances. Three garage spaces, two private storage units, 24/7 concierge, heated pool. Whole Foods and Trader Joe's across the street, Lady Bird Lake two blocks down.",
             insight:
               "Two-story penthouses with private terraces in the Spring rarely list — and almost never publicly. The lock-and-leave counterweight to a Tarrytown estate, for a buyer who wants the lake and downtown at the door.",
+            image: bowieStreetImg,
+            imageAlt: "Bowie Street penthouse on the 42nd floor overlooking Lady Bird Lake",
           },
         ],
       },

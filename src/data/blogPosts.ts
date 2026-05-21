@@ -360,7 +360,7 @@ At <a href="/" class="${LINK}">Echelon Property Group</a>, that philosophy shape
 
 ### Verified Credentials
 
-A meaningful marker of specialization in the luxury segment is the Certified Luxury Home Marketing Specialist (CLHMS) designation, awarded by The Institute for Luxury Home Marketing to agents with documented performance in the upper-tier market.
+A meaningful marker of specialization in the luxury segment is the Certified Luxury Home Marketing Specialist (CLHMS) designation, awarded by The Institute for Luxury Home Marketing to agents with documented performance in the upper-tier market. You can verify my official status anytime using the logo below.
 
 <a href="https://www.luxuryhomemarketing.com/clhms/mini-verified.html?m=47b7631918fd737ab569ce1c45792b4b" target="_blank" rel="noopener noreferrer" class="inline-block my-4"><img src="https://www.luxuryhomemarketing.com/en/logo.html?m=47b7631918fd737ab569ce1c45792b4b&v=11" alt="Certified Luxury Home Marketing Specialist - Verified Member" border="0" loading="lazy" /></a>
 `,

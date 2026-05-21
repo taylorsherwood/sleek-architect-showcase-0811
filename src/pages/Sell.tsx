@@ -394,7 +394,7 @@ const Sell = () => {
       <Navigation />
 
       {/* ── Hero ── */}
-      <section className="relative min-h-[640px] md:min-h-[720px] lg:h-[820px] xl:h-[860px] 2xl:h-[880px] flex flex-col justify-end overflow-hidden bg-primary">
+      <section className="relative min-h-[780px] md:min-h-[720px] lg:h-[820px] xl:h-[860px] 2xl:h-[880px] flex flex-col justify-end overflow-hidden bg-primary pt-28 md:pt-0">
         <div className="absolute inset-0">
           {/* Mobile: keep existing image as LCP. Hidden on md+ */}
           <img src={heroImg} alt="Luxury property in Austin Texas" title="Sell your Austin luxury home, Echelon Property Group" className="md:hidden w-full h-full object-cover" loading="eager" decoding="async" fetchPriority="high" sizes="100vw" width={1920} height={1080} />
@@ -414,15 +414,15 @@ const Sell = () => {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0C0F24]/80 via-[#0C0F24]/55 to-[#0C0F24]/35" />
         </div>
-        <div className="relative container mx-auto px-6 pb-16">
-          <div className="max-w-xl mb-14">
+        <div className="relative container mx-auto px-6 pb-12 md:pb-16">
+          <div className="max-w-xl mb-10 md:mb-14">
             <p className="text-minimal text-gold mb-4 reveal">SELLER SERVICES</p>
-            <h1 className="text-3xl sm:text-2xl sm:text-4xl md:text-6xl font-display font-normal text-primary-foreground leading-[1.1] mb-6 reveal">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-display font-normal text-primary-foreground leading-[1.1] mb-6 reveal">
               Sell Your Home
               <br />
               in Austin, TX
             </h1>
-            <p className="text-primary-foreground/70 text-lg max-w-lg mb-8 reveal-delayed">
+            <p className="text-primary-foreground/70 text-base sm:text-lg max-w-lg mb-8 reveal-delayed">
               Strategic marketing and expert representation designed to maximize your property's value in Austin's competitive luxury market.
             </p>
             <a
@@ -452,7 +452,7 @@ const Sell = () => {
 
 
           {/* ── Stats ── */}
-          <div className="max-w-5xl mx-auto grid grid-cols-3 gap-6 text-center mt-28">
+          <div className="max-w-5xl mx-auto grid grid-cols-3 gap-3 sm:gap-6 text-center mt-12 md:mt-28">
             {stats.map((s) => (
               <AnimatedStat key={s.label} {...s} />
             ))}

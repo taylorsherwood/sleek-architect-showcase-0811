@@ -10,6 +10,7 @@ import blogAustinLuxuryInventoryTrends from "@/assets/blog-austin-luxury-invento
 import blogConfidentialTransactions from "@/assets/blog-confidential-property-transactions.jpg";
 import blogBestLuxuryNeighborhoods from "@/assets/blog-best-neighborhoods-luxury-homes-austin.jpg";
 import blogPrivateShowingsAustin from "@/assets/blog/private-property-showings-austin.jpg";
+import blogBoutiqueVsLargeFirms from "@/assets/blog/boutique-vs-large-luxury-firms.jpg";
 
 
 export interface BlogPost {

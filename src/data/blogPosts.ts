@@ -357,6 +357,12 @@ The right luxury real estate team should combine:
 Ultimately, the best representation is not defined by the size of the brokerage. It is defined by the quality of the people, relationships, strategy, and execution behind it.
 
 At <a href="/" class="${LINK}">Echelon Property Group</a>, that philosophy shapes every client relationship. Backed by the global infrastructure and reach of eXp Realty while remaining deeply focused on <a href="/luxury-homes-austin" class="${LINK}">Austin's luxury market</a>, our approach is intentionally relationship-driven, highly specialized, and built around delivering a level of strategy and discretion that high-end transactions demand.
+
+### Verified Credentials
+
+A meaningful marker of specialization in the luxury segment is the Certified Luxury Home Marketing Specialist (CLHMS) designation, awarded by The Institute for Luxury Home Marketing to agents with documented performance in the upper-tier market.
+
+<a href="https://www.luxuryhomemarketing.com/clhms/mini-verified.html?m=47b7631918fd737ab569ce1c45792b4b" target="_blank" rel="noopener noreferrer" class="inline-block my-4"><img src="https://www.luxuryhomemarketing.com/en/logo.html?m=47b7631918fd737ab569ce1c45792b4b&v=11" alt="Certified Luxury Home Marketing Specialist - Verified Member" border="0" loading="lazy" /></a>
 `,
   },
   {

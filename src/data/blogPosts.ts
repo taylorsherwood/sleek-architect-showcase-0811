@@ -97,7 +97,7 @@ The buyers who consistently secure Austin's best properties typically rely on a 
 
 The cornerstone of that team is a <a href="/about" class="${LINK}">luxury real estate advisor</a> deeply embedded within Austin's upper-tier market.
 
-That does not simply mean an agent who occasionally sells expensive homes. It means someone with active relationships in communities like <a href="/communities/rollingwood" class="${LINK}">Rollingwood</a>, Seven Oaks, Davenport Ranch, and along <a href="/communities/lake-austin" class="${LINK}">Lake Austin</a>. Someone who hears about opportunities before they reach the MLS. Someone trusted enough that other agents quietly share inventory with them before going public.
+That does not simply mean an agent who occasionally sells expensive homes. It means someone with active relationships in communities like <a href="/communities/rollingwood" class="${LINK}">Rollingwood</a>, <a href="/communities/spanish-oaks" class="${LINK}">Spanish Oaks</a>, <a href="/communities/davenport-ranch" class="${LINK}">Davenport Ranch</a>, and along <a href="/communities/lake-austin" class="${LINK}">Lake Austin</a>. Someone who hears about opportunities before they reach the MLS. Someone trusted enough that other agents quietly share inventory with them before going public.
 
 That access matters.
 

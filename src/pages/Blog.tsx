@@ -100,7 +100,7 @@ const Blog = () => {
 
         <div className="relative container mx-auto px-6 pt-12 md:pt-16 lg:pt-20 flex items-center min-h-[640px] md:min-h-[720px] lg:min-h-[820px] xl:min-h-[860px] 2xl:min-h-[880px]">
           <div className="max-w-xl reveal -translate-y-6 md:-translate-y-10 lg:-translate-y-12">
-            <p className="text-minimal text-gold mb-4">LUXURY REAL ESTATE INSIGHTS</p>
+            <p className="text-minimal text-gold mb-4">CURATED ECHELON INSIGHTS</p>
             <h1 className="text-3xl sm:text-2xl sm:text-4xl md:text-6xl font-display font-normal text-primary-foreground leading-[1.1] mb-6">
               Austin
               <br />

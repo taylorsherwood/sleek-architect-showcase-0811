@@ -7,13 +7,25 @@ import SchemaMarkup, { createBreadcrumbSchema } from "@/components/SchemaMarkup"
 import PrivateBriefGate from "@/components/private-distribution/PrivateBriefGate";
 import BriefSectionBlock from "@/components/private-distribution/BriefSectionBlock";
 import { useAuth } from "@/hooks/useAuth";
-import {
-  PRIVATE_DISTRIBUTION,
-  getEditionBySlug,
-  getFeaturedEdition,
-  type BriefEdition,
+import type {
+  BriefEdition,
+  BriefEditionTeaser,
 } from "@/data/privateDistribution";
+import {
+  fetchEditionTeasers,
+  fetchEditionTeaser,
+  fetchFullEdition,
+  getStoredPdToken,
+  setStoredPdToken,
+  clearStoredPdToken,
+} from "@/lib/privateDistributionApi";
 import privateCover from "@/assets/private-distribution-cover.jpg";
+
+/** Derive a decorative watermark (zip code or first token) from market text. */
+const deriveWatermark = (market: string): string => {
+  const m = market.match(/\b(\d{4,5})\b/);
+  return m ? m[1] : market.split(/[·,]/)[0]?.trim() || "";
+};
 
 const SITE = "https://www.echelonpropertygroup.com";
 const NAVY = "#0C0F24";

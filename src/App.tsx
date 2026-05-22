@@ -6,6 +6,7 @@ import { BrowserRouter } from "react-router-dom";
 import AppRoutes from "./AppRoutes";
 import SchemaMarkup, { organizationSchema, websiteSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
 import { AuthProvider } from "@/hooks/useAuth";
+import { useAnalytics } from "@/hooks/useAnalytics";
 
 const browserQueryClient = new QueryClient();
 
@@ -26,10 +27,16 @@ export const AppShell = ({ children, queryClient = browserQueryClient }: AppShel
   </QueryClientProvider>
 );
 
+const AnalyticsBridge = () => {
+  useAnalytics();
+  return null;
+};
+
 const App = () => (
   <AppShell>
       <BrowserRouter>
         <AuthProvider>
+          <AnalyticsBridge />
           <main id="main-content">
             <AppRoutes />
           </main>

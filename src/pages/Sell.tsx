@@ -572,72 +572,6 @@ const Sell = () => {
                   </ScrollReveal>
                 ))}
               </ul>
-
-              {/* Premier Partnerships & Credentials */}
-              <ScrollReveal delay={560}>
-                <div className="mt-16 pt-12 border-t border-foreground/10">
-                  {/* Editorial heading */}
-                  <div className="mb-10">
-                    <p className="text-gold font-extrabold tracking-[0.32em] text-[10.5px] mb-4">
-                      PREMIER PARTNERSHIPS &amp; CREDENTIALS
-                    </p>
-                    <div className="h-px w-10 bg-gold/60" aria-hidden="true" />
-                  </div>
-
-                  {/* Two equal cards */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-                    {/* Homes.com */}
-                    <ScrollReveal delay={120}>
-                      <div className="group relative h-full rounded-[22px] bg-[#FAFAF8] border border-foreground/[0.06] px-8 py-10 md:px-10 md:py-12 transition-all duration-500 ease-[cubic-bezier(0.25,0.1,0.25,1)] hover:-translate-y-[2px] hover:border-gold/30 hover:shadow-[0_18px_50px_-20px_rgba(185,160,108,0.35)]">
-                        <div className="h-12 md:h-14 flex items-center mb-8">
-                          <img
-                            src={homesComLogo}
-                            alt="Homes.com Premier Agent"
-                            className="h-8 md:h-9 w-auto object-contain"
-                            loading="lazy"
-                            decoding="async"
-                          />
-                        </div>
-                        <p className="text-foreground/75 text-[14px] md:text-[14.5px] leading-[1.75] tracking-[0.005em]">
-                          <span className="text-foreground font-medium">Homes.com Premier Agent</span> providing enhanced listing visibility and targeted exposure across one of the nation's fastest-growing luxury search platforms.
-                        </p>
-                      </div>
-                    </ScrollReveal>
-
-                    {/* CLHMS */}
-                    <ScrollReveal delay={220}>
-                      <div className="group relative h-full rounded-[22px] bg-[#FAFAF8] border border-foreground/[0.06] px-8 py-10 md:px-10 md:py-12 transition-all duration-500 ease-[cubic-bezier(0.25,0.1,0.25,1)] hover:-translate-y-[2px] hover:border-gold/30 hover:shadow-[0_18px_50px_-20px_rgba(185,160,108,0.35)]">
-                        <div className="h-12 md:h-14 flex items-center mb-8">
-                          <a
-                            href="https://www.luxuryhomemarketing.com/clhms/mini-verified.html?m=47b7631918fd737ab569ce1c45792b4b"
-                            onClick={(e) => {
-                              e.preventDefault();
-                              window.open(
-                                "https://www.luxuryhomemarketing.com/clhms/mini-verified.html?m=47b7631918fd737ab569ce1c45792b4b",
-                                "_blank",
-                                "width=700,height=470,left=100,top=100,scrollbars=1"
-                              );
-                            }}
-                            className="inline-flex items-center transition-opacity duration-300 hover:opacity-80"
-                            aria-label="Verify Certified Luxury Home Marketing Specialist credential"
-                          >
-                            <img
-                              src="https://www.luxuryhomemarketing.com/en/logo.html?m=47b7631918fd737ab569ce1c45792b4b&v=12"
-                              alt="Certified Luxury Home Marketing Specialist (CLHMS) — verified member"
-                              className="h-14 md:h-16 w-auto object-contain"
-                              loading="lazy"
-                              decoding="async"
-                            />
-                          </a>
-                        </div>
-                        <p className="text-foreground/75 text-[14px] md:text-[14.5px] leading-[1.75] tracking-[0.005em]">
-                          <span className="text-foreground font-medium">Certified Luxury Home Marketing Specialist (CLHMS)</span>, recognized for expertise in the marketing and negotiation of luxury residential properties.
-                        </p>
-                      </div>
-                    </ScrollReveal>
-                  </div>
-                </div>
-              </ScrollReveal>
             </div>
           </div>
 
@@ -666,6 +600,80 @@ const Sell = () => {
             </ScrollReveal>
           </div>
         </div>
+      </section>
+
+      {/* ── Premier Partnerships & Credentials (Editorial Strip) ── */}
+      <section className="relative bg-background py-24 md:py-32 overflow-hidden">
+        {/* Faint gold hairline divider at top */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 h-px w-24 bg-gold/40" aria-hidden="true" />
+
+        <div className="mx-auto px-6 max-w-[1180px]">
+          {/* Editorial heading, centered */}
+          <ScrollReveal>
+            <div className="flex flex-col items-center text-center mb-16 md:mb-20">
+              <p className="text-gold font-extrabold tracking-[0.42em] text-[10.5px] uppercase">
+                Premier Partnerships &amp; Credentials
+              </p>
+              <div className="mt-5 h-px w-8 bg-gold/50" aria-hidden="true" />
+            </div>
+          </ScrollReveal>
+
+          {/* Two-column horizontal strip */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-y-16 md:gap-x-24 lg:gap-x-32">
+            {/* Homes.com */}
+            <ScrollReveal delay={120}>
+              <div className="flex flex-col items-center text-center">
+                <div className="h-16 md:h-20 flex items-center justify-center">
+                  <img
+                    src={homesComLogo}
+                    alt="Homes.com Premier Agent"
+                    className="h-9 md:h-10 w-auto object-contain"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <p className="mt-8 max-w-[360px] text-foreground/70 text-[13.5px] leading-[1.8] tracking-[0.01em]">
+                  Premier placement and enhanced exposure across one of the nation's fastest-growing luxury home search platforms.
+                </p>
+              </div>
+            </ScrollReveal>
+
+            {/* CLHMS */}
+            <ScrollReveal delay={220}>
+              <div className="flex flex-col items-center text-center">
+                <div className="h-16 md:h-20 flex items-center justify-center">
+                  <a
+                    href="https://www.luxuryhomemarketing.com/clhms/mini-verified.html?m=47b7631918fd737ab569ce1c45792b4b"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      window.open(
+                        "https://www.luxuryhomemarketing.com/clhms/mini-verified.html?m=47b7631918fd737ab569ce1c45792b4b",
+                        "_blank",
+                        "width=700,height=470,left=100,top=100,scrollbars=1"
+                      );
+                    }}
+                    className="inline-flex items-center justify-center transition-opacity duration-500 hover:opacity-80"
+                    aria-label="Verify Certified Luxury Home Marketing Specialist credential"
+                  >
+                    <img
+                      src="https://www.luxuryhomemarketing.com/en/logo.html?m=47b7631918fd737ab569ce1c45792b4b&v=12"
+                      alt="Certified Luxury Home Marketing Specialist (CLHMS) — verified member"
+                      className="h-[72px] md:h-[84px] w-auto object-contain"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </a>
+                </div>
+                <p className="mt-8 max-w-[360px] text-foreground/70 text-[13.5px] leading-[1.8] tracking-[0.01em]">
+                  Recognized expertise in the marketing and negotiation of luxury residential properties.
+                </p>
+              </div>
+            </ScrollReveal>
+          </div>
+        </div>
+
+        {/* Faint gold hairline divider at bottom */}
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 h-px w-24 bg-gold/40" aria-hidden="true" />
       </section>
 
       {/* ── Network Logos ── */}

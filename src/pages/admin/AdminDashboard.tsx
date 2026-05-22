@@ -107,6 +107,9 @@ const AdminDashboard = () => {
               <h1 className="text-4xl font-display font-normal text-architectural">Dashboard</h1>
             </div>
             <div className="flex items-center gap-3">
+              <Link to="/admin/private-distribution" className="text-minimal border border-foreground px-6 py-3 hover:bg-foreground hover:text-background transition-colors">
+                PRIVATE DISTRIBUTION
+              </Link>
               <button onClick={signOut} className="text-minimal border border-foreground px-6 py-3 hover:bg-foreground hover:text-background transition-colors">
                 SIGN OUT
               </button>

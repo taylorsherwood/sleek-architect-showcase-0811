@@ -79,7 +79,7 @@ const PrivateDistributionStrip = ({
           {body}
         </p>
         <Link
-          to="/private-distribution"
+          to={to}
           className="inline-flex items-center gap-3 group"
           style={{
             fontFamily: '"Jost", sans-serif',

@@ -74,6 +74,7 @@ import taylorProfileSell from "@/assets/echelon-for-sale-sign.jpg";
 import echelonWatermark from "@/assets/echelon-watermark.webp";
 import austinLuxuryNetwork from "@/assets/austin-luxury-network.jpg";
 import topAgentNetwork from "@/assets/top-agent-network.webp";
+import homesComLogo from "@/assets/homes-com-logo.webp";
 import commissionClubhouse from "@/assets/clubhouse-commission.png";
 
 /* ------------------------------------------------------------------ */
@@ -571,6 +572,27 @@ const Sell = () => {
                   </ScrollReveal>
                 ))}
               </ul>
+
+              {/* Homes.com Premier Agent highlight */}
+              <ScrollReveal delay={560}>
+                <div className="mt-12 pt-8 border-t border-foreground/10">
+                  <p className="text-minimal text-gold mb-4 font-extrabold tracking-[0.2em] text-xs">
+                    PREMIER AGENT PARTNERSHIP
+                  </p>
+                  <div className="flex items-start gap-5">
+                    <img
+                      src={homesComLogo}
+                      alt="Homes.com Premier Agent"
+                      className="h-8 md:h-9 w-auto object-contain shrink-0 mt-1"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <p className="text-foreground/80 text-[14.5px] leading-relaxed max-w-[480px]">
+                      As a <span className="text-foreground font-medium">Homes.com Premier Agent</span>, your listing receives elevated placement and dedicated buyer exposure across one of the nation's fastest-growing luxury real estate platforms.
+                    </p>
+                  </div>
+                </div>
+              </ScrollReveal>
             </div>
           </div>
 

@@ -16,6 +16,7 @@ interface PrivateDistributionStripProps {
   headline?: string;
   body?: string;
   ctaLabel?: string;
+  to?: string;
 }
 
 const PrivateDistributionStrip = ({
@@ -24,6 +25,7 @@ const PrivateDistributionStrip = ({
   headline = "The 78746 Brief, May 2026",
   body = "Private market intelligence for Austin's most guarded zip code. Off-market trades, properties whispered before listing, and the strategic posture of buyers active in the field.",
   ctaLabel = "Access the Brief",
+  to = "/private-distribution",
 }: PrivateDistributionStripProps) => {
   const isNavy = variant === "navy";
   const bg = isNavy ? "#0C0F24" : "#F5F3EF";

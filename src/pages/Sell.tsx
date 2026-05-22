@@ -575,49 +575,57 @@ const Sell = () => {
 
               {/* Premier Partnerships & Credentials */}
               <ScrollReveal delay={560}>
-                <div className="mt-12 pt-8 border-t border-foreground/10 space-y-8">
-                  <p className="text-minimal text-gold font-extrabold tracking-[0.2em] text-xs">
+                <div className="mt-14 pt-10 border-t border-foreground/10">
+                  <p className="text-minimal text-gold font-extrabold tracking-[0.22em] text-[11px] mb-8">
                     PREMIER PARTNERSHIPS & CREDENTIALS
                   </p>
 
-                  <div className="flex items-start gap-5">
-                    <img
-                      src={homesComLogo}
-                      alt="Homes.com Premier Agent"
-                      className="h-8 md:h-9 w-auto object-contain shrink-0 mt-1"
-                      loading="lazy"
-                      decoding="async"
-                    />
-                    <p className="text-foreground/80 text-[14.5px] leading-relaxed max-w-[480px]">
-                      As a <span className="text-foreground font-medium">Homes.com Premier Agent</span>, your listing receives elevated placement and dedicated buyer exposure across one of the nation's fastest-growing luxury real estate platforms.
-                    </p>
-                  </div>
+                  <div className="divide-y divide-foreground/10">
+                    {/* Homes.com */}
+                    <div className="grid grid-cols-[120px_1fr] md:grid-cols-[140px_1fr] items-center gap-6 md:gap-8 py-6">
+                      <div className="flex items-center justify-start">
+                        <img
+                          src={homesComLogo}
+                          alt="Homes.com Premier Agent"
+                          className="h-7 md:h-8 w-auto object-contain"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                      <p className="text-foreground/75 text-[13.5px] leading-[1.7] tracking-[0.005em]">
+                        <span className="text-foreground font-medium">Homes.com Premier Agent</span> — elevated listing placement and dedicated buyer exposure across one of the nation's fastest-growing luxury platforms.
+                      </p>
+                    </div>
 
-                  <div className="flex items-start gap-5">
-                    <a
-                      href="https://www.luxuryhomemarketing.com/clhms/mini-verified.html?m=47b7631918fd737ab569ce1c45792b4b"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        window.open(
-                          "https://www.luxuryhomemarketing.com/clhms/mini-verified.html?m=47b7631918fd737ab569ce1c45792b4b",
-                          "_blank",
-                          "width=700,height=470,left=100,top=100,scrollbars=1"
-                        );
-                      }}
-                      className="shrink-0 mt-1 inline-block"
-                      aria-label="Verify Certified Luxury Home Marketing Specialist credential"
-                    >
-                      <img
-                        src="https://www.luxuryhomemarketing.com/en/logo.html?m=47b7631918fd737ab569ce1c45792b4b&v=12"
-                        alt="Certified Luxury Home Marketing Specialist (CLHMS) — verified member"
-                        className="h-12 md:h-14 w-auto object-contain"
-                        loading="lazy"
-                        decoding="async"
-                      />
-                    </a>
-                    <p className="text-foreground/80 text-[14.5px] leading-relaxed max-w-[480px]">
-                      A <span className="text-foreground font-medium">Certified Luxury Home Marketing Specialist (CLHMS)</span> through The Institute for Luxury Home Marketing — recognized expertise in pricing, marketing, and negotiating premier residential properties.
-                    </p>
+                    {/* CLHMS */}
+                    <div className="grid grid-cols-[120px_1fr] md:grid-cols-[140px_1fr] items-center gap-6 md:gap-8 py-6">
+                      <div className="flex items-center justify-start">
+                        <a
+                          href="https://www.luxuryhomemarketing.com/clhms/mini-verified.html?m=47b7631918fd737ab569ce1c45792b4b"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            window.open(
+                              "https://www.luxuryhomemarketing.com/clhms/mini-verified.html?m=47b7631918fd737ab569ce1c45792b4b",
+                              "_blank",
+                              "width=700,height=470,left=100,top=100,scrollbars=1"
+                            );
+                          }}
+                          className="inline-block transition-opacity duration-300 hover:opacity-80"
+                          aria-label="Verify Certified Luxury Home Marketing Specialist credential"
+                        >
+                          <img
+                            src="https://www.luxuryhomemarketing.com/en/logo.html?m=47b7631918fd737ab569ce1c45792b4b&v=12"
+                            alt="Certified Luxury Home Marketing Specialist (CLHMS) — verified member"
+                            className="h-14 md:h-16 w-auto object-contain"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </a>
+                      </div>
+                      <p className="text-foreground/75 text-[13.5px] leading-[1.7] tracking-[0.005em]">
+                        <span className="text-foreground font-medium">Certified Luxury Home Marketing Specialist (CLHMS)</span> — recognized through The Institute for Luxury Home Marketing for pricing, marketing, and negotiating premier residential properties.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </ScrollReveal>

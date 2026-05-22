@@ -507,12 +507,10 @@ const PrivateDistributionEdition = ({ teaser }: { teaser: BriefEditionTeaser }) 
    ───────────────────────────────────────────── */
 
 const PrivateDistributionIndex = () => {
-  const editions = useMemo(
-    () => PRIVATE_DISTRIBUTION.filter((e) => e.active !== false),
-    []
-  );
-  const featured = getFeaturedEdition();
-  const library = editions.filter((e) => e.slug !== featured?.slug);
+  const [editions, setEditions] = useState<BriefEditionTeaser[]>([]);
+  useEffect(() => {
+    fetchEditionTeasers().then(setEditions).catch(() => setEditions([]));
+  }, []);
   const canonical = `${SITE}/private-distribution`;
 
   return (
@@ -1052,11 +1050,7 @@ const PrivateDistributionIndex = () => {
                             lineHeight: 1.6,
                           }}
                         >
-                          {e.sections.reduce(
-                            (n, s) => n + (s.properties?.length || s.watching?.length || 0),
-                            0,
-                          )}{" "}
-                          opportunities
+                          Curated opportunities
                         </p>
                       </div>
                       <div>
@@ -1108,7 +1102,7 @@ const PrivateDistributionIndex = () => {
                             lineHeight: 1.6,
                           }}
                         >
-                          {e.signOff?.name ?? "Echelon Desk"}
+                          Echelon Desk
                         </p>
                       </div>
                     </div>
@@ -1129,16 +1123,22 @@ const PrivateDistributionIndex = () => {
 
 const PrivateDistribution = () => {
   const { slug } = useParams<{ slug?: string }>();
+  const [teaser, setTeaser] = useState<BriefEditionTeaser | null | undefined>(undefined);
+
+  useEffect(() => {
+    if (!slug) return;
+    setTeaser(undefined);
+    fetchEditionTeaser(slug).then(setTeaser).catch(() => setTeaser(null));
+  }, [slug]);
 
   if (!slug) return <PrivateDistributionIndex />;
-
-  const edition = getEditionBySlug(slug);
-  if (!edition || edition.active === false) {
+  if (teaser === undefined) {
+    return <div className="min-h-screen" style={{ background: PAPER }} />;
+  }
+  if (teaser === null) {
     return <Navigate to="/private-distribution" replace />;
   }
-
-  return <PrivateDistributionEdition edition={edition} />;
+  return <PrivateDistributionEdition teaser={teaser} />;
 };
 
 export default PrivateDistribution;
-export { getFeaturedEdition };

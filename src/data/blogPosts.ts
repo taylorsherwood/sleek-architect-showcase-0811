@@ -293,7 +293,7 @@ Luxury properties in Austin may involve:
 - utility easements
 - architectural review limitations
 
-This is especially relevant in communities like Rob Roy, Spanish Oaks, and certain stretches surrounding <a href="/communities/lake-austin" class="${LINK}">Lake Austin</a> where topography, privacy infrastructure, and custom improvements can add complexity.
+This is especially relevant in communities like Rob Roy, <a href="/communities/spanish-oaks" class="${LINK}">Spanish Oaks</a>, and certain stretches surrounding <a href="/communities/lake-austin" class="${LINK}">Lake Austin</a> where topography, privacy infrastructure, and custom improvements can add complexity.
 
 Entity structuring should also be finalized before closing whenever possible.
 

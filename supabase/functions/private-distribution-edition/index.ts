@@ -13,7 +13,7 @@ Deno.serve(async (req) => {
   if (req.method === "OPTIONS") {
     return new Response("ok", { headers: corsHeaders });
   }
-  if (req.method !== "POST" && req.method !== "GET") {
+  if (req.method !== "POST") {
     return new Response(JSON.stringify({ error: "Method not allowed" }), {
       status: 405,
       headers: { ...corsHeaders, "Content-Type": "application/json" },
@@ -22,21 +22,22 @@ Deno.serve(async (req) => {
 
   let slug = "";
   let token = "";
-  if (req.method === "POST") {
-    try {
-      const body = await req.json();
-      slug = String(body.slug || "").trim();
-      token = String(body.token || "").trim();
-    } catch {
-      return new Response(JSON.stringify({ error: "Invalid JSON" }), {
-        status: 400,
-        headers: { ...corsHeaders, "Content-Type": "application/json" },
-      });
-    }
-  } else {
-    const url = new URL(req.url);
-    slug = (url.searchParams.get("slug") || "").trim();
-    token = (url.searchParams.get("token") || "").trim();
+
+  // Prefer Authorization: Bearer <token> header; fall back to POST body.
+  const authHeader = req.headers.get("authorization") || req.headers.get("Authorization");
+  if (authHeader && /^Bearer\s+/i.test(authHeader)) {
+    token = authHeader.replace(/^Bearer\s+/i, "").trim();
+  }
+
+  try {
+    const body = await req.json();
+    slug = String(body.slug || "").trim();
+    if (!token) token = String(body.token || "").trim();
+  } catch {
+    return new Response(JSON.stringify({ error: "Invalid request" }), {
+      status: 400,
+      headers: { ...corsHeaders, "Content-Type": "application/json" },
+    });
   }
 
   if (!slug || !token || token.length < 32 || token.length > 128) {

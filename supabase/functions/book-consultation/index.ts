@@ -349,12 +349,12 @@ Deno.serve(async (req) => {
     console.error("[book-consultation] gmail exception:", emailError);
   }
 
+  const calendarBooked = !!eventId;
   return json({
-    ok: !!eventId || emailSent,
+    ok: calendarBooked || emailSent,
     eventId,
     eventLink,
+    calendarBooked,
     emailSent,
-    calendarError,
-    emailError,
   });
 });

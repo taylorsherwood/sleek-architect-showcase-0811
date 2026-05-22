@@ -438,6 +438,117 @@ export type Database = {
         }
         Relationships: []
       }
+      private_edition_grants: {
+        Row: {
+          created_at: string
+          edition_slug: string
+          email: string
+          expires_at: string
+          id: string
+          last_accessed_at: string | null
+          lead_id: string | null
+          token_hash: string
+        }
+        Insert: {
+          created_at?: string
+          edition_slug: string
+          email: string
+          expires_at?: string
+          id?: string
+          last_accessed_at?: string | null
+          lead_id?: string | null
+          token_hash: string
+        }
+        Update: {
+          created_at?: string
+          edition_slug?: string
+          email?: string
+          expires_at?: string
+          id?: string
+          last_accessed_at?: string | null
+          lead_id?: string | null
+          token_hash?: string
+        }
+        Relationships: []
+      }
+      private_editions: {
+        Row: {
+          active: boolean
+          closing_note: string | null
+          created_at: string
+          dek: string
+          edition_label: string
+          from_the_desk: string | null
+          hero_image_url: string | null
+          how_this_works: string | null
+          id: string
+          is_featured: boolean
+          issue_number: string
+          market: string
+          pdf_url: string | null
+          published_at: string
+          sections: Json
+          sign_off: Json | null
+          slug: string
+          sort_order: number
+          subtitle: string
+          title: string
+          updated_at: string
+          volume: string | null
+          watermark: string | null
+        }
+        Insert: {
+          active?: boolean
+          closing_note?: string | null
+          created_at?: string
+          dek: string
+          edition_label: string
+          from_the_desk?: string | null
+          hero_image_url?: string | null
+          how_this_works?: string | null
+          id?: string
+          is_featured?: boolean
+          issue_number: string
+          market: string
+          pdf_url?: string | null
+          published_at?: string
+          sections?: Json
+          sign_off?: Json | null
+          slug: string
+          sort_order?: number
+          subtitle: string
+          title: string
+          updated_at?: string
+          volume?: string | null
+          watermark?: string | null
+        }
+        Update: {
+          active?: boolean
+          closing_note?: string | null
+          created_at?: string
+          dek?: string
+          edition_label?: string
+          from_the_desk?: string | null
+          hero_image_url?: string | null
+          how_this_works?: string | null
+          id?: string
+          is_featured?: boolean
+          issue_number?: string
+          market?: string
+          pdf_url?: string | null
+          published_at?: string
+          sections?: Json
+          sign_off?: Json | null
+          slug?: string
+          sort_order?: number
+          subtitle?: string
+          title?: string
+          updated_at?: string
+          volume?: string | null
+          watermark?: string | null
+        }
+        Relationships: []
+      }
       story_sections: {
         Row: {
           animation_style: string | null
@@ -529,7 +640,63 @@ export type Database = {
       }
     }
     Views: {
-      [_ in never]: never
+      private_editions_public: {
+        Row: {
+          active: boolean | null
+          dek: string | null
+          edition_label: string | null
+          from_the_desk: string | null
+          hero_image_url: string | null
+          id: string | null
+          is_featured: boolean | null
+          issue_number: string | null
+          market: string | null
+          published_at: string | null
+          slug: string | null
+          sort_order: number | null
+          subtitle: string | null
+          title: string | null
+          volume: string | null
+          watermark: string | null
+        }
+        Insert: {
+          active?: boolean | null
+          dek?: string | null
+          edition_label?: string | null
+          from_the_desk?: string | null
+          hero_image_url?: string | null
+          id?: string | null
+          is_featured?: boolean | null
+          issue_number?: string | null
+          market?: string | null
+          published_at?: string | null
+          slug?: string | null
+          sort_order?: number | null
+          subtitle?: string | null
+          title?: string | null
+          volume?: string | null
+          watermark?: string | null
+        }
+        Update: {
+          active?: boolean | null
+          dek?: string | null
+          edition_label?: string | null
+          from_the_desk?: string | null
+          hero_image_url?: string | null
+          id?: string | null
+          is_featured?: boolean | null
+          issue_number?: string | null
+          market?: string | null
+          published_at?: string | null
+          slug?: string | null
+          sort_order?: number | null
+          subtitle?: string | null
+          title?: string | null
+          volume?: string | null
+          watermark?: string | null
+        }
+        Relationships: []
+      }
     }
     Functions: {
       has_role: {

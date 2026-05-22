@@ -205,6 +205,8 @@ const Navigation = () => {
           size="sm"
           className="lg:hidden absolute right-2 md:right-6"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={isMenuOpen}
         >
           {isMenuOpen ? "✕" : "☰"}
         </Button>

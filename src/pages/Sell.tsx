@@ -619,7 +619,7 @@ const Sell = () => {
           </ScrollReveal>
 
           {/* Two-column horizontal strip */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-y-16 md:gap-x-24 lg:gap-x-32">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-y-12 md:gap-x-12 lg:gap-x-16 max-w-[860px] mx-auto">
             {/* Homes.com */}
             <ScrollReveal delay={120}>
               <div className="flex flex-col items-center text-center">

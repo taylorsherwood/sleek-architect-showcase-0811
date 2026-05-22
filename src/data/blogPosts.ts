@@ -11,6 +11,9 @@ import blogConfidentialTransactions from "@/assets/blog-confidential-property-tr
 import blogBestLuxuryNeighborhoods from "@/assets/blog-best-neighborhoods-luxury-homes-austin.jpg";
 import blogPrivateShowingsAustin from "@/assets/blog/private-property-showings-austin.jpg";
 import blogBoutiqueVsLargeFirms from "@/assets/blog/boutique-vs-large-luxury-firms.jpg";
+import blogBeyondZillow from "@/assets/blog/beyond-zillow-luxury-austin.jpg";
+
+
 
 
 export interface BlogPost {

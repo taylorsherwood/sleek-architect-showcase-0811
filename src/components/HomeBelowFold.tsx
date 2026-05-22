@@ -1553,9 +1553,9 @@ const HomeBelowFold = () => (
     <LeadCapture />
 
     <PrivateDistributionStrip
-      headline="The 78703 Dossier, May 2026"
+      headline="The 78703 brief, May 2026"
       body="An off-market read on Tarrytown, Old Enfield, and Pemberton Heights. Quiet trades, pre-market introductions, and the buyers actively positioning inside Austin's most coveted central zip code."
-      ctaLabel="Access the Dossier"
+      ctaLabel="Access the brief"
       to="/private-distribution/78703-may-2026"
     />
     <div className="h-px w-full" style={{ background: "rgba(184,160,109,0.2)" }} aria-hidden="true" />

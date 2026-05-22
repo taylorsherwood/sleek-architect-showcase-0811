@@ -139,7 +139,7 @@ This is especially true within:
 - <a href="/communities/barton-creek" class="${LINK}">Barton Creek</a>
 - <a href="/communities/rollingwood" class="${LINK}">Rollingwood</a>
 - <a href="/communities/tarrytown" class="${LINK}">Tarrytown</a>
-- Spanish Oaks
+- <a href="/communities/spanish-oaks" class="${LINK}">Spanish Oaks</a>
 - select waterfront stretches of <a href="/communities/lake-austin" class="${LINK}">Lake Austin</a>
 
 At the highest price points, sellers frequently prioritize discretion over exposure.

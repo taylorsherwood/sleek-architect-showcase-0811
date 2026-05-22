@@ -300,7 +300,8 @@ const PropertyCard = ({ p, isLast }: { p: PropertyFeature; isLast: boolean }) =>
       </div>
     </div>
   </article>
-);
+  );
+};
 
 /* ─── Watching item ─── */
 

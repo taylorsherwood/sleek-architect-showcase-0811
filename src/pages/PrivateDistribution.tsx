@@ -172,7 +172,7 @@ const BriefHero = ({ edition }: { edition: BriefEditionTeaser & { watermark?: st
 
 /* ─── Editor's note (public, indexable teaser) ─── */
 
-const FromTheDesk = ({ edition }: { edition: BriefEdition }) => {
+const FromTheDesk = ({ edition }: { edition: BriefEditionTeaser }) => {
   if (!edition.fromTheDesk) return null;
   return (
     <section className="w-full" style={{ background: PAPER }}>

@@ -575,57 +575,66 @@ const Sell = () => {
 
               {/* Premier Partnerships & Credentials */}
               <ScrollReveal delay={560}>
-                <div className="mt-14 pt-10 border-t border-foreground/10">
-                  <p className="text-minimal text-gold font-extrabold tracking-[0.22em] text-[11px] mb-8">
-                    PREMIER PARTNERSHIPS & CREDENTIALS
-                  </p>
+                <div className="mt-16 pt-12 border-t border-foreground/10">
+                  {/* Editorial heading */}
+                  <div className="mb-10">
+                    <p className="text-gold font-extrabold tracking-[0.32em] text-[10.5px] mb-4">
+                      PREMIER PARTNERSHIPS &amp; CREDENTIALS
+                    </p>
+                    <div className="h-px w-10 bg-gold/60" aria-hidden="true" />
+                  </div>
 
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-8">
+                  {/* Two equal cards */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
                     {/* Homes.com */}
-                    <div className="flex flex-col">
-                      <div className="h-14 flex items-center">
-                        <img
-                          src={homesComLogo}
-                          alt="Homes.com Premier Agent"
-                          className="h-7 md:h-8 w-auto object-contain"
-                          loading="lazy"
-                          decoding="async"
-                        />
-                      </div>
-                      <p className="mt-4 text-foreground/75 text-[13.5px] leading-[1.7] tracking-[0.005em]">
-                        <span className="text-foreground font-medium">Homes.com Premier Agent</span> — elevated listing placement and dedicated buyer exposure across one of the nation's fastest-growing luxury platforms.
-                      </p>
-                    </div>
-
-                    {/* CLHMS */}
-                    <div className="flex flex-col">
-                      <div className="h-14 flex items-center">
-                        <a
-                          href="https://www.luxuryhomemarketing.com/clhms/mini-verified.html?m=47b7631918fd737ab569ce1c45792b4b"
-                          onClick={(e) => {
-                            e.preventDefault();
-                            window.open(
-                              "https://www.luxuryhomemarketing.com/clhms/mini-verified.html?m=47b7631918fd737ab569ce1c45792b4b",
-                              "_blank",
-                              "width=700,height=470,left=100,top=100,scrollbars=1"
-                            );
-                          }}
-                          className="inline-block transition-opacity duration-300 hover:opacity-80"
-                          aria-label="Verify Certified Luxury Home Marketing Specialist credential"
-                        >
+                    <ScrollReveal delay={120}>
+                      <div className="group relative h-full rounded-[22px] bg-[#FAFAF8] border border-foreground/[0.06] px-8 py-10 md:px-10 md:py-12 transition-all duration-500 ease-[cubic-bezier(0.25,0.1,0.25,1)] hover:-translate-y-[2px] hover:border-gold/30 hover:shadow-[0_18px_50px_-20px_rgba(185,160,108,0.35)]">
+                        <div className="h-12 md:h-14 flex items-center mb-8">
                           <img
-                            src="https://www.luxuryhomemarketing.com/en/logo.html?m=47b7631918fd737ab569ce1c45792b4b&v=12"
-                            alt="Certified Luxury Home Marketing Specialist (CLHMS) — verified member"
-                            className="h-14 w-auto object-contain"
+                            src={homesComLogo}
+                            alt="Homes.com Premier Agent"
+                            className="h-8 md:h-9 w-auto object-contain"
                             loading="lazy"
                             decoding="async"
                           />
-                        </a>
+                        </div>
+                        <p className="text-foreground/75 text-[14px] md:text-[14.5px] leading-[1.75] tracking-[0.005em]">
+                          <span className="text-foreground font-medium">Homes.com Premier Agent</span> providing enhanced listing visibility and targeted exposure across one of the nation's fastest-growing luxury search platforms.
+                        </p>
                       </div>
-                      <p className="mt-4 text-foreground/75 text-[13.5px] leading-[1.7] tracking-[0.005em]">
-                        <span className="text-foreground font-medium">Certified Luxury Home Marketing Specialist (CLHMS)</span> — recognized through The Institute for Luxury Home Marketing for pricing, marketing, and negotiating premier residential properties.
-                      </p>
-                    </div>
+                    </ScrollReveal>
+
+                    {/* CLHMS */}
+                    <ScrollReveal delay={220}>
+                      <div className="group relative h-full rounded-[22px] bg-[#FAFAF8] border border-foreground/[0.06] px-8 py-10 md:px-10 md:py-12 transition-all duration-500 ease-[cubic-bezier(0.25,0.1,0.25,1)] hover:-translate-y-[2px] hover:border-gold/30 hover:shadow-[0_18px_50px_-20px_rgba(185,160,108,0.35)]">
+                        <div className="h-12 md:h-14 flex items-center mb-8">
+                          <a
+                            href="https://www.luxuryhomemarketing.com/clhms/mini-verified.html?m=47b7631918fd737ab569ce1c45792b4b"
+                            onClick={(e) => {
+                              e.preventDefault();
+                              window.open(
+                                "https://www.luxuryhomemarketing.com/clhms/mini-verified.html?m=47b7631918fd737ab569ce1c45792b4b",
+                                "_blank",
+                                "width=700,height=470,left=100,top=100,scrollbars=1"
+                              );
+                            }}
+                            className="inline-flex items-center transition-opacity duration-300 hover:opacity-80"
+                            aria-label="Verify Certified Luxury Home Marketing Specialist credential"
+                          >
+                            <img
+                              src="https://www.luxuryhomemarketing.com/en/logo.html?m=47b7631918fd737ab569ce1c45792b4b&v=12"
+                              alt="Certified Luxury Home Marketing Specialist (CLHMS) — verified member"
+                              className="h-14 md:h-16 w-auto object-contain"
+                              loading="lazy"
+                              decoding="async"
+                            />
+                          </a>
+                        </div>
+                        <p className="text-foreground/75 text-[14px] md:text-[14.5px] leading-[1.75] tracking-[0.005em]">
+                          <span className="text-foreground font-medium">Certified Luxury Home Marketing Specialist (CLHMS)</span>, recognized for expertise in the marketing and negotiation of luxury residential properties.
+                        </p>
+                      </div>
+                    </ScrollReveal>
                   </div>
                 </div>
               </ScrollReveal>

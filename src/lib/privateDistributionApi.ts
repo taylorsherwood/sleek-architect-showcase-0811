@@ -126,7 +126,10 @@ export const fetchFullEdition = async (
 ): Promise<BriefEdition | null> => {
   const { data, error } = await supabase.functions.invoke(
     "private-distribution-edition",
-    { body: { slug, token } },
+    {
+      body: { slug },
+      headers: { Authorization: `Bearer ${token}` },
+    },
   );
   if (error) return null;
   if (!data?.ok || !data.edition) return null;

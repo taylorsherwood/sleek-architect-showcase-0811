@@ -44,6 +44,7 @@ const PrivateBriefGate = ({ editionSlug, editionTitle, onUnlock }: PrivateBriefG
       setError(result.error || "Something went wrong. Please try again.");
       return;
     }
+    const issuedToken = result.token;
 
     if (typeof window !== "undefined") {
       try {
@@ -57,7 +58,7 @@ const PrivateBriefGate = ({ editionSlug, editionTitle, onUnlock }: PrivateBriefG
       }
     }
 
-    onUnlock(result.token);
+    onUnlock(issuedToken);
   };
 
   return (

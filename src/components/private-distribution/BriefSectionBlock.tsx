@@ -4,6 +4,7 @@ import {
   WatchingItem,
   TradeRow,
 } from "@/data/privateDistribution";
+import { resolvePrivateImage } from "@/data/privateDistributionImages";
 
 /**
  * Renders a single gated section of a Private Distribution brief.
@@ -104,7 +105,9 @@ const statusStyle = (status: PropertyFeature["status"]): React.CSSProperties => 
   return { ...base, background: GOLD_DEEP, color: PAPER };
 };
 
-const PropertyCard = ({ p, isLast }: { p: PropertyFeature; isLast: boolean }) => (
+const PropertyCard = ({ p, isLast }: { p: PropertyFeature; isLast: boolean }) => {
+  const imgSrc = p.image || resolvePrivateImage(p.image_key);
+  return (
   <article
     className="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-7 md:gap-8 py-10 md:py-11"
     style={{ borderBottom: isLast ? "none" : `1px solid ${RULE}` }}
@@ -118,9 +121,9 @@ const PropertyCard = ({ p, isLast }: { p: PropertyFeature; isLast: boolean }) =>
         borderRadius: "0px",
       }}
     >
-      {p.image ? (
+      {imgSrc ? (
         <img
-          src={p.image}
+          src={imgSrc}
           alt={p.imageAlt ?? p.address}
           loading="lazy"
           decoding="async"

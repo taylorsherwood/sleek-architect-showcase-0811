@@ -202,23 +202,23 @@ const MortgageCalculator = () => {
       </p>
       <div className="grid sm:grid-cols-2 gap-6 mb-8">
         <div>
-          <label className="text-minimal text-muted-foreground mb-2 block">HOME PRICE</label>
+          <label htmlFor="mortgage-home-price" className="text-minimal text-muted-foreground mb-2 block">HOME PRICE</label>
           <div className="relative">
             <span className="absolute left-4 top-1/2 -translate-y-1/2 text-muted-foreground">$</span>
-            <input type="text" inputMode="numeric" value={homePrice.toLocaleString()} onChange={(e) => setHomePrice(Number(e.target.value.replace(/[^0-9]/g, '')) || 0)} className={`${inputClass} pl-8`} />
+            <input id="mortgage-home-price" type="text" inputMode="numeric" value={homePrice.toLocaleString()} onChange={(e) => setHomePrice(Number(e.target.value.replace(/[^0-9]/g, '')) || 0)} className={`${inputClass} pl-8`} />
           </div>
         </div>
         <div>
-          <label className="text-minimal text-muted-foreground mb-2 block">DOWN PAYMENT (%)</label>
-          <input type="number" value={downPayment} onChange={(e) => setDownPayment(Number(e.target.value))} className={inputClass} />
+          <label htmlFor="mortgage-down-payment" className="text-minimal text-muted-foreground mb-2 block">DOWN PAYMENT (%)</label>
+          <input id="mortgage-down-payment" type="number" value={downPayment} onChange={(e) => setDownPayment(Number(e.target.value))} className={inputClass} />
         </div>
         <div>
-          <label className="text-minimal text-muted-foreground mb-2 block">INTEREST RATE (%)</label>
-          <input type="number" step="0.1" value={rate} onChange={(e) => setRate(Number(e.target.value))} className={inputClass} />
+          <label htmlFor="mortgage-interest-rate" className="text-minimal text-muted-foreground mb-2 block">INTEREST RATE (%)</label>
+          <input id="mortgage-interest-rate" type="number" step="0.1" value={rate} onChange={(e) => setRate(Number(e.target.value))} className={inputClass} />
         </div>
         <div>
-          <label className="text-minimal text-muted-foreground mb-2 block">LOAN TERM (YEARS)</label>
-          <input type="number" value={term} onChange={(e) => setTerm(Number(e.target.value))} className={inputClass} />
+          <label htmlFor="mortgage-loan-term" className="text-minimal text-muted-foreground mb-2 block">LOAN TERM (YEARS)</label>
+          <input id="mortgage-loan-term" type="number" value={term} onChange={(e) => setTerm(Number(e.target.value))} className={inputClass} />
         </div>
       </div>
       <div className="border-t border-border pt-6 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">

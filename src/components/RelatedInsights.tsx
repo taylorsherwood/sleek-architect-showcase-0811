@@ -38,6 +38,8 @@ const allInsightLinks: InsightLink[] = [
   { to: "/why-billionaires-are-moving-to-austin", label: "Why billionaires are moving to Austin", topics: ["relocation", "luxury", "moving"] },
   { to: "/austin-luxury-market-report", label: "Austin luxury market report", topics: ["market", "luxury", "forecast"] },
   { to: "/blog/private-listings-austin-buyers-actually-want", label: "Private listings Austin buyers actually want", topics: ["off-market", "private", "luxury", "homes"] },
+  { to: "/blog/best-neighborhoods-for-luxury-homes-austin", label: "8 best neighborhoods for luxury homes in Austin", topics: ["luxury", "neighborhoods", "homes", "communities", "guide"] },
+  { to: "/blog/confidential-property-transactions", label: "Confidential property transactions in Austin", topics: ["off-market", "private", "luxury", "sell"] },
 ];
 
 // Map page paths to relevant topic keywords for matching

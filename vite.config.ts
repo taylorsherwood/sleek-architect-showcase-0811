@@ -95,6 +95,18 @@ const extractAll = (file: string, pattern: RegExp): string[] => {
   return [...content.matchAll(pattern)].map((match) => match[1]);
 };
 
+// Extract id+date pairs from a blog data file so sitemap lastmod reflects
+// real publish/update dates (Google distrusts uniform lastmod=today values).
+const extractBlogIdDatePairs = (file: string): Record<string, string> => {
+  const content = fs.readFileSync(path.join(DATA_DIR, file), "utf-8");
+  const pairs: Record<string, string> = {};
+  const re = /id:\s*"([^"]+)"[\s\S]*?date:\s*"([^"]+)"/g;
+  for (const m of content.matchAll(re)) {
+    pairs[m[1]] = m[2];
+  }
+  return pairs;
+};
+
 const getAllPrerenderRoutes = () => {
   const communitySlugs = extractAll("communityData.ts", /slug:\s*"([^"]+)"/g);
   const blogIds = [
@@ -111,22 +123,28 @@ const getAllPrerenderRoutes = () => {
   );
 };
 
-const getSitemapRoutes = () => {
+const getSitemapRoutes = (): { route: string; lastmod?: string }[] => {
   const communitySlugs = extractAll("communityData.ts", /slug:\s*"([^"]+)"/g);
-  const blogIds = [
-    ...extractAll("seoBlogPosts.ts", /id:\s*"([^"]+)"/g),
-    ...extractAll("blogPosts.ts", /id:\s*"([^"]+)"/g),
-  ].filter((id) => !excludedBlogIds.has(id));
+  const blogDates = {
+    ...extractBlogIdDatePairs("seoBlogPosts.ts"),
+    ...extractBlogIdDatePairs("blogPosts.ts"),
+  };
+  const blogIds = Object.keys(blogDates).filter((id) => !excludedBlogIds.has(id));
 
-  return Array.from(
-    new Set([
-      ...sitemapStaticRoutes,
-      ...communitySlugs.map((slug) => `/communities/${slug}`),
-      ...blogIds.map((id) => `/blog/${id}`),
-      // Standalone blog-route editorial pillars
-      "/blog/austin-luxury-market-trends",
-    ])
-  );
+  const map = new Map<string, { route: string; lastmod?: string }>();
+  for (const route of sitemapStaticRoutes) map.set(route, { route });
+  for (const slug of communitySlugs) {
+    const r = `/communities/${slug}`;
+    map.set(r, { route: r });
+  }
+  for (const id of blogIds) {
+    const r = `/blog/${id}`;
+    map.set(r, { route: r, lastmod: blogDates[id] });
+  }
+  // Standalone editorial pillar
+  map.set("/blog/austin-luxury-market-trends", { route: "/blog/austin-luxury-market-trends" });
+
+  return Array.from(map.values());
 };
 
 function sitemapPlugin(): Plugin {
@@ -135,8 +153,7 @@ function sitemapPlugin(): Plugin {
     const today = new Date().toISOString().split("T")[0];
 
     const urls = allRoutes
-      .map(
-        (route: string) => {
+      .map(({ route, lastmod }) => {
           // Tier 1: Homepage + core service/SEO pillar pages
           const tier1 = ["/buy", "/sell", "/listings", "/communities", "/invest", "/about",
             "/austin-luxury-homes-for-sale", "/luxury-real-estate-austin", "/off-market-real-estate-austin",
@@ -154,9 +171,10 @@ function sitemapPlugin(): Plugin {
             : tier1.includes(route) ? "weekly"
             : route.startsWith("/blog/") ? "monthly"
             : "weekly";
+          const effectiveLastmod = lastmod || today;
           return `  <url>
     <loc>${SITE_URL}${route}</loc>
-    <lastmod>${today}</lastmod>
+    <lastmod>${effectiveLastmod}</lastmod>
     <changefreq>${changefreq}</changefreq>
     <priority>${priority}</priority>
   </url>`;

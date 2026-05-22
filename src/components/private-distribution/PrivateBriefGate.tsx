@@ -40,7 +40,7 @@ const PrivateBriefGate = ({ editionSlug, editionTitle, onUnlock }: PrivateBriefG
     });
     setSubmitting(false);
 
-    if (!result.ok) {
+    if (result.ok !== true) {
       setError(result.error || "Something went wrong. Please try again.");
       return;
     }

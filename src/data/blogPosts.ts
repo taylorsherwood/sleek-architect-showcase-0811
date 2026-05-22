@@ -75,7 +75,7 @@ Understanding that distinction helps buyers move decisively when the right oppor
 
 Just as importantly, define the lifestyle ecosystem surrounding the home itself. Austin's <a href="/best-luxury-neighborhoods-austin" class="${LINK}">luxury enclaves</a> each offer something very different.
 
-<a href="/communities/barton-creek" class="${LINK}">Barton Creek</a> appeals to buyers seeking privacy, golf access, and resort-style living near Barton Creek Country Club. <a href="/communities/westlake-hills" class="${LINK}">Westlake Hills</a> attracts buyers prioritizing top-tier schools, hill country views, and proximity to downtown. <a href="/communities/tarrytown" class="${LINK}">Tarrytown</a> and Pemberton Heights offer historic prestige and central convenience, while communities like Spanish Oaks and Rob Roy deliver a more secluded estate environment.
+<a href="/communities/barton-creek" class="${LINK}">Barton Creek</a> appeals to buyers seeking privacy, golf access, and resort-style living near Barton Creek Country Club. <a href="/communities/westlake-hills" class="${LINK}">Westlake Hills</a> attracts buyers prioritizing top-tier schools, hill country views, and proximity to downtown. <a href="/communities/tarrytown" class="${LINK}">Tarrytown</a> and Pemberton Heights offer historic prestige and central convenience, while communities like <a href="/communities/spanish-oaks" class="${LINK}">Spanish Oaks</a> and Rob Roy deliver a more secluded estate environment.
 
 Daily lifestyle should shape the search as much as square footage.
 

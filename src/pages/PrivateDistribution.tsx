@@ -45,7 +45,7 @@ const formatMonthYear = (iso: string) => {
    centered headline, italic deck.
    ───────────────────────────────────────────── */
 
-const BriefHero = ({ edition }: { edition: BriefEdition }) => {
+const BriefHero = ({ edition }: { edition: BriefEditionTeaser & { watermark?: string | null } }) => {
   const metaLine = [
     edition.volume,
     edition.issueNumber,

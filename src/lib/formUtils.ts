@@ -8,6 +8,7 @@
  * even if Zapier fails or the webhook URL changes.
  */
 import { supabase } from "@/integrations/supabase/client";
+import { trackLead } from "@/lib/analytics";
 
 /** Reads UTM parameters from the current URL. */
 function getUtmFromUrl(): Record<string, string> {
@@ -160,6 +161,9 @@ export async function submitLeadToZapier(
     if (response && typeof response === "object" && "ok" in response && !response.ok) {
       return { ok: false, error: String(response.error || "Submission failed.") };
     }
+
+    // Fire GA4 conversion for every successful lead capture site-wide.
+    trackLead({ source: payload.source, email: payload.email });
 
     return { ok: true };
   } catch (err) {

@@ -144,8 +144,10 @@ const BlogPost = () => {
                 alt={`${post.title} - Austin luxury real estate`}
                 title={post.title}
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-                    loading="lazy" decoding="async"
-                    />
+                loading="eager"
+                fetchPriority="high"
+                decoding="async"
+              />
             </div>
 
             <BlogContent

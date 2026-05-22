@@ -384,38 +384,49 @@ const BriefBody = ({ edition }: { edition: BriefEdition }) => (
    Single-edition view
    ───────────────────────────────────────────── */
 
-const PrivateDistributionEdition = ({ edition }: { edition: BriefEdition }) => {
-  const storageKey = `echelon_private_distribution_${edition.slug}`;
+const PrivateDistributionEdition = ({ teaser }: { teaser: BriefEditionTeaser }) => {
   const { isAdmin } = useAuth();
-  const [unlocked, setUnlocked] = useState(false);
-  const effectiveUnlocked = unlocked || isAdmin;
+  const [full, setFull] = useState<BriefEdition | null>(null);
+  const [loadingFull, setLoadingFull] = useState(false);
 
+  // Hydrate full edition from a stored token (or for admin via an admin fetch path)
   useEffect(() => {
-    if (typeof window === "undefined") return;
-    try {
-      if (window.localStorage.getItem(storageKey)) setUnlocked(true);
-    } catch {
-      /* ignore */
-    }
-    const onUnlock = (e: Event) => {
-      const detail = (e as CustomEvent<{ slug: string }>).detail;
-      if (detail?.slug === edition.slug) setUnlocked(true);
+    let cancelled = false;
+    const token = getStoredPdToken(teaser.slug);
+    if (!token) return;
+    setLoadingFull(true);
+    fetchFullEdition(teaser.slug, token).then((data) => {
+      if (cancelled) return;
+      if (data) {
+        setFull(data);
+      } else {
+        clearStoredPdToken(teaser.slug);
+      }
+      setLoadingFull(false);
+    });
+    return () => {
+      cancelled = true;
     };
-    window.addEventListener("echelon:private-distribution-unlocked", onUnlock);
-    return () =>
-      window.removeEventListener(
-        "echelon:private-distribution-unlocked",
-        onUnlock
-      );
-  }, [edition.slug, storageKey]);
+  }, [teaser.slug]);
 
-  const canonical = `${SITE}/private-distribution/${edition.slug}`;
+  const handleUnlock = (token: string) => {
+    setStoredPdToken(teaser.slug, token);
+    setLoadingFull(true);
+    fetchFullEdition(teaser.slug, token).then((data) => {
+      if (data) setFull(data);
+      setLoadingFull(false);
+    });
+  };
+
+  const heroEdition = { ...teaser, watermark: full?.watermark ?? deriveWatermark(teaser.market) };
+  const canonical = `${SITE}/private-distribution/${teaser.slug}`;
+  const showBody = !!full;
 
   return (
     <div className="min-h-screen" style={{ background: PAPER }}>
       <SEOHead
-        title={`${edition.title}, ${edition.market}`}
-        description={edition.subtitle}
+        title={`${teaser.title}, ${teaser.market}`}
+        description={teaser.subtitle}
         canonical={canonical}
         ogType="article"
         noindex
@@ -424,29 +435,48 @@ const PrivateDistributionEdition = ({ edition }: { edition: BriefEdition }) => {
         schema={createBreadcrumbSchema([
           { name: "Home", url: `${SITE}/` },
           { name: "Private Distribution", url: `${SITE}/private-distribution` },
-          { name: edition.title, url: canonical },
+          { name: teaser.title, url: canonical },
         ])}
       />
 
       <Navigation />
-      <BriefHero edition={edition} />
-      <FromTheDesk edition={edition} />
+      <BriefHero edition={heroEdition} />
+      <FromTheDesk edition={teaser} />
 
-      {effectiveUnlocked ? (
-        <BriefBody edition={edition} />
+      {showBody && full ? (
+        <BriefBody edition={full} />
+      ) : loadingFull ? (
+        <section className="w-full" style={{ background: PAPER }}>
+          <div className="max-w-[820px] mx-auto px-6 md:px-12 py-24 text-center">
+            <p style={{ fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.32em", textTransform: "uppercase", color: MUTED }}>
+              Opening Access…
+            </p>
+          </div>
+        </section>
+      ) : isAdmin ? (
+        <section className="w-full" style={{ background: PAPER }}>
+          <div className="max-w-[820px] mx-auto px-6 md:px-12 py-24 text-center">
+            <p style={{ fontFamily: '"Jost", sans-serif', fontSize: "13px", color: MUTED }}>
+              Admin preview, edit this edition at{" "}
+              <Link to={`/admin/private-distribution/${teaser.slug}`} className="underline" style={{ color: GOLD_DEEP }}>
+                /admin/private-distribution/{teaser.slug}
+              </Link>
+            </p>
+          </div>
+        </section>
       ) : (
         <PrivateBriefGate
-          editionSlug={edition.slug}
-          editionTitle={`${edition.title}, ${edition.edition}`}
-          onUnlock={() => setUnlocked(true)}
+          editionSlug={teaser.slug}
+          editionTitle={`${teaser.title}, ${teaser.edition}`}
+          onUnlock={handleUnlock}
         />
       )}
 
-      {effectiveUnlocked && edition.pdfUrl && (
+      {showBody && full?.pdfUrl && (
         <section className="w-full" style={{ background: NAVY }}>
           <div className="max-w-[820px] mx-auto px-6 md:px-12 py-14 text-center">
             <a
-              href={edition.pdfUrl}
+              href={full.pdfUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3"

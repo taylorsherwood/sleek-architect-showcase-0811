@@ -75,7 +75,7 @@ Understanding that distinction helps buyers move decisively when the right oppor
 
 Just as importantly, define the lifestyle ecosystem surrounding the home itself. Austin's <a href="/best-luxury-neighborhoods-austin" class="${LINK}">luxury enclaves</a> each offer something very different.
 
-<a href="/communities/barton-creek" class="${LINK}">Barton Creek</a> appeals to buyers seeking privacy, golf access, and resort-style living near Barton Creek Country Club. <a href="/communities/westlake-hills" class="${LINK}">Westlake Hills</a> attracts buyers prioritizing top-tier schools, hill country views, and proximity to downtown. <a href="/communities/tarrytown" class="${LINK}">Tarrytown</a> and Pemberton Heights offer historic prestige and central convenience, while communities like Spanish Oaks and Rob Roy deliver a more secluded estate environment.
+<a href="/communities/barton-creek" class="${LINK}">Barton Creek</a> appeals to buyers seeking privacy, golf access, and resort-style living near Barton Creek Country Club. <a href="/communities/westlake-hills" class="${LINK}">Westlake Hills</a> attracts buyers prioritizing top-tier schools, hill country views, and proximity to downtown. <a href="/communities/tarrytown" class="${LINK}">Tarrytown</a> and Pemberton Heights offer historic prestige and central convenience, while communities like <a href="/communities/spanish-oaks" class="${LINK}">Spanish Oaks</a> and Rob Roy deliver a more secluded estate environment.
 
 Daily lifestyle should shape the search as much as square footage.
 
@@ -97,7 +97,7 @@ The buyers who consistently secure Austin's best properties typically rely on a 
 
 The cornerstone of that team is a <a href="/about" class="${LINK}">luxury real estate advisor</a> deeply embedded within Austin's upper-tier market.
 
-That does not simply mean an agent who occasionally sells expensive homes. It means someone with active relationships in communities like <a href="/communities/rollingwood" class="${LINK}">Rollingwood</a>, Seven Oaks, Davenport Ranch, and along <a href="/communities/lake-austin" class="${LINK}">Lake Austin</a>. Someone who hears about opportunities before they reach the MLS. Someone trusted enough that other agents quietly share inventory with them before going public.
+That does not simply mean an agent who occasionally sells expensive homes. It means someone with active relationships in communities like <a href="/communities/rollingwood" class="${LINK}">Rollingwood</a>, <a href="/communities/spanish-oaks" class="${LINK}">Spanish Oaks</a>, <a href="/communities/davenport-ranch" class="${LINK}">Davenport Ranch</a>, and along <a href="/communities/lake-austin" class="${LINK}">Lake Austin</a>. Someone who hears about opportunities before they reach the MLS. Someone trusted enough that other agents quietly share inventory with them before going public.
 
 That access matters.
 
@@ -139,7 +139,7 @@ This is especially true within:
 - <a href="/communities/barton-creek" class="${LINK}">Barton Creek</a>
 - <a href="/communities/rollingwood" class="${LINK}">Rollingwood</a>
 - <a href="/communities/tarrytown" class="${LINK}">Tarrytown</a>
-- Spanish Oaks
+- <a href="/communities/spanish-oaks" class="${LINK}">Spanish Oaks</a>
 - select waterfront stretches of <a href="/communities/lake-austin" class="${LINK}">Lake Austin</a>
 
 At the highest price points, sellers frequently prioritize discretion over exposure.
@@ -293,7 +293,7 @@ Luxury properties in Austin may involve:
 - utility easements
 - architectural review limitations
 
-This is especially relevant in communities like Rob Roy, Spanish Oaks, and certain stretches surrounding <a href="/communities/lake-austin" class="${LINK}">Lake Austin</a> where topography, privacy infrastructure, and custom improvements can add complexity.
+This is especially relevant in communities like Rob Roy, <a href="/communities/spanish-oaks" class="${LINK}">Spanish Oaks</a>, and certain stretches surrounding <a href="/communities/lake-austin" class="${LINK}">Lake Austin</a> where topography, privacy infrastructure, and custom improvements can add complexity.
 
 Entity structuring should also be finalized before closing whenever possible.
 

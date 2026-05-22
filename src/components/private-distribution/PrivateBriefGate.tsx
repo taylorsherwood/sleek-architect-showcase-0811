@@ -1,17 +1,17 @@
 import { FormEvent, useState } from "react";
-import { formatPhoneNumber, getPhoneDigits, submitLeadToZapier } from "@/lib/formUtils";
+import { formatPhoneNumber, getPhoneDigits } from "@/lib/formUtils";
+import { requestPrivateDistributionAccess } from "@/lib/privateDistributionApi";
 
 /**
- * Refined inline gate for Private Distribution editions.
- * Designed to feel like part of the editorial layout rather than a popup,
- * ivory card with a single thin gold rule, restrained typography, and
- * minimum-friction fields (name, email, optional phone).
+ * Inline gate for Private Distribution editions.
+ * Submits to the `private-distribution-unlock` edge function,
+ * which creates the lead record and issues a hashed access token.
  */
 
 interface PrivateBriefGateProps {
   editionSlug: string;
   editionTitle: string;
-  onUnlock: () => void;
+  onUnlock: (token: string) => void;
 }
 
 const PrivateBriefGate = ({ editionSlug, editionTitle, onUnlock }: PrivateBriefGateProps) => {
@@ -31,41 +31,34 @@ const PrivateBriefGate = ({ editionSlug, editionTitle, onUnlock }: PrivateBriefG
     }
 
     setSubmitting(true);
-    const result = await submitLeadToZapier({
+    const result = await requestPrivateDistributionAccess({
+      slug: editionSlug,
+      title: editionTitle,
       name: name.trim(),
       email: email.trim(),
-      phone: phone ? getPhoneDigits(phone) : "",
-      message: `Private Distribution access, ${editionTitle}`,
-      source: "Private Distribution",
-      extra: {
-        edition_slug: editionSlug,
-        edition_title: editionTitle,
-      },
+      phone: phone ? getPhoneDigits(phone) : undefined,
     });
     setSubmitting(false);
 
-    if (!result.ok) {
+    if (result.ok !== true) {
       setError(result.error || "Something went wrong. Please try again.");
       return;
     }
+    const issuedToken = result.token;
 
     if (typeof window !== "undefined") {
       try {
-        window.localStorage.setItem(
-          `echelon_private_distribution_${editionSlug}`,
-          new Date().toISOString()
-        );
         window.dispatchEvent(
           new CustomEvent("echelon:private-distribution-unlocked", {
             detail: { slug: editionSlug },
-          })
+          }),
         );
       } catch {
-        /* ignore storage errors */
+        /* ignore */
       }
     }
 
-    onUnlock();
+    onUnlock(issuedToken);
   };
 
   return (
@@ -74,7 +67,6 @@ const PrivateBriefGate = ({ editionSlug, editionTitle, onUnlock }: PrivateBriefG
       className="relative w-full overflow-hidden"
       style={{ background: "#F5F3EF" }}
     >
-      {/* Veil, faux locked-content shimmer behind gate */}
       <div
         aria-hidden="true"
         className="absolute inset-x-0 top-0 h-[180px] pointer-events-none"
@@ -106,7 +98,6 @@ const PrivateBriefGate = ({ editionSlug, editionTitle, onUnlock }: PrivateBriefG
             border: "1px solid #d9cfb8",
           }}
         >
-          {/* Gold corner brackets */}
           {[
             { top: -1, left: -1, borderTop: true, borderLeft: true },
             { top: -1, right: -1, borderTop: true, borderRight: true },

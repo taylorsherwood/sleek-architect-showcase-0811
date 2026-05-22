@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, Navigate, useParams } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -7,13 +7,25 @@ import SchemaMarkup, { createBreadcrumbSchema } from "@/components/SchemaMarkup"
 import PrivateBriefGate from "@/components/private-distribution/PrivateBriefGate";
 import BriefSectionBlock from "@/components/private-distribution/BriefSectionBlock";
 import { useAuth } from "@/hooks/useAuth";
-import {
-  PRIVATE_DISTRIBUTION,
-  getEditionBySlug,
-  getFeaturedEdition,
-  type BriefEdition,
+import type {
+  BriefEdition,
+  BriefEditionTeaser,
 } from "@/data/privateDistribution";
+import {
+  fetchEditionTeasers,
+  fetchEditionTeaser,
+  fetchFullEdition,
+  getStoredPdToken,
+  setStoredPdToken,
+  clearStoredPdToken,
+} from "@/lib/privateDistributionApi";
 import privateCover from "@/assets/private-distribution-cover.jpg";
+
+/** Derive a decorative watermark (zip code or first token) from market text. */
+const deriveWatermark = (market: string): string => {
+  const m = market.match(/\b(\d{4,5})\b/);
+  return m ? m[1] : market.split(/[·,]/)[0]?.trim() || "";
+};
 
 const SITE = "https://www.echelonpropertygroup.com";
 const NAVY = "#0C0F24";
@@ -33,7 +45,7 @@ const formatMonthYear = (iso: string) => {
    centered headline, italic deck.
    ───────────────────────────────────────────── */
 
-const BriefHero = ({ edition }: { edition: BriefEdition }) => {
+const BriefHero = ({ edition }: { edition: BriefEditionTeaser & { watermark?: string | null } }) => {
   const metaLine = [
     edition.volume,
     edition.issueNumber,
@@ -160,7 +172,7 @@ const BriefHero = ({ edition }: { edition: BriefEdition }) => {
 
 /* ─── Editor's note (public, indexable teaser) ─── */
 
-const FromTheDesk = ({ edition }: { edition: BriefEdition }) => {
+const FromTheDesk = ({ edition }: { edition: BriefEditionTeaser }) => {
   if (!edition.fromTheDesk) return null;
   return (
     <section className="w-full" style={{ background: PAPER }}>
@@ -372,38 +384,49 @@ const BriefBody = ({ edition }: { edition: BriefEdition }) => (
    Single-edition view
    ───────────────────────────────────────────── */
 
-const PrivateDistributionEdition = ({ edition }: { edition: BriefEdition }) => {
-  const storageKey = `echelon_private_distribution_${edition.slug}`;
+const PrivateDistributionEdition = ({ teaser }: { teaser: BriefEditionTeaser }) => {
   const { isAdmin } = useAuth();
-  const [unlocked, setUnlocked] = useState(false);
-  const effectiveUnlocked = unlocked || isAdmin;
+  const [full, setFull] = useState<BriefEdition | null>(null);
+  const [loadingFull, setLoadingFull] = useState(false);
 
+  // Hydrate full edition from a stored token (or for admin via an admin fetch path)
   useEffect(() => {
-    if (typeof window === "undefined") return;
-    try {
-      if (window.localStorage.getItem(storageKey)) setUnlocked(true);
-    } catch {
-      /* ignore */
-    }
-    const onUnlock = (e: Event) => {
-      const detail = (e as CustomEvent<{ slug: string }>).detail;
-      if (detail?.slug === edition.slug) setUnlocked(true);
+    let cancelled = false;
+    const token = getStoredPdToken(teaser.slug);
+    if (!token) return;
+    setLoadingFull(true);
+    fetchFullEdition(teaser.slug, token).then((data) => {
+      if (cancelled) return;
+      if (data) {
+        setFull(data);
+      } else {
+        clearStoredPdToken(teaser.slug);
+      }
+      setLoadingFull(false);
+    });
+    return () => {
+      cancelled = true;
     };
-    window.addEventListener("echelon:private-distribution-unlocked", onUnlock);
-    return () =>
-      window.removeEventListener(
-        "echelon:private-distribution-unlocked",
-        onUnlock
-      );
-  }, [edition.slug, storageKey]);
+  }, [teaser.slug]);
 
-  const canonical = `${SITE}/private-distribution/${edition.slug}`;
+  const handleUnlock = (token: string) => {
+    setStoredPdToken(teaser.slug, token);
+    setLoadingFull(true);
+    fetchFullEdition(teaser.slug, token).then((data) => {
+      if (data) setFull(data);
+      setLoadingFull(false);
+    });
+  };
+
+  const heroEdition = { ...teaser, watermark: full?.watermark ?? deriveWatermark(teaser.market) };
+  const canonical = `${SITE}/private-distribution/${teaser.slug}`;
+  const showBody = !!full;
 
   return (
     <div className="min-h-screen" style={{ background: PAPER }}>
       <SEOHead
-        title={`${edition.title}, ${edition.market}`}
-        description={edition.subtitle}
+        title={`${teaser.title}, ${teaser.market}`}
+        description={teaser.subtitle}
         canonical={canonical}
         ogType="article"
         noindex
@@ -412,29 +435,48 @@ const PrivateDistributionEdition = ({ edition }: { edition: BriefEdition }) => {
         schema={createBreadcrumbSchema([
           { name: "Home", url: `${SITE}/` },
           { name: "Private Distribution", url: `${SITE}/private-distribution` },
-          { name: edition.title, url: canonical },
+          { name: teaser.title, url: canonical },
         ])}
       />
 
       <Navigation />
-      <BriefHero edition={edition} />
-      <FromTheDesk edition={edition} />
+      <BriefHero edition={heroEdition} />
+      <FromTheDesk edition={teaser} />
 
-      {effectiveUnlocked ? (
-        <BriefBody edition={edition} />
+      {showBody && full ? (
+        <BriefBody edition={full} />
+      ) : loadingFull ? (
+        <section className="w-full" style={{ background: PAPER }}>
+          <div className="max-w-[820px] mx-auto px-6 md:px-12 py-24 text-center">
+            <p style={{ fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.32em", textTransform: "uppercase", color: MUTED }}>
+              Opening Access…
+            </p>
+          </div>
+        </section>
+      ) : isAdmin ? (
+        <section className="w-full" style={{ background: PAPER }}>
+          <div className="max-w-[820px] mx-auto px-6 md:px-12 py-24 text-center">
+            <p style={{ fontFamily: '"Jost", sans-serif', fontSize: "13px", color: MUTED }}>
+              Admin preview, edit this edition at{" "}
+              <Link to={`/admin/private-distribution/${teaser.slug}`} className="underline" style={{ color: GOLD_DEEP }}>
+                /admin/private-distribution/{teaser.slug}
+              </Link>
+            </p>
+          </div>
+        </section>
       ) : (
         <PrivateBriefGate
-          editionSlug={edition.slug}
-          editionTitle={`${edition.title}, ${edition.edition}`}
-          onUnlock={() => setUnlocked(true)}
+          editionSlug={teaser.slug}
+          editionTitle={`${teaser.title}, ${teaser.edition}`}
+          onUnlock={handleUnlock}
         />
       )}
 
-      {effectiveUnlocked && edition.pdfUrl && (
+      {showBody && full?.pdfUrl && (
         <section className="w-full" style={{ background: NAVY }}>
           <div className="max-w-[820px] mx-auto px-6 md:px-12 py-14 text-center">
             <a
-              href={edition.pdfUrl}
+              href={full.pdfUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3"
@@ -465,12 +507,10 @@ const PrivateDistributionEdition = ({ edition }: { edition: BriefEdition }) => {
    ───────────────────────────────────────────── */
 
 const PrivateDistributionIndex = () => {
-  const editions = useMemo(
-    () => PRIVATE_DISTRIBUTION.filter((e) => e.active !== false),
-    []
-  );
-  const featured = getFeaturedEdition();
-  const library = editions.filter((e) => e.slug !== featured?.slug);
+  const [editions, setEditions] = useState<BriefEditionTeaser[]>([]);
+  useEffect(() => {
+    fetchEditionTeasers().then(setEditions).catch(() => setEditions([]));
+  }, []);
   const canonical = `${SITE}/private-distribution`;
 
   return (
@@ -1010,11 +1050,7 @@ const PrivateDistributionIndex = () => {
                             lineHeight: 1.6,
                           }}
                         >
-                          {e.sections.reduce(
-                            (n, s) => n + (s.properties?.length || s.watching?.length || 0),
-                            0,
-                          )}{" "}
-                          opportunities
+                          Curated opportunities
                         </p>
                       </div>
                       <div>
@@ -1066,7 +1102,7 @@ const PrivateDistributionIndex = () => {
                             lineHeight: 1.6,
                           }}
                         >
-                          {e.signOff?.name ?? "Echelon Desk"}
+                          Echelon Desk
                         </p>
                       </div>
                     </div>
@@ -1087,16 +1123,22 @@ const PrivateDistributionIndex = () => {
 
 const PrivateDistribution = () => {
   const { slug } = useParams<{ slug?: string }>();
+  const [teaser, setTeaser] = useState<BriefEditionTeaser | null | undefined>(undefined);
+
+  useEffect(() => {
+    if (!slug) return;
+    setTeaser(undefined);
+    fetchEditionTeaser(slug).then(setTeaser).catch(() => setTeaser(null));
+  }, [slug]);
 
   if (!slug) return <PrivateDistributionIndex />;
-
-  const edition = getEditionBySlug(slug);
-  if (!edition || edition.active === false) {
+  if (teaser === undefined) {
+    return <div className="min-h-screen" style={{ background: PAPER }} />;
+  }
+  if (teaser === null) {
     return <Navigate to="/private-distribution" replace />;
   }
-
-  return <PrivateDistributionEdition edition={edition} />;
+  return <PrivateDistributionEdition teaser={teaser} />;
 };
 
 export default PrivateDistribution;
-export { getFeaturedEdition };

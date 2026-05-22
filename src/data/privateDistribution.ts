@@ -254,9 +254,9 @@ export const PRIVATE_DISTRIBUTION: BriefEdition[] = [
     watermark: "78703",
     title: "The 78703 Brief",
     subtitle:
-      "An off-market dossier on Tarrytown, Old Enfield, and the west side of central Austin, circulated only to qualified buyers.",
+      "An off-market brief on Tarrytown, Old Enfield, and the west side of central Austin, circulated only to qualified buyers.",
     dek:
-      "An off-market dossier on Tarrytown, Old Enfield, and the west side of central Austin, circulated only to qualified buyers.",
+      "An off-market brief on Tarrytown, Old Enfield, and the west side of central Austin, circulated only to qualified buyers.",
     fromTheDesk:
       "Three of the four below are held off-market or priced on request, which tells you most of what you need to know about 78703 right now. Tarrytown and Old Enfield don't have an inventory problem so much as an access problem: the best houses move through relationships, not the MLS. This edition runs from a 1927 Kreïsle estate to a brand-new Tarrytown build to a 42nd-floor penthouse over Lady Bird Lake, the full range of how this zip actually lives. If one of them fits, reply to the email this came attached to.",
     sections: [

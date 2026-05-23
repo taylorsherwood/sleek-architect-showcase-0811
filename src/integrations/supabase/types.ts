@@ -640,6 +640,81 @@ export type Database = {
       }
     }
     Views: {
+      communities_public: {
+        Row: {
+          canonical_url: string | null
+          city: string | null
+          county: string | null
+          faqs: Json | null
+          gate_enabled: boolean | null
+          gate_headline: string | null
+          gate_subheadline: string | null
+          hero_image_url: string | null
+          hero_overlay_opacity: number | null
+          highlights: Json | null
+          id: string | null
+          meta_description: string | null
+          name: string | null
+          published: boolean | null
+          related_communities: Json | null
+          seo_title: string | null
+          slug: string | null
+          sort_order: number | null
+          tagline: string | null
+          teaser_summary: string | null
+          thank_you_message: string | null
+          updated_at: string | null
+        }
+        Insert: {
+          canonical_url?: string | null
+          city?: string | null
+          county?: string | null
+          faqs?: Json | null
+          gate_enabled?: boolean | null
+          gate_headline?: string | null
+          gate_subheadline?: string | null
+          hero_image_url?: string | null
+          hero_overlay_opacity?: number | null
+          highlights?: Json | null
+          id?: string | null
+          meta_description?: string | null
+          name?: string | null
+          published?: boolean | null
+          related_communities?: Json | null
+          seo_title?: string | null
+          slug?: string | null
+          sort_order?: number | null
+          tagline?: string | null
+          teaser_summary?: string | null
+          thank_you_message?: string | null
+          updated_at?: string | null
+        }
+        Update: {
+          canonical_url?: string | null
+          city?: string | null
+          county?: string | null
+          faqs?: Json | null
+          gate_enabled?: boolean | null
+          gate_headline?: string | null
+          gate_subheadline?: string | null
+          hero_image_url?: string | null
+          hero_overlay_opacity?: number | null
+          highlights?: Json | null
+          id?: string | null
+          meta_description?: string | null
+          name?: string | null
+          published?: boolean | null
+          related_communities?: Json | null
+          seo_title?: string | null
+          slug?: string | null
+          sort_order?: number | null
+          tagline?: string | null
+          teaser_summary?: string | null
+          thank_you_message?: string | null
+          updated_at?: string | null
+        }
+        Relationships: []
+      }
       private_editions_public: {
         Row: {
           active: boolean | null

@@ -880,7 +880,7 @@ If you are considering a move in Austin's luxury market, we invite you to <a hre
   },
   {
 
-    id: "boutique-vs-large-luxury-real-estate-brokerages-austin",
+    id: "boutique-vs-large-luxury-real-estate-firms-austin",
     title: "7 Strategies for Choosing Between Boutique and Large Luxury Real Estate Brokerages",
     metaTitle: "Boutique vs Large Luxury Real Estate Brokerages in Austin | 7 Strategies | Echelon Property Group",
     excerpt: "Seven strategies for evaluating boutique versus large luxury real estate brokerages in Austin, covering discretion, negotiation, hyperlocal expertise, and global reach.",

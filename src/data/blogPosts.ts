@@ -587,7 +587,7 @@ Non-negotiables are the elements that fundamentally determine whether a property
 
 Preferences are the amenities you would enjoy but could compromise on: a detached guest casita, wellness pavilion, wine cellar, resort-style pool, golf simulator, or a particular architectural style.
 
-Understanding that distinction helps buyers move decisively when the right opportunity surfaces.
+Understanding that distinction helps buyers move decisively when the right opportunity surfaces.&nbsp;
 
 Just as importantly, define the lifestyle ecosystem surrounding the home itself. Austin's <a href="/best-luxury-neighborhoods-austin" class="${LINK}">luxury enclaves</a> each offer something very different.
 

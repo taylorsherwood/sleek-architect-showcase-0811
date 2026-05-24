@@ -340,10 +340,8 @@ export type Database = {
         Row: {
           acres: number | null
           address: string | null
-          agent_email: string | null
           agent_headshot_url: string | null
           agent_name: string | null
-          agent_phone: string | null
           baths: number | null
           beds: number | null
           city: string | null
@@ -373,10 +371,8 @@ export type Database = {
         Insert: {
           acres?: number | null
           address?: string | null
-          agent_email?: string | null
           agent_headshot_url?: string | null
           agent_name?: string | null
-          agent_phone?: string | null
           baths?: number | null
           beds?: number | null
           city?: string | null
@@ -406,10 +402,8 @@ export type Database = {
         Update: {
           acres?: number | null
           address?: string | null
-          agent_email?: string | null
           agent_headshot_url?: string | null
           agent_name?: string | null
-          agent_phone?: string | null
           baths?: number | null
           beds?: number | null
           city?: string | null

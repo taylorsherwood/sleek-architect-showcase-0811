@@ -417,13 +417,19 @@ const Sell = () => {
         </div>
         <div className="relative container mx-auto px-6 pb-12 md:pb-16">
           <div className="max-w-xl mb-10 md:mb-14">
-            <p className="text-minimal text-gold mb-4 reveal">SELLER SERVICES</p>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-display font-normal text-primary-foreground leading-[1.1] mb-6 reveal">
+            <p className="text-minimal text-gold mb-4 reveal" style={{ textShadow: "0 1px 12px rgba(0,0,0,0.45)" }}>SELLER SERVICES</p>
+            <h1
+              className="text-4xl sm:text-5xl md:text-6xl font-display font-normal text-primary-foreground leading-[1.1] mb-6 reveal"
+              style={{ textShadow: "0 2px 18px rgba(0,0,0,0.55), 0 1px 2px rgba(0,0,0,0.45)" }}
+            >
               Sell Your Home
               <br />
               in Austin, TX
             </h1>
-            <p className="text-primary-foreground/70 text-base sm:text-lg max-w-lg mb-8 reveal-delayed">
+            <p
+              className="text-primary-foreground/80 text-base sm:text-lg max-w-lg mb-8 reveal-delayed"
+              style={{ textShadow: "0 1px 10px rgba(0,0,0,0.5)" }}
+            >
               Strategic marketing and expert representation designed to maximize your property's value in Austin's competitive luxury market.
             </p>
             <a

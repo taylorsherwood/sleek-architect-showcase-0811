@@ -13,6 +13,7 @@ import blogPrivateShowingsAustin from "@/assets/blog/private-property-showings-a
 import blogBoutiqueVsLargeFirms from "@/assets/blog/boutique-vs-large-luxury-firms.jpg";
 import blogBeyondZillow from "@/assets/blog/beyond-zillow-luxury-austin.jpg";
 import blogPrivateTourServices from "@/assets/blog/private-property-tour-services-austin.jpg";
+import blogChoosingLuxuryBrokerage from "@/assets/blog/choosing-luxury-real-estate-brokerage-austin.jpg";
 
 
 

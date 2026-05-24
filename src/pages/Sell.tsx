@@ -497,9 +497,16 @@ const Sell = () => {
                   Austin Seller Intelligence
                 </h2>
                 <div
-                  className="mx-auto mt-7"
-                  style={{ width: 56, height: 1, background: "hsl(var(--gold) / 0.5)" }}
-                />
+                  className="mx-auto mt-7 flex items-center justify-center gap-3"
+                  aria-hidden="true"
+                >
+                  <span className="h-px w-16 md:w-24 bg-gold" />
+                  <span className="relative flex items-center justify-center">
+                    <span className="absolute h-1.5 w-1.5 rotate-45 bg-gold" />
+                    <span className="h-3 w-3 rotate-45 border border-gold" />
+                  </span>
+                  <span className="h-px w-16 md:w-24 bg-gold" />
+                </div>
               </div>
             </ScrollReveal>
 

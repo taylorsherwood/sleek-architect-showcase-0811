@@ -461,21 +461,101 @@ const Sell = () => {
         </div>
       </section>
 
-      {/* ── What You Need to Know ── */}
-      <section className="py-20 bg-secondary">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-8">
-              What You Need to Know About Selling in Austin
-            </h2>
-            <ul className="space-y-4 text-muted-foreground leading-relaxed">
-              <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Well-priced luxury homes in Austin typically sell within 30–90 days. Strategic pricing and premium marketing are the most critical success factors.</span></li>
-              <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Off-market selling is increasingly popular among high-net-worth homeowners in West lake Hills, Barton Creek, and Lake Austin who prioritize privacy.</span></li>
-              <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>In Austin's luxury segment, a significant portion of high-end properties transact off-market or through private networks, meaning many of the best opportunities are never publicly listed.</span></li>
-              <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Professional photography, cinematic video, drone footage, and custom property websites are standard expectations for luxury listings in Austin.</span></li>
-              <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Austin's luxury inventory remains limited in top neighborhoods, creating strong seller leverage when properties are properly positioned.</span></li>
-              <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Echelon Property Group's listings receive global exposure through the eXp Luxury Division network and syndication to 500+ platforms.</span></li>
-            </ul>
+      {/* ── Austin Seller Intelligence ── */}
+      <section className="relative py-24 md:py-36 bg-secondary overflow-hidden">
+        {/* Faint oversized watermark */}
+        <div
+          className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[90vw] max-w-[1100px] aspect-square opacity-[0.025]"
+          aria-hidden="true"
+        >
+          <img
+            src={echelonWatermark}
+            alt=""
+            className="w-full h-full object-contain"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+        {/* Ultra-light gradient wash */}
+        <div
+          className="pointer-events-none absolute inset-0"
+          aria-hidden="true"
+          style={{
+            background:
+              "linear-gradient(180deg, hsl(var(--secondary)) 0%, hsl(var(--background) / 0.4) 50%, hsl(var(--secondary)) 100%)",
+          }}
+        />
+
+        <div className="container mx-auto px-6 relative">
+          <div className="max-w-6xl mx-auto">
+            <ScrollReveal>
+              <div className="text-center mb-16 md:mb-20">
+                <p className="text-[0.65rem] md:text-xs tracking-[0.32em] uppercase text-gold font-semibold mb-5">
+                  Market Insight
+                </p>
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-normal text-architectural leading-[1.15]">
+                  Austin Seller Intelligence
+                </h2>
+                <div
+                  className="mx-auto mt-7"
+                  style={{ width: 56, height: 1, background: "hsl(var(--gold) / 0.5)" }}
+                />
+              </div>
+            </ScrollReveal>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+              {[
+                {
+                  title: "Strategic Pricing Matters",
+                  body:
+                    "Well-positioned Austin luxury homes typically sell within 30–90 days, with disciplined pricing and presentation driving the strongest outcomes.",
+                },
+                {
+                  title: "Discretion Is Increasingly Valuable",
+                  body:
+                    "Many high-net-worth sellers in Westlake Hills, Barton Creek, and Lake Austin are prioritizing off-market selling and private exposure over open marketing.",
+                },
+                {
+                  title: "Off-Market Activity Is Significant",
+                  body:
+                    "A meaningful share of Austin's luxury real estate transactions occurs privately through trusted agent networks and direct buyer relationships.",
+                },
+                {
+                  title: "Presentation Impacts Perceived Value",
+                  body:
+                    "Professional marketing — cinematic video, drone media, editorial photography, and custom property websites — is now baseline for luxury listings in Austin.",
+                },
+                {
+                  title: "Inventory Remains Limited",
+                  body:
+                    "Austin's most coveted neighborhoods continue to experience constrained luxury inventory, creating leverage for properly positioned sellers.",
+                },
+                {
+                  title: "Global Exposure Matters",
+                  body:
+                    "Echelon Property Group listings receive enhanced distribution through the eXp Luxury Division network and syndication across 500+ platforms.",
+                },
+              ].map((card, i) => (
+                <ScrollReveal key={card.title} delay={i * 90}>
+                  <article className="group relative h-full p-8 md:p-10 rounded-md bg-[#FAFAF8] dark:bg-[hsl(38_15%_12%/0.6)] border border-border/60 shadow-[0_1px_2px_rgba(12,15,36,0.04),0_8px_24px_-12px_rgba(12,15,36,0.08)] transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-1 hover:border-gold/60 hover:shadow-[0_2px_4px_rgba(12,15,36,0.06),0_18px_40px_-16px_rgba(185,160,108,0.25)]">
+                    <span
+                      className="absolute top-0 left-8 right-8 h-px"
+                      style={{ background: "hsl(var(--gold) / 0.55)" }}
+                      aria-hidden="true"
+                    />
+                    <p className="text-[0.7rem] tracking-[0.28em] text-gold font-semibold mb-5">
+                      {String(i + 1).padStart(2, "0")}
+                    </p>
+                    <h3 className="text-lg md:text-xl font-display font-normal text-architectural mb-4 leading-snug">
+                      {card.title}
+                    </h3>
+                    <p className="text-sm text-muted-foreground leading-[1.75] max-w-[44ch]">
+                      {card.body}
+                    </p>
+                  </article>
+                </ScrollReveal>
+              ))}
+            </div>
           </div>
         </div>
       </section>

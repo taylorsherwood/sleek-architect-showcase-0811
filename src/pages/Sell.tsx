@@ -461,18 +461,6 @@ const Sell = () => {
         </div>
       </section>
 
-      {/* ── What You Need to Know ── */}
-      <section className="py-20 bg-secondary">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-8">
-              What You Need to Know About Selling in Austin
-            </h2>
-            <ul className="space-y-4 text-muted-foreground leading-relaxed">
-              <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Well-priced luxury homes in Austin typically sell within 30–90 days. Strategic pricing and premium marketing are the most critical success factors.</span></li>
-              <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Off-market selling is increasingly popular among high-net-worth homeowners in West lake Hills, Barton Creek, and Lake Austin who prioritize privacy.</span></li>
-              <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>In Austin's luxury segment, a significant portion of high-end properties transact off-market or through private networks, meaning many of the best opportunities are never publicly listed.</span></li>
-              <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Professional photography, cinematic video, drone footage, and custom property websites are standard expectations for luxury listings in Austin.</span></li>
       {/* ── Austin Seller Intelligence ── */}
       <section className="relative py-24 md:py-36 bg-secondary overflow-hidden">
         {/* Faint oversized watermark */}

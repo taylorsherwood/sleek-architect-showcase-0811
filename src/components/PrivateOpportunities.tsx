@@ -4,6 +4,7 @@ import { Home, Landmark, Building2, TrendingUp } from "lucide-react";
 import { z } from "zod";
 import { useToast } from "@/hooks/use-toast";
 import { formatPhoneNumber, submitLeadToZapier } from "@/lib/formUtils";
+import SmsConsent from "@/components/SmsConsent";
 import {
   Select,
   SelectContent,

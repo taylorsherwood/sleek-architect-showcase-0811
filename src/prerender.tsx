@@ -54,11 +54,17 @@ const staticRoutes = [
   "/blog/why-most-buyers-never-see-austins-best-homes",
 ];
 
+const privateDistributionSlugs = [
+  "78703-may-2026",
+  "78746-may-2026",
+];
+
 const allPrerenderRoutes = Array.from(
   new Set([
     ...staticRoutes,
     ...communityPages.map((community) => `/communities/${community.slug}`),
     ...[...seoBlogPosts, ...blogPosts].map((post) => `/blog/${post.id}`),
+    ...privateDistributionSlugs.map((slug) => `/private-distribution/${slug}`),
   ])
 );
 

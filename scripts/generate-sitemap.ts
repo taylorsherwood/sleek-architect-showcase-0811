@@ -15,10 +15,17 @@ const readSlugs = (file: string, pattern: RegExp): string[] => {
 };
 
 const communitySlugs = readSlugs("src/data/communityData.ts", /slug:\s*["']([a-z0-9-]+)["']/g);
+// Keep in sync with the noindex list in src/pages/BlogPost.tsx.
+const NOINDEX_BLOG_IDS = new Set([
+  "sustainable-architecture-future",
+  "minimalism-modern-living",
+  "urban-planning-community-spaces",
+]);
+
 const blogIds = [
   ...readSlugs("src/data/blogPosts.ts", /\bid:\s*["']([a-z0-9-]+)["']/g),
   ...readSlugs("src/data/seoBlogPosts.ts", /\bid:\s*["']([a-z0-9-]+)["']/g),
-];
+].filter((id) => !NOINDEX_BLOG_IDS.has(id));
 
 const BASE_URL = "https://www.echelonpropertygroup.com";
 

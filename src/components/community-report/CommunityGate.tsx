@@ -1,5 +1,6 @@
 import { useState, FormEvent } from "react";
 import { formatPhoneNumber, getPhoneDigits, submitLeadToZapier } from "@/lib/formUtils";
+import SmsConsent from "@/components/SmsConsent";
 import { fetchUnlockedReport, getUtmParams } from "@/lib/communityUnlock";
 
 interface CommunityGateProps {
@@ -143,6 +144,7 @@ const CommunityGate = ({
 
           {error && <p className="text-sm text-gold">{error}</p>}
 
+          <SmsConsent className="text-background mt-2" />
           <button
             type="submit"
             disabled={submitting}

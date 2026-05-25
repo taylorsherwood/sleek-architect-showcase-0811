@@ -247,6 +247,7 @@ const PrivateOpportunities = ({ variant = "light" }: PrivateOpportunitiesProps) 
                     </SelectContent>
                   </Select>
                 </div>
+                <SmsConsent className={isDark ? "text-primary-foreground" : ""} />
                 <button
                   type="submit"
                   disabled={submitting}

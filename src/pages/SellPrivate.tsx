@@ -7,6 +7,7 @@ import heroVideoMp4 from "@/assets/video/sell-private-hero.mp4";
 import heroVideoWebm from "@/assets/video/sell-private-hero.webm";
 import sectionImage from "@/assets/sell-private-approach-kitchen.webp";
 import { formatPhoneNumber, submitLeadToZapier } from "@/lib/formUtils";
+import SmsConsent from "@/components/SmsConsent";
 import PrivateDistributionStrip from "@/components/private-distribution/PrivateDistributionStrip";
 
 const SITE = "https://www.echelonpropertygroup.com";
@@ -574,7 +575,8 @@ const SellPrivate = () => {
               </select>
             </div>
 
-            <div className="pt-2">
+            <div className="pt-2 space-y-3">
+              <SmsConsent />
               <button
                 type="submit"
                 disabled={loading}

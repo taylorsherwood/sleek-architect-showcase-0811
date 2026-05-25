@@ -8,6 +8,7 @@ import SchemaMarkup, { createFAQSchema, realEstateAgentSchema } from "@/componen
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
 import { formatPhoneNumber, submitLeadToZapier } from "@/lib/formUtils";
+import SmsConsent from "@/components/SmsConsent";
 
 const faqs = [
   {
@@ -306,6 +307,7 @@ const HomeValueAustin = () => {
                     />
                   </div>
 
+                  <SmsConsent align="left" />
                   <button
                     type="submit"
                     className="text-minimal bg-primary text-primary-foreground hover:bg-primary/90 px-10 py-4 transition-colors duration-300 w-full md:w-auto"

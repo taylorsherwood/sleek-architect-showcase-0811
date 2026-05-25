@@ -8,6 +8,7 @@ import SchemaMarkup, { realEstateAgentSchema, createFAQSchema, createBreadcrumbS
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
 import { formatPhoneNumber, submitLeadToZapier } from "@/lib/formUtils";
+import SmsConsent from "@/components/SmsConsent";
 import {
   CheckCircle,
   ArrowRight,
@@ -640,6 +641,7 @@ const Buy = () => {
                   maxLength={2000}
                   className="w-full bg-transparent border-b border-primary-foreground/20 focus:border-primary-foreground/50 outline-none py-3 text-primary-foreground placeholder:text-primary-foreground/30 transition-colors duration-300 resize-none" />
               </div>
+              <SmsConsent align="left" className="text-primary-foreground" />
               <button
                 type="submit"
                 disabled={submitting}

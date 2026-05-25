@@ -1,11 +1,24 @@
 // Runs before `vite dev` and `vite build` (predev/prebuild hooks); writes public/sitemap.xml.
 // Mirrors the indexable routes from src/prerender.tsx.
 
-import { writeFileSync } from "fs";
+import { readFileSync, writeFileSync } from "fs";
 import { resolve } from "path";
-import { communityPages } from "../src/data/communityData";
-import { blogPosts } from "../src/data/blogPosts";
-import { seoBlogPosts } from "../src/data/seoBlogPosts";
+
+// Avoid importing the data modules directly because they pull in image assets
+// (.jpg/.webp) that Node cannot resolve outside the Vite build. Instead, read
+// slugs/ids from the source files with regex — enough for sitemap generation.
+const readSlugs = (file: string, pattern: RegExp): string[] => {
+  const src = readFileSync(resolve(file), "utf8");
+  const out = new Set<string>();
+  for (const m of src.matchAll(pattern)) out.add(m[1]);
+  return Array.from(out);
+};
+
+const communitySlugs = readSlugs("src/data/communityData.ts", /slug:\s*["']([a-z0-9-]+)["']/g);
+const blogIds = [
+  ...readSlugs("src/data/blogPosts.ts", /\bid:\s*["']([a-z0-9-]+)["']/g),
+  ...readSlugs("src/data/seoBlogPosts.ts", /\bid:\s*["']([a-z0-9-]+)["']/g),
+];
 
 const BASE_URL = "https://www.echelonpropertygroup.com";
 

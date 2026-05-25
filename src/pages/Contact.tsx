@@ -8,6 +8,7 @@ import SchemaMarkup, { realEstateAgentSchema, localBusinessSchema, createFAQSche
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
 import { formatPhoneNumber, submitLeadToZapier } from "@/lib/formUtils";
+import SmsConsent from "@/components/SmsConsent";
 
 const contactSchema = z.object({
   name: z.string().trim().min(1, "Name is required").max(100, "Name must be under 100 characters"),
@@ -196,6 +197,7 @@ const Contact = () => {
                   <textarea name="message" placeholder="Tell us about your goals..." value={form.message} onChange={handleChange} rows={4} className={`${inputClass} resize-none`} maxLength={2000} />
                   {errors.message && <p className="text-destructive text-sm mt-1">{errors.message}</p>}
                 </div>
+                <SmsConsent align="left" />
                 <button type="submit" disabled={submitting} className="text-minimal bg-primary text-primary-foreground hover:bg-gold hover:text-white px-10 py-4 transition-colors duration-300 w-full md:w-auto disabled:opacity-50 disabled:cursor-not-allowed">
                   {submitting ? "SENDING..." : "SEND MESSAGE"}
                 </button>

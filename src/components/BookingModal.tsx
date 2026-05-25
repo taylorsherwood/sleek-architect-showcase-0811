@@ -11,6 +11,7 @@ import {
 import { Calendar } from "@/components/ui/calendar";
 import { cn } from "@/lib/utils";
 import { submitLeadToZapier, ZAPIER_BOOKING_WEBHOOK } from "@/lib/formUtils";
+import SmsConsent from "@/components/SmsConsent";
 
 interface BookingModalProps {
   open: boolean;
@@ -427,6 +428,7 @@ const BookingModal = ({ open, onOpenChange }: BookingModalProps) => {
                 </div>
               </div>
 
+              <SmsConsent className="mb-3" />
               <button
                 type="submit"
                 disabled={isSubmitting}

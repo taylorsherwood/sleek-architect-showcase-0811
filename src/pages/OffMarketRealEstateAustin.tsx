@@ -6,6 +6,7 @@ import heroImage from "@/assets/hero-austin-skyline-sunset.webp";
 import echelonLogo from "@/assets/echelon-logo-gold.png";
 import echelonMark from "@/assets/echelon-mark-gold.png";
 import { formatPhoneNumber, submitLeadToZapier } from "@/lib/formUtils";
+import SmsConsent from "@/components/SmsConsent";
 import CinematicSections from "@/components/off-market/CinematicSections";
 import PrivateDistributionStrip from "@/components/private-distribution/PrivateDistributionStrip";
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from "@/components/ui/dialog";
@@ -226,6 +227,7 @@ const OffMarketRealEstateAustin = () => {
         <label htmlFor="notes" className="block text-white/40 mb-1.5" style={labelStyle}>Anything Else? <span className="normal-case tracking-normal text-white/25">(optional)</span></label>
         <textarea id="notes" maxLength={1000} rows={2} value={form.notes} onChange={(e) => setForm(prev => ({ ...prev, notes: e.target.value }))} className={`${inputClass} resize-none`} placeholder="Neighborhoods, property type, investment goals…" />
       </div>
+      <SmsConsent className="text-white mt-2" />
       <button
         type="submit"
         disabled={loading}

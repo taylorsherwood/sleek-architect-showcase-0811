@@ -1,6 +1,7 @@
 import { FormEvent, useState } from "react";
 import { formatPhoneNumber, getPhoneDigits } from "@/lib/formUtils";
 import { requestPrivateDistributionAccess } from "@/lib/privateDistributionApi";
+import SmsConsent from "@/components/SmsConsent";
 
 /**
  * Inline gate for Private Distribution editions.
@@ -213,6 +214,7 @@ const PrivateBriefGate = ({ editionSlug, editionTitle, onUnlock }: PrivateBriefG
             )}
 
             <div className="pt-8">
+              <SmsConsent className="mb-4" />
               <button
                 type="submit"
                 disabled={submitting}

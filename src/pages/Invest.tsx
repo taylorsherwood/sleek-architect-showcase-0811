@@ -7,6 +7,7 @@ import SchemaMarkup, { realEstateAgentSchema, createFAQSchema, createBreadcrumbS
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
 import { formatPhoneNumber, submitLeadToZapier } from "@/lib/formUtils";
+import SmsConsent from "@/components/SmsConsent";
 
 const ScrollReveal = lazy(() => import("@/components/ScrollReveal"));
 const BeforeAfterSlider = lazy(() => import("@/components/BeforeAfterSlider"));
@@ -598,7 +599,8 @@ const Invest = () => {
                   {propErrors.propAddress && <p className="text-xs text-destructive mt-1">{propErrors.propAddress}</p>}
                 </div>
               </div>
-              <div className="pt-8">
+              <div className="pt-8 space-y-4">
+                <SmsConsent />
                 <button type="submit" disabled={propSubmitting} className="w-full py-3.5 bg-primary text-primary-foreground text-xs tracking-[0.25em] uppercase font-medium hover:bg-gold hover:text-white hover:-translate-y-px hover:shadow-md transition-all duration-300 disabled:opacity-50">
                   {propSubmitting ? "Submitting…" : "REQUEST CASH OFFER"}
                 </button>
@@ -876,6 +878,7 @@ const Invest = () => {
                   className={`${inputClass} bg-primary-foreground/5 border-primary-foreground/15 text-primary-foreground placeholder:text-primary-foreground/30 focus:ring-primary-foreground/30 resize-none`}
                 />
               </div>
+              <SmsConsent align="left" className="text-primary-foreground" />
               <button
                 type="submit"
                 disabled={submitting}

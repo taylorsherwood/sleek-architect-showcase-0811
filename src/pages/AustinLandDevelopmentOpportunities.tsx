@@ -4,6 +4,7 @@ import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import heroImage from "@/assets/community-hill-country.jpg";
 import { formatPhoneNumber, submitLeadToZapier } from "@/lib/formUtils";
+import SmsConsent from "@/components/SmsConsent";
 import RelatedInsights from "@/components/RelatedInsights";
 
 const SITE = "https://www.echelonpropertygroup.com";
@@ -159,6 +160,7 @@ const AustinLandDevelopmentOpportunities = () => {
           <label htmlFor="notes" className="block text-white/40 mb-1.5" style={labelStyle}>Notes <span className="normal-case tracking-normal text-white/25">(optional)</span></label>
           <textarea id="notes" maxLength={1000} rows={2} value={form.notes} onChange={(e) => setForm({ ...form, notes: e.target.value })} className={`${inputClass} resize-none`} />
         </div>
+        <SmsConsent className="text-white" />
         <button
           type="submit"
           disabled={loading}

@@ -18,6 +18,7 @@ import {
 import { TrendingUp, Building2, MapPin, BarChart3, CheckCircle2, ArrowDown } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { formatPhoneNumber, submitLeadToZapier } from "@/lib/formUtils";
+import SmsConsent from "@/components/SmsConsent";
 import reportCover from "@/assets/multifamily-report-cover.png";
 
 const PrivateOpportunities = lazy(() => import("@/components/PrivateOpportunities"));
@@ -415,6 +416,7 @@ const AustinMultifamilyReport2026 = () => {
                     </SelectContent>
                   </Select>
                 </div>
+                <SmsConsent />
                 <Button
                   type="submit"
                   disabled={isSubmitting}

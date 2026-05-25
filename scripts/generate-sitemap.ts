@@ -71,14 +71,14 @@ const privateDistributionSlugs = [
   "78746-may-2026",
 ];
 
-const communityEntries: SitemapEntry[] = communityPages.map((c) => ({
-  path: `/communities/${c.slug}`,
+const communityEntries: SitemapEntry[] = communitySlugs.map((slug) => ({
+  path: `/communities/${slug}`,
   changefreq: "weekly",
   priority: "0.7",
 }));
 
-const blogEntries: SitemapEntry[] = [...seoBlogPosts, ...blogPosts].map((p) => ({
-  path: `/blog/${p.id}`,
+const blogEntries: SitemapEntry[] = blogIds.map((id) => ({
+  path: `/blog/${id}`,
   changefreq: "monthly",
   priority: "0.6",
 }));

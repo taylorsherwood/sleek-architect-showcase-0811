@@ -108,6 +108,7 @@ export async function submitLeadToZapier(
   const page =
     typeof window !== "undefined" ? window.location.href : "";
   const time = getTimestamp();
+  const submittedAt = new Date().toISOString();
 
   // Canonical payload, keys must match the Zap field mapping exactly.
   // Built from live submit-time values, never from stale refs.
@@ -118,17 +119,41 @@ export async function submitLeadToZapier(
     message: message || "",
     source: source || "Website Form",
     page,
+    page_url: page, // duplicate under explicit name in case Zap mapping uses page_url
     time,
+    submittedAt,
   };
 
-  // Merge any extra fields without overwriting canonical keys
+  // Dynamically collect ALL extra/custom fields. We do TWO things:
+  //   1. Flatten them onto the top-level payload (back-compat with existing
+  //      Zapier field mappings that expect e.g. {{budget}}).
+  //   2. Build a humanized `fields_summary` block and a `fields_json` blob
+  //      so the Zap email template can render every submitted field
+  //      automatically, even brand-new ones, with just one merge tag.
+  const fields: Record<string, string> = {};
   if (data.extra) {
     for (const [k, v] of Object.entries(data.extra)) {
       if (v === undefined || v === null) continue;
-      if (k in payload) continue; // never overwrite canonical fields
-      payload[k] = String(v);
+      const value = String(v).trim();
+      if (!value) continue;
+      if (!(k in payload)) payload[k] = value;
+      fields[k] = value;
     }
   }
+
+  const humanLabel = (key: string) =>
+    key
+      .replace(/[_-]+/g, " ")
+      .replace(/([a-z])([A-Z])/g, "$1 $2")
+      .replace(/\b\w/g, (c) => c.toUpperCase());
+
+  const summaryLines: string[] = [];
+  if (payload.message) summaryLines.push(`Notes: ${payload.message}`);
+  for (const [k, v] of Object.entries(fields)) {
+    summaryLines.push(`${humanLabel(k)}: ${v}`);
+  }
+  payload.fields_summary = summaryLines.join("\n");
+  payload.fields_json = JSON.stringify(fields);
 
   // ── HARD VALIDATION GUARD ──────────────────────────────────────
   // Block empty/incomplete payloads from ever reaching Zapier.

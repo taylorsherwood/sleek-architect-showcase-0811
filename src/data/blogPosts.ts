@@ -43,7 +43,7 @@ export const blogPosts: BlogPost[] = [
     id: "austin-luxury-real-estate-advisory-agent-vs-advisor",
     title: "Austin Luxury Real Estate Advisory: The Difference Between an Agent and a True Advisor",
     metaTitle: "Austin Luxury Real Estate Advisory: Agent vs. True Advisor | Echelon Property Group",
-    excerpt: "What real luxury real estate advisory looks like in Austin — strategy, off-market access, confidentiality, and neighborhood-level depth across Barton Creek, West Lake Hills, Tarrytown, Lake Austin, and Rollingwood.",
+    excerpt: "What real luxury real estate advisory looks like in Austin, strategy, off-market access, confidentiality, and neighborhood-level depth across Barton Creek, West Lake Hills, Tarrytown, Lake Austin, and Rollingwood.",
     author: "Taylor Sherwood",
     date: "2026-05-26",
     readTime: "13 min read",
@@ -230,7 +230,7 @@ href: /contact
 
 :::faq
 Q: What is the difference between a luxury real estate agent and a true advisor in Austin?
-A: A traditional agent focuses on transactions — showings, listings, and offers. A luxury advisor focuses on strategy: timing, positioning, confidentiality, off-market access, and how the property decision fits into broader lifestyle, investment, or estate objectives before any action is taken.
+A: A traditional agent focuses on transactions, showings, listings, and offers. A luxury advisor focuses on strategy: timing, positioning, confidentiality, off-market access, and how the property decision fits into broader lifestyle, investment, or estate objectives before any action is taken.
 
 Q: How important is neighborhood-level expertise in Austin's luxury market?
 A: Critical. Pricing behavior, buyer profiles, and liquidity vary significantly between <a href="/communities/barton-creek" class="${LINK}">Barton Creek</a>, <a href="/communities/westlake-hills" class="${LINK}">West Lake Hills</a>, <a href="/communities/tarrytown" class="${LINK}">Tarrytown</a>, <a href="/communities/rollingwood" class="${LINK}">Rollingwood</a>, and <a href="/communities/lake-austin" class="${LINK}">Lake Austin</a>. A strong advisor understands those micro-market dynamics in detail.
@@ -239,7 +239,7 @@ Q: How much of Austin's luxury inventory actually trades off-market?
 A: A meaningful percentage. Many premium Austin properties trade privately or semi-privately through broker, developer, and owner networks before ever appearing on the MLS. Established advisory relationships are often what unlock that <a href="/off-market-real-estate-austin" class="${LINK}">off-market inventory</a>.
 
 Q: What should I expect from the first conversation with a luxury real estate advisor?
-A: Expect questions about your objectives, timing, lifestyle, risk tolerance, and privacy needs — not a marketing pitch. The first meeting should clarify strategy before discussing specific properties or listing tactics.
+A: Expect questions about your objectives, timing, lifestyle, risk tolerance, and privacy needs, not a marketing pitch. The first meeting should clarify strategy before discussing specific properties or listing tactics.
 
 Q: How does confidentiality work in a luxury advisory relationship?
 A: Discretion is built into how conversations are handled, how properties are introduced, how financial parameters are communicated, and whether the property is marketed publicly at all. For many sellers, that includes <a href="/sell-private" class="${LINK}">fully private exposure</a> rather than a public launch.
@@ -250,7 +250,7 @@ A: Discretion is built into how conversations are handled, how properties are in
     id: "how-to-market-luxury-properties-austin",
     title: "How to Market Luxury Properties Effectively: A Step-by-Step Guide for Austin Sellers",
     metaTitle: "How to Market Luxury Properties in Austin: Step-by-Step Seller Guide | Echelon Property Group",
-    excerpt: "A step-by-step guide to marketing luxury homes in Austin — defining the buyer profile, building an editorial visual campaign, sequencing private and public exposure, and protecting pricing power in Barton Creek, Westlake Hills, Tarrytown, and Lake Austin.",
+    excerpt: "A step-by-step guide to marketing luxury homes in Austin, defining the buyer profile, building an editorial visual campaign, sequencing private and public exposure, and protecting pricing power in Barton Creek, Westlake Hills, Tarrytown, and Lake Austin.",
     author: "Taylor Sherwood",
     date: "2026-05-25",
     readTime: "15 min read",
@@ -348,7 +348,7 @@ A practical rule: complete all pre-listing improvements before photography or fi
 
 **Success indicator:** Your visual campaign feels comparable to a luxury editorial feature, not just a standard real estate listing.
 
-## Step 3: Sequence Exposure Strategically — Private Before Public
+## Step 3: Sequence Exposure Strategically, Private Before Public
 
 One of the most important strategic decisions luxury sellers make is how the property enters the market.
 
@@ -456,7 +456,7 @@ Specific details create credibility. For example:
 
 Those details communicate something tangible and memorable.
 
-Every luxury property should have a central narrative anchor — the architecture, the setting, the privacy, the views, the land, the waterfront access, the provenance, or the lifestyle. That anchor should guide every piece of marketing across every channel.
+Every luxury property should have a central narrative anchor, the architecture, the setting, the privacy, the views, the land, the waterfront access, the provenance, or the lifestyle. That anchor should guide every piece of marketing across every channel.
 
 Consistency matters. Listing descriptions, video narration, social content, and agent messaging should reinforce the same positioning throughout the campaign.
 
@@ -557,10 +557,10 @@ Q: Should I market my Austin luxury home privately before listing on the MLS?
 A: Often, yes. A structured private phase lets you test pricing, surface qualified buyers, and protect perceived exclusivity before public days-on-market accumulate. If the right buyer appears privately, you avoid public exposure entirely. If not, you enter the MLS with better intelligence and stronger positioning.
 
 Q: What should a luxury visual campaign include for a home above $2M in Austin?
-A: Expect architectural photography, twilight photography, drone imagery and aerial video, a cinematic property film, lifestyle detail shots, floor plans, and a 3D or Matterport tour. The campaign should feel editorial — closer to a design publication feature than a standard MLS gallery.
+A: Expect architectural photography, twilight photography, drone imagery and aerial video, a cinematic property film, lifestyle detail shots, floor plans, and a 3D or Matterport tour. The campaign should feel editorial, closer to a design publication feature than a standard MLS gallery.
 
 Q: Which Austin neighborhoods most benefit from a discreet, advisory-led marketing approach?
-A: <a href="/communities/barton-creek" class="${LINK}">Barton Creek</a>, <a href="/communities/westlake-hills" class="${LINK}">West Lake Hills</a>, <a href="/communities/tarrytown" class="${LINK}">Tarrytown</a>, <a href="/communities/rollingwood" class="${LINK}">Rollingwood</a>, and Lake Austin tend to reward discretion most, particularly above the $3M–$5M tier where many of the strongest transactions happen <a href="/off-market-real-estate-austin" class="${LINK}">off-market</a> or through private channels.
+A: <a href="/communities/barton-creek" class="${LINK}">Barton Creek</a>, <a href="/communities/westlake-hills" class="${LINK}">West Lake Hills</a>, <a href="/communities/tarrytown" class="${LINK}">Tarrytown</a>, <a href="/communities/rollingwood" class="${LINK}">Rollingwood</a>, and Lake Austin tend to reward discretion most, particularly above the $3M-$5M tier where many of the strongest transactions happen <a href="/off-market-real-estate-austin" class="${LINK}">off-market</a> or through private channels.
 
 Q: How do I protect pricing power if my Austin luxury home does not sell quickly?
 A: Avoid reactive price reductions. Re-evaluate the buyer profile, refresh weak visual or messaging elements, audit channel performance, and consider a controlled re-launch strategy. Disciplined repositioning protects perception far better than repeated price drops, which can create downward momentum.
@@ -907,11 +907,11 @@ This is where private property tour services become valuable. At the highest lev
 
 :::glance
 Neighborhood | Price Range | Best For | Access Note
-Barton Creek | $3M–$15M+ | Estate privacy, golf access | Often pre-market via club network
-Westlake Hills & Rollingwood | $3M–$20M+ | Top schools, hill country views | Tight inventory, relationship-driven
-Lake Austin Waterfront | $5M–$40M+ | Private docks, water access | Mostly off-market
-Tarrytown & Pemberton Heights | $3M–$12M+ | Historic central Austin | Quiet whisper listings
-Spanish Oaks | $4M–$15M+ | Gated, resort amenities | Pre-market within community
+Barton Creek | $3M-$15M+ | Estate privacy, golf access | Often pre-market via club network
+Westlake Hills & Rollingwood | $3M-$20M+ | Top schools, hill country views | Tight inventory, relationship-driven
+Lake Austin Waterfront | $5M-$40M+ | Private docks, water access | Mostly off-market
+Tarrytown & Pemberton Heights | $3M-$12M+ | Historic central Austin | Quiet whisper listings
+Spanish Oaks | $4M-$15M+ | Gated, resort amenities | Pre-market within community
 :::
 
 ## Why Many Austin Luxury Homes Never Hit the MLS

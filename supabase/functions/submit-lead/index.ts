@@ -76,9 +76,24 @@ Deno.serve(async (req) => {
       throw new Error("Lead capture backend is not configured.");
     }
 
+    // Build the `extra` JSONB for the leads table by capturing EVERY
+    // non-canonical, non-UTM field the client sent — both via the explicit
+    // `extra` object and any fields flattened onto the payload. This is a
+    // fallback serializer: new/unknown form fields are stored automatically
+    // without requiring a code change here.
+    const canonicalKeys = new Set([
+      "name", "email", "phone", "message", "source", "page", "page_url",
+      "time", "submittedAt", "fields_summary", "fields_json",
+    ]);
     const extraForDb: Record<string, unknown> = {};
     for (const [key, value] of Object.entries(body?.extra || {})) {
       if (value === undefined || value === null || key.startsWith("utm_")) continue;
+      extraForDb[key] = value;
+    }
+    for (const [key, value] of Object.entries(incoming)) {
+      if (value === undefined || value === null) continue;
+      if (canonicalKeys.has(key) || key.startsWith("utm_")) continue;
+      if (key in extraForDb) continue;
       extraForDb[key] = value;
     }
 

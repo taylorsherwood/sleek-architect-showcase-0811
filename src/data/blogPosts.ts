@@ -244,7 +244,7 @@ A: Expect questions about your objectives, timing, lifestyle, risk tolerance, an
 Q: How does confidentiality work in a luxury advisory relationship?
 A: Discretion is built into how conversations are handled, how properties are introduced, how financial parameters are communicated, and whether the property is marketed publicly at all. For many sellers, that includes <a href="/sell-private" class="${LINK}">fully private exposure</a> rather than a public launch.
 :::
-\`,
+`,
   },
   {
     id: "how-to-market-luxury-properties-austin",

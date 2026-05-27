@@ -3,8 +3,6 @@
 // API key never reaches the browser. Includes a small in-memory cache to avoid
 // duplicate fetches across components on the same page.
 
-import { supabase } from "@/integrations/supabase/client";
-
 export type AgentIntelDataset =
   | "market-pulse"
   | "neighborhood-stats"
@@ -29,27 +27,20 @@ export async function fetchAgentIntel<T = unknown>(
     return cached.value as AgentIntelResponse<T>;
   }
 
-  const { data, error } = await supabase.functions.invoke<AgentIntelResponse<T>>(
-    "agentintel-market-data",
-    { method: "GET", body: undefined, headers: {}, ...({ query: { dataset } } as any) },
-  );
+  const baseUrl = import.meta.env.VITE_SUPABASE_URL;
+  const publishableKey = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY;
+  const url = `${baseUrl}/functions/v1/agentintel-market-data?dataset=${encodeURIComponent(dataset)}`;
 
-  // Fallback for invoke clients that don't pass query — call directly.
-  if (error || !data) {
-    const projectId = import.meta.env.VITE_SUPABASE_PROJECT_ID;
-    const url = `https://${projectId}.functions.supabase.co/agentintel-market-data?dataset=${dataset}`;
-    const res = await fetch(url, {
-      headers: {
-        apikey: import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY,
-        Authorization: `Bearer ${import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY}`,
-      },
-    });
-    if (!res.ok) throw new Error(`AgentIntel request failed (${res.status})`);
-    const json = (await res.json()) as AgentIntelResponse<T>;
-    memCache.set(dataset, { at: Date.now(), value: json });
-    return json;
-  }
+  const res = await fetch(url, {
+    headers: {
+      apikey: publishableKey,
+      Authorization: `Bearer ${publishableKey}`,
+    },
+  });
 
+  if (!res.ok) throw new Error(`AgentIntel request failed (${res.status})`);
+
+  const data = (await res.json()) as AgentIntelResponse<T>;
   memCache.set(dataset, { at: Date.now(), value: data });
   return data;
 }

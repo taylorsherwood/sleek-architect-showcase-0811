@@ -101,7 +101,7 @@ One of the biggest mistakes luxury sellers make is "testing the market" with an 
 
 Understanding current [Austin luxury inventory trends](/austin-luxury-real-estate-market-report) before listing is critical to pricing intelligently.
 
-## 2. Build the Entire Pre-Market Strategy Before You Go Live
+## 2. Build the Entire Pre-Market Strategy Before Going Live
 
 ### The Challenge
 

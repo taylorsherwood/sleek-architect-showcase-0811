@@ -1,6 +1,8 @@
-import { useEffect, useState, useMemo } from "react";
+import { ReactNode, useEffect, useState, useMemo } from "react";
 import { fetchAgentIntel, formatLastUpdated, AgentIntelResponse } from "@/lib/agentIntel";
 import InsightCard from "./InsightCard";
+
+interface Props { standfirst?: ReactNode; interpretation?: ReactNode; id?: string }
 
 interface Point { month: string; active: number; new: number; sold: number }
 interface Data { period: string; series: Point[]; note?: string }

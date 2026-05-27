@@ -1105,7 +1105,7 @@ Choosing a premier luxury real estate brokerage in Austin requires more than rev
 
 The right brokerage for a discreet off-market sale in <a href="/communities/tarrytown" class="${LINK}">Tarrytown</a> may not be the same brokerage best suited for a waterfront acquisition on Lake Austin or a golf-course estate in <a href="/communities/barton-creek" class="${LINK}">Barton Creek</a>.
 
-The firms that consistently perform at the highest level combine:
+The brokerages that consistently perform at the highest level combine:
 
 - Hyper-local expertise
 - Sophisticated negotiation strategy

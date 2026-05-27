@@ -74,7 +74,7 @@ export const InsightCard = ({
               <p className="text-[0.65rem] tracking-[0.25em] uppercase text-gold font-semibold mb-3">
                 Advisor's Read
               </p>
-              <div className="text-[15px] md:text-base text-foreground/85 leading-relaxed max-w-3xl font-display">
+              <div className="text-[15px] md:text-base text-foreground/85 leading-relaxed max-w-3xl">
                 {interpretation}
               </div>
             </div>

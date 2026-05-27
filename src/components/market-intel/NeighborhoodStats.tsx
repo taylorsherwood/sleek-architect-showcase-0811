@@ -15,7 +15,7 @@ interface Data { items: Row[] }
 
 const fmtMoney = (n: number) => `$${Math.round(n).toLocaleString()}`;
 
-export const NeighborhoodStats = () => {
+export const NeighborhoodStats = ({ standfirst, interpretation, id }: Props = {}) => {
   const [resp, setResp] = useState<AgentIntelResponse<Data> | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);

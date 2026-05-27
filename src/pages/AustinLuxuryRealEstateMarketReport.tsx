@@ -6,6 +6,9 @@ import AboutBlock from "@/components/AboutBlock";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createFAQSchema, createBreadcrumbSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
 import RelatedInsights from "@/components/RelatedInsights";
+import MarketPulse from "@/components/market-intel/MarketPulse";
+import InventoryTrends from "@/components/market-intel/InventoryTrends";
+import LuxuryMarketInsights from "@/components/market-intel/LuxuryMarketInsights";
 
 const faqs = [
   { question: "What defines luxury real estate in Austin Texas?", answer: "Luxury real estate in Austin generally begins at $1.5 million for single-family homes in premium neighborhoods. The core luxury tier spans $1.5M to $5M, while ultra-luxury encompasses Lake Austin waterfront estates, Hill Country ranches, and architectural masterpieces above $5M. Key indicators include location prestige, lot size, build quality, and access to top-rated school districts like Eanes ISD." },
@@ -288,6 +291,24 @@ const AustinLuxuryRealEstateMarketReport = () => {
               <Link to="/off-market-real-estate-austin" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ OFF-MARKET REAL ESTATE</Link>
               <Link to="/invest" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ INVESTMENT ADVISORY</Link>
               <Link to="/communities" className="text-foreground hover:text-gold transition-colors duration-300 text-minimal">→ EXPLORE ALL COMMUNITIES</Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-20 bg-background border-t border-border/50">
+        <div className="container mx-auto px-6">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-12">
+              <p className="text-minimal text-gold mb-3 tracking-[0.25em] font-semibold uppercase text-[0.7rem]">Live Market Intelligence</p>
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural">
+                Current Austin Market Data
+              </h2>
+            </div>
+            <div className="space-y-10">
+              <MarketPulse />
+              <InventoryTrends />
+              <LuxuryMarketInsights />
             </div>
           </div>
         </div>

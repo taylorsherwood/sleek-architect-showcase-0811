@@ -55,6 +55,7 @@ const AustinLuxuryMarketTrends = lazy(() => import("@/pages/AustinLuxuryMarketTr
 const OffMarketRealEstateAustin = lazy(() => import("@/pages/OffMarketRealEstateAustin"));
 const AustinLandDevelopmentOpportunities = lazy(() => import("@/pages/AustinLandDevelopmentOpportunities"));
 const AustinLuxuryRealEstateMarketReport = lazy(() => import("@/pages/AustinLuxuryRealEstateMarketReport"));
+const MarketIntelligence = lazy(() => import("@/pages/MarketIntelligence"));
 const investImport = () => import("@/pages/Invest");
 const Invest = lazy(investImport);
 

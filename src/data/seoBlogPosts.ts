@@ -2983,7 +2983,7 @@ Luxury sellers do not need more transaction management. They need sharper judgme
 
 At the high end, representation influences pricing discipline, launch strategy, buyer targeting, negotiation posture, and whether a property is framed as a commodity or a scarce opportunity. That distinction matters. Premium homes rarely trade at their best number because they were merely visible. They trade well because the right buyers understood why the asset was worth pursuing.
 
-This is where advisory-led firms stand apart. They can read below the surface of comparable sales, identify when a home should be marketed quietly versus publicly, and shape the narrative around what actually drives value in that micro-market. For sellers who care about discretion, pattern recognition, and positioning, that level of guidance is not a luxury. It is part of the strategy.
+This is where advisory-led teams stand apart. They can read below the surface of comparable sales, identify when a home should be marketed quietly versus publicly, and shape the narrative around what actually drives value in that micro-market. For sellers who care about discretion, pattern recognition, and positioning, that level of guidance is not a luxury. It is part of the strategy.
 
 [Echelon Property Group](/about-austin-real-estate-advisory) operates in exactly that lane, with selective representation built around market intelligence rather than volume. Our [past transactions](/past-transactions) reflect that approach across Austin's most competitive luxury submarkets.
 

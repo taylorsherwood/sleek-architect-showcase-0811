@@ -63,7 +63,7 @@ Luxury real estate in <a href="/communities/barton-creek" class="${LINK}">Barton
 
 At the luxury level, generic advice becomes expensive advice.
 
-<a href="/about-austin-real-estate-advisory" class="${LINK}">Echelon Property Group</a> was built around a more focused approach to <a href="/about-austin-real-estate-advisory" class="${LINK}">Austin real estate advisory</a>. Instead of operating as a volume-driven brokerage covering every segment of the market, the firm concentrates heavily on Austin's premier luxury corridors, <a href="/sell-private" class="${LINK}">strategic seller representation</a>, <a href="/off-market-real-estate-austin" class="${LINK}">private transactions</a>, and <a href="/private-opportunities" class="${LINK}">relationship-driven opportunities</a> that often never become publicly visible.
+<a href="/about-austin-real-estate-advisory" class="${LINK}">Echelon Property Group</a> was built around a more focused approach to <a href="/about-austin-real-estate-advisory" class="${LINK}">Austin real estate advisory</a>. Instead of operating as a volume-driven brokerage covering every segment of the market, the team concentrates heavily on Austin's premier luxury corridors, <a href="/sell-private" class="${LINK}">strategic seller representation</a>, <a href="/off-market-real-estate-austin" class="${LINK}">private transactions</a>, and <a href="/private-opportunities" class="${LINK}">relationship-driven opportunities</a> that often never become publicly visible.
 
 The strategies below reflect how Echelon approaches <a href="/austin-luxury-homes-for-sale" class="${LINK}">high-end real estate</a> across Austin's most competitive neighborhoods.
 

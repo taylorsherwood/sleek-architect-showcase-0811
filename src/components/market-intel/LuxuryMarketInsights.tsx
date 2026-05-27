@@ -34,6 +34,9 @@ export const LuxuryMarketInsights = ({ standfirst, interpretation, id }: Props =
 
   return (
     <InsightCard
+      id={id}
+      standfirst={standfirst}
+      interpretation={interpretation}
       eyebrow="Luxury Market Insights"
       title={`Austin Luxury Tier ${d ? `(${d.threshold_label})` : ""}`}
       lastUpdated={resp ? formatLastUpdated(resp.last_updated) : undefined}

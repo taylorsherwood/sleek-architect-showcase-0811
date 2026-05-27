@@ -17,6 +17,7 @@ import blogChoosingLuxuryBrokerage from "@/assets/blog/choosing-luxury-real-esta
 import blogMarketLuxuryProperties from "@/assets/blog/market-luxury-properties-austin.jpg";
 import blogAustinLuxuryAdvisory from "@/assets/blog/austin-luxury-real-estate-advisory.jpg";
 import blogEchelonApproach from "@/assets/blog/taylor-sherwood-echelon-approach.jpg";
+import blogEchelonApproachHero from "@/assets/blog/echelon-approach-hero.jpg";
 
 
 
@@ -50,7 +51,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "8 min read",
     category: "AUSTIN LUXURY REAL ESTATE",
     image: blogEchelonApproach,
-    heroImage: blogEchelonApproach,
+    heroImage: blogEchelonApproachHero,
     content: `
 <a href="/about-austin-real-estate-advisory" class="${LINK}">Echelon Property Group</a> advises <a href="/buy" class="${LINK}">buyers</a>, <a href="/sell" class="${LINK}">sellers</a>, and <a href="/invest" class="${LINK}">investors</a> across <a href="/luxury-real-estate-austin" class="${LINK}">Austin's luxury market</a> through a strategy centered on hyper-local expertise, <a href="/off-market-real-estate-austin" class="${LINK}">off-market access</a>, privacy-first representation, and disciplined transaction execution in neighborhoods like <a href="/communities/barton-creek" class="${LINK}">Barton Creek</a>, <a href="/communities/westlake-hills" class="${LINK}">West Lake Hills</a>, <a href="/communities/rollingwood" class="${LINK}">Rollingwood</a>, and <a href="/communities/lake-austin" class="${LINK}">Lake Austin</a>.
 

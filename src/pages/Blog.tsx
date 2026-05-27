@@ -58,8 +58,12 @@ const Blog = () => {
       ? allPosts
       : allPosts.filter((post) => post.category === activeCategory);
 
-  const featured = allPosts[0];
-  const gridPosts = activeCategory === "ALL" ? filteredPosts.slice(1) : filteredPosts;
+  const FEATURED_ID = "how-echelon-property-group-approaches-austin-luxury-real-estate-differently";
+  const featured = allPosts.find((p) => p.id === FEATURED_ID) || allPosts[0];
+  const gridPosts =
+    activeCategory === "ALL"
+      ? filteredPosts.filter((p) => p.id !== featured?.id)
+      : filteredPosts.filter((p) => p.id !== featured?.id);
 
   return (
     <div className="min-h-screen bg-background">

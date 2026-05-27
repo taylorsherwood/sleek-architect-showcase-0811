@@ -2596,7 +2596,7 @@ The next phase of the market is likely to reward patience, access, and precision
 
 Expect continued strength in tightly held neighborhoods, especially where inventory remains structurally limited and the buyer profile is deep, see the [best Austin neighborhoods for luxury homes](/blog/best-austin-neighborhoods-for-luxury-homes) for the current short list. Expect differentiated properties to outperform generic luxury product. And expect [private inventory](/blog/find-off-market-homes-austin) to remain influential, particularly for clients who value discretion or are unwilling to compete in a fully exposed process.
 
-For anyone operating at the top of the market, the real opportunity is not in following broad sentiment. It is in understanding where scarcity is real, where pricing has drifted, and which properties have staying power beyond the current cycle. Firms like [Echelon Property Group](/about-austin-real-estate-advisory) build around that kind of pattern recognition because luxury decisions are rarely about the headline. They are about what the headline misses.
+For anyone operating at the top of the market, the real opportunity is not in following broad sentiment. It is in understanding where scarcity is real, where pricing has drifted, and which properties have staying power beyond the current cycle. Teams like [Echelon Property Group](/about-austin-real-estate-advisory) build around that kind of pattern recognition because luxury decisions are rarely about the headline. They are about what the headline misses.
 
 The best moves in this market will come from seeing the layers others overlook, the lot beneath the house, the street behind the address, the buyer pool behind the comps, and the quiet difference between visibility and value.
 

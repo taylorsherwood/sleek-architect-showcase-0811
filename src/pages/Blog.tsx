@@ -173,6 +173,7 @@ const Blog = () => {
                       src={featured.image}
                       alt={`${featured.title} - Austin luxury real estate insights`}
                       className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.04]"
+                      style={{ objectPosition: "center 22%" }}
                       loading="eager"
                       decoding="async"
                     />

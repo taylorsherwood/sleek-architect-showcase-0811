@@ -22,6 +22,7 @@ import blogWhatIsPrivateListingHero from "@/assets/blog-what-is-private-listing-
 import blogBuyersNeverSeeBestHomes from "@/assets/blog-buyers-never-see-best-homes-hero.webp";
 import blogBestAustinLuxuryNeighborhoods from "@/assets/blog-best-austin-luxury-neighborhoods.webp";
 import blogSellingLuxuryHomeAustin from "@/assets/blog-selling-luxury-home-austin.jpg";
+import blogSellingLuxuryHomeStrategies from "@/assets/blog/selling-luxury-home-austin-strategies.jpg";
 import blogLuxuryHomeAdvisorAustin from "@/assets/blog-luxury-home-advisor-austin.webp";
 
 import blogBestAustinEnclavesForPrivacy from "@/assets/blog-best-austin-enclaves-for-privacy.avif";

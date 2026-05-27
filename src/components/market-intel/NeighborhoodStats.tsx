@@ -31,6 +31,9 @@ export const NeighborhoodStats = ({ standfirst, interpretation, id }: Props = {}
 
   return (
     <InsightCard
+      id={id}
+      standfirst={standfirst}
+      interpretation={interpretation}
       eyebrow="Neighborhood Stats"
       title="Premier Austin Neighborhoods"
       lastUpdated={resp ? formatLastUpdated(resp.last_updated) : undefined}

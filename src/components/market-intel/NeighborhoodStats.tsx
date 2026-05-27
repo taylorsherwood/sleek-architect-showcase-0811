@@ -1,6 +1,8 @@
-import { useEffect, useState } from "react";
+import { ReactNode, useEffect, useState } from "react";
 import { fetchAgentIntel, formatLastUpdated, AgentIntelResponse } from "@/lib/agentIntel";
 import InsightCard from "./InsightCard";
+
+interface Props { standfirst?: ReactNode; interpretation?: ReactNode; id?: string }
 
 interface Row {
   name: string;
@@ -13,7 +15,7 @@ interface Data { items: Row[] }
 
 const fmtMoney = (n: number) => `$${Math.round(n).toLocaleString()}`;
 
-export const NeighborhoodStats = () => {
+export const NeighborhoodStats = ({ standfirst, interpretation, id }: Props = {}) => {
   const [resp, setResp] = useState<AgentIntelResponse<Data> | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -29,6 +31,9 @@ export const NeighborhoodStats = () => {
 
   return (
     <InsightCard
+      id={id}
+      standfirst={standfirst}
+      interpretation={interpretation}
       eyebrow="Neighborhood Stats"
       title="Premier Austin Neighborhoods"
       lastUpdated={resp ? formatLastUpdated(resp.last_updated) : undefined}

@@ -1,6 +1,12 @@
-import { useEffect, useState } from "react";
+import { ReactNode, useEffect, useState } from "react";
 import { fetchAgentIntel, formatLastUpdated, AgentIntelResponse } from "@/lib/agentIntel";
 import InsightCard from "./InsightCard";
+
+interface MarketPulseProps {
+  standfirst?: ReactNode;
+  interpretation?: ReactNode;
+  id?: string;
+}
 
 interface MarketPulseData {
   headline: string;
@@ -18,7 +24,7 @@ const fmtMoney = (n: number) => `$${Math.round(n).toLocaleString()}`;
 const fmtPct = (n: number, withSign = true) =>
   `${withSign && n > 0 ? "+" : ""}${n.toFixed(1)}%`;
 
-export const MarketPulse = () => {
+export const MarketPulse = ({ standfirst, interpretation, id }: MarketPulseProps = {}) => {
   const [resp, setResp] = useState<AgentIntelResponse<MarketPulseData> | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -38,8 +44,11 @@ export const MarketPulse = () => {
 
   return (
     <InsightCard
+      id={id}
       eyebrow="Market Pulse"
       title="Austin Real Estate at a Glance"
+      standfirst={standfirst}
+      interpretation={interpretation}
       lastUpdated={resp ? formatLastUpdated(resp.last_updated) : undefined}
       loading={loading}
       error={error}

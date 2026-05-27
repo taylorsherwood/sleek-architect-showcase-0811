@@ -1,6 +1,8 @@
-import { useEffect, useState } from "react";
+import { ReactNode, useEffect, useState } from "react";
 import { fetchAgentIntel, formatLastUpdated, AgentIntelResponse } from "@/lib/agentIntel";
 import InsightCard from "./InsightCard";
+
+interface Props { standfirst?: ReactNode; interpretation?: ReactNode; id?: string }
 
 interface Data {
   threshold_label: string;
@@ -14,7 +16,7 @@ interface Data {
 
 const fmtMoney = (n: number) => `$${Math.round(n).toLocaleString()}`;
 
-export const LuxuryMarketInsights = () => {
+export const LuxuryMarketInsights = ({ standfirst, interpretation, id }: Props = {}) => {
   const [resp, setResp] = useState<AgentIntelResponse<Data> | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -32,6 +34,9 @@ export const LuxuryMarketInsights = () => {
 
   return (
     <InsightCard
+      id={id}
+      standfirst={standfirst}
+      interpretation={interpretation}
       eyebrow="Luxury Market Insights"
       title={`Austin Luxury Tier ${d ? `(${d.threshold_label})` : ""}`}
       lastUpdated={resp ? formatLastUpdated(resp.last_updated) : undefined}

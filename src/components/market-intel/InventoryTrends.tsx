@@ -1,11 +1,13 @@
-import { useEffect, useState, useMemo } from "react";
+import { ReactNode, useEffect, useState, useMemo } from "react";
 import { fetchAgentIntel, formatLastUpdated, AgentIntelResponse } from "@/lib/agentIntel";
 import InsightCard from "./InsightCard";
+
+interface Props { standfirst?: ReactNode; interpretation?: ReactNode; id?: string }
 
 interface Point { month: string; active: number; new: number; sold: number }
 interface Data { period: string; series: Point[]; note?: string }
 
-export const InventoryTrends = () => {
+export const InventoryTrends = ({ standfirst, interpretation, id }: Props = {}) => {
   const [resp, setResp] = useState<AgentIntelResponse<Data> | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -26,6 +28,9 @@ export const InventoryTrends = () => {
 
   return (
     <InsightCard
+      id={id}
+      standfirst={standfirst}
+      interpretation={interpretation}
       eyebrow="Inventory Trends"
       title="Active, New, and Sold Inventory"
       lastUpdated={resp ? formatLastUpdated(resp.last_updated) : undefined}

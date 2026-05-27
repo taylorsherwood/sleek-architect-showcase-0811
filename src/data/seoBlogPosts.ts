@@ -3314,7 +3314,7 @@ If you are searching for off market homes in Austin, the short answer is to stop
 
 Industry estimates put roughly 48% of Austin homes as trading privately, with no single source tracking it comprehensively. In the luxury segment above $1.2M, reported figures hover between 40 and 45% in [West lake Hills](/communities/westlake-hills), [Barton Creek](/communities/barton-creek), and the Lake Austin corridor. The gap between what is listed and what is actually available is wide, and most buyers never realize it exists.
 
-This guide explains how [Austin's private listing inventory](/off-market-real-estate-austin) really works, broker networks, county records, direct outreach, and when to bring in a firm that already operates inside those channels.
+This guide explains how [Austin's private listing inventory](/off-market-real-estate-austin) really works, broker networks, county records, direct outreach, and when to bring in a team that already operates inside those channels.
 
 ## Key Takeaways
 

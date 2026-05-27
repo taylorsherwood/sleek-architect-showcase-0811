@@ -93,7 +93,7 @@ const Blog = () => {
         <img
           src={heroLuxury}
           alt="Austin luxury real estate editorial"
-          className="absolute inset-0 w-full h-full object-cover object-top scale-105 motion-safe:animate-[heroDrift_24s_ease-in-out_infinite_alternate]"
+          className="absolute inset-0 w-full h-full object-cover object-center scale-105 motion-safe:animate-[heroDrift_24s_ease-in-out_infinite_alternate]"
           loading="eager"
           decoding="async"
         />

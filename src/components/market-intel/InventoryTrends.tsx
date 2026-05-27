@@ -7,7 +7,7 @@ interface Props { standfirst?: ReactNode; interpretation?: ReactNode; id?: strin
 interface Point { month: string; active: number; new: number; sold: number }
 interface Data { period: string; series: Point[]; note?: string }
 
-export const InventoryTrends = () => {
+export const InventoryTrends = ({ standfirst, interpretation, id }: Props = {}) => {
   const [resp, setResp] = useState<AgentIntelResponse<Data> | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);

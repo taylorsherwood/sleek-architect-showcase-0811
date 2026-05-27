@@ -53,9 +53,9 @@ export const LuxuryMarketInsights = ({ standfirst, interpretation, id }: Props =
           </div>
           <ul className="space-y-3">
             {d.insights.map((i, idx) => (
-              <li key={idx} className="flex gap-3 text-sm text-foreground/85 leading-relaxed">
-                <span className="text-gold mt-1.5 shrink-0">▸</span>
-                <span>{i}</span>
+              <li key={idx} className="flex items-baseline gap-3 text-sm text-foreground/85 leading-relaxed">
+                <span aria-hidden className="text-gold text-[0.7rem] leading-none shrink-0 translate-y-[-1px]">◆</span>
+                <span className="flex-1">{i}</span>
               </li>
             ))}
           </ul>

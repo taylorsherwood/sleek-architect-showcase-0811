@@ -155,7 +155,7 @@ The goal is not simply to make a property look attractive. The goal is to positi
 
 A <a href="/communities/barton-creek" class="${LINK}">Barton Creek</a> buyer prioritizing privacy and lock-and-leave convenience may respond very differently than a <a href="/communities/tarrytown" class="${LINK}">Tarrytown</a> buyer focused on walkability and architectural pedigree.
 
-Luxury marketing works best when it feels intentional, controlled, and aligned with the buyer profile most likely to engage emotionally with the property.
+<a href="/sell" class="${LINK}">Luxury marketing</a> works best when it feels intentional, controlled, and aligned with the buyer profile most likely to engage emotionally with the property.
 
 ## 4. Privacy Is Often a Practical Requirement, Not a Preference
 

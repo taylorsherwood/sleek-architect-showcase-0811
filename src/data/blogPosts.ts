@@ -1064,7 +1064,7 @@ Echelon Property Group operates with the flexibility, responsiveness, and specia
 - Who will actually manage the transaction day to day?
 - How many active clients is the advisor currently handling?
 - Does the brokerage prioritize quality of representation or sheer transaction volume?
-- Are the firm's resources truly accessible to your transaction, or primarily part of the sales pitch?
+- Are the brokerage's resources truly accessible to your transaction, or primarily part of the sales pitch?
 
 At the luxury level, personalized execution matters more than corporate scale alone.
 

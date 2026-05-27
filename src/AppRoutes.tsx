@@ -178,6 +178,7 @@ const AppRoutes = () => {
           <Route path="/admin/private-distribution/:slug" element={<AdminPrivateDistribution />} />
           <Route path="/private-distribution" element={<PrivateDistribution />} />
           <Route path="/private-distribution/:slug" element={<PrivateDistribution />} />
+          <Route path="/market-intelligence" element={<MarketIntelligence />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>

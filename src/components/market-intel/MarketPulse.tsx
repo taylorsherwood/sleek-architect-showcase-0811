@@ -1,6 +1,12 @@
-import { useEffect, useState } from "react";
+import { ReactNode, useEffect, useState } from "react";
 import { fetchAgentIntel, formatLastUpdated, AgentIntelResponse } from "@/lib/agentIntel";
 import InsightCard from "./InsightCard";
+
+interface MarketPulseProps {
+  standfirst?: ReactNode;
+  interpretation?: ReactNode;
+  id?: string;
+}
 
 interface MarketPulseData {
   headline: string;

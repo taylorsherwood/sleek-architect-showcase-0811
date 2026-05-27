@@ -86,9 +86,10 @@ const MOCK_DATA: Record<string, unknown> = {
 async function fetchFromAgentIntel(dataset: string): Promise<unknown> {
   const apiKey = Deno.env.get("AGENTINTEL_API_KEY");
   const path = ENDPOINTS[dataset];
+  const isPlaceholderHost = AGENTINTEL_BASE_URL.includes("agentintel.example");
 
-  // If no key or endpoint not yet wired, return mock data.
-  if (!apiKey || !path) {
+  // Until live API is wired (placeholder host), always return mock immediately.
+  if (!apiKey || !path || isPlaceholderHost) {
     return { ...((MOCK_DATA[dataset] as object) ?? {}), _source: "mock" };
   }
 

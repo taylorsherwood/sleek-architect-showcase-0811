@@ -41,6 +41,21 @@ const LINK = "text-foreground underline hover:text-muted-foreground";
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "how-echelon-property-group-approaches-austin-luxury-real-estate-differently",
+    title: "How Echelon Property Group Approaches Austin Luxury Real Estate Differently",
+    metaTitle: "How Echelon Property Group Approaches Austin Luxury Real Estate Differently | Echelon Property Group",
+    excerpt: "Taylor Sherwood on how Echelon Property Group approaches Austin's luxury market differently — strategy, discretion, and access.",
+    author: "Taylor Sherwood",
+    date: "2026-05-27",
+    readTime: "8 min read",
+    category: "ADVISORY",
+    image: blogEchelonApproach,
+    heroImage: blogEchelonApproach,
+    content: `
+_Full article coming soon._
+`,
+  },
+  {
     id: "austin-luxury-real-estate-advisory-agent-vs-advisor",
     title: "Austin Luxury Real Estate Advisory: The Difference Between an Agent and a True Advisor",
     metaTitle: "Austin Luxury Real Estate Advisory: Agent vs. True Advisor | Echelon Property Group",

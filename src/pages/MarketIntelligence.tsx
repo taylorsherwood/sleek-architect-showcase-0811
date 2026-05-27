@@ -122,7 +122,7 @@ const MarketIntelligence = () => {
               who require precision over noise.
             </p>
             <p className="mt-5 text-[0.7rem] tracking-[0.22em] uppercase text-muted-foreground/80">
-              Updated daily using private market intelligence and luxury market trend analysis
+              UPDATED DAILY USING ABOR MLS, PRIVATE MARKET INTELLIGENCE, AND LUXURY MARKET TREND ANALYSIS
             </p>
           </div>
         </div>

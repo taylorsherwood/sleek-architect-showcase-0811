@@ -3321,7 +3321,7 @@ This guide explains how [Austin's private listing inventory](/off-market-real-es
 - Many of Austin's strongest luxury and investment opportunities trade off-market, especially above $1.5M.
 - Private deals reduce competition and often open up better terms, but they are rarely "discounts."
 - Access depends on relationships, network strength, and disciplined sourcing, not search alerts.
-- Above $1.5M in West lake Hills, Barton Creek, and Lake Austin, working with a firm already inside private channels is typically the only consistent path.
+- Above $1.5M in West lake Hills, Barton Creek, and Lake Austin, working with a team already inside private channels is typically the only consistent path.
 
 ## What "Off-Market" Actually Means in Austin
 

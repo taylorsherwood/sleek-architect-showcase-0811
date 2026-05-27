@@ -63,7 +63,7 @@ Luxury real estate in <a href="/communities/barton-creek" class="${LINK}">Barton
 
 At the luxury level, generic advice becomes expensive advice.
 
-<a href="/about-austin-real-estate-advisory" class="${LINK}">Echelon Property Group</a> was built around a more focused approach to <a href="/about-austin-real-estate-advisory" class="${LINK}">Austin real estate advisory</a>. Instead of operating as a volume-driven brokerage covering every segment of the market, the firm concentrates heavily on Austin's premier luxury corridors, <a href="/sell-private" class="${LINK}">strategic seller representation</a>, <a href="/off-market-real-estate-austin" class="${LINK}">private transactions</a>, and <a href="/private-opportunities" class="${LINK}">relationship-driven opportunities</a> that often never become publicly visible.
+<a href="/about-austin-real-estate-advisory" class="${LINK}">Echelon Property Group</a> was built around a more focused approach to <a href="/about-austin-real-estate-advisory" class="${LINK}">Austin real estate advisory</a>. Instead of operating as a volume-driven brokerage covering every segment of the market, the team concentrates heavily on Austin's premier luxury corridors, <a href="/sell-private" class="${LINK}">strategic seller representation</a>, <a href="/off-market-real-estate-austin" class="${LINK}">private transactions</a>, and <a href="/private-opportunities" class="${LINK}">relationship-driven opportunities</a> that often never become publicly visible.
 
 The strategies below reflect how Echelon approaches <a href="/austin-luxury-homes-for-sale" class="${LINK}">high-end real estate</a> across Austin's most competitive neighborhoods.
 
@@ -1064,7 +1064,7 @@ Echelon Property Group operates with the flexibility, responsiveness, and specia
 - Who will actually manage the transaction day to day?
 - How many active clients is the advisor currently handling?
 - Does the brokerage prioritize quality of representation or sheer transaction volume?
-- Are the firm's resources truly accessible to your transaction, or primarily part of the sales pitch?
+- Are the brokerage's resources truly accessible to your transaction, or primarily part of the sales pitch?
 
 At the luxury level, personalized execution matters more than corporate scale alone.
 
@@ -1105,7 +1105,7 @@ Choosing a premier luxury real estate brokerage in Austin requires more than rev
 
 The right brokerage for a discreet off-market sale in <a href="/communities/tarrytown" class="${LINK}">Tarrytown</a> may not be the same brokerage best suited for a waterfront acquisition on Lake Austin or a golf-course estate in <a href="/communities/barton-creek" class="${LINK}">Barton Creek</a>.
 
-The firms that consistently perform at the highest level combine:
+The brokerages that consistently perform at the highest level combine:
 
 - Hyper-local expertise
 - Sophisticated negotiation strategy
@@ -1137,8 +1137,8 @@ A: Barton Creek, West Lake Hills, Rollingwood, Tarrytown, Pemberton Heights, Lak
 Q: How should I evaluate a luxury brokerage's negotiation performance?
 A: Look beyond total sales volume. Ask about list-to-sale price ratios above $2M and $3M, average days on market by price tier, pricing accuracy, deal structure sophistication, and specific examples of difficult negotiations they have successfully managed. Strong advisors answer with specifics rather than generic talking points and can explain how they create leverage, protect pricing, and structure discreet transactions.
 
-Q: Are boutique brokerages better than large luxury firms for Austin luxury real estate?
-A: Each model has advantages. Large firms offer global reach and referral pipelines. Boutique advisory teams offer direct advisor access, higher-touch service, and hyper-local specialization. The strongest model today often combines both. Echelon Property Group operates with boutique-level attention while leveraging the global infrastructure of eXp Realty, which provides both personalized representation and broader reach.
+Q: Are boutique brokerages better than large luxury brokerages for Austin luxury real estate?
+A: Each model has advantages. Large brokerages offer global reach and referral pipelines. Boutique advisory teams offer direct advisor access, higher-touch service, and hyper-local specialization. The strongest model today often combines both. Echelon Property Group operates with boutique-level attention while leveraging the global infrastructure of eXp Realty, which provides both personalized representation and broader reach.
 
 Q: What questions should I ask a luxury brokerage before signing a representation agreement?
 A: Ask who will personally manage the transaction day to day, how many active clients the advisor currently handles, what their off-market network actually consists of, how they handle confidentiality and buyer vetting, what their list-to-sale ratio looks like above $3M, and how they market properties beyond the MLS. Pay equal attention to responsiveness, preparation, and clarity of communication during the evaluation process itself.

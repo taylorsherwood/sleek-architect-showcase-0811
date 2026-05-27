@@ -321,7 +321,7 @@ Assess whether they genuinely understand Austin luxury buyer behavior and agent 
 
 The best luxury advisors combine market intelligence, discretion, network reach, and strategic positioning. At this level, representation is not simply about exposure. It is about judgment.
 
-Sellers comparing their options should understand the meaningful differences between [boutique luxury advisory firms and high-volume generalist teams](/blog/boutique-vs-large-luxury-real-estate-firms-austin) before making a decision.
+Sellers comparing their options should understand the meaningful differences between [boutique luxury advisory brokerages and high-volume generalist teams](/blog/boutique-vs-large-luxury-real-estate-firms-austin) before making a decision.
 
 ## Final Thoughts
 
@@ -2596,7 +2596,7 @@ The next phase of the market is likely to reward patience, access, and precision
 
 Expect continued strength in tightly held neighborhoods, especially where inventory remains structurally limited and the buyer profile is deep, see the [best Austin neighborhoods for luxury homes](/blog/best-austin-neighborhoods-for-luxury-homes) for the current short list. Expect differentiated properties to outperform generic luxury product. And expect [private inventory](/blog/find-off-market-homes-austin) to remain influential, particularly for clients who value discretion or are unwilling to compete in a fully exposed process.
 
-For anyone operating at the top of the market, the real opportunity is not in following broad sentiment. It is in understanding where scarcity is real, where pricing has drifted, and which properties have staying power beyond the current cycle. Firms like [Echelon Property Group](/about-austin-real-estate-advisory) build around that kind of pattern recognition because luxury decisions are rarely about the headline. They are about what the headline misses.
+For anyone operating at the top of the market, the real opportunity is not in following broad sentiment. It is in understanding where scarcity is real, where pricing has drifted, and which properties have staying power beyond the current cycle. Teams like [Echelon Property Group](/about-austin-real-estate-advisory) build around that kind of pattern recognition because luxury decisions are rarely about the headline. They are about what the headline misses.
 
 The best moves in this market will come from seeing the layers others overlook, the lot beneath the house, the street behind the address, the buyer pool behind the comps, and the quiet difference between visibility and value.
 
@@ -2882,7 +2882,7 @@ Affluent clients are not looking for more information. They are looking for bett
 
 A luxury advisor should understand when to move quickly and when restraint creates advantage. They should be able to coordinate details without making the relationship feel transactional. Above all, they should reduce friction while improving judgment.
 
-That is why advisory-led firms such as [Echelon Property Group](/about-austin-real-estate-advisory) tend to resonate with a certain type of client. The appeal is not just polished service. It is the sense that each move is being considered in context, with market intelligence and long-view thinking behind it. Our [past transactions](/past-transactions) reflect that approach across Austin's most competitive luxury submarkets, from [Barton Creek](/communities/barton-creek) and [Rollingwood](/communities/rollingwood) to [Pemberton Heights](/communities/pemberton-heights) and [Spanish Oaks](/communities/spanish-oaks).
+That is why advisory-led teams such as [Echelon Property Group](/about-austin-real-estate-advisory) tend to resonate with a certain type of client. The appeal is not just polished service. It is the sense that each move is being considered in context, with market intelligence and long-view thinking behind it. Our [past transactions](/past-transactions) reflect that approach across Austin's most competitive luxury submarkets, from [Barton Creek](/communities/barton-creek) and [Rollingwood](/communities/rollingwood) to [Pemberton Heights](/communities/pemberton-heights) and [Spanish Oaks](/communities/spanish-oaks).
 
 In Austin's upper tier, the right property can still be found, and the right buyer can still be reached. But neither result happens consistently through broad-market tactics alone. At this level, outcomes are shaped by access, positioning, and the quality of the advice guiding each decision.
 
@@ -2983,7 +2983,7 @@ Luxury sellers do not need more transaction management. They need sharper judgme
 
 At the high end, representation influences pricing discipline, launch strategy, buyer targeting, negotiation posture, and whether a property is framed as a commodity or a scarce opportunity. That distinction matters. Premium homes rarely trade at their best number because they were merely visible. They trade well because the right buyers understood why the asset was worth pursuing.
 
-This is where advisory-led firms stand apart. They can read below the surface of comparable sales, identify when a home should be marketed quietly versus publicly, and shape the narrative around what actually drives value in that micro-market. For sellers who care about discretion, pattern recognition, and positioning, that level of guidance is not a luxury. It is part of the strategy.
+This is where advisory-led teams stand apart. They can read below the surface of comparable sales, identify when a home should be marketed quietly versus publicly, and shape the narrative around what actually drives value in that micro-market. For sellers who care about discretion, pattern recognition, and positioning, that level of guidance is not a luxury. It is part of the strategy.
 
 [Echelon Property Group](/about-austin-real-estate-advisory) operates in exactly that lane, with selective representation built around market intelligence rather than volume. Our [past transactions](/past-transactions) reflect that approach across Austin's most competitive luxury submarkets.
 
@@ -3314,14 +3314,14 @@ If you are searching for off market homes in Austin, the short answer is to stop
 
 Industry estimates put roughly 48% of Austin homes as trading privately, with no single source tracking it comprehensively. In the luxury segment above $1.2M, reported figures hover between 40 and 45% in [West lake Hills](/communities/westlake-hills), [Barton Creek](/communities/barton-creek), and the Lake Austin corridor. The gap between what is listed and what is actually available is wide, and most buyers never realize it exists.
 
-This guide explains how [Austin's private listing inventory](/off-market-real-estate-austin) really works, broker networks, county records, direct outreach, and when to bring in a firm that already operates inside those channels.
+This guide explains how [Austin's private listing inventory](/off-market-real-estate-austin) really works, broker networks, county records, direct outreach, and when to bring in a team that already operates inside those channels.
 
 ## Key Takeaways
 
 - Many of Austin's strongest luxury and investment opportunities trade off-market, especially above $1.5M.
 - Private deals reduce competition and often open up better terms, but they are rarely "discounts."
 - Access depends on relationships, network strength, and disciplined sourcing, not search alerts.
-- Above $1.5M in West lake Hills, Barton Creek, and Lake Austin, working with a firm already inside private channels is typically the only consistent path.
+- Above $1.5M in West lake Hills, Barton Creek, and Lake Austin, working with a team already inside private channels is typically the only consistent path.
 
 ## What "Off-Market" Actually Means in Austin
 
@@ -3359,7 +3359,7 @@ Several platforms drive Austin's broker-to-broker private inventory:
 
 Access to any of these requires being represented by an agent who participates. Buyers without the right representation never see what flows through these channels.
 
-Some firms do not just have access, they are built around it. [Echelon Property Group](/about) is a boutique Austin advisory firm whose practice is centered on private transactions across [West lake Hills](/communities/westlake-hills), [Barton Creek](/communities/barton-creek), Lake Austin, and [Tarrytown](/communities/tarrytown). For more on how this private layer behaves, see our analysis of the [hidden market across Austin's neighborhoods](/blog/off-market-real-estate-austin) and our deeper look at [private listings real estate](/blog/private-listings-real-estate-explained).
+Some teams do not just have access, they are built around it. [Echelon Property Group](/about) is a boutique Austin advisory team whose practice is centered on private transactions across [West lake Hills](/communities/westlake-hills), [Barton Creek](/communities/barton-creek), Lake Austin, and [Tarrytown](/communities/tarrytown). For more on how this private layer behaves, see our analysis of the [hidden market across Austin's neighborhoods](/blog/off-market-real-estate-austin) and our deeper look at [private listings real estate](/blog/private-listings-real-estate-explained).
 
 When evaluating a buyer's agent, the better question is specific: how many of your last 10 transactions came from private channels rather than the MLS? Do you participate in ALN or similar platforms? Can you name an off-market deal you sourced in the neighborhoods I am targeting? An agent who cannot answer concretely probably does not have the access they imply.
 
@@ -3429,7 +3429,7 @@ An off-market specialist brings a network that took years to build: direct relat
 
 At $1.5M and above, the number of legitimate private deals a single buyer can uncover through cold outreach is small. Sellers in West lake Hills and Barton Creek do not respond to mail from strangers. They transact through relationships, quietly and on their own timeline. Buyers competing at this level need a broker already inside those conversations.
 
-Ask for a track record, not a pitch. How many off-market transactions in the past 24 months? In which neighborhoods? At what price points? A firm whose practice is built around [private transactions](/private-opportunities) can show that record. One that claims broad off-market access but primarily lists on MLS cannot.
+Ask for a track record, not a pitch. How many off-market transactions in the past 24 months? In which neighborhoods? At what price points? A team whose practice is built around [private transactions](/private-opportunities) can show that record. One that claims broad off-market access but primarily lists on MLS cannot.
 
 ## Working With Echelon Property Group
 
@@ -3442,7 +3442,7 @@ If you want to see what is moving privately in your target neighborhoods before 
 ## Frequently Asked Questions
 
 ### How do I find off market homes in Austin?
-Off-market homes in Austin are accessed through agent networks like the Austin Luxury Network, broker-only platforms such as Compass Private Exclusives, targeted direct outreach to homeowners using Travis County (TCAD) records, and by working with firms whose practice is built around private transactions. Public listing sites like Zillow only show a fraction of homes that actually trade.
+Off-market homes in Austin are accessed through agent networks like the Austin Luxury Network, broker-only platforms such as Compass Private Exclusives, targeted direct outreach to homeowners using Travis County (TCAD) records, and by working with teams whose practice is built around private transactions. Public listing sites like Zillow only show a fraction of homes that actually trade.
 
 ### What percentage of Austin luxury homes sell off-market?
 In Austin's luxury segment above $1.2M, reported figures suggest 40 to 45% of transactions happen off-market, particularly in West lake Hills, Barton Creek, and the Lake Austin corridor. Across all price tiers, industry estimates put private Austin transactions at roughly 48%, though no single source tracks this comprehensively.

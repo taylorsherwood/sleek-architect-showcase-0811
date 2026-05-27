@@ -105,14 +105,17 @@ export const InventoryTrends = ({ standfirst, interpretation, id }: Props = {}) 
             ))}
           </div>
 
-          {typeof resp.data.series.at(-1)?.months_of_inventory === "number" && (
-            <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground mt-6">
-              Months of inventory:{" "}
-              <span className="text-foreground font-medium normal-case tracking-normal">
-                {resp.data.series.at(-1)!.months_of_inventory!.toFixed(1)}
-              </span>
-            </p>
-          )}
+          {(() => {
+            const last = resp.data.series[resp.data.series.length - 1];
+            return typeof last?.months_of_inventory === "number" ? (
+              <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground mt-6">
+                Months of inventory:{" "}
+                <span className="text-foreground font-medium normal-case tracking-normal">
+                  {last.months_of_inventory.toFixed(1)}
+                </span>
+              </p>
+            ) : null;
+          })()}
 
           {resp.data.note && (
             <p className="text-sm text-muted-foreground mt-4 leading-relaxed italic">

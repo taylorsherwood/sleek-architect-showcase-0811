@@ -293,6 +293,24 @@ const AustinLuxuryRealEstateMarketReport = () => {
         </div>
       </section>
 
+      <section className="py-16 md:py-20 bg-background border-t border-border/50">
+        <div className="container mx-auto px-6">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-12">
+              <p className="text-minimal text-gold mb-3 tracking-[0.25em] font-semibold uppercase text-[0.7rem]">Live Market Intelligence</p>
+              <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural">
+                Current Austin Market Data
+              </h2>
+            </div>
+            <div className="space-y-10">
+              <MarketPulse />
+              <InventoryTrends />
+              <LuxuryMarketInsights />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <RelatedInsights />
       <AboutBlock />
       <Suspense fallback={<div className="min-h-[100px]" />}><Footer /></Suspense>

@@ -1137,8 +1137,8 @@ A: Barton Creek, West Lake Hills, Rollingwood, Tarrytown, Pemberton Heights, Lak
 Q: How should I evaluate a luxury brokerage's negotiation performance?
 A: Look beyond total sales volume. Ask about list-to-sale price ratios above $2M and $3M, average days on market by price tier, pricing accuracy, deal structure sophistication, and specific examples of difficult negotiations they have successfully managed. Strong advisors answer with specifics rather than generic talking points and can explain how they create leverage, protect pricing, and structure discreet transactions.
 
-Q: Are boutique brokerages better than large luxury firms for Austin luxury real estate?
-A: Each model has advantages. Large firms offer global reach and referral pipelines. Boutique advisory teams offer direct advisor access, higher-touch service, and hyper-local specialization. The strongest model today often combines both. Echelon Property Group operates with boutique-level attention while leveraging the global infrastructure of eXp Realty, which provides both personalized representation and broader reach.
+Q: Are boutique brokerages better than large luxury brokerages for Austin luxury real estate?
+A: Each model has advantages. Large brokerages offer global reach and referral pipelines. Boutique advisory teams offer direct advisor access, higher-touch service, and hyper-local specialization. The strongest model today often combines both. Echelon Property Group operates with boutique-level attention while leveraging the global infrastructure of eXp Realty, which provides both personalized representation and broader reach.
 
 Q: What questions should I ask a luxury brokerage before signing a representation agreement?
 A: Ask who will personally manage the transaction day to day, how many active clients the advisor currently handles, what their off-market network actually consists of, how they handle confidentiality and buyer vetting, what their list-to-sale ratio looks like above $3M, and how they market properties beyond the MLS. Pay equal attention to responsiveness, preparation, and clarity of communication during the evaluation process itself.

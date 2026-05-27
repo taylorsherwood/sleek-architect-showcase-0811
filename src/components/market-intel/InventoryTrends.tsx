@@ -28,6 +28,9 @@ export const InventoryTrends = ({ standfirst, interpretation, id }: Props = {}) 
 
   return (
     <InsightCard
+      id={id}
+      standfirst={standfirst}
+      interpretation={interpretation}
       eyebrow="Inventory Trends"
       title="Active, New, and Sold Inventory"
       lastUpdated={resp ? formatLastUpdated(resp.last_updated) : undefined}

@@ -208,6 +208,15 @@ const Footer = () => {
               >
                 Information About Brokerage Services (IABS)
               </a>
+              <a
+                href="https://tinyurl.com/3mcfufa8"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                className="block hover:text-[#b9a06c] transition-colors duration-300 underline decoration-[#b9a06c]/30 underline-offset-2 hover:decoration-[#b9a06c]"
+                style={{ fontFamily: '"Jost", sans-serif', fontSize: "11.5px", color: "rgba(184,160,109,0.7)", letterSpacing: "0.03em" }}
+              >
+                Texas Real Estate Commission Consumer Protection Notice
+              </a>
               <p style={{ fontFamily: '"Jost", sans-serif', fontSize: "12px", color: "rgba(184,160,109,0.8)", fontWeight: 700 }}>
                 Brokered by eXp Realty
               </p>

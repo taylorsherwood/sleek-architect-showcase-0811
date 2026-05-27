@@ -179,6 +179,12 @@ const Blog = () => {
                     />
                   </div>
                   <div className="md:col-span-5 md:py-6 flex flex-col justify-center">
+                    <div className="mb-6">
+                      <p className="text-[10px] tracking-[0.35em] uppercase text-[#b9a06c] mb-3">
+                        {featured.category}
+                      </p>
+                      <div className="w-16 h-px bg-[#b9a06c]" />
+                    </div>
                     <h2 className="text-[1.65rem] md:text-3xl lg:text-[2.125rem] font-display font-normal leading-[1.18] tracking-[-0.005em] text-architectural mb-6 group-hover:text-foreground/75 transition-colors duration-500">
                       {featured.title}
                     </h2>

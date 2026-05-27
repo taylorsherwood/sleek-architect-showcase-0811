@@ -1,6 +1,8 @@
-import { useEffect, useState } from "react";
+import { ReactNode, useEffect, useState } from "react";
 import { fetchAgentIntel, formatLastUpdated, AgentIntelResponse } from "@/lib/agentIntel";
 import InsightCard from "./InsightCard";
+
+interface Props { standfirst?: ReactNode; interpretation?: ReactNode; id?: string }
 
 interface Row {
   name: string;

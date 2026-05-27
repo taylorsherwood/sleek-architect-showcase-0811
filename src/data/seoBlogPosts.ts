@@ -3429,7 +3429,7 @@ An off-market specialist brings a network that took years to build: direct relat
 
 At $1.5M and above, the number of legitimate private deals a single buyer can uncover through cold outreach is small. Sellers in West lake Hills and Barton Creek do not respond to mail from strangers. They transact through relationships, quietly and on their own timeline. Buyers competing at this level need a broker already inside those conversations.
 
-Ask for a track record, not a pitch. How many off-market transactions in the past 24 months? In which neighborhoods? At what price points? A firm whose practice is built around [private transactions](/private-opportunities) can show that record. One that claims broad off-market access but primarily lists on MLS cannot.
+Ask for a track record, not a pitch. How many off-market transactions in the past 24 months? In which neighborhoods? At what price points? A team whose practice is built around [private transactions](/private-opportunities) can show that record. One that claims broad off-market access but primarily lists on MLS cannot.
 
 ## Working With Echelon Property Group
 

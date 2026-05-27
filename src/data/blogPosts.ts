@@ -43,12 +43,12 @@ export const blogPosts: BlogPost[] = [
   {
     id: "how-echelon-property-group-approaches-austin-luxury-real-estate-differently",
     title: "How Echelon Property Group Approaches Austin Luxury Real Estate Differently",
-    metaTitle: "How Echelon Property Group Approaches Austin Luxury Real Estate Differently | Echelon Property Group",
-    excerpt: "Taylor Sherwood on how Echelon Property Group approaches Austin's luxury market differently — strategy, discretion, and access.",
+    metaTitle: "How Echelon Property Group Approaches Austin Luxury Real Estate Differently",
+    excerpt: "Discover how Echelon Property Group approaches Austin luxury real estate through hyper-local expertise, off-market access, privacy-first representation, and strategic advisory across Barton Creek, West Lake Hills, Rollingwood, and Austin's premier luxury neighborhoods.",
     author: "Taylor Sherwood",
     date: "2026-05-27",
     readTime: "8 min read",
-    category: "ADVISORY",
+    category: "AUSTIN LUXURY REAL ESTATE",
     image: blogEchelonApproach,
     heroImage: blogEchelonApproach,
     content: `

@@ -13,7 +13,7 @@ const AboutBlock = () => {
               <Link to="/" className="text-foreground hover:text-muted-foreground transition-colors duration-300">Echelon Property Group</Link> is an Austin Texas real estate team specializing in luxury homes, land development opportunities, and residential real estate throughout Austin's most desirable neighborhoods.
             </p>
             <p className="text-muted-foreground leading-relaxed text-sm">
-              The firm is led by Taylor Sherwood, a real estate professional focused on helping buyers, sellers, and investors navigate Austin's competitive housing market.
+              The team is led by Taylor Sherwood, a real estate professional focused on helping buyers, sellers, and investors navigate Austin's competitive housing market.
             </p>
             <p className="text-muted-foreground leading-relaxed text-sm">
               Echelon Property Group is proudly brokered by eXp Realty, one of the world's fastest-growing real estate brokerages. eXp's global network, advanced technology platform, and nationwide agent collaboration provide clients with access to broader market intelligence, stronger marketing exposure, and a wider pool of qualified buyers.

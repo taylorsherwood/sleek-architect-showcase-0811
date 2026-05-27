@@ -167,18 +167,18 @@ const Blog = () => {
                 to={featured.href || `/blog/${featured.id}`}
                 className="group block"
               >
-                <div className="grid md:grid-cols-12 gap-8 md:gap-14 items-center">
-                  <div className="md:col-span-7 relative aspect-[5/4] md:aspect-[4/3] overflow-hidden">
+                <div className="grid md:grid-cols-12 gap-8 md:gap-14 items-stretch">
+                  <div className="md:col-span-7 relative aspect-[4/5] md:aspect-auto md:min-h-[640px] overflow-hidden">
                     <img
                       src={featured.image}
                       alt={`${featured.title} - Austin luxury real estate insights`}
-                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.04]"
-                      style={{ objectPosition: "center 22%" }}
+                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.03]"
+                      style={{ objectPosition: "center top" }}
                       loading="eager"
                       decoding="async"
                     />
                   </div>
-                  <div className="md:col-span-5">
+                  <div className="md:col-span-5 md:py-6 flex flex-col justify-center">
                     <h2 className="text-[1.65rem] md:text-3xl lg:text-[2.125rem] font-display font-normal leading-[1.18] tracking-[-0.005em] text-architectural mb-6 group-hover:text-foreground/75 transition-colors duration-500">
                       {featured.title}
                     </h2>

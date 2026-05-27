@@ -321,7 +321,7 @@ Assess whether they genuinely understand Austin luxury buyer behavior and agent 
 
 The best luxury advisors combine market intelligence, discretion, network reach, and strategic positioning. At this level, representation is not simply about exposure. It is about judgment.
 
-Sellers comparing their options should understand the meaningful differences between [boutique luxury advisory firms and high-volume generalist teams](/blog/boutique-vs-large-luxury-real-estate-firms-austin) before making a decision.
+Sellers comparing their options should understand the meaningful differences between [boutique luxury advisory brokerages and high-volume generalist teams](/blog/boutique-vs-large-luxury-real-estate-firms-austin) before making a decision.
 
 ## Final Thoughts
 

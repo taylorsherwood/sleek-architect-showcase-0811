@@ -3442,7 +3442,7 @@ If you want to see what is moving privately in your target neighborhoods before 
 ## Frequently Asked Questions
 
 ### How do I find off market homes in Austin?
-Off-market homes in Austin are accessed through agent networks like the Austin Luxury Network, broker-only platforms such as Compass Private Exclusives, targeted direct outreach to homeowners using Travis County (TCAD) records, and by working with firms whose practice is built around private transactions. Public listing sites like Zillow only show a fraction of homes that actually trade.
+Off-market homes in Austin are accessed through agent networks like the Austin Luxury Network, broker-only platforms such as Compass Private Exclusives, targeted direct outreach to homeowners using Travis County (TCAD) records, and by working with teams whose practice is built around private transactions. Public listing sites like Zillow only show a fraction of homes that actually trade.
 
 ### What percentage of Austin luxury homes sell off-market?
 In Austin's luxury segment above $1.2M, reported figures suggest 40 to 45% of transactions happen off-market, particularly in West lake Hills, Barton Creek, and the Lake Austin corridor. Across all price tiers, industry estimates put private Austin transactions at roughly 48%, though no single source tracks this comprehensively.

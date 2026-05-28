@@ -29,6 +29,10 @@ interface Props {
   title?: string;
   /** Optional advisor commentary appended after the auto-generated headline. */
   commentary?: string;
+  /** Optional provenance note rendered beneath the period stamp. Use to
+   *  disclose when figures reflect a regional proxy rather than the named
+   *  micro-market (e.g. Southwest Austin standing in for Barton Creek). */
+  dataNote?: string;
 }
 
 const NAVY = "#0C0F24";

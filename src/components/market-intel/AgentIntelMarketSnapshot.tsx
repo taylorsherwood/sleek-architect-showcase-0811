@@ -170,6 +170,14 @@ function Sparkline({ points }: { points: Array<{ value: number }> }) {
         strokeDashoffset={totalLen}
         style={{ animation: "ei-spark-draw 1600ms cubic-bezier(0.22, 1, 0.36, 1) forwards" }}
       />
+      {/* Soft pulsing halo behind terminal dot */}
+      <circle
+        cx={tail.x}
+        cy={tail.y}
+        r={2.25}
+        fill={GOLD}
+        style={{ opacity: 0, transformOrigin: `${tail.x}px ${tail.y}px`, animation: "ei-spark-pulse 2400ms ease-out 2100ms infinite" }}
+      />
       <circle
         cx={tail.x}
         cy={tail.y}
@@ -180,6 +188,11 @@ function Sparkline({ points }: { points: Array<{ value: number }> }) {
       <style>{`
         @keyframes ei-spark-draw { to { stroke-dashoffset: 0; } }
         @keyframes ei-spark-dot { to { opacity: 1; } }
+        @keyframes ei-spark-pulse {
+          0%   { opacity: 0.55; transform: scale(1); }
+          70%  { opacity: 0;    transform: scale(4); }
+          100% { opacity: 0;    transform: scale(4); }
+        }
       `}</style>
     </svg>
   );

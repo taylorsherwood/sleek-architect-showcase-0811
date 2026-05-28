@@ -13,6 +13,10 @@ type Variant = "editorial" | "compact";
 interface Props {
   marketUuid?: string;
   marketName?: string;
+  /** Fallback market name used when the primary `marketName` resolves to no
+   *  AgentIntel record (e.g. ultra-luxury micro-markets that the upstream
+   *  feed indexes only at the metro or sub-metro level). */
+  fallbackMarketName?: string;
   /** Hero metric. Defaults to median_sales_price. */
   heroMetric?: string;
   /** Up to 3 supporting metrics. */

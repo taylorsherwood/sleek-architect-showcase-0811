@@ -1216,7 +1216,6 @@ body.hcs-immersive nav.fixed {
   100% { transform: translate(-50%, -50%) scale(3.2); opacity: 0;    }
 }
 .gauge-dot-pulse {
-  position: relative;
   isolation: isolate;
 }
 .gauge-dot-pulse::after {

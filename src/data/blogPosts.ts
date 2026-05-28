@@ -301,6 +301,9 @@ Two homes with similar square footage can trade millions apart depending on how 
 
 This is why pricing luxury property using simplistic price-per-square-foot comparisons often produces inaccurate conclusions.
 
+:::intel-rates
+:::
+
 ## Why Off-Market Inventory Matters
 
 A significant percentage of Austin luxury transactions occur privately.

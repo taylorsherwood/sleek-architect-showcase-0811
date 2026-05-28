@@ -119,13 +119,13 @@ const MarketIntelHero = ({ children }: { children: React.ReactNode }) => {
         aria-hidden="true"
       />
 
-      {/* Animated gold scroll cue */}
+      {/* Animated gold scroll cue — hidden on mobile to save vertical space */}
       <button
         onClick={() => {
           window.scrollTo({ top: window.innerHeight * 0.9, behavior: "smooth" });
         }}
         aria-label="Scroll to market intelligence"
-        className="hero-scroll-cue absolute bottom-3 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 group cursor-pointer z-[7]"
+        className="hero-scroll-cue absolute bottom-3 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-3 group cursor-pointer z-[7]"
       >
         <span
           className="group-hover:text-white transition-colors duration-500"

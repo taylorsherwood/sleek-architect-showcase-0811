@@ -100,41 +100,50 @@ function normalizeMarkets(raw: any) {
 }
 
 function normalizeMetrics(raw: any) {
-  // AgentIntel typically returns a series per metric. Keep raw available, plus
-  // a flattened convenience shape.
-  const series = raw?.metrics ?? raw?.data ?? raw?.series ?? raw ?? {};
-  const flat: Record<string, { latest: number | null; latest_date: string | null; points: Array<{ date: string; value: number }> }> = {};
+  // AgentIntel v0 returns `observations: [{ period_begin, period_end,
+  // <metric>: { value, formatted, short }, ... }]`. We pivot that into a
+  // per-metric time series so the frontend never needs to know the shape.
+  const flat: Record<string, { latest: number | null; latest_date: string | null; latest_formatted: string | null; points: Array<{ date: string; value: number; formatted?: string }> }> = {};
 
-  const collect = (key: string, points: any[]) => {
-    const norm = (points || [])
-      .map((p) => ({
-        date: p.date ?? p.period ?? p.month ?? p.t ?? "",
-        value: typeof p.value === "number" ? p.value : (typeof p.v === "number" ? p.v : Number(p.value ?? p.v ?? NaN)),
-      }))
-      .filter((p) => p.date && Number.isFinite(p.value));
-    const last = norm[norm.length - 1];
-    flat[key] = {
-      latest: last?.value ?? null,
-      latest_date: last?.date ?? null,
-      points: norm,
-    };
-  };
+  const observations: any[] = Array.isArray(raw?.observations)
+    ? raw.observations
+    : Array.isArray(raw?.data?.observations)
+      ? raw.data.observations
+      : Array.isArray(raw)
+        ? raw
+        : [];
 
-  if (Array.isArray(series)) {
-    // Shape: [{ metric: "median_sales_price", points: [...] }]
-    for (const entry of series) {
-      const name = entry?.metric ?? entry?.name;
-      const pts = entry?.points ?? entry?.values ?? entry?.data ?? [];
-      if (name) collect(String(name), pts);
-    }
-  } else if (series && typeof series === "object") {
-    for (const [k, v] of Object.entries(series)) {
-      if (Array.isArray(v)) collect(k, v as any[]);
-      else if (v && typeof v === "object" && Array.isArray((v as any).points)) collect(k, (v as any).points);
+  // Sort oldest → newest so `latest` is the last entry.
+  const sorted = [...observations].sort((a, b) => {
+    const da = String(a?.period_end ?? a?.period_begin ?? a?.date ?? "");
+    const db = String(b?.period_end ?? b?.period_begin ?? b?.date ?? "");
+    return da < db ? -1 : da > db ? 1 : 0;
+  });
+
+  for (const obs of sorted) {
+    const date = String(obs?.period_end ?? obs?.period_begin ?? obs?.date ?? "");
+    if (!date) continue;
+    for (const [key, val] of Object.entries(obs)) {
+      if (key === "period_begin" || key === "period_end" || key === "date") continue;
+      let value: number | null = null;
+      let formatted: string | undefined;
+      if (val && typeof val === "object" && "value" in (val as any)) {
+        const n = Number((val as any).value);
+        value = Number.isFinite(n) ? n : null;
+        formatted = (val as any).formatted ?? (val as any).short;
+      } else if (typeof val === "number") {
+        value = val;
+      }
+      if (value == null) continue;
+      if (!flat[key]) flat[key] = { latest: null, latest_date: null, latest_formatted: null, points: [] };
+      flat[key].points.push({ date, value, formatted });
+      flat[key].latest = value;
+      flat[key].latest_date = date;
+      flat[key].latest_formatted = formatted ?? null;
     }
   }
 
-  return { metrics: flat, raw };
+  return { metrics: flat, market: raw?.market ?? null, attribution: raw?.attribution ?? null };
 }
 
 // ---------------------------------------------------------------------------

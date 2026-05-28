@@ -10,6 +10,7 @@ import LuxuryMarketInsights from "@/components/market-intel/LuxuryMarketInsights
 import AgentIntelMarketSnapshot from "@/components/market-intel/AgentIntelMarketSnapshot";
 import RatesAffordability from "@/components/market-intel/RatesAffordability";
 import IntelligenceRoadmap from "@/components/market-intel/IntelligenceRoadmap";
+import MarketIntelHero from "@/components/market-intel/MarketIntelHero";
 
 const Footer = lazy(() => import("@/components/Footer"));
 
@@ -107,29 +108,23 @@ const MarketIntelligence = () => {
       />
 
       <Navigation />
-      <div className="h-12 md:h-20" aria-hidden="true" />
-
-      {/* Hero */}
-      <section className="pt-24 pb-6 md:pb-8">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <p className="text-minimal text-gold mb-4 tracking-[0.28em] font-semibold uppercase text-[0.7rem]">
-              Market Intelligence Briefing
-            </p>
-            <h1 className="text-4xl md:text-[3.25rem] font-display font-normal text-architectural mb-6 leading-[1.1]">
-              Austin Real Estate, Read by Advisors
-            </h1>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              A continuously updated read on Austin's residential and luxury market, interpreted with the
-              same discipline we bring to private client work. Built for buyers, sellers, and investors
-              who require precision over noise.
-            </p>
-            <p className="mt-5 text-[0.7rem] tracking-[0.22em] uppercase text-muted-foreground/80">
-              UPDATED DAILY USING ABOR MLS, PRIVATE MARKET INTELLIGENCE, AND LUXURY MARKET TREND ANALYSIS
-            </p>
-          </div>
-        </div>
-      </section>
+      {/* Hero — atmospheric cinematic media behind editorial copy */}
+      <MarketIntelHero>
+        <p className="mb-4 tracking-[0.28em] font-semibold uppercase text-[0.7rem]" style={{ color: "#b9a06c" }}>
+          Market Intelligence Briefing
+        </p>
+        <h1 className="text-4xl md:text-[3.25rem] font-display font-normal mb-6 leading-[1.1]" style={{ color: "#f5f3ef" }}>
+          Austin Real Estate, Read by Advisors
+        </h1>
+        <p className="text-lg leading-relaxed" style={{ color: "rgba(245,243,239,0.82)" }}>
+          A continuously updated read on Austin's residential and luxury market, interpreted with the
+          same discipline we bring to private client work. Built for buyers, sellers, and investors
+          who require precision over noise.
+        </p>
+        <p className="mt-6 text-[0.7rem] tracking-[0.22em] uppercase" style={{ color: "rgba(245,243,239,0.55)" }}>
+          UPDATED DAILY USING ABOR MLS, PRIVATE MARKET INTELLIGENCE, AND LUXURY MARKET TREND ANALYSIS
+        </p>
+      </MarketIntelHero>
 
       {/* Flagship — Austin Market Pulse (AgentIntel, editorial centerpiece) */}
       <section aria-labelledby="austin-pulse-heading" className="container mx-auto px-6">

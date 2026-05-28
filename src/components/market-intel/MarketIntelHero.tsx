@@ -87,9 +87,9 @@ const MarketIntelHero = ({ children }: { children: React.ReactNode }) => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 pt-36 pb-20 md:pt-44 md:pb-28">
+      <div className="relative z-10 pt-28 pb-14 md:pt-32 md:pb-16">
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center text-[#f5f3ef]">
+          <div className="max-w-5xl mx-auto text-center text-[#f5f3ef]">
             {children}
           </div>
         </div>

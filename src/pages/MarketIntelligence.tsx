@@ -318,6 +318,11 @@ const MarketIntelligence = () => {
         </div>
       </section>
 
+      {/* Intelligence Roadmap — restrained preview of forthcoming editions */}
+      <section aria-labelledby="intelligence-roadmap" className="container mx-auto px-6">
+        <IntelligenceRoadmap />
+      </section>
+
       {/* Internal linking + Further reading */}
       <section className="py-16 md:py-20 bg-[#faf9f6] dark:bg-[hsl(38_15%_12%/0.3)] border-y border-border/50" aria-labelledby="further-reading">
         <div className="container mx-auto px-6">

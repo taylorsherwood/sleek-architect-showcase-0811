@@ -37,10 +37,10 @@ const MarketIntelHero = ({ children }: { children: React.ReactNode }) => {
         {useVideo ? (
           <video
             ref={videoRef}
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover hero-video-drift"
             style={{
               objectPosition: "center top",
-              filter: "saturate(0.7) brightness(0.88) contrast(1.08)",
+              filter: "saturate(0.78) brightness(0.9) contrast(1.14)",
             }}
             poster={POSTER_URL}
             autoPlay
@@ -51,6 +51,7 @@ const MarketIntelHero = ({ children }: { children: React.ReactNode }) => {
           >
             <source src={VIDEO_URL} type="video/mp4" />
           </video>
+
         ) : (
           <img
             src={POSTER_URL}

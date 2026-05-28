@@ -13,6 +13,10 @@ type Variant = "editorial" | "compact";
 interface Props {
   marketUuid?: string;
   marketName?: string;
+  /** Fallback market name used when the primary `marketName` resolves to no
+   *  AgentIntel record (e.g. ultra-luxury micro-markets that the upstream
+   *  feed indexes only at the metro or sub-metro level). */
+  fallbackMarketName?: string;
   /** Hero metric. Defaults to median_sales_price. */
   heroMetric?: string;
   /** Up to 3 supporting metrics. */
@@ -180,6 +184,7 @@ function Sparkline({ points }: { points: Array<{ value: number }> }) {
 export const AgentIntelMarketSnapshot = ({
   marketUuid,
   marketName,
+  fallbackMarketName,
   heroMetric = DEFAULT_HERO,
   supportingMetrics = DEFAULT_SUPPORTING,
   duration = "1_month",
@@ -209,11 +214,17 @@ export const AgentIntelMarketSnapshot = ({
           if (!live) return;
           setData(res);
         } else if (marketName) {
-          const { market: m, data: res } = await fetchMetricsByMarketName(marketName, requested, duration);
+          let { market: m, data: res } = await fetchMetricsByMarketName(marketName, requested, duration);
+          // Graceful fallback for micro-markets the upstream feed doesn't index.
+          if ((!m || !res) && fallbackMarketName) {
+            const fb = await fetchMetricsByMarketName(fallbackMarketName, requested, duration);
+            m = fb.market;
+            res = fb.data;
+          }
           if (!live) return;
           setMarket(m);
           setData(res);
-          if (!m) setError("Market intelligence for this area is being curated.");
+          if (!m || !res) setError("Market intelligence for this area is being curated.");
         } else {
           setError("No market specified.");
         }
@@ -224,7 +235,7 @@ export const AgentIntelMarketSnapshot = ({
       }
     })();
     return () => { live = false; };
-  }, [marketUuid, marketName, duration, requested.join(",")]);
+  }, [marketUuid, marketName, fallbackMarketName, duration, requested.join(",")]);
 
   const series = data?.metrics ?? {};
   const hero = series[heroMetric];

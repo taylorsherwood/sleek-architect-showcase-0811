@@ -395,17 +395,22 @@ const CommunityPage = () => {
           </div>
           <Suspense fallback={<div className="min-h-[320px]" />}>
             <AgentIntelMarketSnapshot
-              marketName={community.name}
-              eyebrow={`${community.name} Market Pulse`}
-              title={`${community.name} · Private Market Brief`}
+              // AgentIntel's v0 feed does not index Barton Creek as a
+              // standalone market. We resolve to the nearest indexed
+              // sub-metro (Southwest Austin) and override the display title
+              // so the brief still reads as a localized Barton Creek piece.
+              marketName="Southwest Austin"
+              fallbackMarketName="Austin Metro"
+              eyebrow="Barton Creek Market Pulse"
+              title="Barton Creek · Private Market Brief"
               heroMetric="median_sales_price"
               supportingMetrics={[
                 "months_of_inventory",
                 "median_days_on_market",
                 "sales_to_list_ratio",
               ]}
-              duration="3_month"
-              commentary={`Inventory inside the gates remains structurally thin, and qualified buyers continue to compete for a narrow band of trophy positions. Pricing has held firm at the upper tier, with negotiation leverage favoring well-prepared sellers on architecturally distinct estates. A meaningful share of ${community.name} activity is transacted privately — never reaching public inventory — which continues to compress visible supply and reward relationship-led access.`}
+              duration="1_month"
+              commentary="Inventory inside the gates remains structurally thin, and qualified buyers continue to compete for a narrow band of trophy positions. Pricing has held firm at the upper tier, with negotiation leverage favoring well-prepared sellers on architecturally distinct estates. A meaningful share of Barton Creek activity is transacted privately — never reaching public inventory — which continues to compress visible supply and reward relationship-led access."
             />
           </Suspense>
           <div className="container mx-auto px-6 pb-6 md:pb-10">

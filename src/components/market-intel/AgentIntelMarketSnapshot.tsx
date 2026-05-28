@@ -279,7 +279,9 @@ export const AgentIntelMarketSnapshot = ({
 
   // ---------------- Editorial variant (default) ----------------
   const supporting = supportingMetrics.slice(0, 3);
-  const deltaPct = delta != null ? `${delta >= 0 ? "+" : "−"}${Math.abs(delta * 100).toFixed(1)}%` : null;
+  const deltaPct = delta != null && Math.abs(delta) >= 0.001
+    ? `${delta >= 0 ? "+" : "−"}${Math.abs(delta * 100).toFixed(1)}%`
+    : null;
 
   return (
     <section

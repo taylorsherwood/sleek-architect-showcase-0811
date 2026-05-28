@@ -37,7 +37,7 @@ const MarketIntelHero = ({ children }: { children: React.ReactNode }) => {
         {useVideo ? (
           <video
             ref={videoRef}
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover object-top"
             style={{
               filter: "saturate(0.55) brightness(0.72) contrast(0.95)",
             }}
@@ -54,7 +54,7 @@ const MarketIntelHero = ({ children }: { children: React.ReactNode }) => {
           <img
             src={POSTER_URL}
             alt=""
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover object-top"
             style={{ filter: "saturate(0.55) brightness(0.72) contrast(0.95)" }}
             loading="eager"
           />

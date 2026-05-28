@@ -148,7 +148,7 @@ function Sparkline({ points }: { points: Array<{ value: number }> }) {
   return (
     <svg
       viewBox={`0 0 ${w} ${h}`}
-      className="w-full h-16 md:h-20"
+      className="w-full h-14 md:h-20"
       preserveAspectRatio="none"
       aria-hidden
     >
@@ -168,7 +168,7 @@ function Sparkline({ points }: { points: Array<{ value: number }> }) {
         strokeLinejoin="round"
         strokeDasharray={totalLen}
         strokeDashoffset={totalLen}
-        style={{ animation: "ei-spark-draw 1600ms cubic-bezier(0.22, 1, 0.36, 1) forwards" }}
+        style={{ animation: "ei-spark-draw 1200ms cubic-bezier(0.22, 1, 0.36, 1) forwards" }}
       />
       {/* Soft pulsing halo behind terminal dot */}
       <circle
@@ -176,14 +176,14 @@ function Sparkline({ points }: { points: Array<{ value: number }> }) {
         cy={tail.y}
         r={2.25}
         fill={GOLD}
-        style={{ opacity: 0, transformOrigin: `${tail.x}px ${tail.y}px`, animation: "ei-spark-pulse 2400ms ease-out 1800ms infinite" }}
+        style={{ opacity: 0, transformOrigin: `${tail.x}px ${tail.y}px`, animation: "ei-spark-pulse 2400ms ease-out 1500ms infinite" }}
       />
       <circle
         cx={tail.x}
         cy={tail.y}
         r={2.25}
         fill={GOLD}
-        style={{ opacity: 0, animation: "ei-spark-dot 400ms ease-out 1600ms forwards" }}
+        style={{ opacity: 0, animation: "ei-spark-dot 400ms ease-out 1200ms forwards" }}
       />
       <style>{`
         @keyframes ei-spark-draw { to { stroke-dashoffset: 0; } }

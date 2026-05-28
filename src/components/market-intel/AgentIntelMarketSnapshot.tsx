@@ -298,13 +298,13 @@ export const AgentIntelMarketSnapshot = ({
 
   return (
     <section
-      className="relative pt-4 md:pt-8 pb-12 md:pb-16"
+      className="relative pt-2 md:pt-8 pb-10 md:pb-16"
       aria-label={`${displayTitle} market briefing`}
     >
-      {/* Atmospheric wash — ultra-subtle, never reads as a "card" */}
+      {/* Atmospheric wash — ultra-subtle, never reads as a "card"; suppressed on mobile */}
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[420px] md:h-[560px]"
+        className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[420px] md:h-[560px] hidden md:block"
         style={{
           background:
             "radial-gradient(60% 70% at 50% 18%, rgba(12,15,36,0.045) 0%, rgba(12,15,36,0.018) 38%, rgba(12,15,36,0) 72%)",
@@ -313,28 +313,28 @@ export const AgentIntelMarketSnapshot = ({
 
       <div className="max-w-5xl mx-auto px-2 md:px-0">
         {/* Editorial masthead — folio numeral + eyebrow */}
-        <div className="mb-8 md:mb-10 text-center">
+        <div className="mb-5 md:mb-10 text-center">
           <p
-            className="text-[0.6rem] tracking-[0.46em] uppercase"
+            className="text-[0.58rem] md:text-[0.6rem] tracking-[0.32em] md:tracking-[0.46em] uppercase"
             style={{ color: GOLD }}
           >
-            <span className="font-display italic normal-case tracking-normal mr-3" style={{ fontSize: "0.95em" }}>
+            <span className="font-display italic normal-case tracking-normal mr-2 md:mr-3" style={{ fontSize: "0.95em" }}>
               No. I
             </span>
             <span aria-hidden style={{ color: `${NAVY}55` }}>·</span>
-            <span className="ml-3">{eyebrow}</span>
+            <span className="ml-2 md:ml-3">{eyebrow}</span>
           </p>
         </div>
-        <header className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
+        <header className="text-center max-w-3xl mx-auto mb-7 md:mb-14">
 
           <h2
             className="font-display font-light leading-[1.04] tracking-tight"
-            style={{ color: NAVY, fontSize: "clamp(1.85rem, 3.6vw, 2.75rem)" }}
+            style={{ color: NAVY, fontSize: "clamp(1.6rem, 6.5vw, 2.75rem)" }}
           >
             {displayTitle}
           </h2>
           {periodLabel && !loading && !error && (
-            <p className="mt-6 text-[0.6rem] tracking-[0.4em] uppercase text-muted-foreground/75">
+            <p className="mt-4 md:mt-6 text-[0.55rem] md:text-[0.6rem] tracking-[0.28em] md:tracking-[0.4em] uppercase text-muted-foreground/75">
               Advisory Brief · {periodLabel}
             </p>
           )}

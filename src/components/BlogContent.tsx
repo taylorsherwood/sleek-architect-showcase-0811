@@ -379,10 +379,10 @@ const BlogContent = ({ content, afterGlance }: BlogContentProps) => {
             return (
               <IntelInsert key={idx}>
                 <MarketBalanceGauge
-                  communityName="Austin Luxury"
-                  marketName="West Austin"
-                  fallbackMarketName="Austin Metro"
-                  eyebrow="Austin Luxury · Buyer / Seller Balance"
+                  communityName="Austin Metro Residential $2M+"
+                  marketName="Austin Metro"
+                  fallbackMarketName="West Austin"
+                  eyebrow="Austin Metro Residential · $2M+ · Buyer / Seller Balance"
                 />
               </IntelInsert>
             );

@@ -49,34 +49,30 @@ const MODULES: PlannedModule[] = [
 export const IntelligenceRoadmap = () => {
   return (
     <section
-      className="relative pt-16 md:pt-24 pb-20 md:pb-28"
+      className="relative pt-10 md:pt-14 pb-12 md:pb-16"
       aria-label="Intelligence roadmap"
     >
       <div className="max-w-5xl mx-auto px-2 md:px-0">
         {/* Masthead */}
-        <div className="flex flex-col items-center mb-14 md:mb-20">
-          <span
-            aria-hidden
-            className="block w-px h-12 md:h-20"
-            style={{ background: `linear-gradient(to bottom, rgba(12,15,36,0) 0%, rgba(12,15,36,0.22) 100%)` }}
-          />
+        <div className="text-center mb-8 md:mb-10">
           <p
-            className="mt-5 text-[0.6rem] tracking-[0.46em] uppercase"
+            className="text-[0.6rem] tracking-[0.46em] uppercase"
             style={{ color: GOLD }}
           >
             Intelligence Roadmap
           </p>
           <h2
-            className="mt-6 text-center font-display font-light leading-[1.06] tracking-tight max-w-2xl mx-auto"
+            className="mt-5 font-display font-light leading-[1.06] tracking-tight max-w-2xl mx-auto"
             style={{ color: NAVY, fontSize: "clamp(1.5rem, 2.6vw, 2rem)" }}
           >
             Forthcoming Editions
           </h2>
-          <p className="mt-5 text-center max-w-xl mx-auto text-sm md:text-[0.95rem] text-foreground/70 leading-relaxed">
+          <p className="mt-4 max-w-xl mx-auto text-sm md:text-[0.95rem] text-foreground/70 leading-relaxed">
             Modules planned for release across the coming quarters. Each is being
             developed to support advisory interpretation, not dashboard consumption.
           </p>
         </div>
+
 
         <ol className="max-w-3xl mx-auto">
           {MODULES.map((m, i) => (

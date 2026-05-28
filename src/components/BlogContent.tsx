@@ -146,7 +146,7 @@ const renderMarkdownBody = (body: string): string => {
 };
 
 interface Block {
-  type: "markdown" | "glance" | "best-for" | "watch-out" | "micro-cta" | "cta" | "faq";
+  type: "markdown" | "glance" | "best-for" | "watch-out" | "micro-cta" | "cta" | "faq" | "intel-pulse" | "intel-gauge" | "intel-rates";
   body: string;
 }
 

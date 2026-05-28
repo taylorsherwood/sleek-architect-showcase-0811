@@ -266,30 +266,54 @@ export const AgentIntelMarketSnapshot = ({
   const deltaPct = delta != null ? `${delta >= 0 ? "+" : "−"}${Math.abs(delta * 100).toFixed(1)}%` : null;
 
   return (
-    <section className="py-20 md:py-32" aria-label={`${displayTitle} market briefing`}>
+    <section
+      className="relative pt-6 md:pt-10 pb-20 md:pb-32"
+      aria-label={`${displayTitle} market briefing`}
+    >
+      {/* Atmospheric wash — ultra-subtle, never reads as a "card" */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[420px] md:h-[560px]"
+        style={{
+          background:
+            "radial-gradient(60% 70% at 50% 18%, rgba(12,15,36,0.045) 0%, rgba(12,15,36,0.018) 38%, rgba(12,15,36,0) 72%)",
+        }}
+      />
+
       <div className="max-w-5xl mx-auto px-2 md:px-0">
-        {/* Editorial masthead — rule + eyebrow + folio */}
-        <div className="flex items-center gap-6 mb-12 md:mb-16">
-          <span aria-hidden className="h-px flex-1" style={{ background: `${NAVY}1f` }} />
-          <p className="text-[0.65rem] tracking-[0.42em] uppercase whitespace-nowrap" style={{ color: GOLD }}>
-            {eyebrow}
+        {/* Editorial masthead — folio numeral over a single hairline descender */}
+        <div className="flex flex-col items-center mb-14 md:mb-20">
+          <span
+            aria-hidden
+            className="block w-px h-16 md:h-24"
+            style={{ background: `linear-gradient(to bottom, rgba(12,15,36,0) 0%, rgba(12,15,36,0.22) 100%)` }}
+          />
+          <p
+            className="mt-5 text-[0.6rem] tracking-[0.46em] uppercase"
+            style={{ color: GOLD }}
+          >
+            <span className="font-display italic normal-case tracking-normal mr-3" style={{ fontSize: "0.95em" }}>
+              No. I
+            </span>
+            <span aria-hidden style={{ color: `${NAVY}55` }}>·</span>
+            <span className="ml-3">{eyebrow}</span>
           </p>
-          <span aria-hidden className="h-px flex-1" style={{ background: `${NAVY}1f` }} />
         </div>
 
-        <header className="text-center max-w-3xl mx-auto mb-16 md:mb-24">
+        <header className="text-center max-w-3xl mx-auto mb-20 md:mb-28">
           <h2
-            className="font-display font-normal leading-[1.05] tracking-tight"
-            style={{ color: NAVY, fontSize: "clamp(1.75rem, 3.4vw, 2.5rem)" }}
+            className="font-display font-light leading-[1.04] tracking-tight"
+            style={{ color: NAVY, fontSize: "clamp(1.85rem, 3.6vw, 2.75rem)" }}
           >
             {displayTitle}
           </h2>
           {periodLabel && !loading && !error && (
-            <p className="mt-5 text-[0.62rem] tracking-[0.36em] uppercase text-muted-foreground/80">
+            <p className="mt-6 text-[0.6rem] tracking-[0.4em] uppercase text-muted-foreground/75">
               Advisory Brief · {periodLabel}
             </p>
           )}
         </header>
+
 
         {loading && (
           <div className="space-y-8 animate-pulse max-w-3xl mx-auto">

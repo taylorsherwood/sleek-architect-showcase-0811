@@ -40,7 +40,7 @@ const MarketIntelHero = ({ children }: { children: React.ReactNode }) => {
             className="absolute inset-0 w-full h-full object-cover"
             style={{
               objectPosition: "center top",
-              filter: "saturate(0.55) brightness(0.72) contrast(0.95)",
+              filter: "saturate(0.6) brightness(0.82) contrast(0.95)",
             }}
             poster={POSTER_URL}
             autoPlay

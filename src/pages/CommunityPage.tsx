@@ -379,6 +379,16 @@ const CommunityPage = () => {
         </div>
       </article>
 
+      {/* Buyer / Seller Market Balance — rendered on every community page as
+          the entry point to the intelligence module. Falls back gracefully to
+          regional proxy data when the micro-market isn't indexed upstream. */}
+      <Suspense fallback={<div className="min-h-[280px]" />}>
+        <MarketBalanceGauge
+          communityName={community.name}
+          slug={community.slug}
+        />
+      </Suspense>
+
       {/* Editorial AgentIntel market pulse — a localized extension of
           /market-intelligence for ultra-luxury opt-in markets. Restrained,
           private-brief composition; no dashboard grids. */}

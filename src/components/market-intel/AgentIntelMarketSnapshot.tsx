@@ -25,30 +25,37 @@ interface Props {
 const DEFAULT_METRICS = [
   "median_sales_price",
   "median_days_on_market",
-  "months_of_supply",
-  "closed_sales",
-  "new_listings",
+  "months_of_inventory",
+  "sold_count",
+  "new_listings_count",
 ];
 
-const METRIC_META: Record<string, { label: string; format: "money" | "number" | "decimal" | "days" }> = {
+const METRIC_META: Record<string, { label: string; format: "money" | "number" | "decimal" | "days" | "percent" }> = {
   median_sales_price: { label: "Median Sales Price", format: "money" },
   median_list_price: { label: "Median List Price", format: "money" },
+  median_sales_ppsf: { label: "Median $/Sq Ft", format: "money" },
+  median_list_ppsf: { label: "List $/Sq Ft", format: "money" },
   median_days_on_market: { label: "Median Days on Market", format: "days" },
-  avg_days_on_market: { label: "Avg Days on Market", format: "days" },
-  months_of_supply: { label: "Months of Supply", format: "decimal" },
-  closed_sales: { label: "Closed Sales", format: "number" },
-  new_listings: { label: "New Listings", format: "number" },
-  active_listings: { label: "Active Listings", format: "number" },
-  sale_to_list_ratio: { label: "Sale-to-List", format: "decimal" },
+  months_of_inventory: { label: "Months of Inventory", format: "decimal" },
+  sold_count: { label: "Homes Sold", format: "number" },
+  new_listings_count: { label: "New Listings", format: "number" },
+  active_listings_count: { label: "Active Listings", format: "number" },
+  pending_listings_count: { label: "Pending", format: "number" },
+  sales_to_list_ratio: { label: "Sale-to-List", format: "percent" },
+  sold_above_list_rate: { label: "Sold Above List", format: "percent" },
+  price_drop_rate: { label: "Price Drop Rate", format: "percent" },
+  appreciation: { label: "Appreciation (YoY)", format: "percent" },
 };
 
-function formatValue(metricKey: string, v: number | null): string {
+function formatValue(metricKey: string, v: number | null, formatted?: string | null): string {
+  if (formatted) return formatted;
   if (v == null || !Number.isFinite(v)) return "—";
   const meta = METRIC_META[metricKey];
   switch (meta?.format) {
     case "money": return `$${Math.round(v).toLocaleString()}`;
     case "days": return `${Math.round(v)}`;
     case "decimal": return v.toFixed(1);
+    case "percent": return `${(v * 100).toFixed(1)}%`;
     case "number":
     default: return Math.round(v).toLocaleString();
   }

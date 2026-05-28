@@ -395,7 +395,7 @@ const CommunityPage = () => {
               "sales_to_list_ratio",
             ]}
             duration="1_month"
-            commentary="Inventory inside the gates remains structurally thin, and qualified buyers continue to compete for a narrow band of trophy positions. Pricing has held firm at the upper tier, with negotiation leverage favoring well-prepared sellers on architecturally distinct estates. A meaningful share of Barton Creek activity is transacted privately — never reaching public inventory — which continues to compress visible supply and reward relationship-led access."
+            commentary="Inventory inside the gates remains structurally thin, and qualified buyers continue to compete for a narrow band of trophy positions. Pricing has held firm at the upper tier, with negotiation leverage favoring well-prepared sellers on architecturally distinct estates. A meaningful share of Barton Creek activity is transacted privately, never reaching public inventory, which continues to compress visible supply and reward relationship-led access."
           />
         </Suspense>
       )}

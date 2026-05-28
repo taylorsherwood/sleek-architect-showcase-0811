@@ -138,7 +138,7 @@ const MarketIntelligence = () => {
           heroMetric="median_sales_price"
           supportingMetrics={["median_days_on_market", "months_of_inventory", "sales_to_list_ratio"]}
           duration="1_month"
-          commentary="Upper-tier activity continues to compound disproportionately. Pricing discipline above $1.5M remains intact; buyer selectivity above $3M is sharpening — a market rewarding patience, position, and access."
+          commentary="Upper-tier activity continues to compound disproportionately. Pricing discipline above $1.5M remains intact; buyer selectivity above $3M is sharpening, a market rewarding patience, position, and access."
         />
       </section>
 

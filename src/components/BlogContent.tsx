@@ -1,6 +1,16 @@
-import type { ReactNode } from "react";
+import { lazy, Suspense, type ReactNode } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+
+const AgentIntelMarketSnapshot = lazy(
+  () => import("@/components/market-intel/AgentIntelMarketSnapshot"),
+);
+const MarketBalanceGauge = lazy(
+  () => import("@/components/market-intel/MarketBalanceGauge"),
+);
+const RatesAffordability = lazy(
+  () => import("@/components/market-intel/RatesAffordability"),
+);
 
 interface BlogContentProps {
   content: string;

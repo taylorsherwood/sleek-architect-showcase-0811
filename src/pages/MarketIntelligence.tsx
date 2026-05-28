@@ -7,6 +7,7 @@ import MarketPulse from "@/components/market-intel/MarketPulse";
 import NeighborhoodStats from "@/components/market-intel/NeighborhoodStats";
 import InventoryTrends from "@/components/market-intel/InventoryTrends";
 import LuxuryMarketInsights from "@/components/market-intel/LuxuryMarketInsights";
+import AgentIntelMarketSnapshot from "@/components/market-intel/AgentIntelMarketSnapshot";
 
 const Footer = lazy(() => import("@/components/Footer"));
 

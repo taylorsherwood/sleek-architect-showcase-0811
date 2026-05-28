@@ -40,7 +40,7 @@ const MarketIntelHero = ({ children }: { children: React.ReactNode }) => {
             className="absolute inset-0 w-full h-full object-cover"
             style={{
               objectPosition: "center top",
-              filter: "saturate(0.55) brightness(0.72) contrast(0.95)",
+              filter: "saturate(0.6) brightness(0.82) contrast(0.95)",
             }}
             poster={POSTER_URL}
             autoPlay
@@ -66,14 +66,14 @@ const MarketIntelHero = ({ children }: { children: React.ReactNode }) => {
           className="absolute inset-0 md:hidden"
           style={{
             background:
-              "linear-gradient(180deg, rgba(12,15,36,0.72) 0%, rgba(12,15,36,0.55) 50%, rgba(12,15,36,0.78) 100%)",
+              "linear-gradient(180deg, rgba(12,15,36,0.58) 0%, rgba(12,15,36,0.4) 50%, rgba(12,15,36,0.62) 100%)",
           }}
         />
         <div
           className="absolute inset-0 hidden md:block"
           style={{
             background:
-              "linear-gradient(180deg, rgba(12,15,36,0.62) 0%, rgba(12,15,36,0.48) 45%, rgba(12,15,36,0.72) 100%)",
+              "linear-gradient(180deg, rgba(12,15,36,0.46) 0%, rgba(12,15,36,0.32) 45%, rgba(12,15,36,0.56) 100%)",
           }}
         />
         {/* Subtle ivory haze for warmth — desktop only, mobile keeps it cleaner */}

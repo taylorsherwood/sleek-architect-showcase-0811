@@ -1,1 +1,4 @@
 project_id = "ouerzfsimnfqkrmtired"
+
+[functions.rates-affordability]
+verify_jwt = false

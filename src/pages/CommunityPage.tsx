@@ -13,6 +13,7 @@ import Navigation from "@/components/Navigation";
 const GATED_REPORT_SLUGS = new Set<string>(["westlake-hills"]);
 const Footer = lazy(() => import("@/components/Footer"));
 const AgentIntelMarketSnapshot = lazy(() => import("@/components/market-intel/AgentIntelMarketSnapshot"));
+const MarketBalanceGauge = lazy(() => import("@/components/market-intel/MarketBalanceGauge"));
 
 // Slugs that receive the editorial AgentIntel market pulse module, a
 // localized extension of /market-intelligence. Kept as a set so additional
@@ -377,6 +378,16 @@ const CommunityPage = () => {
           </div>
         </div>
       </article>
+
+      {/* Buyer / Seller Market Balance — rendered on every community page as
+          the entry point to the intelligence module. Falls back gracefully to
+          regional proxy data when the micro-market isn't indexed upstream. */}
+      <Suspense fallback={<div className="min-h-[280px]" />}>
+        <MarketBalanceGauge
+          communityName={community.name}
+          slug={community.slug}
+        />
+      </Suspense>
 
       {/* Editorial AgentIntel market pulse — a localized extension of
           /market-intelligence for ultra-luxury opt-in markets. Restrained,

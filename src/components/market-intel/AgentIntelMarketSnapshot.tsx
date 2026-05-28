@@ -385,12 +385,7 @@ export const AgentIntelMarketSnapshot = ({
 
             {/* Editorial commentary — pull-quote treatment */}
             {(narrative || commentary) && (
-              <figure className="mt-20 md:mt-28 max-w-2xl mx-auto text-center">
-                <span
-                  aria-hidden
-                  className="block mx-auto h-px w-12 mb-8"
-                  style={{ background: GOLD }}
-                />
+              <figure className="mt-10 md:mt-14 max-w-2xl mx-auto text-center">
                 <blockquote
                   className="font-light italic leading-[1.55] normal-case"
                   style={{ color: NAVY, fontSize: "clamp(1rem, 1.35vw, 1.2rem)", textTransform: "none", fontVariant: "normal" }}
@@ -402,7 +397,7 @@ export const AgentIntelMarketSnapshot = ({
 
             {/* Supporting figures — column rule, no boxes */}
             {supporting.length > 0 && (
-              <dl className="mt-20 md:mt-28 grid grid-cols-1 md:grid-cols-3 max-w-4xl mx-auto">
+              <dl className="mt-10 md:mt-14 grid grid-cols-1 md:grid-cols-3 max-w-4xl mx-auto">
                 {supporting.map((k, i) => {
                   const s = series[k];
                   return (
@@ -435,7 +430,7 @@ export const AgentIntelMarketSnapshot = ({
         )}
 
         {/* Colophon */}
-        <div className="mt-20 md:mt-28 flex items-center gap-6">
+        <div className="mt-12 md:mt-16 flex items-center gap-6">
           <span aria-hidden className="h-px flex-1" style={{ background: `${NAVY}14` }} />
           <p className="text-[0.55rem] tracking-[0.36em] uppercase text-muted-foreground/70 whitespace-nowrap">
             Source · AgentIntel{data?.attribution ? ` · ${data.attribution}` : ""}
@@ -443,6 +438,7 @@ export const AgentIntelMarketSnapshot = ({
           <span aria-hidden className="h-px flex-1" style={{ background: `${NAVY}14` }} />
         </div>
       </div>
+
     </section>
   );
 };

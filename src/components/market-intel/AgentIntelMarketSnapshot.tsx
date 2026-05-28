@@ -196,6 +196,7 @@ export const AgentIntelMarketSnapshot = ({
   eyebrow = "Market Intelligence",
   title,
   commentary,
+  dataNote,
 }: Props) => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);

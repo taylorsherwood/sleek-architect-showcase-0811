@@ -190,9 +190,9 @@ function Gauge({ score, label }: { score: number; label: string }) {
         />
       </div>
 
-      {/* Indicator */}
+      {/* Indicator — `left` glides between scores on each AgentIntel refresh. */}
       <div
-        className="absolute -translate-x-1/2"
+        className="absolute -translate-x-1/2 motion-safe:transition-[left] motion-safe:duration-[900ms] motion-safe:ease-[cubic-bezier(0.22,0.61,0.36,1)]"
         style={{ left: `${pct}%`, top: "-7px" }}
       >
         <div

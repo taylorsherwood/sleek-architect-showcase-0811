@@ -378,6 +378,51 @@ const CommunityPage = () => {
         </div>
       </article>
 
+      {/* Editorial AgentIntel market pulse — a localized extension of
+          /market-intelligence for ultra-luxury opt-in markets. Restrained,
+          private-brief composition; no dashboard grids. */}
+      {AGENTINTEL_PULSE_SLUGS.has(community.slug) && (
+        <>
+          <div className="container mx-auto px-6 pt-10 md:pt-16">
+            <div
+              className="mx-auto h-16 md:h-24 w-px"
+              style={{
+                background:
+                  "linear-gradient(to bottom, rgba(12,15,36,0) 0%, rgba(12,15,36,0.22) 100%)",
+              }}
+              aria-hidden="true"
+            />
+          </div>
+          <Suspense fallback={<div className="min-h-[320px]" />}>
+            <AgentIntelMarketSnapshot
+              marketName={community.name}
+              eyebrow={`${community.name} Market Pulse`}
+              title={`${community.name} · Private Market Brief`}
+              heroMetric="median_sales_price"
+              supportingMetrics={[
+                "months_of_inventory",
+                "median_days_on_market",
+                "sales_to_list_ratio",
+              ]}
+              duration="3_month"
+              commentary={`Inventory inside the gates remains structurally thin, and qualified buyers continue to compete for a narrow band of trophy positions. Pricing has held firm at the upper tier, with negotiation leverage favoring well-prepared sellers on architecturally distinct estates. A meaningful share of ${community.name} activity is transacted privately — never reaching public inventory — which continues to compress visible supply and reward relationship-led access.`}
+            />
+          </Suspense>
+          <div className="container mx-auto px-6 pb-6 md:pb-10">
+            <div
+              className="mx-auto h-20 md:h-28 w-px"
+              style={{
+                background:
+                  "linear-gradient(to bottom, rgba(12,15,36,0.22) 0%, rgba(12,15,36,0) 100%)",
+              }}
+              aria-hidden="true"
+            />
+          </div>
+        </>
+      )}
+
+
+
       {/* Gated Insider Report (replaces the old LiveBy guide for migrated slugs) */}
       {GATED_REPORT_SLUGS.has(community.slug) && (
         <div id="unlock-report" className="container mx-auto px-6 py-8 scroll-mt-24">

@@ -129,26 +129,20 @@ const MarketIntelligence = () => {
         </div>
       </section>
 
-      <div className="h-6 md:h-10" aria-hidden="true" />
-
-      {/* Flagship — Austin Market Pulse (AgentIntel, editorial) */}
-      <section aria-labelledby="austin-pulse-heading">
-        <div className="container mx-auto px-6">
-          <div className="max-w-5xl mx-auto">
-            <AgentIntelMarketSnapshot
-              marketName="Austin Metro"
-              eyebrow="Austin Market Pulse"
-              title="Austin Metro · Advisory Brief"
-              heroMetric="median_sales_price"
-              supportingMetrics={["median_days_on_market", "months_of_inventory", "sales_to_list_ratio"]}
-              duration="1_month"
-              commentary="The upper tier continues to absorb a disproportionate share of activity, with disciplined pricing across $1.5M+ inventory and selective buyer behavior above $3M."
-            />
-          </div>
-        </div>
+      {/* Flagship — Austin Market Pulse (AgentIntel, editorial centerpiece) */}
+      <section aria-labelledby="austin-pulse-heading" className="container mx-auto px-6">
+        <AgentIntelMarketSnapshot
+          marketName="Austin Metro"
+          eyebrow="Austin Market Pulse"
+          title="The Austin Metro Brief"
+          heroMetric="median_sales_price"
+          supportingMetrics={["median_days_on_market", "months_of_inventory", "sales_to_list_ratio"]}
+          duration="1_month"
+          commentary="The upper tier continues to absorb a disproportionate share of activity — disciplined pricing across $1.5M+ inventory, and increasingly selective buyer behavior above $3M."
+        />
       </section>
 
-      <div className="h-12 md:h-20" aria-hidden="true" />
+      <div className="h-16 md:h-28" aria-hidden="true" />
 
       {/* Section 1 — Market Briefing */}
       <section className="pb-16" aria-labelledby="briefing-heading">

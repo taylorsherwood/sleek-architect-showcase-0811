@@ -314,6 +314,20 @@ const MarkdownChunk = ({ body }: { body: string }) => {
   );
 };
 
+/**
+ * Editorial sleeve for inline intelligence modules. A subtle gold hairline
+ * top + bottom signals a deliberate publication insert rather than a widget.
+ */
+const IntelInsert = ({ children }: { children: ReactNode }) => (
+  <aside
+    className="my-14 md:my-20 -mx-6 md:mx-0"
+    role="complementary"
+    aria-label="Austin luxury market intelligence"
+  >
+    <Suspense fallback={<div className="min-h-[260px]" />}>{children}</Suspense>
+  </aside>
+);
+
 const BlogContent = ({ content, afterGlance }: BlogContentProps) => {
   const blocks = parseBlocks(content);
   let glanceRendered = false;
@@ -341,6 +355,45 @@ const BlogContent = ({ content, afterGlance }: BlogContentProps) => {
             return <SoftCTA key={idx} body={block.body} />;
           case "faq":
             return <FAQBlock key={idx} body={block.body} />;
+          case "intel-pulse":
+            return (
+              <IntelInsert key={idx}>
+                <AgentIntelMarketSnapshot
+                  marketName="West Austin"
+                  fallbackMarketName="Austin Metro"
+                  eyebrow="Austin Luxury Market Pulse"
+                  title="Austin Luxury · Market Pulse"
+                  heroMetric="median_sales_price"
+                  supportingMetrics={[
+                    "months_of_inventory",
+                    "median_days_on_market",
+                    "sales_to_list_ratio",
+                  ]}
+                  duration="1_month"
+                  dataNote="Figures reflect the West Austin regional dataset, the closest public proxy for Austin's $2M+ luxury submarkets. Off-market and pocket-listing volume, disproportionately concentrated above $2M, is tracked separately within our private network."
+                  commentary="Above $2M, inventory remains structurally thin and absorption is paced by a narrow buyer pool. Pricing has held firm at the upper tier, where well-prepared properties continue to trade with limited concession, while overpriced positions sit and re-cut. The headline metric to watch is months of supply at the trophy band, not the citywide median."
+                />
+              </IntelInsert>
+            );
+          case "intel-gauge":
+            return (
+              <IntelInsert key={idx}>
+                <MarketBalanceGauge
+                  communityName="Austin Luxury"
+                  marketName="West Austin"
+                  fallbackMarketName="Austin Metro"
+                  eyebrow="Austin Luxury · Buyer / Seller Balance"
+                />
+              </IntelInsert>
+            );
+          case "intel-rates":
+            return (
+              <IntelInsert key={idx}>
+                <RatesAffordability
+                  commentary="Above $2M, financing is a posture rather than a constraint. Most transactions clear with significant cash or asset-backed structures, so the real signal in mortgage rates at this tier is psychological. When rates ease, the move-up pool widens and pent-up Westlake-to-Lake Austin trade-ups reactivate. When rates stay elevated, sellers must rely on presentation discipline and private exposure rather than rate-driven urgency to close."
+                />
+              </IntelInsert>
+            );
           default:
             return <MarkdownChunk key={idx} body={block.body} />;
         }

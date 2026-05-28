@@ -166,7 +166,7 @@ export const AgentIntelMarketSnapshot = ({
                   className="font-display text-2xl md:text-[1.65rem] leading-none"
                   style={{ color: "#0C0F24" }}
                 >
-                  {formatValue(k, s?.latest ?? null)}
+                  {formatValue(k, s?.latest ?? null, s?.latest_formatted)}
                 </p>
                 {s?.latest_date && (
                   <p className="mt-3 text-[0.65rem] tracking-[0.18em] uppercase text-muted-foreground">

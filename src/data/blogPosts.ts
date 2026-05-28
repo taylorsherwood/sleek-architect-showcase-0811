@@ -120,6 +120,9 @@ Any market analysis that ignores private listings, pocket inventory, and <a href
 
 For both buyers and sellers, understanding where a property sits within Austin's true luxury hierarchy is the foundation of accurate pricing and intelligent negotiation strategy.
 
+:::intel-pulse
+:::
+
 ## The Austin Luxury Submarkets That Matter Most
 
 Austin's luxury market is not one market.
@@ -270,6 +273,9 @@ High off-market activity typically signals:
 
 When more sellers move toward public listings, it can indicate softening demand or increased buyer selectivity at the upper tier.
 
+:::intel-gauge
+:::
+
 ## What Actually Drives Luxury Property Value in Austin
 
 Luxury property valuation in Austin extends far beyond square footage. If you are evaluating your own property, our <a href="/home-value-austin" class="${LINK}">Austin home value</a> framework outlines how we weigh these factors.
@@ -294,6 +300,9 @@ The strongest value drivers include:
 Two homes with similar square footage can trade millions apart depending on how these factors align.
 
 This is why pricing luxury property using simplistic price-per-square-foot comparisons often produces inaccurate conclusions.
+
+:::intel-rates
+:::
 
 ## Why Off-Market Inventory Matters
 

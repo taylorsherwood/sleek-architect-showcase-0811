@@ -8,6 +8,8 @@ import NeighborhoodStats from "@/components/market-intel/NeighborhoodStats";
 import InventoryTrends from "@/components/market-intel/InventoryTrends";
 import LuxuryMarketInsights from "@/components/market-intel/LuxuryMarketInsights";
 import AgentIntelMarketSnapshot from "@/components/market-intel/AgentIntelMarketSnapshot";
+import RatesAffordability from "@/components/market-intel/RatesAffordability";
+import IntelligenceRoadmap from "@/components/market-intel/IntelligenceRoadmap";
 
 const Footer = lazy(() => import("@/components/Footer"));
 
@@ -140,6 +142,11 @@ const MarketIntelligence = () => {
           duration="1_month"
           commentary="Upper-tier activity continues to compound disproportionately. Pricing discipline above $1.5M remains intact; buyer selectivity above $3M is sharpening, a market rewarding patience, position, and access."
         />
+      </section>
+
+      {/* Rates + Affordability Context — paired with Pulse, restrained editorial brief */}
+      <section aria-labelledby="rates-affordability-heading" className="container mx-auto px-6">
+        <RatesAffordability commentary="Financing remains the gating variable for the broad metro. Within the upper tier, where buyers are predominantly cash or low-leverage, rate movement reads less as a barrier and more as a tempo signal — shaping when conventional bids re-enter and how aggressively sellers respond." />
       </section>
 
       {/* Folio bridge into Part One */}
@@ -309,6 +316,11 @@ const MarketIntelligence = () => {
             />
           </div>
         </div>
+      </section>
+
+      {/* Intelligence Roadmap — restrained preview of forthcoming editions */}
+      <section aria-labelledby="intelligence-roadmap" className="container mx-auto px-6">
+        <IntelligenceRoadmap />
       </section>
 
       {/* Internal linking + Further reading */}

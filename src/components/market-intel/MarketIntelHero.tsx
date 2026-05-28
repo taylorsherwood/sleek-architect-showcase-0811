@@ -31,7 +31,7 @@ const MarketIntelHero = ({ children }: { children: React.ReactNode }) => {
   }, [useVideo]);
 
   return (
-    <section className="relative overflow-hidden bg-[#0c0f24]">
+    <section className="relative overflow-hidden bg-[#0c0f24] min-h-[640px] md:min-h-[720px] lg:h-[820px] xl:h-[860px] 2xl:h-[880px] flex flex-col justify-end">
       {/* Media layer */}
       <div className="absolute inset-0" aria-hidden="true">
         {useVideo ? (

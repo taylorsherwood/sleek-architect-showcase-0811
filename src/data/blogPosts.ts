@@ -123,6 +123,9 @@ For both buyers and sellers, understanding where a property sits within Austin's
 :::intel-pulse
 :::
 
+:::intel-gauge
+:::
+
 ## The Austin Luxury Submarkets That Matter Most
 
 Austin's luxury market is not one market.
@@ -273,8 +276,8 @@ High off-market activity typically signals:
 
 When more sellers move toward public listings, it can indicate softening demand or increased buyer selectivity at the upper tier.
 
-:::intel-gauge
-:::
+
+
 
 ## What Actually Drives Luxury Property Value in Austin
 

@@ -12,6 +12,12 @@ import Navigation from "@/components/Navigation";
 // CMS-driven gated report (teaser + gate + full unlocked content).
 const GATED_REPORT_SLUGS = new Set<string>(["westlake-hills"]);
 const Footer = lazy(() => import("@/components/Footer"));
+const AgentIntelMarketSnapshot = lazy(() => import("@/components/market-intel/AgentIntelMarketSnapshot"));
+
+// Slugs that receive the editorial AgentIntel market pulse module, a
+// localized extension of /market-intelligence. Kept as a set so additional
+// luxury markets can opt in without further page-level conditionals.
+const AGENTINTEL_PULSE_SLUGS = new Set<string>(["barton-creek"]);
 import AboutBlock from "@/components/AboutBlock";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createFAQSchema, createBreadcrumbSchema, createPlaceSchema } from "@/components/SchemaMarkup";

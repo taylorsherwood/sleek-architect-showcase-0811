@@ -113,9 +113,10 @@ const MarketIntelligence = () => {
         <p className="mb-3 md:mb-4 tracking-[0.2em] md:tracking-[0.28em] font-semibold uppercase text-[0.62rem] md:text-[0.7rem]" style={{ color: "#b9a06c", textShadow: "0 1px 8px rgba(0,0,0,0.55)" }}>
           Market Intelligence Briefing
         </p>
-        <h1 className="text-[2rem] sm:text-4xl md:text-[3.25rem] font-display font-normal mb-4 md:mb-6 leading-[1.08]" style={{ color: "#f5f3ef", textShadow: "0 2px 18px rgba(0,0,0,0.55), 0 1px 4px rgba(0,0,0,0.4)" }}>
+        <h1 className="text-[2rem] sm:text-4xl md:text-[3.25rem] font-display font-normal mb-4 md:mb-6 leading-[1.08]" style={{ color: "#fbfaf6", textShadow: "0 2px 24px rgba(0,0,0,0.7), 0 1px 4px rgba(0,0,0,0.5)" }}>
           Austin Real Estate,<br className="sm:hidden" /> Read by Advisors
         </h1>
+
         <p className="text-[0.95rem] md:text-lg leading-relaxed max-w-prose mx-auto" style={{ color: "rgba(245,243,239,0.92)", textShadow: "0 1px 10px rgba(0,0,0,0.5)" }}>
           A continuously updated read on Austin's residential and luxury market, interpreted with the
           same discipline we bring to private client work.

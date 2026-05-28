@@ -8,6 +8,8 @@ import NeighborhoodStats from "@/components/market-intel/NeighborhoodStats";
 import InventoryTrends from "@/components/market-intel/InventoryTrends";
 import LuxuryMarketInsights from "@/components/market-intel/LuxuryMarketInsights";
 import AgentIntelMarketSnapshot from "@/components/market-intel/AgentIntelMarketSnapshot";
+import RatesAffordability from "@/components/market-intel/RatesAffordability";
+import IntelligenceRoadmap from "@/components/market-intel/IntelligenceRoadmap";
 
 const Footer = lazy(() => import("@/components/Footer"));
 

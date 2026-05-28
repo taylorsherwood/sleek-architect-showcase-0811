@@ -110,18 +110,18 @@ const MarketIntelligence = () => {
       <Navigation />
       {/* Hero — atmospheric cinematic media behind editorial copy */}
       <MarketIntelHero>
-        <p className="mb-4 tracking-[0.28em] font-semibold uppercase text-[0.7rem]" style={{ color: "#b9a06c" }}>
+        <p className="mb-4 tracking-[0.28em] font-semibold uppercase text-[0.7rem]" style={{ color: "#b9a06c", textShadow: "0 1px 8px rgba(0,0,0,0.55)" }}>
           Market Intelligence Briefing
         </p>
-        <h1 className="text-4xl md:text-[3.25rem] font-display font-normal mb-6 leading-[1.1]" style={{ color: "#f5f3ef" }}>
+        <h1 className="text-4xl md:text-[3.25rem] font-display font-normal mb-6 leading-[1.1]" style={{ color: "#f5f3ef", textShadow: "0 2px 18px rgba(0,0,0,0.55), 0 1px 4px rgba(0,0,0,0.4)" }}>
           Austin Real Estate, Read by Advisors
         </h1>
-        <p className="text-lg leading-relaxed" style={{ color: "rgba(245,243,239,0.82)" }}>
+        <p className="text-lg leading-relaxed" style={{ color: "rgba(245,243,239,0.92)", textShadow: "0 1px 10px rgba(0,0,0,0.5)" }}>
           A continuously updated read on Austin's residential and luxury market, interpreted with the
           same discipline we bring to private client work. Built for buyers, sellers, and investors
           who require precision over noise.
         </p>
-        <p className="mt-6 text-[0.7rem] tracking-[0.22em] uppercase" style={{ color: "rgba(245,243,239,0.55)" }}>
+        <p className="mt-6 text-[0.7rem] tracking-[0.22em] uppercase" style={{ color: "rgba(245,243,239,0.7)", textShadow: "0 1px 8px rgba(0,0,0,0.5)" }}>
           UPDATED DAILY USING ABOR MLS, PRIVATE MARKET INTELLIGENCE, AND LUXURY MARKET TREND ANALYSIS
         </p>
       </MarketIntelHero>

@@ -31,13 +31,13 @@ const MarketIntelHero = ({ children }: { children: React.ReactNode }) => {
   }, [useVideo]);
 
   return (
-    <section className="relative overflow-hidden bg-[#0c0f24]">
+    <section className="relative overflow-hidden bg-[#0c0f24] min-h-[640px] md:min-h-[720px] lg:h-[820px] xl:h-[860px] 2xl:h-[880px] flex flex-col justify-end">
       {/* Media layer */}
       <div className="absolute inset-0" aria-hidden="true">
         {useVideo ? (
           <video
             ref={videoRef}
-            className="absolute inset-0 w-full h-full object-cover object-top"
+            className="absolute inset-0 w-full h-full object-cover"
             style={{
               filter: "saturate(0.55) brightness(0.72) contrast(0.95)",
             }}
@@ -54,7 +54,7 @@ const MarketIntelHero = ({ children }: { children: React.ReactNode }) => {
           <img
             src={POSTER_URL}
             alt=""
-            className="absolute inset-0 w-full h-full object-cover object-top"
+            className="absolute inset-0 w-full h-full object-cover"
             style={{ filter: "saturate(0.55) brightness(0.72) contrast(0.95)" }}
             loading="eager"
           />

@@ -176,14 +176,14 @@ function Sparkline({ points }: { points: Array<{ value: number }> }) {
         cy={tail.y}
         r={2.25}
         fill={GOLD}
-        style={{ opacity: 0, transformOrigin: `${tail.x}px ${tail.y}px`, animation: "ei-spark-pulse 2400ms ease-out 2100ms infinite" }}
+        style={{ opacity: 0, transformOrigin: `${tail.x}px ${tail.y}px`, animation: "ei-spark-pulse 2400ms ease-out 1800ms infinite" }}
       />
       <circle
         cx={tail.x}
         cy={tail.y}
         r={2.25}
         fill={GOLD}
-        style={{ opacity: 0, animation: "ei-spark-dot 600ms ease-out 1500ms forwards" }}
+        style={{ opacity: 0, animation: "ei-spark-dot 400ms ease-out 1600ms forwards" }}
       />
       <style>{`
         @keyframes ei-spark-draw { to { stroke-dashoffset: 0; } }

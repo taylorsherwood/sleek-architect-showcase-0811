@@ -95,13 +95,19 @@ const MarketIntelHero = ({ children }: { children: React.ReactNode }) => {
         </div>
       </div>
 
-      {/* Soft fade into page background */}
+      {/* Architectural handoff — thin tonal step into the page */}
       <div
-        className="absolute inset-x-0 bottom-0 h-24 z-[5] pointer-events-none"
+        className="absolute inset-x-0 bottom-0 h-10 z-[5] pointer-events-none"
         style={{
           background:
-            "linear-gradient(to bottom, transparent 0%, hsl(var(--background)) 100%)",
+            "linear-gradient(to bottom, transparent 0%, hsl(var(--background) / 0.35) 70%, hsl(var(--background)) 100%)",
         }}
+        aria-hidden="true"
+      />
+      {/* Hairline rule to anchor the transition */}
+      <div
+        className="absolute inset-x-0 bottom-0 z-[6] pointer-events-none"
+        style={{ height: 1, background: "rgba(245,243,239,0.08)" }}
         aria-hidden="true"
       />
     </section>

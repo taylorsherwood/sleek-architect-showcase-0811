@@ -120,6 +120,9 @@ Any market analysis that ignores private listings, pocket inventory, and <a href
 
 For both buyers and sellers, understanding where a property sits within Austin's true luxury hierarchy is the foundation of accurate pricing and intelligent negotiation strategy.
 
+:::intel-pulse
+:::
+
 ## The Austin Luxury Submarkets That Matter Most
 
 Austin's luxury market is not one market.

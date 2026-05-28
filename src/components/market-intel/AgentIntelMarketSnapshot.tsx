@@ -312,9 +312,8 @@ export const AgentIntelMarketSnapshot = ({
             <span className="ml-3">{eyebrow}</span>
           </p>
         </div>
+        <header className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
 
-
-        <header className="text-center max-w-3xl mx-auto mb-20 md:mb-28">
           <h2
             className="font-display font-light leading-[1.04] tracking-tight"
             style={{ color: NAVY, fontSize: "clamp(1.85rem, 3.6vw, 2.75rem)" }}

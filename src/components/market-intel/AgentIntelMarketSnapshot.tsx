@@ -285,7 +285,7 @@ export const AgentIntelMarketSnapshot = ({
 
   return (
     <section
-      className="relative pt-6 md:pt-10 pb-20 md:pb-32"
+      className="relative pt-4 md:pt-8 pb-12 md:pb-16"
       aria-label={`${displayTitle} market briefing`}
     >
       {/* Atmospheric wash — ultra-subtle, never reads as a "card" */}
@@ -299,15 +299,10 @@ export const AgentIntelMarketSnapshot = ({
       />
 
       <div className="max-w-5xl mx-auto px-2 md:px-0">
-        {/* Editorial masthead — folio numeral over a single hairline descender */}
-        <div className="flex flex-col items-center mb-14 md:mb-20">
-          <span
-            aria-hidden
-            className="block w-px h-16 md:h-24"
-            style={{ background: `linear-gradient(to bottom, rgba(12,15,36,0) 0%, rgba(12,15,36,0.22) 100%)` }}
-          />
+        {/* Editorial masthead — folio numeral + eyebrow */}
+        <div className="mb-8 md:mb-10 text-center">
           <p
-            className="mt-5 text-[0.6rem] tracking-[0.46em] uppercase"
+            className="text-[0.6rem] tracking-[0.46em] uppercase"
             style={{ color: GOLD }}
           >
             <span className="font-display italic normal-case tracking-normal mr-3" style={{ fontSize: "0.95em" }}>
@@ -317,6 +312,7 @@ export const AgentIntelMarketSnapshot = ({
             <span className="ml-3">{eyebrow}</span>
           </p>
         </div>
+
 
         <header className="text-center max-w-3xl mx-auto mb-20 md:mb-28">
           <h2

@@ -10,6 +10,7 @@ import LuxuryMarketInsights from "@/components/market-intel/LuxuryMarketInsights
 import AgentIntelMarketSnapshot from "@/components/market-intel/AgentIntelMarketSnapshot";
 import RatesAffordability from "@/components/market-intel/RatesAffordability";
 import IntelligenceRoadmap from "@/components/market-intel/IntelligenceRoadmap";
+import MarketIntelHero from "@/components/market-intel/MarketIntelHero";
 
 const Footer = lazy(() => import("@/components/Footer"));
 

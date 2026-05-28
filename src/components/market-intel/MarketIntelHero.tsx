@@ -120,32 +120,19 @@ const MarketIntelHero = ({ children }: { children: React.ReactNode }) => {
         aria-hidden="true"
       />
 
-      {/* Animated gold scroll cue — hidden on mobile to save vertical space */}
+      {/* Minimal scroll cue — refined gold hairline, desktop only */}
       <button
         onClick={() => {
           window.scrollTo({ top: window.innerHeight * 0.9, behavior: "smooth" });
         }}
         aria-label="Scroll to market intelligence"
-        className="hero-scroll-cue absolute bottom-3 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-3 group cursor-pointer z-[7]"
+        className="hero-scroll-cue absolute bottom-5 left-1/2 -translate-x-1/2 hidden md:flex items-center justify-center group cursor-pointer z-[7]"
       >
-        <span
-          className="group-hover:text-white transition-colors duration-500"
-          style={{
-            fontFamily: '"Cinzel", serif',
-            fontSize: "0.75rem",
-            letterSpacing: "0.5em",
-            textTransform: "uppercase",
-            fontWeight: 600,
-            color: "hsl(var(--warm-cream))",
-            textShadow: "0 1px 6px rgba(0,0,0,0.6)",
-          }}
-        >
-          Explore Intelligence
-        </span>
-        <span className="hero-scroll-track relative block w-[1px] h-12 md:h-16 overflow-hidden bg-[hsl(var(--gold))]/20">
+        <span className="hero-scroll-track relative block w-[1px] h-14 overflow-hidden bg-[hsl(var(--gold))]/25">
           <span className="hero-scroll-bar absolute top-0 left-0 w-full h-1/2 bg-[hsl(var(--gold))]" />
         </span>
       </button>
+
     </section>
   );
 };

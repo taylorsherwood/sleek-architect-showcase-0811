@@ -13,6 +13,7 @@ import Navigation from "@/components/Navigation";
 const GATED_REPORT_SLUGS = new Set<string>(["westlake-hills"]);
 const Footer = lazy(() => import("@/components/Footer"));
 const AgentIntelMarketSnapshot = lazy(() => import("@/components/market-intel/AgentIntelMarketSnapshot"));
+const MarketBalanceGauge = lazy(() => import("@/components/market-intel/MarketBalanceGauge"));
 
 // Slugs that receive the editorial AgentIntel market pulse module, a
 // localized extension of /market-intelligence. Kept as a set so additional

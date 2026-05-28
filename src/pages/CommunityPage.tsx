@@ -395,6 +395,7 @@ const CommunityPage = () => {
               "sales_to_list_ratio",
             ]}
             duration="1_month"
+            dataNote="Figures reflect the Southwest Austin regional dataset, the closest public proxy for the Barton Creek submarket. Off-market and country-club transactions inside the gates are not captured in this index and are tracked separately within our private network."
             commentary="Inventory inside the gates remains structurally thin, and qualified buyers continue to compete for a narrow band of trophy positions. Pricing has held firm at the upper tier, with negotiation leverage favoring well-prepared sellers on architecturally distinct estates. A meaningful share of Barton Creek activity is transacted privately, never reaching public inventory, which continues to compress visible supply and reward relationship-led access."
           />
         </Suspense>

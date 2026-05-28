@@ -114,19 +114,14 @@ export const RatesAffordability = ({
 
   return (
     <section
-      className="relative pt-12 md:pt-16 pb-16 md:pb-24"
+      className="relative pt-8 md:pt-10 pb-12 md:pb-16"
       aria-label="Rates and affordability context"
     >
       <div className="max-w-5xl mx-auto px-2 md:px-0">
-        {/* Masthead — folio numeral, single hairline descender */}
-        <div className="flex flex-col items-center mb-12 md:mb-16">
-          <span
-            aria-hidden
-            className="block w-px h-12 md:h-20"
-            style={{ background: `linear-gradient(to bottom, rgba(12,15,36,0) 0%, rgba(12,15,36,0.22) 100%)` }}
-          />
+        {/* Masthead — folio numeral + eyebrow */}
+        <div className="mb-8 md:mb-10 text-center">
           <p
-            className="mt-5 text-[0.6rem] tracking-[0.46em] uppercase"
+            className="text-[0.6rem] tracking-[0.46em] uppercase"
             style={{ color: GOLD }}
           >
             <span className="font-display italic normal-case tracking-normal mr-3" style={{ fontSize: "0.95em" }}>
@@ -137,7 +132,7 @@ export const RatesAffordability = ({
           </p>
         </div>
 
-        <header className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
+        <header className="text-center max-w-3xl mx-auto mb-10 md:mb-12">
           <h2
             className="font-display font-light leading-[1.06] tracking-tight"
             style={{ color: NAVY, fontSize: "clamp(1.6rem, 3vw, 2.25rem)" }}
@@ -145,11 +140,12 @@ export const RatesAffordability = ({
             Financing Backdrop for the Austin Buyer
           </h2>
           {periodLabel && !loading && !error && (
-            <p className="mt-5 text-[0.6rem] tracking-[0.4em] uppercase text-muted-foreground/75">
+            <p className="mt-4 text-[0.6rem] tracking-[0.4em] uppercase text-muted-foreground/75">
               Reference Brief · {periodLabel}
             </p>
           )}
         </header>
+
 
         {loading && (
           <div className="max-w-3xl mx-auto animate-pulse space-y-6">
@@ -214,12 +210,7 @@ export const RatesAffordability = ({
 
             {/* Commentary */}
             {(commentary || narrative) && (
-              <figure className="mt-14 md:mt-20 max-w-2xl mx-auto text-center">
-                <span
-                  aria-hidden
-                  className="block mx-auto h-px w-12 mb-7"
-                  style={{ background: GOLD }}
-                />
+              <figure className="mt-10 md:mt-14 max-w-2xl mx-auto text-center">
                 <blockquote
                   className="font-light italic leading-[1.55] normal-case"
                   style={{ color: NAVY, fontSize: "clamp(0.95rem, 1.25vw, 1.1rem)", textTransform: "none", fontVariant: "normal" }}
@@ -232,7 +223,8 @@ export const RatesAffordability = ({
         )}
 
         {/* Colophon */}
-        <div className="mt-14 md:mt-20 flex items-center gap-6">
+        <div className="mt-10 md:mt-14 flex items-center gap-6">
+
           <span aria-hidden className="h-px flex-1" style={{ background: `${NAVY}14` }} />
           <p className="text-[0.55rem] tracking-[0.36em] uppercase text-muted-foreground/70 whitespace-nowrap">
             Source · Freddie Mac via FRED · AgentIntel

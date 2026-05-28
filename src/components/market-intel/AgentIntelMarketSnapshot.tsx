@@ -285,7 +285,7 @@ export const AgentIntelMarketSnapshot = ({
 
   return (
     <section
-      className="relative pt-6 md:pt-10 pb-20 md:pb-32"
+      className="relative pt-4 md:pt-8 pb-12 md:pb-16"
       aria-label={`${displayTitle} market briefing`}
     >
       {/* Atmospheric wash — ultra-subtle, never reads as a "card" */}
@@ -299,15 +299,10 @@ export const AgentIntelMarketSnapshot = ({
       />
 
       <div className="max-w-5xl mx-auto px-2 md:px-0">
-        {/* Editorial masthead — folio numeral over a single hairline descender */}
-        <div className="flex flex-col items-center mb-14 md:mb-20">
-          <span
-            aria-hidden
-            className="block w-px h-16 md:h-24"
-            style={{ background: `linear-gradient(to bottom, rgba(12,15,36,0) 0%, rgba(12,15,36,0.22) 100%)` }}
-          />
+        {/* Editorial masthead — folio numeral + eyebrow */}
+        <div className="mb-8 md:mb-10 text-center">
           <p
-            className="mt-5 text-[0.6rem] tracking-[0.46em] uppercase"
+            className="text-[0.6rem] tracking-[0.46em] uppercase"
             style={{ color: GOLD }}
           >
             <span className="font-display italic normal-case tracking-normal mr-3" style={{ fontSize: "0.95em" }}>
@@ -317,8 +312,8 @@ export const AgentIntelMarketSnapshot = ({
             <span className="ml-3">{eyebrow}</span>
           </p>
         </div>
+        <header className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
 
-        <header className="text-center max-w-3xl mx-auto mb-20 md:mb-28">
           <h2
             className="font-display font-light leading-[1.04] tracking-tight"
             style={{ color: NAVY, fontSize: "clamp(1.85rem, 3.6vw, 2.75rem)" }}
@@ -389,12 +384,7 @@ export const AgentIntelMarketSnapshot = ({
 
             {/* Editorial commentary — pull-quote treatment */}
             {(narrative || commentary) && (
-              <figure className="mt-20 md:mt-28 max-w-2xl mx-auto text-center">
-                <span
-                  aria-hidden
-                  className="block mx-auto h-px w-12 mb-8"
-                  style={{ background: GOLD }}
-                />
+              <figure className="mt-10 md:mt-14 max-w-2xl mx-auto text-center">
                 <blockquote
                   className="font-light italic leading-[1.55] normal-case"
                   style={{ color: NAVY, fontSize: "clamp(1rem, 1.35vw, 1.2rem)", textTransform: "none", fontVariant: "normal" }}
@@ -406,7 +396,7 @@ export const AgentIntelMarketSnapshot = ({
 
             {/* Supporting figures — column rule, no boxes */}
             {supporting.length > 0 && (
-              <dl className="mt-20 md:mt-28 grid grid-cols-1 md:grid-cols-3 max-w-4xl mx-auto">
+              <dl className="mt-10 md:mt-14 grid grid-cols-1 md:grid-cols-3 max-w-4xl mx-auto">
                 {supporting.map((k, i) => {
                   const s = series[k];
                   return (
@@ -439,7 +429,7 @@ export const AgentIntelMarketSnapshot = ({
         )}
 
         {/* Colophon */}
-        <div className="mt-20 md:mt-28 flex items-center gap-6">
+        <div className="mt-12 md:mt-16 flex items-center gap-6">
           <span aria-hidden className="h-px flex-1" style={{ background: `${NAVY}14` }} />
           <p className="text-[0.55rem] tracking-[0.36em] uppercase text-muted-foreground/70 whitespace-nowrap">
             Source · AgentIntel{data?.attribution ? ` · ${data.attribution}` : ""}
@@ -447,6 +437,7 @@ export const AgentIntelMarketSnapshot = ({
           <span aria-hidden className="h-px flex-1" style={{ background: `${NAVY}14` }} />
         </div>
       </div>
+
     </section>
   );
 };

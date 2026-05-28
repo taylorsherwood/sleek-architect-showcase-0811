@@ -149,15 +149,6 @@ const MarketIntelligence = () => {
         <RatesAffordability commentary="Financing remains the gating variable for the broad metro. Within the upper tier, where buyers are predominantly cash or low-leverage, rate movement reads less as a barrier and more as a tempo signal — shaping when conventional bids re-enter and how aggressively sellers respond." />
       </section>
 
-      {/* Folio bridge into Part One */}
-      <div className="container mx-auto px-6" aria-hidden="true">
-        <div className="flex flex-col items-center pt-2 pb-16 md:pb-24">
-          <span
-            className="block w-px h-20 md:h-28"
-            style={{ background: "linear-gradient(to bottom, rgba(12,15,36,0.22) 0%, rgba(12,15,36,0) 100%)" }}
-          />
-        </div>
-      </div>
 
       {/* Section 1 — Market Briefing */}
       <section className="pb-16" aria-labelledby="briefing-heading">

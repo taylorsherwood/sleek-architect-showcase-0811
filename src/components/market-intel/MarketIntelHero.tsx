@@ -95,7 +95,7 @@ const MarketIntelHero = ({ children }: { children: React.ReactNode }) => {
       </div>
 
       {/* Content — centered vertically; tighter padding on mobile */}
-      <div className="relative z-10 py-8 md:py-16">
+      <div className="relative z-10 pt-36 pb-10 md:pt-16 md:pb-16">
         <div className="container mx-auto px-6">
           <div className="mx-auto text-center text-[#f5f3ef]">
             {children}

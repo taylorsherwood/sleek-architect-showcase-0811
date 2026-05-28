@@ -608,6 +608,20 @@ section[class*="bg-navy"]::after {
     .hero-scroll-cue .hero-scroll-bar { animation: none; }
   }
 
+  /* Hero video — extremely slow Ken Burns-style drift for cinematic depth */
+  .hero-video-drift {
+    animation: hero-video-drift 24s ease-in-out infinite alternate;
+    transform-origin: 50% 45%;
+    will-change: transform;
+  }
+  @keyframes hero-video-drift {
+    0%   { transform: scale(1.04) translate3d(0, 0, 0); }
+    100% { transform: scale(1.10) translate3d(0, -1.2%, 0); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .hero-video-drift { animation: none; transform: scale(1.04); }
+  }
+
   /* Subtle buzz animation */
   @keyframes cta-buzz {
     0%, 2% { transform: translateX(0); }

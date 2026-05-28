@@ -37,10 +37,10 @@ const MarketIntelHero = ({ children }: { children: React.ReactNode }) => {
         {useVideo ? (
           <video
             ref={videoRef}
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover hero-video-drift"
             style={{
               objectPosition: "center top",
-              filter: "saturate(0.7) brightness(0.88) contrast(1.08)",
+              filter: "saturate(0.78) brightness(0.9) contrast(1.14)",
             }}
             poster={POSTER_URL}
             autoPlay
@@ -51,6 +51,7 @@ const MarketIntelHero = ({ children }: { children: React.ReactNode }) => {
           >
             <source src={VIDEO_URL} type="video/mp4" />
           </video>
+
         ) : (
           <img
             src={POSTER_URL}
@@ -104,21 +105,16 @@ const MarketIntelHero = ({ children }: { children: React.ReactNode }) => {
       </div>
 
 
-      {/* Architectural handoff — thin tonal step into the page */}
+      {/* Clean architectural handoff — minimal tonal step */}
       <div
-        className="absolute inset-x-0 bottom-0 h-10 z-[5] pointer-events-none"
+        className="absolute inset-x-0 bottom-0 h-4 z-[5] pointer-events-none"
         style={{
           background:
-            "linear-gradient(to bottom, transparent 0%, hsl(var(--background) / 0.35) 70%, hsl(var(--background)) 100%)",
+            "linear-gradient(to bottom, transparent 0%, hsl(var(--background)) 100%)",
         }}
         aria-hidden="true"
       />
-      {/* Hairline rule to anchor the transition */}
-      <div
-        className="absolute inset-x-0 bottom-0 z-[6] pointer-events-none"
-        style={{ height: 1, background: "rgba(245,243,239,0.08)" }}
-        aria-hidden="true"
-      />
+
 
       {/* Minimal scroll cue — refined gold hairline, desktop only */}
       <button

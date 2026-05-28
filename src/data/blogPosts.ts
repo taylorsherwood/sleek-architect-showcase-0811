@@ -273,6 +273,9 @@ High off-market activity typically signals:
 
 When more sellers move toward public listings, it can indicate softening demand or increased buyer selectivity at the upper tier.
 
+:::intel-gauge
+:::
+
 ## What Actually Drives Luxury Property Value in Austin
 
 Luxury property valuation in Austin extends far beyond square footage. If you are evaluating your own property, our <a href="/home-value-austin" class="${LINK}">Austin home value</a> framework outlines how we weigh these factors.

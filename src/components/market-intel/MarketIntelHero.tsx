@@ -31,9 +31,9 @@ const MarketIntelHero = ({ children }: { children: React.ReactNode }) => {
   }, [useVideo]);
 
   return (
-    <section className="relative overflow-hidden bg-[#0c0f24] min-h-[640px] md:min-h-[720px] lg:h-[820px] xl:h-[860px] 2xl:h-[880px] flex flex-col justify-center">
-      {/* Media layer — 80% width, centered */}
-      <div className="absolute inset-y-0 left-1/2 -translate-x-1/2 w-4/5 overflow-hidden" aria-hidden="true">
+    <section className="relative overflow-hidden bg-[#0c0f24] min-h-[512px] md:min-h-[576px] lg:h-[656px] xl:h-[688px] 2xl:h-[704px] flex flex-col justify-center">
+      {/* Media layer — full bleed */}
+      <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
         {useVideo ? (
           <video
             ref={videoRef}
@@ -110,6 +110,33 @@ const MarketIntelHero = ({ children }: { children: React.ReactNode }) => {
         style={{ height: 1, background: "rgba(245,243,239,0.08)" }}
         aria-hidden="true"
       />
+
+      {/* Animated gold scroll cue */}
+      <button
+        onClick={() => {
+          window.scrollTo({ top: window.innerHeight * 0.9, behavior: "smooth" });
+        }}
+        aria-label="Scroll to market intelligence"
+        className="hero-scroll-cue absolute bottom-3 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 group cursor-pointer z-[7]"
+      >
+        <span
+          className="group-hover:text-white transition-colors duration-500"
+          style={{
+            fontFamily: '"Cinzel", serif',
+            fontSize: "0.75rem",
+            letterSpacing: "0.5em",
+            textTransform: "uppercase",
+            fontWeight: 600,
+            color: "hsl(var(--warm-cream))",
+            textShadow: "0 1px 6px rgba(0,0,0,0.6)",
+          }}
+        >
+          Explore Intelligence
+        </span>
+        <span className="hero-scroll-track relative block w-[1px] h-12 md:h-16 overflow-hidden bg-[hsl(var(--gold))]/20">
+          <span className="hero-scroll-bar absolute top-0 left-0 w-full h-1/2 bg-[hsl(var(--gold))]" />
+        </span>
+      </button>
     </section>
   );
 };

@@ -362,14 +362,14 @@ export const AgentIntelMarketSnapshot = ({
           <>
             {/* Hero figure — architectural, centered, oversized */}
             <div className="text-center">
-              <p className="text-[0.6rem] tracking-[0.36em] uppercase text-muted-foreground/80 mb-6">
+              <p className="text-[0.55rem] md:text-[0.6rem] tracking-[0.28em] md:tracking-[0.36em] uppercase text-muted-foreground/80 mb-3 md:mb-6">
                 {prettyLabel(heroMetric)}
               </p>
               <p
                 className="font-display font-light leading-[0.95] tracking-[-0.02em]"
                 style={{
                   color: NAVY,
-                  fontSize: "clamp(3.75rem, 11vw, 8.5rem)",
+                  fontSize: "clamp(2.75rem, 14vw, 8.5rem)",
                   fontFeatureSettings: '"lnum", "tnum"',
                 }}
               >
@@ -377,7 +377,7 @@ export const AgentIntelMarketSnapshot = ({
               </p>
               {deltaPct && (
                 <p
-                  className="mt-6 text-[0.62rem] tracking-[0.32em] uppercase"
+                  className="mt-3 md:mt-6 text-[0.58rem] md:text-[0.62rem] tracking-[0.24em] md:tracking-[0.32em] uppercase"
                   style={{ color: GOLD }}
                 >
                   <span className="opacity-70">Year over Year ·</span>{" "}
@@ -386,9 +386,9 @@ export const AgentIntelMarketSnapshot = ({
               )}
 
               {/* Sparkline — full-width hairline */}
-              <div className="mt-10 md:mt-14 max-w-3xl mx-auto">
+              <div className="mt-6 md:mt-14 max-w-3xl mx-auto">
                 <Sparkline points={hero.points} />
-                <div className="mt-3 flex justify-between text-[0.55rem] tracking-[0.3em] uppercase text-muted-foreground/60">
+                <div className="mt-3 flex justify-between text-[0.5rem] md:text-[0.55rem] tracking-[0.22em] md:tracking-[0.3em] uppercase text-muted-foreground/60">
                   <span>Trailing 12 Months</span>
                   <span>{periodLabel}</span>
                 </div>
@@ -397,37 +397,38 @@ export const AgentIntelMarketSnapshot = ({
 
             {/* Editorial commentary — pull-quote treatment */}
             {(narrative || commentary) && (
-              <figure className="mt-10 md:mt-14 max-w-2xl mx-auto text-center">
+              <figure className="mt-7 md:mt-14 max-w-2xl mx-auto text-center px-2">
                 <blockquote
-                  className="font-light italic leading-[1.55] normal-case"
-                  style={{ color: NAVY, fontSize: "clamp(1rem, 1.35vw, 1.2rem)", textTransform: "none", fontVariant: "normal" }}
+                  className="font-light italic leading-[1.5] md:leading-[1.55] normal-case"
+                  style={{ color: NAVY, fontSize: "clamp(0.95rem, 1.35vw, 1.2rem)", textTransform: "none", fontVariant: "normal" }}
                 >
                   {commentary || narrative}
                 </blockquote>
               </figure>
             )}
 
-            {/* Supporting figures — column rule, no boxes */}
+            {/* Supporting figures — column rule, no boxes; cap to 2 on mobile */}
             {supporting.length > 0 && (
-              <dl className="mt-10 md:mt-14 grid grid-cols-1 md:grid-cols-3 max-w-4xl mx-auto">
+              <dl className="mt-8 md:mt-14 grid grid-cols-2 md:grid-cols-3 max-w-4xl mx-auto">
                 {supporting.map((k, i) => {
                   const s = series[k];
+                  const hideOnMobile = i === 2;
                   return (
                     <div
                       key={k}
-                      className={`text-center py-6 md:py-2 ${
-                        i > 0 ? "md:border-l border-t md:border-t-0" : ""
-                      }`}
+                      className={`text-center py-5 md:py-2 ${
+                        i > 0 ? "border-l md:border-l" : ""
+                      } ${hideOnMobile ? "hidden md:block" : ""}`}
                       style={{ borderColor: `${NAVY}14` }}
                     >
-                      <dt className="text-[0.55rem] tracking-[0.36em] uppercase text-muted-foreground/80 mb-3">
+                      <dt className="text-[0.5rem] md:text-[0.55rem] tracking-[0.24em] md:tracking-[0.36em] uppercase text-muted-foreground/80 mb-2 md:mb-3">
                         {prettyLabel(k)}
                       </dt>
                       <dd
                         className="font-display font-light leading-none"
                         style={{
                           color: NAVY,
-                          fontSize: "clamp(1.75rem, 3vw, 2.25rem)",
+                          fontSize: "clamp(1.35rem, 5vw, 2.25rem)",
                           fontFeatureSettings: '"lnum", "tnum"',
                         }}
                       >
@@ -442,9 +443,9 @@ export const AgentIntelMarketSnapshot = ({
         )}
 
         {/* Colophon */}
-        <div className="mt-12 md:mt-16 flex items-center gap-6">
+        <div className="mt-8 md:mt-16 flex items-center gap-3 md:gap-6">
           <span aria-hidden className="h-px flex-1" style={{ background: `${NAVY}14` }} />
-          <p className="text-[0.55rem] tracking-[0.36em] uppercase text-muted-foreground/70 whitespace-nowrap">
+          <p className="text-[0.5rem] md:text-[0.55rem] tracking-[0.24em] md:tracking-[0.36em] uppercase text-muted-foreground/70 whitespace-nowrap">
             Source · AgentIntel{data?.attribution ? ` · ${data.attribution}` : ""}
           </p>
           <span aria-hidden className="h-px flex-1" style={{ background: `${NAVY}14` }} />

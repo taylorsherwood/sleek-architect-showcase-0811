@@ -210,12 +210,7 @@ export const RatesAffordability = ({
 
             {/* Commentary */}
             {(commentary || narrative) && (
-              <figure className="mt-14 md:mt-20 max-w-2xl mx-auto text-center">
-                <span
-                  aria-hidden
-                  className="block mx-auto h-px w-12 mb-7"
-                  style={{ background: GOLD }}
-                />
+              <figure className="mt-10 md:mt-14 max-w-2xl mx-auto text-center">
                 <blockquote
                   className="font-light italic leading-[1.55] normal-case"
                   style={{ color: NAVY, fontSize: "clamp(0.95rem, 1.25vw, 1.1rem)", textTransform: "none", fontVariant: "normal" }}
@@ -228,7 +223,8 @@ export const RatesAffordability = ({
         )}
 
         {/* Colophon */}
-        <div className="mt-14 md:mt-20 flex items-center gap-6">
+        <div className="mt-10 md:mt-14 flex items-center gap-6">
+
           <span aria-hidden className="h-px flex-1" style={{ background: `${NAVY}14` }} />
           <p className="text-[0.55rem] tracking-[0.36em] uppercase text-muted-foreground/70 whitespace-nowrap">
             Source · Freddie Mac via FRED · AgentIntel

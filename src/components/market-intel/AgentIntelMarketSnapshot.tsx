@@ -328,6 +328,11 @@ export const AgentIntelMarketSnapshot = ({
               Advisory Brief · {periodLabel}
             </p>
           )}
+          {dataNote && !loading && !error && (
+            <p className="mt-3 text-[0.65rem] md:text-[0.7rem] italic text-muted-foreground/70 leading-relaxed normal-case" style={{ textTransform: "none" }}>
+              {dataNote}
+            </p>
+          )}
         </header>
 
 

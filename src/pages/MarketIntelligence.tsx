@@ -126,7 +126,7 @@ const MarketIntelligence = () => {
         </p>
       </MarketIntelHero>
 
-      <div className="h-8 md:h-20" aria-hidden="true" />
+      <div className="h-6 md:h-10" aria-hidden="true" />
 
       {/* Flagship — Austin Market Pulse (AgentIntel, editorial centerpiece) */}
       <section aria-labelledby="austin-pulse-heading" className="container mx-auto px-5 md:px-6">

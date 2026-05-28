@@ -40,7 +40,7 @@ const MarketIntelHero = ({ children }: { children: React.ReactNode }) => {
             className="absolute inset-0 w-full h-full object-cover"
             style={{
               objectPosition: "center top",
-              filter: "saturate(0.6) brightness(0.82) contrast(0.95)",
+              filter: "saturate(0.7) brightness(0.88) contrast(1.08)",
             }}
             poster={POSTER_URL}
             autoPlay
@@ -56,7 +56,7 @@ const MarketIntelHero = ({ children }: { children: React.ReactNode }) => {
             src={POSTER_URL}
             alt=""
             className="absolute inset-0 w-full h-full object-cover"
-            style={{ objectPosition: "center top", filter: "saturate(0.6) brightness(0.62) contrast(0.95)" }}
+            style={{ objectPosition: "center top", filter: "saturate(0.7) brightness(0.7) contrast(1.05)" }}
             loading="eager"
           />
         )}
@@ -73,15 +73,15 @@ const MarketIntelHero = ({ children }: { children: React.ReactNode }) => {
           className="absolute inset-0 hidden md:block"
           style={{
             background:
-              "linear-gradient(180deg, rgba(12,15,36,0.46) 0%, rgba(12,15,36,0.32) 45%, rgba(12,15,36,0.56) 100%)",
+              "linear-gradient(180deg, rgba(12,15,36,0.38) 0%, rgba(12,15,36,0.22) 45%, rgba(12,15,36,0.48) 100%)",
           }}
         />
-        {/* Subtle ivory haze for warmth — desktop only, mobile keeps it cleaner */}
+        {/* Cinematic clarity layer — desktop only, subtle contrast lift */}
         <div
-          className="absolute inset-0 mix-blend-soft-light hidden md:block"
+          className="absolute inset-0 mix-blend-overlay hidden md:block"
           style={{
             background:
-              "radial-gradient(120% 80% at 50% 40%, rgba(245,243,239,0.18) 0%, rgba(245,243,239,0) 60%)",
+              "linear-gradient(180deg, rgba(255,255,255,0.06) 0%, rgba(0,0,0,0.12) 100%)",
           }}
         />
         {/* Fine grain edge vignette — desktop only */}
@@ -89,7 +89,7 @@ const MarketIntelHero = ({ children }: { children: React.ReactNode }) => {
           className="absolute inset-0 hidden md:block"
           style={{
             background:
-              "radial-gradient(100% 70% at 50% 50%, transparent 55%, rgba(0,0,0,0.35) 100%)",
+              "radial-gradient(100% 70% at 50% 50%, transparent 60%, rgba(0,0,0,0.32) 100%)",
           }}
         />
       </div>
@@ -97,11 +97,12 @@ const MarketIntelHero = ({ children }: { children: React.ReactNode }) => {
       {/* Content — centered vertically; tighter padding on mobile */}
       <div className="relative z-10 pt-36 pb-10 md:pt-16 md:pb-16">
         <div className="container mx-auto px-6">
-          <div className="mx-auto text-center text-[#f5f3ef]">
+          <div className="mx-auto text-center text-[#f5f3ef] max-w-3xl">
             {children}
           </div>
         </div>
       </div>
+
 
       {/* Architectural handoff — thin tonal step into the page */}
       <div
@@ -119,32 +120,19 @@ const MarketIntelHero = ({ children }: { children: React.ReactNode }) => {
         aria-hidden="true"
       />
 
-      {/* Animated gold scroll cue — hidden on mobile to save vertical space */}
+      {/* Minimal scroll cue — refined gold hairline, desktop only */}
       <button
         onClick={() => {
           window.scrollTo({ top: window.innerHeight * 0.9, behavior: "smooth" });
         }}
         aria-label="Scroll to market intelligence"
-        className="hero-scroll-cue absolute bottom-3 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-3 group cursor-pointer z-[7]"
+        className="hero-scroll-cue absolute bottom-5 left-1/2 -translate-x-1/2 hidden md:flex items-center justify-center group cursor-pointer z-[7]"
       >
-        <span
-          className="group-hover:text-white transition-colors duration-500"
-          style={{
-            fontFamily: '"Cinzel", serif',
-            fontSize: "0.75rem",
-            letterSpacing: "0.5em",
-            textTransform: "uppercase",
-            fontWeight: 600,
-            color: "hsl(var(--warm-cream))",
-            textShadow: "0 1px 6px rgba(0,0,0,0.6)",
-          }}
-        >
-          Explore Intelligence
-        </span>
-        <span className="hero-scroll-track relative block w-[1px] h-12 md:h-16 overflow-hidden bg-[hsl(var(--gold))]/20">
+        <span className="hero-scroll-track relative block w-[1px] h-14 overflow-hidden bg-[hsl(var(--gold))]/25">
           <span className="hero-scroll-bar absolute top-0 left-0 w-full h-1/2 bg-[hsl(var(--gold))]" />
         </span>
       </button>
+
     </section>
   );
 };

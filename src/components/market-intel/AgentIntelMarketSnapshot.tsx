@@ -73,66 +73,106 @@ function formatPeriod(iso: string | null): string {
   } catch { return iso; }
 }
 
-/** Build a single editorial sentence from the hero series + supporting context. */
+/** Year-over-year delta on the hero metric. */
+function yoyDelta(hero: MetricSeries | undefined): number | null {
+  const pts = hero?.points ?? [];
+  if (pts.length < 2) return null;
+  const latest = pts[pts.length - 1];
+  const prior = pts.length >= 13 ? pts[pts.length - 13] : pts[0];
+  if (!prior?.value) return null;
+  return (latest.value - prior.value) / prior.value;
+}
+
+/** Tighter, advisory-grade single sentence. */
 function buildNarrative(
   marketLabel: string,
   hero: MetricSeries | undefined,
   heroKey: string,
   inv: MetricSeries | undefined,
-  dom: MetricSeries | undefined,
 ): string {
-  if (!hero?.points?.length) return "";
-  const pts = hero.points;
-  const latest = pts[pts.length - 1];
-  const prior = pts.length >= 13 ? pts[pts.length - 13] : pts[0];
-  const delta = prior?.value ? (latest.value - prior.value) / prior.value : 0;
-  const dir = delta > 0.005 ? "appreciating" : delta < -0.005 ? "easing" : "holding steady";
+  const delta = yoyDelta(hero);
+  if (delta == null) return "";
   const pct = Math.abs(delta * 100).toFixed(1);
   const heroLabel = METRIC_META[heroKey]?.label?.toLowerCase() ?? "pricing";
+  const inv12 = inv?.latest;
 
-  const invLatest = inv?.latest;
-  const supplyClause =
-    invLatest != null
-      ? invLatest < 3
-        ? " against tight supply"
-        : invLatest > 6
-          ? " as inventory expands"
-          : " with balanced inventory"
-      : "";
+  const supply =
+    inv12 == null
+      ? ""
+      : inv12 < 3
+        ? " amid persistently thin supply"
+        : inv12 > 6
+          ? " as inventory continues to widen"
+          : " against a balanced supply profile";
 
-  const domLatest = dom?.latest;
-  const paceClause =
-    domLatest != null
-      ? domLatest < 30
-        ? "; homes are trading quickly"
-        : domLatest > 75
-          ? "; properties are taking longer to sell"
-          : ""
-      : "";
-
-  return `${marketLabel}'s ${heroLabel} is ${dir} ${pct}% year-over-year${supplyClause}${paceClause}.`;
+  const tone =
+    delta > 0.005
+      ? `${marketLabel} ${heroLabel} advanced ${pct}% year-over-year${supply}.`
+      : delta < -0.005
+        ? `${marketLabel} ${heroLabel} eased ${pct}% year-over-year${supply}.`
+        : `${marketLabel} ${heroLabel} held within ${pct}% of the prior year${supply}.`;
+  return tone;
 }
 
-/** Minimal gold hairline sparkline. Last 12 observations. */
+/** Refined sparkline: hairline + soft gold wash + terminal dot. */
 function Sparkline({ points }: { points: Array<{ value: number }> }) {
   const series = points.slice(-12);
   if (series.length < 2) return null;
-  const w = 320, h = 56, pad = 2;
+  const w = 600, h = 80, pad = 4;
   const vals = series.map((p) => p.value);
   const min = Math.min(...vals);
   const max = Math.max(...vals);
   const range = max - min || 1;
   const step = (w - pad * 2) / (series.length - 1);
-  const d = series
-    .map((p, i) => {
-      const x = pad + i * step;
-      const y = h - pad - ((p.value - min) / range) * (h - pad * 2);
-      return `${i === 0 ? "M" : "L"}${x.toFixed(1)} ${y.toFixed(1)}`;
-    })
-    .join(" ");
+  const coords = series.map((p, i) => {
+    const x = pad + i * step;
+    const y = h - pad - ((p.value - min) / range) * (h - pad * 2);
+    return { x, y };
+  });
+  const line = coords.map((c, i) => `${i === 0 ? "M" : "L"}${c.x.toFixed(1)} ${c.y.toFixed(1)}`).join(" ");
+  const area = `${line} L${coords[coords.length - 1].x.toFixed(1)} ${h} L${coords[0].x.toFixed(1)} ${h} Z`;
+  const tail = coords[coords.length - 1];
+  const totalLen = coords.reduce((acc, c, i) => {
+    if (i === 0) return 0;
+    const p = coords[i - 1];
+    return acc + Math.hypot(c.x - p.x, c.y - p.y);
+  }, 0);
   return (
-    <svg viewBox={`0 0 ${w} ${h}`} className="w-full h-12 md:h-14 mt-6" preserveAspectRatio="none" aria-hidden>
-      <path d={d} fill="none" stroke={GOLD} strokeWidth={1} strokeLinecap="round" strokeLinejoin="round" />
+    <svg
+      viewBox={`0 0 ${w} ${h}`}
+      className="w-full h-16 md:h-20"
+      preserveAspectRatio="none"
+      aria-hidden
+    >
+      <defs>
+        <linearGradient id="ei-spark-fill" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor={GOLD} stopOpacity="0.18" />
+          <stop offset="100%" stopColor={GOLD} stopOpacity="0" />
+        </linearGradient>
+      </defs>
+      <path d={area} fill="url(#ei-spark-fill)" />
+      <path
+        d={line}
+        fill="none"
+        stroke={GOLD}
+        strokeWidth={1.25}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeDasharray={totalLen}
+        strokeDashoffset={totalLen}
+        style={{ animation: "ei-spark-draw 1600ms cubic-bezier(0.22, 1, 0.36, 1) forwards" }}
+      />
+      <circle
+        cx={tail.x}
+        cy={tail.y}
+        r={2.25}
+        fill={GOLD}
+        style={{ opacity: 0, animation: "ei-spark-dot 600ms ease-out 1500ms forwards" }}
+      />
+      <style>{`
+        @keyframes ei-spark-draw { to { stroke-dashoffset: 0; } }
+        @keyframes ei-spark-dot { to { opacity: 1; } }
+      `}</style>
     </svg>
   );
 }
@@ -190,17 +230,18 @@ export const AgentIntelMarketSnapshot = ({
   const hero = series[heroMetric];
   const displayTitle = title ?? market?.name ?? marketName ?? "Market Snapshot";
   const periodLabel = formatPeriod(hero?.latest_date ?? null);
+  const delta = yoyDelta(hero);
 
   const narrative = useMemo(
-    () => (data ? buildNarrative(displayTitle, hero, heroMetric, series.months_of_inventory, series.median_days_on_market) : ""),
+    () => (data ? buildNarrative(displayTitle, hero, heroMetric, series.months_of_inventory) : ""),
     [data, displayTitle, hero, heroMetric, series],
   );
 
   // ---------------- Compact variant (sidebars, inline strips) ----------------
   if (variant === "compact") {
     return (
-      <aside className="bg-[#FAFAF8] py-6 md:py-8 px-6 md:px-8">
-        <p className="text-[0.6rem] tracking-[0.28em] uppercase mb-2" style={{ color: GOLD }}>
+      <aside className="py-6 md:py-8">
+        <p className="text-[0.6rem] tracking-[0.32em] uppercase mb-2" style={{ color: GOLD }}>
           {eyebrow}
         </p>
         <p className="font-display text-base md:text-lg" style={{ color: NAVY }}>{displayTitle}</p>
@@ -209,7 +250,7 @@ export const AgentIntelMarketSnapshot = ({
             <span className="font-display text-2xl md:text-3xl" style={{ color: NAVY }}>
               {formatValue(heroMetric, hero.latest, hero.latest_formatted)}
             </span>
-            <span className="text-[0.65rem] tracking-[0.2em] uppercase text-muted-foreground">
+            <span className="text-[0.65rem] tracking-[0.24em] uppercase text-muted-foreground">
               {prettyLabel(heroMetric)} · {periodLabel}
             </span>
           </div>
@@ -222,71 +263,129 @@ export const AgentIntelMarketSnapshot = ({
 
   // ---------------- Editorial variant (default) ----------------
   const supporting = supportingMetrics.slice(0, 3);
+  const deltaPct = delta != null ? `${delta >= 0 ? "+" : "−"}${Math.abs(delta * 100).toFixed(1)}%` : null;
 
   return (
-    <section className="bg-[#FAFAF8] py-12 md:py-16 px-6 md:px-12">
-      <div className="max-w-4xl mx-auto">
-        <header className="mb-8 md:mb-10">
-          <p className="text-[0.7rem] tracking-[0.32em] uppercase mb-4" style={{ color: GOLD }}>
+    <section className="py-20 md:py-32" aria-label={`${displayTitle} market briefing`}>
+      <div className="max-w-5xl mx-auto px-2 md:px-0">
+        {/* Editorial masthead — rule + eyebrow + folio */}
+        <div className="flex items-center gap-6 mb-12 md:mb-16">
+          <span aria-hidden className="h-px flex-1" style={{ background: `${NAVY}1f` }} />
+          <p className="text-[0.65rem] tracking-[0.42em] uppercase whitespace-nowrap" style={{ color: GOLD }}>
             {eyebrow}
           </p>
-          <h2 className="font-display text-2xl md:text-[2rem] font-normal leading-tight" style={{ color: NAVY }}>
+          <span aria-hidden className="h-px flex-1" style={{ background: `${NAVY}1f` }} />
+        </div>
+
+        <header className="text-center max-w-3xl mx-auto mb-16 md:mb-24">
+          <h2
+            className="font-display font-normal leading-[1.05] tracking-tight"
+            style={{ color: NAVY, fontSize: "clamp(1.75rem, 3.4vw, 2.5rem)" }}
+          >
             {displayTitle}
           </h2>
           {periodLabel && !loading && !error && (
-            <p className="mt-3 text-[0.65rem] tracking-[0.22em] uppercase text-muted-foreground">
-              Period · {periodLabel}
+            <p className="mt-5 text-[0.62rem] tracking-[0.36em] uppercase text-muted-foreground/80">
+              Advisory Brief · {periodLabel}
             </p>
           )}
         </header>
 
         {loading && (
-          <div className="space-y-6 animate-pulse">
-            <div className="h-10 w-2/3 bg-border/40" />
-            <div className="h-12 w-full bg-border/30" />
-            <div className="h-4 w-3/4 bg-border/30" />
+          <div className="space-y-8 animate-pulse max-w-3xl mx-auto">
+            <div className="h-20 w-2/3 mx-auto bg-border/30" />
+            <div className="h-16 w-full bg-border/20" />
+            <div className="h-4 w-3/4 mx-auto bg-border/20" />
           </div>
         )}
 
         {!loading && error && (
-          <p className="text-sm italic text-muted-foreground">{error}</p>
+          <p className="text-center text-sm italic text-muted-foreground">{error}</p>
         )}
 
         {!loading && !error && hero && (
           <>
-            {/* Hero figure + sparkline */}
-            <div className="border-t border-b border-border/40 py-8 md:py-10">
-              <p className="text-[0.65rem] tracking-[0.24em] uppercase text-muted-foreground mb-3">
+            {/* Hero figure — architectural, centered, oversized */}
+            <div className="text-center">
+              <p className="text-[0.6rem] tracking-[0.36em] uppercase text-muted-foreground/80 mb-6">
                 {prettyLabel(heroMetric)}
               </p>
               <p
-                className="font-display leading-none"
-                style={{ color: NAVY, fontSize: "clamp(2.5rem, 6vw, 3.75rem)" }}
+                className="font-display font-light leading-[0.95] tracking-[-0.02em]"
+                style={{
+                  color: NAVY,
+                  fontSize: "clamp(3.75rem, 11vw, 8.5rem)",
+                  fontFeatureSettings: '"lnum", "tnum"',
+                }}
               >
                 {formatValue(heroMetric, hero.latest, hero.latest_formatted)}
               </p>
-              <Sparkline points={hero.points} />
+              {deltaPct && (
+                <p
+                  className="mt-6 text-[0.62rem] tracking-[0.32em] uppercase"
+                  style={{ color: GOLD }}
+                >
+                  <span className="opacity-70">Year over Year ·</span>{" "}
+                  <span className="font-medium">{deltaPct}</span>
+                </p>
+              )}
+
+              {/* Sparkline — full-width hairline */}
+              <div className="mt-10 md:mt-14 max-w-3xl mx-auto">
+                <Sparkline points={hero.points} />
+                <div className="mt-3 flex justify-between text-[0.55rem] tracking-[0.3em] uppercase text-muted-foreground/60">
+                  <span>Trailing 12 Months</span>
+                  <span>{periodLabel}</span>
+                </div>
+              </div>
             </div>
 
-            {/* Editorial commentary */}
+            {/* Editorial commentary — pull-quote treatment */}
             {(narrative || commentary) && (
-              <p className="mt-8 md:mt-10 text-base md:text-lg leading-relaxed max-w-2xl" style={{ color: NAVY }}>
-                {narrative}
-                {commentary && <span className="text-foreground/75"> {commentary}</span>}
-              </p>
+              <figure className="mt-20 md:mt-28 max-w-2xl mx-auto text-center">
+                <span
+                  aria-hidden
+                  className="block mx-auto h-px w-12 mb-8"
+                  style={{ background: GOLD }}
+                />
+                <blockquote
+                  className="font-display font-light italic leading-[1.4]"
+                  style={{ color: NAVY, fontSize: "clamp(1.125rem, 1.75vw, 1.5rem)" }}
+                >
+                  {commentary || narrative}
+                </blockquote>
+                {commentary && narrative && (
+                  <figcaption className="mt-6 text-[0.7rem] tracking-[0.24em] uppercase text-muted-foreground/80 not-italic">
+                    {narrative}
+                  </figcaption>
+                )}
+              </figure>
             )}
 
-            {/* Supporting figures — inline, hairline-separated, NOT a tile grid */}
+            {/* Supporting figures — column rule, no boxes */}
             {supporting.length > 0 && (
-              <dl className="mt-10 md:mt-12 grid grid-cols-3 gap-px bg-border/40">
-                {supporting.map((k) => {
+              <dl className="mt-20 md:mt-28 grid grid-cols-1 md:grid-cols-3 max-w-4xl mx-auto">
+                {supporting.map((k, i) => {
                   const s = series[k];
                   return (
-                    <div key={k} className="bg-[#FAFAF8] py-4 md:py-5 pr-4">
-                      <dt className="text-[0.6rem] tracking-[0.22em] uppercase text-muted-foreground mb-2">
+                    <div
+                      key={k}
+                      className={`text-center py-6 md:py-2 ${
+                        i > 0 ? "md:border-l border-t md:border-t-0" : ""
+                      }`}
+                      style={{ borderColor: `${NAVY}14` }}
+                    >
+                      <dt className="text-[0.55rem] tracking-[0.36em] uppercase text-muted-foreground/80 mb-3">
                         {prettyLabel(k)}
                       </dt>
-                      <dd className="font-display text-xl md:text-2xl" style={{ color: NAVY }}>
+                      <dd
+                        className="font-display font-light leading-none"
+                        style={{
+                          color: NAVY,
+                          fontSize: "clamp(1.75rem, 3vw, 2.25rem)",
+                          fontFeatureSettings: '"lnum", "tnum"',
+                        }}
+                      >
                         {formatValue(k, s?.latest ?? null, s?.latest_formatted)}
                       </dd>
                     </div>
@@ -297,9 +396,14 @@ export const AgentIntelMarketSnapshot = ({
           </>
         )}
 
-        <p className="mt-10 md:mt-12 text-[0.6rem] tracking-[0.24em] uppercase text-muted-foreground">
-          Source · AgentIntel{data?.attribution ? ` · ${data.attribution}` : ""}
-        </p>
+        {/* Colophon */}
+        <div className="mt-20 md:mt-28 flex items-center gap-6">
+          <span aria-hidden className="h-px flex-1" style={{ background: `${NAVY}14` }} />
+          <p className="text-[0.55rem] tracking-[0.36em] uppercase text-muted-foreground/70 whitespace-nowrap">
+            Source · AgentIntel{data?.attribution ? ` · ${data.attribution}` : ""}
+          </p>
+          <span aria-hidden className="h-px flex-1" style={{ background: `${NAVY}14` }} />
+        </div>
       </div>
     </section>
   );

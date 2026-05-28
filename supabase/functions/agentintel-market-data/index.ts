@@ -1,42 +1,205 @@
-// AgentIntel market data proxy (mock-first).
-// The AGENTINTEL_API_KEY secret is read server-side only and never returned
-// to the client. Once live endpoints are confirmed, swap MOCK_DATA for the
-// real fetch inside fetchFromAgentIntel().
+// AgentIntel server-side proxy.
+//
+// Keeps AGENTINTEL_API_KEY secret. The browser only ever talks to this function.
+// Two surfaces are supported:
+//
+//   1. action=...  → live AgentIntel v0 endpoints (me, search-markets,
+//                    market-metrics). This is the foundation layer.
+//   2. dataset=... → legacy mock datasets still consumed by existing
+//                    MarketPulse / NeighborhoodStats / LuxuryInsights /
+//                    InventoryTrends components. Preserved for backwards
+//                    compatibility until those modules migrate.
+//
+// All endpoint mapping + normalization stays here so frontend code never has
+// to know the shape of the v0 API.
 
 import { corsHeaders } from "npm:@supabase/supabase-js@2/cors";
 
-// ---------------------------------------------------------------------------
-// Config — placeholder. Replace base URL and per-dataset paths when AgentIntel
-// documentation is available. The shape below is intentionally generic so the
-// rest of the app does not need to change.
-// ---------------------------------------------------------------------------
-const AGENTINTEL_BASE_URL = "https://api.agentintel.example/v1"; // placeholder
-const ENDPOINTS: Record<string, string> = {
-  "market-pulse": "/market/pulse",
-  "neighborhood-stats": "/market/neighborhoods",
-  "inventory-trends": "/market/inventory",
-  "luxury-insights": "/market/luxury",
-};
-
-const CACHE_TTL_SECONDS = 60 * 60 * 24; // 24h
-const cache = new Map<string, { at: number; payload: unknown }>();
+const AGENTINTEL_BASE_URL = "https://api.agentintel.co/v0";
 
 // ---------------------------------------------------------------------------
-// Mock data — used until live API is wired. Shapes match what the frontend
-// components consume, so the live cutover is a one-line change in fetch().
+// In-memory cache (per warm instance). Per-action TTL.
+// ---------------------------------------------------------------------------
+const cache = new Map<string, { at: number; payload: unknown; status: number }>();
+
+function cacheGet(key: string, ttlMs: number) {
+  const hit = cache.get(key);
+  if (hit && Date.now() - hit.at < ttlMs) return hit;
+  return null;
+}
+function cacheSet(key: string, payload: unknown, status: number) {
+  cache.set(key, { at: Date.now(), payload, status });
+}
+
+// ---------------------------------------------------------------------------
+// Live AgentIntel call helper
+// ---------------------------------------------------------------------------
+interface LiveResult { status: number; data: unknown; error?: string }
+
+async function callAgentIntel(path: string, query?: Record<string, string>): Promise<LiveResult> {
+  const apiKey = Deno.env.get("AGENTINTEL_API_KEY");
+  if (!apiKey) {
+    return { status: 401, data: null, error: "missing_api_key" };
+  }
+
+  const url = new URL(`${AGENTINTEL_BASE_URL}${path}`);
+  if (query) {
+    for (const [k, v] of Object.entries(query)) {
+      if (v != null && v !== "") url.searchParams.set(k, v);
+    }
+  }
+
+  try {
+    const res = await fetch(url.toString(), {
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+        Accept: "application/json",
+      },
+    });
+
+    let json: unknown = null;
+    const text = await res.text();
+    if (text) {
+      try { json = JSON.parse(text); } catch { json = { raw: text }; }
+    }
+
+    if (!res.ok) {
+      console.error(`AgentIntel ${res.status} ${path}`);
+      return { status: res.status, data: null, error: mapStatusToError(res.status) };
+    }
+    return { status: 200, data: json };
+  } catch (err) {
+    console.error("AgentIntel network error:", err);
+    return { status: 502, data: null, error: "upstream_unreachable" };
+  }
+}
+
+function mapStatusToError(status: number): string {
+  if (status === 401 || status === 403) return "unauthorized";
+  if (status === 404) return "not_found";
+  if (status === 422) return "invalid_request";
+  if (status === 429) return "rate_limited";
+  return "upstream_error";
+}
+
+// ---------------------------------------------------------------------------
+// Normalizers — keep response shapes stable for the frontend.
+// ---------------------------------------------------------------------------
+function normalizeMarkets(raw: any) {
+  const arr = Array.isArray(raw) ? raw : (raw?.results ?? raw?.markets ?? raw?.data ?? []);
+  return {
+    markets: (arr as any[]).map((m) => ({
+      uuid: m.uuid ?? m.id ?? m.market_uuid ?? null,
+      name: m.name ?? m.market_name ?? m.label ?? "",
+      type: m.type ?? m.market_type ?? null,
+      state: m.state ?? m.state_code ?? null,
+      region: m.region ?? null,
+      raw: m,
+    })).filter((m) => m.uuid && m.name),
+  };
+}
+
+function normalizeMetrics(raw: any) {
+  // AgentIntel v0 returns `observations: [{ period_begin, period_end,
+  // <metric>: { value, formatted, short }, ... }]`. We pivot that into a
+  // per-metric time series so the frontend never needs to know the shape.
+  const flat: Record<string, { latest: number | null; latest_date: string | null; latest_formatted: string | null; points: Array<{ date: string; value: number; formatted?: string }> }> = {};
+
+  const observations: any[] = Array.isArray(raw?.observations)
+    ? raw.observations
+    : Array.isArray(raw?.data?.observations)
+      ? raw.data.observations
+      : Array.isArray(raw)
+        ? raw
+        : [];
+
+  // Sort oldest → newest so `latest` is the last entry.
+  const sorted = [...observations].sort((a, b) => {
+    const da = String(a?.period_end ?? a?.period_begin ?? a?.date ?? "");
+    const db = String(b?.period_end ?? b?.period_begin ?? b?.date ?? "");
+    return da < db ? -1 : da > db ? 1 : 0;
+  });
+
+  for (const obs of sorted) {
+    const date = String(obs?.period_end ?? obs?.period_begin ?? obs?.date ?? "");
+    if (!date) continue;
+    for (const [key, val] of Object.entries(obs)) {
+      if (key === "period_begin" || key === "period_end" || key === "date") continue;
+      let value: number | null = null;
+      let formatted: string | undefined;
+      if (val && typeof val === "object" && "value" in (val as any)) {
+        const n = Number((val as any).value);
+        value = Number.isFinite(n) ? n : null;
+        formatted = (val as any).formatted ?? (val as any).short;
+      } else if (typeof val === "number") {
+        value = val;
+      }
+      if (value == null) continue;
+      if (!flat[key]) flat[key] = { latest: null, latest_date: null, latest_formatted: null, points: [] };
+      flat[key].points.push({ date, value, formatted });
+      flat[key].latest = value;
+      flat[key].latest_date = date;
+      flat[key].latest_formatted = formatted ?? null;
+    }
+  }
+
+  return { metrics: flat, market: raw?.market ?? null, attribution: raw?.attribution ?? null };
+}
+
+// ---------------------------------------------------------------------------
+// Action router (live API)
+// ---------------------------------------------------------------------------
+interface ActionResult { status: number; body: unknown; ttlMs: number }
+
+async function handleAction(action: string, params: URLSearchParams): Promise<ActionResult> {
+  switch (action) {
+    case "me": {
+      const r = await callAgentIntel("/me");
+      return { status: r.status, body: { ok: r.status === 200, account: r.data, error: r.error }, ttlMs: 60_000 };
+    }
+
+    case "search-markets": {
+      const q = (params.get("q") || "").trim();
+      if (!q) return { status: 400, body: { error: "missing_query" }, ttlMs: 0 };
+      const r = await callAgentIntel("/us/markets", { q });
+      if (r.status !== 200) return { status: r.status, body: { error: r.error }, ttlMs: 0 };
+      return { status: 200, body: normalizeMarkets(r.data), ttlMs: 1000 * 60 * 60 };
+    }
+
+    case "market-metrics": {
+      const uuid = (params.get("market_uuid") || "").trim();
+      const metrics = (params.get("metrics") || "median_sales_price").trim();
+      const duration = (params.get("duration") || "1_month").trim();
+      if (!uuid) return { status: 400, body: { error: "missing_market_uuid" }, ttlMs: 0 };
+      const r = await callAgentIntel(`/us/markets/${encodeURIComponent(uuid)}/metrics`, { metrics, duration });
+      if (r.status !== 200) return { status: r.status, body: { error: r.error }, ttlMs: 0 };
+      return { status: 200, body: normalizeMetrics(r.data), ttlMs: 1000 * 60 * 60 * 6 };
+    }
+
+    // Reserved for future datasets — wire when AgentIntel paths are confirmed.
+    case "hpi":
+    case "building-permits":
+    case "jobs-growth":
+    case "population-migration":
+    case "wage-employment":
+    case "interest-rates":
+    case "pdf-report":
+      return { status: 501, body: { error: "not_implemented", action }, ttlMs: 0 };
+
+    default:
+      return { status: 400, body: { error: "unknown_action", action }, ttlMs: 0 };
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Legacy mock datasets (kept so existing components keep rendering).
 // ---------------------------------------------------------------------------
 const MOCK_DATA: Record<string, unknown> = {
   "market-pulse": {
     headline: "Steady demand, tightening supply at the top of the market",
-    median_price: 1485000,
-    median_price_delta_pct: 3.2,
-    avg_days_on_market: 47,
-    dom_delta: -6,
-    months_of_supply: 3.1,
-    closed_last_30_days: 612,
-    luxury_share_pct: 18.4,
-    summary:
-      "Austin's overall market is stabilizing while the upper tier continues to absorb premium inventory faster than entry segments.",
+    median_price: 1485000, median_price_delta_pct: 3.2, avg_days_on_market: 47, dom_delta: -6,
+    months_of_supply: 3.1, closed_last_30_days: 612, luxury_share_pct: 18.4,
+    summary: "Austin's overall market is stabilizing while the upper tier continues to absorb premium inventory faster than entry segments.",
   },
   "neighborhood-stats": {
     items: [
@@ -64,15 +227,11 @@ const MOCK_DATA: Record<string, unknown> = {
       { month: "Apr", active: 1590, new: 612, pending: 548, sold: 590, months_of_inventory: 2.7 },
       { month: "May", active: 1620, new: 645, pending: 571, sold: 612, months_of_inventory: 2.6 },
     ],
-    note: "Active inventory has contracted ~11% YoY while absorption holds steady. Months of inventory has compressed from 3.4 to 2.6, signaling a tightening market.",
+    note: "Active inventory has contracted ~11% YoY while absorption holds steady.",
   },
   "luxury-insights": {
-    threshold_label: "$3M+",
-    active_listings: 184,
-    median_price: 4250000,
-    median_dom: 62,
-    avg_sale_to_list_pct: 96.8,
-    off_market_share_pct: 34,
+    threshold_label: "$3M+", active_listings: 184, median_price: 4250000, median_dom: 62,
+    avg_sale_to_list_pct: 96.8, off_market_share_pct: 34,
     insights: [
       "Off-market transactions account for roughly one-third of $3M+ closings in Austin.",
       "Waterfront and view-protected estates continue to command the strongest premiums.",
@@ -83,84 +242,66 @@ const MOCK_DATA: Record<string, unknown> = {
 };
 
 // ---------------------------------------------------------------------------
-async function fetchFromAgentIntel(dataset: string): Promise<unknown> {
-  const apiKey = Deno.env.get("AGENTINTEL_API_KEY");
-  const path = ENDPOINTS[dataset];
-  const isPlaceholderHost = AGENTINTEL_BASE_URL.includes("agentintel.example");
-
-  // Until live API is wired (placeholder host), always return mock immediately.
-  if (!apiKey || !path || isPlaceholderHost) {
-    return { ...((MOCK_DATA[dataset] as object) ?? {}), _source: "mock" };
-  }
-
-  try {
-    const res = await fetch(`${AGENTINTEL_BASE_URL}${path}`, {
-      headers: {
-        Authorization: `Bearer ${apiKey}`,
-        Accept: "application/json",
-      },
-    });
-    if (!res.ok) throw new Error(`AgentIntel ${res.status}`);
-    const data = await res.json();
-    return { ...data, _source: "live" };
-  } catch (err) {
-    console.error("AgentIntel fetch failed, falling back to mock:", err);
-    return { ...((MOCK_DATA[dataset] as object) ?? {}), _source: "mock-fallback" };
-  }
-}
-
 Deno.serve(async (req) => {
-  if (req.method === "OPTIONS") {
-    return new Response("ok", { headers: corsHeaders });
-  }
+  if (req.method === "OPTIONS") return new Response("ok", { headers: corsHeaders });
 
   try {
     const url = new URL(req.url);
-    const dataset = (url.searchParams.get("dataset") || "").trim();
+    const action = url.searchParams.get("action");
+    const dataset = url.searchParams.get("dataset");
 
-    if (!dataset || !(dataset in MOCK_DATA)) {
-      return new Response(
-        JSON.stringify({
-          error: "Invalid or missing 'dataset' parameter",
-          allowed: Object.keys(MOCK_DATA),
-        }),
-        { status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" } },
-      );
+    // -------- Live action surface --------
+    if (action) {
+      const cacheKey = `action:${action}:${url.search}`;
+      const hit = cacheGet(cacheKey, 60_000); // soft floor; real TTL applied on set
+      if (hit) {
+        return new Response(JSON.stringify({ ...((hit.payload as object) || {}), cached: true, last_updated: new Date(hit.at).toISOString() }), {
+          status: hit.status,
+          headers: { ...corsHeaders, "Content-Type": "application/json" },
+        });
+      }
+
+      const result = await handleAction(action, url.searchParams);
+      if (result.ttlMs > 0 && result.status === 200) {
+        cacheSet(cacheKey, result.body, result.status);
+      }
+      return new Response(JSON.stringify({ ...(result.body as object), cached: false, last_updated: new Date().toISOString() }), {
+        status: result.status,
+        headers: { ...corsHeaders, "Content-Type": "application/json" },
+      });
     }
 
-    const now = Date.now();
-    const cached = cache.get(dataset);
-    let payload: unknown;
-    let cacheHit = false;
-
-    if (cached && now - cached.at < CACHE_TTL_SECONDS * 1000) {
-      payload = cached.payload;
-      cacheHit = true;
-    } else {
-      payload = await fetchFromAgentIntel(dataset);
-      cache.set(dataset, { at: now, payload });
+    // -------- Legacy dataset surface (mock) --------
+    if (dataset && dataset in MOCK_DATA) {
+      const cacheKey = `dataset:${dataset}`;
+      const TTL = 1000 * 60 * 60 * 24;
+      const hit = cacheGet(cacheKey, TTL);
+      const payload = hit?.payload ?? { ...(MOCK_DATA[dataset] as object), _source: "mock" };
+      if (!hit) cacheSet(cacheKey, payload, 200);
+      return new Response(JSON.stringify({
+        dataset,
+        data: payload,
+        cached: !!hit,
+        last_updated: new Date(hit?.at ?? Date.now()).toISOString(),
+      }), {
+        status: 200,
+        headers: { ...corsHeaders, "Content-Type": "application/json", "Cache-Control": `public, max-age=${TTL / 1000}` },
+      });
     }
 
-    const body = {
-      dataset,
-      data: payload,
-      cached: cacheHit,
-      last_updated: new Date(cached?.at ?? now).toISOString(),
-    };
-
-    return new Response(JSON.stringify(body), {
-      status: 200,
-      headers: {
-        ...corsHeaders,
-        "Content-Type": "application/json",
-        "Cache-Control": `public, max-age=${CACHE_TTL_SECONDS}`,
-      },
-    });
+    return new Response(
+      JSON.stringify({
+        error: "Provide either ?action=... or ?dataset=...",
+        actions: ["me", "search-markets", "market-metrics"],
+        datasets: Object.keys(MOCK_DATA),
+      }),
+      { status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" } },
+    );
   } catch (err) {
     console.error("agentintel-market-data error:", err);
-    return new Response(
-      JSON.stringify({ error: "Internal error" }),
-      { status: 500, headers: { ...corsHeaders, "Content-Type": "application/json" } },
-    );
+    return new Response(JSON.stringify({ error: "internal_error" }), {
+      status: 500,
+      headers: { ...corsHeaders, "Content-Type": "application/json" },
+    });
   }
 });

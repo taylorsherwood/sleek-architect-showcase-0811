@@ -108,7 +108,7 @@ const MarketIntelligence = () => {
       <div className="h-12 md:h-20" aria-hidden="true" />
 
       {/* Hero */}
-      <section className="pt-24 pb-12">
+      <section className="pt-24 pb-6 md:pb-8">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-minimal text-gold mb-4 tracking-[0.28em] font-semibold uppercase text-[0.7rem]">
@@ -138,11 +138,19 @@ const MarketIntelligence = () => {
           heroMetric="median_sales_price"
           supportingMetrics={["median_days_on_market", "months_of_inventory", "sales_to_list_ratio"]}
           duration="1_month"
-          commentary="The upper tier continues to absorb a disproportionate share of activity — disciplined pricing across $1.5M+ inventory, and increasingly selective buyer behavior above $3M."
+          commentary="Upper-tier activity continues to compound disproportionately. Pricing discipline above $1.5M remains intact; buyer selectivity above $3M is sharpening — a market rewarding patience, position, and access."
         />
       </section>
 
-      <div className="h-16 md:h-28" aria-hidden="true" />
+      {/* Folio bridge into Part One */}
+      <div className="container mx-auto px-6" aria-hidden="true">
+        <div className="flex flex-col items-center pt-2 pb-16 md:pb-24">
+          <span
+            className="block w-px h-20 md:h-28"
+            style={{ background: "linear-gradient(to bottom, rgba(12,15,36,0.22) 0%, rgba(12,15,36,0) 100%)" }}
+          />
+        </div>
+      </div>
 
       {/* Section 1 — Market Briefing */}
       <section className="pb-16" aria-labelledby="briefing-heading">

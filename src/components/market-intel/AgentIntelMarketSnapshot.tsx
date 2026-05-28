@@ -401,11 +401,6 @@ export const AgentIntelMarketSnapshot = ({
                 >
                   {commentary || narrative}
                 </blockquote>
-                {commentary && narrative && (
-                  <figcaption className="mt-6 text-[0.7rem] tracking-[0.18em] text-muted-foreground/80 not-italic normal-case" style={{ textTransform: "none" }}>
-                    {narrative}
-                  </figcaption>
-                )}
               </figure>
             )}
 

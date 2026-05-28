@@ -31,7 +31,7 @@ const MarketIntelHero = ({ children }: { children: React.ReactNode }) => {
   }, [useVideo]);
 
   return (
-    <section className="relative overflow-hidden bg-[#0c0f24] min-h-[512px] md:min-h-[576px] lg:h-[656px] xl:h-[688px] 2xl:h-[704px] flex flex-col justify-center">
+    <section className="relative overflow-hidden bg-[#0c0f24] min-h-[380px] sm:min-h-[460px] md:min-h-[576px] lg:h-[656px] xl:h-[688px] 2xl:h-[704px] flex flex-col justify-center">
       {/* Media layer — full bleed */}
       <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
         {useVideo ? (
@@ -56,30 +56,37 @@ const MarketIntelHero = ({ children }: { children: React.ReactNode }) => {
             src={POSTER_URL}
             alt=""
             className="absolute inset-0 w-full h-full object-cover"
-            style={{ objectPosition: "center top", filter: "saturate(0.55) brightness(0.72) contrast(0.95)" }}
+            style={{ objectPosition: "center top", filter: "saturate(0.6) brightness(0.62) contrast(0.95)" }}
             loading="eager"
           />
         )}
 
-        {/* Navy wash for depth + readability */}
+        {/* Navy wash for depth + readability — lighter on mobile */}
         <div
-          className="absolute inset-0"
+          className="absolute inset-0 md:hidden"
+          style={{
+            background:
+              "linear-gradient(180deg, rgba(12,15,36,0.72) 0%, rgba(12,15,36,0.55) 50%, rgba(12,15,36,0.78) 100%)",
+          }}
+        />
+        <div
+          className="absolute inset-0 hidden md:block"
           style={{
             background:
               "linear-gradient(180deg, rgba(12,15,36,0.62) 0%, rgba(12,15,36,0.48) 45%, rgba(12,15,36,0.72) 100%)",
           }}
         />
-        {/* Subtle ivory haze for warmth */}
+        {/* Subtle ivory haze for warmth — desktop only, mobile keeps it cleaner */}
         <div
-          className="absolute inset-0 mix-blend-soft-light"
+          className="absolute inset-0 mix-blend-soft-light hidden md:block"
           style={{
             background:
               "radial-gradient(120% 80% at 50% 40%, rgba(245,243,239,0.18) 0%, rgba(245,243,239,0) 60%)",
           }}
         />
-        {/* Fine grain edge vignette */}
+        {/* Fine grain edge vignette — desktop only */}
         <div
-          className="absolute inset-0"
+          className="absolute inset-0 hidden md:block"
           style={{
             background:
               "radial-gradient(100% 70% at 50% 50%, transparent 55%, rgba(0,0,0,0.35) 100%)",
@@ -87,9 +94,9 @@ const MarketIntelHero = ({ children }: { children: React.ReactNode }) => {
         />
       </div>
 
-      {/* Content — centered vertically */}
-      <div className="relative z-10 py-16">
-        <div className="container mx-auto px-6 max-w-[1600px]">
+      {/* Content — centered vertically; tighter padding on mobile */}
+      <div className="relative z-10 py-8 md:py-16">
+        <div className="container mx-auto px-5 md:px-6 max-w-[1600px]">
           <div className="max-w-6xl mx-auto text-center text-[#f5f3ef]">
             {children}
           </div>
@@ -112,13 +119,13 @@ const MarketIntelHero = ({ children }: { children: React.ReactNode }) => {
         aria-hidden="true"
       />
 
-      {/* Animated gold scroll cue */}
+      {/* Animated gold scroll cue — hidden on mobile to save vertical space */}
       <button
         onClick={() => {
           window.scrollTo({ top: window.innerHeight * 0.9, behavior: "smooth" });
         }}
         aria-label="Scroll to market intelligence"
-        className="hero-scroll-cue absolute bottom-3 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 group cursor-pointer z-[7]"
+        className="hero-scroll-cue absolute bottom-3 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-3 group cursor-pointer z-[7]"
       >
         <span
           className="group-hover:text-white transition-colors duration-500"

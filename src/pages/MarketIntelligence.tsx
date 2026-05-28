@@ -110,26 +110,26 @@ const MarketIntelligence = () => {
       <Navigation />
       {/* Hero — atmospheric cinematic media behind editorial copy */}
       <MarketIntelHero>
-        <p className="mb-4 tracking-[0.28em] font-semibold uppercase text-[0.7rem]" style={{ color: "#b9a06c", textShadow: "0 1px 8px rgba(0,0,0,0.55)" }}>
+        <p className="mb-3 md:mb-4 tracking-[0.2em] md:tracking-[0.28em] font-semibold uppercase text-[0.62rem] md:text-[0.7rem]" style={{ color: "#b9a06c", textShadow: "0 1px 8px rgba(0,0,0,0.55)" }}>
           Market Intelligence Briefing
         </p>
-        <h1 className="text-4xl md:text-[3.25rem] font-display font-normal mb-6 leading-[1.1]" style={{ color: "#f5f3ef", textShadow: "0 2px 18px rgba(0,0,0,0.55), 0 1px 4px rgba(0,0,0,0.4)" }}>
-          Austin Real Estate, Read by Advisors
+        <h1 className="text-[2rem] sm:text-4xl md:text-[3.25rem] font-display font-normal mb-4 md:mb-6 leading-[1.08]" style={{ color: "#f5f3ef", textShadow: "0 2px 18px rgba(0,0,0,0.55), 0 1px 4px rgba(0,0,0,0.4)" }}>
+          Austin Real Estate,<br className="sm:hidden" /> Read by Advisors
         </h1>
-        <p className="text-lg leading-relaxed" style={{ color: "rgba(245,243,239,0.92)", textShadow: "0 1px 10px rgba(0,0,0,0.5)" }}>
+        <p className="text-[0.95rem] md:text-lg leading-relaxed max-w-prose mx-auto" style={{ color: "rgba(245,243,239,0.92)", textShadow: "0 1px 10px rgba(0,0,0,0.5)" }}>
           A continuously updated read on Austin's residential and luxury market, interpreted with the
-          same discipline we bring to private client work. Built for buyers, sellers, and investors
-          who require precision over noise.
+          same discipline we bring to private client work.
+          <span className="hidden md:inline"> Built for buyers, sellers, and investors who require precision over noise.</span>
         </p>
-        <p className="mt-6 text-[0.7rem] tracking-[0.22em] uppercase" style={{ color: "rgba(245,243,239,0.7)", textShadow: "0 1px 8px rgba(0,0,0,0.5)" }}>
-          UPDATED DAILY USING ABOR MLS, PRIVATE MARKET INTELLIGENCE, AND LUXURY MARKET TREND ANALYSIS
+        <p className="mt-4 md:mt-6 text-[0.58rem] md:text-[0.7rem] tracking-[0.18em] md:tracking-[0.22em] uppercase" style={{ color: "rgba(245,243,239,0.7)", textShadow: "0 1px 8px rgba(0,0,0,0.5)" }}>
+          Updated Daily · ABOR MLS<span className="hidden md:inline">, Private Market Intelligence, and Luxury Market Trend Analysis</span>
         </p>
       </MarketIntelHero>
 
-      <div className="h-12 md:h-20" aria-hidden="true" />
+      <div className="h-8 md:h-20" aria-hidden="true" />
 
       {/* Flagship — Austin Market Pulse (AgentIntel, editorial centerpiece) */}
-      <section aria-labelledby="austin-pulse-heading" className="container mx-auto px-6">
+      <section aria-labelledby="austin-pulse-heading" className="container mx-auto px-5 md:px-6">
         <AgentIntelMarketSnapshot
           marketName="Austin Metro"
           eyebrow="Austin Market Pulse"

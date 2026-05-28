@@ -31,9 +31,9 @@ const MarketIntelHero = ({ children }: { children: React.ReactNode }) => {
   }, [useVideo]);
 
   return (
-    <section className="relative overflow-hidden bg-[#0c0f24] min-h-[640px] md:min-h-[720px] lg:h-[820px] xl:h-[860px] 2xl:h-[880px] flex flex-col justify-center">
-      {/* Media layer — 80% width, centered */}
-      <div className="absolute inset-y-0 left-1/2 -translate-x-1/2 w-4/5 overflow-hidden" aria-hidden="true">
+    <section className="relative overflow-hidden bg-[#0c0f24] min-h-[512px] md:min-h-[576px] lg:h-[656px] xl:h-[688px] 2xl:h-[704px] flex flex-col justify-center">
+      {/* Media layer — full bleed */}
+      <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
         {useVideo ? (
           <video
             ref={videoRef}

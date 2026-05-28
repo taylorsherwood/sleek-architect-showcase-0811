@@ -387,7 +387,7 @@ const CommunityPage = () => {
             marketName="Southwest Austin"
             fallbackMarketName="Austin Metro"
             eyebrow="Barton Creek Market Pulse"
-            title="Barton Creek · Private Market Brief"
+            title="Barton Creek · Market Brief"
             heroMetric="median_sales_price"
             supportingMetrics={[
               "months_of_inventory",

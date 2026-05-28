@@ -17,6 +17,7 @@ import blogChoosingLuxuryBrokerage from "@/assets/blog/choosing-luxury-real-esta
 import blogMarketLuxuryProperties from "@/assets/blog/market-luxury-properties-austin.jpg";
 import blogAustinLuxuryAdvisory from "@/assets/blog/austin-luxury-real-estate-advisory.jpg";
 import blogEchelonApproach from "@/assets/blog/taylor-sherwood-echelon-approach.jpg";
+import blogEchelonApproachHero from "@/assets/blog/echelon-approach-hero.jpg";
 import blogAustinLuxuryMarketAnalysis from "@/assets/blog/austin-luxury-market-analysis.jpg";
 
 

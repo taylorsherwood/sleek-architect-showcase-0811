@@ -200,7 +200,7 @@ function Gauge({ score, label }: { score: number; label: string }) {
           style={{ backgroundColor: GOLD }}
         />
         <div
-          className="absolute left-1/2 -translate-x-1/2 -top-[3px] w-[10px] h-[10px] rounded-full"
+          className="gauge-dot-pulse absolute left-1/2 -translate-x-1/2 -top-[3px] w-[10px] h-[10px] rounded-full"
           style={{ backgroundColor: GOLD, boxShadow: `0 0 0 3px #FAFAF8` }}
         />
       </div>

@@ -1205,3 +1205,22 @@ body.hcs-immersive nav.fixed {
   100% { transform: scale(1.08) translate3d(-1.2%, -0.8%, 0); }
 }
 
+
+/* Market balance gauge — gold dot pulse. Animates a halo only; the dot's
+   left% position remains driven by React state so AgentIntel updates can
+   shift the indicator without interrupting the animation. */
+@keyframes gaugeDotPulse {
+  0%, 100% {
+    box-shadow: 0 0 0 3px #FAFAF8, 0 0 0 5px rgba(185, 160, 108, 0.55);
+  }
+  50% {
+    box-shadow: 0 0 0 3px #FAFAF8, 0 0 0 10px rgba(185, 160, 108, 0);
+  }
+}
+.gauge-dot-pulse {
+  animation: gaugeDotPulse 2.2s ease-out infinite;
+  will-change: box-shadow;
+}
+@media (prefers-reduced-motion: reduce) {
+  .gauge-dot-pulse { animation: none; }
+}

@@ -144,6 +144,11 @@ const MarketIntelligence = () => {
         />
       </section>
 
+      {/* Rates + Affordability Context — paired with Pulse, restrained editorial brief */}
+      <section aria-labelledby="rates-affordability-heading" className="container mx-auto px-6">
+        <RatesAffordability commentary="Financing remains the gating variable for the broad metro. Within the upper tier, where buyers are predominantly cash or low-leverage, rate movement reads less as a barrier and more as a tempo signal — shaping when conventional bids re-enter and how aggressively sellers respond." />
+      </section>
+
       {/* Folio bridge into Part One */}
       <div className="container mx-auto px-6" aria-hidden="true">
         <div className="flex flex-col items-center pt-2 pb-16 md:pb-24">

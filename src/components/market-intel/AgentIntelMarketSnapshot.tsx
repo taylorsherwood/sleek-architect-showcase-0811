@@ -384,13 +384,13 @@ export const AgentIntelMarketSnapshot = ({
                   style={{ background: GOLD }}
                 />
                 <blockquote
-                  className="font-display font-light italic leading-[1.4]"
-                  style={{ color: NAVY, fontSize: "clamp(1.125rem, 1.75vw, 1.5rem)" }}
+                  className="font-light italic leading-[1.55] normal-case"
+                  style={{ color: NAVY, fontSize: "clamp(1rem, 1.35vw, 1.2rem)", textTransform: "none", fontVariant: "normal" }}
                 >
                   {commentary || narrative}
                 </blockquote>
                 {commentary && narrative && (
-                  <figcaption className="mt-6 text-[0.7rem] tracking-[0.24em] uppercase text-muted-foreground/80 not-italic">
+                  <figcaption className="mt-6 text-[0.7rem] tracking-[0.18em] text-muted-foreground/80 not-italic normal-case" style={{ textTransform: "none" }}>
                     {narrative}
                   </figcaption>
                 )}

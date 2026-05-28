@@ -77,12 +77,14 @@ export interface AgentIntelMarket {
 export interface MetricSeries {
   latest: number | null;
   latest_date: string | null;
-  points: Array<{ date: string; value: number }>;
+  latest_formatted: string | null;
+  points: Array<{ date: string; value: number; formatted?: string }>;
 }
 
 export interface MarketMetricsResponse {
   metrics: Record<string, MetricSeries>;
-  raw: unknown;
+  market: { name?: string; market_uuid?: string; type?: string } | null;
+  attribution: string | null;
   last_updated: string;
 }
 

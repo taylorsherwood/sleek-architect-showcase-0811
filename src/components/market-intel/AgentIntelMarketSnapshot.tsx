@@ -29,6 +29,10 @@ interface Props {
   title?: string;
   /** Optional advisor commentary appended after the auto-generated headline. */
   commentary?: string;
+  /** Optional provenance note rendered beneath the period stamp. Use to
+   *  disclose when figures reflect a regional proxy rather than the named
+   *  micro-market (e.g. Southwest Austin standing in for Barton Creek). */
+  dataNote?: string;
 }
 
 const NAVY = "#0C0F24";
@@ -192,6 +196,7 @@ export const AgentIntelMarketSnapshot = ({
   eyebrow = "Market Intelligence",
   title,
   commentary,
+  dataNote,
 }: Props) => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -274,7 +279,9 @@ export const AgentIntelMarketSnapshot = ({
 
   // ---------------- Editorial variant (default) ----------------
   const supporting = supportingMetrics.slice(0, 3);
-  const deltaPct = delta != null ? `${delta >= 0 ? "+" : "−"}${Math.abs(delta * 100).toFixed(1)}%` : null;
+  const deltaPct = delta != null && Math.abs(delta) >= 0.001
+    ? `${delta >= 0 ? "+" : "−"}${Math.abs(delta * 100).toFixed(1)}%`
+    : null;
 
   return (
     <section
@@ -321,6 +328,11 @@ export const AgentIntelMarketSnapshot = ({
           {periodLabel && !loading && !error && (
             <p className="mt-6 text-[0.6rem] tracking-[0.4em] uppercase text-muted-foreground/75">
               Advisory Brief · {periodLabel}
+            </p>
+          )}
+          {dataNote && !loading && !error && (
+            <p className="mt-3 text-[0.65rem] md:text-[0.7rem] italic text-muted-foreground/70 leading-relaxed normal-case" style={{ textTransform: "none" }}>
+              {dataNote}
             </p>
           )}
         </header>
@@ -389,11 +401,6 @@ export const AgentIntelMarketSnapshot = ({
                 >
                   {commentary || narrative}
                 </blockquote>
-                {commentary && narrative && (
-                  <figcaption className="mt-6 text-[0.7rem] tracking-[0.18em] text-muted-foreground/80 not-italic normal-case" style={{ textTransform: "none" }}>
-                    {narrative}
-                  </figcaption>
-                )}
               </figure>
             )}
 

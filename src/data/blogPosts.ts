@@ -20,6 +20,7 @@ import blogEchelonApproach from "@/assets/blog/taylor-sherwood-echelon-approach.
 import blogEchelonApproachHero from "@/assets/blog/echelon-approach-hero.jpg";
 import blogAustinLuxuryMarketAnalysis from "@/assets/blog/austin-luxury-market-analysis.jpg";
 import blogPriceLuxuryHomeAustin from "@/assets/blog/how-to-price-luxury-home-austin.jpg";
+import blogHighestAndBestUse from "@/assets/blog/highest-and-best-use-property-austin.webp";
 
 
 
@@ -43,6 +44,170 @@ export interface BlogPost {
 const LINK = "text-foreground underline hover:text-muted-foreground";
 
 export const blogPosts: BlogPost[] = [
+  {
+    id: "highest-and-best-use-property-austin",
+    title: "How to Determine the Highest and Best Use of a Property in Austin",
+    metaTitle: "How to Determine the Highest and Best Use of a Property in Austin",
+    excerpt: "Learn how Austin property owners, investors, and developers evaluate highest and best use through zoning, site constraints, market demand, financial feasibility, and redevelopment potential.",
+    author: "Taylor Sherwood",
+    date: "2026-05-29",
+    readTime: "14 min read",
+    category: "INVESTMENT STRATEGY",
+    image: blogHighestAndBestUse,
+    content: `
+## A Step-by-Step Guide for Owners, Investors, and Developers
+
+Determining the highest and best use of a property in Austin requires a structured analysis of legal zoning, physical capacity, market demand, and financial feasibility to identify the configuration that maximizes value. This step-by-step guide helps owners, investors, and developers uncover the gap between what a property is worth today and what it could be worth in Austin's rapidly evolving real estate landscape.
+
+Most property owners in Austin know what their land is worth today. Far fewer know what it could be worth. That gap, between current use value and highest and best use value, is where significant wealth is either captured or left behind.
+
+Whether you own a single-family lot in <a href="/communities/tarrytown" class="${LINK}">Tarrytown</a>, a commercial parcel along South Congress, raw acreage in <a href="/communities/lakeway" class="${LINK}">Lakeway</a>, or an aging fourplex in <a href="/communities/east-austin" class="${LINK}">East Austin</a>, the question is the same: are you holding the property in its most valuable form?
+
+Highest and best use analysis is the foundational framework appraisers, developers, and sophisticated <a href="/austin-real-estate-investment" class="${LINK}">investors</a> use to answer that question. It is not a speculative exercise. It is a structured, evidence-based process that examines what a property is legally allowed to become, what it is physically capable of supporting, what the market will actually absorb, and what configuration generates the most value.
+
+In Austin, where zoning is actively evolving, where neighborhood character is shifting, and where development pressure is reshaping corridors from East 6th Street to FM 620, the gap between as-is value and highest and best use value can be substantial. A property sitting on a transitional corridor, encumbered by outdated improvements, or underutilized relative to its legal entitlements may be worth materially more than its current use suggests.
+
+This guide walks through the process step by step, with specific references to Austin's regulatory landscape, market dynamics, and development patterns. It is written for property owners, landowners, investors, builders, and anyone making a significant decision about Austin real estate. The goal is to help you think clearly about what you actually own before you sell, develop, or acquire. If you are evaluating raw land specifically, our <a href="/austin-land-development-opportunities" class="${LINK}">Austin land development opportunities</a> and <a href="/land-for-sale-austin" class="${LINK}">land for sale in Austin</a> resources offer additional context on what is currently moving in the market.
+
+## Step 1: Understand What Highest and Best Use Actually Means
+
+The term gets used loosely, but it has a precise definition in appraisal practice. Highest and best use is the reasonably probable use of a property that is legally permissible, physically possible, financially feasible, and maximally productive. That definition comes from the Appraisal Institute and is the standard applied in every credible MAI appraisal.
+
+Each element in that definition carries weight. "Reasonably probable" means you are not analyzing fantasy scenarios. "Legally permissible" means the use must conform to zoning, deed restrictions, and applicable regulations. "Physically possible" means the site can actually support the use. "Financially feasible" means the economics work. And "maximally productive" means, among all feasible uses, which one generates the highest value.
+
+The four tests are a sequential filter, not a checklist. Order matters. You do not run a financial feasibility analysis on a use that is not legally permissible. You do not assess market demand for a building configuration the site cannot physically accommodate. Each test eliminates options before you advance to the next one. This keeps the analysis grounded and prevents the common mistake of falling in love with a use scenario that fails at the first gate.
+
+There is also an important distinction between highest and best use as vacant and highest and best use as improved. The first asks: if this land were bare, what would a rational developer build? The second asks: given the existing improvements, does it make more sense to retain them, renovate them, or demolish and start over? Both analyses are relevant, and in many Austin situations, they produce different answers.
+
+A property with a 1960s ranch house in East Austin might have a highest and best use as vacant that points toward multifamily development. But as improved, the existing structure might generate enough rental income to justify holding it while entitlements are pursued. These are not the same decision, and conflating them leads to poor outcomes.
+
+Highest and best use is also not about what an owner wants, what a buyer might pay emotionally, or what the neighborhood used to look like. It is a market-driven, evidence-based conclusion. That discipline is precisely what makes it useful.
+
+### What is highest and best use in real estate?
+
+Highest and best use is the legally permissible, physically possible, financially feasible, and maximally productive use of a property. It is the standard framework used by MAI appraisers to determine a property's true market value, and it forms the foundation of every credible land valuation, development pro forma, and acquisition analysis.
+
+## Step 2: Run the Legal Permissibility Test for Your Austin Property
+
+Legal permissibility is the first filter, and in Austin, it is more complex than it used to be. The city's Land Development Code has undergone significant changes in recent years, and understanding where your property stands requires looking at multiple layers of regulation simultaneously.
+
+Start with base zoning. Austin's zoning districts range from SF-1 (large-lot single-family) through SF-6 (townhouse and condominium) on the residential side, and include MF-1 through MF-6 for multifamily uses at increasing densities. <a href="/austin-commercial-real-estate" class="${LINK}">Commercial districts</a> include CS (commercial services), GR (general retail), GO (general office), LO (limited office), NO (neighborhood office), and others. Industrial and mixed-use designations add further complexity. Each district specifies what is permitted by right, what requires a conditional use permit, and what is prohibited outright.
+
+Account for Austin's HOME Ordinance changes. Austin's HOME (Home Options for Middle-income Empowerment) Ordinance, passed in phases in 2023 and 2024, eliminated single-family-only zoning on most urban Austin lots. Many properties previously restricted to one unit per lot can now accommodate duplexes or triplexes by right. This is a material change that directly affects highest and best use analysis for urban residential parcels throughout the city. If you have not reviewed your property's entitlements since 2022, the current picture may be meaningfully different.
+
+Overlay districts add another layer. Several overlays can restrict or expand what is permissible beyond base zoning. The Waterfront Overlay applies along Lady Bird Lake and governs height, setbacks, and use near the shoreline. Capitol View Corridors restrict building heights across large portions of central Austin to protect sightlines to the Capitol. The Airport Overlay limits height near Austin-Bergstrom. Neighborhood Conservation Combining Districts (NCCDs) in areas like <a href="/communities/hyde-park" class="${LINK}">Hyde Park</a> and Bouldin Creek impose additional use and design restrictions. Historic Districts and individually designated landmarks carry their own constraints.
+
+Deed restrictions are often more binding than zoning. In neighborhoods like Tarrytown, Barton Hills, and <a href="/communities/westlake-hills" class="${LINK}">Westlake Hills</a>, private deed covenants frequently restrict uses to single-family residential regardless of what the city's zoning might otherwise allow. These are private agreements that run with the land and are enforceable by neighboring property owners. They do not show up in a simple zoning lookup. A title search and review of recorded restrictions is essential before drawing any conclusions about permissible use.
+
+ETJ properties operate under different rules. Land within Austin's extraterritorial jurisdiction (ETJ) but outside city limits is not subject to Austin's zoning code. These properties fall under county regulations in Travis, Williamson, or Hays County, which are generally less restrictive. This can create significant development flexibility, but it also means fewer services and infrastructure, which affects feasibility. ETJ status can change as cities annex territory, so current status should be confirmed with the relevant county.
+
+Rezoning and variances are tools, not guarantees. If current zoning does not support your preferred use, rezoning or a variance may be possible, but both carry real risk. Austin's rezoning process involves public hearings, neighborhood input, and City Council approval. Timelines are measured in months, not weeks. Outcomes are not certain. A highest and best use analysis should identify rezoning potential as a scenario, not an assumption.
+
+### How does zoning affect property value?
+
+Zoning directly controls what can be built on a property, which determines the income it can generate or the demand it can attract. A parcel zoned for multifamily development is generally worth more per square foot than an adjacent parcel restricted to single-family use, because the multifamily entitlement supports a higher-density, higher-revenue development. Zoning is one of the primary drivers of land value, which is why changes to Austin's code, including the HOME Ordinance, have had measurable effects on how urban residential lots are valued.
+
+## Step 3: Assess Physical Constraints and Site Capabilities
+
+Once you know what is legally permissible, the next question is whether the site can actually support it. Physical constraints are often underestimated by property owners and can dramatically narrow the range of viable uses, even when zoning appears favorable.
+
+Lot size, configuration, and frontage matter more than owners typically realize. Current code sets minimum lot sizes for various uses, and irregular configurations, flag lots, or narrow frontages can reduce the buildable envelope significantly. A lot that appears large on paper may have limited usable area once setbacks, easements, and access requirements are applied.
+
+Topography is a major cost driver in Austin. The Hill Country terrain that makes Austin visually distinctive also creates significant engineering challenges. Steep grades in <a href="/communities/barton-creek" class="${LINK}">Barton Creek</a>, Westlake, and the <a href="/communities/lake-travis" class="${LINK}">Lake Travis</a> corridor mean higher foundation costs, extensive grading, retaining walls, and drainage infrastructure. A site that appears financially feasible on flat land may not pencil on a hillside lot once civil engineering costs are properly accounted for. This is one reason why a site visit with a civil engineer or land planner before any financial modeling is often the most efficient first step.
+
+Floodplain significantly constrains development in many desirable areas. FEMA flood zones and Austin's Waterway Overlay affect properties near Barton Creek, Bull Creek, <a href="/communities/lake-austin" class="${LINK}">Lake Austin</a>, and other waterways. Floodplain land is not necessarily worthless, but its development envelope is sharply reduced. Buildings cannot typically be placed in the 100-year floodplain, and even floodplain-adjacent properties face restrictions on impervious cover and grading. Understanding the precise floodplain boundaries on a given parcel requires reviewing current FEMA maps and, in some cases, a site-specific survey.
+
+Environmental overlays are among the most restrictive constraints in Austin. The Barton Springs Zone, Edwards Aquifer Contributing Zone, and Edwards Aquifer Recharge Zone all impose strict impervious cover limits in southwest Austin and Hays County. The Save Our Springs (SOS) Ordinance, unique to Austin, limits impervious cover to as little as 15 to 25 percent on many properties in these zones. For context, a standard urban development might use 50 to 80 percent impervious cover. These restrictions fundamentally alter what can be built and how dense it can be, which is why highest and best use in southwest Austin often remains large-lot luxury residential rather than the denser alternatives that might otherwise be financially superior.
+
+Utility availability affects feasibility in ETJ and rural areas. Many parcels outside city limits lack access to public water and sewer. Extending these utilities, or installing septic and well systems, adds cost and complexity that must be factored into any development analysis. Some rural Travis County parcels that appear attractively priced on a per-acre basis become significantly less compelling once infrastructure costs are modeled.
+
+Austin's Heritage Tree Ordinance can materially affect site planning. Trees 19 inches in diameter or greater are classified as Heritage Trees under Austin's Land Development Code (Chapter 25-8) and are protected from removal without a permit. These trees can limit where buildings, driveways, and utilities can be placed, reducing the effective buildable area and increasing design complexity. A site with multiple Heritage Trees may require a certified arborist's report and a tree protection plan before development can proceed.
+
+Legal access and frontage affect commercial viability. For commercial uses, visibility and access from a major arterial are often prerequisites for financial feasibility. Properties with access only via easement, or with curb cut restrictions on high-traffic corridors, may be legally permitted for commercial use but practically unsuitable for it.
+
+## Step 4: Analyze Market Demand and Identify Viable Use Scenarios
+
+After filtering for legal and physical constraints, you have a narrowed set of uses that are theoretically viable. The next step is to test each against actual market demand. A use that is permitted and physically possible still fails if the local market cannot absorb it.
+
+Residential scenarios vary significantly by location and lot characteristics. In established neighborhoods with strong school districts, teardown and luxury rebuild is often the most financially compelling path. In areas where lot dimensions permit, lot splits or small-lot subdivisions can unlock value by creating multiple sellable parcels from a single larger one. East Austin and <a href="/communities/mueller" class="${LINK}">Mueller</a> have demonstrated how successful infill subdivision can generate returns that far exceed what a single-family hold would produce. Under Austin's HOME Ordinance, ADU additions and duplex or triplex conversions are now viable on many urban lots that previously had no such option.
+
+Multifamily scenarios are active across multiple Austin corridors. The East Riverside corridor, North Loop area, and portions of North Lamar have seen consistent multifamily development activity. Under the HOME Ordinance, duplexes, triplexes, and fourplexes are now permitted by right on many urban Austin lots, opening a range of smaller-scale multifamily scenarios that did not exist under the prior code. Larger multifamily development requires MF zoning or a rezoning, and the financial feasibility of these projects is sensitive to construction costs, cap rates, and local rent levels.
+
+Commercial and mixed-use scenarios are corridor-specific. South Congress, East 6th Street, North Lamar, and areas adjacent to the Domain have supported ground-floor retail with residential above, but these uses require sufficient pedestrian traffic, parking solutions, and tenant demand to be financially viable. Not every commercially zoned parcel in Austin is suitable for retail, and the distinction between what is legally permitted and what the market will support is particularly important in commercial analysis. Our <a href="/commercial-investment" class="${LINK}">commercial investment</a> practice works through these distinctions on a corridor-by-corridor basis.
+
+Redevelopment scenarios are common in transitional areas. Aging commercial or light industrial properties in East Austin and along the 183 corridor have been converted to residential, mixed-use, and creative office uses over the past decade. These redevelopment plays often require rezoning or compatibility adjustments, but when the underlying land value justifies it, the return on repositioning can be compelling.
+
+Assemblage opportunities deserve specific attention. When adjacent parcels can be combined, the resulting site may support a development scale that individual lots cannot. This is a meaningful value driver in transitional neighborhoods where individual lots are too small to support the highest-density permitted use. Identifying assemblage potential requires understanding not just your own parcel but the ownership and disposition of neighboring properties. Many of these opportunities never surface publicly and are sourced through <a href="/off-market-real-estate-austin" class="${LINK}">off-market channels</a>.
+
+Market absorption is the final check. For each viable use scenario, assess whether there is actual demand in that specific submarket. A multifamily project that pencils financially is still not viable if the local market is oversupplied or if comparable projects are experiencing high vacancy. Absorption analysis requires current <a href="/market-intelligence" class="${LINK}">market data</a>, not assumptions based on conditions from prior cycles.
+
+### Can a property's highest and best use change?
+
+Yes, and in Austin it has changed frequently. Regulatory changes like the HOME Ordinance have altered the highest and best use of thousands of urban residential parcels. Shifts in neighborhood demographics, infrastructure investment, and market demand can all move the highest and best use of a property over time. This is why a highest and best use analysis has a defined effective date and should be revisited when conditions change materially.
+
+## Step 5: Conduct Financial Feasibility Analysis and Calculate Residual Land Value
+
+Financial feasibility is where most theoretically permissible and physically possible uses are eliminated in practice. This is the test that separates what is allowed from what actually makes economic sense.
+
+The residual land value method is the standard tool. The logic works backward from the finished product. Start with the gross development value, the total revenue a completed project would generate through sales or capitalized rental income. Then subtract all costs: construction, soft costs (architecture, engineering, permitting, legal), financing costs, developer profit, and contingency. What remains is the residual land value, the maximum price a rational developer can pay for the land and still achieve their required return.
+
+The formula structure looks like this:
+
+Gross Development Value minus construction costs, minus soft costs, minus financing costs, minus developer profit and contingency equals Residual Land Value.
+
+Understanding this framework changes how you negotiate. A property owner who can work through this logic, even at a high level, can evaluate whether a developer's offer reflects the property's actual development potential or whether it is anchored to a more conservative assumption. Developers present offers based on their pro formas. If you understand the inputs, you can assess whether those assumptions are reasonable or whether there is room to negotiate. A grounded <a href="/home-value-austin" class="${LINK}">home value</a> conversation should account for these inputs rather than rely on automated estimates alone.
+
+To illustrate the concept, consider a hypothetical scenario. Imagine a 10,000 square foot lot in East Austin with multifamily zoning. A developer evaluating this site would start by projecting the number of units they can build, the achievable rents, and the resulting net operating income. They would then apply a market cap rate to determine the stabilized property value. From that value, they subtract construction cost per unit, soft costs, financing, and their required profit margin. The number that remains is what they can rationally pay for the land. If that number is lower than what the seller expects, the deal does not happen. If it is higher, there may be room for a premium.
+
+Austin-specific cost context matters significantly right now. Construction costs, permitting timelines, and impact fees in Austin have all increased materially over the past several years. A pro forma built on 2021 assumptions is not a reliable guide to what pencils in 2026. Any financial feasibility analysis should use current cost data, current market rents or sale prices, and current financing terms.
+
+Cap rates, construction costs, and financing conditions vary by use type and submarket. A multifamily project in East Austin operates under different economics than a commercial development near the Domain or a luxury residential teardown in Westlake. Generic analysis rarely produces useful conclusions. The inputs need to reflect the specific use, the specific submarket, and current <a href="/austin-luxury-market-trends" class="${LINK}">market conditions</a>.
+
+### How do developers determine land value?
+
+Developers use the residual land value method: they start with the projected value of the completed development, subtract all costs including construction, soft costs, financing, and required profit, and the remaining figure represents the maximum they can pay for land. This is why land value is directly tied to development economics, and why changes in construction costs or market rents affect what developers will offer for sites.
+
+## Step 6: Apply Austin-Specific Market Context and Identify Redevelopment Signals
+
+The four-test framework is universal. Applying it well in Austin requires knowing how each submarket behaves, what constraints are operative, and where development pressure is actually moving.
+
+Westlake and the 78746 zip code represent one of Austin's most distinctive land value situations. On premium lots in this submarket, the land value frequently exceeds the value of the existing improvement. Teardown and luxury rebuild is often the highest and best use as vacant, while the as-improved analysis may still support demolition if the existing structure is functionally obsolete relative to what the market demands. Buyers in this submarket are often acquiring the land, the view, the school district, and the address, not the building.
+
+Tarrytown and <a href="/communities/pemberton-heights" class="${LINK}">Pemberton Heights</a> present a different dynamic. Deed restrictions and neighborhood conservation overlays in these areas limit density, making high-density redevelopment generally infeasible regardless of what base zoning might suggest. However, teardown values for luxury single-family remain strong, and the premium for location in these established neighborhoods continues to support significant land values on a per-lot basis. The constraint here is not demand but entitlement.
+
+East Austin is the most active redevelopment corridor in the city. Older single-family and light commercial properties have been converted to multifamily, mixed-use, and short-term rental portfolios at scale over the past decade. Assemblage plays are common, with investors acquiring adjacent lots to reach the site size needed for more significant projects. The pace of change in East Austin means that highest and best use conclusions from even a few years ago may no longer reflect current conditions.
+
+Mueller is a master-planned infill community with specific land use designations that govern what can be built on each parcel. Remaining development sites are limited, but demand signals for residential and mixed-use remain strong. The structured nature of the Mueller plan means that highest and best use analysis here is more constrained by the master plan than by standard zoning analysis.
+
+Barton Creek and southwest Austin are shaped primarily by the SOS Ordinance and Edwards Aquifer constraints. Impervious cover limits are significantly more restrictive than elsewhere in Austin, which means denser development often fails the financial feasibility test even when it would otherwise be legally permissible. Highest and best use in much of this area remains large-lot luxury residential, with premium placed on views, privacy, and natural setting rather than development density. <a href="/communities/spanish-oaks" class="${LINK}">Spanish Oaks</a>, <a href="/communities/rob-roy" class="${LINK}">Rob Roy</a>, and <a href="/communities/davenport-ranch" class="${LINK}">Davenport Ranch</a> all illustrate how these constraints have shaped the residential character of southwest and west Austin over time.
+
+Lakeway and the Lake Travis corridor are experiencing rapid population growth, improving infrastructure, and increasing commercial demand. Some residential parcels along major corridors may have commercial or mixed-use potential as the submarket continues to mature. This is a corridor worth watching for assemblage and repositioning opportunities over the next several years.
+
+Common mistakes property owners make in this process:
+
+Assuming current use equals highest and best use. Many properties are held in a use that made sense when they were acquired but no longer reflects current entitlements, market conditions, or neighborhood context.
+
+Failing to account for overlay restrictions. A zoning lookup that shows favorable base zoning can be misleading if an overlay district, deed restriction, or environmental constraint materially limits what can actually be built.
+
+Over-relying on Zillow or tax appraisal values. These tools are useful for general orientation but are not designed to capture land value nuance, development potential, or the premium associated with specific entitlements or site characteristics. A more rigorous approach to <a href="/home-value-austin" class="${LINK}">property valuation</a> is essential for any significant land decision.
+
+Not consulting a civil engineer before making development assumptions. Topography, utilities, drainage, and tree constraints can all materially affect what a site can support. A preliminary civil review is often the fastest way to identify constraints that would otherwise only surface during the permitting process.
+
+### Should I sell or develop my property?
+
+The answer depends on your financial position, risk tolerance, timeline, and the gap between as-is value and development value. If the residual land value significantly exceeds the as-is value and you have the capital and appetite for development risk, there may be a compelling case for developing. If the gap is modest, or if development risk and timeline do not fit your situation, <a href="/sell-private" class="${LINK}">selling to an informed buyer</a> at a price that reflects the property's highest and best use may produce a better risk-adjusted outcome. This is precisely the kind of analysis a qualified advisor should help you work through before you commit to either path.
+
+## Putting It All Together: Why Professional Analysis Changes the Outcome
+
+The five steps outlined above form a decision framework, not just an academic exercise. Legal permissibility checked. Physical constraints mapped. Viable use scenarios identified. Financial feasibility modeled. Market demand confirmed. Working through each step systematically produces a conclusion that is defensible, actionable, and grounded in evidence rather than assumption.
+
+In a market as dynamic as Austin, where zoning is actively changing and development pressure is shifting by corridor, what was true three years ago may not be true today. The HOME Ordinance changes alone have altered the highest and best use analysis for a significant portion of Austin's urban residential parcels. Environmental and infrastructure constraints in growth corridors are evolving as municipalities respond to population pressure. Cap rates and construction economics have moved materially.
+
+The practical implication is straightforward: before you sell, develop, hold, or acquire a significant piece of Austin real estate, obtain a professional highest and best use analysis from a qualified MAI appraiser or experienced land advisor. The cost of that analysis is modest relative to the decisions it informs. The cost of making a major land decision without it can be substantial.
+
+<a href="/about-austin-real-estate-advisory" class="${LINK}">Echelon Property Group</a> works with landowners, investors, and developers across Austin to evaluate land and development opportunities with the depth of analysis these decisions require. If you are working through a land decision and want a grounded, experienced perspective on what your property could become, <a href="/contact" class="${LINK}">learn more about our services</a>.
+`
+  },
   {
     id: "how-to-price-a-luxury-home-in-austin",
     title: "How to Price a Luxury Home in Austin: A Strategic Guide for High-End Real Estate Sellers",

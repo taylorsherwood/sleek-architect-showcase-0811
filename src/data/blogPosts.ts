@@ -125,7 +125,7 @@ Q: Can luxury homes be sold off market in Austin?
 A: Yes. A meaningful share of Austin luxury transactions above $2M close through private, off-market, or quietly distributed channels. Off-market sales protect privacy, control exposure, and can preserve pricing leverage when discretion matters more than maximum public exposure. Echelon Property Group regularly represents sellers through both public and private channels depending on the strategic objective.
 :::
 
-## A Strategic Conclusion
+## Summary
 
 Luxury pricing is rarely about finding the highest number.
 

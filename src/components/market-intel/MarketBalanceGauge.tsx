@@ -15,6 +15,8 @@ interface Props {
   marketUuid?: string;
   /** Optional eyebrow override. */
   eyebrow?: string;
+  /** Hide the inline "Last Updated" timestamp (parent will render it). */
+  hideLastUpdated?: boolean;
 }
 
 const NAVY = "#0C0F24";

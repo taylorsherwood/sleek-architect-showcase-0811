@@ -536,7 +536,7 @@ const Sell = () => {
                 {
                   title: "Presentation Impacts Perceived Value",
                   body:
-                    "Professional marketing — cinematic video, drone media, editorial photography, and custom property websites — is now baseline for luxury listings in Austin.",
+                    "Professional marketing, including cinematic video, drone media, editorial photography, and custom property websites, is now baseline for luxury listings in Austin.",
                 },
                 {
                   title: "Inventory Remains Limited",
@@ -750,7 +750,7 @@ const Sell = () => {
                   >
                     <img
                       src="https://www.luxuryhomemarketing.com/en/logo.html?m=47b7631918fd737ab569ce1c45792b4b&v=12"
-                      alt="Certified Luxury Home Marketing Specialist (CLHMS) — verified member"
+                      alt="Certified Luxury Home Marketing Specialist (CLHMS), verified member"
                       className="h-[72px] md:h-[84px] w-auto object-contain"
                       loading="lazy"
                       decoding="async"

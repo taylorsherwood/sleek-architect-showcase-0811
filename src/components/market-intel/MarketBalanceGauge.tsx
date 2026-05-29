@@ -327,7 +327,7 @@ function Spectrum({ score }: { score: number }) {
       {/* Indicator */}
       <div
         className="absolute -translate-x-1/2 motion-safe:transition-[left] motion-safe:duration-[900ms] motion-safe:ease-[cubic-bezier(0.22,0.61,0.36,1)]"
-        style={{ left: `${pct}%`, top: "1px" }}
+        style={{ left: `${pct}%`, top: "9px" }}
       >
         <div
           className="gauge-dot-pulse absolute left-1/2 -translate-x-1/2 -top-[5px] w-[14px] h-[14px] rounded-full"

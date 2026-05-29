@@ -31,13 +31,11 @@ const AustinLandDevelopmentOpportunities = () => {
   const [loading, setLoading] = useState(false);
 
   const fireConversion = () => {
+    // Google Ads "Submit lead form" conversion is fired centrally by
+    // submitLeadToZapier() → trackLead(). Only fire the page-specific
+    // custom event label here.
     const gtagFn = (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag;
     if (typeof gtagFn === "function") {
-      gtagFn("event", "conversion", {
-        send_to: "AW-17598090760/BHb7CPuQr4scEIictsdB",
-        value: 1.0,
-        currency: "USD",
-      });
       gtagFn("event", "Land_Dev_Lead", {
         event_category: "Lead",
         event_label: form.use || "General",

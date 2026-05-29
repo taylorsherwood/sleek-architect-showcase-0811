@@ -58,17 +58,38 @@ export function trackPageView(path?: string): void {
   });
 }
 
-/** Fire a GA4 generate_lead conversion. Used by the central form submitter. */
+/**
+ * Google Ads conversion ID for the "Submit lead form" conversion action.
+ * Fired site-wide on every successful lead submission via submitLeadToZapier().
+ */
+export const GOOGLE_ADS_LEAD_CONVERSION_ID =
+  "AW-17598090760/BHb7CPuQr4scEIictsdB";
+
+/** Fire a GA4 generate_lead event AND the Google Ads conversion for "Submit lead form".
+ *  Called centrally from submitLeadToZapier() after a successful response, so every
+ *  form using the shared utility reports both events consistently.
+ */
 export function trackLead(params: {
   source: string;
   value?: number;
   currency?: string;
   email?: string;
 }): void {
+  const value = params.value ?? 1.0;
+  const currency = params.currency || "USD";
+
+  // GA4 lead event
   trackEvent("generate_lead", {
-    currency: params.currency || "USD",
-    value: params.value ?? 0,
+    currency,
+    value,
     lead_source: params.source,
     // Don't send PII as event params; hashing/identity is left to GA config.
+  });
+
+  // Google Ads "Submit lead form" conversion
+  trackEvent("conversion", {
+    send_to: GOOGLE_ADS_LEAD_CONVERSION_ID,
+    value,
+    currency,
   });
 }

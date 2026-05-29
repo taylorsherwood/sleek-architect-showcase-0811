@@ -20,6 +20,7 @@ import blogEchelonApproach from "@/assets/blog/taylor-sherwood-echelon-approach.
 import blogEchelonApproachHero from "@/assets/blog/echelon-approach-hero.jpg";
 import blogAustinLuxuryMarketAnalysis from "@/assets/blog/austin-luxury-market-analysis.jpg";
 import blogPriceLuxuryHomeAustin from "@/assets/blog/how-to-price-luxury-home-austin.jpg";
+import blogHighestAndBestUse from "@/assets/blog/highest-and-best-use-property-austin.webp";
 
 
 

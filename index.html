@@ -9,7 +9,7 @@
       (function () {
         try {
           var isDeepLink = window.location.pathname !== '/';
-          var hasGenericHomeTitle = document.title === 'Echelon Property Group';
+          var hasGenericHomeTitle = document.title === 'Echelon Property Group' || document.title === 'Echelon Property Group — Austin Luxury Real Estate';
           if (isDeepLink && hasGenericHomeTitle) {
             document.documentElement.setAttribute('data-route-pending', 'true');
           }

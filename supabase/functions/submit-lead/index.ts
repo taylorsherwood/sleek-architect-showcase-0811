@@ -150,12 +150,17 @@ Deno.serve(async (req) => {
     }
 
     if (!payload.name || !payload.email || (!payload.phone && !payload.message) || !emailRegex.test(payload.email)) {
-      console.warn("Submission blocked: missing required fields", payload);
+      console.warn("[Lead submit] blocked: missing required fields", {
+        source: payload.source,
+        page: payload.page,
+      });
       return json({ ok: false, blocked: true, error: "Submission blocked: missing required fields" }, 400);
     }
 
-    console.log("Validation passed");
-    console.log("[Lead submit] outgoing payload", payload);
+    console.log("[Lead submit] payload received", {
+      source: payload.source,
+      page: payload.page,
+    });
 
     const supabaseUrl = Deno.env.get("SUPABASE_URL");
     const serviceRoleKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY");
@@ -216,8 +221,10 @@ Deno.serve(async (req) => {
     });
 
     if (!insertRes.ok) {
-      const detail = await insertRes.text();
-      console.error("[Lead capture] DB insert failed", detail);
+      // Drain the body to avoid resource leak, but don't log it — PostgREST
+      // error bodies can echo row values (PII). Status code is enough.
+      await insertRes.text().catch(() => "");
+      console.error(`[Lead capture] DB insert failed status=${insertRes.status}`);
       return json({ ok: false, error: "Lead could not be saved." }, 500);
     }
 

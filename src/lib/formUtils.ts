@@ -8,7 +8,7 @@
  * even if Zapier fails or the webhook URL changes.
  */
 import { supabase } from "@/integrations/supabase/client";
-import { trackLead } from "@/lib/analytics";
+import { trackLead, getAdsClickIds } from "@/lib/analytics";
 
 /** Reads UTM parameters from the current URL. */
 function getUtmFromUrl(): Record<string, string> {
@@ -22,6 +22,14 @@ function getUtmFromUrl(): Record<string, string> {
     }
   );
   return out;
+}
+
+/** Splits a "First Last" string into first/last name parts. */
+function splitName(full: string): { firstName?: string; lastName?: string } {
+  const parts = full.trim().split(/\s+/);
+  if (parts.length === 0 || !parts[0]) return {};
+  if (parts.length === 1) return { firstName: parts[0] };
+  return { firstName: parts[0], lastName: parts.slice(1).join(" ") };
 }
 
 /**
@@ -171,11 +179,16 @@ export async function submitLeadToZapier(
   }
 
   try {
+    // Forward Google Ads click IDs (gclid/gbraid/wbraid) so they're stored on
+    // the lead record alongside UTMs for offline conversion attribution.
+    const clickIds = getAdsClickIds();
+    const extraWithClickIds = { ...(data.extra || {}), ...clickIds };
+
     const { data: response, error } = await supabase.functions.invoke("submit-lead", {
       body: {
         payload,
         webhookUrl,
-        extra: data.extra || {},
+        extra: extraWithClickIds,
         utm: getUtmFromUrl(),
         referrer: typeof document !== "undefined" ? document.referrer || "" : "",
         userAgent: typeof navigator !== "undefined" ? navigator.userAgent || "" : "",
@@ -187,8 +200,21 @@ export async function submitLeadToZapier(
       return { ok: false, error: String(response.error || "Submission failed.") };
     }
 
-    // Fire GA4 conversion for every successful lead capture site-wide.
-    trackLead({ source: payload.source, email: payload.email });
+    // Fire GA4 generate_lead + Google Ads "Submit lead form" conversion with
+    // Enhanced Conversions payload. Prefer explicit first/last name from extras
+    // (community gates, etc.); fall back to splitting the combined name.
+    const extraFirst =
+      typeof data.extra?.first_name === "string" ? (data.extra.first_name as string) : undefined;
+    const extraLast =
+      typeof data.extra?.last_name === "string" ? (data.extra.last_name as string) : undefined;
+    const split = splitName(payload.name);
+    trackLead({
+      source: payload.source,
+      email: payload.email,
+      phone: payload.phone || undefined,
+      firstName: extraFirst || split.firstName,
+      lastName: extraLast || split.lastName,
+    });
 
     return { ok: true };
   } catch (err) {

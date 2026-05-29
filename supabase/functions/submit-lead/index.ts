@@ -221,6 +221,33 @@ Deno.serve(async (req) => {
       return json({ ok: false, error: "Lead could not be saved." }, 500);
     }
 
+    // ── Meta Conversions API: server-side Lead event ───────────────
+    // Fires exactly once per successful lead (lead row is now persisted).
+    // event_id == leadId so the browser Pixel can deduplicate.
+    const metaEventId = leadId;
+    const nameParts = payload.name.trim().split(/\s+/);
+    const extraFirst = clean((body?.extra as Record<string, unknown> | undefined)?.first_name);
+    const extraLast = clean((body?.extra as Record<string, unknown> | undefined)?.last_name);
+    const fbp = clean((body?.extra as Record<string, unknown> | undefined)?.fbp);
+    const fbc = clean((body?.extra as Record<string, unknown> | undefined)?.fbc);
+    const clientIp =
+      req.headers.get("x-forwarded-for")?.split(",")[0].trim() ||
+      req.headers.get("cf-connecting-ip") ||
+      undefined;
+    // Fire-and-await but never throw — Zapier path must still run if CAPI fails.
+    await sendMetaCapiLead({
+      eventId: metaEventId,
+      eventSourceUrl: payload.page || "",
+      email: payload.email,
+      phone: payload.phone || undefined,
+      firstName: extraFirst || nameParts[0],
+      lastName: extraLast || (nameParts.length > 1 ? nameParts.slice(1).join(" ") : undefined),
+      userAgent: clean(body?.userAgent) || undefined,
+      clientIp,
+      fbp: fbp || undefined,
+      fbc: fbc || undefined,
+    });
+
     const webhookUrl = clean(body?.webhookUrl);
     if (!webhookUrl || !webhookUrl.startsWith("https://hooks.zapier.com/hooks/catch/")) {
       return json({ ok: false, error: "Invalid lead webhook." }, 400);

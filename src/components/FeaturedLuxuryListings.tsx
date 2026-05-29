@@ -167,7 +167,7 @@ const FeaturedLuxuryListings = () => {
         <div className="max-w-7xl mx-auto">
           {/* Subtle transition line */}
           <p
-            className="text-muted-foreground/40 mb-10 font-semibold"
+            className="text-muted-foreground/40 mb-10 font-semibold whitespace-pre-line"
             style={{
               fontSize: "0.65rem",
               letterSpacing: "0.35em",
@@ -175,7 +175,7 @@ const FeaturedLuxuryListings = () => {
               fontFamily: '"Jost", sans-serif',
             }}
           >
-            UPDATED: MAY 2026
+            LAST UPDATED: MAY 2026{"\n\n\n\n"}
           </p>
 
           {/* PRIMARY ROW: Hero (70%) + 2 stacked (30%) */}

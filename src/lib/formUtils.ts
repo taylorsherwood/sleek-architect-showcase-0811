@@ -182,7 +182,16 @@ export async function submitLeadToZapier(
     // Forward Google Ads click IDs (gclid/gbraid/wbraid) so they're stored on
     // the lead record alongside UTMs for offline conversion attribution.
     const clickIds = getAdsClickIds();
-    const extraWithClickIds = { ...(data.extra || {}), ...clickIds };
+    // Forward Meta Pixel cookies so the server-side CAPI event can match the
+    // browser Pixel event for the same user (improves Meta event quality).
+    const fbp = readCookie("_fbp");
+    const fbc = readCookie("_fbc");
+    const extraWithClickIds = {
+      ...(data.extra || {}),
+      ...clickIds,
+      ...(fbp ? { fbp } : {}),
+      ...(fbc ? { fbc } : {}),
+    };
 
     const { data: response, error } = await supabase.functions.invoke("submit-lead", {
       body: {
@@ -216,9 +225,42 @@ export async function submitLeadToZapier(
       lastName: extraLast || split.lastName,
     });
 
+    // Meta Pixel browser-side Lead event, deduplicated with the server CAPI
+    // event via the shared event_id returned by the edge function.
+    const metaEventId =
+      response && typeof response === "object" && "metaEventId" in response
+        ? String((response as { metaEventId?: unknown }).metaEventId || "")
+        : "";
+    fireMetaPixelLead(metaEventId);
+
     return { ok: true };
   } catch (err) {
     const errMsg = err instanceof Error ? err.message : "Network error";
     return { ok: false, error: errMsg || "Network error. Please try again." };
+  }
+}
+
+/** Reads a browser cookie value by name. */
+function readCookie(name: string): string {
+  if (typeof document === "undefined") return "";
+  const match = document.cookie.match(
+    new RegExp("(?:^|;\\s*)" + name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "=([^;]*)")
+  );
+  return match ? decodeURIComponent(match[1]) : "";
+}
+
+/** Fires a Meta Pixel Lead event with a shared event_id for CAPI dedupe. */
+function fireMetaPixelLead(eventId: string): void {
+  if (typeof window === "undefined") return;
+  try {
+    const w = window as unknown as { fbq?: (...args: unknown[]) => void };
+    if (typeof w.fbq !== "function") return;
+    if (eventId) {
+      w.fbq("track", "Lead", {}, { eventID: eventId });
+    } else {
+      w.fbq("track", "Lead");
+    }
+  } catch {
+    /* never break the app for analytics */
   }
 }

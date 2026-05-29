@@ -3,6 +3,93 @@ const corsHeaders = {
   "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
 };
 
+const META_PIXEL_ID = "3408564002648259";
+const META_GRAPH_VERSION = "v19.0";
+
+/** SHA-256 hex hash (Meta CAPI requirement for PII). */
+async function sha256Hex(value: string): Promise<string> {
+  const data = new TextEncoder().encode(value);
+  const buf = await crypto.subtle.digest("SHA-256", data);
+  return Array.from(new Uint8Array(buf))
+    .map((b) => b.toString(16).padStart(2, "0"))
+    .join("");
+}
+
+function normPhoneForHash(v: string): string {
+  // Meta wants digits only, country code included. Assume US if 10 digits.
+  const digits = v.replace(/\D/g, "");
+  if (!digits) return "";
+  if (digits.length === 10) return `1${digits}`;
+  return digits;
+}
+
+/**
+ * Fire a Meta Conversions API "Lead" event. Safe-fails: never throws.
+ * Logs success/failure WITHOUT exposing PII or the access token.
+ * The caller-supplied event_id is shared with the browser Pixel for dedupe.
+ */
+async function sendMetaCapiLead(args: {
+  eventId: string;
+  eventSourceUrl: string;
+  email?: string;
+  phone?: string;
+  firstName?: string;
+  lastName?: string;
+  userAgent?: string;
+  clientIp?: string;
+  fbp?: string;
+  fbc?: string;
+}): Promise<void> {
+  const token = Deno.env.get("META_CAPI_ACCESS_TOKEN");
+  if (!token) {
+    console.warn("[Meta CAPI] skipped — META_CAPI_ACCESS_TOKEN not configured");
+    return;
+  }
+
+  const user_data: Record<string, unknown> = {};
+  if (args.email) user_data.em = [await sha256Hex(args.email.trim().toLowerCase())];
+  if (args.phone) {
+    const normed = normPhoneForHash(args.phone);
+    if (normed) user_data.ph = [await sha256Hex(normed)];
+  }
+  if (args.firstName) user_data.fn = [await sha256Hex(args.firstName.trim().toLowerCase())];
+  if (args.lastName) user_data.ln = [await sha256Hex(args.lastName.trim().toLowerCase())];
+  if (args.userAgent) user_data.client_user_agent = args.userAgent;
+  if (args.clientIp) user_data.client_ip_address = args.clientIp;
+  if (args.fbp) user_data.fbp = args.fbp;
+  if (args.fbc) user_data.fbc = args.fbc;
+
+  const event = {
+    event_name: "Lead",
+    event_time: Math.floor(Date.now() / 1000),
+    event_id: args.eventId,
+    event_source_url: args.eventSourceUrl,
+    action_source: "website",
+    user_data,
+  };
+
+  const url = `https://graph.facebook.com/${META_GRAPH_VERSION}/${META_PIXEL_ID}/events?access_token=${encodeURIComponent(token)}`;
+
+  try {
+    const res = await fetch(url, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ data: [event] }),
+    });
+    if (!res.ok) {
+      const detail = await res.text();
+      console.error(
+        `[Meta CAPI] Lead event failed status=${res.status} event_id=${args.eventId} detail=${detail.slice(0, 300)}`
+      );
+      return;
+    }
+    console.log(`[Meta CAPI] Lead event sent event_id=${args.eventId}`);
+  } catch (err) {
+    const msg = err instanceof Error ? err.message : "unknown error";
+    console.error(`[Meta CAPI] dispatch error event_id=${args.eventId} err=${msg}`);
+  }
+}
+
 type LeadPayload = {
   name?: string;
   email?: string;
@@ -134,6 +221,33 @@ Deno.serve(async (req) => {
       return json({ ok: false, error: "Lead could not be saved." }, 500);
     }
 
+    // ── Meta Conversions API: server-side Lead event ───────────────
+    // Fires exactly once per successful lead (lead row is now persisted).
+    // event_id == leadId so the browser Pixel can deduplicate.
+    const metaEventId = leadId;
+    const nameParts = payload.name.trim().split(/\s+/);
+    const extraFirst = clean((body?.extra as Record<string, unknown> | undefined)?.first_name);
+    const extraLast = clean((body?.extra as Record<string, unknown> | undefined)?.last_name);
+    const fbp = clean((body?.extra as Record<string, unknown> | undefined)?.fbp);
+    const fbc = clean((body?.extra as Record<string, unknown> | undefined)?.fbc);
+    const clientIp =
+      req.headers.get("x-forwarded-for")?.split(",")[0].trim() ||
+      req.headers.get("cf-connecting-ip") ||
+      undefined;
+    // Fire-and-await but never throw — Zapier path must still run if CAPI fails.
+    await sendMetaCapiLead({
+      eventId: metaEventId,
+      eventSourceUrl: payload.page || "",
+      email: payload.email,
+      phone: payload.phone || undefined,
+      firstName: extraFirst || nameParts[0],
+      lastName: extraLast || (nameParts.length > 1 ? nameParts.slice(1).join(" ") : undefined),
+      userAgent: clean(body?.userAgent) || undefined,
+      clientIp,
+      fbp: fbp || undefined,
+      fbc: fbc || undefined,
+    });
+
     const webhookUrl = clean(body?.webhookUrl);
     if (!webhookUrl || !webhookUrl.startsWith("https://hooks.zapier.com/hooks/catch/")) {
       return json({ ok: false, error: "Invalid lead webhook." }, 400);
@@ -175,7 +289,7 @@ Deno.serve(async (req) => {
     }
 
     console.log("Payload sent");
-    return json({ ok: true, leadId });
+    return json({ ok: true, leadId, metaEventId });
   } catch (error) {
     const message = error instanceof Error ? error.message : "Unknown error";
     console.error("[Lead submit] unhandled error", message);

@@ -147,6 +147,7 @@ export default function MarketBalanceGauge({
   fallbackMarketName,
   marketUuid: _marketUuid,
   eyebrow,
+  hideLastUpdated,
 }: Props) {
   const [data, setData] = useState<MarketMetricsResponse | null>(null);
   const [resolvedMarket, setResolvedMarket] = useState<string | null>(null);

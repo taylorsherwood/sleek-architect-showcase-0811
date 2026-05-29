@@ -149,6 +149,7 @@ export default function MarketBalanceGauge({
   const [data, setData] = useState<MarketMetricsResponse | null>(null);
   const [resolvedMarket, setResolvedMarket] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
+  const [loadedAt] = useState(() => new Date());
   const [error, setError] = useState<string | null>(null);
 
   const mapping = slug ? marketForSlug(slug) : null;
@@ -276,7 +277,13 @@ export default function MarketBalanceGauge({
                   className="mt-6 text-[11px] tracking-[0.22em] uppercase font-sans"
                   style={{ color: `${NAVY}66` }}
                 >
-                  Updated In Real Time
+                  Last Updated {loadedAt.toLocaleString("en-US", {
+                    month: "short",
+                    day: "numeric",
+                    year: "numeric",
+                    hour: "numeric",
+                    minute: "2-digit",
+                  })}
                 </p>
               </>
             )}

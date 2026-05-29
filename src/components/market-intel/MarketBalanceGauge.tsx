@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { fetchMetricsByMarketName, type MarketMetricsResponse } from "@/lib/agentIntel";
+import { fetchMetricsByMarketName, type MarketMetricsResponse, type MetricSeries } from "@/lib/agentIntel";
 import { computeMarketBalance, marketForSlug, type MarketBalance } from "@/lib/marketBalance";
 
 interface Props {
@@ -29,14 +29,122 @@ const SUPPORTING_METRICS = [
   "price_drop_rate",
 ];
 
-function advisoryCopy(b: MarketBalance, community: string): string {
-  if (b.label === "Seller's Market") {
-    return `Current ${community} conditions favor well-prepared sellers. Pricing discipline, presentation quality, and quiet positioning matter more than broad exposure.`;
+type PositionTier =
+  | "strong-buyer"
+  | "moderate-buyer"
+  | "balanced"
+  | "moderate-seller"
+  | "strong-seller";
+
+function tierForScore(score: number): PositionTier {
+  if (score <= 20) return "strong-buyer";
+  if (score <= 40) return "moderate-buyer";
+  if (score < 60) return "balanced";
+  if (score < 80) return "moderate-seller";
+  return "strong-seller";
+}
+
+const TIER_LABEL: Record<PositionTier, string> = {
+  "strong-buyer": "Strong Buyer Advantage",
+  "moderate-buyer": "Moderate Buyer Advantage",
+  "balanced": "Balanced Market",
+  "moderate-seller": "Moderate Seller Advantage",
+  "strong-seller": "Strong Seller Advantage",
+};
+
+function interpretation(tier: PositionTier, community: string): string {
+  switch (tier) {
+    case "strong-buyer":
+      return `Conditions in ${community} clearly favor buyers. Inventory, time on market, and negotiating posture are all working in the buyer's favor — patient, well-advised offers are finding meaningful concessions.`;
+    case "moderate-buyer":
+      return `Current ${community} conditions favor patient buyers. Negotiation leverage, contingency flexibility, and timing are creating opportunities that were less common in prior years.`;
+    case "balanced":
+      return `${community} is trading near balance. Neither buyers nor sellers hold a significant advantage — well-positioned homes continue to sell while buyers retain reasonable negotiating power.`;
+    case "moderate-seller":
+      return `Limited inventory and steady demand continue to support ${community} sellers, particularly for well-priced, well-presented homes. Pricing discipline and presentation matter more than broad exposure.`;
+    case "strong-seller":
+      return `${community} remains firmly in sellers' hands. Tight inventory and active buyer competition are sustaining list-price discipline and shorter market times for prepared sellers.`;
   }
-  if (b.label === "Buyer's Market") {
-    return `Conditions in ${community} have widened in favor of patient buyers. Negotiation leverage, contingency posture, and timing are doing more of the work than headline pricing.`;
+}
+
+// ---------------------------------------------------------------------------
+// Supporting signals — each returns null when the underlying metric is missing
+// so the UI can gracefully omit it.
+// ---------------------------------------------------------------------------
+type SignalLevel = "low" | "moderate" | "elevated" | "soft" | "neutral" | "firm" | "tight" | "balanced" | "high";
+
+interface Signal { label: string; value: string }
+
+function normalizeRate(v: number | null | undefined): number | null {
+  if (v == null || !Number.isFinite(v)) return null;
+  return v > 1 ? v / 100 : v;
+}
+
+function signalsFrom(metrics: Record<string, MetricSeries> | null | undefined): Signal[] {
+  if (!metrics) return [];
+  const out: Signal[] = [];
+
+  // Negotiation Leverage — derived from sales-to-list and price-drop rate.
+  const stl = metrics["sales_to_list_ratio"]?.latest;
+  const drops = normalizeRate(metrics["price_drop_rate"]?.latest);
+  if (stl != null || drops != null) {
+    const stlNorm = stl != null ? (stl > 5 ? stl / 100 : stl) : null;
+    // Higher leverage for buyers when stl below 1.0 and drops elevated.
+    let leverage: "Low" | "Moderate" | "High" = "Moderate";
+    if (stlNorm != null) {
+      if (stlNorm >= 1.0 && (drops == null || drops < 0.15)) leverage = "Low";
+      else if (stlNorm < 0.97 || (drops != null && drops > 0.3)) leverage = "High";
+    } else if (drops != null) {
+      if (drops > 0.3) leverage = "High";
+      else if (drops < 0.1) leverage = "Low";
+    }
+    out.push({ label: "Buyer Negotiation Leverage", value: leverage });
   }
-  return `${community} is trading near balance. Pricing strategy and property-level presentation now matter more than the direction of the broader market.`;
+
+  // Inventory Conditions — months of inventory.
+  const moi = metrics["months_of_inventory"]?.latest;
+  if (moi != null && Number.isFinite(moi)) {
+    let v: string;
+    if (moi < 3) v = "Tight";
+    else if (moi <= 5) v = "Balanced";
+    else v = "Elevated";
+    out.push({ label: "Inventory Conditions", value: v });
+  }
+
+  // Buyer Competition — contract-in-two-weeks + sold above list.
+  const fast = normalizeRate(metrics["contract_in_two_weeks_rate"]?.latest);
+  const above = normalizeRate(metrics["sold_above_list_rate"]?.latest);
+  if (fast != null || above != null) {
+    const a = above ?? 0;
+    const f = fast ?? 0;
+    const score = a * 0.6 + f * 0.4;
+    let v: string;
+    if (score >= 0.35) v = "High";
+    else if (score >= 0.18) v = "Moderate";
+    else v = "Low";
+    out.push({ label: "Buyer Competition", value: v });
+  }
+
+  // Pricing Pressure — price drop rate (inverse).
+  if (drops != null) {
+    let v: string;
+    if (drops >= 0.3) v = "Soft";
+    else if (drops >= 0.12) v = "Neutral";
+    else v = "Firm";
+    out.push({ label: "Pricing Pressure", value: v });
+  }
+
+  // Market Tempo — days on market.
+  const dom = metrics["median_days_on_market"]?.latest;
+  if (dom != null && Number.isFinite(dom)) {
+    let v: string;
+    if (dom < 21) v = "Brisk";
+    else if (dom <= 60) v = "Steady";
+    else v = "Measured";
+    out.push({ label: "Market Tempo", value: v });
+  }
+
+  return out;
 }
 
 export default function MarketBalanceGauge({
@@ -79,6 +187,8 @@ export default function MarketBalanceGauge({
   }, [primaryName, fallbackName]);
 
   const balance = computeMarketBalance(data?.metrics);
+  const tier: PositionTier | null = balance ? tierForScore(balance.score) : null;
+  const signals = signalsFrom(data?.metrics);
   const isProxy = !!resolvedMarket &&
     resolvedMarket.toLowerCase() !== communityName.toLowerCase();
 
@@ -86,7 +196,7 @@ export default function MarketBalanceGauge({
     <section
       className="py-12 md:py-16"
       style={{ backgroundColor: "#FAFAF8" }}
-      aria-label={`${communityName} buyer seller market gauge`}
+      aria-label={`${communityName} market conditions`}
     >
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto">
@@ -98,13 +208,13 @@ export default function MarketBalanceGauge({
               className="text-[11px] tracking-[0.22em] uppercase font-sans mb-3"
               style={{ color: GOLD }}
             >
-              {eyebrow ?? `${communityName} · Market Balance`}
+              {eyebrow ?? `${communityName} · Market Intelligence`}
             </p>
             <h3
               className="font-display text-2xl md:text-3xl font-normal mb-8"
               style={{ color: NAVY }}
             >
-              Buyer / Seller Conditions
+              Market Conditions
             </h3>
 
             {loading && (
@@ -113,49 +223,71 @@ export default function MarketBalanceGauge({
               </p>
             )}
 
-            {!loading && (error || !balance) && (
+            {!loading && (error || !balance || !tier) && (
               <p className="text-sm font-sans" style={{ color: `${NAVY}99` }}>
-                Live balance metrics are temporarily unavailable for this submarket.
-                Our advisors maintain a current private read on {communityName}.
+                Live market conditions are temporarily unavailable for this
+                submarket. Our advisors maintain a current private read on{" "}
+                {communityName}.
               </p>
             )}
 
-            {!loading && balance && (
+            {!loading && balance && tier && (
               <>
-                <Gauge score={balance.score} label={balance.label} />
-
-                <div className="mt-6 flex items-baseline justify-between gap-4">
-                  <div>
-                    <p
-                      className="font-display text-xl md:text-2xl"
-                      style={{ color: NAVY }}
-                    >
-                      {balance.label}
-                    </p>
-                  </div>
-                  <p
-                    className="text-[11px] tracking-[0.18em] uppercase font-sans"
-                    style={{ color: `${NAVY}80` }}
-                  >
-                    Balance Index {balance.score} / 100
-                  </p>
-                </div>
-
+                {/* Primary positioning headline */}
                 <p
-                  className="mt-5 font-sans text-[15px] leading-relaxed"
-                  style={{ color: `${NAVY}cc` }}
+                  className="font-display text-2xl md:text-[28px] leading-tight mb-6"
+                  style={{ color: NAVY }}
                 >
-                  {advisoryCopy(balance, communityName)}
+                  {TIER_LABEL[tier]}
                 </p>
 
-                {isProxy && resolvedMarket && (
-                  <p
-                    className="mt-4 text-[11px] tracking-[0.16em] uppercase font-sans"
-                    style={{ color: `${NAVY}66` }}
+                {/* Spectrum */}
+                <Spectrum score={balance.score} />
+
+                {/* Plain-English interpretation */}
+                <p
+                  className="mt-7 font-sans text-[15px] leading-relaxed"
+                  style={{ color: `${NAVY}cc` }}
+                >
+                  {interpretation(tier, communityName)}
+                </p>
+
+                {/* Supporting signals */}
+                {signals.length > 0 && (
+                  <dl
+                    className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-4"
                   >
-                    Regional proxy · {resolvedMarket} area context
-                  </p>
+                    {signals.map((s) => (
+                      <div
+                        key={s.label}
+                        className="flex items-baseline justify-between gap-4 pb-3"
+                        style={{ borderBottom: `1px solid ${NAVY}14` }}
+                      >
+                        <dt
+                          className="text-[11px] tracking-[0.18em] uppercase font-sans"
+                          style={{ color: `${NAVY}80` }}
+                        >
+                          {s.label}
+                        </dt>
+                        <dd
+                          className="font-display text-[15px]"
+                          style={{ color: NAVY }}
+                        >
+                          {s.value}
+                        </dd>
+                      </div>
+                    ))}
+                  </dl>
                 )}
+
+                {/* Credibility note */}
+                <p
+                  className="mt-8 text-[11px] tracking-[0.16em] uppercase font-sans"
+                  style={{ color: `${NAVY}66` }}
+                >
+                  Updated monthly using local market data and neighborhood-specific trends
+                  {isProxy && resolvedMarket ? ` · ${resolvedMarket} area context` : ""}
+                </p>
               </>
             )}
           </div>
@@ -165,40 +297,37 @@ export default function MarketBalanceGauge({
   );
 }
 
-function Gauge({ score, label }: { score: number; label: string }) {
+function Spectrum({ score }: { score: number }) {
   const pct = Math.max(0, Math.min(100, score));
   return (
-    <div className="relative">
+    <div className="relative pt-2">
       {/* Tri-zone track */}
       <div
         className="relative h-[6px] rounded-full overflow-hidden"
         style={{ backgroundColor: `${NAVY}10` }}
         role="img"
-        aria-label={`Market balance ${score} of 100, ${label}`}
+        aria-label={`Market position: ${score} on a buyer-to-seller spectrum`}
       >
         <div
           className="absolute inset-y-0 left-0"
-          style={{ width: "38%", backgroundColor: `${NAVY}1f` }}
+          style={{ width: "40%", backgroundColor: `${NAVY}1f` }}
         />
         <div
           className="absolute inset-y-0"
-          style={{ left: "38%", width: "24%", backgroundColor: `${GOLD}40` }}
+          style={{ left: "40%", width: "20%", backgroundColor: `${GOLD}40` }}
         />
         <div
           className="absolute inset-y-0"
-          style={{ left: "62%", right: 0, backgroundColor: `${NAVY}33` }}
+          style={{ left: "60%", right: 0, backgroundColor: `${NAVY}33` }}
         />
       </div>
 
-      {/* Indicator — `left` glides between scores on each AgentIntel refresh. */}
+      {/* Indicator */}
       <div
         className="absolute -translate-x-1/2 motion-safe:transition-[left] motion-safe:duration-[900ms] motion-safe:ease-[cubic-bezier(0.22,0.61,0.36,1)]"
-        style={{ left: `${pct}%`, top: "-7px" }}
+        style={{ left: `${pct}%`, top: "1px" }}
       >
-        <div
-          className="w-[2px] h-5"
-          style={{ backgroundColor: GOLD }}
-        />
+        <div className="w-[2px] h-5" style={{ backgroundColor: GOLD }} />
         <div
           className="gauge-dot-pulse absolute left-1/2 -translate-x-1/2 -top-[3px] w-[10px] h-[10px] rounded-full"
           style={{ backgroundColor: GOLD, boxShadow: `0 0 0 3px #FAFAF8` }}
@@ -206,11 +335,13 @@ function Gauge({ score, label }: { score: number; label: string }) {
       </div>
 
       {/* Endpoint labels */}
-      <div className="mt-4 flex justify-between text-[10px] tracking-[0.22em] uppercase font-sans"
-           style={{ color: `${NAVY}80` }}>
-        <span>Buyer&rsquo;s Market</span>
+      <div
+        className="mt-4 flex justify-between text-[10px] tracking-[0.22em] uppercase font-sans"
+        style={{ color: `${NAVY}80` }}
+      >
+        <span>Buyer Advantage</span>
         <span>Balanced</span>
-        <span>Seller&rsquo;s Market</span>
+        <span>Seller Advantage</span>
       </div>
     </div>
   );

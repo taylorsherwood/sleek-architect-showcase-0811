@@ -324,9 +324,8 @@ function Spectrum({ score }: { score: number }) {
         className="absolute -translate-x-1/2 motion-safe:transition-[left] motion-safe:duration-[900ms] motion-safe:ease-[cubic-bezier(0.22,0.61,0.36,1)]"
         style={{ left: `${pct}%`, top: "1px" }}
       >
-        <div className="w-[2px] h-5" style={{ backgroundColor: GOLD }} />
         <div
-          className="gauge-dot-pulse absolute left-1/2 -translate-x-1/2 -top-[3px] w-[10px] h-[10px] rounded-full"
+          className="gauge-dot-pulse absolute left-1/2 -translate-x-1/2 -top-[5px] w-[14px] h-[14px] rounded-full"
           style={{ backgroundColor: GOLD, boxShadow: `0 0 0 3px #FAFAF8` }}
         />
       </div>

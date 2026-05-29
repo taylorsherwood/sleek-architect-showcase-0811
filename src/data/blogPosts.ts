@@ -39,6 +39,8 @@ export interface BlogPost {
   heroImage?: string;
   href?: string;
   metaTitle?: string;
+  /** Optional descriptive alt text for the hero image. Falls back to the title pattern. */
+  imageAlt?: string;
 }
 
 const LINK = "text-foreground underline hover:text-muted-foreground";

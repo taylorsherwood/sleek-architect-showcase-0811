@@ -75,15 +75,15 @@ function buildInterpretation(series: Record<string, MetricSeries>): string {
     return "Inventory remains elevated relative to historical norms across Austin's luxury submarkets, creating additional negotiating leverage for qualified buyers and demanding sharper pricing discipline from sellers.";
   }
   if (inv <= 3) {
-    return "Luxury inventory remains constrained across several core submarkets — including Barton Creek, West Lake Hills, Tarrytown, and Lake Austin — supporting pricing power for well-positioned sellers and rewarding decisive buyers.";
+    return "Luxury inventory remains constrained across several core submarkets, including Barton Creek, West Lake Hills, Tarrytown, and Lake Austin, supporting pricing power for well-positioned sellers and rewarding decisive buyers.";
   }
   if (drops != null && drops > 0.25) {
-    return "Conditions sit in balanced territory, but a meaningful share of active listings has cut price — a signal that initial positioning, not market direction, is separating successful sales from stalled ones.";
+    return "Conditions sit in balanced territory, but a meaningful share of active listings has cut price, a signal that initial positioning, not market direction, is separating successful sales from stalled ones.";
   }
   if (stl != null && stl >= 0.97) {
     return "Conditions remain balanced across the luxury tier, with strategically positioned listings clearing close to list price while overpriced inventory continues to sit and re-cut.";
   }
-  return "Conditions sit in balanced territory across Austin's luxury market, where strategic pricing — not aggressive list positioning — separates well-trafficked listings from those that quietly lose leverage.";
+  return "Conditions sit in balanced territory across Austin's luxury market, where strategic pricing, not aggressive list positioning, separates well-trafficked listings from those that quietly lose leverage.";
 }
 
 export const BlogMarketSnapshot = () => {

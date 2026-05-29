@@ -221,8 +221,10 @@ Deno.serve(async (req) => {
     });
 
     if (!insertRes.ok) {
-      const detail = await insertRes.text();
-      console.error("[Lead capture] DB insert failed", detail);
+      // Drain the body to avoid resource leak, but don't log it — PostgREST
+      // error bodies can echo row values (PII). Status code is enough.
+      await insertRes.text().catch(() => "");
+      console.error(`[Lead capture] DB insert failed status=${insertRes.status}`);
       return json({ ok: false, error: "Lead could not be saved." }, 500);
     }
 

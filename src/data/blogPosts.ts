@@ -56,6 +56,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "14 min read",
     category: "INVESTMENT STRATEGY",
     image: blogHighestAndBestUse,
+    imageAlt: "Austin land development opportunity showing redevelopment potential and highest and best use analysis",
     content: `
 ## A Step-by-Step Guide for Owners, Investors, and Developers
 

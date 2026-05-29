@@ -166,7 +166,7 @@ export const BlogMarketSnapshot = () => {
           </p>
           {periodLabel && (
             <p className="mt-3 text-[0.55rem] md:text-[0.6rem] tracking-[0.32em] uppercase text-muted-foreground/75 whitespace-pre-line">
-              ADVISORY BRIEF · {periodLabel.toUpperCase()}{"\n\n"}
+              {"\n"}
             </p>
           )}
         </div>

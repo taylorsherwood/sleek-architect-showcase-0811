@@ -52,18 +52,18 @@ const TIER_LABEL: Record<PositionTier, string> = {
   "strong-seller": "Strong Seller Advantage",
 };
 
-function interpretation(tier: PositionTier, community: string): string {
+function interpretation(tier: PositionTier): string {
   switch (tier) {
     case "strong-buyer":
-      return `Conditions in ${community} clearly favor buyers. Inventory, time on market, and negotiating posture are all working in the buyer's favor — patient, well-advised offers are finding meaningful concessions.`;
+      return "Conditions strongly favor buyers, with meaningful negotiating room.";
     case "moderate-buyer":
-      return `Current ${community} conditions favor patient buyers. Negotiation leverage, contingency flexibility, and timing are creating opportunities that were less common in prior years.`;
+      return "Conditions currently favor patient buyers.";
     case "balanced":
-      return `${community} is trading near balance. Neither buyers nor sellers hold a significant advantage — well-positioned homes continue to sell while buyers retain reasonable negotiating power.`;
+      return "Market conditions remain balanced with moderate negotiating flexibility.";
     case "moderate-seller":
-      return `Limited inventory and steady demand continue to support ${community} sellers, particularly for well-priced, well-presented homes. Pricing discipline and presentation matter more than broad exposure.`;
+      return "Limited inventory continues to support sellers.";
     case "strong-seller":
-      return `${community} remains firmly in sellers' hands. Tight inventory and active buyer competition are sustaining list-price discipline and shorter market times for prepared sellers.`;
+      return "Tight inventory and active demand firmly favor sellers.";
   }
 }
 
@@ -134,15 +134,6 @@ function signalsFrom(metrics: Record<string, MetricSeries> | null | undefined): 
     out.push({ label: "Pricing Pressure", value: v });
   }
 
-  // Market Tempo — days on market.
-  const dom = metrics["median_days_on_market"]?.latest;
-  if (dom != null && Number.isFinite(dom)) {
-    let v: string;
-    if (dom < 21) v = "Brisk";
-    else if (dom <= 60) v = "Steady";
-    else v = "Measured";
-    out.push({ label: "Market Tempo", value: v });
-  }
 
   return out;
 }

@@ -185,11 +185,11 @@ export const BlogMarketSnapshot = () => {
         </div>
 
         {/* Metric ledger */}
-        <dl className="mt-2 md:mt-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 max-w-5xl mx-auto">
+        <dl className="mt-16 md:mt-24 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 max-w-5xl mx-auto">
           {rendered.map((m, i) => (
             <div
               key={m.key}
-              className={`text-center py-6 lg:py-2 px-4 ${
+              className={`flex flex-col items-center justify-start text-center py-6 lg:py-2 px-4 ${
                 i > 0 ? "border-t sm:border-t-0 sm:border-l" : ""
               } ${i % 2 === 0 ? "sm:border-l-0 lg:border-l" : ""} ${
                 i === 0 ? "lg:border-l-0" : ""
@@ -197,13 +197,13 @@ export const BlogMarketSnapshot = () => {
               style={{ borderColor: `${NAVY}1f` }}
             >
               <dt
-                className="text-[0.55rem] md:text-[0.6rem] tracking-[0.28em] uppercase mb-3 leading-relaxed"
+                className="text-[0.55rem] md:text-[0.6rem] tracking-[0.28em] uppercase leading-[1.5] flex items-start justify-center min-h-[3em] md:min-h-[3.2em]"
                 style={{ color: `${NAVY}99` }}
               >
-                {m.label}
+                <span className="block max-w-[14ch]">{m.label}</span>
               </dt>
               <dd
-                className="font-display font-light leading-none"
+                className="font-display font-light leading-none mt-4"
                 style={{
                   color: NAVY,
                   fontSize: "clamp(1.4rem, 3.2vw, 2rem)",

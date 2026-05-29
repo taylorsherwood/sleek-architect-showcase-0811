@@ -536,7 +536,7 @@ const Sell = () => {
                 {
                   title: "Presentation Impacts Perceived Value",
                   body:
-                    "Professional marketing — cinematic video, drone media, editorial photography, and custom property websites — is now baseline for luxury listings in Austin.",
+                    "Professional marketing, including cinematic video, drone media, editorial photography, and custom property websites, is now baseline for luxury listings in Austin.",
                 },
                 {
                   title: "Inventory Remains Limited",

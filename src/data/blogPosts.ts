@@ -70,6 +70,9 @@ The goal is the most strategic one.
 
 This guide explains the framework experienced luxury advisors use to evaluate, position, and price high-end real estate throughout Austin. Whether you are preparing to sell a <a href="/communities/lake-austin" class="${LINK}">Lake Austin waterfront</a>, a custom estate in <a href="/communities/rob-roy" class="${LINK}">Rob Roy</a> or <a href="/communities/davenport-ranch" class="${LINK}">Davenport Ranch</a>, a Barton Creek golf-course residence, or a lock-and-leave residence above downtown, the framework below leads to more informed decisions and stronger outcomes. Live conditions inform every recommendation — review our current <a href="/market-intelligence" class="${LINK}">market intelligence briefing</a> and <a href="/austin-luxury-market-trends" class="${LINK}">Austin luxury market trends</a> as you read.
 
+:::intel-luxury-snapshot
+:::
+
 ## Why Luxury Home Pricing Is Different
 
 One of the biggest mistakes luxury sellers make is assuming that pricing a $4 million home works the same way as pricing a $500,000 home.

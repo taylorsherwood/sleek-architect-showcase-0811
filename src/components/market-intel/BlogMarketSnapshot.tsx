@@ -177,7 +177,7 @@ export const BlogMarketSnapshot = () => {
               communityName="Austin Metro Residential $2M+"
               marketName="Austin Metro"
               fallbackMarketName="West Austin"
-              eyebrow="Austin Metro Residential · $2M+ · Buyer / Seller Balance"
+              eyebrow={"\n\nAUSTIN METRO RESIDENTIAL · $2M+ · BUYER / SELLER BALANCE"}
             />
           </Suspense>
         </div>

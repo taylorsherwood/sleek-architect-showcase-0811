@@ -1,9 +1,11 @@
-import { useEffect, useMemo, useState } from "react";
+import { lazy, Suspense, useEffect, useMemo, useState } from "react";
 import {
   fetchMetricsByMarketName,
   type MarketMetricsResponse,
   type MetricSeries,
 } from "@/lib/agentIntel";
+
+const MarketBalanceGauge = lazy(() => import("./MarketBalanceGauge"));
 
 /**
  * Editorial in-article market snapshot for luxury blog posts.
@@ -166,6 +168,18 @@ export const BlogMarketSnapshot = () => {
               Advisory Brief · {periodLabel}
             </p>
           )}
+        </div>
+
+        {/* Buyer / Seller balance gauge */}
+        <div className="mt-8 md:mt-12 max-w-4xl mx-auto">
+          <Suspense fallback={<div className="min-h-[180px]" />}>
+            <MarketBalanceGauge
+              communityName="Austin Metro Residential $2M+"
+              marketName="Austin Metro"
+              fallbackMarketName="West Austin"
+              eyebrow="Austin Metro Residential · $2M+ · Buyer / Seller Balance"
+            />
+          </Suspense>
         </div>
 
         {/* Metric ledger */}

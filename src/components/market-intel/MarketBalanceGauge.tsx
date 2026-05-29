@@ -149,6 +149,7 @@ export default function MarketBalanceGauge({
   const [data, setData] = useState<MarketMetricsResponse | null>(null);
   const [resolvedMarket, setResolvedMarket] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
+  const [loadedAt] = useState(() => new Date());
   const [error, setError] = useState<string | null>(null);
 
   const mapping = slug ? marketForSlug(slug) : null;

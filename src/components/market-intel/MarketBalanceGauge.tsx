@@ -15,6 +15,8 @@ interface Props {
   marketUuid?: string;
   /** Optional eyebrow override. */
   eyebrow?: string;
+  /** Hide the inline "Last Updated" timestamp (parent will render it). */
+  hideLastUpdated?: boolean;
 }
 
 const NAVY = "#0C0F24";
@@ -145,6 +147,7 @@ export default function MarketBalanceGauge({
   fallbackMarketName,
   marketUuid: _marketUuid,
   eyebrow,
+  hideLastUpdated,
 }: Props) {
   const [data, setData] = useState<MarketMetricsResponse | null>(null);
   const [resolvedMarket, setResolvedMarket] = useState<string | null>(null);
@@ -273,18 +276,20 @@ export default function MarketBalanceGauge({
                 )}
 
                 {/* Credibility note */}
-                <p
-                  className="mt-6 text-[11px] tracking-[0.22em] uppercase font-sans whitespace-pre-line"
-                  style={{ color: `${NAVY}66` }}
-                >
-                  LAST UPDATED {loadedAt.toLocaleString("en-US", {
-                    month: "short",
-                    day: "numeric",
-                    year: "numeric",
-                    hour: "numeric",
-                    minute: "2-digit",
-                  }).toUpperCase()}{"\n\n\n\n"}
-                </p>
+                {!hideLastUpdated && (
+                  <p
+                    className="mt-6 text-[11px] tracking-[0.22em] uppercase font-sans whitespace-pre-line"
+                    style={{ color: `${NAVY}66` }}
+                  >
+                    LAST UPDATED {loadedAt.toLocaleString("en-US", {
+                      month: "short",
+                      day: "numeric",
+                      year: "numeric",
+                      hour: "numeric",
+                      minute: "2-digit",
+                    }).toUpperCase()}{"\n\n\n\n"}
+                  </p>
+                )}
               </>
             )}
           </div>

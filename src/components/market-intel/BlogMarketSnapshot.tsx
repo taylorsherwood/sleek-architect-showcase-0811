@@ -90,6 +90,7 @@ export const BlogMarketSnapshot = () => {
   const [data, setData] = useState<MarketMetricsResponse | null>(null);
   const [loading, setLoading] = useState(true);
   const [failed, setFailed] = useState(false);
+  const [loadedAt] = useState(() => new Date());
 
   useEffect(() => {
     let live = true;
@@ -178,6 +179,7 @@ export const BlogMarketSnapshot = () => {
               marketName="Austin Metro"
               fallbackMarketName="West Austin"
               eyebrow={"\n\nAUSTIN METRO RESIDENTIAL · $2M+ · BUYER / SELLER BALANCE"}
+              hideLastUpdated
             />
           </Suspense>
         </div>
@@ -237,6 +239,18 @@ export const BlogMarketSnapshot = () => {
           style={{ color: `${NAVY}80` }}
         >
           Source · AgentIntel Market Intelligence
+        </p>
+        <p
+          className="mt-4 text-center text-[0.55rem] md:text-[0.6rem] tracking-[0.32em] uppercase"
+          style={{ color: `${NAVY}66` }}
+        >
+          LAST UPDATED {loadedAt.toLocaleString("en-US", {
+            month: "short",
+            day: "numeric",
+            year: "numeric",
+            hour: "numeric",
+            minute: "2-digit",
+          }).toUpperCase()}
         </p>
       </div>
     </section>

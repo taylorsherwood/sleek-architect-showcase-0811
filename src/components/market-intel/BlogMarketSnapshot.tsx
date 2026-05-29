@@ -171,7 +171,7 @@ export const BlogMarketSnapshot = () => {
         </div>
 
         {/* Buyer / Seller balance gauge */}
-        <div className="mt-2 md:mt-3 max-w-4xl mx-auto [&>div>section]:!py-0 [&>div>section]:!bg-transparent [&_section>div>div]:!pt-2 [&_section>div>div]:md:!pt-3 [&_section>div>div]:!pb-0 [&_section>div>div]:!border-t-0">
+        <div className="mt-2 md:mt-3 max-w-4xl mx-auto [&_section]:!py-0 [&_section]:!bg-transparent [&_section_.container]:!px-0 [&_section_div>div>div]:!pt-0 [&_section_div>div>div]:!pb-0 [&_section_div>div>div]:!border-t-0">
           <Suspense fallback={<div className="min-h-[180px]" />}>
             <MarketBalanceGauge
               communityName="Austin Metro Residential $2M+"

@@ -276,7 +276,13 @@ export default function MarketBalanceGauge({
                   className="mt-6 text-[11px] tracking-[0.22em] uppercase font-sans"
                   style={{ color: `${NAVY}66` }}
                 >
-                  Updated In Real Time
+                  Last Updated {loadedAt.toLocaleString("en-US", {
+                    month: "short",
+                    day: "numeric",
+                    year: "numeric",
+                    hour: "numeric",
+                    minute: "2-digit",
+                  })}
                 </p>
               </>
             )}

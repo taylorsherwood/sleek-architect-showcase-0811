@@ -197,10 +197,10 @@ export const BlogMarketSnapshot = () => {
               style={{ borderColor: `${NAVY}1f` }}
             >
               <dt
-                className="text-[0.55rem] md:text-[0.6rem] tracking-[0.28em] uppercase leading-[1.5] flex items-start justify-center min-h-[3em] md:min-h-[3.2em]"
+                className="text-[0.55rem] md:text-[0.6rem] tracking-[0.28em] uppercase leading-[1.5] flex items-start justify-center min-h-[4.5em]"
                 style={{ color: `${NAVY}99` }}
               >
-                <span className="block max-w-[14ch]">{m.label}</span>
+                <span className="block">{m.label}</span>
               </dt>
               <dd
                 className="font-display font-light leading-none mt-4"

@@ -90,6 +90,7 @@ export const BlogMarketSnapshot = () => {
   const [data, setData] = useState<MarketMetricsResponse | null>(null);
   const [loading, setLoading] = useState(true);
   const [failed, setFailed] = useState(false);
+  const [loadedAt] = useState(() => new Date());
 
   useEffect(() => {
     let live = true;

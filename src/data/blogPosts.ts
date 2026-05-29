@@ -47,7 +47,7 @@ export const blogPosts: BlogPost[] = [
     id: "how-to-price-a-luxury-home-in-austin",
     title: "How to Price a Luxury Home in Austin: A Strategic Guide for High-End Real Estate Sellers",
     metaTitle: "How to Price a Luxury Home in Austin | Luxury Pricing Strategy",
-    excerpt: "How to price a luxury home in Austin: an advisory framework for selling above $2M across Barton Creek, West Lake Hills, Rollingwood, Tarrytown, Spanish Oaks, Lake Austin, Rob Roy, and Davenport Ranch — built on market intelligence, not automated estimates.",
+    excerpt: "How to price a luxury home in Austin: an advisory framework for selling above $2M across Barton Creek, West Lake Hills, Rollingwood, Tarrytown, Spanish Oaks, Lake Austin, Rob Roy, and Davenport Ranch. Built on market intelligence, not automated estimates.",
     author: "Taylor Sherwood",
     date: "2026-05-29",
     readTime: "10 min read",
@@ -58,9 +58,9 @@ In <a href="/luxury-real-estate-austin" class="${LINK}">Austin luxury real estat
 
 It determines how the market responds to it.
 
-That distinction is the difference between a listing that generates immediate momentum and one that quietly loses leverage week after week. Above $2 million — in <a href="/communities/barton-creek" class="${LINK}">Barton Creek</a>, <a href="/communities/westlake-hills" class="${LINK}">West Lake Hills</a>, <a href="/communities/rollingwood" class="${LINK}">Rollingwood</a>, <a href="/communities/tarrytown" class="${LINK}">Tarrytown</a>, <a href="/communities/spanish-oaks" class="${LINK}">Spanish Oaks</a>, and along <a href="/communities/lake-austin" class="${LINK}">Lake Austin</a> — every pricing decision carries six- and seven-figure consequences. A property positioned correctly attracts a qualified buyer pool within the first ten days. A property positioned incorrectly spends months trying to recover from a first impression it never should have made.
+That distinction is the difference between a listing that generates immediate momentum and one that quietly loses leverage week after week. Above $2 million in <a href="/communities/barton-creek" class="${LINK}">Barton Creek</a>, <a href="/communities/westlake-hills" class="${LINK}">West Lake Hills</a>, <a href="/communities/rollingwood" class="${LINK}">Rollingwood</a>, <a href="/communities/tarrytown" class="${LINK}">Tarrytown</a>, <a href="/communities/spanish-oaks" class="${LINK}">Spanish Oaks</a>, and along <a href="/communities/lake-austin" class="${LINK}">Lake Austin</a>, every pricing decision carries six- and seven-figure consequences. A property positioned correctly attracts a qualified buyer pool within the first ten days. A property positioned incorrectly spends months trying to recover from a first impression it never should have made.
 
-Most pricing mistakes at this tier share a common origin: <a href="/sell" class="${LINK}">sellers</a> treat pricing as arithmetic — Zillow estimate, price per square foot, recent neighborhood averages — when luxury pricing is fundamentally a positioning decision. Automated valuation tools are built for transaction volume the upper tier does not produce. A $5M custom contemporary in West Lake Hills, a waterfront estate on Lake Austin, and a golf-course residence in Barton Creek may price within the same range while attracting entirely different buyer profiles, with entirely different sensitivities to days-on-market, list-to-sale ratios, and concession patterns.
+Most pricing mistakes at this tier share a common origin. <a href="/sell" class="${LINK}">Sellers</a> treat pricing as arithmetic: Zillow estimate, price per square foot, recent neighborhood averages. Luxury pricing is fundamentally a positioning decision. Automated valuation tools are built for transaction volume the upper tier does not produce. A $5M custom contemporary in West Lake Hills, a waterfront estate on Lake Austin, and a golf-course residence in Barton Creek may price within the same range while attracting entirely different buyer profiles, with entirely different sensitivities to days-on-market, list-to-sale ratios, and concession patterns.
 
 <a href="/about-austin-real-estate-advisory" class="${LINK}">Echelon Property Group</a> is an advisory-focused luxury brokerage that operates exclusively in this segment. Our work centers on <a href="/sell-private" class="${LINK}">strategic seller representation</a>, <a href="/off-market-real-estate-austin" class="${LINK}">off-market distribution</a>, and pricing strategy grounded in submarket-level absorption data rather than citywide averages or algorithmic estimates.
 
@@ -68,7 +68,7 @@ The goal is not the highest possible list price.
 
 The goal is the most strategic one.
 
-This guide explains the framework experienced luxury advisors use to evaluate, position, and price high-end real estate throughout Austin. Whether you are preparing to sell a <a href="/communities/lake-austin" class="${LINK}">Lake Austin waterfront</a>, a custom estate in <a href="/communities/rob-roy" class="${LINK}">Rob Roy</a> or <a href="/communities/davenport-ranch" class="${LINK}">Davenport Ranch</a>, a Barton Creek golf-course residence, or a lock-and-leave residence above downtown, the framework below leads to more informed decisions and stronger outcomes. Live conditions inform every recommendation — review our current <a href="/market-intelligence" class="${LINK}">market intelligence briefing</a> and <a href="/austin-luxury-market-trends" class="${LINK}">Austin luxury market trends</a> as you read.
+This guide explains the framework experienced luxury advisors use to evaluate, position, and price high-end real estate throughout Austin. If you are preparing to sell a <a href="/communities/lake-austin" class="${LINK}">Lake Austin waterfront</a>, a custom estate in <a href="/communities/rob-roy" class="${LINK}">Rob Roy</a> or <a href="/communities/davenport-ranch" class="${LINK}">Davenport Ranch</a>, a Barton Creek golf-course residence, or a lock-and-leave residence above downtown, the framework below leads to more informed decisions and stronger outcomes. Review our current <a href="/market-intelligence" class="${LINK}">market intelligence briefing</a> and <a href="/austin-luxury-market-trends" class="${LINK}">Austin luxury market trends</a> as you read.
 
 :::intel-luxury-snapshot
 :::
@@ -88,7 +88,7 @@ In many neighborhoods, dozens of similar homes may have sold within the past six
 
 The luxury segment rarely offers that convenience.
 
-A $5 million property in <a href="/communities/tarrytown" class="${LINK}">Tarrytown</a> may have only a handful of meaningful comparables over the past year. A waterfront property on <a href="/communities/lake-austin" class="${LINK}">Lake Austin</a> may have even fewer. A gated estate inside <a href="/communities/rob-roy" class="${LINK}">Rob Roy</a> or <a href="/communities/davenport-ranch" class="${LINK}">Davenport Ranch</a> may not have a true peer transaction at all in the trailing twelve months. Some of the most relevant sales never appear publicly because they were completed through <a href="/off-market-real-estate-austin" class="${LINK}">private transactions</a> or <a href="/private-opportunities" class="${LINK}">off-market relationships</a> — a dynamic we explore further in <a href="/blog/private-property-showings-austin" class="${LINK}">how private showings change pricing signals</a>.
+A $5 million property in <a href="/communities/tarrytown" class="${LINK}">Tarrytown</a> may have only a handful of meaningful comparables over the past year. A waterfront property on <a href="/communities/lake-austin" class="${LINK}">Lake Austin</a> may have even fewer. A gated estate inside <a href="/communities/rob-roy" class="${LINK}">Rob Roy</a> or <a href="/communities/davenport-ranch" class="${LINK}">Davenport Ranch</a> may not have a true peer transaction at all in the trailing twelve months. Some of the most relevant sales never appear publicly because they were completed through <a href="/off-market-real-estate-austin" class="${LINK}">private transactions</a> or <a href="/private-opportunities" class="${LINK}">off-market relationships</a>, a dynamic we explore further in <a href="/blog/private-property-showings-austin" class="${LINK}">how private showings change pricing signals</a>.
 
 This creates a structural challenge for sellers who rely too heavily on automated valuation models.
 
@@ -96,17 +96,17 @@ Platforms like Zillow, Redfin, and other consumer-facing valuation tools are bui
 
 A computer can recognize square footage.
 
-It cannot quantify an unobstructed downtown view from a <a href="/communities/westlake-hills" class="${LINK}">West Lake Hills</a> ridge, the privacy of a deep cul-de-sac lot in <a href="/communities/spanish-oaks" class="${LINK}">Spanish Oaks</a>, the architectural pedigree of a Dick Clark or Lake Flato residence, or a deep-water dock on one of Austin's most coveted stretches of <a href="/communities/lake-austin" class="${LINK}">Lake Austin</a> waterfront — the kinds of attributes that define <a href="/austin-luxury-homes-for-sale" class="${LINK}">Austin's most coveted homes</a>.
+It cannot quantify an unobstructed downtown view from a <a href="/communities/westlake-hills" class="${LINK}">West Lake Hills</a> ridge, the privacy of a deep cul-de-sac lot in <a href="/communities/spanish-oaks" class="${LINK}">Spanish Oaks</a>, the architectural pedigree of a Dick Clark or Lake Flato residence, or a deep-water dock on one of Austin's most coveted stretches of <a href="/communities/lake-austin" class="${LINK}">Lake Austin</a> waterfront. Those are the attributes that define <a href="/austin-luxury-homes-for-sale" class="${LINK}">Austin's most coveted homes</a>.
 
 Luxury buyers understand these differences instinctively.
 
-Sophisticated <a href="/buy" class="${LINK}">buyers</a> are rarely evaluating homes solely through spreadsheets. They are evaluating scarcity. They are evaluating lifestyle. They are evaluating features that cannot easily be replicated — and they are calibrated, often advised by their own counsel, to recognize when a list price is anchored to data or to ego.
+Sophisticated <a href="/buy" class="${LINK}">buyers</a> are rarely evaluating homes solely through spreadsheets. They are evaluating scarcity. They are evaluating lifestyle. They are evaluating features that cannot easily be replicated. They are also calibrated, often advised by their own counsel, to recognize when a list price is anchored to data or to ego.
 
 This is why luxury pricing requires a different methodology than traditional residential real estate.
 
 The goal is not simply identifying what similar homes sold for.
 
-The goal is understanding why they sold for those numbers — and whether the conditions that produced those outcomes still exist today.
+The goal is understanding why they sold for those numbers, and whether the conditions that produced those outcomes still exist today.
 
 :::faq
 Q: How do you determine the value of a luxury home in Austin?
@@ -116,10 +116,10 @@ Q: Are Zillow estimates accurate for luxury homes?
 A: No. Zestimates and similar automated valuation models are statistical estimates trained on high-volume, similar transactions. Above roughly $2M in markets like Barton Creek, West Lake Hills, Tarrytown, and Lake Austin, transaction volume is thin and properties are highly individual, so the algorithm cannot reliably account for view, privacy, architecture, finish level, or off-market activity. Use them as a directional reference only.
 
 Q: Should I price my luxury home above market value to leave room for negotiation?
-A: Generally no. Overpricing a luxury listing typically suppresses early buyer interest, lengthens days on market, and triggers price reductions that signal weakness — eroding the very leverage the strategy was meant to preserve. Strategic pricing creates competitive tension and protects negotiating position far more reliably than a built-in cushion.
+A: Generally no. Overpricing a luxury listing typically suppresses early buyer interest, lengthens days on market, and triggers price reductions that signal weakness, which erodes the very leverage the strategy was meant to preserve. Strategic pricing creates competitive tension and protects negotiating position far more reliably than a built-in cushion.
 
 Q: What is the biggest mistake luxury home sellers make in Austin?
-A: Anchoring the list price to an aspirational number rather than to current submarket absorption and qualified buyer demand. The cost shows up later — as extended time on market, public price reductions, and a final sales price often below what a strategically positioned listing would have achieved in the first thirty days.
+A: Anchoring the list price to an aspirational number rather than to current submarket absorption and qualified buyer demand. The cost shows up later as extended time on market, public price reductions, and a final sales price often below what a strategically positioned listing would have achieved in the first thirty days.
 
 Q: Can luxury homes be sold off market in Austin?
 A: Yes. A meaningful share of Austin luxury transactions above $2M close through private, off-market, or quietly distributed channels. Off-market sales protect privacy, control exposure, and can preserve pricing leverage when discretion matters more than maximum public exposure. Echelon Property Group regularly represents sellers through both public and private channels depending on the strategic objective.
@@ -129,11 +129,11 @@ A: Yes. A meaningful share of Austin luxury transactions above $2M close through
 
 Luxury pricing is rarely about finding the highest number.
 
-It is about identifying the number that creates the strongest market response — the price that draws qualified buyers, builds competitive tension, and preserves leverage from the first showing through closing.
+It is about identifying the number that creates the strongest market response: the price that draws qualified buyers, builds competitive tension, and preserves leverage from the first showing through closing.
 
 That decision should not rest on an automated estimate or a price-per-square-foot average. It should rest on submarket-level absorption data, current buyer demand, and a candid read of how your specific property compares to the few homes that have genuinely traded near it.
 
-<a href="/about-austin-real-estate-advisory" class="${LINK}">Echelon Property Group</a> provides advisory-level pricing analysis for sellers across <a href="/communities/barton-creek" class="${LINK}">Barton Creek</a>, <a href="/communities/westlake-hills" class="${LINK}">West Lake Hills</a>, <a href="/communities/rollingwood" class="${LINK}">Rollingwood</a>, <a href="/communities/tarrytown" class="${LINK}">Tarrytown</a>, <a href="/communities/spanish-oaks" class="${LINK}">Spanish Oaks</a>, <a href="/communities/lake-austin" class="${LINK}">Lake Austin</a>, <a href="/communities/rob-roy" class="${LINK}">Rob Roy</a>, and <a href="/communities/davenport-ranch" class="${LINK}">Davenport Ranch</a> — grounded in live market intelligence and, when discretion matters, executed through our <a href="/off-market-real-estate-austin" class="${LINK}">private, off-market distribution network</a>.
+<a href="/about-austin-real-estate-advisory" class="${LINK}">Echelon Property Group</a> provides advisory-level pricing analysis for sellers across <a href="/communities/barton-creek" class="${LINK}">Barton Creek</a>, <a href="/communities/westlake-hills" class="${LINK}">West Lake Hills</a>, <a href="/communities/rollingwood" class="${LINK}">Rollingwood</a>, <a href="/communities/tarrytown" class="${LINK}">Tarrytown</a>, <a href="/communities/spanish-oaks" class="${LINK}">Spanish Oaks</a>, <a href="/communities/lake-austin" class="${LINK}">Lake Austin</a>, <a href="/communities/rob-roy" class="${LINK}">Rob Roy</a>, and <a href="/communities/davenport-ranch" class="${LINK}">Davenport Ranch</a>. Every recommendation is grounded in live market intelligence and, when discretion matters, executed through our <a href="/off-market-real-estate-austin" class="${LINK}">private, off-market distribution network</a>.
 
 :::cta
 heading: Strategic pricing is the difference between leverage and concession.
@@ -146,7 +146,7 @@ href: /sell-private
     id: "austin-luxury-real-estate-market-analysis",
     title: "Austin Luxury Real Estate Market Analysis: What Buyers and Sellers Need to Know",
     metaTitle: "Austin Luxury Real Estate Market Analysis | Echelon Property Group",
-    excerpt: "How Austin's luxury market actually behaves above $2M — submarket-level absorption, off-market activity, and the metrics that matter for buyers and sellers in Westlake Hills, Lake Austin, Barton Creek, Rollingwood, and Tarrytown.",
+    excerpt: "How Austin's luxury market actually behaves above $2M. Submarket-level absorption, off-market activity, and the metrics that matter for buyers and sellers in Westlake Hills, Lake Austin, Barton Creek, Rollingwood, and Tarrytown.",
     author: "Taylor Sherwood",
     date: "2026-05-28",
     readTime: "10 min read",

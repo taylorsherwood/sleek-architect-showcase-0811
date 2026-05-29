@@ -15,11 +15,12 @@ export function useAnalytics(): void {
   const location = useLocation();
   const lastPathRef = useRef<string>("");
 
-  // SPA page_view
+  // SPA page_view + capture Google Ads click IDs from URL (persisted 90d)
   useEffect(() => {
     const path = location.pathname + location.search;
     if (path === lastPathRef.current) return;
     lastPathRef.current = path;
+    captureAdsClickIds();
     // Defer so document.title reflects the new route's <Helmet> title.
     const id = window.setTimeout(() => trackPageView(path), 60);
     return () => window.clearTimeout(id);

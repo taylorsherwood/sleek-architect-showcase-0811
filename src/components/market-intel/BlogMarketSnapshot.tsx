@@ -164,8 +164,8 @@ export const BlogMarketSnapshot = () => {
             Current conditions shaping pricing strategy across Austin's luxury market.
           </p>
           {periodLabel && (
-            <p className="mt-3 text-[0.55rem] md:text-[0.6rem] tracking-[0.32em] uppercase text-muted-foreground/75">
-              Advisory Brief · {periodLabel}
+            <p className="mt-3 text-[0.55rem] md:text-[0.6rem] tracking-[0.32em] uppercase text-muted-foreground/75 whitespace-pre-line">
+              ADVISORY BRIEF · {periodLabel.toUpperCase()}{"\n\n"}
             </p>
           )}
         </div>

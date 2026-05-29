@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
-import { trackEvent, trackPageView } from "@/lib/analytics";
+import { trackEvent, trackPageView, captureAdsClickIds } from "@/lib/analytics";
 
 /**
  * Mount once at the app root. Handles:

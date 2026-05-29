@@ -11,6 +11,9 @@ const MarketBalanceGauge = lazy(
 const RatesAffordability = lazy(
   () => import("@/components/market-intel/RatesAffordability"),
 );
+const BlogMarketSnapshot = lazy(
+  () => import("@/components/market-intel/BlogMarketSnapshot"),
+);
 
 interface BlogContentProps {
   content: string;
@@ -146,7 +149,7 @@ const renderMarkdownBody = (body: string): string => {
 };
 
 interface Block {
-  type: "markdown" | "glance" | "best-for" | "watch-out" | "micro-cta" | "cta" | "faq" | "intel-pulse" | "intel-gauge" | "intel-rates";
+  type: "markdown" | "glance" | "best-for" | "watch-out" | "micro-cta" | "cta" | "faq" | "intel-pulse" | "intel-gauge" | "intel-rates" | "intel-luxury-snapshot";
   body: string;
 }
 
@@ -165,7 +168,7 @@ const parseBlocks = (content: string): Block[] => {
 
   while (i < lines.length) {
     const line = lines[i];
-    const fenceMatch = line.match(/^:::(glance|best-for|watch-out|micro-cta|cta|faq|intel-pulse|intel-gauge|intel-rates)\s*$/);
+    const fenceMatch = line.match(/^:::(glance|best-for|watch-out|micro-cta|cta|faq|intel-pulse|intel-gauge|intel-rates|intel-luxury-snapshot)\s*$/);
     if (fenceMatch) {
       flushMd();
       const type = fenceMatch[1] as Block["type"];
@@ -392,6 +395,12 @@ const BlogContent = ({ content, afterGlance }: BlogContentProps) => {
                 <RatesAffordability
                   commentary="Above $2M, financing is a posture rather than a constraint. Most transactions clear with significant cash or asset-backed structures, so the real signal in mortgage rates at this tier is psychological. When rates ease, the move-up pool widens and pent-up Westlake-to-Lake Austin trade-ups reactivate. When rates stay elevated, sellers must rely on presentation discipline and private exposure rather than rate-driven urgency to close."
                 />
+              </IntelInsert>
+            );
+          case "intel-luxury-snapshot":
+            return (
+              <IntelInsert key={idx}>
+                <BlogMarketSnapshot />
               </IntelInsert>
             );
           default:

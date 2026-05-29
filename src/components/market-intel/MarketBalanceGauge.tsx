@@ -274,16 +274,16 @@ export default function MarketBalanceGauge({
 
                 {/* Credibility note */}
                 <p
-                  className="mt-6 text-[11px] tracking-[0.22em] uppercase font-sans"
+                  className="mt-6 text-[11px] tracking-[0.22em] uppercase font-sans whitespace-pre-line"
                   style={{ color: `${NAVY}66` }}
                 >
-                  Last Updated {loadedAt.toLocaleString("en-US", {
+                  LAST UPDATED {loadedAt.toLocaleString("en-US", {
                     month: "short",
                     day: "numeric",
                     year: "numeric",
                     hour: "numeric",
                     minute: "2-digit",
-                  })}
+                  }).toUpperCase()}{"\n\n\n\n"}
                 </p>
               </>
             )}

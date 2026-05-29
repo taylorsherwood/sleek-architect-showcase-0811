@@ -171,7 +171,7 @@ export const BlogMarketSnapshot = () => {
         </div>
 
         {/* Buyer / Seller balance gauge */}
-        <div className="mt-8 md:mt-12 max-w-4xl mx-auto">
+        <div className="mt-6 md:mt-8 max-w-4xl mx-auto [&>div>section]:!py-0 [&>div>section]:!bg-transparent [&_section>div>div]:!pt-6 [&_section>div>div]:md:!pt-8 [&_section>div>div]:!pb-0 [&_section>div>div]:!border-t-0">
           <Suspense fallback={<div className="min-h-[180px]" />}>
             <MarketBalanceGauge
               communityName="Austin Metro Residential $2M+"
@@ -183,7 +183,7 @@ export const BlogMarketSnapshot = () => {
         </div>
 
         {/* Metric ledger */}
-        <dl className="mt-10 md:mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 max-w-5xl mx-auto">
+        <dl className="mt-6 md:mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 max-w-5xl mx-auto">
           {rendered.map((m, i) => (
             <div
               key={m.key}

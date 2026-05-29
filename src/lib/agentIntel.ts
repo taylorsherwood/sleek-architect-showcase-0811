@@ -159,10 +159,11 @@ export async function fetchAgentIntel<T = unknown>(
 
 export function formatLastUpdated(iso: string): string {
   try {
-    return new Date(iso).toLocaleString("en-US", {
+    const formatted = new Date(iso).toLocaleString("en-US", {
       month: "short", day: "numeric", year: "numeric", hour: "numeric", minute: "2-digit",
-    });
+    }).toUpperCase();
+    return `${formatted}\n\n\n\n`;
   } catch {
-    return iso;
+    return `${iso.toUpperCase()}\n\n\n\n`;
   }
 }

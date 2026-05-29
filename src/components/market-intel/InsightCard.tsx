@@ -46,8 +46,8 @@ export const InsightCard = ({
           )}
         </div>
         {lastUpdated && !loading && !error && (
-          <span className="text-[0.65rem] tracking-[0.18em] uppercase text-muted-foreground whitespace-nowrap md:mt-2">
-            Updated {lastUpdated}
+          <span className="text-[0.65rem] tracking-[0.18em] uppercase text-muted-foreground whitespace-pre-line md:mt-2">
+            LAST UPDATED {lastUpdated}
           </span>
         )}
       </header>

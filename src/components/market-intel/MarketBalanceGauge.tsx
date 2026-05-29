@@ -237,21 +237,21 @@ export default function MarketBalanceGauge({
 
                 {/* Plain-English interpretation */}
                 <p
-                  className="mt-7 font-sans text-[15px] leading-relaxed"
+                  className="mt-6 font-sans text-[15px] leading-relaxed"
                   style={{ color: `${NAVY}cc` }}
                 >
-                  {interpretation(tier, communityName)}
+                  {interpretation(tier)}
                 </p>
 
                 {/* Supporting signals */}
                 {signals.length > 0 && (
                   <dl
-                    className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-4"
+                    className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-3"
                   >
                     {signals.map((s) => (
                       <div
                         key={s.label}
-                        className="flex items-baseline justify-between gap-4 pb-3"
+                        className="flex items-baseline justify-between gap-4 pb-2.5"
                         style={{ borderBottom: `1px solid ${NAVY}14` }}
                       >
                         <dt
@@ -273,11 +273,10 @@ export default function MarketBalanceGauge({
 
                 {/* Credibility note */}
                 <p
-                  className="mt-8 text-[11px] tracking-[0.16em] uppercase font-sans"
+                  className="mt-6 text-[11px] tracking-[0.22em] uppercase font-sans"
                   style={{ color: `${NAVY}66` }}
                 >
-                  Updated monthly using local market data and neighborhood-specific trends
-                  {isProxy && resolvedMarket ? ` · ${resolvedMarket} area context` : ""}
+                  Updated Monthly
                 </p>
               </>
             )}

@@ -197,7 +197,7 @@ export default function MarketBalanceGauge({
             style={{ borderTop: `1px solid ${GOLD}33` }}
           >
             <p
-              className="text-[11px] tracking-[0.22em] uppercase font-sans mb-3"
+              className="text-[11px] tracking-[0.22em] uppercase font-sans mb-3 whitespace-pre-wrap"
               style={{ color: GOLD }}
             >
               {eyebrow ?? `${communityName} · Market Intelligence`}

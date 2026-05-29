@@ -289,7 +289,7 @@ Deno.serve(async (req) => {
     }
 
     console.log("Payload sent");
-    return json({ ok: true, leadId });
+    return json({ ok: true, leadId, metaEventId });
   } catch (error) {
     const message = error instanceof Error ? error.message : "Unknown error";
     console.error("[Lead submit] unhandled error", message);

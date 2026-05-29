@@ -57,7 +57,7 @@ function interpretation(tier: PositionTier): string {
     case "strong-buyer":
       return "Conditions strongly favor buyers, with meaningful negotiating room.";
     case "moderate-buyer":
-      return "Conditions currently favor patient buyers.";
+      return "\n";
     case "balanced":
       return "Market conditions remain balanced with moderate negotiating flexibility.";
     case "moderate-seller":

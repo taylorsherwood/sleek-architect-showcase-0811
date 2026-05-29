@@ -276,7 +276,7 @@ export default function MarketBalanceGauge({
                   className="mt-6 text-[11px] tracking-[0.22em] uppercase font-sans"
                   style={{ color: `${NAVY}66` }}
                 >
-                  Updated Monthly
+                  Updated In Real Time
                 </p>
               </>
             )}

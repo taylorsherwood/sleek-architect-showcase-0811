@@ -8,7 +8,7 @@
  * even if Zapier fails or the webhook URL changes.
  */
 import { supabase } from "@/integrations/supabase/client";
-import { trackLead } from "@/lib/analytics";
+import { trackLead, getAdsClickIds } from "@/lib/analytics";
 
 /** Reads UTM parameters from the current URL. */
 function getUtmFromUrl(): Record<string, string> {
@@ -22,6 +22,14 @@ function getUtmFromUrl(): Record<string, string> {
     }
   );
   return out;
+}
+
+/** Splits a "First Last" string into first/last name parts. */
+function splitName(full: string): { firstName?: string; lastName?: string } {
+  const parts = full.trim().split(/\s+/);
+  if (parts.length === 0 || !parts[0]) return {};
+  if (parts.length === 1) return { firstName: parts[0] };
+  return { firstName: parts[0], lastName: parts.slice(1).join(" ") };
 }
 
 /**

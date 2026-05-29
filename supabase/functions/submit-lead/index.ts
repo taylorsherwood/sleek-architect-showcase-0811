@@ -150,12 +150,17 @@ Deno.serve(async (req) => {
     }
 
     if (!payload.name || !payload.email || (!payload.phone && !payload.message) || !emailRegex.test(payload.email)) {
-      console.warn("Submission blocked: missing required fields", payload);
+      console.warn("[Lead submit] blocked: missing required fields", {
+        source: payload.source,
+        page: payload.page,
+      });
       return json({ ok: false, blocked: true, error: "Submission blocked: missing required fields" }, 400);
     }
 
-    console.log("Validation passed");
-    console.log("[Lead submit] outgoing payload", payload);
+    console.log("[Lead submit] payload received", {
+      source: payload.source,
+      page: payload.page,
+    });
 
     const supabaseUrl = Deno.env.get("SUPABASE_URL");
     const serviceRoleKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY");

@@ -149,7 +149,7 @@ const renderMarkdownBody = (body: string): string => {
 };
 
 interface Block {
-  type: "markdown" | "glance" | "best-for" | "watch-out" | "micro-cta" | "cta" | "faq" | "intel-pulse" | "intel-gauge" | "intel-rates" | "intel-luxury-snapshot";
+  type: "markdown" | "glance" | "best-for" | "watch-out" | "micro-cta" | "cta" | "faq" | "stat-block" | "intel-pulse" | "intel-gauge" | "intel-rates" | "intel-luxury-snapshot";
   body: string;
 }
 

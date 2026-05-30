@@ -280,8 +280,8 @@ const StatBlock = ({ body }: { body: string }) => {
       )}
       <ul className="space-y-3 mb-5">
         {bullets.map((b, i) => (
-          <li key={i} className="flex gap-3 text-foreground/85 leading-[1.75] text-base">
-            <span className="text-accent-gold mt-2 h-px w-4 shrink-0 bg-[#b9a06c]" aria-hidden />
+          <li key={i} className="flex gap-4 text-foreground/85 leading-[1.75] text-base">
+            <span className="h-px w-4 shrink-0 bg-[#b9a06c] mt-[0.7em]" aria-hidden />
             <span dangerouslySetInnerHTML={{ __html: renderInline(b) }} />
           </li>
         ))}

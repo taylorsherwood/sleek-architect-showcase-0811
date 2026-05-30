@@ -125,9 +125,12 @@ const LockedReportPreview = ({
     setSubmitting(false);
     setUnlockedLocal(true);
 
-    // Redirect to the full gated report page
+    // Scroll to the now-unlocked inline report on this page.
     if (typeof window !== "undefined") {
-      window.location.assign(`/communities/${slug}/report`);
+      requestAnimationFrame(() => {
+        const target = document.getElementById(formTargetId);
+        target?.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
     }
   };
 

@@ -3,6 +3,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { CommunityRecord } from "@/types/community";
 import { toCommunityRecord } from "@/lib/communityCoerce";
 import { getCachedUnlock } from "@/lib/communityUnlock";
+import { useAuth } from "@/hooks/useAuth";
 import CommunityGate from "@/components/community-report/CommunityGate";
 import MarketSnapshot from "@/components/community-report/MarketSnapshot";
 import DemographicsPanel from "@/components/community-report/DemographicsPanel";
@@ -29,6 +30,7 @@ interface InlineCommunityReportProps {
 }
 
 const InlineCommunityReport = ({ slug, unlockedExtras, hideListings = false }: InlineCommunityReportProps) => {
+  const { isAdmin } = useAuth();
   const [community, setCommunity] = useState<CommunityRecord | null>(null);
   const [loading, setLoading] = useState(true);
   const [unlocked, setUnlockedState] = useState(false);
@@ -37,20 +39,30 @@ const InlineCommunityReport = ({ slug, unlockedExtras, hideListings = false }: I
   useEffect(() => {
     let cancelled = false;
     setLoading(true);
-    supabase
-      .from("communities")
-      .select(TEASER_COLUMNS)
-      .eq("slug", slug)
-      .eq("published", true)
-      .maybeSingle()
-      .then(({ data }) => {
-        if (cancelled) return;
-        const teaser = data ? toCommunityRecord(data) : null;
+
+    // Admins bypass the gate entirely and load the full record (RLS allows it).
+    const query = isAdmin
+      ? supabase.from("communities").select("*").eq("slug", slug).maybeSingle()
+      : supabase
+          .from("communities")
+          .select(TEASER_COLUMNS)
+          .eq("slug", slug)
+          .eq("published", true)
+          .maybeSingle();
+
+    query.then(({ data }) => {
+      if (cancelled) return;
+      const record = data ? toCommunityRecord(data) : null;
+      if (isAdmin) {
+        setCommunity(record);
+        setUnlockedState(true);
+      } else {
         const cached = getCachedUnlock(slug);
-        setCommunity(cached || teaser);
+        setCommunity(cached || record);
         setUnlockedState(!!cached);
-        setLoading(false);
-      });
+      }
+      setLoading(false);
+    });
 
     const onUnlock = (e: Event) => {
       const detail = (e as CustomEvent<{ slug?: string; community?: CommunityRecord }>).detail;
@@ -66,11 +78,11 @@ const InlineCommunityReport = ({ slug, unlockedExtras, hideListings = false }: I
       cancelled = true;
       window.removeEventListener("echelon:community-unlocked", onUnlock as EventListener);
     };
-  }, [slug]);
+  }, [slug, isAdmin]);
 
   if (loading || !community) return null;
 
-  const showFullReport = !community.gate_enabled || unlocked;
+  const showFullReport = isAdmin || !community.gate_enabled || unlocked;
 
   return (
     <section className="py-4">

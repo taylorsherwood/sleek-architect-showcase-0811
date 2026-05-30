@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { isUnlocked } from "@/lib/communityUnlock";
+import { useAuth } from "@/hooks/useAuth";
 
 interface MidPageCTABandProps {
   slug: string;
@@ -17,13 +18,14 @@ const MidPageCTABand = ({
   communityName,
   formTargetId = "unlock-report",
 }: MidPageCTABandProps) => {
+  const { isAdmin } = useAuth();
   const [unlocked, setUnlockedLocal] = useState(false);
 
   useEffect(() => {
     setUnlockedLocal(isUnlocked(slug));
   }, [slug]);
 
-  if (unlocked) return null;
+  if (isAdmin || unlocked) return null;
 
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();

@@ -2,6 +2,7 @@ import { Lock, TrendingDown, TrendingUp } from "lucide-react";
 import { FormEvent, useEffect, useState } from "react";
 import { isUnlocked, setUnlocked, getUtmParams } from "@/lib/communityUnlock";
 import { submitLeadToZapier } from "@/lib/formUtils";
+import { useAuth } from "@/hooks/useAuth";
 
 interface LockedReportPreviewProps {
   slug: string;
@@ -74,6 +75,7 @@ const LockedReportPreview = ({
   communityName,
   formTargetId = "unlock-report",
 }: LockedReportPreviewProps) => {
+  const { isAdmin } = useAuth();
   const [unlocked, setUnlockedLocal] = useState(false);
   const [formExpanded, setFormExpanded] = useState(false);
   const [email, setEmail] = useState("");
@@ -92,7 +94,7 @@ const LockedReportPreview = ({
     };
   }, [slug]);
 
-  if (unlocked) return null;
+  if (isAdmin || unlocked) return null;
 
   const handleQuickUnlock = async (e: FormEvent) => {
     e.preventDefault();

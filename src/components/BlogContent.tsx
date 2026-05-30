@@ -356,6 +356,8 @@ const BlogContent = ({ content, afterGlance }: BlogContentProps) => {
             return <MicroCTA key={idx} body={block.body} />;
           case "cta":
             return <SoftCTA key={idx} body={block.body} />;
+          case "stat-block":
+            return <StatBlock key={idx} body={block.body} />;
           case "faq":
             return <FAQBlock key={idx} body={block.body} />;
           case "intel-pulse":

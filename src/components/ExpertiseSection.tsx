@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import ScrollReveal from "@/components/ScrollReveal";
 import commercialMusicLane from "@/assets/commercial-music-lane-austin.webp";
-import luxuryHomesKitchen from "@/assets/luxury-homes-austin-kitchen.webp";
+import luxuryHomesKitchen from "@/assets/luxury-homes-austin-twilight.webp";
 import paseoInvestment from "@/assets/paseo-downtown-austin-investment.webp";
 
 const expertiseBlocks = [

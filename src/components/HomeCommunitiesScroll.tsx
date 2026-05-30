@@ -204,7 +204,7 @@ const HomeCommunitiesScroll = () => {
                 >
                   {n.stat}
                 </p>
-                <h2 className="font-display text-4xl lg:text-6xl text-white leading-[0.98] mb-5">
+                <h2 className="font-display text-4xl lg:text-6xl text-white leading-[0.98] mb-5 whitespace-nowrap">
                   {n.name}
                 </h2>
                 <span
@@ -261,7 +261,7 @@ const HomeCommunitiesScroll = () => {
               >
                 {n.stat}
               </p>
-              <h2 className="font-display text-3xl text-white leading-[1]">
+              <h2 className="font-display text-3xl text-white leading-[1] whitespace-nowrap">
                 {n.name}
               </h2>
             </div>

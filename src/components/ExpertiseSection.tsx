@@ -12,7 +12,7 @@ const expertiseBlocks = [
     link: "/austin-luxury-homes-for-sale",
     linkText: "Explore",
     image: luxuryHomesKitchen,
-    alt: "Modern Austin luxury home interior with chef's kitchen and open living space",
+    alt: "Austin luxury home at twilight with infinity pool, oak trees, and warm interior lighting",
   },
   {
     eyebrow: "LAND & ENTITLEMENT",

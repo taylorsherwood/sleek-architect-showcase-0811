@@ -57,9 +57,9 @@ export const blogPosts: BlogPost[] = [
     readTime: "20 min read",
     category: "INVESTMENT STRATEGY",
     image: blogAustinRedevelopment,
-    imageAlt: "Aerial view of an Austin infill teardown and rebuild site showing a new single-family home next to a framed multi-unit redevelopment under construction",
+    imageAlt: "Austin redevelopment opportunity showing infill residential development and new construction replacing older housing stock",
     content: `
-Austin's land market has fundamentally changed. What once traded as a modest single-family lot in <a href="/communities/bouldin-creek" class="${LINK}">Bouldin Creek</a>, <a href="/communities/east-austin" class="${LINK}">East Austin</a>, or Crestview now carries redevelopment value that often exceeds the value of the structure sitting on it. For property owners, investors, and developers paying attention, this shift represents one of the more significant wealth-creation opportunities in the city's recent history.
+Austin redevelopment opportunities are reshaping how landowners, investors, and developers evaluate underutilized property across neighborhoods such as <a href="/communities/east-austin" class="${LINK}">East Austin</a>, <a href="/communities/bouldin-creek" class="${LINK}">Bouldin Creek</a>, <a href="/communities/zilker" class="${LINK}">Zilker</a>, <a href="/communities/barton-hills" class="${LINK}">Barton Hills</a>, Brentwood, and Crestview. As land values continue to rise and zoning flexibility expands under initiatives like HOME, understanding a property's <a href="/blog/highest-and-best-use-property-austin" class="${LINK}">highest and best use</a> has become increasingly important for owners seeking to maximize value.
 
 This guide is written for landowners, investors, and developers who want to understand how redevelopment opportunities are identified, evaluated, and executed in Austin's current market. Whether you own an aging home on a large lot in <a href="/communities/barton-hills" class="${LINK}">Barton Hills</a>, a commercial strip on South Lamar, or a single-family property in East Austin that feels out of place with its surroundings, this guide will help you think through the analysis the way an experienced <a href="/about-austin-real-estate-advisory" class="${LINK}">Austin real estate advisor</a> would.
 

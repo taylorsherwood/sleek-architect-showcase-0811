@@ -45,7 +45,7 @@ const listings: Listing[] = [
   {
     id: "4",
     image: listingLostCreek,
-    price: "$4,295,000",
+    price: "$3,850,000",
     address: "2319 Cypress Point E, Austin, TX 78746",
     neighborhood: "Lost Creek",
     link: "https://taylorsherwood.realscout.com/agent/ls/169226605",
@@ -62,7 +62,7 @@ const listings: Listing[] = [
   {
     id: "6",
     image: listingEastAustin,
-    price: "$2,395,000",
+    price: "$2,295,000",
     address: "1007 E 8th St, Austin, TX 78702",
     neighborhood: "East Austin",
     link: "https://taylorsherwood.realscout.com/agent/ls/169820156",
@@ -73,7 +73,7 @@ const listings: Listing[] = [
     price: "$1,599,000",
     address: "2210 Westlake Dr A, Austin, TX 78746",
     neighborhood: "Westlake",
-    status: "pending",
+    status: "sold",
     link: "https://taylorsherwood.realscout.com/agent/ls/154226813",
   },
 ];

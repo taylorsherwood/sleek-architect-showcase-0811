@@ -107,17 +107,17 @@ Comparable land sales, entitlement research, and a basic development pro forma a
 
 ## Step 3: Read the Zoning and Entitlement Landscape
 
-Zoning is the legal framework that defines what can be built on a given site. In Austin, the relevant categories for redevelopment include SF-3 (single-family and limited infill), SF-6 (townhouse and condo), MF-1 through MF-6 (multifamily at varying densities), LO and GO (limited and general office), CS (commercial services), MU (mixed use), and PUD (planned unit development). Each carries different development standards, density allowances, and compatibility requirements.
+Zoning is the legal framework that defines what can be built on a given site. The City of Austin Zoning Maps, maintained by the Planning Department, are the authoritative starting point for confirming a property's base classification. The relevant categories for redevelopment include SF-3 (single-family and limited infill), SF-6 (townhouse and condo), MF-1 through MF-6 (multifamily at varying densities), LO and GO (limited and general office), CS (commercial services), MU (mixed use), and PUD (planned unit development). Each carries different development standards, density allowances, and compatibility requirements.
 
-Austin's HOME ordinance changed the SF-3 landscape significantly. Before HOME, SF-3 zoning generally allowed only one principal dwelling unit per lot. After HOME's phased implementation, many SF-3 lots can now accommodate up to three units by right. This is not a minor adjustment. It fundamentally changes the redevelopment calculus for a large portion of Austin's residential land base.
+Austin's HOME Initiative changed the SF-3 landscape significantly. Before HOME, SF-3 zoning generally allowed only one principal dwelling unit per lot. After HOME's phased implementation, many SF-3 lots can now accommodate up to three units by right. This is not a minor adjustment. It fundamentally changes the redevelopment calculus for a large portion of Austin's residential land base, and the official program documentation from the City of Austin remains the cleanest source on what each phase actually permits.
 
 Entitlements refer to the approvals, permits, and zoning designations that authorize a specific development on a specific site. A property with existing entitlements, meaning one where the hard work of obtaining approvals has already been completed, commands a premium in the land market. Developers pay for certainty, and entitlements reduce uncertainty.
 
-For properties that are not yet entitled for their highest and best use, the path forward may involve a variance request, a rezoning application, or a compatibility standards analysis. Austin's compatibility standards restrict building height near single-family zones and are one of the more significant constraints on infill development. Understanding these standards early in the analysis prevents costly surprises.
+For properties that are not yet entitled for their highest and best use, the path forward may involve a variance request, a rezoning application, or a compatibility standards analysis routed through the Austin Development Services Department. Austin's compatibility standards restrict building height near single-family zones and are one of the more significant constraints on infill development. Understanding these standards early in the analysis prevents costly surprises.
 
 One of the more sophisticated strategies in Austin's land market is what practitioners call zoning arbitrage: acquiring a property at its current zoning value, pursuing entitlements for a higher-density use, and then selling or developing at the higher-use value. The profit in this approach comes from the entitlement process itself, not just from market appreciation.
 
-The Imagine Austin comprehensive plan identifies specific growth corridors and activity centers where higher-density development is encouraged by city policy. These corridors align closely with where redevelopment pressure is most visible. South Lamar, East Cesar Chavez, North Loop, and the <a href="/communities/mueller" class="${LINK}">Mueller</a> area are all examples of corridors where zoning pressure is active and where rezoning requests are more likely to receive favorable consideration.
+The Imagine Austin Comprehensive Plan identifies specific growth corridors and activity centers where higher-density development is encouraged by city policy. These corridors align closely with where redevelopment pressure is most visible. South Lamar, East Cesar Chavez, North Loop, and the <a href="/communities/mueller" class="${LINK}">Mueller</a> area are all examples of corridors where zoning pressure is active and where rezoning requests are more likely to receive favorable consideration.
 
 A common mistake among property owners is assuming that current zoning is permanent or that rezoning is impossible without exploring the process. In many cases, a straightforward rezoning or a HOME-enabled development scenario is more accessible than owners realize. The first step is always to understand what the current zoning actually permits, not what you assume it permits.
 
@@ -135,7 +135,7 @@ Underutilization is not always obvious from the street. The clearest indicators 
 
 **Commercial property with below-market rents or vacancy:** Older commercial properties operating at below-market rents, or with significant vacancy, often signal that the highest and best use of the site has shifted away from the current use.
 
-Travis County Appraisal District (TCAD) publishes land and improvement values separately. This data provides a useful starting point for estimating land-to-improvement ratios. When TCAD's land value approaches or exceeds the total assessed value of the property, the improvement is contributing little to the overall valuation, which is a meaningful redevelopment signal.
+Travis Central Appraisal District (TCAD) publishes land and improvement values separately on every parcel record. This data provides a useful starting point for estimating land-to-improvement ratios. When TCAD's land value approaches or exceeds the total assessed value of the property, the improvement is contributing little to the overall valuation, which is a meaningful redevelopment signal. Pairing TCAD data with the City of Austin floodplain maps is also worth the few minutes it takes, since a parcel partially inside a regulated floodplain carries materially different buildable area and entitlement risk than one that is not.
 
 The land-to-value ratio is a quick screening tool investors use to identify candidates worth deeper analysis. A high land-to-value ratio, where land represents a large share of total property value, suggests the improvement is not the primary value driver. That is often where redevelopment economics become compelling. Investors tracking <a href="/austin-real-estate-investment" class="${LINK}">top investment neighborhoods in Austin</a> consistently focus on this metric when screening potential acquisitions.
 
@@ -143,15 +143,32 @@ In Brentwood and Crestview, older ranch-style homes on 7,000 to 10,000 square fo
 
 Underutilization is always relative to the surrounding market. A property that looks underutilized in East Austin may look appropriately developed in a less supply-constrained submarket. Context matters.
 
+## Quick Austin Redevelopment Screening Checklist
+
+A property may warrant a deeper highest-and-best-use analysis if:
+
+- Lot size exceeds neighborhood norms
+- Existing structure is more than 30 years old
+- TCAD land value exceeds 50% of total assessed value
+- Property sits within one mile of a major employment center
+- Property is near a major transit corridor
+- Current zoning allows additional density
+- Comparable redevelopment projects have occurred nearby
+- Property receives unsolicited investor or developer offers
+- Existing improvements generate below-market returns
+- New construction sales are outperforming nearby resale inventory
+
+If three or more conditions apply, the property may justify a formal redevelopment analysis.
+
 ## Step 5: Evaluate the Redevelopment Economics
 
 Understanding whether a redevelopment opportunity is financially viable requires building a pro forma. This does not need to be complex, but it does need to be honest.
 
 The basic structure of a redevelopment pro forma works as follows: projected exit value minus construction costs, soft costs, financing costs, and required profit margin equals the residual value available to pay for land. This is called the residual land value method, and it is the standard tool developers use to determine what they can afford to pay for a site.
 
-Exit value is the projected sale price or stabilized value of the completed development. In Austin's infill market, this varies significantly by location. New construction in Zilker and Bouldin Creek supports different per-square-foot pricing than new construction in Mueller or Brentwood. Getting this number right is the most important variable in the analysis, and it requires current comparable sales data, not assumptions. Our <a href="/blog/austin-luxury-real-estate-market-analysis" class="${LINK}">Austin luxury market analysis</a> and <a href="/blog/how-to-price-a-luxury-home-in-austin" class="${LINK}">pricing methodology</a> are useful reference points here.
+Exit value is the projected sale price or stabilized value of the completed development. In Austin's infill market, this varies significantly by location. New construction in Zilker and Bouldin Creek supports different per-square-foot pricing than new construction in Mueller or Brentwood. Getting this number right is the most important variable in the analysis, and it requires current comparable sales data, not assumptions. Austin Board of REALTORS market statistics are the standard reference for closed-sale activity at the submarket level, and our <a href="/blog/austin-luxury-real-estate-market-analysis" class="${LINK}">Austin luxury market analysis</a> and <a href="/blog/how-to-price-a-luxury-home-in-austin" class="${LINK}">pricing methodology</a> add the per-corridor color those numbers alone do not provide.
 
-Hard construction costs cover the physical work: demolition, site preparation, foundation, framing, mechanical, electrical, plumbing, finishes, and landscaping. These costs have shifted meaningfully in recent years and must be modeled using current contractor pricing, not historical averages.
+Hard construction costs cover the physical work: demolition, site preparation, foundation, framing, mechanical, electrical, plumbing, finishes, and landscaping. These costs have shifted meaningfully in recent years and must be modeled using current contractor pricing, not historical averages. City of Austin building permit data is a useful cross-reference for understanding what is actually being built nearby, at what scale, and how long similar projects have been taking to clear permitting.
 
 Soft costs are frequently underestimated, particularly by first-time developers and property owners who have not been through the entitlement process. Architecture, engineering, civil work, entitlement consulting, permitting fees, and carrying costs during the development period often represent 15 to 25 percent of total project cost. Skipping this line item in a pro forma produces a misleadingly optimistic result.
 
@@ -161,7 +178,23 @@ Lot size, setbacks, impervious cover limits, and floor-to-area ratio (FAR) const
 
 Small multifamily projects, including duplexes, triplexes, and cottage courts, pencil differently than single-family replacement. They spread land cost across multiple units, which can improve economics on a per-unit basis. But they also carry more complexity in design, permitting, and eventual sale or management.
 
-The hold versus sell decision deserves careful thought. Sometimes selling land to a developer captures more value than attempting to develop independently, particularly for property owners who lack development experience or access to favorable construction financing. A developer who can execute efficiently may generate a higher residual land value than an inexperienced owner attempting the same project. That residual value is what they will pay you for the land.
+The hold versus sell decision deserves careful thought. Sometimes <a href="/sell" class="${LINK}">selling land to a developer</a> captures more value than attempting to develop independently, particularly for property owners who lack development experience or access to favorable construction financing. A developer who can execute efficiently may generate a higher residual land value than an inexperienced owner attempting the same project. That residual value is what they will pay you for the land.
+
+## Austin Redevelopment Hotspots at a Glance
+
+:::glance
+Neighborhood | Typical Redevelopment Type | Primary Driver
+East Austin | Duplexes, triplexes, small multifamily | Downtown proximity
+Bouldin Creek | Luxury teardown-rebuilds | Land scarcity
+Zilker | High-end replacement homes | Premium buyer demand
+Barton Hills | Custom homes and infill development | Larger lots
+Brentwood | Infill housing | Relative affordability
+Crestview | Small multifamily and infill | Transit access
+South Lamar | Mixed-use redevelopment | Corridor growth
+Mueller | Planned infill development | Master-planned expansion
+Westlake | Luxury custom rebuilds | Eanes ISD demand
+Rollingwood | High-end replacement homes | Location and school quality
+:::
 
 ## Step 6: Know Which Austin Neighborhoods Are Under Redevelopment Pressure
 
@@ -185,6 +218,25 @@ Redevelopment activity is not evenly distributed across Austin. Understanding wh
 
 The same lot size carries very different redevelopment economics depending on where it is located. A 9,000 square foot lot in Zilker and a 9,000 square foot lot in a less supply-constrained Austin submarket are not comparable development opportunities. Location drives exit value, and exit value drives everything else in the pro forma. A detailed <a href="/best-luxury-neighborhoods-austin" class="${LINK}">Austin neighborhood review</a> is a useful starting point for understanding how these dynamics differ across submarkets.
 
+## Why Market Intelligence Matters Before Redeveloping
+
+Zoning tells you what you can build. Market intelligence tells you whether you should. A site that pencils on paper can still fail in execution if the surrounding submarket cannot absorb the finished product at the price the pro forma assumed.
+
+Before committing to a redevelopment path, the decision should be informed by:
+
+- Buyer demand trends in the target submarket
+- Inventory levels for comparable finished product
+- Months of supply, as a measure of how balanced the market actually is
+- Absorption rates for new construction
+- New construction competition already underway nearby
+- Price-per-square-foot trends over the last 12 to 24 months
+- Migration patterns into and out of Austin, and across submarkets
+- Neighborhood appreciation trends relative to the broader metro
+
+Each of these inputs shapes the exit value at the top of the residual land value calculation, and exit value drives every other number below it. Builders who skip this step are not really running a pro forma. They are running a guess.
+
+Our <a href="/market-intelligence" class="${LINK}">Austin market intelligence</a> resource consolidates the demand, supply, and pricing signals that matter most when evaluating whether redevelopment demand actually exists at a specific corridor or submarket. It is the recommended next step before committing capital to any redevelopment scenario.
+
 ## Step 7: Navigate Off-Market Acquisitions and the Hold-or-Sell Decision
 
 Most redevelopment land transactions in Austin happen off-market. This is not an accident. Developers and investors prefer direct negotiation for several reasons: privacy, price sensitivity, the ability to move quickly, and the advantage of approaching a seller before competing buyers enter the picture.
@@ -197,7 +249,7 @@ Before responding to an unsolicited offer, a property owner should understand: w
 
 The 1031 exchange is a significant consideration for long-term property owners with a low cost basis. It allows the proceeds from a land sale to be reinvested into qualifying replacement properties on a tax-deferred basis. For owners who have held property for many years, the tax savings from a properly structured 1031 exchange can be substantial, and failing to plan for it before a transaction closes forfeits that opportunity permanently.
 
-The hold versus sell decision framework should account for three variables: current income generated by the property, projected future appreciation if held, and the risk and capital requirements of developing independently. For owners who are not developers, selling to an experienced operator often captures more net value than attempting to navigate the development process without relevant experience.
+The hold versus sell decision framework should account for three variables: current income generated by the property, projected future appreciation if held, and the risk and capital requirements of <a href="/invest" class="${LINK}">developing independently</a>. For owners who are not developers, selling to an experienced operator often captures more net value than attempting to navigate the development process without relevant experience.
 
 There is also a middle path worth considering: pursuing entitlements before selling. A property owner who invests in the entitlement process, obtaining approvals for a higher-density use before going to market, can often command a meaningfully higher price than an as-is land sale. Developers pay a premium for reduced risk, and approved entitlements represent exactly that.
 
@@ -207,7 +259,7 @@ The most common mistake in this scenario is selling too quickly to the first dev
 
 ### What is highest and best use?
 
-Highest and best use is the legally permissible, physically possible, financially feasible, and maximally productive use of a property. It is the standard appraisal framework used to determine what a site is worth as a development opportunity, independent of what currently exists on it. In practice, highest and best use analysis compares the value of a property as it currently stands against its value if redeveloped to its optimal use. The gap between those two values is where redevelopment opportunity lives.
+Highest and best use is the legally permissible, physically possible, financially feasible, and maximally productive use of a property. It is the standard appraisal framework used to determine what a site is worth as a development opportunity, independent of what currently exists on it. In practice, highest and best use analysis compares the value of a property as it currently stands against its value if redeveloped to its optimal use. The gap between those two values is where redevelopment opportunity lives. Our <a href="/blog/highest-and-best-use-property-austin" class="${LINK}">full guide to highest and best use in Austin</a> walks through the framework in detail.
 
 ### How do I know if my property has redevelopment potential?
 
@@ -221,11 +273,33 @@ Yes, significantly. Entitlements and rezoning approvals that permit higher-densi
 
 Several factors converge to make Austin a compelling market for redevelopment. Population growth has driven sustained demand for housing and commercial space in the city's core neighborhoods. Land scarcity inside Austin's established infill corridors limits new supply, which supports land values. Recent zoning policy changes, including the HOME ordinance, have expanded what is permissible on many residential lots without requiring a rezoning. And Austin's strong employment base, particularly in technology and professional services, supports the exit values that make redevelopment projects financially viable. The combination of demand pressure, constrained supply, and evolving zoning policy creates a durable environment for Austin land investment and infill development.
 
+### How does Austin's HOME ordinance affect redevelopment opportunities?
+
+Austin's HOME Initiative reshaped what is permissible on a large share of the city's residential land base. On many SF-3 zoned lots, owners can now build up to three units by right, without going through a rezoning. For redevelopment, that change is significant in two ways. It widens the set of financially feasible scenarios on a given lot, because spreading land cost across multiple units often produces a higher residual land value than a single-family replacement. And it shifts what informed buyers will pay for an underutilized SF-3 parcel, because the legal envelope is larger than it was under prior code. Owners evaluating a property under HOME should confirm the specific phase that applies, the lot's eligibility, and any compatibility or impervious cover constraints that still bind the buildable footprint.
+
+### What is a residual land value analysis?
+
+Residual land value analysis is the standard developer framework for deciding what a piece of land is worth as a development site. You start with the projected exit value of the finished project, then subtract hard construction costs, soft costs, financing costs, and a required profit margin. The number left over is the residual, and that is the maximum a rational developer can pay for the land and still hit their return target. Property owners benefit from understanding this calculation because it explains, in plain terms, why developer offers land where they do. A site with strong exit values and reasonable construction costs supports a higher residual, and therefore a higher offer. A site with the same legal entitlements but weaker exit values does not.
+
+### Can I sell my property directly to a developer?
+
+Yes, and a meaningful share of Austin land transactions happen exactly this way. Direct sales to developers, often handled off-market, can be faster and more private than a traditional listing, and they avoid much of the staging and showing burden of a retail sale. The risk is informational. Developers come to the table with a fully built pro forma, a clear view of what the land is worth to them, and experience negotiating against owners who do not have the same data. Before engaging directly, the owner should have an independent view of comparable land sales, current entitlement potential, and tax structuring options such as a 1031 exchange. Without those, the developer is the only party in the room with a number.
+
+### Should I pursue entitlements before selling?
+
+Sometimes. Pursuing entitlements before going to market can meaningfully increase land value because developers pay a premium for reduced risk and a clearer path to construction. The right answer depends on three things: how large the entitlement-driven uplift is likely to be relative to current as-is land value, how much time and capital the entitlement process will require, and how much execution risk the owner is willing to carry. On corridors where rezoning paths are well established and demand for entitled product is strong, the math often favors entitling first. On parcels where the existing zoning already supports the highest realistic use, additional entitlement work may add cost without proportionally increasing exit value. This is a question worth modeling before committing.
+
+### Which Austin neighborhoods are experiencing the most redevelopment activity?
+
+The most active redevelopment corridors in Austin today include East Austin, Bouldin Creek, Zilker, Barton Hills, Clarksville, Tarrytown, Brentwood, Crestview, the South Lamar corridor, Mueller, and the Westlake and Rollingwood submarkets outside Austin city limits. The specific type of redevelopment varies by neighborhood. East Austin sees substantial duplex, triplex, and small multifamily infill. Bouldin Creek and Zilker are dominated by luxury teardown-rebuilds. Brentwood and Crestview are absorbing both single-family replacement and small multifamily under HOME. Westlake and Rollingwood remain almost exclusively custom rebuilds driven by Eanes ISD demand. The common thread is that land value has risen to the point where the existing improvement is no longer the dominant value driver on a meaningful share of parcels.
+
 ## Request a Confidential Highest-and-Best-Use Consultation
 
-The central insight running through everything in this guide is straightforward: the gap between what a property is currently used for and what it could be used for is where value lives. Identifying that gap, quantifying it, and deciding what to do about it requires current market knowledge, analytical rigor, and an understanding of Austin's specific zoning and entitlement landscape.
+Most property owners know what their property is worth today. Far fewer know what it could be worth under current zoning, redevelopment, or entitlement scenarios. The difference can be substantial.
 
-Many property owners sitting on significant Austin redevelopment potential have not yet had a clear-eyed conversation about what their asset is actually worth. Some have received unsolicited developer offers and are unsure how to evaluate them. Others are weighing whether to hold, sell, or pursue development themselves. Most would benefit from an independent perspective before committing to any path.
+At Echelon Property Group, we help owners, investors, and developers evaluate redevelopment potential through highest-and-best-use analysis, zoning review, market intelligence, and off-market land valuation.
+
+If you are considering selling, holding, redeveloping, or simply want to understand what your property may be worth to a developer, schedule a confidential consultation.
 
 Echelon Property Group works with property owners, investors, and developers across Austin's most active redevelopment corridors. Our approach is advisory, not transactional. We help clients understand the full value of their asset, the range of options available to them, and the strategic considerations that should inform their decision, before they commit to anything.
 
@@ -233,7 +307,7 @@ If you own property in East Austin, Bouldin Creek, Zilker, Barton Hills, Clarksv
 
 There is no obligation and no sales pitch. Just an honest analysis of where your property sits in Austin's current market and what your options look like from here.
 
-<a href="/contact" class="${LINK}">Learn more about our services</a> and reach out to schedule a confidential highest-and-best-use consultation with the Echelon Property Group.
+<a href="/contact" class="${LINK}">Reach out to schedule a confidential highest-and-best-use consultation</a> with the Echelon Property Group.
 `,
   },
   {

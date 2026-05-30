@@ -13,6 +13,8 @@ const SERIES_URL = "https://fred.stlouisfed.org/graph/fredgraph.csv?id=MORTGAGE3
 
 // Cache the entire response for 6 hours. FRED updates weekly (Thursdays).
 const CACHE_TTL_MS = 1000 * 60 * 60 * 6;
+// Stale cache retained up to 30 days as fallback if FRED is unavailable.
+const STALE_TTL_MS = 1000 * 60 * 60 * 24 * 30;
 let cached: { at: number; body: string } | null = null;
 
 interface Point { date: string; value: number }
@@ -72,9 +74,15 @@ Deno.serve(async (req) => {
     });
   } catch (err) {
     const message = err instanceof Error ? err.message : "unknown_error";
-    return new Response(JSON.stringify({ error: message }), {
-      status: 502,
-      headers: { ...corsHeaders, "Content-Type": "application/json" },
-    });
+    // Serve stale cache if available so the UI never blanks on upstream hiccups.
+    if (cached && Date.now() - cached.at < STALE_TTL_MS) {
+      return new Response(cached.body, {
+        headers: { ...corsHeaders, "Content-Type": "application/json", "X-Cache": "stale", "X-Upstream-Error": message },
+      });
+    }
+    return new Response(
+      JSON.stringify({ error: message, fallback: true, latest: null, latest_date: null, points: [], source: "FRED", attribution: "Freddie Mac via FRED · MORTGAGE30US", last_fetched: new Date().toISOString() }),
+      { status: 200, headers: { ...corsHeaders, "Content-Type": "application/json" } },
+    );
   }
 });

@@ -61,7 +61,7 @@ const MarketSnapshot = ({ stats, communityName }: MarketSnapshotProps) => {
               <p className="text-xs uppercase tracking-wider text-gold mb-2">
                 {item.label}
               </p>
-              <p className="text-base text-architectural font-normal leading-relaxed">{item.value}</p>
+              <p className="text-base text-foreground font-light leading-relaxed">{item.value}</p>
             </div>
           ))}
         </div>

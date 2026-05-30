@@ -67,16 +67,15 @@ We cover highest and best use analysis, zoning and entitlement considerations, h
 
 The goal is not to push you toward any particular outcome. It is to give you the analytical framework to make a well-informed decision about one of your most significant assets.
 
+## Austin Redevelopment by the Numbers
+
 :::stat-block
-title: Austin Redevelopment by the Numbers
 • Austin added substantial population growth over the past decade, increasing demand for housing and commercial space.
 • Thousands of residential lots gained additional development flexibility through Austin's HOME Initiative.
 • In many central Austin neighborhoods, land values now represent a majority of total property value.
 • Redevelopment activity continues to concentrate in Austin's most supply-constrained infill corridors.
 These trends help explain why <a href="/blog/highest-and-best-use-property-austin" class="${LINK}">highest-and-best-use analysis</a> has become increasingly important for property owners, investors, and developers.
 :::
-
-## Austin Redevelopment by the Numbers
 
 ## Step 1: Understand What a Redevelopment Opportunity Actually Is
 

@@ -37,7 +37,7 @@ const listings: Listing[] = [
   {
     id: "3",
     image: listingTarrytown,
-    price: "$4,600,000",
+    price: "$4,495,000",
     address: "2203 Greenlee Dr, Austin, TX 78703",
     neighborhood: "Tarrytown",
     link: "https://taylorsherwood.realscout.com/agent/ls/167683003",

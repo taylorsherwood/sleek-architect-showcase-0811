@@ -168,7 +168,7 @@ const parseBlocks = (content: string): Block[] => {
 
   while (i < lines.length) {
     const line = lines[i];
-    const fenceMatch = line.match(/^:::(glance|best-for|watch-out|micro-cta|cta|faq|intel-pulse|intel-gauge|intel-rates|intel-luxury-snapshot)\s*$/);
+    const fenceMatch = line.match(/^:::(glance|best-for|watch-out|micro-cta|cta|faq|stat-block|intel-pulse|intel-gauge|intel-rates|intel-luxury-snapshot)\s*$/);
     if (fenceMatch) {
       flushMd();
       const type = fenceMatch[1] as Block["type"];

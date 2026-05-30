@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import ScrollReveal from "@/components/ScrollReveal";
 import commercialMusicLane from "@/assets/commercial-music-lane-austin.webp";
-import luxuryHomesKitchen from "@/assets/luxury-homes-austin-kitchen.webp";
+import luxuryHomesKitchen from "@/assets/luxury-homes-austin-twilight.webp";
 import paseoInvestment from "@/assets/paseo-downtown-austin-investment.webp";
 
 const expertiseBlocks = [
@@ -12,7 +12,7 @@ const expertiseBlocks = [
     link: "/austin-luxury-homes-for-sale",
     linkText: "Explore",
     image: luxuryHomesKitchen,
-    alt: "Modern Austin luxury home interior with chef's kitchen and open living space",
+    alt: "Austin luxury home at twilight with infinity pool, oak trees, and warm interior lighting",
   },
   {
     eyebrow: "LAND & ENTITLEMENT",

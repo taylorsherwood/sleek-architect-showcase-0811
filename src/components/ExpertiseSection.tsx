@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import ScrollReveal from "@/components/ScrollReveal";
 import commercialMusicLane from "@/assets/commercial-music-lane-austin.webp";
 import luxuryHomesKitchen from "@/assets/luxury-homes-austin-twilight.webp";
-import paseoInvestment from "@/assets/paseo-downtown-austin-investment.webp";
+import paseoInvestment from "@/assets/investment-property-austin-condos.webp";
 
 const expertiseBlocks = [
   {
@@ -13,6 +13,7 @@ const expertiseBlocks = [
     linkText: "Explore",
     image: luxuryHomesKitchen,
     alt: "Austin luxury home at twilight with infinity pool, oak trees, and warm interior lighting",
+    objectPosition: "75% center",
   },
   {
     eyebrow: "LAND & ENTITLEMENT",
@@ -39,7 +40,7 @@ const expertiseBlocks = [
     link: "/invest",
     linkText: "View investments",
     image: paseoInvestment,
-    alt: "Paseo high-rise tower at sunset in downtown Austin, investment property",
+    alt: "Austin multifamily investment property at dusk with lit balconies and modern architecture",
   },
 ];
 
@@ -110,6 +111,7 @@ const ExpertiseSection = () => {
                     className="absolute inset-0 w-full h-full object-cover"
                     style={{
                       transition: "transform 800ms cubic-bezier(0.22, 1, 0.36, 1)",
+                      objectPosition: (block as { objectPosition?: string }).objectPosition ?? "center",
                     }}
                   />
 

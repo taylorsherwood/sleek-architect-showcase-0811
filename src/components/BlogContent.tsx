@@ -149,7 +149,7 @@ const renderMarkdownBody = (body: string): string => {
 };
 
 interface Block {
-  type: "markdown" | "glance" | "best-for" | "watch-out" | "micro-cta" | "cta" | "faq" | "intel-pulse" | "intel-gauge" | "intel-rates" | "intel-luxury-snapshot";
+  type: "markdown" | "glance" | "best-for" | "watch-out" | "micro-cta" | "cta" | "faq" | "stat-block" | "intel-pulse" | "intel-gauge" | "intel-rates" | "intel-luxury-snapshot";
   body: string;
 }
 
@@ -168,7 +168,7 @@ const parseBlocks = (content: string): Block[] => {
 
   while (i < lines.length) {
     const line = lines[i];
-    const fenceMatch = line.match(/^:::(glance|best-for|watch-out|micro-cta|cta|faq|intel-pulse|intel-gauge|intel-rates|intel-luxury-snapshot)\s*$/);
+    const fenceMatch = line.match(/^:::(glance|best-for|watch-out|micro-cta|cta|faq|stat-block|intel-pulse|intel-gauge|intel-rates|intel-luxury-snapshot)\s*$/);
     if (fenceMatch) {
       flushMd();
       const type = fenceMatch[1] as Block["type"];
@@ -256,6 +256,45 @@ const MicroCTA = ({ body }: { body: string }) => (
     {body}
   </p>
 );
+
+const StatBlock = ({ body }: { body: string }) => {
+  const lines = body.split("\n").map((l) => l.trim()).filter(Boolean);
+  let title = "";
+  const bullets: string[] = [];
+  let footer = "";
+  for (const l of lines) {
+    if (l.toLowerCase().startsWith("title:")) {
+      title = l.substring(6).trim();
+    } else if (l.startsWith("•") || l.startsWith("- ")) {
+      bullets.push(l.replace(/^•\s?|-\s/, "").trim());
+    } else {
+      footer = footer ? `${footer} ${l}` : l;
+    }
+  }
+  return (
+    <aside className="my-12 border border-foreground/15 bg-foreground/[0.025] px-6 py-8 md:px-10 md:py-10">
+      {title && (
+        <p className="text-minimal uppercase tracking-[0.18em] text-xs text-foreground/60 mb-5">
+          {title}
+        </p>
+      )}
+      <ul className="space-y-3 mb-5">
+        {bullets.map((b, i) => (
+          <li key={i} className="flex gap-3 text-foreground/85 leading-[1.75] text-base">
+            <span className="text-accent-gold mt-2 h-px w-4 shrink-0 bg-[#b9a06c]" aria-hidden />
+            <span dangerouslySetInnerHTML={{ __html: renderInline(b) }} />
+          </li>
+        ))}
+      </ul>
+      {footer && (
+        <p
+          className="text-sm md:text-base text-muted-foreground leading-[1.8] border-t border-foreground/10 pt-5"
+          dangerouslySetInnerHTML={{ __html: renderInline(footer) }}
+        />
+      )}
+    </aside>
+  );
+};
 
 const SoftCTA = ({ body }: { body: string }) => {
   const lines = body.split("\n");
@@ -356,6 +395,8 @@ const BlogContent = ({ content, afterGlance }: BlogContentProps) => {
             return <MicroCTA key={idx} body={block.body} />;
           case "cta":
             return <SoftCTA key={idx} body={block.body} />;
+          case "stat-block":
+            return <StatBlock key={idx} body={block.body} />;
           case "faq":
             return <FAQBlock key={idx} body={block.body} />;
           case "intel-pulse":

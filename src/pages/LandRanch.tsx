@@ -8,6 +8,12 @@ import SchemaMarkup, {
   realEstateAgentSchema,
 } from "@/components/SchemaMarkup";
 import heroImage from "@/assets/land-ranch-hero.jpg";
+import editorialImage from "@/assets/land-ranch-editorial.jpg";
+import catLuxuryRanches from "@/assets/cat-luxury-ranches.jpg";
+import catRecreational from "@/assets/cat-recreational-land.jpg";
+import catInvestment from "@/assets/cat-investment-acreage.jpg";
+import catDevelopment from "@/assets/cat-development-opportunities.jpg";
+import catHomesites from "@/assets/cat-hill-country-homesites.jpg";
 
 const Footer = lazy(() => import("@/components/Footer"));
 const LandRanchMap = lazy(() => import("@/components/LandRanchMap"));
@@ -26,24 +32,37 @@ const categories = [
   {
     title: "Luxury Ranches",
     desc: "Large acreage estates featuring custom homes, water features, equestrian facilities, and recreational amenities.",
+    image: catLuxuryRanches,
   },
   {
     title: "Recreational Land",
     desc: "Properties focused on hunting, fishing, wildlife habitat, trails, and outdoor recreation.",
+    image: catRecreational,
   },
   {
     title: "Investment Acreage",
     desc: "Long-term land holdings positioned for appreciation and future growth.",
+    image: catInvestment,
   },
   {
-    title: "Development Land",
+    title: "Development Opportunities",
     desc: "Properties with subdivision, redevelopment, commercial, or mixed-use potential.",
+    image: catDevelopment,
   },
   {
     title: "Hill Country Homesites",
     desc: "Scenic parcels suited for custom residential construction.",
+    image: catHomesites,
   },
 ];
+
+const marketSnapshot = [
+  { label: "Average Price Per Acre", value: "$48,200", note: "Central Texas, trailing 12 months" },
+  { label: "Active Land Inventory", value: "1,840", note: "Listings across the region" },
+  { label: "Median Days on Market", value: "112", note: "Land & acreage, current cycle" },
+  { label: "12-Month Appreciation Trend", value: "+6.4%", note: "Year-over-year land values" },
+];
+
 
 const process = [
   {
@@ -162,10 +181,10 @@ const LandRanch = () => {
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(to right, rgba(12,15,36,0.62) 0%, rgba(12,15,36,0.42) 35%, rgba(12,15,36,0.18) 65%, transparent 100%)",
+              "linear-gradient(to right, rgba(12,15,36,0.48) 0%, rgba(12,15,36,0.30) 35%, rgba(12,15,36,0.10) 65%, transparent 100%)",
           }}
         />
-        <div className="absolute inset-0 sm:hidden" style={{ background: "rgba(12,15,36,0.45)" }} />
+        <div className="absolute inset-0 sm:hidden" style={{ background: "rgba(12,15,36,0.38)" }} />
 
         <div className="relative z-10 h-full flex items-center">
           <div className="container mx-auto px-6 md:px-12">
@@ -177,16 +196,17 @@ const LandRanch = () => {
                 className="font-display font-normal text-white leading-[1.05] tracking-tight mb-7"
                 style={{ fontSize: "clamp(2.25rem, 5vw, 4rem)", textShadow: "0 1px 3px rgba(0,0,0,0.35)" }}
               >
-                Austin Land, Ranch & Acreage Opportunities
+                Austin Land & Ranch Opportunities
               </h1>
               <p
-                className="text-white/80 leading-relaxed mb-10 max-w-xl"
-                style={{ fontSize: "clamp(1rem, 1.2vw, 1.125rem)", textShadow: "0 1px 2px rgba(0,0,0,0.3)" }}
+                className="text-white/85 leading-relaxed mb-10 max-w-xl"
+                style={{ fontSize: "clamp(1rem, 1.2vw, 1.125rem)", textShadow: "0 1px 2px rgba(0,0,0,0.35)" }}
               >
-                From recreational ranches and legacy estates to development tracts and investment
-                acreage, Echelon helps buyers and sellers navigate some of Central Texas' most
-                compelling land opportunities.
+                From legacy ranches and recreational retreats to investment acreage and development
+                tracts, Echelon helps buyers, sellers, and investors evaluate Central Texas land
+                through both current value and future potential.
               </p>
+
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
                   href="#categories"
@@ -209,6 +229,50 @@ const LandRanch = () => {
       </section>
 
       <div className="h-12 md:h-20" aria-hidden="true" />
+
+      {/* ── SECTION 1.5: MORE THAN LAND ──────────────────────── */}
+      <section className="py-16 md:py-24">
+        <div className="container mx-auto px-6">
+          <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center max-w-6xl mx-auto">
+            <div className="order-2 md:order-1">
+              <p className="text-gold mb-5" style={labelStyle}>
+                PHILOSOPHY
+              </p>
+              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-normal text-architectural leading-[1.1] mb-8">
+                More Than Land
+              </h2>
+              <div className="space-y-5 text-muted-foreground leading-relaxed text-[1.0625rem]">
+                <p>
+                  The most valuable land opportunities are rarely defined by acreage alone. They are
+                  defined by what they can become.
+                </p>
+                <p>
+                  For some owners, that means a legacy ranch held for generations. For others, a
+                  future family compound, a strategic development opportunity, or a long-term
+                  investment positioned along the path of growth.
+                </p>
+                <p>
+                  Echelon evaluates land through privacy, access, water, topography, utilities,
+                  exemptions, market demand, and highest-and-best-use potential.
+                </p>
+              </div>
+            </div>
+            <div className="order-1 md:order-2">
+              <img
+                src={editorialImage}
+                alt="Premium Texas Hill Country ranch landscape at golden hour with live oaks and a quiet creek"
+                className="w-full h-[420px] md:h-[560px] object-cover"
+                width={1280}
+                height={1280}
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+
 
       {/* ── SECTION 2: DIFFERENT EXPERTISE ──────────────────────── */}
       <section className="py-16 md:py-24">
@@ -258,23 +322,45 @@ const LandRanch = () => {
               The Spectrum of Central Texas Land
             </h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[rgba(12,15,36,0.08)] border border-[rgba(12,15,36,0.08)]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {categories.map((c, i) => (
-              <div
+              <article
                 key={c.title}
-                className="bg-background p-8 md:p-10 flex flex-col"
-                style={i === categories.length - 1 ? { gridColumn: "auto" } : {}}
+                className="group relative overflow-hidden bg-architectural"
               >
-                <p className="text-gold mb-4" style={{ ...labelStyle, fontSize: "0.55rem" }}>
-                  0{i + 1}
-                </p>
-                <h3 className="font-display text-xl md:text-2xl font-normal text-architectural mb-4">
-                  {c.title}
-                </h3>
-                <p className="text-muted-foreground text-[0.95rem] leading-relaxed">{c.desc}</p>
-              </div>
+                <div className="relative w-full aspect-[4/5] overflow-hidden">
+                  <img
+                    src={c.image}
+                    alt={`${c.title} in Central Texas`}
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.04]"
+                    width={1280}
+                    height={1600}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <div
+                    className="absolute inset-0"
+                    style={{
+                      background:
+                        "linear-gradient(to top, rgba(12,15,36,0.85) 0%, rgba(12,15,36,0.45) 45%, rgba(12,15,36,0.10) 75%, transparent 100%)",
+                    }}
+                  />
+                  <div className="absolute inset-x-0 bottom-0 p-7 md:p-8">
+                    <p className="text-gold mb-3" style={{ ...labelStyle, fontSize: "0.55rem" }}>
+                      0{i + 1}
+                    </p>
+                    <h3 className="font-display text-xl md:text-2xl font-normal text-white leading-tight mb-3">
+                      {c.title}
+                    </h3>
+                    <p className="text-white/75 text-[0.92rem] leading-relaxed max-w-md">
+                      {c.desc}
+                    </p>
+                  </div>
+                </div>
+              </article>
             ))}
           </div>
+
         </div>
       </section>
 
@@ -341,7 +427,40 @@ const LandRanch = () => {
       />
 
 
+      {/* ── SECTION 5.5: PRIVATE LAND OPPORTUNITIES ──────────────────────── */}
+      <section className="py-16 md:py-24">
+        <div className="container mx-auto px-6">
+          <div className="max-w-3xl mx-auto text-center">
+            <p className="text-gold mb-5" style={labelStyle}>
+              PRIVATE ACCESS
+            </p>
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-normal text-architectural leading-[1.1] mb-8">
+              Private Land Opportunities
+            </h2>
+            <div className="space-y-5 text-muted-foreground leading-relaxed text-[1.0625rem] mb-10 max-w-2xl mx-auto">
+              <p>
+                Some of Central Texas' most desirable ranches, acreage estates, and development
+                tracts never reach the public market.
+              </p>
+              <p>
+                Through Echelon's network of landowners, builders, developers, and industry
+                relationships, select opportunities may be shared privately before they are widely
+                marketed.
+              </p>
+            </div>
+            <Link
+              to="/private"
+              className="inline-flex items-center justify-center bg-architectural hover:bg-[hsl(var(--gold-deep))] text-white px-8 py-4 transition-colors duration-300"
+              style={labelStyle}
+            >
+              Explore Private Opportunities →
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* ── SECTION 6: INSIGHTS ──────────────────────── */}
+
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14 max-w-6xl">
@@ -383,7 +502,39 @@ const LandRanch = () => {
         </div>
       </section>
 
+      {/* ── SECTION 6.5: MARKET SNAPSHOT ──────────────────────── */}
+      <section className="py-16 md:py-24 bg-secondary/40">
+        <div className="container mx-auto px-6">
+          <div className="max-w-3xl mb-14">
+            <p className="text-gold mb-5" style={labelStyle}>
+              MARKET DATA
+            </p>
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-normal text-architectural leading-[1.1]">
+              Central Texas Land Market Snapshot
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-[rgba(12,15,36,0.08)] border border-[rgba(12,15,36,0.08)]">
+            {marketSnapshot.map((m) => (
+              <div key={m.label} className="bg-background p-8 md:p-10">
+                <p className="text-gold mb-5" style={{ ...labelStyle, fontSize: "0.55rem" }}>
+                  {m.label}
+                </p>
+                <p className="font-display text-3xl md:text-4xl font-normal text-architectural leading-none mb-4">
+                  {m.value}
+                </p>
+                <p className="text-muted-foreground text-[0.85rem] leading-relaxed">{m.note}</p>
+              </div>
+            ))}
+          </div>
+          <p className="text-muted-foreground/70 text-xs mt-6 max-w-2xl" style={{ fontStyle: "italic" }}>
+            Indicative figures based on recent Central Texas market activity. Contact Echelon for a
+            current, property-specific assessment.
+          </p>
+        </div>
+      </section>
+
       {/* ── SECTION 7: SELLER CTA ──────────────────────── */}
+
       <section className="py-20 md:py-32" style={{ background: "#0C0F24" }}>
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto text-center">
@@ -391,7 +542,7 @@ const LandRanch = () => {
               LAND OWNERS
             </p>
             <h2 className="font-display text-3xl md:text-5xl font-normal text-white leading-[1.1] mb-8">
-              Curious What Your Land Is Really Worth?
+              What Could Your Land Be Worth Under Its Highest & Best Use?
             </h2>
             <p className="text-white/65 leading-relaxed mb-12 text-lg max-w-2xl mx-auto">
               Many owners evaluate their property based on current use. The market often values land

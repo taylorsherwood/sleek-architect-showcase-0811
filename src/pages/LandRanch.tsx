@@ -9,6 +9,7 @@ import SchemaMarkup, {
 } from "@/components/SchemaMarkup";
 import heroImage from "@/assets/land-ranch-hero.jpg";
 import editorialImage from "@/assets/land-ranch-editorial-v2.jpg";
+import exoticWildlifeImage from "@/assets/land-ranch-exotic-wildlife.jpg";
 import catLuxuryRanches from "@/assets/cat-luxury-ranches.jpg";
 import catRecreational from "@/assets/cat-recreational-land.jpg";
 import catInvestment from "@/assets/cat-investment-acreage.jpg";
@@ -458,6 +459,102 @@ const LandRanch = () => {
 
         </div>
       </section>
+
+      <div className="h-12 md:h-20" aria-hidden="true" />
+
+      {/* ── SECTION 3.5: EXOTIC WILDLIFE RANCHES ──────────────────────── */}
+      <section className="py-10 md:py-14">
+        <div className="container mx-auto px-6">
+          <div className="grid md:grid-cols-12 gap-10 md:gap-16 items-center max-w-6xl mx-auto">
+            <div className="md:col-span-6 order-1">
+              <div
+                className="group overflow-hidden"
+                style={{
+                  border: "1px solid rgba(12,15,36,0.06)",
+                  boxShadow:
+                    "0 18px 38px -24px rgba(12,15,36,0.16), 0 6px 16px -10px rgba(12,15,36,0.09)",
+                }}
+              >
+                <img
+                  src={exoticWildlifeImage}
+                  alt="Free-ranging scimitar-horned oryx grazing across a Texas Hill Country ranch pasture"
+                  className="block w-full h-[440px] md:h-[600px] lg:h-[660px] object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.025]"
+                  width={1800}
+                  height={1200}
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </div>
+            <div className="md:col-span-6 order-2">
+              <div className="max-w-[480px]">
+                <p
+                  className="mb-5"
+                  style={{
+                    ...labelStyle,
+                    color: "#b9a06c",
+                    fontWeight: 500,
+                    letterSpacing: "0.42em",
+                    fontSize: "0.58rem",
+                  }}
+                >
+                  WILDLIFE STEWARDSHIP
+                </p>
+                <h2 className="font-display text-[1.85rem] md:text-[2.5rem] lg:text-[2.9rem] font-normal text-architectural leading-[1.08] tracking-tight mb-6">
+                  Texas Exotic Wildlife Ranches
+                </h2>
+                <p
+                  className="mb-10"
+                  style={{
+                    fontFamily: '"Jost", sans-serif',
+                    fontSize: "0.78rem",
+                    letterSpacing: "0.09em",
+                    color: "rgba(185,160,108,0.85)",
+                    lineHeight: 1.6,
+                  }}
+                >
+                  From free-ranging axis deer and blackbuck antelope to zebras, elk, and other exotic species, Texas is home to one of the most unique private wildlife ownership environments in the world.
+                </p>
+                <div className="space-y-6 text-muted-foreground text-[1.05rem] leading-[1.8]">
+                  <p>
+                    Unlike many states, Texas allows private landowners to own and manage a wide variety of exotic wildlife species. Across the Hill Country and Central Texas, ranches may feature axis deer, blackbuck antelope, fallow deer, elk, aoudad, zebras, and other exotic animals that contribute to recreation, conservation, and wildlife management programs.
+                  </p>
+                  <p>
+                    For some owners, these properties serve as private family retreats. For others, they represent income-producing operations, conservation-focused holdings, or legacy ranches designed to be enjoyed across generations.
+                  </p>
+                  <p>
+                    The appeal extends beyond the wildlife itself. Large acreage, water resources, habitat quality, road infrastructure, and long-term land appreciation often make exotic wildlife ranches some of the most sought-after recreational properties in Texas.
+                  </p>
+                </div>
+                <blockquote
+                  className="mt-10 pl-5 text-architectural"
+                  style={{
+                    borderLeft: "1px solid #b9a06c",
+                    fontFamily: '"Jost", sans-serif',
+                    fontSize: "1.125rem",
+                    lineHeight: 1.65,
+                    fontWeight: 400,
+                  }}
+                >
+                  Texas is one of the few places in the world where private landowners can steward free-ranging exotic wildlife across thousands of acres.
+                </blockquote>
+                <div className="mt-10">
+                  <Link
+                    to="/contact"
+                    className="inline-flex items-center gap-2 text-foreground gold-underline-hover pb-0.5 hover:text-gold transition-colors"
+                    style={labelStyle}
+                  >
+                    Learn About Recreational Ranch Opportunities →
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
 
 
       {/* ── PARALLAX BREAK ──────────────────────── */}

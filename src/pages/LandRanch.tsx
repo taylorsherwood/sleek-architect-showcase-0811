@@ -608,35 +608,28 @@ const LandRanch = () => {
               </p>
 
               <div
-                className="space-y-5 text-muted-foreground leading-relaxed"
+                className="space-y-7 text-muted-foreground leading-relaxed"
                 style={{ fontFamily: '"Jost", sans-serif', fontSize: "1.0125rem" }}
               >
                 <p>
-                  Taylor Sherwood advises clients on land, ranch, redevelopment, and investment
-                  opportunities throughout Austin and the Texas Hill Country. His background spans
-                  luxury residential sales, off-market acquisitions, redevelopment opportunities,
-                  and land transactions where understanding future potential is just as important
-                  as understanding current value.
+                  Taylor Sherwood advises buyers, sellers, investors, and landowners throughout
+                  Austin and the Texas Hill Country on ranch, land, development, and investment
+                  opportunities. His experience spans luxury residential sales, redevelopment
+                  projects, off-market acquisitions, and land transactions where future potential
+                  is often just as important as current value.
                 </p>
                 <p>
                   Rather than focusing solely on acreage or improvements, Taylor helps clients
-                  evaluate the bigger picture: location, access, water, topography, development
-                  potential, long-term appreciation, and how a property fits within their broader
-                  goals. Whether identifying a recreational ranch, assembling land for future
-                  development, or helping a family acquire their first Hill Country retreat, his
-                  approach is rooted in research, strategy, and local market knowledge.
+                  evaluate the broader picture, including access, water, topography, development
+                  potential, market demand, and long-term appreciation. Every property is analyzed
+                  through both its present use and its highest-and-best-use potential.
                 </p>
                 <p>
-                  As the founder of Echelon Property Group, Taylor works with buyers, sellers,
-                  investors, and landowners seeking discreet representation, data-driven guidance,
-                  and access to opportunities both on and off the market.
-                </p>
-                <p>
-                  For clients considering a purchase, sale, investment, or redevelopment
-                  opportunity, the objective remains the same: helping them make informed
-                  decisions and maximize long-term value.
+                  Through Echelon Property Group, clients gain access to strategic guidance, local
+                  market expertise, and opportunities both on and off the market.
                 </p>
               </div>
+
 
               {/* Credentials */}
               <div className="mt-10 flex flex-wrap items-center gap-x-5 gap-y-3">

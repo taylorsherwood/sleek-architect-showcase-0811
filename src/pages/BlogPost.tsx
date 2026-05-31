@@ -140,7 +140,7 @@ const BlogPost = () => {
               </p>
             </div>
             
-            <div className="w-full aspect-[16/9] mb-12 overflow-hidden">
+            <div className="w-full aspect-[16/9] mb-4 overflow-hidden">
               <img 
                 src={post.heroImage || post.image} 
                 alt={post.imageAlt || `${post.title} - Austin luxury real estate`}
@@ -151,6 +151,11 @@ const BlogPost = () => {
                 decoding="async"
               />
             </div>
+            {post.imageCaption && (
+              <p className="text-sm italic text-muted-foreground leading-relaxed mb-12 max-w-3xl">
+                {post.imageCaption}
+              </p>
+            )}
 
             <BlogContent
               content={post.content}

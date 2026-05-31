@@ -306,13 +306,6 @@ const LandRanch = () => {
         </div>
       </section>
 
-      {/* ── PARALLAX BREAK ──────────────────────── */}
-      <div
-        className="parallax-break hidden md:block"
-        style={{ backgroundImage: "url('/images/parallax-pasture.webp')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties}
-        aria-hidden="true"
-      />
-
       {/* ── SECTION 5: PROCESS ──────────────────────── */}
       <section className="py-16 md:py-24 bg-secondary/40">
         <div className="container mx-auto px-6">
@@ -339,6 +332,14 @@ const LandRanch = () => {
           </div>
         </div>
       </section>
+
+      {/* ── PARALLAX BREAK ──────────────────────── */}
+      <div
+        className="parallax-break hidden md:block"
+        style={{ backgroundImage: "url('/images/parallax-pasture.webp')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties}
+        aria-hidden="true"
+      />
+
 
       {/* ── SECTION 6: INSIGHTS ──────────────────────── */}
       <section className="py-16 md:py-24">

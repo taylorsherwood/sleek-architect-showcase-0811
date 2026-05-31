@@ -52,6 +52,7 @@ const LINK = "text-foreground underline hover:text-muted-foreground";
 export const blogPosts: BlogPost[] = [
   {
     id: "austin-ranch-land-for-sale",
+    title: "Austin Ranch Land for Sale: Complete Guide to Hill Country Ranches and Acreage Properties",
     metaTitle: "Austin Ranch Land for Sale: Hill Country Ranches, Investment Land & Acreage Guide",
     excerpt: "A complete guide to Austin ranch land, Hill Country properties, investment land, acreage ownership, agricultural and wildlife exemptions, and Austin-area growth corridors shaping long-term value across Central Texas.",
     author: "Taylor Sherwood",

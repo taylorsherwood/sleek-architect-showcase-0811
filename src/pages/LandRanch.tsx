@@ -228,7 +228,7 @@ const LandRanch = () => {
                 </a>
                 <Link
                   to="/contact"
-                  className="inline-flex items-center justify-center border border-white/60 hover:border-gold hover:text-gold text-white px-8 py-4 transition-colors duration-300 backdrop-blur-sm"
+                  className="inline-flex items-center justify-center border border-gold text-white hover:bg-architectural hover:border-architectural px-8 py-4 transition-colors duration-300 backdrop-blur-sm"
                   style={labelStyle}
                 >
                   Request a Property Evaluation
@@ -492,8 +492,10 @@ const LandRanch = () => {
             </div>
             <Link
               to="/private"
-              className="inline-flex items-center justify-center bg-architectural hover:bg-[hsl(var(--gold-deep))] text-white px-8 py-4 transition-colors duration-300"
-              style={labelStyle}
+              className="inline-flex items-center justify-center px-8 py-4 md:px-[34px] md:py-4 transition-colors duration-300 rounded-sm"
+              style={{ ...labelStyle, background: "#B9A06C", color: "#FFFFFF", border: "1px solid #B9A06C", fontWeight: 600 }}
+              onMouseEnter={(e) => { e.currentTarget.style.background = "#0C0F24"; e.currentTarget.style.borderColor = "#0C0F24"; }}
+              onMouseLeave={(e) => { e.currentTarget.style.background = "#B9A06C"; e.currentTarget.style.borderColor = "#B9A06C"; }}
             >
               Explore Private Opportunities →
             </Link>
@@ -766,7 +768,7 @@ const LandRanch = () => {
               </Link>
               <Link
                 to="/austin-land-development-opportunities"
-                className="inline-flex items-center justify-center border border-white/40 hover:border-gold hover:text-gold text-white px-8 py-4 transition-colors duration-300"
+                className="inline-flex items-center justify-center border border-gold text-white hover:bg-gold hover:text-architectural px-8 py-4 transition-colors duration-300"
                 style={labelStyle}
               >
                 Discuss Development Potential

@@ -17,6 +17,7 @@ import catHomesites from "@/assets/cat-hill-country-homesites.jpg";
 import expLandRanchLogo from "@/assets/exp-land-ranch-logo.png";
 
 import taylorPortrait from "@/assets/taylor-sherwood-land-ranch.jpg";
+import echelonWatermarkLogo from "@/assets/echelon-watermark-logo.png";
 
 
 
@@ -619,7 +620,7 @@ const LandRanch = () => {
                   borderRadius: "24px",
                   boxShadow:
                     "0 30px 60px -25px rgba(12,15,36,0.28), 0 12px 30px -15px rgba(12,15,36,0.18)",
-                  transform: "translateY(-1.5rem)",
+                  transform: "translateY(-3.5rem)",
                 }}
               >
                 <img
@@ -636,7 +637,24 @@ const LandRanch = () => {
             </div>
 
             {/* Content */}
-            <div className="md:col-span-7">
+            <div className="md:col-span-7 relative overflow-visible">
+              <img
+                src={echelonWatermarkLogo}
+                alt=""
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                className="absolute pointer-events-none select-none hidden md:block"
+                style={{
+                  top: '50%',
+                  left: '50%',
+                  transform: 'translate(-32%, -72%)',
+                  height: '100%',
+                  width: 'auto',
+                  opacity: 0.06,
+                }}
+              />
+              <div className="relative">
               <p className="text-gold mb-5" style={labelStyle}>
                 MEET YOUR LAND & RANCH ADVISOR
               </p>
@@ -743,6 +761,7 @@ const LandRanch = () => {
 
                   Request a Land Evaluation →
                 </Link>
+              </div>
               </div>
             </div>
           </div>

@@ -186,7 +186,7 @@ const Blog = () => {
                       </p>
                       <div className="w-16 h-px bg-[#b9a06c]" />
                     </div>
-                    <h2 className="text-[1.65rem] md:text-3xl lg:text-[2.125rem] font-display font-normal leading-[1.18] tracking-[-0.005em] text-architectural mb-6 group-hover:text-foreground/75 transition-colors duration-500">
+                    <h2 className="text-[1.65rem] md:text-3xl lg:text-[2.125rem] font-display font-normal leading-[1.18] tracking-[-0.005em] text-architectural mb-6 group-hover:text-foreground/75 transition-colors duration-500 whitespace-pre-line">
                       {featured.title}
                     </h2>
                     <p className="text-[15px] text-muted-foreground leading-[1.8] line-clamp-3 mb-9 max-w-md">

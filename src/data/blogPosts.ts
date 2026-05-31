@@ -1181,13 +1181,13 @@ It is a current, honest market briefing tailored to your exact property type, pr
   },
   {
     id: "how-echelon-approaches-austin-real-estate-differently",
-    title: "How Echelon Approaches Austin Real Estate Differently",
+    title: "How Echelon Approaches Austin\nReal Estate Differently",
     metaTitle: "How Echelon Approaches Austin Real Estate Differently",
     excerpt: "Discover how Echelon Property Group approaches Austin real estate through hyper-local expertise, off-market access, privacy-first representation, and strategic advisory across Barton Creek, West Lake Hills, Rollingwood, and Austin's premier luxury neighborhoods.",
     author: "Taylor Sherwood",
     date: "2026-05-27",
     readTime: "8 min read",
-    category: "AUSTIN LUXURY REAL ESTATE",
+    category: "AUSTIN REAL ESTATE",
     image: blogEchelonApproach,
     heroImage: blogEchelonApproachHero,
     content: `

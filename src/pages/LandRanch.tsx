@@ -14,7 +14,7 @@ import catRecreational from "@/assets/cat-recreational-land.jpg";
 import catInvestment from "@/assets/cat-investment-acreage.jpg";
 import catDevelopment from "@/assets/cat-development-opportunities.jpg";
 import catHomesites from "@/assets/cat-hill-country-homesites.jpg";
-import expLandRanchLogo from "@/assets/exp-land-ranch-logo.png";
+
 import taylorPortrait from "@/assets/taylor-sherwood-land-ranch.jpg";
 
 
@@ -228,18 +228,6 @@ const LandRanch = () => {
                 </Link>
               </div>
 
-              <div className="mt-12 md:mt-14">
-                <img
-                  src={expLandRanchLogo}
-                  alt="eXp Realty Land & Ranch"
-                  className="h-24 md:h-32 lg:h-36 w-auto object-contain"
-                  width={750}
-                  height={154}
-                  loading="eager"
-                  decoding="async"
-                  style={{ filter: "brightness(0) invert(1)" }}
-                />
-              </div>
             </div>
           </div>
         </div>

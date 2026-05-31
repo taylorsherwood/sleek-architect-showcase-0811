@@ -55,12 +55,154 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Explore Austin ranch land, Hill Country properties, agricultural exemptions, investment opportunities, and acreage ownership strategies throughout Central Texas.",
     author: "Taylor Sherwood",
     date: "2026-05-31",
-    readTime: "15 min read",
+    readTime: "22 min read",
     category: "LAND & RANCH",
     image: blogAustinRanchLand,
     imageAlt: "Horse grazing in a Texas Hill Country bluebonnet field on ranch land near Austin",
     content: `
-{{CONTENT_PENDING}}
+Something has shifted in how serious buyers think about land. It is not just lifestyle. It is not just privacy. For a growing number of high-net-worth individuals relocating to or already established in Central Texas, owning a piece of the Hill Country has become a deliberate financial and generational decision.
+
+Austin's expansion has reshaped the calculus. The metro's growth along corridors like US-290 West, US-183 toward Liberty Hill, and RM-1431 toward Marble Falls has compressed the distance between "remote" and "in the path of development" faster than most buyers anticipated even five years ago. At the same time, significant in-migration from California, New York, Illinois, and other high-cost states has introduced a buyer pool with capital, appetite for acreage, and a limited understanding of how Texas land transactions actually work.
+
+That last point matters more than most people realize. Ranch acquisition is not a larger version of buying a house. The due diligence is different, the legal framework is different, the financing is different, and the consequences of skipping steps are far more significant. A missed easement, a severed mineral estate, an unreliable well, or a misunderstood exemption status can turn a compelling acquisition into a costly problem with no clean exit.
+
+This guide is written for buyers, investors, landowners, and families who are serious about Texas Hill Country land: recreational ranches, working operations, equestrian properties, investment tracts, development land, and legacy holdings across the corridor from Dripping Springs and Wimberley to Fredericksburg, Marble Falls, Blanco, Llano, Burnet, and beyond. The goal is a clear-eyed framework, not a sales pitch.
+
+## How to Evaluate a Ranch Property Before Making an Offer
+
+The single most important variable on any Texas ranch is water. Before you evaluate anything else, you need to understand what water exists on the property, how reliable it is, and what rights are actually attached to it.
+
+For wells, request the driller's log: depth, casing, static water level, and pump test data including gallons per minute and recovery rate. A well that produces adequately under normal conditions may struggle during drought, which in Central Texas is not a rare event. Know whether the property sits over the Edwards Aquifer or the Trinity Aquifer, as each has different recharge characteristics and different regulatory frameworks. Properties within the Edwards Aquifer Authority jurisdiction face specific permitting requirements that differ from other groundwater conservation districts.
+
+Surface water adds another layer. Creeks in the Hill Country are often seasonal, and the distinction between a wet-weather draw and a reliable spring-fed creek matters significantly for both livestock operations and recreational value. Stock tanks should be evaluated for capacity, inlet quality, and whether they hold water year-round. FEMA floodplain maps are a starting point, but on-the-ground assessment and a current survey are essential. Floodplain designation can render substantial acreage unusable or uninsurable, and the FEMA maps do not always reflect actual site conditions accurately.
+
+Beyond water, due diligence on rural land in Texas requires examining layers that simply do not exist in residential transactions. Title work should identify all recorded easements: utility corridors, pipeline rights-of-way, road easements, and any prescriptive access claims. Mineral rights severance is common in the Hill Country, and buyers should understand exactly what they are and are not acquiring. A severed mineral estate means a third party may have the legal right to access the surface for extraction purposes, which has real implications for how the land can be used and how it is valued.
+
+Verify access. Deeded access to a public road is not the same as prescriptive access, and properties that rely on informal agreements for ingress and egress carry meaningful legal risk. Review any existing agricultural leases, which may encumber the property and affect your ability to use it immediately after closing. Check fence lines against the survey, and look for encroachments from neighboring properties.
+
+On the ground, assess topography and soil type relative to your intended use. Cedar encroachment is pervasive in the Hill Country and expensive to remediate. Evaluate the condition of existing improvements: fencing, barns, water distribution systems, any residential structures, septic systems, and road conditions. Utilities vary significantly by location. Many rural tracts require propane rather than natural gas, and electric service may require extension at the buyer's cost.
+
+A qualified rural appraiser and a licensed land surveyor are not optional expenses. They are the foundation of a defensible acquisition. Skipping either is how buyers end up with surprises that no amount of negotiation can fully resolve after closing. For buyers also evaluating <a href="/land-for-sale-austin" class="${LINK}">land for sale in Austin</a>, the same discipline around due diligence applies regardless of acreage.
+
+## Recreational Ranches vs. Working Ranches: Knowing What You're Actually Buying
+
+The Hill Country land market contains two fundamentally different types of buyers, and the properties that serve them well are not always the same.
+
+Recreational ranches are purchased primarily for lifestyle, privacy, and personal use. Hunting, fishing, weekend retreats, equestrian activities, and family gathering spaces drive demand in this category. Buyers are evaluating deer and game populations, water features, the quality and character of improvements, and proximity to Austin. Because the buyer pool is deep and the supply of well-improved recreational tracts is limited, these properties often command a premium per acre relative to their agricultural productivity. The value is experiential and emotional as much as it is financial.
+
+What makes a recreational ranch work: reliable water, good road access, functional improvements, strong game management history, and enough acreage to provide genuine privacy. Properties in Blanco, Llano, and Gillespie counties have historically attracted serious hunting buyers. Tracts with live water, particularly spring-fed creeks or Pedernales River frontage, carry a premium that reflects genuine scarcity. Buyers who prioritize seclusion should also consider how <a href="/blog/best-austin-enclaves-for-privacy" class="${LINK}">Austin's most private enclaves</a> compare in terms of access and lifestyle trade-offs.
+
+Working ranches operate on a different set of metrics. Cattle operations require evaluation of carrying capacity, which is typically expressed in animal units per acre and varies significantly based on rainfall, soil quality, and pasture management. Perimeter and cross-fencing condition, water distribution infrastructure, working pens, loading facilities, and hay production capability all affect operational viability. Buyers entering a working operation without agricultural experience should plan either for significant education or for the cost of an experienced ranch manager. The economics of cattle operations in Central Texas are not forgiving, and many buyers underestimate the operational demands.
+
+Hay production, goat and sheep operations, and exotic game ranches each have their own infrastructure requirements and economic profiles. Lease income from hunting operations or grazing leases can offset carrying costs, but buyers should evaluate existing lease agreements carefully before assuming that income will continue post-closing.
+
+Equestrian properties occupy a distinct category. They require covered arenas, stall barns with appropriate ventilation and drainage, paddocks, turnout acreage, and quality footing in working areas. The concentration of equestrian demand in the Hill Country is particularly strong in the Dripping Springs, Wimberley, and Spicewood corridors, where proximity to Austin combines with accessible terrain and an established equestrian community. Properties with permitted equestrian facilities and existing infrastructure trade at a meaningful premium over raw land, and for good reason: building that infrastructure from scratch is expensive and time-consuming.
+
+The most important question to ask before making an offer is not what the property is listed as, but what it actually functions as and what it would cost to transition it to your intended use.
+
+## Understanding Agricultural and Wildlife Exemptions in Texas
+
+Few topics generate more confusion among first-time Texas land buyers than the agricultural exemption. It is worth being precise about what it is and what it is not.
+
+The ag exemption, governed by Texas Property Tax Code Section 1-d-1, is not a traditional tax exemption. It is a special valuation methodology. Instead of taxing land at its market value, the county appraisal district taxes it based on its agricultural productivity value, which is typically a fraction of market value. On a Hill Country tract that has appreciated significantly, the difference between market-value taxation and productivity-value taxation can represent thousands of dollars per year. For investors managing carry costs on a larger holding, this distinction is financially material.
+
+To qualify, land must be used primarily for agriculture: cattle grazing, hay production, crop farming, beekeeping, or other qualifying activities. Each county appraisal district sets its own standards for minimum acreage, stocking rates, and documentation requirements. Buyers should not assume that what qualifies in one county qualifies in another.
+
+The wildlife management exemption, authorized under Texas Tax Code Section 23.51, allows landowners to maintain the agricultural valuation by implementing qualifying wildlife management practices rather than traditional agricultural use. Qualifying activities include habitat control, erosion control, predator management, wildlife census counts, water source management, and supplemental wildlife feeding or sheltering. This exemption is widely used in the Hill Country and is particularly valuable for buyers who want recreational use without running livestock.
+
+To establish a wildlife management exemption, you typically need a written wildlife management plan approved by Texas Parks and Wildlife Department or a certified wildlife biologist. The plan must document the specific practices being implemented and how they support a sustaining wildlife population. This is not a loophole. It is a legitimate land management framework that, when properly administered, produces measurable habitat benefits.
+
+Rollback taxes, now called "additional taxes" following changes under SB 1760, apply when land transitions from agricultural or wildlife valuation to a non-qualifying use. The lookback period has changed from five years to three years under recent legislation, but buyers should verify the current rules with a Texas property tax attorney or the relevant county appraisal district, as these rules can evolve. The financial exposure from triggering a rollback on a high-value tract can be substantial.
+
+When purchasing a property that currently carries an ag or wildlife valuation, verify the history carefully. Confirm how long the exemption has been in place, what practices are documented, and whether a wildlife management plan already exists. Inheriting a well-maintained exemption is a meaningful benefit. Discovering after closing that the exemption was improperly maintained is a problem.
+
+## Investment Potential of Texas Hill Country Land
+
+Land as an investment behaves differently from equities, and differently from residential real estate. It is illiquid, management-intensive in some configurations, and highly dependent on local market dynamics. But for buyers who understand the market and structure acquisitions thoughtfully, Texas Hill Country land has demonstrated compelling long-term characteristics.
+
+Austin's growth has been the primary engine. Development pressure has moved outward along every major corridor: US-290 West through Dripping Springs toward Fredericksburg, US-183 through Liberty Hill toward Burnet, RR-12 through Wimberley toward Blanco, and RM-1431 through Spicewood toward Marble Falls. Infrastructure investment has followed: road improvements, water district expansions, utility extensions, and commercial development have all accelerated in communities that were considered remote not long ago. Land values in transitional corridors have responded, though the pace and magnitude vary by location and specific property characteristics.
+
+Highest and best use analysis is the foundation of any serious land investment decision. A 200-acre tract near Dripping Springs may simultaneously have recreational value, agricultural value, and subdivision development potential. Each use implies a different price ceiling, a different hold strategy, and a different buyer pool at exit. Understanding which use actually drives value in a specific location requires local market knowledge and honest assessment, not just comparable sales data from the county appraisal district. A deeper look at <a href="/blog/highest-and-best-use-property-austin" class="${LINK}">highest and best use analysis in Austin</a> illustrates how this framework applies across different property types.
+
+For long-term appreciation strategies, several principles apply consistently. Buying in the path of growth but outside current development pressure preserves optionality while avoiding the premium already priced into land adjacent to active development. Maintaining ag or wildlife valuation minimizes annual carry costs and preserves flexibility. Seller-financed structures and land note arrangements can provide favorable terms that institutional lenders rarely match. Water availability deserves particular attention as a long-term constraint: tracts with reliable water sources will always command a premium over dry land as the region's population continues to grow.
+
+Out-of-state investors face an additional layer of complexity. Texas land law, water law, exemption structures, and development regulations are not intuitive for buyers from states with different frameworks. The investors who perform best in this market are typically those who invest time in understanding the local regulatory environment before they invest capital in a specific tract. Working with advisors who operate specifically in the Hill Country land market, rather than generalist real estate professionals, is not a luxury. It is a practical necessity.
+
+The Texas A&M Real Estate Research Center publishes annual land market data that provides useful context on price trends by county and region, and is worth consulting as part of any investment research process.
+
+## Development Land vs. Legacy Land Holdings
+
+Not all land buyers want the same thing, and the difference between a development play and a legacy holding is more than philosophical. It affects how you evaluate a property, how you structure the acquisition, and how you plan for what comes next.
+
+Development land is purchased with a specific exit strategy. The buyer is underwriting subdivision potential, master-planned community viability, commercial use, or resale to a developer at a future point. The critical variables are proximity to utilities and infrastructure, county regulations and ETJ boundaries, road frontage, topography constraints, and absorption rates in the surrounding submarket. A tract that looks inexpensive per acre may carry hidden costs in entitlement, infrastructure extension, and regulatory compliance that erode the investment thesis entirely. Buyers evaluating <a href="/blog/austin-redevelopment-opportunities" class="${LINK}">Austin land development opportunities</a> should approach entitlement timelines with particular scrutiny.
+
+ETJ boundaries matter significantly. Cities like Dripping Springs, Wimberley, and Marble Falls have extraterritorial jurisdiction extending beyond their city limits, which affects what development is permissible and what approval process applies. Buyers approaching land as a development investment need a clear pro forma, a realistic entitlement timeline, and direct knowledge of what the relevant city or county will and will not approve. Assumptions about future zoning or development capacity are not a substitute for verified information.
+
+Legacy land is held for different reasons: generational continuity, family stewardship, long-term wealth preservation, and a connection to place that transcends financial return. The evaluation criteria shift accordingly. Privacy, water quality, scenic character, long-term carrying costs, and the legal structures needed to protect the property across generations become primary concerns. Family LLCs, conservation easements, and land trusts are tools that serve legacy buyers well, and each has implications for tax planning, estate structuring, and operational flexibility.
+
+Conservation easements deserve specific attention. Held by organizations like the Texas Land Conservancy or the Hill Country Conservancy, a conservation easement permanently restricts certain development uses in exchange for federal income tax deductions and potential estate tax benefits. For landowners with significant appreciation in a Hill Country tract, the combination of tax efficiency and permanent land protection can be compelling. The IRS has increased scrutiny of syndicated conservation easement transactions, so buyers should work with qualified tax counsel before entering any arrangement structured primarily around tax benefits.
+
+Many Hill Country properties sit at the intersection of both categories. A buyer may acquire a tract today as a legacy holding that carries genuine development optionality in fifteen to twenty years. The key is structuring the acquisition to preserve both possibilities without paying a speculative premium for upside that may or may not materialize within your investment horizon.
+
+## What Out-of-State Buyers Get Wrong About Texas Ranch Land
+
+The mistakes are predictable, and they are expensive. Understanding them in advance is the most efficient form of due diligence.
+
+The most common error is underestimating the complexity of rural land transactions in Texas. Unlike residential real estate, there is no standard disclosure framework for rural land. Sellers are not required to disclose many conditions that would be mandatory in a residential transaction. The burden of discovery falls entirely on the buyer. This is not a negotiating position. It is Texas law, and buyers who approach a ranch acquisition with the same level of investigation they would bring to a home purchase will almost certainly miss something important.
+
+Texas water law surprises nearly every out-of-state buyer. Groundwater is governed by the rule of capture, which means landowners generally own the water beneath their property but groundwater conservation districts regulate how much can be pumped. This is a different framework from the prior appropriation systems used in western states and the riparian rights systems used in eastern states. Surface water rights are entirely separate, governed by prior appropriation and administered by the Texas Commission on Environmental Quality. A property can have excellent groundwater and no surface water rights, or vice versa. Understanding what you are actually acquiring requires specific legal and hydrological analysis, not assumptions.
+
+Financing is another area where expectations frequently collide with reality. Farm Credit institutions, including Capital Farm Credit which is active throughout Central Texas, and other agricultural lenders offer land loans with different structures than conventional residential mortgages. Down payment requirements are typically higher, amortization periods differ, and underwriting criteria reflect the unique characteristics of rural land as collateral. Buyers who plan to finance a ranch purchase should engage agricultural lenders early in the process, not after they have a property under contract.
+
+Finally, the quality of your advisory team matters more on land than on almost any other asset class. A residential agent without rural land experience, a title company unfamiliar with easement complexity, and a lender without agricultural loan products is a combination that produces problems. Many of the best Hill Country opportunities also trade off-market, through broker-to-broker networks and relationships that never surface in public listings. Access to those deals depends entirely on who is working on your behalf and what relationships they maintain in the market. Understanding how to find <a href="/off-market-real-estate-austin" class="${LINK}">off-market properties in Austin</a> is directly relevant to how serious buyers approach the Hill Country land market.
+
+## Frequently Asked Questions: Austin Ranch Land and Hill Country Properties
+
+### How much land do I need to qualify for an agricultural exemption in Texas?
+
+Minimum acreage requirements vary by county and by the type of agricultural activity. There is no single statewide minimum. Most county appraisal districts publish their qualification standards, and some require as few as 10 acres for certain uses while others set higher thresholds. The activity must be the primary use of the land, conducted with the intent to produce income, and must meet the county's standards for intensity and management. Consulting the relevant county appraisal district before purchase is essential.
+
+### What is a wildlife management exemption and how do I set one up?
+
+A wildlife management exemption allows landowners to maintain agricultural valuation by implementing qualifying wildlife management practices instead of traditional agricultural use. To establish one, you typically need a written wildlife management plan that documents your specific practices across at least three of the qualifying activity categories recognized by Texas Parks and Wildlife Department. A certified wildlife biologist can help develop and document the plan. The land must already be under agricultural valuation before transitioning to wildlife management use.
+
+### How is ranch land typically financed, and can I use a conventional mortgage?
+
+Most ranch and rural land purchases in Texas are financed through Farm Credit institutions or specialized agricultural lenders rather than conventional residential mortgage products. Capital Farm Credit is one of the primary lenders active in Central Texas. These loans typically require larger down payments, often in the range of 20 to 35 percent, and carry different amortization structures than home loans. Some buyers use portfolio lenders or seller financing for additional flexibility. Engaging an agricultural lender early in your search process allows you to understand your actual purchasing parameters before you identify a specific property.
+
+### What does it mean when mineral rights are severed from a property?
+
+Mineral rights severance means that the ownership of subsurface minerals has been separated from the surface estate and is held by a different party. This is common in the Hill Country. A severed mineral estate means you own the surface but may not own the oil, gas, limestone, or other minerals beneath it. More importantly, a mineral rights holder may have the legal right to access the surface for extraction purposes under certain conditions. Buyers should obtain a complete mineral rights history from the title company and understand what, if any, mineral interests are being conveyed before closing.
+
+### How do I find out if a property has reliable water and what rights are attached?
+
+Request the well driller's log for any existing wells, which documents depth, casing, static water level, and pump test results. Have a qualified water well professional conduct a current pump test to verify yield and recovery rate. For surface water, review the Texas Commission on Environmental Quality water rights database and consult with a water rights attorney if the property has any claimed surface water rights. Confirm which groundwater conservation district governs the property and what pumping permits or exemptions apply. Do not rely on seller representations alone for any water-related information.
+
+### What is a rollback tax and when does it apply?
+
+A rollback tax, now formally called an "additional tax" under Texas law, applies when land that has been receiving agricultural or wildlife management valuation is converted to a non-qualifying use. The tax recaptures the difference between what was paid under the special valuation and what would have been paid under market-value taxation, plus interest, for a lookback period set by statute. Recent legislation changed the lookback period, so buyers should verify the current rules with a Texas property tax attorney or the relevant county appraisal district before closing. Triggering a rollback on a high-value Hill Country tract can represent a significant financial liability.
+
+### Is Hill Country land a good investment compared to other asset classes?
+
+Texas Hill Country land has historically demonstrated strong long-term appreciation, particularly in corridors experiencing development pressure from Austin's growth. It offers tangible asset characteristics, inflation resistance, and the ability to generate income through leases, agricultural operations, or hunting programs while minimizing carry costs through exemptions. The trade-offs are illiquidity, management requirements, and the need for specialized local knowledge to identify quality opportunities. For the right buyer with a long time horizon and genuine understanding of the market, it can be a compelling component of a diversified portfolio. It rewards preparation and punishes shortcuts.
+
+### How do I find off-market ranch properties in the Hill Country?
+
+A significant portion of larger Hill Country ranch transactions, particularly tracts of 500 acres or more, occur off-market through broker networks and direct relationships rather than public MLS listings. Sellers of significant ranches often prioritize confidentiality and prefer to transact with known, qualified buyers. The most effective path to off-market opportunities is working with a land advisor who maintains active relationships in specific Hill Country counties and operates within broker networks where these properties are discussed. Attempting to source off-market land independently, without established local relationships, is rarely effective.
+
+### What are conservation easements and should I consider one?
+
+A conservation easement is a voluntary legal agreement between a landowner and a qualified land trust or government entity that permanently restricts certain development uses of the property in exchange for tax benefits. Easements held by organizations like the Texas Land Conservancy or Hill Country Conservancy can provide federal income tax deductions based on the value of the donated development rights and may reduce estate tax exposure. They are well-suited for landowners committed to long-term land stewardship who also have significant taxable income or estate planning considerations. The IRS has increased scrutiny of certain conservation easement structures, so working with qualified tax counsel is essential before entering any arrangement.
+
+## Putting It All Together
+
+Texas Hill Country land is a genuinely compelling asset class. It combines tangible value, lifestyle utility, long-term appreciation potential, and generational significance in ways that few other investments can match. But it is not a forgiving market for buyers who skip steps, rely on the wrong advisors, or treat a ranch acquisition like a residential transaction.
+
+The best opportunities, particularly the off-market tracts that represent some of the most significant holdings in Blanco, Llano, Gillespie, Burnet, and Hays counties, rarely appear in public listings. They surface through relationships, through advisors who are known and trusted in specific markets, and through buyers who have done enough preparation to move decisively when the right opportunity presents itself.
+
+Whether you are evaluating your first rural property, considering a transition from residential investment to land, or looking to expand an existing Hill Country portfolio, the quality of your advisory team and the thoroughness of your due diligence will determine the outcome more than any other factor.
+
+Echelon Property Group works with buyers, investors, and landowners across the Austin and Hill Country corridor on acquisitions, investment strategy, and access to opportunities that do not reach the open market. If you are considering a land acquisition and want a candid, informed conversation about what the market actually looks like right now, we are glad to have it. <a href="/about-austin-real-estate-advisory" class="${LINK}">Learn more about our services</a> and <a href="/contact" class="${LINK}">connect with our team directly</a>.
 `,
   },
   {

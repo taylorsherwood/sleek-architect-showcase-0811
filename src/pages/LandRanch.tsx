@@ -322,23 +322,45 @@ const LandRanch = () => {
               The Spectrum of Central Texas Land
             </h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[rgba(12,15,36,0.08)] border border-[rgba(12,15,36,0.08)]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {categories.map((c, i) => (
-              <div
+              <article
                 key={c.title}
-                className="bg-background p-8 md:p-10 flex flex-col"
-                style={i === categories.length - 1 ? { gridColumn: "auto" } : {}}
+                className="group relative overflow-hidden bg-architectural"
               >
-                <p className="text-gold mb-4" style={{ ...labelStyle, fontSize: "0.55rem" }}>
-                  0{i + 1}
-                </p>
-                <h3 className="font-display text-xl md:text-2xl font-normal text-architectural mb-4">
-                  {c.title}
-                </h3>
-                <p className="text-muted-foreground text-[0.95rem] leading-relaxed">{c.desc}</p>
-              </div>
+                <div className="relative w-full aspect-[4/5] overflow-hidden">
+                  <img
+                    src={c.image}
+                    alt={`${c.title} in Central Texas`}
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.04]"
+                    width={1280}
+                    height={1600}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <div
+                    className="absolute inset-0"
+                    style={{
+                      background:
+                        "linear-gradient(to top, rgba(12,15,36,0.85) 0%, rgba(12,15,36,0.45) 45%, rgba(12,15,36,0.10) 75%, transparent 100%)",
+                    }}
+                  />
+                  <div className="absolute inset-x-0 bottom-0 p-7 md:p-8">
+                    <p className="text-gold mb-3" style={{ ...labelStyle, fontSize: "0.55rem" }}>
+                      0{i + 1}
+                    </p>
+                    <h3 className="font-display text-xl md:text-2xl font-normal text-white leading-tight mb-3">
+                      {c.title}
+                    </h3>
+                    <p className="text-white/75 text-[0.92rem] leading-relaxed max-w-md">
+                      {c.desc}
+                    </p>
+                  </div>
+                </div>
+              </article>
             ))}
           </div>
+
         </div>
       </section>
 

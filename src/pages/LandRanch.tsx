@@ -626,6 +626,37 @@ const LandRanch = () => {
       />
 
 
+      {/* ── SECTION 6: MARKET SNAPSHOT ──────────────────────── */}
+      <section className="py-16 md:py-24 bg-secondary/40">
+        <div className="container mx-auto px-6">
+          <div className="max-w-3xl mb-14">
+            <p className="text-gold mb-5" style={labelStyle}>
+              MARKET DATA
+            </p>
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-normal text-architectural leading-[1.1]">
+              Central Texas Land Market Snapshot
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-[rgba(12,15,36,0.08)] border border-[rgba(12,15,36,0.08)]">
+            {marketSnapshot.map((m) => (
+              <div key={m.label} className="bg-background p-8 md:p-10">
+                <p className="text-gold mb-5" style={{ ...labelStyle, fontSize: "0.55rem" }}>
+                  {m.label}
+                </p>
+                <p className="font-display text-3xl md:text-4xl font-normal text-architectural leading-none mb-4">
+                  {m.value}
+                </p>
+                <p className="text-muted-foreground text-[0.85rem] leading-relaxed">{m.note}</p>
+              </div>
+            ))}
+          </div>
+          <p className="text-muted-foreground/70 text-xs mt-6 max-w-2xl" style={{ fontStyle: "italic" }}>
+            Indicative figures based on recent Central Texas market activity. Contact Echelon for a
+            current, property-specific assessment.
+          </p>
+        </div>
+      </section>
+
       {/* ── SECTION 5.5: PRIVATE LAND OPPORTUNITIES ──────────────────────── */}
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-6">
@@ -660,36 +691,6 @@ const LandRanch = () => {
         </div>
       </section>
 
-      {/* ── SECTION 6: MARKET SNAPSHOT ──────────────────────── */}
-      <section className="py-16 md:py-24 bg-secondary/40">
-        <div className="container mx-auto px-6">
-          <div className="max-w-3xl mb-14">
-            <p className="text-gold mb-5" style={labelStyle}>
-              MARKET DATA
-            </p>
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-normal text-architectural leading-[1.1]">
-              Central Texas Land Market Snapshot
-            </h2>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-[rgba(12,15,36,0.08)] border border-[rgba(12,15,36,0.08)]">
-            {marketSnapshot.map((m) => (
-              <div key={m.label} className="bg-background p-8 md:p-10">
-                <p className="text-gold mb-5" style={{ ...labelStyle, fontSize: "0.55rem" }}>
-                  {m.label}
-                </p>
-                <p className="font-display text-3xl md:text-4xl font-normal text-architectural leading-none mb-4">
-                  {m.value}
-                </p>
-                <p className="text-muted-foreground text-[0.85rem] leading-relaxed">{m.note}</p>
-              </div>
-            ))}
-          </div>
-          <p className="text-muted-foreground/70 text-xs mt-6 max-w-2xl" style={{ fontStyle: "italic" }}>
-            Indicative figures based on recent Central Texas market activity. Contact Echelon for a
-            current, property-specific assessment.
-          </p>
-        </div>
-      </section>
 
       {/* ── SECTION 6.5: INSIGHTS ──────────────────────── */}
 

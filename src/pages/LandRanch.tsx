@@ -14,7 +14,7 @@ import catRecreational from "@/assets/cat-recreational-land.jpg";
 import catInvestment from "@/assets/cat-investment-acreage.jpg";
 import catDevelopment from "@/assets/cat-development-opportunities.jpg";
 import catHomesites from "@/assets/cat-hill-country-homesites.jpg";
-import expLandRanchLogo from "@/assets/exp-land-ranch-logo.jpg";
+import expLandRanchLogo from "@/assets/exp-land-ranch-logo.png";
 
 
 const Footer = lazy(() => import("@/components/Footer"));

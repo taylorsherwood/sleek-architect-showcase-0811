@@ -637,7 +637,24 @@ const LandRanch = () => {
             </div>
 
             {/* Content */}
-            <div className="md:col-span-7">
+            <div className="md:col-span-7 relative overflow-visible">
+              <img
+                src={echelonWatermarkLogo}
+                alt=""
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                className="absolute pointer-events-none select-none hidden md:block"
+                style={{
+                  top: '50%',
+                  left: '50%',
+                  transform: 'translate(-32%, -72%)',
+                  height: '100%',
+                  width: 'auto',
+                  opacity: 0.06,
+                }}
+              />
+              <div className="relative">
               <p className="text-gold mb-5" style={labelStyle}>
                 MEET YOUR LAND & RANCH ADVISOR
               </p>

@@ -365,25 +365,25 @@ const Invest = () => {
               className="inline-block text-minimal px-8 py-3.5 transition-all duration-300"
               style={{
                 border: "1px solid hsl(var(--gold))",
-                color: "#fff",
-                background: "hsl(var(--gold))",
+                color: "hsl(var(--gold))",
+                background: "rgba(255,255,255,0.08)",
+                backdropFilter: "blur(12px)",
+                WebkitBackdropFilter: "blur(12px)",
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.background = "#fff";
-                e.currentTarget.style.color = "hsl(var(--gold))";
-                e.currentTarget.style.borderColor = "#fff";
-              }}
-              onMouseLeave={(e) => {
                 e.currentTarget.style.background = "hsl(var(--gold))";
                 e.currentTarget.style.color = "#fff";
-                e.currentTarget.style.borderColor = "hsl(var(--gold))";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background = "rgba(255,255,255,0.08)";
+                e.currentTarget.style.color = "hsl(var(--gold))";
               }}
               onClick={(e) => {
                 e.preventDefault();
                 document.getElementById("lead-form")?.scrollIntoView({ behavior: "smooth" });
               }}
             >
-              DISCUSS YOUR STRATEGY
+              SCHEDULE A CONSULTATION
             </Link>
           </div>
         </div>

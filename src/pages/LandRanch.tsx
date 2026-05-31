@@ -228,18 +228,6 @@ const LandRanch = () => {
                 </Link>
               </div>
 
-              <div className="mt-12 md:mt-14">
-                <img
-                  src={expLandRanchLogo}
-                  alt="eXp Realty Land & Ranch"
-                  className="h-24 md:h-32 lg:h-36 w-auto object-contain"
-                  width={750}
-                  height={154}
-                  loading="eager"
-                  decoding="async"
-                  style={{ filter: "brightness(0) invert(1)" }}
-                />
-              </div>
             </div>
           </div>
         </div>

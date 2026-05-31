@@ -617,7 +617,7 @@ const LandRanch = () => {
       {/* ── PARALLAX BREAK ──────────────────────── */}
       <div
         className="parallax-break hidden md:block"
-        style={{ backgroundImage: "url('/images/parallax-cattle.webp')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties}
+        style={{ backgroundImage: "url('/images/parallax-cattle.webp')", backgroundAttachment: "scroll", backgroundSize: "cover", backgroundPosition: "center", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties}
         aria-hidden="true"
       />
 

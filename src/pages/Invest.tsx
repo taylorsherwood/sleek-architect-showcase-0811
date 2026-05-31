@@ -383,7 +383,7 @@ const Invest = () => {
                 document.getElementById("lead-form")?.scrollIntoView({ behavior: "smooth" });
               }}
             >
-              DISCUSS YOUR INVESTMENT STRATEGY
+              DISCUSS YOUR STRATEGY
             </Link>
           </div>
         </div>

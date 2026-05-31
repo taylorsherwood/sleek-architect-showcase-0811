@@ -22,6 +22,7 @@ import blogAustinLuxuryMarketAnalysis from "@/assets/blog/austin-luxury-market-a
 import blogPriceLuxuryHomeAustin from "@/assets/blog/how-to-price-luxury-home-austin.jpg";
 import blogHighestAndBestUse from "@/assets/blog/highest-and-best-use-property-austin.webp";
 import blogAustinRedevelopment from "@/assets/blog/austin-redevelopment-opportunities.webp";
+import blogAustinRanchLand from "@/assets/blog/austin-ranch-land-for-sale.webp";
 
 
 

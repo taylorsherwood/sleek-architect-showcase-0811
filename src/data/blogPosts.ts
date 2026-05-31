@@ -23,6 +23,7 @@ import blogPriceLuxuryHomeAustin from "@/assets/blog/how-to-price-luxury-home-au
 import blogHighestAndBestUse from "@/assets/blog/highest-and-best-use-property-austin.webp";
 import blogAustinRedevelopment from "@/assets/blog/austin-redevelopment-opportunities.webp";
 import blogAustinRanchLand from "@/assets/blog/austin-ranch-land-for-sale.webp";
+import blogAustinInfillDevelopment from "@/assets/blog/austin-infill-development.jpg";
 
 
 
@@ -50,6 +51,20 @@ export interface BlogPost {
 const LINK = "text-foreground underline hover:text-muted-foreground";
 
 export const blogPosts: BlogPost[] = [
+  {
+    id: "austin-infill-development",
+    title: "Austin Infill Development: How to Evaluate, Plan, and Execute a Redevelopment Opportunity",
+    metaTitle: "Austin Infill Development: How to Evaluate, Plan, and Execute a Redevelopment Opportunity",
+    excerpt: "A practical framework for evaluating, planning, and executing infill redevelopment opportunities across Austin's established neighborhoods.",
+    author: "Taylor Sherwood",
+    date: "2026-05-31",
+    readTime: "15 min read",
+    category: "Investment",
+    image: blogAustinInfillDevelopment,
+    heroImage: blogAustinInfillDevelopment,
+    imageAlt: "Austin infill development showing an original bungalow next to a modern new build on the same street",
+    content: `_Body to be added._`,
+  },
   {
     id: "austin-ranch-land-for-sale",
     title: "Austin Ranch Land for Sale: Complete Guide to Hill Country Ranches and Acreage Properties",

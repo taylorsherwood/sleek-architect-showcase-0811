@@ -768,7 +768,7 @@ const LandRanch = () => {
               </Link>
               <Link
                 to="/austin-land-development-opportunities"
-                className="inline-flex items-center justify-center border border-white/40 hover:border-gold hover:text-gold text-white px-8 py-4 transition-colors duration-300"
+                className="inline-flex items-center justify-center border border-gold text-white hover:bg-gold hover:text-architectural px-8 py-4 transition-colors duration-300"
                 style={labelStyle}
               >
                 Discuss Development Potential

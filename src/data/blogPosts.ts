@@ -70,6 +70,8 @@ This guide is written for three audiences: property owners sitting on older home
 
 What follows is a practical, sequenced framework. It covers how to identify infill potential, how to evaluate redevelopment value, how to navigate site constraints, and how to make an informed decision about whether to hold, renovate, develop, or sell. Neighborhoods like East Austin, Brentwood, Crestview, Zilker, Bouldin Creek, and South Austin serve as reference points throughout because these are where infill activity is most concentrated and most instructive.
 
+What makes this conversation distinctly Austin, rather than a generic growth-market story, is the convergence of several local forces. The City of Austin's HOME initiative materially expanded what can be built by right on a large share of central residential lots. Population growth across the Austin MSA has continued to compress demand into a finite supply of well-located, infrastructure-served land. Central-city land has become genuinely scarce, and land values in neighborhoods like Bouldin Creek, Zilker, Brentwood, and East Austin have appreciated faster than the modest improvements sitting on top of them. The result is a market in which owners of older homes on quality lots increasingly need to understand redevelopment potential before making any meaningful capital decision, whether that decision is to renovate, refinance, sell, or hold. For broader context on how this shift is reshaping investor strategy, our overview of <a href="/blog/austin-redevelopment-opportunities" class="${LINK}">Austin redevelopment opportunities</a> is a useful companion read.
+
 Before diving in, here is a concise summary of what this guide covers:
 
 **Executive Summary**
@@ -152,7 +154,31 @@ HBU analysis often reveals that the optimal outcome is not the most complex one.
 
 Builders and developers run this analysis before making any acquisition offer. Property owners benefit from running the same analysis before deciding whether to sell, develop, or hold. Without it, you are negotiating without knowing what your property is actually worth to the market.
 
+## Hypothetical Example: Evaluating an Infill Opportunity in Brentwood
+
+To make the framework concrete, consider a hypothetical but realistic Brentwood scenario. The property is an 8,500-square-foot SF-3 lot with a 1,400-square-foot 1960s ranch-style home, alley access, two protected heritage oaks near the front of the lot, and a TCAD record where land value has crept up to roughly match, or modestly exceed, improvement value. The owner has lived there for two decades, has no mortgage, and is weighing what to do next.
+
+Applied to this lot, the four-part highest and best use test produces a useful comparison across five paths:
+
+**1. Renovate the existing home.** The structure is sound but dated. A measured renovation might add livability and modest resale value. The problem is that the renovation dollars largely flow into a building the next owner may discount or remove. When land value is already at parity with the improvement, renovation capital tends to underperform. It is a defensible choice if the owner intends to stay, but it is rarely the highest financial return.
+
+**2. Add an ADU.** Brentwood lots with alley access are well-suited for detached ADUs. An ADU preserves the primary residence, creates rental income or multigenerational flexibility, and is often the least disruptive way to capture incremental value. The HOME initiative has made this path more viable on lots like this one. The ceiling on returns is moderate, but the execution risk is comparatively low.
+
+**3. Execute a lot split.** An 8,500-square-foot SF-3 lot may, depending on width, depth, and the location of the heritage trees, support a lot split into two separately titled parcels. If feasible, this can generate liquidity from one parcel while preserving optionality on the other. The constraint here is physical: protected trees and setback geometry frequently reduce what looks possible on a desk review.
+
+**4. Sell to a builder.** A builder's offer will reflect a development pro forma backed into from the end value of a new construction duplex or two detached units. In Brentwood, that math has worked for active infill builders for several years. The owner trades complexity for certainty: a clean closing in exchange for a price that captures land value but leaves development profit with the builder.
+
+**5. Partner with a developer.** A profit-share or contribution structure allows the owner to participate in development upside without fronting capital or managing the project. The trade is timeline, risk, and the quality of the partnership. Well-structured, it can produce a materially higher net outcome than an outright sale. Poorly structured, it can produce conflict and delay.
+
+How highest and best use sorts these options depends on three site-specific variables. Zoning and overlay analysis determines whether a lot split or three-unit plan is actually permitted on this parcel. Site constraints, particularly the two heritage oaks and impervious cover limits, determine what is physically buildable inside the legal envelope. Market demand determines which completed product type clears at the price needed to justify construction cost and developer margin.
+
+On this hypothetical lot, the ADU path and the builder-sale path are often the two strongest candidates. The lot-split path becomes compelling if the trees and geometry cooperate. The renovation path tends to be the weakest on the financial scoreboard, even when it is the most appealing emotionally. The developer-partnership path can produce the highest net return but requires the right partner and the owner's willingness to trade time for upside.
+
+The point of the example is not to prescribe a path. It is to show that the right answer is not obvious from the curb. It emerges from running the analysis on the actual parcel.
+
 ## Step 4: Evaluate the Site Constraints That Determine Feasibility
+
+
 
 Site constraints are where infill projects stall. Evaluating them early, before committing capital or engaging a design team, prevents costly surprises and keeps the decision process grounded in what is actually achievable.
 
@@ -245,15 +271,15 @@ Q: How do I know if my property has development value?
 A: The most accessible starting point is comparing land value to improvement value on the TCAD record. When land value approaches or exceeds improvement value, the property warrants closer evaluation. Lot size, zoning designation, and neighborhood context are additional indicators. A property-specific redevelopment analysis, which evaluates highest and best use against current constraints and market conditions, provides the most reliable answer.
 :::
 
-## A Final Note
+## How Echelon Property Group Advises Owners on Land-Use Decisions
 
-Austin infill development is not a simple topic, and the stakes of getting it wrong are significant. Whether you are a property owner evaluating what to do with an aging home, an investor sourcing acquisition targets, or a builder refining your site selection criteria, the quality of your analysis determines the quality of your outcome.
+The decision to hold, renovate, develop, or sell is rarely about a single number. It is about understanding land value in its current market, the redevelopment potential allowed by zoning and site constraints, the highest and best use given physical and financial realities, the depth of current builder and developer demand for the specific product type the lot supports, and how each of those factors maps to the owner's timeline, tax position, and broader plans.
 
-<a href="/about-austin-real-estate-advisory" class="${LINK}">Echelon Property Group</a> works with property owners, investors, and developers to evaluate redevelopment potential and highest and best use across central Austin. If you own a property in an established neighborhood and want to understand what your land is actually worth and what your options are, a strategic consultation is the right starting point.
+<a href="/about-austin-real-estate-advisory" class="${LINK}">Echelon Property Group</a> works with property owners, <a href="/invest" class="${LINK}">investors</a>, and developers across central Austin to bring those variables into one clear picture. Engagements often start with owners who are not yet ready to make a decision, and that is the right time to begin the analysis. The same discipline applies whether the property is an aging home on a quality central Austin lot, a strategic <a href="/sell" class="${LINK}">sale candidate</a> in an established neighborhood, or a larger acreage holding evaluated under our <a href="/blog/austin-ranch-land-for-sale" class="${LINK}">Austin ranch land and Hill Country</a> advisory framework. The goal is the same: a candid, defensible read on what the land is worth and what the strongest path forward looks like.
 
 :::cta
-heading: Understand what your central Austin land is actually worth.
-button: Request a Redevelopment Evaluation
+heading: Understand your land value, redevelopment potential, and the strongest path forward.
+button: Request a Highest-and-Best-Use and Land Value Analysis
 href: /contact
 :::
     `,

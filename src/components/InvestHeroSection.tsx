@@ -79,15 +79,18 @@ const InvestHeroSection = ({ children }: Props) => {
             <source src={VIDEO_URL} type="video/mp4" />
           </video>
         ) : (
-          <img
-            src="/images/invest-hero-poster-mobile.webp"
-            alt="Texas State Capitol on Congress Avenue, Austin"
-            className="w-full h-full object-cover object-center"
-            loading="eager"
-            fetchPriority="high"
-            width={780}
-            height={1386}
-          />
+          <picture>
+            <source media="(max-width: 768px)" srcSet="/images/invest-hero-poster-mobile.webp" />
+            <img
+              src="/images/invest-hero-poster.webp"
+              alt="Aerial view of an Austin redevelopment lot bordered by new construction — value-add investment opportunity"
+              className="w-full h-full object-cover object-center"
+              loading="eager"
+              fetchPriority="high"
+              width={1920}
+              height={1280}
+            />
+          </picture>
         )}
       </div>
 

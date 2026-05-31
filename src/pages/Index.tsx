@@ -163,17 +163,18 @@ const Hero = () => {
             textShadow: "0 2px 14px rgba(0,0,0,0.55), 0 6px 30px rgba(0,0,0,0.35), 0 0 60px rgba(0,0,0,0.18)",
             whiteSpace: "pre-wrap"
           }}>
-            Access austin's most<br className="md:hidden" /> Exclusive PROPERTIES
+            Strategic counsel for Austin's<br className="md:hidden" /> most valuable real estate
           </h1>
 
-          <p className="max-w-[480px] mb-14 md:mb-12 lg:mb-14 leading-[1.7]" style={{
+          <p className="max-w-[520px] mb-14 md:mb-12 lg:mb-14 leading-[1.7]" style={{
             ...anim("0.3s"),
             fontFamily: '"Jost", sans-serif', fontWeight: 400, fontSize: "15.5px",
             letterSpacing: "0.04em", color: "rgba(250,248,244,0.95)",
             textShadow: "0 1px 8px rgba(0,0,0,0.6), 0 0 20px rgba(0,0,0,0.4)",
             whiteSpace: "pre-wrap"
           }}>
-            {"Private listings & off-market opportunities.\nElevated real estate representation."}
+            {"Residential, ranch, land, and redevelopment.\nPrivate access. Disciplined execution."}
+
           </p>
 
           {/* CTA Buttons */}
@@ -218,8 +219,9 @@ const Hero = () => {
                 onMouseEnter={e => { e.currentTarget.style.transform = "translateX(3px) translateZ(0)"; e.currentTarget.style.background = "#0C0F24"; e.currentTarget.style.borderColor = "#0C0F24"; e.currentTarget.style.color = "#fff"; }}
                 onMouseLeave={e => { e.currentTarget.style.transform = "translateX(0) translateZ(0)"; e.currentTarget.style.background = "rgba(10,14,25,0.55)"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.72)"; e.currentTarget.style.color = "#fff"; }}
               >
-                <span className="sm:hidden">Off-Market Properties →</span>
-                <span className="hidden sm:inline">Connect Me With Off-Market Properties →</span>
+                <span className="sm:hidden">Off-Market & Private Opportunities →</span>
+                <span className="hidden sm:inline">Connect Me With Private Opportunities →</span>
+
               </Link>
             </div>
             <p style={{ ...anim("0.5s"), fontFamily: '"Jost", sans-serif', fontSize: "10px", letterSpacing: "0.12em", color: "rgba(255,255,255,0.55)", marginTop: "6px", textTransform: "uppercase", textShadow: "0 0 12px rgba(255,255,255,0.35), 0 0 24px rgba(255,255,255,0.15)", whiteSpace: "pre-wrap" }}>
@@ -299,9 +301,12 @@ const SearchSection = () => {
           <p className="text-minimal text-gold mb-3">
             EXPLORE THE MARKET
           </p>
-          <h2 className="font-display text-2xl md:text-[2rem] font-normal text-foreground leading-[1.1] tracking-[0.03em] mb-5">
-            Find Your Next <span className="text-gold italic">Chapter</span>
+          <h2 className="font-display text-2xl md:text-[2rem] font-normal text-foreground leading-[1.1] tracking-[0.03em] mb-3">
+            Search Austin <span className="text-gold italic">Real Estate</span>
           </h2>
+          <p className="text-sm md:text-base text-muted-foreground mb-5 font-light max-w-md mx-auto">
+            Homes, estates, ranch land, and investment property across Austin and the surrounding Hill Country.
+          </p>
           {isMobile ? (
             <a
               href={REALSCOUT_URL}
@@ -314,6 +319,7 @@ const SearchSection = () => {
           ) : (
             <div ref={containerRef} className="flex justify-center relative max-w-xl mx-auto search-widget-frame" style={{ minHeight: 60, zIndex: 10 }} />
           )}
+
         </div>
       </div>
     </section>
@@ -327,11 +333,12 @@ const SearchSection = () => {
 const Index = () => (
   <div className="min-h-screen bg-background">
     <SEOHead
-      title="Austin Luxury Real Estate"
-      description="Austin luxury real estate advisory. Off-market access, investment strategy, and expert service for luxury homes, land, and commercial property."
-      ogTitle="Austin Luxury Real Estate and Investment Advisory | Echelon Property Group"
-      ogDescription="Strategic real estate advisory across Austin's most exclusive markets. Off-market deals, investment property, land development, and luxury homes."
+      title="Austin Real Estate Advisory | Echelon Property Group"
+      description="Strategic Austin real estate advisory across residential, ranch, land, redevelopment, and investment property. Off-market access and disciplined execution."
+      ogTitle="Strategic Austin Real Estate Advisory | Echelon Property Group"
+      ogDescription="Private representation for Austin's most valuable real estate. Residential, ranch, land, redevelopment, and investment, with off-market access."
     />
+
     <SchemaMarkup schema={localBusinessSchema} />
     <SchemaMarkup schema={taylorSherwoodSchema} />
     <SchemaMarkup schema={createBreadcrumbSchema([{ name: "Home", url: "https://www.echelonpropertygroup.com/" }])} />

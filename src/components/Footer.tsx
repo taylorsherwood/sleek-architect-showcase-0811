@@ -44,10 +44,11 @@ const Footer = () => {
                   width={224} height={224}
                 />
               </Link>
-              <p style={{ fontFamily: '"Jost", sans-serif', fontSize: "11.5px", color: "rgba(255,255,255,0.4)", lineHeight: 1.6, fontWeight: 300, maxWidth: "220px" }}
+              <p style={{ fontFamily: '"Jost", sans-serif', fontSize: "11.5px", color: "rgba(255,255,255,0.4)", lineHeight: 1.6, fontWeight: 300, maxWidth: "240px" }}
                 className="text-center sm:text-left -mt-4 mb-3">
-                Austin luxury, investment, and off-market real estate representation.
+                Strategic Austin real estate advisory. Residential, ranch, land, redevelopment, and investment.
               </p>
+
               <Link
                 to="/off-market-real-estate-austin"
                 className="transition-colors duration-300 hover:text-white"

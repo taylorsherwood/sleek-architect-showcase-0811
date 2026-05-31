@@ -8,6 +8,12 @@ import SchemaMarkup, {
   realEstateAgentSchema,
 } from "@/components/SchemaMarkup";
 import heroImage from "@/assets/land-ranch-hero.jpg";
+import editorialImage from "@/assets/land-ranch-editorial.jpg";
+import catLuxuryRanches from "@/assets/cat-luxury-ranches.jpg";
+import catRecreational from "@/assets/cat-recreational-land.jpg";
+import catInvestment from "@/assets/cat-investment-acreage.jpg";
+import catDevelopment from "@/assets/cat-development-opportunities.jpg";
+import catHomesites from "@/assets/cat-hill-country-homesites.jpg";
 
 const Footer = lazy(() => import("@/components/Footer"));
 const LandRanchMap = lazy(() => import("@/components/LandRanchMap"));
@@ -26,24 +32,37 @@ const categories = [
   {
     title: "Luxury Ranches",
     desc: "Large acreage estates featuring custom homes, water features, equestrian facilities, and recreational amenities.",
+    image: catLuxuryRanches,
   },
   {
     title: "Recreational Land",
     desc: "Properties focused on hunting, fishing, wildlife habitat, trails, and outdoor recreation.",
+    image: catRecreational,
   },
   {
     title: "Investment Acreage",
     desc: "Long-term land holdings positioned for appreciation and future growth.",
+    image: catInvestment,
   },
   {
-    title: "Development Land",
+    title: "Development Opportunities",
     desc: "Properties with subdivision, redevelopment, commercial, or mixed-use potential.",
+    image: catDevelopment,
   },
   {
     title: "Hill Country Homesites",
     desc: "Scenic parcels suited for custom residential construction.",
+    image: catHomesites,
   },
 ];
+
+const marketSnapshot = [
+  { label: "Average Price Per Acre", value: "$48,200", note: "Central Texas, trailing 12 months" },
+  { label: "Active Land Inventory", value: "1,840", note: "Listings across the region" },
+  { label: "Median Days on Market", value: "112", note: "Land & acreage, current cycle" },
+  { label: "12-Month Appreciation Trend", value: "+6.4%", note: "Year-over-year land values" },
+];
+
 
 const process = [
   {

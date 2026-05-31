@@ -49,6 +49,21 @@ const LINK = "text-foreground underline hover:text-muted-foreground";
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "austin-ranch-land-for-sale",
+    title: "Austin Ranch Land for Sale: Complete Guide to Hill Country Ranches and Acreage Properties",
+    metaTitle: "Austin Ranch Land for Sale: Complete Guide to Hill Country Ranches and Acreage Properties",
+    excerpt: "Explore Austin ranch land, Hill Country properties, agricultural exemptions, investment opportunities, and acreage ownership strategies throughout Central Texas.",
+    author: "Taylor Sherwood",
+    date: "2026-05-31",
+    readTime: "15 min read",
+    category: "LAND & RANCH",
+    image: blogAustinRanchLand,
+    imageAlt: "Horse grazing in a Texas Hill Country bluebonnet field on ranch land near Austin",
+    content: `
+{{CONTENT_PENDING}}
+`,
+  },
+  {
     id: "austin-redevelopment-opportunities",
     title: "Austin Redevelopment Opportunities: How to Identify, Evaluate, and Act on Underutilized Property",
     metaTitle: "Austin Redevelopment Opportunities: How to Identify, Evaluate, and Act",

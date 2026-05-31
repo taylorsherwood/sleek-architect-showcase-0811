@@ -656,8 +656,8 @@ const LandRanch = () => {
                 style={{
                   top: '50%',
                   left: '50%',
-                  transform: 'translate(-32%, -72%)',
-                  height: '100%',
+                  transform: 'translate(-32%, -55%)',
+                  height: '82%',
                   width: 'auto',
                   opacity: 0.06,
                 }}

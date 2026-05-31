@@ -338,21 +338,31 @@ const LandRanch = () => {
             </h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-            {categories.map((c, i) => (
-              <article
-                key={c.title}
-                className="group relative overflow-hidden bg-architectural"
-              >
+            {categories.map((c, i) => {
+              const isOff = (c as { isOffMarket?: boolean }).isOffMarket;
+              const CardInner = (
                 <div className="relative w-full aspect-[4/5] overflow-hidden">
-                  <img
-                    src={c.image}
-                    alt={`${c.title} in Central Texas`}
-                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.04]"
-                    width={1280}
-                    height={1600}
-                    loading="lazy"
-                    decoding="async"
-                  />
+                  {isOff ? (
+                    <div className="absolute inset-0 bg-gradient-to-br from-architectural via-architectural to-architectural/85 flex items-center justify-center">
+                      <img
+                        src="/static-assets/echelon-logo-gold-square.webp"
+                        alt="Echelon Property Group — Off-Market Land & Ranch"
+                        className="w-1/2 h-auto object-contain transition-transform duration-[1200ms] ease-out group-hover:scale-[1.04]"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                  ) : (
+                    <img
+                      src={c.image as string}
+                      alt={`${c.title} in Central Texas`}
+                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.04]"
+                      width={1280}
+                      height={1600}
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  )}
                   <div
                     className="absolute inset-0"
                     style={{
@@ -372,12 +382,29 @@ const LandRanch = () => {
                     </p>
                   </div>
                 </div>
-              </article>
-            ))}
+              );
+              return isOff ? (
+                <Link
+                  key={c.title}
+                  to="/off-market-real-estate-austin"
+                  className="group relative overflow-hidden bg-architectural block"
+                >
+                  {CardInner}
+                </Link>
+              ) : (
+                <article
+                  key={c.title}
+                  className="group relative overflow-hidden bg-architectural"
+                >
+                  {CardInner}
+                </article>
+              );
+            })}
           </div>
 
         </div>
       </section>
+
 
       {/* ── PARALLAX BREAK ──────────────────────── */}
       <div

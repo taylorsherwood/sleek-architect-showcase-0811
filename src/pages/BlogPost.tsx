@@ -4,7 +4,7 @@ import Navigation from "@/components/Navigation";
 const Footer = lazy(() => import("@/components/Footer"));
 import AboutBlock from "@/components/AboutBlock";
 import SEOHead from "@/components/SEOHead";
-import SchemaMarkup, { createArticleSchema, createFAQSchema, createBreadcrumbSchema, createBlogPostingSchema } from "@/components/SchemaMarkup";
+import SchemaMarkup, { createArticleSchema, createFAQSchema, createBreadcrumbSchema, createBlogPostingSchema, organizationSchema, taylorSherwoodSchema } from "@/components/SchemaMarkup";
 import { blogPosts } from "@/data/blogPosts";
 import { seoBlogPosts } from "@/data/seoBlogPosts";
 import AuthorBio from "@/components/AuthorBio";
@@ -71,6 +71,8 @@ const BlogPost = () => {
   const skipBlogPosting = ["sustainable-architecture-future", "minimalism-modern-living", "urban-planning-community-spaces"].includes(post.id);
 
   const schemas: Record<string, unknown>[] = [
+    organizationSchema,
+    taylorSherwoodSchema,
     createArticleSchema(post.title, post.excerpt, post.date, post.author, post.image, postUrl),
     ...(skipBlogPosting ? [] : [createBlogPostingSchema({ title: post.title, description: post.excerpt, datePublished: post.date, author: post.author, image: post.image, url: postUrl })]),
     createBreadcrumbSchema([
@@ -138,7 +140,7 @@ const BlogPost = () => {
               </p>
             </div>
             
-            <div className="w-full aspect-[16/9] mb-12 overflow-hidden">
+            <div className="w-full aspect-[16/9] mb-4 overflow-hidden">
               <img 
                 src={post.heroImage || post.image} 
                 alt={post.imageAlt || `${post.title} - Austin luxury real estate`}
@@ -149,6 +151,11 @@ const BlogPost = () => {
                 decoding="async"
               />
             </div>
+            {post.imageCaption && (
+              <p className="text-sm italic text-muted-foreground leading-relaxed mb-12 max-w-3xl">
+                {post.imageCaption}
+              </p>
+            )}
 
             <BlogContent
               content={post.content}

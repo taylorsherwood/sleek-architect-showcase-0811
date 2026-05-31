@@ -43,6 +43,8 @@ export interface BlogPost {
   metaTitle?: string;
   /** Optional descriptive alt text for the hero image. Falls back to the title pattern. */
   imageAlt?: string;
+  /** Optional editorial caption shown beneath the hero image. */
+  imageCaption?: string;
 }
 
 const LINK = "text-foreground underline hover:text-muted-foreground";
@@ -51,14 +53,15 @@ export const blogPosts: BlogPost[] = [
   {
     id: "austin-ranch-land-for-sale",
     title: "Austin Ranch Land for Sale: Complete Guide to Hill Country Ranches and Acreage Properties",
-    metaTitle: "Austin Ranch Land for Sale: Complete Guide to Hill Country Ranches and Acreage Properties",
-    excerpt: "Explore Austin ranch land, Hill Country properties, agricultural exemptions, investment opportunities, and acreage ownership strategies throughout Central Texas.",
+    metaTitle: "Austin Ranch Land for Sale: Hill Country Ranches, Investment Land & Acreage Guide",
+    excerpt: "A complete guide to Austin ranch land, Hill Country properties, investment land, acreage ownership, agricultural and wildlife exemptions, and Austin-area growth corridors shaping long-term value across Central Texas.",
     author: "Taylor Sherwood",
     date: "2026-05-31",
     readTime: "22 min read",
     category: "LAND & RANCH",
     image: blogAustinRanchLand,
     imageAlt: "Horse grazing in a Texas Hill Country bluebonnet field on ranch land near Austin",
+    imageCaption: "Texas Hill Country ranch land near Austin, where recreational, equestrian, investment, and legacy properties continue attracting buyers seeking acreage, privacy, and long-term value.",
     content: `
 Something has shifted in how serious buyers think about land. It is not just lifestyle. It is not just privacy. For a growing number of high-net-worth individuals relocating to or already established in Central Texas, owning a piece of the Texas Hill Country has become a deliberate financial and generational decision — one that often sits alongside a primary residence in <a href="/communities/west-lake-hills" class="${LINK}">West Lake Hills</a>, <a href="/communities/barton-creek" class="${LINK}">Barton Creek</a>, <a href="/communities/spanish-oaks" class="${LINK}">Spanish Oaks</a>, <a href="/communities/lakeway" class="${LINK}">Lakeway</a>, or <a href="/communities/bee-cave" class="${LINK}">Bee Cave</a>.
 
@@ -134,6 +137,8 @@ The path of growth in Central Texas is not abstract. It is visible on the ground
 
 **Fredericksburg and Gillespie County:** Fredericksburg sits at the western edge of the Austin sphere of influence and the eastern edge of the wine country economy. Hospitality, agritourism, and second-home demand have all expanded substantially. Ranch tracts in Gillespie County, particularly those with frontage along scenic loops or proximity to the Pedernales, continue to attract serious buyers willing to drive farther for genuine Hill Country character.
 
+**Travis County, Southwest Austin, and the Lake Travis Corridor:** Inside Travis County itself, the supply of meaningful acreage has become genuinely scarce. Southwest Austin acreage west of MoPac, the hills around <a href="/communities/bee-cave" class="${LINK}">Bee Cave</a>, and the Lake Travis corridor through <a href="/communities/lakeway" class="${LINK}">Lakeway</a>, Spicewood, and the western shoreline still hold a small inventory of large-tract ranch estates — many of them generational holdings that rarely surface on the open market. Buyers focused on staying close to the urban core are competing for a shrinking pool: estate tracts with water frontage, equestrian improvements, or genuine privacy inside the Travis County line trade at a substantial premium to comparable acreage one county west, and that premium has widened as developable land near Austin's core has effectively run out. For families who want both a primary residence in West Lake Hills, Barton Creek, or Spanish Oaks and acreage within a short drive, Travis County and the immediate Lake Travis corridor remain the most contested band of the Hill Country ranch market.
+
 The common thread across all of these corridors is that infrastructure investment, population growth, and development pressure are arriving in waves rather than uniformly. Land that sits one corridor or one county ahead of current development can be acquired today at meaningful discounts to where it will trade five to ten years from now, provided water, access, and entitlement fundamentals support long-term use. That is why serious investors and landowners are paying attention.
 
 ## Investment Potential of Texas Hill Country Land
@@ -190,6 +195,24 @@ Financing is another area where expectations frequently collide with reality. Fa
 
 Finally, transaction strategy matters more on land than on almost any other asset class. A residential agent without rural land experience, a title company unfamiliar with easement complexity, and a lender without agricultural loan products is a combination that produces problems. Many of the best Hill Country opportunities also trade off-market, through broker-to-broker networks and relationships that never surface in public listings. Access to those deals depends entirely on the broker relationships and market intelligence working on your behalf. Understanding how to find <a href="/off-market-real-estate-austin" class="${LINK}">off-market properties in Austin</a> is directly relevant to how serious buyers approach the Hill Country land market.
 
+## Key Considerations Before Buying Ranch Land Near Austin
+
+Before signing a contract on any Hill Country or Travis County tract, a handful of issues consistently separate clean acquisitions from costly ones. Working through this list — ideally before you make an offer, and certainly before the option period closes — is the most efficient form of risk management available to a serious buyer.
+
+**Water availability and well performance.** Order the driller's log, a current pump test, and, where possible, neighboring well data. Confirm static water level, recovery rate, and seasonal variability. A well that produces in spring may struggle by August. Identify the governing groundwater conservation district and any pumping limits or permits already in place.
+
+**Easement review.** Pull a full title commitment and read every recorded easement: utility corridors, pipeline rights-of-way, road and ingress/egress easements, conservation easements, and any prescriptive claims. Walk the property with the survey in hand. Easements are the single most common source of post-closing surprises on rural land.
+
+**Mineral rights ownership.** Determine whether the mineral estate is intact, partially severed, or fully severed. A severed mineral owner generally has the dominant estate and a legal right of surface access for exploration and extraction. Confirm what mineral interests, if any, are being conveyed at closing.
+
+**Agricultural and wildlife exemption status.** Verify the current valuation with the county appraisal district. Confirm how long the ag or wildlife exemption has been in place, what practices are documented, and whether a current wildlife management plan exists. Understand your exposure to rollback (additional) taxes if intended use will not maintain the qualifying activity.
+
+**Legal access and road frontage.** Confirm deeded access to a public road. Prescriptive or informal access arrangements carry meaningful legal risk and can quietly impair value at resale. For tracts with development optionality, road frontage quality and county road maintenance status materially affect the <a href="/blog/highest-and-best-use-property-austin" class="${LINK}">highest and best use</a> analysis.
+
+**Development potential and highest-and-best-use considerations.** Even on a property you intend to hold as a recreational or legacy ranch, understand its development optionality: ETJ status, utility proximity, topography constraints, and county subdivision rules. The same framework that drives <a href="/blog/austin-redevelopment-opportunities" class="${LINK}">Austin redevelopment opportunities</a> applies in modified form to rural acreage, and that optionality often defines long-term value.
+
+**Financing and lender selection.** Engage an agricultural lender — Capital Farm Credit or a comparable Farm Credit institution — before you identify a specific tract. Down payment requirements (typically 25 to 35 percent), amortization structures, and underwriting criteria differ meaningfully from residential mortgages. Confirm appraisal expectations and timeline early so financing does not become the bottleneck on a competitive transaction.
+
 ## Frequently Asked Questions: Austin Ranch Land and Hill Country Properties
 
 ### How much land do I need to qualify for an agricultural exemption in Texas?
@@ -234,7 +257,7 @@ Texas Hill Country land is a genuinely compelling asset class. It combines tangi
 
 The best opportunities — particularly the off-market tracts that represent some of the most significant holdings in Blanco, Llano, Gillespie, Burnet, Hays, and Travis counties — rarely appear in public listings. They surface through relationships, through brokers who are known and trusted in specific markets, and through buyers who have done enough preparation to move decisively when the right opportunity presents itself.
 
-Whether you are evaluating your first rural property, considering a transition from residential investment to land, or looking to expand an existing Hill Country portfolio, the combination of local market expertise, land-specific experience, and disciplined due diligence will determine the outcome more than any other factor.
+Whether you're evaluating a recreational ranch, investment tract, equestrian property, development opportunity, or legacy family holding, understanding what a property could become is often more important than understanding what it is today. The combination of local market expertise, land-specific experience, and disciplined due diligence will determine the outcome more than any other factor.
 
 Echelon Property Group advises buyers, investors, and landowning families across the Austin and Texas Hill Country corridor — from West Lake Hills, Barton Creek, Spanish Oaks, Lakeway, and Bee Cave to Dripping Springs, Liberty Hill, Marble Falls, Blanco, Burnet, Johnson City, and Fredericksburg. Our work spans ranch acquisitions, <a href="/invest" class="${LINK}">land investment strategy</a>, <a href="/blog/highest-and-best-use-property-austin" class="${LINK}">highest and best use analysis</a>, <a href="/blog/austin-redevelopment-opportunities" class="${LINK}">development potential evaluation</a>, legacy holding structures, and confidential access to opportunities that do not reach the open market. If you are considering a ranch acquisition, a strategic land investment, or a confidential disposition of an existing holding, we welcome the conversation. <a href="/sell" class="${LINK}">Explore our seller advisory</a>, review our approach to <a href="/off-market-real-estate-austin" class="${LINK}">off-market opportunities</a>, or <a href="/contact" class="${LINK}">contact our team</a> directly for a private, confidential discussion.
 `,

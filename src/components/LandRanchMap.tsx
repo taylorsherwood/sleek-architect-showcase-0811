@@ -22,7 +22,20 @@ const MARKERS: Marker[] = [
   { name: "Georgetown", coords: [-97.6779, 30.6332] },
   { name: "Burnet", coords: [-98.2284, 30.7588] },
   { name: "Blanco", coords: [-98.4225, 30.0982] },
+  { name: "Bandera", coords: [-99.0739, 29.7269] },
+  { name: "Boerne", coords: [-98.7320, 29.7947] },
+  { name: "Bulverde", coords: [-98.4534, 29.7438] },
+  { name: "Canyon Lake", coords: [-98.2620, 29.8866] },
+  { name: "Harper", coords: [-99.2456, 30.2974] },
+  { name: "Kerrville", coords: [-99.1403, 30.0474] },
+  { name: "Mason", coords: [-99.2303, 30.7488] },
+  { name: "Llano", coords: [-98.6753, 30.7593] },
+  { name: "Taylor", coords: [-97.4092, 30.5705] },
+  { name: "Elgin", coords: [-97.3711, 30.3499] },
+  { name: "Lampasas", coords: [-98.1817, 31.0635] },
+  { name: "Salado", coords: [-97.5392, 30.9482] },
 ];
+
 
 const LandRanchMap = () => {
   const mapContainer = useRef<HTMLDivElement>(null);

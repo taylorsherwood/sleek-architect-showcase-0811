@@ -427,7 +427,40 @@ const LandRanch = () => {
       />
 
 
+      {/* ── SECTION 5.5: PRIVATE LAND OPPORTUNITIES ──────────────────────── */}
+      <section className="py-16 md:py-24">
+        <div className="container mx-auto px-6">
+          <div className="max-w-3xl mx-auto text-center">
+            <p className="text-gold mb-5" style={labelStyle}>
+              PRIVATE ACCESS
+            </p>
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-normal text-architectural leading-[1.1] mb-8">
+              Private Land Opportunities
+            </h2>
+            <div className="space-y-5 text-muted-foreground leading-relaxed text-[1.0625rem] mb-10 max-w-2xl mx-auto">
+              <p>
+                Some of Central Texas' most desirable ranches, acreage estates, and development
+                tracts never reach the public market.
+              </p>
+              <p>
+                Through Echelon's network of landowners, builders, developers, and industry
+                relationships, select opportunities may be shared privately before they are widely
+                marketed.
+              </p>
+            </div>
+            <Link
+              to="/private"
+              className="inline-flex items-center justify-center bg-architectural hover:bg-[hsl(var(--gold-deep))] text-white px-8 py-4 transition-colors duration-300"
+              style={labelStyle}
+            >
+              Explore Private Opportunities →
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* ── SECTION 6: INSIGHTS ──────────────────────── */}
+
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14 max-w-6xl">

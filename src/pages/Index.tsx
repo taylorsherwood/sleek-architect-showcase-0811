@@ -163,7 +163,7 @@ const Hero = () => {
             textShadow: "0 2px 14px rgba(0,0,0,0.55), 0 6px 30px rgba(0,0,0,0.35), 0 0 60px rgba(0,0,0,0.18)",
             whiteSpace: "pre-wrap"
           }}>
-            Strategic counsel for Austin's<br className="md:hidden" /> most valuable real estate
+            Austin's most exceptional real estate
           </h1>
 
           <p className="max-w-[520px] mb-14 md:mb-12 lg:mb-14 leading-[1.7]" style={{
@@ -173,8 +173,7 @@ const Hero = () => {
             textShadow: "0 1px 8px rgba(0,0,0,0.6), 0 0 20px rgba(0,0,0,0.4)",
             whiteSpace: "pre-wrap"
           }}>
-            {"Residential, ranch, land, and redevelopment.\nPrivate access. Disciplined execution."}
-
+            {"Luxury homes, ranch land, redevelopment opportunities, \n\nand private market access.\n\n\n"}
           </p>
 
           {/* CTA Buttons */}

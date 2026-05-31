@@ -47,6 +47,7 @@ const Blog = () => {
     "RELOCATION",
     "MARKET INSIGHTS",
     "INVESTMENT",
+    "LAND & RANCH",
     "FEATURED LISTING",
     "SUSTAINABILITY",
     "DESIGN",

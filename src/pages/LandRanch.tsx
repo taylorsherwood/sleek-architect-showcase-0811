@@ -687,9 +687,23 @@ const LandRanch = () => {
                 </p>
                 <Link
                   to="/sell"
-                  className="inline-flex items-center justify-center bg-architectural hover:bg-[hsl(var(--gold-deep))] text-white px-8 py-4 transition-colors duration-300"
-                  style={labelStyle}
+                  className="inline-flex items-center justify-center px-8 py-4 md:px-10 md:py-[1.1rem] transition-colors duration-300 rounded-sm"
+                  style={{
+                    ...labelStyle,
+                    background: "#0C0F24",
+                    color: "#F5F3EF",
+                    border: "1px solid #B9A06C",
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.background = "#B9A06C";
+                    e.currentTarget.style.color = "#0C0F24";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.background = "#0C0F24";
+                    e.currentTarget.style.color = "#F5F3EF";
+                  }}
                 >
+
                   Request a Land Evaluation →
                 </Link>
               </div>

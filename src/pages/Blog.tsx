@@ -59,7 +59,7 @@ const Blog = () => {
       ? allPosts
       : allPosts.filter((post) => post.category === activeCategory);
 
-  const FEATURED_ID = "how-echelon-property-group-approaches-austin-luxury-real-estate-differently";
+  const FEATURED_ID = "how-echelon-approaches-austin-real-estate-differently";
   const featured = allPosts.find((p) => p.id === FEATURED_ID) || allPosts[0];
   const gridPosts =
     activeCategory === "ALL"

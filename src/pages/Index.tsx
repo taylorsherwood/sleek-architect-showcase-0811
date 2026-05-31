@@ -153,7 +153,7 @@ const Hero = () => {
               color: "hsl(38 45% 72%)",
               textShadow: "0 1px 6px rgba(0,0,0,0.7), 0 0 20px rgba(0,0,0,0.5)"
             }}>
-              STRATEGIC AUSTIN REAL ESTATE ADVISORY
+              STRATEGIC AUSTIN REAL ESTATE ADVISORY{"\n\n"}
             </p>
           </div>
 
@@ -163,7 +163,7 @@ const Hero = () => {
             textShadow: "0 2px 14px rgba(0,0,0,0.55), 0 6px 30px rgba(0,0,0,0.35), 0 0 60px rgba(0,0,0,0.18)",
             whiteSpace: "pre-wrap"
           }}>
-            Austin's most exceptional real estate
+            {"Austin's most exceptional real estate\n\n"}
           </h1>
 
           <p className="max-w-[520px] mb-14 md:mb-12 lg:mb-14 leading-[1.7]" style={{
@@ -173,7 +173,7 @@ const Hero = () => {
             textShadow: "0 1px 8px rgba(0,0,0,0.6), 0 0 20px rgba(0,0,0,0.4)",
             whiteSpace: "pre-wrap"
           }}>
-            {"Luxury homes, ranch land, redevelopment opportunities, \nand private market access.\n\n\n"}
+            {"Luxury homes, ranch land, redevelopment opportunities, and \n\nprivate market access.\n\n\n\n\n\n"}
           </p>
 
           {/* CTA Buttons */}
@@ -200,8 +200,7 @@ const Hero = () => {
                   textShadow: "0 1px 2px rgba(0,0,0,0.45)",
                 }}
               >
-                <span className="sm:hidden">Book a Call</span>
-                <span className="hidden sm:inline">Book a 15-Minute Advisory Call</span>
+                BOOK A 15-MINUTE ADVISORY CALL
               </button>
               <Link to="/off-market-real-estate-austin"
                 className="inline-block text-center px-5 py-3 sm:px-6 sm:py-[14px] text-[10px] sm:text-[11px]"
@@ -218,13 +217,11 @@ const Hero = () => {
                 onMouseEnter={e => { e.currentTarget.style.transform = "translateX(3px) translateZ(0)"; e.currentTarget.style.background = "#0C0F24"; e.currentTarget.style.borderColor = "#0C0F24"; e.currentTarget.style.color = "#fff"; }}
                 onMouseLeave={e => { e.currentTarget.style.transform = "translateX(0) translateZ(0)"; e.currentTarget.style.background = "rgba(10,14,25,0.55)"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.72)"; e.currentTarget.style.color = "#fff"; }}
               >
-                <span className="sm:hidden">Off-Market & Private Opportunities →</span>
-                <span className="hidden sm:inline">Connect Me With Private Opportunities →</span>
-
+                CONNECT ME WITH PRIVATE OPPORTUNITIES →
               </Link>
             </div>
             <p style={{ ...anim("0.5s"), fontFamily: '"Jost", sans-serif', fontSize: "10px", letterSpacing: "0.12em", color: "rgba(255,255,255,0.55)", marginTop: "6px", textTransform: "uppercase", textShadow: "0 0 12px rgba(255,255,255,0.35), 0 0 24px rgba(255,255,255,0.15)", whiteSpace: "pre-wrap" }}>
-              {"\n\n"}
+              {"\n\n\n\n"}
             </p>
           </div>
 

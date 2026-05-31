@@ -230,6 +230,50 @@ const LandRanch = () => {
 
       <div className="h-12 md:h-20" aria-hidden="true" />
 
+      {/* ── SECTION 1.5: MORE THAN LAND ──────────────────────── */}
+      <section className="py-16 md:py-24">
+        <div className="container mx-auto px-6">
+          <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center max-w-6xl mx-auto">
+            <div className="order-2 md:order-1">
+              <p className="text-gold mb-5" style={labelStyle}>
+                PHILOSOPHY
+              </p>
+              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-normal text-architectural leading-[1.1] mb-8">
+                More Than Land
+              </h2>
+              <div className="space-y-5 text-muted-foreground leading-relaxed text-[1.0625rem]">
+                <p>
+                  The most valuable land opportunities are rarely defined by acreage alone. They are
+                  defined by what they can become.
+                </p>
+                <p>
+                  For some owners, that means a legacy ranch held for generations. For others, a
+                  future family compound, a strategic development opportunity, or a long-term
+                  investment positioned along the path of growth.
+                </p>
+                <p>
+                  Echelon evaluates land through privacy, access, water, topography, utilities,
+                  exemptions, market demand, and highest-and-best-use potential.
+                </p>
+              </div>
+            </div>
+            <div className="order-1 md:order-2">
+              <img
+                src={editorialImage}
+                alt="Premium Texas Hill Country ranch landscape at golden hour with live oaks and a quiet creek"
+                className="w-full h-[420px] md:h-[560px] object-cover"
+                width={1280}
+                height={1280}
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
       {/* ── SECTION 2: DIFFERENT EXPERTISE ──────────────────────── */}
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-6">

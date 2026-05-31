@@ -278,6 +278,13 @@ const LandRanch = () => {
         </div>
       </section>
 
+      {/* ── PARALLAX BREAK ──────────────────────── */}
+      <div
+        className="parallax-break hidden md:block"
+        style={{ backgroundImage: "url('/images/parallax-ranch.webp')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties}
+        aria-hidden="true"
+      />
+
       {/* ── SECTION 4: MAP ──────────────────────── */}
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-6">

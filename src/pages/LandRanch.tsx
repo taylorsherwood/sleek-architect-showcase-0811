@@ -8,7 +8,7 @@ import SchemaMarkup, {
   realEstateAgentSchema,
 } from "@/components/SchemaMarkup";
 import heroImage from "@/assets/land-ranch-hero.jpg";
-import editorialImage from "@/assets/land-ranch-editorial.jpg";
+import editorialImage from "@/assets/land-ranch-editorial-v2.jpg";
 import catLuxuryRanches from "@/assets/cat-luxury-ranches.jpg";
 import catRecreational from "@/assets/cat-recreational-land.jpg";
 import catInvestment from "@/assets/cat-investment-acreage.jpg";
@@ -248,75 +248,61 @@ const LandRanch = () => {
 
       {/* ── SECTION 1.5: MORE THAN LAND ──────────────────────── */}
 
-      <section className="relative py-14 md:py-20 overflow-hidden">
-        <div className="container mx-auto px-6 relative">
-          <div className="grid md:grid-cols-12 gap-10 md:gap-14 items-center max-w-6xl mx-auto">
-            <div className="md:col-span-5 order-2 md:order-1 relative">
-              <img
-                src={echelonWatermarkLogo}
-                alt=""
-                aria-hidden="true"
-                loading="lazy"
-                decoding="async"
-                className="absolute pointer-events-none select-none hidden md:block"
+      <section className="py-12 md:py-16">
+        <div className="container mx-auto px-6">
+          <div className="grid md:grid-cols-12 gap-10 md:gap-16 items-center max-w-6xl mx-auto">
+            <div className="md:col-span-5 order-2 md:order-1">
+              <p
+                className="text-gold mb-4"
+                style={{ ...labelStyle, letterSpacing: "0.36em" }}
+              >
+                LAND ADVISORY
+              </p>
+              <h2 className="font-display text-[2.15rem] md:text-[3rem] lg:text-[3.5rem] font-normal text-architectural leading-[1.04] tracking-tight mb-5">
+                More Than Land
+              </h2>
+              <p
+                className="mb-8"
                 style={{
-                  top: '50%',
-                  left: '50%',
-                  transform: 'translate(-50%, -50%)',
-                  height: '110%',
-                  width: 'auto',
-                  opacity: 0.04,
+                  fontFamily: '"Jost", sans-serif',
+                  fontSize: "0.8125rem",
+                  letterSpacing: "0.08em",
+                  color: "#b9a06c",
+                  lineHeight: 1.55,
                 }}
-              />
-              <div className="relative">
-                <p className="text-gold mb-3" style={labelStyle}>
-                  PHILOSOPHY
+              >
+                Advising buyers, sellers, investors, and landowners across Austin and the Texas Hill Country.
+              </p>
+              <div className="space-y-5 text-muted-foreground text-[1.075rem] leading-[1.75]">
+                <p>
+                  The most valuable land opportunities are rarely defined by acreage alone. They are defined by what they can become.
                 </p>
-                <h2 className="font-display text-[2rem] md:text-[2.75rem] lg:text-[3.25rem] font-normal text-architectural leading-[1.05] tracking-tight mb-3">
-                  More Than Land
-                </h2>
-                <p
-                  className="text-gold mb-6 italic"
-                  style={{
-                    fontFamily: '"Jost", sans-serif',
-                    fontSize: '0.9rem',
-                    letterSpacing: '0.04em',
-                  }}
-                >
-                  Advising buyers, sellers, investors, and landowners across Austin and the Texas Hill Country.
+                <p>
+                  For some owners, that means a legacy ranch held for generations. For others, a future family compound, strategic development opportunity, or long-term investment positioned along the path of growth.
                 </p>
-                <div className="space-y-4 text-muted-foreground leading-relaxed text-[1.0625rem]">
-                  <p>
-                    The most valuable land opportunities are rarely defined by acreage alone. They are defined by what they can become.
-                  </p>
-                  <p>
-                    For some owners, that means a legacy ranch held for generations. For others, a future family compound, strategic development opportunity, or long-term investment positioned along the path of growth.
-                  </p>
-                  <p>
-                    Echelon evaluates land through privacy, access, water, topography, market demand, and highest-and-best-use potential.
-                  </p>
-                </div>
+                <p>
+                  Echelon evaluates land through privacy, access, water, topography, market demand, and highest-and-best-use potential.
+                </p>
               </div>
             </div>
             <div className="md:col-span-7 order-1 md:order-2">
               <div
-                className="group overflow-hidden bg-[#F5F3EF] p-2 md:p-3"
+                className="group overflow-hidden"
                 style={{
+                  border: "1px solid rgba(12,15,36,0.08)",
                   boxShadow:
-                    '0 30px 60px -25px rgba(12,15,36,0.25), 0 12px 30px -15px rgba(12,15,36,0.15)',
+                    "0 24px 50px -28px rgba(12,15,36,0.22), 0 8px 20px -12px rgba(12,15,36,0.12)",
                 }}
               >
-                <div className="overflow-hidden">
-                  <img
-                    src={editorialImage}
-                    alt="Premium Texas Hill Country ranch landscape at golden hour with live oaks and a quiet creek"
-                    className="w-full h-[440px] md:h-[600px] lg:h-[640px] object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.025]"
-                    width={1280}
-                    height={1280}
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </div>
+                <img
+                  src={editorialImage}
+                  alt="Aerial view of a luxury Texas Hill Country ranch at golden hour with a winding private road, live oak groves, and a reflective creek"
+                  className="block w-full h-[440px] md:h-[600px] lg:h-[660px] object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.025]"
+                  width={1920}
+                  height={1080}
+                  loading="lazy"
+                  decoding="async"
+                />
               </div>
             </div>
           </div>

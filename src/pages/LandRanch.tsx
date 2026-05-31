@@ -17,6 +17,7 @@ import catHomesites from "@/assets/cat-hill-country-homesites.jpg";
 import expLandRanchLogo from "@/assets/exp-land-ranch-logo.png";
 
 import taylorPortrait from "@/assets/taylor-sherwood-land-ranch.jpg";
+import echelonWatermarkLogo from "@/assets/echelon-watermark-logo.png";
 
 
 

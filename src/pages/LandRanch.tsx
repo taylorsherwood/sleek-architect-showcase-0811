@@ -248,50 +248,67 @@ const LandRanch = () => {
 
       {/* ── SECTION 1.5: MORE THAN LAND ──────────────────────── */}
 
-      <section className="py-12 md:py-16">
+      <section className="py-10 md:py-14">
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-12 gap-10 md:gap-16 items-center max-w-6xl mx-auto">
             <div className="md:col-span-5 order-2 md:order-1">
-              <p
-                className="text-gold mb-4"
-                style={{ ...labelStyle, letterSpacing: "0.36em" }}
-              >
-                LAND ADVISORY
-              </p>
-              <h2 className="font-display text-[2.15rem] md:text-[3rem] lg:text-[3.5rem] font-normal text-architectural leading-[1.04] tracking-tight mb-5">
-                More Than Land
-              </h2>
-              <p
-                className="mb-8"
-                style={{
-                  fontFamily: '"Jost", sans-serif',
-                  fontSize: "0.8125rem",
-                  letterSpacing: "0.08em",
-                  color: "#b9a06c",
-                  lineHeight: 1.55,
-                }}
-              >
-                Advising buyers, sellers, investors, and landowners across Austin and the Texas Hill Country.
-              </p>
-              <div className="space-y-5 text-muted-foreground text-[1.075rem] leading-[1.75]">
-                <p>
-                  The most valuable land opportunities are rarely defined by acreage alone. They are defined by what they can become.
+              <div className="max-w-[460px]">
+                <p
+                  className="mb-5"
+                  style={{
+                    ...labelStyle,
+                    color: "#b9a06c",
+                    fontWeight: 500,
+                    letterSpacing: "0.42em",
+                    fontSize: "0.58rem",
+                  }}
+                >
+                  LAND ADVISORY
                 </p>
-                <p>
-                  For some owners, that means a legacy ranch held for generations. For others, a future family compound, strategic development opportunity, or long-term investment positioned along the path of growth.
+                <h2 className="font-display text-[1.85rem] md:text-[2.5rem] lg:text-[2.9rem] font-normal text-architectural leading-[1.08] tracking-tight mb-6">
+                  More Than Land
+                </h2>
+                <p
+                  className="mb-10"
+                  style={{
+                    fontFamily: '"Jost", sans-serif',
+                    fontSize: "0.78rem",
+                    letterSpacing: "0.09em",
+                    color: "rgba(185,160,108,0.85)",
+                    lineHeight: 1.6,
+                  }}
+                >
+                  Advising buyers, sellers, investors, and landowners across Austin and the Texas Hill Country.
                 </p>
-                <p>
+                <div className="space-y-6 text-muted-foreground text-[1.05rem] leading-[1.8]">
+                  <p>
+                    The most valuable land opportunities are rarely defined by acreage alone. They are defined by what they can become.
+                  </p>
+                  <p>
+                    For some owners, that means a legacy ranch held for generations. For others, a future family compound, strategic development opportunity, or long-term investment positioned along the path of growth.
+                  </p>
+                </div>
+                <blockquote
+                  className="mt-10 pl-5 text-architectural"
+                  style={{
+                    borderLeft: "1px solid #b9a06c",
+                    fontFamily: '"Jost", sans-serif',
+                    fontSize: "1.125rem",
+                    lineHeight: 1.65,
+                    fontWeight: 400,
+                  }}
+                >
                   Echelon evaluates land through privacy, access, water, topography, market demand, and highest-and-best-use potential.
-                </p>
+                </blockquote>
               </div>
             </div>
             <div className="md:col-span-7 order-1 md:order-2">
               <div
                 className="group overflow-hidden"
                 style={{
-                  border: "1px solid rgba(12,15,36,0.08)",
+                  border: "1px solid rgba(12,15,36,0.06)",
                   boxShadow:
-                    "0 24px 50px -28px rgba(12,15,36,0.22), 0 8px 20px -12px rgba(12,15,36,0.12)",
+                    "0 18px 38px -24px rgba(12,15,36,0.16), 0 6px 16px -10px rgba(12,15,36,0.09)",
                 }}
               >
                 <img

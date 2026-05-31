@@ -165,7 +165,7 @@ const Hero = () => {
             Austin&apos;s most exceptional real estate
           </h1>
 
-          <p className="max-w-[620px] mb-12 md:mb-13 lg:mb-14 leading-[1.65]" style={{
+          <p className="max-w-[620px] mb-12 md:mb-[52px] lg:mb-14 leading-[1.65]" style={{
             ...anim("0.3s"),
             fontFamily: '"Jost", sans-serif', fontWeight: 400, fontSize: "15.5px",
             letterSpacing: "0.04em", color: "rgba(250,248,244,0.95)",

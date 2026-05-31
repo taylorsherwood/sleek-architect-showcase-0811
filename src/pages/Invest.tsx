@@ -392,8 +392,8 @@ const Invest = () => {
             className="px-5 py-3 bg-[#f5f3ef]"
             style={{ border: "1px solid hsl(var(--gold))" }}
           >
-            <p className="text-[0.65rem] tracking-[0.28em] font-medium text-[#0C0F24] uppercase">
-              Value-Add Opportunity
+            <p className="text-[0.65rem] tracking-[0.28em] font-medium text-[#0C0F24] uppercase whitespace-pre">
+              {"\n"}
             </p>
           </div>
         </div>

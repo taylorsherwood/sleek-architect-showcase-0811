@@ -8,7 +8,7 @@ import SchemaMarkup, {
   realEstateAgentSchema,
 } from "@/components/SchemaMarkup";
 import heroImage from "@/assets/land-ranch-hero.jpg";
-import editorialImage from "@/assets/land-ranch-editorial.jpg";
+import editorialImage from "@/assets/land-ranch-editorial-v2.jpg";
 import catLuxuryRanches from "@/assets/cat-luxury-ranches.jpg";
 import catRecreational from "@/assets/cat-recreational-land.jpg";
 import catInvestment from "@/assets/cat-investment-acreage.jpg";

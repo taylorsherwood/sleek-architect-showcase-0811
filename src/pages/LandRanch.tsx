@@ -181,10 +181,10 @@ const LandRanch = () => {
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(to right, rgba(12,15,36,0.62) 0%, rgba(12,15,36,0.42) 35%, rgba(12,15,36,0.18) 65%, transparent 100%)",
+              "linear-gradient(to right, rgba(12,15,36,0.48) 0%, rgba(12,15,36,0.30) 35%, rgba(12,15,36,0.10) 65%, transparent 100%)",
           }}
         />
-        <div className="absolute inset-0 sm:hidden" style={{ background: "rgba(12,15,36,0.45)" }} />
+        <div className="absolute inset-0 sm:hidden" style={{ background: "rgba(12,15,36,0.38)" }} />
 
         <div className="relative z-10 h-full flex items-center">
           <div className="container mx-auto px-6 md:px-12">
@@ -196,16 +196,17 @@ const LandRanch = () => {
                 className="font-display font-normal text-white leading-[1.05] tracking-tight mb-7"
                 style={{ fontSize: "clamp(2.25rem, 5vw, 4rem)", textShadow: "0 1px 3px rgba(0,0,0,0.35)" }}
               >
-                Austin Land, Ranch & Acreage Opportunities
+                Austin Land & Ranch Opportunities
               </h1>
               <p
-                className="text-white/80 leading-relaxed mb-10 max-w-xl"
-                style={{ fontSize: "clamp(1rem, 1.2vw, 1.125rem)", textShadow: "0 1px 2px rgba(0,0,0,0.3)" }}
+                className="text-white/85 leading-relaxed mb-10 max-w-xl"
+                style={{ fontSize: "clamp(1rem, 1.2vw, 1.125rem)", textShadow: "0 1px 2px rgba(0,0,0,0.35)" }}
               >
-                From recreational ranches and legacy estates to development tracts and investment
-                acreage, Echelon helps buyers and sellers navigate some of Central Texas' most
-                compelling land opportunities.
+                From legacy ranches and recreational retreats to investment acreage and development
+                tracts, Echelon helps buyers, sellers, and investors evaluate Central Texas land
+                through both current value and future potential.
               </p>
+
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
                   href="#categories"

@@ -60,7 +60,7 @@ const categories = [
   },
   {
     title: "Off-Market Opportunities",
-    desc: "Private ranches, acreage estates, development tracts, and investment land shared through industry relationships before reaching the open market.",
+    desc: "Private listings shared through industry relationships before reaching the open market.",
     image: null as string | null,
     isOffMarket: true,
   },

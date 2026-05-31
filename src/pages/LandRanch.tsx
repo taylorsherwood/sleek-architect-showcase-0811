@@ -541,6 +541,15 @@ const LandRanch = () => {
         </div>
       </section>
 
+      {/* ── PARALLAX BREAK ──────────────────────── */}
+      <div
+        className="parallax-break hidden md:block"
+        style={{ backgroundImage: "url('/images/parallax-cattle.webp')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties}
+        aria-hidden="true"
+      />
+
+
+
       {/* ── SECTION 6.9: MEET YOUR ADVISOR ──────────────────────── */}
       <section
         className="relative overflow-hidden"

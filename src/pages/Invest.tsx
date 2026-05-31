@@ -346,19 +346,19 @@ const Invest = () => {
       {/* ──────────────────────── PRIVATE ACCESS HERO ──────────────────────── */}
       {/* ──────────────────────── PRIVATE ACCESS HERO ──────────────────────── */}
       <InvestHeroSection>
-        {/* overlay */}
-        <div className="absolute inset-0 md:hidden" style={{ zIndex: 1, background: 'rgba(12,15,36,0.25)' }} />
-        <div className="absolute inset-0 hidden md:block" style={{ zIndex: 1, background: 'linear-gradient(to right, rgba(12,15,36,0.55) 0%, rgba(12,15,36,0.25) 40%, transparent 65%)' }} />
+        {/* overlay — reduced for image visibility */}
+        <div className="absolute inset-0 md:hidden" style={{ zIndex: 1, background: 'rgba(12,15,36,0.20)' }} />
+        <div className="absolute inset-0 hidden md:block" style={{ zIndex: 1, background: 'linear-gradient(to right, rgba(12,15,36,0.45) 0%, rgba(12,15,36,0.18) 42%, transparent 70%)' }} />
         <div className="relative container mx-auto px-6 pb-[14vh] md:pb-[18vh]" style={{ zIndex: 2 }}>
-          <div className="max-w-xl mb-14">
-            <p className="text-minimal text-gold mb-4 ml-1" style={{ textShadow: "0 0 20px rgba(0,0,0,0.6), 0 1px 4px rgba(0,0,0,0.4)" }}>INVESTOR ACCESS</p>
-            <h1 className="text-3xl sm:text-4xl md:text-6xl font-display font-normal text-primary-foreground leading-[1.1] mb-6" style={{ textShadow: "0 2px 10px rgba(0,0,0,0.5), 0 0 30px rgba(0,0,0,0.3), 0 1px 3px rgba(0,0,0,0.3)" }}>
-              Access Investment &amp;
+          <div className="max-w-2xl mb-14">
+            <p className="text-minimal text-gold mb-5 ml-1 tracking-[0.22em]" style={{ textShadow: "0 0 20px rgba(0,0,0,0.6), 0 1px 4px rgba(0,0,0,0.4)" }}>INVESTMENT ADVISORY</p>
+            <h1 className="text-3xl sm:text-4xl md:text-[3.75rem] font-display font-normal text-primary-foreground leading-[1.05] tracking-[-0.01em] mb-7" style={{ textShadow: "0 2px 10px rgba(0,0,0,0.5), 0 0 30px rgba(0,0,0,0.3), 0 1px 3px rgba(0,0,0,0.3)" }}>
+              Austin Investment, Redevelopment
               <br />
-              Off-Market Opportunities
+              &amp; Off-Market Opportunities
             </h1>
-            <p className="text-primary-foreground text-lg max-w-lg mb-8" style={{ textShadow: "0 1px 8px rgba(0,0,0,0.5), 0 0 20px rgba(0,0,0,0.3)" }}>
-              Select deals, private listings, and value-add opportunities across Austin.
+            <p className="text-primary-foreground/95 text-base md:text-lg leading-relaxed max-w-xl mb-9" style={{ textShadow: "0 1px 8px rgba(0,0,0,0.5), 0 0 20px rgba(0,0,0,0.3)" }}>
+              From redevelopment sites and value-add acquisitions to off-market opportunities and strategic land plays, Echelon helps investors identify where future value is being created.
             </p>
             <Link
               to="#lead-form"
@@ -383,8 +383,20 @@ const Invest = () => {
                 document.getElementById("lead-form")?.scrollIntoView({ behavior: "smooth" });
               }}
             >
-              REQUEST PRIVATE ACCESS
+              DISCUSS YOUR INVESTMENT STRATEGY
             </Link>
+          </div>
+        </div>
+
+        {/* Editorial investment callout — lower right */}
+        <div className="hidden md:block absolute bottom-8 right-8 lg:bottom-10 lg:right-10 z-[3]">
+          <div
+            className="px-5 py-3 bg-[#f5f3ef]"
+            style={{ border: "1px solid hsl(var(--gold))" }}
+          >
+            <p className="text-[0.65rem] tracking-[0.28em] font-medium text-[#0C0F24] uppercase">
+              Value-Add Opportunity
+            </p>
           </div>
         </div>
       </InvestHeroSection>

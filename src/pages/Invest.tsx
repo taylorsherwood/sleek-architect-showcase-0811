@@ -352,7 +352,7 @@ const Invest = () => {
         <div className="relative container mx-auto px-6 pb-[14vh] md:pb-[18vh]" style={{ zIndex: 2 }}>
           <div className="max-w-2xl mb-14">
             <p className="text-minimal text-gold mb-5 ml-1 tracking-[0.22em]" style={{ textShadow: "0 0 20px rgba(0,0,0,0.6), 0 1px 4px rgba(0,0,0,0.4)" }}>INVESTMENT ADVISORY</p>
-            <h1 className="text-3xl sm:text-4xl md:text-[3.75rem] font-display font-normal text-primary-foreground leading-[1.05] tracking-[-0.01em] mb-7" style={{ textShadow: "0 2px 10px rgba(0,0,0,0.5), 0 0 30px rgba(0,0,0,0.3), 0 1px 3px rgba(0,0,0,0.3)" }}>
+            <h1 className="text-3xl sm:text-4xl md:text-[3.75rem] font-display font-normal text-primary-foreground leading-[1.15] tracking-[-0.01em] mb-7" style={{ textShadow: "0 2px 10px rgba(0,0,0,0.5), 0 0 30px rgba(0,0,0,0.3), 0 1px 3px rgba(0,0,0,0.3)" }}>
               Austin Investment,
               <br />
               Redevelopment &amp;

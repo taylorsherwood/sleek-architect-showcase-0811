@@ -14,6 +14,7 @@ import catRecreational from "@/assets/cat-recreational-land.jpg";
 import catInvestment from "@/assets/cat-investment-acreage.jpg";
 import catDevelopment from "@/assets/cat-development-opportunities.jpg";
 import catHomesites from "@/assets/cat-hill-country-homesites.jpg";
+import expLandRanchLogo from "@/assets/exp-land-ranch-logo.png";
 
 import taylorPortrait from "@/assets/taylor-sherwood-land-ranch.jpg";
 
@@ -300,6 +301,13 @@ const LandRanch = () => {
               <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-normal text-architectural leading-[1.1]">
                 Land Requires a Different Level of Expertise
               </h2>
+              <img
+                src={expLandRanchLogo}
+                alt="eXp Realty Land & Ranch"
+                className="mt-8 h-12 md:h-14 w-auto"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <div className="md:col-span-7 space-y-5 text-muted-foreground leading-relaxed text-[1.0625rem]">
               <p>

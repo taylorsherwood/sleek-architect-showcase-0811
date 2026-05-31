@@ -248,42 +248,76 @@ const LandRanch = () => {
 
       {/* ── SECTION 1.5: MORE THAN LAND ──────────────────────── */}
 
-      <section className="py-16 md:py-24">
-        <div className="container mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center max-w-6xl mx-auto">
-            <div className="order-2 md:order-1">
-              <p className="text-gold mb-5" style={labelStyle}>
-                PHILOSOPHY
-              </p>
-              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-normal text-architectural leading-[1.1] mb-8">
-                More Than Land
-              </h2>
-              <div className="space-y-5 text-muted-foreground leading-relaxed text-[1.0625rem]">
-                <p>
-                  The most valuable land opportunities are rarely defined by acreage alone. They are
-                  defined by what they can become.
-                </p>
-                <p>
-                  For some owners, that means a legacy ranch held for generations. For others, a
-                  future family compound, a strategic development opportunity, or a long-term
-                  investment positioned along the path of growth.
-                </p>
-                <p>
-                  Echelon evaluates land through privacy, access, water, topography, utilities,
-                  exemptions, market demand, and highest-and-best-use potential.
-                </p>
-              </div>
-            </div>
-            <div className="order-1 md:order-2">
+      <section className="relative py-14 md:py-20 overflow-hidden">
+        <div className="container mx-auto px-6 relative">
+          <div className="grid md:grid-cols-12 gap-10 md:gap-14 items-center max-w-6xl mx-auto">
+            <div className="md:col-span-5 order-2 md:order-1 relative">
               <img
-                src={editorialImage}
-                alt="Premium Texas Hill Country ranch landscape at golden hour with live oaks and a quiet creek"
-                className="w-full h-[420px] md:h-[560px] object-cover"
-                width={1280}
-                height={1280}
+                src={echelonWatermarkLogo}
+                alt=""
+                aria-hidden="true"
                 loading="lazy"
                 decoding="async"
+                className="absolute pointer-events-none select-none hidden md:block"
+                style={{
+                  top: '50%',
+                  left: '50%',
+                  transform: 'translate(-50%, -50%)',
+                  height: '110%',
+                  width: 'auto',
+                  opacity: 0.04,
+                }}
               />
+              <div className="relative">
+                <p className="text-gold mb-3" style={labelStyle}>
+                  PHILOSOPHY
+                </p>
+                <h2 className="font-display text-[2rem] md:text-[2.75rem] lg:text-[3.25rem] font-normal text-architectural leading-[1.05] tracking-tight mb-3">
+                  More Than Land
+                </h2>
+                <p
+                  className="text-gold mb-6 italic"
+                  style={{
+                    fontFamily: '"Jost", sans-serif',
+                    fontSize: '0.9rem',
+                    letterSpacing: '0.04em',
+                  }}
+                >
+                  Advising buyers, sellers, investors, and landowners across Austin and the Texas Hill Country.
+                </p>
+                <div className="space-y-4 text-muted-foreground leading-relaxed text-[1.0625rem]">
+                  <p>
+                    The most valuable land opportunities are rarely defined by acreage alone. They are defined by what they can become.
+                  </p>
+                  <p>
+                    For some owners, that means a legacy ranch held for generations. For others, a future family compound, strategic development opportunity, or long-term investment positioned along the path of growth.
+                  </p>
+                  <p>
+                    Echelon evaluates land through privacy, access, water, topography, market demand, and highest-and-best-use potential.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="md:col-span-7 order-1 md:order-2">
+              <div
+                className="group overflow-hidden bg-[#F5F3EF] p-2 md:p-3"
+                style={{
+                  boxShadow:
+                    '0 30px 60px -25px rgba(12,15,36,0.25), 0 12px 30px -15px rgba(12,15,36,0.15)',
+                }}
+              >
+                <div className="overflow-hidden">
+                  <img
+                    src={editorialImage}
+                    alt="Premium Texas Hill Country ranch landscape at golden hour with live oaks and a quiet creek"
+                    className="w-full h-[440px] md:h-[600px] lg:h-[640px] object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.025]"
+                    width={1280}
+                    height={1280}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>

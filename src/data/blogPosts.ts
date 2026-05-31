@@ -63,7 +63,200 @@ export const blogPosts: BlogPost[] = [
     image: blogAustinInfillDevelopment,
     heroImage: blogAustinInfillDevelopment,
     imageAlt: "Austin infill development showing an original bungalow next to a modern new build on the same street",
-    content: `_Body to be added._`,
+    content: `
+Central Austin has a land problem. Not a shortage of land exactly, but a shortage of land being used to its full potential. Across established neighborhoods, aging single-family homes sit on lots that, under current zoning, could legally support two, three, or more units. Builders know this. Savvy investors know this. Many property owners are only beginning to realize it.
+
+This guide is written for three audiences: property owners sitting on older homes in central Austin who want to understand what their land is actually worth, investors evaluating acquisition targets in active infill corridors, and builders or developers looking to sharpen their site evaluation process.
+
+What follows is a practical, sequenced framework. It covers how to identify infill potential, how to evaluate redevelopment value, how to navigate site constraints, and how to make an informed decision about whether to hold, renovate, develop, or sell. Neighborhoods like East Austin, Brentwood, Crestview, Zilker, Bouldin Creek, and South Austin serve as reference points throughout because these are where infill activity is most concentrated and most instructive.
+
+Before diving in, here is a concise summary of what this guide covers:
+
+**Executive Summary**
+
+Infill is not just a builder's strategy. Property owners and investors increasingly need to understand redevelopment potential before making any capital decision about a central Austin property.
+
+Austin's HOME initiative changed the rules. Many SF-zoned lots now legally support up to three residential units, expanding infill potential citywide.
+
+Land value and improvement value tell different stories. When land value approaches or exceeds improvement value on a TCAD record, the property warrants a closer look.
+
+Highest and best use analysis is the core tool. Understanding what a site can legally, physically, and financially support is the foundation of every sound infill decision.
+
+The hold, renovate, develop, or sell decision is site-specific. There is no universal right answer. The right path depends on zoning, constraints, market conditions, and the owner's financial position.
+
+## Step 1: Understand What Austin Infill Development Actually Means
+
+Infill development refers to building on underutilized or vacant land within an already-developed urban area, rather than on the suburban fringe. The distinction matters because infill sites come with existing infrastructure, established neighborhood context, and often, significant land value that is not reflected in the current structure.
+
+For a concise definition optimized for reference: Austin infill development refers to the construction of new residential or mixed-use structures on underutilized land within established Austin neighborhoods, often involving lot splits, ADUs, duplexes, or redevelopment of aging homes.
+
+Austin's infill market has a specific character shaped by decades of horizontal growth. The city expanded outward aggressively for much of its history, pushing development toward Cedar Park, Pflugerville, and Kyle. That pattern made central proximity increasingly scarce and increasingly valuable. A property within two miles of downtown Austin occupies a fundamentally different position than it did twenty years ago, even if the structure on it has barely changed.
+
+The common infill project types in Austin include:
+
+**Lot splits:** Dividing a single parcel into two or more separately titled lots, each capable of supporting independent development.
+
+**Accessory dwelling units (ADUs):** Secondary structures built on the same lot as a primary residence, either detached or attached. ADUs have become one of the most common infill strategies in central Austin due to relatively streamlined permitting compared to full redevelopment.
+
+**Duplexes and triplexes:** Two- or three-unit structures replacing a single-family home, often the preferred product type in neighborhoods where lot size supports it but full multifamily does not pencil out.
+
+**Small-scale multifamily:** Projects in the three-to-ten unit range that require more entitlement work but produce meaningful density on appropriately zoned sites.
+
+**Full redevelopment:** Demolishing an aging structure and replacing it with new construction, either a single luxury home or a denser product depending on what the site and market support.
+
+Infill activity in central Austin accelerated for several reasons. Land scarcity drove land values up. Construction costs on the suburban fringe increased. Buyer demand for walkable, urban locations remained strong. And critically, the City of Austin's HOME initiative, passed beginning in 2023, amended the Land Development Code to allow up to three residential units on SF-1, SF-2, and SF-3 zoned lots citywide. That policy change expanded the legal development envelope for a large portion of central Austin's residential land.
+
+Infill is not exclusively a builder's strategy. Property owners, estate holders, and long-term investors are increasingly asking whether the land beneath an aging home is worth more than the structure sitting on it. In many cases in East Austin, Bouldin Creek, and Crestview, the answer is yes. Understanding what drives new construction value in <a href="/luxury-real-estate-austin" class="${LINK}">Austin luxury real estate</a> is essential context before evaluating any infill opportunity.
+
+## Step 2: Identify Whether Your Property Has Infill Potential
+
+Not every central Austin property qualifies as a viable infill site. The first step is a preliminary screening that takes minutes and costs nothing, but saves significant time before you engage architects, engineers, or attorneys.
+
+Start with the Travis Central Appraisal District (TCAD) record for the property. Two numbers matter most: land value and improvement value. When land value approaches or exceeds improvement value, the property is signaling that the market sees more potential in the dirt than in what sits on it. This ratio is not a definitive answer, but it is a meaningful indicator that further analysis is warranted.
+
+From there, evaluate the following screening factors:
+
+**Lot size:** Larger lots in SF zones are the primary candidates for lot splits and multi-unit development. Lots of 7,000 square feet or more in central Austin often warrant closer examination, though smaller lots may still support ADU additions.
+
+**Current zoning designation:** SF-1, SF-2, and SF-3 are the most common residential designations in central Austin. Under the HOME initiative, these designations now allow up to three units in many circumstances. MF and mixed-use zoning opens additional possibilities. Verify the exact designation through Austin's GIS mapping tools or the DSD portal.
+
+**Lot dimensions and shape:** Lot width matters for lot splits. Irregular shapes or narrow frontages can limit what is legally subdivided or physically buildable. A long, deep lot often has more flexibility than a wide, shallow one.
+
+**Street frontage and alley access:** Properties with alley access in the rear have more flexibility for ADU placement and lot configuration. Many central Austin lots in Brentwood, Crestview, and East Austin have alley access, which is an asset for infill planning.
+
+**Proximity to transit and commercial corridors:** Properties near major corridors like South Congress, South Lamar, Burnet Road, or Airport Boulevard often benefit from stronger rental demand and buyer interest for new construction, which affects the financial feasibility of development.
+
+Neighborhoods where infill potential is commonly found include East Austin (78702), where significant new construction has replaced older single-family stock for years; Brentwood and Crestview (78757), where lot sizes often support splits or ADU additions; Bouldin Creek and Zilker (78704), where land value on older homes frequently approaches or exceeds improvement value; and South Austin corridors near South Congress and South Lamar, where walkability drives consistent buyer and renter demand. Reviewing <a href="/invest" class="${LINK}">Austin's top investment neighborhoods</a> provides useful context for understanding where infill activity is most concentrated.
+
+The core analytical lens at this stage is redevelopment value versus current value. Current value is what the property would sell for in its existing condition on the retail market. Redevelopment value is what a builder or developer would pay for the land based on what they can build and sell. The gap between these two numbers is where the real analysis begins.
+
+If your preliminary screening suggests infill potential, the next step is a more rigorous evaluation of highest and best use.
+
+## Step 3: Conduct a Highest and Best Use Analysis
+
+Highest and best use (HBU) is a standard appraisal concept defined by the Appraisal Institute as the reasonably probable use of property that results in the highest value. It is not about what you want to build. It is about what the site can legally support, physically accommodate, financially justify, and maximally produce.
+
+Understanding this gap between current use and highest and best use is where development value is created. A property operating as a 1960s ranch house on a 9,000-square-foot lot in Bouldin Creek may have a highest and best use as a duplex or two separately titled homes. The current use and the optimal use are not the same, and the difference in value can be substantial. A deeper look at <a href="/blog/highest-and-best-use-property-austin" class="${LINK}">highest and best use analysis for Austin properties</a> explains how this framework applies across different site types.
+
+The four-part HBU test applied to Austin infill sites works as follows:
+
+**1. What does current zoning allow?** Start with the legal envelope. What uses are permitted by right under the current zoning designation? Has the HOME initiative expanded what is allowed on this lot? Are there overlay districts, such as a Neighborhood Conservation Combining District (NCCD) or a historic overlay, that restrict what can be built? Zoning defines the ceiling of legal possibility before anything else is evaluated.
+
+**2. What is physically buildable given site conditions?** Lot dimensions, topography, tree canopy, utility access, impervious cover limits, and setback requirements all constrain what can actually be constructed within the legal envelope. A lot that zoning allows to support three units may physically support only two once trees, drainage, and setbacks are accounted for. Physical possibility is the filter applied after legal permissibility.
+
+**3. What does the market support?** This is where the analysis becomes financially grounded. What product types are selling or renting in the target neighborhood, and at what price points? Comparing recent sales of new construction duplexes, ADUs, and small multifamily in East Austin or Zilker provides a market ceiling for the completed product. If the neighborhood's price ceiling does not support the construction cost of a given product type, that use is not financially feasible regardless of what zoning allows.
+
+**4. What use produces the highest net return?** After filtering through the first three tests, the remaining options are ranked by financial outcome. This is where the analysis lands on a recommended path: full redevelopment, lot split, ADU addition, or continued holding.
+
+HBU analysis often reveals that the optimal outcome is not the most complex one. Many sites in Brentwood or Crestview are best served by an ADU addition or a clean lot split rather than full redevelopment, because the constraints or market conditions do not support a more intensive project. The goal is the highest net return, not the most ambitious plan.
+
+Builders and developers run this analysis before making any acquisition offer. Property owners benefit from running the same analysis before deciding whether to sell, develop, or hold. Without it, you are negotiating without knowing what your property is actually worth to the market.
+
+## Step 4: Evaluate the Site Constraints That Determine Feasibility
+
+Site constraints are where infill projects stall. Evaluating them early, before committing capital or engaging a design team, prevents costly surprises and keeps the decision process grounded in what is actually achievable.
+
+The primary constraint categories for Austin infill sites are as follows:
+
+**Zoning and entitlements:** The base zoning designation establishes what is permitted by right. But overlay districts can significantly restrict that baseline. Neighborhood Conservation Combining Districts (NCCDs) exist in several central Austin neighborhoods and may limit building height, setbacks, or unit count beyond what the base zoning would otherwise allow. Historic overlays add another layer. Always verify whether overlays apply before assuming the base zoning tells the full story.
+
+**Protected trees:** Austin's tree ordinance protects heritage trees with a diameter of 19 inches or greater at 4.5 feet above grade. Critical root zone protections limit construction activity within a specified radius of the trunk. Protected trees are a material constraint on infill sites. They can significantly reduce buildable area, require design modifications, and add cost. A certified arborist assessment is essential before finalizing any development plan on a heavily treed lot.
+
+**Topography and drainage:** Sloped lots, common in parts of West Austin and South Austin, add grading and foundation costs that affect project feasibility. Flood zone status must be checked against current FEMA maps. Properties in or adjacent to floodplains face additional restrictions and insurance requirements that affect both construction cost and end value.
+
+**Lot dimensions and subdivision requirements:** Minimum lot width requirements for lot splits vary by zoning designation. Narrow lots may not qualify for subdivision without a variance. Lot depth, shape, and the location of existing structures all affect how a split can be configured. This is a detail that desk research often misses and a site visit clarifies quickly.
+
+**Utility access:** Confirming water, sewer, and electrical capacity is essential. Some inner-city lots, particularly in older sections of East Austin and South Austin, have aging infrastructure that requires upgrades to support additional units. Utility upgrade costs can materially affect the feasibility calculation.
+
+**Alley access:** Rear-accessed lots have more flexibility for ADU placement and lot configuration. Many central Austin properties in Brentwood, Crestview, and East Austin benefit from alley access, which simplifies parking and unit separation in multi-unit scenarios.
+
+**Impervious cover limits:** Austin's Land Development Code establishes impervious cover limits by zoning district. SF zones typically carry limits in the 45-55% range, though specific limits vary by designation and watershed. Impervious cover constrains total structure footprint, driveways, and paving, which directly limits how much can be built on a given lot.
+
+The City of Austin's Development Services Department (DSD) offers pre-application conferences for property owners and developers evaluating projects. These meetings can clarify zoning, tree, and utility questions before a formal application is filed and are worth scheduling early in the process. Understanding how Austin property taxes are assessed on development sites is another constraint factor that affects long-term holding and development decisions.
+
+A site visit with an experienced local builder or civil engineer before committing to a development path will surface constraint issues that desk research consistently misses.
+
+## Step 5: Understand How Builders and Developers Evaluate Acquisition Targets
+
+Builders and developers approach infill acquisitions as a financial model. Understanding their perspective is valuable whether you are a property owner evaluating an unsolicited offer or an investor trying to identify sites before builders do.
+
+The foundation of a builder's analysis is a development pro forma. The logic works backward from the end value of the completed product. If a new construction duplex in Bouldin Creek sells for a given price, a builder calculates what they can pay for the land after accounting for all costs and their required profit margin.
+
+The basic structure of that calculation is: estimated end value of completed product, minus hard construction costs (foundation, framing, mechanical, finishes), minus soft costs (architecture, engineering, permits, financing fees), minus carrying costs during design, permitting, and construction, minus required profit margin, equals the maximum price a builder will pay for the land.
+
+This is why builder offers on infill sites often look lower than property owners expect. The offer is not based on what the property is worth as a residence. It is based on what the land is worth as a development input after all costs and margin are accounted for.
+
+Product type significantly affects land value. A lot that supports a high-end single-family new build may command a different price than one suited for a duplex or small multifamily, depending on the neighborhood's price ceiling and the builder's cost structure. In East Austin, where new construction duplexes and triplexes have been a dominant product type, builders have refined their land models for that specific product. In Zilker or Barton Hills, where luxury single-family commands a higher price ceiling, the land model looks different. Tracking <a href="/blog/austin-luxury-real-estate-market-analysis" class="${LINK}">Austin luxury market trends</a> helps calibrate what price ceilings are realistic by neighborhood and product type.
+
+Experienced infill builders in Austin typically have established relationships with architects, permit expediters, and subcontractors. This gives them a cost and timeline advantage over first-time developers that is difficult to replicate without experience in the local market.
+
+The concept of as-is value versus redevelopment value is where negotiation happens. As-is value is what the property sells for in its current condition on the retail market. Redevelopment value is what a builder calculates they can pay for the land based on their pro forma. The gap between these two numbers varies significantly by location, lot size, and current market conditions.
+
+If a builder approaches you with an unsolicited offer, that offer reflects their land model, not your property's retail value. Knowing the difference, and having your own analysis in hand, is the only way to negotiate from an informed position.
+
+## Step 6: Avoid the Most Common Mistakes Property Owners Make
+
+Understanding where others have gone wrong is one of the most efficient ways to protect your own position. These are the patterns that consistently cost property owners time, capital, or both.
+
+**Underestimating entitlement complexity.** Many owners assume that because their neighbor built a duplex, they can too. Overlay districts, tree protections, lot dimension requirements, and utility constraints vary by parcel. Always verify what is actually permitted and physically feasible on your specific property before assuming anything.
+
+**Using retail comparable sales to estimate land value.** The market for infill development sites operates differently from the retail resale market. A builder evaluating your lot is not comparing it to the three-bedroom home that sold down the street. They are modeling development yield. Using retail comps to anchor your expectations in a builder negotiation puts you at a disadvantage from the start.
+
+**Selling too early without understanding redevelopment potential.** Some owners accept the first builder offer without knowing whether their land value justifies a higher price, or whether a different development path, such as developing themselves or executing a lot split before selling, would produce a better outcome. The first offer is rarely the best offer when you do not know what you have. Reviewing <a href="/blog/austin-redevelopment-opportunities" class="${LINK}">Austin redevelopment opportunities</a> can help owners understand the full range of options before committing to a sale.
+
+**Over-improving before selling.** Spending significant capital on renovations to a property with high land value often produces poor return. If a buyer's primary interest is the lot, they may demolish the structure regardless of its condition. Renovation dollars spent on a teardown candidate rarely come back in the sale price.
+
+**Developing without understanding the market ceiling.** Building a product that exceeds what the neighborhood's price ceiling can support creates absorption risk. A luxury finish level that makes sense in Tarrytown may not produce the same return in a corridor where the market has a lower price ceiling. Knowing what comparable new construction is actually selling for, by product type and location, is essential before committing to a development budget.
+
+**Ignoring carrying costs and timeline.** Infill projects in Austin routinely require 12 to 24 months from acquisition to completion, accounting for design, permitting, and construction. Permitting timelines at DSD have historically been a significant variable. Carrying costs during this period, including financing, taxes, and insurance, materially affect net returns and must be modeled before committing to a development path.
+
+Owners who are uncertain whether to hold, renovate, develop, or sell should request a redevelopment analysis before making any capital commitment. The cost of that analysis is minimal compared to the cost of the wrong decision.
+
+## Step 7: Decide Whether to Hold, Renovate, Develop, or Sell
+
+After completing the prior steps, you have the information needed to make a strategic decision. The four paths forward each have conditions that favor them, and the right answer is almost always site-specific.
+
+**Hold:** Holding is the right choice when the property is generating income, the market is appreciating, and you have no immediate capital need. Central Austin land has historically rewarded patience. If a property is well-located but the timing for development does not work financially or personally, holding while the market continues to mature is a legitimate strategy. Land banking in established neighborhoods like Brentwood or East Austin has produced meaningful appreciation for owners who were not in a rush.
+
+**Renovate:** Renovation makes sense when the structure has genuine value, the lot does not support meaningful densification, and the renovation cost is justified by the end value. The critical test is whether the renovation return justifies the capital outlay given the land value. If land value alone is approaching total property value, renovation dollars are likely better deployed elsewhere. Renovating a teardown candidate is one of the more common and costly mistakes in this market.
+
+**Develop:** Development is the right path when zoning supports densification, site constraints are manageable, you have access to capital and construction expertise, and the market supports the target product type. For owners who want to participate in development upside without managing a project themselves, partnering with an experienced local builder is a viable structure. These arrangements take various forms and can allow an owner to capture a share of the development profit without assuming full project risk.
+
+**Sell as a development site:** Selling to a builder or developer is the right choice when you want liquidity, lack development experience or capital, or when the land value premium makes an outright sale the highest net return after accounting for the time, risk, and capital required to develop. Marketing a property specifically to builders and developers requires a different approach than a standard residential listing. Pricing, presentation, and the buyer pool are all different, and the transaction often benefits from confidentiality rather than broad public exposure. Understanding effective strategies for <a href="/off-market-real-estate-austin" class="${LINK}">selling Austin properties in specialized markets</a> can meaningfully affect the outcome of a development site transaction.
+
+The decision is rarely binary. Selling a portion of the lot via a lot split while retaining the existing home is a common approach in Brentwood, Crestview, and East Austin. It generates liquidity from the land without requiring a full sale or a full development commitment.
+
+The right answer depends on your specific property, your financial position, and current market conditions. A site-specific analysis is the only reliable basis for this decision. General frameworks are useful for orientation, but they do not replace a property-level evaluation.
+
+:::faq
+Q: What is the minimum lot size for an infill project in Austin?
+A: Minimum lot size requirements vary by zoning designation and project type. For lot splits, the resulting parcels must each meet the minimum lot size for the applicable zoning district, which differs between SF-1, SF-2, and SF-3. For ADUs and additional units under the HOME initiative, lot size thresholds are more flexible. The City of Austin's Development Services Department is the authoritative source for current requirements on a specific parcel.
+
+Q: How long does the permitting process take for an ADU or duplex in Austin?
+A: Permitting timelines at Austin's Development Services Department have historically varied and can be a significant factor in project planning. ADU permits have generally moved faster than more complex projects, but timelines depend on project scope, completeness of the application, and DSD workload at the time of submission. Planning for permitting as a variable, not a fixed timeline, is advisable. Most experienced local builders factor DSD timelines into their project schedules from the start.
+
+Q: Does Austin's HOME initiative apply to my property?
+A: Austin's HOME initiative, passed in phases beginning in 2023, amended the Land Development Code to allow up to three residential units on SF-1, SF-2, and SF-3 zoned lots in many circumstances. However, overlay districts, historic designations, and specific site conditions can affect how the initiative applies to a given parcel. Verifying applicability through the DSD portal or a pre-application conference is the most reliable approach. Legal challenges to the initiative have occurred, so confirming current implementation status is important.
+
+Q: What is the difference between a lot split and a subdivision?
+A: A lot split, sometimes called a minor subdivision or lot division, divides a single parcel into two or more separately titled lots without creating a new public street or complex infrastructure. A subdivision, in the traditional sense, involves a more formal platting process and may include the creation of new streets, utilities, and public dedications. Most infill lot splits in central Austin fall into the simpler category, but the applicable process depends on the number of resulting lots and site-specific conditions.
+
+Q: How do I know if my property has development value?
+A: The most accessible starting point is comparing land value to improvement value on the TCAD record. When land value approaches or exceeds improvement value, the property warrants closer evaluation. Lot size, zoning designation, and neighborhood context are additional indicators. A property-specific redevelopment analysis, which evaluates highest and best use against current constraints and market conditions, provides the most reliable answer.
+:::
+
+## A Final Note
+
+Austin infill development is not a simple topic, and the stakes of getting it wrong are significant. Whether you are a property owner evaluating what to do with an aging home, an investor sourcing acquisition targets, or a builder refining your site selection criteria, the quality of your analysis determines the quality of your outcome.
+
+<a href="/about-austin-real-estate-advisory" class="${LINK}">Echelon Property Group</a> works with property owners, investors, and developers to evaluate redevelopment potential and highest and best use across central Austin. If you own a property in an established neighborhood and want to understand what your land is actually worth and what your options are, a strategic consultation is the right starting point.
+
+:::cta
+heading: Understand what your central Austin land is actually worth.
+button: Request a Redevelopment Evaluation
+href: /contact
+:::
+    `,
   },
   {
     id: "austin-ranch-land-for-sale",

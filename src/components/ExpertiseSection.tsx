@@ -19,7 +19,7 @@ const expertiseBlocks = [
     eyebrow: "LAND & ENTITLEMENT",
     title: "Land development",
     description: "Raw acreage, entitled parcels, and development-ready sites across high-growth corridors.",
-    link: "/land-for-sale-austin",
+    link: "/land-ranch",
     linkText: "View land",
     image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1600&q=80",
     alt: "Aerial view of rolling Texas Hill Country acreage",

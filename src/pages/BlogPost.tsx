@@ -71,6 +71,8 @@ const BlogPost = () => {
   const skipBlogPosting = ["sustainable-architecture-future", "minimalism-modern-living", "urban-planning-community-spaces"].includes(post.id);
 
   const schemas: Record<string, unknown>[] = [
+    organizationSchema,
+    taylorSherwoodSchema,
     createArticleSchema(post.title, post.excerpt, post.date, post.author, post.image, postUrl),
     ...(skipBlogPosting ? [] : [createBlogPostingSchema({ title: post.title, description: post.excerpt, datePublished: post.date, author: post.author, image: post.image, url: postUrl })]),
     createBreadcrumbSchema([

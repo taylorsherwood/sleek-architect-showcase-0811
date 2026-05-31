@@ -292,10 +292,10 @@ const Blog = () => {
                             {post.category}
                           </p>
                           <h2
-                            className={`font-display font-normal leading-[1.2] text-architectural mb-3 group-hover:text-foreground/75 transition-colors duration-500 ${
+                            className={`font-display font-normal leading-[1.2] text-architectural mb-3 group-hover:text-foreground/75 transition-colors duration-500 line-clamp-4 ${
                               wide
-                                ? "text-2xl md:text-3xl lg:text-[2rem]"
-                                : "text-xl lg:text-[1.4rem]"
+                                ? "text-2xl md:text-3xl lg:text-[2rem] md:min-h-[9.6rem] lg:min-h-[9.6rem]"
+                                : "text-xl lg:text-[1.4rem] md:min-h-[6.72rem]"
                             }`}
                           >
                             {post.title}

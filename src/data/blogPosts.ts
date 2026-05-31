@@ -50,15 +50,15 @@ const LINK = "text-foreground underline hover:text-muted-foreground";
 export const blogPosts: BlogPost[] = [
   {
     id: "austin-ranch-land-for-sale",
-    title: "Austin Ranch Land for Sale: Complete Guide to Hill Country Ranches and Acreage Properties",
-    metaTitle: "Austin Ranch Land for Sale: Complete Guide to Hill Country Ranches and Acreage Properties",
-    excerpt: "Explore Austin ranch land, Hill Country properties, agricultural exemptions, investment opportunities, and acreage ownership strategies throughout Central Texas.",
+    metaTitle: "Austin Ranch Land for Sale: Hill Country Ranches, Investment Land & Acreage Guide",
+    excerpt: "A complete guide to Austin ranch land, Hill Country properties, investment land, acreage ownership, agricultural and wildlife exemptions, and Austin-area growth corridors shaping long-term value across Central Texas.",
     author: "Taylor Sherwood",
     date: "2026-05-31",
     readTime: "22 min read",
     category: "LAND & RANCH",
     image: blogAustinRanchLand,
     imageAlt: "Horse grazing in a Texas Hill Country bluebonnet field on ranch land near Austin",
+    imageCaption: "Texas Hill Country ranch land near Austin, where recreational, equestrian, investment, and legacy properties continue attracting buyers seeking acreage, privacy, and long-term value.",
     content: `
 Something has shifted in how serious buyers think about land. It is not just lifestyle. It is not just privacy. For a growing number of high-net-worth individuals relocating to or already established in Central Texas, owning a piece of the Texas Hill Country has become a deliberate financial and generational decision — one that often sits alongside a primary residence in <a href="/communities/west-lake-hills" class="${LINK}">West Lake Hills</a>, <a href="/communities/barton-creek" class="${LINK}">Barton Creek</a>, <a href="/communities/spanish-oaks" class="${LINK}">Spanish Oaks</a>, <a href="/communities/lakeway" class="${LINK}">Lakeway</a>, or <a href="/communities/bee-cave" class="${LINK}">Bee Cave</a>.
 

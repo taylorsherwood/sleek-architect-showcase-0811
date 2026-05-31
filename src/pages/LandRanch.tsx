@@ -200,7 +200,7 @@ const LandRanch = () => {
         <div className="absolute inset-0 sm:hidden" style={{ background: "rgba(12,15,36,0.38)" }} />
 
         <div className="relative z-10 h-full flex items-center">
-          <div className="container mx-auto px-6 md:px-12">
+          <div className="container mx-auto px-6 md:px-12 -translate-y-6 md:-translate-y-10">
             <div className="max-w-2xl">
               <p className="text-gold mb-5" style={labelStyle}>
                 LAND & RANCH

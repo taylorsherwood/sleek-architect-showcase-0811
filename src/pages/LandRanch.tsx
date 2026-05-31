@@ -579,7 +579,7 @@ const LandRanch = () => {
         <div className="container mx-auto px-6 relative">
           <div className="grid md:grid-cols-12 gap-10 md:gap-16 lg:gap-20 items-center max-w-[1280px] mx-auto">
             {/* Portrait */}
-            <div className="md:col-span-5 reveal-up">
+            <div className="md:col-span-5">
               <div
                 className="relative overflow-hidden"
                 style={{
@@ -603,7 +603,7 @@ const LandRanch = () => {
             </div>
 
             {/* Content */}
-            <div className="md:col-span-7 reveal-right">
+            <div className="md:col-span-7">
               <p className="text-gold mb-5" style={labelStyle}>
                 MEET YOUR LAND & RANCH ADVISOR
               </p>

@@ -153,27 +153,26 @@ const Hero = () => {
               color: "hsl(38 45% 72%)",
               textShadow: "0 1px 6px rgba(0,0,0,0.7), 0 0 20px rgba(0,0,0,0.5)"
             }}>
-              STRATEGIC AUSTIN REAL ESTATE ADVISORY{"\n\n"}
+              STRATEGIC AUSTIN REAL ESTATE ADVISORY
             </p>
           </div>
 
-          <h1 className="font-display mb-6 md:mb-5 lg:mb-6 text-[29px] md:text-[clamp(34px,4.4vw,58px)] lg:text-[clamp(38px,4.4vw,58px)]" style={{
+          <h1 className="font-display mb-7 md:mb-8 lg:mb-9 text-[29px] md:text-[clamp(34px,4.4vw,58px)] lg:text-[clamp(38px,4.4vw,58px)]" style={{
             ...anim("0.15s"), fontWeight: 400, lineHeight: 1.08, letterSpacing: "0.012em",
             color: "rgba(252,250,246,1)",
-            textShadow: "0 2px 14px rgba(0,0,0,0.55), 0 6px 30px rgba(0,0,0,0.35), 0 0 60px rgba(0,0,0,0.18)",
-            whiteSpace: "pre-wrap"
+            textShadow: "0 2px 14px rgba(0,0,0,0.55), 0 6px 30px rgba(0,0,0,0.35), 0 0 60px rgba(0,0,0,0.18)"
           }}>
-            {"Austin's most exceptional real estate\n\n"}
+            Austin&apos;s most exceptional real estate
           </h1>
 
-          <p className="max-w-[520px] mb-14 md:mb-12 lg:mb-14 leading-[1.7]" style={{
+          <p className="max-w-[620px] mb-12 md:mb-[52px] lg:mb-14 leading-[1.65]" style={{
             ...anim("0.3s"),
             fontFamily: '"Jost", sans-serif', fontWeight: 400, fontSize: "15.5px",
             letterSpacing: "0.04em", color: "rgba(250,248,244,0.95)",
             textShadow: "0 1px 8px rgba(0,0,0,0.6), 0 0 20px rgba(0,0,0,0.4)",
             whiteSpace: "pre-wrap"
           }}>
-            {"Luxury homes, ranch land, redevelopment opportunities,\nand private market access."}
+            {"Luxury homes, ranch land, redevelopment opportunities, and\nprivate market access."}
           </p>
 
           {/* CTA Buttons */}
@@ -220,9 +219,6 @@ const Hero = () => {
                 CONNECT ME WITH PRIVATE OPPORTUNITIES →
               </Link>
             </div>
-            <p style={{ ...anim("0.5s"), fontFamily: '"Jost", sans-serif', fontSize: "10px", letterSpacing: "0.12em", color: "rgba(255,255,255,0.55)", marginTop: "6px", textTransform: "uppercase", textShadow: "0 0 12px rgba(255,255,255,0.35), 0 0 24px rgba(255,255,255,0.15)", whiteSpace: "pre-wrap" }}>
-              {"\n\n\n\n"}
-            </p>
           </div>
 
         </div>

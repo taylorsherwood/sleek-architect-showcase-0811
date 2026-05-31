@@ -228,7 +228,7 @@ const LandRanch = () => {
                 </a>
                 <Link
                   to="/contact"
-                  className="inline-flex items-center justify-center border border-white/60 hover:border-gold hover:text-gold text-white px-8 py-4 transition-colors duration-300 backdrop-blur-sm"
+                  className="inline-flex items-center justify-center border border-gold text-white hover:bg-architectural hover:border-architectural px-8 py-4 transition-colors duration-300 backdrop-blur-sm"
                   style={labelStyle}
                 >
                   Request a Property Evaluation

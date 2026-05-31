@@ -177,7 +177,7 @@ const LandRanch = () => {
       <div className="h-12 md:h-20" aria-hidden="true" />
 
       {/* ── HERO ─────────────────────────────────── */}
-      <section className="relative w-full overflow-hidden" style={{ height: "clamp(560px, 88vh, 880px)" }}>
+      <section className="relative w-full min-h-[640px] md:min-h-[720px] lg:h-[820px] xl:h-[860px] 2xl:h-[880px] overflow-hidden bg-primary">
         <img
           src={heroImage}
           alt="Texas Hill Country ranch land with rolling terrain, live oaks, a creek, and a private drive leading to a modern ranch home"

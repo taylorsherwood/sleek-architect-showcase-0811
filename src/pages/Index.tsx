@@ -173,7 +173,7 @@ const Hero = () => {
             textShadow: "0 1px 8px rgba(0,0,0,0.6), 0 0 20px rgba(0,0,0,0.4)",
             whiteSpace: "pre-wrap"
           }}>
-            {"Luxury homes, ranch land, redevelopment opportunities, \n\nand private market access.\n\n\n"}
+            {"Luxury homes, ranch land, redevelopment opportunities, \nand private market access.\n\n\n"}
           </p>
 
           {/* CTA Buttons */}

@@ -542,7 +542,7 @@ const LandRanch = () => {
               LAND OWNERS
             </p>
             <h2 className="font-display text-3xl md:text-5xl font-normal text-white leading-[1.1] mb-8">
-              Curious What Your Land Is Really Worth?
+              What Could Your Land Be Worth Under Its Highest & Best Use?
             </h2>
             <p className="text-white/65 leading-relaxed mb-12 text-lg max-w-2xl mx-auto">
               Many owners evaluate their property based on current use. The market often values land

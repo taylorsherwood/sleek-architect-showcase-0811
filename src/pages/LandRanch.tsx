@@ -58,7 +58,14 @@ const categories = [
     desc: "Scenic parcels suited for custom residential construction.",
     image: catHomesites,
   },
+  {
+    title: "Off-Market Opportunities",
+    desc: "Private ranches, acreage estates, development tracts, and investment land shared through industry relationships before reaching the open market.",
+    image: null as string | null,
+    isOffMarket: true,
+  },
 ];
+
 
 const marketSnapshot = [
   { label: "Average Price Per Acre", value: "$48,200", note: "Central Texas, trailing 12 months" },

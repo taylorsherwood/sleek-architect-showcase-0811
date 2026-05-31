@@ -225,6 +225,19 @@ const LandRanch = () => {
                   Request a Property Evaluation
                 </Link>
               </div>
+
+              <div className="mt-12 md:mt-14">
+                <img
+                  src={expLandRanchLogo}
+                  alt="eXp Realty Land & Ranch"
+                  className="h-24 md:h-32 lg:h-36 w-auto object-contain"
+                  width={750}
+                  height={154}
+                  loading="eager"
+                  decoding="async"
+                  style={{ filter: "brightness(0) invert(1)" }}
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -232,29 +245,7 @@ const LandRanch = () => {
 
       <div className="h-12 md:h-20" aria-hidden="true" />
 
-      {/* ── AFFILIATION MARK ──────────────────────── */}
-      <section className="pt-4 pb-2">
-        <div className="container mx-auto px-6">
-          <div className="flex flex-col items-center text-center">
-            <p className="text-muted-foreground/70 mb-5" style={labelStyle}>
-              Specialized Division
-            </p>
-            <img
-              src={expLandRanchLogo}
-              alt="eXp Realty Land & Ranch — Echelon Property Group's land and ranch division"
-              className="h-16 md:h-20 w-auto object-contain"
-              width={1080}
-              height={1080}
-              loading="lazy"
-              decoding="async"
-            />
-            <p className="text-muted-foreground text-sm mt-5 max-w-xl leading-relaxed">
-              Echelon Property Group is part of the eXp Realty Land & Ranch network, providing
-              access to land and acreage expertise across Texas and beyond.
-            </p>
-          </div>
-        </div>
-      </section>
+
 
       {/* ── SECTION 1.5: MORE THAN LAND ──────────────────────── */}
 

@@ -13,7 +13,8 @@ const InvestHeroSection = ({ children }: Props) => {
   const [videoReady, setVideoReady] = useState(false);
 
   useEffect(() => {
-    if (window.innerWidth >= 1024) setUseVideo(true);
+    // Photo-led hero — image showcases redevelopment opportunity
+    setUseVideo(false);
   }, []);
 
   // Play video as soon as it's ready

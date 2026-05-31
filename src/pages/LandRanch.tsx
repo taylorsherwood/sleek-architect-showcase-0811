@@ -302,13 +302,21 @@ const LandRanch = () => {
               <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-normal text-architectural leading-[1.1]">
                 Land Requires a Different Level of Expertise
               </h2>
-              <img
-                src={expLandRanchLogo}
-                alt="eXp Realty Land & Ranch"
-                className="mt-8 h-12 md:h-14 w-auto"
-                loading="lazy"
-                decoding="async"
-              />
+              <a
+                href="https://landandranch.exprealty.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit eXp Realty Land & Ranch"
+                className="inline-block mt-8 transition-opacity duration-300 hover:opacity-80"
+              >
+                <img
+                  src={expLandRanchLogo}
+                  alt="eXp Realty Land & Ranch"
+                  className="h-12 md:h-14 w-auto"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
             </div>
             <div className="md:col-span-7 space-y-5 text-muted-foreground leading-relaxed text-[1.0625rem]">
               <p>

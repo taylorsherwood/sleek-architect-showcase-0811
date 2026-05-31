@@ -15,6 +15,8 @@ import catInvestment from "@/assets/cat-investment-acreage.jpg";
 import catDevelopment from "@/assets/cat-development-opportunities.jpg";
 import catHomesites from "@/assets/cat-hill-country-homesites.jpg";
 import expLandRanchLogo from "@/assets/exp-land-ranch-logo.png";
+import taylorPortrait from "@/assets/taylor-sherwood-land-ranch.jpg";
+
 
 
 const Footer = lazy(() => import("@/components/Footer"));
@@ -551,7 +553,164 @@ const LandRanch = () => {
         </div>
       </section>
 
+      {/* ── SECTION 6.9: MEET YOUR ADVISOR ──────────────────────── */}
+      <section
+        className="relative overflow-hidden"
+        style={{
+          background: "#F5F3EF",
+          paddingTop: "clamp(80px, 10vw, 120px)",
+          paddingBottom: "clamp(80px, 10vw, 120px)",
+        }}
+      >
+        {/* Topographic contour pattern */}
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            opacity: 0.04,
+            backgroundImage:
+              "radial-gradient(ellipse 80% 50% at 50% 50%, transparent 38%, #0C0F24 38.5%, transparent 39%), radial-gradient(ellipse 65% 40% at 50% 50%, transparent 48%, #0C0F24 48.5%, transparent 49%), radial-gradient(ellipse 50% 32% at 50% 50%, transparent 58%, #0C0F24 58.5%, transparent 59%), radial-gradient(ellipse 38% 24% at 50% 50%, transparent 68%, #0C0F24 68.5%, transparent 69%), radial-gradient(ellipse 26% 16% at 50% 50%, transparent 78%, #0C0F24 78.5%, transparent 79%)",
+            backgroundSize: "520px 380px, 520px 380px, 520px 380px, 520px 380px, 520px 380px",
+            backgroundPosition: "0 0, 260px 190px, 0 380px, 260px 570px, 0 760px",
+            backgroundRepeat: "repeat",
+          }}
+        />
+
+        <div className="container mx-auto px-6 relative">
+          <div className="grid md:grid-cols-12 gap-10 md:gap-16 lg:gap-20 items-center max-w-[1280px] mx-auto">
+            {/* Portrait */}
+            <div className="md:col-span-5">
+              <div
+                className="relative overflow-hidden"
+                style={{
+                  borderRadius: "24px",
+                  boxShadow:
+                    "0 30px 60px -25px rgba(12,15,36,0.28), 0 12px 30px -15px rgba(12,15,36,0.18)",
+                  transform: "translateY(-1.5rem)",
+                }}
+              >
+                <img
+                  src={taylorPortrait}
+                  alt="Taylor Sherwood, Land & Ranch Advisor at Echelon Property Group"
+                  className="w-full h-auto object-cover"
+                  style={{ aspectRatio: "4 / 5" }}
+                  width={1080}
+                  height={1350}
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </div>
+
+            {/* Content */}
+            <div className="md:col-span-7">
+              <p className="text-gold mb-5" style={labelStyle}>
+                MEET YOUR LAND & RANCH ADVISOR
+              </p>
+              <h2 className="font-display text-3xl md:text-4xl lg:text-[2.75rem] font-normal text-architectural leading-[1.15] mb-5">
+                Taylor Sherwood
+              </h2>
+              <p
+                className="text-architectural/75 mb-8 leading-relaxed"
+                style={{ fontFamily: '"Jost", sans-serif', fontSize: "1.05rem" }}
+              >
+                Land, Ranch, Development &amp; Investment Property Across Austin and the Texas Hill
+                Country
+              </p>
+
+              <div
+                className="space-y-5 text-muted-foreground leading-relaxed"
+                style={{ fontFamily: '"Jost", sans-serif', fontSize: "1.0125rem" }}
+              >
+                <p>
+                  Taylor Sherwood advises clients on land, ranch, redevelopment, and investment
+                  opportunities throughout Austin and the Texas Hill Country. His background spans
+                  luxury residential sales, off-market acquisitions, redevelopment opportunities,
+                  and land transactions where understanding future potential is just as important
+                  as understanding current value.
+                </p>
+                <p>
+                  Rather than focusing solely on acreage or improvements, Taylor helps clients
+                  evaluate the bigger picture: location, access, water, topography, development
+                  potential, long-term appreciation, and how a property fits within their broader
+                  goals. Whether identifying a recreational ranch, assembling land for future
+                  development, or helping a family acquire their first Hill Country retreat, his
+                  approach is rooted in research, strategy, and local market knowledge.
+                </p>
+                <p>
+                  As the founder of Echelon Property Group, Taylor works with buyers, sellers,
+                  investors, and landowners seeking discreet representation, data-driven guidance,
+                  and access to opportunities both on and off the market.
+                </p>
+                <p>
+                  For clients considering a purchase, sale, investment, or redevelopment
+                  opportunity, the objective remains the same: helping them make informed
+                  decisions and maximize long-term value.
+                </p>
+              </div>
+
+              {/* Credentials */}
+              <div className="mt-10 flex flex-wrap items-center gap-x-5 gap-y-3">
+                {[
+                  "Austin & Hill Country Land",
+                  "Off-Market Opportunities",
+                  "Development & Redevelopment Analysis",
+                  "Luxury Ranch Representation",
+                ].map((item, idx, arr) => (
+                  <div key={item} className="flex items-center gap-x-5">
+                    <span
+                      className="text-architectural"
+                      style={{
+                        ...labelStyle,
+                        fontSize: "0.6rem",
+                      }}
+                    >
+                      {item}
+                    </span>
+                    {idx < arr.length - 1 && (
+                      <span
+                        aria-hidden="true"
+                        className="hidden sm:inline-block"
+                        style={{ width: "20px", height: "1px", background: "#b9a06c" }}
+                      />
+                    )}
+                  </div>
+                ))}
+              </div>
+
+              {/* Editorial callout */}
+              <div
+                className="mt-12 pt-10"
+                style={{ borderTop: "1px solid rgba(12,15,36,0.12)" }}
+              >
+                <p className="text-gold mb-4" style={{ ...labelStyle, fontSize: "0.55rem" }}>
+                  LAND OWNERS
+                </p>
+                <h3 className="font-display text-2xl md:text-[1.75rem] font-normal text-architectural leading-tight mb-4">
+                  Considering Selling Land or a Ranch?
+                </h3>
+                <p
+                  className="text-muted-foreground leading-relaxed mb-7 max-w-2xl"
+                  style={{ fontFamily: '"Jost", sans-serif', fontSize: "1rem" }}
+                >
+                  Get a confidential property evaluation and market analysis tailored to your
+                  property's location, acreage, improvements, and future potential.
+                </p>
+                <Link
+                  to="/sell"
+                  className="inline-flex items-center justify-center bg-architectural hover:bg-[hsl(var(--gold-deep))] text-white px-8 py-4 transition-colors duration-300"
+                  style={labelStyle}
+                >
+                  Request a Land Evaluation →
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── SECTION 7: SELLER CTA ──────────────────────── */}
+
 
       <section className="py-20 md:py-32" style={{ background: "#0C0F24" }}>
         <div className="container mx-auto px-6">

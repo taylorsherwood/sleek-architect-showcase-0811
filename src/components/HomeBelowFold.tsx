@@ -36,7 +36,7 @@ import PrivateDistributionStrip from "@/components/private-distribution/PrivateD
    ───────────────────────────────────────────── */
 
 const TrustStrip = () => {
-  const items = ["LUXURY REPRESENTATION", "STRATEGIC INVESTMENT ADVISORY", "$125M+ CAREER SALES VOLUME"];
+  const items = ["RESIDENTIAL · RANCH · LAND", "ACQUISITION & DISPOSITION ADVISORY", "$125M+ CAREER SALES VOLUME"];
   return (
     <section className="hidden lg:block bg-background">
       <div className="container mx-auto px-6">

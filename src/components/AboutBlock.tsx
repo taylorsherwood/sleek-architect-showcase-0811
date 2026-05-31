@@ -10,21 +10,22 @@ const AboutBlock = () => {
           </h2>
           <div className="space-y-4">
             <p className="text-muted-foreground leading-relaxed text-sm">
-              <Link to="/" className="text-foreground hover:text-muted-foreground transition-colors duration-300">Echelon Property Group</Link> is an Austin Texas real estate team specializing in luxury homes, land development opportunities, and residential real estate throughout Austin's most desirable neighborhoods.
+              <Link to="/" className="text-foreground hover:text-muted-foreground transition-colors duration-300">Echelon Property Group</Link> is a private Austin real estate advisory firm representing buyers, sellers, and investors across residential, ranch, land, redevelopment, and investment property.
             </p>
             <p className="text-muted-foreground leading-relaxed text-sm">
-              The team is led by Taylor Sherwood, a real estate professional focused on helping buyers, sellers, and investors navigate Austin's competitive housing market.
+              The team is led by Taylor Sherwood, an advisor focused on strategy, valuation, and discreet execution across Austin's most consequential real estate assets.
             </p>
             <p className="text-muted-foreground leading-relaxed text-sm">
-              Echelon Property Group is proudly brokered by eXp Realty, one of the world's fastest-growing real estate brokerages. eXp's global network, advanced technology platform, and nationwide agent collaboration provide clients with access to broader market intelligence, stronger marketing exposure, and a wider pool of qualified buyers.
+              Echelon is brokered by eXp Realty, providing global agent reach, advanced technology, and a national distribution network that extends well beyond the local MLS, an advantage on both the acquisition and disposition side of any high-value transaction.
             </p>
             <p className="text-muted-foreground leading-relaxed text-sm">
-              For sellers, this means expanded visibility and reach across a powerful national agent network. For buyers and investors, it provides deeper market insights and access to opportunities that may not yet be widely available.
+              For sellers, this means broader exposure and stronger qualified-buyer reach. For buyers and investors, it means earlier visibility into private opportunities, ranch and land inventory, and redevelopment sites that rarely surface publicly.
             </p>
             <p className="text-muted-foreground leading-relaxed text-sm">
-              Service areas include West lake Hills, Tarrytown, Spanish Oaks, Northwest Hills, Barton Creek, and surrounding Austin communities.
+              Coverage includes Westlake Hills, Tarrytown, Spanish Oaks, Northwest Hills, Barton Creek, Lake Austin, and surrounding Hill Country ranch and land markets.
             </p>
           </div>
+
         </div>
       </div>
     </section>

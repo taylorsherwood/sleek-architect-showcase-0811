@@ -620,7 +620,7 @@ const LandRanch = () => {
                   borderRadius: "24px",
                   boxShadow:
                     "0 30px 60px -25px rgba(12,15,36,0.28), 0 12px 30px -15px rgba(12,15,36,0.18)",
-                  transform: "translateY(-1.5rem)",
+                  transform: "translateY(-3.5rem)",
                 }}
               >
                 <img

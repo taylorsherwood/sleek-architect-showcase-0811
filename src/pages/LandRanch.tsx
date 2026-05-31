@@ -559,19 +559,11 @@ const LandRanch = () => {
           paddingBottom: "clamp(80px, 10vw, 120px)",
         }}
       >
-        {/* Topographic contour pattern */}
-        <div
-          aria-hidden="true"
-          className="absolute inset-0 pointer-events-none"
-          style={{
-            opacity: 0.04,
-            backgroundImage:
-              "radial-gradient(ellipse 80% 50% at 50% 50%, transparent 38%, #0C0F24 38.5%, transparent 39%), radial-gradient(ellipse 65% 40% at 50% 50%, transparent 48%, #0C0F24 48.5%, transparent 49%), radial-gradient(ellipse 50% 32% at 50% 50%, transparent 58%, #0C0F24 58.5%, transparent 59%), radial-gradient(ellipse 38% 24% at 50% 50%, transparent 68%, #0C0F24 68.5%, transparent 69%), radial-gradient(ellipse 26% 16% at 50% 50%, transparent 78%, #0C0F24 78.5%, transparent 79%)",
-            backgroundSize: "520px 380px, 520px 380px, 520px 380px, 520px 380px, 520px 380px",
-            backgroundPosition: "0 0, 260px 190px, 0 380px, 260px 570px, 0 760px",
-            backgroundRepeat: "repeat",
-          }}
-        />
+        {/* Subtle top & bottom dividers */}
+        <div aria-hidden="true" className="absolute top-0 inset-x-0 h-px" style={{ background: "rgba(12,15,36,0.08)" }} />
+        <div aria-hidden="true" className="absolute bottom-0 inset-x-0 h-px" style={{ background: "rgba(12,15,36,0.08)" }} />
+
+
 
         <div className="container mx-auto px-6 relative">
           <div className="grid md:grid-cols-12 gap-10 md:gap-16 lg:gap-20 items-center max-w-[1280px] mx-auto">

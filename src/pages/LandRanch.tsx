@@ -762,6 +762,7 @@ const LandRanch = () => {
                   Request a Land Evaluation →
                 </Link>
               </div>
+              </div>
             </div>
           </div>
         </div>

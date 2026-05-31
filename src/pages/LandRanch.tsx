@@ -477,7 +477,7 @@ const LandRanch = () => {
               >
                 <img
                   src={exoticWildlifeImage}
-                  alt="Free-ranging scimitar-horned oryx grazing across a Texas Hill Country ranch pasture"
+                  alt="Blackbuck antelope at golden hour on a Texas Hill Country ranch"
                   className="block w-full h-[440px] md:h-[600px] lg:h-[660px] object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.025]"
                   width={1800}
                   height={1200}

@@ -14,6 +14,8 @@ import catRecreational from "@/assets/cat-recreational-land.jpg";
 import catInvestment from "@/assets/cat-investment-acreage.jpg";
 import catDevelopment from "@/assets/cat-development-opportunities.jpg";
 import catHomesites from "@/assets/cat-hill-country-homesites.jpg";
+import expLandRanchLogo from "@/assets/exp-land-ranch-logo.jpg";
+
 
 const Footer = lazy(() => import("@/components/Footer"));
 const LandRanchMap = lazy(() => import("@/components/LandRanchMap"));
@@ -230,7 +232,32 @@ const LandRanch = () => {
 
       <div className="h-12 md:h-20" aria-hidden="true" />
 
+      {/* ── AFFILIATION MARK ──────────────────────── */}
+      <section className="pt-4 pb-2">
+        <div className="container mx-auto px-6">
+          <div className="flex flex-col items-center text-center">
+            <p className="text-muted-foreground/70 mb-5" style={labelStyle}>
+              Specialized Division
+            </p>
+            <img
+              src={expLandRanchLogo}
+              alt="eXp Realty Land & Ranch — Echelon Property Group's land and ranch division"
+              className="h-16 md:h-20 w-auto object-contain"
+              width={1080}
+              height={1080}
+              loading="lazy"
+              decoding="async"
+            />
+            <p className="text-muted-foreground text-sm mt-5 max-w-xl leading-relaxed">
+              Echelon Property Group is part of the eXp Realty Land & Ranch network, providing
+              access to land and acreage expertise across Texas and beyond.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* ── SECTION 1.5: MORE THAN LAND ──────────────────────── */}
+
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center max-w-6xl mx-auto">

@@ -184,7 +184,7 @@ const LandDevelopment = () => {
               <p
                 className="text-white/85 leading-relaxed max-w-2xl mb-7 md:mb-10"
                 style={{
-                  fontFamily: "'Jost', sans-serif',",
+                  fontFamily: "'Jost', sans-serif",
                   fontSize: "clamp(0.98rem, 1.15vw, 1.12rem)",
                   textShadow: "0 1px 2px rgba(0,0,0,0.4)",
                 }}

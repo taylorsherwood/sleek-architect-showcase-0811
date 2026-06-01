@@ -1,4 +1,4 @@
-import { Fragment, lazy, Suspense } from "react";
+import { Fragment, lazy, Suspense, useRef } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";
@@ -19,7 +19,9 @@ import industrialImg from "@/assets/land-development-industrial.jpg";
 import landBankingImg from "@/assets/land-banking.webp.asset.json";
 import mixedUseImg from "@/assets/mixed-use.png.asset.json";
 import dataCenterImg from "@/assets/data-center-site.jpg.asset.json";
+import buildToRentImg from "@/assets/build-to-rent.jpg.asset.json";
 import corridorImg from "@/assets/land-development-corridor.jpg";
+
 
 const Footer = lazy(() => import("@/components/Footer"));
 

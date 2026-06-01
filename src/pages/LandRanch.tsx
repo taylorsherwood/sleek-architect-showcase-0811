@@ -1326,39 +1326,6 @@ const LandRanch = () => {
       </section>
       <div className="h-10 md:h-16" aria-hidden="true" />
 
-      {/* ── NEW: LAND & RANCH PROPERTY TYPES ───────────────────────────── */}
-      <section className="py-14 md:py-20">
-        <div className="container mx-auto px-6">
-          <div className="max-w-3xl mb-14">
-            <p className="text-gold mb-5" style={labelStyle}>PROPERTY TYPES</p>
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-normal text-architectural leading-[1.1]">
-              Land & Ranch Property Types
-            </h2>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[rgba(12,15,36,0.08)] border border-[rgba(12,15,36,0.08)]">
-            {[
-              { t: "Legacy Ranches", d: "Multi-generational holdings with established improvements, water, and a long history of stewardship." },
-              { t: "Recreational Land", d: "Hunting, fishing, and retreat properties prized for habitat, privacy, and access." },
-              { t: "Hunting Properties", d: "Native and exotic game ranches with managed habitat and infrastructure for sporting use." },
-              { t: "Development Tracts", d: "Acreage positioned for subdivision, master-planned, or commercial development." },
-              { t: "Luxury Estates on Acreage", d: "Custom residences set on meaningful land, blending refined architecture with private setting." },
-              { t: "Farm & Agricultural Land", d: "Productive working land supporting cattle, hay, row crops, and qualifying ag valuations." },
-            ].map((c) => (
-              <div
-                key={c.t}
-                className="group bg-background p-8 md:p-10 transition-colors duration-500 hover:bg-[rgba(185,160,108,0.04)]"
-              >
-                <p className="font-display text-architectural text-xl md:text-2xl leading-snug mb-4 transition-colors duration-500 group-hover:text-gold">
-                  {c.t}
-                </p>
-                <p className="text-muted-foreground text-[0.95rem] leading-relaxed">{c.d}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <div className="h-10 md:h-16" aria-hidden="true" />
 
       {/* ── PARALLAX BREAK ──────────────────────── */}
       <div

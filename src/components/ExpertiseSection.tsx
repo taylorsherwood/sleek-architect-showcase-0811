@@ -224,7 +224,8 @@ const ExpertiseSection = () => {
                   </div>
                 </Link>
               </ScrollReveal>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>

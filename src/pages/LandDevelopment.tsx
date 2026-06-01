@@ -1,4 +1,4 @@
-import { Fragment, lazy, Suspense, useRef } from "react";
+import { Fragment, lazy, Suspense, useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";
@@ -240,6 +240,26 @@ const timeline = [
 
 const LandDevelopment = () => {
   const themesScrollerRef = useRef<HTMLDivElement | null>(null);
+  const relationshipRef = useRef<HTMLDivElement | null>(null);
+  const [relationshipInView, setRelationshipInView] = useState(false);
+
+  useEffect(() => {
+    const el = relationshipRef.current;
+    if (!el || relationshipInView) return;
+    const obs = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setRelationshipInView(true);
+            obs.disconnect();
+          }
+        });
+      },
+      { threshold: 0.35 }
+    );
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, [relationshipInView]);
 
   const scrollThemes = (direction: "prev" | "next") => {
     const el = themesScrollerRef.current;
@@ -1090,13 +1110,13 @@ const LandDevelopment = () => {
       {/* ── SECTION 6: PRIVATE OPPORTUNITIES ───────────────────── */}
       <section className="bg-background">
         <div className="container mx-auto px-6 md:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-10 xl:gap-12 items-center">
             <div className="lg:col-span-6">
               <p className="mb-6" style={{ ...labelStyle, color: GOLD }}>
                 Private Opportunities
               </p>
               <h2
-                className="text-foreground font-normal leading-[1.08] mb-8"
+                className="text-foreground font-normal leading-[1.08] mb-5"
                 style={{
                   fontFamily: "'Cinzel', serif",
                   fontSize: "clamp(1.7rem, 3.4vw, 2.7rem)",
@@ -1104,6 +1124,17 @@ const LandDevelopment = () => {
               >
                 Not Every Opportunity<br />Is Publicly Marketed
               </h2>
+              <p
+                className="mb-8"
+                style={{
+                  ...labelStyle,
+                  color: GOLD,
+                  fontSize: "0.72rem",
+                  letterSpacing: "0.18em",
+                }}
+              >
+                Where landowners, capital, and opportunity converge.
+              </p>
               <span
                 aria-hidden="true"
                 className="block h-px w-12 mb-8"
@@ -1118,21 +1149,24 @@ const LandDevelopment = () => {
               >
                 <p>
                   Many development sites change hands through direct landowner
-                  conversations, broker networks, family offices, and strategic
-                  introductions rather than public listing platforms.
+                  conversations, broker networks, and family office introductions
+                  rather than public platforms.
                 </p>
                 <p>
-                  Sourcing at this level is less a search problem than a
-                  relationship problem. The most consequential transactions are
-                  routed through a small network of advisors who hold the trust
-                  of both landowners and capital.
+                  At this level, sourcing is a relationship problem. The most
+                  consequential transactions move through a small network of
+                  advisors trusted by both landowners and capital.
                 </p>
               </div>
             </div>
 
             {/* Relationship diagram */}
             <div className="lg:col-span-6">
-              <div className="relative w-full" style={{ aspectRatio: "5 / 4" }}>
+              <div
+                ref={relationshipRef}
+                className="relative w-full group"
+                style={{ aspectRatio: "5 / 4" }}
+              >
                 <svg
                   viewBox="0 0 500 400"
                   className="absolute inset-0 w-full h-full"
@@ -1154,24 +1188,107 @@ const LandDevelopment = () => {
                     </marker>
                   </defs>
 
-                  {/* Lines */}
-                  <line x1="80" y1="80" x2="250" y2="200" stroke={GOLD} strokeWidth="1" markerEnd="url(#ld-arrow)" />
-                  <line x1="250" y1="200" x2="420" y2="80" stroke={GOLD} strokeWidth="1" markerEnd="url(#ld-arrow)" />
-                  <line x1="250" y1="200" x2="250" y2="340" stroke={GOLD} strokeWidth="1" markerEnd="url(#ld-arrow)" />
+                  {/* Atmospheric background rings (reduced 20-30%) */}
+                  <circle
+                    cx="250"
+                    cy="200"
+                    r="120"
+                    stroke="rgba(185,160,108,0.13)"
+                    strokeWidth="1"
+                    strokeDasharray="2 4"
+                    style={{
+                      opacity: relationshipInView ? 1 : 0,
+                      transition: "opacity 1.6s ease 0.1s",
+                    }}
+                  />
+                  <circle
+                    cx="250"
+                    cy="200"
+                    r="170"
+                    stroke="rgba(185,160,108,0.07)"
+                    strokeWidth="1"
+                    strokeDasharray="2 6"
+                    style={{
+                      opacity: relationshipInView ? 1 : 0,
+                      transition: "opacity 1.6s ease 0.2s",
+                    }}
+                  />
 
-                  {/* Faint connecting ring */}
-                  <circle cx="250" cy="200" r="120" stroke="rgba(185,160,108,0.18)" strokeWidth="1" strokeDasharray="2 4" />
-                  <circle cx="250" cy="200" r="170" stroke="rgba(185,160,108,0.1)" strokeWidth="1" strokeDasharray="2 6" />
+                  {/* Lines — draw toward advisor, then out to development */}
+                  {(() => {
+                    const lineStyle = (delay: number) => ({
+                      strokeDasharray: 260,
+                      strokeDashoffset: relationshipInView ? 0 : 260,
+                      transition: `stroke-dashoffset 1.2s cubic-bezier(0.4,0,0.2,1) ${delay}s, opacity 0.6s ease ${delay}s`,
+                      opacity: relationshipInView ? 1 : 0,
+                    });
+                    return (
+                      <>
+                        <line
+                          x1="80" y1="80" x2="250" y2="200"
+                          stroke={GOLD} strokeWidth="1.25"
+                          markerEnd="url(#ld-arrow)"
+                          style={lineStyle(0.6)}
+                        />
+                        <line
+                          x1="420" y1="80" x2="250" y2="200"
+                          stroke={GOLD} strokeWidth="1.25"
+                          markerEnd="url(#ld-arrow)"
+                          style={lineStyle(0.9)}
+                        />
+                        <line
+                          x1="250" y1="200" x2="250" y2="340"
+                          stroke={GOLD} strokeWidth="1.25"
+                          markerEnd="url(#ld-arrow)"
+                          style={lineStyle(2.0)}
+                        />
+                      </>
+                    );
+                  })()}
 
                   {/* Nodes */}
-                  <circle cx="80" cy="80" r="5" fill={GOLD} />
-                  <circle cx="420" cy="80" r="5" fill={GOLD} />
-                  <circle cx="250" cy="200" r="7" fill={GOLD} />
-                  <circle cx="250" cy="340" r="5" fill={GOLD} />
+                  <circle
+                    cx="80" cy="80" r="5" fill={GOLD}
+                    style={{
+                      opacity: relationshipInView ? 1 : 0,
+                      transition: "opacity 0.8s ease 0.1s",
+                    }}
+                  />
+                  <circle
+                    cx="420" cy="80" r="5" fill={GOLD}
+                    style={{
+                      opacity: relationshipInView ? 1 : 0,
+                      transition: "opacity 0.8s ease 0.4s",
+                    }}
+                  />
+                  <circle
+                    cx="250" cy="200" r="8" fill={GOLD}
+                    className="transition-all duration-500 group-hover:drop-shadow-[0_0_10px_rgba(185,160,108,0.85)]"
+                    style={{
+                      opacity: relationshipInView ? 1 : 0,
+                      transition: "opacity 0.9s ease 1.7s, filter 0.5s ease",
+                    }}
+                  />
+                  <circle
+                    cx="250" cy="340" r="5" fill={GOLD}
+                    style={{
+                      opacity: relationshipInView ? 1 : 0,
+                      transition: "opacity 0.8s ease 3.0s",
+                    }}
+                  />
                 </svg>
 
                 {/* Labels (absolutely positioned over SVG) */}
-                <div className="absolute" style={{ left: "0%", top: "8%" }}>
+                <div
+                  className="absolute"
+                  style={{
+                    left: "0%",
+                    top: "8%",
+                    opacity: relationshipInView ? 1 : 0,
+                    transform: relationshipInView ? "translateY(0)" : "translateY(6px)",
+                    transition: "opacity 0.9s ease 0.1s, transform 0.9s ease 0.1s",
+                  }}
+                >
                   <p style={{ ...labelStyle, color: GOLD, fontSize: "0.6rem" }} className="mb-1">
                     Source
                   </p>
@@ -1183,7 +1300,16 @@ const LandDevelopment = () => {
                   </p>
                 </div>
 
-                <div className="absolute text-right" style={{ right: "0%", top: "8%" }}>
+                <div
+                  className="absolute text-right"
+                  style={{
+                    right: "0%",
+                    top: "8%",
+                    opacity: relationshipInView ? 1 : 0,
+                    transform: relationshipInView ? "translateY(0)" : "translateY(6px)",
+                    transition: "opacity 0.9s ease 0.4s, transform 0.9s ease 0.4s",
+                  }}
+                >
                   <p style={{ ...labelStyle, color: GOLD, fontSize: "0.6rem" }} className="mb-1">
                     Capital
                   </p>
@@ -1197,14 +1323,27 @@ const LandDevelopment = () => {
 
                 <div
                   className="absolute text-center -translate-x-1/2"
-                  style={{ left: "50%", top: "42%" }}
+                  style={{
+                    left: "50%",
+                    top: "41%",
+                    opacity: relationshipInView ? 1 : 0,
+                    transform: relationshipInView
+                      ? "translate(-50%, 0) scale(1)"
+                      : "translate(-50%, 4px) scale(0.96)",
+                    transition: "opacity 1s ease 1.7s, transform 1s ease 1.7s",
+                  }}
                 >
-                  <p style={{ ...labelStyle, color: GOLD, fontSize: "0.6rem" }} className="mb-1">
+                  <p style={{ ...labelStyle, color: GOLD, fontSize: "0.62rem" }} className="mb-1.5">
                     Echelon Property Group
                   </p>
                   <p
-                    className="text-foreground font-normal"
-                    style={{ fontFamily: "'Cinzel', serif", fontSize: "1.15rem" }}
+                    className="text-foreground"
+                    style={{
+                      fontFamily: "'Cinzel', serif",
+                      fontSize: "1.35rem",
+                      fontWeight: 500,
+                      letterSpacing: "0.01em",
+                    }}
                   >
                     Advisor
                   </p>
@@ -1212,7 +1351,15 @@ const LandDevelopment = () => {
 
                 <div
                   className="absolute text-center -translate-x-1/2"
-                  style={{ left: "50%", bottom: "4%" }}
+                  style={{
+                    left: "50%",
+                    bottom: "4%",
+                    opacity: relationshipInView ? 1 : 0,
+                    transform: relationshipInView
+                      ? "translate(-50%, 0)"
+                      : "translate(-50%, 6px)",
+                    transition: "opacity 0.9s ease 3.0s, transform 0.9s ease 3.0s",
+                  }}
                 >
                   <p style={{ ...labelStyle, color: GOLD, fontSize: "0.6rem" }} className="mb-1">
                     Outcome

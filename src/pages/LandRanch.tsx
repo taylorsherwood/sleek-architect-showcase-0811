@@ -348,7 +348,7 @@ const LandRanch = () => {
         />
         <div className="absolute inset-0 sm:hidden" style={{ background: "linear-gradient(to bottom, rgba(12,15,36,0.68) 0%, rgba(12,15,36,0.52) 46%, rgba(12,15,36,0.24) 100%)" }} />
 
-        <div className="relative z-10 flex h-full items-start px-6 pt-6 md:hidden">
+        <div className="relative z-10 flex h-full items-start px-6 pt-24 md:hidden">
           <div className="w-full max-w-[390px]">
             <p className="text-gold mb-3" style={labelStyle}>
               LAND & RANCH
@@ -586,7 +586,12 @@ const LandRanch = () => {
               The Spectrum of Central Texas Land
             </h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          {/* Mobile swipe hint */}
+          <div className="flex sm:hidden items-center gap-2 mb-4 text-gold animate-fade-in" style={{ ...labelStyle, fontSize: "0.6rem" }}>
+            <span>Swipe to explore</span>
+            <span aria-hidden="true" className="inline-block animate-[slide-in-right_1.4s_ease-in-out_infinite]">→</span>
+          </div>
+          <div className="flex sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 overflow-x-auto sm:overflow-visible snap-x snap-mandatory sm:snap-none -mx-6 px-6 sm:mx-0 sm:px-0 pb-4 sm:pb-0 scroll-pl-6 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
             {categories.map((c, i) => {
               const isOff = (c as { isOffMarket?: boolean }).isOffMarket;
               const CardInner = (
@@ -636,14 +641,14 @@ const LandRanch = () => {
                 <Link
                   key={c.title}
                   to="/off-market-real-estate-austin"
-                  className="group relative overflow-hidden bg-architectural block"
+                  className="group relative overflow-hidden bg-architectural block shrink-0 w-[82%] sm:w-auto snap-start"
                 >
                   {CardInner}
                 </Link>
               ) : (
                 <article
                   key={c.title}
-                  className="group relative overflow-hidden bg-architectural"
+                  className="group relative overflow-hidden bg-architectural shrink-0 w-[82%] sm:w-auto snap-start"
                 >
                   {CardInner}
                 </article>
@@ -657,7 +662,9 @@ const LandRanch = () => {
       <div className="h-10 md:h-16" aria-hidden="true" />
 
       {/* ── CINEMATIC EXOTIC WILDLIFE VIDEO BAND ─────────────────────── */}
-      <ExoticWildlifeVideoBand />
+      <div className="hidden md:block">
+        <ExoticWildlifeVideoBand />
+      </div>
 
       <div className="h-10 md:h-16" aria-hidden="true" />
 

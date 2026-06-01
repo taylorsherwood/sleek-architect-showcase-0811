@@ -60,7 +60,7 @@ export const seoBlogPosts: BlogPost[] = [
     image: blogHowToBuyLuxuryHomeAustin,
     heroImage: blogHowToBuyLuxuryHomeAustin,
     imageAlt: "Aerial view of the Pennybacker Bridge framing the downtown Austin skyline above the Hill Country",
-    content: `Buying an upscale home in Austin is less about browsing listings and more about understanding how the city's $2M+ market actually moves. A meaningful share of the best [Austin luxury homes](/luxury-real-estate-austin) trade through private networks before they ever reach Zillow or Realtor.com — and the buyers who acquire them are typically the ones who learned how Austin works before they started touring. This guide walks through nine Austin-specific strategies, from neighborhood-by-neighborhood pricing logic to Lake Austin waterfront nuance, relocation realities, and the [off-market channels](/off-market-real-estate-austin) where the most desirable properties tend to surface.
+    content: `Buying a luxury home in Austin is less about searching listings and more about understanding how the city's high-end market actually works. A meaningful share of the best [Austin luxury homes](/luxury-real-estate-austin) trade through private networks before they ever reach Zillow or Realtor.com — and the buyers who acquire them are typically the ones who learned how Austin works before they started touring. This guide walks through nine Austin-specific strategies, from neighborhood-by-neighborhood pricing logic to [Lake Austin waterfront](/blog/lake-austin-waterfront-homes-what-drives-value) nuance, relocation realities, and the [off-market channels](/off-market-real-estate-austin) where the most desirable properties tend to surface.
 
 Austin's upper tier of the residential market operates differently than most buyers expect. Properties priced above $2 million move through channels that aren't always visible on public listing platforms, and the buyers who succeed are typically the ones who understand how that market actually works before they start looking.
 
@@ -274,7 +274,7 @@ Our analysis of [new construction in Austin and what wins](/blog/new-constructio
 
 If you are considering a new build that is not yet complete, understand what is locked in versus what can still be changed. Builder contracts can be complex, and the allowances for upgrades are often lower than buyers expect. Having your own advisor review the contract before you sign is worth the time, even if the builder's sales team seems straightforward.
 
-## 8. Understand Austin Before You Buy Austin
+## 8. What Relocating Buyers Need to Know About Austin
 
 ### The Challenge It Solves
 
@@ -287,6 +287,16 @@ Texas has no state income tax, but property taxes are higher than most coastal b
 ### Eanes ISD vs. AISD vs. Lake Travis ISD
 
 School district boundaries drive value in Austin in ways that surprise out-of-state buyers. Eanes ISD (covering Westlake, Rollingwood, and parts of unincorporated west Austin) is the most sought-after public district in the metro and is the primary reason 78746 commands the premium it does. Austin ISD covers central Austin including Tarrytown, Pemberton Heights, and Hyde Park — strong elementary options like Casis, but high school assignments vary significantly by neighborhood. Lake Travis ISD covers Spanish Oaks, Lakeway, and much of the western Hill Country and has its own loyal following. Verify the actual school assignment for the specific address you are considering; assumptions based on neighborhood name alone are frequently wrong.
+
+### Why Neighborhoods Matter More Than Zip Codes
+
+Relocating buyers almost always start their search by zip code. It is the unit of measurement that out-of-state portals, tax tools, and school-rating sites all default to, and it feels like a reasonable shorthand for "where to look." In Austin's luxury market, it consistently produces a distorted picture.
+
+The clearest example is 78746. On paper, it is a single zip code with a single set of summary statistics. In practice, it contains several distinct submarkets that behave nothing alike. [Rollingwood](/communities/rollingwood) is a small, walkable city tucked just west of MoPac with quarter- to half-acre lots, mid-century character, and a strong sense of village. [West Lake Hills](/communities/westlake-hills) sits immediately adjacent but reads completely differently — larger lots, more elevation, more privacy, and a meaningful share of newer custom builds. Rob Roy, further west, is gated and oriented around long Hill Country views and acreage. All three sit inside 78746 and inside Eanes ISD, yet a buyer's experience, daily commute, architectural options, and resale dynamics vary materially across them.
+
+The same pattern holds across other Austin zip codes. 78703 captures [Tarrytown](/communities/tarrytown), [Pemberton Heights](/communities/pemberton-heights), and several smaller pockets that differ on lot size, walkability to downtown, and elementary attendance zones. 78733 spans waterfront pockets along Lake Austin alongside inland hillside neighborhoods that share almost none of the waterfront's value drivers. A zip-code-level analysis flattens all of that into a single price-per-square-foot number that rarely matches what an actual property in any one of those neighborhoods is worth.
+
+For high-end buyers, this matters because the decisions that compound — school zone, commute pattern, lot character, architectural vintage, and long-term appreciation — all operate at the neighborhood level, not the zip-code level. Two homes one mile apart in the same zip code can have different elementary schools, different HOA dynamics, different traffic exposure, and different buyer pools at resale. Filtering and shortlisting at the neighborhood level produces a cleaner picture of what you are actually buying. See our [overview of Austin's luxury submarkets](/blog/best-neighborhoods-for-luxury-homes-austin) for a side-by-side read.
 
 ### MUD Districts and Utility Realities
 
@@ -336,11 +346,7 @@ Chemistry matters, but it is not sufficient. You want an advisor you trust and c
 
 ## Putting It All Together
 
-Many of Austin's most desirable properties never appear on Zillow or Realtor.com. Buyers who understand the city's neighborhoods, pricing dynamics, and private inventory channels are often positioned to act before opportunities become widely known.
-
-Whether you are relocating to Austin, searching for a Lake Austin waterfront property, or evaluating homes in Westlake, Barton Creek, Tarrytown, or Rollingwood, the right guidance can make a meaningful difference in both the properties you see and the outcomes you achieve. Start by getting clear on which neighborhoods align with your priorities, get your financial documentation in order, and connect with an advisor who actually operates in this segment.
-
-Echelon Property Group works with a select group of [buyers in Austin's high-end market](/buy). We offer direct access to off-market inventory, hyper-local insight, and an advisory approach that matters at this price point.
+Many of Austin's most desirable homes never reach public listing platforms. Whether you're evaluating [Lake Austin waterfront](/blog/lake-austin-luxury-real-estate-2026), relocating to [Westlake](/communities/westlake-hills), searching for a private estate in [Barton Creek](/communities/barton-creek), or comparing established neighborhoods like [Tarrytown](/communities/tarrytown) and [Rollingwood](/communities/rollingwood), having access to local market intelligence can dramatically improve both the properties you see and the decisions you make.
 
 :::cta
 heading: Schedule a private buyer consultation to discuss what you're looking for and what's currently available — including properties that are not publicly listed.

@@ -515,7 +515,7 @@ export const landRanchMarkets: LandRanchMarket[] = [
     kind: "theme",
     heroEyebrow: "REGIONAL ADVISORY",
     heroHeadline: "Texas Hill Country Ranches & Legacy Acreage",
-    heroImage: hillCountryHero,
+    heroImage: hillCountryHeroAsset.url,
     positioning:
       "Legacy ranches, live-water tracts, recreational acreage, and private retreats across the heart of Central Texas.",
     metaTitle: "Texas Hill Country Ranches for Sale | Echelon Property Group",

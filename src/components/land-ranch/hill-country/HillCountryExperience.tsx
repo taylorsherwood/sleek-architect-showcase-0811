@@ -56,24 +56,44 @@ const Hero = () => (
       className="absolute inset-0"
       style={{
         background:
-          "linear-gradient(180deg, rgba(12,15,36,0.35) 0%, rgba(12,15,36,0.15) 35%, rgba(12,15,36,0.55) 100%)",
+          "linear-gradient(180deg, rgba(12,15,36,0.45) 0%, rgba(12,15,36,0.20) 40%, rgba(12,15,36,0.65) 100%)",
       }}
     />
-    <div className="relative z-10 h-full flex items-end pb-16 md:pb-24">
+    <div className="relative z-10 h-full flex items-center pt-20 md:pt-24">
       <div className="container mx-auto px-6 md:px-12">
         <div className="max-w-3xl">
           <p className="text-[#b9a06c] mb-5 md:mb-7" style={label}>
             HILL COUNTRY · LAND ADVISORY
           </p>
           <h1
-            className="font-display font-normal text-white leading-[1.04] tracking-tight"
+            className="font-display font-normal text-white leading-[1.04] tracking-tight mb-8 md:mb-10"
             style={{
               fontSize: "clamp(2.1rem, 5.2vw, 4.25rem)",
-              textShadow: "0 2px 24px rgba(0,0,0,0.45)",
+              textShadow: "0 2px 24px rgba(0,0,0,0.55)",
             }}
           >
             The most valuable land in Texas rarely trades publicly.
           </h1>
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+            <Link
+              to="/contact"
+              className="inline-flex items-center justify-center px-8 py-4 transition-colors duration-300 rounded-sm"
+              style={{ ...label, background: "#B9A06C", color: "#FFFFFF", border: "1px solid #B9A06C", fontWeight: 600 }}
+              onMouseEnter={(e) => { e.currentTarget.style.background = "#0C0F24"; e.currentTarget.style.borderColor = "#0C0F24"; }}
+              onMouseLeave={(e) => { e.currentTarget.style.background = "#B9A06C"; e.currentTarget.style.borderColor = "#B9A06C"; }}
+            >
+              Begin a Private Conversation →
+            </Link>
+            <Link
+              to="/off-market-real-estate-austin"
+              className="inline-flex items-center justify-center px-8 py-4 transition-colors duration-300 rounded-sm"
+              style={{ ...label, background: "transparent", color: "#FFFFFF", border: "1px solid #B9A06C", fontWeight: 600 }}
+              onMouseEnter={(e) => { e.currentTarget.style.background = "#B9A06C"; }}
+              onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; }}
+            >
+              Request Private Access →
+            </Link>
+          </div>
         </div>
       </div>
     </div>

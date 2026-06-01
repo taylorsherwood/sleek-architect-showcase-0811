@@ -218,8 +218,15 @@ const AustinRealEstateInvestment = () => {
       </article>
 
       <AboutBlock />
+      <LandCrossLinks
+        variant="ivory"
+        eyebrow="ADJACENT STRATEGIES"
+        heading="Land, Ranch & Development Investing"
+        intro="Ranch acquisitions, strategic acreage, and Central Texas growth corridors often sit alongside a residential investment thesis."
+      />
       <RelatedInsights />
       <Suspense fallback={<div className="min-h-[100px]" />}><Footer /></Suspense>
+
     </div>
   );
 };

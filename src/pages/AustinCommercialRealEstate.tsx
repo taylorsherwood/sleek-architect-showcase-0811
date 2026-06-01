@@ -384,7 +384,15 @@ const AustinCommercialRealEstate = () => {
       </article>
 
       <AboutBlock />
+      <LandCrossLinks
+        variant="ivory"
+        cards={["development"]}
+        eyebrow="ADJACENT ADVISORY"
+        heading="Austin Land Development & Strategic Acreage"
+        intro="Development sites, infill land, commercial acreage, industrial outdoor storage, and data center tracts across Central Texas growth corridors."
+      />
       <Suspense fallback={<div className="min-h-[100px]" />}><Footer /></Suspense>
+
     </div>
   );
 };

@@ -180,7 +180,15 @@ const PrivateOpportunitiesPage = () => {
         </div>
       </section>
 
+      <LandCrossLinks
+        variant="ivory"
+        eyebrow="PRIVATE LAND ACCESS"
+        heading="Private Land & Development Opportunities"
+        intro="Private ranches, acreage estates, and development tracts are often shared discreetly with landowners, builders, and investors before they reach the public market."
+      />
+
       <Suspense fallback={<div className="min-h-[100px]" />}><Footer /></Suspense>
+
     </div>
   );
 };

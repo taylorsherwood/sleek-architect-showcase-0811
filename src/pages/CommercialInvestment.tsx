@@ -695,10 +695,19 @@ const CommercialInvestment = () => {
         </div>
       </section>
 
+      <LandCrossLinks
+        variant="ivory"
+        cards={["development"]}
+        eyebrow="ADJACENT ADVISORY"
+        heading="Development Sites & Strategic Acreage"
+        intro="Beyond core commercial product, we advise on infill assemblages, industrial outdoor storage, data center sites, and path-of-growth land across Central Texas."
+      />
+
       {/* ── Footer ── */}
       <Suspense fallback={<div className="min-h-[100px]" />}>
         <Footer />
       </Suspense>
+
     </div>
   );
 };

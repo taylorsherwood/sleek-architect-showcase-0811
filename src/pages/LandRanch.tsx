@@ -228,8 +228,7 @@ const ExoticWildlifeVideoBand = () => {
     <section className="w-full">
       <div
         ref={containerRef}
-        className="relative w-full overflow-hidden"
-        style={{ aspectRatio: "21 / 9" }}
+        className="relative w-full overflow-hidden h-screen"
       >
         {!reducedMotion && shouldLoad ? (
           <video

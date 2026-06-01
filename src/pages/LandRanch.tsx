@@ -731,11 +731,11 @@ const LandRanch = () => {
                 </blockquote>
                 <div className="mt-10">
                   <Link
-                    to="/contact"
+                    to="/land-ranch/exotic-wildlife-ranches"
                     className="inline-flex items-center gap-2 text-foreground gold-underline-hover pb-0.5 hover:text-gold transition-colors"
                     style={labelStyle}
                   >
-                    Learn About Recreational Ranch Opportunities →
+                    learn more about Texas exotic wildlife ranches →
                   </Link>
                 </div>
               </div>

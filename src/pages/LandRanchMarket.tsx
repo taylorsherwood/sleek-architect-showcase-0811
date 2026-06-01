@@ -264,17 +264,7 @@ const LandRanchMarketPage = () => {
         </div>
       </section>
 
-      {/* ── BUYER / SELLER MARKET BALANCE ─────────────────── */}
-      <Suspense fallback={null}>
-        <MarketBalanceGauge
-          communityName={market.name}
-          marketName={market.name}
-          fallbackMarketName={market.county}
-          eyebrow={`${market.name.toUpperCase()} · MARKET BALANCE`}
-        />
-      </Suspense>
 
-      <div className="h-10 md:h-16" aria-hidden="true" />
 
       {/* ── PROPERTY TYPES ─────────────────────────────────── */}
       <section className="py-14 md:py-20">

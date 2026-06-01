@@ -216,6 +216,12 @@ const LandRanchMarketPage = () => {
 
       <div className="h-10 md:h-16" aria-hidden="true" />
 
+      {market.slug === "exotic-wildlife-ranches" && (
+        <Suspense fallback={null}>
+          <ExoticWildlifeGallery />
+        </Suspense>
+      )}
+
       {/* ── AGENT INTEL ─────────────────────────────────── */}
       <section className="py-14 md:py-20 bg-secondary/40">
         <div className="container mx-auto px-6">

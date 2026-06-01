@@ -207,9 +207,9 @@ const LandRanch = () => {
             </p>
             <h1
               className="font-display font-normal text-white leading-[1.06] mb-4"
-              style={{ fontSize: "1.82rem", textShadow: "0 1px 3px rgba(0,0,0,0.38)" }}
+              style={{ fontSize: "1.78rem", textShadow: "0 2px 18px rgba(0,0,0,0.40), 0 1px 2px rgba(0,0,0,0.45)" }}
             >
-              Austin Area&nbsp;<br />Land & Ranch Opportunities
+              Austin Area<br />Land & Ranch Opportunities
             </h1>
             <p
               className="text-white/90 leading-relaxed mb-5 text-[0.88rem]"
@@ -246,10 +246,10 @@ const LandRanch = () => {
                 LAND & RANCH
               </p>
               <h1
-                className="font-display font-normal text-white leading-[1.1] tracking-tight mb-4 md:mb-7"
-                style={{ fontSize: "clamp(1.6rem, 5vw, 4rem)", textShadow: "0 1px 3px rgba(0,0,0,0.35)" }}
+                className="font-display font-normal text-white leading-[1.08] tracking-tight mb-4 md:mb-7"
+                style={{ fontSize: "clamp(1.6rem, 4.4vw, 3.4rem)", textShadow: "0 2px 22px rgba(0,0,0,0.38), 0 1px 2px rgba(0,0,0,0.45)" }}
               >
-                Austin Area&nbsp;<br />Land & Ranch Opportunities
+                Austin Area<br />Land & Ranch Opportunities
               </h1>
               <p
                 className="text-white/85 leading-relaxed mb-7 md:mb-10 max-w-xl text-[0.95rem] md:text-base lg:text-lg"
@@ -282,7 +282,7 @@ const LandRanch = () => {
         </div>
       </section>
 
-      <div className="h-12 md:h-20" aria-hidden="true" />
+      <div className="h-6 md:h-10" aria-hidden="true" />
 
 
 
@@ -395,8 +395,8 @@ const LandRanch = () => {
                 />
               </a>
             </div>
-            <div className="md:col-span-7 space-y-5 text-muted-foreground leading-relaxed text-[1.0625rem]">
-              <p className="mt-8">
+            <div className="md:col-span-7 space-y-6 text-muted-foreground leading-[1.8] text-[1.0625rem]">
+              <p>
                 Unlike traditional residential real estate, land value is often driven by factors that
                 aren't immediately visible. Water availability, topography, access, utilities,
                 development potential, wildlife exemptions, agricultural valuation, frontage, and
@@ -554,7 +554,7 @@ const LandRanch = () => {
                 >
                   From free-ranging axis deer and blackbuck antelope to zebras, elk, and other exotic species, Texas is home to one of the most unique private wildlife ownership environments in the world.
                 </p>
-                <div className="space-y-6 text-muted-foreground text-[1.05rem] leading-[1.8]">
+                <div className="space-y-8 text-muted-foreground text-[1.05rem] leading-[1.85]">
                   <p>
                     Unlike many states, Texas allows private landowners to own and manage a wide variety of exotic wildlife species. Across the Hill Country and Central Texas, ranches may feature axis deer, blackbuck antelope, fallow deer, elk, aoudad, zebras, and other exotic animals that contribute to recreation, conservation, and wildlife management programs.
                   </p>

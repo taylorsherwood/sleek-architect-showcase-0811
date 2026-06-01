@@ -1200,7 +1200,7 @@ const LandRanch = () => {
               <div className="relative mt-10 md:mt-12 md:pr-4">
                 <div className="group overflow-hidden rounded-[4px] aspect-[16/10] bg-[#F5F3EF]">
                   <img
-                    src="/src/assets/land-ranch-editorial.jpg"
+                    src={advisoryRanchImage}
                     alt="Texas Hill Country ranch landscape with oak trees and ridgeline view"
                     loading="lazy"
                     decoding="async"

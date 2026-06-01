@@ -383,14 +383,14 @@ const LandRanch = () => {
             <div className="flex flex-col gap-3">
               <a
                 href="#categories"
-                className="inline-flex min-h-[48px] w-full items-center justify-center bg-gold hover:bg-[hsl(var(--gold-deep))] text-white px-4 py-3 text-center transition-colors duration-300"
+                className="inline-flex min-h-[48px] w-full items-center justify-center bg-gold hover:bg-primary text-white px-4 py-3 text-center transition-colors duration-300"
                 style={labelStyle}
               >
                 Explore Land Opportunities
               </a>
               <Link
                 to="/contact"
-                className="inline-flex min-h-[48px] w-full items-center justify-center border border-gold text-white hover:bg-architectural hover:border-architectural px-4 py-3 text-center transition-colors duration-300 backdrop-blur-sm"
+                className="inline-flex min-h-[48px] w-full items-center justify-center border border-gold text-white hover:bg-gold hover:border-gold px-4 py-3 text-center transition-colors duration-300 backdrop-blur-sm"
                 style={labelStyle}
               >
                 Request a Property Evaluation
@@ -422,14 +422,14 @@ const LandRanch = () => {
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                 <a
                   href="#categories"
-                  className="inline-flex items-center justify-center bg-gold hover:bg-[hsl(var(--gold-deep))] text-white px-8 py-4 transition-colors duration-300"
+                  className="inline-flex items-center justify-center bg-gold hover:bg-primary text-white px-8 py-4 transition-colors duration-300"
                   style={labelStyle}
                 >
                   Explore Land Opportunities
                 </a>
                 <Link
                   to="/contact"
-                  className="inline-flex items-center justify-center border border-gold text-white hover:bg-architectural hover:border-architectural px-8 py-4 transition-colors duration-300 backdrop-blur-sm"
+                  className="inline-flex items-center justify-center border border-gold text-white hover:bg-gold hover:border-gold px-8 py-4 transition-colors duration-300 backdrop-blur-sm"
                   style={labelStyle}
                 >
                   Request a Property Evaluation

@@ -56,6 +56,7 @@ const BillionaireMigration = lazy(() => import("@/pages/BillionaireMigration"));
 const AustinLuxuryMarketTrends = lazy(() => import("@/pages/AustinLuxuryMarketTrends"));
 const OffMarketRealEstateAustin = lazy(() => import("@/pages/OffMarketRealEstateAustin"));
 const AustinLandDevelopmentOpportunities = lazy(() => import("@/pages/AustinLandDevelopmentOpportunities"));
+const LandDevelopment = lazy(() => import("@/pages/LandDevelopment"));
 const AustinLuxuryRealEstateMarketReport = lazy(() => import("@/pages/AustinLuxuryRealEstateMarketReport"));
 const MarketIntelligence = lazy(() => import("@/pages/MarketIntelligence"));
 const investImport = () => import("@/pages/Invest");
@@ -147,6 +148,7 @@ const AppRoutes = () => {
           <Route path="/private" element={<Navigate to="/off-market-real-estate-austin" replace />} />
           <Route path="/off-market-real-estate-austin" element={<OffMarketRealEstateAustin />} />
           <Route path="/austin-land-development-opportunities" element={<AustinLandDevelopmentOpportunities />} />
+          <Route path="/land-development" element={<LandDevelopment />} />
           <Route path="/austin-luxury-real-estate-market-report" element={<AustinLuxuryRealEstateMarketReport />} />
           <Route path="/westlake-hills-homes-for-sale" element={<Navigate to="/communities/westlake-hills" replace />} />
           <Route path="/tarrytown-homes-for-sale" element={<Navigate to="/communities/tarrytown" replace />} />

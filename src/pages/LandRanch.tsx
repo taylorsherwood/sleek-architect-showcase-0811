@@ -340,13 +340,13 @@ const LandRanch = () => {
           loop
           playsInline
           preload="auto"
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover object-center scale-[1.16] sm:scale-100"
           aria-hidden="true"
         />
         <img
           src={heroPoster}
           alt=""
-          className="absolute inset-0 w-full h-full object-cover md:hidden -z-10"
+          className="absolute inset-0 w-full h-full object-cover object-center scale-[1.16] md:hidden -z-10"
           loading="eager"
           fetchPriority="high"
           decoding="async"
@@ -598,7 +598,7 @@ const LandRanch = () => {
             </h2>
           </div>
           {/* Mobile swipe hint */}
-          <div className="flex sm:hidden justify-center mb-5">
+          <div className="flex sm:hidden justify-start mb-5">
             <div
               className="swipe-hint-pill inline-flex items-center gap-2.5 px-4 py-2 rounded-full border text-[#b9a06c] bg-[#b9a06c]/[0.06]"
               style={{ ...labelStyle, fontSize: "0.68rem", letterSpacing: "0.18em" }}

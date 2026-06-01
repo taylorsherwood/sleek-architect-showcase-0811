@@ -384,7 +384,7 @@ const LandRanch = () => {
 
 
       {/* ── SECTION 2: DIFFERENT EXPERTISE ──────────────────────── */}
-      <section className="py-16 md:py-24">
+      <section className="py-10 md:py-14">
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-12 gap-10 md:gap-16 items-start max-w-6xl mx-auto">
             <div className="md:col-span-5">

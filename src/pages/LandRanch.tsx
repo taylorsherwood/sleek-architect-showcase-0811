@@ -1093,6 +1093,50 @@ const LandRanch = () => {
               </Link>
             ))}
           </div>
+
+          {/* Thematic advisory pages */}
+          <div className="mt-16 md:mt-20 grid grid-cols-1 md:grid-cols-2 gap-px bg-[rgba(12,15,36,0.08)] border border-[rgba(12,15,36,0.08)]">
+            {[
+              {
+                to: "/land-ranch/hill-country-ranches",
+                eyebrow: "REGIONAL ADVISORY",
+                title: "Hill Country Ranches",
+                desc: "Legacy acreage, live-water tracts, and recreational ranches across the heart of Central Texas.",
+              },
+              {
+                to: "/land-ranch/exotic-wildlife-ranches",
+                eyebrow: "SPECIALIZED ADVISORY",
+                title: "Exotic Wildlife Ranches",
+                desc: "Texas ranches with axis deer, blackbuck, oryx, zebra, and other managed wildlife.",
+              },
+            ].map((t) => (
+              <Link
+                key={t.to}
+                to={t.to}
+                className="group bg-background p-8 md:p-10 flex flex-col justify-between min-h-[220px] transition-colors duration-500 hover:bg-secondary/40"
+              >
+                <div>
+                  <p className="text-gold mb-4" style={{ ...labelStyle, fontSize: "0.55rem" }}>
+                    {t.eyebrow}
+                  </p>
+                  <h3 className="font-display text-2xl md:text-[1.65rem] text-architectural leading-tight mb-3 transition-colors duration-300 group-hover:text-gold">
+                    {t.title}
+                  </h3>
+                  <p className="text-muted-foreground text-[0.95rem] leading-[1.65] max-w-[42ch]">
+                    {t.desc}
+                  </p>
+                </div>
+                <span
+                  className="relative inline-flex items-center text-gold self-start mt-6 pb-0.5"
+                  style={{ ...labelStyle, fontSize: "0.58rem" }}
+                >
+                  Explore Advisory
+                  <span aria-hidden="true" className="ml-1.5 inline-block transition-transform duration-500 ease-out group-hover:translate-x-1">→</span>
+                  <span aria-hidden="true" className="absolute bottom-0 left-0 w-full h-px bg-gold scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
+                </span>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 

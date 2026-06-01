@@ -142,7 +142,7 @@ const ExoticWildlifeGallery = () => {
         </div>
 
         {/* Mobile swipe hint */}
-        <div className="md:hidden flex justify-center mb-4">
+        <div className="md:hidden flex justify-start mb-4">
           <div
             className="swipe-hint-pill inline-flex items-center gap-2.5 px-4 py-2 rounded-full border text-[#b9a06c] bg-[#b9a06c]/[0.06]"
             style={{ fontFamily: "'Jost', sans-serif", fontSize: "0.68rem", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 500 }}

@@ -60,6 +60,16 @@ const LandRanchMarketPage = () => {
     return <Navigate to="/land-ranch" replace />;
   }
 
+  // Hill Country uses a fully bespoke advisory experience.
+  if (market.slug === "hill-country-ranches") {
+    return (
+      <Suspense fallback={<div className="min-h-screen bg-background" />}>
+        <HillCountryExperience />
+      </Suspense>
+    );
+  }
+
+
   const canonical = `/land-ranch/${market.slug}`;
   const relatedMarkets = landRanchMarkets
     .filter((m) => m.slug !== market.slug && m.kind !== "theme")

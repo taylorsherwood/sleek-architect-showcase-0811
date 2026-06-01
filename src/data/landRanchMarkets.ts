@@ -68,11 +68,11 @@ export const landRanchMarkets: LandRanchMarket[] = [
       "Cultural anchor with restaurants, lodging, and brand-name vineyards",
     ],
     agentIntel: {
-      medianPricePerAcre: "$22,500 – $38,000",
-      typicalRanchSize: "20 – 250 acres",
+      medianPricePerAcre: "$22,500-$38,000",
+      typicalRanchSize: "20-250 acres",
       buyerProfile:
         "Second-home buyers, vineyard operators, hospitality investors, and Austin- and Houston-based principals seeking weekend ranches with income potential.",
-      recreationalDemand: "High — hunting, equestrian, agritourism, and event use.",
+      recreationalDemand: "High. Hunting, equestrian, agritourism, and event use.",
       developmentActivity:
         "Steady. Boutique resorts, wedding venues, and small-lot vineyard subdivisions continue to absorb mid-sized tracts.",
       longTermOutlook:
@@ -96,7 +96,7 @@ export const landRanchMarkets: LandRanchMarket[] = [
       },
       {
         title: "Dual-purpose value",
-        body: "Many of the most desirable parcels combine residential, agricultural, and commercial-use potential — from working vineyards to hospitality entitlements.",
+        body: "Many of the most desirable parcels combine residential, agricultural, and commercial-use potential, from working vineyards to hospitality entitlements.",
       },
     ],
     lifestyle: {
@@ -117,7 +117,7 @@ export const landRanchMarkets: LandRanchMarket[] = [
       "Kerrville and Kerr County ranches, Guadalupe River acreage, and Hill Country estates. Echelon Property Group advises on legacy land, recreation, and investment tracts.",
     overview: [
       "Kerrville sits at the convergence of established Hill Country wealth, riverfront recreation, and large legacy ranches. The Guadalupe River corridor remains one of the most defensible long-hold land assets in Central Texas.",
-      "The market rewards diligence on water rights, river frontage classification, and floodplain — variables that materially shape value and use.",
+      "The market rewards diligence on water rights, river frontage classification, and floodplain. These variables materially shape value and use.",
     ],
     buyerDraw: [
       "Guadalupe River frontage and spring-fed recreational use",
@@ -126,11 +126,11 @@ export const landRanchMarkets: LandRanchMarket[] = [
       "A multi-generational buyer base anchoring long-term values",
     ],
     agentIntel: {
-      medianPricePerAcre: "$14,000 – $28,000",
-      typicalRanchSize: "50 – 1,000+ acres",
+      medianPricePerAcre: "$14,000-$28,000",
+      typicalRanchSize: "50-1,000+ acres",
       buyerProfile:
         "Legacy ranch families, river recreation buyers, and Texas- and Louisiana-based principals acquiring multi-generational holdings.",
-      recreationalDemand: "Very high — river recreation, hunting, equestrian, and conservation.",
+      recreationalDemand: "Very high. River recreation, hunting, equestrian, and conservation.",
       developmentActivity:
         "Selective. Most activity is residential infill and small ranchette subdivisions; large tracts trade privately and tend to stay intact.",
       longTermOutlook:
@@ -184,13 +184,13 @@ export const landRanchMarkets: LandRanchMarket[] = [
       "Steady developer demand for assemblage and entitlement-ready tracts",
     ],
     agentIntel: {
-      medianPricePerAcre: "$45,000 – $95,000",
-      typicalRanchSize: "5 – 100 acres",
+      medianPricePerAcre: "$45,000-$95,000",
+      typicalRanchSize: "5-100 acres",
       buyerProfile:
         "Austin-based principals, tech executives, equestrian buyers, and developers pursuing entitlement-ready or assemblage-grade parcels.",
-      recreationalDemand: "Moderate — primarily equestrian, lifestyle, and family-recreational use.",
+      recreationalDemand: "Moderate. Primarily equestrian, lifestyle, and family-recreational use.",
       developmentActivity:
-        "High. Continued absorption of 50–300 acre tracts for custom estate subdivisions, boutique hospitality, and mixed-use concepts along the 290 corridor.",
+        "High. Continued absorption of 50-300 acre tracts for custom estate subdivisions, boutique hospitality, and mixed-use concepts along the 290 corridor.",
       longTermOutlook:
         "Among the strongest appreciation profiles in Central Texas land. Inventory is structurally tight; replacement cost rises every cycle.",
     },
@@ -203,7 +203,7 @@ export const landRanchMarkets: LandRanchMarket[] = [
     whyBuyers: [
       {
         title: "Austin proximity at acreage scale",
-        body: "Few markets in the country offer 10–100 acre estates within a 30-minute drive of a top-tier tech metro. That structural scarcity is the single most important value driver here.",
+        body: "Few markets in the country offer 10-100 acre estates within a 30-minute drive of a top-tier tech metro. That structural scarcity is the single most important value driver here.",
       },
       {
         title: "Dual-use value",
@@ -232,7 +232,7 @@ export const landRanchMarkets: LandRanchMarket[] = [
       "Johnson City and Blanco County ranches, recreational land, and 290 wine corridor acreage. Echelon Property Group advises on investment-grade Hill Country tracts.",
     overview: [
       "Johnson City has quietly become one of the most strategically positioned land markets in Central Texas. Sitting between Austin, Fredericksburg, and the 290 wine corridor, it offers acreage at a meaningful discount to its more developed neighbors with a clear path to convergence.",
-      "Patient buyers are using Johnson City to acquire scale early — securing tracts that fit a longer holding period or a multi-stage development arc.",
+      "Patient buyers are using Johnson City to acquire scale early, securing tracts that fit a longer holding period or a multi-stage development arc.",
     ],
     buyerDraw: [
       "Direct access to the 290 wine corridor and Fredericksburg",
@@ -241,11 +241,11 @@ export const landRanchMarkets: LandRanchMarket[] = [
       "Strong recreational and hunting profile across larger tracts",
     ],
     agentIntel: {
-      medianPricePerAcre: "$12,000 – $24,000",
-      typicalRanchSize: "25 – 500 acres",
+      medianPricePerAcre: "$12,000-$24,000",
+      typicalRanchSize: "25-500 acres",
       buyerProfile:
         "Long-hold investors, vineyard and hospitality entrepreneurs, and lifestyle buyers seeking Hill Country acreage at a more accessible basis.",
-      recreationalDemand: "High — hunting, ATV, and equestrian use across larger tracts.",
+      recreationalDemand: "High. Hunting, ATV, and equestrian use across larger tracts.",
       developmentActivity:
         "Emerging. Vineyard expansion, boutique lodging, and ranchette subdivisions are early but accelerating along the 290 corridor.",
       longTermOutlook:
@@ -266,7 +266,7 @@ export const landRanchMarkets: LandRanchMarket[] = [
       },
       {
         title: "Optionality",
-        body: "The land here supports multiple end uses — private ranch, vineyard, hospitality, or future subdivision — which gives owners flexibility as the corridor matures.",
+        body: "The land here supports multiple end uses across private ranch, vineyard, hospitality, or future subdivision, which gives owners flexibility as the corridor matures.",
       },
       {
         title: "A market still being shaped",
@@ -300,11 +300,11 @@ export const landRanchMarkets: LandRanchMarket[] = [
       "Reasonable Austin and Hill Country dual-market access",
     ],
     agentIntel: {
-      medianPricePerAcre: "$18,000 – $60,000 (excludes premium waterfront)",
-      typicalRanchSize: "10 – 300 acres",
+      medianPricePerAcre: "$18,000-$60,000 (excludes premium waterfront)",
+      typicalRanchSize: "10-300 acres",
       buyerProfile:
         "Waterfront principals, lake-house families, developers along the 281 corridor, and investors blending lake and ranch portfolios.",
-      recreationalDemand: "Very high — boating, water sports, hunting, and equestrian.",
+      recreationalDemand: "Very high. Boating, water sports, hunting, and equestrian.",
       developmentActivity:
         "Strong. Continued residential, retail, and hospitality absorption along the 281 corridor and around the lakes.",
       longTermOutlook:
@@ -320,7 +320,7 @@ export const landRanchMarkets: LandRanchMarket[] = [
     whyBuyers: [
       {
         title: "Two markets in one",
-        body: "Marble Falls is one of the few Texas markets where buyers can pursue both true waterfront and serious ranch acreage within the same submarket — often within the same tour.",
+        body: "Marble Falls is one of the few Texas markets where buyers can pursue both true waterfront and serious ranch acreage within the same submarket, often within the same tour.",
       },
       {
         title: "Growth corridor exposure",
@@ -358,11 +358,11 @@ export const landRanchMarkets: LandRanchMarket[] = [
       "Strong ag and wildlife exemption history across the county",
     ],
     agentIntel: {
-      medianPricePerAcre: "$10,000 – $20,000",
-      typicalRanchSize: "100 – 1,500+ acres",
+      medianPricePerAcre: "$10,000-$20,000",
+      typicalRanchSize: "100-1,500+ acres",
       buyerProfile:
         "Hunting and conservation buyers, multi-generational ranch families, and Austin principals seeking true scale within 90 minutes of the city.",
-      recreationalDemand: "Very high — whitetail, exotics, dove, and managed water recreation.",
+      recreationalDemand: "Very high. Whitetail, exotics, dove, and managed water recreation.",
       developmentActivity:
         "Selective. Most large tracts trade for continued recreational or ranching use; development pressure is concentrated nearer to Marble Falls and 281.",
       longTermOutlook:
@@ -405,7 +405,7 @@ export const landRanchMarkets: LandRanchMarket[] = [
     metaDescription:
       "Llano County ranches, hunting properties, and legacy Hill Country acreage. Echelon Property Group advises on recreational and ranching land throughout Llano.",
     overview: [
-      "Llano is one of the most authentic ranch markets in Texas — large tracts, established hunting culture, and a topography defined by granite outcrops, live oaks, and the Llano River corridor.",
+      "Llano is one of the most authentic ranch markets in Texas. Large tracts, established hunting culture, and a topography defined by granite outcrops, live oaks, and the Llano River corridor define the region.",
       "Buyers here are typically not chasing development; they are acquiring a long-hold piece of the Hill Country with serious recreational utility.",
     ],
     buyerDraw: [
@@ -415,11 +415,11 @@ export const landRanchMarkets: LandRanchMarket[] = [
       "Significantly lower per-acre basis than markets one county east",
     ],
     agentIntel: {
-      medianPricePerAcre: "$8,000 – $16,000",
-      typicalRanchSize: "100 – 2,000+ acres",
+      medianPricePerAcre: "$8,000-$16,000",
+      typicalRanchSize: "100-2,000+ acres",
       buyerProfile:
         "Serious hunting buyers, multi-generational ranch families, and capital seeking legacy holdings rather than near-term development plays.",
-      recreationalDemand: "Among the highest in Texas — whitetail, exotics, turkey, and river recreation.",
+      recreationalDemand: "Among the highest in Texas. Whitetail, exotics, turkey, and river recreation.",
       developmentActivity:
         "Minimal. The market remains predominantly recreational and ranching, which preserves character and supports long-term value.",
       longTermOutlook:
@@ -464,7 +464,7 @@ export const landRanchMarkets: LandRanchMarket[] = [
       "Lampasas ranches, agricultural land, and recreational acreage. Echelon Property Group advises on ranching and investment-grade land throughout Lampasas County.",
     overview: [
       "Lampasas sits at the northern edge of the Hill Country, where ranching tradition is still the defining culture and where buyers can acquire serious acreage at a basis that is increasingly difficult to find further south.",
-      "The market rewards buyers who understand cattle, hay, and exemption mechanics — and who can recognize the long-term value of tracts that are structurally well-positioned relative to the Austin growth corridor.",
+      "The market rewards buyers who understand cattle, hay, and exemption mechanics, and who can recognize the long-term value of tracts that are structurally well-positioned relative to the Austin growth corridor.",
     ],
     buyerDraw: [
       "Working agricultural and ranching country with established exemption history",
@@ -473,11 +473,11 @@ export const landRanchMarkets: LandRanchMarket[] = [
       "Improving accessibility to the Austin and Killeen-Temple corridors",
     ],
     agentIntel: {
-      medianPricePerAcre: "$7,500 – $14,000",
-      typicalRanchSize: "100 – 1,200 acres",
+      medianPricePerAcre: "$7,500-$14,000",
+      typicalRanchSize: "100-1,200 acres",
       buyerProfile:
         "Cattle and hay operators, long-hold investors, and lifestyle buyers seeking working ranches at a meaningful basis advantage.",
-      recreationalDemand: "Moderate to high — whitetail, dove, and managed water recreation.",
+      recreationalDemand: "Moderate to high. Whitetail, dove, and managed water recreation.",
       developmentActivity:
         "Limited, with selective interest closer to the major corridors and the city of Lampasas itself.",
       longTermOutlook:
@@ -506,7 +506,7 @@ export const landRanchMarkets: LandRanchMarket[] = [
     lifestyle: {
       eyebrow: "LIFESTYLE",
       headline: "Working ranches at the edge of the Hill Country",
-      body: "Lampasas is for owners who want their land to feel like land — cattle, hay, fence work, and a way of life that hasn't been redrawn around tourism. The reward is privacy, scale, and a basis that quietly compounds over time.",
+      body: "Lampasas is for owners who want their land to feel like land: cattle, hay, fence work, and a way of life that hasn't been redrawn around tourism. The reward is privacy, scale, and a basis that quietly compounds over time.",
     },
   },
   {
@@ -533,11 +533,11 @@ export const landRanchMarkets: LandRanchMarket[] = [
       "Legacy tracts that rarely surface on the open market",
     ],
     agentIntel: {
-      medianPricePerAcre: "$10,000 – $60,000 (varies sharply by county and water)",
-      typicalRanchSize: "25 – 2,000+ acres",
+      medianPricePerAcre: "$10,000-$60,000 (varies sharply by county and water)",
+      typicalRanchSize: "25-2,000+ acres",
       buyerProfile:
         "Multi-generational ranch families, Austin and Houston principals, conservation buyers, and investors acquiring long-hold legacy positions.",
-      recreationalDemand: "Very high across the region — hunting, river recreation, equestrian, and conservation.",
+      recreationalDemand: "Very high across the region. Hunting, river recreation, equestrian, and conservation.",
       developmentActivity:
         "Concentrated near major corridors (290, 281, US 71) and the Austin commute shed. Most legacy ranches stay intact.",
       longTermOutlook:
@@ -556,7 +556,7 @@ export const landRanchMarkets: LandRanchMarket[] = [
     whyBuyers: [
       {
         title: "Scarcity is the thesis",
-        body: "Large contiguous tracts inside the Hill Country are not being created. As the Austin and San Antonio commute sheds expand, legacy ranches inside that radius become structurally more valuable — independent of any one cycle.",
+        body: "Large contiguous tracts inside the Hill Country are not being created. As the Austin and San Antonio commute sheds expand, legacy ranches inside that radius become structurally more valuable, independent of any one cycle.",
       },
       {
         title: "Water defines the top of the market",
@@ -564,13 +564,13 @@ export const landRanchMarkets: LandRanchMarket[] = [
       },
       {
         title: "Multiple buyer pools",
-        body: "Hill Country ranches attract operators, recreational owners, conservation capital, and developers — often for the same tract. Understanding which buyer pool a property serves is what determines a credible exit.",
+        body: "Hill Country ranches attract operators, recreational owners, conservation capital, and developers, often for the same tract. Understanding which buyer pool a property serves is what determines a credible exit.",
       },
     ],
     lifestyle: {
       eyebrow: "LIFESTYLE",
       headline: "Live water, legacy, and a region that still feels rural",
-      body: "The Hill Country still rewards the things that make a ranch worth owning — water, wildlife, view corridors, and quiet. Owners here build their lives around those constants while remaining within reach of two of Texas' most dynamic cities.",
+      body: "The Hill Country still rewards the things that make a ranch worth owning: water, wildlife, view corridors, and quiet. Owners here build their lives around those constants while remaining within reach of two of Texas' most dynamic cities.",
     },
   },
   {
@@ -597,11 +597,11 @@ export const landRanchMarkets: LandRanchMarket[] = [
       "A buyer pool that values stewardship, not just acreage",
     ],
     agentIntel: {
-      medianPricePerAcre: "$8,000 – $25,000 (improvements and herds priced separately)",
-      typicalRanchSize: "200 – 5,000+ acres",
+      medianPricePerAcre: "$8,000-$25,000 (improvements and herds priced separately)",
+      typicalRanchSize: "200-5,000+ acres",
       buyerProfile:
         "Long-hold conservation buyers, multi-generational ranching families, and principals seeking ranches that combine recreation, stewardship, and curated wildlife collections.",
-      recreationalDemand: "Very high — managed hunts, wildlife observation, and breeding operations.",
+      recreationalDemand: "Very high. Managed hunts, wildlife observation, and breeding operations.",
       developmentActivity:
         "Minimal. The category is defined by preservation and operating continuity, not subdivision or near-term entitlement plays.",
       longTermOutlook:
@@ -617,7 +617,7 @@ export const landRanchMarkets: LandRanchMarket[] = [
     whyBuyers: [
       {
         title: "A category defined by stewardship",
-        body: "Exotic wildlife ranches are operating ecosystems. Buyers are acquiring herd genetics, habitat history, and the people who have managed both — not simply land with a fence around it.",
+        body: "Exotic wildlife ranches are operating ecosystems. Buyers are acquiring herd genetics, habitat history, and the people who have managed both, not simply land with a fence around it.",
       },
       {
         title: "Texas-specific advantage",
@@ -630,7 +630,7 @@ export const landRanchMarkets: LandRanchMarket[] = [
     ],
     lifestyle: {
       eyebrow: "RECREATION",
-      headline: "Axis, blackbuck, oryx, zebra — and the ranches that steward them",
+      headline: "Axis, blackbuck, oryx, zebra, and the ranches that steward them",
       body: "Ownership in this category is closer to running a private reserve than maintaining a recreational tract. Days are organized around herds, water, fence lines, and managed hunts, with a way of life that has very few peers anywhere else in the country.",
       image: exoticWildlifeRecreationAsset.url,
     },

@@ -579,7 +579,7 @@ export const landRanchMarkets: LandRanchMarket[] = [
     kind: "theme",
     heroEyebrow: "SPECIALIZED ADVISORY",
     heroHeadline: "Texas Ranches With Managed Exotic Wildlife",
-    heroImage: exoticWildlifeHero,
+    heroImage: exoticWildlifeHeroAsset.url,
     positioning:
       "A specialized advisory practice for ranches with axis deer, blackbuck, oryx, zebra, fallow deer, and other managed exotic wildlife.",
     metaTitle: "Texas Exotic Wildlife Ranches for Sale | Echelon Property Group",

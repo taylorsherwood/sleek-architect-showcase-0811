@@ -854,11 +854,14 @@ const LandRanch = () => {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-[rgba(12,15,36,0.08)] border border-[rgba(12,15,36,0.08)]">
             {marketSnapshot.map((m) => (
-              <div key={m.label} className="bg-background p-8 md:p-10">
+              <div
+                key={m.label}
+                className="group relative bg-background p-8 md:p-10 border border-transparent transition-all duration-500 ease-out hover:scale-[1.02] hover:border-gold hover:z-10"
+              >
                 <p className="text-gold mb-5" style={{ ...labelStyle, fontSize: "0.55rem" }}>
                   {m.label}
                 </p>
-                <p className="font-display text-3xl md:text-4xl font-normal text-architectural leading-none mb-4">
+                <p className="font-display text-3xl md:text-4xl font-normal text-architectural leading-none mb-4 transition-colors duration-300 group-hover:text-gold">
                   {m.value}
                 </p>
                 <p className="text-muted-foreground text-[0.85rem] leading-relaxed">{m.note}</p>

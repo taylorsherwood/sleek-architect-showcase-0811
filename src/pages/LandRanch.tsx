@@ -377,8 +377,7 @@ const LandRanch = () => {
               style={{ textShadow: "0 1px 2px rgba(0,0,0,0.35)" }}
             >
               From legacy ranches and recreational retreats to investment acreage and development
-              tracts, Echelon Property Group helps buyers, sellers, and investors evaluate Central Texas land
-              through both current value and future potential.
+              tracts, evaluate Central Texas land through both current value and future potential.
             </p>
 
             <div className="flex flex-col gap-3">

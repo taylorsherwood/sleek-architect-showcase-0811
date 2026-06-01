@@ -763,6 +763,62 @@ const LandDevelopment = () => {
 
       <div className="h-16 md:h-24" aria-hidden="true" />
 
+      {/* ── SECTION 4.75: CINEMATIC CONTEXT VIDEO ───────────────── */}
+      <section className="relative w-full h-[60vh] min-h-[420px] md:h-[80vh] md:min-h-[560px] overflow-hidden bg-primary">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          poster="/images/commercial-hero-poster-mobile.webp"
+          className="absolute inset-0 w-full h-full object-cover hidden md:block"
+        >
+          <source src="/videos/commercial-hero.mp4" type="video/mp4" />
+        </video>
+        <img
+          src="/images/commercial-hero-poster-mobile.webp"
+          alt="Aerial view of Austin's growth corridors"
+          className="absolute inset-0 w-full h-full object-cover md:hidden"
+          loading="lazy"
+        />
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(180deg, rgba(12,15,36,0.55) 0%, rgba(12,15,36,0.35) 45%, rgba(12,15,36,0.75) 100%)",
+          }}
+          aria-hidden="true"
+        />
+        <div className="relative z-10 h-full container mx-auto px-6 md:px-12 flex flex-col justify-end pb-12 md:pb-20">
+          <div className="max-w-2xl">
+            <p className="mb-4" style={{ ...labelStyle, color: GOLD }}>
+              The Region In Motion
+            </p>
+            <h2
+              className="font-normal leading-[1.1] text-white mb-5"
+              style={{
+                fontFamily: "'Cinzel', serif",
+                fontSize: "clamp(1.6rem, 3.6vw, 2.8rem)",
+              }}
+            >
+              Central Texas Is Being Rebuilt In Real Time
+            </h2>
+            <p
+              className="text-white/80 leading-relaxed max-w-xl"
+              style={{ fontFamily: "'Jost', sans-serif", fontSize: "1rem" }}
+            >
+              New highways, power infrastructure, and employment centers are
+              redrawing the map of where land becomes investable. The
+              corridors below reflect that movement.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div className="h-16 md:h-24" aria-hidden="true" />
+
+
       {/* ── SECTION 5: AUSTIN GROWTH CORRIDORS ───────────────────── */}
       <section className="relative bg-primary text-white overflow-hidden">
         <img

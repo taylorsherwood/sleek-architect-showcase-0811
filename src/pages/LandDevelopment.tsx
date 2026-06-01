@@ -134,28 +134,35 @@ const themes = [
   {
     title: "Data Centers",
     thesis: "Power, fiber, and water capacity now define site economics more than entitlements or zoning.",
+    image: dataCenterImg.url,
   },
   {
     title: "Industrial Outdoor Storage",
-    thesis: "Constrained supply, institutional capital inflows, and durable yield from low-coverage industrial uses.",
+    thesis: "Constrained supply and institutional capital inflows are reshaping low-coverage industrial land.",
+    image: industrialImg,
   },
   {
     title: "Master Planned Communities",
     thesis: "Long-horizon land holdings positioned to absorb regional in-migration and rooftop demand.",
+    image: masterplanImg,
   },
   {
     title: "Build-to-Rent",
-    thesis: "Single-family rental product underwritten as an institutional asset class rather than a housing trend.",
+    thesis: "Single-family rental product underwritten as an institutional asset class, not a housing trend.",
+    image: buildToRentImg.url,
   },
   {
     title: "Mixed-Use Development",
-    thesis: "Retail, residential, and hospitality programs built around walkability and population density curves.",
+    thesis: "Retail, residential, and hospitality programs built around walkability and density curves.",
+    image: mixedUseImg.url,
   },
   {
     title: "Strategic Land Banking",
-    thesis: "Acquiring future development sites years ahead of utility, transportation, and policy catalysts.",
+    thesis: "Future development sites acquired years ahead of utility, transportation, and policy catalysts.",
+    image: landBankingImg.url,
   },
 ];
+
 
 const advisoryQuestions = [
   {

@@ -31,7 +31,7 @@ export const privateSales: PrivateSaleItem[] = [
     address: "Address Withheld",
     area: "SAN ANTONIO",
     descriptor: "Multi-Family",
-    label: "Represented Seller",
+    label: "REPRESENTED BUYER",
   },
   {
     image: spanishOaksImage,
@@ -39,7 +39,7 @@ export const privateSales: PrivateSaleItem[] = [
     address: "Address Withheld",
     area: "SPANISH OAKS",
     descriptor: "",
-    label: "Represented Seller",
+    label: "REPRESENTED BUYER",
   },
   {
     image: southeastAustinImage,
@@ -47,7 +47,7 @@ export const privateSales: PrivateSaleItem[] = [
     address: "Address Withheld",
     area: "SOUTHEAST AUSTIN",
     descriptor: "Commercial Property",
-    label: "Represented Buyer",
+    label: "REPRESENTED BUYER",
   },
   {
     image: tarrytownImage,
@@ -55,7 +55,7 @@ export const privateSales: PrivateSaleItem[] = [
     address: "Address Withheld",
     area: "TARRYTOWN",
     descriptor: "",
-    label: "Represented Buyer",
+    label: "REPRESENTED BUYER",
   },
   {
     image: eastAustinImage,
@@ -63,7 +63,7 @@ export const privateSales: PrivateSaleItem[] = [
     address: "Address Withheld",
     area: "LAKE TRAVIS AREA",
     descriptor: "Commercial Property",
-    label: "Represented Buyer",
+    label: "REPRESENTED BUYER",
   },
   {
     image: fm620Image,
@@ -71,7 +71,7 @@ export const privateSales: PrivateSaleItem[] = [
     address: "13505 North FM 620",
     area: "NORTH AUSTIN",
     descriptor: "Commercial Property",
-    label: "Represented Buyer",
+    label: "REPRESENTED BUYER",
   },
   {
     image: cedarBayouImage,
@@ -79,7 +79,7 @@ export const privateSales: PrivateSaleItem[] = [
     address: "5931 W Cedar Bayou Lynchburg Road",
     area: "BAYTOWN, TEXAS",
     descriptor: "Commercial Property",
-    label: "Represented Buyer",
+    label: "REPRESENTED BUYER",
   },
   {
     image: highRoadImage,
@@ -87,7 +87,7 @@ export const privateSales: PrivateSaleItem[] = [
     address: "Address Withheld",
     area: "WESTLAKE HILLS",
     descriptor: "",
-    label: "Represented Buyer",
+    label: "REPRESENTED BUYER",
   },
   {
     image: bartonCreekImage,
@@ -95,7 +95,7 @@ export const privateSales: PrivateSaleItem[] = [
     address: "Address Withheld",
     area: "BARTON CREEK",
     descriptor: "",
-    label: "Represented Buyer",
+    label: "REPRESENTED BUYER",
   },
   {
     image: clearCreekImage,
@@ -103,7 +103,7 @@ export const privateSales: PrivateSaleItem[] = [
     address: "5001 Clear Creek Road",
     area: "COMMERCIAL PROPERTY",
     descriptor: "",
-    label: "Represented Seller",
+    label: "REPRESENTED BUYER",
   },
 ];
 

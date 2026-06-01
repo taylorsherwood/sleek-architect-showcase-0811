@@ -53,8 +53,10 @@ const LandRanchMarketPage = () => {
 
   const canonical = `/land-ranch/${market.slug}`;
   const relatedMarkets = landRanchMarkets
-    .filter((m) => m.slug !== market.slug)
+    .filter((m) => m.slug !== market.slug && m.kind !== "theme")
     .slice(0, 4);
+  const heroEyebrow = market.heroEyebrow ?? `LAND & RANCH · ${market.county.toUpperCase()}`;
+  const heroHeadline = market.heroHeadline ?? `${market.name} Ranches & Land`;
 
   return (
     <div className="min-h-screen bg-background">
@@ -107,7 +109,7 @@ const LandRanchMarketPage = () => {
           <div className="container mx-auto">
             <div className="max-w-2xl">
               <p className="text-gold mb-3 md:mb-5" style={labelStyle}>
-                LAND & RANCH · {market.county.toUpperCase()}
+                {heroEyebrow}
               </p>
               <h1
                 className="font-display font-normal text-white leading-[1.06] tracking-tight mb-4 md:mb-6"
@@ -117,7 +119,7 @@ const LandRanchMarketPage = () => {
                     "0 2px 22px rgba(0,0,0,0.40), 0 1px 2px rgba(0,0,0,0.45)",
                 }}
               >
-                {market.name} Ranches & Land
+                {heroHeadline}
               </h1>
               <p
                 className="text-white/90 leading-relaxed mb-7 md:mb-9 max-w-xl text-[0.95rem] md:text-base lg:text-[1.0625rem]"

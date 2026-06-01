@@ -6,6 +6,8 @@ import marketMarbleFallsAsset from "@/assets/market-marble-falls.jpg.asset.json"
 import marketBurnetAsset from "@/assets/market-burnet.webp.asset.json";
 import marketLlanoAsset from "@/assets/market-llano.jpg.asset.json";
 import marketLampasasAsset from "@/assets/market-lampasas.jpg.asset.json";
+import hillCountryHero from "@/assets/land-ranch-hero.jpg";
+import exoticWildlifeHero from "@/assets/land-ranch-exotic-wildlife.jpg";
 
 export type PropertyType =
   | "Ranches"
@@ -21,6 +23,9 @@ export interface LandRanchMarket {
   slug: string;
   name: string;
   county: string;
+  kind?: "market" | "theme";
+  heroEyebrow?: string;
+  heroHeadline?: string;
   heroImage: string;
   positioning: string;
   metaTitle: string;
@@ -503,7 +508,134 @@ export const landRanchMarkets: LandRanchMarket[] = [
       body: "Lampasas is for owners who want their land to feel like land — cattle, hay, fence work, and a way of life that hasn't been redrawn around tourism. The reward is privacy, scale, and a basis that quietly compounds over time.",
     },
   },
+  {
+    slug: "hill-country-ranches",
+    name: "Hill Country Ranches",
+    county: "Central Texas Hill Country",
+    kind: "theme",
+    heroEyebrow: "REGIONAL ADVISORY",
+    heroHeadline: "Texas Hill Country Ranches & Legacy Acreage",
+    heroImage: hillCountryHero,
+    positioning:
+      "Legacy ranches, live-water tracts, recreational acreage, and private retreats across the heart of Central Texas.",
+    metaTitle: "Texas Hill Country Ranches for Sale | Echelon Property Group",
+    metaDescription:
+      "Hill Country ranches, live water tracts, hunting properties, and legacy acreage across Central Texas. Echelon Property Group advises buyers on Hill Country land.",
+    overview: [
+      "The Texas Hill Country remains one of the most defensible long-hold land markets in the country. From Gillespie and Blanco to Kerr, Llano, Burnet, and Hays counties, the region offers a rare combination of scarcity, natural character, and proximity to two top-tier metros.",
+      "Buyers acquiring Hill Country ranches today are typically weighing more than acreage. They are evaluating water, exemption history, frontage, view corridors, and where each tract sits relative to the next decade of regional growth.",
+    ],
+    buyerDraw: [
+      "Live water, river frontage, and spring-fed creeks",
+      "Mature wildlife populations and managed hunting programs",
+      "Within reach of Austin, San Antonio, and Hill Country destination economies",
+      "Legacy tracts that rarely surface on the open market",
+    ],
+    agentIntel: {
+      medianPricePerAcre: "$10,000 – $60,000 (varies sharply by county and water)",
+      typicalRanchSize: "25 – 2,000+ acres",
+      buyerProfile:
+        "Multi-generational ranch families, Austin and Houston principals, conservation buyers, and investors acquiring long-hold legacy positions.",
+      recreationalDemand: "Very high across the region — hunting, river recreation, equestrian, and conservation.",
+      developmentActivity:
+        "Concentrated near major corridors (290, 281, US 71) and the Austin commute shed. Most legacy ranches stay intact.",
+      longTermOutlook:
+        "Structurally constrained supply, durable demand from in-state and out-of-state capital, and limited replacement inventory support continued appreciation, particularly for live-water tracts.",
+    },
+    propertyTypes: [
+      "Ranches",
+      "Recreational Land",
+      "Hunting Properties",
+      "Waterfront & River Tracts",
+      "Agricultural Land",
+      "Equestrian Estates",
+      "Vineyards & Wine Country Estates",
+      "Development Opportunities",
+    ],
+    whyBuyers: [
+      {
+        title: "Scarcity is the thesis",
+        body: "Large contiguous tracts inside the Hill Country are not being created. As the Austin and San Antonio commute sheds expand, legacy ranches inside that radius become structurally more valuable — independent of any one cycle.",
+      },
+      {
+        title: "Water defines the top of the market",
+        body: "Live water, spring-fed creeks, and verified river frontage continue to anchor the highest values. Diligence on water rights, groundwater districts, and floodplain is non-negotiable.",
+      },
+      {
+        title: "Multiple buyer pools",
+        body: "Hill Country ranches attract operators, recreational owners, conservation capital, and developers — often for the same tract. Understanding which buyer pool a property serves is what determines a credible exit.",
+      },
+    ],
+    lifestyle: {
+      eyebrow: "LIFESTYLE",
+      headline: "Live water, legacy, and a region that still feels rural",
+      body: "The Hill Country still rewards the things that make a ranch worth owning — water, wildlife, view corridors, and quiet. Owners here build their lives around those constants while remaining within reach of two of Texas' most dynamic cities.",
+    },
+  },
+  {
+    slug: "exotic-wildlife-ranches",
+    name: "Exotic Wildlife Ranches",
+    county: "Texas",
+    kind: "theme",
+    heroEyebrow: "SPECIALIZED ADVISORY",
+    heroHeadline: "Texas Ranches With Managed Exotic Wildlife",
+    heroImage: exoticWildlifeHero,
+    positioning:
+      "A specialized advisory practice for ranches with axis deer, blackbuck, oryx, zebra, fallow deer, and other managed exotic wildlife.",
+    metaTitle: "Texas Exotic Wildlife Ranches for Sale | Echelon Property Group",
+    metaDescription:
+      "Texas ranches with axis deer, blackbuck, oryx, zebra, and other managed exotic wildlife. Echelon Property Group advises on exotic wildlife ranch acquisition.",
+    overview: [
+      "Texas is uniquely permissive in its treatment of privately owned exotic wildlife. Across the Hill Country, South Texas, and the Edwards Plateau, select ranches operate as long-established homes to axis deer, blackbuck antelope, fallow deer, oryx, aoudad, zebras, and other exotic species.",
+      "Acquiring an exotic wildlife ranch is a different transaction than buying recreational land. The diligence extends beyond water, fencing, and habitat into herd composition, conservation programs, operating history, and the relationships that support ongoing stewardship.",
+    ],
+    buyerDraw: [
+      "Established herd populations with multi-year management history",
+      "High game fencing, water systems, and habitat infrastructure already in place",
+      "Recreational, conservation, and income-producing operating models",
+      "A buyer pool that values stewardship, not just acreage",
+    ],
+    agentIntel: {
+      medianPricePerAcre: "$8,000 – $25,000 (improvements and herds priced separately)",
+      typicalRanchSize: "200 – 5,000+ acres",
+      buyerProfile:
+        "Long-hold conservation buyers, multi-generational ranching families, and principals seeking ranches that combine recreation, stewardship, and curated wildlife collections.",
+      recreationalDemand: "Very high — managed hunts, wildlife observation, and breeding operations.",
+      developmentActivity:
+        "Minimal. The category is defined by preservation and operating continuity, not subdivision or near-term entitlement plays.",
+      longTermOutlook:
+        "Stable to strong. The combination of large contiguous acreage, scarce permitting for new high-fence operations, and rising interest in conservation-grade ownership supports durable value.",
+    },
+    propertyTypes: [
+      "Ranches",
+      "Hunting Properties",
+      "Recreational Land",
+      "Waterfront & River Tracts",
+      "Agricultural Land",
+    ],
+    whyBuyers: [
+      {
+        title: "A category defined by stewardship",
+        body: "Exotic wildlife ranches are operating ecosystems. Buyers are acquiring herd genetics, habitat history, and the people who have managed both — not simply land with a fence around it.",
+      },
+      {
+        title: "Texas-specific advantage",
+        body: "Texas law allows private ownership and management of a wide range of exotic species, which has built the deepest concentration of exotic wildlife ranches in North America. That regulatory landscape is part of the underwriting.",
+      },
+      {
+        title: "Relationship-driven access",
+        body: "The best exotic wildlife ranches almost never reach open marketing. Acquisition typically happens through long-standing relationships with operators, managers, and adjacent owners.",
+      },
+    ],
+    lifestyle: {
+      eyebrow: "RECREATION",
+      headline: "Axis, blackbuck, oryx, zebra — and the ranches that steward them",
+      body: "Ownership in this category is closer to running a private reserve than maintaining a recreational tract. Days are organized around herds, water, fence lines, and managed hunts, with a way of life that has very few peers anywhere else in the country.",
+    },
+  },
 ];
+
+
 
 export const getLandRanchMarket = (slug?: string) =>
   landRanchMarkets.find((m) => m.slug === slug);

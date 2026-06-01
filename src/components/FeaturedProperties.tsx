@@ -70,8 +70,27 @@ const FeaturedProperties = () => {
               </h2>
               <div
                 aria-hidden="true"
-                style={{ width: "40px", height: "1px", background: "#b9a06c", margin: "0 auto" }}
-              />
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  gap: "14px",
+                  margin: "0 auto",
+                }}
+              >
+                <span style={{ width: "64px", height: "1px", background: "linear-gradient(to right, transparent, #b9a06c)" }} />
+                <span
+                  style={{
+                    width: "6px",
+                    height: "6px",
+                    background: "#b9a06c",
+                    transform: "rotate(45deg)",
+                    display: "inline-block",
+                  }}
+                />
+                <span style={{ width: "64px", height: "1px", background: "linear-gradient(to left, transparent, #b9a06c)" }} />
+              </div>
+
             </div>
           </ScrollReveal>
 

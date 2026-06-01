@@ -590,8 +590,30 @@ const LandRanch = () => {
               </div>
             </div>
           </div>
+
+          {/* Exotic species strip */}
+          <div className="max-w-6xl mx-auto mt-16 md:mt-20">
+            <p className="text-gold mb-6" style={{ ...labelStyle, fontSize: "0.55rem" }}>
+              SPECIES OFTEN FOUND ON TEXAS RANCHES
+            </p>
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-px bg-[rgba(12,15,36,0.08)] border border-[rgba(12,15,36,0.08)]">
+              {[
+                { name: "Axis Deer", note: "Free-ranging across much of the Hill Country and a cornerstone of Texas exotic ranching." },
+                { name: "Blackbuck", note: "Indian antelope long established on Central Texas ranches, prized for habitat and aesthetics." },
+                { name: "Oryx", note: "Large desert antelope suited to dry, open terrain on well-managed acreage." },
+                { name: "Zebra", note: "A rare presence on select private ranches, kept as part of curated wildlife collections." },
+                { name: "Fallow Deer", note: "Elegant, social herd species commonly found on managed recreational ranches." },
+              ].map((a) => (
+                <div key={a.name} className="bg-background p-6 md:p-7">
+                  <p className="font-display text-architectural text-lg md:text-xl leading-tight mb-2">{a.name}</p>
+                  <p className="text-muted-foreground text-[0.82rem] leading-relaxed">{a.note}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
+
 
 
 

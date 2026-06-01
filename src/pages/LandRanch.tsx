@@ -673,7 +673,7 @@ const LandRanch = () => {
               MARKET DATA
             </p>
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-normal text-architectural leading-[1.1]">
-              Central Texas Land Market Snapshot
+              Central Texas Land&nbsp;<br />Market Snapshot
             </h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-[rgba(12,15,36,0.08)] border border-[rgba(12,15,36,0.08)]">

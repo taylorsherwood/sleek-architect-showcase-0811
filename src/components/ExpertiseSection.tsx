@@ -123,7 +123,7 @@ const ExpertiseSection = () => {
                     decoding="async"
                     className="absolute w-full object-cover"
                     style={{
-                      height: "125%",
+                      height: "133.33%",
                       bottom: 0,
                       transition: "transform 800ms cubic-bezier(0.22, 1, 0.36, 1)",
                       objectPosition: (block as { objectPosition?: string }).objectPosition ?? "center",

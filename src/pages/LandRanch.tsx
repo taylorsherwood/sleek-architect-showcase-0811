@@ -979,7 +979,14 @@ const LandRanch = () => {
                 title: "Land Development",
                 desc: "Entitled tracts, infill assemblages, and growth-corridor opportunities for builders and investors.",
               },
+              {
+                to: "/land-development",
+                eyebrow: "URBAN ADVISORY",
+                title: "Infill Land",
+                desc: "In-town lots, teardowns, and small-tract assemblages within Austin's established neighborhoods and growth corridors.",
+              },
             ];
+
             const renderCard = (t: typeof advisories[number]) => (
               <Link
                 key={t.to}

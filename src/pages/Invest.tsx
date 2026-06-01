@@ -963,8 +963,16 @@ const Invest = () => {
         </div>
       </section>
 
+      <LandCrossLinks
+        variant="ivory"
+        eyebrow="BEYOND THE HOUSE"
+        heading="Land, Ranch & Development Opportunities"
+        intro="Many of our investor clients move beyond single-family into ranch acquisitions, strategic acreage, and path-of-growth development sites across Central Texas."
+      />
+
       <Suspense fallback={<div className="min-h-[100px]" />}><Footer /></Suspense>
     </div>
+
   );
 };
 

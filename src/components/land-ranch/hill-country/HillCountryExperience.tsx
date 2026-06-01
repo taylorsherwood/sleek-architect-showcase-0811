@@ -480,7 +480,7 @@ const OffMarketBand = () => (
         >
           The tracts that matter most are rarely advertised.
         </h2>
-        <p className="text-white/75 text-[1.0625rem] leading-[1.85] mb-10 max-w-[52ch]">
+        <p className="text-white/90 text-[1.0625rem] leading-[1.85] mb-10 max-w-[52ch]">
           Qualified buyers receive a quiet, curated view of what is actually
           moving across the Hill Country before it surfaces to the broader
           market.

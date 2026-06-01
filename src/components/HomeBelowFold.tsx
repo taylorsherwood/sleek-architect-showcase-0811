@@ -1546,6 +1546,8 @@ const HomeBelowFold = () => (
       aria-hidden="true"
     />
 
+    <div className="h-12 md:h-20 bg-secondary" aria-hidden="true" />
+
     <LandRanchHomeIntro />
 
 

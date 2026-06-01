@@ -1438,21 +1438,6 @@ const LandDevelopment = () => {
 
       {/* ── SECTION 8: FINAL CTA ───────────────────── */}
       <section className="relative bg-primary text-white overflow-hidden">
-        <img
-          src={heroImg}
-          alt=""
-          aria-hidden="true"
-          className="absolute inset-0 w-full h-full object-cover opacity-25"
-          loading="lazy"
-        />
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(180deg, rgba(12,15,36,0.88) 0%, rgba(12,15,36,0.94) 100%)",
-          }}
-          aria-hidden="true"
-        />
         <div className="relative z-10 container mx-auto px-6 md:px-12 py-20 md:py-28 text-center">
           <p
             className="mb-6"

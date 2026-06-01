@@ -587,7 +587,7 @@ const LandRanch = () => {
                     <div className="absolute inset-0 bg-gradient-to-br from-architectural via-architectural to-architectural/85 flex items-center justify-center">
                       <img
                         src="/static-assets/echelon-logo-gold-square.webp"
-                        alt="Echelon Property Group — Off-Market Land & Ranch"
+                        alt="Echelon Property Group | Off-Market Land & Ranch"
                         className="w-1/2 h-auto object-contain transition-transform duration-[1200ms] ease-out group-hover:scale-[1.04]"
                         loading="lazy"
                         decoding="async"

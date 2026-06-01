@@ -135,7 +135,7 @@ const ExoticWildlifeGallery = () => {
           </h2>
           <p className="text-muted-foreground leading-[1.8] text-[1.0625rem]">
             Texas is one of the few places in the world where private landowners steward
-            free-ranging exotic wildlife across thousands of acres — defining features of
+            free-ranging exotic wildlife across thousands of acres, defining features of
             the region's most distinctive recreational and investment ranches.
           </p>
         </div>

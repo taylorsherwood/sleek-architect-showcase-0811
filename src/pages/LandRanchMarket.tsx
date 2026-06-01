@@ -234,7 +234,7 @@ const LandRanchMarketPage = () => {
             </h2>
             <p className="text-muted-foreground leading-relaxed text-[1.0625rem] mt-5 max-w-2xl">
               Advisory-grade observations from active engagement in the {market.name} land
-              market. Indicative figures — every parcel underwrites differently based on
+              market. Indicative figures. Every parcel underwrites differently based on
               water, exemptions, access, and entitlement.
             </p>
           </div>
@@ -448,7 +448,7 @@ const LandRanchMarketPage = () => {
             <p className="text-muted-foreground leading-relaxed text-[1.0625rem] mb-9 max-w-2xl mx-auto">
               Every tract in {market.county} underwrites differently. We work with a small
               number of buyers each cycle to identify, evaluate, and acquire the right
-              piece of {market.name} land — quietly, and on the right terms.
+              piece of {market.name} land, quietly, and on the right terms.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Link

@@ -264,7 +264,11 @@ const ExoticWildlifeVideoBand = () => {
             <div className="max-w-2xl text-white">
               <p
                 className="text-[11px] md:text-xs tracking-[0.32em] uppercase mb-4 md:mb-6"
-                style={{ color: "#b9a06c", fontFamily: "'Jost', sans-serif" }}
+                style={{
+                  color: "#b9a06c",
+                  fontFamily: "'Jost', sans-serif",
+                  textShadow: "0 0 18px rgba(185,160,108,0.55), 0 2px 10px rgba(12,15,36,0.35)",
+                }}
               >
                 Texas Exotic Wildlife
               </p>
@@ -274,6 +278,7 @@ const ExoticWildlifeVideoBand = () => {
                   fontFamily: "'Cinzel', serif",
                   fontSize: "clamp(1.75rem, 4vw, 3rem)",
                   letterSpacing: "0.01em",
+                  textShadow: "0 0 28px rgba(255,255,255,0.35), 0 2px 16px rgba(12,15,36,0.55)",
                 }}
               >
                 Ranch Ownership With a Different Kind of Wild
@@ -283,6 +288,7 @@ const ExoticWildlifeVideoBand = () => {
                 style={{
                   fontFamily: "'Jost', sans-serif",
                   fontSize: "clamp(0.95rem, 1.1vw, 1.05rem)",
+                  textShadow: "0 0 20px rgba(255,255,255,0.25), 0 1px 8px rgba(12,15,36,0.45)",
                 }}
               >
                 From axis deer and blackbuck to zebra and oryx, select Texas

@@ -105,12 +105,14 @@ const ExpertiseSection = () => {
 
           {/* Cinematic image-led grid */}
           <div className="grid grid-cols-1 md:grid-cols-2" style={{ gap: "16px" }}>
-            {expertiseBlocks.map((block, index) => (
-              <ScrollReveal key={block.title} delay={index * 100}>
+            {expertiseBlocks.map((block, index) => {
+              const isLast = index === expertiseBlocks.length - 1;
+              return (
+              <ScrollReveal key={block.title} delay={index * 100} className={isLast ? "md:col-span-2" : ""}>
                 <Link
                   to={block.link}
-                  className="expertise-card group relative block w-full overflow-hidden"
-                  style={{ aspectRatio: "4 / 5" }}
+                  className={`expertise-card group relative block overflow-hidden ${isLast ? "md:mx-auto md:w-full" : "w-full"}`}
+                  style={{ aspectRatio: "4 / 5", maxWidth: isLast ? "calc(50% - 8px)" : undefined }}
                   aria-label={`${block.title}, ${block.linkText}`}
                 >
                   {/* Background image */}
@@ -222,7 +224,8 @@ const ExpertiseSection = () => {
                   </div>
                 </Link>
               </ScrollReveal>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>

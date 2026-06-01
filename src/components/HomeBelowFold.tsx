@@ -1547,6 +1547,8 @@ const HomeBelowFold = () => (
 
     <CommunitiesSection />
 
+    <LandRanchHomeIntro />
+
     <NoscriptFallback />
 
     <div className="parallax-break hidden md:block" style={{ backgroundImage: "url('/images/parallax-barton-springs.webp')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties} aria-hidden="true" />

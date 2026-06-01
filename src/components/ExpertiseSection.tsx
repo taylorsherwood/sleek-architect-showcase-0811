@@ -227,7 +227,7 @@ const ExpertiseSection = () => {
                             left: 0,
                             bottom: "-6px",
                             height: "1px",
-                            width: "24px",
+                            width: "0px",
                             background: "#b9a06c",
                             transition: "width 600ms cubic-bezier(0.22, 1, 0.36, 1)",
                           }}

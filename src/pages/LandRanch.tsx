@@ -384,7 +384,7 @@ const LandRanch = () => {
 
 
       {/* ── SECTION 2: DIFFERENT EXPERTISE ──────────────────────── */}
-      <section className="py-16 md:py-24">
+      <section className="py-14 md:py-20">
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-12 gap-10 md:gap-16 items-start max-w-6xl mx-auto">
             <div className="md:col-span-5">
@@ -436,7 +436,7 @@ const LandRanch = () => {
       </section>
 
       {/* ── SECTION 3: CATEGORIES ──────────────────────── */}
-      <section id="categories" className="py-16 md:py-24 bg-secondary/40">
+      <section id="categories" className="py-14 md:py-20 bg-secondary/40">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mb-14">
             <p className="text-gold mb-5" style={labelStyle}>
@@ -514,7 +514,7 @@ const LandRanch = () => {
         </div>
       </section>
 
-      <div className="h-12 md:h-20" aria-hidden="true" />
+      <div className="h-10 md:h-16" aria-hidden="true" />
 
       {/* ── SECTION 3.5: EXOTIC WILDLIFE RANCHES ──────────────────────── */}
       <section className="py-10 md:py-14">
@@ -632,7 +632,7 @@ const LandRanch = () => {
 
 
 
-      <div className="h-12 md:h-20" aria-hidden="true" />
+      <div className="h-10 md:h-16" aria-hidden="true" />
 
 
       {/* ── PARALLAX BREAK ──────────────────────── */}
@@ -643,7 +643,7 @@ const LandRanch = () => {
       />
 
       {/* ── SECTION 4: MAP ──────────────────────── */}
-      <section className="py-16 md:py-24">
+      <section className="py-14 md:py-20">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mb-12">
             <p className="text-gold mb-5" style={labelStyle}>
@@ -664,7 +664,7 @@ const LandRanch = () => {
       </section>
 
       {/* ── SECTION 5: PROCESS ──────────────────────── */}
-      <section className="py-16 md:py-24 bg-secondary/40">
+      <section className="py-14 md:py-20 bg-secondary/40">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mb-14">
             <p className="text-gold mb-5" style={labelStyle}>
@@ -690,7 +690,7 @@ const LandRanch = () => {
         </div>
       </section>
 
-      <div className="h-12 md:h-20" aria-hidden="true" />
+      <div className="h-10 md:h-16" aria-hidden="true" />
 
 
 
@@ -703,7 +703,7 @@ const LandRanch = () => {
 
 
       {/* ── SECTION 6: MARKET SNAPSHOT ──────────────────────── */}
-      <section className="py-16 md:py-24 bg-secondary/40">
+      <section className="py-14 md:py-20 bg-secondary/40">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mb-14">
             <p className="text-gold mb-5" style={labelStyle}>
@@ -733,7 +733,7 @@ const LandRanch = () => {
         </div>
       </section>
 
-      <div className="h-12 md:h-20" aria-hidden="true" />
+      <div className="h-10 md:h-16" aria-hidden="true" />
 
       {/* ── NEW: WHY LAND REQUIRES DIFFERENT REPRESENTATION ─────────────── */}
       <section className="py-10 md:py-14">
@@ -771,10 +771,10 @@ const LandRanch = () => {
         </div>
       </section>
 
-      <div className="h-12 md:h-20" aria-hidden="true" />
+      <div className="h-10 md:h-16" aria-hidden="true" />
 
       {/* ── NEW: LAND & RANCH PROPERTY TYPES ───────────────────────────── */}
-      <section className="py-16 md:py-24">
+      <section className="py-14 md:py-20">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mb-14">
             <p className="text-gold mb-5" style={labelStyle}>PROPERTY TYPES</p>
@@ -805,7 +805,7 @@ const LandRanch = () => {
         </div>
       </section>
 
-      <div className="h-12 md:h-20" aria-hidden="true" />
+      <div className="h-10 md:h-16" aria-hidden="true" />
 
       {/* ── PARALLAX BREAK ──────────────────────── */}
       <div
@@ -814,11 +814,11 @@ const LandRanch = () => {
         aria-hidden="true"
       />
 
-      <div className="h-12 md:h-20" aria-hidden="true" />
+      <div className="h-10 md:h-16" aria-hidden="true" />
 
 
       {/* ── NEW: LAND ACQUISITION & DEVELOPMENT ADVISORY ───────────────── */}
-      <section className="py-16 md:py-24">
+      <section className="py-14 md:py-20">
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-12 gap-12 md:gap-20 items-start max-w-6xl mx-auto">
             <div className="md:col-span-5">
@@ -859,10 +859,10 @@ const LandRanch = () => {
         </div>
       </section>
 
-      <div className="h-12 md:h-20" aria-hidden="true" />
+      <div className="h-10 md:h-16" aria-hidden="true" />
 
       {/* ── NEW: LAND BUYER PROCESS ─────────────────────────────────────── */}
-      <section className="py-16 md:py-24">
+      <section className="py-14 md:py-20">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mb-14">
             <p className="text-gold mb-5" style={labelStyle}>PROCESS</p>
@@ -888,10 +888,10 @@ const LandRanch = () => {
         </div>
       </section>
 
-      <div className="h-12 md:h-20" aria-hidden="true" />
+      <div className="h-10 md:h-16" aria-hidden="true" />
 
       {/* ── EXPLORE CENTRAL TEXAS RANCH & LAND MARKETS ─────────────── */}
-      <section className="py-16 md:py-24">
+      <section className="py-14 md:py-20">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mb-14">
             <p className="text-gold mb-5" style={labelStyle}>MARKETS</p>
@@ -952,7 +952,7 @@ const LandRanch = () => {
       </section>
 
       {/* ── SECTION 5.5: PRIVATE LAND OPPORTUNITIES ──────────────────────── */}
-      <section className="py-16 md:py-24">
+      <section className="py-14 md:py-20">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-gold mb-5" style={labelStyle}>
@@ -988,7 +988,7 @@ const LandRanch = () => {
 
       {/* ── SECTION 6.5: INSIGHTS ──────────────────────── */}
 
-      <section className="py-16 md:py-24">
+      <section className="py-14 md:py-20">
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14 max-w-6xl">
             <div>
@@ -1246,7 +1246,7 @@ const LandRanch = () => {
       {/* ── SECTION 7: SELLER CTA ──────────────────────── */}
 
 
-      <section className="py-20 md:py-32" style={{ background: "#0C0F24" }}>
+      <section className="py-16 md:py-24" style={{ background: "#0C0F24" }}>
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-gold mb-6" style={labelStyle}>
@@ -1281,7 +1281,7 @@ const LandRanch = () => {
       </section>
 
       {/* ── SECTION 8: FAQ ──────────────────────── */}
-      <section className="py-16 md:py-24">
+      <section className="py-14 md:py-20">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto">
             <p className="text-gold mb-5 text-center" style={labelStyle}>

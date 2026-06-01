@@ -6,6 +6,8 @@ import marketMarbleFallsAsset from "@/assets/market-marble-falls.jpg.asset.json"
 import marketBurnetAsset from "@/assets/market-burnet.webp.asset.json";
 import marketLlanoAsset from "@/assets/market-llano.jpg.asset.json";
 import marketLampasasAsset from "@/assets/market-lampasas.jpg.asset.json";
+import hillCountryHero from "@/assets/land-ranch-hero.jpg";
+import exoticWildlifeHero from "@/assets/land-ranch-exotic-wildlife.jpg";
 
 export type PropertyType =
   | "Ranches"

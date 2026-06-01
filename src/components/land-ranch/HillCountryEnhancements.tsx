@@ -5,6 +5,7 @@ import parallaxTwo from "@/assets/land-ranch-editorial-v2.jpg";
 import liveWaterImg from "@/assets/lake-austin-waterfront.jpg";
 import recreationalImg from "@/assets/land-ranch-editorial.jpg";
 import legacyImg from "@/assets/land-ranch-home-intro.jpg";
+import hillCountryVideo from "@/assets/hill-country-cinematic.mp4.asset.json";
 
 const LandRanchMap = lazy(() => import("@/components/LandRanchMap"));
 
@@ -74,24 +75,27 @@ const categories: {
 export const HillCountryTopEnhancements = () => {
   return (
     <>
-      {/* ── PARALLAX VISUAL BREAK 1 ───────────────────────── */}
+      {/* ── CINEMATIC VIDEO BREAK ───────────────────────── */}
       <section
         aria-hidden="true"
-        className="relative w-full overflow-hidden"
-        style={{ height: "clamp(420px, 55vh, 640px)" }}
+        className="relative w-full overflow-hidden bg-architectural"
+        style={{ height: "clamp(440px, 62vh, 720px)" }}
       >
-        <div
-          className="absolute inset-0 bg-cover bg-center will-change-transform"
-          style={{
-            backgroundImage: `url(${parallaxOne})`,
-            backgroundAttachment: "fixed",
-          }}
+        <video
+          src={hillCountryVideo.url}
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          poster={parallaxOne}
+          className="absolute inset-0 w-full h-full object-cover"
         />
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
             background:
-              "linear-gradient(to bottom, rgba(12,15,36,0.05) 0%, rgba(12,15,36,0) 50%, rgba(12,15,36,0.10) 100%)",
+              "linear-gradient(to bottom, rgba(12,15,36,0.15) 0%, rgba(12,15,36,0) 45%, rgba(12,15,36,0.25) 100%)",
           }}
         />
       </section>

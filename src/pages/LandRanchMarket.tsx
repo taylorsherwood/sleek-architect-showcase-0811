@@ -119,7 +119,7 @@ const LandRanchMarketPage = () => {
                     "0 2px 22px rgba(0,0,0,0.40), 0 1px 2px rgba(0,0,0,0.45)",
                 }}
               >
-                {market.name} Ranches & Land
+                {heroHeadline}
               </h1>
               <p
                 className="text-white/90 leading-relaxed mb-7 md:mb-9 max-w-xl text-[0.95rem] md:text-base lg:text-[1.0625rem]"

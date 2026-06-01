@@ -1147,93 +1147,6 @@ const LandRanch = () => {
       <div className="h-10 md:h-16" aria-hidden="true" />
 
 
-      {/* ── SECTION 5.5: PRIVATE LAND OPPORTUNITIES ──────────────────────── */}
-      <section className="py-14 md:py-20">
-        <div className="container mx-auto px-6">
-          <div className="max-w-3xl mx-auto text-center">
-            <p className="text-gold mb-5" style={labelStyle}>
-              PRIVATE ACCESS
-            </p>
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-normal text-architectural leading-[1.1] mb-8">
-              Private Land Opportunities
-            </h2>
-            <div className="space-y-5 text-muted-foreground leading-relaxed text-[1.0625rem] mb-10 max-w-2xl mx-auto">
-              <p>
-                Some of Central Texas' most desirable ranches, acreage estates, and development
-                tracts never reach the public market.
-              </p>
-              <p>
-                Through Echelon Property Group's network of landowners, builders, developers, and industry
-                relationships, select opportunities may be shared privately before they are widely
-                marketed.
-              </p>
-            </div>
-            <Link
-              to="/private"
-              className="inline-flex items-center justify-center px-8 py-4 md:px-[34px] md:py-4 transition-colors duration-300 rounded-sm"
-              style={{ ...labelStyle, background: "#B9A06C", color: "#FFFFFF", border: "1px solid #B9A06C", fontWeight: 600 }}
-              onMouseEnter={(e) => { e.currentTarget.style.background = "#0C0F24"; e.currentTarget.style.borderColor = "#0C0F24"; }}
-              onMouseLeave={(e) => { e.currentTarget.style.background = "#B9A06C"; e.currentTarget.style.borderColor = "#B9A06C"; }}
-            >
-              Explore Private Opportunities →
-            </Link>
-          </div>
-        </div>
-      </section>
-
-
-      {/* ── SECTION 6.5: INSIGHTS ──────────────────────── */}
-
-      <section className="py-14 md:py-20">
-        <div className="container mx-auto px-6">
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14 max-w-6xl">
-            <div>
-              <p className="text-gold mb-5" style={labelStyle}>
-                INSIGHTS
-              </p>
-              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-normal text-architectural leading-[1.1]">
-                Land & Ranch Insights
-              </h2>
-            </div>
-            <Link
-              to="/blog"
-              className="inline-flex items-center gap-2 text-foreground gold-underline-hover pb-0.5 hover:text-gold transition-colors self-start md:self-auto"
-              style={labelStyle}
-            >
-              View All Insights →
-            </Link>
-          </div>
-          <div className="grid sm:grid-cols-2 gap-px bg-[rgba(12,15,36,0.08)] border border-[rgba(12,15,36,0.08)]">
-            {insights.map((post) => (
-              <Link
-                key={post.to}
-                to={post.to}
-                className="group bg-background p-8 md:p-10 transition-colors duration-300 hover:bg-secondary/30"
-              >
-                <p className="text-gold mb-4" style={{ ...labelStyle, fontSize: "0.55rem" }}>
-                  {post.eyebrow}
-                </p>
-                <h3 className="font-display text-xl md:text-[1.4rem] font-normal text-architectural leading-snug group-hover:text-gold transition-colors">
-                  {post.title}
-                </h3>
-                <p className="mt-6 text-foreground/70 group-hover:text-gold transition-colors" style={labelStyle}>
-                  Read →
-                </p>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── PARALLAX BREAK ──────────────────────── */}
-      <div
-        className="parallax-break hidden md:block"
-        style={{ backgroundImage: "url('/images/parallax-cattle.webp')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties}
-        aria-hidden="true"
-      />
-
-
-
       {/* ── SECTION 6.9: MEET YOUR ADVISOR ──────────────────────── */}
       <section
         className="relative overflow-hidden"
@@ -1438,6 +1351,93 @@ const LandRanch = () => {
           </div>
         </div>
       </section>
+      {/* ── SECTION 5.5: PRIVATE LAND OPPORTUNITIES ──────────────────────── */}
+      <section className="py-14 md:py-20">
+        <div className="container mx-auto px-6">
+          <div className="max-w-3xl mx-auto text-center">
+            <p className="text-gold mb-5" style={labelStyle}>
+              PRIVATE ACCESS
+            </p>
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-normal text-architectural leading-[1.1] mb-8">
+              Private Land Opportunities
+            </h2>
+            <div className="space-y-5 text-muted-foreground leading-relaxed text-[1.0625rem] mb-10 max-w-2xl mx-auto">
+              <p>
+                Some of Central Texas' most desirable ranches, acreage estates, and development
+                tracts never reach the public market.
+              </p>
+              <p>
+                Through Echelon Property Group's network of landowners, builders, developers, and industry
+                relationships, select opportunities may be shared privately before they are widely
+                marketed.
+              </p>
+            </div>
+            <Link
+              to="/private"
+              className="inline-flex items-center justify-center px-8 py-4 md:px-[34px] md:py-4 transition-colors duration-300 rounded-sm"
+              style={{ ...labelStyle, background: "#B9A06C", color: "#FFFFFF", border: "1px solid #B9A06C", fontWeight: 600 }}
+              onMouseEnter={(e) => { e.currentTarget.style.background = "#0C0F24"; e.currentTarget.style.borderColor = "#0C0F24"; }}
+              onMouseLeave={(e) => { e.currentTarget.style.background = "#B9A06C"; e.currentTarget.style.borderColor = "#B9A06C"; }}
+            >
+              Explore Private Opportunities →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+
+      {/* ── SECTION 6.5: INSIGHTS ──────────────────────── */}
+
+      <section className="py-14 md:py-20">
+        <div className="container mx-auto px-6">
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14 max-w-6xl">
+            <div>
+              <p className="text-gold mb-5" style={labelStyle}>
+                INSIGHTS
+              </p>
+              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-normal text-architectural leading-[1.1]">
+                Land & Ranch Insights
+              </h2>
+            </div>
+            <Link
+              to="/blog"
+              className="inline-flex items-center gap-2 text-foreground gold-underline-hover pb-0.5 hover:text-gold transition-colors self-start md:self-auto"
+              style={labelStyle}
+            >
+              View All Insights →
+            </Link>
+          </div>
+          <div className="grid sm:grid-cols-2 gap-px bg-[rgba(12,15,36,0.08)] border border-[rgba(12,15,36,0.08)]">
+            {insights.map((post) => (
+              <Link
+                key={post.to}
+                to={post.to}
+                className="group bg-background p-8 md:p-10 transition-colors duration-300 hover:bg-secondary/30"
+              >
+                <p className="text-gold mb-4" style={{ ...labelStyle, fontSize: "0.55rem" }}>
+                  {post.eyebrow}
+                </p>
+                <h3 className="font-display text-xl md:text-[1.4rem] font-normal text-architectural leading-snug group-hover:text-gold transition-colors">
+                  {post.title}
+                </h3>
+                <p className="mt-6 text-foreground/70 group-hover:text-gold transition-colors" style={labelStyle}>
+                  Read →
+                </p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── PARALLAX BREAK ──────────────────────── */}
+      <div
+        className="parallax-break hidden md:block"
+        style={{ backgroundImage: "url('/images/parallax-cattle.webp')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties}
+        aria-hidden="true"
+      />
+
+
+
 
       {/* ── SECTION 7: SELLER CTA ──────────────────────── */}
 

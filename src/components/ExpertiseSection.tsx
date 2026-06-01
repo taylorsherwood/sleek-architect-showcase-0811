@@ -136,7 +136,7 @@ const ExpertiseSection = () => {
                 <Link
                   to={block.link}
                   className="expertise-card group relative block overflow-hidden w-full"
-                  style={{ aspectRatio: "4 / 5" }}
+                  style={{ aspectRatio: "4 / 4.3" }}
                   aria-label={`${block.title}, ${block.linkText}`}
                 >
                   {/* Background image */}

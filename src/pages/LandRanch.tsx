@@ -808,70 +808,6 @@ const LandRanch = () => {
 
       <div className="h-12 md:h-20" aria-hidden="true" />
 
-      {/* ── NEW: EXPLORE CENTRAL TEXAS RANCH & LAND MARKETS ─────────────── */}
-      <section className="py-16 md:py-24">
-        <div className="container mx-auto px-6">
-          <div className="max-w-3xl mb-14">
-            <p className="text-gold mb-5" style={labelStyle}>MARKETS</p>
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-normal text-architectural leading-[1.1]">
-              Explore Central Texas Ranch & Land Markets
-            </h2>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
-            {[
-              { name: "Fredericksburg", slug: "fredericksburg", img: marketFredericksburg, desc: "The heart of Texas wine country, known for legacy ranches, recreational properties, and luxury rural estates." },
-              { name: "Kerrville", slug: "kerrville", img: marketKerrville, desc: "A premier Hill Country destination offering riverfront acreage, wildlife habitat, and large private ranch holdings." },
-              { name: "Dripping Springs", slug: "dripping-springs", img: marketDrippingSprings, desc: "One of the fastest-growing markets for luxury acreage, equestrian properties, and development opportunities." },
-              { name: "Johnson City", slug: "johnson-city", img: marketJohnsonCity, desc: "Highly sought-after for recreational land, vineyards, and long-term investment potential." },
-              { name: "Marble Falls", slug: "marble-falls", img: marketMarbleFalls, desc: "A blend of waterfront opportunities, ranch acreage, and expanding development corridors." },
-              { name: "Burnet", slug: "burnet", img: marketBurnet, desc: "Known for large tracts, hunting properties, and access to some of the region's best recreational land." },
-              { name: "Llano", slug: "llano", img: marketLlano, desc: "Classic Texas ranch country with abundant wildlife, open landscapes, and generational holdings." },
-              { name: "Lampasas", slug: "lampasas", img: marketLampasas, desc: "A growing destination for buyers seeking privacy, agricultural use, and long-term land appreciation." },
-            ].map((m) => (
-              <Link
-                key={m.slug}
-                to={`/land-ranch/${m.slug}`}
-                className="group flex flex-col h-full"
-                aria-label={`Explore the ${m.name} land and ranch market`}
-              >
-                <div
-                  className="overflow-hidden mb-5"
-                  style={{
-                    border: "1px solid rgba(12,15,36,0.06)",
-                    boxShadow: "0 14px 30px -22px rgba(12,15,36,0.18), 0 6px 14px -10px rgba(12,15,36,0.08)",
-                  }}
-                >
-                  <img
-                    src={m.img}
-                    alt={`${m.name}, Texas Hill Country landscape`}
-                    width={1280}
-                    height={832}
-                    loading="lazy"
-                    decoding="async"
-                    className="block w-full h-[220px] md:h-[240px] object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.04]"
-                  />
-                </div>
-                <h3 className="font-display text-architectural text-xl md:text-[1.4rem] leading-tight mb-2 transition-colors duration-500 group-hover:text-gold">
-                  {m.name}
-                </h3>
-                <p className="text-muted-foreground text-[0.92rem] leading-relaxed mb-4 flex-1">
-                  {m.desc}
-                </p>
-                <span
-                  className="relative inline-flex items-center text-gold pb-0.5 self-start"
-                  style={{ ...labelStyle, fontSize: "0.58rem" }}
-                >
-                  Explore Market
-                  <span aria-hidden="true" className="ml-1.5 inline-block transition-transform duration-500 ease-out group-hover:translate-x-1">→</span>
-                  <span className="absolute bottom-0 left-0 w-full h-px bg-gold scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
-                </span>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <div className="h-12 md:h-20" aria-hidden="true" />
 
       {/* ── NEW: LAND ACQUISITION & DEVELOPMENT ADVISORY ───────────────── */}
       <section className="py-16 md:py-24">
@@ -946,37 +882,65 @@ const LandRanch = () => {
 
       <div className="h-12 md:h-20" aria-hidden="true" />
 
-      {/* ── NEW: FINAL LANDOWNER CTA ────────────────────────────────────── */}
-      <section className="py-20 md:py-28">
+      {/* ── EXPLORE CENTRAL TEXAS RANCH & LAND MARKETS ─────────────── */}
+      <section className="py-16 md:py-24">
         <div className="container mx-auto px-6">
-          <div className="max-w-3xl mx-auto text-center">
-            <p className="text-gold mb-5" style={labelStyle}>FOR LANDOWNERS</p>
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-normal text-architectural leading-[1.1] mb-6">
-              What Is Your Land Really Worth?
+          <div className="max-w-3xl mb-14">
+            <p className="text-gold mb-5" style={labelStyle}>MARKETS</p>
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-normal text-architectural leading-[1.1]">
+              Explore Central Texas Ranch & Land Markets
             </h2>
-            <p className="text-muted-foreground leading-relaxed text-[1.0625rem] mb-10 max-w-2xl mx-auto">
-              Many Central Texas landowners are sitting on value that is not obvious from public data alone, especially when development potential, exemptions, access, utilities, and buyer demand are considered.
-            </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
+            {[
+              { name: "Fredericksburg", slug: "fredericksburg", img: marketFredericksburg, desc: "The heart of Texas wine country, known for legacy ranches, recreational properties, and luxury rural estates." },
+              { name: "Kerrville", slug: "kerrville", img: marketKerrville, desc: "A premier Hill Country destination offering riverfront acreage, wildlife habitat, and large private ranch holdings." },
+              { name: "Dripping Springs", slug: "dripping-springs", img: marketDrippingSprings, desc: "One of the fastest-growing markets for luxury acreage, equestrian properties, and development opportunities." },
+              { name: "Johnson City", slug: "johnson-city", img: marketJohnsonCity, desc: "Highly sought-after for recreational land, vineyards, and long-term investment potential." },
+              { name: "Marble Falls", slug: "marble-falls", img: marketMarbleFalls, desc: "A blend of waterfront opportunities, ranch acreage, and expanding development corridors." },
+              { name: "Burnet", slug: "burnet", img: marketBurnet, desc: "Known for large tracts, hunting properties, and access to some of the region's best recreational land." },
+              { name: "Llano", slug: "llano", img: marketLlano, desc: "Classic Texas ranch country with abundant wildlife, open landscapes, and generational holdings." },
+              { name: "Lampasas", slug: "lampasas", img: marketLampasas, desc: "A growing destination for buyers seeking privacy, agricultural use, and long-term land appreciation." },
+            ].map((m) => (
               <Link
-                to="/contact"
-                className="inline-flex items-center justify-center px-8 py-4 transition-colors duration-300 rounded-sm"
-                style={{ ...labelStyle, background: "#B9A06C", color: "#FFFFFF", border: "1px solid #B9A06C", fontWeight: 600 }}
-                onMouseEnter={(e) => { e.currentTarget.style.background = "#0C0F24"; e.currentTarget.style.borderColor = "#0C0F24"; }}
-                onMouseLeave={(e) => { e.currentTarget.style.background = "#B9A06C"; e.currentTarget.style.borderColor = "#B9A06C"; }}
+                key={m.slug}
+                to={`/land-ranch/${m.slug}`}
+                className="group flex flex-col h-full"
+                aria-label={`Explore the ${m.name} land and ranch market`}
               >
-                Request a Land Evaluation →
+                <div
+                  className="overflow-hidden mb-5"
+                  style={{
+                    border: "1px solid rgba(12,15,36,0.06)",
+                    boxShadow: "0 14px 30px -22px rgba(12,15,36,0.18), 0 6px 14px -10px rgba(12,15,36,0.08)",
+                  }}
+                >
+                  <img
+                    src={m.img}
+                    alt={`${m.name}, Texas Hill Country landscape`}
+                    width={1280}
+                    height={832}
+                    loading="lazy"
+                    decoding="async"
+                    className="block w-full h-[220px] md:h-[240px] object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.04]"
+                  />
+                </div>
+                <h3 className="font-display text-architectural text-xl md:text-[1.4rem] leading-tight mb-2 transition-colors duration-500 group-hover:text-gold">
+                  {m.name}
+                </h3>
+                <p className="text-muted-foreground text-[0.92rem] leading-relaxed mb-4 flex-1">
+                  {m.desc}
+                </p>
+                <span
+                  className="relative inline-flex items-center text-gold pb-0.5 self-start"
+                  style={{ ...labelStyle, fontSize: "0.58rem" }}
+                >
+                  Explore Market
+                  <span aria-hidden="true" className="ml-1.5 inline-block transition-transform duration-500 ease-out group-hover:translate-x-1">→</span>
+                  <span className="absolute bottom-0 left-0 w-full h-px bg-gold scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
+                </span>
               </Link>
-              <Link
-                to="/contact"
-                className="inline-flex items-center justify-center px-8 py-4 transition-colors duration-300 rounded-sm"
-                style={{ ...labelStyle, background: "transparent", color: "#0C0F24", border: "1px solid #0C0F24", fontWeight: 600 }}
-                onMouseEnter={(e) => { e.currentTarget.style.background = "#0C0F24"; e.currentTarget.style.color = "#FFFFFF"; }}
-                onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = "#0C0F24"; }}
-              >
-                Discuss a Private Sale →
-              </Link>
-            </div>
+            ))}
           </div>
         </div>
       </section>

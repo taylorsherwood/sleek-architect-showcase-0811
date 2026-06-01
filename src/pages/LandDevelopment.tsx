@@ -195,38 +195,38 @@ const watchCorridors = [
   {
     name: "SH 130 Corridor",
     location: "East of Austin / Travis & Williamson",
-    explanation: "Tolled bypass connecting Georgetown to San Antonio, now anchoring large-scale industrial, logistics, and data center activity.",
-    demand: "Power-rich employment land with sustained absorption from logistics, manufacturing, and hyperscale tenants.",
+    explanation: "Emerging logistics, industrial, and data center activity along the region's primary bypass route.",
+    demand: "Power-rich employment corridor attracting long-term institutional interest.",
   },
   {
     name: "Georgetown Expansion",
     location: "Northern Williamson County",
-    explanation: "One of the fastest growing cities in the country, with expanding ETJ, utility build-out, and active MUD formation.",
-    demand: "Master planned residential, employment, and supporting commercial along the I-35 and SH 130 spine.",
+    explanation: "Rapid ETJ growth, new utility capacity, and active MUD formation across the I-35 spine.",
+    demand: "Master planned residential and employment land in one of the country's fastest growing cities.",
   },
   {
     name: "Liberty Hill Growth",
     location: "Western Williamson County",
-    explanation: "Rapidly forming school district capacity and arterial expansion supporting a new residential frontier west of Leander.",
-    demand: "Greenfield residential land with rooftop demand outpacing infrastructure delivery.",
+    explanation: "New school capacity and arterial expansion opening a residential frontier west of Leander.",
+    demand: "Greenfield land where rooftop demand is outpacing infrastructure delivery.",
   },
   {
     name: "Bastrop Technology Corridor",
     location: "SH 71 East / Bastrop County",
-    explanation: "Large-employer announcements and east-side capital migration reshaping a historically rural corridor.",
-    demand: "Industrial, employment-adjacent residential, and long-hold land plays tied to corporate site selection.",
+    explanation: "Large-employer announcements reshaping a historically rural corridor east of Austin.",
+    demand: "Long-hold industrial and employment-adjacent land tied to corporate site selection.",
   },
   {
     name: "East Austin Expansion",
     location: "East of I-35, inside Travis County",
-    explanation: "Infill redevelopment, transit investment, and mixed-use rezonings reshaping the urban core eastward.",
-    demand: "Redevelopment sites, assemblage opportunities, and vertical mixed-use along key arterials.",
+    explanation: "Infill redevelopment, transit investment, and mixed-use rezonings reshaping the urban core.",
+    demand: "Assemblage and vertical mixed-use opportunities along key arterials.",
   },
   {
     name: "Kyle & San Marcos Corridor",
     location: "I-35 South / Hays County",
-    explanation: "Continued in-migration from Austin and San Antonio metros, with expanding rooftops and employment base.",
-    demand: "Residential development, build-to-rent, and supporting retail along the I-35 growth band.",
+    explanation: "Sustained in-migration expanding rooftops and the employment base along I-35 South.",
+    demand: "Residential, build-to-rent, and supporting retail across the southern growth band.",
   },
 ];
 
@@ -1024,54 +1024,55 @@ const LandDevelopment = () => {
           </div>
 
           <div className="relative">
-            <div
-              aria-hidden="true"
-              className="hidden md:block absolute left-0 right-0 top-[18px] h-px"
-              style={{ backgroundColor: "rgba(185,160,108,0.4)" }}
-            />
             <div className="overflow-x-auto -mx-6 md:mx-0 px-6 md:px-0 pb-4">
-              <ol className="flex gap-6 md:gap-8 min-w-max md:min-w-0 md:grid md:grid-cols-3 lg:grid-cols-6">
+              <ol className="flex gap-10 md:gap-12 lg:gap-14 min-w-max md:min-w-0 md:grid md:grid-cols-3 lg:grid-cols-6">
                 {watchCorridors.map((c, i) => (
                   <li
                     key={c.name}
                     className="relative w-[260px] md:w-auto flex-shrink-0"
                   >
-                    <div className="flex items-center mb-6">
+                    {/* Timeline row: dot perfectly centered on the gold line */}
+                    <div className="relative h-3 mb-8 flex items-center">
                       <span
-                        className="w-3 h-3 rounded-full flex-shrink-0"
+                        aria-hidden="true"
+                        className="absolute left-0 right-0 top-1/2 -translate-y-1/2 h-px"
+                        style={{ backgroundColor: "rgba(185,160,108,0.4)" }}
+                      />
+                      <span
+                        className="relative w-3 h-3 rounded-full"
                         style={{ backgroundColor: GOLD }}
                         aria-hidden="true"
                       />
                     </div>
                     <p
-                      className="mb-3"
+                      className="mb-4"
                       style={{ ...labelStyle, color: GOLD, fontSize: "0.6rem" }}
                     >
                       {String(i + 1).padStart(2, "0")} &nbsp;/&nbsp; {c.location}
                     </p>
                     <h3
-                      className="text-foreground font-normal leading-[1.2] mb-4"
+                      className="text-foreground font-normal leading-[1.15] mb-5"
                       style={{
                         fontFamily: "'Cinzel', serif",
-                        fontSize: "1.05rem",
+                        fontSize: "clamp(1.15rem, 1.35vw, 1.3rem)",
                       }}
                     >
                       {c.name}
                     </h3>
                     <p
-                      className="text-foreground/72 leading-[1.65] mb-3"
+                      className="text-foreground/72 leading-[1.7] mb-5"
                       style={{
                         fontFamily: "'Jost', sans-serif",
-                        fontSize: "0.88rem",
+                        fontSize: "0.82rem",
                       }}
                     >
                       {c.explanation}
                     </p>
                     <p
-                      className="text-foreground/60 leading-[1.6] italic"
+                      className="text-foreground/55 leading-[1.65] italic"
                       style={{
                         fontFamily: "'Jost', sans-serif",
-                        fontSize: "0.82rem",
+                        fontSize: "0.78rem",
                       }}
                     >
                       {c.demand}

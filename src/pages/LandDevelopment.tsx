@@ -363,7 +363,7 @@ const LandDevelopment = () => {
               <div className="space-y-10 md:space-y-12">
                 {["Power Availability", "Infrastructure Access", "Future Demand"].map(
                   (m, i) => (
-                    <div key={m} className="border-t border-border/60 pt-5">
+                    <div key={m}>
                       <p
                         className="mb-3"
                         style={{ ...labelStyle, color: GOLD, fontSize: "0.62rem" }}

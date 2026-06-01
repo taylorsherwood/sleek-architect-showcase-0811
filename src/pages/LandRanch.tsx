@@ -1383,7 +1383,7 @@ const LandRanch = () => {
               </p>
               <Link
                 to="/contact"
-                className="inline-flex items-center justify-center px-8 py-4 transition-colors duration-300 rounded-sm"
+                className="hidden md:inline-flex items-center justify-center px-8 py-4 transition-colors duration-300 rounded-sm"
                 style={{ ...labelStyle, background: "#B9A06C", color: "#FFFFFF", border: "1px solid #B9A06C", fontWeight: 600 }}
                 onMouseEnter={(e) => { e.currentTarget.style.background = "#0C0F24"; e.currentTarget.style.borderColor = "#0C0F24"; }}
                 onMouseLeave={(e) => { e.currentTarget.style.background = "#B9A06C"; e.currentTarget.style.borderColor = "#B9A06C"; }}

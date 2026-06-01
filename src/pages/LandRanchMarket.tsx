@@ -233,7 +233,10 @@ const LandRanchMarketPage = () => {
                 >
                   {row.label}
                 </p>
-                <p className="text-architectural leading-[1.55] text-[1rem]">
+                <p
+                  className="text-primary leading-[1.6] text-[1rem]"
+                  style={{ fontFamily: '"Jost", sans-serif' }}
+                >
                   {row.value}
                 </p>
               </div>

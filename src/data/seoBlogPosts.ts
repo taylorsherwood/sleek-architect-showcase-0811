@@ -70,6 +70,9 @@ Each strategy addresses a specific decision point upscale buyers routinely face.
 
 If you're relocating from California, New York, Chicago, Seattle, or Florida, Austin's high-end segment has its own dynamics. Pricing logic, neighborhood prestige, school district premiums, and what drives long-term value here don't mirror what you've experienced elsewhere. Understanding those nuances is the first real advantage you can build before you tour a single property. If a move is in front of you, our [relocation guide to Austin](/blog/moving-to-austin-texas-complete-relocation-guide) covers the broader logistics in detail.
 
+:::intel-gauge
+:::
+
 ## 1. Start With Neighborhoods, Not Listings
 
 ### The Challenge It Solves

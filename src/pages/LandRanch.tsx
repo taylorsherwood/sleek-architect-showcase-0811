@@ -805,6 +805,8 @@ const LandRanch = () => {
         </div>
       </section>
 
+      <div className="h-12 md:h-20" aria-hidden="true" />
+
       {/* ── PARALLAX BREAK ──────────────────────── */}
       <div
         className="parallax-break hidden md:block"

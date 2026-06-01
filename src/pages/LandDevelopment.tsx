@@ -46,12 +46,12 @@ const opportunities = [
   {
     title: "Mixed-Use Development",
     body: "Retail, residential, hospitality, and commercial development opportunities.",
-    image: masterplanImg,
+    image: mixedUseImg.url,
   },
   {
     title: "Strategic Land Banking",
     body: "Properties positioned along future growth corridors and infrastructure expansion.",
-    image: corridorImg,
+    image: landBankingImg.url,
   },
   {
     title: "Utility & Infrastructure Corridors",

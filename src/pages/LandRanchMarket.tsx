@@ -154,6 +154,18 @@ const LandRanchMarketPage = () => {
 
       <div className="h-10 md:h-16" aria-hidden="true" />
 
+      {/* ── BUYER / SELLER MARKET BALANCE ─────────────────── */}
+      <Suspense fallback={null}>
+        <MarketBalanceGauge
+          communityName={market.name}
+          marketName={market.name}
+          fallbackMarketName={market.county}
+          eyebrow={`${market.name} · Market Balance`}
+        />
+      </Suspense>
+
+
+
       {/* ── MARKET OVERVIEW ─────────────────────────────────── */}
       <section className="py-14 md:py-20">
         <div className="container mx-auto px-6">

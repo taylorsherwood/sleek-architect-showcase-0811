@@ -424,17 +424,32 @@ const LandDevelopment = () => {
 
           {/* Timeline */}
           <div className="mt-12 md:mt-16">
-            <div className="hidden md:grid grid-cols-9 items-center gap-0">
-              {timeline.map((step, i) => (
-                <Fragment key={step}>
-                  <div className="col-span-1 flex flex-col items-center text-center">
-                    <div
-                      className="w-2.5 h-2.5 rounded-full mb-4"
-                      style={{ backgroundColor: GOLD }}
-                      aria-hidden="true"
-                    />
+            <div className="hidden md:block">
+              <div className="grid grid-cols-9 items-center gap-0">
+                {timeline.map((step, i) => (
+                  <Fragment key={`dot-${step}`}>
+                    <div className="col-span-1 flex justify-center">
+                      <div
+                        className="w-2.5 h-2.5 rounded-full"
+                        style={{ backgroundColor: GOLD }}
+                        aria-hidden="true"
+                      />
+                    </div>
+                    {i < timeline.length - 1 && (
+                      <div
+                        className="col-span-1 h-px"
+                        style={{ backgroundColor: "rgba(185,160,108,0.45)" }}
+                        aria-hidden="true"
+                      />
+                    )}
+                  </Fragment>
+                ))}
+              </div>
+              <div className="grid grid-cols-9 gap-0 mt-4">
+                {timeline.map((step, i) => (
+                  <Fragment key={`label-${step}`}>
                     <p
-                      className="text-foreground"
+                      className="col-span-1 text-foreground text-center"
                       style={{
                         ...labelStyle,
                         fontSize: "0.66rem",
@@ -443,17 +458,12 @@ const LandDevelopment = () => {
                     >
                       {step}
                     </p>
-                  </div>
-                  {i < timeline.length - 1 && (
-                    <div
-                      className="col-span-1 h-px"
-                      style={{ backgroundColor: "rgba(185,160,108,0.45)" }}
-                      aria-hidden="true"
-                    />
-                  )}
-                </Fragment>
-              ))}
+                    {i < timeline.length - 1 && <div className="col-span-1" aria-hidden="true" />}
+                  </Fragment>
+                ))}
+              </div>
             </div>
+
 
             {/* Mobile timeline */}
             <ol className="md:hidden space-y-4 border-l border-[rgba(185,160,108,0.45)] pl-5">

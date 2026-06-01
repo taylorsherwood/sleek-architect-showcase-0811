@@ -449,6 +449,12 @@ const LandRanchMarketPage = () => {
 
       <div className="h-10 md:h-16" aria-hidden="true" />
 
+      {market.slug === "hill-country-ranches" && (
+        <Suspense fallback={null}>
+          <HillCountryBottomBreak />
+        </Suspense>
+      )}
+
       {/* ── FINAL ADVISORY CTA ─────────────────────────────────── */}
       <section className="py-16 md:py-24 bg-secondary/40">
         <div className="container mx-auto px-6">

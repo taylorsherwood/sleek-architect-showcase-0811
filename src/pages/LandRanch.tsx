@@ -1017,14 +1017,12 @@ const LandRanch = () => {
             return (
               <div className="mt-16 md:mt-20">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-[rgba(12,15,36,0.08)] border border-[rgba(12,15,36,0.08)]">
-                  {advisories.slice(0, 2).map(renderCard)}
-                </div>
-                <div className="mt-px grid grid-cols-1 md:grid-cols-2 max-w-[50%] mx-auto bg-[rgba(12,15,36,0.08)] border border-t-0 border-[rgba(12,15,36,0.08)]">
-                  {renderCard(advisories[2])}
+                  {advisories.map(renderCard)}
                 </div>
               </div>
             );
           })()}
+
 
         </div>
       </section>

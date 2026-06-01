@@ -437,12 +437,12 @@ const LandRanch = () => {
       {/* ── SECTION 1.5: MORE THAN LAND ──────────────────────── */}
 
       <section className="py-10 md:py-14">
-        <div className="container mx-auto px-6">
-          <div className="grid md:grid-cols-12 gap-10 md:gap-16 items-center max-w-6xl mx-auto">
-            <div className="md:col-span-5 order-2 md:order-1">
-              <div className="max-w-[460px]">
+        <div className="container mx-auto px-8 md:px-12 lg:px-16">
+          <div className="grid md:grid-cols-12 gap-10 md:gap-14 items-start max-w-6xl mx-auto">
+            <div className="md:col-span-7 order-2 md:order-1">
+              <div className="max-w-[560px]">
                 <p
-                  className="mb-5"
+                  className="mb-4"
                   style={{
                     ...labelStyle,
                     color: "#b9a06c",
@@ -453,11 +453,14 @@ const LandRanch = () => {
                 >
                   LAND ADVISORY
                 </p>
-                <h2 className="font-display text-[1.85rem] md:text-[2.5rem] lg:text-[2.9rem] font-normal text-architectural leading-[1.08] tracking-tight mb-6">
+                <h2
+                  className="font-display font-normal text-architectural leading-[1.05] tracking-tight mb-4 whitespace-nowrap"
+                  style={{ fontSize: "clamp(2rem, 4.4vw, 3.1rem)" }}
+                >
                   More Than Land
                 </h2>
                 <p
-                  className="mb-10"
+                  className="mb-7"
                   style={{
                     fontFamily: '"Jost", sans-serif',
                     fontSize: "0.78rem",
@@ -468,7 +471,7 @@ const LandRanch = () => {
                 >
                   Advising buyers, sellers, investors, and landowners across Austin and the Texas Hill Country.
                 </p>
-                <div className="space-y-6 text-muted-foreground text-[1.05rem] leading-[1.8]">
+                <div className="space-y-5 text-muted-foreground text-[1.05rem] leading-[1.8]">
                   <p>
                     The most valuable land opportunities are rarely defined by acreage alone. They are defined by what they can become.
                   </p>
@@ -476,21 +479,24 @@ const LandRanch = () => {
                     For some owners, that means a legacy ranch held for generations. For others, a future family compound, strategic development opportunity, or long-term investment positioned along the path of growth.
                   </p>
                 </div>
-                <blockquote
-                  className="mt-10 pl-5 text-architectural"
-                  style={{
-                    borderLeft: "1px solid #b9a06c",
-                    fontFamily: '"Jost", sans-serif',
-                    fontSize: "1.125rem",
-                    lineHeight: 1.65,
-                    fontWeight: 400,
-                  }}
-                >
-                  Echelon Property Group evaluates land through privacy, access, water, topography, market demand, and highest-and-best-use potential.
-                </blockquote>
+                <div className="mt-14">
+                  <div className="h-px w-10 bg-[#b9a06c] mb-6" aria-hidden="true" />
+                  <blockquote
+                    className="text-architectural max-w-[46ch]"
+                    style={{
+                      fontFamily: '"Cinzel", serif',
+                      fontSize: "clamp(1.2rem, 1.7vw, 1.4rem)",
+                      lineHeight: 1.5,
+                      fontWeight: 400,
+                      letterSpacing: "0.005em",
+                    }}
+                  >
+                    Echelon Property Group evaluates land through privacy, access, water, topography, market demand, and highest-and-best-use potential.
+                  </blockquote>
+                </div>
               </div>
             </div>
-            <div className="md:col-span-7 order-1 md:order-2">
+            <div className="md:col-span-5 order-1 md:order-2">
               <div
                 className="group overflow-hidden"
                 style={{
@@ -502,7 +508,7 @@ const LandRanch = () => {
                 <img
                   src={editorialImage}
                   alt="Aerial view of a luxury Texas Hill Country ranch at golden hour with a winding private road, live oak groves, and a reflective creek"
-                  className="block w-full h-[440px] md:h-[600px] lg:h-[660px] object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.025]"
+                  className="block w-full h-[360px] md:h-[480px] lg:h-[540px] object-cover object-top transition-transform duration-[1200ms] ease-out group-hover:scale-[1.025]"
                   width={1920}
                   height={1080}
                   loading="lazy"
@@ -513,6 +519,7 @@ const LandRanch = () => {
           </div>
         </div>
       </section>
+
 
 
 

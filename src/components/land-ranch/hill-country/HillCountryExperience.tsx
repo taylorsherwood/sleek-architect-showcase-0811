@@ -11,8 +11,7 @@ import {
   type LandRanchMarket,
 } from "@/data/landRanchMarkets";
 
-import hillCountryVideo from "@/assets/hill-country-cinematic.mp4.asset.json";
-import hillCountryPoster from "@/assets/hill-country-ranches-hero.jpg.asset.json";
+import heroImage from "@/assets/land-ranch-hero.jpg";
 import taylorPortrait from "@/assets/taylor-sherwood-land-ranch.jpg";
 import legacyImg from "@/assets/cat-luxury-ranches.jpg";
 import liveWaterImg from "@/assets/lake-austin-waterfront.jpg";

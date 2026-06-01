@@ -8,7 +8,10 @@ import SchemaMarkup, {
   createFAQSchema,
   realEstateAgentSchema,
 } from "@/components/SchemaMarkup";
-import heroImage from "@/assets/land-ranch-hero.jpg";
+import heroVideoAsset from "@/assets/hill-country-cinematic.mp4.asset.json";
+const heroVideo = heroVideoAsset.url;
+import heroPosterAsset from "@/assets/hill-country-ranches-hero.jpg.asset.json";
+const heroPoster = heroPosterAsset.url;
 import editorialImage from "@/assets/land-ranch-editorial-v2.jpg";
 import advisoryRanchImage from "@/assets/land-ranch-editorial.jpg";
 import exoticWildlifeImage from "@/assets/land-ranch-exotic-wildlife.jpg";

@@ -40,6 +40,7 @@ const LuxuryRealEstateAustin = lazy(() => import("@/pages/LuxuryRealEstateAustin
 const AustinRealEstateInvestment = lazy(() => import("@/pages/AustinRealEstateInvestment"));
 const LandForSaleAustin = lazy(() => import("@/pages/LandForSaleAustin"));
 const LandRanch = lazy(() => import("@/pages/LandRanch"));
+const LandRanchMarket = lazy(() => import("@/pages/LandRanchMarket"));
 const SearchPage = lazy(() => import("@/pages/Search"));
 const LandPage = lazy(() => import("@/pages/Land"));
 const PastTransactions = lazy(() => import("@/pages/PastTransactions"));

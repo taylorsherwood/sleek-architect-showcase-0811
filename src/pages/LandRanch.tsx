@@ -586,7 +586,12 @@ const LandRanch = () => {
               The Spectrum of Central Texas Land
             </h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          {/* Mobile swipe hint */}
+          <div className="flex sm:hidden items-center gap-2 mb-4 text-gold animate-fade-in" style={{ ...labelStyle, fontSize: "0.6rem" }}>
+            <span>Swipe to explore</span>
+            <span aria-hidden="true" className="inline-block animate-[slide-in-right_1.4s_ease-in-out_infinite]">→</span>
+          </div>
+          <div className="flex sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 overflow-x-auto sm:overflow-visible snap-x snap-mandatory sm:snap-none -mx-6 px-6 sm:mx-0 sm:px-0 pb-4 sm:pb-0 scroll-pl-6 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
             {categories.map((c, i) => {
               const isOff = (c as { isOffMarket?: boolean }).isOffMarket;
               const CardInner = (
@@ -636,14 +641,14 @@ const LandRanch = () => {
                 <Link
                   key={c.title}
                   to="/off-market-real-estate-austin"
-                  className="group relative overflow-hidden bg-architectural block"
+                  className="group relative overflow-hidden bg-architectural block shrink-0 w-[82%] sm:w-auto snap-start"
                 >
                   {CardInner}
                 </Link>
               ) : (
                 <article
                   key={c.title}
-                  className="group relative overflow-hidden bg-architectural"
+                  className="group relative overflow-hidden bg-architectural shrink-0 w-[82%] sm:w-auto snap-start"
                 >
                   {CardInner}
                 </article>

@@ -451,7 +451,7 @@ const LandRanchMarketPage = () => {
               </Link>
               <Link
                 to="/land-ranch"
-                className="inline-flex items-center justify-center border border-architectural text-architectural hover:bg-architectural hover:text-white px-8 py-4 transition-colors duration-300"
+                className="inline-flex items-center justify-center border border-foreground text-foreground hover:bg-foreground hover:text-background px-8 py-4 transition-colors duration-300"
                 style={labelStyle}
               >
                 Return to Land & Ranch

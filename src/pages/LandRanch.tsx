@@ -1,4 +1,4 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { Instagram, Linkedin } from "lucide-react";
 import Navigation from "@/components/Navigation";
@@ -11,6 +11,8 @@ import SchemaMarkup, {
 import heroImage from "@/assets/land-ranch-hero.jpg";
 import editorialImage from "@/assets/land-ranch-editorial-v2.jpg";
 import exoticWildlifeImage from "@/assets/land-ranch-exotic-wildlife.jpg";
+import exoticWildlifeVideoAsset from "@/assets/exotic-wildlife.mp4.asset.json";
+const exoticWildlifeVideo = exoticWildlifeVideoAsset.url;
 import catLuxuryRanches from "@/assets/cat-luxury-ranches.jpg";
 import catRecreational from "@/assets/cat-recreational-land.jpg";
 import catInvestment from "@/assets/cat-investment-acreage.jpg";
@@ -173,6 +175,127 @@ const faqs = [
       "The right answer depends on your goals, holding costs, tax basis, current market conditions, and the property's specific position relative to growth. In Central Texas, certain corridors have appreciated meaningfully, while others remain early in their cycle. A proper analysis weighs current market value, future trajectory, carrying costs, and how the asset fits within your broader portfolio.",
   },
 ];
+
+const ExoticWildlifeVideoBand = () => {
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+  const [shouldLoad, setShouldLoad] = useState(false);
+  const [reducedMotion, setReducedMotion] = useState(false);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const apply = () => setReducedMotion(mq.matches);
+    apply();
+    mq.addEventListener?.("change", apply);
+    return () => mq.removeEventListener?.("change", apply);
+  }, []);
+
+  useEffect(() => {
+    if (reducedMotion) return;
+    const el = containerRef.current;
+    if (!el || typeof IntersectionObserver === "undefined") {
+      setShouldLoad(true);
+      return;
+    }
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            setShouldLoad(true);
+            io.disconnect();
+          }
+        });
+      },
+      { rootMargin: "200px" }
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, [reducedMotion]);
+
+  useEffect(() => {
+    if (shouldLoad && videoRef.current) {
+      videoRef.current.play().catch(() => {});
+    }
+  }, [shouldLoad]);
+
+  return (
+    <section className="w-full">
+      <div
+        ref={containerRef}
+        className="relative w-full overflow-hidden"
+        style={{ aspectRatio: "21 / 9" }}
+      >
+        {!reducedMotion && shouldLoad ? (
+          <video
+            ref={videoRef}
+            className="absolute inset-0 w-full h-full object-cover"
+            src={exoticWildlifeVideo}
+            poster={exoticWildlifeImage}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            aria-hidden="true"
+          />
+        ) : (
+          <img
+            src={exoticWildlifeImage}
+            alt="Texas exotic wildlife ranch landscape"
+            className="absolute inset-0 w-full h-full object-cover"
+            loading="lazy"
+          />
+        )}
+
+        {/* subtle navy gradient for legibility */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(180deg, rgba(12,15,36,0.32) 0%, rgba(12,15,36,0.18) 45%, rgba(12,15,36,0.55) 100%)",
+          }}
+          aria-hidden="true"
+        />
+
+        {/* overlay copy */}
+        <div className="absolute inset-0 flex items-end md:items-center">
+          <div className="container mx-auto px-6 pb-10 md:pb-0">
+            <div className="max-w-2xl text-white">
+              <p
+                className="text-[11px] md:text-xs tracking-[0.32em] uppercase mb-4 md:mb-6"
+                style={{ color: "#b9a06c", fontFamily: "'Jost', sans-serif" }}
+              >
+                Texas Exotic Wildlife
+              </p>
+              <h2
+                className="font-light leading-[1.1] mb-5 md:mb-7"
+                style={{
+                  fontFamily: "'Cinzel', serif",
+                  fontSize: "clamp(1.75rem, 4vw, 3rem)",
+                  letterSpacing: "0.01em",
+                }}
+              >
+                Ranch Ownership With a Different Kind of Wild
+              </h2>
+              <p
+                className="text-white/85 leading-relaxed max-w-xl"
+                style={{
+                  fontFamily: "'Jost', sans-serif",
+                  fontSize: "clamp(0.95rem, 1.1vw, 1.05rem)",
+                }}
+              >
+                From axis deer and blackbuck to zebra and oryx, select Texas
+                ranches offer a rare blend of recreation, stewardship, and
+                private land ownership.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
 
 const LandRanch = () => {
   return (
@@ -515,6 +638,11 @@ const LandRanch = () => {
 
         </div>
       </section>
+
+      <div className="h-10 md:h-16" aria-hidden="true" />
+
+      {/* ── CINEMATIC EXOTIC WILDLIFE VIDEO BAND ─────────────────────── */}
+      <ExoticWildlifeVideoBand />
 
       <div className="h-10 md:h-16" aria-hidden="true" />
 

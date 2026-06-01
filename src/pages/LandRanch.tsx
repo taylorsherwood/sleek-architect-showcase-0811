@@ -396,8 +396,8 @@ const LandRanch = () => {
               </a>
             </div>
             <div className="md:col-span-7 space-y-5 text-muted-foreground leading-relaxed text-[1.0625rem]">
-              <p className="whitespace-pre-line">
-                {"\n\n"}Unlike traditional residential real estate, land value is often driven by factors that
+              <p className="mt-8">
+                Unlike traditional residential real estate, land value is often driven by factors that
                 aren't immediately visible. Water availability, topography, access, utilities,
                 development potential, wildlife exemptions, agricultural valuation, frontage, and
                 highest-and-best-use analysis can dramatically impact value.

@@ -38,6 +38,7 @@ const marketLampasas = marketLampasasAsset.url;
 
 import taylorPortrait from "@/assets/taylor-sherwood-land-ranch.jpg";
 import echelonWatermarkLogo from "@/assets/echelon-watermark-logo.png";
+const ExoticWildlifeGallery = lazy(() => import("@/components/land-ranch/ExoticWildlifeGallery"));
 
 
 

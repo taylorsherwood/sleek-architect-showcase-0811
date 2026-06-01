@@ -348,7 +348,7 @@ const LandRanch = () => {
         />
         <div className="absolute inset-0 sm:hidden" style={{ background: "linear-gradient(to bottom, rgba(12,15,36,0.68) 0%, rgba(12,15,36,0.52) 46%, rgba(12,15,36,0.24) 100%)" }} />
 
-        <div className="relative z-10 flex h-full items-start px-6 pt-6 md:hidden">
+        <div className="relative z-10 flex h-full items-start px-6 pt-24 md:hidden">
           <div className="w-full max-w-[390px]">
             <p className="text-gold mb-3" style={labelStyle}>
               LAND & RANCH

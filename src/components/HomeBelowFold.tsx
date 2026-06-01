@@ -20,6 +20,7 @@ import expEchelonLogo from "@/assets/exp-echelon-logo.png";
 import echelonWatermarkLogo from "@/assets/echelon-watermark-logo.png";
 import lakeAustinTestimonialImg from "@/assets/lake-austin-luxury-testimonials.webp";
 import LandRanchHomeIntro from "@/components/LandRanchHomeIntro";
+import parallaxBridgeAsset from "@/assets/parallax-bridge-sunset.webp.asset.json";
 
 // Blog images use lazy-friendly static paths (not eager imports) to avoid
 // pulling ~836 KB into the initial HomeBelowFold chunk. These are only
@@ -1538,7 +1539,14 @@ const HomeBelowFold = () => (
       <ExpertiseSection />
     </Suspense>
 
+    <div
+      className="parallax-break parallax-break--no-tint hidden md:block"
+      style={{ backgroundImage: `url('${parallaxBridgeAsset.url}')`, contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties}
+      aria-hidden="true"
+    />
+
     <LandRanchHomeIntro />
+
 
     <TestimonialsSection />
     <div className="h-8 md:h-12 bg-secondary" aria-hidden="true" />

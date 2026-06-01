@@ -19,13 +19,8 @@ const MarketBalanceGauge = lazy(
 const ExoticWildlifeGallery = lazy(
   () => import("@/components/land-ranch/ExoticWildlifeGallery"),
 );
-const HillCountryTopEnhancements = lazy(
-  () => import("@/components/land-ranch/HillCountryEnhancements"),
-);
-const HillCountryBottomBreak = lazy(() =>
-  import("@/components/land-ranch/HillCountryEnhancements").then((m) => ({
-    default: m.HillCountryBottomBreak,
-  })),
+const HillCountryExperience = lazy(
+  () => import("@/components/land-ranch/hill-country/HillCountryExperience"),
 );
 
 const SITE = "https://www.echelonpropertygroup.com";
@@ -64,6 +59,16 @@ const LandRanchMarketPage = () => {
   if (!market) {
     return <Navigate to="/land-ranch" replace />;
   }
+
+  // Hill Country uses a fully bespoke advisory experience.
+  if (market.slug === "hill-country-ranches") {
+    return (
+      <Suspense fallback={<div className="min-h-screen bg-background" />}>
+        <HillCountryExperience />
+      </Suspense>
+    );
+  }
+
 
   const canonical = `/land-ranch/${market.slug}`;
   const relatedMarkets = landRanchMarkets
@@ -230,11 +235,6 @@ const LandRanchMarketPage = () => {
         </Suspense>
       )}
 
-      {market.slug === "hill-country-ranches" && (
-        <Suspense fallback={null}>
-          <HillCountryTopEnhancements />
-        </Suspense>
-      )}
 
       {/* ── AGENT INTEL · PROPERTY TYPES · WHY BUYERS ──────────────
           Hidden on hill-country-ranches: the cinematic video, by-the-numbers
@@ -456,11 +456,6 @@ const LandRanchMarketPage = () => {
 
       <div className="h-10 md:h-16" aria-hidden="true" />
 
-      {market.slug === "hill-country-ranches" && (
-        <Suspense fallback={null}>
-          <HillCountryBottomBreak />
-        </Suspense>
-      )}
 
       {/* ── FINAL ADVISORY CTA ─────────────────────────────────── */}
       <section className="py-16 md:py-24 bg-secondary/40">

@@ -1394,6 +1394,38 @@ const LandRanch = () => {
 
 
 
+      {/* ── NEW: LAND BUYER PROCESS ─────────────────────────────────────── */}
+      <section className="py-14 md:py-20">
+        <div className="container mx-auto px-6">
+          <div className="max-w-3xl mb-14">
+            <p className="text-gold mb-5" style={labelStyle}>PROCESS</p>
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-normal text-architectural leading-[1.1]">
+              The Land Buyer Process
+            </h2>
+          </div>
+          <ol className="grid grid-cols-1 md:grid-cols-5 gap-px bg-[rgba(12,15,36,0.08)] border border-[rgba(12,15,36,0.08)]">
+            {[
+              ["01", "Identify Opportunity", "Define the goal, the geography, and the kind of land that fits the long-term plan."],
+              ["02", "Evaluate Constraints", "Review access, water, utilities, exemptions, and any encumbrances on title."],
+              ["03", "Due Diligence", "Surveys, environmental review, floodplain, mineral, and entitlement analysis."],
+              ["04", "Negotiate Terms", "Structure price, contingencies, and timing to protect the buyer's position."],
+              ["05", "Close with Confidence", "Coordinate closing with clarity on what the buyer is acquiring and why."],
+            ].map(([n, t, d]) => (
+              <li
+                key={n}
+                className="group relative bg-background p-8 md:p-9 border border-transparent transition-all duration-500 ease-out hover:scale-[1.02] hover:border-gold hover:z-10"
+              >
+                <p className="text-gold mb-4" style={{ ...labelStyle, fontSize: "0.55rem" }}>{`STEP ${n}`}</p>
+                <p className="font-display text-architectural text-xl md:text-2xl leading-snug mb-3 transition-colors duration-300 group-hover:text-gold">{t}</p>
+                <p className="text-muted-foreground text-[0.9rem] leading-relaxed">{d}</p>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      <div className="h-10 md:h-16" aria-hidden="true" />
+
       {/* ── NEW: LAND ACQUISITION & DEVELOPMENT ADVISORY ───────────────── */}
       <section className="py-14 md:py-20">
         <div className="container mx-auto px-6">
@@ -1433,38 +1465,6 @@ const LandRanch = () => {
               </dl>
             </div>
           </div>
-        </div>
-      </section>
-
-      <div className="h-10 md:h-16" aria-hidden="true" />
-
-      {/* ── NEW: LAND BUYER PROCESS ─────────────────────────────────────── */}
-      <section className="py-14 md:py-20">
-        <div className="container mx-auto px-6">
-          <div className="max-w-3xl mb-14">
-            <p className="text-gold mb-5" style={labelStyle}>PROCESS</p>
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-normal text-architectural leading-[1.1]">
-              The Land Buyer Process
-            </h2>
-          </div>
-          <ol className="grid grid-cols-1 md:grid-cols-5 gap-px bg-[rgba(12,15,36,0.08)] border border-[rgba(12,15,36,0.08)]">
-            {[
-              ["01", "Identify Opportunity", "Define the goal, the geography, and the kind of land that fits the long-term plan."],
-              ["02", "Evaluate Constraints", "Review access, water, utilities, exemptions, and any encumbrances on title."],
-              ["03", "Due Diligence", "Surveys, environmental review, floodplain, mineral, and entitlement analysis."],
-              ["04", "Negotiate Terms", "Structure price, contingencies, and timing to protect the buyer's position."],
-              ["05", "Close with Confidence", "Coordinate closing with clarity on what the buyer is acquiring and why."],
-            ].map(([n, t, d]) => (
-              <li
-                key={n}
-                className="group relative bg-background p-8 md:p-9 border border-transparent transition-all duration-500 ease-out hover:scale-[1.02] hover:border-gold hover:z-10"
-              >
-                <p className="text-gold mb-4" style={{ ...labelStyle, fontSize: "0.55rem" }}>{`STEP ${n}`}</p>
-                <p className="font-display text-architectural text-xl md:text-2xl leading-snug mb-3 transition-colors duration-300 group-hover:text-gold">{t}</p>
-                <p className="text-muted-foreground text-[0.9rem] leading-relaxed">{d}</p>
-              </li>
-            ))}
-          </ol>
         </div>
       </section>
 

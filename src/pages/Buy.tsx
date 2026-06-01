@@ -25,6 +25,7 @@ import {
 import listing2 from "@/assets/listing-2.jpg";
 import listing3 from "@/assets/listing-3.webp";
 import heroImg from "@/assets/hero-luxury-austin.jpg";
+import buyerConsultationBg from "@/assets/buyer-consultation-bg.jpg.asset.json";
 import bartonCreekImg from "@/assets/community-barton-creek.jpg";
 import westlakeImg from "@/assets/community-westlake-hills.webp";
 import lakeAustinImg from "@/assets/community-lake-austin.jpg";
@@ -571,7 +572,7 @@ const Buy = () => {
       {/* ── CTA / Contact Form ── */}
       <section id="buyer-consultation" className="relative py-28 overflow-hidden">
         <div className="absolute inset-0">
-          <img src={heroImg} alt="Austin luxury real estate consultation" className="w-full h-full object-cover" loading="lazy" decoding="async" />
+          <img src={buyerConsultationBg.url} alt="Austin luxury real estate consultation" className="w-full h-full object-cover" loading="lazy" decoding="async" />
           <div className="absolute inset-0 bg-[#0C0F24]/45" />
         </div>
         <div className="relative z-10 container mx-auto px-6">

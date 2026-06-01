@@ -632,6 +632,7 @@ export const landRanchMarkets: LandRanchMarket[] = [
       eyebrow: "RECREATION",
       headline: "Axis, blackbuck, oryx, zebra — and the ranches that steward them",
       body: "Ownership in this category is closer to running a private reserve than maintaining a recreational tract. Days are organized around herds, water, fence lines, and managed hunts, with a way of life that has very few peers anywhere else in the country.",
+      image: exoticWildlifeRecreationAsset.url,
     },
   },
 ];

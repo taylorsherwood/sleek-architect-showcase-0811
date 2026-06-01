@@ -494,6 +494,7 @@ const LandDevelopment = () => {
                         ...labelStyle,
                         fontSize: "0.66rem",
                         letterSpacing: "0.26em",
+                        textIndent: "0.26em",
                       }}
                     >
                       {step}

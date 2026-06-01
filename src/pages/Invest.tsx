@@ -12,6 +12,8 @@ import SmsConsent from "@/components/SmsConsent";
 const ScrollReveal = lazy(() => import("@/components/ScrollReveal"));
 const BeforeAfterSlider = lazy(() => import("@/components/BeforeAfterSlider"));
 const Footer = lazy(() => import("@/components/Footer"));
+import LandCrossLinks from "@/components/LandCrossLinks";
+
 import kitchenBefore from "@/assets/kitchen-before.jpg";
 import kitchenAfter from "@/assets/kitchen-after.jpeg";
 import kitchen02Before from "@/assets/kitchen-02-before.jpg";

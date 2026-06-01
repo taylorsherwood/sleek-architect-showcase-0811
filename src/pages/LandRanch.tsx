@@ -736,7 +736,7 @@ const LandRanch = () => {
       <div className="h-12 md:h-20" aria-hidden="true" />
 
       {/* ── NEW: WHY LAND REQUIRES DIFFERENT REPRESENTATION ─────────────── */}
-      <section className="py-16 md:py-24">
+      <section className="py-10 md:py-14">
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-12 gap-12 md:gap-20 max-w-6xl mx-auto">
             <div className="md:col-span-5">

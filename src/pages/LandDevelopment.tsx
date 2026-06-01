@@ -555,6 +555,71 @@ const LandDevelopment = () => {
 
       <div className="h-16 md:h-24" aria-hidden="true" />
 
+      {/* ── SECTION 3.5: ACTIVE DEVELOPMENT THEMES ───────────────── */}
+      <section className="bg-background overflow-hidden">
+        <div className="container mx-auto px-6 md:px-12">
+          <div className="max-w-3xl mb-10 md:mb-14">
+            <p className="mb-5" style={{ ...labelStyle, color: GOLD }}>
+              Active Development Themes
+            </p>
+            <h2
+              className="text-foreground font-normal leading-[1.1]"
+              style={{
+                fontFamily: "'Cinzel', serif",
+                fontSize: "clamp(1.6rem, 3.4vw, 2.6rem)",
+              }}
+            >
+              Investment Theses Shaping<br className="hidden md:block" /> Central Texas Land
+            </h2>
+          </div>
+        </div>
+        <div
+          className="overflow-x-auto pb-4 -mx-6 md:-mx-12 px-6 md:px-12 scrollbar-thin"
+          style={{ scrollbarWidth: "thin" }}
+        >
+          <ul className="flex gap-5 md:gap-6 min-w-max">
+            {themes.map((t, i) => (
+              <li
+                key={t.title}
+                className="group flex-shrink-0 w-[280px] md:w-[320px] border-t border-border/60 pt-6"
+              >
+                <p
+                  className="mb-4"
+                  style={{ ...labelStyle, color: GOLD, fontSize: "0.62rem" }}
+                >
+                  Thesis {String(i + 1).padStart(2, "0")}
+                </p>
+                <h3
+                  className="text-foreground font-normal leading-[1.2] mb-4"
+                  style={{
+                    fontFamily: "'Cinzel', serif",
+                    fontSize: "1.25rem",
+                  }}
+                >
+                  {t.title}
+                </h3>
+                <span
+                  aria-hidden="true"
+                  className="block h-px w-8 mb-4 origin-left transition-transform duration-700 ease-out group-hover:scale-x-[2.2]"
+                  style={{ backgroundColor: GOLD }}
+                />
+                <p
+                  className="text-foreground/72 leading-[1.6]"
+                  style={{
+                    fontFamily: "'Jost', sans-serif",
+                    fontSize: "0.92rem",
+                  }}
+                >
+                  {t.thesis}
+                </p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <div className="h-16 md:h-24" aria-hidden="true" />
+
       {/* ── SECTION 4: FRAMEWORK / WHAT WE EVALUATE ────────────────── */}
       <section className="bg-[hsl(var(--surface,40_15%_96%))]" style={{ backgroundColor: "#F2EFEA" }}>
         <div className="container mx-auto px-6 md:px-12 py-16 md:py-24">
@@ -611,6 +676,86 @@ const LandDevelopment = () => {
                 </p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <div className="h-16 md:h-24" aria-hidden="true" />
+
+      {/* ── SECTION 4.5: WHAT SOPHISTICATED BUYERS ASK FIRST ───────── */}
+      <section className="bg-background">
+        <div className="container mx-auto px-6 md:px-12">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+            <div className="lg:col-span-4">
+              <p className="mb-5" style={{ ...labelStyle, color: GOLD }}>
+                Advisory Briefing
+              </p>
+              <h2
+                className="text-foreground font-normal leading-[1.1] mb-6"
+                style={{
+                  fontFamily: "'Cinzel', serif",
+                  fontSize: "clamp(1.55rem, 2.8vw, 2.2rem)",
+                }}
+              >
+                What Sophisticated<br />Buyers Ask First
+              </h2>
+              <p
+                className="text-foreground/70 leading-[1.7] max-w-sm"
+                style={{ fontFamily: "'Jost', sans-serif", fontSize: "0.98rem" }}
+              >
+                The questions that separate disciplined land underwriting from
+                speculation, framed the way institutional capital evaluates a
+                site.
+              </p>
+            </div>
+            <div className="lg:col-span-8">
+              <Accordion type="single" collapsible className="w-full">
+                {advisoryQuestions.map((item, i) => (
+                  <AccordionItem
+                    key={item.q}
+                    value={`q-${i}`}
+                    className="border-b border-border/60"
+                  >
+                    <AccordionTrigger
+                      className="py-6 hover:no-underline group text-left"
+                    >
+                      <div className="flex items-start gap-6 w-full pr-4">
+                        <span
+                          style={{
+                            ...labelStyle,
+                            color: GOLD,
+                            fontSize: "0.6rem",
+                          }}
+                          className="pt-1.5 flex-shrink-0"
+                        >
+                          {String(i + 1).padStart(2, "0")}
+                        </span>
+                        <span
+                          className="text-foreground font-normal leading-[1.3] flex-1"
+                          style={{
+                            fontFamily: "'Cinzel', serif",
+                            fontSize: "clamp(1rem, 1.3vw, 1.18rem)",
+                          }}
+                        >
+                          {item.q}
+                        </span>
+                      </div>
+                    </AccordionTrigger>
+                    <AccordionContent className="pb-8">
+                      <p
+                        className="text-foreground/72 leading-[1.75] max-w-2xl ml-[3.25rem]"
+                        style={{
+                          fontFamily: "'Jost', sans-serif",
+                          fontSize: "1rem",
+                        }}
+                      >
+                        {item.a}
+                      </p>
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </div>
           </div>
         </div>
       </section>
@@ -697,89 +842,295 @@ const LandDevelopment = () => {
 
       <div className="h-16 md:h-24" aria-hidden="true" />
 
-      {/* ── SECTION 6: PRIVATE OPPORTUNITIES ───────────────────── */}
-      <section className="bg-background">
-        <div className="container mx-auto px-6 md:px-12">
-          <div className="max-w-4xl mx-auto text-center">
-            <p className="mb-6" style={{ ...labelStyle, color: GOLD }}>
-              Private Opportunities
+      {/* ── SECTION 5.5: GROWTH CORRIDORS TO WATCH ───────────────── */}
+      <section className="bg-[#F2EFEA]">
+        <div className="container mx-auto px-6 md:px-12 py-16 md:py-24">
+          <div className="max-w-3xl mb-12 md:mb-16">
+            <p className="mb-5" style={{ ...labelStyle, color: GOLD }}>
+              Corridor Research
             </p>
             <h2
-              className="text-foreground font-normal leading-[1.12] mb-8"
+              className="text-foreground font-normal leading-[1.1] mb-6"
               style={{
                 fontFamily: "'Cinzel', serif",
-                fontSize: "clamp(1.55rem, 3.2vw, 2.5rem)",
+                fontSize: "clamp(1.6rem, 3.4vw, 2.6rem)",
               }}
             >
-              Many Development Opportunities<br className="hidden md:block" />{" "}
-              Never Reach Public Marketing
+              Growth Corridors to Watch
             </h2>
-            <span
-              aria-hidden="true"
-              className="mx-auto block h-px w-12 mb-8"
-              style={{ backgroundColor: GOLD }}
-            />
             <p
-              className="text-foreground/72 leading-[1.7] max-w-2xl mx-auto"
-              style={{ fontFamily: "'Jost', sans-serif", fontSize: "1.02rem" }}
+              className="text-foreground/70 leading-[1.7] max-w-2xl"
+              style={{ fontFamily: "'Jost', sans-serif", fontSize: "1rem" }}
             >
-              Some of the most compelling development sites change hands through
-              private introductions, direct landowner relationships, investor
-              networks, and broker-to-broker collaboration rather than public
-              listing platforms.
+              A research view of the corridors most likely to attract capital,
+              entitlements, and infrastructure investment over the next
+              development cycle.
             </p>
+          </div>
+
+          <div className="relative">
+            <div
+              aria-hidden="true"
+              className="hidden md:block absolute left-0 right-0 top-[18px] h-px"
+              style={{ backgroundColor: "rgba(185,160,108,0.4)" }}
+            />
+            <div className="overflow-x-auto -mx-6 md:mx-0 px-6 md:px-0 pb-4">
+              <ol className="flex gap-6 md:gap-8 min-w-max md:min-w-0 md:grid md:grid-cols-3 lg:grid-cols-6">
+                {watchCorridors.map((c, i) => (
+                  <li
+                    key={c.name}
+                    className="relative w-[260px] md:w-auto flex-shrink-0"
+                  >
+                    <div className="flex items-center mb-6">
+                      <span
+                        className="w-3 h-3 rounded-full flex-shrink-0"
+                        style={{ backgroundColor: GOLD }}
+                        aria-hidden="true"
+                      />
+                    </div>
+                    <p
+                      className="mb-3"
+                      style={{ ...labelStyle, color: GOLD, fontSize: "0.6rem" }}
+                    >
+                      {String(i + 1).padStart(2, "0")} &nbsp;/&nbsp; {c.location}
+                    </p>
+                    <h3
+                      className="text-foreground font-normal leading-[1.2] mb-4"
+                      style={{
+                        fontFamily: "'Cinzel', serif",
+                        fontSize: "1.05rem",
+                      }}
+                    >
+                      {c.name}
+                    </h3>
+                    <p
+                      className="text-foreground/72 leading-[1.65] mb-3"
+                      style={{
+                        fontFamily: "'Jost', sans-serif",
+                        fontSize: "0.88rem",
+                      }}
+                    >
+                      {c.explanation}
+                    </p>
+                    <p
+                      className="text-foreground/60 leading-[1.6] italic"
+                      style={{
+                        fontFamily: "'Jost', sans-serif",
+                        fontSize: "0.82rem",
+                      }}
+                    >
+                      {c.demand}
+                    </p>
+                  </li>
+                ))}
+              </ol>
+            </div>
           </div>
         </div>
       </section>
 
       <div className="h-16 md:h-24" aria-hidden="true" />
 
-      {/* ── SECTION 7: WHO WE WORK WITH ───────────────────── */}
-      <section className="bg-background border-y border-border/40">
-        <div className="container mx-auto px-6 md:px-12 py-14 md:py-20">
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
-            <div className="md:col-span-4">
-              <p className="mb-5" style={{ ...labelStyle, color: GOLD }}>
-                Who We Work With
+      {/* ── SECTION 6: PRIVATE OPPORTUNITIES ───────────────────── */}
+      <section className="bg-background">
+        <div className="container mx-auto px-6 md:px-12">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+            <div className="lg:col-span-6">
+              <p className="mb-6" style={{ ...labelStyle, color: GOLD }}>
+                Private Opportunities
               </p>
               <h2
-                className="text-foreground font-normal leading-[1.15]"
+                className="text-foreground font-normal leading-[1.08] mb-8"
                 style={{
                   fontFamily: "'Cinzel', serif",
-                  fontSize: "clamp(1.5rem, 2.6vw, 2rem)",
+                  fontSize: "clamp(1.7rem, 3.4vw, 2.7rem)",
                 }}
               >
-                Advisory For Capital,<br />Builders, & Landowners
+                Not Every Opportunity<br />Is Publicly Marketed
               </h2>
+              <span
+                aria-hidden="true"
+                className="block h-px w-12 mb-8"
+                style={{ backgroundColor: GOLD }}
+              />
+              <div
+                className="text-foreground/72 leading-[1.75] space-y-5 max-w-xl"
+                style={{
+                  fontFamily: "'Jost', sans-serif",
+                  fontSize: "1.02rem",
+                }}
+              >
+                <p>
+                  Many development sites change hands through direct landowner
+                  conversations, broker networks, family offices, and strategic
+                  introductions rather than public listing platforms.
+                </p>
+                <p>
+                  Sourcing at this level is less a search problem than a
+                  relationship problem. The most consequential transactions are
+                  routed through a small network of advisors who hold the trust
+                  of both landowners and capital.
+                </p>
+              </div>
             </div>
-            <div className="md:col-span-8">
-              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-5">
-                {audience.map((a) => (
-                  <li
-                    key={a}
-                    className="flex items-center gap-4 py-3 border-b border-border/50"
-                  >
-                    <span
-                      className="inline-block h-px w-6"
-                      style={{ backgroundColor: GOLD }}
-                      aria-hidden="true"
-                    />
-                    <span
-                      className="text-foreground"
-                      style={{
-                        fontFamily: "'Jost', sans-serif",
-                        fontSize: "1rem",
-                      }}
+
+            {/* Relationship diagram */}
+            <div className="lg:col-span-6">
+              <div className="relative w-full" style={{ aspectRatio: "5 / 4" }}>
+                <svg
+                  viewBox="0 0 500 400"
+                  className="absolute inset-0 w-full h-full"
+                  fill="none"
+                  preserveAspectRatio="xMidYMid meet"
+                  aria-hidden="true"
+                >
+                  <defs>
+                    <marker
+                      id="ld-arrow"
+                      viewBox="0 0 10 10"
+                      refX="8"
+                      refY="5"
+                      markerWidth="6"
+                      markerHeight="6"
+                      orient="auto-start-reverse"
                     >
-                      {a}
-                    </span>
-                  </li>
-                ))}
-              </ul>
+                      <path d="M0,0 L10,5 L0,10 z" fill={GOLD} />
+                    </marker>
+                  </defs>
+
+                  {/* Lines */}
+                  <line x1="80" y1="80" x2="250" y2="200" stroke={GOLD} strokeWidth="1" markerEnd="url(#ld-arrow)" />
+                  <line x1="250" y1="200" x2="420" y2="80" stroke={GOLD} strokeWidth="1" markerEnd="url(#ld-arrow)" />
+                  <line x1="250" y1="200" x2="250" y2="340" stroke={GOLD} strokeWidth="1" markerEnd="url(#ld-arrow)" />
+
+                  {/* Faint connecting ring */}
+                  <circle cx="250" cy="200" r="120" stroke="rgba(185,160,108,0.18)" strokeWidth="1" strokeDasharray="2 4" />
+                  <circle cx="250" cy="200" r="170" stroke="rgba(185,160,108,0.1)" strokeWidth="1" strokeDasharray="2 6" />
+
+                  {/* Nodes */}
+                  <circle cx="80" cy="80" r="5" fill={GOLD} />
+                  <circle cx="420" cy="80" r="5" fill={GOLD} />
+                  <circle cx="250" cy="200" r="7" fill={GOLD} />
+                  <circle cx="250" cy="340" r="5" fill={GOLD} />
+                </svg>
+
+                {/* Labels (absolutely positioned over SVG) */}
+                <div className="absolute" style={{ left: "0%", top: "8%" }}>
+                  <p style={{ ...labelStyle, color: GOLD, fontSize: "0.6rem" }} className="mb-1">
+                    Source
+                  </p>
+                  <p
+                    className="text-foreground font-normal"
+                    style={{ fontFamily: "'Cinzel', serif", fontSize: "1.05rem" }}
+                  >
+                    Landowner
+                  </p>
+                </div>
+
+                <div className="absolute text-right" style={{ right: "0%", top: "8%" }}>
+                  <p style={{ ...labelStyle, color: GOLD, fontSize: "0.6rem" }} className="mb-1">
+                    Capital
+                  </p>
+                  <p
+                    className="text-foreground font-normal"
+                    style={{ fontFamily: "'Cinzel', serif", fontSize: "1.05rem" }}
+                  >
+                    Investor
+                  </p>
+                </div>
+
+                <div
+                  className="absolute text-center -translate-x-1/2"
+                  style={{ left: "50%", top: "42%" }}
+                >
+                  <p style={{ ...labelStyle, color: GOLD, fontSize: "0.6rem" }} className="mb-1">
+                    Echelon Property Group
+                  </p>
+                  <p
+                    className="text-foreground font-normal"
+                    style={{ fontFamily: "'Cinzel', serif", fontSize: "1.15rem" }}
+                  >
+                    Advisor
+                  </p>
+                </div>
+
+                <div
+                  className="absolute text-center -translate-x-1/2"
+                  style={{ left: "50%", bottom: "4%" }}
+                >
+                  <p style={{ ...labelStyle, color: GOLD, fontSize: "0.6rem" }} className="mb-1">
+                    Outcome
+                  </p>
+                  <p
+                    className="text-foreground font-normal"
+                    style={{ fontFamily: "'Cinzel', serif", fontSize: "1.05rem" }}
+                  >
+                    Development
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
+
+      <div className="h-16 md:h-24" aria-hidden="true" />
+
+      {/* ── SECTION 7: WHO THIS PAGE IS FOR ───────────────────── */}
+      <section className="bg-background border-y border-border/40">
+        <div className="container mx-auto px-6 md:px-12 py-16 md:py-24">
+          <div className="max-w-3xl mb-12 md:mb-16">
+            <p className="mb-5" style={{ ...labelStyle, color: GOLD }}>
+              Who This Page Is For
+            </p>
+            <h2
+              className="text-foreground font-normal leading-[1.1]"
+              style={{
+                fontFamily: "'Cinzel', serif",
+                fontSize: "clamp(1.6rem, 3.2vw, 2.5rem)",
+              }}
+            >
+              Advisory Across the Capital Stack
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-12">
+            {audience.map((a, i) => (
+              <div key={a.title} className="border-t border-border/60 pt-6">
+                <p
+                  className="mb-4"
+                  style={{ ...labelStyle, color: GOLD, fontSize: "0.6rem" }}
+                >
+                  {String(i + 1).padStart(2, "0")}
+                </p>
+                <h3
+                  className="text-foreground font-normal leading-[1.2] mb-4"
+                  style={{
+                    fontFamily: "'Cinzel', serif",
+                    fontSize: "1.3rem",
+                  }}
+                >
+                  {a.title}
+                </h3>
+                <span
+                  aria-hidden="true"
+                  className="block h-px w-8 mb-4"
+                  style={{ backgroundColor: GOLD }}
+                />
+                <p
+                  className="text-foreground/72 leading-[1.7]"
+                  style={{
+                    fontFamily: "'Jost', sans-serif",
+                    fontSize: "0.95rem",
+                  }}
+                >
+                  {a.body}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
 
       {/* ── SECTION 8: FINAL CTA ───────────────────── */}
       <section className="relative bg-primary text-white overflow-hidden">

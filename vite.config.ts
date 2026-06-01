@@ -136,6 +136,10 @@ const getSitemapRoutes = (): { route: string; lastmod?: string }[] => {
     ...extractBlogIdDatePairs("blogPosts.ts"),
   };
   const blogIds = Object.keys(blogDates).filter((id) => !excludedBlogIds.has(id));
+  const landRanchSlugs = [...fs
+    .readFileSync(path.join(__dirname, "src/data/landRanchMarkets.ts"), "utf-8")
+    .matchAll(/slug:\s*"([^"]+)"/g)]
+    .map((m) => m[1]);
 
   const map = new Map<string, { route: string; lastmod?: string }>();
   for (const route of sitemapStaticRoutes) map.set(route, { route });
@@ -146,6 +150,12 @@ const getSitemapRoutes = (): { route: string; lastmod?: string }[] => {
   for (const id of blogIds) {
     const r = `/blog/${id}`;
     map.set(r, { route: r, lastmod: blogDates[id] });
+  }
+  // Land & Ranch hub + market pages
+  map.set("/land-ranch", { route: "/land-ranch" });
+  for (const slug of landRanchSlugs) {
+    const r = `/land-ranch/${slug}`;
+    map.set(r, { route: r });
   }
   // Standalone editorial pillar
   map.set("/blog/austin-luxury-market-trends", { route: "/blog/austin-luxury-market-trends" });

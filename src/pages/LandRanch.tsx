@@ -939,7 +939,7 @@ const LandRanch = () => {
                   }}
                   onMouseEnter={(e) => {
                     e.currentTarget.style.background = "#B9A06C";
-                    e.currentTarget.style.color = "#0C0F24";
+                    e.currentTarget.style.color = "#FFFFFF";
                   }}
                   onMouseLeave={(e) => {
                     e.currentTarget.style.background = "#0C0F24";

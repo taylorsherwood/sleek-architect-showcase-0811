@@ -209,7 +209,7 @@ const LandRanch = () => {
               className="font-display font-normal text-white leading-[1.06] mb-4"
               style={{ fontSize: "1.82rem", textShadow: "0 1px 3px rgba(0,0,0,0.38)" }}
             >
-              Austin Area Land & Ranch Opportunities
+              Austin Area&nbsp;<br />Land & Ranch Opportunities
             </h1>
             <p
               className="text-white/90 leading-relaxed mb-5 text-[0.88rem]"
@@ -249,7 +249,7 @@ const LandRanch = () => {
                 className="font-display font-normal text-white leading-[1.1] tracking-tight mb-4 md:mb-7"
                 style={{ fontSize: "clamp(1.6rem, 5vw, 4rem)", textShadow: "0 1px 3px rgba(0,0,0,0.35)" }}
               >
-                Austin Area Land &<br />Ranch Opportunities
+                Austin Area&nbsp;<br />Land & Ranch Opportunities
               </h1>
               <p
                 className="text-white/85 leading-relaxed mb-7 md:mb-10 max-w-xl text-[0.95rem] md:text-base lg:text-lg"

@@ -2,6 +2,8 @@ import { lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 const Footer = lazy(() => import("@/components/Footer"));
+import LandCrossLinks from "@/components/LandCrossLinks";
+
 import AboutBlock from "@/components/AboutBlock";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createFAQSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
@@ -382,7 +384,15 @@ const AustinCommercialRealEstate = () => {
       </article>
 
       <AboutBlock />
+      <LandCrossLinks
+        variant="ivory"
+        cards={["development"]}
+        eyebrow="ADJACENT ADVISORY"
+        heading="Austin Land Development & Strategic Acreage"
+        intro="Development sites, infill land, commercial acreage, industrial outdoor storage, and data center tracts across Central Texas growth corridors."
+      />
       <Suspense fallback={<div className="min-h-[100px]" />}><Footer /></Suspense>
+
     </div>
   );
 };

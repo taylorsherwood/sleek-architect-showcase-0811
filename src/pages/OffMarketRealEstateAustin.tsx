@@ -427,6 +427,70 @@ const OffMarketRealEstateAustin = () => {
         ctaLabel="Access the Current Edition"
       />
 
+      {/* ── Off-market categories: cross-links to land & development ── */}
+      <section className="py-16 md:py-24 bg-[hsl(220,15%,6%)] border-t border-white/[0.04]">
+        <div className="container mx-auto px-6 max-w-5xl">
+          <p
+            className="text-[hsl(var(--gold))] mb-5 text-center"
+            style={{ fontFamily: "var(--font-jost), 'Jost', sans-serif", fontSize: "0.7rem", letterSpacing: "0.32em", textTransform: "uppercase", fontWeight: 500 }}
+          >
+            What Private Access Includes
+          </p>
+          <h2 className="font-display text-2xl md:text-3xl lg:text-4xl font-light text-white text-center leading-[1.2] mb-6">
+            Beyond Luxury Homes
+          </h2>
+          <p className="text-white/55 text-center leading-relaxed max-w-2xl mx-auto mb-10 text-[1.0625rem]">
+            Off-market opportunities in Central Texas extend well beyond residential. We also work quietly with landowners, builders, and developers on{" "}
+            <Link to="/land-ranch" className="text-white/85 underline decoration-[hsl(var(--gold))]/40 underline-offset-4 hover:text-[hsl(var(--gold))] transition-colors">
+              Texas Hill Country ranches and acreage
+            </Link>
+            ,{" "}
+            <Link to="/land-development" className="text-white/85 underline decoration-[hsl(var(--gold))]/40 underline-offset-4 hover:text-[hsl(var(--gold))] transition-colors">
+              development sites and strategic land
+            </Link>
+            , and commercial tracts long before they are widely marketed.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-white/[0.06]">
+            <Link
+              to="/land-ranch"
+              className="group bg-[hsl(220,15%,8%)] hover:bg-[hsl(220,15%,10%)] transition-colors p-8 md:p-10"
+            >
+              <p
+                className="text-[hsl(var(--gold))] mb-3"
+                style={{ fontFamily: "var(--font-jost), 'Jost', sans-serif", fontSize: "0.6rem", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 500 }}
+              >
+                Land & Ranch Advisory
+              </p>
+              <h3 className="font-display text-xl md:text-[1.4rem] text-white leading-snug group-hover:text-[hsl(var(--gold))] transition-colors">
+                Private Hill Country Ranches & Acreage
+              </h3>
+              <p className="mt-4 text-white/55 text-[0.95rem] leading-relaxed">
+                Legacy ranches, live-water tracts, and recreational land shared discreetly with qualified buyers.
+              </p>
+            </Link>
+            <Link
+              to="/land-development"
+              className="group bg-[hsl(220,15%,8%)] hover:bg-[hsl(220,15%,10%)] transition-colors p-8 md:p-10"
+            >
+              <p
+                className="text-[hsl(var(--gold))] mb-3"
+                style={{ fontFamily: "var(--font-jost), 'Jost', sans-serif", fontSize: "0.6rem", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 500 }}
+              >
+                Land Development Advisory
+              </p>
+              <h3 className="font-display text-xl md:text-[1.4rem] text-white leading-snug group-hover:text-[hsl(var(--gold))] transition-colors">
+                Private Development & Strategic Acreage
+              </h3>
+              <p className="mt-4 text-white/55 text-[0.95rem] leading-relaxed">
+                Entitled tracts, infill assemblages, and path-of-growth sites moved quietly through relationships.
+              </p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+
+
       {/* ── Footer (minimal) ────────────────────────── */}
       <footer className="py-8 bg-[hsl(220,15%,5%)] border-t border-white/5">
         <div className="container mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">

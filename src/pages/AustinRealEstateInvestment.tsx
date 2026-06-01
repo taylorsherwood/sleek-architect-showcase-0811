@@ -2,6 +2,8 @@ import { lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 const Footer = lazy(() => import("@/components/Footer"));
+import LandCrossLinks from "@/components/LandCrossLinks";
+
 import AboutBlock from "@/components/AboutBlock";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createFAQSchema, realEstateAgentSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
@@ -216,8 +218,15 @@ const AustinRealEstateInvestment = () => {
       </article>
 
       <AboutBlock />
+      <LandCrossLinks
+        variant="ivory"
+        eyebrow="ADJACENT STRATEGIES"
+        heading="Land, Ranch & Development Investing"
+        intro="Ranch acquisitions, strategic acreage, and Central Texas growth corridors often sit alongside a residential investment thesis."
+      />
       <RelatedInsights />
       <Suspense fallback={<div className="min-h-[100px]" />}><Footer /></Suspense>
+
     </div>
   );
 };

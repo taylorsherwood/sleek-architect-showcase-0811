@@ -12,6 +12,26 @@ import Navigation from "@/components/Navigation";
 // CMS-driven gated report (teaser + gate + full unlocked content).
 const GATED_REPORT_SLUGS = new Set<string>(["westlake-hills"]);
 const Footer = lazy(() => import("@/components/Footer"));
+import LandCrossLinks from "@/components/LandCrossLinks";
+
+// Communities where land & ranch / development advisory is geographically relevant
+const LAND_CROSSLINK_SLUGS = new Set<string>([
+  "dripping-springs",
+  "bee-cave",
+  "lakeway",
+  "fredericksburg",
+  "johnson-city",
+  "liberty-hill",
+  "georgetown",
+  "bastrop",
+  "kyle",
+  "san-marcos",
+  "wimberley",
+  "spicewood",
+  "marble-falls",
+  "leander",
+]);
+
 const AgentIntelMarketSnapshot = lazy(() => import("@/components/market-intel/AgentIntelMarketSnapshot"));
 const MarketBalanceGauge = lazy(() => import("@/components/market-intel/MarketBalanceGauge"));
 
@@ -683,7 +703,16 @@ const CommunityPage = () => {
       </article>
 
       <AboutBlock />
+      {LAND_CROSSLINK_SLUGS.has(community.slug) && (
+        <LandCrossLinks
+          variant="ivory"
+          eyebrow="REGIONAL ADVISORY"
+          heading={`Land, Ranch & Development Near ${community.name}`}
+          intro="Acreage estates, Hill Country ranches, and path-of-growth development sites are a meaningful part of this market. We advise on both quietly and openly."
+        />
+      )}
       <Suspense fallback={<div className="min-h-[100px]" />}><Footer /></Suspense>
+
     </div>
   );
 };

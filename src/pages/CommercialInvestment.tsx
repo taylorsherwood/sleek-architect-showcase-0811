@@ -12,6 +12,8 @@ import killeenPortfolio from "@/assets/commercial-killeen-portfolio.jpg";
 import s11thStreet from "@/assets/commercial-s-11th-street.webp";
 
 const Footer = lazy(() => import("@/components/Footer"));
+import LandCrossLinks from "@/components/LandCrossLinks";
+
 
 const labelStyle = {
   fontSize: "0.6rem" as const,
@@ -693,10 +695,19 @@ const CommercialInvestment = () => {
         </div>
       </section>
 
+      <LandCrossLinks
+        variant="ivory"
+        cards={["development"]}
+        eyebrow="ADJACENT ADVISORY"
+        heading="Development Sites & Strategic Acreage"
+        intro="Beyond core commercial product, we advise on infill assemblages, industrial outdoor storage, data center sites, and path-of-growth land across Central Texas."
+      />
+
       {/* ── Footer ── */}
       <Suspense fallback={<div className="min-h-[100px]" />}>
         <Footer />
       </Suspense>
+
     </div>
   );
 };

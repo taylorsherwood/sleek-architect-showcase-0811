@@ -2,6 +2,8 @@ import { lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 const Footer = lazy(() => import("@/components/Footer"));
+import LandCrossLinks from "@/components/LandCrossLinks";
+
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createBreadcrumbSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
 import { MapPin, Building2, TrendingUp } from "lucide-react";
@@ -178,7 +180,15 @@ const PrivateOpportunitiesPage = () => {
         </div>
       </section>
 
+      <LandCrossLinks
+        variant="ivory"
+        eyebrow="PRIVATE LAND ACCESS"
+        heading="Private Land & Development Opportunities"
+        intro="Private ranches, acreage estates, and development tracts are often shared discreetly with landowners, builders, and investors before they reach the public market."
+      />
+
       <Suspense fallback={<div className="min-h-[100px]" />}><Footer /></Suspense>
+
     </div>
   );
 };

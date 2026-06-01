@@ -42,7 +42,8 @@ import blogAustinMultifamilyInstitutional from "@/assets/blog-austin-multifamily
 import blogWhatMakesLuxury from "@/assets/blog-what-makes-luxury-real-estate.jpg";
 import blogChooseLuxuryAdvisor from "@/assets/blog-luxury-advisor-austin.jpg";
 import blogAustinTopZipUp from "@/assets/blog-austin-top-zip-code-up.jpg";
-import blogHowToBuyLuxuryHomeAustin from "@/assets/blog/how-to-buy-luxury-home-austin.webp";
+import blogHowToBuyLuxuryHomeAustinAsset from "@/assets/blog/how-to-buy-luxury-home-austin.avif.asset.json";
+const blogHowToBuyLuxuryHomeAustin = blogHowToBuyLuxuryHomeAustinAsset.url;
 
 import { BlogPost } from "./blogPosts";
 

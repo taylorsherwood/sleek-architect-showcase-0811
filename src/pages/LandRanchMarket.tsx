@@ -154,6 +154,18 @@ const LandRanchMarketPage = () => {
 
       <div className="h-10 md:h-16" aria-hidden="true" />
 
+      {/* ── BUYER / SELLER MARKET BALANCE ─────────────────── */}
+      <Suspense fallback={null}>
+        <MarketBalanceGauge
+          communityName={market.name}
+          marketName={market.name}
+          fallbackMarketName={market.county}
+          eyebrow={`${market.name} · Market Balance`}
+        />
+      </Suspense>
+
+
+
       {/* ── MARKET OVERVIEW ─────────────────────────────────── */}
       <section className="py-14 md:py-20">
         <div className="container mx-auto px-6">
@@ -233,7 +245,10 @@ const LandRanchMarketPage = () => {
                 >
                   {row.label}
                 </p>
-                <p className="text-architectural leading-[1.55] text-[1rem]">
+                <p
+                  className="text-primary leading-[1.6] text-[1rem]"
+                  style={{ fontFamily: '"Jost", sans-serif' }}
+                >
                   {row.value}
                 </p>
               </div>
@@ -249,17 +264,7 @@ const LandRanchMarketPage = () => {
         </div>
       </section>
 
-      {/* ── BUYER / SELLER MARKET BALANCE ─────────────────── */}
-      <Suspense fallback={null}>
-        <MarketBalanceGauge
-          communityName={market.name}
-          marketName={market.name}
-          fallbackMarketName={market.county}
-          eyebrow={`${market.name.toUpperCase()} · MARKET BALANCE`}
-        />
-      </Suspense>
 
-      <div className="h-10 md:h-16" aria-hidden="true" />
 
       {/* ── PROPERTY TYPES ─────────────────────────────────── */}
       <section className="py-14 md:py-20">

@@ -1050,7 +1050,7 @@ const LandRanch = () => {
                       <h3
                         className="text-architectural text-[0.95rem] md:text-[1rem] mb-3 transition-colors duration-300 group-hover:text-gold"
                         style={{
-                          fontFamily: "'Jost', sans-serif',",
+                          fontFamily: "'Jost', sans-serif",
                           fontWeight: 600,
                           letterSpacing: "0.04em",
                           textTransform: "uppercase",

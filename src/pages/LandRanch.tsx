@@ -967,96 +967,6 @@ const LandRanch = () => {
 
       <div className="h-10 md:h-16" aria-hidden="true" />
 
-      {/* ── NEW: WHY LAND REQUIRES DIFFERENT REPRESENTATION ─────────────── */}
-      <section className="py-20 md:py-28 lg:py-32">
-        <div className="container mx-auto px-6">
-          <div className="grid md:grid-cols-12 gap-12 md:gap-20 max-w-6xl mx-auto">
-            {/* LEFT — Editorial intro */}
-            <div className="md:col-span-5 md:pr-4 md:border-r md:border-[#b9a06c]/40">
-              <p className="text-gold mb-4" style={{ ...labelStyle, fontSize: "0.6rem" }}>
-                ADVISORY
-              </p>
-              <h2 className="font-display text-[1.75rem] md:text-[2.1rem] lg:text-[2.4rem] font-normal text-architectural leading-[1.1] tracking-[-0.005em] mb-8 max-w-[18ch]">
-                Why Land Requires Different Representation
-              </h2>
-              <p className="text-muted-foreground leading-[1.85] text-[1.0625rem] max-w-[500px]">
-                Land is not a house on a larger lot. It is a separate discipline with its own diligence, its own buyer pool, and a different set of questions that determine real value. Working with an advisor who has lived inside those questions changes the outcome.
-              </p>
-              <p
-                className="text-gold mt-8"
-                style={{ ...labelStyle, fontSize: "0.6rem", letterSpacing: "0.28em" }}
-              >
-                Land transactions involve variables most residential buyers never encounter.
-              </p>
-            </div>
-
-            {/* RIGHT — Advisory items */}
-            <div className="md:col-span-7">
-              <dl>
-                {[
-                  ["Water Access", "Wells, surface water, river frontage, and groundwater district rules."],
-                  ["Agricultural Exemptions", "Tax valuations tied to qualifying agricultural use and history."],
-                  ["Wildlife Exemptions", "Wildlife management plans that preserve favorable valuations."],
-                  ["Mineral Rights", "Surface vs. mineral ownership, leases, and reservations."],
-                  ["Easements & Access", "Recorded, prescriptive, and shared access affecting use and value."],
-                  ["Road Frontage", "Public, private, and county road access and condition."],
-                  ["Floodplain & Topography", "Buildable area, drainage, slope, and FEMA designations."],
-                  ["Development Feasibility", "Utilities, entitlement path, and highest and best use."],
-                ].map(([t, d], i) => (
-                  <div
-                    key={t}
-                    className="group relative grid grid-cols-[2.75rem_1fr] gap-5 md:gap-7 py-7 md:py-8 px-3 md:px-5 -mx-3 md:-mx-5 transition-colors duration-300 hover:bg-[#FAFAF8]"
-                  >
-                    {/* Animated left border on hover */}
-                    <span
-                      aria-hidden="true"
-                      className="absolute left-0 top-0 bottom-0 w-[3px] bg-[#b9a06c] scale-y-0 group-hover:scale-y-100 origin-top transition-transform duration-500 ease-out"
-                    />
-                    {/* Hairline divider between rows */}
-                    {i !== 0 && (
-                      <span
-                        aria-hidden="true"
-                        className="absolute left-3 right-3 md:left-5 md:right-5 top-0 h-px bg-[rgba(12,15,36,0.12)]"
-                      />
-                    )}
-
-                    <dt
-                      className="text-gold pt-[0.2rem] tabular-nums"
-                      style={{
-                        ...labelStyle,
-                        fontSize: "0.65rem",
-                        letterSpacing: "0.22em",
-                        fontWeight: 500,
-                      }}
-                    >
-                      {String(i + 1).padStart(2, "0")}
-                    </dt>
-                    <div>
-                      <h3
-                        className="text-architectural text-[0.95rem] md:text-[1rem] mb-3 transition-colors duration-300 group-hover:text-gold"
-                        style={{
-                          fontFamily: "'Jost', sans-serif",
-                          fontWeight: 600,
-                          letterSpacing: "0.04em",
-                          textTransform: "uppercase",
-                        }}
-                      >
-                        {t}
-                      </h3>
-                      <p className="text-muted-foreground text-[1rem] leading-[1.75] max-w-[58ch]">
-                        {d}
-                      </p>
-                    </div>
-                  </div>
-                ))}
-              </dl>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div className="h-10 md:h-16" aria-hidden="true" />
-
       {/* ── SECTION 6.9: MEET YOUR ADVISOR ──────────────────────── */}
       <section
         className="relative overflow-hidden"
@@ -1257,6 +1167,95 @@ const LandRanch = () => {
                 </Link>
               </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div className="h-10 md:h-16" aria-hidden="true" />
+
+      {/* ── NEW: WHY LAND REQUIRES DIFFERENT REPRESENTATION ─────────────── */}
+      <section className="py-20 md:py-28 lg:py-32">
+        <div className="container mx-auto px-6">
+          <div className="grid md:grid-cols-12 gap-12 md:gap-20 max-w-6xl mx-auto">
+            {/* LEFT — Editorial intro */}
+            <div className="md:col-span-5 md:pr-4 md:border-r md:border-[#b9a06c]/40">
+              <p className="text-gold mb-4" style={{ ...labelStyle, fontSize: "0.6rem" }}>
+                ADVISORY
+              </p>
+              <h2 className="font-display text-[1.75rem] md:text-[2.1rem] lg:text-[2.4rem] font-normal text-architectural leading-[1.1] tracking-[-0.005em] mb-8 max-w-[18ch]">
+                Why Land Requires Different Representation
+              </h2>
+              <p className="text-muted-foreground leading-[1.85] text-[1.0625rem] max-w-[500px]">
+                Land is not a house on a larger lot. It is a separate discipline with its own diligence, its own buyer pool, and a different set of questions that determine real value. Working with an advisor who has lived inside those questions changes the outcome.
+              </p>
+              <p
+                className="text-gold mt-8"
+                style={{ ...labelStyle, fontSize: "0.6rem", letterSpacing: "0.28em" }}
+              >
+                Land transactions involve variables most residential buyers never encounter.
+              </p>
+            </div>
+
+            {/* RIGHT — Advisory items */}
+            <div className="md:col-span-7">
+              <dl>
+                {[
+                  ["Water Access", "Wells, surface water, river frontage, and groundwater district rules."],
+                  ["Agricultural Exemptions", "Tax valuations tied to qualifying agricultural use and history."],
+                  ["Wildlife Exemptions", "Wildlife management plans that preserve favorable valuations."],
+                  ["Mineral Rights", "Surface vs. mineral ownership, leases, and reservations."],
+                  ["Easements & Access", "Recorded, prescriptive, and shared access affecting use and value."],
+                  ["Road Frontage", "Public, private, and county road access and condition."],
+                  ["Floodplain & Topography", "Buildable area, drainage, slope, and FEMA designations."],
+                  ["Development Feasibility", "Utilities, entitlement path, and highest and best use."],
+                ].map(([t, d], i) => (
+                  <div
+                    key={t}
+                    className="group relative grid grid-cols-[2.75rem_1fr] gap-5 md:gap-7 py-7 md:py-8 px-3 md:px-5 -mx-3 md:-mx-5 transition-colors duration-300 hover:bg-[#FAFAF8]"
+                  >
+                    {/* Animated left border on hover */}
+                    <span
+                      aria-hidden="true"
+                      className="absolute left-0 top-0 bottom-0 w-[3px] bg-[#b9a06c] scale-y-0 group-hover:scale-y-100 origin-top transition-transform duration-500 ease-out"
+                    />
+                    {/* Hairline divider between rows */}
+                    {i !== 0 && (
+                      <span
+                        aria-hidden="true"
+                        className="absolute left-3 right-3 md:left-5 md:right-5 top-0 h-px bg-[rgba(12,15,36,0.12)]"
+                      />
+                    )}
+
+                    <dt
+                      className="text-gold pt-[0.2rem] tabular-nums"
+                      style={{
+                        ...labelStyle,
+                        fontSize: "0.65rem",
+                        letterSpacing: "0.22em",
+                        fontWeight: 500,
+                      }}
+                    >
+                      {String(i + 1).padStart(2, "0")}
+                    </dt>
+                    <div>
+                      <h3
+                        className="text-architectural text-[0.95rem] md:text-[1rem] mb-3 transition-colors duration-300 group-hover:text-gold"
+                        style={{
+                          fontFamily: "'Jost', sans-serif",
+                          fontWeight: 600,
+                          letterSpacing: "0.04em",
+                          textTransform: "uppercase",
+                        }}
+                      >
+                        {t}
+                      </h3>
+                      <p className="text-muted-foreground text-[1rem] leading-[1.75] max-w-[58ch]">
+                        {d}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </dl>
             </div>
           </div>
         </div>

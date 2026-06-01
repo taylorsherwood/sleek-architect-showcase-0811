@@ -6,7 +6,7 @@ import marketMarbleFallsAsset from "@/assets/market-marble-falls.jpg.asset.json"
 import marketBurnetAsset from "@/assets/market-burnet.webp.asset.json";
 import marketLlanoAsset from "@/assets/market-llano.jpg.asset.json";
 import marketLampasasAsset from "@/assets/market-lampasas.jpg.asset.json";
-import hillCountryHero from "@/assets/land-ranch-hero.jpg";
+import hillCountryHeroAsset from "@/assets/hill-country-ranches-hero.jpg.asset.json";
 import exoticWildlifeHero from "@/assets/land-ranch-exotic-wildlife.jpg";
 
 export type PropertyType =
@@ -515,7 +515,7 @@ export const landRanchMarkets: LandRanchMarket[] = [
     kind: "theme",
     heroEyebrow: "REGIONAL ADVISORY",
     heroHeadline: "Texas Hill Country Ranches & Legacy Acreage",
-    heroImage: hillCountryHero,
+    heroImage: hillCountryHeroAsset.url,
     positioning:
       "Legacy ranches, live-water tracts, recreational acreage, and private retreats across the heart of Central Texas.",
     metaTitle: "Texas Hill Country Ranches for Sale | Echelon Property Group",

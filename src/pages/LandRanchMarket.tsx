@@ -356,7 +356,7 @@ const LandRanchMarketPage = () => {
       <div className="h-10 md:h-16" aria-hidden="true" />
 
       {/* ── FEATURED OPPORTUNITIES CTA ─────────────────────────────────── */}
-      <section className="py-14 md:py-20 bg-architectural text-white">
+      <section className="py-14 md:py-20 text-white" style={{ background: "#0C0F24" }}>
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-gold mb-5" style={labelStyle}>
@@ -368,7 +368,7 @@ const LandRanchMarketPage = () => {
             <p className="text-white/80 leading-relaxed text-[1.0625rem] mb-9 max-w-2xl mx-auto">
               The most relevant tracts in {market.name} rarely reach open marketing.
               Qualified buyers receive a curated, off-market view of what is actually
-              moving — before it becomes public.
+              moving before it becomes public.
             </p>
             <Link
               to="/off-market-real-estate-austin"

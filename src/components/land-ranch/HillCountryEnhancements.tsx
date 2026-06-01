@@ -69,8 +69,9 @@ const categories: {
   },
 ];
 
-/** Used only on /land-ranch/hill-country-ranches to add rhythm, contrast, and visual hierarchy. */
-const HillCountryEnhancements = () => {
+/** Top enhancements: parallax break + by-the-numbers + map + categories.
+ *  Injected on /land-ranch/hill-country-ranches after the MARKET OVERVIEW. */
+export const HillCountryTopEnhancements = () => {
   return (
     <>
       {/* ── PARALLAX VISUAL BREAK 1 ───────────────────────── */}

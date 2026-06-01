@@ -10,6 +10,7 @@ import SchemaMarkup, {
 } from "@/components/SchemaMarkup";
 import heroImage from "@/assets/land-ranch-hero.jpg";
 import editorialImage from "@/assets/land-ranch-editorial-v2.jpg";
+import advisoryRanchImage from "@/assets/land-ranch-editorial.jpg";
 import exoticWildlifeImage from "@/assets/land-ranch-exotic-wildlife.jpg";
 import exoticWildlifeVideoAsset from "@/assets/exotic-wildlife.mp4.asset.json";
 const exoticWildlifeVideo = exoticWildlifeVideoAsset.url;

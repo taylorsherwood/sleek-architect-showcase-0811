@@ -7,7 +7,7 @@ import marketBurnetAsset from "@/assets/market-burnet.webp.asset.json";
 import marketLlanoAsset from "@/assets/market-llano.jpg.asset.json";
 import marketLampasasAsset from "@/assets/market-lampasas.jpg.asset.json";
 import hillCountryHeroAsset from "@/assets/hill-country-ranches-hero.jpg.asset.json";
-import exoticWildlifeHero from "@/assets/land-ranch-exotic-wildlife.jpg";
+import exoticWildlifeHeroAsset from "@/assets/exotic-wildlife-ranches-hero.jpg.asset.json";
 
 export type PropertyType =
   | "Ranches"
@@ -579,7 +579,7 @@ export const landRanchMarkets: LandRanchMarket[] = [
     kind: "theme",
     heroEyebrow: "SPECIALIZED ADVISORY",
     heroHeadline: "Texas Ranches With Managed Exotic Wildlife",
-    heroImage: exoticWildlifeHero,
+    heroImage: exoticWildlifeHeroAsset.url,
     positioning:
       "A specialized advisory practice for ranches with axis deer, blackbuck, oryx, zebra, fallow deer, and other managed exotic wildlife.",
     metaTitle: "Texas Exotic Wildlife Ranches for Sale | Echelon Property Group",

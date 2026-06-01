@@ -121,8 +121,10 @@ const ExpertiseSection = () => {
                     alt={block.alt}
                     loading="lazy"
                     decoding="async"
-                    className="absolute inset-0 w-full h-full object-cover"
+                    className="absolute w-full object-cover"
                     style={{
+                      height: "125%",
+                      bottom: 0,
                       transition: "transform 800ms cubic-bezier(0.22, 1, 0.36, 1)",
                       objectPosition: (block as { objectPosition?: string }).objectPosition ?? "center",
                     }}

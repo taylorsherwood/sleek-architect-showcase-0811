@@ -40,6 +40,7 @@ const LuxuryRealEstateAustin = lazy(() => import("@/pages/LuxuryRealEstateAustin
 const AustinRealEstateInvestment = lazy(() => import("@/pages/AustinRealEstateInvestment"));
 const LandForSaleAustin = lazy(() => import("@/pages/LandForSaleAustin"));
 const LandRanch = lazy(() => import("@/pages/LandRanch"));
+const LandRanchMarket = lazy(() => import("@/pages/LandRanchMarket"));
 const SearchPage = lazy(() => import("@/pages/Search"));
 const LandPage = lazy(() => import("@/pages/Land"));
 const PastTransactions = lazy(() => import("@/pages/PastTransactions"));
@@ -132,6 +133,7 @@ const AppRoutes = () => {
           <Route path="/search" element={<SearchPage />} />
           <Route path="/land" element={<LandPage />} />
           <Route path="/land-ranch" element={<LandRanch />} />
+          <Route path="/land-ranch/:slug" element={<LandRanchMarket />} />
           <Route path="/past-transactions" element={<PastTransactions />} />
           <Route path="/connect" element={<Connect />} />
           <Route path="/best-neighborhoods-in-austin-texas" element={<BestNeighborhoodsAustin />} />

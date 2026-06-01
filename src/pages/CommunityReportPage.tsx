@@ -80,7 +80,7 @@ const CommunityReportPage = () => {
     if (community.slug !== "westlake-hills") {
       items.push({ id: "homes", label: "Homes" });
     }
-    items.push({ id: "take", label: "Echelon's Take" });
+    items.push({ id: "take", label: "Echelon Property Group's Take" });
     return items;
   }, [community]);
 
@@ -235,7 +235,7 @@ const CommunityReportPage = () => {
                     <li>• Schools by level</li>
                     <li>• Walk / Bike / Transit scores</li>
                     <li>• Current listings via RealScout</li>
-                    <li>• Echelon's Take</li>
+                    <li>• Echelon Property Group's Take</li>
                   </ul>
                 </div>
               </div>
@@ -352,7 +352,7 @@ const CommunityReportPage = () => {
                       Current Listings in {community.name}
                     </h2>
                     <p className="text-sm text-muted-foreground mb-6">
-                      Live inventory from MLS, curated through Echelon's RealScout integration.
+                      Live inventory from MLS, curated through Echelon Property Group's RealScout integration.
                     </p>
                     <Suspense
                       fallback={
@@ -453,7 +453,7 @@ const CommunityReportPage = () => {
                   </h2>
                   <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
                     Whether you are buying, selling, or considering an off-market opportunity,
-                    Echelon can help you act with full information.
+                    Echelon Property Group can help you act with full information.
                   </p>
                   <div className="flex flex-wrap justify-center gap-4">
                     <Link

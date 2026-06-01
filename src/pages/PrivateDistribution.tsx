@@ -566,7 +566,7 @@ const PrivateDistributionIndex = () => {
                 fontWeight: 500,
               }}
             >
-              Echelon · Private Distribution
+              Echelon Property Group · Private Distribution
             </span>
             <span
               className="hidden sm:inline"
@@ -1102,7 +1102,7 @@ const PrivateDistributionIndex = () => {
                             lineHeight: 1.6,
                           }}
                         >
-                          Echelon Desk
+                          Echelon Property Group Desk
                         </p>
                       </div>
                     </div>

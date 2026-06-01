@@ -134,7 +134,7 @@ const LandRanchHomeIntro = () => {
                 marginBottom: "clamp(28px, 3vw, 40px)",
               }}
             >
-              Echelon advises buyers, sellers, investors, and landowners across
+              Echelon Property Group advises buyers, sellers, investors, and landowners across
               some of Central Texas&apos; most sought-after ranch, recreational,
               development, and acreage markets. From legacy Hill Country ranches
               and hunting properties to infill opportunities and large-scale land

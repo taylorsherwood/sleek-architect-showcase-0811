@@ -53,7 +53,7 @@ const AustinCommercialRealEstate = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Austin Commercial Real Estate | Echelon Property Group"
-        description="Austin commercial real estate brokerage: tenant representation, investment acquisitions, development land, and office opportunities from Echelon."
+        description="Austin commercial real estate brokerage: tenant representation, investment acquisitions, development land, and office opportunities from Echelon Property Group."
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createFAQSchema(faqs)} />
@@ -292,7 +292,7 @@ const AustinCommercialRealEstate = () => {
             </section>
 
 
-            {/* Why Echelon */}
+            {/* Why Echelon Property Group */}
             <section>
               <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
                 Why Choose Echelon Property Group for Commercial Real Estate

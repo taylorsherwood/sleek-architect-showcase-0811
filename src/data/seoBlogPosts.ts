@@ -797,7 +797,7 @@ High-net-worth buyers and sellers often require:
 
 The realities of [luxury real estate in Austin](/austin-luxury-homes-for-sale) are highly localized. The dynamics surrounding a waterfront compound on [Lake Austin](/communities/lake-austin) are dramatically different from a penthouse downtown, a ranch in the Hill Country, or a gated estate in [Spanish Oaks](/communities/spanish-oaks).
 
-An advisor operating at this level must understand not only pricing trends, but lifestyle fit, long-term value preservation, privacy considerations, architectural significance, and buyer psychology, the same lens we apply across [Echelon's advisory practice](/about-austin-real-estate-advisory).
+An advisor operating at this level must understand not only pricing trends, but lifestyle fit, long-term value preservation, privacy considerations, architectural significance, and buyer psychology, the same lens we apply across [Echelon Property Group's advisory practice](/about-austin-real-estate-advisory).
 
 That distinction matters more than most people realize.
 
@@ -927,7 +927,7 @@ That includes:
 - Private networking campaigns
 - High-level digital presence
 
-A luxury home should never feel commoditized, a principle that shapes how we approach every [seller engagement at Echelon](/sell).
+A luxury home should never feel commoditized, a principle that shapes how we approach every [seller engagement at Echelon Property Group](/sell).
 
 ## Step 3: Research the Advisor's Actual Market Presence
 
@@ -1081,7 +1081,7 @@ You should feel:
 
 Not pressured.
 
-The best luxury advisors operate more like trusted consultants than salespeople, the [advisory model](/about-austin-real-estate-advisory) we've built Echelon around.
+The best luxury advisors operate more like trusted consultants than salespeople, the [advisory model](/about-austin-real-estate-advisory) we've built Echelon Property Group around.
 
 That distinction becomes obvious immediately.
 
@@ -2065,7 +2065,7 @@ If you are considering [buying](/buy) or [selling](/sell) a luxury property in A
   {
     id: "best-luxury-real-estate-agents-austin",
     title: "7 Proven Strategies to Find the Best Luxury Real Estate Agents in Austin",
-    metaTitle: "Best Luxury Real Estate Agents Austin: 7 Proven Strategies | Echelon",
+    metaTitle: "Best Luxury Real Estate Agents Austin: 7 Proven Strategies | Echelon Property Group",
     excerpt: "Discover the best luxury real estate agents austin buyers trust. These 7 proven strategies help you find top experts for $2M+ luxury properties today.",
     content: `Finding the best [luxury real estate agent in Austin](/luxury-real-estate-austin) requires far more than reading Zillow reviews or searching "top Realtor near me." In Austin's $2M+ luxury market, many of the most desirable homes trade quietly through private networks, relationship-driven referrals, and [off-market opportunities](/off-market-real-estate-austin) long before they appear publicly online.
 
@@ -2485,7 +2485,7 @@ A: Each Austin luxury neighborhood, Barton Creek, Westlake Hills, Tarrytown, Spa
   {
     id: "exclusive-austin-properties",
     title: "Exclusive Austin Properties: Your Complete City Guide",
-    metaTitle: "Exclusive Austin Properties: Your Complete City Guide | Echelon",
+    metaTitle: "Exclusive Austin Properties: Your Complete City Guide | Echelon Property Group",
     excerpt: "Discover exclusive austin properties in this comprehensive guide to the city's most coveted addresses, top neighborhoods, and luxury real estate insights.",
     content: `Austin's luxury market is almost unrecognizable from a decade ago. What was once known primarily as a fast-growing college town has evolved into one of the country's most competitive destinations for wealth, entrepreneurship, and high-end real estate. Technology executives, founders, investors, entertainers, and professional athletes are no longer simply relocating to Austin temporarily. Many are building long-term lives here.
 
@@ -2497,7 +2497,7 @@ Understanding exclusive Austin properties requires far more than browsing listin
 
 That is precisely where [Echelon Property Group](/about-austin-real-estate-advisory) operates.
 
-As a [boutique luxury brokerage](/blog/luxury-real-estate-brokerage-austin) focused on Austin's luxury and ultra-luxury market, Echelon works closely with buyers seeking exceptional homes, including [opportunities that never appear](/blog/why-most-buyers-never-see-austins-best-homes) on Zillow or the MLS. This guide explores what truly defines exclusivity in Austin real estate, which neighborhoods continue to command the strongest demand, and how sophisticated buyers are approaching Austin's evolving luxury landscape today.
+As a [boutique luxury brokerage](/blog/luxury-real-estate-brokerage-austin) focused on Austin's luxury and ultra-luxury market, Echelon Property Group works closely with buyers seeking exceptional homes, including [opportunities that never appear](/blog/why-most-buyers-never-see-austins-best-homes) on Zillow or the MLS. This guide explores what truly defines exclusivity in Austin real estate, which neighborhoods continue to command the strongest demand, and how sophisticated buyers are approaching Austin's evolving luxury landscape today.
 
 ## What Elevates a Property From Luxury to Truly Exclusive
 
@@ -2659,7 +2659,7 @@ A: Yes. Austin's combination of no state income tax, a maturing technology and v
   {
     id: "how-to-access-exclusive-home-inventory",
     title: "How to Access Exclusive Home Inventory",
-    metaTitle: "How to Access Exclusive Home Inventory | Echelon",
+    metaTitle: "How to Access Exclusive Home Inventory | Echelon Property Group",
     excerpt: "How sophisticated buyers actually access exclusive and off-market home inventory in Austin, why the best properties trade quietly, what separates real access from noise, and how to position yourself to see the right homes early.",
     content: `The most desirable homes are often the least visible. By the time a standout property appears on the public market, the most informed buyers may have already toured it, evaluated the seller's posture, and positioned themselves ahead of the crowd. That is the real context behind how to access exclusive home inventory, especially in the upper tier of the market where privacy, timing, and relationships shape outcomes.
 
@@ -2767,7 +2767,7 @@ A: Be specific, be credible, and be ready. Define neighborhoods and criteria pre
   {
     id: "why-austin-luxury-sellers-are-going-quiet",
     title: "Why Austin Luxury Sellers Are Going Quiet",
-    metaTitle: "Why Austin Luxury Sellers Are Going Quiet | Echelon",
+    metaTitle: "Why Austin Luxury Sellers Are Going Quiet | Echelon Property Group",
     excerpt: "Why a growing number of Austin luxury homeowners are choosing a quieter path to market, how private and off-market strategy preserves leverage, controls timing, and reaches the right buyer without public exposure.",
     content: `Not every luxury home should hit the market the same way.
 
@@ -3473,7 +3473,7 @@ But the real reason is simpler.
 
 If the right buyer can be found without going public, why go public at all?
 
-A well-placed call, the right introduction, or a known buyer profile can outperform weeks on the market. In those cases, exposure becomes unnecessary. We break down the seller side of this in [What Is a LUXURY LISTING](/blog/what-is-a-private-listing) and how Echelon executes [private sales for Austin homeowners](/sell-private).
+A well-placed call, the right introduction, or a known buyer profile can outperform weeks on the market. In those cases, exposure becomes unnecessary. We break down the seller side of this in [What Is a LUXURY LISTING](/blog/what-is-a-private-listing) and how Echelon Property Group executes [private sales for Austin homeowners](/sell-private).
 
 ## Where Buyers Get It Wrong
 
@@ -3497,7 +3497,7 @@ There is no database of private listings waiting to be unlocked.
 
 Access is created through positioning.
 
-It starts with representation. Not just any agent, but one who is actively involved in the segment you're targeting. Private opportunities move through trusted broker relationships. If your advisor isn't part of those conversations, you're not either. That is the entire reason we built [Echelon's private opportunities channel](/private-opportunities).
+It starts with representation. Not just any agent, but one who is actively involved in the segment you're targeting. Private opportunities move through trusted broker relationships. If your advisor isn't part of those conversations, you're not either. That is the entire reason we built [Echelon Property Group's private opportunities channel](/private-opportunities).
 
 It also requires clarity.
 

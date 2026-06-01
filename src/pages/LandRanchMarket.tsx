@@ -259,7 +259,7 @@ const LandRanchMarketPage = () => {
             style={{ fontStyle: "italic" }}
           >
             Indicative figures based on recent {market.county} market activity. Contact
-            Echelon for a current, property-specific assessment.
+            Echelon Property Group for a current, property-specific assessment.
           </p>
         </div>
       </section>

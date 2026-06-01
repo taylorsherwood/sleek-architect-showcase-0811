@@ -489,7 +489,7 @@ const BestNeighborhoodsAustin = () => {
               </div>
             </section>
 
-            {/* About Echelon */}
+            {/* About Echelon Property Group */}
             <section>
               <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
 

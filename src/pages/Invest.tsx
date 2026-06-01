@@ -335,7 +335,7 @@ const Invest = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Austin Investment Real Estate & Off-Market Deals | Echelon Property Group"
-        description="Off-market investment properties, fix-and-flip deals, and development opportunities in Austin. Data-driven sourcing from Echelon."
+        description="Off-market investment properties, fix-and-flip deals, and development opportunities in Austin. Data-driven sourcing from Echelon Property Group."
         canonical="/invest"
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
@@ -358,7 +358,7 @@ const Invest = () => {
               Redevelopment &amp; Opportunities
             </h1>
             <p className="text-primary-foreground/95 text-base md:text-lg leading-relaxed max-w-xl mb-9" style={{ textShadow: "0 1px 8px rgba(0,0,0,0.5), 0 0 20px rgba(0,0,0,0.3)" }}>
-              From redevelopment sites and value-add acquisitions to off-market opportunities and strategic land plays, Echelon helps investors identify where future value is being created.
+              From redevelopment sites and value-add acquisitions to off-market opportunities and strategic land plays, Echelon Property Group helps investors identify where future value is being created.
             </p>
             <Link
               to="#lead-form"

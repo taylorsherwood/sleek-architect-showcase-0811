@@ -133,6 +133,7 @@ const AppRoutes = () => {
           <Route path="/search" element={<SearchPage />} />
           <Route path="/land" element={<LandPage />} />
           <Route path="/land-ranch" element={<LandRanch />} />
+          <Route path="/land-ranch/:slug" element={<LandRanchMarket />} />
           <Route path="/past-transactions" element={<PastTransactions />} />
           <Route path="/connect" element={<Connect />} />
           <Route path="/best-neighborhoods-in-austin-texas" element={<BestNeighborhoodsAustin />} />

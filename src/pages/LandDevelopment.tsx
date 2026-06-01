@@ -240,6 +240,26 @@ const timeline = [
 
 const LandDevelopment = () => {
   const themesScrollerRef = useRef<HTMLDivElement | null>(null);
+  const relationshipRef = useRef<HTMLDivElement | null>(null);
+  const [relationshipInView, setRelationshipInView] = useState(false);
+
+  useEffect(() => {
+    const el = relationshipRef.current;
+    if (!el || relationshipInView) return;
+    const obs = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setRelationshipInView(true);
+            obs.disconnect();
+          }
+        });
+      },
+      { threshold: 0.35 }
+    );
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, [relationshipInView]);
 
   const scrollThemes = (direction: "prev" | "next") => {
     const el = themesScrollerRef.current;

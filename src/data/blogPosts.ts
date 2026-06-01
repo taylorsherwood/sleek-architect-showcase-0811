@@ -56,7 +56,7 @@ export const blogPosts: BlogPost[] = [
     id: "exotic-ranch-hill-country-buyer-guide",
     title: "10 Things Buyers Should Know Before Purchasing an Exotic Ranch in the Texas Hill Country",
     metaTitle: "10 Things Buyers Should Know Before Purchasing an Exotic Ranch in the Texas Hill Country",
-    excerpt: "A buyer's guide to exotic wildlife ranches across the Texas Hill Country — covering habitat, infrastructure, wildlife management, tax treatment, revenue potential, and off-market access.",
+    excerpt: "A buyer's guide to exotic wildlife ranches across the Texas Hill Country, covering habitat, infrastructure, wildlife management, tax treatment, revenue potential, and off-market access.",
     author: "Taylor Sherwood",
     date: "2026-06-01",
     readTime: "10 min read",
@@ -64,7 +64,7 @@ export const blogPosts: BlogPost[] = [
     image: blogExoticRanchHillCountry.url,
     heroImage: blogExoticRanchHillCountry.url,
     imageAlt: "Blackbuck antelope at sunset on a Texas Hill Country exotic wildlife ranch",
-    imageCaption: "Blackbuck antelope on a Texas Hill Country exotic wildlife ranch — one of many non-native species that thrive across Gillespie, Kerr, Llano, Burnet, and Bandera counties.",
+    imageCaption: "Blackbuck antelope on a Texas Hill Country exotic wildlife ranch. One of many non-native species that thrive across Gillespie, Kerr, Llano, Burnet, and Bandera counties.",
     content: `
 The Texas Hill Country has long attracted buyers seeking privacy, open space, and a deeper connection to the land. In recent years, a more specialized category of ownership has gained significant attention: exotic wildlife ranches.
 
@@ -156,7 +156,7 @@ Unlike residential real estate, some of the most desirable ranches in Texas are 
 
 Families often hold these properties for decades. When they decide to sell, transactions frequently occur through private networks before reaching public marketing channels.
 
-Buyers relying exclusively on listing websites may never see a significant portion of available inventory. That is especially true at the upper end of the market, where sellers prioritize discretion and qualified buyers over broad exposure — the same dynamic that shapes our <a href="/off-market-real-estate-austin" class="${LINK}">off-market opportunities</a> across Austin and the surrounding region.
+Buyers relying exclusively on listing websites may never see a significant portion of available inventory. That is especially true at the upper end of the market, where sellers prioritize discretion and qualified buyers over broad exposure. It is the same dynamic that shapes our <a href="/off-market-real-estate-austin" class="${LINK}">off-market opportunities</a> across Austin and the surrounding region.
 
 Relationships, local knowledge, and access to quiet inventory remain meaningful advantages in the ranch market.
 
@@ -194,7 +194,7 @@ Q: Do exotic ranches still qualify for agricultural or wildlife property tax val
 A: Many Hill Country ranches qualify for agricultural valuation, and in some situations a property can transition to or maintain a wildlife management valuation while supporting exotic species. Qualification rules are county-specific and depend on prior use and active management practices, so buyers should never assume current tax treatment will carry forward after closing without verifying with the county appraisal district and qualified advisors.
 
 Q: How do buyers find exotic ranches that are not publicly listed?
-A: A significant share of high-quality ranch transactions in Texas happen through private channels before — or instead of — appearing on public listing sites. Working with an advisor who is active in the Hill Country ranch market, has relationships with neighboring landowners, and tracks off-market inventory is usually the most reliable way to see properties that are not openly marketed.
+A: A significant share of high-quality ranch transactions in Texas happen through private channels before, or instead of, appearing on public listing sites. Working with an advisor who is active in the Hill Country ranch market, has relationships with neighboring landowners, and tracks off-market inventory is usually the most reliable way to see properties that are not openly marketed.
 :::
 
 :::cta

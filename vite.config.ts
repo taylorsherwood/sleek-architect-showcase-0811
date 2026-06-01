@@ -113,12 +113,18 @@ const getAllPrerenderRoutes = () => {
     ...extractAll("seoBlogPosts.ts", /id:\s*"([^"]+)"/g),
     ...extractAll("blogPosts.ts", /id:\s*"([^"]+)"/g),
   ];
+  const landRanchSlugs = [...fs
+    .readFileSync(path.join(__dirname, "src/data/landRanchMarkets.ts"), "utf-8")
+    .matchAll(/slug:\s*"([^"]+)"/g)]
+    .map((m) => m[1]);
 
   return Array.from(
     new Set([
       ...prerenderRoutes,
+      "/land-ranch",
       ...communitySlugs.map((slug) => `/communities/${slug}`),
       ...blogIds.map((id) => `/blog/${id}`),
+      ...landRanchSlugs.map((slug) => `/land-ranch/${slug}`),
     ])
   );
 };

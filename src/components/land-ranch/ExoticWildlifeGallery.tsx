@@ -1,8 +1,8 @@
-import axisImg from "@/assets/exotic-axis-deer.jpg.asset.json";
-import blackbuckImg from "@/assets/exotic-blackbuck.jpg.asset.json";
-import oryxImg from "@/assets/exotic-oryx.jpg.asset.json";
 import zebraImg from "@/assets/exotic-zebra.jpg.asset.json";
-import fallowImg from "@/assets/exotic-fallow-deer.webp.asset.json";
+import lakeAustinImg from "@/assets/lake-austin-waterfront.jpg";
+import axisImg from "@/assets/exotic-axis-deer.jpg.asset.json";
+import legacyImg from "@/assets/land-ranch-editorial.jpg";
+import investmentImg from "@/assets/land-ranch-home-intro.jpg";
 
 const labelStyle: React.CSSProperties = {
   fontSize: "0.6rem",
@@ -12,102 +12,105 @@ const labelStyle: React.CSSProperties = {
   fontWeight: 700,
 };
 
-type Species = {
+type Profile = {
   name: string;
   positioning: string;
   image: string;
+  eyebrow: string;
 };
 
-const species: Species[] = [
+const profiles: Profile[] = [
   {
-    name: "Axis Deer",
-    image: axisImg.url,
-    positioning:
-      "The signature exotic species of the Texas Hill Country.",
-  },
-  {
-    name: "Blackbuck",
-    image: blackbuckImg.url,
-    positioning:
-      "Elegant antelope found on premier recreational ranches.",
-  },
-  {
-    name: "Oryx",
-    image: oryxImg.url,
-    positioning:
-      "Desert-adapted wildlife suited for large-acreage properties.",
-  },
-  {
-    name: "Zebra",
+    name: "Exotic Wildlife Ranches",
+    eyebrow: "Specialty Category",
     image: zebraImg.url,
     positioning:
-      "A rare and distinctive addition to private ranch collections.",
+      "Axis, blackbuck, oryx, zebra and other managed species across Texas ranchland.",
   },
   {
-    name: "Fallow Deer",
-    image: fallowImg.url,
+    name: "Live Water Ranches",
+    eyebrow: "Defining Feature",
+    image: lakeAustinImg,
     positioning:
-      "European heritage species established across Texas ranchland.",
+      "Properties anchored by rivers, creeks, springs and high-value water resources.",
+  },
+  {
+    name: "Recreational Ranches",
+    eyebrow: "Lifestyle Use",
+    image: axisImg.url,
+    positioning:
+      "Hunting, fishing, trail systems and full-season outdoor recreation.",
+  },
+  {
+    name: "Legacy Holdings",
+    eyebrow: "Generational",
+    image: legacyImg,
+    positioning:
+      "Multi-generational properties focused on preservation and stewardship.",
+  },
+  {
+    name: "Investment Acreage",
+    eyebrow: "Capital Strategy",
+    image: investmentImg,
+    positioning:
+      "Land positioned for appreciation, development or long-term value creation.",
   },
 ];
 
-const Card = ({ s }: { s: Species }) => (
+const Card = ({ p }: { p: Profile }) => (
   <div
     className="
       group relative overflow-hidden cursor-pointer
       flex-shrink-0 md:flex-shrink
-      w-[82%] sm:w-[60%] md:w-auto
+      w-[78%] sm:w-[56%] md:w-auto
       snap-start md:snap-align-none
       rounded-[2px]
     "
-    style={{ height: "clamp(340px, 32vw, 400px)" }}
+    style={{ height: "clamp(250px, 20vw, 300px)" }}
   >
     <img
-      src={s.image}
-      alt={`${s.name} on a Texas exotic wildlife ranch`}
+      src={p.image}
+      alt={`${p.name} on Texas ranchland`}
       loading="lazy"
       decoding="async"
       className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.06]"
     />
-    {/* base wash */}
     <div
-      className="absolute inset-0 pointer-events-none transition-colors duration-500 group-hover:bg-[rgba(12,15,36,0.22)]"
-      style={{ backgroundColor: "rgba(12, 15, 36, 0.10)" }}
+      className="absolute inset-0 pointer-events-none transition-colors duration-500 group-hover:bg-[rgba(12,15,36,0.24)]"
+      style={{ backgroundColor: "rgba(12, 15, 36, 0.12)" }}
     />
-    {/* bottom gradient */}
     <div
       className="absolute inset-x-0 bottom-0 h-2/3 pointer-events-none"
       style={{
         background:
-          "linear-gradient(to top, rgba(12,15,36,0.78) 0%, rgba(12,15,36,0.45) 45%, rgba(12,15,36,0) 100%)",
+          "linear-gradient(to top, rgba(12,15,36,0.82) 0%, rgba(12,15,36,0.48) 45%, rgba(12,15,36,0) 100%)",
       }}
     />
 
-    <div className="relative z-10 h-full flex flex-col justify-end p-6 md:p-7 text-white">
+    <div className="relative z-10 h-full flex flex-col justify-end p-5 md:p-5 text-white">
       <p
-        className="mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+        className="mb-1.5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
         style={{ ...labelStyle, color: "#b9a06c" }}
       >
-        Texas Hill Country
+        {p.eyebrow}
       </p>
-      <h3 className="font-display text-[1.45rem] md:text-[1.6rem] lg:text-[1.75rem] font-normal leading-[1.1] mb-2">
-        {s.name}
+      <h3 className="font-display text-[1.1rem] md:text-[1.15rem] lg:text-[1.2rem] font-normal leading-[1.15] mb-2">
+        {p.name}
       </h3>
-      {/* gold divider */}
       <span
         aria-hidden="true"
-        className="block h-px w-10 mb-3 origin-left transition-transform duration-700 ease-out group-hover:scale-x-[2.2]"
+        className="block h-px w-8 mb-2.5 origin-left transition-transform duration-700 ease-out group-hover:scale-x-[2.2]"
         style={{ backgroundColor: "#b9a06c" }}
       />
       <p
-        className="text-white/80 text-[0.9rem] leading-[1.55] mb-4 max-w-[42ch]"
+        className="text-white/80 text-[0.78rem] md:text-[0.8rem] leading-[1.5] mb-3 max-w-[38ch]"
         style={{ fontFamily: '"Jost", sans-serif' }}
       >
-        {s.positioning}
+        {p.positioning}
       </p>
       <span
         className="inline-flex items-center gap-2 text-white group-hover:text-[#b9a06c] transition-colors duration-300"
-        style={{ ...labelStyle, fontSize: "0.65rem" }}
+        style={{ ...labelStyle, fontSize: "0.6rem" }}
       >
         Learn More
         <span className="inline-block transition-transform duration-500 ease-out group-hover:translate-x-1.5">
@@ -119,54 +122,61 @@ const Card = ({ s }: { s: Species }) => (
 );
 
 const ExoticWildlifeGallery = () => {
-  const top = species.slice(0, 3);
-  const bottom = species.slice(3);
+  const top = profiles.slice(0, 3);
+  const bottom = profiles.slice(3);
 
   return (
-    <section className="py-16 md:py-24 bg-background">
+    <section className="py-14 md:py-20 bg-background">
       <div className="container mx-auto px-6">
         {/* Narrow editorial intro */}
-        <div className="max-w-xl mb-12 md:mb-16">
-          <p className="text-gold mb-5" style={labelStyle}>
-            Species of the Texas Hill Country
+        <div className="max-w-xl mb-10 md:mb-12">
+          <p className="text-gold mb-4" style={labelStyle}>
+            Ranch Ownership Profiles
           </p>
-          <h2 className="font-display text-3xl md:text-4xl lg:text-[2.6rem] font-normal text-architectural leading-[1.15] mb-6">
-            A private wildlife heritage, stewarded across generations
+          <h2 className="font-display text-2xl md:text-[1.85rem] lg:text-[2rem] font-normal text-architectural leading-[1.2] mb-5">
+            Types of Texas ranch properties
           </h2>
-          <p className="text-muted-foreground leading-[1.8] text-[1.0625rem]">
-            Texas is one of the few places in the world where private landowners steward
-            free-ranging exotic wildlife across thousands of acres, defining features of
-            the region's most distinctive recreational and investment ranches.
+          <p className="text-muted-foreground leading-[1.7] text-[0.98rem]">
+            Texas ranch ownership spans a range of profiles, from live water and
+            recreational holdings to legacy acreage, investment tracts and
+            specialty operations such as exotic wildlife ranches.
           </p>
         </div>
 
         {/* Mobile: horizontal swipe carousel */}
         <div
-          className="md:hidden flex gap-5 overflow-x-auto snap-x snap-mandatory -mx-6 px-6 pb-2 scrollbar-none"
+          className="md:hidden flex gap-4 overflow-x-auto snap-x snap-mandatory -mx-6 px-6 pb-2 scrollbar-none"
           style={{ scrollbarWidth: "none" }}
         >
-          {species.map((s) => (
-            <Card key={s.name} s={s} />
+          {profiles.map((p) => (
+            <Card key={p.name} p={p} />
           ))}
         </div>
 
-        {/* Desktop: 3 on top, 2 centered beneath */}
-        <div className="hidden md:block">
-          <div className="grid grid-cols-3 gap-6 lg:gap-7">
-            {top.map((s) => (
-              <Card key={s.name} s={s} />
+        {/* Tablet (md): 3 on top, 2 centered beneath */}
+        <div className="hidden md:block lg:hidden">
+          <div className="grid grid-cols-3 gap-5">
+            {top.map((p) => (
+              <Card key={p.name} p={p} />
             ))}
           </div>
-          <div className="grid grid-cols-12 gap-6 lg:gap-7 mt-6 lg:mt-7">
+          <div className="grid grid-cols-12 gap-5 mt-5">
             <div className="col-span-2" />
             <div className="col-span-4">
-              <Card s={bottom[0]} />
+              <Card p={bottom[0]} />
             </div>
             <div className="col-span-4">
-              <Card s={bottom[1]} />
+              <Card p={bottom[1]} />
             </div>
             <div className="col-span-2" />
           </div>
+        </div>
+
+        {/* Desktop (lg+): single row of 5 */}
+        <div className="hidden lg:grid grid-cols-5 gap-5">
+          {profiles.map((p) => (
+            <Card key={p.name} p={p} />
+          ))}
         </div>
       </div>
     </section>

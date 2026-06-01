@@ -20,6 +20,7 @@ import recreationalImg from "@/assets/cat-recreational-land.jpg";
 import investmentImg from "@/assets/cat-investment-acreage.jpg";
 import offMarketImg from "@/assets/land-ranch-editorial-v2.jpg";
 import lifestyleImg from "@/assets/land-ranch-editorial.jpg";
+import echelonWatermarkLogo from "@/assets/echelon-watermark-logo.png";
 
 const Footer = lazy(() => import("@/components/Footer"));
 const LandRanchMap = lazy(() => import("@/components/LandRanchMap"));

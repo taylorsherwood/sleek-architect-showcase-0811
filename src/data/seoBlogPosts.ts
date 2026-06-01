@@ -274,7 +274,7 @@ Our analysis of [new construction in Austin and what wins](/blog/new-constructio
 
 If you are considering a new build that is not yet complete, understand what is locked in versus what can still be changed. Builder contracts can be complex, and the allowances for upgrades are often lower than buyers expect. Having your own advisor review the contract before you sign is worth the time, even if the builder's sales team seems straightforward.
 
-## 8. Understand Austin Before You Buy Austin
+## 8. What Relocating Buyers Need to Know About Austin
 
 ### The Challenge It Solves
 

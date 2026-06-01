@@ -109,7 +109,7 @@ const LandRanchMarketPage = () => {
           <div className="container mx-auto">
             <div className="max-w-2xl">
               <p className="text-gold mb-3 md:mb-5" style={labelStyle}>
-                LAND & RANCH · {market.county.toUpperCase()}
+                {heroEyebrow}
               </p>
               <h1
                 className="font-display font-normal text-white leading-[1.06] tracking-tight mb-4 md:mb-6"

@@ -3,7 +3,8 @@ import ScrollReveal from "@/components/ScrollReveal";
 import commercialMusicLane from "@/assets/commercial-music-lane-austin.webp";
 import luxuryHomesKitchen from "@/assets/luxury-homes-austin-twilight.webp";
 import paseoInvestment from "@/assets/investment-property-austin-condos.webp";
-import ranchHero from "@/assets/hill-country-ranches-hero.jpg";
+import ranchHeroAsset from "@/assets/hill-country-ranches-hero.jpg.asset.json";
+const ranchHero = ranchHeroAsset.url;
 
 const expertiseBlocks = [
   {

@@ -1538,6 +1538,8 @@ const HomeBelowFold = () => (
       <ExpertiseSection />
     </Suspense>
 
+    <LandRanchHomeIntro />
+
     <TestimonialsSection />
     <div className="h-8 md:h-12 bg-secondary" aria-hidden="true" />
 
@@ -1546,8 +1548,6 @@ const HomeBelowFold = () => (
     <div className="parallax-break hidden md:block" style={{ backgroundImage: "url('/images/parallax-lakefront.webp')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties} aria-hidden="true" />
 
     <CommunitiesSection />
-
-    <LandRanchHomeIntro />
 
     <NoscriptFallback />
 

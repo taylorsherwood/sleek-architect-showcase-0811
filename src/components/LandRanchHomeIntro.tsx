@@ -1,7 +1,8 @@
 import { useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import ScrollReveal from "@/components/ScrollReveal";
-import landRanchHeroImg from "@/assets/land-ranch-home-intro.jpg";
+import landRanchHeroAsset from "@/assets/land-ranch-home-intro-v2.jpg.asset.json";
+const landRanchHeroImg = landRanchHeroAsset.url;
 
 const highlightCards = [
   {

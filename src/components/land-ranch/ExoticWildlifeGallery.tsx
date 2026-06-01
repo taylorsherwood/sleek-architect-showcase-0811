@@ -103,17 +103,6 @@ const Card = ({ p }: { p: Profile }) => {
         >
           {p.positioning}
         </p>
-        {p.href && (
-          <span
-            className="mt-3 inline-flex items-center gap-2 text-white group-hover:text-[#b9a06c] transition-colors duration-300"
-            style={{ ...labelStyle, fontSize: "0.6rem" }}
-          >
-            Learn More
-            <span className="inline-block transition-transform duration-500 ease-out group-hover:translate-x-1.5">
-              →
-            </span>
-          </span>
-        )}
       </div>
     </Wrapper>
   );

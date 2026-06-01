@@ -910,14 +910,14 @@ const LandRanch = () => {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12 md:gap-x-10 md:gap-y-14">
             {[
-              { name: "Fredericksburg", slug: "fredericksburg", img: marketFredericksburg, desc: "Wine country ranches, recreational land, and legacy Hill Country estates." },
-              { name: "Kerrville", slug: "kerrville", img: marketKerrville, desc: "Riverfront acreage and private ranch holdings throughout the Hill Country." },
-              { name: "Dripping Springs", slug: "dripping-springs", img: marketDrippingSprings, desc: "Luxury acreage, equestrian estates, and development opportunities." },
-              { name: "Johnson City", slug: "johnson-city", img: marketJohnsonCity, desc: "Recreational land, vineyards, and long-term investment-grade acreage." },
-              { name: "Marble Falls", slug: "marble-falls", img: marketMarbleFalls, desc: "Waterfront tracts, ranch acreage, and expanding development corridors." },
               { name: "Burnet", slug: "burnet", img: marketBurnet, desc: "Large tracts, hunting properties, and premier recreational land." },
-              { name: "Llano", slug: "llano", img: marketLlano, desc: "Classic Texas ranch country with abundant wildlife and open landscapes." },
+              { name: "Dripping Springs", slug: "dripping-springs", img: marketDrippingSprings, desc: "Luxury acreage, equestrian estates, and development opportunities." },
+              { name: "Fredericksburg", slug: "fredericksburg", img: marketFredericksburg, desc: "Wine country ranches, recreational land, and legacy Hill Country estates." },
+              { name: "Johnson City", slug: "johnson-city", img: marketJohnsonCity, desc: "Recreational land, vineyards, and long-term investment-grade acreage." },
+              { name: "Kerrville", slug: "kerrville", img: marketKerrville, desc: "Riverfront acreage and private ranch holdings throughout the Hill Country." },
               { name: "Lampasas", slug: "lampasas", img: marketLampasas, desc: "Private acreage, agricultural land, and long-term appreciation." },
+              { name: "Llano", slug: "llano", img: marketLlano, desc: "Classic Texas ranch country with abundant wildlife and open landscapes." },
+              { name: "Marble Falls", slug: "marble-falls", img: marketMarbleFalls, desc: "Waterfront tracts, ranch acreage, and expanding development corridors." },
             ].map((m) => (
               <Link
                 key={m.slug}

@@ -108,9 +108,10 @@ const LandRanchMarketPage = () => {
           }}
         />
 
-        <div className="relative z-10 flex h-full items-end md:items-center px-6 md:px-12 pb-12 md:pb-0">
-          <div className="container mx-auto">
+        <div className="relative z-10 flex h-full items-end md:items-center px-6 md:px-12 pb-20 md:pb-0">
+          <div className="container mx-auto md:-translate-y-6 lg:-translate-y-10">
             <div className="max-w-2xl">
+
               <p className="text-gold mb-3 md:mb-5" style={labelStyle}>
                 {heroEyebrow}
               </p>

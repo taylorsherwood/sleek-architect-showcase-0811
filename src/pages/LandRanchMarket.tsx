@@ -16,6 +16,9 @@ const Footer = lazy(() => import("@/components/Footer"));
 const MarketBalanceGauge = lazy(
   () => import("@/components/market-intel/MarketBalanceGauge"),
 );
+const ExoticWildlifeGallery = lazy(
+  () => import("@/components/land-ranch/ExoticWildlifeGallery"),
+);
 
 const SITE = "https://www.echelonpropertygroup.com";
 
@@ -212,6 +215,12 @@ const LandRanchMarketPage = () => {
       </section>
 
       <div className="h-10 md:h-16" aria-hidden="true" />
+
+      {market.slug === "exotic-wildlife-ranches" && (
+        <Suspense fallback={null}>
+          <ExoticWildlifeGallery />
+        </Suspense>
+      )}
 
       {/* ── AGENT INTEL ─────────────────────────────────── */}
       <section className="py-14 md:py-20 bg-secondary/40">

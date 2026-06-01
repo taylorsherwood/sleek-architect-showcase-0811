@@ -586,96 +586,149 @@ const LandDevelopment = () => {
 
       <div className="h-16 md:h-24" aria-hidden="true" />
 
-      {/* ── SECTION 3.5: ACTIVE DEVELOPMENT THEMES ───────────────── */}
-      <section className="bg-background">
-        <div className="mx-auto px-6 md:px-12" style={{ maxWidth: "1400px" }}>
-          {/* Header — constrained to ~half width with supporting line */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 mb-12 md:mb-16 items-end">
-            <div className="lg:col-span-6">
+      {/* ── SECTION 3.5: INVESTMENT THESES — HORIZONTAL SHOWCASE ─── */}
+      <section className="bg-background overflow-hidden">
+        <div className="container mx-auto px-6 md:px-12">
+          {/* Header — tight, single column, max 500px copy */}
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 md:gap-10 mb-10 md:mb-14">
+            <div className="max-w-[560px]">
               <p className="mb-5" style={{ ...labelStyle, color: GOLD }}>
-                Active Development Themes
+                Investment Theses
               </p>
               <h2
-                className="text-foreground font-normal leading-[1.1]"
+                className="text-foreground font-normal leading-[1.1] mb-5"
                 style={{
                   fontFamily: "'Cinzel', serif",
                   fontSize: "clamp(1.6rem, 3.2vw, 2.5rem)",
                 }}
               >
-                Investment Theses Shaping<br className="hidden md:block" /> Central Texas Land
+                Investment Theses Shaping Central Texas Land
               </h2>
-            </div>
-            <div className="lg:col-span-5 lg:col-start-8">
               <p
-                className="text-foreground/68 leading-[1.7] max-w-md"
-                style={{ fontFamily: "'Jost', sans-serif", fontSize: "0.98rem" }}
+                className="text-foreground/68 leading-[1.7]"
+                style={{
+                  fontFamily: "'Jost', sans-serif",
+                  fontSize: "0.98rem",
+                  maxWidth: "500px",
+                }}
               >
                 The development themes attracting capital, infrastructure
                 investment, and long-term demand across Central Texas.
               </p>
             </div>
+
+            {/* Desktop arrow navigation */}
+            <div className="hidden md:flex items-center gap-3 shrink-0">
+              <button
+                type="button"
+                onClick={() => scrollThemes("prev")}
+                aria-label="Previous thesis"
+                className="w-12 h-12 border border-border/60 flex items-center justify-center text-foreground/70 hover:text-foreground hover:border-[rgba(185,160,108,0.7)] transition-colors duration-300"
+              >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
+                  <path d="M15 18l-6-6 6-6" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </button>
+              <button
+                type="button"
+                onClick={() => scrollThemes("next")}
+                aria-label="Next thesis"
+                className="w-12 h-12 border border-border/60 flex items-center justify-center text-foreground/70 hover:text-foreground hover:border-[rgba(185,160,108,0.7)] transition-colors duration-300"
+              >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
+                  <path d="M9 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </button>
+            </div>
           </div>
+        </div>
 
-          {/* Asymmetric editorial grid: 12-col, two staggered rows */}
-          <ul className="grid grid-cols-1 md:grid-cols-12 gap-5 md:gap-6">
-            {themes.map((t, i) => {
-              // Row 1 (i 0-2): three even cards across full grid.
-              // Row 2 (i 3-5): offset from left + narrower tail card.
-              const layoutClasses = [
-                "md:col-span-4",                       // 0 Data Centers
-                "md:col-span-4",                       // 1 IOS
-                "md:col-span-4",                       // 2 Master Planned
-                "md:col-span-4 md:col-start-2",        // 3 Build-to-Rent (indented)
-                "md:col-span-4",                       // 4 Mixed-Use
-                "md:col-span-3",                       // 5 Strategic Land Banking (narrower tail)
-              ][i];
+        {/* Horizontal scroller — bleeds to the right edge */}
+        <div
+          ref={themesScrollerRef}
+          className="flex gap-5 md:gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-6 pl-6 md:pl-12 pr-6 md:pr-12 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+        >
+          {themes.map((t, i) => (
+            <article
+              key={t.title}
+              data-theme-card
+              className="group relative snap-start shrink-0 overflow-hidden bg-primary"
+              style={{
+                width: "min(85vw, 1040px)",
+                height: "clamp(440px, 62vh, 620px)",
+              }}
+            >
+              <img
+                src={t.image}
+                alt={`${t.title} development opportunity in Central Texas`}
+                loading="lazy"
+                decoding="async"
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.04]"
+              />
+              {/* Cinematic gradient — bottom-weighted */}
+              <div
+                aria-hidden="true"
+                className="absolute inset-0"
+                style={{
+                  background:
+                    "linear-gradient(180deg, rgba(12,15,36,0.10) 0%, rgba(12,15,36,0.20) 45%, rgba(12,15,36,0.78) 100%)",
+                }}
+              />
 
-              return (
-                <li
-                  key={t.title}
-                  className={`${layoutClasses} group relative bg-[#FBF8F2] border border-border/40 p-7 md:p-9 transition-all duration-500 ease-out hover:-translate-y-1 hover:border-[rgba(185,160,108,0.55)] hover:shadow-[0_18px_40px_-22px_rgba(12,15,36,0.18)]`}
+              {/* Thesis number — top left */}
+              <div className="absolute top-7 md:top-9 left-7 md:left-9 flex items-center gap-3">
+                <span
+                  aria-hidden="true"
+                  className="block h-px w-8"
+                  style={{ backgroundColor: GOLD }}
+                />
+                <span
+                  className="text-white/90"
+                  style={{ ...labelStyle, color: GOLD, fontSize: "0.62rem" }}
                 >
-                  {/* Top gold rule — strengthens on hover */}
-                  <span
-                    aria-hidden="true"
-                    className="absolute left-0 top-0 h-px w-10 origin-left transition-transform duration-500 ease-out group-hover:scale-x-[2.6]"
-                    style={{ backgroundColor: GOLD }}
-                  />
-                  <p
-                    className="mb-5"
-                    style={{ ...labelStyle, color: GOLD, fontSize: "0.6rem" }}
-                  >
-                    Thesis {String(i + 1).padStart(2, "0")}
-                  </p>
-                  <h3
-                    className="text-foreground font-normal leading-[1.2] mb-5"
-                    style={{
-                      fontFamily: "'Cinzel', serif",
-                      fontSize: "1.2rem",
-                    }}
-                  >
-                    {t.title}
-                  </h3>
-                  <span
-                    aria-hidden="true"
-                    className="block h-px w-8 mb-5"
-                    style={{ backgroundColor: "rgba(185,160,108,0.45)" }}
-                  />
-                  <p
-                    className="text-foreground/72 leading-[1.65] max-w-[42ch]"
-                    style={{
-                      fontFamily: "'Jost', sans-serif",
-                      fontSize: "0.92rem",
-                    }}
-                  >
-                    {t.thesis}
-                  </p>
-                </li>
-              );
-            })}
-          </ul>
+                  Thesis {String(i + 1).padStart(2, "0")}
+                </span>
+              </div>
+
+              {/* Title + one-line description — bottom */}
+              <div className="absolute bottom-7 md:bottom-10 left-7 md:left-10 right-7 md:right-10">
+                <h3
+                  className="text-white font-normal leading-[1.1] mb-4"
+                  style={{
+                    fontFamily: "'Cinzel', serif",
+                    fontSize: "clamp(1.6rem, 3vw, 2.4rem)",
+                    textShadow: "0 2px 18px rgba(0,0,0,0.45)",
+                  }}
+                >
+                  {t.title}
+                </h3>
+                <p
+                  className="text-white/85 leading-[1.55] max-w-xl"
+                  style={{
+                    fontFamily: "'Jost', sans-serif",
+                    fontSize: "clamp(0.95rem, 1.05vw, 1.05rem)",
+                    textShadow: "0 1px 2px rgba(0,0,0,0.45)",
+                  }}
+                >
+                  {t.thesis}
+                </p>
+              </div>
+            </article>
+          ))}
+        </div>
+
+        {/* Mobile hint — subtle */}
+        <div className="container mx-auto px-6 md:px-12 mt-4 md:hidden">
+          <p
+            className="text-foreground/50"
+            style={{ ...labelStyle, fontSize: "0.58rem" }}
+          >
+            Swipe to explore →
+          </p>
         </div>
       </section>
+
+
 
 
       <div className="h-16 md:h-24" aria-hidden="true" />

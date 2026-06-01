@@ -874,18 +874,19 @@ const LandRanch = () => {
       {/* ── NEW: WHY LAND REQUIRES DIFFERENT REPRESENTATION ─────────────── */}
       <section className="py-10 md:py-14">
         <div className="container mx-auto px-6">
-          <div className="grid md:grid-cols-12 gap-12 md:gap-20 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-12 gap-12 md:gap-16 max-w-6xl mx-auto">
             <div className="md:col-span-5">
-              <p className="text-gold mb-5" style={labelStyle}>ADVISORY</p>
-              <h2 className="font-display text-3xl md:text-4xl lg:text-[2.75rem] font-normal text-architectural leading-[1.1] mb-6">
+              <p className="text-gold mb-3" style={labelStyle}>ADVISORY</p>
+              <h2 className="font-display text-[1.65rem] md:text-[2rem] lg:text-[2.25rem] font-normal text-architectural leading-[1.15] mb-6 max-w-[20ch]">
                 Why Land Requires Different Representation
               </h2>
-              <p className="text-muted-foreground leading-relaxed text-[1.0625rem]">
+              <p className="text-muted-foreground leading-[1.7] text-[1.125rem] max-w-[42ch]">
                 Land is not a house on a larger lot. It is a separate discipline with its own diligence, its own buyer pool, and a different set of questions that determine real value. Working with an advisor who has lived inside those questions changes the outcome.
               </p>
             </div>
             <div className="md:col-span-7">
-              <ul className="divide-y divide-[rgba(12,15,36,0.1)] border-t border-b border-[rgba(12,15,36,0.1)]">
+              <div className="h-px w-12 bg-gold mb-8" aria-hidden="true" />
+              <dl className="divide-y divide-[rgba(12,15,36,0.18)]">
                 {[
                   ["Water Access", "Wells, surface water, river frontage, and groundwater district rules."],
                   ["Agricultural Exemptions", "Tax valuations tied to qualifying agricultural use and history."],
@@ -895,13 +896,18 @@ const LandRanch = () => {
                   ["Road Frontage", "Public, private, and county road access and condition."],
                   ["Floodplain & Topography", "Buildable area, drainage, slope, and FEMA designations."],
                   ["Development Feasibility", "Utilities, entitlement path, and highest and best use."],
-                ].map(([t, d]) => (
-                  <li key={t} className="py-5 flex flex-col sm:flex-row sm:items-baseline sm:gap-8">
-                    <span className="font-display text-architectural text-lg md:text-xl sm:w-[230px] sm:flex-shrink-0">{t}</span>
-                    <span className="text-muted-foreground text-[0.95rem] leading-relaxed mt-1 sm:mt-0">{d}</span>
-                  </li>
+                ].map(([t, d], i) => (
+                  <div key={t} className={i === 0 ? "pb-7" : "py-7"}>
+                    <dt
+                      className="text-architectural text-[0.78rem] font-semibold tracking-[0.14em] uppercase mb-1.5"
+                      style={{ fontFamily: "'Jost', sans-serif" }}
+                    >
+                      {t}
+                    </dt>
+                    <dd className="text-muted-foreground text-[1rem] leading-[1.6] max-w-[52ch]">{d}</dd>
+                  </div>
                 ))}
-              </ul>
+              </dl>
             </div>
           </div>
         </div>

@@ -48,7 +48,7 @@ const opportunities = [
   {
     title: "Data Center Sites",
     body: "Power, fiber, water availability, and large-scale infrastructure requirements.",
-    image: datacenterImg,
+    image: dataCenterImg.url,
   },
   {
     title: "Mixed-Use Development",

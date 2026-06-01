@@ -20,6 +20,7 @@ import recreationalImg from "@/assets/cat-recreational-land.jpg";
 import investmentImg from "@/assets/cat-investment-acreage.jpg";
 import offMarketImg from "@/assets/land-ranch-editorial-v2.jpg";
 import lifestyleImg from "@/assets/land-ranch-editorial.jpg";
+import echelonWatermarkLogo from "@/assets/echelon-watermark-logo.png";
 
 const Footer = lazy(() => import("@/components/Footer"));
 const LandRanchMap = lazy(() => import("@/components/LandRanchMap"));
@@ -56,24 +57,44 @@ const Hero = () => (
       className="absolute inset-0"
       style={{
         background:
-          "linear-gradient(180deg, rgba(12,15,36,0.35) 0%, rgba(12,15,36,0.15) 35%, rgba(12,15,36,0.55) 100%)",
+          "linear-gradient(180deg, rgba(12,15,36,0.45) 0%, rgba(12,15,36,0.20) 40%, rgba(12,15,36,0.65) 100%)",
       }}
     />
-    <div className="relative z-10 h-full flex items-end pb-16 md:pb-24">
+    <div className="relative z-10 h-full flex items-center pt-20 md:pt-24">
       <div className="container mx-auto px-6 md:px-12">
         <div className="max-w-3xl">
           <p className="text-[#b9a06c] mb-5 md:mb-7" style={label}>
             HILL COUNTRY · LAND ADVISORY
           </p>
           <h1
-            className="font-display font-normal text-white leading-[1.04] tracking-tight"
+            className="font-display font-normal text-white leading-[1.04] tracking-tight mb-8 md:mb-10"
             style={{
               fontSize: "clamp(2.1rem, 5.2vw, 4.25rem)",
-              textShadow: "0 2px 24px rgba(0,0,0,0.45)",
+              textShadow: "0 2px 24px rgba(0,0,0,0.55)",
             }}
           >
             The most valuable land in Texas rarely trades publicly.
           </h1>
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+            <Link
+              to="/contact"
+              className="inline-flex items-center justify-center px-8 py-4 transition-colors duration-300 rounded-sm"
+              style={{ ...label, background: "#B9A06C", color: "#FFFFFF", border: "1px solid #B9A06C", fontWeight: 600 }}
+              onMouseEnter={(e) => { e.currentTarget.style.background = "#0C0F24"; e.currentTarget.style.borderColor = "#0C0F24"; }}
+              onMouseLeave={(e) => { e.currentTarget.style.background = "#B9A06C"; e.currentTarget.style.borderColor = "#B9A06C"; }}
+            >
+              Begin a Private Conversation →
+            </Link>
+            <Link
+              to="/off-market-real-estate-austin"
+              className="inline-flex items-center justify-center px-8 py-4 transition-colors duration-300 rounded-sm"
+              style={{ ...label, background: "transparent", color: "#FFFFFF", border: "1px solid #B9A06C", fontWeight: 600 }}
+              onMouseEnter={(e) => { e.currentTarget.style.background = "#B9A06C"; }}
+              onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; }}
+            >
+              Request Private Access →
+            </Link>
+          </div>
         </div>
       </div>
     </div>
@@ -460,7 +481,7 @@ const OffMarketBand = () => (
         >
           The tracts that matter most are rarely advertised.
         </h2>
-        <p className="text-white/75 text-[1.0625rem] leading-[1.85] mb-10 max-w-[52ch]">
+        <p className="text-white/90 text-[1.0625rem] leading-[1.85] mb-10 max-w-[52ch]">
           Qualified buyers receive a quiet, curated view of what is actually
           moving across the Hill Country before it surfaces to the broader
           market.
@@ -532,6 +553,184 @@ const AdjacentMarkets = () => {
 };
 
 // ─────────────────────────────────────────────────────────────
+// 9 · MEET YOUR ADVISOR
+// ─────────────────────────────────────────────────────────────
+const MeetAdvisor = () => (
+  <section
+    className="relative overflow-hidden"
+    style={{
+      background: "#F5F3EF",
+      paddingTop: "clamp(80px, 10vw, 120px)",
+      paddingBottom: "clamp(80px, 10vw, 120px)",
+    }}
+  >
+    <div aria-hidden="true" className="absolute top-0 inset-x-0 h-px" style={{ background: "rgba(12,15,36,0.08)" }} />
+    <div aria-hidden="true" className="absolute bottom-0 inset-x-0 h-px" style={{ background: "rgba(12,15,36,0.08)" }} />
+
+    <div className="container mx-auto px-6 relative">
+      <div className="grid md:grid-cols-12 gap-10 md:gap-16 lg:gap-20 items-center max-w-[1280px] mx-auto">
+        <div className="md:col-span-5">
+          <div
+            className="relative overflow-hidden"
+            style={{
+              borderRadius: "24px",
+              boxShadow:
+                "0 30px 60px -25px rgba(12,15,36,0.28), 0 12px 30px -15px rgba(12,15,36,0.18)",
+              transform: "translateY(-3.5rem)",
+            }}
+          >
+            <img
+              src={taylorPortrait}
+              alt="Taylor Sherwood, Land & Ranch Advisor at Echelon Property Group"
+              className="w-full h-auto object-cover"
+              style={{ aspectRatio: "4 / 5" }}
+              width={1080}
+              height={1350}
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+
+          <div className="flex items-center justify-center gap-10 mt-6">
+            <a
+              href="https://www.instagram.com/theinvestorbroker/"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              className="inline-flex items-center gap-2 text-[#b9a06c] group/ig"
+              style={{ fontFamily: '"Jost", sans-serif', fontSize: "9.5px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 300 }}
+              aria-label="Follow Taylor Sherwood on Instagram"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="flex-shrink-0"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              <span className="relative leading-none font-semibold">
+                @THEINVESTORBROKER
+                <span className="absolute left-0 -bottom-0.5 w-full h-px bg-[#b9a06c] scale-x-0 group-hover/ig:scale-x-100 transition-transform duration-500 origin-center" />
+              </span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/taylorsherwood/"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              className="inline-flex items-center gap-2 text-[#b9a06c] group/li"
+              style={{ fontFamily: '"Jost", sans-serif', fontSize: "9.5px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 300 }}
+              aria-label="View Taylor Sherwood on LinkedIn"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" stroke="none" className="flex-shrink-0"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              <span className="relative leading-none font-semibold">
+                TAYLOR SHERWOOD
+                <span className="absolute left-0 -bottom-0.5 w-full h-px bg-[#b9a06c] scale-x-0 group-hover/li:scale-x-100 transition-transform duration-500 origin-center" />
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <div className="md:col-span-7 relative overflow-visible">
+          <img
+            src={echelonWatermarkLogo}
+            alt=""
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            className="absolute pointer-events-none select-none hidden md:block"
+            style={{
+              top: '50%',
+              left: '50%',
+              transform: 'translate(-32%, -55%)',
+              height: '82%',
+              width: 'auto',
+              opacity: 0.06,
+            }}
+          />
+          <div className="relative">
+            <p className="text-[#b9a06c] mb-5" style={label}>
+              MEET YOUR LAND & RANCH ADVISOR
+            </p>
+            <h2 className="font-display text-3xl md:text-4xl lg:text-[2.75rem] font-normal text-architectural leading-[1.15] mb-5">
+              Taylor Sherwood
+            </h2>
+            <p
+              className="text-architectural/80 mb-8 leading-relaxed"
+              style={{ fontFamily: '"Jost", sans-serif', fontSize: "1.05rem" }}
+            >
+              Land, Ranch, Development &amp; Investment Property Across Austin and the Texas Hill Country
+            </p>
+
+            <div
+              className="space-y-7 text-muted-foreground leading-relaxed"
+              style={{ fontFamily: '"Jost", sans-serif', fontSize: "1.0125rem" }}
+            >
+              <p>
+                Taylor Sherwood advises buyers, sellers, investors, and landowners throughout
+                Austin and the Texas Hill Country on ranch, land, development, and investment
+                opportunities. His experience spans luxury residential sales, redevelopment
+                projects, off-market acquisitions, and land transactions where future potential
+                is often just as important as current value.
+              </p>
+              <p>
+                Rather than focusing solely on acreage or improvements, Taylor helps clients
+                evaluate the broader picture, including access, water, topography, development
+                potential, market demand, and long-term appreciation. Every property is analyzed
+                through both its present use and its highest-and-best-use potential.
+              </p>
+              <p>
+                Through Echelon Property Group, clients gain access to strategic guidance, local
+                market expertise, and opportunities both on and off the market.
+              </p>
+            </div>
+
+            <div className="mt-10 flex flex-wrap items-center gap-x-5 gap-y-3">
+              {[
+                "Austin & Hill Country Land",
+                "Off-Market Opportunities",
+                "Development & Redevelopment Analysis",
+                "Luxury Ranch Representation",
+              ].map((item, idx, arr) => (
+                <div key={item} className="flex items-center gap-x-5">
+                  <span className="text-architectural" style={{ ...label, fontSize: "0.6rem" }}>
+                    {item}
+                  </span>
+                  {idx < arr.length - 1 && (
+                    <span
+                      aria-hidden="true"
+                      className="hidden sm:inline-block"
+                      style={{ width: "20px", height: "1px", background: "#b9a06c" }}
+                    />
+                  )}
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-12 pt-10" style={{ borderTop: "1px solid rgba(12,15,36,0.12)" }}>
+              <p className="text-[#b9a06c] mb-4" style={{ ...label, fontSize: "0.55rem" }}>
+                LAND OWNERS
+              </p>
+              <h3 className="font-display text-2xl md:text-[1.75rem] font-normal text-architectural leading-tight mb-4">
+                Considering Selling Land or a Ranch?
+              </h3>
+              <p
+                className="text-muted-foreground leading-relaxed mb-7 max-w-2xl"
+                style={{ fontFamily: '"Jost", sans-serif', fontSize: "1rem" }}
+              >
+                Get a confidential property evaluation and market analysis tailored to your
+                property's location, acreage, improvements, and future potential.
+              </p>
+              <Link
+                to="/sell"
+                className="inline-flex items-center justify-center px-8 py-4 md:px-10 md:py-[1.1rem] transition-colors duration-300 rounded-sm"
+                style={{ ...label, background: "#0C0F24", color: "#F5F3EF", border: "1px solid #B9A06C" }}
+                onMouseEnter={(e) => { e.currentTarget.style.background = "#B9A06C"; e.currentTarget.style.color = "#FFFFFF"; }}
+                onMouseLeave={(e) => { e.currentTarget.style.background = "#0C0F24"; e.currentTarget.style.color = "#F5F3EF"; }}
+              >
+                Request a Land Evaluation →
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+);
+
+// ─────────────────────────────────────────────────────────────
 // PAGE ORCHESTRATOR
 // ─────────────────────────────────────────────────────────────
 const HillCountryExperience = () => {
@@ -563,6 +762,7 @@ const HillCountryExperience = () => {
       <RegionalMap />
       <LifestyleQuote />
       <OffMarketBand />
+      <MeetAdvisor />
       <AdjacentMarkets />
 
       <Suspense fallback={null}>

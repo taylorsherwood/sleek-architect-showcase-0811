@@ -580,7 +580,7 @@ const Sell = () => {
             <div className="mb-16 max-w-2xl">
               <p className="text-minimal text-gold mb-4 font-extrabold">YOUR ADVANTAGE</p>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
-                Why List With Echelon
+                Why List With Echelon Property Group
               </h2>
               <p className="text-muted-foreground leading-relaxed">
                 Selling property in Austin requires more than a listing, it requires a strategy. Here's why top sellers trust Taylor as their Austin luxury listing agent.
@@ -645,7 +645,7 @@ const Sell = () => {
 
               <ScrollReveal delay={160}>
                 <p className="text-muted-foreground/80 leading-relaxed mb-14 max-w-[580px] text-[15px]">
-                  Every Echelon listing receives a bespoke marketing campaign engineered to attract qualified, motivated buyers, locally and globally. Here's what's included when you sell your home in Austin with us.
+                  Every Echelon Property Group listing receives a bespoke marketing campaign engineered to attract qualified, motivated buyers, locally and globally. Here's what's included when you sell your home in Austin with us.
                 </p>
               </ScrollReveal>
 

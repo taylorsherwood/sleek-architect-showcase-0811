@@ -451,7 +451,7 @@ const CommunityPage = () => {
                     <section>
                       <p className="text-minimal text-gold mb-3 tracking-[0.2em]">LOCAL INSIGHT</p>
                       <h3 className="text-2xl md:text-3xl font-display font-normal text-architectural mb-6">
-                        Echelon Perspective on {community.name}
+                        Echelon Property Group Perspective on {community.name}
                       </h3>
                       <ContentBlock text={community.echelonPerspective} currentSlug={community.slug} />
                     </section>
@@ -508,7 +508,7 @@ const CommunityPage = () => {
           <div className="max-w-4xl mx-auto space-y-16">
             {/* Sections below are public for non-gated slugs. For gated slugs
                 (e.g. westlake-hills) Market Insights, Schools/Amenities,
-                Investment Potential, and Echelon Perspective are rendered
+                Investment Potential, and Echelon Property Group Perspective are rendered
                 inside the unlocked InlineCommunityReport above. */}
             {!GATED_REPORT_SLUGS.has(community.slug) && (
               <>
@@ -539,12 +539,12 @@ const CommunityPage = () => {
                   </p>
                 </section>
 
-                {/* Echelon Perspective (optional, editorial authority section) */}
+                {/* Echelon Property Group Perspective (optional, editorial authority section) */}
                 {community.echelonPerspective && (
                   <section>
                     <p className="text-minimal text-gold mb-3 tracking-[0.2em]">LOCAL INSIGHT</p>
                     <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6 whitespace-pre-line">
-                      {"\n\n"}Echelon Perspective on {community.name}
+                      {"\n\n"}Echelon Property Group Perspective on {community.name}
                     </h2>
                     <ContentBlock text={community.echelonPerspective} currentSlug={community.slug} />
                   </section>

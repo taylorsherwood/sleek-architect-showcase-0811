@@ -362,7 +362,7 @@ const LandRanch = () => {
               style={{ textShadow: "0 1px 2px rgba(0,0,0,0.35)" }}
             >
               From legacy ranches and recreational retreats to investment acreage and development
-              tracts, Echelon helps buyers, sellers, and investors evaluate Central Texas land
+              tracts, Echelon Property Group helps buyers, sellers, and investors evaluate Central Texas land
               through both current value and future potential.
             </p>
 
@@ -402,7 +402,7 @@ const LandRanch = () => {
                 style={{ textShadow: "0 1px 2px rgba(0,0,0,0.35)" }}
               >
                 From legacy ranches and recreational retreats to investment acreage and development
-                tracts, Echelon helps buyers, sellers, and investors evaluate Central Texas land
+                tracts, Echelon Property Group helps buyers, sellers, and investors evaluate Central Texas land
                 through both current value and future potential.
               </p>
 
@@ -484,7 +484,7 @@ const LandRanch = () => {
                     fontWeight: 400,
                   }}
                 >
-                  Echelon evaluates land through privacy, access, water, topography, market demand, and highest-and-best-use potential.
+                  Echelon Property Group evaluates land through privacy, access, water, topography, market demand, and highest-and-best-use potential.
                 </blockquote>
               </div>
             </div>
@@ -789,7 +789,7 @@ const LandRanch = () => {
               Where We Work
             </h2>
             <p className="text-muted-foreground leading-relaxed">
-              Echelon advises on land and ranch opportunities across Austin and the Texas Hill Country,
+              Echelon Property Group advises on land and ranch opportunities across Austin and the Texas Hill Country,
               with active focus throughout the corridors below.
             </p>
           </div>
@@ -869,7 +869,7 @@ const LandRanch = () => {
             ))}
           </div>
           <p className="text-muted-foreground/70 text-xs mt-6 max-w-2xl" style={{ fontStyle: "italic" }}>
-            Indicative figures based on recent Central Texas market activity. Contact Echelon for a
+            Indicative figures based on recent Central Texas market activity. Contact Echelon Property Group for a
             current, property-specific assessment.
           </p>
         </div>
@@ -1080,7 +1080,7 @@ const LandRanch = () => {
                 Land Acquisition & Development Advisory
               </h2>
               <p className="text-muted-foreground leading-relaxed text-[1.0625rem] mb-8">
-                For investors, builders, and landowners weighing what to do next, the right strategy is rarely obvious from the deed alone. Echelon advises on the full arc, from sourcing the parcel to deciding whether to hold, improve, develop, or sell.
+                For investors, builders, and landowners weighing what to do next, the right strategy is rarely obvious from the deed alone. Echelon Property Group advises on the full arc, from sourcing the parcel to deciding whether to hold, improve, develop, or sell.
               </p>
               <Link
                 to="/contact"
@@ -1163,7 +1163,7 @@ const LandRanch = () => {
                 tracts never reach the public market.
               </p>
               <p>
-                Through Echelon's network of landowners, builders, developers, and industry
+                Through Echelon Property Group's network of landowners, builders, developers, and industry
                 relationships, select opportunities may be shared privately before they are widely
                 marketed.
               </p>

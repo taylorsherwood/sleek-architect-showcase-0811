@@ -225,7 +225,7 @@ const ExitIntentModal = () => {
                 maxWidth: "340px",
               }}
             >
-              Receive Echelon&rsquo;s curated off-market opportunities, quietly, before they reach MLS or Zillow.
+              Receive Echelon Property Group&rsquo;s curated off-market opportunities, quietly, before they reach MLS or Zillow.
             </p>
 
             <form onSubmit={handleSubmit} className="space-y-3">

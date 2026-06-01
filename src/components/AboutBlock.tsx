@@ -16,7 +16,7 @@ const AboutBlock = () => {
               The team is led by Taylor Sherwood, an advisor focused on strategy, valuation, and discreet execution across Austin's most consequential real estate assets.
             </p>
             <p className="text-muted-foreground leading-relaxed text-sm">
-              Echelon is brokered by eXp Realty, providing global agent reach, advanced technology, and a national distribution network that extends well beyond the local MLS, an advantage on both the acquisition and disposition side of any high-value transaction.
+              Echelon Property Group is brokered by eXp Realty, providing global agent reach, advanced technology, and a national distribution network that extends well beyond the local MLS, an advantage on both the acquisition and disposition side of any high-value transaction.
             </p>
             <p className="text-muted-foreground leading-relaxed text-sm">
               For sellers, this means broader exposure and stronger qualified-buyer reach. For buyers and investors, it means earlier visibility into private opportunities, ranch and land inventory, and redevelopment sites that rarely surface publicly.

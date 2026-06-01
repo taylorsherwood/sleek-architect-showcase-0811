@@ -159,7 +159,7 @@ const SearchPage = () => {
                   e.currentTarget.style.color = "#fff";
                 }}
               >
-                See Echelon Listings
+                See Echelon Property Group Listings
               </button>
               <button
                 type="button"

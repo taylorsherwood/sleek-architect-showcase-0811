@@ -20,7 +20,7 @@ const faqs = [
   {
     question: "How often is Austin market intelligence data updated?",
     answer:
-      "Echelon's market intelligence refreshes daily using private market data feeds and luxury market trend analysis. Aggregated metrics for inventory, absorption, and pricing reflect the most recent closed and active records available for the Austin MSA.",
+      "Echelon Property Group's market intelligence refreshes daily using private market data feeds and luxury market trend analysis. Aggregated metrics for inventory, absorption, and pricing reflect the most recent closed and active records available for the Austin MSA.",
   },
   {
     question: "What is considered the luxury tier in Austin real estate?",

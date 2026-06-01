@@ -363,7 +363,7 @@ const Blog = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-[10px] tracking-[0.3em] uppercase text-[#b9a06c] mb-5">
-              The Echelon Letter
+              The Echelon Property Group Letter
             </p>
             <h2 className="text-2xl sm:text-4xl md:text-5xl font-display font-normal text-architectural mb-6 leading-[1.15]">
               Stay Informed

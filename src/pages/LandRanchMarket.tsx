@@ -16,6 +16,9 @@ const Footer = lazy(() => import("@/components/Footer"));
 const MarketBalanceGauge = lazy(
   () => import("@/components/market-intel/MarketBalanceGauge"),
 );
+const ExoticWildlifeGallery = lazy(
+  () => import("@/components/land-ranch/ExoticWildlifeGallery"),
+);
 
 const SITE = "https://www.echelonpropertygroup.com";
 

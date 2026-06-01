@@ -13,6 +13,9 @@ import {
 } from "@/data/landRanchMarkets";
 
 const Footer = lazy(() => import("@/components/Footer"));
+const MarketBalanceGauge = lazy(
+  () => import("@/components/market-intel/MarketBalanceGauge"),
+);
 
 const SITE = "https://www.echelonpropertygroup.com";
 

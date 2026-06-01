@@ -1470,6 +1470,17 @@ const LandRanch = () => {
 
       <div className="h-10 md:h-16" aria-hidden="true" />
 
+      {/* ── PARALLAX BREAK ──────────────────────── */}
+      <div
+        className="parallax-break hidden md:block"
+        style={{ backgroundImage: "url('/__l5e/assets-v1/821f01f5-5011-41e1-8ba2-6bc50dbbf7a6/hill-country-overlook.jpg')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties}
+        aria-hidden="true"
+      />
+
+      <div className="h-10 md:h-16" aria-hidden="true" />
+
+
+
 
 
 

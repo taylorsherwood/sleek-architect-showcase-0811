@@ -21,7 +21,8 @@ import marketFredericksburgAsset from "@/assets/market-fredericksburg.jpg.asset.
 import marketKerrvilleAsset from "@/assets/market-kerrville.jpg.asset.json";
 import marketDrippingSpringsAsset from "@/assets/market-dripping-springs.jpg.asset.json";
 const marketDrippingSprings = marketDrippingSpringsAsset.url;
-import marketJohnsonCity from "@/assets/market-johnson-city.jpg";
+import marketJohnsonCityAsset from "@/assets/market-johnson-city.jpg.asset.json";
+const marketJohnsonCity = marketJohnsonCityAsset.url;
 import marketMarbleFallsAsset from "@/assets/market-marble-falls.jpg.asset.json";
 import marketBurnetAsset from "@/assets/market-burnet.webp.asset.json";
 import marketLlanoAsset from "@/assets/market-llano.jpg.asset.json";

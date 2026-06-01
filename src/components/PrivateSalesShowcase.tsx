@@ -8,7 +8,8 @@ import bartonCreekImage from "@/assets/barton-creek.jpg";
 import multifamilySAImage from "@/assets/private-sale-multifamily-sa.webp";
 import spanishOaksImage from "@/assets/spanish-oaks-private-sale.avif";
 import eastAustinImage from "@/assets/east-austin-commercial.jpg";
-import tarrytownImage from "@/assets/tarrytown-private-sale.webp";
+import tarrytownAsset from "@/assets/tarrytown-private-sale.jpg.asset.json";
+const tarrytownImage = tarrytownAsset.url;
 
 /* ------------------------------------------------------------------ */
 /*  DATA, Edit this array to add / remove / update private sales      */

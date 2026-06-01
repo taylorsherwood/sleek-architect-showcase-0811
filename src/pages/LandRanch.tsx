@@ -875,6 +875,111 @@ const LandRanch = () => {
         </div>
       </section>
 
+      {/* ── EXPLORE CENTRAL TEXAS RANCH & LAND MARKETS ─────────────── */}
+      <section className="py-14 md:py-20">
+        <div className="container mx-auto px-6">
+          <div className="max-w-3xl mb-14">
+            <p className="text-gold mb-5" style={labelStyle}>MARKETS</p>
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-normal text-architectural leading-[1.1]">
+              Explore Central Texas Ranch & Land Markets
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12 md:gap-x-10 md:gap-y-14">
+            {[
+              { name: "Fredericksburg", slug: "fredericksburg", img: marketFredericksburg, desc: "Wine country ranches, recreational land, and legacy Hill Country estates." },
+              { name: "Kerrville", slug: "kerrville", img: marketKerrville, desc: "Riverfront acreage and private ranch holdings throughout the Hill Country." },
+              { name: "Dripping Springs", slug: "dripping-springs", img: marketDrippingSprings, desc: "Luxury acreage, equestrian estates, and development opportunities." },
+              { name: "Johnson City", slug: "johnson-city", img: marketJohnsonCity, desc: "Recreational land, vineyards, and long-term investment-grade acreage." },
+              { name: "Marble Falls", slug: "marble-falls", img: marketMarbleFalls, desc: "Waterfront tracts, ranch acreage, and expanding development corridors." },
+              { name: "Burnet", slug: "burnet", img: marketBurnet, desc: "Large tracts, hunting properties, and premier recreational land." },
+              { name: "Llano", slug: "llano", img: marketLlano, desc: "Classic Texas ranch country with abundant wildlife and open landscapes." },
+              { name: "Lampasas", slug: "lampasas", img: marketLampasas, desc: "Private acreage, agricultural land, and long-term appreciation." },
+            ].map((m) => (
+              <Link
+                key={m.slug}
+                to={`/land-ranch/${m.slug}`}
+                className="group flex flex-col"
+                aria-label={`Explore the ${m.name} land and ranch market`}
+              >
+                <div className="relative overflow-hidden aspect-[4/5] mb-5">
+                  <img
+                    src={m.img}
+                    alt={`${m.name}, Texas Hill Country landscape`}
+                    width={1280}
+                    height={1600}
+                    loading="lazy"
+                    decoding="async"
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.05]"
+                  />
+                  <span
+                    aria-hidden="true"
+                    className="absolute bottom-0 left-0 h-px bg-gold w-full scale-x-0 origin-left transition-transform duration-700 ease-out group-hover:scale-x-100"
+                  />
+                </div>
+                <h3 className="font-display text-architectural text-lg md:text-xl leading-tight mb-2 transition-transform duration-500 ease-out group-hover:translate-x-1 group-hover:text-gold">
+                  {m.name}
+                </h3>
+                <p className="text-muted-foreground text-[0.88rem] leading-relaxed mb-4">
+                  {m.desc}
+                </p>
+                <span
+                  className="relative inline-flex items-center text-gold self-start pb-0.5"
+                  style={{ ...labelStyle, fontSize: "0.58rem" }}
+                >
+                  Explore Market
+                  <span aria-hidden="true" className="ml-1.5 inline-block transition-transform duration-500 ease-out group-hover:translate-x-1">→</span>
+                  <span aria-hidden="true" className="absolute bottom-0 left-0 w-full h-px bg-gold scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
+                </span>
+              </Link>
+            ))}
+          </div>
+
+          {/* Thematic advisory pages */}
+          <div className="mt-16 md:mt-20 grid grid-cols-1 md:grid-cols-2 gap-px bg-[rgba(12,15,36,0.08)] border border-[rgba(12,15,36,0.08)]">
+            {[
+              {
+                to: "/land-ranch/hill-country-ranches",
+                eyebrow: "REGIONAL ADVISORY",
+                title: "Hill Country Ranches",
+                desc: "Legacy acreage, live-water tracts, and recreational ranches across the heart of Central Texas.",
+              },
+              {
+                to: "/land-ranch/exotic-wildlife-ranches",
+                eyebrow: "SPECIALIZED ADVISORY",
+                title: "Exotic Wildlife Ranches",
+                desc: "Texas ranches with axis deer, blackbuck, oryx, zebra, and other managed wildlife.",
+              },
+            ].map((t) => (
+              <Link
+                key={t.to}
+                to={t.to}
+                className="group bg-background p-8 md:p-10 flex flex-col justify-between min-h-[220px] transition-colors duration-500 hover:bg-secondary/40"
+              >
+                <div>
+                  <p className="text-gold mb-4" style={{ ...labelStyle, fontSize: "0.55rem" }}>
+                    {t.eyebrow}
+                  </p>
+                  <h3 className="font-display text-2xl md:text-[1.65rem] text-architectural leading-tight mb-3 transition-colors duration-300 group-hover:text-gold">
+                    {t.title}
+                  </h3>
+                  <p className="text-muted-foreground text-[0.95rem] leading-[1.65] max-w-[42ch]">
+                    {t.desc}
+                  </p>
+                </div>
+                <span
+                  className="relative inline-flex items-center text-gold self-start mt-6 pb-0.5"
+                  style={{ ...labelStyle, fontSize: "0.58rem" }}
+                >
+                  Explore Advisory
+                  <span aria-hidden="true" className="ml-1.5 inline-block transition-transform duration-500 ease-out group-hover:translate-x-1">→</span>
+                  <span aria-hidden="true" className="absolute bottom-0 left-0 w-full h-px bg-gold scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <div className="h-10 md:h-16" aria-hidden="true" />
 
       {/* ── NEW: WHY LAND REQUIRES DIFFERENT REPRESENTATION ─────────────── */}

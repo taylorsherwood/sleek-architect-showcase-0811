@@ -261,7 +261,7 @@ const ExpertiseSection = () => {
         .expertise-card:hover .expertise-card__darken { opacity: 1; }
         .expertise-card:hover .expertise-card__underline { width: 60px; }
         @media (max-width: 767px) {
-          .expertise-card { aspect-ratio: 4 / 5 !important; }
+          .expertise-card { aspect-ratio: 4 / 4.3 !important; }
         }
       `}</style>
     </section>

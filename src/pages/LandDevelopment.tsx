@@ -239,7 +239,18 @@ const timeline = [
 ];
 
 const LandDevelopment = () => {
+  const themesScrollerRef = useRef<HTMLDivElement | null>(null);
+
+  const scrollThemes = (direction: "prev" | "next") => {
+    const el = themesScrollerRef.current;
+    if (!el) return;
+    const card = el.querySelector<HTMLElement>("[data-theme-card]");
+    const delta = card ? card.getBoundingClientRect().width + 24 : el.clientWidth * 0.8;
+    el.scrollBy({ left: direction === "next" ? delta : -delta, behavior: "smooth" });
+  };
+
   return (
+
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Land Development & Strategic Acreage in Austin"

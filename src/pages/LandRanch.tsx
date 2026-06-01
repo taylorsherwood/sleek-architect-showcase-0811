@@ -600,9 +600,14 @@ const LandRanch = () => {
             </h2>
           </div>
           {/* Mobile swipe hint */}
-          <div className="flex sm:hidden items-center gap-2 mb-4 text-gold animate-fade-in" style={{ ...labelStyle, fontSize: "0.6rem" }}>
-            <span>Swipe to explore</span>
-            <span aria-hidden="true" className="inline-block animate-[slide-in-right_1.4s_ease-in-out_infinite]">→</span>
+          <div className="flex sm:hidden justify-center mb-5">
+            <div
+              className="swipe-hint-pill inline-flex items-center gap-2.5 px-4 py-2 rounded-full border text-[#b9a06c] bg-[#b9a06c]/[0.06]"
+              style={{ ...labelStyle, fontSize: "0.68rem", letterSpacing: "0.18em" }}
+            >
+              <span>Swipe to explore</span>
+              <span aria-hidden="true" className="swipe-hint-arrow inline-block text-base leading-none">→</span>
+            </div>
           </div>
           <div className="flex sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 overflow-x-auto sm:overflow-visible snap-x snap-mandatory sm:snap-none -mx-6 px-6 sm:mx-0 sm:px-0 pb-4 sm:pb-0 scroll-pl-6 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
             {categories.map((c, i) => {

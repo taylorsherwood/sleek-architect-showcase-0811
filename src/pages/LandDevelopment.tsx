@@ -324,7 +324,70 @@ const LandDevelopment = () => {
         </div>
       </section>
 
-      <div className="h-12 md:h-20" aria-hidden="true" />
+      <div className="h-16 md:h-24" aria-hidden="true" />
+
+      {/* ── SECTION 1.5: CAPITAL ALLOCATION DECISION ──────────────── */}
+      <section className="bg-background">
+        <div className="container mx-auto px-6 md:px-12">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start">
+            <div className="lg:col-span-7">
+              <p className="mb-6" style={{ ...labelStyle, color: GOLD }}>
+                A Capital Allocation Decision
+              </p>
+              <h2
+                className="text-foreground font-normal leading-[1.05] mb-8"
+                style={{
+                  fontFamily: "'Cinzel', serif",
+                  fontSize: "clamp(1.85rem, 4vw, 3.1rem)",
+                }}
+              >
+                Development Begins<br />Long Before Construction
+              </h2>
+              <div
+                className="text-foreground/72 leading-[1.75] space-y-5 max-w-xl"
+                style={{ fontFamily: "'Jost', sans-serif", fontSize: "1.04rem" }}
+              >
+                <p>
+                  The most valuable opportunities are often identified years
+                  before vertical development begins.
+                </p>
+                <p>
+                  Infrastructure expansion, utility capacity, transportation
+                  improvements, population migration, and future land use
+                  policy frequently create value long before a permit is issued.
+                </p>
+              </div>
+            </div>
+            <div className="lg:col-span-5 lg:pt-4">
+              <div className="space-y-10 md:space-y-12">
+                {["Power Availability", "Infrastructure Access", "Future Demand"].map(
+                  (m, i) => (
+                    <div key={m} className="border-t border-border/60 pt-5">
+                      <p
+                        className="mb-3"
+                        style={{ ...labelStyle, color: GOLD, fontSize: "0.62rem" }}
+                      >
+                        {String(i + 1).padStart(2, "0")}
+                      </p>
+                      <p
+                        className="text-foreground font-normal leading-[1.05]"
+                        style={{
+                          fontFamily: "'Cinzel', serif",
+                          fontSize: "clamp(1.5rem, 2.6vw, 2.1rem)",
+                        }}
+                      >
+                        {m}
+                      </p>
+                    </div>
+                  ),
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className="h-16 md:h-24" aria-hidden="true" />
 
       {/* ── SECTION 2: WHAT CAN THIS PROPERTY BECOME ───────────────── */}
       <section className="bg-background">

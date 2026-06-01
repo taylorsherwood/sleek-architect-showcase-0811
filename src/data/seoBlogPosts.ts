@@ -298,7 +298,7 @@ The same pattern holds across other Austin zip codes. 78703 captures [Tarrytown]
 
 For high-end buyers, this matters because the decisions that compound — school zone, commute pattern, lot character, architectural vintage, and long-term appreciation — all operate at the neighborhood level, not the zip-code level. Two homes one mile apart in the same zip code can have different elementary schools, different HOA dynamics, different traffic exposure, and different buyer pools at resale. Filtering and shortlisting at the neighborhood level produces a cleaner picture of what you are actually buying. See our [overview of Austin's luxury submarkets](/blog/best-neighborhoods-for-luxury-homes-austin) for a side-by-side read.
 
-
+### MUD Districts and Utility Realities
 
 Many properties west of MoPac, in the Hill Country, and around Lake Austin sit in Municipal Utility Districts (MUDs). MUD properties have separate taxing authorities that fund water, wastewater, drainage, and sometimes road infrastructure. The MUD assessment is in addition to standard property tax and varies meaningfully by district. Some MUDs are mature and have low ongoing rates; others, particularly newer ones, carry significant debt service. Always verify MUD status and the current rate before going under contract.
 

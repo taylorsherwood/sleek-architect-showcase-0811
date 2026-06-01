@@ -296,164 +296,73 @@ const lenses: Lens[] = [
 ];
 
 const SixLenses = () => {
-  const sectionRef = useRef<HTMLDivElement | null>(null);
-  const [active, setActive] = useState(0);
-
-  useEffect(() => {
-    const el = sectionRef.current;
-    if (!el) return;
-
-    let raf = 0;
-    const onScroll = () => {
-      if (raf) return;
-      raf = requestAnimationFrame(() => {
-        raf = 0;
-        const rect = el.getBoundingClientRect();
-        const vh = window.innerHeight;
-        // total scrollable distance inside the sticky section
-        const total = rect.height - vh;
-        if (total <= 0) return;
-        const scrolled = Math.min(Math.max(-rect.top, 0), total);
-        const progress = scrolled / total; // 0..1
-        const idx = Math.min(
-          lenses.length - 1,
-          Math.floor(progress * lenses.length),
-        );
-        setActive(idx);
-      });
-    };
-
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    window.addEventListener("resize", onScroll);
-    return () => {
-      window.removeEventListener("scroll", onScroll);
-      window.removeEventListener("resize", onScroll);
-      if (raf) cancelAnimationFrame(raf);
-    };
-  }, []);
-
   return (
     <>
-      {/* ── DESKTOP: sticky scroll storytelling ───────────────── */}
+      {/* ── DESKTOP / TABLET: static editorial grid ───────────── */}
       <section
-        ref={sectionRef}
-        className="relative bg-[#FAFAF8] hidden md:block"
-        style={{ height: `${lenses.length * 100}vh` }}
+        className="relative bg-[#FAFAF8] py-20 md:py-28 hidden md:block"
         aria-label="The Six Lenses framework"
       >
-        <div className="sticky top-0 h-screen flex items-center overflow-hidden">
-          <div className="container mx-auto px-6 md:px-12 w-full">
-            <div className="grid md:grid-cols-12 gap-12 md:gap-16 max-w-6xl mx-auto items-center">
-              {/* Left column — intro + progress */}
-              <aside className="md:col-span-5">
+        <div className="container mx-auto px-6 md:px-12">
+          <div className="grid md:grid-cols-12 gap-12 md:gap-16 max-w-6xl mx-auto">
+            {/* Left column — intro */}
+            <aside className="md:col-span-5">
+              <div className="md:sticky md:top-28">
                 <p className="text-[#b9a06c] mb-6" style={label}>
                   SIGNATURE FRAMEWORK
                 </p>
                 <h2
                   className="font-display font-normal text-architectural leading-[1.06] tracking-tight mb-7"
-                  style={{ fontSize: "clamp(1.9rem, 3.6vw, 2.85rem)" }}
+                  style={{ fontSize: "clamp(1.9rem, 3.4vw, 2.6rem)" }}
                 >
                   How We Read a Tract of Land.
                 </h2>
-                <p className="text-muted-foreground text-[1.0625rem] leading-[1.85] max-w-[42ch] mb-12">
+                <p className="text-muted-foreground text-[1.0625rem] leading-[1.85] max-w-[42ch]">
                   Six lenses Echelon Property Group applies to every Hill
-                  Country acquisition. Not a checklist. A way of evaluating what
-                  land is, what it can become, and what it should never be asked
-                  to do.
+                  Country acquisition. Not a checklist. A way of evaluating
+                  what land is, what it can become, and what it should never
+                  be asked to do.
                 </p>
-
-                {/* Progress indicator */}
-                <div className="flex items-center gap-4">
+                <div className="mt-8 flex items-center gap-4">
                   <span aria-hidden="true" className="h-px w-12 bg-[#b9a06c]" />
                   <span
                     className="text-architectural tabular-nums"
                     style={{ ...label, fontSize: "0.6rem" }}
                   >
-                    {String(active + 1).padStart(2, "0")} / 06
+                    SIX LENSES
                   </span>
                 </div>
+              </div>
+            </aside>
 
-                {/* Step dots */}
-                <ol className="mt-8 flex items-center gap-2">
-                  {lenses.map((l, i) => (
-                    <li key={l.number}>
+            {/* Right column — 2-col grid of lenses */}
+            <div className="md:col-span-7">
+              <ol className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-10">
+                {lenses.map((l) => (
+                  <li
+                    key={l.number}
+                    className="border-t border-[rgba(12,15,36,0.14)] pt-5"
+                  >
+                    <div className="flex items-baseline gap-4 mb-3">
                       <span
-                        aria-hidden="true"
-                        className="block h-px transition-all duration-500 ease-out bg-[#b9a06c]"
-                        style={{
-                          width: i === active ? "28px" : "12px",
-                        }}
-                      />
-                    </li>
-                  ))}
-                </ol>
-              </aside>
-
-              {/* Right column — single active step */}
-              <div className="md:col-span-7 relative min-h-[360px]">
-                {lenses.map((l, idx) => {
-                  const isActive = idx === active;
-                  return (
-                    <article
-                      key={l.number}
-                      aria-hidden={!isActive}
-                      className="absolute inset-0 transition-all duration-700 ease-out"
-                      style={{
-                        opacity: isActive ? 1 : 0,
-                        transform: isActive
-                          ? "translateY(0)"
-                          : "translateY(24px)",
-                        pointerEvents: isActive ? "auto" : "none",
-                      }}
-                    >
-                      <div className="flex items-baseline gap-6 mb-7">
-                        <span
-                          className="font-display text-[#b9a06c] leading-none"
-                          style={{ fontSize: "clamp(3.5rem, 7vw, 6rem)" }}
-                        >
-                          {l.number}
-                        </span>
-                        <span
-                          aria-hidden="true"
-                          className="h-px bg-[#b9a06c] origin-left transition-transform duration-[900ms] ease-out"
-                          style={{
-                            width: "120px",
-                            transform: isActive ? "scaleX(1)" : "scaleX(0)",
-                            transitionDelay: isActive ? "120ms" : "0ms",
-                          }}
-                        />
-                      </div>
+                        className="font-display text-[#b9a06c] leading-none"
+                        style={{ fontSize: "1.85rem" }}
+                      >
+                        {l.number}
+                      </span>
                       <h3
-                        className="font-display text-architectural mb-6 leading-[1.05] transition-all duration-700 ease-out"
-                        style={{
-                          fontSize: "clamp(1.85rem, 3.2vw, 2.5rem)",
-                          transform: isActive
-                            ? "translateY(0)"
-                            : "translateY(14px)",
-                          opacity: isActive ? 1 : 0,
-                          transitionDelay: isActive ? "220ms" : "0ms",
-                        }}
+                        className="font-display text-architectural leading-[1.15]"
+                        style={{ fontSize: "1.3rem" }}
                       >
                         {l.title}
                       </h3>
-                      <p
-                        className="text-muted-foreground leading-[1.85] max-w-[54ch] transition-all duration-700 ease-out"
-                        style={{
-                          fontSize: "1.0625rem",
-                          opacity: isActive ? 1 : 0,
-                          transform: isActive
-                            ? "translateY(0)"
-                            : "translateY(10px)",
-                          transitionDelay: isActive ? "360ms" : "0ms",
-                        }}
-                      >
-                        {l.body}
-                      </p>
-                    </article>
-                  );
-                })}
-              </div>
+                    </div>
+                    <p className="text-muted-foreground text-[0.97rem] leading-[1.75]">
+                      {l.body}
+                    </p>
+                  </li>
+                ))}
+              </ol>
             </div>
           </div>
         </div>
@@ -489,9 +398,7 @@ const SixLenses = () => {
           </div>
         </div>
 
-        <div
-          className="flex gap-5 overflow-x-auto snap-x snap-mandatory px-6 pb-6 scroll-smooth [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
-        >
+        <div className="flex gap-5 overflow-x-auto snap-x snap-mandatory px-6 pb-6 scroll-smooth [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
           {lenses.map((l) => (
             <article
               key={l.number}

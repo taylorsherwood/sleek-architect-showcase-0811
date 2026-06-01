@@ -497,7 +497,7 @@ const LandDevelopment = () => {
                 fontSize: "clamp(1.6rem, 3.4vw, 2.6rem)",
               }}
             >
-              Development Opportunities We Evaluate
+              Development Opportunities<br />We Evaluate
             </h2>
           </div>
 

@@ -855,7 +855,7 @@ const LandDevelopment = () => {
         </div>
       </section>
 
-      <div className="h-16 md:h-24" aria-hidden="true" />
+
 
 
       {/* ── SECTION 5: AUSTIN GROWTH CORRIDORS ───────────────────── */}

@@ -8,6 +8,7 @@ import marketLlanoAsset from "@/assets/market-llano.jpg.asset.json";
 import marketLampasasAsset from "@/assets/market-lampasas.jpg.asset.json";
 import hillCountryHeroAsset from "@/assets/hill-country-ranches-hero.jpg.asset.json";
 import exoticWildlifeHeroAsset from "@/assets/exotic-wildlife-ranches-hero.jpg.asset.json";
+import exoticWildlifeRecreationAsset from "@/assets/exotic-wildlife-recreation.png.asset.json";
 
 export type PropertyType =
   | "Ranches"

@@ -229,29 +229,32 @@ export const HillCountryTopEnhancements = () => {
         </div>
       </section>
 
-      {/* ── PARALLAX VISUAL BREAK 2 ───────────────────────── */}
-      <section
-        aria-hidden="true"
-        className="relative w-full overflow-hidden"
-        style={{ height: "clamp(420px, 50vh, 600px)" }}
-      >
-        <div
-          className="absolute inset-0 bg-cover bg-center will-change-transform"
-          style={{
-            backgroundImage: `url(${parallaxTwo})`,
-            backgroundAttachment: "fixed",
-          }}
-        />
-        <div
-          className="absolute inset-0 pointer-events-none"
-          style={{
-            background:
-              "linear-gradient(to bottom, rgba(12,15,36,0.10) 0%, rgba(12,15,36,0) 50%, rgba(12,15,36,0.18) 100%)",
-          }}
-        />
-      </section>
     </>
   );
 };
 
-export default HillCountryEnhancements;
+/** Bottom enhancement: full-bleed parallax image break before the final CTA. */
+export const HillCountryBottomBreak = () => (
+  <section
+    aria-hidden="true"
+    className="relative w-full overflow-hidden"
+    style={{ height: "clamp(420px, 50vh, 600px)" }}
+  >
+    <div
+      className="absolute inset-0 bg-cover bg-center will-change-transform"
+      style={{
+        backgroundImage: `url(${parallaxTwo})`,
+        backgroundAttachment: "fixed",
+      }}
+    />
+    <div
+      className="absolute inset-0 pointer-events-none"
+      style={{
+        background:
+          "linear-gradient(to bottom, rgba(12,15,36,0.10) 0%, rgba(12,15,36,0) 50%, rgba(12,15,36,0.18) 100%)",
+      }}
+    />
+  </section>
+);
+
+export default HillCountryTopEnhancements;

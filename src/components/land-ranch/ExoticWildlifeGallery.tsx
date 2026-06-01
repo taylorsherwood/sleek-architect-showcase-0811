@@ -60,7 +60,7 @@ const Card = ({ s }: { s: Species }) => (
       snap-start md:snap-align-none
       rounded-[2px]
     "
-    style={{ height: "clamp(450px, 60vw, 560px)" }}
+    style={{ height: "clamp(340px, 32vw, 400px)" }}
   >
     <img
       src={s.image}
@@ -71,36 +71,36 @@ const Card = ({ s }: { s: Species }) => (
     />
     {/* base wash */}
     <div
-      className="absolute inset-0 pointer-events-none transition-colors duration-500 group-hover:bg-[rgba(12,15,36,0.32)]"
-      style={{ backgroundColor: "rgba(12, 15, 36, 0.18)" }}
+      className="absolute inset-0 pointer-events-none transition-colors duration-500 group-hover:bg-[rgba(12,15,36,0.22)]"
+      style={{ backgroundColor: "rgba(12, 15, 36, 0.10)" }}
     />
     {/* bottom gradient */}
     <div
       className="absolute inset-x-0 bottom-0 h-2/3 pointer-events-none"
       style={{
         background:
-          "linear-gradient(to top, rgba(12,15,36,0.92) 0%, rgba(12,15,36,0.65) 40%, rgba(12,15,36,0) 100%)",
+          "linear-gradient(to top, rgba(12,15,36,0.78) 0%, rgba(12,15,36,0.45) 45%, rgba(12,15,36,0) 100%)",
       }}
     />
 
-    <div className="relative z-10 h-full flex flex-col justify-end p-7 md:p-8 lg:p-9 text-white">
+    <div className="relative z-10 h-full flex flex-col justify-end p-6 md:p-7 text-white">
       <p
-        className="mb-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+        className="mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
         style={{ ...labelStyle, color: "#b9a06c" }}
       >
         Texas Hill Country
       </p>
-      <h3 className="font-display text-[1.65rem] md:text-[1.85rem] lg:text-[2rem] font-normal leading-[1.1] mb-3">
+      <h3 className="font-display text-[1.45rem] md:text-[1.6rem] lg:text-[1.75rem] font-normal leading-[1.1] mb-2">
         {s.name}
       </h3>
       {/* gold divider */}
       <span
         aria-hidden="true"
-        className="block h-px w-10 mb-4 origin-left transition-transform duration-700 ease-out group-hover:scale-x-[2.2]"
+        className="block h-px w-10 mb-3 origin-left transition-transform duration-700 ease-out group-hover:scale-x-[2.2]"
         style={{ backgroundColor: "#b9a06c" }}
       />
       <p
-        className="text-white/85 text-[0.95rem] leading-[1.6] mb-5 max-w-[40ch]"
+        className="text-white/80 text-[0.9rem] leading-[1.55] mb-4 max-w-[42ch]"
         style={{ fontFamily: '"Jost", sans-serif' }}
       >
         {s.positioning}

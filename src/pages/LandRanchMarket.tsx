@@ -13,6 +13,9 @@ import {
 } from "@/data/landRanchMarkets";
 
 const Footer = lazy(() => import("@/components/Footer"));
+const MarketBalanceGauge = lazy(
+  () => import("@/components/market-intel/MarketBalanceGauge"),
+);
 
 const SITE = "https://www.echelonpropertygroup.com";
 
@@ -245,6 +248,16 @@ const LandRanchMarketPage = () => {
           </p>
         </div>
       </section>
+
+      {/* ── BUYER / SELLER MARKET BALANCE ─────────────────── */}
+      <Suspense fallback={null}>
+        <MarketBalanceGauge
+          communityName={market.name}
+          marketName={market.name}
+          fallbackMarketName={market.county}
+          eyebrow={`${market.name.toUpperCase()} · MARKET BALANCE`}
+        />
+      </Suspense>
 
       <div className="h-10 md:h-16" aria-hidden="true" />
 

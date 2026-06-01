@@ -63,7 +63,6 @@ const LandRanchMarketPage = () => {
         description={market.metaDescription}
         canonical={canonical}
         ogType="website"
-        ogImage={market.heroImage}
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup

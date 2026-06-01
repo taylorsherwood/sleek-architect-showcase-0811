@@ -141,6 +141,17 @@ const ExoticWildlifeGallery = () => {
           </p>
         </div>
 
+        {/* Mobile swipe hint */}
+        <div className="md:hidden flex justify-center mb-4">
+          <div
+            className="swipe-hint-pill inline-flex items-center gap-2.5 px-4 py-2 rounded-full border text-[#b9a06c] bg-[#b9a06c]/[0.06]"
+            style={{ fontFamily: "'Jost', sans-serif", fontSize: "0.68rem", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 500 }}
+          >
+            <span>Swipe to explore</span>
+            <span aria-hidden="true" className="swipe-hint-arrow inline-block text-base leading-none">→</span>
+          </div>
+        </div>
+
         {/* Mobile: horizontal swipe carousel */}
         <div
           className="md:hidden flex gap-4 overflow-x-auto snap-x snap-mandatory -mx-6 px-6 pb-2 scrollbar-none"

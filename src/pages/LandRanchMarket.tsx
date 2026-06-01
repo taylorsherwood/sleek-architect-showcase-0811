@@ -53,8 +53,10 @@ const LandRanchMarketPage = () => {
 
   const canonical = `/land-ranch/${market.slug}`;
   const relatedMarkets = landRanchMarkets
-    .filter((m) => m.slug !== market.slug)
+    .filter((m) => m.slug !== market.slug && m.kind !== "theme")
     .slice(0, 4);
+  const heroEyebrow = market.heroEyebrow ?? `LAND & RANCH · ${market.county.toUpperCase()}`;
+  const heroHeadline = market.heroHeadline ?? `${market.name} Ranches & Land`;
 
   return (
     <div className="min-h-screen bg-background">

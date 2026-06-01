@@ -59,7 +59,7 @@ const expertiseBlocks = [
     eyebrow: "MARKET INTELLIGENCE",
     title: "Market Intelligence",
     description: "Research, growth corridors, development trends, market analysis, and strategic insights shaping real estate decisions across Central Texas.",
-    link: "/insights",
+    link: "/blog",
     linkText: "Explore Insights",
     image: marketIntelligence,
     alt: "Aerial view of Austin growth corridors with highlighted development parcels and infrastructure overlays at sunset",

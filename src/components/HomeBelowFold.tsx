@@ -21,6 +21,7 @@ import echelonWatermarkLogo from "@/assets/echelon-watermark-logo.png";
 import lakeAustinTestimonialImg from "@/assets/lake-austin-luxury-testimonials.webp";
 import LandRanchHomeIntro from "@/components/LandRanchHomeIntro";
 import parallaxBridgeAsset from "@/assets/parallax-bridge-sunset.webp.asset.json";
+import parallaxHillCountryAsset from "@/assets/parallax-hill-country.jpg.asset.json";
 
 // Blog images use lazy-friendly static paths (not eager imports) to avoid
 // pulling ~836 KB into the initial HomeBelowFold chunk. These are only
@@ -1553,7 +1554,7 @@ const HomeBelowFold = () => (
 
     <FeaturedProperties />
 
-    <div className="parallax-break hidden md:block" style={{ backgroundImage: "url('/images/parallax-lakefront.webp')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties} aria-hidden="true" />
+    <div className="parallax-break hidden md:block" style={{ backgroundImage: `url('${parallaxHillCountryAsset.url}')`, contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties} aria-hidden="true" />
 
     <CommunitiesSection />
 

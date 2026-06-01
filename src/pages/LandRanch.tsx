@@ -177,14 +177,14 @@ const LandRanch = () => {
       />
 
       <Navigation />
-      <div className="h-12 md:h-20" aria-hidden="true" />
+      <div className="h-32 md:h-28 lg:h-[6.5rem]" aria-hidden="true" />
 
       {/* ── HERO ─────────────────────────────────── */}
-      <section className="relative w-full h-[650px] sm:min-h-[640px] md:min-h-[720px] lg:h-[820px] xl:h-[860px] 2xl:h-[880px] overflow-hidden bg-primary">
+      <section className="relative w-full h-[590px] sm:min-h-[640px] md:min-h-[720px] lg:h-[820px] xl:h-[860px] 2xl:h-[880px] overflow-hidden bg-primary">
         <img
           src={heroImage}
           alt="Texas Hill Country ranch land with rolling terrain, live oaks, a creek, and a private drive leading to a modern ranch home"
-          className="absolute inset-0 w-full h-full object-cover object-center"
+          className="absolute inset-0 w-full h-full object-cover object-[58%_center] md:object-center"
           width={1920}
           height={1080}
           loading="eager"
@@ -198,21 +198,21 @@ const LandRanch = () => {
               "linear-gradient(to right, rgba(12,15,36,0.48) 0%, rgba(12,15,36,0.30) 35%, rgba(12,15,36,0.10) 65%, transparent 100%)",
           }}
         />
-        <div className="absolute inset-0 sm:hidden" style={{ background: "linear-gradient(to bottom, rgba(12,15,36,0.68) 0%, rgba(12,15,36,0.44) 42%, rgba(12,15,36,0.18) 100%)" }} />
+        <div className="absolute inset-0 sm:hidden" style={{ background: "linear-gradient(to bottom, rgba(12,15,36,0.68) 0%, rgba(12,15,36,0.52) 46%, rgba(12,15,36,0.24) 100%)" }} />
 
-        <div className="relative z-10 flex h-full items-start pt-8 px-6 md:hidden">
+        <div className="relative z-10 flex h-full items-start px-6 pt-9 md:hidden">
           <div className="w-full max-w-[390px]">
             <p className="text-gold mb-3" style={labelStyle}>
               LAND & RANCH
             </p>
             <h1
               className="font-display font-normal text-white leading-[1.06] mb-4"
-              style={{ fontSize: "2.18rem", textShadow: "0 1px 3px rgba(0,0,0,0.38)" }}
+              style={{ fontSize: "1.82rem", textShadow: "0 1px 3px rgba(0,0,0,0.38)" }}
             >
-              Austin Area Land &<br />Ranch Opportunities
+              Austin Area Land & Ranch Opportunities
             </h1>
             <p
-              className="text-white/90 leading-relaxed mb-6 text-[0.95rem]"
+              className="text-white/90 leading-relaxed mb-5 text-[0.88rem]"
               style={{ textShadow: "0 1px 2px rgba(0,0,0,0.35)" }}
             >
               From legacy ranches and recreational retreats to investment acreage and development
@@ -223,14 +223,14 @@ const LandRanch = () => {
             <div className="flex flex-col gap-3">
               <a
                 href="#categories"
-                className="inline-flex min-h-[48px] items-center justify-center bg-gold hover:bg-[hsl(var(--gold-deep))] text-white px-5 py-3 transition-colors duration-300"
+                className="inline-flex min-h-[48px] w-full items-center justify-center bg-gold hover:bg-[hsl(var(--gold-deep))] text-white px-4 py-3 text-center transition-colors duration-300"
                 style={labelStyle}
               >
                 Explore Land Opportunities
               </a>
               <Link
                 to="/contact"
-                className="inline-flex min-h-[48px] items-center justify-center border border-gold text-white hover:bg-architectural hover:border-architectural px-5 py-3 transition-colors duration-300 backdrop-blur-sm"
+                className="inline-flex min-h-[48px] w-full items-center justify-center border border-gold text-white hover:bg-architectural hover:border-architectural px-4 py-3 text-center transition-colors duration-300 backdrop-blur-sm"
                 style={labelStyle}
               >
                 Request a Property Evaluation

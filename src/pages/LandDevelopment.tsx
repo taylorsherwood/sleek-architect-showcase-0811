@@ -829,7 +829,7 @@ const LandDevelopment = () => {
           }}
           aria-hidden="true"
         />
-        <div className="relative z-10 h-full container mx-auto px-6 md:px-12 flex flex-col justify-end pb-12 md:pb-20">
+        <div className="relative z-10 h-full container mx-auto px-6 md:px-12 flex flex-col justify-center py-12 md:py-16">
           <div className="max-w-2xl">
             <p className="mb-4" style={{ ...labelStyle, color: GOLD }}>
               The Region In Motion

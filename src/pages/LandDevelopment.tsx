@@ -251,11 +251,8 @@ const LandDevelopment = () => {
           <div className="mt-12 md:mt-16">
             <div className="hidden md:grid grid-cols-9 items-center gap-0">
               {timeline.map((step, i) => (
-                <>
-                  <div
-                    key={step}
-                    className="col-span-1 flex flex-col items-center text-center"
-                  >
+                <Fragment key={step}>
+                  <div className="col-span-1 flex flex-col items-center text-center">
                     <div
                       className="w-2.5 h-2.5 rounded-full mb-4"
                       style={{ backgroundColor: GOLD }}
@@ -279,7 +276,7 @@ const LandDevelopment = () => {
                       aria-hidden="true"
                     />
                   )}
-                </>
+                </Fragment>
               ))}
             </div>
 

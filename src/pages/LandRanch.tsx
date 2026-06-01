@@ -891,53 +891,51 @@ const LandRanch = () => {
               Explore Central Texas Ranch & Land Markets
             </h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12 md:gap-x-10 md:gap-y-14">
             {[
-              { name: "Fredericksburg", slug: "fredericksburg", img: marketFredericksburg, desc: "The heart of Texas wine country, known for legacy ranches, recreational properties, and luxury rural estates." },
-              { name: "Kerrville", slug: "kerrville", img: marketKerrville, desc: "A premier Hill Country destination offering riverfront acreage, wildlife habitat, and large private ranch holdings." },
-              { name: "Dripping Springs", slug: "dripping-springs", img: marketDrippingSprings, desc: "One of the fastest-growing markets for luxury acreage, equestrian properties, and development opportunities." },
-              { name: "Johnson City", slug: "johnson-city", img: marketJohnsonCity, desc: "Highly sought-after for recreational land, vineyards, and long-term investment potential." },
-              { name: "Marble Falls", slug: "marble-falls", img: marketMarbleFalls, desc: "A blend of waterfront opportunities, ranch acreage, and expanding development corridors." },
-              { name: "Burnet", slug: "burnet", img: marketBurnet, desc: "Known for large tracts, hunting properties, and access to some of the region's best recreational land." },
-              { name: "Llano", slug: "llano", img: marketLlano, desc: "Classic Texas ranch country with abundant wildlife, open landscapes, and generational holdings." },
-              { name: "Lampasas", slug: "lampasas", img: marketLampasas, desc: "A growing destination for buyers seeking privacy, agricultural use, and long-term land appreciation." },
+              { name: "Fredericksburg", slug: "fredericksburg", img: marketFredericksburg, desc: "Wine country ranches, recreational land, and legacy Hill Country estates." },
+              { name: "Kerrville", slug: "kerrville", img: marketKerrville, desc: "Riverfront acreage and private ranch holdings throughout the Hill Country." },
+              { name: "Dripping Springs", slug: "dripping-springs", img: marketDrippingSprings, desc: "Luxury acreage, equestrian estates, and development opportunities." },
+              { name: "Johnson City", slug: "johnson-city", img: marketJohnsonCity, desc: "Recreational land, vineyards, and long-term investment-grade acreage." },
+              { name: "Marble Falls", slug: "marble-falls", img: marketMarbleFalls, desc: "Waterfront tracts, ranch acreage, and expanding development corridors." },
+              { name: "Burnet", slug: "burnet", img: marketBurnet, desc: "Large tracts, hunting properties, and premier recreational land." },
+              { name: "Llano", slug: "llano", img: marketLlano, desc: "Classic Texas ranch country with abundant wildlife and open landscapes." },
+              { name: "Lampasas", slug: "lampasas", img: marketLampasas, desc: "Private acreage, agricultural land, and long-term appreciation." },
             ].map((m) => (
               <Link
                 key={m.slug}
                 to={`/land-ranch/${m.slug}`}
-                className="group flex flex-col h-full"
+                className="group flex flex-col"
                 aria-label={`Explore the ${m.name} land and ranch market`}
               >
-                <div
-                  className="overflow-hidden mb-5"
-                  style={{
-                    border: "1px solid rgba(12,15,36,0.06)",
-                    boxShadow: "0 14px 30px -22px rgba(12,15,36,0.18), 0 6px 14px -10px rgba(12,15,36,0.08)",
-                  }}
-                >
+                <div className="relative overflow-hidden aspect-[4/5] mb-5">
                   <img
                     src={m.img}
                     alt={`${m.name}, Texas Hill Country landscape`}
                     width={1280}
-                    height={832}
+                    height={1600}
                     loading="lazy"
                     decoding="async"
-                    className="block w-full h-[220px] md:h-[240px] object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.04]"
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.05]"
+                  />
+                  <span
+                    aria-hidden="true"
+                    className="absolute bottom-0 left-0 h-px bg-gold w-full scale-x-0 origin-left transition-transform duration-700 ease-out group-hover:scale-x-100"
                   />
                 </div>
-                <h3 className="font-display text-architectural text-xl md:text-[1.4rem] leading-tight mb-2 transition-colors duration-500 group-hover:text-gold">
+                <h3 className="font-display text-architectural text-lg md:text-xl leading-tight mb-2 transition-transform duration-500 ease-out group-hover:translate-x-1 group-hover:text-gold">
                   {m.name}
                 </h3>
-                <p className="text-muted-foreground text-[0.92rem] leading-relaxed mb-4 flex-1">
+                <p className="text-muted-foreground text-[0.88rem] leading-relaxed mb-4">
                   {m.desc}
                 </p>
                 <span
-                  className="relative inline-flex items-center text-gold pb-0.5 self-start"
+                  className="relative inline-flex items-center text-gold self-start pb-0.5"
                   style={{ ...labelStyle, fontSize: "0.58rem" }}
                 >
                   Explore Market
                   <span aria-hidden="true" className="ml-1.5 inline-block transition-transform duration-500 ease-out group-hover:translate-x-1">→</span>
-                  <span className="absolute bottom-0 left-0 w-full h-px bg-gold scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
+                  <span aria-hidden="true" className="absolute bottom-0 left-0 w-full h-px bg-gold scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
                 </span>
               </Link>
             ))}

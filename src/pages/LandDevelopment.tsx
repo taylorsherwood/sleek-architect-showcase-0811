@@ -275,7 +275,7 @@ const LandDevelopment = () => {
           }}
         />
 
-        <div className="relative z-10 flex h-full items-end md:items-center pb-12 md:pb-0">
+        <div className="relative z-10 flex h-full items-center pb-16 md:pb-24 lg:pb-32">
           <div className="container mx-auto px-6 md:px-12">
             <div className="max-w-3xl text-white">
               <p className="mb-4 md:mb-6" style={{ ...labelStyle, color: GOLD }}>

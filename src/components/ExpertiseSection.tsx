@@ -89,7 +89,7 @@ const ExpertiseSection = () => {
                   marginBottom: "1.75rem",
                 }}
               >
-                Four practices. One standard.
+                One relationship. multiple opportunities
               </h2>
               <div
                 aria-hidden="true"

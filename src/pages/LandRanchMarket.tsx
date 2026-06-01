@@ -235,11 +235,6 @@ const LandRanchMarketPage = () => {
         </Suspense>
       )}
 
-      {market.slug === "hill-country-ranches" && (
-        <Suspense fallback={null}>
-          <HillCountryTopEnhancements />
-        </Suspense>
-      )}
 
       {/* ── AGENT INTEL · PROPERTY TYPES · WHY BUYERS ──────────────
           Hidden on hill-country-ranches: the cinematic video, by-the-numbers

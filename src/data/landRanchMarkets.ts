@@ -8,6 +8,7 @@ import marketLlanoAsset from "@/assets/market-llano.jpg.asset.json";
 import marketLampasasAsset from "@/assets/market-lampasas.jpg.asset.json";
 import hillCountryHeroAsset from "@/assets/hill-country-ranches-hero.jpg.asset.json";
 import exoticWildlifeHeroAsset from "@/assets/exotic-wildlife-ranches-hero.jpg.asset.json";
+import exoticWildlifeRecreationAsset from "@/assets/exotic-wildlife-recreation.png.asset.json";
 
 export type PropertyType =
   | "Ranches"
@@ -42,7 +43,7 @@ export interface LandRanchMarket {
   };
   propertyTypes: PropertyType[];
   whyBuyers: { title: string; body: string }[];
-  lifestyle: { eyebrow: string; headline: string; body: string };
+  lifestyle: { eyebrow: string; headline: string; body: string; image?: string };
 }
 
 export const landRanchMarkets: LandRanchMarket[] = [
@@ -631,6 +632,7 @@ export const landRanchMarkets: LandRanchMarket[] = [
       eyebrow: "RECREATION",
       headline: "Axis, blackbuck, oryx, zebra — and the ranches that steward them",
       body: "Ownership in this category is closer to running a private reserve than maintaining a recreational tract. Days are organized around herds, water, fence lines, and managed hunts, with a way of life that has very few peers anywhere else in the country.",
+      image: exoticWildlifeRecreationAsset.url,
     },
   },
 ];

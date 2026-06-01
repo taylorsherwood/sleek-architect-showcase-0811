@@ -330,7 +330,7 @@ const LandRanchMarketPage = () => {
             <div className="md:col-span-6 order-2 md:order-1">
               <div className="relative overflow-hidden aspect-[4/5]">
                 <img
-                  src={market.heroImage}
+                  src={market.lifestyle.image ?? market.heroImage}
                   alt={`${market.name} lifestyle and surrounding landscape`}
                   className="absolute inset-0 w-full h-full object-cover"
                   loading="lazy"

@@ -823,6 +823,30 @@ const LandRanch = () => {
                   decoding="async"
                 />
               </div>
+
+              {/* Social links */}
+              <div className="flex items-center justify-center gap-6 mt-6">
+                <a
+                  href="https://www.instagram.com/theinvestorbroker"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  className="gold-metallic-text gold-underline-hover inline-flex items-center gap-2 transition-opacity duration-300"
+                  aria-label="Follow Taylor Sherwood on Instagram"
+                >
+                  <Instagram className="w-5 h-5 text-gold" />
+                  <span className="text-xs tracking-[0.15em] uppercase">@TheInvestorBroker</span>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/taylorsherwood/"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  className="gold-metallic-text gold-underline-hover inline-flex items-center gap-2 transition-opacity duration-300"
+                  aria-label="View Taylor Sherwood on LinkedIn"
+                >
+                  <Linkedin className="w-5 h-5 text-gold" />
+                  <span className="text-xs tracking-[0.15em] uppercase">LinkedIn</span>
+                </a>
+              </div>
             </div>
 
             {/* Content */}

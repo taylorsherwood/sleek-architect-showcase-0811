@@ -4,7 +4,7 @@ import commercialMusicLane from "@/assets/commercial-music-lane-austin.webp";
 import luxuryHomesKitchen from "@/assets/luxury-homes-austin-twilight.webp";
 import paseoInvestment from "@/assets/investment-property-austin-condos.webp";
 import ranchHeroAsset from "@/assets/hill-country-ranches-hero.jpg.asset.json";
-import marketIntelligenceAsset from "@/assets/market-intelligence.png.asset.json";
+import marketIntelligenceAsset from "@/assets/market-intelligence.avif.asset.json";
 const ranchHero = ranchHeroAsset.url;
 const marketIntelligence = marketIntelligenceAsset.url;
 

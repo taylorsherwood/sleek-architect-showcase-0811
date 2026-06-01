@@ -1026,127 +1026,6 @@ const LandRanch = () => {
 
       <div className="h-10 md:h-16" aria-hidden="true" />
 
-      {/* ── NEW: LAND & RANCH PROPERTY TYPES ───────────────────────────── */}
-      <section className="py-14 md:py-20">
-        <div className="container mx-auto px-6">
-          <div className="max-w-3xl mb-14">
-            <p className="text-gold mb-5" style={labelStyle}>PROPERTY TYPES</p>
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-normal text-architectural leading-[1.1]">
-              Land & Ranch Property Types
-            </h2>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[rgba(12,15,36,0.08)] border border-[rgba(12,15,36,0.08)]">
-            {[
-              { t: "Legacy Ranches", d: "Multi-generational holdings with established improvements, water, and a long history of stewardship." },
-              { t: "Recreational Land", d: "Hunting, fishing, and retreat properties prized for habitat, privacy, and access." },
-              { t: "Hunting Properties", d: "Native and exotic game ranches with managed habitat and infrastructure for sporting use." },
-              { t: "Development Tracts", d: "Acreage positioned for subdivision, master-planned, or commercial development." },
-              { t: "Luxury Estates on Acreage", d: "Custom residences set on meaningful land, blending refined architecture with private setting." },
-              { t: "Farm & Agricultural Land", d: "Productive working land supporting cattle, hay, row crops, and qualifying ag valuations." },
-            ].map((c) => (
-              <div
-                key={c.t}
-                className="group bg-background p-8 md:p-10 transition-colors duration-500 hover:bg-[rgba(185,160,108,0.04)]"
-              >
-                <p className="font-display text-architectural text-xl md:text-2xl leading-snug mb-4 transition-colors duration-500 group-hover:text-gold">
-                  {c.t}
-                </p>
-                <p className="text-muted-foreground text-[0.95rem] leading-relaxed">{c.d}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <div className="h-10 md:h-16" aria-hidden="true" />
-
-      {/* ── PARALLAX BREAK ──────────────────────── */}
-      <div
-        className="parallax-break hidden md:block"
-        style={{ backgroundImage: "url('/images/parallax-pasture-tree.webp')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties}
-        aria-hidden="true"
-      />
-
-      <div className="h-10 md:h-16" aria-hidden="true" />
-
-
-      {/* ── NEW: LAND ACQUISITION & DEVELOPMENT ADVISORY ───────────────── */}
-      <section className="py-14 md:py-20">
-        <div className="container mx-auto px-6">
-          <div className="grid md:grid-cols-12 gap-12 md:gap-20 items-start max-w-6xl mx-auto">
-            <div className="md:col-span-5">
-              <p className="text-gold mb-5" style={labelStyle}>ACQUISITION & DEVELOPMENT</p>
-              <h2 className="font-display text-3xl md:text-4xl lg:text-[2.75rem] font-normal text-architectural leading-[1.1] mb-6">
-                Land Acquisition & Development Advisory
-              </h2>
-              <p className="text-muted-foreground leading-relaxed text-[1.0625rem] mb-8">
-                For investors, builders, and landowners weighing what to do next, the right strategy is rarely obvious from the deed alone. Echelon Property Group advises on the full arc, from sourcing the parcel to deciding whether to hold, improve, develop, or sell.
-              </p>
-              <Link
-                to="/contact"
-                className="inline-flex items-center justify-center px-8 py-4 transition-colors duration-300 rounded-sm"
-                style={{ ...labelStyle, background: "#B9A06C", color: "#FFFFFF", border: "1px solid #B9A06C", fontWeight: 600 }}
-                onMouseEnter={(e) => { e.currentTarget.style.background = "#0C0F24"; e.currentTarget.style.borderColor = "#0C0F24"; }}
-                onMouseLeave={(e) => { e.currentTarget.style.background = "#B9A06C"; e.currentTarget.style.borderColor = "#B9A06C"; }}
-              >
-                Discuss a Land Acquisition Strategy →
-              </Link>
-            </div>
-            <div className="md:col-span-7">
-              <dl className="space-y-8">
-                {[
-                  ["Infill Opportunities", "Underutilized parcels inside established submarkets where demand already exists."],
-                  ["Assemblage Strategy", "Combining adjacent tracts to unlock scale, frontage, or entitlement options."],
-                  ["Builder & Developer Introductions", "Quiet introductions to vetted builders and developers when alignment is right."],
-                  ["Entitlement Considerations", "Zoning, utilities, ETJ status, and the regulatory path to a usable site."],
-                  ["Hold, Improve, Develop, or Sell", "An honest read on which strategy maximizes long-term value for the owner."],
-                ].map(([t, d]) => (
-                  <div key={t} className="grid grid-cols-12 gap-6 pb-8 border-b border-[rgba(12,15,36,0.1)] last:border-b-0 last:pb-0">
-                    <dt className="col-span-12 sm:col-span-5 font-display text-architectural text-lg md:text-xl leading-tight">{t}</dt>
-                    <dd className="col-span-12 sm:col-span-7 text-muted-foreground text-[0.95rem] leading-relaxed">{d}</dd>
-                  </div>
-                ))}
-              </dl>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div className="h-10 md:h-16" aria-hidden="true" />
-
-      {/* ── NEW: LAND BUYER PROCESS ─────────────────────────────────────── */}
-      <section className="py-14 md:py-20">
-        <div className="container mx-auto px-6">
-          <div className="max-w-3xl mb-14">
-            <p className="text-gold mb-5" style={labelStyle}>PROCESS</p>
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-normal text-architectural leading-[1.1]">
-              The Land Buyer Process
-            </h2>
-          </div>
-          <ol className="grid grid-cols-1 md:grid-cols-5 gap-px bg-[rgba(12,15,36,0.08)] border border-[rgba(12,15,36,0.08)]">
-            {[
-              ["01", "Identify Opportunity", "Define the goal, the geography, and the kind of land that fits the long-term plan."],
-              ["02", "Evaluate Constraints", "Review access, water, utilities, exemptions, and any encumbrances on title."],
-              ["03", "Due Diligence", "Surveys, environmental review, floodplain, mineral, and entitlement analysis."],
-              ["04", "Negotiate Terms", "Structure price, contingencies, and timing to protect the buyer's position."],
-              ["05", "Close with Confidence", "Coordinate closing with clarity on what the buyer is acquiring and why."],
-            ].map(([n, t, d]) => (
-              <li
-                key={n}
-                className="group relative bg-background p-8 md:p-9 border border-transparent transition-all duration-500 ease-out hover:scale-[1.02] hover:border-gold hover:z-10"
-              >
-                <p className="text-gold mb-4" style={{ ...labelStyle, fontSize: "0.55rem" }}>{`STEP ${n}`}</p>
-                <p className="font-display text-architectural text-xl md:text-2xl leading-snug mb-3 transition-colors duration-300 group-hover:text-gold">{t}</p>
-                <p className="text-muted-foreground text-[0.9rem] leading-relaxed">{d}</p>
-              </li>
-            ))}
-          </ol>
-        </div>
-      </section>
-
-      <div className="h-10 md:h-16" aria-hidden="true" />
-
-
       {/* ── SECTION 6.9: MEET YOUR ADVISOR ──────────────────────── */}
       <section
         className="relative overflow-hidden"
@@ -1384,6 +1263,129 @@ const LandRanch = () => {
           </div>
         </div>
       </section>
+      <div className="h-10 md:h-16" aria-hidden="true" />
+
+      {/* ── NEW: LAND & RANCH PROPERTY TYPES ───────────────────────────── */}
+      <section className="py-14 md:py-20">
+        <div className="container mx-auto px-6">
+          <div className="max-w-3xl mb-14">
+            <p className="text-gold mb-5" style={labelStyle}>PROPERTY TYPES</p>
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-normal text-architectural leading-[1.1]">
+              Land & Ranch Property Types
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[rgba(12,15,36,0.08)] border border-[rgba(12,15,36,0.08)]">
+            {[
+              { t: "Legacy Ranches", d: "Multi-generational holdings with established improvements, water, and a long history of stewardship." },
+              { t: "Recreational Land", d: "Hunting, fishing, and retreat properties prized for habitat, privacy, and access." },
+              { t: "Hunting Properties", d: "Native and exotic game ranches with managed habitat and infrastructure for sporting use." },
+              { t: "Development Tracts", d: "Acreage positioned for subdivision, master-planned, or commercial development." },
+              { t: "Luxury Estates on Acreage", d: "Custom residences set on meaningful land, blending refined architecture with private setting." },
+              { t: "Farm & Agricultural Land", d: "Productive working land supporting cattle, hay, row crops, and qualifying ag valuations." },
+            ].map((c) => (
+              <div
+                key={c.t}
+                className="group bg-background p-8 md:p-10 transition-colors duration-500 hover:bg-[rgba(185,160,108,0.04)]"
+              >
+                <p className="font-display text-architectural text-xl md:text-2xl leading-snug mb-4 transition-colors duration-500 group-hover:text-gold">
+                  {c.t}
+                </p>
+                <p className="text-muted-foreground text-[0.95rem] leading-relaxed">{c.d}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <div className="h-10 md:h-16" aria-hidden="true" />
+
+      {/* ── PARALLAX BREAK ──────────────────────── */}
+      <div
+        className="parallax-break hidden md:block"
+        style={{ backgroundImage: "url('/images/parallax-pasture-tree.webp')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties}
+        aria-hidden="true"
+      />
+
+      <div className="h-10 md:h-16" aria-hidden="true" />
+
+
+      {/* ── NEW: LAND ACQUISITION & DEVELOPMENT ADVISORY ───────────────── */}
+      <section className="py-14 md:py-20">
+        <div className="container mx-auto px-6">
+          <div className="grid md:grid-cols-12 gap-12 md:gap-20 items-start max-w-6xl mx-auto">
+            <div className="md:col-span-5">
+              <p className="text-gold mb-5" style={labelStyle}>ACQUISITION & DEVELOPMENT</p>
+              <h2 className="font-display text-3xl md:text-4xl lg:text-[2.75rem] font-normal text-architectural leading-[1.1] mb-6">
+                Land Acquisition & Development Advisory
+              </h2>
+              <p className="text-muted-foreground leading-relaxed text-[1.0625rem] mb-8">
+                For investors, builders, and landowners weighing what to do next, the right strategy is rarely obvious from the deed alone. Echelon Property Group advises on the full arc, from sourcing the parcel to deciding whether to hold, improve, develop, or sell.
+              </p>
+              <Link
+                to="/contact"
+                className="inline-flex items-center justify-center px-8 py-4 transition-colors duration-300 rounded-sm"
+                style={{ ...labelStyle, background: "#B9A06C", color: "#FFFFFF", border: "1px solid #B9A06C", fontWeight: 600 }}
+                onMouseEnter={(e) => { e.currentTarget.style.background = "#0C0F24"; e.currentTarget.style.borderColor = "#0C0F24"; }}
+                onMouseLeave={(e) => { e.currentTarget.style.background = "#B9A06C"; e.currentTarget.style.borderColor = "#B9A06C"; }}
+              >
+                Discuss a Land Acquisition Strategy →
+              </Link>
+            </div>
+            <div className="md:col-span-7">
+              <dl className="space-y-8">
+                {[
+                  ["Infill Opportunities", "Underutilized parcels inside established submarkets where demand already exists."],
+                  ["Assemblage Strategy", "Combining adjacent tracts to unlock scale, frontage, or entitlement options."],
+                  ["Builder & Developer Introductions", "Quiet introductions to vetted builders and developers when alignment is right."],
+                  ["Entitlement Considerations", "Zoning, utilities, ETJ status, and the regulatory path to a usable site."],
+                  ["Hold, Improve, Develop, or Sell", "An honest read on which strategy maximizes long-term value for the owner."],
+                ].map(([t, d]) => (
+                  <div key={t} className="grid grid-cols-12 gap-6 pb-8 border-b border-[rgba(12,15,36,0.1)] last:border-b-0 last:pb-0">
+                    <dt className="col-span-12 sm:col-span-5 font-display text-architectural text-lg md:text-xl leading-tight">{t}</dt>
+                    <dd className="col-span-12 sm:col-span-7 text-muted-foreground text-[0.95rem] leading-relaxed">{d}</dd>
+                  </div>
+                ))}
+              </dl>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className="h-10 md:h-16" aria-hidden="true" />
+
+      {/* ── NEW: LAND BUYER PROCESS ─────────────────────────────────────── */}
+      <section className="py-14 md:py-20">
+        <div className="container mx-auto px-6">
+          <div className="max-w-3xl mb-14">
+            <p className="text-gold mb-5" style={labelStyle}>PROCESS</p>
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-normal text-architectural leading-[1.1]">
+              The Land Buyer Process
+            </h2>
+          </div>
+          <ol className="grid grid-cols-1 md:grid-cols-5 gap-px bg-[rgba(12,15,36,0.08)] border border-[rgba(12,15,36,0.08)]">
+            {[
+              ["01", "Identify Opportunity", "Define the goal, the geography, and the kind of land that fits the long-term plan."],
+              ["02", "Evaluate Constraints", "Review access, water, utilities, exemptions, and any encumbrances on title."],
+              ["03", "Due Diligence", "Surveys, environmental review, floodplain, mineral, and entitlement analysis."],
+              ["04", "Negotiate Terms", "Structure price, contingencies, and timing to protect the buyer's position."],
+              ["05", "Close with Confidence", "Coordinate closing with clarity on what the buyer is acquiring and why."],
+            ].map(([n, t, d]) => (
+              <li
+                key={n}
+                className="group relative bg-background p-8 md:p-9 border border-transparent transition-all duration-500 ease-out hover:scale-[1.02] hover:border-gold hover:z-10"
+              >
+                <p className="text-gold mb-4" style={{ ...labelStyle, fontSize: "0.55rem" }}>{`STEP ${n}`}</p>
+                <p className="font-display text-architectural text-xl md:text-2xl leading-snug mb-3 transition-colors duration-300 group-hover:text-gold">{t}</p>
+                <p className="text-muted-foreground text-[0.9rem] leading-relaxed">{d}</p>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      <div className="h-10 md:h-16" aria-hidden="true" />
+
+
 
 
       {/* ── SECTION 6.5: INSIGHTS ──────────────────────── */}

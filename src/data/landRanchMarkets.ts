@@ -42,7 +42,7 @@ export interface LandRanchMarket {
   };
   propertyTypes: PropertyType[];
   whyBuyers: { title: string; body: string }[];
-  lifestyle: { eyebrow: string; headline: string; body: string };
+  lifestyle: { eyebrow: string; headline: string; body: string; image?: string };
 }
 
 export const landRanchMarkets: LandRanchMarket[] = [

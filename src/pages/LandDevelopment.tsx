@@ -6,6 +6,12 @@ import SchemaMarkup, {
   createBreadcrumbSchema,
   realEstateAgentSchema,
 } from "@/components/SchemaMarkup";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import heroImg from "@/assets/land-development-hero.jpg";
 import masterplanImg from "@/assets/land-development-masterplan.jpg";
 import datacenterImg from "@/assets/land-development-datacenter.jpg";

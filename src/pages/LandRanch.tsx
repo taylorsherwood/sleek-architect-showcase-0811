@@ -422,7 +422,7 @@ const LandRanch = () => {
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                 <a
                   href="#categories"
-                  className="inline-flex items-center justify-center bg-gold hover:bg-[hsl(var(--gold-deep))] text-white px-8 py-4 transition-colors duration-300"
+                  className="inline-flex items-center justify-center bg-gold hover:bg-primary text-white px-8 py-4 transition-colors duration-300"
                   style={labelStyle}
                 >
                   Explore Land Opportunities

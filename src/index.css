@@ -659,6 +659,22 @@ section[class*="bg-navy"]::after {
     animation: gold-glow-pulse 8s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
   }
 
+  /* Swipe hint — gentle horizontal nudge + soft pulse for the pill */
+  @keyframes swipe-nudge {
+    0%, 100% { transform: translateX(0); opacity: 0.85; }
+    50%      { transform: translateX(6px); opacity: 1; }
+  }
+  @keyframes swipe-hint-breathe {
+    0%, 100% { box-shadow: 0 0 0 0 hsl(var(--gold) / 0.0); border-color: hsl(var(--gold) / 0.55); }
+    50%      { box-shadow: 0 0 0 4px hsl(var(--gold) / 0.10); border-color: hsl(var(--gold) / 0.95); }
+  }
+  .swipe-hint-pill {
+    animation: swipe-hint-breathe 2.4s ease-in-out infinite;
+  }
+  .swipe-hint-arrow {
+    animation: swipe-nudge 1.4s ease-in-out infinite;
+  }
+
 
   /* ── Parallax break panels ── */
   .parallax-break {

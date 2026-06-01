@@ -42,19 +42,19 @@ export const privateSales: PrivateSaleItem[] = [
     label: "Represented Seller",
   },
   {
-    image: tarrytownImage,
-    price: "$4,995,000",
-    address: "Address Withheld",
-    area: "TARRYTOWN",
-    descriptor: "",
-    label: "Represented Buyer",
-  },
-  {
     image: southeastAustinImage,
     price: "$6,950,000",
     address: "Address Withheld",
     area: "SOUTHEAST AUSTIN",
     descriptor: "Commercial Property",
+    label: "Represented Buyer",
+  },
+  {
+    image: tarrytownImage,
+    price: "$4,995,000",
+    address: "Address Withheld",
+    area: "TARRYTOWN",
+    descriptor: "",
     label: "Represented Buyer",
   },
   {

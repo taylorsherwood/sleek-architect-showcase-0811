@@ -10,6 +10,7 @@ import SchemaMarkup, {
 } from "@/components/SchemaMarkup";
 import heroImage from "@/assets/land-ranch-hero.jpg";
 import editorialImage from "@/assets/land-ranch-editorial-v2.jpg";
+import advisoryRanchImage from "@/assets/land-ranch-editorial.jpg";
 import exoticWildlifeImage from "@/assets/land-ranch-exotic-wildlife.jpg";
 import exoticWildlifeVideoAsset from "@/assets/exotic-wildlife.mp4.asset.json";
 const exoticWildlifeVideo = exoticWildlifeVideoAsset.url;
@@ -1194,6 +1195,36 @@ const LandRanch = () => {
               >
                 Land transactions involve variables most residential buyers never encounter.
               </p>
+
+              {/* Editorial ranch image */}
+              <div className="relative mt-10 md:mt-12 md:pr-4">
+                <div className="group overflow-hidden rounded-[4px] aspect-[16/10] bg-[#F5F3EF]">
+                  <img
+                    src={advisoryRanchImage}
+                    alt="Texas Hill Country ranch landscape with oak trees and ridgeline view"
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.04]"
+                  />
+                </div>
+
+                {/* Quote card — slightly overlapping the image */}
+                <figure
+                  className="relative md:absolute md:right-6 md:-bottom-8 md:max-w-[300px] mt-5 md:mt-0 bg-[#FAFAF8] border-l-2 border-[#b9a06c] pl-5 pr-5 py-5 shadow-[0_8px_24px_-12px_rgba(12,15,36,0.15)]"
+                >
+                  <blockquote
+                    className="font-display text-architectural text-[0.98rem] leading-[1.45] italic"
+                  >
+                    “Land value is often determined by factors invisible to the average buyer.”
+                  </blockquote>
+                  <figcaption
+                    className="text-gold mt-3"
+                    style={{ ...labelStyle, fontSize: "0.58rem", letterSpacing: "0.26em" }}
+                  >
+                    Taylor Sherwood
+                  </figcaption>
+                </figure>
+              </div>
             </div>
 
             {/* RIGHT — Advisory items */}

@@ -332,15 +332,16 @@ const LandRanch = () => {
 
       {/* ── HERO ─────────────────────────────────── */}
       <section className="relative w-full h-[590px] sm:min-h-[640px] md:min-h-[720px] lg:h-[820px] xl:h-[860px] 2xl:h-[880px] overflow-hidden bg-primary">
-        <img
-          src={heroImage}
-          alt="Texas Hill Country ranch land with rolling terrain, live oaks, a creek, and a private drive leading to a modern ranch home"
-          className="absolute inset-0 w-full h-full object-cover object-[58%_center] md:object-center"
-          width={1920}
-          height={1080}
-          loading="eager"
-          fetchPriority="high"
-          decoding="async"
+        <video
+          src={heroVideo}
+          poster={heroPoster}
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          className="absolute inset-0 w-full h-full object-cover"
+          aria-hidden="true"
         />
         <div
           className="absolute inset-0"

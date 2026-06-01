@@ -661,6 +661,14 @@ const LandRanch = () => {
                 >
                   {CardInner}
                 </Link>
+              ) : i === 3 ? (
+                <Link
+                  key={c.title}
+                  to="/land-development"
+                  className="group relative overflow-hidden bg-architectural block shrink-0 w-[82%] sm:w-auto snap-start"
+                >
+                  {CardInner}
+                </Link>
               ) : (
                 <article
                   key={c.title}

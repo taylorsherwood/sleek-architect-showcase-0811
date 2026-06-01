@@ -59,7 +59,7 @@ const expertiseBlocks = [
     eyebrow: "MARKET INTELLIGENCE",
     title: "Market Intelligence",
     description: "Research, growth corridors, development trends, market analysis, and strategic insights shaping real estate decisions across Central Texas.",
-    link: "/insights",
+    link: "/blog",
     linkText: "Explore Insights",
     image: marketIntelligence,
     alt: "Aerial view of Austin growth corridors with highlighted development parcels and infrastructure overlays at sunset",
@@ -136,7 +136,7 @@ const ExpertiseSection = () => {
                 <Link
                   to={block.link}
                   className="expertise-card group relative block overflow-hidden w-full"
-                  style={{ aspectRatio: "4 / 5" }}
+                  style={{ aspectRatio: "4 / 4.3" }}
                   aria-label={`${block.title}, ${block.linkText}`}
                 >
                   {/* Background image */}
@@ -261,7 +261,7 @@ const ExpertiseSection = () => {
         .expertise-card:hover .expertise-card__darken { opacity: 1; }
         .expertise-card:hover .expertise-card__underline { width: 60px; }
         @media (max-width: 767px) {
-          .expertise-card { aspect-ratio: 4 / 5 !important; }
+          .expertise-card { aspect-ratio: 4 / 4.3 !important; }
         }
       `}</style>
     </section>

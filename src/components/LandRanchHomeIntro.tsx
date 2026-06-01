@@ -204,7 +204,7 @@ const LandRanchHomeIntro = () => {
               {highlightCards.map((card) => (
                 <Link
                   key={card.title}
-                  to="/land-ranch"
+                  to={card.to}
                   className="group block p-5 md:p-6 border transition-all duration-500 ease-out hover:-translate-y-[3px]"
                   style={{
                     borderColor: "rgba(12, 15, 36, 0.08)",

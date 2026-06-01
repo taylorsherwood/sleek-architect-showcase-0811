@@ -23,31 +23,31 @@ const species: Species[] = [
     name: "Axis Deer",
     image: axisImg.url,
     positioning:
-      "The iconic exotic species of the Texas Hill Country, found on premier recreational and investment ranches throughout the region.",
+      "The signature exotic species of the Texas Hill Country.",
   },
   {
     name: "Blackbuck",
     image: blackbuckImg.url,
     positioning:
-      "An established Indian antelope prized for spiral horns and striking coloration — a signature presence on managed exotic ranches.",
+      "Elegant antelope found on premier recreational ranches.",
   },
   {
     name: "Oryx",
     image: oryxImg.url,
     positioning:
-      "Desert-adapted and commanding, oryx anchor large-acreage operations where collectors seek trophy-grade free-ranging exotics.",
+      "Desert-adapted wildlife suited for large-acreage properties.",
   },
   {
     name: "Zebra",
     image: zebraImg.url,
     positioning:
-      "A rare statement species kept on a select few Texas ranches — the hallmark of multi-generational wildlife stewardship.",
+      "A rare and distinctive addition to private ranch collections.",
   },
   {
     name: "Fallow Deer",
     image: fallowImg.url,
     positioning:
-      "An elegant European heritage species favored on family ranches focused on recreation, observation, and quiet conservation.",
+      "European heritage species established across Texas ranchland.",
   },
 ];
 

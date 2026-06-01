@@ -179,7 +179,7 @@ For the right buyer, a well-located Hill Country ranch can become a family retre
 Whether your vision involves watching axis deer from the porch of a custom lodge, creating a family gathering place outside Fredericksburg, or acquiring a substantial land holding within reach of Austin, success begins with understanding what makes these properties different.
 
 The buyers who take the time to understand the market, evaluate opportunities carefully, and surround themselves with the right advisors are often the ones who find the most rewarding ranch ownership experiences.
-    \`,
+    `,
   },
   {
     id: "austin-infill-development",

@@ -135,14 +135,14 @@ const LandRanchMarketPage = () => {
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                 <Link
                   to="/contact"
-                  className="inline-flex items-center justify-center bg-gold hover:bg-[hsl(var(--gold-deep))] text-white px-7 py-4 transition-colors duration-300"
+                  className="inline-flex items-center justify-center bg-gold text-white hover:bg-white hover:text-gold px-7 py-4 transition-colors duration-300"
                   style={labelStyle}
                 >
                   Discuss a {market.name} Acquisition
                 </Link>
                 <Link
                   to="/land-ranch"
-                  className="inline-flex items-center justify-center border border-gold text-white hover:bg-architectural hover:border-architectural px-7 py-4 transition-colors duration-300 backdrop-blur-sm"
+                  className="inline-flex items-center justify-center border border-gold text-white hover:bg-gold hover:text-white hover:border-gold px-7 py-4 transition-colors duration-300 backdrop-blur-sm"
                   style={labelStyle}
                 >
                   Explore All Markets

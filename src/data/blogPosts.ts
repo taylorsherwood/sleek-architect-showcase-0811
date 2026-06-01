@@ -24,6 +24,7 @@ import blogHighestAndBestUse from "@/assets/blog/highest-and-best-use-property-a
 import blogAustinRedevelopment from "@/assets/blog/austin-redevelopment-opportunities.webp";
 import blogAustinRanchLand from "@/assets/blog/austin-ranch-land-for-sale.webp";
 import blogAustinInfillDevelopment from "@/assets/blog/austin-infill-development.jpg";
+import blogExoticRanchHillCountry from "@/assets/blog/exotic-ranch-hill-country.webp.asset.json";
 
 
 

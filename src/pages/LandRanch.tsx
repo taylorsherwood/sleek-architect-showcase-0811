@@ -180,7 +180,7 @@ const LandRanch = () => {
       <div className="h-12 md:h-20" aria-hidden="true" />
 
       {/* ── HERO ─────────────────────────────────── */}
-      <section className="relative w-full min-h-[640px] md:min-h-[720px] lg:h-[820px] xl:h-[860px] 2xl:h-[880px] overflow-hidden bg-primary">
+      <section className="relative w-full min-h-[560px] sm:min-h-[640px] md:min-h-[720px] lg:h-[820px] xl:h-[860px] 2xl:h-[880px] overflow-hidden bg-primary">
         <img
           src={heroImage}
           alt="Texas Hill Country ranch land with rolling terrain, live oaks, a creek, and a private drive leading to a modern ranch home"
@@ -198,30 +198,30 @@ const LandRanch = () => {
               "linear-gradient(to right, rgba(12,15,36,0.48) 0%, rgba(12,15,36,0.30) 35%, rgba(12,15,36,0.10) 65%, transparent 100%)",
           }}
         />
-        <div className="absolute inset-0 sm:hidden" style={{ background: "rgba(12,15,36,0.38)" }} />
+        <div className="absolute inset-0 sm:hidden" style={{ background: "rgba(12,15,36,0.55)" }} />
 
         <div className="relative z-10 h-full flex items-center">
-          <div className="container mx-auto px-6 md:px-12 -translate-y-6 md:-translate-y-10">
+          <div className="container mx-auto px-6 md:px-12 md:-translate-y-10">
             <div className="max-w-2xl">
-              <p className="text-gold mb-5" style={labelStyle}>
+              <p className="text-gold mb-4 md:mb-5" style={labelStyle}>
                 LAND & RANCH
               </p>
               <h1
-                className="font-display font-normal text-white leading-[1.05] tracking-tight mb-7"
-                style={{ fontSize: "clamp(2.25rem, 5vw, 4rem)", textShadow: "0 1px 3px rgba(0,0,0,0.35)" }}
+                className="font-display font-normal text-white leading-[1.08] tracking-tight mb-5 md:mb-7"
+                style={{ fontSize: "clamp(2rem, 5vw, 4rem)", textShadow: "0 1px 3px rgba(0,0,0,0.35)" }}
               >
-                Austin area&nbsp;<br />Land & Ranch Opportunities
+                Austin Area Land &<br />Ranch Opportunities
               </h1>
               <p
-                className="text-white/85 leading-relaxed mb-10 max-w-xl"
-                style={{ fontSize: "clamp(1rem, 1.2vw, 1.125rem)", textShadow: "0 1px 2px rgba(0,0,0,0.35)" }}
+                className="text-white/85 leading-relaxed mb-7 md:mb-10 max-w-xl text-[0.95rem] md:text-base lg:text-lg"
+                style={{ textShadow: "0 1px 2px rgba(0,0,0,0.35)" }}
               >
                 From legacy ranches and recreational retreats to investment acreage and development
                 tracts, Echelon helps buyers, sellers, and investors evaluate Central Texas land
                 through both current value and future potential.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                 <a
                   href="#categories"
                   className="inline-flex items-center justify-center bg-gold hover:bg-[hsl(var(--gold-deep))] text-white px-8 py-4 transition-colors duration-300"

@@ -804,13 +804,12 @@ const HillCountryExperience = () => {
       <Navigation />
 
       <Hero />
-      <AdvisorAnchor />
+      <MeetAdvisor />
       <OpportunityReel />
       <SixLenses />
       <RegionalMap />
       <LifestyleQuote />
       <OffMarketBand />
-      <MeetAdvisor />
       <AdjacentMarkets />
 
       <Suspense fallback={null}>

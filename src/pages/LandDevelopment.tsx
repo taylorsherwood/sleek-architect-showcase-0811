@@ -109,12 +109,115 @@ const corridors = [
 ];
 
 const audience = [
-  "Developers",
-  "Builders",
-  "Family Offices",
-  "Private Investors",
-  "Landowners",
-  "Infrastructure & Industrial Users",
+  {
+    title: "Developers",
+    body: "Site selection, entitlement strategy, feasibility assessment, and disposition advisory for ground-up programs.",
+  },
+  {
+    title: "Builders",
+    body: "Lot pipeline strategy, takedown structuring, and acquisition of land aligned to product type and absorption.",
+  },
+  {
+    title: "Family Offices",
+    body: "Patient capital deployment into appreciating land positions, generational holds, and strategic ground leases.",
+  },
+  {
+    title: "Private Investors",
+    body: "Path-of-growth acquisitions, joint venture introductions, and asymmetric land plays with defined catalysts.",
+  },
+];
+
+const themes = [
+  {
+    title: "Data Centers",
+    thesis: "Power, fiber, and water capacity now define site economics more than entitlements or zoning.",
+  },
+  {
+    title: "Industrial Outdoor Storage",
+    thesis: "Constrained supply, institutional capital inflows, and durable yield from low-coverage industrial uses.",
+  },
+  {
+    title: "Master Planned Communities",
+    thesis: "Long-horizon land holdings positioned to absorb regional in-migration and rooftop demand.",
+  },
+  {
+    title: "Build-to-Rent",
+    thesis: "Single-family rental product underwritten as an institutional asset class rather than a housing trend.",
+  },
+  {
+    title: "Mixed-Use Development",
+    thesis: "Retail, residential, and hospitality programs built around walkability and population density curves.",
+  },
+  {
+    title: "Strategic Land Banking",
+    thesis: "Acquiring future development sites years ahead of utility, transportation, and policy catalysts.",
+  },
+];
+
+const advisoryQuestions = [
+  {
+    q: "Can utilities realistically serve the site?",
+    a: "Water, wastewater, and electric capacity often determine whether a site is developable at the scale the underwriting requires. We evaluate service area boundaries, available capacity, capital improvement plans, and the timeline to actual hookup, not just paper availability.",
+  },
+  {
+    q: "What is the highest and best use?",
+    a: "Highest and best use is a function of demand, regulation, and capital structure, not the current condition of the land. We frame the question against absorption curves, comparable executions, and the underwriting tolerance of the capital most likely to acquire the entitled site.",
+  },
+  {
+    q: "What infrastructure projects are nearby?",
+    a: "Roadway expansions, utility extensions, transit decisions, and public investment frequently move land values long before they are announced as catalysts. We track CIP schedules, TxDOT programs, MUD activity, and adjacent private development as leading indicators.",
+  },
+  {
+    q: "How does future land use affect value?",
+    a: "Comprehensive plans, ETJ status, annexation policy, and overlay districts often signal where entitlements will move years in advance. The strongest acquisitions tend to be aligned with future land use direction rather than current zoning alone.",
+  },
+  {
+    q: "What are the entitlement risks?",
+    a: "Variances, replatting, MUD creation, traffic mitigation, and environmental review can each compress IRR if mispriced. We map the entitlement path, identify the binding constraints, and pressure-test the schedule against political and procedural risk.",
+  },
+  {
+    q: "What could change over the next decade?",
+    a: "Population migration, employer relocations, transportation investment, and policy direction reshape the underwriting on long-horizon land. We frame each opportunity against the ten-year trajectory of the corridor, not the snapshot of today.",
+  },
+];
+
+const watchCorridors = [
+  {
+    name: "SH 130 Corridor",
+    location: "East of Austin / Travis & Williamson",
+    explanation: "Tolled bypass connecting Georgetown to San Antonio, now anchoring large-scale industrial, logistics, and data center activity.",
+    demand: "Power-rich employment land with sustained absorption from logistics, manufacturing, and hyperscale tenants.",
+  },
+  {
+    name: "Georgetown Expansion",
+    location: "Northern Williamson County",
+    explanation: "One of the fastest growing cities in the country, with expanding ETJ, utility build-out, and active MUD formation.",
+    demand: "Master planned residential, employment, and supporting commercial along the I-35 and SH 130 spine.",
+  },
+  {
+    name: "Liberty Hill Growth",
+    location: "Western Williamson County",
+    explanation: "Rapidly forming school district capacity and arterial expansion supporting a new residential frontier west of Leander.",
+    demand: "Greenfield residential land with rooftop demand outpacing infrastructure delivery.",
+  },
+  {
+    name: "Bastrop Technology Corridor",
+    location: "SH 71 East / Bastrop County",
+    explanation: "Large-employer announcements and east-side capital migration reshaping a historically rural corridor.",
+    demand: "Industrial, employment-adjacent residential, and long-hold land plays tied to corporate site selection.",
+  },
+  {
+    name: "East Austin Expansion",
+    location: "East of I-35, inside Travis County",
+    explanation: "Infill redevelopment, transit investment, and mixed-use rezonings reshaping the urban core eastward.",
+    demand: "Redevelopment sites, assemblage opportunities, and vertical mixed-use along key arterials.",
+  },
+  {
+    name: "Kyle & San Marcos Corridor",
+    location: "I-35 South / Hays County",
+    explanation: "Continued in-migration from Austin and San Antonio metros, with expanding rooftops and employment base.",
+    demand: "Residential development, build-to-rent, and supporting retail along the I-35 growth band.",
+  },
 ];
 
 const timeline = [

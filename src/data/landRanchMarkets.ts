@@ -23,6 +23,9 @@ export interface LandRanchMarket {
   slug: string;
   name: string;
   county: string;
+  kind?: "market" | "theme";
+  heroEyebrow?: string;
+  heroHeadline?: string;
   heroImage: string;
   positioning: string;
   metaTitle: string;

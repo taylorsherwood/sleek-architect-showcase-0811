@@ -17,6 +17,14 @@ import catInvestment from "@/assets/cat-investment-acreage.jpg";
 import catDevelopment from "@/assets/cat-development-opportunities.jpg";
 import catHomesites from "@/assets/cat-hill-country-homesites.jpg";
 import expLandRanchLogo from "@/assets/exp-land-ranch-logo.png";
+import marketFredericksburg from "@/assets/market-fredericksburg.jpg";
+import marketKerrville from "@/assets/market-kerrville.jpg";
+import marketDrippingSprings from "@/assets/community-dripping-springs.jpg";
+import marketJohnsonCity from "@/assets/market-johnson-city.jpg";
+import marketMarbleFalls from "@/assets/market-marble-falls.jpg";
+import marketBurnet from "@/assets/market-burnet.jpg";
+import marketLlano from "@/assets/market-llano.jpg";
+import marketLampasas from "@/assets/market-lampasas.jpg";
 
 import taylorPortrait from "@/assets/taylor-sherwood-land-ranch.jpg";
 import echelonWatermarkLogo from "@/assets/echelon-watermark-logo.png";

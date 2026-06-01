@@ -15,6 +15,8 @@ const FeaturedListings = lazy(() => import("@/components/FeaturedListings"));
 const GlobalLuxuryAdvertising = lazy(() => import("@/components/GlobalLuxuryAdvertising"));
 const CinematicVideoSection = lazy(() => import("@/components/CinematicVideoSection"));
 const Footer = lazy(() => import("@/components/Footer"));
+import LandCrossLinks from "@/components/LandCrossLinks";
+
 import {
   CheckCircle,
   
@@ -1045,7 +1047,15 @@ const Sell = () => {
 
       <FeaturedCommunities />
 
+      <LandCrossLinks
+        variant="ivory"
+        eyebrow="LANDOWNERS"
+        heading="Own land, acreage, or a property with development potential?"
+        intro="We advise landowners on highest-and-best-use, ranch dispositions, and quiet conversations with developers and investors well before a property is widely marketed."
+      />
+
       <Suspense fallback={<div className="min-h-[100px]" />}><Footer /></Suspense>
+
 
     </div>);
 

@@ -3,6 +3,8 @@ import FeaturedCommunities from "@/components/FeaturedCommunities";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 const Footer = lazy(() => import("@/components/Footer"));
+import LandCrossLinks from "@/components/LandCrossLinks";
+
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { realEstateAgentSchema, createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import { useToast } from "@/hooks/use-toast";
@@ -740,7 +742,15 @@ const Buy = () => {
         </div>
       </section>
 
+      <LandCrossLinks
+        variant="ivory"
+        eyebrow="EXPAND THE SEARCH"
+        heading="Beyond Luxury Homes"
+        intro="Many buyers we represent also consider acreage estates, Hill Country ranches, and development sites alongside their primary home search."
+      />
+
       <Suspense fallback={<div className="min-h-[100px]" />}><Footer /></Suspense>
+
     </div>);
 
 };

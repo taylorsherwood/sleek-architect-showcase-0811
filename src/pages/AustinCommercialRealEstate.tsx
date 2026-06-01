@@ -2,6 +2,8 @@ import { lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 const Footer = lazy(() => import("@/components/Footer"));
+import LandCrossLinks from "@/components/LandCrossLinks";
+
 import AboutBlock from "@/components/AboutBlock";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createFAQSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";

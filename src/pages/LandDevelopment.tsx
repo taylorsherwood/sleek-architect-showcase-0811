@@ -557,67 +557,96 @@ const LandDevelopment = () => {
       <div className="h-16 md:h-24" aria-hidden="true" />
 
       {/* ── SECTION 3.5: ACTIVE DEVELOPMENT THEMES ───────────────── */}
-      <section className="bg-background overflow-hidden">
-        <div className="container mx-auto px-6 md:px-12">
-          <div className="max-w-3xl mb-10 md:mb-14">
-            <p className="mb-5" style={{ ...labelStyle, color: GOLD }}>
-              Active Development Themes
-            </p>
-            <h2
-              className="text-foreground font-normal leading-[1.1]"
-              style={{
-                fontFamily: "'Cinzel', serif",
-                fontSize: "clamp(1.6rem, 3.4vw, 2.6rem)",
-              }}
-            >
-              Investment Theses Shaping<br className="hidden md:block" /> Central Texas Land
-            </h2>
-          </div>
-        </div>
-        <div
-          className="overflow-x-auto pb-4 -mx-6 md:-mx-12 px-6 md:px-12 scrollbar-thin"
-          style={{ scrollbarWidth: "thin" }}
-        >
-          <ul className="flex gap-5 md:gap-6 min-w-max">
-            {themes.map((t, i) => (
-              <li
-                key={t.title}
-                className="group flex-shrink-0 w-[280px] md:w-[320px] border-t border-border/60 pt-6"
+      <section className="bg-background">
+        <div className="mx-auto px-6 md:px-12" style={{ maxWidth: "1400px" }}>
+          {/* Header — constrained to ~half width with supporting line */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 mb-12 md:mb-16 items-end">
+            <div className="lg:col-span-6">
+              <p className="mb-5" style={{ ...labelStyle, color: GOLD }}>
+                Active Development Themes
+              </p>
+              <h2
+                className="text-foreground font-normal leading-[1.1]"
+                style={{
+                  fontFamily: "'Cinzel', serif",
+                  fontSize: "clamp(1.6rem, 3.2vw, 2.5rem)",
+                }}
               >
-                <p
-                  className="mb-4"
-                  style={{ ...labelStyle, color: GOLD, fontSize: "0.62rem" }}
+                Investment Theses Shaping<br className="hidden md:block" /> Central Texas Land
+              </h2>
+            </div>
+            <div className="lg:col-span-5 lg:col-start-8">
+              <p
+                className="text-foreground/68 leading-[1.7] max-w-md"
+                style={{ fontFamily: "'Jost', sans-serif", fontSize: "0.98rem" }}
+              >
+                The development themes attracting capital, infrastructure
+                investment, and long-term demand across Central Texas.
+              </p>
+            </div>
+          </div>
+
+          {/* Asymmetric editorial grid: 12-col, two staggered rows */}
+          <ul className="grid grid-cols-1 md:grid-cols-12 gap-5 md:gap-6">
+            {themes.map((t, i) => {
+              // Row 1 (i 0-2): three even cards across full grid.
+              // Row 2 (i 3-5): offset from left + narrower tail card.
+              const layoutClasses = [
+                "md:col-span-4",                       // 0 Data Centers
+                "md:col-span-4",                       // 1 IOS
+                "md:col-span-4",                       // 2 Master Planned
+                "md:col-span-4 md:col-start-2",        // 3 Build-to-Rent (indented)
+                "md:col-span-4",                       // 4 Mixed-Use
+                "md:col-span-3",                       // 5 Strategic Land Banking (narrower tail)
+              ][i];
+
+              return (
+                <li
+                  key={t.title}
+                  className={`${layoutClasses} group relative bg-[#FBF8F2] border border-border/40 p-7 md:p-9 transition-all duration-500 ease-out hover:-translate-y-1 hover:border-[rgba(185,160,108,0.55)] hover:shadow-[0_18px_40px_-22px_rgba(12,15,36,0.18)]`}
                 >
-                  Thesis {String(i + 1).padStart(2, "0")}
-                </p>
-                <h3
-                  className="text-foreground font-normal leading-[1.2] mb-4"
-                  style={{
-                    fontFamily: "'Cinzel', serif",
-                    fontSize: "1.25rem",
-                  }}
-                >
-                  {t.title}
-                </h3>
-                <span
-                  aria-hidden="true"
-                  className="block h-px w-8 mb-4 origin-left transition-transform duration-700 ease-out group-hover:scale-x-[2.2]"
-                  style={{ backgroundColor: GOLD }}
-                />
-                <p
-                  className="text-foreground/72 leading-[1.6]"
-                  style={{
-                    fontFamily: "'Jost', sans-serif",
-                    fontSize: "0.92rem",
-                  }}
-                >
-                  {t.thesis}
-                </p>
-              </li>
-            ))}
+                  {/* Top gold rule — strengthens on hover */}
+                  <span
+                    aria-hidden="true"
+                    className="absolute left-0 top-0 h-px w-10 origin-left transition-transform duration-500 ease-out group-hover:scale-x-[2.6]"
+                    style={{ backgroundColor: GOLD }}
+                  />
+                  <p
+                    className="mb-5"
+                    style={{ ...labelStyle, color: GOLD, fontSize: "0.6rem" }}
+                  >
+                    Thesis {String(i + 1).padStart(2, "0")}
+                  </p>
+                  <h3
+                    className="text-foreground font-normal leading-[1.2] mb-5"
+                    style={{
+                      fontFamily: "'Cinzel', serif",
+                      fontSize: "1.2rem",
+                    }}
+                  >
+                    {t.title}
+                  </h3>
+                  <span
+                    aria-hidden="true"
+                    className="block h-px w-8 mb-5"
+                    style={{ backgroundColor: "rgba(185,160,108,0.45)" }}
+                  />
+                  <p
+                    className="text-foreground/72 leading-[1.65] max-w-[42ch]"
+                    style={{
+                      fontFamily: "'Jost', sans-serif",
+                      fontSize: "0.92rem",
+                    }}
+                  >
+                    {t.thesis}
+                  </p>
+                </li>
+              );
+            })}
           </ul>
         </div>
       </section>
+
 
       <div className="h-16 md:h-24" aria-hidden="true" />
 

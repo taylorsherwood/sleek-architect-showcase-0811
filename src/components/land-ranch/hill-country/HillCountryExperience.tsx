@@ -193,7 +193,7 @@ const opportunities: Opportunity[] = [
 ];
 
 const OpportunityReel = () => (
-  <section className="relative bg-architectural text-white py-20 md:py-28">
+  <section className="relative text-white py-20 md:py-28" style={{ background: "#0C0F24" }}>
     <div className="container mx-auto px-6 md:px-12 mb-12 md:mb-16">
       <div className="max-w-3xl">
         <p className="text-[#b9a06c] mb-5" style={label}>

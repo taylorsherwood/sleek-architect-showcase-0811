@@ -230,6 +230,12 @@ const LandRanchMarketPage = () => {
         </Suspense>
       )}
 
+      {market.slug === "hill-country-ranches" && (
+        <Suspense fallback={null}>
+          <HillCountryTopEnhancements />
+        </Suspense>
+      )}
+
       {/* ── AGENT INTEL ─────────────────────────────────── */}
       <section className="py-14 md:py-20 bg-secondary/40">
         <div className="container mx-auto px-6">

@@ -959,8 +959,8 @@ const LandRanch = () => {
           </div>
 
           {/* Thematic advisory pages */}
-          <div className="mt-16 md:mt-20 grid grid-cols-1 md:grid-cols-2 gap-px bg-[rgba(12,15,36,0.08)] border border-[rgba(12,15,36,0.08)]">
-            {[
+          {(() => {
+            const advisories = [
               {
                 to: "/land-ranch/hill-country-ranches",
                 eyebrow: "REGIONAL ADVISORY",
@@ -973,7 +973,14 @@ const LandRanch = () => {
                 title: "Exotic Wildlife Ranches",
                 desc: "Texas ranches with axis deer, blackbuck, oryx, zebra, and other managed wildlife.",
               },
-            ].map((t) => (
+              {
+                to: "/land-development",
+                eyebrow: "DEVELOPMENT ADVISORY",
+                title: "Land Development",
+                desc: "Entitled tracts, infill assemblages, and growth-corridor opportunities for builders and investors.",
+              },
+            ];
+            const renderCard = (t: typeof advisories[number]) => (
               <Link
                 key={t.to}
                 to={t.to}
@@ -999,8 +1006,19 @@ const LandRanch = () => {
                   <span aria-hidden="true" className="absolute bottom-0 left-0 w-full h-px bg-gold scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
                 </span>
               </Link>
-            ))}
-          </div>
+            );
+            return (
+              <div className="mt-16 md:mt-20">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-[rgba(12,15,36,0.08)] border border-[rgba(12,15,36,0.08)]">
+                  {advisories.slice(0, 2).map(renderCard)}
+                </div>
+                <div className="mt-px grid grid-cols-1 md:grid-cols-2 max-w-[50%] mx-auto bg-[rgba(12,15,36,0.08)] border border-t-0 border-[rgba(12,15,36,0.08)]">
+                  {renderCard(advisories[2])}
+                </div>
+              </div>
+            );
+          })()}
+
         </div>
       </section>
 

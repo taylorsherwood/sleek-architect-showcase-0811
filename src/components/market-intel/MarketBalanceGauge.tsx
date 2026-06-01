@@ -324,16 +324,17 @@ function Spectrum({ score }: { score: number }) {
         />
       </div>
 
-      {/* Indicator */}
+      {/* Indicator — centered exactly on the track line */}
       <div
-        className="absolute -translate-x-1/2 motion-safe:transition-[left] motion-safe:duration-[900ms] motion-safe:ease-[cubic-bezier(0.22,0.61,0.36,1)]"
-        style={{ left: `${pct}%`, top: "9px" }}
+        className="absolute motion-safe:transition-[left] motion-safe:duration-[900ms] motion-safe:ease-[cubic-bezier(0.22,0.61,0.36,1)]"
+        style={{ left: `${pct}%`, top: "calc(0.5rem + 3px)", transform: "translate(-50%, -50%)" }}
       >
         <div
-          className="gauge-dot-pulse absolute left-1/2 -translate-x-1/2 -top-[5px] w-[14px] h-[14px] rounded-full"
+          className="gauge-dot-pulse w-[14px] h-[14px] rounded-full"
           style={{ backgroundColor: GOLD, boxShadow: `0 0 0 3px #FAFAF8` }}
         />
       </div>
+
 
       {/* Endpoint labels */}
       <div

@@ -3,6 +3,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import commercialMusicLane from "@/assets/commercial-music-lane-austin.webp";
 import luxuryHomesKitchen from "@/assets/luxury-homes-austin-twilight.webp";
 import paseoInvestment from "@/assets/investment-property-austin-condos.webp";
+import ranchHero from "@/assets/hill-country-ranches-hero.jpg";
 
 const expertiseBlocks = [
   {
@@ -19,7 +20,7 @@ const expertiseBlocks = [
     eyebrow: "LAND & ENTITLEMENT",
     title: "Land development",
     description: "Raw acreage, entitled parcels, and development-ready sites across high-growth corridors.",
-    link: "/land-ranch",
+    link: "/land-development",
     linkText: "View land",
     image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1600&q=80",
     alt: "Aerial view of rolling Texas Hill Country acreage",
@@ -41,6 +42,15 @@ const expertiseBlocks = [
     linkText: "View investments",
     image: paseoInvestment,
     alt: "Austin multifamily investment property at dusk with lit balconies and modern architecture",
+  },
+  {
+    eyebrow: "LAND & RANCH",
+    title: "Hill Country ranches",
+    description: "Legacy ranch land, live water acreage, and Hill Country estates with stewardship and discretion.",
+    link: "/land-ranch",
+    linkText: "View ranches",
+    image: ranchHero,
+    alt: "Texas Hill Country ranch with rolling pasture, oak trees, and long views",
   },
 ];
 

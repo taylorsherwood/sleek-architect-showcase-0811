@@ -657,7 +657,9 @@ const LandRanch = () => {
       <div className="h-10 md:h-16" aria-hidden="true" />
 
       {/* ── CINEMATIC EXOTIC WILDLIFE VIDEO BAND ─────────────────────── */}
-      <ExoticWildlifeVideoBand />
+      <div className="hidden md:block">
+        <ExoticWildlifeVideoBand />
+      </div>
 
       <div className="h-10 md:h-16" aria-hidden="true" />
 

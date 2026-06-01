@@ -332,15 +332,6 @@ const LandRanch = () => {
 
       {/* ── HERO ─────────────────────────────────── */}
       <section className="relative w-full h-[590px] sm:min-h-[640px] md:min-h-[720px] lg:h-[820px] xl:h-[860px] 2xl:h-[880px] overflow-hidden bg-primary">
-        <img
-          src={heroPoster}
-          alt=""
-          className="absolute inset-0 w-full h-full object-cover md:hidden"
-          loading="eager"
-          fetchPriority="high"
-          decoding="async"
-          aria-hidden="true"
-        />
         <video
           src={heroVideo}
           poster={heroPoster}
@@ -348,8 +339,17 @@ const LandRanch = () => {
           muted
           loop
           playsInline
-          preload="metadata"
-          className="absolute inset-0 w-full h-full object-cover hidden md:block"
+          preload="auto"
+          className="absolute inset-0 w-full h-full object-cover"
+          aria-hidden="true"
+        />
+        <img
+          src={heroPoster}
+          alt=""
+          className="absolute inset-0 w-full h-full object-cover md:hidden -z-10"
+          loading="eager"
+          fetchPriority="high"
+          decoding="async"
           aria-hidden="true"
         />
         <div

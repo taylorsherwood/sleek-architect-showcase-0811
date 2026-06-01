@@ -346,11 +346,7 @@ Chemistry matters, but it is not sufficient. You want an advisor you trust and c
 
 ## Putting It All Together
 
-Many of Austin's most desirable properties never appear on Zillow or Realtor.com. Buyers who understand the city's neighborhoods, pricing dynamics, and private inventory channels are often positioned to act before opportunities become widely known.
-
-Whether you are relocating to Austin, searching for a Lake Austin waterfront property, or evaluating homes in Westlake, Barton Creek, Tarrytown, or Rollingwood, the right guidance can make a meaningful difference in both the properties you see and the outcomes you achieve. Start by getting clear on which neighborhoods align with your priorities, get your financial documentation in order, and connect with an advisor who actually operates in this segment.
-
-Echelon Property Group works with a select group of [buyers in Austin's high-end market](/buy). We offer direct access to off-market inventory, hyper-local insight, and an advisory approach that matters at this price point.
+Many of Austin's most desirable homes never reach public listing platforms. Whether you're evaluating [Lake Austin waterfront](/blog/lake-austin-luxury-real-estate-2026), relocating to [Westlake](/communities/westlake-hills), searching for a private estate in [Barton Creek](/communities/barton-creek), or comparing established neighborhoods like [Tarrytown](/communities/tarrytown) and [Rollingwood](/communities/rollingwood), having access to local market intelligence can dramatically improve both the properties you see and the decisions you make.
 
 :::cta
 heading: Schedule a private buyer consultation to discuss what you're looking for and what's currently available — including properties that are not publicly listed.

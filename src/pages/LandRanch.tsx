@@ -200,15 +200,15 @@ const LandRanch = () => {
         />
         <div className="absolute inset-0 sm:hidden" style={{ background: "rgba(12,15,36,0.55)" }} />
 
-        <div className="relative z-10 h-full flex items-center">
+        <div className="relative z-10 h-full flex items-start md:items-center pt-10 pb-14 md:pt-0 md:pb-0">
           <div className="container mx-auto px-6 md:px-12 md:-translate-y-10">
             <div className="max-w-2xl">
-              <p className="text-gold mb-4 md:mb-5" style={labelStyle}>
+              <p className="text-gold mb-3 md:mb-5" style={labelStyle}>
                 LAND & RANCH
               </p>
               <h1
-                className="font-display font-normal text-white leading-[1.08] tracking-tight mb-5 md:mb-7"
-                style={{ fontSize: "clamp(2rem, 5vw, 4rem)", textShadow: "0 1px 3px rgba(0,0,0,0.35)" }}
+                className="font-display font-normal text-white leading-[1.1] tracking-tight mb-4 md:mb-7"
+                style={{ fontSize: "clamp(1.6rem, 5vw, 4rem)", textShadow: "0 1px 3px rgba(0,0,0,0.35)" }}
               >
                 Austin Area Land &<br />Ranch Opportunities
               </h1>

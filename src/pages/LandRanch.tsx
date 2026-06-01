@@ -1347,6 +1347,15 @@ const LandRanch = () => {
           </div>
         </div>
       </section>
+      {/* ── PARALLAX BREAK ──────────────────────── */}
+      <div
+        className="parallax-break hidden md:block"
+        style={{ backgroundImage: "url('/images/parallax-pasture-tree.webp')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties}
+        aria-hidden="true"
+      />
+
+      <div className="h-10 md:h-16" aria-hidden="true" />
+
       {/* ── SECTION 5.5: PRIVATE LAND OPPORTUNITIES ──────────────────────── */}
       <section className="py-14 md:py-20">
         <div className="container mx-auto px-6">
@@ -1383,14 +1392,6 @@ const LandRanch = () => {
       <div className="h-10 md:h-16" aria-hidden="true" />
 
 
-      {/* ── PARALLAX BREAK ──────────────────────── */}
-      <div
-        className="parallax-break hidden md:block"
-        style={{ backgroundImage: "url('/images/parallax-pasture-tree.webp')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties}
-        aria-hidden="true"
-      />
-
-      <div className="h-10 md:h-16" aria-hidden="true" />
 
 
       {/* ── NEW: LAND ACQUISITION & DEVELOPMENT ADVISORY ───────────────── */}

@@ -8,14 +8,17 @@ const highlightCards = [
   {
     title: "Legacy Ranches",
     body: "Large acreage holdings, recreational properties, and generational land assets.",
+    to: "/land-ranch",
   },
   {
     title: "Development Opportunities",
     body: "Infill projects, development tracts, assemblage opportunities, and investment land.",
+    to: "/land-development",
   },
   {
     title: "Exotic Wildlife Ranches",
     body: "Axis deer, blackbuck, zebra, and unique recreational ownership opportunities.",
+    to: "/land-ranch",
   },
 ];
 

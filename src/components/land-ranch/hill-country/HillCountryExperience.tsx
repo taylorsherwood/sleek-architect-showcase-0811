@@ -514,7 +514,7 @@ const LifestyleQuote = () => (
 // 7 · OFF-MARKET BAND
 // ─────────────────────────────────────────────────────────────
 const OffMarketBand = () => (
-  <section className="bg-architectural text-white py-24 md:py-32">
+  <section className="relative text-white py-24 md:py-32" style={{ background: "#0C0F24" }}>
     <div className="container mx-auto px-6 md:px-12">
       <div className="max-w-2xl">
         <span aria-hidden="true" className="block h-px w-16 bg-[#b9a06c] mb-8" />

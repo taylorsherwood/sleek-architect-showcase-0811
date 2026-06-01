@@ -860,21 +860,7 @@ const LandDevelopment = () => {
 
       {/* ── SECTION 5: AUSTIN GROWTH CORRIDORS ───────────────────── */}
       <section className="relative bg-primary text-white overflow-hidden">
-        <img
-          src={corridorImg}
-          alt=""
-          aria-hidden="true"
-          className="absolute inset-0 w-full h-full object-cover opacity-[0.18]"
-          loading="lazy"
-        />
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(180deg, rgba(12,15,36,0.92) 0%, rgba(12,15,36,0.86) 100%)",
-          }}
-          aria-hidden="true"
-        />
+
         <div className="relative z-10 container mx-auto px-6 md:px-12 py-16 md:py-24">
           <div className="max-w-3xl mb-10 md:mb-14">
             <p className="mb-5" style={{ ...labelStyle, color: GOLD }}>

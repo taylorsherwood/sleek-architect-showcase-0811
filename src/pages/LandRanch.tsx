@@ -1,4 +1,4 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { Instagram, Linkedin } from "lucide-react";
 import Navigation from "@/components/Navigation";
@@ -11,6 +11,8 @@ import SchemaMarkup, {
 import heroImage from "@/assets/land-ranch-hero.jpg";
 import editorialImage from "@/assets/land-ranch-editorial-v2.jpg";
 import exoticWildlifeImage from "@/assets/land-ranch-exotic-wildlife.jpg";
+import exoticWildlifeVideoAsset from "@/assets/exotic-wildlife.mp4.asset.json";
+const exoticWildlifeVideo = exoticWildlifeVideoAsset.url;
 import catLuxuryRanches from "@/assets/cat-luxury-ranches.jpg";
 import catRecreational from "@/assets/cat-recreational-land.jpg";
 import catInvestment from "@/assets/cat-investment-acreage.jpg";
@@ -515,6 +517,11 @@ const LandRanch = () => {
 
         </div>
       </section>
+
+      <div className="h-10 md:h-16" aria-hidden="true" />
+
+      {/* ── CINEMATIC EXOTIC WILDLIFE VIDEO BAND ─────────────────────── */}
+      <ExoticWildlifeVideoBand />
 
       <div className="h-10 md:h-16" aria-hidden="true" />
 

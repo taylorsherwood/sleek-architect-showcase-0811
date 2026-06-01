@@ -236,116 +236,123 @@ const LandRanchMarketPage = () => {
         </Suspense>
       )}
 
-      {/* ── AGENT INTEL ─────────────────────────────────── */}
-      <section className="py-14 md:py-20 bg-secondary/40">
-        <div className="container mx-auto px-6">
-          <div className="max-w-3xl mb-12">
-            <p className="text-gold mb-5" style={labelStyle}>
-              AGENT INTEL
-            </p>
-            <h2 className="font-display text-3xl md:text-4xl lg:text-[2.75rem] font-normal text-architectural leading-[1.1]">
-              {market.name} Market Snapshot
-            </h2>
-            <p className="text-muted-foreground leading-relaxed text-[1.0625rem] mt-5 max-w-2xl">
-              Advisory-grade observations from active engagement in the {market.name} land
-              market. Indicative figures. Every parcel underwrites differently based on
-              water, exemptions, access, and entitlement.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[rgba(12,15,36,0.08)] border border-[rgba(12,15,36,0.08)]">
-            {[
-              { label: "Median Price Per Acre", value: market.agentIntel.medianPricePerAcre },
-              { label: "Typical Ranch Size", value: market.agentIntel.typicalRanchSize },
-              { label: "Buyer Profile", value: market.agentIntel.buyerProfile },
-              { label: "Recreational Demand", value: market.agentIntel.recreationalDemand },
-              { label: "Development Activity", value: market.agentIntel.developmentActivity },
-              { label: "Long-Term Outlook", value: market.agentIntel.longTermOutlook },
-            ].map((row) => (
-              <div key={row.label} className="bg-background p-8 md:p-9">
-                <p
-                  className="text-gold mb-4"
-                  style={{ ...labelStyle, fontSize: "0.55rem" }}
-                >
-                  {row.label}
+      {/* ── AGENT INTEL · PROPERTY TYPES · WHY BUYERS ──────────────
+          Hidden on hill-country-ranches: the cinematic video, by-the-numbers
+          stats, regional map, and ownership categories above already cover
+          these points. Keeping them creates textbook redundancy. */}
+      {market.slug !== "hill-country-ranches" && (
+        <>
+          {/* ── AGENT INTEL ─────────────────────────────────── */}
+          <section className="py-14 md:py-20 bg-secondary/40">
+            <div className="container mx-auto px-6">
+              <div className="max-w-3xl mb-12">
+                <p className="text-gold mb-5" style={labelStyle}>
+                  AGENT INTEL
                 </p>
-                <p
-                  className="text-primary leading-[1.6] text-[1rem]"
-                  style={{ fontFamily: '"Jost", sans-serif' }}
-                >
-                  {row.value}
+                <h2 className="font-display text-3xl md:text-4xl lg:text-[2.75rem] font-normal text-architectural leading-[1.1]">
+                  {market.name} Market Snapshot
+                </h2>
+                <p className="text-muted-foreground leading-relaxed text-[1.0625rem] mt-5 max-w-2xl">
+                  Advisory-grade observations from active engagement in the {market.name} land
+                  market. Indicative figures. Every parcel underwrites differently based on
+                  water, exemptions, access, and entitlement.
                 </p>
               </div>
-            ))}
-          </div>
-          <p
-            className="text-muted-foreground/70 text-xs mt-6 max-w-2xl"
-            style={{ fontStyle: "italic" }}
-          >
-            Indicative figures based on recent {market.county} market activity. Contact
-            Echelon Property Group for a current, property-specific assessment.
-          </p>
-        </div>
-      </section>
 
-
-
-      {/* ── PROPERTY TYPES ─────────────────────────────────── */}
-      <section className="py-14 md:py-20">
-        <div className="container mx-auto px-6">
-          <div className="max-w-3xl mb-12">
-            <p className="text-gold mb-5" style={labelStyle}>
-              PROPERTY TYPES
-            </p>
-            <h2 className="font-display text-3xl md:text-4xl lg:text-[2.75rem] font-normal text-architectural leading-[1.1]">
-              What trades in {market.name}
-            </h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-10">
-            {market.propertyTypes.map((t) => (
-              <div key={t} className="border-t border-[rgba(12,15,36,0.18)] pt-6">
-                <h3 className="font-display text-xl text-architectural mb-3 leading-tight">
-                  {t}
-                </h3>
-                <p className="text-muted-foreground text-[0.95rem] leading-[1.65]">
-                  {propertyTypeBlurbs[t]}
-                </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[rgba(12,15,36,0.08)] border border-[rgba(12,15,36,0.08)]">
+                {[
+                  { label: "Median Price Per Acre", value: market.agentIntel.medianPricePerAcre },
+                  { label: "Typical Ranch Size", value: market.agentIntel.typicalRanchSize },
+                  { label: "Buyer Profile", value: market.agentIntel.buyerProfile },
+                  { label: "Recreational Demand", value: market.agentIntel.recreationalDemand },
+                  { label: "Development Activity", value: market.agentIntel.developmentActivity },
+                  { label: "Long-Term Outlook", value: market.agentIntel.longTermOutlook },
+                ].map((row) => (
+                  <div key={row.label} className="bg-background p-8 md:p-9">
+                    <p
+                      className="text-gold mb-4"
+                      style={{ ...labelStyle, fontSize: "0.55rem" }}
+                    >
+                      {row.label}
+                    </p>
+                    <p
+                      className="text-primary leading-[1.6] text-[1rem]"
+                      style={{ fontFamily: '"Jost", sans-serif' }}
+                    >
+                      {row.value}
+                    </p>
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
+              <p
+                className="text-muted-foreground/70 text-xs mt-6 max-w-2xl"
+                style={{ fontStyle: "italic" }}
+              >
+                Indicative figures based on recent {market.county} market activity. Contact
+                Echelon Property Group for a current, property-specific assessment.
+              </p>
+            </div>
+          </section>
 
-      <div className="h-10 md:h-16" aria-hidden="true" />
-
-      {/* ── WHY BUYERS CHOOSE ─────────────────────────────────── */}
-      <section className="py-14 md:py-20 bg-secondary/40">
-        <div className="container mx-auto px-6">
-          <div className="max-w-3xl mb-12">
-            <p className="text-gold mb-5" style={labelStyle}>
-              EDITORIAL
-            </p>
-            <h2 className="font-display text-3xl md:text-4xl lg:text-[2.75rem] font-normal text-architectural leading-[1.1]">
-              Why buyers choose {market.name}
-            </h2>
-          </div>
-          <div className="grid md:grid-cols-3 gap-10 md:gap-12 max-w-6xl">
-            {market.whyBuyers.map((w) => (
-              <div key={w.title}>
-                <div className="h-px w-10 bg-gold mb-5" aria-hidden="true" />
-                <h3 className="font-display text-[1.35rem] text-architectural mb-4 leading-snug">
-                  {w.title}
-                </h3>
-                <p className="text-muted-foreground leading-[1.7] text-[1rem]">
-                  {w.body}
+          {/* ── PROPERTY TYPES ─────────────────────────────────── */}
+          <section className="py-14 md:py-20">
+            <div className="container mx-auto px-6">
+              <div className="max-w-3xl mb-12">
+                <p className="text-gold mb-5" style={labelStyle}>
+                  PROPERTY TYPES
                 </p>
+                <h2 className="font-display text-3xl md:text-4xl lg:text-[2.75rem] font-normal text-architectural leading-[1.1]">
+                  What trades in {market.name}
+                </h2>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-10">
+                {market.propertyTypes.map((t) => (
+                  <div key={t} className="border-t border-[rgba(12,15,36,0.18)] pt-6">
+                    <h3 className="font-display text-xl text-architectural mb-3 leading-tight">
+                      {t}
+                    </h3>
+                    <p className="text-muted-foreground text-[0.95rem] leading-[1.65]">
+                      {propertyTypeBlurbs[t]}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
 
-      <div className="h-10 md:h-16" aria-hidden="true" />
+          <div className="h-10 md:h-16" aria-hidden="true" />
+
+          {/* ── WHY BUYERS CHOOSE ─────────────────────────────────── */}
+          <section className="py-14 md:py-20 bg-secondary/40">
+            <div className="container mx-auto px-6">
+              <div className="max-w-3xl mb-12">
+                <p className="text-gold mb-5" style={labelStyle}>
+                  EDITORIAL
+                </p>
+                <h2 className="font-display text-3xl md:text-4xl lg:text-[2.75rem] font-normal text-architectural leading-[1.1]">
+                  Why buyers choose {market.name}
+                </h2>
+              </div>
+              <div className="grid md:grid-cols-3 gap-10 md:gap-12 max-w-6xl">
+                {market.whyBuyers.map((w) => (
+                  <div key={w.title}>
+                    <div className="h-px w-10 bg-gold mb-5" aria-hidden="true" />
+                    <h3 className="font-display text-[1.35rem] text-architectural mb-4 leading-snug">
+                      {w.title}
+                    </h3>
+                    <p className="text-muted-foreground leading-[1.7] text-[1rem]">
+                      {w.body}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          <div className="h-10 md:h-16" aria-hidden="true" />
+        </>
+      )}
+
 
       {/* ── LIFESTYLE ─────────────────────────────────── */}
       <section className="py-14 md:py-20">

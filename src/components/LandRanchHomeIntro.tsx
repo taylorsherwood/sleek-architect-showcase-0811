@@ -79,29 +79,19 @@ const LandRanchHomeIntro = () => {
         {/* Right — editorial content */}
         <div className="flex flex-col justify-center px-8 md:px-14 lg:px-16 xl:px-20 py-16 md:py-20 lg:py-24">
           <ScrollReveal>
-            <div className="flex items-center gap-4 mb-6">
-              <span
-                aria-hidden="true"
-                style={{
-                  display: "block",
-                  width: "28px",
-                  height: "1px",
-                  background: "#b9a06c",
-                }}
-              />
-              <p
-                className="text-gold m-0"
-                style={{
-                  fontFamily: '"Jost", sans-serif',
-                  fontSize: "0.68rem",
-                  fontWeight: 500,
-                  letterSpacing: "0.34em",
-                  textTransform: "uppercase",
-                }}
-              >
-                Land, Ranch & Development
-              </p>
-            </div>
+            <p
+              className="text-gold mb-6"
+              style={{
+                fontFamily: '"Jost", sans-serif',
+                fontSize: "0.68rem",
+                fontWeight: 500,
+                letterSpacing: "0.34em",
+                textTransform: "uppercase",
+                margin: "0 0 1.5rem 0",
+              }}
+            >
+              Land, Ranch & Development
+            </p>
           </ScrollReveal>
 
           <ScrollReveal delay={80}>

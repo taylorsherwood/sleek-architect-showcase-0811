@@ -791,7 +791,15 @@ const LandRanch = () => {
         </div>
       </section>
 
+      {/* ── PARALLAX BREAK ──────────────────────── */}
+      <div
+        className="parallax-break hidden md:block"
+        style={{ backgroundImage: "url('/images/parallax-pasture-tree.webp')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties}
+        aria-hidden="true"
+      />
+
       <div className="h-12 md:h-20" aria-hidden="true" />
+
 
       {/* ── NEW: LAND ACQUISITION & DEVELOPMENT ADVISORY ───────────────── */}
       <section className="py-16 md:py-24">

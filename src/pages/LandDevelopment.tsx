@@ -10,6 +10,8 @@ import heroImg from "@/assets/land-development-hero.jpg";
 import masterplanImg from "@/assets/land-development-masterplan.jpg";
 import datacenterImg from "@/assets/land-development-datacenter.jpg";
 import industrialImg from "@/assets/land-development-industrial.jpg";
+import landBankingImg from "@/assets/land-banking.webp.asset.json";
+import mixedUseImg from "@/assets/mixed-use.png.asset.json";
 import corridorImg from "@/assets/land-development-corridor.jpg";
 
 const Footer = lazy(() => import("@/components/Footer"));

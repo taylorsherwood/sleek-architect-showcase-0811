@@ -4,7 +4,9 @@ import commercialMusicLane from "@/assets/commercial-music-lane-austin.webp";
 import luxuryHomesKitchen from "@/assets/luxury-homes-austin-twilight.webp";
 import paseoInvestment from "@/assets/investment-property-austin-condos.webp";
 import ranchHeroAsset from "@/assets/hill-country-ranches-hero.jpg.asset.json";
+import marketIntelligenceAsset from "@/assets/market-intelligence.png.asset.json";
 const ranchHero = ranchHeroAsset.url;
+const marketIntelligence = marketIntelligenceAsset.url;
 
 const expertiseBlocks = [
   {
@@ -18,13 +20,13 @@ const expertiseBlocks = [
     objectPosition: "75% center",
   },
   {
-    eyebrow: "LAND & ENTITLEMENT",
-    title: "Land development",
-    description: "Raw acreage, entitled parcels, and development-ready sites across high-growth corridors.",
-    link: "/land-development",
-    linkText: "View land",
-    image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1600&q=80",
-    alt: "Aerial view of rolling Texas Hill Country acreage",
+    eyebrow: "INVESTMENT ADVISORY",
+    title: "Investment property",
+    description: "Income-producing assets and value-add opportunities, underwritten to institutional standards.",
+    link: "/invest",
+    linkText: "View investments",
+    image: paseoInvestment,
+    alt: "Austin multifamily investment property at dusk with lit balconies and modern architecture",
   },
   {
     eyebrow: "COMMERCIAL",
@@ -36,13 +38,13 @@ const expertiseBlocks = [
     alt: "Music Lane mixed-use development on South Congress with downtown Austin skyline",
   },
   {
-    eyebrow: "INVESTMENT ADVISORY",
-    title: "Investment property",
-    description: "Income-producing assets and value-add opportunities, underwritten to institutional standards.",
-    link: "/invest",
-    linkText: "View investments",
-    image: paseoInvestment,
-    alt: "Austin multifamily investment property at dusk with lit balconies and modern architecture",
+    eyebrow: "LAND & ENTITLEMENT",
+    title: "Land development",
+    description: "Raw acreage, entitled parcels, and development-ready sites across high-growth corridors.",
+    link: "/land-development",
+    linkText: "View land",
+    image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1600&q=80",
+    alt: "Aerial view of rolling Texas Hill Country acreage",
   },
   {
     eyebrow: "LAND & RANCH",
@@ -53,7 +55,17 @@ const expertiseBlocks = [
     image: ranchHero,
     alt: "Texas Hill Country ranch with rolling pasture, oak trees, and long views",
   },
+  {
+    eyebrow: "MARKET INTELLIGENCE",
+    title: "Market Intelligence",
+    description: "Research, growth corridors, development trends, market analysis, and strategic insights shaping real estate decisions across Central Texas.",
+    link: "/insights",
+    linkText: "Explore Insights",
+    image: marketIntelligence,
+    alt: "Aerial view of Austin growth corridors with highlighted development parcels and infrastructure overlays at sunset",
+  },
 ];
+
 
 const ExpertiseSection = () => {
   return (
@@ -106,13 +118,12 @@ const ExpertiseSection = () => {
           {/* Cinematic image-led grid */}
           <div className="grid grid-cols-1 md:grid-cols-2" style={{ gap: "16px" }}>
             {expertiseBlocks.map((block, index) => {
-              const isLast = index === expertiseBlocks.length - 1;
               return (
-              <ScrollReveal key={block.title} delay={index * 100} className={isLast ? "md:col-span-2" : ""}>
+              <ScrollReveal key={block.title} delay={index * 100}>
                 <Link
                   to={block.link}
-                  className={`expertise-card group relative block overflow-hidden ${isLast ? "md:mx-auto md:w-full" : "w-full"}`}
-                  style={{ aspectRatio: "4 / 5", maxWidth: isLast ? "calc(50% - 8px)" : undefined }}
+                  className="expertise-card group relative block overflow-hidden w-full"
+                  style={{ aspectRatio: "4 / 5" }}
                   aria-label={`${block.title}, ${block.linkText}`}
                 >
                   {/* Background image */}

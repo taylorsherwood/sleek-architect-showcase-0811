@@ -19,6 +19,14 @@ const MarketBalanceGauge = lazy(
 const ExoticWildlifeGallery = lazy(
   () => import("@/components/land-ranch/ExoticWildlifeGallery"),
 );
+const HillCountryTopEnhancements = lazy(
+  () => import("@/components/land-ranch/HillCountryEnhancements"),
+);
+const HillCountryBottomBreak = lazy(() =>
+  import("@/components/land-ranch/HillCountryEnhancements").then((m) => ({
+    default: m.HillCountryBottomBreak,
+  })),
+);
 
 const SITE = "https://www.echelonpropertygroup.com";
 

@@ -252,12 +252,12 @@ const Reviews = () => {
           <div className="mt-12 inline-flex flex-wrap items-center justify-center gap-x-8 gap-y-3 px-6 py-4 border-y border-architectural/10">
             <div className="text-left">
               <p className="text-[0.65rem] tracking-[0.22em] text-gold font-extrabold">AVERAGE RATING</p>
-              <p className="font-display text-xl text-architectural">TBD</p>
+              <div className="mt-1"><StarRating rating={5} /></div>
             </div>
             <div className="h-8 w-px bg-architectural/15 hidden sm:block" />
             <div className="text-left">
               <p className="text-[0.65rem] tracking-[0.22em] text-gold font-extrabold">TOTAL REVIEWS</p>
-              <p className="font-display text-xl text-architectural">TBD</p>
+              <p className="font-display text-xl text-architectural">{reviews.length}</p>
             </div>
             <div className="h-8 w-px bg-architectural/15 hidden sm:block" />
             <div className="text-left">
@@ -346,7 +346,8 @@ const Reviews = () => {
                   </span>
                 </div>
                 <div className="w-10 h-px bg-gold mb-5" />
-                <p className="text-foreground/[0.88] text-[0.95rem] leading-[1.8] font-light italic flex-1">
+                <StarRating rating={r.rating} />
+                <p className="text-foreground/[0.88] text-[0.95rem] leading-[1.8] font-light italic flex-1 mt-4">
                   &ldquo;{r.quote}&rdquo;
                 </p>
                 <div className="mt-6 pt-4 border-t border-architectural/10">

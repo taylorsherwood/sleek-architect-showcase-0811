@@ -1546,8 +1546,6 @@ const HomeBelowFold = () => (
       aria-hidden="true"
     />
 
-    <div className="h-8 md:h-12 bg-secondary" aria-hidden="true" />
-
     <TestimonialsSection />
 
     <div className="h-12 md:h-20 bg-secondary" aria-hidden="true" />

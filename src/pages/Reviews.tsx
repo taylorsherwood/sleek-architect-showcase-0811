@@ -337,7 +337,7 @@ const Reviews = () => {
                 <StarRating rating={5} />
                 <span className="text-architectural font-medium">5.0</span>
                 <span className="text-foreground/70 text-sm font-light">
-                  from {reviews.length}+ verified reviews · Google, Zillow, Realtor.com & RealSatisfied
+                  Verified reviews from Google, Zillow, Realtor.com & RealSatisfied
                 </span>
               </div>
 

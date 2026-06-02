@@ -224,16 +224,17 @@ A specialist advisor will already be raising most of these questions before the 
 
 ## Valuation Comparison: Side by Side
 
-| Consideration | Agricultural Valuation (1-d-1) | Wildlife Management Valuation |
-| --- | --- | --- |
-| Qualifying use | Livestock, hay, crops, beekeeping, timber | At least three of seven wildlife practices each year |
-| Prerequisite | Five of prior seven years in qualifying ag use | Existing agricultural valuation already in place |
-| Typical Hill Country acreage | Often 10 to 20 acres minimum, varies by county and use | Inherits ag acreage threshold; some counties expect more for habitat scale |
-| Documentation | Leases, livestock records, sales receipts | Written Wildlife Management Plan plus annual activity logs |
-| Lifestyle fit | Working operators, cattle and hay producers | Hunting, recreation, family retreats, conservation, legacy holds |
-| Conservation alignment | Limited unless paired with stewardship practices | Strong, supports habitat restoration and native species |
-| Conversion path | Entry point into the special-valuation system | Conversion from an active ag valuation, by application |
-| Rollback exposure | Triggered if ag use stops or land is converted | Triggered if wildlife use stops or land is converted |
+:::glance
+Consideration | Agricultural Valuation (1-d-1) | Wildlife Management Valuation
+Qualifying use | Livestock, hay, crops, beekeeping, timber | At least three of seven wildlife practices each year
+Prerequisite | Five of prior seven years in qualifying ag use | Existing agricultural valuation already in place
+Typical Hill Country acreage | Often 10 to 20 acres minimum, varies by county and use | Inherits ag acreage threshold; some counties expect more for habitat scale
+Documentation | Leases, livestock records, sales receipts | Written Wildlife Management Plan plus annual activity logs
+Lifestyle fit | Working operators, cattle and hay producers | Hunting, recreation, family retreats, conservation, legacy holds
+Conservation alignment | Limited unless paired with stewardship practices | Strong, supports habitat restoration and native species
+Conversion path | Entry point into the special-valuation system | Conversion from an active ag valuation, by application
+Rollback exposure | Triggered if ag use stops or land is converted | Triggered if wildlife use stops or land is converted
+:::
 
 ## Common Myths
 

@@ -236,13 +236,13 @@ const Reviews = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
             <a
               href="#reviews"
-              className="inline-flex items-center justify-center px-7 py-3 bg-architectural text-background text-sm tracking-[0.18em] font-medium hover:bg-architectural/90 transition-colors"
+              className="inline-flex items-center justify-center px-7 py-3 bg-architectural text-background text-sm tracking-[0.18em] font-medium hover:bg-gold hover:text-white transition-colors"
             >
               READ CLIENT REVIEWS
             </a>
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center px-7 py-3 border border-architectural/30 text-architectural text-sm tracking-[0.18em] font-medium hover:bg-architectural hover:text-background transition-colors"
+              className="inline-flex items-center justify-center px-7 py-3 border border-architectural/30 text-architectural text-sm tracking-[0.18em] font-medium hover:bg-gold hover:text-white transition-colors"
             >
               SCHEDULE A PRIVATE CONSULTATION
             </Link>

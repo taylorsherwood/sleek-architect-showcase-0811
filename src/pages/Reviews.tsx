@@ -1,5 +1,6 @@
 import { useState, lazy, Suspense, useMemo } from "react";
 import { Link } from "react-router-dom";
+import taylorHeadshot from "@/assets/taylor-headshot.webp";
 import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, {

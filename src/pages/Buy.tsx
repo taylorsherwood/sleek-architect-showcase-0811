@@ -693,6 +693,17 @@ const Buy = () => {
         </div>
       </section>
 
+      {/* ── Buyer / Seller Market Balance (Austin Metro) ── */}
+      <Suspense fallback={<div className="min-h-[280px]" />}>
+        <MarketBalanceGauge
+          communityName="Greater Austin Metro"
+          marketName="Austin Metro"
+          fallbackMarketName="Austin Metro"
+        />
+      </Suspense>
+
+
+
       {/* ── FAQ ── */}
       <section className="py-28 bg-background">
         <div className="container mx-auto px-6">

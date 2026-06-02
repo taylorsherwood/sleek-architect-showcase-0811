@@ -116,6 +116,14 @@ const AboutTestimonialsSection = () => {
               />
             ))}
           </div>
+          <div className="mt-10 text-center">
+            <Link
+              to="/reviews"
+              className="gold-metallic-text gold-underline-hover inline-block px-10 py-2.5 text-[0.65rem] tracking-[0.22em] uppercase"
+            >
+              Read More Client Experiences
+            </Link>
+          </div>
         </div>
       </div>
     </section>

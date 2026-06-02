@@ -302,113 +302,114 @@ const Reviews = () => {
 
       <Navigation />
 
-      {/* HERO */}
-      <section className="relative pt-32 md:pt-40 pb-16 md:pb-24 bg-background">
-        <div className="container mx-auto px-6 max-w-5xl text-center">
-          <p className="text-minimal text-gold mb-4 font-extrabold tracking-[0.25em]">
-            CLIENT REVIEWS & RESULTS
-          </p>
-          <h1 className="text-4xl md:text-6xl font-display font-normal text-architectural leading-[1.05] mb-6">
-            Taylor Sherwood Reviews
-            <br />
-            <span className="text-foreground/80">& Client Results</span>
-          </h1>
-          <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto font-light leading-relaxed mb-8">
-            Client experiences, transaction results, and trusted guidance across Austin, the
-            Texas Hill Country, and beyond.
-          </p>
+      {/* HERO — two-column editorial */}
+      <section className="relative pt-32 md:pt-40 pb-12 md:pb-20 bg-background overflow-hidden">
+        <div className="container mx-auto px-6 max-w-6xl">
+          <div className="grid lg:grid-cols-[1.05fr,1fr] gap-12 lg:gap-16 items-center">
+            {/* LEFT — copy */}
+            <div className="order-2 lg:order-1">
+              <p className="text-[0.7rem] tracking-[0.28em] text-gold font-extrabold uppercase mb-6">
+                Client Reviews
+              </p>
+              <h1 className="font-display font-normal text-architectural leading-[0.95] tracking-tight">
+                <span className="block text-5xl md:text-6xl lg:text-7xl">Taylor</span>
+                <span className="block italic text-5xl md:text-6xl lg:text-7xl mt-1">
+                  Sherwood
+                </span>
+              </h1>
+              <p className="mt-6 text-[0.7rem] tracking-[0.28em] uppercase text-architectural/70 font-medium">
+                Echelon Property Group · eXp Realty
+              </p>
 
-          {/* Positioning tags */}
-          <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 mb-10">
-            {positioningTags.map((t) => (
-              <span
-                key={t}
-                className="text-[0.65rem] tracking-[0.22em] uppercase text-architectural/80 border border-architectural/15 px-3 py-1.5 font-light"
-              >
-                {t}
-              </span>
-            ))}
-          </div>
+              <div className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-2">
+                <StarRating rating={5} />
+                <span className="text-architectural font-medium">5.0</span>
+                <span className="text-foreground/70 text-sm font-light">
+                  from {reviews.length}+ verified reviews · Google, Zillow, Realtor.com & RealSatisfied
+                </span>
+              </div>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-            <a
-              href="#reviews"
-              className="inline-flex items-center justify-center px-7 py-3 bg-architectural text-background text-sm tracking-[0.18em] font-medium hover:bg-gold hover:text-white transition-colors"
-            >
-              READ REVIEWS
-            </a>
-            <Link
-              to="/contact"
-              className="inline-flex items-center justify-center px-7 py-3 border border-architectural/30 text-architectural text-sm tracking-[0.18em] font-medium hover:bg-gold hover:text-white transition-colors"
-            >
-              SCHEDULE A CONSULTATION
-            </Link>
-          </div>
+              <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+                <a
+                  href="#reviews"
+                  className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-architectural text-background text-[0.75rem] tracking-[0.18em] font-medium uppercase hover:bg-gold hover:text-white transition-colors"
+                >
+                  Read the reviews
+                  <span aria-hidden>→</span>
+                </a>
+                <Link
+                  to="/contact"
+                  className="inline-flex items-center justify-center px-7 py-3.5 border border-architectural/30 text-architectural text-[0.75rem] tracking-[0.18em] font-medium uppercase hover:bg-gold hover:text-white hover:border-gold transition-colors"
+                >
+                  Get in touch
+                </Link>
+              </div>
 
-          {/* Aggregate row */}
-          <div className="mt-12 inline-flex flex-wrap items-center justify-center gap-x-8 gap-y-3 px-6 py-4 border-y border-architectural/10">
-            <div className="text-left">
-              <p className="text-[0.65rem] tracking-[0.22em] text-gold font-extrabold">RATING</p>
-              <div className="mt-1"><StarRating rating={5} /></div>
+              <div className="mt-8 flex items-center gap-3">
+                <a
+                  href="https://www.instagram.com/echelonpropertygroup"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Instagram"
+                  className="w-10 h-10 rounded-full border border-architectural/20 inline-flex items-center justify-center text-architectural hover:border-gold hover:text-gold transition-colors"
+                >
+                  <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                    <rect x="3" y="3" width="18" height="18" rx="5" />
+                    <circle cx="12" cy="12" r="4" />
+                    <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" />
+                  </svg>
+                </a>
+                <a
+                  href="https://www.echelonpropertygroup.com"
+                  aria-label="Website"
+                  className="w-10 h-10 rounded-full border border-architectural/20 inline-flex items-center justify-center text-architectural hover:border-gold hover:text-gold transition-colors"
+                >
+                  <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M3 12h18M12 3c2.5 3 2.5 15 0 18M12 3c-2.5 3-2.5 15 0 18" />
+                  </svg>
+                </a>
+              </div>
             </div>
-            <div className="h-8 w-px bg-architectural/15 hidden sm:block" />
-            <div className="text-left">
-              <p className="text-[0.65rem] tracking-[0.22em] text-gold font-extrabold">PUBLISHED REVIEWS</p>
-              <p className="font-display text-xl text-architectural">{reviews.length}</p>
-            </div>
-            <div className="h-8 w-px bg-architectural/15 hidden sm:block" />
-            <div className="text-left">
-              <p className="text-[0.65rem] tracking-[0.22em] text-gold font-extrabold">SOURCES</p>
-              <p className="font-display text-sm text-architectural">Google · Zillow · Realtor.com · RealSatisfied · LinkedIn</p>
+
+            {/* RIGHT — portrait with offset accent card */}
+            <div className="order-1 lg:order-2 relative mx-auto w-full max-w-[460px]">
+              <div
+                aria-hidden
+                className="absolute -bottom-4 -right-4 md:-bottom-6 md:-right-6 w-full h-full bg-architectural/90"
+              />
+              <div className="relative aspect-[4/5] overflow-hidden bg-architectural/5">
+                <img
+                  src={taylorHeadshot}
+                  alt="Taylor Sherwood, Austin luxury real estate advisor and founder of Echelon Property Group"
+                  className="w-full h-full object-cover"
+                  loading="eager"
+                  decoding="async"
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* PROOF METRICS */}
-      <section className="py-16 md:py-20 bg-background border-t border-architectural/10">
+      {/* STATS STRIP — 4 columns with thin dividers */}
+      <section className="bg-background border-t border-architectural/10">
         <div className="container mx-auto px-6 max-w-6xl">
-          <div className="text-center mb-12">
-            <p className="text-minimal text-gold mb-3 font-extrabold">PROOF & TRACK RECORD</p>
-            <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural">
-              Advisory Built on Verified Outcomes
-            </h2>
-            <p className="text-sm text-muted-foreground font-light mt-3 max-w-xl mx-auto">
-              Metrics shown as placeholders are pending verification and will be published only
-              when confirmed. Echelon Property Group does not publish unverified figures.
-            </p>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-architectural/10">
             {proofMetrics.map((m) => (
-              <div
-                key={m.label}
-                className="bg-white border border-architectural/10 p-6 text-center"
-                style={{ boxShadow: "0 6px 20px rgba(0,0,0,0.04)" }}
-              >
-                <p className="font-display text-xl md:text-2xl text-architectural mb-2 leading-tight">
+              <div key={m.label} className="text-center py-8 md:py-12 px-4">
+                <p className="font-display text-architectural text-3xl md:text-4xl leading-none">
                   {m.value}
                 </p>
-                <p className="text-[0.7rem] tracking-[0.18em] text-gold font-extrabold uppercase mb-1">
+                <p className="mt-3 text-[0.65rem] tracking-[0.22em] text-architectural/60 font-medium uppercase">
                   {m.label}
                 </p>
-                {m.note && (
-                  <p className="text-[0.7rem] text-muted-foreground/80 font-light italic">
-                    {m.note}
-                  </p>
-                )}
               </div>
             ))}
           </div>
-          <p className="text-center text-sm text-muted-foreground font-light mt-10">
-            Explore representative work across{" "}
-            <Link to="/sell" className="text-architectural border-b border-gold/60 hover:border-gold">selling</Link>,{" "}
-            <Link to="/buy" className="text-architectural border-b border-gold/60 hover:border-gold">buying</Link>,{" "}
-            <Link to="/off-market-real-estate-austin" className="text-architectural border-b border-gold/60 hover:border-gold">off-market</Link>,{" "}
-            <Link to="/land-ranch" className="text-architectural border-b border-gold/60 hover:border-gold">land & ranch</Link>, and{" "}
-            <Link to="/invest" className="text-architectural border-b border-gold/60 hover:border-gold">investment</Link> representation.
-          </p>
         </div>
       </section>
+
 
       {/* FILTERS + REVIEW CARDS */}
       <section id="reviews" className="py-16 md:py-24 bg-background">

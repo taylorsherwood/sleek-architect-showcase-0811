@@ -3,6 +3,7 @@ import FeaturedCommunities from "@/components/FeaturedCommunities";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 const Footer = lazy(() => import("@/components/Footer"));
+const MarketBalanceGauge = lazy(() => import("@/components/market-intel/MarketBalanceGauge"));
 import LandCrossLinks from "@/components/LandCrossLinks";
 
 import SEOHead from "@/components/SEOHead";
@@ -691,6 +692,17 @@ const Buy = () => {
           </div>
         </div>
       </section>
+
+      {/* ── Buyer / Seller Market Balance (Austin Metro) ── */}
+      <Suspense fallback={<div className="min-h-[280px]" />}>
+        <MarketBalanceGauge
+          communityName="Greater Austin Metro"
+          marketName="Austin Metro"
+          fallbackMarketName="Austin Metro"
+        />
+      </Suspense>
+
+
 
       {/* ── FAQ ── */}
       <section className="py-28 bg-background">

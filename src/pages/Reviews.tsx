@@ -300,6 +300,65 @@ const ExpandableQuote = ({ text }: { text: string }) => {
   );
 };
 
+const CountUp = ({
+  from,
+  to,
+  decimals,
+  prefix,
+  suffix,
+  duration = 1800,
+}: {
+  from: number;
+  to: number;
+  decimals: number;
+  prefix: string;
+  suffix: string;
+  duration?: number;
+}) => {
+  const ref = useRef<HTMLSpanElement>(null);
+  const [value, setValue] = useState(from);
+  const startedRef = useRef(false);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    if (typeof window !== "undefined" && window.matchMedia?.("(prefers-reduced-motion: reduce)").matches) {
+      setValue(to);
+      return;
+    }
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !startedRef.current) {
+            startedRef.current = true;
+            const start = performance.now();
+            const tick = (now: number) => {
+              const elapsed = now - start;
+              const t = Math.min(1, elapsed / duration);
+              const eased = 1 - Math.pow(1 - t, 3);
+              setValue(from + (to - from) * eased);
+              if (t < 1) requestAnimationFrame(tick);
+            };
+            requestAnimationFrame(tick);
+            observer.disconnect();
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [from, to, duration]);
+
+  return (
+    <span ref={ref}>
+      {prefix}
+      {value.toFixed(decimals)}
+      {suffix}
+    </span>
+  );
+};
+
 const Reviews = () => {
   const [active, setActive] = useState<Filter>("All Reviews");
 

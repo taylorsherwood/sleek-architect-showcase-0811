@@ -39,7 +39,7 @@ const BlogPost = () => {
                 to="/blog" 
                 className="text-minimal text-foreground hover:text-muted-foreground transition-colors duration-300"
               >
-                ← BACK TO BLOG
+                ← BACK TO INSIGHTS
               </Link>
             </div>
           </div>
@@ -118,7 +118,7 @@ const BlogPost = () => {
               to="/blog" 
               className="inline-block text-minimal text-muted-foreground hover:text-foreground transition-colors duration-300 mb-12"
             >
-              ← BACK TO BLOG
+              ← BACK TO INSIGHTS
             </Link>
             
             <div className="mb-8">

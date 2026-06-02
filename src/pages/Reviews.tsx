@@ -1,6 +1,7 @@
 import { useState, lazy, Suspense, useMemo, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import taylorHeadshot from "@/assets/taylor-headshot.webp";
+import taylorRanchHeadshot from "@/assets/taylor-headshot-ranch.jpg.asset.json";
 import TransactionsMap from "@/components/TransactionsMap";
 import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";
@@ -672,7 +673,7 @@ const Reviews = () => {
           <div className="grid md:grid-cols-[280px,1fr] gap-8 md:gap-12 items-center mb-12">
             <div className="relative mx-auto md:mx-0 w-[220px] md:w-[280px] aspect-[4/5] overflow-hidden bg-architectural/5">
               <img
-                src={taylorHeadshot}
+                src={taylorRanchHeadshot.url}
                 alt="Taylor Sherwood, Austin Realtor and founder of Echelon Property Group"
                 className="w-full h-full object-cover"
                 loading="lazy"

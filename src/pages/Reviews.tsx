@@ -95,7 +95,7 @@ const reviews: Review[] = [
     source: "Verified Client",
     date: "2025",
     category: "Communication",
-    transaction: "Sold in Westlake Hills",
+    transaction: "Purchased and sold in Westlake Hills",
     rating: 5,
     quote:
       "From staging to close, every step was handled with professionalism and care. We'd recommend anyone thinking about buying or selling in Austin to call Taylor first.",

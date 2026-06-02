@@ -548,7 +548,7 @@ const Reviews = () => {
           <div className="grid md:grid-cols-[280px,1fr] gap-8 md:gap-12 items-center mb-12">
             <div className="relative mx-auto md:mx-0 w-[220px] md:w-[280px] aspect-[4/5] overflow-hidden bg-architectural/5">
               <img
-                src="/lovable-uploads/537facb0-1fbc-450c-8c4a-c1d06c4aa924.jpg"
+                src={taylorHeadshot}
                 alt="Taylor Sherwood, Austin Realtor and founder of Echelon Property Group"
                 className="w-full h-full object-cover"
                 loading="lazy"

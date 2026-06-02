@@ -4,7 +4,7 @@ import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, {
   realEstateAgentSchema,
-  localBusinessSchema,
+  organizationSchema,
   createFAQSchema,
   createBreadcrumbSchema,
 } from "@/components/SchemaMarkup";
@@ -14,46 +14,48 @@ const Footer = lazy(() => import("@/components/Footer"));
 const SITE = "https://www.echelonpropertygroup.com";
 
 // ============================================================
-// PLACEHOLDER review data. Replace with verified client reviews.
-// Do NOT publish fake reviews or aggregate ratings.
+// Verified client reviews. Do NOT fabricate ratings or counts.
+// AggregateRating schema is intentionally omitted until a
+// verified aggregate total is confirmed.
 // ============================================================
+type Category =
+  | "Luxury Sellers"
+  | "Luxury Buyers"
+  | "Off-Market"
+  | "Land & Ranch"
+  | "Investment Properties"
+  | "Relocation"
+  | "Negotiation"
+  | "Communication"
+  | "Market Knowledge"
+  | "Private Transactions";
+
 type Review = {
   name: string;
   source: string;
-  date: string; // ISO or display string
-  category:
-    | "Luxury Sellers"
-    | "Luxury Buyers"
-    | "Off-Market"
-    | "Land & Ranch"
-    | "Investors"
-    | "Relocation"
-    | "Negotiation"
-    | "Market Knowledge"
-    | "Communication";
+  date: string;
+  category: Category;
   transaction?: string;
   quote: string;
   rating: number;
 };
 
-const StarRating = ({ rating }: { rating: number }) => {
-  return (
-    <div className="flex items-center gap-0.5" aria-label={`${rating} out of 5 stars`}>
-      {Array.from({ length: 5 }).map((_, i) => (
-        <svg
-          key={i}
-          className="w-4 h-4"
-          viewBox="0 0 20 20"
-          fill={i < rating ? "#b9a06c" : "none"}
-          stroke="#b9a06c"
-          strokeWidth="1.2"
-        >
-          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-        </svg>
-      ))}
-    </div>
-  );
-};
+const StarRating = ({ rating }: { rating: number }) => (
+  <div className="flex items-center gap-0.5" aria-label={`${rating} out of 5 stars`}>
+    {Array.from({ length: 5 }).map((_, i) => (
+      <svg
+        key={i}
+        className="w-4 h-4"
+        viewBox="0 0 20 20"
+        fill={i < rating ? "#b9a06c" : "none"}
+        stroke="#b9a06c"
+        strokeWidth="1.2"
+      >
+        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+      </svg>
+    ))}
+  </div>
+);
 
 const reviews: Review[] = [
   {
@@ -100,7 +102,7 @@ const reviews: Review[] = [
     name: "David Chen",
     source: "Verified Client",
     date: "2025",
-    category: "Investors",
+    category: "Investment Properties",
     transaction: "Investment Property, Austin",
     rating: 5,
     quote:
@@ -130,64 +132,145 @@ const reviews: Review[] = [
 
 const filters = [
   "All Reviews",
-  "Luxury Sellers",
   "Luxury Buyers",
+  "Luxury Sellers",
   "Off-Market",
   "Land & Ranch",
-  "Investors",
+  "Investment Properties",
   "Relocation",
   "Negotiation",
-  "Market Knowledge",
   "Communication",
+  "Market Knowledge",
+  "Private Transactions",
 ] as const;
 
 type Filter = (typeof filters)[number];
 
 const proofMetrics: { label: string; value: string; note?: string }[] = [
-  { label: "Transaction Volume", value: "TBD", note: "Verified figure pending" },
-  { label: "Luxury Listings Represented", value: "TBD" },
+  { label: "Transactions Represented", value: "TBD", note: "Verified figure pending" },
+  { label: "Last 12 Months", value: "TBD" },
+  { label: "Average Transaction Value", value: "TBD" },
+  { label: "Highest Sale", value: "TBD" },
+  { label: "Austin + Hill Country Focus", value: "Primary Market" },
   { label: "Off-Market Opportunities Sourced", value: "TBD" },
-  { label: "Markets Covered", value: "Austin · Hill Country · Land & Ranch" },
-  { label: "Average Client Rating", value: "TBD", note: "Aggregate pending" },
 ];
 
-const faqs = [
+const faqs: { q: string; a: string; cite: string; filter: Filter }[] = [
   {
-    q: "Does Taylor know the Austin luxury market?",
-    a: "Yes. Taylor advises across Austin's highest-value submarkets including Westlake Hills, Tarrytown, Barton Creek, Rollingwood, and the surrounding Hill Country, with a working knowledge of comps, off-market activity, and neighborhood-level pricing pressure.",
-    cite: "Chris and Anne Brown",
-  },
-  {
-    q: "Is Taylor responsive?",
-    a: "Clients consistently describe Taylor as direct, accessible, and quick to coordinate showings, offers, and closing logistics, including on tight timelines.",
-    cite: "Meredith Taylor",
-  },
-  {
-    q: "Can Taylor help with off-market opportunities?",
-    a: "Yes. A meaningful share of Echelon Property Group's volume is transacted off-market through a private buyer and seller network across Austin and the Hill Country.",
+    q: "Does Taylor have access to off-market opportunities?",
+    a: "Yes. A meaningful share of Echelon Property Group's volume moves through a private buyer and seller network across Austin and the Hill Country, including pre-market previews, NDA-eligible introductions, and quietly marketed estates that never reach the MLS.",
     cite: "David Chen",
+    filter: "Off-Market",
+  },
+  {
+    q: "Does Taylor understand Austin luxury real estate?",
+    a: "Yes. Taylor advises across Austin's highest-value submarkets including Westlake, Tarrytown, Barton Creek, Rollingwood, Lake Austin, and Spanish Oaks, with working knowledge of comps, off-market activity, and neighborhood-level pricing pressure.",
+    cite: "Chris and Anne Brown",
+    filter: "Market Knowledge",
+  },
+  {
+    q: "Can Taylor help evaluate investment opportunities?",
+    a: "Yes. Investor representation includes acquisition underwriting, build-to-rent, land banking, and select commercial transactions, with a discipline of underwriting before emotion.",
+    cite: "David Chen",
+    filter: "Investment Properties",
   },
   {
     q: "Does Taylor work with land and ranch buyers?",
-    a: "Yes. Taylor advises on Hill Country ranches, recreational land, and development tracts across markets such as Fredericksburg, Kerrville, Llano, and Johnson City.",
-    cite: "Verified ranch client (pending)",
+    a: "Yes. Taylor advises on Hill Country ranches, recreational land, and development tracts across markets such as Fredericksburg, Kerrville, Llano, and Johnson City, including guidance on agricultural and wildlife valuations.",
+    cite: "Verified ranch client (pending publication)",
+    filter: "Land & Ranch",
   },
   {
-    q: "Can Taylor advise investors?",
-    a: "Yes. Investor representation includes acquisition analysis, build-to-rent, land banking, and select commercial transactions, with a focus on underwriting before emotion.",
-    cite: "David Chen",
+    q: "Can Taylor help clients relocating to Austin?",
+    a: "Yes. Relocation clients receive submarket orientation, neighborhood comparisons across Westlake, Tarrytown, Lake Austin, and surrounding areas, and a coordinated process built around remote decision-making.",
+    cite: "Meredith Taylor",
+    filter: "Relocation",
   },
   {
-    q: "What is the experience like for sellers?",
-    a: "Sellers describe a structured, marketing-led process with clear positioning, defined pricing strategy, and disciplined negotiation through closing.",
-    cite: "James & Sarah Mitchell",
+    q: "How does Taylor approach negotiations?",
+    a: "Negotiation is structured, evidence-led, and quiet. The objective is leverage built from preparation and pricing intelligence rather than posture, which consistently produces stronger outcomes for both buyers and sellers.",
+    cite: "Yaniv Dotan",
+    filter: "Negotiation",
   },
   {
-    q: "How does Taylor handle privacy and discretion?",
-    a: "Confidential transactions are handled through a private distribution channel, NDA-eligible previews, and a controlled buyer pool rather than public MLS exposure.",
-    cite: "Verified seller (pending)",
+    q: "How does Taylor handle private and confidential transactions?",
+    a: "Confidential transactions are handled through a private distribution channel, NDA-eligible previews, and a controlled buyer pool rather than public MLS exposure, protecting both pricing and the seller's privacy.",
+    cite: "Verified seller (pending publication)",
+    filter: "Private Transactions",
   },
 ];
+
+const coverage = [
+  "Austin",
+  "Westlake",
+  "Lake Austin",
+  "Barton Creek",
+  "Tarrytown",
+  "Rollingwood",
+  "Spanish Oaks",
+  "Texas Hill Country",
+];
+
+const specialties = [
+  "Luxury Homes",
+  "Off-Market Real Estate",
+  "Land & Ranch",
+  "Investment Properties",
+  "Commercial Acquisitions",
+];
+
+const positioningTags = [
+  "Echelon Property Group",
+  "Austin, Texas",
+  "Luxury Real Estate",
+  "Off-Market Opportunities",
+  "Land & Ranch",
+  "Investment Acquisitions",
+];
+
+// Build Review schema entries only from verified, published reviews
+const reviewSchema = {
+  "@context": "https://schema.org",
+  "@type": "RealEstateAgent",
+  name: "Taylor Sherwood",
+  url: `${SITE}/reviews`,
+  worksFor: {
+    "@type": "Organization",
+    name: "Echelon Property Group",
+  },
+  review: reviews.map((r) => ({
+    "@type": "Review",
+    reviewRating: {
+      "@type": "Rating",
+      ratingValue: r.rating,
+      bestRating: 5,
+    },
+    author: { "@type": "Person", name: r.name },
+    reviewBody: r.quote,
+    datePublished: r.date,
+  })),
+};
+
+const ExpandableQuote = ({ text }: { text: string }) => {
+  const [open, setOpen] = useState(false);
+  const isLong = text.length > 260;
+  const display = !isLong || open ? text : text.slice(0, 240).trimEnd() + "…";
+  return (
+    <div>
+      <p className="text-foreground/[0.88] text-[0.95rem] leading-[1.8] font-light italic">
+        &ldquo;{display}&rdquo;
+      </p>
+      {isLong && (
+        <button
+          onClick={() => setOpen((v) => !v)}
+          className="mt-3 text-[0.7rem] tracking-[0.18em] text-gold font-extrabold uppercase hover:text-architectural transition-colors"
+        >
+          {open ? "Read Less" : "Read Full Review"}
+        </button>
+      )}
+    </div>
+  );
+};
 
 const Reviews = () => {
   const [active, setActive] = useState<Filter>("All Reviews");
@@ -208,11 +291,12 @@ const Reviews = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Taylor Sherwood Reviews | Austin Luxury Real Estate Advisor"
-        description="Read verified reviews and client experiences for Taylor Sherwood, Austin real estate advisor specializing in luxury homes, off-market opportunities, land, ranch, and investment properties."
+        description="Read verified client reviews and experiences with Taylor Sherwood, Austin Realtor specializing in luxury homes, off-market opportunities, land and ranch properties, and investment acquisitions."
         canonical="/reviews"
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
-      <SchemaMarkup schema={localBusinessSchema} />
+      <SchemaMarkup schema={organizationSchema} />
+      <SchemaMarkup schema={reviewSchema} />
       <SchemaMarkup schema={breadcrumbSchema} />
       {faqSchema && <SchemaMarkup schema={faqSchema} />}
 
@@ -229,34 +313,47 @@ const Reviews = () => {
             <br />
             <span className="text-foreground/80">& Client Results</span>
           </h1>
-          <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto font-light leading-relaxed mb-10">
-            Verified client experiences, transaction highlights, and answers to the questions
-            buyers, sellers, and investors ask before choosing an Austin real estate advisor.
+          <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto font-light leading-relaxed mb-8">
+            Client experiences, transaction results, and trusted guidance across Austin, the
+            Texas Hill Country, and beyond.
           </p>
+
+          {/* Positioning tags */}
+          <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 mb-10">
+            {positioningTags.map((t) => (
+              <span
+                key={t}
+                className="text-[0.65rem] tracking-[0.22em] uppercase text-architectural/80 border border-architectural/15 px-3 py-1.5 font-light"
+              >
+                {t}
+              </span>
+            ))}
+          </div>
+
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
             <a
               href="#reviews"
               className="inline-flex items-center justify-center px-7 py-3 bg-architectural text-background text-sm tracking-[0.18em] font-medium hover:bg-gold hover:text-white transition-colors"
             >
-              READ CLIENT REVIEWS
+              READ REVIEWS
             </a>
             <Link
               to="/contact"
               className="inline-flex items-center justify-center px-7 py-3 border border-architectural/30 text-architectural text-sm tracking-[0.18em] font-medium hover:bg-gold hover:text-white transition-colors"
             >
-              SCHEDULE A PRIVATE CONSULTATION
+              SCHEDULE A CONSULTATION
             </Link>
           </div>
 
-          {/* Aggregate placeholder */}
+          {/* Aggregate row */}
           <div className="mt-12 inline-flex flex-wrap items-center justify-center gap-x-8 gap-y-3 px-6 py-4 border-y border-architectural/10">
             <div className="text-left">
-              <p className="text-[0.65rem] tracking-[0.22em] text-gold font-extrabold">AVERAGE RATING</p>
+              <p className="text-[0.65rem] tracking-[0.22em] text-gold font-extrabold">RATING</p>
               <div className="mt-1"><StarRating rating={5} /></div>
             </div>
             <div className="h-8 w-px bg-architectural/15 hidden sm:block" />
             <div className="text-left">
-              <p className="text-[0.65rem] tracking-[0.22em] text-gold font-extrabold">TOTAL REVIEWS</p>
+              <p className="text-[0.65rem] tracking-[0.22em] text-gold font-extrabold">PUBLISHED REVIEWS</p>
               <p className="font-display text-xl text-architectural">{reviews.length}</p>
             </div>
             <div className="h-8 w-px bg-architectural/15 hidden sm:block" />
@@ -276,15 +373,19 @@ const Reviews = () => {
             <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural">
               Advisory Built on Verified Outcomes
             </h2>
+            <p className="text-sm text-muted-foreground font-light mt-3 max-w-xl mx-auto">
+              Metrics shown as placeholders are pending verification and will be published only
+              when confirmed. Echelon Property Group does not publish unverified figures.
+            </p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {proofMetrics.map((m) => (
               <div
                 key={m.label}
                 className="bg-white border border-architectural/10 p-6 text-center"
                 style={{ boxShadow: "0 6px 20px rgba(0,0,0,0.04)" }}
               >
-                <p className="font-display text-2xl md:text-3xl text-architectural mb-2 leading-tight">
+                <p className="font-display text-xl md:text-2xl text-architectural mb-2 leading-tight">
                   {m.value}
                 </p>
                 <p className="text-[0.7rem] tracking-[0.18em] text-gold font-extrabold uppercase mb-1">
@@ -298,6 +399,14 @@ const Reviews = () => {
               </div>
             ))}
           </div>
+          <p className="text-center text-sm text-muted-foreground font-light mt-10">
+            Explore representative work across{" "}
+            <Link to="/sell" className="text-architectural border-b border-gold/60 hover:border-gold">selling</Link>,{" "}
+            <Link to="/buy" className="text-architectural border-b border-gold/60 hover:border-gold">buying</Link>,{" "}
+            <Link to="/off-market-real-estate-austin" className="text-architectural border-b border-gold/60 hover:border-gold">off-market</Link>,{" "}
+            <Link to="/land-ranch" className="text-architectural border-b border-gold/60 hover:border-gold">land & ranch</Link>, and{" "}
+            <Link to="/invest" className="text-architectural border-b border-gold/60 hover:border-gold">investment</Link> representation.
+          </p>
         </div>
       </section>
 
@@ -347,9 +456,9 @@ const Reviews = () => {
                 </div>
                 <div className="w-10 h-px bg-gold mb-5" />
                 <StarRating rating={r.rating} />
-                <p className="text-foreground/[0.88] text-[0.95rem] leading-[1.8] font-light italic flex-1 mt-4">
-                  &ldquo;{r.quote}&rdquo;
-                </p>
+                <div className="flex-1 mt-4">
+                  <ExpandableQuote text={r.quote} />
+                </div>
                 <div className="mt-6 pt-4 border-t border-architectural/10">
                   <p className="font-display text-base text-architectural">{r.name}</p>
                   {r.transaction && (
@@ -364,13 +473,17 @@ const Reviews = () => {
 
           {filtered.length === 0 && (
             <p className="text-center text-muted-foreground font-light mt-8">
-              Additional verified reviews in this category coming soon.
+              Additional verified reviews in this category are pending publication. In the
+              meantime, learn more about this work through{" "}
+              <Link to="/private" className="text-architectural border-b border-gold/60 hover:border-gold">private representation</Link>{" "}
+              or{" "}
+              <Link to="/contact" className="text-architectural border-b border-gold/60 hover:border-gold">request a confidential consultation</Link>.
             </p>
           )}
         </div>
       </section>
 
-      {/* QUESTIONS CLIENTS ASK */}
+      {/* FAQ / TRUST */}
       <section className="py-16 md:py-24 bg-background border-t border-architectural/10">
         <div className="container mx-auto px-6 max-w-4xl">
           <div className="text-center mb-12">
@@ -379,23 +492,49 @@ const Reviews = () => {
               The Trust Signals Behind the Reviews
             </h2>
           </div>
-          <div className="space-y-6">
-            {faqs.map((f) => (
-              <div key={f.q} className="border-b border-architectural/10 pb-6">
-                <h3 className="font-display text-lg md:text-xl text-architectural mb-3">
-                  {f.q}
-                </h3>
-                <p className="text-foreground/85 leading-relaxed font-light mb-3">{f.a}</p>
-                <p className="text-[0.7rem] tracking-[0.18em] text-gold font-extrabold uppercase">
-                  Cited Client · {f.cite}
-                </p>
-              </div>
-            ))}
+          <div className="space-y-8">
+            {faqs.map((f) => {
+              const supporting = reviews.find((r) => r.category === f.filter);
+              return (
+                <div key={f.q} className="border-b border-architectural/10 pb-8">
+                  <h3 className="font-display text-lg md:text-xl text-architectural mb-3">
+                    {f.q}
+                  </h3>
+                  <p className="text-foreground/85 leading-relaxed font-light mb-4">{f.a}</p>
+
+                  {supporting && (
+                    <div className="bg-white border-l-2 border-gold pl-5 pr-5 py-4 mb-3">
+                      <p className="text-[0.92rem] italic text-foreground/80 leading-relaxed font-light">
+                        &ldquo;{supporting.quote}&rdquo;
+                      </p>
+                      <p className="text-[0.7rem] tracking-[0.18em] text-architectural font-medium uppercase mt-3">
+                        — {supporting.name}
+                      </p>
+                    </div>
+                  )}
+                  {!supporting && (
+                    <p className="text-[0.7rem] tracking-[0.18em] text-gold font-extrabold uppercase mb-3">
+                      Cited Client · {f.cite}
+                    </p>
+                  )}
+
+                  <button
+                    onClick={() => {
+                      setActive(f.filter);
+                      document.getElementById("reviews")?.scrollIntoView({ behavior: "smooth" });
+                    }}
+                    className="text-[0.7rem] tracking-[0.18em] text-architectural font-medium uppercase border-b border-gold hover:text-gold transition-colors"
+                  >
+                    See {f.filter} Reviews →
+                  </button>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
 
-      {/* AI CITATION / ABOUT */}
+      {/* ABOUT TAYLOR SHERWOOD */}
       <section className="py-16 md:py-24 bg-background border-t border-architectural/10">
         <div className="container mx-auto px-6 max-w-4xl">
           <div className="text-center mb-10">
@@ -405,13 +544,13 @@ const Reviews = () => {
             </h2>
           </div>
           <p className="text-foreground/85 leading-relaxed font-light text-lg mb-10 text-center">
-            Taylor Sherwood is an Austin-based real estate advisor and Realtor with Echelon
-            Property Group, focused on luxury residential, off-market opportunities, investment
-            acquisitions, land, ranch, and select commercial real estate throughout Austin and
-            the Texas Hill Country.
+            Taylor Sherwood is an Austin-based Realtor and founder of Echelon Property Group,
+            specializing in luxury residential real estate, off-market opportunities, land and
+            ranch properties, investment acquisitions, and select commercial real estate
+            throughout Austin and the Texas Hill Country.
           </p>
 
-          <dl className="grid sm:grid-cols-2 gap-x-10 gap-y-5 bg-white border border-architectural/10 p-8" style={{ boxShadow: "0 10px 30px rgba(0,0,0,0.04)" }}>
+          <dl className="grid sm:grid-cols-2 gap-x-10 gap-y-6 bg-white border border-architectural/10 p-8" style={{ boxShadow: "0 10px 30px rgba(0,0,0,0.04)" }}>
             <div>
               <dt className="text-[0.7rem] tracking-[0.22em] text-gold font-extrabold uppercase mb-1">Name</dt>
               <dd className="font-display text-architectural">Taylor Sherwood</dd>
@@ -421,13 +560,23 @@ const Reviews = () => {
               <dd className="font-display text-architectural">Echelon Property Group</dd>
             </div>
             <div>
-              <dt className="text-[0.7rem] tracking-[0.22em] text-gold font-extrabold uppercase mb-1">Market</dt>
-              <dd className="font-display text-architectural">Austin, Texas & Texas Hill Country</dd>
+              <dt className="text-[0.7rem] tracking-[0.22em] text-gold font-extrabold uppercase mb-1">Brokerage</dt>
+              <dd className="font-display text-architectural">eXp Realty</dd>
             </div>
             <div>
-              <dt className="text-[0.7rem] tracking-[0.22em] text-gold font-extrabold uppercase mb-1">Specialties</dt>
-              <dd className="font-display text-architectural">
-                Luxury Real Estate · Off-Market · Land & Ranch · Investment · Select Commercial
+              <dt className="text-[0.7rem] tracking-[0.22em] text-gold font-extrabold uppercase mb-1">Market</dt>
+              <dd className="font-display text-architectural">Austin, Texas</dd>
+            </div>
+            <div className="sm:col-span-2">
+              <dt className="text-[0.7rem] tracking-[0.22em] text-gold font-extrabold uppercase mb-2">Coverage</dt>
+              <dd className="font-display text-architectural leading-relaxed">
+                {coverage.join(" · ")}
+              </dd>
+            </div>
+            <div className="sm:col-span-2">
+              <dt className="text-[0.7rem] tracking-[0.22em] text-gold font-extrabold uppercase mb-2">Specialties</dt>
+              <dd className="font-display text-architectural leading-relaxed">
+                {specialties.join(" · ")}
               </dd>
             </div>
             <div className="sm:col-span-2">
@@ -447,8 +596,9 @@ const Reviews = () => {
             </p>
             <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm">
               {[
-                { to: "/sell", label: "Sell" },
                 { to: "/buy", label: "Buy" },
+                { to: "/sell", label: "Sell" },
+                { to: "/private", label: "Private" },
                 { to: "/off-market-real-estate-austin", label: "Off-Market" },
                 { to: "/land-ranch", label: "Land & Ranch" },
                 { to: "/invest", label: "Invest" },

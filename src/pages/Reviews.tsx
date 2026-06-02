@@ -75,7 +75,7 @@ const reviews: Review[] = [
     source: "Verified Client",
     date: "2025",
     category: "Luxury Sellers",
-    transaction: "Sold in Barton Creek",
+    transaction: "Purchased and sold in Barton Creek",
     rating: 5,
     quote:
       "Taylor made selling our Barton Creek home seamless. His market knowledge and marketing strategy brought us multiple offers above asking within the first week.",

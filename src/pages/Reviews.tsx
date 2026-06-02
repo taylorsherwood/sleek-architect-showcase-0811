@@ -385,13 +385,13 @@ const Reviews = () => {
               </div>
             </div>
 
-            {/* RIGHT — portrait with offset accent card */}
+            {/* RIGHT — portrait with offset navy accent block */}
             <div className="order-1 lg:order-2 relative mx-auto w-full max-w-[460px]">
               <div
                 aria-hidden
-                className="absolute -bottom-4 -right-4 md:-bottom-6 md:-right-6 w-full h-full bg-architectural/90"
+                className="absolute -bottom-4 -right-4 md:-bottom-6 md:-right-6 w-full h-full bg-architectural"
               />
-              <div className="relative aspect-[4/5] overflow-hidden bg-architectural/5">
+              <div className="relative aspect-[4/5] overflow-hidden">
                 <img
                   src={taylorHeadshot}
                   alt="Taylor Sherwood, Austin luxury real estate advisor and founder of Echelon Property Group"

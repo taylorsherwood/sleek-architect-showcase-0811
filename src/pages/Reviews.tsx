@@ -1,4 +1,4 @@
-import { useState, lazy, Suspense, useMemo } from "react";
+import { useState, lazy, Suspense, useMemo, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import taylorHeadshot from "@/assets/taylor-headshot.webp";
 import TransactionsMap from "@/components/TransactionsMap";

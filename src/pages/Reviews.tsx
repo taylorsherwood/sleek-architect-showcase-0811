@@ -65,7 +65,7 @@ const reviews: Review[] = [
     source: "Verified Client",
     date: "2025",
     category: "Luxury Sellers",
-    transaction: "Sold in Northwest Hills",
+    transaction: "Purchased and sold in Northwest Hills",
     rating: 5,
     quote:
       "After a failed listing experience I was hesitant. Taylor showed me exactly what went wrong before and what he would do differently. That honesty earned my trust, and the sale.",

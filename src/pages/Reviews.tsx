@@ -729,6 +729,22 @@ const Reviews = () => {
                 {specialties.join(" · ")}
               </dd>
             </div>
+            <div>
+              <dt className="text-[0.7rem] tracking-[0.22em] text-gold font-extrabold uppercase mb-1">Phone</dt>
+              <dd className="font-display text-architectural">
+                <a href="tel:5126613843" className="hover:text-gold transition-colors">
+                  512.661.3843
+                </a>
+              </dd>
+            </div>
+            <div>
+              <dt className="text-[0.7rem] tracking-[0.22em] text-gold font-extrabold uppercase mb-1">Email</dt>
+              <dd className="font-display text-architectural">
+                <a href="mailto:taylor@echelonpropertygroup.com" className="hover:text-gold transition-colors">
+                  taylor@echelonpropertygroup.com
+                </a>
+              </dd>
+            </div>
             <div className="sm:col-span-2">
               <dt className="text-[0.7rem] tracking-[0.22em] text-gold font-extrabold uppercase mb-1">Website</dt>
               <dd className="font-display text-architectural">
@@ -784,14 +800,14 @@ const Reviews = () => {
           <div className="mt-10 flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3">
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-architectural text-background text-[0.75rem] tracking-[0.18em] font-medium uppercase hover:bg-gold hover:text-white transition-colors"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-primary-foreground text-[0.75rem] tracking-[0.18em] font-medium uppercase hover:bg-gold hover:text-white transition-colors"
             >
               Schedule a consultation
               <span aria-hidden>→</span>
             </Link>
             <a
               href="mailto:taylor@echelonpropertygroup.com"
-              className="inline-flex items-center justify-center px-8 py-4 border border-architectural/30 text-architectural text-[0.75rem] tracking-[0.18em] font-medium uppercase hover:bg-gold hover:text-white hover:border-gold transition-colors"
+              className="inline-flex items-center justify-center px-8 py-4 border border-primary/30 text-primary text-[0.75rem] tracking-[0.18em] font-medium uppercase hover:bg-gold hover:text-white hover:border-gold transition-colors"
             >
               Email Taylor
             </a>

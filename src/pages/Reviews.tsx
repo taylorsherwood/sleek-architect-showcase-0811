@@ -729,6 +729,22 @@ const Reviews = () => {
                 {specialties.join(" · ")}
               </dd>
             </div>
+            <div>
+              <dt className="text-[0.7rem] tracking-[0.22em] text-gold font-extrabold uppercase mb-1">Phone</dt>
+              <dd className="font-display text-architectural">
+                <a href="tel:5126613843" className="hover:text-gold transition-colors">
+                  512.661.3843
+                </a>
+              </dd>
+            </div>
+            <div>
+              <dt className="text-[0.7rem] tracking-[0.22em] text-gold font-extrabold uppercase mb-1">Email</dt>
+              <dd className="font-display text-architectural">
+                <a href="mailto:taylor@echelonpropertygroup.com" className="hover:text-gold transition-colors">
+                  taylor@echelonpropertygroup.com
+                </a>
+              </dd>
+            </div>
             <div className="sm:col-span-2">
               <dt className="text-[0.7rem] tracking-[0.22em] text-gold font-extrabold uppercase mb-1">Website</dt>
               <dd className="font-display text-architectural">

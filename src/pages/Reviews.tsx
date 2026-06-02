@@ -454,18 +454,18 @@ const Reviews = () => {
               Client Experiences
             </p>
             <h2 className="font-display font-normal text-architectural leading-[1.1] text-4xl md:text-5xl">
-              Considering a move?{" "}
-              <span className="block italic text-architectural/85">Hear from those who already did.</span>
+              What it's like to{" "}
+              <span className="block italic text-architectural/85">work with Taylor.</span>
             </h2>
             <div className="mt-6 flex items-center justify-center gap-2">
               <StarRating rating={5} />
               <span className="text-architectural font-medium">5.0</span>
             </div>
             <p className="mt-3 text-sm text-foreground/70 font-light">
-              {reviews.length}+ verified reviews · Google, Zillow, Realtor.com & RealSatisfied
+              Verified reviews from Google, Zillow, Realtor.com & RealSatisfied
             </p>
-            <p className="mt-6 text-[0.95rem] text-foreground/75 font-light leading-relaxed">
-              Pick the question that's actually on your mind. The reviews that speak to it are right here.
+            <p className="mt-6 text-[0.95rem] text-foreground/75 font-light leading-relaxed max-w-2xl mx-auto">
+              Real experiences from clients who trusted Echelon Property Group to represent one of their most important decisions.
             </p>
           </div>
 

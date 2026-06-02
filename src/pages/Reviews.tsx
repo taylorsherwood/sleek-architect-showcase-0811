@@ -389,7 +389,7 @@ const Reviews = () => {
             <div className="order-1 lg:order-2 relative mx-auto w-full max-w-[460px]">
               <div
                 aria-hidden
-                className="absolute -bottom-4 -right-4 md:-bottom-6 md:-right-6 w-full h-full bg-architectural"
+                className="absolute -bottom-4 -right-4 md:-bottom-6 md:-right-6 w-full h-full bg-primary"
               />
               <div className="relative aspect-[4/5] overflow-hidden">
                 <img

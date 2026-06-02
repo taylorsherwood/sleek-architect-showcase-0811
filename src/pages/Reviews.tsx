@@ -62,6 +62,7 @@ const reviews: Review[] = [
     date: "2025",
     category: "Luxury Sellers",
     transaction: "Sold in Northwest Hills",
+    rating: 5,
     quote:
       "After a failed listing experience I was hesitant. Taylor showed me exactly what went wrong before and what he would do differently. That honesty earned my trust, and the sale.",
   },
@@ -71,6 +72,7 @@ const reviews: Review[] = [
     date: "2025",
     category: "Luxury Sellers",
     transaction: "Sold in Barton Creek",
+    rating: 5,
     quote:
       "Taylor made selling our Barton Creek home seamless. His market knowledge and marketing strategy brought us multiple offers above asking within the first week.",
   },
@@ -80,6 +82,7 @@ const reviews: Review[] = [
     date: "2025",
     category: "Luxury Buyers",
     transaction: "Purchased in Austin",
+    rating: 5,
     quote:
       "Taylor really understood what I was looking for and showed me options that fit my criteria. When I was ready to make an offer, he moved quickly to meet a tight closing date. I've already recommended Taylor to my friends.",
   },
@@ -89,6 +92,7 @@ const reviews: Review[] = [
     date: "2025",
     category: "Communication",
     transaction: "Sold in Westlake Hills",
+    rating: 5,
     quote:
       "From staging to close, every step was handled with professionalism and care. We'd recommend anyone thinking about buying or selling in Austin to call Taylor first.",
   },
@@ -98,6 +102,7 @@ const reviews: Review[] = [
     date: "2025",
     category: "Investors",
     transaction: "Investment Property, Austin",
+    rating: 5,
     quote:
       "Taylor's understanding of Austin's investment landscape helped us identify a property that exceeded our return expectations. His analysis was institutional-grade and his negotiation saved us significantly on the acquisition.",
   },
@@ -107,6 +112,7 @@ const reviews: Review[] = [
     date: "2025",
     category: "Market Knowledge",
     transaction: "Sold in Tarrytown",
+    rating: 5,
     quote:
       "Taylor's knowledge of the Austin luxury market is exceptional. He knew the comps, the trends, and which streets were commanding premiums before we even asked.",
   },
@@ -116,6 +122,7 @@ const reviews: Review[] = [
     date: "2025",
     category: "Negotiation",
     transaction: "Purchased and sold in Barton Creek",
+    rating: 5,
     quote:
       "Taylor is knowledgeable, responsive, and genuinely cares about getting the best results for his clients. The entire process was smooth and stress-free.",
   },

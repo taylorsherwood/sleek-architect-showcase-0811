@@ -784,14 +784,14 @@ const Reviews = () => {
           <div className="mt-10 flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3">
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-architectural text-background text-[0.75rem] tracking-[0.18em] font-medium uppercase hover:bg-gold hover:text-white transition-colors"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-primary-foreground text-[0.75rem] tracking-[0.18em] font-medium uppercase hover:bg-gold hover:text-white transition-colors"
             >
               Schedule a consultation
               <span aria-hidden>→</span>
             </Link>
             <a
               href="mailto:taylor@echelonpropertygroup.com"
-              className="inline-flex items-center justify-center px-8 py-4 border border-architectural/30 text-architectural text-[0.75rem] tracking-[0.18em] font-medium uppercase hover:bg-gold hover:text-white hover:border-gold transition-colors"
+              className="inline-flex items-center justify-center px-8 py-4 border border-primary/30 text-primary text-[0.75rem] tracking-[0.18em] font-medium uppercase hover:bg-gold hover:text-white hover:border-gold transition-colors"
             >
               Email Taylor
             </a>

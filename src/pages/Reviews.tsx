@@ -33,6 +33,26 @@ type Review = {
     | "Communication";
   transaction?: string;
   quote: string;
+  rating: number;
+};
+
+const StarRating = ({ rating }: { rating: number }) => {
+  return (
+    <div className="flex items-center gap-0.5" aria-label={`${rating} out of 5 stars`}>
+      {Array.from({ length: 5 }).map((_, i) => (
+        <svg
+          key={i}
+          className="w-4 h-4"
+          viewBox="0 0 20 20"
+          fill={i < rating ? "#b9a06c" : "none"}
+          stroke="#b9a06c"
+          strokeWidth="1.2"
+        >
+          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+        </svg>
+      ))}
+    </div>
+  );
 };
 
 const reviews: Review[] = [
@@ -42,6 +62,7 @@ const reviews: Review[] = [
     date: "2025",
     category: "Luxury Sellers",
     transaction: "Sold in Northwest Hills",
+    rating: 5,
     quote:
       "After a failed listing experience I was hesitant. Taylor showed me exactly what went wrong before and what he would do differently. That honesty earned my trust, and the sale.",
   },
@@ -51,6 +72,7 @@ const reviews: Review[] = [
     date: "2025",
     category: "Luxury Sellers",
     transaction: "Sold in Barton Creek",
+    rating: 5,
     quote:
       "Taylor made selling our Barton Creek home seamless. His market knowledge and marketing strategy brought us multiple offers above asking within the first week.",
   },
@@ -60,6 +82,7 @@ const reviews: Review[] = [
     date: "2025",
     category: "Luxury Buyers",
     transaction: "Purchased in Austin",
+    rating: 5,
     quote:
       "Taylor really understood what I was looking for and showed me options that fit my criteria. When I was ready to make an offer, he moved quickly to meet a tight closing date. I've already recommended Taylor to my friends.",
   },
@@ -69,6 +92,7 @@ const reviews: Review[] = [
     date: "2025",
     category: "Communication",
     transaction: "Sold in Westlake Hills",
+    rating: 5,
     quote:
       "From staging to close, every step was handled with professionalism and care. We'd recommend anyone thinking about buying or selling in Austin to call Taylor first.",
   },
@@ -78,6 +102,7 @@ const reviews: Review[] = [
     date: "2025",
     category: "Investors",
     transaction: "Investment Property, Austin",
+    rating: 5,
     quote:
       "Taylor's understanding of Austin's investment landscape helped us identify a property that exceeded our return expectations. His analysis was institutional-grade and his negotiation saved us significantly on the acquisition.",
   },
@@ -87,6 +112,7 @@ const reviews: Review[] = [
     date: "2025",
     category: "Market Knowledge",
     transaction: "Sold in Tarrytown",
+    rating: 5,
     quote:
       "Taylor's knowledge of the Austin luxury market is exceptional. He knew the comps, the trends, and which streets were commanding premiums before we even asked.",
   },
@@ -96,6 +122,7 @@ const reviews: Review[] = [
     date: "2025",
     category: "Negotiation",
     transaction: "Purchased and sold in Barton Creek",
+    rating: 5,
     quote:
       "Taylor is knowledgeable, responsive, and genuinely cares about getting the best results for his clients. The entire process was smooth and stress-free.",
   },
@@ -209,13 +236,13 @@ const Reviews = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
             <a
               href="#reviews"
-              className="inline-flex items-center justify-center px-7 py-3 bg-architectural text-background text-sm tracking-[0.18em] font-medium hover:bg-architectural/90 transition-colors"
+              className="inline-flex items-center justify-center px-7 py-3 bg-architectural text-background text-sm tracking-[0.18em] font-medium hover:bg-gold hover:text-white transition-colors"
             >
               READ CLIENT REVIEWS
             </a>
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center px-7 py-3 border border-architectural/30 text-architectural text-sm tracking-[0.18em] font-medium hover:bg-architectural hover:text-background transition-colors"
+              className="inline-flex items-center justify-center px-7 py-3 border border-architectural/30 text-architectural text-sm tracking-[0.18em] font-medium hover:bg-gold hover:text-white transition-colors"
             >
               SCHEDULE A PRIVATE CONSULTATION
             </Link>
@@ -225,12 +252,12 @@ const Reviews = () => {
           <div className="mt-12 inline-flex flex-wrap items-center justify-center gap-x-8 gap-y-3 px-6 py-4 border-y border-architectural/10">
             <div className="text-left">
               <p className="text-[0.65rem] tracking-[0.22em] text-gold font-extrabold">AVERAGE RATING</p>
-              <p className="font-display text-xl text-architectural">TBD</p>
+              <div className="mt-1"><StarRating rating={5} /></div>
             </div>
             <div className="h-8 w-px bg-architectural/15 hidden sm:block" />
             <div className="text-left">
               <p className="text-[0.65rem] tracking-[0.22em] text-gold font-extrabold">TOTAL REVIEWS</p>
-              <p className="font-display text-xl text-architectural">TBD</p>
+              <p className="font-display text-xl text-architectural">{reviews.length}</p>
             </div>
             <div className="h-8 w-px bg-architectural/15 hidden sm:block" />
             <div className="text-left">
@@ -319,7 +346,8 @@ const Reviews = () => {
                   </span>
                 </div>
                 <div className="w-10 h-px bg-gold mb-5" />
-                <p className="text-foreground/[0.88] text-[0.95rem] leading-[1.8] font-light italic flex-1">
+                <StarRating rating={r.rating} />
+                <p className="text-foreground/[0.88] text-[0.95rem] leading-[1.8] font-light italic flex-1 mt-4">
                   &ldquo;{r.quote}&rdquo;
                 </p>
                 <div className="mt-6 pt-4 border-t border-architectural/10">

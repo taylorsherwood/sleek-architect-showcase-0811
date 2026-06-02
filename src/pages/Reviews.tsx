@@ -1,4 +1,4 @@
-import { useState, lazy, Suspense, useMemo } from "react";
+import { useState, lazy, Suspense, useMemo, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import taylorHeadshot from "@/assets/taylor-headshot.webp";
 import TransactionsMap from "@/components/TransactionsMap";
@@ -159,11 +159,27 @@ const filters = [
 
 type Filter = (typeof filters)[number];
 
-const proofMetrics: { label: string; value: string }[] = [
-  { label: "Career Sales Volume", value: "$125M+" },
-  { label: "Last 12 Months", value: "$44M" },
+const proofMetrics: {
+  label: string;
+  value: string;
+  animate?: { from: number; to: number; decimals: number; prefix: string; suffix: string };
+}[] = [
+  {
+    label: "Career Sales Volume",
+    value: "$125M+",
+    animate: { from: 1, to: 125, decimals: 0, prefix: "$", suffix: "M+" },
+  },
+  {
+    label: "Last 12 Months",
+    value: "$44M",
+    animate: { from: 1, to: 44, decimals: 0, prefix: "$", suffix: "M" },
+  },
   { label: "Average Sale", value: "$1.85M" },
-  { label: "Top Sale", value: "$14.95M" },
+  {
+    label: "Top Sale",
+    value: "$14.95M",
+    animate: { from: 1, to: 14.95, decimals: 2, prefix: "$", suffix: "M" },
+  },
 ];
 
 
@@ -281,6 +297,65 @@ const ExpandableQuote = ({ text }: { text: string }) => {
         </button>
       )}
     </div>
+  );
+};
+
+const CountUp = ({
+  from,
+  to,
+  decimals,
+  prefix,
+  suffix,
+  duration = 1800,
+}: {
+  from: number;
+  to: number;
+  decimals: number;
+  prefix: string;
+  suffix: string;
+  duration?: number;
+}) => {
+  const ref = useRef<HTMLSpanElement>(null);
+  const [value, setValue] = useState(from);
+  const startedRef = useRef(false);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    if (typeof window !== "undefined" && window.matchMedia?.("(prefers-reduced-motion: reduce)").matches) {
+      setValue(to);
+      return;
+    }
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !startedRef.current) {
+            startedRef.current = true;
+            const start = performance.now();
+            const tick = (now: number) => {
+              const elapsed = now - start;
+              const t = Math.min(1, elapsed / duration);
+              const eased = 1 - Math.pow(1 - t, 3);
+              setValue(from + (to - from) * eased);
+              if (t < 1) requestAnimationFrame(tick);
+            };
+            requestAnimationFrame(tick);
+            observer.disconnect();
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [from, to, duration]);
+
+  return (
+    <span ref={ref}>
+      {prefix}
+      {value.toFixed(decimals)}
+      {suffix}
+    </span>
   );
 };
 
@@ -411,8 +486,8 @@ const Reviews = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-architectural/10">
             {proofMetrics.map((m) => (
               <div key={m.label} className="text-center py-8 md:py-12 px-4">
-                <p className="font-display text-architectural text-3xl md:text-4xl leading-none">
-                  {m.value}
+                <p className="font-display text-architectural text-3xl md:text-4xl leading-none tabular-nums">
+                  {m.animate ? <CountUp {...m.animate} /> : m.value}
                 </p>
                 <p className="mt-3 text-[0.65rem] tracking-[0.22em] text-architectural/60 font-medium uppercase">
                   {m.label}

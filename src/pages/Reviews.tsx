@@ -115,7 +115,7 @@ const reviews: Review[] = [
     source: "Verified Client",
     date: "2025",
     category: "Market Knowledge",
-    transaction: "Sold in Tarrytown",
+    transaction: "Purchased and sold in Tarrytown",
     rating: 5,
     quote:
       "Taylor's knowledge of the Austin luxury market is exceptional. He knew the comps, the trends, and which streets were commanding premiums before we even asked.",

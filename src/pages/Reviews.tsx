@@ -159,11 +159,27 @@ const filters = [
 
 type Filter = (typeof filters)[number];
 
-const proofMetrics: { label: string; value: string }[] = [
-  { label: "Career Sales Volume", value: "$125M+" },
-  { label: "Last 12 Months", value: "$44M" },
+const proofMetrics: {
+  label: string;
+  value: string;
+  animate?: { from: number; to: number; decimals: number; prefix: string; suffix: string };
+}[] = [
+  {
+    label: "Career Sales Volume",
+    value: "$125M+",
+    animate: { from: 1, to: 125, decimals: 0, prefix: "$", suffix: "M+" },
+  },
+  {
+    label: "Last 12 Months",
+    value: "$44M",
+    animate: { from: 1, to: 44, decimals: 0, prefix: "$", suffix: "M" },
+  },
   { label: "Average Sale", value: "$1.85M" },
-  { label: "Top Sale", value: "$14.95M" },
+  {
+    label: "Top Sale",
+    value: "$14.95M",
+    animate: { from: 1, to: 14.95, decimals: 2, prefix: "$", suffix: "M" },
+  },
 ];
 
 

@@ -135,7 +135,7 @@ const reviews: Review[] = [
     source: "Verified Client",
     date: "2025",
     category: "Luxury Sellers",
-    transaction: "Sold in Austin",
+    transaction: "Purchased and sold in Austin",
     rating: 5,
     quote:
       "Taylor's attention to detail and marketing approach are truly exceptional. From staging to photography to negotiation, every step reflected true professionalism and commitment. Highly recommend! Will absolutely use him for future endeavors no question about it.",

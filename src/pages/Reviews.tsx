@@ -129,7 +129,18 @@ const reviews: Review[] = [
     quote:
       "Taylor is knowledgeable, responsive, and genuinely cares about getting the best results for his clients. The entire process was smooth and stress-free.",
   },
+  {
+    name: "Cynthia Hampton",
+    source: "Verified Client",
+    date: "2025",
+    category: "Luxury Sellers",
+    transaction: "Sold in Austin",
+    rating: 5,
+    quote:
+      "Taylor's attention to detail and marketing approach are truly exceptional. From staging to photography to negotiation, every step reflected true professionalism and commitment. Highly recommend! Will absolutely use him for future endeavors no question about it.",
+  },
 ];
+
 
 const filters = [
   "All Reviews",

@@ -486,8 +486,8 @@ const Reviews = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-architectural/10">
             {proofMetrics.map((m) => (
               <div key={m.label} className="text-center py-8 md:py-12 px-4">
-                <p className="font-display text-architectural text-3xl md:text-4xl leading-none">
-                  {m.value}
+                <p className="font-display text-architectural text-3xl md:text-4xl leading-none tabular-nums">
+                  {m.animate ? <CountUp {...m.animate} /> : m.value}
                 </p>
                 <p className="mt-3 text-[0.65rem] tracking-[0.22em] text-architectural/60 font-medium uppercase">
                   {m.label}

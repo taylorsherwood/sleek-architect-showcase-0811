@@ -1,6 +1,7 @@
 import { useState, lazy, Suspense, useMemo } from "react";
 import { Link } from "react-router-dom";
 import taylorHeadshot from "@/assets/taylor-headshot.webp";
+import TransactionsMap from "@/components/TransactionsMap";
 import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, {
@@ -417,6 +418,28 @@ const Reviews = () => {
                 </p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* TRANSACTIONS MAP */}
+      <section className="py-20 md:py-28 bg-secondary border-t border-architectural/10">
+        <div className="container mx-auto px-6">
+          <div className="max-w-5xl mx-auto text-center">
+            <p className="text-[0.7rem] tracking-[0.28em] text-gold font-extrabold uppercase mb-5">
+              Selected 2025 Transactions
+            </p>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-normal text-architectural mb-5 leading-tight">
+              Recent Transactions Across Austin
+            </h2>
+            <p className="text-muted-foreground text-[15px] leading-relaxed max-w-2xl mx-auto mb-3">
+              A curated view of transactions representing over $50M+ in 2025 sales volume across Austin's luxury, off-market, and investment segments.
+            </p>
+            <p className="text-muted-foreground/60 text-[13px] leading-relaxed max-w-xl mx-auto mb-14 italic">
+              Additional transactions and long-term client relationships extend beyond what is shown here.
+            </p>
+
+            <TransactionsMap />
           </div>
         </div>
       </section>

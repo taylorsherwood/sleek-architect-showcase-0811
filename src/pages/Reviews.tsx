@@ -161,9 +161,9 @@ type Filter = (typeof filters)[number];
 
 const proofMetrics: { label: string; value: string }[] = [
   { label: "Career Sales Volume", value: "$125M+" },
-  { label: "Last 12 Months", value: "TBD" },
-  { label: "Average Sale", value: "TBD" },
-  { label: "Top Sale", value: "TBD" },
+  { label: "Last 12 Months", value: "$44M" },
+  { label: "Average Sale", value: "$1.85M" },
+  { label: "Top Sale", value: "$14.95M" },
 ];
 
 

@@ -359,7 +359,7 @@ const Reviews = () => {
             <div className="h-8 w-px bg-architectural/15 hidden sm:block" />
             <div className="text-left">
               <p className="text-[0.65rem] tracking-[0.22em] text-gold font-extrabold">SOURCES</p>
-              <p className="font-display text-sm text-architectural">Google · Zillow · Realtor.com · LinkedIn</p>
+              <p className="font-display text-sm text-architectural">Google · Zillow · Realtor.com · RealSatisfied · LinkedIn</p>
             </div>
           </div>
         </div>

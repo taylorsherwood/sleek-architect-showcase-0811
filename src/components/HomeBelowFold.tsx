@@ -456,15 +456,15 @@ const TestimonialsSection = () => {
       gsap.set(".tsplit-attribution", { opacity: 0, y: 12, filter: "blur(6px)" });
       gsap.set(".tsplit-overlay", { opacity: 1, y: 0, filter: "blur(0px)" });
 
-      // Pin runs longer now: first ~33% of progress drives the split-reveal,
-      // remaining ~67% drives a scroll-controlled walk through the first
-      // four testimonials before the page is released. Auto-rotation takes
-      // over for any user who lingers in the pinned end-state.
+      // Pin runs through three testimonials, then releases. First ~30% of
+      // progress drives the split-reveal, remaining ~70% walks through the
+      // first three testimonials before the page is released. Auto-rotation
+      // takes over for any user who lingers in the pinned end-state.
       gsap.timeline({
         scrollTrigger: {
           trigger: root,
           start: "top top",
-          end: "+=520%",
+          end: "+=380%",
           pin: true,
           pinSpacing: true,
           scrub: 2,
@@ -476,19 +476,17 @@ const TestimonialsSection = () => {
               hasOpenedRef.current = true;
               setRevealed(true);
             }
-            // Scroll-driven walk through first four testimonials.
+            // Scroll-driven walk through first three testimonials.
             // 0.00 – 0.22 = split-reveal phase (testimonial 0 visible)
-            // 0.22 – 0.45 = testimonial 0 holds
-            // 0.45 – 0.62 = testimonial 1
-            // 0.62 – 0.79 = testimonial 2
-            // 0.79 – 1.00 = testimonial 3, then release
+            // 0.22 – 0.50 = testimonial 0 holds
+            // 0.50 – 0.75 = testimonial 1
+            // 0.75 – 1.00 = testimonial 2, then release
             const p = self.progress;
             let target = 0;
-            if (p >= 0.79) target = 3;
-            else if (p >= 0.62) target = 2;
-            else if (p >= 0.45) target = 1;
+            if (p >= 0.75) target = 2;
+            else if (p >= 0.50) target = 1;
             else target = 0;
-            setActive((prev) => (prev > 3 ? prev : target));
+            setActive((prev) => (prev > 2 ? prev : target));
           },
         },
       })
@@ -497,9 +495,9 @@ const TestimonialsSection = () => {
         .to(".tsplit-right", { xPercent: 100, ease: "expo.inOut", duration: 0.6 }, 0.35)
         .to(".tsplit-line", { opacity: 1, y: 0, filter: "blur(0px)", ease: "power3.out", stagger: 0.15, duration: 0.6 }, 0.65)
         .to(".tsplit-attribution", { opacity: 1, y: 0, filter: "blur(0px)", ease: "power2.out", duration: 0.5 }, 1.05)
-        // Long tail keeps the section pinned long enough for testimonials
-        // 0 → 3 to each have time to read before release.
-        .to({}, { duration: 3.4 });
+        // Tail keeps the section pinned long enough for testimonials
+        // 0 → 2 to each have time to read before release.
+        .to({}, { duration: 2.2 });
     }, root);
 
     return () => {

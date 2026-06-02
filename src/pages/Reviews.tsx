@@ -147,14 +147,13 @@ const filters = [
 
 type Filter = (typeof filters)[number];
 
-const proofMetrics: { label: string; value: string; note?: string }[] = [
-  { label: "Transactions Represented", value: "TBD", note: "Verified figure pending" },
+const proofMetrics: { label: string; value: string }[] = [
+  { label: "Career Sales Volume", value: "$125M+" },
   { label: "Last 12 Months", value: "TBD" },
-  { label: "Average Transaction Value", value: "TBD" },
-  { label: "Highest Sale", value: "TBD" },
-  { label: "Austin + Hill Country Focus", value: "Primary Market" },
-  { label: "Off-Market Opportunities Sourced", value: "TBD" },
+  { label: "Average Sale", value: "TBD" },
+  { label: "Top Sale", value: "TBD" },
 ];
+
 
 const faqs: { q: string; a: string; cite: string; filter: Filter }[] = [
   {

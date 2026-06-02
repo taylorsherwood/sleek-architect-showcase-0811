@@ -25,6 +25,7 @@ import blogAustinRedevelopment from "@/assets/blog/austin-redevelopment-opportun
 import blogAustinRanchLand from "@/assets/blog/austin-ranch-land-for-sale.webp";
 import blogAustinInfillDevelopment from "@/assets/blog/austin-infill-development.jpg";
 import blogExoticRanchHillCountry from "@/assets/blog/exotic-ranch-hill-country.webp.asset.json";
+import blogWildlifeAgExemption from "@/assets/blog/wildlife-ag-exemption-texas-longhorn.jpg.asset.json";
 
 
 
@@ -52,6 +53,175 @@ export interface BlogPost {
 const LINK = "text-foreground underline hover:text-muted-foreground";
 
 export const blogPosts: BlogPost[] = [
+  {
+    id: "wildlife-exemption-vs-ag-exemption-texas",
+    title: "Wildlife Exemptions vs Agricultural Exemptions in Texas: What Ranch Owners Need to Know",
+    metaTitle: "Wildlife Exemption vs Ag Exemption Texas: Key Differences for Landowners",
+    excerpt: "Learn the differences between wildlife exemptions and agricultural exemptions in Texas, including eligibility requirements, tax implications, acreage considerations, and how property owners can transition from agricultural use to wildlife management.",
+    author: "Taylor Sherwood",
+    date: "2026-06-02",
+    readTime: "12 min read",
+    category: "LAND & RANCH",
+    image: blogWildlifeAgExemption.url,
+    heroImage: blogWildlifeAgExemption.url,
+    imageAlt: "Texas Longhorn at golden hour on a Hill Country ranch with sun rays through the trees",
+    imageCaption: "A Texas Longhorn at sunset on a Hill Country ranch. Special-use valuations protect the productive value of rural land across Gillespie, Kerr, Llano, Burnet, and surrounding counties.",
+    content: `
+Texas ranch buyers often misunderstand "ag exempt" status, but the state actually offers special-use valuations, not true exemptions, that tax land based on productive capacity rather than market value. This guide clarifies the critical differences between wildlife management and agricultural valuations, helping Hill Country ranch owners and investors protect significant tax advantages and avoid costly rollback penalties when buying or selling rural land.
+
+If you've spent any time evaluating ranches in the Texas Hill Country, you've almost certainly heard the phrase "ag exempt" used to describe a property's tax status. It sounds simple enough. But that shorthand glosses over something buyers need to understand clearly before signing a contract: there is no such thing as an agricultural exemption in Texas property tax law.
+
+What actually exists are special-use valuations. These are legal mechanisms that allow qualifying land to be taxed based on its productive capacity rather than its market value. The distinction is not just semantic. It has real financial and legal consequences for anyone buying, selling, or holding rural land in Texas.
+
+In markets like Fredericksburg, Kerrville, and Johnson City, where Hill Country ranch land has seen substantial appreciation over recent years, the gap between a property's market value and its productive value assessment can be dramatic. A 200-acre ranch that carries a market value in the millions may be taxed on a productive value a fraction of that size. Losing that valuation status, or triggering what's known as a rollback tax, can create a significant and unexpected liability.
+
+This guide is written for buyers evaluating rural land in Texas, not as a legal or tax treatise, but as a practical advisory framework. Whether you're looking at a working cattle operation outside Llano, a hunting property near Mason, or a lifestyle ranch in the Fredericksburg corridor, understanding how these valuations work is fundamental to understanding what you're actually buying.
+
+## Special Valuations, Not Exemptions: Getting the Language Right
+
+A tax exemption eliminates a tax obligation entirely or reduces the taxable value of a property by a fixed amount. A special-use valuation does something different: it changes the basis on which a property is assessed.
+
+Under the Texas Property Tax Code, most real property is assessed at market value, meaning what a willing buyer would pay a willing seller in an arm's-length transaction. Special-use valuations break from that standard by assessing land based on its productive capacity, essentially what the land can generate through its qualifying use, whether that's cattle grazing, hay production, or wildlife management.
+
+Two separate provisions govern this in Texas law. Agricultural valuation is authorized under Texas Property Tax Code Section 23.51, commonly referred to as "1-d-1." Wildlife management valuation is authorized under Section 23.521 as a subset of agricultural valuation. Both calculate taxable value based on productive use rather than market value.
+
+In practical terms, this matters enormously in high-demand markets. Consider a 300-acre Hill Country property near Fredericksburg. At current market values for that corridor, the land might be assessed at several million dollars under standard market-value appraisal. Under an active agricultural or wildlife management valuation, the taxable value could be a small fraction of that figure, with annual tax savings that compound significantly over time.
+
+That gap is precisely why these valuations are so consequential in Hill Country ranch transactions, and why buyers need to understand exactly what they're inheriting when a property carries one.
+
+The other reason language matters: when buyers assume a property is "exempt," they sometimes also assume the status is permanent, transferable, and effortless to maintain. None of those assumptions are reliable. A special-use valuation must be earned, maintained through ongoing qualifying activity, and in some cases re-established after a change in ownership.
+
+Getting the framework right from the start shapes how you evaluate every other aspect of the transaction.
+
+## Agricultural Valuation: Requirements and Ongoing Obligations
+
+Agricultural valuation under Texas Tax Code Section 23.51 requires that land be devoted principally to agricultural use for five of the preceding seven years. That history of use must be genuine and ongoing, not nominal or token.
+
+Qualifying agricultural uses include livestock production, crop farming, orchard cultivation, hay production, beekeeping, and timber production. The land doesn't need to be commercially profitable, but the use must be real and consistent. A few goats on 500 acres is unlikely to satisfy a county appraisal district looking for evidence of genuine agricultural activity.
+
+One nuance that surprises many buyers: there is no single statewide standard for minimum acreage or stocking rates. Each county appraisal district sets its own requirements. In Hill Country counties, minimum acreage for livestock-based agricultural valuation commonly falls in the range of 10 to 20 acres, but that varies by county and by use type. A hay operation in Llano County may be evaluated under different standards than the same operation in Gillespie County.
+
+This means that before assuming a property qualifies, buyers should contact the relevant county appraisal district directly to understand the local standards. What worked for the seller may not automatically work for the buyer, particularly if the buyer intends to change the nature of the operation.
+
+Documentation is also a real consideration. Appraisal districts may request lease agreements for grazing operations, receipts for agricultural inputs, evidence of hay sales, or records of livestock inventory. Properties with well-documented agricultural histories are in a stronger position than those where the qualifying use has been loosely maintained.
+
+When agricultural use lapses or is discontinued, the land becomes subject to a rollback tax. That rollback recaptures the difference between what was paid under the special valuation and what would have been owed at market value, assessed over a lookback period. Texas law in this area has seen legislative changes, including a 2019 reduction in the rollback period for certain changes in use. Buyers and their advisors should verify the current rollback window with the Texas Comptroller's guidance or a Texas property tax professional, as the applicable period depends on the nature of the change in use. We address rollback taxes and land investment risk in more detail in a later section.
+
+## Wildlife Management Valuation: How It Actually Works
+
+Wildlife management valuation is one of the most misunderstood concepts in Texas ranch real estate. The most critical thing to understand is this: it is not a standalone status that can be applied to raw land.
+
+Wildlife management valuation is a conversion from an existing agricultural valuation. Land must already qualify for and hold an agricultural valuation before an owner can elect to transition to wildlife management use. A buyer who purchases raw land without an agricultural history cannot simply declare wildlife management intent and expect to receive a special valuation. The underlying agricultural qualification must exist first.
+
+Once that foundation is in place, the landowner must actively implement at least three of seven wildlife management practices recognized by Texas Parks and Wildlife each year. These seven practices are:
+
+- **Habitat control.** Active management of vegetation, brush, or land features to support native wildlife species.
+- **Erosion control.** Practices that prevent soil loss and maintain land productivity for wildlife habitat.
+- **Predator management.** Documented efforts to control predator populations that threaten native wildlife.
+- **Supplemental water.** Installation and maintenance of water sources such as water troughs, tanks, or guzzlers for wildlife use.
+- **Supplemental food.** Providing food plots, feeders, or other food sources to support wildlife populations.
+- **Supplemental shelter.** Creating or maintaining brush piles, nesting boxes, or other structures that provide cover for wildlife.
+- **Census and monitoring.** Systematic observation and documentation of wildlife populations on the property, including deer surveys, game camera data, or other monitoring methods.
+
+Passive wildlife presence does not qualify. The practices must be active, documented, and consistent. A landowner who simply has deer on the property and does nothing structured to manage them will not satisfy the requirement.
+
+A written Wildlife Management Plan must be submitted to the county appraisal district. The depth of review varies by county. Mason County and Kimble County, for example, have established processes for reviewing these plans, and landowners in those areas should expect meaningful scrutiny. Annual activity logs documenting which practices were implemented and when are typically required to maintain the valuation year over year.
+
+Texas Parks and Wildlife Department wildlife biologists provide free technical assistance to landowners developing management plans. This is a genuine and underutilized resource. Working with a TPWD biologist not only helps ensure the plan meets state standards but also adds credibility when the plan is submitted to the appraisal district. Buyers interested in <a href="/blog/exotic-ranch-hill-country-buyer-guide" class="${LINK}">exotic ranch properties in the Hill Country</a> will find this technical assistance especially valuable during due diligence.
+
+## Making the Transition from Agricultural to Wildlife Management Use
+
+The transition from agricultural valuation to wildlife management valuation is a formal process, not an informal one. It requires submitting an application and a written Wildlife Management Plan to the county appraisal district, typically by a specific annual deadline. Most counties require applications to be submitted by April 30th of the tax year, though buyers should confirm the deadline with their specific county.
+
+Many Hill Country ranch owners make this transition for practical reasons. Maintaining an active livestock operation requires ongoing labor, infrastructure, and management attention. For buyers who want to use the land for hunting, habitat restoration, or conservation purposes, wildlife management valuation offers a way to preserve the tax benefit without the overhead of a working agricultural operation.
+
+A deer hunting property near Johnson City or a cedar restoration project outside Kerrville can qualify for wildlife management valuation if the owner implements the required practices and maintains the documentation. That alignment between actual use and tax status is one reason wildlife management ranches have become increasingly common across the Hill Country.
+
+For buyers, the transition history of a property matters. If a seller recently converted from agricultural to wildlife management valuation, or if the agricultural use history underlying the valuation is thin, the new owner may face additional scrutiny from the appraisal district after the sale. Appraisal districts have the authority to re-evaluate a property's valuation status after a change in ownership, particularly if there are questions about whether the qualifying use is being continued.
+
+Buyers should request the existing Wildlife Management Plan and any activity logs as part of due diligence. Review them carefully. A well-documented plan with several years of activity records is a meaningful asset. A plan that was hastily assembled before a sale is a risk factor.
+
+If the current plan is thin or the agricultural history is unclear, buyers should factor in the cost and time required to establish or strengthen the valuation. That may include hiring a wildlife biologist, installing supplemental water or feeding infrastructure, and building a credible documentation history over time.
+
+## Rollback Taxes: The Liability Buyers Often Underestimate
+
+Rollback taxes are one of the most significant financial risks in Texas ranch transactions, and they are frequently underestimated by buyers who focus primarily on purchase price and closing costs.
+
+When land that has been receiving a special-use valuation changes to a non-qualifying use, a rollback tax is assessed. The rollback recaptures the difference between what was paid under the special valuation and what would have been owed at market value, assessed over a lookback period. Interest is also applied.
+
+Texas law governing the rollback period has evolved. The 2019 legislative session reduced the rollback period from five years to three years for many agricultural land scenarios. However, the precise rollback window depends on the nature of the change in use, and this area of law has continued to see legislative attention. Buyers should not rely on a single number without confirming the current statute with the Texas Comptroller's guidance or a Texas property tax attorney.
+
+What triggers a rollback? The most common scenarios include a change of use by the current owner, development activity such as subdivision or construction, and a sale followed by the new owner's failure to continue qualifying use. It's important to understand that a sale itself does not automatically trigger a rollback tax. The change in use following the sale is what creates the liability.
+
+For high-value Hill Country land, this distinction matters enormously. If you purchase a ranch near Fredericksburg at current market values and then convert part of the property to non-qualifying use, the rollback tax liability could be substantial. The gap between productive value and market value in that corridor is wide, and the rollback calculation reflects that gap.
+
+Practical guidance for buyers: confirm the valuation status directly with the county appraisal district, not just through seller representations. Request the property's full tax history. Understand how rollback responsibility is allocated in the purchase contract, because this is a negotiable term. Some sellers will agree to indemnify the buyer against rollback taxes triggered by the seller's prior actions. Others will not. Knowing where that risk sits before you close is essential. Working with an experienced real estate advisor rather than a standard agent can make a meaningful difference in how these contract terms are structured and negotiated.
+
+## Due Diligence Checklist and Valuation Comparison
+
+Before purchasing any Texas ranch or rural property with a special valuation in place, buyers should work through a structured due diligence process. The valuation status should be treated with the same rigor as water rights, mineral rights, and title review.
+
+Verify the valuation type and history directly with the county appraisal district. Do not rely solely on what the seller or listing agent tells you. Request written confirmation of the current valuation status and review any correspondence between the owner and the appraisal district.
+
+Review the documentation supporting the valuation. For agricultural valuations, this includes lease agreements, grazing records, hay production receipts, or other evidence of qualifying use. For wildlife management valuations, this includes the written Wildlife Management Plan and annual activity logs.
+
+Assess whether the property can realistically continue to qualify. Consider the acreage, land type, water availability, and your intended use. A property that barely meets the minimum stocking rate requirement under the current owner may be harder to maintain under different management.
+
+Budget for the cost of maintaining qualifying use. Wildlife management is not free. Supplemental feeders, water infrastructure, predator management, wildlife biologist fees, and documentation systems all have real costs. Buyers who don't account for these often find themselves surprised in year two.
+
+Understand the rollback exposure. Calculate the approximate rollback liability based on the property's market value and current productive value assessment. Know who bears that risk in the contract.
+
+The comparison below summarizes the key differences between agricultural valuation and wildlife management valuation.
+
+### Qualifying Use Requirements
+
+Agricultural valuation requires active livestock, crop, hay, beekeeping, or timber production. Wildlife management valuation requires active implementation of at least three of seven recognized wildlife management practices annually.
+
+### Prerequisite
+
+Agricultural valuation requires five years of qualifying use in the preceding seven years. Wildlife management valuation requires an existing agricultural valuation as the foundation before transitioning.
+
+### Documentation Burden
+
+Agricultural valuation typically involves lease agreements, stocking records, and production receipts. Wildlife management valuation requires a written Wildlife Management Plan and annual activity logs, with some counties requiring third-party biologist reports.
+
+### Flexibility for Lifestyle Owners
+
+Agricultural valuation is less flexible for owners who don't want to maintain a working operation. Wildlife management valuation is generally more compatible with hunting, recreation, and conservation-focused ownership.
+
+### Suitability for Conservation Goals
+
+Agricultural valuation has limited alignment with habitat restoration or conservation objectives. Wildlife management valuation is well-suited to conservation-focused owners and can complement habitat improvement efforts.
+
+### Transition Pathway
+
+Agricultural valuation is the starting point and requires no prior special valuation. Wildlife management valuation requires an existing agricultural valuation and a formal application to the county appraisal district.
+
+## Matching the Right Valuation to Your Ownership Goals
+
+There is no universal answer to which valuation is better. The right fit depends on the land, the buyer's intended use, and the county's specific standards.
+
+For traditional agricultural operators, cattle ranchers, hay producers, and working farm owners in areas like Llano, Mason, and Harper typically find agricultural valuation the most straightforward path. Their existing operations naturally satisfy the requirements without additional planning or documentation overhead. If you're buying a working cattle ranch and intend to keep it as one, agricultural valuation is likely already the right structure and should remain so.
+
+For lifestyle ranch owners and conservation-focused buyers, wildlife management valuation tends to be a better long-term fit. If your primary goals are hunting, habitat restoration, cedar management, or recreational use, wildlife management valuation aligns the tax benefit with what you're actually doing on the land. You're not trying to maintain a livestock operation to satisfy a tax requirement that doesn't reflect your ownership purpose.
+
+For buyers focused on land investment and long-term appreciation, both valuations can serve a portfolio strategy, but the rollback exposure on high-value Hill Country land deserves careful attention. The larger the gap between market value and productive value, the larger the potential rollback liability if use changes.
+
+One nuance worth noting: some buyers in areas like Blanco County or Kerr County are purchasing land with both conservation and recreational goals and finding that wildlife management valuation supports both. A well-designed wildlife management plan can facilitate habitat improvements, support native species recovery, and provide a legitimate framework for hunting access, all within the same documented program.
+
+The key is working with an advisor who understands both the real estate transaction and the tax valuation landscape. Knowing whether a property's current valuation is secure, at risk, or worth renegotiating on is not something a standard real estate transaction process will surface on its own. It requires specific knowledge of Texas property tax law, county appraisal standards, and the land itself.
+
+## Understanding Valuation Is Part of Understanding What You're Buying
+
+The valuation status of a Texas ranch is not a secondary consideration to be reviewed after the purchase price is agreed upon. It is a fundamental component of understanding the true cost of ownership, the ongoing obligations that come with the land, and the financial exposure if use changes after closing.
+
+Buyers who treat the "ag exempt" label as a simple checkbox often discover complexity after the fact. Buyers who approach valuation with the same rigor they apply to water rights, mineral rights, and title review are in a much stronger position to make informed decisions and avoid unexpected liabilities.
+
+Whether you're evaluating a working cattle operation outside Llano, a wildlife management property near Mason, or a recreational ranch in the Fredericksburg corridor, the questions are the same: What is the valuation status? How secure is it? What does it cost to maintain? And what happens if you want to change how the land is used?
+
+Echelon Property Group works with buyers evaluating Hill Country ranches, recreational properties, and investment land across Texas. If you're navigating a ranch acquisition and want to work with an advisor who understands the full picture, including the valuation landscape, <a href="/land-ranch" class="${LINK}">learn more about our land and ranch advisory</a> and how we can help you evaluate your next property with clarity and confidence.
+`,
+  },
   {
     id: "exotic-ranch-hill-country-buyer-guide",
     title: "10 Things Buyers Should Know Before Purchasing an Exotic Ranch in the Texas Hill Country",

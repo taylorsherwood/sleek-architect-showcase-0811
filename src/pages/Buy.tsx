@@ -3,6 +3,7 @@ import FeaturedCommunities from "@/components/FeaturedCommunities";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 const Footer = lazy(() => import("@/components/Footer"));
+const MarketBalanceGauge = lazy(() => import("@/components/market-intel/MarketBalanceGauge"));
 import LandCrossLinks from "@/components/LandCrossLinks";
 
 import SEOHead from "@/components/SEOHead";

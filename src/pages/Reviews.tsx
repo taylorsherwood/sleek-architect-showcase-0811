@@ -344,7 +344,7 @@ const Reviews = () => {
               <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
                 <a
                   href="#reviews"
-                  className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-architectural text-background text-[0.75rem] tracking-[0.18em] font-medium uppercase hover:bg-gold hover:text-white transition-colors"
+                  className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-architectural text-white text-[0.75rem] tracking-[0.18em] font-medium uppercase hover:bg-gold hover:text-white transition-colors"
                 >
                   Read the reviews
                   <span aria-hidden>→</span>

@@ -431,7 +431,7 @@ const TestimonialsSection = () => {
     if (typeof window === "undefined") return;
     if (!window.matchMedia("(min-width: 768px)").matches) return;
     if (!revealed) return;
-    if (active < 3) return;
+    if (active < 2) return;
     if (userPaused) return;
     const timer = setInterval(() => setActive((p) => (p + 1) % testimonials.length), 4000);
     return () => clearInterval(timer);

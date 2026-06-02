@@ -536,19 +536,31 @@ const Reviews = () => {
 
       {/* ABOUT TAYLOR SHERWOOD */}
       <section className="py-16 md:py-24 bg-background border-t border-architectural/10">
-        <div className="container mx-auto px-6 max-w-4xl">
+        <div className="container mx-auto px-6 max-w-5xl">
           <div className="text-center mb-10">
             <p className="text-minimal text-gold mb-3 font-extrabold">ABOUT</p>
             <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural">
               About Taylor Sherwood
             </h2>
           </div>
-          <p className="text-foreground/85 leading-relaxed font-light text-lg mb-10 text-center">
-            Taylor Sherwood is an Austin-based Realtor and founder of Echelon Property Group,
-            specializing in luxury residential real estate, off-market opportunities, land and
-            ranch properties, investment acquisitions, and select commercial real estate
-            throughout Austin and the Texas Hill Country.
-          </p>
+
+          <div className="grid md:grid-cols-[280px,1fr] gap-8 md:gap-12 items-center mb-12">
+            <div className="relative mx-auto md:mx-0 w-[220px] md:w-[280px] aspect-[4/5] overflow-hidden bg-architectural/5">
+              <img
+                src="/lovable-uploads/537facb0-1fbc-450c-8c4a-c1d06c4aa924.jpg"
+                alt="Taylor Sherwood, Austin Realtor and founder of Echelon Property Group"
+                className="w-full h-full object-cover"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <p className="text-foreground/85 leading-relaxed font-light text-lg">
+              Taylor Sherwood is an Austin-based Realtor and founder of Echelon Property Group,
+              specializing in luxury residential real estate, off-market opportunities, land and
+              ranch properties, investment acquisitions, and select commercial real estate
+              throughout Austin and the Texas Hill Country.
+            </p>
+          </div>
 
           <dl className="grid sm:grid-cols-2 gap-x-10 gap-y-6 bg-white border border-architectural/10 p-8" style={{ boxShadow: "0 10px 30px rgba(0,0,0,0.04)" }}>
             <div>

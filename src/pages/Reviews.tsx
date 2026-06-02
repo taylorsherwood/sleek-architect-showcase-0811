@@ -454,8 +454,8 @@ const Reviews = () => {
               Client Experiences
             </p>
             <h2 className="font-display font-normal text-architectural leading-[1.1] text-4xl md:text-5xl">
-              What you're considering.{" "}
-              <span className="italic text-architectural/85">What Taylor's clients say.</span>
+              Considering a move?{" "}
+              <span className="block italic text-architectural/85">Hear from those who already did.</span>
             </h2>
             <div className="mt-6 flex items-center justify-center gap-2">
               <StarRating rating={5} />

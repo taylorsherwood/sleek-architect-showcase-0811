@@ -412,14 +412,28 @@ const Reviews = () => {
 
 
       {/* FILTERS + REVIEW CARDS */}
-      <section id="reviews" className="py-16 md:py-24 bg-background">
+      <section id="reviews" className="py-20 md:py-28 bg-background border-t border-architectural/10">
         <div className="container mx-auto px-6 max-w-6xl">
-          <div className="text-center mb-10">
-            <p className="text-minimal text-gold mb-3 font-extrabold">CLIENT EXPERIENCES</p>
-            <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural">
-              Filter Reviews by Category
+          <div className="text-center mb-12 max-w-3xl mx-auto">
+            <p className="text-[0.7rem] tracking-[0.28em] text-gold font-extrabold uppercase mb-5">
+              Client Experiences
+            </p>
+            <h2 className="font-display font-normal text-architectural leading-[1.1] text-4xl md:text-5xl">
+              What you're considering.{" "}
+              <span className="italic text-architectural/85">What Taylor's clients say.</span>
             </h2>
+            <div className="mt-6 flex items-center justify-center gap-2">
+              <StarRating rating={5} />
+              <span className="text-architectural font-medium">5.0</span>
+            </div>
+            <p className="mt-3 text-sm text-foreground/70 font-light">
+              {reviews.length}+ verified reviews · Google, Zillow, Realtor.com & RealSatisfied
+            </p>
+            <p className="mt-6 text-[0.95rem] text-foreground/75 font-light leading-relaxed">
+              Pick the question that's actually on your mind. The reviews that speak to it are right here.
+            </p>
           </div>
+
 
           <div className="flex flex-wrap items-center justify-center gap-2 mb-12">
             {filters.map((f) => {

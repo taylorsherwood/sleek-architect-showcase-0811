@@ -57,7 +57,7 @@ export const blogPosts: BlogPost[] = [
     id: "wildlife-exemption-vs-ag-exemption-texas",
     title: "Wildlife Exemptions vs Agricultural Exemptions in Texas: What Ranch Owners Need to Know",
     metaTitle: "Wildlife Exemption vs Ag Exemption Texas: Key Differences for Landowners",
-    excerpt: "Learn the differences between wildlife exemptions and agricultural exemptions in Texas, including eligibility requirements, tax implications, acreage considerations, and how property owners can transition from agricultural use to wildlife management.",
+    excerpt: "A Texas land and ranch advisor's guide to wildlife versus agricultural valuations, including eligibility, acreage realities in the Hill Country, rollback risk, and how buyers in Fredericksburg, Kerrville, Mason, Llano, Harper, and Johnson City should evaluate ranches before closing.",
     author: "Taylor Sherwood",
     date: "2026-06-02",
     readTime: "12 min read",

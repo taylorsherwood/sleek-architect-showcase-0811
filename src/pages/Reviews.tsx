@@ -65,7 +65,7 @@ const reviews: Review[] = [
     source: "Verified Client",
     date: "2025",
     category: "Luxury Sellers",
-    transaction: "Sold in Northwest Hills",
+    transaction: "Purchased and sold in Northwest Hills",
     rating: 5,
     quote:
       "After a failed listing experience I was hesitant. Taylor showed me exactly what went wrong before and what he would do differently. That honesty earned my trust, and the sale.",
@@ -75,7 +75,7 @@ const reviews: Review[] = [
     source: "Verified Client",
     date: "2025",
     category: "Luxury Sellers",
-    transaction: "Sold in Barton Creek",
+    transaction: "Purchased and sold in Barton Creek",
     rating: 5,
     quote:
       "Taylor made selling our Barton Creek home seamless. His market knowledge and marketing strategy brought us multiple offers above asking within the first week.",
@@ -95,7 +95,7 @@ const reviews: Review[] = [
     source: "Verified Client",
     date: "2025",
     category: "Communication",
-    transaction: "Sold in Westlake Hills",
+    transaction: "Purchased and sold in Westlake Hills",
     rating: 5,
     quote:
       "From staging to close, every step was handled with professionalism and care. We'd recommend anyone thinking about buying or selling in Austin to call Taylor first.",
@@ -115,7 +115,7 @@ const reviews: Review[] = [
     source: "Verified Client",
     date: "2025",
     category: "Market Knowledge",
-    transaction: "Sold in Tarrytown",
+    transaction: "Purchased and sold in Tarrytown",
     rating: 5,
     quote:
       "Taylor's knowledge of the Austin luxury market is exceptional. He knew the comps, the trends, and which streets were commanding premiums before we even asked.",
@@ -135,7 +135,7 @@ const reviews: Review[] = [
     source: "Verified Client",
     date: "2025",
     category: "Luxury Sellers",
-    transaction: "Sold in Austin",
+    transaction: "Purchased and sold in Austin",
     rating: 5,
     quote:
       "Taylor's attention to detail and marketing approach are truly exceptional. From staging to photography to negotiation, every step reflected true professionalism and commitment. Highly recommend! Will absolutely use him for future endeavors no question about it.",

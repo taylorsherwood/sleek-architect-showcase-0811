@@ -1,6 +1,7 @@
 import { useState, lazy, Suspense, useMemo, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import taylorHeadshot from "@/assets/taylor-headshot.webp";
+import taylorRanchHeadshot from "@/assets/taylor-headshot-ranch.jpg.asset.json";
 import TransactionsMap from "@/components/TransactionsMap";
 import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";

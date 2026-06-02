@@ -318,7 +318,8 @@ const CountUp = ({
 }) => {
   const ref = useRef<HTMLSpanElement>(null);
   const [value, setValue] = useState(from);
-  const startedRef = useRef(false);
+  const rafRef = useRef<number | null>(null);
+  const wasVisibleRef = useRef(false);
 
   useEffect(() => {
     const el = ref.current;
@@ -327,28 +328,39 @@ const CountUp = ({
       setValue(to);
       return;
     }
+
+    const runAnimation = () => {
+      if (rafRef.current !== null) cancelAnimationFrame(rafRef.current);
+      const start = performance.now();
+      setValue(from);
+      const tick = (now: number) => {
+        const elapsed = now - start;
+        const t = Math.min(1, elapsed / duration);
+        const eased = 1 - Math.pow(1 - t, 3);
+        setValue(from + (to - from) * eased);
+        if (t < 1) rafRef.current = requestAnimationFrame(tick);
+      };
+      rafRef.current = requestAnimationFrame(tick);
+    };
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting && !startedRef.current) {
-            startedRef.current = true;
-            const start = performance.now();
-            const tick = (now: number) => {
-              const elapsed = now - start;
-              const t = Math.min(1, elapsed / duration);
-              const eased = 1 - Math.pow(1 - t, 3);
-              setValue(from + (to - from) * eased);
-              if (t < 1) requestAnimationFrame(tick);
-            };
-            requestAnimationFrame(tick);
-            observer.disconnect();
+          if (entry.isIntersecting && !wasVisibleRef.current) {
+            wasVisibleRef.current = true;
+            runAnimation();
+          } else if (!entry.isIntersecting && wasVisibleRef.current) {
+            wasVisibleRef.current = false;
           }
         });
       },
       { threshold: 0.3 }
     );
     observer.observe(el);
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+      if (rafRef.current !== null) cancelAnimationFrame(rafRef.current);
+    };
   }, [from, to, duration]);
 
   return (

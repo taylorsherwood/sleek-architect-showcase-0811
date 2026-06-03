@@ -339,13 +339,13 @@ const LandRanch = () => {
           loop
           playsInline
           preload="auto"
-          className="absolute inset-0 w-full h-full object-cover object-center scale-[1.16] sm:scale-100"
+          className="absolute inset-0 w-full h-full object-cover object-center scale-[1.16] md:scale-[1.12] lg:scale-100"
           aria-hidden="true"
         />
         <img
           src={heroPoster}
           alt=""
-          className="absolute inset-0 w-full h-full object-cover object-center scale-[1.16] md:hidden -z-10"
+          className="absolute inset-0 w-full h-full object-cover object-center scale-[1.16] md:scale-[1.12] lg:hidden -z-10"
           loading="eager"
           fetchPriority="high"
           decoding="async"

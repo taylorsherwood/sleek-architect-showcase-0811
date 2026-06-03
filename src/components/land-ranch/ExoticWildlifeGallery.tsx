@@ -23,7 +23,7 @@ type Profile = {
 const profiles: Profile[] = [
   {
     name: "Live Water Ranches",
-    image: lakeAustinImg,
+    image: liveWaterImg.url,
     positioning:
       "Properties featuring rivers, creeks, springs, and valuable water resources.",
   },

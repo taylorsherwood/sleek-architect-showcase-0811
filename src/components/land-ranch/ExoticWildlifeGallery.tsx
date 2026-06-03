@@ -4,6 +4,7 @@ import liveWaterImg from "@/assets/live-water-ranch-aerial.jpg.asset.json";
 import axisImg from "@/assets/exotic-axis-deer.jpg.asset.json";
 import legacyImg from "@/assets/land-ranch-editorial.jpg";
 import investmentImg from "@/assets/land-ranch-home-intro.jpg";
+import familyCompoundImg from "@/assets/legacy-family-compound.jpg";
 
 const labelStyle: React.CSSProperties = {
   fontSize: "0.6rem",
@@ -39,6 +40,12 @@ const profiles: Profile[] = [
       "Multi-generational ranches focused on stewardship and preservation.",
   },
   {
+    name: "Legacy Family Compounds",
+    image: familyCompoundImg,
+    positioning:
+      "Multi-generational ranches featuring guest residences, gathering spaces, equestrian amenities, and long-term family stewardship.",
+  },
+  {
     name: "Investment Acreage",
     image: investmentImg,
     positioning:
@@ -67,7 +74,7 @@ const Card = ({ p }: { p: Profile }) => {
         snap-start md:snap-align-none
         rounded-[2px]
       "
-      style={{ height: "clamp(240px, 17vw, 260px)" }}
+      style={{ height: "clamp(280px, 20vw, 310px)" }}
     >
       <img
         src={p.image}
@@ -109,9 +116,6 @@ const Card = ({ p }: { p: Profile }) => {
 };
 
 const ExoticWildlifeGallery = () => {
-  const top = profiles.slice(0, 3);
-  const bottom = profiles.slice(3);
-
   return (
     <section className="py-10 md:py-14 bg-background">
       <div className="container mx-auto px-6">
@@ -151,27 +155,15 @@ const ExoticWildlifeGallery = () => {
           ))}
         </div>
 
-        {/* Tablet (md): 3 on top, 2 centered beneath */}
-        <div className="hidden md:block lg:hidden">
-          <div className="grid grid-cols-3 gap-5">
-            {top.map((p) => (
-              <Card key={p.name} p={p} />
-            ))}
-          </div>
-          <div className="grid grid-cols-12 gap-5 mt-5">
-            <div className="col-span-2" />
-            <div className="col-span-4">
-              <Card p={bottom[0]} />
-            </div>
-            <div className="col-span-4">
-              <Card p={bottom[1]} />
-            </div>
-            <div className="col-span-2" />
-          </div>
+        {/* Tablet (md): 2 columns */}
+        <div className="hidden md:grid lg:hidden grid-cols-2 gap-5">
+          {profiles.map((p) => (
+            <Card key={p.name} p={p} />
+          ))}
         </div>
 
-        {/* Desktop (lg+): single row of 5 */}
-        <div className="hidden lg:grid grid-cols-5 gap-5">
+        {/* Desktop (lg+): 3x2 grid */}
+        <div className="hidden lg:grid grid-cols-3 gap-5">
           {profiles.map((p) => (
             <Card key={p.name} p={p} />
           ))}

@@ -40,16 +40,16 @@ const profiles: Profile[] = [
       "Multi-generational ranches focused on stewardship and preservation.",
   },
   {
-    name: "Legacy Family Compounds",
-    image: familyCompoundImg.url,
-    positioning:
-      "Multi-generational ranches featuring guest residences, gathering spaces, equestrian amenities, and long-term family stewardship.",
-  },
-  {
     name: "Investment Acreage",
     image: investmentImg,
     positioning:
       "Land positioned for appreciation, development, and long-term value creation.",
+  },
+  {
+    name: "Legacy Family Compounds",
+    image: familyCompoundImg.url,
+    positioning:
+      "Multi-generational ranches featuring guest residences, gathering spaces, equestrian amenities, and long-term family stewardship.",
   },
   {
     name: "Exotic Wildlife Ranches",

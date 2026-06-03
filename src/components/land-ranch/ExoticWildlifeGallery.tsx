@@ -4,7 +4,7 @@ import liveWaterImg from "@/assets/live-water-ranch-aerial.jpg.asset.json";
 import axisImg from "@/assets/exotic-axis-deer.jpg.asset.json";
 import legacyImg from "@/assets/land-ranch-editorial.jpg";
 import investmentImg from "@/assets/land-ranch-home-intro.jpg";
-import familyCompoundImg from "@/assets/legacy-family-compound.jpg";
+import familyCompoundImg from "@/assets/legacy-family-compound.jpg.asset.json";
 
 const labelStyle: React.CSSProperties = {
   fontSize: "0.6rem",
@@ -41,7 +41,7 @@ const profiles: Profile[] = [
   },
   {
     name: "Legacy Family Compounds",
-    image: familyCompoundImg,
+    image: familyCompoundImg.url,
     positioning:
       "Multi-generational ranches featuring guest residences, gathering spaces, equestrian amenities, and long-term family stewardship.",
   },

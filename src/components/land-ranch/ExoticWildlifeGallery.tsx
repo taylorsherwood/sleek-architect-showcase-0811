@@ -41,7 +41,7 @@ const profiles: Profile[] = [
   },
   {
     name: "Investment Acreage",
-    image: investmentImg,
+    image: investmentImg.url,
     positioning:
       "Land positioned for appreciation, development, and long-term value creation.",
   },

@@ -3,7 +3,7 @@ import zebraImg from "@/assets/exotic-zebra.jpg.asset.json";
 import liveWaterImg from "@/assets/live-water-ranch-aerial.jpg.asset.json";
 import axisImg from "@/assets/exotic-axis-deer.jpg.asset.json";
 import legacyImg from "@/assets/land-ranch-editorial.jpg";
-import investmentImg from "@/assets/land-ranch-home-intro.jpg";
+import investmentImg from "@/assets/investment-acreage-aerial.jpg.asset.json";
 import familyCompoundImg from "@/assets/legacy-family-compound.jpg.asset.json";
 
 const labelStyle: React.CSSProperties = {

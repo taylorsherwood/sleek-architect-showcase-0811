@@ -1110,7 +1110,7 @@ const LandRanch = () => {
                 aria-hidden="true"
                 loading="lazy"
                 decoding="async"
-                className="absolute pointer-events-none select-none hidden md:block"
+                className="absolute pointer-events-none select-none hidden lg:block"
                 style={{
                   top: '50%',
                   left: '50%',

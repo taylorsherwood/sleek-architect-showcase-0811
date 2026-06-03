@@ -1232,6 +1232,20 @@ const LandRanch = () => {
           </div>
         </div>
       </section>
+
+      {/* ── Fancy Gold Divider ─────────────────────────────── */}
+      <div className="flex items-center justify-center py-10 md:py-14 bg-background">
+        <div className="flex items-center gap-4 md:gap-6 max-w-xs md:max-w-sm w-full">
+          <div className="flex-1 h-px bg-gold/40" />
+          <div
+            className="w-2 h-2 rotate-45 bg-gold flex-shrink-0"
+            style={{ opacity: 0.85 }}
+            aria-hidden="true"
+          />
+          <div className="flex-1 h-px bg-gold/40" />
+        </div>
+      </div>
+
       <div className="h-10 md:h-16" aria-hidden="true" />
 
       {/* ── NEW: WHY LAND REQUIRES DIFFERENT REPRESENTATION ─────────────── */}

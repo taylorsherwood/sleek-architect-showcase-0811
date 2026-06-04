@@ -296,11 +296,16 @@ Riparian rights in Texas are governed by the Texas Water Code, which follows the
 
 Budget for these inspections as a cost of doing business, not a variable to minimize. The combined cost of specialized waterfront inspections is a small fraction of what a seawall replacement or dock rebuild will cost if a problem is discovered after closing. The inspection period is your window to negotiate repairs, adjust pricing, or walk away with your earnest money intact.
 
+### Waterfront Acquisition Planning
+
+Waterfront transactions involve variables that do not exist in standard residential purchases. LCRA permit history, shoreline configuration, dock and seawall condition, flood exposure, insurance posture, and future improvement potential all shape what a property is actually worth and what it will cost to own and eventually resell. One pattern that consistently emerges in this segment: the buyers who make the cleanest acquisitions establish their evaluation framework before they begin touring, not after. Pair that framework with current [Lake Austin luxury real estate](/blog/lake-austin-luxury-real-estate-2026) context and a clear-eyed read of [Austin luxury market trends](/austin-luxury-market-trends), and the right property becomes recognizable quickly.
+
 :::cta
-heading: Considering a waterfront acquisition? We can walk you through corridor selection, permitting, and due diligence.
-button: Request Waterfront Guidance
+heading: Considering a waterfront acquisition? We can walk you through corridor selection, permitting, due diligence, and ownership economics before you tour.
+button: Schedule a Waterfront Strategy Consultation
 href: /buy
 :::
+
 
 ## 6. Model the Full Cost of Waterfront Ownership Before You Close
 

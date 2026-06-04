@@ -116,9 +116,6 @@ Typical buyer profile | Year-round primary buyer, Eanes ISD families, relocating
 Long-term value characteristics | Strong resilience driven by constrained supply and dock scarcity | More cyclical, drought-sensitive, sensitive to view and access | Strong resilience tied to Westlake school zoning and downtown proximity
 :::
 
-:::intel-gauge-lake-austin
-:::
-
 ## 1. Map the Waterfront Tiers Before You Tour a Single Property
 
 ### The Challenge It Solves

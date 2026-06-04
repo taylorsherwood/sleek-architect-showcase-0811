@@ -918,7 +918,7 @@ const LandRanch = () => {
 
 
       {/* ── SECTION 6: MARKET SNAPSHOT ──────────────────────── */}
-      <section className="py-14 md:py-20 bg-secondary/40">
+      <section className="pt-0 pb-14 md:pb-20 bg-secondary/40">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mb-14">
             <p className="text-gold mb-5" style={labelStyle}>

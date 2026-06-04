@@ -17,8 +17,8 @@ const expertiseBlocks = [
     link: "/austin-luxury-homes-for-sale",
     linkText: "Explore",
     image: luxuryHomesKitchen,
-    alt: "Austin luxury home at twilight with infinity pool, oak trees, and warm interior lighting",
-    objectPosition: "25% 75%",
+    alt: "Luxury Austin kitchen with marble backsplash, walnut cabinetry, and brass accents",
+    objectPosition: "center",
   },
   {
     eyebrow: "INVESTMENT ADVISORY",

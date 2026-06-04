@@ -12,7 +12,7 @@ const expertiseBlocks = [
   {
     eyebrow: "RESIDENTIAL",
     title: "Luxury homes",
-    description: "Lakefront estates, hilltop mansions, and gated golf communities across Austin's most exclusive enclaves.",
+    description: "Lakefront estates, hilltop properties, and gated golf communities across Austin's most exclusive enclaves.",
     link: "/austin-luxury-homes-for-sale",
     linkText: "Explore",
     image: luxuryHomesKitchen,

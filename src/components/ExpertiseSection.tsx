@@ -32,7 +32,7 @@ const expertiseBlocks = [
   {
     eyebrow: "COMMERCIAL",
     title: "Commercial real estate",
-    description: "Multifamily, retail, office, and mixed-use across the metro, tenant rep to acquisitions.",
+    description: "Multifamily, retail, office, and mixed-use across the metro, tenant representation to acquisitions.",
     link: "/listings/commercial-investment-austin",
     linkText: "Explore commercial",
     image: commercialMusicLane,

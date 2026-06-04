@@ -850,7 +850,7 @@ const LandRanch = () => {
 
             <div className="lg:col-span-5">
               <p className="text-muted-foreground mb-3" style={labelStyle}>
-                DEL VALLE, TEXAS
+                CURRENTLY ASKING
               </p>
               <p className="font-display text-3xl md:text-4xl text-architectural font-normal mb-8">
                 $1,600,000

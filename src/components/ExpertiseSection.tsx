@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import ScrollReveal from "@/components/ScrollReveal";
 import commercialMusicLane from "@/assets/commercial-music-lane-austin.webp";
-import luxuryHomesAsset from "@/assets/luxury-home-hillside-twilight.jpg.asset.json";
+import luxuryHomesAsset from "@/assets/luxury-kitchen-marble.jpg.asset.json";
 const luxuryHomesKitchen = luxuryHomesAsset.url;
 import paseoInvestment from "@/assets/investment-property-austin-condos.webp";
 import ranchHeroAsset from "@/assets/hill-country-ranches-hero.jpg.asset.json";
@@ -17,8 +17,8 @@ const expertiseBlocks = [
     link: "/austin-luxury-homes-for-sale",
     linkText: "Explore",
     image: luxuryHomesKitchen,
-    alt: "Austin luxury home at twilight with infinity pool, oak trees, and warm interior lighting",
-    objectPosition: "25% 75%",
+    alt: "Luxury Austin kitchen with marble backsplash, walnut cabinetry, and brass accents",
+    objectPosition: "center",
   },
   {
     eyebrow: "INVESTMENT ADVISORY",

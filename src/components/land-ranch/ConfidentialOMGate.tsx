@@ -56,7 +56,7 @@ const ConfidentialOMGate = () => {
         className="inline-flex items-center gap-2 text-foreground gold-underline-hover pb-0.5 hover:text-gold transition-colors"
         style={labelStyle}
       >
-        Access Confidential OM →
+        CONFIDENTIAL OM →
       </button>
 
       <Dialog open={open} onOpenChange={setOpen}>

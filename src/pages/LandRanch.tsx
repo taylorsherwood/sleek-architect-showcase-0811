@@ -828,7 +828,7 @@ const LandRanch = () => {
               10811 San Jose Ave
             </h2>
             <p className="text-muted-foreground leading-relaxed">
-              A rare 3.06-acre redevelopment parcel in the high-growth Del Valle corridor, currently held by Echelon Property Group on behalf of ownership.
+              A rare 3.06-acre redevelopment parcel in the high-growth Del Valle corridor
             </p>
           </div>
 

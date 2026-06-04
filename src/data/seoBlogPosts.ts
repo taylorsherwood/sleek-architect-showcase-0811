@@ -113,7 +113,7 @@ This represents one of the biggest changes to property search behavior since the
 
 ## Agent Intelligence vs ARTIFICIAL INTELLIGENCE
 
-The most useful way to think about AI in real estate is not as a replacement for an advisor, but as a complement. Each side does something the other cannot.
+The most useful way to think about AI in real estate is not as a replacement for an advisor, but as a complement. Each side does something the other cannot:
 
 :::glance
 SKILLSET | ARTIFICIAL INTELLIGENCE | Agent Intelligence

@@ -266,7 +266,7 @@ const ExoticWildlifeVideoBand = () => {
 
         {/* overlay copy */}
         <div className="absolute inset-0 flex items-end md:items-center">
-          <div className="container mx-auto px-6 pb-10 md:pb-0">
+          <div className="container mx-auto px-6 pb-10 md:pb-0 md:-translate-y-8 lg:-translate-y-12">
             <div className="max-w-2xl text-white">
               <p
                 className="text-[11px] md:text-xs tracking-[0.32em] uppercase mb-4 md:mb-6"

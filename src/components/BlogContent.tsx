@@ -304,13 +304,19 @@ const SoftCTA = ({ body }: { body: string }) => {
   const get = (key: string) =>
     lines.find((l) => l.toLowerCase().startsWith(`${key}:`))?.split(":").slice(1).join(":").trim() || "";
   const heading = get("heading") || "Get a clear read on where to focus";
+  const subheading = get("subheading");
   const buttonLabel = get("button") || "Request Area Guide";
   const href = get("href") || "/contact";
   return (
     <div className="my-14 py-10 px-6 md:px-10 border-t border-b border-foreground/15 text-center">
-      <p className="text-xl md:text-2xl font-light text-architectural mb-6 leading-snug">
+      <p className="text-xl md:text-2xl font-light text-architectural mb-3 leading-snug">
         {heading}
       </p>
+      {subheading && (
+        <p className="text-sm md:text-base text-muted-foreground font-light mb-6 max-w-xl mx-auto leading-relaxed">
+          {subheading}
+        </p>
+      )}
       <Button asChild variant="outline" className="rounded-none border-[#b9a06c] text-[#b9a06c] bg-transparent hover:bg-[#b9a06c] hover:text-white hover:border-[#b9a06c] uppercase tracking-wider text-xs px-8 py-5 transition-colors">
         <Link to={href}>{buttonLabel}</Link>
       </Button>

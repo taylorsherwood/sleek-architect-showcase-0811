@@ -1266,7 +1266,7 @@ const LandRanch = () => {
                 Why Land Requires Different Representation
               </h2>
               <p className="text-muted-foreground leading-[1.85] text-[1.0625rem] max-w-[500px]">
-                Land is not a house on a larger lot. It is a separate discipline with its own diligence, its own buyer pool, and a different set of questions that determine real value. Working with an advisor who has lived inside those questions changes the outcome.
+                Land is not a house on a larger lot. It is a separate discipline with its own diligence, its own buyer pool, and a different set of questions that determine real value. Working with an advisor who lives inside those variables changes the outcome.
               </p>
               <p
                 className="text-gold mt-8"

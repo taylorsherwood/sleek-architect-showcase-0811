@@ -203,7 +203,7 @@ const GlanceTable = ({ body }: { body: string }) => {
           {header[0]}
         </div>
         {corridorHeaders.map((h, idx) => (
-          <div key={idx} className="text-minimal text-foreground/60 uppercase tracking-[0.15em] text-xs leading-tight">
+          <div key={idx} className="text-minimal text-foreground/60 uppercase tracking-[0.15em] text-xs leading-tight whitespace-nowrap">
             {h}
           </div>
         ))}

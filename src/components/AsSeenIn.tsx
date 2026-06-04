@@ -34,7 +34,7 @@ const AsSeenIn = () => {
               color: "hsl(var(--muted-foreground))",
             }}
           >
-            MARKETING REACH AS SEEN IN
+            FEATURED PLACEMENTS
           </p>
         </ScrollReveal>
         <div className="flex items-center justify-center gap-4 md:gap-10 flex-wrap md:flex-nowrap">

@@ -9,6 +9,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const ScrollingCredibilityStrip = lazy(() => import("@/components/ScrollingCredibilityStrip"));
 const ExpertiseSection = lazy(() => import("@/components/ExpertiseSection"));
+const HomeValuationInline = lazy(() => import("@/components/HomeValuationInline"));
 const HomeCommunitiesScroll = lazy(() => import("@/components/HomeCommunitiesScroll"));
 import FeaturedProperties from "@/components/FeaturedProperties";
 

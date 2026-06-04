@@ -423,11 +423,11 @@ Great Hills appeals to families, professionals, and empty-nesters who value neig
     metaTitle: "Balcones Park Homes for Sale | Echelon Property Group",
     metaDescription: "Browse homes for sale in Balcones Park Austin TX. Quiet northwest Austin neighborhood with large lots and homes from $600K to $2M+.",
     priceRange: "$600K – $2M+",
-    overview: `Balcones Park is a well-established residential neighborhood in northwest Austin, located near the intersection of MoPac and Far West Boulevard. The community is known for its quiet, tree-lined streets, generous lot sizes, and convenient access to both downtown Austin and the northwest employment corridors.
+    overview: `Balcones Park is a well-established residential neighborhood in northwest Austin, located near the intersection of MoPac and West 35th. The community is known for its quiet, tree-lined streets, generous lot sizes, and convenient access to both downtown Austin and the northwest employment corridors.
 
 Homes in Balcones Park are predominantly single-family residences built in the 1960s through 1980s, with many having been significantly updated or rebuilt in recent years. The neighborhood features a mix of mid-century ranch homes and larger updated estates on lots that often exceed a quarter acre.
 
-The neighborhood is bordered by the Balcones Country Club, providing golf and recreational amenities for members. Balcones Park's central northwest location offers easy access to MoPac, Loop 360, and Highway 183.`,
+The neighborhood is bordered by the Westwood Country Club, providing golf and recreational amenities for members. Balcones Park's central northwest location offers easy access to MoPac, Loop 360, and downtown Austin`,
     market: `Balcones Park's real estate market offers strong value in a prime northwest Austin location. Prices range from approximately $600K for homes in original condition to over $2M for fully renovated or rebuilt estates.
 
 The neighborhood has experienced increasing redevelopment activity, with several tear-down and rebuild projects introducing modern construction to the established streetscape. Lot sizes and locations make Balcones Park attractive to builders and custom-home buyers.

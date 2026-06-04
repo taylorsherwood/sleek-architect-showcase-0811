@@ -46,7 +46,7 @@ const profiles: Profile[] = [
       "Land positioned for appreciation, development, and long-term value creation.",
   },
   {
-    name: "Legacy Family Compounds",
+    name: "Multi-generational Compounds",
     image: familyCompoundImg.url,
     positioning:
       "Multi-generational ranches featuring guest residences, gathering spaces, equestrian amenities, and long-term family stewardship.",

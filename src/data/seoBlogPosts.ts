@@ -82,6 +82,9 @@ Before getting into the strategies, it helps to frame how Austin's waterfront ma
 
 Lake Austin demand is dominated by primary-residence buyers who want a year-round home with reliable water access and proximity to central Austin and the Eanes Independent School District. Lake Travis attracts a higher concentration of second-home and recreational buyers, often willing to accept seasonal water level volatility in exchange for sweeping views, larger lots, and a different lifestyle pace. Lake Austin waterfront homes consistently draw a deeper bench of competing offers in any given price band.
 
+:::intel-gauge-lake-austin
+:::
+
 ### Lake Austin Inventory Is Structurally Constrained
 
 Lake Austin has a finite shoreline, the LCRA actively limits new dock permits, and long-held legacy properties tend to stay within families or change hands quietly. The result is a market where Lake Austin luxury real estate often trades through private channels well before reaching public platforms. Most active buyers materially overestimate how much they will see on portals at any given time.
@@ -111,9 +114,6 @@ Inventory availability | Structurally constrained, often off market | More activ
 Lifestyle profile | Primary-residence, urban-adjacent waterfront living | Recreational, view-driven, second-home friendly | Urban-adjacent luxury with riparian access
 Typical buyer profile | Year-round primary buyer, Eanes ISD families, relocating executives | Recreational and second-home buyers, view priority | Established Austin buyers, Westlake and Tarrytown families
 Long-term value characteristics | Strong resilience driven by constrained supply and dock scarcity | More cyclical, drought-sensitive, sensitive to view and access | Strong resilience tied to Westlake school zoning and downtown proximity
-:::
-
-:::intel-gauge-lake-austin
 :::
 
 ## 1. Map the Waterfront Tiers Before You Tour a Single Property

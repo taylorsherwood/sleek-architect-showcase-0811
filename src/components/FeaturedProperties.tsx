@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import ScrollReveal from "@/components/ScrollReveal";
 import gillisStreet from "@/assets/gillis-street-home-card.jpg";
+import westlakeHillsPrivate from "@/assets/westlake-hills-private-sold.avif.asset.json";
 
 const properties = [
   {
@@ -23,13 +24,14 @@ const properties = [
     subtitle: "4314 Gillis Street, 24-unit value-add multifamily, 78745.",
   },
   {
-    image: "/static-assets/listing-westlake-hills-private.avif",
+    image: westlakeHillsPrivate.url,
     address: "Address withheld",
     location: "West Lake Hills",
     price: "$5,950,000",
     beds: 5, baths: 5, sqft: "—",
     link: "/off-market-real-estate-austin",
     badge: "PRIVATE LISTING",
+    sold: true,
   },
 ];
 
@@ -130,6 +132,28 @@ const FeaturedProperties = () => {
                       className="expertise-card__darken absolute inset-0 opacity-0 transition-opacity duration-700"
                       style={{ background: "rgba(10,10,12,0.14)" }}
                     />
+                    {(p as any).sold && (
+                      <div
+                        style={{
+                          position: "absolute",
+                          top: "28px",
+                          left: "-44px",
+                          transform: "rotate(-45deg)",
+                          background: "#b9a06c",
+                          color: "#FFFFFF",
+                          fontFamily: '"Jost", sans-serif',
+                          fontSize: "0.75rem",
+                          fontWeight: 600,
+                          letterSpacing: "0.3em",
+                          textTransform: "uppercase",
+                          padding: "8px 56px",
+                          zIndex: 5,
+                          boxShadow: "0 2px 8px rgba(0,0,0,0.25)",
+                        }}
+                      >
+                        Sold
+                      </div>
+                    )}
                     <div
                       className="absolute inset-0 flex flex-col justify-end"
                       style={{ padding: "clamp(24px, 3.5vw, 40px)" }}

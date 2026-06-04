@@ -95,7 +95,7 @@ Lake Austin frontage inside the 78746 zip code, particularly the stretches close
 
 ### What Sophisticated Buyers Are Prioritizing
 
-The most experienced buyers we work with weight permitted dock and lift configuration, water depth at the dock, open-water versus cove positioning, and clean LCRA permit history alongside the architecture itself. They also treat a property's resale audience as a primary variable from day one, not an afterthought. Pure square-footage and finish comparisons rarely drive the decision in this segment.
+The most experienced buyers we work with weight permitted dock and lift configuration, water depth at the dock, open-water versus cove positioning, and clean LCRA permit history alongside the architecture itself. They also treat a property's resale audience as a primary variable from day one, not an afterthought. Pure square-footage and finish comparisons rarely drive the decision in this segment. 
 
 ### The Most Common Mistakes Austin Waterfront Buyers Make
 

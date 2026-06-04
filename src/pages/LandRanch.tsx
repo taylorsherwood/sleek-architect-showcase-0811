@@ -919,6 +919,14 @@ const LandRanch = () => {
 
       {/* ── SECTION 6: MARKET SNAPSHOT ──────────────────────── */}
       <section className="pt-0 pb-14 md:pb-20 bg-secondary/40">
+        {/* Fancy gold divider */}
+        <div className="flex items-center justify-center gap-4 md:gap-6 py-14 md:py-20" aria-hidden="true">
+          <span className="h-px flex-1 max-w-[260px] md:max-w-[360px]" style={{ background: "linear-gradient(to right, rgba(185,160,108,0), #b9a06c)" }} />
+          <span className="inline-block w-2 h-2 rotate-45" style={{ backgroundColor: "#b9a06c" }} />
+          <span className="inline-block w-1.5 h-1.5 rotate-45" style={{ backgroundColor: "#b9a06c" }} />
+          <span className="inline-block w-2 h-2 rotate-45" style={{ backgroundColor: "#b9a06c" }} />
+          <span className="h-px flex-1 max-w-[260px] md:max-w-[360px]" style={{ background: "linear-gradient(to left, rgba(185,160,108,0), #b9a06c)" }} />
+        </div>
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mb-14">
             <p className="text-gold mb-5" style={labelStyle}>

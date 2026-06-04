@@ -879,19 +879,22 @@ const LandRanch = () => {
                 3.06-acre parcel with existing mobile homes and zero zoning restrictions. Positioned for ground-up multifamily, mixed-use, or commercial development inside one of Austin's most active growth corridors.
               </p>
 
-              <Link
-                to="/contact"
-                className="inline-block border border-border/60 px-7 py-3 text-foreground/80 hover:bg-gold hover:text-white hover:border-gold transition-all duration-300 ease-out"
-                style={{
-                  fontSize: "0.6rem",
-                  letterSpacing: "0.08em",
-                  textTransform: "uppercase",
-                  fontFamily: '"Jost", sans-serif',
-                  fontWeight: 500,
-                }}
-              >
-                REQUEST INFORMATION
-              </Link>
+              <div className="flex flex-wrap items-center gap-x-8 gap-y-4">
+                <Link
+                  to="/contact"
+                  className="inline-block border border-border/60 px-7 py-3 text-foreground/80 hover:bg-gold hover:text-white hover:border-gold transition-all duration-300 ease-out"
+                  style={{
+                    fontSize: "0.6rem",
+                    letterSpacing: "0.08em",
+                    textTransform: "uppercase",
+                    fontFamily: '"Jost", sans-serif',
+                    fontWeight: 500,
+                  }}
+                >
+                  REQUEST INFORMATION
+                </Link>
+                <ConfidentialOMGate />
+              </div>
             </div>
           </div>
         </div>

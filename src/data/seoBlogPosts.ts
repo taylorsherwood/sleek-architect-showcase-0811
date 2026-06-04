@@ -100,7 +100,7 @@ The recurring misses we see are predictable: evaluating Lake Travis at a high-wa
 
 ## Austin Waterfront Corridor Comparison
 
-A side-by-side view of the three primary corridors makes the structural differences easier to weigh before you tour. Use it as a filter for which corridor aligns with your priorities, not as a substitute for property-level analysis.
+A side-by-side view of the three primary corridors makes the structural differences easier to weigh before you tour. Use it as a filter for which corridor aligns with your priorities, not as a substitute for property-level analysis. 
 
 :::glance
 Attribute | Lake Austin | Lake Travis | Colorado River Corridor / Westlake Waterfront

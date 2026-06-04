@@ -18,7 +18,7 @@ const expertiseBlocks = [
     linkText: "Explore",
     image: luxuryHomesKitchen,
     alt: "Austin luxury home at twilight with infinity pool, oak trees, and warm interior lighting",
-    objectPosition: "75% center",
+    objectPosition: "25% center",
   },
   {
     eyebrow: "INVESTMENT ADVISORY",

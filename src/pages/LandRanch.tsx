@@ -876,7 +876,8 @@ const LandRanch = () => {
               </div>
 
               <p className="text-muted-foreground leading-relaxed mb-8">
-                3.06-acre parcel with existing mobile homes and zero zoning restrictions. Positioned for ground-up multifamily, mixed-use, or commercial development inside one of Austin's most active growth corridors.
+                3.06-acre parcel with existing mobile homes and zero zoning restrictions. Positioned for ground-up multifamily, mixed-use, or commercial development inside one of{"\n"}
+                Austin's most active growth corridors.
               </p>
 
               <div className="flex flex-col sm:flex-row sm:flex-wrap sm:items-center gap-y-5 sm:gap-y-4 sm:gap-x-12">

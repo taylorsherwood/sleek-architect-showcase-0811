@@ -301,17 +301,37 @@ Waterfront properties can also qualify as 1031 exchange targets when held for in
 
 Properties with permitted guest houses, boat houses, or accessory structures tend to command a premium at resale because those improvements are difficult to replicate under current LCRA regulations. If you are evaluating two otherwise comparable properties, the one with a greater scope of permitted waterfront improvements typically offers stronger long-term positioning.
 
+:::faq
+Q: Are Lake Austin waterfront homes a good investment?
+A: Lake Austin waterfront homes have historically been one of the more resilient asset classes in the Austin luxury market. Supply is structurally constrained because the shoreline is finite and the LCRA limits new dock permits, and demand stays steady from primary-residence buyers tied to the Eanes Independent School District and proximity to downtown. Properties with a permitted dock and lift, open-water frontage, and a clean LCRA permit history tend to hold value and attract the deepest resale audience.
+
+Q: What is the difference between Lake Austin and Lake Travis?
+A: Lake Austin is a constant-level lake managed by the Lower Colorado River Authority, which means dock usability, shoreline access, and year-round water enjoyment are predictable. Lake Travis is a highland reservoir whose levels rise and fall with rainfall and LCRA releases, so the same property can present very differently across seasons and drought cycles. Lake Austin trades closer to central Austin and skews toward primary residences, while Lake Travis attracts more recreational and second-home buyers.
+
+Q: Do Austin waterfront homes require flood insurance?
+A: Most Austin waterfront homes carry separate flood coverage, either through the National Flood Insurance Program or a private flood carrier, even when the main residence sits above the Special Flood Hazard Area. Flood zone classification, elevation certificate data, and dock and shoreline structures all affect what is required and what it costs. Buyers should request quotes from both NFIP and private carriers before closing rather than assuming a single source.
+
+Q: Can you build a dock on Lake Austin?
+A: Dock construction on Lake Austin is governed by the LCRA, and new permits are not guaranteed. Many properties already carry a permitted dock and lift that can transfer with the sale, and those permits are part of what drives value. If a property does not have a permitted dock, buyers should verify with the LCRA whether a new permit is realistic for the specific shoreline before assuming one can be added.
+
+Q: What should buyers know before purchasing a waterfront property in Austin?
+A: Beyond the architecture and interior, buyers should evaluate dock permit status and transferability, water depth at the dock, shoreline length and configuration, flood zone classification, seawall condition, and the property's LCRA permit history. Carrying costs, including flood insurance, dock and seawall maintenance, and watercraft liability, should be modeled before closing. Specialized waterfront inspections from a marine contractor and seawall specialist are essential and not covered by a standard home inspection.
+
+Q: Are waterfront homes commonly sold off market in Austin?
+A: Yes. A meaningful share of Austin's luxury waterfront transactions happen privately, particularly on Lake Austin and the Westlake waterfront. Long-held properties often change hands through advisor relationships before any public listing is prepared. Buyers who rely solely on portals see only part of what is actually trading in this segment, which is why working with an advisor active in [off-market real estate in Austin](/off-market-real-estate-austin) materially expands the opportunity set.
+:::
+
 ## Putting It All Together
 
 Buying a waterfront luxury property in Austin is one of the more complex real estate decisions a buyer can make. The variables are layered: water access rights, regulatory restrictions, insurance exposure, off-market dynamics, and long-term value positioning all intersect in ways that do not apply to standard residential transactions.
 
 The buyers who navigate this well tend to share a few common traits. They engage an advisor with direct waterfront experience before they start touring. They understand what they are buying at a technical level, not just an aesthetic one. And they are prepared to move with conviction when the right property surfaces, because hesitation is expensive in this segment.
 
-To summarize the approach: define your corridor before you search, position for off-market access early, evaluate water access variables as seriously as interior finishes, structure offers that communicate certainty, conduct waterfront-specific due diligence, model true ownership costs accurately, and think about resale positioning from day one.
+To summarize the approach: define your corridor before you search, position for off-market access early, evaluate water access variables as seriously as interior finishes, structure offers that communicate certainty, conduct waterfront-specific due diligence, model true ownership costs accurately, and think about resale positioning from day one. For ongoing context on where the broader segment is heading, our [Lake Austin luxury real estate](/blog/lake-austin-luxury-real-estate-2026) outlook and our [Austin luxury real estate market analysis](/blog/austin-luxury-real-estate-market-analysis) are useful companions to this guide.
 
-If you are beginning to evaluate Austin's waterfront market, the right starting point is a candid conversation about what is actually available, what it will realistically cost, and which locations align with your priorities.
+Many of Austin's most desirable waterfront properties never reach public listing platforms. Whether you are evaluating Lake Austin waterfront homes, Lake Travis estates, or riverfront opportunities in Westlake, access to inventory and informed guidance often matter as much as budget.
 
-Echelon Property Group advises buyers across Austin's luxury waterfront corridors. We are happy to share what we are seeing. [Learn more about our services](/services).`,
+Echelon Property Group advises buyers across Austin's premier waterfront corridors and regularly assists clients with [private opportunities](/off-market-real-estate-austin), waterfront due diligence, and acquisition strategy. [Contact us](/contact) for a confidential discussion about your search criteria and what may currently be available beyond the public market.`,
   },
   {
     id: "estate-home-sales-austin",

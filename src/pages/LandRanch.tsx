@@ -794,12 +794,6 @@ const LandRanch = () => {
       <div className="h-10 md:h-16" aria-hidden="true" />
 
 
-      {/* ── PARALLAX BREAK ──────────────────────── */}
-      <div
-        className="parallax-break hidden md:block"
-        style={{ backgroundImage: "url('/images/parallax-ranch.webp')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties}
-        aria-hidden="true"
-      />
 
       {/* ── SECTION 4: MAP ──────────────────────── */}
       <section className="py-14 md:py-20">
@@ -821,6 +815,13 @@ const LandRanch = () => {
           </Suspense>
         </div>
       </section>
+
+      {/* ── PARALLAX BREAK ──────────────────────── */}
+      <div
+        className="parallax-break hidden md:block"
+        style={{ backgroundImage: "url('/images/parallax-ranch.webp')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties}
+        aria-hidden="true"
+      />
 
       {/* ── SECTION 5: PROCESS ──────────────────────── */}
       <section className="py-14 md:py-20 bg-secondary/40">
@@ -856,12 +857,6 @@ const LandRanch = () => {
 
 
 
-      {/* ── PARALLAX BREAK ──────────────────────── */}
-      <div
-        className="parallax-break hidden md:block"
-        style={{ backgroundImage: "url('/images/parallax-pasture.webp')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties}
-        aria-hidden="true"
-      />
 
 
       {/* ── SECTION 6: MARKET SNAPSHOT ──────────────────────── */}
@@ -1025,6 +1020,13 @@ const LandRanch = () => {
 
         </div>
       </section>
+
+      {/* ── PARALLAX BREAK ──────────────────────── */}
+      <div
+        className="parallax-break hidden md:block"
+        style={{ backgroundImage: "url('/images/parallax-pasture.webp')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties}
+        aria-hidden="true"
+      />
 
       <div className="h-10 md:h-16" aria-hidden="true" />
 

@@ -165,11 +165,56 @@ Positioning yourself for off-market access is not about luck. It is about workin
 
 The best off-market opportunities often come through outbound outreach to owners of properties that are not for sale. If there is a specific street, cove, or section of shoreline you are focused on, an experienced advisor can identify ownership and initiate a discreet inquiry. This approach works more often than most buyers expect, and understanding [why most buyers never see Austin's best homes](/blog/why-most-buyers-never-see-austins-best-homes) helps explain why this proactive strategy matters. For a deeper read on the private side of the market, see our overview of [off-market real estate in Austin](/off-market-real-estate-austin).
 
+### Private Waterfront Opportunities
+
+Many waterfront owners on Lake Austin and the Westlake reach have no active intention of selling, yet would consider the right offer if approached privately. What we often see is that the most productive way to surface those opportunities is targeted outreach to a specific street, cove, or shoreline segment, not a saved search waiting for a listing that may never appear publicly. Waterfront inventory in Austin is rarely an information problem. It is almost always an access problem. We maintain ongoing dialogue with owners across the most desirable waterfront corridors and regularly identify [private opportunities](/off-market-real-estate-austin) that fit a client's criteria before any formal marketing begins. For broader context on how the upper tier is moving today, our [Austin luxury real estate market analysis](/blog/austin-luxury-real-estate-market-analysis) is a useful companion read.
+
 :::cta
-heading: Quiet inventory often surfaces before the public market sees it. Tell us what you are looking for.
-button: Discuss Private Opportunities
+heading: Many waterfront opportunities never reach public platforms. Tell us the shoreline, cove, or corridor you are focused on.
+button: Explore Private Waterfront Opportunities
 href: /off-market-real-estate-austin
 :::
+
+## What We Evaluate First When Reviewing a Waterfront Property
+
+Before we focus on architecture, interior finishes, or square footage, there is a different set of variables that experienced waterfront advisors weight first. These are the characteristics that are difficult or impossible to change after closing, and they typically have a larger impact on long-term ownership experience and resale value than any cosmetic upgrade.
+
+A common mistake is evaluating waterfront homes the same way a buyer would evaluate an interior Westlake estate. The shoreline itself is the irreplaceable asset, and it should be analyzed first.
+
+### Water Depth at the Dock
+
+Water depth determines what type of vessel the property can accommodate, how usable the dock is across seasons, and whether the slip will continue to function if shoreline silt accumulates. On Lake Austin, deeper water at the dock is structurally scarcer than people assume, and it materially affects resale audience. On Lake Travis, depth assessments must be modeled against median pool elevation, not the level on the day of the showing.
+
+### Dock Permit Status and Transferability
+
+A permitted dock and boat lift in good standing with the LCRA is one of the most valuable features a waterfront property carries. Permits are not automatic, and new permits on Lake Austin are increasingly difficult to obtain. We always verify the permit on file, confirm its scope, and confirm transferability before a buyer commits. In our experience, the dock is frequently more difficult to replace than the house.
+
+### Shoreline Configuration and Frontage
+
+Linear shoreline footage tells only part of the story. Configuration matters: a 100-foot stretch of straight, open frontage often outperforms 150 feet of irregular shoreline tucked into a tight cove. Usable beach, gradient into the water, and orientation to wind and boat traffic all factor in.
+
+### Open-Water Versus Cove Positioning
+
+Open-water frontage on Lake Austin typically commands a premium for view, light, and boating access. Cove positions can offer protection, privacy, and calmer water, which some buyers prefer. Neither is inherently better, but they appeal to different resale audiences and they should be priced accordingly.
+
+### Flood Exposure and Elevation
+
+We pull the FEMA flood map and the property's elevation certificate, where available, before getting deep into a financial analysis. Flood zone classification drives insurance cost, lender requirements, and what can be built or modified on the lot. Two homes one street apart can have meaningfully different insurance and improvement profiles.
+
+### Seawall Condition and Erosion History
+
+A seawall approaching the end of its useful life is a six- or seven-figure liability that does not show up in a standard home inspection. We look at age, materials, visible distress, and the erosion behavior of adjacent properties. On Lake Travis, where water level fluctuation accelerates erosion cycles, this analysis is especially important.
+
+### Future Improvement Potential
+
+What you can add later often matters as much as what already exists. Permitted boat houses, guest quarters, expanded docks, and additional shoreline structures are difficult to replicate under current LCRA regulations. A property with headroom for these improvements carries optionality that a fully built-out lot does not.
+
+### Resale Audience
+
+Every waterfront property has a defined resale audience, and that audience should be visible from day one. A configuration that appeals broadly to year-round primary buyers will trade differently than one that appeals primarily to second-home buyers. We treat resale audience as a primary variable, not an afterthought.
+
+Two seemingly similar waterfront homes can have dramatically different long-term value profiles once these variables are weighed. The interior can be renovated. The shoreline cannot.
+
 
 ## 3. Evaluate Waterfront Value Drivers Beyond the Price-Per-Square-Foot
 

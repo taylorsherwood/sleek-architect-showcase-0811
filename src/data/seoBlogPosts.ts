@@ -60,7 +60,7 @@ import { BlogPost } from "./blogPosts";
 export const seoBlogPosts: BlogPost[] = [
   {
     id: "how-ai-is-changing-real-estate-searches-austin",
-    title: "How AI Is Changing Real Estate Searches: What Austin Buyers Need to Know in 2026",
+    title: "AI Real Estate Search in Austin: What Artificial Intelligence Can (and Can't) Tell Buyers",
     metaTitle: "How AI Is Changing Real Estate Searches in Austin | Echelon Property Group",
     excerpt: "Artificial intelligence is changing how buyers search for homes, ranches, and investment properties. Learn how AI tools, natural language search, Homes.com, RealScout, ChatGPT, and local market expertise work together in Austin real estate.",
     author: "Taylor Sherwood",

@@ -68,7 +68,7 @@ export const seoBlogPosts: BlogPost[] = [
     heroImage: blogWaterfrontLuxuryHomesAustin,
     imageAlt: "Aerial view of a Mediterranean-style waterfront luxury estate overlooking Lake Austin with the Colorado River corridor winding through the Texas Hill Country",
     imageCaption: "A representative waterfront estate above Lake Austin. The most significant properties along Austin's water corridors trade through private networks long before they reach the open market.",
-    content: `Austin's waterfront market operates by its own rules. Properties on [Lake Austin](/communities/lake-austin), Lake Travis, and the Colorado River corridor attract serious buyers from across the country, and the best ones rarely sit on the open market long enough for a casual search to catch them.
+    content: `Austin's waterfront market operates by its own rules. Properties on [Lake Austin](/communities/lake-austin), [Lake Travis](/communities/lake-travis), and the Colorado River corridor attract serious buyers from across the country, and the best ones rarely sit on the open market long enough for a casual search to catch them.
 
 For high-net-worth buyers, the challenge is not finding a waterfront home listed on a portal. The challenge is gaining early access, evaluating the right variables, and positioning yourself to move decisively when the right property surfaces.
 

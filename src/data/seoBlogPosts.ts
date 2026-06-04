@@ -379,7 +379,24 @@ Q: Are waterfront homes commonly sold off market in Austin?
 A: Yes. A meaningful share of Austin's luxury waterfront transactions happen privately, particularly on Lake Austin and the Westlake waterfront. Long-held properties often change hands through advisor relationships before any public listing is prepared. Buyers who rely solely on portals see only part of what is actually trading in this segment, which is why working with an advisor active in [off-market real estate in Austin](/off-market-real-estate-austin) materially expands the opportunity set.
 :::
 
+## Why Westlake Waterfront Continues to Command a Premium
+
+Waterfront property inside the 78746 zip code, the Westlake reach of Lake Austin, behaves differently than almost any other segment of the Austin luxury market. Understanding why is essential context for any buyer weighing this corridor against Lake Travis or other waterfront alternatives.
+
+**Eanes ISD demand is structural, not cyclical.** Eanes Independent School District anchors a buyer pool that is willing to pay a meaningful premium to live within its boundaries, and that demand persists through both up and down cycles. Waterfront inside Eanes carries a double premium: the school district and the shoreline.
+
+**Proximity to downtown changes the lifestyle equation.** Westlake waterfront is ten to fifteen minutes from downtown Austin in normal traffic. That commute differential is what allows the corridor to support both year-round primary residences and the executives and founders who need to be close to the office without sacrificing waterfront living.
+
+**Inventory is structurally constrained, not seasonally constrained.** The Westlake waterfront shoreline is finite, almost entirely built out, and the LCRA actively limits new dock permits. Many parcels have been held within the same families for decades. New supply does not arrive. When something trades, it often trades privately.
+
+**Executive relocation demand is concentrated here.** Relocating executives from California, New York, and the Bay Area frequently anchor their search on Westlake waterfront because it solves for schools, commute, and lifestyle in a single decision. That buyer pool has remained active even when broader luxury demand has softened.
+
+**Long-term wealth concentration sustains the floor.** A meaningful share of Austin's accumulated wealth lives along this stretch of shoreline. Owners are typically not forced sellers, which keeps inventory tight and supports pricing through cycles that would pressure other luxury submarkets.
+
+The result is a waterfront submarket where pricing power is durable, off-market activity is high, and the resale audience for a well-positioned property is consistently deep. Westlake waterfront does not behave like a discretionary luxury asset. In this corridor, it behaves closer to a constrained-supply hard asset with a defined and persistent buyer pool.
+
 ## Putting It All Together
+
 
 Buying a waterfront luxury property in Austin is one of the more complex real estate decisions a buyer can make. The variables are layered: water access rights, regulatory restrictions, insurance exposure, off-market dynamics, and long-term value positioning all intersect in ways that do not apply to standard residential transactions.
 

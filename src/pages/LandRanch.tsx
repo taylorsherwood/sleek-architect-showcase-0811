@@ -1204,7 +1204,7 @@ const LandRanch = () => {
                   LAND OWNERS
                 </p>
                 <h3 className="font-display text-2xl md:text-[1.75rem] font-normal text-architectural leading-tight mb-4">
-                  Considering Selling Land or a Ranch?
+                  Considering Selling Land or Ranch?
                 </h3>
                 <p
                   className="text-muted-foreground leading-relaxed mb-7 max-w-2xl"

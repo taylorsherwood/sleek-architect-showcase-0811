@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import ScrollReveal from "@/components/ScrollReveal";
 import commercialMusicLane from "@/assets/commercial-music-lane-austin.webp";
-import luxuryHomesKitchen from "@/assets/luxury-homes-austin-twilight.webp";
+import luxuryHomesKitchen from "@/assets/luxury-home-hillside-twilight.jpg.asset.json";
 import paseoInvestment from "@/assets/investment-property-austin-condos.webp";
 import ranchHeroAsset from "@/assets/hill-country-ranches-hero.jpg.asset.json";
 import marketIntelligenceAsset from "@/assets/market-intelligence.avif.asset.json";

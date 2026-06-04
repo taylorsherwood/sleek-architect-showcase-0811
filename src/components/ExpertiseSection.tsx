@@ -232,7 +232,7 @@ const ExpertiseSection = () => {
                       }}
                     >
                       <span style={{ position: "relative" }}>
-                        {block.linkText} →
+                        {block.title === "Luxury homes" ? "EXPLORE RESIDENTIAL" : block.linkText} →
                         <span
                           aria-hidden="true"
                           className="expertise-card__underline"

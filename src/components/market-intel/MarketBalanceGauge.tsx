@@ -189,7 +189,7 @@ export default function MarketBalanceGauge({
 
   return (
     <section
-      className="py-12 md:py-16"
+      className="py-8 md:py-10"
       style={{ backgroundColor: "#FAFAF8" }}
       aria-label={`${communityName} market conditions`}
     >

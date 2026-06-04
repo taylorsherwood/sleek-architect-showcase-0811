@@ -365,7 +365,7 @@ const MarkdownChunk = ({ body }: { body: string }) => {
  */
 const IntelInsert = ({ children }: { children: ReactNode }) => (
   <aside
-    className="my-14 md:my-20 -mx-6 md:mx-0"
+    className="my-10 md:my-14 -mx-6 md:mx-0"
     role="complementary"
     aria-label="Austin luxury market intelligence"
   >
@@ -440,7 +440,7 @@ const BlogContent = ({ content, afterGlance }: BlogContentProps) => {
                   communityName="Lake Austin Waterfront · $2M+"
                   marketName="West Austin"
                   fallbackMarketName="Austin Metro"
-                  eyebrow={"\n\nLAKE AUSTIN WATERFRONT · $2M+ · BUYER / SELLER BALANCE"}
+                  eyebrow={"LAKE AUSTIN WATERFRONT · $2M+ · BUYER / SELLER BALANCE"}
                 />
               </IntelInsert>
             );

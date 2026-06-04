@@ -149,7 +149,7 @@ const renderMarkdownBody = (body: string): string => {
 };
 
 interface Block {
-  type: "markdown" | "glance" | "best-for" | "watch-out" | "micro-cta" | "cta" | "faq" | "stat-block" | "intel-pulse" | "intel-gauge" | "intel-rates" | "intel-luxury-snapshot";
+  type: "markdown" | "glance" | "best-for" | "watch-out" | "micro-cta" | "cta" | "faq" | "stat-block" | "intel-pulse" | "intel-gauge" | "intel-gauge-lake-austin" | "intel-rates" | "intel-luxury-snapshot";
   body: string;
 }
 
@@ -168,7 +168,7 @@ const parseBlocks = (content: string): Block[] => {
 
   while (i < lines.length) {
     const line = lines[i];
-    const fenceMatch = line.match(/^:::(glance|best-for|watch-out|micro-cta|cta|faq|stat-block|intel-pulse|intel-gauge|intel-rates|intel-luxury-snapshot)\s*$/);
+    const fenceMatch = line.match(/^:::(glance|best-for|watch-out|micro-cta|cta|faq|stat-block|intel-pulse|intel-gauge|intel-gauge-lake-austin|intel-rates|intel-luxury-snapshot)\s*$/);
     if (fenceMatch) {
       flushMd();
       const type = fenceMatch[1] as Block["type"];
@@ -430,6 +430,17 @@ const BlogContent = ({ content, afterGlance }: BlogContentProps) => {
                   marketName="Austin Metro"
                   fallbackMarketName="West Austin"
                   eyebrow={"\n\nAUSTIN METRO RESIDENTIAL · $2M+ · BUYER / SELLER BALANCE"}
+                />
+              </IntelInsert>
+            );
+          case "intel-gauge-lake-austin":
+            return (
+              <IntelInsert key={idx}>
+                <MarketBalanceGauge
+                  communityName="Lake Austin Residential $2M+"
+                  marketName="Lake Austin Residential $2M+"
+                  fallbackMarketName="West Austin Residential $2M+"
+                  eyebrow={"\n\nLAKE AUSTIN RESIDENTIAL · $2M+ · BUYER / SELLER BALANCE"}
                 />
               </IntelInsert>
             );

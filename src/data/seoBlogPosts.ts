@@ -264,6 +264,14 @@ Beyond financing, offer structure matters. A compressed inspection period, a mea
 
 Long-held waterfront properties often involve sellers who have a strong sense of who should own the home next. A brief, direct letter from the buyer outlining their intended use, their connection to Austin, and their appreciation for the property can carry real weight. This is not a universal strategy, but in the right circumstances it has influenced outcomes in this segment.
 
+:::stat-block
+title: Waterfront Buyer Insight
+- Many buyers focus on architecture first and waterfront characteristics second. Experienced waterfront buyers often reverse that process.
+- A home can be renovated. Water depth, shoreline orientation, dock permitting, and frontage characteristics are substantially harder to change.
+- The waterfront itself is usually the irreplaceable asset, and it should anchor the analysis from the first showing forward.
+:::
+
+
 ## 5. Conduct Waterfront-Specific Due Diligence Before Releasing Contingencies
 
 ### The Challenge It Solves

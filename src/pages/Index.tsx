@@ -294,7 +294,7 @@ const SearchSection = () => {
             EXPLORE THE MARKET
           </p>
           <h2 className="font-display text-2xl md:text-[2rem] font-normal text-foreground leading-[1.1] tracking-[0.03em] mb-3">
-            Search Austin <span className="text-gold italic">Real Estate</span>
+            Search {"\n"}
           </h2>
           <p className="text-sm md:text-base text-muted-foreground mb-5 font-light max-w-md mx-auto">
             Homes, estates, ranch land, and investment property across Austin and the surrounding Hill Country.

@@ -193,15 +193,16 @@ const GlanceTable = ({ body }: { body: string }) => {
   const rows = body.split("\n").map((r) => r.split("|").map((c) => c.trim())).filter((r) => r.length > 1);
   if (!rows.length) return null;
   const [header, ...data] = rows;
+  const colCount = header.length;
   return (
-    <div className="my-10 -mx-2 sm:mx-0 overflow-x-auto">
-      <table className="w-full text-left">
+    <div className="my-10 -mx-4 sm:mx-0 overflow-x-auto">
+      <table className="w-full text-left border-collapse" style={{ minWidth: colCount > 3 ? `${colCount * 180}px` : undefined }}>
         <thead>
           <tr className="border-b border-foreground/15">
             {header.map((h, idx) => (
               <th
                 key={idx}
-                className="text-minimal text-foreground/70 uppercase tracking-wider py-3 pr-4 font-normal text-xs"
+                className="text-minimal text-foreground/70 uppercase tracking-wider py-4 px-4 first:pl-2 last:pr-2 font-normal text-xs align-bottom"
               >
                 {h}
               </th>
@@ -214,7 +215,7 @@ const GlanceTable = ({ body }: { body: string }) => {
               {row.map((cell, cIdx) => (
                 <td
                   key={cIdx}
-                  className={`py-4 pr-4 text-sm md:text-base leading-relaxed ${
+                  className={`py-5 px-4 first:pl-2 last:pr-2 text-sm md:text-[15px] leading-[1.65] align-top ${
                     cIdx === 0 ? "text-foreground font-medium" : "text-muted-foreground"
                   }`}
                 >

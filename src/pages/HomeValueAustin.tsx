@@ -391,7 +391,7 @@ const HomeValueAustin = () => {
                   </p>
                 </div>
                 <div className="border-l-2 border-gold pl-6">
-                  <h3 className="text-lg font-medium text-foreground mb-1">Confidential Sales Capability</h3>
+                  <h3 className="text-lg font-medium text-foreground mb-1">Confidential Sales SKILLSET</h3>
                   <p className="text-muted-foreground leading-relaxed text-sm">
                     For sellers who require discretion, we facilitate private transactions through our 
                     off-market network without public listing exposure.

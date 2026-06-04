@@ -1956,7 +1956,7 @@ Established location, mature lots, and proximity to major employers support cons
     priceRange: "$600K – $2M+",
     image: balconesImg,
     heroImage: balconesHeroImg,
-    overview: `Balcones Park is a well-established residential neighborhood in northwest Austin, located near the intersection of MoPac and Far West Boulevard. The community is known for its quiet, tree-lined streets, generous lot sizes, and convenient access to both downtown Austin and the northwest employment corridors.
+    overview: `Balcones Park is a well-established residential neighborhood in northwest Austin, located near the intersection of MoPac and West 35th. The community is known for its quiet, tree-lined streets, generous lot sizes, and convenient access to both downtown Austin and the northwest employment corridors.
 
 ### Housing Stock
 
@@ -1964,7 +1964,7 @@ Homes in Balcones Park are predominantly single-family residences built in the 1
 
 ### Country Club Proximity
 
-The neighborhood is bordered by the Balcones Country Club, providing golf and recreational amenities for members. Balcones Park's central northwest location offers easy access to MoPac, Loop 360, and Highway 183.`,
+The neighborhood is bordered by the Westwood Country Club, providing golf and recreational amenities for members. Balcones Park's central northwest location offers easy access to MoPac, Loop 360, and downtown Austin`,
     lifestyle: `### Quiet Residential Character
 
 Balcones Park offers peaceful, tree-lined streets with a strong sense of neighborhood identity. The established character creates a daily experience of calm and community.

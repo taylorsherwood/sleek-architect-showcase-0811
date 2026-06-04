@@ -421,29 +421,29 @@ Great Hills appeals to families, professionals, and empty-nesters who value neig
     slug: "balcones-park-homes-for-sale",
     name: "Balcones Park",
     metaTitle: "Balcones Park Homes for Sale | Echelon Property Group",
-    metaDescription: "Browse homes for sale in Balcones Park Austin TX. Quiet northwest Austin neighborhood with large lots and homes from $600K to $2M+.",
-    priceRange: "$600K – $2M+",
-    overview: `Balcones Park is a well-established residential neighborhood in northwest Austin, located near the intersection of MoPac and West 35th. The community is known for its quiet, tree-lined streets, generous lot sizes, and convenient access to both downtown Austin and the northwest employment corridors.
+    metaDescription: "Browse homes for sale in Balcones Park Austin TX. Quiet central Austin neighborhood off Balcones Drive, just north of Tarrytown.",
+    priceRange: "$900K – $3M+",
+    overview: `Balcones Park is a quiet, established central Austin neighborhood tucked along Balcones Drive, just north of Tarrytown and west of MoPac near West 35th Street. It sits in the wooded bluffs above Shoal Creek, offering a residential pocket that feels removed from the city while remaining minutes from downtown Austin.
 
-Homes in Balcones Park are predominantly single-family residences built in the 1960s through 1980s, with many having been significantly updated or rebuilt in recent years. The neighborhood features a mix of mid-century ranch homes and larger updated estates on lots that often exceed a quarter acre.
+Homes in Balcones Park are predominantly single-family residences originally built in the 1950s through 1970s, with significant remodel and rebuild activity in recent years. The mix includes mid-century ranch and split-level homes, updated traditionals, and a growing number of contemporary new builds on generously sized lots.
 
-The neighborhood is bordered by the Westwood Country Club, providing golf and recreational amenities for members. Balcones Park's central northwest location offers easy access to MoPac, Loop 360, and downtown Austin`,
-    market: `Balcones Park's real estate market offers strong value in a prime northwest Austin location. Prices range from approximately $600K for homes in original condition to over $2M for fully renovated or rebuilt estates.
+The neighborhood borders the Westwood Country Club along its western edge, providing golf and recreational amenities for members. Its central location offers easy access to MoPac, Tarrytown, Camp Mabry, and downtown Austin.`,
+    market: `Balcones Park's real estate market reflects its central Austin location adjacent to Tarrytown and Pemberton Heights. Prices typically range from approximately $900K for original-condition homes to over $3M for fully renovated or newly built residences.
 
-The neighborhood has experienced increasing redevelopment activity, with several tear-down and rebuild projects introducing modern construction to the established streetscape. Lot sizes and locations make Balcones Park attractive to builders and custom-home buyers.
+The neighborhood has seen sustained teardown and rebuild activity as custom builders and end-users target central Austin land at relatively more accessible price points than Tarrytown proper. Lot sizes and quiet streets make Balcones Park attractive for high-end remodels and new construction.
 
-Demand is driven by the neighborhood's convenient location, access to quality schools, and proximity to the Balcones Country Club. The relatively affordable entry point compared to West lake Hills and Tarrytown attracts families seeking northwest Austin's lifestyle.`,
-    whyBuyersLove: `Buyers love Balcones Park for its quiet residential character, large lots, and strategic northwest Austin location. The neighborhood feels established and peaceful while being minutes from major employment centers and downtown.
+Demand is driven by proximity to downtown, central Austin schools, Tarrytown amenities, and the Westwood Country Club.`,
+    whyBuyersLove: `Buyers love Balcones Park for its quiet, tree-canopied streets, generous lots, and central Austin location just north of Tarrytown. The neighborhood feels peaceful and established while remaining minutes from downtown, UT, and Lady Bird Lake.
 
-Access to the Balcones Country Club provides golf, dining, and social amenities for members. The neighborhood's proximity to quality dining, shopping at the Arboretum and Domain, and outdoor recreation along Shoal Creek add to its appeal.
+The Westwood Country Club borders the neighborhood, providing golf, tennis, and dining for members. Tarrytown's shops and cafes, Mayfield Park, Laguna Gloria, and the Shoal Creek Greenbelt are all immediately accessible.
 
-Balcones Park attracts buyers who value space, mature trees, and a sense of neighborhood identity in a well-connected Austin location.`,
+Balcones Park attracts buyers who want central Austin character and Tarrytown adjacency at a more accessible entry point.`,
     faqs: [
-      { question: "What is it like living in Balcones Park Austin?", answer: "Balcones Park offers quiet, tree-lined streets with large lots, proximity to the Balcones Country Club, and easy access to northwest Austin amenities." },
-      { question: "What are home prices in Balcones Park?", answer: "Prices range from approximately $600K for original-condition homes to over $2M for renovated or rebuilt estates." },
-      { question: "Are there luxury homes in Balcones Park?", answer: "Yes. Recent rebuilds and extensive renovations have introduced luxury-caliber homes to the neighborhood alongside well-maintained mid-century originals." },
-      { question: "What schools serve Balcones Park?", answer: "Balcones Park is served by Austin ISD, with access to well-regarded northwest Austin elementary, middle, and high schools." },
-      { question: "Is Balcones Park a good investment area?", answer: "Yes. Large lots in a prime northwest Austin location, combined with increasing redevelopment activity, support strong value appreciation." },
+      { question: "Where is Balcones Park in Austin?", answer: "Balcones Park is a central Austin neighborhood along Balcones Drive, just north of Tarrytown and west of MoPac near West 35th Street, bordering the Westwood Country Club." },
+      { question: "What is it like living in Balcones Park Austin?", answer: "Balcones Park offers quiet, tree-canopied streets, generous lots, and a peaceful residential feel just minutes from downtown Austin, Tarrytown, and Camp Mabry." },
+      { question: "What are home prices in Balcones Park?", answer: "Prices typically range from around $900K for original-condition homes to over $3M for renovated or newly built residences." },
+      { question: "Are there luxury homes in Balcones Park?", answer: "Yes. Sustained teardown and rebuild activity has introduced high-end remodels and new contemporary construction alongside well-maintained mid-century originals." },
+      { question: "What schools serve Balcones Park?", answer: "Balcones Park is served by Austin ISD, with access to highly regarded central Austin schools (verify specific zoning by address)." },
     ],
   },
   {

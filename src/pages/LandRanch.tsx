@@ -902,7 +902,7 @@ const LandRanch = () => {
       <section className="py-14 md:py-20">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mb-14">
-            <p className="text-gold mb-5" style={labelStyle}>MARKETS</p>
+            <p className="text-gold mb-5" style={labelStyle}>SEARCH MARKETS</p>
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-normal text-architectural leading-[1.1]">
               Explore Central Texas Ranch & Land Markets
             </h2>

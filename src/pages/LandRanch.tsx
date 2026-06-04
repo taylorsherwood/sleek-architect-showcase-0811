@@ -42,6 +42,7 @@ const marketLampasas = marketLampasasAsset.url;
 
 import taylorPortrait from "@/assets/taylor-sherwood-land-ranch.jpg";
 import echelonWatermarkLogo from "@/assets/echelon-watermark-logo.png";
+import featuredLandListingImage from "@/assets/commercial-san-jose-ave.jpg";
 const ExoticWildlifeGallery = lazy(() => import("@/components/land-ranch/ExoticWildlifeGallery"));
 
 
@@ -813,6 +814,85 @@ const LandRanch = () => {
           <Suspense fallback={<div className="w-full h-[440px] md:h-[600px] bg-secondary/40" />}>
             <LandRanchMap />
           </Suspense>
+        </div>
+      </section>
+
+      {/* ── FEATURED LAND LISTING ──────────────────────── */}
+      <section className="py-14 md:py-20 bg-secondary/40">
+        <div className="container mx-auto px-6">
+          <div className="max-w-3xl mb-12">
+            <p className="text-gold mb-5" style={labelStyle}>
+              FEATURED LAND LISTING
+            </p>
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-normal text-architectural leading-[1.1] mb-5">
+              10811 San Jose Ave
+            </h2>
+            <p className="text-muted-foreground leading-relaxed">
+              A rare 3.06-acre redevelopment parcel in the high-growth Del Valle corridor, currently held by Echelon Property Group on behalf of ownership.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+            <div className="lg:col-span-7 relative overflow-hidden group">
+              <img
+                src={featuredLandListingImage}
+                alt="10811 San Jose Ave, Del Valle TX, 3.06 acres redevelopment land"
+                title="10811 San Jose Ave, development land opportunity, Del Valle TX"
+                className="w-full aspect-[4/3] object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.03]"
+                loading="lazy"
+                decoding="async"
+              />
+              <span className="absolute top-5 left-5 text-white bg-gold px-3 py-1" style={labelStyle}>
+                DEVELOPMENT LAND
+              </span>
+            </div>
+
+            <div className="lg:col-span-5">
+              <p className="text-muted-foreground mb-3" style={labelStyle}>
+                DEL VALLE, TEXAS
+              </p>
+              <p className="font-display text-3xl md:text-4xl text-architectural font-normal mb-8">
+                $1,600,000
+              </p>
+
+              <div className="grid grid-cols-2 gap-y-6 gap-x-8 mb-8 border-t border-border/50 pt-8">
+                <div>
+                  <p className="text-muted-foreground mb-1" style={labelStyle}>ACREAGE</p>
+                  <p className="text-foreground text-base font-light">3.06 Acres</p>
+                </div>
+                <div>
+                  <p className="text-muted-foreground mb-1" style={labelStyle}>ASSET TYPE</p>
+                  <p className="text-foreground text-base font-light">Redevelopment Land</p>
+                </div>
+                <div>
+                  <p className="text-muted-foreground mb-1" style={labelStyle}>ZONING</p>
+                  <p className="text-foreground text-base font-light">Unrestricted</p>
+                </div>
+                <div>
+                  <p className="text-muted-foreground mb-1" style={labelStyle}>CORRIDOR</p>
+                  <p className="text-foreground text-base font-light">Del Valle / SE Austin</p>
+                </div>
+              </div>
+
+              <p className="text-muted-foreground leading-relaxed mb-8">
+                3.06-acre parcel with existing mobile homes and zero zoning restrictions. Positioned for ground-up multifamily, mixed-use, or commercial development inside one of Austin's most active growth corridors.
+              </p>
+
+              <Link
+                to="/contact"
+                className="inline-block border border-border/60 px-7 py-3 text-foreground/80 hover:bg-gold hover:text-white hover:border-gold transition-all duration-300 ease-out"
+                style={{
+                  fontSize: "0.6rem",
+                  letterSpacing: "0.08em",
+                  textTransform: "uppercase",
+                  fontFamily: '"Jost", sans-serif',
+                  fontWeight: 500,
+                }}
+              >
+                REQUEST INFORMATION
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 

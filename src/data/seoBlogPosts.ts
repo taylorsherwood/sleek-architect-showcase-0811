@@ -124,7 +124,7 @@ Positioning yourself for off-market access is not about luck. It is about workin
 
 ### Pro Tips
 
-The best off-market opportunities often come through outbound outreach to owners of properties that are not for sale. If there is a specific street, cove, or section of shoreline you are focused on, an experienced advisor can identify ownership and initiate a discreet inquiry. This approach works more often than most buyers expect, and understanding [why most buyers never see Austin's best homes](/blog/why-most-buyers-never-see-best-homes-austin) helps explain why this proactive strategy matters.
+The best off-market opportunities often come through outbound outreach to owners of properties that are not for sale. If there is a specific street, cove, or section of shoreline you are focused on, an experienced advisor can identify ownership and initiate a discreet inquiry. This approach works more often than most buyers expect, and understanding [why most buyers never see Austin's best homes](/blog/why-most-buyers-never-see-austins-best-homes) helps explain why this proactive strategy matters.
 
 ## 3. Evaluate Waterfront Value Drivers Beyond the Price-Per-Square-Foot
 
@@ -184,7 +184,7 @@ A standard home inspection is designed for standard residential properties. It w
 
 Waterfront due diligence requires specialists, not generalists. A licensed home inspector provides a useful baseline on the structure, systems, and interior. But a separate marine contractor or dock inspector should evaluate the dock, boat lift, and any underwater structural components. A seawall specialist should assess the seawall's condition and remaining useful life if one exists. And a review of the LCRA permit file for the property will surface any compliance issues, expired permits, or restrictions on improvements.
 
-Riparian rights in Texas are governed by the Texas Water Code, which follows the reasonable use doctrine for surface water. Understanding what rights convey with the property and whether there are any encumbrances on water access is part of a complete due diligence process. Buyers relocating from other states will find that [buying a luxury home from out of state](/blog/buying-luxury-home-out-of-state) introduces additional layers of complexity that make specialist guidance especially valuable.
+Riparian rights in Texas are governed by the Texas Water Code, which follows the reasonable use doctrine for surface water. Understanding what rights convey with the property and whether there are any encumbrances on water access is part of a complete due diligence process. Buyers relocating from other states will find that [buying a luxury home from out of state](/blog/buying-luxury-home-from-out-of-state) introduces additional layers of complexity that make specialist guidance especially valuable.
 
 ### Implementation Steps
 

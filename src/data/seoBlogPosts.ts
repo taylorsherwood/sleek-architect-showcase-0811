@@ -111,12 +111,12 @@ The system interprets the request and surfaces properties matching the overall i
 
 This represents one of the biggest changes to property search behavior since the introduction of online listings.
 
-## Agent Intelligence vs AI Intelligence
+## Agent Intelligence vs ARTIFICIAL INTELLIGENCE
 
 The most useful way to think about AI in real estate is not as a replacement for an advisor, but as a complement. Each side does something the other cannot.
 
 :::glance
-Capability | AI Intelligence | Agent Intelligence
+SKILLSET | ARTIFICIAL INTELLIGENCE | Agent Intelligence
 Listing discovery | Instant, broad, conversational | Curated and prioritized
 Off-market access | Limited to what is published | Direct relationships with owners and agents
 Neighborhood nuance | Aggregated public data | Lived knowledge of streets, coves, and corridors

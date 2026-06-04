@@ -24,13 +24,14 @@ const properties = [
     subtitle: "4314 Gillis Street, 24-unit value-add multifamily, 78745.",
   },
   {
-    image: "/static-assets/listing-westlake-hills-private.avif",
+    image: westlakeHillsPrivate.url,
     address: "Address withheld",
     location: "West Lake Hills",
     price: "$5,950,000",
     beds: 5, baths: 5, sqft: "—",
     link: "/off-market-real-estate-austin",
     badge: "PRIVATE LISTING",
+    sold: true,
   },
 ];
 

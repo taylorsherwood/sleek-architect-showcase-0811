@@ -163,7 +163,13 @@ Positioning yourself for off-market access is not about luck. It is about workin
 
 ### Pro Tips
 
-The best off-market opportunities often come through outbound outreach to owners of properties that are not for sale. If there is a specific street, cove, or section of shoreline you are focused on, an experienced advisor can identify ownership and initiate a discreet inquiry. This approach works more often than most buyers expect, and understanding [why most buyers never see Austin's best homes](/blog/why-most-buyers-never-see-austins-best-homes) helps explain why this proactive strategy matters.
+The best off-market opportunities often come through outbound outreach to owners of properties that are not for sale. If there is a specific street, cove, or section of shoreline you are focused on, an experienced advisor can identify ownership and initiate a discreet inquiry. This approach works more often than most buyers expect, and understanding [why most buyers never see Austin's best homes](/blog/why-most-buyers-never-see-austins-best-homes) helps explain why this proactive strategy matters. For a deeper read on the private side of the market, see our overview of [off-market real estate in Austin](/off-market-real-estate-austin).
+
+:::cta
+heading: Quiet inventory often surfaces before the public market sees it. Tell us what you are looking for.
+button: Discuss Private Opportunities
+href: /off-market-real-estate-austin
+:::
 
 ## 3. Evaluate Waterfront Value Drivers Beyond the Price-Per-Square-Foot
 

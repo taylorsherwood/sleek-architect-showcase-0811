@@ -856,7 +856,7 @@ const LandRanch = () => {
         </div>
       </section>
 
-      <div className="h-10 md:h-16" aria-hidden="true" />
+
 
 
 

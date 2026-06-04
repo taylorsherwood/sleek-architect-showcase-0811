@@ -3,7 +3,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } f
 import { submitLeadToZapier, formatPhoneNumber, getPhoneDigits } from "@/lib/formUtils";
 
 const OM_URL =
-  "https://www.dropbox.com/scl/fi/i8a4ki4kf5u47jc2ts2v5/10811_SanJose_OM.pdf?rlkey=csnzq1z8uc3rt1w091r7k4z7v&dl=0";
+  "https://www.dropbox.com/scl/fi/i8a4ki4kf5u47jc2ts2v5/10811_SanJose_OM.pdf?rlkey=csnzq1z8uc3rt1w091r7k4z7v&dl=1";
 
 const labelStyle: React.CSSProperties = {
   fontSize: "0.6rem",

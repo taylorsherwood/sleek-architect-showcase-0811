@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import ScrollReveal from "@/components/ScrollReveal";
 import gillisStreet from "@/assets/gillis-street-home-card.jpg";
+import westlakeHillsPrivate from "@/assets/westlake-hills-private-sold.avif.asset.json";
 
 const properties = [
   {

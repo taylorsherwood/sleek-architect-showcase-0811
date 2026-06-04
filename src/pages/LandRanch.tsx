@@ -826,35 +826,6 @@ const LandRanch = () => {
         aria-hidden="true"
       />
 
-      {/* ── SECTION 5: PROCESS ──────────────────────── */}
-      <section className="py-14 md:py-20 bg-secondary/40">
-        <div className="container mx-auto px-6">
-          <div className="max-w-3xl mb-14">
-            <p className="text-gold mb-5" style={labelStyle}>
-              ADVISORY PROCESS
-            </p>
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-normal text-architectural leading-[1.1]">
-              How We Evaluate Land Opportunities
-            </h2>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-px bg-[rgba(12,15,36,0.08)] border border-[rgba(12,15,36,0.08)]">
-            {process.map((step) => (
-              <div
-                key={step.n}
-                className="group relative bg-background p-8 md:p-10 border border-transparent transition-all duration-500 ease-out hover:scale-[1.02] hover:border-gold hover:z-10"
-              >
-                <p className="font-display text-3xl text-gold mb-5" style={{ letterSpacing: "0.05em" }}>
-                  {step.n}
-                </p>
-                <h3 className="font-display text-xl font-normal text-architectural mb-3 transition-colors duration-300 group-hover:text-gold">
-                  {step.title}
-                </h3>
-                <p className="text-muted-foreground text-[0.95rem] leading-relaxed">{step.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
 
 

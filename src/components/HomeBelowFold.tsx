@@ -1535,7 +1535,9 @@ const HomeBelowFold = () => (
 
     <div className="parallax-break parallax-break--no-tint hidden md:block" style={{ backgroundImage: "url('/images/parallax-skyline.webp')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties} aria-hidden="true" />
 
-    <HomeValuationInline />
+    <Suspense fallback={<div className="min-h-[400px] bg-background" />}>
+      <HomeValuationInline />
+    </Suspense>
 
     <Suspense fallback={<div className="min-h-[200px] bg-background" />}>
       <ExpertiseSection />

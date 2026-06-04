@@ -1033,7 +1033,7 @@ const LandRanch = () => {
         aria-hidden="true"
       />
 
-      <div className="h-10 md:h-16" aria-hidden="true" />
+
 
       {/* ── SECTION 6.9: MEET YOUR ADVISOR ──────────────────────── */}
       <section

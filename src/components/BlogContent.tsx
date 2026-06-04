@@ -195,16 +195,20 @@ const GlanceTable = ({ body }: { body: string }) => {
   const [header, ...data] = rows;
   const corridorHeaders = header.slice(1);
   const colCount = header.length;
-  // First column slightly wider, remaining columns equal
-  const gridTemplateColumns = `1.1fr ${Array(colCount - 1).fill("1fr").join(" ")}`;
+  // Tailwind needs literal class names; enumerate supported column counts.
+  const gridColsClass =
+    colCount === 5
+      ? "lg:grid-cols-[1.1fr_1fr_1fr_1fr_1fr]"
+      : colCount === 4
+        ? "lg:grid-cols-[1.1fr_1fr_1fr_1fr]"
+        : colCount === 3
+          ? "lg:grid-cols-[1.1fr_1fr_1fr]"
+          : "lg:grid-cols-[1.1fr_1fr]";
 
   return (
     <div className="my-12">
       {/* Corridor headers - desktop only */}
-      <div
-        className="hidden lg:grid gap-8 pb-5 border-b border-foreground/20"
-        style={{ gridTemplateColumns }}
-      >
+      <div className={`hidden lg:grid ${gridColsClass} gap-8 pb-5 border-b border-foreground/20`}>
         <div className="text-minimal text-foreground/60 uppercase tracking-[0.15em] text-xs whitespace-nowrap">
           {header[0]}
         </div>
@@ -218,25 +222,19 @@ const GlanceTable = ({ body }: { body: string }) => {
       {data.map((row, rIdx) => (
         <div
           key={rIdx}
-          className="grid grid-cols-1 gap-x-8 gap-y-3 py-6 lg:py-7 border-b border-foreground/10 last:border-b-0 lg:items-center"
-          style={{ "--lg-cols": gridTemplateColumns } as React.CSSProperties}
+          className={`grid grid-cols-1 ${gridColsClass} gap-x-8 gap-y-3 py-6 lg:py-7 border-b border-foreground/10 last:border-b-0 lg:items-center`}
         >
-          <div
-            className="contents lg:grid lg:col-span-full"
-            style={{ gridTemplateColumns }}
-          >
-            <div className="font-display text-lg lg:text-base lg:font-medium text-foreground tracking-tight lg:tracking-normal lg:whitespace-nowrap">
-              {row[0]}
-            </div>
-            {row.slice(1).map((cell, cIdx) => (
-              <div key={cIdx} className="text-[15px] leading-[1.6] text-muted-foreground lg:whitespace-nowrap">
-                <div className="lg:hidden text-minimal text-foreground/55 uppercase tracking-[0.14em] text-[10px] mb-1">
-                  {corridorHeaders[cIdx]}
-                </div>
-                {cell}
-              </div>
-            ))}
+          <div className="font-display text-lg lg:text-base lg:font-medium text-foreground tracking-tight lg:tracking-normal lg:whitespace-nowrap">
+            {row[0]}
           </div>
+          {row.slice(1).map((cell, cIdx) => (
+            <div key={cIdx} className="text-[15px] leading-[1.6] text-muted-foreground lg:whitespace-nowrap">
+              <div className="lg:hidden text-minimal text-foreground/55 uppercase tracking-[0.14em] text-[10px] mb-1">
+                {corridorHeaders[cIdx]}
+              </div>
+              {cell}
+            </div>
+          ))}
         </div>
       ))}
     </div>

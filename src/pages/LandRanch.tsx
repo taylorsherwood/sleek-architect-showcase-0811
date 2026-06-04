@@ -753,7 +753,7 @@ const LandRanch = () => {
                     For some owners, these properties serve as private family retreats. For others, they represent income-producing operations, conservation-focused holdings, or legacy ranches designed to be enjoyed across generations.
                   </p>
                   <p>
-                    The appeal extends beyond the wildlife itself. Large acreage, water resources, habitat quality, road infrastructure, and long-term land appreciation often make exotic wildlife ranches some of the most sought-after recreational properties in Texas.
+                    The appeal extends beyond the wildlife itself. Large acreage, water resources, habitat quality, road infrastructure, and long-term land appreciation often make exotic wildlife ranches some of the most sought-after recreational properties in Texas.&nbsp;
                   </p>
                 </div>
                 <blockquote

@@ -240,6 +240,8 @@ const slugAliases: Record<string, string> = {
   "downtown-austin-condos": "downtown",
   "downtown-austin": "downtown",
   "lake-travis-waterfront": "lake-travis",
+  "westlake": "westlake-hills",
+  "west-lake-hills": "westlake-hills",
 };
 
 const CommunityPage = () => {

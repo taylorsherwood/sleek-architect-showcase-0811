@@ -2,6 +2,7 @@ import { useState, useEffect, useRef, useCallback, lazy, Suspense } from "react"
 import FeaturedCommunities from "@/components/FeaturedCommunities";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
+import OptimizedImage from "@/components/OptimizedImage";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { realEstateAgentSchema, createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import { useToast } from "@/hooks/use-toast";
@@ -401,7 +402,7 @@ const Sell = () => {
       <section className="relative min-h-[780px] md:min-h-[720px] lg:h-[820px] xl:h-[860px] 2xl:h-[880px] flex flex-col justify-end overflow-hidden bg-primary pt-28 md:pt-0">
         <div className="absolute inset-0">
           {/* Mobile: keep existing image as LCP. Hidden on md+ */}
-          <img src={heroImg} alt="Luxury property in Austin Texas" title="Sell your Austin luxury home, Echelon Property Group" className="md:hidden w-full h-full object-cover" loading="eager" decoding="async" fetchPriority="high" sizes="100vw" width={1920} height={1080} />
+          <OptimizedImage src={heroImg} alt="Luxury property in Austin Texas" title="Sell your Austin luxury home, Echelon Property Group" width={1920} height={1080} priority sizes="100vw" className="md:hidden w-full h-full object-cover" />
           {/* Desktop: poster paints instantly (LCP), video plays once on load and again when user scrolls back to top */}
           <video
             ref={heroVideoRef}
@@ -875,9 +876,9 @@ const Sell = () => {
         <div className="container mx-auto px-6">
           <p className="text-center text-minimal text-muted-foreground mb-8 tracking-[0.2em]">MEMBER OF SELECT OFF-MARKET BROKER NETWORKS</p>
           <div className="flex flex-wrap items-center justify-center gap-10 md:gap-14">
-            <img src={austinLuxuryNetwork} alt="Austin Luxury Network" className="h-12 md:h-16 object-contain" loading="lazy" decoding="async" />
-            <img src={topAgentNetwork} alt="Top Agent Network" className="h-12 md:h-16 object-contain" loading="lazy" decoding="async" />
-            <img src={commissionClubhouse} alt="Commission Clubhouse" className="h-12 md:h-16 object-contain -translate-x-1 translate-y-[7px]" loading="lazy" decoding="async" />
+            <OptimizedImage src={austinLuxuryNetwork} alt="Austin Luxury Network" width={200} height={64} className="h-12 md:h-16 object-contain" />
+            <OptimizedImage src={topAgentNetwork} alt="Top Agent Network" width={200} height={64} className="h-12 md:h-16 object-contain" />
+            <OptimizedImage src={commissionClubhouse} alt="Commission Clubhouse" width={200} height={64} className="h-12 md:h-16 object-contain -translate-x-1 translate-y-[7px]" />
           </div>
         </div>
       </section>

@@ -8,6 +8,7 @@ import SchemaMarkup, { createArticleSchema, createFAQSchema, createBreadcrumbSch
 import { blogPosts } from "@/data/blogPosts";
 import { seoBlogPosts } from "@/data/seoBlogPosts";
 import AuthorBio from "@/components/AuthorBio";
+import OptimizedImage from "@/components/OptimizedImage";
 import BlogCTA from "@/components/BlogCTA";
 import RelatedInsights from "@/components/RelatedInsights";
 import BlogContent, { extractFAQsFromContent } from "@/components/BlogContent";
@@ -141,14 +142,15 @@ const BlogPost = () => {
             </div>
             
             <div className="w-full aspect-[16/9] mb-4 overflow-hidden">
-              <img 
-                src={post.heroImage || post.image} 
+              <OptimizedImage
+                src={post.heroImage || post.image}
                 alt={post.imageAlt || `${post.title} - Austin luxury real estate`}
                 title={post.title}
+                width={1600}
+                height={900}
+                priority
+                sizes="(max-width: 768px) 100vw, 1200px"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-                loading="eager"
-                fetchPriority="high"
-                decoding="async"
               />
             </div>
             {post.imageCaption && (
@@ -181,12 +183,13 @@ const BlogPost = () => {
                   {filledRelatedPosts.map(relatedPost => (
                     <Link key={relatedPost.id} to={`/blog/${relatedPost.id}`} className="group">
                       <div className="w-full aspect-[4/3] mb-4 overflow-hidden">
-                        <img 
-                          src={relatedPost.image} 
+                        <OptimizedImage
+                          src={relatedPost.image}
                           alt={`${relatedPost.title} - Austin real estate insights`}
                           title={relatedPost.title}
+                          width={800}
+                          height={600}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                          loading="lazy" decoding="async"
                         />
                       </div>
                       <h4 className="text-lg font-light text-architectural group-hover:text-muted-foreground transition-colors duration-300 mb-2">

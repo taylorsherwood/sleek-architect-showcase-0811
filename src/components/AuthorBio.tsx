@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import OptimizedImage from "@/components/OptimizedImage";
 import taylorHeadshot from "@/assets/taylor-headshot.webp";
 
 interface AuthorBioProps {
@@ -11,9 +12,7 @@ const AuthorBio = ({ compact = false }: AuthorBioProps) => {
       <div className="mt-16 pt-8 border-t border-border">
         <div className="flex items-start gap-4">
           <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
-            <img src={taylorHeadshot} alt="Taylor Sherwood - Austin Real Estate Advisor" title="Taylor Sherwood, Austin luxury real estate advisor" className="w-full h-full object-cover object-[50%_30%]"
-                    loading="lazy" decoding="async"
-                    />
+            <OptimizedImage src={taylorHeadshot} alt="Taylor Sherwood - Austin Real Estate Advisor" title="Taylor Sherwood, Austin luxury real estate advisor" width={160} height={160} className="w-full h-full object-cover object-[50%_30%]" />
           </div>
           <div>
             <h3 className="text-lg font-medium text-foreground">Taylor Sherwood</h3>
@@ -29,9 +28,7 @@ const AuthorBio = ({ compact = false }: AuthorBioProps) => {
     <section className="mt-16 pt-8 border-t border-border">
       <div className="flex flex-col sm:flex-row items-start gap-6">
         <div className="w-20 h-20 rounded-full overflow-hidden flex-shrink-0">
-          <img src={taylorHeadshot} alt="Taylor Sherwood - Austin Real Estate Advisor" title="Taylor Sherwood, Austin luxury real estate advisor" className="w-full h-full object-cover object-[50%_30%]"
-                    loading="lazy" decoding="async"
-                    />
+          <OptimizedImage src={taylorHeadshot} alt="Taylor Sherwood - Austin Real Estate Advisor" title="Taylor Sherwood, Austin luxury real estate advisor" width={200} height={200} className="w-full h-full object-cover object-[50%_30%]" />
         </div>
         <div>
           <p className="text-minimal text-gold mb-2 font-extrabold">ABOUT THE AUTHOR</p>

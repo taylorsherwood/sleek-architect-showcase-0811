@@ -1,5 +1,6 @@
 import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import Navigation from "@/components/Navigation";
+import OptimizedImage from "@/components/OptimizedImage";
 import expEchelonLogo from "@/assets/exp-echelon-logo.png";
 import taylorAboutHeadshot from "@/assets/taylor-about-headshot.jpeg";
 import austinLifestyle from "@/assets/austin-approach-pool.jpg";
@@ -256,14 +257,12 @@ const About = () => {
               </div>
               <div className="relative">
                 <div className="overflow-hidden">
-                  <img
+                  <OptimizedImage
                     src={austinLifestyle}
                     alt="Luxury Austin real estate at golden hour"
-                    className="w-full h-[400px] md:h-[480px] object-cover"
-                    loading="lazy"
                     width={800}
                     height={600}
-                    decoding="async"
+                    className="w-full h-[400px] md:h-[480px] object-cover"
                   />
                   <div className="absolute inset-0 bg-foreground/5" />
                 </div>
@@ -279,16 +278,17 @@ const About = () => {
           <div className="container mx-auto px-6">
             <div className="max-w-7xl mx-auto grid md:grid-cols-[38fr_62fr] gap-12 items-start">
               <div className="flex flex-col items-center">
-                <img
+                <OptimizedImage
                   src={taylorAboutHeadshot}
                   alt="Taylor Sherwood, founder of Echelon Property Group and Austin luxury real estate advisor"
                   title="Taylor Sherwood, Echelon Property Group founder and Austin real estate advisor"
+                  width={800}
+                  height={1000}
+                  priority
                   className="w-full max-h-[520px] md:max-h-[580px] object-cover object-[30%_center]"
-                  loading="eager"
-                  decoding="async"
                 />
                 <div className="mt-6 max-w-[320px] mx-auto rounded-sm overflow-hidden" style={{ backgroundColor: "hsl(var(--background))" }}>
-                  <img src={expEchelonLogo} alt="eXp Realty and Echelon Property Group logo" className="w-full mix-blend-multiply" loading="lazy" decoding="async" />
+                  <OptimizedImage src={expEchelonLogo} alt="eXp Realty and Echelon Property Group logo" width={400} height={160} className="w-full mix-blend-multiply" />
                 </div>
               </div>
               <div>

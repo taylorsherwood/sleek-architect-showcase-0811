@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
+import OptimizedImage from "@/components/OptimizedImage";
 import SchemaMarkup, { createBreadcrumbSchema, createFAQSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
 import heroImage from "@/assets/hero-austin-skyline-sunset.webp";
 import echelonLogo from "@/assets/echelon-logo-gold.png";
@@ -166,9 +167,7 @@ const OffMarketRealEstateAustin = () => {
 
   const formContent = submitted ? (
     <div className="text-center py-12 pt-20 flex flex-col items-center">
-      <img src={echelonLogo} alt="Echelon Property Group logo, Austin luxury real estate" className="h-[10.5rem] mb-4"
-                    loading="lazy" decoding="async"
-                    />
+      <OptimizedImage src={echelonLogo} alt="Echelon Property Group logo, Austin luxury real estate" width={336} height={168} className="h-[10.5rem] mb-4" />
       <h3 className="font-display text-2xl text-white mb-2">You're In</h3>
       <p className="text-white/60">We'll reach out within 24 hours with curated off-market opportunities.</p>
     </div>
@@ -299,15 +298,16 @@ const OffMarketRealEstateAustin = () => {
       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
       <section className="relative min-h-[100svh] md:min-h-[720px] lg:h-[820px] xl:h-[860px] 2xl:h-[880px] flex items-center pt-14">
         <div className="absolute inset-0">
-          <img
+          <OptimizedImage
             src={heroImage}
             alt="Luxury Austin estate representing exclusive off-market real estate opportunities"
             title="Off-market homes in Austin Texas, private listings not on Zillow or MLS"
-            className="w-full h-full object-cover"
-            loading="eager"
+            width={1920}
+            height={1080}
+            priority
+            sizes="100vw"
             decoding="sync"
-            // @ts-expect-error fetchpriority is a valid HTML attribute
-            fetchpriority="high"
+            className="w-full h-full object-cover"
           />
           <div className="absolute inset-0" style={{ backgroundColor: "rgba(12, 15, 36, 0.3)" }} />
           {/* Gradient overlay for text readability */}
@@ -329,13 +329,14 @@ const OffMarketRealEstateAustin = () => {
 
         <div className="relative z-10 container mx-auto px-6 sm:px-10 md:px-16 py-10 md:py-24">
           <div className="max-w-full md:max-w-[60vw] text-left">
-            <img
+            <OptimizedImage
               src={echelonMark}
               alt=""
               aria-hidden="true"
-              className="md:hidden mx-auto -mt-10 mb-6 w-20 h-auto opacity-95"
+              width={80}
+              height={80}
               loading="eager"
-              decoding="async"
+              className="md:hidden mx-auto -mt-10 mb-6 w-20 h-auto opacity-95"
             />
             <p className="text-[hsl(var(--gold))] mb-5 md:mb-6 font-bold whitespace-pre-line" style={labelStyle}>
               {"\n\n\nPRIVATE INVENTORY"}

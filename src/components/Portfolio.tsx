@@ -1,3 +1,4 @@
+import OptimizedImage from "@/components/OptimizedImage";
 import project1 from "@/assets/project-1.jpg";
 import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.jpg";
@@ -39,12 +40,13 @@ const Portfolio = () => {
             {projects.map((project, index) => (
               <div key={index} className="group">
                 <div className="relative overflow-hidden">
-                  <img 
-                    src={project.image} 
+                  <OptimizedImage
+                    src={project.image}
                     alt={project.title}
+                    width={1600}
+                    height={1067}
                     className="w-full h-[70vh] object-cover transition-transform duration-700 group-hover:scale-105"
-                    loading="lazy" decoding="async"
-                    />
+                  />
                   <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 </div>
                 

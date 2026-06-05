@@ -1160,9 +1160,9 @@ const LandDevelopment = () => {
                 <div
                   className="absolute text-right"
                   style={{
-                    right: "0%",
+                    right: "6%",
                     top: "2%",
-                    maxWidth: "44%",
+                    maxWidth: "40%",
                     opacity: relationshipInView ? 1 : 0,
                     transform: relationshipInView ? "translateY(0)" : "translateY(6px)",
                     transition: "opacity 0.9s ease 0.4s, transform 0.9s ease 0.4s",

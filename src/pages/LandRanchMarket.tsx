@@ -8,7 +8,7 @@ import SchemaMarkup, {
 } from "@/components/SchemaMarkup";
 import {
   getLandRanchMarket,
-  landRanchMarkets,
+  getRelatedLandRanchMarkets,
   type LandRanchMarket,
 } from "@/data/landRanchMarkets";
 
@@ -71,9 +71,7 @@ const LandRanchMarketPage = () => {
 
 
   const canonical = `/land-ranch/${market.slug}`;
-  const relatedMarkets = landRanchMarkets
-    .filter((m) => m.slug !== market.slug && m.kind !== "theme")
-    .slice(0, 4);
+  const relatedMarkets = getRelatedLandRanchMarkets(market.slug);
   const heroEyebrow = market.heroEyebrow ?? `LAND & RANCH · ${market.county.toUpperCase()}`;
   const heroHeadline = market.heroHeadline ?? `${market.name} Ranches & Land`;
 

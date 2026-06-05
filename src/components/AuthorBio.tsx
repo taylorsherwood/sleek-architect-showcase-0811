@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import OptimizedImage from "@/components/OptimizedImage";
 import taylorHeadshot from "@/assets/taylor-headshot.webp";
 
 interface AuthorBioProps {

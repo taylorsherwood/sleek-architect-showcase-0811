@@ -81,7 +81,7 @@ This guide is built for that decision. The comparison table immediately below gi
 Factor | Lake Austin | Lake Travis
 Water level | Constant year-round | Fluctuates with rainfall and drought
 Commute to downtown | 15 to 25 minutes | 30 to 60-plus minutes
-Schools | Austin or Eanes ISD, strong private schools | Lake Travis ISD or Lago Vista ISD
+Schools | Austin or Eanes ISD, private schools | Lake Travis ISD or Lago Vista ISD
 Boating culture | Wake surfing, glassy mornings | Powerboating, sailing, big-cove afternoons
 Inventory | ~21 miles of shoreline, structurally thin | 270-plus miles, broad and varied
 Off-market activity | High, especially at the luxury tier | Moderate, MLS more representative

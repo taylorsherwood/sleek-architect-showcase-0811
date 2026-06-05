@@ -978,7 +978,7 @@ const CommunitiesSection = () => {
                 whiteSpace: "pre-line",
               }}
             >
-              {"each neighborhood has a story.\nOne discerning point of view. "}
+              {"each neighborhood has a story.\nOne discerning point of view.\u00A0"}
             </p>
             <span
               aria-hidden="true"

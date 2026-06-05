@@ -1,5 +1,6 @@
 import { lazy, Suspense, useMemo } from "react";
 import AboutBlock from "@/components/AboutBlock";
+import OptimizedImage from "@/components/OptimizedImage";
 import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { realEstateAgentSchema, createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";

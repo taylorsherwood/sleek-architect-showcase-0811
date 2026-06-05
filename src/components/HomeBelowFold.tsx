@@ -975,9 +975,10 @@ const CommunitiesSection = () => {
                 lineHeight: 1.3,
                 color: "hsl(var(--foreground) / 0.92)",
                 marginBottom: "clamp(28px, 3vw, 40px)",
+                whiteSpace: "pre-line",
               }}
             >
-              each neighborhood has a story. <br className="hidden md:block" />One discerning point of view.
+              {"each neighborhood has a story.\nOne discerning point of view. "}
             </p>
             <span
               aria-hidden="true"

@@ -1137,99 +1137,106 @@ const LandDevelopment = () => {
                 </svg>
 
 
-                {/* Labels (absolutely positioned over SVG) */}
+                {/* Labels (absolutely positioned over SVG, each on a solid-bg plate so lines visually terminate before the text) */}
                 <div
                   className="absolute"
                   style={{
                     left: "0%",
-                    top: "8%",
+                    top: "2%",
+                    maxWidth: "44%",
                     opacity: relationshipInView ? 1 : 0,
                     transform: relationshipInView ? "translateY(0)" : "translateY(6px)",
                     transition: "opacity 0.9s ease 0.1s, transform 0.9s ease 0.1s",
                   }}
                 >
-                  <p style={{ ...labelStyle, color: GOLD, fontSize: "0.6rem" }} className="mb-1">
-                    Source
-                  </p>
-                  <p
-                    className="text-foreground font-normal"
-                    style={{ fontFamily: "'Cinzel', serif", fontSize: "1.05rem" }}
-                  >
-                    Landowner
-                  </p>
+                  <span className="inline-block bg-background px-2 py-0.5">
+                    <p style={{ ...labelStyle, color: GOLD, fontSize: "0.6rem" }} className="mb-1">
+                      Source
+                    </p>
+                    <p
+                      className="text-foreground font-normal whitespace-nowrap"
+                      style={{ fontFamily: "'Cinzel', serif", fontSize: "1.05rem" }}
+                    >
+                      Landowner
+                    </p>
+                  </span>
                 </div>
 
                 <div
                   className="absolute text-right"
                   style={{
                     right: "0%",
-                    top: "8%",
+                    top: "2%",
+                    maxWidth: "44%",
                     opacity: relationshipInView ? 1 : 0,
                     transform: relationshipInView ? "translateY(0)" : "translateY(6px)",
                     transition: "opacity 0.9s ease 0.4s, transform 0.9s ease 0.4s",
                   }}
                 >
-                  <p style={{ ...labelStyle, color: GOLD, fontSize: "0.6rem" }} className="mb-1">
-                    Capital
-                  </p>
-                  <p
-                    className="text-foreground font-normal"
-                    style={{ fontFamily: "'Cinzel', serif", fontSize: "1.05rem" }}
-                  >
-                    Investor
-                  </p>
+                  <span className="inline-block bg-background px-2 py-0.5 text-right">
+                    <p style={{ ...labelStyle, color: GOLD, fontSize: "0.6rem" }} className="mb-1">
+                      Capital
+                    </p>
+                    <p
+                      className="text-foreground font-normal whitespace-nowrap"
+                      style={{ fontFamily: "'Cinzel', serif", fontSize: "1.05rem" }}
+                    >
+                      Investor
+                    </p>
+                  </span>
                 </div>
 
                 <div
-                  className="absolute text-center -translate-x-1/2"
+                  className="absolute text-center"
                   style={{
                     left: "50%",
-                    top: "41%",
+                    top: "55%",
+                    transform: "translateX(-50%)",
                     opacity: relationshipInView ? 1 : 0,
-                    transform: relationshipInView
-                      ? "translate(-50%, 0) scale(1)"
-                      : "translate(-50%, 4px) scale(0.96)",
-                    transition: "opacity 1s ease 1.7s, transform 1s ease 1.7s",
+                    transition: "opacity 1s ease 1.7s",
                   }}
                 >
-                  <p style={{ ...labelStyle, color: GOLD, fontSize: "0.62rem" }} className="mb-1.5">
-                    Echelon Property Group
-                  </p>
-                  <p
-                    className="text-foreground"
-                    style={{
-                      fontFamily: "'Cinzel', serif",
-                      fontSize: "1.35rem",
-                      fontWeight: 500,
-                      letterSpacing: "0.01em",
-                    }}
-                  >
-                    Advisor
-                  </p>
+                  <span className="inline-block bg-background px-3 py-1">
+                    <p style={{ ...labelStyle, color: GOLD, fontSize: "0.62rem" }} className="mb-1.5 whitespace-nowrap">
+                      Echelon Property Group
+                    </p>
+                    <p
+                      className="text-foreground whitespace-nowrap"
+                      style={{
+                        fontFamily: "'Cinzel', serif",
+                        fontSize: "1.35rem",
+                        fontWeight: 500,
+                        letterSpacing: "0.01em",
+                      }}
+                    >
+                      Advisor
+                    </p>
+                  </span>
                 </div>
 
                 <div
-                  className="absolute text-center -translate-x-1/2"
+                  className="absolute text-center"
                   style={{
                     left: "50%",
-                    bottom: "4%",
+                    bottom: "0%",
+                    transform: "translateX(-50%)",
                     opacity: relationshipInView ? 1 : 0,
-                    transform: relationshipInView
-                      ? "translate(-50%, 0)"
-                      : "translate(-50%, 6px)",
-                    transition: "opacity 0.9s ease 3.0s, transform 0.9s ease 3.0s",
+                    transition: "opacity 0.9s ease 3.0s",
                   }}
                 >
-                  <p style={{ ...labelStyle, color: GOLD, fontSize: "0.6rem" }} className="mb-1">
-                    Outcome
-                  </p>
-                  <p
-                    className="text-foreground font-normal"
-                    style={{ fontFamily: "'Cinzel', serif", fontSize: "1.05rem" }}
-                  >
-                    Development
-                  </p>
+                  <span className="inline-block bg-background px-2 py-0.5">
+                    <p style={{ ...labelStyle, color: GOLD, fontSize: "0.6rem" }} className="mb-1">
+                      Outcome
+                    </p>
+                    <p
+                      className="text-foreground font-normal whitespace-nowrap"
+                      style={{ fontFamily: "'Cinzel', serif", fontSize: "1.05rem" }}
+                    >
+                      Development
+                    </p>
+                  </span>
                 </div>
+
               </div>
             </div>
           </div>

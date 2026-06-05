@@ -1222,7 +1222,7 @@ const LandDevelopment = () => {
                     transition: "opacity 0.9s ease 3.0s",
                   }}
                 >
-                  <span className="inline-block bg-background px-2 py-0.5">
+                  <span className="inline-block px-2 py-0.5">
                     <p style={{ ...labelStyle, color: GOLD, fontSize: "0.6rem" }} className="mb-1">
                       Outcome
                     </p>

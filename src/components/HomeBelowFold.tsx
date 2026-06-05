@@ -1543,6 +1543,11 @@ const HomeBelowFold = () => (
       <ExpertiseSection />
     </Suspense>
 
+    <FeaturedProperties />
+    <LandRanchHomeIntro />
+
+    <div className="h-12 md:h-20 bg-secondary" aria-hidden="true" />
+
     <div
       className="parallax-break parallax-break--no-tint hidden md:block"
       style={{ backgroundImage: `url('${parallaxBridgeAsset.url}')`, contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties}
@@ -1550,11 +1555,6 @@ const HomeBelowFold = () => (
     />
 
     <TestimonialsSection />
-
-    <div className="h-12 md:h-20 bg-secondary" aria-hidden="true" />
-
-    <FeaturedProperties />
-    <LandRanchHomeIntro />
 
     <div className="h-12 md:h-20 bg-secondary" aria-hidden="true" />
 

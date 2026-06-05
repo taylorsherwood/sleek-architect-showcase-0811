@@ -8,6 +8,7 @@ import SchemaMarkup, { createArticleSchema, createFAQSchema, createBreadcrumbSch
 import { blogPosts } from "@/data/blogPosts";
 import { seoBlogPosts } from "@/data/seoBlogPosts";
 import AuthorBio from "@/components/AuthorBio";
+import OptimizedImage from "@/components/OptimizedImage";
 import BlogCTA from "@/components/BlogCTA";
 import RelatedInsights from "@/components/RelatedInsights";
 import BlogContent, { extractFAQsFromContent } from "@/components/BlogContent";

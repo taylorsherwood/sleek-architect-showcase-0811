@@ -278,16 +278,17 @@ const About = () => {
           <div className="container mx-auto px-6">
             <div className="max-w-7xl mx-auto grid md:grid-cols-[38fr_62fr] gap-12 items-start">
               <div className="flex flex-col items-center">
-                <img
+                <OptimizedImage
                   src={taylorAboutHeadshot}
                   alt="Taylor Sherwood, founder of Echelon Property Group and Austin luxury real estate advisor"
                   title="Taylor Sherwood, Echelon Property Group founder and Austin real estate advisor"
+                  width={800}
+                  height={1000}
+                  priority
                   className="w-full max-h-[520px] md:max-h-[580px] object-cover object-[30%_center]"
-                  loading="eager"
-                  decoding="async"
                 />
                 <div className="mt-6 max-w-[320px] mx-auto rounded-sm overflow-hidden" style={{ backgroundColor: "hsl(var(--background))" }}>
-                  <img src={expEchelonLogo} alt="eXp Realty and Echelon Property Group logo" className="w-full mix-blend-multiply" loading="lazy" decoding="async" />
+                  <OptimizedImage src={expEchelonLogo} alt="eXp Realty and Echelon Property Group logo" width={400} height={160} className="w-full mix-blend-multiply" />
                 </div>
               </div>
               <div>

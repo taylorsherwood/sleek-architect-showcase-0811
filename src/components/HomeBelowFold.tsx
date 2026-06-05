@@ -166,10 +166,9 @@ const AdvisorSection = () => (
                   You don't need more listings, you need a <em>smarter approach</em>.
                 </p>
                  <p className="text-foreground/55 text-[15px] leading-[1.8] mt-4 font-serif italic whitespace-pre-wrap">
-                     Buy. Sell. Invest
-
-                     <span className="font-normal text-foreground/70">Let's get to work,</span>
-                  </p>
+                   {"Buy. Sell. Invest\n\n"}
+                   <span className="font-normal text-foreground/70">Let's get to work,</span>
+                 </p>
                  <div className="!mt-0 !pt-0 -mb-8"><img src={taylorSignature} alt="Taylor Sherwood signature" className="block h-[140px] opacity-80 -translate-y-4" loading="lazy" decoding="async" width={341} height={140} /></div>
               </div>
             </div>

@@ -10,7 +10,7 @@ import blogInvestmentNeighborhoods from "@/assets/blog-investment-neighborhoods.
 import blogLuxuryNeighborhoods from "@/assets/blog-luxury-neighborhoods.webp";
 import blogBartonCreekAerial from "@/assets/blog-barton-creek-aerial.webp";
 import blogRollingwoodVsWestlake from "@/assets/blog-rollingwood-vs-westlake.jpg";
-import robRoyImg from "@/assets/communities/rob-roy.png";
+import robRoyImg from "@/assets/communities/rob-roy.webp";
 import steinerRanchImg from "@/assets/communities/steiner-ranch.webp";
 import blogPembertonHeights from "@/assets/pemberton-heights.avif";
 import blogBeeCaveVsLakeway from "@/assets/bee-cave-vs-lakeway.jpg";
@@ -32,7 +32,7 @@ import blogWealthBuildingLuxury from "@/assets/blog-wealth-building-luxury-real-
 import blogNewConstructionAustin from "@/assets/blog-new-construction-austin.jpg";
 import blogLakeAustinWaterfrontValue from "@/assets/lake-austin-waterfront.jpg";
 import blogAustinLuxuryTrends from "@/assets/blog-austin-luxury-trends.jpg";
-import blogLuxurySellersQuiet from "@/assets/blog-austin-luxury-sellers-going-quiet.png";
+import blogLuxurySellersQuiet from "@/assets/blog-austin-luxury-sellers-going-quiet.webp";
 import blogExclusiveInventory from "@/assets/blog-how-to-access-exclusive-home-inventory.webp";
 import blogExclusiveAustinProperties from "@/assets/blog/exclusive-austin-properties.jpg";
 import blogBestLuxuryAgentsAustin from "@/assets/blog-best-luxury-real-estate-agents-austin.jpg";

@@ -68,6 +68,15 @@ const allPrerenderRoutes = Array.from(
   ])
 );
 
+const decodeEntities = (value: string) =>
+  value
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&#x27;/g, "'")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&amp;/g, "&");
+
 const parseAttributes = (attributes: string) => {
   const props: Record<string, string> = {};
   const attrRegex = /([\w:-]+)(?:="([^"]*)")?/g;
@@ -76,7 +85,7 @@ const parseAttributes = (attributes: string) => {
   while ((match = attrRegex.exec(attributes)) !== null) {
     const key = match[1];
     const value = match[2] ?? "";
-    if (key !== "data-rh") props[key] = value;
+    if (key !== "data-rh") props[key] = decodeEntities(value);
   }
 
   return props;
@@ -106,7 +115,9 @@ const parseScripts = (markup: string) => {
 
 const extractTitle = (titleMarkup: string) => {
   const titleMatch = /<title[^>]*>([\s\S]*?)<\/title>/.exec(titleMarkup);
-  return titleMatch?.[1]?.trim() || "Echelon Property Group | Austin Luxury Real Estate";
+  const raw = titleMatch?.[1]?.trim();
+  if (!raw) return "Echelon Property Group | Austin Luxury Real Estate";
+  return decodeEntities(raw);
 };
 
 const buildHead = (helmet?: HelmetServerState) => {
@@ -117,9 +128,25 @@ const buildHead = (helmet?: HelmetServerState) => {
     };
   }
 
-  const metaTags = parseSelfClosing(helmet.meta.toString(), "meta");
-  const linkTags = parseSelfClosing(helmet.link.toString(), "link");
-  const scriptTags = parseScripts(helmet.script.toString());
+  // SEOHead uses <Helmet prioritizeSeoTags>, which routes the canonical
+  // title/description/og/twitter/canonical tags onto helmet.priority
+  // instead of the regular meta/link/script buckets. We have to read
+  // BOTH so nothing gets dropped from the prerendered <head>.
+  const priorityMarkup =
+    typeof helmet.priority?.toString === "function" ? helmet.priority.toString() : "";
+
+  const metaTags = [
+    ...parseSelfClosing(helmet.meta.toString(), "meta"),
+    ...parseSelfClosing(priorityMarkup, "meta"),
+  ];
+  const linkTags = [
+    ...parseSelfClosing(helmet.link.toString(), "link"),
+    ...parseSelfClosing(priorityMarkup, "link"),
+  ];
+  const scriptTags = [
+    ...parseScripts(helmet.script.toString()),
+    ...parseScripts(priorityMarkup),
+  ];
 
   return {
     title: extractTitle(helmet.title.toString()),

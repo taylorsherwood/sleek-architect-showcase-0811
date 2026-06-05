@@ -125,7 +125,7 @@ Lake Travis is a different kind of boating environment. The lake's scale, depth,
 
 Buyers who already own a surf-specific wakeboat and run morning sets gravitate to Lake Austin. Buyers who want a faster, bigger, more open-water experience gravitate to Lake Travis. Neither group is wrong. They are simply optimizing for different days on the water.
 
-<figure class="my-10 -mx-6 md:mx-0"><img src="/__l5e/assets-v1/c8a05f1f-a9a8-48ad-ba8d-95ffbcaf8120/lake-travis-hill-country-estate.jpg" alt="Aerial view of a Hill Country estate set above Lake Travis at sunset with open water and ridgelines in the distance" loading="lazy" class="w-full h-auto object-cover" /><figcaption class="mt-3 text-xs md:text-sm text-foreground/60 italic text-center px-4">A Hill Country estate above Lake Travis. Open water, elevation, and Hill Country horizon define the Lake Travis ownership experience.</figcaption></figure>
+<figure class="my-10 -mx-6 md:mx-0"><img src="/__l5e/assets-v1/77a1010f-102e-44e3-b126-968d53705bea/lake-travis-hill-country-estate-v2.avif" alt="Aerial view of a Hill Country estate set above Lake Travis at sunset with open water and ridgelines in the distance" loading="lazy" class="w-full h-auto object-cover" /><figcaption class="mt-3 text-xs md:text-sm text-foreground/60 italic text-center px-4">A Hill Country estate above Lake Travis. Open water, elevation, and Hill Country horizon define the Lake Travis ownership experience.</figcaption></figure>
 
 ## The Boat-to-Restaurant Lifestyle
 

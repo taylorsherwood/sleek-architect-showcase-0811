@@ -329,13 +329,14 @@ const OffMarketRealEstateAustin = () => {
 
         <div className="relative z-10 container mx-auto px-6 sm:px-10 md:px-16 py-10 md:py-24">
           <div className="max-w-full md:max-w-[60vw] text-left">
-            <img
+            <OptimizedImage
               src={echelonMark}
               alt=""
               aria-hidden="true"
-              className="md:hidden mx-auto -mt-10 mb-6 w-20 h-auto opacity-95"
+              width={80}
+              height={80}
               loading="eager"
-              decoding="async"
+              className="md:hidden mx-auto -mt-10 mb-6 w-20 h-auto opacity-95"
             />
             <p className="text-[hsl(var(--gold))] mb-5 md:mb-6 font-bold whitespace-pre-line" style={labelStyle}>
               {"\n\n\nPRIVATE INVENTORY"}

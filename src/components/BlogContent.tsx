@@ -379,15 +379,16 @@ const MarkdownChunk = ({ body }: { body: string }) => {
  * Editorial sleeve for inline intelligence modules. A subtle gold hairline
  * top + bottom signals a deliberate publication insert rather than a widget.
  */
-const IntelInsert = ({ children }: { children: ReactNode }) => (
+const IntelInsert = ({ children, tight = false }: { children: ReactNode; tight?: boolean }) => (
   <aside
-    className="my-10 md:my-14 -mx-6 md:mx-0"
+    className={tight ? "my-4 md:my-6 -mx-6 md:mx-0" : "my-10 md:my-14 -mx-6 md:mx-0"}
     role="complementary"
     aria-label="Austin luxury market intelligence"
   >
     <Suspense fallback={<div className="min-h-[260px]" />}>{children}</Suspense>
   </aside>
 );
+
 
 const BlogContent = ({ content, afterGlance }: BlogContentProps) => {
   const blocks = parseBlocks(content);

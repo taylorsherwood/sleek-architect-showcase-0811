@@ -1,6 +1,4 @@
-/// <reference types="node" />
-import { PassThrough } from "stream";
-import { renderToPipeableStream } from "react-dom/server";
+import { renderToString } from "react-dom/server";
 import { StaticRouter } from "react-router-dom/server";
 import { QueryClient } from "@tanstack/react-query";
 import { HelmetProvider, type HelmetServerState } from "react-helmet-async";
@@ -70,6 +68,15 @@ const allPrerenderRoutes = Array.from(
   ])
 );
 
+const decodeEntities = (value: string) =>
+  value
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&#x27;/g, "'")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&amp;/g, "&");
+
 const parseAttributes = (attributes: string) => {
   const props: Record<string, string> = {};
   const attrRegex = /([\w:-]+)(?:="([^"]*)")?/g;
@@ -78,7 +85,7 @@ const parseAttributes = (attributes: string) => {
   while ((match = attrRegex.exec(attributes)) !== null) {
     const key = match[1];
     const value = match[2] ?? "";
-    if (key !== "data-rh") props[key] = value;
+    if (key !== "data-rh") props[key] = decodeEntities(value);
   }
 
   return props;
@@ -108,7 +115,9 @@ const parseScripts = (markup: string) => {
 
 const extractTitle = (titleMarkup: string) => {
   const titleMatch = /<title[^>]*>([\s\S]*?)<\/title>/.exec(titleMarkup);
-  return titleMatch?.[1]?.trim() || "Echelon Property Group | Austin Luxury Real Estate";
+  const raw = titleMatch?.[1]?.trim();
+  if (!raw) return "Echelon Property Group | Austin Luxury Real Estate";
+  return decodeEntities(raw);
 };
 
 const buildHead = (helmet?: HelmetServerState) => {
@@ -119,9 +128,25 @@ const buildHead = (helmet?: HelmetServerState) => {
     };
   }
 
-  const metaTags = parseSelfClosing(helmet.meta.toString(), "meta");
-  const linkTags = parseSelfClosing(helmet.link.toString(), "link");
-  const scriptTags = parseScripts(helmet.script.toString());
+  // SEOHead uses <Helmet prioritizeSeoTags>, which routes the canonical
+  // title/description/og/twitter/canonical tags onto helmet.priority
+  // instead of the regular meta/link/script buckets. We have to read
+  // BOTH so nothing gets dropped from the prerendered <head>.
+  const priorityMarkup =
+    typeof helmet.priority?.toString === "function" ? helmet.priority.toString() : "";
+
+  const metaTags = [
+    ...parseSelfClosing(helmet.meta.toString(), "meta"),
+    ...parseSelfClosing(priorityMarkup, "meta"),
+  ];
+  const linkTags = [
+    ...parseSelfClosing(helmet.link.toString(), "link"),
+    ...parseSelfClosing(priorityMarkup, "link"),
+  ];
+  const scriptTags = [
+    ...parseScripts(helmet.script.toString()),
+    ...parseScripts(priorityMarkup),
+  ];
 
   return {
     title: extractTitle(helmet.title.toString()),
@@ -138,46 +163,53 @@ const resolvePrerenderPath = (url: string) => {
   }
 };
 
-const renderAppToString = (routePath: string, helmetContext: { helmet?: HelmetServerState }) => {
+const flushAsync = () =>
+  new Promise<void>((resolve) => setTimeout(resolve, 0));
+
+/**
+ * Render the React tree to a string. React 18's renderToString supports
+ * Suspense by emitting fallback content when a lazy import throws a
+ * pending promise. We render in a short loop so any React.lazy chunks
+ * that resolved after the first pass are inlined on a subsequent pass.
+ * Helmet captures from the FINAL render, which is the one whose head
+ * tags we ship.
+ */
+const renderAppToString = async (
+  routePath: string,
+  helmetContext: { helmet?: HelmetServerState },
+) => {
   const queryClient = new QueryClient();
 
-  return new Promise<string>((resolve, reject) => {
-    let html = "";
-    const sink = new PassThrough();
-    sink.setEncoding("utf-8");
-    sink.on("data", (chunk: string) => {
-      html += chunk;
-    });
-    sink.on("end", () => resolve(html));
-    sink.on("error", reject);
+  const tree = (
+    <HelmetProvider context={helmetContext}>
+      <AppShell queryClient={queryClient}>
+        <StaticRouter location={routePath}>
+          <main id="main-content">
+            <AppRoutes />
+          </main>
+        </StaticRouter>
+      </AppShell>
+    </HelmetProvider>
+  );
 
-    const { pipe } = renderToPipeableStream(
-      <HelmetProvider context={helmetContext}>
-        <AppShell queryClient={queryClient}>
-          <StaticRouter location={routePath}>
-            <main id="main-content">
-              <AppRoutes />
-            </main>
-          </StaticRouter>
-        </AppShell>
-      </HelmetProvider>,
-      {
-        // Wait until all Suspense boundaries (React.lazy chunks) resolve so
-        // every route's <SEOHead> / <SchemaMarkup> Helmet tags are captured.
-        onAllReady() {
-          pipe(sink);
-        },
-        onShellError(err) {
-          reject(err);
-        },
-        onError(err) {
-          // Non-fatal SSR errors are reported but do not abort the render.
-          // eslint-disable-next-line no-console
-          console.error(`[prerender] ${routePath}:`, err);
-        },
-      },
-    );
-  });
+  let html = "";
+  let previous = "";
+  for (let attempt = 0; attempt < 6; attempt++) {
+    try {
+      html = renderToString(tree);
+    } catch (err) {
+      // eslint-disable-next-line no-console
+      console.error(`[prerender] ${routePath}:`, err);
+      html = "";
+    }
+    if (html && html === previous) break;
+    previous = html;
+    // Allow any pending React.lazy() module promises to resolve before
+    // the next render pass.
+    await flushAsync();
+  }
+
+  return html;
 };
 
 export async function prerender(data: { url: string }) {

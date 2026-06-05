@@ -314,7 +314,7 @@ const Buy = () => {
       {/* ── Hero ── */}
       <section className="relative min-h-[640px] md:min-h-[720px] lg:h-[820px] xl:h-[860px] 2xl:h-[880px] flex items-center overflow-hidden bg-primary">
         <div className="absolute inset-0">
-          <img src={heroImg} alt="Luxury home in Austin Texas" title="Austin luxury real estate, buyer services" className="w-full h-full object-cover" loading="eager" decoding="async" />
+          <OptimizedImage src={heroImg} alt="Luxury home in Austin Texas" title="Austin luxury real estate, buyer services" width={1920} height={1080} priority sizes="100vw" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-[#0C0F24]/60" />
         </div>
         <div className="relative container mx-auto px-6 pt-12 md:pt-16 lg:pt-20">

@@ -1123,7 +1123,7 @@ const LandDevelopment = () => {
                     }}
                   />
                   <circle
-                    cx="250" cy="352" r="4.5" fill={GOLD}
+                    cx="250" cy="335" r="4.5" fill={GOLD}
                     style={{
                       opacity: relationshipInView ? 1 : 0,
                       transition: "opacity 0.8s ease 3.0s",

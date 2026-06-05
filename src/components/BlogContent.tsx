@@ -460,6 +460,17 @@ const BlogContent = ({ content, afterGlance }: BlogContentProps) => {
                 />
               </IntelInsert>
             );
+          case "intel-gauge-lake-travis":
+            return (
+              <IntelInsert key={idx}>
+                <MarketBalanceGauge
+                  communityName="Lake Travis Waterfront · $2M+"
+                  marketName="Lake Travis"
+                  fallbackMarketName="Austin Metro"
+                  eyebrow={"LAKE TRAVIS WATERFRONT · $2M+ · BUYER / SELLER BALANCE"}
+                />
+              </IntelInsert>
+            );
           case "intel-rates":
             return (
               <IntelInsert key={idx}>

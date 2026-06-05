@@ -638,8 +638,45 @@ export const landRanchMarkets: LandRanchMarket[] = [
 ];
 
 
+/**
+ * Hand-curated geographic & topical adjacency between land-ranch sub-pages.
+ * Ensures every market and theme page receives inbound contextual links from
+ * its real neighbors instead of always defaulting to the first four entries
+ * in the array (which previously orphaned Burnet, Lampasas, and Exotic
+ * Wildlife Ranches from sibling pages).
+ */
+export const landRanchAdjacency: Record<string, string[]> = {
+  fredericksburg: ["kerrville", "johnson-city", "llano", "exotic-wildlife-ranches"],
+  kerrville: ["fredericksburg", "llano", "johnson-city", "exotic-wildlife-ranches"],
+  "dripping-springs": ["johnson-city", "fredericksburg", "marble-falls", "hill-country-ranches"],
+  "johnson-city": ["fredericksburg", "marble-falls", "dripping-springs", "llano"],
+  "marble-falls": ["burnet", "llano", "johnson-city", "lampasas"],
+  burnet: ["marble-falls", "llano", "lampasas", "fredericksburg"],
+  llano: ["burnet", "marble-falls", "fredericksburg", "lampasas"],
+  lampasas: ["burnet", "marble-falls", "llano", "exotic-wildlife-ranches"],
+  "hill-country-ranches": ["fredericksburg", "kerrville", "johnson-city", "exotic-wildlife-ranches"],
+  "exotic-wildlife-ranches": ["fredericksburg", "kerrville", "llano", "lampasas"],
+};
+
+export const getRelatedLandRanchMarkets = (slug: string): LandRanchMarket[] => {
+  const adj = landRanchAdjacency[slug] ?? [];
+  const picks = adj
+    .map((s) => landRanchMarkets.find((m) => m.slug === s))
+    .filter((m): m is LandRanchMarket => Boolean(m));
+  if (picks.length >= 4) return picks.slice(0, 4);
+  // Fallback fill from remaining non-theme markets if adjacency is short
+  const seen = new Set([slug, ...picks.map((m) => m.slug)]);
+  for (const m of landRanchMarkets) {
+    if (picks.length >= 4) break;
+    if (seen.has(m.slug) || m.kind === "theme") continue;
+    picks.push(m);
+    seen.add(m.slug);
+  }
+  return picks;
+};
 
 export const getLandRanchMarket = (slug?: string) =>
   landRanchMarkets.find((m) => m.slug === slug);
 
 export const landRanchMarketSlugs = landRanchMarkets.map((m) => m.slug);
+

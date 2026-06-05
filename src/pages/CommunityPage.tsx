@@ -260,6 +260,11 @@ const CommunityPage = () => {
   if (!community) {
     return (
       <div className="min-h-screen bg-background">
+        <SEOHead
+          title="Community Not Found | Echelon Property Group"
+          description="The community page you are looking for is not available. Browse Echelon Property Group's Austin luxury neighborhoods."
+          noindex
+        />
         <Navigation />
         <div className="pt-32 pb-32 text-center">
           <h1 className="text-4xl font-light text-architectural mb-4">Community Not Found</h1>

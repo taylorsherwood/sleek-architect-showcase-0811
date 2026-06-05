@@ -1,3 +1,4 @@
+// @ts-expect-error - node built-in, prerender runs in Node only
 import { PassThrough } from "stream";
 import { renderToPipeableStream } from "react-dom/server";
 import { StaticRouter } from "react-router-dom/server";

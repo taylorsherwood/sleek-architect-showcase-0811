@@ -268,7 +268,7 @@ const SearchPage = () => {
               {/* Gillis Street */}
               <div className="border border-border/60 overflow-hidden group bg-card hover:border-gold hover:shadow-[0_0_0_1px_hsl(var(--gold))] transition-colors duration-500 flex flex-col">
                 <div className="relative overflow-hidden">
-                  <img src={gillisStreet} alt="4314 Gillis Street, Austin TX 78745, 24-unit multifamily" className="w-full aspect-[3/2] object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" />
+                  <OptimizedImage src={gillisStreet} alt="4314 Gillis Street, Austin TX 78745, 24-unit multifamily" width={900} height={600} className="w-full aspect-[3/2] object-cover transition-transform duration-700 group-hover:scale-105" />
                   <span className="absolute top-4 left-4 text-minimal bg-gold text-white px-3 py-1 font-extrabold">MULTIFAMILY</span>
                   <span className="absolute bottom-3 right-3 text-white text-sm font-light  bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-sm">$2,500,000</span>
                 </div>
@@ -293,7 +293,7 @@ const SearchPage = () => {
               {/* San Jose Ave */}
               <div className="border border-border/60 overflow-hidden group bg-card hover:border-gold hover:shadow-[0_0_0_1px_hsl(var(--gold))] transition-colors duration-500 flex flex-col">
                 <div className="relative overflow-hidden">
-                  <img src={sanJoseAve} alt="10811 San Jose Ave, Del Valle TX, 3.06 acres redevelopment land" className="w-full aspect-[3/2] object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" />
+                  <OptimizedImage src={sanJoseAve} alt="10811 San Jose Ave, Del Valle TX, 3.06 acres redevelopment land" width={900} height={600} className="w-full aspect-[3/2] object-cover transition-transform duration-700 group-hover:scale-105" />
                   <span className="absolute top-4 left-4 text-minimal bg-gold text-white px-3 py-1 font-extrabold">DEVELOPMENT LAND</span>
                   <span className="absolute bottom-3 right-3 text-white text-sm font-light  bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-sm">$1,600,000</span>
                 </div>
@@ -318,7 +318,7 @@ const SearchPage = () => {
               {/* 717 S. 11th St */}
               <div className="border border-border/60 overflow-hidden group bg-card hover:border-gold hover:shadow-[0_0_0_1px_hsl(var(--gold))] transition-colors duration-500 flex flex-col">
                 <div className="relative overflow-hidden">
-                  <img src={s11thStreet} alt="717 S. 11th St, Temple TX, 6-unit multifamily" className="w-full aspect-[3/2] object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" />
+                  <OptimizedImage src={s11thStreet} alt="717 S. 11th St, Temple TX, 6-unit multifamily" width={900} height={600} className="w-full aspect-[3/2] object-cover transition-transform duration-700 group-hover:scale-105" />
                   <span className="absolute top-4 left-4 text-minimal bg-gold text-white px-3 py-1 font-extrabold">MULTIFAMILY</span>
                   <span className="absolute bottom-3 right-3 text-white text-sm font-light  bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-sm">Price Upon Request</span>
                 </div>
@@ -343,7 +343,7 @@ const SearchPage = () => {
               {/* Small Killeen Rental Portfolio */}
               <div className="border border-border/60 overflow-hidden group bg-card hover:border-gold hover:shadow-[0_0_0_1px_hsl(var(--gold))] transition-colors duration-500 flex flex-col">
                 <div className="relative overflow-hidden">
-                  <img src={killeenPortfolio} alt="Small Killeen Rental Portfolio, 9 rentable units, 100% occupied" className="w-full aspect-[3/2] object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" />
+                  <OptimizedImage src={killeenPortfolio} alt="Small Killeen Rental Portfolio, 9 rentable units, 100% occupied" width={900} height={600} className="w-full aspect-[3/2] object-cover transition-transform duration-700 group-hover:scale-105" />
                   <span className="absolute top-4 left-4 text-minimal bg-gold text-white px-3 py-1 font-extrabold">SOLD</span>
                   <span className="absolute bottom-3 right-3 text-white text-sm font-light  bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-sm">$550,000</span>
                 </div>
@@ -368,7 +368,7 @@ const SearchPage = () => {
               {/* 709/711/713 Bremser Ave */}
               <div className="border border-border/60 overflow-hidden group bg-card hover:border-gold hover:shadow-[0_0_0_1px_hsl(var(--gold))] transition-colors duration-500 flex flex-col">
                 <div className="relative overflow-hidden">
-                  <img src={bremserAve} alt="709/711/713 Bremser Ave, Killeen TX, 3 individual rental homes" className="w-full aspect-[3/2] object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" />
+                  <OptimizedImage src={bremserAve} alt="709/711/713 Bremser Ave, Killeen TX, 3 individual rental homes" width={900} height={600} className="w-full aspect-[3/2] object-cover transition-transform duration-700 group-hover:scale-105" />
                   <span className="absolute top-4 left-4 text-minimal bg-gold text-white px-3 py-1 font-extrabold">RENTAL PORTFOLIO</span>
                   <span className="absolute bottom-3 right-3 text-white text-sm font-light  bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-sm">$210,000</span>
                 </div>

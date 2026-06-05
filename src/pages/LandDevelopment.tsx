@@ -1079,20 +1079,23 @@ const LandDevelopment = () => {
                     });
                     return (
                       <>
+                        {/* Landowner → Advisor (stops short of both endpoints) */}
                         <line
-                          x1="80" y1="80" x2="250" y2="200"
+                          x1="108" y1="108" x2="222" y2="186"
                           stroke={GOLD} strokeWidth="1.25"
                           markerEnd="url(#ld-arrow)"
                           style={lineStyle(0.6)}
                         />
+                        {/* Investor → Advisor */}
                         <line
-                          x1="420" y1="80" x2="250" y2="200"
+                          x1="392" y1="108" x2="278" y2="186"
                           stroke={GOLD} strokeWidth="1.25"
                           markerEnd="url(#ld-arrow)"
                           style={lineStyle(0.9)}
                         />
+                        {/* Advisor → Development */}
                         <line
-                          x1="250" y1="200" x2="250" y2="340"
+                          x1="250" y1="220" x2="250" y2="312"
                           stroke={GOLD} strokeWidth="1.25"
                           markerEnd="url(#ld-arrow)"
                           style={lineStyle(2.0)}
@@ -1101,23 +1104,23 @@ const LandDevelopment = () => {
                     );
                   })()}
 
-                  {/* Nodes */}
+                  {/* Nodes — sized & placed so labels sit clear of them */}
                   <circle
-                    cx="80" cy="80" r="5" fill={GOLD}
+                    cx="100" cy="100" r="4.5" fill={GOLD}
                     style={{
                       opacity: relationshipInView ? 1 : 0,
                       transition: "opacity 0.8s ease 0.1s",
                     }}
                   />
                   <circle
-                    cx="420" cy="80" r="5" fill={GOLD}
+                    cx="400" cy="100" r="4.5" fill={GOLD}
                     style={{
                       opacity: relationshipInView ? 1 : 0,
                       transition: "opacity 0.8s ease 0.4s",
                     }}
                   />
                   <circle
-                    cx="250" cy="200" r="8" fill={GOLD}
+                    cx="250" cy="200" r="6" fill={GOLD}
                     className="transition-all duration-500 group-hover:drop-shadow-[0_0_10px_rgba(185,160,108,0.85)]"
                     style={{
                       opacity: relationshipInView ? 1 : 0,
@@ -1125,13 +1128,14 @@ const LandDevelopment = () => {
                     }}
                   />
                   <circle
-                    cx="250" cy="340" r="5" fill={GOLD}
+                    cx="250" cy="320" r="4.5" fill={GOLD}
                     style={{
                       opacity: relationshipInView ? 1 : 0,
                       transition: "opacity 0.8s ease 3.0s",
                     }}
                   />
                 </svg>
+
 
                 {/* Labels (absolutely positioned over SVG) */}
                 <div

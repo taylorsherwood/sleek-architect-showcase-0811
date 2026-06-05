@@ -574,7 +574,7 @@ const Buy = () => {
       {/* ── CTA / Contact Form ── */}
       <section id="buyer-consultation" className="relative py-28 overflow-hidden">
         <div className="absolute inset-0">
-          <img src={buyerConsultationBg.url} alt="Austin luxury real estate consultation" className="w-full h-full object-cover" loading="lazy" decoding="async" />
+          <OptimizedImage src={buyerConsultationBg.url} alt="Austin luxury real estate consultation" width={1920} height={1080} sizes="100vw" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-[#0C0F24]/45" />
         </div>
         <div className="relative z-10 container mx-auto px-6">

@@ -121,15 +121,34 @@ const HomeCommunitiesScroll = () => {
       // Hide site navigation while the gallery is fully pinned (immersive
       // full-screen mode). Restore once the user scrolls past the last card
       // or back above the first.
+      //
+      // Also collapse the section's visual footprint once the pin releases.
+      // Because the section is h-screen with pinSpacing, the last card
+      // (Spanish Oaks) would otherwise linger in view for an extra viewport
+      // after the horizontal pan completes.
+      const section = root.querySelector<HTMLElement>(".hcs-section");
       ScrollTrigger.create({
         trigger: ".hcs-section",
         start: "top top",
         end: () => `+=${getPinScroll()}`,
-        onEnter: () => document.body.classList.add("hcs-immersive"),
-        onLeave: () => document.body.classList.remove("hcs-immersive"),
-        onEnterBack: () => document.body.classList.add("hcs-immersive"),
-        onLeaveBack: () => document.body.classList.remove("hcs-immersive"),
+        onEnter: () => {
+          document.body.classList.add("hcs-immersive");
+          if (section) section.style.visibility = "visible";
+        },
+        onLeave: () => {
+          document.body.classList.remove("hcs-immersive");
+          if (section) section.style.visibility = "hidden";
+        },
+        onEnterBack: () => {
+          document.body.classList.add("hcs-immersive");
+          if (section) section.style.visibility = "visible";
+        },
+        onLeaveBack: () => {
+          document.body.classList.remove("hcs-immersive");
+          if (section) section.style.visibility = "visible";
+        },
       });
+
 
       // Refresh after images load to pick up final dimensions
       const onLoad = () => ScrollTrigger.refresh();

@@ -17,15 +17,22 @@
       })();
     </script>
     <title>Echelon Property Group | Austin Luxury Real Estate</title>
-    <meta name="description" content="Echelon Property Group is an Austin luxury real estate advisory specializing in off-market opportunities, discreet representation, and design-forward strategy for buyers, sellers, and investors." />
+    <!--
+      NOTE: meta description, og:url, and canonical are intentionally NOT declared here.
+      Every route renders them via <SEOHead> (react-helmet-async) and the prerender
+      pipeline ships those per-page tags into the static HTML. Declaring them here
+      would produce duplicate <meta name="description"> and an og:url permanently
+      stuck on "/", which historically caused Google to flag duplicate-without-canonical
+      and og:url-mismatch issues across the site. Keep og:image/og:type/og:title here
+      as static fallbacks only — they are safe to duplicate because Helmet's per-route
+      versions override them for JS-executing crawlers and they dedupe by property.
+    -->
     <meta name="google-site-verification" content="dhXAgewx3oiXuLhNF6giXHxaz8pFcyt_MogbeQKtTfA" />
     <meta name="author" content="Echelon Property Group" />
 
-    <!-- Static Open Graph fallbacks for non-JS social crawlers (LinkedIn, Slack, Facebook). Per-route Helmet overrides for JS-executing crawlers. -->
+    <!-- Static Open Graph fallbacks (non-JS social crawlers). og:url and og:description are emitted per-route by SEOHead so they always match the canonical. -->
     <meta property="og:title" content="Echelon Property Group — Austin Luxury Real Estate" />
-    <meta property="og:description" content="Austin luxury real estate advisory specializing in off-market opportunities, discreet representation, and design-forward strategy." />
     <meta property="og:image" content="https://www.echelonpropertygroup.com/og-image.png" />
-    <meta property="og:url" content="https://www.echelonpropertygroup.com/" />
     <meta property="og:type" content="website" />
 
     <!-- Preload mobile hero LCP image; desktop uses video directly (no static poster) -->

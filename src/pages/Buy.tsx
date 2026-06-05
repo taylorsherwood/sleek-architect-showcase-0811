@@ -2,6 +2,7 @@ import { useState, lazy, Suspense } from "react";
 import FeaturedCommunities from "@/components/FeaturedCommunities";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
+import OptimizedImage from "@/components/OptimizedImage";
 const Footer = lazy(() => import("@/components/Footer"));
 const MarketBalanceGauge = lazy(() => import("@/components/market-intel/MarketBalanceGauge"));
 import LandCrossLinks from "@/components/LandCrossLinks";

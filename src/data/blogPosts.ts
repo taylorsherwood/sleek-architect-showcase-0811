@@ -211,6 +211,17 @@ Lake Travis appreciation is more variable and location-dependent. Properties in 
 
 Off-market acquisitions on Lake Austin, when executed well, can offer meaningful value relative to publicly marketed properties. Transactions handled quietly through advisor relationships sometimes reflect less competitive pricing, particularly when sellers prioritize discretion and certainty of close over maximum exposure. Our <a href="/blog/beyond-zillow-luxury-buyers-austin" class="${LINK}">waterfront buying strategy notes on private inventory</a> go deeper into how those transactions actually come together.
 
+### Current Market Balance: Lake Austin vs Lake Travis
+
+The relative posture of each market shifts continuously with absorption, inventory, and pricing behavior. The two readings below pull live data from our market intelligence partner and translate it into a single buyer-versus-seller balance score for each lake's $2M+ waterfront tier. Read them as directional context for negotiation posture, not as a substitute for a property-specific evaluation.
+
+:::intel-gauge-lake-austin
+:::
+
+:::intel-gauge-lake-travis
+:::
+
+
 ## Views, Scenery, and the View Premium on Lake Travis
 
 The two lakes offer fundamentally different visual experiences. Lake Austin is intimate, tree-lined, and contained. The banks are close, the water is calm, and the surrounding landscape is lush and verdant. Views are beautiful but framed rather than expansive. You are looking across a relatively narrow body of water at wooded hillsides and established homes. The setting feels private and residential.

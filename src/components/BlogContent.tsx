@@ -452,7 +452,7 @@ const BlogContent = ({ content, afterGlance }: BlogContentProps) => {
             );
           case "intel-gauge-lake-austin":
             return (
-              <IntelInsert key={idx}>
+              <IntelInsert key={idx} tight>
                 <MarketBalanceGauge
                   communityName="Lake Austin Waterfront · $2M+"
                   marketName="West Austin"
@@ -463,7 +463,7 @@ const BlogContent = ({ content, afterGlance }: BlogContentProps) => {
             );
           case "intel-gauge-lake-travis":
             return (
-              <IntelInsert key={idx}>
+              <IntelInsert key={idx} tight>
                 <MarketBalanceGauge
                   communityName="Lake Travis Waterfront · $2M+"
                   marketName="Lake Travis"
@@ -472,6 +472,7 @@ const BlogContent = ({ content, afterGlance }: BlogContentProps) => {
                 />
               </IntelInsert>
             );
+
           case "intel-rates":
             return (
               <IntelInsert key={idx}>

@@ -299,15 +299,16 @@ const OffMarketRealEstateAustin = () => {
       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
       <section className="relative min-h-[100svh] md:min-h-[720px] lg:h-[820px] xl:h-[860px] 2xl:h-[880px] flex items-center pt-14">
         <div className="absolute inset-0">
-          <img
+          <OptimizedImage
             src={heroImage}
             alt="Luxury Austin estate representing exclusive off-market real estate opportunities"
             title="Off-market homes in Austin Texas, private listings not on Zillow or MLS"
-            className="w-full h-full object-cover"
-            loading="eager"
+            width={1920}
+            height={1080}
+            priority
+            sizes="100vw"
             decoding="sync"
-            // @ts-expect-error fetchpriority is a valid HTML attribute
-            fetchpriority="high"
+            className="w-full h-full object-cover"
           />
           <div className="absolute inset-0" style={{ backgroundColor: "rgba(12, 15, 36, 0.3)" }} />
           {/* Gradient overlay for text readability */}

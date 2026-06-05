@@ -16,6 +16,7 @@ const GlobalLuxuryAdvertising = lazy(() => import("@/components/GlobalLuxuryAdve
 const CinematicVideoSection = lazy(() => import("@/components/CinematicVideoSection"));
 const Footer = lazy(() => import("@/components/Footer"));
 import LandCrossLinks from "@/components/LandCrossLinks";
+import MarketBalanceGauge from "@/components/market-intel/MarketBalanceGauge";
 
 import {
   CheckCircle,
@@ -665,6 +666,13 @@ const Sell = () => {
           </div>
         </div>
       </section>
+
+      {/* ── Greater Austin Metro — Buyer/Seller Market Conditions ── */}
+      <MarketBalanceGauge
+        communityName="Greater Austin Metro"
+        marketName="Austin Metro"
+        eyebrow="Greater Austin Metro · Market Intelligence"
+      />
 
       {/* ── Why List With Taylor ── */}
       <section className="py-28 bg-background">

@@ -1,4 +1,6 @@
-import { renderToString } from "react-dom/server";
+/// <reference types="node" />
+import { PassThrough } from "stream";
+import { renderToPipeableStream } from "react-dom/server";
 import { StaticRouter } from "react-router-dom/server";
 import { QueryClient } from "@tanstack/react-query";
 import { HelmetProvider, type HelmetServerState } from "react-helmet-async";
@@ -11,8 +13,9 @@ import { seoBlogPosts } from "@/data/seoBlogPosts";
 const SITE_URL = "https://www.echelonpropertygroup.com";
 
 type HeadTag = {
-  type: "meta" | "link";
+  type: "meta" | "link" | "script";
   props: Record<string, string>;
+  children?: string;
 };
 
 const staticRoutes = [
@@ -38,8 +41,6 @@ const staticRoutes = [
   "/austin-commercial-real-estate",
   "/home-value-austin",
   "/luxury-real-estate-austin",
-  
-  
   "/austin-real-estate-investment",
   "/land-for-sale-austin",
   "/past-transactions",
@@ -71,52 +72,60 @@ const allPrerenderRoutes = Array.from(
 
 const parseAttributes = (attributes: string) => {
   const props: Record<string, string> = {};
-  const attrRegex = /([\w:-]+)="([^"]*)"/g;
+  const attrRegex = /([\w:-]+)(?:="([^"]*)")?/g;
   let match: RegExpExecArray | null;
 
   while ((match = attrRegex.exec(attributes)) !== null) {
     const key = match[1];
-    const value = match[2];
+    const value = match[2] ?? "";
     if (key !== "data-rh") props[key] = value;
   }
 
   return props;
 };
 
-const parseHeadTags = (markup: string, expectedTag: "meta" | "link") => {
+const parseSelfClosing = (markup: string, tag: "meta" | "link") => {
   const tags: HeadTag[] = [];
-  const tagRegex = new RegExp(`<${expectedTag}\\s+([^>]*?)\\/?>(?:<\\/${expectedTag}>)?`, "g");
-  let match: RegExpExecArray | null;
-
-  while ((match = tagRegex.exec(markup)) !== null) {
-    const props = parseAttributes(match[1]);
-    if (Object.keys(props).length > 0) {
-      tags.push({ type: expectedTag, props });
-    }
+  const re = new RegExp(`<${tag}\\s+([^>]*?)\\/?>(?:<\\/${tag}>)?`, "g");
+  let m: RegExpExecArray | null;
+  while ((m = re.exec(markup)) !== null) {
+    const props = parseAttributes(m[1]);
+    if (Object.keys(props).length > 0) tags.push({ type: tag, props });
   }
+  return tags;
+};
 
+const parseScripts = (markup: string) => {
+  const tags: HeadTag[] = [];
+  const re = /<script\s*([^>]*)>([\s\S]*?)<\/script>/g;
+  let m: RegExpExecArray | null;
+  while ((m = re.exec(markup)) !== null) {
+    const props = parseAttributes(m[1] || "");
+    tags.push({ type: "script", props, children: m[2] });
+  }
   return tags;
 };
 
 const extractTitle = (titleMarkup: string) => {
   const titleMatch = /<title[^>]*>([\s\S]*?)<\/title>/.exec(titleMarkup);
-  return titleMatch?.[1]?.trim() || "Echelon Property Group";
+  return titleMatch?.[1]?.trim() || "Echelon Property Group | Austin Luxury Real Estate";
 };
 
 const buildHead = (helmet?: HelmetServerState) => {
   if (!helmet) {
     return {
-      title: "Echelon Property Group",
+      title: "Echelon Property Group | Austin Luxury Real Estate",
       elements: new Set<HeadTag>(),
     };
   }
 
-  const metaTags = parseHeadTags(helmet.meta.toString(), "meta");
-  const linkTags = parseHeadTags(helmet.link.toString(), "link");
+  const metaTags = parseSelfClosing(helmet.meta.toString(), "meta");
+  const linkTags = parseSelfClosing(helmet.link.toString(), "link");
+  const scriptTags = parseScripts(helmet.script.toString());
 
   return {
     title: extractTitle(helmet.title.toString()),
-    elements: new Set<HeadTag>([...metaTags, ...linkTags]),
+    elements: new Set<HeadTag>([...metaTags, ...linkTags, ...scriptTags]),
   };
 };
 
@@ -129,22 +138,53 @@ const resolvePrerenderPath = (url: string) => {
   }
 };
 
+const renderAppToString = (routePath: string, helmetContext: { helmet?: HelmetServerState }) => {
+  const queryClient = new QueryClient();
+
+  return new Promise<string>((resolve, reject) => {
+    let html = "";
+    const sink = new PassThrough();
+    sink.setEncoding("utf-8");
+    sink.on("data", (chunk: string) => {
+      html += chunk;
+    });
+    sink.on("end", () => resolve(html));
+    sink.on("error", reject);
+
+    const { pipe } = renderToPipeableStream(
+      <HelmetProvider context={helmetContext}>
+        <AppShell queryClient={queryClient}>
+          <StaticRouter location={routePath}>
+            <main id="main-content">
+              <AppRoutes />
+            </main>
+          </StaticRouter>
+        </AppShell>
+      </HelmetProvider>,
+      {
+        // Wait until all Suspense boundaries (React.lazy chunks) resolve so
+        // every route's <SEOHead> / <SchemaMarkup> Helmet tags are captured.
+        onAllReady() {
+          pipe(sink);
+        },
+        onShellError(err) {
+          reject(err);
+        },
+        onError(err) {
+          // Non-fatal SSR errors are reported but do not abort the render.
+          // eslint-disable-next-line no-console
+          console.error(`[prerender] ${routePath}:`, err);
+        },
+      },
+    );
+  });
+};
+
 export async function prerender(data: { url: string }) {
   const helmetContext: { helmet?: HelmetServerState } = {};
-  const queryClient = new QueryClient();
   const routePath = resolvePrerenderPath(data.url);
 
-  const html = renderToString(
-    <HelmetProvider context={helmetContext}>
-      <AppShell queryClient={queryClient}>
-        <StaticRouter location={routePath}>
-          <main id="main-content">
-            <AppRoutes />
-          </main>
-        </StaticRouter>
-      </AppShell>
-    </HelmetProvider>
-  );
+  const html = await renderAppToString(routePath, helmetContext);
 
   return {
     html,

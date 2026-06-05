@@ -256,14 +256,12 @@ const About = () => {
               </div>
               <div className="relative">
                 <div className="overflow-hidden">
-                  <img
+                  <OptimizedImage
                     src={austinLifestyle}
                     alt="Luxury Austin real estate at golden hour"
-                    className="w-full h-[400px] md:h-[480px] object-cover"
-                    loading="lazy"
                     width={800}
                     height={600}
-                    decoding="async"
+                    className="w-full h-[400px] md:h-[480px] object-cover"
                   />
                   <div className="absolute inset-0 bg-foreground/5" />
                 </div>

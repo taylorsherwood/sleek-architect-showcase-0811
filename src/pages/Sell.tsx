@@ -491,7 +491,7 @@ const Sell = () => {
           <div className="max-w-[780px] mx-auto text-center mb-8 md:mb-10">
             <p className="text-minimal text-gold mb-4">COMPLIMENTARY VALUATION</p>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-normal text-primary leading-[1.1] mb-4 text-balance">
-              What's Your Austin Home Worth?
+              What's Your Austin Property Worth?
             </h2>
             <p className="text-foreground/65 leading-relaxed max-w-2xl mx-auto text-base md:text-lg text-balance">
               A discreet, data-backed estimate informed by recent comparable sales and our private transaction insights.

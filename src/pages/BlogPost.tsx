@@ -28,6 +28,11 @@ const BlogPost = () => {
   if (!post) {
     return (
       <div className="min-h-screen bg-background">
+        <SEOHead
+          title="Post Not Found | Echelon Property Group"
+          description="The blog post you are looking for is not available. Browse Echelon Property Group's Austin luxury real estate insights."
+          noindex
+        />
         <Navigation />
       <div className="h-12 md:h-20" aria-hidden="true" />
         <div className="pt-32 pb-32">

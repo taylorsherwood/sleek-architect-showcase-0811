@@ -325,7 +325,7 @@ const SearchSection = () => {
 const Index = () => (
   <div className="min-h-screen bg-background">
     <SEOHead
-      title="Austin Real Estate Advisory | Echelon Property Group"
+      title="\n"
       description="Strategic Austin real estate advisory across residential, ranch, land, redevelopment, and investment property. Off-market access and disciplined execution."
       ogTitle="Strategic Austin Real Estate Advisory | Echelon Property Group"
       ogDescription="Private representation for Austin's most valuable real estate. Residential, ranch, land, redevelopment, and investment, with off-market access."

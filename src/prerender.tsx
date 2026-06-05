@@ -136,46 +136,53 @@ const resolvePrerenderPath = (url: string) => {
   }
 };
 
-const renderAppToString = (routePath: string, helmetContext: { helmet?: HelmetServerState }) => {
+const flushAsync = () =>
+  new Promise<void>((resolve) => setTimeout(resolve, 0));
+
+/**
+ * Render the React tree to a string. React 18's renderToString supports
+ * Suspense by emitting fallback content when a lazy import throws a
+ * pending promise. We render in a short loop so any React.lazy chunks
+ * that resolved after the first pass are inlined on a subsequent pass.
+ * Helmet captures from the FINAL render, which is the one whose head
+ * tags we ship.
+ */
+const renderAppToString = async (
+  routePath: string,
+  helmetContext: { helmet?: HelmetServerState },
+) => {
   const queryClient = new QueryClient();
 
-  return new Promise<string>((resolve, reject) => {
-    let html = "";
-    const sink = new PassThrough();
-    sink.setEncoding("utf-8");
-    sink.on("data", (chunk: string) => {
-      html += chunk;
-    });
-    sink.on("end", () => resolve(html));
-    sink.on("error", reject);
+  const tree = (
+    <HelmetProvider context={helmetContext}>
+      <AppShell queryClient={queryClient}>
+        <StaticRouter location={routePath}>
+          <main id="main-content">
+            <AppRoutes />
+          </main>
+        </StaticRouter>
+      </AppShell>
+    </HelmetProvider>
+  );
 
-    const { pipe } = renderToPipeableStream(
-      <HelmetProvider context={helmetContext}>
-        <AppShell queryClient={queryClient}>
-          <StaticRouter location={routePath}>
-            <main id="main-content">
-              <AppRoutes />
-            </main>
-          </StaticRouter>
-        </AppShell>
-      </HelmetProvider>,
-      {
-        // Wait until all Suspense boundaries (React.lazy chunks) resolve so
-        // every route's <SEOHead> / <SchemaMarkup> Helmet tags are captured.
-        onAllReady() {
-          pipe(sink);
-        },
-        onShellError(err) {
-          reject(err);
-        },
-        onError(err) {
-          // Non-fatal SSR errors are reported but do not abort the render.
-          // eslint-disable-next-line no-console
-          console.error(`[prerender] ${routePath}:`, err);
-        },
-      },
-    );
-  });
+  let html = "";
+  let previous = "";
+  for (let attempt = 0; attempt < 6; attempt++) {
+    try {
+      html = renderToString(tree);
+    } catch (err) {
+      // eslint-disable-next-line no-console
+      console.error(`[prerender] ${routePath}:`, err);
+      html = "";
+    }
+    if (html && html === previous) break;
+    previous = html;
+    // Allow any pending React.lazy() module promises to resolve before
+    // the next render pass.
+    await flushAsync();
+  }
+
+  return html;
 };
 
 export async function prerender(data: { url: string }) {

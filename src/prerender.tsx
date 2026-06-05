@@ -1,4 +1,4 @@
-import { PassThrough } from "node:stream";
+import { PassThrough } from "stream";
 import { renderToPipeableStream } from "react-dom/server";
 import { StaticRouter } from "react-router-dom/server";
 import { QueryClient } from "@tanstack/react-query";

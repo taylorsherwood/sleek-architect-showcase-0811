@@ -27,6 +27,7 @@ import blogAustinInfillDevelopment from "@/assets/blog/austin-infill-development
 import blogExoticRanchHillCountry from "@/assets/blog/exotic-ranch-hill-country.webp.asset.json";
 import blogWildlifeAgExemption from "@/assets/blog/wildlife-ag-exemption-texas-longhorn.jpg.asset.json";
 import blogExclusiveListingAccess from "@/assets/blog/exclusive-listing-access-austin.jpg.asset.json";
+import blogLakeAustinVsTravis from "@/assets/blog/lake-austin-vs-lake-travis-waterfront.jpg.asset.json";
 
 
 

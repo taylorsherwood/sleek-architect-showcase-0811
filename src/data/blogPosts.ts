@@ -89,6 +89,18 @@ Views | Intimate, tree-lined, framed | Expansive, elevated, Hill Country horizon
 Best-fit buyer | Primary residence, school-focused families, wake-boating | Second homes, view-driven, open-water and sailing
 :::
 
+### Current Market Balance: Lake Austin vs Lake Travis
+
+The two readings below pull live data from our market intelligence partner and translate it into a single buyer-versus-seller balance score for each lake's $2M+ waterfront tier. Read them as directional context for negotiation posture, not as a substitute for a property-specific evaluation.
+
+:::intel-gauge-lake-austin
+:::
+
+:::intel-gauge-lake-travis
+:::
+
+
+
 ## Water Level Stability
 
 The most consequential difference between the two lakes is what happens to the water when it stops raining. Lake Austin is a constant-level lake, held within a narrow band year-round by Tom Miller Dam and the Mansfield Dam release schedule managed by the Lower Colorado River Authority. The water you see when you tour a property is the water you will see in five years. Docks, boathouses, and shoreline improvements are designed against a stable elevation, and that stability is one of the quiet reasons Lake Austin has historically commanded a premium.

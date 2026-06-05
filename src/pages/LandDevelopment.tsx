@@ -1227,7 +1227,7 @@ const LandDevelopment = () => {
                       className="text-foreground font-normal whitespace-nowrap"
                       style={{ fontFamily: "'Cinzel', serif", fontSize: "1.05rem" }}
                     >
-                      Development
+                      Acquisition &amp; Development
                     </p>
                   </span>
                 </div>

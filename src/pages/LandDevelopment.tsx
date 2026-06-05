@@ -960,10 +960,8 @@ const LandDevelopment = () => {
         </div>
       </section>
 
-      <div className="h-16 md:h-24" aria-hidden="true" />
-
       {/* ── SECTION 6: PRIVATE OPPORTUNITIES ───────────────────── */}
-      <section className="bg-background">
+      <section className="bg-background pt-16 md:pt-24">
         <div className="container mx-auto px-6 md:px-12">
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-10 xl:gap-12 items-center">
             <div className="lg:col-span-6">

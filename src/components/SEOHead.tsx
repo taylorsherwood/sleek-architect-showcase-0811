@@ -7,7 +7,7 @@ const HOMEPAGE_TITLE = `${BRAND_NAME} | Austin Luxury Real Estate`;
 const BRAND_SUFFIX_PATTERN = /\s*\|\s*Echelon Property Group(?: Austin)?\s*$/i;
 
 interface SEOHeadProps {
-  title: string;
+  title?: string | null;
   description?: string;
   canonical?: string;
   ogTitle?: string;
@@ -17,9 +17,9 @@ interface SEOHeadProps {
   noindex?: boolean;
 }
 
-const normalizePageTitle = (rawTitle: string) => {
-  const pageTitle = rawTitle.replace(BRAND_SUFFIX_PATTERN, "").trim();
-  return pageTitle.length > 0 ? pageTitle : "Home";
+const normalizePageTitle = (rawTitle?: string | null) => {
+  if (typeof rawTitle !== "string") return "";
+  return rawTitle.replace(/\s+/g, " ").replace(BRAND_SUFFIX_PATTERN, "").trim();
 };
 
 const resolveCanonicalUrl = (pathname: string, canonical?: string) => {
@@ -31,8 +31,9 @@ const resolveCanonicalUrl = (pathname: string, canonical?: string) => {
 const SEOHead = ({ title, description, canonical, ogTitle, ogDescription, ogType = "website", noindex = false }: SEOHeadProps) => {
   const { pathname } = useLocation();
   const pageTitle = normalizePageTitle(title);
-  const seoTitle = `${pageTitle} | ${BRAND_NAME}`;
-  const seoDescription = description || `Explore ${pageTitle} with ${BRAND_NAME}. View homes, market insights, and real estate opportunities in Austin Texas.`;
+  const seoTitle = pageTitle ? `${pageTitle} | ${BRAND_NAME}` : HOMEPAGE_TITLE;
+  const descriptionSubject = pageTitle || "Austin luxury real estate";
+  const seoDescription = description || `Explore ${descriptionSubject} with ${BRAND_NAME}. View homes, market insights, and real estate opportunities in Austin Texas.`;
   const canonicalUrl = resolveCanonicalUrl(pathname, canonical);
   const openGraphTitle = ogTitle || seoTitle;
   const openGraphDescription = ogDescription || seoDescription;

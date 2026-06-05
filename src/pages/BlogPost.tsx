@@ -102,7 +102,7 @@ const BlogPost = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title={post.metaTitle || post.title}
+        title="\n"
         description={post.excerpt}
         ogType="article"
         noindex={["sustainable-architecture-future", "minimalism-modern-living", "urban-planning-community-spaces"].includes(post.id)}

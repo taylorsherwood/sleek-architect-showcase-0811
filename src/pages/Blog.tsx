@@ -69,7 +69,7 @@ const Blog = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Blog | Echelon Property Group"
+        title="\n"
         description="Austin luxury real estate blog, market trends, neighborhood guides, investment insights, and expert analysis from Echelon Property Group."
       />
       <SchemaMarkup schema={realEstateAgentSchema} />

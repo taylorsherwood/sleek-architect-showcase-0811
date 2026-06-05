@@ -293,7 +293,7 @@ const Buy = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Buy a Home in Austin TX | Echelon Property Group"
+        title="\n"
         description="Expert buyer representation for Austin luxury homes and investment properties. Off-market access, private showings, and strategic guidance."
         canonical="https://www.echelonpropertygroup.com/buy" />
       <SchemaMarkup schema={realEstateAgentSchema} />

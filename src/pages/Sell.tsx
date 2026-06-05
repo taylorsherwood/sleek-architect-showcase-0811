@@ -401,7 +401,7 @@ const Sell = () => {
       <section className="relative min-h-[780px] md:min-h-[720px] lg:h-[820px] xl:h-[860px] 2xl:h-[880px] flex flex-col justify-end overflow-hidden bg-primary pt-28 md:pt-0">
         <div className="absolute inset-0">
           {/* Mobile: keep existing image as LCP. Hidden on md+ */}
-          <img src={heroImg} alt="Luxury property in Austin Texas" title="Sell your Austin luxury home, Echelon Property Group" className="md:hidden w-full h-full object-cover" loading="eager" decoding="async" fetchPriority="high" sizes="100vw" width={1920} height={1080} />
+          <OptimizedImage src={heroImg} alt="Luxury property in Austin Texas" title="Sell your Austin luxury home, Echelon Property Group" width={1920} height={1080} priority sizes="100vw" className="md:hidden w-full h-full object-cover" />
           {/* Desktop: poster paints instantly (LCP), video plays once on load and again when user scrolls back to top */}
           <video
             ref={heroVideoRef}

@@ -86,7 +86,7 @@ Boating culture | Wake surfing, glassy mornings | Powerboating, sailing, big-cov
 Inventory | ~21 miles of shoreline, structurally thin | 270-plus miles, broad and varied
 Off-market activity | High, especially at the luxury tier | Moderate, MLS more representative
 Views | Intimate, tree-lined, framed | Expansive, elevated, Hill Country horizon
-Best-fit buyer | Primary residence, school-focused families, wake-boating households | Second homes, view-driven buyers, open-water and sailing households
+Best-fit buyer | Primary residence, school-focused families, wake-boating | Second homes, view-driven buyers, open-water and sailing
 :::
 
 ## Water Level Stability

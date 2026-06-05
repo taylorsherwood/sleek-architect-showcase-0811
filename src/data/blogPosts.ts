@@ -125,6 +125,8 @@ Lake Travis is a different kind of boating environment. The lake's scale, depth,
 
 Buyers who already own a surf-specific wakeboat and run morning sets gravitate to Lake Austin. Buyers who want a faster, bigger, more open-water experience gravitate to Lake Travis. Neither group is wrong. They are simply optimizing for different days on the water.
 
+<figure class="my-10 -mx-6 md:mx-0"><img src="/__l5e/assets-v1/c8a05f1f-a9a8-48ad-ba8d-95ffbcaf8120/lake-travis-hill-country-estate.jpg" alt="Aerial view of a Hill Country estate set above Lake Travis at sunset with open water and ridgelines in the distance" loading="lazy" class="w-full h-auto object-cover" /><figcaption class="mt-3 text-xs md:text-sm text-foreground/60 italic text-center px-4">A Hill Country estate above Lake Travis. Open water, elevation, and Hill Country horizon define the Lake Travis ownership experience.</figcaption></figure>
+
 ## The Boat-to-Restaurant Lifestyle
 
 One of the underrated parts of waterfront ownership on either lake is the ability to take the boat to dinner. Both lakes support that lifestyle in their own way.
@@ -152,6 +154,8 @@ Lake Austin waterfront sits among the most expensive waterfront real estate in T
 Lake Travis offers a meaningfully broader range. Lago Vista, Jonestown, and Apache Shores on the south shore have historically been the most accessible entry points to waterfront and water-access ownership in the Austin area. Mid-tier communities like Rough Hollow and Steiner Ranch carry a higher floor but remain well below comparable Lake Austin pricing. At the upper end, Costa Bella, The Reserve at Lake Travis, Travis Club, and Lakecliff estates can approach Lake Austin numbers on premium lots with significant acreage and open water views.
 
 What buyers often miss is that the two lakes are not pricing the same product. Lake Austin pricing reflects scarcity, stability, and urban convenience. Lake Travis pricing reflects scale, view, acreage, and a different lifestyle proposition. A buyer who simply compares price per square foot or dollars per linear foot of waterfront without accounting for those structural differences usually draws the wrong conclusion about value.
+
+<figure class="my-10 -mx-6 md:mx-0"><img src="/__l5e/assets-v1/bae312d5-73d0-4b5c-a573-3b984f0f96c6/lake-austin-waterfront-twilight.avif" alt="Lake Austin waterfront home at twilight with dock lighting and calm water reflecting the Hill Country shoreline" loading="lazy" class="w-full h-auto object-cover" /><figcaption class="mt-3 text-xs md:text-sm text-foreground/60 italic text-center px-4">Lake Austin at twilight. Constant water levels and tree-lined banks support a quieter, more residential rhythm of waterfront ownership.</figcaption></figure>
 
 ## Waterfront Lot Depth and Shoreline Usability
 

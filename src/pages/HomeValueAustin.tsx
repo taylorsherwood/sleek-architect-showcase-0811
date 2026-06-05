@@ -122,8 +122,8 @@ const HomeValueAustin = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Free Austin Home Valuation | Echelon Property Group"
-        description="Request a free, confidential home valuation from Echelon Property Group. Find out what your Austin luxury home is worth using local market data and expertise."
+        title="Free Austin Property Valuation | Echelon Property Group"
+        description="Request a free, confidential property valuation from Echelon Property Group. Find out what your Austin luxury property is worth using local market data and expertise."
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createFAQSchema(faqs)} />
@@ -136,10 +136,11 @@ const HomeValueAustin = () => {
           <div className="max-w-4xl mx-auto">
             <p className="text-minimal text-gold mb-4">FREE HOME VALUATION</p>
             <h1 className="text-3xl sm:text-5xl md:text-7xl font-display font-normal text-architectural mb-8">
-              Free Austin Home Valuation
+              Free Austin Property Valuation
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Find out what your Austin home is worth. Request a confidential property valuation 
+              Find out what your Austin property is worth. Request a confidential property valuation 
+
               backed by local market data, recent sales analysis, and neighborhood expertise from 
               Echelon Property Group.
             </p>

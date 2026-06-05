@@ -9,14 +9,14 @@
       (function () {
         try {
           var isDeepLink = window.location.pathname !== '/';
-          var hasGenericHomeTitle = document.title === 'Echelon Property Group' || document.title === 'Echelon Property Group — Austin Luxury Real Estate';
+          var hasGenericHomeTitle = document.title === 'Echelon Property Group' || document.title === 'Echelon Property Group — Austin Luxury Real Estate' || document.title === 'Echelon Property Group | Austin Luxury Real Estate';
           if (isDeepLink && hasGenericHomeTitle) {
             document.documentElement.setAttribute('data-route-pending', 'true');
           }
         } catch (_) {}
       })();
     </script>
-    <title>Echelon Property Group — Austin Luxury Real Estate</title>
+    <title>Echelon Property Group | Austin Luxury Real Estate</title>
     <meta name="description" content="Echelon Property Group is an Austin luxury real estate advisory specializing in off-market opportunities, discreet representation, and design-forward strategy for buyers, sellers, and investors." />
     <meta name="google-site-verification" content="dhXAgewx3oiXuLhNF6giXHxaz8pFcyt_MogbeQKtTfA" />
     <meta name="author" content="Echelon Property Group" />

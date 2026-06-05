@@ -9,7 +9,6 @@ import SchemaMarkup, {
 import {
   getLandRanchMarket,
   getRelatedLandRanchMarkets,
-  landRanchMarkets,
   type LandRanchMarket,
 } from "@/data/landRanchMarkets";
 

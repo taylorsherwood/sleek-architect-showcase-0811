@@ -245,21 +245,18 @@ const LandDevelopment = () => {
 
   useEffect(() => {
     const el = relationshipRef.current;
-    if (!el || relationshipInView) return;
+    if (!el) return;
     const obs = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setRelationshipInView(true);
-            obs.disconnect();
-          }
+          setRelationshipInView(entry.isIntersecting);
         });
       },
       { threshold: 0.35 }
     );
     obs.observe(el);
     return () => obs.disconnect();
-  }, [relationshipInView]);
+  }, []);
 
   const scrollThemes = (direction: "prev" | "next") => {
     const el = themesScrollerRef.current;

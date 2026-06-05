@@ -63,7 +63,7 @@ export const blogPosts: BlogPost[] = [
     author: "Taylor Sherwood",
     date: "2026-06-05",
     readTime: "14 min read",
-    category: "NEIGHBORHOODS",
+    category: "BUYER STRATEGY",
     image: blogLakeAustinVsTravis.url,
     heroImage: blogLakeAustinVsTravis.url,
     imageAlt: "Aerial view of Lake Travis waterfront homes, private docks, and a marina along the Hill Country shoreline near Austin",

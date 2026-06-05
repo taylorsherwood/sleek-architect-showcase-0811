@@ -118,7 +118,7 @@ The compounding effect of all three barriers is significant. A buyer without str
 
 In most traditional markets, information is relatively democratized. Listings appear publicly, buyers can research them independently, and the playing field is reasonably level. Austin's luxury segment does not function this way. It operates more like a private network than a traditional marketplace, and that distinction has real consequences for buyers who arrive without local context.
 
-Low inventory and sustained demand in Austin's upper tier have intensified this dynamic. When there are fewer available properties than qualified buyers, sellers gain leverage over the process. They can afford to be selective about how and to whom they sell. That selectivity naturally flows through the agent network, reinforcing the information gap between connected and unconnected buyers. Tracking <a href="/austin-luxury-market-trends" class="${LINK}">Austin luxury inventory trends</a> makes clear how consistently tight supply has been at the upper end of the market.
+Low inventory and sustained demand in Austin's upper tier have intensified this dynamic. When there are fewer available properties than qualified buyers, sellers gain leverage over the process. They can afford to be selective about how and to whom they sell. That selectivity naturally flows through the agent network, reinforcing the information gap between connected and unconnected buyers. Tracking <a href="/blog/austin-luxury-market-trends" class="${LINK}">Austin luxury inventory trends</a> makes clear how consistently tight supply has been at the upper end of the market.
 
 Relocation buyers face compounded disadvantages here. Austin has seen consistent inbound migration from California, New York, and Chicago over the past several years, and many of those buyers arrive with significant financial resources but no local market familiarity. They may have worked with excellent agents in their home markets. Those relationships do not transfer. An agent with deep knowledge of Pacific Heights or the Upper East Side has no standing in the Barton Creek or Westlake Hills agent community, and that lack of standing translates directly into reduced access.
 
@@ -146,7 +146,7 @@ Buyer positioning also matters in ways that go beyond financial readiness. Selle
 
 It is easy for buyers to experience the private market as a closed door. Understanding why sellers choose limited exposure makes it easier to approach these transactions with the right mindset, and to see that the exclusivity often creates genuine opportunity for qualified buyers.
 
-For many luxury sellers in Austin, choosing a private transaction is a deliberate strategic decision, not a default. Privacy is the most common driver. Executives, professional athletes, and public figures who own property in Westlake Hills or along the Lake Austin waterfront have legitimate reasons to avoid the public exposure that comes with a traditional listing. They do not want their home photographed and distributed across public platforms. They do not want strangers walking through during open houses. A private sale gives them control over who sees the property and how the process unfolds. The motivations behind why <a href="/blog/why-austin-luxury-sellers-going-quiet" class="${LINK}">Austin luxury sellers are going quiet</a> reflect a broader shift in how high-net-worth individuals approach real estate transactions.
+For many luxury sellers in Austin, choosing a private transaction is a deliberate strategic decision, not a default. Privacy is the most common driver. Executives, professional athletes, and public figures who own property in Westlake Hills or along the Lake Austin waterfront have legitimate reasons to avoid the public exposure that comes with a traditional listing. They do not want their home photographed and distributed across public platforms. They do not want strangers walking through during open houses. A private sale gives them control over who sees the property and how the process unfolds. The motivations behind why <a href="/blog/why-austin-luxury-sellers-are-going-quiet" class="${LINK}">Austin luxury sellers are going quiet</a> reflect a broader shift in how high-net-worth individuals approach real estate transactions.
 
 Controlling the buyer pool is a related motivation. A traditional listing is open to anyone who can arrange a showing. A private process allows the seller to work only with buyers who have been vetted, who are serious, and who have the financial standing to close. For a seller who values their time and their privacy, that filtering is worth a great deal.
 
@@ -162,7 +162,7 @@ The gap between buyers who see everything and buyers who see only what is public
 
 If you are searching for a property at the upper end of Austin's market and your current process feels incomplete, it probably is. The inventory you are seeing may represent only a portion of what has actually traded or what is quietly available.
 
-Echelon Property Group works specifically at this level of the Austin market, with established relationships across the neighborhoods and agent networks where private transactions occur. If you have specific search criteria and want to understand what may be available outside the public market, we are glad to have that conversation. Learn more about <a href="/services" class="${LINK}">our services</a> and <a href="/contact" class="${LINK}">reach out</a> to discuss what your search actually requires.
+Echelon Property Group works specifically at this level of the Austin market, with established relationships across the neighborhoods and agent networks where private transactions occur. If you have specific search criteria and want to understand what may be available outside the public market, we are glad to have that conversation. Learn more about <a href="/about-austin-real-estate-advisory" class="${LINK}">our services</a> and <a href="/contact" class="${LINK}">reach out</a> to discuss what your search actually requires.
 `,
   },
   {
@@ -1397,7 +1397,7 @@ To illustrate the concept, consider a hypothetical scenario. Imagine a 10,000 sq
 
 Austin-specific cost context matters significantly right now. Construction costs, permitting timelines, and impact fees in Austin have all increased materially over the past several years. A pro forma built on 2021 assumptions is not a reliable guide to what pencils in 2026. Any financial feasibility analysis should use current cost data, current market rents or sale prices, and current financing terms.
 
-Cap rates, construction costs, and financing conditions vary by use type and submarket. A multifamily project in East Austin operates under different economics than a commercial development near the Domain or a luxury residential teardown in Westlake. Generic analysis rarely produces useful conclusions. The inputs need to reflect the specific use, the specific submarket, and current <a href="/austin-luxury-market-trends" class="${LINK}">market conditions</a>.
+Cap rates, construction costs, and financing conditions vary by use type and submarket. A multifamily project in East Austin operates under different economics than a commercial development near the Domain or a luxury residential teardown in Westlake. Generic analysis rarely produces useful conclusions. The inputs need to reflect the specific use, the specific submarket, and current <a href="/blog/austin-luxury-market-trends" class="${LINK}">market conditions</a>.
 
 ### How do developers determine land value?
 
@@ -1503,7 +1503,7 @@ The goal is not the highest possible list price.
 
 The goal is the most strategic one.
 
-This guide explains the framework experienced luxury advisors use to evaluate, position, and price high-end real estate throughout Austin. If you are preparing to sell a <a href="/communities/lake-austin" class="${LINK}">Lake Austin waterfront</a>, a custom estate in <a href="/communities/rob-roy" class="${LINK}">Rob Roy</a> or <a href="/communities/davenport-ranch" class="${LINK}">Davenport Ranch</a>, a Barton Creek golf-course residence, or a lock-and-leave residence above downtown, the framework below leads to more informed decisions and stronger outcomes. Review our current <a href="/market-intelligence" class="${LINK}">market intelligence briefing</a> and <a href="/austin-luxury-market-trends" class="${LINK}">Austin luxury market trends</a> as you read.
+This guide explains the framework experienced luxury advisors use to evaluate, position, and price high-end real estate throughout Austin. If you are preparing to sell a <a href="/communities/lake-austin" class="${LINK}">Lake Austin waterfront</a>, a custom estate in <a href="/communities/rob-roy" class="${LINK}">Rob Roy</a> or <a href="/communities/davenport-ranch" class="${LINK}">Davenport Ranch</a>, a Barton Creek golf-course residence, or a lock-and-leave residence above downtown, the framework below leads to more informed decisions and stronger outcomes. Review our current <a href="/market-intelligence" class="${LINK}">market intelligence briefing</a> and <a href="/blog/austin-luxury-market-trends" class="${LINK}">Austin luxury market trends</a> as you read.
 
 :::intel-luxury-snapshot
 :::
@@ -2848,7 +2848,7 @@ Premier Austin brokerages understand how to:
 ### Questions to Ask
 
 - What is their average list-to-sale ratio above $2M or $3M?
-- How do they approach pricing in slower <a href="/austin-luxury-market-trends" class="${LINK}">luxury cycles</a>?
+- How do they approach pricing in slower <a href="/blog/austin-luxury-market-trends" class="${LINK}">luxury cycles</a>?
 - Can they walk through a difficult negotiation they successfully managed?
 - How do they protect leverage during confidential transactions?
 
@@ -3387,7 +3387,7 @@ Pay close attention to:
 - neighborhood trajectory
 - long-term scarcity
 
-Austin's luxury submarkets are not all evolving equally. Some continue strengthening as wealth migration, infrastructure investment, and <a href="/austin-luxury-market-trends" class="${LINK}">luxury development</a> accelerate. Others have become increasingly saturated with speculative construction lacking long-term differentiation.
+Austin's luxury submarkets are not all evolving equally. Some continue strengthening as wealth migration, infrastructure investment, and <a href="/blog/austin-luxury-market-trends" class="${LINK}">luxury development</a> accelerate. Others have become increasingly saturated with speculative construction lacking long-term differentiation.
 
 That distinction matters.
 
@@ -3429,7 +3429,7 @@ An experienced <a href="/about" class="${LINK}">luxury advisor</a> should provid
 - off-market market intelligence
 - neighborhood trajectory analysis
 - seller motivation insights
-- context around current <a href="/austin-luxury-market-trends" class="${LINK}">luxury inventory conditions</a>
+- context around current <a href="/blog/austin-luxury-market-trends" class="${LINK}">luxury inventory conditions</a>
 
 The strongest negotiators are rarely the loudest. They are the most informed.
 
@@ -3791,7 +3791,7 @@ Clients should also ask how brokerages handle conflicts of interest and dual age
 
 Strong luxury advisors prioritize advocacy and transparency over transaction velocity.
 
-Staying informed on <a href="/austin-luxury-market-trends" class="${LINK}">Austin luxury market trends</a> helps strengthen every negotiation decision.
+Staying informed on <a href="/blog/austin-luxury-market-trends" class="${LINK}">Austin luxury market trends</a> helps strengthen every negotiation decision.
 
 ### Implementation Steps
 
@@ -4841,7 +4841,7 @@ The reality is that many of Austin's most significant luxury transactions never 
     content: `
 # Austin Luxury Inventory Trends Right Now
 
-A $3 million home in one Austin neighborhood can draw immediate interest while a similarly priced property ten minutes away sits quietly through multiple weekends. That gap is what makes <a href="/austin-luxury-market-trends" class="text-foreground underline hover:text-muted-foreground">Austin luxury inventory trends</a> worth watching closely right now. Volume alone is not the story. The more useful question is which homes are actually earning urgency, and why.
+A $3 million home in one Austin neighborhood can draw immediate interest while a similarly priced property ten minutes away sits quietly through multiple weekends. That gap is what makes <a href="/blog/austin-luxury-market-trends" class="text-foreground underline hover:text-muted-foreground">Austin luxury inventory trends</a> worth watching closely right now. Volume alone is not the story. The more useful question is which homes are actually earning urgency, and why.
 
 The <a href="/luxury-real-estate-austin" class="text-foreground underline hover:text-muted-foreground">Austin luxury market</a> has moved into a more discriminating phase. Buyers still have conviction, but they are far less willing to compromise on location, design integrity, privacy, lot quality, and overall finish. Sellers still have opportunity, but the market is no longer rewarding aspirational pricing simply because an address falls within a desirable zip code. Inventory has increased in many upper-tier segments, yet that rise has not created a uniform buyer's market. It has created separation.
 

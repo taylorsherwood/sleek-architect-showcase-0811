@@ -1079,20 +1079,23 @@ const LandDevelopment = () => {
                     });
                     return (
                       <>
+                        {/* Landowner → Advisor (stops short of both endpoints) */}
                         <line
-                          x1="80" y1="80" x2="250" y2="200"
+                          x1="108" y1="108" x2="222" y2="186"
                           stroke={GOLD} strokeWidth="1.25"
                           markerEnd="url(#ld-arrow)"
                           style={lineStyle(0.6)}
                         />
+                        {/* Investor → Advisor */}
                         <line
-                          x1="420" y1="80" x2="250" y2="200"
+                          x1="392" y1="108" x2="278" y2="186"
                           stroke={GOLD} strokeWidth="1.25"
                           markerEnd="url(#ld-arrow)"
                           style={lineStyle(0.9)}
                         />
+                        {/* Advisor → Development */}
                         <line
-                          x1="250" y1="200" x2="250" y2="340"
+                          x1="250" y1="220" x2="250" y2="312"
                           stroke={GOLD} strokeWidth="1.25"
                           markerEnd="url(#ld-arrow)"
                           style={lineStyle(2.0)}
@@ -1101,23 +1104,23 @@ const LandDevelopment = () => {
                     );
                   })()}
 
-                  {/* Nodes */}
+                  {/* Nodes — sized & placed so labels sit clear of them */}
                   <circle
-                    cx="80" cy="80" r="5" fill={GOLD}
+                    cx="100" cy="100" r="4.5" fill={GOLD}
                     style={{
                       opacity: relationshipInView ? 1 : 0,
                       transition: "opacity 0.8s ease 0.1s",
                     }}
                   />
                   <circle
-                    cx="420" cy="80" r="5" fill={GOLD}
+                    cx="400" cy="100" r="4.5" fill={GOLD}
                     style={{
                       opacity: relationshipInView ? 1 : 0,
                       transition: "opacity 0.8s ease 0.4s",
                     }}
                   />
                   <circle
-                    cx="250" cy="200" r="8" fill={GOLD}
+                    cx="250" cy="200" r="6" fill={GOLD}
                     className="transition-all duration-500 group-hover:drop-shadow-[0_0_10px_rgba(185,160,108,0.85)]"
                     style={{
                       opacity: relationshipInView ? 1 : 0,
@@ -1125,7 +1128,7 @@ const LandDevelopment = () => {
                     }}
                   />
                   <circle
-                    cx="250" cy="340" r="5" fill={GOLD}
+                    cx="250" cy="320" r="4.5" fill={GOLD}
                     style={{
                       opacity: relationshipInView ? 1 : 0,
                       transition: "opacity 0.8s ease 3.0s",
@@ -1133,99 +1136,107 @@ const LandDevelopment = () => {
                   />
                 </svg>
 
-                {/* Labels (absolutely positioned over SVG) */}
+
+                {/* Labels (absolutely positioned over SVG, each on a solid-bg plate so lines visually terminate before the text) */}
                 <div
                   className="absolute"
                   style={{
                     left: "0%",
-                    top: "8%",
+                    top: "2%",
+                    maxWidth: "44%",
                     opacity: relationshipInView ? 1 : 0,
                     transform: relationshipInView ? "translateY(0)" : "translateY(6px)",
                     transition: "opacity 0.9s ease 0.1s, transform 0.9s ease 0.1s",
                   }}
                 >
-                  <p style={{ ...labelStyle, color: GOLD, fontSize: "0.6rem" }} className="mb-1">
-                    Source
-                  </p>
-                  <p
-                    className="text-foreground font-normal"
-                    style={{ fontFamily: "'Cinzel', serif", fontSize: "1.05rem" }}
-                  >
-                    Landowner
-                  </p>
+                  <span className="inline-block bg-background px-2 py-0.5">
+                    <p style={{ ...labelStyle, color: GOLD, fontSize: "0.6rem" }} className="mb-1">
+                      Source
+                    </p>
+                    <p
+                      className="text-foreground font-normal whitespace-nowrap"
+                      style={{ fontFamily: "'Cinzel', serif", fontSize: "1.05rem" }}
+                    >
+                      Landowner
+                    </p>
+                  </span>
                 </div>
 
                 <div
                   className="absolute text-right"
                   style={{
                     right: "0%",
-                    top: "8%",
+                    top: "2%",
+                    maxWidth: "44%",
                     opacity: relationshipInView ? 1 : 0,
                     transform: relationshipInView ? "translateY(0)" : "translateY(6px)",
                     transition: "opacity 0.9s ease 0.4s, transform 0.9s ease 0.4s",
                   }}
                 >
-                  <p style={{ ...labelStyle, color: GOLD, fontSize: "0.6rem" }} className="mb-1">
-                    Capital
-                  </p>
-                  <p
-                    className="text-foreground font-normal"
-                    style={{ fontFamily: "'Cinzel', serif", fontSize: "1.05rem" }}
-                  >
-                    Investor
-                  </p>
+                  <span className="inline-block bg-background px-2 py-0.5 text-right">
+                    <p style={{ ...labelStyle, color: GOLD, fontSize: "0.6rem" }} className="mb-1">
+                      Capital
+                    </p>
+                    <p
+                      className="text-foreground font-normal whitespace-nowrap"
+                      style={{ fontFamily: "'Cinzel', serif", fontSize: "1.05rem" }}
+                    >
+                      Investor
+                    </p>
+                  </span>
                 </div>
 
                 <div
-                  className="absolute text-center -translate-x-1/2"
+                  className="absolute text-center"
                   style={{
                     left: "50%",
-                    top: "41%",
+                    top: "55%",
+                    transform: "translateX(-50%)",
                     opacity: relationshipInView ? 1 : 0,
-                    transform: relationshipInView
-                      ? "translate(-50%, 0) scale(1)"
-                      : "translate(-50%, 4px) scale(0.96)",
-                    transition: "opacity 1s ease 1.7s, transform 1s ease 1.7s",
+                    transition: "opacity 1s ease 1.7s",
                   }}
                 >
-                  <p style={{ ...labelStyle, color: GOLD, fontSize: "0.62rem" }} className="mb-1.5">
-                    Echelon Property Group
-                  </p>
-                  <p
-                    className="text-foreground"
-                    style={{
-                      fontFamily: "'Cinzel', serif",
-                      fontSize: "1.35rem",
-                      fontWeight: 500,
-                      letterSpacing: "0.01em",
-                    }}
-                  >
-                    Advisor
-                  </p>
+                  <span className="inline-block bg-background px-3 py-1">
+                    <p style={{ ...labelStyle, color: GOLD, fontSize: "0.62rem" }} className="mb-1.5 whitespace-nowrap">
+                      Echelon Property Group
+                    </p>
+                    <p
+                      className="text-foreground whitespace-nowrap"
+                      style={{
+                        fontFamily: "'Cinzel', serif",
+                        fontSize: "1.35rem",
+                        fontWeight: 500,
+                        letterSpacing: "0.01em",
+                      }}
+                    >
+                      Advisor
+                    </p>
+                  </span>
                 </div>
 
                 <div
-                  className="absolute text-center -translate-x-1/2"
+                  className="absolute text-center"
                   style={{
                     left: "50%",
-                    bottom: "4%",
+                    bottom: "0%",
+                    transform: "translateX(-50%)",
                     opacity: relationshipInView ? 1 : 0,
-                    transform: relationshipInView
-                      ? "translate(-50%, 0)"
-                      : "translate(-50%, 6px)",
-                    transition: "opacity 0.9s ease 3.0s, transform 0.9s ease 3.0s",
+                    transition: "opacity 0.9s ease 3.0s",
                   }}
                 >
-                  <p style={{ ...labelStyle, color: GOLD, fontSize: "0.6rem" }} className="mb-1">
-                    Outcome
-                  </p>
-                  <p
-                    className="text-foreground font-normal"
-                    style={{ fontFamily: "'Cinzel', serif", fontSize: "1.05rem" }}
-                  >
-                    Development
-                  </p>
+                  <span className="inline-block bg-background px-2 py-0.5">
+                    <p style={{ ...labelStyle, color: GOLD, fontSize: "0.6rem" }} className="mb-1">
+                      Outcome
+                    </p>
+                    <p
+                      className="text-foreground font-normal whitespace-nowrap"
+                      style={{ fontFamily: "'Cinzel', serif", fontSize: "1.05rem" }}
+                    >
+                      Development
+                    </p>
+                  </span>
                 </div>
+
               </div>
             </div>
           </div>

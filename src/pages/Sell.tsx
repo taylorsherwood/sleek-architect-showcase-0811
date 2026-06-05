@@ -16,6 +16,7 @@ const GlobalLuxuryAdvertising = lazy(() => import("@/components/GlobalLuxuryAdve
 const CinematicVideoSection = lazy(() => import("@/components/CinematicVideoSection"));
 const Footer = lazy(() => import("@/components/Footer"));
 import LandCrossLinks from "@/components/LandCrossLinks";
+import MarketBalanceGauge from "@/components/market-intel/MarketBalanceGauge";
 
 import {
   CheckCircle,

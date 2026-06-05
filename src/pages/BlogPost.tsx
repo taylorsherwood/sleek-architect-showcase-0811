@@ -141,14 +141,15 @@ const BlogPost = () => {
             </div>
             
             <div className="w-full aspect-[16/9] mb-4 overflow-hidden">
-              <img 
-                src={post.heroImage || post.image} 
+              <OptimizedImage
+                src={post.heroImage || post.image}
                 alt={post.imageAlt || `${post.title} - Austin luxury real estate`}
                 title={post.title}
+                width={1600}
+                height={900}
+                priority
+                sizes="(max-width: 768px) 100vw, 1200px"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-                loading="eager"
-                fetchPriority="high"
-                decoding="async"
               />
             </div>
             {post.imageCaption && (

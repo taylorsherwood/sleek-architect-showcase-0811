@@ -62,7 +62,7 @@ export const blogPosts: BlogPost[] = [
     author: "Taylor Sherwood",
     date: "2026-06-05",
     readTime: "12 min read",
-    category: "LUXURY MARKET",
+    category: "LUXURY LIVING",
     image: blogExclusiveListingAccess.url,
     heroImage: blogExclusiveListingAccess.url,
     imageAlt: "Lake Austin waterfront luxury home at sunset with an infinity pool overlooking the river",
@@ -587,7 +587,7 @@ href: /contact
     author: "Taylor Sherwood",
     date: "2026-05-31",
     readTime: "15 min read",
-    category: "Investment",
+    category: "INVESTMENT",
     image: blogAustinInfillDevelopment,
     heroImage: blogAustinInfillDevelopment,
     imageAlt: "Austin infill development showing an original bungalow next to a modern new build on the same street",
@@ -1032,7 +1032,7 @@ Echelon Property Group advises buyers, investors, and landowning families across
     author: "Taylor Sherwood",
     date: "2026-05-30",
     readTime: "20 min read",
-    category: "INVESTMENT STRATEGY",
+    category: "INVESTMENT",
     image: blogAustinRedevelopment,
     imageAlt: "Austin redevelopment opportunity showing infill residential development and new construction replacing older housing stock",
     content: `
@@ -1305,7 +1305,7 @@ There is no obligation and no sales pitch. Just an honest analysis of where your
     author: "Taylor Sherwood",
     date: "2026-05-29",
     readTime: "14 min read",
-    category: "INVESTMENT STRATEGY",
+    category: "INVESTMENT",
     image: blogHighestAndBestUse,
     imageAlt: "Austin land development opportunity showing redevelopment potential and highest and best use analysis",
     content: `
@@ -1612,7 +1612,7 @@ href: /sell-private
     author: "Taylor Sherwood",
     date: "2026-05-28",
     readTime: "10 min read",
-    category: "MARKET INTELLIGENCE",
+    category: "MARKET INSIGHTS",
     image: blogAustinLuxuryMarketAnalysis,
     content: `
 This <a href="/market-intelligence" class="${LINK}">Austin luxury real estate market analysis</a> explains why broad housing headlines often fail buyers and sellers operating above the $2M threshold. In <a href="/luxury-real-estate-austin" class="${LINK}">Austin's luxury segment</a>, thin inventory, submarket-specific demand, <a href="/off-market-real-estate-austin" class="${LINK}">off-market transactions</a>, and shifting absorption rates create a market that behaves very differently from the broader residential landscape.
@@ -1949,7 +1949,7 @@ It is a current, honest market briefing tailored to your exact property type, pr
     author: "Taylor Sherwood",
     date: "2026-05-27",
     readTime: "8 min read",
-    category: "AUSTIN REAL ESTATE",
+    category: "MARKET INSIGHTS",
     image: blogEchelonApproach,
     heroImage: blogEchelonApproachHero,
     content: `
@@ -2210,7 +2210,7 @@ Taylor Sherwood is an <a href="/about-austin-real-estate-advisory" class="${LINK
     author: "Taylor Sherwood",
     date: "2026-05-26",
     readTime: "13 min read",
-    category: "ADVISORY",
+    category: "MARKET INSIGHTS",
     image: blogAustinLuxuryAdvisory,
     heroImage: blogAustinLuxuryAdvisory,
     content: `
@@ -2738,7 +2738,7 @@ A: Avoid reactive price reductions. Re-evaluate the buyer profile, refresh weak 
     author: "Taylor Sherwood",
     date: "2026-05-24",
     readTime: "14 min read",
-    category: "BUYER & SELLER STRATEGY",
+    category: "BUYER STRATEGY",
     image: blogChoosingLuxuryBrokerage,
     heroImage: blogChoosingLuxuryBrokerage,
     content: `
@@ -3580,7 +3580,7 @@ If you are considering a move in Austin's luxury market, we invite you to <a hre
     author: "Taylor Sherwood",
     date: "2026-05-21",
     readTime: "12 min read",
-    category: "ADVISORY",
+    category: "MARKET INSIGHTS",
     image: blogBoutiqueVsLargeFirms,
     heroImage: blogBoutiqueVsLargeFirms,
     content: `
@@ -4669,7 +4669,7 @@ Whether you are considering a confidential sale, seeking access to <a href="/pri
     author: "Taylor Sherwood",
     date: "2026-05-17",
     readTime: "10 min read",
-    category: "MARKET INSIGHT",
+    category: "MARKET INSIGHTS",
     image: blogConfidentialTransactions,
     heroImage: blogConfidentialTransactions
   },
@@ -4856,7 +4856,7 @@ The reality is that many of Austin's most significant luxury transactions never 
     author: "Taylor Sherwood",
     date: "2026-05-18",
     readTime: "12 min read",
-    category: "BUYER GUIDE",
+    category: "BUYER STRATEGY",
     image: blogBestLuxuryNeighborhoods,
     heroImage: blogBestLuxuryNeighborhoods
   },
@@ -4965,7 +4965,7 @@ It depends on the home. Properties that are best-in-class for their segment can 
     author: "Taylor Sherwood",
     date: "2026-05-12",
     readTime: "8 min read",
-    category: "MARKET INSIGHT",
+    category: "MARKET INSIGHTS",
     image: blogAustinLuxuryInventoryTrends,
     heroImage: blogAustinLuxuryInventoryTrends
   },
@@ -5062,7 +5062,7 @@ Choose downtown if you want service, security, lock-and-leave convenience, and a
     author: "Taylor Sherwood",
     date: "2026-05-11",
     readTime: "9 min read",
-    category: "MARKET INSIGHT",
+    category: "MARKET INSIGHTS",
     image: blogAustinLuxuryNeighborhoodReview,
     heroImage: blogAustinLuxuryNeighborhoodReview
   },
@@ -5158,7 +5158,7 @@ Looking to live within walking distance of Austin's best new outdoor bars? <a hr
     author: "Taylor Sherwood",
     date: "2026-05-07",
     readTime: "8 min read",
-    category: "AUSTIN LIFESTYLE",
+    category: "LUXURY LIVING",
     image: blogOutdoorBars2026,
     heroImage: blogOutdoorBars2026
   },
@@ -5271,7 +5271,7 @@ It depends on lifestyle priorities. 78746 favors closer-in convenience and Eanes
     author: "Taylor Sherwood",
     date: "2026-05-06",
     readTime: "9 min read",
-    category: "BUYER GUIDE",
+    category: "BUYER STRATEGY",
     image: blog78746Guide,
     heroImage: blog78746Guide
   },

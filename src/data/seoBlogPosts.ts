@@ -51,7 +51,7 @@ const blogEstateHomeSalesAustin = blogEstateHomeSalesAustinAsset.url;
 import blogWaterfrontLuxuryHomesAustinAsset from "@/assets/blog/waterfront-luxury-homes-austin.jpg.asset.json";
 const blogWaterfrontLuxuryHomesAustin = blogWaterfrontLuxuryHomesAustinAsset.url;
 
-import blogAiRealEstateSearchAustinAsset from "@/assets/blog/ai-real-estate-search-austin.png.asset.json";
+import blogAiRealEstateSearchAustinAsset from "@/assets/blog/ai-real-estate-search-austin.webp.asset.json";
 const blogAiRealEstateSearchAustin = blogAiRealEstateSearchAustinAsset.url;
 
 import { BlogPost } from "./blogPosts";

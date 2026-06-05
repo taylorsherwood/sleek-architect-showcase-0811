@@ -17,7 +17,7 @@ import masterplanImg from "@/assets/land-development-masterplan.jpg";
 import datacenterImg from "@/assets/land-development-datacenter.jpg";
 import industrialImg from "@/assets/land-development-industrial.jpg";
 import landBankingImg from "@/assets/land-banking.webp.asset.json";
-import mixedUseImg from "@/assets/mixed-use.png.asset.json";
+import mixedUseImg from "@/assets/mixed-use.webp.asset.json";
 import dataCenterImg from "@/assets/data-center-site.jpg.asset.json";
 import buildToRentImg from "@/assets/build-to-rent.jpg.asset.json";
 import corridorImg from "@/assets/land-development-corridor.jpg";

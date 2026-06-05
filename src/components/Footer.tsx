@@ -23,7 +23,7 @@ const linkHoverClass = "block transition-colors duration-300 hover:text-white";
 
 const Footer = () => {
   return (
-    <footer data-nav-dark-zone style={{ background: "#090b1a", fontFamily: '"Jost", sans-serif', fontWeight: 300 }}>
+    <footer data-nav-dark-zone style={{ background: "#0C0F24", fontFamily: '"Jost", sans-serif', fontWeight: 300 }}>
       {/* Top border */}
       <div className="w-full h-px" style={{ background: "rgba(184,160,109,0.15)" }} />
 

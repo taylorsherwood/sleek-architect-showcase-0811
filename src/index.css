@@ -730,9 +730,9 @@ section[class*="bg-navy"]::after {
     border-color: hsl(var(--foreground) / 0.25);
   }
   .cta-luxury--ghost:hover {
-    background: #090b1a;
+    background: #0C0F24;
     color: #fff;
-    border-color: #090b1a;
+    border-color: #0C0F24;
   }
   .cta-luxury--on-dark {
     border-color: rgba(245, 243, 239, 0.5);

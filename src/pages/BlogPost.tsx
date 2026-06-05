@@ -183,12 +183,13 @@ const BlogPost = () => {
                   {filledRelatedPosts.map(relatedPost => (
                     <Link key={relatedPost.id} to={`/blog/${relatedPost.id}`} className="group">
                       <div className="w-full aspect-[4/3] mb-4 overflow-hidden">
-                        <img 
-                          src={relatedPost.image} 
+                        <OptimizedImage
+                          src={relatedPost.image}
                           alt={`${relatedPost.title} - Austin real estate insights`}
                           title={relatedPost.title}
+                          width={800}
+                          height={600}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                          loading="lazy" decoding="async"
                         />
                       </div>
                       <h4 className="text-lg font-light text-architectural group-hover:text-muted-foreground transition-colors duration-300 mb-2">

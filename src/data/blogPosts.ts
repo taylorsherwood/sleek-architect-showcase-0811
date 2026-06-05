@@ -77,27 +77,17 @@ This guide is built for that decision. The comparison table immediately below gi
 
 ## Lake Austin vs Lake Travis: At a Glance
 
-<div class="my-8 overflow-x-auto">
-<table class="w-full text-left border-collapse">
-<thead>
-<tr class="border-b border-foreground/20">
-<th class="py-3 pr-4 font-semibold">Factor</th>
-<th class="py-3 pr-4 font-semibold">Lake Austin</th>
-<th class="py-3 font-semibold">Lake Travis</th>
-</tr>
-</thead>
-<tbody class="align-top">
-<tr class="border-b border-foreground/10"><td class="py-3 pr-4 font-medium">Water level</td><td class="py-3 pr-4">Constant year-round</td><td class="py-3">Fluctuates with rainfall and drought</td></tr>
-<tr class="border-b border-foreground/10"><td class="py-3 pr-4 font-medium">Commute to downtown</td><td class="py-3 pr-4">15 to 25 minutes</td><td class="py-3">30 to 60-plus minutes</td></tr>
-<tr class="border-b border-foreground/10"><td class="py-3 pr-4 font-medium">Schools</td><td class="py-3 pr-4">Eanes ISD, strong private school access</td><td class="py-3">Lake Travis ISD or Lago Vista ISD</td></tr>
-<tr class="border-b border-foreground/10"><td class="py-3 pr-4 font-medium">Boating culture</td><td class="py-3 pr-4">Wake surfing, glassy mornings, surf-specific inboards</td><td class="py-3">Powerboating, sailing, big-cove afternoons</td></tr>
-<tr class="border-b border-foreground/10"><td class="py-3 pr-4 font-medium">Inventory</td><td class="py-3 pr-4">~21 miles of shoreline, structurally thin</td><td class="py-3">270-plus miles of shoreline, broad and varied</td></tr>
-<tr class="border-b border-foreground/10"><td class="py-3 pr-4 font-medium">Off-market activity</td><td class="py-3 pr-4">High, especially above $5M</td><td class="py-3">Moderate, MLS more representative</td></tr>
-<tr class="border-b border-foreground/10"><td class="py-3 pr-4 font-medium">Views</td><td class="py-3 pr-4">Intimate, tree-lined, framed</td><td class="py-3">Expansive, elevated, Hill Country horizon</td></tr>
-<tr><td class="py-3 pr-4 font-medium">Best-fit buyer</td><td class="py-3 pr-4">Primary residence, school-focused families, wake-boating households</td><td class="py-3">Second homes, view-driven buyers, open-water and sailing households</td></tr>
-</tbody>
-</table>
-</div>
+:::glance
+Factor | Lake Austin | Lake Travis
+Water level | Constant year-round | Fluctuates with rainfall and drought
+Commute to downtown | 15 to 25 minutes | 30 to 60-plus minutes
+Schools | Eanes ISD, strong private school access | Lake Travis ISD or Lago Vista ISD
+Boating culture | Wake surfing, glassy mornings | Powerboating, sailing, big-cove afternoons
+Inventory | ~21 miles of shoreline, structurally thin | 270-plus miles, broad and varied
+Off-market activity | High, especially at the luxury tier | Moderate, MLS more representative
+Views | Intimate, tree-lined, framed | Expansive, elevated, Hill Country horizon
+Best-fit buyer | Primary residence, school-focused families, wake-boating households | Second homes, view-driven buyers, open-water and sailing households
+:::
 
 ## Water Level Stability
 

@@ -1,5 +1,6 @@
 import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import Navigation from "@/components/Navigation";
+import OptimizedImage from "@/components/OptimizedImage";
 import expEchelonLogo from "@/assets/exp-echelon-logo.png";
 import taylorAboutHeadshot from "@/assets/taylor-about-headshot.jpeg";
 import austinLifestyle from "@/assets/austin-approach-pool.jpg";

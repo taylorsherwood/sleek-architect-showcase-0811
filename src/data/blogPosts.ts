@@ -91,7 +91,7 @@ Best-fit buyer | Primary residence, close to town, wake-boarding | Second homes,
 
 ### Current Market Balance: Lake Austin vs Lake Travis
 
-The two readings below pull live data from our market intelligence partner and translate it into a single buyer-versus-seller balance score for each lake's $2M+ waterfront tier. Read them as directional context for negotiation posture, not as a substitute for a property-specific evaluation.
+The two readings below pull live data from our market intelligence partner and translate it into a single buyer vs seller balance score for each lake's $2M+ waterfront tier. Read them as directional context for negotiation posture, not as a substitute for a property-specific evaluation.
 
 :::intel-gauge-lake-austin
 :::

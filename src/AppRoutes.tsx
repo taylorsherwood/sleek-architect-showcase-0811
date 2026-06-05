@@ -144,6 +144,21 @@ const AppRoutes = () => {
           <Route path="/luxury-homes-austin" element={<Navigate to="/austin-luxury-homes-for-sale" replace />} />
           <Route path="/why-billionaires-are-moving-to-austin" element={<BillionaireMigration />} />
           <Route path="/blog/how-to-find-off-market-real-estate-deals-austin-2026" element={<Navigate to="/blog/find-off-market-homes-austin" replace />} />
+          {/* 301 redirects for stale/duplicate blog slugs (consolidated into the canonical post) */}
+          <Route path="/blog/what-is-a-private-listing" element={<Navigate to="/blog/what-is-private-listing-in-real-estate" replace />} />
+          <Route path="/blog/selling-luxury-home-austin" element={<Navigate to="/blog/selling-luxury-home-austin-strategies" replace />} />
+          <Route path="/blog/beyond-zillow-luxury-home-valuation-austin" element={<Navigate to="/blog/beyond-zillow-luxury-buyers-austin" replace />} />
+          <Route path="/blog/buyers-never-see-best-homes" element={<Navigate to="/blog/why-most-buyers-never-see-austins-best-homes" replace />} />
+          <Route path="/blog/why-buyers-never-see-the-best-austin-homes" element={<Navigate to="/blog/why-most-buyers-never-see-austins-best-homes" replace />} />
+          <Route path="/blog/buying-luxury-real-estate-out-of-state" element={<Navigate to="/blog/buying-luxury-home-from-out-of-state" replace />} />
+          <Route path="/blog/new-construction-austin" element={<Navigate to="/blog/new-construction-austin-what-wins" replace />} />
+          <Route path="/blog/new-construction-luxury-homes-austin" element={<Navigate to="/blog/new-construction-austin-what-wins" replace />} />
+          <Route path="/blog/lake-austin-waterfront-value" element={<Navigate to="/blog/lake-austin-waterfront-homes-what-drives-value" replace />} />
+          <Route path="/blog/off-market-real-estate-austin" element={<Navigate to="/off-market-real-estate-austin" replace />} />
+          <Route path="/blog/best-austin-neighborhoods-for-real-estate-investment" element={<Navigate to="/blog/top-investment-neighborhoods-austin" replace />} />
+          {/* 301 redirects for alternate community slugs that point at the same neighborhood */}
+          <Route path="/communities/westlake" element={<Navigate to="/communities/westlake-hills" replace />} />
+          <Route path="/communities/west-lake-hills" element={<Navigate to="/communities/westlake-hills" replace />} />
           <Route path="/blog/austin-luxury-market-trends" element={<AustinLuxuryMarketTrends />} />
           <Route path="/invest" element={<Invest />} />
           <Route path="/private" element={<Navigate to="/off-market-real-estate-austin" replace />} />

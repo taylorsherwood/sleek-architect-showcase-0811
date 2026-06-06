@@ -712,8 +712,8 @@ const TestimonialsSection = () => {
             pointerEvents: revealed ? "auto" : "none",
           }}
         >
-          {"MORE CLIENT EXPERIENCES\n→"}
-          <span aria-hidden="true" className="ml-1.5 hidden transition-transform duration-500 ease-out group-hover/link:translate-x-1">→</span>
+          MORE CLIENT EXPERIENCES
+          <span aria-hidden="true" className="ml-1.5 inline-block transition-transform duration-500 ease-out group-hover/link:translate-x-1">→</span>
           <span className="absolute -bottom-1 left-0 w-full h-px bg-gold scale-x-100 transition-transform duration-500 origin-left" />
         </Link>
 

@@ -702,6 +702,7 @@ const TestimonialsSection = () => {
                   </Link>
                 </div>
               )}
+            </div>
           </div>
         </div>
 

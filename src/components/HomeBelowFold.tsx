@@ -698,10 +698,11 @@ const TestimonialsSection = () => {
 
         <Link
           to="/reviews"
-          className="absolute bottom-10 right-16 md:right-24 lg:right-32 z-[18] inline-flex items-center text-gold transition-colors duration-[450ms] group/link"
+          className="absolute bottom-10 right-16 md:right-24 lg:right-32 z-[18] inline-flex items-center text-gold transition-colors duration-[450ms] group/link whitespace-pre text-right"
           style={{
             fontFamily: '"Jost", sans-serif',
             fontSize: "11px",
+            lineHeight: "1.4",
             letterSpacing: "0.18em",
             textTransform: "uppercase",
             fontWeight: 500,

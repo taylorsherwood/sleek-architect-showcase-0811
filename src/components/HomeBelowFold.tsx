@@ -812,6 +812,18 @@ const TestimonialsSection = () => {
                 />
               ))}
             </div>
+
+            <div className="mt-10">
+              <Link
+                to="/reviews"
+                className="relative inline-flex items-center text-muted-foreground/45 hover:text-gold transition-colors duration-[450ms] group/link"
+                style={{ fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.12em", textTransform: "uppercase", fontWeight: 400 }}
+              >
+                Read Additional Client Experiences
+                <span aria-hidden="true" className="ml-1.5 inline-block transition-transform duration-500 ease-out group-hover/link:translate-x-1">→</span>
+                <span className="absolute bottom-0 left-0 w-full h-px bg-gold scale-x-0 group-hover/link:scale-x-100 transition-transform duration-500 origin-left" />
+              </Link>
+            </div>
           </div>
         </div>
       </section>

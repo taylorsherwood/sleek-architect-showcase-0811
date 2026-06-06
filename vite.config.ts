@@ -294,7 +294,7 @@ export default defineConfig(({ mode }) => ({
       jpeg: { quality: 65, mozjpeg: true },
       jpg: { quality: 65, mozjpeg: true },
       webp: { quality: 65 },
-      avif: false as any,
+      ...({ avif: false } as any),
       svg: { multipass: true },
       cache: true,
     }),

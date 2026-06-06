@@ -827,8 +827,8 @@ const TestimonialsSection = () => {
             <div className="mt-10">
               <Link
                 to="/reviews"
-                className="relative inline-flex items-center text-muted-foreground/45 hover:text-gold transition-colors duration-[450ms] group/link"
-                style={{ fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.12em", textTransform: "uppercase", fontWeight: 400 }}
+                className="relative inline-flex items-center text-gold transition-colors duration-[450ms] group/link whitespace-pre text-right"
+                style={{ fontFamily: '"Jost", sans-serif', fontSize: "11px", lineHeight: "1.4", letterSpacing: "0.12em", textTransform: "uppercase", fontWeight: 400 }}
               >
                 {"MORE CLIENT EXPERIENCES\n→"}
                 <span aria-hidden="true" className="ml-1.5 hidden transition-transform duration-500 ease-out group-hover/link:translate-x-1">→</span>

@@ -830,8 +830,8 @@ const TestimonialsSection = () => {
                 className="relative inline-flex items-center text-gold transition-colors duration-[450ms] group/link text-right"
                 style={{ fontFamily: '"Jost", sans-serif', fontSize: "11px", lineHeight: "1.4", letterSpacing: "0.12em", textTransform: "uppercase", fontWeight: 400 }}
               >
-                {"MORE CLIENT EXPERIENCES\n→"}
-                <span aria-hidden="true" className="ml-1.5 hidden transition-transform duration-500 ease-out group-hover/link:translate-x-1">→</span>
+                MORE CLIENT EXPERIENCES
+                <span aria-hidden="true" className="ml-1.5 inline-block transition-transform duration-500 ease-out group-hover/link:translate-x-1">→</span>
                 <span className="absolute bottom-0 left-0 w-full h-px bg-gold scale-x-0 group-hover/link:scale-x-100 transition-transform duration-500 origin-left" />
               </Link>
             </div>

@@ -660,7 +660,7 @@ const TestimonialsSection = () => {
 
 
               {revealed && (
-                <div style={{ opacity: 0, animation: "fadeUp 0.6s ease 0.4s both", zIndex: 2 }} className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4 relative">
+                <div style={{ opacity: 0, animation: "fadeUp 0.6s ease 0.4s both", zIndex: 2 }} className="mt-8 flex items-center gap-3 relative">
                   <div className="flex items-center gap-3 relative">
                     {testimonials.map((_, i) => (
                       <button
@@ -690,20 +690,31 @@ const TestimonialsSection = () => {
                     ))}
                   </div>
 
-                  <Link
-                    to="/reviews"
-                    className="relative inline-flex items-center text-foreground/70 hover:text-gold transition-colors duration-[450ms] group/link"
-                    style={{ fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 400 }}
-                  >
-                    Read Additional Client Experiences
-                    <span aria-hidden="true" className="ml-1.5 inline-block transition-transform duration-500 ease-out group-hover/link:translate-x-1">→</span>
-                    <span className="absolute -bottom-0.5 left-0 w-full h-px bg-gold scale-x-0 group-hover/link:scale-x-100 transition-transform duration-500 origin-left" />
-                  </Link>
                 </div>
               )}
             </div>
           </div>
         </div>
+
+        <Link
+          to="/reviews"
+          className="absolute bottom-10 right-16 md:right-24 lg:right-32 z-[18] inline-flex items-center text-gold transition-colors duration-[450ms] group/link"
+          style={{
+            fontFamily: '"Jost", sans-serif',
+            fontSize: "11px",
+            letterSpacing: "0.18em",
+            textTransform: "uppercase",
+            fontWeight: 500,
+            opacity: revealed ? 1 : 0,
+            transform: revealed ? "translateY(0)" : "translateY(10px)",
+            transition: "opacity 0.6s ease 0.45s, transform 0.6s ease 0.45s",
+            pointerEvents: revealed ? "auto" : "none",
+          }}
+        >
+          Read Additional Client Experiences
+          <span aria-hidden="true" className="ml-1.5 inline-block transition-transform duration-500 ease-out group-hover/link:translate-x-1">→</span>
+          <span className="absolute -bottom-1 left-0 w-full h-px bg-gold scale-x-100 transition-transform duration-500 origin-left" />
+        </Link>
 
         <div className="tsplit-left absolute inset-y-0 left-0 w-1/2 z-10 overflow-hidden will-change-transform">
           <img

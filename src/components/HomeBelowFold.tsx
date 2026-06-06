@@ -660,37 +660,46 @@ const TestimonialsSection = () => {
 
 
               {revealed && (
-                <div
-                  className="flex items-center gap-3 mt-14 relative"
-                  style={{ opacity: 0, animation: "fadeUp 0.6s ease 0.4s both", zIndex: 2 }}
-                >
-                  {testimonials.map((_, i) => (
-                    <button
-                      key={i}
-                      onClick={() => handleDotClick(i)}
-                      className="group relative cursor-pointer flex items-center justify-center"
-                      style={{
-                        // Generous hit area for accessibility / clickability
-                        width: i === active ? "32px" : "14px",
-                        height: "20px",
-                        background: "transparent",
-                        border: "none",
-                        padding: 0,
-                        transition: "width 500ms ease",
-                      }}
-                      aria-label={`View testimonial ${i + 1}`}
-                    >
-                      <span
-                        aria-hidden="true"
-                        className="block transition-all duration-500"
+                <div style={{ opacity: 0, animation: "fadeUp 0.6s ease 0.4s both", zIndex: 2 }}>
+                  <div className="flex items-center gap-3 mt-14 relative">
+                    {testimonials.map((_, i) => (
+                      <button
+                        key={i}
+                        onClick={() => handleDotClick(i)}
+                        className="group relative cursor-pointer flex items-center justify-center"
                         style={{
-                          width: i === active ? "24px" : "6px",
-                          height: "1px",
-                          background: i === active ? "#b9a06c" : "hsl(var(--border))",
+                          // Generous hit area for accessibility / clickability
+                          width: i === active ? "32px" : "14px",
+                          height: "20px",
+                          background: "transparent",
+                          border: "none",
+                          padding: 0,
+                          transition: "width 500ms ease",
                         }}
-                      />
-                    </button>
-                  ))}
+                        aria-label={`View testimonial ${i + 1}`}
+                      >
+                        <span
+                          aria-hidden="true"
+                          className="block transition-all duration-500"
+                          style={{
+                            width: i === active ? "24px" : "6px",
+                            height: "1px",
+                            background: i === active ? "#b9a06c" : "hsl(var(--border))",
+                          }}
+                        />
+                      </button>
+                    ))}
+                  </div>
+
+                  <Link
+                    to="/reviews"
+                    className="relative inline-flex items-center text-muted-foreground/45 hover:text-gold transition-colors duration-[450ms] group/link mt-10"
+                    style={{ fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.12em", textTransform: "uppercase", fontWeight: 400 }}
+                  >
+                    Read Additional Client Experiences
+                    <span aria-hidden="true" className="ml-1.5 inline-block transition-transform duration-500 ease-out group-hover/link:translate-x-1">→</span>
+                    <span className="absolute bottom-0 left-0 w-full h-px bg-gold scale-x-0 group-hover/link:scale-x-100 transition-transform duration-500 origin-left" />
+                  </Link>
                 </div>
               )}
             </div>
@@ -802,6 +811,18 @@ const TestimonialsSection = () => {
                   aria-label={`View testimonial ${i + 1}`}
                 />
               ))}
+            </div>
+
+            <div className="mt-10">
+              <Link
+                to="/reviews"
+                className="relative inline-flex items-center text-muted-foreground/45 hover:text-gold transition-colors duration-[450ms] group/link"
+                style={{ fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.12em", textTransform: "uppercase", fontWeight: 400 }}
+              >
+                Read Additional Client Experiences
+                <span aria-hidden="true" className="ml-1.5 inline-block transition-transform duration-500 ease-out group-hover/link:translate-x-1">→</span>
+                <span className="absolute bottom-0 left-0 w-full h-px bg-gold scale-x-0 group-hover/link:scale-x-100 transition-transform duration-500 origin-left" />
+              </Link>
             </div>
           </div>
         </div>

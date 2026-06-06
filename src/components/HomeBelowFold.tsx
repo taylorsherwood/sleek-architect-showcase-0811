@@ -827,7 +827,7 @@ const TestimonialsSection = () => {
             <div className="mt-10">
               <Link
                 to="/reviews"
-                className="relative inline-flex items-center text-gold transition-colors duration-[450ms] group/link whitespace-pre text-right"
+                className="relative inline-flex items-center text-gold transition-colors duration-[450ms] group/link text-right"
                 style={{ fontFamily: '"Jost", sans-serif', fontSize: "11px", lineHeight: "1.4", letterSpacing: "0.12em", textTransform: "uppercase", fontWeight: 400 }}
               >
                 {"MORE CLIENT EXPERIENCES\n→"}

@@ -54,7 +54,7 @@ const blogWaterfrontLuxuryHomesAustin = blogWaterfrontLuxuryHomesAustinAsset.url
 import blogAiRealEstateSearchAustinAsset from "@/assets/blog/ai-real-estate-search-austin.webp.asset.json";
 const blogAiRealEstateSearchAustin = blogAiRealEstateSearchAustinAsset.url;
 
-import blogAccessExclusivePropertyNetworksAsset from "@/assets/blog/access-exclusive-property-networks-austin-hero.jpg.asset.json";
+import blogAccessExclusivePropertyNetworksAsset from "@/assets/blog/austin-luxury-private-estate-gated-entrance.jpg.asset.json";
 const blogAccessExclusivePropertyNetworks = blogAccessExclusivePropertyNetworksAsset.url;
 
 import { BlogPost } from "./blogPosts";
@@ -63,18 +63,18 @@ import { BlogPost } from "./blogPosts";
 export const seoBlogPosts: BlogPost[] = [
   {
     id: "how-to-access-exclusive-property-networks-austin-luxury-real-estate",
-    title: "How to Access Exclusive Property Networks in Austin's Luxury Real Estate Market",
-    metaTitle: "How to Access Exclusive Property Networks in Austin's Luxury Real Estate Market | Echelon Property Group",
-    excerpt: "Most luxury properties in Austin's top neighborhoods never reach public listings. They trade through private advisor relationships and confidential channels. This guide explains exactly how high-net-worth buyers and sellers gain exclusive property network access to off-market opportunities in Tarrytown, Barton Creek, Lake Austin, and beyond, before serious competition ever sees them.",
+    title: "How Austin Luxury Buyers Access Private Property Networks",
+    metaTitle: "How Austin Luxury Buyers Access Private Property Networks | Echelon Property Group",
+    excerpt: "Some of Austin's most desirable homes trade quietly through advisor relationships, private buyer networks, and off-market channels long before they appear on Zillow, Redfin, or the MLS. This guide explains how high-net-worth buyers gain meaningful access to those private property networks across Tarrytown, Barton Creek, Lake Austin, and the Hill Country.",
     author: "Taylor Sherwood",
     date: "2026-06-06",
     readTime: "14 min read",
-    category: "PRIVATE MARKET",
+    category: "Private Listings",
     image: blogAccessExclusivePropertyNetworks,
     heroImage: blogAccessExclusivePropertyNetworks,
-    imageAlt: "Aerial view of the Pennybacker Bridge over Lake Austin with the downtown skyline beyond, framing the luxury corridor where Austin's exclusive property networks operate",
-    imageCaption: "From Tarrytown to Lake Austin and the Hill Country beyond, the most valuable properties move through private advisor networks long before they ever reach public listings.",
-    content: `Most luxury properties in Austin never appear on Zillow, Redfin, or the MLS. They move quietly through private networks, advisor relationships, and confidential channels that most buyers never know exist.
+    imageAlt: "Private gated stone-pillar entrance to a luxury Austin estate, with a long driveway curving beneath a canopy of mature live oak trees",
+    imageCaption: "Most of Austin's finest estates sit behind private gates and trade through advisor relationships long before they ever reach a public listing.",
+    content: `Most Austin luxury buyers are not losing because they move too slowly. They are losing because they never saw the property in the first place. Some of Austin's most desirable homes trade quietly through advisor relationships, private buyer networks, and off-market channels long before they appear on Zillow, Redfin, or the MLS.
 
 If you are searching for a property in Tarrytown, Rob Roy, Barton Creek, or along Lake Austin, understanding how exclusive property networks actually function is the difference between seeing everything available and seeing only what was left after the serious buyers passed.
 
@@ -174,7 +174,7 @@ Photography restrictions are common in private showings. Many sellers prohibit p
 
 Due diligence on off-market properties requires more proactive effort from the buyer. Without a public listing history, days-on-market data, or prior inspection reports in a centralized database, you must request everything directly. Seller disclosures, title history, current survey, any prior inspection reports, and HOA documentation if applicable should all be requested early in the process. Do not assume that information will be volunteered.
 
-Evaluating price without public comparable data is one of the more nuanced aspects of private transactions. Your advisor's role here is critical. A well-connected advisor has access to private transaction comps from confidential sales, meaning sales that occurred outside the MLS and were never publicly reported. These comps are often more relevant to a private sale than public data, because they reflect the actual market for properties at this tier. In some cases, an independent appraisal makes sense, particularly for properties with unusual characteristics or when the seller's price expectation requires validation.
+Evaluating price without public comparable data is one of the more nuanced aspects of private transactions. Your advisor's role here is critical. An experienced advisor brings perspective from analyzing both public and off-market luxury transactions across the market, which informs how a given property should be valued at this tier. In some cases, an independent appraisal makes sense, particularly for properties with unusual characteristics or when the seller's price expectation requires validation.
 
 Confidential transactions sometimes involve different closing timelines and structures. Direct negotiation before a formal contract is drafted is more common in private sales than in MLS transactions. Your advisor should guide this process, but you should be prepared for a less linear path from offer to close than you may be accustomed to. Flexibility on structure, combined with firmness on your core criteria, is the right posture.
 
@@ -192,7 +192,13 @@ Honor confidentiality obligations on every transaction, without exception. Selle
 
 Echelon Property Group maintains active advisor relationships across Austin's luxury residential, waterfront, and Hill Country land markets. The team works with buyers who are prepared to engage seriously, with credentials in order and criteria clearly defined.
 
-The most valuable properties in Austin are rarely advertised. The buyers who find them are not lucky. They are prepared, credentialed, and connected through the right channels. Learn more about [our services](/about-austin-real-estate-advisory) and how Echelon Property Group can position you within Austin's private property network.`,
+Private access starts before a property becomes a listing. Buyers who consistently secure Austin's best opportunities are typically positioned within the right advisor networks before those opportunities ever become public. If you are actively searching in Austin's luxury market, Echelon Property Group can help you establish the relationships, credibility, and market access necessary to compete for exceptional off-market opportunities.
+
+:::cta
+heading: Position yourself inside Austin's private property network
+button: Schedule a Private Consultation
+href: /contact
+:::`,
   },
   {
     id: "how-ai-is-changing-real-estate-searches-austin",

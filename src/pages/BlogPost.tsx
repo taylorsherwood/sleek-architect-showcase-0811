@@ -127,42 +127,55 @@ const BlogPost = () => {
               ← BACK TO INSIGHTS
             </Link>
             
-            <div className="mb-8">
-              <div className="flex flex-wrap items-center text-minimal text-muted-foreground gap-x-4 gap-y-1 mb-6">
-                <span className="bg-secondary px-3 py-1 text-foreground">{post.category}</span>
-                <span>Published {post.date}</span>
-                <span>•</span>
-                <span>{post.readTime}</span>
-                <span>•</span>
-                <span>By {post.author}</span>
-              </div>
-              
-              <h1 className="text-2xl sm:text-4xl md:text-6xl font-light text-architectural mb-6 whitespace-pre-wrap">
-                {post.title}
-              </h1>
-              
-              <p className="text-xl text-muted-foreground leading-relaxed">
-                {post.excerpt}
-              </p>
-            </div>
-            
-            <div className="w-full aspect-[16/9] mb-4 overflow-hidden">
-              <OptimizedImage
-                src={post.heroImage || post.image}
-                alt={post.imageAlt || `${post.title} - Austin luxury real estate`}
-                title={post.title}
-                width={1600}
-                height={900}
-                priority
-                sizes="(max-width: 768px) 100vw, 1200px"
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-              />
-            </div>
-            {post.imageCaption && (
-              <p className="text-sm italic text-muted-foreground leading-relaxed mb-12 max-w-3xl">
-                {post.imageCaption}
-              </p>
-            )}
+            {(() => {
+              const heroAboveTitle = post.id === "how-to-access-exclusive-property-networks-austin-luxury-real-estate";
+              const HeroBlock = (
+                <>
+                  <div className="w-full aspect-[16/9] mb-4 overflow-hidden">
+                    <OptimizedImage
+                      src={post.heroImage || post.image}
+                      alt={post.imageAlt || `${post.title} - Austin luxury real estate`}
+                      title={post.title}
+                      width={1600}
+                      height={900}
+                      priority
+                      sizes="(max-width: 768px) 100vw, 1200px"
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                    />
+                  </div>
+                  {post.imageCaption && (
+                    <p className="text-sm italic text-muted-foreground leading-relaxed mb-12 max-w-3xl">
+                      {post.imageCaption}
+                    </p>
+                  )}
+                </>
+              );
+              const TitleBlock = (
+                <div className="mb-8">
+                  <div className="flex flex-wrap items-center text-minimal text-muted-foreground gap-x-4 gap-y-1 mb-6">
+                    <span className="bg-secondary px-3 py-1 text-foreground">{post.category}</span>
+                    <span>Published {post.date}</span>
+                    <span>•</span>
+                    <span>{post.readTime}</span>
+                    <span>•</span>
+                    <span>By {post.author}</span>
+                  </div>
+
+                  <h1 className="text-2xl sm:text-4xl md:text-6xl font-light text-architectural mb-6 whitespace-pre-wrap">
+                    {post.title}
+                  </h1>
+
+                  <p className="text-xl text-muted-foreground leading-relaxed">
+                    {post.excerpt}
+                  </p>
+                </div>
+              );
+              return heroAboveTitle ? (
+                <>{HeroBlock}{TitleBlock}</>
+              ) : (
+                <>{TitleBlock}{HeroBlock}</>
+              );
+            })()}
 
             <BlogContent
               content={post.content}

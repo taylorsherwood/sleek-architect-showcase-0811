@@ -953,7 +953,7 @@ Echelon Property Group advises executors, trustees, estate representatives, luxu
   {
     id: "how-to-buy-luxury-home-austin",
     title: "How to Buy a Luxury Home in Austin: 9 Insider Strategies for High-End Buyers",
-    metaTitle: "How to Buy a Luxury Home in Austin: 9 Insider Strategies | Echelon Property Group",
+    metaTitle: "How to Buy a Luxury Home in Austin | Echelon",
     excerpt: "Nine Austin-specific strategies for buying a high-end home above $2M, from neighborhood-by-neighborhood market realities and Lake Austin waterfront nuance to off-market access, pricing logic, and relocation considerations most national guides miss.",
     author: "Taylor Sherwood",
     date: "2026-06-01",

@@ -571,7 +571,7 @@ const LandRanch = () => {
               </p>
               <p>
                 Whether evaluating a recreational ranch, investment acreage, redevelopment tract, or
-                future homesite, understanding the underlying opportunity is critical.
+                future homesite, understanding the underlying opportunity is critical.&nbsp;
               </p>
               <div className="pt-3">
                 <Link

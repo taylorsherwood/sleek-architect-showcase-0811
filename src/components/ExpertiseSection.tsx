@@ -213,10 +213,12 @@ const ExpertiseSection = () => {
                         maxWidth: "400px",
                         marginBottom: "1.5rem",
                         textAlign: "left",
+                        minHeight: "calc(0.95rem * 1.6 * 3)",
                       }}
                     >
                       {block.description}
                     </p>
+
                     <span
                       className="expertise-card__cta inline-flex items-center"
                       style={{

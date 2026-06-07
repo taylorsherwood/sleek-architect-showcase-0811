@@ -338,8 +338,9 @@ const LandDevelopment = () => {
                   textShadow: "0 1px 2px rgba(0,0,0,0.4)",
                 }}
               >
-                Evaluating land through infrastructure, entitlement potential,
-                utility access, market demand, and future land use.
+                Evaluating land through existing infrastructure, entitlement potential,
+                utility access,&nbsp;
+                market demand, and future land use.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                 <Link

@@ -76,7 +76,7 @@ export const seoBlogPosts: BlogPost[] = [
     imageCaption: "Most of Austin's finest estates sit behind private gates and trade through advisor relationships long before they ever reach a public listing.",
     content: `Most Austin luxury buyers are not losing because they move too slowly. They are losing because they never saw the property in the first place. Some of Austin's most desirable homes trade quietly through advisor relationships, private buyer networks, and off-market channels long before they appear on Zillow, Redfin, or the MLS.
 
-If you are searching for a property in Tarrytown, Rob Roy, Barton Creek, or along Lake Austin, understanding how exclusive property networks actually function is the difference between seeing everything available and seeing only what was left after the serious buyers passed.
+If you are searching for a property in [Tarrytown](/communities/tarrytown), [Rob Roy](/communities/rob-roy), [Barton Creek](/communities/barton-creek), or along [Lake Austin](/communities/lake-austin), understanding how exclusive property networks actually function is the difference between seeing everything available and seeing only what was left after the serious buyers passed.
 
 This guide walks through the specific steps high-net-worth buyers and sellers use to gain meaningful access to Austin's private real estate network. Not theoretical access. Actionable access. The kind that leads to off-market acquisitions, pre-market opportunities, and transactions that never touch a public database.
 

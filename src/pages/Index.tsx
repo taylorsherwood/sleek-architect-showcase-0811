@@ -216,7 +216,7 @@ const Hero = () => {
                 onMouseEnter={e => { e.currentTarget.style.transform = "translateX(3px) translateZ(0)"; e.currentTarget.style.background = "#0C0F24"; e.currentTarget.style.borderColor = "#0C0F24"; e.currentTarget.style.color = "#fff"; }}
                 onMouseLeave={e => { e.currentTarget.style.transform = "translateX(0) translateZ(0)"; e.currentTarget.style.background = "rgba(10,14,25,0.55)"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.72)"; e.currentTarget.style.color = "#fff"; }}
               >
-                CONNECT ME WITH PRIVATE OPPORTUNITIES →
+                ACCESS PRIVATE OPPORTUNITIES →
               </Link>
             </div>
           </div>

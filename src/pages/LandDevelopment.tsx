@@ -252,7 +252,7 @@ const LandDevelopment = () => {
           setRelationshipInView(entry.isIntersecting);
         });
       },
-      { threshold: 0.35 }
+      { threshold: 0.15 }
     );
     obs.observe(el);
     return () => obs.disconnect();
@@ -1048,7 +1048,7 @@ const LandDevelopment = () => {
                     strokeDasharray="2 4"
                     style={{
                       opacity: relationshipInView ? 1 : 0,
-                      transition: "opacity 1.6s ease 0.1s",
+                      transition: "opacity 0.8s ease 0.05s",
                     }}
                   />
                   <circle
@@ -1060,7 +1060,7 @@ const LandDevelopment = () => {
                     strokeDasharray="2 6"
                     style={{
                       opacity: relationshipInView ? 1 : 0,
-                      transition: "opacity 1.6s ease 0.2s",
+                      transition: "opacity 0.8s ease 0.1s",
                     }}
                   />
 
@@ -1069,7 +1069,7 @@ const LandDevelopment = () => {
                     const lineStyle = (delay: number) => ({
                       strokeDasharray: 260,
                       strokeDashoffset: relationshipInView ? 0 : 260,
-                      transition: `stroke-dashoffset 1.2s cubic-bezier(0.4,0,0.2,1) ${delay}s, opacity 0.6s ease ${delay}s`,
+                      transition: `stroke-dashoffset 0.6s cubic-bezier(0.4,0,0.2,1) ${delay}s, opacity 0.3s ease ${delay}s`,
                       opacity: relationshipInView ? 1 : 0,
                     });
                     return (
@@ -1079,21 +1079,21 @@ const LandDevelopment = () => {
                           x1="108" y1="108" x2="222" y2="186"
                           stroke={GOLD} strokeWidth="1.25"
                           markerEnd="url(#ld-arrow)"
-                          style={lineStyle(0.6)}
+                          style={lineStyle(0.3)}
                         />
                         {/* Investor → Advisor */}
                         <line
                           x1="392" y1="108" x2="278" y2="186"
                           stroke={GOLD} strokeWidth="1.25"
                           markerEnd="url(#ld-arrow)"
-                          style={lineStyle(0.9)}
+                          style={lineStyle(0.45)}
                         />
                         {/* Advisor → Development */}
                         <line
                           x1="250" y1="220" x2="250" y2="312"
                           stroke={GOLD} strokeWidth="1.25"
                           markerEnd="url(#ld-arrow)"
-                          style={lineStyle(2.0)}
+                          style={lineStyle(1.0)}
                         />
                       </>
                     );
@@ -1104,14 +1104,14 @@ const LandDevelopment = () => {
                     cx="100" cy="100" r="4.5" fill={GOLD}
                     style={{
                       opacity: relationshipInView ? 1 : 0,
-                      transition: "opacity 0.8s ease 0.1s",
+                      transition: "opacity 0.4s ease 0.05s",
                     }}
                   />
                   <circle
                     cx="400" cy="100" r="4.5" fill={GOLD}
                     style={{
                       opacity: relationshipInView ? 1 : 0,
-                      transition: "opacity 0.8s ease 0.4s",
+                      transition: "opacity 0.4s ease 0.2s",
                     }}
                   />
                   <circle
@@ -1119,14 +1119,14 @@ const LandDevelopment = () => {
                     className="transition-all duration-500 group-hover:drop-shadow-[0_0_10px_rgba(185,160,108,0.85)]"
                     style={{
                       opacity: relationshipInView ? 1 : 0,
-                      transition: "opacity 0.9s ease 1.7s, filter 0.5s ease",
+                      transition: "opacity 0.45s ease 0.85s, filter 0.25s ease",
                     }}
                   />
                   <circle
                     cx="250" cy="335" r="4.5" fill={GOLD}
                     style={{
                       opacity: relationshipInView ? 1 : 0,
-                      transition: "opacity 0.8s ease 3.0s",
+                      transition: "opacity 0.4s ease 1.5s",
                     }}
                   />
                 </svg>
@@ -1141,7 +1141,7 @@ const LandDevelopment = () => {
                     maxWidth: "40%",
                     opacity: relationshipInView ? 1 : 0,
                     transform: relationshipInView ? "translateY(0)" : "translateY(6px)",
-                    transition: "opacity 0.9s ease 0.1s, transform 0.9s ease 0.1s",
+                    transition: "opacity 0.45s ease 0.05s, transform 0.45s ease 0.05s",
                   }}
                 >
                   <span className="inline-block bg-background px-2 py-0.5">
@@ -1165,7 +1165,7 @@ const LandDevelopment = () => {
                     maxWidth: "40%",
                     opacity: relationshipInView ? 1 : 0,
                     transform: relationshipInView ? "translateY(0)" : "translateY(6px)",
-                    transition: "opacity 0.9s ease 0.4s, transform 0.9s ease 0.4s",
+                    transition: "opacity 0.45s ease 0.2s, transform 0.45s ease 0.2s",
                   }}
                 >
                   <span className="inline-block bg-background px-2 py-0.5 text-right">
@@ -1188,7 +1188,7 @@ const LandDevelopment = () => {
                     top: "55%",
                     transform: "translateX(-50%)",
                     opacity: relationshipInView ? 1 : 0,
-                    transition: "opacity 1s ease 1.7s",
+                    transition: "opacity 0.5s ease 0.85s",
                   }}
                 >
                   <span className="inline-block bg-background px-3 py-1">
@@ -1216,7 +1216,7 @@ const LandDevelopment = () => {
                     bottom: "0%",
                     transform: "translateX(-50%)",
                     opacity: relationshipInView ? 1 : 0,
-                    transition: "opacity 0.9s ease 3.0s",
+                    transition: "opacity 0.45s ease 1.5s",
                   }}
                 >
                   <span className="inline-block px-2 py-0.5">

@@ -87,6 +87,9 @@ Austin's luxury market has matured considerably. Buyers relocating from Californ
 
 This guide covers eight strategies that reflect how serious estate property marketing actually works at the high end of the Austin market. Each one addresses a specific gap that generic real estate marketing leaves open.
 
+:::intel-gauge
+:::
+
 ## 1. Control the Narrative Before the Listing Goes Live
 
 ### The Challenge It Solves

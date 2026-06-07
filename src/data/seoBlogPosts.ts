@@ -5168,7 +5168,7 @@ Many Lake Austin transactions occur off-market. Working with a specialized agent
   {
     id: "austin-luxury-real-estate-market-forecast",
     title: "Austin Luxury Real Estate Market Forecast: 2026 Pricing, Trends & Expert Predictions",
-    metaTitle: "Austin Luxury Market Forecast 2026 | Echelon Property Group",
+    metaTitle: "Austin Luxury Market Forecast | Echelon",
     excerpt: "Data-backed 2026 forecast for Austin's luxury real estate market. Taylor Sherwood analyzes pricing tiers, buyer-seller leverage shifts, neighborhood-level predictions, and where smart money is moving in Austin's $2M+ segment.",
     content: `## Where Austin's Luxury Market Stands in 2026
 

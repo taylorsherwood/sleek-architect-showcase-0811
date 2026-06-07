@@ -25,7 +25,7 @@ const Footer = () => {
   return (
     <footer data-nav-dark-zone style={{ background: "#0C0F24", fontFamily: '"Jost", sans-serif', fontWeight: 300 }}>
       {/* Top border */}
-      <div className="w-full h-px" style={{ background: "rgba(184,160,109,0.15)" }} />
+      <div className="w-full h-px" style={{ background: "hsl(var(--primary))" }} />
 
       <div className="max-w-[1140px] mx-auto px-8 md:px-12">
         <div style={{ paddingTop: "clamp(48px, 6vw, 72px)", paddingBottom: "12px" }}>

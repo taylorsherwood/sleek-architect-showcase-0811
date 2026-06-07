@@ -339,7 +339,7 @@ const LandDevelopment = () => {
                 }}
               >
                 Evaluating land through existing infrastructure, entitlement potential,
-                utility access,&nbsp;
+                utility access,&nbsp;<br />
                 market demand, and future land use.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">

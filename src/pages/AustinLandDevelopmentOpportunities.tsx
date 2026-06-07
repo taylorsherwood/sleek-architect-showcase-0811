@@ -83,7 +83,7 @@ const AustinLandDevelopmentOpportunities = () => {
   const inputClass =
     "w-full bg-transparent border-b border-white/20 focus:border-gold outline-none py-3 text-white font-sans transition-colors placeholder:text-white/30";
   const selectClass =
-    "w-full bg-transparent border-b border-white/20 focus:border-gold outline-none py-3 text-white font-sans transition-colors appearance-none cursor-pointer [&>option]:bg-[hsl(220,14%,10%)] [&>option]:text-white";
+    "w-full bg-transparent border-b border-white/20 focus:border-gold outline-none py-3 text-white font-sans transition-colors appearance-none cursor-pointer [&>option]:bg-primary [&>option]:text-white";
 
   const FormBlock = () =>
     submitted ? (
@@ -174,7 +174,7 @@ const AustinLandDevelopmentOpportunities = () => {
     );
 
   return (
-    <div className="min-h-screen bg-[hsl(220,14%,8%)]">
+    <div className="min-h-screen bg-primary">
       <SEOHead
         title="Austin Land Development | Echelon Property Group"
         description="Land, redevelopment sites, and development opportunities across Austin and Central Texas. Off-market and on-market deals for developers and investors."
@@ -191,7 +191,7 @@ const AustinLandDevelopmentOpportunities = () => {
       />
 
       {/* ── Minimal header ──────────────────────────── */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-[hsl(220,14%,8%)]/90 backdrop-blur-sm border-b border-white/5">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-primary/90 backdrop-blur-sm border-b border-white/5">
         <div className="container mx-auto px-6 h-14 flex items-center justify-between">
           <Link to="/" className="text-white/70 hover:text-white transition-colors text-sm tracking-[0.2em] uppercase font-sans">
             Echelon Property Group
@@ -212,7 +212,7 @@ const AustinLandDevelopmentOpportunities = () => {
             className="w-full h-full object-cover opacity-15"
             loading="eager"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-[hsl(220,14%,8%)]/30 to-[hsl(220,14%,8%)]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-primary/30 to-primary" />
         </div>
 
         <div className="relative z-10 container mx-auto px-6 py-16 md:py-24">
@@ -265,7 +265,7 @@ const AustinLandDevelopmentOpportunities = () => {
       </section>
 
       {/* ── WHAT WE SOURCE ──────────────────────────── */}
-      <section className="py-16 md:py-24 bg-[hsl(220,14%,6%)] border-t border-white/5">
+      <section className="py-16 md:py-24 bg-primary border-t border-white/5">
         <div className="container mx-auto px-6 max-w-4xl">
           <p className="text-gold text-center mb-4 font-bold" style={labelStyle}>
             SOURCING CAPABILITIES
@@ -302,7 +302,7 @@ const AustinLandDevelopmentOpportunities = () => {
       </section>
 
       {/* ── WHY WORK WITH US ────────────────────────── */}
-      <section className="py-16 md:py-24 bg-[hsl(220,14%,8%)] border-t border-white/5">
+      <section className="py-16 md:py-24 bg-primary border-t border-white/5">
         <div className="container mx-auto px-6 max-w-3xl text-center">
           <p className="text-gold mb-4 font-bold" style={labelStyle}>
             THE ECHELON ADVANTAGE
@@ -335,7 +335,7 @@ const AustinLandDevelopmentOpportunities = () => {
       </section>
 
       {/* ── CURRENT LISTINGS ────────────────────────── */}
-      <section className="py-16 md:py-24 bg-[hsl(220,14%,6%)] border-t border-white/5">
+      <section className="py-16 md:py-24 bg-primary border-t border-white/5">
         <div className="container mx-auto px-6 max-w-3xl text-center">
           <p className="text-gold mb-4 font-bold" style={labelStyle}>
             ACTIVE INVENTORY
@@ -371,7 +371,7 @@ const AustinLandDevelopmentOpportunities = () => {
       </section>
 
       {/* ── FINAL CTA ───────────────────────────────── */}
-      <section className="py-16 md:py-24 bg-[hsl(220,14%,8%)] border-t border-white/5">
+      <section className="py-16 md:py-24 bg-primary border-t border-white/5">
         <div className="container mx-auto px-6 max-w-lg text-center">
           <h2 className="font-display text-2xl md:text-3xl font-light text-white mb-4">
             Submit Your Acquisition Criteria
@@ -390,7 +390,7 @@ const AustinLandDevelopmentOpportunities = () => {
       </section>
 
       {/* ── Footer (minimal) ────────────────────────── */}
-      <footer className="py-8 bg-[hsl(220,14%,5%)] border-t border-white/5">
+      <footer className="py-8 bg-primary">
         <div className="container mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-white/25 text-xs tracking-wide">© {new Date().getFullYear()} Echelon Property Group · Austin, Texas</p>
           <div className="flex gap-5">

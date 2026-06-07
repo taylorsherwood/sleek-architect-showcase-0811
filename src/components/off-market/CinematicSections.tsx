@@ -353,9 +353,9 @@ const CinematicSections = ({ formNode }: Props) => {
   // ─────────────────────────────────────────────
   if (isMobile) {
     return (
-      <div className="bg-[hsl(220,15%,8%)] text-white">
+      <div className="bg-primary text-white">
         {/* ── Section 2, Editorial Thesis ── */}
-        <section className="relative px-7 pt-20 pb-24 bg-[hsl(220,15%,8%)] overflow-hidden">
+        <section className="relative px-7 pt-20 pb-24 bg-primary overflow-hidden">
           <p className="relative text-[hsl(var(--gold))] mb-6 font-bold" style={labelStyle}>
             THE THESIS
           </p>
@@ -449,7 +449,7 @@ const CinematicSections = ({ formNode }: Props) => {
         </section>
 
         {/* ── Section 6, Editorial testimonial ── */}
-        <section className="bg-[hsl(220,15%,6%)]">
+        <section className="bg-primary">
           <div className="relative w-full h-[55vh] overflow-hidden">
             <img
               src={testimonialSplitImg}
@@ -487,7 +487,7 @@ const CinematicSections = ({ formNode }: Props) => {
         </section>
 
         {/* ── Section 7, Form ── */}
-        <section id="section-7-form" className="py-20 px-6 bg-[hsl(220,15%,8%)]">
+        <section id="section-7-form" className="py-20 px-6 bg-primary">
           <div className="max-w-xl mx-auto">
             <p className="text-[hsl(var(--gold))] mb-4 font-bold text-center" style={labelStyle}>
               ECHELON INSIDER
@@ -519,9 +519,9 @@ const CinematicSections = ({ formNode }: Props) => {
   // DESKTOP: full cinematic experience
   // ─────────────────────────────────────────────
   return (
-    <div ref={rootRef} className="bg-[hsl(220,15%,8%)] text-white">
+    <div ref={rootRef} className="bg-primary text-white">
       {/* ── Section 2: Pinned Thesis ───────────── */}
-      <section className="thesis-section relative h-screen w-full bg-[hsl(220,15%,8%)] flex items-center justify-center overflow-hidden">
+      <section className="thesis-section relative h-screen w-full bg-primary flex items-center justify-center overflow-hidden">
         <h2
           className="font-display text-[hsl(40,30%,92%)] text-center px-8 max-w-[90vw] leading-[1.15] font-light"
           style={{ fontSize: "6vw" }}
@@ -543,7 +543,7 @@ const CinematicSections = ({ formNode }: Props) => {
       </section>
 
       {/* ── Section 2.5: Image Split Reveal ────── */}
-      <section className="split-section relative h-screen w-full overflow-hidden bg-[hsl(220,15%,8%)]">
+      <section className="split-section relative h-screen w-full overflow-hidden bg-primary">
         {/* Revealed background image */}
         <div className="absolute inset-0 z-0">
           <img
@@ -616,7 +616,7 @@ const CinematicSections = ({ formNode }: Props) => {
       </section>
 
       {/* ── Section 3 (new): Drone Video, plays only when in view ── */}
-      <section className="drone-section relative h-screen w-full overflow-hidden bg-[hsl(220,15%,8%)]">
+      <section className="drone-section relative h-screen w-full overflow-hidden bg-primary">
         <video
           ref={droneVideoRef}
           muted
@@ -660,7 +660,7 @@ const CinematicSections = ({ formNode }: Props) => {
       </section>
 
       {/* ── Section 3.5: Cinematic Parallax Bridge ─ */}
-      <section className="bridge-section relative h-screen w-full overflow-hidden bg-[hsl(220,15%,6%)]">
+      <section className="bridge-section relative h-screen w-full overflow-hidden bg-primary">
         <div className="bridge-image absolute inset-0 will-change-transform" style={{ top: "-10%", height: "120%" }}>
           <img
             src={westlakeDusk}
@@ -672,7 +672,7 @@ const CinematicSections = ({ formNode }: Props) => {
             className="absolute inset-0"
             style={{
               background:
-                "linear-gradient(180deg, hsl(220,15%,6%) 0%, rgba(12,15,36,0.5) 30%, rgba(12,15,36,0.45) 70%, hsl(220,15%,6%) 100%)",
+                "linear-gradient(180deg, hsl(var(--primary)) 0%, rgba(12,15,36,0.5) 30%, rgba(12,15,36,0.45) 70%, hsl(var(--primary)) 100%)",
             }}
           />
         </div>
@@ -696,7 +696,7 @@ const CinematicSections = ({ formNode }: Props) => {
       {/* ── Section 4: Horizontal Scroll Gallery, REMOVED ─ */}
 
       {/* ── Section 6: Vertical Split-Reveal Testimonial ─ */}
-      <section className="testimonial-section relative w-full h-screen bg-[hsl(220,15%,6%)] overflow-hidden">
+      <section className="testimonial-section relative w-full h-screen bg-primary overflow-hidden">
         {/* Testimonial sits behind on the right side */}
         <div className="absolute inset-0 z-0 flex items-center justify-end px-8 md:px-16 lg:px-24">
           <div className="max-w-xl md:w-1/2 md:pl-8">
@@ -745,7 +745,7 @@ const CinematicSections = ({ formNode }: Props) => {
         className="form-section relative w-full py-32 px-8 overflow-hidden"
         style={{
           background:
-            "radial-gradient(ellipse at top, hsl(220,18%,12%) 0%, hsl(220,15%,6%) 70%)",
+            "hsl(var(--primary))",
         }}
       >
         <div className="max-w-2xl mx-auto">

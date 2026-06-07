@@ -174,10 +174,10 @@ const HomeCommunitiesScroll = () => {
   }, []);
 
   return (
-    <div ref={rootRef} className="bg-[hsl(220,15%,6%)]">
+    <div ref={rootRef} className="bg-primary">
       {/* DESKTOP / TABLET, pinned horizontal scroll */}
       <section
-        className="hcs-section relative h-screen w-full overflow-hidden bg-[hsl(220,15%,6%)] hidden md:block"
+        className="hcs-section relative h-screen w-full overflow-hidden bg-primary hidden md:block"
         aria-label="Featured Austin communities"
       >
         <div
@@ -246,7 +246,7 @@ const HomeCommunitiesScroll = () => {
       </section>
 
       {/* MOBILE, stacked full-bleed fallback (no pin) */}
-      <div className="md:hidden bg-[hsl(220,15%,6%)]">
+      <div className="md:hidden bg-primary">
         {NEIGHBORHOODS.map((n) => (
           <Link
             key={`m-${n.name}`}

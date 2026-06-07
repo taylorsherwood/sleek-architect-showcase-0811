@@ -976,7 +976,7 @@ const CommunitiesSection = () => {
         </div>
       </div>
 
-      <Suspense fallback={<div className="min-h-[400px] bg-[hsl(220,15%,6%)]" />}>
+      <Suspense fallback={<div className="min-h-[400px] bg-primary" />}>
         <HomeCommunitiesScroll />
       </Suspense>
 

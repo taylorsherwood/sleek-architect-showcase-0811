@@ -487,7 +487,7 @@ const CinematicSections = ({ formNode }: Props) => {
         </section>
 
         {/* ── Section 7, Form ── */}
-        <section id="section-7-form" className="py-20 px-6 bg-[hsl(220,15%,8%)]">
+        <section id="section-7-form" className="py-20 px-6 bg-primary">
           <div className="max-w-xl mx-auto">
             <p className="text-[hsl(var(--gold))] mb-4 font-bold text-center" style={labelStyle}>
               ECHELON INSIDER
@@ -519,9 +519,9 @@ const CinematicSections = ({ formNode }: Props) => {
   // DESKTOP: full cinematic experience
   // ─────────────────────────────────────────────
   return (
-    <div ref={rootRef} className="bg-[hsl(220,15%,8%)] text-white">
+    <div ref={rootRef} className="bg-primary text-white">
       {/* ── Section 2: Pinned Thesis ───────────── */}
-      <section className="thesis-section relative h-screen w-full bg-[hsl(220,15%,8%)] flex items-center justify-center overflow-hidden">
+      <section className="thesis-section relative h-screen w-full bg-primary flex items-center justify-center overflow-hidden">
         <h2
           className="font-display text-[hsl(40,30%,92%)] text-center px-8 max-w-[90vw] leading-[1.15] font-light"
           style={{ fontSize: "6vw" }}
@@ -543,7 +543,7 @@ const CinematicSections = ({ formNode }: Props) => {
       </section>
 
       {/* ── Section 2.5: Image Split Reveal ────── */}
-      <section className="split-section relative h-screen w-full overflow-hidden bg-[hsl(220,15%,8%)]">
+      <section className="split-section relative h-screen w-full overflow-hidden bg-primary">
         {/* Revealed background image */}
         <div className="absolute inset-0 z-0">
           <img

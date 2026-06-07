@@ -258,7 +258,8 @@ export function createArticleSchema(title: string, description: string, datePubl
   };
 }
 
-export function createRealEstateListingSchema(listing: { name: string; description: string; image: string; price: string; url: string }) {
+export function createRealEstateListingSchema(listing: { name: string; description: string; image: string; price: string; url: string; location?: string }) {
+  const priceNumeric = listing.price.replace(/[^0-9]/g, "");
   return {
     "@context": "https://schema.org",
     "@type": "RealEstateListing",
@@ -266,12 +267,23 @@ export function createRealEstateListingSchema(listing: { name: string; descripti
     "description": listing.description,
     "image": listing.image,
     "url": listing.url,
-    "offers": {
-      "@type": "Offer",
-      "price": listing.price.replace(/[^0-9]/g, ''),
-      "priceCurrency": "USD",
-      "availability": "https://schema.org/InStock",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": listing.name,
+      "addressLocality": listing.location || "Austin",
+      "addressRegion": "TX",
+      "addressCountry": "US",
     },
+    ...(priceNumeric
+      ? {
+          "offers": {
+            "@type": "Offer",
+            "price": priceNumeric,
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+          },
+        }
+      : {}),
     "broker": {
       "@type": "RealEstateAgent",
       "@id": `${SITE}/#agent`,

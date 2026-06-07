@@ -493,7 +493,7 @@ const OffMarketRealEstateAustin = () => {
 
 
       {/* ── Footer (minimal) ────────────────────────── */}
-      <footer className="py-8 bg-primary border-t border-white/5">
+      <footer className="py-8 bg-primary">
         <div className="container mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-white/25 text-xs tracking-wide">© {new Date().getFullYear()} Echelon Property Group · Austin, Texas · Brokered by eXp Realty</p>
           <div className="flex gap-5">

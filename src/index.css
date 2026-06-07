@@ -133,6 +133,10 @@ section.bg-background::after {
 .land-dev-page section::before,
 .land-dev-page section::after { display: none !important; }
 
+.land-dev-page section {
+  box-shadow: none !important;
+}
+
 
 /* Ivory sections, barely-there fade toward warm white */
 section.bg-secondary::before,

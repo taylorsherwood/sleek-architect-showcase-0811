@@ -66,7 +66,7 @@ import { BlogPost } from "./blogPosts";
 export const seoBlogPosts: BlogPost[] = [
   {
     id: "estate-property-marketing-strategies-austin",
-    title: "8 Proven Estate Property Marketing Strategies That Attract Serious Buyers in Austin",
+    title: "8 Proven Marketing Strategies That Attract Serious Buyers in Austin",
     metaTitle: "8 Estate Property Marketing Strategies for Austin Luxury Sellers | Echelon Property Group",
     excerpt: "Eight proven estate property marketing strategies tailored to Austin's luxury sellers, covering pre-market positioning in Westlake Hills and Barton Creek, architectural photography and dedicated property websites, private channel distribution to family offices and relocating executives, precision pricing and absorption analysis, narrative storytelling, buyer-profile staging, curated showings, and global reach with local Austin precision.",
     author: "Taylor Sherwood",

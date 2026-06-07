@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet-async";
 const SITE_URL = "https://www.echelonpropertygroup.com";
 const BRAND_NAME = "Echelon Property Group";
 const HOMEPAGE_TITLE = `${BRAND_NAME} | Austin Luxury Real Estate`;
-const BRAND_SUFFIX_PATTERN = /\s*\|\s*Echelon Property Group(?: Austin)?\s*$/i;
+const BRAND_SUFFIX_PATTERN = /\s*\|\s*Echelon(?:\s+Property\s+Group)?(?:\s+Austin)?\s*$/i;
 
 interface SEOHeadProps {
   title?: string | null;

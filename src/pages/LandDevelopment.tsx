@@ -252,7 +252,7 @@ const LandDevelopment = () => {
           setRelationshipInView(entry.isIntersecting);
         });
       },
-      { threshold: 0.35 }
+      { threshold: 0.15 }
     );
     obs.observe(el);
     return () => obs.disconnect();
@@ -1069,7 +1069,7 @@ const LandDevelopment = () => {
                     const lineStyle = (delay: number) => ({
                       strokeDasharray: 260,
                       strokeDashoffset: relationshipInView ? 0 : 260,
-                      transition: `stroke-dashoffset 1.2s cubic-bezier(0.4,0,0.2,1) ${delay}s, opacity 0.6s ease ${delay}s`,
+                      transition: `stroke-dashoffset 0.6s cubic-bezier(0.4,0,0.2,1) ${delay}s, opacity 0.3s ease ${delay}s`,
                       opacity: relationshipInView ? 1 : 0,
                     });
                     return (
@@ -1079,21 +1079,21 @@ const LandDevelopment = () => {
                           x1="108" y1="108" x2="222" y2="186"
                           stroke={GOLD} strokeWidth="1.25"
                           markerEnd="url(#ld-arrow)"
-                          style={lineStyle(0.6)}
+                          style={lineStyle(0.3)}
                         />
                         {/* Investor → Advisor */}
                         <line
                           x1="392" y1="108" x2="278" y2="186"
                           stroke={GOLD} strokeWidth="1.25"
                           markerEnd="url(#ld-arrow)"
-                          style={lineStyle(0.9)}
+                          style={lineStyle(0.45)}
                         />
                         {/* Advisor → Development */}
                         <line
                           x1="250" y1="220" x2="250" y2="312"
                           stroke={GOLD} strokeWidth="1.25"
                           markerEnd="url(#ld-arrow)"
-                          style={lineStyle(2.0)}
+                          style={lineStyle(1.0)}
                         />
                       </>
                     );

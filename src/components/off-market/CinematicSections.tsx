@@ -353,9 +353,9 @@ const CinematicSections = ({ formNode }: Props) => {
   // ─────────────────────────────────────────────
   if (isMobile) {
     return (
-      <div className="bg-[hsl(220,15%,8%)] text-white">
+      <div className="bg-primary text-white">
         {/* ── Section 2, Editorial Thesis ── */}
-        <section className="relative px-7 pt-20 pb-24 bg-[hsl(220,15%,8%)] overflow-hidden">
+        <section className="relative px-7 pt-20 pb-24 bg-primary overflow-hidden">
           <p className="relative text-[hsl(var(--gold))] mb-6 font-bold" style={labelStyle}>
             THE THESIS
           </p>
@@ -449,7 +449,7 @@ const CinematicSections = ({ formNode }: Props) => {
         </section>
 
         {/* ── Section 6, Editorial testimonial ── */}
-        <section className="bg-[hsl(220,15%,6%)]">
+        <section className="bg-primary">
           <div className="relative w-full h-[55vh] overflow-hidden">
             <img
               src={testimonialSplitImg}

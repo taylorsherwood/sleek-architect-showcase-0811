@@ -380,7 +380,7 @@ const Sell = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="\n"
+        title="Sell Your Austin Home"
         description="Sell your Austin home for top dollar. Strategic marketing, expert negotiation, and luxury listing presentation from Taylor Sherwood and Echelon Property Group."
         canonical="https://www.echelonpropertygroup.com/sell" />
       <SchemaMarkup schema={realEstateAgentSchema} />

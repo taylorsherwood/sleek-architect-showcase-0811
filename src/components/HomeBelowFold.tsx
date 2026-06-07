@@ -328,7 +328,7 @@ const StatItem = ({ stat }: { stat: typeof stats[number] }) => {
 };
 
 const StatsStrip = () => (
-  <section style={{ background: "#080B1A", padding: "clamp(64px, 10vw, 120px) 0" }}>
+  <section className="bg-primary" style={{ padding: "clamp(64px, 10vw, 120px) 0" }}>
     <div className="container mx-auto px-6">
       <div className="max-w-[1100px] mx-auto">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">

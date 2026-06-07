@@ -4,7 +4,7 @@ import echelonLogo from "@/assets/echelon-logo-gold.png";
 
 const SellPrivateThankYou = () => {
   return (
-    <div className="min-h-screen bg-[hsl(220,15%,8%)] flex flex-col">
+    <div className="min-h-screen bg-primary flex flex-col">
       <SEOHead
         title="Thank You | Private Sale Inquiry"
         description="Your private sale inquiry has been received. We'll be in touch shortly with a confidential strategy for your Austin home."
@@ -12,7 +12,7 @@ const SellPrivateThankYou = () => {
         noindex
       />
 
-      <header className="fixed top-0 left-0 right-0 z-50 bg-[hsl(220,15%,8%)]/60 backdrop-blur-[6px] border-b border-white/[0.03]">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-primary/60 backdrop-blur-[6px] border-b border-white/[0.03]">
         <div className="container mx-auto px-6 h-14 flex items-center justify-between">
           <Link
             to="/"

@@ -190,9 +190,9 @@ Referring qualified buyers and sellers into the network is one of the most effec
 
 Honor confidentiality obligations on every transaction, without exception. Sellers who transact privately often return to the same advisor network for future transactions. A positive first experience, including a buyer who behaved professionally and respected the process, creates a reputation that opens doors to future opportunities.
 
-Echelon Property Group maintains active advisor relationships across Austin's luxury residential, waterfront, and Hill Country land markets. The team works with buyers who are prepared to engage seriously, with credentials in order and criteria clearly defined.
+Echelon Property Group maintains active advisor relationships across Austin's [luxury residential](/austin-luxury-homes-for-sale), waterfront, and [Hill Country land](/land-ranch) markets. The team works with buyers who are prepared to engage seriously, with credentials in order and criteria clearly defined. For additional context on how the private side of the market actually works, see [why most buyers never see Austin's best homes](/blog/why-most-buyers-never-see-austins-best-homes) and the [off-market real estate guide](/off-market-real-estate-austin).
 
-Private access starts before a property becomes a listing. Buyers who consistently secure Austin's best opportunities are typically positioned within the right advisor networks before those opportunities ever become public. If you are actively searching in Austin's luxury market, Echelon Property Group can help you establish the relationships, credibility, and market access necessary to compete for exceptional off-market opportunities.
+Private access starts before a property becomes a listing. Buyers who consistently secure Austin's best opportunities are typically positioned within the right advisor networks before those opportunities ever become public. If you are actively searching in Austin's luxury market, [Echelon Property Group](/contact) can help you establish the relationships, credibility, and market access necessary to compete for exceptional [off-market opportunities](/private-opportunities).
 
 :::cta
 heading: Position yourself inside Austin's private property network

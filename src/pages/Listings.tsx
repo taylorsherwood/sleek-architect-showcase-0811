@@ -130,6 +130,7 @@ const Listings = () => {
             image: listing.image.startsWith('http') ? listing.image : `https://www.echelonpropertygroup.com${listing.image}`,
             price: listing.price,
             url: listing.link,
+            location: listing.location,
           })}
         />
       ))}

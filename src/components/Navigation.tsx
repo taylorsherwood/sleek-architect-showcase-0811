@@ -29,7 +29,6 @@ const Navigation = () => {
       children: [
         { href: "/austin-luxury-homes-for-sale", label: "AUSTIN LUXURY HOMES" },
         { href: "/listings/commercial-investment-austin", label: "COMMERCIAL & INVESTMENT" },
-        { href: "/communities", label: "COMMUNITIES" },
         { href: "/land-ranch", label: "LAND & RANCH" },
         { href: "/past-transactions", label: "PAST TRANSACTIONS" },
         { href: "/search", label: "SEARCH ALL LISTINGS" },

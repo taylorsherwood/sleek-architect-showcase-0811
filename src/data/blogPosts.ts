@@ -58,8 +58,8 @@ const LINK = "text-foreground underline hover:text-muted-foreground";
 export const blogPosts: BlogPost[] = [
   {
     id: "moving-from-new-york-to-austin",
-    title: "Moving from New York to Austin Guide",
-    metaTitle: "Moving from New York to Austin Guide | Echelon Property Group",
+    title: "Moving from New York to Austin: A complete Guide",
+    metaTitle: "Moving from New York to Austin: A complete Guide | Echelon Property Group",
     excerpt: "An honest, advisor-level guide for affluent New Yorkers relocating to Austin: tax tradeoffs, the luxury neighborhoods buyers actually choose, school realities, market process differences, and the lifestyle factors that matter at the top of the market.",
     author: "Taylor Sherwood",
     date: "2026-06-07",

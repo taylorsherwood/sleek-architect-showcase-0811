@@ -1141,7 +1141,7 @@ const LandDevelopment = () => {
                     maxWidth: "40%",
                     opacity: relationshipInView ? 1 : 0,
                     transform: relationshipInView ? "translateY(0)" : "translateY(6px)",
-                    transition: "opacity 0.9s ease 0.1s, transform 0.9s ease 0.1s",
+                    transition: "opacity 0.45s ease 0.05s, transform 0.45s ease 0.05s",
                   }}
                 >
                   <span className="inline-block bg-background px-2 py-0.5">
@@ -1165,7 +1165,7 @@ const LandDevelopment = () => {
                     maxWidth: "40%",
                     opacity: relationshipInView ? 1 : 0,
                     transform: relationshipInView ? "translateY(0)" : "translateY(6px)",
-                    transition: "opacity 0.9s ease 0.4s, transform 0.9s ease 0.4s",
+                    transition: "opacity 0.45s ease 0.2s, transform 0.45s ease 0.2s",
                   }}
                 >
                   <span className="inline-block bg-background px-2 py-0.5 text-right">
@@ -1188,7 +1188,7 @@ const LandDevelopment = () => {
                     top: "55%",
                     transform: "translateX(-50%)",
                     opacity: relationshipInView ? 1 : 0,
-                    transition: "opacity 1s ease 1.7s",
+                    transition: "opacity 0.5s ease 0.85s",
                   }}
                 >
                   <span className="inline-block bg-background px-3 py-1">
@@ -1216,7 +1216,7 @@ const LandDevelopment = () => {
                     bottom: "0%",
                     transform: "translateX(-50%)",
                     opacity: relationshipInView ? 1 : 0,
-                    transition: "opacity 0.9s ease 3.0s",
+                    transition: "opacity 0.45s ease 1.5s",
                   }}
                 >
                   <span className="inline-block px-2 py-0.5">

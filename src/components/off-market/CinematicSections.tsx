@@ -745,7 +745,7 @@ const CinematicSections = ({ formNode }: Props) => {
         className="form-section relative w-full py-32 px-8 overflow-hidden"
         style={{
           background:
-            "radial-gradient(ellipse at top, hsl(220,18%,12%) 0%, hsl(220,15%,6%) 70%)",
+            "hsl(var(--primary))",
         }}
       >
         <div className="max-w-2xl mx-auto">

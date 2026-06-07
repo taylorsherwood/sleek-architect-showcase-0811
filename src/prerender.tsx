@@ -85,7 +85,9 @@ const parseAttributes = (attributes: string) => {
   while ((match = attrRegex.exec(attributes)) !== null) {
     const key = match[1];
     const value = match[2] ?? "";
-    if (key !== "data-rh") props[key] = decodeEntities(value);
+    // Preserve data-rh so react-helmet-async recognizes its server-rendered
+    // tags on hydration and replaces (instead of duplicating) them.
+    props[key] = decodeEntities(value);
   }
 
   return props;

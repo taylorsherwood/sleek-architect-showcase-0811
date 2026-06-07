@@ -953,7 +953,7 @@ Echelon Property Group advises executors, trustees, estate representatives, luxu
   {
     id: "how-to-buy-luxury-home-austin",
     title: "How to Buy a Luxury Home in Austin: 9 Insider Strategies for High-End Buyers",
-    metaTitle: "How to Buy a Luxury Home in Austin: 9 Insider Strategies | Echelon Property Group",
+    metaTitle: "How to Buy a Luxury Home in Austin | Echelon",
     excerpt: "Nine Austin-specific strategies for buying a high-end home above $2M, from neighborhood-by-neighborhood market realities and Lake Austin waterfront nuance to off-market access, pricing logic, and relocation considerations most national guides miss.",
     author: "Taylor Sherwood",
     date: "2026-06-01",
@@ -1262,7 +1262,7 @@ href: /contact
   {
     id: "selling-luxury-home-austin-strategies",
     title: "7 Proven Strategies for Selling a Luxury Home in Austin Without Leaving Money on the Table",
-    metaTitle: "Selling a Luxury Home in Austin: 7 Proven Strategies | Echelon Property Group",
+    metaTitle: "Selling a Luxury Home in Austin | Echelon",
     excerpt: "Selling a luxury home in Austin requires a fundamentally different strategy than a conventional listing. Seven proven approaches to pricing, positioning, off-market exposure, negotiation, and representation in Austin's upper-tier market.",
     author: "Taylor Sherwood",
     date: "2026-05-27",
@@ -2966,7 +2966,7 @@ If you are considering [buying](/buy) or [selling](/sell) a luxury property in A
   {
     id: "best-luxury-real-estate-agents-austin",
     title: "7 Proven Strategies to Find the Best Luxury Real Estate Agents in Austin",
-    metaTitle: "Best Luxury Real Estate Agents Austin: 7 Proven Strategies | Echelon Property Group",
+    metaTitle: "Best Austin Luxury Real Estate Agents | Echelon",
     excerpt: "Discover the best luxury real estate agents austin buyers trust. These 7 proven strategies help you find top experts for $2M+ luxury properties today.",
     content: `Finding the best [luxury real estate agent in Austin](/luxury-real-estate-austin) requires far more than reading Zillow reviews or searching "top Realtor near me." In Austin's $2M+ luxury market, many of the most desirable homes trade quietly through private networks, relationship-driven referrals, and [off-market opportunities](/off-market-real-estate-austin) long before they appear publicly online.
 
@@ -5168,7 +5168,7 @@ Many Lake Austin transactions occur off-market. Working with a specialized agent
   {
     id: "austin-luxury-real-estate-market-forecast",
     title: "Austin Luxury Real Estate Market Forecast: 2026 Pricing, Trends & Expert Predictions",
-    metaTitle: "Austin Luxury Market Forecast 2026 | Echelon Property Group",
+    metaTitle: "Austin Luxury Market Forecast | Echelon",
     excerpt: "Data-backed 2026 forecast for Austin's luxury real estate market. Taylor Sherwood analyzes pricing tiers, buyer-seller leverage shifts, neighborhood-level predictions, and where smart money is moving in Austin's $2M+ segment.",
     content: `## Where Austin's Luxury Market Stands in 2026
 

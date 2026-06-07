@@ -58,7 +58,7 @@ export const blogPosts: BlogPost[] = [
   {
     id: "lake-austin-vs-lake-travis-waterfront-homes",
     title: "Lake Austin vs Lake Travis Waterfront Homes: Key Differences Buyers Need to Know",
-    metaTitle: "Lake Austin vs Lake Travis Waterfront Homes: Buyer's Guide | Echelon Property Group",
+    metaTitle: "Lake Austin vs Lake Travis Waterfront Living | Echelon",
     excerpt: "Buyers comparing Lake Austin vs Lake Travis waterfront homes will find 13 critical differences, from water level stability and dock ownership rights to commute times, privacy, and long-term investment dynamics, that can determine whether a property truly fits their lifestyle and ownership goals.",
     author: "Taylor Sherwood",
     date: "2026-06-05",

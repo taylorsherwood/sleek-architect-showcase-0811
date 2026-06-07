@@ -268,7 +268,7 @@ const LandDevelopment = () => {
 
   return (
 
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background land-dev-page">
       <SEOHead
         title="Land Development & Strategic Acreage in Austin"
         description="Strategic advisory for landowners, investors, developers, and family offices evaluating land development, data center sites, industrial, and path-of-growth acreage across Austin and Central Texas."

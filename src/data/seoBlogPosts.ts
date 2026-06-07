@@ -80,7 +80,7 @@ If you are searching for a property in [Tarrytown](/communities/tarrytown), [Rob
 
 This guide walks through the specific steps high-net-worth buyers and sellers use to gain meaningful access to Austin's private real estate network. Not theoretical access. Actionable access. The kind that leads to off-market acquisitions, pre-market opportunities, and transactions that never touch a public database.
 
-These steps apply whether you are relocating from California or New York, expanding a real estate portfolio, or simply unwilling to compete in open-market bidding situations. Each step builds on the previous one, so the sequence matters.
+These steps apply whether you are [relocating from California or New York](/why-billionaires-are-moving-to-austin), expanding a [real estate portfolio](/austin-real-estate-investment), or simply unwilling to compete in open-market bidding situations. Each step builds on the previous one, so the sequence matters.
 
 ## Step 1: Understand What Exclusive Property Networks Actually Are
 

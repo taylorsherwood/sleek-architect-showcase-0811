@@ -1048,7 +1048,7 @@ const LandDevelopment = () => {
                     strokeDasharray="2 4"
                     style={{
                       opacity: relationshipInView ? 1 : 0,
-                      transition: "opacity 1.6s ease 0.1s",
+                      transition: "opacity 0.8s ease 0.05s",
                     }}
                   />
                   <circle
@@ -1060,7 +1060,7 @@ const LandDevelopment = () => {
                     strokeDasharray="2 6"
                     style={{
                       opacity: relationshipInView ? 1 : 0,
-                      transition: "opacity 1.6s ease 0.2s",
+                      transition: "opacity 0.8s ease 0.1s",
                     }}
                   />
 
@@ -1104,14 +1104,14 @@ const LandDevelopment = () => {
                     cx="100" cy="100" r="4.5" fill={GOLD}
                     style={{
                       opacity: relationshipInView ? 1 : 0,
-                      transition: "opacity 0.8s ease 0.1s",
+                      transition: "opacity 0.4s ease 0.05s",
                     }}
                   />
                   <circle
                     cx="400" cy="100" r="4.5" fill={GOLD}
                     style={{
                       opacity: relationshipInView ? 1 : 0,
-                      transition: "opacity 0.8s ease 0.4s",
+                      transition: "opacity 0.4s ease 0.2s",
                     }}
                   />
                   <circle
@@ -1119,14 +1119,14 @@ const LandDevelopment = () => {
                     className="transition-all duration-500 group-hover:drop-shadow-[0_0_10px_rgba(185,160,108,0.85)]"
                     style={{
                       opacity: relationshipInView ? 1 : 0,
-                      transition: "opacity 0.9s ease 1.7s, filter 0.5s ease",
+                      transition: "opacity 0.45s ease 0.85s, filter 0.25s ease",
                     }}
                   />
                   <circle
                     cx="250" cy="335" r="4.5" fill={GOLD}
                     style={{
                       opacity: relationshipInView ? 1 : 0,
-                      transition: "opacity 0.8s ease 3.0s",
+                      transition: "opacity 0.4s ease 1.5s",
                     }}
                   />
                 </svg>

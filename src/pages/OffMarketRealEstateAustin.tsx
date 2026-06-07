@@ -161,7 +161,7 @@ const OffMarketRealEstateAustin = () => {
   const inputClass =
     "w-full bg-transparent border-b border-white/20 focus:border-[hsl(var(--gold))] outline-none py-3 text-white font-sans transition-colors placeholder:text-white/30";
   const selectBase =
-    "w-full bg-transparent border-b border-white/20 focus:border-[hsl(var(--gold))] outline-none py-3 font-sans transition-colors appearance-none cursor-pointer [&>option]:bg-[hsl(220,15%,12%)] [&>option]:text-white";
+    "w-full bg-transparent border-b border-white/20 focus:border-[hsl(var(--gold))] outline-none py-3 font-sans transition-colors appearance-none cursor-pointer [&>option]:bg-primary [&>option]:text-white";
   const selectClassFor = (value: string) =>
     `${selectBase} ${value ? "text-white" : "text-[hsl(var(--gold))]"}`;
 
@@ -261,7 +261,7 @@ const OffMarketRealEstateAustin = () => {
   );
 
   return (
-    <div className="min-h-screen bg-[hsl(220,15%,8%)]">
+    <div className="min-h-screen bg-primary">
       <SEOHead
         title="Off-Market Homes & Luxury Listings in Austin | Echelon Property Group"
         description="Access Austin's most exclusive off-market homes and luxury listings. Luxury properties, investment deals, and land opportunities not on the public market."
@@ -279,7 +279,7 @@ const OffMarketRealEstateAustin = () => {
       <SchemaMarkup schema={realEstateAgentSchema} />
 
       {/* ── Minimal header ──────────────────────────── */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-[hsl(220,15%,8%)]/60 backdrop-blur-[6px] border-b border-white/[0.03]">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-primary/60 backdrop-blur-[6px] border-b border-white/[0.03]">
         <div className="container mx-auto px-6 h-14 flex items-center justify-between">
           <Link to="/" className="text-white/[0.85] hover:text-gold transition-colors tracking-[0.18em] uppercase font-sans" style={{ fontSize: "0.8rem" }}>
             Echelon Property Group
@@ -429,7 +429,7 @@ const OffMarketRealEstateAustin = () => {
       />
 
       {/* ── Off-market categories: cross-links to land & development ── */}
-      <section className="py-16 md:py-24 bg-[hsl(220,15%,6%)] border-t border-white/[0.04]">
+      <section className="py-16 md:py-24 bg-primary border-t border-white/[0.04]">
         <div className="container mx-auto px-6 max-w-5xl">
           <p
             className="text-[hsl(var(--gold))] mb-5 text-center"
@@ -454,7 +454,7 @@ const OffMarketRealEstateAustin = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-white/[0.06]">
             <Link
               to="/land-ranch"
-              className="group bg-[hsl(220,15%,8%)] hover:bg-[hsl(220,15%,10%)] transition-colors p-8 md:p-10"
+              className="group bg-primary hover:bg-primary/90 transition-colors p-8 md:p-10"
             >
               <p
                 className="text-[hsl(var(--gold))] mb-3"
@@ -471,7 +471,7 @@ const OffMarketRealEstateAustin = () => {
             </Link>
             <Link
               to="/land-development"
-              className="group bg-[hsl(220,15%,8%)] hover:bg-[hsl(220,15%,10%)] transition-colors p-8 md:p-10"
+              className="group bg-primary hover:bg-primary/90 transition-colors p-8 md:p-10"
             >
               <p
                 className="text-[hsl(var(--gold))] mb-3"
@@ -493,7 +493,7 @@ const OffMarketRealEstateAustin = () => {
 
 
       {/* ── Footer (minimal) ────────────────────────── */}
-      <footer className="py-8 bg-[hsl(220,15%,5%)] border-t border-white/5">
+      <footer className="py-8 bg-primary border-t border-white/5">
         <div className="container mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-white/25 text-xs tracking-wide">© {new Date().getFullYear()} Echelon Property Group · Austin, Texas · Brokered by eXp Realty</p>
           <div className="flex gap-5">
@@ -506,7 +506,7 @@ const OffMarketRealEstateAustin = () => {
 
       {/* ── Lightbox: Request Private Access form ── */}
       <Dialog open={modalOpen} onOpenChange={setModalOpen}>
-        <DialogContent className="max-w-2xl bg-[hsl(220,15%,8%)] border border-white/10 p-8 sm:p-10 max-h-[90vh] overflow-y-auto">
+        <DialogContent className="max-w-2xl bg-primary border border-white/10 p-8 sm:p-10 max-h-[90vh] overflow-y-auto">
           <DialogTitle className="sr-only">Request Private Access</DialogTitle>
           <DialogDescription className="sr-only">
             Submit your details to receive curated off-market opportunities in Austin.

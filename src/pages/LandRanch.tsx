@@ -1091,7 +1091,7 @@ const LandRanch = () => {
         </div>
       </section>
 
-      <div className="h-12 md:h-20" aria-hidden="true" />
+      <div className="h-8 md:h-12" aria-hidden="true" />
 
       {/* Fancy gold divider */}
       <div className="container mx-auto px-6" aria-hidden="true">

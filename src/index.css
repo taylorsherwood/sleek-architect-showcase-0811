@@ -129,6 +129,11 @@ section.bg-background::after {
   background: linear-gradient(to top, hsl(38 21% 95% / 0.22) 0%, hsl(38 21% 95% / 0) 100%);
 }
 
+/* Disable section fade overlays on Land Development page */
+.land-dev-page section::before,
+.land-dev-page section::after { display: none !important; }
+
+
 /* Ivory sections, barely-there fade toward warm white */
 section.bg-secondary::before,
 section.bg-secondary::after,

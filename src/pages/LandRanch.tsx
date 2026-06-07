@@ -1093,6 +1093,21 @@ const LandRanch = () => {
 
       <div className="h-12 md:h-20" aria-hidden="true" />
 
+      {/* Fancy gold divider */}
+      <div className="container mx-auto px-6" aria-hidden="true">
+        <div className="flex items-center justify-center gap-4 max-w-3xl mx-auto">
+          <span className="h-px flex-1 bg-gradient-to-r from-transparent to-[#b9a06c]/60" />
+          <span className="w-1.5 h-1.5 rotate-45 bg-[#b9a06c]" />
+          <span className="h-px w-16 bg-[#b9a06c]" />
+          <span className="w-2 h-2 rotate-45 border border-[#b9a06c]" />
+          <span className="h-px w-16 bg-[#b9a06c]" />
+          <span className="w-1.5 h-1.5 rotate-45 bg-[#b9a06c]" />
+          <span className="h-px flex-1 bg-gradient-to-l from-transparent to-[#b9a06c]/60" />
+        </div>
+      </div>
+
+      <div className="h-12 md:h-20" aria-hidden="true" />
+
       {/* ── PARALLAX BREAK ──────────────────────── */}
       <div
         className="parallax-break hidden md:block"

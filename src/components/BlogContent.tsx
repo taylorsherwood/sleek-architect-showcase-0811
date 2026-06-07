@@ -222,13 +222,13 @@ const GlanceTable = ({ body }: { body: string }) => {
       {data.map((row, rIdx) => (
         <div
           key={rIdx}
-          className={`grid grid-cols-1 ${gridColsClass} gap-x-8 gap-y-3 py-6 lg:py-7 border-b border-foreground/10 last:border-b-0 lg:items-center`}
+          className={`grid grid-cols-1 ${gridColsClass} gap-x-8 gap-y-3 py-6 lg:py-7 border-b border-foreground/10 last:border-b-0 lg:items-start`}
         >
-          <div className="font-display text-lg lg:text-base lg:font-medium text-foreground tracking-tight lg:tracking-normal lg:whitespace-nowrap">
+          <div className="text-minimal text-foreground uppercase tracking-[0.15em] text-xs leading-tight">
             {row[0]}
           </div>
           {row.slice(1).map((cell, cIdx) => (
-            <div key={cIdx} className="text-[15px] leading-[1.6] text-muted-foreground lg:whitespace-nowrap">
+            <div key={cIdx} className="text-[15px] leading-[1.6] text-muted-foreground">
               <div className="lg:hidden text-minimal text-foreground/55 uppercase tracking-[0.14em] text-[10px] mb-1">
                 {corridorHeaders[cIdx]}
               </div>
@@ -237,6 +237,7 @@ const GlanceTable = ({ body }: { body: string }) => {
           ))}
         </div>
       ))}
+
     </div>
   );
 };

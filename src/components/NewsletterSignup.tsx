@@ -42,15 +42,15 @@ const NewsletterSignup: React.FC<NewsletterSignupProps> = ({
             {description}
           </p>
 
-          <div className="relative w-full" style={{ minHeight: "305px" }}>
+          <div className="relative w-full overflow-hidden">
             <iframe
               src="https://00a111c2.sibforms.com/v2/serve/MUIFAN8bXYcpoPm94yrwccMYEQRJ8Ifrxf2KRdAekdE_s9K6iWYcxrlTjQ4bz9AJ5VXKTBDTb34a6LjTvnVOO8AF2Ft9yDFzBTToQjBhGwnTqYwaTnFHCTbkSpaVy9K10aXlCQlFVxvvt4tx-290Jp14jL33mMx8VFtlL8j4Nu94VJYS-9M1ga5pNZBonjhUyXaj-a-Ls7Y8m252gA=="
               width="540"
-              height="305"
               frameBorder="0"
-              scrolling="auto"
+              scrolling="no"
               allowFullScreen
               title="Newsletter Signup"
+              className="h-[760px] md:h-[680px] lg:h-[640px]"
               style={{
                 display: "block",
                 marginLeft: "auto",

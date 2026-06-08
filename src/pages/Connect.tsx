@@ -220,6 +220,7 @@ const Connect = () => {
               title="The Echelon Insider"
               description="Receive curated Austin market intelligence, private opportunities, luxury listings, development trends, and notable local insights."
               className="rounded-2xl py-8 px-4"
+              compact
             />
           </div>
 

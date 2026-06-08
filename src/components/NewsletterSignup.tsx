@@ -4,6 +4,7 @@ interface NewsletterSignupProps {
   title?: string;
   description?: string;
   className?: string;
+  compact?: boolean;
 }
 
 const BREVO_FORM_ACTION =
@@ -17,6 +18,7 @@ const NewsletterSignup: React.FC<NewsletterSignupProps> = ({
   title = "The Echelon Insider",
   description = "Receive curated Austin market intelligence, private opportunities, luxury listings, development trends, and notable local insights.",
   className = "",
+  compact = false,
 }) => {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
@@ -163,38 +165,69 @@ const NewsletterSignup: React.FC<NewsletterSignupProps> = ({
                 Austin real estate updates. Unsubscribe at any time.
               </p>
 
-              <button
-                type="submit"
-                disabled={status === "submitting"}
-                style={{
-                  fontFamily: '"Jost", sans-serif',
-                  fontSize: "0.75rem",
-                  letterSpacing: "0.22em",
-                  textTransform: "uppercase",
-                  fontWeight: 500,
-                  color: IVORY,
-                  background: NAVY,
-                  border: `1px solid ${NAVY}`,
-                  padding: "1rem 1.5rem",
-                  marginTop: "0.75rem",
-                  cursor: status === "submitting" ? "wait" : "pointer",
-                  transition: "background-color 200ms ease, color 200ms ease, border-color 200ms ease",
-                  width: "100%",
-                }}
-                onMouseEnter={(e) => {
-                  if (status === "submitting") return;
-                  e.currentTarget.style.background = GOLD;
-                  e.currentTarget.style.borderColor = GOLD;
-                  e.currentTarget.style.color = NAVY;
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.background = NAVY;
-                  e.currentTarget.style.borderColor = NAVY;
-                  e.currentTarget.style.color = IVORY;
-                }}
-              >
-                {status === "submitting" ? "Joining…" : "Join The Echelon Insider"}
-              </button>
+              {compact ? (
+                <button
+                  type="submit"
+                  disabled={status === "submitting"}
+                  style={{
+                    fontFamily: '"Jost", sans-serif',
+                    fontSize: "0.6875rem",
+                    letterSpacing: "0.18em",
+                    textTransform: "uppercase",
+                    fontWeight: 500,
+                    color: GOLD,
+                    background: "transparent",
+                    border: "none",
+                    padding: "0.25rem 0",
+                    marginTop: "0.5rem",
+                    cursor: status === "submitting" ? "wait" : "pointer",
+                    alignSelf: "flex-start",
+                    transition: "opacity 200ms ease",
+                  }}
+                  onMouseEnter={(e) => {
+                    if (status === "submitting") return;
+                    e.currentTarget.style.opacity = "0.7";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.opacity = "1";
+                  }}
+                >
+                  {status === "submitting" ? "Joining…" : "Join The Echelon Insider →"}
+                </button>
+              ) : (
+                <button
+                  type="submit"
+                  disabled={status === "submitting"}
+                  style={{
+                    fontFamily: '"Jost", sans-serif',
+                    fontSize: "0.75rem",
+                    letterSpacing: "0.22em",
+                    textTransform: "uppercase",
+                    fontWeight: 500,
+                    color: IVORY,
+                    background: NAVY,
+                    border: `1px solid ${NAVY}`,
+                    padding: "1rem 1.5rem",
+                    marginTop: "0.75rem",
+                    cursor: status === "submitting" ? "wait" : "pointer",
+                    transition: "background-color 200ms ease, color 200ms ease, border-color 200ms ease",
+                    width: "100%",
+                  }}
+                  onMouseEnter={(e) => {
+                    if (status === "submitting") return;
+                    e.currentTarget.style.background = GOLD;
+                    e.currentTarget.style.borderColor = GOLD;
+                    e.currentTarget.style.color = NAVY;
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.background = NAVY;
+                    e.currentTarget.style.borderColor = NAVY;
+                    e.currentTarget.style.color = IVORY;
+                  }}
+                >
+                  {status === "submitting" ? "Joining…" : "Join The Echelon Insider"}
+                </button>
+              )}
 
               {status === "error" && (
                 <p

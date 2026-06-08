@@ -121,9 +121,10 @@ const NewsletterSignup: React.FC<NewsletterSignupProps> = ({
                   color: NAVY,
                   fontWeight: 400,
                   textAlign: "left",
+                  whiteSpace: "pre-wrap",
                 }}
               >
-                Email address
+                {"\n"}EMAIL ADDRESS
               </label>
               <input
                 id="newsletter-email"

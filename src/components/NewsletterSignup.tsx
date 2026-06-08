@@ -161,8 +161,7 @@ const NewsletterSignup: React.FC<NewsletterSignupProps> = ({
                   margin: "0.25rem 0 0",
                 }}
               >
-                Receive periodic market intelligence, private opportunities, and notable
-                Austin real estate updates. Unsubscribe at any time.
+                  No Spam. Unsubscribe at any time.
               </p>
 
               {compact ? (

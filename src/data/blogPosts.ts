@@ -61,7 +61,7 @@ export const blogPosts: BlogPost[] = [
     title: "Moving from New York to Austin: A complete Guide",
     metaTitle: "Moving from New York to Austin: A complete Guide | Echelon Property Group",
     excerpt: "An honest, advisor-level guide for affluent New Yorkers relocating to Austin: tax tradeoffs, the luxury neighborhoods buyers actually choose, school realities, market process differences, and the lifestyle factors that matter at the top of the market.",
-    author: "Taylor "Nash" Sherwood",
+    author: "Taylor \"Nash\" Sherwood",
     date: "2026-06-07",
     readTime: "24 MIN READ",
     category: "RELOCATION",
@@ -304,7 +304,7 @@ If you're in the early stages of evaluating this move, or if you're ready to beg
     title: "Lake Austin vs Lake Travis Waterfront Homes: Key Differences Buyers Need to Know",
     metaTitle: "Lake Austin vs Lake Travis Waterfront Living | Echelon",
     excerpt: "Buyers comparing Lake Austin vs Lake Travis waterfront homes will find 13 critical differences, from water level stability and dock ownership rights to commute times, privacy, and long-term investment dynamics, that can determine whether a property truly fits their lifestyle and ownership goals.",
-    author: "Taylor "Nash" Sherwood",
+    author: "Taylor \"Nash\" Sherwood",
     date: "2026-06-05",
     readTime: "14 min read",
     category: "BUYER STRATEGY",
@@ -528,7 +528,7 @@ Echelon Property Group advises buyers on waterfront acquisitions across both Lak
     title: "Exclusive Listing Access Difficulties: Why Luxury Buyers Miss Austin's Best Properties",
     metaTitle: "Exclusive Listing Access in Austin Luxury Real Estate | Echelon Property Group",
     excerpt: "A significant portion of Austin's luxury transactions occur quietly through agent networks before ever reaching Zillow or the MLS. Here is why the best properties stay private, what barriers prevent buyers from accessing them, and how to change your position in that equation.",
-    author: "Taylor "Nash" Sherwood",
+    author: "Taylor \"Nash\" Sherwood",
     date: "2026-06-05",
     readTime: "12 min read",
     category: "LUXURY LIVING",
@@ -666,7 +666,7 @@ Echelon Property Group is a hyper-local Austin luxury advisory with established 
     title: "Wildlife Exemptions vs Agricultural Exemptions in Texas: What Ranch Owners Need to Know",
     metaTitle: "Wildlife Exemption vs Ag Exemption Texas: Key Differences for Landowners",
     excerpt: "A Texas land and ranch advisor's guide to wildlife versus agricultural valuations, including eligibility, acreage realities in the Hill Country, rollback risk, and how buyers in Fredericksburg, Kerrville, Mason, Llano, Harper, and Johnson City should evaluate ranches before closing.",
-    author: "Taylor "Nash" Sherwood",
+    author: "Taylor \"Nash\" Sherwood",
     date: "2026-06-02",
     readTime: "12 min read",
     category: "LAND & RANCH",
@@ -901,7 +901,7 @@ Echelon Property Group works with buyers across Hill Country ranches, recreation
     title: "10 Things Buyers Should Know Before Purchasing an Exotic Ranch in the Texas Hill Country",
     metaTitle: "10 Things Buyers Should Know Before Purchasing an Exotic Ranch in the Texas Hill Country",
     excerpt: "A buyer's guide to exotic wildlife ranches across the Texas Hill Country, covering habitat, infrastructure, wildlife management, tax treatment, revenue potential, and off-market access.",
-    author: "Taylor "Nash" Sherwood",
+    author: "Taylor \"Nash\" Sherwood",
     date: "2026-06-01",
     readTime: "10 min read",
     category: "LAND & RANCH",
@@ -1053,7 +1053,7 @@ href: /contact
     title: "Austin Infill Development: How to Evaluate, Plan, and Execute a Redevelopment Opportunity",
     metaTitle: "Austin Infill Development: How to Evaluate, Plan, and Execute a Redevelopment Opportunity",
     excerpt: "A practical framework for evaluating, planning, and executing infill redevelopment opportunities across Austin's established neighborhoods.",
-    author: "Taylor "Nash" Sherwood",
+    author: "Taylor \"Nash\" Sherwood",
     date: "2026-05-31",
     readTime: "15 min read",
     category: "INVESTMENT",
@@ -1286,7 +1286,7 @@ href: /contact
     title: "Austin Ranch Land for Sale: Complete Guide to Hill Country Ranches and Acreage Properties",
     metaTitle: "Austin Ranch Land for Sale: Hill Country Ranches, Investment Land & Acreage Guide",
     excerpt: "A complete guide to Austin ranch land, Hill Country properties, investment land, acreage ownership, agricultural and wildlife exemptions, and Austin-area growth corridors shaping long-term value across Central Texas.",
-    author: "Taylor "Nash" Sherwood",
+    author: "Taylor \"Nash\" Sherwood",
     date: "2026-05-31",
     readTime: "22 min read",
     category: "LAND & RANCH",
@@ -1498,7 +1498,7 @@ Echelon Property Group advises buyers, investors, and landowning families across
     title: "Austin Redevelopment Opportunities: How to Identify, Evaluate, and Act on Underutilized Property",
     metaTitle: "Austin Redevelopment Opportunities: How to Identify, Evaluate, and Act",
     excerpt: "Austin redevelopment opportunities are reshaping how landowners, investors, and developers approach underutilized property. This guide covers highest and best use analysis, zoning and entitlements, and the framework experienced advisors use to identify, evaluate, and act on Austin's most compelling redevelopment plays.",
-    author: "Taylor "Nash" Sherwood",
+    author: "Taylor \"Nash\" Sherwood",
     date: "2026-05-30",
     readTime: "20 min read",
     category: "INVESTMENT",
@@ -1771,7 +1771,7 @@ There is no obligation and no sales pitch. Just an honest analysis of where your
     title: "How to Determine the Highest and Best Use of a Property in Austin",
     metaTitle: "How to Determine the Highest and Best Use of a Property in Austin",
     excerpt: "Learn how Austin property owners, investors, and developers evaluate highest and best use through zoning, site constraints, market demand, financial feasibility, and redevelopment potential.",
-    author: "Taylor "Nash" Sherwood",
+    author: "Taylor \"Nash\" Sherwood",
     date: "2026-05-29",
     readTime: "14 min read",
     category: "INVESTMENT",
@@ -1979,7 +1979,7 @@ If you are considering a sale, acquisition, redevelopment project, or long-term 
     title: "How to Price a Luxury Home in Austin: A Strategic Guide for High-End Real Estate Sellers",
     metaTitle: "How to Price a Luxury Home in Austin | Luxury Pricing Strategy",
     excerpt: "How to price a luxury home in Austin: an advisory framework for selling above $2M across Barton Creek, West Lake Hills, Rollingwood, Tarrytown, Spanish Oaks, Lake Austin, Rob Roy, and Davenport Ranch. Built on market intelligence, not automated estimates.",
-    author: "Taylor "Nash" Sherwood",
+    author: "Taylor \"Nash\" Sherwood",
     date: "2026-05-29",
     readTime: "10 min read",
     category: "SELLER STRATEGY",
@@ -2078,7 +2078,7 @@ href: /sell-private
     title: "Austin Luxury Real Estate Market Analysis: What Buyers and Sellers Need to Know",
     metaTitle: "Austin Luxury Real Estate Market Analysis | Echelon Property Group",
     excerpt: "How Austin's luxury market actually behaves above $2M. Submarket-level absorption, off-market activity, and the metrics that matter for buyers and sellers in Westlake Hills, Lake Austin, Barton Creek, Rollingwood, and Tarrytown.",
-    author: "Taylor "Nash" Sherwood",
+    author: "Taylor \"Nash\" Sherwood",
     date: "2026-05-28",
     readTime: "10 min read",
     category: "MARKET INSIGHTS",
@@ -2415,7 +2415,7 @@ It is a current, honest market briefing tailored to your exact property type, pr
     title: "How Echelon Property Group Approaches Austin Real Estate Differently",
     metaTitle: "How Echelon Property Group Approaches Austin Real Estate Differently",
     excerpt: "Discover how Echelon Property Group approaches Austin real estate through hyper-local expertise, off-market access, privacy-first representation, and strategic advisory across Barton Creek, West Lake Hills, Rollingwood, and Austin's premier luxury neighborhoods.",
-    author: "Taylor "Nash" Sherwood",
+    author: "Taylor \"Nash\" Sherwood",
     date: "2026-05-27",
     readTime: "8 min read",
     category: "MARKET INSIGHTS",
@@ -2666,9 +2666,9 @@ It punishes generic positioning, reactive negotiation, and advisors who approach
 
 For <a href="/buy" class="${LINK}">buyers</a>, <a href="/sell" class="${LINK}">sellers</a>, and <a href="/invest" class="${LINK}">investors</a> operating at the upper end of Austin's market, the quality of the advisory relationship often shapes the outcome long before a property officially changes hands.
 
-## About Taylor "Nash" Sherwood
+## About Taylor \"Nash\" Sherwood
 
-Taylor "Nash" Sherwood is an <a href="/about-austin-real-estate-advisory" class="${LINK}">Austin luxury real estate advisor</a> and founder of <a href="/about" class="${LINK}">Echelon Property Group</a>, specializing in <a href="/off-market-real-estate-austin" class="${LINK}">off-market opportunities</a>, <a href="/sell-private" class="${LINK}">strategic seller representation</a>, and high-end residential advisory across <a href="/communities/barton-creek" class="${LINK}">Barton Creek</a>, <a href="/communities/westlake-hills" class="${LINK}">West Lake Hills</a>, <a href="/communities/rollingwood" class="${LINK}">Rollingwood</a>, <a href="/communities/lake-austin" class="${LINK}">Lake Austin</a>, and <a href="/best-luxury-neighborhoods-austin" class="${LINK}">Austin's premier luxury neighborhoods</a>.
+Taylor \"Nash\" Sherwood is an <a href="/about-austin-real-estate-advisory" class="${LINK}">Austin luxury real estate advisor</a> and founder of <a href="/about" class="${LINK}">Echelon Property Group</a>, specializing in <a href="/off-market-real-estate-austin" class="${LINK}">off-market opportunities</a>, <a href="/sell-private" class="${LINK}">strategic seller representation</a>, and high-end residential advisory across <a href="/communities/barton-creek" class="${LINK}">Barton Creek</a>, <a href="/communities/westlake-hills" class="${LINK}">West Lake Hills</a>, <a href="/communities/rollingwood" class="${LINK}">Rollingwood</a>, <a href="/communities/lake-austin" class="${LINK}">Lake Austin</a>, and <a href="/best-luxury-neighborhoods-austin" class="${LINK}">Austin's premier luxury neighborhoods</a>.
 `,
   },
   {
@@ -2676,7 +2676,7 @@ Taylor "Nash" Sherwood is an <a href="/about-austin-real-estate-advisory" class=
     title: "Austin Luxury Real Estate Advisory: The Difference Between an Agent and a True Advisor",
     metaTitle: "Austin Luxury Real Estate Advisory: Agent vs. True Advisor | Echelon Property Group",
     excerpt: "What real luxury real estate advisory looks like in Austin, strategy, off-market access, confidentiality, and neighborhood-level depth across Barton Creek, West Lake Hills, Tarrytown, Lake Austin, and Rollingwood.",
-    author: "Taylor "Nash" Sherwood",
+    author: "Taylor \"Nash\" Sherwood",
     date: "2026-05-26",
     readTime: "13 min read",
     category: "MARKET INSIGHTS",
@@ -2883,7 +2883,7 @@ A: Discretion is built into how conversations are handled, how properties are in
     title: "How to Market Luxury Properties Effectively: A Step-by-Step Guide for Austin Sellers",
     metaTitle: "How to Market Luxury Properties in Austin: Step-by-Step Seller Guide | Echelon Property Group",
     excerpt: "A step-by-step guide to marketing luxury homes in Austin, defining the buyer profile, building an editorial visual campaign, sequencing private and public exposure, and protecting pricing power in Barton Creek, Westlake Hills, Tarrytown, and Lake Austin.",
-    author: "Taylor "Nash" Sherwood",
+    author: "Taylor \"Nash\" Sherwood",
     date: "2026-05-25",
     readTime: "15 min read",
     category: "SELLER STRATEGY",
@@ -3204,7 +3204,7 @@ A: Avoid reactive price reductions. Re-evaluate the buyer profile, refresh weak 
     title: "7 Strategies for Choosing a Premier Luxury Real Estate Brokerage in Austin",
     metaTitle: "How to Choose a Luxury Real Estate Brokerage in Austin: 7 Strategies | Echelon Property Group",
     excerpt: "Seven practical strategies for evaluating a premier luxury real estate brokerage in Austin, covering hyper-local expertise, off-market access, negotiation performance, discretion, and marketing precision in Barton Creek, Westlake Hills, Tarrytown, and Lake Austin.",
-    author: "Taylor "Nash" Sherwood",
+    author: "Taylor \"Nash\" Sherwood",
     date: "2026-05-24",
     readTime: "14 min read",
     category: "BUYER STRATEGY",
@@ -3522,7 +3522,7 @@ A: Confidentiality is operational, not just a marketing phrase. Premier brokerag
     title: "Private Property Tour Services in Austin: Accessing Off-Market Luxury Homes",
     metaTitle: "Private Property Tour Services in Austin: Off-Market Luxury Home Access | Echelon Property Group",
     excerpt: "How private property tour services in Austin give high-net-worth buyers discreet access to off-market luxury homes in Barton Creek, Westlake Hills, Lake Austin, Tarrytown, and Spanish Oaks that never reach the MLS.",
-    author: "Taylor "Nash" Sherwood",
+    author: "Taylor \"Nash\" Sherwood",
     date: "2026-05-23",
     readTime: "13 min read",
     category: "BUYER STRATEGY",
@@ -3718,7 +3718,7 @@ A: Yes. Confidentiality is central to the service. Buyer identity, motivation, f
     title: "Beyond Zillow: How Luxury Buyers Access Austin's Most Exclusive Properties",
     metaTitle: "Beyond Zillow: How Luxury Buyers Access Austin's Most Exclusive Properties | Echelon Property Group",
     excerpt: "How sophisticated buyers access Austin's most exclusive luxury homes through off-market networks, private advisors, and strategic acquisition processes that go far beyond Zillow.",
-    author: "Taylor "Nash" Sherwood",
+    author: "Taylor \"Nash\" Sherwood",
     date: "2026-05-22",
     readTime: "14 min read",
     category: "BUYER STRATEGY",
@@ -4046,7 +4046,7 @@ If you are considering a move in Austin's luxury market, we invite you to <a hre
     title: "7 Strategies for Choosing Between Boutique and Large Luxury Real Estate Brokerages",
     metaTitle: "Boutique vs Large Luxury Real Estate Brokerages in Austin | 7 Strategies | Echelon Property Group",
     excerpt: "Seven strategies for evaluating boutique versus large luxury real estate brokerages in Austin, covering discretion, negotiation, hyperlocal expertise, and global reach.",
-    author: "Taylor "Nash" Sherwood",
+    author: "Taylor \"Nash\" Sherwood",
     date: "2026-05-21",
     readTime: "12 min read",
     category: "MARKET INSIGHTS",
@@ -4379,7 +4379,7 @@ A meaningful marker of specialization in the luxury segment is the Certified Lux
     title: "Private Property Showings in Austin: The Discreet Way to Tour Luxury Estates Off Market",
     metaTitle: "Private Property Showings in Austin | Off-Market Luxury Tours | Echelon Property Group",
     excerpt: "Private property showing services in Austin offer high-net-worth buyers and sellers a discreet, appointment-only alternative to traditional real estate tours.",
-    author: "Taylor "Nash" Sherwood",
+    author: "Taylor \"Nash\" Sherwood",
     date: "2026-05-20",
     readTime: "11 min read",
     category: "OFF-MARKET",
@@ -5135,7 +5135,7 @@ From <a href="/off-market-real-estate-austin" class="text-foreground underline h
 
 Whether you are considering a confidential sale, seeking access to <a href="/private-opportunities" class="text-foreground underline hover:text-muted-foreground">private inventory</a>, or evaluating strategic <a href="/austin-real-estate-investment" class="text-foreground underline hover:text-muted-foreground">acquisition opportunities</a> in Austin luxury real estate, the first step is a <a href="/contact" class="text-foreground underline hover:text-muted-foreground">private conversation</a> conducted entirely on your terms.
     `,
-    author: "Taylor "Nash" Sherwood",
+    author: "Taylor \"Nash\" Sherwood",
     date: "2026-05-17",
     readTime: "10 min read",
     category: "MARKET INSIGHTS",
@@ -5322,7 +5322,7 @@ The reality is that many of Austin's most significant luxury transactions never 
 
 <a href="/about" class="text-foreground underline hover:text-muted-foreground">Echelon Property Group</a> specializes in helping discerning buyers navigate Austin's most competitive luxury neighborhoods, including access to <a href="/private-opportunities" class="text-foreground underline hover:text-muted-foreground">private and off-market opportunities</a> throughout the city's premier enclaves. Whether you're <a href="/moving-to-austin-texas" class="text-foreground underline hover:text-muted-foreground">relocating to Austin</a>, searching for a legacy estate, or evaluating which luxury neighborhood best aligns with your long-term vision, our advisory approach is designed to provide the market intelligence, discretion, and strategic guidance required at the highest level of Austin real estate. The first step is a <a href="/contact" class="text-foreground underline hover:text-muted-foreground">private conversation</a> conducted entirely on your terms.
     `,
-    author: "Taylor "Nash" Sherwood",
+    author: "Taylor \"Nash\" Sherwood",
     date: "2026-05-18",
     readTime: "12 min read",
     category: "BUYER STRATEGY",
@@ -5431,7 +5431,7 @@ A meaningful share of upper-tier transactions in Austin happen off-market or pre
 
 It depends on the home. Properties that are best-in-class for their segment can perform strongly today with disciplined pricing and the right exposure strategy. Homes that face direct competition from similar listings often benefit from differentiation, timing adjustments, or a quieter, off-market launch.
     `,
-    author: "Taylor "Nash" Sherwood",
+    author: "Taylor \"Nash\" Sherwood",
     date: "2026-05-12",
     readTime: "8 min read",
     category: "MARKET INSIGHTS",
@@ -5528,7 +5528,7 @@ A meaningful share of upper-tier transactions in Austin happen off-market or pre
 
 Choose downtown if you want service, security, lock-and-leave convenience, and amenity-driven living. Choose an estate neighborhood if you want land, privacy, and architectural control. They serve different lifestyles, not different price points.
     `,
-    author: "Taylor "Nash" Sherwood",
+    author: "Taylor \"Nash\" Sherwood",
     date: "2026-05-11",
     readTime: "9 min read",
     category: "MARKET INSIGHTS",
@@ -5624,7 +5624,7 @@ A: Realistically, patio season runs from late February through early December. M
 
 Looking to live within walking distance of Austin's best new outdoor bars? <a href="/contact" class="text-foreground underline hover:text-muted-foreground">Reach out to Echelon Property Group</a> or <a href="/listings" class="text-foreground underline hover:text-muted-foreground">browse current luxury listings</a>.
     `,
-    author: "Taylor "Nash" Sherwood",
+    author: "Taylor \"Nash\" Sherwood",
     date: "2026-05-07",
     readTime: "8 min read",
     category: "LUXURY LIVING",
@@ -5737,7 +5737,7 @@ Well-positioned homes with disciplined pricing often trade quickly, sometimes be
 
 It depends on lifestyle priorities. 78746 favors closer-in convenience and Eanes schools. <a href="/communities/barton-creek" class="text-foreground underline hover:text-muted-foreground">Barton Creek</a> and <a href="/communities/spanish-oaks" class="text-foreground underline hover:text-muted-foreground">Spanish Oaks</a> offer more gated, club-oriented estate environments. The right answer is property-specific, not ZIP-specific.
     `,
-    author: "Taylor "Nash" Sherwood",
+    author: "Taylor \"Nash\" Sherwood",
     date: "2026-05-06",
     readTime: "9 min read",
     category: "BUYER STRATEGY",
@@ -5842,7 +5842,7 @@ But private should never mean passive. It should mean deliberate, selective, and
 
 If you're considering a private sale, think less about avoiding the market and more about controlling how the right market finds you. That is usually where the strongest outcomes begin. <a href="/sell-private" class="text-foreground underline hover:text-muted-foreground">Start a confidential conversation</a> with our advisory team to evaluate whether a private strategy fits your property and timeline.
     `,
-    author: "Taylor "Nash" Sherwood",
+    author: "Taylor \"Nash\" Sherwood",
     date: "2026-04-23",
     readTime: "8 min read",
     category: "SELLER STRATEGY",
@@ -5925,7 +5925,7 @@ West lake Hills, Barton Creek, and Dripping Springs feature many custom homes wi
 ### Does sustainable design affect resale value?
 Yes. Homes with verified energy-efficient features and sustainable materials increasingly command higher resale values in Austin's luxury market, particularly among relocating buyers who prioritize environmental performance.
     `,
-    author: "Taylor "Nash" Sherwood",
+    author: "Taylor \"Nash\" Sherwood",
     date: "2024-03-15",
     readTime: "8 min read",
     category: "SUSTAINABILITY",
@@ -6030,7 +6030,7 @@ Absolutely. The Hill Country's dramatic landscapes and natural light make it an 
 ### Do minimalist homes hold their value?
 Well-designed minimalist homes with quality materials and thoughtful layouts consistently perform well in Austin's resale market, particularly among buyers relocating from design-forward markets like California and New York.
     `,
-    author: "Taylor "Nash" Sherwood",
+    author: "Taylor \"Nash\" Sherwood",
     date: "2024-03-10",
     readTime: "6 min read",
     category: "DESIGN",
@@ -6210,7 +6210,7 @@ Mueller, Tarrytown, and Barton Creek are notable examples. Mueller represents mo
 ### Is Austin a walkable city?
 Walkability varies by neighborhood. Central areas like Tarrytown, Bryker Woods, Travis Heights, and downtown Austin offer strong walkability, while western and Hill Country neighborhoods prioritize space and privacy over pedestrian access.
     `,
-    author: "Taylor "Nash" Sherwood",
+    author: "Taylor \"Nash\" Sherwood",
     date: "2024-03-05",
     readTime: "10 min read",
     category: "URBAN PLANNING",
@@ -6273,7 +6273,7 @@ Offered at $3,349,000, 2300 Barton Creek Blvd #15 represents a compelling opport
 For buyers relocating to Austin or seeking a refined second home, this property offers a rare combination of security, convenience, and elevated design, all within minutes of the city’s core.
 
     `,
-    author: "Taylor "Nash" Sherwood",
+    author: "Taylor \"Nash\" Sherwood",
     date: "2026-03-26",
     readTime: "5 min read",
     category: "FEATURED LISTING",

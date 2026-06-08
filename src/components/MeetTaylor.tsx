@@ -44,8 +44,8 @@ const MeetTaylor = () => {
           <div className="grid md:grid-cols-12 gap-10 md:gap-20 items-start">
             <div className="relative inline-block md:col-span-6">
               <img
-                alt="Taylor "Nash" Sherwood, Austin luxury real estate advisor and CLHMS specialist"
-                title="Taylor "Nash" Sherwood, Certified Luxury Home Marketing Specialist"
+                alt="Taylor \"Nash\" Sherwood, Austin luxury real estate advisor and CLHMS specialist"
+                title="Taylor \"Nash\" Sherwood, Certified Luxury Home Marketing Specialist"
                 className="w-full h-[40vh] md:h-[60vh] object-contain rounded-[10px]"
                 src="/lovable-uploads/537facb0-1fbc-450c-8c4a-c1d06c4aa924.jpg"
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -73,7 +73,7 @@ const MeetTaylor = () => {
                 target="_blank"
                 rel="noopener noreferrer nofollow"
                 className="gold-metallic-text gold-underline-hover inline-flex items-center gap-2 transition-opacity duration-300"
-                aria-label="Follow Taylor "Nash" Sherwood on Instagram"
+                aria-label="Follow Taylor \"Nash\" Sherwood on Instagram"
               >
                 <Instagram className="w-5 h-5 text-gold" />
                 <span className="text-xs tracking-[0.15em] uppercase">@TheInvestorBroker</span>

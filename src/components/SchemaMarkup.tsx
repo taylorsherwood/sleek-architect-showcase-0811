@@ -89,7 +89,7 @@ export const organizationSchema = {
   "founder": {
     "@type": "Person",
     "@id": `${SITE}/#taylor`,
-    "name": "Taylor "Nash" Sherwood",
+    "name": "Taylor \"Nash\" Sherwood",
   },
   "address": { ...address },
   "sameAs": sameAs,
@@ -131,7 +131,7 @@ export const realEstateAgentSchema = {
   "employee": {
     "@type": "Person",
     "@id": `${SITE}/#taylor`,
-    "name": "Taylor "Nash" Sherwood",
+    "name": "Taylor \"Nash\" Sherwood",
     "image": HEADSHOT,
   },
 };
@@ -140,7 +140,7 @@ export const taylorSherwoodSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
   "@id": `${SITE}/#taylor`,
-  "name": "Taylor "Nash" Sherwood",
+  "name": "Taylor \"Nash\" Sherwood",
   "jobTitle": "Luxury Real Estate Advisor & Broker",
   "description": "Austin real estate professional specializing in luxury homes, residential real estate, and land development opportunities across Austin's most desirable neighborhoods.",
   "url": `${SITE}/about`,

@@ -110,7 +110,7 @@ const AdvisorAnchor = () => (
           <div className="relative overflow-hidden aspect-[4/5] max-w-[420px]">
             <img
               src={taylorPortrait}
-              alt="Taylor 'nash' Sherwood, Land &amp; Ranch Advisor at Echelon Property Group"
+              alt="Taylor Sherwood, Land &amp; Ranch Advisor at Echelon Property Group"
               loading="lazy"
               decoding="async"
               className="absolute inset-0 w-full h-full object-cover"

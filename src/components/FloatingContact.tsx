@@ -105,13 +105,13 @@ const FloatingContact = () => {
         className={`hidden md:flex fixed bottom-8 right-7 z-[60] items-center gap-2.5 backdrop-blur-sm text-[hsl(var(--gold))] rounded-full pl-1 pr-6 py-1 shadow-[0_4px_20px_-4px_hsl(var(--foreground)/0.1),0_1px_3px_hsl(var(--foreground)/0.06)] hover:!bg-[hsl(var(--gold))] hover:text-background transition-all duration-500 ease-out group cursor-pointer border border-[hsl(var(--gold)/0.2)] hover:border-[hsl(var(--gold))] ${
           visible ? "translate-x-0 opacity-100" : "translate-x-[calc(100%+2rem)] opacity-0 pointer-events-none"
         }`}
-        aria-label="Connect with Taylor 'nash' Sherwood">
+        aria-label="Connect with Taylor Sherwood">
         
         <div className="w-10 h-10 rounded-full overflow-hidden ring-[1.5px] ring-[hsl(var(--gold)/0.5)] group-hover:ring-background/80 transition-all duration-500">
           <img
             src={HEADSHOT_LAUNCHER}
-            alt="Taylor 'nash' Sherwood, Austin luxury real estate advisor"
-            title="Contact Taylor 'nash' Sherwood, Austin luxury real estate advisor"
+            alt="Taylor Sherwood, Austin luxury real estate advisor"
+            title="Contact Taylor Sherwood, Austin luxury real estate advisor"
             className="w-full h-full object-cover object-[50%_15%] scale-[1.35]"
             loading="lazy" decoding="async"
           />

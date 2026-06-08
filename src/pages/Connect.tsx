@@ -30,8 +30,8 @@ const Connect = () => {
   return (
     <>
       <SEOHead
-        title="Connect With Taylor Sherwood | Echelon Property Group"
-        description="Connect with Austin luxury real estate advisor Taylor Sherwood. Browse listings, search homes, or schedule a private consultation with Echelon Property Group."
+        title="Connect With Taylor \"nash\" Sherwood | Echelon Property Group"
+        description="Connect with Austin luxury real estate advisor Taylor \"nash\" Sherwood. Browse listings, search homes, or schedule a private consultation with Echelon Property Group."
         noindex
       />
 
@@ -48,7 +48,7 @@ const Connect = () => {
             <div className="relative w-full" style={{ aspectRatio: "3 / 4.2" }}>
               <img
                 src={taylorHeadshot}
-                alt="Taylor Sherwood – Austin Luxury Real Estate Advisor"
+                alt="Taylor \"nash\" Sherwood – Austin Luxury Real Estate Advisor"
                 className="absolute inset-0 w-full h-full object-cover"
                 style={{ objectPosition: "50% 12%" }}
                 loading="eager"
@@ -72,7 +72,7 @@ const Connect = () => {
                     color: "hsl(233 50% 9%)",
                   }}
                 >
-                  Taylor Sherwood
+                  Taylor "nash" Sherwood
                 </h1>
 
                 <div

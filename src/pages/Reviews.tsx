@@ -373,8 +373,8 @@ const Reviews = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Taylor Sherwood Reviews | Austin Luxury Real Estate Advisor"
-        description="Read verified client reviews and experiences with Taylor Sherwood, Austin Realtor specializing in luxury homes, off-market opportunities, land and ranch properties, and investment acquisitions."
+        title="Taylor \"nash\" Sherwood Reviews | Austin Luxury Real Estate Advisor"
+        description="Read verified client reviews and experiences with Taylor \"nash\" Sherwood, Austin Realtor specializing in luxury homes, off-market opportunities, land and ranch properties, and investment acquisitions."
         canonical="/reviews"
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
@@ -395,7 +395,7 @@ const Reviews = () => {
                 Client Reviews
               </p>
               <h1 className="font-display font-normal text-architectural leading-[0.95] tracking-tight">
-                <span className="block text-5xl md:text-6xl lg:text-7xl">Taylor</span>
+                <span className="block text-5xl md:text-6xl lg:text-7xl">Taylor "nash"</span>
                 <span className="block italic text-5xl md:text-6xl lg:text-7xl mt-1">
                   Sherwood
                 </span>

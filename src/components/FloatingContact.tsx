@@ -105,13 +105,13 @@ const FloatingContact = () => {
         className={`hidden md:flex fixed bottom-8 right-7 z-[60] items-center gap-2.5 backdrop-blur-sm text-[hsl(var(--gold))] rounded-full pl-1 pr-6 py-1 shadow-[0_4px_20px_-4px_hsl(var(--foreground)/0.1),0_1px_3px_hsl(var(--foreground)/0.06)] hover:!bg-[hsl(var(--gold))] hover:text-background transition-all duration-500 ease-out group cursor-pointer border border-[hsl(var(--gold)/0.2)] hover:border-[hsl(var(--gold))] ${
           visible ? "translate-x-0 opacity-100" : "translate-x-[calc(100%+2rem)] opacity-0 pointer-events-none"
         }`}
-        aria-label="Connect with Taylor Sherwood">
+        aria-label="Connect with Taylor \"nash\" Sherwood">
         
         <div className="w-10 h-10 rounded-full overflow-hidden ring-[1.5px] ring-[hsl(var(--gold)/0.5)] group-hover:ring-background/80 transition-all duration-500">
           <img
             src={HEADSHOT_LAUNCHER}
-            alt="Taylor Sherwood, Austin luxury real estate advisor"
-            title="Contact Taylor Sherwood, Austin luxury real estate advisor"
+            alt="Taylor \"nash\" Sherwood, Austin luxury real estate advisor"
+            title="Contact Taylor \"nash\" Sherwood, Austin luxury real estate advisor"
             className="w-full h-full object-cover object-[50%_15%] scale-[1.35]"
             loading="lazy" decoding="async"
           />
@@ -127,7 +127,7 @@ const FloatingContact = () => {
       {/* Modal */}
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogContent className="max-w-[380px] p-0 pt-[72px] border-none rounded-sm overflow-visible bg-background shadow-[0_30px_80px_-20px_hsl(var(--primary)/0.25),0_0_0_1px_hsl(var(--foreground)/0.04)] [&>button]:hidden">
-          <DialogTitle className="sr-only">Contact Taylor Sherwood</DialogTitle>
+          <DialogTitle className="sr-only">Contact Taylor "nash" Sherwood</DialogTitle>
 
           {/* Close */}
           <button
@@ -156,7 +156,7 @@ const FloatingContact = () => {
           {/* Content */}
           <div className="text-center px-10 pb-10 pt-4">
             <h3 className="font-display text-2xl font-light text-foreground tracking-[0.01em] leading-tight">
-              Taylor Sherwood
+              Taylor "nash" Sherwood
             </h3>
             <p className="text-[9.5px] tracking-[0.25em] uppercase text-[hsl(var(--gold))] mt-2 mb-6 font-normal">CONNECT WITH AN ADVISOR</p>
             <p className="text-muted-foreground text-sm leading-[1.75] mb-9 max-w-[270px] mx-auto font-light">Buying, selling, investing, or exploring off-market opportunities in Austin. I'd welcome the conversation.</p>

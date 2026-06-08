@@ -171,8 +171,7 @@ In a market like Austin, where the most valuable properties frequently change ha
 
 If you are approaching a significant buy or sell decision in Austin and want to understand what genuine exclusive representation looks like in practice, the conversation is worth having before you are already in the process. Learn more about <a href="/about-austin-real-estate-advisory" class="${LINK}">our advisory practice</a> or <a href="/contact" class="${LINK}">connect with Echelon Property Group</a> for a private discussion about your specific situation and goals.
 
-## Frequently Asked Questions About Exclusive Real Estate Representation in Austin
-
+\n
 :::faq
 Q: What is exclusive real estate representation in Texas?
 A: Exclusive real estate representation in Texas is a contractual relationship, established through a Buyer Representation Agreement or Listing Agreement, in which a single agent or brokerage owes you undivided fiduciary duties. That means loyalty, confidentiality, full disclosure, and obedience to your lawful instructions are owed to you alone, not to the other party in the transaction. It is governed by the Texas Real Estate Commission and is fundamentally different from intermediary or dual representation.

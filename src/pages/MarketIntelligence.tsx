@@ -313,8 +313,8 @@ const MarketIntelligence = () => {
         <IntelligenceRoadmap />
       </section>
 
-      {/* Internal linking + Further reading */}
-      <NewsletterSignup className="py-20 md:py-28" />
+      {/* Newsletter is rendered globally in the Footer to avoid duplicate CTAs */}
+
 
       <section className="py-16 md:py-20 bg-[#faf9f6] dark:bg-[hsl(38_15%_12%/0.3)] border-y border-border/50" aria-labelledby="further-reading">
         <div className="container mx-auto px-6">

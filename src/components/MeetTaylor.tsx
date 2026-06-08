@@ -33,7 +33,7 @@ const MeetTaylor = () => {
         <div className="max-w-7xl mx-auto">
           <ScrollReveal>
             <h3 className="text-2xl md:text-4xl font-display font-normal text-architectural mb-3 text-center md:w-1/2">
-              Meet Taylor Sherwood
+              Meet Taylor "nash" Sherwood
             </h3>
             <p className="text-[0.65rem] md:text-xs tracking-[0.1em] uppercase text-muted-foreground/60 mb-6 text-center md:w-1/2 leading-relaxed">
               CERTIFIED LUXURY HOME MARKETING SPECIALIST (CLHMS) <br />
@@ -44,8 +44,8 @@ const MeetTaylor = () => {
           <div className="grid md:grid-cols-12 gap-10 md:gap-20 items-start">
             <div className="relative inline-block md:col-span-6">
               <img
-                alt="Taylor Sherwood, Austin luxury real estate advisor and CLHMS specialist"
-                title="Taylor Sherwood, Certified Luxury Home Marketing Specialist"
+                alt="Taylor 'nash' Sherwood, Austin luxury real estate advisor and CLHMS specialist"
+                title="Taylor 'nash' Sherwood, Certified Luxury Home Marketing Specialist"
                 className="w-full h-[40vh] md:h-[60vh] object-contain rounded-[10px]"
                 src="/lovable-uploads/537facb0-1fbc-450c-8c4a-c1d06c4aa924.jpg"
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -60,7 +60,7 @@ const MeetTaylor = () => {
             <div className="relative md:col-span-5 md:pt-10 md:max-w-[460px]">
               <h4 className="text-minimal text-gold mb-4 font-extrabold">AUSTIN LUXURY REAL ESTATE SPECIALIST</h4>
               <p className="text-muted-foreground leading-[1.85] text-base md:text-xl mb-7">
-                Taylor Sherwood is an Austin-based real estate advisor specializing in distinctive homes, luxury properties, and land opportunities.
+                Taylor 'nash' Sherwood is an Austin-based real estate advisor specializing in distinctive homes, luxury properties, and land opportunities.
               </p>
               <p className="text-muted-foreground leading-[1.85] text-base md:text-xl mb-7">
                 Known for his attention to detail and thoughtful approach to marketing, he helps clients navigate complex transactions with confidence while showcasing properties in their best possible light.
@@ -73,7 +73,7 @@ const MeetTaylor = () => {
                 target="_blank"
                 rel="noopener noreferrer nofollow"
                 className="gold-metallic-text gold-underline-hover inline-flex items-center gap-2 transition-opacity duration-300"
-                aria-label="Follow Taylor Sherwood on Instagram"
+                aria-label="Follow Taylor 'nash' Sherwood on Instagram"
               >
                 <Instagram className="w-5 h-5 text-gold" />
                 <span className="text-xs tracking-[0.15em] uppercase">@TheInvestorBroker</span>

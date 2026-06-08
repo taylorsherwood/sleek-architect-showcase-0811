@@ -61,7 +61,7 @@ export const blogPosts: BlogPost[] = [
     title: "Moving from New York to Austin: A complete Guide",
     metaTitle: "Moving from New York to Austin: A complete Guide | Echelon Property Group",
     excerpt: "An honest, advisor-level guide for affluent New Yorkers relocating to Austin: tax tradeoffs, the luxury neighborhoods buyers actually choose, school realities, market process differences, and the lifestyle factors that matter at the top of the market.",
-    author: "Taylor Sherwood",
+    author: "Taylor \"nash\" Sherwood",
     date: "2026-06-07",
     readTime: "24 MIN READ",
     category: "RELOCATION",

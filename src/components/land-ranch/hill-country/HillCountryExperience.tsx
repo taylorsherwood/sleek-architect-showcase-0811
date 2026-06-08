@@ -12,7 +12,7 @@ import {
 } from "@/data/landRanchMarkets";
 
 import heroImage from "@/assets/land-ranch-hero.jpg";
-import taylorPortrait from "@/assets/taylor-sherwood-land-ranch.jpg";
+import taylorPortrait from "@/assets/taylor-nash-sherwood-land-ranch.jpg";
 import legacyImg from "@/assets/cat-luxury-ranches.jpg";
 import liveWaterImg from "@/assets/lake-austin-waterfront.jpg";
 import recreationalImg from "@/assets/cat-recreational-land.jpg";
@@ -110,7 +110,7 @@ const AdvisorAnchor = () => (
           <div className="relative overflow-hidden aspect-[4/5] max-w-[420px]">
             <img
               src={taylorPortrait}
-              alt="Taylor Sherwood, Land &amp; Ranch Advisor at Echelon Property Group"
+              alt="Taylor 'nash' Sherwood, Land &amp; Ranch Advisor at Echelon Property Group"
               loading="lazy"
               decoding="async"
               className="absolute inset-0 w-full h-full object-cover"
@@ -125,7 +125,7 @@ const AdvisorAnchor = () => (
             className="font-display font-normal text-architectural leading-[1.08] tracking-tight mb-8"
             style={{ fontSize: "clamp(1.85rem, 3.4vw, 2.75rem)" }}
           >
-            Taylor Sherwood, advising on Hill Country acquisitions.
+            Taylor \"nash\" Sherwood, advising on Hill Country acquisitions.
           </h2>
           <p className="text-muted-foreground text-[1.0625rem] leading-[1.85] mb-10 max-w-[52ch]">
             Land in the Hill Country is rarely won on the open market. Taylor

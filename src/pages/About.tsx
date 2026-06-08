@@ -165,8 +165,8 @@ const About = () => {
   return (
     <div className="min-h-screen">
       <SEOHead
-        title="About Taylor Sherwood"
-        description="Meet Taylor Sherwood and the Echelon Property Group team. Austin luxury real estate advisors specializing in homes, land, and investment properties."
+        title="About Taylor "Nash" Sherwood"
+        description="Meet Taylor "Nash" Sherwood and the Echelon Property Group team. Austin luxury real estate advisors specializing in homes, land, and investment properties."
       />
 
       
@@ -176,10 +176,10 @@ const About = () => {
         { name: "About", url: "https://www.echelonpropertygroup.com/about" }
       ])} />
       <SchemaMarkup schema={createFAQSchema([
-        { question: "Who is Taylor Sherwood?", answer: "Taylor Sherwood is a Certified Luxury Home Marketing Specialist and founder of Echelon Property Group, specializing in luxury residential, commercial, land, and investment real estate across Austin and the Texas Hill Country." },
+        { question: "Who is Taylor "Nash" Sherwood?", answer: "Taylor "Nash" Sherwood is a Certified Luxury Home Marketing Specialist and founder of Echelon Property Group, specializing in luxury residential, commercial, land, and investment real estate across Austin and the Texas Hill Country." },
         { question: "What areas does Echelon Property Group serve?", answer: "Echelon Property Group serves Austin's premier neighborhoods including West lake Hills, Barton Creek, Lake Austin, Tarrytown, Rollingwood, Spanish Oaks, Dripping Springs, and the greater Texas Hill Country." },
         { question: "What services does Echelon Property Group offer?", answer: "We offer luxury buyer representation, strategic listing and seller advisory, off-market property sourcing, commercial tenant representation, investment property acquisitions, and land brokerage." },
-        { question: "Does Taylor Sherwood work with out-of-state clients?", answer: "Yes. A significant portion of our clients relocate to Austin from across the country. We provide virtual tours, comprehensive neighborhood analysis, and full-service transaction management for remote buyers and investors." },
+        { question: "Does Taylor "Nash" Sherwood work with out-of-state clients?", answer: "Yes. A significant portion of our clients relocate to Austin from across the country. We provide virtual tours, comprehensive neighborhood analysis, and full-service transaction management for remote buyers and investors." },
       ])} />
       <Navigation />
       <div className="h-12 md:h-20" aria-hidden="true" />
@@ -281,8 +281,8 @@ const About = () => {
               <div className="flex flex-col items-center">
                 <OptimizedImage
                   src={taylorAboutHeadshot}
-                  alt="Taylor Sherwood, founder of Echelon Property Group and Austin luxury real estate advisor"
-                  title="Taylor Sherwood, Echelon Property Group founder and Austin real estate advisor"
+                  alt="Taylor "Nash" Sherwood, founder of Echelon Property Group and Austin luxury real estate advisor"
+                  title="Taylor "Nash" Sherwood, Echelon Property Group founder and Austin real estate advisor"
                   width={800}
                   height={1000}
                   priority
@@ -293,9 +293,9 @@ const About = () => {
                 </div>
               </div>
               <div>
-                <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-2">Meet Taylor Sherwood</h2>
+                <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-2">Meet Taylor "Nash" Sherwood</h2>
                 <p className="text-xs tracking-[0.1em] uppercase text-muted-foreground/60 mb-4">REALTOR®, CLHMS, ABR, GRI</p>
-                <p className="text-lg text-muted-foreground leading-[1.7] whitespace-pre-line">{"Taylor Sherwood is a top-performing Austin real estate advisor specializing in commercial, luxury, and land development opportunities. With a background in economics and a reputation for precision deal-making, Taylor helps investors, developers, and high-net-worth clients identify, structure, and execute winning real estate strategies across Central Texas.\n\nKnown for his sharp market insight and hands-on approach, Taylor advises on everything from off-market commercial acquisitions and land assemblages to luxury residential and development projects. His experience spans investment underwriting, land development strategy, value-add positioning, and high-end residential sales, giving clients a full-spectrum advantage.\n\nTaylor's clients value his ability to cut through noise, uncover hidden opportunities, and negotiate aggressively on their behalf. Whether it's sourcing development sites, positioning a luxury asset for maximum exposure, or structuring complex commercial transactions, Taylor brings clarity, confidence, and results.\n\nA proud Austinite, Taylor spends much of his time studying (often over an ice cold margarita) the forces shaping Central Texas, from emerging development corridors and infrastructure projects to the neighborhoods and communities driving the region's next chapter. Among longtime friends, he's still known simply as \"Nash,\" a nickname that's followed him since high school and stuck for reasons nobody can quite explain.\n\nIn a city growing and evolving as rapidly as Austin, Taylor believes the best opportunities are rarely obvious, but they can often be found by those paying close attention."}</p>
+                <p className="text-lg text-muted-foreground leading-[1.7] whitespace-pre-line">{"Taylor "Nash" Sherwood is a top-performing Austin real estate advisor specializing in commercial, luxury, and land development opportunities. With a background in economics and a reputation for precision deal-making, Taylor helps investors, developers, and high-net-worth clients identify, structure, and execute winning real estate strategies across Central Texas.\n\nKnown for his sharp market insight and hands-on approach, Taylor advises on everything from off-market commercial acquisitions and land assemblages to luxury residential and development projects. His experience spans investment underwriting, land development strategy, value-add positioning, and high-end residential sales, giving clients a full-spectrum advantage.\n\nTaylor's clients value his ability to cut through noise, uncover hidden opportunities, and negotiate aggressively on their behalf. Whether it's sourcing development sites, positioning a luxury asset for maximum exposure, or structuring complex commercial transactions, Taylor brings clarity, confidence, and results.\n\nA proud Austinite, Taylor spends much of his time studying (often over an ice cold margarita) the forces shaping Central Texas, from emerging development corridors and infrastructure projects to the neighborhoods and communities driving the region's next chapter. Among longtime friends, he's still known simply as \"Nash,\" a nickname that's followed him since high school and stuck for reasons nobody can quite explain.\n\nIn a city growing and evolving as rapidly as Austin, Taylor believes the best opportunities are rarely obvious, but they can often be found by those paying close attention."}</p>
 
                 <div className="mt-8 border-t border-border/50 pt-6">
                   <h4 className="text-minimal text-muted-foreground/50 mb-3">PROFESSIONAL DESIGNATIONS</h4>

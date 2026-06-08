@@ -18,6 +18,7 @@ const NewsletterSignup: React.FC<NewsletterSignupProps> = ({
   title = "The Echelon Insider",
   description = "Receive curated Austin market intelligence, private opportunities, luxury listings, development trends, and notable local insights.",
   className = "",
+  compact = false,
 }) => {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");

@@ -162,7 +162,8 @@ const Hero = () => {
             color: "rgba(252,250,246,1)",
             textShadow: "0 2px 14px rgba(0,0,0,0.55), 0 6px 30px rgba(0,0,0,0.35), 0 0 60px rgba(0,0,0,0.18)"
           }}>
-            Austin&apos;s most exceptional real estate
+            Austin&apos;s most exceptional<br />
+            real estate
           </h1>
 
           <p className="max-w-[620px] mb-12 md:mb-[52px] lg:mb-14 leading-[1.65]" style={{

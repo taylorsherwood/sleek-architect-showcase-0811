@@ -111,7 +111,7 @@ const AdvisorSection = () => (
         <div className="flex flex-col justify-center bg-secondary lg:-mt-14" style={{ padding: "clamp(36px, 5vw, 64px)" }}>
           <ScrollReveal>
             <p className="text-minimal text-gold mb-6">
-              TAYLOR SHERWOOD, FOUNDER
+              TAYLOR "NASH" SHERWOOD, FOUNDER
             </p>
           </ScrollReveal>
 

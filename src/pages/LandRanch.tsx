@@ -1106,7 +1106,7 @@ const LandRanch = () => {
         </div>
       </div>
 
-      <div className="h-6 md:h-8" aria-hidden="true" />
+      <div className="h-12 md:h-20" aria-hidden="true" />
 
       {/* ── PARALLAX BREAK ──────────────────────── */}
       <div

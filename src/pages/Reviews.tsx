@@ -257,28 +257,11 @@ const positioningTags = [
   "Investment Acquisitions",
 ];
 
-// Build Review schema entries only from verified, published reviews
-const reviewSchema = {
-  "@context": "https://schema.org",
-  "@type": "RealEstateAgent",
-  name: "Taylor Sherwood",
-  url: `${SITE}/reviews`,
-  worksFor: {
-    "@type": "Organization",
-    name: "Echelon Property Group",
-  },
-  review: reviews.map((r) => ({
-    "@type": "Review",
-    reviewRating: {
-      "@type": "Rating",
-      ratingValue: r.rating,
-      bestRating: 5,
-    },
-    author: { "@type": "Person", name: r.name },
-    reviewBody: r.quote,
-    datePublished: r.date,
-  })),
-};
+// Review schema intentionally omitted.
+// Google flags multiple Review objects without a verified AggregateRating
+// attached to the reviewed entity. Until an independently-sourced aggregate
+// rating is available, we keep testimonials as visible content only and rely
+// on RealEstateAgent / Organization / Breadcrumb / FAQ schema instead.
 
 const ExpandableQuote = ({ text }: { text: string }) => {
   const [open, setOpen] = useState(false);

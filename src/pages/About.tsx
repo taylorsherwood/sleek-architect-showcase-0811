@@ -165,8 +165,8 @@ const About = () => {
   return (
     <div className="min-h-screen">
       <SEOHead
-        title="About Taylor \"nash\" Sherwood"
-        description="Meet Taylor \"nash\" Sherwood and the Echelon Property Group team. Austin luxury real estate advisors specializing in homes, land, and investment properties."
+        title="About Taylor 'nash' Sherwood"
+        description="Meet Taylor 'nash' Sherwood and the Echelon Property Group team. Austin luxury real estate advisors specializing in homes, land, and investment properties."
       />
 
       
@@ -176,10 +176,10 @@ const About = () => {
         { name: "About", url: "https://www.echelonpropertygroup.com/about" }
       ])} />
       <SchemaMarkup schema={createFAQSchema([
-        { question: "Who is Taylor \"nash\" Sherwood?", answer: "Taylor \"nash\" Sherwood is a Certified Luxury Home Marketing Specialist and founder of Echelon Property Group, specializing in luxury residential, commercial, land, and investment real estate across Austin and the Texas Hill Country." },
+        { question: "Who is Taylor 'nash' Sherwood?", answer: "Taylor 'nash' Sherwood is a Certified Luxury Home Marketing Specialist and founder of Echelon Property Group, specializing in luxury residential, commercial, land, and investment real estate across Austin and the Texas Hill Country." },
         { question: "What areas does Echelon Property Group serve?", answer: "Echelon Property Group serves Austin's premier neighborhoods including West lake Hills, Barton Creek, Lake Austin, Tarrytown, Rollingwood, Spanish Oaks, Dripping Springs, and the greater Texas Hill Country." },
         { question: "What services does Echelon Property Group offer?", answer: "We offer luxury buyer representation, strategic listing and seller advisory, off-market property sourcing, commercial tenant representation, investment property acquisitions, and land brokerage." },
-        { question: "Does Taylor \"nash\" Sherwood work with out-of-state clients?", answer: "Yes. A significant portion of our clients relocate to Austin from across the country. We provide virtual tours, comprehensive neighborhood analysis, and full-service transaction management for remote buyers and investors." },
+        { question: "Does Taylor 'nash' Sherwood work with out-of-state clients?", answer: "Yes. A significant portion of our clients relocate to Austin from across the country. We provide virtual tours, comprehensive neighborhood analysis, and full-service transaction management for remote buyers and investors." },
       ])} />
       <Navigation />
       <div className="h-12 md:h-20" aria-hidden="true" />
@@ -281,8 +281,8 @@ const About = () => {
               <div className="flex flex-col items-center">
                 <OptimizedImage
                   src={taylorAboutHeadshot}
-                  alt="Taylor \"nash\" Sherwood, founder of Echelon Property Group and Austin luxury real estate advisor"
-                  title="Taylor \"nash\" Sherwood, Echelon Property Group founder and Austin real estate advisor"
+                  alt="Taylor 'nash' Sherwood, founder of Echelon Property Group and Austin luxury real estate advisor"
+                  title="Taylor 'nash' Sherwood, Echelon Property Group founder and Austin real estate advisor"
                   width={800}
                   height={1000}
                   priority

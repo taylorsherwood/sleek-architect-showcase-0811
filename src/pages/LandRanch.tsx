@@ -1232,18 +1232,35 @@ const LandRanch = () => {
                   Taylor Sherwood advises buyers, sellers, investors, and landowners throughout
                   Austin and the Texas Hill Country on ranch, land, development, and investment
                   opportunities. His experience spans luxury residential sales, redevelopment
-                  projects, off-market acquisitions, and land transactions where future potential
-                  is often just as important as current value.
+                  projects, off-market acquisitions, land assemblages, and complex transactions where
+                  understanding future value is often just as important as evaluating present-day
+                  conditions.
                 </p>
                 <p>
-                  Rather than focusing solely on acreage or improvements, Taylor helps clients
-                  evaluate the broader picture, including access, water, topography, development
-                  potential, market demand, and long-term appreciation. Every property is analyzed
-                  through both its present use and its highest-and-best-use potential.
+                  Raised with an appreciation for land, growth, and the opportunities that come from
+                  seeing what others overlook, Taylor has built his career around helping clients
+                  identify value where vision and strategy intersect. Longtime friends still call him
+                  "Nash," a nickname that has followed him since high school, but clients know him for
+                  a straightforward approach, deep market knowledge, and a willingness to dig into
+                  the details that drive real-world outcomes.
+                </p>
+                <p>
+                  Rather than focusing solely on acreage, improvements, or comparable sales, Taylor
+                  helps clients understand the bigger picture. Access, water, topography,
+                  infrastructure, development feasibility, market demand, and long-term appreciation
+                  all play a role in determining a property's true potential. Every opportunity is
+                  evaluated through both its current use and its highest-and-best-use potential.
+                </p>
+                <p>
+                  Whether advising on a Hill Country ranch, a transitional land tract, an infill
+                  redevelopment opportunity, or an off-market investment acquisition, Taylor brings a
+                  practical, economics-driven perspective shaped by years of studying the growth and
+                  evolution of Central Texas.
                 </p>
                 <p>
                   Through Echelon Property Group, clients gain access to strategic guidance, local
-                  market expertise, and opportunities both on and off the market.
+                  market expertise, and opportunities both on and off the market across Austin and the
+                  Texas Hill Country.
                 </p>
               </div>
 

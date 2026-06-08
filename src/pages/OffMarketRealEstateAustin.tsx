@@ -419,7 +419,7 @@ const OffMarketRealEstateAustin = () => {
       {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
           CINEMATIC SECTIONS 2–7 (with form in Section 7)
       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
-      <NewsletterSignup className="py-20 md:py-28" />
+      {/* Newsletter is rendered globally in the Footer to avoid duplicate CTAs */}
 
       <CinematicSections formNode={formContent} />
 

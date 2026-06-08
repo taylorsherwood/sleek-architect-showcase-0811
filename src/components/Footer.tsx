@@ -164,7 +164,7 @@ const Footer = () => {
               </div>
             </div>
             <div>
-              <h4 style={headingStyle}>Market Insights</h4>
+              <h4 style={headingStyle}>{"\n"}</h4>
               <div>
                 {[
                   { to: "/austin-luxury-market-report", label: "Luxury Market Report" },

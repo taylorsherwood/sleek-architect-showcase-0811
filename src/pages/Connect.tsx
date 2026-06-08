@@ -3,6 +3,7 @@ import SEOHead from "@/components/SEOHead";
 import taylorHeadshot from "@/assets/taylor-headshot.webp";
 import combinedLogo from "@/assets/exp-echelon-combined-logo.png";
 import { Instagram, Mail, Phone, Home, Search, Mountain } from "lucide-react";
+import NewsletterSignup from "@/components/NewsletterSignup";
 
 const BookingModal = lazy(() => import("@/components/BookingModal"));
 

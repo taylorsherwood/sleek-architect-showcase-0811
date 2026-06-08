@@ -120,6 +120,16 @@ The appointed agents can continue to advocate for their respective clients withi
 
 However, a critical boundary remains. The appointing broker, who sits above both appointed agents, is neutral. Information that would harm the other party cannot flow across that line. The appointed agents operate within the overall intermediary framework, which means their advocacy is real but not unlimited.
 
+### What This Actually Looks Like in Most Austin Transactions
+
+In practice, the with-appointments structure is what buyers and sellers encounter almost every time intermediary applies in Austin. The broker formally appoints. The seller keeps their listing agent. The buyer keeps their buyer's agent. Each side has a dedicated, licensed representative who has already been working with them, often for weeks or months before the matching property appeared.
+
+What changes is not who sits across from you at the table. What changes is who controls the transaction above them. Both agents hang their license at the same brokerage, and that brokerage, through its broker of record, ultimately oversees the deal from contract through closing. The two agents continue to advocate within their assigned roles, but the brokerage as a single entity is responsible for the file, the disclosures, the compliance review, and the neutrality that intermediary requires.
+
+For most clients, this is the experience that matters. You still have an agent. They still negotiate on your behalf, present offers, manage timelines, and walk you through inspections and closing. The intermediary structure is happening in the background at the brokerage level, governing what information can move between the two appointed agents and what cannot. It is the broker, not your agent, who is neutral. Your agent remains your point of contact and your advocate within the limits the framework imposes.
+
+This is why the appointments form is so much more common than the no-appointments form in Austin's luxury and off-market segments. Brokerages with a strong roster of buyers and a strong roster of sellers naturally end up on both sides of a deal more often, and appointments are the mechanism that allows the transaction to proceed with each client still meaningfully represented. The trade-off is the confidentiality wall described above, not the loss of an agent.
+
 ### The Misconception Worth Addressing Directly
 
 Many buyers and sellers assume that once appointments are made, full representation is effectively restored. It is not. The appointed agent can do more than the broker acting alone, but the brokerage as a whole is still operating under intermediary. Certain confidential information is off-limits in both directions. The appointed agent for the buyer, for example, cannot share information with the seller's side that would damage the buyer's negotiating position, and vice versa.

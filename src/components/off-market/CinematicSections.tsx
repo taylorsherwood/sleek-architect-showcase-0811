@@ -9,7 +9,7 @@ import privateInventoryHero from "@/assets/hero-luxury-austin.webp";
 import desktopNote from "@/assets/testimonial-westlake-living-room.webp";
 
 import clarksvilleImg from "@/assets/off-market-reveal-estate.webp";
-import taylorSignature from "@/assets/taylor-nash-sherwood-signature.png";
+import taylorSignature from "@/assets/taylor-sherwood-signature.png";
 import testimonialSplitImg from "@/assets/testimonial-split-lake-austin.webp";
 import austinSkylineParallax from "@/assets/austin-skyline-parallax.webp";
 

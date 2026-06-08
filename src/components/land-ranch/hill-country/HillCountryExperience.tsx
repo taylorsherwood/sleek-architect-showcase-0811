@@ -12,7 +12,7 @@ import {
 } from "@/data/landRanchMarkets";
 
 import heroImage from "@/assets/land-ranch-hero.jpg";
-import taylorPortrait from "@/assets/taylor-nash-sherwood-land-ranch.jpg";
+import taylorPortrait from "@/assets/taylor-sherwood-land-ranch.jpg";
 import legacyImg from "@/assets/cat-luxury-ranches.jpg";
 import liveWaterImg from "@/assets/lake-austin-waterfront.jpg";
 import recreationalImg from "@/assets/cat-recreational-land.jpg";

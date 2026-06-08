@@ -69,7 +69,7 @@ export const seoBlogPosts: BlogPost[] = [
     title: "8 Proven Marketing Strategies That Attract Serious Buyers in Austin",
     metaTitle: "8 Estate Property Marketing Strategies for Austin Luxury Sellers | Echelon Property Group",
     excerpt: "Eight proven estate property marketing strategies tailored to Austin's luxury sellers, covering pre-market positioning in Westlake Hills and Barton Creek, architectural photography and dedicated property websites, private channel distribution to family offices and relocating executives, precision pricing and absorption analysis, narrative storytelling, buyer-profile staging, curated showings, and global reach with local Austin precision.",
-    author: "Taylor \"nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2026-06-07",
     readTime: "22 min read",
     category: "Seller Strategy",

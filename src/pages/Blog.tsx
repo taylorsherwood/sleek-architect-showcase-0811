@@ -362,30 +362,8 @@ const Blog = () => {
         </div>
       </section>
 
-      {/* ── Newsletter ── */}
-      <section className="py-28 md:py-32 bg-secondary border-t border-foreground/5">
-        <div className="container mx-auto px-6">
-          <div className="max-w-3xl mx-auto text-center">
-            <p className="text-[10px] tracking-[0.3em] uppercase text-[#b9a06c] mb-5">
-              The Echelon Property Group Letter
-            </p>
-            <h2 className="text-2xl sm:text-4xl md:text-5xl font-display font-normal text-architectural mb-6 leading-[1.15]">
-              Stay Informed
-            </h2>
-            <p className="text-base md:text-lg text-muted-foreground mb-10 leading-relaxed">
-              A quiet, occasional dispatch on Austin's luxury market, market shifts, off-market opportunities, and neighborhood intelligence.
-            </p>
-            <a
-              href="https://taylorsherwood.myflodesk.com/biolink"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              className="inline-block px-8 py-4 bg-[#0C0F24] text-background hover:bg-[#b9a06c] transition-colors duration-500 text-xs tracking-[0.2em] uppercase"
-            >
-              Subscribe
-            </a>
-          </div>
-        </div>
-      </section>
+      {/* Newsletter is rendered globally in the Footer to avoid duplicate CTAs */}
+
 
       {/* ── Explore More ── */}
       <section className="py-20 bg-background">

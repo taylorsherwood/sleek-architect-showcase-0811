@@ -125,7 +125,7 @@ const AdvisorAnchor = () => (
             className="font-display font-normal text-architectural leading-[1.08] tracking-tight mb-8"
             style={{ fontSize: "clamp(1.85rem, 3.4vw, 2.75rem)" }}
           >
-            Taylor "nash" Sherwood, advising on Hill Country acquisitions.
+            Taylor Sherwood, advising on Hill Country acquisitions.
           </h2>
           <p className="text-muted-foreground text-[1.0625rem] leading-[1.85] mb-10 max-w-[52ch]">
             Land in the Hill Country is rarely won on the open market. Taylor

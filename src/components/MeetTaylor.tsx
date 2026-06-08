@@ -33,7 +33,7 @@ const MeetTaylor = () => {
         <div className="max-w-7xl mx-auto">
           <ScrollReveal>
             <h3 className="text-2xl md:text-4xl font-display font-normal text-architectural mb-3 text-center md:w-1/2">
-              Meet Taylor "nash" Sherwood
+              Meet Taylor Sherwood
             </h3>
             <p className="text-[0.65rem] md:text-xs tracking-[0.1em] uppercase text-muted-foreground/60 mb-6 text-center md:w-1/2 leading-relaxed">
               CERTIFIED LUXURY HOME MARKETING SPECIALIST (CLHMS) <br />
@@ -60,7 +60,7 @@ const MeetTaylor = () => {
             <div className="relative md:col-span-5 md:pt-10 md:max-w-[460px]">
               <h4 className="text-minimal text-gold mb-4 font-extrabold">AUSTIN LUXURY REAL ESTATE SPECIALIST</h4>
               <p className="text-muted-foreground leading-[1.85] text-base md:text-xl mb-7">
-                Taylor 'nash' Sherwood is an Austin-based real estate advisor specializing in distinctive homes, luxury properties, and land opportunities.
+                Taylor Sherwood is an Austin-based real estate advisor specializing in distinctive homes, luxury properties, and land opportunities.
               </p>
               <p className="text-muted-foreground leading-[1.85] text-base md:text-xl mb-7">
                 Known for his attention to detail and thoughtful approach to marketing, he helps clients navigate complex transactions with confidence while showcasing properties in their best possible light.

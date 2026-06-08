@@ -227,7 +227,7 @@ const BlogPost = () => {
         </div>
       </article>
 
-      <NewsletterSignup className="py-20 md:py-28" />
+      {/* Newsletter is rendered globally in the Footer to avoid duplicate CTAs */}
       <BlogCTA />
       <RelatedInsights maxLinks={5} />
       <AboutBlock />

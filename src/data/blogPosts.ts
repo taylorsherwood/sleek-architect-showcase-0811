@@ -84,9 +84,11 @@ This article is educational in nature and does not constitute legal advice. Read
 
 ## Texas Eliminated Traditional Dual Agency. Here is What Replaced It.
 
-In most states, dual agency refers to a situation where one agent, or one brokerage, represents both the buyer and the seller simultaneously while maintaining full fiduciary duties to each. Texas looked at that structure and concluded it creates an inherent conflict that cannot be resolved. You cannot fully advocate for two parties with opposing interests at the same time.
+In most states, dual agency refers to a situation where one agent, or one brokerage, represents both the buyer and the seller simultaneously while continuing to owe full fiduciary duties to each. Texas law takes a different approach. Under the Texas Real Estate License Act (TRELA), a broker who would otherwise represent both parties in the same transaction must instead act as an intermediary, a defined statutory role that is not the same as dual agency.
 
-Texas addressed this through TRELA, codified in Chapter 1101 of the Texas Occupations Code, and administered by the Texas Real Estate Commission (TREC). Under this framework, a broker who would otherwise represent both parties in the same transaction must act as an intermediary rather than as a full agent for either. The broker steps out of the advocacy role and into a neutral, facilitative one.
+The governing provisions are found in the Texas Occupations Code, including §1101.559, §1101.560, and §1101.561, which describe how an intermediary may act, when written consent is required, and when appointments to the parties may be made. The Texas Real Estate Commission (TREC) administers these rules and publishes the consumer-facing Information About Brokerage Services (IABS) form that explains them in plain language.
+
+So what is intermediary representation in Texas? In short, it is a statutory framework that allows one broker to facilitate a transaction between a buyer and a seller who are both clients of the same brokerage, with written consent from both, and with specific limits on what the broker and any appointed agents may do for either side.
 
 The distinction is not semantic. A full agent owes fiduciary duties including loyalty, confidentiality, obedience, disclosure, and reasonable care to their client. An intermediary broker owes a different, more limited set of obligations to both parties, with neutrality as the governing principle.
 
@@ -100,7 +102,7 @@ Knowing that intermediary exists and understanding what it means before you are 
 
 ## The Two Forms of Intermediary: With Appointments and Without
 
-Intermediary is not a single, uniform experience. Texas law recognizes two distinct structures, and the difference between them has real consequences for how much support each party receives during the transaction.
+Can a Realtor represent both the buyer and the seller in Texas? Yes, but only as an intermediary, and only with written consent from both parties. Within that framework, Texas law recognizes two distinct structures, and the difference between them has real consequences for how much support each party receives during the transaction.
 
 ### Intermediary Without Appointments
 
@@ -146,7 +148,7 @@ For relocation buyers specifically, this matters. Many buyers <a href="/blog/mov
 
 Before agreeing to intermediary, a buyer should ask their agent directly: what can you advise me on, and what can you not advise me on in this transaction? A clear answer to that question helps the buyer calibrate their expectations and decide whether to proceed with the intermediary structure or seek independent representation from a separate brokerage.
 
-Declining intermediary is always an option. It is not a rejection of the agent or the brokerage. It is a legitimate exercise of the buyer's right to independent representation, and any reputable brokerage will present it as such.
+Declining intermediary is always an option. It is not a rejection of the agent or the brokerage. It is a legitimate exercise of the buyer's right to independent representation, and any reputable brokerage will present it as such. For a deeper comparison of what fully undivided advocacy looks like under Texas law, our guide to <a href="/blog/exclusive-real-estate-representation-austin" class="${LINK}">exclusive real estate representation in Austin's luxury market</a> walks through the alternative in detail.
 
 ## What Intermediary Means for Sellers, Including Luxury and Off-Market Transactions
 
@@ -166,19 +168,21 @@ What changes is the ability to advise the seller on how to respond to the buyer 
 
 ### The Luxury Market Context
 
-In high-value transactions, the stakes of that limitation are higher. A seller of a property priced above two or three million dollars in Westlake Hills or Tarrytown is making decisions with significant financial consequences. Understanding that the seller's appointed agent cannot advise on strategy in ways that draw on confidential buyer information is important context for any seller evaluating whether intermediary serves their interests.
+In high-value transactions, the stakes of that limitation are higher. A seller of an architecturally significant residence in Westlake Hills, a gated estate in Barton Creek, or a waterfront property on Lake Austin is making decisions where small shifts in negotiation strategy translate into very large dollar outcomes. Understanding that the seller's appointed agent cannot advise on strategy in ways that draw on confidential buyer information is important context for any seller evaluating whether intermediary serves their interests at this price point.
+
+For high-net-worth sellers, the practical question becomes whether the trade-off makes sense in the specific transaction. A private, controlled sale to a vetted in-house buyer can be more valuable than aggressive negotiation against an unknown one. A competitive open-market sale with multiple bidders may be better served by exclusive representation through a separate brokerage. Neither answer is universally correct, and sellers should weigh both alongside our analysis of <a href="/blog/exclusive-real-estate-representation-austin" class="${LINK}">exclusive representation in Austin's luxury market</a>.
 
 Some sellers in this segment choose to have their own attorney review the intermediary consent language before signing. That is a reasonable and prudent approach for transactions of this magnitude. Sellers who want to understand <a href="/blog/how-to-price-luxury-home-austin" class="${LINK}">how pricing strategy works in Austin's luxury market</a> will find that context especially useful when evaluating their options under intermediary.
 
 ## Intermediary in Investment Property and Complex Transactions
 
-Investment property transactions add a layer of complexity to intermediary that buyers and sellers of primary residences may not encounter. The negotiation dynamics are often more technical, the due diligence process is more involved, and the financial stakes frequently require more specific advisory input.
+Investment property transactions add a layer of complexity to intermediary that buyers and sellers of primary residences may not encounter. The negotiation dynamics are often more technical, the due diligence process is more involved, and the financial stakes frequently require more specific advisory input. As transaction value and complexity rise, so does the practical cost of an advisor who cannot fully advocate for one side.
 
 ### Multi-Unit and Commercial-Adjacent Properties
 
 When an investor working with an Austin brokerage identifies a multi-unit residential property or a commercial-adjacent asset that is also represented by that brokerage, intermediary applies. The investor should understand clearly what advisory limitations are in place. Evaluating cap rates, lease structures, rent rolls, and exit strategies requires substantive guidance. Under intermediary, the appointed agent can assist with transaction logistics and information, but cannot advise in ways that disadvantage the seller.
 
-For investors who rely heavily on their agent's counsel during negotiation, this limitation is worth taking seriously. In some cases, the better approach is to identify a property represented by a different brokerage, where full buyer representation is available without the intermediary constraint. Investors evaluating <a href="/invest" class="${LINK}">wealth building through real estate in Austin</a> should factor representation structure into their due diligence process.
+For investors who rely heavily on their agent's counsel during negotiation, this limitation is worth taking seriously. In some cases, the better approach is to identify a property represented by a different brokerage, where full buyer representation is available without the intermediary constraint. Investors evaluating <a href="/invest" class="${LINK}">wealth building through real estate in Austin</a> should factor representation structure into their due diligence process, and may want to compare the practical advantages of <a href="/blog/exclusive-real-estate-representation-austin" class="${LINK}">exclusive representation</a> against the convenience of staying within a single brokerage.
 
 ### 1031 Exchange Transactions
 
@@ -194,7 +198,7 @@ Sophisticated investors and their attorneys often review intermediary consent la
 
 ## Common Misconceptions About Intermediary Representation in Texas
 
-Intermediary generates more confusion than almost any other concept in Texas real estate. Three misconceptions appear consistently, and each one is worth addressing directly.
+Intermediary generates more confusion than almost any other concept in Texas real estate. Three misconceptions appear consistently, and each one is worth addressing directly. What is the difference between intermediary and dual agency? In short, dual agency does not exist in Texas; intermediary is the statutory structure that replaces it, and it carries different rules, different consent requirements, and different limits on what the broker may do.
 
 **Misconception: My agent is still fully on my side.** Under intermediary with appointments, your appointed agent can advocate for you within meaningful limits. But the brokerage as a whole is neutral, and the appointed agent cannot give advice that would harm the other party or share information that crosses the confidentiality line. This is not full representation. It is a structured form of facilitated representation with defined constraints. Treating it as equivalent to having your own independent agent is a mistake that can affect your outcomes.
 
@@ -202,21 +206,17 @@ Intermediary generates more confusion than almost any other concept in Texas rea
 
 **Misconception: I have to agree to intermediary.** Consent to intermediary is required and voluntary. Neither a buyer nor a seller is obligated to agree to it. If a buyer's brokerage holds the listing on a property the buyer wants to purchase, the buyer can decline intermediary and seek independent representation from a different brokerage. This does not necessarily mean losing access to the property. It means the buyer will be represented by a different firm in the transaction. Any reputable brokerage will present this option clearly and without pressure. If that option is not being presented to you, that is worth noting. Understanding <a href="/blog/choosing-luxury-real-estate-brokerage-austin" class="${LINK}">how to choose the right luxury real estate brokerage in Austin</a> is an important first step toward ensuring your representation interests are protected from the start.
 
-## Key Takeaways and Next Steps
+## Knowing When Intermediary Fits, and When It Does Not
 
-Intermediary representation is one of the most practically important concepts in Texas real estate, and one of the least understood by buyers and sellers entering the market for the first time. Here is a concise summary of what matters most.
+Intermediary is neither inherently good nor inherently problematic. It is a structure, and like any structure, it serves some situations well and others poorly. The question is not whether intermediary is acceptable. The question is whether it is the right fit for the transaction in front of you.
 
-**Texas prohibits traditional dual agency.** The structure familiar to buyers and sellers from other states does not exist under Texas law. Intermediary is the legally defined alternative.
+Intermediary tends to work well when both parties are sophisticated, the property and price are clearly understood, the transaction is essentially logistical rather than strategic, and the brokerage's in-house network is the very reason both sides came to the table. Many off-market deals in Tarrytown, Rollingwood, and along the Lake Austin waterfront fall into this category. A discreet transaction between a quiet seller and a vetted in-house buyer can be exactly what both parties want.
 
-**Intermediary means the broker is neutral.** When a broker represents both parties, the broker is a facilitator, not an advocate. The broker's obligations to each party are real but limited.
+Intermediary tends to be less suitable when negotiation strategy is the primary value the advisor brings, when one or both parties have limited experience with Texas transactions, when relocation timelines or 1031 deadlines create asymmetric pressure, or when the transaction involves development potential, entitlement risk, or other complexity that requires undivided counsel. In those situations, exclusive representation through a brokerage that does not hold the other side is often the stronger position. Our guide to <a href="/blog/exclusive-real-estate-representation-austin" class="${LINK}">exclusive representation in Austin's luxury market</a> walks through what that looks like in practice and how to verify the arrangement is genuinely undivided.
 
-**Appointments matter significantly.** Intermediary with appointments gives each party a dedicated agent who can provide meaningful support within defined limits. Intermediary without appointments is more restrictive. Always ask whether appointments will be made and who will be appointed to your side.
+The most important thing is that the choice is made before negotiations begin, not after. Once a property has been identified, an offer has been drafted, or due diligence is underway, the structural decision about representation is largely already made. Buyers, sellers, and investors who understand intermediary in advance can ask better questions, negotiate the representation agreement itself with more clarity, and choose the structure that actually fits their goals.
 
-**Confidentiality is maintained, but advocacy is limited.** Both parties retain protection over their negotiating position. Neither side's appointed agent can share information that would harm the other. But the depth of strategic counsel available under intermediary is not the same as independent representation.
-
-**Consent is always required and always voluntary.** You cannot be placed into an intermediary relationship without your written agreement. You can decline intermediary and seek independent representation. That option should always be presented to you clearly.
-
-If you are navigating a transaction in Austin's luxury market, evaluating an investment property, or relocating to Austin and encountering intermediary for the first time, understanding how your representation is structured before you sign anything is essential. At <a href="/about-austin-real-estate-advisory" class="${LINK}">Echelon Property Group</a>, we believe informed clients make better decisions, and we are committed to explaining representation clearly before any transaction begins. Learn more about <a href="/services" class="${LINK}">our services</a> and how we approach representation in Austin's most complex and competitive transactions.
+If your transaction sits in Austin's luxury, off-market, or investment segments, that decision deserves to be deliberate. <a href="/about-austin-real-estate-advisory" class="${LINK}">Echelon Property Group</a> is happy to discuss how representation should be structured for your specific situation, with no expectation beyond a clearer understanding of your options.
 
 \n
 :::faq
@@ -245,7 +245,7 @@ Q: Is intermediary common in Austin real estate?
 A: Yes. In Austin's active market, particularly in the luxury segment, it is not unusual for a single brokerage to represent both sides of a transaction. This is especially true in off-market deals, where a listing brokerage may introduce one of its own buyer clients to a seller who prefers a private transaction. Buyers and sellers working with Austin brokerages that carry significant market share should expect to encounter intermediary situations and should understand the structure before it arises.
 :::
 
-If you would like to discuss how representation should be structured for your specific Austin transaction, <a href="/contact" class="${LINK}">connect with Echelon Property Group</a> for a private conversation.
+For a complementary perspective on the alternative to intermediary, readers may also want to review our guide to <a href="/blog/exclusive-real-estate-representation-austin" class="${LINK}">exclusive real estate representation in Austin's luxury market</a>.
 `,
   },
   {
@@ -274,7 +274,7 @@ Exclusive representation is a formal, contractual relationship in which one agen
 
 The contrast becomes clearest when you look at what standard representation often looks like in practice. Texas is one of many states that permits what is called intermediary status, where a single broker can legally represent both the buyer and the seller in the same transaction. This is common, and it is frequently misunderstood by luxury clients who assume their agent is working exclusively for them.
 
-Dual agency and intermediary arrangements are not inherently unethical. But they are inherently limited. When one agent or one brokerage represents both parties, the agent cannot legally advocate fully for either side. They cannot share your motivation to sell quickly, your maximum budget, or your negotiating flexibility. They are managing the transaction rather than championing your position within it.
+Dual agency and intermediary arrangements are not inherently unethical. But they are inherently limited. When one agent or one brokerage represents both parties, the agent cannot legally advocate fully for either side. They cannot share your motivation to sell quickly, your maximum budget, or your negotiating flexibility. They are managing the transaction rather than championing your position within it. For a complete breakdown of how the Texas intermediary structure actually works and where its limits sit, see our companion guide on <a href="/blog/how-intermediary-works-texas-real-estate" class="${LINK}">how intermediary works in Texas real estate</a>.
 
 Exclusive representation means something specific in practice:
 
@@ -298,7 +298,7 @@ The legal instruments that establish exclusive representation in Texas are the B
 
 When reviewing a Buyer Representation Agreement, pay attention to several things. First, confirm that the agreement establishes exclusive buyer representation, not intermediary authorization. Second, understand the term length and what it takes to exit the agreement if the relationship is not working. Third, look at the compensation provisions and how they interact with seller-paid commissions in the transactions you pursue.
 
-The intermediary provision deserves particular attention. Some agreements include pre-authorization for intermediary status, meaning you have consented in advance to your agent representing the other party if a conflict arises. Sophisticated buyers and sellers should understand this before signing, and should ask directly whether the agent or brokerage ever represents both parties in the same transaction.
+The intermediary provision deserves particular attention. Some agreements include pre-authorization for intermediary status, meaning you have consented in advance to your agent representing the other party if a conflict arises. Sophisticated buyers and sellers should understand this before signing, and should ask directly whether the agent or brokerage ever represents both parties in the same transaction. Our deeper explainer on <a href="/blog/how-intermediary-works-texas-real-estate" class="${LINK}">how intermediary works in Texas real estate</a> covers the appointments structure, consent rules, and the practical limits that apply once intermediary is in place.
 
 For buyers relocating from California, New York, or other states with different agency structures, Texas law may operate differently than what they are accustomed to. In some states, dual agency is prohibited or more tightly restricted. In Texas, it is permitted with disclosure. That difference has real implications for how you approach representation as an out-of-state buyer, particularly for those <a href="/blog/moving-from-new-york-to-austin" class="${LINK}">moving from New York to Austin</a> or relocating from California where agency rules differ.
 

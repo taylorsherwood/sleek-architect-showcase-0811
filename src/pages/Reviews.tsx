@@ -261,7 +261,7 @@ const positioningTags = [
 const reviewSchema = {
   "@context": "https://schema.org",
   "@type": "RealEstateAgent",
-  name: "Taylor \"Nash\" Sherwood",
+  name: "Taylor Sherwood",
   url: `${SITE}/reviews`,
   worksFor: {
     "@type": "Organization",
@@ -390,8 +390,8 @@ const Reviews = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Taylor \"Nash\" Sherwood Reviews | Austin Luxury Real Estate Advisor"
-        description="Read verified client reviews and experiences with Taylor \"Nash\" Sherwood, Austin Realtor specializing in luxury homes, off-market opportunities, land and ranch properties, and investment acquisitions."
+        title="Taylor Sherwood Reviews | Austin Luxury Real Estate Advisor"
+        description="Read verified client reviews and experiences with Taylor Sherwood, Austin Realtor specializing in luxury homes, off-market opportunities, land and ranch properties, and investment acquisitions."
         canonical="/reviews"
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
@@ -482,7 +482,7 @@ const Reviews = () => {
               <div className="relative aspect-[4/5] overflow-hidden">
                 <img
                   src={taylorHeadshot}
-                  alt="Taylor \"Nash\" Sherwood, Austin luxury real estate advisor and founder of Echelon Property Group"
+                  alt="Taylor Sherwood, Austin luxury real estate advisor and founder of Echelon Property Group"
                   className="w-full h-full object-cover"
                   loading="eager"
                   decoding="async"
@@ -678,7 +678,7 @@ const Reviews = () => {
           <div className="text-center mb-10">
             <p className="text-minimal text-gold mb-3 font-extrabold">ABOUT</p>
             <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural">
-              About Taylor "Nash" Sherwood
+              About Taylor Sherwood
             </h2>
           </div>
 
@@ -686,14 +686,14 @@ const Reviews = () => {
             <div className="relative mx-auto md:mx-0 w-[220px] md:w-[280px] aspect-[4/5] overflow-hidden bg-architectural/5">
               <img
                 src={taylorRanchHeadshot.url}
-                alt="Taylor \"Nash\" Sherwood, Austin Realtor and founder of Echelon Property Group"
+                alt="Taylor Sherwood, Austin Realtor and founder of Echelon Property Group"
                 className="w-full h-full object-cover"
                 loading="lazy"
                 decoding="async"
               />
             </div>
             <p className="text-foreground/85 leading-relaxed font-light text-lg">
-              Taylor "Nash" Sherwood is an Austin-based Realtor and founder of Echelon Property Group,
+              Taylor Sherwood is an Austin-based Realtor and founder of Echelon Property Group,
               specializing in luxury residential real estate, off-market opportunities, land and
               ranch properties, investment acquisitions, and select commercial real estate
               throughout Austin and the Texas Hill Country.
@@ -703,7 +703,7 @@ const Reviews = () => {
           <dl className="grid sm:grid-cols-2 gap-x-10 gap-y-6 bg-white border border-architectural/10 p-8" style={{ boxShadow: "0 10px 30px rgba(0,0,0,0.04)" }}>
             <div>
               <dt className="text-[0.7rem] tracking-[0.22em] text-gold font-extrabold uppercase mb-1">Name</dt>
-              <dd className="font-display text-architectural">Taylor "Nash" Sherwood</dd>
+              <dd className="font-display text-architectural">Taylor Sherwood</dd>
             </div>
             <div>
               <dt className="text-[0.7rem] tracking-[0.22em] text-gold font-extrabold uppercase mb-1">Company</dt>

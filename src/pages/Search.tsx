@@ -497,7 +497,7 @@ const SearchPage = () => {
                 Austin's real estate market spans an extraordinary range of properties, from contemporary Hill Country estates and Lake Austin waterfront homes to downtown high-rise penthouses and sprawling ranch land. Whether you're searching for a luxury primary residence, an investment property, or land for development, our comprehensive search covers every available listing across greater Austin.
               </p>
               <p>
-                Echelon Property Group provides expert guidance for buyers navigating Austin's competitive market. Beyond public listings, we maintain access to off-market properties and private opportunities through our brokerage network. Work with Taylor "Nash" Sherwood for personalized property recommendations tailored to your goals, timeline, and budget.
+                Echelon Property Group provides expert guidance for buyers navigating Austin's competitive market. Beyond public listings, we maintain access to off-market properties and private opportunities through our brokerage network. Work with Taylor Sherwood for personalized property recommendations tailored to your goals, timeline, and budget.
               </p>
             </div>
 

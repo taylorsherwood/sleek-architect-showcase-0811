@@ -78,8 +78,8 @@ const AdvisorSection = () => (
             <div className="relative w-full p-4 md:pt-14">
               <img
                 src={taylorBoatImg}
-                alt="Taylor \"Nash\" Sherwood, Austin luxury real estate advisor and founder of Echelon Property Group"
-                title="Taylor \"Nash\" Sherwood, Echelon Property Group"
+                alt="Taylor Sherwood, Austin luxury real estate advisor and founder of Echelon Property Group"
+                title="Taylor Sherwood, Echelon Property Group"
                 className="w-full h-[400px] md:h-[700px] object-cover object-center rounded-sm"
                 loading="lazy" decoding="async"
                 sizes="(max-width: 1024px) 100vw, 480px"
@@ -169,7 +169,7 @@ const AdvisorSection = () => (
                    {"Buy. Sell. Invest.\n\n"}
                    <span className="font-normal text-foreground/70">Let's get to work,</span>
                  </p>
-                 <div className="!mt-0 !pt-0 -mb-8"><img src={taylorSignature} alt="Taylor \"Nash\" Sherwood signature" className="block h-[140px] opacity-80 -translate-y-4" loading="lazy" decoding="async" width={341} height={140} /></div>
+                 <div className="!mt-0 !pt-0 -mb-8"><img src={taylorSignature} alt="Taylor Sherwood signature" className="block h-[140px] opacity-80 -translate-y-4" loading="lazy" decoding="async" width={341} height={140} /></div>
               </div>
             </div>
 

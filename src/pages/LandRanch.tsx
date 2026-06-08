@@ -1091,7 +1091,7 @@ const LandRanch = () => {
         </div>
       </section>
 
-      <div className="h-8 md:h-12" aria-hidden="true" />
+      <div className="h-6 md:h-8" aria-hidden="true" />
 
       {/* Fancy gold divider */}
       <div className="container mx-auto px-6" aria-hidden="true">
@@ -1106,7 +1106,7 @@ const LandRanch = () => {
         </div>
       </div>
 
-      <div className="h-12 md:h-20" aria-hidden="true" />
+      <div className="h-6 md:h-8" aria-hidden="true" />
 
       {/* ── PARALLAX BREAK ──────────────────────── */}
       <div

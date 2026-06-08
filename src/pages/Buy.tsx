@@ -79,7 +79,7 @@ const whyTaylor = [
 {
   title: "Local Market Expertise",
   description:
-  "Taylor 'nash' Sherwood has deep roots in Austin's luxury real estate market. As a Certified Luxury Home Marketing Specialist (CLHMS), he brings institutional-level knowledge of pricing trends, neighborhood dynamics, and off-market opportunities that most Austin luxury real estate agents simply don't have."
+  "Taylor Sherwood has deep roots in Austin's luxury real estate market. As a Certified Luxury Home Marketing Specialist (CLHMS), he brings institutional-level knowledge of pricing trends, neighborhood dynamics, and off-market opportunities that most Austin luxury real estate agents simply don't have."
 },
 {
   title: "Negotiation Experience",

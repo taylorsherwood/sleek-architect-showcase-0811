@@ -81,7 +81,7 @@ const Contact = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Contact | Echelon Property Group"
-        description="Contact Echelon Property Group for Austin luxury real estate. Schedule a consultation with Taylor 'nash' Sherwood for buying, selling, or investing."
+        description="Contact Echelon Property Group for Austin luxury real estate. Schedule a consultation with Taylor Sherwood for buying, selling, or investing."
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={localBusinessSchema} />
@@ -216,7 +216,7 @@ const Contact = () => {
             </h2>
             <div className="space-y-6 text-muted-foreground leading-relaxed">
               <p>
-                Whether you're buying your first luxury home in Austin, selling a family estate, exploring commercial investment opportunities, or relocating from out of state, Echelon Property Group provides the expert guidance and personalized service that complex real estate decisions demand. Founded by Taylor \"nash\" Sherwood, a Certified Luxury Home Marketing Specialist, our firm specializes in luxury residential, commercial, land, and investment real estate across Austin and the Texas Hill Country.
+                Whether you're buying your first luxury home in Austin, selling a family estate, exploring commercial investment opportunities, or relocating from out of state, Echelon Property Group provides the expert guidance and personalized service that complex real estate decisions demand. Founded by Taylor Sherwood, a Certified Luxury Home Marketing Specialist, our firm specializes in luxury residential, commercial, land, and investment real estate across Austin and the Texas Hill Country.
               </p>
               <p>
                 For sellers, we deliver premium marketing campaigns featuring professional photography, cinematic video, drone footage, custom property websites, and targeted digital advertising. Our strategic pricing methodology and negotiation expertise consistently achieve above-market results for luxury listings across Barton Creek, West lake Hills, Lake Austin, and beyond.

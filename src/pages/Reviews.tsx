@@ -373,8 +373,8 @@ const Reviews = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Taylor 'nash' Sherwood Reviews | Austin Luxury Real Estate Advisor"
-        description="Read verified client reviews and experiences with Taylor 'nash' Sherwood, Austin Realtor specializing in luxury homes, off-market opportunities, land and ranch properties, and investment acquisitions."
+        title="Taylor Sherwood Reviews | Austin Luxury Real Estate Advisor"
+        description="Read verified client reviews and experiences with Taylor Sherwood, Austin Realtor specializing in luxury homes, off-market opportunities, land and ranch properties, and investment acquisitions."
         canonical="/reviews"
       />
       <SchemaMarkup schema={realEstateAgentSchema} />

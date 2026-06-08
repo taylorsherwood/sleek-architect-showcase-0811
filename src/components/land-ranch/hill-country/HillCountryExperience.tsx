@@ -12,7 +12,7 @@ import {
 } from "@/data/landRanchMarkets";
 
 import heroImage from "@/assets/land-ranch-hero.jpg";
-import taylorPortrait from "@/assets/taylor-nash-sherwood-land-ranch.jpg";
+import taylorPortrait from "@/assets/taylor-sherwood-land-ranch.jpg";
 import legacyImg from "@/assets/cat-luxury-ranches.jpg";
 import liveWaterImg from "@/assets/lake-austin-waterfront.jpg";
 import recreationalImg from "@/assets/cat-recreational-land.jpg";
@@ -110,7 +110,7 @@ const AdvisorAnchor = () => (
           <div className="relative overflow-hidden aspect-[4/5] max-w-[420px]">
             <img
               src={taylorPortrait}
-              alt="Taylor 'nash' Sherwood, Land &amp; Ranch Advisor at Echelon Property Group"
+              alt="Taylor Sherwood, Land &amp; Ranch Advisor at Echelon Property Group"
               loading="lazy"
               decoding="async"
               className="absolute inset-0 w-full h-full object-cover"

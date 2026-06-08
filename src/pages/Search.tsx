@@ -160,7 +160,7 @@ const SearchPage = () => {
                   e.currentTarget.style.color = "#fff";
                 }}
               >
-                See Taylor \"nash\" Sherwood Listings
+                See Echelon Property Group Listings
               </button>
               <button
                 type="button"

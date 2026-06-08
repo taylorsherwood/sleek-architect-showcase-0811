@@ -161,7 +161,7 @@ const LuxuryRealEstateAustin = () => {
                 Navigating Austin's luxury market requires more than access to listings. It demands hyper-local expertise, established relationships, strategic negotiation skills, and access to <Link to="/off-market-real-estate-austin" className="text-foreground underline hover:text-muted-foreground">off-market inventory</Link> that never appears on public platforms.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Taylor \"nash\" Sherwood and Echelon Property Group specialize exclusively in Austin's luxury, land, commercial, and investment real estate segments. Whether you're <Link to="/buy" className="text-foreground underline hover:text-muted-foreground">buying a home</Link>, <Link to="/sell" className="text-foreground underline hover:text-muted-foreground">selling a property</Link>, or evaluating <Link to="/austin-real-estate-investment" className="text-foreground underline hover:text-muted-foreground">investment opportunities</Link>, we provide the market intelligence and experienced representation that results demand.
+                Taylor Sherwood and Echelon Property Group specialize exclusively in Austin's luxury, land, commercial, and investment real estate segments. Whether you're <Link to="/buy" className="text-foreground underline hover:text-muted-foreground">buying a home</Link>, <Link to="/sell" className="text-foreground underline hover:text-muted-foreground">selling a property</Link>, or evaluating <Link to="/austin-real-estate-investment" className="text-foreground underline hover:text-muted-foreground">investment opportunities</Link>, we provide the market intelligence and experienced representation that results demand.
               </p>
             </section>
 
@@ -203,7 +203,7 @@ const LuxuryRealEstateAustin = () => {
                 Start Your Austin Luxury Home Search
               </h2>
               <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Contact Taylor \"nash\" Sherwood and Echelon Property Group for expert guidance on Austin's luxury real estate market.
+                Contact Taylor Sherwood and Echelon Property Group for expert guidance on Austin's luxury real estate market.
               </p>
               <Link to="/contact" className="inline-block text-minimal bg-primary text-primary-foreground hover:bg-primary/90 px-10 py-4 transition-colors duration-300">
                 SCHEDULE A CONSULTATION

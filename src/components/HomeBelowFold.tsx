@@ -78,8 +78,8 @@ const AdvisorSection = () => (
             <div className="relative w-full p-4 md:pt-14">
               <img
                 src={taylorBoatImg}
-                alt="Taylor 'nash' Sherwood, Austin luxury real estate advisor and founder of Echelon Property Group"
-                title="Taylor 'nash' Sherwood, Echelon Property Group"
+                alt="Taylor Sherwood, Austin luxury real estate advisor and founder of Echelon Property Group"
+                title="Taylor Sherwood, Echelon Property Group"
                 className="w-full h-[400px] md:h-[700px] object-cover object-center rounded-sm"
                 loading="lazy" decoding="async"
                 sizes="(max-width: 1024px) 100vw, 480px"

@@ -16,7 +16,7 @@ const IVORY = "#F5F3EF";
 
 const NewsletterSignup: React.FC<NewsletterSignupProps> = ({
   title = "The Echelon Insider",
-  description = "No Spam. Unsubscribe at any time.",
+  description = "Receive curated Austin market intelligence, private opportunities, luxury listings, development trends, and notable local insights.\n\n",
   className = "",
   compact = false,
 }) => {
@@ -65,7 +65,7 @@ const NewsletterSignup: React.FC<NewsletterSignupProps> = ({
             {title}
           </h2>
           <p
-            className="text-foreground/60"
+            className="text-foreground/60 text-left"
             style={{
               fontFamily: '"Jost", sans-serif',
               fontSize: "clamp(0.9375rem, 1.2vw, 1.0625rem)",

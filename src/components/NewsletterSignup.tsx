@@ -4,6 +4,7 @@ interface NewsletterSignupProps {
   title?: string;
   description?: string;
   className?: string;
+  compact?: boolean;
 }
 
 const BREVO_FORM_ACTION =

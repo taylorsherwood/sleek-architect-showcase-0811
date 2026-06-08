@@ -1031,12 +1031,12 @@ const CommunitiesSection = () => {
    ───────────────────────────────────────────── */
 
 const insights = [
-  { to: "/blog/austin-luxury-real-estate-market-forecast", title: "Austin Luxury Market Forecast", excerpt: "Expert analysis of pricing trends, inventory, and investment outlook across Austin's luxury segments.", category: "Market Insights" },
+  { to: "/blog/austin-luxury-real-estate-market-forecast", title: "Austin Luxury Market Forecast", excerpt: "Expert analysis of pricing trends, inventory, and investment outlook across Austin's luxury segments.", category: "\n" },
   { to: "/blog/best-luxury-neighborhoods-austin-texas", title: "LUXURY LIVING", excerpt: "A comprehensive guide to Austin's most prestigious communities and what makes each one unique.", category: "Neighborhoods" },
   { to: "/blog/top-investment-neighborhoods-austin", title: "Top Investment Neighborhoods", excerpt: "Data-driven analysis of appreciation trends, rental yields, and growth potential across Austin.", category: "Investment" },
   { to: "/blog/best-waterfront-homes-austin", title: "Best Waterfront Homes in Austin", excerpt: "Lake Austin estates, Lake Travis retreats, and what to know before buying waterfront property.", category: "Waterfront" },
   { to: "/blog/moving-to-austin-texas-from-california", title: "Moving to Austin from California", excerpt: "Everything California residents need to know about relocating, taxes, neighborhoods, and lifestyle.", category: "Relocation" },
-  { to: "/blog/austin-property-taxes-explained", title: "Austin Property Taxes Explained", excerpt: "Rates, exemptions, protest strategies, and how property taxes affect luxury real estate decisions.", category: "Market Insights" },
+  { to: "/blog/austin-property-taxes-explained", title: "Austin Property Taxes Explained", excerpt: "Rates, exemptions, protest strategies, and how property taxes affect luxury real estate decisions.", category: "\n" },
 ];
 
 const InsightsSection = () => (
@@ -1046,7 +1046,7 @@ const InsightsSection = () => (
         <ScrollReveal>
           <div className="text-center mb-16">
             <div className="w-10 h-px mx-auto mb-5" style={{ background: "hsl(38 39% 61%)" }} />
-            <p className="text-minimal text-gold mb-5">MARKET INTELLIGENCE</p>
+            <p className="text-minimal text-gold mb-5">{"\n"}</p>
             <h2 className="font-display text-3xl md:text-[2.75rem] font-normal text-foreground/90 leading-[1.1] tracking-[0.03em]">
               Insights & Market Intelligence
             </h2>

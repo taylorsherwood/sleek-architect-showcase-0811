@@ -6,7 +6,7 @@ const featuredArticles = [
     to: "/blog/austin-luxury-real-estate-market-forecast",
     title: "Austin Luxury Real Estate Market Forecast",
     excerpt: "Data-driven analysis of pricing trends, inventory shifts, and what luxury buyers should expect.",
-    category: "Market Insights",
+    category: "\n",
   },
   {
     to: "/blog/find-off-market-homes-austin",
@@ -36,7 +36,7 @@ const featuredArticles = [
     to: "/austin-luxury-market-report",
     title: "Austin Luxury Market Report",
     excerpt: "Quarterly insights on pricing, days on market, and luxury segment performance across Austin.",
-    category: "Market Insights",
+    category: "\n",
   },
 ];
 
@@ -47,7 +47,7 @@ const MarketInsights = () => {
         <div className="max-w-6xl mx-auto">
           <ScrollReveal>
             <div className="text-center mb-14">
-              <p className="text-minimal text-gold mb-4 tracking-[0.25em] font-semibold">Market Insights</p>
+              <p className="text-minimal text-gold mb-4 tracking-[0.25em] font-semibold">{"\n"}</p>
               <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-4">
                 Strategic Perspective on Austin Real Estate
               </h2>

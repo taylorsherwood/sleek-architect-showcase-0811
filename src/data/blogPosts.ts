@@ -128,7 +128,7 @@ What changes is not who sits across from you at the table. What changes is who c
 
 For most clients, this is the experience that matters. You still have an agent. They still negotiate on your behalf, present offers, manage timelines, and walk you through inspections and closing. The intermediary structure is happening in the background at the brokerage level, governing what information can move between the two appointed agents and what cannot. It is the broker, not your agent, who is neutral. Your agent remains your point of contact and your advocate within the limits the framework imposes.
 
-This is why the appointments form is so much more common than the no-appointments form in Austin's luxury and off-market segments. Brokerages with a strong roster of buyers and a strong roster of sellers naturally end up on both sides of a deal more often, and appointments are the mechanism that allows the transaction to proceed with each client still meaningfully represented. The trade-off is the confidentiality wall described above, not the loss of an agent.
+This is why the appointments form is so much more common than the no-appointments form in Austin's luxury and off-market segments. Brokerages with a strong roster of buyers and a strong roster of sellers naturally end up on both sides of a deal more often, and appointments are the mechanism that allows the transaction to proceed with each client still meaningfully represented.
 
 ### The Misconception Worth Addressing Directly
 

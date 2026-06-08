@@ -50,7 +50,7 @@ const NewsletterSignup: React.FC<NewsletterSignupProps> = ({
               scrolling="no"
               allowFullScreen
               title="Newsletter Signup"
-              className="h-[760px] md:h-[680px] lg:h-[640px]"
+              className="h-[540px] md:h-[480px] lg:h-[450px]"
               style={{
                 display: "block",
                 marginLeft: "auto",

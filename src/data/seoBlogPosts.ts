@@ -69,7 +69,7 @@ export const seoBlogPosts: BlogPost[] = [
     title: "8 Proven Marketing Strategies That Attract Serious Buyers in Austin",
     metaTitle: "8 Estate Property Marketing Strategies for Austin Luxury Sellers | Echelon Property Group",
     excerpt: "Eight proven estate property marketing strategies tailored to Austin's luxury sellers, covering pre-market positioning in Westlake Hills and Barton Creek, architectural photography and dedicated property websites, private channel distribution to family offices and relocating executives, precision pricing and absorption analysis, narrative storytelling, buyer-profile staging, curated showings, and global reach with local Austin precision.",
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2026-06-07",
     readTime: "22 min read",
     category: "Seller Strategy",
@@ -381,7 +381,7 @@ We work with a limited number of clients at a time to ensure each estate receive
     title: "How Austin Luxury Buyers Access Private Property Networks",
     metaTitle: "How Austin Luxury Buyers Access Private Property Networks | Echelon Property Group",
     excerpt: "Some of Austin's most desirable homes trade quietly through advisor relationships, private buyer networks, and off-market channels long before they appear on Zillow, Redfin, or the MLS. This guide explains how high-net-worth buyers gain meaningful access to those private property networks across Tarrytown, Barton Creek, Lake Austin, and the Hill Country.",
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2026-06-06",
     readTime: "14 min read",
     category: "Private Listings",
@@ -520,7 +520,7 @@ href: /contact
     title: "AI Real Estate Search in Austin: What Artificial Intelligence Can (and Can't) Tell Buyers",
     metaTitle: "How AI Is Changing Real Estate Searches in Austin | Echelon Property Group",
     excerpt: "Artificial intelligence is changing how buyers search for homes, ranches, and investment properties. Learn how AI tools, natural language search, Homes.com, RealScout, ChatGPT, and local market expertise work together in Austin real estate.",
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2026-06-04",
     readTime: "9 min read",
     category: "MARKET INSIGHTS",
@@ -733,7 +733,7 @@ Echelon Property Group advises buyers across Austin's luxury, waterfront, ranch,
     title: "7 Strategies for Buying Waterfront Luxury Homes in Austin",
     metaTitle: "7 Strategies for Buying Waterfront Luxury Homes in Austin | Echelon Property Group",
     excerpt: "Acquiring waterfront luxury homes in Austin requires more than browsing listings. The best properties on Lake Austin, Lake Travis, and the Colorado River corridor move through private networks before reaching public markets. This guide outlines seven strategies high-net-worth buyers use to gain early access, evaluate critical variables, and compete effectively in one of the country's most sought-after waterfront real estate markets.",
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2026-06-04",
     readTime: "14 min read",
     category: "LUXURY LIVING",
@@ -1089,7 +1089,7 @@ Echelon Property Group advises buyers across Austin's premier waterfront corrido
     title: "Estate Home Sales in Austin: What Buyers, Executors, and Trustees Should Expect",
     metaTitle: "Estate Home Sales in Austin: A Guide for Buyers, Executors, and Trustees | Echelon Property Group",
     excerpt: "Estate property transactions in Austin operate under a different set of rules than standard real estate deals. This guide for buyers, executors, and trustees walks through fiduciary constraints, probate timelines, pricing realities, as-is offer structure, and the Austin-specific neighborhood dynamics that shape estate sales in Tarrytown, Westlake Hills, Barton Creek, Lake Austin, and the Texas Hill Country.",
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2026-06-03",
     readTime: "13 min read",
     category: "SELLER STRATEGY",
@@ -1270,7 +1270,7 @@ Echelon Property Group advises executors, trustees, estate representatives, luxu
     title: "How to Buy a Luxury Home in Austin: 9 Insider Strategies for High-End Buyers",
     metaTitle: "How to Buy a Luxury Home in Austin | Echelon",
     excerpt: "Nine Austin-specific strategies for buying a high-end home above $2M, from neighborhood-by-neighborhood market realities and Lake Austin waterfront nuance to off-market access, pricing logic, and relocation considerations most national guides miss.",
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2026-06-01",
     readTime: "20 min read",
     category: "BUYER STRATEGY",
@@ -1579,7 +1579,7 @@ href: /contact
     title: "7 Proven Strategies for Selling a Luxury Home in Austin Without Leaving Money on the Table",
     metaTitle: "Selling a Luxury Home in Austin | Echelon",
     excerpt: "Selling a luxury home in Austin requires a fundamentally different strategy than a conventional listing. Seven proven approaches to pricing, positioning, off-market exposure, negotiation, and representation in Austin's upper-tier market.",
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2026-05-27",
     readTime: "14 min read",
     category: "SELLER STRATEGY",
@@ -1896,7 +1896,7 @@ A: Overpricing in hopes of "testing the market." In a thin luxury buyer pool, an
     title: "Austin Real Estate Is Down. The Top Zip Code Is Up 3.5%. Here's Why.",
     metaTitle: "Austin Real Estate Is Down. The Top Zip Code Is Up 3.5% | Echelon Property Group",
     excerpt: "Austin's metro median is down 6.8%, but 78746 just hit a record $2.39M. Why the luxury tier and the broader market have decoupled, and what it means for buyers and sellers.",
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2026-05-20",
     readTime: "8 min read",
     category: "MARKET INSIGHTS",
@@ -1975,7 +1975,7 @@ A: Roughly 30 to 40 percent of luxury inventory in Westlake and the surrounding 
     title: "How to Choose the Right Luxury Real Estate Advisor in Austin",
     metaTitle: "How to Choose the Right Luxury Real Estate Advisor in Austin | Echelon Property Group",
     excerpt: "A strategic guide for buyers, sellers, and off-market opportunities, how sophisticated clients evaluate Austin luxury real estate advisors and build the right representation before entering the market.",
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2026-05-20",
     readTime: "12 min read",
     category: "LUXURY LIVING",
@@ -2370,7 +2370,7 @@ A: High-net-worth sellers prioritize discretion, control, and leverage. Off-mark
     title: "What Makes a Property Luxury Real Estate? \nlooking Beyond Price",
     metaTitle: "What Makes a Property Luxury Real Estate? looking Beyond Price | Echelon Property Group",
     excerpt: "Discover what makes property luxury real estate beyond price. Learn the defining traits, design, exclusivity, and craftsmanship, that set luxury homes apart.",
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2026-05-18",
     readTime: "11 min read",
     category: "LUXURY LIVING",
@@ -2731,7 +2731,7 @@ A: Ask whether the location is genuinely irreplaceable, whether the architecture
     title: "Austin Multifamily: Why Institutional Capital Is Still Betting on Central Texas",
     metaTitle: "Austin Multifamily 2026: Why Institutional Capital Is Still Betting on Central Texas | Echelon Property Group",
     excerpt: "A clear-eyed read on Austin multifamily in 2026, supply digestion, capital stack distress, submarket divergence, and the basis math behind the best acquisition vintage in a decade.",
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2026-05-16",
     readTime: "12 min read",
     category: "INVESTMENT",
@@ -3271,7 +3271,7 @@ The most successful transactions are often the quietest ones.
 Our advisory approach is built around discretion, [off-market access](/off-market-real-estate-austin), strategic negotiation, and a highly personalized client experience designed for executives, entrepreneurs, investors, and discerning homeowners.
 
 If you are considering [buying](/buy) or [selling](/sell) a luxury property in Austin, we invite you to [schedule a private consultation](/contact) to discuss your goals and explore opportunities that may never appear publicly online.`,
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2026-05-16",
     readTime: "11 min read",
     category: "RELOCATION",
@@ -3691,7 +3691,7 @@ A: Ask about $2M+ closings in the past 12 months, specific neighborhood speciali
 Q: Why does specialization matter for Austin luxury real estate?
 A: Each Austin luxury neighborhood, Barton Creek, Westlake Hills, Tarrytown, Spanish Oaks, Lake Austin, has distinct pricing behavior, buyer psychology, and inventory dynamics. A specialist understands which streets command premiums, which homes trade privately, and where future appreciation is most likely, while a generalist often misses these nuances.
 :::`,
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2026-05-15",
     readTime: "12 min read",
     category: "BUYER STRATEGY",
@@ -3865,7 +3865,7 @@ A: Sellers of high-end Austin homes often prioritize discretion, controlled expo
 Q: Is Austin still a strong long-term luxury market?
 A: Yes. Austin's combination of no state income tax, a maturing technology and venture capital economy, lifestyle quality, and genuine scarcity in the upper tier continues to attract sustained high-net-worth demand from California, New York, and other major metros.
 :::`,
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2026-05-14",
     readTime: "10 min read",
     category: "LUXURY LIVING",
@@ -3973,7 +3973,7 @@ A: Privacy, timing, and control. Many high-end owners are testing pricing, prote
 Q: How can a buyer position themselves to see exclusive inventory first?
 A: Be specific, be credible, and be ready. Define neighborhoods and criteria precisely, organize financing and decision-making in advance, and work with an advisor who is genuinely active in private channels. Sellers and listing agents respond faster to buyers who present as informed and decisive.
 :::`,
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2026-05-14",
     readTime: "8 min read",
     category: "BUYER STRATEGY",
@@ -4053,7 +4053,7 @@ A: Often, yes, especially when the property is genuinely scarce and the buyer po
 Q: When should a seller consider going public instead?
 A: When the property benefits from broad demand, when comparable inventory is thin, or when private outreach has clarified that the right buyer is not already in the qualified pool. The best strategy often combines a quiet first phase with a disciplined public launch if needed.
 :::`,
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2026-05-13",
     readTime: "5 min read",
     category: "MARKET INSIGHTS",
@@ -4149,7 +4149,7 @@ A: Treat strategy as part of the asset. Get pricing, timing, and buyer targeting
 Q: What should luxury buyers prioritize when evaluating Austin homes?
 A: Land quality, micro-market position, architectural integrity, and how the property lives day to day. Filter past finishes and square footage and ask whether the asset will still be relevant five to ten years from now.
 :::`,
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2026-05-13",
     readTime: "9 min read",
     category: "MARKET INSIGHTS",
@@ -4246,7 +4246,7 @@ Q: How should sellers decide between a private sale and a public launch?
 A: It comes down to scarcity, audience, and goals. A private sale works best when the property is genuinely rare, the buyer pool is identifiable, and the seller values privacy or controlled timing over maximum reach. A public launch tends to outperform when the home benefits from broad demand and competitive bidding. The right call depends on the asset, not a default preference, which is why [a strategic conversation upfront](/sell-private) matters before any marketing decisions are made.
 :::
     `,
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2026-04-30",
     readTime: "8 min read",
     category: "OFF-MARKET",
@@ -4341,7 +4341,7 @@ Q: What should I evaluate beyond the neighborhood when buying for privacy in Aus
 A: Look at lot orientation, sightlines from adjacent and uphill lots, street hierarchy and pass-through patterns, where guests and service vehicles enter, tree cover and natural screening, future development risk on neighboring parcels, and how the home actually lives once you are inside it rather than how it photographs. A premium address does not guarantee a private experience, the micro-level configuration of the specific property does.
 :::
     `,
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2026-04-27",
     readTime: "9 min read",
     category: "NEIGHBORHOODS",
@@ -4431,7 +4431,7 @@ A: It depends on the asset, the seller's priorities, and current buyer behavior 
 Q: What questions should a sophisticated buyer ask a luxury advisor in Austin?
 A: Beyond what is available, ask how a specific property will hold up over the next five to ten years, who the likely next buyer will be, and what could compress or expand resale value. Ask about micro-location rather than neighborhood branding, which blocks trade differently and why, where demand is deep, where it is narrow, and how that shapes negotiating posture. The right advisor will also be candid when a property is wrong, even if it checks the obvious boxes.
 :::`,
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2026-04-26",
     readTime: "9 min read",
     category: "LUXURY LIVING",
@@ -4545,7 +4545,7 @@ A: Yes, but staging at the luxury level is closer to editing than decorating. Th
 Q: Which Austin neighborhoods have the strongest luxury resale demand?
 A: West lake Hills, Tarrytown, Pemberton Heights, Barton Creek, Rollingwood, and Spanish Oaks consistently lead in luxury resale demand, though each behaves differently. Westlake and Barton Creek trade heavily on land, views, and privacy. Tarrytown and Pemberton trade on centrality and legacy character. Rollingwood balances proximity with family-scale livability. The right strategy depends on which submarket the home actually competes in, not just where it is located.
 :::`,
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2026-04-25",
     readTime: "11 min read",
     category: "SELLER STRATEGY",
@@ -4639,7 +4639,7 @@ A meaningful portion of high-end inventory in neighborhoods like Tarrytown, West
 ### How should a luxury buyer choose between neighborhoods like Barton Creek and Spanish Oaks?
 Both offer gated, estate-scale living. Barton Creek tends to feel more established and resort-adjacent, while Spanish Oaks reads as more curated and consistent in newer construction. The right fit depends on whether the buyer values legacy presence or a tightly controlled modern environment.
 :::`,
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "April 22, 2026",
     readTime: "9 min read",
     category: "NEIGHBORHOODS",
@@ -4823,7 +4823,7 @@ Access comes from working with an advisor who is already inside the conversation
 ### What neighborhoods in Austin have the most off-market activity?
 Off-market and private listing activity is concentrated in luxury neighborhoods including West lake Hills, Barton Creek, Tarrytown, Rob Roy, Spanish Oaks, Davenport Ranch, Pemberton Heights, and the Lake Austin corridor. These markets combine high-net-worth ownership, architecturally distinct inventory, and a strong preference for discretion.
 :::`,
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2026-04-20",
     readTime: "8 min read",
     category: "MARKET INSIGHTS",
@@ -4986,7 +4986,7 @@ Luxury buyers seeking privacy, investors with clear acquisition criteria, develo
 ### Can I find off-market homes in Austin without an agent?
 Yes, but the yield is inconsistent. You can mine Travis County probate filings, send targeted direct mail through TCAD records, and drive neighborhoods looking for distressed properties. Above $1.5M in neighborhoods like West lake Hills and Barton Creek, however, sellers transact through trusted broker relationships, so working with a firm already inside those channels is typically the only path to consistent access.
 `,
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2026-04-17",
     readTime: "12 min read",
     category: "MARKET INSIGHTS",
@@ -5095,7 +5095,7 @@ Yes. Austin's luxury market involves unique dynamics including off-market transa
 ## Explore Austin's Luxury Landscape
 
 Understanding each neighborhood's character is only part of the equation. For buyers weighing specific communities side by side, our guides on <a href="/blog/rollingwood-vs-westlake-hills" class="text-foreground underline hover:text-muted-foreground">Rollingwood vs West lake Hills</a> and <a href="/blog/lake-austin-vs-lake-travis" class="text-foreground underline hover:text-muted-foreground">Lake Austin vs Lake Travis</a> offer deeper lifestyle comparisons. You can also browse all <a href="/communities" class="text-foreground underline hover:text-muted-foreground">Austin luxury communities</a> or return to our <a href="/" class="text-foreground underline hover:text-muted-foreground">homepage</a> to explore current opportunities.`,
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2025-03-01",
     readTime: "12 min read",
     category: "LUXURY LIVING",
@@ -5257,7 +5257,7 @@ While Austin housing prices have increased, buyers from California often find si
 
 ### What Austin neighborhoods do Californians prefer?
 West lake Hills, Barton Creek, Tarrytown, and Lake Austin waterfront communities are among the most popular.`,
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2025-02-20",
     readTime: "14 min read",
     category: "RELOCATION",
@@ -5374,7 +5374,7 @@ Property taxes are a factor in affordability calculations, but Austin's strong a
 
 ### Is it worth protesting property taxes in Austin?
 Yes. Successful protests can reduce assessed values by 5-15% or more, resulting in meaningful annual savings. For luxury properties valued above $2 million, even modest percentage reductions translate to thousands of dollars in savings.`,
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2025-02-10",
     readTime: "13 min read",
     category: "MARKET INSIGHTS",
@@ -5474,7 +5474,7 @@ Lake Travis offers strong investment potential, particularly for properties with
 
 ### How do I find off-market waterfront listings?
 Many Lake Austin transactions occur off-market. Working with a specialized agent like Echelon Property Group, who maintains deep relationships within the waterfront community, is the best way to access these opportunities.`,
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2025-01-28",
     readTime: "12 min read",
     category: "LUXURY LIVING",
@@ -5484,7 +5484,7 @@ Many Lake Austin transactions occur off-market. Working with a specialized agent
     id: "austin-luxury-real-estate-market-forecast",
     title: "Austin Luxury Real Estate Market Forecast: 2026 Pricing, Trends & Expert Predictions",
     metaTitle: "Austin Luxury Market Forecast | Echelon",
-    excerpt: "Data-backed 2026 forecast for Austin's luxury real estate market. Taylor \"Nash\" Sherwood analyzes pricing tiers, buyer-seller leverage shifts, neighborhood-level predictions, and where smart money is moving in Austin's $2M+ segment.",
+    excerpt: "Data-backed 2026 forecast for Austin's luxury real estate market. Taylor Sherwood analyzes pricing tiers, buyer-seller leverage shifts, neighborhood-level predictions, and where smart money is moving in Austin's $2M+ segment.",
     content: `## Where Austin's Luxury Market Stands in 2026
 
 The Austin luxury real estate market has entered a phase I'd describe as "selective momentum." After the correction of 2023–2024, the $2M+ segment didn't simply bounce back, it reorganized. Capital is flowing more deliberately now. Buyers are sharper, sellers are more realistic, and the neighborhoods that are winning are the ones with fundamentals that can't be manufactured: school quality, topography, water access, and proximity.
@@ -5586,7 +5586,7 @@ The strongest risk-adjusted returns are in supply-constrained neighborhoods with
 
 ### How does Austin luxury compare to Dallas and Houston luxury markets?
 Austin commands a 20–40% premium on price per square foot over Dallas and Houston luxury, reflecting its unique combination of tech economy concentration, lifestyle appeal, Hill Country topography, and more constrained supply. However, Austin also delivers stronger appreciation: 5–8% annually versus 3–5% in Dallas and Houston luxury segments over the past five years.`,
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2026-03-28",
     readTime: "18 min read",
     category: "MARKET INSIGHTS",
@@ -5719,7 +5719,7 @@ Compared to California and Northeast luxury markets, Austin offers significant v
 
 ### How do I find off-market investment properties in Austin?
 Off-market deals are accessed through established relationships with local specialists. Echelon Property Group maintains a network of property owners, developers, and investors that provides access to opportunities before they reach the public market.`,
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2025-01-05",
     readTime: "15 min read",
     category: "INVESTMENT",
@@ -5826,7 +5826,7 @@ This depends on lifestyle and housing preferences, but many professionals reloca
 
 ### Are Austin home prices still rising?
 While the market fluctuates, Austin has experienced long-term appreciation driven by job growth and population increases.`,
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2025-03-10",
     readTime: "8 min read",
     category: "RELOCATION",
@@ -5838,7 +5838,7 @@ While the market fluctuates, Austin has experienced long-term appreciation drive
     metaTitle: "Why Billionaires Move to Austin | Echelon Property Group",
     excerpt: "From Elon Musk to Travis Kalanick, discover why the world's wealthiest individuals are relocating to Austin, and what it means for the luxury real estate market.",
     content: "",
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2025-03-15",
     readTime: "12 min read",
     category: "RELOCATION",
@@ -5923,7 +5923,7 @@ Rollingwood is approximately 5 minutes from downtown Austin, making it one of th
 
 ### Are Rollingwood and West lake Hills in the same school district?
 Yes. Both neighborhoods are served by the Eanes Independent School District, consistently ranked among the best public school districts in Texas.`,
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2026-04-03",
     readTime: "6 min read",
     category: "NEIGHBORHOODS",
@@ -6043,7 +6043,7 @@ Tarrytown is approximately 5-10 minutes from downtown Austin, making it one of t
 
 ### Is 78703 a good zip code to buy in Austin?
 78703 is widely considered one of the most desirable zip codes in Austin, encompassing both Tarrytown and Bryker Woods with strong schools, walkability, and consistent appreciation.`,
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2026-04-04",
     readTime: "6 min read",
     category: "NEIGHBORHOODS",
@@ -6168,7 +6168,7 @@ Most Lake Travis waterfront properties are 30-45 minutes from downtown Austin, c
 
 ### Do Lake Travis water levels affect property values?
 Water level fluctuations can impact property values, particularly for homes that lose dock access during drought periods. Properties with deep-water access and protected coves tend to hold value more consistently.`,
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2026-04-04",
     readTime: "6 min read",
     category: "NEIGHBORHOODS",
@@ -6216,7 +6216,7 @@ Typical buyers include corporate executives, entrepreneurs, and high-net-worth f
 ### How does Barton Creek compare to West lake Hills?
 
 [West lake Hills](/communities/westlake-hills) shares Eanes ISD schools and Hill Country character but is an ungated community with more architectural diversity. Barton Creek offers country club amenities and 24/7 security that West lake Hills does not. The choice often depends on whether a buyer prioritizes country club lifestyle or neighborhood autonomy.`,
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2026-04-08",
     readTime: "7 min read",
     category: "NEIGHBORHOODS",
@@ -6270,7 +6270,7 @@ Both are excellent for families thanks to shared Lake Travis ISD schools. Bee Ca
 ### Which community appreciates faster?
 
 Both communities have shown strong appreciation. Lakeway waterfront properties tend to appreciate at premium rates due to shoreline scarcity, while Bee Cave benefits from Austin's westward commercial expansion. For a broader view of Austin market dynamics, see our [luxury market report](/austin-luxury-real-estate-market-report).`,
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2026-04-07",
     readTime: "7 min read",
     category: "NEIGHBORHOODS",
@@ -6402,7 +6402,7 @@ A: For buyers with a longer hold horizon, yes. You're trading commute time and c
 Q: Why is Westlake more expensive?
 A: Westlake combines proximity to downtown, Eanes ISD schools, and one of the tightest luxury inventories in the metro. Demand stays consistent through market shifts, supply does not expand, and that scarcity is reflected in pricing. You're paying for resilience and location, not just the home itself.
 :::`,
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2026-04-16",
     readTime: "6 min read",
     category: "NEIGHBORHOODS",
@@ -6451,7 +6451,7 @@ Yes. Pemberton Heights offers walk-to-downtown convenience, proximity to Lady Bi
 ### What school district is Pemberton Heights in?
 
 Pemberton Heights is served by Austin ISD, with homes typically zoned to Mathews Elementary, O. Henry Middle School, and Austin High School. Several prestigious private schools are also nearby.`,
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2026-04-06",
     readTime: "6 min read",
     category: "NEIGHBORHOODS",
@@ -6499,7 +6499,7 @@ Yes. Waterfront scarcity, Lake Travis ISD demand, and resort amenities support s
 ### How far is Lakeway from downtown Austin?
 
 Lakeway is approximately 25 minutes west of downtown Austin via Highway 71 and Ranch Road 620. The commute is manageable for daily work, and many Lakeway residents work remotely or in west Austin tech corridors.`,
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2026-04-05",
     readTime: "7 min read",
     category: "NEIGHBORHOODS",
@@ -6549,7 +6549,7 @@ Yes. Rob Roy and its sub-communities are gated with controlled access, providing
 ### What makes Rob Roy different from other Austin luxury communities?
 
 Rob Roy offers the combination of gated privacy, panoramic views, and estate-scale lots that no other Austin community matches. While [Barton Creek](/communities/barton-creek) offers country club amenities and [West lake Hills](/communities/westlake-hills) offers community-wide prestige, Rob Roy delivers maximum seclusion and architectural grandeur.`,
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2026-04-03",
     readTime: "7 min read",
     category: "NEIGHBORHOODS",
@@ -6595,7 +6595,7 @@ Yes. Steiner Ranch is one of Austin's most family-oriented communities, with poo
 ### How does Steiner Ranch compare to Bee Cave?
 
 [Bee Cave](/communities/bee-cave) offers Lake Travis ISD and commercial convenience at the Hill Country Galleria, while Steiner Ranch provides more comprehensive built-in amenities and Lake Austin proximity at generally similar price points. Both are popular with families, the choice often depends on school district preference and lifestyle priorities.`,
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2026-04-02",
     readTime: "7 min read",
     category: "NEIGHBORHOODS",
@@ -6673,7 +6673,7 @@ What is less likely is a return to indiscriminate pricing. The next phase should
 That distinction creates opportunity. Buyers with strong guidance can acquire exceptional assets more thoughtfully than they could in a purely reactive market. Sellers with truly differentiated homes can still outperform, especially when strategy matches the property. Firms such as [Echelon Property Group](/) operate in that advisory lane, where access, discretion, and pattern recognition across Austin micro-markets matter as much as exposure.
 
 For anyone making a move at the top of the market, the real edge is not speed for its own sake. It is clarity - on asset quality, on timing, and on what will still look intelligent years after the transaction closes.`,
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2026-04-15",
     readTime: "10 min read",
     category: "MARKET INSIGHTS",
@@ -6685,7 +6685,7 @@ For anyone making a move at the top of the market, the real edge is not speed fo
     metaTitle: "Private Listings Austin Buyers Want | Echelon Property Group",
     excerpt: "Private listings Austin buyers want rarely appear publicly. Learn how off-market access works, who benefits most, and where strategy matters most.",
     content: "",
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2026-04-16",
     readTime: "6 min read",
     category: "LUXURY LIVING",
@@ -6766,7 +6766,7 @@ For investors and strategic buyers, that matters. This is not a volume play. It 
 At Echelon Property Group, that is the lens we bring to this segment - not just what is available, but what is worth owning when the next market phase arrives.
 
 The best Lake Austin decisions are rarely rushed. They are made when the property, timing, and strategy align well enough that holding it for years still feels like the obvious move.`,
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2026-04-14",
     readTime: "9 min read",
     category: "MARKET INSIGHTS",
@@ -6855,7 +6855,7 @@ This is one reason many sophisticated buyers and sellers gravitate toward smalle
 Firms such as [Echelon Property Group](/about), brokered by eXp Realty operate in that lane by focusing on curated representation, private access, and strategic guidance rather than broad-based transaction volume. For the right client, that distinction is meaningful.
 
 Austin's luxury market still rewards bold moves, but only when they are informed ones. The right property, handled with the right strategy, can outperform expectations. The wrong one can tie up capital and time without delivering either lifestyle or [investment](/austin-real-estate-investment) quality. That is why the brokerage relationship matters. At this level, it is not about who can show you what is available. It is about who can tell you what is worth your attention in the first place.`,
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2026-04-15",
     readTime: "10 min read",
     category: "MARKET INSIGHTS",
@@ -6956,7 +6956,7 @@ No. Private listings are about fit, timing, and positioning rather than automati
 ### When should a seller avoid a private listing strategy?
 Sellers should avoid private strategy when the property would benefit from broad competition, when the ideal buyer pool is large rather than narrow, or when the advisor lacks the network to generate real interest privately. In those cases, full MLS exposure typically produces a stronger result.
 :::`,
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2026-04-17",
     readTime: "8 min read",
     category: "MARKET INSIGHTS",
@@ -7112,7 +7112,7 @@ No. Private listings are about access, fit, and timing rather than automatic dis
 ### How do buyers gain access to private listings in Austin?
 Buyers gain access primarily through advisors who participate in trusted agent networks, brokerage-internal channels, and direct relationships with sellers. Working with a relationship-led advisory team that already operates inside Austin's private channels is typically the most reliable path.
 :::`,
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2026-04-18",
     readTime: "9 min read",
     category: "MARKET INSIGHTS",
@@ -7210,7 +7210,7 @@ Yes. A disciplined advisory process can compress a relocation to one or two focu
 ### What's the biggest mistake out-of-state buyers make in Austin luxury real estate?
 The most common error is underestimating how much micro-market fit drives long-term value. Buyers often anchor to neighborhood names without recognizing how dramatically value, privacy, and resale strength shift block by block. Strong representation prevents category errors, overpaying for a compromised lot, buying on the wrong side of a boundary, or mistaking broad appeal for lasting desirability.
 :::`,
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2026-04-28",
     readTime: "10 min read",
     category: "RELOCATION",
@@ -7287,7 +7287,7 @@ That said, not every high-end home should be treated as a pure investment vehicl
 Firms such as [Echelon Property Group](/contact) understand that distinction because the best luxury guidance is not transactional. It is advisory. It accounts for timing, asset quality, private access, and future liquidity before a client ever writes an offer.
 
 Luxury real estate can be a meaningful wealth-building tool, but only when approached with selectivity and a long view. The real advantage is not owning something impressive. It is owning something scarce enough, well located enough, and intelligently acquired enough that the market continues to reward the decision long after the purchase feels ordinary.`,
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2026-05-02",
     readTime: "9 min read",
     category: "INVESTMENT",
@@ -7382,7 +7382,7 @@ When the luxury market tightens, the homes that continue to command attention us
 That last point is worth sitting with. In premium real estate, quality is not just visual. It is sensory and structural. It is how the home sits on the lot, how quiet it feels inside, how natural the light reads throughout the day, and whether the layout supports both entertaining and ordinary mornings without friction.
 
 A new luxury home should feel current on day one. The better ones still feel relevant years later. If you are evaluating this market seriously, the smartest move is to focus less on what is newly built and more on what is genuinely difficult to replace.`,
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2026-05-03",
     readTime: "9 min read",
     category: "INVESTMENT",
@@ -7465,7 +7465,7 @@ The real work is in interpreting what is beneath the surface, which stretches ar
 That is also why many of the strongest transactions happen quietly. In a market defined by discretion and finite inventory, strategy starts before a property is formally available and continues well past the list price conversation. Firms such as [Echelon Property Group](/contact) operate in that advisory lane because the value is not just opening doors. It is knowing which doors are worth opening, a theme we expand on in our overview of [private opportunities](/private-opportunities) and [what defines a private listing](/blog/what-is-a-private-listing).
 
 The right Lake Austin property should feel hard to replicate, not just expensive. If a home offers that kind of rarity, strong waterfront utility, privacy, usable land, and a shoreline that will still matter years from now, buyers rarely regret acting with conviction.`,
-    author: "Taylor \"Nash\" Sherwood",
+    author: "Taylor Sherwood",
     date: "2026-05-04",
     readTime: "10 min read",
     category: "MARKET INSIGHTS",

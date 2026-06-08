@@ -16,7 +16,7 @@ const IVORY = "#F5F3EF";
 
 const NewsletterSignup: React.FC<NewsletterSignupProps> = ({
   title = "The Echelon Insider",
-  description = "Receive curated Austin market intelligence, private opportunities, luxury listings, development trends, and notable local insights.\n\n",
+  description = "Receive curated Austin market intelligence, private opportunities, luxury listings, development trends, and notable local insights.",
   className = "",
   compact = false,
 }) => {

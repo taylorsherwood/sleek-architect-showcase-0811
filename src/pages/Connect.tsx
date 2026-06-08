@@ -218,7 +218,7 @@ const Connect = () => {
           <div className="block md:hidden px-6 py-8">
             <NewsletterSignup
               title="The Echelon Insider"
-              description="Receive curated Austin market intelligence, private opportunities, luxury listings, development trends, and notable local insights.\n\n"
+              description="Receive curated Austin market intelligence, private opportunities, luxury listings, development trends, and notable local insights."
               className="rounded-2xl py-8 px-4"
               compact
             />

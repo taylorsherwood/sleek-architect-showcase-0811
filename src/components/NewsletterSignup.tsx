@@ -16,7 +16,7 @@ const IVORY = "#F5F3EF";
 
 const NewsletterSignup: React.FC<NewsletterSignupProps> = ({
   title = "The Echelon Insider",
-  description = "Receive curated Austin market intelligence, private opportunities, luxury listings, development trends, and notable local insights.",
+  description = "No Spam. Unsubscribe at any time.",
   className = "",
   compact = false,
 }) => {
@@ -150,20 +150,6 @@ const NewsletterSignup: React.FC<NewsletterSignupProps> = ({
                 onBlur={(e) => (e.currentTarget.style.borderBottomColor = `${NAVY}33`)}
               />
 
-              <p
-                style={{
-                  fontFamily: '"Jost", sans-serif',
-                  fontSize: "0.75rem",
-                  fontWeight: 300,
-                  lineHeight: 1.6,
-                  color: `${NAVY}99`,
-                  textAlign: "left",
-                  margin: "0.25rem 0 0",
-                }}
-              >
-                Receive periodic market intelligence, private opportunities, and notable
-                Austin real estate updates. Unsubscribe at any time.
-              </p>
 
               {compact ? (
                 <button

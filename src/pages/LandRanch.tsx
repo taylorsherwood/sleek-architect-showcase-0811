@@ -1239,8 +1239,7 @@ const LandRanch = () => {
                 <p>
                   Raised with an appreciation for land, growth, and the opportunities that come from
                   seeing what others overlook, Taylor has built his career around helping clients
-                  identify value where vision and strategy intersect. Longtime friends still call him
-                  "Nash," a nickname that has followed him since high school, but clients know him for
+                  identify value where vision and strategy intersect. Clients know him for
                   a straightforward approach, deep market knowledge, and a willingness to dig into
                   the details that drive real-world outcomes.
                 </p>

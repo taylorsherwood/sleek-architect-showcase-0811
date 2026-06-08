@@ -395,7 +395,7 @@ const Reviews = () => {
                 Client Reviews
               </p>
               <h1 className="font-display font-normal text-architectural leading-[0.95] tracking-tight">
-                <span className="block text-5xl md:text-6xl lg:text-7xl">Taylor "nash"</span>
+                <span className="block text-5xl md:text-6xl lg:text-7xl">Taylor</span>
                 <span className="block italic text-5xl md:text-6xl lg:text-7xl mt-1">
                   Sherwood
                 </span>

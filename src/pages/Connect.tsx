@@ -72,7 +72,7 @@ const Connect = () => {
                     color: "hsl(233 50% 9%)",
                   }}
                 >
-                  Taylor "nash" Sherwood
+                  Taylor Sherwood
                 </h1>
 
                 <div

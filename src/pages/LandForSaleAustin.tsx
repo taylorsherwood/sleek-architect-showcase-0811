@@ -188,7 +188,7 @@ const LandForSaleAustin = () => {
                 Explore Land Opportunities in Austin
               </h2>
               <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Contact Taylor \"nash\" Sherwood for expert land advisory across the Austin metro and Texas Hill Country.
+                Contact Taylor Sherwood for expert land advisory across the Austin metro and Texas Hill Country.
               </p>
               <Link to="/contact" className="inline-block text-minimal bg-primary text-primary-foreground hover:bg-primary/90 px-10 py-4 transition-colors duration-300">
                 DISCUSS LAND OPPORTUNITIES

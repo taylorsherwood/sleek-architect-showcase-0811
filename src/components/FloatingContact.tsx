@@ -127,7 +127,7 @@ const FloatingContact = () => {
       {/* Modal */}
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogContent className="max-w-[380px] p-0 pt-[72px] border-none rounded-sm overflow-visible bg-background shadow-[0_30px_80px_-20px_hsl(var(--primary)/0.25),0_0_0_1px_hsl(var(--foreground)/0.04)] [&>button]:hidden">
-          <DialogTitle className="sr-only">Contact Taylor "nash" Sherwood</DialogTitle>
+          <DialogTitle className="sr-only">Contact Taylor Sherwood</DialogTitle>
 
           {/* Close */}
           <button
@@ -156,7 +156,7 @@ const FloatingContact = () => {
           {/* Content */}
           <div className="text-center px-10 pb-10 pt-4">
             <h3 className="font-display text-2xl font-light text-foreground tracking-[0.01em] leading-tight">
-              Taylor "nash" Sherwood
+              Taylor Sherwood
             </h3>
             <p className="text-[9.5px] tracking-[0.25em] uppercase text-[hsl(var(--gold))] mt-2 mb-6 font-normal">CONNECT WITH AN ADVISOR</p>
             <p className="text-muted-foreground text-sm leading-[1.75] mb-9 max-w-[270px] mx-auto font-light">Buying, selling, investing, or exploring off-market opportunities in Austin. I'd welcome the conversation.</p>

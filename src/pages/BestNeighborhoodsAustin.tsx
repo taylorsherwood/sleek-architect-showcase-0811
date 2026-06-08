@@ -245,7 +245,7 @@ const BestNeighborhoodsAustin = () => {
                   This guide covers Austin's best neighborhoods for luxury living, waterfront estates, walkable urban lifestyles, and real estate investment. Each neighborhood is evaluated based on home values, lifestyle amenities, schools, appreciation trends, and long-term demand fundamentals. The information reflects current market conditions and is intended to help buyers make informed decisions about where to live and invest in Austin.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  At Echelon Property Group, we specialize in helping buyers navigate Austin's most desirable neighborhoods. Our founder, Taylor \"nash\" Sherwood, is a Certified Luxury Home Marketing Specialist with deep expertise across the communities featured in this guide. Whether you are searching for an off-market estate, a waterfront retreat, or a strategic investment property, we provide the local knowledge and market access to help you find the right opportunity.
+                  At Echelon Property Group, we specialize in helping buyers navigate Austin's most desirable neighborhoods. Our founder, Taylor Sherwood, is a Certified Luxury Home Marketing Specialist with deep expertise across the communities featured in this guide. Whether you are searching for an off-market estate, a waterfront retreat, or a strategic investment property, we provide the local knowledge and market access to help you find the right opportunity.
                 </p>
               </div>
             </section>

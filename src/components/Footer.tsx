@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Instagram } from "lucide-react";
+import NewsletterSignup from "@/components/NewsletterSignup";
 
 const headingStyle: React.CSSProperties = {
   fontFamily: '"Jost", sans-serif',
@@ -24,6 +25,9 @@ const linkHoverClass = "block transition-colors duration-300 hover:text-white";
 const Footer = () => {
   return (
     <footer data-nav-dark-zone style={{ background: "#0C0F24", fontFamily: '"Jost", sans-serif', fontWeight: 300 }}>
+      {/* Newsletter signup — immediately above footer navigation */}
+      <NewsletterSignup className="py-16 md:py-24" />
+
       {/* Top border */}
       <div className="w-full h-px" style={{ background: "hsl(var(--primary))" }} />
 

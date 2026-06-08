@@ -10,6 +10,7 @@ import { seoBlogPosts } from "@/data/seoBlogPosts";
 import AuthorBio from "@/components/AuthorBio";
 import OptimizedImage from "@/components/OptimizedImage";
 import BlogCTA from "@/components/BlogCTA";
+import NewsletterSignup from "@/components/NewsletterSignup";
 import RelatedInsights from "@/components/RelatedInsights";
 import BlogContent, { extractFAQsFromContent } from "@/components/BlogContent";
 import CommunityBoundaryMap from "@/components/CommunityBoundaryMap";
@@ -226,6 +227,7 @@ const BlogPost = () => {
         </div>
       </article>
 
+      <NewsletterSignup className="py-20 md:py-28" />
       <BlogCTA />
       <RelatedInsights maxLinks={5} />
       <AboutBlock />

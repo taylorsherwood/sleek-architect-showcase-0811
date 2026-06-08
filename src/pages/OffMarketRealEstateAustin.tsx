@@ -11,6 +11,7 @@ import SmsConsent from "@/components/SmsConsent";
 import CinematicSections from "@/components/off-market/CinematicSections";
 import PrivateDistributionStrip from "@/components/private-distribution/PrivateDistributionStrip";
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from "@/components/ui/dialog";
+import NewsletterSignup from "@/components/NewsletterSignup";
 
 // Eagerly preload all hero & funnel media so it's ready before scroll
 import privateInventoryHero from "@/assets/hero-luxury-austin.webp";
@@ -418,6 +419,8 @@ const OffMarketRealEstateAustin = () => {
       {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
           CINEMATIC SECTIONS 2–7 (with form in Section 7)
       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
+      <NewsletterSignup className="py-20 md:py-28" />
+
       <CinematicSections formNode={formContent} />
 
       <PrivateDistributionStrip

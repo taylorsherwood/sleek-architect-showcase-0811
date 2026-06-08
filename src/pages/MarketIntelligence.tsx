@@ -11,6 +11,7 @@ import AgentIntelMarketSnapshot from "@/components/market-intel/AgentIntelMarket
 import RatesAffordability from "@/components/market-intel/RatesAffordability";
 import IntelligenceRoadmap from "@/components/market-intel/IntelligenceRoadmap";
 import MarketIntelHero from "@/components/market-intel/MarketIntelHero";
+import NewsletterSignup from "@/components/NewsletterSignup";
 
 const Footer = lazy(() => import("@/components/Footer"));
 
@@ -313,6 +314,8 @@ const MarketIntelligence = () => {
       </section>
 
       {/* Internal linking + Further reading */}
+      <NewsletterSignup className="py-20 md:py-28" />
+
       <section className="py-16 md:py-20 bg-[#faf9f6] dark:bg-[hsl(38_15%_12%/0.3)] border-y border-border/50" aria-labelledby="further-reading">
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto">

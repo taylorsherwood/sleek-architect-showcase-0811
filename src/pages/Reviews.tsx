@@ -379,7 +379,7 @@ const Reviews = () => {
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={organizationSchema} />
-      <SchemaMarkup schema={reviewSchema} />
+      
       <SchemaMarkup schema={breadcrumbSchema} />
       {faqSchema && <SchemaMarkup schema={faqSchema} />}
 

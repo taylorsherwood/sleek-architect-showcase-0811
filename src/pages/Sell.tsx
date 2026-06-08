@@ -132,7 +132,7 @@ const whySell = [
 {
   title: "Expert Negotiation",
   description:
-  "With hundreds of transactions closed and deep experience in Austin luxury real estate, Taylor "Nash" Sherwood delivers disciplined negotiation that consistently achieves above-market results for sellers."
+  "With hundreds of transactions closed and deep experience in Austin luxury real estate, Taylor \"Nash\" Sherwood delivers disciplined negotiation that consistently achieves above-market results for sellers."
 },
 {
   title: "Luxury Property Presentation",
@@ -381,7 +381,7 @@ const Sell = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Sell Your Austin Home"
-        description="Sell your Austin home for top dollar. Strategic marketing, expert negotiation, and luxury listing presentation from Taylor "Nash" Sherwood and Echelon Property Group."
+        description="Sell your Austin home for top dollar. Strategic marketing, expert negotiation, and luxury listing presentation from Taylor \"Nash\" Sherwood and Echelon Property Group."
         canonical="https://www.echelonpropertygroup.com/sell" />
       <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createBreadcrumbSchema([

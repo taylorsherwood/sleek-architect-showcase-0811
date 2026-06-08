@@ -261,7 +261,7 @@ const positioningTags = [
 const reviewSchema = {
   "@context": "https://schema.org",
   "@type": "RealEstateAgent",
-  name: "Taylor "Nash" Sherwood",
+  name: "Taylor \"Nash\" Sherwood",
   url: `${SITE}/reviews`,
   worksFor: {
     "@type": "Organization",
@@ -390,8 +390,8 @@ const Reviews = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Taylor "Nash" Sherwood Reviews | Austin Luxury Real Estate Advisor"
-        description="Read verified client reviews and experiences with Taylor "Nash" Sherwood, Austin Realtor specializing in luxury homes, off-market opportunities, land and ranch properties, and investment acquisitions."
+        title="Taylor \"Nash\" Sherwood Reviews | Austin Luxury Real Estate Advisor"
+        description="Read verified client reviews and experiences with Taylor \"Nash\" Sherwood, Austin Realtor specializing in luxury homes, off-market opportunities, land and ranch properties, and investment acquisitions."
         canonical="/reviews"
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
@@ -482,7 +482,7 @@ const Reviews = () => {
               <div className="relative aspect-[4/5] overflow-hidden">
                 <img
                   src={taylorHeadshot}
-                  alt="Taylor "Nash" Sherwood, Austin luxury real estate advisor and founder of Echelon Property Group"
+                  alt="Taylor \"Nash\" Sherwood, Austin luxury real estate advisor and founder of Echelon Property Group"
                   className="w-full h-full object-cover"
                   loading="eager"
                   decoding="async"
@@ -686,7 +686,7 @@ const Reviews = () => {
             <div className="relative mx-auto md:mx-0 w-[220px] md:w-[280px] aspect-[4/5] overflow-hidden bg-architectural/5">
               <img
                 src={taylorRanchHeadshot.url}
-                alt="Taylor "Nash" Sherwood, Austin Realtor and founder of Echelon Property Group"
+                alt="Taylor \"Nash\" Sherwood, Austin Realtor and founder of Echelon Property Group"
                 className="w-full h-full object-cover"
                 loading="lazy"
                 decoding="async"

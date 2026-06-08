@@ -163,7 +163,7 @@ const AdvisorSection = () => (
                 </p>
                 <p className="text-foreground/70 text-[16px] leading-[1.8]">
                   If you're looking for <em>access</em>, <em>clarity</em>, and <em>execution</em> at a higher level, you're ready to join the <em>upper echelon</em>. 
-                  You don't need more listings, you need a <em>smarter approach</em>.
+                  You don't need more listings, you need a <em>smarter approach</em>. &nbsp;
                 </p>
                  <p className="text-foreground/55 text-[15px] leading-[1.8] mt-4 font-serif italic whitespace-pre-wrap">
                    {"Buy. Sell. Invest.\n\n"}

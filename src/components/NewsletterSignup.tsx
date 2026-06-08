@@ -150,19 +150,6 @@ const NewsletterSignup: React.FC<NewsletterSignupProps> = ({
                 onBlur={(e) => (e.currentTarget.style.borderBottomColor = `${NAVY}33`)}
               />
 
-              <p
-                style={{
-                  fontFamily: '"Jost", sans-serif',
-                  fontSize: "0.75rem",
-                  fontWeight: 300,
-                  lineHeight: 1.6,
-                  color: `${NAVY}99`,
-                  textAlign: "left",
-                  margin: "0.25rem 0 0",
-                }}
-              >
-                  No Spam. Unsubscribe at any time.
-              </p>
 
               {compact ? (
                 <button

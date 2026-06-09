@@ -531,6 +531,31 @@ const BlogContent = ({ content, afterGlance, category, articleId }: BlogContentP
           default:
             return <MarkdownChunk key={idx} body={block.body} />;
         }
+        })();
+        const insertMidOne = idx === midOneAfter;
+        const insertMidTwo = idx === midTwoAfter;
+        if (!insertMidOne && !insertMidTwo) return rendered;
+        return (
+          <div key={`wrap-${idx}`}>
+            {rendered}
+            {insertMidOne && (
+              <InlineEditorialCTA
+                cta={pathway.mid[0]}
+                position="mid_1"
+                category={category || ""}
+                articleId={articleId}
+              />
+            )}
+            {insertMidTwo && (
+              <InlineEditorialCTA
+                cta={pathway.mid[1]}
+                position="mid_2"
+                category={category || ""}
+                articleId={articleId}
+              />
+            )}
+          </div>
+        );
       })}
     </div>
   );

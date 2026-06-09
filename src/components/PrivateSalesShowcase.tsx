@@ -10,6 +10,8 @@ import spanishOaksImage from "@/assets/spanish-oaks-private-sale.avif";
 import eastAustinImage from "@/assets/east-austin-commercial.jpg";
 import tarrytownAsset from "@/assets/tarrytown-private-sale.jpg.asset.json";
 const tarrytownImage = tarrytownAsset.url;
+import westlakeHillsPrivate from "@/assets/westlake-hills-private-sold.avif.asset.json";
+const westlakeHillsPrivateImage = westlakeHillsPrivate.url;
 
 /* ------------------------------------------------------------------ */
 /*  DATA, Edit this array to add / remove / update private sales      */
@@ -48,6 +50,14 @@ export const privateSales: PrivateSaleItem[] = [
     area: "SOUTHEAST AUSTIN",
     descriptor: "Commercial Property",
     label: "REPRESENTED BUYER",
+  },
+  {
+    image: westlakeHillsPrivateImage,
+    price: "$5,950,000",
+    address: "Address Withheld",
+    area: "WEST LAKE HILLS",
+    descriptor: "",
+    label: "REPRESENTED SELLER",
   },
   {
     image: tarrytownImage,

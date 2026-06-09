@@ -39,7 +39,7 @@ const listings = [
   baths: 5,
   sqft: "5,800",
   link: "#",
-  badgeLabel: "Luxury Listing",
+  badgeLabel: "LUXURY LISTING",
   isOffMarketCard: false
 }];
 

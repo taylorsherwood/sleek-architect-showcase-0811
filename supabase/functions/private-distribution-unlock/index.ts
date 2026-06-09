@@ -143,6 +143,42 @@ Deno.serve(async (req) => {
     });
   }
 
+  // ── Forward to site-wide Zapier lead pipeline ──────────────────
+  // Same webhook every other form uses (see src/lib/formUtils.ts).
+  // Fire-and-forget — never block token issuance on Zapier dispatch.
+  const ZAPIER_LEAD_WEBHOOK =
+    "https://hooks.zapier.com/hooks/catch/26916347/upj5fa0/";
+  try {
+    const zapPayload: Record<string, string> = {
+      name,
+      email,
+      phone: phone || "",
+      message: `Private Distribution access, ${title || edition.title}`,
+      source: "Private Distribution",
+      page: body.page_url || "",
+      page_url: body.page_url || "",
+      time: new Date().toISOString(),
+      submittedAt: new Date().toISOString(),
+      edition_slug: slug,
+      edition_title: title || edition.title || "",
+      fields_summary: `Edition: ${title || edition.title}\nEdition Slug: ${slug}`,
+      fields_json: JSON.stringify({
+        edition_slug: slug,
+        edition_title: title || edition.title,
+      }),
+    };
+    const zapRes = await fetch(ZAPIER_LEAD_WEBHOOK, {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8" },
+      body: new URLSearchParams(zapPayload).toString(),
+    });
+    if (!zapRes.ok) {
+      console.error(`[Zapier private-distribution] dispatch failed status=${zapRes.status}`);
+    }
+  } catch (e) {
+    console.error("[Zapier private-distribution] dispatch error", e);
+  }
+
   return new Response(
     JSON.stringify({
       ok: true,

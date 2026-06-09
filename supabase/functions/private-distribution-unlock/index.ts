@@ -29,6 +29,26 @@ const randomToken = (): string => {
     .join("");
 };
 
+const addZapierFieldAliases = (payload: Record<string, string>): Record<string, string> => {
+  const pageUrl = payload.page_url || payload.page || "";
+  const timestamp = payload.timestamp || payload.submittedAt || payload.time || "";
+
+  return {
+    ...payload,
+    page_url: pageUrl,
+    timestamp,
+    Name: payload.name || "",
+    Email: payload.email || "",
+    Phone: payload.phone || "",
+    Message: payload.message || "",
+    Source: payload.source || "",
+    Page: pageUrl,
+    Page_URL: pageUrl,
+    Time: payload.time || timestamp,
+    Timestamp: timestamp,
+  };
+};
+
 Deno.serve(async (req) => {
   if (req.method === "OPTIONS") {
     return new Response("ok", { headers: corsHeaders });
@@ -158,6 +178,7 @@ Deno.serve(async (req) => {
       page: body.page_url || "",
       page_url: body.page_url || "",
       time: new Date().toISOString(),
+      timestamp: new Date().toISOString(),
       submittedAt: new Date().toISOString(),
       edition_slug: slug,
       edition_title: title || edition.title || "",
@@ -170,7 +191,7 @@ Deno.serve(async (req) => {
     const zapRes = await fetch(ZAPIER_LEAD_WEBHOOK, {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8" },
-      body: new URLSearchParams(zapPayload).toString(),
+      body: new URLSearchParams(addZapierFieldAliases(zapPayload)).toString(),
     });
     if (!zapRes.ok) {
       console.error(`[Zapier private-distribution] dispatch failed status=${zapRes.status}`);

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { submitLeadToZapier } from "@/lib/formUtils";
 
 interface NewsletterSignupProps {
   title?: string;
@@ -38,6 +39,18 @@ const NewsletterSignup: React.FC<NewsletterSignupProps> = ({
         method: "POST",
         mode: "no-cors",
         body: formData,
+      });
+
+      // Also forward to the site-wide Zapier lead pipeline so newsletter
+      // signups land in the same CRM/notification flow as every other form.
+      // Fire-and-forget — Brevo subscription is the source of truth for the
+      // newsletter itself; Zapier dispatch failures must not block success.
+      const derivedName = email.split("@")[0]?.replace(/[._-]+/g, " ").trim() || "Newsletter Subscriber";
+      void submitLeadToZapier({
+        name: derivedName,
+        email,
+        message: "Newsletter signup, The Echelon Insider",
+        source: "Newsletter — The Echelon Insider",
       });
 
       setStatus("success");

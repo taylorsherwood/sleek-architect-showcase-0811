@@ -15,7 +15,7 @@ const listings = [
   baths: 4,
   sqft: "4,147",
   link: "https://www.bartoncreekvilla.com",
-  badgeLabel: "LUXE LISTING",
+  badgeLabel: "LUXURY LISTING",
   isOffMarketCard: false
 },
 {
@@ -39,7 +39,7 @@ const listings = [
   baths: 5,
   sqft: "5,800",
   link: "#",
-  badgeLabel: "Luxury Listing",
+  badgeLabel: "LUXURY LISTING",
   isOffMarketCard: false
 }];
 

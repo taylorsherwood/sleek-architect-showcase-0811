@@ -10,6 +10,8 @@ import spanishOaksImage from "@/assets/spanish-oaks-private-sale.avif";
 import eastAustinImage from "@/assets/east-austin-commercial.jpg";
 import tarrytownAsset from "@/assets/tarrytown-private-sale.jpg.asset.json";
 const tarrytownImage = tarrytownAsset.url;
+import westlakeHillsPrivate from "@/assets/westlake-hills-private-sold.avif.asset.json";
+const westlakeHillsPrivateImage = westlakeHillsPrivate.url;
 
 /* ------------------------------------------------------------------ */
 /*  DATA, Edit this array to add / remove / update private sales      */

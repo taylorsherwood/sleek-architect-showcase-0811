@@ -24,14 +24,14 @@ const properties = [
     subtitle: "4314 Gillis Street, 24-unit value-add multifamily, 78745.",
   },
   {
-    image: westlakeHillsPrivate.url,
-    address: "Address withheld",
-    location: "West Lake Hills",
-    price: "$5,950,000",
-    beds: 5, baths: 5, sqft: "—",
-    link: "/off-market-real-estate-austin",
-    badge: "PRIVATE LISTING",
-    sold: true,
+    image: sanJoseAve,
+    address: "10811 San Jose Ave",
+    location: "Austin, TX",
+    price: "$1,600,000",
+    beds: 0, baths: 0, sqft: "—",
+    link: "/listings",
+    badge: "COMMERCIAL LISTING",
+    subtitle: "10811 San Jose Ave, value-add commercial opportunity.",
   },
 ];
 

@@ -1,6 +1,8 @@
 import { lazy, Suspense, type ReactNode } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import InlineEditorialCTA from "@/components/blog/InlineEditorialCTA";
+import { pathwayForCategory } from "@/lib/articlePathways";
 
 const AgentIntelMarketSnapshot = lazy(
   () => import("@/components/market-intel/AgentIntelMarketSnapshot"),
@@ -19,6 +21,10 @@ interface BlogContentProps {
   content: string;
   /** Optional element rendered immediately after the first :::glance block. */
   afterGlance?: ReactNode;
+  /** Blog category — drives mid-article CTA selection. */
+  category?: string;
+  /** Article id — included on every CTA analytics event. */
+  articleId?: string;
 }
 
 /**
@@ -391,12 +397,46 @@ const IntelInsert = ({ children, tight = false }: { children: ReactNode; tight?:
 );
 
 
-const BlogContent = ({ content, afterGlance }: BlogContentProps) => {
+const BlogContent = ({ content, afterGlance, category, articleId }: BlogContentProps) => {
   const blocks = parseBlocks(content);
   let glanceRendered = false;
+
+  // ── Mid-article CTA insertion ──────────────────────────────────────
+  // Pick two markdown blocks (skip glance/intel/cta/faq/stat-block) whose
+  // cumulative text length crosses ~30% and ~70% of total prose. Skip
+  // entirely if content is short or if the author already placed `:::cta`
+  // blocks (those win — don't double up).
+  const pathway = pathwayForCategory(category);
+  const authorPlacedCTA = blocks.some((b) => b.type === "cta");
+  const eligibleIdx = new Set<number>();
+  blocks.forEach((b, i) => {
+    if (b.type === "markdown" && b.body.trim().length > 0) eligibleIdx.add(i);
+  });
+  const totalLen = blocks.reduce(
+    (sum, b) => (eligibleIdx.has(blocks.indexOf(b)) ? sum + b.body.length : sum),
+    0,
+  );
+  let midOneAfter = -1;
+  let midTwoAfter = -1;
+  if (!authorPlacedCTA && totalLen >= 3500 && eligibleIdx.size >= 4) {
+    let cumulative = 0;
+    blocks.forEach((b, i) => {
+      if (!eligibleIdx.has(i)) return;
+      cumulative += b.body.length;
+      const pct = cumulative / totalLen;
+      if (midOneAfter === -1 && pct >= 0.3) midOneAfter = i;
+      if (midTwoAfter === -1 && pct >= 0.7 && i !== midOneAfter) midTwoAfter = i;
+    });
+    // Never insert at the very last block — ContinueExploring sits there.
+    const lastEligible = Math.max(...Array.from(eligibleIdx));
+    if (midTwoAfter === lastEligible) midTwoAfter = -1;
+    if (midOneAfter === lastEligible) midOneAfter = -1;
+  }
+
   return (
     <div className="prose prose-lg max-w-none">
       {blocks.map((block, idx) => {
+        const rendered = (() => {
         switch (block.type) {
           case "glance": {
             const isFirstGlance = !glanceRendered;
@@ -491,6 +531,31 @@ const BlogContent = ({ content, afterGlance }: BlogContentProps) => {
           default:
             return <MarkdownChunk key={idx} body={block.body} />;
         }
+        })();
+        const insertMidOne = idx === midOneAfter;
+        const insertMidTwo = idx === midTwoAfter;
+        if (!insertMidOne && !insertMidTwo) return rendered;
+        return (
+          <div key={`wrap-${idx}`}>
+            {rendered}
+            {insertMidOne && (
+              <InlineEditorialCTA
+                cta={pathway.mid[0]}
+                position="mid_1"
+                category={category || ""}
+                articleId={articleId}
+              />
+            )}
+            {insertMidTwo && (
+              <InlineEditorialCTA
+                cta={pathway.mid[1]}
+                position="mid_2"
+                category={category || ""}
+                articleId={articleId}
+              />
+            )}
+          </div>
+        );
       })}
     </div>
   );

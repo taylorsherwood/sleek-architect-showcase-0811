@@ -9,10 +9,11 @@ import { blogPosts } from "@/data/blogPosts";
 import { seoBlogPosts } from "@/data/seoBlogPosts";
 import AuthorBio from "@/components/AuthorBio";
 import OptimizedImage from "@/components/OptimizedImage";
-import BlogCTA from "@/components/BlogCTA";
+
 import NewsletterSignup from "@/components/NewsletterSignup";
 import RelatedInsights from "@/components/RelatedInsights";
 import BlogContent, { extractFAQsFromContent } from "@/components/BlogContent";
+import ContinueExploring from "@/components/blog/ContinueExploring";
 import CommunityBoundaryMap from "@/components/CommunityBoundaryMap";
 
 /** Posts that should display a community boundary map below the hero image. */
@@ -180,6 +181,8 @@ const BlogPost = () => {
 
             <BlogContent
               content={post.content}
+              category={post.category}
+              articleId={post.id}
               afterGlance={
                 BLOG_BOUNDARY_MAPS[post.id] ? (
                   <div className="-mx-6 md:mx-0 mt-4 mb-12">
@@ -191,7 +194,9 @@ const BlogPost = () => {
                 ) : null
               }
             />
-            
+
+            <ContinueExploring category={post.category} articleId={post.id} />
+
             <AuthorBio />
             
             {/* Related Posts */}
@@ -227,8 +232,7 @@ const BlogPost = () => {
         </div>
       </article>
 
-      {/* Newsletter is rendered globally in the Footer to avoid duplicate CTAs */}
-      <BlogCTA />
+      {/* Newsletter renders in Footer. Generic BlogCTA replaced by ContinueExploring above. */}
       <RelatedInsights maxLinks={5} />
       <AboutBlock />
       <Suspense fallback={<div className="min-h-[100px]" />}><Footer /></Suspense>

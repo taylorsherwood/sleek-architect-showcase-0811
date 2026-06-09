@@ -519,6 +519,13 @@ const CommunityPage = () => {
               </h2>
               <ContentBlock text={community.lifestyle} currentSlug={community.slug} />
             </section>
+
+            {/* Community-scoped listing alert. Email-first capture for early
+                access to new and off-market inventory in this neighborhood. */}
+            <CommunityListingAlert
+              communityName={community.name}
+              communitySlug={community.slug}
+            />
           </div>
         </div>
 

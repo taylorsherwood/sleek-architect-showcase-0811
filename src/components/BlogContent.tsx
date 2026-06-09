@@ -397,12 +397,46 @@ const IntelInsert = ({ children, tight = false }: { children: ReactNode; tight?:
 );
 
 
-const BlogContent = ({ content, afterGlance }: BlogContentProps) => {
+const BlogContent = ({ content, afterGlance, category, articleId }: BlogContentProps) => {
   const blocks = parseBlocks(content);
   let glanceRendered = false;
+
+  // ── Mid-article CTA insertion ──────────────────────────────────────
+  // Pick two markdown blocks (skip glance/intel/cta/faq/stat-block) whose
+  // cumulative text length crosses ~30% and ~70% of total prose. Skip
+  // entirely if content is short or if the author already placed `:::cta`
+  // blocks (those win — don't double up).
+  const pathway = pathwayForCategory(category);
+  const authorPlacedCTA = blocks.some((b) => b.type === "cta");
+  const eligibleIdx = new Set<number>();
+  blocks.forEach((b, i) => {
+    if (b.type === "markdown" && b.body.trim().length > 0) eligibleIdx.add(i);
+  });
+  const totalLen = blocks.reduce(
+    (sum, b) => (eligibleIdx.has(blocks.indexOf(b)) ? sum + b.body.length : sum),
+    0,
+  );
+  let midOneAfter = -1;
+  let midTwoAfter = -1;
+  if (!authorPlacedCTA && totalLen >= 3500 && eligibleIdx.size >= 4) {
+    let cumulative = 0;
+    blocks.forEach((b, i) => {
+      if (!eligibleIdx.has(i)) return;
+      cumulative += b.body.length;
+      const pct = cumulative / totalLen;
+      if (midOneAfter === -1 && pct >= 0.3) midOneAfter = i;
+      if (midTwoAfter === -1 && pct >= 0.7 && i !== midOneAfter) midTwoAfter = i;
+    });
+    // Never insert at the very last block — ContinueExploring sits there.
+    const lastEligible = Math.max(...Array.from(eligibleIdx));
+    if (midTwoAfter === lastEligible) midTwoAfter = -1;
+    if (midOneAfter === lastEligible) midOneAfter = -1;
+  }
+
   return (
     <div className="prose prose-lg max-w-none">
       {blocks.map((block, idx) => {
+        const rendered = (() => {
         switch (block.type) {
           case "glance": {
             const isFirstGlance = !glanceRendered;

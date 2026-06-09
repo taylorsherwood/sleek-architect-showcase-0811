@@ -92,6 +92,26 @@ export interface SubmitResult {
   error?: string;
 }
 
+function addZapierFieldAliases(payload: Record<string, string>): Record<string, string> {
+  const pageUrl = payload.page_url || payload.page || "";
+  const timestamp = payload.timestamp || payload.submittedAt || payload.time || "";
+
+  return {
+    ...payload,
+    page_url: pageUrl,
+    timestamp,
+    Name: payload.name || "",
+    Email: payload.email || "",
+    Phone: payload.phone || "",
+    Message: payload.message || "",
+    Source: payload.source || "",
+    Page: pageUrl,
+    Page_URL: pageUrl,
+    Time: payload.time || timestamp,
+    Timestamp: timestamp,
+  };
+}
+
 /**
  * Submits a lead to the Zapier webhook with a complete, normalized JSON
  * payload. Always sends the seven canonical fields the Zap expects:
@@ -129,6 +149,7 @@ export async function submitLeadToZapier(
     page,
     page_url: page, // duplicate under explicit name in case Zap mapping uses page_url
     time,
+    timestamp: submittedAt,
     submittedAt,
   };
 
@@ -162,6 +183,8 @@ export async function submitLeadToZapier(
   }
   payload.fields_summary = summaryLines.join("\n");
   payload.fields_json = JSON.stringify(fields);
+
+  const zapierPayload = addZapierFieldAliases(payload);
 
   // ── HARD VALIDATION GUARD ──────────────────────────────────────
   // Block empty/incomplete payloads from ever reaching Zapier.
@@ -208,7 +231,7 @@ export async function submitLeadToZapier(
 
     const { data: response, error } = await supabase.functions.invoke("submit-lead", {
       body: {
-        payload,
+        payload: zapierPayload,
         webhookUrl,
         extra: extraWithClickIds,
         utm: getUtmFromUrl(),

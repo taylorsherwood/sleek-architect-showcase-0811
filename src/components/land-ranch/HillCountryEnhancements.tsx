@@ -4,7 +4,8 @@ import parallaxOne from "@/assets/lake-austin-waterfront.jpg";
 import parallaxTwo from "@/assets/land-ranch-editorial-v2.jpg";
 import liveWaterImg from "@/assets/lake-austin-waterfront.jpg";
 import recreationalImg from "@/assets/land-ranch-editorial.jpg";
-import legacyImg from "@/assets/land-ranch-home-intro.jpg";
+import legacyImgAsset from "@/assets/land-ranch-home-intro.webp.asset.json";
+const legacyImg = legacyImgAsset.url;
 import hillCountryVideo from "@/assets/hill-country-cinematic.mp4.asset.json";
 
 const LandRanchMap = lazy(() => import("@/components/LandRanchMap"));

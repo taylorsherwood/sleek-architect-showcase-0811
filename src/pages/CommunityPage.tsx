@@ -44,6 +44,8 @@ import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createFAQSchema, createBreadcrumbSchema, createPlaceSchema } from "@/components/SchemaMarkup";
 import { communityPages } from "@/data/communityData";
 import { autoLink } from "@/lib/autoLinker";
+import CommunityListingAlert from "@/components/community/CommunityListingAlert";
+import CommunityNextSteps from "@/components/community/CommunityNextSteps";
 
 const SITE_URL = "https://www.echelonpropertygroup.com";
 
@@ -517,6 +519,13 @@ const CommunityPage = () => {
               </h2>
               <ContentBlock text={community.lifestyle} currentSlug={community.slug} />
             </section>
+
+            {/* Community-scoped listing alert. Email-first capture for early
+                access to new and off-market inventory in this neighborhood. */}
+            <CommunityListingAlert
+              communityName={community.name}
+              communitySlug={community.slug}
+            />
           </div>
         </div>
 
@@ -665,6 +674,12 @@ const CommunityPage = () => {
                 </div>
               </section>
             )}
+
+            {/* Community-specific buyer resources, complements Related Communities below. */}
+            <CommunityNextSteps
+              communityName={community.name}
+              communitySlug={community.slug}
+            />
 
             {/* Related Communities */}
             {related.length > 0 && (

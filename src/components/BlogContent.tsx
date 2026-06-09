@@ -1,6 +1,8 @@
 import { lazy, Suspense, type ReactNode } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import InlineEditorialCTA from "@/components/blog/InlineEditorialCTA";
+import { pathwayForCategory } from "@/lib/articlePathways";
 
 const AgentIntelMarketSnapshot = lazy(
   () => import("@/components/market-intel/AgentIntelMarketSnapshot"),
@@ -19,6 +21,10 @@ interface BlogContentProps {
   content: string;
   /** Optional element rendered immediately after the first :::glance block. */
   afterGlance?: ReactNode;
+  /** Blog category — drives mid-article CTA selection. */
+  category?: string;
+  /** Article id — included on every CTA analytics event. */
+  articleId?: string;
 }
 
 /**

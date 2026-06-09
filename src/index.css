@@ -162,13 +162,8 @@ section.bg-muted::after {
   background: linear-gradient(to top, hsl(40 33% 97% / 0.22) 0%, hsl(40 33% 97% / 0) 100%);
 }
 
-/* Single near-invisible anchor line at the top of light sections,
-   gives editorial structure without a visible border. */
-section.bg-background,
-section.bg-secondary,
-section.bg-muted {
-  box-shadow: inset 0 1px 0 0 hsl(233 47% 9% / 0.04);
-}
+/* Section anchor hairline removed — was producing visible divider lines
+   between consecutive same-background sections (e.g. on /sell). */
 
 /* Keep section content above the fade layer without breaking decorative
    absolute-positioned backgrounds like watermarks. */

@@ -675,6 +675,12 @@ const CommunityPage = () => {
               </section>
             )}
 
+            {/* Community-specific buyer resources, complements Related Communities below. */}
+            <CommunityNextSteps
+              communityName={community.name}
+              communitySlug={community.slug}
+            />
+
             {/* Related Communities */}
             {related.length > 0 && (
               <section>

@@ -197,7 +197,8 @@ Deno.serve(async (req) => {
     // without requiring a code change here.
     const canonicalKeys = new Set([
       "name", "email", "phone", "message", "source", "page", "page_url",
-      "time", "submittedAt", "fields_summary", "fields_json",
+      "time", "timestamp", "submittedAt", "fields_summary", "fields_json",
+      "Name", "Email", "Phone", "Message", "Source", "Page", "Page_URL", "Time", "Timestamp",
     ]);
     const extraForDb: Record<string, unknown> = {};
     for (const [key, value] of Object.entries(body?.extra || {})) {

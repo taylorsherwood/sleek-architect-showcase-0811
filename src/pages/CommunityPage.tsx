@@ -44,6 +44,8 @@ import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createFAQSchema, createBreadcrumbSchema, createPlaceSchema } from "@/components/SchemaMarkup";
 import { communityPages } from "@/data/communityData";
 import { autoLink } from "@/lib/autoLinker";
+import CommunityListingAlert from "@/components/community/CommunityListingAlert";
+import CommunityNextSteps from "@/components/community/CommunityNextSteps";
 
 const SITE_URL = "https://www.echelonpropertygroup.com";
 

@@ -263,11 +263,22 @@ Deno.serve(async (req) => {
     let zapierStatus: "sent" | "failed" = "sent";
     let zapierError: string | null = null;
 
+    const zapierBody = new URLSearchParams(payload).toString();
+    // Diagnostic: log the EXACT shape sent to Zapier (keys + value lengths,
+    // never raw PII) so we can confirm fields are populated end-to-end.
+    const fieldShape: Record<string, number> = {};
+    for (const [k, v] of Object.entries(payload)) fieldShape[k] = (v || "").length;
+    console.log("[Zapier dispatch] field lengths", {
+      source: payload.source,
+      bodyBytes: zapierBody.length,
+      fieldShape,
+    });
+
     try {
       const zapierRes = await fetch(webhookUrl, {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8" },
-        body: new URLSearchParams(payload).toString(),
+        body: zapierBody,
       });
 
       if (!zapierRes.ok) {

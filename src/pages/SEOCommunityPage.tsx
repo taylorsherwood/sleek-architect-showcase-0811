@@ -7,6 +7,8 @@ import { seoCommunityPages } from "@/data/seoCommunityData";
 import AboutBlock from "@/components/AboutBlock";
 import CommunityBoundaryMap from "@/components/CommunityBoundaryMap";
 import CommunityGuideCTA from "@/components/CommunityGuideCTA";
+import CommunityListingAlert from "@/components/community/CommunityListingAlert";
+import CommunityNextSteps from "@/components/community/CommunityNextSteps";
 
 const Footer = lazy(() => import("@/components/Footer"));
 const RealScoutListings = lazy(() => import("@/components/RealScoutListings"));
@@ -125,6 +127,12 @@ const SEOCommunityPage = () => {
                 ))}
               </div>
             </section>
+
+            {/* Community-scoped listing alert. */}
+            <CommunityListingAlert
+              communityName={community.name}
+              communitySlug={community.slug}
+            />
 
             {/* Homes for Sale, RealScout Widget */}
             <section>

@@ -220,6 +220,12 @@ const SEOCommunityPage = () => {
               </div>
             </section>
 
+            {/* Community-specific buyer resources. */}
+            <CommunityNextSteps
+              communityName={community.name}
+              communitySlug={community.slug}
+            />
+
             {/* CTA */}
             <section className="text-center py-12 bg-secondary -mx-6 px-6">
               <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-4">

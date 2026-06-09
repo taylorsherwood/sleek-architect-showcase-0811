@@ -946,16 +946,16 @@ const Sell = () => {
       </Suspense>
 
       {/* Read more reviews link */}
-      <div className="bg-background pb-20 md:pb-24 -mt-16 md:-mt-20">
+      <section className="bg-background pt-4 pb-20 md:pb-24">
         <div className="container mx-auto px-6 text-center">
           <Link
             to="/reviews"
-            className="inline-block font-display text-[15px] md:text-base text-foreground border-b border-gold pb-1 hover:text-gold transition-colors duration-300"
+            className="inline-block font-display text-base md:text-lg text-architectural border-b border-gold pb-1 hover:text-gold transition-colors duration-300"
           >
             Read More Reviews →
           </Link>
         </div>
-      </div>
+      </section>
 
       {/* ── Full-Spectrum Real Estate Advisory ── */}
       <section className="py-20 bg-background">

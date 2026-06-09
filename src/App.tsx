@@ -7,6 +7,7 @@ import AppRoutes from "./AppRoutes";
 import SchemaMarkup, { organizationSchema, websiteSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
 import { AuthProvider } from "@/hooks/useAuth";
 import { useAnalytics } from "@/hooks/useAnalytics";
+import MobileStickyActionBar from "@/components/MobileStickyActionBar";
 
 const browserQueryClient = new QueryClient();
 
@@ -40,6 +41,7 @@ const App = () => (
           <main id="main-content">
             <AppRoutes />
           </main>
+          <MobileStickyActionBar />
         </AuthProvider>
       </BrowserRouter>
   </AppShell>

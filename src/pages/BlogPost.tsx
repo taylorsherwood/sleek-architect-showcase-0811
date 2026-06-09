@@ -13,6 +13,7 @@ import BlogCTA from "@/components/BlogCTA";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import RelatedInsights from "@/components/RelatedInsights";
 import BlogContent, { extractFAQsFromContent } from "@/components/BlogContent";
+import ContinueExploring from "@/components/blog/ContinueExploring";
 import CommunityBoundaryMap from "@/components/CommunityBoundaryMap";
 
 /** Posts that should display a community boundary map below the hero image. */
@@ -180,6 +181,8 @@ const BlogPost = () => {
 
             <BlogContent
               content={post.content}
+              category={post.category}
+              articleId={post.id}
               afterGlance={
                 BLOG_BOUNDARY_MAPS[post.id] ? (
                   <div className="-mx-6 md:mx-0 mt-4 mb-12">
@@ -191,7 +194,9 @@ const BlogPost = () => {
                 ) : null
               }
             />
-            
+
+            <ContinueExploring category={post.category} articleId={post.id} />
+
             <AuthorBio />
             
             {/* Related Posts */}

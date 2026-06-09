@@ -103,6 +103,26 @@ type LeadPayload = {
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+function addZapierFieldAliases(payload: Record<string, string>): Record<string, string> {
+  const pageUrl = payload.page_url || payload.page || "";
+  const timestamp = payload.timestamp || payload.submittedAt || payload.time || "";
+
+  return {
+    ...payload,
+    page_url: pageUrl,
+    timestamp,
+    Name: payload.name || "",
+    Email: payload.email || "",
+    Phone: payload.phone || "",
+    Message: payload.message || "",
+    Source: payload.source || "",
+    Page: pageUrl,
+    Page_URL: pageUrl,
+    Time: payload.time || timestamp,
+    Timestamp: timestamp,
+  };
+}
+
 function json(body: Record<string, unknown>, status = 200) {
   return new Response(JSON.stringify(body), {
     status,
@@ -141,7 +161,9 @@ Deno.serve(async (req) => {
       message: clean(incoming.message),
       source: clean(incoming.source) || "Website Form",
       page: clean(incoming.page),
+      page_url: clean(incoming.page_url) || clean(incoming.page),
       time: clean(incoming.time),
+      timestamp: clean(incoming.timestamp) || clean(incoming.submittedAt) || clean(incoming.time),
     };
 
     for (const [key, value] of Object.entries(incoming)) {
@@ -175,7 +197,8 @@ Deno.serve(async (req) => {
     // without requiring a code change here.
     const canonicalKeys = new Set([
       "name", "email", "phone", "message", "source", "page", "page_url",
-      "time", "submittedAt", "fields_summary", "fields_json",
+      "time", "timestamp", "submittedAt", "fields_summary", "fields_json",
+      "Name", "Email", "Phone", "Message", "Source", "Page", "Page_URL", "Time", "Timestamp",
     ]);
     const extraForDb: Record<string, unknown> = {};
     for (const [key, value] of Object.entries(body?.extra || {})) {
@@ -263,11 +286,12 @@ Deno.serve(async (req) => {
     let zapierStatus: "sent" | "failed" = "sent";
     let zapierError: string | null = null;
 
-    const zapierBody = new URLSearchParams(payload).toString();
+    const zapierPayload = addZapierFieldAliases(payload);
+    const zapierBody = new URLSearchParams(zapierPayload).toString();
     // Diagnostic: log the EXACT shape sent to Zapier (keys + value lengths,
     // never raw PII) so we can confirm fields are populated end-to-end.
     const fieldShape: Record<string, number> = {};
-    for (const [k, v] of Object.entries(payload)) fieldShape[k] = (v || "").length;
+    for (const [k, v] of Object.entries(zapierPayload)) fieldShape[k] = (v || "").length;
     console.log("[Zapier dispatch] field lengths", {
       source: payload.source,
       bodyBytes: zapierBody.length,

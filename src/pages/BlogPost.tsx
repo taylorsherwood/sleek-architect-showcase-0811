@@ -232,8 +232,7 @@ const BlogPost = () => {
         </div>
       </article>
 
-      {/* Newsletter is rendered globally in the Footer to avoid duplicate CTAs */}
-      <BlogCTA />
+      {/* Newsletter renders in Footer. Generic BlogCTA replaced by ContinueExploring above. */}
       <RelatedInsights maxLinks={5} />
       <AboutBlock />
       <Suspense fallback={<div className="min-h-[100px]" />}><Footer /></Suspense>

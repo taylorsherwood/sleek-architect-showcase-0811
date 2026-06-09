@@ -193,6 +193,19 @@ export async function submitLeadToZapier(
       ...(fbc ? { fbc } : {}),
     };
 
+    // Diagnostic: log payload key shape (NOT raw PII) so we can verify in the
+    // browser console that every canonical field is populated before submit.
+    if (typeof console !== "undefined") {
+      const shape: Record<string, number> = {};
+      for (const [k, v] of Object.entries(payload)) shape[k] = (v || "").length;
+      console.info("[Lead submit] dispatch", {
+        source: payload.source,
+        page: payload.page,
+        shape,
+        extraKeys: Object.keys(extraWithClickIds),
+      });
+    }
+
     const { data: response, error } = await supabase.functions.invoke("submit-lead", {
       body: {
         payload,

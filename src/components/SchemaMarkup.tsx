@@ -95,6 +95,37 @@ export const organizationSchema = {
   "sameAs": sameAs,
 };
 
+const knowsAbout = [
+  "Luxury Real Estate",
+  "Residential Real Estate",
+  "Land Development",
+  "Austin Texas Real Estate",
+  "Commercial Real Estate",
+  "Investment Property",
+  "Off-Market Real Estate",
+  "Buyer Representation",
+  "Seller Representation",
+];
+
+const credentials = [
+  {
+    "@type": "EducationalOccupationalCredential" as const,
+    "credentialCategory": "Professional Certification",
+    "name": "Certified Luxury Home Marketing Specialist (CLHMS)",
+  },
+  {
+    "@type": "EducationalOccupationalCredential" as const,
+    "credentialCategory": "Real Estate License",
+    "name": "Texas Real Estate License",
+    "identifier": "734520",
+    "recognizedBy": {
+      "@type": "Organization" as const,
+      "name": "Texas Real Estate Commission",
+      "url": "https://www.trec.texas.gov",
+    },
+  },
+];
+
 export const realEstateAgentSchema = {
   "@context": "https://schema.org",
   "@type": "RealEstateAgent",
@@ -121,13 +152,10 @@ export const realEstateAgentSchema = {
   "areaServed": areasServed,
   "openingHoursSpecification": [openingHoursSpec],
   "priceRange": "$$$$",
+  "knowsAbout": knowsAbout,
   "sameAs": sameAs,
   "parentOrganization": { "@id": `${SITE}/#organization` },
-  "hasCredential": {
-    "@type": "EducationalOccupationalCredential",
-    "credentialCategory": "Professional Certification",
-    "name": "Certified Luxury Home Marketing Specialist (CLHMS)",
-  },
+  "hasCredential": credentials,
   "employee": {
     "@type": "Person",
     "@id": `${SITE}/#taylor`,
@@ -147,27 +175,10 @@ export const taylorSherwoodSchema = {
   "telephone": "+1-512-661-3843",
   "email": "info@echelonpropertygroup.com",
   "image": HEADSHOT,
-  "worksFor": {
-    "@type": "Organization",
-    "@id": `${SITE}/#organization`,
-    "name": "Echelon Property Group",
-    "url": SITE,
-  },
+  "worksFor": { "@id": `${SITE}/#organization` },
   "address": { ...address },
-  "hasCredential": {
-    "@type": "EducationalOccupationalCredential",
-    "credentialCategory": "Professional Certification",
-    "name": "Certified Luxury Home Marketing Specialist (CLHMS)",
-  },
-  "knowsAbout": [
-    "Luxury Real Estate",
-    "Residential Real Estate",
-    "Land Development",
-    "Austin Texas Real Estate",
-    "Commercial Real Estate",
-    "Investment Property",
-    "Off-Market Real Estate",
-  ],
+  "hasCredential": credentials,
+  "knowsAbout": knowsAbout,
   "sameAs": sameAs,
 };
 

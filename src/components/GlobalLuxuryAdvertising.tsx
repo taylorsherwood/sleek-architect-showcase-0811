@@ -502,13 +502,13 @@ const GlobalLuxuryAdvertising = () => {
       {/* ═══════════════════════════════════════════════════════════════ */}
       {/*  5 · AUTHORITY STAT STRIP                                      */}
       {/* ═══════════════════════════════════════════════════════════════ */}
-      <section className="py-12 bg-secondary border-y border-border/40" ref={stats.ref}>
+      <section className="py-12 bg-secondary" ref={stats.ref}>
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4">
             {authorityStats.map((s, i) =>
               <div
                 key={i}
-                className="text-center md:border-r last:border-0 border-border/40"
+                className="text-center"
                 style={revealStyle(stats.visible, i * 120)}>
                 <p
                   className="text-[11px] uppercase font-medium text-muted-foreground"

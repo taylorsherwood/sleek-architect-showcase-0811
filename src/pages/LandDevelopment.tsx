@@ -538,7 +538,7 @@ const LandDevelopment = () => {
                     className="inline-flex min-h-[48px] items-center justify-center px-6 py-3 text-white transition-colors duration-300 hover:bg-[hsl(var(--gold-deep))]"
                     style={{ ...labelStyle, backgroundColor: GOLD }}
                   >
-                    Request Diligence Package
+                    REQUEST OM
                   </Link>
                   <Link
                     to="/listings"

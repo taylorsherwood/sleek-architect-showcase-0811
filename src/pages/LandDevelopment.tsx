@@ -21,6 +21,7 @@ import mixedUseImg from "@/assets/mixed-use.webp.asset.json";
 import dataCenterImg from "@/assets/data-center-site.jpg.asset.json";
 import buildToRentImg from "@/assets/build-to-rent.jpg.asset.json";
 import corridorImg from "@/assets/land-development-corridor.jpg";
+import sanJoseAve from "@/assets/commercial-san-jose-ave.jpg";
 
 
 const Footer = lazy(() => import("@/components/Footer"));

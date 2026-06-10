@@ -428,6 +428,134 @@ const LandDevelopment = () => {
 
       <div className="h-16 md:h-24" aria-hidden="true" />
 
+      {/* ── FEATURED LAND LISTING ───────────────────────── */}
+      <section className="bg-background">
+        <div className="container mx-auto px-6 md:px-12">
+          <div className="max-w-[1200px] mx-auto">
+            <div className="mb-10 md:mb-14">
+              <p className="mb-4" style={{ ...labelStyle, color: GOLD }}>
+                Featured Land Listing
+              </p>
+              <h2
+                className="text-foreground font-normal leading-[1.08]"
+                style={{
+                  fontFamily: "'Cinzel', serif",
+                  fontSize: "clamp(1.6rem, 3.2vw, 2.4rem)",
+                }}
+              >
+                Currently Available
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+              <div className="lg:col-span-7">
+                <Link to="/listings" className="block group overflow-hidden">
+                  <div className="relative aspect-[4/3] overflow-hidden bg-secondary">
+                    <img
+                      src={sanJoseAve}
+                      alt="10811 San Jose Ave, Del Valle TX, 3.06 acres redevelopment land"
+                      loading="lazy"
+                      decoding="async"
+                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.03]"
+                    />
+                  </div>
+                </Link>
+              </div>
+
+              <div className="lg:col-span-5">
+                <p className="mb-4" style={{ ...labelStyle, color: GOLD }}>
+                  Development Land &mdash; Del Valle, TX
+                </p>
+                <h3
+                  className="text-foreground font-normal leading-[1.1] mb-6"
+                  style={{
+                    fontFamily: "'Cinzel', serif",
+                    fontSize: "clamp(1.5rem, 2.6vw, 2.1rem)",
+                  }}
+                >
+                  10811 San Jose Ave
+                </h3>
+                <p
+                  className="text-foreground/72 leading-[1.75] mb-8"
+                  style={{ fontFamily: "'Jost', sans-serif", fontSize: "1.04rem" }}
+                >
+                  3.06-acre redevelopment parcel with existing mobile homes and
+                  zero zoning restrictions. Positioned for ground-up multifamily,
+                  mixed-use, or commercial development in the high-growth Del
+                  Valle corridor.
+                </p>
+
+                <div className="grid grid-cols-2 gap-6 mb-10 pt-6 border-t border-foreground/10">
+                  <div>
+                    <p className="mb-2" style={{ ...labelStyle, color: GOLD, fontSize: "0.6rem" }}>
+                      Price
+                    </p>
+                    <p
+                      className="text-foreground font-normal"
+                      style={{ fontFamily: "'Cinzel', serif", fontSize: "1.25rem" }}
+                    >
+                      $1,600,000
+                    </p>
+                  </div>
+                  <div>
+                    <p className="mb-2" style={{ ...labelStyle, color: GOLD, fontSize: "0.6rem" }}>
+                      Acreage
+                    </p>
+                    <p
+                      className="text-foreground font-normal"
+                      style={{ fontFamily: "'Cinzel', serif", fontSize: "1.25rem" }}
+                    >
+                      3.06 Acres
+                    </p>
+                  </div>
+                  <div>
+                    <p className="mb-2" style={{ ...labelStyle, color: GOLD, fontSize: "0.6rem" }}>
+                      Asset Type
+                    </p>
+                    <p
+                      className="text-foreground/80"
+                      style={{ fontFamily: "'Jost', sans-serif", fontSize: "0.98rem" }}
+                    >
+                      Redevelopment Land
+                    </p>
+                  </div>
+                  <div>
+                    <p className="mb-2" style={{ ...labelStyle, color: GOLD, fontSize: "0.6rem" }}>
+                      Zoning
+                    </p>
+                    <p
+                      className="text-foreground/80"
+                      style={{ fontFamily: "'Jost', sans-serif", fontSize: "0.98rem" }}
+                    >
+                      No Restrictions
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                  <Link
+                    to="/contact"
+                    className="inline-flex min-h-[48px] items-center justify-center px-6 py-3 text-white transition-colors duration-300 hover:bg-[hsl(var(--gold-deep))]"
+                    style={{ ...labelStyle, backgroundColor: GOLD }}
+                  >
+                    Request Diligence Package
+                  </Link>
+                  <Link
+                    to="/listings"
+                    className="inline-flex min-h-[48px] items-center justify-center px-6 py-3 text-foreground border border-foreground/30 hover:bg-foreground/5 transition-colors duration-300"
+                    style={labelStyle}
+                  >
+                    View All Listings
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className="h-16 md:h-24" aria-hidden="true" />
+
       {/* ── SECTION 2: WHAT CAN THIS PROPERTY BECOME ───────────────── */}
       <section className="bg-background">
         <div className="container mx-auto px-6 md:px-12">

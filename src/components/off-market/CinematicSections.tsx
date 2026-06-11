@@ -10,7 +10,8 @@ import desktopNote from "@/assets/testimonial-westlake-living-room.webp";
 
 import clarksvilleImg from "@/assets/off-market-reveal-estate.webp";
 import taylorSignature from "@/assets/taylor-sherwood-signature.png";
-import testimonialSplitImg from "@/assets/off-market-hero-pool.jpg.asset.json";
+import testimonialSplitImgAsset from "@/assets/off-market-hero-pool.jpg.asset.json";
+const testimonialSplitImg = testimonialSplitImgAsset.url;
 import austinSkylineParallax from "@/assets/austin-skyline-parallax.webp";
 
 gsap.registerPlugin(ScrollTrigger);

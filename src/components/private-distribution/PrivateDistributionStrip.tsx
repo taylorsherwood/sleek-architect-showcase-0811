@@ -28,7 +28,7 @@ const PrivateDistributionStrip = ({
   to = "/private-distribution",
 }: PrivateDistributionStripProps) => {
   const isNavy = variant === "navy";
-  const bg = isNavy ? "#0C0F24" : "#F5F3EF";
+  const bg = isNavy ? "hsl(var(--primary))" : "#F5F3EF";
   const textColor = isNavy ? "rgba(250,248,244,0.92)" : "#0C0F24";
   const mutedColor = isNavy ? "rgba(250,248,244,0.65)" : "rgba(12,15,36,0.7)";
   const rule = "rgba(184,160,109,0.55)";

@@ -744,7 +744,7 @@ const CinematicSections = ({ formNode }: Props) => {
       {/* ── Section 7: Form ────────────────────── */}
       <section
         id="section-7-form"
-        className="form-section relative w-full py-12 md:py-16 px-8 overflow-hidden"
+        className="form-section relative w-full pt-24 md:pt-32 pb-12 md:pb-16 px-8 overflow-hidden"
         style={{
           background:
             "hsl(var(--primary))",
@@ -759,11 +759,11 @@ const CinematicSections = ({ formNode }: Props) => {
               See you on the inside,
             </h2>
           </div>
-          <div className="form-field flex justify-center mb-1">
+          <div className="form-field flex justify-center mb-2">
             <img
               src={taylorSignature}
               alt="Taylor Sherwood signature"
-              className="h-10 md:h-14 w-auto"
+              className="h-20 md:h-28 w-auto"
               decoding="async"
             />
           </div>

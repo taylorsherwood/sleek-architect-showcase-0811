@@ -573,6 +573,15 @@ const CinematicSections = ({ formNode }: Props) => {
             aria-hidden="true"
             className="split-cover-image w-full h-full object-cover will-change-transform"
             decoding="async"
+            style={{ filter: "brightness(0.88) saturate(0.92) contrast(1.02)" }}
+          />
+          {/* Subtle vignette to lift the centered logo */}
+          <div
+            className="absolute inset-0 pointer-events-none"
+            style={{
+              background:
+                "radial-gradient(ellipse at center bottom, rgba(12,15,36,0.35) 0%, rgba(12,15,36,0.12) 35%, rgba(12,15,36,0) 65%)",
+            }}
           />
           {/* Centered logo (top half visible via parent clip) */}
           <img
@@ -594,6 +603,14 @@ const CinematicSections = ({ formNode }: Props) => {
             aria-hidden="true"
             className="split-cover-image w-full h-full object-cover will-change-transform"
             decoding="async"
+            style={{ filter: "brightness(0.88) saturate(0.92) contrast(1.02)" }}
+          />
+          <div
+            className="absolute inset-0 pointer-events-none"
+            style={{
+              background:
+                "radial-gradient(ellipse at center top, rgba(12,15,36,0.35) 0%, rgba(12,15,36,0.12) 35%, rgba(12,15,36,0) 65%)",
+            }}
           />
           <img
             src={echelonSplitLogo}

@@ -312,9 +312,12 @@ const CinematicSections = ({ formNode }: Props) => {
       const formTl = gsap.timeline({
         scrollTrigger: {
           trigger: ".form-section",
-          start: "top 85%",
-          end: "top 30%",
+          start: "top top",
+          end: "+=200%",
+          pin: true,
+          pinSpacing: true,
           scrub: 0.8,
+          anticipatePin: 1,
           fastScrollEnd: true,
         },
       });
@@ -341,7 +344,8 @@ const CinematicSections = ({ formNode }: Props) => {
           ease: "power3.out",
           duration: 0.9,
           force3D: true,
-        }, 0.45);
+        }, 0.45)
+        .to({}, { duration: 1.5 });
     }, root);
 
     return () => {

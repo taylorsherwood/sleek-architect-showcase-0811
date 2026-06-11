@@ -751,24 +751,23 @@ const CinematicSections = ({ formNode }: Props) => {
         }}
       >
         <div className="max-w-2xl mx-auto">
-          <div className="form-field text-center mb-2">
-            <p className="text-[hsl(var(--gold))] mb-3 font-bold" style={labelStyle}>
+          <div className="form-field text-center mb-1">
+            <p className="text-[hsl(var(--gold))] mb-2 font-bold" style={labelStyle}>
               ECHELON INSIDER
             </p>
-            <h2 className="font-display text-3xl md:text-4xl font-light text-white leading-tight">
+            <h2 className="font-display text-2xl md:text-3xl font-light text-white leading-tight">
               See you on the inside,
             </h2>
           </div>
-          <div className="form-field flex justify-center mb-2">
+          <div className="form-field flex justify-center mb-1">
             <img
               src={taylorSignature}
               alt="Taylor Sherwood signature"
-              className="h-14 md:h-20 w-auto"
+              className="h-10 md:h-14 w-auto"
               decoding="async"
             />
           </div>
-          <div className="h-3 md:h-4" aria-hidden="true" />
-          <div className="form-panel border border-white/10 p-6 md:p-8 bg-white/[0.02] will-change-transform">
+          <div className="form-panel border border-white/10 p-4 md:p-6 bg-white/[0.02] will-change-transform">
             {formNode}
           </div>
         </div>

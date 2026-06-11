@@ -744,31 +744,31 @@ const CinematicSections = ({ formNode }: Props) => {
       {/* ── Section 7: Form ────────────────────── */}
       <section
         id="section-7-form"
-        className="form-section relative w-full py-32 px-8 overflow-hidden"
+        className="form-section relative w-full py-12 md:py-16 px-8 overflow-hidden"
         style={{
           background:
             "hsl(var(--primary))",
         }}
       >
         <div className="max-w-2xl mx-auto">
-          <div className="form-field text-center mb-4">
-            <p className="text-[hsl(var(--gold))] mb-4 font-bold" style={labelStyle}>
+          <div className="form-field text-center mb-2">
+            <p className="text-[hsl(var(--gold))] mb-3 font-bold" style={labelStyle}>
               ECHELON INSIDER
             </p>
-            <h2 className="font-display text-4xl md:text-5xl font-light text-white leading-tight">
+            <h2 className="font-display text-3xl md:text-4xl font-light text-white leading-tight">
               See you on the inside,
             </h2>
           </div>
-          <div className="form-field flex justify-center mb-4">
+          <div className="form-field flex justify-center mb-2">
             <img
               src={taylorSignature}
               alt="Taylor Sherwood signature"
-              className="h-20 md:h-28 w-auto"
+              className="h-14 md:h-20 w-auto"
               decoding="async"
             />
           </div>
-          <div className="h-6 md:h-8" aria-hidden="true" />
-          <div className="form-panel border border-white/10 p-10 bg-white/[0.02] will-change-transform">
+          <div className="h-3 md:h-4" aria-hidden="true" />
+          <div className="form-panel border border-white/10 p-6 md:p-8 bg-white/[0.02] will-change-transform">
             {formNode}
           </div>
         </div>

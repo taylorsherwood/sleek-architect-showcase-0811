@@ -251,8 +251,8 @@ const OffMarketRealEstateAustin = () => {
       >
         {loading ? "Submitting…" : "Request Private Access →"}
       </button>
-      <p className="text-center text-white/30 text-[10px] leading-relaxed">
-        By submitting this form, you agree to receive text messages from Echelon Property Group regarding your inquiry. Message/data rates may apply. Reply STOP to opt out.
+      <p className="text-center text-white/30 text-[10px] leading-relaxed whitespace-pre-line">
+        {"\n"}By submitting this form, you agree to receive text messages from Echelon Property Group regarding your inquiry.{"\n"}Message/data rates may apply. Reply STOP to opt out.
       </p>
     </form>
   );

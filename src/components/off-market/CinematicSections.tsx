@@ -476,14 +476,14 @@ const CinematicSections = ({ formNode }: Props) => {
               "
             </span>
             <p
-              className="relative font-display italic text-white/90 leading-[1.35] mb-7"
+              className="relative font-display italic text-white/90 leading-[1.35] mb-7 whitespace-pre-line"
               style={{ fontSize: "clamp(1.35rem, 5.5vw, 1.7rem)" }}
             >
-              Taylor brought us a Westlake home before it ever hit the market. We never would have seen it without him.
+              "Taylor brought us a Westlake home{"\n"}before it ever hit the market.{"\n"}We never would have seen it without him."
             </p>
             <div className="h-[1px] w-10 bg-[hsl(var(--gold))]/60 mb-4" />
-            <p className="text-[hsl(var(--gold))] text-[0.65rem] tracking-[0.3em] uppercase font-sans font-medium">
-              Private Buyer · West lake Hills
+            <p className="text-[hsl(var(--gold))] text-[0.65rem] tracking-[0.3em] uppercase font-sans font-medium whitespace-pre-line">
+              {"\n"}PRIVATE BUYER, WEST LAKE HILLS
             </p>
           </div>
         </section>
@@ -711,10 +711,10 @@ const CinematicSections = ({ formNode }: Props) => {
               <span className="testimonial-line block will-change-transform">We never would have seen it without him."</span>
             </p>
             <p
-              className="testimonial-attribution text-[hsl(var(--gold))] tracking-[0.28em] uppercase font-sans will-change-transform"
+              className="testimonial-attribution text-[hsl(var(--gold))] tracking-[0.28em] uppercase font-sans will-change-transform whitespace-pre-line"
               style={{ fontSize: "0.72rem" }}
             >
-             , Private Buyer, West lake Hills
+              {"\n"}PRIVATE BUYER, WEST LAKE HILLS
             </p>
           </div>
         </div>

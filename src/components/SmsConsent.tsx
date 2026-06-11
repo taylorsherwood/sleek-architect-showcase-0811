@@ -8,15 +8,9 @@ interface SmsConsentProps {
  * that collect a phone number. Inherits color from parent (uses opacity),
  * so it works on both light and dark form backgrounds without restyling.
  */
-const SmsConsent = ({ className = "", align = "center" }: SmsConsentProps) => (
-  <p
-    className={`text-[11px] leading-relaxed opacity-60 ${
-      align === "center" ? "text-center" : "text-left"
-    } ${className}`}
-  >
-    By submitting this form, you agree to receive text messages from Echelon
-    Property Group regarding your inquiry. Message/data rates may apply. Reply
-    STOP to opt out.
+const SmsConsent = ({ className = "" }: SmsConsentProps) => (
+  <p className={`text-[11px] leading-relaxed opacity-60 ${className}`}>
+    {"\n"}
   </p>
 );
 

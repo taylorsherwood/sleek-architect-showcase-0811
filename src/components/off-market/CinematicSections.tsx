@@ -681,7 +681,7 @@ const CinematicSections = ({ formNode }: Props) => {
             className="bridge-eyebrow mb-6 font-bold opacity-0"
             style={{ ...labelStyle, color: "#b9a06c" }}
           >
-            THE INSIDE TRACK
+            THE ECHELON INSIDER ADVANTAGE
           </p>
           <h2
             className="bridge-headline font-display font-light text-white leading-[1.05] max-w-[18ch] opacity-0"

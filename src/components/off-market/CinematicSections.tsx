@@ -3,7 +3,8 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Lenis from "lenis";
 
-import westlakeDusk from "@/assets/community-westlake-hills-hero.webp";
+import westlakeDuskAsset from "@/assets/off-market-bridge.avif.asset.json";
+const westlakeDusk = westlakeDuskAsset.url;
 import privateInventoryHero from "@/assets/hero-luxury-austin.webp";
 
 import desktopNote from "@/assets/testimonial-westlake-living-room.webp";

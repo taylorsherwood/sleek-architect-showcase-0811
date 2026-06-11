@@ -300,7 +300,7 @@ const OffMarketRealEstateAustin = () => {
       <section className="relative min-h-[100svh] md:min-h-[720px] lg:h-[820px] xl:h-[860px] 2xl:h-[880px] flex items-center pt-14">
         <div className="absolute inset-0">
           <OptimizedImage
-            src={heroImage}
+            src={heroImage.url}
             alt="Luxury Austin estate representing exclusive off-market real estate opportunities"
             title="Off-market homes in Austin Texas, private listings not on Zillow or MLS"
             width={1920}

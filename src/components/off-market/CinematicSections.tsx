@@ -485,7 +485,7 @@ const CinematicSections = ({ formNode }: Props) => {
               className="relative font-display italic text-white/90 leading-[1.35] mb-7 whitespace-pre-line"
               style={{ fontSize: "clamp(1.35rem, 5.5vw, 1.7rem)" }}
             >
-              "Taylor brought us a Westlake home{"\n"}before it ever hit{"\n"}the market.{"\n"}We never would have{"\n"}seen it without him."
+              "Taylor brought us a{"\n"}West lake home{"\n"}before it ever hit{"\n"}the market.{"\n"}We never would have{"\n"}seen it without him."
             </p>
             <div className="h-[1px] w-10 bg-[hsl(var(--gold))]/60 mb-4" />
             <p className="text-[hsl(var(--gold))] text-[0.65rem] tracking-[0.3em] uppercase font-sans font-medium whitespace-pre-line">
@@ -727,7 +727,8 @@ const CinematicSections = ({ formNode }: Props) => {
               className="font-display italic text-white/90 font-light leading-[1.3] mb-10"
               style={{ fontSize: "clamp(1.4rem, 2.2vw, 2.1rem)" }}
             >
-              <span className="testimonial-line block will-change-transform">"Taylor brought us a Westlake home</span>
+              <span className="testimonial-line block will-change-transform">"Taylor brought us a</span>
+              <span className="testimonial-line block will-change-transform">West lake home</span>
               <span className="testimonial-line block will-change-transform">before it ever hit</span>
               <span className="testimonial-line block will-change-transform">the market.</span>
               <span className="testimonial-line block will-change-transform">We never would have</span>

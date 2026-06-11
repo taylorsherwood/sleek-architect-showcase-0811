@@ -492,7 +492,7 @@ const CinematicSections = ({ formNode }: Props) => {
         <section id="section-7-form" className="py-20 px-6 bg-primary">
           <div className="max-w-xl mx-auto">
             <p className="text-[hsl(var(--gold))] mb-4 font-bold text-center" style={labelStyle}>
-              ECHELON INSIDER
+              WELCOME TO THE UPPER ECHELON
             </p>
             <h2
               className="font-display font-light text-[#F5F1EA] mb-4 text-center leading-[1.1] tracking-tight"
@@ -753,7 +753,7 @@ const CinematicSections = ({ formNode }: Props) => {
         <div className="max-w-2xl mx-auto">
           <div className="form-field text-center mb-1">
             <p className="text-[hsl(var(--gold))] mb-2 font-bold" style={labelStyle}>
-              ECHELON INSIDER
+              WELCOME TO THE UPPER ECHELON
             </p>
             <h2 className="font-display text-2xl md:text-3xl font-light text-white leading-tight">
               See you on the inside,

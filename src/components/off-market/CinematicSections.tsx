@@ -11,6 +11,8 @@ import desktopNote from "@/assets/testimonial-westlake-living-room.webp";
 
 import clarksvilleImg from "@/assets/off-market-reveal-estate.webp";
 import taylorSignature from "@/assets/taylor-sherwood-signature.png";
+import echelonSplitLogoAsset from "@/assets/echelon-split-logo.png.asset.json";
+const echelonSplitLogo = echelonSplitLogoAsset.url;
 import testimonialSplitImgAsset from "@/assets/off-market-hero-pool.jpg.asset.json";
 const testimonialSplitImg = testimonialSplitImgAsset.url;
 import austinSkylineParallax from "@/assets/austin-skyline-parallax.webp";
@@ -572,6 +574,14 @@ const CinematicSections = ({ formNode }: Props) => {
             className="split-cover-image w-full h-full object-cover will-change-transform"
             decoding="async"
           />
+          {/* Centered logo (top half visible via parent clip) */}
+          <img
+            src={echelonSplitLogo}
+            alt=""
+            aria-hidden="true"
+            className="split-logo absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[140px] md:w-[180px] h-auto pointer-events-none select-none"
+            decoding="async"
+          />
         </div>
         {/* Bottom half */}
         <div
@@ -583,6 +593,13 @@ const CinematicSections = ({ formNode }: Props) => {
             alt=""
             aria-hidden="true"
             className="split-cover-image w-full h-full object-cover will-change-transform"
+            decoding="async"
+          />
+          <img
+            src={echelonSplitLogo}
+            alt=""
+            aria-hidden="true"
+            className="split-logo absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[140px] md:w-[180px] h-auto pointer-events-none select-none"
             decoding="async"
           />
         </div>

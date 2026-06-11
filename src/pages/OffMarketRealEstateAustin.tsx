@@ -160,9 +160,9 @@ const OffMarketRealEstateAustin = () => {
   };
 
   const inputClass =
-    "w-full bg-transparent border-b border-white/20 focus:border-[hsl(var(--gold))] outline-none py-3 text-white font-sans transition-colors placeholder:text-white/30";
+    "w-full bg-transparent border-b border-white/20 focus:border-[hsl(var(--gold))] outline-none py-1.5 text-white font-sans transition-colors placeholder:text-white/30";
   const selectBase =
-    "w-full bg-transparent border-b border-white/20 focus:border-[hsl(var(--gold))] outline-none py-3 font-sans transition-colors appearance-none cursor-pointer [&>option]:bg-primary [&>option]:text-white";
+    "w-full bg-transparent border-b border-white/20 focus:border-[hsl(var(--gold))] outline-none py-1.5 font-sans transition-colors appearance-none cursor-pointer [&>option]:bg-primary [&>option]:text-white";
   const selectClassFor = (value: string) =>
     `${selectBase} ${value ? "text-white" : "text-[hsl(var(--gold))]"}`;
 
@@ -173,12 +173,12 @@ const OffMarketRealEstateAustin = () => {
       <p className="text-white/60">We'll reach out within 24 hours with curated off-market opportunities.</p>
     </div>
   ) : (
-    <form onSubmit={handleSubmit} className="space-y-5">
+    <form onSubmit={handleSubmit} className="space-y-2.5">
       <div>
         <label htmlFor="name" className="block text-white/40 mb-1.5" style={labelStyle}>Full Name</label>
         <input id="name" type="text" required maxLength={100} value={form.name} onChange={(e) => setForm(prev => ({ ...prev, name: e.target.value }))} className={inputClass} placeholder="Your name" />
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-5 gap-y-2.5">
         <div>
           <label htmlFor="email" className="block text-white/40 mb-1.5" style={labelStyle}>Email</label>
           <input id="email" type="email" required maxLength={255} value={form.email} onChange={(e) => setForm(prev => ({ ...prev, email: e.target.value }))} className={inputClass} placeholder="you@email.com" />
@@ -188,7 +188,7 @@ const OffMarketRealEstateAustin = () => {
           <input id="phone" type="tel" required maxLength={20} value={form.phone} onChange={(e) => setForm(prev => ({ ...prev, phone: formatPhoneNumber(e.target.value) }))} className={inputClass} placeholder="(512) 000-0000" />
         </div>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-5 gap-y-2.5">
         <div>
           <label htmlFor="interest" className="block text-white/40 mb-1.5" style={labelStyle}>Looking For</label>
           <select id="interest" value={form.interest} onChange={(e) => setForm(prev => ({ ...prev, interest: e.target.value }))} className={selectClassFor(form.interest)}>
@@ -223,13 +223,13 @@ const OffMarketRealEstateAustin = () => {
       </div>
       <div>
         <label htmlFor="notes" className="block text-white/40 mb-1.5" style={labelStyle}>Anything Else? <span className="normal-case tracking-normal text-white/25">(optional)</span></label>
-        <textarea id="notes" maxLength={1000} rows={2} value={form.notes} onChange={(e) => setForm(prev => ({ ...prev, notes: e.target.value }))} className={`${inputClass} resize-none`} placeholder="Neighborhoods, property type, investment goals…" />
+        <textarea id="notes" maxLength={1000} rows={1} value={form.notes} onChange={(e) => setForm(prev => ({ ...prev, notes: e.target.value }))} className={`${inputClass} resize-none`} placeholder="Neighborhoods, property type, investment goals…" />
       </div>
       <SmsConsent className="text-white mt-2" />
       <button
         type="submit"
         disabled={loading}
-        className="w-full inline-flex items-center justify-center transition-all duration-300 ease-out disabled:opacity-50 active:scale-[0.98] mt-1 text-[0.7rem] md:text-[0.9rem] py-3 md:py-5 px-6 md:px-10 tracking-[0.18em] md:tracking-[0.2em]"
+        className="w-full inline-flex items-center justify-center transition-all duration-300 ease-out disabled:opacity-50 active:scale-[0.98] mt-1 text-[0.7rem] md:text-[0.85rem] py-2.5 md:py-3 px-6 md:px-10 tracking-[0.18em] md:tracking-[0.2em]"
         style={{
           fontFamily: '"Jost", sans-serif',
           fontWeight: 400,

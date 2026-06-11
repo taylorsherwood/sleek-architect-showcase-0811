@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import OptimizedImage from "@/components/OptimizedImage";
 import SchemaMarkup, { createBreadcrumbSchema, createFAQSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
-import heroImage from "@/assets/hero-austin-skyline-sunset.webp";
+import heroImage from "@/assets/off-market-hero-pool.jpg.asset.json";
 import echelonLogo from "@/assets/echelon-logo-gold.png";
 import echelonMark from "@/assets/echelon-mark-gold.png";
 import { formatPhoneNumber, submitLeadToZapier } from "@/lib/formUtils";

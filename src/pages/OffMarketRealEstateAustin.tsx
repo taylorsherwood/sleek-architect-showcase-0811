@@ -423,7 +423,7 @@ const OffMarketRealEstateAustin = () => {
         variant="navy"
         eyebrow="Private Distribution"
         headline="Monthly market intelligence for qualified buyers and sellers."
-        body="A confidential brief covering Austin's most guarded zip codes, off-market trades, properties whispered before listing, and the strategic posture of principals currently active in the field."
+        body="A confidential brief covering Austin's most guarded zip codes, off-market trades, properties whispered before listing, and the strategic posture of principals currently active in the field.&nbsp;"
         ctaLabel="Access the Current Edition"
       />
 

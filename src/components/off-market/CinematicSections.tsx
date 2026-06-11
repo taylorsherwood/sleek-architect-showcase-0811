@@ -579,7 +579,7 @@ const CinematicSections = ({ formNode }: Props) => {
             src={echelonSplitLogo}
             alt=""
             aria-hidden="true"
-            className="split-logo absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[140px] md:w-[180px] h-auto pointer-events-none select-none"
+            className="split-logo absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[200px] md:w-[280px] h-auto pointer-events-none select-none"
             decoding="async"
           />
         </div>
@@ -599,7 +599,7 @@ const CinematicSections = ({ formNode }: Props) => {
             src={echelonSplitLogo}
             alt=""
             aria-hidden="true"
-            className="split-logo absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[140px] md:w-[180px] h-auto pointer-events-none select-none"
+            className="split-logo absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[200px] md:w-[280px] h-auto pointer-events-none select-none"
             decoding="async"
           />
         </div>

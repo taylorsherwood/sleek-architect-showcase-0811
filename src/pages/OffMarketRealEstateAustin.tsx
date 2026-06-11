@@ -221,10 +221,6 @@ const OffMarketRealEstateAustin = () => {
           <option value="6+ months">6+ months</option>
         </select>
       </div>
-      <div>
-        <label htmlFor="notes" className="block text-white/40 mb-1.5" style={labelStyle}>Anything Else? <span className="normal-case tracking-normal text-white/25">(optional)</span></label>
-        <textarea id="notes" maxLength={1000} rows={1} value={form.notes} onChange={(e) => setForm(prev => ({ ...prev, notes: e.target.value }))} className={`${inputClass} resize-none`} placeholder="Neighborhoods, property type, investment goals…" />
-      </div>
       <SmsConsent className="text-white mt-2" />
       <button
         type="submit"

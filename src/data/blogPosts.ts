@@ -31,6 +31,7 @@ import blogLakeAustinVsTravis from "@/assets/blog/lake-austin-vs-lake-travis-wat
 import blogMovingFromNYCToAustin from "@/assets/blog/moving-from-new-york-to-austin.webp.asset.json";
 import blogExclusiveRepresentation from "@/assets/blog/exclusive-real-estate-representation-austin.avif.asset.json";
 import blogIntermediaryTexas from "@/assets/blog/intermediary-texas-real-estate.webp.asset.json";
+import blogHighEndHomeValuation from "@/assets/blog/high-end-home-valuation-austin-luxury.jpg.asset.json";
 
 
 

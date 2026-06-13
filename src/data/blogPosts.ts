@@ -81,6 +81,9 @@ The consequences of getting valuation wrong at this level are significant. Overp
 
 This article is for buyers and sellers who want to understand why high-end home valuation is structurally complicated, not just anecdotally tricky. Understanding the underlying problems is the first step toward making better decisions, whether you are preparing to list a property or evaluating one to purchase.
 
+:::intel-gauge
+:::
+
 ## Where Standard Appraisal Methods Hit Their Limits
 
 The sales comparison approach is the foundation of residential appraisal. An appraiser identifies recent sales of similar properties, adjusts for differences, and arrives at an estimated value. It is a sound methodology when the inputs are reliable. At the luxury tier, those inputs are often unreliable or simply absent.

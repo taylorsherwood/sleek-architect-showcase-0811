@@ -312,6 +312,10 @@ Accessing exclusive properties in Austin requires a fundamentally different appr
 The seven strategies outlined here are not theoretical. They reflect how my clients and I actually navigate Austin's luxury segment. The common thread across all of them is this: access is earned before the search begins, not discovered during it.
 
 If you are serious about finding a home in Austin that matches your criteria, the next step is a focused conversation. <a href="/contact" class="${LINK}">Start a private buyer consultation</a> with Echelon Property Group, or <a href="/off-market-real-estate-austin" class="${LINK}">see how we source off-market Austin homes</a> across Barton Creek, Tarrytown, West Lake Hills, Rollingwood, and Lake Austin.
+
+---
+
+*Sources: All figures throughout this article are drawn from <a href="https://www.unlockmls.org" target="_blank" rel="noopener" class="${LINK}">Unlock MLS</a> via MLS Grid, trailing 12 months ending May 2026.*
 `,
   },
   {

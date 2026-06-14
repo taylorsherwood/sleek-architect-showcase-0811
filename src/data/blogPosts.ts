@@ -107,7 +107,7 @@ Here is the catch that gets lost in the headlines: Texas law lets that "somethin
 Because the law requires a written agreement either way, the meaningful choice is which one you sign.
 
 :::glance
-What you get | With a buyer representation agreement | With a showing-only form
+What you get | BUYER REPRESENTATION AGREEMENT | SHOWING-ONLY FORM
 Legal status | The agent legally represents you and owes you fiduciary duties | The agent represents no one and owes you no fiduciary duties
 Advice on price, value, terms | Can advise you on price, value, terms, and strategy | Cannot give opinions or advice on the property or the transaction
 Negotiation | Negotiates on your behalf | Cannot negotiate for you

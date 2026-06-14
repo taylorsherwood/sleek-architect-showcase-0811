@@ -33,6 +33,7 @@ import blogExclusiveRepresentation from "@/assets/blog/exclusive-real-estate-rep
 import blogIntermediaryTexas from "@/assets/blog/intermediary-texas-real-estate.webp.asset.json";
 import blogHighEndHomeValuation from "@/assets/blog/high-end-home-valuation-austin-luxury.jpg.asset.json";
 import blogExclusivePropertiesAustin from "@/assets/blog/off-market-luxury-homes-austin.jpg.asset.json";
+import blogBuyerRepresentationAgreement from "@/assets/blog/buyer-representation-agreement-texas.jpg.asset.json";
 
 
 
@@ -60,6 +61,115 @@ export interface BlogPost {
 const LINK = "text-foreground underline hover:text-muted-foreground";
 
 export const blogPosts: BlogPost[] = [
+  {
+    id: "buyer-representation-agreement-texas",
+    title: "Do You Really Need a Buyer Representation Agreement? A Texas Buyer's Guide for 2026",
+    metaTitle: "Do You Need a Buyer Representation Agreement? (Texas 2026)",
+    excerpt: "In Texas, a written buyer agreement is required by law before touring a home. Here's why a buyer representation agreement protects you, and what to check first.",
+    author: "Taylor Sherwood",
+    date: "2026-06-14",
+    readTime: "9 MIN READ",
+    category: "BUYER ADVISORY",
+    image: blogBuyerRepresentationAgreement.url,
+    heroImage: blogBuyerRepresentationAgreement.url,
+    imageAlt: "Two people at a wooden table reviewing and signing a real estate contract, with a small model house, keys, and a pen, representing a buyer signing a buyer representation agreement in Texas",
+    imageCaption: "In Texas, the signature comes before the showing. The form you sign decides whether the agent at the table is your advocate or simply your guide.",
+    content: `
+
+
+Here is the part most buyers do not realize until they are standing on a doorstep: in Texas, you are going to sign a written agreement before an agent unlocks the front door. That is not a sales tactic. As of 2026, it is state law.
+
+So the real question is not whether you need a buyer representation agreement. The question is what kind of agreement you want your name on. One version makes the agent your advocate, legally bound to protect your interests. The other simply opens the door and hands you a brochure. This guide explains the difference, why it matters more than ever, and exactly what to look for before you sign.
+
+:::stat-block
+title: Quick answer
+• Yes. In Texas, a written buyer agreement is now required by law before an agent can show you a home. A buyer representation agreement is the version that makes that agent your <a href="/about" class="${LINK}">fiduciary</a>, legally obligated to act in your best interest, negotiate on your behalf, keep your information confidential, and disclose exactly what they are paid. The alternative, a showing-only form, gives you access to the property but no advice, no advocacy, and no one on your side of the table.
+:::
+
+## What is a buyer representation agreement?
+
+A buyer representation agreement is a written contract between you and a real estate broker that does three things. It establishes that the broker legally represents you and not the seller, it defines the services the broker will provide, and it sets out how the broker is paid. In Texas, the standard form is the <a href="https://www.texasrealestate.com" target="_blank" rel="noopener" class="${LINK}">Texas REALTORS</a> Residential Buyer/Tenant Representation Agreement, often called the TXR 1501, and your local board, such as the Austin Board of REALTORS, publishes its own version as well.
+
+Signing it is the moment an agent stops being a friendly stranger with MLS access and becomes your fiduciary. That word matters. A fiduciary owes you the highest duties the law recognizes: loyalty, full disclosure, confidentiality, and the obligation to put your interests ahead of their own. Without an agreement, none of that is guaranteed.
+
+## Do I have to sign one before touring a home in Texas?
+
+Short version: yes, in almost every case.
+
+Two things changed the rules. First, the <a href="https://www.nar.realtor/the-facts" target="_blank" rel="noopener" class="${LINK}">National Association of REALTORS</a> settlement took effect on August 17, 2024, requiring agents who use the MLS to have a written agreement with a buyer before touring a home, whether in person or on a live video tour. Then Texas went further and wrote the requirement into state law. Under the Texas Occupations Code, an agent working with a prospective buyer of residential property must enter into a written agreement before showing any property, or, if no property is shown, before presenting an offer on your behalf. The Information About Brokerage Services disclosure published by the <a href="https://www.trec.texas.gov" target="_blank" rel="noopener" class="${LINK}">Texas Real Estate Commission</a> was also updated effective January 1, 2026 to reflect the new rules.
+
+A few honest caveats. Simply walking through a public open house or asking an agent about their services does not require an agreement. The requirement also applies to residential buyers specifically. It does not apply to commercial purchasers or to tenants. But if you are buying a home and want an agent to show it to you, expect to sign something first.
+
+Here is the catch that gets lost in the headlines: Texas law lets that "something" take one of two forms.
+
+## Representation vs. showing-only: the difference that actually matters
+
+Because the law requires a written agreement either way, the meaningful choice is which one you sign.
+
+:::glance
+What you get | With a buyer representation agreement | With a showing-only form
+Legal status | The agent legally represents you and owes you fiduciary duties | The agent represents no one and owes you no fiduciary duties
+Advice on price, value, terms | Can advise you on price, value, terms, and strategy | Cannot give opinions or advice on the property or the transaction
+Negotiation | Negotiates on your behalf | Cannot negotiate for you
+Confidentiality | Keeps your financial position and motivations confidential | No duty of confidentiality
+Scope of service | Provides full brokerage services through closing | Provides access to the property and little else
+:::
+
+A showing-only form, known in Texas as the Unrepresented Customer Showing Form, is a compliance tool. It satisfies the law and unlocks the door, and that is roughly where its usefulness ends. The agent cannot tell you whether the home is overpriced, cannot flag a red flag buried in the disclosures, and cannot argue your case when it is time to make an offer. On the largest purchase of most people's lives, that is a great deal to give up in order to avoid a signature.
+
+## Isn't this just locking me in to benefit the agent?
+
+This is the most common objection, and it deserves a straight answer. A representation agreement creates obligations running in both directions, and most of the new ones run toward you.
+
+The moment you sign, the agent takes on enforceable duties to act in your interest, disclose what they know, and account for how they are paid. You also get certainty on compensation up front, in writing, with no surprises waiting at the closing table. And the terms are negotiable. You are not signing a blood oath. You can negotiate a shorter term, limit the agreement to a specific property or a single day, define the geographic area and price range, and spell out how to end the relationship if the fit is not right. A good agent will walk you through every one of those levers without flinching. If they will not, that itself is useful information.
+
+## How does my agent get paid now?
+
+The NAR settlement reshaped this, so it is worth being clear.
+
+Buyer agent compensation is now fully negotiable, and it is no longer advertised on the MLS. Instead, it is disclosed directly in your buyer representation agreement as an objective number: a set percentage, a flat fee, or an hourly rate, never an open-ended "whatever the seller happens to offer." Your agent also cannot collect more than the amount stated in your agreement, from any source.
+
+In practice, sellers can still contribute toward your agent's fee, and that contribution is commonly negotiated into the purchase contract as a concession. The Texas standard agreement, under Paragraph 7B of the TXR 1501, makes clear that if the seller does not cover the fee, you may be responsible for the difference. That is not a trap. It is the agreement doing its job, putting the economics in front of you in writing, before you are emotionally attached to a house, so that you can plan and negotiate accordingly. For broader context on the current local market, see our <a href="/austin-luxury-real-estate-market-report" class="${LINK}">Austin luxury market report</a>.
+
+## What to check before you sign
+
+Treat the agreement like any other contract that matters. Before you sign, get clear on:
+
+1. Term length. Days, weeks, or months. A shorter term is a reasonable ask if you want to test the relationship first.
+2. Geographic area and property type. The agreement can be scoped to a specific area, a price range, or even a single property.
+3. Exclusive or non-exclusive. Exclusive means this broker is your sole representative for the term. Know which one you are signing.
+4. Compensation and who pays. The exact amount or rate, and what happens if the seller does not cover it.
+5. How to terminate. Understand the cancellation terms before you want out, not after.
+
+None of these should be a mystery, and a strong agent will explain each one in plain language.
+
+## The bottom line
+
+In Texas in 2026, the signature is no longer optional. The advocacy is. You will put your name on a form before you tour a home regardless, so the only decision left is whether that form gives you a professional who is legally on your side or a tour guide who is not. For the biggest financial decision you are likely to make, that is not a close call.
+
+At Echelon Property Group, representation is the starting point, not the upsell. If you are buying in Austin or the surrounding Hill Country and want <a href="/buy" class="${LINK}">an advocate who treats your interests as the entire job</a>, let's talk before the first showing.
+
+:::faq
+Q: Do I have to sign a buyer representation agreement to see a house in Texas?
+A: In most cases, yes. Texas law requires a written agreement between you and an agent before they show you a residential property. That agreement can be a full representation agreement or a showing-only form, but some written agreement is required.
+
+Q: Is a buyer representation agreement legally required in 2026?
+A: A written buyer agreement is required. A buyer representation agreement is one of the two forms that satisfies the requirement. The other is a showing-only form that creates no representation. You are not legally forced to be represented, but you are required to sign one of the two before touring.
+
+Q: Can I refuse to sign one?
+A: You can decline representation, but then an agent can only show you a home under a showing-only agreement, which means no advice, no negotiation, and no advocacy. You cannot have an agent fully represent you on a home tour without a representation agreement in place.
+
+Q: Does signing mean I have to pay my agent out of pocket?
+A: Not necessarily. Sellers frequently contribute toward the buyer agent's fee, often negotiated into the purchase contract. Your agreement discloses the fee up front and explains what happens if the seller does not cover it, so there are no surprises later.
+
+Q: How long does a buyer representation agreement last?
+A: The term is negotiable. It can run for months, or it can be limited to a single day or a single property. If you want a shorter commitment while you evaluate the relationship, you can ask for one.
+
+Q: Can I cancel a buyer representation agreement?
+A: Yes. These agreements include termination terms. Review the cancellation provisions before you sign so you understand how to end the relationship if it is not working.
+:::
+`,
+  },
   {
     id: "off-market-luxury-homes-austin",
     title: "Off-Market Luxury Homes in Austin: 7 Ways to Access Them Before They List",

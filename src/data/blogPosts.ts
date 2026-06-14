@@ -81,7 +81,6 @@ Most luxury homes in Austin never reach Zillow, Realtor.com, or any public porta
 :::stat-block
 title: Austin Luxury, by the Numbers
 • The median home in West Lake Hills and Barton Creek (78746) sold for **$1,882,500** over the trailing year, more than triple Austin's citywide median of **$567,613**.
-Figures from Unlock MLS via MLS Grid, trailing 12 months ending May 2026.
 :::
 
 This guide outlines seven approaches I use with serious buyers to access properties before they hit the market, negotiate with precision, and secure homes that simply are not available to the general public. Whether you are relocating from California or New York, upgrading within Austin, or acquiring a second property for lifestyle or investment purposes, understanding how the exclusive end of this market actually works will give you a meaningful advantage.
@@ -128,7 +127,6 @@ Your advisor's standing within these networks directly determines your access. A
 :::stat-block
 title: Where the Off-Market Activity Concentrates
 • Nearly half of luxury listings never close on the first attempt. In 78746, almost 300 listings expired or were withdrawn over the trailing year, against 310 that sold.
-Figures from Unlock MLS via MLS Grid, trailing 12 months ending May 2026.
 :::
 
 ### Implementation Steps
@@ -177,7 +175,6 @@ Austin (citywide) | $567,613 | $295 | 48 | 10,539 | -1.5%
 :::stat-block
 title: Pricing Power, by ZIP
 • Tarrytown commands the highest price per square foot of Austin's core luxury areas at roughly **$630**, ahead of even West Lake Hills.
-Figures from Unlock MLS via MLS Grid, trailing 12 months ending May 2026.
 :::
 
 ## 4. Understand the Role of Confidential Transactions
@@ -212,7 +209,6 @@ Listings tell you what is available. Market intelligence tells you what it is wo
 :::stat-block
 title: Time on Market, Top ZIPs vs Citywide
 • Luxury homes sit longer than the broader market: a median of **56 to 57 days** in Austin's top ZIP codes, versus **48 days** citywide.
-Figures from Unlock MLS via MLS Grid, trailing 12 months ending May 2026.
 :::
 
 ### The Strategy Explained
@@ -264,7 +260,6 @@ When existing inventory does not match your criteria, waiting indefinitely for t
 :::stat-block
 title: Resilience at the Top
 • West Lake Hills and Barton Creek appreciated about **6% over the trailing year** while the wider Austin market dipped, underscoring the resilience of the top tier.
-Figures from Unlock MLS via MLS Grid, trailing 12 months ending May 2026.
 :::
 
 ### The Strategy Explained

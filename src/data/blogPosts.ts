@@ -74,7 +74,7 @@ export const blogPosts: BlogPost[] = [
     imageAlt: "Modern luxury Austin estate at twilight with illuminated driveway, glass facade, and landscaped courtyard, representing the kind of off-market home that trades privately in West Lake Hills and Barton Creek",
     imageCaption: "Austin's top-tier estates often change hands quietly, reached through relationships and broker networks rather than public listing portals.",
     content: `
-*By <a href="/about" class="${LINK}">Taylor Sherwood</a>, REALTOR, Echelon Property Group. Austin luxury and investment specialist. TREC #734520.*
+
 
 Most luxury homes in Austin never reach Zillow, Realtor.com, or any public portal, and the numbers explain why. Over the trailing year, nearly 300 listings in the 78746 ZIP code, which covers <a href="/communities/westlake-hills" class="${LINK}">West Lake Hills</a>, <a href="/communities/rollingwood" class="${LINK}">Rollingwood</a>, and <a href="/communities/barton-creek" class="${LINK}">Barton Creek</a>, expired or were withdrawn without selling, against 310 that actually closed (<a href="https://www.unlockmls.org" target="_blank" rel="noopener" class="${LINK}">Unlock MLS</a>). At the top of this market, a public listing is a choice, not a default, and many sellers skip it entirely. If you are searching for off-market luxury homes in Austin, strategy matters as much as budget. This market operates on relationships, timing, and access, not on search filters and saved alerts.
 

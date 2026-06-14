@@ -177,6 +177,9 @@ title: Pricing Power, by ZIP
 • Tarrytown commands the highest price per square foot of Austin's core luxury areas at roughly **$630**, ahead of even West Lake Hills.
 :::
 
+:::intel-gauge-austin-15m
+:::
+
 ## 4. Understand the Role of Confidential Transactions
 
 ### The Challenge It Solves

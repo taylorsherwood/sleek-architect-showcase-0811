@@ -322,7 +322,7 @@ const StatBlock = ({ body }: { body: string }) => {
   return (
     <aside className="my-12 border border-foreground/15 bg-foreground/[0.025] px-6 py-8 md:px-10 md:py-10">
       {title && (
-        <p className="text-minimal uppercase tracking-[0.18em] text-xs text-foreground/60 mb-5">
+        <p className="text-minimal uppercase tracking-[0.18em] text-xs mb-5" style={{ color: "#b9a06c" }}>
           {title}
         </p>
       )}

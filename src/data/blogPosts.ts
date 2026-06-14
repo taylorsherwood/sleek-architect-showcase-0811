@@ -32,7 +32,7 @@ import blogMovingFromNYCToAustin from "@/assets/blog/moving-from-new-york-to-aus
 import blogExclusiveRepresentation from "@/assets/blog/exclusive-real-estate-representation-austin.avif.asset.json";
 import blogIntermediaryTexas from "@/assets/blog/intermediary-texas-real-estate.webp.asset.json";
 import blogHighEndHomeValuation from "@/assets/blog/high-end-home-valuation-austin-luxury.jpg.asset.json";
-import blogExclusivePropertiesAustin from "@/assets/blog/exclusive-properties-austin-lake.jpg.asset.json";
+import blogExclusivePropertiesAustin from "@/assets/blog/off-market-luxury-homes-austin.jpg.asset.json";
 
 
 
@@ -61,24 +61,30 @@ const LINK = "text-foreground underline hover:text-muted-foreground";
 
 export const blogPosts: BlogPost[] = [
   {
-    id: "exclusive-properties-austin-texas",
-    title: "7 Proven Strategies to Access Exclusive Properties in Austin, Texas",
-    metaTitle: "Exclusive Properties in Austin, Texas: 7 Access Strategies | Echelon Property Group",
-    excerpt: "Discover seven proven strategies for accessing exclusive properties in Austin, Texas that never appear on public listing portals, from Barton Creek estates to Lake Austin waterfront homes. This guide reveals how serious luxury buyers leverage relationships, off-market networks, and insider timing to secure high-end properties in Austin's most sought-after neighborhoods before they ever reach the open market.",
+    id: "off-market-luxury-homes-austin",
+    title: "Off-Market Luxury Homes in Austin: 7 Ways to Access Them Before They List",
+    metaTitle: "Off-Market Luxury Homes in Austin: 7 Access Strategies",
+    excerpt: "How serious buyers reach Austin's off-market luxury homes, from Barton Creek to Lake Austin, before they hit Zillow. Seven proven strategies from a local expert.",
     author: "Taylor Sherwood",
     date: "2026-06-14",
-    readTime: "13 MIN READ",
+    readTime: "14 MIN READ",
     category: "LUXURY ADVISORY",
     image: blogExclusivePropertiesAustin.url,
     heroImage: blogExclusivePropertiesAustin.url,
-    imageAlt: "Aerial view of Lake Austin waterfront estates with red tile roofs nestled along the Hill Country shoreline, representing the kind of exclusive Austin properties that rarely appear on public listing portals",
-    imageCaption: "Lake Austin's waterfront estates are among the most constrained, and most privately traded, inventory in Austin's luxury market.",
+    imageAlt: "Modern luxury Austin estate at twilight with illuminated driveway, glass facade, and landscaped courtyard, representing the kind of off-market home that trades privately in West Lake Hills and Barton Creek",
+    imageCaption: "Austin's top-tier estates often change hands quietly, reached through relationships and broker networks rather than public listing portals.",
     content: `
-Most luxury properties in Austin never reach Zillow, Realtor.com, or any public portal. That is not an accident. Sellers at the upper end of the market often prefer discretion, and the most sought-after homes in <a href="/communities/barton-creek" class="${LINK}">Barton Creek</a>, <a href="/communities/tarrytown" class="${LINK}">Tarrytown</a>, <a href="/communities/westlake-hills" class="${LINK}">West Lake Hills</a>, and along <a href="/communities/lake-austin" class="${LINK}">Lake Austin</a> change hands through channels that most buyers never know exist.
+*By <a href="/about" class="${LINK}">Taylor Sherwood</a>, REALTOR, Echelon Property Group. Austin luxury and investment specialist. TREC #734520.*
 
-If you are searching for exclusive properties in Austin, Texas, the strategy matters as much as the budget. The market at this level operates on relationships, timing, and access, not on search filters and saved alerts.
+Most luxury homes in Austin never reach Zillow, Realtor.com, or any public portal, and the numbers explain why. Over the trailing year, nearly 300 listings in the 78746 ZIP code, which covers <a href="/communities/westlake-hills" class="${LINK}">West Lake Hills</a>, <a href="/communities/rollingwood" class="${LINK}">Rollingwood</a>, and <a href="/communities/barton-creek" class="${LINK}">Barton Creek</a>, expired or were withdrawn without selling, against 310 that actually closed (<a href="https://www.unlockmls.org" target="_blank" rel="noopener" class="${LINK}">Unlock MLS</a>). At the top of this market, a public listing is a choice, not a default, and many sellers skip it entirely. If you are searching for off-market luxury homes in Austin, strategy matters as much as budget. This market operates on relationships, timing, and access, not on search filters and saved alerts.
 
-This guide outlines seven approaches used by experienced luxury buyers and their advisors to access properties before they hit the market, negotiate with precision, and secure homes that simply are not available to the general public. Whether you are relocating from California or New York, upgrading within Austin, or acquiring a second property for lifestyle or investment purposes, understanding how the exclusive end of this market actually works will give you a meaningful advantage.
+:::stat-block
+title: Austin Luxury, by the Numbers
+• The median home in West Lake Hills and Barton Creek (78746) sold for **$1,882,500** over the trailing year, more than triple Austin's citywide median of **$567,613**.
+Figures from Unlock MLS via MLS Grid, trailing 12 months ending May 2026.
+:::
+
+This guide outlines seven approaches I use with serious buyers to access properties before they hit the market, negotiate with precision, and secure homes that simply are not available to the general public. Whether you are relocating from California or New York, upgrading within Austin, or acquiring a second property for lifestyle or investment purposes, understanding how the exclusive end of this market actually works will give you a meaningful advantage.
 
 ## 1. Build a Relationship with a Hyper-Local Luxury Advisor Before You Need One
 
@@ -90,9 +96,9 @@ Starting late means you are always reacting. Starting early means you are positi
 
 ### The Strategy Explained
 
-A genuine luxury market advisor is not simply an agent who has sold a few high-priced homes. They have deep neighborhood-level knowledge, active relationships with other luxury brokers, and a track record of facilitating transactions that never appeared on the MLS. They understand pricing nuance in Tarrytown versus West Lake Hills, know which builders are delivering quality in the Hill Country, and can tell you which properties have been quietly available for months before any listing goes live.
+A genuine luxury market advisor is not simply an agent who has sold a few high-priced homes. They have deep neighborhood-level knowledge, active relationships with other luxury brokers, and a track record of facilitating transactions that never appeared on the MLS. They understand pricing nuance in <a href="/communities/tarrytown" class="${LINK}">Tarrytown</a> versus West Lake Hills, know which builders are delivering quality in the <a href="/land-for-sale-austin" class="${LINK}">Hill Country</a>, and can tell you which properties have been quietly available for months before any listing goes live.
 
-The relationship itself is part of the access. When an advisor knows your criteria, your timeline, and your communication style, they can advocate for you with sellers and listing agents in a way that a cold inquiry never could. Understanding the difference between a <a href="/blog/luxury-real-estate-agent-vs-advisor" class="${LINK}">luxury real estate agent versus advisor</a> is the first step toward finding the right representation.
+The relationship itself is part of the access. When I know a buyer's criteria, timeline, and communication style, I can advocate for them with sellers and listing agents in a way a cold inquiry never could. Understanding the difference between a <a href="/blog/luxury-real-estate-agent-vs-advisor" class="${LINK}">luxury real estate agent versus advisor</a> is the first step toward finding the right representation.
 
 ### Implementation Steps
 
@@ -117,7 +123,13 @@ If your search strategy begins and ends with Zillow, you are competing for the p
 
 Private listing networks function on trust and credibility. Listing agents who represent sellers seeking discretion will share those properties with a small group of buyer's agents whose clients they consider qualified, serious, and capable of closing without complications. Being "in" that network is not a matter of paying a fee. It is a matter of reputation, relationships, and demonstrated transaction history.
 
-Your advisor's standing within these networks directly determines your access. A well-connected luxury advisor in Austin will receive calls and texts about properties before any listing agreement is even signed. A generalist agent rarely will.
+Your advisor's standing within these networks directly determines your access. A well-connected luxury advisor in Austin will receive calls and texts about properties before any listing agreement is even signed. A generalist agent rarely will. Much of <a href="/off-market-real-estate-austin" class="${LINK}">our 78746 off-market intelligence</a> never appears in any public dataset, and the same is true of <a href="/off-market-real-estate-austin" class="${LINK}">activity in 78703 (Tarrytown and Clarksville)</a>.
+
+:::stat-block
+title: Where the Off-Market Activity Concentrates
+• Nearly half of luxury listings never close on the first attempt. In 78746, almost 300 listings expired or were withdrawn over the trailing year, against 310 that sold.
+Figures from Unlock MLS via MLS Grid, trailing 12 months ending May 2026.
+:::
 
 ### Implementation Steps
 
@@ -128,7 +140,7 @@ Your advisor's standing within these networks directly determines your access. A
 
 ### Pro Tips
 
-Some of the best private opportunities come from advisors who have long-standing relationships with specific neighborhoods. If you are focused on Lake Austin waterfront properties, for example, work with someone who has transacted there repeatedly and is known by name among the local ownership community.
+Some of the best private opportunities come from advisors who have long-standing relationships with specific neighborhoods. If you are focused on <a href="/communities/lake-austin" class="${LINK}">Lake Austin waterfront</a> properties, for example, work with someone who has transacted there repeatedly and is known by name among the local ownership community.
 
 ## 3. Target Specific Austin Neighborhoods with Precision
 
@@ -138,7 +150,7 @@ Broad geographic searches produce noise. A buyer searching "Austin luxury homes"
 
 ### The Strategy Explained
 
-Each of Austin's premier neighborhoods has its own pricing logic, inventory patterns, and buyer profile. <a href="/communities/barton-creek" class="${LINK}">Barton Creek</a> offers gated communities, golf course access, and significant lot sizes within close range of downtown. <a href="/communities/tarrytown" class="${LINK}">Tarrytown</a> is one of Austin's most established central neighborhoods, with tree-lined streets, proximity to Lake Austin, and limited new inventory. <a href="/communities/westlake-hills" class="${LINK}">West Lake Hills</a> and <a href="/communities/rollingwood" class="${LINK}">Rollingwood</a> attract buyers who want top-tier schools, larger lots, and a quieter setting while remaining close to the city. <a href="/communities/lake-austin" class="${LINK}">Lake Austin waterfront</a> properties represent some of the most constrained inventory in the entire region, with very few properties changing hands in any given year.
+Each of Austin's premier neighborhoods has its own pricing logic, inventory patterns, and buyer profile. <a href="/communities/barton-creek" class="${LINK}">Barton Creek estates</a> offer gated communities, golf course access, and significant lot sizes within close range of downtown. <a href="/communities/tarrytown" class="${LINK}">Tarrytown</a> is one of Austin's most established central neighborhoods, with tree-lined streets, proximity to Lake Austin, and limited new inventory. <a href="/communities/westlake-hills" class="${LINK}">Westlake</a> and <a href="/communities/rollingwood" class="${LINK}">Rollingwood</a> attract buyers who want top-tier schools in <a href="https://www.eanesisd.net" target="_blank" rel="noopener" class="${LINK}">Eanes ISD</a>, larger lots, and a quieter setting while remaining close to the city (the <a href="https://www.westlakehills.org" target="_blank" rel="noopener" class="${LINK}">City of West Lake Hills</a> maintains its own jurisdiction). <a href="/communities/lake-austin" class="${LINK}">Lake Austin waterfront</a> properties represent some of the most constrained inventory in the entire region, with very few properties changing hands in any given year.
 
 Knowing the difference between these markets, and what fair value looks like within each one, is what separates informed buyers from those who overpay or miss opportunities entirely.
 
@@ -153,6 +165,21 @@ Knowing the difference between these markets, and what fair value looks like wit
 
 Neighborhood focus also helps you move faster when the right property appears. A buyer who has studied West Lake Hills for three months can evaluate a new listing in hours rather than days. In a market where the best properties attract multiple serious buyers quickly, that speed is a genuine competitive advantage.
 
+:::glance
+Market | Median Sale Price | Median $/Sq Ft | Median Days on Market | Homes Sold | 12-Mo Appreciation
+West Lake Hills, Rollingwood and Barton Creek (78746) | $1,882,500 | $559 | 57 | 310 | +6.1%
+Tarrytown and Clarksville (78703) | $1,357,333 | $630 | 56 | 244 | -1.5%
+Austin (citywide) | $567,613 | $295 | 48 | 10,539 | -1.5%
+:::
+
+*Source: Unlock MLS via MLS Grid, trailing 12 months ending May 2026.*
+
+:::stat-block
+title: Pricing Power, by ZIP
+• Tarrytown commands the highest price per square foot of Austin's core luxury areas at roughly **$630**, ahead of even West Lake Hills.
+Figures from Unlock MLS via MLS Grid, trailing 12 months ending May 2026.
+:::
+
 ## 4. Understand the Role of Confidential Transactions
 
 ### The Challenge It Solves
@@ -163,7 +190,7 @@ High-net-worth sellers have legitimate reasons for preferring privacy. They may 
 
 Confidential transactions take several forms. Some sellers instruct their advisor to share the property only with a small number of pre-qualified buyers before any public listing. Others prefer a direct sale to a single buyer with no listing at all. Some use a limited MLS exposure period before deciding whether to go fully public. In each case, the transaction is structured to protect the seller's privacy while still achieving a fair market outcome.
 
-As a buyer, participating in a confidential transaction requires your own discretion. Sellers and their advisors will not bring private opportunities to buyers who are known to be indiscreet, difficult, or unlikely to close. Your reputation in this market matters. Learning <a href="/blog/why-austin-luxury-sellers-going-quiet" class="${LINK}">why Austin luxury sellers are going quiet</a> provides important context for how these private arrangements typically originate.
+As a buyer, participating in a confidential transaction requires your own discretion. When I bring a client a private opportunity, their discretion protects the deal as much as mine does. Austin's luxury community is small, and how a transaction is handled is remembered long after closing. Learning <a href="/blog/why-austin-luxury-sellers-going-quiet" class="${LINK}">why Austin luxury sellers are going quiet</a> provides important context for how these private arrangements typically originate.
 
 ### Implementation Steps
 
@@ -174,7 +201,7 @@ As a buyer, participating in a confidential transaction requires your own discre
 
 ### Pro Tips
 
-Your advisor's handling of confidential transactions reflects directly on your credibility as a buyer. Choose someone who understands the etiquette of private sales and has a demonstrated track record of discretion. In Austin's tight-knit luxury community, how a transaction is handled is remembered long after the closing.
+Your advisor's handling of confidential transactions reflects directly on your credibility as a buyer. Choose someone who understands the etiquette of private sales and has a demonstrated track record of discretion.
 
 ## 5. Leverage Austin's Luxury Market Intelligence, Not Just Listings
 
@@ -182,11 +209,17 @@ Your advisor's handling of confidential transactions reflects directly on your c
 
 Listings tell you what is available. Market intelligence tells you what it is worth, how long it has been sitting, and whether the seller is likely to negotiate. Buyers who approach exclusive properties without this context are negotiating blind, which typically means overpaying or losing deals that could have been won with better positioning.
 
+:::stat-block
+title: Time on Market, Top ZIPs vs Citywide
+• Luxury homes sit longer than the broader market: a median of **56 to 57 days** in Austin's top ZIP codes, versus **48 days** citywide.
+Figures from Unlock MLS via MLS Grid, trailing 12 months ending May 2026.
+:::
+
 ### The Strategy Explained
 
 The data points that matter most in Austin's luxury segment are not the ones prominently displayed on public portals. Absorption rate within a specific price band tells you how competitive the market is at your level. Price-per-square-foot trends by neighborhood reveal whether values are compressing or expanding. Days on market for comparable properties tells you how urgently a seller is likely to respond to an offer. List-to-sale price ratios in recent transactions show you how much negotiating room typically exists.
 
-A skilled advisor tracks these metrics continuously within the specific segments relevant to their clients. Reviewing current <a href="/austin-luxury-market-trends" class="${LINK}">Austin luxury market trends</a> is the difference between an advisor who pulls comps and one who genuinely understands the market.
+I track absorption, price per square foot, and days on market continuously within Austin's luxury segment, because pulling comps and genuinely understanding the market are not the same thing. Reviewing the <a href="/austin-luxury-real-estate-market-report" class="${LINK}">Q2 2026 Austin Luxury Market Brief</a> alongside our private off-market data is how I pressure-test pricing for every client.
 
 ### Implementation Steps
 
@@ -228,9 +261,15 @@ If you are financing the purchase, work with a lender who has experience with ju
 
 When existing inventory does not match your criteria, waiting indefinitely for the right finished home to appear is rarely the best strategy. Austin's luxury market has limited supply in the most desirable enclaves, and that constraint is not going away. Land acquisition and the build-to-own model give buyers access to exclusive locations without competing for the same small pool of finished homes.
 
+:::stat-block
+title: Resilience at the Top
+• West Lake Hills and Barton Creek appreciated about **6% over the trailing year** while the wider Austin market dipped, underscoring the resilience of the top tier.
+Figures from Unlock MLS via MLS Grid, trailing 12 months ending May 2026.
+:::
+
 ### The Strategy Explained
 
-Land and ranch acquisitions near Austin represent a distinct but related market. The Texas Hill Country, encompassing areas like <a href="/communities/dripping-springs" class="${LINK}">Dripping Springs</a>, Marble Falls, Wimberley, and the communities west of Austin, has attracted significant interest from buyers seeking acreage, privacy, and a primary or secondary residence with a different character than urban luxury. Some buyers acquire Hill Country land for weekend retreats. Others build primary residences on larger parcels where finished homes simply do not exist at the quality level they require.
+Land and ranch acquisitions near Austin represent a distinct but related market. The Texas <a href="/land-for-sale-austin" class="${LINK}">Hill Country</a>, encompassing areas like <a href="/communities/dripping-springs" class="${LINK}">Dripping Springs</a>, Marble Falls, Wimberley, and the communities west of Austin, has attracted significant interest from buyers seeking acreage, privacy, and a primary or secondary residence with a different character than urban luxury. Some buyers acquire Hill Country land for weekend retreats. Others build primary residences on larger parcels where finished homes simply do not exist at the quality level they require.
 
 Within Austin proper, infill lots and teardown opportunities in established neighborhoods like Tarrytown and Rollingwood allow buyers to build on coveted land in locations where finished inventory rarely comes available. This approach requires more time and coordination, but it produces a property tailored precisely to the buyer's criteria rather than one adapted from someone else's vision.
 
@@ -238,22 +277,46 @@ Within Austin proper, infill lots and teardown opportunities in established neig
 
 1. Expand your search criteria to include land, lots, and properties with teardown potential in your target neighborhoods if finished inventory is not meeting your standards.
 2. Research architects and custom builders who have demonstrated experience in Austin's luxury residential segment. The quality of your build-to-own outcome depends heavily on the team you assemble.
-3. If <a href="/land-for-sale-austin" class="${LINK}">Hill Country land</a> interests you, work with an advisor who understands rural land transactions in Texas, including water rights, agricultural exemptions, and the specific considerations that differ from urban residential purchases.
+3. If <a href="/land-for-sale-austin" class="${LINK}">Hill Country land</a> interests you, work with an advisor who understands rural land transactions in Texas, including water rights (the <a href="https://www.lcra.org" target="_blank" rel="noopener" class="${LINK}">LCRA</a> governs much of the regional water supply), agricultural exemptions, and the specific considerations that differ from urban residential purchases.
 4. Model the full cost of a build-to-own project carefully, including land acquisition, design fees, construction costs, carrying costs, and contingency. In many cases, the total cost is competitive with purchasing a finished luxury home, and the result is a property built precisely to your specifications.
 
 ### Pro Tips
 
 Some of the most exclusive locations in the Austin area are only accessible through land acquisition because finished homes in those areas rarely trade publicly. Buyers who are open to this path often find themselves with access to locations and views that no amount of browsing public listings would have surfaced.
 
+:::faq
+Q: What is an off-market or pocket listing in Austin?
+A: An off-market listing, sometimes called a pocket listing, is a home for sale that is not published on public portals or the MLS. The seller markets it privately through a broker's network to a small group of qualified buyers, usually to protect privacy or test pricing before a public launch.
+
+Q: How do buyers find off-market luxury homes in Austin?
+A: Off-market homes are reached through relationships, not search filters. A well-connected local advisor hears about these properties through broker-to-broker networks and direct owner relationships, then brings them to pre-qualified buyers before any listing goes live.
+
+Q: Which Austin neighborhoods have the most off-market luxury activity?
+A: Barton Creek, Tarrytown, West Lake Hills, Rollingwood, and Lake Austin see the most private activity. These are Austin's most established luxury enclaves, where limited inventory and seller privacy concerns push many transactions off the public market.
+
+Q: How much do luxury homes in Austin cost?
+A: In Austin's core luxury ZIP codes, the median sale price over the trailing year was $1,882,500 in 78746 (West Lake Hills, Rollingwood, Barton Creek) and $1,357,333 in 78703 (Tarrytown), compared with $567,613 citywide (Unlock MLS). True high-end and waterfront properties routinely trade well above these medians.
+
+Q: Why do Austin luxury sellers list off-market?
+A: Many luxury sellers prefer privacy, want to avoid public showings, or are testing price before a full campaign. The data supports the caution: in 78746, nearly 300 listings expired or were withdrawn over the trailing year without selling, so a quiet, well-targeted sale can outperform a public listing that lingers.
+
+Q: Do I need proof of funds to see off-market listings?
+A: Yes, in most cases. Sellers and their advisors share private opportunities only with buyers who can demonstrate they are qualified and able to close, so a proof-of-funds letter or financing documentation is typically the entry requirement.
+
+Q: How long do luxury homes in Austin take to sell?
+A: Luxury homes in Austin's top neighborhoods take a median of 56 to 57 days to sell, longer than the 48-day citywide median (Unlock MLS, trailing 12 months). Extended time on market is common at the high end and often signals room to negotiate rather than a problem with the property.
+
+Q: Is now a good time to buy luxury real estate in Austin?
+A: It depends on the neighborhood. West Lake Hills and Barton Creek appreciated about 6% over the trailing year, while Tarrytown and the broader Austin market were roughly flat to slightly down (Unlock MLS), and inventory in the luxury ZIP codes sits above six months, which gives prepared buyers negotiating leverage.
+:::
+
 ## Putting It All Together
 
 Accessing exclusive properties in Austin requires a fundamentally different approach than browsing public listings. The market at the upper end rewards preparation, relationships, and genuine market knowledge. Buyers who engage an experienced local advisor early, understand how private and off-market transactions work, and position themselves as credible buyers consistently access inventory that others never see.
 
-The seven strategies outlined here are not theoretical. They reflect how experienced buyers and their advisors actually navigate Austin's luxury segment. The common thread across all of them is this: access is earned before the search begins, not discovered during it.
+The seven strategies outlined here are not theoretical. They reflect how my clients and I actually navigate Austin's luxury segment. The common thread across all of them is this: access is earned before the search begins, not discovered during it.
 
-If you are serious about finding a property in Austin that matches your criteria, the first step is a conversation with an advisor who has genuine access to this market. Echelon Property Group works with a select group of buyers and sellers in Austin's luxury segment, with access to off-market opportunities and private listings across the city's most sought-after neighborhoods and surrounding Hill Country.
-
-Reach out when you are ready to approach this market with a clear strategy. <a href="/contact" class="${LINK}">Learn more about our services</a>.
+If you are serious about finding a home in Austin that matches your criteria, the next step is a focused conversation. <a href="/contact" class="${LINK}">Start a private buyer consultation</a> with Echelon Property Group, or <a href="/off-market-real-estate-austin" class="${LINK}">see how we source off-market Austin homes</a> across Barton Creek, Tarrytown, West Lake Hills, Rollingwood, and Lake Austin.
 `,
   },
   {

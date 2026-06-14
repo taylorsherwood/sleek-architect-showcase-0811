@@ -155,6 +155,7 @@ const AppRoutes = () => {
           <Route path="/blog/new-construction-luxury-homes-austin" element={<Navigate to="/blog/new-construction-austin-what-wins" replace />} />
           <Route path="/blog/lake-austin-waterfront-value" element={<Navigate to="/blog/lake-austin-waterfront-homes-what-drives-value" replace />} />
           <Route path="/blog/off-market-real-estate-austin" element={<Navigate to="/off-market-real-estate-austin" replace />} />
+          <Route path="/blog/exclusive-properties-austin-texas" element={<Navigate to="/blog/off-market-luxury-homes-austin" replace />} />
           <Route path="/blog/best-austin-neighborhoods-for-real-estate-investment" element={<Navigate to="/blog/top-investment-neighborhoods-austin" replace />} />
           {/* 301 redirects for alternate community slugs that point at the same neighborhood */}
           <Route path="/communities/westlake" element={<Navigate to="/communities/westlake-hills" replace />} />

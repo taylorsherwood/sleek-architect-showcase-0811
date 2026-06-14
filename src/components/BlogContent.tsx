@@ -203,13 +203,15 @@ const GlanceTable = ({ body }: { body: string }) => {
   const colCount = header.length;
   // Tailwind needs literal class names; enumerate supported column counts.
   const gridColsClass =
-    colCount === 5
-      ? "lg:grid-cols-[1.1fr_1fr_1fr_1fr_1fr]"
-      : colCount === 4
-        ? "lg:grid-cols-[1.1fr_1fr_1fr_1fr]"
-        : colCount === 3
-          ? "lg:grid-cols-[1.1fr_1fr_1fr]"
-          : "lg:grid-cols-[1.1fr_1fr]";
+    colCount === 6
+      ? "lg:grid-cols-[1.4fr_1fr_0.8fr_0.9fr_0.8fr_0.9fr]"
+      : colCount === 5
+        ? "lg:grid-cols-[1.1fr_1fr_1fr_1fr_1fr]"
+        : colCount === 4
+          ? "lg:grid-cols-[1.1fr_1fr_1fr_1fr]"
+          : colCount === 3
+            ? "lg:grid-cols-[1.1fr_1fr_1fr]"
+            : "lg:grid-cols-[1.1fr_1fr]";
 
   return (
     <div className="my-12">

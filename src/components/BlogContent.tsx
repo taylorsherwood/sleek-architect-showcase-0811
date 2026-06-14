@@ -243,11 +243,11 @@ const GlanceTable = ({ body }: { body: string }) => {
     <div className="my-12">
       {/* Corridor headers - desktop only */}
       <div className={`hidden lg:grid ${gridColsClass} gap-x-10 pb-5 border-b border-foreground/20`}>
-        <div className="text-minimal text-foreground/60 uppercase tracking-[0.15em] text-xs whitespace-nowrap">
+        <div className="text-minimal uppercase tracking-[0.15em] text-xs whitespace-nowrap" style={{ color: "#b9a06c" }}>
           {header[0]}
         </div>
         {corridorHeaders.map((h, idx) => (
-          <div key={idx} className="text-minimal text-foreground/60 uppercase tracking-[0.15em] text-xs leading-tight">
+          <div key={idx} className="text-minimal uppercase tracking-[0.15em] text-xs leading-tight" style={{ color: "#b9a06c" }}>
             {h}
           </div>
         ))}

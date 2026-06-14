@@ -80,7 +80,7 @@ Most luxury homes in Austin never reach Zillow, Realtor.com, or any public porta
 
 :::stat-block
 title: Austin Luxury, by the Numbers
-• The median home in West Lake Hills and Barton Creek (78746) sold for **$1,882,500** over the trailing year, more than triple Austin's citywide median of **$567,613**.
+• The median home in West Lake Hills and Rollingwood (78746) sold for **$1,882,500** over the trailing year, more than triple Austin's citywide median of **$567,613**.
 :::
 
 This guide outlines seven approaches I use with serious buyers to access properties before they hit the market, negotiate with precision, and secure homes that simply are not available to the general public. Whether you are relocating from California or New York, upgrading within Austin, or acquiring a second property for lifestyle or investment purposes, understanding how the exclusive end of this market actually works will give you a meaningful advantage.

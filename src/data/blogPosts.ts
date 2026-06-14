@@ -32,7 +32,7 @@ import blogMovingFromNYCToAustin from "@/assets/blog/moving-from-new-york-to-aus
 import blogExclusiveRepresentation from "@/assets/blog/exclusive-real-estate-representation-austin.avif.asset.json";
 import blogIntermediaryTexas from "@/assets/blog/intermediary-texas-real-estate.webp.asset.json";
 import blogHighEndHomeValuation from "@/assets/blog/high-end-home-valuation-austin-luxury.jpg.asset.json";
-import blogExclusivePropertiesAustin from "@/assets/blog/exclusive-properties-austin-lake.jpg.asset.json";
+import blogExclusivePropertiesAustin from "@/assets/blog/off-market-luxury-homes-austin.jpg.asset.json";
 
 
 

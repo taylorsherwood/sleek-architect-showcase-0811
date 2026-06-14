@@ -129,7 +129,7 @@ const renderMarkdownBody = (body: string): string => {
     const items = olBuf
       .map((l, i) => {
         const num = String(i + 1).padStart(2, "0");
-        return `<li class="grid grid-cols-[auto_1fr] gap-x-6 md:gap-x-8 items-baseline py-5 border-b border-foreground/10 last:border-b-0"><span class="font-cinzel text-base md:text-lg tracking-[0.18em] text-accent-gold leading-none">${num}</span><div class="leading-[1.85] text-muted-foreground">${renderInline(l)}</div></li>`;
+        return `<li class="grid grid-cols-[auto_1fr] gap-x-6 md:gap-x-8 items-baseline py-5 border-b border-foreground/10 last:border-b-0"><span class="font-cinzel text-base md:text-lg tracking-[0.18em] leading-none" style="color:#b9a06c">${num}</span><div class="leading-[1.85] text-muted-foreground">${renderInline(l)}</div></li>`;
       })
       .join("");
     out.push(`<ol class="list-none p-0 my-8 border-t border-foreground/10">${items}</ol>`);

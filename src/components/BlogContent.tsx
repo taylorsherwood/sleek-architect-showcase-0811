@@ -155,7 +155,7 @@ const renderMarkdownBody = (body: string): string => {
 };
 
 interface Block {
-  type: "markdown" | "glance" | "best-for" | "watch-out" | "micro-cta" | "cta" | "faq" | "stat-block" | "intel-pulse" | "intel-gauge" | "intel-gauge-lake-austin" | "intel-gauge-lake-travis" | "intel-rates" | "intel-luxury-snapshot";
+  type: "markdown" | "glance" | "best-for" | "watch-out" | "micro-cta" | "cta" | "faq" | "stat-block" | "intel-pulse" | "intel-gauge" | "intel-gauge-austin-metro" | "intel-gauge-lake-austin" | "intel-gauge-lake-travis" | "intel-rates" | "intel-luxury-snapshot";
   body: string;
 }
 
@@ -174,7 +174,7 @@ const parseBlocks = (content: string): Block[] => {
 
   while (i < lines.length) {
     const line = lines[i];
-    const fenceMatch = line.match(/^:::(glance|best-for|watch-out|micro-cta|cta|faq|stat-block|intel-pulse|intel-gauge|intel-gauge-lake-austin|intel-gauge-lake-travis|intel-rates|intel-luxury-snapshot)\s*$/);
+    const fenceMatch = line.match(/^:::(glance|best-for|watch-out|micro-cta|cta|faq|stat-block|intel-pulse|intel-gauge|intel-gauge-austin-metro|intel-gauge-lake-austin|intel-gauge-lake-travis|intel-rates|intel-luxury-snapshot)\s*$/);
     if (fenceMatch) {
       flushMd();
       const type = fenceMatch[1] as Block["type"];
@@ -488,6 +488,16 @@ const BlogContent = ({ content, afterGlance, category, articleId }: BlogContentP
                   marketName="Austin Metro"
                   fallbackMarketName="West Austin"
                   eyebrow={"\n\nAUSTIN METRO RESIDENTIAL · $2M+ · BUYER / SELLER BALANCE"}
+                />
+              </IntelInsert>
+            );
+          case "intel-gauge-austin-metro":
+            return (
+              <IntelInsert key={idx}>
+                <MarketBalanceGauge
+                  communityName="Greater Austin · All Price Points · All Property Types"
+                  marketName="Austin Metro"
+                  eyebrow={"\n\nGREATER AUSTIN · ALL PRICE POINTS · ALL PROPERTY TYPES · BUYER / SELLER BALANCE"}
                 />
               </IntelInsert>
             );

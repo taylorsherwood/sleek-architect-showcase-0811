@@ -73,7 +73,7 @@ const InlineEditorialCTA = ({ cta, position, category, articleId }: Props) => {
   return (
     <aside
       ref={ref}
-      className="my-14 md:my-16 pt-10 md:pt-12 border-t border-foreground/15"
+      className="mt-14 md:mt-16 mb-20 md:mb-28 pt-10 md:pt-12 border-t border-foreground/15"
       aria-label="Editorial recommendation"
     >
       <div className="max-w-2xl mx-auto text-center px-2">

@@ -540,6 +540,17 @@ const BlogContent = ({ content, afterGlance, category, articleId }: BlogContentP
                 />
               </IntelInsert>
             );
+          case "intel-gauge-austin-15m":
+            return (
+              <IntelInsert key={idx}>
+                <MarketBalanceGauge
+                  communityName="Austin Metro Residential $1.5M+"
+                  marketName="Austin Metro"
+                  fallbackMarketName="West Austin"
+                  eyebrow={"AUSTIN METRO RESIDENTIAL · $1.5M+ · BUYER / SELLER BALANCE"}
+                />
+              </IntelInsert>
+            );
           case "intel-gauge-lake-travis":
             return (
               <IntelInsert key={idx} tight>

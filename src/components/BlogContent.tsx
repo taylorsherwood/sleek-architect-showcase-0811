@@ -103,6 +103,7 @@ const renderMarkdownBody = (body: string): string => {
   const out: string[] = [];
   let paraBuf: string[] = [];
   let listBuf: string[] = [];
+  let olBuf: string[] = [];
 
   const flushPara = () => {
     if (!paraBuf.length) return;
@@ -123,11 +124,32 @@ const renderMarkdownBody = (body: string): string => {
     listBuf = [];
   };
 
+  const flushOl = () => {
+    if (!olBuf.length) return;
+    const items = olBuf
+      .map((l, i) => {
+        const num = String(i + 1).padStart(2, "0");
+        return `<li class="grid grid-cols-[auto_1fr] gap-x-6 md:gap-x-8 items-baseline py-5 border-b border-foreground/10 last:border-b-0"><span class="font-cinzel text-base md:text-lg tracking-[0.18em] text-accent-gold leading-none">${num}</span><div class="leading-[1.85] text-muted-foreground">${renderInline(l)}</div></li>`;
+      })
+      .join("");
+    out.push(`<ol class="list-none p-0 my-8 border-t border-foreground/10">${items}</ol>`);
+    olBuf = [];
+  };
+
   for (const raw of lines) {
     const trimmed = raw.trim();
 
+    const olMatch = trimmed.match(/^(\d+)\.\s+(.*)$/);
+    if (olMatch) {
+      flushPara();
+      flushList();
+      olBuf.push(olMatch[2]);
+      continue;
+    }
+
     if (trimmed.startsWith("- ")) {
       flushPara();
+      flushOl();
       listBuf.push(trimmed.substring(2));
       continue;
     }
@@ -135,22 +157,26 @@ const renderMarkdownBody = (body: string): string => {
     if (trimmed === "") {
       flushPara();
       flushList();
+      flushOl();
       continue;
     }
 
     if (raw.startsWith("# ") || raw.startsWith("## ") || raw.startsWith("### ")) {
       flushPara();
       flushList();
+      flushOl();
       out.push(renderHeading(raw));
       continue;
     }
 
     flushList();
+    flushOl();
     paraBuf.push(trimmed);
   }
 
   flushPara();
   flushList();
+  flushOl();
   return out.join("");
 };
 

@@ -33,6 +33,7 @@ import blogExclusiveRepresentation from "@/assets/blog/exclusive-real-estate-rep
 import blogIntermediaryTexas from "@/assets/blog/intermediary-texas-real-estate.webp.asset.json";
 import blogHighEndHomeValuation from "@/assets/blog/high-end-home-valuation-austin-luxury.jpg.asset.json";
 import blogExclusivePropertiesAustin from "@/assets/blog/off-market-luxury-homes-austin.jpg.asset.json";
+import blogBuyerRepresentationAgreement from "@/assets/blog/buyer-representation-agreement-texas.jpg.asset.json";
 
 
 

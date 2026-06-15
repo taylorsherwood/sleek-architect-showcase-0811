@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import ScrollReveal from "@/components/ScrollReveal";
 import overlookPassAsset from "@/assets/overlook-pass.jpg.asset.json";
+import horseshoeBayAsset from "@/assets/horseshoe-bay.avif.asset.json";
 
 type OffMarketProperty = {
   image?: string;

@@ -211,151 +211,85 @@ const OffMarketListings = ({ className }: { className?: string }) => {
                     style={{ background: "rgba(10,10,12,0.14)" }}
                   />
 
-                  {!unlocked && (
-                    <div
-                      className="absolute inset-0 flex flex-col items-center justify-center text-center"
+                  <div
+                    className="absolute inset-0 flex flex-col justify-end"
+                    style={{ padding: "clamp(24px, 3.5vw, 40px)" }}
+                  >
+                    <p
                       style={{
-                        padding: "clamp(24px, 3.5vw, 40px)",
-                        background: "rgba(12, 15, 36, 0.35)",
-                        backdropFilter: "blur(6px)",
-                        WebkitBackdropFilter: "blur(6px)",
+                        fontFamily: '"Jost", sans-serif',
+                        fontSize: "0.7rem",
+                        fontWeight: 500,
+                        letterSpacing: "0.25em",
+                        textTransform: "uppercase",
+                        color: "#b9a06c",
+                        marginBottom: "0.875rem",
                       }}
                     >
-                      <span
-                        style={{
-                          display: "inline-flex",
-                          alignItems: "center",
-                          justifyContent: "center",
-                          width: "64px",
-                          height: "64px",
-                          borderRadius: "999px",
-                          border: "1px solid #b9a06c",
-                          marginBottom: "1.25rem",
-                        }}
-                      >
-                        <PadlockIcon />
-                      </span>
-                      <p
-                        style={{
-                          fontFamily: '"Jost", sans-serif',
-                          fontSize: "0.7rem",
-                          fontWeight: 500,
-                          letterSpacing: "0.3em",
-                          textTransform: "uppercase",
-                          color: "#b9a06c",
-                          marginBottom: "0.75rem",
-                        }}
-                      >
-                        Private Listing
-                      </p>
-                      <p
-                        style={{
-                          fontFamily: '"Cinzel", serif',
-                          fontSize: "clamp(1rem, 1.6vw, 1.15rem)",
-                          color: "#FAFAF8",
-                          letterSpacing: "0.04em",
-                          marginBottom: "1.25rem",
-                          maxWidth: "280px",
-                          lineHeight: 1.4,
-                        }}
-                      >
-                        Request access to view
-                      </p>
-                      <span
-                        style={{
-                          fontFamily: '"Jost", sans-serif',
-                          fontSize: "0.7rem",
-                          fontWeight: 500,
-                          letterSpacing: "0.25em",
-                          textTransform: "uppercase",
-                          color: "#b9a06c",
-                          borderBottom: "1px solid #b9a06c",
-                          paddingBottom: "4px",
-                        }}
-                      >
-                        Unlock listings
-                      </span>
-                    </div>
-                  )}
-
-                  {unlocked && (
-                    <div
-                      className="absolute inset-0 flex flex-col justify-end"
-                      style={{ padding: "clamp(24px, 3.5vw, 40px)" }}
+                      {p.badge}
+                    </p>
+                    <h3
+                      style={{
+                        fontFamily: '"Cinzel", serif',
+                        fontSize: "clamp(1.4rem, 2.4vw, 2rem)",
+                        fontWeight: 400,
+                        lineHeight: 1.15,
+                        letterSpacing: "0.02em",
+                        color: "#FAFAF8",
+                        marginBottom: "0.875rem",
+                      }}
                     >
-                      <p
-                        style={{
-                          fontFamily: '"Jost", sans-serif',
-                          fontSize: "0.7rem",
-                          fontWeight: 500,
-                          letterSpacing: "0.25em",
-                          textTransform: "uppercase",
-                          color: "#b9a06c",
-                          marginBottom: "0.875rem",
-                        }}
-                      >
-                        {p.badge}
-                      </p>
-                      <h3
-                        style={{
-                          fontFamily: '"Cinzel", serif',
-                          fontSize: "clamp(1.4rem, 2.4vw, 2rem)",
-                          fontWeight: 400,
-                          lineHeight: 1.15,
-                          letterSpacing: "0.02em",
-                          color: "#FAFAF8",
-                          marginBottom: "0.875rem",
-                        }}
-                      >
-                        {p.name}
-                      </h3>
-                      <p
-                        style={{
-                          fontFamily: '"Jost", sans-serif',
-                          fontSize: "0.95rem",
-                          fontWeight: 300,
-                          lineHeight: 1.6,
-                          color: "rgba(250, 250, 248, 0.9)",
-                          maxWidth: "400px",
-                          marginBottom: "1.5rem",
-                          textAlign: "left",
-                        }}
-                      >
-                        {p.subtitle}
-                      </p>
-                      <span
-                        className="expertise-card__cta inline-flex items-center"
-                        style={{
-                          fontFamily: '"Jost", sans-serif',
-                          fontSize: "0.75rem",
-                          fontWeight: 500,
-                          letterSpacing: "0.2em",
-                          textTransform: "uppercase",
-                          color: "#b9a06c",
-                          position: "relative",
-                          paddingBottom: "8px",
-                          alignSelf: "flex-start",
-                        }}
-                      >
-                        <span style={{ position: "relative" }}>
-                          Inquire →
-                          <span
-                            aria-hidden="true"
-                            className="expertise-card__underline"
-                            style={{
-                              position: "absolute",
-                              left: 0,
-                              bottom: "-6px",
-                              height: "1px",
-                              width: "24px",
-                              background: "#b9a06c",
-                              transition: "width 600ms cubic-bezier(0.22, 1, 0.36, 1)",
-                            }}
-                          />
-                        </span>
+                      {p.name}
+                    </h3>
+                    <p
+                      style={{
+                        fontFamily: '"Jost", sans-serif',
+                        fontSize: "0.95rem",
+                        fontWeight: 300,
+                        lineHeight: 1.6,
+                        color: "rgba(250, 250, 248, 0.9)",
+                        maxWidth: "400px",
+                        marginBottom: "1.5rem",
+                        textAlign: "left",
+                      }}
+                    >
+                      {p.subtitle}
+                    </p>
+                    <span
+                      className="expertise-card__cta inline-flex items-center"
+                      style={{
+                        fontFamily: '"Jost", sans-serif',
+                        fontSize: "0.75rem",
+                        fontWeight: 500,
+                        letterSpacing: "0.2em",
+                        textTransform: "uppercase",
+                        color: "#b9a06c",
+                        position: "relative",
+                        paddingBottom: "8px",
+                        alignSelf: "flex-start",
+                        gap: "8px",
+                      }}
+                    >
+                      {!unlocked && <PadlockIcon />}
+                      <span style={{ position: "relative" }}>
+                        {unlocked ? "Inquire →" : "Request access →"}
+                        <span
+                          aria-hidden="true"
+                          className="expertise-card__underline"
+                          style={{
+                            position: "absolute",
+                            left: 0,
+                            bottom: "-6px",
+                            height: "1px",
+                            width: "24px",
+                            background: "#b9a06c",
+                            transition: "width 600ms cubic-bezier(0.22, 1, 0.36, 1)",
+                          }}
+                        />
                       </span>
-                    </div>
-                  )}
+                    </span>
+                  </div>
+
                 </>
               );
 

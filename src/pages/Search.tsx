@@ -523,6 +523,22 @@ const SearchPage = () => {
               <Testimonials />
             </Suspense>
 
+            <div className="text-center mt-10">
+              <Link
+                to="/reviews"
+                className="inline-block text-gold hover:text-foreground transition-colors duration-300"
+                style={{
+                  fontFamily: '"Jost", sans-serif',
+                  fontSize: "0.7rem",
+                  letterSpacing: "0.25em",
+                  textTransform: "uppercase",
+                  fontWeight: 500,
+                }}
+              >
+                Read More Reviews →
+              </Link>
+            </div>
+
             <h3 className="text-2xl font-display font-normal text-architectural mt-10 mb-6">
               Explore Austin Real Estate
             </h3>

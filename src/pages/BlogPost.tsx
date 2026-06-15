@@ -1,5 +1,6 @@
 import { lazy, Suspense } from "react";
 import { useParams, Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import Navigation from "@/components/Navigation";
 const Footer = lazy(() => import("@/components/Footer"));
 import AboutBlock from "@/components/AboutBlock";
@@ -15,6 +16,7 @@ import RelatedInsights from "@/components/RelatedInsights";
 import BlogContent, { extractFAQsFromContent } from "@/components/BlogContent";
 import ContinueExploring from "@/components/blog/ContinueExploring";
 import CommunityBoundaryMap from "@/components/CommunityBoundaryMap";
+
 
 /** Posts that should display a community boundary map below the hero image. */
 const BLOG_BOUNDARY_MAPS: Record<string, { slug: string; name: string }> = {

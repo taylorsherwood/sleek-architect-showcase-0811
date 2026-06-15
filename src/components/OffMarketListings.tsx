@@ -72,6 +72,7 @@ const OffMarketListings = ({ className }: { className?: string }) => {
   const [phone, setPhone] = useState("");
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [consent, setConsent] = useState(false);
 
   useEffect(() => {
     const onStorage = (e: StorageEvent) => {
@@ -110,6 +111,7 @@ const OffMarketListings = ({ className }: { className?: string }) => {
       phone,
       message: "Requested access to off-market Echelon listings",
       source: "Off-Market Listings Gate (/search)",
+      extra: { consent: consent ? "Yes" : "No" },
     });
     setSubmitting(false);
     if (!result.ok) {
@@ -606,6 +608,43 @@ const OffMarketListings = ({ className }: { className?: string }) => {
                   {error}
                 </p>
               )}
+              <label
+                style={{
+                  display: "flex",
+                  alignItems: "flex-start",
+                  gap: "10px",
+                  cursor: "pointer",
+                  marginTop: "4px",
+                }}
+              >
+                <input
+                  type="checkbox"
+                  required
+                  checked={consent}
+                  onChange={(e) => setConsent(e.target.checked)}
+                  style={{ marginTop: "3px", accentColor: "#b9a06c", flexShrink: 0 }}
+                />
+                <span
+                  style={{
+                    fontFamily: '"Jost", sans-serif',
+                    fontSize: "0.8rem",
+                    lineHeight: 1.5,
+                    color: "rgba(12,15,36,0.7)",
+                  }}
+                >
+                  I agree to receive emails and text messages about off-market properties and market updates.
+                </span>
+              </label>
+              <p
+                style={{
+                  fontFamily: '"Jost", sans-serif',
+                  fontSize: "0.7rem",
+                  lineHeight: 1.5,
+                  color: "rgba(12,15,36,0.5)",
+                }}
+              >
+                We respect your privacy. No spam — ever. Message and data rates may apply. Reply STOP to opt out at any time.
+              </p>
               <button
                 type="submit"
                 disabled={submitting}

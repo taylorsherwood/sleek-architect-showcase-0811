@@ -59,7 +59,13 @@ const PadlockIcon = () => (
 );
 
 const OffMarketListings = ({ className }: { className?: string }) => {
-  const [unlocked, setUnlocked] = useState(false);
+  const [unlocked, setUnlocked] = useState(() => {
+    try {
+      return localStorage.getItem(UNLOCK_KEY) === "1";
+    } catch {
+      return false;
+    }
+  });
   const [open, setOpen] = useState(false);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -68,11 +74,18 @@ const OffMarketListings = ({ className }: { className?: string }) => {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    try {
-      if (localStorage.getItem(UNLOCK_KEY) === "1") setUnlocked(true);
-    } catch {
-      /* noop */
-    }
+    const onStorage = (e: StorageEvent) => {
+      if (e.key === UNLOCK_KEY) {
+        setUnlocked(e.newValue === "1");
+      }
+    };
+    const onUnlock = () => setUnlocked(true);
+    window.addEventListener("storage", onStorage);
+    window.addEventListener("offmarket-unlocked", onUnlock);
+    return () => {
+      window.removeEventListener("storage", onStorage);
+      window.removeEventListener("offmarket-unlocked", onUnlock);
+    };
   }, []);
 
   useEffect(() => {
@@ -110,6 +123,7 @@ const OffMarketListings = ({ className }: { className?: string }) => {
     }
     setUnlocked(true);
     setOpen(false);
+    window.dispatchEvent(new CustomEvent("offmarket-unlocked"));
   };
 
   return (

@@ -72,6 +72,7 @@ const OffMarketListings = ({ className }: { className?: string }) => {
   const [phone, setPhone] = useState("");
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [consent, setConsent] = useState(false);
 
   useEffect(() => {
     const onStorage = (e: StorageEvent) => {

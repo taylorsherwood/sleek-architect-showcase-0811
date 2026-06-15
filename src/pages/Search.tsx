@@ -226,6 +226,11 @@ const SearchPage = () => {
         </div>
       </section>
 
+      {/* Featured properties (mirrors home page) */}
+      <Suspense fallback={<div className="min-h-[400px] bg-secondary" />}>
+        <FeaturedProperties />
+      </Suspense>
+
       {/* Listings widget */}
       <section id="echelon-listings" className="py-16 md:py-24 bg-background scroll-mt-24">
         <div className="container mx-auto px-6">
@@ -246,11 +251,6 @@ const SearchPage = () => {
           </ScrollReveal>
         </div>
       </section>
-
-      {/* Featured properties (mirrors home page) */}
-      <Suspense fallback={<div className="min-h-[400px] bg-secondary" />}>
-        <FeaturedProperties />
-      </Suspense>
 
       {/* Off-Market Listings */}
       <Suspense fallback={<div className="min-h-[400px] bg-background" />}>

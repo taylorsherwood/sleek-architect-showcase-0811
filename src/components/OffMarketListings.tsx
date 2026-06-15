@@ -67,7 +67,7 @@ const OffMarketListings = ({ className }: { className?: string }) => {
                   marginBottom: "1.75rem",
                 }}
               >
-                Off-Market Listings
+                Off-Market Echelon Listings
               </h2>
               <div
                 aria-hidden="true"

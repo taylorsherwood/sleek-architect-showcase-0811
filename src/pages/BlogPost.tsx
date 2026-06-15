@@ -117,7 +117,14 @@ const BlogPost = () => {
         ogType="article"
         noindex={["sustainable-architecture-future", "minimalism-modern-living", "urban-planning-community-spaces"].includes(post.id)}
       />
+      <Helmet>
+        <meta property="article:published_time" content={post.date} />
+        <meta property="article:modified_time" content={post.date} />
+        <meta property="article:author" content={post.author} />
+        <meta property="article:section" content={post.category} />
+      </Helmet>
       {schemas.map((s, i) => <SchemaMarkup key={i} schema={s} />)}
+
       <Navigation />
       <div className="h-12 md:h-20" aria-hidden="true" />
       

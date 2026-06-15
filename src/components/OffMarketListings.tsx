@@ -210,6 +210,37 @@ const OffMarketListings = ({ className }: { className?: string }) => {
                     className="expertise-card__darken absolute inset-0 opacity-0 transition-opacity duration-700"
                     style={{ background: "rgba(10,10,12,0.14)" }}
                   />
+                  {!unlocked && (
+                    <div
+                      aria-hidden="true"
+                      className="absolute inset-0 flex items-center justify-center pointer-events-none"
+                    >
+                      <div
+                        className="flex items-center justify-center rounded-full"
+                        style={{
+                          width: "72px",
+                          height: "72px",
+                          background: "rgba(10,10,12,0.45)",
+                          border: "1px solid rgba(185, 160, 108, 0.5)",
+                          backdropFilter: "blur(4px)",
+                        }}
+                      >
+                        <svg
+                          width="32"
+                          height="32"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="#b9a06c"
+                          strokeWidth="1.4"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <rect x="4" y="10.5" width="16" height="11" rx="1.5" />
+                          <path d="M8 10.5V7a4 4 0 0 1 8 0v3.5" />
+                        </svg>
+                      </div>
+                    </div>
+                  )}
 
                   <div
                     className="absolute inset-0 flex flex-col justify-end"

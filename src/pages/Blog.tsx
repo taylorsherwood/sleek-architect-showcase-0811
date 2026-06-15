@@ -266,8 +266,10 @@ const Blog = () => {
             ) : (
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-10 lg:gap-x-14 gap-y-16 md:gap-y-20">
                 {gridPosts.map((post, idx) => {
-                  // Subtle editorial rhythm: every 7th card spans wider on desktop
-                  const wide = idx % 7 === 0 && idx !== 0;
+                  // Subtle editorial rhythm: every 7th card spans wider on desktop.
+                  // Specific posts are locked to the wide treatment regardless of position.
+                  const LOCKED_WIDE_IDS = new Set(["moving-from-new-york-to-austin"]);
+                  const wide = LOCKED_WIDE_IDS.has(post.id) || (idx % 7 === 0 && idx !== 0);
                   return (
                     <article
                       key={post.id}

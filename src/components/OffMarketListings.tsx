@@ -270,7 +270,7 @@ const OffMarketListings = ({ className }: { className?: string }) => {
                         gap: "8px",
                       }}
                     >
-                      {!unlocked && <PadlockIcon />}
+                      
                       <span style={{ position: "relative" }}>
                         {unlocked ? "Inquire →" : "Request access →"}
                         <span

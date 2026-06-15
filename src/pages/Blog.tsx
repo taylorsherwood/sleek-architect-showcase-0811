@@ -268,7 +268,7 @@ const Blog = () => {
                 {gridPosts.map((post, idx) => {
                   // Subtle editorial rhythm: every 7th card spans wider on desktop.
                   // Specific posts are locked to the wide treatment regardless of position.
-                  const LOCKED_WIDE_IDS = new Set(["moving-from-new-york-to-austin"]);
+                  const LOCKED_WIDE_IDS = new Set(["moving-from-new-york-to-austin", "wildlife-exemption-vs-ag-exemption-texas"]);
                   const wide = LOCKED_WIDE_IDS.has(post.id) || (idx % 7 === 0 && idx !== 0);
                   return (
                     <article

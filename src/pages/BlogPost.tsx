@@ -167,10 +167,13 @@ const BlogPost = () => {
                     <span className="bg-secondary px-3 py-1 text-foreground">{post.category}</span>
                     <span>Published {post.date}</span>
                     <span>•</span>
+                    <span>Last updated <time dateTime={post.date}>{post.date}</time></span>
+                    <span>•</span>
                     <span>{post.readTime}</span>
                     <span>•</span>
                     <span>By {post.author}</span>
                   </div>
+
 
                   <h1 className="text-2xl sm:text-4xl md:text-6xl font-light text-architectural mb-6 whitespace-pre-wrap">
                     {post.title}

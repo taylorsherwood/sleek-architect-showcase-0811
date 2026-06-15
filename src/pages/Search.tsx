@@ -301,7 +301,7 @@ const SearchPage = () => {
               <div className="border border-border/60 overflow-hidden group bg-card hover:border-gold hover:shadow-[0_0_0_1px_hsl(var(--gold))] transition-colors duration-500 flex flex-col">
                 <div className="relative overflow-hidden">
                   <OptimizedImage src={sanJoseAve} alt="10811 San Jose Ave, Del Valle TX, 3.06 acres redevelopment land" width={900} height={600} className="w-full aspect-[3/2] object-cover transition-transform duration-700 group-hover:scale-105" />
-                  <span className="absolute top-4 left-4 text-minimal bg-gold text-white px-3 py-1 font-extrabold">DEVELOPMENT LAND</span>
+                  <span className="absolute top-4 left-4 text-minimal bg-gold text-white px-3 py-1 font-extrabold">RE-DEVELOPMENT LAND</span>
                   <span className="absolute bottom-3 right-3 text-white text-sm font-light  bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-sm">$1,600,000</span>
                 </div>
                 <div className="p-6 flex flex-col flex-grow">

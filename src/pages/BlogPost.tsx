@@ -1,5 +1,6 @@
 import { lazy, Suspense } from "react";
 import { useParams, Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import Navigation from "@/components/Navigation";
 const Footer = lazy(() => import("@/components/Footer"));
 import AboutBlock from "@/components/AboutBlock";
@@ -15,6 +16,7 @@ import RelatedInsights from "@/components/RelatedInsights";
 import BlogContent, { extractFAQsFromContent } from "@/components/BlogContent";
 import ContinueExploring from "@/components/blog/ContinueExploring";
 import CommunityBoundaryMap from "@/components/CommunityBoundaryMap";
+
 
 /** Posts that should display a community boundary map below the hero image. */
 const BLOG_BOUNDARY_MAPS: Record<string, { slug: string; name: string }> = {
@@ -115,7 +117,14 @@ const BlogPost = () => {
         ogType="article"
         noindex={["sustainable-architecture-future", "minimalism-modern-living", "urban-planning-community-spaces"].includes(post.id)}
       />
+      <Helmet>
+        <meta property="article:published_time" content={post.date} />
+        <meta property="article:modified_time" content={post.date} />
+        <meta property="article:author" content={post.author} />
+        <meta property="article:section" content={post.category} />
+      </Helmet>
       {schemas.map((s, i) => <SchemaMarkup key={i} schema={s} />)}
+
       <Navigation />
       <div className="h-12 md:h-20" aria-hidden="true" />
       
@@ -158,10 +167,13 @@ const BlogPost = () => {
                     <span className="bg-secondary px-3 py-1 text-foreground">{post.category}</span>
                     <span>Published {post.date}</span>
                     <span>•</span>
+                    <span>Last updated <time dateTime={post.date}>{post.date}</time></span>
+                    <span>•</span>
                     <span>{post.readTime}</span>
                     <span>•</span>
                     <span>By {post.author}</span>
                   </div>
+
 
                   <h1 className="text-2xl sm:text-4xl md:text-6xl font-light text-architectural mb-6 whitespace-pre-wrap">
                     {post.title}

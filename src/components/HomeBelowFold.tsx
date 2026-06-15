@@ -1037,6 +1037,8 @@ const insights = [
   { to: "/blog/best-waterfront-homes-austin", title: "Best Waterfront Homes in Austin", excerpt: "Lake Austin estates, Lake Travis retreats, and what to know before buying waterfront property.", category: "Waterfront" },
   { to: "/blog/moving-to-austin-texas-from-california", title: "Moving to Austin from California", excerpt: "Everything California residents need to know about relocating, taxes, neighborhoods, and lifestyle.", category: "Relocation" },
   { to: "/blog/austin-property-taxes-explained", title: "Austin Property Taxes Explained", excerpt: "Rates, exemptions, protest strategies, and how property taxes affect luxury real estate decisions.", category: "\n" },
+  { to: "/blog/texas-homestead-exemption-travis-county", title: "Texas Homestead Exemption: Travis County Guide", excerpt: "The 2026 $140,000 school exemption, the City and county 20% exemptions, and the 10% appraisal cap, explained.", category: "Ownership" },
+
 ];
 
 const InsightsSection = () => (

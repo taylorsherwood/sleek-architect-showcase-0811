@@ -50,6 +50,7 @@ const Blog = () => {
     "BUYER STRATEGY",
     "SELLER STRATEGY",
     "OFF-MARKET",
+    "OWNERSHIP",
     "LAND & RANCH",
     "FEATURED LISTING",
     "SUSTAINABILITY",

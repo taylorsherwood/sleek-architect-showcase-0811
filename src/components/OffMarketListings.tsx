@@ -111,6 +111,7 @@ const OffMarketListings = ({ className }: { className?: string }) => {
       phone,
       message: "Requested access to off-market Echelon listings",
       source: "Off-Market Listings Gate (/search)",
+      extra: { consent: consent ? "Yes" : "No" },
     });
     setSubmitting(false);
     if (!result.ok) {

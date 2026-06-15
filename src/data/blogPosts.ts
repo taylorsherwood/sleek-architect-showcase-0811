@@ -65,6 +65,151 @@ const LINK = "text-foreground underline hover:text-muted-foreground";
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "texas-homestead-exemption-travis-county",
+    title: "Texas Homestead Exemption 2026: A Travis County Owner's Guide",
+    metaTitle: "Texas Homestead Exemption 2026: The Travis County Guide",
+    excerpt: "The 2026 Texas homestead exemption in Travis County: the $140,000 school exemption, the City and county 20% exemptions, the 10% appraisal cap, and how to file.",
+    author: "Taylor Sherwood",
+    date: "2026-06-15",
+    readTime: "10 MIN READ",
+    category: "OWNERSHIP",
+    image: blogTexasHomesteadExemption.url,
+    heroImage: blogTexasHomesteadExemption.url,
+    imageAlt: "Aerial sunset view over wooded Central Texas hill country with a winding river, evoking long-term homeownership and land value in Travis County",
+    imageCaption: "On an appreciating Travis County home, the homestead exemption is less a discount and more a long-horizon planning tool.",
+    content: `
+
+If you own and live in your Austin home, the homestead exemption is the single highest-return piece of paperwork you will ever file. In 2025, it saved the average Travis County homeowner $3,663 on their tax bill. For owners of higher-value homes, the number is far larger, and most of that benefit compounds quietly every year you stay put.
+
+The rules changed for 2026, and the savings got bigger. Here is exactly how the homestead exemption works in Travis County this year, what stacks on top of it, who qualifies, and how to file without paying anyone a dime to do it for you.
+
+:::stat-block
+title: The 2026 headline numbers
+• **$140,000** off school district taxable value, the new general homestead exemption
+• **20% local exemptions** stacked from the City of Austin, Travis County, and Central Health
+• **10% annual cap** on taxable assessed value increases once your homestead is in place
+:::
+
+## What the homestead exemption actually does
+
+A residence homestead exemption is a tax benefit on your primary home. It works in three separate ways, and the second one is the part most people overlook.
+
+First, it removes a chunk of your home's value from the taxable base, which lowers the bill. Second, it caps how much your taxable value can rise from year to year, regardless of what the market does. Third, it adds legal protections, including limits on a forced sale for most debts.
+
+The exemption is not automatic. You have to file once. After that it renews on its own for as long as you own and occupy the home.
+
+## The 2026 numbers, and what changed
+
+In November 2025, Texas voters approved two constitutional amendments that took effect January 1, 2026. They raised the homestead exemption to the largest level in state history.
+
+:::glance
+Exemption | 2025 | 2026 | Applies to
+General residence homestead | $100,000 | $140,000 | School district taxes
+Additional for age 65+ or disabled | $10,000 | $60,000 | School district taxes (stacks on the $140,000)
+100% disabled veteran | Total exemption | Total exemption | Primary residence, all taxing units
+:::
+
+So every Texas homeowner with a homestead now shields the first $140,000 of value from school district taxes. If you are 65 or older or disabled, you shield $200,000. School taxes are usually the largest line on an Austin tax bill, so this is real money.
+
+One important limit: the $140,000 applies only to the school district portion of your bill. City, county, and other taxing units are separate, which is where the Travis County picture gets interesting.
+
+## The Travis County lens: what stacks on top
+
+This is the part generic guides miss. Your Austin bill is not one tax. It is a stack of taxes from different entities, and several of them offer their own homestead exemption on top of the school exemption.
+
+In Travis County, a homesteaded primary residence currently qualifies for all of the following:
+
+:::glance
+Taxing unit | Homestead exemption | Applies to
+School district (AISD or your ISD) | $140,000 | School portion
+City of Austin | 20% of value | City portion
+Travis County | 20% of value | County portion
+Travis County Healthcare District (Central Health) | 20% of value | Healthcare portion
+:::
+
+Each exemption reduces only that entity's slice of your bill, not the whole bill. But they layer. On a $1,000,000 home, the three 20% exemptions remove $200,000 from the City's taxable value, $200,000 from the County's, and $200,000 from Central Health's, on top of the $140,000 already off the school value. Texas law lets each taxing unit offer up to 20% of value, and the City, County, and Central Health all sit at that legal maximum.
+
+Translation: in Travis County, the higher your home value, the more those percentage exemptions are worth to you in absolute dollars. A flat-dollar school exemption helps a $400,000 owner more in percentage terms, but the stacked 20% exemptions reward Austin's upper market specifically.
+
+## The 10% cap: the benefit that matters most on a luxury home
+
+Filing the homestead exemption activates the 10% appraisal cap. Once you have it, your taxable assessed value can rise no more than 10% per year, even if your market value jumps far more. On a fast-appreciating <a href="/communities/westlake-hills" class="${LINK}">Westlake Hills</a>, <a href="/communities/tarrytown" class="${LINK}">Tarrytown</a>, or <a href="/communities/barton-creek" class="${LINK}">Barton Creek</a> property, this is often worth more than the upfront exemption.
+
+A simplified example. Say you own a $3,000,000 homesteaded home and the market runs hot, pushing its market value up 15% to $3,450,000. Without the cap, you would be taxed on the full jump. With the homestead in place, your taxable assessed value can only climb 10%, to $3,300,000. That $150,000 of value is shielded for the year, worth roughly $3,000 at a typical combined Austin rate near 2%. Better still, next year's 10% cap is calculated off the lower base, so the protection compounds the longer you hold.
+
+Two things to know. The cap resets to full market value when a home sells, so a new owner starts fresh. And it applies only to a homesteaded primary residence, which is why <a href="/invest" class="${LINK}">investors and second-home owners</a> do not get it. There is a separate, temporary 20% circuit-breaker cap on most non-homestead properties valued under $5,000,000, but it is set to expire at the end of 2026, so do not build a long-term plan around it.
+
+## Who qualifies
+
+To claim a general homestead exemption in Travis County, you must:
+
+- Own the home, and
+- Use it as your principal residence, and
+- Hold a Texas driver's license or state ID showing the same address as the property.
+
+You generally need to own and occupy the home as of January 1 of the tax year. There is one helpful exception for buyers: if you purchase during the year, you can file as soon as you own and occupy the home, and the exemption applies to that same year.
+
+For Austin's upper market, the qualification rules create a few common traps worth saying plainly. You can only homestead one property. A second home, a lake house, or a vacation property does not qualify. A home held in an LLC or most trusts generally does not qualify for the standard exemption. And if your driver's license still shows your old address, fix that before you file, because the address mismatch is the most frequent reason applications stall.
+
+## How to file in Travis County
+
+The application is free, and you only do it once. Anyone charging you a fee to file is selling you something you can do yourself in a few minutes.
+
+1. Get the form. File Form 50-114, the Application for Residence Homestead Exemption, with the Travis Central Appraisal District (TCAD).
+2. Choose how to submit. File online through the TCAD portal at traviscad.org, mail your completed form, or drop it off in person at 850 East Anderson Lane, Austin, TX 78752.
+3. Attach proof. Include your Texas driver's license or state ID matching the property address. Have your property account number handy.
+4. Mind the deadline. File by April 30 to capture full savings for the tax year. Late applications are generally accepted for up to two years after the delinquency date, so if you missed it, you can often still recover.
+5. Verify it stuck. Processing can take up to 90 days. Check your status on the TCAD portal, and when your tax statement arrives, confirm the exemption appears and the savings look right. If something is off, TCAD's homestead hotline at 512-873-1560 can help, at no cost.
+
+You do not reapply every year. You only need to refile if you move to a new home or your eligibility changes. TCAD does periodically verify exemptions by law, so if you receive a verification notice, respond by the date on it or the exemption can be removed.
+
+## Over 65, disabled, and veteran homeowners
+
+If you are 65 or older or disabled, you receive the additional $60,000 school exemption described above, plus a school tax ceiling that effectively freezes the school portion of your bill at the level owed the year you qualify. Travis County and other local units also add their own senior and disabled exemptions on top, and the County's additional amount for 65+ or disabled owners is substantial, so confirm the current figure with TCAD when you file. A 100% disabled veteran generally pays no property tax on a primary residence. New for 2026, there is also a partial exemption for a homestead rendered uninhabitable by fire.
+
+## Homestead exemption versus protesting your value
+
+These are two different levers, and the savviest owners pull both. The homestead exemption and its 10% cap reduce and limit your taxable value automatically once filed. A property tax protest separately challenges the value TCAD assigned to your home in a given year. The 2026 protest deadline is May 15, or 30 days after TCAD mails your Notice of Appraised Value, whichever is later. For the full breakdown of <a href="/blog/austin-property-taxes-explained" class="${LINK}">how Austin property taxes work</a> and where the protest fits, see our companion guide.
+
+## The Echelon Property Group take
+
+For Austin's upper market, the homestead exemption is not just a discount, it is a planning tool. The 10% cap is the quiet engine of long-term affordability on an appreciating estate, and the stacked City, County, and Central Health exemptions reward higher-value homes more than most owners realize. The two costliest mistakes we see are buyers who <a href="/blog/moving-to-austin-texas-from-california" class="${LINK}">relocate to Texas</a>, get dazzled by the absence of a state income tax, and forget that property tax is the trade-off, and owners who let an LLC or an address mismatch quietly cost them the exemption entirely.
+
+If you are <a href="/buy" class="${LINK}">buying in Austin</a>, file the day your deed records. If you are weighing <a href="/home-value-austin" class="${LINK}">the true carrying cost of a home</a>, that math is exactly the kind of thing we walk through with clients before they ever sign.
+
+:::faq
+Q: How much is the Texas homestead exemption in 2026?
+A: The general residence homestead exemption is $140,000 off your school district taxable value, raised from $100,000 by Proposition 13 in November 2025. Homeowners who are 65 or older or disabled receive an additional $60,000, for $200,000 total off school taxes.
+
+Q: What homestead exemptions does Travis County offer?
+A: Beyond the $140,000 school exemption, the City of Austin, Travis County, and the Travis County Healthcare District each offer a 20% homestead exemption on their portion of your bill, the maximum allowed by Texas law.
+
+Q: What is the deadline to file in 2026?
+A: File Form 50-114 with TCAD by April 30 for full-year savings. Late applications are generally accepted for up to two years after the delinquency date.
+
+Q: Is the homestead exemption automatic?
+A: No. You must file once with the Travis Central Appraisal District. After approval it renews automatically until you move or your eligibility changes.
+
+Q: What is the 10% homestead cap?
+A: Once you have a homestead exemption, your taxable assessed value can rise no more than 10% per year, even if your market value rises more. The cap resets to market value when the home is sold.
+
+Q: Can I claim a homestead exemption on a second home or an investment property?
+A: No. The exemption applies only to your principal residence, and you can claim it on just one property. Second homes, rentals, and most LLC-owned properties do not qualify.
+
+Q: Do I have to reapply every year?
+A: No. You only refile if you move to a new primary residence or your eligibility changes. TCAD does periodically verify exemptions, so respond promptly if you receive a verification notice.
+
+Q: How much can the exemption save me?
+A: In 2025, the average Travis County homestead exemption saved $3,663. On higher-value homes, total savings run well beyond that once the stacked local exemptions and the 10% cap are factored in.
+:::
+
+*This guide is general information, not tax or legal advice. Exemption amounts and local rates change, so confirm current figures with the Travis Central Appraisal District and the Texas Comptroller before you file.*
+
+*Sources: Texas Comptroller of Public Accounts (comptroller.texas.gov); Travis Central Appraisal District (traviscad.org); Travis County FY2026 Taxpayer Impact Statement (traviscountytx.gov).*
+`
+  },
+
+  {
     id: "buyer-representation-agreement-texas",
     title: "Do You Really Need a Buyer Representation Agreement? A Texas Buyer's Guide for 2026",
     metaTitle: "Do You Need a Buyer Representation Agreement? (Texas 2026)",

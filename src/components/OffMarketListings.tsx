@@ -1,4 +1,5 @@
-{import falconheadAsset from "@/assets/falconhead.avif.asset.json"; Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+import falconheadAsset from "@/assets/falconhead.avif.asset.json";
 import ScrollReveal from "@/components/ScrollReveal";
 import overlookPassAsset from "@/assets/overlook-pass.jpg.asset.json";
 import horseshoeBayAsset from "@/assets/horseshoe-bay.avif.asset.json";
@@ -27,9 +28,10 @@ const properties: OffMarketProperty[] = [
     link: "/contact",
   },
   {
-    badge: "PLACEHOLDER",
-    name: "Property Name",
-    subtitle: "Details available upon qualified inquiry.",
+    image: falconheadAsset.url,
+    badge: "COMING SOON",
+    name: "Falconhead",
+    subtitle: "3,500 SF · $1,100,000",
     link: "/contact",
   },
 ];

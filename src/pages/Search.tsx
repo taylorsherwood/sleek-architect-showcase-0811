@@ -43,6 +43,7 @@ const RealScoutSearch = lazy(() => import("@/components/RealScoutSearch"));
 const RealScoutListings = lazy(() => import("@/components/RealScoutListings"));
 const Testimonials = lazy(() => import("@/components/Testimonials"));
 const FeaturedProperties = lazy(() => import("@/components/FeaturedProperties"));
+const OffMarketListings = lazy(() => import("@/components/OffMarketListings"));
 
 // Slow, eased scroll for hero CTAs (≈1.8s, easeInOutCubic)
 const slowScrollTo = (elementId: string, duration = 1800) => {
@@ -228,6 +229,11 @@ const SearchPage = () => {
       {/* Featured properties (mirrors home page) */}
       <Suspense fallback={<div className="min-h-[400px] bg-secondary" />}>
         <FeaturedProperties />
+      </Suspense>
+
+      {/* Off-Market Listings */}
+      <Suspense fallback={<div className="min-h-[400px] bg-background" />}>
+        <OffMarketListings />
       </Suspense>
 
       {/* Listings widget */}

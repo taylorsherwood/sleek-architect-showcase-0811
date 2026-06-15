@@ -20,9 +20,10 @@ const properties: OffMarketProperty[] = [
     link: "/contact",
   },
   {
-    badge: "PLACEHOLDER",
-    name: "Property Name",
-    subtitle: "Details available upon qualified inquiry.",
+    image: horseshoeBayAsset.url,
+    badge: "UNDER CONTRACT",
+    name: "Horseshoe Bay",
+    subtitle: "5,755 SF · $5,750,000",
     link: "/contact",
   },
   {

@@ -32,10 +32,10 @@ const properties: OffMarketProperty[] = [
   },
 ];
 
-const OffMarketListings = () => {
+const OffMarketListings = ({ className }: { className?: string }) => {
   return (
     <section
-      className="bg-background"
+      className={`bg-background ${className || ""}`}
       style={{ padding: "clamp(80px, 12vw, 120px) 0" }}
     >
       <div className="container mx-auto px-6">

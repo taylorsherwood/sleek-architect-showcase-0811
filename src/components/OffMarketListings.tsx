@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import falconheadAsset from "@/assets/falconhead.jpg.asset.json";
 import ScrollReveal from "@/components/ScrollReveal";
 import overlookPassAsset from "@/assets/overlook-pass.jpg.asset.json";
@@ -463,13 +464,19 @@ const OffMarketListings = ({ className }: { className?: string }) => {
         </div>
       </div>
 
-      {open && (
+      {open && typeof document !== "undefined" && createPortal(
         <div
           role="dialog"
           aria-modal="true"
           aria-label="Request access to off-market listings"
           className="fixed inset-0 z-[100] flex items-center justify-center"
-          style={{ background: "rgba(12, 15, 36, 0.72)", backdropFilter: "blur(6px)" }}
+          style={{
+            background: "rgba(8, 10, 20, 0.55)",
+            backdropFilter: "blur(8px)",
+            WebkitBackdropFilter: "blur(8px)",
+            padding: "16px",
+            overflowY: "auto",
+          }}
           onClick={() => setOpen(false)}
         >
           <div
@@ -477,9 +484,13 @@ const OffMarketListings = ({ className }: { className?: string }) => {
             style={{
               background: "#FAFAF8",
               maxWidth: "440px",
-              width: "calc(100% - 32px)",
+              width: "100%",
               padding: "clamp(28px, 5vw, 44px)",
               position: "relative",
+              borderRadius: "2px",
+              boxShadow: "0 30px 80px -20px rgba(0,0,0,0.55), 0 10px 30px -10px rgba(0,0,0,0.35)",
+              maxHeight: "calc(100vh - 32px)",
+              overflowY: "auto",
             }}
           >
             <button
@@ -603,8 +614,10 @@ const OffMarketListings = ({ className }: { className?: string }) => {
               </button>
             </form>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
+
     </section>
   );
 };

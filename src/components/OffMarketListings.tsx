@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import ScrollReveal from "@/components/ScrollReveal";
+import overlookPassAsset from "@/assets/overlook-pass.jpg.asset.json";
 
 type OffMarketProperty = {
   image?: string;
@@ -11,6 +12,7 @@ type OffMarketProperty = {
 
 const properties: OffMarketProperty[] = [
   {
+    image: overlookPassAsset.url,
     badge: "COMING SOON",
     name: "Overlook Pass",
     subtitle: "7.9 acres · 9,800 SF · $9,800,000",

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import falconheadAsset from "@/assets/falconhead.jpg.asset.json";
 import ScrollReveal from "@/components/ScrollReveal";
 import overlookPassAsset from "@/assets/overlook-pass.jpg.asset.json";

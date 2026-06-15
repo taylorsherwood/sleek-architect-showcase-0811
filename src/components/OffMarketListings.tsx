@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import ScrollReveal from "@/components/ScrollReveal";
 import overlookPassAsset from "@/assets/overlook-pass.jpg.asset.json";
+import horseshoeBayAsset from "@/assets/horseshoe-bay.avif.asset.json";
 
 type OffMarketProperty = {
   image?: string;
@@ -19,9 +20,10 @@ const properties: OffMarketProperty[] = [
     link: "/contact",
   },
   {
-    badge: "PLACEHOLDER",
-    name: "Property Name",
-    subtitle: "Details available upon qualified inquiry.",
+    image: horseshoeBayAsset.url,
+    badge: "UNDER CONTRACT",
+    name: "Horseshoe Bay",
+    subtitle: "5,755 SF · $5,750,000",
     link: "/contact",
   },
   {

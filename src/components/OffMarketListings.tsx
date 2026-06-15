@@ -13,7 +13,7 @@ const properties: OffMarketProperty[] = [
   {
     badge: "COMING SOON",
     name: "Overlook Pass",
-    subtitle: "7.9 acres · 9,800 SF · $9,000,000",
+    subtitle: "7.9 acres · 9,800 SF · $9,800,000",
     link: "/contact",
   },
   {

@@ -521,7 +521,7 @@ const BlogContent = ({ content, afterGlance, category, articleId }: BlogContentP
             );
           case "intel-gauge-austin-metro":
             return (
-              <IntelInsert key={idx}>
+              <IntelInsert key={idx} tight>
                 <MarketBalanceGauge
                   communityName="Greater Austin · All Price Points · All Property Types"
                   marketName="Austin Metro"

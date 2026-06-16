@@ -483,7 +483,7 @@ A: If you agreed to a fee in your representation agreement and the seller does n
 Q: Is a buyer's agent still worth it if I have to pay?
 A: For most buyers, yes. Representation includes pricing analysis, reading disclosures and inspections, offer and negotiation strategy, and managing the deadlines that protect your money and your contract. On a purchase this size, skilled representation usually saves more than it costs.
 :::
-`,`,
+`,
   },
   {
     id: "off-market-luxury-homes-austin",

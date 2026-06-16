@@ -420,7 +420,7 @@ A: Generally no. Seller-paid buyer-agent fees are treated as customarily seller-
 Q: What happens if the seller will not pay my agent?
 A: If you agreed to a fee in your representation agreement and the seller does not cover it, you may owe the difference. That is why it is important to settle the fee and the payment plan with your agent up front, before you write an offer.
 :::
-\`,
+`,
   },
   {
     id: "off-market-luxury-homes-austin",

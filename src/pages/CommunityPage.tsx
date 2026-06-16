@@ -265,7 +265,7 @@ const CommunityPage = () => {
   const slug = rawSlug;
   const dataSlug = (rawSlug && dataSlugAliases[rawSlug]) || rawSlug;
 
-  const community = communityPages.find((c) => c.slug === slug);
+  const community = communityPages.find((c) => c.slug === dataSlug);
 
   if (!community) {
     return (

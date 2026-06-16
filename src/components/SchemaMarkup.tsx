@@ -305,6 +305,7 @@ export function createRealEstateListingSchema(listing: { name: string; descripti
 
 export function createFAQSchema(faqs: { question: string; answer: string }[]) {
   const seen = new Set<string>();
+  const stripHtml = (text: string) => text.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
   const validFaqs = faqs.filter(faq => {
     const q = (faq.question || "").trim();
     const a = (faq.answer || "").trim();
@@ -320,10 +321,10 @@ export function createFAQSchema(faqs: { question: string; answer: string }[]) {
     "@type": "FAQPage",
     "mainEntity": validFaqs.map(faq => ({
       "@type": "Question",
-      "name": faq.question.trim(),
+      "name": stripHtml(faq.question.trim()),
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": faq.answer.trim(),
+        "text": stripHtml(faq.answer.trim()),
       },
     })),
   };

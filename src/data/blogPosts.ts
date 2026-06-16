@@ -403,7 +403,7 @@ One rule ties it together. If you have agreed to a fee in your representation ag
 
 Numbers make this concrete. Say you are buying a $600,000 home in Austin, and you and your agent have agreed on a fee of $15,000. That figure is purely illustrative, since there is no standard rate and you negotiate your own. Here is how the three paths play out:
 
-If the seller covers the full fee: Your agent requests a $15,000 contribution in the offer, the seller agrees, and it is written into the contract. You pay nothing toward the fee, and your cash to close is unaffected by the commission. This is still the most common result.
+If the seller covers the full fee: Your agent requests a $15,000 contribution in the offer, the seller agrees, and it is written into the contract. You pay nothing toward the fee, and your cash to close is unaffected by the commission. This is still the most common route.
 
 If the seller covers part: The seller agrees to $7,500 and you cover the remaining $7,500. You bring that difference at closing, or your agent structures the rest of the deal, on price or other terms, so the math still works for you.
 

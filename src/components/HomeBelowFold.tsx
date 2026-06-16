@@ -1226,7 +1226,7 @@ const FinalCTA = () => (
           </ScrollReveal>
           <ScrollReveal delay={150}>
             <p className="text-[15px] mb-12 max-w-[400px] mx-auto text-muted-foreground" style={{ fontFamily: '"Jost", sans-serif', fontWeight: 300, lineHeight: 1.8 }}>
-              Luxury real estate, redefined through strategy, access, and execution.
+              Real estate, redefined through strategy, access, & execution.
             </p>
             <div className="flex flex-col sm:flex-row gap-5 justify-center">
               <Link to="/buy" className="cta-luxury">

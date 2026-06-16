@@ -31,7 +31,7 @@ const COMMUNITY_TARGETS: LinkTarget[] = [
   { patterns: ["Hill Country Estates", "Texas Hill Country"], href: "/communities/texas-hill-country-estates" },
   { patterns: ["Lake Austin"], href: "/communities/lake-austin" },
   { patterns: ["Zilker"], href: "/communities/zilker-austin" },
-  { patterns: ["Cat Mountain", "Northwest Hills"], href: "/communities/cat-mountain-northwest-hills" },
+  { patterns: ["Cat Mountain", "Northwest Hills"], href: "/communities/cat-mountain" },
   { patterns: ["Spanish Oaks"], href: "/communities/spanish-oaks" },
   { patterns: ["Clarksville"], href: "/communities/clarksville" },
   { patterns: ["Lake Travis"], href: "/communities/lake-travis", priority: 10 },

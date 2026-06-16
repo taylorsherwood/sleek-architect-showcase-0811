@@ -28,7 +28,7 @@ type Check = {
 const CRITICAL_ROUTES: Check[] = [
   { route: "/", expectJsonLd: true },
   { route: "/blog/minimalism-modern-living", expectJsonLd: true },
-  { route: "/communities/cat-mountain-northwest-hills", expectJsonLd: true },
+  { route: "/communities/cat-mountain", expectJsonLd: true },
   { route: "/land-ranch", expectJsonLd: true },
   { route: "/austin-luxury-homes-for-sale", expectJsonLd: true },
   { route: "/sell", expectJsonLd: true },

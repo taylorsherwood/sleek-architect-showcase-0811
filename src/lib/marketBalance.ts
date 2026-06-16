@@ -99,7 +99,7 @@ const SLUG_MARKET: Record<string, { primary: string; fallback: string }> = {
   "texas-hill-country-estates": { primary: "Hill Country", fallback: "Austin Metro" },
   "zilker-austin": { primary: "South Austin", fallback: "Austin Metro" },
   "spanish-oaks": { primary: "Bee Cave", fallback: "Austin Metro" },
-  "cat-mountain-northwest-hills": { primary: "Northwest Austin", fallback: "Austin Metro" },
+  "cat-mountain": { primary: "Northwest Austin", fallback: "Austin Metro" },
   "lake-austin": { primary: "West Austin", fallback: "Austin Metro" },
   "clarksville": { primary: "Central Austin", fallback: "Austin Metro" },
   "lake-travis": { primary: "Lake Travis", fallback: "Austin Metro" },

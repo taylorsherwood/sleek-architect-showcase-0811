@@ -108,7 +108,6 @@ const LandRanchHomeIntro = () => {
               }}
             >
               <span style={{ fontStyle: "italic", fontFamily: '"Cinzel", serif' }}>
-                Beyond
               </span>{" "}
               Luxury Homes
             </h2>

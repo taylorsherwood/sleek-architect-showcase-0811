@@ -1,7 +1,7 @@
 import { useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import ScrollReveal from "@/components/ScrollReveal";
-import landRanchHeroAsset from "@/assets/land-ranch-home-intro.webp.asset.json";
+import landRanchHeroAsset from "@/assets/ranch-land-hero.jpg.asset.json";
 const landRanchHeroImg = landRanchHeroAsset.url;
 
 const highlightCards = [
@@ -58,7 +58,7 @@ const LandRanchHomeIntro = () => {
         >
           <img
             src={landRanchHeroImg}
-            alt="Texas Hill Country ranch land at golden hour with rolling pastures and oak trees"
+            alt="Aerial view of Texas Hill Country ranch land at sunset with golden light across rolling pastures and winding trails"
             className="absolute inset-0 w-full h-full object-cover will-change-transform"
             style={{ transform: "scale(1.08)" }}
             loading="lazy"

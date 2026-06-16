@@ -922,13 +922,39 @@ const LandRanch = () => {
       {/* ── SECTION 6: MARKET SNAPSHOT ──────────────────────── */}
       <section className="pt-0 pb-14 md:pb-20 bg-secondary/40">
         <div className="h-12 md:h-20" aria-hidden="true" />
-        {/* Fancy gold divider */}
-        <div className="flex items-center justify-center gap-4 md:gap-6 py-14 md:py-20" aria-hidden="true">
-          <span className="h-px flex-1 max-w-[260px] md:max-w-[360px]" style={{ background: "linear-gradient(to right, rgba(185,160,108,0), #b9a06c)" }} />
-          <span className="inline-block w-2 h-2 rotate-45" style={{ backgroundColor: "#b9a06c" }} />
-          <span className="inline-block w-1.5 h-1.5 rotate-45" style={{ backgroundColor: "#b9a06c" }} />
-          <span className="inline-block w-2 h-2 rotate-45" style={{ backgroundColor: "#b9a06c" }} />
-          <span className="h-px flex-1 max-w-[260px] md:max-w-[360px]" style={{ background: "linear-gradient(to left, rgba(185,160,108,0), #b9a06c)" }} />
+        {/* Fancy barbed wire divider */}
+        <div className="container mx-auto px-6" aria-hidden="true">
+          <div className="flex items-center justify-center max-w-3xl mx-auto">
+            <span className="h-px flex-1 bg-gradient-to-r from-transparent to-[#b9a06c]/60" />
+            <svg
+              viewBox="0 0 240 24"
+              className="w-48 h-5 mx-3"
+              fill="none"
+              preserveAspectRatio="xMidYMid meet"
+            >
+              {/* Twisted strands */}
+              <path
+                d="M0,12 C30,6 60,18 90,12 C120,6 150,18 180,12 C210,6 240,18 240,12"
+                stroke="#b9a06c"
+                strokeWidth="1"
+              />
+              <path
+                d="M0,12 C30,18 60,6 90,12 C120,18 150,6 180,12 C210,18 240,6 240,12"
+                stroke="#b9a06c"
+                strokeWidth="1"
+              />
+              {/* Barbs */}
+              {[60, 120, 180].map((x) => (
+                <g key={x}>
+                  <line x1={x} y1="5" x2={x} y2="19" stroke="#b9a06c" strokeWidth="1" />
+                  <line x1={x - 5} y1="9" x2={x + 5} y2="15" stroke="#b9a06c" strokeWidth="1" />
+                  <line x1={x + 5} y1="9" x2={x - 5} y2="15" stroke="#b9a06c" strokeWidth="1" />
+                  <circle cx={x} cy="12" r="1.5" fill="#b9a06c" />
+                </g>
+              ))}
+            </svg>
+            <span className="h-px flex-1 bg-gradient-to-l from-transparent to-[#b9a06c]/60" />
+          </div>
         </div>
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mb-14">
@@ -1358,13 +1384,39 @@ const LandRanch = () => {
             </div>
           </div>
 
-          {/* Fancy gold divider — matches Ranch Ownership Profiles */}
-          <div className="mt-14 md:mt-20 flex items-center justify-center gap-4 md:gap-6" aria-hidden="true">
-            <span className="h-px flex-1 max-w-[260px] md:max-w-[360px]" style={{ background: "linear-gradient(to right, rgba(185,160,108,0), #b9a06c)" }} />
-            <span className="inline-block w-2 h-2 rotate-45" style={{ backgroundColor: "#b9a06c" }} />
-            <span className="inline-block w-1.5 h-1.5 rotate-45" style={{ backgroundColor: "#b9a06c" }} />
-            <span className="inline-block w-2 h-2 rotate-45" style={{ backgroundColor: "#b9a06c" }} />
-            <span className="h-px flex-1 max-w-[260px] md:max-w-[360px]" style={{ background: "linear-gradient(to left, rgba(185,160,108,0), #b9a06c)" }} />
+          {/* Fancy barbed wire divider */}
+          <div className="mt-14 md:mt-20 container mx-auto px-6" aria-hidden="true">
+            <div className="flex items-center justify-center max-w-3xl mx-auto">
+              <span className="h-px flex-1 bg-gradient-to-r from-transparent to-[#b9a06c]/60" />
+              <svg
+                viewBox="0 0 240 24"
+                className="w-48 h-5 mx-3"
+                fill="none"
+                preserveAspectRatio="xMidYMid meet"
+              >
+                {/* Twisted strands */}
+                <path
+                  d="M0,12 C30,6 60,18 90,12 C120,6 150,18 180,12 C210,6 240,18 240,12"
+                  stroke="#b9a06c"
+                  strokeWidth="1"
+                />
+                <path
+                  d="M0,12 C30,18 60,6 90,12 C120,18 150,6 180,12 C210,18 240,6 240,12"
+                  stroke="#b9a06c"
+                  strokeWidth="1"
+                />
+                {/* Barbs */}
+                {[60, 120, 180].map((x) => (
+                  <g key={x}>
+                    <line x1={x} y1="5" x2={x} y2="19" stroke="#b9a06c" strokeWidth="1" />
+                    <line x1={x - 5} y1="9" x2={x + 5} y2="15" stroke="#b9a06c" strokeWidth="1" />
+                    <line x1={x + 5} y1="9" x2={x - 5} y2="15" stroke="#b9a06c" strokeWidth="1" />
+                    <circle cx={x} cy="12" r="1.5" fill="#b9a06c" />
+                  </g>
+                ))}
+              </svg>
+              <span className="h-px flex-1 bg-gradient-to-l from-transparent to-[#b9a06c]/60" />
+            </div>
           </div>
         </div>
       </section>
@@ -1533,13 +1585,37 @@ const LandRanch = () => {
       {/* ── SECTION 5.5: PRIVATE LAND OPPORTUNITIES ──────────────────────── */}
       <section className="py-14 md:py-20">
         <div className="container mx-auto px-6">
-          {/* Fancy gold divider */}
-          <div className="mb-14 md:mb-20 flex items-center justify-center gap-4 md:gap-6" aria-hidden="true">
-            <span className="h-px flex-1 max-w-[260px] md:max-w-[360px]" style={{ background: "linear-gradient(to right, rgba(185,160,108,0), #b9a06c)" }} />
-            <span className="inline-block w-2 h-2 rotate-45" style={{ backgroundColor: "#b9a06c" }} />
-            <span className="inline-block w-1.5 h-1.5 rotate-45" style={{ backgroundColor: "#b9a06c" }} />
-            <span className="inline-block w-2 h-2 rotate-45" style={{ backgroundColor: "#b9a06c" }} />
-            <span className="h-px flex-1 max-w-[260px] md:max-w-[360px]" style={{ background: "linear-gradient(to left, rgba(185,160,108,0), #b9a06c)" }} />
+          {/* Fancy barbed wire divider */}
+          <div className="mb-14 md:mb-20 flex items-center justify-center max-w-3xl mx-auto" aria-hidden="true">
+            <span className="h-px flex-1 bg-gradient-to-r from-transparent to-[#b9a06c]/60" />
+            <svg
+              viewBox="0 0 240 24"
+              className="w-48 h-5 mx-3"
+              fill="none"
+              preserveAspectRatio="xMidYMid meet"
+            >
+              {/* Twisted strands */}
+              <path
+                d="M0,12 C30,6 60,18 90,12 C120,6 150,18 180,12 C210,6 240,18 240,12"
+                stroke="#b9a06c"
+                strokeWidth="1"
+              />
+              <path
+                d="M0,12 C30,18 60,6 90,12 C120,18 150,6 180,12 C210,18 240,6 240,12"
+                stroke="#b9a06c"
+                strokeWidth="1"
+              />
+              {/* Barbs */}
+              {[60, 120, 180].map((x) => (
+                <g key={x}>
+                  <line x1={x} y1="5" x2={x} y2="19" stroke="#b9a06c" strokeWidth="1" />
+                  <line x1={x - 5} y1="9" x2={x + 5} y2="15" stroke="#b9a06c" strokeWidth="1" />
+                  <line x1={x + 5} y1="9" x2={x - 5} y2="15" stroke="#b9a06c" strokeWidth="1" />
+                  <circle cx={x} cy="12" r="1.5" fill="#b9a06c" />
+                </g>
+              ))}
+            </svg>
+            <span className="h-px flex-1 bg-gradient-to-l from-transparent to-[#b9a06c]/60" />
           </div>
           <div className="max-w-3xl mx-auto text-center">
 

@@ -477,7 +477,7 @@ A: Yes. A seller can agree to contribute toward the buyer's agent fee, negotiate
 Q: Can I add my agent's commission to my mortgage?
 A: In effect, often yes. You generally cannot add the commission to the loan as its own line item, but you can offer a higher price and have the seller pay your agent's fee out of the proceeds, written into the purchase contract. Because the mortgage is sized off the purchase price, you finance most of the fee over the life of the loan instead of paying it in cash at closing. The key limit is the appraisal: the home has to appraise at or near the higher price, so this works only when you are not paying a large premium over value. It also raises your down payment and monthly payment slightly, since both are based on the larger number. Run the structure by your agent and lender before you write the offer.
 
-Q: Where is the buyer's agent fee written down?
+Q: Where is the buyer's agent fee disclosed?
 A: In your buyer representation agreement. It states the fee, caps what the agent can collect, sets a termination date, and defines the terms of the relationship before any offer is made. Commissions for both listing and buyer agents will be reflected on your final closing statements.
 
 Q: Does a seller paying my agent reduce what they can contribute to my closing costs?

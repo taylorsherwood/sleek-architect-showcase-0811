@@ -325,7 +325,7 @@ const CommunityPage = () => {
       <SEOHead
         title={community.metaTitle || `${community.name} Homes for Sale | Echelon Property Group`}
         description={`${community.name} homes for sale in Austin TX. Browse listings, pricing trends, and neighborhood insights from Echelon Property Group.`}
-        canonical={`/communities/${community.slug}`}
+        canonical={`/communities/${rawSlug}`}
       />
       {heroImageSrc && (
         <Helmet prioritizeSeoTags>
@@ -335,11 +335,11 @@ const CommunityPage = () => {
         </Helmet>
       )}
       <SchemaMarkup schema={createFAQSchema(allFaqs)} />
-      <SchemaMarkup schema={createCommunityPlaceSchema(community)} />
+      <SchemaMarkup schema={createCommunityPlaceSchema({ ...community, slug: rawSlug || community.slug })} />
       <SchemaMarkup schema={createBreadcrumbSchema([
         { name: "Home", url: `${SITE_URL}/` },
         { name: "Communities", url: `${SITE_URL}/communities` },
-        { name: community.name, url: `${SITE_URL}/communities/${community.slug}` },
+        { name: community.name, url: `${SITE_URL}/communities/${rawSlug}` },
       ])} />
       <Navigation />
 

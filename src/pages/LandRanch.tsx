@@ -1093,15 +1093,37 @@ const LandRanch = () => {
 
       <div className="h-6 md:h-8" aria-hidden="true" />
 
-      {/* Fancy gold divider */}
+      {/* Fancy barbed wire divider */}
       <div className="container mx-auto px-6" aria-hidden="true">
-        <div className="flex items-center justify-center gap-4 max-w-3xl mx-auto">
+        <div className="flex items-center justify-center max-w-3xl mx-auto">
           <span className="h-px flex-1 bg-gradient-to-r from-transparent to-[#b9a06c]/60" />
-          <span className="w-1.5 h-1.5 rotate-45 bg-[#b9a06c]" />
-          <span className="h-px w-16 bg-[#b9a06c]" />
-          <span className="w-2 h-2 rotate-45 border border-[#b9a06c]" />
-          <span className="h-px w-16 bg-[#b9a06c]" />
-          <span className="w-1.5 h-1.5 rotate-45 bg-[#b9a06c]" />
+          <svg
+            viewBox="0 0 240 24"
+            className="w-48 h-5 mx-3"
+            fill="none"
+            preserveAspectRatio="xMidYMid meet"
+          >
+            {/* Twisted strands */}
+            <path
+              d="M0,12 C30,6 60,18 90,12 C120,6 150,18 180,12 C210,6 240,18 240,12"
+              stroke="#b9a06c"
+              strokeWidth="1"
+            />
+            <path
+              d="M0,12 C30,18 60,6 90,12 C120,18 150,6 180,12 C210,18 240,6 240,12"
+              stroke="#b9a06c"
+              strokeWidth="1"
+            />
+            {/* Barbs */}
+            {[60, 120, 180].map((x) => (
+              <g key={x}>
+                <line x1={x} y1="5" x2={x} y2="19" stroke="#b9a06c" strokeWidth="1" />
+                <line x1={x - 5} y1="9" x2={x + 5} y2="15" stroke="#b9a06c" strokeWidth="1" />
+                <line x1={x + 5} y1="9" x2={x - 5} y2="15" stroke="#b9a06c" strokeWidth="1" />
+                <circle cx={x} cy="12" r="1.5" fill="#b9a06c" />
+              </g>
+            ))}
+          </svg>
           <span className="h-px flex-1 bg-gradient-to-l from-transparent to-[#b9a06c]/60" />
         </div>
       </div>

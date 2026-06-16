@@ -338,22 +338,40 @@ A: Yes. These agreements include termination terms. Review the cancellation prov
 
 Since the rules changed in 2024, nearly every Texas buyer asks some version of the same question: do I have to pay my own agent now? The honest answer is that you might, you might not, and you have far more control over the outcome than most people realize. What actually changed is transparency, not necessarily who writes the check. The cost of buyer representation was always part of the transaction. Now it is visible, negotiable, and spelled out in writing before you ever tour a home.
 
-Here is exactly how buyer-agent commissions work in Texas in 2026, who can pay them, and how a good agent structures a deal so the fee does not come out of your pocket.
+This guide covers how buyer-agent commissions work in Texas in 2026, what the fee actually buys, who can pay it, what it looks like in real numbers, and how a sharp agent structures a deal so the cost does not land on you.
 
 :::stat-block
 title: Quick answer
-• Buyer-agent commissions in Texas are fully negotiable and are no longer set or advertised through the MLS. You and your agent agree on the fee in writing in your buyer representation agreement. It can then be covered one of three ways: you pay your agent directly, the seller contributes toward it in the purchase contract, or the listing broker shares part of its commission. Seller contributions remain common, so in many transactions the buyer does not pay the fee out of pocket. There is no standard rate, and compensation is negotiable in every deal.
+Buyer-agent commissions in Texas are fully negotiable and are no longer set or advertised through the MLS. You and your agent agree on the fee in writing in your buyer representation agreement. It can then be covered one of three ways: you pay your agent directly, the seller contributes toward it in the purchase contract, or the listing broker shares part of its commission. Seller contributions remain common, so in many transactions the buyer does not pay the fee out of pocket. There is no standard rate, and compensation is negotiable in every deal.
 :::
 
 ## What changed, and why buyers are suddenly asking
 
-Two events reshaped this. The <a href="https://www.nar.realtor/the-facts/nar-settlement-faqs" target="_blank" rel="noopener" class="${LINK}">national NAR settlement</a>, effective August 17, 2024, ended the practice of advertising buyer-agent compensation through the MLS. Then Texas required, by law, that buyers and agents put their arrangement in writing before the agent does any real work. The result is that the buyer's agent fee, which used to be quietly handled behind the scenes, is now stated plainly in an agreement the buyer signs.
+Two events reshaped this. The <a href="https://www.nar.realtor/the-facts/nar-settlement-faqs" target="_blank" rel="noopener" class="${LINK}">national NAR settlement</a>, effective August 17, 2024, ended the practice of advertising buyer-agent compensation through the MLS. Then Texas required, by law, that buyers and agents put their arrangement in writing before the agent does any real work. The result is that the buyer's agent fee, which used to be handled quietly behind the scenes, is now stated plainly in an agreement the buyer signs.
 
-That feels like a new cost, but it usually is not. The fee was always built into how deals were done. What buyers gained is leverage. You now see the number, you negotiate it, and you decide how it gets covered. Transparency replaced a system most buyers never actually saw.
+That feels like a new cost, but it usually is not. The fee was always built into how deals were done. What buyers gained is leverage. You now see the number, you negotiate it, and you decide how it gets covered. Transparency replaced a system most buyers never actually saw. The old model assumed the seller's side would pay your agent and rarely said so out loud. The new model makes you a party to that decision, which is a better position to be in, not a worse one.
+
+## What you are actually paying for
+
+Before worrying about who pays, it helps to know what the fee buys, because that is what makes it worth negotiating for rather than around. A buyer's agent is not a door-opener. Under a representation agreement, the agent is your fiduciary, and the work behind that word is where the value sits:
+
+Pricing analysis so you do not overpay, backed by real comparable sales rather than a hopeful list price.
+
+A trained read on disclosures, inspection reports, and surveys, so a problem gets caught before closing instead of after.
+
+Offer strategy, including the concession and rate-buydown structures that can save you far more than the fee itself.
+
+Negotiation on price, repairs, timelines, and terms, with someone whose duty runs to you alone.
+
+Management of the contract calendar, the option period, and the financing and appraisal deadlines, the small steps where a missed date can cost you your earnest money or the house.
+
+Problem-solving when something goes sideways during the transaction, and on most deals, something does.
+
+The real question is not only who pays, but what competent representation is worth on a purchase this size. Framed that way, the fee is rarely the expensive part of the deal. A weak agent is.
 
 ## How much is a buyer's agent paid?
 
-There is no set rate, and that is the point. The <a href="https://www.trec.texas.gov" target="_blank" rel="noopener" class="${LINK}">Texas Real Estate Commission</a> is explicit that broker fees are not set by law and are fully negotiable, and the required disclosures now say exactly that. Compensation can be structured as a percentage of the price, a flat fee, or in some cases an hourly arrangement. Whatever the form, it has to be an objective, stated amount in your agreement, not a vague "to be determined."
+There is no set rate, and that is the point. Texas law is explicit that broker fees are not set by law and are fully negotiable, and the required disclosures now say exactly that. Compensation can be structured as a percentage of the price, a flat fee, or in some cases an hourly arrangement. A percentage is the most familiar, a flat fee can make sense on higher-priced homes where a percentage would overstate the work, and an hourly model is less common but exists. Whatever the form, it has to be an objective, stated amount in your agreement, not a vague "to be determined."
 
 The practical takeaway is that you should talk through the fee and the structure with any agent before you commit, the same way you would with any professional you hire. You are allowed to ask what you are paying for, and to negotiate it.
 
@@ -361,7 +379,7 @@ The practical takeaway is that you should talk through the fee and the structure
 
 The number does not float around in the ether. It is defined in your buyer representation agreement, the written contract that also makes the agent your advocate. That agreement states the fee, caps what the agent can collect so they cannot earn more than the agreed amount, sets a termination date, and spells out whether the relationship is exclusive. We break that document down in detail in our guide to <a href="/blog/buyer-representation-agreement-texas" class="${LINK}">Texas buyer representation agreements</a>.
 
-Because the fee lives in that agreement, you always know what you have agreed to before an offer is ever written. There are no surprises at the closing table, which is exactly the point of putting it in writing.
+Because the fee lives in that agreement, you always know what you have agreed to before an offer is ever written. There are no surprises at the closing table, which is the entire point of putting it in writing.
 
 ## Who actually pays? The three ways it gets covered
 
@@ -374,30 +392,69 @@ The listing broker shares | The listing side splits part of its commission with 
 You pay directly | You pay your agent per your representation agreement, in cash or folded into negotiated costs | Cleanest and most transparent, but it is an out-of-pocket obligation
 :::
 
-In Texas, a seller's contribution toward your agent is negotiated in the purchase contract itself. If you have agreed to a fee in your representation agreement and the seller does not cover all of it, you may be responsible for the difference, which is precisely why getting the number and the plan settled up front matters so much.
+The seller contribution is still the most common outcome. It is negotiated in the purchase contract itself, where the seller agrees to a specific amount toward your agent's fee. The listing-broker split is the legacy arrangement, where the listing side shares part of its commission, coordinated between the two brokers. Paying directly happens when a seller will not contribute, or when a buyer simply prefers to handle it themselves. Many deals blend these, for example a seller covering part and the buyer covering the rest.
+
+One rule ties it together. If you have agreed to a fee in your representation agreement and the seller does not cover all of it, you may be responsible for the difference. That is precisely why settling the number and the plan up front matters so much. Surprise is the enemy here, and the agreement exists to remove it.
+
+## A real example, by the numbers
+
+Numbers make this concrete. Say you are buying a $600,000 home in Austin, and you and your agent have agreed on a fee of $15,000. That figure is purely illustrative, since there is no standard rate and you negotiate your own. Here is how the three paths play out:
+
+If the seller covers the full fee: Your agent requests a $15,000 contribution in the offer, the seller agrees, and it is written into the contract. You pay nothing toward the fee, and your cash to close is unaffected by the commission. This is still the most common result.
+
+If the seller covers part: The seller agrees to $7,500 and you cover the remaining $7,500. You bring that difference at closing, or your agent structures the rest of the deal, on price or other terms, so the math still works for you.
+
+If the seller will not contribute: You owe the full $15,000 under your agreement. Your options are to pay it at closing, to have your agent build the request into the offer differently, or to weigh whether this particular home is worth that out-of-pocket cost. You knew the exposure going in, because the fee was set in your agreement before you ever wrote the offer.
+
+The throughline is that the worst-case number was never a mystery. You agreed to it up front, which means you can plan your cash and your strategy around it rather than getting blindsided at the table.
 
 ## Does a seller paying my agent reduce my other help?
 
 This is the question that trips people up, and the answer is good news. When a seller contributes toward your agent's fee, that contribution generally does not count against the loan's seller-concession cap. <a href="https://singlefamily.fanniemae.com/media/38816/display" target="_blank" rel="noopener" class="${LINK}">Fannie Mae</a> and <a href="https://sf.freddiemac.com/working-with-us/news/2024/08-12-bulletin-2024-13" target="_blank" rel="noopener" class="${LINK}">Freddie Mac</a> clarified in 2024 that buyer-agent fees are treated as costs customarily paid by the seller, so they sit outside the financing-concession limits, as long as that remains customary in your market. The FHA gave similar guidance.
 
-In plain terms, a seller can cover your agent's fee and still contribute toward your closing costs up to the loan's limit. Those seller contributions have their own caps and rules, which we cover in our guide to <a href="/blog/seller-concessions-texas" class="${LINK}">seller concessions in Texas</a>. The two work together rather than competing.
+In plain terms, a seller can cover your agent's fee and still contribute toward your closing costs up to the loan's limit. Those seller contributions have their own caps and rules, which we cover in our guide to <a href="/blog/seller-concessions-texas" class="${LINK}">seller concessions in Texas</a>. The two work together rather than competing, which is a meaningful advantage when you are managing cash to close.
 
 <!-- TODO: Verify /blog/seller-concessions-texas exists once that post is published. -->
 
-## How to keep it from coming out of your pocket
+## How to negotiate it in your favor
 
-A capable agent treats this as part of the strategy, not an afterthought. A few moves make the difference:
+A capable agent treats the fee as part of the deal strategy, not an afterthought. The market sets the table:
 
-1. Agree on the fee and a payment plan with your agent before you start touring, so nothing is a surprise.
-2. Have your agent request a seller contribution toward the fee as part of your offer, negotiated in the contract.
-3. Understand your representation agreement, especially the cap and what happens if the seller does not cover the full amount.
-4. Use the market to your advantage. In a balanced or slower market, sellers are often more willing to contribute.
+In a balanced or slower market, asking the seller to cover your agent's fee is routine and rarely costs you the deal. Sellers expect it, and motivated ones agree to it.
 
-Handled well, the most common outcome is still that the seller's side covers most or all of the buyer-agent fee. The change is that now it is negotiated openly and documented, instead of assumed.
+In a hot, multiple-offer market, a request for a seller contribution can weaken your offer against buyers who are not asking. Here you and your agent weigh the trade-offs: ask anyway, absorb the fee yourself, or offer slightly more on price to offset what you are requesting back. The right call depends on the property, the competition, and your cash position.
+
+Beyond the market, a few moves consistently help:
+
+Agree on the fee and a payment plan with your agent before you start touring, so nothing is a surprise.
+
+Get pre-approved and know your cash position, so you know how much fee exposure you could absorb if a seller will not contribute.
+
+Use the flexibility in your agreement. Fee, term, and scope are negotiable up front.
+
+Let your agent structure the offer so price and any requested contribution work together, rather than treating the fee as a separate problem bolted onto the deal.
+
+Handled well, the most common outcome is still that the seller's side covers most or all of the buyer-agent fee. The difference now is that it is negotiated openly and documented, instead of assumed.
+
+## Common mistakes buyers make
+
+The new system rewards preparation and punishes autopilot. The avoidable errors:
+
+Signing a representation agreement without actually discussing the fee or the plan to cover it.
+
+Assuming the seller will always pay, then getting caught off guard when an offer comes together.
+
+Touring with several different agents, which muddies who represents you and who is owed a fee.
+
+Skipping the fine print on the cap and the term, then feeling boxed in later.
+
+Pushing for a large seller contribution in a multiple-offer situation without weighing how much it weakens the offer.
+
+None of these are hard to avoid. They just require treating the fee as a real part of the transaction, which is exactly what a good agent will insist on.
 
 ## The bottom line
 
-The headline change to buyer-agent commissions in Texas is transparency, and it favors the buyers who understand it. The fee is negotiable, it is defined in your representation agreement, and there are three ways to cover it, frequently without cash out of your pocket. The buyers who come out ahead are the ones who treat the fee as one more thing to negotiate, with an agent who knows how to structure the deal.
+The headline change to buyer-agent commissions in Texas is transparency, and it favors the buyers who understand it. The fee is negotiable, it is defined in your representation agreement, and there are three ways to cover it, frequently without cash out of your pocket. The buyers who come out ahead are the ones who treat the fee as one more thing to negotiate, with an agent who knows how to structure the deal so the cost lands where it does the least damage.
 
 At Echelon Property Group, we walk buyers through compensation before the first showing, so you know exactly what you are agreeing to and how we plan to get it covered. If you are buying in Austin or the surrounding Hill Country, let's <a href="/buy" class="${LINK}">have that conversation early</a>, where it does you the most good.
 
@@ -411,6 +468,9 @@ A: There is no standard rate. Buyer-agent compensation is fully negotiable and i
 Q: Can the seller still pay the buyer's agent?
 A: Yes. A seller can agree to contribute toward the buyer's agent fee, negotiated in the purchase contract. This is still a common outcome, even though it is no longer advertised through the MLS.
 
+Q: Can I add my agent's commission to my mortgage?
+A: Generally no. The fee is typically paid at closing rather than rolled into the loan amount, and it is covered by a seller contribution, a listing-broker split, or your own funds. That is why it is worth planning for in your cash to close. Confirm the specifics with your lender.
+
 Q: Where is the buyer's agent fee written down?
 A: In your buyer representation agreement. It states the fee, caps what the agent can collect, sets a termination date, and defines the terms of the relationship before any offer is made.
 
@@ -419,8 +479,11 @@ A: Generally no. Seller-paid buyer-agent fees are treated as customarily seller-
 
 Q: What happens if the seller will not pay my agent?
 A: If you agreed to a fee in your representation agreement and the seller does not cover it, you may owe the difference. That is why it is important to settle the fee and the payment plan with your agent up front, before you write an offer.
+
+Q: Is a buyer's agent still worth it if I have to pay?
+A: For most buyers, yes. Representation includes pricing analysis, reading disclosures and inspections, offer and negotiation strategy, and managing the deadlines that protect your money and your contract. On a purchase this size, skilled representation usually saves more than it costs.
 :::
-`,
+`,`,
   },
   {
     id: "off-market-luxury-homes-austin",

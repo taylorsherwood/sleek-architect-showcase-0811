@@ -525,7 +525,7 @@ const BlogContent = ({ content, afterGlance, category, articleId }: BlogContentP
                 <MarketBalanceGauge
                   communityName="Greater Austin · All Price Points · All Property Types"
                   marketName="Austin Metro"
-                  eyebrow={"\n\nGREATER AUSTIN · ALL PRICE POINTS · ALL PROPERTY TYPES · BUYER / SELLER BALANCE"}
+                  eyebrow={"\n\nGREATER AUSTIN · ALL PRICE POINTS · ALL PROPERTY TYPES · BUYER / SELLER BALANCE IN REAL TIME"}
                 />
               </IntelInsert>
             );

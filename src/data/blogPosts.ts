@@ -332,7 +332,7 @@ A: Yes. These agreements include termination terms. Review the cancellation prov
     image: blogBuyerAgentCommissionTexas.url,
     heroImage: blogBuyerAgentCommissionTexas.url,
     imageAlt: "A real estate agent hangs balloons on an Open House sign in front of a craftsman-style home on a sunny afternoon, illustrating the buyer-agent commission and representation conversation in Texas",
-    imageCaption: "In Texas, the buyer-agent fee is now negotiated openly in writing before the first showing, not quietly settled behind the scenes at closing.",
+    imageCaption: "In Texas, the buyer-agent fee is negotiated openly in writing before the first showing, not quietly settled behind the scenes at closing.",
     content: `
 
 

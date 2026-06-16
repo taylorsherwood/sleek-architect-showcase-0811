@@ -74,7 +74,7 @@ const checkRoute = ({ route, expectJsonLd }: Check): string[] => {
   if (!canonicalHref) {
     failures.push("missing canonical");
   } else {
-    const expected = route === "/" ? SITE : `${SITE}${route}`;
+    const expected = route === "/" ? `${SITE}/` : `${SITE}${route}`;
     if (canonicalHref !== expected)
       failures.push(`canonical mismatch (got "${canonicalHref}", expected "${expected}")`);
   }

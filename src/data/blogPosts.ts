@@ -489,7 +489,7 @@ Q: Does a seller paying my agent reduce what they can contribute to my closing c
 A: Generally no. Seller-paid buyer-agent fees are treated as customarily seller-paid and usually fall outside the loan's concession cap, so a seller can cover your agent and still help with closing costs. Confirm the specifics with your lender.
 
 Q: What happens if the seller will not pay my agent?
-A: If you agreed to a fee in your representation agreement and the seller does not cover it, you may owe the difference. That is why it is important to settle the fee and the payment plan with your agent up front, before you write an offer.
+A: If you agreed to a fee in your representation agreement and the seller does not cover it, you may owe the difference. That is why it is important to settle the fee and the payment plan with your agent up front, before you write an offer. This will enable you and your agent to structure the offer that works best for both parties.
 
 Q: Is a buyer's agent still worth it if I have to pay?
 A: Yes. Representation includes pricing analysis, reading disclosures and inspections, offer and negotiation strategy, and managing the deadlines that protect your money and your contract. On a purchase this size, skilled representation often times saves much more than it costs.

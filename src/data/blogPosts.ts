@@ -411,6 +411,13 @@ If the seller will not contribute: You owe the full $15,000 under your agreement
 
 The throughline is that the worst-case number was never a mystery. You agreed to it up front, which means you can plan your cash and your strategy around it rather than getting blindsided at the table.
 
+:::cta
+heading: Want the fee structured in your favor?
+subheading: A direct conversation about your purchase, how to negotiate the buyer-agent fee, and how to structure the offer so the cost lands where it does the least damage. Advisory, not promotional.
+button: Request a Buyer Consultation
+href: /contact
+:::
+
 ## Does a seller paying my agent reduce my other help?
 
 This is the question that trips people up, and the answer is good news. When a seller contributes toward your agent's fee, that contribution generally does not count against the loan's seller-concession cap. <a href="https://singlefamily.fanniemae.com/media/38816/display" target="_blank" rel="noopener" class="${LINK}">Fannie Mae</a> and <a href="https://sf.freddiemac.com/working-with-us/news/2024/08-12-bulletin-2024-13" target="_blank" rel="noopener" class="${LINK}">Freddie Mac</a> clarified in 2024 that buyer-agent fees are treated as costs customarily paid by the seller, so they sit outside the financing-concession limits, as long as that remains customary in your market. The FHA gave similar guidance.

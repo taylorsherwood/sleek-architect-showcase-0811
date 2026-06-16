@@ -1030,17 +1030,18 @@ const CommunitiesSection = () => {
    SECTION 7, INSIGHTS
    ───────────────────────────────────────────── */
 
+/* LOCKED: This section is frozen. Do not add, remove, or reorder blog cards. */
 const insights = [
-  { to: "/blog/austin-luxury-real-estate-market-forecast", title: "Austin Luxury Market Forecast", excerpt: "Expert analysis of pricing trends, inventory, and investment outlook across Austin's luxury segments.", category: "\n" },
+  { to: "/blog/austin-luxury-real-estate-market-forecast", title: "Austin Luxury Market Forecast", excerpt: "Expert analysis of pricing trends, inventory, and investment outlook across Austin's luxury segments.", category: "Market" },
   { to: "/blog/best-luxury-neighborhoods-austin-texas", title: "LUXURY LIVING", excerpt: "A comprehensive guide to Austin's most prestigious communities and what makes each one unique.", category: "Neighborhoods" },
   { to: "/blog/top-investment-neighborhoods-austin", title: "Top Investment Neighborhoods", excerpt: "Data-driven analysis of appreciation trends, rental yields, and growth potential across Austin.", category: "Investment" },
   { to: "/blog/best-waterfront-homes-austin", title: "Best Waterfront Homes in Austin", excerpt: "Lake Austin estates, Lake Travis retreats, and what to know before buying waterfront property.", category: "Waterfront" },
   { to: "/blog/moving-to-austin-texas-from-california", title: "Moving to Austin from California", excerpt: "Everything California residents need to know about relocating, taxes, neighborhoods, and lifestyle.", category: "Relocation" },
   { to: "/blog/moving-from-new-york-to-austin", title: "Moving from New York to Austin", excerpt: "An honest, advisor-level guide for affluent New Yorkers relocating to Austin: tax tradeoffs, the luxury neighborhoods buyers actually choose, school realities, and the lifestyle factors that matter at the top of the market.", category: "Relocation" },
-  { to: "/blog/austin-property-taxes-explained", title: "Austin Property Taxes Explained", excerpt: "Rates, exemptions, protest strategies, and how property taxes affect luxury real estate decisions.", category: "\n" },
+  { to: "/blog/austin-property-taxes-explained", title: "Austin Property Taxes Explained", excerpt: "Rates, exemptions, protest strategies, and how property taxes affect luxury real estate decisions.", category: "Taxes" },
   { to: "/blog/austin-ranch-land-for-sale", title: "Austin Ranch Land for Sale", excerpt: "A complete guide to Austin ranch land, Hill Country properties, investment land, acreage ownership, agricultural and wildlife exemptions, and Austin-area growth corridors shaping long-term value across Central Texas.", category: "Land & Ranch" },
   { to: "/blog/texas-homestead-exemption-travis-county", title: "Texas Homestead Exemption: Travis County Guide", excerpt: "The 2026 $140,000 school exemption, the City and county 20% exemptions, and the 10% appraisal cap, explained.", category: "Ownership" },
-];
+] as const;
 
 const InsightsSection = () => (
   <section id="insights-section" className="bg-secondary" style={{ padding: "clamp(64px, 10vw, 120px) 0 clamp(32px, 5vw, 56px)" }}>

@@ -1187,7 +1187,7 @@ const LandRanch = () => {
             <div className="md:col-span-6 lg:col-span-5">
 
               <div
-                className="relative overflow-hidden -translate-y-20 md:-translate-y-40 lg:-translate-y-14"
+                className="relative overflow-hidden -translate-y-12 md:-translate-y-28 lg:-translate-y-16"
                 style={{
                   borderRadius: "24px",
                   boxShadow:

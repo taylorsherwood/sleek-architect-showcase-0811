@@ -515,7 +515,7 @@ const BlogContent = ({ content, afterGlance, category, articleId }: BlogContentP
                   communityName="Austin Metro Residential $2M+"
                   marketName="Austin Metro"
                   fallbackMarketName="West Austin"
-                  eyebrow={"\n\nAUSTIN METRO RESIDENTIAL · $2M+ · BUYER / SELLER BALANCE"}
+                  eyebrow={"\n\nAUSTIN METRO RESIDENTIAL · $2M+ · BUYER / SELLER BALANCE IN REAL TIME"}
                 />
               </IntelInsert>
             );
@@ -536,7 +536,7 @@ const BlogContent = ({ content, afterGlance, category, articleId }: BlogContentP
                   communityName="Lake Austin Waterfront · $2M+"
                   marketName="West Austin"
                   fallbackMarketName="Austin Metro"
-                  eyebrow={"LAKE AUSTIN WATERFRONT · $2M+ · BUYER / SELLER BALANCE"}
+                  eyebrow={"LAKE AUSTIN WATERFRONT · $2M+ · BUYER / SELLER BALANCE IN REAL TIME"}
                 />
               </IntelInsert>
             );
@@ -547,7 +547,7 @@ const BlogContent = ({ content, afterGlance, category, articleId }: BlogContentP
                   communityName="Austin Metro Residential $1.5M+"
                   marketName="Austin Metro"
                   fallbackMarketName="West Austin"
-                  eyebrow={"AUSTIN METRO RESIDENTIAL · $1.5M+ · BUYER / SELLER BALANCE"}
+                  eyebrow={"AUSTIN METRO RESIDENTIAL · $1.5M+ · BUYER / SELLER BALANCE IN REAL TIME"}
                 />
               </IntelInsert>
             );
@@ -558,7 +558,7 @@ const BlogContent = ({ content, afterGlance, category, articleId }: BlogContentP
                   communityName="Lake Travis Waterfront · $2M+"
                   marketName="Lake Travis"
                   fallbackMarketName="Austin Metro"
-                  eyebrow={"LAKE TRAVIS WATERFRONT · $2M+ · BUYER / SELLER BALANCE"}
+                  eyebrow={"LAKE TRAVIS WATERFRONT · $2M+ · BUYER / SELLER BALANCE IN REAL TIME"}
                 />
               </IntelInsert>
             );

@@ -128,6 +128,10 @@ const getAllPrerenderRoutes = () => {
       ...prerenderRoutes,
       "/land-ranch",
       ...communitySlugs.map((slug) => `/communities/${slug}`),
+      // Distinct neighborhood URLs that share an editorial record but
+      // declare self-referencing canonicals. Prerender each so Googlebot
+      // sees the correct canonical in the initial HTML response.
+      "/communities/northwest-hills",
       ...blogIds.map((id) => `/blog/${id}`),
       ...landRanchSlugs.map((slug) => `/land-ranch/${slug}`),
     ])

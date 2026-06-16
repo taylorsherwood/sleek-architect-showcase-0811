@@ -324,7 +324,7 @@ A: Yes. These agreements include termination terms. Review the cancellation prov
     id: "buyer-agent-commission-texas",
     title: "Who Pays the Buyer's Agent in Texas? A 2026 Guide to Commissions",
     metaTitle: "Who Pays the Buyer's Agent in Texas? (2026)",
-    excerpt: "Buyer-agent commissions in Texas are now negotiable and disclosed up front. Here is who pays, how the fee gets covered, and how to keep it out of pocket.",
+    excerpt: "Buyer-agent commissions in Texas are negotiable and disclosed up front. Here is who pays, how the fee gets covered, and how to keep it out of pocket.",
     author: "Taylor Sherwood",
     date: "2026-06-16",
     readTime: "8 MIN READ",

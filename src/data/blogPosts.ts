@@ -382,7 +382,7 @@ This is the question that trips people up, and the answer is good news. When a s
 
 In plain terms, a seller can cover your agent's fee and still contribute toward your closing costs up to the loan's limit. Those seller contributions have their own caps and rules, which we cover in our guide to <a href="/blog/seller-concessions-texas" class="${LINK}">seller concessions in Texas</a>. The two work together rather than competing.
 
-{/* TODO: Verify /blog/seller-concessions-texas exists once that post is published. */}
+<!-- TODO: Verify /blog/seller-concessions-texas exists once that post is published. -->
 
 ## How to keep it from coming out of your pocket
 

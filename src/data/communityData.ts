@@ -1061,7 +1061,7 @@ Properties with golf course frontage, exceptional views, or unique architecture 
     ]
   },
   {
-    slug: "cat-mountain-northwest-hills",
+    slug: "cat-mountain",
     name: "Cat Mountain & Northwest Hills",
     heroTitle: "Homes for Sale in Cat Mountain & Northwest Hills",
     metaTitle: "Cat Mountain & NW Hills Homes | Echelon Property Group",

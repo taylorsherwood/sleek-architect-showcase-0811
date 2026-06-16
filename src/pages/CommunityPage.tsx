@@ -235,15 +235,22 @@ const ContentBlock = ({ text, currentSlug }: { text: string; currentSlug?: strin
   );
 };
 
+// Aliases that 301-style redirect to a single canonical slug.
+// Use only for true duplicates (old URLs, casing variants).
 const slugAliases: Record<string, string> = {
   "zilker": "zilker-austin",
-  "cat-mountain": "cat-mountain-northwest-hills",
-  "northwest-hills": "cat-mountain-northwest-hills",
   "downtown-austin-condos": "downtown",
   "downtown-austin": "downtown",
   "lake-travis-waterfront": "lake-travis",
   "westlake": "westlake-hills",
   "west-lake-hills": "westlake-hills",
+};
+
+// Distinct neighborhoods that share a single editorial record.
+// Both URLs render the same data but each declares a SELF-referencing
+// canonical so Google indexes them as their own pages (no merged slug).
+const dataSlugAliases: Record<string, string> = {
+  "northwest-hills": "cat-mountain",
 };
 
 const CommunityPage = () => {
@@ -256,6 +263,7 @@ const CommunityPage = () => {
   }
 
   const slug = rawSlug;
+  const dataSlug = (rawSlug && dataSlugAliases[rawSlug]) || rawSlug;
 
   const community = communityPages.find((c) => c.slug === slug);
 

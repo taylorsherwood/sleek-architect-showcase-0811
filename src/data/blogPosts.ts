@@ -472,7 +472,7 @@ Q: How much does a buyer's agent cost in Texas?
 A: There is no standard rate. Buyer-agent compensation is fully negotiable and is not set by law. It can be a percentage, a flat fee, or an hourly arrangement, and it must be stated as a specific amount in your representation agreement.
 
 Q: Can the seller still pay the buyer's agent?
-A: Yes. A seller can agree to contribute toward the buyer's agent fee, negotiated in the purchase contract. This is still a common outcome, even though it is no longer advertised through the MLS.
+A: Yes. A seller can agree to contribute toward the buyer's agent fee, negotiated in the purchase contract. This is still the most common outcome, even though it is no longer advertised through the MLS.
 
 Q: Can I add my agent's commission to my mortgage?
 A: In effect, often yes. You generally cannot add the commission to the loan as its own line item, but you can offer a higher price and have the seller pay your agent's fee out of the proceeds, written into the purchase contract. Because the mortgage is sized off the purchase price, you finance most of the fee over the life of the loan instead of paying it in cash at closing. The key limit is the appraisal: the home has to appraise at or near the higher price, so this works only when you are not paying a large premium over value. It also raises your down payment and monthly payment slightly, since both are based on the larger number. Run the structure by your agent and lender before you write the offer.

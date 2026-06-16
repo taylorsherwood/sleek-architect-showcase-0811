@@ -956,6 +956,9 @@ const LandRanch = () => {
             <span className="h-px flex-1 bg-gradient-to-l from-transparent to-[#b9a06c]/60" />
           </div>
         </div>
+
+        <div className="h-8 md:h-12" aria-hidden="true" />
+
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mb-14">
             <p className="text-gold mb-5" style={labelStyle}>

@@ -984,9 +984,8 @@ const LandRanch = () => {
               </div>
             ))}
           </div>
-          <p className="text-muted-foreground/70 text-xs mt-6 max-w-2xl" style={{ fontStyle: "italic" }}>
-            Indicative figures based on recent Central Texas market activity. Contact Echelon Property Group for a
-            current, property-specific assessment.
+          <p className="text-muted-foreground/70 text-xs mt-6 max-w-2xl whitespace-pre-line" style={{ fontStyle: "italic" }}>
+            {"Indicative figures based on recent Central Texas market activity.\u00a0\nContact Echelon Property Group for a current, property-specific assessment."}
           </p>
         </div>
       </section>

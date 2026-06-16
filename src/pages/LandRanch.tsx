@@ -961,8 +961,8 @@ const LandRanch = () => {
 
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mb-14">
-            <p className="text-gold mb-5" style={labelStyle}>
-              MARKET DATA
+            <p className="text-gold mb-5 whitespace-pre-line" style={labelStyle}>
+              {"\n\nMARKET DATA"}
             </p>
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-normal text-architectural leading-[1.1]">
               Central Texas Land&nbsp;<br />Market Snapshot

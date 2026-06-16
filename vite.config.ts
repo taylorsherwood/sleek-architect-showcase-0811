@@ -156,6 +156,8 @@ const getSitemapRoutes = (): { route: string; lastmod?: string }[] => {
     const r = `/communities/${slug}`;
     map.set(r, { route: r });
   }
+  // Distinct neighborhood URL sharing the cat-mountain editorial record.
+  map.set("/communities/northwest-hills", { route: "/communities/northwest-hills" });
   for (const id of blogIds) {
     const r = `/blog/${id}`;
     map.set(r, { route: r, lastmod: blogDates[id] });

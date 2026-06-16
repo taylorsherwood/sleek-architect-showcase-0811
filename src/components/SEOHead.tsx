@@ -22,10 +22,28 @@ const normalizePageTitle = (rawTitle?: string | null) => {
   return rawTitle.replace(/\s+/g, " ").replace(BRAND_SUFFIX_PATTERN, "").trim();
 };
 
+const normalizePath = (path: string) => {
+  if (!path || path === "/") return "/";
+  // Strip query/hash, then trailing slash (only homepage keeps it)
+  const cleaned = path.split("?")[0].split("#")[0];
+  const noTrail = cleaned.length > 1 && cleaned.endsWith("/") ? cleaned.slice(0, -1) : cleaned;
+  return noTrail || "/";
+};
+
 const resolveCanonicalUrl = (pathname: string, canonical?: string) => {
-  if (!canonical) return `${SITE_URL}${pathname === "/" ? "" : pathname}`;
-  if (canonical.startsWith("http://") || canonical.startsWith("https://")) return canonical;
-  return `${SITE_URL}${canonical.startsWith("/") ? canonical : `/${canonical}`}`;
+  if (canonical && (canonical.startsWith("http://") || canonical.startsWith("https://"))) {
+    // Normalize absolute canonicals too
+    try {
+      const u = new URL(canonical);
+      const path = normalizePath(u.pathname);
+      return `${SITE_URL}${path === "/" ? "/" : path}`;
+    } catch {
+      return canonical;
+    }
+  }
+  const raw = canonical || pathname;
+  const path = normalizePath(raw.startsWith("/") || raw === "" ? raw : `/${raw}`);
+  return `${SITE_URL}${path === "/" ? "/" : path}`;
 };
 
 const SEOHead = ({ title, description, canonical, ogTitle, ogDescription, ogType = "website", noindex = false }: SEOHeadProps) => {

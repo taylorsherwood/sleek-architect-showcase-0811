@@ -1,5 +1,5 @@
 import { useState, lazy, Suspense } from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useLocation } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 const Footer = lazy(() => import("@/components/Footer"));
 import AboutBlock from "@/components/AboutBlock";
@@ -39,6 +39,14 @@ const smoothScrollTo = (elementId: string) => {
 
 const Blog = () => {
   const [activeCategory, setActiveCategory] = useState("ALL");
+  // Legacy ?post={slug} URLs → redirect to clean /blog/{slug} when the post resolves
+  const location = useLocation();
+  const params = new URLSearchParams(location.search);
+  const legacyPostSlug = params.get("post");
+  if (legacyPostSlug) {
+    const exists = allPosts.some((p) => p.id === legacyPostSlug);
+    if (exists) return <Navigate to={`/blog/${legacyPostSlug}`} replace />;
+  }
 
   const categories = [
     "ALL",

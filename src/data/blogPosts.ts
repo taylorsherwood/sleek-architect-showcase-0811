@@ -407,7 +407,7 @@ If the seller covers the full fee: Your agent requests a $15,000 contribution in
 
 If the seller covers part: The seller agrees to $7,500 and you cover the remaining $7,500. You bring that difference at closing, or your agent structures the rest of the deal, on price or other terms, so the math still works for you.
 
-If the seller will not contribute: You owe the full $15,000 under your agreement. Your options are to pay it at closing, to have your agent build the request into the offer differently, or to weigh whether this particular home is worth that out-of-pocket cost. You knew the exposure going in, because the fee was set in your agreement before you ever wrote the offer. A quick ROI look: your agent negotiates $50,000 in seller concessions in pricing or other terms in exchange for a $15,000 fee.
+If the seller will not contribute: You owe the full $15,000 under your agreement. Your options are to pay it at closing, to have your agent build the request into the offer differently, or to weigh whether this particular home is worth that out-of-pocket cost. You knew the exposure going in, because the fee was set in your agreement before you ever wrote the offer. A quick ROI look: your agent negotiates $50,000 in seller concessions in pricing or other terms on your behalf in exchange for a $15,000 fee.
 
 The throughline is that the worst-case number was never a mystery. You agreed to it up front, which means you can plan your cash and your strategy around it rather than getting blindsided at the table.
 

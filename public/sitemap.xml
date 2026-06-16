@@ -253,7 +253,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.echelonpropertygroup.com/communities/cat-mountain-northwest-hills</loc>
+    <loc>https://www.echelonpropertygroup.com/communities/cat-mountain</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.echelonpropertygroup.com/communities/northwest-hills</loc>
     <lastmod>2026-06-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>

@@ -119,7 +119,7 @@ const neighborhoodInsights: Record<string, { title: string; description: string;
     { title: "Best Luxury Neighborhoods in Austin", description: "Where Spanish Oaks fits within Austin's gated luxury communities.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
     { title: "Top Investment Neighborhoods in Austin", description: "Hill Country estate communities and their long-term value trajectory.", href: "/blog/top-investment-neighborhoods-austin" },
   ],
-  "cat-mountain-northwest-hills": [
+  "cat-mountain": [
     { title: "Best Luxury Neighborhoods in Austin", description: "How Cat Mountain and Northwest Hills serve Austin's luxury market.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
     { title: "Austin Luxury Market Forecast", description: "Market trends shaping pricing in Austin's western neighborhoods.", href: "/blog/austin-luxury-real-estate-market-forecast" },
   ],

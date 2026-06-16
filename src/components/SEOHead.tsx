@@ -54,6 +54,7 @@ const SEOHead = ({ title, description, canonical, ogTitle, ogDescription, ogType
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={openGraphTitle} />
       <meta name="twitter:description" content={openGraphDescription} />
+      <meta name="twitter:url" content={canonicalUrl} />
       <meta name="twitter:image" content={`${SITE_URL}/og-image.png`} />
 
       <link rel="canonical" href={canonicalUrl} />

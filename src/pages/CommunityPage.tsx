@@ -119,7 +119,7 @@ const neighborhoodInsights: Record<string, { title: string; description: string;
     { title: "Best Luxury Neighborhoods in Austin", description: "Where Spanish Oaks fits within Austin's gated luxury communities.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
     { title: "Top Investment Neighborhoods in Austin", description: "Hill Country estate communities and their long-term value trajectory.", href: "/blog/top-investment-neighborhoods-austin" },
   ],
-  "cat-mountain-northwest-hills": [
+  "cat-mountain": [
     { title: "Best Luxury Neighborhoods in Austin", description: "How Cat Mountain and Northwest Hills serve Austin's luxury market.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
     { title: "Austin Luxury Market Forecast", description: "Market trends shaping pricing in Austin's western neighborhoods.", href: "/blog/austin-luxury-real-estate-market-forecast" },
   ],
@@ -235,15 +235,22 @@ const ContentBlock = ({ text, currentSlug }: { text: string; currentSlug?: strin
   );
 };
 
+// Aliases that 301-style redirect to a single canonical slug.
+// Use only for true duplicates (old URLs, casing variants).
 const slugAliases: Record<string, string> = {
   "zilker": "zilker-austin",
-  "cat-mountain": "cat-mountain-northwest-hills",
-  "northwest-hills": "cat-mountain-northwest-hills",
   "downtown-austin-condos": "downtown",
   "downtown-austin": "downtown",
   "lake-travis-waterfront": "lake-travis",
   "westlake": "westlake-hills",
   "west-lake-hills": "westlake-hills",
+};
+
+// Distinct neighborhoods that share a single editorial record.
+// Both URLs render the same data but each declares a SELF-referencing
+// canonical so Google indexes them as their own pages (no merged slug).
+const dataSlugAliases: Record<string, string> = {
+  "northwest-hills": "cat-mountain",
 };
 
 const CommunityPage = () => {
@@ -256,8 +263,9 @@ const CommunityPage = () => {
   }
 
   const slug = rawSlug;
+  const dataSlug = (rawSlug && dataSlugAliases[rawSlug]) || rawSlug;
 
-  const community = communityPages.find((c) => c.slug === slug);
+  const community = communityPages.find((c) => c.slug === dataSlug);
 
   if (!community) {
     return (
@@ -317,7 +325,7 @@ const CommunityPage = () => {
       <SEOHead
         title={community.metaTitle || `${community.name} Homes for Sale | Echelon Property Group`}
         description={`${community.name} homes for sale in Austin TX. Browse listings, pricing trends, and neighborhood insights from Echelon Property Group.`}
-        canonical={`/communities/${community.slug}`}
+        canonical={`/communities/${rawSlug}`}
       />
       {heroImageSrc && (
         <Helmet prioritizeSeoTags>
@@ -327,11 +335,11 @@ const CommunityPage = () => {
         </Helmet>
       )}
       <SchemaMarkup schema={createFAQSchema(allFaqs)} />
-      <SchemaMarkup schema={createCommunityPlaceSchema(community)} />
+      <SchemaMarkup schema={createCommunityPlaceSchema({ ...community, slug: rawSlug || community.slug })} />
       <SchemaMarkup schema={createBreadcrumbSchema([
         { name: "Home", url: `${SITE_URL}/` },
         { name: "Communities", url: `${SITE_URL}/communities` },
-        { name: community.name, url: `${SITE_URL}/communities/${community.slug}` },
+        { name: community.name, url: `${SITE_URL}/communities/${rawSlug}` },
       ])} />
       <Navigation />
 

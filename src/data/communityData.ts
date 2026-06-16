@@ -1061,7 +1061,7 @@ Properties with golf course frontage, exceptional views, or unique architecture 
     ]
   },
   {
-    slug: "cat-mountain-northwest-hills",
+    slug: "cat-mountain",
     name: "Cat Mountain & Northwest Hills",
     heroTitle: "Homes for Sale in Cat Mountain & Northwest Hills",
     metaTitle: "Cat Mountain & NW Hills Homes | Echelon Property Group",
@@ -1937,7 +1937,7 @@ Families, professionals, and empty-nesters all seek Great Hills for its combinat
 ### Long-Term Appreciation
 
 Established location, mature lots, and proximity to major employers support consistent demand and value growth.`,
-    relatedCommunities: ["cat-mountain-northwest-hills", "balcones-park", "westlake-hills", "barton-creek"],
+    relatedCommunities: ["cat-mountain", "balcones-park", "westlake-hills", "barton-creek"],
     faqs: [
       { question: "What is it like living in Great Hills Austin?", answer: "Great Hills offers mature tree-lined streets, generous lots, Hill Country views, and convenient access to the Domain, Arboretum, and downtown Austin." },
       { question: "What are home prices in Great Hills?", answer: "Prices range from approximately $600K to over $2.5M for updated or rebuilt estates on premium lots." },
@@ -2248,7 +2248,7 @@ Comprehensive amenities, Lake Austin proximity, and consistent family demand sup
 ### Steiner Ranch vs Lake Travis Waterfront
 
 Buyers choosing between Steiner Ranch and [Lake Travis waterfront](/communities/lake-travis) homes are weighing master-planned amenities and family infrastructure against direct deep-water lakefront living. Steiner Ranch offers a broader community experience at lower price points, while Lake Travis waterfront delivers the premium lakeside lifestyle with private docks and open-water access.`,
-    relatedCommunities: ["lake-austin", "lake-travis", "bee-cave", "cat-mountain-northwest-hills"],
+    relatedCommunities: ["lake-austin", "lake-travis", "bee-cave", "cat-mountain"],
     faqs: [
       { question: "Is Steiner Ranch a good place to buy a luxury home near Austin?", answer: "Yes. Steiner Ranch's premium sections, particularly The Commons, feature custom luxury estates with Lake Austin views, while the broader community offers resort-style amenities, strong schools, and a family-oriented lifestyle that supports stable property values." },
       { question: "How does Steiner Ranch compare to nearby neighborhoods?", answer: "Steiner Ranch provides comprehensive master-planned amenities at a more accessible price point than Lakeway or Lake Travis waterfront. Bee Cave offers Lake Travis ISD and upscale shopping. Cat Mountain provides proximity to northwest Austin tech corridors. Steiner Ranch is the choice for families seeking resort living with Lake Austin proximity." },

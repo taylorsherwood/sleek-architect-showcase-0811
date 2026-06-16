@@ -183,8 +183,8 @@ const investmentAreas = [
 },
 {
   name: "Northwest Hills",
-  slug: "/communities/cat-mountain-northwest-hills",
-  existingSlug: "/communities/cat-mountain-northwest-hills",
+  slug: "/communities/cat-mountain",
+  existingSlug: "/communities/cat-mountain",
   description:
   "Northwest Hills and Cat Mountain offer established homes on mature, tree-covered lots in a prime northwest Austin location. The area provides strong value relative to central Austin with easy access to the Domain and major employers.",
   prices: "$600K – $3M+",

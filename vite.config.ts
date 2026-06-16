@@ -128,6 +128,10 @@ const getAllPrerenderRoutes = () => {
       ...prerenderRoutes,
       "/land-ranch",
       ...communitySlugs.map((slug) => `/communities/${slug}`),
+      // Distinct neighborhood URLs that share an editorial record but
+      // declare self-referencing canonicals. Prerender each so Googlebot
+      // sees the correct canonical in the initial HTML response.
+      "/communities/northwest-hills",
       ...blogIds.map((id) => `/blog/${id}`),
       ...landRanchSlugs.map((slug) => `/land-ranch/${slug}`),
     ])
@@ -152,6 +156,8 @@ const getSitemapRoutes = (): { route: string; lastmod?: string }[] => {
     const r = `/communities/${slug}`;
     map.set(r, { route: r });
   }
+  // Distinct neighborhood URL sharing the cat-mountain editorial record.
+  map.set("/communities/northwest-hills", { route: "/communities/northwest-hills" });
   for (const id of blogIds) {
     const r = `/blog/${id}`;
     map.set(r, { route: r, lastmod: blogDates[id] });

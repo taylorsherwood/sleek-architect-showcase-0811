@@ -347,7 +347,7 @@ This guide covers how buyer-agent commissions work in Texas in 2026, what the fe
 
 :::stat-block
 title: Quick answer
-Buyer-agent commissions in Texas are fully negotiable and are no longer set or advertised through the MLS. You and your agent agree on the fee in writing in your buyer representation agreement. It can then be covered one of three ways: you pay your agent directly, the seller contributes toward it in the purchase contract, or the listing broker shares part of its commission. Seller contributions remain common, so in many transactions the buyer does not pay the fee out of pocket. There is no standard rate, and compensation is negotiable in every deal.
+Buyer-agent commissions in Texas are fully negotiable and are no longer set or advertised through the MLS. You and your agent agree on the fee in writing in your buyer representation agreement. It can then be covered one of three ways: you pay your agent directly, the seller contributes toward it in the purchase contract, or the listing broker shares part of its commission. Seller contributions remain common, the vast majority of transactions does not require the buyer to pay the fee out of pocket. There is no standard rate, and compensation is negotiable in every deal.
 :::
 
 ## What changed, and why buyers are suddenly asking

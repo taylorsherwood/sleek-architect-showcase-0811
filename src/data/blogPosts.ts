@@ -35,6 +35,7 @@ import blogHighEndHomeValuation from "@/assets/blog/high-end-home-valuation-aust
 import blogExclusivePropertiesAustin from "@/assets/blog/off-market-luxury-homes-austin.jpg.asset.json";
 import blogBuyerRepresentationAgreement from "@/assets/blog/buyer-representation-agreement-texas.jpg.asset.json";
 import blogTexasHomesteadExemption from "@/assets/blog/texas-homestead-exemption-travis-county.jpg.asset.json";
+import blogBuyerAgentCommissionTexas from "@/assets/blog/buyer-agent-commission-texas.webp.asset.json";
 
 
 

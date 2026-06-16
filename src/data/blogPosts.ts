@@ -478,7 +478,7 @@ Q: Can I add my agent's commission to my mortgage?
 A: Generally no. The fee is typically paid at closing rather than rolled into the loan amount, and it is covered by a seller contribution, a listing-broker split, or your own funds. That is why it is worth planning for in your cash to close. Confirm the specifics with your lender.
 
 Q: Where is the buyer's agent fee written down?
-A: In your buyer representation agreement. It states the fee, caps what the agent can collect, sets a termination date, and defines the terms of the relationship before any offer is made.
+A: In your buyer representation agreement. It states the fee, caps what the agent can collect, sets a termination date, and defines the terms of the relationship before any offer is made. Commissions for both listing and buyer agents will be reflected on your final closing statements.
 
 Q: Does a seller paying my agent reduce what they can contribute to my closing costs?
 A: Generally no. Seller-paid buyer-agent fees are treated as customarily seller-paid and usually fall outside the loan's concession cap, so a seller can cover your agent and still help with closing costs. Confirm the specifics with your lender.

@@ -120,7 +120,7 @@ const renderMarkdownBody = (body: string): string => {
   const flushList = () => {
     if (!listBuf.length) return;
     const items = listBuf.map((l) => `<li class="mb-2 leading-[1.85]">${renderInline(l)}</li>`).join("");
-    out.push(`<ul class="list-disc pl-6 mb-6 space-y-1 text-muted-foreground">${items}</ul>`);
+    out.push(`<ul class="list-disc pl-6 mb-6 space-y-1 text-muted-foreground marker:text-[#b9a06c]">${items}</ul>`);
     listBuf = [];
   };
 

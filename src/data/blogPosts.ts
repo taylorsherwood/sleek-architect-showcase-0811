@@ -389,7 +389,7 @@ Once the fee is set, it can be covered in one of three ways, and deals often use
 How it is paid | What happens | What it means for you
 The seller contributes | The seller agrees in the purchase contract to pay some or all of your agent's fee | Common, and it can mean you pay little or nothing toward the fee yourself
 The listing broker shares | The listing side splits part of its commission with your agent | Handled between the brokers, with no direct cost to you
-You pay directly | You pay your agent per your representation agreement, in cash or folded into negotiated costs | Cleanest and most transparent, but it is an out-of-pocket obligation
+You pay directly | You pay your agent per your representation agreement, in cash or folded into negotiated costs | Cleanest and most transparent, but can be an out-of-pocket obligation
 :::
 
 The seller contribution is still the most common outcome. It is negotiated in the purchase contract itself, where the seller agrees to a specific amount toward your agent's fee. The listing-broker split is the legacy arrangement, where the listing side shares part of its commission, coordinated between the two brokers. Paying directly happens when a seller will not contribute, or when a buyer simply prefers to handle it themselves. Many deals blend these, for example a seller covering part and the buyer covering the rest.

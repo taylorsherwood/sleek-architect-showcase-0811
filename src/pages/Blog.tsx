@@ -38,6 +38,14 @@ const smoothScrollTo = (elementId: string) => {
 };
 
 const Blog = () => {
+  // Legacy ?post={slug} URLs → 301-style redirect to clean /blog/{slug} when the post resolves
+  const location = useLocation();
+  const params = new URLSearchParams(location.search);
+  const legacyPostSlug = params.get("post");
+  if (legacyPostSlug) {
+    const exists = allPosts.some((p) => p.id === legacyPostSlug);
+    if (exists) return <Navigate to={`/blog/${legacyPostSlug}`} replace />;
+  }
   const [activeCategory, setActiveCategory] = useState("ALL");
 
   const categories = [

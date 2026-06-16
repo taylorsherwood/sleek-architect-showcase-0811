@@ -360,17 +360,17 @@ That feels like a new cost, but it usually is not. The fee was always built into
 
 Before worrying about who pays, it helps to know what the fee buys, because that is what makes it worth negotiating for rather than around. A buyer's agent is not a door-opener. Under a representation agreement, the agent is your fiduciary, and the work behind that word is where the value sits:
 
-Pricing analysis so you do not overpay, backed by real comparable sales rather than a hopeful list price.
+• Pricing analysis so you do not overpay, backed by real comparable sales rather than a hopeful list price.
 
-A trained read on disclosures, inspection reports, and surveys, so a problem gets caught before closing instead of after.
+• A trained read on disclosures, inspection reports, and surveys, so a problem gets caught before closing instead of after.
 
-Offer strategy, including the concession and rate-buydown structures that can save you far more than the fee itself.
+• Offer strategy, including the concession and rate-buydown structures that can save you far more than the fee itself.
 
-Negotiation on price, repairs, timelines, and terms, with someone whose duty runs to you alone.
+• Negotiation on price, repairs, timelines, and terms, with someone whose duty runs to you alone.
 
-Management of the contract calendar, the option period, and the financing and appraisal deadlines, the small steps where a missed date can cost you your earnest money or the house.
+• Management of the contract calendar, the option period, and the financing and appraisal deadlines, the small steps where a missed date can cost you your earnest money or the house.
 
-Problem-solving when something goes sideways during the transaction, and on most deals, something does.
+• Problem-solving when something goes sideways during the transaction, and on most deals, something does.
 
 The real question is not only who pays, but what competent representation is worth on a purchase this size. Framed that way, the fee is rarely the expensive part of the deal. A weak agent is.
 

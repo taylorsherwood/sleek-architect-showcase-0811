@@ -1585,9 +1585,11 @@ const HomeBelowFold = () => (
     <div className="h-12 md:h-20 bg-secondary" aria-hidden="true" />
 
 
-    <LeadCapture />
-
     <TestimonialsSection />
+
+    <div className="h-12 md:h-20 bg-secondary" aria-hidden="true" />
+
+    <LeadCapture />
 
     <div className="h-12 md:h-20 bg-secondary" aria-hidden="true" />
 

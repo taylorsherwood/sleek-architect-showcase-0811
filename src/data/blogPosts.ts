@@ -440,15 +440,11 @@ Handled well, the most common outcome is still that the seller's side covers mos
 
 The new system rewards preparation and punishes autopilot. The avoidable errors:
 
-Signing a representation agreement without actually discussing the fee or the plan to cover it.
-
-Assuming the seller will always pay, then getting caught off guard when an offer comes together.
-
-Touring with several different agents, which muddies who represents you and who is owed a fee.
-
-Skipping the fine print on the cap and the term, then feeling boxed in later.
-
-Pushing for a large seller contribution in a multiple-offer situation without weighing how much it weakens the offer.
+- Signing a representation agreement without actually discussing the fee or the plan to cover it.
+- Assuming the seller will always pay, then getting caught off guard when an offer comes together.
+- Touring with several different agents, which muddies who represents you and who is owed a fee.
+- Skipping the fine print on the cap and the term, then feeling boxed in later.
+- Pushing for a large seller contribution in a multiple-offer situation without weighing how much it weakens the offer.
 
 None of these are hard to avoid. They just require treating the fee as a real part of the transaction, which is exactly what a good agent will insist on.
 

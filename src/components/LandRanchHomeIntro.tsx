@@ -107,10 +107,10 @@ const LandRanchHomeIntro = () => {
                 marginBottom: "clamp(20px, 2.2vw, 28px)",
               }}
             >
-              Beyond Luxury{" "}
               <span style={{ fontStyle: "italic", fontFamily: '"Cinzel", serif' }}>
-                Homes
-              </span>
+                Beyond
+              </span>{" "}
+              Luxury Homes
             </h2>
           </ScrollReveal>
 

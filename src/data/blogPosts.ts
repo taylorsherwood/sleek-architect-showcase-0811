@@ -338,6 +338,8 @@ A: Yes. These agreements include termination terms. Review the cancellation prov
 :::intel-gauge-austin-metro
 :::
 
+
+
 Since the rules changed in 2024, nearly every Texas buyer asks some version of the same question: do I have to pay my own agent now? The honest answer is that you might, you might not, and you have far more control over the outcome than most people realize. What actually changed is transparency, not necessarily who writes the check. The cost of buyer representation was always part of the transaction and has always been negoitable. Now, it is truly visible and spelled out in writing before you ever tour a home.
 
 

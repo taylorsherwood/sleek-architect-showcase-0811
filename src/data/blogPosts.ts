@@ -99,7 +99,7 @@ Jurisdiction | City of Austin | West Lake Hills, Rollingwood, and unincorporated
 School district | Austin ISD (Casis Elementary) | Eanes ISD (ranked number one in Texas)
 Median sale price\ntrailing year | About $1.36M | About $1.88M
 Median price per\nsquare foot | About $631 | About $559
-Median days on market | About 56 | About 57
+Median days on market | ~56 | ~57
 One-year price trend | Slightly down, about 1% | Up, about 6%
 Character | Historic, tree-lined, central | Hill-country estates, larger lots
 Best for | Proximity and old-Austin charm | Space, views, and top schools

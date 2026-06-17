@@ -29,7 +29,7 @@ const Footer = () => {
       <NewsletterSignup className="py-16 md:py-24" />
 
       {/* Fancy gold divider between newsletter and footer navigation */}
-      <div className="w-full" style={{ height: "3px", background: "linear-gradient(90deg, transparent 2%, #b9a06c 20%, #b9a06c 80%, transparent 98%)" }} />
+      <div className="w-full" style={{ height: "4px", background: "#b9a06c", boxShadow: "0 0 12px rgba(185, 160, 108, 0.35)" }} />
 
       <div className="max-w-[1140px] mx-auto px-8 md:px-12">
         <div style={{ paddingTop: "clamp(48px, 6vw, 72px)", paddingBottom: "12px" }}>

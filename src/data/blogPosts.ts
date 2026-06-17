@@ -36,6 +36,7 @@ import blogExclusivePropertiesAustin from "@/assets/blog/off-market-luxury-homes
 import blogBuyerRepresentationAgreement from "@/assets/blog/buyer-representation-agreement-texas.jpg.asset.json";
 import blogTexasHomesteadExemption from "@/assets/blog/texas-homestead-exemption-travis-county.jpg.asset.json";
 import blogBuyerAgentCommissionTexas from "@/assets/blog/buyer-agent-commission-texas.webp.asset.json";
+import blogTarrytownVsWestlake from "@/assets/blog/tarrytown-vs-westlake.jpg.asset.json";
 
 
 

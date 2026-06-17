@@ -204,7 +204,7 @@ const parseBlocks = (content: string): Block[] => {
 
   while (i < lines.length) {
     const line = lines[i];
-    const fenceMatch = line.match(/^:::(glance|best-for|watch-out|micro-cta|cta|faq|stat-block|intel-pulse|intel-gauge|intel-gauge-austin-metro|intel-gauge-lake-austin|intel-gauge-lake-travis|intel-gauge-austin-15m|intel-rates|intel-luxury-snapshot)\s*$/);
+    const fenceMatch = line.match(/^:::(glance|compare-table|callout|best-for|watch-out|micro-cta|cta|faq|stat-block|intel-pulse|intel-gauge|intel-gauge-austin-metro|intel-gauge-lake-austin|intel-gauge-lake-travis|intel-gauge-austin-15m|intel-gauge-tarrytown|intel-gauge-westlake|intel-rates|intel-luxury-snapshot)\s*$/);
     if (fenceMatch) {
       flushMd();
       const type = fenceMatch[1] as Block["type"];

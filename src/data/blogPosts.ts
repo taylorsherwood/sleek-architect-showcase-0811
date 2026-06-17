@@ -74,7 +74,7 @@ export const blogPosts: BlogPost[] = [
     author: "Taylor Sherwood",
     date: "2026-06-17",
     readTime: "9 MIN READ",
-    category: "MARKET ANALYSIS",
+    category: "NEIGHBORHOODS",
     image: blogTarrytownVsWestlake.url,
     heroImage: blogTarrytownVsWestlake.url,
     imageAlt: "Side-by-side view of a tree-lined Tarrytown street in central Austin and a modern hill-country estate in Westlake at sunset",

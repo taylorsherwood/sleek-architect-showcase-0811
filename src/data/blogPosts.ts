@@ -97,8 +97,8 @@ Tarrytown (78703) sits in central Austin and offers historic, tree-lined charact
 Location | West-central Austin, on the city side of Lake Austin | West of Lake Austin, in the hills
 Jurisdiction | City of Austin | West Lake Hills, Rollingwood, and unincorporated Travis County
 School district | Austin ISD (Casis Elementary) | Eanes ISD (ranked number one in Texas)
-Median sale price\ntrailing year | About $1.36M | About $1.88M
-Median price per\nsquare foot | About $631 | About $559
+MEDIAN SALES PRICE\nTRAILING YEAR | About $1.36M | About $1.88M
+MEDIAN PRICE PER\nSQUARE FOOT | About $631 | About $559
 Median days on market | ~56 | ~57
 One-year price trend | Slightly down, about 1% | Up, about 6%
 Character | Historic, tree-lined, higher density | Hill-country estates, larger lots, view oriented

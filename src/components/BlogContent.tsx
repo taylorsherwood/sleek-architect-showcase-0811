@@ -677,6 +677,29 @@ const BlogContent = ({ content, afterGlance, category, articleId }: BlogContentP
                 />
               </IntelInsert>
             );
+          case "intel-gauge-tarrytown":
+            return (
+              <IntelInsert key={idx} tight>
+                <MarketBalanceGauge
+                  communityName="Tarrytown · 78703"
+                  marketName="West Austin"
+                  fallbackMarketName="Austin Metro"
+                  eyebrow={"TARRYTOWN · 78703 · BUYER / SELLER BALANCE IN REAL TIME"}
+                />
+              </IntelInsert>
+            );
+          case "intel-gauge-westlake":
+            return (
+              <IntelInsert key={idx} tight>
+                <MarketBalanceGauge
+                  communityName="Westlake · 78746"
+                  marketName="West Austin"
+                  fallbackMarketName="Austin Metro"
+                  eyebrow={"WESTLAKE · 78746 · BUYER / SELLER BALANCE IN REAL TIME"}
+                />
+              </IntelInsert>
+            );
+
 
           case "intel-rates":
             return (

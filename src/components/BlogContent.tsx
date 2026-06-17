@@ -280,6 +280,113 @@ const GlanceTable = ({ body }: { body: string }) => {
   );
 };
 
+/**
+ * Semantic responsive comparison table. First row is the header (column labels).
+ * First cell of each subsequent row is the row label (<th scope="row">).
+ * Stacks to a definition-list-style layout on mobile.
+ */
+const CompareTable = ({ body }: { body: string }) => {
+  const rows = body
+    .split("\n")
+    .map((r) => r.split("|").map((c) => c.trim()))
+    .filter((r) => r.length > 1 && r.some(Boolean));
+  if (rows.length < 2) return null;
+  const [header, ...data] = rows;
+  return (
+    <div className="my-12 -mx-6 md:mx-0">
+      <table className="w-full hidden md:table border-collapse">
+        <thead>
+          <tr className="border-b border-foreground/20">
+            {header.map((h, i) => (
+              <th
+                key={i}
+                scope="col"
+                className={`text-left py-4 px-4 text-minimal uppercase tracking-[0.15em] text-xs ${i === 0 ? "" : ""}`}
+                style={{ color: i === 0 ? undefined : "#b9a06c" }}
+              >
+                {h}
+              </th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {data.map((row, rIdx) => (
+            <tr key={rIdx} className="border-b border-foreground/10 last:border-b-0">
+              <th
+                scope="row"
+                className="text-left align-top py-5 px-4 text-minimal text-foreground uppercase tracking-[0.15em] text-xs font-normal w-[28%]"
+              >
+                {row[0]}
+              </th>
+              {row.slice(1).map((cell, cIdx) => (
+                <td key={cIdx} className="align-top py-5 px-4 text-[15px] leading-[1.65] text-muted-foreground">
+                  {cell}
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+
+      {/* Mobile: stacked per-row */}
+      <div className="md:hidden px-6 space-y-8">
+        {data.map((row, rIdx) => (
+          <div key={rIdx} className="border-b border-foreground/10 pb-6 last:border-b-0">
+            <p className="text-minimal text-foreground uppercase tracking-[0.15em] text-xs mb-3">
+              {row[0]}
+            </p>
+            <dl className="space-y-2">
+              {row.slice(1).map((cell, cIdx) => (
+                <div key={cIdx} className="grid grid-cols-[auto_1fr] gap-x-3">
+                  <dt className="text-[11px] uppercase tracking-[0.14em] text-foreground/55 pt-[3px]" style={{ color: "#b9a06c" }}>
+                    {header[cIdx + 1]}
+                  </dt>
+                  <dd className="text-[15px] leading-[1.65] text-muted-foreground">
+                    {cell}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+/**
+ * Quick-answer style callout. First line "label:" becomes the eyebrow.
+ * Remaining lines render as a single paragraph. Built for AI-search extraction.
+ */
+const Callout = ({ body }: { body: string }) => {
+  const lines = body.split("\n");
+  let label = "";
+  let text = body;
+  const first = lines[0]?.trim() ?? "";
+  const m = first.match(/^label:\s*(.+)$/i);
+  if (m) {
+    label = m[1].trim();
+    text = lines.slice(1).join("\n").trim();
+  }
+  return (
+    <aside
+      className="my-10 border-l-2 pl-6 md:pl-8 py-2"
+      style={{ borderColor: "#b9a06c" }}
+      aria-label={label || "Callout"}
+    >
+      {label && (
+        <p className="text-minimal uppercase tracking-[0.18em] text-xs mb-3" style={{ color: "#b9a06c" }}>
+          {label}
+        </p>
+      )}
+      <p
+        className="text-base md:text-lg leading-[1.85] text-foreground/90"
+        dangerouslySetInnerHTML={{ __html: renderInline(text.replace(/\n+/g, " ")) }}
+      />
+    </aside>
+  );
+};
+
 
 const HighlightLine = ({
   label,

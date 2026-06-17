@@ -76,7 +76,11 @@ const renderInline = (text: string) =>
     .replace(/\*\*(.*?)\*\*/g, '<strong class="text-foreground">$1</strong>')
     .replace(
       /\[([^\]]+)\]\(([^)]+)\)/g,
-      '<a href="$2" class="text-foreground underline underline-offset-4 decoration-accent-gold/40 hover:decoration-accent-gold transition-colors duration-300">$1</a>'
+      (_m, label: string, url: string) => {
+        const external = /^https?:\/\//i.test(url);
+        const attrs = external ? ' target="_blank" rel="noopener noreferrer"' : "";
+        return `<a href="${url}"${attrs} class="text-foreground underline underline-offset-4 decoration-accent-gold/40 hover:decoration-accent-gold transition-colors duration-300">${label}</a>`;
+      }
     );
 
 const renderHeading = (line: string): string => {

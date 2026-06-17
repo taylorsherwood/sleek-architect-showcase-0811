@@ -28,8 +28,8 @@ const Footer = () => {
       {/* Newsletter signup — immediately above footer navigation */}
       <NewsletterSignup className="py-16 md:py-24" />
 
-      {/* Top border */}
-      <div className="w-full h-px" style={{ background: "hsl(var(--primary))" }} />
+      {/* Fancy gold divider between newsletter and footer navigation */}
+      <div className="w-full" style={{ height: "2px", background: "hsl(var(--gold))" }} />
 
       <div className="max-w-[1140px] mx-auto px-8 md:px-12">
         <div style={{ paddingTop: "clamp(48px, 6vw, 72px)", paddingBottom: "12px" }}>

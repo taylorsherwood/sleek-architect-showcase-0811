@@ -149,6 +149,26 @@ Liquidity was similar, with both areas sitting around 56 to 57 median days on ma
 
 One honest caveat on the data: these figures are for the 78703 and 78746 zip codes, which contain Tarrytown and the Westlake communities but also some surrounding pockets, so they are a strong proxy rather than a street-level read. Market conditions also shift, so treat these as a snapshot of the trailing year, not a permanent state.
 
+## Property taxes: a real difference that favors the Westlake side
+
+Property taxes are one of the most overlooked differences between these two areas, and at this price point the gap is real money every single year.
+
+In Texas, your total property tax rate is the sum of every taxing entity whose boundary your home falls within, and that is exactly where Tarrytown and Westlake split.
+
+A Tarrytown home sits inside the City of Austin, so its bill stacks the City of Austin, Travis County, Austin ISD, Austin Community College, and Central Health. For the 2025-26 cycle, that combined rate runs around 2.1% of taxable value, and the City of Austin line, which rose roughly 10% this cycle, is one of the larger pieces.
+
+The Westlake side is where it gets interesting, because there are really three different tax situations depending on exactly where a home sits:
+
+Inside the City of West Lake Hills. You still pay Travis County, Eanes ISD, ACC, and Central Health, but the West Lake Hills municipal rate sits well below the City of Austin's. At the same taxable value, a West Lake Hills home runs meaningfully lower than a comparable central Austin home, on the order of roughly $4,900 a year per $1M of taxable value.
+
+Inside the City of Rollingwood. A similar structure, with Rollingwood's own municipal rate in place of Austin's.
+
+In unincorporated Travis County, including the ETJ on the Westlake side. This is the quiet advantage. The extraterritorial jurisdiction is the unincorporated buffer around a city's limits, and a home that is not inside any city pays no municipal property tax at all. It carries only the county, Eanes ISD, ACC, Central Health, and any applicable special district. That can make the unincorporated and ETJ pockets the lowest total rate of the three, while still sitting in the same top-rated Eanes ISD.
+
+So on a rate basis, the order generally runs from highest to lowest: Tarrytown, then West Lake Hills or Rollingwood, then the unincorporated and ETJ pockets on the Westlake side.
+
+A few honest caveats. School taxes are the largest single line in every one of these bills, and both Austin ISD and Eanes ISD are property-wealthy recapture districts, meaning a share of what you pay is sent back to the state for redistribution. Some unincorporated areas sit inside a municipal utility district or emergency services district that adds to the rate, so no city tax does not always mean rock bottom. The 2026 school homestead exemption of $140,000 reduces the school portion for homesteaded owners in both districts. And the point that matters most: a lower rate on a more expensive home can still produce a larger dollar bill, so a $3M Westlake estate at a lower rate can easily owe more in total than a $1.4M Tarrytown home at a higher one. Always calculate from the current taxable value and exemptions for the specific parcel, which Travis Central Appraisal District publishes.
+
 ## Which one is right for you?
 
 The decision is rarely about which neighborhood is better. It is about which one fits your life.

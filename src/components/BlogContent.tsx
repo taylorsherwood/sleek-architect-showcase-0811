@@ -587,6 +587,10 @@ const BlogContent = ({ content, afterGlance, category, articleId }: BlogContentP
               </div>
             );
           }
+          case "compare-table":
+            return <CompareTable key={idx} body={block.body} />;
+          case "callout":
+            return <Callout key={idx} body={block.body} />;
           case "best-for":
             return <HighlightLine key={idx} label="Best For" body={block.body} tone="best" />;
           case "watch-out":

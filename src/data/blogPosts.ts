@@ -36,6 +36,7 @@ import blogExclusivePropertiesAustin from "@/assets/blog/off-market-luxury-homes
 import blogBuyerRepresentationAgreement from "@/assets/blog/buyer-representation-agreement-texas.jpg.asset.json";
 import blogTexasHomesteadExemption from "@/assets/blog/texas-homestead-exemption-travis-county.jpg.asset.json";
 import blogBuyerAgentCommissionTexas from "@/assets/blog/buyer-agent-commission-texas.webp.asset.json";
+import blogTarrytownVsWestlake from "@/assets/blog/tarrytown-vs-westlake.jpg.asset.json";
 
 
 
@@ -65,6 +66,123 @@ export interface BlogPost {
 const LINK = "text-foreground underline hover:text-muted-foreground";
 
 export const blogPosts: BlogPost[] = [
+  {
+    id: "tarrytown-vs-westlake-austin",
+    title: "Tarrytown vs. Westlake: Which Austin Luxury Neighborhood Is Right for You? (2026)",
+    metaTitle: "Tarrytown vs. Westlake: Austin Luxury Compared (2026)",
+    excerpt: "Tarrytown or Westlake? Compare Austin's two premier luxury areas on price, schools, location, and lifestyle, with current 2026 market data.",
+    author: "Taylor Sherwood",
+    date: "2026-06-17",
+    readTime: "9 MIN READ",
+    category: "NEIGHBORHOODS",
+    image: blogTarrytownVsWestlake.url,
+    heroImage: blogTarrytownVsWestlake.url,
+    imageAlt: "Side-by-side view of a tree-lined Tarrytown street in central Austin and a modern hill-country estate in Westlake at sunset",
+    imageCaption: "Two faces of top-tier Austin: Tarrytown's oak-canopied streets and Westlake's hill-country estates.",
+    content: `
+
+If you are shopping at the top of the Austin market, two names rise above the rest, and they could not feel more different. Tarrytown is old-Austin character a few minutes from downtown. Westlake is hill-country estates wrapped around the best public schools in Texas. Both are genuinely prime addresses. The right one comes down to what you are optimizing for: proximity and patina, or space and schools.
+
+This guide compares the two on the things that actually drive the decision, with current market data, so you can see past the prestige and find the fit.
+
+:::callout
+label: Quick answer
+Tarrytown (78703) sits in central Austin and offers historic, tree-lined character close to downtown, within Austin ISD. Westlake (78746), which covers West Lake Hills, Rollingwood, and nearby unincorporated Travis County, offers larger hill-country estates and the top-rated Eanes ISD schools a short drive west. Over the past year, Westlake's median sale price ran higher, around $1.88M versus roughly $1.36M in Tarrytown, yet Tarrytown commanded more per square foot, a reflection of its central land. Choose Tarrytown for location and old-Austin charm. Choose Westlake for space, views, and schools.
+:::
+
+## The snapshot
+
+:::compare-table
+ | Tarrytown (78703) | Westlake (78746)
+Location | West-central Austin, on the city side of Lake Austin | West of Lake Austin, in the hills
+Jurisdiction | City of Austin | West Lake Hills, Rollingwood, and unincorporated Travis County
+School district | Austin ISD (Casis Elementary) | Eanes ISD (ranked number one in Texas)
+Median sale price, trailing year | About $1.36M | About $1.88M
+Median price per square foot | About $631 | About $559
+Median days on market | About 56 | About 57
+One-year price trend | Slightly down, about 1% | Up, about 6%
+Character | Historic, tree-lined, central | Hill-country estates, larger lots
+Best for | Proximity and old-Austin charm | Space, views, and top schools
+:::
+
+## Tarrytown: old-Austin character minutes from downtown
+
+Tarrytown is the established heart of central Austin luxury. It sits just west of downtown on the city side of Lake Austin, a neighborhood of tree-lined streets, mature oaks, and homes that range from preserved early-twentieth-century estates to ground-up modern rebuilds on the same compact lots. The appeal is location and character in equal measure. You are minutes from downtown, the University of Texas, and the water, in a part of the city that feels settled and green rather than new.
+
+Because the land is central and the lots are smaller, Tarrytown trades at the highest price per square foot of the two areas. You are paying a premium for where the home sits, not for sprawl. That suits buyers who want to be close to the core of the city, value historic architecture and walkable pockets, and would rather have less house in a more central, characterful setting.
+
+On schools, Tarrytown is part of [Austin ISD](https://www.austinisd.org/), anchored by Casis Elementary, one of the most sought-after elementary schools in the district. Austin ISD is a large district with more campus-to-campus variation than Eanes, so families who prioritize schools should map the full path from elementary through high school for any specific address using a resource like [GreatSchools](https://www.greatschools.org/).
+
+:::intel-gauge-tarrytown
+
+## Westlake: hill-country estates and the best schools in Texas
+
+Westlake is less a single place than a area. The name covers two incorporated cities, West Lake Hills and Rollingwood, along with stretches of unincorporated Travis County, all west of Lake Austin in the 78746 zip code. That distinction matters when you buy here, because city services, regulations, and even some taxes can differ depending on exactly which jurisdiction a home sits in. A good agent will tell you which one you are actually in, since it is not obvious from the address alone.
+
+What unites the area is its character: hill-country topography, larger lots, long views, and a higher share of newer and larger estate homes. You give up a little proximity to downtown, though it remains a short drive on MoPac or the 360 loop, in exchange for space, privacy, and elevation. That is why Westlake's median sale price runs higher than Tarrytown's even as its price per square foot runs lower. You are buying more home and more land per dollar of frontage.
+
+The headline draw, though, is the schools. [Eanes ISD](https://www.eanesisd.net/) is consistently ranked the top district in the Austin area and among the best in Texas, with a 10/10 GreatSchools rating and a graduation rate around 98%. Westlake High School is one of the most decorated public high schools in the state, and its feeder elementary and middle schools rank near the top as well. For many families, that single fact is the reason they shop Westlake at all.
+
+:::intel-gauge-westlake
+
+## Schools: the deciding factor for many families
+
+For luxury buyers with children, the school question often settles the neighborhood question before price even enters the conversation.
+
+Eanes ISD is the cleaner answer if top-rated public schools are non-negotiable. The district's independence from Austin ISD, its compact geography, and its long track record translate into a real and measurable price premium. By some local estimates, a comparable home just inside the Eanes boundary can sell for $150,000 to $200,000 more than one just outside it. That premium is not a quirk. It is buyers pricing in two decades of consistent performance.
+
+Tarrytown's Austin ISD story is strong but more specific. Casis Elementary is a genuine standout, and homes in its attendance zone carry a documented premium of roughly 8 to 12% per square foot over comparable homes zoned to lower-rated campuses. The nuance is that Austin ISD is far larger and more variable than Eanes, so the strength of the assignment depends more on the exact address, particularly at the middle and high school levels.
+
+The short version: if you want a top-to-bottom public school path with no homework required, Westlake and Eanes deliver it. If you love Tarrytown and the Casis zone, the elementary years are excellent, and you simply want to confirm the rest of the path.
+
+## Prices and the market: what the numbers say
+
+Over the trailing twelve months through spring 2026, based on Unlock MLS data, the two areas tell a revealing story.
+
+Westlake (78746) posted a median sale price around $1.88M, against roughly $1.36M in Tarrytown (78703). On absolute price, Westlake is clearly the more expensive address. Flip to price per square foot, though, and it reverses: Tarrytown ran about $631 per foot versus roughly $559 in Westlake. In plain terms, Tarrytown charges more for every square foot because you are paying for central land, while Westlake's higher total prices reflect larger homes on larger lots.
+
+Liquidity was similar, with both areas sitting around 56 to 57 median days on market and close to six months of inventory, a relatively balanced setting at the top of the market. The clearer divergence was direction. Over the year, Westlake appreciated roughly 6% while Tarrytown softened by about 1%, a gap worth noting if you are weighing near-term value. For broader context on where the top of the market is heading, see our [Austin luxury market trends](/blog/austin-luxury-market-trends) coverage.
+
+One honest caveat on the data: these figures are for the 78703 and 78746 zip codes, which contain Tarrytown and the Westlake communities but also some surrounding pockets, so they are a strong proxy rather than a street-level read. Market conditions also shift, so treat these as a snapshot of the trailing year, not a permanent state.
+
+## Which one is right for you?
+
+The decision is rarely about which neighborhood is better. It is about which one fits your life.
+
+Lean Tarrytown if you want to be minutes from downtown, the university, and Lake Austin, you are drawn to historic architecture and a settled, leafy feel, and you would trade square footage for a central address with character. You will pay a premium per foot, and for the right buyer it is worth every dollar.
+
+Lean Westlake if top-rated schools are a priority, you want more space, larger lots, privacy, and hill-country views, and you are comfortable being a short drive rather than a few minutes from the core. You get more home and land per dollar of frontage, plus the strongest public school path in the region.
+
+Many buyers tour both and feel the difference immediately. They are both the top of the Austin market, in two completely different keys.
+
+## The bottom line
+
+Tarrytown and Westlake are the twin peaks of Austin luxury, and choosing between them is a question of priorities, not prestige. Tarrytown offers central, characterful living at a premium per square foot. Westlake offers space, views, and the best schools in Texas, at a higher absolute price. Neither is the wrong answer. The wrong move is choosing without understanding the real trade-offs, especially since many of the best homes in both areas trade quietly, before they ever reach the open market.
+
+At Echelon Property Group, we work both areas closely, including off-market opportunities you will not find on a public search. If you are weighing Tarrytown against Westlake, the smartest first step is [a conversation before you tour](/contact), so your search is built around how you actually want to live.
+
+:::faq
+Q: Is Tarrytown or Westlake more expensive?
+A: It depends on how you measure. Over the past year, Westlake had a higher median sale price, around $1.88M versus roughly $1.36M in Tarrytown. But Tarrytown commanded more per square foot, about $631 versus $559, because its central land carries a premium.
+
+Q: Is Westlake in Austin?
+A: Not in the way most people assume. The Westlake area is made up of two separate incorporated cities, West Lake Hills and Rollingwood, plus unincorporated parts of Travis County, all in the 78746 zip code. Tarrytown, by contrast, sits inside the City of Austin.
+
+Q: What school district is Tarrytown in?
+A: Austin ISD. Its standout campus is Casis Elementary, one of the most sought-after elementary schools in the district. Because Austin ISD is large and varies by campus, families should confirm the full school path for a specific address.
+
+Q: What school district is Westlake in?
+A: Eanes ISD, which is consistently ranked the top district in the Austin area and number one in Texas. Westlake High School is one of the most decorated public high schools in the state.
+
+Q: Which has better schools, Tarrytown or Westlake?
+A: Westlake, on the strength of Eanes ISD, generally has the edge for a top-to-bottom public school path. Tarrytown's Casis Elementary is excellent, but Austin ISD is larger and more variable, so the assignment depends more on the exact address.
+
+Q: Which is closer to downtown Austin?
+A: Tarrytown. It sits in west-central Austin, minutes from downtown, the University of Texas, and Lake Austin. Westlake is a short drive west, across the lake and into the hills.
+:::
+
+    `,
+  },
   {
     id: "texas-homestead-exemption-travis-county",
     title: "Texas Homestead Exemption 2026: A Travis County Owner's Guide",

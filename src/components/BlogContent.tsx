@@ -76,7 +76,11 @@ const renderInline = (text: string) =>
     .replace(/\*\*(.*?)\*\*/g, '<strong class="text-foreground">$1</strong>')
     .replace(
       /\[([^\]]+)\]\(([^)]+)\)/g,
-      '<a href="$2" class="text-foreground underline underline-offset-4 decoration-accent-gold/40 hover:decoration-accent-gold transition-colors duration-300">$1</a>'
+      (_m, label: string, url: string) => {
+        const external = /^https?:\/\//i.test(url);
+        const attrs = external ? ' target="_blank" rel="noopener noreferrer"' : "";
+        return `<a href="${url}"${attrs} class="text-foreground underline underline-offset-4 decoration-accent-gold/40 hover:decoration-accent-gold transition-colors duration-300">${label}</a>`;
+      }
     );
 
 const renderHeading = (line: string): string => {
@@ -181,7 +185,7 @@ const renderMarkdownBody = (body: string): string => {
 };
 
 interface Block {
-  type: "markdown" | "glance" | "best-for" | "watch-out" | "micro-cta" | "cta" | "faq" | "stat-block" | "intel-pulse" | "intel-gauge" | "intel-gauge-austin-metro" | "intel-gauge-lake-austin" | "intel-gauge-lake-travis" | "intel-gauge-austin-15m" | "intel-rates" | "intel-luxury-snapshot";
+  type: "markdown" | "glance" | "compare-table" | "callout" | "best-for" | "watch-out" | "micro-cta" | "cta" | "faq" | "stat-block" | "intel-pulse" | "intel-gauge" | "intel-gauge-austin-metro" | "intel-gauge-lake-austin" | "intel-gauge-lake-travis" | "intel-gauge-austin-15m" | "intel-gauge-tarrytown" | "intel-gauge-westlake" | "intel-rates" | "intel-luxury-snapshot";
   body: string;
 }
 
@@ -200,7 +204,7 @@ const parseBlocks = (content: string): Block[] => {
 
   while (i < lines.length) {
     const line = lines[i];
-    const fenceMatch = line.match(/^:::(glance|best-for|watch-out|micro-cta|cta|faq|stat-block|intel-pulse|intel-gauge|intel-gauge-austin-metro|intel-gauge-lake-austin|intel-gauge-lake-travis|intel-gauge-austin-15m|intel-rates|intel-luxury-snapshot)\s*$/);
+    const fenceMatch = line.match(/^:::(glance|compare-table|callout|best-for|watch-out|micro-cta|cta|faq|stat-block|intel-pulse|intel-gauge|intel-gauge-austin-metro|intel-gauge-lake-austin|intel-gauge-lake-travis|intel-gauge-austin-15m|intel-gauge-tarrytown|intel-gauge-westlake|intel-rates|intel-luxury-snapshot)\s*$/);
     if (fenceMatch) {
       flushMd();
       const type = fenceMatch[1] as Block["type"];
@@ -273,6 +277,113 @@ const GlanceTable = ({ body }: { body: string }) => {
       ))}
 
     </div>
+  );
+};
+
+/**
+ * Semantic responsive comparison table. First row is the header (column labels).
+ * First cell of each subsequent row is the row label (<th scope="row">).
+ * Stacks to a definition-list-style layout on mobile.
+ */
+const CompareTable = ({ body }: { body: string }) => {
+  const rows = body
+    .split("\n")
+    .map((r) => r.split("|").map((c) => c.trim()))
+    .filter((r) => r.length > 1 && r.some(Boolean));
+  if (rows.length < 2) return null;
+  const [header, ...data] = rows;
+  return (
+    <div className="my-12 -mx-6 md:mx-0">
+      <table className="w-full hidden md:table border-collapse">
+        <thead>
+          <tr className="border-b border-foreground/20">
+            {header.map((h, i) => (
+              <th
+                key={i}
+                scope="col"
+                className={`text-left py-4 px-4 text-minimal uppercase tracking-[0.15em] text-xs ${i === 0 ? "" : ""}`}
+                style={{ color: i === 0 ? undefined : "#b9a06c" }}
+              >
+                {h}
+              </th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {data.map((row, rIdx) => (
+            <tr key={rIdx} className="border-b border-foreground/10 last:border-b-0">
+              <th
+                scope="row"
+                className="text-left align-top py-5 px-4 text-minimal text-foreground uppercase tracking-[0.15em] text-xs font-normal w-[28%]"
+              >
+                {row[0]}
+              </th>
+              {row.slice(1).map((cell, cIdx) => (
+                <td key={cIdx} className="align-top py-5 px-4 text-[15px] leading-[1.65] text-muted-foreground">
+                  {cell}
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+
+      {/* Mobile: stacked per-row */}
+      <div className="md:hidden px-6 space-y-8">
+        {data.map((row, rIdx) => (
+          <div key={rIdx} className="border-b border-foreground/10 pb-6 last:border-b-0">
+            <p className="text-minimal text-foreground uppercase tracking-[0.15em] text-xs mb-3">
+              {row[0]}
+            </p>
+            <dl className="space-y-2">
+              {row.slice(1).map((cell, cIdx) => (
+                <div key={cIdx} className="grid grid-cols-[auto_1fr] gap-x-3">
+                  <dt className="text-[11px] uppercase tracking-[0.14em] text-foreground/55 pt-[3px]" style={{ color: "#b9a06c" }}>
+                    {header[cIdx + 1]}
+                  </dt>
+                  <dd className="text-[15px] leading-[1.65] text-muted-foreground">
+                    {cell}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+/**
+ * Quick-answer style callout. First line "label:" becomes the eyebrow.
+ * Remaining lines render as a single paragraph. Built for AI-search extraction.
+ */
+const Callout = ({ body }: { body: string }) => {
+  const lines = body.split("\n");
+  let label = "";
+  let text = body;
+  const first = lines[0]?.trim() ?? "";
+  const m = first.match(/^label:\s*(.+)$/i);
+  if (m) {
+    label = m[1].trim();
+    text = lines.slice(1).join("\n").trim();
+  }
+  return (
+    <aside
+      className="my-10 border-l-2 pl-6 md:pl-8 py-2"
+      style={{ borderColor: "#b9a06c" }}
+      aria-label={label || "Callout"}
+    >
+      {label && (
+        <p className="text-minimal uppercase tracking-[0.18em] text-xs mb-3" style={{ color: "#b9a06c" }}>
+          {label}
+        </p>
+      )}
+      <p
+        className="text-base md:text-lg leading-[1.85] text-foreground/90"
+        dangerouslySetInnerHTML={{ __html: renderInline(text.replace(/\n+/g, " ")) }}
+      />
+    </aside>
   );
 };
 
@@ -476,6 +587,10 @@ const BlogContent = ({ content, afterGlance, category, articleId }: BlogContentP
               </div>
             );
           }
+          case "compare-table":
+            return <CompareTable key={idx} body={block.body} />;
+          case "callout":
+            return <Callout key={idx} body={block.body} />;
           case "best-for":
             return <HighlightLine key={idx} label="Best For" body={block.body} tone="best" />;
           case "watch-out":
@@ -562,6 +677,29 @@ const BlogContent = ({ content, afterGlance, category, articleId }: BlogContentP
                 />
               </IntelInsert>
             );
+          case "intel-gauge-tarrytown":
+            return (
+              <IntelInsert key={idx} tight>
+                <MarketBalanceGauge
+                  communityName="Tarrytown · 78703"
+                  marketName="West Austin"
+                  fallbackMarketName="Austin Metro"
+                  eyebrow={"TARRYTOWN · 78703 · BUYER / SELLER BALANCE IN REAL TIME"}
+                />
+              </IntelInsert>
+            );
+          case "intel-gauge-westlake":
+            return (
+              <IntelInsert key={idx} tight>
+                <MarketBalanceGauge
+                  communityName="Westlake · 78746"
+                  marketName="West Austin"
+                  fallbackMarketName="Austin Metro"
+                  eyebrow={"WESTLAKE · 78746 · BUYER / SELLER BALANCE IN REAL TIME"}
+                />
+              </IntelInsert>
+            );
+
 
           case "intel-rates":
             return (

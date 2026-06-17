@@ -314,7 +314,7 @@ const CompareTable = ({ body }: { body: string }) => {
             <tr key={rIdx} className="border-b border-foreground/10 last:border-b-0">
               <th
                 scope="row"
-                className="text-left align-top py-5 px-4 text-minimal text-foreground uppercase tracking-[0.15em] text-xs font-normal w-[28%]"
+                className="text-left align-top py-5 px-4 text-minimal text-foreground uppercase tracking-[0.15em] text-xs font-normal w-[28%] whitespace-pre-line"
               >
                 {row[0]}
               </th>

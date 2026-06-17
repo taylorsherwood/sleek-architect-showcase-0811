@@ -68,8 +68,8 @@ const LINK = "text-foreground underline hover:text-muted-foreground";
 export const blogPosts: BlogPost[] = [
   {
     id: "tarrytown-vs-westlake-austin",
-    title: "Tarrytown vs. Westlake: Which Austin Luxury Neighborhood Is Right for You? (2026)",
-    metaTitle: "Tarrytown vs. Westlake: Austin Luxury Compared (2026)",
+    title: "Tarrytown vs. Westlake: Which Austin Luxury Neighborhood Is Right for You in 2026?",
+    metaTitle: "Tarrytown vs. Westlake: Austin Luxury Compared 2026",
     excerpt: "Tarrytown or Westlake? Compare Austin's two premier luxury areas on price, schools, location, and lifestyle, with current 2026 market data.",
     author: "Taylor Sherwood",
     date: "2026-06-17",
@@ -97,8 +97,8 @@ Tarrytown (78703) sits in central Austin and offers historic, tree-lined charact
 Location | West-central Austin, on the city side of Lake Austin | West of Lake Austin, in the hills
 Jurisdiction | City of Austin | West Lake Hills, Rollingwood, and unincorporated Travis County
 School district | Austin ISD (Casis Elementary) | Eanes ISD (ranked number one in Texas)
-Median sale price, trailing year | About $1.36M | About $1.88M
-Median price per square foot | About $631 | About $559
+Median sale price\ntrailing year | About $1.36M | About $1.88M
+Median price per\nsquare foot | About $631 | About $559
 Median days on market | About 56 | About 57
 One-year price trend | Slightly down, about 1% | Up, about 6%
 Character | Historic, tree-lined, central | Hill-country estates, larger lots

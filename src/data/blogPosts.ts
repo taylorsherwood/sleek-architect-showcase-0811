@@ -114,6 +114,8 @@ Because the land is central and the lots are smaller, Tarrytown trades at the hi
 On schools, Tarrytown is part of [Austin ISD](https://www.austinisd.org/), anchored by Casis Elementary, one of the most sought-after elementary schools in the district. Austin ISD is a large district with more campus-to-campus variation than Eanes, so families who prioritize schools should map the full path from elementary through high school for any specific address using a resource like [GreatSchools](https://www.greatschools.org/).
 
 :::intel-gauge-tarrytown
+:::
+
 
 ## Westlake: hill-country estates and the best schools in Texas
 
@@ -124,6 +126,8 @@ What unites the area is its character: hill-country topography, larger lots, lon
 The headline draw, though, is the schools. [Eanes ISD](https://www.eanesisd.net/) is consistently ranked the top district in the Austin area and among the best in Texas, with a 10/10 GreatSchools rating and a graduation rate around 98%. Westlake High School is one of the most decorated public high schools in the state, and its feeder elementary and middle schools rank near the top as well. For many families, that single fact is the reason they shop Westlake at all.
 
 :::intel-gauge-westlake
+:::
+
 
 ## Schools: the deciding factor for many families
 

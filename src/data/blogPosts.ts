@@ -74,7 +74,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "How a 1031 exchange lets Texas real estate investors defer capital gains tax. The 45-day and 180-day rules, qualified intermediaries, and where exchanges go wrong, explained for 2026.",
     author: "Taylor Sherwood",
     date: "2026-06-18",
-    readTime: "8 MIN READ",
+    readTime: "9 MIN READ",
     category: "INVESTMENT",
     image: blog1031Exchange.url,
     heroImage: blog1031Exchange.url,

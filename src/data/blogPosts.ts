@@ -195,6 +195,7 @@ If you are weighing a 1031 exchange on an Austin or Central Texas investment pro
 *This article is for educational purposes only and does not constitute tax, legal, or investment advice. Consult a qualified tax professional and intermediary about your specific situation.*
 `,
   },
+  {
     id: "tarrytown-vs-westlake-austin",
     title: "Tarrytown vs. Westlake: Which Austin Luxury Neighborhood Is Right for You in 2026?",
     metaTitle: "Tarrytown vs. Westlake: Austin Luxury Compared 2026",

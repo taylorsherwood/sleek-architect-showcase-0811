@@ -2,7 +2,7 @@ import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import Navigation from "@/components/Navigation";
 import OptimizedImage from "@/components/OptimizedImage";
 import expEchelonLogo from "@/assets/exp-echelon-logo.png";
-import taylorAboutHeadshot from "@/assets/taylor-about-headshot.jpeg";
+import taylorAboutHeadshot from "@/assets/taylor-about-headshot.jpg.asset.json";
 import austinLifestyle from "@/assets/austin-approach-pool.jpg";
 import { Link } from "react-router-dom";
 import SchemaMarkup, { taylorSherwoodSchema, createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
@@ -280,7 +280,7 @@ const About = () => {
             <div className="max-w-7xl mx-auto grid md:grid-cols-[38fr_62fr] gap-12 items-start">
               <div className="flex flex-col items-center">
                 <OptimizedImage
-                  src={taylorAboutHeadshot}
+                  src={taylorAboutHeadshot.url}
                   alt="Taylor Sherwood, founder of Echelon Property Group and Austin luxury real estate advisor"
                   title="Taylor Sherwood, Echelon Property Group founder and Austin real estate advisor"
                   width={800}

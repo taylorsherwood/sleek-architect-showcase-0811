@@ -204,6 +204,9 @@ A: To defer the entire gain, yes. Your replacement property must be of equal or 
 Q: What is a qualified intermediary and do I really need one?
 A: A qualified intermediary is a neutral third party who holds your sale proceeds between the sale and the purchase, so the money never passes through your hands. It is required. If you take possession of the funds at any point, the exchange is disqualified. Engage your intermediary before you sell, not after.
 
+Q: What is a reverse 1031 exchange?
+A: A reverse 1031 exchange lets you buy your replacement property before you sell your existing one, which is the opposite of a standard forward exchange. Because the IRS does not allow you to hold title to both properties at once inside an exchange, a neutral party called an Exchange Accommodation Titleholder temporarily takes title to one property and parks it under the safe harbor rules of Revenue Procedure 2000-37. You then have 45 days to identify the property you will sell and 180 days to close that sale. Reverse exchanges offer timing certainty in competitive markets but cost more and are more complex than a standard exchange.
+
 Q: Does Texas have its own 1031 rules?
 A: Texas has no state income tax, so there is no separate state-level capital gains tax to defer at the state level. The 1031 exchange operates under federal law, and the federal rules described here apply to Texas investors the same way they apply nationwide. That said, every situation is different, so coordinate with a tax professional.
 :::
@@ -211,6 +214,7 @@ A: Texas has no state income tax, so there is no separate state-level capital ga
 If you are weighing a 1031 exchange on an Austin or Central Texas investment property, the timing has to be planned before you sell, not after. [Reach out to Echelon Property Group](/contact) and we will help you map the move, line up the right qualified intermediary, and identify replacement properties that fit your strategy.
 
 *This article is for educational purposes only and does not constitute tax, legal, or investment advice. Consult a qualified tax professional and intermediary about your specific situation.*\u00a0
+
 `,
   },
   {

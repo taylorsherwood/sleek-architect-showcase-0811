@@ -159,6 +159,24 @@ Deferring the tax means you reinvest your full proceeds instead of a post-tax re
 
 The long game is what investors call swap till you drop. Because the deferred gain is wiped out by the step-up in basis when property passes to heirs at death, an investor can exchange property after property across a lifetime, never paying the deferred tax, and ultimately pass the portfolio to heirs with the gain eliminated entirely. It is a legitimate and widely used estate strategy.
 
+## The reverse 1031 exchange: buying before you sell
+
+Sometimes the right replacement property surfaces before you have sold the one you are holding. In a low-inventory market like Austin, waiting until your sale closes can mean losing that property to a faster buyer. The reverse 1031 exchange solves this by flipping the order. You acquire the replacement property first and sell your relinquished property afterward, and still defer the tax.
+
+The complication is that the IRS does not let you hold title to both properties at the same time inside an exchange. To work around that, a reverse exchange uses an Exchange Accommodation Titleholder, usually called an EAT. The EAT is a neutral party, often the same firm serving as your qualified intermediary, that temporarily takes title to one of the properties and parks it while you complete the rest of the transaction. This safe harbor structure is governed by IRS Revenue Procedure 2000-37.
+
+Here is how the common version works. The EAT forms a single-member LLC and takes title to your new replacement property, holding it on your behalf. Within five business days, you and the EAT sign a qualified exchange accommodation agreement documenting the arrangement. From the day the EAT takes title, you have 45 days to identify in writing which property you will sell, and 180 days to close that sale. Once your relinquished property sells, the proceeds flow through the qualified intermediary, the EAT transfers the parked replacement property to you, and the exchange is complete. The same 45-day and 180-day clocks you know from a forward exchange apply here, they simply start when the EAT parks the property rather than when you sell.
+
+What it costs: A reverse exchange runs meaningfully more than a standard forward exchange, often in the range of $7,000 to $15,000 or more in structuring and EAT fees, compared to roughly $1,000 to $3,000 for a forward exchange. The premium pays for the LLC formation, the parking arrangement, and the additional legal coordination.
+
+The advantage is control and certainty. You lock down the replacement property the moment you find it, with no risk of losing it while your sale drags out, and no pressure to sell your existing property at a discount just to beat the 45-day clock. In a competitive market with tight inventory, that timing flexibility can be the difference between landing the property you want and watching it go to someone else.
+
+The disadvantage is cost and complexity. Beyond the higher fees, the structure has more moving parts. The qualified intermediary, the EAT, escrow, and often a lender all have to coordinate. Financing is the most common friction point. Because the EAT holds title, your lender may have to lend to the EAT rather than directly to you, and many lenders are unfamiliar with reverse exchanges, so they need to be brought in early. Reverse exchanges work most smoothly when you can pay cash for the replacement property or the seller is financing it. The 180-day clock still applies, so if you cannot sell your relinquished property in time, you lose the safe harbor protection.
+
+For most investors a standard forward exchange is simpler and cheaper. The reverse exchange exists for the specific situation where the right property appears before you are ready to sell and passing on it is not an option.
+
+
+
 ## Where it goes wrong
 
 The failure points are consistent. Touching the proceeds disqualifies the exchange instantly, which is the entire reason the qualified intermediary exists. Missing either deadline by a single day voids the whole thing and triggers full tax on the original sale. Trading down in value or pulling cash out creates taxable boot. And misjudging eligibility, especially treating a flip property as if it were an investment hold, can unravel an exchange after the fact.

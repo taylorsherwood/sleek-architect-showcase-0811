@@ -547,56 +547,54 @@ const BlogContent = ({ content, afterGlance, category, articleId }: BlogContentP
   // blocks (those win — don't double up).
   const pathway = pathwayForCategory(category);
   const authorPlacedCTA = blocks.some((b) => b.type === "cta");
-  // A block is eligible to host a trailing CTA only if it is a substantial
-  // prose block (not a heading + single sentence) AND the next block is also
-  // plain prose — otherwise the CTA gets stranded between a heading and a
-  // callout / faq / intel block, which reads as an interruption.
-  const isSubstantialProse = (body: string) => {
-    const trimmed = body.trim();
-    if (trimmed.length < 600) return false;
-    // Reject blocks that are mostly a heading (e.g. "## FAQ" + 1 short line).
-    const nonHeadingChars = trimmed
-      .split("\n")
-      .filter((line) => !/^\s{0,3}#{1,6}\s/.test(line))
-      .join("\n")
-      .trim().length;
-    return nonHeadingChars >= 500;
+  // A CTA may only sit at a natural section break: render it after block i
+  // when block i+1 is a markdown block whose first non-empty line is a new
+  // H2 (`## `). That places the CTA between sections instead of splitting
+  // one in half (e.g. right under "A worked example" or "FAQ").
+  const startsNewSection = (body: string) => {
+    const firstLine = body.split("\n").map((l) => l.trim()).find((l) => l.length > 0);
+    return !!firstLine && /^##\s+\S/.test(firstLine);
   };
   const eligibleIdx = new Set<number>();
-  blocks.forEach((b, i) => {
-    if (b.type !== "markdown") return;
-    if (!isSubstantialProse(b.body)) return;
+  blocks.forEach((_b, i) => {
     const next = blocks[i + 1];
-    if (next && next.type !== "markdown") return;
+    if (!next || next.type !== "markdown") return;
+    if (!startsNewSection(next.body)) return;
     eligibleIdx.add(i);
   });
   const totalLen = blocks.reduce(
-    (sum, b, i) =>
-      b.type === "markdown" && b.body.trim().length > 0 ? sum + b.body.length : sum,
+    (sum, b) => (b.body && b.body.trim().length > 0 ? sum + b.body.length : sum),
     0,
   );
   let midOneAfter = -1;
   let midTwoAfter = -1;
   if (!authorPlacedCTA && totalLen >= 3500 && eligibleIdx.size >= 2) {
+    const eligibleSorted = Array.from(eligibleIdx).sort((a, b) => a - b);
     let cumulative = 0;
+    const pctAt: Record<number, number> = {};
     blocks.forEach((b, i) => {
-      if (b.type !== "markdown" || b.body.trim().length === 0) return;
-      cumulative += b.body.length;
-      const pct = cumulative / totalLen;
-      if (!eligibleIdx.has(i)) return;
-      if (midOneAfter === -1 && pct >= 0.3) midOneAfter = i;
-      else if (
-        midOneAfter !== -1 &&
-        midTwoAfter === -1 &&
-        pct >= 0.7 &&
-        i !== midOneAfter
-      )
-        midTwoAfter = i;
+      if (b.body && b.body.trim().length > 0) cumulative += b.body.length;
+      pctAt[i] = cumulative / totalLen;
     });
-    const lastEligible = Math.max(...Array.from(eligibleIdx));
-    if (midTwoAfter === lastEligible) midTwoAfter = -1;
-    if (midOneAfter === lastEligible) midOneAfter = -1;
+    // Pick the eligible break closest to 30% and to 70%.
+    const closestTo = (target: number, exclude: number) =>
+      eligibleSorted
+        .filter((i) => i !== exclude)
+        .reduce<{ i: number; d: number } | null>((best, i) => {
+          const d = Math.abs(pctAt[i] - target);
+          if (!best || d < best.d) return { i, d };
+          return best;
+        }, null);
+    const first = closestTo(0.33, -1);
+    if (first) midOneAfter = first.i;
+    const second = closestTo(0.7, midOneAfter);
+    if (second && Math.abs(pctAt[second.i] - pctAt[midOneAfter]) > 0.15)
+      midTwoAfter = second.i;
+    // Never insert at the very last block — ContinueExploring sits there.
+    const lastEligible = eligibleSorted[eligibleSorted.length - 1];
+    if (midTwoAfter === lastEligible && eligibleSorted.length > 1) midTwoAfter = -1;
   }
+
 
 
   return (

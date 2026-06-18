@@ -140,6 +140,14 @@ This one applies if you blow past both of the first two. You can identify more p
 
 For most investors, the three-property rule with built-in backups is the practical choice.
 
+:::cta
+eyebrow: Investment Desk
+heading: Explore Current Austin Investment Opportunities
+subheading: Multifamily, value-add, and land positions move quickly inside Austin's institutional and family-office circles. Echelon Property Group's investment desk tracks what's actually in play.
+button: Review Opportunities
+href: /austin-real-estate-investment
+:::
+
 ## A worked example
 
 Suppose you bought an Austin area rental years ago and you are selling it now.

@@ -2,7 +2,7 @@ import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import Navigation from "@/components/Navigation";
 import OptimizedImage from "@/components/OptimizedImage";
 import expEchelonLogo from "@/assets/exp-echelon-logo.png";
-import taylorAboutHeadshot from "@/assets/taylor-about-headshot.jpeg";
+import taylorAboutHeadshot from "@/assets/taylor-about-headshot.jpg.asset.json";
 import austinLifestyle from "@/assets/austin-approach-pool.jpg";
 import { Link } from "react-router-dom";
 import SchemaMarkup, { taylorSherwoodSchema, createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";

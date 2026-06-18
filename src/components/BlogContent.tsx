@@ -547,30 +547,57 @@ const BlogContent = ({ content, afterGlance, category, articleId }: BlogContentP
   // blocks (those win — don't double up).
   const pathway = pathwayForCategory(category);
   const authorPlacedCTA = blocks.some((b) => b.type === "cta");
+  // A block is eligible to host a trailing CTA only if it is a substantial
+  // prose block (not a heading + single sentence) AND the next block is also
+  // plain prose — otherwise the CTA gets stranded between a heading and a
+  // callout / faq / intel block, which reads as an interruption.
+  const isSubstantialProse = (body: string) => {
+    const trimmed = body.trim();
+    if (trimmed.length < 600) return false;
+    // Reject blocks that are mostly a heading (e.g. "## FAQ" + 1 short line).
+    const nonHeadingChars = trimmed
+      .split("\n")
+      .filter((line) => !/^\s{0,3}#{1,6}\s/.test(line))
+      .join("\n")
+      .trim().length;
+    return nonHeadingChars >= 500;
+  };
   const eligibleIdx = new Set<number>();
   blocks.forEach((b, i) => {
-    if (b.type === "markdown" && b.body.trim().length > 0) eligibleIdx.add(i);
+    if (b.type !== "markdown") return;
+    if (!isSubstantialProse(b.body)) return;
+    const next = blocks[i + 1];
+    if (next && next.type !== "markdown") return;
+    eligibleIdx.add(i);
   });
   const totalLen = blocks.reduce(
-    (sum, b) => (eligibleIdx.has(blocks.indexOf(b)) ? sum + b.body.length : sum),
+    (sum, b, i) =>
+      b.type === "markdown" && b.body.trim().length > 0 ? sum + b.body.length : sum,
     0,
   );
   let midOneAfter = -1;
   let midTwoAfter = -1;
-  if (!authorPlacedCTA && totalLen >= 3500 && eligibleIdx.size >= 4) {
+  if (!authorPlacedCTA && totalLen >= 3500 && eligibleIdx.size >= 2) {
     let cumulative = 0;
     blocks.forEach((b, i) => {
-      if (!eligibleIdx.has(i)) return;
+      if (b.type !== "markdown" || b.body.trim().length === 0) return;
       cumulative += b.body.length;
       const pct = cumulative / totalLen;
+      if (!eligibleIdx.has(i)) return;
       if (midOneAfter === -1 && pct >= 0.3) midOneAfter = i;
-      if (midTwoAfter === -1 && pct >= 0.7 && i !== midOneAfter) midTwoAfter = i;
+      else if (
+        midOneAfter !== -1 &&
+        midTwoAfter === -1 &&
+        pct >= 0.7 &&
+        i !== midOneAfter
+      )
+        midTwoAfter = i;
     });
-    // Never insert at the very last block — ContinueExploring sits there.
     const lastEligible = Math.max(...Array.from(eligibleIdx));
     if (midTwoAfter === lastEligible) midTwoAfter = -1;
     if (midOneAfter === lastEligible) midOneAfter = -1;
   }
+
 
   return (
     <div className="prose prose-lg max-w-none">

@@ -547,19 +547,30 @@ const BlogContent = ({ content, afterGlance, category, articleId }: BlogContentP
   // blocks (those win — don't double up).
   const pathway = pathwayForCategory(category);
   const authorPlacedCTA = blocks.some((b) => b.type === "cta");
-  // A CTA may only sit at a natural section break: render it after block i
-  // when block i+1 is a markdown block whose first non-empty line is a new
-  // H2 (`## `). That places the CTA between sections instead of splitting
-  // one in half (e.g. right under "A worked example" or "FAQ").
-  const startsNewSection = (body: string) => {
-    const firstLine = body.split("\n").map((l) => l.trim()).find((l) => l.length > 0);
-    return !!firstLine && /^##\s+\S/.test(firstLine);
+  // Mid-article CTAs are inserted after substantial markdown blocks at natural
+  // breaks — never between a heading and its content, and never before an FAQ
+  // or author-placed CTA block. A block is eligible when it is a substantial
+  // prose block and does not end with a section heading.
+  const isSubstantialProse = (body: string) => {
+    const text = body.trim();
+    if (text.length < 600) return false;
+    const nonHeading = text.replace(/^#{1,6}\s.*$/gm, "").trim();
+    return nonHeading.length >= 500;
   };
+  const endsWithHeading = (body: string) => {
+    const lines = body.trim().split("\n");
+    const lastNonEmpty = [...lines].reverse().find((l) => l.trim().length > 0);
+    return !!lastNonEmpty && /^#{1,6}\s/.test(lastNonEmpty.trim());
+  };
+  const nextIsProblematic = (type: string | undefined) =>
+    type === "faq" || type === "cta" || type === "micro-cta";
   const eligibleIdx = new Set<number>();
-  blocks.forEach((_b, i) => {
+  blocks.forEach((b, i) => {
+    if (b.type !== "markdown") return;
+    if (!isSubstantialProse(b.body)) return;
+    if (endsWithHeading(b.body)) return;
     const next = blocks[i + 1];
-    if (!next || next.type !== "markdown") return;
-    if (!startsNewSection(next.body)) return;
+    if (nextIsProblematic(next?.type)) return;
     eligibleIdx.add(i);
   });
   const totalLen = blocks.reduce(

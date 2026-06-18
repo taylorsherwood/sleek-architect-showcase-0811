@@ -74,7 +74,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "How a 1031 exchange lets Texas real estate investors defer capital gains tax. The 45-day and 180-day rules, qualified intermediaries, and where exchanges go wrong, explained for 2026.",
     author: "Taylor Sherwood",
     date: "2026-06-18",
-    readTime: "8 MIN READ",
+    readTime: "9 MIN READ",
     category: "INVESTMENT",
     image: blog1031Exchange.url,
     heroImage: blog1031Exchange.url,
@@ -159,6 +159,25 @@ Deferring the tax means you reinvest your full proceeds instead of a post-tax re
 
 The long game is what investors call swap till you drop. Because the deferred gain is wiped out by the step-up in basis when property passes to heirs at death, an investor can exchange property after property across a lifetime, never paying the deferred tax, and ultimately pass the portfolio to heirs with the gain eliminated entirely. It is a legitimate and widely used estate strategy.
 
+## The reverse 1031 exchange: buying before you sell
+
+Sometimes the right replacement property surfaces before you have sold the one you are holding. In a low-inventory market like Austin, waiting until your sale closes can mean losing that property to a faster buyer. The reverse 1031 exchange solves this by flipping the order. You acquire the replacement property first and sell your relinquished property afterward, and still defer the tax.
+
+The complication is that the IRS does not let you hold title to both properties at the same time inside an exchange. To work around that, a reverse exchange uses an Exchange Accommodation Titleholder, usually called an EAT. The EAT is a neutral party, often the same firm serving as your qualified intermediary, that temporarily takes title to one of the properties and parks it while you complete the rest of the transaction. This safe harbor structure is governed by IRS Revenue Procedure 2000-37.
+
+Here is how the common version works. The EAT forms a single-member LLC and takes title to your new replacement property, holding it on your behalf. Within five business days, you and the EAT sign a qualified exchange accommodation agreement documenting the arrangement. From the day the EAT takes title, you have 45 days to identify in writing which property you will sell, and 180 days to close that sale. Once your relinquished property sells, the proceeds flow through the qualified intermediary, the EAT transfers the parked replacement property to you, and the exchange is complete. The same 45-day and 180-day clocks you know from a forward exchange apply here, they simply start when the EAT parks the property rather than when you sell.
+
+What it costs: A reverse exchange runs meaningfully more than a standard forward exchange, often in the range of $7,000 to $15,000 or more in structuring and EAT fees, compared to roughly $1,000 to $3,000 for a forward exchange. The premium pays for the LLC formation, the parking arrangement, and the additional legal coordination.
+
+The advantage is control and certainty. You lock down the replacement property the moment you find it, with no risk of losing it while your sale drags out, and no pressure to sell your existing property at a discount just to beat the 45-day clock. In a competitive market with tight inventory, that timing flexibility can be the difference between landing the property you want and watching it go to someone else.
+
+The disadvantage is cost and complexity. Beyond the higher fees, the structure has more moving parts. The qualified intermediary, the EAT, escrow, and often a lender all have to coordinate. Financing is the most common friction point. Because the EAT holds title, your lender may have to lend to the EAT rather than directly to you, and many lenders are unfamiliar with reverse exchanges, so they need to be brought in early. Reverse exchanges work most smoothly when you can pay cash for the replacement property or the seller is financing it. The 180-day clock still applies, so if you cannot sell your relinquished property in time, you lose the safe harbor protection.
+
+For most investors a standard forward exchange is simpler and cheaper. The reverse exchange exists for the specific situation where the right property appears before you are ready to sell and passing on it is not an option.
+
+
+
+
 ## Where it goes wrong
 
 The failure points are consistent. Touching the proceeds disqualifies the exchange instantly, which is the entire reason the qualified intermediary exists. Missing either deadline by a single day voids the whole thing and triggers full tax on the original sale. Trading down in value or pulling cash out creates taxable boot. And misjudging eligibility, especially treating a flip property as if it were an investment hold, can unravel an exchange after the fact.
@@ -186,6 +205,9 @@ A: To defer the entire gain, yes. Your replacement property must be of equal or 
 Q: What is a qualified intermediary and do I really need one?
 A: A qualified intermediary is a neutral third party who holds your sale proceeds between the sale and the purchase, so the money never passes through your hands. It is required. If you take possession of the funds at any point, the exchange is disqualified. Engage your intermediary before you sell, not after.
 
+Q: What is a reverse 1031 exchange?
+A: A reverse 1031 exchange lets you buy your replacement property before you sell your existing one, which is the opposite of a standard forward exchange. Because the IRS does not allow you to hold title to both properties at once inside an exchange, a neutral party called an Exchange Accommodation Titleholder temporarily takes title to one property and parks it under the safe harbor rules of Revenue Procedure 2000-37. You then have 45 days to identify the property you will sell and 180 days to close that sale. Reverse exchanges offer timing certainty in competitive markets but cost more and are more complex than a standard exchange.
+
 Q: Does Texas have its own 1031 rules?
 A: Texas has no state income tax, so there is no separate state-level capital gains tax to defer at the state level. The 1031 exchange operates under federal law, and the federal rules described here apply to Texas investors the same way they apply nationwide. That said, every situation is different, so coordinate with a tax professional.
 :::
@@ -193,6 +215,7 @@ A: Texas has no state income tax, so there is no separate state-level capital ga
 If you are weighing a 1031 exchange on an Austin or Central Texas investment property, the timing has to be planned before you sell, not after. [Reach out to Echelon Property Group](/contact) and we will help you map the move, line up the right qualified intermediary, and identify replacement properties that fit your strategy.
 
 *This article is for educational purposes only and does not constitute tax, legal, or investment advice. Consult a qualified tax professional and intermediary about your specific situation.*\u00a0
+
 `,
   },
   {

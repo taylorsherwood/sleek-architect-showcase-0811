@@ -280,7 +280,7 @@ const About = () => {
             <div className="max-w-7xl mx-auto grid md:grid-cols-[38fr_62fr] gap-12 items-start">
               <div className="flex flex-col items-center">
                 <OptimizedImage
-                  src={taylorAboutHeadshot}
+                  src={taylorAboutHeadshot.url}
                   alt="Taylor Sherwood, founder of Echelon Property Group and Austin luxury real estate advisor"
                   title="Taylor Sherwood, Echelon Property Group founder and Austin real estate advisor"
                   width={800}

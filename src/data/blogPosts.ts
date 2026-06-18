@@ -192,7 +192,7 @@ A: Texas has no state income tax, so there is no separate state-level capital ga
 
 If you are weighing a 1031 exchange on an Austin or Central Texas investment property, the timing has to be planned before you sell, not after. [Reach out to Echelon Property Group](/contact) and we will help you map the move, line up the right qualified intermediary, and identify replacement properties that fit your strategy.
 
-*This article is for educational purposes only and does not constitute tax, legal, or investment advice. Consult a qualified tax professional and intermediary about your specific situation.*
+*This article is for educational purposes only and does not constitute tax, legal, or investment advice. Consult a qualified tax professional and intermediary about your specific situation.*\u00a0
 `,
   },
   {

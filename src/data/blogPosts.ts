@@ -192,6 +192,14 @@ The failure points are consistent. Touching the proceeds disqualifies the exchan
 
 None of these are hard to avoid. They simply require planning before the sale rather than after, and the right professionals in place from day one.
 
+:::cta
+eyebrow: Market Outlook
+heading: Where Capital Is Moving in Austin
+subheading: From the 2026 multifamily outlook to land banking and infill, the strongest risk-adjusted positions are not on public portals. See the current desk view.
+button: Read the Outlook
+href: /austin-multifamily-report-2026
+:::
+
 ## FAQ
 
 :::faq

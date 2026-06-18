@@ -37,6 +37,7 @@ import blogBuyerRepresentationAgreement from "@/assets/blog/buyer-representation
 import blogTexasHomesteadExemption from "@/assets/blog/texas-homestead-exemption-travis-county.jpg.asset.json";
 import blogBuyerAgentCommissionTexas from "@/assets/blog/buyer-agent-commission-texas.webp.asset.json";
 import blogTarrytownVsWestlake from "@/assets/blog/tarrytown-vs-westlake.jpg.asset.json";
+import blog1031Exchange from "@/assets/blog/1031-exchange-texas-investors.png.asset.json";
 
 
 
@@ -66,6 +67,134 @@ export interface BlogPost {
 const LINK = "text-foreground underline hover:text-muted-foreground";
 
 export const blogPosts: BlogPost[] = [
+  {
+    id: "1031-exchange-texas-investors",
+    title: "The 1031 Exchange: How Texas Investors Defer Capital Gains and Keep Building",
+    metaTitle: "1031 Exchange Guide for Texas Investors (2026) | Echelon Property Group",
+    excerpt: "How a 1031 exchange lets Texas real estate investors defer capital gains tax. The 45-day and 180-day rules, qualified intermediaries, and where exchanges go wrong, explained for 2026.",
+    author: "Taylor Sherwood",
+    date: "2026-06-18",
+    readTime: "8 MIN READ",
+    category: "INVESTMENT",
+    image: blog1031Exchange.url,
+    heroImage: blog1031Exchange.url,
+    imageAlt: "Texas investment property representing a 1031 like-kind exchange to defer capital gains tax",
+    content: `
+
+You sold an investment property and made real money on it. The problem arrives at tax time, when capital gains and depreciation recapture can take a serious bite out of that profit before you ever reinvest it. A 1031 exchange is the tool that lets you defer that tax entirely, roll the full proceeds into your next property, and keep your capital working instead of handing a chunk of it to the IRS.
+
+It is one of the most powerful wealth-building provisions available to real estate investors, and it is also one of the easiest to disqualify if you miss a deadline or touch the money. Here is how it actually works in 2026, what the rules require, and where investors get tripped up.
+
+:::callout
+label: Quick answer
+A 1031 exchange lets a real estate investor sell an investment or business property and reinvest the proceeds into a like-kind property of equal or greater value, deferring capital gains tax and depreciation recapture. To qualify, you must use a qualified intermediary to hold the funds, identify your replacement property in writing within 45 days of closing your sale, and close on the replacement within 180 days. Both clocks start the day your sale closes and run at the same time.
+:::
+
+## What a 1031 exchange actually is
+
+The name comes from Section 1031 of the Internal Revenue Code. In plain terms, it lets you swap one investment property for another and defer the tax you would normally owe on the gain. You are not erasing the tax. You are pushing it down the road, potentially for decades, while your equity keeps compounding into larger properties.
+
+The property you sell is called the relinquished property. The property you buy is the replacement property. The word "like-kind" sounds restrictive, but for real estate it is broad. Raw land can be exchanged for an apartment building. A single-family rental can be exchanged for a retail strip center. As long as both properties are held for investment or business use and both are real property located in the United States, they generally qualify. Quality and grade do not matter. What matters is how the property is used, not what type it is.
+
+What does not qualify is just as important. Your primary residence does not qualify, because it is not held for investment. A property you bought to fix and flip generally does not qualify either, because it is treated as inventory held for sale rather than held for investment. That distinction matters a great deal in Texas markets where flipping is common, and it is worth confirming with your tax advisor before you assume a property is eligible.
+
+## The two deadlines that define every exchange
+
+Almost everything that goes wrong in a 1031 exchange comes back to timing. There are two hard deadlines, and they are absolute. There are no extensions for weekends, holidays, or because your first deal fell through.
+
+### The 45-day identification period
+
+From the day your relinquished property closes, you have 45 days to identify your replacement property or properties in writing and deliver that identification to your qualified intermediary.
+
+### The 180-day exchange period
+
+From that same closing date, you have 180 days to actually close on the replacement property.
+
+Here is the part that surprises people. These two clocks run at the same time. You do not get 45 days and then a fresh 180 days on top. The 180-day window includes the 45-day window inside it. By the time you hit day 45, you should already have your target identified, because you only have 135 days left to close after that.
+
+There is one more wrinkle worth knowing. The 180-day period is also capped by your tax return due date. If your return, including extensions, is due before the 180 days run out, your exchange period ends on that filing date instead. This is why investors completing an exchange late in the year routinely file an extension on their return, simply to preserve the full 180 days.
+
+## The qualified intermediary is not optional
+
+You cannot touch the money. This is the rule that disqualifies more exchanges than any other. The moment sale proceeds flow into your hands or your own bank account, even briefly, the exchange is dead and the full gain becomes taxable.
+
+To prevent that, you use a qualified intermediary, sometimes called a QI or an accommodator. The intermediary is a neutral third party who holds your sale proceeds in escrow between the sale and the purchase, then delivers those funds directly into the replacement property closing. You never have access to the cash.
+
+The practical lesson is to engage your intermediary before you list or sell, not after. Lining up the QI early means the structure is in place the day your sale closes, when both clocks start ticking.
+
+## The three identification rules
+
+During the 45-day window, your written identification has to follow one of three IRS rules. You only need to satisfy one of them.
+
+### The three-property rule
+
+You can identify up to three potential replacement properties regardless of their total value, then acquire any one, two, or all three of them. Most investors use this to line up a primary target and one or two backups, so that if the first deal collapses between day 45 and day 180, the exchange still survives.
+
+### The 200 percent rule
+
+You can identify any number of properties as long as their combined value does not exceed 200 percent of the value of the property you sold.
+
+### The 95 percent rule
+
+This one applies if you blow past both of the first two. You can identify more properties exceeding the 200 percent cap, but only if you actually acquire at least 95 percent of the total value you identified. It is rarely used and carries little margin for error.
+
+For most investors, the three-property rule with built-in backups is the practical choice.
+
+## A worked example
+
+Suppose you bought an Austin area rental years ago and you are selling it now.
+
+:::callout
+label: The numbers
+You sell the rental for $750,000. After your original purchase price and depreciation taken over the years, you are facing roughly $300,000 in combined taxable gain and depreciation recapture. Outside of an exchange, federal capital gains plus recapture could cost you somewhere in the range of $60,000 to $80,000 depending on your bracket and how much depreciation you recaptured. Inside a properly structured 1031 exchange, you defer all of it. The full $750,000 in proceeds rolls forward into your next property through the qualified intermediary, and your capital keeps working instead of shrinking.
+:::
+
+The catch is the equal-or-greater rule. To defer the entire gain, your replacement property must be of equal or greater value, and you must reinvest all of the equity. If you trade down and buy something cheaper, or pull cash out at closing, the difference is called boot and it is taxable. Partial exchanges are allowed, you just pay tax on the portion you did not roll forward.
+
+## Why investors use it
+
+The headline benefit is tax deferral, but the strategic value goes further.
+
+Deferring the tax means you reinvest your full proceeds instead of a post-tax remainder, which lets you scale into larger properties faster. You can also use exchanges to reposition a portfolio, trading a management-heavy property for something more passive, or consolidating several small holdings into one larger asset, all without triggering tax on the way. For investors building a long-term position in the metro, our perspective on [off-market and investment properties in Austin](/invest) explains how exchange timing intersects with sourcing the next acquisition. <!-- TODO: swap to /blog/best-austin-neighborhoods-for-real-estate-investment once that post is published -->
+
+The long game is what investors call swap till you drop. Because the deferred gain is wiped out by the step-up in basis when property passes to heirs at death, an investor can exchange property after property across a lifetime, never paying the deferred tax, and ultimately pass the portfolio to heirs with the gain eliminated entirely. It is a legitimate and widely used estate strategy.
+
+## Where it goes wrong
+
+The failure points are consistent. Touching the proceeds disqualifies the exchange instantly, which is the entire reason the qualified intermediary exists. Missing either deadline by a single day voids the whole thing and triggers full tax on the original sale. Trading down in value or pulling cash out creates taxable boot. And misjudging eligibility, especially treating a flip property as if it were an investment hold, can unravel an exchange after the fact.
+
+None of these are hard to avoid. They simply require planning before the sale rather than after, and the right professionals in place from day one.
+
+## FAQ
+
+:::faq
+Q: Can I do a 1031 exchange on my primary residence?
+A: No. A 1031 exchange applies only to property held for investment or business use. Your primary residence does not qualify. There is a separate tax provision for primary homes, the Section 121 exclusion, which works very differently and is not part of a 1031 exchange.
+
+Q: Can I do a 1031 exchange on a flip?
+A: Generally no. Property you bought primarily to renovate and resell is treated as inventory held for sale rather than property held for investment, which usually disqualifies it from Section 1031. This is a common point of confusion in active Texas flipping markets, so confirm the property's tax treatment with your advisor before assuming it qualifies.
+
+Q: How long do I have to complete a 1031 exchange?
+A: You have 45 days from the closing of your sale to identify your replacement property in writing, and 180 days from that same closing date to complete the purchase. Both clocks start on your sale closing date and run concurrently. The 180-day period can end earlier if your tax return due date arrives first and you have not filed an extension.
+
+Q: What happens if I miss a deadline?
+A: Missing either the 45-day or 180-day deadline voids the exchange. The IRS allows no extensions for weekends, holidays, or deals that fall through. If the exchange fails, the full gain on your original sale becomes taxable.
+
+Q: Do I have to reinvest all the money?
+A: To defer the entire gain, yes. Your replacement property must be of equal or greater value and you must reinvest all of your equity. If you buy something cheaper or take cash out, that difference is called boot and it is taxable. Partial exchanges are permitted, you simply pay tax on the portion you did not reinvest.
+
+Q: What is a qualified intermediary and do I really need one?
+A: A qualified intermediary is a neutral third party who holds your sale proceeds between the sale and the purchase, so the money never passes through your hands. It is required. If you take possession of the funds at any point, the exchange is disqualified. Engage your intermediary before you sell, not after.
+
+Q: Does Texas have its own 1031 rules?
+A: Texas has no state income tax, so there is no separate state-level capital gains tax to defer at the state level. The 1031 exchange operates under federal law, and the federal rules described here apply to Texas investors the same way they apply nationwide. That said, every situation is different, so coordinate with a tax professional.
+:::
+
+If you are weighing a 1031 exchange on an Austin or Central Texas investment property, the timing has to be planned before you sell, not after. [Reach out to Echelon Property Group](/contact) and we will help you map the move, line up the right qualified intermediary, and identify replacement properties that fit your strategy.
+
+*This article is for educational purposes only and does not constitute tax, legal, or investment advice. Consult a qualified tax professional and intermediary about your specific situation.*
+`,
+  },
   {
     id: "tarrytown-vs-westlake-austin",
     title: "Tarrytown vs. Westlake: Which Austin Luxury Neighborhood Is Right for You in 2026?",

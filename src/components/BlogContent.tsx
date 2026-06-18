@@ -459,10 +459,36 @@ const SoftCTA = ({ body }: { body: string }) => {
   const lines = body.split("\n");
   const get = (key: string) =>
     lines.find((l) => l.toLowerCase().startsWith(`${key}:`))?.split(":").slice(1).join(":").trim() || "";
+  const eyebrow = get("eyebrow");
   const heading = get("heading") || "Get a clear read on where to focus";
   const subheading = get("subheading");
   const buttonLabel = get("button") || "Request Area Guide";
   const href = get("href") || "/contact";
+  if (eyebrow) {
+    return (
+      <aside className="mt-14 md:mt-16 mb-20 md:mb-28 pt-10 md:pt-12 border-t border-foreground/15">
+        <div className="max-w-2xl mx-auto text-center px-2">
+          <p className="text-minimal text-gold mb-4 tracking-[0.22em] text-xs uppercase">
+            {eyebrow}
+          </p>
+          <p className="text-xl md:text-2xl font-light text-architectural mb-4 leading-snug">
+            {heading}
+          </p>
+          {subheading && (
+            <p className="text-sm md:text-base text-muted-foreground font-light mb-7 max-w-xl mx-auto leading-relaxed">
+              {subheading}
+            </p>
+          )}
+          <Link
+            to={href}
+            className="inline-block border border-[#b9a06c] text-[#b9a06c] bg-transparent hover:bg-[#b9a06c] hover:text-white uppercase tracking-[0.18em] text-xs px-8 py-4 transition-colors"
+          >
+            {buttonLabel}
+          </Link>
+        </div>
+      </aside>
+    );
+  }
   return (
     <div className="my-14 pt-10 px-6 md:px-10 border-t border-foreground/15 text-center">
       <p className="text-xl md:text-2xl font-light text-architectural mb-3 leading-snug">

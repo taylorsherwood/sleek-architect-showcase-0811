@@ -140,6 +140,14 @@ This one applies if you blow past both of the first two. You can identify more p
 
 For most investors, the three-property rule with built-in backups is the practical choice.
 
+:::cta
+eyebrow: Investment Desk
+heading: Explore Current Austin Investment Opportunities
+subheading: Multifamily, value-add, and land positions move quickly inside Austin's institutional and family-office circles. Echelon Property Group's investment desk tracks what's actually in play.
+button: Review Opportunities
+href: /austin-real-estate-investment
+:::
+
 ## A worked example
 
 Suppose you bought an Austin area rental years ago and you are selling it now.
@@ -175,14 +183,19 @@ The disadvantage is cost and complexity. Beyond the higher fees, the structure h
 
 For most investors a standard forward exchange is simpler and cheaper. The reverse exchange exists for the specific situation where the right property appears before you are ready to sell and passing on it is not an option.
 
-
-
-
 ## Where it goes wrong
 
 The failure points are consistent. Touching the proceeds disqualifies the exchange instantly, which is the entire reason the qualified intermediary exists. Missing either deadline by a single day voids the whole thing and triggers full tax on the original sale. Trading down in value or pulling cash out creates taxable boot. And misjudging eligibility, especially treating a flip property as if it were an investment hold, can unravel an exchange after the fact.
 
 None of these are hard to avoid. They simply require planning before the sale rather than after, and the right professionals in place from day one.
+
+:::cta
+eyebrow: Market Outlook
+heading: Where Capital Is Moving in Austin
+subheading: From the 2026 multifamily outlook to land banking and infill, the strongest risk-adjusted positions are not on public portals. See the current desk view.
+button: Read the Outlook
+href: /austin-multifamily-report-2026
+:::
 
 ## FAQ
 

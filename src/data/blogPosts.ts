@@ -177,6 +177,7 @@ For most investors a standard forward exchange is simpler and cheaper. The rever
 
 
 
+
 ## Where it goes wrong
 
 The failure points are consistent. Touching the proceeds disqualifies the exchange instantly, which is the entire reason the qualified intermediary exists. Missing either deadline by a single day voids the whole thing and triggers full tax on the original sale. Trading down in value or pulling cash out creates taxable boot. And misjudging eligibility, especially treating a flip property as if it were an investment hold, can unravel an exchange after the fact.

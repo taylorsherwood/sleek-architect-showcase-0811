@@ -271,13 +271,14 @@ const ExoticWildlifeVideoBand = () => {
               <p
                 className="text-[11px] md:text-xs tracking-[0.32em] uppercase mb-4 md:mb-6"
                 style={{
-                  color: "#8A7450",
+                  color: "#F3EEE4",
                   fontFamily: "'Jost', sans-serif",
-                  textShadow: "0 0 18px rgba(138,116,80,0.55), 0 2px 10px rgba(47,58,44,0.35)",
+                  textShadow: "0 1px 2px rgba(0,0,0,0.45), 0 2px 14px rgba(0,0,0,0.35)",
                 }}
               >
                 Texas Exotic Wildlife
               </p>
+
               <h2
                 className="font-light leading-[1.1] mb-5 md:mb-7"
                 style={{

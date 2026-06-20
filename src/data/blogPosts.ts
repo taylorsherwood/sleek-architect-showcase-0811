@@ -92,7 +92,8 @@ If you want the short version: price it to the real buyer pool, market it like t
 label: Key takeaways
 - Luxury in Austin generally starts around $1M, but true luxury sits closer to $2M to $3M and up, with ultra-luxury above $5M in Westlake, Tarrytown, Lake Austin, and Barton Creek. 
 - The top of the market has a smaller buyer pool and longer typical days on market, so correct pricing and serious marketing matter more than they do at the median. 
-- Overpricing is the single most expensive mistake a luxury seller can make. Stale listings get chased down in price, not up. - Marketing a luxury home means professional media, staging, a real buyer-outreach plan, and often an off-market or pre-market phase before the MLS ever sees it. 
+- Overpricing is the single most expensive mistake a luxury seller can make. Stale listings get chased down in price, not up. 
+- Marketing a luxury home means professional media, staging, a real buyer-outreach plan, and often an off-market or pre-market phase before the MLS ever sees it. 
 - Texas has no state income tax and no state transfer tax, which is a genuine advantage for sellers. Federal capital gains still apply above the primary-residence exclusion.
  - The right luxury listing agent is judged on track record, marketing budget, network, discretion, and negotiation, not on who will list it the cheapest.
 :::

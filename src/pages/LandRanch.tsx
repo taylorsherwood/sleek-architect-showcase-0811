@@ -259,7 +259,7 @@ const ExoticWildlifeVideoBand = () => {
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(180deg, rgba(12,15,36,0.32) 0%, rgba(12,15,36,0.18) 45%, rgba(12,15,36,0.55) 100%)",
+              "linear-gradient(180deg, rgba(47,58,44,0.32) 0%, rgba(47,58,44,0.18) 45%, rgba(47,58,44,0.55) 100%)",
           }}
           aria-hidden="true"
         />
@@ -271,9 +271,9 @@ const ExoticWildlifeVideoBand = () => {
               <p
                 className="text-[11px] md:text-xs tracking-[0.32em] uppercase mb-4 md:mb-6"
                 style={{
-                  color: "#b9a06c",
+                  color: "#8A7450",
                   fontFamily: "'Jost', sans-serif",
-                  textShadow: "0 0 18px rgba(185,160,108,0.55), 0 2px 10px rgba(12,15,36,0.35)",
+                  textShadow: "0 0 18px rgba(138,116,80,0.55), 0 2px 10px rgba(47,58,44,0.35)",
                 }}
               >
                 Texas Exotic Wildlife
@@ -284,7 +284,7 @@ const ExoticWildlifeVideoBand = () => {
                   fontFamily: "'Cinzel', serif",
                   fontSize: "clamp(1.75rem, 4vw, 3rem)",
                   letterSpacing: "0.01em",
-                  textShadow: "0 0 28px rgba(255,255,255,0.35), 0 2px 16px rgba(12,15,36,0.55)",
+                  textShadow: "0 0 28px rgba(255,255,255,0.35), 0 2px 16px rgba(47,58,44,0.55)",
                 }}
               >
                 Ranch Ownership With a Different Kind of Wild
@@ -294,7 +294,7 @@ const ExoticWildlifeVideoBand = () => {
                 style={{
                   fontFamily: "'Jost', sans-serif",
                   fontSize: "clamp(0.95rem, 1.1vw, 1.05rem)",
-                  textShadow: "0 0 20px rgba(255,255,255,0.25), 0 1px 8px rgba(12,15,36,0.45)",
+                  textShadow: "0 0 20px rgba(255,255,255,0.25), 0 1px 8px rgba(47,58,44,0.45)",
                 }}
               >
                 From axis deer and blackbuck to zebra and oryx, select Texas
@@ -311,7 +311,7 @@ const ExoticWildlifeVideoBand = () => {
 
 const LandRanch = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="land-ranch-theme min-h-screen bg-background">
       <SEOHead
         title="Austin Ranch Land & Acreage for Sale"
         description="Explore ranch land, recreational property, investment acreage, development tracts, and legacy estates throughout Austin and the Texas Hill Country with Echelon Property Group."
@@ -330,6 +330,26 @@ const LandRanch = () => {
 
       <Navigation />
       <div className="h-32 md:h-28 lg:h-[6.5rem]" aria-hidden="true" />
+
+      {/* ── PRACTICE-AREA IDENTIFIER ─────────────────────────── */}
+      <div className="container mx-auto px-6 -mb-2 md:-mb-3" aria-hidden="false">
+        <div className="flex items-center gap-3 max-w-6xl mx-auto">
+          <span className="h-px w-8" style={{ background: "#8A7450" }} />
+          <span
+            style={{
+              fontFamily: '"Jost", sans-serif',
+              fontSize: "0.58rem",
+              letterSpacing: "0.42em",
+              textTransform: "uppercase",
+              fontWeight: 500,
+              color: "#8A7450",
+            }}
+          >
+            Echelon Land &amp; Ranch
+          </span>
+        </div>
+      </div>
+
 
       {/* ── HERO ─────────────────────────────────── */}
       <section className="relative w-full h-[590px] sm:min-h-[640px] md:min-h-[720px] lg:h-[820px] xl:h-[860px] 2xl:h-[880px] overflow-hidden bg-primary">
@@ -357,10 +377,10 @@ const LandRanch = () => {
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(to right, rgba(12,15,36,0.48) 0%, rgba(12,15,36,0.30) 35%, rgba(12,15,36,0.10) 65%, transparent 100%)",
+              "linear-gradient(to right, rgba(47,58,44,0.48) 0%, rgba(47,58,44,0.30) 35%, rgba(47,58,44,0.10) 65%, transparent 100%)",
           }}
         />
-        <div className="absolute inset-0 sm:hidden" style={{ background: "linear-gradient(to bottom, rgba(12,15,36,0.68) 0%, rgba(12,15,36,0.52) 46%, rgba(12,15,36,0.24) 100%)" }} />
+        <div className="absolute inset-0 sm:hidden" style={{ background: "linear-gradient(to bottom, rgba(47,58,44,0.68) 0%, rgba(47,58,44,0.52) 46%, rgba(47,58,44,0.24) 100%)" }} />
 
         <div className="relative z-10 flex h-full items-start px-6 pt-24 md:hidden">
           <div className="w-full max-w-[390px]">
@@ -457,7 +477,7 @@ const LandRanch = () => {
                   className="mb-4"
                   style={{
                     ...labelStyle,
-                    color: "#b9a06c",
+                    color: "#8A7450",
                     fontWeight: 500,
                     letterSpacing: "0.42em",
                     fontSize: "0.58rem",
@@ -477,7 +497,7 @@ const LandRanch = () => {
                     fontFamily: '"Jost", sans-serif',
                     fontSize: "0.78rem",
                     letterSpacing: "0.09em",
-                    color: "rgba(185,160,108,0.85)",
+                    color: "rgba(138,116,80,0.85)",
                     lineHeight: 1.6,
                   }}
                 >
@@ -492,7 +512,7 @@ const LandRanch = () => {
                   </p>
                 </div>
                 <div className="mt-14">
-                  <div className="h-px w-10 bg-[#b9a06c] mb-6" aria-hidden="true" />
+                  <div className="h-px w-10 bg-[#8A7450] mb-6" aria-hidden="true" />
                   <blockquote
                     className="text-architectural max-w-[46ch]"
                     style={{
@@ -512,9 +532,9 @@ const LandRanch = () => {
               <div
                 className="group overflow-hidden"
                 style={{
-                  border: "1px solid rgba(12,15,36,0.06)",
+                  border: "1px solid rgba(47,58,44,0.06)",
                   boxShadow:
-                    "0 18px 38px -24px rgba(12,15,36,0.16), 0 6px 16px -10px rgba(12,15,36,0.09)",
+                    "0 18px 38px -24px rgba(47,58,44,0.16), 0 6px 16px -10px rgba(47,58,44,0.09)",
                 }}
               >
                 <img
@@ -601,7 +621,7 @@ const LandRanch = () => {
           {/* Mobile swipe hint */}
           <div className="flex sm:hidden justify-start mb-5">
             <div
-              className="swipe-hint-pill inline-flex items-center gap-2.5 px-4 py-2 rounded-full border text-[#b9a06c] bg-[#b9a06c]/[0.06]"
+              className="swipe-hint-pill inline-flex items-center gap-2.5 px-4 py-2 rounded-full border text-[#8A7450] bg-[#8A7450]/[0.06]"
               style={{ ...labelStyle, fontSize: "0.68rem", letterSpacing: "0.18em" }}
             >
               <span>Swipe to explore</span>
@@ -638,7 +658,7 @@ const LandRanch = () => {
                     className="absolute inset-0"
                     style={{
                       background:
-                        "linear-gradient(to top, rgba(12,15,36,0.85) 0%, rgba(12,15,36,0.45) 45%, rgba(12,15,36,0.10) 75%, transparent 100%)",
+                        "linear-gradient(to top, rgba(47,58,44,0.85) 0%, rgba(47,58,44,0.45) 45%, rgba(47,58,44,0.10) 75%, transparent 100%)",
                     }}
                   />
                   <div className="absolute inset-x-0 bottom-0 p-7 md:p-8">
@@ -701,9 +721,9 @@ const LandRanch = () => {
               <div
                 className="group overflow-hidden"
                 style={{
-                  border: "1px solid rgba(12,15,36,0.06)",
+                  border: "1px solid rgba(47,58,44,0.06)",
                   boxShadow:
-                    "0 18px 38px -24px rgba(12,15,36,0.16), 0 6px 16px -10px rgba(12,15,36,0.09)",
+                    "0 18px 38px -24px rgba(47,58,44,0.16), 0 6px 16px -10px rgba(47,58,44,0.09)",
                 }}
               >
                 <img
@@ -723,7 +743,7 @@ const LandRanch = () => {
                   className="mb-5"
                   style={{
                     ...labelStyle,
-                    color: "#b9a06c",
+                    color: "#8A7450",
                     fontWeight: 500,
                     letterSpacing: "0.42em",
                     fontSize: "0.58rem",
@@ -740,7 +760,7 @@ const LandRanch = () => {
                     fontFamily: '"Jost", sans-serif',
                     fontSize: "0.78rem",
                     letterSpacing: "0.09em",
-                    color: "rgba(185,160,108,0.85)",
+                    color: "rgba(138,116,80,0.85)",
                     lineHeight: 1.6,
                   }}
                 >
@@ -760,7 +780,7 @@ const LandRanch = () => {
                 <blockquote
                   className="mt-10 pl-5 text-architectural"
                   style={{
-                    borderLeft: "1px solid #b9a06c",
+                    borderLeft: "1px solid #8A7450",
                     fontFamily: '"Jost", sans-serif',
                     fontSize: "1.125rem",
                     lineHeight: 1.65,
@@ -925,7 +945,7 @@ const LandRanch = () => {
         {/* Fancy barbed wire divider */}
         <div className="container mx-auto px-6" aria-hidden="true">
           <div className="flex items-center justify-center max-w-3xl mx-auto">
-            <span className="h-px flex-1 bg-gradient-to-r from-transparent to-[#b9a06c]/60" />
+            <span className="h-px flex-1 bg-gradient-to-r from-transparent to-[#8A7450]/60" />
             <svg
               viewBox="0 0 240 24"
               className="w-48 h-5 mx-3"
@@ -935,25 +955,25 @@ const LandRanch = () => {
               {/* Twisted strands */}
               <path
                 d="M0,12 C30,6 60,18 90,12 C120,6 150,18 180,12 C210,6 240,18 240,12"
-                stroke="#b9a06c"
+                stroke="#8A7450"
                 strokeWidth="1"
               />
               <path
                 d="M0,12 C30,18 60,6 90,12 C120,18 150,6 180,12 C210,18 240,6 240,12"
-                stroke="#b9a06c"
+                stroke="#8A7450"
                 strokeWidth="1"
               />
               {/* Barbs */}
               {[60, 120, 180].map((x) => (
                 <g key={x}>
-                  <line x1={x} y1="5" x2={x} y2="19" stroke="#b9a06c" strokeWidth="1" />
-                  <line x1={x - 5} y1="9" x2={x + 5} y2="15" stroke="#b9a06c" strokeWidth="1" />
-                  <line x1={x + 5} y1="9" x2={x - 5} y2="15" stroke="#b9a06c" strokeWidth="1" />
-                  <circle cx={x} cy="12" r="1.5" fill="#b9a06c" />
+                  <line x1={x} y1="5" x2={x} y2="19" stroke="#8A7450" strokeWidth="1" />
+                  <line x1={x - 5} y1="9" x2={x + 5} y2="15" stroke="#8A7450" strokeWidth="1" />
+                  <line x1={x + 5} y1="9" x2={x - 5} y2="15" stroke="#8A7450" strokeWidth="1" />
+                  <circle cx={x} cy="12" r="1.5" fill="#8A7450" />
                 </g>
               ))}
             </svg>
-            <span className="h-px flex-1 bg-gradient-to-l from-transparent to-[#b9a06c]/60" />
+            <span className="h-px flex-1 bg-gradient-to-l from-transparent to-[#8A7450]/60" />
           </div>
         </div>
 
@@ -968,7 +988,7 @@ const LandRanch = () => {
               Central Texas Land&nbsp;<br />Market Snapshot
             </h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-[rgba(12,15,36,0.08)] border border-[rgba(12,15,36,0.08)]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-[rgba(47,58,44,0.08)] border border-[rgba(47,58,44,0.08)]">
             {marketSnapshot.map((m) => (
               <div
                 key={m.label}
@@ -1107,7 +1127,7 @@ const LandRanch = () => {
             );
             return (
               <div className="mt-16 md:mt-20">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-[rgba(12,15,36,0.08)] border border-[rgba(12,15,36,0.08)]">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-[rgba(47,58,44,0.08)] border border-[rgba(47,58,44,0.08)]">
                   {advisories.map(renderCard)}
                 </div>
               </div>
@@ -1123,7 +1143,7 @@ const LandRanch = () => {
       {/* Fancy barbed wire divider */}
       <div className="container mx-auto px-6" aria-hidden="true">
         <div className="flex items-center justify-center max-w-3xl mx-auto">
-          <span className="h-px flex-1 bg-gradient-to-r from-transparent to-[#b9a06c]/60" />
+          <span className="h-px flex-1 bg-gradient-to-r from-transparent to-[#8A7450]/60" />
           <svg
             viewBox="0 0 240 24"
             className="w-48 h-5 mx-3"
@@ -1133,25 +1153,25 @@ const LandRanch = () => {
             {/* Twisted strands */}
             <path
               d="M0,12 C30,6 60,18 90,12 C120,6 150,18 180,12 C210,6 240,18 240,12"
-              stroke="#b9a06c"
+              stroke="#8A7450"
               strokeWidth="1"
             />
             <path
               d="M0,12 C30,18 60,6 90,12 C120,18 150,6 180,12 C210,18 240,6 240,12"
-              stroke="#b9a06c"
+              stroke="#8A7450"
               strokeWidth="1"
             />
             {/* Barbs */}
             {[60, 120, 180].map((x) => (
               <g key={x}>
-                <line x1={x} y1="5" x2={x} y2="19" stroke="#b9a06c" strokeWidth="1" />
-                <line x1={x - 5} y1="9" x2={x + 5} y2="15" stroke="#b9a06c" strokeWidth="1" />
-                <line x1={x + 5} y1="9" x2={x - 5} y2="15" stroke="#b9a06c" strokeWidth="1" />
-                <circle cx={x} cy="12" r="1.5" fill="#b9a06c" />
+                <line x1={x} y1="5" x2={x} y2="19" stroke="#8A7450" strokeWidth="1" />
+                <line x1={x - 5} y1="9" x2={x + 5} y2="15" stroke="#8A7450" strokeWidth="1" />
+                <line x1={x + 5} y1="9" x2={x - 5} y2="15" stroke="#8A7450" strokeWidth="1" />
+                <circle cx={x} cy="12" r="1.5" fill="#8A7450" />
               </g>
             ))}
           </svg>
-          <span className="h-px flex-1 bg-gradient-to-l from-transparent to-[#b9a06c]/60" />
+          <span className="h-px flex-1 bg-gradient-to-l from-transparent to-[#8A7450]/60" />
         </div>
       </div>
 
@@ -1176,8 +1196,8 @@ const LandRanch = () => {
         }}
       >
         {/* Subtle top & bottom dividers */}
-        <div aria-hidden="true" className="absolute top-0 inset-x-0 h-px" style={{ background: "rgba(12,15,36,0.08)" }} />
-        <div aria-hidden="true" className="absolute bottom-0 inset-x-0 h-px" style={{ background: "rgba(12,15,36,0.08)" }} />
+        <div aria-hidden="true" className="absolute top-0 inset-x-0 h-px" style={{ background: "rgba(47,58,44,0.08)" }} />
+        <div aria-hidden="true" className="absolute bottom-0 inset-x-0 h-px" style={{ background: "rgba(47,58,44,0.08)" }} />
 
 
 
@@ -1191,7 +1211,7 @@ const LandRanch = () => {
                 style={{
                   borderRadius: "24px",
                   boxShadow:
-                    "0 30px 60px -25px rgba(12,15,36,0.28), 0 12px 30px -15px rgba(12,15,36,0.18)",
+                    "0 30px 60px -25px rgba(47,58,44,0.28), 0 12px 30px -15px rgba(47,58,44,0.18)",
                 }}
               >
                 <img
@@ -1335,7 +1355,7 @@ const LandRanch = () => {
                       <span
                         aria-hidden="true"
                         className="hidden sm:inline-block"
-                        style={{ width: "20px", height: "1px", background: "#b9a06c" }}
+                        style={{ width: "20px", height: "1px", background: "#8A7450" }}
                       />
                     )}
                   </div>
@@ -1345,7 +1365,7 @@ const LandRanch = () => {
               {/* Editorial callout */}
               <div
                 className="mt-12 pt-10"
-                style={{ borderTop: "1px solid rgba(12,15,36,0.12)" }}
+                style={{ borderTop: "1px solid rgba(47,58,44,0.12)" }}
               >
                 <p className="text-gold mb-4" style={{ ...labelStyle, fontSize: "0.55rem" }}>
                   LAND OWNERS
@@ -1365,16 +1385,16 @@ const LandRanch = () => {
                   className="inline-flex items-center justify-center px-8 py-4 md:px-10 md:py-[1.1rem] transition-colors duration-300 rounded-sm"
                   style={{
                     ...labelStyle,
-                    background: "#0C0F24",
+                    background: "#2F3A2C",
                     color: "#F5F3EF",
-                    border: "1px solid #B9A06C",
+                    border: "1px solid #8A7450",
                   }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.background = "#B9A06C";
+                    e.currentTarget.style.background = "#8A7450";
                     e.currentTarget.style.color = "#FFFFFF";
                   }}
                   onMouseLeave={(e) => {
-                    e.currentTarget.style.background = "#0C0F24";
+                    e.currentTarget.style.background = "#2F3A2C";
                     e.currentTarget.style.color = "#F5F3EF";
                   }}
                 >
@@ -1389,7 +1409,7 @@ const LandRanch = () => {
           {/* Fancy barbed wire divider */}
           <div className="mt-14 md:mt-20 container mx-auto px-6" aria-hidden="true">
             <div className="flex items-center justify-center max-w-3xl mx-auto">
-              <span className="h-px flex-1 bg-gradient-to-r from-transparent to-[#b9a06c]/60" />
+              <span className="h-px flex-1 bg-gradient-to-r from-transparent to-[#8A7450]/60" />
               <svg
                 viewBox="0 0 240 24"
                 className="w-48 h-5 mx-3"
@@ -1399,25 +1419,25 @@ const LandRanch = () => {
                 {/* Twisted strands */}
                 <path
                   d="M0,12 C30,6 60,18 90,12 C120,6 150,18 180,12 C210,6 240,18 240,12"
-                  stroke="#b9a06c"
+                  stroke="#8A7450"
                   strokeWidth="1"
                 />
                 <path
                   d="M0,12 C30,18 60,6 90,12 C120,18 150,6 180,12 C210,18 240,6 240,12"
-                  stroke="#b9a06c"
+                  stroke="#8A7450"
                   strokeWidth="1"
                 />
                 {/* Barbs */}
                 {[60, 120, 180].map((x) => (
                   <g key={x}>
-                    <line x1={x} y1="5" x2={x} y2="19" stroke="#b9a06c" strokeWidth="1" />
-                    <line x1={x - 5} y1="9" x2={x + 5} y2="15" stroke="#b9a06c" strokeWidth="1" />
-                    <line x1={x + 5} y1="9" x2={x - 5} y2="15" stroke="#b9a06c" strokeWidth="1" />
-                    <circle cx={x} cy="12" r="1.5" fill="#b9a06c" />
+                    <line x1={x} y1="5" x2={x} y2="19" stroke="#8A7450" strokeWidth="1" />
+                    <line x1={x - 5} y1="9" x2={x + 5} y2="15" stroke="#8A7450" strokeWidth="1" />
+                    <line x1={x + 5} y1="9" x2={x - 5} y2="15" stroke="#8A7450" strokeWidth="1" />
+                    <circle cx={x} cy="12" r="1.5" fill="#8A7450" />
                   </g>
                 ))}
               </svg>
-              <span className="h-px flex-1 bg-gradient-to-l from-transparent to-[#b9a06c]/60" />
+              <span className="h-px flex-1 bg-gradient-to-l from-transparent to-[#8A7450]/60" />
             </div>
           </div>
         </div>
@@ -1425,35 +1445,47 @@ const LandRanch = () => {
 
       <div className="h-12 md:h-20" aria-hidden="true" />
 
-      {/* ── SECTION 5: PROCESS ──────────────────────── */}
-      <section className="py-14 md:py-20 bg-secondary/40">
+      {/* ── SECTION 5: SIGNATURE FRAMEWORK ──────────────────────── */}
+      <section className="py-20 md:py-32 lr-surface-bone">
         <div className="container mx-auto px-6">
-          <div className="max-w-3xl mb-14">
-            <p className="text-gold mb-5" style={labelStyle}>
-              ADVISORY PROCESS
-            </p>
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-normal text-architectural leading-[1.1]">
-              How We Evaluate Land Opportunities
+          <div className="max-w-3xl mb-16 md:mb-20">
+            <div className="flex items-center gap-3 mb-6">
+              <span className="h-px w-10" style={{ background: "#8A7450" }} aria-hidden="true" />
+              <p className="text-gold" style={{ ...labelStyle, fontSize: "0.6rem", letterSpacing: "0.42em" }}>
+                THE ECHELON LAND FRAMEWORK
+              </p>
+            </div>
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-normal text-architectural leading-[1.05] tracking-tight mb-6">
+              A Proprietary Process for Land<br className="hidden md:block" /> Acquisition &amp; Disposition
             </h2>
+            <p className="text-muted-foreground leading-[1.85] text-[1.05rem] max-w-2xl">
+              Every tract is evaluated through the same disciplined lens — present value, future potential, and the variables that determine which strategy maximizes long-term outcomes.
+            </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-px bg-[rgba(12,15,36,0.08)] border border-[rgba(12,15,36,0.08)]">
+          <ol className="grid md:grid-cols-2 lg:grid-cols-4 gap-x-12 gap-y-14 md:gap-y-16">
             {process.map((step) => (
-              <div
-                key={step.n}
-                className="group relative bg-background p-8 md:p-10 border border-transparent transition-all duration-500 ease-out hover:scale-[1.02] hover:border-gold hover:z-10"
-              >
-                <p className="font-display text-3xl text-gold mb-5" style={{ letterSpacing: "0.05em" }}>
+              <li key={step.n} className="group relative pt-8">
+                <span
+                  aria-hidden="true"
+                  className="absolute top-0 left-0 h-px w-12 transition-all duration-500 ease-out group-hover:w-20"
+                  style={{ background: "#8A7450" }}
+                />
+                <p
+                  className="font-display text-gold mb-6"
+                  style={{ fontSize: "2.25rem", letterSpacing: "0.04em", lineHeight: 1 }}
+                >
                   {step.n}
                 </p>
-                <h3 className="font-display text-xl font-normal text-architectural mb-3 transition-colors duration-300 group-hover:text-gold">
+                <h3 className="font-display text-[1.35rem] md:text-2xl font-normal text-architectural leading-tight mb-4 transition-colors duration-300 group-hover:text-gold">
                   {step.title}
                 </h3>
-                <p className="text-muted-foreground text-[0.95rem] leading-relaxed">{step.desc}</p>
-              </div>
+                <p className="text-muted-foreground text-[0.95rem] leading-[1.75]">{step.desc}</p>
+              </li>
             ))}
-          </div>
+          </ol>
         </div>
       </section>
+
 
       <div className="h-10 md:h-16" aria-hidden="true" />
 
@@ -1463,7 +1495,7 @@ const LandRanch = () => {
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-12 gap-12 md:gap-20 max-w-6xl mx-auto">
             {/* LEFT — Editorial intro */}
-            <div className="md:col-span-5 md:pr-4 md:border-r md:border-[#b9a06c]/40">
+            <div className="md:col-span-5 md:pr-4 md:border-r md:border-[#8A7450]/40">
               <p className="text-gold mb-4" style={{ ...labelStyle, fontSize: "0.6rem" }}>
                 ADVISORY
               </p>
@@ -1494,7 +1526,7 @@ const LandRanch = () => {
 
                 {/* Quote card — slightly overlapping the image */}
                 <figure
-                  className="relative md:absolute md:right-6 md:-bottom-8 md:max-w-[300px] mt-5 md:mt-0 bg-[#FAFAF8] border-l-2 border-[#b9a06c] pl-5 pr-5 py-5 shadow-[0_8px_24px_-12px_rgba(12,15,36,0.15)]"
+                  className="relative md:absolute md:right-6 md:-bottom-8 md:max-w-[300px] mt-5 md:mt-0 bg-[#FAFAF8] border-l-2 border-[#8A7450] pl-5 pr-5 py-5 shadow-[0_8px_24px_-12px_rgba(47,58,44,0.15)]"
                 >
                   <blockquote
                     className="font-display text-architectural text-[0.98rem] leading-[1.45] italic"
@@ -1531,13 +1563,13 @@ const LandRanch = () => {
                     {/* Animated left border on hover */}
                     <span
                       aria-hidden="true"
-                      className="absolute left-0 top-0 bottom-0 w-[3px] bg-[#b9a06c] scale-y-0 group-hover:scale-y-100 origin-top transition-transform duration-500 ease-out"
+                      className="absolute left-0 top-0 bottom-0 w-[3px] bg-[#8A7450] scale-y-0 group-hover:scale-y-100 origin-top transition-transform duration-500 ease-out"
                     />
                     {/* Hairline divider between rows */}
                     {i !== 0 && (
                       <span
                         aria-hidden="true"
-                        className="absolute left-3 right-3 md:left-5 md:right-5 top-0 h-px bg-[rgba(12,15,36,0.12)]"
+                        className="absolute left-3 right-3 md:left-5 md:right-5 top-0 h-px bg-[rgba(47,58,44,0.12)]"
                       />
                     )}
 
@@ -1589,7 +1621,7 @@ const LandRanch = () => {
         <div className="container mx-auto px-6">
           {/* Fancy barbed wire divider */}
           <div className="mb-14 md:mb-20 flex items-center justify-center max-w-3xl mx-auto" aria-hidden="true">
-            <span className="h-px flex-1 bg-gradient-to-r from-transparent to-[#b9a06c]/60" />
+            <span className="h-px flex-1 bg-gradient-to-r from-transparent to-[#8A7450]/60" />
             <svg
               viewBox="0 0 240 24"
               className="w-48 h-5 mx-3"
@@ -1599,25 +1631,25 @@ const LandRanch = () => {
               {/* Twisted strands */}
               <path
                 d="M0,12 C30,6 60,18 90,12 C120,6 150,18 180,12 C210,6 240,18 240,12"
-                stroke="#b9a06c"
+                stroke="#8A7450"
                 strokeWidth="1"
               />
               <path
                 d="M0,12 C30,18 60,6 90,12 C120,18 150,6 180,12 C210,18 240,6 240,12"
-                stroke="#b9a06c"
+                stroke="#8A7450"
                 strokeWidth="1"
               />
               {/* Barbs */}
               {[60, 120, 180].map((x) => (
                 <g key={x}>
-                  <line x1={x} y1="5" x2={x} y2="19" stroke="#b9a06c" strokeWidth="1" />
-                  <line x1={x - 5} y1="9" x2={x + 5} y2="15" stroke="#b9a06c" strokeWidth="1" />
-                  <line x1={x + 5} y1="9" x2={x - 5} y2="15" stroke="#b9a06c" strokeWidth="1" />
-                  <circle cx={x} cy="12" r="1.5" fill="#b9a06c" />
+                  <line x1={x} y1="5" x2={x} y2="19" stroke="#8A7450" strokeWidth="1" />
+                  <line x1={x - 5} y1="9" x2={x + 5} y2="15" stroke="#8A7450" strokeWidth="1" />
+                  <line x1={x + 5} y1="9" x2={x - 5} y2="15" stroke="#8A7450" strokeWidth="1" />
+                  <circle cx={x} cy="12" r="1.5" fill="#8A7450" />
                 </g>
               ))}
             </svg>
-            <span className="h-px flex-1 bg-gradient-to-l from-transparent to-[#b9a06c]/60" />
+            <span className="h-px flex-1 bg-gradient-to-l from-transparent to-[#8A7450]/60" />
           </div>
           <div className="max-w-3xl mx-auto text-center">
 
@@ -1641,9 +1673,9 @@ const LandRanch = () => {
             <Link
               to="/private"
               className="inline-flex items-center justify-center px-8 py-4 md:px-[34px] md:py-4 transition-colors duration-300 rounded-sm"
-              style={{ ...labelStyle, background: "#B9A06C", color: "#FFFFFF", border: "1px solid #B9A06C", fontWeight: 600 }}
-              onMouseEnter={(e) => { e.currentTarget.style.background = "#0C0F24"; e.currentTarget.style.borderColor = "#0C0F24"; }}
-              onMouseLeave={(e) => { e.currentTarget.style.background = "#B9A06C"; e.currentTarget.style.borderColor = "#B9A06C"; }}
+              style={{ ...labelStyle, background: "#8A7450", color: "#FFFFFF", border: "1px solid #8A7450", fontWeight: 600 }}
+              onMouseEnter={(e) => { e.currentTarget.style.background = "#2F3A2C"; e.currentTarget.style.borderColor = "#2F3A2C"; }}
+              onMouseLeave={(e) => { e.currentTarget.style.background = "#8A7450"; e.currentTarget.style.borderColor = "#8A7450"; }}
             >
               Explore Private Opportunities →
             </Link>
@@ -1664,7 +1696,7 @@ const LandRanch = () => {
               The Land Buyer Process
             </h2>
           </div>
-          <ol className="grid grid-cols-1 md:grid-cols-5 gap-px bg-[rgba(12,15,36,0.08)] border border-[rgba(12,15,36,0.08)]">
+          <ol className="grid grid-cols-1 md:grid-cols-5 gap-px bg-[rgba(47,58,44,0.08)] border border-[rgba(47,58,44,0.08)]">
             {[
               ["01", "Identify Opportunity", "Define the goal, the geography, and the kind of land that fits the long-term plan."],
               ["02", "Evaluate Constraints", "Review access, water, utilities, exemptions, and any encumbrances on title."],
@@ -1702,9 +1734,9 @@ const LandRanch = () => {
               <Link
                 to="/contact"
                 className="hidden md:inline-flex items-center justify-center px-8 py-4 transition-colors duration-300 rounded-sm"
-                style={{ ...labelStyle, background: "#B9A06C", color: "#FFFFFF", border: "1px solid #B9A06C", fontWeight: 600 }}
-                onMouseEnter={(e) => { e.currentTarget.style.background = "#0C0F24"; e.currentTarget.style.borderColor = "#0C0F24"; }}
-                onMouseLeave={(e) => { e.currentTarget.style.background = "#B9A06C"; e.currentTarget.style.borderColor = "#B9A06C"; }}
+                style={{ ...labelStyle, background: "#8A7450", color: "#FFFFFF", border: "1px solid #8A7450", fontWeight: 600 }}
+                onMouseEnter={(e) => { e.currentTarget.style.background = "#2F3A2C"; e.currentTarget.style.borderColor = "#2F3A2C"; }}
+                onMouseLeave={(e) => { e.currentTarget.style.background = "#8A7450"; e.currentTarget.style.borderColor = "#8A7450"; }}
               >
                 Discuss a Land Acquisition Strategy →
               </Link>
@@ -1718,7 +1750,7 @@ const LandRanch = () => {
                   ["Entitlement Considerations", "Zoning, utilities, ETJ status, and the regulatory path to a usable site."],
                   ["Hold, Improve, Develop, or Sell", "An honest read on which strategy maximizes long-term value for the owner."],
                 ].map(([t, d]) => (
-                  <div key={t} className="grid grid-cols-12 gap-6 pb-8 border-b border-[rgba(12,15,36,0.1)] last:border-b-0 last:pb-0">
+                  <div key={t} className="grid grid-cols-12 gap-6 pb-8 border-b border-[rgba(47,58,44,0.1)] last:border-b-0 last:pb-0">
                     <dt className="col-span-12 sm:col-span-5 font-display text-architectural text-lg md:text-xl leading-tight">{t}</dt>
                     <dd className="col-span-12 sm:col-span-7 text-muted-foreground text-[0.95rem] leading-relaxed">{d}</dd>
                   </div>
@@ -1766,7 +1798,7 @@ const LandRanch = () => {
               View All Insights →
             </Link>
           </div>
-          <div className="grid sm:grid-cols-2 gap-px bg-[rgba(12,15,36,0.08)] border border-[rgba(12,15,36,0.08)]">
+          <div className="grid sm:grid-cols-2 gap-px bg-[rgba(47,58,44,0.08)] border border-[rgba(47,58,44,0.08)]">
             {insights.map((post) => (
               <Link
                 key={post.to}
@@ -1793,7 +1825,7 @@ const LandRanch = () => {
       {/* ── SECTION 7: SELLER CTA ──────────────────────── */}
 
 
-      <section className="py-16 md:py-24" style={{ background: "#0C0F24" }}>
+      <section className="py-16 md:py-24" style={{ background: "#2F3A2C" }}>
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-gold mb-6" style={labelStyle}>
@@ -1842,7 +1874,7 @@ const LandRanch = () => {
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-normal text-architectural leading-[1.1] mb-14 text-center">
               Land & Ranch Questions
             </h2>
-            <div className="divide-y divide-[rgba(12,15,36,0.1)] border-t border-b border-[rgba(12,15,36,0.1)]">
+            <div className="divide-y divide-[rgba(47,58,44,0.1)] border-t border-b border-[rgba(47,58,44,0.1)]">
               {faqs.map((f) => (
                 <details key={f.question} className="group py-7">
                   <summary className="flex justify-between items-start gap-6 cursor-pointer list-none">

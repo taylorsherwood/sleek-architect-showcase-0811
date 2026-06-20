@@ -116,7 +116,11 @@ Everything that makes the median Austin sale predictable breaks down at the top 
 - **Privacy is a feature.** A lot of high-end sellers do not want their home, their schedule, or their price splashed across the internet. Discretion is part of the service.
 - **Marketing is the job.** At the median, the MLS does most of the work. At the top, the marketing is what creates the buyer. The difference between a great sale and a sale that drags is usually production quality and reach.
 
+:::intel-gauge-coa-sfr-2m
+:::
+
 ## How to price a luxury home in Austin
+
 
 Price is where most luxury sales are won or lost, and it is harder than it looks because the data is thin.
 

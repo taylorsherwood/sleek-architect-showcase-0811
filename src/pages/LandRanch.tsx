@@ -385,9 +385,10 @@ const LandRanch = () => {
 
         <div className="relative z-10 flex h-full items-start px-6 pt-24 md:hidden">
           <div className="w-full max-w-[390px]">
-            <p className="text-gold mb-3" style={labelStyle}>
+            <p className="mb-3" style={{ ...labelStyle, color: "#F3EEE4", textShadow: "0 1px 2px rgba(0,0,0,0.45)" }}>
               LAND & RANCH
             </p>
+
             <h1
               className="font-display font-normal text-white leading-[1.06] mb-4"
               style={{ fontSize: "1.78rem", textShadow: "0 2px 18px rgba(0,0,0,0.40), 0 1px 2px rgba(0,0,0,0.45)" }}

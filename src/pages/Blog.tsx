@@ -173,7 +173,7 @@ const Blog = () => {
                   Featured Insight
                 </p>
                 <span className="hidden md:block text-[10px] tracking-[0.3em] uppercase text-muted-foreground/70">
-                  {featured.category}
+                  {"\n"}
                 </span>
               </div>
 

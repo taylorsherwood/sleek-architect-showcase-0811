@@ -1271,3 +1271,28 @@ body.hcs-immersive nav.fixed {
   .gauge-dot-pulse::after { animation: none; opacity: 0; }
 }
 
+
+/* ============================================================
+   Land & Ranch — scoped retone (Bronze / Olive / Bone)
+   Subtle visual identity for /land-ranch only.
+   ============================================================ */
+.land-ranch-theme {
+  --lr-bronze: #8A7450;
+  --lr-olive: #2F3A2C;
+  --lr-olive-muted: #3D4A3B;
+  --lr-bone: #F3EEE4;
+}
+.land-ranch-theme .text-gold { color: var(--lr-bronze) !important; }
+.land-ranch-theme .bg-gold { background-color: var(--lr-bronze) !important; }
+.land-ranch-theme .border-gold { border-color: var(--lr-bronze) !important; }
+.land-ranch-theme .hover\:text-gold:hover { color: var(--lr-bronze) !important; }
+.land-ranch-theme .hover\:bg-gold:hover { background-color: var(--lr-bronze) !important; }
+.land-ranch-theme .hover\:border-gold:hover { border-color: var(--lr-bronze) !important; }
+.land-ranch-theme .group:hover .group-hover\:text-gold { color: var(--lr-bronze) !important; }
+.land-ranch-theme .group:hover .group-hover\:bg-gold { background-color: var(--lr-bronze) !important; }
+.land-ranch-theme .group:hover .group-hover\:border-gold { border-color: var(--lr-bronze) !important; }
+.land-ranch-theme .gold-underline-hover::after { background-color: var(--lr-bronze) !important; }
+.land-ranch-theme .hover\:bg-\[hsl\(var\(--gold-deep\)\)\]:hover { background-color: var(--lr-olive) !important; }
+/* Bone surface helper */
+.land-ranch-theme .lr-surface-bone { background-color: var(--lr-bone); }
+.land-ranch-theme .lr-surface-olive { background-color: var(--lr-olive); color: #F3EEE4; }

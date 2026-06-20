@@ -665,9 +665,10 @@ const LandRanch = () => {
                     }}
                   />
                   <div className="absolute inset-x-0 bottom-0 p-7 md:p-8">
-                    <p className="text-gold mb-3" style={{ ...labelStyle, fontSize: "0.55rem" }}>
+                    <p className="mb-3" style={{ ...labelStyle, fontSize: "0.55rem", color: "#F3EEE4", textShadow: "0 1px 2px rgba(0,0,0,0.4)" }}>
                       0{i + 1}
                     </p>
+
                     <h3 className="font-display text-xl md:text-2xl font-normal text-white leading-tight mb-3">
                       {c.title}
                     </h3>

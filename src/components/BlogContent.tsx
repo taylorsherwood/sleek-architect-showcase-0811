@@ -761,6 +761,19 @@ const BlogContent = ({ content, afterGlance, category, articleId }: BlogContentP
                 />
               </IntelInsert>
             );
+          case "intel-gauge-coa-sfr-2m":
+            return (
+              <IntelInsert key={idx} tight>
+                <MarketBalanceGauge
+                  communityName="City of Austin · Single Family · $2M+"
+                  marketName="Central Austin"
+                  fallbackMarketName="Austin Metro"
+                  eyebrow={"CITY OF AUSTIN · SINGLE FAMILY · $2M+ · BUYER / SELLER BALANCE IN REAL TIME"}
+                />
+              </IntelInsert>
+            );
+
+
 
 
           case "intel-rates":

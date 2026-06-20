@@ -368,6 +368,11 @@ const Callout = ({ body }: { body: string }) => {
     label = m[1].trim();
     text = lines.slice(1).join("\n").trim();
   }
+
+  const textLines = text.split("\n").map((l) => l.trim()).filter(Boolean);
+  const listItems = textLines.filter((l) => l.startsWith("- "));
+  const hasOnlyList = listItems.length > 0 && listItems.length === textLines.length;
+
   return (
     <aside
       className="my-10 border-l-2 pl-6 md:pl-8 py-2"
@@ -375,14 +380,28 @@ const Callout = ({ body }: { body: string }) => {
       aria-label={label || "Callout"}
     >
       {label && (
-        <p className="text-minimal uppercase tracking-[0.18em] text-xs mb-3" style={{ color: "#b9a06c" }}>
+        <p className="text-minimal uppercase tracking-[0.18em] text-xs mb-4" style={{ color: "#b9a06c" }}>
           {label}
         </p>
       )}
-      <p
-        className="text-base md:text-lg leading-[1.85] text-foreground/90"
-        dangerouslySetInnerHTML={{ __html: renderInline(text.replace(/\n+/g, " ")) }}
-      />
+      {hasOnlyList ? (
+        <ul className="space-y-3">
+          {listItems.map((item, i) => (
+            <li
+              key={i}
+              className="text-base md:text-lg leading-[1.85] text-foreground/90 flex gap-3"
+            >
+              <span className="shrink-0 mt-[0.55em] w-1.5 h-1.5 rounded-full" style={{ backgroundColor: "#b9a06c" }} aria-hidden />
+              <span dangerouslySetInnerHTML={{ __html: renderInline(item.substring(2)) }} />
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p
+          className="text-base md:text-lg leading-[1.85] text-foreground/90"
+          dangerouslySetInnerHTML={{ __html: renderInline(text.replace(/\n+/g, " ")) }}
+        />
+      )}
     </aside>
   );
 };

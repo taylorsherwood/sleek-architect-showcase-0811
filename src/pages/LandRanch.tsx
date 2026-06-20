@@ -311,7 +311,7 @@ const ExoticWildlifeVideoBand = () => {
 
 const LandRanch = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="land-ranch-theme min-h-screen bg-background">
       <SEOHead
         title="Austin Ranch Land & Acreage for Sale"
         description="Explore ranch land, recreational property, investment acreage, development tracts, and legacy estates throughout Austin and the Texas Hill Country with Echelon Property Group."
@@ -330,6 +330,26 @@ const LandRanch = () => {
 
       <Navigation />
       <div className="h-32 md:h-28 lg:h-[6.5rem]" aria-hidden="true" />
+
+      {/* ── PRACTICE-AREA IDENTIFIER ─────────────────────────── */}
+      <div className="container mx-auto px-6 -mb-2 md:-mb-3" aria-hidden="false">
+        <div className="flex items-center gap-3 max-w-6xl mx-auto">
+          <span className="h-px w-8" style={{ background: "#8A7450" }} />
+          <span
+            style={{
+              fontFamily: '"Jost", sans-serif',
+              fontSize: "0.58rem",
+              letterSpacing: "0.42em",
+              textTransform: "uppercase",
+              fontWeight: 500,
+              color: "#8A7450",
+            }}
+          >
+            Echelon Land &amp; Ranch
+          </span>
+        </div>
+      </div>
+
 
       {/* ── HERO ─────────────────────────────────── */}
       <section className="relative w-full h-[590px] sm:min-h-[640px] md:min-h-[720px] lg:h-[820px] xl:h-[860px] 2xl:h-[880px] overflow-hidden bg-primary">

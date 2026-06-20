@@ -195,7 +195,7 @@ const Blog = () => {
                   <div className="md:col-span-5 md:py-6 flex flex-col justify-center">
                     <div className="mb-6">
                       <p className="text-[10px] tracking-[0.35em] uppercase text-[#b9a06c] mb-3">
-                        {featured.category}
+                        THE ECHELON DIFFERENCE
                       </p>
                       <div className="w-16 h-px bg-[#b9a06c]" />
                     </div>

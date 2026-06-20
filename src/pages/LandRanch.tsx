@@ -1445,35 +1445,47 @@ const LandRanch = () => {
 
       <div className="h-12 md:h-20" aria-hidden="true" />
 
-      {/* ── SECTION 5: PROCESS ──────────────────────── */}
-      <section className="py-14 md:py-20 bg-secondary/40">
+      {/* ── SECTION 5: SIGNATURE FRAMEWORK ──────────────────────── */}
+      <section className="py-20 md:py-32 lr-surface-bone">
         <div className="container mx-auto px-6">
-          <div className="max-w-3xl mb-14">
-            <p className="text-gold mb-5" style={labelStyle}>
-              ADVISORY PROCESS
-            </p>
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-normal text-architectural leading-[1.1]">
-              How We Evaluate Land Opportunities
+          <div className="max-w-3xl mb-16 md:mb-20">
+            <div className="flex items-center gap-3 mb-6">
+              <span className="h-px w-10" style={{ background: "#8A7450" }} aria-hidden="true" />
+              <p className="text-gold" style={{ ...labelStyle, fontSize: "0.6rem", letterSpacing: "0.42em" }}>
+                THE ECHELON LAND FRAMEWORK
+              </p>
+            </div>
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-normal text-architectural leading-[1.05] tracking-tight mb-6">
+              A Proprietary Process for Land<br className="hidden md:block" /> Acquisition &amp; Disposition
             </h2>
+            <p className="text-muted-foreground leading-[1.85] text-[1.05rem] max-w-2xl">
+              Every tract is evaluated through the same disciplined lens — present value, future potential, and the variables that determine which strategy maximizes long-term outcomes.
+            </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-px bg-[rgba(47,58,44,0.08)] border border-[rgba(47,58,44,0.08)]">
+          <ol className="grid md:grid-cols-2 lg:grid-cols-4 gap-x-12 gap-y-14 md:gap-y-16">
             {process.map((step) => (
-              <div
-                key={step.n}
-                className="group relative bg-background p-8 md:p-10 border border-transparent transition-all duration-500 ease-out hover:scale-[1.02] hover:border-gold hover:z-10"
-              >
-                <p className="font-display text-3xl text-gold mb-5" style={{ letterSpacing: "0.05em" }}>
+              <li key={step.n} className="group relative pt-8">
+                <span
+                  aria-hidden="true"
+                  className="absolute top-0 left-0 h-px w-12 transition-all duration-500 ease-out group-hover:w-20"
+                  style={{ background: "#8A7450" }}
+                />
+                <p
+                  className="font-display text-gold mb-6"
+                  style={{ fontSize: "2.25rem", letterSpacing: "0.04em", lineHeight: 1 }}
+                >
                   {step.n}
                 </p>
-                <h3 className="font-display text-xl font-normal text-architectural mb-3 transition-colors duration-300 group-hover:text-gold">
+                <h3 className="font-display text-[1.35rem] md:text-2xl font-normal text-architectural leading-tight mb-4 transition-colors duration-300 group-hover:text-gold">
                   {step.title}
                 </h3>
-                <p className="text-muted-foreground text-[0.95rem] leading-relaxed">{step.desc}</p>
-              </div>
+                <p className="text-muted-foreground text-[0.95rem] leading-[1.75]">{step.desc}</p>
+              </li>
             ))}
-          </div>
+          </ol>
         </div>
       </section>
+
 
       <div className="h-10 md:h-16" aria-hidden="true" />
 

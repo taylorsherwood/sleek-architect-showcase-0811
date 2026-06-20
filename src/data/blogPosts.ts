@@ -69,6 +69,202 @@ const LINK = "text-foreground underline hover:text-muted-foreground";
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "how-to-sell-a-luxury-home-in-austin",
+    title: "How to Sell a Luxury Home in Austin: The 2026 Seller's Guide",
+    metaTitle: "How to Sell a Luxury Home in Austin (2026 Seller's Guide)",
+    excerpt: "Selling a luxury home in Austin takes more than a sign in the yard. Here is the pricing, marketing, off-market, and tax playbook that gets high-end homes sold.",
+    author: "Taylor Sherwood",
+    date: "2026-06-20",
+    readTime: "11 MIN READ",
+    category: "SELLING",
+    image: blogSellLuxuryHomeAustin.url,
+    heroImage: blogSellLuxuryHomeAustin.url,
+    imageAlt: "Architectural luxury kitchen in an Austin estate with marble backsplash, custom cabinetry, and sculptural pendant",
+    content: `
+
+A luxury home in Austin does not sell itself, no matter how good the view looks from the back terrace. The art collection, the wine room, the Hill Country sunset off the infinity edge: none of it matters if the home is priced like a fantasy, marketed like a tract house, or shown to the wrong fifty people.
+
+Selling at the top of the market is a different sport than selling the median Austin home. The buyer pool is smaller, more sophisticated, and far less patient. The pricing has to be precise because the comparables are thin. And the marketing is a production, not a listing. This guide walks through how high-end homes actually get sold in Travis, Williamson, and Hays counties, from pricing and preparation to off-market strategy, costs, and taxes.
+
+If you want the short version: price it to the real buyer pool, market it like the asset it is, control who sees it, and hire someone who has done this before. Here is the long version.
+
+:::callout
+label: Key takeaways
+- Luxury in Austin generally starts around $1M, but true luxury sits closer to $2M to $3M and up, with ultra-luxury above $5M in Westlake, Tarrytown, Lake Austin, and Barton Creek.
+- The top of the market has a smaller buyer pool and longer typical days on market, so correct pricing and serious marketing matter more than they do at the median.
+- Overpricing is the single most expensive mistake a luxury seller can make. Stale listings get chased down in price, not up.
+- Marketing a luxury home means professional media, staging, a real buyer-outreach plan, and often an off-market or pre-market phase before the MLS ever sees it.
+- Texas has no state income tax and no state transfer tax, which is a genuine advantage for sellers. Federal capital gains still apply above the primary-residence exclusion.
+- The right luxury listing agent is judged on track record, marketing budget, network, discretion, and negotiation, not on who will list it the cheapest.
+:::
+
+## What counts as a luxury home in Austin?
+
+There is no official line, and it moves with the neighborhood. As a working definition, luxury in the Austin market generally begins around $1M, but in the core areas that number is closer to entry-level than aspirational. True luxury is more often $2M to $3M and above, and ultra-luxury starts around $5M.
+
+Where the home sits matters as much as the price. A $1.5M home is a strong listing in much of the metro and a starter property in Westlake or Old Enfield. The luxury tiers cluster in a handful of areas: Westlake Hills and Rollingwood (Eanes ISD), Tarrytown and Pemberton Heights, the Lake Austin waterfront, Barton Creek and Spanish Oaks, Davenport Ranch, and the downtown high-rise market along Rainey and West Sixth. Each of those micro-markets has its own buyer, its own price ceiling, and its own pace.
+
+The practical point for a seller: your home is not competing against every home in Austin. It is competing against the small set of comparable homes the right buyer is actually weighing. That set defines your price and your timeline.
+
+## Why selling a luxury home is different from a standard sale
+
+Everything that makes the median Austin sale predictable breaks down at the top of the market. The differences that matter most:
+
+- **The buyer pool is small.** Fewer people can write a $3M check, and the ones who can are choosy. You are not fishing in a lake, you are fishing in a pond, and you need to know exactly where the fish are.
+- **Days on market run longer.** Luxury homes typically sit longer than the Austin median, often measured in months rather than weeks. A well-priced, well-marketed home moves dramatically faster than an overpriced one, but patience is part of the high end.
+- **Financing looks different.** Many luxury deals are cash or use jumbo financing, which changes how offers are qualified and how closings are structured.
+- **Privacy is a feature.** A lot of high-end sellers do not want their home, their schedule, or their price splashed across the internet. Discretion is part of the service.
+- **Marketing is the job.** At the median, the MLS does most of the work. At the top, the marketing is what creates the buyer. The difference between a great sale and a sale that drags is usually production quality and reach.
+
+## How to price a luxury home in Austin
+
+Price is where most luxury sales are won or lost, and it is harder than it looks because the data is thin.
+
+Standard homes price off a clean set of recent, nearby comparables. Luxury homes often have no true comparable. A custom estate on Lake Austin, a downtown penthouse, and a gated Barton Creek build can each be close to one of a kind, which means pricing is part analysis and part judgment about the buyer who will actually fall for the home. A serious comparative market analysis at this level looks at recent luxury closings, active competition, absorption at the price band, and the specific features your buyer pool will pay a premium for.
+
+Two traps to avoid:
+
+- **Anchoring high and chasing the market down.** Listing well above value to "leave room to negotiate" almost always backfires. The home goes stale, the early buyer pool moves on, and every price cut signals weakness. Stale luxury listings are negotiated down, not up.
+- **Ignoring the appraisal gap.** If the buyer is financing, the home still has to appraise. Pricing that the data cannot support creates problems at the closing table even when a buyer is willing.
+
+Price to the real buyer pool from day one. The strongest negotiating position a luxury seller has is a fresh, correctly priced listing with genuine demand behind it. For where the high end is heading and how that should shape your number, see the [Austin luxury market forecast](/blog/austin-luxury-real-estate-market-forecast).
+
+## How long does it take to sell a luxury home in Austin?
+
+It depends on price band, season, and how well the home is priced and marketed, but expect longer than the median sale. At the high end, timelines are often measured in months rather than weeks, and the ultra-luxury tier can take longer still.
+
+Speed at the top of the market is bought, not lucked into. The fastest luxury sales share the same three things: a price the data supports, marketing that actually reaches qualified buyers, and a home that shows beautifully. The slowest share one thing, and it is almost always an asking price the market will not meet. If selling quickly is the priority, the lever is pricing and presentation, not hope.
+
+Seasonality matters less at the high end than it does for the broader market, but spring and early summer still tend to bring the deepest buyer activity in Austin. For how demand has been moving, see [Austin luxury market trends](/blog/austin-luxury-market-trends).
+
+:::cta
+eyebrow: Pricing Conversation
+heading: Start With What Your Home Is Actually Worth
+subheading: Every good luxury sale starts with a clear, honest number. Get a precise read on your home's value to the buyers who will actually compete for it.
+button: Request a Valuation
+href: /home-value-austin
+:::
+
+## How to market a luxury listing
+
+This is where a luxury sale is actually made. Marketing a high-end home is a coordinated production, and cutting corners shows immediately to the buyers you are trying to reach.
+
+A complete luxury marketing plan includes:
+
+- **Professional media.** Architectural photography, cinematic video, drone, twilight shots, and a 3D walkthrough. At this level, the media is the first showing, and most buyers decide whether to visit based on it.
+- **Staging and the edit.** Either professional staging or a careful edit of the existing home so the spaces read as large, light, and effortless. Luxury buyers notice clutter, dated finishes, and deferred maintenance instantly.
+- **A listing narrative.** Luxury homes sell on story as much as square footage. The architect, the build quality, the provenance, the lifestyle the home makes possible. That story runs through the copy, the brochure, and every conversation.
+- **Targeted buyer outreach.** The MLS is the floor, not the ceiling. Real reach means going directly to the agents and networks that represent qualified luxury buyers, locally and beyond Austin. As a practice brokered by eXp Realty, Echelon Property Group can put a listing in front of a global agent network, which matters when your buyer is relocating from California, New York, or overseas.
+- **Digital and print presence.** A dedicated property presence, paid placement where the right buyers are looking, and print where it still carries weight in the luxury segment.
+
+The goal is simple: create real demand from qualified buyers, not passive views from people who will never write the check.
+
+## Should you sell off-market or list publicly?
+
+One of the most useful decisions in a luxury sale is whether to sell quietly or list on the open market, and the right answer depends on your goals.
+
+Off-market, also called a private or whisper listing, means the home is marketed discreetly to a curated set of agents and buyers without hitting the MLS or the public portals. It is the right move when privacy matters, when you are testing price, when you do not want a public days-on-market count, or when the home is unusual enough that the buyer is a specific person rather than a broad pool. The tradeoff is reach: fewer eyes can mean a softer price.
+
+A public MLS listing maximizes exposure and competition, which is usually what produces the strongest price for a home with a deep buyer pool. The tradeoff is visibility. Your listing, your photos, and eventually your price history are public.
+
+Many luxury sellers use a hybrid: a quiet pre-market phase to test demand and capture early buyers, then a full public launch if it does not sell. To go deeper, see [how to find off-market real estate deals in Austin](/blog/how-to-find-off-market-real-estate-deals-austin-2026) and [what a private listing actually is](/blog/what-is-private-listing-in-real-estate), or explore [off-market real estate in Austin](/off-market-real-estate-austin).
+
+## Preparing a luxury home to sell
+
+Preparation at the high end is about removing every reason for a buyer to hesitate. Before the home goes live:
+
+- **Pre-listing inspection.** Find and fix the issues a buyer's inspector will find, before they become negotiation leverage.
+- **Strategic improvements.** Not a full renovation, but the targeted updates that move the needle: refinished floors, fresh paint, updated fixtures, and anything dated that a luxury buyer will read as work.
+- **Staging or a clean edit.** Make the home feel curated and spacious. Pull personal items, thin out furniture, and let the architecture speak.
+- **Curb appeal and grounds.** Landscaping, exterior lighting, and the approach. The first impression at the gate sets the tone for the whole showing.
+- **Documentation.** Survey, floor plans, warranties, renovation records, HOA details, and anything that demonstrates quality and reduces buyer uncertainty.
+
+Spend where buyers look and skip where they do not. The objective is a home that shows like the asking price feels.
+
+## What does it cost to sell a luxury home in Austin?
+
+Selling costs scale with price, and a few line items are larger at the high end than most sellers expect. Plan for:
+
+- **Agent commission.** Real estate commissions are fully negotiable and set in your listing agreement. Following the 2024 industry changes, any compensation to a buyer's agent is negotiated separately and is no longer published on the MLS, so how buyer-side compensation is handled is now a specific conversation between you and your agent.
+- **Marketing and media.** Professional photography, video, drone, 3D tours, staging, and print can run into real money on a large luxury home. This is where production quality is worth what it costs.
+- **Pre-listing improvements.** Inspections, repairs, and targeted updates.
+- **Closing costs.** Title, escrow, and related closing fees. Texas has no state real estate transfer tax, which is a genuine advantage compared to many other states.
+- **Property tax proration.** You pay your share of the year's property taxes through the closing date, handled at the closing table.
+- **Possible seller concessions.** Depending on the deal, you may negotiate concessions toward the buyer's costs.
+
+A clear net sheet from your agent up front, showing estimated proceeds after every cost, prevents surprises and helps you weigh offers on what you actually keep. You can start with [what your home is actually worth](/home-value-austin) and build the net sheet from there.
+
+## Taxes when you sell a luxury home in Texas
+
+This is general information, not tax advice. Talk to your CPA before you sell. With that said, the headlines for a Texas seller:
+
+- **No state income tax.** Texas does not tax the gain on your home sale at the state level, which is one reason high-net-worth sellers and relocators do so well here.
+- **Federal capital gains.** If the home was your primary residence and you meet the ownership and use tests, the Section 121 exclusion lets you exclude up to $250,000 of gain if single, or $500,000 if married filing jointly. Gain above that is taxed at federal long-term capital gains rates, and higher earners may also owe the net investment income tax.
+- **Investment property.** If you are selling a luxury home held as an investment rather than a residence, a 1031 exchange may let you defer the capital gains by reinvesting into a like-kind property. The rules and deadlines are strict, so coordinate with your CPA and a qualified intermediary early.
+- **Property taxes.** Texas property taxes are high and are settled through proration at closing. For how Austin property taxes work, see [Austin property taxes explained](/blog/austin-property-taxes-explained).
+
+The tax picture can swing a six- or seven-figure decision, so build it into your plan before you list, not after you have an offer.
+
+## How to choose a luxury listing agent in Austin
+
+Hiring the right agent is the highest-leverage decision in the whole process, and it is not the place to shop on commission alone. The difference between agents at this level shows up directly in your final number. Look for:
+
+- **A real luxury track record.** Not one luxury sale, a pattern of them, in price bands and neighborhoods like yours. The [best luxury neighborhoods in Austin](/blog/best-luxury-neighborhoods-austin-texas) each have their own buyer, and your agent should know yours cold.
+- **A marketing budget and production capability.** Ask to see the actual media, brochures, and campaigns they produce. If it looks like every other listing, it will perform like every other listing.
+- **Network and reach.** Local relationships plus the ability to reach buyers beyond Austin. Many luxury buyers are relocating in.
+- **Discretion.** Comfort with off-market strategy and a genuine respect for your privacy.
+- **Negotiation.** At these numbers, a point of negotiation is a serious sum. You want a closer.
+- **Micro-market knowledge.** Someone who knows your specific neighborhood's buyer, ceiling, and pace, not just the metro at large.
+
+This is exactly how Echelon Property Group approaches luxury and investment sales across Travis, Williamson, and Hays counties: precise pricing, serious marketing, and a quiet, strategic process. If you are weighing a sale, here is what [selling your home with Echelon Property Group](/sell) looks like.
+
+## Common mistakes when selling a luxury home
+
+The expensive errors repeat themselves. Avoid these:
+
+- **Overpricing to "leave room."** The fastest way to a stale listing and a lower final price.
+- **Weak media.** Phone photos on a $3M home tell every buyer the seller is not serious.
+- **No buyer qualification.** Letting unqualified buyers tour wastes time and compromises privacy. Proof of funds matters.
+- **Listing at the wrong time or with no plan.** Putting it on the market without a marketing strategy and waiting for something to happen.
+- **Ignoring off-market options.** Going straight to the MLS when a quiet pre-market phase would have served the home better.
+- **Choosing an agent on commission alone.** The cheapest listing agreement is rarely the most profitable sale.
+
+## Selling a luxury home in Austin? Start with the number.
+
+Every good luxury sale starts the same way: with a clear, honest understanding of what the home is actually worth to the buyers who will compete for it. From there, the plan writes itself.
+
+If you are considering a sale anywhere in Travis, Williamson, or Hays counties, find out [what your home is actually worth](/home-value-austin), see how [selling your home with Echelon Property Group](/sell) is handled, or reach out directly. Discretion guaranteed, and no pressure to list before the timing is right for you.
+
+## FAQ
+
+:::faq
+Q: What is the best way to sell a luxury home in Austin quickly?
+A: Price it correctly to the real buyer pool from day one, invest in professional marketing and media, and make sure the home shows beautifully. Speed at the high end comes from accurate pricing and serious marketing, not from luck. Overpricing is the most common reason luxury homes sit.
+
+Q: How much does it cost to sell a luxury home in Austin?
+A: Plan for negotiable agent commission, professional marketing and staging, any pre-listing improvements, and closing costs. Texas has no state transfer tax, which helps. Ask your agent for a net sheet showing estimated proceeds after every cost so you can evaluate offers on what you actually keep.
+
+Q: Should I sell my luxury home off-market?
+A: Off-market, or a private listing, makes sense when privacy matters, when you want to test price, or when the buyer is a specific person rather than a broad pool. A public MLS listing maximizes exposure and competition. Many luxury sellers use a quiet pre-market phase first, then launch publicly if needed.
+
+Q: How do I price a multi-million dollar home in Austin?
+A: Pricing relies on recent luxury closings, active competition, absorption at the price band, and judgment about the buyer who will pay a premium for the home's specific features. True comparables are often thin at the top, so this is part analysis and part experience. Avoid anchoring high and chasing the market down.
+
+Q: Do I pay capital gains tax when I sell my home in Texas?
+A: Texas has no state income tax, so there is no state-level tax on the gain. Federally, if the home was your primary residence, you may exclude up to $250,000 of gain if single or $500,000 if married filing jointly, with the remainder taxed at long-term capital gains rates. Investment properties may qualify for a 1031 exchange. Confirm specifics with your CPA.
+
+Q: What is the best time of year to sell a luxury home in Austin?
+A: Seasonality matters less at the high end than for the broader market, but spring and early summer typically bring the deepest buyer activity. For an unusual or ultra-luxury home, the right buyer can appear in any season, which is why marketing reach matters more than timing.
+
+Q: How do I choose a luxury real estate agent in Austin?
+A: Look for a genuine luxury track record, real marketing production, network and reach beyond Austin, discretion, strong negotiation, and specific knowledge of your neighborhood's buyer pool. Do not choose on commission alone, since the difference between agents at this level shows up directly in your final sale price.
+:::
+
+*This article is for educational purposes only and does not constitute tax, legal, or investment advice. Consult a qualified tax professional about your specific situation.*
+
+`,
+  },
+  {
     id: "1031-exchange-texas-investors",
     title: "The 1031 Exchange: How Texas Investors Defer Capital Gains and Keep Building",
     metaTitle: "1031 Exchange Guide for Texas Investors (2026) | Echelon Property Group",

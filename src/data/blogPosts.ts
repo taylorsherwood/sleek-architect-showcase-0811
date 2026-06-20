@@ -189,7 +189,7 @@ Spend where buyers look and skip where they do not. The objective is a home that
 
 Selling costs scale with price, and a few line items are larger at the high end than most sellers expect. Plan for:
 
-- **Agent commission.** Real estate commissions are fully negotiable and set in your listing agreement. Following the 2024 industry changes, any compensation to a buyer's agent is negotiated separately and is no longer published on the MLS, so how buyer-side compensation is handled is now a specific conversation between you and your agent. For a closer look at how that side of the transaction works, see [Who pays the buyer's agent in Texas](/blog/buyer-agent-commission-texas-2026).
+- **Agent commission.** Real estate commissions are fully negotiable and set in your listing agreement. Following the 2024 industry changes, any compensation to a buyer's agent is negotiated separately and is no longer published on the MLS, so how buyer-side compensation is handled is now a specific conversation between you and your agent. For a closer look at how that side of the transaction works, see [Who pays the buyer's agent in Texas](/blog/buyer-agent-commission-texas).
 - **Marketing and media.** Professional photography, video, drone, 3D tours, staging, and print can run into real money on a large luxury home. This is where production quality is worth what it costs.
 - **Pre-listing improvements.** Inspections, repairs, and targeted updates.
 - **Closing costs.** Title, escrow, and related closing fees. Texas has no state real estate transfer tax, which is a genuine advantage compared to many other states.

@@ -1060,14 +1060,14 @@ const InsightsSection = () => (
         <ScrollReveal delay={120} stagger={70}>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {insights.map((article) => (
-              <Link key={article.to} to={article.to} className="group block bg-card border border-border/30 overflow-hidden
+              <Link key={article.to} to={article.to} className="group block bg-card border border-border/30 overflow-hidden h-full
                 shadow-[0_4px_20px_rgba(0,0,0,0.04)] transition-all duration-[500ms] hover:-translate-y-[3px] hover:shadow-[0_12px_32px_rgba(0,0,0,0.07)]">
                 <div className="p-7 flex flex-col h-full">
                   <p className="text-gold mb-2.5" style={{ fontFamily: '"Jost", sans-serif', fontSize: "10px", letterSpacing: "0.2em", textTransform: "uppercase", fontWeight: 400 }}>{article.category}</p>
-                  <h3 className="font-display text-[17px] font-medium text-foreground/90 mb-3 leading-[1.35] group-hover:text-gold transition-colors duration-[400ms] tracking-[0.01em]">
+                  <h3 className="font-display text-[17px] font-medium text-foreground/90 mb-3 leading-[1.35] group-hover:text-gold transition-colors duration-[400ms] tracking-[0.01em] line-clamp-2 min-h-[2.8rem]">
                     {article.title}
                   </h3>
-                  <p className="text-muted-foreground/70 text-[13.5px] leading-[1.85] flex-1" style={{ fontFamily: '"Jost", sans-serif', fontWeight: 300 }}>{article.excerpt}</p>
+                  <p className="text-muted-foreground/70 text-[13.5px] leading-[1.85] flex-1 line-clamp-3" style={{ fontFamily: '"Jost", sans-serif', fontWeight: 300 }}>{article.excerpt}</p>
                   <span className="mt-5 text-gold group-hover:text-gold transition-colors duration-[400ms]" style={{ fontFamily: '"Jost", sans-serif', fontSize: "10px", letterSpacing: "0.2em", textTransform: "uppercase", fontWeight: 400 }}>
                     READ MORE →
                   </span>

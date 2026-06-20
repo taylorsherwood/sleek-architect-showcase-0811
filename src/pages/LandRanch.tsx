@@ -271,13 +271,14 @@ const ExoticWildlifeVideoBand = () => {
               <p
                 className="text-[11px] md:text-xs tracking-[0.32em] uppercase mb-4 md:mb-6"
                 style={{
-                  color: "#8A7450",
+                  color: "#F3EEE4",
                   fontFamily: "'Jost', sans-serif",
-                  textShadow: "0 0 18px rgba(138,116,80,0.55), 0 2px 10px rgba(47,58,44,0.35)",
+                  textShadow: "0 1px 2px rgba(0,0,0,0.45), 0 2px 14px rgba(0,0,0,0.35)",
                 }}
               >
                 Texas Exotic Wildlife
               </p>
+
               <h2
                 className="font-light leading-[1.1] mb-5 md:mb-7"
                 style={{
@@ -384,9 +385,10 @@ const LandRanch = () => {
 
         <div className="relative z-10 flex h-full items-start px-6 pt-24 md:hidden">
           <div className="w-full max-w-[390px]">
-            <p className="text-gold mb-3" style={labelStyle}>
+            <p className="mb-3" style={{ ...labelStyle, color: "#F3EEE4", textShadow: "0 1px 2px rgba(0,0,0,0.45)" }}>
               LAND & RANCH
             </p>
+
             <h1
               className="font-display font-normal text-white leading-[1.06] mb-4"
               style={{ fontSize: "1.78rem", textShadow: "0 2px 18px rgba(0,0,0,0.40), 0 1px 2px rgba(0,0,0,0.45)" }}
@@ -423,9 +425,10 @@ const LandRanch = () => {
         <div className="relative z-10 hidden h-full md:flex md:items-center md:pt-0 md:pb-0">
           <div className="container mx-auto px-6 md:px-12 md:-translate-y-16 lg:-translate-y-20">
             <div className="max-w-2xl">
-              <p className="text-gold mb-3 md:mb-5" style={labelStyle}>
+              <p className="mb-3 md:mb-5" style={{ ...labelStyle, color: "#F3EEE4", textShadow: "0 1px 2px rgba(0,0,0,0.45)" }}>
                 LAND & RANCH
               </p>
+
               <h1
                 className="font-display font-normal text-white leading-[1.08] tracking-tight mb-4 md:mb-7"
                 style={{ fontSize: "clamp(1.6rem, 4.4vw, 3.4rem)", textShadow: "0 2px 22px rgba(0,0,0,0.38), 0 1px 2px rgba(0,0,0,0.45)" }}
@@ -662,9 +665,10 @@ const LandRanch = () => {
                     }}
                   />
                   <div className="absolute inset-x-0 bottom-0 p-7 md:p-8">
-                    <p className="text-gold mb-3" style={{ ...labelStyle, fontSize: "0.55rem" }}>
+                    <p className="mb-3" style={{ ...labelStyle, fontSize: "0.55rem", color: "#F3EEE4", textShadow: "0 1px 2px rgba(0,0,0,0.4)" }}>
                       0{i + 1}
                     </p>
+
                     <h3 className="font-display text-xl md:text-2xl font-normal text-white leading-tight mb-3">
                       {c.title}
                     </h3>

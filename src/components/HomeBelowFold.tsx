@@ -1060,7 +1060,7 @@ const InsightsSection = () => (
         <ScrollReveal delay={120} stagger={70}>
           <div className="grid auto-rows-fr md:grid-cols-2 lg:grid-cols-3 gap-6">
             {insights.map((article) => (
-              <Link key={article.to} to={article.to} className="group flex h-full min-h-[300px] bg-card border border-border/30 overflow-hidden
+              <Link key={article.to} to={article.to} className="group flex h-[300px] md:h-[320px] bg-card border border-border/30 overflow-hidden
                 shadow-[0_4px_20px_rgba(0,0,0,0.04)] transition-all duration-[500ms] hover:-translate-y-[3px] hover:shadow-[0_12px_32px_rgba(0,0,0,0.07)]">
                 <div className="p-7 flex flex-col h-full">
                   <p className="text-gold mb-2.5" style={{ fontFamily: '"Jost", sans-serif', fontSize: "10px", letterSpacing: "0.2em", textTransform: "uppercase", fontWeight: 400 }}>{article.category}</p>

@@ -81,8 +81,8 @@ export const blogPosts: BlogPost[] = [
     heroImage: blogSellLuxuryHomeAustin.url,
     imageAlt: "Architectural luxury kitchen in an Austin estate with marble backsplash, custom cabinetry, and sculptural pendant",
     content: `
+\n\nA luxury home in Austin does not sell itself, no matter how good the view looks from the back terrace. The art collection, the wine room, the Hill Country sunset off the infinity edge: none of it matters if the home is priced like a fantasy, marketed like a tract house, or shown to the wrong fifty people.
 
-A luxury home in Austin does not sell itself, no matter how good the view looks from the back terrace. The art collection, the wine room, the Hill Country sunset off the infinity edge: none of it matters if the home is priced like a fantasy, marketed like a tract house, or shown to the wrong fifty people.
 
 Selling at the top of the market is a different sport than selling the median Austin home. The buyer pool is smaller, more sophisticated, and far less patient. The pricing has to be precise because the comparables are thin. And the marketing is a production, not a listing. This guide walks through how high-end homes actually get sold in Travis, Williamson, and Hays counties, from pricing and preparation to off-market strategy, costs, and taxes.
 

@@ -233,7 +233,7 @@ const CommercialInvestment = () => {
 
 
       {/* ── Current Commercial Listings ── */}
-      <section className="py-16 md:py-24 bg-background border-t border-border">
+      <section className="cm-surface-bone py-16 md:py-24 border-t border-border">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="mb-16">
@@ -248,7 +248,7 @@ const CommercialInvestment = () => {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {/* Gillis Street */}
-              <div className="border border-border/60 overflow-hidden group bg-card hover:border-gold hover:shadow-[0_0_0_1px_hsl(var(--gold))] transition-colors duration-500 flex flex-col">
+              <div className="cm-listing-card border border-border/60 overflow-hidden group bg-card hover:border-gold transition-colors duration-500 flex flex-col">
                 <div className="relative overflow-hidden">
                   <img
                     src={gillisStreet}
@@ -292,7 +292,7 @@ const CommercialInvestment = () => {
               </div>
 
               {/* San Jose Ave */}
-              <div className="border border-border/60 overflow-hidden group bg-card hover:border-gold hover:shadow-[0_0_0_1px_hsl(var(--gold))] transition-colors duration-500 flex flex-col">
+              <div className="cm-listing-card border border-border/60 overflow-hidden group bg-card hover:border-gold transition-colors duration-500 flex flex-col">
                 <div className="relative overflow-hidden">
                   <img
                     src={sanJoseAve}
@@ -336,7 +336,7 @@ const CommercialInvestment = () => {
               </div>
 
               {/* 717 S. 11th St */}
-              <div className="border border-border/60 overflow-hidden group bg-card hover:border-gold hover:shadow-[0_0_0_1px_hsl(var(--gold))] transition-colors duration-500 flex flex-col">
+              <div className="cm-listing-card border border-border/60 overflow-hidden group bg-card hover:border-gold transition-colors duration-500 flex flex-col">
                 <div className="relative overflow-hidden">
                   <img
                     src={s11thStreet}
@@ -380,7 +380,7 @@ const CommercialInvestment = () => {
               </div>
 
               {/* Small Killeen Rental Portfolio */}
-              <div className="border border-border/60 overflow-hidden group bg-card hover:border-gold hover:shadow-[0_0_0_1px_hsl(var(--gold))] transition-colors duration-500 flex flex-col">
+              <div className="cm-listing-card border border-border/60 overflow-hidden group bg-card hover:border-gold transition-colors duration-500 flex flex-col">
                 <div className="relative overflow-hidden">
                   <img
                     src={killeenPortfolio}
@@ -424,7 +424,7 @@ const CommercialInvestment = () => {
               </div>
 
               {/* 709/711/713 Bremser Ave */}
-              <div className="border border-border/60 overflow-hidden group bg-card hover:border-gold hover:shadow-[0_0_0_1px_hsl(var(--gold))] transition-colors duration-500 flex flex-col">
+              <div className="cm-listing-card border border-border/60 overflow-hidden group bg-card hover:border-gold transition-colors duration-500 flex flex-col">
                 <div className="relative overflow-hidden">
                   <img
                     src={bremserAve}
@@ -473,7 +473,7 @@ const CommercialInvestment = () => {
       </section>
 
       {/* ── Private Market Opportunities ── */}
-      <section className="py-16 md:py-24 bg-secondary border-t border-border">
+      <section className="cm-surface-graphite py-20 md:py-28 border-t border-border">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
             <div className="mb-16">
@@ -565,7 +565,7 @@ const CommercialInvestment = () => {
       </section>
 
       {/* ── Investment Search ── */}
-      <section className="py-16 md:py-24 bg-background border-t border-border">
+      <section className="cm-surface-stone py-20 md:py-28 border-t border-border">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
             <div className="grid md:grid-cols-2 gap-16 items-center">
@@ -621,7 +621,7 @@ const CommercialInvestment = () => {
       </section>
 
       {/* ── Market Overview + FAQ ── */}
-      <section className="py-16 md:py-24 bg-background border-t border-border">
+      <section className="cm-surface-bone py-20 md:py-28 border-t border-border">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <p className="text-gold text-center mb-4 font-bold" style={labelStyle}>MARKET OVERVIEW</p>
@@ -697,7 +697,7 @@ const CommercialInvestment = () => {
       </section>
 
       {/* ── FINAL CTA ── */}
-      <section className="py-16 md:py-24 bg-secondary border-t border-border">
+      <section className="cm-surface-stone py-20 md:py-28 border-t border-border">
         <div className="container mx-auto px-6 max-w-lg text-center">
           <p className="text-gold mb-4 font-bold" style={labelStyle}>GET STARTED</p>
           <h2 className="font-display text-2xl md:text-3xl font-light text-foreground mb-4">

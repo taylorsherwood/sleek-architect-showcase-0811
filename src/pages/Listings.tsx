@@ -70,6 +70,7 @@ const commercialListings = [
     assetType: "Redevelopment Land",
     units: "3.06 Acres",
     description: "3.06-acre redevelopment parcel with existing mobile homes and zero zoning restrictions. Ideal for ground-up multifamily, mixed-use, or commercial development in the high-growth Del Valle corridor.",
+    externalUrl: "https://www.10811sanjose.com",
   },
   {
     image: s11thStreet,
@@ -106,6 +107,7 @@ const commercialListings = [
     assetType: "Single-Family Rentals",
     units: "3 Homes",
     description: "Three individual rental homes on Bremser Ave in Killeen. Each unit separately metered. Ideal for a buy-and-hold investor seeking affordable entry into the Central Texas rental market.",
+    externalUrl: "https://www.bremserportfolio.com",
   },
 ];
 

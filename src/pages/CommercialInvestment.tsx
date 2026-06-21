@@ -4,7 +4,7 @@ import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createFAQSchema, createBreadcrumbSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
 import heroArchitecture from "@/assets/hero-architecture.jpg";
-import expCommercialLogo from "@/assets/exp-commercial-logo-horizontal-white.webp";
+
 import gillisStreet from "@/assets/commercial-gillis-street.jpg";
 import sanJoseAve from "@/assets/commercial-san-jose-ave.jpg";
 import bremserAve from "@/assets/commercial-bremser-ave.jpg";
@@ -157,7 +157,7 @@ const CommercialInvestment = () => {
       <Navigation />
 
       {/* Hero — Gillis OM treatment: full-bleed image, kicker over hairline, brass-outline CTAs */}
-      <section className="relative w-full min-h-[760px] md:min-h-[860px] lg:min-h-[920px] overflow-hidden flex items-end pt-32 md:pt-36">
+      <section className="relative w-full min-h-[760px] md:min-h-[860px] lg:min-h-[920px] overflow-hidden flex items-center pt-32 md:pt-36 pb-16 md:pb-24 lg:pb-32">
         <div className="absolute inset-0">
           <CommercialHeroVideo />
           <div
@@ -169,7 +169,7 @@ const CommercialInvestment = () => {
           />
         </div>
 
-        <div className="relative z-10 w-full container mx-auto px-6 pb-12 md:pb-16">
+        <div className="relative z-10 w-full container mx-auto px-6 pb-0">
           <div className="max-w-4xl">
             <p className="cm-kicker cm-hero-glow mb-6" style={{ color: "rgba(247,245,242,0.85)" }}>
               INVESTOR MEMORANDUM · ECHELON COMMERCIAL &amp; INVESTMENT
@@ -230,17 +230,6 @@ const CommercialInvestment = () => {
               </Link>
             </div>
 
-            <div className="mt-12 inline-flex flex-col items-start">
-              <span className="cm-kicker mb-2.5" style={{ color: "rgba(247,245,242,0.55)" }}>Brokered with</span>
-              <a href="https://www.expcommercial.com" target="_blank" rel="noopener noreferrer nofollow" className="inline-flex items-center px-6 py-3 bg-white/[0.06] backdrop-blur-sm border border-white/[0.08] hover:bg-white/[0.1] transition-colors duration-300">
-                <img
-                  src={expCommercialLogo}
-                  alt="eXp Commercial"
-                  className="h-10 md:h-12 w-auto object-contain"
-                  loading="eager"
-                />
-              </a>
-            </div>
           </div>
         </div>
       </section>

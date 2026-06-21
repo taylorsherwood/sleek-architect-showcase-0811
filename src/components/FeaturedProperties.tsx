@@ -29,7 +29,7 @@ const properties = [
     location: "Austin, TX",
     price: "$1,600,000",
     beds: 0, baths: 0, sqft: "—",
-    link: "/listings",
+    link: "https://www.10811sanjose.com",
     badge: "COMMERCIAL LISTING",
     subtitle: "10811 San Jose Ave, value-add commercial opportunity.",
   },

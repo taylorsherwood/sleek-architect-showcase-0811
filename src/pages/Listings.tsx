@@ -70,6 +70,7 @@ const commercialListings = [
     assetType: "Redevelopment Land",
     units: "3.06 Acres",
     description: "3.06-acre redevelopment parcel with existing mobile homes and zero zoning restrictions. Ideal for ground-up multifamily, mixed-use, or commercial development in the high-growth Del Valle corridor.",
+    externalUrl: "https://www.10811sanjose.com",
   },
   {
     image: s11thStreet,
@@ -106,6 +107,7 @@ const commercialListings = [
     assetType: "Single-Family Rentals",
     units: "3 Homes",
     description: "Three individual rental homes on Bremser Ave in Killeen. Each unit separately metered. Ideal for a buy-and-hold investor seeking affordable entry into the Central Texas rental market.",
+    externalUrl: "https://www.bremserportfolio.com",
   },
 ];
 
@@ -280,53 +282,69 @@ const Listings = () => {
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {commercialListings.map((listing, index) => (
-                <div
-                  key={index}
-                  className="border border-border/60 overflow-hidden group bg-card hover:border-gold hover:shadow-[0_0_0_1px_hsl(var(--gold))] transition-colors duration-500 flex flex-col"
-                >
-                  <div className="relative overflow-hidden">
-                    <img
-                      src={listing.image}
-                      alt={listing.alt}
-                      title={listing.title}
-                      className="w-full aspect-[3/2] object-cover transition-transform duration-700 group-hover:scale-105"
-                      loading="lazy"
-                      decoding="async"
-                    />
-                    <span className="absolute top-4 left-4 text-minimal bg-gold text-white px-3 py-1 font-extrabold">
-                      {listing.badge}
-                    </span>
-                    <span className="absolute bottom-3 right-3 text-white text-sm font-light  bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-sm">{listing.price}</span>
-                  </div>
-                  <div className="p-6 flex flex-col flex-grow">
-                    <h3 className="text-lg font-light text-foreground mb-1 ">
-                      {listing.name}
-                    </h3>
-                    <p className="text-muted-foreground mb-2 ">{listing.location}</p>
-                    <div className="grid grid-cols-2 gap-3 mb-4">
-                      <div>
-                        <p className="text-muted-foreground mb-1" style={commercialLabelStyle}>ASSET TYPE</p>
-                        <p className="text-foreground font-medium text-sm ">{listing.assetType}</p>
-                      </div>
-                      <div>
-                        <p className="text-muted-foreground mb-1" style={commercialLabelStyle}>UNITS</p>
-                        <p className="text-foreground font-medium text-sm ">{listing.units}</p>
-                      </div>
+              {commercialListings.map((listing, index) => {
+                const Wrapper: any = listing.externalUrl ? "a" : "div";
+                const wrapperProps: any = listing.externalUrl
+                  ? { href: listing.externalUrl, target: "_blank", rel: "noopener noreferrer" }
+                  : {};
+                return (
+                  <Wrapper
+                    key={index}
+                    {...wrapperProps}
+                    className="border border-border/60 overflow-hidden group bg-card hover:border-gold hover:shadow-[0_0_0_1px_hsl(var(--gold))] transition-colors duration-500 flex flex-col"
+                  >
+                    <div className="relative overflow-hidden">
+                      <img
+                        src={listing.image}
+                        alt={listing.alt}
+                        title={listing.title}
+                        className="w-full aspect-[3/2] object-cover transition-transform duration-700 group-hover:scale-105"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <span className="absolute top-4 left-4 text-minimal bg-gold text-white px-3 py-1 font-extrabold">
+                        {listing.badge}
+                      </span>
+                      <span className="absolute bottom-3 right-3 text-white text-sm font-light  bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-sm">{listing.price}</span>
                     </div>
-                    <p className="text-muted-foreground text-sm leading-relaxed  mb-4 flex-grow">
-                      {listing.description}
-                    </p>
-                    <Link
-                      to="/contact"
-                      className="border border-border/50 rounded-sm px-6 py-2 text-foreground/70 hover:bg-gold hover:text-white hover:border-gold transition-all duration-300 ease-out self-center"
-                      style={commercialCtaStyle}
-                    >
-                      REQUEST INFORMATION
-                    </Link>
-                  </div>
-                </div>
-              ))}
+                    <div className="p-6 flex flex-col flex-grow">
+                      <h3 className="text-lg font-light text-foreground mb-1 ">
+                        {listing.name}
+                      </h3>
+                      <p className="text-muted-foreground mb-2 ">{listing.location}</p>
+                      <div className="grid grid-cols-2 gap-3 mb-4">
+                        <div>
+                          <p className="text-muted-foreground mb-1" style={commercialLabelStyle}>ASSET TYPE</p>
+                          <p className="text-foreground font-medium text-sm ">{listing.assetType}</p>
+                        </div>
+                        <div>
+                          <p className="text-muted-foreground mb-1" style={commercialLabelStyle}>UNITS</p>
+                          <p className="text-foreground font-medium text-sm ">{listing.units}</p>
+                        </div>
+                      </div>
+                      <p className="text-muted-foreground text-sm leading-relaxed  mb-4 flex-grow">
+                        {listing.description}
+                      </p>
+                      {listing.externalUrl ? (
+                        <span
+                          className="border border-border/50 rounded-sm px-6 py-2 text-foreground/70 hover:bg-gold hover:text-white hover:border-gold transition-all duration-300 ease-out self-center"
+                          style={commercialCtaStyle}
+                        >
+                          VIEW PROPERTY WEBSITE
+                        </span>
+                      ) : (
+                        <Link
+                          to="/contact"
+                          className="border border-border/50 rounded-sm px-6 py-2 text-foreground/70 hover:bg-gold hover:text-white hover:border-gold transition-all duration-300 ease-out self-center"
+                          style={commercialCtaStyle}
+                        >
+                          REQUEST INFORMATION
+                        </Link>
+                      )}
+                    </div>
+                  </Wrapper>
+                );
+              })}
             </div>
           </div>
         </div>

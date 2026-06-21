@@ -449,7 +449,12 @@ const LandDevelopment = () => {
 
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
               <div className="lg:col-span-7">
-                <Link to="/listings" className="block group overflow-hidden">
+                <a
+                  href="https://www.10811sanjose.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block group overflow-hidden"
+                >
                   <div className="relative aspect-[4/3] overflow-hidden bg-secondary">
                     <img
                       src={sanJoseAve}
@@ -459,7 +464,7 @@ const LandDevelopment = () => {
                       className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.03]"
                     />
                   </div>
-                </Link>
+                </a>
               </div>
 
               <div className="lg:col-span-5">
@@ -473,7 +478,9 @@ const LandDevelopment = () => {
                     fontSize: "clamp(1.5rem, 2.6vw, 2.1rem)",
                   }}
                 >
-                  10811 San Jose Ave
+                  <a href="https://www.10811sanjose.com" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors duration-300">
+                    10811 San Jose Ave
+                  </a>
                 </h3>
                 <p
                   className="text-foreground/72 leading-[1.75] mb-8"
@@ -533,13 +540,15 @@ const LandDevelopment = () => {
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-                  <Link
-                    to="/contact"
+                  <a
+                    href="https://www.10811sanjose.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex min-h-[48px] items-center justify-center px-6 py-3 text-white transition-colors duration-300 hover:bg-[hsl(var(--gold-deep))]"
                     style={{ ...labelStyle, backgroundColor: GOLD }}
                   >
-                    REQUEST OM
-                  </Link>
+                    VIEW PROPERTY WEBSITE
+                  </a>
                   <Link
                     to="/listings"
                     className="inline-flex min-h-[48px] items-center justify-center px-6 py-3 text-foreground border border-foreground/30 hover:bg-foreground/5 transition-colors duration-300"

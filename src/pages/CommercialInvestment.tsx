@@ -307,7 +307,7 @@ const CommercialInvestment = () => {
               </div>
 
               {/* San Jose Ave */}
-              <div className="cm-listing-card border border-border/60 overflow-hidden group bg-card hover:border-gold transition-colors duration-500 flex flex-col">
+              <a href="https://www.10811sanjose.com" target="_blank" rel="noopener noreferrer" className="cm-listing-card border border-border/60 overflow-hidden group bg-card hover:border-gold transition-colors duration-500 flex flex-col">
                 <div className="relative overflow-hidden">
                   <img
                     src={sanJoseAve}
@@ -340,15 +340,11 @@ const CommercialInvestment = () => {
                   <p className="text-muted-foreground text-sm leading-relaxed  mb-4 flex-grow">
                     3.06-acre redevelopment parcel with existing mobile homes and zero zoning restrictions. Ideal for ground-up multifamily, mixed-use, or commercial development in the high-growth Del Valle corridor.
                   </p>
-                  <Link
-                    to="/contact"
-                    className="border border-border/50 rounded-sm px-6 py-2 text-foreground/70 hover:bg-gold hover:text-white hover:border-gold transition-all duration-300 ease-out self-center"
-                    style={ctaStyle}
-                  >
-                    REQUEST INFORMATION
-                  </Link>
+                  <span className="border border-border/50 rounded-sm px-6 py-2 text-foreground/70 hover:bg-gold hover:text-white hover:border-gold transition-all duration-300 ease-out self-center" style={ctaStyle}>
+                    VIEW PROPERTY WEBSITE
+                  </span>
                 </div>
-              </div>
+              </a>
 
               {/* 717 S. 11th St */}
               <div className="cm-listing-card border border-border/60 overflow-hidden group bg-card hover:border-gold transition-colors duration-500 flex flex-col">
@@ -439,7 +435,7 @@ const CommercialInvestment = () => {
               </div>
 
               {/* 709/711/713 Bremser Ave */}
-              <div className="cm-listing-card border border-border/60 overflow-hidden group bg-card hover:border-gold transition-colors duration-500 flex flex-col">
+              <a href="https://www.bremserportfolio.com" target="_blank" rel="noopener noreferrer" className="cm-listing-card border border-border/60 overflow-hidden group bg-card hover:border-gold transition-colors duration-500 flex flex-col">
                 <div className="relative overflow-hidden">
                   <img
                     src={bremserAve}
@@ -472,15 +468,11 @@ const CommercialInvestment = () => {
                   <p className="text-muted-foreground text-sm leading-relaxed  mb-4 flex-grow">
                     Three individual rental homes on Bremser Ave in Killeen, TX. Opportunity to acquire a small residential rental portfolio.
                   </p>
-                  <Link
-                    to="/contact"
-                    className="border border-border/50 rounded-sm px-6 py-2 text-foreground/70 hover:bg-gold hover:text-white hover:border-gold transition-all duration-300 ease-out self-center"
-                    style={ctaStyle}
-                  >
-                    REQUEST INFORMATION
-                  </Link>
+                  <span className="border border-border/50 rounded-sm px-6 py-2 text-foreground/70 hover:bg-gold hover:text-white hover:border-gold transition-all duration-300 ease-out self-center" style={ctaStyle}>
+                    VIEW PROPERTY WEBSITE
+                  </span>
                 </div>
-              </div>
+              </a>
 
             </div>
           </div>

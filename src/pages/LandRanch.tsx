@@ -850,7 +850,9 @@ const LandRanch = () => {
               FEATURED LAND LISTING
             </p>
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-normal text-architectural leading-[1.1] mb-5">
-              10811 San Jose Ave
+              <a href="https://www.10811sanjose.com" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors duration-300">
+                10811 San Jose Ave
+              </a>
             </h2>
             <p className="text-muted-foreground leading-relaxed">
               A rare 3.06-acre redevelopment parcel in the high-growth Del Valle corridor
@@ -858,7 +860,12 @@ const LandRanch = () => {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
-            <div className="lg:col-span-7 relative overflow-hidden group">
+            <a
+              href="https://www.10811sanjose.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="lg:col-span-7 relative overflow-hidden group block"
+            >
               <img
                 src={featuredLandListingImage}
                 alt="10811 San Jose Ave, Del Valle TX, 3.06 acres redevelopment land"
@@ -870,7 +877,7 @@ const LandRanch = () => {
               <span className="absolute top-5 left-5 text-white bg-gold px-3 py-1" style={labelStyle}>
                 DEVELOPMENT LAND
               </span>
-            </div>
+            </a>
 
             <div className="lg:col-span-5">
               <p className="text-muted-foreground mb-3" style={labelStyle}>
@@ -904,8 +911,10 @@ const LandRanch = () => {
               </p>
 
               <div className="flex flex-col sm:flex-row sm:flex-wrap sm:items-center gap-y-5 sm:gap-y-4 sm:gap-x-12">
-                <Link
-                  to="/contact"
+                <a
+                  href="https://www.10811sanjose.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center justify-center border border-border/60 px-7 py-3.5 sm:py-3 text-foreground/80 hover:bg-gold hover:text-white hover:border-gold transition-all duration-300 ease-out w-full sm:w-auto text-center"
                   style={{
                     fontSize: "0.6rem",
@@ -915,8 +924,8 @@ const LandRanch = () => {
                     fontWeight: 500,
                   }}
                 >
-                  REQUEST INFORMATION
-                </Link>
+                  VIEW PROPERTY WEBSITE
+                </a>
                 <div className="w-full sm:w-auto flex justify-center sm:justify-start">
                   <ConfidentialOMGate />
                 </div>

@@ -13,6 +13,7 @@ import s11thStreet from "@/assets/commercial-s-11th-street.webp";
 
 const Footer = lazy(() => import("@/components/Footer"));
 import LandCrossLinks from "@/components/LandCrossLinks";
+import CommercialListingCard from "@/components/commercial/CommercialListingCard";
 
 
 const labelStyle = {

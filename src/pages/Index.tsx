@@ -298,7 +298,7 @@ const SearchSection = () => {
             Search {"\n"}
           </h2>
           <p className="text-sm md:text-base text-muted-foreground mb-5 font-light max-w-md mx-auto">
-            Homes, estates, ranch land, and investment property across Austin and the surrounding Hill Country.
+            Homes, estates, ranch land, and investment property across Austin and the surrounding Hill Country.&nbsp;
           </p>
           {isMobile ? (
             <a

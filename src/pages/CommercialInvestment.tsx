@@ -4,7 +4,7 @@ import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createFAQSchema, createBreadcrumbSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
 import heroArchitecture from "@/assets/hero-architecture.jpg";
-import expCommercialLogo from "@/assets/exp-commercial-logo-horizontal-white.webp";
+
 import gillisStreet from "@/assets/commercial-gillis-street.jpg";
 import sanJoseAve from "@/assets/commercial-san-jose-ave.jpg";
 import bremserAve from "@/assets/commercial-bremser-ave.jpg";

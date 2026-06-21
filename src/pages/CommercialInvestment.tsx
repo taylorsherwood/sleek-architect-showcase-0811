@@ -141,7 +141,7 @@ const CommercialHeroVideo = () => {
 
 const CommercialInvestment = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="commercial-theme min-h-screen bg-background">
       <SEOHead
         title="Austin Commercial Investment | Echelon Property Group"
         description="Austin commercial and investment real estate: multifamily, retail, office, land, and income-producing properties. Expert advisory from Echelon Property Group."
@@ -155,33 +155,63 @@ const CommercialInvestment = () => {
       ])} />
       <Navigation />
 
+      {/* ── PRACTICE-AREA IDENTIFIER ── */}
+      <div className="container mx-auto px-6 pt-28 md:pt-24" aria-hidden="false">
+        <div className="flex items-center gap-3 max-w-6xl mx-auto">
+          <span className="h-px w-8" style={{ background: "#9C7B4A" }} />
+          <span
+            style={{
+              fontFamily: '"Jost", sans-serif',
+              fontSize: "0.58rem",
+              letterSpacing: "0.42em",
+              textTransform: "uppercase",
+              fontWeight: 500,
+              color: "#9C7B4A",
+            }}
+          >
+            Echelon Commercial &amp; Investment
+          </span>
+        </div>
+      </div>
+
       {/* Hero */}
-      <section className="relative pt-32 pb-12">
+      <section className="relative pt-12 pb-12">
         <div className="absolute inset-0">
           <CommercialHeroVideo />
-          <div className="absolute inset-0 md:hidden" style={{ background: 'linear-gradient(to bottom, rgba(10,14,25,0.35) 0%, rgba(10,14,25,0.45) 45%, rgba(10,14,25,0.70) 100%)' }} />
-          <div className="absolute inset-0 hidden md:block" style={{ background: 'linear-gradient(to right, rgba(10,14,25,0.7) 0%, rgba(10,14,25,0.45) 40%, rgba(10,14,25,0.15) 65%, transparent 85%)' }} />
+          <div className="absolute inset-0 md:hidden" style={{ background: 'linear-gradient(to bottom, rgba(20,23,27,0.45) 0%, rgba(20,23,27,0.60) 45%, rgba(20,23,27,0.82) 100%)' }} />
+          <div className="absolute inset-0 hidden md:block" style={{ background: 'linear-gradient(to right, rgba(20,23,27,0.78) 0%, rgba(20,23,27,0.55) 38%, rgba(20,23,27,0.22) 65%, transparent 88%)' }} />
         </div>
         <div className="relative container mx-auto px-6">
-          <div className="max-w-xl py-16">
-            <p className="text-minimal text-gold mb-4 font-extrabold">COMMERCIAL & INVESTMENT</p>
-            <h1 className="text-3xl sm:text-3xl sm:text-5xl md:text-7xl font-display font-normal text-warm-cream mb-5 sm:mb-8">
-              Austin Commercial & Investment Real Estate
+          <div className="max-w-2xl py-20 md:py-28">
+            <div className="flex items-center gap-3 mb-6">
+              <span className="h-px w-6" style={{ background: "#B5946A" }} />
+              <p style={{ ...labelStyle, color: "#F2EFE9", letterSpacing: "0.38em", textShadow: "0 1px 2px rgba(0,0,0,0.45)" }} className="font-medium">
+                PRIVATE INVESTMENT MEMORANDUM
+              </p>
+            </div>
+            <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-normal text-warm-cream mb-6 sm:mb-8 leading-[1.06]" style={{ textShadow: "0 2px 24px rgba(0,0,0,0.45)" }}>
+              Austin Commercial<br className="hidden md:block" /> &amp; Investment Real Estate
             </h1>
-            <p className="text-xl text-warm-cream/80 max-w-3xl">
-              Multifamily, retail, office, land development, and income-producing investment
-              opportunities across the Austin metro.
+            <p className="text-base md:text-xl text-warm-cream/85 max-w-2xl leading-relaxed" style={{ textShadow: "0 1px 2px rgba(0,0,0,0.35)" }}>
+              Institutional-grade advisory for multifamily, retail, office, land development, and
+              income-producing assets across the Austin metro.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <Link
                 to="/contact"
-                className="inline-block text-minimal bg-primary text-primary-foreground hover:bg-gold hover:text-primary-foreground px-8 py-4 transition-colors duration-300"
+                className="inline-block text-minimal px-8 py-4 transition-colors duration-300"
+                style={{ background: "#9C7B4A", color: "#FAF8F4" }}
+                onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = "#1F2328"; }}
+                onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = "#9C7B4A"; }}
               >
                 DISCUSS AN ACQUISITION
               </Link>
               <Link
                 to="/austin-multifamily-report-2026"
-                className="inline-block text-minimal border border-primary-foreground/50 text-primary-foreground hover:bg-gold hover:text-white hover:border-gold px-8 py-4 transition-colors duration-300"
+                className="inline-block text-minimal border px-8 py-4 transition-colors duration-300"
+                style={{ borderColor: "rgba(242,239,233,0.55)", color: "#FAF8F4" }}
+                onMouseEnter={(e) => { const el = e.currentTarget as HTMLElement; el.style.background = "#9C7B4A"; el.style.borderColor = "#9C7B4A"; }}
+                onMouseLeave={(e) => { const el = e.currentTarget as HTMLElement; el.style.background = "transparent"; el.style.borderColor = "rgba(242,239,233,0.55)"; }}
               >
                 2026 MULTI FAMILY REPORT
               </Link>
@@ -200,6 +230,7 @@ const CommercialInvestment = () => {
           </div>
         </div>
       </section>
+
 
       {/* ── Current Commercial Listings ── */}
       <section className="py-16 md:py-24 bg-background border-t border-border">

@@ -528,37 +528,55 @@ const CommercialInvestment = () => {
               ].map((listing, index) => (
                 <div
                   key={index}
-                  className="cm-mem-card p-10"
+                  className="cm-mem-card p-10 md:p-12 flex flex-col"
                 >
-                  <div className="flex items-center justify-between mb-6">
-                    <span className="bg-secondary px-3 py-1 text-muted-foreground" style={labelStyle}>{listing.type}</span>
-                    <span className="text-lg font-light text-foreground ">{listing.price}</span>
+                  <div className="flex items-center justify-between mb-8">
+                    <span
+                      className="px-3 py-1.5"
+                      style={{ ...labelStyle, color: "#B5946A", border: "1px solid rgba(156,123,74,0.45)", letterSpacing: "0.34em" }}
+                    >
+                      {listing.type}
+                    </span>
+                    <span style={labelStyle} className="text-muted-foreground">CONFIDENTIAL</span>
                   </div>
-                  <h3 className="text-xl font-display font-normal text-foreground mb-2">
+                  <h3 className="text-2xl md:text-[1.65rem] font-display font-light text-foreground mb-1.5 leading-snug">
                     {listing.name}
                   </h3>
-                  <p className="text-muted-foreground mb-6">{listing.location}</p>
-                  <div className="grid grid-cols-2 gap-3 mb-4">
+                  <p className="text-muted-foreground mb-8 text-sm">{listing.location}</p>
+
+                  <div className="cm-brass-rule mb-7" />
+
+                  <div className="grid grid-cols-3 gap-4 md:gap-6 mb-8">
                     <div>
-                      <p className="text-muted-foreground mb-1" style={labelStyle}>CAP RATE</p>
-                      <p className="text-foreground font-medium text-sm ">{listing.capRate}</p>
+                      <p className="text-muted-foreground mb-2" style={labelStyle}>Price</p>
+                      <p className="text-foreground font-display font-light text-lg md:text-xl tracking-tight">{listing.price}</p>
                     </div>
                     <div>
-                      <p className="text-muted-foreground mb-1" style={labelStyle}>SIZE</p>
-                      <p className="text-foreground font-medium text-sm ">{listing.sqft}</p>
+                      <p className="text-muted-foreground mb-2" style={labelStyle}>Cap Rate</p>
+                      <p className="text-foreground font-display font-light text-lg md:text-xl tracking-tight">{listing.capRate}</p>
+                    </div>
+                    <div>
+                      <p className="text-muted-foreground mb-2" style={labelStyle}>Size</p>
+                      <p className="text-foreground font-display font-light text-lg md:text-xl tracking-tight">{listing.sqft}</p>
                     </div>
                   </div>
-                  <p className="text-sm text-muted-foreground italic">{listing.highlights}</p>
-                  <div className="mt-6 pt-6 border-t border-border">
+
+                  <p className="text-sm text-muted-foreground leading-relaxed mb-8 flex-grow">
+                    <span style={{ ...labelStyle, color: "#B5946A" }} className="block mb-2">Investment Thesis</span>
+                    {listing.highlights}
+                  </p>
+                  <div className="pt-6 border-t border-border">
                     <Link
                       to="/contact"
-                      className="text-gold hover:text-gold transition-colors text-xs tracking-[0.15em] uppercase"
+                      className="text-gold hover:text-gold transition-colors text-xs tracking-[0.22em] uppercase inline-flex items-center gap-2 group/link"
                     >
-                      REQUEST DETAILS →
+                      Request Offering Memorandum
+                      <span className="transition-transform duration-300 group-hover/link:translate-x-1">→</span>
                     </Link>
                   </div>
                 </div>
               ))}
+
             </div>
           </div>
         </div>

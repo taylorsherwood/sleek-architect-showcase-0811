@@ -1296,3 +1296,50 @@ body.hcs-immersive nav.fixed {
 /* Bone surface helper */
 .land-ranch-theme .lr-surface-bone { background-color: var(--lr-bone); }
 .land-ranch-theme .lr-surface-olive { background-color: var(--lr-olive); color: #F3EEE4; }
+
+/* ============================================================
+   Commercial & Investment — scoped retone (Graphite / Brass / Stone)
+   Institutional, private-investment-memorandum mood.
+   ============================================================ */
+.commercial-theme {
+  --cm-graphite: #1F2328;
+  --cm-graphite-soft: #2A2F36;
+  --cm-graphite-deep: #14171B;
+  --cm-brass: #9C7B4A;
+  --cm-brass-soft: #B5946A;
+  --cm-stone: #F2EFE9;
+  --cm-bone: #FAF8F4;
+  --cm-line: #E4DFD6;
+}
+.commercial-theme .text-gold { color: var(--cm-brass) !important; }
+.commercial-theme .bg-gold { background-color: var(--cm-brass) !important; }
+.commercial-theme .border-gold { border-color: var(--cm-brass) !important; }
+.commercial-theme .hover\:text-gold:hover { color: var(--cm-brass) !important; }
+.commercial-theme .hover\:bg-gold:hover { background-color: var(--cm-brass) !important; }
+.commercial-theme .hover\:border-gold:hover { border-color: var(--cm-brass) !important; }
+.commercial-theme .group:hover .group-hover\:text-gold { color: var(--cm-brass) !important; }
+.commercial-theme .group:hover .group-hover\:bg-gold { background-color: var(--cm-brass) !important; }
+.commercial-theme .group:hover .group-hover\:border-gold { border-color: var(--cm-brass) !important; }
+.commercial-theme .gold-underline-hover::after { background-color: var(--cm-brass) !important; }
+.commercial-theme .hover\:bg-\[hsl\(var\(--gold-deep\)\)\]:hover { background-color: var(--cm-graphite) !important; }
+
+.commercial-theme .cm-surface-stone { background-color: var(--cm-stone); }
+.commercial-theme .cm-surface-bone { background-color: var(--cm-bone); }
+.commercial-theme .cm-surface-graphite { background-color: var(--cm-graphite); color: var(--cm-stone); }
+.commercial-theme .cm-surface-graphite h2,
+.commercial-theme .cm-surface-graphite h3 { color: var(--cm-bone); }
+.commercial-theme .cm-surface-graphite .text-foreground { color: var(--cm-bone) !important; }
+.commercial-theme .cm-surface-graphite .text-muted-foreground { color: rgba(242,239,233,0.62) !important; }
+.commercial-theme .cm-surface-graphite .border-border,
+.commercial-theme .cm-surface-graphite .border-b { border-color: rgba(242,239,233,0.12) !important; }
+.commercial-theme .cm-surface-graphite .bg-card { background-color: rgba(242,239,233,0.04) !important; }
+.commercial-theme .cm-surface-graphite .bg-secondary { background-color: rgba(242,239,233,0.08) !important; color: var(--cm-stone) !important; }
+
+/* Card refinements scoped to commercial theme */
+.commercial-theme .cm-listing-card { position: relative; transition: border-color 500ms ease, transform 500ms ease, box-shadow 500ms ease; }
+.commercial-theme .cm-listing-card::before {
+  content: ""; position: absolute; top: 0; left: 0; height: 2px; width: 0;
+  background: var(--cm-brass); transition: width 600ms ease;
+}
+.commercial-theme .cm-listing-card:hover::before { width: 100%; }
+.commercial-theme .cm-listing-card:hover { box-shadow: 0 14px 40px -24px rgba(31,35,40,0.35); }

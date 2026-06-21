@@ -1298,19 +1298,21 @@ body.hcs-immersive nav.fixed {
 .land-ranch-theme .lr-surface-olive { background-color: var(--lr-olive); color: #F3EEE4; }
 
 /* ============================================================
-   Commercial & Investment — scoped retone (Graphite / Brass / Stone)
-   Institutional, private-investment-memorandum mood.
+   Commercial & Investment — scoped retone
+   Mirrors the 4314 Gillis offering memorandum system:
+   dark graphite as the dominant surface, brass accent,
+   elevated white "card-light" + "surface-light" annual-report sections.
    ============================================================ */
 .commercial-theme {
-  --cm-graphite: #1F2328;
-  --cm-graphite-soft: #2A2F36;
+  --cm-graphite: #1B1E24;
+  --cm-graphite-soft: #252932;
   --cm-graphite-deep: #14171B;
-  --cm-brass: #9C7B4A;
-  --cm-brass-soft: #B5946A;
-  --cm-stone: #F2EFE9;
-  --cm-bone: #FAF8F4;
-  --cm-line: #E4DFD6;
+  --cm-brass: #A68A5B;
+  --cm-brass-soft: #C2A472;
+  --cm-stone: #F7F5F2;
+  --cm-bone: #FFFFFF;
 }
+
 .commercial-theme .text-gold { color: var(--cm-brass) !important; }
 .commercial-theme .bg-gold { background-color: var(--cm-brass) !important; }
 .commercial-theme .border-gold { border-color: var(--cm-brass) !important; }
@@ -1323,41 +1325,123 @@ body.hcs-immersive nav.fixed {
 .commercial-theme .gold-underline-hover::after { background-color: var(--cm-brass) !important; }
 .commercial-theme .hover\:bg-\[hsl\(var\(--gold-deep\)\)\]:hover { background-color: var(--cm-graphite) !important; }
 
+/* ── Surfaces ── */
 .commercial-theme .cm-surface-stone { background-color: var(--cm-stone); }
-.commercial-theme .cm-surface-bone { background-color: var(--cm-bone); }
+
+/* Dark dominant surface (matches Gillis bg) */
 .commercial-theme .cm-surface-graphite,
 .commercial-theme .cm-surface-charcoal { color: var(--cm-stone); }
 .commercial-theme .cm-surface-graphite { background-color: var(--cm-graphite); }
 .commercial-theme .cm-surface-charcoal { background-color: var(--cm-graphite-deep); }
+
 .commercial-theme .cm-surface-graphite h2,
 .commercial-theme .cm-surface-graphite h3,
 .commercial-theme .cm-surface-charcoal h2,
-.commercial-theme .cm-surface-charcoal h3 { color: var(--cm-bone); }
+.commercial-theme .cm-surface-charcoal h3 { color: var(--cm-stone); }
 .commercial-theme .cm-surface-graphite .text-foreground,
-.commercial-theme .cm-surface-charcoal .text-foreground { color: var(--cm-bone) !important; }
+.commercial-theme .cm-surface-charcoal .text-foreground { color: var(--cm-stone) !important; }
 .commercial-theme .cm-surface-graphite .text-muted-foreground,
-.commercial-theme .cm-surface-charcoal .text-muted-foreground { color: rgba(242,239,233,0.62) !important; }
+.commercial-theme .cm-surface-charcoal .text-muted-foreground { color: rgba(247,245,242,0.65) !important; }
 .commercial-theme .cm-surface-graphite .border-border,
 .commercial-theme .cm-surface-graphite .border-b,
+.commercial-theme .cm-surface-graphite .border-t,
 .commercial-theme .cm-surface-charcoal .border-border,
-.commercial-theme .cm-surface-charcoal .border-b { border-color: rgba(156,123,74,0.28) !important; }
+.commercial-theme .cm-surface-charcoal .border-b,
+.commercial-theme .cm-surface-charcoal .border-t { border-color: rgba(255,255,255,0.10) !important; }
 .commercial-theme .cm-surface-graphite .bg-card,
-.commercial-theme .cm-surface-charcoal .bg-card { background-color: rgba(242,239,233,0.03) !important; }
+.commercial-theme .cm-surface-charcoal .bg-card { background-color: rgba(255,255,255,0.025) !important; }
 .commercial-theme .cm-surface-graphite .bg-secondary,
-.commercial-theme .cm-surface-charcoal .bg-secondary { background-color: rgba(156,123,74,0.14) !important; color: var(--cm-stone) !important; }
+.commercial-theme .cm-surface-charcoal .bg-secondary { background-color: rgba(166,138,91,0.14) !important; color: var(--cm-stone) !important; }
 .commercial-theme .cm-surface-graphite .bg-primary,
-.commercial-theme .cm-surface-charcoal .bg-primary { background-color: var(--cm-brass) !important; color: var(--cm-bone) !important; }
+.commercial-theme .cm-surface-charcoal .bg-primary { background-color: var(--cm-brass) !important; color: var(--cm-graphite) !important; }
+.commercial-theme .cm-surface-graphite .bg-background,
+.commercial-theme .cm-surface-charcoal .bg-background { background-color: transparent !important; }
 
-/* Card refinements scoped to commercial theme */
-.commercial-theme .cm-listing-card { position: relative; background-color: var(--cm-bone); transition: border-color 500ms ease, transform 500ms ease, box-shadow 500ms ease; }
+/* White annual-report surface */
+.commercial-theme .cm-surface-light { background-color: #FFFFFF; color: var(--cm-graphite); }
+.commercial-theme .cm-surface-light h2,
+.commercial-theme .cm-surface-light h3 { color: var(--cm-graphite); }
+.commercial-theme .cm-surface-light .text-foreground { color: var(--cm-graphite) !important; }
+.commercial-theme .cm-surface-light .text-muted-foreground { color: rgba(27,30,36,0.62) !important; }
+.commercial-theme .cm-surface-light .border-border,
+.commercial-theme .cm-surface-light .border-b,
+.commercial-theme .cm-surface-light .border-t { border-color: rgba(27,30,36,0.10) !important; }
+.commercial-theme .cm-surface-light .bg-card { background-color: #FFFFFF !important; }
+.commercial-theme .cm-surface-light .bg-primary { background-color: var(--cm-graphite) !important; color: var(--cm-stone) !important; }
+.commercial-theme .cm-surface-light .bg-secondary { background-color: rgba(27,30,36,0.04) !important; color: var(--cm-graphite) !important; }
+
+/* Inventory listing cards = elevated white memorandum on dark */
+.commercial-theme .cm-listing-card {
+  position: relative;
+  background-color: #FFFFFF !important;
+  color: var(--cm-graphite);
+  border: 1px solid rgba(27,30,36,0.06) !important;
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.04),
+    0 30px 70px -32px rgba(0,0,0,0.55);
+  transition: transform 500ms ease, box-shadow 500ms ease;
+}
 .commercial-theme .cm-listing-card::before {
   content: ""; position: absolute; top: 0; left: 0; height: 2px; width: 0;
   background: var(--cm-brass); transition: width 600ms ease; z-index: 2;
 }
 .commercial-theme .cm-listing-card:hover::before { width: 100%; }
-.commercial-theme .cm-listing-card:hover { box-shadow: 0 18px 50px -28px rgba(20,23,27,0.45); }
+.commercial-theme .cm-listing-card:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.04),
+    0 40px 80px -28px rgba(0,0,0,0.65);
+}
+.commercial-theme .cm-listing-card .text-foreground { color: var(--cm-graphite) !important; }
+.commercial-theme .cm-listing-card .text-muted-foreground { color: rgba(27,30,36,0.62) !important; }
+.commercial-theme .cm-listing-card .border-border,
+.commercial-theme .cm-listing-card .border-border\/50,
+.commercial-theme .cm-listing-card .border-border\/60 { border-color: rgba(27,30,36,0.12) !important; }
 
-/* Memorandum-style price/asset chips inside dark sections */
-.commercial-theme .cm-mem-card { background-color: rgba(242,239,233,0.02); border: 1px solid rgba(156,123,74,0.22); transition: border-color 500ms ease, background-color 500ms ease; }
-.commercial-theme .cm-mem-card:hover { border-color: var(--cm-brass); background-color: rgba(242,239,233,0.04); }
-.commercial-theme .cm-brass-rule { height: 1px; background: linear-gradient(to right, rgba(156,123,74,0.55), rgba(156,123,74,0)); }
+/* Memorandum panel (white card on dark section) */
+.commercial-theme .cm-mem-card {
+  background-color: #FFFFFF;
+  color: var(--cm-graphite);
+  border: 1px solid rgba(27,30,36,0.06);
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.04),
+    0 30px 70px -32px rgba(0,0,0,0.55);
+  transition: transform 500ms ease, box-shadow 500ms ease;
+  position: relative;
+}
+.commercial-theme .cm-mem-card::before {
+  content: ""; position: absolute; top: 0; left: 0; height: 2px; width: 0;
+  background: var(--cm-brass); transition: width 600ms ease; z-index: 2;
+}
+.commercial-theme .cm-mem-card:hover::before { width: 100%; }
+.commercial-theme .cm-mem-card:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.04),
+    0 40px 80px -28px rgba(0,0,0,0.65);
+}
+.commercial-theme .cm-mem-card h3,
+.commercial-theme .cm-mem-card .text-foreground { color: var(--cm-graphite) !important; }
+.commercial-theme .cm-mem-card .text-muted-foreground { color: rgba(27,30,36,0.62) !important; }
+.commercial-theme .cm-mem-card .border-border,
+.commercial-theme .cm-mem-card .border-b,
+.commercial-theme .cm-mem-card .border-t { border-color: rgba(27,30,36,0.10) !important; }
+
+.commercial-theme .cm-brass-rule {
+  height: 1px;
+  background: var(--cm-brass);
+  opacity: 0.6;
+}
+
+.commercial-theme .cm-kicker {
+  font-family: "Jost", sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: var(--cm-brass);
+}
+
+.commercial-theme .cm-hero-glow {
+  text-shadow: 0 1px 20px rgba(27,30,36,0.55), 0 1px 3px rgba(27,30,36,0.35);
+}

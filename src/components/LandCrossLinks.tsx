@@ -39,7 +39,7 @@ interface LandCrossLinksProps {
   /** Pick which cards to render. Defaults to both. */
   cards?: Array<"ranch" | "development">;
   /** Background variant. */
-  variant?: "ivory" | "transparent";
+  variant?: "ivory" | "solid" | "transparent";
   className?: string;
 }
 
@@ -51,7 +51,7 @@ const LandCrossLinks = ({
   variant = "transparent",
   className = "",
 }: LandCrossLinksProps) => {
-  const bg = variant === "ivory" ? "bg-secondary/40" : "";
+  const bg = variant === "ivory" ? "bg-secondary/40" : variant === "solid" ? "bg-secondary" : "";
   return (
     <section className={`py-14 md:py-20 ${bg} ${className}`}>
       <div className="container mx-auto px-6">

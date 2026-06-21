@@ -763,7 +763,7 @@ const CommercialInvestment = () => {
 
 
       <LandCrossLinks
-        variant="ivory"
+        variant="solid"
         cards={["development"]}
         eyebrow="ADJACENT ADVISORY"
         heading="Development Sites & Strategic Acreage"

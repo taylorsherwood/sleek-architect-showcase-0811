@@ -156,7 +156,7 @@ const CommercialInvestment = () => {
       <Navigation />
 
       {/* Hero — Gillis OM treatment: full-bleed image, kicker over hairline, brass-outline CTAs */}
-      <section className="relative w-full min-h-[640px] md:min-h-[760px] lg:min-h-[820px] overflow-hidden flex items-end">
+      <section className="relative w-full min-h-[600px] md:min-h-[680px] lg:min-h-[760px] overflow-hidden flex items-end pt-24">
         <div className="absolute inset-0">
           <CommercialHeroVideo />
           <div
@@ -168,23 +168,12 @@ const CommercialInvestment = () => {
           />
         </div>
 
-        {/* Practice-area identifier — sits inside hero, well below fixed nav */}
-        <div className="absolute top-0 inset-x-0 z-10 pt-28 md:pt-32">
-          <div className="container mx-auto px-6">
-            <div className="flex items-center gap-3 max-w-6xl mx-auto">
-              <span className="h-px w-8" style={{ background: "#A68A5B" }} />
-              <span className="cm-kicker cm-hero-glow" style={{ color: "#A68A5B" }}>
-                Echelon Commercial &amp; Investment
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <div className="relative z-10 w-full container mx-auto px-6 pb-16 md:pb-24">
+        <div className="relative z-10 w-full container mx-auto px-6 pb-16 md:pb-20">
           <div className="max-w-4xl">
             <p className="cm-kicker cm-hero-glow mb-6" style={{ color: "rgba(247,245,242,0.85)" }}>
-              Confidential Offering Memorandum · Austin Metro
+              Confidential Offering Memorandum · Echelon Commercial &amp; Investment
             </p>
+
             <h1
               className="font-display text-warm-cream uppercase leading-[1.05] mb-6 cm-hero-glow"
               style={{

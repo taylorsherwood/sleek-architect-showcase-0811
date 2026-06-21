@@ -478,7 +478,9 @@ const LandDevelopment = () => {
                     fontSize: "clamp(1.5rem, 2.6vw, 2.1rem)",
                   }}
                 >
-                  10811 San Jose Ave
+                  <a href="https://www.10811sanjose.com" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors duration-300">
+                    10811 San Jose Ave
+                  </a>
                 </h3>
                 <p
                   className="text-foreground/72 leading-[1.75] mb-8"

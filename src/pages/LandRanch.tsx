@@ -850,7 +850,9 @@ const LandRanch = () => {
               FEATURED LAND LISTING
             </p>
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-normal text-architectural leading-[1.1] mb-5">
-              10811 San Jose Ave
+              <a href="https://www.10811sanjose.com" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors duration-300">
+                10811 San Jose Ave
+              </a>
             </h2>
             <p className="text-muted-foreground leading-relaxed">
               A rare 3.06-acre redevelopment parcel in the high-growth Del Valle corridor

@@ -141,7 +141,7 @@ const CommercialHeroVideo = () => {
 
 const CommercialInvestment = () => {
   return (
-    <div className="commercial-theme min-h-screen bg-background">
+    <div className="commercial-theme min-h-screen" style={{ backgroundColor: "#1B1E24" }}>
       <SEOHead
         title="Austin Commercial Investment | Echelon Property Group"
         description="Austin commercial and investment real estate: multifamily, retail, office, land, and income-producing properties. Expert advisory from Echelon Property Group."
@@ -155,70 +155,94 @@ const CommercialInvestment = () => {
       ])} />
       <Navigation />
 
-      {/* ── PRACTICE-AREA IDENTIFIER ── */}
-      <div className="container mx-auto px-6 pt-28 md:pt-24" aria-hidden="false">
-        <div className="flex items-center gap-3 max-w-6xl mx-auto">
-          <span className="h-px w-8" style={{ background: "#9C7B4A" }} />
-          <span
-            style={{
-              fontFamily: '"Jost", sans-serif',
-              fontSize: "0.58rem",
-              letterSpacing: "0.42em",
-              textTransform: "uppercase",
-              fontWeight: 500,
-              color: "#9C7B4A",
-            }}
-          >
-            Echelon Commercial &amp; Investment
-          </span>
-        </div>
-      </div>
-
-      {/* Hero */}
-      <section className="relative pt-12 pb-12">
+      {/* Hero — Gillis OM treatment: full-bleed image, kicker over hairline, brass-outline CTAs */}
+      <section className="relative w-full min-h-[640px] md:min-h-[760px] lg:min-h-[820px] overflow-hidden flex items-end">
         <div className="absolute inset-0">
           <CommercialHeroVideo />
-          <div className="absolute inset-0 md:hidden" style={{ background: 'linear-gradient(to bottom, rgba(20,23,27,0.45) 0%, rgba(20,23,27,0.60) 45%, rgba(20,23,27,0.82) 100%)' }} />
-          <div className="absolute inset-0 hidden md:block" style={{ background: 'linear-gradient(to right, rgba(20,23,27,0.78) 0%, rgba(20,23,27,0.55) 38%, rgba(20,23,27,0.22) 65%, transparent 88%)' }} />
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                "linear-gradient(to bottom, rgba(27,30,36,0.55) 0%, rgba(27,30,36,0.30) 30%, rgba(27,30,36,0.55) 70%, rgba(27,30,36,0.88) 100%)",
+            }}
+          />
         </div>
-        <div className="relative container mx-auto px-6">
-          <div className="max-w-2xl py-20 md:py-28">
-            <div className="flex items-center gap-3 mb-6">
-              <span className="h-px w-6" style={{ background: "#B5946A" }} />
-              <p style={{ ...labelStyle, color: "#F2EFE9", letterSpacing: "0.38em", textShadow: "0 1px 2px rgba(0,0,0,0.45)" }} className="font-medium">
-                PRIVATE INVESTMENT MEMORANDUM
-              </p>
+
+        {/* Practice-area identifier — sits inside hero, well below fixed nav */}
+        <div className="absolute top-0 inset-x-0 z-10 pt-28 md:pt-32">
+          <div className="container mx-auto px-6">
+            <div className="flex items-center gap-3 max-w-6xl mx-auto">
+              <span className="h-px w-8" style={{ background: "#A68A5B" }} />
+              <span className="cm-kicker cm-hero-glow" style={{ color: "#A68A5B" }}>
+                Echelon Commercial &amp; Investment
+              </span>
             </div>
-            <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-normal text-warm-cream mb-6 sm:mb-8 leading-[1.06]" style={{ textShadow: "0 2px 24px rgba(0,0,0,0.45)" }}>
+          </div>
+        </div>
+
+        <div className="relative z-10 w-full container mx-auto px-6 pb-16 md:pb-24">
+          <div className="max-w-4xl">
+            <p className="cm-kicker cm-hero-glow mb-6" style={{ color: "rgba(247,245,242,0.85)" }}>
+              Confidential Offering Memorandum · Austin Metro
+            </p>
+            <h1
+              className="font-display text-warm-cream uppercase leading-[1.05] mb-6 cm-hero-glow"
+              style={{
+                fontSize: "clamp(2rem, 5.5vw, 4.2rem)",
+                letterSpacing: "0.03em",
+                fontWeight: 500,
+              }}
+            >
               Austin Commercial<br className="hidden md:block" /> &amp; Investment Real Estate
             </h1>
-            <p className="text-base md:text-xl text-warm-cream/85 max-w-2xl leading-relaxed" style={{ textShadow: "0 1px 2px rgba(0,0,0,0.35)" }}>
-              Institutional-grade advisory for multifamily, retail, office, land development, and
-              income-producing assets across the Austin metro.
-            </p>
-            <div className="mt-10 flex flex-wrap gap-4">
+            <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-warm-cream/70 text-[11px] md:text-xs tracking-[0.22em] uppercase cm-hero-glow mb-10">
+              <span>Multifamily</span>
+              <span style={{ color: "#A68A5B" }}>·</span>
+              <span>Development Land</span>
+              <span style={{ color: "#A68A5B" }}>·</span>
+              <span>Income-Producing Assets</span>
+              <span style={{ color: "#A68A5B" }}>·</span>
+              <span>Off-Market Pipeline</span>
+            </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-8 border-t border-white/15 pt-8 max-w-3xl mb-12">
+              {[
+                { label: "Assets Under Advisory", value: "$85M+" },
+                { label: "Active Submarkets", value: "12+" },
+                { label: "Avg Cap (Multifamily)", value: "5.2%" },
+                { label: "Investor Clients", value: "50+" },
+              ].map((s) => (
+                <div key={s.label}>
+                  <p className="cm-kicker cm-hero-glow mb-2" style={{ color: "rgba(247,245,242,0.6)" }}>{s.label}</p>
+                  <p className="font-display text-warm-cream cm-hero-glow" style={{ fontSize: "clamp(1.35rem, 2.4vw, 1.95rem)", letterSpacing: "0.03em" }}>{s.value}</p>
+                </div>
+              ))}
+            </div>
+
+            <div className="flex flex-wrap items-center gap-4 cm-hero-glow">
               <Link
                 to="/contact"
-                className="inline-block text-minimal px-8 py-4 transition-colors duration-300"
-                style={{ background: "#9C7B4A", color: "#FAF8F4" }}
-                onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = "#1F2328"; }}
-                onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = "#9C7B4A"; }}
+                className="cm-kicker text-warm-cream px-8 py-4 transition-colors duration-300"
+                style={{ background: "#252932", border: "1px solid #A68A5B" }}
+                onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = "rgba(166,138,91,0.12)"; }}
+                onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = "#252932"; }}
               >
-                DISCUSS AN ACQUISITION
+                Discuss an Acquisition
               </Link>
               <Link
                 to="/austin-multifamily-report-2026"
-                className="inline-block text-minimal border px-8 py-4 transition-colors duration-300"
-                style={{ borderColor: "rgba(242,239,233,0.55)", color: "#FAF8F4" }}
-                onMouseEnter={(e) => { const el = e.currentTarget as HTMLElement; el.style.background = "#9C7B4A"; el.style.borderColor = "#9C7B4A"; }}
-                onMouseLeave={(e) => { const el = e.currentTarget as HTMLElement; el.style.background = "transparent"; el.style.borderColor = "rgba(242,239,233,0.55)"; }}
+                className="cm-kicker text-warm-cream/90 px-8 py-4 transition-colors duration-300"
+                style={{ border: "1px solid rgba(255,255,255,0.25)" }}
+                onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.borderColor = "rgba(255,255,255,0.6)"; }}
+                onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.borderColor = "rgba(255,255,255,0.25)"; }}
               >
-                2026 MULTI FAMILY REPORT
+                2026 Multifamily Report
               </Link>
             </div>
+
             <div className="mt-12 inline-flex flex-col items-start">
-              <span className="text-[11px] uppercase tracking-[0.2em] text-white/60 mb-2.5 font-normal">Brokered with</span>
-              <a href="https://www.expcommercial.com" target="_blank" rel="noopener noreferrer nofollow" className="inline-flex items-center px-6 py-3 rounded-xl bg-white/[0.06] backdrop-blur-sm border border-white/[0.08] shadow-[0_4px_20px_rgba(0,0,0,0.25)] hover:bg-white/[0.1] transition-colors duration-300">
+              <span className="cm-kicker mb-2.5" style={{ color: "rgba(247,245,242,0.55)" }}>Brokered with</span>
+              <a href="https://www.expcommercial.com" target="_blank" rel="noopener noreferrer nofollow" className="inline-flex items-center px-6 py-3 bg-white/[0.06] backdrop-blur-sm border border-white/[0.08] hover:bg-white/[0.1] transition-colors duration-300">
                 <img
                   src={expCommercialLogo}
                   alt="eXp Commercial"
@@ -230,6 +254,8 @@ const CommercialInvestment = () => {
           </div>
         </div>
       </section>
+
+
 
 
       {/* ── Current Commercial Listings ── */}

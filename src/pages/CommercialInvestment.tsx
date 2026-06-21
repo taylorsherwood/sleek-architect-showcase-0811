@@ -612,54 +612,51 @@ const CommercialInvestment = () => {
       <section className="cm-surface-light py-24 md:py-32">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-16 items-center">
-              <div>
-                <p className="text-gold mb-4 font-bold" style={labelStyle}>INVESTMENT SEARCH</p>
-                <h2 className="font-display text-2xl md:text-3xl font-light text-foreground mb-6">
+            <div className="grid md:grid-cols-12 gap-16 items-start">
+              <div className="md:col-span-5">
+                <p className="cm-kicker mb-6" style={{ color: "#A68A5B" }}>Investment Search</p>
+                <h2 className="font-display uppercase leading-[1.1] mb-8" style={{ fontSize: "clamp(1.75rem, 3.2vw, 2.5rem)", letterSpacing: "0.03em", fontWeight: 500 }}>
                   Find Your Next Austin Investment Property
                 </h2>
-                <p className="text-muted-foreground text-sm md:text-[0.925rem] leading-relaxed mb-6">
+                <div className="cm-brass-rule w-12 mb-8" />
+                <p className="text-foreground/80 leading-relaxed mb-8 max-w-prose">
                   Whether you're targeting multifamily acquisitions, NNN retail, value-add office,
                   or development land, our team provides institutional-grade deal sourcing and
                   underwriting for individual and portfolio-level investors.
                 </p>
-                <ul className="space-y-3.5 mb-8">
-                  {[
-                    "Multifamily & apartment complexes",
-                    "Retail & restaurant NNN investments",
-                    "Office & creative workspace",
-                    "Industrial & logistics facilities",
-                    "Development land & entitled parcels",
-                    "Mixed-use & build-to-rent projects"
-                  ].map((item, i) => (
-                    <li key={i} className="flex items-start gap-3">
-                      <span className="w-1.5 h-1.5 rounded-full bg-gold mt-2 shrink-0" />
-                      <span className="text-muted-foreground text-[0.925rem] font-light leading-relaxed">{item}</span>
-                    </li>
-                  ))}
-                </ul>
                 <Link
                   to="/contact"
-                  className="inline-block bg-primary text-primary-foreground hover:bg-gold px-8 py-4 transition-all duration-300 ease-out active:scale-[0.98]"
-                  style={labelStyle}
+                  className="cm-kicker inline-block px-8 py-4 transition-colors duration-300"
+                  style={{ background: "#1B1E24", color: "#F7F5F2", border: "1px solid #A68A5B" }}
+                  onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = "rgba(166,138,91,0.12)"; (e.currentTarget as HTMLElement).style.color = "#1B1E24"; }}
+                  onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = "#1B1E24"; (e.currentTarget as HTMLElement).style.color = "#F7F5F2"; }}
                 >
-                  SHARE YOUR INVESTMENT CRITERIA
+                  Share Your Investment Criteria
                 </Link>
               </div>
-              <div className="space-y-6">
-                {[
-                  { label: "Assets Under Advisory", value: "$85M+" },
-                  { label: "Average Cap Rate (Multifamily)", value: "5.2%" },
-                  { label: "Active Austin Submarkets", value: "12+" },
-                  { label: "Investor Clients Served", value: "50+" }
-                ].map((stat, i) => (
-                  <div key={i} className="border-b border-border pb-6">
-                    <p className="text-muted-foreground mb-2" style={labelStyle}>{stat.label}</p>
-                    <p className="text-3xl md:text-4xl font-light text-foreground ">{stat.value}</p>
-                  </div>
-                ))}
+              <div className="md:col-span-7">
+                <p className="cm-kicker mb-6" style={{ color: "#A68A5B" }}>Asset Classes Underwritten</p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 border-t border-foreground/10">
+                  {[
+                    { t: "Multifamily", b: "5+ doors · value-add and stabilized" },
+                    { t: "Retail & NNN", b: "Single-tenant, strip centers, restaurants" },
+                    { t: "Office & Creative", b: "Class B/B+ in-fill, owner-user" },
+                    { t: "Industrial & Logistics", b: "Flex, warehouse, last-mile" },
+                    { t: "Development Land", b: "Entitled parcels and raw acreage" },
+                    { t: "Mixed-Use & BTR", b: "Vertical and horizontal projects" },
+                  ].map((row, i) => (
+                    <div
+                      key={row.t}
+                      className={`py-7 px-1 sm:px-4 border-b border-foreground/10 ${i % 2 === 0 ? "sm:border-r sm:border-foreground/10" : ""}`}
+                    >
+                      <p className="font-display text-lg md:text-xl tracking-[0.03em] mb-1.5" style={{ fontWeight: 500 }}>{row.t}</p>
+                      <p className="text-sm text-foreground/65 leading-relaxed">{row.b}</p>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
+
           </div>
         </div>
       </section>

@@ -259,7 +259,7 @@ const CommercialInvestment = () => {
 
 
       {/* ── Current Commercial Listings ── */}
-      <section className="cm-surface-stone py-20 md:py-28 border-t border-border">
+      <section className="cm-surface-light py-24 md:py-32">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="mb-16">
@@ -499,7 +499,7 @@ const CommercialInvestment = () => {
       </section>
 
       {/* ── Private Market Opportunities ── */}
-      <section className="cm-surface-charcoal py-24 md:py-32 border-t border-border">
+      <section className="cm-surface-graphite py-24 md:py-32">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
             <div className="mb-16">
@@ -609,7 +609,7 @@ const CommercialInvestment = () => {
       </section>
 
       {/* ── Investment Search ── */}
-      <section className="cm-surface-graphite py-20 md:py-28 border-t border-border">
+      <section className="cm-surface-light py-24 md:py-32">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
             <div className="grid md:grid-cols-2 gap-16 items-center">
@@ -665,7 +665,7 @@ const CommercialInvestment = () => {
       </section>
 
       {/* ── Market Overview + FAQ ── */}
-      <section className="cm-surface-stone py-20 md:py-28 border-t border-border">
+      <section className="cm-surface-graphite py-24 md:py-32">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <p className="text-gold text-center mb-4 font-bold" style={labelStyle}>MARKET OVERVIEW</p>
@@ -741,7 +741,7 @@ const CommercialInvestment = () => {
       </section>
 
       {/* ── FINAL CTA ── */}
-      <section className="cm-surface-charcoal py-20 md:py-28 border-t border-border">
+      <section className="cm-surface-charcoal py-24 md:py-32">
         <div className="container mx-auto px-6 max-w-lg text-center">
           <p className="text-gold mb-4 font-bold" style={labelStyle}>GET STARTED</p>
           <h2 className="font-display text-2xl md:text-3xl font-light text-foreground mb-4">

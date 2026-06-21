@@ -166,7 +166,6 @@ const CommercialListingCard = ({
           {cta.type === "internal" ? (
             <Link
               to={cta.to}
-              onClick={(e) => isExternalWrap && e.preventDefault()}
               className="block w-full text-center py-4 px-6 transition-colors duration-300"
               style={{ ...ctaKicker, color: "#b9a06c", border: "1px solid #b9a06c" }}
               onMouseEnter={(e) => {

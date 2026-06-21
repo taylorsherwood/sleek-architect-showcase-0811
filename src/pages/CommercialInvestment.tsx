@@ -233,7 +233,7 @@ const CommercialInvestment = () => {
 
 
       {/* ── Current Commercial Listings ── */}
-      <section className="cm-surface-bone py-16 md:py-24 border-t border-border">
+      <section className="cm-surface-stone py-20 md:py-28 border-t border-border">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="mb-16">
@@ -473,7 +473,7 @@ const CommercialInvestment = () => {
       </section>
 
       {/* ── Private Market Opportunities ── */}
-      <section className="cm-surface-graphite py-20 md:py-28 border-t border-border">
+      <section className="cm-surface-charcoal py-24 md:py-32 border-t border-border">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
             <div className="mb-16">
@@ -528,7 +528,7 @@ const CommercialInvestment = () => {
               ].map((listing, index) => (
                 <div
                   key={index}
-                  className="border-2 border-border bg-card p-8 hover:border-gold transition-colors duration-500"
+                  className="cm-mem-card p-10"
                 >
                   <div className="flex items-center justify-between mb-6">
                     <span className="bg-secondary px-3 py-1 text-muted-foreground" style={labelStyle}>{listing.type}</span>
@@ -565,7 +565,7 @@ const CommercialInvestment = () => {
       </section>
 
       {/* ── Investment Search ── */}
-      <section className="cm-surface-stone py-20 md:py-28 border-t border-border">
+      <section className="cm-surface-graphite py-20 md:py-28 border-t border-border">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
             <div className="grid md:grid-cols-2 gap-16 items-center">
@@ -621,7 +621,7 @@ const CommercialInvestment = () => {
       </section>
 
       {/* ── Market Overview + FAQ ── */}
-      <section className="cm-surface-bone py-20 md:py-28 border-t border-border">
+      <section className="cm-surface-stone py-20 md:py-28 border-t border-border">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <p className="text-gold text-center mb-4 font-bold" style={labelStyle}>MARKET OVERVIEW</p>
@@ -697,7 +697,7 @@ const CommercialInvestment = () => {
       </section>
 
       {/* ── FINAL CTA ── */}
-      <section className="cm-surface-stone py-20 md:py-28 border-t border-border">
+      <section className="cm-surface-charcoal py-20 md:py-28 border-t border-border">
         <div className="container mx-auto px-6 max-w-lg text-center">
           <p className="text-gold mb-4 font-bold" style={labelStyle}>GET STARTED</p>
           <h2 className="font-display text-2xl md:text-3xl font-light text-foreground mb-4">

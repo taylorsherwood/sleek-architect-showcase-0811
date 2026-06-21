@@ -168,7 +168,7 @@ const CommercialInvestment = () => {
           />
         </div>
 
-        <div className="relative z-10 w-full container mx-auto px-6 pb-16 md:pb-20">
+        <div className="relative z-10 w-full container mx-auto px-6 pb-12 md:pb-16">
           <div className="max-w-4xl">
             <p className="cm-kicker cm-hero-glow mb-6" style={{ color: "rgba(247,245,242,0.85)" }}>
               INVESTOR MEMORANDUM · ECHELON COMMERCIAL &amp; INVESTMENT

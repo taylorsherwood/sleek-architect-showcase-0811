@@ -39,7 +39,7 @@ interface LandCrossLinksProps {
   /** Pick which cards to render. Defaults to both. */
   cards?: Array<"ranch" | "development">;
   /** Background variant. */
-  variant?: "ivory" | "transparent";
+  variant?: "ivory" | "solid" | "transparent";
   className?: string;
 }
 

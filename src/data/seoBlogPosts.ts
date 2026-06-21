@@ -103,7 +103,7 @@ A concentration in one asset type is not a portfolio. It is a bet.
 
 A resilient Austin portfolio distributes capital across [luxury residential](/austin-luxury-homes-for-sale), [multifamily](/austin-multifamily-report-2026), [vacant land](/land), and [value-add assets](/invest), spread across Travis, Williamson, and Hays counties. Each county behaves differently and serves different demand drivers.
 
-Travis County anchors the luxury residential side: [West Austin](/communities/west-lake-hills), the [Lake Austin corridor](/communities/lake-austin), [Barton Creek](/communities/barton-creek), [Tarrytown](/communities/tarrytown), and [Rollingwood](/communities/rollingwood) represent the core of high-end single-family demand. Williamson County, covering Cedar Park, Leander, and Georgetown, has absorbed significant multifamily and master-planned community growth as population pressure moves north. Hays County, including Dripping Springs, Wimberley, Kyle, and Buda, has attracted both residential and land investment as affordability dynamics push buyers outward from the urban core.
+Travis County anchors the luxury residential side: [West Austin](/communities/westlake-hills), the [Lake Austin corridor](/communities/lake-austin), [Barton Creek](/communities/barton-creek), [Tarrytown](/communities/tarrytown), and [Rollingwood](/communities/rollingwood) represent the core of high-end single-family demand. Williamson County, covering Cedar Park, Leander, and Georgetown, has absorbed significant multifamily and master-planned community growth as population pressure moves north. Hays County, including Dripping Springs, Wimberley, Kyle, and Buda, has attracted both residential and land investment as affordability dynamics push buyers outward from the urban core.
 
 Spreading across these three counties and multiple asset types creates independent income and appreciation streams that do not all move in the same direction at the same time. Understanding current [Austin luxury market trends](/austin-luxury-market-report) helps investors anticipate which asset types are positioned for the next cycle.
 
@@ -131,7 +131,7 @@ Austin generates a consistent volume of real estate media coverage, and much of 
 
 Three factors consistently predict long-term appreciation in [Austin submarkets](/best-luxury-neighborhoods-austin): supply constraints, employment proximity, and infrastructure investment.
 
-Supply constraints come in multiple forms. Flood plains and greenbelt adjacency limit developable land in areas like [Barton Creek](/communities/barton-creek) and the [Lake Austin waterfront](/communities/lake-austin). Deed restrictions in established neighborhoods like [West Lake Hills](/communities/west-lake-hills) and [Rollingwood](/communities/rollingwood) prevent the kind of density that dilutes values over time. These physical and legal constraints are durable. They do not disappear when the market softens.
+Supply constraints come in multiple forms. Flood plains and greenbelt adjacency limit developable land in areas like [Barton Creek](/communities/barton-creek) and the [Lake Austin waterfront](/communities/lake-austin). Deed restrictions in established neighborhoods like [West Lake Hills](/communities/westlake-hills) and [Rollingwood](/communities/rollingwood) prevent the kind of density that dilutes values over time. These physical and legal constraints are durable. They do not disappear when the market softens.
 
 Employment proximity matters because it determines sustained demand. The Domain in North Austin, the downtown central business district, the Apple campus in Northwest Austin, and the Tesla Gigafactory in Del Valle each create localized demand pools. Properties within reasonable commute distance of major employment centers carry structural support that more remote locations do not.
 
@@ -149,7 +149,7 @@ Infrastructure investment signals where growth capital is being committed. MoPac
 
 ### Pro Tips
 
-[Barton Creek](/communities/barton-creek), [West Lake Hills](/communities/west-lake-hills), and the [Lake Austin waterfront](/communities/lake-austin) have historically held value through market cycles because supply scarcity and lifestyle demand are both present. When evaluating a new submarket, ask whether both factors exist independently. Either one alone is insufficient.
+[Barton Creek](/communities/barton-creek), [West Lake Hills](/communities/westlake-hills), and the [Lake Austin waterfront](/communities/lake-austin) have historically held value through market cycles because supply scarcity and lifestyle demand are both present. When evaluating a new submarket, ask whether both factors exist independently. Either one alone is insufficient.
 
 ## 3. Use Leverage Strategically, Not Maximally
 

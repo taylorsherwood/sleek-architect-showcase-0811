@@ -1325,21 +1325,39 @@ body.hcs-immersive nav.fixed {
 
 .commercial-theme .cm-surface-stone { background-color: var(--cm-stone); }
 .commercial-theme .cm-surface-bone { background-color: var(--cm-bone); }
-.commercial-theme .cm-surface-graphite { background-color: var(--cm-graphite); color: var(--cm-stone); }
+.commercial-theme .cm-surface-graphite,
+.commercial-theme .cm-surface-charcoal { color: var(--cm-stone); }
+.commercial-theme .cm-surface-graphite { background-color: var(--cm-graphite); }
+.commercial-theme .cm-surface-charcoal { background-color: var(--cm-graphite-deep); }
 .commercial-theme .cm-surface-graphite h2,
-.commercial-theme .cm-surface-graphite h3 { color: var(--cm-bone); }
-.commercial-theme .cm-surface-graphite .text-foreground { color: var(--cm-bone) !important; }
-.commercial-theme .cm-surface-graphite .text-muted-foreground { color: rgba(242,239,233,0.62) !important; }
+.commercial-theme .cm-surface-graphite h3,
+.commercial-theme .cm-surface-charcoal h2,
+.commercial-theme .cm-surface-charcoal h3 { color: var(--cm-bone); }
+.commercial-theme .cm-surface-graphite .text-foreground,
+.commercial-theme .cm-surface-charcoal .text-foreground { color: var(--cm-bone) !important; }
+.commercial-theme .cm-surface-graphite .text-muted-foreground,
+.commercial-theme .cm-surface-charcoal .text-muted-foreground { color: rgba(242,239,233,0.62) !important; }
 .commercial-theme .cm-surface-graphite .border-border,
-.commercial-theme .cm-surface-graphite .border-b { border-color: rgba(242,239,233,0.12) !important; }
-.commercial-theme .cm-surface-graphite .bg-card { background-color: rgba(242,239,233,0.04) !important; }
-.commercial-theme .cm-surface-graphite .bg-secondary { background-color: rgba(242,239,233,0.08) !important; color: var(--cm-stone) !important; }
+.commercial-theme .cm-surface-graphite .border-b,
+.commercial-theme .cm-surface-charcoal .border-border,
+.commercial-theme .cm-surface-charcoal .border-b { border-color: rgba(156,123,74,0.28) !important; }
+.commercial-theme .cm-surface-graphite .bg-card,
+.commercial-theme .cm-surface-charcoal .bg-card { background-color: rgba(242,239,233,0.03) !important; }
+.commercial-theme .cm-surface-graphite .bg-secondary,
+.commercial-theme .cm-surface-charcoal .bg-secondary { background-color: rgba(156,123,74,0.14) !important; color: var(--cm-stone) !important; }
+.commercial-theme .cm-surface-graphite .bg-primary,
+.commercial-theme .cm-surface-charcoal .bg-primary { background-color: var(--cm-brass) !important; color: var(--cm-bone) !important; }
 
 /* Card refinements scoped to commercial theme */
-.commercial-theme .cm-listing-card { position: relative; transition: border-color 500ms ease, transform 500ms ease, box-shadow 500ms ease; }
+.commercial-theme .cm-listing-card { position: relative; background-color: var(--cm-bone); transition: border-color 500ms ease, transform 500ms ease, box-shadow 500ms ease; }
 .commercial-theme .cm-listing-card::before {
   content: ""; position: absolute; top: 0; left: 0; height: 2px; width: 0;
-  background: var(--cm-brass); transition: width 600ms ease;
+  background: var(--cm-brass); transition: width 600ms ease; z-index: 2;
 }
 .commercial-theme .cm-listing-card:hover::before { width: 100%; }
-.commercial-theme .cm-listing-card:hover { box-shadow: 0 14px 40px -24px rgba(31,35,40,0.35); }
+.commercial-theme .cm-listing-card:hover { box-shadow: 0 18px 50px -28px rgba(20,23,27,0.45); }
+
+/* Memorandum-style price/asset chips inside dark sections */
+.commercial-theme .cm-mem-card { background-color: rgba(242,239,233,0.02); border: 1px solid rgba(156,123,74,0.22); transition: border-color 500ms ease, background-color 500ms ease; }
+.commercial-theme .cm-mem-card:hover { border-color: var(--cm-brass); background-color: rgba(242,239,233,0.04); }
+.commercial-theme .cm-brass-rule { height: 1px; background: linear-gradient(to right, rgba(156,123,74,0.55), rgba(156,123,74,0)); }

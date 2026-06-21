@@ -71,8 +71,6 @@ const CommercialListingCard = ({
   description,
   cta,
 }: CommercialListingCardProps) => {
-  const isExternalWrap = cta.type === "external";
-
   const inner = (
     <article
       className="group/card flex flex-col h-full overflow-hidden transition-shadow duration-500 hover:shadow-2xl"

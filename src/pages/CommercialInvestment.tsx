@@ -739,33 +739,39 @@ const CommercialInvestment = () => {
 
       {/* ── FINAL CTA ── */}
       <section className="cm-surface-charcoal py-24 md:py-32">
-        <div className="container mx-auto px-6 max-w-lg text-center">
-          <p className="text-gold mb-4 font-bold" style={labelStyle}>GET STARTED</p>
-          <h2 className="font-display text-2xl md:text-3xl font-light text-foreground mb-4">
+        <div className="container mx-auto px-6 max-w-2xl text-center">
+          <p className="cm-kicker mb-6" style={{ color: "#A68A5B" }}>Engage Echelon</p>
+          <h2 className="font-display uppercase leading-[1.1] mb-6" style={{ fontSize: "clamp(1.75rem, 3.4vw, 2.75rem)", letterSpacing: "0.03em", fontWeight: 500 }}>
             Looking for a Commercial Acquisition?
           </h2>
-          <p className="text-muted-foreground text-sm leading-relaxed  mb-8">
+          <div className="cm-brass-rule w-12 mx-auto mb-8" />
+          <p className="text-foreground/75 leading-relaxed mb-10">
             Share your criteria for multifamily, retail, office, land, or value-add investments
             in Austin and surrounding markets.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
               to="/contact"
-              className="inline-block bg-primary text-primary-foreground hover:bg-gold px-10 py-4 transition-all duration-300 ease-out active:scale-[0.98]"
-              style={labelStyle}
+              className="cm-kicker inline-block px-10 py-4 transition-colors duration-300"
+              style={{ background: "#252932", color: "#F7F5F2", border: "1px solid #A68A5B" }}
+              onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = "rgba(166,138,91,0.14)"; }}
+              onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = "#252932"; }}
             >
-              SHARE INVESTMENT CRITERIA
+              Share Investment Criteria
             </Link>
             <Link
               to="/contact"
-              className="inline-block border border-border text-muted-foreground hover:bg-primary hover:text-primary-foreground hover:border-primary px-10 py-4 transition-all duration-300 ease-out"
-              style={labelStyle}
+              className="cm-kicker inline-block px-10 py-4 transition-colors duration-300"
+              style={{ color: "rgba(247,245,242,0.9)", border: "1px solid rgba(255,255,255,0.25)" }}
+              onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.borderColor = "rgba(255,255,255,0.6)"; }}
+              onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.borderColor = "rgba(255,255,255,0.25)"; }}
             >
-              CONTACT TAYLOR SHERWOOD
+              Contact Taylor Sherwood
             </Link>
           </div>
         </div>
       </section>
+
 
       <LandCrossLinks
         variant="ivory"

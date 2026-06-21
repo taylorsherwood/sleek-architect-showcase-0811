@@ -157,7 +157,7 @@ const CommercialInvestment = () => {
       <Navigation />
 
       {/* Hero — Gillis OM treatment: full-bleed image, kicker over hairline, brass-outline CTAs */}
-      <section className="relative w-full min-h-[760px] md:min-h-[860px] lg:min-h-[920px] overflow-hidden flex items-end pt-32 md:pt-36">
+      <section className="relative w-full min-h-[760px] md:min-h-[860px] lg:min-h-[920px] overflow-hidden flex items-center pt-32 md:pt-36 pb-16 md:pb-24 lg:pb-32">
         <div className="absolute inset-0">
           <CommercialHeroVideo />
           <div

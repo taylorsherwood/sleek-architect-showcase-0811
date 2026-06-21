@@ -75,7 +75,7 @@ export const seoBlogPosts: BlogPost[] = [
     author: "Taylor Sherwood",
     date: "2026-06-21",
     readTime: "18 min read",
-    category: "Investment Strategy",
+    category: "INVESTMENT",
     image: blogLuxuryPortfolioAustin,
     heroImage: blogLuxuryPortfolioAustin,
     imageAlt: "Investor's desk in an Austin luxury estate with portfolio strategy checklist, market research notes, and a Hill Country pool view through floor-to-ceiling windows",

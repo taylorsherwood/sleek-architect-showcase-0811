@@ -95,7 +95,7 @@ Austin's median sale price is approximately $567,000, down roughly 1.5 percent y
 
 What does work right now is buying right: negotiating aggressively, structuring the deal intelligently, and moving with conviction when the right property appears. These eight strategies are built specifically for Austin buyers navigating these exact conditions.
 
-:::intel-gauge
+:::intel-gauge-austin-metro
 :::
 
 ## 1. Negotiate Hard on Price. Sub-List Closings Are Now Normal in Austin.

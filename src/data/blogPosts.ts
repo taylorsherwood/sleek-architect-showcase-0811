@@ -73,7 +73,7 @@ export const blogPosts: BlogPost[] = [
     id: "austin-inventory-levels-explained",
     title: "Austin Inventory Levels Explained: What the Numbers Actually Tell You",
     metaTitle: "Austin Inventory Levels Explained (2026) | Echelon Property Group",
-    excerpt: "Austin inventory levels are one of the most misunderstood metrics in real estate. Here is how to read months of supply, active listings, and submarket data the way an experienced advisor does.",
+    excerpt: "Austin inventory levels are one of the most misunderstood metrics in real estate. Here is how to read months of supply, active listings, and submarket data the way an experienced advisor does.\u00a0",
     author: "Taylor Sherwood",
     date: "2026-06-22",
     readTime: "12 MIN READ",

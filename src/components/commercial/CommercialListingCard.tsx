@@ -95,7 +95,7 @@ const CommercialListingCard = ({
 
         {/* Category chip */}
         <div
-          className="absolute top-0 left-0 px-5 py-1.5"
+          className="absolute top-0 left-0 px-5 py-[0.45rem]"
           style={
             badgeVariant === "gold"
               ? { backgroundColor: "#b9a06c" }

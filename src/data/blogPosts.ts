@@ -250,7 +250,7 @@ A: Monthly is the right cadence for most buyers and sellers. ABOR releases updat
 
 *This article is for educational purposes only and does not constitute financial, legal, or investment advice. Market conditions change frequently, and current inventory figures should be confirmed against the most recent ABOR market report.*
 
-\`,
+`,
   },
   {
     id: "how-to-sell-a-luxury-home-in-austin",

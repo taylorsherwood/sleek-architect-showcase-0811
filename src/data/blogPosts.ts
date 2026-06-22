@@ -70,6 +70,189 @@ const LINK = "text-foreground underline hover:text-muted-foreground";
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "austin-inventory-levels-explained",
+    title: "Austin Inventory Levels Explained: What the Numbers Actually Tell You",
+    metaTitle: "Austin Inventory Levels Explained (2026) | Echelon Property Group",
+    excerpt: "Austin inventory levels are one of the most misunderstood metrics in real estate. Here is how to read months of supply, active listings, and submarket data the way an experienced advisor does.",
+    author: "Taylor Sherwood",
+    date: "2026-06-22",
+    readTime: "12 MIN READ",
+    category: "MARKET INTELLIGENCE",
+    image: blogAustinInventoryLevelsDowntown.url,
+    heroImage: blogAustinInventoryLevelsDowntown.url,
+    imageAlt: "Historic Sixth Street storefronts and the downtown Austin skyline at dusk, illustrating the city's mix of neighborhoods and price tiers behind inventory data",
+    imageCaption: "Austin's inventory story changes block by block. Headline numbers describe an average across markets that are not average in any specific neighborhood.",
+    content: `
+
+Inventory is one of the most cited metrics in real estate conversations and one of the least understood. Buyers hear "the market is tight" and sellers hear "inventory is rising," but few people stop to ask what those statements actually mean for their specific situation, their price range, or their target neighborhood.
+
+That gap between data and interpretation is where most strategic mistakes happen.
+
+Austin's market is a good case study in why this matters. The city has moved through dramatic inventory swings over the past several years, from historically constrained supply during the pandemic-era surge to a meaningful expansion that reshaped conditions across multiple price tiers. Through all of it, the headline numbers rarely told the complete story. A citywide months-of-supply figure might suggest balance while a specific submarket or price band is still firmly in seller's territory, or vice versa.
+
+This guide is designed to help you read Austin inventory levels the way an experienced advisor does: with an understanding of how each metric is calculated, what it actually signals, and how to apply it to real decisions around buying, selling, or timing a move. The goal isn't to turn you into a data analyst. It's to make sure you're not making a six or seven-figure decision based on a misread number.
+
+:::callout
+label: Key takeaways
+- Active listings, months of supply, and days on market measure different things. Months of supply is the relationship metric that matters most.
+- Standard thresholds (under 3 months seller, 4 to 6 balanced, above 6 buyer) break down at the top of the market where absorption is structurally slower.
+- Inventory conditions vary sharply by price tier, zip code, and property type. A citywide figure averages across markets that are not average in any specific location.
+- The rate lock-in effect, new construction pace, and zoning decisions are the supply-side forces shaping Austin inventory right now.
+- In the luxury segment, off-market activity is a meaningful share of real volume that public data does not capture, which means MLS-based inventory figures understate both supply and demand at the high end.
+:::
+
+## Months of Supply, Active Listings, and What Each Metric Actually Measures
+
+Three metrics show up consistently in Austin real estate reporting, and they measure different things. Understanding what each one captures, and what it misses, is the starting point for reading inventory intelligently.
+
+### Active listings
+
+This is the raw count of homes currently available for sale in a given area. It's the most visible number and the easiest to track, but it's also the least informative on its own. A high listing count in a market with surging demand can still represent a tight supply environment. A low count in a slow market might not be as competitive as it appears.
+
+### Months of supply
+
+This is the metric that actually matters. It's calculated by dividing the current number of active listings by the average number of homes sold per month. The Austin Board of Realtors (ABOR) uses this formula in its monthly market reports, which are the primary authoritative source for Austin-area inventory data. What months of supply captures that active listings alone cannot is the relationship between supply and demand. It tells you how long it would take to sell every home currently on the market if no new listings were added and sales continued at their current pace.
+
+### Days on market
+
+This measures how long a property sits before going under contract. It's a useful confirmation metric. When months of supply rises, days on market typically follow. When both are moving in the same direction, the trend is more reliable than either number alone.
+
+The standard thresholds used across the industry are broadly as follows: below three months of supply typically indicates a seller's market, where competition among buyers is elevated and sellers hold pricing leverage. Four to six months suggests a more balanced environment. Above six months generally signals buyer's market conditions, with more room to negotiate on price, terms, and contingencies.
+
+Those thresholds are useful as a starting point, but they don't translate uniformly across Austin's market. At higher price points, particularly above $1.5 million, a higher months-of-supply figure is normal simply because the buyer pool is smaller and transaction velocity is lower. Applying the same benchmarks to a $3 million property that you'd use for a $450,000 home produces a misleading read. The context of the price tier matters as much as the number itself.
+
+ABOR publishes monthly data across the Austin-Round Rock MSA, and that's the right place to start for current figures. For a deeper look at how these conditions play out at the top of the market, the [Austin luxury real estate market analysis](/blog/austin-luxury-real-estate-market-analysis) and the live [Austin luxury market trends](/blog/austin-luxury-inventory-trends) provide useful context on how price tiers diverge from MSA-level averages. But the MSA-level data is just the frame. The real analysis happens when you drill down by zip code and price range, which is exactly what our [Austin luxury real estate market report](/austin-luxury-real-estate-market-report) is built to do.
+
+:::intel-gauge-coa-sfr-2m
+:::
+
+## Why Inventory Conditions Vary So Much Across Price Tiers
+
+One of the most important things to understand about Austin inventory levels is that they are not a single market condition. They are a collection of overlapping conditions that vary significantly by price band, geography, and property type.
+
+The sub-$600,000 segment has historically been tighter than the broader market. Demand in this range is broad-based, drawing from first-time buyers, relocating families, and investors, while supply is constrained by the cost of construction and limited infill opportunities in established neighborhoods. When inventory expands in Austin, this tier tends to feel it last and recover first.
+
+The $600,000 to $1.5 million range has shown more variability. This is where much of Austin's move-up buyer activity lives, and it's also where the market is most sensitive to interest rate shifts. When rates rise, buyers in this tier often pause or recalibrate, which can cause inventory to build faster than in the entry-level range.
+
+Above $2 million, the dynamics shift considerably. The buyer pool is smaller by definition, which means absorption rates are lower and months-of-supply figures are structurally higher even in strong market conditions. Sellers in this segment tend to be more discretionary. They're not typically moving because they have to. That patience means properties can sit longer without reflecting distress, and sellers are often willing to wait for the right buyer rather than adjust price aggressively.
+
+There's another layer in the luxury segment that official data doesn't capture at all: [off-market transactions](/off-market-real-estate-austin). A meaningful share of high-end Austin sales occur through advisor networks before a property ever reaches the MLS. When that volume is significant, the publicly reported inventory figures understate actual supply, and the reported sales figures understate actual demand. Both sides of the equation are incomplete. Our piece on [exclusive listing access in Austin](/blog/exclusive-listing-access-austin-luxury) walks through how that channel actually functions.
+
+Geography adds another dimension. Central Austin neighborhoods like Tarrytown, Travis Heights, and Bryker Woods operate under different inventory dynamics than suburban corridors in Round Rock, Cedar Park, or Pflugerville, even within the same price range. Central neighborhoods have limited land for new construction, which creates a structural supply ceiling. Suburban corridors can absorb new inventory through builder activity in ways that central Austin simply cannot.
+
+This is why a single citywide inventory figure can be simultaneously accurate and misleading. It describes an average across conditions that are not average in any specific location. The [best luxury neighborhoods in Austin](/best-luxury-neighborhoods-austin) breakdown shows how dramatically the picture changes when you stop averaging.
+
+## The Forces That Push Inventory Up or Down
+
+Inventory doesn't move in isolation. It responds to a set of supply-side and demand-side forces that are worth understanding, because they help you anticipate where the market is heading rather than just where it is today.
+
+On the supply side, three factors have had the most influence on Austin inventory levels in recent years.
+
+**New construction activity.** Austin's master-planned communities in areas like Dripping Springs, Lakeway, Bee Cave, and the northern corridors have added meaningful inventory through lot releases and builder deliveries. When builders are active and lot releases are paced aggressively, resale inventory faces direct competition from new product. For investors and developers tracking that pipeline, our perspective on [Austin infill development](/blog/austin-infill-development) and [Austin redevelopment opportunities](/blog/austin-redevelopment-opportunities) is essential context. When construction slows due to permitting delays or financing constraints, that pressure eases.
+
+**The rate lock-in effect.** This has been one of the most discussed supply suppressors in recent real estate economics. Homeowners who secured mortgages at significantly lower rates than current market rates have a strong financial disincentive to sell, because selling means giving up that rate and taking on a new mortgage at a higher cost. The Wall Street Journal, National Association of Realtors research, and Federal Reserve economic commentary have all addressed this phenomenon. In practical terms, it means that a large share of potential resale supply in Austin is effectively frozen, regardless of what sellers might otherwise want to do.
+
+**Development approvals and entitlement pace.** Municipal policy around zoning, density, and permitting timelines directly affects how quickly new supply can enter the market. Austin's ongoing conversations around land use reform have real implications for future inventory, particularly in infill areas.
+
+On the demand side, Austin's inventory absorption is shaped by employer activity, migration patterns, and seasonal timing. Major employer relocations and expansions bring concentrated buyer demand into specific submarkets. Migration from higher-cost metros, particularly the Bay Area, Seattle, and New York, has been a consistent driver of Austin demand, though that flow has moderated from its pandemic-era peak. Our guide on [moving from New York to Austin](/blog/moving-from-new-york-to-austin) covers what that buyer profile typically looks for.
+
+Interest rate shifts affect both sides simultaneously, which creates a particular kind of market tension. Higher rates suppress seller supply through the lock-in effect while also cooling buyer demand by reducing purchasing power. The result is lower transaction volume across the board, with inventory that looks elevated on paper but doesn't necessarily translate into buyer leverage, because many of those listings are priced for a market that no longer exists at current rates.
+
+:::cta
+eyebrow: Market Intelligence
+heading: See Live Austin Inventory Data by Submarket
+subheading: Echelon Property Group's live market intelligence dashboard tracks active inventory, months of supply, and absorption by neighborhood and price tier.
+button: View Live Market Data
+href: /market-intelligence
+:::
+
+## Reading Inventory Data as a Buyer or Seller
+
+Understanding inventory metrics is only useful if it changes how you make decisions. Here's how that translation works in practice.
+
+### For buyers
+
+Months of supply at the submarket and price-tier level is your primary calibration tool. In a market showing two to three months of supply in your target range, expect competition. Offers at or above asking, limited contingency flexibility, and fast timelines are the norm. In a market showing five to seven months of supply, you have more room to negotiate on price, request repairs, and set a timeline that works for you. For a practical walkthrough of how to apply this in today's environment, our [buy in Austin](/buy) page covers the strategic implications in detail.
+
+The mistake many buyers make is relying on citywide or MSA-level data when making decisions about a specific neighborhood. A zip code like 78746 in the Westlake area can be operating under very different inventory conditions than the broader Austin market. Our [78746 luxury homes guide](/blog/78746-luxury-homes-guide-for-smart-buyers) and the [Tarrytown vs. Westlake comparison](/blog/tarrytown-vs-westlake-austin) both make the case for calibrating your strategy to the right level of granularity.
+
+Also worth noting: if you're shopping in the upper price tiers, the inventory you see on the MLS is not the complete picture. Off-market opportunities exist and are often accessible through advisor relationships that have no public footprint. The [off-market luxury homes in Austin](/blog/off-market-luxury-homes-austin) deep dive explains why limiting your search to listed inventory often means missing properties that fit your criteria.
+
+### For sellers
+
+Rising inventory in your price range is a signal to pay close attention to your positioning. When supply expands, buyers have more options and less urgency. The most common and costly mistake sellers make in this environment is overpricing relative to what the current absorption rate supports. Understanding [how to price a luxury home in Austin](/blog/how-to-price-a-luxury-home-in-austin) is one of the most consequential decisions a seller will make, and our complete [how to sell a luxury home in Austin](/blog/how-to-sell-a-luxury-home-in-austin) playbook covers the full process.
+
+Days on market is your feedback signal. If your property is sitting significantly longer than the submarket average, the market is telling you something about price or presentation. Acting on that feedback early is almost always better than waiting.
+
+Inventory levels should also inform your preparation investment. In a tight market, buyers compete for whatever is available and condition is less determinative. In a rising-inventory environment, condition and presentation become differentiators because buyers have alternatives. Start with a precise read on what your home is actually worth at [home value Austin](/home-value-austin), then map the result against current submarket inventory before you set a strategy.
+
+For sellers in the luxury segment, the off-market channel deserves serious consideration. A quiet, advisor-driven [private sale process](/sell) can attract qualified buyers without the price discovery pressure that comes with a public listing and an accumulating days-on-market count.
+
+## Austin Submarket Inventory Patterns Worth Tracking
+
+Certain Austin submarkets have inventory dynamics that are distinct enough to warrant specific attention, whether you're a buyer, seller, or investor tracking conditions over time.
+
+### 78746 and the Westlake area
+
+This zip code, which covers West Lake Hills and portions of the Eanes Independent School District, consistently shows some of the most constrained inventory in the Austin market at its price tier. The school district is the primary driver. Demand from families prioritizing Eanes schools is persistent and relatively inelastic to broader market conditions, which means inventory in this area tends to move faster and hold value more reliably than comparable price points elsewhere in the metro. A detailed comparison of how this area stacks up against other central options is available in the [Tarrytown vs. Westlake analysis](/blog/tarrytown-vs-westlake-austin).
+
+### 78703 and 78704 (Tarrytown, Bryker Woods, Travis Heights, South Congress)
+
+These central Austin zip codes are supply-constrained by geography and zoning. There is limited room for new construction, and the existing housing stock is older and varied in condition. Inventory here tends to be thin, and when well-positioned properties come to market, they attract disproportionate attention. Days on market for properly priced homes in these areas have historically been shorter than the broader market. Explore the full neighborhood map on the [communities directory](/communities).
+
+### The Domain and North Austin corridor (78758, 78759)
+
+This area benefits from proximity to major tech employers and has seen sustained demand from relocating professionals. Inventory conditions here are more influenced by corporate hiring cycles than by the seasonal patterns that affect other parts of the market. When employer activity is strong, absorption is fast. When hiring slows, inventory builds more quickly.
+
+### Hill Country edge cities (Dripping Springs, Lakeway, Bee Cave)
+
+These markets are driven by a mix of families seeking larger lots, retirees, and buyers priced out of central Austin. New construction has been a significant supply source in this corridor, which means inventory can fluctuate more based on builder activity than on resale dynamics.
+
+Land and ranch inventory in the broader Hill Country operates on an entirely different cycle. Hold periods are longer, transaction velocity is lower, and pricing is influenced by acreage, water features, wildlife, and topography rather than comparable sales density. Applying urban residential inventory benchmarks to ranch property in the Hill Country produces meaningless results. That market requires its own framework, which we cover across the [land and ranch market intelligence](/land-ranch) hub.
+
+Tracking these submarkets over time, not just as a current snapshot, gives you a more reliable read on direction. A submarket that shows rising inventory over three consecutive months is telling you something different than one that shows a single-month spike followed by absorption.
+
+## Putting It All Together: A Framework for Using Inventory Data
+
+Inventory is a directional indicator, not a verdict. The number matters, but so does the trend, the price tier, and the specific geography you're operating in.
+
+A practical approach for buyers and sellers is to check ABOR's monthly market reports on a regular basis, looking specifically at months of supply and days on market for your target zip code and price range rather than the MSA-level summary. That drill-down is where the actionable signal lives.
+
+Pair that data with trend observation. Is inventory in your target area rising, falling, or holding steady month over month? A market at four months of supply that has been declining from six is a very different environment than one at four months and rising. The direction often tells you more than the current level.
+
+Finally, recognize that public data has a ceiling. In Austin's luxury segment especially, the MLS captures a portion of market activity, not all of it. The off-market layer, which includes properties transacted through advisor networks before public listing, is a meaningful part of the picture that no public data source reflects.
+
+Working with an advisor who tracks local inventory conditions closely and has access to off-market flow gives you a materially more complete view of what's actually available and what's actually moving. That difference in information quality has real consequences for strategy, timing, and negotiating position.
+
+If you want a current read on inventory conditions in a specific Austin submarket or price range, [learn more about Echelon Property Group's services](/about) or [request a private market briefing](/contact) to get the local market intelligence you need to make a well-informed decision.
+
+## FAQ
+
+:::faq
+Q: What does months of supply actually mean in Austin real estate?
+A: Months of supply is the number of months it would take to sell every home currently listed in a given area if no new listings were added and sales continued at their current pace. It is calculated by dividing active listings by the average monthly sales volume. The Austin Board of Realtors publishes this figure monthly across the Austin-Round Rock MSA, and it is the most important inventory metric because it captures the relationship between supply and demand rather than supply alone.
+
+Q: What is considered a balanced market in Austin?
+A: The industry standard is roughly four to six months of supply for a balanced market, under three months for a seller's market, and above six months for a buyer's market. Those thresholds work reasonably well at median price points but break down at the top of the market, where absorption is structurally slower. A $3 million home showing eight months of supply is not necessarily a buyer's market signal at that tier.
+
+Q: Why does Austin's inventory vary so much by zip code?
+A: Austin's neighborhoods differ in geography, school districts, zoning, and the pace of new construction. Central zip codes like 78703 and 78704 are supply-constrained by limited buildable land, while suburban corridors can absorb new builder inventory. School district demand, particularly Eanes ISD in 78746, also creates persistent buyer pressure that holds inventory tight regardless of broader market conditions.
+
+Q: How does the rate lock-in effect impact Austin inventory?
+A: A large share of Austin homeowners hold mortgages at rates well below current market rates. Selling means giving up that low rate and taking on a new mortgage at a higher cost, which creates a strong financial disincentive to list. The result is suppressed resale inventory even when homeowners might otherwise be inclined to move, and this dynamic has been a meaningful factor across the broader U.S. housing market in recent years.
+
+Q: Does MLS data capture all Austin luxury inventory?
+A: No. A meaningful share of high-end Austin transactions occur off-market through advisor networks before a property reaches the MLS. Publicly reported inventory and sales figures both understate actual volume at the luxury tier as a result. Buyers and sellers operating above roughly $2 million should expect that the listed inventory they can see is not the complete set of opportunities or competition.
+
+Q: How often should I check Austin inventory data?
+A: Monthly is the right cadence for most buyers and sellers. ABOR releases updated figures roughly mid-month covering the prior month's activity. Looking at the trend over three to six months gives you more reliable signal than any single month's number, and pairing months of supply with days on market for your specific submarket and price range is far more useful than tracking the MSA-level summary.
+:::
+
+*This article is for educational purposes only and does not constitute financial, legal, or investment advice. Market conditions change frequently, and current inventory figures should be confirmed against the most recent ABOR market report.*
+
+\`,
+  },
+  {
     id: "how-to-sell-a-luxury-home-in-austin",
     title: "How to Sell a Luxury Home in Austin: The 2026 Seller's Guide",
     metaTitle: "How to Sell a Luxury Home in Austin (2026 Seller's Guide)",

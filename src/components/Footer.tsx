@@ -22,14 +22,23 @@ const linkStyle: React.CSSProperties = {
 
 const linkHoverClass = "block transition-colors duration-300 hover:text-white";
 
-const Footer = () => {
+type FooterProps = {
+  showNewsletter?: boolean;
+};
+
+const Footer = ({ showNewsletter = true }: FooterProps) => {
   return (
     <footer data-nav-dark-zone style={{ background: "#0C0F24", fontFamily: '"Jost", sans-serif', fontWeight: 300 }}>
       {/* Newsletter signup — immediately above footer navigation */}
-      <NewsletterSignup className="py-16 md:py-24" />
+      {showNewsletter && (
+        <>
+          <NewsletterSignup className="py-16 md:py-24" />
 
-      {/* Fancy gold divider between newsletter and footer navigation */}
-      <div className="w-full h-1 bg-gold shadow-[0_0_16px_rgba(185,160,108,0.45)]" />
+          {/* Fancy gold divider between newsletter and footer navigation */}
+          <div className="w-full h-1 bg-gold shadow-[0_0_16px_rgba(185,160,108,0.45)]" />
+        </>
+      )}
+
 
       <div className="max-w-[1140px] mx-auto px-8 md:px-12">
         <div style={{ paddingTop: "clamp(48px, 6vw, 72px)", paddingBottom: "12px" }}>

@@ -622,8 +622,9 @@ const CommercialInvestment = () => {
 
       {/* ── Footer ── */}
       <Suspense fallback={<div className="min-h-[100px]" />}>
-        <Footer />
+        <Footer showNewsletter={false} />
       </Suspense>
+
 
     </div>
   );

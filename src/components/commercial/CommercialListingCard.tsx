@@ -76,16 +76,19 @@ const CommercialListingCard = ({
       className="flex flex-col h-full overflow-hidden transition-all duration-500 group-hover/card:-translate-y-1.5 group-hover/card:shadow-2xl"
       style={{ backgroundColor: "#1B1E24", boxShadow: "0 1px 0 0 rgba(185,160,108,0.12) inset" }}
     >
-      {/* Image */}
-      <div className="relative aspect-[16/10] overflow-hidden" style={{ backgroundColor: "#0C0F24" }}>
-        <img
-          src={image}
-          alt={alt}
-          title={title}
-          className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover/card:scale-[1.03]"
-          loading="lazy"
-          decoding="async"
-        />
+      {/* Image area */}
+      <div className="relative aspect-[16/10]">
+        {/* Clipped image wrapper */}
+        <div className="absolute inset-0 overflow-hidden" style={{ backgroundColor: "#0C0F24" }}>
+          <img
+            src={image}
+            alt={alt}
+            title={title}
+            className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover/card:scale-[1.03]"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
 
         {/* Image-to-content gradient transition */}
         <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-[#1B1E24] via-[#1B1E24]/70 to-transparent pointer-events-none" />

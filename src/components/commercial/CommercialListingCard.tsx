@@ -115,7 +115,7 @@ const CommercialListingCard = ({
 
         {/* Price badge */}
         <div
-          className="absolute bottom-0 right-0 z-10 px-4 py-2.5 translate-y-[40%] transition-transform duration-500 group-hover/card:-translate-y-0.5 shadow-[0_8px_24px_-8px_rgba(0,0,0,0.45)]"
+          className="absolute bottom-0 right-0 z-10 px-4 py-2.5 -translate-y-[25%] transition-transform duration-500 group-hover/card:-translate-y-0.5 shadow-[0_8px_24px_-8px_rgba(0,0,0,0.45)]"
           style={{ backgroundColor: "#1B1E24", borderTop: "1px solid rgba(185,160,108,0.35)", borderLeft: "1px solid rgba(185,160,108,0.35)" }}
         >
           <span className="block leading-none text-warm-cream" style={priceKicker}>

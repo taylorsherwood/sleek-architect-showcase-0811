@@ -123,7 +123,7 @@ Those thresholds are useful as a starting point, but they don't translate unifor
 
 ABOR publishes monthly data across the Austin-Round Rock MSA, and that's the right place to start for current figures. For a deeper look at how these conditions play out at the top of the market, the [Austin luxury real estate market analysis](/blog/austin-luxury-real-estate-market-analysis) and the live [Austin luxury market trends](/blog/austin-luxury-inventory-trends) provide useful context on how price tiers diverge from MSA-level averages. But the MSA-level data is just the frame. The real analysis happens when you drill down by zip code and price range, which is exactly what our [Austin luxury real estate market report](/austin-luxury-real-estate-market-report) is built to do.
 
-:::intel-gauge-coa-sfr-2m
+:::intel-gauge-austin-metro
 :::
 
 ## Why Inventory Conditions Vary So Much Across Price Tiers

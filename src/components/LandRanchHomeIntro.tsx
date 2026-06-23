@@ -132,7 +132,7 @@ const LandRanchHomeIntro = () => {
               development, and acreage markets. From legacy Hill Country ranches
               and hunting properties to infill opportunities and large-scale land
               acquisitions, our advisory approach extends well beyond traditional
-              residential real estate.
+              residential real estate.{"\u00a0"}
             </p>
           </ScrollReveal>
 

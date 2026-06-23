@@ -1,11 +1,9 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
-import falconheadAsset from "@/assets/falconhead.jpg.asset.json";
 import ScrollReveal from "@/components/ScrollReveal";
-import overlookPassAsset from "@/assets/overlook-pass.jpg.asset.json";
-import horseshoeBayAsset from "@/assets/horseshoe-bay.avif.asset.json";
 import { formatPhoneNumber, submitLeadToZapier } from "@/lib/formUtils";
+import { supabase } from "@/integrations/supabase/client";
 
 type OffMarketProperty = {
   image?: string;
@@ -15,31 +13,15 @@ type OffMarketProperty = {
   link: string;
 };
 
-const properties: OffMarketProperty[] = [
-  {
-    image: overlookPassAsset.url,
-    badge: "COMING SOON",
-    name: "Overlook Pass",
-    subtitle: "7.9 acres · 9,800 SF · $9,800,000",
-    link: "/contact",
-  },
-  {
-    image: horseshoeBayAsset.url,
-    badge: "UNDER CONTRACT",
-    name: "Horseshoe Bay",
-    subtitle: "5,755 SF · $5,750,000",
-    link: "/contact",
-  },
-  {
-    image: falconheadAsset.url,
-    badge: "COMING SOON",
-    name: "Falconhead",
-    subtitle: "3,500 SF · $1,100,000",
-    link: "/contact",
-  },
+// Pre-unlock teaser placeholders. No real property names, addresses, pricing,
+// or imagery ship in the client bundle — those are fetched from the
+// offmarket-listings edge function after a verified lead submission.
+const TEASER_PLACEHOLDERS: OffMarketProperty[] = [
+  { badge: "PRIVATE", name: "Off-Market Estate", subtitle: "Details available upon request", link: "/contact" },
+  { badge: "PRIVATE", name: "Off-Market Estate", subtitle: "Details available upon request", link: "/contact" },
+  { badge: "PRIVATE", name: "Off-Market Estate", subtitle: "Details available upon request", link: "/contact" },
 ];
 
-const UNLOCK_KEY = "offmarket-unlocked-v1";
 
 const PadlockIcon = () => (
   <svg
@@ -59,13 +41,8 @@ const PadlockIcon = () => (
 );
 
 const OffMarketListings = ({ className }: { className?: string }) => {
-  const [unlocked, setUnlocked] = useState(() => {
-    try {
-      return localStorage.getItem(UNLOCK_KEY) === "1";
-    } catch {
-      return false;
-    }
-  });
+  const [unlocked, setUnlocked] = useState(false);
+  const [properties, setProperties] = useState<OffMarketProperty[]>(TEASER_PLACEHOLDERS);
   const [open, setOpen] = useState(false);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -73,21 +50,6 @@ const OffMarketListings = ({ className }: { className?: string }) => {
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [consent, setConsent] = useState(false);
-
-  useEffect(() => {
-    const onStorage = (e: StorageEvent) => {
-      if (e.key === UNLOCK_KEY) {
-        setUnlocked(e.newValue === "1");
-      }
-    };
-    const onUnlock = () => setUnlocked(true);
-    window.addEventListener("storage", onStorage);
-    window.addEventListener("offmarket-unlocked", onUnlock);
-    return () => {
-      window.removeEventListener("storage", onStorage);
-      window.removeEventListener("offmarket-unlocked", onUnlock);
-    };
-  }, []);
 
   useEffect(() => {
     if (!open) return;
@@ -105,28 +67,42 @@ const OffMarketListings = ({ className }: { className?: string }) => {
     e.preventDefault();
     setError(null);
     setSubmitting(true);
-    const result = await submitLeadToZapier({
-      name,
-      email,
-      phone,
-      message: "Requested access to off-market Echelon listings",
-      source: "Off-Market Listings Gate (/search)",
-      extra: { consent: consent ? "Yes" : "No" },
-    });
+
+    // Forward the lead AND fetch the gated listings in parallel. The edge
+    // function re-validates the lead fields server-side before returning
+    // any sensitive data — the bundle ships only teaser placeholders.
+    const [leadResult, listingsResult] = await Promise.all([
+      submitLeadToZapier({
+        name,
+        email,
+        phone,
+        message: "Requested access to off-market Echelon listings",
+        source: "Off-Market Listings Gate (/search)",
+        extra: { consent: consent ? "Yes" : "No" },
+      }),
+      supabase.functions.invoke<{ properties: OffMarketProperty[] }>(
+        "offmarket-listings",
+        { body: { name, email, phone, consent } },
+      ),
+    ]);
+
     setSubmitting(false);
-    if (!result.ok) {
-      setError(result.error || "Something went wrong. Please try again.");
+
+    if (!leadResult.ok) {
+      setError(leadResult.error || "Something went wrong. Please try again.");
       return;
     }
-    try {
-      localStorage.setItem(UNLOCK_KEY, "1");
-    } catch {
-      /* noop */
+
+    if (listingsResult.error || !listingsResult.data?.properties) {
+      setError("Something went wrong. Please try again.");
+      return;
     }
+
+    setProperties(listingsResult.data.properties);
     setUnlocked(true);
     setOpen(false);
-    window.dispatchEvent(new CustomEvent("offmarket-unlocked"));
   };
+
 
   return (
     <section

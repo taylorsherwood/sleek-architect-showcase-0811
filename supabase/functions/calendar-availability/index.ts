@@ -107,10 +107,13 @@ Deno.serve(async (req) => {
     });
   } catch (error) {
     const message = error instanceof Error ? error.message : "Unknown error";
-    console.error("Calendar availability error:", message);
-    return new Response(JSON.stringify({ error: message, busy: [] }), {
-      headers: { ...corsHeaders, "Content-Type": "application/json" },
-      status: 200, // never block UI
-    });
+    console.error("[calendar-availability] upstream error:", message);
+    return new Response(
+      JSON.stringify({ error: "Calendar temporarily unavailable", busy: [] }),
+      {
+        headers: { ...corsHeaders, "Content-Type": "application/json" },
+        status: 200, // never block UI
+      },
+    );
   }
 });

@@ -209,6 +209,14 @@ Austin's market has moved through multiple rate cycles. Well-located properties 
 
 If you're working through a property decision and want a grounded, specific conversation about how current rate conditions affect your situation, the team at Echelon Property Group is available to help. No pressure, just an informed conversation about what the market looks like from where you're standing. [Learn more about our services](/services) or [connect with our team](/connect) directly.
 
+## Run the Numbers on Your Own Scenario
+
+Before you talk to a lender, get a baseline. Adjust the inputs below to see how price, down payment, rate, and term move your estimated monthly payment.
+
+:::mortgage-calculator
+:::
+
+
 :::faq
 Q: Do Federal Reserve rate cuts immediately lower Austin mortgage rates?
 A: No. The Fed sets the federal funds rate, which is an overnight bank-to-bank lending rate. Mortgage rates are tied more directly to the 10-year U.S. Treasury yield and to mortgage-backed securities pricing. Fed policy influences those markets, but the relationship isn't one-to-one and the timing isn't always predictable. Buyers waiting for a Fed cut to immediately produce lower mortgage rates are often operating on a faulty assumption.

@@ -1,11 +1,9 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
-import falconheadAsset from "@/assets/falconhead.jpg.asset.json";
 import ScrollReveal from "@/components/ScrollReveal";
-import overlookPassAsset from "@/assets/overlook-pass.jpg.asset.json";
-import horseshoeBayAsset from "@/assets/horseshoe-bay.avif.asset.json";
 import { formatPhoneNumber, submitLeadToZapier } from "@/lib/formUtils";
+import { supabase } from "@/integrations/supabase/client";
 
 type OffMarketProperty = {
   image?: string;
@@ -15,31 +13,15 @@ type OffMarketProperty = {
   link: string;
 };
 
-const properties: OffMarketProperty[] = [
-  {
-    image: overlookPassAsset.url,
-    badge: "COMING SOON",
-    name: "Overlook Pass",
-    subtitle: "7.9 acres · 9,800 SF · $9,800,000",
-    link: "/contact",
-  },
-  {
-    image: horseshoeBayAsset.url,
-    badge: "UNDER CONTRACT",
-    name: "Horseshoe Bay",
-    subtitle: "5,755 SF · $5,750,000",
-    link: "/contact",
-  },
-  {
-    image: falconheadAsset.url,
-    badge: "COMING SOON",
-    name: "Falconhead",
-    subtitle: "3,500 SF · $1,100,000",
-    link: "/contact",
-  },
+// Pre-unlock teaser placeholders. No real property names, addresses, pricing,
+// or imagery ship in the client bundle — those are fetched from the
+// offmarket-listings edge function after a verified lead submission.
+const TEASER_PLACEHOLDERS: OffMarketProperty[] = [
+  { badge: "PRIVATE", name: "Off-Market Estate", subtitle: "Details available upon request", link: "/contact" },
+  { badge: "PRIVATE", name: "Off-Market Estate", subtitle: "Details available upon request", link: "/contact" },
+  { badge: "PRIVATE", name: "Off-Market Estate", subtitle: "Details available upon request", link: "/contact" },
 ];
 
-const UNLOCK_KEY = "offmarket-unlocked-v1";
 
 const PadlockIcon = () => (
   <svg

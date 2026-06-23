@@ -728,6 +728,14 @@ const BlogContent = ({ content, afterGlance, category, articleId }: BlogContentP
                 />
               </IntelInsert>
             );
+          case "mortgage-calculator":
+            return (
+              <IntelInsert key={idx}>
+                <Suspense fallback={null}>
+                  <MortgageCalculator />
+                </Suspense>
+              </IntelInsert>
+            );
           case "intel-gauge-lake-austin":
             return (
               <IntelInsert key={idx} tight>

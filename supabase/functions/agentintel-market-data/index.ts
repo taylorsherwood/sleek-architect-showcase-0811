@@ -154,8 +154,9 @@ interface ActionResult { status: number; body: unknown; ttlMs: number }
 async function handleAction(action: string, params: URLSearchParams): Promise<ActionResult> {
   switch (action) {
     case "me": {
-      const r = await callAgentIntel("/me");
-      return { status: r.status, body: { ok: r.status === 200, account: r.data, error: r.error }, ttlMs: 60_000 };
+      // Internal diagnostic only. Do not expose AgentIntel account/subscription
+      // details to anonymous callers.
+      return { status: 404, body: { error: "not_found" }, ttlMs: 0 };
     }
 
     case "search-markets": {

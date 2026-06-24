@@ -87,6 +87,57 @@ Deno.serve(async (req) => {
     });
   }
 
+  // Persist the lead before releasing the gated listing data. Without this
+  // write the gate would be cosmetic — a syntactically valid but fabricated
+  // submission could pull the listings without any CRM trail.
+  const supabaseUrl = Deno.env.get("SUPABASE_URL");
+  const serviceRoleKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY");
+  if (!supabaseUrl || !serviceRoleKey) {
+    console.error("[offmarket-listings] missing Supabase env");
+    return new Response(JSON.stringify({ error: "Service unavailable" }), {
+      status: 503,
+      headers: { ...corsHeaders, "Content-Type": "application/json" },
+    });
+  }
+
+  const clientIp =
+    req.headers.get("x-forwarded-for")?.split(",")[0].trim() ||
+    req.headers.get("cf-connecting-ip") ||
+    null;
+  const userAgent = req.headers.get("user-agent") || null;
+  const referer = req.headers.get("referer") || null;
+
+  const insertRes = await fetch(`${supabaseUrl}/rest/v1/leads`, {
+    method: "POST",
+    headers: {
+      apikey: serviceRoleKey,
+      Authorization: `Bearer ${serviceRoleKey}`,
+      "Content-Type": "application/json",
+      Prefer: "return=minimal",
+    },
+    body: JSON.stringify({
+      name: payload.name.trim(),
+      email: payload.email.trim(),
+      phone: payload.phone.trim(),
+      message: "Off-market listings unlock request",
+      source: "Off-Market Listings Gate",
+      page_url: referer,
+      referrer: referer,
+      user_agent: userAgent,
+      extra: { consent: true, client_ip: clientIp },
+      zapier_status: "skipped",
+    }),
+  });
+
+  if (!insertRes.ok) {
+    await insertRes.text().catch(() => "");
+    console.error(`[offmarket-listings] DB insert failed status=${insertRes.status}`);
+    return new Response(JSON.stringify({ error: "Lead could not be saved" }), {
+      status: 500,
+      headers: { ...corsHeaders, "Content-Type": "application/json" },
+    });
+  }
+
   return new Response(JSON.stringify({ properties: OFFMARKET_LISTINGS }), {
     status: 200,
     headers: { ...corsHeaders, "Content-Type": "application/json" },

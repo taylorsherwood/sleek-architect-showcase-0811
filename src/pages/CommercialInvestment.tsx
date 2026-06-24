@@ -265,7 +265,7 @@ const CommercialInvestment = () => {
                   { label: "UNITS", value: "24" },
                 ]}
                 description="24-unit value-add multifamily opportunity in South Austin. Well-positioned for rent growth and operational improvements in a high-demand rental corridor."
-                cta={{ type: "internal", to: "/contact", label: "Request Information" }}
+                cta={{ type: "external", href: "https://www.4314gillis.com", label: "View Property Website" }}
               />
 
               <CommercialListingCard

@@ -58,6 +58,7 @@ const commercialListings = [
     assetType: "Value-Add Multifamily",
     units: "24",
     description: "24-unit value-add multifamily opportunity in South Austin. Well-positioned for rent growth and operational improvements in a high-demand rental corridor.",
+    externalUrl: "https://www.4314gillis.com",
   },
   {
     image: sanJoseAve,

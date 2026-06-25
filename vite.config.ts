@@ -283,7 +283,11 @@ export default defineConfig(({ mode }) => ({
     port: 8080,
   },
   build: {
-    sourcemap: true,
+    // Production sourcemaps add significant build time on a large project
+    // with many prerendered routes. Keep them only in dev (HMR-friendly).
+    sourcemap: mode === "development",
+    // Tame chunk-size warnings without changing output.
+    chunkSizeWarningLimit: 1500,
   },
   plugins: [
     react(),

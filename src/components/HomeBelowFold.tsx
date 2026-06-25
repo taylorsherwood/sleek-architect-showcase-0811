@@ -955,7 +955,7 @@ const CommunitiesSection = () => {
                 transition: "opacity 1s cubic-bezier(0.22, 1, 0.36, 1) 0.25s, transform 1s cubic-bezier(0.22, 1, 0.36, 1) 0.25s",
               }}
             >
-              A curated atlas of the city's most coveted enclaves, each shaped by its own quiet authority.
+              A curated atlas of the city's most coveted enclaves, each shaped by its own identity and quiet authority.
             </p>
 
             {/* Ornamental divider, hairline + diamond + hairline */}

@@ -43,6 +43,7 @@ import blogAustinInventoryLevelsDowntown from "@/assets/blog/austin-inventory-le
 import blogAustinMortgageRateImpact from "@/assets/blog/austin-mortgage-rate-impact.jpg.asset.json";
 import blogAustinMixedUseDevelopment from "@/assets/blog/austin-mixed-use-development.avif.asset.json";
 import blogDataCenterDevelopmentTexas from "@/assets/blog/data-center-development-texas.webp.asset.json";
+import blogAustinCommercialLandDevelopment from "@/assets/blog/austin-commercial-land-development.jpg.asset.json";
 
 
 
